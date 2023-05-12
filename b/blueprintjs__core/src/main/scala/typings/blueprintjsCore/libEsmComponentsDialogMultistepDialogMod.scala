@@ -33,8 +33,6 @@ object libEsmComponentsDialogMultistepDialogMod {
     
     /* private */ var getInitialIndexFromProps: Any = js.native
     
-    /* private */ var handleClickDialogStep: Any = js.native
-    
     /* private */ var maybeRenderRightPanel: Any = js.native
     
     /* private */ var renderButtons: Any = js.native
@@ -73,7 +71,7 @@ object libEsmComponentsDialogMultistepDialogMod {
     var backButtonProps: js.UndefOr[DialogStepButtonProps] = js.undefined
     
     /**
-      * Props for the close button that appears in the footer when there is no title.
+      * Props for the close button that appears in the footer.
       */
     var closeButtonProps: js.UndefOr[DialogStepButtonProps] = js.undefined
     
@@ -122,9 +120,8 @@ object libEsmComponentsDialogMultistepDialogMod {
     var resetOnClose: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * Whether the footer close button is shown. The button will only appear if
-      * `isCloseButtonShown` is `true`. The close button in the dialog title will
-      * not be shown when this is `true`.
+      * Whether the footer close button is shown. When this value is true, the button will appear
+      * regardless of the value of `isCloseButtonShown`.
       *
       * @default false
       */

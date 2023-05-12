@@ -5,9 +5,8 @@ import typings.engineIoClient.buildEsmSocketMod.SocketOptions
 import typings.engineIoParser.buildEsmCommonsMod.Packet
 import typings.engineIoParser.buildEsmCommonsMod.RawData
 import typings.socketIoComponentEmitter.mod.Emitter
-import typings.std.CloseEvent
 import typings.std.Error
-import typings.std.XMLHttpRequest
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,19 +16,21 @@ object buildEsmTransportMod {
   /* note: abstract class */ @JSImport("engine.io-client/build/esm/transport", "Transport")
   @js.native
   open class Transport protected ()
-    extends Emitter[js.Object, js.Object, TransportReservedEvents] {
+    extends Emitter[
+          Record[scala.Nothing, scala.Nothing], 
+          Record[scala.Nothing, scala.Nothing], 
+          TransportReservedEvents
+        ] {
     /**
       * Transport abstract constructor.
       *
-      * @param {Object} options.
-      * @api private
+      * @param {Object} opts - options
+      * @protected
       */
     def this(opts: Any) = this()
     
     /**
       * Closes the transport.
-      *
-      * @api public
       */
     def close(): this.type = js.native
     
@@ -38,9 +39,14 @@ object buildEsmTransportMod {
     /* protected */ def doOpen(): Any = js.native
     
     /**
+      * The name of the transport
+      */
+    def name: String = js.native
+    
+    /**
       * Called upon close.
       *
-      * @api protected
+      * @protected
       */
     /* protected */ def onClose(): Unit = js.native
     /* protected */ def onClose(details: CloseDetails): Unit = js.native
@@ -49,7 +55,7 @@ object buildEsmTransportMod {
       * Called with data.
       *
       * @param {String} data
-      * @api protected
+      * @protected
       */
     /* protected */ def onData(data: RawData): Unit = js.native
     
@@ -60,7 +66,7 @@ object buildEsmTransportMod {
       * @param description
       * @param context - the error context
       * @return {Transport} for chaining
-      * @api protected
+      * @protected
       */
     /* protected */ def onError(reason: String, description: Any): this.type = js.native
     /* protected */ def onError(reason: String, description: Any, context: Any): this.type = js.native
@@ -68,35 +74,39 @@ object buildEsmTransportMod {
     /**
       * Called upon open
       *
-      * @api protected
+      * @protected
       */
     /* protected */ def onOpen(): Unit = js.native
     
     /**
       * Called with a decoded packet.
       *
-      * @api protected
+      * @protected
       */
     /* protected */ def onPacket(packet: Packet): Unit = js.native
     
     /**
       * Opens the transport.
-      *
-      * @api public
       */
-    /* private */ var open: Any = js.native
+    def open(): this.type = js.native
     
     /* protected */ var opts: SocketOptions = js.native
     
-    /* protected */ var query: js.Object = js.native
+    /**
+      * Pauses the transport, in order not to lose packets during an upgrade.
+      *
+      * @param onPause
+      */
+    def pause(onPause: js.Function0[Unit]): Unit = js.native
     
-    /* protected */ var readyState: String = js.native
+    var query: Record[String, String] = js.native
+    
+    /* protected */ var readyState: TransportState = js.native
     
     /**
       * Sends multiple packets.
       *
       * @param {Array} packets
-      * @api public
       */
     def send(packets: Any): Unit = js.native
     
@@ -106,14 +116,14 @@ object buildEsmTransportMod {
     
     /* protected */ var supportsBinary: Boolean = js.native
     
-    /* protected */ var writable: Boolean = js.native
+    var writable: Boolean = js.native
     
-    /* protected */ def write(packets: Any): Any = js.native
+    /* protected */ def write(packets: js.Array[Packet]): Any = js.native
   }
   
   trait CloseDetails extends StObject {
     
-    var context: js.UndefOr[CloseEvent | XMLHttpRequest] = js.undefined
+    var context: js.UndefOr[Any] = js.undefined
     
     var description: String
   }
@@ -127,7 +137,7 @@ object buildEsmTransportMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: CloseDetails] (val x: Self) extends AnyVal {
       
-      inline def setContext(value: CloseEvent | XMLHttpRequest): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
       inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
@@ -187,5 +197,26 @@ object buildEsmTransportMod {
     def poll(): Unit = js.native
     
     def pollComplete(): Unit = js.native
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.engineIoClient.engineIoClientStrings.opening
+    - typings.engineIoClient.engineIoClientStrings.open
+    - typings.engineIoClient.engineIoClientStrings.closed
+    - typings.engineIoClient.engineIoClientStrings.pausing
+    - typings.engineIoClient.engineIoClientStrings.paused
+  */
+  trait TransportState extends StObject
+  object TransportState {
+    
+    inline def closed: typings.engineIoClient.engineIoClientStrings.closed = "closed".asInstanceOf[typings.engineIoClient.engineIoClientStrings.closed]
+    
+    inline def open: typings.engineIoClient.engineIoClientStrings.open = "open".asInstanceOf[typings.engineIoClient.engineIoClientStrings.open]
+    
+    inline def opening: typings.engineIoClient.engineIoClientStrings.opening = "opening".asInstanceOf[typings.engineIoClient.engineIoClientStrings.opening]
+    
+    inline def paused: typings.engineIoClient.engineIoClientStrings.paused = "paused".asInstanceOf[typings.engineIoClient.engineIoClientStrings.paused]
+    
+    inline def pausing: typings.engineIoClient.engineIoClientStrings.pausing = "pausing".asInstanceOf[typings.engineIoClient.engineIoClientStrings.pausing]
   }
 }

@@ -17,7 +17,7 @@ trait CancelSpotFleetRequestsRequest extends StObject {
   var SpotFleetRequestIds: SpotFleetRequestIdList
   
   /**
-    * Indicates whether to terminate instances for a Spot Fleet request if it is canceled successfully.
+    * Indicates whether to terminate the associated instances when the Spot Fleet request is canceled. The default is to terminate the instances. To let the instances continue to run after the Spot Fleet request is canceled, specify no-terminate-instances.
     */
   var TerminateInstances: Boolean
 }

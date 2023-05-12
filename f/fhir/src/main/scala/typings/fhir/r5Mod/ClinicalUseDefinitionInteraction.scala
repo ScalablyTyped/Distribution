@@ -19,7 +19,7 @@ trait ClinicalUseDefinitionInteraction
   var incidence: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
-    * The specific medication, food, substance or laboratory test that interacts.
+    * The specific medication, product, food, substance etc. or laboratory test that interacts.
     */
   var interactant: js.UndefOr[js.Array[ClinicalUseDefinitionInteractionInteractant]] = js.undefined
   

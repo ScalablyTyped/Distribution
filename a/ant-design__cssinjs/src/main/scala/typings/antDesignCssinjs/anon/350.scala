@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.MsContentZoomChaining
+import typings.csstype.mod.Property.BorderRight
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,11 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `350` extends StObject {
   
   var value: js.UndefOr[
-    MsContentZoomChaining | (js.Array[
+    (BorderRight[Double | String]) | (js.Array[
       (Extract[
-        js.UndefOr[MsContentZoomChaining | js.Array[NonNullable[js.UndefOr[MsContentZoomChaining]]]], 
+        js.UndefOr[
+          (BorderRight[Double | String]) | (js.Array[NonNullable[js.UndefOr[BorderRight[Double | String]]]])
+        ], 
         String
-      ]) | NonNullable[js.UndefOr[MsContentZoomChaining]]
+      ]) | (NonNullable[js.UndefOr[BorderRight[Double | String]]])
     ])
   ] = js.native
 }

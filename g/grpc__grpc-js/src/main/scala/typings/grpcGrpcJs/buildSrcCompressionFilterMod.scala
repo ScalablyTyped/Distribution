@@ -1,6 +1,5 @@
 package typings.grpcGrpcJs
 
-import typings.grpcGrpcJs.buildSrcCallStreamMod.Call
 import typings.grpcGrpcJs.buildSrcChannelMod.Channel
 import typings.grpcGrpcJs.buildSrcChannelOptionsMod.ChannelOptions
 import typings.grpcGrpcJs.buildSrcFilterMod.BaseFilter
@@ -35,7 +34,7 @@ object buildSrcCompressionFilterMod {
     /* private */ val channel: Any = js.native
     
     /* CompleteClass */
-    override def createFilter(callStream: Call): CompressionFilter = js.native
+    override def createFilter(): CompressionFilter = js.native
     
     /* private */ val options: Any = js.native
     

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@vue/test-utils" : "2.2.3"
+      "@vue/test-utils" : "2.3.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@vue/test-utils" : "2.2.3"
+      "@vue/test-utils" : "2.3.2"
     }
   ],
   "compile-devDependencies" : [

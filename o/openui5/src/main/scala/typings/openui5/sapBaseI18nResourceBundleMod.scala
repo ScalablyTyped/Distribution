@@ -125,10 +125,24 @@ object sapBaseI18nResourceBundleMod {
       * The text is searched in this resource bundle according to the fallback chain described in {@link module:sap/base/i18n/ResourceBundle}.
       * If no text could be found, the key itself is used as text.
       *
-      * If the second parameter `aArgs` is given, then any placeholder of the form "{n}" (with n
-      * being an integer) is replaced by the corresponding value from `aArgs` with index n. Note: This
-      * replacement is applied to the key if no text could be found. For more details on the replacement mechanism
-      * refer to {@link module:sap/base/strings/formatMessage}.
+      * Placeholders:
+      *
+      * A text can contain placeholders that will be replaced with concrete values when `getText` is called.
+      * The replacement is triggered by the `aArgs` parameter.
+      *
+      * Whenever this parameter is given, then the text and the arguments are additionally run through the {@link
+      * module:sap/base/strings/formatMessage} API to replace placeholders in the text with the corresponding
+      * values from the arguments array. The resulting string is returned by `getText`.
+      *
+      * As the `formatMessage` API imposes some requirements on the input text (regarding curly braces and single
+      * apostrophes), text authors need to be aware of the specifics of the `formatMessage` API. Callers of `getText`,
+      * on the other side, should only supply `aArgs` when the text has been created with the `formatMessage`
+      * API in mind. Otherwise, single apostrophes in the text might be removed unintentionally.
+      *
+      * When `getText` is called without `aArgs`, the `formatMessage` API is not applied and the transformation
+      * reg. placeholders and apostrophes does not happen.
+      *
+      * For more details on the replacement mechanism refer to {@link module:sap/base/strings/formatMessage}.
       *
       * @returns The value belonging to the key, if found; otherwise the key itself or `undefined` depending
       * on `bIgnoreKeyFallback`.

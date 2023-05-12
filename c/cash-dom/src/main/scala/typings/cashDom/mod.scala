@@ -344,7 +344,7 @@ object mod extends Shortcut {
   
   type Comparator = String | Ele | Cash | (js.ThisFunction2[/* this */ EleLoose, /* index */ Double, /* ele */ EleLoose, Boolean])
   
-  type Context = Document | HTMLElement | Element
+  type Context = Document | HTMLElement | Element | String
   
   type EachArrayCallback[T] = js.ThisFunction2[/* this */ T, /* index */ Double, /* ele */ T, Any]
   

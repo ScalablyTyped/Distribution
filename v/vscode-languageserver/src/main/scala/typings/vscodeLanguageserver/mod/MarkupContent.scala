@@ -11,7 +11,7 @@ object MarkupContent {
   val ^ : js.Any = js.native
   
   /**
-    * Checks whether the given value conforms to the [MarkupContent](#MarkupContent) interface.
+    * Checks whether the given value conforms to the {@link MarkupContent} interface.
     */
   inline def is(value: Any): /* is vscode-languageserver-types.vscode-languageserver-types.MarkupContent */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.MarkupContent */ Boolean]
 }

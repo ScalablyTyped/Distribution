@@ -21,7 +21,6 @@ trait AssumeRoleWithSAMLResponse extends StObject {
   /**
     * <p>The temporary security credentials, which include an access key ID, a secret access key,
     *          and a security (or session) token.</p>
-    *
     *          <note>
     *             <p>The size of the security token that STS API operations return is not fixed. We
     *         strongly recommend that you make no assumptions about the maximum size.</p>
@@ -48,7 +47,7 @@ trait AssumeRoleWithSAMLResponse extends StObject {
     *             </li>
     *          </ul>
     *          <p>The combination of <code>NameQualifier</code> and <code>Subject</code> can be used to
-    *          uniquely identify a federated user.</p>
+    *          uniquely identify a user.</p>
     *          <p>The following pseudocode shows how the hash value is calculated:</p>
     *          <p>
     *             <code>BASE64 ( SHA1 ( "https://example.com/saml" + "123456789012" + "/MySAMLIdP" ) )</code>

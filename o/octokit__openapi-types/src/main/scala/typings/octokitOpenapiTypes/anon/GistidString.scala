@@ -6,7 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GistidString extends StObject {
   
-  /** The unique identifier of the gist. */
   var gist_id: String
 }
 object GistidString {

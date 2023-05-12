@@ -45,6 +45,80 @@ trait ConditionalFormat
   val cellValueOrNullObject: CellValueConditionalFormat = js.native
   
   /**
+    * Change the conditional format rule type to cell value.
+    *
+    * @remarks
+    * [Api set: ExcelApi 1.17]
+    *
+    * @param properties The properties to set for the cell value conditional format rule.
+    */
+  def changeRuleToCellValue(properties: ConditionalCellValueRule): Unit = js.native
+  
+  /**
+    * Change the conditional format rule type to color scale.
+    *
+    * @remarks
+    * [Api set: ExcelApi 1.17]
+    */
+  def changeRuleToColorScale(): Unit = js.native
+  
+  /**
+    * Change the conditional format rule type to text comparison.
+    *
+    * @remarks
+    * [Api set: ExcelApi 1.17]
+    *
+    * @param properties The properties to set for the text comparison conditional format rule.
+    */
+  def changeRuleToContainsText(properties: ConditionalTextComparisonRule): Unit = js.native
+  
+  /**
+    * Change the conditional format rule type to custom.
+    *
+    * @remarks
+    * [Api set: ExcelApi 1.17]
+    *
+    * @param formula The formula to set for the custom conditional format rule.
+    */
+  def changeRuleToCustom(formula: String): Unit = js.native
+  
+  /**
+    * Change the conditional format rule type to data bar.
+    *
+    * @remarks
+    * [Api set: ExcelApi 1.17]
+    */
+  def changeRuleToDataBar(): Unit = js.native
+  
+  /**
+    * Change the conditional format rule type to icon set.
+    *
+    * @remarks
+    * [Api set: ExcelApi 1.17]
+    */
+  def changeRuleToIconSet(): Unit = js.native
+  
+  /**
+    * Change the conditional format rule type to preset criteria.
+    *
+    * @remarks
+    * [Api set: ExcelApi 1.17]
+    *
+    * @param properties The properties to set for the preset criteria conditional format rule.
+    */
+  def changeRuleToPresetCriteria(properties: ConditionalPresetCriteriaRule): Unit = js.native
+  
+  /**
+    * Change the conditional format rule type to top/bottom.
+    *
+    * @remarks
+    * [Api set: ExcelApi 1.17]
+    *
+    * @param properties The properties to set for the top/bottom conditional format rule.
+    */
+  def changeRuleToTopBottom(properties: ConditionalTopBottomRule): Unit = js.native
+  
+  /**
     * Returns the color scale conditional format properties if the current conditional format is a `ColorScale` type.
     *
     * @remarks
@@ -201,6 +275,18 @@ trait ConditionalFormat
     */
   def set(properties: ConditionalFormatUpdateData): Unit = js.native
   def set(properties: ConditionalFormatUpdateData, options: UpdateOptions): Unit = js.native
+  
+  def setRanges(ranges: String): Unit = js.native
+  /**
+    * Set the ranges that the conditonal format rule is applied to.
+    *
+    * @remarks
+    * [Api set: ExcelApi 1.17]
+    *
+    * @param ranges Collection of one or more ranges for this rule to be applied to.
+    */
+  def setRanges(ranges: Range): Unit = js.native
+  def setRanges(ranges: RangeAreas): Unit = js.native
   
   /**
     * If the conditions of this conditional format are met, no lower-priority formats shall take effect on that cell.

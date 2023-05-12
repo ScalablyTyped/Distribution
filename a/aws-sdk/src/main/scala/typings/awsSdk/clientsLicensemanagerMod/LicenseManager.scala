@@ -71,12 +71,12 @@ trait LicenseManager extends Service {
   var config_LicenseManager: ConfigBase & ClientConfiguration = js.native
   
   /**
-    * Creates a grant for the specified license. A grant shares the use of license entitlements with specific Amazon Web Services accounts.
+    * Creates a grant for the specified license. A grant shares the use of license entitlements with a specific Amazon Web Services account, an organization, or an organizational unit (OU). For more information, see Granted licenses in License Manager in the License Manager User Guide.
     */
   def createGrant(): Request[CreateGrantResponse, AWSError] = js.native
   def createGrant(callback: js.Function2[/* err */ AWSError, /* data */ CreateGrantResponse, Unit]): Request[CreateGrantResponse, AWSError] = js.native
   /**
-    * Creates a grant for the specified license. A grant shares the use of license entitlements with specific Amazon Web Services accounts.
+    * Creates a grant for the specified license. A grant shares the use of license entitlements with a specific Amazon Web Services account, an organization, or an organizational unit (OU). For more information, see Granted licenses in License Manager in the License Manager User Guide.
     */
   def createGrant(params: CreateGrantRequest): Request[CreateGrantResponse, AWSError] = js.native
   def createGrant(
@@ -85,12 +85,12 @@ trait LicenseManager extends Service {
   ): Request[CreateGrantResponse, AWSError] = js.native
   
   /**
-    * Creates a new version of the specified grant.
+    * Creates a new version of the specified grant. For more information, see Granted licenses in License Manager in the License Manager User Guide.
     */
   def createGrantVersion(): Request[CreateGrantVersionResponse, AWSError] = js.native
   def createGrantVersion(callback: js.Function2[/* err */ AWSError, /* data */ CreateGrantVersionResponse, Unit]): Request[CreateGrantVersionResponse, AWSError] = js.native
   /**
-    * Creates a new version of the specified grant.
+    * Creates a new version of the specified grant. For more information, see Granted licenses in License Manager in the License Manager User Guide.
     */
   def createGrantVersion(params: CreateGrantVersionRequest): Request[CreateGrantVersionResponse, AWSError] = js.native
   def createGrantVersion(
@@ -529,12 +529,12 @@ trait LicenseManager extends Service {
   ): Request[ListLicensesResponse, AWSError] = js.native
   
   /**
-    * Lists grants that are received but not accepted.
+    * Lists grants that are received. Received grants are grants created while specifying the recipient as this Amazon Web Services account, your organization, or an organizational unit (OU) to which this member account belongs.
     */
   def listReceivedGrants(): Request[ListReceivedGrantsResponse, AWSError] = js.native
   def listReceivedGrants(callback: js.Function2[/* err */ AWSError, /* data */ ListReceivedGrantsResponse, Unit]): Request[ListReceivedGrantsResponse, AWSError] = js.native
   /**
-    * Lists grants that are received but not accepted.
+    * Lists grants that are received. Received grants are grants created while specifying the recipient as this Amazon Web Services account, your organization, or an organizational unit (OU) to which this member account belongs.
     */
   def listReceivedGrants(params: ListReceivedGrantsRequest): Request[ListReceivedGrantsResponse, AWSError] = js.native
   def listReceivedGrants(

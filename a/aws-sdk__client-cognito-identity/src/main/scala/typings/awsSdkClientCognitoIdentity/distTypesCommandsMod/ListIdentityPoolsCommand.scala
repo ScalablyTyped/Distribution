@@ -10,6 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class ListIdentityPoolsCommand protected ()
   extends typings.awsSdkClientCognitoIdentity.distTypesCommandsListIdentityPoolsCommandMod.ListIdentityPoolsCommand {
+  /**
+    * @public
+    */
   def this(input: ListIdentityPoolsCommandInput) = this()
 }
 /* static members */

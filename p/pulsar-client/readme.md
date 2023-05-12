@@ -1,7 +1,7 @@
 
 # Scala.js typings for pulsar-client
 
-Typings are for version 1.7.0
+Typings are for version 1.8.2
 
 ## Library description:
 Pulsar Node.js client

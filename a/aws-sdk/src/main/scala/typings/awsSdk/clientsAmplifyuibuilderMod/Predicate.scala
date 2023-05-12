@@ -22,6 +22,11 @@ trait Predicate extends StObject {
   var operand: js.UndefOr[String] = js.undefined
   
   /**
+    * The type of value to use when performing the evaluation.
+    */
+  var operandType: js.UndefOr[OperandType] = js.undefined
+  
+  /**
     * The operator to use to perform the evaluation.
     */
   var operator: js.UndefOr[String] = js.undefined
@@ -52,6 +57,10 @@ object Predicate {
     inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
     inline def setOperand(value: String): Self = StObject.set(x, "operand", value.asInstanceOf[js.Any])
+    
+    inline def setOperandType(value: OperandType): Self = StObject.set(x, "operandType", value.asInstanceOf[js.Any])
+    
+    inline def setOperandTypeUndefined: Self = StObject.set(x, "operandType", js.undefined)
     
     inline def setOperandUndefined: Self = StObject.set(x, "operand", js.undefined)
     

@@ -22,7 +22,7 @@ trait ColumnStatisticsData extends StObject {
   var DateColumnStatisticsData: js.UndefOr[typings.awsSdk.clientsGlueMod.DateColumnStatisticsData] = js.undefined
   
   /**
-    * Decimal column statistics data.
+    *  Decimal column statistics data. UnscaledValues within are Base64-encoded binary objects storing big-endian, two's complement representations of the decimal's unscaled value. 
     */
   var DecimalColumnStatisticsData: js.UndefOr[typings.awsSdk.clientsGlueMod.DecimalColumnStatisticsData] = js.undefined
   

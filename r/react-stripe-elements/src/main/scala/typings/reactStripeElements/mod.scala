@@ -19,6 +19,7 @@ import typings.stripeV3.stripe.RetrieveSourceOptions
 import typings.stripeV3.stripe.SetupIntentResponse
 import typings.stripeV3.stripe.StripeClientCheckoutOptions
 import typings.stripeV3.stripe.StripeRedirectResponse
+import typings.stripeV3.stripe.VerificationSessionResult
 import typings.stripeV3.stripe.elements.Element
 import typings.stripeV3.stripe.paymentMethod.paymentMethodType
 import typings.stripeV3.stripe.paymentRequest.StripePaymentRequest
@@ -39,7 +40,7 @@ object mod {
     def this(props: ElementProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: ElementProps, context: Any) = this()
   }
@@ -51,7 +52,7 @@ object mod {
     def this(props: ElementProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: ElementProps, context: Any) = this()
   }
@@ -63,7 +64,7 @@ object mod {
     def this(props: ElementProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: ElementProps, context: Any) = this()
   }
@@ -75,7 +76,7 @@ object mod {
     def this(props: ElementProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: ElementProps, context: Any) = this()
   }
@@ -87,7 +88,7 @@ object mod {
     def this(props: ElementProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: ElementProps, context: Any) = this()
   }
@@ -99,7 +100,7 @@ object mod {
     def this(props: ElementsCreateOptionschil) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: ElementsCreateOptionschil, context: Any) = this()
   }
@@ -111,7 +112,7 @@ object mod {
     def this(props: ElementProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: ElementProps, context: Any) = this()
   }
@@ -123,7 +124,7 @@ object mod {
     def this(props: ElementProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: ElementProps, context: Any) = this()
   }
@@ -135,7 +136,7 @@ object mod {
     def this(props: PaymentRequestButtonElementProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: PaymentRequestButtonElementProps, context: Any) = this()
   }
@@ -147,7 +148,7 @@ object mod {
     def this(props: ElementProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: ElementProps, context: Any) = this()
   }
@@ -159,7 +160,7 @@ object mod {
     def this(props: StripeProviderProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: StripeProviderProps, context: Any) = this()
   }
@@ -392,6 +393,8 @@ object mod {
             /* options */ RetrieveSourceOptions, 
             js.Promise[typings.stripeV3.stripe.SourceResponse]
           ] = js.native
+      
+      var verifyIdentity: js.Function1[/* clientSecret */ String, js.Promise[VerificationSessionResult]] = js.native
     }
     
     trait StripeProviderOptions extends StObject {

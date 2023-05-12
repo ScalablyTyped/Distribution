@@ -8,33 +8,33 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SaveDialogOptions extends StObject {
   
   /**
-    * The resource the dialog shows when opened.
-    */
+  		 * The resource the dialog shows when opened.
+  		 */
   var defaultUri: js.UndefOr[Uri] = js.undefined
   
   /**
-    * A set of file filters that are used by the dialog. Each entry is a human-readable label,
-    * like "TypeScript", and an array of extensions, e.g.
-    * ```ts
-    * {
-    * 	'Images': ['png', 'jpg']
-    * 	'TypeScript': ['ts', 'tsx']
-    * }
-    * ```
-    */
+  		 * A set of file filters that are used by the dialog. Each entry is a human-readable label,
+  		 * like "TypeScript", and an array of extensions, e.g.
+  		 * ```ts
+  		 * {
+  		 * 	'Images': ['png', 'jpg']
+  		 * 	'TypeScript': ['ts', 'tsx']
+  		 * }
+  		 * ```
+  		 */
   var filters: js.UndefOr[StringDictionary[js.Array[String]]] = js.undefined
   
   /**
-    * A human-readable string for the save button.
-    */
+  		 * A human-readable string for the save button.
+  		 */
   var saveLabel: js.UndefOr[String] = js.undefined
   
   /**
-    * Dialog title.
-    *
-    * This parameter might be ignored, as not all operating systems display a title on save dialogs
-    * (for example, macOS).
-    */
+  		 * Dialog title.
+  		 *
+  		 * This parameter might be ignored, as not all operating systems display a title on save dialogs
+  		 * (for example, macOS).
+  		 */
   var title: js.UndefOr[String] = js.undefined
 }
 object SaveDialogOptions {

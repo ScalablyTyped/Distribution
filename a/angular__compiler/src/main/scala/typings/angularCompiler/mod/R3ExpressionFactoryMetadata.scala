@@ -15,13 +15,12 @@ object R3ExpressionFactoryMetadata {
   
   inline def apply(
     expression: Expression,
-    internalType: Expression,
     name: String,
     target: FactoryTarget,
     `type`: R3Reference,
     typeArgumentCount: Double
   ): R3ExpressionFactoryMetadata = {
-    val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], internalType = internalType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], typeArgumentCount = typeArgumentCount.asInstanceOf[js.Any], deps = null)
+    val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], typeArgumentCount = typeArgumentCount.asInstanceOf[js.Any], deps = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[R3ExpressionFactoryMetadata]
   }

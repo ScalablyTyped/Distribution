@@ -3,7 +3,7 @@ package typings.wdioTypes
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
 import typings.node.eventsMod.EventEmitter
-import typings.node.fsMod.WriteStream
+import typings.node.nodeColonfsMod.WriteStream
 import typings.wdioTypes.anon.PartialOptions
 import typings.wdioTypes.anon.Write
 import typings.wdioTypes.buildCapabilitiesMod.RemoteCapability

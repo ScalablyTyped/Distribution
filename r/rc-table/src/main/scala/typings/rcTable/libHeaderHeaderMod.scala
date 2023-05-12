@@ -18,7 +18,8 @@ object libHeaderHeaderMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[RecordType](param0: HeaderProps[RecordType]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  /* was `typeof Header` */
+  inline def default[RecordType](props: HeaderProps[RecordType]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   trait HeaderProps[RecordType] extends StObject {
     

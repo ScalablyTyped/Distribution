@@ -8,10 +8,19 @@ trait GPURenderPassLayout
   extends StObject
      with GPUObjectDescriptorBase {
   
+  /**
+    * A list of the {@link GPUTextureFormat}s of the color attachments for this pass or bundle.
+    */
   var colorFormats: js.Iterable[GPUTextureFormat | Null]
   
+  /**
+    * The {@link GPUTextureFormat} of the depth/stencil attachment for this pass or bundle.
+    */
   var depthStencilFormat: js.UndefOr[GPUTextureFormat] = js.undefined
   
+  /**
+    * Number of samples per pixel in the attachments for this pass or bundle.
+    */
   var sampleCount: js.UndefOr[GPUSize32] = js.undefined
 }
 object GPURenderPassLayout {

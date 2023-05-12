@@ -6,9 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @js.native
 sealed trait RankBy extends StObject
-/**
-  * Ranking options for a PlaceSearchRequest.
-  */
 @JSGlobal("google.maps.places.RankBy")
 @js.native
 object RankBy extends StObject {

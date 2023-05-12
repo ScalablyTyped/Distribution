@@ -1,6 +1,5 @@
 package typings.gestalt.mod
 
-import typings.gestalt.anon.AccessibilityLabel
 import typings.gestalt.gestaltStrings.error
 import typings.gestalt.gestaltStrings.info
 import typings.gestalt.gestaltStrings.recommendation
@@ -12,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CalloutProps extends StObject {
   
-  var dismissButton: js.UndefOr[AccessibilityLabel] = js.undefined
+  var dismissButton: js.UndefOr[OnDismissButtonObject] = js.undefined
   
   var iconAccessibilityLabel: String
   
@@ -41,7 +40,7 @@ object CalloutProps {
   @scala.inline
   implicit open class MutableBuilder[Self <: CalloutProps] (val x: Self) extends AnyVal {
     
-    inline def setDismissButton(value: AccessibilityLabel): Self = StObject.set(x, "dismissButton", value.asInstanceOf[js.Any])
+    inline def setDismissButton(value: OnDismissButtonObject): Self = StObject.set(x, "dismissButton", value.asInstanceOf[js.Any])
     
     inline def setDismissButtonUndefined: Self = StObject.set(x, "dismissButton", js.undefined)
     

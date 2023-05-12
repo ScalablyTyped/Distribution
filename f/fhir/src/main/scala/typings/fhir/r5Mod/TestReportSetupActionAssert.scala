@@ -30,6 +30,11 @@ trait TestReportSetupActionAssert
   var message: js.UndefOr[String] = js.undefined
   
   /**
+    * TestScript and TestReport instances are typically (and expected to be) based on known, defined test requirements and documentation. These links provide traceability from the executable/executed TestScript and TestReport tests to these requirements.
+    */
+  var requirement: js.UndefOr[js.Array[TestReportSetupActionAssertRequirement]] = js.undefined
+  
+  /**
     * The result of this assertion.
     */
   var result: pass | skip | fail | warning | error
@@ -51,6 +56,12 @@ object TestReportSetupActionAssert {
     inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    
+    inline def setRequirement(value: js.Array[TestReportSetupActionAssertRequirement]): Self = StObject.set(x, "requirement", value.asInstanceOf[js.Any])
+    
+    inline def setRequirementUndefined: Self = StObject.set(x, "requirement", js.undefined)
+    
+    inline def setRequirementVarargs(value: TestReportSetupActionAssertRequirement*): Self = StObject.set(x, "requirement", js.Array(value*))
     
     inline def setResult(value: pass | skip | fail | warning | error): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     

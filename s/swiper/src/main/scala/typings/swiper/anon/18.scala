@@ -1,6 +1,6 @@
 package typings.swiper.anon
 
-import typings.swiper.typesModulesPaginationMod.PaginationOptions
+import typings.swiper.typesModulesParallaxMod.ParallaxOptions
 import typings.vueRuntimeCore.mod.PropConstructor
 import typings.vueRuntimeCore.mod.PropType
 import org.scalablytyped.runtime.StObject
@@ -11,11 +11,11 @@ trait `18` extends StObject {
   
   var default: Unit
   
-  var `type`: PropType[PaginationOptions | Boolean]
+  var `type`: PropType[ParallaxOptions | Boolean]
 }
 object `18` {
   
-  inline def apply(default: Unit, `type`: PropType[PaginationOptions | Boolean]): `18` = {
+  inline def apply(default: Unit, `type`: PropType[ParallaxOptions | Boolean]): `18` = {
     val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[`18`]
@@ -26,10 +26,10 @@ object `18` {
     
     inline def setDefault(value: Unit): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
-    inline def setType(value: PropType[PaginationOptions | Boolean]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: PropType[ParallaxOptions | Boolean]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    inline def setTypeFunction0(value: () => PaginationOptions | Boolean): Self = StObject.set(x, "type", js.Any.fromFunction0(value))
+    inline def setTypeFunction0(value: () => ParallaxOptions | Boolean): Self = StObject.set(x, "type", js.Any.fromFunction0(value))
     
-    inline def setTypeVarargs(value: (PropConstructor[PaginationOptions | Boolean])*): Self = StObject.set(x, "type", js.Array(value*))
+    inline def setTypeVarargs(value: (PropConstructor[ParallaxOptions | Boolean])*): Self = StObject.set(x, "type", js.Array(value*))
   }
 }

@@ -12,7 +12,7 @@ open class Match[TParams] protected ()
   def this(props: MatchProps[TParams]) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: MatchProps[TParams], context: Any) = this()
 }

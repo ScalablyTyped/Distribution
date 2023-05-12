@@ -17,31 +17,29 @@ object srcHighlightcommandMod {
   - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Command * / any */ @js.native
   trait HighlightCommand extends StObject {
     
+    /**
+      * Executes the command.
+      *
+      * @param options Options for the executed command.
+      * @param options.value The value to apply.
+      *
+      * @fires execute
+      */
     def execute(): Unit = js.native
     def execute(options: Value): Unit = js.native
     
+    /**
+      * @inheritDoc
+      */
     def refresh(): Unit = js.native
-  }
-  
-  /* augmented module */
-  object ckeditorCkeditor5CoreSrcCommandcollectionAugmentingMod {
     
-    trait Commands extends StObject {
-      
-      var HighlightCommand: typings.ckeditorCkeditor5Highlight.srcHighlightcommandMod.HighlightCommand
-    }
-    object Commands {
-      
-      inline def apply(HighlightCommand: HighlightCommand): Commands = {
-        val __obj = js.Dynamic.literal(HighlightCommand = HighlightCommand.asInstanceOf[js.Any])
-        __obj.asInstanceOf[Commands]
-      }
-      
-      @scala.inline
-      implicit open class MutableBuilder[Self <: Commands] (val x: Self) extends AnyVal {
-        
-        inline def setHighlightCommand(value: HighlightCommand): Self = StObject.set(x, "HighlightCommand", value.asInstanceOf[js.Any])
-      }
-    }
+    /**
+      * A value indicating whether the command is active. If the selection has some highlight attribute,
+      * it corresponds to the value of that attribute.
+      *
+      * @observable
+      * @readonly
+      */
+    var value: js.UndefOr[String] = js.native
   }
 }

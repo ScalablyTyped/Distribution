@@ -12,7 +12,7 @@ trait BatchPutDocumentRequest extends StObject {
   var CustomDocumentEnrichmentConfiguration: js.UndefOr[typings.awsSdk.clientsKendraMod.CustomDocumentEnrichmentConfiguration] = js.undefined
   
   /**
-    * One or more documents to add to the index. Documents have the following file size limits.   5 MB total size for inline documents   50 MB total size for files from an S3 bucket   5 MB extracted text for any file   For more information about file size and transaction per second quotas, see Quotas.
+    * One or more documents to add to the index. Documents have the following file size limits.   50 MB total size for any file   5 MB extracted text for any file   For more information, see Quotas.
     */
   var Documents: DocumentList
   
@@ -22,7 +22,7 @@ trait BatchPutDocumentRequest extends StObject {
   var IndexId: typings.awsSdk.clientsKendraMod.IndexId
   
   /**
-    * The Amazon Resource Name (ARN) of a role that is allowed to run the BatchPutDocument API. For more information, see IAM Roles for Amazon Kendra.
+    * The Amazon Resource Name (ARN) of an IAM role with permission to access your S3 bucket. For more information, see IAM access roles for Amazon Kendra.
     */
   var RoleArn: js.UndefOr[typings.awsSdk.clientsKendraMod.RoleArn] = js.undefined
 }

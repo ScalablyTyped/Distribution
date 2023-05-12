@@ -37,6 +37,8 @@ object typesRuntimeStoreMod {
   inline def readable[T](value: T, start: StartStopNotifier[T]): Readable_[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("readable")(value.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[Readable_[T]]
   inline def readable[T](value: Unit, start: StartStopNotifier[T]): Readable_[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("readable")(value.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[Readable_[T]]
   
+  inline def readonly[T](store: Readable_[T]): Readable_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("readonly")(store.asInstanceOf[js.Any]).asInstanceOf[Readable_[T]]
+  
   inline def writable[T](): Writable_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("writable")().asInstanceOf[Writable_[T]]
   inline def writable[T](value: T): Writable_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("writable")(value.asInstanceOf[js.Any]).asInstanceOf[Writable_[T]]
   inline def writable[T](value: T, start: StartStopNotifier[T]): Writable_[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("writable")(value.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[Writable_[T]]
@@ -57,7 +59,7 @@ object typesRuntimeStoreMod {
     def subscribe(run: Subscriber[T], invalidate: Invalidator[T]): Unsubscriber = js.native
   }
   
-  type StartStopNotifier[T] = js.Function1[/* set */ Subscriber[T], Unsubscriber | Unit]
+  type StartStopNotifier[T] = js.Function1[/* set */ js.Function1[/* value */ T, Unit], Unit | js.Function0[Unit]]
   
   /** One or more `Readable`s. */
   type Stores = Readable_[Any] | Array[Readable_[Any]] | js.Array[Readable_[Any]]

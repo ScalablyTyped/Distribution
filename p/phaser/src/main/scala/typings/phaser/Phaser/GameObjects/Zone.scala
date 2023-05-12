@@ -75,10 +75,13 @@ trait Zone
   
   /**
     * Allows you to define your own Geometry shape to be used as a Drop Zone.
-    * @param hitArea A Geometry shape instance, such as Phaser.Geom.Ellipse, or your own custom shape.
-    * @param hitAreaCallback A function that will return `true` if the given x/y coords it is sent are within the shape.
+    * @param hitArea A Geometry shape instance, such as Phaser.Geom.Ellipse, or your own custom shape. If not given it will try to create a Rectangle based on the size of this zone.
+    * @param hitAreaCallback A function that will return `true` if the given x/y coords it is sent are within the shape. If you provide a shape you must also provide a callback.
     */
+  def setDropZone(): this.type = js.native
+  def setDropZone(hitArea: js.Object): this.type = js.native
   def setDropZone(hitArea: js.Object, hitAreaCallback: HitAreaCallback): this.type = js.native
+  def setDropZone(hitArea: Unit, hitAreaCallback: HitAreaCallback): this.type = js.native
   
   /**
     * Sets this Zone to be a Rectangle Drop Zone.

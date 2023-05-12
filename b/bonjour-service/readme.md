@@ -1,7 +1,7 @@
 
 # Scala.js typings for bonjour-service
 
-Typings are for version 1.0.14
+Typings are for version 1.1.1
 
 ## Library description:
 A Bonjour/Zeroconf implementation in TypeScript

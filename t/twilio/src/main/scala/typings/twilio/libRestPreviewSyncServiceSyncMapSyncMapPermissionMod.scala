@@ -1,236 +1,140 @@
 package typings.twilio
 
+import typings.twilio.anon.Manage
 import typings.twilio.libBasePageMod.TwilioResponsePayload
-import typings.twilio.libInterfacesMod.SerializableClass
+import typings.twilio.libRestPreviewSyncMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libRestPreviewSyncServiceSyncMapSyncMapPermissionMod {
   
-  @JSImport("twilio/lib/rest/preview/sync/service/syncMap/syncMapPermission", JSImport.Namespace)
+  @JSImport("twilio/lib/rest/preview/sync/service/syncMap/syncMapPermission", "SyncMapPermissionContextImpl")
   @js.native
-  val ^ : js.Any = js.native
-  
-  @JSImport("twilio/lib/rest/preview/sync/service/syncMap/syncMapPermission", "SyncMapPermissionContext")
-  @js.native
-  open class SyncMapPermissionContext protected () extends StObject {
-    /**
-      * Initialize the SyncMapPermissionContext
-      *
-      * PLEASE NOTE that this class contains preview products that are subject to
-      * change. Use them with caution. If you currently do not have developer preview
-      * access, please contact help@twilio.com.
-      *
-      * @param version - Version of the resource
-      * @param serviceSid - The service_sid
-      * @param mapSid - Sync Map SID or unique name.
-      * @param identity - Identity of the user to whom the Sync Map Permission applies.
-      */
-    def this(
-      version: typings.twilio.libRestPreviewSyncMod.^,
-      serviceSid: String,
-      mapSid: String,
-      identity: String
-    ) = this()
+  open class SyncMapPermissionContextImpl protected ()
+    extends StObject
+       with SyncMapPermissionContext {
+    def this(_version: default, serviceSid: String, mapSid: String, identity: String) = this()
     
-    /**
-      * fetch a SyncMapPermissionInstance
-      *
-      * @param callback - Callback to handle processed record
-      */
-    def fetch(): js.Promise[SyncMapPermissionInstance] = js.native
-    def fetch(callback: js.Function2[/* error */ js.Error | Null, /* items */ SyncMapPermissionInstance, Any]): js.Promise[SyncMapPermissionInstance] = js.native
+    /* protected */ var _solution: SyncMapPermissionContextSolution = js.native
     
-    /**
-      * remove a SyncMapPermissionInstance
-      *
-      * @param callback - Callback to handle processed record
-      */
-    def remove(): js.Promise[Boolean] = js.native
-    def remove(callback: js.Function2[/* error */ js.Error | Null, /* items */ SyncMapPermissionInstance, Any]): js.Promise[Boolean] = js.native
+    /* protected */ var _uri: String = js.native
     
-    /**
-      * Provide a user-friendly representation
-      */
-    def toJSON(): Any = js.native
-    
-    /**
-      * update a SyncMapPermissionInstance
-      *
-      * @param opts - Options for request
-      * @param callback - Callback to handle processed record
-      */
-    def update(opts: SyncMapPermissionInstanceUpdateOptions): js.Promise[SyncMapPermissionInstance] = js.native
-    def update(
-      opts: SyncMapPermissionInstanceUpdateOptions,
-      callback: js.Function2[/* error */ js.Error | Null, /* items */ SyncMapPermissionInstance, Any]
-    ): js.Promise[SyncMapPermissionInstance] = js.native
+    /* protected */ var _version: default = js.native
   }
   
   @JSImport("twilio/lib/rest/preview/sync/service/syncMap/syncMapPermission", "SyncMapPermissionInstance")
   @js.native
-  open class SyncMapPermissionInstance protected () extends SerializableClass {
-    /**
-      * Initialize the SyncMapPermissionContext
-      *
-      * PLEASE NOTE that this class contains preview products that are subject to
-      * change. Use them with caution. If you currently do not have developer preview
-      * access, please contact help@twilio.com.
-      *
-      * @param version - Version of the resource
-      * @param payload - The instance payload
-      * @param serviceSid - Sync Service Instance SID.
-      * @param mapSid - Sync Map SID.
-      * @param identity - Identity of the user to whom the Sync Map Permission applies.
-      */
+  open class SyncMapPermissionInstance protected () extends StObject {
+    def this(_version: default, payload: SyncMapPermissionResource, serviceSid: String, mapSid: String) = this()
     def this(
-      version: typings.twilio.libRestPreviewSyncMod.^,
-      payload: SyncMapPermissionPayload,
+      _version: default,
+      payload: SyncMapPermissionResource,
       serviceSid: String,
       mapSid: String,
       identity: String
     ) = this()
     
-    /* private */ var _proxy: SyncMapPermissionContext = js.native
+    /* protected */ var _context: js.UndefOr[SyncMapPermissionContext] = js.native
     
+    /* private */ def _proxy: Any = js.native
+    
+    /* protected */ var _solution: SyncMapPermissionContextSolution = js.native
+    
+    /* protected */ var _version: default = js.native
+    
+    /**
+      * The unique SID identifier of the Twilio Account.
+      */
     var accountSid: String = js.native
     
     /**
-      * fetch a SyncMapPermissionInstance
+      * Fetch a SyncMapPermissionInstance
       *
       * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed SyncMapPermissionInstance
       */
     def fetch(): js.Promise[SyncMapPermissionInstance] = js.native
-    def fetch(callback: js.Function2[/* error */ js.Error | Null, /* items */ this.type, Any]): js.Promise[SyncMapPermissionInstance] = js.native
+    def fetch(callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[this.type], Any]): js.Promise[SyncMapPermissionInstance] = js.native
     
+    /**
+      * Arbitrary string identifier representing a human user associated with an FPA token, assigned by the developer.
+      */
     var identity: String = js.native
     
+    /**
+      * Boolean flag specifying whether the identity can delete the Sync Map.
+      */
     var manage: Boolean = js.native
     
+    /**
+      * The unique SID identifier of the Sync Map to which the Permission applies.
+      */
     var mapSid: String = js.native
     
+    /**
+      * Boolean flag specifying whether the identity can read the Sync Map and its Items.
+      */
     var read: Boolean = js.native
     
     /**
-      * remove a SyncMapPermissionInstance
+      * Remove a SyncMapPermissionInstance
       *
       * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed boolean
       */
     def remove(): js.Promise[Boolean] = js.native
-    def remove(callback: js.Function2[/* error */ js.Error | Null, /* items */ this.type, Any]): js.Promise[Boolean] = js.native
+    def remove(callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[Boolean], Any]): js.Promise[Boolean] = js.native
     
+    /**
+      * The unique SID identifier of the Sync Service Instance.
+      */
     var serviceSid: String = js.native
     
     /**
-      * update a SyncMapPermissionInstance
+      * Provide a user-friendly representation
       *
-      * @param opts - Options for request
-      * @param callback - Callback to handle processed record
+      * @returns Object
       */
-    def update(opts: SyncMapPermissionInstanceUpdateOptions): js.Promise[SyncMapPermissionInstance] = js.native
+    def toJSON(): Manage = js.native
+    
+    /**
+      * Update a SyncMapPermissionInstance
+      *
+      * @param params - Parameter for request
+      * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed SyncMapPermissionInstance
+      */
+    def update(params: SyncMapPermissionContextUpdateOptions): js.Promise[SyncMapPermissionInstance] = js.native
     def update(
-      opts: SyncMapPermissionInstanceUpdateOptions,
-      callback: js.Function2[/* error */ js.Error | Null, /* items */ this.type, Any]
+      params: SyncMapPermissionContextUpdateOptions,
+      callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[this.type], Any]
     ): js.Promise[SyncMapPermissionInstance] = js.native
     
+    /**
+      * Contains an absolute URL for this Sync Map Permission.
+      */
     var url: String = js.native
     
+    /**
+      * Boolean flag specifying whether the identity can create, update and delete Items of the Sync Map.
+      */
     var write: Boolean = js.native
-  }
-  
-  /**
-    * Initialize the SyncMapPermissionList
-    *
-    * PLEASE NOTE that this class contains preview products that are subject to
-    * change. Use them with caution. If you currently do not have developer preview
-    * access, please contact help@twilio.com.
-    *
-    * @param version - Version of the resource
-    * @param serviceSid - Sync Service Instance SID.
-    * @param mapSid - Sync Map SID.
-    */
-  inline def SyncMapPermissionList(version: typings.twilio.libRestPreviewSyncMod.^, serviceSid: String, mapSid: String): SyncMapPermissionListInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("SyncMapPermissionList")(version.asInstanceOf[js.Any], serviceSid.asInstanceOf[js.Any], mapSid.asInstanceOf[js.Any])).asInstanceOf[SyncMapPermissionListInstance]
-  
-  @JSImport("twilio/lib/rest/preview/sync/service/syncMap/syncMapPermission", "SyncMapPermissionPage")
-  @js.native
-  open class SyncMapPermissionPage protected ()
-    extends typings.twilio.libBasePageMod.^[
-          typings.twilio.libRestPreviewSyncMod.^, 
-          SyncMapPermissionPayload, 
-          SyncMapPermissionResource, 
-          SyncMapPermissionInstance
-        ] {
-    /**
-      * Initialize the SyncMapPermissionPage
-      *
-      * PLEASE NOTE that this class contains preview products that are subject to
-      * change. Use them with caution. If you currently do not have developer preview
-      * access, please contact help@twilio.com.
-      *
-      * @param version - Version of the resource
-      * @param response - Response from the API
-      * @param solution - Path solution
-      */
-    def this(
-      version: typings.twilio.libRestPreviewSyncMod.^,
-      response: typings.twilio.libHttpResponseMod.^[String],
-      solution: SyncMapPermissionSolution
-    ) = this()
-    
-    /**
-      * Build an instance of SyncMapPermissionInstance
-      *
-      * @param payload - Payload response from the API
-      */
-    def getInstance(payload: SyncMapPermissionPayload): SyncMapPermissionInstance = js.native
-    
-    /**
-      * Provide a user-friendly representation
-      */
-    def toJSON(): Any = js.native
-  }
-  
-  /**
-    * Options to pass to update
-    *
-    * @property manage - Manage access.
-    * @property read - Read access.
-    * @property write - Write access.
-    */
-  trait SyncMapPermissionInstanceUpdateOptions extends StObject {
-    
-    var manage: Boolean
-    
-    var read: Boolean
-    
-    var write: Boolean
-  }
-  object SyncMapPermissionInstanceUpdateOptions {
-    
-    inline def apply(manage: Boolean, read: Boolean, write: Boolean): SyncMapPermissionInstanceUpdateOptions = {
-      val __obj = js.Dynamic.literal(manage = manage.asInstanceOf[js.Any], read = read.asInstanceOf[js.Any], write = write.asInstanceOf[js.Any])
-      __obj.asInstanceOf[SyncMapPermissionInstanceUpdateOptions]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: SyncMapPermissionInstanceUpdateOptions] (val x: Self) extends AnyVal {
-      
-      inline def setManage(value: Boolean): Self = StObject.set(x, "manage", value.asInstanceOf[js.Any])
-      
-      inline def setRead(value: Boolean): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
-      
-      inline def setWrite(value: Boolean): Self = StObject.set(x, "write", value.asInstanceOf[js.Any])
-    }
   }
   
   @js.native
   trait SyncMapPermissionListInstance extends StObject {
     
-    /**
-      * @param sid - sid of instance
-      */
-    def apply(sid: String): SyncMapPermissionContext = js.native
+    def apply(identity: String): SyncMapPermissionContext = js.native
+    
+    var _solution: SyncMapPermissionSolution = js.native
+    
+    var _uri: String = js.native
+    
+    var _version: default = js.native
     
     /**
       * Streams SyncMapPermissionInstance records from the API.
@@ -244,7 +148,8 @@ object libRestPreviewSyncServiceSyncMapSyncMapPermissionMod {
       * If a function is passed as the first argument, it will be used as the callback
       * function.
       *
-      * @param callback - Function to process each record
+      * @param { SyncMapPermissionListInstanceEachOptions } [params] - Options for request
+      * @param { function } [callback] - Function to process each record
       */
     def each(): Unit = js.native
     def each(
@@ -254,17 +159,9 @@ object libRestPreviewSyncServiceSyncMapSyncMapPermissionMod {
           Unit
         ]
     ): Unit = js.native
+    def each(params: SyncMapPermissionListInstanceEachOptions): Unit = js.native
     def each(
-      opts: Unit,
-      callback: js.Function2[
-          /* item */ SyncMapPermissionInstance, 
-          /* done */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
-          Unit
-        ]
-    ): Unit = js.native
-    def each(opts: SyncMapPermissionListInstanceEachOptions): Unit = js.native
-    def each(
-      opts: SyncMapPermissionListInstanceEachOptions,
+      params: SyncMapPermissionListInstanceEachOptions,
       callback: js.Function2[
           /* item */ SyncMapPermissionInstance, 
           /* done */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
@@ -272,11 +169,6 @@ object libRestPreviewSyncServiceSyncMapSyncMapPermissionMod {
         ]
     ): Unit = js.native
     
-    /**
-      * Constructs a sync_map_permission
-      *
-      * @param identity - Identity of the user to whom the Sync Map Permission applies.
-      */
     def get(identity: String): SyncMapPermissionContext = js.native
     
     /**
@@ -284,20 +176,12 @@ object libRestPreviewSyncServiceSyncMapSyncMapPermissionMod {
       *
       * The request is executed immediately.
       *
-      * If a function is passed as the first argument, it will be used as the callback
-      * function.
-      *
-      * @param callback - Callback to handle list of records
+      * @param { string } [targetUrl] - API-generated URL for the requested results page
+      * @param { function } [callback] - Callback to handle list of records
       */
-    def getPage(): js.Promise[SyncMapPermissionPage] = js.native
-    def getPage(callback: js.Function2[/* error */ js.Error | Null, /* items */ SyncMapPermissionPage, Any]): js.Promise[SyncMapPermissionPage] = js.native
     def getPage(targetUrl: String): js.Promise[SyncMapPermissionPage] = js.native
     def getPage(
       targetUrl: String,
-      callback: js.Function2[/* error */ js.Error | Null, /* items */ SyncMapPermissionPage, Any]
-    ): js.Promise[SyncMapPermissionPage] = js.native
-    def getPage(
-      targetUrl: Unit,
       callback: js.Function2[/* error */ js.Error | Null, /* items */ SyncMapPermissionPage, Any]
     ): js.Promise[SyncMapPermissionPage] = js.native
     
@@ -307,19 +191,16 @@ object libRestPreviewSyncServiceSyncMapSyncMapPermissionMod {
       * If a function is passed as the first argument, it will be used as the callback
       * function.
       *
-      * @param callback - Callback to handle list of records
+      * @param { SyncMapPermissionListInstanceOptions } [params] - Options for request
+      * @param { function } [callback] - Callback to handle list of records
       */
     def list(): js.Promise[js.Array[SyncMapPermissionInstance]] = js.native
     def list(
       callback: js.Function2[/* error */ js.Error | Null, /* items */ js.Array[SyncMapPermissionInstance], Any]
     ): js.Promise[js.Array[SyncMapPermissionInstance]] = js.native
+    def list(params: SyncMapPermissionListInstanceOptions): js.Promise[js.Array[SyncMapPermissionInstance]] = js.native
     def list(
-      opts: Unit,
-      callback: js.Function2[/* error */ js.Error | Null, /* items */ js.Array[SyncMapPermissionInstance], Any]
-    ): js.Promise[js.Array[SyncMapPermissionInstance]] = js.native
-    def list(opts: SyncMapPermissionListInstanceOptions): js.Promise[js.Array[SyncMapPermissionInstance]] = js.native
-    def list(
-      opts: SyncMapPermissionListInstanceOptions,
+      params: SyncMapPermissionListInstanceOptions,
       callback: js.Function2[/* error */ js.Error | Null, /* items */ js.Array[SyncMapPermissionInstance], Any]
     ): js.Promise[js.Array[SyncMapPermissionInstance]] = js.native
     
@@ -331,17 +212,14 @@ object libRestPreviewSyncServiceSyncMapSyncMapPermissionMod {
       * If a function is passed as the first argument, it will be used as the callback
       * function.
       *
-      * @param callback - Callback to handle list of records
+      * @param { SyncMapPermissionListInstancePageOptions } [params] - Options for request
+      * @param { function } [callback] - Callback to handle list of records
       */
     def page(): js.Promise[SyncMapPermissionPage] = js.native
     def page(callback: js.Function2[/* error */ js.Error | Null, /* items */ SyncMapPermissionPage, Any]): js.Promise[SyncMapPermissionPage] = js.native
+    def page(params: SyncMapPermissionListInstancePageOptions): js.Promise[SyncMapPermissionPage] = js.native
     def page(
-      opts: Unit,
-      callback: js.Function2[/* error */ js.Error | Null, /* items */ SyncMapPermissionPage, Any]
-    ): js.Promise[SyncMapPermissionPage] = js.native
-    def page(opts: SyncMapPermissionListInstancePageOptions): js.Promise[SyncMapPermissionPage] = js.native
-    def page(
-      opts: SyncMapPermissionListInstancePageOptions,
+      params: SyncMapPermissionListInstancePageOptions,
       callback: js.Function2[/* error */ js.Error | Null, /* items */ SyncMapPermissionPage, Any]
     ): js.Promise[SyncMapPermissionPage] = js.native
     
@@ -350,27 +228,146 @@ object libRestPreviewSyncServiceSyncMapSyncMapPermissionMod {
       */
     def toJSON(): Any = js.native
   }
+  object SyncMapPermissionListInstance {
+    
+    @JSImport("twilio/lib/rest/preview/sync/service/syncMap/syncMapPermission", "SyncMapPermissionListInstance")
+    @js.native
+    def apply(version: default, serviceSid: String, mapSid: String): SyncMapPermissionListInstance = js.native
+  }
   
-  /**
-    * Options to pass to each
-    *
-    * @property callback -
-    *                         Function to process each record. If this and a positional
-    *                         callback are passed, this one will be used
-    * @property done - Function to be called upon completion of streaming
-    * @property limit -
-    *                         Upper limit for the number of records to return.
-    *                         each() guarantees never to return more than limit.
-    *                         Default is no limit
-    * @property pageSize -
-    *                         Number of records to fetch per request,
-    *                         when not set will use the default value of 50 records.
-    *                         If no pageSize is defined but a limit is defined,
-    *                         each() will attempt to read the limit with the most efficient
-    *                         page size, i.e. min(limit, 1000)
-    */
+  @JSImport("twilio/lib/rest/preview/sync/service/syncMap/syncMapPermission", "SyncMapPermissionPage")
+  @js.native
+  open class SyncMapPermissionPage protected ()
+    extends typings.twilio.libBasePageMod.default[
+          default, 
+          SyncMapPermissionPayload, 
+          SyncMapPermissionResource, 
+          SyncMapPermissionInstance
+        ] {
+    /**
+      * Initialize the SyncMapPermissionPage
+      *
+      * @param version - Version of the resource
+      * @param response - Response from the API
+      * @param solution - Path solution
+      */
+    def this(
+      version: default,
+      response: typings.twilio.libHttpResponseMod.default[String],
+      solution: SyncMapPermissionSolution
+    ) = this()
+    
+    /**
+      * Build an instance of SyncMapPermissionInstance
+      *
+      * @param payload - Payload response from the API
+      */
+    def getInstance(payload: SyncMapPermissionResource): SyncMapPermissionInstance = js.native
+  }
+  
+  @js.native
+  trait SyncMapPermissionContext extends StObject {
+    
+    /**
+      * Fetch a SyncMapPermissionInstance
+      *
+      * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed SyncMapPermissionInstance
+      */
+    def fetch(): js.Promise[SyncMapPermissionInstance] = js.native
+    def fetch(
+      callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[SyncMapPermissionInstance], Any]
+    ): js.Promise[SyncMapPermissionInstance] = js.native
+    
+    /**
+      * Remove a SyncMapPermissionInstance
+      *
+      * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed boolean
+      */
+    def remove(): js.Promise[Boolean] = js.native
+    def remove(callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[Boolean], Any]): js.Promise[Boolean] = js.native
+    
+    /**
+      * Provide a user-friendly representation
+      */
+    def toJSON(): Any = js.native
+    
+    /**
+      * Update a SyncMapPermissionInstance
+      *
+      * @param params - Parameter for request
+      * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed SyncMapPermissionInstance
+      */
+    def update(params: SyncMapPermissionContextUpdateOptions): js.Promise[SyncMapPermissionInstance] = js.native
+    def update(
+      params: SyncMapPermissionContextUpdateOptions,
+      callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[SyncMapPermissionInstance], Any]
+    ): js.Promise[SyncMapPermissionInstance] = js.native
+  }
+  
+  trait SyncMapPermissionContextSolution extends StObject {
+    
+    var identity: String
+    
+    var mapSid: String
+    
+    var serviceSid: String
+  }
+  object SyncMapPermissionContextSolution {
+    
+    inline def apply(identity: String, mapSid: String, serviceSid: String): SyncMapPermissionContextSolution = {
+      val __obj = js.Dynamic.literal(identity = identity.asInstanceOf[js.Any], mapSid = mapSid.asInstanceOf[js.Any], serviceSid = serviceSid.asInstanceOf[js.Any])
+      __obj.asInstanceOf[SyncMapPermissionContextSolution]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SyncMapPermissionContextSolution] (val x: Self) extends AnyVal {
+      
+      inline def setIdentity(value: String): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
+      
+      inline def setMapSid(value: String): Self = StObject.set(x, "mapSid", value.asInstanceOf[js.Any])
+      
+      inline def setServiceSid(value: String): Self = StObject.set(x, "serviceSid", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait SyncMapPermissionContextUpdateOptions extends StObject {
+    
+    /** Boolean flag specifying whether the identity can delete the Sync Map. */
+    var manage: Boolean
+    
+    /** Boolean flag specifying whether the identity can read the Sync Map. */
+    var read: Boolean
+    
+    /** Boolean flag specifying whether the identity can create, update and delete Items of the Sync Map. */
+    var write: Boolean
+  }
+  object SyncMapPermissionContextUpdateOptions {
+    
+    inline def apply(manage: Boolean, read: Boolean, write: Boolean): SyncMapPermissionContextUpdateOptions = {
+      val __obj = js.Dynamic.literal(manage = manage.asInstanceOf[js.Any], read = read.asInstanceOf[js.Any], write = write.asInstanceOf[js.Any])
+      __obj.asInstanceOf[SyncMapPermissionContextUpdateOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SyncMapPermissionContextUpdateOptions] (val x: Self) extends AnyVal {
+      
+      inline def setManage(value: Boolean): Self = StObject.set(x, "manage", value.asInstanceOf[js.Any])
+      
+      inline def setRead(value: Boolean): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
+      
+      inline def setWrite(value: Boolean): Self = StObject.set(x, "write", value.asInstanceOf[js.Any])
+    }
+  }
+  
   trait SyncMapPermissionListInstanceEachOptions extends StObject {
     
+    /** Function to process each record. If this and a positional callback are passed, this one will be used */
     var callback: js.UndefOr[
         js.Function2[
           /* item */ SyncMapPermissionInstance, 
@@ -379,10 +376,13 @@ object libRestPreviewSyncServiceSyncMapSyncMapPermissionMod {
         ]
       ] = js.undefined
     
+    /** Function to be called upon completion of streaming */
     var done: js.UndefOr[js.Function] = js.undefined
     
+    /** Upper limit for the number of records to return. each() guarantees never to return more than limit. Default is no limit */
     var limit: js.UndefOr[Double] = js.undefined
     
+    /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
     var pageSize: js.UndefOr[Double] = js.undefined
   }
   object SyncMapPermissionListInstanceEachOptions {
@@ -415,24 +415,12 @@ object libRestPreviewSyncServiceSyncMapSyncMapPermissionMod {
     }
   }
   
-  /**
-    * Options to pass to list
-    *
-    * @property limit -
-    *                         Upper limit for the number of records to return.
-    *                         list() guarantees never to return more than limit.
-    *                         Default is no limit
-    * @property pageSize -
-    *                         Number of records to fetch per request,
-    *                         when not set will use the default value of 50 records.
-    *                         If no page_size is defined but a limit is defined,
-    *                         list() will attempt to read the limit with the most
-    *                         efficient page size, i.e. min(limit, 1000)
-    */
   trait SyncMapPermissionListInstanceOptions extends StObject {
     
+    /** Upper limit for the number of records to return. list() guarantees never to return more than limit. Default is no limit */
     var limit: js.UndefOr[Double] = js.undefined
     
+    /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
     var pageSize: js.UndefOr[Double] = js.undefined
   }
   object SyncMapPermissionListInstanceOptions {
@@ -455,19 +443,15 @@ object libRestPreviewSyncServiceSyncMapSyncMapPermissionMod {
     }
   }
   
-  /**
-    * Options to pass to page
-    *
-    * @property pageNumber - Page Number, this value is simply for client state
-    * @property pageSize - Number of records to return, defaults to 50
-    * @property pageToken - PageToken provided by the API
-    */
   trait SyncMapPermissionListInstancePageOptions extends StObject {
     
+    /** Page Number, this value is simply for client state */
     var pageNumber: js.UndefOr[Double] = js.undefined
     
+    /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
     var pageSize: js.UndefOr[Double] = js.undefined
     
+    /** PageToken provided by the API */
     var pageToken: js.UndefOr[String] = js.undefined
   }
   object SyncMapPermissionListInstancePageOptions {
@@ -496,28 +480,31 @@ object libRestPreviewSyncServiceSyncMapSyncMapPermissionMod {
   
   trait SyncMapPermissionPayload
     extends StObject
-       with SyncMapPermissionResource
-       with TwilioResponsePayload
+       with TwilioResponsePayload {
+    
+    var permissions: js.Array[SyncMapPermissionResource]
+  }
   object SyncMapPermissionPayload {
     
     inline def apply(
-      account_sid: String,
       first_page_uri: String,
-      identity: String,
-      manage: Boolean,
-      map_sid: String,
       next_page_uri: String,
       page: Double,
       page_size: Double,
+      permissions: js.Array[SyncMapPermissionResource],
       previous_page_uri: String,
-      read: Boolean,
-      service_sid: String,
-      uri: String,
-      url: String,
-      write: Boolean
+      uri: String
     ): SyncMapPermissionPayload = {
-      val __obj = js.Dynamic.literal(account_sid = account_sid.asInstanceOf[js.Any], first_page_uri = first_page_uri.asInstanceOf[js.Any], identity = identity.asInstanceOf[js.Any], manage = manage.asInstanceOf[js.Any], map_sid = map_sid.asInstanceOf[js.Any], next_page_uri = next_page_uri.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any], page_size = page_size.asInstanceOf[js.Any], previous_page_uri = previous_page_uri.asInstanceOf[js.Any], read = read.asInstanceOf[js.Any], service_sid = service_sid.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], write = write.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(first_page_uri = first_page_uri.asInstanceOf[js.Any], next_page_uri = next_page_uri.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any], page_size = page_size.asInstanceOf[js.Any], permissions = permissions.asInstanceOf[js.Any], previous_page_uri = previous_page_uri.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
       __obj.asInstanceOf[SyncMapPermissionPayload]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SyncMapPermissionPayload] (val x: Self) extends AnyVal {
+      
+      inline def setPermissions(value: js.Array[SyncMapPermissionResource]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
+      
+      inline def setPermissionsVarargs(value: SyncMapPermissionResource*): Self = StObject.set(x, "permissions", js.Array(value*))
     }
   }
   
@@ -578,14 +565,14 @@ object libRestPreviewSyncServiceSyncMapSyncMapPermissionMod {
   
   trait SyncMapPermissionSolution extends StObject {
     
-    var mapSid: js.UndefOr[String] = js.undefined
+    var mapSid: String
     
-    var serviceSid: js.UndefOr[String] = js.undefined
+    var serviceSid: String
   }
   object SyncMapPermissionSolution {
     
-    inline def apply(): SyncMapPermissionSolution = {
-      val __obj = js.Dynamic.literal()
+    inline def apply(mapSid: String, serviceSid: String): SyncMapPermissionSolution = {
+      val __obj = js.Dynamic.literal(mapSid = mapSid.asInstanceOf[js.Any], serviceSid = serviceSid.asInstanceOf[js.Any])
       __obj.asInstanceOf[SyncMapPermissionSolution]
     }
     
@@ -594,11 +581,7 @@ object libRestPreviewSyncServiceSyncMapSyncMapPermissionMod {
       
       inline def setMapSid(value: String): Self = StObject.set(x, "mapSid", value.asInstanceOf[js.Any])
       
-      inline def setMapSidUndefined: Self = StObject.set(x, "mapSid", js.undefined)
-      
       inline def setServiceSid(value: String): Self = StObject.set(x, "serviceSid", value.asInstanceOf[js.Any])
-      
-      inline def setServiceSidUndefined: Self = StObject.set(x, "serviceSid", js.undefined)
     }
   }
 }

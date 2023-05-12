@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteImageResponse extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) of the Image Builder image resource that was deleted.
+    * The ARN of the Image Builder image resource that this request deleted.
     */
   var imageBuildVersionArn: js.UndefOr[ImageBuildVersionArn] = js.undefined
   

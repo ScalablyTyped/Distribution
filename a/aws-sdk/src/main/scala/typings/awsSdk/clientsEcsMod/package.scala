@@ -28,6 +28,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 type AgentUpdateStatus = _AgentUpdateStatus | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.http_
+  - typings.awsSdk.awsSdkStrings.http2_
+  - typings.awsSdk.awsSdkStrings.grpc_
+  - java.lang.String
+*/
+type ApplicationProtocol = _ApplicationProtocol | java.lang.String
+
+/* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ENABLED
   - typings.awsSdk.awsSdkStrings.DISABLED
   - java.lang.String
@@ -393,6 +401,8 @@ type PlatformDevices = js.Array[PlatformDevice]
 
 type PortMappingList = js.Array[PortMapping]
 
+type PortNumber = scala.Double
+
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.TASK_DEFINITION
   - typings.awsSdk.awsSdkStrings.SERVICE
@@ -440,6 +450,12 @@ type SecretList = js.Array[Secret]
 
 type SensitiveString = java.lang.String
 
+type ServiceConnectClientAliasList = js.Array[ServiceConnectClientAlias]
+
+type ServiceConnectServiceList = js.Array[ServiceConnectService]
+
+type ServiceConnectServiceResourceList = js.Array[ServiceConnectServiceResource]
+
 type ServiceEvents = js.Array[ServiceEvent]
 
 type ServiceField = TAGS | java.lang.String
@@ -456,6 +472,8 @@ type Services = js.Array[Service]
   - typings.awsSdk.awsSdkStrings.containerInstanceLongArnFormat
   - typings.awsSdk.awsSdkStrings.awsvpcTrunking
   - typings.awsSdk.awsSdkStrings.containerInsights
+  - typings.awsSdk.awsSdkStrings.fargateFIPSMode
+  - typings.awsSdk.awsSdkStrings.tagResourceAuthorization
   - java.lang.String
 */
 type SettingName = _SettingName | java.lang.String
@@ -508,6 +526,8 @@ type TaskDefinitionField = TAGS | java.lang.String
 
 type TaskDefinitionFieldList = js.Array[TaskDefinitionField]
 
+type TaskDefinitionList = js.Array[TaskDefinition]
+
 type TaskDefinitionPlacementConstraintType = memberOf | java.lang.String
 
 type TaskDefinitionPlacementConstraints = js.Array[TaskDefinitionPlacementConstraint]
@@ -515,6 +535,7 @@ type TaskDefinitionPlacementConstraints = js.Array[TaskDefinitionPlacementConstr
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ACTIVE
   - typings.awsSdk.awsSdkStrings.INACTIVE
+  - typings.awsSdk.awsSdkStrings.DELETE_IN_PROGRESS
   - java.lang.String
 */
 type TaskDefinitionStatus = _TaskDefinitionStatus | java.lang.String
@@ -533,6 +554,9 @@ type TaskSets = js.Array[TaskSet]
   - typings.awsSdk.awsSdkStrings.TaskFailedToStart
   - typings.awsSdk.awsSdkStrings.EssentialContainerExited
   - typings.awsSdk.awsSdkStrings.UserInitiated
+  - typings.awsSdk.awsSdkStrings.ServiceSchedulerInitiated
+  - typings.awsSdk.awsSdkStrings.SpotInterruption
+  - typings.awsSdk.awsSdkStrings.TerminationNotice
   - java.lang.String
 */
 type TaskStopCode = _TaskStopCode | java.lang.String
@@ -555,7 +579,7 @@ type UlimitList = js.Array[Ulimit]
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.core__
   - typings.awsSdk.awsSdkStrings.cpu__
-  - typings.awsSdk.awsSdkStrings.data_
+  - typings.awsSdk.awsSdkStrings.data__
   - typings.awsSdk.awsSdkStrings.fsize
   - typings.awsSdk.awsSdkStrings.locks
   - typings.awsSdk.awsSdkStrings.memlock

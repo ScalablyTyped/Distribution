@@ -4,6 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+  * Unique identifier with a package name and version.
+  * If changing this, remember to change `packageIdIsEqual`.
+  */
 trait PackageId extends StObject {
   
   /**

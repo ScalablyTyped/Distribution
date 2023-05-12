@@ -9,14 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @JSImport("@rdfjs/sink-map", JSImport.Namespace)
+  @JSImport("@rdfjs/sink-map", JSImport.Default)
   @js.native
-  open class ^[InputStream /* <: EventEmitter */, OutputStream /* <: EventEmitter */] ()
-    extends StObject
-       with SinkMap[InputStream, OutputStream]
+  open class default[InputStream /* <: EventEmitter */, OutputStream /* <: EventEmitter */] () extends SinkMap[InputStream, OutputStream]
   
+  @JSImport("@rdfjs/sink-map", "SinkMap")
   @js.native
-  trait SinkMap[InputStream /* <: EventEmitter */, OutputStream /* <: EventEmitter */]
+  open class SinkMap[InputStream /* <: EventEmitter */, OutputStream /* <: EventEmitter */] ()
     extends StObject
        with Map[String, Sink[InputStream, OutputStream]] {
     

@@ -19,6 +19,11 @@ trait UpdateWirelessGatewayRequest extends StObject {
   var JoinEuiFilters: js.UndefOr[typings.awsSdk.clientsIotwirelessMod.JoinEuiFilters] = js.undefined
   
   /**
+    * The MaxEIRP value.
+    */
+  var MaxEirp: js.UndefOr[GatewayMaxEirp] = js.undefined
+  
+  /**
     * The new name of the resource.
     */
   var Name: js.UndefOr[WirelessGatewayName] = js.undefined
@@ -46,6 +51,10 @@ object UpdateWirelessGatewayRequest {
     inline def setJoinEuiFiltersUndefined: Self = StObject.set(x, "JoinEuiFilters", js.undefined)
     
     inline def setJoinEuiFiltersVarargs(value: JoinEuiRange*): Self = StObject.set(x, "JoinEuiFilters", js.Array(value*))
+    
+    inline def setMaxEirp(value: GatewayMaxEirp): Self = StObject.set(x, "MaxEirp", value.asInstanceOf[js.Any])
+    
+    inline def setMaxEirpUndefined: Self = StObject.set(x, "MaxEirp", js.undefined)
     
     inline def setName(value: WirelessGatewayName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

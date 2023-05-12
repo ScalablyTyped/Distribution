@@ -11,7 +11,7 @@ trait SpecimenCollection
   var _collectedDateTime: js.UndefOr[Element] = js.undefined
   
   /**
-    * If the use case requires  BodySite to be handled as a separate resource instead of an inline coded element (e.g. to identify and track separately)  then use the standard extension [bodySite](extension-bodysite.html).
+    * Reasons for using BodyStructure reference include: 1.) Need to identify a specific site instance (e.g. a specific mole), 2.) a single pre-coordinated coded concept for the body site does not exist, 3.) a desire to represent bodySite using multiple attributes (e.g. modifiers).
     */
   var bodySite: js.UndefOr[CodeableReference] = js.undefined
   

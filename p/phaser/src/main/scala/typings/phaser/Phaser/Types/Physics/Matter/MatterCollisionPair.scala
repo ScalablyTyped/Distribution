@@ -69,7 +69,7 @@ trait MatterCollisionPair extends StObject {
   var restitution: Double
   
   /**
-    * The amount of separation that occured between bodies A and B.
+    * The amount of separation that occurred between bodies A and B.
     */
   var separation: Double
   

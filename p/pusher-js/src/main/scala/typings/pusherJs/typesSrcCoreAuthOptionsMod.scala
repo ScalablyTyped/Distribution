@@ -38,7 +38,11 @@ object typesSrcCoreAuthOptionsMod {
     
     var headers: js.UndefOr[Any] = js.undefined
     
+    var headersProvider: js.UndefOr[js.Function0[Any]] = js.undefined
+    
     var params: js.UndefOr[Any] = js.undefined
+    
+    var paramsProvider: js.UndefOr[js.Function0[Any]] = js.undefined
     
     var transport: ajax | jsonp
   }
@@ -60,9 +64,17 @@ object typesSrcCoreAuthOptionsMod {
       
       inline def setHeaders(value: Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
+      inline def setHeadersProvider(value: () => Any): Self = StObject.set(x, "headersProvider", js.Any.fromFunction0(value))
+      
+      inline def setHeadersProviderUndefined: Self = StObject.set(x, "headersProvider", js.undefined)
+      
       inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
       inline def setParams(value: Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      
+      inline def setParamsProvider(value: () => Any): Self = StObject.set(x, "paramsProvider", js.Any.fromFunction0(value))
+      
+      inline def setParamsProviderUndefined: Self = StObject.set(x, "paramsProvider", js.undefined)
       
       inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       
@@ -140,7 +152,11 @@ object typesSrcCoreAuthOptionsMod {
     
     var headers: js.UndefOr[Any] = js.undefined
     
+    var headersProvider: js.UndefOr[js.Function0[Any]] = js.undefined
+    
     var params: js.UndefOr[Any] = js.undefined
+    
+    var paramsProvider: js.UndefOr[js.Function0[Any]] = js.undefined
     
     var transport: ajax | jsonp
   }
@@ -158,9 +174,17 @@ object typesSrcCoreAuthOptionsMod {
       
       inline def setHeaders(value: Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
+      inline def setHeadersProvider(value: () => Any): Self = StObject.set(x, "headersProvider", js.Any.fromFunction0(value))
+      
+      inline def setHeadersProviderUndefined: Self = StObject.set(x, "headersProvider", js.undefined)
+      
       inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
       inline def setParams(value: Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      
+      inline def setParamsProvider(value: () => Any): Self = StObject.set(x, "paramsProvider", js.Any.fromFunction0(value))
+      
+      inline def setParamsProviderUndefined: Self = StObject.set(x, "paramsProvider", js.undefined)
       
       inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       

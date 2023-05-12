@@ -157,10 +157,6 @@ object devtools {
       /**
         * Gets the content of the resource.
         * @param callback A function that receives resource content when the request completes.
-        * The callback parameter should be a function that looks like this:
-        * function(string content, string encoding) {...};
-        * Parameter content: Content of the resource (potentially encoded).
-        * Parameter encoding: Empty if content is not encoded, encoding name otherwise. Currently, only base64 is supported.
         */
       def getContent(callback: js.Function2[/* content */ String, /* encoding */ String, Unit]): Unit = js.native
       
@@ -169,12 +165,9 @@ object devtools {
         * @param content New content of the resource. Only resources with the text type are currently supported.
         * @param commit True if the user has finished editing the resource, and the new content of the resource should be persisted; false if this is a minor change sent in progress of the user editing the resource.
         * @param callback A function called upon request completion.
-        * If you specify the callback parameter, it should be a function that looks like this:
-        * function(object error) {...};
-        * Optional parameter error: Set to undefined if the resource content was set successfully; describes error otherwise.
         */
       def setContent(content: String, commit: Boolean): Unit = js.native
-      def setContent(content: String, commit: Boolean, callback: js.Function1[/* error */ js.Object, Unit]): Unit = js.native
+      def setContent(content: String, commit: Boolean, callback: js.Function1[/* error */ js.UndefOr[js.Object], Unit]): Unit = js.native
       
       /** The URL of the resource. */
       var url: String = js.native
@@ -214,10 +207,6 @@ object devtools {
       /**
         * Returns content of the response body.
         * @param callback A function that receives the response body when the request completes.
-        * The callback parameter should be a function that looks like this:
-        * function(string content, string encoding) {...};
-        * Parameter content: Content of the response body (potentially encoded).
-        * Parameter encoding: Empty if content is not encoded, encoding name otherwise. Currently, only base64 is supported.
         */
       def getContent(callback: js.Function2[/* content */ String, /* encoding */ String, Unit]): Unit
     }
@@ -284,9 +273,6 @@ object devtools {
         * Creates a pane within panel's sidebar.
         * @param title Text that is displayed in sidebar caption.
         * @param callback A callback invoked when the sidebar is created.
-        * If you specify the callback parameter, it should be a function that looks like this:
-        * function( ExtensionSidebarPane result) {...};
-        * Parameter result: An ExtensionSidebarPane object for created sidebar pane.
         */
       def createSidebarPane(title: String): Unit = js.native
       def createSidebarPane(
@@ -356,8 +342,6 @@ object devtools {
         * @param expression An expression to be evaluated in context of the inspected page. JavaScript objects and DOM nodes are displayed in an expandable tree similar to the console/watch.
         * @param rootTitle An optional title for the root of the expression tree.
         * @param callback A callback invoked after the sidebar pane is updated with the expression evaluation results.
-        * If you specify the callback parameter, it should be a function that looks like this:
-        * function() {...};
         */
       def setExpression(expression: String): Unit = js.native
       def setExpression(expression: String, callback: js.Function0[Unit]): Unit = js.native
@@ -376,8 +360,6 @@ object devtools {
         * @param jsonObject An object to be displayed in context of the inspected page. Evaluated in the context of the caller (API client).
         * @param rootTitle An optional title for the root of the expression tree.
         * @param callback A callback invoked after the sidebar is updated with the object.
-        * If you specify the callback parameter, it should be a function that looks like this:
-        * function() {...};
         */
       def setObject(jsonObject: js.Object): Unit = js.native
       def setObject(jsonObject: js.Object, callback: js.Function0[Unit]): Unit = js.native
@@ -411,9 +393,6 @@ object devtools {
         * Creates a pane within panel's sidebar.
         * @param title Text that is displayed in sidebar caption.
         * @param callback A callback invoked when the sidebar is created.
-        * If you specify the callback parameter, it should be a function that looks like this:
-        * function( ExtensionSidebarPane result) {...};
-        * Parameter result: An ExtensionSidebarPane object for created sidebar pane.
         */
       def createSidebarPane(title: String): Unit = js.native
       def createSidebarPane(

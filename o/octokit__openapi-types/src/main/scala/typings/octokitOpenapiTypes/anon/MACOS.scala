@@ -15,6 +15,9 @@ trait MACOS extends StObject {
   /** @description Total minutes used on Windows runner machines. */
   var WINDOWS: js.UndefOr[Double] = js.undefined
   
+  /** @description Total minutes used on macOS 12 core runner machines. */
+  var macos_12_core: js.UndefOr[Double] = js.undefined
+  
   /** @description Total minutes used on all runner machines. */
   var total: js.UndefOr[Double] = js.undefined
   
@@ -61,6 +64,10 @@ object MACOS {
     inline def setMACOS(value: Double): Self = StObject.set(x, "MACOS", value.asInstanceOf[js.Any])
     
     inline def setMACOSUndefined: Self = StObject.set(x, "MACOS", js.undefined)
+    
+    inline def setMacos_12_core(value: Double): Self = StObject.set(x, "macos_12_core", value.asInstanceOf[js.Any])
+    
+    inline def setMacos_12_coreUndefined: Self = StObject.set(x, "macos_12_core", js.undefined)
     
     inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     

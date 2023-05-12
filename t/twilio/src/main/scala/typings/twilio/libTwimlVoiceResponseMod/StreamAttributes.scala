@@ -6,16 +6,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait StreamAttributes extends StObject {
   
+  /** connectorName - Unique name for Stream Connector */
   var connectorName: js.UndefOr[String] = js.undefined
   
+  /** name - Friendly name given to the Stream */
   var name: js.UndefOr[String] = js.undefined
   
+  /** statusCallback - Status Callback URL */
   var statusCallback: js.UndefOr[String] = js.undefined
   
+  /** statusCallbackMethod - Status Callback URL method */
   var statusCallbackMethod: js.UndefOr[StreamStatusCallbackMethod] = js.undefined
   
+  /** track - Track to be streamed to remote service */
   var track: js.UndefOr[StreamTrack] = js.undefined
   
+  /** url - URL of the remote service where the Stream is routed */
   var url: js.UndefOr[String] = js.undefined
 }
 object StreamAttributes {

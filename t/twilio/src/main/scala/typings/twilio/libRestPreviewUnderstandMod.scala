@@ -1,6 +1,6 @@
 package typings.twilio
 
-import typings.twilio.libRestPreviewUnderstandAssistantMod.AssistantContext
+import typings.twilio.libRestPreviewBaseMod.^
 import typings.twilio.libRestPreviewUnderstandAssistantMod.AssistantListInstance
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -8,26 +8,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object libRestPreviewUnderstandMod {
   
-  @JSImport("twilio/lib/rest/preview/Understand", JSImport.Namespace)
+  @JSImport("twilio/lib/rest/preview/Understand", JSImport.Default)
   @js.native
-  open class ^ protected () extends Understand {
+  open class default protected () extends Understand {
     /**
       * Initialize the Understand version of Preview
       *
-      * @param domain - The twilio domain
+      * @param domain - The Twilio (Twilio.Preview) domain
       */
-    def this(domain: typings.twilio.libRestPreviewMod.^) = this()
+    def this(domain: ^) = this()
   }
   
   @js.native
   trait Understand
-    extends typings.twilio.libBaseVersionMod.^ {
+    extends typings.twilio.libBaseVersionMod.default {
     
-    /**
-      * @param sid - sid of instance
-      */
-    def assistants(sid: String): AssistantContext = js.native
-    @JSName("assistants")
-    val assistants_Original: AssistantListInstance = js.native
+    /** assistants - { Twilio.Preview.Understand.AssistantListInstance } resource */
+    /* protected */ var _assistants: js.UndefOr[AssistantListInstance] = js.native
+    
+    /** Getter for assistants resource */
+    def assistants: AssistantListInstance = js.native
   }
 }

@@ -1,13 +1,11 @@
 package typings.grpcGrpcJs
 
-import typings.grpcGrpcJs.buildSrcCallStreamMod.Call
-import typings.grpcGrpcJs.buildSrcCallStreamMod.Deadline
-import typings.grpcGrpcJs.buildSrcCallStreamMod.Http2CallStream
+import typings.grpcGrpcJs.buildSrcCallInterfaceMod.Call
 import typings.grpcGrpcJs.buildSrcChannelCredentialsMod.ChannelCredentials
 import typings.grpcGrpcJs.buildSrcChannelOptionsMod.ChannelOptions
 import typings.grpcGrpcJs.buildSrcChannelzMod.ChannelRef
 import typings.grpcGrpcJs.buildSrcConnectivityStateMod.ConnectivityState
-import typings.grpcGrpcJs.buildSrcMetadataMod.Metadata
+import typings.grpcGrpcJs.buildSrcDeadlineMod.Deadline
 import typings.grpcGrpcJs.buildSrcServerCallMod.ServerSurfaceCall
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -22,92 +20,7 @@ object buildSrcChannelMod {
        with Channel {
     def this(target: String, credentials: ChannelCredentials, options: ChannelOptions) = this()
     
-    def _startCallStream(stream: Http2CallStream, metadata: Metadata): Unit = js.native
-    
-    /**
-      * This timer does not do anything on its own. Its purpose is to hold the
-      * event loop open while there are any pending calls for the channel that
-      * have not yet been assigned to specific subchannels. In other words,
-      * the invariant is that callRefTimer is reffed if and only if pickQueue
-      * is non-empty.
-      */
-    /* private */ var callRefTimer: Any = js.native
-    
-    /* private */ var callRefTimerRef: Any = js.native
-    
-    /* private */ var callRefTimerUnref: Any = js.native
-    
-    /* private */ var callTracker: Any = js.native
-    
-    /* private */ val channelzEnabled: Any = js.native
-    
-    /* private */ var channelzRef: Any = js.native
-    
-    /* private */ var channelzTrace: Any = js.native
-    
-    /* private */ var childrenTracker: Any = js.native
-    
-    /**
-      * Calls queued up to get a call config. Should only be populated before the
-      * first time the resolver returns a result, which includes the ConfigSelector.
-      */
-    /* private */ var configSelectionQueue: Any = js.native
-    
-    /* private */ var configSelector: Any = js.native
-    
-    /* private */ var connectivityState: Any = js.native
-    
-    /* private */ var connectivityStateWatchers: Any = js.native
-    
-    /* private */ val credentials: Any = js.native
-    
-    /* private */ var currentPicker: Any = js.native
-    
-    /**
-      * This is the error from the name resolver if it failed most recently. It
-      * is only used to end calls that start while there is no config selector
-      * and the name resolver is in backoff, so it should be nulled if
-      * configSelector becomes set or the channel state becomes anything other
-      * than TRANSIENT_FAILURE.
-      */
-    /* private */ var currentResolutionError: Any = js.native
-    
-    /* private */ var defaultAuthority: Any = js.native
-    
-    /* private */ var filterStackFactory: Any = js.native
-    
-    /* private */ var getChannelzInfo: Any = js.native
-    
-    /* private */ val options: Any = js.native
-    
-    /* private */ var originalTarget: Any = js.native
-    
-    /* private */ var pickQueue: Any = js.native
-    
-    /* private */ var pushPick: Any = js.native
-    
-    /* private */ var removeConnectivityStateWatcher: Any = js.native
-    
-    /* private */ var resolvingLoadBalancer: Any = js.native
-    
-    /* private */ var subchannelPool: Any = js.native
-    
-    /* private */ var target: Any = js.native
-    
-    /* private */ var trace: Any = js.native
-    
-    /* private */ var tryGetConfig: Any = js.native
-    
-    /**
-      * Check the picker output for the given call and corresponding metadata,
-      * and take any relevant actions. Should not be called while iterating
-      * over pickQueue.
-      * @param callStream
-      * @param callMetadata
-      */
-    /* private */ var tryPick: Any = js.native
-    
-    /* private */ var updateState: Any = js.native
+    /* private */ var internalChannel: Any = js.native
   }
   
   @js.native

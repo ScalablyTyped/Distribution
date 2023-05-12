@@ -14,6 +14,10 @@ trait Suggest[Group /* <: Groups */] extends StObject {
   
   var introduced: String
   
+  var pixelValue: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: Group extends 'spacing' ? string : never */ js.Any
+  ] = js.undefined
+  
   var state: ActiveTokenState
   
   var suggest: js.UndefOr[js.Array[String]] = js.undefined
@@ -33,6 +37,12 @@ object Suggest {
     inline def setGroup(value: Group): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
     inline def setIntroduced(value: String): Self = StObject.set(x, "introduced", value.asInstanceOf[js.Any])
+    
+    inline def setPixelValue(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: Group extends 'spacing' ? string : never */ js.Any
+    ): Self = StObject.set(x, "pixelValue", value.asInstanceOf[js.Any])
+    
+    inline def setPixelValueUndefined: Self = StObject.set(x, "pixelValue", js.undefined)
     
     inline def setState(value: ActiveTokenState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     

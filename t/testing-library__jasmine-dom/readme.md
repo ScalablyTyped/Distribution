@@ -1,7 +1,7 @@
 
 # Scala.js typings for testing-library__jasmine-dom
 
-Typings are for version 1.0
+Typings are for version 1.3
 
 ## Library description:
 Custom Jasmine matchers for testing DOM elements

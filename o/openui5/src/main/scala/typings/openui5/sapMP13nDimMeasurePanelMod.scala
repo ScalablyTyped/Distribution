@@ -369,6 +369,7 @@ object sapMP13nDimMeasurePanelMod {
     
     /**
       * @SINCE 1.50.0
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:changeChartType changeChartType} to attached listeners.
       *
@@ -382,6 +383,7 @@ object sapMP13nDimMeasurePanelMod {
     
     /**
       * @SINCE 1.50.0
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:changeDimMeasureItems changeDimMeasureItems} to attached listeners.
       *

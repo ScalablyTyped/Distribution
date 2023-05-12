@@ -6,7 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GetParametersQueryRole extends StObject {
   
-  /** List all users who are members of an organization. If the authenticated user is also a member of this organization then both concealed and public members will be returned. */
+  /**
+    * List organization members
+    * @description List all users who are members of an organization. If the authenticated user is also a member of this organization then both concealed and public members will be returned.
+    */
   var get: ParametersQueryRole
 }
 object GetParametersQueryRole {

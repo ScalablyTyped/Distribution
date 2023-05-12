@@ -10,17 +10,12 @@ import typings.googleMaps.google.maps.LatLngBounds
 import typings.googleMaps.google.maps.LatLngBoundsLiteral
 import typings.googleMaps.google.maps.LatLngLiteral
 import typings.googleMaps.google.maps.Map
-import typings.std.Element
+import typings.std.HTMLElement
+import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Available only in the v=beta channel: https://goo.gle/3oAthT3.
-  * Options for constructing a {@link
-  * google.maps.localContext.LocalContextMapView}, or accessing an
-  * existing {@link google.maps.localContext.LocalContextMapView}.
-  */
 trait LocalContextMapViewOptions extends StObject {
   
   /**
@@ -32,7 +27,7 @@ trait LocalContextMapViewOptions extends StObject {
   /**
     * This Field is read-only. The DOM Element backing the view.
     */
-  var element: js.UndefOr[Null | Element] = js.undefined
+  var element: js.UndefOr[Null | HTMLElement | SVGElement] = js.undefined
   
   /**
     * A soft boundary or hint to use when searching for places.
@@ -123,7 +118,7 @@ object LocalContextMapViewOptions {
     
     inline def setDirectionsOptionsUndefined: Self = StObject.set(x, "directionsOptions", js.undefined)
     
-    inline def setElement(value: Element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    inline def setElement(value: HTMLElement | SVGElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
     inline def setElementNull: Self = StObject.set(x, "element", null)
     

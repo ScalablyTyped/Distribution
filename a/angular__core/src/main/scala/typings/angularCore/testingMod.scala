@@ -2,11 +2,12 @@ package typings.angularCore
 
 import org.scalablytyped.runtime.Instantiable1
 import typings.angularCore.anon.Deps
+import typings.angularCore.anon.InjectOptionsoptionalfals
 import typings.angularCore.anon.Instantiable
+import typings.angularCore.anon.Multi
 import typings.angularCore.anon.ProcessNewMacroTasksSynchronously
 import typings.angularCore.anon.Providers
 import typings.angularCore.anon.UseFactory
-import typings.angularCore.anon.UseValue
 import typings.angularCore.mod.ChangeDetectorRef
 import typings.angularCore.mod.Component
 import typings.angularCore.mod.ComponentRef
@@ -14,6 +15,7 @@ import typings.angularCore.mod.DebugElement
 import typings.angularCore.mod.Directive
 import typings.angularCore.mod.ElementRef
 import typings.angularCore.mod.InjectFlags
+import typings.angularCore.mod.InjectOptions
 import typings.angularCore.mod.InjectionToken
 import typings.angularCore.mod.NgModule
 import typings.angularCore.mod.NgZone
@@ -138,11 +140,11 @@ object testingMod {
   
   @JSImport("@angular/core/testing", "ComponentFixtureAutoDetect")
   @js.native
-  val ComponentFixtureAutoDetect: InjectionToken[js.Array[Boolean]] = js.native
+  val ComponentFixtureAutoDetect: InjectionToken[Boolean] = js.native
   
   @JSImport("@angular/core/testing", "ComponentFixtureNoNgZone")
   @js.native
-  val ComponentFixtureNoNgZone: InjectionToken[js.Array[Boolean]] = js.native
+  val ComponentFixtureNoNgZone: InjectionToken[Boolean] = js.native
   
   @JSImport("@angular/core/testing", "InjectSetupWrapper")
   @js.native
@@ -195,13 +197,20 @@ object testingMod {
     def initTestEnvironment(ngModule: Type[Any], platform: PlatformRef): Unit = js.native
     def initTestEnvironment(ngModule: Type[Any], platform: PlatformRef, options: TestEnvironmentOptions): Unit = js.native
     
+    /** @deprecated use object-based flags (`InjectOptions`) instead. */
     def inject[T](token: ProviderToken[T]): T | Null = js.native
     def inject[T](token: ProviderToken[T], notFoundValue: T): T = js.native
     def inject[T](token: ProviderToken[T], notFoundValue: T, flags: InjectFlags): T = js.native
+    def inject[T](token: ProviderToken[T], notFoundValue: T, options: InjectOptions): T = js.native
     def inject[T](token: ProviderToken[T], notFoundValue: Null, flags: InjectFlags): T | Null = js.native
+    def inject[T](token: ProviderToken[T], notFoundValue: Null, options: InjectOptions): T | Null = js.native
     def inject[T](token: ProviderToken[T], notFoundValue: Unit, flags: InjectFlags): T = js.native
+    def inject[T](token: ProviderToken[T], notFoundValue: Unit, options: InjectOptionsoptionalfals): T = js.native
+    def inject[T](token: ProviderToken[T], notFoundValue: Unit, options: InjectOptions): T | Null = js.native
     @JSName("inject")
     def inject_T_T[T](token: ProviderToken[T]): T = js.native
+    @JSName("inject")
+    def inject_T_T[T](token: ProviderToken[T], notFoundValue: Unit, options: InjectOptions): T = js.native
     
     def ngModule: Type[Any] | js.Array[Type[Any]] = js.native
     
@@ -217,8 +226,8 @@ object testingMod {
       * Overwrites all providers for the given token with the given provider definition.
       */
     def overrideProvider(token: Any, provider: Deps): typings.angularCore.testingMod.TestBed = js.native
+    def overrideProvider(token: Any, provider: Multi): typings.angularCore.testingMod.TestBed = js.native
     def overrideProvider(token: Any, provider: UseFactory): typings.angularCore.testingMod.TestBed = js.native
-    def overrideProvider(token: Any, provider: UseValue): typings.angularCore.testingMod.TestBed = js.native
     
     def overrideTemplate(component: Type[Any], template: String): typings.angularCore.testingMod.TestBed = js.native
     
@@ -232,6 +241,13 @@ object testingMod {
     def resetTestEnvironment(): Unit = js.native
     
     def resetTestingModule(): typings.angularCore.testingMod.TestBed = js.native
+    
+    /**
+      * Runs the given function in the `EnvironmentInjector` context of `TestBed`.
+      *
+      * @see EnvironmentInjector#runInContext
+      */
+    def runInInjectionContext[T](fn: js.Function0[T]): T = js.native
   }
   @JSImport("@angular/core/testing", "TestBed")
   @js.native

@@ -50,6 +50,12 @@ object sapUiCoreFormatDateFormatMod {
       */
     oLocale: typings.openui5.sapUiCoreLocaleMod.default
     ): DateFormat = (^.asInstanceOf[js.Dynamic].applyDynamic("getDateInstance")(oFormatOptions.asInstanceOf[js.Any], oLocale.asInstanceOf[js.Any])).asInstanceOf[DateFormat]
+    inline def getDateInstance(
+      /**
+      * Locale to ask for locale specific texts/settings
+      */
+    oLocale: typings.openui5.sapUiCoreLocaleMod.default
+    ): DateFormat = ^.asInstanceOf[js.Dynamic].applyDynamic("getDateInstance")(oLocale.asInstanceOf[js.Any]).asInstanceOf[DateFormat]
     
     /**
       * Get a datetime instance of the DateFormat, which can be used for formatting.
@@ -81,6 +87,12 @@ object sapUiCoreFormatDateFormatMod {
       */
     oLocale: typings.openui5.sapUiCoreLocaleMod.default
     ): DateFormat = (^.asInstanceOf[js.Dynamic].applyDynamic("getDateTimeInstance")(oFormatOptions.asInstanceOf[js.Any], oLocale.asInstanceOf[js.Any])).asInstanceOf[DateFormat]
+    inline def getDateTimeInstance(
+      /**
+      * Locale to ask for locale specific texts/settings
+      */
+    oLocale: typings.openui5.sapUiCoreLocaleMod.default
+    ): DateFormat = ^.asInstanceOf[js.Dynamic].applyDynamic("getDateTimeInstance")(oLocale.asInstanceOf[js.Any]).asInstanceOf[DateFormat]
     
     /**
       * @SINCE 1.99.0
@@ -114,6 +126,12 @@ object sapUiCoreFormatDateFormatMod {
       */
     oLocale: typings.openui5.sapUiCoreLocaleMod.default
     ): DateTimeWithTimezone = (^.asInstanceOf[js.Dynamic].applyDynamic("getDateTimeWithTimezoneInstance")(oFormatOptions.asInstanceOf[js.Any], oLocale.asInstanceOf[js.Any])).asInstanceOf[DateTimeWithTimezone]
+    inline def getDateTimeWithTimezoneInstance(
+      /**
+      * Locale to ask for locale-specific texts/settings
+      */
+    oLocale: typings.openui5.sapUiCoreLocaleMod.default
+    ): DateTimeWithTimezone = ^.asInstanceOf[js.Dynamic].applyDynamic("getDateTimeWithTimezoneInstance")(oLocale.asInstanceOf[js.Any]).asInstanceOf[DateTimeWithTimezone]
     
     /**
       * Get a time instance of the DateFormat, which can be used for formatting.
@@ -145,6 +163,12 @@ object sapUiCoreFormatDateFormatMod {
       */
     oLocale: typings.openui5.sapUiCoreLocaleMod.default
     ): DateFormat = (^.asInstanceOf[js.Dynamic].applyDynamic("getTimeInstance")(oFormatOptions.asInstanceOf[js.Any], oLocale.asInstanceOf[js.Any])).asInstanceOf[DateFormat]
+    inline def getTimeInstance(
+      /**
+      * Locale to ask for locale specific texts/settings
+      */
+    oLocale: typings.openui5.sapUiCoreLocaleMod.default
+    ): DateFormat = ^.asInstanceOf[js.Dynamic].applyDynamic("getTimeInstance")(oLocale.asInstanceOf[js.Any]).asInstanceOf[DateFormat]
   }
   
   @js.native
@@ -198,6 +222,20 @@ object sapUiCoreFormatDateFormatMod {
       *
       * @returns the parsed value(s)
       */
+    def parse(/**
+      * the string containing a formatted date/time value
+      */
+    sValue: String): js.Date | (js.Array[js.Date | typings.openui5.sapUiCoreDateUi5dateMod.default]) | typings.openui5.sapUiCoreDateUi5dateMod.default = js.native
+    def parse(
+      /**
+      * the string containing a formatted date/time value
+      */
+    sValue: String,
+      /**
+      * whether to use UTC
+      */
+    bUTC: Boolean
+    ): js.Date | (js.Array[js.Date | typings.openui5.sapUiCoreDateUi5dateMod.default]) | typings.openui5.sapUiCoreDateUi5dateMod.default = js.native
     def parse(
       /**
       * the string containing a formatted date/time value
@@ -211,7 +249,21 @@ object sapUiCoreFormatDateFormatMod {
       * whether to use strict value check
       */
     bStrict: Boolean
-    ): js.Date | js.Array[js.Date] = js.native
+    ): js.Date | (js.Array[js.Date | typings.openui5.sapUiCoreDateUi5dateMod.default]) | typings.openui5.sapUiCoreDateUi5dateMod.default = js.native
+    def parse(
+      /**
+      * the string containing a formatted date/time value
+      */
+    sValue: String,
+      /**
+      * whether to use UTC
+      */
+    bUTC: Unit,
+      /**
+      * whether to use strict value check
+      */
+    bStrict: Boolean
+    ): js.Date | (js.Array[js.Date | typings.openui5.sapUiCoreDateUi5dateMod.default]) | typings.openui5.sapUiCoreDateUi5dateMod.default = js.native
   }
   
   @js.native
@@ -252,14 +304,18 @@ object sapUiCoreFormatDateFormatMod {
       * @returns the parsed values
       * 	 - An array containing datetime and timezone depending on the showDate, showTime and showTimezone options
       *
-      * 	(Default): [Date, string], e.g. [new Date("2021-11-13T13:22:33Z"), "America/New_York"]
-      * 	 - `showTimezone: false`: [Date, undefined], e.g. [new Date("2021-11-13T13:22:33Z"), undefined]
+      * 	(Default): [Date, string], e.g. [UI5Date.getInstance("2021-11-13T13:22:33Z"), "America/New_York"]
+      * 	 - `showTimezone: false`: [Date, undefined], e.g. [UI5Date.getInstance("2021-11-13T13:22:33Z"), undefined]
+      *
       * 	 - `showDate: false, showTime: false`: [undefined, string], e.g. [undefined, "America/New_York"]
       */
     def parse(/**
       * the string containing a formatted date/time value
       */
-    sValue: String): js.Array[Any] = js.native
+    sValue: String): (js.Tuple2[
+        js.UndefOr[js.Date | typings.openui5.sapUiCoreDateUi5dateMod.default], 
+        js.UndefOr[String]
+      ]) | Null = js.native
     def parse(
       /**
       * the string containing a formatted date/time value
@@ -271,7 +327,10 @@ object sapUiCoreFormatDateFormatMod {
       * For an invalid IANA timezone ID, `null` will be returned.
       */
     sTimezone: String
-    ): js.Array[Any] = js.native
+    ): (js.Tuple2[
+        js.UndefOr[js.Date | typings.openui5.sapUiCoreDateUi5dateMod.default], 
+        js.UndefOr[String]
+      ]) | Null = js.native
     def parse(
       /**
       * the string containing a formatted date/time value
@@ -289,7 +348,10 @@ object sapUiCoreFormatDateFormatMod {
       * `12` it cannot be parsed and `null` is returned
       */
     bStrict: Boolean
-    ): js.Array[Any] = js.native
+    ): (js.Tuple2[
+        js.UndefOr[js.Date | typings.openui5.sapUiCoreDateUi5dateMod.default], 
+        js.UndefOr[String]
+      ]) | Null = js.native
     def parse(
       /**
       * the string containing a formatted date/time value
@@ -307,6 +369,9 @@ object sapUiCoreFormatDateFormatMod {
       * `12` it cannot be parsed and `null` is returned
       */
     bStrict: Boolean
-    ): js.Array[Any] = js.native
+    ): (js.Tuple2[
+        js.UndefOr[js.Date | typings.openui5.sapUiCoreDateUi5dateMod.default], 
+        js.UndefOr[String]
+      ]) | Null = js.native
   }
 }

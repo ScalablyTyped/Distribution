@@ -1,6 +1,6 @@
 package typings.openui5
 
-import typings.openui5.anon.`7`
+import typings.openui5.anon.`9`
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
 import typings.openui5.sapUiCoreElementMod.ElementSettings
@@ -211,6 +211,8 @@ object sapUiUx3DataSetItemMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:selected selected} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -219,7 +221,7 @@ object sapUiUx3DataSetItemMod {
     def fireSelected(/**
       * Parameters to pass along with the event
       */
-    mParameters: `7`): this.type = js.native
+    mParameters: `9`): this.type = js.native
     
     /**
       * Gets current value of property {@link #getCheckable checkable}.

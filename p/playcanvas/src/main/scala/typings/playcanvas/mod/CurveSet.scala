@@ -16,7 +16,7 @@ open class CurveSet protected () extends StObject {
     * @param {Array<number[]>} curveKeys - An array of arrays of keys (pairs of numbers with the
     * time first and value second).
     * @example
-    * var curveSet = new pc.CurveSet([
+    * const curveSet = new pc.CurveSet([
     *     [
     *         0, 0,        // At 0 time, value of 0
     *         0.33, 2,     // At 0.33 time, value of 2
@@ -39,7 +39,7 @@ open class CurveSet protected () extends StObject {
     */
   /* private */ var _type: Any = js.native
   
-  var curves: js.Array[Curve] = js.native
+  var curves: js.Array[Any] = js.native
   
   /**
     * Return a specific curve in the curve set.

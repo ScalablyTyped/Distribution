@@ -59,6 +59,7 @@ object mod {
   }
   
   /* Rewritten from type alias, can be one of: 
+    - typings.infernoVnodeFlags.infernoVnodeFlagsInts.`0`
     - typings.infernoVnodeFlags.infernoVnodeFlagsInts.`1`
     - typings.infernoVnodeFlags.infernoVnodeFlagsInts.`2`
     - typings.infernoVnodeFlags.infernoVnodeFlagsInts.`4`
@@ -134,5 +135,7 @@ object mod {
     inline def Text: `16` = 16.asInstanceOf[`16`]
     
     inline def TextareaElement: `128` = 128.asInstanceOf[`128`]
+    
+    inline def Unknown: `0` = 0.asInstanceOf[`0`]
   }
 }

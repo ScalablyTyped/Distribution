@@ -1,7 +1,7 @@
 package typings.hyperformula.typingsInterpreterPluginMod
 
-import typings.hyperformula.anon.COMPLEX
 import typings.hyperformula.typingsInterpreterInterpreterMod.Interpreter
+import typings.hyperformula.typingsInterpreterPluginFunctionPluginMod.ImplementedFunctions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,6 +21,6 @@ object ComplexPlugin {
   
   @JSImport("hyperformula/typings/interpreter/plugin", "ComplexPlugin.implementedFunctions")
   @js.native
-  def implementedFunctions: COMPLEX = js.native
-  inline def implementedFunctions_=(x: COMPLEX): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("implementedFunctions")(x.asInstanceOf[js.Any])
+  def implementedFunctions: ImplementedFunctions = js.native
+  inline def implementedFunctions_=(x: ImplementedFunctions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("implementedFunctions")(x.asInstanceOf[js.Any])
 }

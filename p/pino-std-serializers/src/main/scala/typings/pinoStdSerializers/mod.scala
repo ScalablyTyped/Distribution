@@ -19,6 +19,8 @@ object mod {
   
   inline def err(err: js.Error): SerializedError = ^.asInstanceOf[js.Dynamic].applyDynamic("err")(err.asInstanceOf[js.Any]).asInstanceOf[SerializedError]
   
+  inline def errWithCause(err: js.Error): SerializedError = ^.asInstanceOf[js.Dynamic].applyDynamic("errWithCause")(err.asInstanceOf[js.Any]).asInstanceOf[SerializedError]
+  
   inline def mapHttpRequest(req: IncomingMessage): Req = ^.asInstanceOf[js.Dynamic].applyDynamic("mapHttpRequest")(req.asInstanceOf[js.Any]).asInstanceOf[Req]
   
   inline def mapHttpResponse(res: ServerResponse[IncomingMessage]): Res = ^.asInstanceOf[js.Dynamic].applyDynamic("mapHttpResponse")(res.asInstanceOf[js.Any]).asInstanceOf[Res]
@@ -46,6 +48,11 @@ object mod {
     * Any other extra properties that have been attached to the object will also be present on the serialized object.
     */
   /* key */ StringDictionary[Any] {
+    
+    /**
+      * `cause` is never included in the log output, if you need the `cause`, use {@link raw.cause}
+      */
+    var cause: js.UndefOr[scala.Nothing] = js.undefined
     
     /**
       * The supplied error message.

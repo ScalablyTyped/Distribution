@@ -18,6 +18,8 @@ trait AuthorizationPolicy
     */
   var allowInvitesFrom: js.UndefOr[NullableOption[AllowInvitesFrom]] = js.undefined
   
+  var allowUserConsentForRiskyApps: js.UndefOr[NullableOption[Boolean]] = js.undefined
+  
   // Indicates whether users can sign up for email based subscriptions.
   var allowedToSignUpEmailBasedSubscriptions: js.UndefOr[Boolean] = js.undefined
   
@@ -59,6 +61,12 @@ object AuthorizationPolicy {
     inline def setAllowInvitesFromNull: Self = StObject.set(x, "allowInvitesFrom", null)
     
     inline def setAllowInvitesFromUndefined: Self = StObject.set(x, "allowInvitesFrom", js.undefined)
+    
+    inline def setAllowUserConsentForRiskyApps(value: NullableOption[Boolean]): Self = StObject.set(x, "allowUserConsentForRiskyApps", value.asInstanceOf[js.Any])
+    
+    inline def setAllowUserConsentForRiskyAppsNull: Self = StObject.set(x, "allowUserConsentForRiskyApps", null)
+    
+    inline def setAllowUserConsentForRiskyAppsUndefined: Self = StObject.set(x, "allowUserConsentForRiskyApps", js.undefined)
     
     inline def setAllowedToSignUpEmailBasedSubscriptions(value: Boolean): Self = StObject.set(x, "allowedToSignUpEmailBasedSubscriptions", value.asInstanceOf[js.Any])
     

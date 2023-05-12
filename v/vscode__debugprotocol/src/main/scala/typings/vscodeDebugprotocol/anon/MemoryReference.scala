@@ -15,7 +15,7 @@ trait MemoryReference extends StObject {
   
   /** A memory reference to a location appropriate for this result.
   				For pointer type eval results, this is generally a reference to the memory address contained in the pointer.
-  				This attribute should be returned by a debug adapter if corresponding capability  `supportsMemoryReferences` is true.
+  				This attribute should be returned by a debug adapter if corresponding capability `supportsMemoryReferences` is true.
   			*/
   var memoryReference: js.UndefOr[String] = js.undefined
   
@@ -32,13 +32,11 @@ trait MemoryReference extends StObject {
   var result: String
   
   /** The type of the evaluate result.
-  				This attribute should only be returned by a debug adapter if the ccorresponding capability  `supportsVariableType` is true.
+  				This attribute should only be returned by a debug adapter if the corresponding capability `supportsVariableType` is true.
   			*/
   var `type`: js.UndefOr[String] = js.undefined
   
-  /** If variablesReference is > 0, the evaluate result is structured and its children can be retrieved by passing variablesReference to the VariablesRequest.
-  				The value should be less than or equal to 2147483647 (2^31-1).
-  			*/
+  /** If `variablesReference` is > 0, the evaluate result is structured and its children can be retrieved by passing `variablesReference` to the `variables` request as long as execution remains suspended. See 'Lifetime of Object References' in the Overview section for details. */
   var variablesReference: Double
 }
 object MemoryReference {

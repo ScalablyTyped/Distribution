@@ -137,6 +137,44 @@ object sapUiCommonsTextFieldMod {
     inline def getMetadata(): typings.openui5.sapUiCoreElementMetadataMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("getMetadata")().asInstanceOf[typings.openui5.sapUiCoreElementMetadataMod.default]
   }
   
+  trait FocusInfo extends StObject {
+    
+    /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
+      * ID of the component
+      */
+    var id: js.UndefOr[String] = js.undefined
+    
+    /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
+      * User input
+      */
+    var userinput: js.UndefOr[(/* was: sap.ui.commons.UserInputInfo */ Any) | Null] = js.undefined
+  }
+  object FocusInfo {
+    
+    inline def apply(): FocusInfo = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[FocusInfo]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FocusInfo] (val x: Self) extends AnyVal {
+      
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      
+      inline def setUserinput(value: /* was: sap.ui.commons.UserInputInfo */ Any): Self = StObject.set(x, "userinput", value.asInstanceOf[js.Any])
+      
+      inline def setUserinputNull: Self = StObject.set(x, "userinput", null)
+      
+      inline def setUserinputUndefined: Self = StObject.set(x, "userinput", js.undefined)
+    }
+  }
+  
   @js.native
   trait TextField
     extends typings.openui5.sapUiCoreControlMod.default
@@ -144,6 +182,8 @@ object sapUiCommonsTextFieldMod {
        with IFormContent {
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Compares the previous value with the current value and fires the change event if the TextField is editable
       * and the value has changed.
       */
@@ -378,6 +418,8 @@ object sapUiCommonsTextFieldMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:change change} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -389,6 +431,8 @@ object sapUiCommonsTextFieldMod {
     mParameters: NewValue): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:liveChange liveChange} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -478,6 +522,8 @@ object sapUiCommonsTextFieldMod {
     def getImeMode(): ImeMode | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ImeMode * / any */ String) = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Method for accessing the DOM Ref of the input element.
       *
       * @returns DOM reference or `null`
@@ -591,6 +637,8 @@ object sapUiCommonsTextFieldMod {
     def getWidth(): CSSSize = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Event handler called when control is receiving the focus
       */
     def onfocusin(/**
@@ -599,6 +647,8 @@ object sapUiCommonsTextFieldMod {
     oEvent: Event): Unit = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Event handler for keyup. fire the liveChange event
       */
     def onkeyup(/**
@@ -607,6 +657,8 @@ object sapUiCommonsTextFieldMod {
     oEvent: Event): Unit = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Event handler called when enter key is pressed.
       * See:
       * 	sap.ui.commons.TextField#onfocusout
@@ -617,6 +669,8 @@ object sapUiCommonsTextFieldMod {
     oEvent: Event): Unit = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Event handler called when control is losing the focus
       */
     def onsapfocusleave(/**
@@ -625,6 +679,8 @@ object sapUiCommonsTextFieldMod {
     oEvent: Event): Unit = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Event handler called when text selection starts. When the text field is disabled, the text should not
       * be selectable, so cancel the event.
       */

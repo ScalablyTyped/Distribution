@@ -15,7 +15,7 @@ object libTextMod {
   @js.native
   /**
     * @param text - The string that you would like the text to display
-    * @param {object|PIXI.TextStyle} [style] - The style parameters
+    * @param style - The style parameters
     * @param canvas - The canvas element for drawing text
     */
   open class Text () extends Sprite {
@@ -92,7 +92,7 @@ object libTextMod {
     var canvas: ICanvas = js.native
     
     /** The canvas 2d context that everything is drawn with. */
-    var context: ModernContext2D = js.native
+    var context: ICanvasRenderingContext2D = js.native
     
     var dirty: Boolean = js.native
     
@@ -121,8 +121,10 @@ object libTextMod {
       * Set the style of the text.
       *
       * Set up an event listener to listen for changes on the style object and mark the text as dirty.
+      *
+      * If setting the `style` can also be partial {@link PIXI.ITextStyle}.
       */
-    def style: TextStyle | PartialITextStyle = js.native
+    def style: TextStyle = js.native
     def style_=(style: TextStyle | PartialITextStyle): Unit = js.native
     
     /** Set the copy for the text object. To split a line you can use '\n'. */
@@ -150,23 +152,35 @@ object libTextMod {
     val ^ : js.Any = js.native
     
     /**
-      * New rendering behavior for letter-spacing which uses Chrome's new native API. This will
-      * lead to more accurate letter-spacing results because it does not try to manually draw
-      * each character. However, this Chrome API is experimental and may not serve all cases yet.
+      * Override whether or not the resolution of the text is automatically adjusted to match the resolution of the renderer.
+      * Setting this to false can allow you to get crisper text at lower render resolutions.
+      * @example
+      * // renderer has a resolution of 1
+      * const app = new Application();
+      *
+      * Text.defaultResolution = 2;
+      * Text.defaultAutoResolution = false;
+      * // text has a resolution of 2
+      * const text = new Text('This is a PixiJS text');
       */
-    @JSImport("@pixi/text/lib/Text", "Text.experimentalLetterSpacing")
+    @JSImport("@pixi/text/lib/Text", "Text.defaultAutoResolution")
     @js.native
-    def experimentalLetterSpacing: Boolean = js.native
-    inline def experimentalLetterSpacing_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("experimentalLetterSpacing")(x.asInstanceOf[js.Any])
-  }
-  
-  @js.native
-  trait ModernContext2D
-    extends StObject
-       with ICanvasRenderingContext2D {
+    def defaultAutoResolution: Boolean = js.native
+    inline def defaultAutoResolution_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultAutoResolution")(x.asInstanceOf[js.Any])
     
-    var letterSpacing: js.UndefOr[Double] = js.native
-    
-    var textLetterSpacing: js.UndefOr[Double] = js.native
+    /**
+      * If {@link PIXI.Text.defaultAutoResolution} is false, this will be the default resolution of the text.
+      * If not set it will default to {@link PIXI.settings.RESOLUTION}.
+      * @example
+      * Text.defaultResolution = 2;
+      * Text.defaultAutoResolution = false;
+      *
+      * // text has a resolution of 2
+      * const text = new Text('This is a PixiJS text');
+      */
+    @JSImport("@pixi/text/lib/Text", "Text.defaultResolution")
+    @js.native
+    def defaultResolution: Double = js.native
+    inline def defaultResolution_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultResolution")(x.asInstanceOf[js.Any])
   }
 }

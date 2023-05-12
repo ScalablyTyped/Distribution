@@ -5,6 +5,7 @@ import typings.hapiHoek.hapiHoekBooleans.`false`
 import typings.hapiHoek.mod.internals.Without
 import typings.hapiHoek.mod.reach.Options
 import typings.std.ArrayLike
+import typings.std.Error
 import typings.std.Partial
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
@@ -16,6 +17,23 @@ object mod {
   @JSImport("@hapi/hoek", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
+  
+  @JSImport("@hapi/hoek", "AssertError")
+  @js.native
+  open class AssertError ()
+    extends StObject
+       with Error {
+    
+    /* standard es5 */
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* standard es5 */
+    /* CompleteClass */
+    var name: String = js.native
+    @JSName("name")
+    var name_AssertError: typings.hapiHoek.hapiHoekStrings.AssertError = js.native
+  }
   
   @JSImport("@hapi/hoek", "Bench")
   @js.native

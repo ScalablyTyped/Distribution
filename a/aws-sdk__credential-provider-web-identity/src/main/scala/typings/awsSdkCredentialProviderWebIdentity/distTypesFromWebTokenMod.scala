@@ -1,8 +1,8 @@
 package typings.awsSdkCredentialProviderWebIdentity
 
 import typings.awsSdkCredentialProviderWebIdentity.anon.Arn
-import typings.awsSdkTypes.distTypesCredentialsMod.CredentialProvider
-import typings.awsSdkTypes.distTypesCredentialsMod.Credentials
+import typings.awsSdkTypes.distTypesIdentityAwsCredentialIdentityMod.AwsCredentialIdentity
+import typings.awsSdkTypes.distTypesIdentityAwsCredentialIdentityMod.AwsCredentialIdentityProvider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +13,7 @@ object distTypesFromWebTokenMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def fromWebToken(init: FromWebTokenInit): CredentialProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("fromWebToken")(init.asInstanceOf[js.Any]).asInstanceOf[CredentialProvider]
+  inline def fromWebToken(init: FromWebTokenInit): AwsCredentialIdentityProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("fromWebToken")(init.asInstanceOf[js.Any]).asInstanceOf[AwsCredentialIdentityProvider]
   
   trait AssumeRoleWithWebIdentityParams extends StObject {
     
@@ -187,7 +187,7 @@ object distTypesFromWebTokenMod {
       * @param params input parameter of sts:AssumeRoleWithWebIdentity API.
       */
     var roleAssumerWithWebIdentity: js.UndefOr[
-        js.Function1[/* params */ AssumeRoleWithWebIdentityParams, js.Promise[Credentials]]
+        js.Function1[/* params */ AssumeRoleWithWebIdentityParams, js.Promise[AwsCredentialIdentity]]
       ] = js.undefined
     
     /**
@@ -225,7 +225,7 @@ object distTypesFromWebTokenMod {
       
       inline def setRoleArn(value: String): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
       
-      inline def setRoleAssumerWithWebIdentity(value: /* params */ AssumeRoleWithWebIdentityParams => js.Promise[Credentials]): Self = StObject.set(x, "roleAssumerWithWebIdentity", js.Any.fromFunction1(value))
+      inline def setRoleAssumerWithWebIdentity(value: /* params */ AssumeRoleWithWebIdentityParams => js.Promise[AwsCredentialIdentity]): Self = StObject.set(x, "roleAssumerWithWebIdentity", js.Any.fromFunction1(value))
       
       inline def setRoleAssumerWithWebIdentityUndefined: Self = StObject.set(x, "roleAssumerWithWebIdentity", js.undefined)
       

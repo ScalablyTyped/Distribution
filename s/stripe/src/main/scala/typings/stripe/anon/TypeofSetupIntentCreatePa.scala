@@ -10,14 +10,14 @@ trait TypeofSetupIntentCreatePa extends StObject {
   
   val PaymentMethodData: TypeofPaymentMethodData
   
-  val PaymentMethodOptions: TypeofPaymentMethodOptionSepaDebit
+  val PaymentMethodOptions: TypeofPaymentMethodOptionCard
 }
 object TypeofSetupIntentCreatePa {
   
   inline def apply(
     MandateData: TypeofMandateData,
     PaymentMethodData: TypeofPaymentMethodData,
-    PaymentMethodOptions: TypeofPaymentMethodOptionSepaDebit
+    PaymentMethodOptions: TypeofPaymentMethodOptionCard
   ): TypeofSetupIntentCreatePa = {
     val __obj = js.Dynamic.literal(MandateData = MandateData.asInstanceOf[js.Any], PaymentMethodData = PaymentMethodData.asInstanceOf[js.Any], PaymentMethodOptions = PaymentMethodOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofSetupIntentCreatePa]
@@ -30,6 +30,6 @@ object TypeofSetupIntentCreatePa {
     
     inline def setPaymentMethodData(value: TypeofPaymentMethodData): Self = StObject.set(x, "PaymentMethodData", value.asInstanceOf[js.Any])
     
-    inline def setPaymentMethodOptions(value: TypeofPaymentMethodOptionSepaDebit): Self = StObject.set(x, "PaymentMethodOptions", value.asInstanceOf[js.Any])
+    inline def setPaymentMethodOptions(value: TypeofPaymentMethodOptionCard): Self = StObject.set(x, "PaymentMethodOptions", value.asInstanceOf[js.Any])
   }
 }

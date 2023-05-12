@@ -1,5 +1,6 @@
 package typings.inferno.distCoreTypesMod.Inferno
 
+import typings.inferno.distCoreTypesMod.InfernoNode
 import typings.std.HTMLAnchorElement
 import typings.std.HTMLAreaElement
 import typings.std.HTMLAudioElement

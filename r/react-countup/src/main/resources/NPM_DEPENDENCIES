@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-countup" : "6.3.2"
+      "react-countup" : "6.4.2"
     }
   ],
   "test-dependencies" : [
     {
-      "react-countup" : "6.3.2"
+      "react-countup" : "6.4.2"
     }
   ],
   "compile-devDependencies" : [

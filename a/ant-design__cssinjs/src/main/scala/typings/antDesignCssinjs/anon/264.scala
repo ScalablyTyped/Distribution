@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.TransitionTimingFunction
+import typings.csstype.mod.Property.MinHeight
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,13 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `264` extends StObject {
   
   var value: js.UndefOr[
-    TransitionTimingFunction | (js.Array[
+    (MinHeight[Double | String]) | (js.Array[
       (Extract[
         js.UndefOr[
-          TransitionTimingFunction | js.Array[NonNullable[js.UndefOr[TransitionTimingFunction]]]
+          (MinHeight[Double | String]) | (js.Array[NonNullable[js.UndefOr[MinHeight[Double | String]]]])
         ], 
         String
-      ]) | NonNullable[js.UndefOr[TransitionTimingFunction]]
+      ]) | (NonNullable[js.UndefOr[MinHeight[Double | String]]])
     ])
   ] = js.native
 }

@@ -11,6 +11,7 @@ import typings.std.Event
 import typings.std.EventInit
 import typings.std.EventListenerOptions
 import typings.std.EventTarget
+import typings.std.FontDisplay
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -32,7 +33,7 @@ object mod {
       def this(family: String, source: BinaryData, descriptors: FontFaceDescriptors) = this()
       
       /* CompleteClass */
-      var display: String = js.native
+      var display: FontDisplay = js.native
       
       /* CompleteClass */
       var family: String = js.native
@@ -98,7 +99,7 @@ object mod {
     
     trait FontFace extends StObject {
       
-      var display: String
+      var display: FontDisplay
       
       var family: String
       
@@ -125,7 +126,7 @@ object mod {
     object FontFace {
       
       inline def apply(
-        display: String,
+        display: FontDisplay,
         family: String,
         featureSettings: String,
         load: () => js.Promise[FontFace],
@@ -145,7 +146,7 @@ object mod {
       @scala.inline
       implicit open class MutableBuilder[Self <: FontFace] (val x: Self) extends AnyVal {
         
-        inline def setDisplay(value: String): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+        inline def setDisplay(value: FontDisplay): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
         
         inline def setFamily(value: String): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
         
@@ -173,7 +174,7 @@ object mod {
     
     trait FontFaceDescriptors extends StObject {
       
-      var display: js.UndefOr[String] = js.undefined
+      var display: js.UndefOr[FontDisplay] = js.undefined
       
       var featureSettings: js.UndefOr[String] = js.undefined
       
@@ -197,7 +198,7 @@ object mod {
       @scala.inline
       implicit open class MutableBuilder[Self <: FontFaceDescriptors] (val x: Self) extends AnyVal {
         
-        inline def setDisplay(value: String): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+        inline def setDisplay(value: FontDisplay): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
         
         inline def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
         

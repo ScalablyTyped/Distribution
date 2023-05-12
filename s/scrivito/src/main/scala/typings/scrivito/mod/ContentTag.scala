@@ -11,7 +11,7 @@ open class ContentTag protected () extends Component[ContentTagProps, Any, Any] 
   def this(props: ContentTagProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: ContentTagProps, context: Any) = this()
 }

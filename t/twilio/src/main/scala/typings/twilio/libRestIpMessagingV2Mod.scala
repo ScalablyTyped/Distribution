@@ -1,28 +1,41 @@
 package typings.twilio
 
+import typings.twilio.libRestIpMessagingBaseMod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libRestIpMessagingV2Mod {
   
-  @JSImport("twilio/lib/rest/ipMessaging/V2", JSImport.Namespace)
+  @JSImport("twilio/lib/rest/ipMessaging/V2", JSImport.Default)
   @js.native
-  open class ^ protected () extends V2 {
+  open class default protected () extends V2 {
     /**
       * Initialize the V2 version of IpMessaging
       *
-      * @param domain - The twilio domain
+      * @param domain - The Twilio (Twilio.IpMessaging) domain
       */
-    def this(domain: typings.twilio.libRestIpMessagingMod.^) = this()
+    def this(domain: ^) = this()
   }
   
   @js.native
   trait V2
-    extends typings.twilio.libBaseVersionMod.^ {
+    extends typings.twilio.libBaseVersionMod.default {
     
-    val credentials: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CredentialListInstance */ Any = js.native
+    /** credentials - { Twilio.IpMessaging.V2.CredentialListInstance } resource */
+    /* protected */ var _credentials: js.UndefOr[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CredentialListInstance */ Any
+      ] = js.native
     
-    val services: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ServiceListInstance */ Any = js.native
+    /** services - { Twilio.IpMessaging.V2.ServiceListInstance } resource */
+    /* protected */ var _services: js.UndefOr[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ServiceListInstance */ Any
+      ] = js.native
+    
+    /** Getter for credentials resource */
+    def credentials: Any = js.native
+    
+    /** Getter for services resource */
+    def services: Any = js.native
   }
 }

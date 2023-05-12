@@ -22,7 +22,8 @@ trait TypeofSelectControlValueA
     js.Object, 
     scala.Nothing, 
     scala.Nothing, 
-    `false`
+    `false`, 
+    scala.Nothing
   ] = js.native
   
   var ɵfac: ɵɵFactoryDeclaration[SelectControlValueAccessor, scala.Nothing] = js.native

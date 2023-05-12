@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListMapsResponse extends StObject {
   
   /**
-    * Contains a list of maps in your AWS account
+    * Contains a list of maps in your Amazon Web Services account
     */
   var Entries: ListMapsResponseEntryList
   

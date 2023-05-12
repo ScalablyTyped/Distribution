@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "lib0" : "0.2.52"
+      "lib0" : "0.2.74"
     }
   ],
   "test-dependencies" : [
     {
-      "lib0" : "0.2.52"
+      "lib0" : "0.2.74"
     }
   ],
   "compile-devDependencies" : [

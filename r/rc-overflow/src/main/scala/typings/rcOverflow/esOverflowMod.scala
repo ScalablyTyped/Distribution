@@ -52,6 +52,7 @@ object esOverflowMod extends Shortcut {
     - typings.rcOverflow.rcOverflowStrings.button
     - typings.rcOverflow.rcOverflowStrings.canvas
     - typings.rcOverflow.rcOverflowStrings.caption
+    - typings.rcOverflow.rcOverflowStrings.center
     - typings.rcOverflow.rcOverflowStrings.cite
     - typings.rcOverflow.rcOverflowStrings.code
     - typings.rcOverflow.rcOverflowStrings.col

@@ -1,7 +1,7 @@
 
 # Scala.js typings for devtools-detect
 
-Typings are for version 4.0.0
+Typings are for version 4.0.1
 
 ## Library description:
 Detect if DevTools is open and its orientation

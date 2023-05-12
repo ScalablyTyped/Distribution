@@ -16,7 +16,7 @@ object mod {
   
   trait Link
     extends StObject
-       with /* queryParam */ StringDictionary[String] {
+       with /* queryParam */ StringDictionary[js.UndefOr[String]] {
     
     var rel: String
     
@@ -38,5 +38,5 @@ object mod {
     }
   }
   
-  type Links = StringDictionary[Link]
+  type Links = StringDictionary[js.UndefOr[Link]]
 }

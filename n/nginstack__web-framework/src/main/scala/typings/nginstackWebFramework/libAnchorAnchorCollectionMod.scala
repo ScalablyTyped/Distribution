@@ -32,6 +32,8 @@ object libAnchorAnchorCollectionMod {
     
     /* private */ var addAnchor_ : Any = js.native
     
+    var alwaysShowMenu: Boolean = js.native
+    
     /* private */ var anchorToMenuItem_ : Any = js.native
     
     var anchors: js.Array[Any] = js.native

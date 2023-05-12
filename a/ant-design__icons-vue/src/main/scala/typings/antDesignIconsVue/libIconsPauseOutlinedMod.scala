@@ -16,7 +16,7 @@ object libIconsPauseOutlinedMod extends Shortcut {
   @js.native
   trait PauseOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_PauseOutlinedIconType: String = js.native

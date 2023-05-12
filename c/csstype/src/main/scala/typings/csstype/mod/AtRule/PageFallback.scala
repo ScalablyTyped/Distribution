@@ -12,6 +12,8 @@ trait PageFallback[TLength, TTime] extends StObject {
   
   var marks: js.UndefOr[Marks | js.Array[NonNullable[js.UndefOr[Marks]]]] = js.undefined
   
+  var pageOrientation: js.UndefOr[PageOrientation | js.Array[NonNullable[js.UndefOr[PageOrientation]]]] = js.undefined
+  
   var size: js.UndefOr[Size[TLength] | js.Array[NonNullable[js.UndefOr[Size[TLength]]]]] = js.undefined
 }
 object PageFallback {
@@ -35,6 +37,12 @@ object PageFallback {
     inline def setMarksUndefined: Self = StObject.set(x, "marks", js.undefined)
     
     inline def setMarksVarargs(value: NonNullable[js.UndefOr[Marks]]*): Self = StObject.set(x, "marks", js.Array(value*))
+    
+    inline def setPageOrientation(value: PageOrientation | js.Array[NonNullable[js.UndefOr[PageOrientation]]]): Self = StObject.set(x, "pageOrientation", value.asInstanceOf[js.Any])
+    
+    inline def setPageOrientationUndefined: Self = StObject.set(x, "pageOrientation", js.undefined)
+    
+    inline def setPageOrientationVarargs(value: NonNullable[js.UndefOr[PageOrientation]]*): Self = StObject.set(x, "pageOrientation", js.Array(value*))
     
     inline def setSize(value: Size[TLength] | js.Array[NonNullable[js.UndefOr[Size[TLength]]]]): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     

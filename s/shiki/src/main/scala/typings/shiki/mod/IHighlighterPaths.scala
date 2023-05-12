@@ -15,6 +15,11 @@ trait IHighlighterPaths extends StObject {
     * @default 'themes/'
     */
   var themes: js.UndefOr[String] = js.undefined
+  
+  /**
+    * @default 'dist/'
+    */
+  var wasm: js.UndefOr[String] = js.undefined
 }
 object IHighlighterPaths {
   
@@ -33,5 +38,9 @@ object IHighlighterPaths {
     inline def setThemes(value: String): Self = StObject.set(x, "themes", value.asInstanceOf[js.Any])
     
     inline def setThemesUndefined: Self = StObject.set(x, "themes", js.undefined)
+    
+    inline def setWasm(value: String): Self = StObject.set(x, "wasm", value.asInstanceOf[js.Any])
+    
+    inline def setWasmUndefined: Self = StObject.set(x, "wasm", js.undefined)
   }
 }

@@ -6,25 +6,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `200307403` extends StObject {
   
-  /** Response */
-  var `200`: ContentApplicationjsonDefaultbranch
+  /** @description Response */
+  var `200`: ContentApplicationjsonContributorsurl
   
-  var `307`: Content48
+  var `307`: Content36
   
-  var `403`: Content48
+  var `403`: Content36
   
-  var `404`: Content48
+  var `404`: Content36
   
-  var `422`: Content397
+  var `422`: Content346
 }
 object `200307403` {
   
   inline def apply(
-    `200`: ContentApplicationjsonDefaultbranch,
-    `307`: Content48,
-    `403`: Content48,
-    `404`: Content48,
-    `422`: Content397
+    `200`: ContentApplicationjsonContributorsurl,
+    `307`: Content36,
+    `403`: Content36,
+    `404`: Content36,
+    `422`: Content346
   ): `200307403` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("200")(`200`.asInstanceOf[js.Any])
@@ -38,14 +38,14 @@ object `200307403` {
   @scala.inline
   implicit open class MutableBuilder[Self <: `200307403`] (val x: Self) extends AnyVal {
     
-    inline def set200(value: ContentApplicationjsonDefaultbranch): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
+    inline def set200(value: ContentApplicationjsonContributorsurl): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
     
-    inline def set307(value: Content48): Self = StObject.set(x, "307", value.asInstanceOf[js.Any])
+    inline def set307(value: Content36): Self = StObject.set(x, "307", value.asInstanceOf[js.Any])
     
-    inline def set403(value: Content48): Self = StObject.set(x, "403", value.asInstanceOf[js.Any])
+    inline def set403(value: Content36): Self = StObject.set(x, "403", value.asInstanceOf[js.Any])
     
-    inline def set404(value: Content48): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
+    inline def set404(value: Content36): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
     
-    inline def set422(value: Content397): Self = StObject.set(x, "422", value.asInstanceOf[js.Any])
+    inline def set422(value: Content346): Self = StObject.set(x, "422", value.asInstanceOf[js.Any])
   }
 }

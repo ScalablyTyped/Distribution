@@ -25,6 +25,8 @@ type Boolean = scala.Boolean
   - typings.awsSdk.awsSdkStrings.`es-US`
   - typings.awsSdk.awsSdkStrings.`en-GB`
   - typings.awsSdk.awsSdkStrings.`en-AU`
+  - typings.awsSdk.awsSdkStrings.`de-DE`
+  - typings.awsSdk.awsSdkStrings.`ja-JP`
   - java.lang.String
 */
 type CLMLanguageCode = _CLMLanguageCode | String
@@ -59,6 +61,13 @@ type DurationInSeconds = Double
 type FailureReason = String
 
 type IdentifiedLanguageScore = Double
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.REAL_TIME
+  - typings.awsSdk.awsSdkStrings.POST_CALL
+  - java.lang.String
+*/
+type InputType = _InputType | String
 
 type KMSEncryptionContextMap = StringDictionary[NonEmptyString]
 
@@ -102,6 +111,8 @@ type KMSKeyId = String
   - typings.awsSdk.awsSdkStrings.`th-TH`
   - typings.awsSdk.awsSdkStrings.`en-ZA`
   - typings.awsSdk.awsSdkStrings.`en-NZ`
+  - typings.awsSdk.awsSdkStrings.`vi-VN`
+  - typings.awsSdk.awsSdkStrings.`sv-SE`
   - java.lang.String
 */
 type LanguageCode = _LanguageCode | String
@@ -121,7 +132,7 @@ type MaxSpeakers = Double
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.mp3_
   - typings.awsSdk.awsSdkStrings.mp4_
-  - typings.awsSdk.awsSdkStrings.wav_
+  - typings.awsSdk.awsSdkStrings.wav__
   - typings.awsSdk.awsSdkStrings.flac
   - typings.awsSdk.awsSdkStrings.ogg
   - typings.awsSdk.awsSdkStrings.amr

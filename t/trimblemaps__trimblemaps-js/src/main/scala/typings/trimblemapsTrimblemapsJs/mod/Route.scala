@@ -29,11 +29,16 @@ open class Route () extends Evented {
   /* @deprecated */
   def frameRoute(): this.type = js.native
   
+  def getBottomLayerId(): js.UndefOr[String] = js.native
+  
   def getReports(options: RouteOptions): Unit = js.native
   
   def getRouteId(): String = js.native
   
   def getRouteWithNewStop(newStop: LngLat, routeLegPosition: Double): Unit = js.native
+  
+  def moveLayer(): this.type = js.native
+  def moveLayer(beforeId: String): this.type = js.native
   
   def redo(): Unit = js.native
   

@@ -104,8 +104,6 @@ object mod {
     extends StObject
        with HTMLAttributes[HTMLDivElement] {
     
-    var autoFocus: js.UndefOr[Boolean] = js.undefined
-    
     var disabled: js.UndefOr[Boolean] = js.undefined
     
     var form: js.UndefOr[String] = js.undefined
@@ -172,10 +170,6 @@ object mod {
     
     @scala.inline
     implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
-      
-      inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
-      
-      inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       

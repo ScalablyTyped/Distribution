@@ -13,14 +13,14 @@ trait DeviceDefinitionGuideline
   var _usageInstruction: js.UndefOr[Element] = js.undefined
   
   /**
-    * A specific situation when a device should not be used because it may cause harm.
+    * A ClinicalUseDefinition that points to the DeviceDefinition can be used if more structured data is needed.
     */
-  var contraindication: js.UndefOr[js.Array[CodeableReference]] = js.undefined
+  var contraindication: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
   /**
-    * A clinical condition for which the device was designed to be used.
+    * A ClinicalUseDefinition that points to the DeviceDefinition can be used if more structured data is needed.
     */
-  var indication: js.UndefOr[js.Array[CodeableReference]] = js.undefined
+  var indication: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
   /**
     * A description of the general purpose or medical use of the device or its function.
@@ -43,9 +43,9 @@ trait DeviceDefinitionGuideline
   var useContext: js.UndefOr[js.Array[UsageContext]] = js.undefined
   
   /**
-    * Specific hazard alert information that a user needs to know before using the device.
+    * A ClinicalUseDefinition that points to the DeviceDefinition can be used if more structured data is needed.
     */
-  var warning: js.UndefOr[js.Array[CodeableReference]] = js.undefined
+  var warning: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
 }
 object DeviceDefinitionGuideline {
   
@@ -57,17 +57,17 @@ object DeviceDefinitionGuideline {
   @scala.inline
   implicit open class MutableBuilder[Self <: DeviceDefinitionGuideline] (val x: Self) extends AnyVal {
     
-    inline def setContraindication(value: js.Array[CodeableReference]): Self = StObject.set(x, "contraindication", value.asInstanceOf[js.Any])
+    inline def setContraindication(value: js.Array[CodeableConcept]): Self = StObject.set(x, "contraindication", value.asInstanceOf[js.Any])
     
     inline def setContraindicationUndefined: Self = StObject.set(x, "contraindication", js.undefined)
     
-    inline def setContraindicationVarargs(value: CodeableReference*): Self = StObject.set(x, "contraindication", js.Array(value*))
+    inline def setContraindicationVarargs(value: CodeableConcept*): Self = StObject.set(x, "contraindication", js.Array(value*))
     
-    inline def setIndication(value: js.Array[CodeableReference]): Self = StObject.set(x, "indication", value.asInstanceOf[js.Any])
+    inline def setIndication(value: js.Array[CodeableConcept]): Self = StObject.set(x, "indication", value.asInstanceOf[js.Any])
     
     inline def setIndicationUndefined: Self = StObject.set(x, "indication", js.undefined)
     
-    inline def setIndicationVarargs(value: CodeableReference*): Self = StObject.set(x, "indication", js.Array(value*))
+    inline def setIndicationVarargs(value: CodeableConcept*): Self = StObject.set(x, "indication", js.Array(value*))
     
     inline def setIntendedUse(value: String): Self = StObject.set(x, "intendedUse", value.asInstanceOf[js.Any])
     
@@ -89,11 +89,11 @@ object DeviceDefinitionGuideline {
     
     inline def setUseContextVarargs(value: UsageContext*): Self = StObject.set(x, "useContext", js.Array(value*))
     
-    inline def setWarning(value: js.Array[CodeableReference]): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+    inline def setWarning(value: js.Array[CodeableConcept]): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     
     inline def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
     
-    inline def setWarningVarargs(value: CodeableReference*): Self = StObject.set(x, "warning", js.Array(value*))
+    inline def setWarningVarargs(value: CodeableConcept*): Self = StObject.set(x, "warning", js.Array(value*))
     
     inline def set_intendedUse(value: Element): Self = StObject.set(x, "_intendedUse", value.asInstanceOf[js.Any])
     

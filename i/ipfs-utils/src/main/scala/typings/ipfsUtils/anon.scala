@@ -3,7 +3,6 @@ package typings.ipfsUtils
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
-import typings.node.bufferMod.global.Buffer
 import typings.std.AsyncIterable
 import typings.std.Blob
 import typings.std.FormData
@@ -23,13 +22,7 @@ object anon {
   
   trait Content extends StObject {
     
-    var content: js.UndefOr[AsyncIterable[Buffer]] = js.undefined
-    
-    var mode: js.UndefOr[Double] = js.undefined
-    
-    var mtime: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_types.MtimeLike */ Any
-      ] = js.undefined
+    var content: js.UndefOr[AsyncIterable[js.typedarray.Uint8Array]] = js.undefined
     
     var path: String
   }
@@ -43,19 +36,9 @@ object anon {
     @scala.inline
     implicit open class MutableBuilder[Self <: Content] (val x: Self) extends AnyVal {
       
-      inline def setContent(value: AsyncIterable[Buffer]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: AsyncIterable[js.typedarray.Uint8Array]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
       inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
-      
-      inline def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
-      
-      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
-      
-      inline def setMtime(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_types.MtimeLike */ Any
-      ): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
-      
-      inline def setMtimeUndefined: Self = StObject.set(x, "mtime", js.undefined)
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     }
@@ -128,60 +111,6 @@ object anon {
     def apply(input: URL, init: RequestInit): js.Promise[Response] = js.native
   }
   
-  trait FollowSymlinks extends StObject {
-    
-    var followSymlinks: js.UndefOr[Boolean] = js.undefined
-    
-    var hidden: js.UndefOr[Boolean] = js.undefined
-    
-    var mode: js.UndefOr[Double] = js.undefined
-    
-    var mtime: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_types.MtimeLike */ Any
-      ] = js.undefined
-    
-    var preserveMode: js.UndefOr[Boolean] = js.undefined
-    
-    var preserveMtime: js.UndefOr[Boolean] = js.undefined
-  }
-  object FollowSymlinks {
-    
-    inline def apply(): FollowSymlinks = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[FollowSymlinks]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: FollowSymlinks] (val x: Self) extends AnyVal {
-      
-      inline def setFollowSymlinks(value: Boolean): Self = StObject.set(x, "followSymlinks", value.asInstanceOf[js.Any])
-      
-      inline def setFollowSymlinksUndefined: Self = StObject.set(x, "followSymlinks", js.undefined)
-      
-      inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
-      
-      inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
-      
-      inline def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
-      
-      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
-      
-      inline def setMtime(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_types.MtimeLike */ Any
-      ): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
-      
-      inline def setMtimeUndefined: Self = StObject.set(x, "mtime", js.undefined)
-      
-      inline def setPreserveMode(value: Boolean): Self = StObject.set(x, "preserveMode", value.asInstanceOf[js.Any])
-      
-      inline def setPreserveModeUndefined: Self = StObject.set(x, "preserveMode", js.undefined)
-      
-      inline def setPreserveMtime(value: Boolean): Self = StObject.set(x, "preserveMtime", value.asInstanceOf[js.Any])
-      
-      inline def setPreserveMtimeUndefined: Self = StObject.set(x, "preserveMtime", js.undefined)
-    }
-  }
-  
   trait Headers extends StObject {
     
     var default: Any
@@ -235,28 +164,4 @@ object anon {
           /* init */ RequestInit, 
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify globalThis.Request */ Any
         ]
-  
-  trait Path extends StObject {
-    
-    var content: js.UndefOr[AsyncIterable[js.typedarray.Uint8Array]] = js.undefined
-    
-    var path: String
-  }
-  object Path {
-    
-    inline def apply(path: String): Path = {
-      val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Path]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: Path] (val x: Self) extends AnyVal {
-      
-      inline def setContent(value: AsyncIterable[js.typedarray.Uint8Array]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
-      
-      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
-      
-      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
-    }
-  }
 }

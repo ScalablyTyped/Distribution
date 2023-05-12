@@ -63,7 +63,7 @@ object cullingBoundingInfoMod {
     
     /**
       * Grows the bounding info to include the given point.
-      * @param point The point that will be included in the current bounding info
+      * @param point The point that will be included in the current bounding info (in local space)
       * @returns the current bounding info
       */
     def encapsulate(point: Vector3): BoundingInfo = js.native
@@ -77,7 +77,7 @@ object cullingBoundingInfoMod {
     
     /**
       * Checks if another bounding info intersects the bounding box and bounding sphere or the mesh
-      * @see https://doc.babylonjs.com/babylon101/intersect_collisions_-_mesh
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/mesh/interactions/mesh_intersect
       * @param boundingInfo the bounding info to check intersection with
       * @param precise if the intersection should be done using OBB
       * @returns if the bounding info intersects
@@ -86,7 +86,7 @@ object cullingBoundingInfoMod {
     
     /**
       * Checks if a point is inside the bounding box and bounding sphere or the mesh
-      * @see https://doc.babylonjs.com/babylon101/intersect_collisions_-_mesh
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/mesh/interactions/mesh_intersect
       * @param point the point to check intersection with
       * @returns if the point intersects
       */

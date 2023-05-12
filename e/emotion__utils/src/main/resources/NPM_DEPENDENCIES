@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@emotion/utils" : "1.2.0"
+      "@emotion/utils" : "1.2.1"
     }
   ],
   "test-dependencies" : [
     {
-      "@emotion/utils" : "1.2.0"
+      "@emotion/utils" : "1.2.1"
     }
   ],
   "compile-devDependencies" : [

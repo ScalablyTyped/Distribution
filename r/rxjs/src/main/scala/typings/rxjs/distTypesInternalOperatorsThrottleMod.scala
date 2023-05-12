@@ -12,17 +12,31 @@ object distTypesInternalOperatorsThrottleMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("rxjs/dist/types/internal/operators/throttle", "defaultThrottleConfig")
-  @js.native
-  val defaultThrottleConfig: ThrottleConfig = js.native
-  
   inline def throttle[T](durationSelector: js.Function1[/* value */ T, ObservableInput[Any]]): MonoTypeOperatorFunction[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("throttle")(durationSelector.asInstanceOf[js.Any]).asInstanceOf[MonoTypeOperatorFunction[T]]
   inline def throttle[T](durationSelector: js.Function1[/* value */ T, ObservableInput[Any]], config: ThrottleConfig): MonoTypeOperatorFunction[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("throttle")(durationSelector.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[MonoTypeOperatorFunction[T]]
   
   trait ThrottleConfig extends StObject {
     
+    /**
+      * If `true`, the resulting Observable will emit the first value from the source
+      * Observable at the **start** of the "throttling" process (when starting an
+      * internal timer that prevents other emissions from the source to pass through).
+      * If `false`, it will not emit the first value from the source Observable at the
+      * start of the "throttling" process.
+      *
+      * If not provided, defaults to: `true`.
+      */
     var leading: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * If `true`, the resulting Observable will emit the last value from the source
+      * Observable at the **end** of the "throttling" process (when ending an internal
+      * timer that prevents other emissions from the source to pass through).
+      * If `false`, it will not emit the last value from the source Observable at the
+      * end of the "throttling" process.
+      *
+      * If not provided, defaults to: `false`.
+      */
     var trailing: js.UndefOr[Boolean] = js.undefined
   }
   object ThrottleConfig {

@@ -16,8 +16,8 @@ object jsUsaSearchMod extends Shortcut {
   @js.native
   trait Search extends StObject {
     
-    def init(root: Document): Unit = js.native
-    def init(root: HTMLElement): Unit = js.native
+    def init(target: Document): Unit = js.native
+    def init(target: HTMLElement): Unit = js.native
     
     def off(el: HTMLElement): Unit = js.native
     

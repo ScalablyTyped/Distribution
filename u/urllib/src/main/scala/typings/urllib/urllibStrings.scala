@@ -11,6 +11,10 @@ object urllibStrings {
   inline def buffer: buffer = "buffer".asInstanceOf[buffer]
   
   @js.native
+  sealed trait html extends StObject
+  inline def html: html = "html".asInstanceOf[html]
+  
+  @js.native
   sealed trait json extends StObject
   inline def json: json = "json".asInstanceOf[json]
   

@@ -10,7 +10,7 @@ trait `404410` extends StObject {
   
   var `401`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['requires_authentication'] */ js.Any
   
-  /** Forbidden */
+  /** @description Forbidden */
   var `403`: ContentApplicationjsonErrors
   
   var `404`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['not_found'] */ js.Any

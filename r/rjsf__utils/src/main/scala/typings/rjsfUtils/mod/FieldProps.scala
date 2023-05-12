@@ -78,7 +78,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined parent @rjsf/utils.@rjsf/utils.GenericObjectType */
 /* Inlined parent std.Pick<react.react.HTMLAttributes<std.HTMLElement>, std.Exclude<keyof react.react.HTMLAttributes<std.HTMLElement>, 'onBlur' | 'onFocus' | 'onChange'>> */
 @js.native
-trait FieldProps[T, F]
+trait FieldProps[T, S /* <: StrictRJSFSchema */, F /* <: FormContextType */]
   extends StObject
      with /* name */ StringDictionary[Any] {
   
@@ -188,6 +188,8 @@ trait FieldProps[T, F]
   
   var autoCorrect: js.UndefOr[String] = js.native
   
+  var autoFocus: js.UndefOr[Boolean] = js.native
+  
   var autoSave: js.UndefOr[String] = js.native
   
   /** A boolean value stating if the field should autofocus */
@@ -198,6 +200,8 @@ trait FieldProps[T, F]
   var className: js.UndefOr[String] = js.native
   
   var color: js.UndefOr[String] = js.native
+  
+  var content: js.UndefOr[String] = js.native
   
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
   
@@ -225,7 +229,7 @@ trait FieldProps[T, F]
   var formContext: js.UndefOr[F] = js.native
   
   /** The data for this field */
-  var formData: T = js.native
+  var formData: js.UndefOr[T] = js.native
   
   var hidden: js.UndefOr[Boolean] = js.native
   
@@ -234,8 +238,18 @@ trait FieldProps[T, F]
   
   var id: js.UndefOr[String] = js.native
   
+  /** To avoid collisions with existing ids in the DOM, it is possible to change the prefix used for ids;
+    * Default is `root`
+    */
+  var idPrefix: js.UndefOr[String] = js.native
+  
   /** The tree of unique ids for every child field */
   var idSchema: IdSchema[T] = js.native
+  
+  /** To avoid using a path separator that is present in field names, it is possible to change the separator used for
+    * ids (Default is `_`)
+    */
+  var idSeparator: js.UndefOr[String] = js.native
   
   var inlist: js.UndefOr[Any] = js.native
   
@@ -280,10 +294,14 @@ trait FieldProps[T, F]
   var onCanPlayThrough: js.UndefOr[ReactEventHandler[HTMLElement]] = js.native
   
   /** The field change event handler; called with the updated form data and an optional `ErrorSchema` */
+  def onChange(): Any = js.native
   def onChange(newFormData: T): Any = js.native
   def onChange(newFormData: T, es: Unit, id: String): Any = js.native
   def onChange(newFormData: T, es: ErrorSchema[T]): Any = js.native
   def onChange(newFormData: T, es: ErrorSchema[T], id: String): Any = js.native
+  def onChange(newFormData: Unit, es: Unit, id: String): Any = js.native
+  def onChange(newFormData: Unit, es: ErrorSchema[T]): Any = js.native
+  def onChange(newFormData: Unit, es: ErrorSchema[T], id: String): Any = js.native
   
   var onClick: js.UndefOr[MouseEventHandler[HTMLElement]] = js.native
   
@@ -434,11 +452,16 @@ trait FieldProps[T, F]
   
   var radioGroup: js.UndefOr[String] = js.native
   
+  /** An array of strings listing all generated error messages from encountered errors for this field */
+  var rawErrors: js.UndefOr[js.Array[String]] = js.native
+  
   /** A boolean value stating if the field is read-only */
   var readonly: Boolean = js.native
   
   /** The `registry` object */
-  var registry: Registry[T, F] = js.native
+  var registry: Registry[T, S, F] = js.native
+  
+  var rel: js.UndefOr[String] = js.native
   
   /** The required status of this field */
   var required: js.UndefOr[Boolean] = js.native
@@ -447,10 +470,12 @@ trait FieldProps[T, F]
   
   var results: js.UndefOr[Double] = js.native
   
+  var rev: js.UndefOr[String] = js.native
+  
   var role: js.UndefOr[AriaRole] = js.native
   
   /** The JSON subschema object for this field */
-  var schema: RJSFSchema = js.native
+  var schema: S = js.native
   
   var security: js.UndefOr[String] = js.native
   
@@ -473,7 +498,7 @@ trait FieldProps[T, F]
   var typeof: js.UndefOr[String] = js.native
   
   /** The uiSchema for this field */
-  var uiSchema: js.UndefOr[UiSchema[T, F]] = js.native
+  var uiSchema: js.UndefOr[UiSchema[T, S, F]] = js.native
   
   var unselectable: js.UndefOr[on | off] = js.native
   

@@ -14,35 +14,45 @@ object buildLibFileSystemPathServiceMod {
        with FileSystemPathService {
     
     /* CompleteClass */
-    override def ensureAbsolutePath(path: String): String = js.native
+    override def ensureAbsolutePath(path: String, rootDir: String): String = js.native
     
     /* CompleteClass */
-    override def getcwd(): String = js.native
-    
-    /* CompleteClass */
-    override def glob(pattern: String): js.Array[String] = js.native
+    override def glob(pattern: String, rootDir: String): js.Array[String] = js.native
     
     /* CompleteClass */
     override def isFile(path: String): Boolean = js.native
     
     /* CompleteClass */
-    override def loadFile[T](path: String): T = js.native
+    override def loadFile[T](path: String): js.Promise[T] = js.native
+    
+    /* private */ /* CompleteClass */
+    var `private`: Any = js.native
   }
   
   trait FileSystemPathService
     extends StObject
-       with PathService
+       with PathService {
+    
+    /* private */ var `private`: Any
+  }
   object FileSystemPathService {
     
     inline def apply(
-      ensureAbsolutePath: String => String,
-      getcwd: () => String,
-      glob: String => js.Array[String],
+      ensureAbsolutePath: (String, String) => String,
+      glob: (String, String) => js.Array[String],
       isFile: String => Boolean,
-      loadFile: String => Any
+      loadFile: String => js.Promise[Any],
+      `private`: Any
     ): FileSystemPathService = {
-      val __obj = js.Dynamic.literal(ensureAbsolutePath = js.Any.fromFunction1(ensureAbsolutePath), getcwd = js.Any.fromFunction0(getcwd), glob = js.Any.fromFunction1(glob), isFile = js.Any.fromFunction1(isFile), loadFile = js.Any.fromFunction1(loadFile))
+      val __obj = js.Dynamic.literal(ensureAbsolutePath = js.Any.fromFunction2(ensureAbsolutePath), glob = js.Any.fromFunction2(glob), isFile = js.Any.fromFunction1(isFile), loadFile = js.Any.fromFunction1(loadFile))
+      __obj.updateDynamic("private")(`private`.asInstanceOf[js.Any])
       __obj.asInstanceOf[FileSystemPathService]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileSystemPathService] (val x: Self) extends AnyVal {
+      
+      inline def setPrivate(value: Any): Self = StObject.set(x, "private", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -20,7 +20,7 @@ open class Crypto_ ()
   /** Available only in secure contexts. */
   /* standard dom */
   /* CompleteClass */
-  override def randomUUID(): java.lang.String = js.native
+  override def randomUUID(): /* template literal string: ${string}-${string}-${string}-${string}-${string} */ java.lang.String = js.native
   
   /** Available only in secure contexts. */
   /* standard dom */

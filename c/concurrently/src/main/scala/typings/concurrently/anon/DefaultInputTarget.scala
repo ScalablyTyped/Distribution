@@ -10,7 +10,7 @@ trait DefaultInputTarget extends StObject {
   
   var defaultInputTarget: js.UndefOr[CommandIdentifier] = js.undefined
   
-  var inputStream: Readable
+  var inputStream: js.UndefOr[Readable] = js.undefined
   
   var logger: typings.concurrently.distSrcLoggerMod.Logger
   
@@ -18,8 +18,8 @@ trait DefaultInputTarget extends StObject {
 }
 object DefaultInputTarget {
   
-  inline def apply(inputStream: Readable, logger: typings.concurrently.distSrcLoggerMod.Logger): DefaultInputTarget = {
-    val __obj = js.Dynamic.literal(inputStream = inputStream.asInstanceOf[js.Any], logger = logger.asInstanceOf[js.Any])
+  inline def apply(logger: typings.concurrently.distSrcLoggerMod.Logger): DefaultInputTarget = {
+    val __obj = js.Dynamic.literal(logger = logger.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefaultInputTarget]
   }
   
@@ -31,6 +31,8 @@ object DefaultInputTarget {
     inline def setDefaultInputTargetUndefined: Self = StObject.set(x, "defaultInputTarget", js.undefined)
     
     inline def setInputStream(value: Readable): Self = StObject.set(x, "inputStream", value.asInstanceOf[js.Any])
+    
+    inline def setInputStreamUndefined: Self = StObject.set(x, "inputStream", js.undefined)
     
     inline def setLogger(value: typings.concurrently.distSrcLoggerMod.Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
     

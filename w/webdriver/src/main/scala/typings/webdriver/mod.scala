@@ -1,10 +1,12 @@
 package typings.webdriver
 
 import typings.std.Record
+import typings.wdioProtocols.buildTypesMod.BidiResponse
 import typings.wdioProtocols.buildTypesMod.CommandEndpoint
 import typings.webdriver.anon.Default
 import typings.webdriver.anon.DefaultMatch
 import typings.webdriver.anon.DefaultMatchRequired
+import typings.webdriver.anon.IsAndroid
 import typings.webdriver.anon.Match
 import typings.webdriver.anon.MatchRequired
 import typings.webdriver.anon.PartialSessionFlags
@@ -13,9 +15,9 @@ import typings.webdriver.anon.RequiredType
 import typings.webdriver.anon.Type
 import typings.webdriver.anon.TypeValidate
 import typings.webdriver.anon.Validate
+import typings.webdriver.buildCommandMod.BaseClientWithEventHandler
 import typings.webdriver.buildRequestMod.WebDriverResponse
 import typings.webdriver.buildTypesMod.AttachOptions
-import typings.webdriver.buildTypesMod.BaseClient
 import typings.webdriver.buildTypesMod.Client
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -139,7 +141,7 @@ object mod {
       * Changes The instance session id and browser capabilities for the new session
       * directly into the passed in browser object
       *
-      * @param   {Object} instance  the object we get from a new browser session.
+      * @param   {object} instance  the object we get from a new browser session.
       * @returns {string}           the new session id of the browser
       */
     inline def reloadSession(instance: Client): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("reloadSession")(instance.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
@@ -248,8 +250,26 @@ object mod {
     inline def user_=(x: RequiredType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("user")(x.asInstanceOf[js.Any])
   }
   
-  inline def command(method: String, endpointUri: String, commandInfo: CommandEndpoint): js.ThisFunction1[/* this */ BaseClient, /* repeated */ Any, js.Promise[WebDriverResponse]] = (^.asInstanceOf[js.Dynamic].applyDynamic("command")(method.asInstanceOf[js.Any], endpointUri.asInstanceOf[js.Any], commandInfo.asInstanceOf[js.Any])).asInstanceOf[js.ThisFunction1[/* this */ BaseClient, /* repeated */ Any, js.Promise[WebDriverResponse]]]
-  inline def command(method: String, endpointUri: String, commandInfo: CommandEndpoint, doubleEncodeVariables: Boolean): js.ThisFunction1[/* this */ BaseClient, /* repeated */ Any, js.Promise[WebDriverResponse]] = (^.asInstanceOf[js.Dynamic].applyDynamic("command")(method.asInstanceOf[js.Any], endpointUri.asInstanceOf[js.Any], commandInfo.asInstanceOf[js.Any], doubleEncodeVariables.asInstanceOf[js.Any])).asInstanceOf[js.ThisFunction1[/* this */ BaseClient, /* repeated */ Any, js.Promise[WebDriverResponse]]]
+  inline def command(method: String, endpointUri: String, commandInfo: CommandEndpoint): js.ThisFunction1[
+    /* this */ BaseClientWithEventHandler, 
+    /* repeated */ Any, 
+    js.Promise[WebDriverResponse | BidiResponse | Unit]
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("command")(method.asInstanceOf[js.Any], endpointUri.asInstanceOf[js.Any], commandInfo.asInstanceOf[js.Any])).asInstanceOf[js.ThisFunction1[
+    /* this */ BaseClientWithEventHandler, 
+    /* repeated */ Any, 
+    js.Promise[WebDriverResponse | BidiResponse | Unit]
+  ]]
+  inline def command(method: String, endpointUri: String, commandInfo: CommandEndpoint, doubleEncodeVariables: Boolean): js.ThisFunction1[
+    /* this */ BaseClientWithEventHandler, 
+    /* repeated */ Any, 
+    js.Promise[WebDriverResponse | BidiResponse | Unit]
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("command")(method.asInstanceOf[js.Any], endpointUri.asInstanceOf[js.Any], commandInfo.asInstanceOf[js.Any], doubleEncodeVariables.asInstanceOf[js.Any])).asInstanceOf[js.ThisFunction1[
+    /* this */ BaseClientWithEventHandler, 
+    /* repeated */ Any, 
+    js.Promise[WebDriverResponse | BidiResponse | Unit]
+  ]]
+  
+  inline def getEnvironmentVars(param0: PartialSessionFlags): IsAndroid = ^.asInstanceOf[js.Dynamic].applyDynamic("getEnvironmentVars")(param0.asInstanceOf[js.Any]).asInstanceOf[IsAndroid]
   
   inline def getPrototype(param0: PartialSessionFlags): Record[String, js.PropertyDescriptor] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPrototype")(param0.asInstanceOf[js.Any]).asInstanceOf[Record[String, js.PropertyDescriptor]]
   

@@ -1,51 +1,91 @@
 package typings.octokitOpenapiTypes.anon
 
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.`private`
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.internal
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.public
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Deletebranchonmerge extends StObject {
   
+  /**
+    * @description Whether to allow auto-merge for pull requests.
+    * @default false
+    */
   var allow_auto_merge: js.UndefOr[Boolean] = js.undefined
   
+  /** @description Whether to allow private forks */
   var allow_forking: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * @description Whether to allow merge commits for pull requests.
+    * @default true
+    */
   var allow_merge_commit: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * @description Whether to allow rebase merges for pull requests.
+    * @default true
+    */
   var allow_rebase_merge: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * @description Whether to allow squash merges for pull requests.
+    * @default true
+    */
   var allow_squash_merge: js.UndefOr[Boolean] = js.undefined
   
+  var allow_update_branch: js.UndefOr[Boolean] = js.undefined
+  
+  /** Format: uri-template */
   var archive_url: String
   
+  /**
+    * @description Whether the repository is archived.
+    * @default false
+    */
   var archived: Boolean
   
+  /** Format: uri-template */
   var assignees_url: String
   
+  /** Format: uri-template */
   var blobs_url: String
   
+  /** Format: uri-template */
   var branches_url: String
   
+  /** Format: uri */
   var clone_url: String
   
+  /** Format: uri-template */
   var collaborators_url: String
   
+  /** Format: uri-template */
   var comments_url: String
   
+  /** Format: uri-template */
   var commits_url: String
   
+  /** Format: uri-template */
   var compare_url: String
   
+  /** Format: uri-template */
   var contents_url: String
   
   /** Format: uri */
   var contributors_url: String
   
-  /** Format: date-time */
-  var created_at: String
+  var created_at: Double | String
   
+  /** @description The default branch of the repository. */
   var default_branch: String
   
+  /**
+    * @description Whether to delete head branches when pull requests are merged
+    * @default false
+    */
   var delete_branch_on_merge: js.UndefOr[Boolean] = js.undefined
   
   /** Format: uri */
@@ -53,8 +93,8 @@ trait Deletebranchonmerge extends StObject {
   
   var description: String | Null
   
-  /** @description Returns whether or not this repository disabled. */
-  var disabled: Boolean
+  /** @description Returns whether or not this repository is disabled. */
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
   /** Format: uri */
   var downloads_url: String
@@ -62,6 +102,7 @@ trait Deletebranchonmerge extends StObject {
   /** Format: uri */
   var events_url: String
   
+  /** @enum {boolean} */
   var fork: Boolean
   
   var forks: Double
@@ -73,25 +114,44 @@ trait Deletebranchonmerge extends StObject {
   
   var full_name: String
   
+  /** Format: uri-template */
   var git_commits_url: String
   
+  /** Format: uri-template */
   var git_refs_url: String
   
+  /** Format: uri-template */
   var git_tags_url: String
   
+  /** Format: uri */
   var git_url: String
   
+  /**
+    * @description Whether downloads are enabled.
+    * @default true
+    */
   var has_downloads: Boolean
   
+  /**
+    * @description Whether issues are enabled.
+    * @default true
+    */
   var has_issues: Boolean
   
   var has_pages: Boolean
   
+  /**
+    * @description Whether projects are enabled.
+    * @default true
+    */
   var has_projects: Boolean
   
+  /**
+    * @description Whether the wiki is enabled.
+    * @default true
+    */
   var has_wiki: Boolean
   
-  /** Format: uri */
   var homepage: String | Null
   
   /** Format: uri */
@@ -100,18 +160,24 @@ trait Deletebranchonmerge extends StObject {
   /** Format: uri */
   var html_url: String
   
+  /** @description Unique identifier of the repository */
   var id: Double
   
   var is_template: js.UndefOr[Boolean] = js.undefined
   
+  /** Format: uri-template */
   var issue_comment_url: String
   
+  /** Format: uri-template */
   var issue_events_url: String
   
+  /** Format: uri-template */
   var issues_url: String
   
+  /** Format: uri-template */
   var keys_url: String
   
+  /** Format: uri-template */
   var labels_url: String
   
   var language: String | Null
@@ -119,52 +185,66 @@ trait Deletebranchonmerge extends StObject {
   /** Format: uri */
   var languages_url: String
   
-  var license: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-license-simple'] */ js.Any
+  /** License */
+  var license: NodeidSpdxid | Null
   
   var master_branch: js.UndefOr[String] = js.undefined
   
   /** Format: uri */
   var merges_url: String
   
+  /** Format: uri-template */
   var milestones_url: String
   
   /** Format: uri */
   var mirror_url: String | Null
   
+  /** @description The name of the repository. */
   var name: String
   
   var node_id: String
   
+  /** Format: uri-template */
   var notifications_url: String
   
   var open_issues: Double
   
   var open_issues_count: Double
   
-  var owner: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-simple-user'] */ js.Any
+  var organization: js.UndefOr[String] = js.undefined
   
-  var permissions: js.UndefOr[Push] = js.undefined
+  /** User */
+  var owner: Deleted | Null
   
+  var permissions: js.UndefOr[AdminMaintain] = js.undefined
+  
+  /** @description Whether the repository is private or public. */
   var `private`: Boolean
   
+  var public: js.UndefOr[Boolean] = js.undefined
+  
+  /** Format: uri-template */
   var pulls_url: String
   
-  /** Format: date-time */
-  var pushed_at: String
+  var pushed_at: Double | String
   
+  /** Format: uri-template */
   var releases_url: String
   
-  var score: Double
+  var role_name: js.UndefOr[String | Null] = js.undefined
   
   var size: Double
   
   var ssh_url: String
+  
+  var stargazers: js.UndefOr[Double] = js.undefined
   
   var stargazers_count: Double
   
   /** Format: uri */
   var stargazers_url: String
   
+  /** Format: uri-template */
   var statuses_url: String
   
   /** Format: uri */
@@ -182,14 +262,9 @@ trait Deletebranchonmerge extends StObject {
   /** Format: uri */
   var teams_url: String
   
-  var temp_clone_token: js.UndefOr[String] = js.undefined
+  var topics: js.Array[String]
   
-  var text_matches: js.UndefOr[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['search-result-text-matches'] */ js.Any
-  ] = js.undefined
-  
-  var topics: js.UndefOr[js.Array[String]] = js.undefined
-  
+  /** Format: uri-template */
   var trees_url: String
   
   /** Format: date-time */
@@ -198,14 +273,14 @@ trait Deletebranchonmerge extends StObject {
   /** Format: uri */
   var url: String
   
-  /** @description The repository visibility: public, private, or internal. */
-  var visibility: js.UndefOr[String] = js.undefined
+  /** @enum {string} */
+  var visibility: public | `private` | internal
   
   var watchers: Double
   
   var watchers_count: Double
   
-  /** @example false */
+  /** @description Whether to require contributors to sign off on web-based commits */
   var web_commit_signoff_required: js.UndefOr[Boolean] = js.undefined
 }
 object Deletebranchonmerge {
@@ -223,10 +298,9 @@ object Deletebranchonmerge {
     compare_url: String,
     contents_url: String,
     contributors_url: String,
-    created_at: String,
+    created_at: Double | String,
     default_branch: String,
     deployments_url: String,
-    disabled: Boolean,
     downloads_url: String,
     events_url: String,
     fork: Boolean,
@@ -252,7 +326,6 @@ object Deletebranchonmerge {
     keys_url: String,
     labels_url: String,
     languages_url: String,
-    license: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-license-simple'] */ js.Any,
     merges_url: String,
     milestones_url: String,
     name: String,
@@ -260,12 +333,10 @@ object Deletebranchonmerge {
     notifications_url: String,
     open_issues: Double,
     open_issues_count: Double,
-    owner: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-simple-user'] */ js.Any,
     `private`: Boolean,
     pulls_url: String,
-    pushed_at: String,
+    pushed_at: Double | String,
     releases_url: String,
-    score: Double,
     size: Double,
     ssh_url: String,
     stargazers_count: Double,
@@ -276,13 +347,15 @@ object Deletebranchonmerge {
     svn_url: String,
     tags_url: String,
     teams_url: String,
+    topics: js.Array[String],
     trees_url: String,
     updated_at: String,
     url: String,
+    visibility: public | `private` | internal,
     watchers: Double,
     watchers_count: Double
   ): Deletebranchonmerge = {
-    val __obj = js.Dynamic.literal(archive_url = archive_url.asInstanceOf[js.Any], archived = archived.asInstanceOf[js.Any], assignees_url = assignees_url.asInstanceOf[js.Any], blobs_url = blobs_url.asInstanceOf[js.Any], branches_url = branches_url.asInstanceOf[js.Any], clone_url = clone_url.asInstanceOf[js.Any], collaborators_url = collaborators_url.asInstanceOf[js.Any], comments_url = comments_url.asInstanceOf[js.Any], commits_url = commits_url.asInstanceOf[js.Any], compare_url = compare_url.asInstanceOf[js.Any], contents_url = contents_url.asInstanceOf[js.Any], contributors_url = contributors_url.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], default_branch = default_branch.asInstanceOf[js.Any], deployments_url = deployments_url.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], downloads_url = downloads_url.asInstanceOf[js.Any], events_url = events_url.asInstanceOf[js.Any], fork = fork.asInstanceOf[js.Any], forks = forks.asInstanceOf[js.Any], forks_count = forks_count.asInstanceOf[js.Any], forks_url = forks_url.asInstanceOf[js.Any], full_name = full_name.asInstanceOf[js.Any], git_commits_url = git_commits_url.asInstanceOf[js.Any], git_refs_url = git_refs_url.asInstanceOf[js.Any], git_tags_url = git_tags_url.asInstanceOf[js.Any], git_url = git_url.asInstanceOf[js.Any], has_downloads = has_downloads.asInstanceOf[js.Any], has_issues = has_issues.asInstanceOf[js.Any], has_pages = has_pages.asInstanceOf[js.Any], has_projects = has_projects.asInstanceOf[js.Any], has_wiki = has_wiki.asInstanceOf[js.Any], hooks_url = hooks_url.asInstanceOf[js.Any], html_url = html_url.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], issue_comment_url = issue_comment_url.asInstanceOf[js.Any], issue_events_url = issue_events_url.asInstanceOf[js.Any], issues_url = issues_url.asInstanceOf[js.Any], keys_url = keys_url.asInstanceOf[js.Any], labels_url = labels_url.asInstanceOf[js.Any], languages_url = languages_url.asInstanceOf[js.Any], license = license.asInstanceOf[js.Any], merges_url = merges_url.asInstanceOf[js.Any], milestones_url = milestones_url.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], node_id = node_id.asInstanceOf[js.Any], notifications_url = notifications_url.asInstanceOf[js.Any], open_issues = open_issues.asInstanceOf[js.Any], open_issues_count = open_issues_count.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], pulls_url = pulls_url.asInstanceOf[js.Any], pushed_at = pushed_at.asInstanceOf[js.Any], releases_url = releases_url.asInstanceOf[js.Any], score = score.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], ssh_url = ssh_url.asInstanceOf[js.Any], stargazers_count = stargazers_count.asInstanceOf[js.Any], stargazers_url = stargazers_url.asInstanceOf[js.Any], statuses_url = statuses_url.asInstanceOf[js.Any], subscribers_url = subscribers_url.asInstanceOf[js.Any], subscription_url = subscription_url.asInstanceOf[js.Any], svn_url = svn_url.asInstanceOf[js.Any], tags_url = tags_url.asInstanceOf[js.Any], teams_url = teams_url.asInstanceOf[js.Any], trees_url = trees_url.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], watchers = watchers.asInstanceOf[js.Any], watchers_count = watchers_count.asInstanceOf[js.Any], description = null, homepage = null, language = null, mirror_url = null)
+    val __obj = js.Dynamic.literal(archive_url = archive_url.asInstanceOf[js.Any], archived = archived.asInstanceOf[js.Any], assignees_url = assignees_url.asInstanceOf[js.Any], blobs_url = blobs_url.asInstanceOf[js.Any], branches_url = branches_url.asInstanceOf[js.Any], clone_url = clone_url.asInstanceOf[js.Any], collaborators_url = collaborators_url.asInstanceOf[js.Any], comments_url = comments_url.asInstanceOf[js.Any], commits_url = commits_url.asInstanceOf[js.Any], compare_url = compare_url.asInstanceOf[js.Any], contents_url = contents_url.asInstanceOf[js.Any], contributors_url = contributors_url.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], default_branch = default_branch.asInstanceOf[js.Any], deployments_url = deployments_url.asInstanceOf[js.Any], downloads_url = downloads_url.asInstanceOf[js.Any], events_url = events_url.asInstanceOf[js.Any], fork = fork.asInstanceOf[js.Any], forks = forks.asInstanceOf[js.Any], forks_count = forks_count.asInstanceOf[js.Any], forks_url = forks_url.asInstanceOf[js.Any], full_name = full_name.asInstanceOf[js.Any], git_commits_url = git_commits_url.asInstanceOf[js.Any], git_refs_url = git_refs_url.asInstanceOf[js.Any], git_tags_url = git_tags_url.asInstanceOf[js.Any], git_url = git_url.asInstanceOf[js.Any], has_downloads = has_downloads.asInstanceOf[js.Any], has_issues = has_issues.asInstanceOf[js.Any], has_pages = has_pages.asInstanceOf[js.Any], has_projects = has_projects.asInstanceOf[js.Any], has_wiki = has_wiki.asInstanceOf[js.Any], hooks_url = hooks_url.asInstanceOf[js.Any], html_url = html_url.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], issue_comment_url = issue_comment_url.asInstanceOf[js.Any], issue_events_url = issue_events_url.asInstanceOf[js.Any], issues_url = issues_url.asInstanceOf[js.Any], keys_url = keys_url.asInstanceOf[js.Any], labels_url = labels_url.asInstanceOf[js.Any], languages_url = languages_url.asInstanceOf[js.Any], merges_url = merges_url.asInstanceOf[js.Any], milestones_url = milestones_url.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], node_id = node_id.asInstanceOf[js.Any], notifications_url = notifications_url.asInstanceOf[js.Any], open_issues = open_issues.asInstanceOf[js.Any], open_issues_count = open_issues_count.asInstanceOf[js.Any], pulls_url = pulls_url.asInstanceOf[js.Any], pushed_at = pushed_at.asInstanceOf[js.Any], releases_url = releases_url.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], ssh_url = ssh_url.asInstanceOf[js.Any], stargazers_count = stargazers_count.asInstanceOf[js.Any], stargazers_url = stargazers_url.asInstanceOf[js.Any], statuses_url = statuses_url.asInstanceOf[js.Any], subscribers_url = subscribers_url.asInstanceOf[js.Any], subscription_url = subscription_url.asInstanceOf[js.Any], svn_url = svn_url.asInstanceOf[js.Any], tags_url = tags_url.asInstanceOf[js.Any], teams_url = teams_url.asInstanceOf[js.Any], topics = topics.asInstanceOf[js.Any], trees_url = trees_url.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], visibility = visibility.asInstanceOf[js.Any], watchers = watchers.asInstanceOf[js.Any], watchers_count = watchers_count.asInstanceOf[js.Any], description = null, homepage = null, language = null, license = null, mirror_url = null, owner = null)
     __obj.updateDynamic("private")(`private`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Deletebranchonmerge]
   }
@@ -310,6 +383,10 @@ object Deletebranchonmerge {
     
     inline def setAllow_squash_mergeUndefined: Self = StObject.set(x, "allow_squash_merge", js.undefined)
     
+    inline def setAllow_update_branch(value: Boolean): Self = StObject.set(x, "allow_update_branch", value.asInstanceOf[js.Any])
+    
+    inline def setAllow_update_branchUndefined: Self = StObject.set(x, "allow_update_branch", js.undefined)
+    
     inline def setArchive_url(value: String): Self = StObject.set(x, "archive_url", value.asInstanceOf[js.Any])
     
     inline def setArchived(value: Boolean): Self = StObject.set(x, "archived", value.asInstanceOf[js.Any])
@@ -334,7 +411,7 @@ object Deletebranchonmerge {
     
     inline def setContributors_url(value: String): Self = StObject.set(x, "contributors_url", value.asInstanceOf[js.Any])
     
-    inline def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
+    inline def setCreated_at(value: Double | String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
     
     inline def setDefault_branch(value: String): Self = StObject.set(x, "default_branch", value.asInstanceOf[js.Any])
     
@@ -349,6 +426,8 @@ object Deletebranchonmerge {
     inline def setDescriptionNull: Self = StObject.set(x, "description", null)
     
     inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     inline def setDownloads_url(value: String): Self = StObject.set(x, "downloads_url", value.asInstanceOf[js.Any])
     
@@ -412,9 +491,9 @@ object Deletebranchonmerge {
     
     inline def setLanguages_url(value: String): Self = StObject.set(x, "languages_url", value.asInstanceOf[js.Any])
     
-    inline def setLicense(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-license-simple'] */ js.Any
-    ): Self = StObject.set(x, "license", value.asInstanceOf[js.Any])
+    inline def setLicense(value: NodeidSpdxid): Self = StObject.set(x, "license", value.asInstanceOf[js.Any])
+    
+    inline def setLicenseNull: Self = StObject.set(x, "license", null)
     
     inline def setMaster_branch(value: String): Self = StObject.set(x, "master_branch", value.asInstanceOf[js.Any])
     
@@ -438,27 +517,43 @@ object Deletebranchonmerge {
     
     inline def setOpen_issues_count(value: Double): Self = StObject.set(x, "open_issues_count", value.asInstanceOf[js.Any])
     
-    inline def setOwner(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-simple-user'] */ js.Any
-    ): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOrganization(value: String): Self = StObject.set(x, "organization", value.asInstanceOf[js.Any])
     
-    inline def setPermissions(value: Push): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
+    inline def setOrganizationUndefined: Self = StObject.set(x, "organization", js.undefined)
+    
+    inline def setOwner(value: Deleted): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerNull: Self = StObject.set(x, "owner", null)
+    
+    inline def setPermissions(value: AdminMaintain): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
     
     inline def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
     
     inline def setPrivate(value: Boolean): Self = StObject.set(x, "private", value.asInstanceOf[js.Any])
     
+    inline def setPublic(value: Boolean): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
+    
+    inline def setPublicUndefined: Self = StObject.set(x, "public", js.undefined)
+    
     inline def setPulls_url(value: String): Self = StObject.set(x, "pulls_url", value.asInstanceOf[js.Any])
     
-    inline def setPushed_at(value: String): Self = StObject.set(x, "pushed_at", value.asInstanceOf[js.Any])
+    inline def setPushed_at(value: Double | String): Self = StObject.set(x, "pushed_at", value.asInstanceOf[js.Any])
     
     inline def setReleases_url(value: String): Self = StObject.set(x, "releases_url", value.asInstanceOf[js.Any])
     
-    inline def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
+    inline def setRole_name(value: String): Self = StObject.set(x, "role_name", value.asInstanceOf[js.Any])
+    
+    inline def setRole_nameNull: Self = StObject.set(x, "role_name", null)
+    
+    inline def setRole_nameUndefined: Self = StObject.set(x, "role_name", js.undefined)
     
     inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     inline def setSsh_url(value: String): Self = StObject.set(x, "ssh_url", value.asInstanceOf[js.Any])
+    
+    inline def setStargazers(value: Double): Self = StObject.set(x, "stargazers", value.asInstanceOf[js.Any])
+    
+    inline def setStargazersUndefined: Self = StObject.set(x, "stargazers", js.undefined)
     
     inline def setStargazers_count(value: Double): Self = StObject.set(x, "stargazers_count", value.asInstanceOf[js.Any])
     
@@ -476,19 +571,7 @@ object Deletebranchonmerge {
     
     inline def setTeams_url(value: String): Self = StObject.set(x, "teams_url", value.asInstanceOf[js.Any])
     
-    inline def setTemp_clone_token(value: String): Self = StObject.set(x, "temp_clone_token", value.asInstanceOf[js.Any])
-    
-    inline def setTemp_clone_tokenUndefined: Self = StObject.set(x, "temp_clone_token", js.undefined)
-    
-    inline def setText_matches(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['search-result-text-matches'] */ js.Any
-    ): Self = StObject.set(x, "text_matches", value.asInstanceOf[js.Any])
-    
-    inline def setText_matchesUndefined: Self = StObject.set(x, "text_matches", js.undefined)
-    
     inline def setTopics(value: js.Array[String]): Self = StObject.set(x, "topics", value.asInstanceOf[js.Any])
-    
-    inline def setTopicsUndefined: Self = StObject.set(x, "topics", js.undefined)
     
     inline def setTopicsVarargs(value: String*): Self = StObject.set(x, "topics", js.Array(value*))
     
@@ -498,9 +581,7 @@ object Deletebranchonmerge {
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    inline def setVisibility(value: String): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
-    
-    inline def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
+    inline def setVisibility(value: public | `private` | internal): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
     
     inline def setWatchers(value: Double): Self = StObject.set(x, "watchers", value.asInstanceOf[js.Any])
     

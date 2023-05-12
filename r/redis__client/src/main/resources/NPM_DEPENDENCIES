@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@redis/client" : "1.4.0"
+      "@redis/client" : "1.5.7"
     }
   ],
   "test-dependencies" : [
     {
-      "@redis/client" : "1.4.0"
+      "@redis/client" : "1.5.7"
     }
   ],
   "compile-devDependencies" : [

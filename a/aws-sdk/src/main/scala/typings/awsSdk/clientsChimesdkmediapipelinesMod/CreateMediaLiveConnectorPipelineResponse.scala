@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateMediaLiveConnectorPipelineResponse extends StObject {
   
   /**
-    * The new media pipeline.
+    * The new media live connector pipeline.
     */
   var MediaLiveConnectorPipeline: js.UndefOr[typings.awsSdk.clientsChimesdkmediapipelinesMod.MediaLiveConnectorPipeline] = js.undefined
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateCommentRequest extends StObject {
   
   /**
-    * Amazon WorkDocs authentication token. Not required when using AWS administrator credentials to access the API.
+    * Amazon WorkDocs authentication token. Not required when using Amazon Web Services administrator credentials to access the API.
     */
   var AuthenticationToken: js.UndefOr[AuthenticationHeaderType] = js.undefined
   

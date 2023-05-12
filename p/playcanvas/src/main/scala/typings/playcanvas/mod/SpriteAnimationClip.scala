@@ -5,8 +5,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** @typedef {import('../../../scene/sprite.js').Sprite} Sprite */
-/** @typedef {import('./component.js').SpriteComponent} SpriteComponent */
 /**
   * Handles playing of sprite animations and loading of relevant sprite assets.
   *
@@ -18,7 +16,8 @@ open class SpriteAnimationClip protected () extends EventHandler {
   /**
     * Create a new SpriteAnimationClip instance.
     *
-    * @param {SpriteComponent} component - The sprite component managing this clip.
+    * @param {import('./component.js').SpriteComponent} component - The sprite component managing
+    * this clip.
     * @param {object} data - Data for the new animation clip.
     * @param {number} [data.fps] - Frames per second for the animation clip.
     * @param {boolean} [data.loop] - Whether to loop the animation clip.
@@ -164,7 +163,7 @@ open class SpriteAnimationClip protected () extends EventHandler {
   /**
     * The current sprite used to play the animation.
     *
-    * @type {Sprite}
+    * @type {import('../../../scene/sprite.js').Sprite}
     */
   def sprite_=(arg: Any): Unit = js.native
   

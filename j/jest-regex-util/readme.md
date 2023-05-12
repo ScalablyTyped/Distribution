@@ -1,7 +1,7 @@
 
 # Scala.js typings for jest-regex-util
 
-Typings are for version 29.2.0
+Typings are for version 29.4.3
 
 
 

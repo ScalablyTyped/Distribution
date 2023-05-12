@@ -11,7 +11,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Represents an schemaless set of properties.
+  * Represents a set of properties without a schema or defined structure.
   *
   * @remarks
   * [Api set: ExcelApi 1.16]

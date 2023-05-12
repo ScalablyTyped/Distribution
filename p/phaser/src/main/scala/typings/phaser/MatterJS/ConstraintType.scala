@@ -52,7 +52,7 @@ trait ConstraintType extends StObject {
   var bodyB: js.UndefOr[BodyType] = js.undefined
   
   /**
-    * A `Number` that specifies the damping of the constraint, 
+    * A `Number` that specifies the damping of the constraint,
     * i.e. the amount of resistance applied to each body based on their velocities to limit the amount of oscillation.
     * Damping will only be apparent when the constraint also has a very low `stiffness`.
     * A value of `0.1` means the constraint will apply heavy damping, resulting in little to no oscillation.
@@ -82,7 +82,7 @@ trait ConstraintType extends StObject {
   var label: String
   
   /**
-    * A `Number` that specifies the target resting length of the constraint. 
+    * A `Number` that specifies the target resting length of the constraint.
     * It is calculated automatically in `Constraint.create` from initial positions of the `constraint.bodyA` and `constraint.bodyB`.
     *
     * @property length

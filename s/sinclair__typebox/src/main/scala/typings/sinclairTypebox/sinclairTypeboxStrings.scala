@@ -16,12 +16,48 @@ object sinclairTypeboxStrings {
   inline def `8bit`: `8bit` = "8bit".asInstanceOf[`8bit`]
   
   @js.native
+  sealed trait BigInt extends StObject
+  inline def BigInt: BigInt = "BigInt".asInstanceOf[BigInt]
+  
+  @js.native
+  sealed trait Constructor extends StObject
+  inline def Constructor: Constructor = "Constructor".asInstanceOf[Constructor]
+  
+  @js.native
+  sealed trait Date extends StObject
+  inline def Date: Date = "Date".asInstanceOf[Date]
+  
+  @js.native
+  sealed trait Function extends StObject
+  inline def Function: Function = "Function".asInstanceOf[Function]
+  
+  @js.native
+  sealed trait Promise extends StObject
+  inline def Promise: Promise = "Promise".asInstanceOf[Promise]
+  
+  @js.native
+  sealed trait Symbol extends StObject
+  inline def Symbol: Symbol = "Symbol".asInstanceOf[Symbol]
+  
+  @js.native
   sealed trait Uint8Array extends StObject
   inline def Uint8Array: Uint8Array = "Uint8Array".asInstanceOf[Uint8Array]
   
   @js.native
   sealed trait Undefined extends StObject
   inline def Undefined: Undefined = "Undefined".asInstanceOf[Undefined]
+  
+  @js.native
+  sealed trait Void extends StObject
+  inline def Void: Void = "Void".asInstanceOf[Void]
+  
+  @js.native
+  sealed trait _empty extends StObject
+  inline def _empty: _empty = "".asInstanceOf[_empty]
+  
+  @js.native
+  sealed trait and extends StObject
+  inline def and: and = "and".asInstanceOf[and]
   
   @js.native
   sealed trait array extends StObject
@@ -40,20 +76,20 @@ object sinclairTypeboxStrings {
   inline def boolean: boolean = "boolean".asInstanceOf[boolean]
   
   @js.native
-  sealed trait constructor extends StObject
-  inline def constructor: constructor = "constructor".asInstanceOf[constructor]
-  
-  @js.native
-  sealed trait date
-    extends StObject
-       with StringFormatOption
-  inline def date: date = "date".asInstanceOf[date]
+  sealed trait const extends StObject
+  inline def const: const = "const".asInstanceOf[const]
   
   @js.native
   sealed trait `date-time`
     extends StObject
        with StringFormatOption
   inline def `date-time`: `date-time` = "date-time".asInstanceOf[`date-time`]
+  
+  @js.native
+  sealed trait date_
+    extends StObject
+       with StringFormatOption
+  inline def date_ : date_ = "date".asInstanceOf[date_]
   
   @js.native
   sealed trait delete extends StObject
@@ -64,10 +100,6 @@ object sinclairTypeboxStrings {
     extends StObject
        with StringFormatOption
   inline def email: email = "email".asInstanceOf[email]
-  
-  @js.native
-  sealed trait function extends StObject
-  inline def function: function = "function".asInstanceOf[function]
   
   @js.native
   sealed trait hostname
@@ -138,12 +170,12 @@ object sinclairTypeboxStrings {
   inline def `object`: `object` = "object".asInstanceOf[`object`]
   
   @js.native
-  sealed trait params extends StObject
-  inline def params: params = "params".asInstanceOf[params]
+  sealed trait or extends StObject
+  inline def or: or = "or".asInstanceOf[or]
   
   @js.native
-  sealed trait promise extends StObject
-  inline def promise: promise = "promise".asInstanceOf[promise]
+  sealed trait params extends StObject
+  inline def params: params = "params".asInstanceOf[params]
   
   @js.native
   sealed trait `quoted-printable` extends StObject

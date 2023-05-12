@@ -18,7 +18,7 @@ object libEsmShortcutsMod {
     def this(props: IShortcutsProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: IShortcutsProps, context: Any) = this()
     

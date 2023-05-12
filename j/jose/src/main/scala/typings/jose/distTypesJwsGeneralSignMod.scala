@@ -26,7 +26,8 @@ object distTypesJwsGeneralSignMod {
     /**
       * Adds an additional signature for the General JWS object.
       *
-      * @param key Private Key or Secret to sign the individual JWS signature with.
+      * @param key Private Key or Secret to sign the individual JWS signature with. See
+      *   {@link https://github.com/panva/jose/issues/210#jws-alg Algorithm Key Requirements}.
       * @param options JWS Sign options.
       */
     def addSignature(key: KeyLike): Signature = js.native

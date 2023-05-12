@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteMedicalVocabularyRequest extends StObject {
   
   /**
-    * The name of the custom medical vocabulary you want to delete. Vocabulary names are case sensitive.
+    * The name of the custom medical vocabulary you want to delete. Custom medical vocabulary names are case sensitive.
     */
   var VocabularyName: typings.awsSdk.clientsTranscribeserviceMod.VocabularyName
 }

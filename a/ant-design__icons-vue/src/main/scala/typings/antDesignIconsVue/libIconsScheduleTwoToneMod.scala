@@ -16,7 +16,7 @@ object libIconsScheduleTwoToneMod extends Shortcut {
   @js.native
   trait ScheduleTwoToneIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_ScheduleTwoToneIconType: String = js.native

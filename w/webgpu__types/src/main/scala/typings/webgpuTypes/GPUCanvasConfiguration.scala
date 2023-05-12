@@ -19,9 +19,6 @@ trait GPUCanvasConfiguration extends StObject {
     */
   var colorSpace: js.UndefOr[PredefinedColorSpace] = js.undefined
   
-  /** @deprecated use alphaMode instead (it is specified to affect the behavior of reading from the canvas) */
-  var compositingAlphaMode: js.UndefOr[GPUCanvasCompositingAlphaMode] = js.undefined
-  
   /**
     * The {@link GPUDevice} that textures returned by {@link GPUCanvasContext#getCurrentTexture} will be
     * compatible with.
@@ -33,9 +30,6 @@ trait GPUCanvasConfiguration extends StObject {
     * Must be one of the Supported context formats.
     */
   var format: GPUTextureFormat
-  
-  /** @deprecated use the canvas width/height instead */
-  var size: js.UndefOr[GPUExtent3D] = js.undefined
   
   /**
     * The usage that textures returned by {@link GPUCanvasContext#getCurrentTexture} will have.
@@ -70,17 +64,9 @@ object GPUCanvasConfiguration {
     
     inline def setColorSpaceUndefined: Self = StObject.set(x, "colorSpace", js.undefined)
     
-    inline def setCompositingAlphaMode(value: GPUCanvasCompositingAlphaMode): Self = StObject.set(x, "compositingAlphaMode", value.asInstanceOf[js.Any])
-    
-    inline def setCompositingAlphaModeUndefined: Self = StObject.set(x, "compositingAlphaMode", js.undefined)
-    
     inline def setDevice(value: GPUDevice): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
     
     inline def setFormat(value: GPUTextureFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
-    
-    inline def setSize(value: GPUExtent3D): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
-    
-    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
     inline def setUsage(value: GPUTextureUsageFlags): Self = StObject.set(x, "usage", value.asInstanceOf[js.Any])
     

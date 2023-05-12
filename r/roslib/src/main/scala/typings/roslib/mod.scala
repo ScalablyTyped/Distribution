@@ -53,7 +53,6 @@ object mod {
       *  * 'feedback' - The feedback messages received from the action server.
       *  * 'result' - The result returned from the action server.
       *
-      * @constructor
       * @param {Object} options
       * @param {Ros} options.ros - The ROSLIB.Ros connection handle.
       * @param {string} options.serverName - The action server name, like '/fibonacci'.
@@ -87,7 +86,6 @@ object mod {
       *  * 'feedback' - The feedback messages received from the action server.
       *  * 'result' - The result returned from the action server.
       *
-      * @constructor
       * @param {Object} options
       * @param {Ros} options.ros - The ROSLIB.Ros connection handle.
       * @param {string} options.serverName - The action server name, like '/fibonacci'.
@@ -105,7 +103,6 @@ object mod {
       * Emits the following events:
       *  * 'timeout' - If a timeout occurred while sending a goal.
       *
-      * @constructor
       * @param {Object} options
       * @param {ActionClient} options.actionClient - The ROSLIB.ActionClient to use with this goal.
       * @param {any} options.goalMessage - The JSON object containing the goal for the action server.
@@ -140,7 +137,6 @@ object mod {
     /**
       * Message objects are used for publishing and subscribing to and from topics.
       *
-      * @constructor
       * @param {any} values - An object matching the fields defined in the .msg definition file.
       */
     def this(values: Any) = this()
@@ -152,7 +148,6 @@ object mod {
     /**
       * A ROS parameter.
       *
-      * @constructor
       * @param {Object} options
       * @param {Ros} options.ros - The ROSLIB.Ros connection handle.
       * @param {string} options.name - The param name, like max_vel_x.
@@ -188,7 +183,6 @@ object mod {
   /**
     * A Pose in 3D space. Values are copied into this object.
     *
-    * @constructor
     * @param {Object} options
     * @param {Vector3Like} options.position - The ROSLIB.Vector3 describing the position.
     * @param {QuaternionLike} options.orientation - The ROSLIB.Quaternion describing the orientation.
@@ -227,7 +221,6 @@ object mod {
   /**
     * A Quaternion.
     *
-    * @constructor
     * @param {Object} options
     * @param {number} [options.x=0] - The x value.
     * @param {number} [options.y=0] - The y value.
@@ -295,7 +288,6 @@ object mod {
       *  * &#60;topicName&#62; - A message came from rosbridge with the given topic name.
       *  * &#60;serviceID&#62; - A service response came from rosbridge with the given ID.
       *
-      * @constructor
       * @param {Object} options
       * @param {string} [options.url] - The WebSocket URL for rosbridge or the node server URL to connect using socket.io (if socket.io exists in the page). Can be specified later with `connect`.
       * @param {boolean} [options.groovyCompatibility=true] - Don't use interfaces that changed after the last groovy release or rosbridge_suite and related tools.
@@ -636,7 +628,6 @@ object mod {
     /**
       * A ROS service client.
       *
-      * @constructor
       * @param {Object} options
       * @param {Ros} options.ros - The ROSLIB.Ros connection handle.
       * @param {string} options.name - The service name, like '/add_two_ints'.
@@ -692,7 +683,6 @@ object mod {
     /**
       * A ServiceRequest is passed into the service call.
       *
-      * @constructor
       * @param {any} values - Object matching the fields defined in the .srv definition file.
       */
     def this(values: Any) = this()
@@ -704,7 +694,6 @@ object mod {
     /**
       * A ServiceResponse is returned from the service call.
       *
-      * @constructor
       * @param {any} values - Object matching the fields defined in the .srv definition file.
       */
     def this(values: Any) = this()
@@ -720,7 +709,6 @@ object mod {
       *  * 'goal' - Goal sent by action client.
       *  * 'cancel' - Action client has canceled the request.
       *
-      * @constructor
       * @param {Object} options
       * @param {Ros} options.ros - The ROSLIB.Ros connection handle.
       * @param {string} options.serverName - The action server name, like '/fibonacci'.
@@ -761,7 +749,6 @@ object mod {
     /**
       * A TF Client that listens to TFs from tf2_web_republisher.
       *
-      * @constructor
       * @param {Object} options
       * @param {Ros} options.ros - The ROSLIB.Ros connection handle.
       * @param {string} [options.fixedFrame=base_link] - The fixed frame.
@@ -831,7 +818,6 @@ object mod {
       *  * 'warning' - If there are any warning during the Topic creation.
       *  * 'message' - The message data from rosbridge.
       *
-      * @constructor
       * @param {Object} options
       * @param {Ros} options.ros - The ROSLIB.Ros connection handle.
       * @param {string} options.name - The topic name, like '/cmd_vel'.
@@ -895,7 +881,6 @@ object mod {
   /**
     * A Transform in 3-space. Values are copied into this object.
     *
-    * @constructor
     * @param {Object} options
     * @param {Vector3Like} options.translation - The ROSLIB.Vector3 describing the translation.
     * @param {QuaternionLike} options.rotation - The ROSLIB.Quaternion describing the rotation.
@@ -933,7 +918,6 @@ object mod {
     /**
       * A Box element in a URDF.
       *
-      * @constructor
       * @param {Object} options
       * @param {Node} options.xml - The XML element to parse.
       */
@@ -950,7 +934,6 @@ object mod {
     /**
       * A Color element in a URDF.
       *
-      * @constructor
       * @param {Object} options
       * @param {Node} options.xml - The XML element to parse.
       */
@@ -973,7 +956,6 @@ object mod {
     /**
       * A Cylinder element in a URDF.
       *
-      * @constructor
       * @param {Object} options
       * @param {Node} options.xml - The XML element to parse.
       */
@@ -992,7 +974,6 @@ object mod {
     /**
       * A Joint element in a URDF.
       *
-      * @constructor
       * @param {Object} options
       * @param {Node} options.xml - The XML element to parse.
       */
@@ -1017,7 +998,6 @@ object mod {
     /**
       * A Link element in a URDF.
       *
-      * @constructor
       * @param {Object} options
       * @param {Node} options.xml - The XML element to parse.
       */
@@ -1034,7 +1014,6 @@ object mod {
     /**
       * A Material element in a URDF.
       *
-      * @constructor
       * @param {Object} options
       * @param {Node} options.xml - The XML element to parse.
       */
@@ -1059,7 +1038,6 @@ object mod {
     /**
       * A Box element in a URDF.
       *
-      * @constructor
       * @param {Object} options
       * @param {Node} options.xml - The XML element to parse.
       */
@@ -1078,7 +1056,6 @@ object mod {
     /**
       * A URDF Model can be used to parse a given URDF into the appropriate elements.
       *
-      * @constructor
       * @param {Object} options
       * @param {Node} options.xml - The XML element to parse.
       * @param {string} options.string - The XML element to parse as a string.
@@ -1101,7 +1078,6 @@ object mod {
     /**
       * A Sphere element in a URDF.
       *
-      * @constructor
       * @param {Object} options
       * @param {Node} options.xml - The XML element to parse.
       */
@@ -1118,7 +1094,6 @@ object mod {
     /**
       * A Visual element in a URDF.
       *
-      * @constructor
       * @param {Object} options
       * @param {Node} options.xml - The XML element to parse.
       */
@@ -1136,7 +1111,6 @@ object mod {
   /**
     * A 3D vector.
     *
-    * @constructor
     * @param {Object} options
     * @param {number} [options.x=0] - The x value.
     * @param {number} [options.y=0] - The y value.

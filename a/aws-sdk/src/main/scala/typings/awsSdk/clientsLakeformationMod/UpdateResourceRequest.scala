@@ -15,6 +15,11 @@ trait UpdateResourceRequest extends StObject {
     * The new role to use for the given resource registered in Lake Formation.
     */
   var RoleArn: IAMRoleArn
+  
+  /**
+    * Whether or not the resource is a federated resource.
+    */
+  var WithFederation: js.UndefOr[NullableBoolean] = js.undefined
 }
 object UpdateResourceRequest {
   
@@ -29,5 +34,9 @@ object UpdateResourceRequest {
     inline def setResourceArn(value: ResourceArnString): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
     
     inline def setRoleArn(value: IAMRoleArn): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
+    
+    inline def setWithFederation(value: NullableBoolean): Self = StObject.set(x, "WithFederation", value.asInstanceOf[js.Any])
+    
+    inline def setWithFederationUndefined: Self = StObject.set(x, "WithFederation", js.undefined)
   }
 }

@@ -2,7 +2,9 @@ package typings.fluentReact
 
 import typings.fluentBundle.esmBundleMod.FluentVariable
 import typings.fluentBundle.mod.FluentBundle
+import typings.fluentReact.anon.Attrs
 import typings.fluentReact.esmMarkupMod.MarkupParser
+import typings.react.mod.ReactElement
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -22,11 +24,14 @@ object esmLocalizationMod {
     
     def getBundle(id: String): FluentBundle | Null = js.native
     
+    def getElement(sourceElement: ReactElement, id: String): ReactElement = js.native
+    def getElement(sourceElement: ReactElement, id: String, args: Attrs): ReactElement = js.native
+    
     def getString(id: String): String = js.native
-    def getString(id: String, args: Null, fallback: String): String = js.native
-    def getString(id: String, args: Unit, fallback: String): String = js.native
-    def getString(id: String, args: Record[String, FluentVariable]): String = js.native
-    def getString(id: String, args: Record[String, FluentVariable], fallback: String): String = js.native
+    def getString(id: String, vars: Null, fallback: String): String = js.native
+    def getString(id: String, vars: Unit, fallback: String): String = js.native
+    def getString(id: String, vars: Record[String, FluentVariable]): String = js.native
+    def getString(id: String, vars: Record[String, FluentVariable], fallback: String): String = js.native
     
     var parseMarkup: MarkupParser | Null = js.native
     

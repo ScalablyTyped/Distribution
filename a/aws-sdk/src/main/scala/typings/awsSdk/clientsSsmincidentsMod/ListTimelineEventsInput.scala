@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListTimelineEventsInput extends StObject {
   
   /**
-    * Filters the timeline events based on the provided conditional values. You can filter timeline events using the following keys:    eventTime     eventType    Note the following when deciding how to use Filters:   If you don't specify a Filter, the response includes all timeline events.   If you specify more than one filter in a single request, the response returns timeline events that match all filters.   If you specify a filter with more than one value, the response returns timeline events that match any of the values provided.  
+    * Filters the timeline events based on the provided conditional values. You can filter timeline events with the following keys:    eventTime     eventType    Note the following when deciding how to use Filters:   If you don't specify a Filter, the response includes all timeline events.   If you specify more than one filter in a single request, the response returns timeline events that match all filters.   If you specify a filter with more than one value, the response returns timeline events that match any of the values provided.  
     */
   var filters: js.UndefOr[FilterList] = js.undefined
   
@@ -27,7 +27,7 @@ trait ListTimelineEventsInput extends StObject {
   var nextToken: js.UndefOr[NextToken] = js.undefined
   
   /**
-    * Sort by the specified key value pair.
+    * Sort timeline events by the specified key value pair.
     */
   var sortBy: js.UndefOr[TimelineEventSort] = js.undefined
   

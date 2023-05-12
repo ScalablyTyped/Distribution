@@ -99,6 +99,10 @@ object twilioVideoStrings {
   inline def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
+  sealed trait canvas extends StObject
+  inline def canvas: canvas = "canvas".asInstanceOf[canvas]
+  
+  @js.native
   sealed trait collaboration
     extends StObject
        with BandwidthProfileMode
@@ -210,6 +214,10 @@ object twilioVideoStrings {
   inline def message: message = "message".asInstanceOf[message]
   
   @js.native
+  sealed trait muted extends StObject
+  inline def muted: muted = "muted".asInstanceOf[muted]
+  
+  @js.native
   sealed trait networkQualityLevelChanged extends StObject
   inline def networkQualityLevelChanged: networkQualityLevelChanged = "networkQualityLevelChanged".asInstanceOf[networkQualityLevelChanged]
   
@@ -218,6 +226,10 @@ object twilioVideoStrings {
     extends StObject
        with LogLevel
   inline def off: off = "off".asInstanceOf[off]
+  
+  @js.native
+  sealed trait offscreencanvas extends StObject
+  inline def offscreencanvas: offscreencanvas = "offscreencanvas".asInstanceOf[offscreencanvas]
   
   @js.native
   sealed trait opus
@@ -396,6 +408,10 @@ object twilioVideoStrings {
   @js.native
   sealed trait trackWarningsCleared extends StObject
   inline def trackWarningsCleared: trackWarningsCleared = "trackWarningsCleared".asInstanceOf[trackWarningsCleared]
+  
+  @js.native
+  sealed trait unmuted extends StObject
+  inline def unmuted: unmuted = "unmuted".asInstanceOf[unmuted]
   
   @js.native
   sealed trait unsubscribed extends StObject

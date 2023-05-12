@@ -16,6 +16,20 @@ type IncrementObject = StringDictionary[Double]
   */
 type LocalizationsDict = StringDictionary[String]
 
+/**
+  * A function that will get called when user requested to capture a screenshot.
+  *
+  * @since 7.1
+  */
+type ScreenshotProvider = js.Function1[/* submitAsync */ ScreenshotSubmitter, Unit]
+
+/**
+  * A function that allows the game to submit a screenshot.
+  *
+  * @since 7.1
+  */
+type ScreenshotSubmitter = js.Function1[/* payload */ ScreenshotPayload, js.Promise[Unit]]
+
 type SignedPurchaseRequest = String
 
 type StatsObject = StringDictionary[Double]

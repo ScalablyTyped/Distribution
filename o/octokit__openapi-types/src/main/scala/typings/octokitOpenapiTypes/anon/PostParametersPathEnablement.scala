@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PostParametersPathEnablement extends StObject {
   
   /**
-    * Enables or disables the specified security feature for all repositories in an organization.
+    * Enable or disable a security feature for an organization
+    * @description Enables or disables the specified security feature for all eligible repositories in an organization.
     *
     * To use this endpoint, you must be an organization owner or be member of a team with the security manager role.
     * A token with the 'write:org' scope is also required.

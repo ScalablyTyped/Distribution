@@ -2,6 +2,7 @@ package typings.babylonjs.mod
 
 import typings.babylonjs.anon.Layers
 import typings.babylonjs.anon.Ratio
+import typings.babylonjs.materialsTexturesRenderTargetTextureMod.RenderTargetTextureOptions
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,21 +17,56 @@ open class RenderTargetTexture protected ()
     * or used a shadow, depth texture...
     * @param name The friendly name of the texture
     * @param size The size of the RTT (number if square, or {width: number, height:number} or {ratio:} to define a ratio from the main scene)
-    * @param scene The scene the RTT belongs to. The latest created scene will be used if not precised.
-    * @param generateMipMaps True if mip maps need to be generated after render.
-    * @param doNotChangeAspectRatio True to not change the aspect ratio of the scene in the RTT
-    * @param type The type of the buffer in the RTT (int, half float, float...)
-    * @param isCube True if a cube texture needs to be created
-    * @param samplingMode The sampling mode to be usedwith the render target (Linear, Nearest...)
-    * @param generateDepthBuffer True to generate a depth buffer
-    * @param generateStencilBuffer True to generate a stencil buffer
-    * @param isMulti True if multiple textures need to be created (Draw Buffers)
-    * @param format The internal format of the buffer in the RTT (RED, RG, RGB, RGBA, ALPHA...)
-    * @param delayAllocation if the texture allocation should be delayed (default: false)
-    * @param samples sample count to use when creating the RTT
-    * @param creationFlags specific flags to use when creating the texture (Constants.TEXTURE_CREATIONFLAG_STORAGE for storage textures, for eg)
-    * @param noColorTarget True to indicate that no color target should be created. Useful if you only want to write to the depth buffer, for eg
-    * @param useSRGBBuffer True to create a SRGB texture
+    * @param scene The scene the RTT belongs to. Default is the last created scene.
+    * @param options The options for creating the render target texture.
+    */
+  def this(name: String, size: Double) = this()
+  def this(name: String, size: Layers) = this()
+  def this(name: String, size: Ratio) = this()
+  def this(name: String, size: Double, scene: Nullable[typings.babylonjs.sceneMod.Scene]) = this()
+  def this(name: String, size: Layers, scene: Nullable[typings.babylonjs.sceneMod.Scene]) = this()
+  def this(name: String, size: Ratio, scene: Nullable[typings.babylonjs.sceneMod.Scene]) = this()
+  def this(name: String, size: Double, scene: Unit, options: RenderTargetTextureOptions) = this()
+  def this(
+    name: String,
+    size: Double,
+    scene: Nullable[typings.babylonjs.sceneMod.Scene],
+    options: RenderTargetTextureOptions
+  ) = this()
+  def this(name: String, size: Layers, scene: Unit, options: RenderTargetTextureOptions) = this()
+  def this(
+    name: String,
+    size: Layers,
+    scene: Nullable[typings.babylonjs.sceneMod.Scene],
+    options: RenderTargetTextureOptions
+  ) = this()
+  def this(name: String, size: Ratio, scene: Unit, options: RenderTargetTextureOptions) = this()
+  def this(
+    name: String,
+    size: Ratio,
+    scene: Nullable[typings.babylonjs.sceneMod.Scene],
+    options: RenderTargetTextureOptions
+  ) = this()
+  /**
+    * Instantiate a render target texture. This is mainly used to render of screen the scene to for instance apply post process
+    * or used a shadow, depth texture...
+    * @param name The friendly name of the texture
+    * @param size The size of the RTT (number if square, or {width: number, height:number} or {ratio:} to define a ratio from the main scene)
+    * @param scene The scene the RTT belongs to. Default is the last created scene
+    * @param generateMipMaps True (default: false) if mipmaps need to be generated after render
+    * @param doNotChangeAspectRatio True (default) to not change the aspect ratio of the scene in the RTT
+    * @param type The type of the buffer in the RTT (byte (default), half float, float...)
+    * @param isCube True (default: false) if a cube texture needs to be created
+    * @param samplingMode The sampling mode to be used with the render target (Trilinear (default), Linear, Nearest...)
+    * @param generateDepthBuffer True (default) to generate a depth buffer
+    * @param generateStencilBuffer True (default: false) to generate a stencil buffer
+    * @param isMulti True (default: false) if multiple textures need to be created (Draw Buffers)
+    * @param format The internal format of the buffer in the RTT (RED, RG, RGB, RGBA (default), ALPHA...)
+    * @param delayAllocation True (default: false) if the texture allocation should be delayed
+    * @param samples Sample count to use when creating the RTT
+    * @param creationFlags specific flags to use when creating the texture (e.g., Constants.TEXTURE_CREATIONFLAG_STORAGE for storage textures)
+    * @param noColorAttachment True (default: false) to indicate that no color target should be created. (e.g., if you only want to write to the depth buffer)
+    * @param useSRGBBuffer True (default: false) to create a SRGB texture
     */
   def this(
     name: String,
@@ -48,7 +84,7 @@ open class RenderTargetTexture protected ()
     delayAllocation: js.UndefOr[Boolean],
     samples: js.UndefOr[Double],
     creationFlags: js.UndefOr[Double],
-    noColorTarget: js.UndefOr[Boolean],
+    noColorAttachment: js.UndefOr[Boolean],
     useSRGBBuffer: js.UndefOr[Boolean]
   ) = this()
 }

@@ -39,20 +39,17 @@ inline def auth: Auth = ^.asInstanceOf[js.Dynamic].selectDynamic("auth").asInsta
   *
   * **Support details**
   *
-  * A capital Y in the following matrix indicates that this object is supported in the corresponding Office application.
-  * An empty cell indicates that the Office application doesn't support this object.
-  *
   * For more information about Office application and server requirements, see
   * {@link https://learn.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
   *
   * *Supported applications, by platform*
   *  <table>
   *   <tr><th>                             </th><th> Office on Windows </th><th> Office in web browser </th><th> Office on iPad </th><th> Outlook on mobile devices </th><th> Office on Mac </th></tr>
-  *   <tr><td><strong> Excel      </strong></td><td> Y                 </td><td> Y                     </td><td> Y              </td><td>                           </td><td> Y             </td></tr>
-  *   <tr><td><strong> Outlook    </strong></td><td> Y                 </td><td> Y                     </td><td>                </td><td> Y                         </td><td> Y             </td></tr>
-  *   <tr><td><strong> PowerPoint </strong></td><td> Y                 </td><td> Y                     </td><td> Y              </td><td>                           </td><td> Y             </td></tr>
-  *   <tr><td><strong> Project    </strong></td><td> Y                 </td><td>                       </td><td>                </td><td>                           </td><td> Y             </td></tr>
-  *   <tr><td><strong> Word       </strong></td><td> Y                 </td><td> Y                     </td><td> Y              </td><td>                           </td><td> Y             </td></tr>
+  *   <tr><td><strong> Excel      </strong></td><td> Supported         </td><td> Supported             </td><td> Supported      </td><td>                           </td><td> Supported     </td></tr>
+  *   <tr><td><strong> Outlook    </strong></td><td> Supported         </td><td> Supported             </td><td>                </td><td> Supported                 </td><td> Supported     </td></tr>
+  *   <tr><td><strong> PowerPoint </strong></td><td> Supported         </td><td> Supported             </td><td> Supported      </td><td>                           </td><td> Supported     </td></tr>
+  *   <tr><td><strong> Project    </strong></td><td> Supported         </td><td>                       </td><td>                </td><td>                           </td><td> Supported     </td></tr>
+  *   <tr><td><strong> Word       </strong></td><td> Supported         </td><td> Supported             </td><td> Supported      </td><td>                           </td><td> Supported     </td></tr>
   *  </table>
   */
 inline def context: Context = ^.asInstanceOf[js.Dynamic].selectDynamic("context").asInstanceOf[Context]
@@ -76,20 +73,17 @@ inline def context_=(x: Context): Unit = ^.asInstanceOf[js.Dynamic].updateDynami
   *
   * **Support details**
   *
-  * A capital Y in the following matrix indicates that this function is supported in the corresponding Office application.
-  * An empty cell indicates that the Office application doesn't support this function.
-  *
   * For more information about Office application and server requirements, see
   * {@link https://learn.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
   *
   * *Supported applications, by platform*
   *  <table>
   *   <tr><th>                             </th><th> Office on Windows </th><th> Office in web browser </th><th> Office on iPad </th><th> Outlook on mobile devices </th><th> Office on Mac </th></tr>
-  *   <tr><td><strong> Excel      </strong></td><td> Y                 </td><td> Y                     </td><td> Y              </td><td>                           </td><td> Y             </td></tr>
-  *   <tr><td><strong> Outlook    </strong></td><td> Y                 </td><td> Y                     </td><td>                </td><td> Y                         </td><td> Y             </td></tr>
-  *   <tr><td><strong> PowerPoint </strong></td><td> Y                 </td><td> Y                     </td><td> Y              </td><td>                           </td><td> Y             </td></tr>
-  *   <tr><td><strong> Project    </strong></td><td> Y                 </td><td>                       </td><td>                </td><td>                           </td><td> Y             </td></tr>
-  *   <tr><td><strong> Word       </strong></td><td> Y                 </td><td> Y                     </td><td> Y              </td><td>                           </td><td> Y             </td></tr>
+  *   <tr><td><strong> Excel      </strong></td><td> Supported         </td><td> Supported             </td><td> Supported      </td><td>                           </td><td> Supported     </td></tr>
+  *   <tr><td><strong> Outlook    </strong></td><td> Supported         </td><td> Supported             </td><td>                </td><td> Supported                 </td><td> Supported     </td></tr>
+  *   <tr><td><strong> PowerPoint </strong></td><td> Supported         </td><td> Supported             </td><td> Supported      </td><td>                           </td><td> Supported     </td></tr>
+  *   <tr><td><strong> Project    </strong></td><td> Supported         </td><td>                       </td><td>                </td><td>                           </td><td> Supported     </td></tr>
+  *   <tr><td><strong> Word       </strong></td><td> Supported         </td><td> Supported             </td><td> Supported      </td><td>                           </td><td> Supported     </td></tr>
   *  </table>
   *
   * @param reason Indicates how the app was initialized.
@@ -132,17 +126,14 @@ inline def ribbon: Ribbon = ^.asInstanceOf[js.Dynamic].selectDynamic("ribbon").a
   *
   * **Support details**
   *
-  * A capital Y in the following matrix indicates that this function is supported in the corresponding Office application.
-  * An empty cell indicates that the Office application doesn't support this function.
-  *
   * For more information about Office application and server requirements, see
   * {@link https://learn.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
   *
   * *Supported applications, by platform*
   *  <table>
   *   <tr><th>                         </th><th> Office on Windows </th><th> Office in web browser </th><th> Office on iPad </th></tr>
-  *   <tr><td><strong> Excel  </strong></td><td> Y                 </td><td> Y                     </td><td> Y              </td></tr>
-  *   <tr><td><strong> Word   </strong></td><td> Y                 </td><td>                       </td><td> Y              </td></tr>
+  *   <tr><td><strong> Excel  </strong></td><td> Supported         </td><td> Supported             </td><td> Supported      </td></tr>
+  *   <tr><td><strong> Word   </strong></td><td> Supported         </td><td>                       </td><td> Supported      </td></tr>
   *  </table>
   */
 inline def select(expression: String): Binding = ^.asInstanceOf[js.Dynamic].applyDynamic("select")(expression.asInstanceOf[js.Any]).asInstanceOf[Binding]
@@ -155,20 +146,17 @@ inline def select(expression: String, callback: js.Function1[/* result */ AsyncR
   *
   * **Support details**
   *
-  * A capital Y in the following matrix indicates that this function is supported in the corresponding Office application.
-  * An empty cell indicates that the Office application doesn't support this function.
-  *
   * For more information about Office application and server requirements, see
   * {@link https://learn.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
   *
   * *Supported applications, by platform*
   *  <table>
   *   <tr><th>                             </th><th> Office on Windows </th><th> Office in web browser </th><th> Office on iPad </th><th> Outlook on mobile devices </th><th> Office on Mac </th></tr>
-  *   <tr><td><strong> Excel      </strong></td><td> Y                 </td><td> Y                     </td><td> Y              </td><td>                           </td><td>               </td></tr>
-  *   <tr><td><strong> Outlook    </strong></td><td> Y                 </td><td> Y                     </td><td>                </td><td> Y                         </td><td> Y             </td></tr>
-  *   <tr><td><strong> PowerPoint </strong></td><td> Y                 </td><td> Y                     </td><td> Y              </td><td>                           </td><td>               </td></tr>
-  *   <tr><td><strong> Project    </strong></td><td> Y                 </td><td>                       </td><td>                </td><td>                           </td><td>               </td></tr>
-  *   <tr><td><strong> Word       </strong></td><td> Y                 </td><td> Y                     </td><td> Y              </td><td>                           </td><td>               </td></tr>
+  *   <tr><td><strong> Excel      </strong></td><td> Supported         </td><td> Supported             </td><td> Supported      </td><td>                           </td><td>               </td></tr>
+  *   <tr><td><strong> Outlook    </strong></td><td> Supported         </td><td> Supported             </td><td>                </td><td> Supported                 </td><td> Supported     </td></tr>
+  *   <tr><td><strong> PowerPoint </strong></td><td> Supported         </td><td> Supported             </td><td> Supported      </td><td>                           </td><td>               </td></tr>
+  *   <tr><td><strong> Project    </strong></td><td> Supported         </td><td>                       </td><td>                </td><td>                           </td><td>               </td></tr>
+  *   <tr><td><strong> Word       </strong></td><td> Supported         </td><td> Supported             </td><td> Supported      </td><td>                           </td><td>               </td></tr>
   *  </table>
   *
   * @param useShortNamespace True to use the shortcut alias; otherwise false to disable it. The default is true.

@@ -17,7 +17,7 @@ trait MedicalTranscriptionSetting extends StObject {
   var MaxAlternatives: js.UndefOr[typings.awsSdk.clientsTranscribeserviceMod.MaxAlternatives] = js.undefined
   
   /**
-    * Specify the maximum number of speakers you want to identify in your media. Note that if your media contains more speakers than the specified number, multiple speakers will be identified as a single speaker. If you specify the MaxSpeakerLabels field, you must set the ShowSpeakerLabels field to true.
+    * Specify the maximum number of speakers you want to partition in your media. Note that if your media contains more speakers than the specified number, multiple speakers are treated as a single speaker. If you specify the MaxSpeakerLabels field, you must set the ShowSpeakerLabels field to true.
     */
   var MaxSpeakerLabels: js.UndefOr[MaxSpeakers] = js.undefined
   
@@ -27,12 +27,12 @@ trait MedicalTranscriptionSetting extends StObject {
   var ShowAlternatives: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Enables speaker identification (diarization) in your transcription output. Speaker identification labels the speech from individual speakers in your media file. If you enable ShowSpeakerLabels in your request, you must also include MaxSpeakerLabels. You can't include both ShowSpeakerLabels and ChannelIdentification in the same request. Including both parameters returns a BadRequestException. For more information, see Identifying speakers (diarization).
+    * Enables speaker partitioning (diarization) in your transcription output. Speaker partitioning labels the speech from individual speakers in your media file. If you enable ShowSpeakerLabels in your request, you must also include MaxSpeakerLabels. You can't include ShowSpeakerLabels and ChannelIdentification in the same request. Including both parameters returns a BadRequestException. For more information, see Partitioning speakers (diarization).
     */
   var ShowSpeakerLabels: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The name of the custom vocabulary you want to use when processing your medical transcription job. Vocabulary names are case sensitive. The language of the specified vocabulary must match the language code you specify in your transcription request. If the languages don't match, the vocabulary isn't applied. There are no errors or warnings associated with a language mismatch. US English (en-US) is the only valid language for Amazon Transcribe Medical.
+    * The name of the custom vocabulary you want to use when processing your medical transcription job. Custom vocabulary names are case sensitive. The language of the specified custom vocabulary must match the language code that you specify in your transcription request. If the languages don't match, the custom vocabulary isn't applied. There are no errors or warnings associated with a language mismatch. US English (en-US) is the only valid language for Amazon Transcribe Medical.
     */
   var VocabularyName: js.UndefOr[typings.awsSdk.clientsTranscribeserviceMod.VocabularyName] = js.undefined
 }

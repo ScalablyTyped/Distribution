@@ -31,7 +31,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * event.
   * @example
   * // attach keyboard listeners to the window
-  * var keyboard = new pc.Keyboard(window);
+  * const keyboard = new pc.Keyboard(window);
   */
 open class Keyboard ()
   extends typings.playcanvas.mod.Keyboard {

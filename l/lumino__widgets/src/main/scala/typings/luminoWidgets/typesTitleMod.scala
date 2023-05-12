@@ -52,15 +52,16 @@ object typesTitleMod {
       * #### Notes
       * The default value is an empty string.
       */
+    def caption: String = js.native
     /**
       * Set the caption for the title.
       */
-    var caption: String = js.native
+    def caption_=(value: String): Unit = js.native
     
     /**
       * A signal emitted when the state of the title changes.
       */
-    val changed: ISignal[this.type, Unit] = js.native
+    def changed: ISignal[this.type, Unit] = js.native
     
     /**
       * Get the extra class name for the title.
@@ -68,13 +69,14 @@ object typesTitleMod {
       * #### Notes
       * The default value is an empty string.
       */
+    def className: String = js.native
     /**
       * Set the extra class name for the title.
       *
       * #### Notes
       * Multiple class names can be separated with whitespace.
       */
-    var className: String = js.native
+    def className_=(value: String): Unit = js.native
     
     /**
       * Get the closable state for the title.
@@ -82,13 +84,14 @@ object typesTitleMod {
       * #### Notes
       * The default value is `false`.
       */
+    def closable: Boolean = js.native
     /**
       * Set the closable state for the title.
       *
       * #### Notes
       * This controls the presence of a close icon when applicable.
       */
-    var closable: Boolean = js.native
+    def closable_=(value: Boolean): Unit = js.native
     
     /**
       * Get the dataset for the title.
@@ -96,13 +99,14 @@ object typesTitleMod {
       * #### Notes
       * The default value is an empty dataset.
       */
+    def dataset: Dataset = js.native
     /**
       * Set the dataset for the title.
       *
       * #### Notes
       * This controls the data attributes when applicable.
       */
-    var dataset: Dataset = js.native
+    def dataset_=(value: Dataset): Unit = js.native
     
     /**
       * Dispose of the resources held by the object.
@@ -123,20 +127,8 @@ object typesTitleMod {
       *
       * #### Notes
       * The default value is undefined.
-      *
-      * DEPRECATED: if set to a string value, the .icon field will function as
-      * an alias for the .iconClass field, for backwards compatibility
       */
-    /**
-      * Set the icon renderer for the title.
-      *
-      * #### Notes
-      * A renderer is an object that supplies a render and unrender function.
-      *
-      * DEPRECATED: if set to a string value, the .icon field will function as
-      * an alias for the .iconClass field, for backwards compatibility
-      */
-    var icon: js.UndefOr[IRenderer | String] = js.native
+    def icon: js.UndefOr[IRenderer] = js.native
     
     /**
       * Get the icon class name for the title.
@@ -144,13 +136,14 @@ object typesTitleMod {
       * #### Notes
       * The default value is an empty string.
       */
+    def iconClass: String = js.native
     /**
       * Set the icon class name for the title.
       *
       * #### Notes
       * Multiple class names can be separated with whitespace.
       */
-    var iconClass: String = js.native
+    def iconClass_=(value: String): Unit = js.native
     
     /**
       * Get the icon label for the title.
@@ -158,21 +151,22 @@ object typesTitleMod {
       * #### Notes
       * The default value is an empty string.
       */
+    def iconLabel: String = js.native
     /**
       * Set the icon label for the title.
       *
       * #### Notes
       * Multiple class names can be separated with whitespace.
       */
-    var iconLabel: String = js.native
+    def iconLabel_=(value: String): Unit = js.native
     
     /**
-      * @deprecated Use `icon` instead.
+      * Set the icon renderer for the title.
+      *
+      * #### Notes
+      * A renderer is an object that supplies a render and unrender function.
       */
-    /**
-      * @deprecated Use `icon` instead.
-      */
-    var iconRenderer: js.UndefOr[IRenderer] = js.native
+    def icon_=(value: js.UndefOr[IRenderer]): Unit = js.native
     
     /**
       * Test whether the object has been disposed.
@@ -182,6 +176,11 @@ object typesTitleMod {
       */
     /* CompleteClass */
     override val isDisposed: Boolean = js.native
+    /**
+      * Test whether the title has been disposed.
+      */
+    @JSName("isDisposed")
+    def isDisposed_MTitle: Boolean = js.native
     
     /**
       * Get the label for the title.
@@ -189,10 +188,11 @@ object typesTitleMod {
       * #### Notes
       * The default value is an empty string.
       */
+    def label: String = js.native
     /**
       * Set the label for the title.
       */
-    var label: String = js.native
+    def label_=(value: String): Unit = js.native
     
     /**
       * Get the mnemonic index for the title.
@@ -200,10 +200,11 @@ object typesTitleMod {
       * #### Notes
       * The default value is `-1`.
       */
+    def mnemonic: Double = js.native
     /**
       * Set the mnemonic index for the title.
       */
-    var mnemonic: Double = js.native
+    def mnemonic_=(value: Double): Unit = js.native
     
     /**
       * The object which owns the title.
@@ -244,11 +245,8 @@ object typesTitleMod {
       
       /**
         * The icon renderer for the title.
-        *
-        * DEPRECATED: if set to a string value, the .icon field will function as
-        * an alias for the .iconClass field, for backwards compatibility
         */
-      var icon: js.UndefOr[IRenderer | String] = js.undefined
+      var icon: js.UndefOr[IRenderer] = js.undefined
       
       /**
         * The icon class name for the title.
@@ -259,11 +257,6 @@ object typesTitleMod {
         * The icon label for the title.
         */
       var iconLabel: js.UndefOr[String] = js.undefined
-      
-      /**
-        * @deprecated Use `icon` instead.
-        */
-      var iconRenderer: js.UndefOr[IRenderer] = js.undefined
       
       /**
         * The label for the title.
@@ -306,7 +299,7 @@ object typesTitleMod {
         
         inline def setDatasetUndefined: Self = StObject.set(x, "dataset", js.undefined)
         
-        inline def setIcon(value: IRenderer | String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+        inline def setIcon(value: IRenderer): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
         
         inline def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
         
@@ -315,10 +308,6 @@ object typesTitleMod {
         inline def setIconLabel(value: String): Self = StObject.set(x, "iconLabel", value.asInstanceOf[js.Any])
         
         inline def setIconLabelUndefined: Self = StObject.set(x, "iconLabel", js.undefined)
-        
-        inline def setIconRenderer(value: IRenderer): Self = StObject.set(x, "iconRenderer", value.asInstanceOf[js.Any])
-        
-        inline def setIconRendererUndefined: Self = StObject.set(x, "iconRenderer", js.undefined)
         
         inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
         

@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Progress[T] extends StObject {
   
   /**
-    * Report a progress update.
-    * @param value A progress item, like a message and/or an
-    * report on how much work finished
-    */
+  		 * Report a progress update.
+  		 * @param value A progress item, like a message and/or an
+  		 * report on how much work finished
+  		 */
   def report(value: T): Unit
 }
 object Progress {

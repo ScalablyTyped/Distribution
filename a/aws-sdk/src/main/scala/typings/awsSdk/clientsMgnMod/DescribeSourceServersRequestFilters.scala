@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeSourceServersRequestFilters extends StObject {
   
   /**
+    * Request to filter Source Servers list by application IDs.
+    */
+  var applicationIDs: js.UndefOr[DescribeSourceServersRequestApplicationIDs] = js.undefined
+  
+  /**
     * Request to filter Source Servers list by archived.
     */
   var isArchived: js.UndefOr[Boolean] = js.undefined
@@ -35,6 +40,12 @@ object DescribeSourceServersRequestFilters {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: DescribeSourceServersRequestFilters] (val x: Self) extends AnyVal {
+    
+    inline def setApplicationIDs(value: DescribeSourceServersRequestApplicationIDs): Self = StObject.set(x, "applicationIDs", value.asInstanceOf[js.Any])
+    
+    inline def setApplicationIDsUndefined: Self = StObject.set(x, "applicationIDs", js.undefined)
+    
+    inline def setApplicationIDsVarargs(value: ApplicationID*): Self = StObject.set(x, "applicationIDs", js.Array(value*))
     
     inline def setIsArchived(value: Boolean): Self = StObject.set(x, "isArchived", value.asInstanceOf[js.Any])
     

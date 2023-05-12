@@ -37,9 +37,11 @@ trait PartialConcurrentlyOptionAdditionalArguments extends StObject {
   
   var killOthers: js.UndefOr[ProcessCloseCondition | js.Array[ProcessCloseCondition]] = js.undefined
   
+  var killSignal: js.UndefOr[String] = js.undefined
+  
   var logger: js.UndefOr[typings.concurrently.distSrcLoggerMod.Logger] = js.undefined
   
-  var maxProcesses: js.UndefOr[Double] = js.undefined
+  var maxProcesses: js.UndefOr[Double | String] = js.undefined
   
   var outputStream: js.UndefOr[Writable] = js.undefined
   
@@ -121,13 +123,17 @@ object PartialConcurrentlyOptionAdditionalArguments {
     
     inline def setKillOthersVarargs(value: ProcessCloseCondition*): Self = StObject.set(x, "killOthers", js.Array(value*))
     
+    inline def setKillSignal(value: String): Self = StObject.set(x, "killSignal", value.asInstanceOf[js.Any])
+    
+    inline def setKillSignalUndefined: Self = StObject.set(x, "killSignal", js.undefined)
+    
     inline def setKillUndefined: Self = StObject.set(x, "kill", js.undefined)
     
     inline def setLogger(value: typings.concurrently.distSrcLoggerMod.Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
     
     inline def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
     
-    inline def setMaxProcesses(value: Double): Self = StObject.set(x, "maxProcesses", value.asInstanceOf[js.Any])
+    inline def setMaxProcesses(value: Double | String): Self = StObject.set(x, "maxProcesses", value.asInstanceOf[js.Any])
     
     inline def setMaxProcessesUndefined: Self = StObject.set(x, "maxProcesses", js.undefined)
     

@@ -5,6 +5,7 @@ import typings.azureMsalBrowser.distInteractionHandlerInteractionHandlerMod.Inte
 import typings.azureMsalBrowser.distNavigationInavigationclientMod.INavigationClient
 import typings.azureMsalCommon.distCryptoIcryptoMod.ICrypto
 import typings.azureMsalCommon.distRequestCommonAuthorizationCodeRequestMod.CommonAuthorizationCodeRequest
+import typings.azureMsalCommon.distTelemetryPerformanceIperformanceclientMod.IPerformanceClient
 import typings.azureMsalCommon.mod.AuthorizationCodeClient
 import typings.azureMsalCommon.mod.Logger
 import org.scalablytyped.runtime.StObject
@@ -21,7 +22,8 @@ object distInteractionHandlerRedirectHandlerMod {
       storageImpl: BrowserCacheManager,
       authCodeRequest: CommonAuthorizationCodeRequest,
       logger: Logger,
-      browserCrypto: ICrypto
+      browserCrypto: ICrypto,
+      performanceClient: IPerformanceClient
     ) = this()
     
     /* private */ var browserCrypto: Any = js.native

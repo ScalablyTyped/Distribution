@@ -31,7 +31,7 @@ trait SubstanceDefinitionCode
   var status: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
-    * The date at which the code status is changed as part of the terminology maintenance.
+    * The date at which the code status was changed as part of the terminology maintenance.
     */
   var statusDate: js.UndefOr[String] = js.undefined
 }

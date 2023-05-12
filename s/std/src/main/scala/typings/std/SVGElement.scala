@@ -9,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SVGElement
   extends StObject
      with Element
-     with DocumentAndElementEventHandlers
      with ElementCSSInlineStyle
      with GlobalEventHandlers
      with HTMLOrSVGElement {

@@ -4,10 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Available only in the v=beta channel: https://goo.gle/3oAthT3.
-  * Filtering options for tasks in the Delivery Vehicle Location Provider.
-  */
 trait FleetEngineTaskFilterOptions extends StObject {
   
   /**

@@ -7,23 +7,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OnEnterRule extends StObject {
   
   /**
-    * The action to execute.
-    */
+  		 * The action to execute.
+  		 */
   var action: EnterAction
   
   /**
-    * This rule will only execute if the text after the cursor matches this regular expression.
-    */
+  		 * This rule will only execute if the text after the cursor matches this regular expression.
+  		 */
   var afterText: js.UndefOr[js.RegExp] = js.undefined
   
   /**
-    * This rule will only execute if the text before the cursor matches this regular expression.
-    */
+  		 * This rule will only execute if the text before the cursor matches this regular expression.
+  		 */
   var beforeText: js.RegExp
   
   /**
-    * This rule will only execute if the text above the current line matches this regular expression.
-    */
+  		 * This rule will only execute if the text above the current line matches this regular expression.
+  		 */
   var previousLineText: js.UndefOr[js.RegExp] = js.undefined
 }
 object OnEnterRule {

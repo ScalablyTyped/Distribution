@@ -1,8 +1,8 @@
 package typings.firefoxWebextBrowser.browser.manifest
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.firefoxWebextBrowser.anon.Extensionids
 import typings.firefoxWebextBrowser.anon.Extensionpages
-import typings.firefoxWebextBrowser.anon.Matches
 import typings.firefoxWebextBrowser.anon.Page
 import typings.firefoxWebextBrowser.anon.Persistent
 import typings.firefoxWebextBrowser.anon.Serviceworker
@@ -17,7 +17,11 @@ trait WebExtensionManifest extends StObject {
   /** Needs at least manifest version 3. */
   var action: js.UndefOr[ActionManifest] = js.undefined
   
-  var applications: js.UndefOr[WebExtensionManifestApplications] = js.undefined
+  /**
+    * The applications property is deprecated, please use 'browser_specific_settings'
+    * Not supported on manifest versions above 2.
+    */
+  var applications: js.UndefOr[BrowserSpecificSettings] = js.undefined
   
   var author: js.UndefOr[String] = js.undefined
   
@@ -26,7 +30,7 @@ trait WebExtensionManifest extends StObject {
   /** Not supported on manifest versions above 2. */
   var browser_action: js.UndefOr[ActionManifest] = js.undefined
   
-  var browser_specific_settings: js.UndefOr[WebExtensionManifestBrowserSpecificSettings] = js.undefined
+  var browser_specific_settings: js.UndefOr[BrowserSpecificSettings] = js.undefined
   
   var chrome_settings_overrides: js.UndefOr[WebExtensionManifestChromeSettingsOverrides] = js.undefined
   
@@ -38,6 +42,9 @@ trait WebExtensionManifest extends StObject {
   
   var content_security_policy: js.UndefOr[String | Extensionpages] = js.undefined
   
+  /** Needs at least manifest version 3. */
+  var declarative_net_request: js.UndefOr[WebExtensionManifestDeclarativeNetRequest] = js.undefined
+  
   var default_locale: js.UndefOr[String] = js.undefined
   
   var description: js.UndefOr[String] = js.undefined
@@ -47,6 +54,8 @@ trait WebExtensionManifest extends StObject {
   var devtools_page: js.UndefOr[ExtensionURL] = js.undefined
   
   var experiment_apis: js.UndefOr[StringDictionary[ExperimentAPI]] = js.undefined
+  
+  var granted_host_permissions: js.UndefOr[Boolean] = js.undefined
   
   var hidden: js.UndefOr[Boolean] = js.undefined
   
@@ -58,6 +67,8 @@ trait WebExtensionManifest extends StObject {
   var icons: js.UndefOr[WebExtensionManifestIcons] = js.undefined
   
   var incognito: js.UndefOr[WebExtensionManifestIncognito] = js.undefined
+  
+  var install_origins: js.UndefOr[js.Array[String]] = js.undefined
   
   var l10n_resources: js.UndefOr[js.Array[String]] = js.undefined
   
@@ -90,11 +101,12 @@ trait WebExtensionManifest extends StObject {
   
   var theme_experiment: js.UndefOr[ThemeExperiment] = js.undefined
   
+  /** Not supported on manifest versions above 2. */
   var user_scripts: js.UndefOr[WebExtensionManifestUserScripts] = js.undefined
   
   var version: String
   
-  var web_accessible_resources: js.UndefOr[js.Array[Matches | String]] = js.undefined
+  var web_accessible_resources: js.UndefOr[js.Array[Extensionids | String]] = js.undefined
 }
 object WebExtensionManifest {
   
@@ -110,7 +122,7 @@ object WebExtensionManifest {
     
     inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
-    inline def setApplications(value: WebExtensionManifestApplications): Self = StObject.set(x, "applications", value.asInstanceOf[js.Any])
+    inline def setApplications(value: BrowserSpecificSettings): Self = StObject.set(x, "applications", value.asInstanceOf[js.Any])
     
     inline def setApplicationsUndefined: Self = StObject.set(x, "applications", js.undefined)
     
@@ -126,7 +138,7 @@ object WebExtensionManifest {
     
     inline def setBrowser_actionUndefined: Self = StObject.set(x, "browser_action", js.undefined)
     
-    inline def setBrowser_specific_settings(value: WebExtensionManifestBrowserSpecificSettings): Self = StObject.set(x, "browser_specific_settings", value.asInstanceOf[js.Any])
+    inline def setBrowser_specific_settings(value: BrowserSpecificSettings): Self = StObject.set(x, "browser_specific_settings", value.asInstanceOf[js.Any])
     
     inline def setBrowser_specific_settingsUndefined: Self = StObject.set(x, "browser_specific_settings", js.undefined)
     
@@ -152,6 +164,10 @@ object WebExtensionManifest {
     
     inline def setContent_security_policyUndefined: Self = StObject.set(x, "content_security_policy", js.undefined)
     
+    inline def setDeclarative_net_request(value: WebExtensionManifestDeclarativeNetRequest): Self = StObject.set(x, "declarative_net_request", value.asInstanceOf[js.Any])
+    
+    inline def setDeclarative_net_requestUndefined: Self = StObject.set(x, "declarative_net_request", js.undefined)
+    
     inline def setDefault_locale(value: String): Self = StObject.set(x, "default_locale", value.asInstanceOf[js.Any])
     
     inline def setDefault_localeUndefined: Self = StObject.set(x, "default_locale", js.undefined)
@@ -171,6 +187,10 @@ object WebExtensionManifest {
     inline def setExperiment_apis(value: StringDictionary[ExperimentAPI]): Self = StObject.set(x, "experiment_apis", value.asInstanceOf[js.Any])
     
     inline def setExperiment_apisUndefined: Self = StObject.set(x, "experiment_apis", js.undefined)
+    
+    inline def setGranted_host_permissions(value: Boolean): Self = StObject.set(x, "granted_host_permissions", value.asInstanceOf[js.Any])
+    
+    inline def setGranted_host_permissionsUndefined: Self = StObject.set(x, "granted_host_permissions", js.undefined)
     
     inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     
@@ -193,6 +213,12 @@ object WebExtensionManifest {
     inline def setIncognito(value: WebExtensionManifestIncognito): Self = StObject.set(x, "incognito", value.asInstanceOf[js.Any])
     
     inline def setIncognitoUndefined: Self = StObject.set(x, "incognito", js.undefined)
+    
+    inline def setInstall_origins(value: js.Array[String]): Self = StObject.set(x, "install_origins", value.asInstanceOf[js.Any])
+    
+    inline def setInstall_originsUndefined: Self = StObject.set(x, "install_origins", js.undefined)
+    
+    inline def setInstall_originsVarargs(value: String*): Self = StObject.set(x, "install_origins", js.Array(value*))
     
     inline def setL10n_resources(value: js.Array[String]): Self = StObject.set(x, "l10n_resources", value.asInstanceOf[js.Any])
     
@@ -264,10 +290,10 @@ object WebExtensionManifest {
     
     inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    inline def setWeb_accessible_resources(value: js.Array[Matches | String]): Self = StObject.set(x, "web_accessible_resources", value.asInstanceOf[js.Any])
+    inline def setWeb_accessible_resources(value: js.Array[Extensionids | String]): Self = StObject.set(x, "web_accessible_resources", value.asInstanceOf[js.Any])
     
     inline def setWeb_accessible_resourcesUndefined: Self = StObject.set(x, "web_accessible_resources", js.undefined)
     
-    inline def setWeb_accessible_resourcesVarargs(value: (Matches | String)*): Self = StObject.set(x, "web_accessible_resources", js.Array(value*))
+    inline def setWeb_accessible_resourcesVarargs(value: (Extensionids | String)*): Self = StObject.set(x, "web_accessible_resources", js.Array(value*))
   }
 }

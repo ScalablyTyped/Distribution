@@ -1,5 +1,6 @@
 package typings.tabulatorTables.mod
 
+import typings.std.HTMLElement
 import typings.tabulatorTables.tabulatorTablesStrings.array
 import typings.tabulatorTables.tabulatorTablesStrings.form
 import typings.tabulatorTables.tabulatorTablesStrings.json
@@ -73,7 +74,9 @@ trait OptionsData extends StObject {
   
   var dataLoaderError: js.UndefOr[String] = js.undefined
   
-  var dataLoaderLoading: js.UndefOr[String] = js.undefined
+  var dataLoaderErrorTimeout: js.UndefOr[Double] = js.undefined
+  
+  var dataLoaderLoading: js.UndefOr[String | HTMLElement] = js.undefined
   
   var filterMode: js.UndefOr[SortMode] = js.undefined
   
@@ -179,9 +182,13 @@ object OptionsData {
     
     inline def setDataLoaderError(value: String): Self = StObject.set(x, "dataLoaderError", value.asInstanceOf[js.Any])
     
+    inline def setDataLoaderErrorTimeout(value: Double): Self = StObject.set(x, "dataLoaderErrorTimeout", value.asInstanceOf[js.Any])
+    
+    inline def setDataLoaderErrorTimeoutUndefined: Self = StObject.set(x, "dataLoaderErrorTimeout", js.undefined)
+    
     inline def setDataLoaderErrorUndefined: Self = StObject.set(x, "dataLoaderError", js.undefined)
     
-    inline def setDataLoaderLoading(value: String): Self = StObject.set(x, "dataLoaderLoading", value.asInstanceOf[js.Any])
+    inline def setDataLoaderLoading(value: String | HTMLElement): Self = StObject.set(x, "dataLoaderLoading", value.asInstanceOf[js.Any])
     
     inline def setDataLoaderLoadingUndefined: Self = StObject.set(x, "dataLoaderLoading", js.undefined)
     

@@ -4,18 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** @typedef {import('../framework/handlers/handler.js').ResourceHandler} ResourceHandler */
-/** @typedef {import('../platform/graphics/graphics-device.js').GraphicsDevice} GraphicsDevice */
-/** @typedef {import('./input/element-input.js').ElementInput} ElementInput */
-/** @typedef {import('../platform/input/game-pads.js').GamePads} GamePads */
-/** @typedef {import('../platform/input/keyboard.js').Keyboard} Keyboard */
-/** @typedef {import('../platform/input/mouse.js').Mouse} Mouse */
-/** @typedef {import('../platform/input/touch-device.js').TouchDevice} TouchDevice */
-/** @typedef {import('../platform/sound/manager.js').SoundManager} SoundManager */
-/** @typedef {import('./lightmapper/lightmapper.js').Lightmapper} Lightmapper */
-/** @typedef {import('../scene/batching/batch-manager.js').BatchManager} BatchManager */
-/** @typedef {import('./components/system.js').ComponentSystem} ComponentSystem */
-/** @typedef {import('./xr/xr-manager.js').XrManager} XrManager */
 @JSImport("playcanvas", "AppOptions")
 @js.native
 open class AppOptions () extends StObject {
@@ -30,63 +18,63 @@ open class AppOptions () extends StObject {
   /**
     * The BatchManager.
     *
-    * @type {BatchManager}
+    * @type {import('../scene/batching/batch-manager.js').BatchManager}
     */
   var batchManager: BatchManager = js.native
   
   /**
     * The component systems the app requires.
     *
-    * @type {ComponentSystem[]}
+    * @type {import('./components/system.js').ComponentSystem[]}
     */
   var componentSystems: js.Array[ComponentSystem] = js.native
   
   /**
     * Input handler for {@link ElementComponent}s.
     *
-    * @type {ElementInput}
+    * @type {import('./input/element-input.js').ElementInput}
     */
   var elementInput: ElementInput = js.native
   
   /**
     * Gamepad handler for input.
     *
-    * @type {GamePads}
+    * @type {import('../platform/input/game-pads.js').GamePads}
     */
   var gamepads: GamePads = js.native
   
   /**
     * The graphics device.
     *
-    * @type {GraphicsDevice}
+    * @type {import('../platform/graphics/graphics-device.js').GraphicsDevice}
     */
   var graphicsDevice: GraphicsDevice = js.native
   
   /**
     * Keyboard handler for input.
     *
-    * @type {Keyboard}
+    * @type {import('../platform/input/keyboard.js').Keyboard}
     */
   var keyboard: Keyboard = js.native
   
   /**
     * The lightmapper.
     *
-    * @type {Lightmapper}
+    * @type {import('./lightmapper/lightmapper.js').Lightmapper}
     */
   var lightmapper: Lightmapper = js.native
   
   /**
     * Mouse handler for input.
     *
-    * @type {Mouse}
+    * @type {import('../platform/input/mouse.js').Mouse}
     */
   var mouse: Mouse = js.native
   
   /**
     * The resource handlers the app requires.
     *
-    * @type {ResourceHandler[]}
+    * @type {import('./handlers/handler.js').ResourceHandler[]}
     */
   var resourceHandlers: js.Array[ResourceHandler] = js.native
   
@@ -107,21 +95,21 @@ open class AppOptions () extends StObject {
   /**
     * The sound manager
     *
-    * @type {SoundManager}
+    * @type {import('../platform/sound/manager.js').SoundManager}
     */
   var soundManager: SoundManager = js.native
   
   /**
     * TouchDevice handler for input.
     *
-    * @type {TouchDevice}
+    * @type {import('../platform/input/touch-device.js').TouchDevice}
     */
   var touch: TouchDevice = js.native
   
   /**
     * The XrManager.
     *
-    * @type {XrManager}
+    * @type {import('./xr/xr-manager.js').XrManager}
     */
   var xr: XrManager = js.native
 }

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@nivo/grid" : "0.83.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@nivo/grid" : "0.83.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

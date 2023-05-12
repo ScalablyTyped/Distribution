@@ -19,6 +19,8 @@ trait ListResponse extends StObject {
   
   var specialUse: String
   
+  var status: js.UndefOr[StatusObject] = js.undefined
+  
   var subscribed: Boolean
 }
 object ListResponse {
@@ -50,6 +52,10 @@ object ListResponse {
     inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     inline def setSpecialUse(value: String): Self = StObject.set(x, "specialUse", value.asInstanceOf[js.Any])
+    
+    inline def setStatus(value: StatusObject): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
     inline def setSubscribed(value: Boolean): Self = StObject.set(x, "subscribed", value.asInstanceOf[js.Any])
   }

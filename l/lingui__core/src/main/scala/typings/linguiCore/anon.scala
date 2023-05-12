@@ -1,26 +1,21 @@
 package typings.linguiCore
 
+import typings.linguiCore.mod.MessageDescriptor
+import typings.linguiCore.mod.MessageOptions
+import typings.linguiCore.mod.Values
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  trait Plurals extends StObject {
+  @js.native
+  trait FnCall extends StObject {
     
-    var plurals: Any
-  }
-  object Plurals {
-    
-    inline def apply(plurals: Any): Plurals = {
-      val __obj = js.Dynamic.literal(plurals = plurals.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Plurals]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: Plurals] (val x: Self) extends AnyVal {
-      
-      inline def setPlurals(value: Any): Self = StObject.set(x, "plurals", value.asInstanceOf[js.Any])
-    }
+    def apply(descriptor: MessageDescriptor): String = js.native
+    def apply(id: String): String = js.native
+    def apply(id: String, values: Unit, options: MessageOptions): String = js.native
+    def apply(id: String, values: Values): String = js.native
+    def apply(id: String, values: Values, options: MessageOptions): String = js.native
   }
 }

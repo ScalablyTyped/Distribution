@@ -269,6 +269,10 @@ object mod {
   @js.native
   val AppDeveloper: CarbonPictogramType = js.native
   
+  @JSImport("@carbon/pictograms-react", "AppModernization")
+  @js.native
+  val AppModernization: CarbonPictogramType = js.native
+  
   @JSImport("@carbon/pictograms-react", "Apple")
   @js.native
   val Apple: CarbonPictogramType = js.native
@@ -524,6 +528,14 @@ object mod {
   @JSImport("@carbon/pictograms-react", "Capitol")
   @js.native
   val Capitol: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "CarbonForIbmDotcom")
+  @js.native
+  val CarbonForIbmDotcom: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "CarbonForIbmProduct")
+  @js.native
+  val CarbonForIbmProduct: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "Care")
   @js.native
@@ -1140,6 +1152,10 @@ object mod {
   @JSImport("@carbon/pictograms-react", "DeliverInsights")
   @js.native
   val DeliverInsights: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "Delivered")
+  @js.native
+  val Delivered: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "DeliveryTruck")
   @js.native
@@ -2380,6 +2396,10 @@ object mod {
   @JSImport("@carbon/pictograms-react", "MovementOfItems")
   @js.native
   val MovementOfItems: CarbonPictogramType = js.native
+  
+  @JSImport("@carbon/pictograms-react", "MovingDolly")
+  @js.native
+  val MovingDolly: CarbonPictogramType = js.native
   
   @JSImport("@carbon/pictograms-react", "Mqa")
   @js.native

@@ -13,8 +13,8 @@ object libComponentsIconFontMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(): FunctionalComponent[IconFontProps, js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[FunctionalComponent[IconFontProps, js.Object]]
-  inline def default(options: CustomIconOptions): FunctionalComponent[IconFontProps, js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[FunctionalComponent[IconFontProps, js.Object]]
+  inline def default(): FunctionalComponent[IconFontProps, js.Object, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[FunctionalComponent[IconFontProps, js.Object, Any]]
+  inline def default(options: CustomIconOptions): FunctionalComponent[IconFontProps, js.Object, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[FunctionalComponent[IconFontProps, js.Object, Any]]
   
   trait CustomIconOptions extends StObject {
     
@@ -68,7 +68,7 @@ object libComponentsIconFontMod {
   @js.native
   trait IconFontType
     extends StObject
-       with FunctionalComponent[IconFontProps, js.Object] {
+       with FunctionalComponent[IconFontProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_IconFontType: String = js.native

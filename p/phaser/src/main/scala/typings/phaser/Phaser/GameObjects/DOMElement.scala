@@ -26,9 +26,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * }
   * ```
   * 
-  * When this is added, Phaser will automatically create a DOM Container div that is positioned over the top
-  * of the game canvas. This div is sized to match the canvas, and if the canvas size changes, as a result of
-  * settings within the Scale Manager, the dom container is resized accordingly.
+  * You must also have a parent container for Phaser. This is specified by the `parent` property in the
+  * game config.
+  * 
+  * When these two things are added, Phaser will automatically create a DOM Container div that is positioned
+  * over the top of the game canvas. This div is sized to match the canvas, and if the canvas size changes,
+  * as a result of settings within the Scale Manager, the dom container is resized accordingly.
   * 
   * If you have not already done so, you have to provide a `parent` in the Game Configuration, or the DOM
   * Container will fail to be created.
@@ -234,7 +237,7 @@ trait DOMElement
     * Be aware that class and id names are case-sensitive.
     * @param id The id to search the children for.
     */
-  def getChildByID(id: String): Element = js.native
+  def getChildByID(id: String): Element | Null = js.native
   
   /**
     * Gets all children from this DOM Elements node, using `querySelectorAll('*')` and then iterates through
@@ -243,7 +246,7 @@ trait DOMElement
     * Be aware that class and id names are case-sensitive.
     * @param name The name to search the children for.
     */
-  def getChildByName(name: String): Element = js.native
+  def getChildByName(name: String): Element | Null = js.native
   
   /**
     * Gets all children from this DOM Elements node, using `querySelectorAll('*')` and then iterates through
@@ -252,7 +255,7 @@ trait DOMElement
     * @param property The property to search the children for.
     * @param value The value the property must strictly equal.
     */
-  def getChildByProperty(property: String, value: String): Element = js.native
+  def getChildByProperty(property: String, value: String): Element | Null = js.native
   
   /**
     * The native (un-scaled) height of this Game Object.

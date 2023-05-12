@@ -23,7 +23,7 @@ object mod {
     def this(props: FlexProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: FlexProps, context: Any) = this()
   }
@@ -35,7 +35,7 @@ object mod {
     def this(props: ItemProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: ItemProps, context: Any) = this()
   }

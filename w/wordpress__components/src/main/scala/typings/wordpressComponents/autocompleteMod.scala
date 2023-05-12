@@ -6,7 +6,6 @@ import typings.react.mod.global.JSX.Element
 import typings.std.HTMLElement
 import typings.std.PromiseLike
 import typings.wordpressComponents.autocompleteMod.Autocomplete.Props
-import typings.wordpressRichText.mod.Value
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +14,7 @@ object autocompleteMod {
   
   object default {
     
-    // tslint:disable-next-line:no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
     inline def apply[T](props: Props[T]): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("@wordpress/components/autocomplete", JSImport.Default)
@@ -197,11 +196,23 @@ object autocompleteMod {
       
       var isSelected: js.UndefOr[Boolean] = js.undefined
       
-      var onChange: js.UndefOr[js.Function1[/* value */ Value, Unit]] = js.undefined
+      var onChange: js.UndefOr[
+            js.Function1[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Value */ /* value */ Any, 
+              Unit
+            ]
+          ] = js.undefined
       
-      var onReplace: js.UndefOr[js.Function1[/* value */ Value, Unit]] = js.undefined
+      var onReplace: js.UndefOr[
+            js.Function1[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Value */ /* value */ Any, 
+              Unit
+            ]
+          ] = js.undefined
       
-      var record: js.UndefOr[Value] = js.undefined
+      var record: js.UndefOr[
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Value */ Any
+          ] = js.undefined
     }
     object Props {
       
@@ -223,15 +234,21 @@ object autocompleteMod {
         
         inline def setIsSelectedUndefined: Self = StObject.set(x, "isSelected", js.undefined)
         
-        inline def setOnChange(value: /* value */ Value => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+        inline def setOnChange(
+          value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Value */ /* value */ Any => Unit
+        ): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
         
         inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
         
-        inline def setOnReplace(value: /* value */ Value => Unit): Self = StObject.set(x, "onReplace", js.Any.fromFunction1(value))
+        inline def setOnReplace(
+          value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Value */ /* value */ Any => Unit
+        ): Self = StObject.set(x, "onReplace", js.Any.fromFunction1(value))
         
         inline def setOnReplaceUndefined: Self = StObject.set(x, "onReplace", js.undefined)
         
-        inline def setRecord(value: Value): Self = StObject.set(x, "record", value.asInstanceOf[js.Any])
+        inline def setRecord(
+          value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Value */ Any
+        ): Self = StObject.set(x, "record", value.asInstanceOf[js.Any])
         
         inline def setRecordUndefined: Self = StObject.set(x, "record", js.undefined)
       }
@@ -280,7 +297,9 @@ object autocompleteMod {
         __obj.asInstanceOf[typings.wordpressComponents.anon.Action]
       }
       
-      inline def Value(value: typings.wordpressRichText.mod.Value): typings.wordpressComponents.anon.Value = {
+      inline def Value(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Value */ Any
+      ): typings.wordpressComponents.anon.Value = {
         val __obj = js.Dynamic.literal(action = "replace", value = value.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.wordpressComponents.anon.Value]
       }

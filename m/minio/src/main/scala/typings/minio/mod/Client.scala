@@ -3,7 +3,7 @@ package typings.minio.mod
 import org.scalablytyped.runtime.StringDictionary
 import typings.minio.anon.ListObjectsV2WithMetadata
 import typings.node.bufferMod.global.Buffer
-import typings.node.httpsMod.AgentOptions
+import typings.node.httpsMod.RequestOptions
 import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -141,9 +141,14 @@ open class Client protected () extends StObject {
   
   def listenBucketNotification(bucketName: String, prefix: String, suffix: String, events: js.Array[NotificationEvent]): NotificationPoller = js.native
   
+  def makeBucket(bucketName: String): js.Promise[Unit] = js.native
+  def makeBucket(bucketName: String, callback: NoResultCallback): Unit = js.native
+  def makeBucket(bucketName: String, region: Unit, makeOpts: MakeBucketOpt): js.Promise[Unit] = js.native
   def makeBucket(bucketName: String, region: Region): js.Promise[Unit] = js.native
-  // Bucket operations
   def makeBucket(bucketName: String, region: Region, callback: NoResultCallback): Unit = js.native
+  def makeBucket(bucketName: String, region: Region, makeOpts: MakeBucketOpt): js.Promise[Unit] = js.native
+  // Bucket operations
+  def makeBucket(bucketName: String, region: Region, makeOpts: MakeBucketOpt, callback: NoResultCallback): Unit = js.native
   
   // Other
   def newPostPolicy(): PostPolicy = js.native
@@ -403,6 +408,8 @@ open class Client protected () extends StObject {
   
   def removeObject(bucketName: String, objectName: String): js.Promise[Unit] = js.native
   def removeObject(bucketName: String, objectName: String, callback: NoResultCallback): Unit = js.native
+  def removeObject(bucketName: String, objectName: String, removeOpts: RemoveOptions): js.Promise[Unit] = js.native
+  def removeObject(bucketName: String, objectName: String, removeOpts: RemoveOptions, callback: NoResultCallback): Unit = js.native
   
   def removeObjectTagging(bucketName: String, objectName: String): js.Promise[Unit] = js.native
   def removeObjectTagging(bucketName: String, objectName: String, callback: NoResultCallback): Unit = js.native
@@ -462,7 +469,7 @@ open class Client protected () extends StObject {
     callback: NoResultCallback
   ): Unit = js.native
   
-  def setRequestOptions(options: AgentOptions): Unit = js.native
+  def setRequestOptions(options: RequestOptions): Unit = js.native
   
   // Custom Settings
   def setS3TransferAccelerate(endpoint: String): Unit = js.native

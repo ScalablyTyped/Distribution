@@ -22,12 +22,12 @@ trait GetInstanceTypesFromInstanceRequirementsRequest extends StObject {
   var InstanceRequirements: InstanceRequirementsRequest
   
   /**
-    * The maximum number of results to return in a single call. Specify a value between 1 and&#x2028; 1000. The default value is 1000. To retrieve the remaining results, make another call with&#x2028; the returned NextToken value.
+    * The maximum number of items to return for this request. To get the next page of items, make another request with the token returned in the output. For more information, see Pagination.
     */
   var MaxResults: js.UndefOr[Integer] = js.undefined
   
   /**
-    * The token for the next set of results.
+    * The token returned from a previous paginated request. Pagination continues from the end of the items returned by the previous request.
     */
   var NextToken: js.UndefOr[String] = js.undefined
   

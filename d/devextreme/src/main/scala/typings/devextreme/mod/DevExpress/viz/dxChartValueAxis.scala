@@ -3,6 +3,7 @@ package typings.devextreme.mod.DevExpress.viz
 import typings.devextreme.mod.DevExpress.common.Position
 import typings.devextreme.mod.DevExpress.common.charts.AxisScaleType
 import typings.devextreme.mod.DevExpress.common.charts.ChartsDataType
+import typings.devextreme.mod.DevExpress.common.charts.TimeIntervalConfig
 import typings.devextreme.mod.DevExpress.common.charts.VisualRangeUpdateMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -25,7 +26,7 @@ trait dxChartValueAxis
   /**
     * Declares a custom scale break collection. Applies only if the axis&apos; type is &apos;continuous&apos; or &apos;logarithmic&apos;.
     */
-  var breaks: js.UndefOr[js.Array[ScaleBreak]] = js.undefined
+  var breaks: js.UndefOr[js.Array[typings.devextreme.mod.DevExpress.common.charts.ScaleBreak]] = js.undefined
   
   /**
     * Specifies the order of categories on an axis of the &apos;discrete&apos; type.
@@ -72,7 +73,7 @@ trait dxChartValueAxis
   /**
     * Specifies the minimum length of the visual range.
     */
-  var minVisualRangeLength: js.UndefOr[VizTimeInterval] = js.undefined
+  var minVisualRangeLength: js.UndefOr[TimeIntervalConfig] = js.undefined
   
   /**
     * Specifies how many minor ticks to place between two neighboring major ticks.
@@ -82,7 +83,7 @@ trait dxChartValueAxis
   /**
     * Specifies the interval between minor ticks. Applies only to continuous axes.
     */
-  var minorTickInterval: js.UndefOr[VizTimeInterval] = js.undefined
+  var minorTickInterval: js.UndefOr[TimeIntervalConfig] = js.undefined
   
   /**
     * Adds a pixel-measured empty space between two side-by-side value axes. Applies if several value axes are located on one side of the chart.
@@ -127,7 +128,7 @@ trait dxChartValueAxis
   /**
     * Specifies the interval between major ticks. Does not apply to discrete axes.
     */
-  var tickInterval: js.UndefOr[VizTimeInterval] = js.undefined
+  var tickInterval: js.UndefOr[TimeIntervalConfig] = js.undefined
   
   /**
     * Configures the axis title.
@@ -148,7 +149,9 @@ trait dxChartValueAxis
   /**
     * Defines the axis&apos; displayed range. Cannot be wider than the wholeRange.
     */
-  var visualRange: js.UndefOr[VizRange | (js.Array[Double | String | js.Date])] = js.undefined
+  var visualRange: js.UndefOr[
+    typings.devextreme.mod.DevExpress.common.charts.VisualRange | (js.Array[Double | String | js.Date])
+  ] = js.undefined
   
   /**
     * Specifies how the axis&apos;s visual range should behave when chart data is updated.
@@ -158,7 +161,9 @@ trait dxChartValueAxis
   /**
     * Defines the range where the axis can be zoomed and panned.
     */
-  var wholeRange: js.UndefOr[VizRange | (js.Array[Double | String | js.Date])] = js.undefined
+  var wholeRange: js.UndefOr[
+    typings.devextreme.mod.DevExpress.common.charts.VisualRange | (js.Array[Double | String | js.Date])
+  ] = js.undefined
 }
 object dxChartValueAxis {
   
@@ -178,11 +183,11 @@ object dxChartValueAxis {
     
     inline def setAxisDivisionFactorUndefined: Self = StObject.set(x, "axisDivisionFactor", js.undefined)
     
-    inline def setBreaks(value: js.Array[ScaleBreak]): Self = StObject.set(x, "breaks", value.asInstanceOf[js.Any])
+    inline def setBreaks(value: js.Array[typings.devextreme.mod.DevExpress.common.charts.ScaleBreak]): Self = StObject.set(x, "breaks", value.asInstanceOf[js.Any])
     
     inline def setBreaksUndefined: Self = StObject.set(x, "breaks", js.undefined)
     
-    inline def setBreaksVarargs(value: ScaleBreak*): Self = StObject.set(x, "breaks", js.Array(value*))
+    inline def setBreaksVarargs(value: typings.devextreme.mod.DevExpress.common.charts.ScaleBreak*): Self = StObject.set(x, "breaks", js.Array(value*))
     
     inline def setCategories(value: js.Array[Double | String | js.Date]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     
@@ -220,7 +225,7 @@ object dxChartValueAxis {
     
     inline def setMaxAutoBreakCountUndefined: Self = StObject.set(x, "maxAutoBreakCount", js.undefined)
     
-    inline def setMinVisualRangeLength(value: VizTimeInterval): Self = StObject.set(x, "minVisualRangeLength", value.asInstanceOf[js.Any])
+    inline def setMinVisualRangeLength(value: TimeIntervalConfig): Self = StObject.set(x, "minVisualRangeLength", value.asInstanceOf[js.Any])
     
     inline def setMinVisualRangeLengthUndefined: Self = StObject.set(x, "minVisualRangeLength", js.undefined)
     
@@ -228,7 +233,7 @@ object dxChartValueAxis {
     
     inline def setMinorTickCountUndefined: Self = StObject.set(x, "minorTickCount", js.undefined)
     
-    inline def setMinorTickInterval(value: VizTimeInterval): Self = StObject.set(x, "minorTickInterval", value.asInstanceOf[js.Any])
+    inline def setMinorTickInterval(value: TimeIntervalConfig): Self = StObject.set(x, "minorTickInterval", value.asInstanceOf[js.Any])
     
     inline def setMinorTickIntervalUndefined: Self = StObject.set(x, "minorTickInterval", js.undefined)
     
@@ -266,7 +271,7 @@ object dxChartValueAxis {
     
     inline def setSynchronizedValueUndefined: Self = StObject.set(x, "synchronizedValue", js.undefined)
     
-    inline def setTickInterval(value: VizTimeInterval): Self = StObject.set(x, "tickInterval", value.asInstanceOf[js.Any])
+    inline def setTickInterval(value: TimeIntervalConfig): Self = StObject.set(x, "tickInterval", value.asInstanceOf[js.Any])
     
     inline def setTickIntervalUndefined: Self = StObject.set(x, "tickInterval", js.undefined)
     
@@ -282,7 +287,9 @@ object dxChartValueAxis {
     
     inline def setValueTypeUndefined: Self = StObject.set(x, "valueType", js.undefined)
     
-    inline def setVisualRange(value: VizRange | (js.Array[Double | String | js.Date])): Self = StObject.set(x, "visualRange", value.asInstanceOf[js.Any])
+    inline def setVisualRange(
+      value: typings.devextreme.mod.DevExpress.common.charts.VisualRange | (js.Array[Double | String | js.Date])
+    ): Self = StObject.set(x, "visualRange", value.asInstanceOf[js.Any])
     
     inline def setVisualRangeUndefined: Self = StObject.set(x, "visualRange", js.undefined)
     
@@ -292,7 +299,9 @@ object dxChartValueAxis {
     
     inline def setVisualRangeVarargs(value: (Double | String | js.Date)*): Self = StObject.set(x, "visualRange", js.Array(value*))
     
-    inline def setWholeRange(value: VizRange | (js.Array[Double | String | js.Date])): Self = StObject.set(x, "wholeRange", value.asInstanceOf[js.Any])
+    inline def setWholeRange(
+      value: typings.devextreme.mod.DevExpress.common.charts.VisualRange | (js.Array[Double | String | js.Date])
+    ): Self = StObject.set(x, "wholeRange", value.asInstanceOf[js.Any])
     
     inline def setWholeRangeUndefined: Self = StObject.set(x, "wholeRange", js.undefined)
     

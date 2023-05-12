@@ -60,7 +60,7 @@ object esComponentsFloatingBubbleFloatingBubbleMod {
   @js.native
   val FloatingBubble: FC[FloatingBubbleProps] = js.native
   
-  /* Inlined {  onClick :(event : react.react.MouseEvent<std.HTMLDivElement, std.MouseEvent>): void | undefined,   axis :'x' | 'y' | 'xy' | 'lock' | undefined,   magnetic :'x' | 'y' | undefined,   children :react.react.ReactNode | undefined} & antd-mobile.antd-mobile/es/utils/native-props.NativeProps<'--initial-position-left' | '--initial-position-right' | '--initial-position-top' | '--initial-position-bottom' | '--z-index' | '--edge-distance' | '--size' | '--border-radius' | '--background'> */
+  /* Inlined {  onClick :(event : react.react.MouseEvent<std.HTMLDivElement, std.MouseEvent>): void | undefined,   axis :'x' | 'y' | 'xy' | 'lock' | undefined,   magnetic :'x' | 'y' | undefined,   children :react.react.ReactNode | undefined,   offset :antd-mobile.antd-mobile/es/components/floating-bubble/floating-bubble.Offset | undefined,   defaultOffset :antd-mobile.antd-mobile/es/components/floating-bubble/floating-bubble.Offset | undefined,   onOffsetChange :(offset : antd-mobile.antd-mobile/es/components/floating-bubble/floating-bubble.Offset): void | undefined} & antd-mobile.antd-mobile/es/utils/native-props.NativeProps<'--initial-position-left' | '--initial-position-right' | '--initial-position-top' | '--initial-position-bottom' | '--z-index' | '--edge-distance' | '--size' | '--border-radius' | '--background'> */
   trait FloatingBubbleProps extends StObject {
     
     /** Identifies the currently active element when DOM focus is on a composite widget, textbox, group, or application. */
@@ -303,11 +303,17 @@ object esComponentsFloatingBubbleFloatingBubbleMod {
     
     var className: js.UndefOr[String] = js.undefined
     
+    var defaultOffset: js.UndefOr[Offset] = js.undefined
+    
     var magnetic: js.UndefOr[x | y] = js.undefined
+    
+    var offset: js.UndefOr[Offset] = js.undefined
     
     var onClick: js.UndefOr[
         js.Function1[/* event */ typings.react.mod.MouseEvent[HTMLDivElement, MouseEvent], Unit]
       ] = js.undefined
+    
+    var onOffsetChange: js.UndefOr[js.Function1[/* offset */ Offset, Unit]] = js.undefined
     
     var style: js.UndefOr[CSSPropertiesPartialRecorAnimationDirection] = js.undefined
     
@@ -529,13 +535,25 @@ object esComponentsFloatingBubbleFloatingBubbleMod {
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
+      inline def setDefaultOffset(value: Offset): Self = StObject.set(x, "defaultOffset", value.asInstanceOf[js.Any])
+      
+      inline def setDefaultOffsetUndefined: Self = StObject.set(x, "defaultOffset", js.undefined)
+      
       inline def setMagnetic(value: typings.antdMobile.antdMobileStrings.x | y): Self = StObject.set(x, "magnetic", value.asInstanceOf[js.Any])
       
       inline def setMagneticUndefined: Self = StObject.set(x, "magnetic", js.undefined)
       
+      inline def setOffset(value: Offset): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      
+      inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+      
       inline def setOnClick(value: /* event */ typings.react.mod.MouseEvent[HTMLDivElement, MouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
       inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      
+      inline def setOnOffsetChange(value: /* offset */ Offset => Unit): Self = StObject.set(x, "onOffsetChange", js.Any.fromFunction1(value))
+      
+      inline def setOnOffsetChangeUndefined: Self = StObject.set(x, "onOffsetChange", js.undefined)
       
       inline def setStyle(value: CSSPropertiesPartialRecorAnimationDirection): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
@@ -544,6 +562,28 @@ object esComponentsFloatingBubbleFloatingBubbleMod {
       inline def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
       
       inline def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
+    }
+  }
+  
+  trait Offset extends StObject {
+    
+    var x: Double
+    
+    var y: Double
+  }
+  object Offset {
+    
+    inline def apply(x: Double, y: Double): Offset = {
+      val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Offset]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Offset] (val x: Self) extends AnyVal {
+      
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
 }

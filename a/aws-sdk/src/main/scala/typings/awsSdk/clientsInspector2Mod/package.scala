@@ -2,6 +2,7 @@ package typings.awsSdk.clientsInspector2Mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.awsSdk.awsSdkStrings.EQUALS
+import typings.awsSdk.awsSdkStrings.NVD
 import typings.awsSdk.awsSdkStrings.USD
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -36,6 +37,7 @@ type AggregationFindingType = _AggregationFindingType | java.lang.String
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.AWS_EC2_INSTANCE
   - typings.awsSdk.awsSdkStrings.AWS_ECR_CONTAINER_IMAGE
+  - typings.awsSdk.awsSdkStrings.AWS_LAMBDA_FUNCTION
   - java.lang.String
 */
 type AggregationResourceType = _AggregationResourceType | java.lang.String
@@ -52,6 +54,8 @@ type AggregationResponseList = js.Array[AggregationResponse]
   - typings.awsSdk.awsSdkStrings.AWS_ECR_CONTAINER
   - typings.awsSdk.awsSdkStrings.IMAGE_LAYER
   - typings.awsSdk.awsSdkStrings.ACCOUNT
+  - typings.awsSdk.awsSdkStrings.AWS_LAMBDA_FUNCTION
+  - typings.awsSdk.awsSdkStrings.LAMBDA_LAYER
   - java.lang.String
 */
 type AggregationType = _AggregationType | java.lang.String
@@ -67,6 +71,15 @@ type AmiId = java.lang.String
 */
 type AmiSortBy = _AmiSortBy | java.lang.String
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.X86_64
+  - typings.awsSdk.awsSdkStrings.ARM64
+  - java.lang.String
+*/
+type Architecture = _Architecture | java.lang.String
+
+type ArchitectureList = js.Array[Architecture]
+
 type Arn = java.lang.String
 
 /* Rewritten from type alias, can be one of: 
@@ -80,6 +93,12 @@ type AwsEcrContainerSortBy = _AwsEcrContainerSortBy | java.lang.String
 type BatchGetFreeTrialInfoRequestAccountIdsList = js.Array[MeteringAccountId]
 
 type Boolean = scala.Boolean
+
+type CisaAction = java.lang.String
+
+type CisaDateAdded = js.Date
+
+type CisaDateDue = js.Date
 
 type ClientToken = java.lang.String
 
@@ -97,6 +116,7 @@ type CoverageMapFilterList = js.Array[CoverageMapFilter]
   - typings.awsSdk.awsSdkStrings.AWS_EC2_INSTANCE
   - typings.awsSdk.awsSdkStrings.AWS_ECR_CONTAINER_IMAGE
   - typings.awsSdk.awsSdkStrings.AWS_ECR_REPOSITORY
+  - typings.awsSdk.awsSdkStrings.AWS_LAMBDA_FUNCTION
   - java.lang.String
 */
 type CoverageResourceType = _CoverageResourceType | java.lang.String
@@ -116,9 +136,21 @@ type CoveredResources = js.Array[CoveredResource]
 
 type Currency = USD | java.lang.String
 
+type Cvss2BaseScore = scala.Double
+
+type Cvss2ScoringVector = java.lang.String
+
+type Cvss3BaseScore = scala.Double
+
+type Cvss3ScoringVector = java.lang.String
+
 type CvssScoreAdjustmentList = js.Array[CvssScoreAdjustment]
 
 type CvssScoreList = js.Array[CvssScore]
+
+type Cwe = java.lang.String
+
+type Cwes = js.Array[Cwe]
 
 type DateFilterList = js.Array[DateFilter]
 
@@ -133,9 +165,20 @@ type DelegatedAdminAccountList = js.Array[DelegatedAdminAccount]
 */
 type DelegatedAdminStatus = _DelegatedAdminStatus | java.lang.String
 
+type DetectionPlatforms = js.Array[NonEmptyString]
+
 type DisableResourceTypeList = js.Array[ResourceScanType]
 
 type Double = scala.Double
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ACTIVATED
+  - typings.awsSdk.awsSdkStrings.DEACTIVATED
+  - typings.awsSdk.awsSdkStrings.PENDING
+  - typings.awsSdk.awsSdkStrings.FAILED
+  - java.lang.String
+*/
+type Ec2DeepInspectionStatus = _Ec2DeepInspectionStatus | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NETWORK_FINDINGS
@@ -180,6 +223,8 @@ type EcrScanFrequency = _EcrScanFrequency | java.lang.String
 
 type EnableResourceTypeList = js.Array[ResourceScanType]
 
+type EpssScore = scala.Double
+
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ALREADY_ENABLED
   - typings.awsSdk.awsSdkStrings.ENABLE_IN_PROGRESS
@@ -201,6 +246,15 @@ type ErrorCode = _ErrorCode | java.lang.String
 
 type ErrorMessage = java.lang.String
 
+type ExecutionRoleArn = java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.YES
+  - typings.awsSdk.awsSdkStrings.NO
+  - java.lang.String
+*/
+type ExploitAvailable = _ExploitAvailable | java.lang.String
+
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.SUCCEEDED
   - typings.awsSdk.awsSdkStrings.IN_PROGRESS
@@ -211,6 +265,8 @@ type ErrorMessage = java.lang.String
 type ExternalReportStatus = _ExternalReportStatus | java.lang.String
 
 type FailedAccountList = js.Array[FailedAccount]
+
+type FailedMemberAccountEc2DeepInspectionStatusStateList = js.Array[FailedMemberAccountEc2DeepInspectionStatusState]
 
 type FilePath = java.lang.String
 
@@ -264,6 +320,8 @@ type FindingType = _FindingType | java.lang.String
 */
 type FindingTypeSortBy = _FindingTypeSortBy | java.lang.String
 
+type FirstSeen = js.Date
+
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.YES
   - typings.awsSdk.awsSdkStrings.NO
@@ -295,9 +353,12 @@ type FreeTrialStatus = _FreeTrialStatus | java.lang.String
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.EC2
   - typings.awsSdk.awsSdkStrings.ECR
+  - typings.awsSdk.awsSdkStrings.LAMBDA
   - java.lang.String
 */
 type FreeTrialType = _FreeTrialType | java.lang.String
+
+type FunctionName = java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.SCAN_STATUS_CODE
@@ -329,6 +390,30 @@ type IpV6Address = java.lang.String
 
 type IpV6AddressList = js.Array[IpV6Address]
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.CRITICAL
+  - typings.awsSdk.awsSdkStrings.HIGH
+  - typings.awsSdk.awsSdkStrings.ALL
+  - java.lang.String
+*/
+type LambdaFunctionSortBy = _LambdaFunctionSortBy | java.lang.String
+
+type LambdaLayerArn = java.lang.String
+
+type LambdaLayerList = js.Array[String]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.CRITICAL
+  - typings.awsSdk.awsSdkStrings.HIGH
+  - typings.awsSdk.awsSdkStrings.ALL
+  - java.lang.String
+*/
+type LambdaLayerSortBy = _LambdaLayerSortBy | java.lang.String
+
+type LastSeen = js.Date
+
+type LayerList = js.Array[LambdaLayerArn]
+
 type ListAccountPermissionsMaxResults = scala.Double
 
 type ListCoverageMaxResults = scala.Double
@@ -356,6 +441,10 @@ type MapFilterList = js.Array[MapFilter]
 type MapKey = java.lang.String
 
 type MapValue = java.lang.String
+
+type MemberAccountEc2DeepInspectionStatusList = js.Array[MemberAccountEc2DeepInspectionStatus]
+
+type MemberAccountEc2DeepInspectionStatusStateList = js.Array[MemberAccountEc2DeepInspectionStatusState]
 
 type MemberList = js.Array[Member]
 
@@ -412,6 +501,7 @@ type PackageFilterList = js.Array[PackageFilter]
   - typings.awsSdk.awsSdkStrings.PYTHONPKG
   - typings.awsSdk.awsSdkStrings.NODEPKG
   - typings.awsSdk.awsSdkStrings.POM
+  - typings.awsSdk.awsSdkStrings.GEMSPEC
   - java.lang.String
 */
 type PackageManager = _PackageManager | java.lang.String
@@ -428,7 +518,18 @@ type PackageRelease = java.lang.String
 */
 type PackageSortBy = _PackageSortBy | java.lang.String
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.IMAGE
+  - typings.awsSdk.awsSdkStrings.ZIP
+  - java.lang.String
+*/
+type PackageType = _PackageType | java.lang.String
+
 type PackageVersion = java.lang.String
+
+type Path = java.lang.String
+
+type PathList = js.Array[Path]
 
 type Permissions = js.Array[Permission]
 
@@ -437,6 +538,10 @@ type Platform = java.lang.String
 type Port = scala.Double
 
 type PortRangeFilterList = js.Array[PortRangeFilter]
+
+type RelatedVulnerabilities = js.Array[RelatedVulnerability]
+
+type RelatedVulnerability = java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CREATED
@@ -491,6 +596,7 @@ type ResourceList = js.Array[Resource]
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.EC2
   - typings.awsSdk.awsSdkStrings.ECR
+  - typings.awsSdk.awsSdkStrings.LAMBDA
   - java.lang.String
 */
 type ResourceScanType = _ResourceScanType | java.lang.String
@@ -499,9 +605,28 @@ type ResourceScanType = _ResourceScanType | java.lang.String
   - typings.awsSdk.awsSdkStrings.AWS_EC2_INSTANCE
   - typings.awsSdk.awsSdkStrings.AWS_ECR_CONTAINER_IMAGE
   - typings.awsSdk.awsSdkStrings.AWS_ECR_REPOSITORY
+  - typings.awsSdk.awsSdkStrings.AWS_LAMBDA_FUNCTION
   - java.lang.String
 */
 type ResourceType = _ResourceType | java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.NODEJS
+  - typings.awsSdk.awsSdkStrings.NODEJS_12_X
+  - typings.awsSdk.awsSdkStrings.NODEJS_14_X
+  - typings.awsSdk.awsSdkStrings.NODEJS_16_X
+  - typings.awsSdk.awsSdkStrings.JAVA_8
+  - typings.awsSdk.awsSdkStrings.JAVA_8_AL2
+  - typings.awsSdk.awsSdkStrings.JAVA_11
+  - typings.awsSdk.awsSdkStrings.PYTHON_3_7
+  - typings.awsSdk.awsSdkStrings.PYTHON_3_8
+  - typings.awsSdk.awsSdkStrings.PYTHON_3_9
+  - typings.awsSdk.awsSdkStrings.UNSUPPORTED
+  - typings.awsSdk.awsSdkStrings.NODEJS_18_X
+  - typings.awsSdk.awsSdkStrings.GO_1_X
+  - java.lang.String
+*/
+type Runtime = _Runtime | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ACTIVE
@@ -527,6 +652,14 @@ type ScanStatusCode = _ScanStatusCode | java.lang.String
   - typings.awsSdk.awsSdkStrings.PENDING_DISABLE
   - typings.awsSdk.awsSdkStrings.NO_INVENTORY
   - typings.awsSdk.awsSdkStrings.STALE_INVENTORY
+  - typings.awsSdk.awsSdkStrings.EXCLUDED_BY_TAG
+  - typings.awsSdk.awsSdkStrings.UNSUPPORTED_RUNTIME
+  - typings.awsSdk.awsSdkStrings.UNSUPPORTED_MEDIA_TYPE
+  - typings.awsSdk.awsSdkStrings.UNSUPPORTED_CONFIG_FILE
+  - typings.awsSdk.awsSdkStrings.DEEP_INSPECTION_PACKAGE_COLLECTION_LIMIT_EXCEEDED
+  - typings.awsSdk.awsSdkStrings.DEEP_INSPECTION_DAILY_SSM_INVENTORY_LIMIT_EXCEEDED
+  - typings.awsSdk.awsSdkStrings.DEEP_INSPECTION_COLLECTION_TIME_LIMIT_EXCEEDED
+  - typings.awsSdk.awsSdkStrings.DEEP_INSPECTION_NO_INVENTORY
   - java.lang.String
 */
 type ScanStatusReason = _ScanStatusReason | java.lang.String
@@ -538,9 +671,14 @@ type ScanStatusReason = _ScanStatusReason | java.lang.String
 */
 type ScanType = _ScanType | java.lang.String
 
+type SecurityGroupId = java.lang.String
+
+type SecurityGroupIdList = js.Array[SecurityGroupId]
+
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.EC2
   - typings.awsSdk.awsSdkStrings.ECR
+  - typings.awsSdk.awsSdkStrings.LAMBDA
   - java.lang.String
 */
 type Service = _Service | java.lang.String
@@ -615,6 +753,10 @@ type StringInput = java.lang.String
 
 type StringList = js.Array[NonEmptyString]
 
+type SubnetId = java.lang.String
+
+type SubnetIdList = js.Array[SubnetId]
+
 type TagKey = java.lang.String
 
 type TagKeyList = js.Array[TagKey]
@@ -622,6 +764,10 @@ type TagKeyList = js.Array[TagKey]
 type TagList = js.Array[String]
 
 type TagMap = StringDictionary[MapValue]
+
+type Target = java.lang.String
+
+type Targets = js.Array[Target]
 
 type Timestamp = js.Date
 
@@ -632,6 +778,10 @@ type Timestamp = js.Date
   - java.lang.String
 */
 type TitleSortBy = _TitleSortBy | java.lang.String
+
+type Ttp = java.lang.String
+
+type Ttps = js.Array[Ttp]
 
 type UsageAccountId = java.lang.String
 
@@ -645,15 +795,42 @@ type UsageTotalList = js.Array[UsageTotal]
   - typings.awsSdk.awsSdkStrings.EC2_INSTANCE_HOURS
   - typings.awsSdk.awsSdkStrings.ECR_INITIAL_SCAN
   - typings.awsSdk.awsSdkStrings.ECR_RESCAN
+  - typings.awsSdk.awsSdkStrings.LAMBDA_FUNCTION_HOURS
   - java.lang.String
 */
 type UsageType = _UsageType | java.lang.String
 
 type UsageValue = scala.Double
 
+type VendorCreatedAt = js.Date
+
+type VendorSeverity = java.lang.String
+
+type VendorUpdatedAt = js.Date
+
+type Version = java.lang.String
+
+type VpcId = java.lang.String
+
+type VulnId = java.lang.String
+
+type VulnIdList = js.Array[VulnId]
+
+type Vulnerabilities = js.Array[Vulnerability]
+
+type VulnerabilityDescription = java.lang.String
+
 type VulnerabilityId = java.lang.String
 
 type VulnerabilityIdList = js.Array[VulnerabilityId]
+
+type VulnerabilityReferenceUrl = java.lang.String
+
+type VulnerabilityReferenceUrls = js.Array[VulnerabilityReferenceUrl]
+
+type VulnerabilitySource = NVD | java.lang.String
+
+type VulnerabilitySourceUrl = java.lang.String
 
 type VulnerablePackageList = js.Array[VulnerablePackage]
 

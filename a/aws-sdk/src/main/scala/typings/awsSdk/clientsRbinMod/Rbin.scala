@@ -85,6 +85,20 @@ trait Rbin extends Service {
   ): Request[ListTagsForResourceResponse, AWSError] = js.native
   
   /**
+    * Locks a retention rule. A locked retention rule can't be modified or deleted.
+    */
+  def lockRule(): Request[LockRuleResponse, AWSError] = js.native
+  def lockRule(callback: js.Function2[/* err */ AWSError, /* data */ LockRuleResponse, Unit]): Request[LockRuleResponse, AWSError] = js.native
+  /**
+    * Locks a retention rule. A locked retention rule can't be modified or deleted.
+    */
+  def lockRule(params: LockRuleRequest): Request[LockRuleResponse, AWSError] = js.native
+  def lockRule(
+    params: LockRuleRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ LockRuleResponse, Unit]
+  ): Request[LockRuleResponse, AWSError] = js.native
+  
+  /**
     * Assigns tags to the specified retention rule.
     */
   def tagResource(): Request[TagResourceResponse, AWSError] = js.native
@@ -97,6 +111,20 @@ trait Rbin extends Service {
     params: TagResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ TagResourceResponse, Unit]
   ): Request[TagResourceResponse, AWSError] = js.native
+  
+  /**
+    * Unlocks a retention rule. After a retention rule is unlocked, it can be modified or deleted only after the unlock delay period expires.
+    */
+  def unlockRule(): Request[UnlockRuleResponse, AWSError] = js.native
+  def unlockRule(callback: js.Function2[/* err */ AWSError, /* data */ UnlockRuleResponse, Unit]): Request[UnlockRuleResponse, AWSError] = js.native
+  /**
+    * Unlocks a retention rule. After a retention rule is unlocked, it can be modified or deleted only after the unlock delay period expires.
+    */
+  def unlockRule(params: UnlockRuleRequest): Request[UnlockRuleResponse, AWSError] = js.native
+  def unlockRule(
+    params: UnlockRuleRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UnlockRuleResponse, Unit]
+  ): Request[UnlockRuleResponse, AWSError] = js.native
   
   /**
     * Unassigns a tag from a retention rule.
@@ -113,12 +141,12 @@ trait Rbin extends Service {
   ): Request[UntagResourceResponse, AWSError] = js.native
   
   /**
-    * Updates an existing Recycle Bin retention rule. For more information, see  Update Recycle Bin retention rules in the Amazon Elastic Compute Cloud User Guide.
+    * Updates an existing Recycle Bin retention rule. You can update a retention rule's description, resource tags, and retention period at any time after creation. You can't update a retention rule's resource type after creation. For more information, see  Update Recycle Bin retention rules in the Amazon Elastic Compute Cloud User Guide.
     */
   def updateRule(): Request[UpdateRuleResponse, AWSError] = js.native
   def updateRule(callback: js.Function2[/* err */ AWSError, /* data */ UpdateRuleResponse, Unit]): Request[UpdateRuleResponse, AWSError] = js.native
   /**
-    * Updates an existing Recycle Bin retention rule. For more information, see  Update Recycle Bin retention rules in the Amazon Elastic Compute Cloud User Guide.
+    * Updates an existing Recycle Bin retention rule. You can update a retention rule's description, resource tags, and retention period at any time after creation. You can't update a retention rule's resource type after creation. For more information, see  Update Recycle Bin retention rules in the Amazon Elastic Compute Cloud User Guide.
     */
   def updateRule(params: UpdateRuleRequest): Request[UpdateRuleResponse, AWSError] = js.native
   def updateRule(

@@ -2,6 +2,7 @@ package typings.angularCompilerCli
 
 import typings.angularCompilerCli.srcNgtscCoreApiSrcAdapterMod.SourceFileTypeIdentifier
 import typings.angularCompilerCli.srcNgtscImportsMod.DefaultImportTracker
+import typings.angularCompilerCli.srcNgtscImportsMod.ReferenceEmitter
 import typings.angularCompilerCli.srcNgtscImportsSrcCoreMod.ImportRewriter
 import typings.angularCompilerCli.srcNgtscIncrementalApiMod.IncrementalBuild
 import typings.angularCompilerCli.srcNgtscIncrementalSemanticGraphMod.SemanticDepGraphUpdater
@@ -34,6 +35,8 @@ object srcNgtscTransformMod {
     def apply(value: Double): js.UndefOr[typings.angularCompilerCli.srcNgtscTransformSrcApiMod.CompilationMode & Double] = js.native
     
     /* 0 */ val FULL: typings.angularCompilerCli.srcNgtscTransformSrcApiMod.CompilationMode.FULL & Double = js.native
+    
+    /* 2 */ val LOCAL: typings.angularCompilerCli.srcNgtscTransformSrcApiMod.CompilationMode.LOCAL & Double = js.native
     
     /* 1 */ val PARTIAL: typings.angularCompilerCli.srcNgtscTransformSrcApiMod.CompilationMode.PARTIAL & Double = js.native
   }
@@ -131,13 +134,17 @@ object srcNgtscTransformMod {
   
   inline def declarationTransformFactory(
     transformRegistry: typings.angularCompilerCli.srcNgtscTransformSrcDeclarationMod.DtsTransformRegistry,
+    reflector: ReflectionHost,
+    refEmitter: ReferenceEmitter,
     importRewriter: ImportRewriter
-  ): TransformerFactory[SourceFile] = (^.asInstanceOf[js.Dynamic].applyDynamic("declarationTransformFactory")(transformRegistry.asInstanceOf[js.Any], importRewriter.asInstanceOf[js.Any])).asInstanceOf[TransformerFactory[SourceFile]]
+  ): TransformerFactory[SourceFile] = (^.asInstanceOf[js.Dynamic].applyDynamic("declarationTransformFactory")(transformRegistry.asInstanceOf[js.Any], reflector.asInstanceOf[js.Any], refEmitter.asInstanceOf[js.Any], importRewriter.asInstanceOf[js.Any])).asInstanceOf[TransformerFactory[SourceFile]]
   inline def declarationTransformFactory(
     transformRegistry: typings.angularCompilerCli.srcNgtscTransformSrcDeclarationMod.DtsTransformRegistry,
+    reflector: ReflectionHost,
+    refEmitter: ReferenceEmitter,
     importRewriter: ImportRewriter,
     importPrefix: String
-  ): TransformerFactory[SourceFile] = (^.asInstanceOf[js.Dynamic].applyDynamic("declarationTransformFactory")(transformRegistry.asInstanceOf[js.Any], importRewriter.asInstanceOf[js.Any], importPrefix.asInstanceOf[js.Any])).asInstanceOf[TransformerFactory[SourceFile]]
+  ): TransformerFactory[SourceFile] = (^.asInstanceOf[js.Dynamic].applyDynamic("declarationTransformFactory")(transformRegistry.asInstanceOf[js.Any], reflector.asInstanceOf[js.Any], refEmitter.asInstanceOf[js.Any], importRewriter.asInstanceOf[js.Any], importPrefix.asInstanceOf[js.Any])).asInstanceOf[TransformerFactory[SourceFile]]
   
   inline def ivyTransformFactory(
     compilation: typings.angularCompilerCli.srcNgtscTransformSrcCompilationMod.TraitCompiler,

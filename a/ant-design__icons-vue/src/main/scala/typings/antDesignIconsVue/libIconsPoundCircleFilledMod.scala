@@ -16,7 +16,7 @@ object libIconsPoundCircleFilledMod extends Shortcut {
   @js.native
   trait PoundCircleFilledIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_PoundCircleFilledIconType: String = js.native

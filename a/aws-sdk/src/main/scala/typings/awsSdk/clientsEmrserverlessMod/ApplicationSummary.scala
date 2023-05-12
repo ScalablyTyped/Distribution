@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ApplicationSummary extends StObject {
   
   /**
+    * The CPU architecture of an application.
+    */
+  var architecture: js.UndefOr[Architecture] = js.undefined
+  
+  /**
     * The ARN of the application.
     */
   var arn: ApplicationArn
@@ -27,7 +32,7 @@ trait ApplicationSummary extends StObject {
   var name: js.UndefOr[ApplicationName] = js.undefined
   
   /**
-    * The EMR release version associated with the application.
+    * The EMR release associated with the application.
     */
   var releaseLabel: ReleaseLabel
   
@@ -69,6 +74,10 @@ object ApplicationSummary {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: ApplicationSummary] (val x: Self) extends AnyVal {
+    
+    inline def setArchitecture(value: Architecture): Self = StObject.set(x, "architecture", value.asInstanceOf[js.Any])
+    
+    inline def setArchitectureUndefined: Self = StObject.set(x, "architecture", js.undefined)
     
     inline def setArn(value: ApplicationArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

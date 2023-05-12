@@ -14,6 +14,9 @@ object distEs5UtilsArrayMod {
   inline def asArray[T](a: T): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("asArray")(a.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
   inline def asArray[T](a: js.Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("asArray")(a.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
   
+  inline def getFirst[T](a: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("getFirst")(a.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def getFirst[T](a: js.Array[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("getFirst")(a.asInstanceOf[js.Any]).asInstanceOf[T]
+  
   inline def toArray[T](a: js.Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("toArray")(a.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
   inline def toArray[T](a: ListOf[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("toArray")(a.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
   

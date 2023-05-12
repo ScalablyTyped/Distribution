@@ -13,39 +13,34 @@ object buildEsmTransportsWebsocketMod {
     /**
       * WebSocket transport constructor.
       *
-      * @api {Object} connection options
-      * @api public
+      * @param {Object} opts - connection options
+      * @protected
       */
     def this(opts: Any) = this()
     
     /**
       * Adds event listeners to the socket
       *
-      * @api private
+      * @private
       */
-    def addEventListeners(): Unit = js.native
+    /* private */ var addEventListeners: Any = js.native
     
     /**
       * Feature detection for WebSocket.
       *
       * @return {Boolean} whether this transport is available.
-      * @api public
+      * @private
       */
-    def check(): Boolean = js.native
-    
-    /**
-      * Transport name.
-      *
-      * @api public
-      */
-    def name: String = js.native
+    /* private */ var check: Any = js.native
     
     /**
       * Generates uri for connection.
       *
-      * @api private
+      * @private
       */
     def uri(): String = js.native
+    
+    def write(packets: Any): Unit = js.native
     
     /* private */ var ws: Any = js.native
   }

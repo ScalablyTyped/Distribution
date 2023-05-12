@@ -12,6 +12,13 @@ trait SuspenseProps extends StObject {
   
   var onResolve: js.UndefOr[js.Function0[Unit]] = js.undefined
   
+  /**
+    * Allow suspense to be captured by parent suspense
+    *
+    * @default false
+    */
+  var suspensible: js.UndefOr[Boolean] = js.undefined
+  
   var timeout: js.UndefOr[String | Double] = js.undefined
 }
 object SuspenseProps {
@@ -35,6 +42,10 @@ object SuspenseProps {
     inline def setOnResolve(value: () => Unit): Self = StObject.set(x, "onResolve", js.Any.fromFunction0(value))
     
     inline def setOnResolveUndefined: Self = StObject.set(x, "onResolve", js.undefined)
+    
+    inline def setSuspensible(value: Boolean): Self = StObject.set(x, "suspensible", value.asInstanceOf[js.Any])
+    
+    inline def setSuspensibleUndefined: Self = StObject.set(x, "suspensible", js.undefined)
     
     inline def setTimeout(value: String | Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     

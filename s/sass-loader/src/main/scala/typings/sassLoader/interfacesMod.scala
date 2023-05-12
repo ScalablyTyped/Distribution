@@ -1,9 +1,9 @@
 package typings.sassLoader
 
 import typings.nodeSass.mod.Options
+import typings.sass.typesLegacyOptionsMod.LegacyOptions
 import typings.sassLoader.interfacesMod.LoaderOptions.Callback
 import typings.sassLoader.interfacesMod.LoaderOptions.SassOptions
-import typings.sassLoader.sassLoaderStrings.async
 import typings.sassLoader.sassLoaderStrings.sync
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -492,6 +492,6 @@ object interfacesMod {
       inline def setWebpackImporterUndefined: Self = StObject.set(x, "webpackImporter", js.undefined)
     }
     
-    type SassOptions = Options | (typings.sass.typesOptionsMod.Options[sync | async])
+    type SassOptions = Options | LegacyOptions[sync]
   }
 }

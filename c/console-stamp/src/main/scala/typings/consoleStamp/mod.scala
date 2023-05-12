@@ -29,13 +29,15 @@ object mod {
     var length: Double = js.native
   }
   
-  type Token = js.Function1[/* payload */ js.UndefOr[TokenPayload], String | Double]
+  type Token = js.Function1[/* payload */ TokenPayload, String | Double]
   
   trait TokenPayload extends StObject {
     
     var defaultTokens: Record[String, Token]
     
     var method: String
+    
+    var msg: String
     
     var params: js.Array[String | Double]
     
@@ -46,10 +48,11 @@ object mod {
     inline def apply(
       defaultTokens: Record[String, Token],
       method: String,
+      msg: String,
       params: js.Array[String | Double],
       tokens: Record[String, Token]
     ): TokenPayload = {
-      val __obj = js.Dynamic.literal(defaultTokens = defaultTokens.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], tokens = tokens.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(defaultTokens = defaultTokens.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], msg = msg.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], tokens = tokens.asInstanceOf[js.Any])
       __obj.asInstanceOf[TokenPayload]
     }
     
@@ -59,6 +62,8 @@ object mod {
       inline def setDefaultTokens(value: Record[String, Token]): Self = StObject.set(x, "defaultTokens", value.asInstanceOf[js.Any])
       
       inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      
+      inline def setMsg(value: String): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
       
       inline def setParams(value: js.Array[String | Double]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       

@@ -37,6 +37,11 @@ trait DataSourceParameters extends StObject {
   var AwsIotAnalyticsParameters: js.UndefOr[typings.awsSdk.clientsQuicksightMod.AwsIotAnalyticsParameters] = js.undefined
   
   /**
+    * The required parameters that are needed to connect to a Databricks data source.
+    */
+  var DatabricksParameters: js.UndefOr[typings.awsSdk.clientsQuicksightMod.DatabricksParameters] = js.undefined
+  
+  /**
     * The parameters for Exasol.
     */
   var ExasolParameters: js.UndefOr[typings.awsSdk.clientsQuicksightMod.ExasolParameters] = js.undefined
@@ -149,6 +154,10 @@ object DataSourceParameters {
     inline def setAwsIotAnalyticsParameters(value: AwsIotAnalyticsParameters): Self = StObject.set(x, "AwsIotAnalyticsParameters", value.asInstanceOf[js.Any])
     
     inline def setAwsIotAnalyticsParametersUndefined: Self = StObject.set(x, "AwsIotAnalyticsParameters", js.undefined)
+    
+    inline def setDatabricksParameters(value: DatabricksParameters): Self = StObject.set(x, "DatabricksParameters", value.asInstanceOf[js.Any])
+    
+    inline def setDatabricksParametersUndefined: Self = StObject.set(x, "DatabricksParameters", js.undefined)
     
     inline def setExasolParameters(value: ExasolParameters): Self = StObject.set(x, "ExasolParameters", value.asInstanceOf[js.Any])
     

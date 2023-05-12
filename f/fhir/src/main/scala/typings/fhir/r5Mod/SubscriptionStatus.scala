@@ -33,11 +33,6 @@ trait SubscriptionStatus
   var error: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
   /**
-    * The total number of actual events represented within this notification.  For handshake and heartbeat notifications, this will be zero or not present.  For event-notifications, this number may be one or more, depending on server batching.
-    */
-  var eventsInNotification: js.UndefOr[Double] = js.undefined
-  
-  /**
     * The total number of actual events which have been generated since the Subscription was created (inclusive of this notification) - regardless of how many have been successfully communicated.  This number is NOT incremented for handshake and heartbeat notifications.
     */
   var eventsSinceSubscriptionStart: js.UndefOr[String] = js.undefined
@@ -67,7 +62,7 @@ trait SubscriptionStatus
   var topic: js.UndefOr[String] = js.undefined
   
   /**
-    * The type of event being conveyed with this notificaiton.
+    * The type of event being conveyed with this notification.
     */
   var `type`: handshake | heartbeat | `event-notification` | `query-status` | `query-event`
 }
@@ -90,10 +85,6 @@ object SubscriptionStatus {
     inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     inline def setErrorVarargs(value: CodeableConcept*): Self = StObject.set(x, "error", js.Array(value*))
-    
-    inline def setEventsInNotification(value: Double): Self = StObject.set(x, "eventsInNotification", value.asInstanceOf[js.Any])
-    
-    inline def setEventsInNotificationUndefined: Self = StObject.set(x, "eventsInNotification", js.undefined)
     
     inline def setEventsSinceSubscriptionStart(value: String): Self = StObject.set(x, "eventsSinceSubscriptionStart", value.asInstanceOf[js.Any])
     

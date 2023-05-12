@@ -1,7 +1,7 @@
 
 # Scala.js typings for socket_dot_io-parser
 
-Typings are for version 4.2.1
+Typings are for version 4.2.2
 
 ## Library description:
 socket.io protocol parser

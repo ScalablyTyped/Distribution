@@ -1,5 +1,6 @@
 package typings.three
 
+import typings.three.srcCoreBufferGeometryMod.NormalBufferAttributes
 import typings.three.srcThreeMod.BufferGeometry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -18,6 +19,6 @@ object examplesJsmModifiersTessellateModifierMod {
     
     var maxIterations: Double = js.native
     
-    def modify[TGeometry /* <: BufferGeometry */](geometry: TGeometry): TGeometry = js.native
+    def modify[TGeometry /* <: BufferGeometry[NormalBufferAttributes] */](geometry: TGeometry): TGeometry = js.native
   }
 }

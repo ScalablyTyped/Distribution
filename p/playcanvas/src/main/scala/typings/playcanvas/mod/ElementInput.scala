@@ -30,8 +30,6 @@ open class ElementInput protected () extends StObject {
   
   var _attached: Boolean = js.native
   
-  def _buildHitCorners(element: Any, screenOrWorldCorners: Any, scaleX: Any, scaleY: Any, scaleZ: Any): Any = js.native
-  
   def _calcMouseCoords(event: Any): Unit = js.native
   
   def _calcTouchCoords(touch: Any): X = js.native
@@ -39,10 +37,6 @@ open class ElementInput protected () extends StObject {
   def _calculateRay3d(x: Any, y: Any, camera: Any, ray: Any): Boolean = js.native
   
   def _calculateRayScreen(x: Any, y: Any, camera: Any, ray: Any): Boolean = js.native
-  
-  def _calculateScaleToScreen(element: Any): Vec3 = js.native
-  
-  def _calculateScaleToWorld(element: Any): Vec3 = js.native
   
   def _checkElement(ray: Any, element: Any, screen: Any): Double = js.native
   
@@ -132,7 +126,8 @@ open class ElementInput protected () extends StObject {
     * Add a {@link ElementComponent} to the internal list of ElementComponents that are being
     * checked for input.
     *
-    * @param {ElementComponent} element - The ElementComponent.
+    * @param {import('../components/element/component.js').ElementComponent} element - The
+    * ElementComponent.
     */
   def addElement(element: ElementComponent): Unit = js.native
   
@@ -160,7 +155,23 @@ open class ElementInput protected () extends StObject {
     * Remove a {@link ElementComponent} from the internal list of ElementComponents that are being
     * checked for input.
     *
-    * @param {ElementComponent} element - The ElementComponent.
+    * @param {import('../components/element/component.js').ElementComponent} element - The
+    * ElementComponent.
     */
   def removeElement(element: ElementComponent): Unit = js.native
+}
+object ElementInput {
+  
+  @JSImport("playcanvas", "ElementInput")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  inline def buildHitCorners(element: Any, screenOrWorldCorners: Any, scale: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("buildHitCorners")(element.asInstanceOf[js.Any], screenOrWorldCorners.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[Any]
+  
+  /* static member */
+  inline def calculateScaleToScreen(element: Any): Vec3 = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateScaleToScreen")(element.asInstanceOf[js.Any]).asInstanceOf[Vec3]
+  
+  /* static member */
+  inline def calculateScaleToWorld(element: Any): Vec3 = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateScaleToWorld")(element.asInstanceOf[js.Any]).asInstanceOf[Vec3]
 }

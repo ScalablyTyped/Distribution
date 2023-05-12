@@ -27,7 +27,7 @@ trait ListAccountSettingsRequest extends StObject {
   var nextToken: js.UndefOr[String] = js.undefined
   
   /**
-    * The ARN of the principal, which can be an IAM user, IAM role, or the root user. If this field is omitted, the account settings are listed only for the authenticated user.  Federated users assume the account setting of the root user and can't have explicit account settings set for them. 
+    * The ARN of the principal, which can be a user, role, or the root user. If this field is omitted, the account settings are listed only for the authenticated user.  Federated users assume the account setting of the root user and can't have explicit account settings set for them. 
     */
   var principalArn: js.UndefOr[String] = js.undefined
   

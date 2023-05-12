@@ -27,6 +27,11 @@ trait LaunchConfiguration extends StObject {
   var ec2LaunchTemplateID: js.UndefOr[BoundedString] = js.undefined
   
   /**
+    * Enable map auto tagging.
+    */
+  var enableMapAutoTagging: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * Launch disposition for launch configuration.
     */
   var launchDisposition: js.UndefOr[LaunchDisposition] = js.undefined
@@ -35,6 +40,11 @@ trait LaunchConfiguration extends StObject {
     * Launch configuration OS licensing.
     */
   var licensing: js.UndefOr[Licensing] = js.undefined
+  
+  /**
+    * Map auto tagging MPE ID.
+    */
+  var mapAutoTaggingMpeID: js.UndefOr[TagValue] = js.undefined
   
   /**
     * Launch configuration name.
@@ -79,6 +89,10 @@ object LaunchConfiguration {
     
     inline def setEc2LaunchTemplateIDUndefined: Self = StObject.set(x, "ec2LaunchTemplateID", js.undefined)
     
+    inline def setEnableMapAutoTagging(value: Boolean): Self = StObject.set(x, "enableMapAutoTagging", value.asInstanceOf[js.Any])
+    
+    inline def setEnableMapAutoTaggingUndefined: Self = StObject.set(x, "enableMapAutoTagging", js.undefined)
+    
     inline def setLaunchDisposition(value: LaunchDisposition): Self = StObject.set(x, "launchDisposition", value.asInstanceOf[js.Any])
     
     inline def setLaunchDispositionUndefined: Self = StObject.set(x, "launchDisposition", js.undefined)
@@ -86,6 +100,10 @@ object LaunchConfiguration {
     inline def setLicensing(value: Licensing): Self = StObject.set(x, "licensing", value.asInstanceOf[js.Any])
     
     inline def setLicensingUndefined: Self = StObject.set(x, "licensing", js.undefined)
+    
+    inline def setMapAutoTaggingMpeID(value: TagValue): Self = StObject.set(x, "mapAutoTaggingMpeID", value.asInstanceOf[js.Any])
+    
+    inline def setMapAutoTaggingMpeIDUndefined: Self = StObject.set(x, "mapAutoTaggingMpeID", js.undefined)
     
     inline def setName(value: SmallBoundedString): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

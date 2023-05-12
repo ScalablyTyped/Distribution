@@ -1,6 +1,7 @@
 package typings.awsSdkMiddlewareRetry
 
 import typings.awsSdkNodeConfigProvider.distTypesConfigLoaderMod.LoadedConfigSelectors
+import typings.awsSdkTypes.distTypesRetryMod.RetryStrategyV2
 import typings.awsSdkTypes.distTypesUtilMod.Provider
 import typings.awsSdkTypes.distTypesUtilMod.RetryStrategy
 import org.scalablytyped.runtime.StObject
@@ -73,7 +74,7 @@ object distTypesConfigurationsMod {
     /**
       * The strategy to retry the request. Using built-in exponential backoff strategy by default.
       */
-    var retryStrategy: js.UndefOr[RetryStrategy] = js.undefined
+    var retryStrategy: js.UndefOr[RetryStrategy | RetryStrategyV2] = js.undefined
   }
   object RetryInputConfig {
     
@@ -91,7 +92,7 @@ object distTypesConfigurationsMod {
       
       inline def setMaxAttemptsUndefined: Self = StObject.set(x, "maxAttempts", js.undefined)
       
-      inline def setRetryStrategy(value: RetryStrategy): Self = StObject.set(x, "retryStrategy", value.asInstanceOf[js.Any])
+      inline def setRetryStrategy(value: RetryStrategy | RetryStrategyV2): Self = StObject.set(x, "retryStrategy", value.asInstanceOf[js.Any])
       
       inline def setRetryStrategyUndefined: Self = StObject.set(x, "retryStrategy", js.undefined)
     }
@@ -112,16 +113,19 @@ object distTypesConfigurationsMod {
     /**
       * Resolved value for input config {@link RetryInputConfig.retryStrategy}
       */
-    def retryStrategy(): js.Promise[RetryStrategy]
+    def retryStrategy(): js.Promise[RetryStrategyV2 | RetryStrategy]
     /**
       * Resolved value for input config {@link RetryInputConfig.retryStrategy}
       */
     @JSName("retryStrategy")
-    var retryStrategy_Original: Provider[RetryStrategy]
+    var retryStrategy_Original: Provider[RetryStrategyV2 | RetryStrategy]
   }
   object RetryResolvedConfig {
     
-    inline def apply(maxAttempts: () => js.Promise[Double], retryStrategy: () => js.Promise[RetryStrategy]): RetryResolvedConfig = {
+    inline def apply(
+      maxAttempts: () => js.Promise[Double],
+      retryStrategy: () => js.Promise[RetryStrategyV2 | RetryStrategy]
+    ): RetryResolvedConfig = {
       val __obj = js.Dynamic.literal(maxAttempts = js.Any.fromFunction0(maxAttempts), retryStrategy = js.Any.fromFunction0(retryStrategy))
       __obj.asInstanceOf[RetryResolvedConfig]
     }
@@ -131,7 +135,7 @@ object distTypesConfigurationsMod {
       
       inline def setMaxAttempts(value: () => js.Promise[Double]): Self = StObject.set(x, "maxAttempts", js.Any.fromFunction0(value))
       
-      inline def setRetryStrategy(value: () => js.Promise[RetryStrategy]): Self = StObject.set(x, "retryStrategy", js.Any.fromFunction0(value))
+      inline def setRetryStrategy(value: () => js.Promise[RetryStrategyV2 | RetryStrategy]): Self = StObject.set(x, "retryStrategy", js.Any.fromFunction0(value))
     }
   }
 }

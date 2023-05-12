@@ -12,7 +12,7 @@ open class GoogleEarthEnterpriseImageryProvider protected () extends StObject {
   
   /**
     * Gets the credit to display when this imagery provider is active.  Typically this is used to credit
-    * the source of the imagery.  This function should not be called before {@link GoogleEarthEnterpriseImageryProvider#ready} returns true.
+    * the source of the imagery.
     */
   val credit: Credit = js.native
   
@@ -98,14 +98,12 @@ open class GoogleEarthEnterpriseImageryProvider protected () extends StObject {
   val hasAlphaChannel: Boolean = js.native
   
   /**
-    * Gets the maximum level-of-detail that can be requested.  This function should
-    * not be called before {@link GoogleEarthEnterpriseImageryProvider#ready} returns true.
+    * Gets the maximum level-of-detail that can be requested.
     */
   val maximumLevel: js.UndefOr[Double] = js.native
   
   /**
-    * Gets the minimum level-of-detail that can be requested.  This function should
-    * not be called before {@link GoogleEarthEnterpriseImageryProvider#ready} returns true.
+    * Gets the minimum level-of-detail that can be requested.
     */
   val minimumLevel: Double = js.native
   
@@ -137,14 +135,12 @@ open class GoogleEarthEnterpriseImageryProvider protected () extends StObject {
   val readyPromise: js.Promise[Boolean] = js.native
   
   /**
-    * Gets the rectangle, in radians, of the imagery provided by this instance.  This function should
-    * not be called before {@link GoogleEarthEnterpriseImageryProvider#ready} returns true.
+    * Gets the rectangle, in radians, of the imagery provided by this instance.
     */
   val rectangle: Rectangle = js.native
   
   /**
-    * Requests the image for a given tile.  This function should
-    * not be called before {@link GoogleEarthEnterpriseImageryProvider#ready} returns true.
+    * Requests the image for a given tile.
     * @param x - The tile X coordinate.
     * @param y - The tile Y coordinate.
     * @param level - The tile level.
@@ -158,26 +154,22 @@ open class GoogleEarthEnterpriseImageryProvider protected () extends StObject {
   /**
     * Gets the tile discard policy.  If not undefined, the discard policy is responsible
     * for filtering out "missing" tiles via its shouldDiscardImage function.  If this function
-    * returns undefined, no tiles are filtered.  This function should
-    * not be called before {@link GoogleEarthEnterpriseImageryProvider#ready} returns true.
+    * returns undefined, no tiles are filtered.
     */
   val tileDiscardPolicy: TileDiscardPolicy = js.native
   
   /**
-    * Gets the height of each tile, in pixels.  This function should
-    * not be called before {@link GoogleEarthEnterpriseImageryProvider#ready} returns true.
+    * Gets the height of each tile, in pixels.
     */
   val tileHeight: Double = js.native
   
   /**
-    * Gets the width of each tile, in pixels. This function should
-    * not be called before {@link GoogleEarthEnterpriseImageryProvider#ready} returns true.
+    * Gets the width of each tile, in pixels.
     */
   val tileWidth: Double = js.native
   
   /**
-    * Gets the tiling scheme used by this provider.  This function should
-    * not be called before {@link GoogleEarthEnterpriseImageryProvider#ready} returns true.
+    * Gets the tiling scheme used by this provider.
     */
   val tilingScheme: TilingScheme = js.native
   
@@ -186,12 +178,27 @@ open class GoogleEarthEnterpriseImageryProvider protected () extends StObject {
     */
   val url: String = js.native
 }
+/* static members */
 object GoogleEarthEnterpriseImageryProvider {
+  
+  @JSImport("cesium", "GoogleEarthEnterpriseImageryProvider")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /**
+    * Creates a tiled imagery provider using the Google Earth Enterprise REST API.
+    * @example
+    * const geeMetadata = await GoogleEarthEnterpriseMetadata.fromUrl("http://www.example.com");
+    * const gee = Cesium.GoogleEarthEnterpriseImageryProvider.fromMetadata(geeMetadata);
+    * @param metadata - A metadata object that can be used to share metadata requests with a GoogleEarthEnterpriseTerrainProvider.
+    * @param options - Object describing initialization options.
+    */
+  inline def fromMetadata(metadata: GoogleEarthEnterpriseMetadata, options: ConstructorOptions): GoogleEarthEnterpriseImageryProvider = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMetadata")(metadata.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[GoogleEarthEnterpriseImageryProvider]
   
   /**
     * Initialization options for the GoogleEarthEnterpriseImageryProvider constructor
-    * @property url - The url of the Google Earth Enterprise server hosting the imagery.
-    * @property metadata - A metadata object that can be used to share metadata requests with a GoogleEarthEnterpriseTerrainProvider.
+    * @property [url] - The url of the Google Earth Enterprise server hosting the imagery. Deprecated.
+    * @property [metadata] - A metadata object that can be used to share metadata requests with a GoogleEarthEnterpriseTerrainProvider. Deprecated.
     * @property [ellipsoid] - The ellipsoid.  If not specified, the WGS84 ellipsoid is used.
     * @property [tileDiscardPolicy] - The policy that determines if a tile
     *        is invalid and should be discarded. If this value is not specified, a default
@@ -204,16 +211,16 @@ object GoogleEarthEnterpriseImageryProvider {
     
     var ellipsoid: js.UndefOr[Ellipsoid] = js.undefined
     
-    var metadata: GoogleEarthEnterpriseMetadata
+    var metadata: js.UndefOr[GoogleEarthEnterpriseMetadata] = js.undefined
     
     var tileDiscardPolicy: js.UndefOr[TileDiscardPolicy] = js.undefined
     
-    var url: Resource | String
+    var url: js.UndefOr[Resource | String] = js.undefined
   }
   object ConstructorOptions {
     
-    inline def apply(metadata: GoogleEarthEnterpriseMetadata, url: Resource | String): ConstructorOptions = {
-      val __obj = js.Dynamic.literal(metadata = metadata.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    inline def apply(): ConstructorOptions = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConstructorOptions]
     }
     
@@ -230,11 +237,15 @@ object GoogleEarthEnterpriseImageryProvider {
       
       inline def setMetadata(value: GoogleEarthEnterpriseMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
+      inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+      
       inline def setTileDiscardPolicy(value: TileDiscardPolicy): Self = StObject.set(x, "tileDiscardPolicy", value.asInstanceOf[js.Any])
       
       inline def setTileDiscardPolicyUndefined: Self = StObject.set(x, "tileDiscardPolicy", js.undefined)
       
       inline def setUrl(value: Resource | String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
 }

@@ -10,16 +10,12 @@ import typings.awsSdkClientSso.distTypesCommandsListAccountRolesCommandMod.ListA
 import typings.awsSdkClientSso.distTypesCommandsListAccountsCommandMod.ListAccountsCommandInput
 import typings.awsSdkClientSso.distTypesCommandsListAccountsCommandMod.ListAccountsCommandOutput
 import typings.awsSdkClientSso.distTypesCommandsLogoutCommandMod.LogoutCommandInput
-import typings.awsSdkClientSso.distTypesModelsModels0Mod.AccountInfo
 import typings.awsSdkClientSso.distTypesModelsModels0Mod.GetRoleCredentialsRequest
 import typings.awsSdkClientSso.distTypesModelsModels0Mod.GetRoleCredentialsResponse
 import typings.awsSdkClientSso.distTypesModelsModels0Mod.ListAccountRolesRequest
-import typings.awsSdkClientSso.distTypesModelsModels0Mod.ListAccountRolesResponse
 import typings.awsSdkClientSso.distTypesModelsModels0Mod.ListAccountsRequest
-import typings.awsSdkClientSso.distTypesModelsModels0Mod.ListAccountsResponse
 import typings.awsSdkClientSso.distTypesModelsModels0Mod.LogoutRequest
 import typings.awsSdkClientSso.distTypesModelsModels0Mod.RoleCredentials
-import typings.awsSdkClientSso.distTypesModelsModels0Mod.RoleInfo
 import typings.awsSdkClientSso.distTypesPaginationInterfacesMod.SSOPaginationConfiguration
 import typings.awsSdkClientSso.distTypesSsoclientMod.SSOClientConfig
 import typings.awsSdkMiddlewareEndpoint.distTypesTypesMod.EndpointParameterInstructions
@@ -35,12 +31,13 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def AccountInfoFilterSensitiveLog(obj: AccountInfo): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("AccountInfoFilterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[Any]
-  
   @JSImport("@aws-sdk/client-sso", "GetRoleCredentialsCommand")
   @js.native
   open class GetRoleCredentialsCommand protected ()
     extends typings.awsSdkClientSso.distTypesCommandsMod.GetRoleCredentialsCommand {
+    /**
+      * @public
+      */
     def this(input: GetRoleCredentialsCommandInput) = this()
   }
   /* static members */
@@ -71,6 +68,9 @@ object mod {
   @js.native
   open class ListAccountRolesCommand protected ()
     extends typings.awsSdkClientSso.distTypesCommandsMod.ListAccountRolesCommand {
+    /**
+      * @public
+      */
     def this(input: ListAccountRolesCommandInput) = this()
   }
   /* static members */
@@ -85,12 +85,13 @@ object mod {
   
   inline def ListAccountRolesRequestFilterSensitiveLog(obj: ListAccountRolesRequest): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("ListAccountRolesRequestFilterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[Any]
   
-  inline def ListAccountRolesResponseFilterSensitiveLog(obj: ListAccountRolesResponse): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("ListAccountRolesResponseFilterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[Any]
-  
   @JSImport("@aws-sdk/client-sso", "ListAccountsCommand")
   @js.native
   open class ListAccountsCommand protected ()
     extends typings.awsSdkClientSso.distTypesCommandsMod.ListAccountsCommand {
+    /**
+      * @public
+      */
     def this(input: ListAccountsCommandInput) = this()
   }
   /* static members */
@@ -105,12 +106,13 @@ object mod {
   
   inline def ListAccountsRequestFilterSensitiveLog(obj: ListAccountsRequest): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("ListAccountsRequestFilterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[Any]
   
-  inline def ListAccountsResponseFilterSensitiveLog(obj: ListAccountsResponse): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("ListAccountsResponseFilterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[Any]
-  
   @JSImport("@aws-sdk/client-sso", "LogoutCommand")
   @js.native
   open class LogoutCommand protected ()
     extends typings.awsSdkClientSso.distTypesCommandsMod.LogoutCommand {
+    /**
+      * @public
+      */
     def this(input: LogoutCommandInput) = this()
   }
   /* static members */
@@ -136,8 +138,6 @@ object mod {
   }
   
   inline def RoleCredentialsFilterSensitiveLog(obj: RoleCredentials): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("RoleCredentialsFilterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[Any]
-  
-  inline def RoleInfoFilterSensitiveLog(obj: RoleInfo): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("RoleInfoFilterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   @JSImport("@aws-sdk/client-sso", "SSO")
   @js.native

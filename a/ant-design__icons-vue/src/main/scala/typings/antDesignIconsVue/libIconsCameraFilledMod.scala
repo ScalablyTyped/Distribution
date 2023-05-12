@@ -16,7 +16,7 @@ object libIconsCameraFilledMod extends Shortcut {
   @js.native
   trait CameraFilledIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_CameraFilledIconType: String = js.native

@@ -6,15 +6,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait BoldDefaultSubtle extends StObject {
   
-  var `[default]`: DefaultHovered
+  var `[default]`: HoveredPressed
   
-  var bold: DefaultHovered
+  var bold: HoveredPressed
   
-  var subtle: DefaultHovered
+  var subtle: HoveredPressed
 }
 object BoldDefaultSubtle {
   
-  inline def apply(`[default]`: DefaultHovered, bold: DefaultHovered, subtle: DefaultHovered): BoldDefaultSubtle = {
+  inline def apply(`[default]`: HoveredPressed, bold: HoveredPressed, subtle: HoveredPressed): BoldDefaultSubtle = {
     val __obj = js.Dynamic.literal(bold = bold.asInstanceOf[js.Any], subtle = subtle.asInstanceOf[js.Any])
     __obj.updateDynamic("[default]")(`[default]`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BoldDefaultSubtle]
@@ -23,10 +23,10 @@ object BoldDefaultSubtle {
   @scala.inline
   implicit open class MutableBuilder[Self <: BoldDefaultSubtle] (val x: Self) extends AnyVal {
     
-    inline def setBold(value: DefaultHovered): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
+    inline def setBold(value: HoveredPressed): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
     
-    inline def setSubtle(value: DefaultHovered): Self = StObject.set(x, "subtle", value.asInstanceOf[js.Any])
+    inline def setSubtle(value: HoveredPressed): Self = StObject.set(x, "subtle", value.asInstanceOf[js.Any])
     
-    inline def `set[default]`(value: DefaultHovered): Self = StObject.set(x, "[default]", value.asInstanceOf[js.Any])
+    inline def `set[default]`(value: HoveredPressed): Self = StObject.set(x, "[default]", value.asInstanceOf[js.Any])
   }
 }

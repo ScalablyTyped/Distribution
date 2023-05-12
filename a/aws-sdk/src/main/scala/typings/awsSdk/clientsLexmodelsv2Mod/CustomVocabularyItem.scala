@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CustomVocabularyItem extends StObject {
   
   /**
-    * The display as value for the custom vocabulary item from the custom vocabulary list.
+    * The DisplayAs value for the custom vocabulary item from the custom vocabulary list.
     */
   var displayAs: js.UndefOr[Phrase] = js.undefined
   

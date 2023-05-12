@@ -16,7 +16,7 @@ object libIconsFilePptTwoToneMod extends Shortcut {
   @js.native
   trait FilePptTwoToneIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_FilePptTwoToneIconType: String = js.native

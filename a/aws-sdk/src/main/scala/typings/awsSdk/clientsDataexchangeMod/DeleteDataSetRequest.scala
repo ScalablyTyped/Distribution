@@ -9,11 +9,11 @@ trait DeleteDataSetRequest extends StObject {
   /**
     * The unique identifier for a data set.
     */
-  var DataSetId: string
+  var DataSetId: _String
 }
 object DeleteDataSetRequest {
   
-  inline def apply(DataSetId: string): DeleteDataSetRequest = {
+  inline def apply(DataSetId: _String): DeleteDataSetRequest = {
     val __obj = js.Dynamic.literal(DataSetId = DataSetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteDataSetRequest]
   }
@@ -21,6 +21,6 @@ object DeleteDataSetRequest {
   @scala.inline
   implicit open class MutableBuilder[Self <: DeleteDataSetRequest] (val x: Self) extends AnyVal {
     
-    inline def setDataSetId(value: string): Self = StObject.set(x, "DataSetId", value.asInstanceOf[js.Any])
+    inline def setDataSetId(value: _String): Self = StObject.set(x, "DataSetId", value.asInstanceOf[js.Any])
   }
 }

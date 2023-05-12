@@ -12,6 +12,9 @@ type EdiscoveryHoldOperation = CaseOperation
 type EdiscoveryIndexOperation = CaseOperation
 
 // tslint:disable-next-line: no-empty-interface
+type EdiscoveryPurgeDataOperation = CaseOperation
+
+// tslint:disable-next-line: no-empty-interface
 type EdiscoveryReviewSetQuery = Search
 
 // tslint:disable-next-line: no-empty-interface

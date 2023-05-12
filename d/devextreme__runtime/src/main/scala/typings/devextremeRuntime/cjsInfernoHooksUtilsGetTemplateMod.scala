@@ -1,8 +1,6 @@
 package typings.devextremeRuntime
 
-import typings.devextremeRuntime.anon.ForwardRefanyanydefaultPr
-import typings.devextremeRuntime.anon.FunctiondefaultPropsunkno
-import typings.devextremeRuntime.anon.IComponentanyanydefaultPr
+import typings.devextremeRuntime.anon.DefaultProps
 import typings.inferno.distCoreTypesMod.ForwardRef
 import typings.inferno.distCoreTypesMod.IComponent
 import typings.inferno.distCoreTypesMod.Props
@@ -17,25 +15,13 @@ object cjsInfernoHooksUtilsGetTemplateMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def getTemplate(TemplateProp: ForwardRefanyanydefaultPr): js.Function | (ForwardRef[
+  inline def getTemplate(TemplateProp: InfernoComponent & DefaultProps): js.Function | (ForwardRef[
     /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for P */ Any, 
     /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for T */ Any
   ]) | (IComponent[Any, Any]) | (js.Function1[/* props */ js.UndefOr[Props[Any] | Null], VNode]) = ^.asInstanceOf[js.Dynamic].applyDynamic("getTemplate")(TemplateProp.asInstanceOf[js.Any]).asInstanceOf[js.Function | (ForwardRef[
     /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for P */ Any, 
     /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for T */ Any
   ]) | (IComponent[Any, Any]) | (js.Function1[/* props */ js.UndefOr[Props[Any] | Null], VNode])]
-  inline def getTemplate(TemplateProp: FunctiondefaultPropsunkno): js.Function | (ForwardRef[
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for P */ Any, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for T */ Any
-  ]) | (IComponent[Any, Any]) | (js.Function1[/* props */ js.UndefOr[Props[Any] | Null], VNode]) = ^.asInstanceOf[js.Dynamic].applyDynamic("getTemplate")(TemplateProp.asInstanceOf[js.Any]).asInstanceOf[js.Function | (ForwardRef[
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for P */ Any, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for T */ Any
-  ]) | (IComponent[Any, Any]) | (js.Function1[/* props */ js.UndefOr[Props[Any] | Null], VNode])]
-  inline def getTemplate(TemplateProp: IComponentanyanydefaultPr): js.Function | (ForwardRef[
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for P */ Any, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for T */ Any
-  ]) | (IComponent[Any, Any]) | (js.Function1[/* props */ js.UndefOr[Props[Any] | Null], VNode]) = ^.asInstanceOf[js.Dynamic].applyDynamic("getTemplate")(TemplateProp.asInstanceOf[js.Any]).asInstanceOf[js.Function | (ForwardRef[
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for P */ Any, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for T */ Any
-  ]) | (IComponent[Any, Any]) | (js.Function1[/* props */ js.UndefOr[Props[Any] | Null], VNode])]
+  
+  type InfernoComponent = /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<@devextreme/runtime.anon.FnCall>[1] */ js.Any
 }

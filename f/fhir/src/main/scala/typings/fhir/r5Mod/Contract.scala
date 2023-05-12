@@ -133,7 +133,7 @@ trait Contract
   var name: js.UndefOr[String] = js.undefined
   
   /**
-    * Links to Provenance records for past versions of this Contract definition, derivative, or instance, which identify key state transitions or updates that are likely to be relevant to a user looking at the current version of the Contract.  The Provence.entity indicates the target that was changed in the update. http://build.fhir.org/provenance-definitions.html#Provenance.entity.
+    * Links to Provenance records for past versions of this Contract definition, derivative, or instance, which identify key state transitions or updates that are likely to be relevant to a user looking at the current version of the Contract.  The Provenance.entity indicates the target that was changed in the update (see [Provenance.entity](provenance-definitions.html#Provenance.entity)).
     */
   var relevantHistory: js.UndefOr[js.Array[Reference]] = js.undefined
   
@@ -181,7 +181,7 @@ trait Contract
   var subject: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
-    * An explanatory or alternate user-friendly title for this Contract definition, derivative, or instance in any legal state.t giving additional information about its content.
+    * A more detailed or qualifying explanatory or alternate user-friendly title for this Contract definition, derivative, or instance in any legal state.
     */
   var subtitle: js.UndefOr[String] = js.undefined
   
@@ -196,17 +196,19 @@ trait Contract
   var term: js.UndefOr[js.Array[ContractTerm]] = js.undefined
   
   /**
-    * A short, descriptive, user-friendly title for this Contract definition, derivative, or instance in any legal state.t giving additional information about its content.
+    * A short, descriptive, user-friendly title for this Contract definition, derivative, or instance in any legal state.
     */
   var title: js.UndefOr[String] = js.undefined
   
   /**
-    * Narrows the range of legal concerns to focus on the achievement of specific contractual objectives.
+    * Contractual areas of concern are very broad. This element supports narrowing the area of concern to more specific term topics within this Contract. Given the wide range of contract topics, implementers need to be cognizant of the business use case for which they are designing a FHIR Contract, and narrowly specify the topic being represented with respect to the Contract.type and any specializing Contract.subtype. The same topic, e.g., an asset such as a good or service, such as a real property, medical supply, insurance, information, a procedure or employment, or a manner of conduct, such adherence to a privacy, trust, or security policy, may be the topic of multiple types of contracts.
+    * One way to determine the Contract.topic is to answer the question: "What is the overall objective of this legal instrument?". The Contract.topic is described with more detail by the terms of the Contract.
     */
   var topicCodeableConcept: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
-    * Narrows the range of legal concerns to focus on the achievement of specific contractual objectives.
+    * Contractual areas of concern are very broad. This element supports narrowing the area of concern to more specific term topics within this Contract. Given the wide range of contract topics, implementers need to be cognizant of the business use case for which they are designing a FHIR Contract, and narrowly specify the topic being represented with respect to the Contract.type and any specializing Contract.subtype. The same topic, e.g., an asset such as a good or service, such as a real property, medical supply, insurance, information, a procedure or employment, or a manner of conduct, such adherence to a privacy, trust, or security policy, may be the topic of multiple types of contracts.
+    * One way to determine the Contract.topic is to answer the question: "What is the overall objective of this legal instrument?". The Contract.topic is described with more detail by the terms of the Contract.
     */
   var topicReference: js.UndefOr[Reference] = js.undefined
   
@@ -221,8 +223,8 @@ trait Contract
   var url: js.UndefOr[String] = js.undefined
   
   /**
-    * Note -  This is a business versionId, not a resource version id (see discussion http://build.fhir.org/resource.html#versions)
-    * Comments - There may be different contract instances that have the same identifier but different versions. The version can be appended to the url in a reference to allow a reference to a particular business version of the plan definition with the format [url]|[version].
+    * Note -  This is a business versionId, not a resource version id (see discussion at [Versioning](resource.html#versions))
+    * Comments - There may be different contract instances that have the same identifier but different versions. The version can be appended to the url in a reference to allow a reference to a particular business version of the plan definition with the format [url]|[version]. The version SHOULD NOT contain a '#' - see [Business Version](resource.html#bv-format).
     */
   var version: js.UndefOr[String] = js.undefined
 }

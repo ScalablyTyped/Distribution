@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetApplicationOutput extends StObject {
   
   /**
-    * 
+    * Returns all of the metadata of an application registered with AWS Systems Manager for SAP.
     */
   var Application: js.UndefOr[typings.awsSdk.clientsSsmsapMod.Application] = js.undefined
   
   /**
-    * 
+    * The tags of a registered application.
     */
   var Tags: js.UndefOr[TagMap] = js.undefined
 }

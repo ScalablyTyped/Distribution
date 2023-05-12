@@ -12,6 +12,7 @@ import typings.primereact.primereactStrings.all
 import typings.primereact.primereactStrings.ascending
 import typings.primereact.primereactStrings.assertive
 import typings.primereact.primereactStrings.both
+import typings.primereact.primereactStrings.bottom
 import typings.primereact.primereactStrings.copy
 import typings.primereact.primereactStrings.date
 import typings.primereact.primereactStrings.decimal
@@ -23,6 +24,7 @@ import typings.primereact.primereactStrings.grammar
 import typings.primereact.primereactStrings.grid
 import typings.primereact.primereactStrings.horizontal
 import typings.primereact.primereactStrings.inherit
+import typings.primereact.primereactStrings.left
 import typings.primereact.primereactStrings.link
 import typings.primereact.primereactStrings.list
 import typings.primereact.primereactStrings.listbox
@@ -40,12 +42,14 @@ import typings.primereact.primereactStrings.page
 import typings.primereact.primereactStrings.polite
 import typings.primereact.primereactStrings.popup
 import typings.primereact.primereactStrings.removals
+import typings.primereact.primereactStrings.right
 import typings.primereact.primereactStrings.search
 import typings.primereact.primereactStrings.spelling
 import typings.primereact.primereactStrings.step
 import typings.primereact.primereactStrings.tel
 import typings.primereact.primereactStrings.text
 import typings.primereact.primereactStrings.time
+import typings.primereact.primereactStrings.top
 import typings.primereact.primereactStrings.tree
 import typings.primereact.primereactStrings.url
 import typings.primereact.primereactStrings.vertical
@@ -102,19 +106,33 @@ object dockDockMod {
     def this(props: DockProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: DockProps, context: Any) = this()
     
+    /**
+      * Used to get container element.
+      * @return {HTMLDivElement} Container element
+      */
     def getElement(): HTMLDivElement = js.native
   }
   
+  /**
+    * Custom footer template
+    * @see {@link DockProps.footer}
+    * @extends {DockHeaderTemplateOptions}
+    */
   type DockFooterTemplateOptions = DockHeaderTemplateOptions
   
-  type DockFooterType = ReactNode | (js.Function1[/* options */ DockFooterTemplateOptions, ReactNode])
-  
+  /**
+    * Custom header template
+    * @see {@link DockProps.header}
+    */
   trait DockHeaderTemplateOptions extends StObject {
     
+    /**
+      * All component props
+      */
     var props: DockProps
   }
   object DockHeaderTemplateOptions {
@@ -129,26 +147,6 @@ object dockDockMod {
       
       inline def setProps(value: DockProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     }
-  }
-  
-  type DockHeaderType = ReactNode | (js.Function1[/* options */ DockHeaderTemplateOptions, ReactNode])
-  
-  /* Rewritten from type alias, can be one of: 
-    - typings.primereact.primereactStrings.top
-    - typings.primereact.primereactStrings.bottom
-    - typings.primereact.primereactStrings.left
-    - typings.primereact.primereactStrings.right
-  */
-  trait DockPositionType extends StObject
-  object DockPositionType {
-    
-    inline def bottom: typings.primereact.primereactStrings.bottom = "bottom".asInstanceOf[typings.primereact.primereactStrings.bottom]
-    
-    inline def left: typings.primereact.primereactStrings.left = "left".asInstanceOf[typings.primereact.primereactStrings.left]
-    
-    inline def right: typings.primereact.primereactStrings.right = "right".asInstanceOf[typings.primereact.primereactStrings.right]
-    
-    inline def top: typings.primereact.primereactStrings.top = "top".asInstanceOf[typings.primereact.primereactStrings.top]
   }
   
   /* Inlined parent std.Omit<react.react.DetailedHTMLProps<react.react.HTMLAttributes<std.HTMLDivElement>, std.HTMLDivElement>, 'ref'> */
@@ -260,13 +258,21 @@ object dockDockMod {
     
     var autoCorrect: js.UndefOr[String] = js.undefined
     
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
+    
     var autoSave: js.UndefOr[String] = js.undefined
     
+    /**
+      * Used to get the child elements of the component.
+      * @readonly
+      */
     var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
     var color: js.UndefOr[String] = js.undefined
+    
+    var content: js.UndefOr[String] = js.undefined
     
     var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
@@ -284,9 +290,15 @@ object dockDockMod {
     
     var draggable: js.UndefOr[Booleanish] = js.undefined
     
-    var footer: js.UndefOr[DockFooterType] = js.undefined
+    /**
+      * Template of footer element.
+      */
+    var footer: js.UndefOr[ReactNode | (js.Function1[/* options */ DockFooterTemplateOptions, ReactNode])] = js.undefined
     
-    var header: js.UndefOr[DockHeaderType] = js.undefined
+    /**
+      * Template of header element.
+      */
+    var header: js.UndefOr[ReactNode | (js.Function1[/* options */ DockHeaderTemplateOptions, ReactNode])] = js.undefined
     
     var hidden: js.UndefOr[Boolean] = js.undefined
     
@@ -312,8 +324,14 @@ object dockDockMod {
     
     var lang: js.UndefOr[String] = js.undefined
     
+    /**
+      * Whether to allow scale animation.
+      */
     var magnification: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * MenuModel instance to define the action items.
+      */
     var model: js.UndefOr[
         js.Array[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MenuItem */ Any
@@ -484,7 +502,11 @@ object dockDockMod {
     
     var placeholder: js.UndefOr[String] = js.undefined
     
-    var position: js.UndefOr[DockPositionType] = js.undefined
+    /**
+      * Position of element. Valid values are 'bottom', 'top', 'left' and 'right'.
+      * @defaultValue bottom
+      */
+    var position: js.UndefOr[top | bottom | left | right] = js.undefined
     
     var prefix: js.UndefOr[String] = js.undefined
     
@@ -492,9 +514,13 @@ object dockDockMod {
     
     var radioGroup: js.UndefOr[String] = js.undefined
     
+    var rel: js.UndefOr[String] = js.undefined
+    
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
+    
+    var rev: js.UndefOr[String] = js.undefined
     
     var role: js.UndefOr[AriaRole] = js.undefined
     
@@ -742,6 +768,10 @@ object dockDockMod {
       
       inline def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
       
+      inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+      
+      inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+      
       inline def setAutoSave(value: String): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
       
       inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
@@ -758,9 +788,13 @@ object dockDockMod {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
       inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
       inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
@@ -792,13 +826,13 @@ object dockDockMod {
       
       inline def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
       
-      inline def setFooter(value: DockFooterType): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
+      inline def setFooter(value: ReactNode | (js.Function1[/* options */ DockFooterTemplateOptions, ReactNode])): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
       
       inline def setFooterFunction1(value: /* options */ DockFooterTemplateOptions => ReactNode): Self = StObject.set(x, "footer", js.Any.fromFunction1(value))
       
       inline def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
       
-      inline def setHeader(value: DockHeaderType): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      inline def setHeader(value: ReactNode | (js.Function1[/* options */ DockHeaderTemplateOptions, ReactNode])): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
       inline def setHeaderFunction1(value: /* options */ DockHeaderTemplateOptions => ReactNode): Self = StObject.set(x, "header", js.Any.fromFunction1(value))
       
@@ -1198,7 +1232,7 @@ object dockDockMod {
       
       inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
       
-      inline def setPosition(value: DockPositionType): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: top | bottom | left | right): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
       inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
       
@@ -1214,6 +1248,10 @@ object dockDockMod {
       
       inline def setRadioGroupUndefined: Self = StObject.set(x, "radioGroup", js.undefined)
       
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      
+      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+      
       inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
       inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
@@ -1221,6 +1259,10 @@ object dockDockMod {
       inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+      
+      inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+      
+      inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
       
       inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       

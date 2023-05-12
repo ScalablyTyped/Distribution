@@ -13,4 +13,8 @@ object keysPagesMod {
   @JSImport("@nginstack/web-framework/keys/Pages", "LOGIN")
   @js.native
   val LOGIN: Double = js.native
+  
+  @JSImport("@nginstack/web-framework/keys/Pages", "LOGOUT")
+  @js.native
+  val LOGOUT: Double = js.native
 }

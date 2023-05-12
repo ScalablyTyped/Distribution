@@ -6,13 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait OrgRepositoryidSecretname extends StObject {
   
-  /** The organization name. The name is not case sensitive. */
   @JSName("org")
   var org_ : String
   
   var repository_id: Double
   
-  /** The name of the secret. */
   var secret_name: String
 }
 object OrgRepositoryidSecretname {

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LambdaAuthorizerConfig extends StObject {
   
   /**
-    * The number of seconds a response should be cached for. The default is 5 minutes (300 seconds). The Lambda function can override this by returning a ttlOverride key in its response. A value of 0 disables caching of responses.
+    * The number of seconds a response should be cached for. The default is 0 seconds, which disables caching. If you don't specify a value for authorizerResultTtlInSeconds, the default value is used. The maximum value is one hour (3600 seconds). The Lambda function can override this by returning a ttlOverride key in its response.
     */
   var authorizerResultTtlInSeconds: js.UndefOr[TTL] = js.undefined
   

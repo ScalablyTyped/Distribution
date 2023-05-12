@@ -1,7 +1,7 @@
 
 # Scala.js typings for trace-event-lib
 
-Typings are for version 1.3.1
+Typings are for version 1.4.1
 
 
 

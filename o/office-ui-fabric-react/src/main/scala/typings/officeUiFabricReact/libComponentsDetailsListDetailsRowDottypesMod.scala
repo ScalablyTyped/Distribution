@@ -10,6 +10,7 @@ import typings.officeUiFabricReact.libComponentsDetailsListDetailsRowCheckDottyp
 import typings.officeUiFabricReact.libComponentsDetailsListDetailsRowDotbaseMod.DetailsRowBase
 import typings.officeUiFabricReact.libComponentsDetailsListDetailsRowFieldsDottypesMod.IDetailsRowFieldsProps
 import typings.officeUiFabricReact.libComponentsGroupedListGroupedListDottypesMod.CollapseAllVisibility
+import typings.officeUiFabricReact.libComponentsGroupedListGroupedListDottypesMod.IGroup
 import typings.officeUiFabricReact.libUtilitiesDecoratorsWithViewportMod.IViewport
 import typings.officeUiFabricReact.libUtilitiesDragdropInterfacesMod.IDragDropEvents
 import typings.officeUiFabricReact.libUtilitiesDragdropInterfacesMod.IDragDropHelper
@@ -266,6 +267,13 @@ object libComponentsDetailsListDetailsRowDottypesMod {
     var getRowAriaLabel: js.UndefOr[js.Function1[/* item */ Any, String]] = js.undefined
     
     /**
+      * Group row item belongs to.
+      * When using GroupedList, this needs to be passed in order to calculate
+      * the correct aria-posinset and aria-setsize values.
+      */
+    var group: js.UndefOr[IGroup] = js.undefined
+    
+    /**
       * Nesting depth of a grouping
       */
     var groupNestingDepth: js.UndefOr[Double] = js.undefined
@@ -472,9 +480,13 @@ object libComponentsDetailsListDetailsRowDottypesMod {
       
       inline def setGetRowAriaLabelUndefined: Self = StObject.set(x, "getRowAriaLabel", js.undefined)
       
+      inline def setGroup(value: IGroup): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+      
       inline def setGroupNestingDepth(value: Double): Self = StObject.set(x, "groupNestingDepth", value.asInstanceOf[js.Any])
       
       inline def setGroupNestingDepthUndefined: Self = StObject.set(x, "groupNestingDepth", js.undefined)
+      
+      inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       

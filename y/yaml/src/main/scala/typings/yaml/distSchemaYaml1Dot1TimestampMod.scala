@@ -35,7 +35,7 @@ object distSchemaYaml1Dot1TimestampMod {
       */
     @JSImport("yaml/dist/schema/yaml-1.1/timestamp", "timestamp.default")
     @js.native
-    def default: Boolean = js.native
+    def default: js.UndefOr[Boolean] = js.native
     
     @JSImport("yaml/dist/schema/yaml-1.1/timestamp", "timestamp.collection")
     @js.native
@@ -56,7 +56,7 @@ object distSchemaYaml1Dot1TimestampMod {
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("createNode")(x.asInstanceOf[js.Any])
     
-    inline def default_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
+    inline def default_=(x: js.UndefOr[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
     
     /**
       * If a tag has multiple forms that should be parsed and/or stringified

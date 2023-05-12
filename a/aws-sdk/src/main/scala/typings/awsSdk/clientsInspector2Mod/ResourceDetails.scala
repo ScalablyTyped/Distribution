@@ -15,6 +15,11 @@ trait ResourceDetails extends StObject {
     * An object that contains details about the Amazon ECR container image involved in the finding.
     */
   var awsEcrContainerImage: js.UndefOr[AwsEcrContainerImageDetails] = js.undefined
+  
+  /**
+    * A summary of the information about an AWS Lambda function affected by a finding.
+    */
+  var awsLambdaFunction: js.UndefOr[AwsLambdaFunctionDetails] = js.undefined
 }
 object ResourceDetails {
   
@@ -33,5 +38,9 @@ object ResourceDetails {
     inline def setAwsEcrContainerImage(value: AwsEcrContainerImageDetails): Self = StObject.set(x, "awsEcrContainerImage", value.asInstanceOf[js.Any])
     
     inline def setAwsEcrContainerImageUndefined: Self = StObject.set(x, "awsEcrContainerImage", js.undefined)
+    
+    inline def setAwsLambdaFunction(value: AwsLambdaFunctionDetails): Self = StObject.set(x, "awsLambdaFunction", value.asInstanceOf[js.Any])
+    
+    inline def setAwsLambdaFunctionUndefined: Self = StObject.set(x, "awsLambdaFunction", js.undefined)
   }
 }

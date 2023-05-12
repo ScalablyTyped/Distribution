@@ -1,7 +1,7 @@
 
 # Scala.js typings for just-snake-case
 
-Typings are for version 3.1.1
+Typings are for version 3.2.0
 
 ## Library description:
 convert a string to snake case

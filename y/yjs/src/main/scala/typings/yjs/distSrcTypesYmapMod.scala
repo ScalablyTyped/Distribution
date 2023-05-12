@@ -94,11 +94,13 @@ object distSrcTypesYmapMod {
     
     /**
       * Adds or updates an element with a specified key and value.
+      * @template {MapType} VAL
       *
       * @param {string} key The key of the element to add to this YMap
-      * @param {MapType} value The value of the element to add
+      * @param {VAL} value The value of the element to add
+      * @return {VAL}
       */
-    def set(key: String, value: MapType): MapType = js.native
+    def set[VAL /* <: MapType */](key: String, value: VAL): VAL = js.native
     
     /**
       * Returns the size of the YMap (count of key/value pairs)
@@ -128,6 +130,6 @@ object distSrcTypesYmapMod {
     var keysChanged: Set[Any] = js.native
   }
   
-  inline def readYMap(decoder: UpdateDecoderV1): YMap[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("readYMap")(decoder.asInstanceOf[js.Any]).asInstanceOf[YMap[Any]]
-  inline def readYMap(decoder: UpdateDecoderV2): YMap[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("readYMap")(decoder.asInstanceOf[js.Any]).asInstanceOf[YMap[Any]]
+  inline def readYMap(_decoder: UpdateDecoderV1): YMap[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("readYMap")(_decoder.asInstanceOf[js.Any]).asInstanceOf[YMap[Any]]
+  inline def readYMap(_decoder: UpdateDecoderV2): YMap[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("readYMap")(_decoder.asInstanceOf[js.Any]).asInstanceOf[YMap[Any]]
 }

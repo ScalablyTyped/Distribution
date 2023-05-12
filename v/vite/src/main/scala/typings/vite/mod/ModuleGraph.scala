@@ -10,8 +10,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("vite", "ModuleGraph")
 @js.native
 open class ModuleGraph protected () extends StObject {
+  /* Excluded from this release type: _unresolvedUrlToModuleMap */
+  /* Excluded from this release type: _ssrUnresolvedUrlToModuleMap */
   def this(resolveId: js.Function2[/* url */ String, /* ssr */ Boolean, js.Promise[PartialResolvedId | Null]]) = this()
   
+  /* Excluded from this release type: _ensureEntryFromUrl */
   def createFileOnlyEntry(file: String): ModuleNode = js.native
   
   def ensureEntryFromUrl(rawUrl: String): js.Promise[ModuleNode] = js.native
@@ -34,8 +37,12 @@ open class ModuleGraph protected () extends StObject {
   
   def invalidateModule(mod: ModuleNode): Unit = js.native
   def invalidateModule(mod: ModuleNode, seen: Unit, timestamp: Double): Unit = js.native
+  def invalidateModule(mod: ModuleNode, seen: Unit, timestamp: Double, isHmr: Boolean): Unit = js.native
+  def invalidateModule(mod: ModuleNode, seen: Unit, timestamp: Unit, isHmr: Boolean): Unit = js.native
   def invalidateModule(mod: ModuleNode, seen: Set[ModuleNode]): Unit = js.native
   def invalidateModule(mod: ModuleNode, seen: Set[ModuleNode], timestamp: Double): Unit = js.native
+  def invalidateModule(mod: ModuleNode, seen: Set[ModuleNode], timestamp: Double, isHmr: Boolean): Unit = js.native
+  def invalidateModule(mod: ModuleNode, seen: Set[ModuleNode], timestamp: Unit, isHmr: Boolean): Unit = js.native
   
   def onFileChange(file: String): Unit = js.native
   

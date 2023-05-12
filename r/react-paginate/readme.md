@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-paginate
 
-Typings are for version 8.1.3
+Typings are for version 8.2.0
 
 ## Library description:
 A ReactJS component that creates a pagination.

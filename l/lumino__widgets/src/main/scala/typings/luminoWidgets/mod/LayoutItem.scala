@@ -15,6 +15,7 @@ open class LayoutItem protected ()
     *
     * #### Notes
     * The widget will be set to absolute positioning.
+    * The widget will use strict CSS containment.
     */
   def this(widget: typings.luminoWidgets.typesWidgetMod.Widget) = this()
 }

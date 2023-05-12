@@ -194,7 +194,7 @@ object libTypesMod {
     
     @JSName("$as")
     var $as: js.UndefOr[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177, starting with typings.react.mod.ComponentType[scala.Any], typings.styletronReact.styletronReactStrings.a, typings.styletronReact.styletronReactStrings.abbr */ Any
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 178, starting with typings.react.mod.ComponentType[scala.Any], typings.styletronReact.styletronReactStrings.a, typings.styletronReact.styletronReactStrings.abbr */ Any
       ] = js.undefined
     
     @JSName("$ref")
@@ -222,7 +222,7 @@ object libTypesMod {
     implicit open class MutableBuilder[Self <: StyletronProps[?], Props] (val x: Self & StyletronProps[Props]) extends AnyVal {
       
       inline def set$as(
-        value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177, starting with typings.react.mod.ComponentType[scala.Any], typings.styletronReact.styletronReactStrings.a, typings.styletronReact.styletronReactStrings.abbr */ Any
+        value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 178, starting with typings.react.mod.ComponentType[scala.Any], typings.styletronReact.styletronReactStrings.a, typings.styletronReact.styletronReactStrings.abbr */ Any
       ): Self = StObject.set(x, "$as", value.asInstanceOf[js.Any])
       
       inline def set$asUndefined: Self = StObject.set(x, "$as", js.undefined)

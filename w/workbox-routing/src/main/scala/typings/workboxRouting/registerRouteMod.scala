@@ -1,10 +1,9 @@
 package typings.workboxRouting
 
-import typings.workboxRouting.regExpRouteMod.RegExpRoute
+import typings.workboxCore.typesMod.RouteHandler
+import typings.workboxCore.typesMod.RouteMatchCallback
 import typings.workboxRouting.routeMod.Route
-import typings.workboxRouting.typesHttpmethodMod.HTTPMethod
-import typings.workboxRouting.typesRouteHandlerMod.RouteHandler
-import typings.workboxRouting.typesRouteMatchCallbackMod.RouteMatchCallback
+import typings.workboxRouting.utilsConstantsMod.HTTPMethod
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,26 +14,38 @@ object registerRouteMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def registerRoute(capture: String): Route[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("registerRoute")(capture.asInstanceOf[js.Any]).asInstanceOf[Route[Boolean]]
-  inline def registerRoute(capture: String, handler: Unit, method: HTTPMethod): Route[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("registerRoute")(capture.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[Route[Boolean]]
-  inline def registerRoute(capture: String, handler: RouteHandler): Route[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("registerRoute")(capture.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Route[Boolean]]
-  inline def registerRoute(capture: String, handler: RouteHandler, method: HTTPMethod): Route[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("registerRoute")(capture.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[Route[Boolean]]
-  inline def registerRoute(capture: js.RegExp): RegExpRoute = ^.asInstanceOf[js.Dynamic].applyDynamic("registerRoute")(capture.asInstanceOf[js.Any]).asInstanceOf[RegExpRoute]
-  inline def registerRoute(capture: js.RegExp, handler: Unit, method: HTTPMethod): RegExpRoute = (^.asInstanceOf[js.Dynamic].applyDynamic("registerRoute")(capture.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[RegExpRoute]
-  inline def registerRoute(capture: js.RegExp, handler: RouteHandler): RegExpRoute = (^.asInstanceOf[js.Dynamic].applyDynamic("registerRoute")(capture.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[RegExpRoute]
-  inline def registerRoute(capture: js.RegExp, handler: RouteHandler, method: HTTPMethod): RegExpRoute = (^.asInstanceOf[js.Dynamic].applyDynamic("registerRoute")(capture.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[RegExpRoute]
-  inline def registerRoute(capture: RegisterRouteCapture): Route[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("registerRoute")(capture.asInstanceOf[js.Any]).asInstanceOf[Route[Any]]
-  inline def registerRoute(capture: RegisterRouteCapture, handler: Unit, method: HTTPMethod): Route[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("registerRoute")(capture.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[Route[Any]]
-  inline def registerRoute(capture: RegisterRouteCapture, handler: RouteHandler): Route[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("registerRoute")(capture.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Route[Any]]
-  inline def registerRoute(capture: RegisterRouteCapture, handler: RouteHandler, method: HTTPMethod): Route[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("registerRoute")(capture.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[Route[Any]]
-  inline def registerRoute[MatchReturn](capture: Route[MatchReturn]): Route[MatchReturn] = ^.asInstanceOf[js.Dynamic].applyDynamic("registerRoute")(capture.asInstanceOf[js.Any]).asInstanceOf[Route[MatchReturn]]
-  inline def registerRoute[MatchReturn](capture: Route[MatchReturn], handler: Unit, method: HTTPMethod): Route[MatchReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("registerRoute")(capture.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[Route[MatchReturn]]
-  inline def registerRoute[MatchReturn](capture: Route[MatchReturn], handler: RouteHandler): Route[MatchReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("registerRoute")(capture.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Route[MatchReturn]]
-  inline def registerRoute[MatchReturn](capture: Route[MatchReturn], handler: RouteHandler, method: HTTPMethod): Route[MatchReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("registerRoute")(capture.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[Route[MatchReturn]]
-  inline def registerRoute[MatchReturn](capture: RouteMatchCallback[MatchReturn]): Route[MatchReturn] = ^.asInstanceOf[js.Dynamic].applyDynamic("registerRoute")(capture.asInstanceOf[js.Any]).asInstanceOf[Route[MatchReturn]]
-  inline def registerRoute[MatchReturn](capture: RouteMatchCallback[MatchReturn], handler: Unit, method: HTTPMethod): Route[MatchReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("registerRoute")(capture.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[Route[MatchReturn]]
-  inline def registerRoute[MatchReturn](capture: RouteMatchCallback[MatchReturn], handler: RouteHandler): Route[MatchReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("registerRoute")(capture.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Route[MatchReturn]]
-  inline def registerRoute[MatchReturn](capture: RouteMatchCallback[MatchReturn], handler: RouteHandler, method: HTTPMethod): Route[MatchReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("registerRoute")(capture.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[Route[MatchReturn]]
-  
-  type RegisterRouteCapture = String | js.RegExp | RouteMatchCallback[Any] | Route[Any]
+  inline def registerRoute(capture: String): Route = ^.asInstanceOf[js.Dynamic].applyDynamic("registerRoute")(capture.asInstanceOf[js.Any]).asInstanceOf[Route]
+  inline def registerRoute(capture: String, handler: Unit, method: HTTPMethod): Route = (^.asInstanceOf[js.Dynamic].applyDynamic("registerRoute")(capture.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[Route]
+  inline def registerRoute(capture: String, handler: RouteHandler): Route = (^.asInstanceOf[js.Dynamic].applyDynamic("registerRoute")(capture.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Route]
+  inline def registerRoute(capture: String, handler: RouteHandler, method: HTTPMethod): Route = (^.asInstanceOf[js.Dynamic].applyDynamic("registerRoute")(capture.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[Route]
+  /**
+    * Easily register a RegExp, string, or function with a caching
+    * strategy to a singleton Router instance.
+    *
+    * This method will generate a Route for you if needed and
+    * call {@link workbox-routing.Router#registerRoute}.
+    *
+    * @param {RegExp|string|workbox-routing.Route~matchCallback|workbox-routing.Route} capture
+    * If the capture param is a `Route`, all other arguments will be ignored.
+    * @param {workbox-routing~handlerCallback} [handler] A callback
+    * function that returns a Promise resulting in a Response. This parameter
+    * is required if `capture` is not a `Route` object.
+    * @param {string} [method='GET'] The HTTP method to match the Route
+    * against.
+    * @return {workbox-routing.Route} The generated `Route`.
+    *
+    * @memberof workbox-routing
+    */
+  inline def registerRoute(capture: js.RegExp): Route = ^.asInstanceOf[js.Dynamic].applyDynamic("registerRoute")(capture.asInstanceOf[js.Any]).asInstanceOf[Route]
+  inline def registerRoute(capture: js.RegExp, handler: Unit, method: HTTPMethod): Route = (^.asInstanceOf[js.Dynamic].applyDynamic("registerRoute")(capture.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[Route]
+  inline def registerRoute(capture: js.RegExp, handler: RouteHandler): Route = (^.asInstanceOf[js.Dynamic].applyDynamic("registerRoute")(capture.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Route]
+  inline def registerRoute(capture: js.RegExp, handler: RouteHandler, method: HTTPMethod): Route = (^.asInstanceOf[js.Dynamic].applyDynamic("registerRoute")(capture.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[Route]
+  inline def registerRoute(capture: RouteMatchCallback): Route = ^.asInstanceOf[js.Dynamic].applyDynamic("registerRoute")(capture.asInstanceOf[js.Any]).asInstanceOf[Route]
+  inline def registerRoute(capture: RouteMatchCallback, handler: Unit, method: HTTPMethod): Route = (^.asInstanceOf[js.Dynamic].applyDynamic("registerRoute")(capture.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[Route]
+  inline def registerRoute(capture: RouteMatchCallback, handler: RouteHandler): Route = (^.asInstanceOf[js.Dynamic].applyDynamic("registerRoute")(capture.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Route]
+  inline def registerRoute(capture: RouteMatchCallback, handler: RouteHandler, method: HTTPMethod): Route = (^.asInstanceOf[js.Dynamic].applyDynamic("registerRoute")(capture.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[Route]
+  inline def registerRoute(capture: Route): Route = ^.asInstanceOf[js.Dynamic].applyDynamic("registerRoute")(capture.asInstanceOf[js.Any]).asInstanceOf[Route]
+  inline def registerRoute(capture: Route, handler: Unit, method: HTTPMethod): Route = (^.asInstanceOf[js.Dynamic].applyDynamic("registerRoute")(capture.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[Route]
+  inline def registerRoute(capture: Route, handler: RouteHandler): Route = (^.asInstanceOf[js.Dynamic].applyDynamic("registerRoute")(capture.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Route]
+  inline def registerRoute(capture: Route, handler: RouteHandler, method: HTTPMethod): Route = (^.asInstanceOf[js.Dynamic].applyDynamic("registerRoute")(capture.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[Route]
 }

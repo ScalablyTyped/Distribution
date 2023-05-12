@@ -81,6 +81,8 @@ trait Contentsurl extends StObject {
   
   var git_url: String
   
+  var has_discussions: js.UndefOr[Boolean] = js.undefined
+  
   var has_downloads: Boolean
   
   var has_issues: Boolean
@@ -367,6 +369,10 @@ object Contentsurl {
     inline def setGit_tags_url(value: String): Self = StObject.set(x, "git_tags_url", value.asInstanceOf[js.Any])
     
     inline def setGit_url(value: String): Self = StObject.set(x, "git_url", value.asInstanceOf[js.Any])
+    
+    inline def setHas_discussions(value: Boolean): Self = StObject.set(x, "has_discussions", value.asInstanceOf[js.Any])
+    
+    inline def setHas_discussionsUndefined: Self = StObject.set(x, "has_discussions", js.undefined)
     
     inline def setHas_downloads(value: Boolean): Self = StObject.set(x, "has_downloads", value.asInstanceOf[js.Any])
     

@@ -1,5 +1,6 @@
 package typings.expoConfigTypes.anon
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.expoConfigTypes.expoConfigTypesStrings.ON_ERROR_RECOVERY
 import typings.expoConfigTypes.expoConfigTypesStrings.ON_LOAD
 import org.scalablytyped.runtime.StObject
@@ -32,6 +33,11 @@ trait CheckAutomatically extends StObject {
     * How long (in ms) to allow for fetching OTA updates before falling back to a cached version of the app. Defaults to 0. Must be between 0 and 300000 (5 minutes).
     */
   var fallbackToCacheTimeout: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * Extra HTTP headers to include in HTTP requests made by `expo-updates`. These may override preset headers.
+    */
+  var requestHeaders: js.UndefOr[StringDictionary[Any]] = js.undefined
   
   /**
     * URL from which expo-updates will fetch update manifests
@@ -67,6 +73,10 @@ object CheckAutomatically {
     inline def setFallbackToCacheTimeout(value: Double): Self = StObject.set(x, "fallbackToCacheTimeout", value.asInstanceOf[js.Any])
     
     inline def setFallbackToCacheTimeoutUndefined: Self = StObject.set(x, "fallbackToCacheTimeout", js.undefined)
+    
+    inline def setRequestHeaders(value: StringDictionary[Any]): Self = StObject.set(x, "requestHeaders", value.asInstanceOf[js.Any])
+    
+    inline def setRequestHeadersUndefined: Self = StObject.set(x, "requestHeaders", js.undefined)
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     

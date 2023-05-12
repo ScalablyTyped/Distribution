@@ -27,8 +27,6 @@ trait ClientConfig extends StObject {
   
   var options: js.UndefOr[String] = js.undefined
   
-  var parseInputDatesAsUTC: js.UndefOr[Boolean] = js.undefined
-  
   var password: js.UndefOr[String | (js.Function0[String | js.Promise[String]])] = js.undefined
   
   var port: js.UndefOr[Double] = js.undefined
@@ -90,10 +88,6 @@ object ClientConfig {
     inline def setOptions(value: String): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
-    
-    inline def setParseInputDatesAsUTC(value: Boolean): Self = StObject.set(x, "parseInputDatesAsUTC", value.asInstanceOf[js.Any])
-    
-    inline def setParseInputDatesAsUTCUndefined: Self = StObject.set(x, "parseInputDatesAsUTC", js.undefined)
     
     inline def setPassword(value: String | (js.Function0[String | js.Promise[String]])): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     

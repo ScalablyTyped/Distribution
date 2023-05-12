@@ -17,8 +17,8 @@ open class IndexBuffer protected ()
   /**
     * Create a new IndexBuffer instance.
     *
-    * @param {GraphicsDevice} graphicsDevice - The graphics device used to manage this index
-    * buffer.
+    * @param {import('./graphics-device.js').GraphicsDevice} graphicsDevice - The graphics device
+    * used to manage this index buffer.
     * @param {number} format - The type of each index to be stored in the index buffer. Can be:
     *
     * - {@link INDEXFORMAT_UINT8}
@@ -37,12 +37,12 @@ open class IndexBuffer protected ()
     * @example
     * // Create an index buffer holding 3 16-bit indices. The buffer is marked as
     * // static, hinting that the buffer will never be modified.
-    * var indices = new UInt16Array([0, 1, 2]);
-    * var indexBuffer = new pc.IndexBuffer(graphicsDevice,
-    *                                      pc.INDEXFORMAT_UINT16,
-    *                                      3,
-    *                                      pc.BUFFER_STATIC,
-    *                                      indices);
+    * const indices = new UInt16Array([0, 1, 2]);
+    * const indexBuffer = new pc.IndexBuffer(graphicsDevice,
+    *                                        pc.INDEXFORMAT_UINT16,
+    *                                        3,
+    *                                        pc.BUFFER_STATIC,
+    *                                        indices);
     */
   def this(graphicsDevice: typings.playcanvas.mod.GraphicsDevice, format: Double, numIndices: Double) = this()
   def this(

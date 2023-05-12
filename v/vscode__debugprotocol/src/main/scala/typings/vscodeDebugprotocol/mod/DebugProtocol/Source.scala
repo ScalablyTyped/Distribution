@@ -7,8 +7,8 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** A Source is a descriptor for source code.
-		It is returned from the debug adapter as part of a StackFrame and it is used by clients when specifying breakpoints.
+/** A `Source` is a descriptor for source code.
+		It is returned from the debug adapter as part of a `StackFrame` and it is used by clients when specifying breakpoints.
 	*/
 trait Source extends StObject {
   
@@ -29,7 +29,7 @@ trait Source extends StObject {
   var origin: js.UndefOr[String] = js.undefined
   
   /** The path of the source to be shown in the UI.
-  			It is only used to locate and load the content of the source if no sourceReference is specified (or its value is 0).
+  			It is only used to locate and load the content of the source if no `sourceReference` is specified (or its value is 0).
   		*/
   var path: js.UndefOr[String] = js.undefined
   
@@ -39,7 +39,7 @@ trait Source extends StObject {
   var presentationHint: js.UndefOr[normal | emphasize | deemphasize] = js.undefined
   
   /** If the value > 0 the contents of the source must be retrieved through the `source` request (even if a path is specified).
-  			A `sourceReference` is only valid for a session, so it can not be used to persist a source.
+  			Since a `sourceReference` is only valid for a session, it can not be used to persist a source.
   			The value should be less than or equal to 2147483647 (2^31-1).
   		*/
   var sourceReference: js.UndefOr[Double] = js.undefined

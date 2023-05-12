@@ -16,7 +16,7 @@ object libIconsGoldFilledMod extends Shortcut {
   @js.native
   trait GoldFilledIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_GoldFilledIconType: String = js.native

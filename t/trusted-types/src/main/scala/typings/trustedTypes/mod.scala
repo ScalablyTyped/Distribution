@@ -3,7 +3,7 @@ package typings.trustedTypes
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Shortcut
 import typings.std.Window
-import typings.trustedTypes.libMod.TrustedTypePolicyOptions
+import typings.trustedTypes.libMod.TrustedTypePolicyFactory
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -53,18 +53,6 @@ object mod {
     ) = this()
   }
   
-  /* was `typeof lib.TrustedTypePolicy` */
-  /* note: abstract class */ @JSImport("trusted-types", "TrustedTypePolicy")
-  @js.native
-  open class TrustedTypePolicy[Options /* <: TrustedTypePolicyOptions */] ()
-    extends typings.trustedTypes.mod.global.TrustedTypePolicy[Options]
-  
-  /* was `typeof lib.TrustedTypePolicyFactory` */
-  /* note: abstract class */ @JSImport("trusted-types", "TrustedTypePolicyFactory")
-  @js.native
-  open class TrustedTypePolicyFactory ()
-    extends typings.trustedTypes.mod.global.TrustedTypePolicyFactory
-  
   @JSImport("trusted-types", "TrustedTypesEnforcer")
   @js.native
   open class TrustedTypesEnforcer protected () extends StObject {
@@ -73,42 +61,6 @@ object mod {
     def install(): Unit = js.native
     
     def uninstall(): Unit = js.native
-  }
-  
-  // Re-export the type definitions globally.
-  object global {
-    
-    /* was `typeof lib.TrustedHTML` */
-    @JSGlobal("TrustedHTML")
-    @js.native
-    /* private */ open class TrustedHTML ()
-      extends typings.trustedTypes.libMod.TrustedHTML
-    
-    /* was `typeof lib.TrustedScript` */
-    @JSGlobal("TrustedScript")
-    @js.native
-    /* private */ open class TrustedScript ()
-      extends typings.trustedTypes.libMod.TrustedScript
-    
-    /* was `typeof lib.TrustedScriptURL` */
-    @JSGlobal("TrustedScriptURL")
-    @js.native
-    /* private */ open class TrustedScriptURL ()
-      extends typings.trustedTypes.libMod.TrustedScriptURL
-    
-    /* was `typeof lib.TrustedTypePolicy` */
-    /* note: abstract class */ @JSGlobal("TrustedTypePolicy")
-    @js.native
-    open class TrustedTypePolicy[Options /* <: typings.trustedTypes.libMod.TrustedTypePolicyOptions */] ()
-      extends typings.trustedTypes.libMod.TrustedTypePolicy[Options]
-    
-    /* was `typeof lib.TrustedTypePolicyFactory` */
-    /* note: abstract class */ @JSGlobal("TrustedTypePolicyFactory")
-    @js.native
-    open class TrustedTypePolicyFactory ()
-      extends typings.trustedTypes.libMod.TrustedTypePolicyFactory
-    
-    type TrustedTypePolicyOptions = typings.trustedTypes.libMod.TrustedTypePolicyOptions
   }
   
   object trustedTypes extends Shortcut {
@@ -143,13 +95,34 @@ object mod {
   
   // These are the available exports when using the polyfill as npm package (e.g. in nodejs)
   @js.native
-  trait InternalTrustedTypePolicyFactory
-    extends typings.trustedTypes.libMod.TrustedTypePolicyFactory {
+  trait InternalTrustedTypePolicyFactory extends TrustedTypePolicyFactory {
     
     var TrustedHTML: Instantiable0[typings.trustedTypes.libMod.TrustedHTML] = js.native
     
     var TrustedScript: Instantiable0[typings.trustedTypes.libMod.TrustedScript] = js.native
     
     var TrustedScriptURL: Instantiable0[typings.trustedTypes.libMod.TrustedScriptURL] = js.native
+  }
+  
+  // Re-export the type definitions globally.
+  object global {
+    
+    // tslint:disable-next-line no-empty-interface -- interface to allow module augmentation
+    type TrustedHTML = typings.trustedTypes.libMod.TrustedHTML
+    
+    // tslint:disable-next-line no-empty-interface -- interface to allow module augmentation
+    type TrustedScript = typings.trustedTypes.libMod.TrustedScript
+    
+    // tslint:disable-next-line no-empty-interface -- interface to allow module augmentation
+    type TrustedScriptURL = typings.trustedTypes.libMod.TrustedScriptURL
+    
+    // tslint:disable-next-line no-empty-interface -- interface to allow module augmentation
+    type TrustedTypePolicy = typings.trustedTypes.libMod.TrustedTypePolicy[typings.trustedTypes.libMod.TrustedTypePolicyOptions]
+    
+    // tslint:disable-next-line no-empty-interface -- interface to allow module augmentation
+    type TrustedTypePolicyFactory = typings.trustedTypes.libMod.TrustedTypePolicyFactory
+    
+    // tslint:disable-next-line no-empty-interface -- interface to allow module augmentation
+    type TrustedTypePolicyOptions = typings.trustedTypes.libMod.TrustedTypePolicyOptions
   }
 }

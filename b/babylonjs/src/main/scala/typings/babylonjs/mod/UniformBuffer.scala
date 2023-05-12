@@ -128,6 +128,11 @@ object UniformBuffer {
   def _TempBufferInt32View: Any = js.native
   inline def _TempBufferInt32View_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TempBufferInt32View")(x.asInstanceOf[js.Any])
   
+  @JSImport("babylonjs", "UniformBuffer._TempBufferUInt32View")
+  @js.native
+  def _TempBufferUInt32View: Any = js.native
+  inline def _TempBufferUInt32View_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TempBufferUInt32View")(x.asInstanceOf[js.Any])
+  
   inline def _TempBuffer_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_TempBuffer")(x.asInstanceOf[js.Any])
   
   /** @internal */

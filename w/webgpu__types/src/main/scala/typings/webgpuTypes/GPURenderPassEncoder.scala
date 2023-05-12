@@ -71,7 +71,7 @@ trait GPURenderPassEncoder
   ): Unit = js.native
   
   /**
-    * Sets the {@link GPURenderPassEncoder#[[stencil_reference]]} value used during stencil tests with
+    * Sets the {@link RenderState#[[stencilReference]]} value used during stencil tests with
     * the {@link GPUStencilOperation#"replace"} {@link GPUStencilOperation}.
     * @param reference - The new stencil reference value.
     */

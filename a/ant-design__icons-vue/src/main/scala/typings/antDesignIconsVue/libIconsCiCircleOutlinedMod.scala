@@ -16,7 +16,7 @@ object libIconsCiCircleOutlinedMod extends Shortcut {
   @js.native
   trait CiCircleOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_CiCircleOutlinedIconType: String = js.native

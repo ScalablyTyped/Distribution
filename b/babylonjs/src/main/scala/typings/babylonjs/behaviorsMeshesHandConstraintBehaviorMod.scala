@@ -3,6 +3,7 @@ package typings.babylonjs
 import typings.babylonjs.behaviorsBehaviorMod.Behavior
 import typings.babylonjs.meshesTransformNodeMod.TransformNode
 import typings.babylonjs.xRWebXRExperienceHelperMod.WebXRExperienceHelper
+import typings.babylonjs.xRWebXRFeaturesManagerMod.WebXRFeaturesManager
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -86,6 +87,7 @@ object behaviorsMeshesHandConstraintBehaviorMod {
       * @param xr xr experience
       */
     def linkToXRExperience(xr: WebXRExperienceHelper): Unit = js.native
+    def linkToXRExperience(xr: WebXRFeaturesManager): Unit = js.native
     
     /** gets or sets behavior's name */
     /* CompleteClass */

@@ -38,7 +38,7 @@ object mod {
     def this(props: AreaChartProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: AreaChartProps, context: Any) = this()
   }
@@ -50,7 +50,7 @@ object mod {
     def this(props: BarChartProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: BarChartProps, context: Any) = this()
   }
@@ -62,7 +62,7 @@ object mod {
     def this(props: LegendProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: LegendProps, context: Any) = this()
   }
@@ -74,7 +74,7 @@ object mod {
     def this(props: LineChartProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: LineChartProps, context: Any) = this()
   }
@@ -86,7 +86,7 @@ object mod {
     def this(props: PieChartProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: PieChartProps, context: Any) = this()
   }
@@ -98,7 +98,7 @@ object mod {
     def this(props: ScatterplotChartProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: ScatterplotChartProps, context: Any) = this()
   }

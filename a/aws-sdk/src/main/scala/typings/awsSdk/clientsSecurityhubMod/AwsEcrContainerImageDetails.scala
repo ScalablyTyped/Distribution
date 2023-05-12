@@ -17,7 +17,7 @@ trait AwsEcrContainerImageDetails extends StObject {
   var ImageDigest: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * The date and time when the image was pushed to the repository. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces. For example, 2020-03-22T13:22:13.933Z.
+    * The date and time when the image was pushed to the repository. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces, and date and time should be separated by T. For example, 2020-03-22T13:22:13.933Z.
     */
   var ImagePublishedAt: js.UndefOr[NonEmptyString] = js.undefined
   

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "ipns" : "4.0.0"
+      "ipns" : "6.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "ipns" : "4.0.0"
+      "ipns" : "6.0.0"
     }
   ],
   "compile-devDependencies" : [

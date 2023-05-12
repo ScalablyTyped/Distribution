@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait OnExitMetaData extends StObject {
   
-  var institution: Institution
+  var institution: Institution | Null
   
   var link_session_id: String
   
@@ -16,8 +16,8 @@ trait OnExitMetaData extends StObject {
 }
 object OnExitMetaData {
   
-  inline def apply(institution: Institution, link_session_id: String, request_id: String, status: ExitStatus): OnExitMetaData = {
-    val __obj = js.Dynamic.literal(institution = institution.asInstanceOf[js.Any], link_session_id = link_session_id.asInstanceOf[js.Any], request_id = request_id.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+  inline def apply(link_session_id: String, request_id: String, status: ExitStatus): OnExitMetaData = {
+    val __obj = js.Dynamic.literal(link_session_id = link_session_id.asInstanceOf[js.Any], request_id = request_id.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], institution = null)
     __obj.asInstanceOf[OnExitMetaData]
   }
   
@@ -25,6 +25,8 @@ object OnExitMetaData {
   implicit open class MutableBuilder[Self <: OnExitMetaData] (val x: Self) extends AnyVal {
     
     inline def setInstitution(value: Institution): Self = StObject.set(x, "institution", value.asInstanceOf[js.Any])
+    
+    inline def setInstitutionNull: Self = StObject.set(x, "institution", null)
     
     inline def setLink_session_id(value: String): Self = StObject.set(x, "link_session_id", value.asInstanceOf[js.Any])
     

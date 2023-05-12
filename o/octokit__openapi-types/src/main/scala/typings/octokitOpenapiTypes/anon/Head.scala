@@ -15,29 +15,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Head extends StObject {
   
-  /** Filter pulls by base branch name. Example: `gh-pages`. */
+  /** @description Filter pulls by base branch name. Example: `gh-pages`. */
   var base: js.UndefOr[String] = js.undefined
   
-  /** The direction of the sort. Default: `desc` when sort is `created` or sort is not specified, otherwise `asc`. */
+  /** @description The direction of the sort. Default: `desc` when sort is `created` or sort is not specified, otherwise `asc`. */
   var direction: js.UndefOr[asc | desc] = js.undefined
   
-  /** Filter pulls by head user or head organization and branch name in the format of `user:ref-name` or `organization:ref-name`. For example: `github:new-script-format` or `octocat:test-branch`. */
+  /** @description Filter pulls by head user or head organization and branch name in the format of `user:ref-name` or `organization:ref-name`. For example: `github:new-script-format` or `octocat:test-branch`. */
   var head: js.UndefOr[String] = js.undefined
   
-  /** Page number of the results to fetch. */
   var page: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['page'] */ js.Any
   ] = js.undefined
   
-  /** The number of results per page (max 100). */
   var per_page: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['per-page'] */ js.Any
   ] = js.undefined
   
-  /** What to sort results by. `popularity` will sort by the number of comments. `long-running` will sort by date created and will limit the results to pull requests that have been open for more than a month and have had activity within the past month. */
+  /** @description What to sort results by. `popularity` will sort by the number of comments. `long-running` will sort by date created and will limit the results to pull requests that have been open for more than a month and have had activity within the past month. */
   var sort: js.UndefOr[created_ | updated | popularity | `long-running`] = js.undefined
   
-  /** Either `open`, `closed`, or `all` to filter by state. */
+  /** @description Either `open`, `closed`, or `all` to filter by state. */
   var state: js.UndefOr[open | closed | all] = js.undefined
 }
 object Head {

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `404ContentApplicationjsonDocumentationurlMessage` extends StObject {
   
-  /** Otherwise a `404` status code is returned. */
+  /** @description Response if `assignee` can not be assigned to `issue_number` */
   var `404`: ContentApplicationjsonDocumentationurlMessage
 }
 object `404ContentApplicationjsonDocumentationurlMessage` {

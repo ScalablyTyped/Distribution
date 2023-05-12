@@ -34,7 +34,9 @@ object typesMod {
     - typings.materialBase.materialBaseStrings.compositionstart
     - typings.materialBase.materialBaseStrings.compositionupdate
     - typings.materialBase.materialBaseStrings.contextmenu
+    - typings.materialBase.materialBaseStrings.copy
     - typings.materialBase.materialBaseStrings.cuechange
+    - typings.materialBase.materialBaseStrings.cut
     - typings.materialBase.materialBaseStrings.dblclick
     - typings.materialBase.materialBaseStrings.drag
     - typings.materialBase.materialBaseStrings.dragend
@@ -69,6 +71,7 @@ object typesMod {
     - typings.materialBase.materialBaseStrings.mouseout
     - typings.materialBase.materialBaseStrings.mouseover
     - typings.materialBase.materialBaseStrings.mouseup
+    - typings.materialBase.materialBaseStrings.paste
     - typings.materialBase.materialBaseStrings.pause
     - typings.materialBase.materialBaseStrings.play
     - typings.materialBase.materialBaseStrings.playing

@@ -22,9 +22,19 @@ trait CreateProgramResponse extends StObject {
   var ChannelName: js.UndefOr[_String] = js.undefined
   
   /**
+    * The clip range configuration settings.
+    */
+  var ClipRange: js.UndefOr[typings.awsSdk.clientsMediatailorMod.ClipRange] = js.undefined
+  
+  /**
     * The time the program was created.
     */
   var CreationTime: js.UndefOr[js.Date] = js.undefined
+  
+  /**
+    * The duration of the live program in milliseconds.
+    */
+  var DurationMillis: js.UndefOr[_Long] = js.undefined
   
   /**
     * The name of the LiveSource for this Program.
@@ -75,9 +85,17 @@ object CreateProgramResponse {
     
     inline def setChannelNameUndefined: Self = StObject.set(x, "ChannelName", js.undefined)
     
+    inline def setClipRange(value: ClipRange): Self = StObject.set(x, "ClipRange", value.asInstanceOf[js.Any])
+    
+    inline def setClipRangeUndefined: Self = StObject.set(x, "ClipRange", js.undefined)
+    
     inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
+    
+    inline def setDurationMillis(value: _Long): Self = StObject.set(x, "DurationMillis", value.asInstanceOf[js.Any])
+    
+    inline def setDurationMillisUndefined: Self = StObject.set(x, "DurationMillis", js.undefined)
     
     inline def setLiveSourceName(value: _String): Self = StObject.set(x, "LiveSourceName", value.asInstanceOf[js.Any])
     

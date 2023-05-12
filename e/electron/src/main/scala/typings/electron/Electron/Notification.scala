@@ -90,8 +90,8 @@ trait Notification extends EventEmitter {
   @JSName("on")
   def on_reply(event: reply, listener: js.Function2[/* event */ Event, /* reply */ String, Unit]): this.type = js.native
   /**
-    * Emitted when the notification is shown to the user, note this could be fired
-    * multiple times as a notification can be shown multiple times through the
+    * Emitted when the notification is shown to the user. Note that this event can be
+    * fired multiple times as a notification can be shown multiple times through the
     * `show()` method.
     */
   @JSName("on")
@@ -129,10 +129,9 @@ trait Notification extends EventEmitter {
   var replyPlaceholder: String = js.native
   
   /**
-    * Immediately shows the notification to the user, please note this means unlike
-    * the HTML5 Notification implementation, instantiating a `new Notification` does
-    * not immediately show it to the user, you need to call this method before the OS
-    * will display it.
+    * Immediately shows the notification to the user. Unlike the web notification API,
+    * instantiating a `new Notification()` does not immediately show it to the user.
+    * Instead, you need to call this method before the OS will display it.
     *
     * If the notification has been shown before, this method will dismiss the
     * previously shown notification and create a new one with identical properties.

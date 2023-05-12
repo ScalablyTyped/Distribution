@@ -168,6 +168,9 @@ trait Contact extends StObject {
   /** Determine whether this contact is a softphone call.  */
   def isSoftphoneCall(): Boolean = js.native
   
+  /** Determines if the contact is under manager's supervision */
+  def isUnderSupervision(): Boolean = js.native
+  
   /**
     * Provide diagnostic information for the contact in the case something exceptional happens on the front end.
     * The Streams logs will be published along with the issue code and description provided here.
@@ -288,4 +291,13 @@ trait Contact extends StObject {
     */
   def toggleActiveConnections(): Unit = js.native
   def toggleActiveConnections(callbacks: SuccessFailOptions): Unit = js.native
+  
+  /**
+    * Updates the monitor participant state to switch between different monitoring modes.
+    * 
+    * @param targetState A MonitoringMode enum member
+    * @param callbacks Success and failure callbacks to determine whether the operation was successful
+    */
+  def updateMonitorParticipantState(targetState: MonitoringMode): Unit = js.native
+  def updateMonitorParticipantState(targetState: MonitoringMode, callbacks: SuccessFailOptions): Unit = js.native
 }

@@ -12,7 +12,7 @@ trait FieldLevelEncryptionList extends StObject {
   var Items: js.UndefOr[FieldLevelEncryptionSummaryList] = js.undefined
   
   /**
-    * The maximum number of elements you want in the response body. 
+    * The maximum number of elements you want in the response body.
     */
   var MaxItems: integer
   

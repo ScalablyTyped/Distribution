@@ -13,7 +13,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 //#region Constructors
 /**
   * Initializes a new instance of HtmlControl to define a new page control.
-  * @constructor
   * @param element The element that hosts the HtmlControl.
   * @param options The options for configuring the page. The uri option is required in order to specify the source document for the content of the page. Other options are the ones used by the WinJS.Pages.render method.
   **/

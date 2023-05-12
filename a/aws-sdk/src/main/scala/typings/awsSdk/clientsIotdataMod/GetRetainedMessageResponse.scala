@@ -25,6 +25,11 @@ trait GetRetainedMessageResponse extends StObject {
     * The topic name to which the retained message was published.
     */
   var topic: js.UndefOr[Topic] = js.undefined
+  
+  /**
+    * A base64-encoded JSON string that includes an array of JSON objects, or null if the retained message doesn't include any user properties. The following example userProperties parameter is a JSON string that represents two user properties. Note that it will be base64-encoded:  [{"deviceName": "alpha"}, {"deviceCnt": "45"}] 
+    */
+  var userProperties: js.UndefOr[UserPropertiesBlob] = js.undefined
 }
 object GetRetainedMessageResponse {
   
@@ -51,5 +56,9 @@ object GetRetainedMessageResponse {
     inline def setTopic(value: Topic): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
     
     inline def setTopicUndefined: Self = StObject.set(x, "topic", js.undefined)
+    
+    inline def setUserProperties(value: UserPropertiesBlob): Self = StObject.set(x, "userProperties", value.asInstanceOf[js.Any])
+    
+    inline def setUserPropertiesUndefined: Self = StObject.set(x, "userProperties", js.undefined)
   }
 }

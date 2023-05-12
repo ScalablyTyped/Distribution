@@ -6,10 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait UnfilteredPartition extends StObject {
   
+  /**
+    * The list of columns the user has permissions to access.
+    */
   var AuthorizedColumns: js.UndefOr[NameStringList] = js.undefined
   
+  /**
+    * A Boolean value indicating that the partition location is registered with Lake Formation.
+    */
   var IsRegisteredWithLakeFormation: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * The partition object.
+    */
   var Partition: js.UndefOr[typings.awsSdk.clientsGlueMod.Partition] = js.undefined
 }
 object UnfilteredPartition {

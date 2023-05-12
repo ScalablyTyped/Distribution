@@ -237,6 +237,7 @@ object sapMNotificationListGroupMod {
     
     /**
       * @SINCE 1.44
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:onCollapse onCollapse} to attached listeners.
       *

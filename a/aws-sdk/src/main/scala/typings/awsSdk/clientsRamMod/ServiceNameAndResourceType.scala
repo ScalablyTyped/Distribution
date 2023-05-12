@@ -12,7 +12,7 @@ trait ServiceNameAndResourceType extends StObject {
   var resourceRegionScope: js.UndefOr[ResourceRegionScope] = js.undefined
   
   /**
-    * The type of the resource.
+    * The type of the resource. This takes the form of: service-code:resource-code, and is case-insensitive. For example, an Amazon EC2 Subnet would be represented by the string ec2:subnet.
     */
   var resourceType: js.UndefOr[String] = js.undefined
   

@@ -7,6 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait PhysicsHelper extends StObject {
   
+  /* private */ var _applicationForBodies: Any = js.native
+  
+  /* private */ var _copyPhysicsHitData: Any = js.native
+  
+  /* private */ var _hitData: Any = js.native
+  
   /* private */ var _physicsEngine: Any = js.native
   
   /* private */ var _scene: Any = js.native
@@ -87,9 +93,9 @@ trait PhysicsHelper extends StObject {
   
   /**
     * Creates a gravitational field
-    * @param origin the origin of the explosion
-    * @param radiusOrEventOptions the radius or the options of radial explosion
-    * @param strength the explosion strength
+    * @param origin the origin of the gravitational field
+    * @param radiusOrEventOptions the radius or the options of radial gravitational field
+    * @param strength the gravitational field strength
     * @param falloff possible options: Constant & Linear. Defaults to Constant
     * @returns A physics gravitational field event, or null
     */

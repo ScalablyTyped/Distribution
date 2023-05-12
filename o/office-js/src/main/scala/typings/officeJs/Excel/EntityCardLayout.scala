@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Represents a card layout best used for an entity.
+  * Represents a card layout that is best used for an array.
   *
   * @remarks
   * [Api set: ExcelApi 1.16]

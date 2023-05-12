@@ -21,19 +21,19 @@ object distTypesProtocolsAwsRestJson1Mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def deserializeAwsRestJson1GetRoleCredentialsCommand(output: HttpResponse, context: SerdeContext): js.Promise[GetRoleCredentialsCommandOutput] = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeAws_restJson1GetRoleCredentialsCommand")(output.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetRoleCredentialsCommandOutput]]
+  inline def deGetRoleCredentialsCommand(output: HttpResponse, context: SerdeContext): js.Promise[GetRoleCredentialsCommandOutput] = (^.asInstanceOf[js.Dynamic].applyDynamic("de_GetRoleCredentialsCommand")(output.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetRoleCredentialsCommandOutput]]
   
-  inline def deserializeAwsRestJson1ListAccountRolesCommand(output: HttpResponse, context: SerdeContext): js.Promise[ListAccountRolesCommandOutput] = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeAws_restJson1ListAccountRolesCommand")(output.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ListAccountRolesCommandOutput]]
+  inline def deListAccountRolesCommand(output: HttpResponse, context: SerdeContext): js.Promise[ListAccountRolesCommandOutput] = (^.asInstanceOf[js.Dynamic].applyDynamic("de_ListAccountRolesCommand")(output.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ListAccountRolesCommandOutput]]
   
-  inline def deserializeAwsRestJson1ListAccountsCommand(output: HttpResponse, context: SerdeContext): js.Promise[ListAccountsCommandOutput] = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeAws_restJson1ListAccountsCommand")(output.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ListAccountsCommandOutput]]
+  inline def deListAccountsCommand(output: HttpResponse, context: SerdeContext): js.Promise[ListAccountsCommandOutput] = (^.asInstanceOf[js.Dynamic].applyDynamic("de_ListAccountsCommand")(output.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ListAccountsCommandOutput]]
   
-  inline def deserializeAwsRestJson1LogoutCommand(output: HttpResponse, context: SerdeContext): js.Promise[LogoutCommandOutput] = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeAws_restJson1LogoutCommand")(output.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[LogoutCommandOutput]]
+  inline def deLogoutCommand(output: HttpResponse, context: SerdeContext): js.Promise[LogoutCommandOutput] = (^.asInstanceOf[js.Dynamic].applyDynamic("de_LogoutCommand")(output.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[LogoutCommandOutput]]
   
-  inline def serializeAwsRestJson1GetRoleCredentialsCommand(input: GetRoleCredentialsCommandInput, context: SerdeContext): js.Promise[HttpRequest] = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeAws_restJson1GetRoleCredentialsCommand")(input.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HttpRequest]]
+  inline def seGetRoleCredentialsCommand(input: GetRoleCredentialsCommandInput, context: SerdeContext): js.Promise[HttpRequest] = (^.asInstanceOf[js.Dynamic].applyDynamic("se_GetRoleCredentialsCommand")(input.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HttpRequest]]
   
-  inline def serializeAwsRestJson1ListAccountRolesCommand(input: ListAccountRolesCommandInput, context: SerdeContext): js.Promise[HttpRequest] = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeAws_restJson1ListAccountRolesCommand")(input.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HttpRequest]]
+  inline def seListAccountRolesCommand(input: ListAccountRolesCommandInput, context: SerdeContext): js.Promise[HttpRequest] = (^.asInstanceOf[js.Dynamic].applyDynamic("se_ListAccountRolesCommand")(input.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HttpRequest]]
   
-  inline def serializeAwsRestJson1ListAccountsCommand(input: ListAccountsCommandInput, context: SerdeContext): js.Promise[HttpRequest] = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeAws_restJson1ListAccountsCommand")(input.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HttpRequest]]
+  inline def seListAccountsCommand(input: ListAccountsCommandInput, context: SerdeContext): js.Promise[HttpRequest] = (^.asInstanceOf[js.Dynamic].applyDynamic("se_ListAccountsCommand")(input.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HttpRequest]]
   
-  inline def serializeAwsRestJson1LogoutCommand(input: LogoutCommandInput, context: SerdeContext): js.Promise[HttpRequest] = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeAws_restJson1LogoutCommand")(input.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HttpRequest]]
+  inline def seLogoutCommand(input: LogoutCommandInput, context: SerdeContext): js.Promise[HttpRequest] = (^.asInstanceOf[js.Dynamic].applyDynamic("se_LogoutCommand")(input.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HttpRequest]]
 }

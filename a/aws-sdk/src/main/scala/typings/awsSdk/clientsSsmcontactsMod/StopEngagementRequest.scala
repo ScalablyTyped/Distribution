@@ -12,7 +12,7 @@ trait StopEngagementRequest extends StObject {
   var EngagementId: SsmContactsArn
   
   /**
-    * The reason that you're stopping the engagement. 
+    * The reason that you're stopping the engagement.
     */
   var Reason: js.UndefOr[StopReason] = js.undefined
 }

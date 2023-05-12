@@ -2,6 +2,8 @@ package typings.openui5
 
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapMDynamicDateOptionMod.DynamicDateOptionSettings
+import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
+import typings.openui5.sapUiCoreDateCalendarWeekNumberingMod.CalendarWeekNumbering
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,9 +19,6 @@ object sapMStandardDynamicDateOptionMod {
     * Accepts an object literal `mSettings` that defines initial property values, aggregated and associated
     * objects as well as event handlers. See {@link sap.ui.base.ManagedObject#constructor} for a general description
     * of the syntax of the settings object.
-    *
-    * This class does not have its own settings, but all settings applicable to the base type {@link sap.m.DynamicDateOption#constructor
-    * sap.m.DynamicDateOption} can be used.
     */
   open class default () extends StandardDynamicDateOption {
     def this(/**
@@ -121,7 +120,76 @@ object sapMStandardDynamicDateOptionMod {
   
   @js.native
   trait StandardDynamicDateOption
-    extends typings.openui5.sapMDynamicDateOptionMod.default
+    extends typings.openui5.sapMDynamicDateOptionMod.default {
+    
+    /**
+      * @SINCE 1.111.0
+      *
+      * Gets current value of property {@link #getCalendarWeekNumbering calendarWeekNumbering}.
+      *
+      * If set, the calendar week numbering is used for display. If not set, the calendar week numbering of the
+      * global configuration is used.
+      *
+      * @returns Value of property `calendarWeekNumbering`
+      */
+    def getCalendarWeekNumbering(): CalendarWeekNumbering | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CalendarWeekNumbering * / any */ String) = js.native
+    
+    /**
+      * @SINCE 1.111.0
+      *
+      * Sets a new value for property {@link #getCalendarWeekNumbering calendarWeekNumbering}.
+      *
+      * If set, the calendar week numbering is used for display. If not set, the calendar week numbering of the
+      * global configuration is used.
+      *
+      * When called with a value of `null` or `undefined`, the default value of the property will be restored.
+      *
+      * @returns Reference to `this` in order to allow method chaining
+      */
+    def setCalendarWeekNumbering(): this.type = js.native
+    def setCalendarWeekNumbering(
+      /**
+      * New value for property `calendarWeekNumbering`
+      */
+    sCalendarWeekNumbering: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CalendarWeekNumbering * / any */ String
+    ): this.type = js.native
+    def setCalendarWeekNumbering(
+      /**
+      * New value for property `calendarWeekNumbering`
+      */
+    sCalendarWeekNumbering: CalendarWeekNumbering
+    ): this.type = js.native
+  }
   
-  type StandardDynamicDateOptionSettings = DynamicDateOptionSettings
+  trait StandardDynamicDateOptionSettings
+    extends StObject
+       with DynamicDateOptionSettings {
+    
+    /**
+      * @SINCE 1.111.0
+      *
+      * If set, the calendar week numbering is used for display. If not set, the calendar week numbering of the
+      * global configuration is used.
+      */
+    var calendarWeekNumbering: js.UndefOr[
+        CalendarWeekNumbering | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CalendarWeekNumbering * / any */ String) | PropertyBindingInfo
+      ] = js.undefined
+  }
+  object StandardDynamicDateOptionSettings {
+    
+    inline def apply(): StandardDynamicDateOptionSettings = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[StandardDynamicDateOptionSettings]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StandardDynamicDateOptionSettings] (val x: Self) extends AnyVal {
+      
+      inline def setCalendarWeekNumbering(
+        value: CalendarWeekNumbering | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CalendarWeekNumbering * / any */ String) | PropertyBindingInfo
+      ): Self = StObject.set(x, "calendarWeekNumbering", value.asInstanceOf[js.Any])
+      
+      inline def setCalendarWeekNumberingUndefined: Self = StObject.set(x, "calendarWeekNumbering", js.undefined)
+    }
+  }
 }

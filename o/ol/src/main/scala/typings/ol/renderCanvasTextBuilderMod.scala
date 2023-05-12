@@ -1,6 +1,9 @@
 package typings.ol
 
-import typings.ol.extentMod.Extent
+import org.scalablytyped.runtime.StringDictionary
+import typings.ol.renderCanvasMod.FillState
+import typings.ol.renderCanvasMod.StrokeState
+import typings.ol.renderCanvasMod.TextState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,90 +12,166 @@ object renderCanvasTextBuilderMod {
   
   @JSImport("ol/render/canvas/TextBuilder", JSImport.Default)
   @js.native
-  open class default protected () extends CanvasTextBuilder {
-    def this(tolerance: Double, maxExtent: Extent, resolution: Double, pixelRatio: Double) = this()
-  }
+  open class default () extends CanvasTextBuilder
   
-  @js.native
-  sealed trait TEXT_ALIGN extends StObject
-  @JSImport("ol/render/canvas/TextBuilder", "TEXT_ALIGN")
-  @js.native
-  object TEXT_ALIGN extends StObject {
+  object TEXT_ALIGN {
     
-    @JSBracketAccess
-    def apply(value: Double): js.UndefOr[TEXT_ALIGN & Double] = js.native
-    
+    @JSImport("ol/render/canvas/TextBuilder", "TEXT_ALIGN.alphabetic")
     @js.native
-    sealed trait alphabetic
-      extends StObject
-         with TEXT_ALIGN
-    /* 0.8 */ val alphabetic: typings.ol.renderCanvasTextBuilderMod.TEXT_ALIGN.alphabetic & Double = js.native
+    val alphabetic: Double = js.native
     
+    @JSImport("ol/render/canvas/TextBuilder", "TEXT_ALIGN.bottom")
     @js.native
-    sealed trait bottom
-      extends StObject
-         with TEXT_ALIGN
-    /* 1 */ val bottom: typings.ol.renderCanvasTextBuilderMod.TEXT_ALIGN.bottom & Double = js.native
+    val bottom: Double = js.native
     
+    @JSImport("ol/render/canvas/TextBuilder", "TEXT_ALIGN.center")
     @js.native
-    sealed trait center
-      extends StObject
-         with TEXT_ALIGN
-    /* 0.5 */ val center: typings.ol.renderCanvasTextBuilderMod.TEXT_ALIGN.center & Double = js.native
+    val center: Double = js.native
     
+    @JSImport("ol/render/canvas/TextBuilder", "TEXT_ALIGN.end")
     @js.native
-    sealed trait end
-      extends StObject
-         with TEXT_ALIGN
-    /* 0 */ val end: typings.ol.renderCanvasTextBuilderMod.TEXT_ALIGN.end & Double = js.native
+    val end: Double = js.native
     
+    @JSImport("ol/render/canvas/TextBuilder", "TEXT_ALIGN.hanging")
     @js.native
-    sealed trait hanging
-      extends StObject
-         with TEXT_ALIGN
-    /* 0.2 */ val hanging: typings.ol.renderCanvasTextBuilderMod.TEXT_ALIGN.hanging & Double = js.native
+    val hanging: Double = js.native
     
+    @JSImport("ol/render/canvas/TextBuilder", "TEXT_ALIGN.ideographic")
     @js.native
-    sealed trait ideographic
-      extends StObject
-         with TEXT_ALIGN
-    /* 0.8 */ val ideographic: typings.ol.renderCanvasTextBuilderMod.TEXT_ALIGN.ideographic & Double = js.native
+    val ideographic: Double = js.native
     
+    @JSImport("ol/render/canvas/TextBuilder", "TEXT_ALIGN.left")
     @js.native
-    sealed trait left
-      extends StObject
-         with TEXT_ALIGN
-    /* 0 */ val left: typings.ol.renderCanvasTextBuilderMod.TEXT_ALIGN.left & Double = js.native
+    val left: Double = js.native
     
+    @JSImport("ol/render/canvas/TextBuilder", "TEXT_ALIGN.middle")
     @js.native
-    sealed trait middle
-      extends StObject
-         with TEXT_ALIGN
-    /* 0.5 */ val middle: typings.ol.renderCanvasTextBuilderMod.TEXT_ALIGN.middle & Double = js.native
+    val middle: Double = js.native
     
+    @JSImport("ol/render/canvas/TextBuilder", "TEXT_ALIGN.right")
     @js.native
-    sealed trait right
-      extends StObject
-         with TEXT_ALIGN
-    /* 1 */ val right: typings.ol.renderCanvasTextBuilderMod.TEXT_ALIGN.right & Double = js.native
+    val right: Double = js.native
     
+    @JSImport("ol/render/canvas/TextBuilder", "TEXT_ALIGN.start")
     @js.native
-    sealed trait start
-      extends StObject
-         with TEXT_ALIGN
-    /* 1 */ val start: typings.ol.renderCanvasTextBuilderMod.TEXT_ALIGN.start & Double = js.native
+    val start: Double = js.native
     
+    @JSImport("ol/render/canvas/TextBuilder", "TEXT_ALIGN.top")
     @js.native
-    sealed trait top
-      extends StObject
-         with TEXT_ALIGN
-    /* 0 */ val top: typings.ol.renderCanvasTextBuilderMod.TEXT_ALIGN.top & Double = js.native
+    val top: Double = js.native
   }
+  type TEXT_ALIGN = Double
   
   @js.native
   trait CanvasTextBuilder
     extends typings.ol.renderCanvasBuilderMod.default {
     
-    def setTextStyle(textStyle: typings.ol.styleTextMod.default, opt_sharedData: Any): Unit = js.native
+    /**
+      * Data shared with an image builder for combined decluttering.
+      * @private
+      * @type {import("../canvas.js").DeclutterImageWithText}
+      */
+    /* private */ var declutterImageWithText_ : Any = js.native
+    
+    /**
+      * @private
+      * @param {number} begin Begin.
+      * @param {number} end End.
+      */
+    /* private */ var drawChars_ : Any = js.native
+    
+    /**
+      * @private
+      * @type {string}
+      */
+    /* private */ var fillKey_ : Any = js.native
+    
+    /**
+      * @type {!Object<string, import("../canvas.js").FillState>}
+      */
+    var fillStates: StringDictionary[FillState] = js.native
+    
+    /**
+      * @private
+      * @type {Array<HTMLCanvasElement>}
+      */
+    /* private */ var labels_ : Any = js.native
+    
+    /**
+      * @private
+      */
+    /* private */ var saveTextStates_ : Any = js.native
+    
+    def setTextStyle(textStyle: typings.ol.styleTextMod.default, sharedData: Any): Unit = js.native
+    
+    /**
+      * @private
+      * @type {string}
+      */
+    /* private */ var strokeKey_ : Any = js.native
+    
+    /**
+      * @type {!Object<string, import("../canvas.js").StrokeState>}
+      */
+    var strokeStates: StringDictionary[StrokeState] = js.native
+    
+    /**
+      * @private
+      * @type {?import("../canvas.js").FillState}
+      */
+    /* private */ var textFillState_ : Any = js.native
+    
+    /**
+      * @private
+      * @type {string}
+      */
+    /* private */ var textKey_ : Any = js.native
+    
+    /**
+      * @private
+      * @type {number}
+      */
+    /* private */ var textOffsetX_ : Any = js.native
+    
+    /**
+      * @private
+      * @type {number}
+      */
+    /* private */ var textOffsetY_ : Any = js.native
+    
+    /**
+      * @private
+      * @type {boolean|undefined}
+      */
+    /* private */ var textRotateWithView_ : Any = js.native
+    
+    /**
+      * @private
+      * @type {number}
+      */
+    /* private */ var textRotation_ : Any = js.native
+    
+    /**
+      * @private
+      * @type {import("../canvas.js").TextState}
+      */
+    /* private */ var textState_ : Any = js.native
+    
+    /**
+      * @type {!Object<string, import("../canvas.js").TextState>}
+      */
+    var textStates: StringDictionary[TextState] = js.native
+    
+    /**
+      * @private
+      * @type {?import("../canvas.js").StrokeState}
+      */
+    /* private */ var textStrokeState_ : Any = js.native
+    
+    /**
+      * @private
+      * @type {string|Array<string>}
+      */
+    /* private */ var text_ : Any = js.native
   }
 }

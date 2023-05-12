@@ -17,14 +17,17 @@ object array {
   
   inline def create[C](): js.Array[C] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[js.Array[C]]
   
-  inline def equalFlat[ELEM](a: js.Array[ELEM], b: js.Array[ELEM]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equalFlat")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def equalFlat[ELEM](a: ArrayLike[ELEM], b: ArrayLike[ELEM]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equalFlat")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def every[ITEM](
-    arr: js.Array[ITEM],
-    f: js.Function3[/* arg0 */ ITEM, /* arg1 */ Double, /* arg2 */ js.Array[ITEM], Boolean]
-  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("every")(arr.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def every[ITEM, ARR /* <: ArrayLike[ITEM] */](arr: ARR, f: js.Function3[/* arg0 */ ITEM, /* arg1 */ Double, /* arg2 */ ARR, Boolean]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("every")(arr.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   inline def flatten[ELEM](arr: js.Array[js.Array[ELEM]]): js.Array[ELEM] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(arr.asInstanceOf[js.Any]).asInstanceOf[js.Array[ELEM]]
+  
+  inline def fold[T_1, RESULT](
+    arr: js.Array[T_1],
+    seed: RESULT,
+    folder: js.Function3[/* arg0 */ RESULT, /* arg1 */ T_1, /* arg2 */ Double, RESULT]
+  ): RESULT = (^.asInstanceOf[js.Dynamic].applyDynamic("fold")(arr.asInstanceOf[js.Any], seed.asInstanceOf[js.Any], folder.asInstanceOf[js.Any])).asInstanceOf[RESULT]
   
   inline def from[T_3](iterable: js.Iterable[T_3]): js.Array[T_3] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(iterable.asInstanceOf[js.Any]).asInstanceOf[js.Array[T_3]]
   inline def from[T_3](iterable: ArrayLike[T_3]): js.Array[T_3] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(iterable.asInstanceOf[js.Any]).asInstanceOf[js.Array[T_3]]
@@ -40,10 +43,13 @@ object array {
   
   inline def isArray(arg: Any): /* is std.Array<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isArray")(arg.asInstanceOf[js.Any]).asInstanceOf[/* is std.Array<any> */ Boolean]
   
-  inline def last[L](arr: js.Array[L]): L = ^.asInstanceOf[js.Dynamic].applyDynamic("last")(arr.asInstanceOf[js.Any]).asInstanceOf[L]
+  inline def last[L](arr: ArrayLike[L]): L = ^.asInstanceOf[js.Dynamic].applyDynamic("last")(arr.asInstanceOf[js.Any]).asInstanceOf[L]
   
-  inline def some[S](
-    arr: js.Array[S],
-    f: js.Function3[/* arg0 */ S, /* arg1 */ Double, /* arg2 */ js.Array[S], Boolean]
-  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("some")(arr.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def some[S, ARR /* <: ArrayLike[S] */](arr: ARR, f: js.Function3[/* arg0 */ S, /* arg1 */ Double, /* arg2 */ ARR, Boolean]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("some")(arr.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  inline def unfold[T_1](len: Double, f: js.Function2[/* arg0 */ Double, /* arg1 */ js.Array[T_1], T_1]): js.Array[T_1] = (^.asInstanceOf[js.Dynamic].applyDynamic("unfold")(len.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[js.Array[T_1]]
+  
+  inline def unique[T_1](arr: js.Array[T_1]): js.Array[T_1] = ^.asInstanceOf[js.Dynamic].applyDynamic("unique")(arr.asInstanceOf[js.Any]).asInstanceOf[js.Array[T_1]]
+  
+  inline def uniqueBy[T_1, M](arr: ArrayLike[T_1], mapper: js.Function1[/* arg0 */ T_1, M]): js.Array[T_1] = (^.asInstanceOf[js.Dynamic].applyDynamic("uniqueBy")(arr.asInstanceOf[js.Any], mapper.asInstanceOf[js.Any])).asInstanceOf[js.Array[T_1]]
 }

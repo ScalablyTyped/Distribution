@@ -12,7 +12,7 @@ trait DescribeVpcEndpointConnectionsResult extends StObject {
   var NextToken: js.UndefOr[String] = js.undefined
   
   /**
-    * Information about one or more VPC endpoint connections.
+    * Information about the VPC endpoint connections.
     */
   var VpcEndpointConnections: js.UndefOr[VpcEndpointConnectionSet] = js.undefined
 }

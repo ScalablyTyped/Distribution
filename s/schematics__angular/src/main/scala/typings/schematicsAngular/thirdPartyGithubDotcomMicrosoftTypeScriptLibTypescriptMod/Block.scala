@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Block
   extends StObject
      with Statement
+     with LocalsContainer
      with BlockLike
      with HasJSDoc {
   

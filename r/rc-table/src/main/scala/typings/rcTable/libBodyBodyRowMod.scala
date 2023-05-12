@@ -16,6 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object libBodyBodyRowMod {
   
+  /* was `typeof BodyRow` */
   object default {
     
     inline def apply[RecordType /* <: Children[RecordType] */](props: BodyRowProps[RecordType]): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
@@ -50,8 +51,6 @@ object libBodyBodyRowMod {
     
     var record: RecordType
     
-    var recordKey: Key
-    
     var renderIndex: Double
     
     var rowComponent: CustomizeComponent
@@ -74,14 +73,13 @@ object libBodyBodyRowMod {
       index: Double,
       onRow: (RecordType, /* index */ js.UndefOr[Double]) => HTMLAttributes[Any] | TdHTMLAttributes[Any],
       record: RecordType,
-      recordKey: Key,
       renderIndex: Double,
       rowComponent: CustomizeComponent,
       rowExpandable: RecordType => Boolean,
       rowKey: typings.react.mod.Key,
       scopeCellComponent: CustomizeComponent
     ): BodyRowProps[RecordType] = {
-      val __obj = js.Dynamic.literal(cellComponent = cellComponent.asInstanceOf[js.Any], childrenColumnName = childrenColumnName.asInstanceOf[js.Any], expandedKeys = expandedKeys.asInstanceOf[js.Any], getRowKey = js.Any.fromFunction2(getRowKey), index = index.asInstanceOf[js.Any], onRow = js.Any.fromFunction2(onRow), record = record.asInstanceOf[js.Any], recordKey = recordKey.asInstanceOf[js.Any], renderIndex = renderIndex.asInstanceOf[js.Any], rowComponent = rowComponent.asInstanceOf[js.Any], rowExpandable = js.Any.fromFunction1(rowExpandable), rowKey = rowKey.asInstanceOf[js.Any], scopeCellComponent = scopeCellComponent.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(cellComponent = cellComponent.asInstanceOf[js.Any], childrenColumnName = childrenColumnName.asInstanceOf[js.Any], expandedKeys = expandedKeys.asInstanceOf[js.Any], getRowKey = js.Any.fromFunction2(getRowKey), index = index.asInstanceOf[js.Any], onRow = js.Any.fromFunction2(onRow), record = record.asInstanceOf[js.Any], renderIndex = renderIndex.asInstanceOf[js.Any], rowComponent = rowComponent.asInstanceOf[js.Any], rowExpandable = js.Any.fromFunction1(rowExpandable), rowKey = rowKey.asInstanceOf[js.Any], scopeCellComponent = scopeCellComponent.asInstanceOf[js.Any])
       __obj.asInstanceOf[BodyRowProps[RecordType]]
     }
     
@@ -109,8 +107,6 @@ object libBodyBodyRowMod {
       inline def setOnRow(value: (RecordType, /* index */ js.UndefOr[Double]) => HTMLAttributes[Any] | TdHTMLAttributes[Any]): Self = StObject.set(x, "onRow", js.Any.fromFunction2(value))
       
       inline def setRecord(value: RecordType): Self = StObject.set(x, "record", value.asInstanceOf[js.Any])
-      
-      inline def setRecordKey(value: Key): Self = StObject.set(x, "recordKey", value.asInstanceOf[js.Any])
       
       inline def setRenderIndex(value: Double): Self = StObject.set(x, "renderIndex", value.asInstanceOf[js.Any])
       

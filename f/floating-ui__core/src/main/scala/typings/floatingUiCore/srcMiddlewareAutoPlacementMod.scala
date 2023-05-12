@@ -24,28 +24,35 @@ object srcMiddlewareAutoPlacementMod {
     
     /**
       * Choose placements with a particular alignment.
-      * @default null
+      * @default undefined
       */
     var alignment: Alignment | Null
     
     /**
       * Which placements are allowed to be chosen. Placements must be within the
-      * `alignment` option set.
+      * `alignment` option if explicitly set.
       * @default allPlacements (variable)
       */
     var allowedPlacements: js.Array[Placement]
     
     /**
-      * Whether to choose placements with the opposite alignment if they will fit
-      * better.
+      * Whether to choose placements with the opposite alignment if the preferred
+      * alignment does not fit.
       * @default true
       */
     var autoAlignment: Boolean
+    
+    /**
+      * The axis that runs along the alignment of the floating element. Determines
+      * whether to check for most space along this axis.
+      * @default false
+      */
+    var crossAxis: Boolean
   }
   object Options {
     
-    inline def apply(allowedPlacements: js.Array[Placement], autoAlignment: Boolean): Options = {
-      val __obj = js.Dynamic.literal(allowedPlacements = allowedPlacements.asInstanceOf[js.Any], autoAlignment = autoAlignment.asInstanceOf[js.Any], alignment = null)
+    inline def apply(allowedPlacements: js.Array[Placement], autoAlignment: Boolean, crossAxis: Boolean): Options = {
+      val __obj = js.Dynamic.literal(allowedPlacements = allowedPlacements.asInstanceOf[js.Any], autoAlignment = autoAlignment.asInstanceOf[js.Any], crossAxis = crossAxis.asInstanceOf[js.Any], alignment = null)
       __obj.asInstanceOf[Options]
     }
     
@@ -61,6 +68,8 @@ object srcMiddlewareAutoPlacementMod {
       inline def setAllowedPlacementsVarargs(value: Placement*): Self = StObject.set(x, "allowedPlacements", js.Array(value*))
       
       inline def setAutoAlignment(value: Boolean): Self = StObject.set(x, "autoAlignment", value.asInstanceOf[js.Any])
+      
+      inline def setCrossAxis(value: Boolean): Self = StObject.set(x, "crossAxis", value.asInstanceOf[js.Any])
     }
   }
 }

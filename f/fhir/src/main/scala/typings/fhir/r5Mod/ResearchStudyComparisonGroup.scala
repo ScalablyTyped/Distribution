@@ -10,7 +10,7 @@ trait ResearchStudyComparisonGroup
   
   var _description: js.UndefOr[Element] = js.undefined
   
-  var _identifierUri: js.UndefOr[Element] = js.undefined
+  var _linkId: js.UndefOr[Element] = js.undefined
   
   var _name: js.UndefOr[Element] = js.undefined
   
@@ -20,19 +20,14 @@ trait ResearchStudyComparisonGroup
   var description: js.UndefOr[String] = js.undefined
   
   /**
-    * Allows the comparisonGroup for the study and the comparisonGroup for the subject to be linked easily.
-    */
-  var identifierIdentifier: js.UndefOr[Identifier] = js.undefined
-  
-  /**
-    * Allows the comparisonGroup for the study and the comparisonGroup for the subject to be linked easily.
-    */
-  var identifierUri: js.UndefOr[String] = js.undefined
-  
-  /**
     * Interventions or exposures in this comparisonGroup or cohort.
     */
   var intendedExposure: js.UndefOr[js.Array[Reference]] = js.undefined
+  
+  /**
+    * Allows the comparisonGroup for the study and the comparisonGroup for the subject to be linked easily.
+    */
+  var linkId: js.UndefOr[String] = js.undefined
   
   /**
     * Unique, human-readable label for this comparisonGroup of the study.
@@ -63,19 +58,15 @@ object ResearchStudyComparisonGroup {
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    inline def setIdentifierIdentifier(value: Identifier): Self = StObject.set(x, "identifierIdentifier", value.asInstanceOf[js.Any])
-    
-    inline def setIdentifierIdentifierUndefined: Self = StObject.set(x, "identifierIdentifier", js.undefined)
-    
-    inline def setIdentifierUri(value: String): Self = StObject.set(x, "identifierUri", value.asInstanceOf[js.Any])
-    
-    inline def setIdentifierUriUndefined: Self = StObject.set(x, "identifierUri", js.undefined)
-    
     inline def setIntendedExposure(value: js.Array[Reference]): Self = StObject.set(x, "intendedExposure", value.asInstanceOf[js.Any])
     
     inline def setIntendedExposureUndefined: Self = StObject.set(x, "intendedExposure", js.undefined)
     
     inline def setIntendedExposureVarargs(value: Reference*): Self = StObject.set(x, "intendedExposure", js.Array(value*))
+    
+    inline def setLinkId(value: String): Self = StObject.set(x, "linkId", value.asInstanceOf[js.Any])
+    
+    inline def setLinkIdUndefined: Self = StObject.set(x, "linkId", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
@@ -91,9 +82,9 @@ object ResearchStudyComparisonGroup {
     
     inline def set_descriptionUndefined: Self = StObject.set(x, "_description", js.undefined)
     
-    inline def set_identifierUri(value: Element): Self = StObject.set(x, "_identifierUri", value.asInstanceOf[js.Any])
+    inline def set_linkId(value: Element): Self = StObject.set(x, "_linkId", value.asInstanceOf[js.Any])
     
-    inline def set_identifierUriUndefined: Self = StObject.set(x, "_identifierUri", js.undefined)
+    inline def set_linkIdUndefined: Self = StObject.set(x, "_linkId", js.undefined)
     
     inline def set_name(value: Element): Self = StObject.set(x, "_name", value.asInstanceOf[js.Any])
     

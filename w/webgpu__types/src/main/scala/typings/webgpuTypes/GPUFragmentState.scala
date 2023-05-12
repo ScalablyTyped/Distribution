@@ -8,6 +8,10 @@ trait GPUFragmentState
   extends StObject
      with GPUProgrammableStage {
   
+  /**
+    * A list of {@link GPUColorTargetState} defining the formats and behaviors of the color targets
+    * this pipeline writes to.
+    */
   var targets: js.Iterable[GPUColorTargetState | Null]
 }
 object GPUFragmentState {

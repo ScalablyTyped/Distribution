@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NotebookEditorVisibleRangesChangeEvent extends StObject {
   
   /**
-    * The {@link NotebookEditor notebook editor} for which the visible ranges have changed.
-    */
+  		 * The {@link NotebookEditor notebook editor} for which the visible ranges have changed.
+  		 */
   val notebookEditor: NotebookEditor
   
   /**
-    * The new value for the {@link NotebookEditor.visibleRanges notebook editor's visibleRanges}.
-    */
+  		 * The new value for the {@link NotebookEditor.visibleRanges notebook editor's visibleRanges}.
+  		 */
   val visibleRanges: js.Array[NotebookRange]
 }
 object NotebookEditorVisibleRangesChangeEvent {

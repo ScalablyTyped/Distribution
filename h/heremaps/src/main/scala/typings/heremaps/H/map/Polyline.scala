@@ -80,15 +80,15 @@ object Polyline {
   
   /**
     * Options which are used to initialize a polyline
-    * @property style {(H.map.SpatialStyle | H.map.SpatialStyle.Options)=} - the style to be used when tracing the polyline
-    * @property arrows {(H.map.ArrowStyle | H.map.ArrowStyle.Options)=} - The arrows style to be used when rendering the polyline.
-    * @property visibility {boolean=} - An optional boolean value indicating whether this map object is visible, default is true
-    * @property zIndex {number=} - The z-index value of the map object, default is 0
-    * @property min {number=} - The minimum zoom level for which the object is visible, default is -Infinity
-    * @property max {number=} - The maximum zoom level for which the object is visible, default is Infinity
-    * @property provider {(H.map.provider.Provider | null)=} - The provider of this object. This property is only needed if a customized Implementation of ObjectProvider wants to instantiate
+    * style {(H.map.SpatialStyle | H.map.SpatialStyle.Options)=} - the style to be used when tracing the polyline
+    * arrows {(H.map.ArrowStyle | H.map.ArrowStyle.Options)=} - The arrows style to be used when rendering the polyline.
+    * visibility {boolean=} - An optional boolean value indicating whether this map object is visible, default is true
+    * zIndex {number=} - The z-index value of the map object, default is 0
+    * min {number=} - The minimum zoom level for which the object is visible, default is -Infinity
+    * max {number=} - The maximum zoom level for which the object is visible, default is Infinity
+    * provider {(H.map.provider.Provider | null)=} - The provider of this object. This property is only needed if a customized Implementation of ObjectProvider wants to instantiate
     * an object.
-    * @property data {*} - Optional arbitrary data to be stored with this map object. This data can be retrieved by calling getData
+    * data {*} - Optional arbitrary data to be stored with this map object. This data can be retrieved by calling getData
     */
   trait Options extends StObject {
     

@@ -17,7 +17,7 @@ trait AsyncHints extends StObject {
     * and compatibility cannot be guaranteed. The parameter must not be used in productive code, except in
     * code delivered by the UI5 teams.
     */
-  var asyncHints: js.UndefOr[PreloadBundles] = js.undefined
+  var asyncHints: js.UndefOr[Libs] = js.undefined
   
   /**
     * Whether and from where to load the manifest.json for the Component. When set to a truthy value, the manifest
@@ -57,7 +57,7 @@ object AsyncHints {
     
     inline def setAltManifestUrlUndefined: Self = StObject.set(x, "altManifestUrl", js.undefined)
     
-    inline def setAsyncHints(value: PreloadBundles): Self = StObject.set(x, "asyncHints", value.asInstanceOf[js.Any])
+    inline def setAsyncHints(value: Libs): Self = StObject.set(x, "asyncHints", value.asInstanceOf[js.Any])
     
     inline def setAsyncHintsUndefined: Self = StObject.set(x, "asyncHints", js.undefined)
     

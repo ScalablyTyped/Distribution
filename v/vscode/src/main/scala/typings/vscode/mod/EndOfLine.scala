@@ -14,8 +14,8 @@ object EndOfLine extends StObject {
   def apply(value: Double): js.UndefOr[EndOfLine & Double] = js.native
   
   /**
-    * The carriage return line feed `\r\n` sequence.
-    */
+  		 * The carriage return line feed `\r\n` sequence.
+  		 */
   @js.native
   sealed trait CRLF
     extends StObject
@@ -23,8 +23,8 @@ object EndOfLine extends StObject {
   /* 2 */ val CRLF: typings.vscode.mod.EndOfLine.CRLF & Double = js.native
   
   /**
-    * The line feed `\n` character.
-    */
+  		 * The line feed `\n` character.
+  		 */
   @js.native
   sealed trait LF
     extends StObject

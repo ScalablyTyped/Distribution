@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "svgpath" : "2.5.0"
+      "svgpath" : "2.6.0"
     }
   ],
   "test-dependencies" : [
     {
-      "svgpath" : "2.5.0"
+      "svgpath" : "2.6.0"
     }
   ],
   "compile-devDependencies" : [

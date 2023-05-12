@@ -16,7 +16,7 @@ object libIconsMoneyCollectTwoToneMod extends Shortcut {
   @js.native
   trait MoneyCollectTwoToneIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_MoneyCollectTwoToneIconType: String = js.native

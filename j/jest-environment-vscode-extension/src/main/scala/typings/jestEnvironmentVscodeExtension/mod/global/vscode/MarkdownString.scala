@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("vscode.MarkdownString")
 @js.native
 /**
-  * Creates a new markdown string with the given value.
-  *
-  * @param value Optional, initial value.
-  * @param supportThemeIcons Optional, Specifies whether {@link ThemeIcon ThemeIcons} are supported within the {@linkcode MarkdownString}.
-  */
+		 * Creates a new markdown string with the given value.
+		 *
+		 * @param value Optional, initial value.
+		 * @param supportThemeIcons Optional, Specifies whether {@link ThemeIcon ThemeIcons} are supported within the {@linkcode MarkdownString}.
+		 */
 open class MarkdownString ()
   extends typings.vscode.mod.MarkdownString {
   def this(value: String) = this()

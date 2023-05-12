@@ -1,10 +1,14 @@
 package typings.monacoEditor.mod.editor
 
+import typings.monacoEditor.monacoEditorStrings.always
 import typings.monacoEditor.monacoEditorStrings.insert
+import typings.monacoEditor.monacoEditorStrings.never
 import typings.monacoEditor.monacoEditorStrings.prefix
 import typings.monacoEditor.monacoEditorStrings.replace
 import typings.monacoEditor.monacoEditorStrings.subword
 import typings.monacoEditor.monacoEditorStrings.subwordSmart
+import typings.monacoEditor.monacoEditorStrings.whenQuickSuggestion
+import typings.monacoEditor.monacoEditorStrings.whenTriggerCharacter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,6 +31,11 @@ trait ISuggestOptions extends StObject {
   var localityBonus: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Controls whether suggestions allow matches in the middle of the word instead of only at the beginning
+    */
+  var matchOnWordStartOnly: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * Enable or disable the rendering of the suggestion preview.
     */
   var preview: js.UndefOr[Boolean] = js.undefined
@@ -35,6 +44,11 @@ trait ISuggestOptions extends StObject {
     * Configures the mode of the preview.
     */
   var previewMode: js.UndefOr[prefix | subword | subwordSmart] = js.undefined
+  
+  /**
+    * Select suggestions when triggered via quick suggest or trigger characters
+    */
+  var selectionMode: js.UndefOr[always | never | whenTriggerCharacter | whenQuickSuggestion] = js.undefined
   
   /**
     * Enable using global storage for remembering suggestions.
@@ -223,6 +237,10 @@ object ISuggestOptions {
     
     inline def setLocalityBonusUndefined: Self = StObject.set(x, "localityBonus", js.undefined)
     
+    inline def setMatchOnWordStartOnly(value: Boolean): Self = StObject.set(x, "matchOnWordStartOnly", value.asInstanceOf[js.Any])
+    
+    inline def setMatchOnWordStartOnlyUndefined: Self = StObject.set(x, "matchOnWordStartOnly", js.undefined)
+    
     inline def setPreview(value: Boolean): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
     
     inline def setPreviewMode(value: prefix | subword | subwordSmart): Self = StObject.set(x, "previewMode", value.asInstanceOf[js.Any])
@@ -230,6 +248,10 @@ object ISuggestOptions {
     inline def setPreviewModeUndefined: Self = StObject.set(x, "previewMode", js.undefined)
     
     inline def setPreviewUndefined: Self = StObject.set(x, "preview", js.undefined)
+    
+    inline def setSelectionMode(value: always | never | whenTriggerCharacter | whenQuickSuggestion): Self = StObject.set(x, "selectionMode", value.asInstanceOf[js.Any])
+    
+    inline def setSelectionModeUndefined: Self = StObject.set(x, "selectionMode", js.undefined)
     
     inline def setShareSuggestSelections(value: Boolean): Self = StObject.set(x, "shareSuggestSelections", value.asInstanceOf[js.Any])
     

@@ -1,7 +1,7 @@
 
 # Scala.js typings for firebase__functions-types
 
-Typings are for version 0.5.1
+Typings are for version 0.6.0
 
 ## Library description:
 @firebase/functions Types

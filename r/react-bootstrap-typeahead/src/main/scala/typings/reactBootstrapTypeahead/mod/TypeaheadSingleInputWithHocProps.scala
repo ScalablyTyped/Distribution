@@ -20,14 +20,17 @@ import typings.react.mod.TouchEventHandler
 import typings.react.mod.TransitionEventHandler
 import typings.react.mod.UIEventHandler
 import typings.react.mod.WheelEventHandler
+import typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings._empty
 import typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.`additions removals`
 import typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.`additions text`
 import typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.`removals additions`
 import typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.`removals text`
 import typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.`text additions`
 import typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.`text removals`
+import typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.`use-credentials`
 import typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.additions
 import typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.all
+import typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.anonymous
 import typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.ascending
 import typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.assertive
 import typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.both
@@ -76,6 +79,7 @@ import typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.vertical
 import typings.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.yes
 import typings.std.Element
 import typings.std.Event
+import typings.std.FormData
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -212,11 +216,13 @@ trait TypeaheadSingleInputWithHocProps[T /* <: TypeaheadModel */] extends StObje
   
   var color: js.UndefOr[String] = js.native
   
+  var content: js.UndefOr[String] = js.native
+  
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
   
   var contextMenu: js.UndefOr[String] = js.native
   
-  var crossOrigin: js.UndefOr[String] = js.native
+  var crossOrigin: js.UndefOr[anonymous | `use-credentials` | _empty] = js.native
   
   var dangerouslySetInnerHTML: js.UndefOr[Html] = js.native
   
@@ -236,7 +242,7 @@ trait TypeaheadSingleInputWithHocProps[T /* <: TypeaheadModel */] extends StObje
   
   var form: js.UndefOr[String] = js.native
   
-  var formAction: js.UndefOr[String] = js.native
+  var formAction: js.UndefOr[String | (js.Function1[/* formData */ FormData, Unit])] = js.native
   
   var formEncType: js.UndefOr[String] = js.native
   
@@ -463,11 +469,15 @@ trait TypeaheadSingleInputWithHocProps[T /* <: TypeaheadModel */] extends StObje
   
   var readOnly: js.UndefOr[Boolean] = js.native
   
+  var rel: js.UndefOr[String] = js.native
+  
   var required: js.UndefOr[Boolean] = js.native
   
   var resource: js.UndefOr[String] = js.native
   
   var results: js.UndefOr[Double] = js.native
+  
+  var rev: js.UndefOr[String] = js.native
   
   var role: combobox = js.native
   

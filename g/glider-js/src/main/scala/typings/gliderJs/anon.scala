@@ -1,15 +1,260 @@
 package typings.gliderJs
 
+import typings.gliderJs.gliderJsStrings.`glider-add`
+import typings.gliderJs.gliderJsStrings.`glider-animated`
+import typings.gliderJs.gliderJsStrings.`glider-destroy`
+import typings.gliderJs.gliderJsStrings.`glider-loaded`
+import typings.gliderJs.gliderJsStrings.`glider-refresh`
+import typings.gliderJs.gliderJsStrings.`glider-remove`
+import typings.gliderJs.gliderJsStrings.`glider-slide-hidden`
+import typings.gliderJs.gliderJsStrings.`glider-slide-visible`
 import typings.gliderJs.gliderJsStrings.arrow
 import typings.gliderJs.gliderJsStrings.dot
 import typings.gliderJs.gliderJsStrings.slide
 import typings.gliderJs.mod.Arrow
+import typings.gliderJs.mod.Glider
+import typings.gliderJs.mod.GliderEvent
 import typings.gliderJs.mod.Selector
+import typings.gliderJs.mod.global.HTMLElement
+import typings.std.AddEventListenerOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
+  
+  /* Inlined glider-js.glider-js.<global>.HTMLElement & {  _glider :glider-js.glider-js.Glider<glider-js.glider-js.<global>.HTMLElement> | undefined} */
+  @js.native
+  trait HTMLElementgliderGliderHT extends StObject {
+    
+    var _glider: js.UndefOr[Glider[HTMLElement]] = js.native
+    
+    @JSName("addEventListener")
+    def addEventListener_glideradd(`type`: `glider-add`, listener: js.Function1[/* event */ GliderEvent[Scroll], Unit]): Unit = js.native
+    @JSName("addEventListener")
+    def addEventListener_glideradd(
+      `type`: `glider-add`,
+      listener: js.Function1[/* event */ GliderEvent[Scroll], Unit],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("addEventListener")
+    def addEventListener_glideradd(
+      `type`: `glider-add`,
+      listener: js.Function1[/* event */ GliderEvent[Scroll], Unit],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("addEventListener")
+    def addEventListener_glideranimated(`type`: `glider-animated`, listener: js.Function1[/* event */ GliderEvent[Type], Unit]): Unit = js.native
+    @JSName("addEventListener")
+    def addEventListener_glideranimated(
+      `type`: `glider-animated`,
+      listener: js.Function1[/* event */ GliderEvent[Type], Unit],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("addEventListener")
+    def addEventListener_glideranimated(
+      `type`: `glider-animated`,
+      listener: js.Function1[/* event */ GliderEvent[Type], Unit],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("addEventListener")
+    def addEventListener_gliderdestroy(`type`: `glider-destroy`, listener: js.Function1[/* event */ GliderEvent[Unit], Unit]): Unit = js.native
+    @JSName("addEventListener")
+    def addEventListener_gliderdestroy(
+      `type`: `glider-destroy`,
+      listener: js.Function1[/* event */ GliderEvent[Unit], Unit],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("addEventListener")
+    def addEventListener_gliderdestroy(
+      `type`: `glider-destroy`,
+      listener: js.Function1[/* event */ GliderEvent[Unit], Unit],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("addEventListener")
+    def addEventListener_gliderloaded(`type`: `glider-loaded`, listener: js.Function1[/* event */ GliderEvent[Unit], Unit]): Unit = js.native
+    @JSName("addEventListener")
+    def addEventListener_gliderloaded(
+      `type`: `glider-loaded`,
+      listener: js.Function1[/* event */ GliderEvent[Unit], Unit],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("addEventListener")
+    def addEventListener_gliderloaded(
+      `type`: `glider-loaded`,
+      listener: js.Function1[/* event */ GliderEvent[Unit], Unit],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("addEventListener")
+    def addEventListener_gliderrefresh(`type`: `glider-refresh`, listener: js.Function1[/* event */ GliderEvent[Unit], Unit]): Unit = js.native
+    @JSName("addEventListener")
+    def addEventListener_gliderrefresh(
+      `type`: `glider-refresh`,
+      listener: js.Function1[/* event */ GliderEvent[Unit], Unit],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("addEventListener")
+    def addEventListener_gliderrefresh(
+      `type`: `glider-refresh`,
+      listener: js.Function1[/* event */ GliderEvent[Unit], Unit],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("addEventListener")
+    def addEventListener_gliderremove(`type`: `glider-remove`, listener: js.Function1[/* event */ GliderEvent[Unit], Unit]): Unit = js.native
+    @JSName("addEventListener")
+    def addEventListener_gliderremove(
+      `type`: `glider-remove`,
+      listener: js.Function1[/* event */ GliderEvent[Unit], Unit],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("addEventListener")
+    def addEventListener_gliderremove(
+      `type`: `glider-remove`,
+      listener: js.Function1[/* event */ GliderEvent[Unit], Unit],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("addEventListener")
+    def addEventListener_gliderslidehidden(`type`: `glider-slide-hidden`, listener: js.Function1[/* event */ GliderEvent[Slide], Unit]): Unit = js.native
+    @JSName("addEventListener")
+    def addEventListener_gliderslidehidden(
+      `type`: `glider-slide-hidden`,
+      listener: js.Function1[/* event */ GliderEvent[Slide], Unit],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("addEventListener")
+    def addEventListener_gliderslidehidden(
+      `type`: `glider-slide-hidden`,
+      listener: js.Function1[/* event */ GliderEvent[Slide], Unit],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("addEventListener")
+    def addEventListener_gliderslidevisible(`type`: `glider-slide-visible`, listener: js.Function1[/* event */ GliderEvent[Slide], Unit]): Unit = js.native
+    @JSName("addEventListener")
+    def addEventListener_gliderslidevisible(
+      `type`: `glider-slide-visible`,
+      listener: js.Function1[/* event */ GliderEvent[Slide], Unit],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("addEventListener")
+    def addEventListener_gliderslidevisible(
+      `type`: `glider-slide-visible`,
+      listener: js.Function1[/* event */ GliderEvent[Slide], Unit],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    
+    @JSName("removeEventListener")
+    def removeEventListener_glideradd(`type`: `glider-add`, listener: js.Function1[/* event */ GliderEvent[Scroll], Unit]): Unit = js.native
+    @JSName("removeEventListener")
+    def removeEventListener_glideradd(
+      `type`: `glider-add`,
+      listener: js.Function1[/* event */ GliderEvent[Scroll], Unit],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("removeEventListener")
+    def removeEventListener_glideradd(
+      `type`: `glider-add`,
+      listener: js.Function1[/* event */ GliderEvent[Scroll], Unit],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("removeEventListener")
+    def removeEventListener_glideranimated(`type`: `glider-animated`, listener: js.Function1[/* event */ GliderEvent[Type], Unit]): Unit = js.native
+    @JSName("removeEventListener")
+    def removeEventListener_glideranimated(
+      `type`: `glider-animated`,
+      listener: js.Function1[/* event */ GliderEvent[Type], Unit],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("removeEventListener")
+    def removeEventListener_glideranimated(
+      `type`: `glider-animated`,
+      listener: js.Function1[/* event */ GliderEvent[Type], Unit],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("removeEventListener")
+    def removeEventListener_gliderdestroy(`type`: `glider-destroy`, listener: js.Function1[/* event */ GliderEvent[Unit], Unit]): Unit = js.native
+    @JSName("removeEventListener")
+    def removeEventListener_gliderdestroy(
+      `type`: `glider-destroy`,
+      listener: js.Function1[/* event */ GliderEvent[Unit], Unit],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("removeEventListener")
+    def removeEventListener_gliderdestroy(
+      `type`: `glider-destroy`,
+      listener: js.Function1[/* event */ GliderEvent[Unit], Unit],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("removeEventListener")
+    def removeEventListener_gliderloaded(`type`: `glider-loaded`, listener: js.Function1[/* event */ GliderEvent[Unit], Unit]): Unit = js.native
+    @JSName("removeEventListener")
+    def removeEventListener_gliderloaded(
+      `type`: `glider-loaded`,
+      listener: js.Function1[/* event */ GliderEvent[Unit], Unit],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("removeEventListener")
+    def removeEventListener_gliderloaded(
+      `type`: `glider-loaded`,
+      listener: js.Function1[/* event */ GliderEvent[Unit], Unit],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("removeEventListener")
+    def removeEventListener_gliderrefresh(`type`: `glider-refresh`, listener: js.Function1[/* event */ GliderEvent[Unit], Unit]): Unit = js.native
+    @JSName("removeEventListener")
+    def removeEventListener_gliderrefresh(
+      `type`: `glider-refresh`,
+      listener: js.Function1[/* event */ GliderEvent[Unit], Unit],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("removeEventListener")
+    def removeEventListener_gliderrefresh(
+      `type`: `glider-refresh`,
+      listener: js.Function1[/* event */ GliderEvent[Unit], Unit],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("removeEventListener")
+    def removeEventListener_gliderremove(`type`: `glider-remove`, listener: js.Function1[/* event */ GliderEvent[Unit], Unit]): Unit = js.native
+    @JSName("removeEventListener")
+    def removeEventListener_gliderremove(
+      `type`: `glider-remove`,
+      listener: js.Function1[/* event */ GliderEvent[Unit], Unit],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("removeEventListener")
+    def removeEventListener_gliderremove(
+      `type`: `glider-remove`,
+      listener: js.Function1[/* event */ GliderEvent[Unit], Unit],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("removeEventListener")
+    def removeEventListener_gliderslidehidden(`type`: `glider-slide-hidden`, listener: js.Function1[/* event */ GliderEvent[Slide], Unit]): Unit = js.native
+    @JSName("removeEventListener")
+    def removeEventListener_gliderslidehidden(
+      `type`: `glider-slide-hidden`,
+      listener: js.Function1[/* event */ GliderEvent[Slide], Unit],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("removeEventListener")
+    def removeEventListener_gliderslidehidden(
+      `type`: `glider-slide-hidden`,
+      listener: js.Function1[/* event */ GliderEvent[Slide], Unit],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+    @JSName("removeEventListener")
+    def removeEventListener_gliderslidevisible(`type`: `glider-slide-visible`, listener: js.Function1[/* event */ GliderEvent[Slide], Unit]): Unit = js.native
+    @JSName("removeEventListener")
+    def removeEventListener_gliderslidevisible(
+      `type`: `glider-slide-visible`,
+      listener: js.Function1[/* event */ GliderEvent[Slide], Unit],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("removeEventListener")
+    def removeEventListener_gliderslidevisible(
+      `type`: `glider-slide-visible`,
+      listener: js.Function1[/* event */ GliderEvent[Slide], Unit],
+      options: AddEventListenerOptions
+    ): Unit = js.native
+  }
   
   trait Next extends StObject {
     

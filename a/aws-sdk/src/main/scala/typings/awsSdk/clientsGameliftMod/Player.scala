@@ -12,7 +12,7 @@ trait Player extends StObject {
   var LatencyInMs: js.UndefOr[LatencyMap] = js.undefined
   
   /**
-    * A collection of key:value pairs containing player information for use in matchmaking. Player attribute keys must match the playerAttributes used in a matchmaking rule set. Example: "PlayerAttributes": {"skill": {"N": "23"}, "gameMode": {"S": "deathmatch"}}.
+    * A collection of key:value pairs containing player information for use in matchmaking. Player attribute keys must match the playerAttributes used in a matchmaking rule set. Example: "PlayerAttributes": {"skill": {"N": "23"}, "gameMode": {"S": "deathmatch"}}. You can provide up to 10 PlayerAttributes.
     */
   var PlayerAttributes: js.UndefOr[PlayerAttributeMap] = js.undefined
   

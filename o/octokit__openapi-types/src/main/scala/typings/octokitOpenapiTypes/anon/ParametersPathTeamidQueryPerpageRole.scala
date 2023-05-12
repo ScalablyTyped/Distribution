@@ -8,11 +8,11 @@ trait ParametersPathTeamidQueryPerpageRole extends StObject {
   
   var parameters: PathTeamidQueryPerpageRole
   
-  var responses: `200Content69Headers404`
+  var responses: `200HeadersLink404`
 }
 object ParametersPathTeamidQueryPerpageRole {
   
-  inline def apply(parameters: PathTeamidQueryPerpageRole, responses: `200Content69Headers404`): ParametersPathTeamidQueryPerpageRole = {
+  inline def apply(parameters: PathTeamidQueryPerpageRole, responses: `200HeadersLink404`): ParametersPathTeamidQueryPerpageRole = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersPathTeamidQueryPerpageRole]
   }
@@ -22,6 +22,6 @@ object ParametersPathTeamidQueryPerpageRole {
     
     inline def setParameters(value: PathTeamidQueryPerpageRole): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `200Content69Headers404`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `200HeadersLink404`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

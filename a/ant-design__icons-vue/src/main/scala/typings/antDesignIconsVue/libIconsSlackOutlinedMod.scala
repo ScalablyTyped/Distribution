@@ -16,7 +16,7 @@ object libIconsSlackOutlinedMod extends Shortcut {
   @js.native
   trait SlackOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_SlackOutlinedIconType: String = js.native

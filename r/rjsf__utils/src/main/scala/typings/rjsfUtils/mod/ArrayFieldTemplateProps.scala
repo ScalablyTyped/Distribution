@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /** The properties that are passed to an ArrayFieldTemplate implementation */
 @js.native
-trait ArrayFieldTemplateProps[T, F] extends StObject {
+trait ArrayFieldTemplateProps[T, S /* <: StrictRJSFSchema */, F /* <: FormContextType */] extends StObject {
   
   /** A boolean value stating whether new elements can be added to the array */
   var canAdd: js.UndefOr[Boolean] = js.native
@@ -21,7 +21,7 @@ trait ArrayFieldTemplateProps[T, F] extends StObject {
   var formContext: js.UndefOr[F] = js.native
   
   /** The formData for this array */
-  var formData: T = js.native
+  var formData: js.UndefOr[T] = js.native
   
   /** A boolean value stating if the field is hiding its errors */
   var hideError: js.UndefOr[Boolean] = js.native
@@ -30,7 +30,7 @@ trait ArrayFieldTemplateProps[T, F] extends StObject {
   var idSchema: IdSchema[T] = js.native
   
   /** An array of objects representing the items in the array */
-  var items: js.Array[ArrayFieldTemplateItemType[T, F]] = js.native
+  var items: js.Array[ArrayFieldTemplateItemType[T, S, F]] = js.native
   
   /** A function that adds a new item to the array */
   def onAddClick(): Unit = js.native
@@ -43,17 +43,17 @@ trait ArrayFieldTemplateProps[T, F] extends StObject {
   var readonly: js.UndefOr[Boolean] = js.native
   
   /** The `registry` object */
-  var registry: Registry[T, F] = js.native
+  var registry: Registry[T, S, F] = js.native
   
   /** A boolean value stating if the array is required */
   var required: js.UndefOr[Boolean] = js.native
   
   /** The schema object for this array */
-  var schema: RJSFSchema = js.native
+  var schema: S = js.native
   
   /** A string value containing the title for the array */
   var title: String = js.native
   
   /** The uiSchema object for this array field */
-  var uiSchema: js.UndefOr[UiSchema[T, F]] = js.native
+  var uiSchema: js.UndefOr[UiSchema[T, S, F]] = js.native
 }

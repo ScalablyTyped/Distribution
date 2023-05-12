@@ -16,7 +16,7 @@ object libIconsFileExclamationTwoToneMod extends Shortcut {
   @js.native
   trait FileExclamationTwoToneIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_FileExclamationTwoToneIconType: String = js.native

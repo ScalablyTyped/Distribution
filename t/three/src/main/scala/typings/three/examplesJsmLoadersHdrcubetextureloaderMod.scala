@@ -40,6 +40,9 @@ object examplesJsmLoadersHdrcubetextureloaderMod {
       onError: js.Function1[/* event */ ErrorEvent, Unit]
     ): CubeTexture = js.native
     
+    def loadAsync(urls: js.Array[String]): js.Promise[CubeTexture] = js.native
+    def loadAsync(urls: js.Array[String], onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit]): js.Promise[CubeTexture] = js.native
+    
     def setDataType(`type`: TextureDataType): this.type = js.native
     
     var `type`: TextureDataType = js.native

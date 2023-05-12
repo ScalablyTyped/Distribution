@@ -5,13 +5,15 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * An overlay that looks like a bubble and is often connected to a marker.
-  */
 @JSGlobal("google.maps.InfoWindow")
 @js.native
 /**
   * An overlay that looks like a bubble and is often connected to a marker.
+  *
+  * Access by calling `const {InfoWindow} = await
+  * google.maps.importLibrary("maps")` or `const {InfoWindow} = await
+  * google.maps.importLibrary("streetView")`. See
+  * https://developers.google.com/maps/documentation/javascript/libraries.
   */
 open class InfoWindow ()
   extends StObject

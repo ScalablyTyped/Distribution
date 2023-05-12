@@ -23,6 +23,7 @@ import typings.std.Event
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import typings.std.HTMLInputElement
+import typings.std.HTMLLIElement
 import typings.std.HTMLUListElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -198,7 +199,7 @@ object PartialSuggest2Propsany {
     
     inline def setItemPredicateUndefined: Self = StObject.set(x, "itemPredicate", js.undefined)
     
-    inline def setItemRenderer(value: (Any, /* itemProps */ ItemRendererProps) => Element | Null): Self = StObject.set(x, "itemRenderer", js.Any.fromFunction2(value))
+    inline def setItemRenderer(value: (Any, /* itemProps */ ItemRendererProps[HTMLLIElement]) => Element | Null): Self = StObject.set(x, "itemRenderer", js.Any.fromFunction2(value))
     
     inline def setItemRendererUndefined: Self = StObject.set(x, "itemRenderer", js.undefined)
     

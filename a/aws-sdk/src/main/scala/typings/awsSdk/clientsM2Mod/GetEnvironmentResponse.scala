@@ -52,12 +52,17 @@ trait GetEnvironmentResponse extends StObject {
   var instanceType: String20
   
   /**
+    * The identifier of a customer managed key.
+    */
+  var kmsKeyId: js.UndefOr[String] = js.undefined
+  
+  /**
     * The Amazon Resource Name (ARN) for the load balancer used with the runtime environment.
     */
   var loadBalancerArn: js.UndefOr[String] = js.undefined
   
   /**
-    * The name of the runtime environment. 
+    * The name of the runtime environment. Must be unique within the account.
     */
   var name: EntityName
   
@@ -67,9 +72,9 @@ trait GetEnvironmentResponse extends StObject {
   var pendingMaintenance: js.UndefOr[PendingMaintenance] = js.undefined
   
   /**
-    * Configures a desired maintenance window for the environment. If you do not provide a value, a random system-generated value will be assigned.
+    * Configures the maintenance window you want for the runtime environment. If you do not provide a value, a random system-generated value will be assigned.
     */
-  var preferredMaintenanceWindow: js.UndefOr[String] = js.undefined
+  var preferredMaintenanceWindow: js.UndefOr[String50] = js.undefined
   
   /**
     * Whether applications running in this runtime environment are publicly accessible. 
@@ -157,6 +162,10 @@ object GetEnvironmentResponse {
     
     inline def setInstanceType(value: String20): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
     
+    inline def setKmsKeyId(value: String): Self = StObject.set(x, "kmsKeyId", value.asInstanceOf[js.Any])
+    
+    inline def setKmsKeyIdUndefined: Self = StObject.set(x, "kmsKeyId", js.undefined)
+    
     inline def setLoadBalancerArn(value: String): Self = StObject.set(x, "loadBalancerArn", value.asInstanceOf[js.Any])
     
     inline def setLoadBalancerArnUndefined: Self = StObject.set(x, "loadBalancerArn", js.undefined)
@@ -167,7 +176,7 @@ object GetEnvironmentResponse {
     
     inline def setPendingMaintenanceUndefined: Self = StObject.set(x, "pendingMaintenance", js.undefined)
     
-    inline def setPreferredMaintenanceWindow(value: String): Self = StObject.set(x, "preferredMaintenanceWindow", value.asInstanceOf[js.Any])
+    inline def setPreferredMaintenanceWindow(value: String50): Self = StObject.set(x, "preferredMaintenanceWindow", value.asInstanceOf[js.Any])
     
     inline def setPreferredMaintenanceWindowUndefined: Self = StObject.set(x, "preferredMaintenanceWindow", js.undefined)
     

@@ -12,6 +12,13 @@ trait ConnectivityInfo extends StObject {
     
     */
   var PublicAccess: js.UndefOr[typings.awsSdk.clientsKafkaMod.PublicAccess] = js.undefined
+  
+  /**
+    * 
+    VPC connectivity access control for brokers.
+    
+    */
+  var VpcConnectivity: js.UndefOr[typings.awsSdk.clientsKafkaMod.VpcConnectivity] = js.undefined
 }
 object ConnectivityInfo {
   
@@ -26,5 +33,9 @@ object ConnectivityInfo {
     inline def setPublicAccess(value: PublicAccess): Self = StObject.set(x, "PublicAccess", value.asInstanceOf[js.Any])
     
     inline def setPublicAccessUndefined: Self = StObject.set(x, "PublicAccess", js.undefined)
+    
+    inline def setVpcConnectivity(value: VpcConnectivity): Self = StObject.set(x, "VpcConnectivity", value.asInstanceOf[js.Any])
+    
+    inline def setVpcConnectivityUndefined: Self = StObject.set(x, "VpcConnectivity", js.undefined)
   }
 }

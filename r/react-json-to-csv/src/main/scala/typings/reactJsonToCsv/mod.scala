@@ -21,7 +21,11 @@ object mod {
     
     var data: js.Object | js.Array[js.Object]
     
+    var delimiter: js.UndefOr[String] = js.undefined
+    
     var filename: js.UndefOr[String] = js.undefined
+    
+    var headers: js.UndefOr[js.Array[String]] = js.undefined
   }
   object CsvDownloadProps {
     
@@ -37,9 +41,19 @@ object mod {
       
       inline def setDataVarargs(value: js.Object*): Self = StObject.set(x, "data", js.Array(value*))
       
+      inline def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
+      
+      inline def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
+      
       inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
       inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+      
+      inline def setHeaders(value: js.Array[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      
+      inline def setHeadersVarargs(value: String*): Self = StObject.set(x, "headers", js.Array(value*))
     }
   }
 }

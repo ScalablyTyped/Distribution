@@ -62,6 +62,7 @@ import typings.csstype.mod.Property.MaskBorderSource
 import typings.csstype.mod.Property.MaskBorderWidth
 import typings.csstype.mod.Property.MaxInlineSize
 import typings.csstype.mod.Property.MozAppearance
+import typings.csstype.mod.Property.MozBinding
 import typings.csstype.mod.Property.MozBorderBottomColors
 import typings.csstype.mod.Property.MozBorderLeftColors
 import typings.csstype.mod.Property.MozBorderRightColors
@@ -211,6 +212,8 @@ trait VendorLonghandPropertiesHyphenFallback[TLength, TTime] extends StObject {
   var `-moz-appearance`: js.UndefOr[MozAppearance | js.Array[NonNullable[js.UndefOr[MozAppearance]]]] = js.undefined
   
   var `-moz-backface-visibility`: js.UndefOr[BackfaceVisibility | js.Array[NonNullable[js.UndefOr[BackfaceVisibility]]]] = js.undefined
+  
+  var `-moz-binding`: js.UndefOr[MozBinding | js.Array[NonNullable[js.UndefOr[MozBinding]]]] = js.undefined
   
   var `-moz-border-bottom-colors`: js.UndefOr[MozBorderBottomColors | js.Array[NonNullable[js.UndefOr[MozBorderBottomColors]]]] = js.undefined
   
@@ -829,6 +832,12 @@ object VendorLonghandPropertiesHyphenFallback {
     inline def `set-moz-backface-visibilityUndefined`: Self = StObject.set(x, "-moz-backface-visibility", js.undefined)
     
     inline def `set-moz-backface-visibilityVarargs`(value: NonNullable[js.UndefOr[BackfaceVisibility]]*): Self = StObject.set(x, "-moz-backface-visibility", js.Array(value*))
+    
+    inline def `set-moz-binding`(value: MozBinding | js.Array[NonNullable[js.UndefOr[MozBinding]]]): Self = StObject.set(x, "-moz-binding", value.asInstanceOf[js.Any])
+    
+    inline def `set-moz-bindingUndefined`: Self = StObject.set(x, "-moz-binding", js.undefined)
+    
+    inline def `set-moz-bindingVarargs`(value: NonNullable[js.UndefOr[MozBinding]]*): Self = StObject.set(x, "-moz-binding", js.Array(value*))
     
     inline def `set-moz-border-bottom-colors`(value: MozBorderBottomColors | js.Array[NonNullable[js.UndefOr[MozBorderBottomColors]]]): Self = StObject.set(x, "-moz-border-bottom-colors", value.asInstanceOf[js.Any])
     

@@ -7,9 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ExperimentConfig extends StObject {
   
   /**
-    * The name of an existing experiment to associate the trial component with.
+    * The name of an existing experiment to associate with the trial component.
     */
   var ExperimentName: js.UndefOr[ExperimentEntityName] = js.undefined
+  
+  /**
+    * The name of the experiment run to associate with the trial component.
+    */
+  var RunName: js.UndefOr[ExperimentEntityName] = js.undefined
   
   /**
     * The display name for the trial component. If this key isn't specified, the display name is the trial component name.
@@ -34,6 +39,10 @@ object ExperimentConfig {
     inline def setExperimentName(value: ExperimentEntityName): Self = StObject.set(x, "ExperimentName", value.asInstanceOf[js.Any])
     
     inline def setExperimentNameUndefined: Self = StObject.set(x, "ExperimentName", js.undefined)
+    
+    inline def setRunName(value: ExperimentEntityName): Self = StObject.set(x, "RunName", value.asInstanceOf[js.Any])
+    
+    inline def setRunNameUndefined: Self = StObject.set(x, "RunName", js.undefined)
     
     inline def setTrialComponentDisplayName(value: ExperimentEntityName): Self = StObject.set(x, "TrialComponentDisplayName", value.asInstanceOf[js.Any])
     

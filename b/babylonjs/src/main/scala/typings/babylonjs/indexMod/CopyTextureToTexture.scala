@@ -11,6 +11,8 @@ open class CopyTextureToTexture protected ()
   /**
     * Constructs a new instance of the class
     * @param engine The engine to use for the copy
+    * @param isDepthTexture True means that we should write (using gl_FragDepth) into the depth texture attached to the destination (default: false)
     */
-  def this(engine: typings.babylonjs.enginesEngineMod.Engine) = this()
+  def this(engine: typings.babylonjs.enginesThinEngineMod.ThinEngine) = this()
+  def this(engine: typings.babylonjs.enginesThinEngineMod.ThinEngine, isDepthTexture: Boolean) = this()
 }

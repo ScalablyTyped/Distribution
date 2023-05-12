@@ -1,31 +1,45 @@
 package typings.photoshop.domConstantsMod
 
-import typings.photoshop.photoshopStrings.backgroundColor
-import typings.photoshop.photoshopStrings.black
-import typings.photoshop.photoshopStrings.color
-import typings.photoshop.photoshopStrings.transparent
-import typings.photoshop.photoshopStrings.white
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Rewritten from type alias, can be one of: 
-  - typings.photoshop.photoshopStrings.white
-  - typings.photoshop.photoshopStrings.black
-  - typings.photoshop.photoshopStrings.backgroundColor
-  - typings.photoshop.photoshopStrings.transparent
-  - typings.photoshop.photoshopStrings.color
-*/
-trait DocumentFill extends StObject
-object DocumentFill {
+@js.native
+sealed trait DocumentFill extends StObject
+@JSImport("photoshop/dom/Constants", "DocumentFill")
+@js.native
+object DocumentFill extends StObject {
   
-  inline def BACKGROUNDCOLOR: backgroundColor = "backgroundColor".asInstanceOf[backgroundColor]
+  @JSBracketAccess
+  def apply(value: String): js.UndefOr[DocumentFill & String] = js.native
   
-  inline def BLACK: black = "black".asInstanceOf[black]
+  @js.native
+  sealed trait BACKGROUNDCOLOR
+    extends StObject
+       with DocumentFill
+  /* "backgroundColor" */ val BACKGROUNDCOLOR: typings.photoshop.domConstantsMod.DocumentFill.BACKGROUNDCOLOR & String = js.native
   
-  inline def COLOR: color = "color".asInstanceOf[color]
+  @js.native
+  sealed trait BLACK
+    extends StObject
+       with DocumentFill
+  /* "black" */ val BLACK: typings.photoshop.domConstantsMod.DocumentFill.BLACK & String = js.native
   
-  inline def TRANSPARENT: transparent = "transparent".asInstanceOf[transparent]
+  @js.native
+  sealed trait COLOR
+    extends StObject
+       with DocumentFill
+  /* "color" */ val COLOR: typings.photoshop.domConstantsMod.DocumentFill.COLOR & String = js.native
   
-  inline def WHITE: white = "white".asInstanceOf[white]
+  @js.native
+  sealed trait TRANSPARENT
+    extends StObject
+       with DocumentFill
+  /* "transparent" */ val TRANSPARENT: typings.photoshop.domConstantsMod.DocumentFill.TRANSPARENT & String = js.native
+  
+  @js.native
+  sealed trait WHITE
+    extends StObject
+       with DocumentFill
+  /* "white" */ val WHITE: typings.photoshop.domConstantsMod.DocumentFill.WHITE & String = js.native
 }

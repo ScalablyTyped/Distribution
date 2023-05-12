@@ -59,6 +59,10 @@ object mod extends Shortcut {
       
       var console: js.UndefOr[IsEnabled] = js.undefined
       
+      /** Disables automatic busy frames tracking used for CPU Usage monitoring
+        */
+      var disableBusyFramesTracker: js.UndefOr[Boolean] = js.undefined
+      
       var dom: js.UndefOr[BaseHref] = js.undefined
       
       /**
@@ -97,6 +101,11 @@ object mod extends Shortcut {
       
       var shouldDebugLog: js.UndefOr[Boolean] = js.undefined
       
+      /** Controls automatic detection of JS errors using Raven.js
+        *  Does not impact captureException or aggregation of console errors
+        */
+      var shouldDetectExceptions: js.UndefOr[Boolean] = js.undefined
+      
       var shouldParseXHRBlob: js.UndefOr[Boolean] = js.undefined
       
       /** a callback which determines whether to send data at a particular moment of time. * */
@@ -129,6 +138,10 @@ object mod extends Shortcut {
         inline def setConsole(value: IsEnabled): Self = StObject.set(x, "console", value.asInstanceOf[js.Any])
         
         inline def setConsoleUndefined: Self = StObject.set(x, "console", js.undefined)
+        
+        inline def setDisableBusyFramesTracker(value: Boolean): Self = StObject.set(x, "disableBusyFramesTracker", value.asInstanceOf[js.Any])
+        
+        inline def setDisableBusyFramesTrackerUndefined: Self = StObject.set(x, "disableBusyFramesTracker", js.undefined)
         
         inline def setDom(value: BaseHref): Self = StObject.set(x, "dom", value.asInstanceOf[js.Any])
         
@@ -175,6 +188,10 @@ object mod extends Shortcut {
         inline def setShouldDebugLog(value: Boolean): Self = StObject.set(x, "shouldDebugLog", value.asInstanceOf[js.Any])
         
         inline def setShouldDebugLogUndefined: Self = StObject.set(x, "shouldDebugLog", js.undefined)
+        
+        inline def setShouldDetectExceptions(value: Boolean): Self = StObject.set(x, "shouldDetectExceptions", value.asInstanceOf[js.Any])
+        
+        inline def setShouldDetectExceptionsUndefined: Self = StObject.set(x, "shouldDetectExceptions", js.undefined)
         
         inline def setShouldParseXHRBlob(value: Boolean): Self = StObject.set(x, "shouldParseXHRBlob", value.asInstanceOf[js.Any])
         

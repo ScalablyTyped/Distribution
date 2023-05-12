@@ -1,11 +1,11 @@
 package typings.hyperformula
 
-import typings.hyperformula.anon.CEILING
 import typings.hyperformula.anon.ISOCEILING
 import typings.hyperformula.typingsInterpreterInterpreterMod.Interpreter
 import typings.hyperformula.typingsInterpreterInterpreterStateMod.InterpreterState
 import typings.hyperformula.typingsInterpreterInterpreterValueMod.InterpreterValue
 import typings.hyperformula.typingsInterpreterPluginFunctionPluginMod.FunctionPlugin
+import typings.hyperformula.typingsInterpreterPluginFunctionPluginMod.ImplementedFunctions
 import typings.hyperformula.typingsParserAstMod.ProcedureAst
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -61,8 +61,8 @@ object typingsInterpreterPluginRoundingPluginMod {
     
     @JSImport("hyperformula/typings/interpreter/plugin/RoundingPlugin", "RoundingPlugin.implementedFunctions")
     @js.native
-    def implementedFunctions: CEILING = js.native
-    inline def implementedFunctions_=(x: CEILING): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("implementedFunctions")(x.asInstanceOf[js.Any])
+    def implementedFunctions: ImplementedFunctions = js.native
+    inline def implementedFunctions_=(x: ImplementedFunctions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("implementedFunctions")(x.asInstanceOf[js.Any])
   }
   
   inline def findNextEvenNumber(arg: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("findNextEvenNumber")(arg.asInstanceOf[js.Any]).asInstanceOf[Double]

@@ -12,6 +12,11 @@ trait UpdateComponentTypeRequest extends StObject {
   var componentTypeId: ComponentTypeId
   
   /**
+    * The component type name.
+    */
+  var componentTypeName: js.UndefOr[ComponentTypeName] = js.undefined
+  
+  /**
     * The description of the component type.
     */
   var description: js.UndefOr[Description] = js.undefined
@@ -37,7 +42,12 @@ trait UpdateComponentTypeRequest extends StObject {
   var propertyDefinitions: js.UndefOr[PropertyDefinitionsRequest] = js.undefined
   
   /**
-    * The ID of the workspace that contains the component type.
+    * The property groups.
+    */
+  var propertyGroups: js.UndefOr[PropertyGroupsRequest] = js.undefined
+  
+  /**
+    * The ID of the workspace.
     */
   var workspaceId: Id
 }
@@ -52,6 +62,10 @@ object UpdateComponentTypeRequest {
   implicit open class MutableBuilder[Self <: UpdateComponentTypeRequest] (val x: Self) extends AnyVal {
     
     inline def setComponentTypeId(value: ComponentTypeId): Self = StObject.set(x, "componentTypeId", value.asInstanceOf[js.Any])
+    
+    inline def setComponentTypeName(value: ComponentTypeName): Self = StObject.set(x, "componentTypeName", value.asInstanceOf[js.Any])
+    
+    inline def setComponentTypeNameUndefined: Self = StObject.set(x, "componentTypeName", js.undefined)
     
     inline def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
@@ -74,6 +88,10 @@ object UpdateComponentTypeRequest {
     inline def setPropertyDefinitions(value: PropertyDefinitionsRequest): Self = StObject.set(x, "propertyDefinitions", value.asInstanceOf[js.Any])
     
     inline def setPropertyDefinitionsUndefined: Self = StObject.set(x, "propertyDefinitions", js.undefined)
+    
+    inline def setPropertyGroups(value: PropertyGroupsRequest): Self = StObject.set(x, "propertyGroups", value.asInstanceOf[js.Any])
+    
+    inline def setPropertyGroupsUndefined: Self = StObject.set(x, "propertyGroups", js.undefined)
     
     inline def setWorkspaceId(value: Id): Self = StObject.set(x, "workspaceId", value.asInstanceOf[js.Any])
   }

@@ -19,6 +19,9 @@ object distTypesCommandsMod {
   @js.native
   open class AssumeRoleCommand protected ()
     extends typings.awsSdkClientSts.distTypesCommandsAssumeRoleCommandMod.AssumeRoleCommand {
+    /**
+      * @public
+      */
     def this(input: AssumeRoleCommandInput) = this()
   }
   /* static members */
@@ -35,6 +38,9 @@ object distTypesCommandsMod {
   @js.native
   open class AssumeRoleWithSAMLCommand protected ()
     extends typings.awsSdkClientSts.distTypesCommandsAssumeRoleWithSAMLCommandMod.AssumeRoleWithSAMLCommand {
+    /**
+      * @public
+      */
     def this(input: AssumeRoleWithSAMLCommandInput) = this()
   }
   /* static members */
@@ -51,6 +57,9 @@ object distTypesCommandsMod {
   @js.native
   open class AssumeRoleWithWebIdentityCommand protected ()
     extends typings.awsSdkClientSts.distTypesCommandsAssumeRoleWithWebIdentityCommandMod.AssumeRoleWithWebIdentityCommand {
+    /**
+      * @public
+      */
     def this(input: AssumeRoleWithWebIdentityCommandInput) = this()
   }
   /* static members */
@@ -67,6 +76,9 @@ object distTypesCommandsMod {
   @js.native
   open class DecodeAuthorizationMessageCommand protected ()
     extends typings.awsSdkClientSts.distTypesCommandsDecodeAuthorizationMessageCommandMod.DecodeAuthorizationMessageCommand {
+    /**
+      * @public
+      */
     def this(input: DecodeAuthorizationMessageCommandInput) = this()
   }
   /* static members */
@@ -83,6 +95,9 @@ object distTypesCommandsMod {
   @js.native
   open class GetAccessKeyInfoCommand protected ()
     extends typings.awsSdkClientSts.distTypesCommandsGetAccessKeyInfoCommandMod.GetAccessKeyInfoCommand {
+    /**
+      * @public
+      */
     def this(input: GetAccessKeyInfoCommandInput) = this()
   }
   /* static members */
@@ -99,6 +114,9 @@ object distTypesCommandsMod {
   @js.native
   open class GetCallerIdentityCommand protected ()
     extends typings.awsSdkClientSts.distTypesCommandsGetCallerIdentityCommandMod.GetCallerIdentityCommand {
+    /**
+      * @public
+      */
     def this(input: GetCallerIdentityCommandInput) = this()
   }
   /* static members */
@@ -115,6 +133,9 @@ object distTypesCommandsMod {
   @js.native
   open class GetFederationTokenCommand protected ()
     extends typings.awsSdkClientSts.distTypesCommandsGetFederationTokenCommandMod.GetFederationTokenCommand {
+    /**
+      * @public
+      */
     def this(input: GetFederationTokenCommandInput) = this()
   }
   /* static members */
@@ -131,6 +152,9 @@ object distTypesCommandsMod {
   @js.native
   open class GetSessionTokenCommand protected ()
     extends typings.awsSdkClientSts.distTypesCommandsGetSessionTokenCommandMod.GetSessionTokenCommand {
+    /**
+      * @public
+      */
     def this(input: GetSessionTokenCommandInput) = this()
   }
   /* static members */

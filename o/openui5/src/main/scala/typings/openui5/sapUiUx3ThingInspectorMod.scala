@@ -2,7 +2,7 @@ package typings.openui5
 
 import typings.openui5.anon.ItemKey
 import typings.openui5.anon.Text
-import typings.openui5.anon.`9`
+import typings.openui5.anon.`11`
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -480,6 +480,8 @@ object sapUiUx3ThingInspectorMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:actionSelected actionSelected} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -488,9 +490,11 @@ object sapUiUx3ThingInspectorMod {
     def fireActionSelected(/**
       * Parameters to pass along with the event
       */
-    mParameters: `9`): this.type = js.native
+    mParameters: `11`): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:facetSelected facetSelected} to attached listeners.
       *
       * Listeners may prevent the default action of this event by calling the `preventDefault` method on the
@@ -505,6 +509,8 @@ object sapUiUx3ThingInspectorMod {
     mParameters: ItemKey): Boolean = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:feedSubmit feedSubmit} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining

@@ -1,7 +1,7 @@
 
 # Scala.js typings for rc-select
 
-Typings are for version 14.1.13
+Typings are for version 14.4.3
 
 ## Library description:
 React Select

@@ -11,8 +11,8 @@ object distSrcFilesMvMod {
   @js.native
   val createMv: Factory[
     js.Function3[
-      /* sources */ String | js.Array[String], 
-      /* destination */ String, 
+      /* from */ String | js.Array[String], 
+      /* to */ String, 
       /* options */ js.UndefOr[
         (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_files.MvOptions */ Any) & typings.ipfsHttpClient.distSrcTypesMod.HTTPClientExtraOptions
       ], 

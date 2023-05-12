@@ -16,11 +16,11 @@ open class MessageRecipientMode protected ()
     */
   def this(mode: Double, target: Any) = this()
   
-  /** @type {number} Returns the selected recipient mode. */
+  /** Returns the selected recipient mode. */
   /* CompleteClass */
   var mode: Double = js.native
   
-  /** @type {any} Returns the moderator/administrator message target, according to the selected recipient mode. */
+  /** Returns the moderator/administrator message target, according to the selected recipient mode. */
   /* CompleteClass */
   var target: Any = js.native
 }
@@ -31,25 +31,25 @@ object MessageRecipientMode {
   @js.native
   val ^ : js.Any = js.native
   
-  /** @type {number} The moderator/administrator message will be sent to all the clients who subscribed a specific Room Group. */
+  /** The moderator/administrator message will be sent to all the clients who subscribed a specific Room Group. */
   @JSGlobal("SFS2X.Requests.MessageRecipientMode.TO_GROUP")
   @js.native
   def TO_GROUP: Double = js.native
   inline def TO_GROUP_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TO_GROUP")(x.asInstanceOf[js.Any])
   
-  /** @type {number} The moderator/administrator message will be sent to all the users in a specific Room. */
+  /** The moderator/administrator message will be sent to all the users in a specific Room. */
   @JSGlobal("SFS2X.Requests.MessageRecipientMode.TO_ROOM")
   @js.native
   def TO_ROOM: Double = js.native
   inline def TO_ROOM_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TO_ROOM")(x.asInstanceOf[js.Any])
   
-  /** @type {number} The moderator/administrator message will be sent to a specific user. */
+  /** The moderator/administrator message will be sent to a specific user. */
   @JSGlobal("SFS2X.Requests.MessageRecipientMode.TO_USER")
   @js.native
   def TO_USER: Double = js.native
   inline def TO_USER_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TO_USER")(x.asInstanceOf[js.Any])
   
-  /** @type {number} The moderator/administrator message will be sent to all the users in the Zone. */
+  /** The moderator/administrator message will be sent to all the users in the Zone. */
   @JSGlobal("SFS2X.Requests.MessageRecipientMode.TO_ZONE")
   @js.native
   def TO_ZONE: Double = js.native

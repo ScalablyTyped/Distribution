@@ -33,9 +33,14 @@ trait Bundle[BundleContentType]
   var identifier: js.UndefOr[Identifier] = js.undefined
   
   /**
+    * Usage notes: These issues and warnings must apply to the Bundle as a whole, not to individual entries.Messages relating to the processing of individual entries (e.g. in a batch or transaction) SHALL be reported in the entry.response.outcome for that entry.  If there are errors that arise in the creation of the Bundle, then that should be handled by an OperationOutcome being returned instead of the Bundle.
+    */
+  var issues: js.UndefOr[FhirResource] = js.undefined
+  
+  /**
     * Both Bundle.link and Bundle.entry.link are defined to support providing additional context when Bundles are used (e.g. [HATEOAS](http://en.wikipedia.org/wiki/HATEOAS)).
     * Bundle.entry.link corresponds to links found in the HTTP header if the resource in the entry was [read](http.html#read) directly.
-    * This specification defines some specific uses of Bundle.link for [searching](search.html#conformance) and [paging](http.html#paging), but no specific uses for Bundle.entry.link, and no defined function in a transaction - the meaning is implementation specific.
+    * This specification defines some specific uses of Bundle.link for [searching](search.html#conformance) and [paging](http.html#paging), but no specific uses for Bundle.entry.link, and no defined function in a transaction - the meaning is implementation specific.  The behavior of navigation link types (next/prev/first/last) are well defined for searchset and history Bundles but are not currently defined for other types. Implementers who choose to use such link relationships for other bundle types will need to negotiate behavior with their interoperability partners.
     */
   var link: js.UndefOr[js.Array[BundleLink]] = js.undefined
   
@@ -92,6 +97,10 @@ object Bundle {
     inline def setIdentifier(value: Identifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
     inline def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
+    
+    inline def setIssues(value: FhirResource): Self = StObject.set(x, "issues", value.asInstanceOf[js.Any])
+    
+    inline def setIssuesUndefined: Self = StObject.set(x, "issues", js.undefined)
     
     inline def setLink(value: js.Array[BundleLink]): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     

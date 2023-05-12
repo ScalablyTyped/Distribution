@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Trip – a vehicle stopping at a set of stops at specific times
-  */
 trait Trip extends StObject {
   
   var alternatives: js.UndefOr[js.Array[Alternative]] = js.undefined
@@ -70,6 +67,8 @@ trait Trip extends StObject {
   var remarks: js.UndefOr[js.Array[Hint | Status | Warning]] = js.undefined
   
   var schedule: js.UndefOr[Double] = js.undefined
+  
+  var scheduledDays: js.UndefOr[ScheduledDays] = js.undefined
   
   var stopovers: js.UndefOr[js.Array[StopOver]] = js.undefined
   
@@ -212,6 +211,10 @@ object Trip {
     inline def setSchedule(value: Double): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
     
     inline def setScheduleUndefined: Self = StObject.set(x, "schedule", js.undefined)
+    
+    inline def setScheduledDays(value: ScheduledDays): Self = StObject.set(x, "scheduledDays", value.asInstanceOf[js.Any])
+    
+    inline def setScheduledDaysUndefined: Self = StObject.set(x, "scheduledDays", js.undefined)
     
     inline def setStopovers(value: js.Array[StopOver]): Self = StObject.set(x, "stopovers", value.asInstanceOf[js.Any])
     

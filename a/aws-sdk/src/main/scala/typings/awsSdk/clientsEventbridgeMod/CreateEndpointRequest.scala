@@ -22,7 +22,7 @@ trait CreateEndpointRequest extends StObject {
   var Name: EndpointName
   
   /**
-    * Enable or disable event replication.
+    * Enable or disable event replication. The default state is ENABLED which means you must supply a RoleArn. If you don't have a RoleArn or you don't want event replication enabled, set the state to DISABLED.
     */
   var ReplicationConfig: js.UndefOr[typings.awsSdk.clientsEventbridgeMod.ReplicationConfig] = js.undefined
   

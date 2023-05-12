@@ -21,6 +21,11 @@ trait NodeMaterialBuildState extends StObject {
   /**
     * @internal
     */
+  def _emit2DArraySampler(name: String): Unit = js.native
+  
+  /**
+    * @internal
+    */
   def _emit2DSampler(name: String): Unit = js.native
   
   /**

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@apideck/better-ajv-errors" : "0.3.6"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@apideck/better-ajv-errors" : "0.3.6"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -1,9 +1,9 @@
 package typings.chartjsPluginTrendline
 
 import org.scalablytyped.runtime.Shortcut
-import typings.chartJs.mod.ChartType
-import typings.chartJs.mod.Plugin
-import typings.chartJs.typesBasicMod.AnyObject
+import typings.chartJs.distTypesBasicMod.AnyObject
+import typings.chartJs.distTypesIndexMod.ChartType
+import typings.chartJs.distTypesIndexMod.Plugin
 import typings.chartjsPluginTrendline.mod.TrendlineLinearOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

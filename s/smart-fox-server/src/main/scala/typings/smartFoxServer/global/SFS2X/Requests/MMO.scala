@@ -22,23 +22,23 @@ object MMO {
       */
     def this(name: String) = this()
     
-    /** @type {Entities.Data.Vec3D} Defines the Area of Interest (AoI) for the MMORoom. */
+    /** Defines the Area of Interest (AoI) for the MMORoom. */
     /* CompleteClass */
     var defaultAOI: Vec3D = js.native
     
-    /** @type {MapLimits} Defines the limits of the virtual environment represented by the MMORoom. */
+    /** Defines the limits of the virtual environment represented by the MMORoom. */
     /* CompleteClass */
     var mapLimits: typings.smartFoxServer.SFS2X.Requests.MMO.MapLimits = js.native
     
-    /** @type {number} Configures the speed at which the SFSEvent.PROXIMITY_LIST_UPDATE event is sent by the server. */
+    /** Configures the speed at which the SFSEvent.PROXIMITY_LIST_UPDATE event is sent by the server. */
     /* CompleteClass */
     var proximityListUpdateMillis: Double = js.native
     
-    /** @type {boolean} Sets if the users entry points in the current user's Area of Interest should be transmitted in the SFSEvent.PROXIMITY_LIST_UPDATE event. */
+    /** Sets if the users entry points in the current user's Area of Interest should be transmitted in the SFSEvent.PROXIMITY_LIST_UPDATE event. */
     /* CompleteClass */
     var sendAOIEntryPoint: Boolean = js.native
     
-    /** @type {number} Defines the time limit before a user without a physical position set inside the MMORoom is kicked from the Room. */
+    /** Defines the time limit before a user without a physical position set inside the MMORoom is kicked from the Room. */
     /* CompleteClass */
     var userMaxLimboSeconds: Double = js.native
   }
@@ -55,11 +55,11 @@ object MMO {
       */
     def this(lowerLimit: Vec3D, higherLimit: Vec3D) = this()
     
-    /** @type {Entities.Data.Vec3D} Returns the higher coordinates limit of the virtual environment along the X,Y,Z axes. */
+    /** Returns the higher coordinates limit of the virtual environment along the X,Y,Z axes. */
     /* CompleteClass */
     var higherLimit: Vec3D = js.native
     
-    /** @type {Entities.Data.Vec3D} Returns the lower coordinates limit of the virtual environment along the X,Y,Z axes. */
+    /** Returns the lower coordinates limit of the virtual environment along the X,Y,Z axes. */
     /* CompleteClass */
     var lowerLimit: Vec3D = js.native
   }

@@ -14,7 +14,7 @@ trait StartContentUploadResponse extends StObject {
   /**
     * The identifier of the upload.
     */
-  var uploadId: NonEmptyString
+  var uploadId: UploadId
   
   /**
     * The URL of the upload.
@@ -28,7 +28,7 @@ trait StartContentUploadResponse extends StObject {
 }
 object StartContentUploadResponse {
   
-  inline def apply(headersToInclude: Headers, uploadId: NonEmptyString, url: Url, urlExpiry: js.Date): StartContentUploadResponse = {
+  inline def apply(headersToInclude: Headers, uploadId: UploadId, url: Url, urlExpiry: js.Date): StartContentUploadResponse = {
     val __obj = js.Dynamic.literal(headersToInclude = headersToInclude.asInstanceOf[js.Any], uploadId = uploadId.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], urlExpiry = urlExpiry.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartContentUploadResponse]
   }
@@ -38,7 +38,7 @@ object StartContentUploadResponse {
     
     inline def setHeadersToInclude(value: Headers): Self = StObject.set(x, "headersToInclude", value.asInstanceOf[js.Any])
     
-    inline def setUploadId(value: NonEmptyString): Self = StObject.set(x, "uploadId", value.asInstanceOf[js.Any])
+    inline def setUploadId(value: UploadId): Self = StObject.set(x, "uploadId", value.asInstanceOf[js.Any])
     
     inline def setUrl(value: Url): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     

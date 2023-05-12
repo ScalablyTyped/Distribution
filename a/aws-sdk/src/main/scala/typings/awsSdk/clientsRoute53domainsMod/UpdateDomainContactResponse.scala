@@ -9,12 +9,12 @@ trait UpdateDomainContactResponse extends StObject {
   /**
     * Identifier for tracking the progress of the request. To query the operation status, use GetOperationDetail.
     */
-  var OperationId: typings.awsSdk.clientsRoute53domainsMod.OperationId
+  var OperationId: js.UndefOr[typings.awsSdk.clientsRoute53domainsMod.OperationId] = js.undefined
 }
 object UpdateDomainContactResponse {
   
-  inline def apply(OperationId: OperationId): UpdateDomainContactResponse = {
-    val __obj = js.Dynamic.literal(OperationId = OperationId.asInstanceOf[js.Any])
+  inline def apply(): UpdateDomainContactResponse = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateDomainContactResponse]
   }
   
@@ -22,5 +22,7 @@ object UpdateDomainContactResponse {
   implicit open class MutableBuilder[Self <: UpdateDomainContactResponse] (val x: Self) extends AnyVal {
     
     inline def setOperationId(value: OperationId): Self = StObject.set(x, "OperationId", value.asInstanceOf[js.Any])
+    
+    inline def setOperationIdUndefined: Self = StObject.set(x, "OperationId", js.undefined)
   }
 }

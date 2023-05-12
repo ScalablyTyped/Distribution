@@ -1,10 +1,10 @@
 package typings.undici
 
 import typings.std.Blob
-import typings.std.DOMException
-import typings.std.Event
-import typings.std.EventInit
-import typings.std.EventTarget
+import typings.undici.typesPatchMod.DOMException
+import typings.undici.typesPatchMod.Event
+import typings.undici.typesPatchMod.EventInit
+import typings.undici.typesPatchMod.EventTarget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,15 +13,15 @@ object typesFilereaderMod {
   
   @JSImport("undici/types/filereader", "FileReader")
   @js.native
-  open class FileReader ()
-    extends StObject
-       with EventTarget {
+  open class FileReader () extends StObject {
     
     val DONE: /* 2 */ Double = js.native
     
     val EMPTY: /* 0 */ Double = js.native
     
     val LOADING: /* 1 */ Double = js.native
+    
+    var __proto__ : EventTarget & FileReader = js.native
     
     def abort(): Unit = js.native
     
@@ -70,11 +70,11 @@ object typesFilereaderMod {
   
   @JSImport("undici/types/filereader", "ProgressEvent")
   @js.native
-  open class ProgressEvent protected ()
-    extends StObject
-       with Event {
+  open class ProgressEvent protected () extends StObject {
     def this(`type`: String) = this()
     def this(`type`: String, eventInitDict: ProgressEventInit) = this()
+    
+    var __proto__ : Event & ProgressEvent = js.native
     
     val lengthComputable: Boolean = js.native
     

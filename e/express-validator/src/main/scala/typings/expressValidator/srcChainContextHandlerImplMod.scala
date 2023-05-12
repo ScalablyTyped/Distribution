@@ -1,6 +1,7 @@
 package typings.expressValidator
 
 import typings.expressValidator.srcChainContextHandlerMod.ContextHandler
+import typings.expressValidator.srcChainContextHandlerMod.OptionalOptions
 import typings.expressValidator.srcContextBuilderMod.ContextBuilder
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -18,5 +19,7 @@ object srcChainContextHandlerImplMod {
     /* private */ val builder: Any = js.native
     
     /* private */ val chain: Any = js.native
+    
+    def optional(options: OptionalOptions): Chain = js.native
   }
 }

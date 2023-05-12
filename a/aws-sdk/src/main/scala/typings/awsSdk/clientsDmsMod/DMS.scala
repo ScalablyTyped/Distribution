@@ -24,12 +24,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DMS extends Service {
   
   /**
-    * Adds metadata tags to an DMS resource, including replication instance, endpoint, security group, and migration task. These tags can also be used with cost allocation reporting to track cost associated with DMS resources, or used in a Condition statement in an IAM policy for DMS. For more information, see  Tag  data type description.
+    * Adds metadata tags to an DMS resource, including replication instance, endpoint, subnet group, and migration task. These tags can also be used with cost allocation reporting to track cost associated with DMS resources, or used in a Condition statement in an IAM policy for DMS. For more information, see  Tag  data type description.
     */
   def addTagsToResource(): Request[AddTagsToResourceResponse, AWSError] = js.native
   def addTagsToResource(callback: js.Function2[/* err */ AWSError, /* data */ AddTagsToResourceResponse, Unit]): Request[AddTagsToResourceResponse, AWSError] = js.native
   /**
-    * Adds metadata tags to an DMS resource, including replication instance, endpoint, security group, and migration task. These tags can also be used with cost allocation reporting to track cost associated with DMS resources, or used in a Condition statement in an IAM policy for DMS. For more information, see  Tag  data type description.
+    * Adds metadata tags to an DMS resource, including replication instance, endpoint, subnet group, and migration task. These tags can also be used with cost allocation reporting to track cost associated with DMS resources, or used in a Condition statement in an IAM policy for DMS. For more information, see  Tag  data type description.
     */
   def addTagsToResource(params: AddTagsToResourceMessage): Request[AddTagsToResourceResponse, AWSError] = js.native
   def addTagsToResource(
@@ -50,6 +50,20 @@ trait DMS extends Service {
     params: ApplyPendingMaintenanceActionMessage,
     callback: js.Function2[/* err */ AWSError, /* data */ ApplyPendingMaintenanceActionResponse, Unit]
   ): Request[ApplyPendingMaintenanceActionResponse, AWSError] = js.native
+  
+  /**
+    * Starts the analysis of up to 20 source databases to recommend target engines for each source database. This is a batch version of StartRecommendations. The result of analysis of each source database is reported individually in the response. Because the batch request can result in a combination of successful and unsuccessful actions, you should check for batch errors even when the call returns an HTTP status code of 200.
+    */
+  def batchStartRecommendations(): Request[BatchStartRecommendationsResponse, AWSError] = js.native
+  def batchStartRecommendations(callback: js.Function2[/* err */ AWSError, /* data */ BatchStartRecommendationsResponse, Unit]): Request[BatchStartRecommendationsResponse, AWSError] = js.native
+  /**
+    * Starts the analysis of up to 20 source databases to recommend target engines for each source database. This is a batch version of StartRecommendations. The result of analysis of each source database is reported individually in the response. Because the batch request can result in a combination of successful and unsuccessful actions, you should check for batch errors even when the call returns an HTTP status code of 200.
+    */
+  def batchStartRecommendations(params: BatchStartRecommendationsRequest): Request[BatchStartRecommendationsResponse, AWSError] = js.native
+  def batchStartRecommendations(
+    params: BatchStartRecommendationsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ BatchStartRecommendationsResponse, Unit]
+  ): Request[BatchStartRecommendationsResponse, AWSError] = js.native
   
   /**
     * Cancels a single premigration assessment run. This operation prevents any individual assessments from running if they haven't started running. It also attempts to cancel any individual assessments that are currently running.
@@ -547,6 +561,36 @@ trait DMS extends Service {
   ): Request[DescribePendingMaintenanceActionsResponse, AWSError] = js.native
   
   /**
+    * Returns a paginated list of limitations for recommendations of target Amazon Web Services engines.
+    */
+  def describeRecommendationLimitations(): Request[DescribeRecommendationLimitationsResponse, AWSError] = js.native
+  def describeRecommendationLimitations(
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeRecommendationLimitationsResponse, Unit]
+  ): Request[DescribeRecommendationLimitationsResponse, AWSError] = js.native
+  /**
+    * Returns a paginated list of limitations for recommendations of target Amazon Web Services engines.
+    */
+  def describeRecommendationLimitations(params: DescribeRecommendationLimitationsRequest): Request[DescribeRecommendationLimitationsResponse, AWSError] = js.native
+  def describeRecommendationLimitations(
+    params: DescribeRecommendationLimitationsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeRecommendationLimitationsResponse, Unit]
+  ): Request[DescribeRecommendationLimitationsResponse, AWSError] = js.native
+  
+  /**
+    * Returns a paginated list of target engine recommendations for your source databases.
+    */
+  def describeRecommendations(): Request[DescribeRecommendationsResponse, AWSError] = js.native
+  def describeRecommendations(callback: js.Function2[/* err */ AWSError, /* data */ DescribeRecommendationsResponse, Unit]): Request[DescribeRecommendationsResponse, AWSError] = js.native
+  /**
+    * Returns a paginated list of target engine recommendations for your source databases.
+    */
+  def describeRecommendations(params: DescribeRecommendationsRequest): Request[DescribeRecommendationsResponse, AWSError] = js.native
+  def describeRecommendations(
+    params: DescribeRecommendationsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeRecommendationsResponse, Unit]
+  ): Request[DescribeRecommendationsResponse, AWSError] = js.native
+  
+  /**
     * Returns the status of the RefreshSchemas operation.
     */
   def describeRefreshSchemasStatus(): Request[DescribeRefreshSchemasStatusResponse, AWSError] = js.native
@@ -727,12 +771,12 @@ trait DMS extends Service {
   ): Request[ImportCertificateResponse, AWSError] = js.native
   
   /**
-    * Lists all metadata tags attached to an DMS resource, including replication instance, endpoint, security group, and migration task. For more information, see  Tag  data type description.
+    * Lists all metadata tags attached to an DMS resource, including replication instance, endpoint, subnet group, and migration task. For more information, see  Tag  data type description.
     */
   def listTagsForResource(): Request[ListTagsForResourceResponse, AWSError] = js.native
   def listTagsForResource(callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResponse, Unit]): Request[ListTagsForResourceResponse, AWSError] = js.native
   /**
-    * Lists all metadata tags attached to an DMS resource, including replication instance, endpoint, security group, and migration task. For more information, see  Tag  data type description.
+    * Lists all metadata tags attached to an DMS resource, including replication instance, endpoint, subnet group, and migration task. For more information, see  Tag  data type description.
     */
   def listTagsForResource(params: ListTagsForResourceMessage): Request[ListTagsForResourceResponse, AWSError] = js.native
   def listTagsForResource(
@@ -867,12 +911,12 @@ trait DMS extends Service {
   ): Request[ReloadTablesResponse, AWSError] = js.native
   
   /**
-    * Removes metadata tags from an DMS resource, including replication instance, endpoint, security group, and migration task. For more information, see  Tag  data type description.
+    * Removes metadata tags from an DMS resource, including replication instance, endpoint, subnet group, and migration task. For more information, see  Tag  data type description.
     */
   def removeTagsFromResource(): Request[RemoveTagsFromResourceResponse, AWSError] = js.native
   def removeTagsFromResource(callback: js.Function2[/* err */ AWSError, /* data */ RemoveTagsFromResourceResponse, Unit]): Request[RemoveTagsFromResourceResponse, AWSError] = js.native
   /**
-    * Removes metadata tags from an DMS resource, including replication instance, endpoint, security group, and migration task. For more information, see  Tag  data type description.
+    * Removes metadata tags from an DMS resource, including replication instance, endpoint, subnet group, and migration task. For more information, see  Tag  data type description.
     */
   def removeTagsFromResource(params: RemoveTagsFromResourceMessage): Request[RemoveTagsFromResourceResponse, AWSError] = js.native
   def removeTagsFromResource(
@@ -885,6 +929,20 @@ trait DMS extends Service {
     */
   def runFleetAdvisorLsaAnalysis(): Request[RunFleetAdvisorLsaAnalysisResponse, AWSError] = js.native
   def runFleetAdvisorLsaAnalysis(callback: js.Function2[/* err */ AWSError, /* data */ RunFleetAdvisorLsaAnalysisResponse, Unit]): Request[RunFleetAdvisorLsaAnalysisResponse, AWSError] = js.native
+  
+  /**
+    * Starts the analysis of your source database to provide recommendations of target engines. You can create recommendations for multiple source databases using BatchStartRecommendations.
+    */
+  def startRecommendations(): Request[js.Object, AWSError] = js.native
+  def startRecommendations(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Starts the analysis of your source database to provide recommendations of target engines. You can create recommendations for multiple source databases using BatchStartRecommendations.
+    */
+  def startRecommendations(params: StartRecommendationsRequest): Request[js.Object, AWSError] = js.native
+  def startRecommendations(
+    params: StartRecommendationsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
   
   /**
     * Starts the replication task. For more information about DMS tasks, see Working with Migration Tasks  in the Database Migration Service User Guide. 

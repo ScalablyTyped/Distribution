@@ -129,6 +129,8 @@ object sapUiModelSimpleTypeMod {
     ): Any | js.Promise[Any] = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Returns an object with `format` and `parse` methods. `format` converts the internal value which has a
       * JavaScript primitive type or is a built-in object such as Date which can be used by a control to the
       * raw value, and `parse` converts the raw value to the internal value.

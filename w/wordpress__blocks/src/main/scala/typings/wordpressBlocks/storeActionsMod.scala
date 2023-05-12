@@ -1,9 +1,6 @@
 package typings.wordpressBlocks
 
-import typings.wordpressBlocks.anon.PartialCategory
-import typings.wordpressBlocks.apiCategoriesMod.Category
-import typings.wordpressBlocks.mod.BlockConfiguration
-import typings.wordpressBlocks.mod.BlockStyle
+import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +23,11 @@ object storeActionsMod {
   inline def removeBlockTypes(names: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeBlockTypes")(names.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def removeBlockTypes(names: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeBlockTypes")(names.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def setCategories(categories: js.Array[Category]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setCategories")(categories.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setCategories(
+    categories: js.Array[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Category */ Any
+    ]
+  ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setCategories")(categories.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def setDefaultBlockName(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultBlockName")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
@@ -36,5 +37,10 @@ object storeActionsMod {
   
   inline def setUnregisteredFallbackBlockName(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setUnregisteredFallbackBlockName")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def updateCategory(slug: String, category: PartialCategory): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateCategory")(slug.asInstanceOf[js.Any], category.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def updateCategory(
+    slug: String,
+    category: Partial[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Category */ Any
+    ]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateCategory")(slug.asInstanceOf[js.Any], category.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

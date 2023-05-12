@@ -1,7 +1,7 @@
 package typings.reactSpringAnimated
 
-import typings.reactSpringAnimated.distDeclarationsSrcCreateHostMod.WithAnimated
-import typings.reactSpringTypes.utilMod.Lookup
+import typings.reactSpringAnimated.mod.WithAnimated
+import typings.reactSpringTypes.mod.Lookup
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,16 +26,13 @@ object anon {
     }
   }
   
-  /* Inlined std.Partial<@react-spring/animated.@react-spring/animated/dist/declarations/src/createHost.HostConfig> */
+  /* Inlined std.Partial<@react-spring/animated.@react-spring/animated.HostConfig> */
   trait PartialHostConfig extends StObject {
     
     var applyAnimatedValues: js.UndefOr[js.Function2[/* node */ Any, /* props */ Lookup[Any], Boolean | Unit]] = js.undefined
     
     var createAnimatedStyle: js.UndefOr[
-        js.Function1[
-          /* style */ Lookup[Any], 
-          typings.reactSpringAnimated.distDeclarationsSrcAnimatedMod.Animated[Any]
-        ]
+        js.Function1[/* style */ Lookup[Any], typings.reactSpringAnimated.mod.Animated[Any]]
       ] = js.undefined
     
     var getComponentProps: js.UndefOr[
@@ -59,9 +56,7 @@ object anon {
       
       inline def setApplyAnimatedValuesUndefined: Self = StObject.set(x, "applyAnimatedValues", js.undefined)
       
-      inline def setCreateAnimatedStyle(
-        value: /* style */ Lookup[Any] => typings.reactSpringAnimated.distDeclarationsSrcAnimatedMod.Animated[Any]
-      ): Self = StObject.set(x, "createAnimatedStyle", js.Any.fromFunction1(value))
+      inline def setCreateAnimatedStyle(value: /* style */ Lookup[Any] => typings.reactSpringAnimated.mod.Animated[Any]): Self = StObject.set(x, "createAnimatedStyle", js.Any.fromFunction1(value))
       
       inline def setCreateAnimatedStyleUndefined: Self = StObject.set(x, "createAnimatedStyle", js.undefined)
       

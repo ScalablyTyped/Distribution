@@ -1,5 +1,7 @@
 package typings.firebaseAuth.distCordovaSrcModelPublicTypesMod
 
+import typings.firebaseAuth.firebaseAuthStrings.phone
+import typings.firebaseAuth.firebaseAuthStrings.totp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,8 +15,8 @@ trait PhoneMultiFactorInfo
 }
 object PhoneMultiFactorInfo {
   
-  inline def apply(enrollmentTime: String, phoneNumber: String, uid: String): PhoneMultiFactorInfo = {
-    val __obj = js.Dynamic.literal(enrollmentTime = enrollmentTime.asInstanceOf[js.Any], factorId = "phone", phoneNumber = phoneNumber.asInstanceOf[js.Any], uid = uid.asInstanceOf[js.Any])
+  inline def apply(enrollmentTime: String, factorId: phone | totp, phoneNumber: String, uid: String): PhoneMultiFactorInfo = {
+    val __obj = js.Dynamic.literal(enrollmentTime = enrollmentTime.asInstanceOf[js.Any], factorId = factorId.asInstanceOf[js.Any], phoneNumber = phoneNumber.asInstanceOf[js.Any], uid = uid.asInstanceOf[js.Any])
     __obj.asInstanceOf[PhoneMultiFactorInfo]
   }
   

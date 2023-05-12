@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.BorderTopRightRadius
+import typings.csstype.mod.Property.BlockSize
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,13 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `75` extends StObject {
   
   var value: js.UndefOr[
-    (BorderTopRightRadius[Double | String]) | (js.Array[
+    (BlockSize[Double | String]) | (js.Array[
       (Extract[
         js.UndefOr[
-          (BorderTopRightRadius[Double | String]) | (js.Array[NonNullable[js.UndefOr[BorderTopRightRadius[Double | String]]]])
+          (BlockSize[Double | String]) | (js.Array[NonNullable[js.UndefOr[BlockSize[Double | String]]]])
         ], 
         String
-      ]) | (NonNullable[js.UndefOr[BorderTopRightRadius[Double | String]]])
+      ]) | (NonNullable[js.UndefOr[BlockSize[Double | String]]])
     ])
   ] = js.native
 }

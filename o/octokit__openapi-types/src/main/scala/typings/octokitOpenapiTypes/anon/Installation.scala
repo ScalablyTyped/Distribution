@@ -1,40 +1,50 @@
 package typings.octokitOpenapiTypes.anon
 
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.created_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Installation extends StObject {
   
-  var action: String
+  /** @enum {string} */
+  var action: created_
+  
+  var enterprise: js.UndefOr[Htmlurl] = js.undefined
   
   var installation: js.UndefOr[NodeidString] = js.undefined
   
-  var merge_group: Baseref
-  
   var organization: js.UndefOr[Hooksurl] = js.undefined
   
-  var repository: js.UndefOr[Allowupdatebranch] = js.undefined
+  var repository: Allowupdatebranch
   
-  var sender: js.UndefOr[Avatarurl] = js.undefined
+  /**
+    * branch protection rule
+    * @description The branch protection rule. Includes a `name` and all the [branch protection settings](https://docs.github.com/github/administering-a-repository/defining-the-mergeability-of-pull-requests/about-protected-branches#about-branch-protection-settings) applied to branches that match the name. Binary settings are boolean. Multi-level configurations are one of `off`, `non_admins`, or `everyone`. Actor and build lists are arrays of strings.
+    */
+  var rule: Adminenforced
+  
+  var sender: Avatarurl
 }
 object Installation {
   
-  inline def apply(action: String, merge_group: Baseref): Installation = {
-    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], merge_group = merge_group.asInstanceOf[js.Any])
+  inline def apply(repository: Allowupdatebranch, rule: Adminenforced, sender: Avatarurl): Installation = {
+    val __obj = js.Dynamic.literal(action = "created", repository = repository.asInstanceOf[js.Any], rule = rule.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[Installation]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: Installation] (val x: Self) extends AnyVal {
     
-    inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: created_): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    
+    inline def setEnterprise(value: Htmlurl): Self = StObject.set(x, "enterprise", value.asInstanceOf[js.Any])
+    
+    inline def setEnterpriseUndefined: Self = StObject.set(x, "enterprise", js.undefined)
     
     inline def setInstallation(value: NodeidString): Self = StObject.set(x, "installation", value.asInstanceOf[js.Any])
     
     inline def setInstallationUndefined: Self = StObject.set(x, "installation", js.undefined)
-    
-    inline def setMerge_group(value: Baseref): Self = StObject.set(x, "merge_group", value.asInstanceOf[js.Any])
     
     inline def setOrganization(value: Hooksurl): Self = StObject.set(x, "organization", value.asInstanceOf[js.Any])
     
@@ -42,10 +52,8 @@ object Installation {
     
     inline def setRepository(value: Allowupdatebranch): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
     
-    inline def setRepositoryUndefined: Self = StObject.set(x, "repository", js.undefined)
+    inline def setRule(value: Adminenforced): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
     
     inline def setSender(value: Avatarurl): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
-    
-    inline def setSenderUndefined: Self = StObject.set(x, "sender", js.undefined)
   }
 }

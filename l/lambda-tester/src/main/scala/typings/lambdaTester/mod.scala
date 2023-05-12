@@ -25,16 +25,22 @@ object mod {
     
     def event(event: HandlerEvent[T]): this.type = js.native
     
+    def expectError(): js.Promise[Any] = js.native
     def expectError(verifier: Verifier[HandlerError[T]]): js.Promise[Any] = js.native
     
+    def expectFail(): js.Promise[Any] = js.native
     def expectFail(verifier: Verifier[HandlerError[T]]): js.Promise[Any] = js.native
     
+    def expectReject(): js.Promise[Any] = js.native
     def expectReject(verifier: Verifier[HandlerError[T]]): js.Promise[Any] = js.native
     
+    def expectResolve(): js.Promise[Any] = js.native
     def expectResolve(verifier: Verifier[HandlerResult[T]]): js.Promise[Any] = js.native
     
+    def expectResult(): js.Promise[Any] = js.native
     def expectResult(verifier: Verifier[HandlerResult[T]]): js.Promise[Any] = js.native
     
+    def expectSucceed(): js.Promise[Any] = js.native
     def expectSucceed(verifier: Verifier[HandlerResult[T]]): js.Promise[Any] = js.native
     
     def identity(cognitoIdentityId: String, cognitoIdentityPoolId: String): this.type = js.native

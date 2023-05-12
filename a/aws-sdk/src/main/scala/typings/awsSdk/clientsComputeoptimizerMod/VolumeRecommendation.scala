@@ -37,6 +37,11 @@ trait VolumeRecommendation extends StObject {
   var lookBackPeriodInDays: js.UndefOr[LookBackPeriodInDays] = js.undefined
   
   /**
+    *  A list of tags assigned to your Amazon EBS volume recommendations. 
+    */
+  var tags: js.UndefOr[Tags] = js.undefined
+  
+  /**
     * An array of objects that describe the utilization metrics of the volume.
     */
   var utilizationMetrics: js.UndefOr[EBSUtilizationMetrics] = js.undefined
@@ -84,6 +89,12 @@ object VolumeRecommendation {
     inline def setLookBackPeriodInDays(value: LookBackPeriodInDays): Self = StObject.set(x, "lookBackPeriodInDays", value.asInstanceOf[js.Any])
     
     inline def setLookBackPeriodInDaysUndefined: Self = StObject.set(x, "lookBackPeriodInDays", js.undefined)
+    
+    inline def setTags(value: Tags): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value*))
     
     inline def setUtilizationMetrics(value: EBSUtilizationMetrics): Self = StObject.set(x, "utilizationMetrics", value.asInstanceOf[js.Any])
     

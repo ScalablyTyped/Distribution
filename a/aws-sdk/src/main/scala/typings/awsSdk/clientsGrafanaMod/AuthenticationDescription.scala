@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AuthenticationDescription extends StObject {
   
   /**
-    * A structure containing information about how this workspace works with Amazon Web Services SSO. 
+    * A structure containing information about how this workspace works with IAM Identity Center. 
     */
   var awsSso: js.UndefOr[AwsSsoAuthentication] = js.undefined
   
   /**
-    * Specifies whether this workspace uses Amazon Web Services SSO, SAML, or both methods to authenticate users to use the Grafana console in the Amazon Managed Grafana workspace.
+    * Specifies whether this workspace uses IAM Identity Center, SAML, or both methods to authenticate users to use the Grafana console in the Amazon Managed Grafana workspace.
     */
   var providers: AuthenticationProviders
   

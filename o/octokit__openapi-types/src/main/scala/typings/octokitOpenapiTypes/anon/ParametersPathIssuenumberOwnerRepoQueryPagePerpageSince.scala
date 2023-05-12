@@ -8,11 +8,11 @@ trait ParametersPathIssuenumberOwnerRepoQueryPagePerpageSince extends StObject {
   
   var parameters: PathIssuenumberOwnerRepoQueryPagePerpageSince
   
-  var responses: `200Content528404Content48`
+  var responses: `200Content594404Content36`
 }
 object ParametersPathIssuenumberOwnerRepoQueryPagePerpageSince {
   
-  inline def apply(parameters: PathIssuenumberOwnerRepoQueryPagePerpageSince, responses: `200Content528404Content48`): ParametersPathIssuenumberOwnerRepoQueryPagePerpageSince = {
+  inline def apply(parameters: PathIssuenumberOwnerRepoQueryPagePerpageSince, responses: `200Content594404Content36`): ParametersPathIssuenumberOwnerRepoQueryPagePerpageSince = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersPathIssuenumberOwnerRepoQueryPagePerpageSince]
   }
@@ -22,6 +22,6 @@ object ParametersPathIssuenumberOwnerRepoQueryPagePerpageSince {
     
     inline def setParameters(value: PathIssuenumberOwnerRepoQueryPagePerpageSince): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `200Content528404Content48`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `200Content594404Content36`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

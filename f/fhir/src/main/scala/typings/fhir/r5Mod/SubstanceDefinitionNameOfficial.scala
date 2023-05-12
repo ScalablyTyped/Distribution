@@ -16,12 +16,12 @@ trait SubstanceDefinitionNameOfficial
   var authority: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
-    * Date of official name change.
+    * Date of the official name change.
     */
   var date: js.UndefOr[String] = js.undefined
   
   /**
-    * The status of the official name, for example 'provisional', 'approved'.
+    * The status of the official name, for example 'draft', 'active', 'retired'.
     */
   var status: js.UndefOr[CodeableConcept] = js.undefined
 }

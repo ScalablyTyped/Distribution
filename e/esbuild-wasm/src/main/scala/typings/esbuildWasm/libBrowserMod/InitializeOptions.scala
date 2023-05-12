@@ -1,5 +1,6 @@
 package typings.esbuildWasm.libBrowserMod
 
+import typings.std.URL
 import typings.std.WebAssembly.Module
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -21,7 +22,7 @@ trait InitializeOptions extends StObject {
     * The URL of the "esbuild.wasm" file. This must be provided when running
     * esbuild in the browser.
     */
-  var wasmURL: js.UndefOr[String] = js.undefined
+  var wasmURL: js.UndefOr[String | URL] = js.undefined
   
   /**
     * By default esbuild runs the WebAssembly-based browser API in a web worker
@@ -44,7 +45,7 @@ object InitializeOptions {
     
     inline def setWasmModuleUndefined: Self = StObject.set(x, "wasmModule", js.undefined)
     
-    inline def setWasmURL(value: String): Self = StObject.set(x, "wasmURL", value.asInstanceOf[js.Any])
+    inline def setWasmURL(value: String | URL): Self = StObject.set(x, "wasmURL", value.asInstanceOf[js.Any])
     
     inline def setWasmURLUndefined: Self = StObject.set(x, "wasmURL", js.undefined)
     

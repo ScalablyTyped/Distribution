@@ -1,6 +1,5 @@
 package typings.storybookNodeLogger
 
-import typings.npmlog.mod.Logger
 import typings.storybookNodeLogger.anon.Message
 import typings.storybookNodeLogger.storybookNodeLoggerStrings.error
 import typings.storybookNodeLogger.storybookNodeLoggerStrings.info
@@ -11,6 +10,10 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@storybook/node-logger", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object colors {
     
@@ -68,9 +71,7 @@ object mod {
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("red")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("@storybook/node-logger", "instance")
-  @js.native
-  val instance: Logger = js.native
+  inline def deprecate(message: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deprecate")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   object logger {
     

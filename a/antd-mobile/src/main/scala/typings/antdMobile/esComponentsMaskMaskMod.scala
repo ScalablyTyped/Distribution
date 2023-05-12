@@ -64,7 +64,7 @@ object esComponentsMaskMaskMod {
   @js.native
   val Mask: FC[MaskProps] = js.native
   
-  /* Inlined {  visible :boolean | undefined,   onMaskClick :(event : react.react.MouseEvent<std.HTMLDivElement, std.MouseEvent>): void | undefined,   destroyOnClose :boolean | undefined,   forceRender :boolean | undefined,   disableBodyScroll :boolean | undefined,   color :'black' | 'white' | undefined,   opacity :'default' | 'thin' | 'thick' | number | undefined,   getContainer :antd-mobile.antd-mobile/es/utils/render-to-container.GetContainer | undefined,   afterShow :(): void | undefined,   afterClose :(): void | undefined,   stopPropagation :std.Array<antd-mobile.antd-mobile/es/utils/with-stop-propagation.PropagationEvent> | undefined,   children :react.react.ReactNode | undefined} & antd-mobile.antd-mobile/es/utils/native-props.NativeProps<'--z-index'> */
+  /* Inlined {  visible :boolean | undefined,   onMaskClick :(event : react.react.MouseEvent<std.HTMLDivElement, std.MouseEvent>): void | undefined,   destroyOnClose :boolean | undefined,   forceRender :boolean | undefined,   disableBodyScroll :boolean | undefined,   color :'white' | 'black' | string & {} | undefined,   opacity :'default' | 'thin' | 'thick' | number | undefined,   getContainer :antd-mobile.antd-mobile/es/utils/render-to-container.GetContainer | undefined,   afterShow :(): void | undefined,   afterClose :(): void | undefined,   stopPropagation :std.Array<antd-mobile.antd-mobile/es/utils/with-stop-propagation.PropagationEvent> | undefined,   children :react.react.ReactNode | undefined} & antd-mobile.antd-mobile/es/utils/native-props.NativeProps<'--z-index'> */
   trait MaskProps extends StObject {
     
     var afterClose: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -309,7 +309,7 @@ object esComponentsMaskMaskMod {
     
     var className: js.UndefOr[String] = js.undefined
     
-    var color: js.UndefOr[black | white] = js.undefined
+    var color: js.UndefOr[white | black | String] = js.undefined
     
     var destroyOnClose: js.UndefOr[Boolean] = js.undefined
     
@@ -553,7 +553,7 @@ object esComponentsMaskMaskMod {
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      inline def setColor(value: black | white): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: white | black | String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       

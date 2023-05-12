@@ -1,6 +1,9 @@
 package typings.bson.mod
 
-import typings.buffer.mod.Buffer
+import typings.bson.bsonStrings.`utf-8`
+import typings.bson.bsonStrings.base64
+import typings.bson.bsonStrings.hex
+import typings.bson.bsonStrings.utf8
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,19 +21,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param buffer - a buffer object containing the binary data.
   * @param subType - the option binary type.
   */
-open class Binary () extends StObject {
+open class Binary () extends BSONValue {
   def this(buffer: String) = this()
   def this(buffer: BinarySequence) = this()
   def this(buffer: String, subType: scala.Double) = this()
   def this(buffer: Unit, subType: scala.Double) = this()
   def this(buffer: BinarySequence, subType: scala.Double) = this()
   
-  var _bsontype: typings.bson.bsonStrings.Binary = js.native
-  
-  var buffer: Buffer = js.native
-  
-  /* Excluded from this release type: fromExtendedJSON */
-  def inspect(): String = js.native
+  var buffer: js.typedarray.Uint8Array = js.native
   
   /** the length of the binary sequence */
   def length(): scala.Double = js.native
@@ -46,7 +44,6 @@ open class Binary () extends StObject {
   def put(byteValue: js.Array[scala.Double]): Unit = js.native
   def put(byteValue: js.typedarray.Uint8Array): Unit = js.native
   def put(byteValue: scala.Double): Unit = js.native
-  def put(byteValue: Buffer): Unit = js.native
   
   /**
     * Reads **length** bytes starting at **position**.
@@ -60,7 +57,7 @@ open class Binary () extends StObject {
   
   def toJSON(): String = js.native
   
-  def toString(format: String): String = js.native
+  def toString(encoding: hex | base64 | utf8 | `utf-8`): String = js.native
   
   /* Excluded from this release type: toExtendedJSON */
   def toUUID(): UUID = js.native
@@ -85,6 +82,10 @@ open class Binary () extends StObject {
 }
 /* static members */
 object Binary {
+  
+  @JSImport("bson", "Binary")
+  @js.native
+  val ^ : js.Any = js.native
   
   /* Excluded from this release type: BSON_BINARY_SUBTYPE_DEFAULT */
   /** Initial buffer default size */
@@ -136,4 +137,12 @@ object Binary {
   @JSImport("bson", "Binary.SUBTYPE_UUID_OLD")
   @js.native
   val SUBTYPE_UUID_OLD: /* 3 */ scala.Double = js.native
+  
+  /** Creates an Binary instance from a base64 string */
+  inline def createFromBase64(base64: String): Binary = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromBase64")(base64.asInstanceOf[js.Any]).asInstanceOf[Binary]
+  inline def createFromBase64(base64: String, subType: scala.Double): Binary = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromBase64")(base64.asInstanceOf[js.Any], subType.asInstanceOf[js.Any])).asInstanceOf[Binary]
+  
+  /** Creates an Binary instance from a hex digit string */
+  inline def createFromHexString(hex: String): Binary = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromHexString")(hex.asInstanceOf[js.Any]).asInstanceOf[Binary]
+  inline def createFromHexString(hex: String, subType: scala.Double): Binary = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromHexString")(hex.asInstanceOf[js.Any], subType.asInstanceOf[js.Any])).asInstanceOf[Binary]
 }

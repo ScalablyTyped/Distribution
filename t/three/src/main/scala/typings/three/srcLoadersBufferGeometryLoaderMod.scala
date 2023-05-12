@@ -4,6 +4,7 @@ import typings.std.ErrorEvent
 import typings.std.EventTarget
 import typings.std.ProgressEvent
 import typings.three.srcCoreBufferGeometryMod.BufferGeometry
+import typings.three.srcCoreBufferGeometryMod.NormalBufferAttributes
 import typings.three.srcCoreInstancedBufferGeometryMod.InstancedBufferGeometry
 import typings.three.srcLoadersLoaderMod.Loader
 import typings.three.srcLoadersLoadingManagerMod.LoadingManager
@@ -20,26 +21,41 @@ object srcLoadersBufferGeometryLoaderMod {
     
     def load(
       url: String,
-      onLoad: js.Function1[/* bufferGeometry */ InstancedBufferGeometry | BufferGeometry, Unit]
+      onLoad: js.Function1[
+          /* bufferGeometry */ InstancedBufferGeometry | BufferGeometry[NormalBufferAttributes], 
+          Unit
+        ]
     ): Unit = js.native
     def load(
       url: String,
-      onLoad: js.Function1[/* bufferGeometry */ InstancedBufferGeometry | BufferGeometry, Unit],
+      onLoad: js.Function1[
+          /* bufferGeometry */ InstancedBufferGeometry | BufferGeometry[NormalBufferAttributes], 
+          Unit
+        ],
       onProgress: js.Function1[/* request */ ProgressEvent[EventTarget], Unit]
     ): Unit = js.native
     def load(
       url: String,
-      onLoad: js.Function1[/* bufferGeometry */ InstancedBufferGeometry | BufferGeometry, Unit],
+      onLoad: js.Function1[
+          /* bufferGeometry */ InstancedBufferGeometry | BufferGeometry[NormalBufferAttributes], 
+          Unit
+        ],
       onProgress: js.Function1[/* request */ ProgressEvent[EventTarget], Unit],
       onError: js.Function1[/* event */ ErrorEvent, Unit]
     ): Unit = js.native
     def load(
       url: String,
-      onLoad: js.Function1[/* bufferGeometry */ InstancedBufferGeometry | BufferGeometry, Unit],
+      onLoad: js.Function1[
+          /* bufferGeometry */ InstancedBufferGeometry | BufferGeometry[NormalBufferAttributes], 
+          Unit
+        ],
       onProgress: Unit,
       onError: js.Function1[/* event */ ErrorEvent, Unit]
     ): Unit = js.native
     
-    def parse(json: Any): InstancedBufferGeometry | BufferGeometry = js.native
+    def loadAsync(url: String): js.Promise[InstancedBufferGeometry | BufferGeometry[NormalBufferAttributes]] = js.native
+    def loadAsync(url: String, onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit]): js.Promise[InstancedBufferGeometry | BufferGeometry[NormalBufferAttributes]] = js.native
+    
+    def parse(json: Any): InstancedBufferGeometry | BufferGeometry[NormalBufferAttributes] = js.native
   }
 }

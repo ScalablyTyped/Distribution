@@ -13,8 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.webgpuTypes.webgpuTypesStrings.`timestamp-query`
   - typings.webgpuTypes.webgpuTypesStrings.`indirect-first-instance`
   - typings.webgpuTypes.webgpuTypesStrings.`shader-f16`
-  - typings.webgpuTypes.webgpuTypesStrings.`bgra8unorm-storage`
   - typings.webgpuTypes.webgpuTypesStrings.`rg11b10ufloat-renderable`
+  - typings.webgpuTypes.webgpuTypesStrings.`bgra8unorm-storage`
+  - typings.webgpuTypes.webgpuTypesStrings.`float32-filterable`
 */
 trait GPUFeatureName extends StObject
 object GPUFeatureName {
@@ -24,6 +25,8 @@ object GPUFeatureName {
   inline def `depth-clip-control`: typings.webgpuTypes.webgpuTypesStrings.`depth-clip-control` = "depth-clip-control".asInstanceOf[typings.webgpuTypes.webgpuTypesStrings.`depth-clip-control`]
   
   inline def `depth32float-stencil8`: typings.webgpuTypes.webgpuTypesStrings.`depth32float-stencil8` = "depth32float-stencil8".asInstanceOf[typings.webgpuTypes.webgpuTypesStrings.`depth32float-stencil8`]
+  
+  inline def `float32-filterable`: typings.webgpuTypes.webgpuTypesStrings.`float32-filterable` = "float32-filterable".asInstanceOf[typings.webgpuTypes.webgpuTypesStrings.`float32-filterable`]
   
   inline def `indirect-first-instance`: typings.webgpuTypes.webgpuTypesStrings.`indirect-first-instance` = "indirect-first-instance".asInstanceOf[typings.webgpuTypes.webgpuTypesStrings.`indirect-first-instance`]
   

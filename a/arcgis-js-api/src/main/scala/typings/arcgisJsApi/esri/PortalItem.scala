@@ -187,6 +187,13 @@ trait PortalItem
   val isLayer: Boolean = js.native
   
   /**
+    * Indicates whether this item and the user whose credential was used to fetch this item belong to the same ArcGIS Enterprise Portal or ArcGIS Online Organization.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#isOrgItem)
+    */
+  val isOrgItem: Boolean = js.native
+  
+  /**
     * Indicates whether an item can be updated and deleted.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#itemControl)

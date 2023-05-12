@@ -23,9 +23,9 @@ object MailboxEnums {
   }
   
   /**
-    * Specifies the sensitivity type of an appointment.
+    * Specifies the {@link Office.Sensitivity | sensitivity level} of an appointment.
     *
-    * @remarks 
+    * @remarks
     * [Api set: Mailbox preview]
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read

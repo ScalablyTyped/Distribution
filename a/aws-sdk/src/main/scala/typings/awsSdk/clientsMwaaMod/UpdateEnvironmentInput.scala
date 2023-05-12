@@ -7,27 +7,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateEnvironmentInput extends StObject {
   
   /**
-    * A list of key-value pairs containing the Apache Airflow configuration options you want to attach to your environment. To learn more, see Apache Airflow configuration options.
+    * A list of key-value pairs containing the Apache Airflow configuration options you want to attach to your environment. For more information, see Apache Airflow configuration options.
     */
   var AirflowConfigurationOptions: js.UndefOr[typings.awsSdk.clientsMwaaMod.AirflowConfigurationOptions] = js.undefined
   
   /**
-    * The Apache Airflow version for your environment. If no value is specified, defaults to the latest version. Valid values: 1.10.12, 2.0.2, and 2.2.2.
+    * The Apache Airflow version for your environment. If no value is specified, defaults to the latest version. Valid values: 1.10.12, 2.0.2, 2.2.2, and 2.4.3.
     */
   var AirflowVersion: js.UndefOr[typings.awsSdk.clientsMwaaMod.AirflowVersion] = js.undefined
   
   /**
-    * The relative path to the DAGs folder on your Amazon S3 bucket. For example, dags. To learn more, see Adding or updating DAGs.
+    * The relative path to the DAGs folder on your Amazon S3 bucket. For example, dags. For more information, see Adding or updating DAGs.
     */
   var DagS3Path: js.UndefOr[RelativePath] = js.undefined
   
   /**
-    * The environment class type. Valid values: mw1.small, mw1.medium, mw1.large. To learn more, see Amazon MWAA environment class.
+    * The environment class type. Valid values: mw1.small, mw1.medium, mw1.large. For more information, see Amazon MWAA environment class.
     */
   var EnvironmentClass: js.UndefOr[typings.awsSdk.clientsMwaaMod.EnvironmentClass] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the execution role in IAM that allows MWAA to access Amazon Web Services resources in your environment. For example, arn:aws:iam::123456789:role/my-execution-role. To learn more, see Amazon MWAA Execution role.
+    * The Amazon Resource Name (ARN) of the execution role in IAM that allows MWAA to access Amazon Web Services resources in your environment. For example, arn:aws:iam::123456789:role/my-execution-role. For more information, see Amazon MWAA Execution role.
     */
   var ExecutionRoleArn: js.UndefOr[IamRoleArn] = js.undefined
   
@@ -52,27 +52,27 @@ trait UpdateEnvironmentInput extends StObject {
   var Name: EnvironmentName
   
   /**
-    * The VPC networking components used to secure and enable network traffic between the Amazon Web Services resources for your environment. To learn more, see About networking on Amazon MWAA.
+    * The VPC networking components used to secure and enable network traffic between the Amazon Web Services resources for your environment. For more information, see About networking on Amazon MWAA.
     */
   var NetworkConfiguration: js.UndefOr[UpdateNetworkConfigurationInput] = js.undefined
   
   /**
-    * The version of the plugins.zip file on your Amazon S3 bucket. A version must be specified each time a plugins.zip file is updated. To learn more, see How S3 Versioning works.
+    * The version of the plugins.zip file on your Amazon S3 bucket. You must specify a version each time a plugins.zip file is updated. For more information, see How S3 Versioning works.
     */
   var PluginsS3ObjectVersion: js.UndefOr[S3ObjectVersion] = js.undefined
   
   /**
-    * The relative path to the plugins.zip file on your Amazon S3 bucket. For example, plugins.zip. If specified, then the plugins.zip version is required. To learn more, see Installing custom plugins.
+    * The relative path to the plugins.zip file on your Amazon S3 bucket. For example, plugins.zip. If specified, then the plugins.zip version is required. For more information, see Installing custom plugins.
     */
   var PluginsS3Path: js.UndefOr[RelativePath] = js.undefined
   
   /**
-    * The version of the requirements.txt file on your Amazon S3 bucket. A version must be specified each time a requirements.txt file is updated. To learn more, see How S3 Versioning works.
+    * The version of the requirements.txt file on your Amazon S3 bucket. You must specify a version each time a requirements.txt file is updated. For more information, see How S3 Versioning works.
     */
   var RequirementsS3ObjectVersion: js.UndefOr[S3ObjectVersion] = js.undefined
   
   /**
-    * The relative path to the requirements.txt file on your Amazon S3 bucket. For example, requirements.txt. If specified, then a file version is required. To learn more, see Installing Python dependencies.
+    * The relative path to the requirements.txt file on your Amazon S3 bucket. For example, requirements.txt. If specified, then a file version is required. For more information, see Installing Python dependencies.
     */
   var RequirementsS3Path: js.UndefOr[RelativePath] = js.undefined
   
@@ -82,12 +82,22 @@ trait UpdateEnvironmentInput extends StObject {
   var Schedulers: js.UndefOr[typings.awsSdk.clientsMwaaMod.Schedulers] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the Amazon S3 bucket where your DAG code and supporting files are stored. For example, arn:aws:s3:::my-airflow-bucket-unique-name. To learn more, see Create an Amazon S3 bucket for Amazon MWAA.
+    * The Amazon Resource Name (ARN) of the Amazon S3 bucket where your DAG code and supporting files are stored. For example, arn:aws:s3:::my-airflow-bucket-unique-name. For more information, see Create an Amazon S3 bucket for Amazon MWAA.
     */
   var SourceBucketArn: js.UndefOr[S3BucketArn] = js.undefined
   
   /**
-    * The Apache Airflow Web server access mode. To learn more, see Apache Airflow access modes.
+    *  The version of the startup shell script in your Amazon S3 bucket. You must specify the version ID that Amazon S3 assigns to the file every time you update the script.   Version IDs are Unicode, UTF-8 encoded, URL-ready, opaque strings that are no more than 1,024 bytes long. The following is an example:   3sL4kqtJlcpXroDTDmJ+rmSpXd3dIbrHY+MTRCxf3vjVBH40Nr8X8gdRQBpUMLUo   For more information, see Using a startup script. 
+    */
+  var StartupScriptS3ObjectVersion: js.UndefOr[S3ObjectVersion] = js.undefined
+  
+  /**
+    * The relative path to the startup shell script in your Amazon S3 bucket. For example, s3://mwaa-environment/startup.sh.  Amazon MWAA runs the script as your environment starts, and before running the Apache Airflow process. You can use this script to install dependencies, modify Apache Airflow configuration options, and set environment variables. For more information, see Using a startup script. 
+    */
+  var StartupScriptS3Path: js.UndefOr[RelativePath] = js.undefined
+  
+  /**
+    * The Apache Airflow Web server access mode. For more information, see Apache Airflow access modes.
     */
   var WebserverAccessMode: js.UndefOr[typings.awsSdk.clientsMwaaMod.WebserverAccessMode] = js.undefined
   
@@ -167,6 +177,14 @@ object UpdateEnvironmentInput {
     inline def setSourceBucketArn(value: S3BucketArn): Self = StObject.set(x, "SourceBucketArn", value.asInstanceOf[js.Any])
     
     inline def setSourceBucketArnUndefined: Self = StObject.set(x, "SourceBucketArn", js.undefined)
+    
+    inline def setStartupScriptS3ObjectVersion(value: S3ObjectVersion): Self = StObject.set(x, "StartupScriptS3ObjectVersion", value.asInstanceOf[js.Any])
+    
+    inline def setStartupScriptS3ObjectVersionUndefined: Self = StObject.set(x, "StartupScriptS3ObjectVersion", js.undefined)
+    
+    inline def setStartupScriptS3Path(value: RelativePath): Self = StObject.set(x, "StartupScriptS3Path", value.asInstanceOf[js.Any])
+    
+    inline def setStartupScriptS3PathUndefined: Self = StObject.set(x, "StartupScriptS3Path", js.undefined)
     
     inline def setWebserverAccessMode(value: WebserverAccessMode): Self = StObject.set(x, "WebserverAccessMode", value.asInstanceOf[js.Any])
     

@@ -40,6 +40,9 @@ object examplesJsmLoaders3DMLoaderMod {
       onError: js.Function1[/* event */ ErrorEvent, Unit]
     ): Unit = js.native
     
+    def loadAsync(url: String): js.Promise[Object3D[Event]] = js.native
+    def loadAsync(url: String, onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit]): js.Promise[Object3D[Event]] = js.native
+    
     def parse(data: ArrayBufferLike, onLoad: js.Function1[/* object */ Object3D[Event], Unit]): Unit = js.native
     def parse(
       data: ArrayBufferLike,

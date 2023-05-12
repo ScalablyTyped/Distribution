@@ -365,7 +365,7 @@ object mod {
     /**
       * Returns the current interpolation factory, which defaults to d3.interpolateZoom to implement smooth zooming.
       */
-    // tslint:disable-next-line:no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
     def interpolate[InterpolationFactory /* <: js.Function2[/* a */ ZoomView, /* b */ ZoomView, js.Function1[/* t */ Double, ZoomView]] */](): InterpolationFactory = js.native
     
     /**

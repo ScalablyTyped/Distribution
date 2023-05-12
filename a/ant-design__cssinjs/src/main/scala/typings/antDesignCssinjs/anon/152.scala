@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.MaxBlockSize
+import typings.csstype.mod.Property.BoxFlexGroup
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,13 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `152` extends StObject {
   
   var value: js.UndefOr[
-    (MaxBlockSize[Double | String]) | (js.Array[
-      (Extract[
-        js.UndefOr[
-          (MaxBlockSize[Double | String]) | (js.Array[NonNullable[js.UndefOr[MaxBlockSize[Double | String]]]])
-        ], 
-        String
-      ]) | (NonNullable[js.UndefOr[MaxBlockSize[Double | String]]])
+    BoxFlexGroup | (js.Array[
+      (Extract[js.UndefOr[BoxFlexGroup | js.Array[NonNullable[js.UndefOr[BoxFlexGroup]]]], String]) | NonNullable[js.UndefOr[BoxFlexGroup]]
     ])
   ] = js.native
 }

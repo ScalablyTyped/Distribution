@@ -5,6 +5,7 @@ import typings.std.EventTarget
 import typings.std.ProgressEvent
 import typings.three.mod.Group
 import typings.three.srcCoreBufferGeometryMod.BufferGeometry
+import typings.three.srcCoreBufferGeometryMod.NormalBufferAttributes
 import typings.three.srcMaterialsMaterialMod.Material
 import typings.three.srcThreeMod.Loader
 import typings.three.srcThreeMod.LoadingManager
@@ -29,25 +30,40 @@ object examplesJsmLoadersUsdzloaderMod {
     
     def load(
       url: String,
-      onLoad: js.Function1[/* usdz */ Mesh[BufferGeometry, Material | js.Array[Material]], Unit]
+      onLoad: js.Function1[
+          /* usdz */ Mesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]], 
+          Unit
+        ]
     ): Unit = js.native
     def load(
       url: String,
-      onLoad: js.Function1[/* usdz */ Mesh[BufferGeometry, Material | js.Array[Material]], Unit],
+      onLoad: js.Function1[
+          /* usdz */ Mesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]], 
+          Unit
+        ],
       onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit]
     ): Unit = js.native
     def load(
       url: String,
-      onLoad: js.Function1[/* usdz */ Mesh[BufferGeometry, Material | js.Array[Material]], Unit],
+      onLoad: js.Function1[
+          /* usdz */ Mesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]], 
+          Unit
+        ],
       onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit],
       onError: js.Function1[/* event */ ErrorEvent, Unit]
     ): Unit = js.native
     def load(
       url: String,
-      onLoad: js.Function1[/* usdz */ Mesh[BufferGeometry, Material | js.Array[Material]], Unit],
+      onLoad: js.Function1[
+          /* usdz */ Mesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]], 
+          Unit
+        ],
       onProgress: Unit,
       onError: js.Function1[/* event */ ErrorEvent, Unit]
     ): Unit = js.native
+    
+    def loadAsync(url: String): js.Promise[Mesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]]] = js.native
+    def loadAsync(url: String, onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit]): js.Promise[Mesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]]] = js.native
     
     def parse(buffer: String): Group = js.native
     def parse(buffer: js.typedarray.ArrayBuffer): Group = js.native

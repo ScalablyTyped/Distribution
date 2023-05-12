@@ -10,7 +10,7 @@ open class Footer protected () extends _MDLComponent[FooterProps] {
   def this(props: FooterProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: FooterProps, context: Any) = this()
 }

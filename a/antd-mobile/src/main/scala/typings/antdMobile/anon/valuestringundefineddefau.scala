@@ -72,7 +72,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined {  value :string | undefined,   defaultValue :string | undefined,   onChange :(val : string): void | undefined,   placeholder :string | undefined,   disabled :boolean | undefined,   readOnly :boolean | undefined,   clearable :boolean | undefined,   onlyShowClearWhenFocus :boolean | undefined,   onClear :(): void | undefined,   id :string | undefined,   onEnterPress :(e : react.react.KeyboardEvent<std.HTMLInputElement>): void | undefined,   enterKeyHint :'search' | 'enter' | 'done' | 'go' | 'next' | 'previous' | 'send' | undefined,   min :number | undefined,   max :number | undefined,   className :string | undefined,   style :react.react.CSSProperties & std.Partial<std.Record<'--color' | '--font-size' | '--placeholder-color' | '--text-align', string>> | undefined,   tabIndex :number | undefined} & std.Pick<antd-mobile.antd-mobile/es/components/input/input.NativeInputProps, 'pattern' | 'onClick' | 'name' | 'type' | 'onCompositionEnd' | 'onCompositionStart' | 'onFocus' | 'onBlur' | 'onKeyDown' | 'onKeyUp' | 'autoCapitalize' | 'autoCorrect' | 'inputMode' | 'autoComplete' | 'autoFocus' | 'maxLength' | 'minLength' | 'step'> & react.react.AriaAttributes & antd-mobile.antd-mobile/es/components/input/input.AriaProps & react.react.RefAttributes<antd-mobile.antd-mobile/es/components/input/input.InputRef> */
+/* Inlined {  value :string | undefined,   defaultValue :string | undefined,   onChange :(val : string): void | undefined,   placeholder :string | undefined,   disabled :boolean | undefined,   readOnly :boolean | undefined,   clearable :boolean | undefined,   onlyShowClearWhenFocus :boolean | undefined,   onClear :(): void | undefined,   id :string | undefined,   onEnterPress :(e : react.react.KeyboardEvent<std.HTMLInputElement>): void | undefined,   enterKeyHint :'search' | 'enter' | 'done' | 'go' | 'next' | 'previous' | 'send' | undefined,   min :number | undefined,   max :number | undefined,   className :string | undefined,   style :react.react.CSSProperties & std.Partial<std.Record<'--color' | '--font-size' | '--placeholder-color' | '--text-align', string>> | undefined,   tabIndex :number | undefined} & std.Pick<antd-mobile.antd-mobile/es/components/input/input.NativeInputProps, 'pattern' | 'onClick' | 'name' | 'type' | 'onCompositionEnd' | 'onCompositionStart' | 'onFocus' | 'onBlur' | 'onKeyDown' | 'onKeyUp' | 'autoFocus' | 'autoCapitalize' | 'autoCorrect' | 'inputMode' | 'autoComplete' | 'maxLength' | 'minLength' | 'step'> & react.react.AriaAttributes & antd-mobile.antd-mobile/es/components/input/input.AriaProps & react.react.RefAttributes<antd-mobile.antd-mobile/es/components/input/input.InputRef> */
 trait valuestringundefineddefau extends StObject {
   
   /** Identifies the currently active element when DOM focus is on a composite widget, textbox, group, or application. */
@@ -371,6 +371,11 @@ trait valuestringundefineddefau extends StObject {
   
   var readOnly: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Allows getting a ref to the component instance.
+    * Once the component unmounts, React will set `ref.current` to `null` (or call the ref with `null` if you passed a callback ref).
+    * @see https://react.dev/learn/referencing-values-with-refs#refs-and-the-dom
+    */
   var ref: js.UndefOr[Ref[InputRef]] = js.undefined
   
   var role: js.UndefOr[String] = js.undefined

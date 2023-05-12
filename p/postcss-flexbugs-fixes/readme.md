@@ -1,7 +1,7 @@
 
 # Scala.js typings for postcss-flexbugs-fixes
 
-Typings are for version 4.2
+Typings are for version 5.0
 
 ## Library description:
 PostCSS plugin This project tries to fix all of flexbug's issues

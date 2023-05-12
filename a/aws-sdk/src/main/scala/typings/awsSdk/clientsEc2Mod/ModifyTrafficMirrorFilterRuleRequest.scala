@@ -64,11 +64,11 @@ trait ModifyTrafficMirrorFilterRuleRequest extends StObject {
   /**
     * The ID of the Traffic Mirror rule.
     */
-  var TrafficMirrorFilterRuleId: typings.awsSdk.clientsEc2Mod.TrafficMirrorFilterRuleId
+  var TrafficMirrorFilterRuleId: TrafficMirrorFilterRuleIdWithResolver
 }
 object ModifyTrafficMirrorFilterRuleRequest {
   
-  inline def apply(TrafficMirrorFilterRuleId: TrafficMirrorFilterRuleId): ModifyTrafficMirrorFilterRuleRequest = {
+  inline def apply(TrafficMirrorFilterRuleId: TrafficMirrorFilterRuleIdWithResolver): ModifyTrafficMirrorFilterRuleRequest = {
     val __obj = js.Dynamic.literal(TrafficMirrorFilterRuleId = TrafficMirrorFilterRuleId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyTrafficMirrorFilterRuleRequest]
   }
@@ -122,6 +122,6 @@ object ModifyTrafficMirrorFilterRuleRequest {
     
     inline def setTrafficDirectionUndefined: Self = StObject.set(x, "TrafficDirection", js.undefined)
     
-    inline def setTrafficMirrorFilterRuleId(value: TrafficMirrorFilterRuleId): Self = StObject.set(x, "TrafficMirrorFilterRuleId", value.asInstanceOf[js.Any])
+    inline def setTrafficMirrorFilterRuleId(value: TrafficMirrorFilterRuleIdWithResolver): Self = StObject.set(x, "TrafficMirrorFilterRuleId", value.asInstanceOf[js.Any])
   }
 }

@@ -6,13 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DirOwner extends StObject {
   
-  /** The alternate path to look for a README file */
+  /** @description The alternate path to look for a README file */
   var dir: String
   
-  /** The account owner of the repository. The name is not case sensitive. */
   var owner: String
   
-  /** The name of the repository. The name is not case sensitive. */
   var repo: String
 }
 object DirOwner {

@@ -9,7 +9,7 @@ trait TagResourceRequest extends StObject {
   /**
     * An Amazon Resource Name (ARN) that uniquely identifies an AWS resource.
     */
-  var ResourceArn: string
+  var ResourceArn: _String
   
   /**
     * A label that consists of a customer-defined key and an optional value.
@@ -18,7 +18,7 @@ trait TagResourceRequest extends StObject {
 }
 object TagResourceRequest {
   
-  inline def apply(ResourceArn: string, Tags: MapOfString): TagResourceRequest = {
+  inline def apply(ResourceArn: _String, Tags: MapOfString): TagResourceRequest = {
     val __obj = js.Dynamic.literal(ResourceArn = ResourceArn.asInstanceOf[js.Any], Tags = Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[TagResourceRequest]
   }
@@ -26,7 +26,7 @@ object TagResourceRequest {
   @scala.inline
   implicit open class MutableBuilder[Self <: TagResourceRequest] (val x: Self) extends AnyVal {
     
-    inline def setResourceArn(value: string): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
+    inline def setResourceArn(value: _String): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
     
     inline def setTags(value: MapOfString): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
   }

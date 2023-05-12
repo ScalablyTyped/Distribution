@@ -36,13 +36,17 @@ object sapUiCoreDateCalendarUtilsMod extends Shortcut {
     def getWeekConfigurationValues(): js.UndefOr[FirstDayOfWeek] = js.native
     def getWeekConfigurationValues(
       /**
-      * The calendar week numbering; if omitted, `Default` is used.
+      * The calendar week numbering; if omitted, the calendar week numbering of the Configuration is used; see
+      * {@link sap.ui.core.Configuration#getCalendarWeekNumbering}. If this value is `Default` the returned calendar
+      * week configuration is derived from the given `oLocale`.
       */
     sCalendarWeekNumbering: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CalendarWeekNumbering * / any */ String
     ): js.UndefOr[FirstDayOfWeek] = js.native
     def getWeekConfigurationValues(
       /**
-      * The calendar week numbering; if omitted, `Default` is used.
+      * The calendar week numbering; if omitted, the calendar week numbering of the Configuration is used; see
+      * {@link sap.ui.core.Configuration#getCalendarWeekNumbering}. If this value is `Default` the returned calendar
+      * week configuration is derived from the given `oLocale`.
       */
     sCalendarWeekNumbering: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CalendarWeekNumbering * / any */ String,
       /**
@@ -54,7 +58,9 @@ object sapUiCoreDateCalendarUtilsMod extends Shortcut {
     ): js.UndefOr[FirstDayOfWeek] = js.native
     def getWeekConfigurationValues(
       /**
-      * The calendar week numbering; if omitted, `Default` is used.
+      * The calendar week numbering; if omitted, the calendar week numbering of the Configuration is used; see
+      * {@link sap.ui.core.Configuration#getCalendarWeekNumbering}. If this value is `Default` the returned calendar
+      * week configuration is derived from the given `oLocale`.
       */
     sCalendarWeekNumbering: Unit,
       /**
@@ -66,13 +72,17 @@ object sapUiCoreDateCalendarUtilsMod extends Shortcut {
     ): js.UndefOr[FirstDayOfWeek] = js.native
     def getWeekConfigurationValues(
       /**
-      * The calendar week numbering; if omitted, `Default` is used.
+      * The calendar week numbering; if omitted, the calendar week numbering of the Configuration is used; see
+      * {@link sap.ui.core.Configuration#getCalendarWeekNumbering}. If this value is `Default` the returned calendar
+      * week configuration is derived from the given `oLocale`.
       */
     sCalendarWeekNumbering: CalendarWeekNumbering
     ): js.UndefOr[FirstDayOfWeek] = js.native
     def getWeekConfigurationValues(
       /**
-      * The calendar week numbering; if omitted, `Default` is used.
+      * The calendar week numbering; if omitted, the calendar week numbering of the Configuration is used; see
+      * {@link sap.ui.core.Configuration#getCalendarWeekNumbering}. If this value is `Default` the returned calendar
+      * week configuration is derived from the given `oLocale`.
       */
     sCalendarWeekNumbering: CalendarWeekNumbering,
       /**

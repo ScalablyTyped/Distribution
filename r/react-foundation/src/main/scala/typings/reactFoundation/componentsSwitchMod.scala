@@ -9,6 +9,9 @@ import typings.react.mod.ChangeEventHandler
 import typings.react.mod.DOMAttributes
 import typings.react.mod.FunctionComponent
 import typings.react.mod.HTMLInputTypeAttribute
+import typings.react.reactStrings._empty
+import typings.react.reactStrings.`use-credentials`
+import typings.react.reactStrings.anonymous
 import typings.react.reactStrings.decimal
 import typings.react.reactStrings.done
 import typings.react.reactStrings.email
@@ -34,6 +37,7 @@ import typings.reactFoundation.enumsMod.SwitchInputTypes
 import typings.reactFoundation.enumsMod.SwitchSizes
 import typings.reactFoundation.utilsMod.FlexboxPropTypes
 import typings.reactFoundation.utilsMod.GeneralPropTypes
+import typings.std.FormData
 import typings.std.HTMLDivElement
 import typings.std.HTMLInputElement
 import typings.std.HTMLLabelElement
@@ -65,7 +69,7 @@ object componentsSwitchMod {
   val SwitchPaddle: FunctionComponent[SwitchPaddleProps] = js.native
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.react.mod.HTMLAttributes because var conflicts: className. Inlined contextMenu, vocab, typeof, inputMode, is, about, accessKey, nonce, itemScope, style, security, defaultValue, autoSave, prefix, resource, suppressHydrationWarning, itemType, spellCheck, tabIndex, slot, autoCapitalize, placeholder, radioGroup, id, lang, color, suppressContentEditableWarning, translate, itemID, dir, draggable, contentEditable, itemRef, hidden, inlist, property, defaultChecked, unselectable, role, datatype, itemProp, title, autoCorrect, results */ trait SwitchActiveProps
+  - typings.react.mod.HTMLAttributes because var conflicts: className. Inlined contextMenu, vocab, typeof, inputMode, is, about, accessKey, content, nonce, itemScope, style, security, defaultValue, autoSave, prefix, resource, suppressHydrationWarning, itemType, spellCheck, tabIndex, slot, autoCapitalize, rev, placeholder, rel, radioGroup, id, lang, color, suppressContentEditableWarning, translate, itemID, dir, draggable, contentEditable, itemRef, hidden, inlist, property, defaultChecked, autoFocus, unselectable, role, datatype, itemProp, title, autoCorrect, results */ trait SwitchActiveProps
     extends StObject
        with GeneralPropTypes
        with AriaAttributes
@@ -82,9 +86,13 @@ object componentsSwitchMod {
     
     var autoCorrect: js.UndefOr[String] = js.undefined
     
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
+    
     var autoSave: js.UndefOr[String] = js.undefined
     
     var color: js.UndefOr[String] = js.undefined
+    
+    var content: js.UndefOr[String] = js.undefined
     
     var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
@@ -143,9 +151,13 @@ object componentsSwitchMod {
     // Unknown
     var radioGroup: js.UndefOr[String] = js.undefined
     
+    var rel: js.UndefOr[String] = js.undefined
+    
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
+    
+    var rev: js.UndefOr[String] = js.undefined
     
     // <command>, <menuitem>
     // WAI-ARIA
@@ -203,6 +215,10 @@ object componentsSwitchMod {
       
       inline def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
       
+      inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+      
+      inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+      
       inline def setAutoSave(value: String): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
       
       inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
@@ -211,9 +227,13 @@ object componentsSwitchMod {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
       inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
       inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
@@ -305,6 +325,10 @@ object componentsSwitchMod {
       
       inline def setRadioGroupUndefined: Self = StObject.set(x, "radioGroup", js.undefined)
       
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      
+      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+      
       inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
       inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
@@ -312,6 +336,10 @@ object componentsSwitchMod {
       inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+      
+      inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+      
+      inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
       
       inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
@@ -372,7 +400,7 @@ object componentsSwitchMod {
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.react.mod.HTMLAttributes because var conflicts: className. Inlined contextMenu, vocab, typeof, inputMode, is, about, accessKey, nonce, itemScope, style, security, defaultValue, autoSave, prefix, resource, suppressHydrationWarning, itemType, spellCheck, tabIndex, slot, autoCapitalize, placeholder, radioGroup, id, lang, color, suppressContentEditableWarning, translate, itemID, dir, draggable, contentEditable, itemRef, hidden, inlist, property, defaultChecked, unselectable, role, datatype, itemProp, title, autoCorrect, results */ trait SwitchInactiveProps
+  - typings.react.mod.HTMLAttributes because var conflicts: className. Inlined contextMenu, vocab, typeof, inputMode, is, about, accessKey, content, nonce, itemScope, style, security, defaultValue, autoSave, prefix, resource, suppressHydrationWarning, itemType, spellCheck, tabIndex, slot, autoCapitalize, rev, placeholder, rel, radioGroup, id, lang, color, suppressContentEditableWarning, translate, itemID, dir, draggable, contentEditable, itemRef, hidden, inlist, property, defaultChecked, autoFocus, unselectable, role, datatype, itemProp, title, autoCorrect, results */ trait SwitchInactiveProps
     extends StObject
        with GeneralPropTypes
        with AriaAttributes
@@ -389,9 +417,13 @@ object componentsSwitchMod {
     
     var autoCorrect: js.UndefOr[String] = js.undefined
     
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
+    
     var autoSave: js.UndefOr[String] = js.undefined
     
     var color: js.UndefOr[String] = js.undefined
+    
+    var content: js.UndefOr[String] = js.undefined
     
     var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
@@ -450,9 +482,13 @@ object componentsSwitchMod {
     // Unknown
     var radioGroup: js.UndefOr[String] = js.undefined
     
+    var rel: js.UndefOr[String] = js.undefined
+    
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
+    
+    var rev: js.UndefOr[String] = js.undefined
     
     // <command>, <menuitem>
     // WAI-ARIA
@@ -510,6 +546,10 @@ object componentsSwitchMod {
       
       inline def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
       
+      inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+      
+      inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+      
       inline def setAutoSave(value: String): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
       
       inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
@@ -518,9 +558,13 @@ object componentsSwitchMod {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
       inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
       inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
@@ -612,6 +656,10 @@ object componentsSwitchMod {
       
       inline def setRadioGroupUndefined: Self = StObject.set(x, "radioGroup", js.undefined)
       
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      
+      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+      
       inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
       inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
@@ -619,6 +667,10 @@ object componentsSwitchMod {
       inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+      
+      inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+      
+      inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
       
       inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
@@ -679,8 +731,8 @@ object componentsSwitchMod {
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.react.mod.HTMLAttributes because var conflicts: className. Inlined contextMenu, vocab, typeof, inputMode, is, about, accessKey, nonce, itemScope, style, security, defaultValue, autoSave, prefix, resource, suppressHydrationWarning, itemType, spellCheck, tabIndex, slot, autoCapitalize, placeholder, radioGroup, id, lang, color, suppressContentEditableWarning, translate, itemID, dir, draggable, contentEditable, itemRef, hidden, inlist, property, defaultChecked, unselectable, role, datatype, itemProp, title, autoCorrect, results
-  - typings.react.mod.InputHTMLAttributes because var conflicts: className. Inlined formAction, alt, src, max, required, multiple, height, enterKeyHint, min, capture, size, maxLength, formEncType, pattern, form, accept, step, value, minLength, readOnly, name, disabled, formMethod, width, formTarget, autoFocus, crossOrigin, `type`, checked, onChange_InputHTMLAttributes, formNoValidate, list, autoComplete */ trait SwitchInputProps
+  - typings.react.mod.HTMLAttributes because var conflicts: className. Inlined contextMenu, vocab, typeof, inputMode, is, about, accessKey, content, nonce, itemScope, style, security, defaultValue, autoSave, prefix, resource, suppressHydrationWarning, itemType, spellCheck, tabIndex, slot, autoCapitalize, rev, placeholder, rel, radioGroup, id, lang, color, suppressContentEditableWarning, translate, itemID, dir, draggable, contentEditable, itemRef, hidden, inlist, property, defaultChecked, autoFocus, unselectable, role, datatype, itemProp, title, autoCorrect, results
+  - typings.react.mod.InputHTMLAttributes because var conflicts: className. Inlined formAction, alt, src, max, required, multiple, height, enterKeyHint, min, capture, size, maxLength, formEncType, pattern, form, accept, step, value, minLength, readOnly, name, disabled, formMethod, width, formTarget, crossOrigin, `type`, checked, onChange_InputHTMLAttributes, formNoValidate, list, autoComplete */ trait SwitchInputProps
     extends StObject
        with GeneralPropTypes
        with AriaAttributes
@@ -714,11 +766,13 @@ object componentsSwitchMod {
     
     var color: js.UndefOr[String] = js.undefined
     
+    var content: js.UndefOr[String] = js.undefined
+    
     var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
     var contextMenu: js.UndefOr[String] = js.undefined
     
-    var crossOrigin: js.UndefOr[String] = js.undefined
+    var crossOrigin: js.UndefOr[anonymous | `use-credentials` | _empty] = js.undefined
     
     var datatype: js.UndefOr[String] = js.undefined
     
@@ -737,7 +791,7 @@ object componentsSwitchMod {
     
     var form: js.UndefOr[String] = js.undefined
     
-    var formAction: js.UndefOr[String] = js.undefined
+    var formAction: js.UndefOr[String | (js.Function1[/* formData */ FormData, Unit])] = js.undefined
     
     var formEncType: js.UndefOr[String] = js.undefined
     
@@ -812,11 +866,15 @@ object componentsSwitchMod {
     
     var readOnly: js.UndefOr[Boolean] = js.undefined
     
+    var rel: js.UndefOr[String] = js.undefined
+    
     var required: js.UndefOr[Boolean] = js.undefined
     
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
+    
+    var rev: js.UndefOr[String] = js.undefined
     
     // <command>, <menuitem>
     // WAI-ARIA
@@ -916,15 +974,19 @@ object componentsSwitchMod {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
       inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
       inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
       inline def setContextMenuUndefined: Self = StObject.set(x, "contextMenu", js.undefined)
       
-      inline def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+      inline def setCrossOrigin(value: anonymous | `use-credentials` | _empty): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
       
       inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
       
@@ -960,7 +1022,9 @@ object componentsSwitchMod {
       
       inline def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
       
-      inline def setFormAction(value: String): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+      inline def setFormAction(value: String | (js.Function1[/* formData */ FormData, Unit])): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+      
+      inline def setFormActionFunction1(value: /* formData */ FormData => Unit): Self = StObject.set(x, "formAction", js.Any.fromFunction1(value))
       
       inline def setFormActionUndefined: Self = StObject.set(x, "formAction", js.undefined)
       
@@ -1090,6 +1154,10 @@ object componentsSwitchMod {
       
       inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
       
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      
+      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+      
       inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
       
       inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
@@ -1101,6 +1169,10 @@ object componentsSwitchMod {
       inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+      
+      inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+      
+      inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
       
       inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
@@ -1183,7 +1255,7 @@ object componentsSwitchMod {
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.react.mod.HTMLAttributes because var conflicts: className. Inlined contextMenu, vocab, typeof, inputMode, is, about, accessKey, nonce, itemScope, style, security, defaultValue, autoSave, prefix, resource, suppressHydrationWarning, itemType, spellCheck, tabIndex, slot, autoCapitalize, placeholder, radioGroup, id, lang, color, suppressContentEditableWarning, translate, itemID, dir, draggable, contentEditable, itemRef, hidden, inlist, property, defaultChecked, unselectable, role, datatype, itemProp, title, autoCorrect, results
+  - typings.react.mod.HTMLAttributes because var conflicts: className. Inlined contextMenu, vocab, typeof, inputMode, is, about, accessKey, content, nonce, itemScope, style, security, defaultValue, autoSave, prefix, resource, suppressHydrationWarning, itemType, spellCheck, tabIndex, slot, autoCapitalize, rev, placeholder, rel, radioGroup, id, lang, color, suppressContentEditableWarning, translate, itemID, dir, draggable, contentEditable, itemRef, hidden, inlist, property, defaultChecked, autoFocus, unselectable, role, datatype, itemProp, title, autoCorrect, results
   - typings.react.mod.LabelHTMLAttributes because var conflicts: className. Inlined form, htmlFor */ trait SwitchPaddleProps
     extends StObject
        with GeneralPropTypes
@@ -1201,9 +1273,13 @@ object componentsSwitchMod {
     
     var autoCorrect: js.UndefOr[String] = js.undefined
     
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
+    
     var autoSave: js.UndefOr[String] = js.undefined
     
     var color: js.UndefOr[String] = js.undefined
+    
+    var content: js.UndefOr[String] = js.undefined
     
     var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
@@ -1266,9 +1342,13 @@ object componentsSwitchMod {
     // Unknown
     var radioGroup: js.UndefOr[String] = js.undefined
     
+    var rel: js.UndefOr[String] = js.undefined
+    
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
+    
+    var rev: js.UndefOr[String] = js.undefined
     
     // <command>, <menuitem>
     // WAI-ARIA
@@ -1324,6 +1404,10 @@ object componentsSwitchMod {
       
       inline def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
       
+      inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+      
+      inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+      
       inline def setAutoSave(value: String): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
       
       inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
@@ -1332,9 +1416,13 @@ object componentsSwitchMod {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
       inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
       inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
@@ -1434,6 +1522,10 @@ object componentsSwitchMod {
       
       inline def setRadioGroupUndefined: Self = StObject.set(x, "radioGroup", js.undefined)
       
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      
+      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+      
       inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
       inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
@@ -1441,6 +1533,10 @@ object componentsSwitchMod {
       inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+      
+      inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+      
+      inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
       
       inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
@@ -1497,7 +1593,7 @@ object componentsSwitchMod {
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.react.mod.HTMLAttributes because var conflicts: className. Inlined contextMenu, vocab, typeof, inputMode, is, about, accessKey, nonce, itemScope, style, security, defaultValue, autoSave, prefix, resource, suppressHydrationWarning, itemType, spellCheck, tabIndex, slot, autoCapitalize, placeholder, radioGroup, id, lang, color, suppressContentEditableWarning, translate, itemID, dir, draggable, contentEditable, itemRef, hidden, inlist, property, defaultChecked, unselectable, role, datatype, itemProp, title, autoCorrect, results */ trait SwitchProps
+  - typings.react.mod.HTMLAttributes because var conflicts: className. Inlined contextMenu, vocab, typeof, inputMode, is, about, accessKey, content, nonce, itemScope, style, security, defaultValue, autoSave, prefix, resource, suppressHydrationWarning, itemType, spellCheck, tabIndex, slot, autoCapitalize, rev, placeholder, rel, radioGroup, id, lang, color, suppressContentEditableWarning, translate, itemID, dir, draggable, contentEditable, itemRef, hidden, inlist, property, defaultChecked, autoFocus, unselectable, role, datatype, itemProp, title, autoCorrect, results */ trait SwitchProps
     extends StObject
        with FlexboxPropTypes
        with AriaAttributes
@@ -1516,9 +1612,13 @@ object componentsSwitchMod {
     
     var autoCorrect: js.UndefOr[String] = js.undefined
     
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
+    
     var autoSave: js.UndefOr[String] = js.undefined
     
     var color: js.UndefOr[String] = js.undefined
+    
+    var content: js.UndefOr[String] = js.undefined
     
     var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
@@ -1583,9 +1683,13 @@ object componentsSwitchMod {
     // Unknown
     var radioGroup: js.UndefOr[String] = js.undefined
     
+    var rel: js.UndefOr[String] = js.undefined
+    
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
+    
+    var rev: js.UndefOr[String] = js.undefined
     
     // <command>, <menuitem>
     // WAI-ARIA
@@ -1647,6 +1751,10 @@ object componentsSwitchMod {
       
       inline def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
       
+      inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+      
+      inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+      
       inline def setAutoSave(value: String): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
       
       inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
@@ -1655,9 +1763,13 @@ object componentsSwitchMod {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
       inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
       inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
@@ -1761,6 +1873,10 @@ object componentsSwitchMod {
       
       inline def setRadioGroupUndefined: Self = StObject.set(x, "radioGroup", js.undefined)
       
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      
+      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+      
       inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
       inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
@@ -1768,6 +1884,10 @@ object componentsSwitchMod {
       inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+      
+      inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+      
+      inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
       
       inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       

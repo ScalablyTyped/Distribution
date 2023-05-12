@@ -1,7 +1,7 @@
 
 # Scala.js typings for yup
 
-Typings are for version 0.29
+Typings are for version 1.1.1
 
 ## Library description:
 Dead simple Object schema validation
@@ -10,10 +10,10 @@ Dead simple Object schema validation
 | ------------------ | :-------------: |
 | Full name          | yup |
 | Keywords           | - |
-| # releases         | 26 |
-| # dependents       | 1006 |
-| # downloads        | 78441541 |
-| # stars            | 5 |
+| # releases         | 29 |
+| # dependents       | 0.0 |
+| # downloads        | 1.5845051666666666E7 |
+| # stars            | 18768.0 |
 
 ## Links
 - [Homepage](https://github.com/jquense/yup)
@@ -24,7 +24,7 @@ Dead simple Object schema validation
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

@@ -20,7 +20,7 @@ object libEsmComponentsOverflowListOverflowListMod {
     def this(props: OverflowListProps[T]) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: OverflowListProps[T], context: Any) = this()
     
@@ -140,7 +140,7 @@ object libEsmComponentsOverflowListOverflowListMod {
       * @default "div"
       */
     var tagName: js.UndefOr[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.blueprintjsCore.blueprintjsCoreStrings.a, typings.blueprintjsCore.blueprintjsCoreStrings.abbr, typings.blueprintjsCore.blueprintjsCoreStrings.address */ Any
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177, starting with typings.blueprintjsCore.blueprintjsCoreStrings.a, typings.blueprintjsCore.blueprintjsCoreStrings.abbr, typings.blueprintjsCore.blueprintjsCoreStrings.address */ Any
       ] = js.undefined
     
     /**
@@ -194,7 +194,7 @@ object libEsmComponentsOverflowListOverflowListMod {
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
       inline def setTagName(
-        value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.blueprintjsCore.blueprintjsCoreStrings.a, typings.blueprintjsCore.blueprintjsCoreStrings.abbr, typings.blueprintjsCore.blueprintjsCoreStrings.address */ Any
+        value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177, starting with typings.blueprintjsCore.blueprintjsCoreStrings.a, typings.blueprintjsCore.blueprintjsCoreStrings.abbr, typings.blueprintjsCore.blueprintjsCoreStrings.address */ Any
       ): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
       
       inline def setTagNameUndefined: Self = StObject.set(x, "tagName", js.undefined)

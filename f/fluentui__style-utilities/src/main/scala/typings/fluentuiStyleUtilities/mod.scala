@@ -282,6 +282,10 @@ object mod {
   @js.native
   val EdgeChromiumHighContrastSelector: /* "@media screen and (-ms-high-contrast: active), screen and (forced-colors: active)" */ String = js.native
   
+  @JSImport("@fluentui/style-utilities", "FLUENT_CDN_BASE_URL")
+  @js.native
+  val FLUENT_CDN_BASE_URL: /* "https://res.cdn.office.net/files/fabric-cdn-prod_20230427.001" */ String = js.native
+  
   /* Inlined {[ key in keyof @fluentui/style-utilities.@fluentui/style-utilities/lib/interfaces.IFontStyles ]:? string} */
   object FontClassNames {
     

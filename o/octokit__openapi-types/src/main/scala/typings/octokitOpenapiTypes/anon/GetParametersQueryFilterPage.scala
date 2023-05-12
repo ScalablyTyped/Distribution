@@ -6,7 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GetParametersQueryFilterPage extends StObject {
   
-  /** List all users who are outside collaborators of an organization. */
+  /**
+    * List outside collaborators for an organization
+    * @description List all users who are outside collaborators of an organization.
+    */
   var get: ParametersQueryFilterPage
 }
 object GetParametersQueryFilterPage {

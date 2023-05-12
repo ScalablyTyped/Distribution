@@ -7,27 +7,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SentimentFilter extends StObject {
   
   /**
-    * Allows you to specify a time range (in milliseconds) in your audio, during which you want to search for the specified sentiments. See for more detail.
+    * Makes it possible to specify a time range (in milliseconds) in your audio, during which you want to search for the specified sentiments. See for more detail.
     */
   var AbsoluteTimeRange: js.UndefOr[typings.awsSdk.clientsTranscribeserviceMod.AbsoluteTimeRange] = js.undefined
   
   /**
-    * Set to TRUE to flag the sentiments you didn't include in your request. Set to FALSE to flag the sentiments you specified in your request.
+    * Set to TRUE to flag the sentiments that you didn't include in your request. Set to FALSE to flag the sentiments that you specified in your request.
     */
   var Negate: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Specify the participant you want to flag. Omitting this parameter is equivalent to specifying both participants.
+    * Specify the participant that you want to flag. Omitting this parameter is equivalent to specifying both participants.
     */
   var ParticipantRole: js.UndefOr[typings.awsSdk.clientsTranscribeserviceMod.ParticipantRole] = js.undefined
   
   /**
-    * Allows you to specify a time range (in percentage) in your media file, during which you want to search for the specified sentiments. See for more detail.
+    * Makes it possible to specify a time range (in percentage) in your media file, during which you want to search for the specified sentiments. See for more detail.
     */
   var RelativeTimeRange: js.UndefOr[typings.awsSdk.clientsTranscribeserviceMod.RelativeTimeRange] = js.undefined
   
   /**
-    * Specify the sentiments you want to flag.
+    * Specify the sentiments that you want to flag.
     */
   var Sentiments: SentimentValueList
 }

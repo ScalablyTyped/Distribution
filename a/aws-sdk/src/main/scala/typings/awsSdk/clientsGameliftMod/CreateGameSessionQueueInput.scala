@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateGameSessionQueueInput extends StObject {
   
   /**
-    *  Information to be added to all events that are related to this game session queue. 
+    * Information to be added to all events that are related to this game session queue.
     */
   var CustomEventData: js.UndefOr[QueueCustomEventData] = js.undefined
   
@@ -42,7 +42,7 @@ trait CreateGameSessionQueueInput extends StObject {
   var PriorityConfiguration: js.UndefOr[typings.awsSdk.clientsGameliftMod.PriorityConfiguration] = js.undefined
   
   /**
-    * A list of labels to assign to the new game session queue resource. Tags are developer-defined key-value pairs. Tagging Amazon Web Services resources are useful for resource management, access management and cost allocation. For more information, see  Tagging Amazon Web Services Resources in the Amazon Web Services General Reference. Once the resource is created, you can use TagResource, UntagResource, and ListTagsForResource to add, remove, and view tags. The maximum tag limit may be lower than stated. See the Amazon Web Services General Reference for actual tagging limits.
+    * A list of labels to assign to the new game session queue resource. Tags are developer-defined key-value pairs. Tagging Amazon Web Services resources are useful for resource management, access management and cost allocation. For more information, see  Tagging Amazon Web Services Resources in the Amazon Web Services General Reference.
     */
   var Tags: js.UndefOr[TagList] = js.undefined
   

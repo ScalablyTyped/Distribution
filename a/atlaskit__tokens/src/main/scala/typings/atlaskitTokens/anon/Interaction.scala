@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Interaction extends StObject {
   
-  var interaction: Hovered
+  var interaction: Pressed
 }
 object Interaction {
   
-  inline def apply(interaction: Hovered): Interaction = {
+  inline def apply(interaction: Pressed): Interaction = {
     val __obj = js.Dynamic.literal(interaction = interaction.asInstanceOf[js.Any])
     __obj.asInstanceOf[Interaction]
   }
@@ -18,6 +18,6 @@ object Interaction {
   @scala.inline
   implicit open class MutableBuilder[Self <: Interaction] (val x: Self) extends AnyVal {
     
-    inline def setInteraction(value: Hovered): Self = StObject.set(x, "interaction", value.asInstanceOf[js.Any])
+    inline def setInteraction(value: Pressed): Self = StObject.set(x, "interaction", value.asInstanceOf[js.Any])
   }
 }

@@ -55,7 +55,7 @@ object libRouterRouteResultMod {
     
     /* private */ var base_ : Any = js.native
     
-    var charset: String = js.native
+    var charset: String | Null = js.native
     
     /* private */ var charset_ : Any = js.native
     
@@ -76,12 +76,13 @@ object libRouterRouteResultMod {
     /* private */ var logger_ : Any = js.native
     
     def send(response: Response): Unit = js.native
-    def send(response: Response, opt_options: Debug): Unit = js.native
+    def send(response: Response, options: Debug): Unit = js.native
     
     var status: Status | Double = js.native
     
     /* private */ var status_ : Any = js.native
     
+    def withCharset(): RouteResult = js.native
     def withCharset(charset: String): RouteResult = js.native
     
     def withContent(content: Any): RouteResult = js.native

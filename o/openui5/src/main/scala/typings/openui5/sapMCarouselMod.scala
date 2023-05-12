@@ -4,6 +4,7 @@ import typings.openui5.anon.ActivePages
 import typings.openui5.anon.NewActivePageId
 import typings.openui5.anon.PageId
 import typings.openui5.sap.ClassInfo
+import typings.openui5.sapMLibraryMod.BackgroundDesign
 import typings.openui5.sapMLibraryMod.CarouselArrowsPlacement
 import typings.openui5.sapMLibraryMod.PlacementType
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
@@ -529,6 +530,8 @@ object sapMCarouselMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:beforePageChanged beforePageChanged} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -541,6 +544,7 @@ object sapMCarouselMod {
     
     /**
       * @deprecated (since 1.18.7) - Since 1.18.7 pages are no longer loaded or unloaded
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:loadPage loadPage} to attached listeners.
       *
@@ -553,6 +557,8 @@ object sapMCarouselMod {
     mParameters: PageId): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:pageChanged pageChanged} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -565,6 +571,7 @@ object sapMCarouselMod {
     
     /**
       * @deprecated (since 1.18.7) - Since 1.18.7 pages are no longer loaded or unloaded
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:unloadPage unloadPage} to attached listeners.
       *
@@ -594,6 +601,19 @@ object sapMCarouselMod {
       * @returns Value of property `arrowsPlacement`
       */
     def getArrowsPlacement(): CarouselArrowsPlacement | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CarouselArrowsPlacement * / any */ String) = js.native
+    
+    /**
+      * @SINCE 1.110
+      *
+      * Gets current value of property {@link #getBackgroundDesign backgroundDesign}.
+      *
+      * Defines the carousel's background design. Default is `sap.m.BackgroundDesign.Translucent`.
+      *
+      * Default value is `Translucent`.
+      *
+      * @returns Value of property `backgroundDesign`
+      */
+    def getBackgroundDesign(): BackgroundDesign | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof BackgroundDesign * / any */ String) = js.native
     
     /**
       * @SINCE 1.62
@@ -805,6 +825,31 @@ object sapMCarouselMod {
     sArrowsPlacement: CarouselArrowsPlacement): this.type = js.native
     
     /**
+      * @SINCE 1.110
+      *
+      * Sets a new value for property {@link #getBackgroundDesign backgroundDesign}.
+      *
+      * Defines the carousel's background design. Default is `sap.m.BackgroundDesign.Translucent`.
+      *
+      * When called with a value of `null` or `undefined`, the default value of the property will be restored.
+      *
+      * Default value is `Translucent`.
+      *
+      * @returns Reference to `this` in order to allow method chaining
+      */
+    def setBackgroundDesign(): this.type = js.native
+    def setBackgroundDesign(
+      /**
+      * New value for property `backgroundDesign`
+      */
+    sBackgroundDesign: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof BackgroundDesign * / any */ String
+    ): this.type = js.native
+    def setBackgroundDesign(/**
+      * New value for property `backgroundDesign`
+      */
+    sBackgroundDesign: BackgroundDesign): this.type = js.native
+    
+    /**
       * @SINCE 1.62
       *
       * Sets the aggregated {@link #getCustomLayout customLayout}.
@@ -956,6 +1001,15 @@ object sapMCarouselMod {
       ] = js.undefined
     
     /**
+      * @SINCE 1.110
+      *
+      * Defines the carousel's background design. Default is `sap.m.BackgroundDesign.Translucent`.
+      */
+    var backgroundDesign: js.UndefOr[
+        BackgroundDesign | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof BackgroundDesign * / any */ String) | PropertyBindingInfo
+      ] = js.undefined
+    
+    /**
       * This event is fired before a carousel swipe has been completed. It is triggered both by physical swipe
       * events and through API carousel manipulations such as calling 'next', 'previous' or 'setActivePage' functions.
       */
@@ -1067,6 +1121,12 @@ object sapMCarouselMod {
       ): Self = StObject.set(x, "arrowsPlacement", value.asInstanceOf[js.Any])
       
       inline def setArrowsPlacementUndefined: Self = StObject.set(x, "arrowsPlacement", js.undefined)
+      
+      inline def setBackgroundDesign(
+        value: BackgroundDesign | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof BackgroundDesign * / any */ String) | PropertyBindingInfo
+      ): Self = StObject.set(x, "backgroundDesign", value.asInstanceOf[js.Any])
+      
+      inline def setBackgroundDesignUndefined: Self = StObject.set(x, "backgroundDesign", js.undefined)
       
       inline def setBeforePageChanged(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "beforePageChanged", js.Any.fromFunction1(value))
       

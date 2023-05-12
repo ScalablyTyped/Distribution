@@ -14,11 +14,14 @@ open class Lightmapper protected ()
   /**
     * Create a new Lightmapper instance.
     *
-    * @param {GraphicsDevice} device - The graphics device used by the lightmapper.
-    * @param {Entity} root - The root entity of the scene.
-    * @param {Scene} scene - The scene to lightmap.
-    * @param {ForwardRenderer} renderer - The renderer.
-    * @param {AssetRegistry} assets - Registry of assets to lightmap.
+    * @param {import('../../platform/graphics/graphics-device.js').GraphicsDevice} device - The
+    * graphics device used by the lightmapper.
+    * @param {import('../entity.js').Entity} root - The root entity of the scene.
+    * @param {import('../../scene/scene.js').Scene} scene - The scene to lightmap.
+    * @param {import('../../scene/renderer/forward-renderer.js').ForwardRenderer} renderer - The
+    * renderer.
+    * @param {import('../asset/asset-registry.js').AssetRegistry} assets - Registry of assets to
+    * lightmap.
     * @hideconstructor
     */
   def this(

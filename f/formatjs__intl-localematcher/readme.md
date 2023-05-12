@@ -1,7 +1,7 @@
 
 # Scala.js typings for formatjs__intl-localematcher
 
-Typings are for version 0.2.31
+Typings are for version 0.2.32
 
 ## Library description:
 Intl.LocaleMatcher ponyfill

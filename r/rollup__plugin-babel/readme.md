@@ -1,7 +1,7 @@
 
 # Scala.js typings for rollup__plugin-babel
 
-Typings are for version 6.0.2
+Typings are for version 6.0.3
 
 ## Library description:
 Seamless integration between Rollup and Babel.

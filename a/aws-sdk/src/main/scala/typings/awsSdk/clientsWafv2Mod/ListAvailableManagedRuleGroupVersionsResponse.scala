@@ -17,7 +17,7 @@ trait ListAvailableManagedRuleGroupVersionsResponse extends StObject {
   var NextMarker: js.UndefOr[typings.awsSdk.clientsWafv2Mod.NextMarker] = js.undefined
   
   /**
-    * The versions that are currently available for the specified managed rule group. 
+    * The versions that are currently available for the specified managed rule group. If you specified a Limit in your request, this might not be the full list. 
     */
   var Versions: js.UndefOr[ManagedRuleGroupVersions] = js.undefined
 }

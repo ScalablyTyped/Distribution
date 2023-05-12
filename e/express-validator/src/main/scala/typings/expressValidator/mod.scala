@@ -1,16 +1,22 @@
 package typings.expressValidator
 
-import typings.expressValidator.anon.ArrayValidationChainrunre
 import typings.expressValidator.anon.PartialMatchedDataOptions
-import typings.expressValidator.anon.Run
 import typings.expressValidator.anon.WithDefaults
+import typings.expressValidator.srcBaseMod.ErrorMessage
+import typings.expressValidator.srcBaseMod.FieldMessageFactory
 import typings.expressValidator.srcBaseMod.Location
 import typings.expressValidator.srcBaseMod.Middleware
 import typings.expressValidator.srcBaseMod.Request
 import typings.expressValidator.srcBaseMod.ValidationError
-import typings.expressValidator.srcChainSanitizationChainMod.SanitizationChain
+import typings.expressValidator.srcChainContextRunnerMod.ContextRunner
 import typings.expressValidator.srcChainValidationChainMod.ValidationChain
-import typings.expressValidator.srcMiddlewaresOneOfMod.OneOfCustomMessageBuilder
+import typings.expressValidator.srcExpressValidatorMod.CustomOptions
+import typings.expressValidator.srcExpressValidatorMod.CustomSanitizersMap
+import typings.expressValidator.srcExpressValidatorMod.CustomValidatorsMap
+import typings.expressValidator.srcMiddlewaresExactMod.CheckExactInput
+import typings.expressValidator.srcMiddlewaresExactMod.CheckExactOptions
+import typings.expressValidator.srcMiddlewaresOneOfMod.OneOfOptions
+import typings.expressValidator.srcMiddlewaresSchemaMod.RunnableValidationChains
 import typings.expressValidator.srcMiddlewaresSchemaMod.Schema
 import typings.expressValidator.srcValidationResultMod.ErrorFormatter
 import typings.expressValidator.srcValidationResultMod.ResultFactory
@@ -25,6 +31,19 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
+  @JSImport("express-validator", "ExpressValidator")
+  @js.native
+  open class ExpressValidator[V /* <: CustomValidatorsMap */, S /* <: CustomSanitizersMap */, E] ()
+    extends typings.expressValidator.srcExpressValidatorMod.ExpressValidator[V, S, E] {
+    def this(validators: V) = this()
+    def this(validators: V, sanitizers: S) = this()
+    def this(validators: Unit, sanitizers: S) = this()
+    def this(validators: V, sanitizers: S, options: CustomOptions[E]) = this()
+    def this(validators: V, sanitizers: Unit, options: CustomOptions[E]) = this()
+    def this(validators: Unit, sanitizers: S, options: CustomOptions[E]) = this()
+    def this(validators: Unit, sanitizers: Unit, options: CustomOptions[E]) = this()
+  }
+  
   @JSImport("express-validator", "Result")
   @js.native
   open class Result[T] protected ()
@@ -34,87 +53,87 @@ object mod {
   
   inline def body(): ValidationChain = ^.asInstanceOf[js.Dynamic].applyDynamic("body")().asInstanceOf[ValidationChain]
   inline def body(fields: String): ValidationChain = ^.asInstanceOf[js.Dynamic].applyDynamic("body")(fields.asInstanceOf[js.Any]).asInstanceOf[ValidationChain]
-  inline def body(fields: String, message: Any): ValidationChain = (^.asInstanceOf[js.Dynamic].applyDynamic("body")(fields.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[ValidationChain]
+  inline def body(fields: String, message: ErrorMessage): ValidationChain = (^.asInstanceOf[js.Dynamic].applyDynamic("body")(fields.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[ValidationChain]
+  inline def body(fields: String, message: FieldMessageFactory): ValidationChain = (^.asInstanceOf[js.Dynamic].applyDynamic("body")(fields.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[ValidationChain]
   inline def body(fields: js.Array[String]): ValidationChain = ^.asInstanceOf[js.Dynamic].applyDynamic("body")(fields.asInstanceOf[js.Any]).asInstanceOf[ValidationChain]
-  inline def body(fields: js.Array[String], message: Any): ValidationChain = (^.asInstanceOf[js.Dynamic].applyDynamic("body")(fields.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[ValidationChain]
-  inline def body(fields: Unit, message: Any): ValidationChain = (^.asInstanceOf[js.Dynamic].applyDynamic("body")(fields.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[ValidationChain]
+  inline def body(fields: js.Array[String], message: ErrorMessage): ValidationChain = (^.asInstanceOf[js.Dynamic].applyDynamic("body")(fields.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[ValidationChain]
+  inline def body(fields: js.Array[String], message: FieldMessageFactory): ValidationChain = (^.asInstanceOf[js.Dynamic].applyDynamic("body")(fields.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[ValidationChain]
+  inline def body(fields: Unit, message: ErrorMessage): ValidationChain = (^.asInstanceOf[js.Dynamic].applyDynamic("body")(fields.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[ValidationChain]
+  inline def body(fields: Unit, message: FieldMessageFactory): ValidationChain = (^.asInstanceOf[js.Dynamic].applyDynamic("body")(fields.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[ValidationChain]
   
   inline def buildCheckFunction(locations: js.Array[Location]): js.Function2[
     /* fields */ js.UndefOr[String | js.Array[String]], 
-    /* message */ js.UndefOr[Any], 
+    /* message */ js.UndefOr[FieldMessageFactory | ErrorMessage], 
     ValidationChain
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("buildCheckFunction")(locations.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
     /* fields */ js.UndefOr[String | js.Array[String]], 
-    /* message */ js.UndefOr[Any], 
+    /* message */ js.UndefOr[FieldMessageFactory | ErrorMessage], 
     ValidationChain
   ]]
   
-  inline def buildSanitizeFunction(locations: js.Array[Location]): js.Function1[/* fields */ js.UndefOr[String | js.Array[String]], SanitizationChain] = ^.asInstanceOf[js.Dynamic].applyDynamic("buildSanitizeFunction")(locations.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fields */ js.UndefOr[String | js.Array[String]], SanitizationChain]]
-  
   inline def check(): ValidationChain = ^.asInstanceOf[js.Dynamic].applyDynamic("check")().asInstanceOf[ValidationChain]
   inline def check(fields: String): ValidationChain = ^.asInstanceOf[js.Dynamic].applyDynamic("check")(fields.asInstanceOf[js.Any]).asInstanceOf[ValidationChain]
-  inline def check(fields: String, message: Any): ValidationChain = (^.asInstanceOf[js.Dynamic].applyDynamic("check")(fields.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[ValidationChain]
+  inline def check(fields: String, message: ErrorMessage): ValidationChain = (^.asInstanceOf[js.Dynamic].applyDynamic("check")(fields.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[ValidationChain]
+  inline def check(fields: String, message: FieldMessageFactory): ValidationChain = (^.asInstanceOf[js.Dynamic].applyDynamic("check")(fields.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[ValidationChain]
   inline def check(fields: js.Array[String]): ValidationChain = ^.asInstanceOf[js.Dynamic].applyDynamic("check")(fields.asInstanceOf[js.Any]).asInstanceOf[ValidationChain]
-  inline def check(fields: js.Array[String], message: Any): ValidationChain = (^.asInstanceOf[js.Dynamic].applyDynamic("check")(fields.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[ValidationChain]
-  inline def check(fields: Unit, message: Any): ValidationChain = (^.asInstanceOf[js.Dynamic].applyDynamic("check")(fields.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[ValidationChain]
+  inline def check(fields: js.Array[String], message: ErrorMessage): ValidationChain = (^.asInstanceOf[js.Dynamic].applyDynamic("check")(fields.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[ValidationChain]
+  inline def check(fields: js.Array[String], message: FieldMessageFactory): ValidationChain = (^.asInstanceOf[js.Dynamic].applyDynamic("check")(fields.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[ValidationChain]
+  inline def check(fields: Unit, message: ErrorMessage): ValidationChain = (^.asInstanceOf[js.Dynamic].applyDynamic("check")(fields.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[ValidationChain]
+  inline def check(fields: Unit, message: FieldMessageFactory): ValidationChain = (^.asInstanceOf[js.Dynamic].applyDynamic("check")(fields.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[ValidationChain]
   
-  inline def checkSchema(schema: Schema): ArrayValidationChainrunre = ^.asInstanceOf[js.Dynamic].applyDynamic("checkSchema")(schema.asInstanceOf[js.Any]).asInstanceOf[ArrayValidationChainrunre]
-  inline def checkSchema(schema: Schema, defaultLocations: js.Array[Location]): ArrayValidationChainrunre = (^.asInstanceOf[js.Dynamic].applyDynamic("checkSchema")(schema.asInstanceOf[js.Any], defaultLocations.asInstanceOf[js.Any])).asInstanceOf[ArrayValidationChainrunre]
+  inline def checkExact(): Middleware & ContextRunner = ^.asInstanceOf[js.Dynamic].applyDynamic("checkExact")().asInstanceOf[Middleware & ContextRunner]
+  inline def checkExact(chains: Unit, opts: CheckExactOptions): Middleware & ContextRunner = (^.asInstanceOf[js.Dynamic].applyDynamic("checkExact")(chains.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Middleware & ContextRunner]
+  inline def checkExact(chains: CheckExactInput): Middleware & ContextRunner = ^.asInstanceOf[js.Dynamic].applyDynamic("checkExact")(chains.asInstanceOf[js.Any]).asInstanceOf[Middleware & ContextRunner]
+  inline def checkExact(chains: CheckExactInput, opts: CheckExactOptions): Middleware & ContextRunner = (^.asInstanceOf[js.Dynamic].applyDynamic("checkExact")(chains.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Middleware & ContextRunner]
+  
+  inline def checkSchema[T /* <: String */](schema: Schema[T]): RunnableValidationChains[ValidationChain] = ^.asInstanceOf[js.Dynamic].applyDynamic("checkSchema")(schema.asInstanceOf[js.Any]).asInstanceOf[RunnableValidationChains[ValidationChain]]
+  inline def checkSchema[T /* <: String */](schema: Schema[T], defaultLocations: js.Array[Location]): RunnableValidationChains[ValidationChain] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkSchema")(schema.asInstanceOf[js.Any], defaultLocations.asInstanceOf[js.Any])).asInstanceOf[RunnableValidationChains[ValidationChain]]
   
   inline def cookie(): ValidationChain = ^.asInstanceOf[js.Dynamic].applyDynamic("cookie")().asInstanceOf[ValidationChain]
   inline def cookie(fields: String): ValidationChain = ^.asInstanceOf[js.Dynamic].applyDynamic("cookie")(fields.asInstanceOf[js.Any]).asInstanceOf[ValidationChain]
-  inline def cookie(fields: String, message: Any): ValidationChain = (^.asInstanceOf[js.Dynamic].applyDynamic("cookie")(fields.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[ValidationChain]
+  inline def cookie(fields: String, message: ErrorMessage): ValidationChain = (^.asInstanceOf[js.Dynamic].applyDynamic("cookie")(fields.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[ValidationChain]
+  inline def cookie(fields: String, message: FieldMessageFactory): ValidationChain = (^.asInstanceOf[js.Dynamic].applyDynamic("cookie")(fields.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[ValidationChain]
   inline def cookie(fields: js.Array[String]): ValidationChain = ^.asInstanceOf[js.Dynamic].applyDynamic("cookie")(fields.asInstanceOf[js.Any]).asInstanceOf[ValidationChain]
-  inline def cookie(fields: js.Array[String], message: Any): ValidationChain = (^.asInstanceOf[js.Dynamic].applyDynamic("cookie")(fields.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[ValidationChain]
-  inline def cookie(fields: Unit, message: Any): ValidationChain = (^.asInstanceOf[js.Dynamic].applyDynamic("cookie")(fields.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[ValidationChain]
+  inline def cookie(fields: js.Array[String], message: ErrorMessage): ValidationChain = (^.asInstanceOf[js.Dynamic].applyDynamic("cookie")(fields.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[ValidationChain]
+  inline def cookie(fields: js.Array[String], message: FieldMessageFactory): ValidationChain = (^.asInstanceOf[js.Dynamic].applyDynamic("cookie")(fields.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[ValidationChain]
+  inline def cookie(fields: Unit, message: ErrorMessage): ValidationChain = (^.asInstanceOf[js.Dynamic].applyDynamic("cookie")(fields.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[ValidationChain]
+  inline def cookie(fields: Unit, message: FieldMessageFactory): ValidationChain = (^.asInstanceOf[js.Dynamic].applyDynamic("cookie")(fields.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[ValidationChain]
   
   inline def header(): ValidationChain = ^.asInstanceOf[js.Dynamic].applyDynamic("header")().asInstanceOf[ValidationChain]
   inline def header(fields: String): ValidationChain = ^.asInstanceOf[js.Dynamic].applyDynamic("header")(fields.asInstanceOf[js.Any]).asInstanceOf[ValidationChain]
-  inline def header(fields: String, message: Any): ValidationChain = (^.asInstanceOf[js.Dynamic].applyDynamic("header")(fields.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[ValidationChain]
+  inline def header(fields: String, message: ErrorMessage): ValidationChain = (^.asInstanceOf[js.Dynamic].applyDynamic("header")(fields.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[ValidationChain]
+  inline def header(fields: String, message: FieldMessageFactory): ValidationChain = (^.asInstanceOf[js.Dynamic].applyDynamic("header")(fields.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[ValidationChain]
   inline def header(fields: js.Array[String]): ValidationChain = ^.asInstanceOf[js.Dynamic].applyDynamic("header")(fields.asInstanceOf[js.Any]).asInstanceOf[ValidationChain]
-  inline def header(fields: js.Array[String], message: Any): ValidationChain = (^.asInstanceOf[js.Dynamic].applyDynamic("header")(fields.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[ValidationChain]
-  inline def header(fields: Unit, message: Any): ValidationChain = (^.asInstanceOf[js.Dynamic].applyDynamic("header")(fields.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[ValidationChain]
+  inline def header(fields: js.Array[String], message: ErrorMessage): ValidationChain = (^.asInstanceOf[js.Dynamic].applyDynamic("header")(fields.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[ValidationChain]
+  inline def header(fields: js.Array[String], message: FieldMessageFactory): ValidationChain = (^.asInstanceOf[js.Dynamic].applyDynamic("header")(fields.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[ValidationChain]
+  inline def header(fields: Unit, message: ErrorMessage): ValidationChain = (^.asInstanceOf[js.Dynamic].applyDynamic("header")(fields.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[ValidationChain]
+  inline def header(fields: Unit, message: FieldMessageFactory): ValidationChain = (^.asInstanceOf[js.Dynamic].applyDynamic("header")(fields.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[ValidationChain]
   
   inline def matchedData(req: Request): Record[String, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("matchedData")(req.asInstanceOf[js.Any]).asInstanceOf[Record[String, Any]]
   inline def matchedData(req: Request, options: PartialMatchedDataOptions): Record[String, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("matchedData")(req.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Record[String, Any]]
   
-  inline def oneOf(chains: js.Array[js.Array[ValidationChain] | ValidationChain]): Middleware & Run = ^.asInstanceOf[js.Dynamic].applyDynamic("oneOf")(chains.asInstanceOf[js.Any]).asInstanceOf[Middleware & Run]
-  inline def oneOf(chains: js.Array[ValidationChain | js.Array[ValidationChain]], message: Any): Middleware & Run = (^.asInstanceOf[js.Dynamic].applyDynamic("oneOf")(chains.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Middleware & Run]
-  inline def oneOf(chains: js.Array[ValidationChain | js.Array[ValidationChain]], message: OneOfCustomMessageBuilder): Middleware & Run = (^.asInstanceOf[js.Dynamic].applyDynamic("oneOf")(chains.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Middleware & Run]
+  inline def oneOf(chains: js.Array[ValidationChain | js.Array[ValidationChain]]): Middleware & ContextRunner = ^.asInstanceOf[js.Dynamic].applyDynamic("oneOf")(chains.asInstanceOf[js.Any]).asInstanceOf[Middleware & ContextRunner]
+  inline def oneOf(chains: js.Array[ValidationChain | js.Array[ValidationChain]], options: OneOfOptions): Middleware & ContextRunner = (^.asInstanceOf[js.Dynamic].applyDynamic("oneOf")(chains.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Middleware & ContextRunner]
   
   inline def param(): ValidationChain = ^.asInstanceOf[js.Dynamic].applyDynamic("param")().asInstanceOf[ValidationChain]
   inline def param(fields: String): ValidationChain = ^.asInstanceOf[js.Dynamic].applyDynamic("param")(fields.asInstanceOf[js.Any]).asInstanceOf[ValidationChain]
-  inline def param(fields: String, message: Any): ValidationChain = (^.asInstanceOf[js.Dynamic].applyDynamic("param")(fields.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[ValidationChain]
+  inline def param(fields: String, message: ErrorMessage): ValidationChain = (^.asInstanceOf[js.Dynamic].applyDynamic("param")(fields.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[ValidationChain]
+  inline def param(fields: String, message: FieldMessageFactory): ValidationChain = (^.asInstanceOf[js.Dynamic].applyDynamic("param")(fields.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[ValidationChain]
   inline def param(fields: js.Array[String]): ValidationChain = ^.asInstanceOf[js.Dynamic].applyDynamic("param")(fields.asInstanceOf[js.Any]).asInstanceOf[ValidationChain]
-  inline def param(fields: js.Array[String], message: Any): ValidationChain = (^.asInstanceOf[js.Dynamic].applyDynamic("param")(fields.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[ValidationChain]
-  inline def param(fields: Unit, message: Any): ValidationChain = (^.asInstanceOf[js.Dynamic].applyDynamic("param")(fields.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[ValidationChain]
+  inline def param(fields: js.Array[String], message: ErrorMessage): ValidationChain = (^.asInstanceOf[js.Dynamic].applyDynamic("param")(fields.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[ValidationChain]
+  inline def param(fields: js.Array[String], message: FieldMessageFactory): ValidationChain = (^.asInstanceOf[js.Dynamic].applyDynamic("param")(fields.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[ValidationChain]
+  inline def param(fields: Unit, message: ErrorMessage): ValidationChain = (^.asInstanceOf[js.Dynamic].applyDynamic("param")(fields.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[ValidationChain]
+  inline def param(fields: Unit, message: FieldMessageFactory): ValidationChain = (^.asInstanceOf[js.Dynamic].applyDynamic("param")(fields.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[ValidationChain]
   
   inline def query(): ValidationChain = ^.asInstanceOf[js.Dynamic].applyDynamic("query")().asInstanceOf[ValidationChain]
   inline def query(fields: String): ValidationChain = ^.asInstanceOf[js.Dynamic].applyDynamic("query")(fields.asInstanceOf[js.Any]).asInstanceOf[ValidationChain]
-  inline def query(fields: String, message: Any): ValidationChain = (^.asInstanceOf[js.Dynamic].applyDynamic("query")(fields.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[ValidationChain]
+  inline def query(fields: String, message: ErrorMessage): ValidationChain = (^.asInstanceOf[js.Dynamic].applyDynamic("query")(fields.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[ValidationChain]
+  inline def query(fields: String, message: FieldMessageFactory): ValidationChain = (^.asInstanceOf[js.Dynamic].applyDynamic("query")(fields.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[ValidationChain]
   inline def query(fields: js.Array[String]): ValidationChain = ^.asInstanceOf[js.Dynamic].applyDynamic("query")(fields.asInstanceOf[js.Any]).asInstanceOf[ValidationChain]
-  inline def query(fields: js.Array[String], message: Any): ValidationChain = (^.asInstanceOf[js.Dynamic].applyDynamic("query")(fields.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[ValidationChain]
-  inline def query(fields: Unit, message: Any): ValidationChain = (^.asInstanceOf[js.Dynamic].applyDynamic("query")(fields.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[ValidationChain]
-  
-  inline def sanitize(): SanitizationChain = ^.asInstanceOf[js.Dynamic].applyDynamic("sanitize")().asInstanceOf[SanitizationChain]
-  inline def sanitize(fields: String): SanitizationChain = ^.asInstanceOf[js.Dynamic].applyDynamic("sanitize")(fields.asInstanceOf[js.Any]).asInstanceOf[SanitizationChain]
-  inline def sanitize(fields: js.Array[String]): SanitizationChain = ^.asInstanceOf[js.Dynamic].applyDynamic("sanitize")(fields.asInstanceOf[js.Any]).asInstanceOf[SanitizationChain]
-  
-  inline def sanitizeBody(): SanitizationChain = ^.asInstanceOf[js.Dynamic].applyDynamic("sanitizeBody")().asInstanceOf[SanitizationChain]
-  inline def sanitizeBody(fields: String): SanitizationChain = ^.asInstanceOf[js.Dynamic].applyDynamic("sanitizeBody")(fields.asInstanceOf[js.Any]).asInstanceOf[SanitizationChain]
-  inline def sanitizeBody(fields: js.Array[String]): SanitizationChain = ^.asInstanceOf[js.Dynamic].applyDynamic("sanitizeBody")(fields.asInstanceOf[js.Any]).asInstanceOf[SanitizationChain]
-  
-  inline def sanitizeCookie(): SanitizationChain = ^.asInstanceOf[js.Dynamic].applyDynamic("sanitizeCookie")().asInstanceOf[SanitizationChain]
-  inline def sanitizeCookie(fields: String): SanitizationChain = ^.asInstanceOf[js.Dynamic].applyDynamic("sanitizeCookie")(fields.asInstanceOf[js.Any]).asInstanceOf[SanitizationChain]
-  inline def sanitizeCookie(fields: js.Array[String]): SanitizationChain = ^.asInstanceOf[js.Dynamic].applyDynamic("sanitizeCookie")(fields.asInstanceOf[js.Any]).asInstanceOf[SanitizationChain]
-  
-  inline def sanitizeParam(): SanitizationChain = ^.asInstanceOf[js.Dynamic].applyDynamic("sanitizeParam")().asInstanceOf[SanitizationChain]
-  inline def sanitizeParam(fields: String): SanitizationChain = ^.asInstanceOf[js.Dynamic].applyDynamic("sanitizeParam")(fields.asInstanceOf[js.Any]).asInstanceOf[SanitizationChain]
-  inline def sanitizeParam(fields: js.Array[String]): SanitizationChain = ^.asInstanceOf[js.Dynamic].applyDynamic("sanitizeParam")(fields.asInstanceOf[js.Any]).asInstanceOf[SanitizationChain]
-  
-  inline def sanitizeQuery(): SanitizationChain = ^.asInstanceOf[js.Dynamic].applyDynamic("sanitizeQuery")().asInstanceOf[SanitizationChain]
-  inline def sanitizeQuery(fields: String): SanitizationChain = ^.asInstanceOf[js.Dynamic].applyDynamic("sanitizeQuery")(fields.asInstanceOf[js.Any]).asInstanceOf[SanitizationChain]
-  inline def sanitizeQuery(fields: js.Array[String]): SanitizationChain = ^.asInstanceOf[js.Dynamic].applyDynamic("sanitizeQuery")(fields.asInstanceOf[js.Any]).asInstanceOf[SanitizationChain]
+  inline def query(fields: js.Array[String], message: ErrorMessage): ValidationChain = (^.asInstanceOf[js.Dynamic].applyDynamic("query")(fields.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[ValidationChain]
+  inline def query(fields: js.Array[String], message: FieldMessageFactory): ValidationChain = (^.asInstanceOf[js.Dynamic].applyDynamic("query")(fields.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[ValidationChain]
+  inline def query(fields: Unit, message: ErrorMessage): ValidationChain = (^.asInstanceOf[js.Dynamic].applyDynamic("query")(fields.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[ValidationChain]
+  inline def query(fields: Unit, message: FieldMessageFactory): ValidationChain = (^.asInstanceOf[js.Dynamic].applyDynamic("query")(fields.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[ValidationChain]
   
   @JSImport("express-validator", "validationResult")
   @js.native

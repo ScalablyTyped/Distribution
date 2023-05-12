@@ -1,5 +1,6 @@
 package typings.primereact
 
+import typings.primereact.primereactStrings._empty
 import typings.primereact.primereactStrings.`additions removals`
 import typings.primereact.primereactStrings.`additions text`
 import typings.primereact.primereactStrings.`inline`
@@ -7,8 +8,10 @@ import typings.primereact.primereactStrings.`removals additions`
 import typings.primereact.primereactStrings.`removals text`
 import typings.primereact.primereactStrings.`text additions`
 import typings.primereact.primereactStrings.`text removals`
+import typings.primereact.primereactStrings.`use-credentials`
 import typings.primereact.primereactStrings.additions
 import typings.primereact.primereactStrings.all
+import typings.primereact.primereactStrings.anonymous
 import typings.primereact.primereactStrings.ascending
 import typings.primereact.primereactStrings.assertive
 import typings.primereact.primereactStrings.both
@@ -61,6 +64,8 @@ import typings.primereact.primereactStrings.vertical
 import typings.primereact.primereactStrings.yes
 import typings.primereact.selectitemSelectitemMod.SelectItem
 import typings.primereact.selectitemSelectitemMod.SelectItemOptionsType
+import typings.primereact.utilsUtilsMod.IconOptions
+import typings.primereact.utilsUtilsMod.IconType
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
@@ -102,6 +107,7 @@ import typings.react.mod.WheelEvent
 import typings.react.mod.WheelEventHandler
 import typings.std.Element
 import typings.std.Event
+import typings.std.FormData
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import typings.std.HTMLInputElement
@@ -118,36 +124,66 @@ object cascadeselectCascadeselectMod {
     def this(props: CascadeSelectProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: CascadeSelectProps, context: Any) = this()
     
+    /**
+      * Used to focus the component.
+      */
+    def focus(): Unit = js.native
+    
+    /**
+      * Used to get container element.
+      * @return {HTMLDivElement} Container element
+      */
     def getElement(): HTMLDivElement = js.native
     
+    /**
+      * Used to get input element.
+      * @return {HTMLInputElement} Input element
+      */
     def getInput(): HTMLInputElement = js.native
     
+    /**
+      * Used to get label element.
+      * @return {HTMLSpanElement} Label element
+      */
     def getLabel(): HTMLSpanElement = js.native
     
+    /**
+      * Used to get overlay element.
+      * @return {HTMLElement} Overlay element
+      */
     def getOverlay(): HTMLElement = js.native
   }
   
-  type CascadeSelectAppendToType = js.UndefOr[self | HTMLElement | Null]
-  
-  trait CascadeSelectChangeParams extends StObject {
+  /**
+    * Custom change event
+    * @see {@link CascadeSelectProps.onChange}
+    * @event
+    */
+  trait CascadeSelectChangeEvent extends StObject {
     
+    /**
+      * Browser event
+      */
     var originalEvent: SyntheticEvent[Element, Event]
     
+    /**
+      * New value
+      */
     var value: Any
   }
-  object CascadeSelectChangeParams {
+  object CascadeSelectChangeEvent {
     
-    inline def apply(originalEvent: SyntheticEvent[Element, Event], value: Any): CascadeSelectChangeParams = {
+    inline def apply(originalEvent: SyntheticEvent[Element, Event], value: Any): CascadeSelectChangeEvent = {
       val __obj = js.Dynamic.literal(originalEvent = originalEvent.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.asInstanceOf[CascadeSelectChangeParams]
+      __obj.asInstanceOf[CascadeSelectChangeEvent]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: CascadeSelectChangeParams] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: CascadeSelectChangeEvent] (val x: Self) extends AnyVal {
       
       inline def setOriginalEvent(value: SyntheticEvent[Element, Event]): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
@@ -155,9 +191,13 @@ object cascadeselectCascadeselectMod {
     }
   }
   
-  type CascadeSelectGroupChangeParams = CascadeSelectChangeParams
-  
-  type CascadeSelectItemTemplateType = ReactNode | (js.Function1[/* option */ Any, ReactNode])
+  /**
+    * Custom group change event.
+    * @see {@link CascadeSelectProps.onGroupChange}
+    * @extends {CascadeSelectChangeEvent}
+    * @event
+    */
+  type CascadeSelectGroupChangeEvent = CascadeSelectChangeEvent
   
   /* Inlined parent std.Omit<react.react.DetailedHTMLProps<react.react.InputHTMLAttributes<std.HTMLDivElement>, std.HTMLDivElement>, 'onChange' | 'ref'> */
   trait CascadeSelectProps extends StObject {
@@ -170,7 +210,11 @@ object cascadeselectCascadeselectMod {
     
     var alt: js.UndefOr[String] = js.undefined
     
-    var appendTo: js.UndefOr[CascadeSelectAppendToType] = js.undefined
+    /**
+      * DOM element instance where the overlay panel should be mounted. Valid values are any DOM Element and "self". The "self" value is used to render a component where it is located.
+      * @defaultValue document.body
+      */
+    var appendTo: js.UndefOr[self | HTMLElement | Null] = js.undefined
     
     var `aria-activedescendant`: js.UndefOr[String] = js.undefined
     
@@ -270,6 +314,9 @@ object cascadeselectCascadeselectMod {
     
     var `aria-valuetext`: js.UndefOr[String] = js.undefined
     
+    /**
+      * Establishes relationships between the component and label(s) where its value should be one or more element IDs.
+      */
     var ariaLabelledBy: js.UndefOr[String] = js.undefined
     
     var autoCapitalize: js.UndefOr[String] = js.undefined
@@ -282,24 +329,41 @@ object cascadeselectCascadeselectMod {
     
     var autoSave: js.UndefOr[String] = js.undefined
     
+    /**
+      * The breakpoint to define the maximum width boundary when responsiveness is enabled.
+      */
+    var breakpoint: js.UndefOr[String] = js.undefined
+    
     var capture: js.UndefOr[Boolean | user | environment] = js.undefined
     
     var checked: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Used to get the child elements of the component.
+      * @readonly
+      */
     var children: js.UndefOr[ReactNode] = js.undefined
     
+    /**
+      * Style class of the component.
+      */
     var className: js.UndefOr[String] = js.undefined
     
     var color: js.UndefOr[String] = js.undefined
+    
+    var content: js.UndefOr[String] = js.undefined
     
     var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
     var contextMenu: js.UndefOr[String] = js.undefined
     
-    var crossOrigin: js.UndefOr[String] = js.undefined
+    var crossOrigin: js.UndefOr[anonymous | `use-credentials` | _empty] = js.undefined
     
     var dangerouslySetInnerHTML: js.UndefOr[Html] = js.undefined
     
+    /**
+      * A property to uniquely identify an option.
+      */
     var dataKey: js.UndefOr[String] = js.undefined
     
     var datatype: js.UndefOr[String] = js.undefined
@@ -310,17 +374,24 @@ object cascadeselectCascadeselectMod {
     
     var dir: js.UndefOr[String] = js.undefined
     
+    /**
+      * When present, it specifies that the component should be disabled.
+      * @defaultValue false
+      */
     var disabled: js.UndefOr[Boolean] = js.undefined
     
     var draggable: js.UndefOr[Booleanish] = js.undefined
     
-    var dropdownIcon: js.UndefOr[String] = js.undefined
+    /**
+      * Icon of the dropdown icon.
+      */
+    var dropdownIcon: js.UndefOr[IconType[CascadeSelectProps]] = js.undefined
     
     var enterKeyHint: js.UndefOr[enter | done | go | next | previous | search | send] = js.undefined
     
     var form: js.UndefOr[String] = js.undefined
     
-    var formAction: js.UndefOr[String] = js.undefined
+    var formAction: js.UndefOr[String | (js.Function1[/* formData */ FormData, Unit])] = js.undefined
     
     var formEncType: js.UndefOr[String] = js.undefined
     
@@ -334,14 +405,23 @@ object cascadeselectCascadeselectMod {
     
     var hidden: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Unique identifier of the element.
+      */
     var id: js.UndefOr[String] = js.undefined
     
     var inlist: js.UndefOr[Any] = js.undefined
     
+    /**
+      * Identifier of the underlying input element.
+      */
     var inputId: js.UndefOr[String] = js.undefined
     
     var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
     
+    /**
+      * Reference of the input element.
+      */
     var inputRef: js.UndefOr[Ref[HTMLInputElement]] = js.undefined
     
     var is: js.UndefOr[String] = js.undefined
@@ -354,7 +434,10 @@ object cascadeselectCascadeselectMod {
     
     var itemScope: js.UndefOr[Boolean] = js.undefined
     
-    var itemTemplate: js.UndefOr[CascadeSelectItemTemplateType] = js.undefined
+    /**
+      * The template of items.
+      */
+    var itemTemplate: js.UndefOr[ReactNode | (js.Function1[/* option */ Any, ReactNode])] = js.undefined
     
     var itemType: js.UndefOr[String] = js.undefined
     
@@ -374,6 +457,9 @@ object cascadeselectCascadeselectMod {
     
     var multiple: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Name of the input element.
+      */
     var name: js.UndefOr[String] = js.undefined
     
     var nonce: js.UndefOr[String] = js.undefined
@@ -388,10 +474,16 @@ object cascadeselectCascadeselectMod {
     
     var onAuxClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
+    /**
+      * Callback to invoke before the overlay is hidden.
+      */
     var onBeforeHide: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     var onBeforeInput: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
     
+    /**
+      * Callback to invoke before the overlay is shown.
+      */
     var onBeforeShow: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     var onBlur: js.UndefOr[FocusEventHandler[HTMLDivElement]] = js.undefined
@@ -400,7 +492,11 @@ object cascadeselectCascadeselectMod {
     
     var onCanPlayThrough: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* e */ CascadeSelectChangeParams, Unit]] = js.undefined
+    /**
+      * Callback to invoke on value change
+      * @param {CascadeSelectChangeEvent} event - Custom change event
+      */
+    var onChange: js.UndefOr[js.Function1[/* event */ CascadeSelectChangeEvent, Unit]] = js.undefined
     
     var onClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
@@ -446,8 +542,15 @@ object cascadeselectCascadeselectMod {
     
     var onFocus: js.UndefOr[FocusEventHandler[HTMLDivElement]] = js.undefined
     
-    var onGroupChange: js.UndefOr[js.Function1[/* e */ CascadeSelectGroupChangeParams, Unit]] = js.undefined
+    /**
+      * Callback to invoke when a group changes.
+      * @param {CascadeSelectGroupChangeEvent} event - Custom group change event
+      */
+    var onGroupChange: js.UndefOr[js.Function1[/* event */ CascadeSelectGroupChangeEvent, Unit]] = js.undefined
     
+    /**
+      * Callback to invoke when the overlay is hidden.
+      */
     var onHide: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     var onInput: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
@@ -522,6 +625,9 @@ object cascadeselectCascadeselectMod {
     
     var onSelect: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
+    /**
+      * Callback to invoke when the overlay is shown.
+      */
     var onShow: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     var onStalled: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
@@ -548,18 +654,41 @@ object cascadeselectCascadeselectMod {
     
     var onWheel: js.UndefOr[WheelEventHandler[HTMLDivElement]] = js.undefined
     
+    /**
+      * Property name or getter function to retrieve the items of a group.
+      */
     var optionGroupChildren: js.UndefOr[js.Array[String]] = js.undefined
     
+    /**
+      * Icon of the option group.
+      */
+    var optionGroupIcon: js.UndefOr[IconType[CascadeSelectProps]] = js.undefined
+    
+    /**
+      * Property name or getter function to use as the label of an option group.
+      */
     var optionGroupLabel: js.UndefOr[String] = js.undefined
     
+    /**
+      * Property name or getter function to use as the label of an option.
+      */
     var optionLabel: js.UndefOr[String] = js.undefined
     
+    /**
+      * Property name or getter function to use as the value of an option, defaults to the option itself when not defined.
+      */
     var optionValue: js.UndefOr[String] = js.undefined
     
+    /**
+      * An array of selectitems to display as the available options.
+      */
     var options: js.UndefOr[SelectItemOptionsType] = js.undefined
     
     var pattern: js.UndefOr[String] = js.undefined
     
+    /**
+      * Default text to display when no option is selected.
+      */
     var placeholder: js.UndefOr[String] = js.undefined
     
     var prefix: js.UndefOr[String] = js.undefined
@@ -570,13 +699,23 @@ object cascadeselectCascadeselectMod {
     
     var readOnly: js.UndefOr[Boolean] = js.undefined
     
+    var rel: js.UndefOr[String] = js.undefined
+    
     var required: js.UndefOr[Boolean] = js.undefined
     
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
     
+    var rev: js.UndefOr[String] = js.undefined
+    
     var role: js.UndefOr[AriaRole] = js.undefined
+    
+    /**
+      * Maximum height of the options panel on responsive mode.
+      * @defaultValue 400px
+      */
+    var scrollHeight: js.UndefOr[String] = js.undefined
     
     var security: js.UndefOr[String] = js.undefined
     
@@ -590,16 +729,26 @@ object cascadeselectCascadeselectMod {
     
     var step: js.UndefOr[Double | String] = js.undefined
     
+    /**
+      * Inline style of the component.
+      */
     var style: js.UndefOr[CSSProperties] = js.undefined
     
     var suppressContentEditableWarning: js.UndefOr[Boolean] = js.undefined
     
     var suppressHydrationWarning: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Index of the element in tabbing order.
+      */
     var tabIndex: js.UndefOr[Double] = js.undefined
     
     var title: js.UndefOr[String] = js.undefined
     
+    /**
+      * The properties of CSSTransition can be customized, except for "nodeRef" and "in" properties.
+      * @type {CSSTransitionProps}
+      */
     var transitionOptions: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSSTransitionProps */ Any
       ] = js.undefined
@@ -612,6 +761,9 @@ object cascadeselectCascadeselectMod {
     
     var unselectable: js.UndefOr[on | off] = js.undefined
     
+    /**
+      * Value of the component.
+      */
     var value: js.UndefOr[Any] = js.undefined
     
     var vocab: js.UndefOr[String] = js.undefined
@@ -644,7 +796,7 @@ object cascadeselectCascadeselectMod {
       
       inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
       
-      inline def setAppendTo(value: CascadeSelectAppendToType): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
+      inline def setAppendTo(value: self | HTMLElement): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
       
       inline def setAppendToNull: Self = StObject.set(x, "appendTo", null)
       
@@ -868,6 +1020,10 @@ object cascadeselectCascadeselectMod {
       
       inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
       
+      inline def setBreakpoint(value: String): Self = StObject.set(x, "breakpoint", value.asInstanceOf[js.Any])
+      
+      inline def setBreakpointUndefined: Self = StObject.set(x, "breakpoint", js.undefined)
+      
       inline def setCapture(value: Boolean | user | environment): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
       
       inline def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
@@ -888,15 +1044,19 @@ object cascadeselectCascadeselectMod {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
       inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
       inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
       inline def setContextMenuUndefined: Self = StObject.set(x, "contextMenu", js.undefined)
       
-      inline def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+      inline def setCrossOrigin(value: anonymous | `use-credentials` | _empty): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
       
       inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
       
@@ -934,7 +1094,9 @@ object cascadeselectCascadeselectMod {
       
       inline def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
       
-      inline def setDropdownIcon(value: String): Self = StObject.set(x, "dropdownIcon", value.asInstanceOf[js.Any])
+      inline def setDropdownIcon(value: IconType[CascadeSelectProps]): Self = StObject.set(x, "dropdownIcon", value.asInstanceOf[js.Any])
+      
+      inline def setDropdownIconFunction1(value: /* options */ IconOptions[CascadeSelectProps] => ReactNode): Self = StObject.set(x, "dropdownIcon", js.Any.fromFunction1(value))
       
       inline def setDropdownIconUndefined: Self = StObject.set(x, "dropdownIcon", js.undefined)
       
@@ -944,7 +1106,9 @@ object cascadeselectCascadeselectMod {
       
       inline def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
       
-      inline def setFormAction(value: String): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+      inline def setFormAction(value: String | (js.Function1[/* formData */ FormData, Unit])): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+      
+      inline def setFormActionFunction1(value: /* formData */ FormData => Unit): Self = StObject.set(x, "formAction", js.Any.fromFunction1(value))
       
       inline def setFormActionUndefined: Self = StObject.set(x, "formAction", js.undefined)
       
@@ -1018,7 +1182,7 @@ object cascadeselectCascadeselectMod {
       
       inline def setItemScopeUndefined: Self = StObject.set(x, "itemScope", js.undefined)
       
-      inline def setItemTemplate(value: CascadeSelectItemTemplateType): Self = StObject.set(x, "itemTemplate", value.asInstanceOf[js.Any])
+      inline def setItemTemplate(value: ReactNode | (js.Function1[/* option */ Any, ReactNode])): Self = StObject.set(x, "itemTemplate", value.asInstanceOf[js.Any])
       
       inline def setItemTemplateFunction1(value: /* option */ Any => ReactNode): Self = StObject.set(x, "itemTemplate", js.Any.fromFunction1(value))
       
@@ -1114,7 +1278,7 @@ object cascadeselectCascadeselectMod {
       
       inline def setOnCanPlayUndefined: Self = StObject.set(x, "onCanPlay", js.undefined)
       
-      inline def setOnChange(value: /* e */ CascadeSelectChangeParams => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* event */ CascadeSelectChangeEvent => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
@@ -1206,7 +1370,7 @@ object cascadeselectCascadeselectMod {
       
       inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
-      inline def setOnGroupChange(value: /* e */ CascadeSelectGroupChangeParams => Unit): Self = StObject.set(x, "onGroupChange", js.Any.fromFunction1(value))
+      inline def setOnGroupChange(value: /* event */ CascadeSelectGroupChangeEvent => Unit): Self = StObject.set(x, "onGroupChange", js.Any.fromFunction1(value))
       
       inline def setOnGroupChangeUndefined: Self = StObject.set(x, "onGroupChange", js.undefined)
       
@@ -1416,6 +1580,12 @@ object cascadeselectCascadeselectMod {
       
       inline def setOptionGroupChildrenVarargs(value: String*): Self = StObject.set(x, "optionGroupChildren", js.Array(value*))
       
+      inline def setOptionGroupIcon(value: IconType[CascadeSelectProps]): Self = StObject.set(x, "optionGroupIcon", value.asInstanceOf[js.Any])
+      
+      inline def setOptionGroupIconFunction1(value: /* options */ IconOptions[CascadeSelectProps] => ReactNode): Self = StObject.set(x, "optionGroupIcon", js.Any.fromFunction1(value))
+      
+      inline def setOptionGroupIconUndefined: Self = StObject.set(x, "optionGroupIcon", js.undefined)
+      
       inline def setOptionGroupLabel(value: String): Self = StObject.set(x, "optionGroupLabel", value.asInstanceOf[js.Any])
       
       inline def setOptionGroupLabelUndefined: Self = StObject.set(x, "optionGroupLabel", js.undefined)
@@ -1458,6 +1628,10 @@ object cascadeselectCascadeselectMod {
       
       inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
       
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      
+      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+      
       inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
       
       inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
@@ -1470,9 +1644,17 @@ object cascadeselectCascadeselectMod {
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
       
+      inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+      
+      inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
+      
       inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
       inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+      
+      inline def setScrollHeight(value: String): Self = StObject.set(x, "scrollHeight", value.asInstanceOf[js.Any])
+      
+      inline def setScrollHeightUndefined: Self = StObject.set(x, "scrollHeight", js.undefined)
       
       inline def setSecurity(value: String): Self = StObject.set(x, "security", value.asInstanceOf[js.Any])
       

@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.AccentColor
+import typings.csstype.mod.Property.MaxHeight
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,8 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `338` extends StObject {
   
   var value: js.UndefOr[
-    AccentColor | (js.Array[
-      (Extract[js.UndefOr[AccentColor | js.Array[NonNullable[js.UndefOr[AccentColor]]]], String]) | NonNullable[js.UndefOr[AccentColor]]
+    (MaxHeight[Double | String]) | (js.Array[
+      (Extract[
+        js.UndefOr[
+          (MaxHeight[Double | String]) | (js.Array[NonNullable[js.UndefOr[MaxHeight[Double | String]]]])
+        ], 
+        String
+      ]) | (NonNullable[js.UndefOr[MaxHeight[Double | String]]])
     ])
   ] = js.native
 }

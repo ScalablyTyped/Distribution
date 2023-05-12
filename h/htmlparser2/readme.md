@@ -1,7 +1,7 @@
 
 # Scala.js typings for htmlparser2
 
-Typings are for version 8.0.1
+Typings are for version 9.0.0
 
 ## Library description:
 Fast & forgiving HTML/XML parser

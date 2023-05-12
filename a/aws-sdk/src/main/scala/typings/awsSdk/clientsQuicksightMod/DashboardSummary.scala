@@ -19,7 +19,7 @@ trait DashboardSummary extends StObject {
   /**
     * Dashboard ID.
     */
-  var DashboardId: js.UndefOr[RestrictiveResourceId] = js.undefined
+  var DashboardId: js.UndefOr[ShortRestrictiveResourceId] = js.undefined
   
   /**
     * The last time that this dashboard was published.
@@ -59,7 +59,7 @@ object DashboardSummary {
     
     inline def setCreatedTimeUndefined: Self = StObject.set(x, "CreatedTime", js.undefined)
     
-    inline def setDashboardId(value: RestrictiveResourceId): Self = StObject.set(x, "DashboardId", value.asInstanceOf[js.Any])
+    inline def setDashboardId(value: ShortRestrictiveResourceId): Self = StObject.set(x, "DashboardId", value.asInstanceOf[js.Any])
     
     inline def setDashboardIdUndefined: Self = StObject.set(x, "DashboardId", js.undefined)
     

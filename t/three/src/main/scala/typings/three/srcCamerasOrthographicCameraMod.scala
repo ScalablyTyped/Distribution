@@ -13,12 +13,14 @@ object srcCamerasOrthographicCameraMod {
   @js.native
   open class OrthographicCamera protected () extends Camera {
     /**
-      * @param left Camera frustum left plane.
-      * @param right Camera frustum right plane.
-      * @param top Camera frustum top plane.
-      * @param bottom Camera frustum bottom plane.
-      * @param [near=0.1] Camera frustum near plane.
-      * @param [far=2000] Camera frustum far plane.
+      * Creates a new {@link OrthographicCamera}.
+      * @remarks Together these define the camera's {@link https://en.wikipedia.org/wiki/Viewing_frustum | viewing frustum}.
+      * @param left Camera frustum left plane. Default `-1`.
+      * @param right Camera frustum right plane. Default `1`.
+      * @param top Camera frustum top plane. Default `1`.
+      * @param bottom Camera frustum bottom plane. Default `-1`.
+      * @param near Camera frustum near plane. Default `0.1`.
+      * @param far Camera frustum far plane. Default `2000`.
       */
     def this(
       left: js.UndefOr[Double],
@@ -31,38 +33,67 @@ object srcCamerasOrthographicCameraMod {
     
     /**
       * Camera frustum bottom plane.
-      * @default -1
+      * @remarks Expects a `Float`.
+      * @defaultValue `-1`
       */
     var bottom: Double = js.native
     
+    /**
+      * Removes any offset set by the {@link setViewOffset | .setViewOffset} method.
+      */
     def clearViewOffset(): Unit = js.native
     
     /**
       * Camera frustum far plane.
-      * @default 2000
+      * @remarks Must be greater than the current value of {@link near | .near} plane.
+      * @remarks Expects a `Float`
+      * @defaultValue `2000`
       */
     var far: Double = js.native
     
+    /**
+      * Read-only flag to check if a given object is of type {@link OrthographicCamera}.
+      * @remarks This is a _constant_ value
+      * @defaultValue `true`
+      */
     val isOrthographicCamera: `true` = js.native
     
     /**
       * Camera frustum left plane.
-      * @default -1
+      * @remarks Expects a `Float`
+      * @defaultValue `-1`
       */
     var left: Double = js.native
     
     /**
-      * Camera frustum near plane.
-      * @default 0.1
+      * Camera frustum near plane.`.
+      * @remarks The valid range is between `0` and the current value of the {@link far | .far} plane.
+      * @remarks Note that, unlike for the {@link THREE.PerspectiveCamera | PerspectiveCamera}, `0` is a valid value for an {@link THREE.OrthographicCamera | OrthographicCamera's} near plane.
+      * @remarks Expects a `Float`
+      * @defaultValue `0.1`
       */
     var near: Double = js.native
     
     /**
       * Camera frustum right plane.
-      * @default 1
+      * @remarks Expects a `Float`
+      * @defaultValue `1`
       */
     var right: Double = js.native
     
+    /**
+      * Sets an offset in a larger {@link https://en.wikipedia.org/wiki/Viewing_frustum | viewing frustum}
+      * @remarks
+      * This is useful for multi-window or multi-monitor/multi-machine setups
+      * For an example on how to use it see {@link PerspectiveCamera.setViewOffset | PerspectiveCamera}.
+      * @see {@link THREE.PerspectiveCamera.setViewOffset | PerspectiveCamera}.
+      * @param fullWidth Full width of multiview setup Expects a `Float`.
+      * @param fullHeight Full height of multiview setup Expects a `Float`.
+      * @param x Horizontal offset of subcamera Expects a `Float`.
+      * @param y Vertical offset of subcamera Expects a `Float`.
+      * @param width Width of subcamera Expects a `Float`.
+      * @param height Height of subcamera Expects a `Float`.
+      */
     def setViewOffset(
       fullWidth: Double,
       fullHeight: Double,
@@ -72,29 +103,35 @@ object srcCamerasOrthographicCameraMod {
       height: Double
     ): Unit = js.native
     
-    def toJSON(meta: Any): Any = js.native
-    
     /**
       * Camera frustum top plane.
-      * @default 1
+      * @remarks Expects a `Float`
+      * @defaultValue `1`
       */
     var top: Double = js.native
     
+    /**
+      * @override
+      * @defaultValue `OrthographicCamera`
+      */
     @JSName("type")
-    var type_OrthographicCamera: typings.three.threeStrings.OrthographicCamera = js.native
+    val type_OrthographicCamera: String | typings.three.threeStrings.OrthographicCamera = js.native
     
     /**
-      * Updates the camera projection matrix. Must be called after change of parameters.
+      * Updates the camera projection matrix
+      * @remarks Must be called after any change of parameters.
       */
     def updateProjectionMatrix(): Unit = js.native
     
     /**
-      * @default null
+      * Set by {@link setViewOffset | .setViewOffset()}.
+      * @defaultValue `null`
       */
     var view: Null | FullHeight = js.native
     
     /**
-      * @default 1
+      * Gets or sets the zoom factor of the camera.
+      * @defaultValue `1`
       */
     var zoom: Double = js.native
   }

@@ -12,8 +12,8 @@ trait EventsName extends StObject {
     */
   var active: js.UndefOr[Boolean] = js.undefined
   
-  /** @description Key/value pairs to provide settings for this webhook. [These are defined below](https://docs.github.com/rest/reference/repos#create-hook-config-params). */
-  var config: js.UndefOr[ContenttypeDigest] = js.undefined
+  /** @description Key/value pairs to provide settings for this webhook. [These are defined below](https://docs.github.com/rest/reference/orgs#update-hook-config-params). */
+  var config: js.UndefOr[InsecuresslSecretUrl] = js.undefined
   
   /**
     * @description Determines what [events](https://docs.github.com/webhooks/event-payloads) the hook is triggered for.
@@ -23,7 +23,7 @@ trait EventsName extends StObject {
     */
   var events: js.UndefOr[js.Array[String]] = js.undefined
   
-  /** @description Use `web` to create a webhook. Default: `web`. This parameter only accepts the value `web`. */
+  /** @example "web" */
   var name: js.UndefOr[String] = js.undefined
 }
 object EventsName {
@@ -40,7 +40,7 @@ object EventsName {
     
     inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
-    inline def setConfig(value: ContenttypeDigest): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: InsecuresslSecretUrl): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
     inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
     

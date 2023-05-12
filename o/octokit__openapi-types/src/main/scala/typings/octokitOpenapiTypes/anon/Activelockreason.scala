@@ -1,5 +1,6 @@
 package typings.octokitOpenapiTypes.anon
 
+import typings.octokitOpenapiTypes.mod.OneOf
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.COLLABORATOR
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.CONTRIBUTOR
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.FIRST_TIMER
@@ -56,6 +57,7 @@ trait Activelockreason extends StObject {
   /** Format: uri */
   var html_url: String
   
+  /** Format: int64 */
   var id: Double
   
   /**
@@ -65,13 +67,13 @@ trait Activelockreason extends StObject {
     *   "registration"
     * ]
     */
-  var labels: js.Array[String | ColorDefault]
+  var labels: js.Array[OneOf[js.Tuple2[String, Default]]]
   
   var labels_url: String
   
   var locked: Boolean
   
-  var milestone: Labelsurl | Null
+  var milestone: Closedissues | Null
   
   var node_id: String
   
@@ -136,7 +138,7 @@ object Activelockreason {
     events_url: String,
     html_url: String,
     id: Double,
-    labels: js.Array[String | ColorDefault],
+    labels: js.Array[OneOf[js.Tuple2[String, Default]]],
     labels_url: String,
     locked: Boolean,
     node_id: String,
@@ -216,15 +218,15 @@ object Activelockreason {
     
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    inline def setLabels(value: js.Array[String | ColorDefault]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: js.Array[OneOf[js.Tuple2[String, Default]]]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    inline def setLabelsVarargs(value: (String | ColorDefault)*): Self = StObject.set(x, "labels", js.Array(value*))
+    inline def setLabelsVarargs(value: (OneOf[js.Tuple2[String, Default]])*): Self = StObject.set(x, "labels", js.Array(value*))
     
     inline def setLabels_url(value: String): Self = StObject.set(x, "labels_url", value.asInstanceOf[js.Any])
     
     inline def setLocked(value: Boolean): Self = StObject.set(x, "locked", value.asInstanceOf[js.Any])
     
-    inline def setMilestone(value: Labelsurl): Self = StObject.set(x, "milestone", value.asInstanceOf[js.Any])
+    inline def setMilestone(value: Closedissues): Self = StObject.set(x, "milestone", value.asInstanceOf[js.Any])
     
     inline def setMilestoneNull: Self = StObject.set(x, "milestone", null)
     

@@ -1,6 +1,6 @@
 package typings.hapiHapi.anon
 
-import typings.hapiHapi.mod.ServerAuthConfig
+import typings.hapiHapi.libTypesServerAuthMod.ServerAuthConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

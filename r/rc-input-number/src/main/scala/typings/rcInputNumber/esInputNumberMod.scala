@@ -1,11 +1,12 @@
 package typings.rcInputNumber
 
 import org.scalablytyped.runtime.Shortcut
+import typings.rcComponentMiniDecimal.esMiniDecimalMod.ValueType
 import typings.rcInputNumber.anon.Children
 import typings.rcInputNumber.anon.DisplayName
 import typings.rcInputNumber.anon.Input
 import typings.rcInputNumber.anon.Offset
-import typings.rcInputNumber.esUtilsMiniDecimalMod.ValueType
+import typings.rcInputNumber.rcInputNumberStrings._empty
 import typings.rcInputNumber.rcInputNumberStrings.`additions removals`
 import typings.rcInputNumber.rcInputNumberStrings.`additions text`
 import typings.rcInputNumber.rcInputNumberStrings.`inline`
@@ -13,8 +14,10 @@ import typings.rcInputNumber.rcInputNumberStrings.`removals additions`
 import typings.rcInputNumber.rcInputNumberStrings.`removals text`
 import typings.rcInputNumber.rcInputNumberStrings.`text additions`
 import typings.rcInputNumber.rcInputNumberStrings.`text removals`
+import typings.rcInputNumber.rcInputNumberStrings.`use-credentials`
 import typings.rcInputNumber.rcInputNumberStrings.additions
 import typings.rcInputNumber.rcInputNumberStrings.all
+import typings.rcInputNumber.rcInputNumberStrings.anonymous
 import typings.rcInputNumber.rcInputNumberStrings.ascending
 import typings.rcInputNumber.rcInputNumberStrings.assertive
 import typings.rcInputNumber.rcInputNumberStrings.both
@@ -103,6 +106,7 @@ import typings.react.mod.WheelEvent
 import typings.react.mod.WheelEventHandler
 import typings.std.Element
 import typings.std.Event
+import typings.std.FormData
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -243,13 +247,15 @@ object esInputNumberMod extends Shortcut {
     
     var color: js.UndefOr[String] = js.undefined
     
+    var content: js.UndefOr[String] = js.undefined
+    
     var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
     var contextMenu: js.UndefOr[String] = js.undefined
     
     var controls: js.UndefOr[Boolean] = js.undefined
     
-    var crossOrigin: js.UndefOr[String] = js.undefined
+    var crossOrigin: js.UndefOr[anonymous | `use-credentials` | _empty] = js.undefined
     
     var dangerouslySetInnerHTML: js.UndefOr[Html] = js.undefined
     
@@ -274,7 +280,7 @@ object esInputNumberMod extends Shortcut {
     
     var form: js.UndefOr[String] = js.undefined
     
-    var formAction: js.UndefOr[String] = js.undefined
+    var formAction: js.UndefOr[String | (js.Function1[/* formData */ FormData, Unit])] = js.undefined
     
     var formEncType: js.UndefOr[String] = js.undefined
     
@@ -513,11 +519,15 @@ object esInputNumberMod extends Shortcut {
     
     var readOnly: js.UndefOr[Boolean] = js.undefined
     
+    var rel: js.UndefOr[String] = js.undefined
+    
     var required: js.UndefOr[Boolean] = js.undefined
     
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
+    
+    var rev: js.UndefOr[String] = js.undefined
     
     var role: js.UndefOr[AriaRole] = js.undefined
     
@@ -822,9 +832,13 @@ object esInputNumberMod extends Shortcut {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
       inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
       inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
@@ -834,7 +848,7 @@ object esInputNumberMod extends Shortcut {
       
       inline def setControlsUndefined: Self = StObject.set(x, "controls", js.undefined)
       
-      inline def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+      inline def setCrossOrigin(value: anonymous | `use-credentials` | _empty): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
       
       inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
       
@@ -880,7 +894,9 @@ object esInputNumberMod extends Shortcut {
       
       inline def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
       
-      inline def setFormAction(value: String): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+      inline def setFormAction(value: String | (js.Function1[/* formData */ FormData, Unit])): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+      
+      inline def setFormActionFunction1(value: /* formData */ FormData => Unit): Self = StObject.set(x, "formAction", js.Any.fromFunction1(value))
       
       inline def setFormActionUndefined: Self = StObject.set(x, "formAction", js.undefined)
       
@@ -1354,6 +1370,10 @@ object esInputNumberMod extends Shortcut {
       
       inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
       
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      
+      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+      
       inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
       
       inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
@@ -1365,6 +1385,10 @@ object esInputNumberMod extends Shortcut {
       inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+      
+      inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+      
+      inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
       
       inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       

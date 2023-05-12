@@ -3,17 +3,16 @@ package typings.angularDevkitArchitect
 import org.scalablytyped.runtime.StringDictionary
 import typings.angularDevkitArchitect.anon.Builder
 import typings.angularDevkitArchitect.srcInputSchemaMod.Schema
+import typings.angularDevkitArchitect.srcJobsApiMod.Registry
 import typings.angularDevkitArchitect.srcProgressSchemaMod.State
 import typings.angularDevkitArchitect.srcProgressSchemaMod.State.Running
 import typings.angularDevkitArchitect.srcProgressSchemaMod.State.Stopped
 import typings.angularDevkitArchitect.srcProgressSchemaMod.State.Waiting
 import typings.angularDevkitCore.mod.logging.Logger
-import typings.angularDevkitCore.srcAnalyticsApiMod.Analytics
-import typings.angularDevkitCore.srcExperimentalJobsApiMod.Registry
 import typings.angularDevkitCore.srcJsonSchemaSchemaMod.JsonSchema
 import typings.angularDevkitCore.srcJsonUtilsMod.JsonObject
 import typings.angularDevkitCore.srcLoggerLoggerMod.LoggerApi
-import typings.rxjs.distTypesInternalTypesMod.SubscribableOrPromise
+import typings.rxjs.distTypesInternalTypesMod.ObservableInput
 import typings.rxjs.mod.Observable_
 import typings.std.AsyncIterable
 import org.scalablytyped.runtime.StObject
@@ -62,12 +61,6 @@ object srcApiMod {
       * Add teardown logic to this Context, so that when it's being stopped it will execute teardown.
       */
     def addTeardown(teardown: js.Function0[js.Promise[Unit] | Unit]): Unit = js.native
-    
-    /**
-      * API to report analytics. This might be undefined if the feature is unsupported. This might
-      * not be undefined, but the backend could also not report anything.
-      */
-    val analytics: Analytics = js.native
     
     /**
       * The builder info that called your function. Since the builder info is from the builder.json
@@ -244,7 +237,7 @@ object srcApiMod {
     }
   }
   
-  type BuilderOutputLike = AsyncIterable[BuilderOutput] | SubscribableOrPromise[BuilderOutput] | BuilderOutput
+  type BuilderOutputLike = ObservableInput[BuilderOutput] | BuilderOutput
   
   type BuilderProgress = JsonObject & typings.angularDevkitArchitect.srcProgressSchemaMod.Schema & TypedBuilderProgress
   
@@ -265,6 +258,12 @@ object srcApiMod {
       * The builder information.
       */
     var info: BuilderInfo
+    
+    /**
+      * The last output from a builder. This is recommended when scheduling a builder and only being
+      * interested in the result of that last run.
+      */
+    var lastOutput: js.Promise[BuilderOutput]
     
     /**
       * The output(s) from the builder. A builder can have multiple outputs.
@@ -296,12 +295,13 @@ object srcApiMod {
     inline def apply(
       id: Double,
       info: BuilderInfo,
+      lastOutput: js.Promise[BuilderOutput],
       output: Observable_[BuilderOutput],
       progress: Observable_[BuilderProgressReport],
       result: js.Promise[BuilderOutput],
       stop: () => js.Promise[Unit]
     ): BuilderRun = {
-      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any], output = output.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any], stop = js.Any.fromFunction0(stop))
+      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any], lastOutput = lastOutput.asInstanceOf[js.Any], output = output.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any], stop = js.Any.fromFunction0(stop))
       __obj.asInstanceOf[BuilderRun]
     }
     
@@ -311,6 +311,8 @@ object srcApiMod {
       inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
       inline def setInfo(value: BuilderInfo): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+      
+      inline def setLastOutput(value: js.Promise[BuilderOutput]): Self = StObject.set(x, "lastOutput", value.asInstanceOf[js.Any])
       
       inline def setOutput(value: Observable_[BuilderOutput]): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
       

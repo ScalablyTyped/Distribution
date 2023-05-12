@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "msgpackr" : "1.7.2"
+      "msgpackr" : "1.9.1"
     }
   ],
   "test-dependencies" : [
     {
-      "msgpackr" : "1.7.2"
+      "msgpackr" : "1.9.1"
     }
   ],
   "compile-devDependencies" : [

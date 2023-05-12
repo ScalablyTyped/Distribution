@@ -15,6 +15,8 @@ trait StructureMap
   
   var _copyright: js.UndefOr[Element] = js.undefined
   
+  var _copyrightLabel: js.UndefOr[Element] = js.undefined
+  
   var _date: js.UndefOr[Element] = js.undefined
   
   var _description: js.UndefOr[Element] = js.undefined
@@ -37,23 +39,37 @@ trait StructureMap
   
   var _version: js.UndefOr[Element] = js.undefined
   
+  var _versionAlgorithmString: js.UndefOr[Element] = js.undefined
+  
+  /**
+    * Definition of a constant value used in the map rules.
+    */
+  var const: js.UndefOr[js.Array[StructureMapConst]] = js.undefined
+  
   /**
     * May be a web site, an email address, a telephone number, etc.
+    * See guidance around (not) making local changes to elements [here](canonicalresource.html#localization).
     */
   var contact: js.UndefOr[js.Array[ContactDetail]] = js.undefined
   
   /**
-    * A copyright statement relating to the structure map and/or its contents. Copyright statements are generally legal restrictions on the use and publishing of the structure map.
+    * ...
     */
   var copyright: js.UndefOr[String] = js.undefined
   
   /**
-    * Note that this is not the same as the resource last-modified-date, since the resource may be a secondary representation of the structure map. Additional specific dates may be added as extensions or be found by consulting Provenances associated with past versions of the resource.
+    * The (c) symbol should NOT be included in this string. It will be added by software when rendering the notation. Full details about licensing, restrictions, warrantees, etc. goes in the more general 'copyright' element.
+    */
+  var copyrightLabel: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The date is often not tracked until the resource is published, but may be present on draft content. Note that this is not the same as the resource last-modified-date, since the resource may be a secondary representation of the structure map. Additional specific dates may be added as extensions or be found by consulting Provenances associated with past versions of the resource.
+    * See guidance around (not) making local changes to elements [here](canonicalresource.html#localization).
     */
   var date: js.UndefOr[String] = js.undefined
   
   /**
-    * This description can be used to capture details such as why the structure map was built, comments about misuse, instructions for clinical use and interpretation, literature references, examples from the paper world, etc. It is not a rendering of the structure map as conveyed in the 'text' field of the resource itself. This item SHOULD be populated unless the information is available from context (e.g. the language of the structure map is presumed to be the predominant language in the place the structure map was created).
+    * This description can be used to capture details such as comments about misuse, instructions for clinical use and interpretation, literature references, examples from the paper world, etc. It is not a rendering of the structure map as conveyed in the 'text' field of the resource itself. This item SHOULD be populated unless the information is available from context (e.g. the language of the structure map is presumed to be the predominant language in the place the structure map was created).
     */
   var description: js.UndefOr[String] = js.undefined
   
@@ -63,7 +79,7 @@ trait StructureMap
   var experimental: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Organizes the mapping into manageable chunks for human review/ease of maintenance.
+    * Organizes the mapping into managable chunks for human review/ease of maintenance.
     */
   var group: js.Array[StructureMapGroup]
   
@@ -79,6 +95,7 @@ trait StructureMap
   
   /**
     * It may be possible for the structure map to be used in jurisdictions other than those for which it was originally designed or intended.
+    * DEPRECATION NOTE: For consistency, implementations are encouraged to migrate to using the new 'jurisdiction' code in the useContext element.  (I.e. useContext.code indicating http://terminology.hl7.org/CodeSystem/usage-context-type#jurisdiction and useContext.valueCodeableConcept indicating the jurisdiction.)
     */
   var jurisdiction: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
@@ -103,6 +120,7 @@ trait StructureMap
   
   /**
     * Allows filtering of structure maps that are appropriate for use versus not.
+    * See guidance around (not) making local changes to elements [here](canonicalresource.html#localization).
     */
   var status: draft | active | retired | unknown
   
@@ -129,9 +147,19 @@ trait StructureMap
   var useContext: js.UndefOr[js.Array[UsageContext]] = js.undefined
   
   /**
-    * There may be different structure map instances that have the same identifier but different versions.  The version can be appended to the url in a reference to allow a reference to a particular business version of the structure map with the format [url]|[version].
+    * There may be different structure map instances that have the same identifier but different versions.  The version can be appended to the url in a reference to allow a reference to a particular business version of the structure map with the format [url]|[version]. The version SHOULD NOT contain a '#' - see [Business Version](resource.html#bv-format).
     */
   var version: js.UndefOr[String] = js.undefined
+  
+  /**
+    * If set as a string, this is a FHIRPath expression that has two additional context variables passed in - %version1 and %version2 and will return a negative number if version1 is newer, a positive number if version2 and a 0 if the version ordering can't be successfully be determined.
+    */
+  var versionAlgorithmCoding: js.UndefOr[Coding] = js.undefined
+  
+  /**
+    * If set as a string, this is a FHIRPath expression that has two additional context variables passed in - %version1 and %version2 and will return a negative number if version1 is newer, a positive number if version2 and a 0 if the version ordering can't be successfully be determined.
+    */
+  var versionAlgorithmString: js.UndefOr[String] = js.undefined
 }
 object StructureMap {
   
@@ -148,6 +176,12 @@ object StructureMap {
   @scala.inline
   implicit open class MutableBuilder[Self <: StructureMap] (val x: Self) extends AnyVal {
     
+    inline def setConst(value: js.Array[StructureMapConst]): Self = StObject.set(x, "const", value.asInstanceOf[js.Any])
+    
+    inline def setConstUndefined: Self = StObject.set(x, "const", js.undefined)
+    
+    inline def setConstVarargs(value: StructureMapConst*): Self = StObject.set(x, "const", js.Array(value*))
+    
     inline def setContact(value: js.Array[ContactDetail]): Self = StObject.set(x, "contact", value.asInstanceOf[js.Any])
     
     inline def setContactUndefined: Self = StObject.set(x, "contact", js.undefined)
@@ -155,6 +189,10 @@ object StructureMap {
     inline def setContactVarargs(value: ContactDetail*): Self = StObject.set(x, "contact", js.Array(value*))
     
     inline def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
+    
+    inline def setCopyrightLabel(value: String): Self = StObject.set(x, "copyrightLabel", value.asInstanceOf[js.Any])
+    
+    inline def setCopyrightLabelUndefined: Self = StObject.set(x, "copyrightLabel", js.undefined)
     
     inline def setCopyrightUndefined: Self = StObject.set(x, "copyright", js.undefined)
     
@@ -226,9 +264,21 @@ object StructureMap {
     
     inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
+    inline def setVersionAlgorithmCoding(value: Coding): Self = StObject.set(x, "versionAlgorithmCoding", value.asInstanceOf[js.Any])
+    
+    inline def setVersionAlgorithmCodingUndefined: Self = StObject.set(x, "versionAlgorithmCoding", js.undefined)
+    
+    inline def setVersionAlgorithmString(value: String): Self = StObject.set(x, "versionAlgorithmString", value.asInstanceOf[js.Any])
+    
+    inline def setVersionAlgorithmStringUndefined: Self = StObject.set(x, "versionAlgorithmString", js.undefined)
+    
     inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     
     inline def set_copyright(value: Element): Self = StObject.set(x, "_copyright", value.asInstanceOf[js.Any])
+    
+    inline def set_copyrightLabel(value: Element): Self = StObject.set(x, "_copyrightLabel", value.asInstanceOf[js.Any])
+    
+    inline def set_copyrightLabelUndefined: Self = StObject.set(x, "_copyrightLabel", js.undefined)
     
     inline def set_copyrightUndefined: Self = StObject.set(x, "_copyright", js.undefined)
     
@@ -275,6 +325,10 @@ object StructureMap {
     inline def set_urlUndefined: Self = StObject.set(x, "_url", js.undefined)
     
     inline def set_version(value: Element): Self = StObject.set(x, "_version", value.asInstanceOf[js.Any])
+    
+    inline def set_versionAlgorithmString(value: Element): Self = StObject.set(x, "_versionAlgorithmString", value.asInstanceOf[js.Any])
+    
+    inline def set_versionAlgorithmStringUndefined: Self = StObject.set(x, "_versionAlgorithmString", js.undefined)
     
     inline def set_versionUndefined: Self = StObject.set(x, "_version", js.undefined)
   }

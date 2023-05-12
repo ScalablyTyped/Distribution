@@ -30,6 +30,11 @@ object PromptValue {
   def NONE: String = js.native
   inline def NONE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NONE")(x.asInstanceOf[js.Any])
   
+  @JSImport("@azure/msal-common", "PromptValue.NO_SESSION")
+  @js.native
+  def NO_SESSION: String = js.native
+  inline def NO_SESSION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NO_SESSION")(x.asInstanceOf[js.Any])
+  
   @JSImport("@azure/msal-common", "PromptValue.SELECT_ACCOUNT")
   @js.native
   def SELECT_ACCOUNT: String = js.native

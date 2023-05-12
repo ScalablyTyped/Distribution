@@ -27,7 +27,6 @@ trait IModalSettings extends StObject {
   /**
     * Sets the `aria-describedby` property on the modal.
     * The string should be an id (without the leading '#') pointing to the element that describes your modal.
-    * @type {string}
     * @memberOf IModalSettings
     */
   var ariaDescribedBy: js.UndefOr[String] = js.undefined
@@ -35,7 +34,6 @@ trait IModalSettings extends StObject {
   /**
     * Sets the `aria-labelledby` property on the modal.
     * The string should be an id (without the leading '#') pointing to the element that labels your modal.
-    * @type {string}
     * @memberOf IModalSettings
     */
   var ariaLabelledBy: js.UndefOr[String] = js.undefined

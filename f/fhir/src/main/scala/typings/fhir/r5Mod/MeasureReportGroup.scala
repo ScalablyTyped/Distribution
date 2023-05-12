@@ -8,12 +8,19 @@ trait MeasureReportGroup
   extends StObject
      with BackboneElement {
   
+  var _linkId: js.UndefOr[Element] = js.undefined
+  
   var _measureScoreDateTime: js.UndefOr[Element] = js.undefined
   
   /**
     * The meaning of the population group as defined in the measure definition.
     */
   var code: js.UndefOr[CodeableConcept] = js.undefined
+  
+  /**
+    * The group from the Measure that corresponds to this group in the MeasureReport resource.
+    */
+  var linkId: js.UndefOr[String] = js.undefined
   
   /**
     * The measure score for this population group, calculated as appropriate for the measure type and scoring method, and based on the contents of the populations defined in the group.
@@ -54,6 +61,11 @@ trait MeasureReportGroup
     * When a measure includes multiple stratifiers, there will be a stratifier group for each stratifier defined by the measure.
     */
   var stratifier: js.UndefOr[js.Array[MeasureReportGroupStratifier]] = js.undefined
+  
+  /**
+    * Optional subject identifying the individual or individuals the report is for.
+    */
+  var subject: js.UndefOr[Reference] = js.undefined
 }
 object MeasureReportGroup {
   
@@ -68,6 +80,10 @@ object MeasureReportGroup {
     inline def setCode(value: CodeableConcept): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+    
+    inline def setLinkId(value: String): Self = StObject.set(x, "linkId", value.asInstanceOf[js.Any])
+    
+    inline def setLinkIdUndefined: Self = StObject.set(x, "linkId", js.undefined)
     
     inline def setMeasureScoreCodeableConcept(value: CodeableConcept): Self = StObject.set(x, "measureScoreCodeableConcept", value.asInstanceOf[js.Any])
     
@@ -104,6 +120,14 @@ object MeasureReportGroup {
     inline def setStratifierUndefined: Self = StObject.set(x, "stratifier", js.undefined)
     
     inline def setStratifierVarargs(value: MeasureReportGroupStratifier*): Self = StObject.set(x, "stratifier", js.Array(value*))
+    
+    inline def setSubject(value: Reference): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
+    
+    inline def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
+    
+    inline def set_linkId(value: Element): Self = StObject.set(x, "_linkId", value.asInstanceOf[js.Any])
+    
+    inline def set_linkIdUndefined: Self = StObject.set(x, "_linkId", js.undefined)
     
     inline def set_measureScoreDateTime(value: Element): Self = StObject.set(x, "_measureScoreDateTime", value.asInstanceOf[js.Any])
     

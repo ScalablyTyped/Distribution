@@ -18,7 +18,7 @@ trait Partialemailaddressstring extends StObject {
   
   var phone: js.UndefOr[Partial[Phonetype]] = js.undefined
   
-  var shipping_address: js.UndefOr[Partial[Address]] = js.undefined
+  var shipping_address: js.UndefOr[Partial[Name]] = js.undefined
 }
 object Partialemailaddressstring {
   
@@ -50,7 +50,7 @@ object Partialemailaddressstring {
     
     inline def setPhoneUndefined: Self = StObject.set(x, "phone", js.undefined)
     
-    inline def setShipping_address(value: Partial[Address]): Self = StObject.set(x, "shipping_address", value.asInstanceOf[js.Any])
+    inline def setShipping_address(value: Partial[Name]): Self = StObject.set(x, "shipping_address", value.asInstanceOf[js.Any])
     
     inline def setShipping_addressUndefined: Self = StObject.set(x, "shipping_address", js.undefined)
   }

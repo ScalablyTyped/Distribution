@@ -10,7 +10,7 @@ open class FooterDropDownSection protected () extends _MDLComponent[FooterDropDo
   def this(props: FooterDropDownSectionProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: FooterDropDownSectionProps, context: Any) = this()
 }

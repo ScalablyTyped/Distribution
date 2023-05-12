@@ -1,7 +1,7 @@
 
 # Scala.js typings for victory-polar-axis
 
-Typings are for version 36.6.8
+Typings are for version 36.6.10
 
 ## Library description:
 Polar Axis Component for Victory

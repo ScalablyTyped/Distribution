@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@next/env" : "13.0.3"
+      "@next/env" : "13.4.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@next/env" : "13.0.3"
+      "@next/env" : "13.4.2"
     }
   ],
   "compile-devDependencies" : [

@@ -1,27 +1,39 @@
 package typings.photoshop.domConstantsMod
 
-import typings.photoshop.photoshopStrings.absColorimetric
-import typings.photoshop.photoshopStrings.colorimetric
-import typings.photoshop.photoshopStrings.graphics
-import typings.photoshop.photoshopStrings.image
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Rewritten from type alias, can be one of: 
-  - typings.photoshop.photoshopStrings.absColorimetric
-  - typings.photoshop.photoshopStrings.image
-  - typings.photoshop.photoshopStrings.colorimetric
-  - typings.photoshop.photoshopStrings.graphics
-*/
-trait Intent extends StObject
-object Intent {
+@js.native
+sealed trait Intent extends StObject
+@JSImport("photoshop/dom/Constants", "Intent")
+@js.native
+object Intent extends StObject {
   
-  inline def ABSOLUTECOLORIMETRIC: absColorimetric = "absColorimetric".asInstanceOf[absColorimetric]
+  @JSBracketAccess
+  def apply(value: String): js.UndefOr[Intent & String] = js.native
   
-  inline def PERCEPTUAL: image = "image".asInstanceOf[image]
+  @js.native
+  sealed trait ABSOLUTECOLORIMETRIC
+    extends StObject
+       with Intent
+  /* "absColorimetric" */ val ABSOLUTECOLORIMETRIC: typings.photoshop.domConstantsMod.Intent.ABSOLUTECOLORIMETRIC & String = js.native
   
-  inline def RELATIVECOLORIMETRIC: colorimetric = "colorimetric".asInstanceOf[colorimetric]
+  @js.native
+  sealed trait PERCEPTUAL
+    extends StObject
+       with Intent
+  /* "image" */ val PERCEPTUAL: typings.photoshop.domConstantsMod.Intent.PERCEPTUAL & String = js.native
   
-  inline def SATURATION: graphics = "graphics".asInstanceOf[graphics]
+  @js.native
+  sealed trait RELATIVECOLORIMETRIC
+    extends StObject
+       with Intent
+  /* "colorimetric" */ val RELATIVECOLORIMETRIC: typings.photoshop.domConstantsMod.Intent.RELATIVECOLORIMETRIC & String = js.native
+  
+  @js.native
+  sealed trait SATURATION
+    extends StObject
+       with Intent
+  /* "graphics" */ val SATURATION: typings.photoshop.domConstantsMod.Intent.SATURATION & String = js.native
 }

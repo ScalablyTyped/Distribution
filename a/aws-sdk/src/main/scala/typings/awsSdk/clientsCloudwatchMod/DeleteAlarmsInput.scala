@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteAlarmsInput extends StObject {
   
   /**
-    * The alarms to be deleted.
+    * The alarms to be deleted. Do not enclose the alarm names in quote marks.
     */
   var AlarmNames: typings.awsSdk.clientsCloudwatchMod.AlarmNames
 }

@@ -1,5 +1,9 @@
 package typings.reactabularSticky
 
+import typings.reactabularSticky.reactabularStickyInts.`0`
+import typings.reactabularSticky.reactabularStickyInts.`1`
+import typings.reactabularSticky.reactabularStickyInts.`2`
+import typings.reactabularSticky.reactabularStickyInts.`3`
 import typings.std.DOMHighResTimeStamp
 import typings.std.EventTarget
 import typings.std.Window
@@ -12,13 +16,13 @@ object anon {
   /* Inlined std.Partial<std.UIEvent> */
   trait PartialUIEvent extends StObject {
     
-    var AT_TARGET: js.UndefOr[Double] = js.undefined
+    var AT_TARGET: js.UndefOr[`2`] = js.undefined
     
-    var BUBBLING_PHASE: js.UndefOr[Double] = js.undefined
+    var BUBBLING_PHASE: js.UndefOr[`3`] = js.undefined
     
-    var CAPTURING_PHASE: js.UndefOr[Double] = js.undefined
+    var CAPTURING_PHASE: js.UndefOr[`1`] = js.undefined
     
-    var NONE: js.UndefOr[Double] = js.undefined
+    var NONE: js.UndefOr[`0`] = js.undefined
     
     var bubbles: js.UndefOr[Boolean] = js.undefined
     
@@ -74,11 +78,11 @@ object anon {
     @scala.inline
     implicit open class MutableBuilder[Self <: PartialUIEvent] (val x: Self) extends AnyVal {
       
-      inline def setAT_TARGET(value: Double): Self = StObject.set(x, "AT_TARGET", value.asInstanceOf[js.Any])
+      inline def setAT_TARGET(value: `2`): Self = StObject.set(x, "AT_TARGET", value.asInstanceOf[js.Any])
       
       inline def setAT_TARGETUndefined: Self = StObject.set(x, "AT_TARGET", js.undefined)
       
-      inline def setBUBBLING_PHASE(value: Double): Self = StObject.set(x, "BUBBLING_PHASE", value.asInstanceOf[js.Any])
+      inline def setBUBBLING_PHASE(value: `3`): Self = StObject.set(x, "BUBBLING_PHASE", value.asInstanceOf[js.Any])
       
       inline def setBUBBLING_PHASEUndefined: Self = StObject.set(x, "BUBBLING_PHASE", js.undefined)
       
@@ -86,7 +90,7 @@ object anon {
       
       inline def setBubblesUndefined: Self = StObject.set(x, "bubbles", js.undefined)
       
-      inline def setCAPTURING_PHASE(value: Double): Self = StObject.set(x, "CAPTURING_PHASE", value.asInstanceOf[js.Any])
+      inline def setCAPTURING_PHASE(value: `1`): Self = StObject.set(x, "CAPTURING_PHASE", value.asInstanceOf[js.Any])
       
       inline def setCAPTURING_PHASEUndefined: Self = StObject.set(x, "CAPTURING_PHASE", js.undefined)
       
@@ -136,7 +140,7 @@ object anon {
       
       inline def setIsTrustedUndefined: Self = StObject.set(x, "isTrusted", js.undefined)
       
-      inline def setNONE(value: Double): Self = StObject.set(x, "NONE", value.asInstanceOf[js.Any])
+      inline def setNONE(value: `0`): Self = StObject.set(x, "NONE", value.asInstanceOf[js.Any])
       
       inline def setNONEUndefined: Self = StObject.set(x, "NONE", js.undefined)
       

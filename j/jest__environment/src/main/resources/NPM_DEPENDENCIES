@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@jest/environment" : "29.3.1"
+      "@jest/environment" : "29.5.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@jest/environment" : "29.3.1"
+      "@jest/environment" : "29.5.0"
     }
   ],
   "compile-devDependencies" : [

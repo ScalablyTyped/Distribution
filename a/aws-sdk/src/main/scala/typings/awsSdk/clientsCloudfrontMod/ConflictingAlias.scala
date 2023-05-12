@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ConflictingAlias extends StObject {
   
   /**
-    * The (partially hidden) ID of the Amazon Web Services account that owns the distribution that’s associated with the alias.
+    * The (partially hidden) ID of the Amazon Web Services account that owns the distribution that's associated with the alias.
     */
   var AccountId: js.UndefOr[String] = js.undefined
   

@@ -62,6 +62,11 @@ trait LambdaFunctionRecommendation extends StObject {
   var numberOfInvocations: js.UndefOr[NumberOfInvocations] = js.undefined
   
   /**
+    *  A list of tags assigned to your Lambda function recommendations. 
+    */
+  var tags: js.UndefOr[Tags] = js.undefined
+  
+  /**
     * An array of objects that describe the utilization metrics of the function.
     */
   var utilizationMetrics: js.UndefOr[LambdaFunctionUtilizationMetrics] = js.undefined
@@ -123,6 +128,12 @@ object LambdaFunctionRecommendation {
     inline def setNumberOfInvocations(value: NumberOfInvocations): Self = StObject.set(x, "numberOfInvocations", value.asInstanceOf[js.Any])
     
     inline def setNumberOfInvocationsUndefined: Self = StObject.set(x, "numberOfInvocations", js.undefined)
+    
+    inline def setTags(value: Tags): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value*))
     
     inline def setUtilizationMetrics(value: LambdaFunctionUtilizationMetrics): Self = StObject.set(x, "utilizationMetrics", value.asInstanceOf[js.Any])
     

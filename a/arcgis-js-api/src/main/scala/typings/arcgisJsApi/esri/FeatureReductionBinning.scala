@@ -44,6 +44,15 @@ trait FeatureReductionBinning
   var labelsVisible: Boolean = js.native
   
   /**
+    * Defines the maximum [view scale](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#scale) at which binning is enabled.
+    *
+    * @default 0
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureReductionBinning.html#maxScale)
+    */
+  var maxScale: Double = js.native
+  
+  /**
     * Indicates whether to display a popup when a user clicks or touches a bin.
     *
     * @default true

@@ -137,7 +137,7 @@ trait AwsRdsDbInstanceDetails extends StObject {
   var IAMDatabaseAuthenticationEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates when the DB instance was created. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces. For example, 2020-03-22T13:22:13.933Z.
+    * Indicates when the DB instance was created. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces, and date and time should be separated by T. For example, 2020-03-22T13:22:13.933Z.
     */
   var InstanceCreateTime: js.UndefOr[NonEmptyString] = js.undefined
   
@@ -152,7 +152,7 @@ trait AwsRdsDbInstanceDetails extends StObject {
   var KmsKeyId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * Specifies the latest time to which a database can be restored with point-in-time restore. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces. For example, 2020-03-22T13:22:13.933Z.
+    * Specifies the latest time to which a database can be restored with point-in-time restore. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces, and date and time should be separated by T. For example, 2020-03-22T13:22:13.933Z.
     */
   var LatestRestorableTime: js.UndefOr[NonEmptyString] = js.undefined
   

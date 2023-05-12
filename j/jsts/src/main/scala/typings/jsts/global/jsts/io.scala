@@ -39,7 +39,6 @@ object io {
     * <p>
     *
     * @see WKTReader
-    * @constructor
     */
   open class GeoJSONWriter ()
     extends StObject
@@ -73,7 +72,6 @@ object io {
   @JSGlobal("jsts.io.WKTReader")
   @js.native
   /**
-    * @constructor
     */
   open class WKTReader ()
     extends StObject
@@ -99,7 +97,6 @@ object io {
   @JSGlobal("jsts.io.WKTWriter")
   @js.native
   /**
-    * @constructor
     */
   open class WKTWriter ()
     extends StObject

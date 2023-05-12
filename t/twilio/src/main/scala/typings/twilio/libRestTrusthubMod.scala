@@ -8,33 +8,45 @@ object libRestTrusthubMod {
   
   @JSImport("twilio/lib/rest/Trusthub", JSImport.Namespace)
   @js.native
-  open class ^ protected () extends Trusthub {
-    /**
-      * Initialize trusthub domain
-      *
-      * @param twilio - The twilio client
-      */
-    def this(twilio: typings.twilio.libRestTwilioMod.^) = this()
-  }
+  open class ^ () extends Trusthub
   
   @js.native
   trait Trusthub
-    extends typings.twilio.libBaseDomainMod.^ {
+    extends typings.twilio.libRestTrusthubBaseMod.^ {
     
-    val customerProfiles: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CustomerProfilesListInstance */ Any = js.native
+    /**
+      * @deprecated - Use v1.customerProfiles instead
+      */
+    def customerProfiles: Any = js.native
     
-    val endUserTypes: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EndUserTypeListInstance */ Any = js.native
+    /**
+      * @deprecated - Use v1.endUserTypes instead
+      */
+    def endUserTypes: Any = js.native
     
-    val endUsers: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EndUserListInstance */ Any = js.native
+    /**
+      * @deprecated - Use v1.endUsers instead
+      */
+    def endUsers: Any = js.native
     
-    val policies: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PoliciesListInstance */ Any = js.native
+    /**
+      * @deprecated - Use v1.policies instead
+      */
+    def policies: Any = js.native
     
-    val supportingDocumentTypes: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SupportingDocumentTypeListInstance */ Any = js.native
+    /**
+      * @deprecated - Use v1.supportingDocumentTypes instead
+      */
+    def supportingDocumentTypes: Any = js.native
     
-    val supportingDocuments: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SupportingDocumentListInstance */ Any = js.native
+    /**
+      * @deprecated - Use v1.supportingDocuments instead
+      */
+    def supportingDocuments: Any = js.native
     
-    val trustProducts: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TrustProductsListInstance */ Any = js.native
-    
-    val v1: typings.twilio.libRestTrusthubV1Mod.^ = js.native
+    /**
+      * @deprecated - Use v1.trustProducts instead
+      */
+    def trustProducts: Any = js.native
   }
 }

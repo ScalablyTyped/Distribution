@@ -24,6 +24,16 @@ trait ClearTextFirst extends StObject {
   var interactionType: InteractionType
   
   /**
+    * If the input will remain focused after text is entered
+    */
+  var keepFocus: Boolean
+  
+  /**
+    * If ENTER key will be entered after the text
+    */
+  var pressEnterKey: Boolean
+  
+  /**
     * control selector for the control to interact with The returned promise will be rejected if the control
     * is not specified or does not have a DOM reference
     */
@@ -31,8 +41,14 @@ trait ClearTextFirst extends StObject {
 }
 object ClearTextFirst {
   
-  inline def apply(enterText: String, interactionType: InteractionType, selector: js.Object): ClearTextFirst = {
-    val __obj = js.Dynamic.literal(enterText = enterText.asInstanceOf[js.Any], interactionType = interactionType.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any])
+  inline def apply(
+    enterText: String,
+    interactionType: InteractionType,
+    keepFocus: Boolean,
+    pressEnterKey: Boolean,
+    selector: js.Object
+  ): ClearTextFirst = {
+    val __obj = js.Dynamic.literal(enterText = enterText.asInstanceOf[js.Any], interactionType = interactionType.asInstanceOf[js.Any], keepFocus = keepFocus.asInstanceOf[js.Any], pressEnterKey = pressEnterKey.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClearTextFirst]
   }
   
@@ -46,6 +62,10 @@ object ClearTextFirst {
     inline def setEnterText(value: String): Self = StObject.set(x, "enterText", value.asInstanceOf[js.Any])
     
     inline def setInteractionType(value: InteractionType): Self = StObject.set(x, "interactionType", value.asInstanceOf[js.Any])
+    
+    inline def setKeepFocus(value: Boolean): Self = StObject.set(x, "keepFocus", value.asInstanceOf[js.Any])
+    
+    inline def setPressEnterKey(value: Boolean): Self = StObject.set(x, "pressEnterKey", value.asInstanceOf[js.Any])
     
     inline def setSelector(value: js.Object): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
   }

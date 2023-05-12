@@ -72,6 +72,20 @@ type DatabaseSummaryList = js.Array[DatabaseSummary]
 */
 type DatabaseType = _DatabaseType | java.lang.String
 
+type FilterList = js.Array[Filter]
+
+type FilterName = java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.Equals_
+  - typings.awsSdk.awsSdkStrings.GreaterThanOrEquals
+  - typings.awsSdk.awsSdkStrings.LessThanOrEquals
+  - java.lang.String
+*/
+type FilterOperator = _FilterOperator | java.lang.String
+
+type FilterValue = java.lang.String
+
 type HostList = js.Array[Host]
 
 /* Rewritten from type alias, can be one of: 
@@ -96,6 +110,8 @@ type NextToken = java.lang.String
 type OperationId = java.lang.String
 
 type OperationIdList = js.Array[OperationId]
+
+type OperationList = js.Array[Operation]
 
 type OperationProperties = StringDictionary[String]
 

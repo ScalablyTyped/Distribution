@@ -1,86 +1,90 @@
 package typings.mdastUtilToMarkdown
 
-import typings.mdastUtilToMarkdown.libUtilTrackMod.Point
+import typings.mdastUtilToMarkdown.libUtilContainerFlowMod.FlowContent
+import typings.mdastUtilToMarkdown.libUtilContainerPhrasingMod.PhrasingContent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
-  trait Current extends StObject {
+  trait `0` extends StObject {
     
-    def current(): LineShift = js.native
-    
-    def move(): String = js.native
-    def move(value: String): String = js.native
-    
-    def shift(value: Double): Unit = js.native
+    var children: js.Array[FlowContent]
   }
-  
-  trait LineShift extends StObject {
+  object `0` {
     
-    var lineShift: Double
-    
-    var now: Point
-  }
-  object LineShift {
-    
-    inline def apply(lineShift: Double, now: Point): LineShift = {
-      val __obj = js.Dynamic.literal(lineShift = lineShift.asInstanceOf[js.Any], now = now.asInstanceOf[js.Any])
-      __obj.asInstanceOf[LineShift]
+    inline def apply(children: js.Array[FlowContent]): `0` = {
+      val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
+      __obj.asInstanceOf[`0`]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: LineShift] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
       
-      inline def setLineShift(value: Double): Self = StObject.set(x, "lineShift", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Array[FlowContent]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      inline def setNow(value: Point): Self = StObject.set(x, "now", value.asInstanceOf[js.Any])
+      inline def setChildrenVarargs(value: FlowContent*): Self = StObject.set(x, "children", js.Array(value*))
     }
   }
   
-  /* Inlined mdast-util-to-markdown.mdast-util-to-markdown/lib/util/safe.SafeOptions & {  encode :std.Array<string> | undefined} */
-  trait SafeOptionsencodeArraystr extends StObject {
+  trait `1` extends StObject {
     
-    var after: String
-    
-    var before: String
-    
-    var encode: js.UndefOr[js.Array[String]] = js.undefined
-    
-    var lineShift: Double
-    
-    var now: typings.mdastUtilToMarkdown.libTypesMod.Point
+    var children: js.Array[PhrasingContent]
   }
-  object SafeOptionsencodeArraystr {
+  object `1` {
     
-    inline def apply(
-      after: String,
-      before: String,
-      lineShift: Double,
-      now: typings.mdastUtilToMarkdown.libTypesMod.Point
-    ): SafeOptionsencodeArraystr = {
-      val __obj = js.Dynamic.literal(after = after.asInstanceOf[js.Any], before = before.asInstanceOf[js.Any], lineShift = lineShift.asInstanceOf[js.Any], now = now.asInstanceOf[js.Any])
-      __obj.asInstanceOf[SafeOptionsencodeArraystr]
+    inline def apply(children: js.Array[PhrasingContent]): `1` = {
+      val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
+      __obj.asInstanceOf[`1`]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: SafeOptionsencodeArraystr] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: `1`] (val x: Self) extends AnyVal {
       
-      inline def setAfter(value: String): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Array[PhrasingContent]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      inline def setBefore(value: String): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
+      inline def setChildrenVarargs(value: PhrasingContent*): Self = StObject.set(x, "children", js.Array(value*))
+    }
+  }
+  
+  trait Children extends StObject {
+    
+    var children: js.Array[typings.mdastUtilToMarkdown.libTypesMod.PhrasingContent]
+  }
+  object Children {
+    
+    inline def apply(children: js.Array[typings.mdastUtilToMarkdown.libTypesMod.PhrasingContent]): Children = {
+      val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Children]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Children] (val x: Self) extends AnyVal {
       
-      inline def setEncode(value: js.Array[String]): Self = StObject.set(x, "encode", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Array[typings.mdastUtilToMarkdown.libTypesMod.PhrasingContent]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      inline def setEncodeUndefined: Self = StObject.set(x, "encode", js.undefined)
+      inline def setChildrenVarargs(value: typings.mdastUtilToMarkdown.libTypesMod.PhrasingContent*): Self = StObject.set(x, "children", js.Array(value*))
+    }
+  }
+  
+  trait ChildrenArray extends StObject {
+    
+    var children: js.Array[typings.mdastUtilToMarkdown.libTypesMod.FlowContent]
+  }
+  object ChildrenArray {
+    
+    inline def apply(children: js.Array[typings.mdastUtilToMarkdown.libTypesMod.FlowContent]): ChildrenArray = {
+      val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ChildrenArray]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChildrenArray] (val x: Self) extends AnyVal {
       
-      inline def setEncodeVarargs(value: String*): Self = StObject.set(x, "encode", js.Array(value*))
+      inline def setChildren(value: js.Array[typings.mdastUtilToMarkdown.libTypesMod.FlowContent]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      inline def setLineShift(value: Double): Self = StObject.set(x, "lineShift", value.asInstanceOf[js.Any])
-      
-      inline def setNow(value: typings.mdastUtilToMarkdown.libTypesMod.Point): Self = StObject.set(x, "now", value.asInstanceOf[js.Any])
+      inline def setChildrenVarargs(value: typings.mdastUtilToMarkdown.libTypesMod.FlowContent*): Self = StObject.set(x, "children", js.Array(value*))
     }
   }
 }

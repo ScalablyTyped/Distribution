@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 trait BindGroup extends StObject {
   
-  /** @type {UniformBuffer} */
+  /** @type {import('./uniform-buffer.js').UniformBuffer} */
   var defaultUniformBuffer: UniformBuffer
   
   /**
@@ -26,13 +26,15 @@ trait BindGroup extends StObject {
   
   var format: BindGroupFormat
   
+  var id: Double
+  
   var impl: Any
   
   /**
     * Assign a texture to a named slot.
     *
     * @param {string} name - The name of the texture slot.
-    * @param {Texture} texture - Texture to assign to the slot.
+    * @param {import('./texture.js').Texture} texture - Texture to assign to the slot.
     */
   def setTexture(name: String, texture: Texture): Unit
   
@@ -40,7 +42,8 @@ trait BindGroup extends StObject {
     * Assign a uniform buffer to a slot.
     *
     * @param {string} name - The name of the uniform buffer slot
-    * @param {UniformBuffer} uniformBuffer - The Uniform buffer to assign to the slot.
+    * @param {import('./uniform-buffer.js').UniformBuffer} uniformBuffer - The Uniform buffer to
+    * assign to the slot.
     */
   def setUniformBuffer(name: String, uniformBuffer: UniformBuffer): Unit
   
@@ -61,6 +64,7 @@ object BindGroup {
     device: GraphicsDevice,
     dirty: Boolean,
     format: BindGroupFormat,
+    id: Double,
     impl: Any,
     setTexture: (String, Texture) => Unit,
     setUniformBuffer: (String, UniformBuffer) => Unit,
@@ -68,7 +72,7 @@ object BindGroup {
     uniformBuffers: js.Array[Any],
     update: () => Unit
   ): BindGroup = {
-    val __obj = js.Dynamic.literal(defaultUniformBuffer = defaultUniformBuffer.asInstanceOf[js.Any], destroy = js.Any.fromFunction0(destroy), device = device.asInstanceOf[js.Any], dirty = dirty.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], impl = impl.asInstanceOf[js.Any], setTexture = js.Any.fromFunction2(setTexture), setUniformBuffer = js.Any.fromFunction2(setUniformBuffer), textures = textures.asInstanceOf[js.Any], uniformBuffers = uniformBuffers.asInstanceOf[js.Any], update = js.Any.fromFunction0(update))
+    val __obj = js.Dynamic.literal(defaultUniformBuffer = defaultUniformBuffer.asInstanceOf[js.Any], destroy = js.Any.fromFunction0(destroy), device = device.asInstanceOf[js.Any], dirty = dirty.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], impl = impl.asInstanceOf[js.Any], setTexture = js.Any.fromFunction2(setTexture), setUniformBuffer = js.Any.fromFunction2(setUniformBuffer), textures = textures.asInstanceOf[js.Any], uniformBuffers = uniformBuffers.asInstanceOf[js.Any], update = js.Any.fromFunction0(update))
     __obj.asInstanceOf[BindGroup]
   }
   
@@ -84,6 +88,8 @@ object BindGroup {
     inline def setDirty(value: Boolean): Self = StObject.set(x, "dirty", value.asInstanceOf[js.Any])
     
     inline def setFormat(value: BindGroupFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     inline def setImpl(value: Any): Self = StObject.set(x, "impl", value.asInstanceOf[js.Any])
     

@@ -14,8 +14,8 @@ object CommentMode extends StObject {
   def apply(value: Double): js.UndefOr[CommentMode & Double] = js.native
   
   /**
-    * Displays the comment editor
-    */
+  		 * Displays the comment editor
+  		 */
   @js.native
   sealed trait Editing
     extends StObject
@@ -23,8 +23,8 @@ object CommentMode extends StObject {
   /* 0 */ val Editing: typings.vscode.mod.CommentMode.Editing & Double = js.native
   
   /**
-    * Displays the preview of the comment
-    */
+  		 * Displays the preview of the comment
+  		 */
   @js.native
   sealed trait Preview
     extends StObject

@@ -11,11 +11,13 @@ trait BackgroundColor extends StObject {
   var backgroundImage: String | Null
   
   var foregroundImage: String | Null
+  
+  var monochromeImage: String | Null
 }
 object BackgroundColor {
   
   inline def apply(): BackgroundColor = {
-    val __obj = js.Dynamic.literal(backgroundColor = null, backgroundImage = null, foregroundImage = null)
+    val __obj = js.Dynamic.literal(backgroundColor = null, backgroundImage = null, foregroundImage = null, monochromeImage = null)
     __obj.asInstanceOf[BackgroundColor]
   }
   
@@ -33,5 +35,9 @@ object BackgroundColor {
     inline def setForegroundImage(value: String): Self = StObject.set(x, "foregroundImage", value.asInstanceOf[js.Any])
     
     inline def setForegroundImageNull: Self = StObject.set(x, "foregroundImage", null)
+    
+    inline def setMonochromeImage(value: String): Self = StObject.set(x, "monochromeImage", value.asInstanceOf[js.Any])
+    
+    inline def setMonochromeImageNull: Self = StObject.set(x, "monochromeImage", null)
   }
 }

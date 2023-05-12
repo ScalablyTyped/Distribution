@@ -22,6 +22,8 @@ trait ImgHTMLAttributes
   
   var height: js.UndefOr[Numberish] = js.undefined
   
+  var referrerpolicy: js.UndefOr[HTMLAttributeReferrerPolicy] = js.undefined
+  
   var sizes: js.UndefOr[String] = js.undefined
   
   var src: js.UndefOr[String] = js.undefined
@@ -57,6 +59,10 @@ object ImgHTMLAttributes {
     inline def setHeight(value: Numberish): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
+    inline def setReferrerpolicy(value: HTMLAttributeReferrerPolicy): Self = StObject.set(x, "referrerpolicy", value.asInstanceOf[js.Any])
+    
+    inline def setReferrerpolicyUndefined: Self = StObject.set(x, "referrerpolicy", js.undefined)
     
     inline def setSizes(value: String): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
     

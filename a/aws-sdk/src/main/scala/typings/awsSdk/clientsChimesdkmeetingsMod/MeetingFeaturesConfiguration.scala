@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MeetingFeaturesConfiguration extends StObject {
   
   /**
-    * The configuration settings for the audio features available to a meeting. 
+    * The configuration settings for the audio features available to a meeting.
     */
   var Audio: js.UndefOr[AudioFeatures] = js.undefined
 }

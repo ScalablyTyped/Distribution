@@ -2,6 +2,7 @@ package typings.firebaseFirestore
 
 import typings.firebaseFirestore.distLitePackagesFirestoreSrcAuthUserMod.User
 import typings.firebaseFirestore.distLitePackagesFirestoreSrcCoreDatabaseInfoMod.DatabaseId
+import typings.firebaseFirestore.distLitePackagesFirestoreSrcIndexEntryMod.IndexEntry
 import typings.firebaseFirestore.distLitePackagesFirestoreSrcLocalIndexManagerMod.IndexManager
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -102,6 +103,8 @@ object distLitePackagesFirestoreSrcLocalIndexeddbIndexManagerMod {
     /* private */ var getSubTargets: Any = js.native
     
     /* private */ var isInFilter: Any = js.native
+    
+    def isRangeMatchable(lowerBound: IndexEntry, upperBound: IndexEntry): Boolean = js.native
     
     /**
       * Maps from a target to its equivalent list of sub-targets. Each sub-target

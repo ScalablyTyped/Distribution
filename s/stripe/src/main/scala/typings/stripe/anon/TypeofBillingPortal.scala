@@ -17,9 +17,9 @@ trait TypeofBillingPortal extends StObject {
   
   var ConfigurationsResource: Instantiable0[typings.stripe.mod.Stripe.BillingPortal.ConfigurationsResource]
   
-  val Session: Any
+  val Session: TypeofSession
   
-  val SessionCreateParams: Any
+  val SessionCreateParams: TypeofSessionCreateParams
   
   var SessionsResource: Instantiable0[typings.stripe.mod.Stripe.BillingPortal.SessionsResource]
 }
@@ -30,8 +30,8 @@ object TypeofBillingPortal {
     ConfigurationCreateParams: TypeofConfigurationCreate,
     ConfigurationUpdateParams: TypeofConfigurationUpdate,
     ConfigurationsResource: Instantiable0[ConfigurationsResource],
-    Session: Any,
-    SessionCreateParams: Any,
+    Session: TypeofSession,
+    SessionCreateParams: TypeofSessionCreateParams,
     SessionsResource: Instantiable0[SessionsResource]
   ): TypeofBillingPortal = {
     val __obj = js.Dynamic.literal(Configuration = Configuration.asInstanceOf[js.Any], ConfigurationCreateParams = ConfigurationCreateParams.asInstanceOf[js.Any], ConfigurationUpdateParams = ConfigurationUpdateParams.asInstanceOf[js.Any], ConfigurationsResource = ConfigurationsResource.asInstanceOf[js.Any], Session = Session.asInstanceOf[js.Any], SessionCreateParams = SessionCreateParams.asInstanceOf[js.Any], SessionsResource = SessionsResource.asInstanceOf[js.Any])
@@ -49,9 +49,9 @@ object TypeofBillingPortal {
     
     inline def setConfigurationsResource(value: Instantiable0[ConfigurationsResource]): Self = StObject.set(x, "ConfigurationsResource", value.asInstanceOf[js.Any])
     
-    inline def setSession(value: Any): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
+    inline def setSession(value: TypeofSession): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
     
-    inline def setSessionCreateParams(value: Any): Self = StObject.set(x, "SessionCreateParams", value.asInstanceOf[js.Any])
+    inline def setSessionCreateParams(value: TypeofSessionCreateParams): Self = StObject.set(x, "SessionCreateParams", value.asInstanceOf[js.Any])
     
     inline def setSessionsResource(value: Instantiable0[SessionsResource]): Self = StObject.set(x, "SessionsResource", value.asInstanceOf[js.Any])
   }

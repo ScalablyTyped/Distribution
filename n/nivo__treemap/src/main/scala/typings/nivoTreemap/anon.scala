@@ -24,7 +24,7 @@ import typings.nivoTreemap.nivoTreemapStrings.squarify
 import typings.nivoTreemap.nivoTreemapStrings.top
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
-import typings.reactSpringTypes.interpolationMod.EasingFunction
+import typings.reactSpringTypes.mod.EasingFunction
 import typings.std.Element
 import typings.std.Omit
 import org.scalablytyped.runtime.StObject
@@ -838,7 +838,7 @@ object anon {
     }
   }
   
-  /* Inlined std.Partial<@react-spring/core.@react-spring/core/dist/declarations/src/AnimationConfig.AnimationConfig> */
+  /* Inlined std.Partial<@react-spring/core.@react-spring/core.AnimationConfig> */
   trait PartialAnimationConfig extends StObject {
     
     var bounce: js.UndefOr[Double] = js.undefined

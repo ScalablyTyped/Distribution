@@ -48,6 +48,9 @@ trait BookingBusiness
     */
   var isPublished: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
+  // The language of the self-service booking page.
+  var languageTag: js.UndefOr[NullableOption[String]] = js.undefined
+  
   /**
     * The telephone number for the business. The phone property, together with address and webSiteUrl, appear in the footer
     * of a business scheduling page.
@@ -152,6 +155,12 @@ object BookingBusiness {
     inline def setIsPublishedNull: Self = StObject.set(x, "isPublished", null)
     
     inline def setIsPublishedUndefined: Self = StObject.set(x, "isPublished", js.undefined)
+    
+    inline def setLanguageTag(value: NullableOption[String]): Self = StObject.set(x, "languageTag", value.asInstanceOf[js.Any])
+    
+    inline def setLanguageTagNull: Self = StObject.set(x, "languageTag", null)
+    
+    inline def setLanguageTagUndefined: Self = StObject.set(x, "languageTag", js.undefined)
     
     inline def setPhone(value: NullableOption[String]): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
     

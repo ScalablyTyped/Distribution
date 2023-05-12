@@ -1,7 +1,6 @@
 package typings.openui5.anon
 
 import typings.openui5.sapUiTableColumnMod.default
-import typings.openui5.sapUiTableLibraryMod.SortOrder
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +21,7 @@ trait ColumnAdded extends StObject {
     * Sort Order
     */
   var sortOrder: js.UndefOr[
-    SortOrder | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SortOrder * / any */ String)
+    typings.openui5.sapUiTableLibraryMod.SortOrder | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SortOrder * / any */ String)
   ] = js.undefined
 }
 object ColumnAdded {
@@ -44,7 +43,7 @@ object ColumnAdded {
     inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
     
     inline def setSortOrder(
-      value: SortOrder | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SortOrder * / any */ String)
+      value: typings.openui5.sapUiTableLibraryMod.SortOrder | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SortOrder * / any */ String)
     ): Self = StObject.set(x, "sortOrder", value.asInstanceOf[js.Any])
     
     inline def setSortOrderUndefined: Self = StObject.set(x, "sortOrder", js.undefined)

@@ -12,12 +12,17 @@ trait CopyImageRequest extends StObject {
   var ClientToken: js.UndefOr[String] = js.undefined
   
   /**
+    * Indicates whether to include your user-defined AMI tags when copying the AMI. The following tags will not be copied:   System tags (prefixed with aws:)   For public and shared AMIs, user-defined tags that are attached by other Amazon Web Services accounts   Default: Your user-defined AMI tags are not copied.
+    */
+  var CopyImageTags: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * A description for the new AMI in the destination Region.
     */
   var Description: js.UndefOr[String] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the Outpost to which to copy the AMI. Only specify this parameter when copying an AMI from an Amazon Web Services Region to an Outpost. The AMI must be in the Region of the destination Outpost. You cannot copy an AMI from an Outpost to a Region, from one Outpost to another, or within the same Outpost. For more information, see  Copying AMIs from an Amazon Web Services Region to an Outpost in the Amazon Elastic Compute Cloud User Guide.
+    * The Amazon Resource Name (ARN) of the Outpost to which to copy the AMI. Only specify this parameter when copying an AMI from an Amazon Web Services Region to an Outpost. The AMI must be in the Region of the destination Outpost. You cannot copy an AMI from an Outpost to a Region, from one Outpost to another, or within the same Outpost. For more information, see  Copy AMIs from an Amazon Web Services Region to an Outpost in the Amazon EC2 User Guide.
     */
   var DestinationOutpostArn: js.UndefOr[String] = js.undefined
   
@@ -27,7 +32,7 @@ trait CopyImageRequest extends StObject {
   var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Specifies whether the destination snapshots of the copied image should be encrypted. You can encrypt a copy of an unencrypted snapshot, but you cannot create an unencrypted copy of an encrypted snapshot. The default KMS key for Amazon EBS is used unless you specify a non-default Key Management Service (KMS) KMS key using KmsKeyId. For more information, see Amazon EBS Encryption in the Amazon Elastic Compute Cloud User Guide.
+    * Specifies whether the destination snapshots of the copied image should be encrypted. You can encrypt a copy of an unencrypted snapshot, but you cannot create an unencrypted copy of an encrypted snapshot. The default KMS key for Amazon EBS is used unless you specify a non-default Key Management Service (KMS) KMS key using KmsKeyId. For more information, see Amazon EBS encryption in the Amazon EC2 User Guide.
     */
   var Encrypted: js.UndefOr[Boolean] = js.undefined
   
@@ -64,6 +69,10 @@ object CopyImageRequest {
     inline def setClientToken(value: String): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     
     inline def setClientTokenUndefined: Self = StObject.set(x, "ClientToken", js.undefined)
+    
+    inline def setCopyImageTags(value: Boolean): Self = StObject.set(x, "CopyImageTags", value.asInstanceOf[js.Any])
+    
+    inline def setCopyImageTagsUndefined: Self = StObject.set(x, "CopyImageTags", js.undefined)
     
     inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

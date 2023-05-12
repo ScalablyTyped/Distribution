@@ -51,6 +51,11 @@ trait CoverageEligibilityResponse
   var error: js.UndefOr[js.Array[CoverageEligibilityResponseError]] = js.undefined
   
   /**
+    * Information code for an event with a corresponding date or period.
+    */
+  var event: js.UndefOr[js.Array[CoverageEligibilityResponseEvent]] = js.undefined
+  
+  /**
     * May be needed to identify specific jurisdictional forms.
     */
   var form: js.UndefOr[CodeableConcept] = js.undefined
@@ -96,7 +101,7 @@ trait CoverageEligibilityResponse
   var request: Reference
   
   /**
-    * Typically this field would be 1..1 where this party is responsible for the claim but not necessarily professionally responsible for the provision of the individual products and services listed below.
+    * This party is responsible for the claim but not necessarily professionally responsible for the provision of the individual products and services listed below. This field is the Billing Provider, for example, a facility, provider group, lab or practitioner.
     */
   var requestor: js.UndefOr[Reference] = js.undefined
   
@@ -148,6 +153,12 @@ object CoverageEligibilityResponse {
     inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     inline def setErrorVarargs(value: CoverageEligibilityResponseError*): Self = StObject.set(x, "error", js.Array(value*))
+    
+    inline def setEvent(value: js.Array[CoverageEligibilityResponseEvent]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    
+    inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
+    
+    inline def setEventVarargs(value: CoverageEligibilityResponseEvent*): Self = StObject.set(x, "event", js.Array(value*))
     
     inline def setForm(value: CodeableConcept): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
     

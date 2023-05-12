@@ -1,9 +1,8 @@
 package typings.tsLoader.distInterfacesMod
 
 import typings.typescript.mod.CompilerOptions
-import typings.typescript.mod.ModuleKind.CommonJS
-import typings.typescript.mod.ModuleKind.ESNext
 import typings.typescript.mod.ModuleResolutionHost
+import typings.typescript.mod.ResolutionMode
 import typings.typescript.mod.ResolvedProjectReference
 import typings.typescript.mod.ResolvedTypeReferenceDirectiveWithFailedLookupLocations
 import typings.typescript.mod.TypeReferenceDirectiveResolutionCache
@@ -27,7 +26,7 @@ trait TSCommon extends StObject {
     host: ModuleResolutionHost,
     redirectedReference: Unit,
     cache: Unit,
-    resolutionMode: js.UndefOr[ESNext | CommonJS]
+    resolutionMode: js.UndefOr[ResolutionMode]
   ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = js.native
   def resolveTypeReferenceDirective(
     typeReferenceDirectiveName: String,
@@ -44,7 +43,7 @@ trait TSCommon extends StObject {
     host: ModuleResolutionHost,
     redirectedReference: Unit,
     cache: TypeReferenceDirectiveResolutionCache,
-    resolutionMode: js.UndefOr[ESNext | CommonJS]
+    resolutionMode: js.UndefOr[ResolutionMode]
   ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = js.native
   def resolveTypeReferenceDirective(
     typeReferenceDirectiveName: String,
@@ -60,7 +59,7 @@ trait TSCommon extends StObject {
     host: ModuleResolutionHost,
     redirectedReference: ResolvedProjectReference,
     cache: Unit,
-    resolutionMode: js.UndefOr[ESNext | CommonJS]
+    resolutionMode: js.UndefOr[ResolutionMode]
   ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = js.native
   def resolveTypeReferenceDirective(
     typeReferenceDirectiveName: String,
@@ -77,7 +76,7 @@ trait TSCommon extends StObject {
     host: ModuleResolutionHost,
     redirectedReference: ResolvedProjectReference,
     cache: TypeReferenceDirectiveResolutionCache,
-    resolutionMode: js.UndefOr[ESNext | CommonJS]
+    resolutionMode: js.UndefOr[ResolutionMode]
   ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = js.native
   def resolveTypeReferenceDirective(
     typeReferenceDirectiveName: String,
@@ -92,7 +91,7 @@ trait TSCommon extends StObject {
     host: ModuleResolutionHost,
     redirectedReference: Unit,
     cache: Unit,
-    resolutionMode: js.UndefOr[ESNext | CommonJS]
+    resolutionMode: js.UndefOr[ResolutionMode]
   ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = js.native
   def resolveTypeReferenceDirective(
     typeReferenceDirectiveName: String,
@@ -109,7 +108,7 @@ trait TSCommon extends StObject {
     host: ModuleResolutionHost,
     redirectedReference: Unit,
     cache: TypeReferenceDirectiveResolutionCache,
-    resolutionMode: js.UndefOr[ESNext | CommonJS]
+    resolutionMode: js.UndefOr[ResolutionMode]
   ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = js.native
   def resolveTypeReferenceDirective(
     typeReferenceDirectiveName: String,
@@ -125,7 +124,7 @@ trait TSCommon extends StObject {
     host: ModuleResolutionHost,
     redirectedReference: ResolvedProjectReference,
     cache: Unit,
-    resolutionMode: js.UndefOr[ESNext | CommonJS]
+    resolutionMode: js.UndefOr[ResolutionMode]
   ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = js.native
   def resolveTypeReferenceDirective(
     typeReferenceDirectiveName: String,
@@ -142,6 +141,6 @@ trait TSCommon extends StObject {
     host: ModuleResolutionHost,
     redirectedReference: ResolvedProjectReference,
     cache: TypeReferenceDirectiveResolutionCache,
-    resolutionMode: js.UndefOr[ESNext | CommonJS]
+    resolutionMode: js.UndefOr[ResolutionMode]
   ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = js.native
 }

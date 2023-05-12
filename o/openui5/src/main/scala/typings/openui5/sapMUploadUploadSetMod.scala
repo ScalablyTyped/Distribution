@@ -1,8 +1,8 @@
 package typings.openui5
 
 import typings.openui5.anon.ReadyState
-import typings.openui5.anon.`24`
-import typings.openui5.anon.`25`
+import typings.openui5.anon.`31`
+import typings.openui5.anon.`32`
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapMLibraryMod.ListMode
 import typings.openui5.sapMUploadUploaderHttpRequestMethodMod.UploaderHttpRequestMethod
@@ -1886,6 +1886,8 @@ object sapMUploadUploadSetMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:afterItemAdded afterItemAdded} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -1894,10 +1896,11 @@ object sapMUploadUploadSetMod {
     def fireAfterItemAdded(/**
       * Parameters to pass along with the event
       */
-    mParameters: `24`): this.type = js.native
+    mParameters: `31`): this.type = js.native
     
     /**
       * @SINCE 1.83
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:afterItemEdited afterItemEdited} to attached listeners.
       *
@@ -1907,10 +1910,11 @@ object sapMUploadUploadSetMod {
     def fireAfterItemEdited(/**
       * Parameters to pass along with the event
       */
-    mParameters: `24`): this.type = js.native
+    mParameters: `31`): this.type = js.native
     
     /**
       * @SINCE 1.83
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:afterItemRemoved afterItemRemoved} to attached listeners.
       *
@@ -1920,9 +1924,11 @@ object sapMUploadUploadSetMod {
     def fireAfterItemRemoved(/**
       * Parameters to pass along with the event
       */
-    mParameters: `24`): this.type = js.native
+    mParameters: `31`): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:beforeItemAdded beforeItemAdded} to attached listeners.
       *
       * Listeners may prevent the default action of this event by calling the `preventDefault` method on the
@@ -1934,9 +1940,11 @@ object sapMUploadUploadSetMod {
     def fireBeforeItemAdded(/**
       * Parameters to pass along with the event
       */
-    mParameters: `24`): Boolean = js.native
+    mParameters: `31`): Boolean = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:beforeItemEdited beforeItemEdited} to attached listeners.
       *
       * Listeners may prevent the default action of this event by calling the `preventDefault` method on the
@@ -1948,9 +1956,11 @@ object sapMUploadUploadSetMod {
     def fireBeforeItemEdited(/**
       * Parameters to pass along with the event
       */
-    mParameters: `24`): Boolean = js.native
+    mParameters: `31`): Boolean = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:beforeItemRemoved beforeItemRemoved} to attached listeners.
       *
       * Listeners may prevent the default action of this event by calling the `preventDefault` method on the
@@ -1962,9 +1972,11 @@ object sapMUploadUploadSetMod {
     def fireBeforeItemRemoved(/**
       * Parameters to pass along with the event
       */
-    mParameters: `24`): Boolean = js.native
+    mParameters: `31`): Boolean = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:beforeUploadStarts beforeUploadStarts} to attached listeners.
       *
       * Listeners may prevent the default action of this event by calling the `preventDefault` method on the
@@ -1976,9 +1988,11 @@ object sapMUploadUploadSetMod {
     def fireBeforeUploadStarts(/**
       * Parameters to pass along with the event
       */
-    mParameters: `24`): Boolean = js.native
+    mParameters: `31`): Boolean = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:beforeUploadTermination beforeUploadTermination} to attached listeners.
       *
       * Listeners may prevent the default action of this event by calling the `preventDefault` method on the
@@ -1990,9 +2004,11 @@ object sapMUploadUploadSetMod {
     def fireBeforeUploadTermination(/**
       * Parameters to pass along with the event
       */
-    mParameters: `24`): Boolean = js.native
+    mParameters: `31`): Boolean = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:fileNameLengthExceeded fileNameLengthExceeded} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -2001,10 +2017,11 @@ object sapMUploadUploadSetMod {
     def fireFileNameLengthExceeded(/**
       * Parameters to pass along with the event
       */
-    mParameters: `24`): this.type = js.native
+    mParameters: `31`): this.type = js.native
     
     /**
       * @SINCE 1.100.0
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:fileRenamed fileRenamed} to attached listeners.
       *
@@ -2014,9 +2031,11 @@ object sapMUploadUploadSetMod {
     def fireFileRenamed(/**
       * Parameters to pass along with the event
       */
-    mParameters: `24`): this.type = js.native
+    mParameters: `31`): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:fileSizeExceeded fileSizeExceeded} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -2025,9 +2044,11 @@ object sapMUploadUploadSetMod {
     def fireFileSizeExceeded(/**
       * Parameters to pass along with the event
       */
-    mParameters: `24`): this.type = js.native
+    mParameters: `31`): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:fileTypeMismatch fileTypeMismatch} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -2036,10 +2057,11 @@ object sapMUploadUploadSetMod {
     def fireFileTypeMismatch(/**
       * Parameters to pass along with the event
       */
-    mParameters: `24`): this.type = js.native
+    mParameters: `31`): this.type = js.native
     
     /**
       * @SINCE 1.99
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:itemDragStart itemDragStart} to attached listeners.
       *
@@ -2053,6 +2075,7 @@ object sapMUploadUploadSetMod {
     
     /**
       * @SINCE 1.99
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:itemDrop itemDrop} to attached listeners.
       *
@@ -2065,6 +2088,8 @@ object sapMUploadUploadSetMod {
     mParameters: js.Object): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:mediaTypeMismatch mediaTypeMismatch} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -2073,9 +2098,11 @@ object sapMUploadUploadSetMod {
     def fireMediaTypeMismatch(/**
       * Parameters to pass along with the event
       */
-    mParameters: `24`): this.type = js.native
+    mParameters: `31`): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:selectionChanged selectionChanged} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -2084,9 +2111,11 @@ object sapMUploadUploadSetMod {
     def fireSelectionChanged(/**
       * Parameters to pass along with the event
       */
-    mParameters: `25`): this.type = js.native
+    mParameters: `32`): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:uploadCompleted uploadCompleted} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -2098,6 +2127,8 @@ object sapMUploadUploadSetMod {
     mParameters: ReadyState): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:uploadTerminated uploadTerminated} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -2106,7 +2137,7 @@ object sapMUploadUploadSetMod {
     def fireUploadTerminated(/**
       * Parameters to pass along with the event
       */
-    mParameters: `24`): this.type = js.native
+    mParameters: `31`): this.type = js.native
     
     /**
       * @EXPERIMENTAL (since 1.106)
@@ -2158,6 +2189,8 @@ object sapMUploadUploadSetMod {
     def getDefaultFileUploader(): typings.openui5.sapUiUnifiedFileUploaderMod.default = js.native
     
     /**
+      * @SINCE 1.107
+      *
       * Gets current value of property {@link #getDirectory directory}.
       *
       * Lets the user upload entire files from directories and sub directories.
@@ -2703,6 +2736,8 @@ object sapMUploadUploadSetMod {
     sCloudFilePickerServiceUrl: URI): this.type = js.native
     
     /**
+      * @SINCE 1.107
+      *
       * Sets a new value for property {@link #getDirectory directory}.
       *
       * Lets the user upload entire files from directories and sub directories.
@@ -3196,6 +3231,8 @@ object sapMUploadUploadSetMod {
     var cloudFilePickerServiceUrl: js.UndefOr[URI | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
     
     /**
+      * @SINCE 1.107
+      *
       * Lets the user upload entire files from directories and sub directories.
       */
     var directory: js.UndefOr[

@@ -22,7 +22,7 @@ trait ListDiscoveredResourcesRequest extends StObject {
   var nextToken: js.UndefOr[NextToken] = js.undefined
   
   /**
-    * The IDs of only those resources that you want Config to list in the response. If you do not specify this parameter, Config lists all resources of the specified type that it has discovered.
+    * The IDs of only those resources that you want Config to list in the response. If you do not specify this parameter, Config lists all resources of the specified type that it has discovered. You can list a minimum of 1 resourceID and a maximum of 20 resourceIds.
     */
   var resourceIds: js.UndefOr[ResourceIdList] = js.undefined
   

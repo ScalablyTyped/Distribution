@@ -6,7 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GetResponses200422500 extends StObject {
   
-  /** **Note:** Responses include a maximum of 3000 files. The paginated response returns 30 files per page by default. */
+  /**
+    * List pull requests files
+    * @description **Note:** Responses include a maximum of 3000 files. The paginated response returns 30 files per page by default.
+    */
   var get: Responses200422500
 }
 object GetResponses200422500 {

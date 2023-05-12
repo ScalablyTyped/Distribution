@@ -1,6 +1,5 @@
 package typings.openui5.anon
 
-import typings.openui5.sapMUploadUploadSetItemMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `25` extends StObject {
   
   /**
-    * Items whose selection status has just been changed.
+    * whether the view source is loaded asynchronously
     */
-  var items: js.UndefOr[js.Array[default]] = js.undefined
+  var async: js.UndefOr[Boolean] = js.undefined
 }
 object `25` {
   
@@ -22,10 +21,8 @@ object `25` {
   @scala.inline
   implicit open class MutableBuilder[Self <: `25`] (val x: Self) extends AnyVal {
     
-    inline def setItems(value: js.Array[default]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
     
-    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
-    
-    inline def setItemsVarargs(value: default*): Self = StObject.set(x, "items", js.Array(value*))
+    inline def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
   }
 }

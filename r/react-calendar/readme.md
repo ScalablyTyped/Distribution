@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-calendar
 
-Typings are for version 3.9
+Typings are for version 4.2.1
 
 ## Library description:
 Ultimate calendar for your React app.
@@ -24,7 +24,7 @@ Ultimate calendar for your React app.
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

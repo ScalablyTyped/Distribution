@@ -22,7 +22,7 @@ trait S3CopyObjectOperation extends StObject {
   var CannedAccessControlList: js.UndefOr[S3CannedAccessControlList] = js.undefined
   
   /**
-    * Indicates the algorithm you want Amazon S3 to use to create the checksum. For more information see  Checking object integrity in the Amazon S3 User Guide.
+    * Indicates the algorithm that you want Amazon S3 to use to create the checksum. For more information, see  Checking object integrity in the Amazon S3 User Guide.
     */
   var ChecksumAlgorithm: js.UndefOr[S3ChecksumAlgorithm] = js.undefined
   
@@ -82,12 +82,12 @@ trait S3CopyObjectOperation extends StObject {
   var StorageClass: js.UndefOr[S3StorageClass] = js.undefined
   
   /**
-    * Specifies the folder prefix into which you would like the objects to be copied. For example, to copy objects into a folder named Folder1 in the destination bucket, set the TargetKeyPrefix to Folder1.
+    * Specifies the folder prefix that you want the objects to be copied into. For example, to copy objects into a folder named Folder1 in the destination bucket, set the TargetKeyPrefix property to Folder1.
     */
   var TargetKeyPrefix: js.UndefOr[NonEmptyMaxLength1024String] = js.undefined
   
   /**
-    * Specifies the destination bucket ARN for the batch copy operation. For example, to copy objects to a bucket named "destinationBucket", set the TargetResource to "arn:aws:s3:::destinationBucket".
+    * Specifies the destination bucket Amazon Resource Name (ARN) for the batch copy operation. For example, to copy objects to a bucket named destinationBucket, set the TargetResource property to arn:aws:s3:::destinationBucket.
     */
   var TargetResource: js.UndefOr[S3BucketArnString] = js.undefined
   

@@ -20,7 +20,7 @@ object componentsModalModalPortalMod {
     def this(props: ModalPortalProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: ModalPortalProps, context: Any) = this()
     

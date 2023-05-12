@@ -4,12 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Defines Open Location Codes or &quot;<a href="https://plus.codes/">plus
-  * codes</a>&quot; for a Place. Plus codes can be used as a replacement for
-  * street addresses in places where they do not exist (where buildings are not
-  * numbered or streets are not named).
-  */
 trait PlacePlusCode extends StObject {
   
   /**

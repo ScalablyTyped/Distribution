@@ -12,6 +12,11 @@ trait FinalAutoMLJobObjectiveMetric extends StObject {
   var MetricName: AutoMLMetricEnum
   
   /**
+    * The name of the standard metric. For a description of the standard metrics, see Autopilot candidate metrics.
+    */
+  var StandardMetricName: js.UndefOr[AutoMLMetricEnum] = js.undefined
+  
+  /**
     * The type of metric with the best result.
     */
   var Type: js.UndefOr[AutoMLJobObjectiveType] = js.undefined
@@ -32,6 +37,10 @@ object FinalAutoMLJobObjectiveMetric {
   implicit open class MutableBuilder[Self <: FinalAutoMLJobObjectiveMetric] (val x: Self) extends AnyVal {
     
     inline def setMetricName(value: AutoMLMetricEnum): Self = StObject.set(x, "MetricName", value.asInstanceOf[js.Any])
+    
+    inline def setStandardMetricName(value: AutoMLMetricEnum): Self = StObject.set(x, "StandardMetricName", value.asInstanceOf[js.Any])
+    
+    inline def setStandardMetricNameUndefined: Self = StObject.set(x, "StandardMetricName", js.undefined)
     
     inline def setType(value: AutoMLJobObjectiveType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     

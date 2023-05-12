@@ -1,14 +1,14 @@
 package typings.firefoxWebextBrowser.anon
 
 import typings.firefoxWebextBrowser.browser.manifest.ExtensionURL
-import typings.firefoxWebextBrowser.browser.manifest.PersistentBackgroundProperty
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Persistent extends StObject {
   
-  var persistent: js.UndefOr[PersistentBackgroundProperty] = js.undefined
+  /** Not supported on manifest versions above 2. */
+  var persistent: js.UndefOr[Boolean] = js.undefined
   
   var scripts: js.Array[ExtensionURL]
 }
@@ -22,7 +22,7 @@ object Persistent {
   @scala.inline
   implicit open class MutableBuilder[Self <: Persistent] (val x: Self) extends AnyVal {
     
-    inline def setPersistent(value: PersistentBackgroundProperty): Self = StObject.set(x, "persistent", value.asInstanceOf[js.Any])
+    inline def setPersistent(value: Boolean): Self = StObject.set(x, "persistent", value.asInstanceOf[js.Any])
     
     inline def setPersistentUndefined: Self = StObject.set(x, "persistent", js.undefined)
     

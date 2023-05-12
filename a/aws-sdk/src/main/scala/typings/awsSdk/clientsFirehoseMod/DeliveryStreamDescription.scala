@@ -12,7 +12,7 @@ trait DeliveryStreamDescription extends StObject {
   var CreateTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the delivery stream. For more information, see Amazon Resource Names (ARNs) and AWS Service Namespaces.
+    * The Amazon Resource Name (ARN) of the delivery stream. For more information, see Amazon Resource Names (ARNs) and Amazon Web Services Service Namespaces.
     */
   var DeliveryStreamARN: typings.awsSdk.clientsFirehoseMod.DeliveryStreamARN
   

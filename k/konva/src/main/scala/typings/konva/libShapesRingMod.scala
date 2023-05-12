@@ -1,5 +1,6 @@
 package typings.konva
 
+import typings.konva.libContextMod.Context
 import typings.konva.libShapeMod.Shape
 import typings.konva.libShapeMod.ShapeConfig
 import typings.konva.libTypesMod.GetSet
@@ -14,7 +15,7 @@ object libShapesRingMod {
   open class Ring () extends Shape[RingConfig] {
     def this(config: RingConfig) = this()
     
-    def _sceneFunc(context: Any): Unit = js.native
+    def _sceneFunc(context: Context): Unit = js.native
     
     def getHeight(): Double = js.native
     
@@ -30,9 +31,9 @@ object libShapesRingMod {
     @JSName("outerRadius")
     var outerRadius_Original: GetSet[Double, this.type] = js.native
     
-    def setHeight(height: Any): Unit = js.native
+    def setHeight(height: Double): Unit = js.native
     
-    def setWidth(width: Any): Unit = js.native
+    def setWidth(width: Double): Unit = js.native
   }
   
   trait RingConfig

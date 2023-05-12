@@ -29,7 +29,7 @@ trait DescribeNetworkInterfaces extends StObject {
   var Filters: js.UndefOr[FilterList] = js.undefined
   
   /**
-    * The maximum number of items to return for this request. The request returns a token that you can specify in a subsequent call to get the next set of results. You cannot specify this parameter and the network interface IDs parameter in the same request.
+    * The maximum number of items to return for this request. To get the next page of items, make another request with the token returned in the output. You cannot specify this parameter and the network interface IDs parameter in the same request. For more information, see Pagination.
     */
   var MaxResults: js.UndefOr[DescribeNetworkInterfacesMaxResults] = js.undefined
   
@@ -39,7 +39,7 @@ trait DescribeNetworkInterfaces extends StObject {
   var NetworkInterfaceIds: js.UndefOr[NetworkInterfaceIdList] = js.undefined
   
   /**
-    * The token to retrieve the next page of results.
+    * The token returned from a previous paginated request. Pagination continues from the end of the items returned by the previous request.
     */
   var NextToken: js.UndefOr[String] = js.undefined
 }

@@ -1,6 +1,7 @@
 package typings.three
 
 import typings.three.srcCoreBufferGeometryMod.BufferGeometry
+import typings.three.srcCoreBufferGeometryMod.NormalBufferAttributes
 import typings.three.srcMaterialsMaterialMod.Material
 import typings.three.srcThreeMod.Color
 import typings.three.srcThreeMod.Mesh
@@ -13,7 +14,7 @@ object examplesJsmObjectsMarchingCubesMod {
   @JSImport("three/examples/jsm/objects/MarchingCubes", "MarchingCubes")
   @js.native
   open class MarchingCubes protected ()
-    extends Mesh[BufferGeometry, Material | js.Array[Material]] {
+    extends Mesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]] {
     def this(resolution: Double, material: typings.three.srcThreeMod.Material) = this()
     def this(resolution: Double, material: typings.three.srcThreeMod.Material, enableUvs: Boolean) = this()
     def this(
@@ -85,9 +86,9 @@ object examplesJsmObjectsMarchingCubesMod {
     
     var field: js.typedarray.Float32Array = js.native
     
-    def generateBufferGeometry(): typings.three.srcThreeMod.BufferGeometry = js.native
+    def generateBufferGeometry(): typings.three.srcThreeMod.BufferGeometry[NormalBufferAttributes] = js.native
     
-    def generateGeometry(): typings.three.srcThreeMod.BufferGeometry = js.native
+    def generateGeometry(): typings.three.srcThreeMod.BufferGeometry[NormalBufferAttributes] = js.native
     
     def getCell(x: Double, y: Double, z: Double): Double = js.native
     
@@ -130,6 +131,8 @@ object examplesJsmObjectsMarchingCubesMod {
     var size2: Double = js.native
     
     var size3: Double = js.native
+    
+    def update(): Unit = js.native
     
     var uvArray: js.typedarray.Float32Array = js.native
     

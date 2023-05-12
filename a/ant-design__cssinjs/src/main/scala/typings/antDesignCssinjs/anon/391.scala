@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.MsBlockProgression
+import typings.csstype.mod.Property.MozContextProperties
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,11 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `391` extends StObject {
   
   var value: js.UndefOr[
-    MsBlockProgression | (js.Array[
+    MozContextProperties | (js.Array[
       (Extract[
-        js.UndefOr[MsBlockProgression | js.Array[NonNullable[js.UndefOr[MsBlockProgression]]]], 
+        js.UndefOr[MozContextProperties | js.Array[NonNullable[js.UndefOr[MozContextProperties]]]], 
         String
-      ]) | NonNullable[js.UndefOr[MsBlockProgression]]
+      ]) | NonNullable[js.UndefOr[MozContextProperties]]
     ])
   ] = js.native
 }

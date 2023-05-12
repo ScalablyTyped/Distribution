@@ -87,6 +87,8 @@ object libN3parserMod {
     
     def formula(): Any = js.native
     
+    var hasNil: Boolean = js.native
+    
     def here(i: Any): String = js.native
     
     def item(str: Any, i: Any, res: Any): Any = js.native

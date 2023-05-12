@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class SplitZipWriter protected () extends SplitDataWriter {
   /**
     * Creates the {@link SplitDataWriter} instance
-    * 
-    * @param writerGenerator The MIME type of the content.
+    *
+    * @param writerGenerator A generator of Writer isntances.
     * @param maxSize The maximum size of the data written into {@link Writer} instances (default: 4GB).
     */
   def this(writerGenerator: AsyncGenerator[Writer[Any] | WritableWriter | WritableStream[Any], Boolean, Any]) = this()

@@ -21,19 +21,9 @@ trait ClassDeclarationClassDecl extends StObject {
   
   var _declarationBrand: Any = js.native
   
-  var _statementBrand: Any = js.native
+  var _jsdocContainerBrand: Any = js.native
   
-  /**
-    * @deprecated `decorators` has been removed from `Node` and merged with `modifiers` on the `Node` subtypes that support them.
-    * Use `ts.canHaveDecorators()` to test whether a `Node` can have decorators.
-    * Use `ts.getDecorators()` to get the decorators of a `Node`.
-    *
-    * For example:
-    * ```ts
-    * const decorators = ts.canHaveDecorators(node) ? ts.getDecorators(node) : undefined;
-    * ```
-    */
-  val decorators: Unit = js.native
+  var _statementBrand: Any = js.native
   
   val end: Double = js.native
   

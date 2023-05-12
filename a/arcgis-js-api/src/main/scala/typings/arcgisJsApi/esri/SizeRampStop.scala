@@ -10,7 +10,7 @@ trait SizeRampStop extends StObject {
   /**
     * The label in the legend describing features with the given `symbol` and `value`.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#SizeRampStop)
+    * [Read more...](global.html)
     */
   var label: String
   

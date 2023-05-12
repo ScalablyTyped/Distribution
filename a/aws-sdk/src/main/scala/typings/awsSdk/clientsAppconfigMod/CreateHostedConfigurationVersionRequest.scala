@@ -35,6 +35,11 @@ trait CreateHostedConfigurationVersionRequest extends StObject {
     * An optional locking token used to prevent race conditions from overwriting configuration updates when creating a new version. To ensure your data is not overwritten when creating multiple hosted configuration versions in rapid succession, specify the version number of the latest hosted configuration version.
     */
   var LatestVersionNumber: js.UndefOr[Integer] = js.undefined
+  
+  /**
+    * An optional, user-defined label for the AppConfig hosted configuration version. This value must contain at least one non-numeric character. For example, "v2.2.0".
+    */
+  var VersionLabel: js.UndefOr[typings.awsSdk.clientsAppconfigMod.VersionLabel] = js.undefined
 }
 object CreateHostedConfigurationVersionRequest {
   
@@ -66,5 +71,9 @@ object CreateHostedConfigurationVersionRequest {
     inline def setLatestVersionNumber(value: Integer): Self = StObject.set(x, "LatestVersionNumber", value.asInstanceOf[js.Any])
     
     inline def setLatestVersionNumberUndefined: Self = StObject.set(x, "LatestVersionNumber", js.undefined)
+    
+    inline def setVersionLabel(value: VersionLabel): Self = StObject.set(x, "VersionLabel", value.asInstanceOf[js.Any])
+    
+    inline def setVersionLabelUndefined: Self = StObject.set(x, "VersionLabel", js.undefined)
   }
 }

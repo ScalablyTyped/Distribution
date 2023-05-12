@@ -4,10 +4,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.angularRouter.mod.Event2 because Already inherited */ @JSImport("@angular/router", "NavigationError")
+@JSImport("@angular/router", "NavigationError")
 @js.native
-open class NavigationError protected () extends RouterEvent {
+open class NavigationError protected ()
+  extends RouterEvent
+     with Event2 {
   def this(
     /** @docsNotRequired */
   id: Double,

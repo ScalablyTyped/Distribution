@@ -25,30 +25,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Rewritten from type alias, can be one of: 
-  - typings.mongodb.mongodbInts.`19`
-  - typings.mongodb.mongodbInts.`16`
-  - typings.mongodb.mongodbInts.`3`
-  - typings.mongodb.mongodbInts.`127`
-  - typings.mongodb.mongodbInts.`13`
-  - typings.mongodb.mongodbInts.`2`
-  - typings.mongodb.mongodbInts.`17`
-  - typings.mongodb.mongodbInts.`4`
-  - typings.mongodb.mongodbInts.`7`
-  - typings.mongodb.mongodbInts.`5`
-  - typings.mongodb.mongodbInts.`15`
-  - typings.mongodb.mongodbInts.`12`
-  - typings.mongodb.mongodbInts.`11`
-  - typings.mongodb.mongodbInts.`6`
-  - typings.mongodb.mongodbInts.`10`
-  - typings.mongodb.mongodbInts.`9`
-  - typings.mongodb.mongodbInts.`8`
-  - typings.mongodb.mongodbInts.`1`
-  - typings.mongodb.mongodbInts.`-1`
-  - typings.mongodb.mongodbInts.`14`
-  - typings.mongodb.mongodbInts.`18`
-*/
-trait BSONType extends StObject
 /* Inlined std.Readonly<{ readonly double :1,  readonly string :2,  readonly object :3,  readonly array :4,  readonly binData :5,  readonly undefined :6,  readonly objectId :7,  readonly bool :8,  readonly date :9,  readonly null :10,  readonly regex :11,  readonly dbPointer :12,  readonly javascript :13,  readonly symbol :14,  readonly javascriptWithScope :15,  readonly int :16,  readonly timestamp :17,  readonly long :18,  readonly decimal :19,  readonly minKey :-1,  readonly maxKey :127}> */
 object BSONType {
   

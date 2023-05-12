@@ -10,9 +10,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.microsoftGraph.microsoftGraphStrings.signin_
   - typings.microsoftGraph.microsoftGraphStrings.user
   - typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue_
+  - typings.microsoftGraph.microsoftGraphStrings.servicePrincipal
 */
 trait ActivityType extends StObject
 object ActivityType {
+  
+  inline def servicePrincipal: typings.microsoftGraph.microsoftGraphStrings.servicePrincipal = "servicePrincipal".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.servicePrincipal]
   
   inline def signin: signin_ = "signin".asInstanceOf[signin_]
   

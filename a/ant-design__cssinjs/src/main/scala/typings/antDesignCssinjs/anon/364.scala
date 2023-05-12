@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.MixBlendMode
+import typings.csstype.mod.Property.ScrollMarginInline
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,8 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `364` extends StObject {
   
   var value: js.UndefOr[
-    MixBlendMode | (js.Array[
-      (Extract[js.UndefOr[MixBlendMode | js.Array[NonNullable[js.UndefOr[MixBlendMode]]]], String]) | NonNullable[js.UndefOr[MixBlendMode]]
+    (ScrollMarginInline[Double | String]) | (js.Array[
+      (Extract[
+        js.UndefOr[
+          (ScrollMarginInline[Double | String]) | (js.Array[NonNullable[js.UndefOr[ScrollMarginInline[Double | String]]]])
+        ], 
+        String
+      ]) | (NonNullable[js.UndefOr[ScrollMarginInline[Double | String]]])
     ])
   ] = js.native
 }

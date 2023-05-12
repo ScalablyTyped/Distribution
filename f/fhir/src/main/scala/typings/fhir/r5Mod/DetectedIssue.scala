@@ -2,15 +2,11 @@ package typings.fhir.r5Mod
 
 import typings.fhir.fhirStrings.`entered-in-error`
 import typings.fhir.fhirStrings.`final`
-import typings.fhir.fhirStrings.amended
-import typings.fhir.fhirStrings.cancelled
-import typings.fhir.fhirStrings.corrected
 import typings.fhir.fhirStrings.high
 import typings.fhir.fhirStrings.low
+import typings.fhir.fhirStrings.mitigated
 import typings.fhir.fhirStrings.moderate
 import typings.fhir.fhirStrings.preliminary
-import typings.fhir.fhirStrings.registered
-import typings.fhir.fhirStrings.unknown
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,7 +32,12 @@ trait DetectedIssue
   var author: js.UndefOr[Reference] = js.undefined
   
   /**
-    * Identifies the general type of issue identified.
+    * In addition to the required category valueset, this element allows various categorization schemes based on the owner’s definition of the category and effectively multiple categories can be used at once.  The level of granularity is defined by the category concepts in the value set.
+    */
+  var category: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
+  
+  /**
+    * Identifies the specific type of issue identified.
     */
   var code: js.UndefOr[CodeableConcept] = js.undefined
   
@@ -44,6 +45,11 @@ trait DetectedIssue
     * Should focus on information not covered elsewhere as discrete data - no need to duplicate the narrative.
     */
   var detail: js.UndefOr[String] = js.undefined
+  
+  /**
+    * This will typically be the encounter the DetectedIssue was created during, but some DetectedIssues may be initiated prior to or after the official completion of an encounter but still be tied to the context of the encounter (e.g. pre-admission lab tests).
+    */
+  var encounter: js.UndefOr[Reference] = js.undefined
   
   /**
     * Supporting evidence or manifestations that provide the basis for identifying the detected issue such as a GuidanceResponse or MeasureReport.
@@ -76,11 +82,6 @@ trait DetectedIssue
   var mitigation: js.UndefOr[js.Array[DetectedIssueMitigation]] = js.undefined
   
   /**
-    * Indicates the patient whose record the detected issue is associated with.
-    */
-  var patient: js.UndefOr[Reference] = js.undefined
-  
-  /**
     * The literature, knowledge-base or similar reference that describes the propensity for the detected issue identified.
     */
   var reference: js.UndefOr[String] = js.undefined
@@ -95,15 +96,18 @@ trait DetectedIssue
   var severity: js.UndefOr[high | moderate | low] = js.undefined
   
   /**
-    * This element is labeled as a modifier because the status contains the codes cancelled and entered-in-error that mark the issue as not currently valid.
+    * This element is labeled as a modifier because the status contains the code entered-in-error that marks the issue as not currently valid.
     */
-  var status: registered | preliminary | `final` | amended | corrected | cancelled | `entered-in-error` | unknown
+  var status: preliminary | `final` | `entered-in-error` | mitigated
+  
+  /**
+    * Indicates the subject whose record the detected issue is associated with.
+    */
+  var subject: js.UndefOr[Reference] = js.undefined
 }
 object DetectedIssue {
   
-  inline def apply(
-    status: registered | preliminary | `final` | amended | corrected | cancelled | `entered-in-error` | unknown
-  ): DetectedIssue = {
+  inline def apply(status: preliminary | `final` | `entered-in-error` | mitigated): DetectedIssue = {
     val __obj = js.Dynamic.literal(resourceType = "DetectedIssue", status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[DetectedIssue]
   }
@@ -115,6 +119,12 @@ object DetectedIssue {
     
     inline def setAuthorUndefined: Self = StObject.set(x, "author", js.undefined)
     
+    inline def setCategory(value: js.Array[CodeableConcept]): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+    
+    inline def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
+    
+    inline def setCategoryVarargs(value: CodeableConcept*): Self = StObject.set(x, "category", js.Array(value*))
+    
     inline def setCode(value: CodeableConcept): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
@@ -122,6 +132,10 @@ object DetectedIssue {
     inline def setDetail(value: String): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
     
     inline def setDetailUndefined: Self = StObject.set(x, "detail", js.undefined)
+    
+    inline def setEncounter(value: Reference): Self = StObject.set(x, "encounter", value.asInstanceOf[js.Any])
+    
+    inline def setEncounterUndefined: Self = StObject.set(x, "encounter", js.undefined)
     
     inline def setEvidence(value: js.Array[DetectedIssueEvidence]): Self = StObject.set(x, "evidence", value.asInstanceOf[js.Any])
     
@@ -155,10 +169,6 @@ object DetectedIssue {
     
     inline def setMitigationVarargs(value: DetectedIssueMitigation*): Self = StObject.set(x, "mitigation", js.Array(value*))
     
-    inline def setPatient(value: Reference): Self = StObject.set(x, "patient", value.asInstanceOf[js.Any])
-    
-    inline def setPatientUndefined: Self = StObject.set(x, "patient", js.undefined)
-    
     inline def setReference(value: String): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
     
     inline def setReferenceUndefined: Self = StObject.set(x, "reference", js.undefined)
@@ -169,9 +179,11 @@ object DetectedIssue {
     
     inline def setSeverityUndefined: Self = StObject.set(x, "severity", js.undefined)
     
-    inline def setStatus(
-      value: registered | preliminary | `final` | amended | corrected | cancelled | `entered-in-error` | unknown
-    ): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: preliminary | `final` | `entered-in-error` | mitigated): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    
+    inline def setSubject(value: Reference): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
+    
+    inline def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
     
     inline def set_detail(value: Element): Self = StObject.set(x, "_detail", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,7 @@ object libIconsDashboardFilledMod extends Shortcut {
   @js.native
   trait DashboardFilledIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_DashboardFilledIconType: String = js.native

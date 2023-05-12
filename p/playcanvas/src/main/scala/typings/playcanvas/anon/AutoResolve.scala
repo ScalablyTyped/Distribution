@@ -1,6 +1,5 @@
 package typings.playcanvas.anon
 
-import typings.playcanvas.mod.Texture
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,11 +8,11 @@ trait AutoResolve extends StObject {
   
   var autoResolve: js.UndefOr[Boolean] = js.undefined
   
-  var colorBuffer: js.UndefOr[Texture] = js.undefined
+  var colorBuffer: js.UndefOr[typings.playcanvas.mod.Texture] = js.undefined
   
   var depth: js.UndefOr[Boolean] = js.undefined
   
-  var depthBuffer: js.UndefOr[Texture] = js.undefined
+  var depthBuffer: js.UndefOr[typings.playcanvas.mod.Texture] = js.undefined
   
   var face: js.UndefOr[Double] = js.undefined
   
@@ -39,13 +38,13 @@ object AutoResolve {
     
     inline def setAutoResolveUndefined: Self = StObject.set(x, "autoResolve", js.undefined)
     
-    inline def setColorBuffer(value: Texture): Self = StObject.set(x, "colorBuffer", value.asInstanceOf[js.Any])
+    inline def setColorBuffer(value: typings.playcanvas.mod.Texture): Self = StObject.set(x, "colorBuffer", value.asInstanceOf[js.Any])
     
     inline def setColorBufferUndefined: Self = StObject.set(x, "colorBuffer", js.undefined)
     
     inline def setDepth(value: Boolean): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
     
-    inline def setDepthBuffer(value: Texture): Self = StObject.set(x, "depthBuffer", value.asInstanceOf[js.Any])
+    inline def setDepthBuffer(value: typings.playcanvas.mod.Texture): Self = StObject.set(x, "depthBuffer", value.asInstanceOf[js.Any])
     
     inline def setDepthBufferUndefined: Self = StObject.set(x, "depthBuffer", js.undefined)
     

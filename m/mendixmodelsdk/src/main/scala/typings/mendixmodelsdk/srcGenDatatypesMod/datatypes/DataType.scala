@@ -7,6 +7,7 @@ import typings.mendixmodelsdk.srcGenAppservicesMod.appservices.IAppServiceAction
 import typings.mendixmodelsdk.srcGenBaseModelMod.IModel
 import typings.mendixmodelsdk.srcGenConstantsMod.constants.Constant
 import typings.mendixmodelsdk.srcGenConstantsMod.constants.IConstant
+import typings.mendixmodelsdk.srcGenDatabaseconnectorMod.databaseconnector.QueryParameter
 import typings.mendixmodelsdk.srcGenDatasetsMod.datasets.DataSetColumn
 import typings.mendixmodelsdk.srcGenDatasetsMod.datasets.DataSetParameter
 import typings.mendixmodelsdk.srcGenDatasetsMod.datasets.IDataSetParameter
@@ -25,7 +26,11 @@ import typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.MicroflowParameterB
 import typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.MicroflowParameterObject
 import typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.ResultHandling
 import typings.mendixmodelsdk.srcGenPagesMod.pages.IPageParameter
+import typings.mendixmodelsdk.srcGenPagesMod.pages.ISnippetParameter
 import typings.mendixmodelsdk.srcGenPagesMod.pages.PageParameter
+import typings.mendixmodelsdk.srcGenPagesMod.pages.SnippetParameter
+import typings.mendixmodelsdk.srcGenRestMod.rest.IOperationParameter
+import typings.mendixmodelsdk.srcGenRestMod.rest.OperationParameter
 import typings.mendixmodelsdk.srcGenRestMod.rest.RestOperationParameter
 import typings.mendixmodelsdk.srcGenWebservicesMod.webservices.PublishedOperation
 import typings.mendixmodelsdk.srcGenWebservicesMod.webservices.PublishedParameter
@@ -49,7 +54,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.mendixmodelsdk.srcSdkInternalStructuresMod.IStructure because Already inherited
 - typings.mendixmodelsdk.srcSdkInternalElementsMod.IAbstractElement because Already inherited
 - typings.mendixmodelsdk.srcSdkInternalElementsMod.IElement because Already inherited
-- typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.IDataType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsAppServiceAction, containerAsAppServiceActionParameter, containerAsConstant, containerAsDataSetParameter, containerAsDocumentTemplateParameter, containerAsImportMapping, containerAsMicroflowBase, containerAsMicroflowParameterBase, containerAsPageParameter */ @JSImport("mendixmodelsdk/src/gen/datatypes", "datatypes.DataType")
+- typings.mendixmodelsdk.srcGenDatatypesMod.datatypes.IDataType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsAppServiceAction, containerAsAppServiceActionParameter, containerAsConstant, containerAsDataSetParameter, containerAsDocumentTemplateParameter, containerAsImportMapping, containerAsMicroflowBase, containerAsMicroflowParameterBase, containerAsPageParameter, containerAsSnippetParameter, containerAsOperationParameter */ @JSImport("mendixmodelsdk/src/gen/datatypes", "datatypes.DataType")
 @js.native
 open class DataType protected () extends Element[IModel] {
   def this(
@@ -102,6 +107,10 @@ open class DataType protected () extends Element[IModel] {
   
   def containerAsMicroflowParameterObject: MicroflowParameterObject = js.native
   
+  def containerAsOperationParameter: OperationParameter = js.native
+  @JSName("containerAsOperationParameter")
+  val containerAsOperationParameter_FDataType: IOperationParameter = js.native
+  
   def containerAsPageParameter: PageParameter = js.native
   @JSName("containerAsPageParameter")
   val containerAsPageParameter_FDataType: IPageParameter = js.native
@@ -110,9 +119,15 @@ open class DataType protected () extends Element[IModel] {
   
   def containerAsPublishedParameter: PublishedParameter = js.native
   
+  def containerAsQueryParameter: QueryParameter = js.native
+  
   def containerAsRestOperationParameter: RestOperationParameter = js.native
   
   def containerAsResultHandling: ResultHandling = js.native
+  
+  def containerAsSnippetParameter: SnippetParameter = js.native
+  @JSName("containerAsSnippetParameter")
+  val containerAsSnippetParameter_FDataType: ISnippetParameter = js.native
   
   def containerAsValueMappingElement: ValueMappingElement = js.native
 }

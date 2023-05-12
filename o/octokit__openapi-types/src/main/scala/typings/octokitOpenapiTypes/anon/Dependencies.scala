@@ -5,7 +5,6 @@ import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.development
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.direct
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.indirect
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.runtime
-import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +17,7 @@ trait Dependencies extends StObject {
     */
   var dependencies: js.UndefOr[js.Array[String]] = js.undefined
   
-  var metadata: js.UndefOr[StringDictionary[Partial[String] & Partial[Double] & Partial[Boolean]]] = js.undefined
+  var metadata: js.UndefOr[StringDictionary[js.UndefOr[String | Double | Boolean | Null]]] = js.undefined
   
   /**
     * @description Package-url (PURL) of dependency. See https://github.com/package-url/purl-spec for more details.
@@ -56,7 +55,7 @@ object Dependencies {
     
     inline def setDependenciesVarargs(value: String*): Self = StObject.set(x, "dependencies", js.Array(value*))
     
-    inline def setMetadata(value: StringDictionary[Partial[String] & Partial[Double] & Partial[Boolean]]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: StringDictionary[js.UndefOr[String | Double | Boolean | Null]]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     

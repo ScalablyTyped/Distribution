@@ -43,6 +43,19 @@ object Bodies {
   inline def circle(x: Double, y: Double, radius: Double, options: IBodyDefinition, maxSides: Double): BodyType = (^.asInstanceOf[js.Dynamic].applyDynamic("circle")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], radius.asInstanceOf[js.Any], options.asInstanceOf[js.Any], maxSides.asInstanceOf[js.Any])).asInstanceOf[BodyType]
   
   /**
+    * Takes an array of Body objects and flags all internal edges (coincident parts) based on the maxDistance
+    * value. The array is changed in-place and returned, so you can pass this function a `Body.parts` property.
+    *
+    * @method flagCoincidentParts
+    * @param {body[]} parts - The Body parts, or array of bodies, to flag.
+    * @param {number} [maxDistance=5]
+    * @return {body[]} The modified `parts` parameter.
+    */
+  /* static member */
+  inline def flagCoincidentParts(parts: js.Array[BodyType]): js.Array[BodyType] = ^.asInstanceOf[js.Dynamic].applyDynamic("flagCoincidentParts")(parts.asInstanceOf[js.Any]).asInstanceOf[js.Array[BodyType]]
+  inline def flagCoincidentParts(parts: js.Array[BodyType], maxDistance: Double): js.Array[BodyType] = (^.asInstanceOf[js.Dynamic].applyDynamic("flagCoincidentParts")(parts.asInstanceOf[js.Any], maxDistance.asInstanceOf[js.Any])).asInstanceOf[js.Array[BodyType]]
+  
+  /**
     * Creates a body using the supplied vertices (or an array containing multiple sets of vertices).
     * If the vertices are convex, they will pass through as supplied.
     * Otherwise if the vertices are concave, they will be decomposed if [poly-decomp.js](https://github.com/schteppe/poly-decomp.js) is available.
@@ -223,6 +236,7 @@ object Bodies {
   
   /**
     * Creates a new rigid body model with a trapezoid hull.
+    * The `slope` is parameterised as a fraction of `width` and must be < 1 to form a valid trapezoid.
     * The options parameter is an object that specifies any properties you wish to override the defaults.
     * See the properties section of the `Matter.Body` module for detailed information on what you can pass via the `options` object.
     * @method trapezoid

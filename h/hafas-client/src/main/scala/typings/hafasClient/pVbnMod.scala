@@ -1,19 +1,13 @@
 package typings.hafasClient
 
-import org.scalablytyped.runtime.Shortcut
 import typings.hafasClient.mod.Profile
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object pVbnMod extends Shortcut {
+object pVbnMod {
   
-  @JSImport("hafas-client/p/vbn", JSImport.Namespace)
+  @JSImport("hafas-client/p/vbn", "profile")
   @js.native
-  val ^ : Profile = js.native
-  
-  type _To = Profile
-  
-  /* This means you don't have to write `^`, but can instead just say `pVbnMod.foo` */
-  override def _to: Profile = ^
+  val profile: Profile = js.native
 }

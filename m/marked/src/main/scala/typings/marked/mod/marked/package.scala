@@ -112,3 +112,10 @@ inline def use(extensions: MarkedExtension*): Unit = ^.asInstanceOf[js.Dynamic].
 
 inline def walkTokens(tokens: js.Array[Token], callback: js.Function1[/* token */ Token, Unit]): FnCall = (^.asInstanceOf[js.Dynamic].applyDynamic("walkTokens")(tokens.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[FnCall]
 inline def walkTokens(tokens: TokensList, callback: js.Function1[/* token */ Token, Unit]): FnCall = (^.asInstanceOf[js.Dynamic].applyDynamic("walkTokens")(tokens.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[FnCall]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.marked.mod.marked.TokenizerExtension
+  - typings.marked.mod.marked.RendererExtension
+  - typings.marked.mod.marked.TokenizerExtension & typings.marked.mod.marked.RendererExtension
+*/
+type TokenizerAndRendererExtension = _TokenizerAndRendererExtension | (TokenizerExtension & RendererExtension)

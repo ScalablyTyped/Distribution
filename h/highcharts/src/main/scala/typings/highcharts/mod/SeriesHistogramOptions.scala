@@ -17,6 +17,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var baseSeries: js.UndefOr[Double | String] = js.undefined
   
   /**
+    * Not available
+    */
+  var data: Unit
+  
+  /**
+    * Not available
+    */
+  var dataParser: Unit
+  
+  /**
+    * Not available
+    */
+  var dataURL: Unit
+  
+  /**
     * (Highcharts, Highstock, Highmaps, Gantt) An id for the series. This can
     * be used after render time to get a pointer to the series object through
     * `chart.get()`.
@@ -83,8 +98,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object SeriesHistogramOptions {
   
-  inline def apply(`type`: String | histogram): SeriesHistogramOptions = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(data: Unit, dataParser: Unit, dataURL: Unit, `type`: String | histogram): SeriesHistogramOptions = {
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], dataParser = dataParser.asInstanceOf[js.Any], dataURL = dataURL.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeriesHistogramOptions]
   }
@@ -95,6 +110,12 @@ object SeriesHistogramOptions {
     inline def setBaseSeries(value: Double | String): Self = StObject.set(x, "baseSeries", value.asInstanceOf[js.Any])
     
     inline def setBaseSeriesUndefined: Self = StObject.set(x, "baseSeries", js.undefined)
+    
+    inline def setData(value: Unit): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataParser(value: Unit): Self = StObject.set(x, "dataParser", value.asInstanceOf[js.Any])
+    
+    inline def setDataURL(value: Unit): Self = StObject.set(x, "dataURL", value.asInstanceOf[js.Any])
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

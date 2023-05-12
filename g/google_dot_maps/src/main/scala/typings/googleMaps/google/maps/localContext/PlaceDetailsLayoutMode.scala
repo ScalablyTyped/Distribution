@@ -6,10 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @js.native
 sealed trait PlaceDetailsLayoutMode extends StObject
-/**
-  * Available only in the v=beta channel: https://goo.gle/3oAthT3.
-  * Layout modes for the place details.
-  */
 @JSGlobal("google.maps.localContext.PlaceDetailsLayoutMode")
 @js.native
 object PlaceDetailsLayoutMode extends StObject {

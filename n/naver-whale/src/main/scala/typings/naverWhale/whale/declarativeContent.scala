@@ -27,7 +27,7 @@ object declarativeContent {
     /**
       * Optional.
       * Since Chrome 45. Warning: this is the current Beta channel. More information available on the API documentation pages.
-      * Matches if the bookmarked state of the page is equal to the specified value. Requres the bookmarks permission.
+      * Matches if the bookmarked state of the page is equal to the specified value. Requires the bookmarks permission.
       */
     var isBookmarked: js.UndefOr[Boolean] = js.undefined
     

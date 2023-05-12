@@ -4,6 +4,7 @@ import typings.libp2pInterfacePeerId.libp2pInterfacePeerIdStrings.Ed25519
 import typings.libp2pInterfacePeerId.libp2pInterfacePeerIdStrings.RSA
 import typings.libp2pInterfacePeerId.libp2pInterfacePeerIdStrings.secp256k1
 import typings.multiformats.cidMod.CID
+import typings.multiformats.distTypesSrcHashesInterfaceMod.MultihashDigest
 import typings.multiformats.distTypesSrcLinkInterfaceMod.Version
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -28,7 +29,7 @@ object mod {
     def equals(other: js.typedarray.Uint8Array): Boolean = js.native
     def equals(other: PeerId): Boolean = js.native
     
-    val multihash: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MultihashDigest */ Any = js.native
+    val multihash: MultihashDigest[Double] = js.native
     
     val privateKey: js.UndefOr[js.typedarray.Uint8Array] = js.native
     
@@ -38,7 +39,7 @@ object mod {
     
     def toCID(): CID[Any, Double, Double, Version] = js.native
     
-    val `type`: RSA | Ed25519 | secp256k1 = js.native
+    val `type`: PeerIdType = js.native
   }
   
   @js.native
@@ -60,6 +61,21 @@ object mod {
     - typings.libp2pInterfacePeerId.mod.Secp256k1PeerId
   */
   trait PeerId extends StObject
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.libp2pInterfacePeerId.libp2pInterfacePeerIdStrings.RSA
+    - typings.libp2pInterfacePeerId.libp2pInterfacePeerIdStrings.Ed25519
+    - typings.libp2pInterfacePeerId.libp2pInterfacePeerIdStrings.secp256k1
+  */
+  trait PeerIdType extends StObject
+  object PeerIdType {
+    
+    inline def Ed25519: typings.libp2pInterfacePeerId.libp2pInterfacePeerIdStrings.Ed25519 = "Ed25519".asInstanceOf[typings.libp2pInterfacePeerId.libp2pInterfacePeerIdStrings.Ed25519]
+    
+    inline def RSA: typings.libp2pInterfacePeerId.libp2pInterfacePeerIdStrings.RSA = "RSA".asInstanceOf[typings.libp2pInterfacePeerId.libp2pInterfacePeerIdStrings.RSA]
+    
+    inline def secp256k1: typings.libp2pInterfacePeerId.libp2pInterfacePeerIdStrings.secp256k1 = "secp256k1".asInstanceOf[typings.libp2pInterfacePeerId.libp2pInterfacePeerIdStrings.secp256k1]
+  }
   
   @js.native
   trait RSAPeerId

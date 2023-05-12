@@ -5,8 +5,10 @@ import typings.std.AddEventListenerOptions
 import typings.std.Array
 import typings.std.CSSStyleSheet
 import typings.std.ChildNode
+import typings.std.Comment
 import typings.std.CustomEvent
 import typings.std.Document
+import typings.std.DocumentFragment
 import typings.std.Element
 import typings.std.ElementCSSInlineStyle
 import typings.std.EventListenerOptions
@@ -86,6 +88,8 @@ import typings.std.ShadowRoot
 import typings.std.Text
 import typings.svelte.anon.Bubbles
 import typings.svelte.anon.Lastindex
+import typings.svelte.anon.P
+import typings.svelte.anon.R
 import typings.svelte.svelteBooleans.`true`
 import typings.svelte.svelteStrings.`object`
 import typings.svelte.svelteStrings.`var`
@@ -257,6 +261,7 @@ import typings.svelte.svelteStrings.use
 import typings.svelte.svelteStrings.video
 import typings.svelte.svelteStrings.view
 import typings.svelte.svelteStrings.wbr
+import typings.svelte.typesRuntimeInternalResizeObserverSingletonMod.ResizeObserverOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -297,7 +302,7 @@ object typesRuntimeInternalDomMod {
     
     def p(html: String): Unit = js.native
     
-    var t: HTMLElement | SVGElement = js.native
+    var t: HTMLElement | SVGElement | DocumentFragment = js.native
   }
   
   @JSImport("svelte/types/runtime/internal/dom", "HtmlTagHydration")
@@ -310,7 +315,14 @@ object typesRuntimeInternalDomMod {
     var l: js.Array[ChildNode] | Unit = js.native
   }
   
-  inline def addResizeListener(node: HTMLElement, fn: js.Function0[Unit]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("add_resize_listener")(node.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  @JSImport("svelte/types/runtime/internal/dom", "ResizeObserverSingleton")
+  @js.native
+  open class ResizeObserverSingleton ()
+    extends typings.svelte.typesRuntimeInternalResizeObserverSingletonMod.ResizeObserverSingleton {
+    def this(options: ResizeObserverOptions) = this()
+  }
+  
+  inline def addIframeResizeListener(node: HTMLElement, fn: js.Function0[Unit]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("add_iframe_resize_listener")(node.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   
   inline def append(target: Node, node: Node): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("append")(target.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
@@ -327,6 +339,8 @@ object typesRuntimeInternalDomMod {
   
   inline def children(element: Element): js.Array[ChildNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("children")(element.asInstanceOf[js.Any]).asInstanceOf[js.Array[ChildNode]]
   
+  inline def claimComment(nodes: ChildNodeArray, data: Any): Comment = (^.asInstanceOf[js.Dynamic].applyDynamic("claim_comment")(nodes.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Comment]
+  
   inline def claimElement(nodes: ChildNodeArray, name: String, attributes: StringDictionary[Boolean]): Element | SVGElement = (^.asInstanceOf[js.Dynamic].applyDynamic("claim_element")(nodes.asInstanceOf[js.Any], name.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[Element | SVGElement]
   
   inline def claimHtmlTag(nodes: Any, is_svg: Boolean): HtmlTagHydration = (^.asInstanceOf[js.Dynamic].applyDynamic("claim_html_tag")(nodes.asInstanceOf[js.Any], is_svg.asInstanceOf[js.Any])).asInstanceOf[HtmlTagHydration]
@@ -336,6 +350,8 @@ object typesRuntimeInternalDomMod {
   inline def claimSvgElement(nodes: ChildNodeArray, name: String, attributes: StringDictionary[Boolean]): Element | SVGElement = (^.asInstanceOf[js.Dynamic].applyDynamic("claim_svg_element")(nodes.asInstanceOf[js.Any], name.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[Element | SVGElement]
   
   inline def claimText(nodes: ChildNodeArray, data: Any): Text = (^.asInstanceOf[js.Dynamic].applyDynamic("claim_text")(nodes.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Text]
+  
+  inline def comment(content: String): Comment = ^.asInstanceOf[js.Dynamic].applyDynamic("comment")(content.asInstanceOf[js.Any]).asInstanceOf[Comment]
   
   inline def constructSvelteComponent(component: Any, props: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("construct_svelte_component")(component.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[Any]
   
@@ -804,6 +820,10 @@ object typesRuntimeInternalDomMod {
   
   inline def headSelector(nodeId: String, head: HTMLElement): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("head_selector")(nodeId.asInstanceOf[js.Any], head.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
   
+  inline def initBindingGroup(group: js.Array[HTMLInputElement]): P = ^.asInstanceOf[js.Dynamic].applyDynamic("init_binding_group")(group.asInstanceOf[js.Any]).asInstanceOf[P]
+  
+  inline def initBindingGroupDynamic(group: Any, indexes: js.Array[Double]): R = (^.asInstanceOf[js.Dynamic].applyDynamic("init_binding_group_dynamic")(group.asInstanceOf[js.Any], indexes.asInstanceOf[js.Any])).asInstanceOf[R]
+  
   inline def insert(target: Node, node: Node): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insert")(target.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def insert(target: Node, node: Node, anchor: Node): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insert")(target.asInstanceOf[js.Any], node.asInstanceOf[js.Any], anchor.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
@@ -834,9 +854,21 @@ object typesRuntimeInternalDomMod {
   inline def querySelectorAll(selector: String): ChildNodeArray = ^.asInstanceOf[js.Dynamic].applyDynamic("query_selector_all")(selector.asInstanceOf[js.Any]).asInstanceOf[ChildNodeArray]
   inline def querySelectorAll(selector: String, parent: HTMLElement): ChildNodeArray = (^.asInstanceOf[js.Dynamic].applyDynamic("query_selector_all")(selector.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[ChildNodeArray]
   
+  @JSImport("svelte/types/runtime/internal/dom", "resize_observer_border_box")
+  @js.native
+  val resizeObserverBorderBox: typings.svelte.typesRuntimeInternalResizeObserverSingletonMod.ResizeObserverSingleton = js.native
+  
+  @JSImport("svelte/types/runtime/internal/dom", "resize_observer_content_box")
+  @js.native
+  val resizeObserverContentBox: typings.svelte.typesRuntimeInternalResizeObserverSingletonMod.ResizeObserverSingleton = js.native
+  
+  @JSImport("svelte/types/runtime/internal/dom", "resize_observer_device_pixel_content_box")
+  @js.native
+  val resizeObserverDevicePixelContentBox: typings.svelte.typesRuntimeInternalResizeObserverSingletonMod.ResizeObserverSingleton = js.native
+  
   inline def selectMultipleValue(select: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("select_multiple_value")(select.asInstanceOf[js.Any]).asInstanceOf[Any]
   
-  inline def selectOption(select: Any, value: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("select_option")(select.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def selectOption(select: Any, value: Any, mounting: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("select_option")(select.asInstanceOf[js.Any], value.asInstanceOf[js.Any], mounting.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def selectOptions(select: Any, value: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("select_options")(select.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
@@ -850,7 +882,13 @@ object typesRuntimeInternalDomMod {
   
   inline def setCustomElementDataMap(node: Any, data_map: Record[String, Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set_custom_element_data_map")(node.asInstanceOf[js.Any], data_map.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def setData(text: Any, data: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set_data")(text.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setData(text: Text, data: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set_data")(text.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def setDataContenteditable(text: Text, data: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set_data_contenteditable")(text.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def setDataMaybeContenteditable(text: Text, data: Any, attr_value: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set_data_maybe_contenteditable")(text.asInstanceOf[js.Any], data.asInstanceOf[js.Any], attr_value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def setDynamicElementData(tag: String): js.Function2[/* node */ Any, /* data_map */ Record[String, Any], Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("set_dynamic_element_data")(tag.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* node */ Any, /* data_map */ Record[String, Any], Unit]]
   
   inline def setInputType(input: Any, `type`: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set_input_type")(input.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
@@ -863,6 +901,8 @@ object typesRuntimeInternalDomMod {
   inline def space(): Text = ^.asInstanceOf[js.Dynamic].applyDynamic("space")().asInstanceOf[Text]
   
   inline def startHydrating(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("start_hydrating")().asInstanceOf[Unit]
+  
+  inline def stopImmediatePropagation(fn: Any): js.Function1[/* event */ Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("stop_immediate_propagation")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* event */ Any, Any]]
   
   inline def stopPropagation(fn: Any): js.Function1[/* event */ Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("stop_propagation")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* event */ Any, Any]]
   

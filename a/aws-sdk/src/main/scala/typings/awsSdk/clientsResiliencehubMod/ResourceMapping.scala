@@ -12,12 +12,17 @@ trait ResourceMapping extends StObject {
   var appRegistryAppName: js.UndefOr[EntityName] = js.undefined
   
   /**
+    * The name of the Amazon Elastic Kubernetes Service cluster and namespace this resource belongs to.  This parameter accepts values in "eks-cluster/namespace" format. 
+    */
+  var eksSourceName: js.UndefOr[String255] = js.undefined
+  
+  /**
     * The name of the CloudFormation stack this resource is mapped to.
     */
   var logicalStackName: js.UndefOr[String255] = js.undefined
   
   /**
-    * Specifies the type of resource mapping.  AppRegistryApp  The resource is mapped to another application. The name of the application is contained in the appRegistryAppName property.  CfnStack  The resource is mapped to a CloudFormation stack. The name of the CloudFormation stack is contained in the logicalStackName property.  Resource  The resource is mapped to another resource. The name of the resource is contained in the resourceName property.  ResourceGroup  The resource is mapped to a resource group. The name of the resource group is contained in the resourceGroupName property.  
+    * Specifies the type of resource mapping.  AppRegistryApp  The resource is mapped to another application. The name of the application is contained in the appRegistryAppName property.  CfnStack  The resource is mapped to a CloudFormation stack. The name of the CloudFormation stack is contained in the logicalStackName property.  Resource  The resource is mapped to another resource. The name of the resource is contained in the resourceName property.  ResourceGroup  The resource is mapped to Resource Groups. The name of the resource group is contained in the resourceGroupName property.  
     */
   var mappingType: ResourceMappingType
   
@@ -54,6 +59,10 @@ object ResourceMapping {
     inline def setAppRegistryAppName(value: EntityName): Self = StObject.set(x, "appRegistryAppName", value.asInstanceOf[js.Any])
     
     inline def setAppRegistryAppNameUndefined: Self = StObject.set(x, "appRegistryAppName", js.undefined)
+    
+    inline def setEksSourceName(value: String255): Self = StObject.set(x, "eksSourceName", value.asInstanceOf[js.Any])
+    
+    inline def setEksSourceNameUndefined: Self = StObject.set(x, "eksSourceName", js.undefined)
     
     inline def setLogicalStackName(value: String255): Self = StObject.set(x, "logicalStackName", value.asInstanceOf[js.Any])
     

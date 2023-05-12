@@ -1,7 +1,7 @@
 package typings.postcssFlexbugsFixes
 
 import org.scalablytyped.runtime.Shortcut
-import typings.postcss.mod.Plugin
+import typings.postcss.mod.PluginCreator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +10,7 @@ object mod extends Shortcut {
   
   @JSImport("postcss-flexbugs-fixes", JSImport.Namespace)
   @js.native
-  val ^ : js.Object & PostcssFlexbugsFixesPlugin = js.native
+  val ^ : PostcssFlexbugsFixesPlugin = js.native
   
   trait Options extends StObject {
     
@@ -53,10 +53,10 @@ object mod extends Shortcut {
     }
   }
   
-  type PostcssFlexbugsFixesPlugin = Plugin
+  type PostcssFlexbugsFixesPlugin = PluginCreator[Options]
   
-  type _To = js.Object & PostcssFlexbugsFixesPlugin
+  type _To = PostcssFlexbugsFixesPlugin
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: js.Object & PostcssFlexbugsFixesPlugin = ^
+  override def _to: PostcssFlexbugsFixesPlugin = ^
 }

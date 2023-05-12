@@ -2,7 +2,10 @@ package typings.officeJsPreview.Word
 
 import typings.officeJsPreview.OfficeExtension.ClientObject
 import typings.officeJsPreview.OfficeExtension.ClientResult
+import typings.officeJsPreview.OfficeExtension.EventHandlers
 import typings.officeJsPreview.OfficeExtension.UpdateOptions
+import typings.officeJsPreview.Word.ContentControlType.plainText
+import typings.officeJsPreview.Word.ContentControlType.richText
 import typings.officeJsPreview.Word.InsertLocation.before
 import typings.officeJsPreview.Word.Interfaces.RangeData
 import typings.officeJsPreview.Word.Interfaces.RangeLoadOptions
@@ -23,7 +26,9 @@ import typings.officeJsPreview.officeJsPreviewStrings.Line
 import typings.officeJsPreview.officeJsPreviewStrings.Next
 import typings.officeJsPreview.officeJsPreviewStrings.Original
 import typings.officeJsPreview.officeJsPreviewStrings.Page
+import typings.officeJsPreview.officeJsPreviewStrings.PlainText
 import typings.officeJsPreview.officeJsPreviewStrings.Replace
+import typings.officeJsPreview.officeJsPreviewStrings.RichText
 import typings.officeJsPreview.officeJsPreviewStrings.SectionContinuous
 import typings.officeJsPreview.officeJsPreviewStrings.SectionEven
 import typings.officeJsPreview.officeJsPreviewStrings.SectionNext
@@ -158,6 +163,20 @@ trait Range
     * @returns
     */
   def getComments(): CommentCollection = js.native
+  
+  /**
+    * Gets the currently supported content controls in the range. **Important**: If specific types are provided in the options parameter, only content controls of supported types are returned.
+    Be aware that an exception will be thrown on using methods of a generic {@link Word.ContentControl} that aren't relevant for the specific type.
+    With time, additional types of content controls may be supported. Therefore, your add-in should request and handle specific types of content controls.
+    *
+    * @remarks
+    * [Api set: WordApi BETA (PREVIEW ONLY)]
+    * @beta
+    *
+    * @param options Optional. Options that define which content controls are returned.
+    */
+  def getContentControls(): ContentControlCollection = js.native
+  def getContentControls(options: ContentControlOptions): ContentControlCollection = js.native
   
   /**
     * Gets an HTML representation of the range object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word on the web, etc.). If you need exact fidelity, or consistency across platforms, use `Range.getOoxml()` and convert the returned XML to HTML.
@@ -310,12 +329,17 @@ trait Range
   def insertComment(commentText: String): Comment = js.native
   
   /**
-    * Wraps the range object with a rich text content control.
+    * Wraps the Range object with a content control.
     *
     * @remarks
     * [Api set: WordApi 1.1]
+    *
+    * @param contentControlType Optional. The content control type. The default is 'RichText'.
     */
   def insertContentControl(): ContentControl = js.native
+  def insertContentControl(contentControlType: RichText | PlainText): ContentControl = js.native
+  def insertContentControl(contentControlType: plainText): ContentControl = js.native
+  def insertContentControl(contentControlType: richText): ContentControl = js.native
   
   /**
     * Inserts an endnote. The endnote reference is placed after the range.
@@ -328,24 +352,136 @@ trait Range
   def insertEndnote(): NoteItem = js.native
   def insertEndnote(insertText: String): NoteItem = js.native
   
-  def insertFileFromBase64(base64File: String, insertLocation: Replace | Start | End | Before | After): Range = js.native
-  def insertFileFromBase64(
-    base64File: String,
+  def insertField(insertLocation: Replace | Start | End | Before | After): Field = js.native
+  def insertField(
     insertLocation: Replace | Start | End | Before | After,
-    asNewParagraph: Boolean
-  ): Range = js.native
+    fieldType: js.UndefOr[
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 91, starting with typings.officeJsPreview.officeJsPreviewStrings.Addin, typings.officeJsPreview.officeJsPreviewStrings.AddressBlock, typings.officeJsPreview.officeJsPreviewStrings.Advance */ Any
+    ]
+  ): Field = js.native
+  def insertField(
+    insertLocation: Replace | Start | End | Before | After,
+    fieldType: js.UndefOr[
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 91, starting with typings.officeJsPreview.officeJsPreviewStrings.Addin, typings.officeJsPreview.officeJsPreviewStrings.AddressBlock, typings.officeJsPreview.officeJsPreviewStrings.Advance */ Any
+    ],
+    text: String
+  ): Field = js.native
+  def insertField(
+    insertLocation: Replace | Start | End | Before | After,
+    fieldType: js.UndefOr[
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 91, starting with typings.officeJsPreview.officeJsPreviewStrings.Addin, typings.officeJsPreview.officeJsPreviewStrings.AddressBlock, typings.officeJsPreview.officeJsPreviewStrings.Advance */ Any
+    ],
+    text: String,
+    removeFormatting: Boolean
+  ): Field = js.native
+  def insertField(
+    insertLocation: Replace | Start | End | Before | After,
+    fieldType: js.UndefOr[
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 91, starting with typings.officeJsPreview.officeJsPreviewStrings.Addin, typings.officeJsPreview.officeJsPreviewStrings.AddressBlock, typings.officeJsPreview.officeJsPreviewStrings.Advance */ Any
+    ],
+    text: Unit,
+    removeFormatting: Boolean
+  ): Field = js.native
+  def insertField(insertLocation: Replace | Start | End | Before | After, fieldType: Unit, text: String): Field = js.native
+  def insertField(
+    insertLocation: Replace | Start | End | Before | After,
+    fieldType: Unit,
+    text: String,
+    removeFormatting: Boolean
+  ): Field = js.native
+  def insertField(
+    insertLocation: Replace | Start | End | Before | After,
+    fieldType: Unit,
+    text: Unit,
+    removeFormatting: Boolean
+  ): Field = js.native
+  def insertField(insertLocation: Replace | Start | End | Before | After, fieldType: FieldType): Field = js.native
+  def insertField(insertLocation: Replace | Start | End | Before | After, fieldType: FieldType, text: String): Field = js.native
+  def insertField(
+    insertLocation: Replace | Start | End | Before | After,
+    fieldType: FieldType,
+    text: String,
+    removeFormatting: Boolean
+  ): Field = js.native
+  def insertField(
+    insertLocation: Replace | Start | End | Before | After,
+    fieldType: FieldType,
+    text: Unit,
+    removeFormatting: Boolean
+  ): Field = js.native
+  /**
+    * Inserts a field at the specified location.
+    *
+    * @remarks
+    * [Api set: WordApi BETA (PREVIEW ONLY)]
+    * @beta
+    *
+    * @param insertLocation Required. The location relative to the range where the field will be inserted. The value must be 'Replace', 'Start', 'End', 'Before', or 'After'.
+    * @param fieldType Optional. Can be any FieldType constant. The default value is Empty.
+    * @param text Optional. Additional properties or options if needed for specified field type.
+    * @param removeFormatting Optional. `true` to remove the formatting that's applied to the field during updates, `false` otherwise. The default value is `false`.
+    */
+  def insertField(insertLocation: InsertLocation): Field = js.native
+  /**
+    * Inserts a field at the specified location.
+    *
+    * @remarks
+    * [Api set: WordApi BETA (PREVIEW ONLY)]
+    * @beta
+    *
+    * @param insertLocation Required. The location relative to the range where the field will be inserted. The value must be 'Replace', 'Start', 'End', 'Before', or 'After'.
+    * @param fieldType Optional. Can be any FieldType constant. The default value is Empty.
+    * @param text Optional. Additional properties or options if needed for specified field type.
+    * @param removeFormatting Optional. `true` to remove the formatting that's applied to the field during updates, `false` otherwise. The default value is `false`.
+    */
+  def insertField(
+    insertLocation: InsertLocation,
+    fieldType: js.UndefOr[
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 91, starting with typings.officeJsPreview.officeJsPreviewStrings.Addin, typings.officeJsPreview.officeJsPreviewStrings.AddressBlock, typings.officeJsPreview.officeJsPreviewStrings.Advance */ Any
+    ]
+  ): Field = js.native
+  def insertField(
+    insertLocation: InsertLocation,
+    fieldType: js.UndefOr[
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 91, starting with typings.officeJsPreview.officeJsPreviewStrings.Addin, typings.officeJsPreview.officeJsPreviewStrings.AddressBlock, typings.officeJsPreview.officeJsPreviewStrings.Advance */ Any
+    ],
+    text: String
+  ): Field = js.native
+  def insertField(
+    insertLocation: InsertLocation,
+    fieldType: js.UndefOr[
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 91, starting with typings.officeJsPreview.officeJsPreviewStrings.Addin, typings.officeJsPreview.officeJsPreviewStrings.AddressBlock, typings.officeJsPreview.officeJsPreviewStrings.Advance */ Any
+    ],
+    text: String,
+    removeFormatting: Boolean
+  ): Field = js.native
+  def insertField(
+    insertLocation: InsertLocation,
+    fieldType: js.UndefOr[
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 91, starting with typings.officeJsPreview.officeJsPreviewStrings.Addin, typings.officeJsPreview.officeJsPreviewStrings.AddressBlock, typings.officeJsPreview.officeJsPreviewStrings.Advance */ Any
+    ],
+    text: Unit,
+    removeFormatting: Boolean
+  ): Field = js.native
+  def insertField(insertLocation: InsertLocation, fieldType: Unit, text: String): Field = js.native
+  def insertField(insertLocation: InsertLocation, fieldType: Unit, text: String, removeFormatting: Boolean): Field = js.native
+  def insertField(insertLocation: InsertLocation, fieldType: Unit, text: Unit, removeFormatting: Boolean): Field = js.native
+  def insertField(insertLocation: InsertLocation, fieldType: FieldType): Field = js.native
+  def insertField(insertLocation: InsertLocation, fieldType: FieldType, text: String): Field = js.native
+  def insertField(insertLocation: InsertLocation, fieldType: FieldType, text: String, removeFormatting: Boolean): Field = js.native
+  def insertField(insertLocation: InsertLocation, fieldType: FieldType, text: Unit, removeFormatting: Boolean): Field = js.native
+  
+  def insertFileFromBase64(base64File: String, insertLocation: Replace | Start | End | Before | After): Range = js.native
   /**
     * Inserts a document at the specified location.
     *
     * @remarks
     * [Api set: WordApi 1.1]
     *
-    * @param base64File Required. The base64 encoded content of a .docx file.
+    * @param base64File Required. The Base64-encoded content of a .docx file.
     * @param insertLocation Required. The value must be 'Replace', 'Start', 'End', 'Before', or 'After'.
-    * @param asNewParagraph Optional. Indicates whether to insert the content as new paragraphs. Default is false which indicates that the base64 content is merged as inline text into the existing paragraph.
     */
   def insertFileFromBase64(base64File: String, insertLocation: InsertLocation): Range = js.native
-  def insertFileFromBase64(base64File: String, insertLocation: InsertLocation, asNewParagraph: Boolean): Range = js.native
   
   /**
     * Inserts a footnote. The footnote reference is placed after the range.
@@ -377,13 +513,12 @@ trait Range
     * @remarks
     * [Api set: WordApi 1.2]
     *
-    * @param base64EncodedImage Required. The base64 encoded image to be inserted.
+    * @param base64EncodedImage Required. The Base64-encoded image to be inserted.
     * @param insertLocation Required. The value must be 'Replace', 'Start', 'End', 'Before', or 'After'.
     */
   def insertInlinePictureFromBase64(base64EncodedImage: String, insertLocation: InsertLocation): InlinePicture = js.native
   
   def insertOoxml(ooxml: String, insertLocation: Replace | Start | End | Before | After): Range = js.native
-  def insertOoxml(ooxml: String, insertLocation: Replace | Start | End | Before | After, asNewParagraph: Boolean): Range = js.native
   /**
     * Inserts OOXML at the specified location.
     *
@@ -392,10 +527,8 @@ trait Range
     *
     * @param ooxml Required. The OOXML to be inserted.
     * @param insertLocation Required. The value must be 'Replace', 'Start', 'End', 'Before', or 'After'.
-    * @param asNewParagraph Optional. Indicates whether to insert the OOXML as new paragraphs. Default is false which indicates that the OOXML is merged as inline text into the existing paragraph.
     */
   def insertOoxml(ooxml: String, insertLocation: InsertLocation): Range = js.native
-  def insertOoxml(ooxml: String, insertLocation: InsertLocation, asNewParagraph: Boolean): Range = js.native
   
   def insertParagraph(paragraphText: String, insertLocation: Before | After): Paragraph = js.native
   def insertParagraph(paragraphText: String, insertLocation: typings.officeJsPreview.Word.InsertLocation.after): Paragraph = js.native
@@ -500,6 +633,50 @@ trait Range
   def load(propertyNamesAndPaths: Expand): Range = js.native
   def load(propertyNames: String): Range = js.native
   def load(propertyNames: js.Array[String]): Range = js.native
+  
+  /**
+    * Occurs when new comments are added.
+    *
+    * @remarks
+    * [Api set: WordApi BETA (PREVIEW ONLY)]
+    *
+    * @eventproperty
+    * @beta
+    */
+  val onCommentAdded: EventHandlers[CommentEventArgs] = js.native
+  
+  /**
+    * Occurs when a comment or its reply is changed.
+    *
+    * @remarks
+    * [Api set: WordApi BETA (PREVIEW ONLY)]
+    *
+    * @eventproperty
+    * @beta
+    */
+  val onCommentChanged: EventHandlers[CommentEventArgs] = js.native
+  
+  /**
+    * Occurs when a comment is deselected.
+    *
+    * @remarks
+    * [Api set: WordApi BETA (PREVIEW ONLY)]
+    *
+    * @eventproperty
+    * @beta
+    */
+  val onCommentDeselected: EventHandlers[CommentEventArgs] = js.native
+  
+  /**
+    * Occurs when a comment is selected.
+    *
+    * @remarks
+    * [Api set: WordApi BETA (PREVIEW ONLY)]
+    *
+    * @eventproperty
+    * @beta
+    */
+  val onCommentSelected: EventHandlers[CommentEventArgs] = js.native
   
   /**
     * Gets the collection of paragraph objects in the range. **Important**: For requirement sets 1.1 and 1.2, paragraphs in tables wholly contained within this range are not returned. From requirement set 1.3, paragraphs in such tables are also returned.
@@ -639,7 +816,7 @@ trait Range
     * @remarks
     * [Api set: WordApi 1.3]
     */
-  var styleBuiltIn: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 149, starting with typings.officeJsPreview.Word.Style, typings.officeJsPreview.officeJsPreviewStrings.Other, typings.officeJsPreview.officeJsPreviewStrings.Normal */ Any = js.native
+  var styleBuiltIn: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 149, starting with typings.officeJsPreview.Word.BuiltInStyleName, typings.officeJsPreview.officeJsPreviewStrings.Other, typings.officeJsPreview.officeJsPreviewStrings.Normal */ Any = js.native
   
   /**
     * Gets the collection of table objects in the range.

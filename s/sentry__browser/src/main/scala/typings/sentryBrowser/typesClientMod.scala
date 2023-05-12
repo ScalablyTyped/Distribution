@@ -3,13 +3,12 @@ package typings.sentryBrowser
 import typings.sentryBrowser.typesTransportsTypesMod.BrowserTransportOptions
 import typings.sentryCore.mod.BaseClient
 import typings.sentryCore.mod.Scope
+import typings.sentryTypes.typesBrowseroptionsMod.BrowserClientReplayOptions
 import typings.sentryTypes.typesEventMod.Event
 import typings.sentryTypes.typesEventMod.EventHint
-import typings.sentryTypes.typesIntegrationMod.Integration
 import typings.sentryTypes.typesOptionsMod.ClientOptions
 import typings.sentryTypes.typesOptionsMod.Options
-import typings.sentryTypes.typesStackframeMod.StackFrame
-import typings.sentryTypes.typesTransportMod.Transport
+import typings.sentryTypes.typesUserMod.UserFeedback
 import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -33,68 +32,19 @@ object typesClientMod {
     /* private */ var _flushOutcomes: Any = js.native
     
     /* protected */ def _prepareEvent(event: Event, hint: EventHint, scope: Scope): PromiseLike[Event | Null] = js.native
-  }
-  
-  trait BaseBrowserOptions extends StObject {
     
     /**
-      * A pattern for error URLs which should exclusively be sent to Sentry.
-      * This is the opposite of {@link Options.denyUrls}.
-      * By default, all errors will be sent.
+      * Sends user feedback to Sentry.
       */
-    var allowUrls: js.UndefOr[js.Array[String | js.RegExp]] = js.undefined
-    
-    /**
-      * A pattern for error URLs which should not be sent to Sentry.
-      * To allow certain errors instead, use {@link Options.allowUrls}.
-      * By default, all errors will be sent.
-      */
-    var denyUrls: js.UndefOr[js.Array[String | js.RegExp]] = js.undefined
-  }
-  object BaseBrowserOptions {
-    
-    inline def apply(): BaseBrowserOptions = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[BaseBrowserOptions]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: BaseBrowserOptions] (val x: Self) extends AnyVal {
-      
-      inline def setAllowUrls(value: js.Array[String | js.RegExp]): Self = StObject.set(x, "allowUrls", value.asInstanceOf[js.Any])
-      
-      inline def setAllowUrlsUndefined: Self = StObject.set(x, "allowUrls", js.undefined)
-      
-      inline def setAllowUrlsVarargs(value: (String | js.RegExp)*): Self = StObject.set(x, "allowUrls", js.Array(value*))
-      
-      inline def setDenyUrls(value: js.Array[String | js.RegExp]): Self = StObject.set(x, "denyUrls", value.asInstanceOf[js.Any])
-      
-      inline def setDenyUrlsUndefined: Self = StObject.set(x, "denyUrls", js.undefined)
-      
-      inline def setDenyUrlsVarargs(value: (String | js.RegExp)*): Self = StObject.set(x, "denyUrls", js.Array(value*))
-    }
+    def captureUserFeedback(feedback: UserFeedback): Unit = js.native
   }
   
-  trait BrowserClientOptions
-    extends StObject
-       with ClientOptions[BrowserTransportOptions]
-       with BaseBrowserOptions
-  object BrowserClientOptions {
-    
-    inline def apply(
-      integrations: js.Array[Integration],
-      stackParser: (/* stack */ String, /* skipFirst */ js.UndefOr[Double]) => js.Array[StackFrame],
-      transport: BrowserTransportOptions => Transport
-    ): BrowserClientOptions = {
-      val __obj = js.Dynamic.literal(integrations = integrations.asInstanceOf[js.Any], stackParser = js.Any.fromFunction2(stackParser), transport = js.Any.fromFunction1(transport))
-      __obj.asInstanceOf[BrowserClientOptions]
-    }
-  }
+  type BrowserClientOptions = ClientOptions[BrowserTransportOptions]
   
   trait BrowserOptions
     extends StObject
        with Options[BrowserTransportOptions]
-       with BaseBrowserOptions
+       with BrowserClientReplayOptions
   object BrowserOptions {
     
     inline def apply(): BrowserOptions = {

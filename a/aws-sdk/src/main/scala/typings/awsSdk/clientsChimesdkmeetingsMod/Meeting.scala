@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Meeting extends StObject {
   
   /**
-    * The external meeting ID.
+    * The external meeting ID. Pattern: [-_&amp;@+=,(){}\[\]\/«».:|'"#a-zA-Z0-9À-ÿ\s]*  Values that begin with aws: are reserved. You can't configure a value that uses this prefix. Case insensitive.
     */
   var ExternalMeetingId: js.UndefOr[typings.awsSdk.clientsChimesdkmeetingsMod.ExternalMeetingId] = js.undefined
   
@@ -27,7 +27,7 @@ trait Meeting extends StObject {
   var MeetingArn: js.UndefOr[AmazonResourceName] = js.undefined
   
   /**
-    * The features available to a meeting, such as Amazon Voice Focus.
+    * The features available to a meeting, such as echo reduction.
     */
   var MeetingFeatures: js.UndefOr[MeetingFeaturesConfiguration] = js.undefined
   

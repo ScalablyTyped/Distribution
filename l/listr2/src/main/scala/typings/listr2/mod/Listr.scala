@@ -1,16 +1,17 @@
 package typings.listr2.mod
 
-import typings.rxjs.mod.Subject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Creates a new set of Listr2 task list.
+  * Create a new task list with Listr.
+  *
+  * @see {@link https://listr2.kilic.dev/listr/listr.html}
   */
 @JSImport("listr2", "Listr")
 @js.native
-open class Listr[Ctx /* <: ListrContext */, Renderer /* <: ListrRendererValue */, FallbackRenderer /* <: ListrRendererValue */] protected () extends StObject {
+open class Listr[Ctx, Renderer /* <: ListrRendererValue */, FallbackRenderer /* <: ListrRendererValue */] protected () extends StObject {
   def this(task: js.Array[ListrTask[Ctx, ListrGetRendererClassFromValue[Renderer]]]) = this()
   def this(task: ListrTask[Ctx, ListrGetRendererClassFromValue[Renderer]]) = this()
   def this(
@@ -42,25 +43,24 @@ open class Listr[Ctx /* <: ListrContext */, Renderer /* <: ListrRendererValue */
     parentTask: Task[Any, Any]
   ) = this()
   
-  def add(task: js.Array[ListrTask[Ctx, ListrGetRendererClassFromValue[Renderer]]]): Unit = js.native
-  def add(task: ListrTask[Ctx, ListrGetRendererClassFromValue[Renderer]]): Unit = js.native
-  
-  /* private */ var checkAll: Any = js.native
+  def add(tasks: js.Array[ListrTask[Ctx, ListrGetRendererClassFromValue[Renderer]]]): Unit = js.native
+  def add(tasks: ListrTask[Ctx, ListrGetRendererClassFromValue[Renderer]]): Unit = js.native
   
   /* private */ var concurrency: Any = js.native
   
   var ctx: Ctx = js.native
   
-  var err: js.Array[ListrError[Ctx]] = js.native
+  var errors: js.Array[ListrError[Ctx]] = js.native
+  
+  var events: ListrEventManager = js.native
+  
+  /* private */ var generate: Any = js.native
   
   var options: js.UndefOr[ListrBaseClassOptions[Ctx, Renderer, FallbackRenderer]] = js.native
   
   var parentTask: js.UndefOr[Task[Any, Any]] = js.native
   
   var path: js.Array[String] = js.native
-  
-  @JSName("renderHook$")
-  var renderHook$: Subject[Unit] = js.native
   
   /* private */ var renderer: Any = js.native
   

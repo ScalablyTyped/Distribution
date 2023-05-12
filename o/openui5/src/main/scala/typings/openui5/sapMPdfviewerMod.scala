@@ -432,6 +432,8 @@ object sapMPdfviewerMod {
     def downloadPDF(): Unit = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:error error} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -443,6 +445,8 @@ object sapMPdfviewerMod {
     mParameters: Target): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:loaded loaded} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -454,6 +458,8 @@ object sapMPdfviewerMod {
     mParameters: js.Object): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:sourceValidationFailed sourceValidationFailed} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining

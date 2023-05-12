@@ -125,22 +125,22 @@ object Graphics {
   trait RoundedRectRadius extends StObject {
     
     /**
-      * Bottom left corner radius.
+      * Bottom left corner radius. Draw concave arc if this radius is negative.
       */
     var bl: js.UndefOr[Double] = js.undefined
     
     /**
-      * Bottom right corner radius.
+      * Bottom right corner radius. Draw concave arc if this radius is negative.
       */
     var br: js.UndefOr[Double] = js.undefined
     
     /**
-      * Top left corner radius.
+      * Top left corner radius. Draw concave arc if this radius is negative.
       */
     var tl: js.UndefOr[Double] = js.undefined
     
     /**
-      * Top right corner radius.
+      * Top right corner radius. Draw concave arc if this radius is negative.
       */
     var tr: js.UndefOr[Double] = js.undefined
   }

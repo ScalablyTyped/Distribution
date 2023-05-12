@@ -21,6 +21,7 @@ import typings.vscode.mod.GlobPattern
 import typings.vscode.mod.NotebookDocument
 import typings.vscode.mod.NotebookDocumentChangeEvent
 import typings.vscode.mod.NotebookDocumentContentOptions
+import typings.vscode.mod.NotebookDocumentWillSaveEvent
 import typings.vscode.mod.NotebookSerializer
 import typings.vscode.mod.TaskProvider
 import typings.vscode.mod.TextDocument
@@ -180,6 +181,10 @@ object workspace {
   @JSGlobal("vscode.workspace.onWillRenameFiles")
   @js.native
   val onWillRenameFiles: Event[FileWillRenameEvent] = js.native
+  
+  @JSGlobal("vscode.workspace.onWillSaveNotebookDocument")
+  @js.native
+  val onWillSaveNotebookDocument: Event[NotebookDocumentWillSaveEvent] = js.native
   
   @JSGlobal("vscode.workspace.onWillSaveTextDocument")
   @js.native

@@ -6,6 +6,9 @@ import typings.googleCloudTextToSpeech.buildProtosProtosMod.google.cloud.texttos
 import typings.googleCloudTextToSpeech.buildProtosProtosMod.google.cloud.texttospeech.v1.IListVoicesRequest
 import typings.googleCloudTextToSpeech.buildProtosProtosMod.google.cloud.texttospeech.v1.IListVoicesResponse
 import typings.googleCloudTextToSpeech.buildProtosProtosMod.google.cloud.texttospeech.v1.ISynthesisInput
+import typings.googleCloudTextToSpeech.buildProtosProtosMod.google.cloud.texttospeech.v1.ISynthesizeLongAudioMetadata
+import typings.googleCloudTextToSpeech.buildProtosProtosMod.google.cloud.texttospeech.v1.ISynthesizeLongAudioRequest
+import typings.googleCloudTextToSpeech.buildProtosProtosMod.google.cloud.texttospeech.v1.ISynthesizeLongAudioResponse
 import typings.googleCloudTextToSpeech.buildProtosProtosMod.google.cloud.texttospeech.v1.ISynthesizeSpeechRequest
 import typings.googleCloudTextToSpeech.buildProtosProtosMod.google.cloud.texttospeech.v1.ISynthesizeSpeechResponse
 import typings.googleCloudTextToSpeech.buildProtosProtosMod.google.cloud.texttospeech.v1.IVoice
@@ -640,6 +643,342 @@ object v1 {
     inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
+  /** Represents a SynthesizeLongAudioMetadata. */
+  @JSImport("@google-cloud/text-to-speech/build/src", "protos.google.cloud.texttospeech.v1.SynthesizeLongAudioMetadata")
+  @js.native
+  /**
+    * Constructs a new SynthesizeLongAudioMetadata.
+    * @param [properties] Properties to set
+    */
+  open class SynthesizeLongAudioMetadata ()
+    extends typings.googleCloudTextToSpeech.buildProtosProtosMod.google.cloud.texttospeech.v1.SynthesizeLongAudioMetadata {
+    def this(properties: ISynthesizeLongAudioMetadata) = this()
+  }
+  object SynthesizeLongAudioMetadata {
+    
+    @JSImport("@google-cloud/text-to-speech/build/src", "protos.google.cloud.texttospeech.v1.SynthesizeLongAudioMetadata")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * Creates a new SynthesizeLongAudioMetadata instance using the specified properties.
+      * @param [properties] Properties to set
+      * @returns SynthesizeLongAudioMetadata instance
+      */
+    /* static member */
+    inline def create(): typings.googleCloudTextToSpeech.buildProtosProtosMod.google.cloud.texttospeech.v1.SynthesizeLongAudioMetadata = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.googleCloudTextToSpeech.buildProtosProtosMod.google.cloud.texttospeech.v1.SynthesizeLongAudioMetadata]
+    inline def create(properties: ISynthesizeLongAudioMetadata): typings.googleCloudTextToSpeech.buildProtosProtosMod.google.cloud.texttospeech.v1.SynthesizeLongAudioMetadata = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.buildProtosProtosMod.google.cloud.texttospeech.v1.SynthesizeLongAudioMetadata]
+    
+    inline def decode(reader: js.typedarray.Uint8Array): typings.googleCloudTextToSpeech.buildProtosProtosMod.google.cloud.texttospeech.v1.SynthesizeLongAudioMetadata = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.buildProtosProtosMod.google.cloud.texttospeech.v1.SynthesizeLongAudioMetadata]
+    inline def decode(reader: js.typedarray.Uint8Array, length: Double): typings.googleCloudTextToSpeech.buildProtosProtosMod.google.cloud.texttospeech.v1.SynthesizeLongAudioMetadata = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleCloudTextToSpeech.buildProtosProtosMod.google.cloud.texttospeech.v1.SynthesizeLongAudioMetadata]
+    /**
+      * Decodes a SynthesizeLongAudioMetadata message from the specified reader or buffer.
+      * @param reader Reader or buffer to decode from
+      * @param [length] Message length if known beforehand
+      * @returns SynthesizeLongAudioMetadata
+      * @throws {Error} If the payload is not a reader or valid buffer
+      * @throws {$protobuf.util.ProtocolError} If required fields are missing
+      */
+    /* static member */
+    inline def decode(reader: Reader): typings.googleCloudTextToSpeech.buildProtosProtosMod.google.cloud.texttospeech.v1.SynthesizeLongAudioMetadata = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.buildProtosProtosMod.google.cloud.texttospeech.v1.SynthesizeLongAudioMetadata]
+    inline def decode(reader: Reader, length: Double): typings.googleCloudTextToSpeech.buildProtosProtosMod.google.cloud.texttospeech.v1.SynthesizeLongAudioMetadata = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleCloudTextToSpeech.buildProtosProtosMod.google.cloud.texttospeech.v1.SynthesizeLongAudioMetadata]
+    
+    inline def decodeDelimited(reader: js.typedarray.Uint8Array): typings.googleCloudTextToSpeech.buildProtosProtosMod.google.cloud.texttospeech.v1.SynthesizeLongAudioMetadata = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.buildProtosProtosMod.google.cloud.texttospeech.v1.SynthesizeLongAudioMetadata]
+    /**
+      * Decodes a SynthesizeLongAudioMetadata message from the specified reader or buffer, length delimited.
+      * @param reader Reader or buffer to decode from
+      * @returns SynthesizeLongAudioMetadata
+      * @throws {Error} If the payload is not a reader or valid buffer
+      * @throws {$protobuf.util.ProtocolError} If required fields are missing
+      */
+    /* static member */
+    inline def decodeDelimited(reader: Reader): typings.googleCloudTextToSpeech.buildProtosProtosMod.google.cloud.texttospeech.v1.SynthesizeLongAudioMetadata = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.buildProtosProtosMod.google.cloud.texttospeech.v1.SynthesizeLongAudioMetadata]
+    
+    /**
+      * Encodes the specified SynthesizeLongAudioMetadata message. Does not implicitly {@link google.cloud.texttospeech.v1.SynthesizeLongAudioMetadata.verify|verify} messages.
+      * @param message SynthesizeLongAudioMetadata message or plain object to encode
+      * @param [writer] Writer to encode to
+      * @returns Writer
+      */
+    /* static member */
+    inline def encode(message: ISynthesizeLongAudioMetadata): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    inline def encode(message: ISynthesizeLongAudioMetadata, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+    
+    /**
+      * Encodes the specified SynthesizeLongAudioMetadata message, length delimited. Does not implicitly {@link google.cloud.texttospeech.v1.SynthesizeLongAudioMetadata.verify|verify} messages.
+      * @param message SynthesizeLongAudioMetadata message or plain object to encode
+      * @param [writer] Writer to encode to
+      * @returns Writer
+      */
+    /* static member */
+    inline def encodeDelimited(message: ISynthesizeLongAudioMetadata): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    inline def encodeDelimited(message: ISynthesizeLongAudioMetadata, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+    
+    /**
+      * Creates a SynthesizeLongAudioMetadata message from a plain object. Also converts values to their respective internal types.
+      * @param object Plain object
+      * @returns SynthesizeLongAudioMetadata
+      */
+    /* static member */
+    inline def fromObject(`object`: StringDictionary[Any]): typings.googleCloudTextToSpeech.buildProtosProtosMod.google.cloud.texttospeech.v1.SynthesizeLongAudioMetadata = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.buildProtosProtosMod.google.cloud.texttospeech.v1.SynthesizeLongAudioMetadata]
+    
+    /**
+      * Gets the default type url for SynthesizeLongAudioMetadata
+      * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+      * @returns The default type url
+      */
+    /* static member */
+    inline def getTypeUrl(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTypeUrl")().asInstanceOf[String]
+    inline def getTypeUrl(typeUrlPrefix: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTypeUrl")(typeUrlPrefix.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    /**
+      * Creates a plain object from a SynthesizeLongAudioMetadata message. Also converts values to other types if specified.
+      * @param message SynthesizeLongAudioMetadata
+      * @param [options] Conversion options
+      * @returns Plain object
+      */
+    /* static member */
+    inline def toObject(
+      message: typings.googleCloudTextToSpeech.buildProtosProtosMod.google.cloud.texttospeech.v1.SynthesizeLongAudioMetadata
+    ): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+    inline def toObject(
+      message: typings.googleCloudTextToSpeech.buildProtosProtosMod.google.cloud.texttospeech.v1.SynthesizeLongAudioMetadata,
+      options: IConversionOptions
+    ): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
+    
+    /**
+      * Verifies a SynthesizeLongAudioMetadata message.
+      * @param message Plain object to verify
+      * @returns `null` if valid, otherwise the reason why it is not
+      */
+    /* static member */
+    inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  }
+  
+  /** Represents a SynthesizeLongAudioRequest. */
+  @JSImport("@google-cloud/text-to-speech/build/src", "protos.google.cloud.texttospeech.v1.SynthesizeLongAudioRequest")
+  @js.native
+  /**
+    * Constructs a new SynthesizeLongAudioRequest.
+    * @param [properties] Properties to set
+    */
+  open class SynthesizeLongAudioRequest ()
+    extends typings.googleCloudTextToSpeech.buildProtosProtosMod.google.cloud.texttospeech.v1.SynthesizeLongAudioRequest {
+    def this(properties: ISynthesizeLongAudioRequest) = this()
+  }
+  object SynthesizeLongAudioRequest {
+    
+    @JSImport("@google-cloud/text-to-speech/build/src", "protos.google.cloud.texttospeech.v1.SynthesizeLongAudioRequest")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * Creates a new SynthesizeLongAudioRequest instance using the specified properties.
+      * @param [properties] Properties to set
+      * @returns SynthesizeLongAudioRequest instance
+      */
+    /* static member */
+    inline def create(): typings.googleCloudTextToSpeech.buildProtosProtosMod.google.cloud.texttospeech.v1.SynthesizeLongAudioRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.googleCloudTextToSpeech.buildProtosProtosMod.google.cloud.texttospeech.v1.SynthesizeLongAudioRequest]
+    inline def create(properties: ISynthesizeLongAudioRequest): typings.googleCloudTextToSpeech.buildProtosProtosMod.google.cloud.texttospeech.v1.SynthesizeLongAudioRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.buildProtosProtosMod.google.cloud.texttospeech.v1.SynthesizeLongAudioRequest]
+    
+    inline def decode(reader: js.typedarray.Uint8Array): typings.googleCloudTextToSpeech.buildProtosProtosMod.google.cloud.texttospeech.v1.SynthesizeLongAudioRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.buildProtosProtosMod.google.cloud.texttospeech.v1.SynthesizeLongAudioRequest]
+    inline def decode(reader: js.typedarray.Uint8Array, length: Double): typings.googleCloudTextToSpeech.buildProtosProtosMod.google.cloud.texttospeech.v1.SynthesizeLongAudioRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleCloudTextToSpeech.buildProtosProtosMod.google.cloud.texttospeech.v1.SynthesizeLongAudioRequest]
+    /**
+      * Decodes a SynthesizeLongAudioRequest message from the specified reader or buffer.
+      * @param reader Reader or buffer to decode from
+      * @param [length] Message length if known beforehand
+      * @returns SynthesizeLongAudioRequest
+      * @throws {Error} If the payload is not a reader or valid buffer
+      * @throws {$protobuf.util.ProtocolError} If required fields are missing
+      */
+    /* static member */
+    inline def decode(reader: Reader): typings.googleCloudTextToSpeech.buildProtosProtosMod.google.cloud.texttospeech.v1.SynthesizeLongAudioRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.buildProtosProtosMod.google.cloud.texttospeech.v1.SynthesizeLongAudioRequest]
+    inline def decode(reader: Reader, length: Double): typings.googleCloudTextToSpeech.buildProtosProtosMod.google.cloud.texttospeech.v1.SynthesizeLongAudioRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleCloudTextToSpeech.buildProtosProtosMod.google.cloud.texttospeech.v1.SynthesizeLongAudioRequest]
+    
+    inline def decodeDelimited(reader: js.typedarray.Uint8Array): typings.googleCloudTextToSpeech.buildProtosProtosMod.google.cloud.texttospeech.v1.SynthesizeLongAudioRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.buildProtosProtosMod.google.cloud.texttospeech.v1.SynthesizeLongAudioRequest]
+    /**
+      * Decodes a SynthesizeLongAudioRequest message from the specified reader or buffer, length delimited.
+      * @param reader Reader or buffer to decode from
+      * @returns SynthesizeLongAudioRequest
+      * @throws {Error} If the payload is not a reader or valid buffer
+      * @throws {$protobuf.util.ProtocolError} If required fields are missing
+      */
+    /* static member */
+    inline def decodeDelimited(reader: Reader): typings.googleCloudTextToSpeech.buildProtosProtosMod.google.cloud.texttospeech.v1.SynthesizeLongAudioRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.buildProtosProtosMod.google.cloud.texttospeech.v1.SynthesizeLongAudioRequest]
+    
+    /**
+      * Encodes the specified SynthesizeLongAudioRequest message. Does not implicitly {@link google.cloud.texttospeech.v1.SynthesizeLongAudioRequest.verify|verify} messages.
+      * @param message SynthesizeLongAudioRequest message or plain object to encode
+      * @param [writer] Writer to encode to
+      * @returns Writer
+      */
+    /* static member */
+    inline def encode(message: ISynthesizeLongAudioRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    inline def encode(message: ISynthesizeLongAudioRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+    
+    /**
+      * Encodes the specified SynthesizeLongAudioRequest message, length delimited. Does not implicitly {@link google.cloud.texttospeech.v1.SynthesizeLongAudioRequest.verify|verify} messages.
+      * @param message SynthesizeLongAudioRequest message or plain object to encode
+      * @param [writer] Writer to encode to
+      * @returns Writer
+      */
+    /* static member */
+    inline def encodeDelimited(message: ISynthesizeLongAudioRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    inline def encodeDelimited(message: ISynthesizeLongAudioRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+    
+    /**
+      * Creates a SynthesizeLongAudioRequest message from a plain object. Also converts values to their respective internal types.
+      * @param object Plain object
+      * @returns SynthesizeLongAudioRequest
+      */
+    /* static member */
+    inline def fromObject(`object`: StringDictionary[Any]): typings.googleCloudTextToSpeech.buildProtosProtosMod.google.cloud.texttospeech.v1.SynthesizeLongAudioRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.buildProtosProtosMod.google.cloud.texttospeech.v1.SynthesizeLongAudioRequest]
+    
+    /**
+      * Gets the default type url for SynthesizeLongAudioRequest
+      * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+      * @returns The default type url
+      */
+    /* static member */
+    inline def getTypeUrl(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTypeUrl")().asInstanceOf[String]
+    inline def getTypeUrl(typeUrlPrefix: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTypeUrl")(typeUrlPrefix.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    /**
+      * Creates a plain object from a SynthesizeLongAudioRequest message. Also converts values to other types if specified.
+      * @param message SynthesizeLongAudioRequest
+      * @param [options] Conversion options
+      * @returns Plain object
+      */
+    /* static member */
+    inline def toObject(
+      message: typings.googleCloudTextToSpeech.buildProtosProtosMod.google.cloud.texttospeech.v1.SynthesizeLongAudioRequest
+    ): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+    inline def toObject(
+      message: typings.googleCloudTextToSpeech.buildProtosProtosMod.google.cloud.texttospeech.v1.SynthesizeLongAudioRequest,
+      options: IConversionOptions
+    ): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
+    
+    /**
+      * Verifies a SynthesizeLongAudioRequest message.
+      * @param message Plain object to verify
+      * @returns `null` if valid, otherwise the reason why it is not
+      */
+    /* static member */
+    inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  }
+  
+  /** Represents a SynthesizeLongAudioResponse. */
+  @JSImport("@google-cloud/text-to-speech/build/src", "protos.google.cloud.texttospeech.v1.SynthesizeLongAudioResponse")
+  @js.native
+  /**
+    * Constructs a new SynthesizeLongAudioResponse.
+    * @param [properties] Properties to set
+    */
+  open class SynthesizeLongAudioResponse ()
+    extends typings.googleCloudTextToSpeech.buildProtosProtosMod.google.cloud.texttospeech.v1.SynthesizeLongAudioResponse {
+    def this(properties: ISynthesizeLongAudioResponse) = this()
+  }
+  object SynthesizeLongAudioResponse {
+    
+    @JSImport("@google-cloud/text-to-speech/build/src", "protos.google.cloud.texttospeech.v1.SynthesizeLongAudioResponse")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * Creates a new SynthesizeLongAudioResponse instance using the specified properties.
+      * @param [properties] Properties to set
+      * @returns SynthesizeLongAudioResponse instance
+      */
+    /* static member */
+    inline def create(): typings.googleCloudTextToSpeech.buildProtosProtosMod.google.cloud.texttospeech.v1.SynthesizeLongAudioResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.googleCloudTextToSpeech.buildProtosProtosMod.google.cloud.texttospeech.v1.SynthesizeLongAudioResponse]
+    inline def create(properties: ISynthesizeLongAudioResponse): typings.googleCloudTextToSpeech.buildProtosProtosMod.google.cloud.texttospeech.v1.SynthesizeLongAudioResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.buildProtosProtosMod.google.cloud.texttospeech.v1.SynthesizeLongAudioResponse]
+    
+    inline def decode(reader: js.typedarray.Uint8Array): typings.googleCloudTextToSpeech.buildProtosProtosMod.google.cloud.texttospeech.v1.SynthesizeLongAudioResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.buildProtosProtosMod.google.cloud.texttospeech.v1.SynthesizeLongAudioResponse]
+    inline def decode(reader: js.typedarray.Uint8Array, length: Double): typings.googleCloudTextToSpeech.buildProtosProtosMod.google.cloud.texttospeech.v1.SynthesizeLongAudioResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleCloudTextToSpeech.buildProtosProtosMod.google.cloud.texttospeech.v1.SynthesizeLongAudioResponse]
+    /**
+      * Decodes a SynthesizeLongAudioResponse message from the specified reader or buffer.
+      * @param reader Reader or buffer to decode from
+      * @param [length] Message length if known beforehand
+      * @returns SynthesizeLongAudioResponse
+      * @throws {Error} If the payload is not a reader or valid buffer
+      * @throws {$protobuf.util.ProtocolError} If required fields are missing
+      */
+    /* static member */
+    inline def decode(reader: Reader): typings.googleCloudTextToSpeech.buildProtosProtosMod.google.cloud.texttospeech.v1.SynthesizeLongAudioResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.buildProtosProtosMod.google.cloud.texttospeech.v1.SynthesizeLongAudioResponse]
+    inline def decode(reader: Reader, length: Double): typings.googleCloudTextToSpeech.buildProtosProtosMod.google.cloud.texttospeech.v1.SynthesizeLongAudioResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleCloudTextToSpeech.buildProtosProtosMod.google.cloud.texttospeech.v1.SynthesizeLongAudioResponse]
+    
+    inline def decodeDelimited(reader: js.typedarray.Uint8Array): typings.googleCloudTextToSpeech.buildProtosProtosMod.google.cloud.texttospeech.v1.SynthesizeLongAudioResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.buildProtosProtosMod.google.cloud.texttospeech.v1.SynthesizeLongAudioResponse]
+    /**
+      * Decodes a SynthesizeLongAudioResponse message from the specified reader or buffer, length delimited.
+      * @param reader Reader or buffer to decode from
+      * @returns SynthesizeLongAudioResponse
+      * @throws {Error} If the payload is not a reader or valid buffer
+      * @throws {$protobuf.util.ProtocolError} If required fields are missing
+      */
+    /* static member */
+    inline def decodeDelimited(reader: Reader): typings.googleCloudTextToSpeech.buildProtosProtosMod.google.cloud.texttospeech.v1.SynthesizeLongAudioResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.buildProtosProtosMod.google.cloud.texttospeech.v1.SynthesizeLongAudioResponse]
+    
+    /**
+      * Encodes the specified SynthesizeLongAudioResponse message. Does not implicitly {@link google.cloud.texttospeech.v1.SynthesizeLongAudioResponse.verify|verify} messages.
+      * @param message SynthesizeLongAudioResponse message or plain object to encode
+      * @param [writer] Writer to encode to
+      * @returns Writer
+      */
+    /* static member */
+    inline def encode(message: ISynthesizeLongAudioResponse): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    inline def encode(message: ISynthesizeLongAudioResponse, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+    
+    /**
+      * Encodes the specified SynthesizeLongAudioResponse message, length delimited. Does not implicitly {@link google.cloud.texttospeech.v1.SynthesizeLongAudioResponse.verify|verify} messages.
+      * @param message SynthesizeLongAudioResponse message or plain object to encode
+      * @param [writer] Writer to encode to
+      * @returns Writer
+      */
+    /* static member */
+    inline def encodeDelimited(message: ISynthesizeLongAudioResponse): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    inline def encodeDelimited(message: ISynthesizeLongAudioResponse, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+    
+    /**
+      * Creates a SynthesizeLongAudioResponse message from a plain object. Also converts values to their respective internal types.
+      * @param object Plain object
+      * @returns SynthesizeLongAudioResponse
+      */
+    /* static member */
+    inline def fromObject(`object`: StringDictionary[Any]): typings.googleCloudTextToSpeech.buildProtosProtosMod.google.cloud.texttospeech.v1.SynthesizeLongAudioResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.buildProtosProtosMod.google.cloud.texttospeech.v1.SynthesizeLongAudioResponse]
+    
+    /**
+      * Gets the default type url for SynthesizeLongAudioResponse
+      * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+      * @returns The default type url
+      */
+    /* static member */
+    inline def getTypeUrl(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTypeUrl")().asInstanceOf[String]
+    inline def getTypeUrl(typeUrlPrefix: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTypeUrl")(typeUrlPrefix.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    /**
+      * Creates a plain object from a SynthesizeLongAudioResponse message. Also converts values to other types if specified.
+      * @param message SynthesizeLongAudioResponse
+      * @param [options] Conversion options
+      * @returns Plain object
+      */
+    /* static member */
+    inline def toObject(
+      message: typings.googleCloudTextToSpeech.buildProtosProtosMod.google.cloud.texttospeech.v1.SynthesizeLongAudioResponse
+    ): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+    inline def toObject(
+      message: typings.googleCloudTextToSpeech.buildProtosProtosMod.google.cloud.texttospeech.v1.SynthesizeLongAudioResponse,
+      options: IConversionOptions
+    ): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
+    
+    /**
+      * Verifies a SynthesizeLongAudioResponse message.
+      * @param message Plain object to verify
+      * @returns `null` if valid, otherwise the reason why it is not
+      */
+    /* static member */
+    inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  }
+  
   /** Represents a SynthesizeSpeechRequest. */
   @JSImport("@google-cloud/text-to-speech/build/src", "protos.google.cloud.texttospeech.v1.SynthesizeSpeechRequest")
   @js.native
@@ -898,6 +1237,42 @@ object v1 {
     inline def create(rpcImpl: RPCImpl, requestDelimited: Boolean): typings.googleCloudTextToSpeech.buildProtosProtosMod.google.cloud.texttospeech.v1.TextToSpeech = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any], requestDelimited.asInstanceOf[js.Any])).asInstanceOf[typings.googleCloudTextToSpeech.buildProtosProtosMod.google.cloud.texttospeech.v1.TextToSpeech]
     inline def create(rpcImpl: RPCImpl, requestDelimited: Boolean, responseDelimited: Boolean): typings.googleCloudTextToSpeech.buildProtosProtosMod.google.cloud.texttospeech.v1.TextToSpeech = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any], requestDelimited.asInstanceOf[js.Any], responseDelimited.asInstanceOf[js.Any])).asInstanceOf[typings.googleCloudTextToSpeech.buildProtosProtosMod.google.cloud.texttospeech.v1.TextToSpeech]
     inline def create(rpcImpl: RPCImpl, requestDelimited: Unit, responseDelimited: Boolean): typings.googleCloudTextToSpeech.buildProtosProtosMod.google.cloud.texttospeech.v1.TextToSpeech = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any], requestDelimited.asInstanceOf[js.Any], responseDelimited.asInstanceOf[js.Any])).asInstanceOf[typings.googleCloudTextToSpeech.buildProtosProtosMod.google.cloud.texttospeech.v1.TextToSpeech]
+  }
+  
+  /** Represents a TextToSpeechLongAudioSynthesize */
+  @JSImport("@google-cloud/text-to-speech/build/src", "protos.google.cloud.texttospeech.v1.TextToSpeechLongAudioSynthesize")
+  @js.native
+  open class TextToSpeechLongAudioSynthesize protected ()
+    extends typings.googleCloudTextToSpeech.buildProtosProtosMod.google.cloud.texttospeech.v1.TextToSpeechLongAudioSynthesize {
+    /**
+      * Constructs a new TextToSpeechLongAudioSynthesize service.
+      * @param rpcImpl RPC implementation
+      * @param [requestDelimited=false] Whether requests are length-delimited
+      * @param [responseDelimited=false] Whether responses are length-delimited
+      */
+    def this(rpcImpl: RPCImpl) = this()
+    def this(rpcImpl: RPCImpl, requestDelimited: Boolean) = this()
+    def this(rpcImpl: RPCImpl, requestDelimited: Boolean, responseDelimited: Boolean) = this()
+    def this(rpcImpl: RPCImpl, requestDelimited: Unit, responseDelimited: Boolean) = this()
+  }
+  object TextToSpeechLongAudioSynthesize {
+    
+    @JSImport("@google-cloud/text-to-speech/build/src", "protos.google.cloud.texttospeech.v1.TextToSpeechLongAudioSynthesize")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * Creates new TextToSpeechLongAudioSynthesize service using the specified rpc implementation.
+      * @param rpcImpl RPC implementation
+      * @param [requestDelimited=false] Whether requests are length-delimited
+      * @param [responseDelimited=false] Whether responses are length-delimited
+      * @returns RPC service. Useful where requests and/or responses are streamed.
+      */
+    /* static member */
+    inline def create(rpcImpl: RPCImpl): typings.googleCloudTextToSpeech.buildProtosProtosMod.google.cloud.texttospeech.v1.TextToSpeechLongAudioSynthesize = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.buildProtosProtosMod.google.cloud.texttospeech.v1.TextToSpeechLongAudioSynthesize]
+    inline def create(rpcImpl: RPCImpl, requestDelimited: Boolean): typings.googleCloudTextToSpeech.buildProtosProtosMod.google.cloud.texttospeech.v1.TextToSpeechLongAudioSynthesize = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any], requestDelimited.asInstanceOf[js.Any])).asInstanceOf[typings.googleCloudTextToSpeech.buildProtosProtosMod.google.cloud.texttospeech.v1.TextToSpeechLongAudioSynthesize]
+    inline def create(rpcImpl: RPCImpl, requestDelimited: Boolean, responseDelimited: Boolean): typings.googleCloudTextToSpeech.buildProtosProtosMod.google.cloud.texttospeech.v1.TextToSpeechLongAudioSynthesize = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any], requestDelimited.asInstanceOf[js.Any], responseDelimited.asInstanceOf[js.Any])).asInstanceOf[typings.googleCloudTextToSpeech.buildProtosProtosMod.google.cloud.texttospeech.v1.TextToSpeechLongAudioSynthesize]
+    inline def create(rpcImpl: RPCImpl, requestDelimited: Unit, responseDelimited: Boolean): typings.googleCloudTextToSpeech.buildProtosProtosMod.google.cloud.texttospeech.v1.TextToSpeechLongAudioSynthesize = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any], requestDelimited.asInstanceOf[js.Any], responseDelimited.asInstanceOf[js.Any])).asInstanceOf[typings.googleCloudTextToSpeech.buildProtosProtosMod.google.cloud.texttospeech.v1.TextToSpeechLongAudioSynthesize]
   }
   
   /** Represents a Voice. */

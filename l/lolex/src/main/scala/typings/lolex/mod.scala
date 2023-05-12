@@ -396,7 +396,7 @@ object mod {
   /**
     * Clock object created by calling `install();`.
     *
-    * @type TClock   type of base clock (e.g BrowserClock).
+    * @typeparam {TClock}   type of base clock (e.g BrowserClock).
     */
   type InstalledClock[TClock /* <: Clock */] = TClock & InstalledMethods
   

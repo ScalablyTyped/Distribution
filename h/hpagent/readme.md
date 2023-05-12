@@ -1,7 +1,7 @@
 
 # Scala.js typings for hpagent
 
-Typings are for version 1.0.0
+Typings are for version 1.2.0
 
 ## Library description:
 A ready to use http and https agent for working with proxies that keeps connections alive!

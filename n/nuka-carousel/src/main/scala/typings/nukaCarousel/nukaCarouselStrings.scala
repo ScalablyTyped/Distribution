@@ -1,8 +1,8 @@
 package typings.nukaCarousel
 
-import typings.nukaCarousel.libTypesMod.CellAlign
-import typings.nukaCarousel.libTypesMod.RenderControlFunctionNames
-import typings.nukaCarousel.libTypesMod._KeyCodeFunction
+import typings.nukaCarousel.mod.CellAlign
+import typings.nukaCarousel.mod.RenderControlFunctionNames
+import typings.nukaCarousel.mod._KeyCodeFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object nukaCarouselStrings {
   
   @js.native
-  sealed trait assertive extends StObject
-  inline def assertive: assertive = "assertive".asInstanceOf[assertive]
+  sealed trait auto extends StObject
+  inline def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
   sealed trait center
@@ -42,32 +42,16 @@ object nukaCarouselStrings {
   inline def left: left = "left".asInstanceOf[left]
   
   @js.native
-  sealed trait `next-cloned` extends StObject
-  inline def `next-cloned`: `next-cloned` = "next-cloned".asInstanceOf[`next-cloned`]
-  
-  @js.native
   sealed trait nextSlide
     extends StObject
        with _KeyCodeFunction
   inline def nextSlide: nextSlide = "nextSlide".asInstanceOf[nextSlide]
   
   @js.native
-  sealed trait off extends StObject
-  inline def off: off = "off".asInstanceOf[off]
-  
-  @js.native
   sealed trait pause
     extends StObject
        with _KeyCodeFunction
   inline def pause: pause = "pause".asInstanceOf[pause]
-  
-  @js.native
-  sealed trait polite extends StObject
-  inline def polite: polite = "polite".asInstanceOf[polite]
-  
-  @js.native
-  sealed trait `prev-cloned` extends StObject
-  inline def `prev-cloned`: `prev-cloned` = "prev-cloned".asInstanceOf[`prev-cloned`]
   
   @js.native
   sealed trait previousSlide

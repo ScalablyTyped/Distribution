@@ -12,7 +12,7 @@ open class CopyCellsMenuItem protected ()
   def this(props: ICopyCellsMenuItemProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: ICopyCellsMenuItemProps, context: Any) = this()
 }

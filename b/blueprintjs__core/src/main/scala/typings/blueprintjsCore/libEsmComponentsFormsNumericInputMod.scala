@@ -243,6 +243,15 @@ object libEsmComponentsFormsNumericInputMod {
     var selectAllOnIncrement: js.UndefOr[Boolean] = js.undefined
     
     /**
+      * If set to `true`, the input will display with smaller styling.
+      * This is equivalent to setting `Classes.SMALL` via className on the
+      * parent control group and on the child input group.
+      *
+      * @default false
+      */
+    var small: js.UndefOr[Boolean] = js.undefined
+    
+    /**
       * The increment between successive values when no modifier keys are held.
       *
       * @default 1
@@ -329,6 +338,10 @@ object libEsmComponentsFormsNumericInputMod {
       inline def setSelectAllOnIncrement(value: Boolean): Self = StObject.set(x, "selectAllOnIncrement", value.asInstanceOf[js.Any])
       
       inline def setSelectAllOnIncrementUndefined: Self = StObject.set(x, "selectAllOnIncrement", js.undefined)
+      
+      inline def setSmall(value: Boolean): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
+      
+      inline def setSmallUndefined: Self = StObject.set(x, "small", js.undefined)
       
       inline def setStepSize(value: Double): Self = StObject.set(x, "stepSize", value.asInstanceOf[js.Any])
       

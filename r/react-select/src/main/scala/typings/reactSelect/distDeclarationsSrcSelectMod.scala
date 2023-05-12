@@ -43,6 +43,7 @@ import typings.reactSelect.distDeclarationsSrcComponentsOptionMod.OptionProps
 import typings.reactSelect.distDeclarationsSrcComponentsPlaceholderMod.PlaceholderProps
 import typings.reactSelect.distDeclarationsSrcComponentsSingleValueMod.SingleValueProps
 import typings.reactSelect.distDeclarationsSrcFiltersMod.FilterOptionOption
+import typings.reactSelect.distDeclarationsSrcStylesMod.ClassNamesConfig
 import typings.reactSelect.distDeclarationsSrcStylesMod.StylesConfig
 import typings.reactSelect.distDeclarationsSrcThemeMod.ThemeConfig
 import typings.reactSelect.distDeclarationsSrcTypesMod.ActionMeta
@@ -283,6 +284,11 @@ object distDeclarationsSrcSelectMod {
     @js.native
     def tabSelectsValue: Boolean = js.native
     inline def tabSelectsValue_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tabSelectsValue")(x.asInstanceOf[js.Any])
+    
+    @JSImport("react-select/dist/declarations/src/Select", "defaultProps.unstyled")
+    @js.native
+    def unstyled: Boolean = js.native
+    inline def unstyled_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("unstyled")(x.asInstanceOf[js.Any])
   }
   
   trait CategorizedGroup[Option, Group /* <: GroupBase[Option] */]
@@ -480,6 +486,11 @@ object distDeclarationsSrcSelectMod {
       * This is useful when styling via CSS classes instead of the Styles API approach.
       */
     var classNamePrefix: js.UndefOr[String | Null] = js.undefined
+    
+    /**
+      * Provide classNames based on state for each inner component
+      */
+    var classNames: ClassNamesConfig[Option, IsMulti, Group]
     
     /**
       * If `true`, close the select menu when the user scrolls the document/body.
@@ -698,6 +709,9 @@ object distDeclarationsSrcSelectMod {
     /** Theme modifier method */
     var theme: js.UndefOr[ThemeConfig] = js.undefined
     
+    /** Remove all non-essential styles */
+    var unstyled: Boolean
+    
     /** The value of the select; reflected by the selected option */
     var value: PropsValue[Option]
   }
@@ -707,6 +721,7 @@ object distDeclarationsSrcSelectMod {
       backspaceRemovesValue: Boolean,
       blurInputOnSelect: Boolean,
       captureMenuScroll: Boolean,
+      classNames: ClassNamesConfig[Option, IsMulti, Group],
       closeMenuOnScroll: Boolean | (js.Function1[/* event */ Event, Boolean]),
       closeMenuOnSelect: Boolean,
       components: SelectComponentsConfig[Option, IsMulti, Group],
@@ -742,9 +757,10 @@ object distDeclarationsSrcSelectMod {
       screenReaderStatus: Count => String,
       styles: StylesConfig[Option, IsMulti, Group],
       tabIndex: Double,
-      tabSelectsValue: Boolean
+      tabSelectsValue: Boolean,
+      unstyled: Boolean
     ): Props[Option, IsMulti, Group] = {
-      val __obj = js.Dynamic.literal(backspaceRemovesValue = backspaceRemovesValue.asInstanceOf[js.Any], blurInputOnSelect = blurInputOnSelect.asInstanceOf[js.Any], captureMenuScroll = captureMenuScroll.asInstanceOf[js.Any], closeMenuOnScroll = closeMenuOnScroll.asInstanceOf[js.Any], closeMenuOnSelect = closeMenuOnSelect.asInstanceOf[js.Any], components = components.asInstanceOf[js.Any], controlShouldRenderValue = controlShouldRenderValue.asInstanceOf[js.Any], escapeClearsValue = escapeClearsValue.asInstanceOf[js.Any], formatGroupLabel = js.Any.fromFunction1(formatGroupLabel), getOptionLabel = js.Any.fromFunction1(getOptionLabel), getOptionValue = js.Any.fromFunction1(getOptionValue), inputValue = inputValue.asInstanceOf[js.Any], isDisabled = isDisabled.asInstanceOf[js.Any], isLoading = isLoading.asInstanceOf[js.Any], isMulti = isMulti.asInstanceOf[js.Any], isOptionDisabled = js.Any.fromFunction2(isOptionDisabled), isRtl = isRtl.asInstanceOf[js.Any], isSearchable = isSearchable.asInstanceOf[js.Any], loadingMessage = js.Any.fromFunction1(loadingMessage), maxMenuHeight = maxMenuHeight.asInstanceOf[js.Any], menuIsOpen = menuIsOpen.asInstanceOf[js.Any], menuPlacement = menuPlacement.asInstanceOf[js.Any], menuPosition = menuPosition.asInstanceOf[js.Any], menuShouldBlockScroll = menuShouldBlockScroll.asInstanceOf[js.Any], menuShouldScrollIntoView = menuShouldScrollIntoView.asInstanceOf[js.Any], minMenuHeight = minMenuHeight.asInstanceOf[js.Any], noOptionsMessage = js.Any.fromFunction1(noOptionsMessage), onChange = js.Any.fromFunction2(onChange), onInputChange = js.Any.fromFunction2(onInputChange), onMenuClose = js.Any.fromFunction0(onMenuClose), onMenuOpen = js.Any.fromFunction0(onMenuOpen), openMenuOnClick = openMenuOnClick.asInstanceOf[js.Any], openMenuOnFocus = openMenuOnFocus.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], pageSize = pageSize.asInstanceOf[js.Any], screenReaderStatus = js.Any.fromFunction1(screenReaderStatus), styles = styles.asInstanceOf[js.Any], tabIndex = tabIndex.asInstanceOf[js.Any], tabSelectsValue = tabSelectsValue.asInstanceOf[js.Any], filterOption = null, value = null)
+      val __obj = js.Dynamic.literal(backspaceRemovesValue = backspaceRemovesValue.asInstanceOf[js.Any], blurInputOnSelect = blurInputOnSelect.asInstanceOf[js.Any], captureMenuScroll = captureMenuScroll.asInstanceOf[js.Any], classNames = classNames.asInstanceOf[js.Any], closeMenuOnScroll = closeMenuOnScroll.asInstanceOf[js.Any], closeMenuOnSelect = closeMenuOnSelect.asInstanceOf[js.Any], components = components.asInstanceOf[js.Any], controlShouldRenderValue = controlShouldRenderValue.asInstanceOf[js.Any], escapeClearsValue = escapeClearsValue.asInstanceOf[js.Any], formatGroupLabel = js.Any.fromFunction1(formatGroupLabel), getOptionLabel = js.Any.fromFunction1(getOptionLabel), getOptionValue = js.Any.fromFunction1(getOptionValue), inputValue = inputValue.asInstanceOf[js.Any], isDisabled = isDisabled.asInstanceOf[js.Any], isLoading = isLoading.asInstanceOf[js.Any], isMulti = isMulti.asInstanceOf[js.Any], isOptionDisabled = js.Any.fromFunction2(isOptionDisabled), isRtl = isRtl.asInstanceOf[js.Any], isSearchable = isSearchable.asInstanceOf[js.Any], loadingMessage = js.Any.fromFunction1(loadingMessage), maxMenuHeight = maxMenuHeight.asInstanceOf[js.Any], menuIsOpen = menuIsOpen.asInstanceOf[js.Any], menuPlacement = menuPlacement.asInstanceOf[js.Any], menuPosition = menuPosition.asInstanceOf[js.Any], menuShouldBlockScroll = menuShouldBlockScroll.asInstanceOf[js.Any], menuShouldScrollIntoView = menuShouldScrollIntoView.asInstanceOf[js.Any], minMenuHeight = minMenuHeight.asInstanceOf[js.Any], noOptionsMessage = js.Any.fromFunction1(noOptionsMessage), onChange = js.Any.fromFunction2(onChange), onInputChange = js.Any.fromFunction2(onInputChange), onMenuClose = js.Any.fromFunction0(onMenuClose), onMenuOpen = js.Any.fromFunction0(onMenuOpen), openMenuOnClick = openMenuOnClick.asInstanceOf[js.Any], openMenuOnFocus = openMenuOnFocus.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], pageSize = pageSize.asInstanceOf[js.Any], screenReaderStatus = js.Any.fromFunction1(screenReaderStatus), styles = styles.asInstanceOf[js.Any], tabIndex = tabIndex.asInstanceOf[js.Any], tabSelectsValue = tabSelectsValue.asInstanceOf[js.Any], unstyled = unstyled.asInstanceOf[js.Any], filterOption = null, value = null)
       __obj.asInstanceOf[Props[Option, IsMulti, Group]]
     }
     
@@ -794,6 +810,8 @@ object distDeclarationsSrcSelectMod {
       inline def setClassNamePrefixUndefined: Self = StObject.set(x, "classNamePrefix", js.undefined)
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      
+      inline def setClassNames(value: ClassNamesConfig[Option, IsMulti, Group]): Self = StObject.set(x, "classNames", value.asInstanceOf[js.Any])
       
       inline def setCloseMenuOnScroll(value: Boolean | (js.Function1[/* event */ Event, Boolean])): Self = StObject.set(x, "closeMenuOnScroll", value.asInstanceOf[js.Any])
       
@@ -955,6 +973,8 @@ object distDeclarationsSrcSelectMod {
       
       inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
       
+      inline def setUnstyled(value: Boolean): Self = StObject.set(x, "unstyled", value.asInstanceOf[js.Any])
+      
       inline def setValue(value: PropsValue[Option]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       inline def setValueNull: Self = StObject.set(x, "value", null)
@@ -1017,6 +1037,51 @@ object distDeclarationsSrcSelectMod {
     def formatOptionLabel(data: Option, context: FormatOptionLabelContext): ReactNode = js.native
     
     def getCategorizedOptions(): js.Array[CategorizedGroupOrOption[Option, Group]] = js.native
+    
+    @JSName("getClassNames")
+    def getClassNames_clearIndicator(key: clearIndicator, props: ClearIndicatorProps[Option, IsMulti, Group]): js.UndefOr[String] = js.native
+    @JSName("getClassNames")
+    def getClassNames_container(key: container, props: ContainerProps[Option, IsMulti, Group]): js.UndefOr[String] = js.native
+    @JSName("getClassNames")
+    def getClassNames_control(key: control, props: ControlProps[Option, IsMulti, Group]): js.UndefOr[String] = js.native
+    @JSName("getClassNames")
+    def getClassNames_dropdownIndicator(key: dropdownIndicator, props: DropdownIndicatorProps[Option, IsMulti, Group]): js.UndefOr[String] = js.native
+    @JSName("getClassNames")
+    def getClassNames_group(key: group, props: GroupProps[Option, IsMulti, Group]): js.UndefOr[String] = js.native
+    @JSName("getClassNames")
+    def getClassNames_groupHeading(key: groupHeading, props: GroupHeadingProps[Option, IsMulti, Group]): js.UndefOr[String] = js.native
+    @JSName("getClassNames")
+    def getClassNames_indicatorSeparator(key: indicatorSeparator, props: IndicatorSeparatorProps[Option, IsMulti, Group]): js.UndefOr[String] = js.native
+    @JSName("getClassNames")
+    def getClassNames_indicatorsContainer(key: indicatorsContainer, props: IndicatorsContainerProps[Option, IsMulti, Group]): js.UndefOr[String] = js.native
+    @JSName("getClassNames")
+    def getClassNames_input(key: input, props: InputProps[Option, IsMulti, Group]): js.UndefOr[String] = js.native
+    @JSName("getClassNames")
+    def getClassNames_loadingIndicator(key: loadingIndicator, props: LoadingIndicatorProps[Option, IsMulti, Group]): js.UndefOr[String] = js.native
+    @JSName("getClassNames")
+    def getClassNames_loadingMessage(key: loadingMessage, props: NoticeProps[Option, IsMulti, Group]): js.UndefOr[String] = js.native
+    @JSName("getClassNames")
+    def getClassNames_menu(key: menu, props: MenuProps[Option, IsMulti, Group]): js.UndefOr[String] = js.native
+    @JSName("getClassNames")
+    def getClassNames_menuList(key: menuList, props: MenuListProps[Option, IsMulti, Group]): js.UndefOr[String] = js.native
+    @JSName("getClassNames")
+    def getClassNames_menuPortal(key: menuPortal, props: PortalStyleArgs): js.UndefOr[String] = js.native
+    @JSName("getClassNames")
+    def getClassNames_multiValue(key: multiValue, props: MultiValueProps[Option, IsMulti, Group]): js.UndefOr[String] = js.native
+    @JSName("getClassNames")
+    def getClassNames_multiValueLabel(key: multiValueLabel, props: MultiValueProps[Option, IsMulti, Group]): js.UndefOr[String] = js.native
+    @JSName("getClassNames")
+    def getClassNames_multiValueRemove(key: multiValueRemove, props: MultiValueProps[Option, IsMulti, Group]): js.UndefOr[String] = js.native
+    @JSName("getClassNames")
+    def getClassNames_noOptionsMessage(key: noOptionsMessage, props: NoticeProps[Option, IsMulti, Group]): js.UndefOr[String] = js.native
+    @JSName("getClassNames")
+    def getClassNames_option(key: option, props: OptionProps[Option, IsMulti, Group]): js.UndefOr[String] = js.native
+    @JSName("getClassNames")
+    def getClassNames_placeholder(key: placeholder, props: PlaceholderProps[Option, IsMulti, Group]): js.UndefOr[String] = js.native
+    @JSName("getClassNames")
+    def getClassNames_singleValue(key: singleValue, props: SingleValueProps[Option, IsMulti, Group]): js.UndefOr[String] = js.native
+    @JSName("getClassNames")
+    def getClassNames_valueContainer(key: valueContainer, props: ValueContainerProps[Option, IsMulti, Group]): js.UndefOr[String] = js.native
     
     def getCommonProps(): ClearValue[Option, IsMulti, Group] = js.native
     

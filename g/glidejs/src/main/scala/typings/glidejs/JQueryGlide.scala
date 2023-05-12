@@ -118,7 +118,6 @@ object JQueryGlide {
     /**
       * Default: 500
       * Animation time in ms
-      * @type {number}
       */
     var animationDuration: js.UndefOr[Double] = js.undefined
     

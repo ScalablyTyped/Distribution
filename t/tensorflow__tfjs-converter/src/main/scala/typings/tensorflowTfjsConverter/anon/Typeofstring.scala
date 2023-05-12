@@ -13,6 +13,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Typeofstring extends StObject {
   
+  def staticRegexReplace(input: typings.tensorflowTfjsCore.distTensorMod.Tensor[Rank], pattern: String, rewrite: String): typings.tensorflowTfjsCore.distTensorMod.Tensor[Rank] = js.native
+  def staticRegexReplace(
+    input: typings.tensorflowTfjsCore.distTensorMod.Tensor[Rank],
+    pattern: String,
+    rewrite: String,
+    replaceGlobal: Boolean
+  ): typings.tensorflowTfjsCore.distTensorMod.Tensor[Rank] = js.native
+  def staticRegexReplace(input: TensorLike, pattern: String, rewrite: String): typings.tensorflowTfjsCore.distTensorMod.Tensor[Rank] = js.native
+  def staticRegexReplace(input: TensorLike, pattern: String, rewrite: String, replaceGlobal: Boolean): typings.tensorflowTfjsCore.distTensorMod.Tensor[Rank] = js.native
+  
   def stringNGrams(
     data: Tensor1D,
     dataSplits: typings.tensorflowTfjsCore.distTensorMod.Tensor[Rank],

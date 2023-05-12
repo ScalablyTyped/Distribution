@@ -11,7 +11,6 @@ trait Dispatcher extends StObject {
   
   /**
     * The base URL for Asana
-    * @type {String}
     */
   var asanaBaseUrl: String = js.native
   
@@ -72,7 +71,6 @@ trait Dispatcher extends StObject {
     * Handler for unauthorized requests which may seek reauthorization.
     * Default behavior is available if configured with an Oauth authenticator
     * that has a refresh token, and will refresh the current access token.
-    * @type {Function}
     */
   def handleUnauthorized(): Boolean | typings.bluebird.mod.^[Boolean] = js.native
   
@@ -108,13 +106,11 @@ trait Dispatcher extends StObject {
   
   /**
     * The amount of time in milliseconds to wait for a request to finish.
-    * @type {Number}
     */
   var requestTimeout: Double = js.native
   
   /**
     * Whether requests should be automatically retried if rate limited.
-    * @type {Boolean}
     */
   var retryOnRateLimit: Boolean = js.native
   

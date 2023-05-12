@@ -22,7 +22,7 @@ trait ClassUrlObject
     *
     *
     *
-    * @type String
+    *
     */
   var auth: String = js.native
   
@@ -44,7 +44,7 @@ trait ClassUrlObject
     *
     *
     *
-    * @type String
+    *
     */
   var hash: String = js.native
   
@@ -56,7 +56,7 @@ trait ClassUrlObject
     *
     *
     *
-    * @type String
+    *
     */
   var host: String = js.native
   
@@ -68,7 +68,7 @@ trait ClassUrlObject
     *
     *
     *
-    * @type String
+    *
     */
   var hostname: String = js.native
   
@@ -80,7 +80,7 @@ trait ClassUrlObject
     *
     *
     *
-    * @type String
+    *
     */
   var href: String = js.native
   
@@ -116,7 +116,7 @@ trait ClassUrlObject
     *
     *
     *
-    * @type String
+    *
     */
   var password: String = js.native
   
@@ -128,7 +128,7 @@ trait ClassUrlObject
     *
     *
     *
-    * @type String
+    *
     */
   var path: String = js.native
   
@@ -140,7 +140,7 @@ trait ClassUrlObject
     *
     *
     *
-    * @type String
+    *
     */
   var pathname: String = js.native
   
@@ -152,7 +152,7 @@ trait ClassUrlObject
     *
     *
     *
-    * @type String
+    *
     */
   var port: String = js.native
   
@@ -164,7 +164,7 @@ trait ClassUrlObject
     *
     *
     *
-    * @type String
+    *
     */
   var protocol: String = js.native
   
@@ -199,7 +199,7 @@ trait ClassUrlObject
     *
     *
     *
-    * @type String
+    *
     */
   var search: String = js.native
   
@@ -223,7 +223,7 @@ trait ClassUrlObject
     *
     *
     *
-    * @type String
+    *
     */
   var username: String = js.native
 }

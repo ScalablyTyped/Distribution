@@ -8,11 +8,11 @@ trait TypeofCustomer extends StObject {
   
   val InvoiceSettings: Any
   
-  val Tax: TypeofTax
+  val Tax: TypeofTaxLocation
 }
 object TypeofCustomer {
   
-  inline def apply(InvoiceSettings: Any, Tax: TypeofTax): TypeofCustomer = {
+  inline def apply(InvoiceSettings: Any, Tax: TypeofTaxLocation): TypeofCustomer = {
     val __obj = js.Dynamic.literal(InvoiceSettings = InvoiceSettings.asInstanceOf[js.Any], Tax = Tax.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofCustomer]
   }
@@ -22,6 +22,6 @@ object TypeofCustomer {
     
     inline def setInvoiceSettings(value: Any): Self = StObject.set(x, "InvoiceSettings", value.asInstanceOf[js.Any])
     
-    inline def setTax(value: TypeofTax): Self = StObject.set(x, "Tax", value.asInstanceOf[js.Any])
+    inline def setTax(value: TypeofTaxLocation): Self = StObject.set(x, "Tax", value.asInstanceOf[js.Any])
   }
 }

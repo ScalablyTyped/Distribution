@@ -8,7 +8,9 @@ import typings.azureMsalCommon.distAuthorityProtocolModeMod.ProtocolMode
 import typings.azureMsalCommon.distAuthorityRegionDiscoveryMetadataMod.RegionDiscoveryMetadata
 import typings.azureMsalCommon.distCacheInterfaceIcachemanagerMod.ICacheManager
 import typings.azureMsalCommon.distConfigClientConfigurationMod.AzureCloudOptions
+import typings.azureMsalCommon.distLoggerLoggerMod.Logger
 import typings.azureMsalCommon.distNetworkInetworkmoduleMod.INetworkModule
+import typings.azureMsalCommon.distTelemetryPerformanceIperformanceclientMod.IPerformanceClient
 import typings.azureMsalCommon.distUrlIuriMod.IUri
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -23,14 +25,34 @@ object distAuthorityAuthorityMod {
       authority: String,
       networkInterface: INetworkModule,
       cacheManager: ICacheManager,
-      authorityOptions: AuthorityOptions
+      authorityOptions: AuthorityOptions,
+      logger: Logger
     ) = this()
     def this(
       authority: String,
       networkInterface: INetworkModule,
       cacheManager: ICacheManager,
       authorityOptions: AuthorityOptions,
-      proxyUrl: String
+      logger: Logger,
+      performanceClient: IPerformanceClient
+    ) = this()
+    def this(
+      authority: String,
+      networkInterface: INetworkModule,
+      cacheManager: ICacheManager,
+      authorityOptions: AuthorityOptions,
+      logger: Logger,
+      performanceClient: Unit,
+      correlationId: String
+    ) = this()
+    def this(
+      authority: String,
+      networkInterface: INetworkModule,
+      cacheManager: ICacheManager,
+      authorityOptions: AuthorityOptions,
+      logger: Logger,
+      performanceClient: IPerformanceClient,
+      correlationId: String
     ) = this()
     
     /* private */ var _canonicalAuthority: Any = js.native
@@ -62,6 +84,8 @@ object distAuthorityAuthorityMod {
       * Sets canonical authority.
       */
     def canonicalAuthority_=(url: String): Unit = js.native
+    
+    /* protected */ var correlationId: js.UndefOr[String] = js.native
     
     /**
       * The default open id configuration endpoint for any canonical authority.
@@ -131,8 +155,9 @@ object distAuthorityAuthorityMod {
     def isAlias(host: String): Boolean = js.native
     
     /**
-      * Compares the number of url components after the domain to determine if the cached authority metadata can be used for the requested authority
-      * Protects against same domain different authority such as login.microsoftonline.com/tenant and login.microsoftonline.com/tfp/tenant/policy
+      * Compares the number of url components after the domain to determine if the cached
+      * authority metadata can be used for the requested authority. Protects against same domain different
+      * authority such as login.microsoftonline.com/tenant and login.microsoftonline.com/tfp/tenant/policy
       * @param metadataEntity
       */
     /* private */ var isAuthoritySameType: Any = js.native
@@ -147,6 +172,8 @@ object distAuthorityAuthorityMod {
       */
     def jwksUri: String = js.native
     
+    /* private */ var logger: Any = js.native
+    
     /* private */ var metadata: Any = js.native
     
     /* protected */ var networkInterface: INetworkModule = js.native
@@ -156,12 +183,12 @@ object distAuthorityAuthorityMod {
       */
     def options: AuthorityOptions = js.native
     
+    /* protected */ var performanceClient: js.UndefOr[IPerformanceClient] = js.native
+    
     /**
       * ProtocolMode enum representing the way endpoints are constructed.
       */
     def protocolMode: ProtocolMode = js.native
-    
-    /* private */ var proxyUrl: Any = js.native
     
     /* private */ var regionDiscovery: Any = js.native
     
@@ -201,9 +228,10 @@ object distAuthorityAuthorityMod {
     def tokenEndpoint: String = js.native
     
     /**
-      * Updates the AuthorityMetadataEntity with new aliases, preferred_network and preferred_cache and returns where the information was retrived from
-      * @param cachedMetadata
-      * @param newMetadata
+      * Updates the AuthorityMetadataEntity with new aliases, preferred_network and preferred_cache
+      * and returns where the information was retrieved from
+      * @param metadataEntity
+      * @returns AuthorityMetadataSource
       */
     /* private */ var updateCloudDiscoveryMetadata: Any = js.native
     
@@ -270,5 +298,16 @@ object distAuthorityAuthorityMod {
       * @param azureRegion string
       */
     inline def replaceWithRegionalInformation(metadata: OpenIdConfigResponse, azureRegion: String): OpenIdConfigResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceWithRegionalInformation")(metadata.asInstanceOf[js.Any], azureRegion.asInstanceOf[js.Any])).asInstanceOf[OpenIdConfigResponse]
+    
+    /**
+      * Transform CIAM_AUTHORIY as per the below rules:
+      * If no path segments found and it is a CIAM authority (hostname ends with .ciamlogin.com), then transform it
+      *
+      * NOTE: The transformation path should go away once STS supports CIAM with the format: `tenantIdorDomain.ciamlogin.com`
+      * `ciamlogin.com` can also change in the future and we should accommodate the same
+      *
+      * @param authority
+      */
+    inline def transformCIAMAuthority(authority: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("transformCIAMAuthority")(authority.asInstanceOf[js.Any]).asInstanceOf[String]
   }
 }

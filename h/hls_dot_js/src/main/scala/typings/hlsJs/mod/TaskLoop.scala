@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * @ignore
   * Sub-class specialization of EventHandler base class.
   *
   * TaskLoop allows to schedule a task function being called (optionnaly repeatedly) on the main loop,
@@ -43,12 +44,12 @@ trait TaskLoop extends StObject {
   /* private */ var _tickTimer: Any
   
   /**
-    * @returns {boolean} True when interval was cleared, false when none was set (no effect)
+    * @returns True when interval was cleared, false when none was set (no effect)
     */
   def clearInterval(): Boolean
   
   /**
-    * @returns {boolean} True when timeout was cleared, false when none was set (no effect)
+    * @returns True when timeout was cleared, false when none was set (no effect)
     */
   def clearNextTick(): Boolean
   
@@ -60,14 +61,8 @@ trait TaskLoop extends StObject {
     */
   /* protected */ def doTick(): Unit
   
-  /**
-    * @returns {boolean}
-    */
   def hasInterval(): Boolean
   
-  /**
-    * @returns {boolean}
-    */
   def hasNextTick(): Boolean
   
   /* protected */ def onHandlerDestroyed(): Unit
@@ -75,8 +70,8 @@ trait TaskLoop extends StObject {
   /* protected */ def onHandlerDestroying(): Unit
   
   /**
-    * @param {number} millis Interval time (ms)
-    * @returns {boolean} True when interval has been scheduled, false when already scheduled (no effect)
+    * @param millis - Interval time (ms)
+    * @eturns True when interval has been scheduled, false when already scheduled (no effect)
     */
   def setInterval(millis: Double): Boolean
   

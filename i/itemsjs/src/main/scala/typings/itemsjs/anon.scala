@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
-  trait Aggregations[I /* <: js.Object */, A /* <: String */] extends StObject {
+  trait Aggregations[I /* <: js.Object */, A /* <: /* keyof I */ String */] extends StObject {
     
     var aggregations: Record[A, SearchAggregation[I, A]]
     
@@ -19,13 +19,13 @@ object anon {
   }
   object Aggregations {
     
-    inline def apply[I /* <: js.Object */, A /* <: String */](aggregations: Record[A, SearchAggregation[I, A]], items: js.Array[I]): Aggregations[I, A] = {
+    inline def apply[I /* <: js.Object */, A /* <: /* keyof I */ String */](aggregations: Record[A, SearchAggregation[I, A]], items: js.Array[I]): Aggregations[I, A] = {
       val __obj = js.Dynamic.literal(aggregations = aggregations.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], allFilteredItems = null)
       __obj.asInstanceOf[Aggregations[I, A]]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: Aggregations[?, ?], I /* <: js.Object */, A /* <: String */] (val x: Self & (Aggregations[I, A])) extends AnyVal {
+    implicit open class MutableBuilder[Self <: Aggregations[?, ?], I /* <: js.Object */, A /* <: /* keyof I */ String */] (val x: Self & (Aggregations[I, A])) extends AnyVal {
       
       inline def setAggregations(value: Record[A, SearchAggregation[I, A]]): Self = StObject.set(x, "aggregations", value.asInstanceOf[js.Any])
       
@@ -41,27 +41,41 @@ object anon {
     }
   }
   
-  trait Buckets[I /* <: js.Object */] extends StObject {
+  trait Buckets[I /* <: js.Object */, A /* <: /* keyof I */ String */] extends StObject {
     
-    var buckets: typings.itemsjs.mod.Buckets[I]
+    var buckets: typings.itemsjs.mod.Buckets[
+        /* import warning: importer.ImportType#apply Failed type conversion: I[A] */ js.Any
+      ]
   }
   object Buckets {
     
-    inline def apply[I /* <: js.Object */](buckets: typings.itemsjs.mod.Buckets[I]): Buckets[I] = {
+    inline def apply[I /* <: js.Object */, A /* <: /* keyof I */ String */](
+      buckets: typings.itemsjs.mod.Buckets[
+          /* import warning: importer.ImportType#apply Failed type conversion: I[A] */ js.Any
+        ]
+    ): Buckets[I, A] = {
       val __obj = js.Dynamic.literal(buckets = buckets.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Buckets[I]]
+      __obj.asInstanceOf[Buckets[I, A]]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: Buckets[?], I /* <: js.Object */] (val x: Self & Buckets[I]) extends AnyVal {
+    implicit open class MutableBuilder[Self <: Buckets[?, ?], I /* <: js.Object */, A /* <: /* keyof I */ String */] (val x: Self & (Buckets[I, A])) extends AnyVal {
       
-      inline def setBuckets(value: typings.itemsjs.mod.Buckets[I]): Self = StObject.set(x, "buckets", value.asInstanceOf[js.Any])
+      inline def setBuckets(
+        value: typings.itemsjs.mod.Buckets[
+              /* import warning: importer.ImportType#apply Failed type conversion: I[A] */ js.Any
+            ]
+      ): Self = StObject.set(x, "buckets", value.asInstanceOf[js.Any])
       
-      inline def setBucketsVarargs(value: Bucket[I]*): Self = StObject.set(x, "buckets", js.Array(value*))
+      inline def setBucketsVarargs(
+        value: (Bucket[
+              /* import warning: importer.ImportType#apply Failed type conversion: I[A] */ js.Any
+            ])*
+      ): Self = StObject.set(x, "buckets", js.Array(value*))
     }
   }
   
-  trait Data[I /* <: js.Object */, A /* <: String */] extends StObject {
+  trait Data[I /* <: js.Object */, A /* <: /* keyof I */ String */] extends StObject {
     
     var data: Aggregations[I, A]
     
@@ -71,13 +85,13 @@ object anon {
   }
   object Data {
     
-    inline def apply[I /* <: js.Object */, A /* <: String */](data: Aggregations[I, A], pagination: typings.itemsjs.mod.Pagination, timings: Facets): Data[I, A] = {
+    inline def apply[I /* <: js.Object */, A /* <: /* keyof I */ String */](data: Aggregations[I, A], pagination: typings.itemsjs.mod.Pagination, timings: Facets): Data[I, A] = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], pagination = pagination.asInstanceOf[js.Any], timings = timings.asInstanceOf[js.Any])
       __obj.asInstanceOf[Data[I, A]]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: Data[?, ?], I /* <: js.Object */, A /* <: String */] (val x: Self & (Data[I, A])) extends AnyVal {
+    implicit open class MutableBuilder[Self <: Data[?, ?], I /* <: js.Object */, A /* <: /* keyof I */ String */] (val x: Self & (Data[I, A])) extends AnyVal {
       
       inline def setData(value: Aggregations[I, A]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -181,23 +195,23 @@ object anon {
     }
   }
   
-  trait Pagination[I /* <: js.Object */] extends StObject {
+  trait Pagination[I /* <: js.Object */, A /* <: /* keyof I */ String */] extends StObject {
     
-    var data: Buckets[I]
+    var data: Buckets[I, A]
     
     var pagination: typings.itemsjs.mod.Pagination
   }
   object Pagination {
     
-    inline def apply[I /* <: js.Object */](data: Buckets[I], pagination: typings.itemsjs.mod.Pagination): Pagination[I] = {
+    inline def apply[I /* <: js.Object */, A /* <: /* keyof I */ String */](data: Buckets[I, A], pagination: typings.itemsjs.mod.Pagination): Pagination[I, A] = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], pagination = pagination.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Pagination[I]]
+      __obj.asInstanceOf[Pagination[I, A]]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: Pagination[?], I /* <: js.Object */] (val x: Self & Pagination[I]) extends AnyVal {
+    implicit open class MutableBuilder[Self <: Pagination[?, ?], I /* <: js.Object */, A /* <: /* keyof I */ String */] (val x: Self & (Pagination[I, A])) extends AnyVal {
       
-      inline def setData(value: Buckets[I]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Buckets[I, A]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       inline def setPagination(value: typings.itemsjs.mod.Pagination): Self = StObject.set(x, "pagination", value.asInstanceOf[js.Any])
     }

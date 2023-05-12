@@ -67,7 +67,7 @@ trait FeatureForm
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm.html#layer)
     */
-  var layer: FeatureLayer = js.native
+  var layer: FeatureLayer | SubtypeSublayer = js.native
   
   @JSName("on")
   def on_submit(name: submit, eventHandler: FeatureFormSubmitEventHandler): IHandle = js.native

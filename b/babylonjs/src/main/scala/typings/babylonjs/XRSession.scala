@@ -239,6 +239,10 @@ trait XRSession
     */
   def cancelAnimationFrame(id: Double): Unit = js.native
   
+  val depthDataFormat: XRDepthDataFormat = js.native
+  
+  val depthUsage: XRDepthUsage = js.native
+  
   val domOverlayState: js.UndefOr[XRDOMOverlayState] = js.native
   
   /**

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeBucketsResponse extends StObject {
   
   /**
-    * An array of objects, one for each bucket that meets the filter criteria specified in the request.
+    * An array of objects, one for each bucket that matches the filter criteria specified in the request.
     */
   var buckets: js.UndefOr[listOfBucketMetadata] = js.undefined
   

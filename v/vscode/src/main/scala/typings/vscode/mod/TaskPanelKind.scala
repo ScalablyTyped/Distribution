@@ -14,9 +14,9 @@ object TaskPanelKind extends StObject {
   def apply(value: Double): js.UndefOr[TaskPanelKind & Double] = js.native
   
   /**
-    * Uses a dedicated panel for this tasks. The panel is not
-    * shared with other tasks.
-    */
+  		 * Uses a dedicated panel for this tasks. The panel is not
+  		 * shared with other tasks.
+  		 */
   @js.native
   sealed trait Dedicated
     extends StObject
@@ -24,8 +24,8 @@ object TaskPanelKind extends StObject {
   /* 2 */ val Dedicated: typings.vscode.mod.TaskPanelKind.Dedicated & Double = js.native
   
   /**
-    * Creates a new panel whenever this task is executed.
-    */
+  		 * Creates a new panel whenever this task is executed.
+  		 */
   @js.native
   sealed trait New
     extends StObject
@@ -33,8 +33,8 @@ object TaskPanelKind extends StObject {
   /* 3 */ val New: typings.vscode.mod.TaskPanelKind.New & Double = js.native
   
   /**
-    * Shares a panel with other tasks. This is the default.
-    */
+  		 * Shares a panel with other tasks. This is the default.
+  		 */
   @js.native
   sealed trait Shared
     extends StObject

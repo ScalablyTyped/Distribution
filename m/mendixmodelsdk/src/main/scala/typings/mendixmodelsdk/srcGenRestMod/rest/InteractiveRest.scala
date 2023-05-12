@@ -11,12 +11,11 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * See: {@link https://docs.mendix.com/refguide/interactive-rest relevant section in reference guide}
-  *
   * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
   *
   * @ignore
   *
+  * In version 9.23.0: deleted
   * In version 9.17.0: introduced
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
@@ -38,6 +37,19 @@ open class InteractiveRest protected () extends Document {
     isPartial: Boolean,
     container: IFolderBase
   ) = this()
+  
+  /**
+    * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
+    *
+    * @ignore
+    *
+    * In version 9.20.0: introduced
+    */
+  def authentication: IAuthentication | Null = js.native
+  
+  def authenticationQualifiedName: String | Null = js.native
+  
+  def authentication_=(newValue: IAuthentication | Null): Unit = js.native
   
   @JSName("containerAsFolderBase")
   def containerAsFolderBase_MInteractiveRest: FolderBase = js.native

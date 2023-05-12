@@ -11,27 +11,32 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ParticleEmitterConfig extends StObject {
   
   /**
-    * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#accelerationX} (emit only).
+    * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#accelerationX}.
     */
-  var accelerationX: js.UndefOr[EmitterOpOnEmitType] = js.undefined
+  var accelerationX: js.UndefOr[EmitterOpOnEmitType | EmitterOpOnUpdateType] = js.undefined
   
   /**
-    * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#accelerationY} (emit only).
+    * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#accelerationY}.
     */
-  var accelerationY: js.UndefOr[EmitterOpOnEmitType] = js.undefined
+  var accelerationY: js.UndefOr[EmitterOpOnEmitType | EmitterOpOnUpdateType] = js.undefined
   
   /**
-    * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#active}.
+    * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#active}. Setting this to false will stop the emitter from running at all. If you just wish to stop particles from emitting, set `emitting` property instead.
     */
   var active: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#alpha}.
+    * If you wish to 'fast forward' the emitter in time, set this value to a number representing the amount of ms the emitter should advance.
+    */
+  var advance: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#particleAlpha}.
     */
   var alpha: js.UndefOr[EmitterOpOnEmitType | EmitterOpOnUpdateType] = js.undefined
   
   /**
-    * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#angle} (emit only).
+    * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#particleAngle} (emit only).
     */
   var angle: js.UndefOr[EmitterOpOnEmitType] = js.undefined
   
@@ -41,9 +46,9 @@ trait ParticleEmitterConfig extends StObject {
   var blendMode: js.UndefOr[BlendModes | String] = js.undefined
   
   /**
-    * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#bounce} (emit only).
+    * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#bounce}.
     */
-  var bounce: js.UndefOr[EmitterOpOnEmitType] = js.undefined
+  var bounce: js.UndefOr[EmitterOpOnEmitType | EmitterOpOnUpdateType] = js.undefined
   
   /**
     * As {@link Phaser.GameObjects.Particles.ParticleEmitter#setBounds}.
@@ -76,6 +81,16 @@ trait ParticleEmitterConfig extends StObject {
   var collideTop: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * An array of color values that the Particles interpolate through during theif life. If set, overrides any `tint` property.
+    */
+  var color: js.UndefOr[js.Array[Double]] = js.undefined
+  
+  /**
+    * The string-based name of the Easing function to use if you have enabled Particle color interpolation via the `color` property, otherwise has no effect.
+    */
+  var colorEase: js.UndefOr[String] = js.undefined
+  
+  /**
     * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#deathCallback}.
     */
   var deathCallback: js.UndefOr[js.Function] = js.undefined
@@ -96,6 +111,11 @@ trait ParticleEmitterConfig extends StObject {
   var delay: js.UndefOr[EmitterOpOnEmitType] = js.undefined
   
   /**
+    * Limit the emitter to emit particles for a maximum of `duration` ms. Default to zero, meaning 'forever'.
+    */
+  var duration: js.UndefOr[Double] = js.undefined
+  
+  /**
     * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#emitCallback}.
     */
   var emitCallback: js.UndefOr[js.Function] = js.undefined
@@ -111,6 +131,11 @@ trait ParticleEmitterConfig extends StObject {
   var emitZone: js.UndefOr[ParticleEmitterEdgeZoneConfig | ParticleEmitterRandomZoneConfig] = js.undefined
   
   /**
+    * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#emitting}.
+    */
+  var emitting: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#follow}.
     */
   var follow: js.UndefOr[GameObject] = js.undefined
@@ -121,13 +146,13 @@ trait ParticleEmitterConfig extends StObject {
   var followOffset: js.UndefOr[js.Object] = js.undefined
   
   /**
-    * x-coordinate of the offset.
+    * x coordinate of the offset.
     */
   @JSName("followOffset.x")
   var followOffsetDotx: js.UndefOr[Double] = js.undefined
   
   /**
-    * y-coordinate of the offset.
+    * y coordinate of the offset.
     */
   @JSName("followOffset.y")
   var followOffsetDoty: js.UndefOr[Double] = js.undefined
@@ -155,9 +180,19 @@ trait ParticleEmitterConfig extends StObject {
   var gravityY: js.UndefOr[Double] = js.undefined
   
   /**
+    * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#hold} (emit only).
+    */
+  var hold: js.UndefOr[EmitterOpOnEmitType] = js.undefined
+  
+  /**
     * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#lifespan} (emit only).
     */
   var lifespan: js.UndefOr[EmitterOpOnEmitType] = js.undefined
+  
+  /**
+    * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#maxAliveParticles}.
+    */
+  var maxAliveParticles: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#maxParticles}.
@@ -165,34 +200,29 @@ trait ParticleEmitterConfig extends StObject {
   var maxParticles: js.UndefOr[Double] = js.undefined
   
   /**
-    * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#maxVelocityX} (emit only).
+    * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#maxVelocityX}.
     */
-  var maxVelocityX: js.UndefOr[EmitterOpOnEmitType] = js.undefined
+  var maxVelocityX: js.UndefOr[EmitterOpOnEmitType | EmitterOpOnUpdateType] = js.undefined
   
   /**
-    * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#maxVelocityY} (emit only).
+    * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#maxVelocityY}.
     */
-  var maxVelocityY: js.UndefOr[EmitterOpOnEmitType] = js.undefined
+  var maxVelocityY: js.UndefOr[EmitterOpOnEmitType | EmitterOpOnUpdateType] = js.undefined
   
   /**
-    * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#moveToX} (emit only).
+    * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#moveToX}. If set, overrides `angle` and `speed` properties.
     */
-  var moveToX: js.UndefOr[EmitterOpOnEmitType] = js.undefined
+  var moveToX: js.UndefOr[EmitterOpOnEmitType | EmitterOpOnUpdateType] = js.undefined
   
   /**
-    * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#moveToY} (emit only).
+    * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#moveToY}. If set, overrides `angle` and `speed` properties.
     */
-  var moveToY: js.UndefOr[EmitterOpOnEmitType] = js.undefined
+  var moveToY: js.UndefOr[EmitterOpOnEmitType | EmitterOpOnUpdateType] = js.undefined
   
   /**
     * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#name}.
     */
   var name: js.UndefOr[String] = js.undefined
-  
-  /**
-    * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#on}.
-    */
-  var on: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#particleBringToTop}.
@@ -202,7 +232,7 @@ trait ParticleEmitterConfig extends StObject {
   /**
     * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#particleClass}.
     */
-  var particleClass: js.UndefOr[Particle] = js.undefined
+  var particleClass: js.UndefOr[js.Function] = js.undefined
   
   /**
     * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#quantity} (emit only).
@@ -220,7 +250,7 @@ trait ParticleEmitterConfig extends StObject {
   var reserve: js.UndefOr[Double] = js.undefined
   
   /**
-    * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#rotate}.
+    * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#particleRotate}.
     */
   var rotate: js.UndefOr[EmitterOpOnEmitType | EmitterOpOnUpdateType] = js.undefined
   
@@ -230,14 +260,29 @@ trait ParticleEmitterConfig extends StObject {
   var scale: js.UndefOr[EmitterOpOnEmitType | EmitterOpOnUpdateType] = js.undefined
   
   /**
-    * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#scaleX}.
+    * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#particleScaleX}.
     */
   var scaleX: js.UndefOr[EmitterOpOnEmitType | EmitterOpOnUpdateType] = js.undefined
   
   /**
-    * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#scaleY}.
+    * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#particleScaleY}.
     */
   var scaleY: js.UndefOr[EmitterOpOnEmitType | EmitterOpOnUpdateType] = js.undefined
+  
+  /**
+    * A custom callback that sorts particles prior to rendering. Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#sortCallback}.
+    */
+  var sortCallback: js.UndefOr[ParticleSortCallback] = js.undefined
+  
+  /**
+    * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#sortOrderAsc}.
+    */
+  var sortOrderAsc: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#sortProperty}.
+    */
+  var sortProperty: js.UndefOr[String] = js.undefined
   
   /**
     * As {@link Phaser.GameObjects.Particles.ParticleEmitter#setSpeed} (emit only).
@@ -255,14 +300,29 @@ trait ParticleEmitterConfig extends StObject {
   var speedY: js.UndefOr[EmitterOpOnEmitType] = js.undefined
   
   /**
+    * Limit the emitter to emit this exact number of particles and then stop. Default to zero, meaning no limit.
+    */
+  var stopAfter: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#texture}. Overrides any texture already set on the Emitter.
+    */
+  var texture: js.UndefOr[String | Frame] = js.undefined
+  
+  /**
     * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#timeScale}.
     */
   var timeScale: js.UndefOr[Double] = js.undefined
   
   /**
-    * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#tint}.
+    * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#particleTint}.
     */
   var tint: js.UndefOr[EmitterOpOnEmitType | EmitterOpOnUpdateType] = js.undefined
+  
+  /**
+    * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#tintFill}.
+    */
+  var tintFill: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#trackVisible}.
@@ -275,12 +335,12 @@ trait ParticleEmitterConfig extends StObject {
   var visible: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#x} (emit only).
+    * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#particleX}.
     */
   var x: js.UndefOr[EmitterOpOnEmitType] = js.undefined
   
   /**
-    * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#y} (emit only).
+    * Sets {@link Phaser.GameObjects.Particles.ParticleEmitter#particleY}.
     */
   var y: js.UndefOr[EmitterOpOnEmitType] = js.undefined
 }
@@ -294,17 +354,21 @@ object ParticleEmitterConfig {
   @scala.inline
   implicit open class MutableBuilder[Self <: ParticleEmitterConfig] (val x: Self) extends AnyVal {
     
-    inline def setAccelerationX(value: EmitterOpOnEmitType): Self = StObject.set(x, "accelerationX", value.asInstanceOf[js.Any])
+    inline def setAccelerationX(value: EmitterOpOnEmitType | EmitterOpOnUpdateType): Self = StObject.set(x, "accelerationX", value.asInstanceOf[js.Any])
     
-    inline def setAccelerationXFunction3(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Unit): Self = StObject.set(x, "accelerationX", js.Any.fromFunction3(value))
+    inline def setAccelerationXFunction3(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Double): Self = StObject.set(x, "accelerationX", js.Any.fromFunction3(value))
+    
+    inline def setAccelerationXFunction4(value: (/* particle */ Particle, /* key */ String, /* t */ Double, /* value */ Double) => Double): Self = StObject.set(x, "accelerationX", js.Any.fromFunction4(value))
     
     inline def setAccelerationXUndefined: Self = StObject.set(x, "accelerationX", js.undefined)
     
     inline def setAccelerationXVarargs(value: Double*): Self = StObject.set(x, "accelerationX", js.Array(value*))
     
-    inline def setAccelerationY(value: EmitterOpOnEmitType): Self = StObject.set(x, "accelerationY", value.asInstanceOf[js.Any])
+    inline def setAccelerationY(value: EmitterOpOnEmitType | EmitterOpOnUpdateType): Self = StObject.set(x, "accelerationY", value.asInstanceOf[js.Any])
     
-    inline def setAccelerationYFunction3(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Unit): Self = StObject.set(x, "accelerationY", js.Any.fromFunction3(value))
+    inline def setAccelerationYFunction3(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Double): Self = StObject.set(x, "accelerationY", js.Any.fromFunction3(value))
+    
+    inline def setAccelerationYFunction4(value: (/* particle */ Particle, /* key */ String, /* t */ Double, /* value */ Double) => Double): Self = StObject.set(x, "accelerationY", js.Any.fromFunction4(value))
     
     inline def setAccelerationYUndefined: Self = StObject.set(x, "accelerationY", js.undefined)
     
@@ -314,11 +378,15 @@ object ParticleEmitterConfig {
     
     inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
+    inline def setAdvance(value: Double): Self = StObject.set(x, "advance", value.asInstanceOf[js.Any])
+    
+    inline def setAdvanceUndefined: Self = StObject.set(x, "advance", js.undefined)
+    
     inline def setAlpha(value: EmitterOpOnEmitType | EmitterOpOnUpdateType): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
     
-    inline def setAlphaFunction3(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Unit): Self = StObject.set(x, "alpha", js.Any.fromFunction3(value))
+    inline def setAlphaFunction3(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Double): Self = StObject.set(x, "alpha", js.Any.fromFunction3(value))
     
-    inline def setAlphaFunction4(value: (/* particle */ Particle, /* key */ String, /* t */ Double, /* value */ Double) => Unit): Self = StObject.set(x, "alpha", js.Any.fromFunction4(value))
+    inline def setAlphaFunction4(value: (/* particle */ Particle, /* key */ String, /* t */ Double, /* value */ Double) => Double): Self = StObject.set(x, "alpha", js.Any.fromFunction4(value))
     
     inline def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
     
@@ -326,7 +394,7 @@ object ParticleEmitterConfig {
     
     inline def setAngle(value: EmitterOpOnEmitType): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     
-    inline def setAngleFunction3(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Unit): Self = StObject.set(x, "angle", js.Any.fromFunction3(value))
+    inline def setAngleFunction3(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Double): Self = StObject.set(x, "angle", js.Any.fromFunction3(value))
     
     inline def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
     
@@ -336,9 +404,11 @@ object ParticleEmitterConfig {
     
     inline def setBlendModeUndefined: Self = StObject.set(x, "blendMode", js.undefined)
     
-    inline def setBounce(value: EmitterOpOnEmitType): Self = StObject.set(x, "bounce", value.asInstanceOf[js.Any])
+    inline def setBounce(value: EmitterOpOnEmitType | EmitterOpOnUpdateType): Self = StObject.set(x, "bounce", value.asInstanceOf[js.Any])
     
-    inline def setBounceFunction3(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Unit): Self = StObject.set(x, "bounce", js.Any.fromFunction3(value))
+    inline def setBounceFunction3(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Double): Self = StObject.set(x, "bounce", js.Any.fromFunction3(value))
+    
+    inline def setBounceFunction4(value: (/* particle */ Particle, /* key */ String, /* t */ Double, /* value */ Double) => Double): Self = StObject.set(x, "bounce", js.Any.fromFunction4(value))
     
     inline def setBounceUndefined: Self = StObject.set(x, "bounce", js.undefined)
     
@@ -368,6 +438,16 @@ object ParticleEmitterConfig {
     
     inline def setCollideTopUndefined: Self = StObject.set(x, "collideTop", js.undefined)
     
+    inline def setColor(value: js.Array[Double]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorEase(value: String): Self = StObject.set(x, "colorEase", value.asInstanceOf[js.Any])
+    
+    inline def setColorEaseUndefined: Self = StObject.set(x, "colorEase", js.undefined)
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value*))
+    
     inline def setDeathCallback(value: js.Function): Self = StObject.set(x, "deathCallback", value.asInstanceOf[js.Any])
     
     inline def setDeathCallbackScope(value: Any): Self = StObject.set(x, "deathCallbackScope", value.asInstanceOf[js.Any])
@@ -382,11 +462,15 @@ object ParticleEmitterConfig {
     
     inline def setDelay(value: EmitterOpOnEmitType): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
-    inline def setDelayFunction3(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Unit): Self = StObject.set(x, "delay", js.Any.fromFunction3(value))
+    inline def setDelayFunction3(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Double): Self = StObject.set(x, "delay", js.Any.fromFunction3(value))
     
     inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
     
     inline def setDelayVarargs(value: Double*): Self = StObject.set(x, "delay", js.Array(value*))
+    
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
     inline def setEmitCallback(value: js.Function): Self = StObject.set(x, "emitCallback", value.asInstanceOf[js.Any])
     
@@ -399,6 +483,10 @@ object ParticleEmitterConfig {
     inline def setEmitZone(value: ParticleEmitterEdgeZoneConfig | ParticleEmitterRandomZoneConfig): Self = StObject.set(x, "emitZone", value.asInstanceOf[js.Any])
     
     inline def setEmitZoneUndefined: Self = StObject.set(x, "emitZone", js.undefined)
+    
+    inline def setEmitting(value: Boolean): Self = StObject.set(x, "emitting", value.asInstanceOf[js.Any])
+    
+    inline def setEmittingUndefined: Self = StObject.set(x, "emitting", js.undefined)
     
     inline def setFollow(value: GameObject): Self = StObject.set(x, "follow", value.asInstanceOf[js.Any])
     
@@ -434,45 +522,65 @@ object ParticleEmitterConfig {
     
     inline def setGravityYUndefined: Self = StObject.set(x, "gravityY", js.undefined)
     
+    inline def setHold(value: EmitterOpOnEmitType): Self = StObject.set(x, "hold", value.asInstanceOf[js.Any])
+    
+    inline def setHoldFunction3(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Double): Self = StObject.set(x, "hold", js.Any.fromFunction3(value))
+    
+    inline def setHoldUndefined: Self = StObject.set(x, "hold", js.undefined)
+    
+    inline def setHoldVarargs(value: Double*): Self = StObject.set(x, "hold", js.Array(value*))
+    
     inline def setLifespan(value: EmitterOpOnEmitType): Self = StObject.set(x, "lifespan", value.asInstanceOf[js.Any])
     
-    inline def setLifespanFunction3(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Unit): Self = StObject.set(x, "lifespan", js.Any.fromFunction3(value))
+    inline def setLifespanFunction3(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Double): Self = StObject.set(x, "lifespan", js.Any.fromFunction3(value))
     
     inline def setLifespanUndefined: Self = StObject.set(x, "lifespan", js.undefined)
     
     inline def setLifespanVarargs(value: Double*): Self = StObject.set(x, "lifespan", js.Array(value*))
     
+    inline def setMaxAliveParticles(value: Double): Self = StObject.set(x, "maxAliveParticles", value.asInstanceOf[js.Any])
+    
+    inline def setMaxAliveParticlesUndefined: Self = StObject.set(x, "maxAliveParticles", js.undefined)
+    
     inline def setMaxParticles(value: Double): Self = StObject.set(x, "maxParticles", value.asInstanceOf[js.Any])
     
     inline def setMaxParticlesUndefined: Self = StObject.set(x, "maxParticles", js.undefined)
     
-    inline def setMaxVelocityX(value: EmitterOpOnEmitType): Self = StObject.set(x, "maxVelocityX", value.asInstanceOf[js.Any])
+    inline def setMaxVelocityX(value: EmitterOpOnEmitType | EmitterOpOnUpdateType): Self = StObject.set(x, "maxVelocityX", value.asInstanceOf[js.Any])
     
-    inline def setMaxVelocityXFunction3(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Unit): Self = StObject.set(x, "maxVelocityX", js.Any.fromFunction3(value))
+    inline def setMaxVelocityXFunction3(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Double): Self = StObject.set(x, "maxVelocityX", js.Any.fromFunction3(value))
+    
+    inline def setMaxVelocityXFunction4(value: (/* particle */ Particle, /* key */ String, /* t */ Double, /* value */ Double) => Double): Self = StObject.set(x, "maxVelocityX", js.Any.fromFunction4(value))
     
     inline def setMaxVelocityXUndefined: Self = StObject.set(x, "maxVelocityX", js.undefined)
     
     inline def setMaxVelocityXVarargs(value: Double*): Self = StObject.set(x, "maxVelocityX", js.Array(value*))
     
-    inline def setMaxVelocityY(value: EmitterOpOnEmitType): Self = StObject.set(x, "maxVelocityY", value.asInstanceOf[js.Any])
+    inline def setMaxVelocityY(value: EmitterOpOnEmitType | EmitterOpOnUpdateType): Self = StObject.set(x, "maxVelocityY", value.asInstanceOf[js.Any])
     
-    inline def setMaxVelocityYFunction3(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Unit): Self = StObject.set(x, "maxVelocityY", js.Any.fromFunction3(value))
+    inline def setMaxVelocityYFunction3(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Double): Self = StObject.set(x, "maxVelocityY", js.Any.fromFunction3(value))
+    
+    inline def setMaxVelocityYFunction4(value: (/* particle */ Particle, /* key */ String, /* t */ Double, /* value */ Double) => Double): Self = StObject.set(x, "maxVelocityY", js.Any.fromFunction4(value))
     
     inline def setMaxVelocityYUndefined: Self = StObject.set(x, "maxVelocityY", js.undefined)
     
     inline def setMaxVelocityYVarargs(value: Double*): Self = StObject.set(x, "maxVelocityY", js.Array(value*))
     
-    inline def setMoveToX(value: EmitterOpOnEmitType): Self = StObject.set(x, "moveToX", value.asInstanceOf[js.Any])
+    inline def setMoveToX(value: EmitterOpOnEmitType | EmitterOpOnUpdateType): Self = StObject.set(x, "moveToX", value.asInstanceOf[js.Any])
     
-    inline def setMoveToXFunction3(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Unit): Self = StObject.set(x, "moveToX", js.Any.fromFunction3(value))
+    inline def setMoveToXFunction3(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Double): Self = StObject.set(x, "moveToX", js.Any.fromFunction3(value))
+    
+    inline def setMoveToXFunction4(value: (/* particle */ Particle, /* key */ String, /* t */ Double, /* value */ Double) => Double): Self = StObject.set(x, "moveToX", js.Any.fromFunction4(value))
     
     inline def setMoveToXUndefined: Self = StObject.set(x, "moveToX", js.undefined)
     
     inline def setMoveToXVarargs(value: Double*): Self = StObject.set(x, "moveToX", js.Array(value*))
     
-    inline def setMoveToY(value: EmitterOpOnEmitType): Self = StObject.set(x, "moveToY", value.asInstanceOf[js.Any])
+    inline def setMoveToY(value: EmitterOpOnEmitType | EmitterOpOnUpdateType): Self = StObject.set(x, "moveToY", value.asInstanceOf[js.Any])
     
-    inline def setMoveToYFunction3(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Unit): Self = StObject.set(x, "moveToY", js.Any.fromFunction3(value))
+    inline def setMoveToYFunction3(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Double): Self = StObject.set(x, "moveToY", js.Any.fromFunction3(value))
+    
+    inline def setMoveToYFunction4(value: (/* particle */ Particle, /* key */ String, /* t */ Double, /* value */ Double) => Double): Self = StObject.set(x, "moveToY", js.Any.fromFunction4(value))
     
     inline def setMoveToYUndefined: Self = StObject.set(x, "moveToY", js.undefined)
     
@@ -482,21 +590,17 @@ object ParticleEmitterConfig {
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    inline def setOn(value: Boolean): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
-    
-    inline def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
-    
     inline def setParticleBringToTop(value: Boolean): Self = StObject.set(x, "particleBringToTop", value.asInstanceOf[js.Any])
     
     inline def setParticleBringToTopUndefined: Self = StObject.set(x, "particleBringToTop", js.undefined)
     
-    inline def setParticleClass(value: Particle): Self = StObject.set(x, "particleClass", value.asInstanceOf[js.Any])
+    inline def setParticleClass(value: js.Function): Self = StObject.set(x, "particleClass", value.asInstanceOf[js.Any])
     
     inline def setParticleClassUndefined: Self = StObject.set(x, "particleClass", js.undefined)
     
     inline def setQuantity(value: EmitterOpOnEmitType): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
     
-    inline def setQuantityFunction3(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Unit): Self = StObject.set(x, "quantity", js.Any.fromFunction3(value))
+    inline def setQuantityFunction3(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Double): Self = StObject.set(x, "quantity", js.Any.fromFunction3(value))
     
     inline def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
     
@@ -512,9 +616,9 @@ object ParticleEmitterConfig {
     
     inline def setRotate(value: EmitterOpOnEmitType | EmitterOpOnUpdateType): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
     
-    inline def setRotateFunction3(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Unit): Self = StObject.set(x, "rotate", js.Any.fromFunction3(value))
+    inline def setRotateFunction3(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Double): Self = StObject.set(x, "rotate", js.Any.fromFunction3(value))
     
-    inline def setRotateFunction4(value: (/* particle */ Particle, /* key */ String, /* t */ Double, /* value */ Double) => Unit): Self = StObject.set(x, "rotate", js.Any.fromFunction4(value))
+    inline def setRotateFunction4(value: (/* particle */ Particle, /* key */ String, /* t */ Double, /* value */ Double) => Double): Self = StObject.set(x, "rotate", js.Any.fromFunction4(value))
     
     inline def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
     
@@ -522,9 +626,9 @@ object ParticleEmitterConfig {
     
     inline def setScale(value: EmitterOpOnEmitType | EmitterOpOnUpdateType): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
-    inline def setScaleFunction3(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Unit): Self = StObject.set(x, "scale", js.Any.fromFunction3(value))
+    inline def setScaleFunction3(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Double): Self = StObject.set(x, "scale", js.Any.fromFunction3(value))
     
-    inline def setScaleFunction4(value: (/* particle */ Particle, /* key */ String, /* t */ Double, /* value */ Double) => Unit): Self = StObject.set(x, "scale", js.Any.fromFunction4(value))
+    inline def setScaleFunction4(value: (/* particle */ Particle, /* key */ String, /* t */ Double, /* value */ Double) => Double): Self = StObject.set(x, "scale", js.Any.fromFunction4(value))
     
     inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
@@ -532,9 +636,9 @@ object ParticleEmitterConfig {
     
     inline def setScaleX(value: EmitterOpOnEmitType | EmitterOpOnUpdateType): Self = StObject.set(x, "scaleX", value.asInstanceOf[js.Any])
     
-    inline def setScaleXFunction3(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Unit): Self = StObject.set(x, "scaleX", js.Any.fromFunction3(value))
+    inline def setScaleXFunction3(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Double): Self = StObject.set(x, "scaleX", js.Any.fromFunction3(value))
     
-    inline def setScaleXFunction4(value: (/* particle */ Particle, /* key */ String, /* t */ Double, /* value */ Double) => Unit): Self = StObject.set(x, "scaleX", js.Any.fromFunction4(value))
+    inline def setScaleXFunction4(value: (/* particle */ Particle, /* key */ String, /* t */ Double, /* value */ Double) => Double): Self = StObject.set(x, "scaleX", js.Any.fromFunction4(value))
     
     inline def setScaleXUndefined: Self = StObject.set(x, "scaleX", js.undefined)
     
@@ -542,17 +646,29 @@ object ParticleEmitterConfig {
     
     inline def setScaleY(value: EmitterOpOnEmitType | EmitterOpOnUpdateType): Self = StObject.set(x, "scaleY", value.asInstanceOf[js.Any])
     
-    inline def setScaleYFunction3(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Unit): Self = StObject.set(x, "scaleY", js.Any.fromFunction3(value))
+    inline def setScaleYFunction3(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Double): Self = StObject.set(x, "scaleY", js.Any.fromFunction3(value))
     
-    inline def setScaleYFunction4(value: (/* particle */ Particle, /* key */ String, /* t */ Double, /* value */ Double) => Unit): Self = StObject.set(x, "scaleY", js.Any.fromFunction4(value))
+    inline def setScaleYFunction4(value: (/* particle */ Particle, /* key */ String, /* t */ Double, /* value */ Double) => Double): Self = StObject.set(x, "scaleY", js.Any.fromFunction4(value))
     
     inline def setScaleYUndefined: Self = StObject.set(x, "scaleY", js.undefined)
     
     inline def setScaleYVarargs(value: Double*): Self = StObject.set(x, "scaleY", js.Array(value*))
     
+    inline def setSortCallback(value: (/* a */ Particle, /* b */ Particle) => Unit): Self = StObject.set(x, "sortCallback", js.Any.fromFunction2(value))
+    
+    inline def setSortCallbackUndefined: Self = StObject.set(x, "sortCallback", js.undefined)
+    
+    inline def setSortOrderAsc(value: Boolean): Self = StObject.set(x, "sortOrderAsc", value.asInstanceOf[js.Any])
+    
+    inline def setSortOrderAscUndefined: Self = StObject.set(x, "sortOrderAsc", js.undefined)
+    
+    inline def setSortProperty(value: String): Self = StObject.set(x, "sortProperty", value.asInstanceOf[js.Any])
+    
+    inline def setSortPropertyUndefined: Self = StObject.set(x, "sortProperty", js.undefined)
+    
     inline def setSpeed(value: EmitterOpOnEmitType): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
     
-    inline def setSpeedFunction3(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Unit): Self = StObject.set(x, "speed", js.Any.fromFunction3(value))
+    inline def setSpeedFunction3(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Double): Self = StObject.set(x, "speed", js.Any.fromFunction3(value))
     
     inline def setSpeedUndefined: Self = StObject.set(x, "speed", js.undefined)
     
@@ -560,7 +676,7 @@ object ParticleEmitterConfig {
     
     inline def setSpeedX(value: EmitterOpOnEmitType): Self = StObject.set(x, "speedX", value.asInstanceOf[js.Any])
     
-    inline def setSpeedXFunction3(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Unit): Self = StObject.set(x, "speedX", js.Any.fromFunction3(value))
+    inline def setSpeedXFunction3(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Double): Self = StObject.set(x, "speedX", js.Any.fromFunction3(value))
     
     inline def setSpeedXUndefined: Self = StObject.set(x, "speedX", js.undefined)
     
@@ -568,11 +684,19 @@ object ParticleEmitterConfig {
     
     inline def setSpeedY(value: EmitterOpOnEmitType): Self = StObject.set(x, "speedY", value.asInstanceOf[js.Any])
     
-    inline def setSpeedYFunction3(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Unit): Self = StObject.set(x, "speedY", js.Any.fromFunction3(value))
+    inline def setSpeedYFunction3(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Double): Self = StObject.set(x, "speedY", js.Any.fromFunction3(value))
     
     inline def setSpeedYUndefined: Self = StObject.set(x, "speedY", js.undefined)
     
     inline def setSpeedYVarargs(value: Double*): Self = StObject.set(x, "speedY", js.Array(value*))
+    
+    inline def setStopAfter(value: Double): Self = StObject.set(x, "stopAfter", value.asInstanceOf[js.Any])
+    
+    inline def setStopAfterUndefined: Self = StObject.set(x, "stopAfter", js.undefined)
+    
+    inline def setTexture(value: String | Frame): Self = StObject.set(x, "texture", value.asInstanceOf[js.Any])
+    
+    inline def setTextureUndefined: Self = StObject.set(x, "texture", js.undefined)
     
     inline def setTimeScale(value: Double): Self = StObject.set(x, "timeScale", value.asInstanceOf[js.Any])
     
@@ -580,9 +704,13 @@ object ParticleEmitterConfig {
     
     inline def setTint(value: EmitterOpOnEmitType | EmitterOpOnUpdateType): Self = StObject.set(x, "tint", value.asInstanceOf[js.Any])
     
-    inline def setTintFunction3(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Unit): Self = StObject.set(x, "tint", js.Any.fromFunction3(value))
+    inline def setTintFill(value: Boolean): Self = StObject.set(x, "tintFill", value.asInstanceOf[js.Any])
     
-    inline def setTintFunction4(value: (/* particle */ Particle, /* key */ String, /* t */ Double, /* value */ Double) => Unit): Self = StObject.set(x, "tint", js.Any.fromFunction4(value))
+    inline def setTintFillUndefined: Self = StObject.set(x, "tintFill", js.undefined)
+    
+    inline def setTintFunction3(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Double): Self = StObject.set(x, "tint", js.Any.fromFunction3(value))
+    
+    inline def setTintFunction4(value: (/* particle */ Particle, /* key */ String, /* t */ Double, /* value */ Double) => Double): Self = StObject.set(x, "tint", js.Any.fromFunction4(value))
     
     inline def setTintUndefined: Self = StObject.set(x, "tint", js.undefined)
     
@@ -598,7 +726,7 @@ object ParticleEmitterConfig {
     
     inline def setX(value: EmitterOpOnEmitType): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    inline def setXFunction3(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Unit): Self = StObject.set(x, "x", js.Any.fromFunction3(value))
+    inline def setXFunction3(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Double): Self = StObject.set(x, "x", js.Any.fromFunction3(value))
     
     inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
@@ -606,7 +734,7 @@ object ParticleEmitterConfig {
     
     inline def setY(value: EmitterOpOnEmitType): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
-    inline def setYFunction3(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Unit): Self = StObject.set(x, "y", js.Any.fromFunction3(value))
+    inline def setYFunction3(value: (/* particle */ Particle, /* key */ String, /* value */ Double) => Double): Self = StObject.set(x, "y", js.Any.fromFunction3(value))
     
     inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
     

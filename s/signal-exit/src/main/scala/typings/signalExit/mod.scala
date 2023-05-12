@@ -1,56 +1,23 @@
 package typings.signalExit
 
+import typings.node.processMod.global.NodeJS.Signals
+import typings.signalExit.anon.AlwaysLast
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  inline def apply(callback: js.Function2[/* code */ Double | Null, /* signal */ Signal | Null, Unit]): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].apply(callback.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
-  inline def apply(
-    callback: js.Function2[/* code */ Double | Null, /* signal */ Signal | Null, Unit],
-    options: Options
-  ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].apply(callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
-  
   @JSImport("signal-exit", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  inline def load(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("load")().asInstanceOf[Unit]
+  /* import warning: parser.TsParser#tsDeclVar Dropped IArray(load, unload) */ inline def onExit(cb: Handler): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("onExit")(cb.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
+  inline def onExit(cb: Handler, opts: AlwaysLast): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("onExit")(cb.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   
-  inline def signals(): js.Array[Signal] = ^.asInstanceOf[js.Dynamic].applyDynamic("signals")().asInstanceOf[js.Array[Signal]]
+  @JSImport("signal-exit", "signals")
+  @js.native
+  val signals: js.Array[Signals] = js.native
   
-  inline def unload(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unload")().asInstanceOf[Unit]
-  
-  trait Options extends StObject {
-    
-    var alwaysLast: js.UndefOr[Boolean] = js.undefined
-  }
-  object Options {
-    
-    inline def apply(): Options = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Options]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
-      
-      inline def setAlwaysLast(value: Boolean): Self = StObject.set(x, "alwaysLast", value.asInstanceOf[js.Any])
-      
-      inline def setAlwaysLastUndefined: Self = StObject.set(x, "alwaysLast", js.undefined)
-    }
-  }
-  
-  /* Rewritten from type alias, can be one of: 
-    - typings.signalExit.signalExitStrings.SIGABRT
-    - typings.signalExit.signalExitStrings.SIGALRM
-    - typings.signalExit.signalExitStrings.SIGHUP
-    - typings.signalExit.signalExitStrings.SIGINT
-    - typings.signalExit.signalExitStrings.SIGTERM
-    - java.lang.String
-  */
-  type Signal = _Signal | String
-  
-  trait _Signal extends StObject
+  type Handler = js.Function2[/* code */ js.UndefOr[Double | Null], /* signal */ Signals | Null, Any]
 }

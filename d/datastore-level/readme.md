@@ -1,7 +1,7 @@
 
 # Scala.js typings for datastore-level
 
-Typings are for version 1.1
+Typings are for version 10.1.1
 
 ## Library description:
 Datastore implementation with level(up|down) backend
@@ -9,11 +9,11 @@ Datastore implementation with level(up|down) backend
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | datastore-level |
-| Keywords           | interface, key-value, ipfs, datastore, leveldb, levelup, leveldown |
-| # releases         | 10 |
-| # dependents       | 15 |
-| # downloads        | 505349 |
-| # stars            | 0 |
+| Keywords           | datastore, interface, ipfs, key-value, leveldb, leveldown, levelup |
+| # releases         | 16 |
+| # dependents       | 0.0 |
+| # downloads        | 59884.666666666664 |
+| # stars            | 20.0 |
 
 ## Links
 - [Homepage](https://github.com/ipfs/js-datastore-level#readme)
@@ -24,7 +24,7 @@ Datastore implementation with level(up|down) backend
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

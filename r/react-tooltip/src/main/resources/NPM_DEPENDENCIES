@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-tooltip" : "4.5.0"
+      "react-tooltip" : "5.11.2"
     }
   ],
   "test-dependencies" : [
     {
-      "react-tooltip" : "4.5.0"
+      "react-tooltip" : "5.11.2"
     }
   ],
   "compile-devDependencies" : [

@@ -1,5 +1,9 @@
 package typings.preact.mod.createElement.JSX
 
+import typings.preact.preactInts.`0`
+import typings.preact.preactInts.`1`
+import typings.preact.preactInts.`2`
+import typings.preact.preactInts.`3`
 import typings.std.DOMHighResTimeStamp
 import typings.std.EventTarget
 import org.scalablytyped.runtime.StObject
@@ -9,13 +13,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined preact.preact/src/jsx.JSXInternal.TargetedEvent<Target, std.AnimationEvent> */
 trait TargetedAnimationEvent[Target /* <: EventTarget */] extends StObject {
   
-  var AT_TARGET: Double
+  var AT_TARGET: `2`
   
-  var BUBBLING_PHASE: Double
+  var BUBBLING_PHASE: `3`
   
-  var CAPTURING_PHASE: Double
+  var CAPTURING_PHASE: `1`
   
-  var NONE: Double
+  var NONE: `0`
   
   var animationName: String
   
@@ -72,10 +76,6 @@ trait TargetedAnimationEvent[Target /* <: EventTarget */] extends StObject {
 object TargetedAnimationEvent {
   
   inline def apply[Target /* <: EventTarget */](
-    AT_TARGET: Double,
-    BUBBLING_PHASE: Double,
-    CAPTURING_PHASE: Double,
-    NONE: Double,
     animationName: String,
     bubbles: Boolean,
     cancelBubble: Boolean,
@@ -96,7 +96,7 @@ object TargetedAnimationEvent {
     timeStamp: DOMHighResTimeStamp,
     `type`: String
   ): TargetedAnimationEvent[Target] = {
-    val __obj = js.Dynamic.literal(AT_TARGET = AT_TARGET.asInstanceOf[js.Any], BUBBLING_PHASE = BUBBLING_PHASE.asInstanceOf[js.Any], CAPTURING_PHASE = CAPTURING_PHASE.asInstanceOf[js.Any], NONE = NONE.asInstanceOf[js.Any], animationName = animationName.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], cancelBubble = cancelBubble.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], composed = composed.asInstanceOf[js.Any], composedPath = js.Any.fromFunction0(composedPath), currentTarget = currentTarget.asInstanceOf[js.Any], defaultPrevented = defaultPrevented.asInstanceOf[js.Any], elapsedTime = elapsedTime.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], initEvent = js.Any.fromFunction1(initEvent), isTrusted = isTrusted.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), pseudoElement = pseudoElement.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any], stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), timeStamp = timeStamp.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(AT_TARGET = 2, BUBBLING_PHASE = 3, CAPTURING_PHASE = 1, NONE = 0, animationName = animationName.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], cancelBubble = cancelBubble.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], composed = composed.asInstanceOf[js.Any], composedPath = js.Any.fromFunction0(composedPath), currentTarget = currentTarget.asInstanceOf[js.Any], defaultPrevented = defaultPrevented.asInstanceOf[js.Any], elapsedTime = elapsedTime.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], initEvent = js.Any.fromFunction1(initEvent), isTrusted = isTrusted.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), pseudoElement = pseudoElement.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any], stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), timeStamp = timeStamp.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TargetedAnimationEvent[Target]]
   }
@@ -104,15 +104,15 @@ object TargetedAnimationEvent {
   @scala.inline
   implicit open class MutableBuilder[Self <: TargetedAnimationEvent[?], Target /* <: EventTarget */] (val x: Self & TargetedAnimationEvent[Target]) extends AnyVal {
     
-    inline def setAT_TARGET(value: Double): Self = StObject.set(x, "AT_TARGET", value.asInstanceOf[js.Any])
+    inline def setAT_TARGET(value: `2`): Self = StObject.set(x, "AT_TARGET", value.asInstanceOf[js.Any])
     
     inline def setAnimationName(value: String): Self = StObject.set(x, "animationName", value.asInstanceOf[js.Any])
     
-    inline def setBUBBLING_PHASE(value: Double): Self = StObject.set(x, "BUBBLING_PHASE", value.asInstanceOf[js.Any])
+    inline def setBUBBLING_PHASE(value: `3`): Self = StObject.set(x, "BUBBLING_PHASE", value.asInstanceOf[js.Any])
     
     inline def setBubbles(value: Boolean): Self = StObject.set(x, "bubbles", value.asInstanceOf[js.Any])
     
-    inline def setCAPTURING_PHASE(value: Double): Self = StObject.set(x, "CAPTURING_PHASE", value.asInstanceOf[js.Any])
+    inline def setCAPTURING_PHASE(value: `1`): Self = StObject.set(x, "CAPTURING_PHASE", value.asInstanceOf[js.Any])
     
     inline def setCancelBubble(value: Boolean): Self = StObject.set(x, "cancelBubble", value.asInstanceOf[js.Any])
     
@@ -134,7 +134,7 @@ object TargetedAnimationEvent {
     
     inline def setIsTrusted(value: Boolean): Self = StObject.set(x, "isTrusted", value.asInstanceOf[js.Any])
     
-    inline def setNONE(value: Double): Self = StObject.set(x, "NONE", value.asInstanceOf[js.Any])
+    inline def setNONE(value: `0`): Self = StObject.set(x, "NONE", value.asInstanceOf[js.Any])
     
     inline def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
     

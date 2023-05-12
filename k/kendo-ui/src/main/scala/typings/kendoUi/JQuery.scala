@@ -80,6 +80,11 @@ import typings.kendoUi.kendo.ui.CheckBox
 import typings.kendoUi.kendo.ui.CheckBoxGroup
 import typings.kendoUi.kendo.ui.CheckBoxGroupOptions
 import typings.kendoUi.kendo.ui.CheckBoxOptions
+import typings.kendoUi.kendo.ui.Chip
+import typings.kendoUi.kendo.ui.ChipList
+import typings.kendoUi.kendo.ui.ChipListOptions
+import typings.kendoUi.kendo.ui.ChipOptions
+import typings.kendoUi.kendo.ui.CircularProgressBar
 import typings.kendoUi.kendo.ui.CircularProgressBarOptions
 import typings.kendoUi.kendo.ui.ColorGradient
 import typings.kendoUi.kendo.ui.ColorGradientOptions
@@ -107,6 +112,8 @@ import typings.kendoUi.kendo.ui.Draggable
 import typings.kendoUi.kendo.ui.DraggableOptions
 import typings.kendoUi.kendo.ui.Drawer
 import typings.kendoUi.kendo.ui.DrawerOptions
+import typings.kendoUi.kendo.ui.DropDownButton
+import typings.kendoUi.kendo.ui.DropDownButtonOptions
 import typings.kendoUi.kendo.ui.DropDownList
 import typings.kendoUi.kendo.ui.DropDownListOptions
 import typings.kendoUi.kendo.ui.DropDownTree
@@ -197,12 +204,16 @@ import typings.kendoUi.kendo.ui.ResponsivePanel
 import typings.kendoUi.kendo.ui.ResponsivePanelOptions
 import typings.kendoUi.kendo.ui.Scheduler
 import typings.kendoUi.kendo.ui.SchedulerOptions
+import typings.kendoUi.kendo.ui.Signature
+import typings.kendoUi.kendo.ui.SignatureOptions
 import typings.kendoUi.kendo.ui.SkeletonContainer
 import typings.kendoUi.kendo.ui.SkeletonContainerOptions
 import typings.kendoUi.kendo.ui.Slider
 import typings.kendoUi.kendo.ui.SliderOptions
 import typings.kendoUi.kendo.ui.Sortable
 import typings.kendoUi.kendo.ui.SortableOptions
+import typings.kendoUi.kendo.ui.SplitButton
+import typings.kendoUi.kendo.ui.SplitButtonOptions
 import typings.kendoUi.kendo.ui.Splitter
 import typings.kendoUi.kendo.ui.SplitterOptions
 import typings.kendoUi.kendo.ui.Spreadsheet
@@ -215,10 +226,14 @@ import typings.kendoUi.kendo.ui.TextBox
 import typings.kendoUi.kendo.ui.TextBoxOptions
 import typings.kendoUi.kendo.ui.TileLayout
 import typings.kendoUi.kendo.ui.TileLayoutOptions
+import typings.kendoUi.kendo.ui.TimeDurationPicker
+import typings.kendoUi.kendo.ui.TimeDurationPickerOptions
 import typings.kendoUi.kendo.ui.TimePicker
 import typings.kendoUi.kendo.ui.TimePickerOptions
 import typings.kendoUi.kendo.ui.Timeline
 import typings.kendoUi.kendo.ui.TimelineOptions
+import typings.kendoUi.kendo.ui.ToggleButton
+import typings.kendoUi.kendo.ui.ToggleButtonOptions
 import typings.kendoUi.kendo.ui.ToolBar
 import typings.kendoUi.kendo.ui.ToolBarOptions
 import typings.kendoUi.kendo.ui.Tooltip
@@ -254,6 +269,8 @@ import typings.kendoUi.kendoUiStrings.kendoChart
 import typings.kendoUi.kendoUiStrings.kendoChat
 import typings.kendoUi.kendoUiStrings.kendoCheckBox
 import typings.kendoUi.kendoUiStrings.kendoCheckBoxGroup
+import typings.kendoUi.kendoUiStrings.kendoChip
+import typings.kendoUi.kendoUiStrings.kendoChipList
 import typings.kendoUi.kendoUiStrings.kendoCircularGauge
 import typings.kendoUi.kendoUiStrings.kendoCircularProgressBar
 import typings.kendoUi.kendoUiStrings.kendoColorGradient
@@ -270,6 +287,7 @@ import typings.kendoUi.kendoUiStrings.kendoDiagram
 import typings.kendoUi.kendoUiStrings.kendoDialog
 import typings.kendoUi.kendoUiStrings.kendoDraggable
 import typings.kendoUi.kendoUiStrings.kendoDrawer
+import typings.kendoUi.kendoUiStrings.kendoDropDownButton
 import typings.kendoUi.kendoUiStrings.kendoDropDownList
 import typings.kendoUi.kendoUiStrings.kendoDropDownTree
 import typings.kendoUi.kendoUiStrings.kendoDropTarget
@@ -340,10 +358,12 @@ import typings.kendoUi.kendoUiStrings.kendoRating
 import typings.kendoUi.kendoUiStrings.kendoResponsivePanel
 import typings.kendoUi.kendoUiStrings.kendoScheduler
 import typings.kendoUi.kendoUiStrings.kendoScrollView
+import typings.kendoUi.kendoUiStrings.kendoSignature
 import typings.kendoUi.kendoUiStrings.kendoSkeletonContainer
 import typings.kendoUi.kendoUiStrings.kendoSlider
 import typings.kendoUi.kendoUiStrings.kendoSortable
 import typings.kendoUi.kendoUiStrings.kendoSparkline
+import typings.kendoUi.kendoUiStrings.kendoSplitButton
 import typings.kendoUi.kendoUiStrings.kendoSplitter
 import typings.kendoUi.kendoUiStrings.kendoSpreadsheet
 import typings.kendoUi.kendoUiStrings.kendoStepper
@@ -353,8 +373,10 @@ import typings.kendoUi.kendoUiStrings.kendoTabStrip
 import typings.kendoUi.kendoUiStrings.kendoTextArea
 import typings.kendoUi.kendoUiStrings.kendoTextBox
 import typings.kendoUi.kendoUiStrings.kendoTileLayout
+import typings.kendoUi.kendoUiStrings.kendoTimeDurationPicker
 import typings.kendoUi.kendoUiStrings.kendoTimePicker
 import typings.kendoUi.kendoUiStrings.kendoTimeline
+import typings.kendoUi.kendoUiStrings.kendoToggleButton
 import typings.kendoUi.kendoUiStrings.kendoToolBar
 import typings.kendoUi.kendoUiStrings.kendoTooltip
 import typings.kendoUi.kendoUiStrings.kendoTouch
@@ -408,9 +430,13 @@ trait JQuery extends StObject {
   @JSName("data")
   def data_kendoCheckBoxGroup(key: kendoCheckBoxGroup): js.UndefOr[CheckBoxGroup] = js.native
   @JSName("data")
+  def data_kendoChip(key: kendoChip): Chip = js.native
+  @JSName("data")
+  def data_kendoChipList(key: kendoChipList): ChipList = js.native
+  @JSName("data")
   def data_kendoCircularGauge(key: kendoCircularGauge): js.UndefOr[CircularGauge] = js.native
   @JSName("data")
-  def data_kendoCircularProgressBar(key: kendoCircularProgressBar): js.UndefOr[CircularProgressBarOptions] = js.native
+  def data_kendoCircularProgressBar(key: kendoCircularProgressBar): js.UndefOr[CircularProgressBar] = js.native
   @JSName("data")
   def data_kendoColorGradient(key: kendoColorGradient): js.UndefOr[ColorGradient] = js.native
   @JSName("data")
@@ -439,6 +465,8 @@ trait JQuery extends StObject {
   def data_kendoDraggable(key: kendoDraggable): js.UndefOr[Draggable] = js.native
   @JSName("data")
   def data_kendoDrawer(key: kendoDrawer): js.UndefOr[Drawer] = js.native
+  @JSName("data")
+  def data_kendoDropDownButton(key: kendoDropDownButton): DropDownButton = js.native
   @JSName("data")
   def data_kendoDropDownList(key: kendoDropDownList): js.UndefOr[DropDownList] = js.native
   @JSName("data")
@@ -580,6 +608,8 @@ trait JQuery extends StObject {
   @JSName("data")
   def data_kendoScrollView(key: kendoScrollView): js.UndefOr[typings.kendoUi.kendo.ui.ScrollView] = js.native
   @JSName("data")
+  def data_kendoSignature(key: kendoSignature): js.UndefOr[Signature] = js.native
+  @JSName("data")
   def data_kendoSkeletonContainer(key: kendoSkeletonContainer): js.UndefOr[SkeletonContainer] = js.native
   @JSName("data")
   def data_kendoSlider(key: kendoSlider): js.UndefOr[Slider] = js.native
@@ -587,6 +617,8 @@ trait JQuery extends StObject {
   def data_kendoSortable(key: kendoSortable): js.UndefOr[Sortable] = js.native
   @JSName("data")
   def data_kendoSparkline(key: kendoSparkline): js.UndefOr[Sparkline] = js.native
+  @JSName("data")
+  def data_kendoSplitButton(key: kendoSplitButton): SplitButton = js.native
   @JSName("data")
   def data_kendoSplitter(key: kendoSplitter): js.UndefOr[Splitter] = js.native
   @JSName("data")
@@ -606,9 +638,13 @@ trait JQuery extends StObject {
   @JSName("data")
   def data_kendoTileLayout(key: kendoTileLayout): js.UndefOr[TileLayout] = js.native
   @JSName("data")
+  def data_kendoTimeDurationPicker(key: kendoTimeDurationPicker): TimeDurationPicker = js.native
+  @JSName("data")
   def data_kendoTimePicker(key: kendoTimePicker): js.UndefOr[TimePicker] = js.native
   @JSName("data")
   def data_kendoTimeline(key: kendoTimeline): js.UndefOr[Timeline] = js.native
+  @JSName("data")
+  def data_kendoToggleButton(key: kendoToggleButton): js.UndefOr[ToggleButton] = js.native
   @JSName("data")
   def data_kendoToolBar(key: kendoToolBar): js.UndefOr[ToolBar] = js.native
   @JSName("data")
@@ -681,6 +717,12 @@ trait JQuery extends StObject {
   def kendoCheckBoxGroup(): JQuery = js.native
   def kendoCheckBoxGroup(options: CheckBoxGroupOptions): JQuery = js.native
   
+  def kendoChip(): JQuery = js.native
+  def kendoChip(options: ChipOptions): JQuery = js.native
+  
+  def kendoChipList(): JQuery = js.native
+  def kendoChipList(options: ChipListOptions): JQuery = js.native
+  
   def kendoCircularGauge(): JQuery = js.native
   def kendoCircularGauge(options: CircularGaugeOptions): JQuery = js.native
   
@@ -728,6 +770,9 @@ trait JQuery extends StObject {
   
   def kendoDrawer(): JQuery = js.native
   def kendoDrawer(options: DrawerOptions): JQuery = js.native
+  
+  def kendoDropDownButton(): JQuery = js.native
+  def kendoDropDownButton(options: DropDownButtonOptions): JQuery = js.native
   
   def kendoDropDownList(): JQuery = js.native
   def kendoDropDownList(options: DropDownListOptions): JQuery = js.native
@@ -939,6 +984,9 @@ trait JQuery extends StObject {
   def kendoScrollView(): JQuery = js.native
   def kendoScrollView(options: typings.kendoUi.kendo.ui.ScrollViewOptions): JQuery = js.native
   
+  def kendoSignature(): JQuery = js.native
+  def kendoSignature(options: SignatureOptions): JQuery = js.native
+  
   def kendoSkeletonContainer(): JQuery = js.native
   def kendoSkeletonContainer(options: SkeletonContainerOptions): JQuery = js.native
   
@@ -950,6 +998,9 @@ trait JQuery extends StObject {
   
   def kendoSparkline(): JQuery = js.native
   def kendoSparkline(options: SparklineOptions): JQuery = js.native
+  
+  def kendoSplitButton(): JQuery = js.native
+  def kendoSplitButton(options: SplitButtonOptions): JQuery = js.native
   
   def kendoSplitter(): JQuery = js.native
   def kendoSplitter(options: SplitterOptions): JQuery = js.native
@@ -978,11 +1029,17 @@ trait JQuery extends StObject {
   def kendoTileLayout(): JQuery = js.native
   def kendoTileLayout(options: TileLayoutOptions): JQuery = js.native
   
+  def kendoTimeDurationPicker(): JQuery = js.native
+  def kendoTimeDurationPicker(options: TimeDurationPickerOptions): JQuery = js.native
+  
   def kendoTimePicker(): JQuery = js.native
   def kendoTimePicker(options: TimePickerOptions): JQuery = js.native
   
   def kendoTimeline(): JQuery = js.native
   def kendoTimeline(options: TimelineOptions): JQuery = js.native
+  
+  def kendoToggleButton(): JQuery = js.native
+  def kendoToggleButton(options: ToggleButtonOptions): JQuery = js.native
   
   def kendoToolBar(): JQuery = js.native
   def kendoToolBar(options: ToolBarOptions): JQuery = js.native

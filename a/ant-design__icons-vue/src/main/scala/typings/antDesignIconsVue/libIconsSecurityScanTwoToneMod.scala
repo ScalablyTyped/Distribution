@@ -16,7 +16,7 @@ object libIconsSecurityScanTwoToneMod extends Shortcut {
   @js.native
   trait SecurityScanTwoToneIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_SecurityScanTwoToneIconType: String = js.native

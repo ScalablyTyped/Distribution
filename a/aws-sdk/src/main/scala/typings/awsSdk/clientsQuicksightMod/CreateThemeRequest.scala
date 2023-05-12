@@ -14,7 +14,7 @@ trait CreateThemeRequest extends StObject {
   /**
     * The ID of the theme that a custom theme will inherit from. All themes inherit from one of the starting themes defined by Amazon QuickSight. For a list of the starting themes, use ListThemes or choose Themes from within an analysis. 
     */
-  var BaseThemeId: RestrictiveResourceId
+  var BaseThemeId: ShortRestrictiveResourceId
   
   /**
     * The theme configuration, which contains the theme display properties.
@@ -39,7 +39,7 @@ trait CreateThemeRequest extends StObject {
   /**
     * An ID for the theme that you want to create. The theme ID is unique per Amazon Web Services Region in each Amazon Web Services account.
     */
-  var ThemeId: RestrictiveResourceId
+  var ThemeId: ShortRestrictiveResourceId
   
   /**
     * A description of the first version of the theme that you're creating. Every time UpdateTheme is called, a new version is created. Each version of the theme has a description of the version in the VersionDescription field.
@@ -50,10 +50,10 @@ object CreateThemeRequest {
   
   inline def apply(
     AwsAccountId: AwsAccountId,
-    BaseThemeId: RestrictiveResourceId,
+    BaseThemeId: ShortRestrictiveResourceId,
     Configuration: ThemeConfiguration,
     Name: ThemeName,
-    ThemeId: RestrictiveResourceId
+    ThemeId: ShortRestrictiveResourceId
   ): CreateThemeRequest = {
     val __obj = js.Dynamic.literal(AwsAccountId = AwsAccountId.asInstanceOf[js.Any], BaseThemeId = BaseThemeId.asInstanceOf[js.Any], Configuration = Configuration.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], ThemeId = ThemeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateThemeRequest]
@@ -64,7 +64,7 @@ object CreateThemeRequest {
     
     inline def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
     
-    inline def setBaseThemeId(value: RestrictiveResourceId): Self = StObject.set(x, "BaseThemeId", value.asInstanceOf[js.Any])
+    inline def setBaseThemeId(value: ShortRestrictiveResourceId): Self = StObject.set(x, "BaseThemeId", value.asInstanceOf[js.Any])
     
     inline def setConfiguration(value: ThemeConfiguration): Self = StObject.set(x, "Configuration", value.asInstanceOf[js.Any])
     
@@ -82,7 +82,7 @@ object CreateThemeRequest {
     
     inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
     
-    inline def setThemeId(value: RestrictiveResourceId): Self = StObject.set(x, "ThemeId", value.asInstanceOf[js.Any])
+    inline def setThemeId(value: ShortRestrictiveResourceId): Self = StObject.set(x, "ThemeId", value.asInstanceOf[js.Any])
     
     inline def setVersionDescription(value: VersionDescription): Self = StObject.set(x, "VersionDescription", value.asInstanceOf[js.Any])
     

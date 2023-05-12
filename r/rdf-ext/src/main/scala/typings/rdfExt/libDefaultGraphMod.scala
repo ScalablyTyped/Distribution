@@ -8,14 +8,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object libDefaultGraphMod {
   
-  @JSImport("rdf-ext/lib/DefaultGraph", JSImport.Namespace)
+  @JSImport("rdf-ext/lib/DefaultGraph", JSImport.Default)
   @js.native
-  open class ^ ()
-    extends StObject
-       with DefaultGraphExt
+  open class default () extends DefaultGraphExt
   
+  @JSImport("rdf-ext/lib/DefaultGraph", "DefaultGraphExt")
   @js.native
-  trait DefaultGraphExt
+  open class DefaultGraphExt ()
     extends StObject
        with DefaultGraph {
     

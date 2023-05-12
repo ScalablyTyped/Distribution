@@ -230,6 +230,8 @@ object sapFProductSwitchMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:change change} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining

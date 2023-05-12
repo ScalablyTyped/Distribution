@@ -2,6 +2,7 @@ package typings.protonsRuntime
 
 import typings.protonsRuntime.mod.Reader_
 import typings.protonsRuntime.mod.Writer_
+import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -67,8 +68,8 @@ object distSrcCodecMod {
     @JSName("decode")
     var decode_Original: DecodeFunction[T]
     
-    def encode(value: T, writer: Writer_): Unit
-    def encode(value: T, writer: Writer_, opts: EncodeOptions): Unit
+    def encode(value: Partial[T], writer: Writer_): Unit
+    def encode(value: Partial[T], writer: Writer_, opts: EncodeOptions): Unit
     @JSName("encode")
     var encode_Original: EncodeFunction[T]
     
@@ -80,7 +81,7 @@ object distSrcCodecMod {
     
     inline def apply[T](
       decode: (/* reader */ Reader_, /* length */ js.UndefOr[Double]) => T,
-      encode: (T, /* writer */ Writer_, /* opts */ js.UndefOr[EncodeOptions]) => Unit,
+      encode: (/* value */ Partial[T], /* writer */ Writer_, /* opts */ js.UndefOr[EncodeOptions]) => Unit,
       name: String,
       `type`: CODEC_TYPES
     ): Codec[T] = {
@@ -94,7 +95,9 @@ object distSrcCodecMod {
       
       inline def setDecode(value: (/* reader */ Reader_, /* length */ js.UndefOr[Double]) => T): Self = StObject.set(x, "decode", js.Any.fromFunction2(value))
       
-      inline def setEncode(value: (T, /* writer */ Writer_, /* opts */ js.UndefOr[EncodeOptions]) => Unit): Self = StObject.set(x, "encode", js.Any.fromFunction3(value))
+      inline def setEncode(
+        value: (/* value */ Partial[T], /* writer */ Writer_, /* opts */ js.UndefOr[EncodeOptions]) => Unit
+      ): Self = StObject.set(x, "encode", js.Any.fromFunction3(value))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -104,7 +107,12 @@ object distSrcCodecMod {
   
   type DecodeFunction[T] = js.Function2[/* reader */ Reader_, /* length */ js.UndefOr[Double], T]
   
-  type EncodeFunction[T] = js.Function3[/* value */ T, /* writer */ Writer_, /* opts */ js.UndefOr[EncodeOptions], Unit]
+  type EncodeFunction[T] = js.Function3[
+    /* value */ Partial[T], 
+    /* writer */ Writer_, 
+    /* opts */ js.UndefOr[EncodeOptions], 
+    Unit
+  ]
   
   trait EncodeOptions extends StObject {
     

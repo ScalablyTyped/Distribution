@@ -52,6 +52,11 @@ trait GetEntityResponse extends StObject {
   var status: Status
   
   /**
+    * The syncSource of the sync job, if this entity was created by a sync job.
+    */
+  var syncSource: js.UndefOr[SyncSource] = js.undefined
+  
+  /**
     * The date and time when the entity was last updated.
     */
   var updateDateTime: js.Date
@@ -102,6 +107,10 @@ object GetEntityResponse {
     inline def setParentEntityId(value: ParentEntityId): Self = StObject.set(x, "parentEntityId", value.asInstanceOf[js.Any])
     
     inline def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    
+    inline def setSyncSource(value: SyncSource): Self = StObject.set(x, "syncSource", value.asInstanceOf[js.Any])
+    
+    inline def setSyncSourceUndefined: Self = StObject.set(x, "syncSource", js.undefined)
     
     inline def setUpdateDateTime(value: js.Date): Self = StObject.set(x, "updateDateTime", value.asInstanceOf[js.Any])
     

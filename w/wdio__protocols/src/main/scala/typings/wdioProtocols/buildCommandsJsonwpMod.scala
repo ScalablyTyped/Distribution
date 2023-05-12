@@ -22,7 +22,7 @@ object buildCommandsJsonwpMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#get-sessionsessionidwindowwindowhandlesize
       *
       */
-    def _getWindowSize(): ProtocolCommandResponse = js.native
+    def _getWindowSize(): js.Promise[ProtocolCommandResponse] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -31,7 +31,7 @@ object buildCommandsJsonwpMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#post-sessionsessionidwindowwindowhandlesize
       *
       */
-    def _setWindowSize(width: Double, height: Double): Unit = js.native
+    def _setWindowSize(width: Double, height: Double): js.Promise[Unit] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -40,7 +40,7 @@ object buildCommandsJsonwpMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidaccept_alert
       *
       */
-    def acceptAlert(): Unit = js.native
+    def acceptAlert(): js.Promise[Unit] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -49,7 +49,7 @@ object buildCommandsJsonwpMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidimeactivate
       *
       */
-    def activateIME(engine: String): Unit = js.native
+    def activateIME(engine: String): js.Promise[Unit] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -58,7 +58,7 @@ object buildCommandsJsonwpMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#post-sessionsessionidcookie
       *
       */
-    def addCookie(cookie: js.Object): Unit = js.native
+    def addCookie(cookie: js.Object): js.Promise[Unit] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -67,7 +67,7 @@ object buildCommandsJsonwpMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidback
       *
       */
-    def back(): Unit = js.native
+    def back(): js.Promise[Unit] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -76,8 +76,8 @@ object buildCommandsJsonwpMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidbuttondown
       *
       */
-    def buttonDown(): Unit = js.native
-    def buttonDown(button: Double): Unit = js.native
+    def buttonDown(): js.Promise[Unit] = js.native
+    def buttonDown(button: Double): js.Promise[Unit] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -86,8 +86,8 @@ object buildCommandsJsonwpMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidbuttonup
       *
       */
-    def buttonUp(): Unit = js.native
-    def buttonUp(button: Double): Unit = js.native
+    def buttonUp(): js.Promise[Unit] = js.native
+    def buttonUp(button: Double): js.Promise[Unit] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -96,7 +96,7 @@ object buildCommandsJsonwpMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#get-sessionsessionidlocal_storage
       *
       */
-    def clearLocalStorage(): Unit = js.native
+    def clearLocalStorage(): js.Promise[Unit] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -105,7 +105,7 @@ object buildCommandsJsonwpMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#delete-sessionsessionidsession_storage
       *
       */
-    def clearSessionStorage(): Unit = js.native
+    def clearSessionStorage(): js.Promise[Unit] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -114,7 +114,7 @@ object buildCommandsJsonwpMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#delete-sessionsessionidwindow
       *
       */
-    def closeWindow(): Unit = js.native
+    def closeWindow(): js.Promise[Unit] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -123,7 +123,7 @@ object buildCommandsJsonwpMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidimedeactivate
       *
       */
-    def deactivateIME(): Unit = js.native
+    def deactivateIME(): js.Promise[Unit] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -132,7 +132,7 @@ object buildCommandsJsonwpMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#delete-sessionsessionidcookie
       *
       */
-    def deleteAllCookies(): Unit = js.native
+    def deleteAllCookies(): js.Promise[Unit] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -141,7 +141,7 @@ object buildCommandsJsonwpMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#delete-sessionsessionidcookiename
       *
       */
-    def deleteCookie(name: String): Unit = js.native
+    def deleteCookie(name: String): js.Promise[Unit] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -150,7 +150,7 @@ object buildCommandsJsonwpMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#delete-sessionsessionidlocal_storagekeykey
       *
       */
-    def deleteLocalStorageItem(key: String): Unit = js.native
+    def deleteLocalStorageItem(key: String): js.Promise[Unit] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -159,7 +159,7 @@ object buildCommandsJsonwpMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#delete-sessionsessionid
       *
       */
-    def deleteSession(): Unit = js.native
+    def deleteSession(): js.Promise[Unit] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -168,7 +168,7 @@ object buildCommandsJsonwpMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#delete-sessionsessionidsession_storagekeykey
       *
       */
-    def deleteSessionStorageItem(key: String): Unit = js.native
+    def deleteSessionStorageItem(key: String): js.Promise[Unit] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -177,7 +177,7 @@ object buildCommandsJsonwpMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessioniddismiss_alert
       *
       */
-    def dismissAlert(): Unit = js.native
+    def dismissAlert(): js.Promise[Unit] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -186,7 +186,7 @@ object buildCommandsJsonwpMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidelementidclear
       *
       */
-    def elementClear(elementId: String): Unit = js.native
+    def elementClear(elementId: String): js.Promise[Unit] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -195,7 +195,7 @@ object buildCommandsJsonwpMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidelementidclick
       *
       */
-    def elementClick(elementId: String): Unit = js.native
+    def elementClick(elementId: String): js.Promise[Unit] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -204,7 +204,7 @@ object buildCommandsJsonwpMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidelementidequalsother
       *
       */
-    def elementEquals(elementId: String, otherElementId: String): Boolean = js.native
+    def elementEquals(elementId: String, otherElementId: String): js.Promise[Boolean] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -213,7 +213,7 @@ object buildCommandsJsonwpMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidelementidvalue
       *
       */
-    def elementSendKeys(elementId: String, value: js.Array[String]): Unit = js.native
+    def elementSendKeys(elementId: String, value: js.Array[String]): js.Promise[Unit] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -222,7 +222,7 @@ object buildCommandsJsonwpMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidelementidsubmit
       *
       */
-    def elementSubmit(elementId: String): Unit = js.native
+    def elementSubmit(elementId: String): js.Promise[Unit] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -231,7 +231,7 @@ object buildCommandsJsonwpMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidexecute_async
       *
       */
-    def executeAsyncScript(script: String, args: js.Array[js.UndefOr[String | js.Object | Double | Boolean]]): Any = js.native
+    def executeAsyncScript(script: String, args: js.Array[js.UndefOr[String | js.Object | Double | Boolean]]): js.Promise[Any] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -240,8 +240,8 @@ object buildCommandsJsonwpMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidexecute
       *
       */
-    def executeScript(script: String): Any = js.native
-    def executeScript(script: String, args: js.Array[js.UndefOr[String | js.Object | Double | Boolean]]): Any = js.native
+    def executeScript(script: String): js.Promise[Any] = js.native
+    def executeScript(script: String, args: js.Array[js.UndefOr[String | js.Object | Double | Boolean]]): js.Promise[Any] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -250,7 +250,7 @@ object buildCommandsJsonwpMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidelement
       *
       */
-    def findElement(`using`: String, value: String): ElementReference = js.native
+    def findElement(`using`: String, value: String): js.Promise[ElementReference] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -259,7 +259,7 @@ object buildCommandsJsonwpMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidelementidelement
       *
       */
-    def findElementFromElement(elementId: String, `using`: String, value: String): ElementReference = js.native
+    def findElementFromElement(elementId: String, `using`: String, value: String): js.Promise[ElementReference] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -268,7 +268,7 @@ object buildCommandsJsonwpMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidelements
       *
       */
-    def findElements(`using`: String, value: String): js.Array[ElementReference] = js.native
+    def findElements(`using`: String, value: String): js.Promise[js.Array[ElementReference]] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -277,7 +277,7 @@ object buildCommandsJsonwpMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidelementidelements
       *
       */
-    def findElementsFromElement(elementId: String, `using`: String, value: String): js.Array[ElementReference] = js.native
+    def findElementsFromElement(elementId: String, `using`: String, value: String): js.Promise[js.Array[ElementReference]] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -286,7 +286,7 @@ object buildCommandsJsonwpMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidforward
       *
       */
-    def forward(): Unit = js.native
+    def forward(): js.Promise[Unit] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -295,7 +295,7 @@ object buildCommandsJsonwpMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidelementactive
       *
       */
-    def getActiveElement(): String = js.native
+    def getActiveElement(): js.Promise[String] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -304,7 +304,7 @@ object buildCommandsJsonwpMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidimeactive_engine
       *
       */
-    def getActiveEngine(): String = js.native
+    def getActiveEngine(): js.Promise[String] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -313,7 +313,7 @@ object buildCommandsJsonwpMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#get-sessionsessionidalert_text
       *
       */
-    def getAlertText(): String = js.native
+    def getAlertText(): js.Promise[String] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -322,7 +322,7 @@ object buildCommandsJsonwpMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#get-sessionsessionidcookie
       *
       */
-    def getAllCookies(): js.Array[Cookie] = js.native
+    def getAllCookies(): js.Promise[js.Array[Cookie]] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -331,7 +331,7 @@ object buildCommandsJsonwpMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidapplication_cachestatus
       *
       */
-    def getApplicationCacheStatus(): Double = js.native
+    def getApplicationCacheStatus(): js.Promise[Double] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -340,7 +340,7 @@ object buildCommandsJsonwpMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidimeavailable_engines
       *
       */
-    def getAvailableEngines(): js.Array[String] = js.native
+    def getAvailableEngines(): js.Promise[js.Array[String]] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -349,7 +349,7 @@ object buildCommandsJsonwpMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidelementidattributename
       *
       */
-    def getElementAttribute(elementId: String, name: String): String | Null = js.native
+    def getElementAttribute(elementId: String, name: String): js.Promise[String | Null] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -358,7 +358,7 @@ object buildCommandsJsonwpMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidelementidcsspropertyname
       *
       */
-    def getElementCSSValue(elementId: String, propertyName: String): String = js.native
+    def getElementCSSValue(elementId: String, propertyName: String): js.Promise[String] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -367,7 +367,7 @@ object buildCommandsJsonwpMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidelementidlocation
       *
       */
-    def getElementLocation(elementId: String): ProtocolCommandResponse = js.native
+    def getElementLocation(elementId: String): js.Promise[ProtocolCommandResponse] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -376,7 +376,7 @@ object buildCommandsJsonwpMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidelementidlocation_in_view
       *
       */
-    def getElementLocationInView(elementId: String): ProtocolCommandResponse = js.native
+    def getElementLocationInView(elementId: String): js.Promise[ProtocolCommandResponse] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -385,7 +385,7 @@ object buildCommandsJsonwpMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidelementidsize
       *
       */
-    def getElementSize(elementId: String): ProtocolCommandResponse = js.native
+    def getElementSize(elementId: String): js.Promise[ProtocolCommandResponse] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -394,7 +394,7 @@ object buildCommandsJsonwpMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidelementidname
       *
       */
-    def getElementTagName(elementId: String): String = js.native
+    def getElementTagName(elementId: String): js.Promise[String] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -403,7 +403,7 @@ object buildCommandsJsonwpMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidelementidtext
       *
       */
-    def getElementText(elementId: String): String = js.native
+    def getElementText(elementId: String): js.Promise[String] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -412,7 +412,7 @@ object buildCommandsJsonwpMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#get-sessionsessionidlocation
       *
       */
-    def getGeoLocation(): ProtocolCommandResponse = js.native
+    def getGeoLocation(): js.Promise[ProtocolCommandResponse] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -421,7 +421,7 @@ object buildCommandsJsonwpMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#get-sessionsessionidlocal_storage
       *
       */
-    def getLocalStorage(): js.Array[String] = js.native
+    def getLocalStorage(): js.Promise[js.Array[String]] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -430,7 +430,7 @@ object buildCommandsJsonwpMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#get-sessionsessionidlocal_storagekeykey
       *
       */
-    def getLocalStorageItem(key: String): String = js.native
+    def getLocalStorageItem(key: String): js.Promise[String] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -439,7 +439,7 @@ object buildCommandsJsonwpMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidlocal_storagesize
       *
       */
-    def getLocalStorageSize(): Double = js.native
+    def getLocalStorageSize(): js.Promise[Double] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -448,7 +448,7 @@ object buildCommandsJsonwpMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidlogtypes
       *
       */
-    def getLogTypes(): js.Array[String] = js.native
+    def getLogTypes(): js.Promise[js.Array[String]] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -457,7 +457,7 @@ object buildCommandsJsonwpMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidlog
       *
       */
-    def getLogs(`type`: String): js.Array[js.Object] = js.native
+    def getLogs(`type`: String): js.Promise[js.Array[js.Object]] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -466,7 +466,7 @@ object buildCommandsJsonwpMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#get-sessionsessionidorientation
       *
       */
-    def getOrientation(): String = js.native
+    def getOrientation(): js.Promise[String] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -475,7 +475,7 @@ object buildCommandsJsonwpMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidsource
       *
       */
-    def getPageSource(): String = js.native
+    def getPageSource(): js.Promise[String] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -484,7 +484,7 @@ object buildCommandsJsonwpMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#get-sessionsessionid
       *
       */
-    def getSession(): ProtocolCommandResponse = js.native
+    def getSession(): js.Promise[ProtocolCommandResponse] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -493,7 +493,7 @@ object buildCommandsJsonwpMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#get-sessionsessionidsession_storage
       *
       */
-    def getSessionStorage(): js.Array[String] = js.native
+    def getSessionStorage(): js.Promise[js.Array[String]] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -502,7 +502,7 @@ object buildCommandsJsonwpMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#get-sessionsessionidsession_storagekeykey
       *
       */
-    def getSessionStorageItem(key: String): String = js.native
+    def getSessionStorageItem(key: String): js.Promise[String] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -511,7 +511,7 @@ object buildCommandsJsonwpMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidsession_storagesize
       *
       */
-    def getSessionStorageSize(): Double = js.native
+    def getSessionStorageSize(): js.Promise[Double] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -520,7 +520,7 @@ object buildCommandsJsonwpMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessions
       *
       */
-    def getSessions(): js.Array[js.Object] = js.native
+    def getSessions(): js.Promise[js.Array[js.Object]] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -529,7 +529,7 @@ object buildCommandsJsonwpMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidtitle
       *
       */
-    def getTitle(): String = js.native
+    def getTitle(): js.Promise[String] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -538,7 +538,7 @@ object buildCommandsJsonwpMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#get-sessionsessionidurl
       *
       */
-    def getUrl(): String = js.native
+    def getUrl(): js.Promise[String] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -547,7 +547,7 @@ object buildCommandsJsonwpMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidwindow_handle
       *
       */
-    def getWindowHandle(): String = js.native
+    def getWindowHandle(): js.Promise[String] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -556,7 +556,7 @@ object buildCommandsJsonwpMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidwindow_handles
       *
       */
-    def getWindowHandles(): js.Array[String] = js.native
+    def getWindowHandles(): js.Promise[js.Array[String]] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -565,7 +565,7 @@ object buildCommandsJsonwpMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#get-sessionsessionidwindowwindowhandleposition
       *
       */
-    def getWindowPosition(): ProtocolCommandResponse = js.native
+    def getWindowPosition(): js.Promise[ProtocolCommandResponse] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -574,7 +574,7 @@ object buildCommandsJsonwpMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidelementiddisplayed
       *
       */
-    def isElementDisplayed(elementId: String): Boolean = js.native
+    def isElementDisplayed(elementId: String): js.Promise[Boolean] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -583,7 +583,7 @@ object buildCommandsJsonwpMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidelementidenabled
       *
       */
-    def isElementEnabled(elementId: String): Boolean = js.native
+    def isElementEnabled(elementId: String): js.Promise[Boolean] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -592,7 +592,7 @@ object buildCommandsJsonwpMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidelementidselected
       *
       */
-    def isElementSelected(elementId: String): Boolean = js.native
+    def isElementSelected(elementId: String): js.Promise[Boolean] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -601,7 +601,7 @@ object buildCommandsJsonwpMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidimeactivated
       *
       */
-    def isIMEActivated(): Boolean = js.native
+    def isIMEActivated(): js.Promise[Boolean] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -610,7 +610,7 @@ object buildCommandsJsonwpMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidwindowwindowhandlemaximize
       *
       */
-    def maximizeWindow(): RectReturn = js.native
+    def maximizeWindow(): js.Promise[RectReturn] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -619,17 +619,17 @@ object buildCommandsJsonwpMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidmoveto
       *
       */
-    def moveToElement(): Unit = js.native
-    def moveToElement(element: String): Unit = js.native
-    def moveToElement(element: String, xoffset: Double): Unit = js.native
-    def moveToElement(element: String, xoffset: Double, yoffset: Double): Unit = js.native
-    def moveToElement(element: String, xoffset: Unit, yoffset: Double): Unit = js.native
-    def moveToElement(element: Null, xoffset: Double): Unit = js.native
-    def moveToElement(element: Null, xoffset: Double, yoffset: Double): Unit = js.native
-    def moveToElement(element: Null, xoffset: Unit, yoffset: Double): Unit = js.native
-    def moveToElement(element: Unit, xoffset: Double): Unit = js.native
-    def moveToElement(element: Unit, xoffset: Double, yoffset: Double): Unit = js.native
-    def moveToElement(element: Unit, xoffset: Unit, yoffset: Double): Unit = js.native
+    def moveToElement(): js.Promise[Unit] = js.native
+    def moveToElement(element: String): js.Promise[Unit] = js.native
+    def moveToElement(element: String, xoffset: Double): js.Promise[Unit] = js.native
+    def moveToElement(element: String, xoffset: Double, yoffset: Double): js.Promise[Unit] = js.native
+    def moveToElement(element: String, xoffset: Unit, yoffset: Double): js.Promise[Unit] = js.native
+    def moveToElement(element: Null, xoffset: Double): js.Promise[Unit] = js.native
+    def moveToElement(element: Null, xoffset: Double, yoffset: Double): js.Promise[Unit] = js.native
+    def moveToElement(element: Null, xoffset: Unit, yoffset: Double): js.Promise[Unit] = js.native
+    def moveToElement(element: Unit, xoffset: Double): js.Promise[Unit] = js.native
+    def moveToElement(element: Unit, xoffset: Double, yoffset: Double): js.Promise[Unit] = js.native
+    def moveToElement(element: Unit, xoffset: Unit, yoffset: Double): js.Promise[Unit] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -638,7 +638,7 @@ object buildCommandsJsonwpMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#post-sessionsessionidurl
       *
       */
-    def navigateTo(url: String): Unit = js.native
+    def navigateTo(url: String): js.Promise[Unit] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -647,7 +647,7 @@ object buildCommandsJsonwpMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#session-1
       *
       */
-    def newSession(desiredCapabilities: js.Object, requiredCapabilities: js.Object): SessionReturn = js.native
+    def newSession(desiredCapabilities: js.Object, requiredCapabilities: js.Object): js.Promise[SessionReturn] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -656,8 +656,8 @@ object buildCommandsJsonwpMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidclick
       *
       */
-    def positionClick(): Unit = js.native
-    def positionClick(button: Double): Unit = js.native
+    def positionClick(): js.Promise[Unit] = js.native
+    def positionClick(button: Double): js.Promise[Unit] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -666,7 +666,7 @@ object buildCommandsJsonwpMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessioniddoubleclick
       *
       */
-    def positionDoubleClick(): Unit = js.native
+    def positionDoubleClick(): js.Promise[Unit] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -675,7 +675,7 @@ object buildCommandsJsonwpMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidrefresh
       *
       */
-    def refresh(): Unit = js.native
+    def refresh(): js.Promise[Unit] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -684,7 +684,7 @@ object buildCommandsJsonwpMod {
       * @ref https://w3c.github.io/webdriver/webdriver-spec.html#dfn-send-alert-text
       *
       */
-    def sendAlertText(text: String): Unit = js.native
+    def sendAlertText(text: String): js.Promise[Unit] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -693,7 +693,7 @@ object buildCommandsJsonwpMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidkeys
       *
       */
-    def sendKeys(value: js.Array[String]): Unit = js.native
+    def sendKeys(value: js.Array[String]): js.Promise[Unit] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -702,7 +702,7 @@ object buildCommandsJsonwpMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidtimeoutsasync_script
       *
       */
-    def setAsyncTimeout(ms: Double): Unit = js.native
+    def setAsyncTimeout(ms: Double): js.Promise[Unit] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -711,7 +711,7 @@ object buildCommandsJsonwpMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#post-sessionsessionidlocation
       *
       */
-    def setGeoLocation(location: js.Object): Unit = js.native
+    def setGeoLocation(location: js.Object): js.Promise[Unit] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -720,7 +720,7 @@ object buildCommandsJsonwpMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidtimeoutsimplicit_wait
       *
       */
-    def setImplicitTimeout(ms: Double): Unit = js.native
+    def setImplicitTimeout(ms: Double): js.Promise[Unit] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -729,7 +729,7 @@ object buildCommandsJsonwpMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#post-sessionsessionidlocal_storage
       *
       */
-    def setLocalStorage(key: String, value: String): Unit = js.native
+    def setLocalStorage(key: String, value: String): js.Promise[Unit] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -738,7 +738,7 @@ object buildCommandsJsonwpMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#post-sessionsessionidorientation
       *
       */
-    def setOrientation(orientation: String): Unit = js.native
+    def setOrientation(orientation: String): js.Promise[Unit] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -747,7 +747,7 @@ object buildCommandsJsonwpMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#post-sessionsessionidsession_storage
       *
       */
-    def setSessionStorage(key: String, value: String): Unit = js.native
+    def setSessionStorage(key: String, value: String): js.Promise[Unit] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -756,7 +756,7 @@ object buildCommandsJsonwpMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidtimeouts
       *
       */
-    def setTimeouts(`type`: String, ms: Double): Unit = js.native
+    def setTimeouts(`type`: String, ms: Double): js.Promise[Unit] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -765,7 +765,7 @@ object buildCommandsJsonwpMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#post-sessionsessionidwindowwindowhandleposition
       *
       */
-    def setWindowPosition(x: Double, y: Double): ProtocolCommandResponse = js.native
+    def setWindowPosition(x: Double, y: Double): js.Promise[ProtocolCommandResponse] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -774,7 +774,7 @@ object buildCommandsJsonwpMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#status
       *
       */
-    def status(): StatusReturn = js.native
+    def status(): js.Promise[StatusReturn] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -783,10 +783,10 @@ object buildCommandsJsonwpMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidframe
       *
       */
-    def switchToFrame(): Unit = js.native
-    def switchToFrame(id: String): Unit = js.native
-    def switchToFrame(id: js.Object): Unit = js.native
-    def switchToFrame(id: Double): Unit = js.native
+    def switchToFrame(): js.Promise[Unit] = js.native
+    def switchToFrame(id: String): js.Promise[Unit] = js.native
+    def switchToFrame(id: js.Object): js.Promise[Unit] = js.native
+    def switchToFrame(id: Double): js.Promise[Unit] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -795,7 +795,7 @@ object buildCommandsJsonwpMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidframeparent
       *
       */
-    def switchToParentFrame(): Unit = js.native
+    def switchToParentFrame(): js.Promise[Unit] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -804,7 +804,7 @@ object buildCommandsJsonwpMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#post-sessionsessionidwindow
       *
       */
-    def switchToWindow(name: String): Unit = js.native
+    def switchToWindow(name: String): js.Promise[Unit] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -813,7 +813,7 @@ object buildCommandsJsonwpMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidscreenshot
       *
       */
-    def takeScreenshot(): String = js.native
+    def takeScreenshot(): js.Promise[String] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -822,7 +822,7 @@ object buildCommandsJsonwpMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidtouchclick
       *
       */
-    def touchClick(element: String): Unit = js.native
+    def touchClick(element: String): js.Promise[Unit] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -831,7 +831,7 @@ object buildCommandsJsonwpMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidtouchdoubleclick
       *
       */
-    def touchDoubleClick(element: String): Unit = js.native
+    def touchDoubleClick(element: String): js.Promise[Unit] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -840,7 +840,7 @@ object buildCommandsJsonwpMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidtouchdown
       *
       */
-    def touchDown(x: Double, y: Double): Unit = js.native
+    def touchDown(x: Double, y: Double): js.Promise[Unit] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -856,7 +856,7 @@ object buildCommandsJsonwpMod {
       speed: js.UndefOr[Double],
       xspeed: js.UndefOr[Double],
       yspeed: js.UndefOr[Double]
-    ): Unit = js.native
+    ): js.Promise[Unit] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -865,7 +865,7 @@ object buildCommandsJsonwpMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidtouchlongclick
       *
       */
-    def touchLongClick(element: String): Unit = js.native
+    def touchLongClick(element: String): js.Promise[Unit] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -874,7 +874,7 @@ object buildCommandsJsonwpMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidtouchmove
       *
       */
-    def touchMove(x: Double, y: Double): Unit = js.native
+    def touchMove(x: Double, y: Double): js.Promise[Unit] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -883,8 +883,8 @@ object buildCommandsJsonwpMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidtouchscroll
       *
       */
-    def touchScroll(xoffset: Double, yoffset: Double): Unit = js.native
-    def touchScroll(xoffset: Double, yoffset: Double, element: String): Unit = js.native
+    def touchScroll(xoffset: Double, yoffset: Double): js.Promise[Unit] = js.native
+    def touchScroll(xoffset: Double, yoffset: Double, element: String): js.Promise[Unit] = js.native
     
     /**
       * Jsonwp Protocol Command
@@ -893,6 +893,6 @@ object buildCommandsJsonwpMod {
       * @ref https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidtouchup
       *
       */
-    def touchUp(x: Double, y: Double): Unit = js.native
+    def touchUp(x: Double, y: Double): js.Promise[Unit] = js.native
   }
 }

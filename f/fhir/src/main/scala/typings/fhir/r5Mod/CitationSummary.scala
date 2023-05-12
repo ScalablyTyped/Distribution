@@ -11,12 +11,12 @@ trait CitationSummary
   var _text: js.UndefOr[Element] = js.undefined
   
   /**
-    * Format for display of the citation.
+    * Format for display of the citation summary.
     */
   var style: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
-    * The human-readable display of the citation.
+    * The human-readable display of the citation summary.
     */
   var text: String
 }

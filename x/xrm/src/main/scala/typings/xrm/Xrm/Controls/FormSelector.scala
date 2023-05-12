@@ -19,7 +19,7 @@ trait FormSelector extends StObject {
   
   /**
     * A reference to the collection of available forms.
-    * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/collections External Link: Collections (Client API reference)}
+    * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/reference/collections External Link: Collections (Client API reference)}
     */
   var items: ItemCollection[FormItem]
 }

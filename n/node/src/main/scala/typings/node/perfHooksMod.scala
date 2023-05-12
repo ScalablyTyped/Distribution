@@ -18,6 +18,7 @@ object perfHooksMod {
   val ^ : js.Any = js.native
   
   /**
+    * The constructor of this class is not exposed to users directly.
     * @since v8.5.0
     */
   @JSImport("perf_hooks", "PerformanceEntry")
@@ -68,6 +69,10 @@ object perfHooksMod {
     def toJSON(): Any = js.native
   }
   
+  /**
+    * Exposes marks created via the `Performance.mark()` method.
+    * @since v18.2.0, v16.17.0
+    */
   @JSImport("perf_hooks", "PerformanceMark")
   @js.native
   /* protected */ open class PerformanceMark () extends PerformanceEntry {
@@ -79,6 +84,12 @@ object perfHooksMod {
     val entryType_PerformanceMark: mark = js.native
   }
   
+  /**
+    * Exposes measures created via the `Performance.measure()` method.
+    *
+    * The constructor of this class is not exposed to users directly.
+    * @since v18.2.0, v16.17.0
+    */
   @JSImport("perf_hooks", "PerformanceMeasure")
   @js.native
   /* protected */ open class PerformanceMeasure () extends PerformanceEntry {
@@ -147,6 +158,9 @@ object perfHooksMod {
     val v8Start: Double = js.native
   }
   
+  /**
+    * @since v8.5.0
+    */
   @JSImport("perf_hooks", "PerformanceObserver")
   @js.native
   open class PerformanceObserver protected () extends AsyncResource {
@@ -164,8 +178,8 @@ object perfHooksMod {
       * ```js
       * const {
       *   performance,
-      *   PerformanceObserver
-      * } = require('perf_hooks');
+      *   PerformanceObserver,
+      * } = require('node:perf_hooks');
       *
       * const obs = new PerformanceObserver((list, observer) => {
       *   // Called once asynchronously. `list` contains three items.
@@ -263,7 +277,7 @@ object perfHooksMod {
     * detect.
     *
     * ```js
-    * const { monitorEventLoopDelay } = require('perf_hooks');
+    * const { monitorEventLoopDelay } = require('node:perf_hooks');
     * const h = monitorEventLoopDelay({ resolution: 20 });
     * h.enable();
     * // Do something.
@@ -682,8 +696,8 @@ object perfHooksMod {
       * ```js
       * const {
       *   performance,
-      *   PerformanceObserver
-      * } = require('perf_hooks');
+      *   PerformanceObserver,
+      * } = require('node:perf_hooks');
       *
       * const obs = new PerformanceObserver((perfObserverList, observer) => {
       *   console.log(perfObserverList.getEntries());
@@ -725,8 +739,8 @@ object perfHooksMod {
       * ```js
       * const {
       *   performance,
-      *   PerformanceObserver
-      * } = require('perf_hooks');
+      *   PerformanceObserver,
+      * } = require('node:perf_hooks');
       *
       * const obs = new PerformanceObserver((perfObserverList, observer) => {
       *   console.log(perfObserverList.getEntriesByName('meow'));
@@ -776,8 +790,8 @@ object perfHooksMod {
       * ```js
       * const {
       *   performance,
-      *   PerformanceObserver
-      * } = require('perf_hooks');
+      *   PerformanceObserver,
+      * } = require('node:perf_hooks');
       *
       * const obs = new PerformanceObserver((perfObserverList, observer) => {
       *   console.log(perfObserverList.getEntriesByType('mark'));
@@ -939,9 +953,8 @@ object perfHooksMod {
        with Histogram {
     
     /**
-      * Adds the values from other to this histogram.
+      * Adds the values from `other` to this histogram.
       * @since v17.4.0, v16.14.0
-      * @param other Recordable Histogram to combine with
       */
     def add(other: RecordableHistogram): Unit = js.native
     

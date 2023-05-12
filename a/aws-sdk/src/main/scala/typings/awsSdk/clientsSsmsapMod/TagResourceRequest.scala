@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TagResourceRequest extends StObject {
   
   /**
-    * 
+    * The Amazon Resource Name (ARN) of the resource.
     */
   var resourceArn: SsmSapArn
   
   /**
-    * 
+    * The tags on a resource.
     */
   var tags: TagMap
 }

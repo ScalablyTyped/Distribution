@@ -242,6 +242,7 @@ type FailureTolerancePercentage = Double
   - typings.awsSdk.awsSdkStrings.HandlerInternalFailure
   - typings.awsSdk.awsSdkStrings.NonCompliant
   - typings.awsSdk.awsSdkStrings.Unknown_
+  - typings.awsSdk.awsSdkStrings.UnsupportedTarget
   - java.lang.String
 */
 type HandlerErrorCode = _HandlerErrorCode | String
@@ -281,7 +282,7 @@ type HookTypeName = String
 type HookTypeVersionId = String
 
 /* Rewritten from type alias, can be one of: 
-  - typings.awsSdk.awsSdkStrings.AWS_Marketplace
+  - typings.awsSdk.awsSdkStrings.AWS_Marketplace_
   - typings.awsSdk.awsSdkStrings.GitHub_
   - typings.awsSdk.awsSdkStrings.Bitbucket_
   - java.lang.String

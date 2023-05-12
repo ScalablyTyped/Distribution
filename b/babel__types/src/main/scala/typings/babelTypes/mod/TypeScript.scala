@@ -447,7 +447,7 @@ object TypeScript {
   }
   
   inline def TSTypeParameter_(name: String): typings.babelTypes.mod.TSTypeParameter_ = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], constraint = null, default = null, end = null, in = null, innerComments = null, leadingComments = null, loc = null, out = null, start = null, trailingComments = null)
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], const = null, constraint = null, default = null, end = null, in = null, innerComments = null, leadingComments = null, loc = null, out = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("TSTypeParameter")
     __obj.asInstanceOf[typings.babelTypes.mod.TSTypeParameter_]
   }

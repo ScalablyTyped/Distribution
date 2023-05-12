@@ -37,6 +37,18 @@ object CubeMapToSphericalPolynomialTools {
     */
   inline def ConvertCubeMapToSphericalPolynomial(cubeInfo: CubeMapInfo): SphericalPolynomial = ^.asInstanceOf[js.Dynamic].applyDynamic("ConvertCubeMapToSphericalPolynomial")(cubeInfo.asInstanceOf[js.Any]).asInstanceOf[SphericalPolynomial]
   
+  /** @internal */
+  @JSImport("babylonjs/Misc/index", "CubeMapToSphericalPolynomialTools.MAX_HDRI_VALUE")
+  @js.native
+  def MAX_HDRI_VALUE: Double = js.native
+  inline def MAX_HDRI_VALUE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MAX_HDRI_VALUE")(x.asInstanceOf[js.Any])
+  
+  /** @internal */
+  @JSImport("babylonjs/Misc/index", "CubeMapToSphericalPolynomialTools.PRESERVE_CLAMPED_COLORS")
+  @js.native
+  def PRESERVE_CLAMPED_COLORS: Boolean = js.native
+  inline def PRESERVE_CLAMPED_COLORS_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PRESERVE_CLAMPED_COLORS")(x.asInstanceOf[js.Any])
+  
   /**
     * Compute the area on the unit sphere of the rectangle defined by (x,y) and the origin
     * See https://www.rorydriscoll.com/2012/01/15/cubemap-texel-solid-angle/

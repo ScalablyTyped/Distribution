@@ -1,7 +1,7 @@
 
 # Scala.js typings for fabric
 
-Typings are for version 4.5
+Typings are for version 5.3
 
 ## Library description:
 Object model for HTML5 canvas, and SVG-to-canvas parser. Backed by jsdom and node-canvas.

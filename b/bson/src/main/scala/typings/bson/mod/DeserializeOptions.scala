@@ -7,41 +7,55 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DeserializeOptions extends StObject {
   
-  /** allows the buffer to be larger than the parsed BSON object */
+  /**
+    * allows the buffer to be larger than the parsed BSON object.
+    * @defaultValue `false`
+    */
   var allowObjectSmallerThanBufferSize: js.UndefOr[Boolean] = js.undefined
   
-  /** return BSON regular expressions as BSONRegExp instances. */
+  /**
+    * return BSON regular expressions as BSONRegExp instances.
+    * @defaultValue `false`
+    */
   var bsonRegExp: js.UndefOr[Boolean] = js.undefined
   
-  /** cache evaluated functions for reuse. */
-  var cacheFunctions: js.UndefOr[Boolean] = js.undefined
-  
   /**
-    * use a crc32 code for caching, otherwise use the string of the function.
-    * @deprecated this option to use the crc32 function never worked as intended
-    * due to the fact that the crc32 function itself was never implemented.
-    * */
-  var cacheFunctionsCrc32: js.UndefOr[Boolean] = js.undefined
-  
-  /** evaluate functions in the BSON document scoped to the object deserialized. */
-  var evalFunctions: js.UndefOr[Boolean] = js.undefined
-  
-  /** allow to specify if there what fields we wish to return as unserialized raw buffer. */
+    * allow to specify if there what fields we wish to return as unserialized raw buffer.
+    * @defaultValue `null`
+    */
   var fieldsAsRaw: js.UndefOr[Document] = js.undefined
   
-  /** Offset into buffer to begin reading document from */
+  /**
+    * Offset into buffer to begin reading document from
+    * @defaultValue `0`
+    */
   var index: js.UndefOr[scala.Double] = js.undefined
   
-  /** when deserializing a Binary will return it as a node.js Buffer instance. */
+  /**
+    * when deserializing a Binary will return it as a node.js Buffer instance.
+    * @defaultValue `false`
+    */
   var promoteBuffers: js.UndefOr[Boolean] = js.undefined
   
-  /** when deserializing a Long will fit it into a Number if it's smaller than 53 bits */
+  /**
+    * when deserializing a Long will fit it into a Number if it's smaller than 53 bits.
+    * @defaultValue `true`
+    */
   var promoteLongs: js.UndefOr[Boolean] = js.undefined
   
-  /** when deserializing will promote BSON values to their Node.js closest equivalent types. */
+  /**
+    * when deserializing will promote BSON values to their Node.js closest equivalent types.
+    * @defaultValue `true`
+    */
   var promoteValues: js.UndefOr[Boolean] = js.undefined
   
   var raw: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * when deserializing a Long return as a BigInt.
+    * @defaultValue `false`
+    */
+  var useBigInt64: js.UndefOr[Boolean] = js.undefined
   
   /** Allows for opt-out utf-8 validation for all keys or
     * specified keys. Must be all true or all false.
@@ -78,18 +92,6 @@ object DeserializeOptions {
     
     inline def setBsonRegExpUndefined: Self = StObject.set(x, "bsonRegExp", js.undefined)
     
-    inline def setCacheFunctions(value: Boolean): Self = StObject.set(x, "cacheFunctions", value.asInstanceOf[js.Any])
-    
-    inline def setCacheFunctionsCrc32(value: Boolean): Self = StObject.set(x, "cacheFunctionsCrc32", value.asInstanceOf[js.Any])
-    
-    inline def setCacheFunctionsCrc32Undefined: Self = StObject.set(x, "cacheFunctionsCrc32", js.undefined)
-    
-    inline def setCacheFunctionsUndefined: Self = StObject.set(x, "cacheFunctions", js.undefined)
-    
-    inline def setEvalFunctions(value: Boolean): Self = StObject.set(x, "evalFunctions", value.asInstanceOf[js.Any])
-    
-    inline def setEvalFunctionsUndefined: Self = StObject.set(x, "evalFunctions", js.undefined)
-    
     inline def setFieldsAsRaw(value: Document): Self = StObject.set(x, "fieldsAsRaw", value.asInstanceOf[js.Any])
     
     inline def setFieldsAsRawUndefined: Self = StObject.set(x, "fieldsAsRaw", js.undefined)
@@ -113,6 +115,10 @@ object DeserializeOptions {
     inline def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     
     inline def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
+    
+    inline def setUseBigInt64(value: Boolean): Self = StObject.set(x, "useBigInt64", value.asInstanceOf[js.Any])
+    
+    inline def setUseBigInt64Undefined: Self = StObject.set(x, "useBigInt64", js.undefined)
     
     inline def setValidation(value: Utf8): Self = StObject.set(x, "validation", value.asInstanceOf[js.Any])
     

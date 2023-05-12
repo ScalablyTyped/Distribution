@@ -1,6 +1,7 @@
 package typings.itWs
 
 import typings.itStreamTypes.mod.Sink
+import typings.itStreamTypes.mod.Source
 import typings.ws.mod.WebSocket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,7 +13,7 @@ object distSrcSinkMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(socket: WebSocket, options: SinkOptions): Sink[js.typedarray.Uint8Array, js.Promise[Unit]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(socket.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Sink[js.typedarray.Uint8Array, js.Promise[Unit]]]
+  inline def default(socket: WebSocket, options: SinkOptions): Sink[Source[js.typedarray.Uint8Array], js.Promise[Unit]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(socket.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Sink[Source[js.typedarray.Uint8Array], js.Promise[Unit]]]
   
   trait SinkOptions extends StObject {
     

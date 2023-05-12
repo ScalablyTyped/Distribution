@@ -6,13 +6,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DeleteParametersPathInvitationidOwner extends StObject {
   
+  /** Delete a repository invitation */
   var delete: ParametersPathInvitationidOwner
   
-  var patch: RequestBodyContentApplicationjson254
+  /** Update a repository invitation */
+  var patch: Responses200Content210
 }
 object DeleteParametersPathInvitationidOwner {
   
-  inline def apply(delete: ParametersPathInvitationidOwner, patch: RequestBodyContentApplicationjson254): DeleteParametersPathInvitationidOwner = {
+  inline def apply(delete: ParametersPathInvitationidOwner, patch: Responses200Content210): DeleteParametersPathInvitationidOwner = {
     val __obj = js.Dynamic.literal(delete = delete.asInstanceOf[js.Any], patch = patch.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteParametersPathInvitationidOwner]
   }
@@ -22,6 +24,6 @@ object DeleteParametersPathInvitationidOwner {
     
     inline def setDelete(value: ParametersPathInvitationidOwner): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
     
-    inline def setPatch(value: RequestBodyContentApplicationjson254): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
+    inline def setPatch(value: Responses200Content210): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
   }
 }

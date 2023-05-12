@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class TabInputWebview protected () extends StObject {
   /**
-    * Constructs a webview tab input with the given view type.
-    * @param viewType The type of webview. Maps to {@linkcode WebviewPanel.viewType WebviewPanel's viewType}
-    */
+  		 * Constructs a webview tab input with the given view type.
+  		 * @param viewType The type of webview. Maps to {@linkcode WebviewPanel.viewType WebviewPanel's viewType}
+  		 */
   def this(viewType: String) = this()
   
   /**
-    * The type of webview. Maps to {@linkcode WebviewPanel.viewType WebviewPanel's viewType}
-    */
+  		 * The type of webview. Maps to {@linkcode WebviewPanel.viewType WebviewPanel's viewType}
+  		 */
   val viewType: String = js.native
 }

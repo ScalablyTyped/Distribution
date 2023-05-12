@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@storybook/csf" : "0.0.1"
+      "@storybook/csf" : "0.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@storybook/csf" : "0.0.1"
+      "@storybook/csf" : "0.1.0"
     }
   ],
   "compile-devDependencies" : [

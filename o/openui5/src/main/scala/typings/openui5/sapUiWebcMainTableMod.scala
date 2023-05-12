@@ -2,7 +2,7 @@ package typings.openui5
 
 import typings.openui5.anon.PoppedColumns
 import typings.openui5.anon.PreviouslySelectedRows
-import typings.openui5.anon.Row
+import typings.openui5.anon.`15`
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -541,6 +541,8 @@ object sapUiWebcMainTableMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:loadMore loadMore} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -552,6 +554,8 @@ object sapUiWebcMainTableMod {
     mParameters: js.Object): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:popinChange popinChange} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -563,6 +567,8 @@ object sapUiWebcMainTableMod {
     mParameters: PoppedColumns): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:rowClick rowClick} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -571,9 +577,11 @@ object sapUiWebcMainTableMod {
     def fireRowClick(/**
       * Parameters to pass along with the event
       */
-    mParameters: Row): this.type = js.native
+    mParameters: `15`): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:selectionChange selectionChange} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining

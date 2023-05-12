@@ -1,5 +1,6 @@
 package typings.johnnyFive.mod
 
+import typings.johnnyFive.anon.Blue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -41,7 +42,7 @@ open class Led protected () extends StObject {
   
   var isRunning: Boolean = js.native
   
-  var mode: Double = js.native
+  var mode: PinMode = js.native
   
   def off(): this.type = js.native
   
@@ -73,6 +74,7 @@ object Led {
   open class Digits protected () extends StObject {
     def this(option: DigitsOption) = this()
     
+    // tslint:disable-next-line:unified-signatures
     def brightness(index: Double, value: Double): Unit = js.native
     def brightness(value: Double): Unit = js.native
     
@@ -83,6 +85,7 @@ object Led {
     
     var digitOrder: Double = js.native
     
+    // tslint:disable-next-line:unified-signatures
     def draw(index: Double, position: Double, character: Double): Unit = js.native
     def draw(position: Double, character: Double): Unit = js.native
     
@@ -101,22 +104,26 @@ object Led {
     def this(option: MatrixIC2Option) = this()
     def this(option: MatrixOption) = this()
     
+    // tslint:disable-next-line:unified-signatures
     def brightness(index: Double, value: Double): Unit = js.native
     def brightness(value: Double): Unit = js.native
     
     def clear(): Unit = js.native
     def clear(index: Double): Unit = js.native
     
+    // tslint:disable-next-line:unified-signatures
     def column(index: Double, row: Double, `val`: Double): Unit = js.native
     def column(row: Double, `val`: Double): Unit = js.native
     
     val devices: Double = js.native
     
+    // tslint:disable-next-line:unified-signatures
     def draw(index: Double, position: Double, character: Double): Unit = js.native
     def draw(position: Double, character: Double): Unit = js.native
     
     val isMatrix: Boolean = js.native
     
+    // tslint:disable-next-line:unified-signatures
     def led(index: Double, row: Double, col: Double, state: Any): Unit = js.native
     def led(row: Double, col: Double, state: Any): Unit = js.native
     
@@ -126,6 +133,7 @@ object Led {
     def on(): Unit = js.native
     def on(index: Double): Unit = js.native
     
+    // tslint:disable-next-line:unified-signatures
     def row(index: Double, row: Double, `val`: Double): Unit = js.native
     def row(row: Double, `val`: Double): Unit = js.native
   }
@@ -134,6 +142,8 @@ object Led {
   @js.native
   open class RGB protected () extends StObject {
     def this(option: RGBOption) = this()
+    
+    def blink(ms: Double): Unit = js.native
     
     var blue: Led = js.native
     
@@ -166,6 +176,8 @@ object Led {
   
   trait DigitsOption extends StObject {
     
+    var board: js.UndefOr[Board] = js.undefined
+    
     var controller: js.UndefOr[String] = js.undefined
     
     var devices: js.UndefOr[Double] = js.undefined
@@ -182,6 +194,10 @@ object Led {
     @scala.inline
     implicit open class MutableBuilder[Self <: DigitsOption] (val x: Self) extends AnyVal {
       
+      inline def setBoard(value: Board): Self = StObject.set(x, "board", value.asInstanceOf[js.Any])
+      
+      inline def setBoardUndefined: Self = StObject.set(x, "board", js.undefined)
+      
       inline def setController(value: String): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
       
       inline def setControllerUndefined: Self = StObject.set(x, "controller", js.undefined)
@@ -197,6 +213,8 @@ object Led {
   trait MatrixIC2Option extends StObject {
     
     var addresses: js.UndefOr[js.Array[Any]] = js.undefined
+    
+    var board: js.UndefOr[Board] = js.undefined
     
     var controller: String
     
@@ -222,6 +240,10 @@ object Led {
       
       inline def setAddressesVarargs(value: Any*): Self = StObject.set(x, "addresses", js.Array(value*))
       
+      inline def setBoard(value: Board): Self = StObject.set(x, "board", value.asInstanceOf[js.Any])
+      
+      inline def setBoardUndefined: Self = StObject.set(x, "board", js.undefined)
+      
       inline def setController(value: String): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
       
       inline def setDims(value: Any): Self = StObject.set(x, "dims", value.asInstanceOf[js.Any])
@@ -240,6 +262,8 @@ object Led {
   
   trait MatrixOption extends StObject {
     
+    var board: js.UndefOr[Board] = js.undefined
+    
     var devices: js.UndefOr[Double] = js.undefined
     
     var pins: Any
@@ -254,6 +278,10 @@ object Led {
     @scala.inline
     implicit open class MutableBuilder[Self <: MatrixOption] (val x: Self) extends AnyVal {
       
+      inline def setBoard(value: Board): Self = StObject.set(x, "board", value.asInstanceOf[js.Any])
+      
+      inline def setBoardUndefined: Self = StObject.set(x, "board", js.undefined)
+      
       inline def setDevices(value: Double): Self = StObject.set(x, "devices", value.asInstanceOf[js.Any])
       
       inline def setDevicesUndefined: Self = StObject.set(x, "devices", js.undefined)
@@ -264,21 +292,27 @@ object Led {
   
   trait RGBOption extends StObject {
     
+    var board: js.UndefOr[Board] = js.undefined
+    
     var controller: js.UndefOr[String] = js.undefined
     
     var isAnode: js.UndefOr[Boolean] = js.undefined
     
-    var pins: js.Array[Double]
+    var pins: js.Array[Double] | Blue
   }
   object RGBOption {
     
-    inline def apply(pins: js.Array[Double]): RGBOption = {
+    inline def apply(pins: js.Array[Double] | Blue): RGBOption = {
       val __obj = js.Dynamic.literal(pins = pins.asInstanceOf[js.Any])
       __obj.asInstanceOf[RGBOption]
     }
     
     @scala.inline
     implicit open class MutableBuilder[Self <: RGBOption] (val x: Self) extends AnyVal {
+      
+      inline def setBoard(value: Board): Self = StObject.set(x, "board", value.asInstanceOf[js.Any])
+      
+      inline def setBoardUndefined: Self = StObject.set(x, "board", js.undefined)
       
       inline def setController(value: String): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
       
@@ -288,7 +322,7 @@ object Led {
       
       inline def setIsAnodeUndefined: Self = StObject.set(x, "isAnode", js.undefined)
       
-      inline def setPins(value: js.Array[Double]): Self = StObject.set(x, "pins", value.asInstanceOf[js.Any])
+      inline def setPins(value: js.Array[Double] | Blue): Self = StObject.set(x, "pins", value.asInstanceOf[js.Any])
       
       inline def setPinsVarargs(value: Double*): Self = StObject.set(x, "pins", js.Array(value*))
     }

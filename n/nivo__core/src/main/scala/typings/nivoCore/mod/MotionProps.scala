@@ -1,17 +1,16 @@
 package typings.nivoCore.mod
 
+import typings.reactSpringCore.mod.SpringConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Partial<{  animate :boolean,   motionDamping :number,   motionStiffness :number}> */
+/* Inlined std.Partial<{  animate :boolean,   motionConfig :string | @react-spring/web.@react-spring/web.SpringConfig}> */
 trait MotionProps extends StObject {
   
   var animate: js.UndefOr[Boolean] = js.undefined
   
-  var motionDamping: js.UndefOr[Double] = js.undefined
-  
-  var motionStiffness: js.UndefOr[Double] = js.undefined
+  var motionConfig: js.UndefOr[String | SpringConfig] = js.undefined
 }
 object MotionProps {
   
@@ -27,12 +26,8 @@ object MotionProps {
     
     inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
     
-    inline def setMotionDamping(value: Double): Self = StObject.set(x, "motionDamping", value.asInstanceOf[js.Any])
+    inline def setMotionConfig(value: String | SpringConfig): Self = StObject.set(x, "motionConfig", value.asInstanceOf[js.Any])
     
-    inline def setMotionDampingUndefined: Self = StObject.set(x, "motionDamping", js.undefined)
-    
-    inline def setMotionStiffness(value: Double): Self = StObject.set(x, "motionStiffness", value.asInstanceOf[js.Any])
-    
-    inline def setMotionStiffnessUndefined: Self = StObject.set(x, "motionStiffness", js.undefined)
+    inline def setMotionConfigUndefined: Self = StObject.set(x, "motionConfig", js.undefined)
   }
 }

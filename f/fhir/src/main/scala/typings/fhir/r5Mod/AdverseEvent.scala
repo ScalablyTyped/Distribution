@@ -19,6 +19,8 @@ trait AdverseEvent
   
   var _detected: js.UndefOr[Element] = js.undefined
   
+  var _expectedInResearchStudy: js.UndefOr[Element] = js.undefined
+  
   var _occurrenceDateTime: js.UndefOr[Element] = js.undefined
   
   var _recordedDate: js.UndefOr[Element] = js.undefined
@@ -26,7 +28,7 @@ trait AdverseEvent
   var _status: js.UndefOr[Element] = js.undefined
   
   /**
-    * Whether the event actually happened, or just had the potential to. Note that this is independent of whether anyone was affected or harmed or how severely.
+    * AllergyIntolerance should be used for the initial capture or recording of the individual's propensity to an adverse reaction to a substance.  If an AllergyIntolerance does not exist, then an adverse reaction should be recorded as an AllergyIntolerance. If an AllergyIntolerance does exist and the substance was given, then an adverse reaction should be recorded as an AdverseEvent due to the aberrant workflow.
     */
   var actuality: actual | potential
   
@@ -56,6 +58,11 @@ trait AdverseEvent
   var encounter: js.UndefOr[Reference] = js.undefined
   
   /**
+    * Considered likely or probable or anticipated in the research study.  Whether the reported event matches any of the outcomes for the patient that are considered by the study as known or likely.
+    */
+  var expectedInResearchStudy: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * This is a business identifier, not a resource identifier (see [discussion](resource.html#identifiers)).  It is best practice for the identifier to only appear on a single resource instance, however business practices may occasionally dictate that multiple resource instances with the same identifier can exist - possibly even with different resource types.  For example, multiple Patient and a Person resource instance might share the same social insurance number.
     */
   var identifier: js.UndefOr[js.Array[Identifier]] = js.undefined
@@ -69,6 +76,11 @@ trait AdverseEvent
     * The ameliorating action taken after the adverse event occured in order to reduce the extent of harm.
     */
   var mitigatingAction: js.UndefOr[js.Array[AdverseEventMitigatingAction]] = js.undefined
+  
+  /**
+    * Comments made about the adverse event by the performer, subject or other participants.
+    */
+  var note: js.UndefOr[js.Array[Annotation]] = js.undefined
   
   /**
     * The date (and perhaps time) when the adverse event occurred.
@@ -117,10 +129,10 @@ trait AdverseEvent
   /**
     * Information about the condition that occurred as a result of the adverse event, such as hives due to the exposure to a substance (for example, a drug or a chemical) or a broken leg as a result of the fall.
     */
-  var resultingCondition: js.UndefOr[js.Array[Reference]] = js.undefined
+  var resultingEffect: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
-    * Using an example, a rash can have an AdverseEvent.resultingCondition.severity = severe, yet an AdverseEvent.seriousness = non-serious.  Alternatively, a medication given with the wrong dose (chemotherapy given with too low of a dose) can have an AdverseEvent.resultingCondition.severity = mild, yet a AdverseEvent.seriousness = serious.  Another example would be a beta blocker clinical trial where patients with asthma should be excluded, yet a patient with asthma was included and had an asthmatic episode where  AdverseEvent.resultingCondition.severity = mild, yet a AdverseEvent.seriousness = serious.
+    * Using an example, a rash can have an AdverseEvent.resultingEffect.severity = severe, yet an AdverseEvent.seriousness = non-serious.  Alternatively, a medication given with the wrong dose (chemotherapy given with too low of a dose) can have an AdverseEvent.resultingEffect.severity = mild, yet an adverseEvent.seriousness = serious.  Another example would be a beta blocker clinical trial where patients with asthma should be excluded, yet a patient with asthma was included and had an asthmatic episode where  AdverseEvent.resultingEffect.severity = mild, yet an adverseEvent.seriousness = serious.
     */
   var seriousness: js.UndefOr[CodeableConcept] = js.undefined
   
@@ -135,7 +147,7 @@ trait AdverseEvent
   var study: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
-    * If AdverseEvent.resultingCondition differs among members of the group, then use Patient as the subject.
+    * If AdverseEvent.resultingEffect differs among members of the group, then use Patient as the subject.
     */
   var subject: Reference
   
@@ -189,6 +201,10 @@ object AdverseEvent {
     
     inline def setEncounterUndefined: Self = StObject.set(x, "encounter", js.undefined)
     
+    inline def setExpectedInResearchStudy(value: Boolean): Self = StObject.set(x, "expectedInResearchStudy", value.asInstanceOf[js.Any])
+    
+    inline def setExpectedInResearchStudyUndefined: Self = StObject.set(x, "expectedInResearchStudy", js.undefined)
+    
     inline def setIdentifier(value: js.Array[Identifier]): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
     inline def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
@@ -204,6 +220,12 @@ object AdverseEvent {
     inline def setMitigatingActionUndefined: Self = StObject.set(x, "mitigatingAction", js.undefined)
     
     inline def setMitigatingActionVarargs(value: AdverseEventMitigatingAction*): Self = StObject.set(x, "mitigatingAction", js.Array(value*))
+    
+    inline def setNote(value: js.Array[Annotation]): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
+    
+    inline def setNoteUndefined: Self = StObject.set(x, "note", js.undefined)
+    
+    inline def setNoteVarargs(value: Annotation*): Self = StObject.set(x, "note", js.Array(value*))
     
     inline def setOccurrenceDateTime(value: String): Self = StObject.set(x, "occurrenceDateTime", value.asInstanceOf[js.Any])
     
@@ -245,11 +267,11 @@ object AdverseEvent {
     
     inline def setResourceType(value: typings.fhir.fhirStrings.AdverseEvent): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
-    inline def setResultingCondition(value: js.Array[Reference]): Self = StObject.set(x, "resultingCondition", value.asInstanceOf[js.Any])
+    inline def setResultingEffect(value: js.Array[Reference]): Self = StObject.set(x, "resultingEffect", value.asInstanceOf[js.Any])
     
-    inline def setResultingConditionUndefined: Self = StObject.set(x, "resultingCondition", js.undefined)
+    inline def setResultingEffectUndefined: Self = StObject.set(x, "resultingEffect", js.undefined)
     
-    inline def setResultingConditionVarargs(value: Reference*): Self = StObject.set(x, "resultingCondition", js.Array(value*))
+    inline def setResultingEffectVarargs(value: Reference*): Self = StObject.set(x, "resultingEffect", js.Array(value*))
     
     inline def setSeriousness(value: CodeableConcept): Self = StObject.set(x, "seriousness", value.asInstanceOf[js.Any])
     
@@ -284,6 +306,10 @@ object AdverseEvent {
     inline def set_detected(value: Element): Self = StObject.set(x, "_detected", value.asInstanceOf[js.Any])
     
     inline def set_detectedUndefined: Self = StObject.set(x, "_detected", js.undefined)
+    
+    inline def set_expectedInResearchStudy(value: Element): Self = StObject.set(x, "_expectedInResearchStudy", value.asInstanceOf[js.Any])
+    
+    inline def set_expectedInResearchStudyUndefined: Self = StObject.set(x, "_expectedInResearchStudy", js.undefined)
     
     inline def set_occurrenceDateTime(value: Element): Self = StObject.set(x, "_occurrenceDateTime", value.asInstanceOf[js.Any])
     

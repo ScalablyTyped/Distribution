@@ -1,7 +1,7 @@
 
 # Scala.js typings for axios-case-converter
 
-Typings are for version 0.11.1
+Typings are for version 1.1.0
 
 ## Library description:
 Axios transformer/interceptor that converts snake_case/camelCase

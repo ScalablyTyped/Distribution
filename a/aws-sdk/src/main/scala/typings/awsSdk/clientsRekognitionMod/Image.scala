@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Image extends StObject {
   
   /**
-    * Blob of image bytes up to 5 MBs.
+    * Blob of image bytes up to 5 MBs. Note that the maximum image size you can pass to DetectCustomLabels is 4MB. 
     */
   var Bytes: js.UndefOr[ImageBlob] = js.undefined
   

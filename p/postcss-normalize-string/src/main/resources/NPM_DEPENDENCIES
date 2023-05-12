@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "postcss-normalize-string" : "5.1.0"
+      "postcss-normalize-string" : "6.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "postcss-normalize-string" : "5.1.0"
+      "postcss-normalize-string" : "6.0.0"
     }
   ],
   "compile-devDependencies" : [

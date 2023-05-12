@@ -180,7 +180,30 @@ object dxPopup {
     }
   }
   
-  type ToolbarItem = dxPopupToolbarItem
+  trait ToolbarItem
+    extends StObject
+       with dxToolbarItem {
+    
+    /**
+      * 
+      */
+    var toolbar: js.UndefOr[ToolbarLocation] = js.undefined
+  }
+  object ToolbarItem {
+    
+    inline def apply(): ToolbarItem = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ToolbarItem]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToolbarItem] (val x: Self) extends AnyVal {
+      
+      inline def setToolbar(value: ToolbarLocation): Self = StObject.set(x, "toolbar", value.asInstanceOf[js.Any])
+      
+      inline def setToolbarUndefined: Self = StObject.set(x, "toolbar", js.undefined)
+    }
+  }
   
   /* Rewritten from type alias, can be one of: 
     - typings.devextreme.devextremeStrings.bottom
@@ -193,4 +216,6 @@ object dxPopup {
     
     inline def top: typings.devextreme.devextremeStrings.top = "top".asInstanceOf[typings.devextreme.devextremeStrings.top]
   }
+  
+  type dxPopupToolbarItem = ToolbarItem
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EngineTranscribeMedicalSettings extends StObject {
   
   /**
-    * Set this field to PHI to identify personal health information in the transcription output.
+    * Labels all personally identifiable information (PII) identified in your transcript. If you don't include PiiEntityTypes, all PII is identified. You can’t set ContentIdentificationType and ContentRedactionType.
     */
   var ContentIdentificationType: js.UndefOr[TranscribeMedicalContentIdentificationType] = js.undefined
   

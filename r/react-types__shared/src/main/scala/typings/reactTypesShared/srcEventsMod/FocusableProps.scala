@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FocusableProps
+trait FocusableProps[Target]
   extends StObject
-     with FocusEvents
+     with FocusEvents[Target]
      with KeyboardEvents {
   
   /** Whether the element should receive focus on render. */
@@ -14,13 +14,13 @@ trait FocusableProps
 }
 object FocusableProps {
   
-  inline def apply(): FocusableProps = {
+  inline def apply[Target](): FocusableProps[Target] = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[FocusableProps]
+    __obj.asInstanceOf[FocusableProps[Target]]
   }
   
   @scala.inline
-  implicit open class MutableBuilder[Self <: FocusableProps] (val x: Self) extends AnyVal {
+  implicit open class MutableBuilder[Self <: FocusableProps[?], Target] (val x: Self & FocusableProps[Target]) extends AnyVal {
     
     inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
     

@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Event message for 'progressStart' event type.
 		The event signals that a long running operation is about to start and provides additional information for the client to set up a corresponding progress and cancellation UI.
 		The client is free to delay the showing of the UI in order to reduce flicker.
-		This event should only be sent if the corresponding capability `supportsProgressReporting` is true
+		This event should only be sent if the corresponding capability `supportsProgressReporting` is true.
 	*/
 trait ProgressStartEvent
   extends StObject

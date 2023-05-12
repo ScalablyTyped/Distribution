@@ -3,14 +3,13 @@ package typings.rcTable.anon
 import typings.rcTable.libInterfaceMod.ColumnGroupType
 import typings.rcTable.libInterfaceMod.ColumnType
 import typings.rcTable.libInterfaceMod.ColumnsType
+import typings.rcTable.libInterfaceMod.Direction
 import typings.rcTable.libInterfaceMod.FixedType
 import typings.rcTable.libInterfaceMod.GetRowKey
 import typings.rcTable.libInterfaceMod.Key
 import typings.rcTable.libInterfaceMod.RenderExpandIcon
 import typings.rcTable.libInterfaceMod.RenderExpandIconProps
 import typings.rcTable.libInterfaceMod.TriggerEventHandler
-import typings.rcTable.rcTableStrings.ltr
-import typings.rcTable.rcTableStrings.rtl
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactNode
@@ -30,7 +29,7 @@ trait ColumnTitle[RecordType] extends StObject {
   
   var columns: js.UndefOr[ColumnsType[RecordType]] = js.undefined
   
-  var direction: js.UndefOr[ltr | rtl] = js.undefined
+  var direction: js.UndefOr[Direction] = js.undefined
   
   var expandIcon: js.UndefOr[RenderExpandIcon[RecordType]] = js.undefined
   
@@ -85,7 +84,7 @@ object ColumnTitle {
     
     inline def setColumnsVarargs(value: (ColumnGroupType[RecordType] | ColumnType[RecordType])*): Self = StObject.set(x, "columns", js.Array(value*))
     
-    inline def setDirection(value: ltr | rtl): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: Direction): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
     inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     

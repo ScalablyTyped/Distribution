@@ -19,12 +19,12 @@ trait InstanceSpecification extends StObject {
   /**
     * The instance to specify which volumes should be snapshotted.
     */
-  var InstanceId: js.UndefOr[typings.awsSdk.clientsEc2Mod.InstanceId] = js.undefined
+  var InstanceId: InstanceIdWithVolumeResolver
 }
 object InstanceSpecification {
   
-  inline def apply(): InstanceSpecification = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(InstanceId: InstanceIdWithVolumeResolver): InstanceSpecification = {
+    val __obj = js.Dynamic.literal(InstanceId = InstanceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceSpecification]
   }
   
@@ -41,8 +41,6 @@ object InstanceSpecification {
     
     inline def setExcludeDataVolumeIdsVarargs(value: VolumeId*): Self = StObject.set(x, "ExcludeDataVolumeIds", js.Array(value*))
     
-    inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
-    
-    inline def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
+    inline def setInstanceId(value: InstanceIdWithVolumeResolver): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
   }
 }

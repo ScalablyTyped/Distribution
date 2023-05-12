@@ -1,6 +1,6 @@
 package typings.three.global.THREE
 
-import typings.three.srcUtilsMod.ColorRepresentation
+import typings.three.srcMathColorMod.ColorRepresentation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,6 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class PointLightHelper protected ()
   extends typings.three.mod.PointLightHelper {
+  /**
+    * Create a new instance of {@link PointLightHelper}
+    * @param light The light to be visualized.
+    * @param sphereSize The size of the sphere helper. Expects a `Float`. Default `1`
+    * @param color If this is not the set the helper will take the color of the light.
+    */
   def this(light: typings.three.srcLightsPointLightMod.PointLight) = this()
   def this(light: typings.three.srcLightsPointLightMod.PointLight, sphereSize: Double) = this()
   def this(

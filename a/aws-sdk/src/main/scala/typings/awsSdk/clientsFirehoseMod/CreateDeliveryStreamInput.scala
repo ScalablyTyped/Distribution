@@ -6,6 +6,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CreateDeliveryStreamInput extends StObject {
   
+  /**
+    * The destination in the Serverless offering for Amazon OpenSearch Service. You can specify only one destination.
+    */
+  var AmazonOpenSearchServerlessDestinationConfiguration: js.UndefOr[
+    typings.awsSdk.clientsFirehoseMod.AmazonOpenSearchServerlessDestinationConfiguration
+  ] = js.undefined
+  
+  /**
+    * The destination in Amazon OpenSearch Service. You can specify only one destination.
+    */
   var AmazonopensearchserviceDestinationConfiguration: js.UndefOr[
     typings.awsSdk.clientsFirehoseMod.AmazonopensearchserviceDestinationConfiguration
   ] = js.undefined
@@ -16,7 +26,7 @@ trait CreateDeliveryStreamInput extends StObject {
   var DeliveryStreamEncryptionConfigurationInput: js.UndefOr[typings.awsSdk.clientsFirehoseMod.DeliveryStreamEncryptionConfigurationInput] = js.undefined
   
   /**
-    * The name of the delivery stream. This name must be unique per AWS account in the same AWS Region. If the delivery streams are in different accounts or different Regions, you can have multiple delivery streams with the same name.
+    * The name of the delivery stream. This name must be unique per Amazon Web Services account in the same Amazon Web Services Region. If the delivery streams are in different accounts or different Regions, you can have multiple delivery streams with the same name.
     */
   var DeliveryStreamName: typings.awsSdk.clientsFirehoseMod.DeliveryStreamName
   
@@ -61,7 +71,7 @@ trait CreateDeliveryStreamInput extends StObject {
   var SplunkDestinationConfiguration: js.UndefOr[typings.awsSdk.clientsFirehoseMod.SplunkDestinationConfiguration] = js.undefined
   
   /**
-    * A set of tags to assign to the delivery stream. A tag is a key-value pair that you can define and assign to AWS resources. Tags are metadata. For example, you can add friendly names and descriptions or other types of information that can help you distinguish the delivery stream. For more information about tags, see Using Cost Allocation Tags in the AWS Billing and Cost Management User Guide. You can specify up to 50 tags when creating a delivery stream.
+    * A set of tags to assign to the delivery stream. A tag is a key-value pair that you can define and assign to Amazon Web Services resources. Tags are metadata. For example, you can add friendly names and descriptions or other types of information that can help you distinguish the delivery stream. For more information about tags, see Using Cost Allocation Tags in the Amazon Web Services Billing and Cost Management User Guide. You can specify up to 50 tags when creating a delivery stream.
     */
   var Tags: js.UndefOr[TagDeliveryStreamInputTagList] = js.undefined
 }
@@ -74,6 +84,10 @@ object CreateDeliveryStreamInput {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: CreateDeliveryStreamInput] (val x: Self) extends AnyVal {
+    
+    inline def setAmazonOpenSearchServerlessDestinationConfiguration(value: AmazonOpenSearchServerlessDestinationConfiguration): Self = StObject.set(x, "AmazonOpenSearchServerlessDestinationConfiguration", value.asInstanceOf[js.Any])
+    
+    inline def setAmazonOpenSearchServerlessDestinationConfigurationUndefined: Self = StObject.set(x, "AmazonOpenSearchServerlessDestinationConfiguration", js.undefined)
     
     inline def setAmazonopensearchserviceDestinationConfiguration(value: AmazonopensearchserviceDestinationConfiguration): Self = StObject.set(x, "AmazonopensearchserviceDestinationConfiguration", value.asInstanceOf[js.Any])
     

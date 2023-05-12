@@ -96,6 +96,8 @@ type ClientRequestToken = java.lang.String
 
 type Content = java.lang.String
 
+type ContentType = java.lang.String
+
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.BadRequest
   - typings.awsSdk.awsSdkStrings.Conflict_
@@ -115,6 +117,15 @@ type Content = java.lang.String
   - java.lang.String
 */
 type ErrorCode = _ErrorCode | java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.CREATED_TIMESTAMP
+  - typings.awsSdk.awsSdkStrings.LAST_MESSAGE_TIMESTAMP
+  - java.lang.String
+*/
+type ExpirationCriterion = _ExpirationCriterion | java.lang.String
+
+type ExpirationDays = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CONTINUE
@@ -148,6 +159,13 @@ type MessageAttributeStringValue = java.lang.String
 type MessageAttributeStringValues = js.Array[MessageAttributeStringValue]
 
 type MessageId = java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.Channel_
+  - typings.awsSdk.awsSdkStrings.ChannelMessage
+  - java.lang.String
+*/
+type MessagingDataType = _MessagingDataType | java.lang.String
 
 type Metadata = java.lang.String
 
@@ -199,6 +217,8 @@ type SearchFields = js.Array[SearchField]
 type SortOrder = _SortOrder | java.lang.String
 
 type StatusDetail = java.lang.String
+
+type StreamingConfigurationList = js.Array[StreamingConfiguration]
 
 type String = java.lang.String
 

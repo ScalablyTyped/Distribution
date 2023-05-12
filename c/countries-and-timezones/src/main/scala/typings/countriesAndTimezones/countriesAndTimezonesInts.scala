@@ -19,6 +19,10 @@ object countriesAndTimezonesInts {
   inline def `-180`: `-180` = -180.asInstanceOf[`-180`]
   
   @js.native
+  sealed trait `-210` extends StObject
+  inline def `-210`: `-210` = -210.asInstanceOf[`-210`]
+  
+  @js.native
   sealed trait `-240` extends StObject
   inline def `-240`: `-240` = -240.asInstanceOf[`-240`]
   
@@ -39,12 +43,12 @@ object countriesAndTimezonesInts {
   inline def `-480`: `-480` = -480.asInstanceOf[`-480`]
   
   @js.native
-  sealed trait `-510` extends StObject
-  inline def `-510`: `-510` = -510.asInstanceOf[`-510`]
-  
-  @js.native
   sealed trait `-540` extends StObject
   inline def `-540`: `-540` = -540.asInstanceOf[`-540`]
+  
+  @js.native
+  sealed trait `-570` extends StObject
+  inline def `-570`: `-570` = -570.asInstanceOf[`-570`]
   
   @js.native
   sealed trait `-60` extends StObject
@@ -61,10 +65,6 @@ object countriesAndTimezonesInts {
   @js.native
   sealed trait `-720` extends StObject
   inline def `-720`: `-720` = -720.asInstanceOf[`-720`]
-  
-  @js.native
-  sealed trait `-90` extends StObject
-  inline def `-90`: `-90` = -90.asInstanceOf[`-90`]
   
   @js.native
   sealed trait `0` extends StObject

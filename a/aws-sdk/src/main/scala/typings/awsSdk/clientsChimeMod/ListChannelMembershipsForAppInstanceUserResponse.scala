@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListChannelMembershipsForAppInstanceUserResponse extends StObject {
   
   /**
-    * The token passed by previous API calls until all requested users are returned.
+    * The information for the requested channel memberships.
     */
   var ChannelMemberships: js.UndefOr[ChannelMembershipForAppInstanceUserSummaryList] = js.undefined
   

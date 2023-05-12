@@ -11,39 +11,57 @@ object domObjectsBoundsMod {
   /** @ignore */
   open class Bounds () extends StObject {
     
-    /**
-      * Coordinates of the bottom edge
-      */
-    var bottom: Double = js.native
+    /* private */ var _bottom: Any = js.native
+    
+    /* private */ var _left: Any = js.native
+    
+    /* private */ var _right: Any = js.native
+    
+    /* private */ var _top: Any = js.native
     
     /**
-      * Calculated height
+      * Coordinate of the bottom edge.
+      * @minVersion 22.5
+      */
+    def bottom: Double = js.native
+    def bottom_=(coordinate: Double): Unit = js.native
+    
+    /**
+      * Calculated height.
+      * @minVersion 22.5
       */
     def height: Double = js.native
     
     /**
-      * Coordinates of the left edge
+      * Coordinate of the left edge.
+      * @minVersion 22.5
       */
-    var left: Double = js.native
+    def left: Double = js.native
+    def left_=(coordinate: Double): Unit = js.native
     
     /**
-      * Coordinates of the right edge
+      * Coordinate of the right edge.
+      * @minVersion 22.5
       */
-    var right: Double = js.native
+    def right: Double = js.native
+    def right_=(coordinate: Double): Unit = js.native
     
     /**
-      * Coordinates of the top edge
+      * Coordinate of the top edge.
+      * @minVersion 22.5
       */
-    var top: Double = js.native
+    def top: Double = js.native
+    def top_=(coordinate: Double): Unit = js.native
     
     /**
-      * The class name of the referenced object
-      * @default "Bounds"
+      * The class name of the referenced object: *"Bounds"*.
+      * @minVersion 22.5
       */
-    val typename: String = js.native
+    def typename: typings.photoshop.photoshopStrings.Bounds = js.native
     
     /**
-      * Calculated width
+      * Calculated width.
+      * @minVersion 22.5
       */
     def width: Double = js.native
   }

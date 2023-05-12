@@ -4,14 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The <code>MapTypeStyle</code> is a collection of selectors and stylers that
-  * define how the map should be styled. Selectors specify the map features
-  * and/or elements that should be affected, and stylers specify how those
-  * features and elements should be modified. For details, see the <a
-  * href="https://developers.google.com/maps/documentation/javascript/style-reference">style
-  * reference</a>.
-  */
 trait MapTypeStyle extends StObject {
   
   /**

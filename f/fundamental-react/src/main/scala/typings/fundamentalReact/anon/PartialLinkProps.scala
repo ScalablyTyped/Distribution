@@ -66,6 +66,8 @@ import typings.react.mod.FocusEvent
 import typings.react.mod.FocusEventHandler
 import typings.react.mod.FormEvent
 import typings.react.mod.FormEventHandler
+import typings.react.mod.HTMLAttributeAnchorTarget
+import typings.react.mod.HTMLAttributeReferrerPolicy
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.KeyboardEventHandler
 import typings.react.mod.MouseEvent
@@ -202,6 +204,8 @@ trait PartialLinkProps extends StObject {
   
   var autoCorrect: js.UndefOr[String] = js.undefined
   
+  var autoFocus: js.UndefOr[Boolean] = js.undefined
+  
   var autoSave: js.UndefOr[String] = js.undefined
   
   var children: js.UndefOr[ReactNode] = js.undefined
@@ -209,6 +213,8 @@ trait PartialLinkProps extends StObject {
   var className: js.UndefOr[String] = js.undefined
   
   var color: js.UndefOr[String] = js.undefined
+  
+  var content: js.UndefOr[String] = js.undefined
   
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
   
@@ -228,11 +234,15 @@ trait PartialLinkProps extends StObject {
   
   var disabled: js.UndefOr[Boolean] = js.undefined
   
+  var download: js.UndefOr[Any] = js.undefined
+  
   var draggable: js.UndefOr[Booleanish] = js.undefined
   
   var hidden: js.UndefOr[Boolean] = js.undefined
   
   var href: js.UndefOr[String] = js.undefined
+  
+  var hrefLang: js.UndefOr[String] = js.undefined
   
   var id: js.UndefOr[String] = js.undefined
   
@@ -253,6 +263,8 @@ trait PartialLinkProps extends StObject {
   var itemType: js.UndefOr[String] = js.undefined
   
   var lang: js.UndefOr[String] = js.undefined
+  
+  var media: js.UndefOr[String] = js.undefined
   
   var nonce: js.UndefOr[String] = js.undefined
   
@@ -416,6 +428,8 @@ trait PartialLinkProps extends StObject {
   
   var onWheel: js.UndefOr[WheelEventHandler[HTMLAnchorElement]] = js.undefined
   
+  var ping: js.UndefOr[String] = js.undefined
+  
   var placeholder: js.UndefOr[String] = js.undefined
   
   var prefix: js.UndefOr[String] = js.undefined
@@ -426,9 +440,15 @@ trait PartialLinkProps extends StObject {
   
   var ref: js.UndefOr[Ref[HTMLAnchorElement]] = js.undefined
   
+  var referrerPolicy: js.UndefOr[HTMLAttributeReferrerPolicy] = js.undefined
+  
+  var rel: js.UndefOr[String] = js.undefined
+  
   var resource: js.UndefOr[String] = js.undefined
   
   var results: js.UndefOr[Double] = js.undefined
+  
+  var rev: js.UndefOr[String] = js.undefined
   
   var role: js.UndefOr[AriaRole] = js.undefined
   
@@ -446,9 +466,13 @@ trait PartialLinkProps extends StObject {
   
   var tabIndex: js.UndefOr[Double] = js.undefined
   
+  var target: js.UndefOr[HTMLAttributeAnchorTarget] = js.undefined
+  
   var title: js.UndefOr[String] = js.undefined
   
   var translate: js.UndefOr[yes | no] = js.undefined
+  
+  var `type`: js.UndefOr[String] = js.undefined
   
   var typeof: js.UndefOr[String] = js.undefined
   
@@ -676,6 +700,10 @@ object PartialLinkProps {
     
     inline def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
     
+    inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+    
+    inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+    
     inline def setAutoSave(value: String): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
     
     inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
@@ -692,9 +720,13 @@ object PartialLinkProps {
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    
     inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
     
     inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+    
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
     inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
     
@@ -730,6 +762,10 @@ object PartialLinkProps {
     
     inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
+    inline def setDownload(value: Any): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
+    
+    inline def setDownloadUndefined: Self = StObject.set(x, "download", js.undefined)
+    
     inline def setDraggable(value: Booleanish): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
     
     inline def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
@@ -739,6 +775,10 @@ object PartialLinkProps {
     inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
     
     inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+    
+    inline def setHrefLang(value: String): Self = StObject.set(x, "hrefLang", value.asInstanceOf[js.Any])
+    
+    inline def setHrefLangUndefined: Self = StObject.set(x, "hrefLang", js.undefined)
     
     inline def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
     
@@ -781,6 +821,10 @@ object PartialLinkProps {
     inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
     
     inline def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
+    
+    inline def setMedia(value: String): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
+    
+    inline def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
     
     inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
     
@@ -1106,6 +1150,10 @@ object PartialLinkProps {
     
     inline def setOnWheelUndefined: Self = StObject.set(x, "onWheel", js.undefined)
     
+    inline def setPing(value: String): Self = StObject.set(x, "ping", value.asInstanceOf[js.Any])
+    
+    inline def setPingUndefined: Self = StObject.set(x, "ping", js.undefined)
+    
     inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     
     inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
@@ -1130,6 +1178,14 @@ object PartialLinkProps {
     
     inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
     
+    inline def setReferrerPolicy(value: HTMLAttributeReferrerPolicy): Self = StObject.set(x, "referrerPolicy", value.asInstanceOf[js.Any])
+    
+    inline def setReferrerPolicyUndefined: Self = StObject.set(x, "referrerPolicy", js.undefined)
+    
+    inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+    
+    inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+    
     inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
@@ -1137,6 +1193,10 @@ object PartialLinkProps {
     inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
     inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+    
+    inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+    
+    inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
     
     inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
@@ -1170,6 +1230,10 @@ object PartialLinkProps {
     
     inline def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
     
+    inline def setTarget(value: HTMLAttributeAnchorTarget): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
@@ -1177,6 +1241,10 @@ object PartialLinkProps {
     inline def setTranslate(value: yes | no): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
     
     inline def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     inline def setTypeof(value: String): Self = StObject.set(x, "typeof", value.asInstanceOf[js.Any])
     

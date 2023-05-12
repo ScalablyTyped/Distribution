@@ -1,7 +1,7 @@
 
 # Scala.js typings for mobx-state-tree
 
-Typings are for version 5.1.6
+Typings are for version 5.1.8
 
 ## Library description:
 Opinionated, transactional, MobX powered state container

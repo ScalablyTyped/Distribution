@@ -12,7 +12,7 @@ trait AutoTuneOptions extends StObject {
   var DesiredState: js.UndefOr[AutoTuneDesiredState] = js.undefined
   
   /**
-    * A list of maintenance schedules during which Auto-Tune can deploy changes.
+    * DEPRECATED. Use off-peak window instead. A list of maintenance schedules during which Auto-Tune can deploy changes.
     */
   var MaintenanceSchedules: js.UndefOr[AutoTuneMaintenanceScheduleList] = js.undefined
   
@@ -20,6 +20,11 @@ trait AutoTuneOptions extends StObject {
     * When disabling Auto-Tune, specify NO_ROLLBACK to retain all prior Auto-Tune settings or DEFAULT_ROLLBACK to revert to the OpenSearch Service defaults. If you specify DEFAULT_ROLLBACK, you must include a MaintenanceSchedule in the request. Otherwise, OpenSearch Service is unable to perform the rollback.
     */
   var RollbackOnDisable: js.UndefOr[typings.awsSdk.clientsOpensearchMod.RollbackOnDisable] = js.undefined
+  
+  /**
+    * Whether to use the domain's off-peak window to deploy configuration changes on the domain rather than a maintenance schedule.
+    */
+  var UseOffPeakWindow: js.UndefOr[Boolean] = js.undefined
 }
 object AutoTuneOptions {
   
@@ -44,5 +49,9 @@ object AutoTuneOptions {
     inline def setRollbackOnDisable(value: RollbackOnDisable): Self = StObject.set(x, "RollbackOnDisable", value.asInstanceOf[js.Any])
     
     inline def setRollbackOnDisableUndefined: Self = StObject.set(x, "RollbackOnDisable", js.undefined)
+    
+    inline def setUseOffPeakWindow(value: Boolean): Self = StObject.set(x, "UseOffPeakWindow", value.asInstanceOf[js.Any])
+    
+    inline def setUseOffPeakWindowUndefined: Self = StObject.set(x, "UseOffPeakWindow", js.undefined)
   }
 }

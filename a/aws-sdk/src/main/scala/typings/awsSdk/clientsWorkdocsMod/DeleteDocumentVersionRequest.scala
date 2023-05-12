@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteDocumentVersionRequest extends StObject {
   
   /**
-    * Amazon WorkDocs authentication token. Not required when using AWS administrator credentials to access the API.
+    * Amazon WorkDocs authentication token. Not required when using Amazon Web Services administrator credentials to access the API.
     */
   var AuthenticationToken: js.UndefOr[AuthenticationHeaderType] = js.undefined
   
   /**
-    * When set to TRUE, deletes the specified version and all prior versions of a document.
+    * Deletes all versions of a document prior to the current version.
     */
   var DeletePriorVersions: BooleanType
   
   /**
-    * The ID of a document.
+    * The ID of the document associated with the version being deleted.
     */
   var DocumentId: ResourceIdType
   
   /**
-    * The version ID of a document.
+    * The ID of the version being deleted.
     */
   var VersionId: DocumentVersionIdType
 }

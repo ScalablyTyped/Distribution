@@ -1,6 +1,6 @@
 package typings.openui5.anon
 
-import typings.openui5.float
+import typings.openui5.int
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `1` extends StObject {
   
   /**
-    * The current value of the slider after a live change.
+    * The rated value
     */
-  var value: js.UndefOr[float] = js.undefined
+  var value: js.UndefOr[int] = js.undefined
 }
 object `1` {
   
@@ -22,7 +22,7 @@ object `1` {
   @scala.inline
   implicit open class MutableBuilder[Self <: `1`] (val x: Self) extends AnyVal {
     
-    inline def setValue(value: float): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: int): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }

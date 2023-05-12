@@ -8,6 +8,8 @@ trait LedOption extends StObject {
   
   var address: js.UndefOr[Double] = js.undefined
   
+  var board: js.UndefOr[Board] = js.undefined
+  
   var controller: js.UndefOr[String] = js.undefined
   
   var isAnode: js.UndefOr[Boolean] = js.undefined
@@ -29,6 +31,10 @@ object LedOption {
     inline def setAddress(value: Double): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
     inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
+    
+    inline def setBoard(value: Board): Self = StObject.set(x, "board", value.asInstanceOf[js.Any])
+    
+    inline def setBoardUndefined: Self = StObject.set(x, "board", js.undefined)
     
     inline def setController(value: String): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
     

@@ -6,38 +6,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Enabled extends StObject {
   
-  var attributes: js.UndefOr[js.Object] = js.undefined
+  var enabled: Boolean
   
-  var enabled: js.UndefOr[Boolean] = js.undefined
-  
-  var ind: js.UndefOr[Double] = js.undefined
-  
-  var preloading: js.UndefOr[Boolean] = js.undefined
+  var watermark: Double
 }
 object Enabled {
   
-  inline def apply(): Enabled = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(enabled: Boolean, watermark: Double): Enabled = {
+    val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any], watermark = watermark.asInstanceOf[js.Any])
     __obj.asInstanceOf[Enabled]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: Enabled] (val x: Self) extends AnyVal {
     
-    inline def setAttributes(value: js.Object): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
-    
-    inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
-    
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
-    
-    inline def setInd(value: Double): Self = StObject.set(x, "ind", value.asInstanceOf[js.Any])
-    
-    inline def setIndUndefined: Self = StObject.set(x, "ind", js.undefined)
-    
-    inline def setPreloading(value: Boolean): Self = StObject.set(x, "preloading", value.asInstanceOf[js.Any])
-    
-    inline def setPreloadingUndefined: Self = StObject.set(x, "preloading", js.undefined)
+    inline def setWatermark(value: Double): Self = StObject.set(x, "watermark", value.asInstanceOf[js.Any])
   }
 }

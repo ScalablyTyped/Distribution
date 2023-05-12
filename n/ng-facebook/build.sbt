@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "ng-facebook"
-version := "0.0-unknown-dt-20221103Z-a1232f"
+version := "0.0-unknown-dt-20221230Z-9eb275"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "angular" % "1.8-dt-20220525Z-1b81ed",
-  "org.scalablytyped" %%% "facebook-js-sdk" % "3.3-dt-20221005Z-f21788",
-  "org.scalablytyped" %%% "std" % "4.9-ecb5eb")
+  "org.scalablytyped" %%% "angular" % "1.8-dt-20230418Z-679d71",
+  "org.scalablytyped" %%% "facebook-js-sdk" % "3.3-dt-20221230Z-5ce3c7",
+  "org.scalablytyped" %%% "std" % "5.0-e63739")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

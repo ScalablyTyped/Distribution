@@ -1,5 +1,6 @@
 package typings.sucrase
 
+import typings.sucrase.distTypesHelperManagerMod.HelperManager
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,8 +15,10 @@ object distTypesTransformersCjsimporttransformerMod {
       tokens: typings.sucrase.distTypesTokenProcessorMod.default,
       importProcessor: typings.sucrase.distTypesCjsimportprocessorMod.default,
       nameManager: typings.sucrase.distTypesNameManagerMod.default,
+      helperManager: HelperManager,
       reactHotLoaderTransformer: Null,
       enableLegacyBabel5ModuleInterop: Boolean,
+      enableLegacyTypeScriptModuleInterop: Boolean,
       isTypeScriptTransformEnabled: Boolean,
       preserveDynamicImport: Boolean
     ) = this()
@@ -24,8 +27,10 @@ object distTypesTransformersCjsimporttransformerMod {
       tokens: typings.sucrase.distTypesTokenProcessorMod.default,
       importProcessor: typings.sucrase.distTypesCjsimportprocessorMod.default,
       nameManager: typings.sucrase.distTypesNameManagerMod.default,
+      helperManager: HelperManager,
       reactHotLoaderTransformer: typings.sucrase.distTypesTransformersReactHotLoaderTransformerMod.default,
       enableLegacyBabel5ModuleInterop: Boolean,
+      enableLegacyTypeScriptModuleInterop: Boolean,
       isTypeScriptTransformEnabled: Boolean,
       preserveDynamicImport: Boolean
     ) = this()
@@ -35,15 +40,21 @@ object distTypesTransformersCjsimporttransformerMod {
   trait CJSImportTransformer
     extends typings.sucrase.distTypesTransformersTransformerMod.default {
     
+    /* private */ var copyDecorators: Any = js.native
+    
     /* private */ var declarationInfo: Any = js.native
     
     val enableLegacyBabel5ModuleInterop: Boolean = js.native
+    
+    val enableLegacyTypeScriptModuleInterop: Boolean = js.native
     
     /* private */ var hadDefaultExport: Any = js.native
     
     /* private */ var hadExport: Any = js.native
     
     /* private */ var hadNamedExport: Any = js.native
+    
+    val helperManager: HelperManager = js.native
     
     val importProcessor: typings.sucrase.distTypesCjsimportprocessorMod.default = js.native
     

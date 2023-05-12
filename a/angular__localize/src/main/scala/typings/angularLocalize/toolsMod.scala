@@ -4,14 +4,16 @@ import typings.angularCompilerCli.srcNgtscFileSystemSrcTypesMod.AbsoluteFsPath
 import typings.angularCompilerCli.srcNgtscFileSystemSrcTypesMod.PathManipulation
 import typings.angularCompilerCli.srcNgtscFileSystemSrcTypesMod.ReadonlyFileSystem
 import typings.angularCompilerCli.srcNgtscLoggingSrcLoggerMod.Logger
-import typings.angularLocalize.mod.ɵParsedMessage
-import typings.angularLocalize.mod.ɵParsedTranslation
-import typings.angularLocalize.mod.ɵSourceLocation
-import typings.angularLocalize.toolsSrcBabelCoreMod.PluginObj
+import typings.angularLocalize.localizeMod.ɵParsedMessage
+import typings.angularLocalize.localizeMod.ɵParsedTranslation
+import typings.angularLocalize.localizeMod.ɵSourceLocation
 import typings.angularLocalize.toolsSrcDiagnosticsMod.DiagnosticHandlingStrategy
 import typings.angularLocalize.toolsSrcExtractExtractionMod.ExtractionOptions
 import typings.angularLocalize.toolsSrcExtractTranslationFilesFormatOptionsMod.FormatOptions
 import typings.angularLocalize.toolsSrcSourceFileUtilsMod.TranslatePluginOptions
+import typings.babelCore.mod.PluginObj
+import typings.babelCore.mod.PluginPass
+import typings.babelTypes.mod.Expression
 import typings.std.Record
 import typings.std.TemplateStringsArray
 import org.scalablytyped.runtime.StObject
@@ -144,12 +146,7 @@ object toolsMod {
   open class XtbTranslationParser ()
     extends typings.angularLocalize.toolsSrcTranslateTranslationFilesTranslationParsersXtbTranslationParserMod.XtbTranslationParser
   
-  inline def buildLocalizeReplacement(
-    messageParts: TemplateStringsArray,
-    substitutions: js.Array[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify t.Expression */ Any
-    ]
-  ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("buildLocalizeReplacement")(messageParts.asInstanceOf[js.Any], substitutions.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def buildLocalizeReplacement(messageParts: TemplateStringsArray, substitutions: js.Array[Expression]): Expression = (^.asInstanceOf[js.Dynamic].applyDynamic("buildLocalizeReplacement")(messageParts.asInstanceOf[js.Any], substitutions.asInstanceOf[js.Any])).asInstanceOf[Expression]
   
   inline def checkDuplicateMessages(
     fs: PathManipulation,
@@ -165,49 +162,49 @@ object toolsMod {
   inline def makeEs2015TranslatePlugin(
     diagnostics: typings.angularLocalize.toolsSrcDiagnosticsMod.Diagnostics,
     translations: Record[String, ɵParsedTranslation]
-  ): PluginObj = (^.asInstanceOf[js.Dynamic].applyDynamic("makeEs2015TranslatePlugin")(diagnostics.asInstanceOf[js.Any], translations.asInstanceOf[js.Any])).asInstanceOf[PluginObj]
+  ): PluginObj[PluginPass] = (^.asInstanceOf[js.Dynamic].applyDynamic("makeEs2015TranslatePlugin")(diagnostics.asInstanceOf[js.Any], translations.asInstanceOf[js.Any])).asInstanceOf[PluginObj[PluginPass]]
   inline def makeEs2015TranslatePlugin(
     diagnostics: typings.angularLocalize.toolsSrcDiagnosticsMod.Diagnostics,
     translations: Record[String, ɵParsedTranslation],
     param2: Unit,
     fs: PathManipulation
-  ): PluginObj = (^.asInstanceOf[js.Dynamic].applyDynamic("makeEs2015TranslatePlugin")(diagnostics.asInstanceOf[js.Any], translations.asInstanceOf[js.Any], param2.asInstanceOf[js.Any], fs.asInstanceOf[js.Any])).asInstanceOf[PluginObj]
+  ): PluginObj[PluginPass] = (^.asInstanceOf[js.Dynamic].applyDynamic("makeEs2015TranslatePlugin")(diagnostics.asInstanceOf[js.Any], translations.asInstanceOf[js.Any], param2.asInstanceOf[js.Any], fs.asInstanceOf[js.Any])).asInstanceOf[PluginObj[PluginPass]]
   inline def makeEs2015TranslatePlugin(
     diagnostics: typings.angularLocalize.toolsSrcDiagnosticsMod.Diagnostics,
     translations: Record[String, ɵParsedTranslation],
     param2: TranslatePluginOptions
-  ): PluginObj = (^.asInstanceOf[js.Dynamic].applyDynamic("makeEs2015TranslatePlugin")(diagnostics.asInstanceOf[js.Any], translations.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[PluginObj]
+  ): PluginObj[PluginPass] = (^.asInstanceOf[js.Dynamic].applyDynamic("makeEs2015TranslatePlugin")(diagnostics.asInstanceOf[js.Any], translations.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[PluginObj[PluginPass]]
   inline def makeEs2015TranslatePlugin(
     diagnostics: typings.angularLocalize.toolsSrcDiagnosticsMod.Diagnostics,
     translations: Record[String, ɵParsedTranslation],
     param2: TranslatePluginOptions,
     fs: PathManipulation
-  ): PluginObj = (^.asInstanceOf[js.Dynamic].applyDynamic("makeEs2015TranslatePlugin")(diagnostics.asInstanceOf[js.Any], translations.asInstanceOf[js.Any], param2.asInstanceOf[js.Any], fs.asInstanceOf[js.Any])).asInstanceOf[PluginObj]
+  ): PluginObj[PluginPass] = (^.asInstanceOf[js.Dynamic].applyDynamic("makeEs2015TranslatePlugin")(diagnostics.asInstanceOf[js.Any], translations.asInstanceOf[js.Any], param2.asInstanceOf[js.Any], fs.asInstanceOf[js.Any])).asInstanceOf[PluginObj[PluginPass]]
   
   inline def makeEs5TranslatePlugin(
     diagnostics: typings.angularLocalize.toolsSrcDiagnosticsMod.Diagnostics,
     translations: Record[String, ɵParsedTranslation]
-  ): PluginObj = (^.asInstanceOf[js.Dynamic].applyDynamic("makeEs5TranslatePlugin")(diagnostics.asInstanceOf[js.Any], translations.asInstanceOf[js.Any])).asInstanceOf[PluginObj]
+  ): PluginObj[PluginPass] = (^.asInstanceOf[js.Dynamic].applyDynamic("makeEs5TranslatePlugin")(diagnostics.asInstanceOf[js.Any], translations.asInstanceOf[js.Any])).asInstanceOf[PluginObj[PluginPass]]
   inline def makeEs5TranslatePlugin(
     diagnostics: typings.angularLocalize.toolsSrcDiagnosticsMod.Diagnostics,
     translations: Record[String, ɵParsedTranslation],
     param2: Unit,
     fs: PathManipulation
-  ): PluginObj = (^.asInstanceOf[js.Dynamic].applyDynamic("makeEs5TranslatePlugin")(diagnostics.asInstanceOf[js.Any], translations.asInstanceOf[js.Any], param2.asInstanceOf[js.Any], fs.asInstanceOf[js.Any])).asInstanceOf[PluginObj]
+  ): PluginObj[PluginPass] = (^.asInstanceOf[js.Dynamic].applyDynamic("makeEs5TranslatePlugin")(diagnostics.asInstanceOf[js.Any], translations.asInstanceOf[js.Any], param2.asInstanceOf[js.Any], fs.asInstanceOf[js.Any])).asInstanceOf[PluginObj[PluginPass]]
   inline def makeEs5TranslatePlugin(
     diagnostics: typings.angularLocalize.toolsSrcDiagnosticsMod.Diagnostics,
     translations: Record[String, ɵParsedTranslation],
     param2: TranslatePluginOptions
-  ): PluginObj = (^.asInstanceOf[js.Dynamic].applyDynamic("makeEs5TranslatePlugin")(diagnostics.asInstanceOf[js.Any], translations.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[PluginObj]
+  ): PluginObj[PluginPass] = (^.asInstanceOf[js.Dynamic].applyDynamic("makeEs5TranslatePlugin")(diagnostics.asInstanceOf[js.Any], translations.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[PluginObj[PluginPass]]
   inline def makeEs5TranslatePlugin(
     diagnostics: typings.angularLocalize.toolsSrcDiagnosticsMod.Diagnostics,
     translations: Record[String, ɵParsedTranslation],
     param2: TranslatePluginOptions,
     fs: PathManipulation
-  ): PluginObj = (^.asInstanceOf[js.Dynamic].applyDynamic("makeEs5TranslatePlugin")(diagnostics.asInstanceOf[js.Any], translations.asInstanceOf[js.Any], param2.asInstanceOf[js.Any], fs.asInstanceOf[js.Any])).asInstanceOf[PluginObj]
+  ): PluginObj[PluginPass] = (^.asInstanceOf[js.Dynamic].applyDynamic("makeEs5TranslatePlugin")(diagnostics.asInstanceOf[js.Any], translations.asInstanceOf[js.Any], param2.asInstanceOf[js.Any], fs.asInstanceOf[js.Any])).asInstanceOf[PluginObj[PluginPass]]
   
-  inline def makeLocalePlugin(locale: String): PluginObj = ^.asInstanceOf[js.Dynamic].applyDynamic("makeLocalePlugin")(locale.asInstanceOf[js.Any]).asInstanceOf[PluginObj]
-  inline def makeLocalePlugin(locale: String, param1: TranslatePluginOptions): PluginObj = (^.asInstanceOf[js.Dynamic].applyDynamic("makeLocalePlugin")(locale.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[PluginObj]
+  inline def makeLocalePlugin(locale: String): PluginObj[PluginPass] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeLocalePlugin")(locale.asInstanceOf[js.Any]).asInstanceOf[PluginObj[PluginPass]]
+  inline def makeLocalePlugin(locale: String, param1: TranslatePluginOptions): PluginObj[PluginPass] = (^.asInstanceOf[js.Dynamic].applyDynamic("makeLocalePlugin")(locale.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[PluginObj[PluginPass]]
   
   inline def translate(
     diagnostics: typings.angularLocalize.toolsSrcDiagnosticsMod.Diagnostics,
@@ -219,31 +216,11 @@ object toolsMod {
   
   inline def unwrapExpressionsFromTemplateLiteral(
     quasi: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodePath<t.TemplateLiteral> */ Any
-  ): js.Tuple2[
-    js.Array[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify t.Expression */ Any
-    ], 
-    js.Array[js.UndefOr[ɵSourceLocation]]
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("unwrapExpressionsFromTemplateLiteral")(quasi.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[
-    js.Array[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify t.Expression */ Any
-    ], 
-    js.Array[js.UndefOr[ɵSourceLocation]]
-  ]]
+  ): js.Tuple2[js.Array[Expression], js.Array[js.UndefOr[ɵSourceLocation]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("unwrapExpressionsFromTemplateLiteral")(quasi.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[js.Array[Expression], js.Array[js.UndefOr[ɵSourceLocation]]]]
   inline def unwrapExpressionsFromTemplateLiteral(
     quasi: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodePath<t.TemplateLiteral> */ Any,
     fs: PathManipulation
-  ): js.Tuple2[
-    js.Array[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify t.Expression */ Any
-    ], 
-    js.Array[js.UndefOr[ɵSourceLocation]]
-  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("unwrapExpressionsFromTemplateLiteral")(quasi.asInstanceOf[js.Any], fs.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[
-    js.Array[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify t.Expression */ Any
-    ], 
-    js.Array[js.UndefOr[ɵSourceLocation]]
-  ]]
+  ): js.Tuple2[js.Array[Expression], js.Array[js.UndefOr[ɵSourceLocation]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("unwrapExpressionsFromTemplateLiteral")(quasi.asInstanceOf[js.Any], fs.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Expression], js.Array[js.UndefOr[ɵSourceLocation]]]]
   
   inline def unwrapMessagePartsFromLocalizeCall(
     call: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodePath<t.CallExpression> */ Any
@@ -267,29 +244,9 @@ object toolsMod {
   
   inline def unwrapSubstitutionsFromLocalizeCall(
     call: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodePath<t.CallExpression> */ Any
-  ): js.Tuple2[
-    js.Array[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify t.Expression */ Any
-    ], 
-    js.Array[js.UndefOr[ɵSourceLocation]]
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("unwrapSubstitutionsFromLocalizeCall")(call.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[
-    js.Array[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify t.Expression */ Any
-    ], 
-    js.Array[js.UndefOr[ɵSourceLocation]]
-  ]]
+  ): js.Tuple2[js.Array[Expression], js.Array[js.UndefOr[ɵSourceLocation]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("unwrapSubstitutionsFromLocalizeCall")(call.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[js.Array[Expression], js.Array[js.UndefOr[ɵSourceLocation]]]]
   inline def unwrapSubstitutionsFromLocalizeCall(
     call: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodePath<t.CallExpression> */ Any,
     fs: PathManipulation
-  ): js.Tuple2[
-    js.Array[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify t.Expression */ Any
-    ], 
-    js.Array[js.UndefOr[ɵSourceLocation]]
-  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("unwrapSubstitutionsFromLocalizeCall")(call.asInstanceOf[js.Any], fs.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[
-    js.Array[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify t.Expression */ Any
-    ], 
-    js.Array[js.UndefOr[ɵSourceLocation]]
-  ]]
+  ): js.Tuple2[js.Array[Expression], js.Array[js.UndefOr[ɵSourceLocation]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("unwrapSubstitutionsFromLocalizeCall")(call.asInstanceOf[js.Any], fs.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Expression], js.Array[js.UndefOr[ɵSourceLocation]]]]
 }

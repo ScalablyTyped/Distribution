@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "plugin-error" : "2.0.0"
+      "plugin-error" : "2.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "plugin-error" : "2.0.0"
+      "plugin-error" : "2.0.1"
     }
   ],
   "compile-devDependencies" : [

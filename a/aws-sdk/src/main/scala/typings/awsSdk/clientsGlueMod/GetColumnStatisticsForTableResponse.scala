@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetColumnStatisticsForTableResponse extends StObject {
   
   /**
-    * List of ColumnStatistics that failed to be retrieved.
+    * List of ColumnStatistics.
     */
   var ColumnStatisticsList: js.UndefOr[typings.awsSdk.clientsGlueMod.ColumnStatisticsList] = js.undefined
   

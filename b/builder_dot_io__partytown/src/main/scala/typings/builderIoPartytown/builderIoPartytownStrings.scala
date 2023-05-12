@@ -22,6 +22,13 @@ object builderIoPartytownStrings {
   inline def iframe: iframe = "iframe".asInstanceOf[iframe]
   
   @js.native
+  sealed trait image
+    extends StObject
+       with ResolveUrlType
+       with typings.builderIoPartytown.reactMod.ResolveUrlType
+  inline def image: image = "image".asInstanceOf[image]
+  
+  @js.native
   sealed trait script
     extends StObject
        with ResolveUrlType

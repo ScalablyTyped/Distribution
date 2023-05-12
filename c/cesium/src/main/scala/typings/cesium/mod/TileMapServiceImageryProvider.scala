@@ -10,11 +10,38 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class TileMapServiceImageryProvider protected () extends UrlTemplateImageryProvider {
   def this(options: ConstructorOptions) = this()
 }
+/* static members */
 object TileMapServiceImageryProvider {
+  
+  @JSImport("cesium", "TileMapServiceImageryProvider")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def fromUrl(url: String): js.Promise[TileMapServiceImageryProvider] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromUrl")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[TileMapServiceImageryProvider]]
+  inline def fromUrl(url: String, options: ConstructorOptions): js.Promise[TileMapServiceImageryProvider] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromUrl")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TileMapServiceImageryProvider]]
+  /**
+    * Creates a TileMapServiceImageryProvider from the specified url.
+    * @example
+    * const tms = await Cesium.TileMapServiceImageryProvider.fromUrl(
+    *    '../images/cesium_maptiler/Cesium_Logo_Color', {
+    *      fileExtension: 'png',
+    *      maximumLevel: 4,
+    *      rectangle: new Cesium.Rectangle(
+    *        Cesium.Math.toRadians(-120.0),
+    *        Cesium.Math.toRadians(20.0),
+    *        Cesium.Math.toRadians(-60.0),
+    *        Cesium.Math.toRadians(40.0))
+    * });
+    * @param url - Path to image tiles on server.
+    * @param [options] - Object describing initialization options.
+    * @returns A promise that resolves to the created TileMapServiceImageryProvider.
+    */
+  inline def fromUrl(url: Resource): js.Promise[TileMapServiceImageryProvider] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromUrl")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[TileMapServiceImageryProvider]]
+  inline def fromUrl(url: Resource, options: ConstructorOptions): js.Promise[TileMapServiceImageryProvider] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromUrl")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TileMapServiceImageryProvider]]
   
   /**
     * Initialization options for the TileMapServiceImageryProvider constructor
-    * @property [url = '.'] - Path to image tiles on server.
+    * @property [url] - Path to image tiles on server. Deprecated
     * @property [fileExtension = 'png'] - The file extension for images on the server.
     * @property [credit = ''] - A credit for the data source, which is displayed on the canvas.
     * @property [minimumLevel = 0] - The minimum level-of-detail supported by the imagery provider.  Take care when specifying
@@ -31,6 +58,7 @@ object TileMapServiceImageryProvider {
     * @property [tileWidth = 256] - Pixel width of image tiles.
     * @property [tileHeight = 256] - Pixel height of image tiles.
     * @property [flipXY] - Older versions of gdal2tiles.py flipped X and Y values in tilemapresource.xml.
+    * @property [tileDiscardPolicy] - A policy for discarding tile images according to some criteria
     * Specifying this option will do the same, allowing for loading of these incorrect tilesets.
     */
   trait ConstructorOptions extends StObject {
@@ -48,6 +76,8 @@ object TileMapServiceImageryProvider {
     var minimumLevel: js.UndefOr[Double] = js.undefined
     
     var rectangle: js.UndefOr[Rectangle] = js.undefined
+    
+    var tileDiscardPolicy: js.UndefOr[TileDiscardPolicy] = js.undefined
     
     var tileHeight: js.UndefOr[Double] = js.undefined
     
@@ -94,6 +124,10 @@ object TileMapServiceImageryProvider {
       inline def setRectangle(value: Rectangle): Self = StObject.set(x, "rectangle", value.asInstanceOf[js.Any])
       
       inline def setRectangleUndefined: Self = StObject.set(x, "rectangle", js.undefined)
+      
+      inline def setTileDiscardPolicy(value: TileDiscardPolicy): Self = StObject.set(x, "tileDiscardPolicy", value.asInstanceOf[js.Any])
+      
+      inline def setTileDiscardPolicyUndefined: Self = StObject.set(x, "tileDiscardPolicy", js.undefined)
       
       inline def setTileHeight(value: Double): Self = StObject.set(x, "tileHeight", value.asInstanceOf[js.Any])
       

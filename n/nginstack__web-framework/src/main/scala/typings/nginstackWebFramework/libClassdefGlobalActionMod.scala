@@ -1,6 +1,7 @@
 package typings.nginstackWebFramework
 
 import typings.nginstackWebFramework.anon.Name
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -56,7 +57,7 @@ object libClassdefGlobalActionMod {
     var onShow: typings.nginstackEngine.libEventLegacyEventMod.^ = js.native
     
     /* CompleteClass */
-    var params: Any = js.native
+    var params: Record[String, Any] = js.native
     
     /* CompleteClass */
     var targetKey: Double | Null = js.native
@@ -96,7 +97,7 @@ object libClassdefGlobalActionMod {
     
     var onShow: typings.nginstackEngine.libEventLegacyEventMod.^
     
-    var params: Any
+    var params: Record[String, Any]
     
     var targetKey: Double | Null
     
@@ -116,7 +117,7 @@ object libClassdefGlobalActionMod {
       name: String,
       name_ : Any,
       onShow: typings.nginstackEngine.libEventLegacyEventMod.^,
-      params: Any,
+      params: Record[String, Any],
       visible: Boolean
     ): GlobalAction = {
       val __obj = js.Dynamic.literal(addParameter = js.Any.fromFunction1(addParameter), caption = caption.asInstanceOf[js.Any], defaultKeyParamName = defaultKeyParamName.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any], getParameter = js.Any.fromFunction1(getParameter), getParameters = js.Any.fromFunction0(getParameters), help = help.asInstanceOf[js.Any], hint = hint.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], name_ = name_.asInstanceOf[js.Any], onShow = onShow.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any], activity = null, interaction = null, targetKey = null)
@@ -156,7 +157,7 @@ object libClassdefGlobalActionMod {
       
       inline def setOnShow(value: typings.nginstackEngine.libEventLegacyEventMod.^): Self = StObject.set(x, "onShow", value.asInstanceOf[js.Any])
       
-      inline def setParams(value: Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: Record[String, Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
       inline def setTargetKey(value: Double): Self = StObject.set(x, "targetKey", value.asInstanceOf[js.Any])
       

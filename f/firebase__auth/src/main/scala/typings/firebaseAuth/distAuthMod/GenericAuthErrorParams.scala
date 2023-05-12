@@ -89,7 +89,15 @@ trait GenericAuthErrorParams extends StObject {
   
   var `invalid-provider-id`: Message
   
+  var `invalid-recaptcha-action`: Message
+  
+  var `invalid-recaptcha-token`: Message
+  
+  var `invalid-recaptcha-version`: Message
+  
   var `invalid-recipient-email`: Message
+  
+  var `invalid-req-type`: Message
   
   var `invalid-sender`: Message
   
@@ -109,6 +117,8 @@ trait GenericAuthErrorParams extends StObject {
   
   var `missing-app-credential`: Message
   
+  var `missing-client-type`: Message
+  
   var `missing-continue-uri`: Message
   
   var `missing-iframe-start`: Message
@@ -121,7 +131,13 @@ trait GenericAuthErrorParams extends StObject {
   
   var `missing-or-invalid-nonce`: Message
   
+  var `missing-password`: Message
+  
   var `missing-phone-number`: Message
+  
+  var `missing-recaptcha-token`: Message
+  
+  var `missing-recaptcha-version`: Message
   
   var `missing-verification-code`: Message
   
@@ -144,6 +160,8 @@ trait GenericAuthErrorParams extends StObject {
   var `provider-already-linked`: Message
   
   var `quota-exceeded`: Message
+  
+  var `recaptcha-not-enabled`: Message
   
   var `redirect-cancelled-by-user`: Message
   
@@ -233,7 +251,11 @@ object GenericAuthErrorParams {
     `invalid-persistence-type`: Message,
     `invalid-phone-number`: Message,
     `invalid-provider-id`: Message,
+    `invalid-recaptcha-action`: Message,
+    `invalid-recaptcha-token`: Message,
+    `invalid-recaptcha-version`: Message,
     `invalid-recipient-email`: Message,
+    `invalid-req-type`: Message,
     `invalid-sender`: Message,
     `invalid-tenant-id`: Message,
     `invalid-user-token`: Message,
@@ -243,13 +265,17 @@ object GenericAuthErrorParams {
     `maximum-second-factor-count-exceeded`: Message,
     `missing-android-pkg-name`: Message,
     `missing-app-credential`: Message,
+    `missing-client-type`: Message,
     `missing-continue-uri`: Message,
     `missing-iframe-start`: Message,
     `missing-ios-bundle-id`: Message,
     `missing-multi-factor-info`: Message,
     `missing-multi-factor-session`: Message,
     `missing-or-invalid-nonce`: Message,
+    `missing-password`: Message,
     `missing-phone-number`: Message,
+    `missing-recaptcha-token`: Message,
+    `missing-recaptcha-version`: Message,
     `missing-verification-code`: Message,
     `missing-verification-id`: Message,
     `multi-factor-info-not-found`: Message,
@@ -261,6 +287,7 @@ object GenericAuthErrorParams {
     `popup-closed-by-user`: Message,
     `provider-already-linked`: Message,
     `quota-exceeded`: Message,
+    `recaptcha-not-enabled`: Message,
     `redirect-cancelled-by-user`: Message,
     `redirect-operation-pending`: Message,
     `rejected-credential`: Message,
@@ -325,7 +352,11 @@ object GenericAuthErrorParams {
     __obj.updateDynamic("invalid-persistence-type")(`invalid-persistence-type`.asInstanceOf[js.Any])
     __obj.updateDynamic("invalid-phone-number")(`invalid-phone-number`.asInstanceOf[js.Any])
     __obj.updateDynamic("invalid-provider-id")(`invalid-provider-id`.asInstanceOf[js.Any])
+    __obj.updateDynamic("invalid-recaptcha-action")(`invalid-recaptcha-action`.asInstanceOf[js.Any])
+    __obj.updateDynamic("invalid-recaptcha-token")(`invalid-recaptcha-token`.asInstanceOf[js.Any])
+    __obj.updateDynamic("invalid-recaptcha-version")(`invalid-recaptcha-version`.asInstanceOf[js.Any])
     __obj.updateDynamic("invalid-recipient-email")(`invalid-recipient-email`.asInstanceOf[js.Any])
+    __obj.updateDynamic("invalid-req-type")(`invalid-req-type`.asInstanceOf[js.Any])
     __obj.updateDynamic("invalid-sender")(`invalid-sender`.asInstanceOf[js.Any])
     __obj.updateDynamic("invalid-tenant-id")(`invalid-tenant-id`.asInstanceOf[js.Any])
     __obj.updateDynamic("invalid-user-token")(`invalid-user-token`.asInstanceOf[js.Any])
@@ -335,13 +366,17 @@ object GenericAuthErrorParams {
     __obj.updateDynamic("maximum-second-factor-count-exceeded")(`maximum-second-factor-count-exceeded`.asInstanceOf[js.Any])
     __obj.updateDynamic("missing-android-pkg-name")(`missing-android-pkg-name`.asInstanceOf[js.Any])
     __obj.updateDynamic("missing-app-credential")(`missing-app-credential`.asInstanceOf[js.Any])
+    __obj.updateDynamic("missing-client-type")(`missing-client-type`.asInstanceOf[js.Any])
     __obj.updateDynamic("missing-continue-uri")(`missing-continue-uri`.asInstanceOf[js.Any])
     __obj.updateDynamic("missing-iframe-start")(`missing-iframe-start`.asInstanceOf[js.Any])
     __obj.updateDynamic("missing-ios-bundle-id")(`missing-ios-bundle-id`.asInstanceOf[js.Any])
     __obj.updateDynamic("missing-multi-factor-info")(`missing-multi-factor-info`.asInstanceOf[js.Any])
     __obj.updateDynamic("missing-multi-factor-session")(`missing-multi-factor-session`.asInstanceOf[js.Any])
     __obj.updateDynamic("missing-or-invalid-nonce")(`missing-or-invalid-nonce`.asInstanceOf[js.Any])
+    __obj.updateDynamic("missing-password")(`missing-password`.asInstanceOf[js.Any])
     __obj.updateDynamic("missing-phone-number")(`missing-phone-number`.asInstanceOf[js.Any])
+    __obj.updateDynamic("missing-recaptcha-token")(`missing-recaptcha-token`.asInstanceOf[js.Any])
+    __obj.updateDynamic("missing-recaptcha-version")(`missing-recaptcha-version`.asInstanceOf[js.Any])
     __obj.updateDynamic("missing-verification-code")(`missing-verification-code`.asInstanceOf[js.Any])
     __obj.updateDynamic("missing-verification-id")(`missing-verification-id`.asInstanceOf[js.Any])
     __obj.updateDynamic("multi-factor-info-not-found")(`multi-factor-info-not-found`.asInstanceOf[js.Any])
@@ -353,6 +388,7 @@ object GenericAuthErrorParams {
     __obj.updateDynamic("popup-closed-by-user")(`popup-closed-by-user`.asInstanceOf[js.Any])
     __obj.updateDynamic("provider-already-linked")(`provider-already-linked`.asInstanceOf[js.Any])
     __obj.updateDynamic("quota-exceeded")(`quota-exceeded`.asInstanceOf[js.Any])
+    __obj.updateDynamic("recaptcha-not-enabled")(`recaptcha-not-enabled`.asInstanceOf[js.Any])
     __obj.updateDynamic("redirect-cancelled-by-user")(`redirect-cancelled-by-user`.asInstanceOf[js.Any])
     __obj.updateDynamic("redirect-operation-pending")(`redirect-operation-pending`.asInstanceOf[js.Any])
     __obj.updateDynamic("rejected-credential")(`rejected-credential`.asInstanceOf[js.Any])
@@ -459,7 +495,15 @@ object GenericAuthErrorParams {
     
     inline def `setInvalid-provider-id`(value: Message): Self = StObject.set(x, "invalid-provider-id", value.asInstanceOf[js.Any])
     
+    inline def `setInvalid-recaptcha-action`(value: Message): Self = StObject.set(x, "invalid-recaptcha-action", value.asInstanceOf[js.Any])
+    
+    inline def `setInvalid-recaptcha-token`(value: Message): Self = StObject.set(x, "invalid-recaptcha-token", value.asInstanceOf[js.Any])
+    
+    inline def `setInvalid-recaptcha-version`(value: Message): Self = StObject.set(x, "invalid-recaptcha-version", value.asInstanceOf[js.Any])
+    
     inline def `setInvalid-recipient-email`(value: Message): Self = StObject.set(x, "invalid-recipient-email", value.asInstanceOf[js.Any])
+    
+    inline def `setInvalid-req-type`(value: Message): Self = StObject.set(x, "invalid-req-type", value.asInstanceOf[js.Any])
     
     inline def `setInvalid-sender`(value: Message): Self = StObject.set(x, "invalid-sender", value.asInstanceOf[js.Any])
     
@@ -479,6 +523,8 @@ object GenericAuthErrorParams {
     
     inline def `setMissing-app-credential`(value: Message): Self = StObject.set(x, "missing-app-credential", value.asInstanceOf[js.Any])
     
+    inline def `setMissing-client-type`(value: Message): Self = StObject.set(x, "missing-client-type", value.asInstanceOf[js.Any])
+    
     inline def `setMissing-continue-uri`(value: Message): Self = StObject.set(x, "missing-continue-uri", value.asInstanceOf[js.Any])
     
     inline def `setMissing-iframe-start`(value: Message): Self = StObject.set(x, "missing-iframe-start", value.asInstanceOf[js.Any])
@@ -491,7 +537,13 @@ object GenericAuthErrorParams {
     
     inline def `setMissing-or-invalid-nonce`(value: Message): Self = StObject.set(x, "missing-or-invalid-nonce", value.asInstanceOf[js.Any])
     
+    inline def `setMissing-password`(value: Message): Self = StObject.set(x, "missing-password", value.asInstanceOf[js.Any])
+    
     inline def `setMissing-phone-number`(value: Message): Self = StObject.set(x, "missing-phone-number", value.asInstanceOf[js.Any])
+    
+    inline def `setMissing-recaptcha-token`(value: Message): Self = StObject.set(x, "missing-recaptcha-token", value.asInstanceOf[js.Any])
+    
+    inline def `setMissing-recaptcha-version`(value: Message): Self = StObject.set(x, "missing-recaptcha-version", value.asInstanceOf[js.Any])
     
     inline def `setMissing-verification-code`(value: Message): Self = StObject.set(x, "missing-verification-code", value.asInstanceOf[js.Any])
     
@@ -514,6 +566,8 @@ object GenericAuthErrorParams {
     inline def `setProvider-already-linked`(value: Message): Self = StObject.set(x, "provider-already-linked", value.asInstanceOf[js.Any])
     
     inline def `setQuota-exceeded`(value: Message): Self = StObject.set(x, "quota-exceeded", value.asInstanceOf[js.Any])
+    
+    inline def `setRecaptcha-not-enabled`(value: Message): Self = StObject.set(x, "recaptcha-not-enabled", value.asInstanceOf[js.Any])
     
     inline def `setRedirect-cancelled-by-user`(value: Message): Self = StObject.set(x, "redirect-cancelled-by-user", value.asInstanceOf[js.Any])
     

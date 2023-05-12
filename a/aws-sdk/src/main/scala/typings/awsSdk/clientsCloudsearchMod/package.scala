@@ -24,19 +24,19 @@ type AlgorithmicStemming = _AlgorithmicStemming | java.lang.String
   - typings.awsSdk.awsSdkStrings.bg_
   - typings.awsSdk.awsSdkStrings.ca_
   - typings.awsSdk.awsSdkStrings.cs_
-  - typings.awsSdk.awsSdkStrings.da
+  - typings.awsSdk.awsSdkStrings.da_
   - typings.awsSdk.awsSdkStrings.de_
-  - typings.awsSdk.awsSdkStrings.el
+  - typings.awsSdk.awsSdkStrings.el_
   - typings.awsSdk.awsSdkStrings.en_
   - typings.awsSdk.awsSdkStrings.es_
   - typings.awsSdk.awsSdkStrings.eu_
-  - typings.awsSdk.awsSdkStrings.fa
+  - typings.awsSdk.awsSdkStrings.fa_
   - typings.awsSdk.awsSdkStrings.fi_
   - typings.awsSdk.awsSdkStrings.fr_
   - typings.awsSdk.awsSdkStrings.ga_
   - typings.awsSdk.awsSdkStrings.gl_
   - typings.awsSdk.awsSdkStrings.he
-  - typings.awsSdk.awsSdkStrings.hi
+  - typings.awsSdk.awsSdkStrings.hi_
   - typings.awsSdk.awsSdkStrings.hu_
   - typings.awsSdk.awsSdkStrings.hy
   - typings.awsSdk.awsSdkStrings.id__

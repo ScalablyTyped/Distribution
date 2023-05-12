@@ -1,5 +1,28 @@
 package typings.arcgisJsApi.esri
 
+import typings.arcgisJsApi.arcgisJsApiStrings.esriFieldTypeBigInteger
+import typings.arcgisJsApi.arcgisJsApiStrings.esriFieldTypeBlob
+import typings.arcgisJsApi.arcgisJsApiStrings.esriFieldTypeDate
+import typings.arcgisJsApi.arcgisJsApiStrings.esriFieldTypeDouble
+import typings.arcgisJsApi.arcgisJsApiStrings.esriFieldTypeGUID
+import typings.arcgisJsApi.arcgisJsApiStrings.esriFieldTypeGeometry
+import typings.arcgisJsApi.arcgisJsApiStrings.esriFieldTypeGlobalID
+import typings.arcgisJsApi.arcgisJsApiStrings.esriFieldTypeInteger
+import typings.arcgisJsApi.arcgisJsApiStrings.esriFieldTypeOID
+import typings.arcgisJsApi.arcgisJsApiStrings.esriFieldTypeRaster
+import typings.arcgisJsApi.arcgisJsApiStrings.esriFieldTypeSingle
+import typings.arcgisJsApi.arcgisJsApiStrings.esriFieldTypeSmallInteger
+import typings.arcgisJsApi.arcgisJsApiStrings.esriFieldTypeString
+import typings.arcgisJsApi.arcgisJsApiStrings.esriFieldTypeXML
+import typings.arcgisJsApi.arcgisJsApiStrings.esriGraphPropertyDocumentContentType
+import typings.arcgisJsApi.arcgisJsApiStrings.esriGraphPropertyDocumentFileExtension
+import typings.arcgisJsApi.arcgisJsApiStrings.esriGraphPropertyDocumentKeywords
+import typings.arcgisJsApi.arcgisJsApiStrings.esriGraphPropertyDocumentMetadata
+import typings.arcgisJsApi.arcgisJsApiStrings.esriGraphPropertyDocumentName
+import typings.arcgisJsApi.arcgisJsApiStrings.esriGraphPropertyDocumentText
+import typings.arcgisJsApi.arcgisJsApiStrings.esriGraphPropertyDocumentTitle
+import typings.arcgisJsApi.arcgisJsApiStrings.esriGraphPropertyDocumentUrl
+import typings.arcgisJsApi.arcgisJsApiStrings.esriGraphPropertyRegular
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -43,7 +66,9 @@ trait GraphPropertyProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphProperty.html#fieldType)
     */
-  var fieldType: js.UndefOr[String] = js.undefined
+  var fieldType: js.UndefOr[
+    esriFieldTypeSmallInteger | esriFieldTypeInteger | esriFieldTypeSingle | esriFieldTypeDouble | esriFieldTypeString | esriFieldTypeDate | esriFieldTypeOID | esriFieldTypeGeometry | esriFieldTypeBlob | esriFieldTypeRaster | esriFieldTypeGUID | esriFieldTypeGlobalID | esriFieldTypeXML | esriFieldTypeBigInteger
+  ] = js.undefined
   
   /**
     * Specifies the geometry type for the property.
@@ -92,13 +117,13 @@ trait GraphPropertyProperties extends StObject {
   var required: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Specifies if the property can be searched and included in search results.
+    * Specifies the role of the property.
     *
-    * @default false
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphProperty.html#searchable)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphProperty.html#role)
     */
-  var searchable: js.UndefOr[Boolean] = js.undefined
+  var role: js.UndefOr[
+    esriGraphPropertyRegular | esriGraphPropertyDocumentName | esriGraphPropertyDocumentTitle | esriGraphPropertyDocumentUrl | esriGraphPropertyDocumentText | esriGraphPropertyDocumentKeywords | esriGraphPropertyDocumentContentType | esriGraphPropertyDocumentMetadata | esriGraphPropertyDocumentFileExtension
+  ] = js.undefined
   
   /**
     * Specifies if the property is system maintained.
@@ -133,7 +158,9 @@ object GraphPropertyProperties {
     
     inline def setEditableUndefined: Self = StObject.set(x, "editable", js.undefined)
     
-    inline def setFieldType(value: String): Self = StObject.set(x, "fieldType", value.asInstanceOf[js.Any])
+    inline def setFieldType(
+      value: esriFieldTypeSmallInteger | esriFieldTypeInteger | esriFieldTypeSingle | esriFieldTypeDouble | esriFieldTypeString | esriFieldTypeDate | esriFieldTypeOID | esriFieldTypeGeometry | esriFieldTypeBlob | esriFieldTypeRaster | esriFieldTypeGUID | esriFieldTypeGlobalID | esriFieldTypeXML | esriFieldTypeBigInteger
+    ): Self = StObject.set(x, "fieldType", value.asInstanceOf[js.Any])
     
     inline def setFieldTypeUndefined: Self = StObject.set(x, "fieldType", js.undefined)
     
@@ -161,9 +188,11 @@ object GraphPropertyProperties {
     
     inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
     
-    inline def setSearchable(value: Boolean): Self = StObject.set(x, "searchable", value.asInstanceOf[js.Any])
+    inline def setRole(
+      value: esriGraphPropertyRegular | esriGraphPropertyDocumentName | esriGraphPropertyDocumentTitle | esriGraphPropertyDocumentUrl | esriGraphPropertyDocumentText | esriGraphPropertyDocumentKeywords | esriGraphPropertyDocumentContentType | esriGraphPropertyDocumentMetadata | esriGraphPropertyDocumentFileExtension
+    ): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
-    inline def setSearchableUndefined: Self = StObject.set(x, "searchable", js.undefined)
+    inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
     
     inline def setSystemMaintained(value: Boolean): Self = StObject.set(x, "systemMaintained", value.asInstanceOf[js.Any])
     

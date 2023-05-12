@@ -2,10 +2,19 @@ package typings.officeJsPreview.Word
 
 import typings.officeJsPreview.OfficeExtension.ClientObject
 import typings.officeJsPreview.OfficeExtension.UpdateOptions
+import typings.officeJsPreview.Word.InsertLocation.end
+import typings.officeJsPreview.Word.InsertLocation.replace
+import typings.officeJsPreview.Word.InsertLocation.start
 import typings.officeJsPreview.Word.Interfaces.DocumentCreatedData
 import typings.officeJsPreview.Word.Interfaces.DocumentCreatedLoadOptions
 import typings.officeJsPreview.Word.Interfaces.DocumentCreatedUpdateData
 import typings.officeJsPreview.anon.Expand
+import typings.officeJsPreview.officeJsPreviewStrings.Character
+import typings.officeJsPreview.officeJsPreviewStrings.End
+import typings.officeJsPreview.officeJsPreviewStrings.Prompt
+import typings.officeJsPreview.officeJsPreviewStrings.Replace
+import typings.officeJsPreview.officeJsPreviewStrings.Save
+import typings.officeJsPreview.officeJsPreviewStrings.Start
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,6 +29,32 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DocumentCreated
   extends StObject
      with ClientObject {
+  
+  /**
+    * Adds a style into the document by name and type.
+    *
+    * @remarks
+    * [Api set: WordApi BETA (PREVIEW ONLY)]
+    * @beta
+    *
+    * @param name Required. A string representing the style name.
+    * @param type Required. The style type, including character, list, paragraph, or table.
+    */
+  def addStyle(
+    name: String,
+    `type`: Character | typings.officeJsPreview.officeJsPreviewStrings.List | typings.officeJsPreview.officeJsPreviewStrings.Paragraph | typings.officeJsPreview.officeJsPreviewStrings.Table
+  ): Style = js.native
+  /**
+    * Adds a style into the document by name and type.
+    *
+    * @remarks
+    * [Api set: WordApi BETA (PREVIEW ONLY)]
+    * @beta
+    *
+    * @param name Required. A string representing the style name.
+    * @param type Required. The style type, including character, list, paragraph, or table.
+    */
+  def addStyle(name: String, `type`: StyleType): Style = js.native
   
   /**
     * Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.
@@ -80,6 +115,50 @@ trait DocumentCreated
   def getBookmarkRangeOrNullObject(name: String): Range = js.native
   
   /**
+    * Gets the currently supported content controls in the document. **Important**: If specific types are provided in the options parameter, only content controls of supported types are returned.
+    Be aware that an exception will be thrown on using methods of a generic {@link Word.ContentControl} that aren't relevant for the specific type.
+    With time, additional types of content controls may be supported. Therefore, your add-in should request and handle specific types of content controls.
+    *
+    * @remarks
+    * [Api set: WordApi BETA (PREVIEW ONLY)]
+    * @beta
+    *
+    * @param options Optional. Options that define which content controls are returned.
+    */
+  def getContentControls(): ContentControlCollection = js.native
+  def getContentControls(options: ContentControlOptions): ContentControlCollection = js.native
+  
+  /**
+    * Gets a StyleCollection object that represents the whole style set of the document.
+    *
+    * @remarks
+    * [Api set: WordApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  def getStyles(): StyleCollection = js.native
+  
+  def insertFileFromBase64(base64File: String, insertLocation: Replace | Start | End): SectionCollection = js.native
+  def insertFileFromBase64(base64File: String, insertLocation: Replace | Start | End, insertFileOptions: InsertFileOptions): SectionCollection = js.native
+  def insertFileFromBase64(base64File: String, insertLocation: end): SectionCollection = js.native
+  def insertFileFromBase64(base64File: String, insertLocation: end, insertFileOptions: InsertFileOptions): SectionCollection = js.native
+  /**
+    * Inserts a document into the target document at a specific location with additional properties.
+    Headers, footers, watermarks, and other section properties are copied by default.
+    *
+    * @remarks
+    * [Api set: WordApi BETA (PREVIEW ONLY)]
+    * @beta
+    *
+    * @param base64File Required. The Base64-encoded content of a .docx file.
+    * @param insertLocation Required. The value must be 'Replace', 'Start', or 'End'.
+    * @param insertFileOptions Optional. The additional properties that should be imported to the destination document.
+    */
+  def insertFileFromBase64(base64File: String, insertLocation: replace): SectionCollection = js.native
+  def insertFileFromBase64(base64File: String, insertLocation: replace, insertFileOptions: InsertFileOptions): SectionCollection = js.native
+  def insertFileFromBase64(base64File: String, insertLocation: start): SectionCollection = js.native
+  def insertFileFromBase64(base64File: String, insertLocation: start, insertFileOptions: InsertFileOptions): SectionCollection = js.native
+  
+  /**
     * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     *
     * @param options Provides options for which properties of the object to load.
@@ -107,12 +186,20 @@ trait DocumentCreated
   val properties: DocumentProperties = js.native
   
   /**
-    * Saves the document. This uses the Word default file naming convention if the document has not been saved before.
+    * Saves the document.
     *
     * @remarks
     * [Api set: WordApiHiddenDocument 1.3]
+    *
+    * @param saveBehavior Optional. DocumentCreated only supports 'Save'.
+    * @param fileName Optional. The file name (exclude file extension). Only takes effect for a new document.
     */
   def save(): Unit = js.native
+  def save(saveBehavior: Save | Prompt): Unit = js.native
+  def save(saveBehavior: Save | Prompt, fileName: String): Unit = js.native
+  def save(saveBehavior: Unit, fileName: String): Unit = js.native
+  def save(saveBehavior: SaveBehavior): Unit = js.native
+  def save(saveBehavior: SaveBehavior, fileName: String): Unit = js.native
   
   /**
     * Indicates whether the changes in the document have been saved. A value of true indicates that the document hasn't changed since it was saved.

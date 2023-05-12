@@ -112,10 +112,10 @@ object libGridTreeViewMod {
     var css: Any = js.native
     
     /* CompleteClass */
-    var fHtml: String = js.native
+    var fHtml: Any = js.native
     
     /* CompleteClass */
-    override def getHtml(): String = js.native
+    override def getHtml(): Any = js.native
     
     /* CompleteClass */
     override def getIsFirst(): Boolean = js.native
@@ -254,9 +254,9 @@ object libGridTreeViewMod {
     
     var css: Any
     
-    var fHtml: String
+    var fHtml: Any
     
-    def getHtml(): String
+    def getHtml(): Any
     
     def getIsFirst(): Boolean
     
@@ -268,8 +268,8 @@ object libGridTreeViewMod {
     
     inline def apply(
       css: Any,
-      fHtml: String,
-      getHtml: () => String,
+      fHtml: Any,
+      getHtml: () => Any,
       getIsFirst: () => Boolean,
       getIsLast: () => Boolean,
       nId: Any
@@ -283,9 +283,9 @@ object libGridTreeViewMod {
       
       inline def setCss(value: Any): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
       
-      inline def setFHtml(value: String): Self = StObject.set(x, "fHtml", value.asInstanceOf[js.Any])
+      inline def setFHtml(value: Any): Self = StObject.set(x, "fHtml", value.asInstanceOf[js.Any])
       
-      inline def setGetHtml(value: () => String): Self = StObject.set(x, "getHtml", js.Any.fromFunction0(value))
+      inline def setGetHtml(value: () => Any): Self = StObject.set(x, "getHtml", js.Any.fromFunction0(value))
       
       inline def setGetIsFirst(value: () => Boolean): Self = StObject.set(x, "getIsFirst", js.Any.fromFunction0(value))
       

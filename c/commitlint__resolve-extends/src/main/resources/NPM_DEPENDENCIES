@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@commitlint/resolve-extends" : "17.1.0"
+      "@commitlint/resolve-extends" : "17.4.4"
     }
   ],
   "test-dependencies" : [
     {
-      "@commitlint/resolve-extends" : "17.1.0"
+      "@commitlint/resolve-extends" : "17.4.4"
     }
   ],
   "compile-devDependencies" : [

@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** @typedef {import('../../entity.js').Entity} Entity */
-/** @typedef {import('../../../platform/sound/instance.js').SoundInstance} SoundInstance */
-/** @typedef {import('./system.js').SoundComponentSystem} SoundComponentSystem */
 /**
   * The Sound Component controls playback of {@link Sound}s.
   *
@@ -19,8 +16,10 @@ open class SoundComponent protected ()
   /**
     * Create a new Sound Component.
     *
-    * @param {SoundComponentSystem} system - The ComponentSystem that created this component.
-    * @param {Entity} entity - The entity that the Component is attached to.
+    * @param {import('./system.js').SoundComponentSystem} system - The ComponentSystem that
+    * created this component.
+    * @param {import('../../entity.js').Entity} entity - The entity that the Component is attached
+    * to.
     */
   def this(system: typings.playcanvas.mod.SoundComponentSystem, entity: typings.playcanvas.mod.Entity) = this()
 }

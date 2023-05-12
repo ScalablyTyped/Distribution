@@ -1,6 +1,7 @@
 package typings.httpsProxyAgent
 
-import typings.node.bufferMod.global.Buffer
+import typings.httpsProxyAgent.anon.Buffered
+import typings.node.httpMod.IncomingHttpHeaders
 import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,27 +13,31 @@ object distParseProxyResponseMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(socket: Readable): js.Promise[ProxyResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(socket.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ProxyResponse]]
+  inline def parseProxyResponse(socket: Readable): js.Promise[Buffered] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseProxyResponse")(socket.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Buffered]]
   
-  trait ProxyResponse extends StObject {
+  trait ConnectResponse extends StObject {
     
-    var buffered: Buffer
+    var headers: IncomingHttpHeaders
     
     var statusCode: Double
-  }
-  object ProxyResponse {
     
-    inline def apply(buffered: Buffer, statusCode: Double): ProxyResponse = {
-      val __obj = js.Dynamic.literal(buffered = buffered.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
-      __obj.asInstanceOf[ProxyResponse]
+    var statusText: String
+  }
+  object ConnectResponse {
+    
+    inline def apply(headers: IncomingHttpHeaders, statusCode: Double, statusText: String): ConnectResponse = {
+      val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any], statusText = statusText.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ConnectResponse]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: ProxyResponse] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: ConnectResponse] (val x: Self) extends AnyVal {
       
-      inline def setBuffered(value: Buffer): Self = StObject.set(x, "buffered", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: IncomingHttpHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
       inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+      
+      inline def setStatusText(value: String): Self = StObject.set(x, "statusText", value.asInstanceOf[js.Any])
     }
   }
 }

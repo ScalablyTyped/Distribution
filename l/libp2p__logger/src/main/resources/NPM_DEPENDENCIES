@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@libp2p/logger" : "2.0.2"
+      "@libp2p/logger" : "2.0.7"
     }
   ],
   "test-dependencies" : [
     {
-      "@libp2p/logger" : "2.0.2"
+      "@libp2p/logger" : "2.0.7"
     }
   ],
   "compile-devDependencies" : [

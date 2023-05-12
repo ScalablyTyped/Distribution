@@ -1,7 +1,7 @@
 
 # Scala.js typings for ansi-escapes
 
-Typings are for version 6.0.0
+Typings are for version 6.2.0
 
 ## Library description:
 ANSI escape codes for manipulating the terminal

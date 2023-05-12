@@ -173,7 +173,7 @@ object typesRuntimeSceneMod {
     
     var height: Double
     
-    var items: js.Array[SceneItem]
+    var items: js.Array[Scene]
     
     var stroke: js.UndefOr[String] = js.undefined
     
@@ -185,7 +185,7 @@ object typesRuntimeSceneMod {
       bounds: Bounds,
       context: SceneContext,
       height: Double,
-      items: js.Array[SceneItem],
+      items: js.Array[Scene],
       mark: typings.vegaTypings.anon.Bounds,
       width: Double,
       x: Double,
@@ -202,9 +202,9 @@ object typesRuntimeSceneMod {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      inline def setItems(value: js.Array[SceneItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: js.Array[Scene]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      inline def setItemsVarargs(value: SceneItem*): Self = StObject.set(x, "items", js.Array(value*))
+      inline def setItemsVarargs(value: Scene*): Self = StObject.set(x, "items", js.Array(value*))
       
       inline def setStroke(value: String): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
       

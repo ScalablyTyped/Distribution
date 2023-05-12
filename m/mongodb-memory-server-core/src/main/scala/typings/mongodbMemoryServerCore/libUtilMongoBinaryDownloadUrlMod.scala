@@ -21,10 +21,10 @@ object libUtilMongoBinaryDownloadUrlMod {
     val ^ : js.Any = js.native
     
     /**
-      * Translate input arch to mongodb useable arch
+      * Translate input arch to mongodb-archive useable arch
+      * @param arch The Architecture to translate to a mongodb archive architecture
       * @example
       * x64 -> x86_64
-      * @param platform The Platform to translate
       */
     inline def translateArch(arch: String, mongoPlatform: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("translateArch")(arch.asInstanceOf[js.Any], mongoPlatform.asInstanceOf[js.Any])).asInstanceOf[String]
   }
@@ -119,10 +119,10 @@ object libUtilMongoBinaryDownloadUrlMod {
     var platform: String = js.native
     
     /**
-      * Translate input platform to mongodb useable platform
+      * Translate input platform to mongodb-archive useable platform
+      * @param platform The Platform to translate to a mongodb archive platform
       * @example
       * darwin -> osx
-      * @param platform The Platform to translate
       */
     def translatePlatform(platform: String): String = js.native
     
@@ -137,10 +137,10 @@ object libUtilMongoBinaryDownloadUrlMod {
     val ^ : js.Any = js.native
     
     /**
-      * Translate input arch to mongodb useable arch
+      * Translate input arch to mongodb-archive useable arch
+      * @param arch The Architecture to translate to a mongodb archive architecture
       * @example
       * x64 -> x86_64
-      * @param platform The Platform to translate
       */
     inline def translateArch(arch: String, mongoPlatform: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("translateArch")(arch.asInstanceOf[js.Any], mongoPlatform.asInstanceOf[js.Any])).asInstanceOf[String]
   }

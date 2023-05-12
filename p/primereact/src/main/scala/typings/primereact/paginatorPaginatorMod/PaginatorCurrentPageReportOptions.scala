@@ -5,24 +5,54 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+  * Custom paginator current page report options
+  */
 trait PaginatorCurrentPageReportOptions extends StObject {
   
+  /**
+    * Style class of the element.
+    */
   var className: String
   
+  /**
+    * The current page number.
+    */
   var currentPage: Double
   
+  /**
+    * JSX element to be used as the current page report element.
+    */
   var element: Element
   
+  /**
+    * The first number of the current page.
+    */
   var first: Double
   
+  /**
+    * The last number of the current page.
+    */
   var last: Double
   
+  /**
+    * The props of Paginator component.
+    */
   var props: PaginatorProps
   
+  /**
+    * The number of rows per page.
+    */
   var rows: Double
   
+  /**
+    * The total number of pages.
+    */
   var totalPages: Double
   
+  /**
+    * The total number of records.
+    */
   var totalRecords: Double
 }
 object PaginatorCurrentPageReportOptions {

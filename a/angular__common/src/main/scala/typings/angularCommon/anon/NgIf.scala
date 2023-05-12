@@ -1,34 +1,31 @@
 package typings.angularCommon.anon
 
-import typings.angularCommon.angularCommonStrings.ngIf
-import typings.angularCommon.angularCommonStrings.ngIfElse
-import typings.angularCommon.angularCommonStrings.ngIfThen
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait NgIf extends StObject {
   
-  var ngIf: typings.angularCommon.angularCommonStrings.ngIf
+  var ngIf: `13`
   
-  var ngIfElse: typings.angularCommon.angularCommonStrings.ngIfElse
+  var ngIfElse: `15`
   
-  var ngIfThen: typings.angularCommon.angularCommonStrings.ngIfThen
+  var ngIfThen: `14`
 }
 object NgIf {
   
-  inline def apply(): NgIf = {
-    val __obj = js.Dynamic.literal(ngIf = "ngIf", ngIfElse = "ngIfElse", ngIfThen = "ngIfThen")
+  inline def apply(ngIf: `13`, ngIfElse: `15`, ngIfThen: `14`): NgIf = {
+    val __obj = js.Dynamic.literal(ngIf = ngIf.asInstanceOf[js.Any], ngIfElse = ngIfElse.asInstanceOf[js.Any], ngIfThen = ngIfThen.asInstanceOf[js.Any])
     __obj.asInstanceOf[NgIf]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: NgIf] (val x: Self) extends AnyVal {
     
-    inline def setNgIf(value: ngIf): Self = StObject.set(x, "ngIf", value.asInstanceOf[js.Any])
+    inline def setNgIf(value: `13`): Self = StObject.set(x, "ngIf", value.asInstanceOf[js.Any])
     
-    inline def setNgIfElse(value: ngIfElse): Self = StObject.set(x, "ngIfElse", value.asInstanceOf[js.Any])
+    inline def setNgIfElse(value: `15`): Self = StObject.set(x, "ngIfElse", value.asInstanceOf[js.Any])
     
-    inline def setNgIfThen(value: ngIfThen): Self = StObject.set(x, "ngIfThen", value.asInstanceOf[js.Any])
+    inline def setNgIfThen(value: `14`): Self = StObject.set(x, "ngIfThen", value.asInstanceOf[js.Any])
   }
 }

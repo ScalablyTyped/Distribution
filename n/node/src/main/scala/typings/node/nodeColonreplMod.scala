@@ -18,7 +18,7 @@ object nodeColonreplMod {
     * or directly using the JavaScript `new` keyword.
     *
     * ```js
-    * const repl = require('repl');
+    * const repl = require('node:repl');
     *
     * const options = { useColors: true };
     *
@@ -37,7 +37,7 @@ object nodeColonreplMod {
     *
     * `REPLServer` cannot be subclassed due to implementation specifics in NodeJS.
     *
-    * @see https://nodejs.org/dist/latest-v10.x/docs/api/repl.html#repl_class_replserver
+    * @see https://nodejs.org/dist/latest-v20.x/docs/api/repl.html#repl_class_replserver
     */
   /* private */ open class REPLServer () extends StObject
   
@@ -59,7 +59,7 @@ object nodeColonreplMod {
   /**
     * Indicates a recoverable error that a `REPLServer` can use to support multi-line input.
     *
-    * @see https://nodejs.org/dist/latest-v10.x/docs/api/repl.html#repl_recoverable_errors
+    * @see https://nodejs.org/dist/latest-v20.x/docs/api/repl.html#repl_recoverable_errors
     */
   @JSImport("node:repl", "Recoverable")
   @js.native
@@ -74,7 +74,7 @@ object nodeColonreplMod {
     * If `options` is a string, then it specifies the input prompt:
     *
     * ```js
-    * const repl = require('repl');
+    * const repl = require('node:repl');
     *
     * // a Unix style prompt
     * repl.start('$ ');

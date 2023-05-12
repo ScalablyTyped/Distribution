@@ -1,6 +1,7 @@
 package typings.firefoxWebextBrowser.browser
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.firefoxWebextBrowser.WebExtEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,6 +36,12 @@ object storage {
     var getBytesInUse: js.UndefOr[
         js.Function1[/* keys */ js.UndefOr[String | js.Array[String]], js.Promise[Double]]
       ] = js.native
+    
+    /**
+      * Fired when one or more items change.
+      * @param changes Object mapping each key that changed to its corresponding `storage.StorageChange` for that item.
+      */
+    var onChanged: WebExtEvent[js.Function1[/* changes */ StringDictionary[StorageChange], Unit]] = js.native
     
     /**
       * Removes one or more items from storage.
@@ -74,6 +81,12 @@ object storage {
     def getBytesInUse(): js.Promise[Double] = js.native
     def getBytesInUse(keys: String): js.Promise[Double] = js.native
     def getBytesInUse(keys: js.Array[String]): js.Promise[Double] = js.native
+    
+    /**
+      * Fired when one or more items change.
+      * @param changes Object mapping each key that changed to its corresponding `storage.StorageChange` for that item.
+      */
+    var onChanged: WebExtEvent[js.Function1[/* changes */ StringDictionary[StorageChange], Unit]] = js.native
     
     /**
       * Removes one or more items from storage.

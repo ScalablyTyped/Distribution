@@ -13,14 +13,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * In the API documentation, this is sometimes referred to as the executionContext.
   * Subscribe to this event with {@link Data.addOnLoad()}
   * Not to be confused with {@link LoadEventContext}, registered in the designer.
-  * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/reference/execution-context Execution context (Client API reference)}
+  * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/reference/execution-context External Link: Execution context (Client API reference)}
   */
 trait DataLoadEventContext
   extends StObject
      with EventContext {
   
   /**
-    * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/reference/executioncontext/geteventargs#return-value getEventArgs (Client API reference)}
+    * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/reference/executioncontext/geteventargs#return-value External Link: getEventArgs (Client API reference)}
     */
   def getEventArgs(): DataLoadEventArguments
 }

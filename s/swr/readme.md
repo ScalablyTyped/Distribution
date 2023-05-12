@@ -1,7 +1,7 @@
 
 # Scala.js typings for swr
 
-Typings are for version 1.3.0
+Typings are for version 2.1.5
 
 ## Library description:
 React Hooks library for remote data fetching

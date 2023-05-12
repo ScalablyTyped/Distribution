@@ -79,7 +79,11 @@ trait Team
     */
   var specialization: js.UndefOr[NullableOption[TeamSpecialization]] = js.undefined
   
+  // Contains summary information about the team, including number of owners, members, and guests.
   var summary: js.UndefOr[NullableOption[TeamSummary]] = js.undefined
+  
+  // The tags associated with the team.
+  var tags: js.UndefOr[NullableOption[js.Array[TeamworkTag]]] = js.undefined
   
   // The template this team was created from. See available templates.
   var template: js.UndefOr[NullableOption[TeamsTemplate]] = js.undefined
@@ -250,6 +254,14 @@ object Team {
     inline def setSummaryNull: Self = StObject.set(x, "summary", null)
     
     inline def setSummaryUndefined: Self = StObject.set(x, "summary", js.undefined)
+    
+    inline def setTags(value: NullableOption[js.Array[TeamworkTag]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    
+    inline def setTagsNull: Self = StObject.set(x, "tags", null)
+    
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    
+    inline def setTagsVarargs(value: TeamworkTag*): Self = StObject.set(x, "tags", js.Array(value*))
     
     inline def setTemplate(value: NullableOption[TeamsTemplate]): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     

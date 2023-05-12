@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BindingElement
   extends StObject
      with NamedDeclaration
+     with FlowContainer
      with ArrayBindingElement
      with HasExpressionInitializer
      with ObjectBindingOrAssignmentElement

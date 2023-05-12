@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** @typedef {import('./keyboard.js').Keyboard} Keyboard */
 /**
   * The KeyboardEvent is passed into all event callbacks from the {@link Keyboard}. It corresponds
   * to a key press or release.
@@ -16,10 +15,11 @@ open class KeyboardEvent protected ()
   /**
     * Create a new KeyboardEvent.
     *
-    * @param {Keyboard} keyboard - The keyboard object which is firing the event.
+    * @param {import('./keyboard.js').Keyboard} keyboard - The keyboard object which is firing the
+    * event.
     * @param {globalThis.KeyboardEvent} event - The original browser event that was fired.
     * @example
-    * var onKeyDown = function (e) {
+    * const onKeyDown = function (e) {
     *     if (e.key === pc.KEY_SPACE) {
     *         // space key pressed
     *     }

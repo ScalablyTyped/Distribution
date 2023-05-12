@@ -20,6 +20,8 @@ object typesIntegrationMod {
   @js.native
   val installedIntegrations: js.Array[String] = js.native
   
+  inline def setupIntegration(integration: Integration, integrationIndex: IntegrationIndex): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setupIntegration")(integration.asInstanceOf[js.Any], integrationIndex.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   inline def setupIntegrations(integrations: js.Array[Integration]): IntegrationIndex = ^.asInstanceOf[js.Dynamic].applyDynamic("setupIntegrations")(integrations.asInstanceOf[js.Any]).asInstanceOf[IntegrationIndex]
   
   type IntegrationIndex = StringDictionary[Integration]

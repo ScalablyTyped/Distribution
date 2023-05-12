@@ -185,6 +185,8 @@ trait WidgetProps extends StObject {
   
   var autoCorrect: js.UndefOr[String] = js.native
   
+  var autoFocus: js.UndefOr[Boolean] = js.native
+  
   var autoSave: js.UndefOr[String] = js.native
   
   var autofocus: Boolean = js.native
@@ -194,6 +196,8 @@ trait WidgetProps extends StObject {
   var className: js.UndefOr[String] = js.native
   
   var color: js.UndefOr[String] = js.native
+  
+  var content: js.UndefOr[String] = js.native
   
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
   
@@ -428,11 +432,15 @@ trait WidgetProps extends StObject {
   
   var readonly: Boolean = js.native
   
+  var rel: js.UndefOr[String] = js.native
+  
   var required: Boolean = js.native
   
   var resource: js.UndefOr[String] = js.native
   
   var results: js.UndefOr[Double] = js.native
+  
+  var rev: js.UndefOr[String] = js.native
   
   var role: js.UndefOr[AriaRole] = js.native
   

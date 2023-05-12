@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GenerateEmbedUrlForAnonymousUserResponse extends StObject {
   
   /**
+    * The Amazon Resource Name (ARN) to use for the anonymous Amazon QuickSight user.
+    */
+  var AnonymousUserArn: Arn
+  
+  /**
     * The embed URL for the dashboard.
     */
   var EmbedUrl: EmbeddingUrl
@@ -23,13 +28,15 @@ trait GenerateEmbedUrlForAnonymousUserResponse extends StObject {
 }
 object GenerateEmbedUrlForAnonymousUserResponse {
   
-  inline def apply(EmbedUrl: EmbeddingUrl, RequestId: String, Status: StatusCode): GenerateEmbedUrlForAnonymousUserResponse = {
-    val __obj = js.Dynamic.literal(EmbedUrl = EmbedUrl.asInstanceOf[js.Any], RequestId = RequestId.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any])
+  inline def apply(AnonymousUserArn: Arn, EmbedUrl: EmbeddingUrl, RequestId: String, Status: StatusCode): GenerateEmbedUrlForAnonymousUserResponse = {
+    val __obj = js.Dynamic.literal(AnonymousUserArn = AnonymousUserArn.asInstanceOf[js.Any], EmbedUrl = EmbedUrl.asInstanceOf[js.Any], RequestId = RequestId.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[GenerateEmbedUrlForAnonymousUserResponse]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: GenerateEmbedUrlForAnonymousUserResponse] (val x: Self) extends AnyVal {
+    
+    inline def setAnonymousUserArn(value: Arn): Self = StObject.set(x, "AnonymousUserArn", value.asInstanceOf[js.Any])
     
     inline def setEmbedUrl(value: EmbeddingUrl): Self = StObject.set(x, "EmbedUrl", value.asInstanceOf[js.Any])
     

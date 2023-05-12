@@ -28,12 +28,12 @@ object clientsAppconfigdataMod {
     var config_AppConfigData: ConfigBase & ClientConfiguration = js.native
     
     /**
-      * Retrieves the latest deployed configuration. This API may return empty configuration data if the client already has the latest version. For more information about this API action and to view example CLI commands that show how to use it with the StartConfigurationSession API action, see Receiving the configuration in the AppConfig User Guide.   Note the following important information.   Each configuration token is only valid for one call to GetLatestConfiguration. The GetLatestConfiguration response includes a NextPollConfigurationToken that should always replace the token used for the just-completed call in preparation for the next one.     GetLatestConfiguration is a priced call. For more information, see Pricing.   
+      * Retrieves the latest deployed configuration. This API may return empty configuration data if the client already has the latest version. For more information about this API action and to view example CLI commands that show how to use it with the StartConfigurationSession API action, see Retrieving the configuration in the AppConfig User Guide.   Note the following important information.   Each configuration token is only valid for one call to GetLatestConfiguration. The GetLatestConfiguration response includes a NextPollConfigurationToken that should always replace the token used for the just-completed call in preparation for the next one.     GetLatestConfiguration is a priced call. For more information, see Pricing.   
       */
     def getLatestConfiguration(): Request[GetLatestConfigurationResponse, AWSError] = js.native
     def getLatestConfiguration(callback: js.Function2[/* err */ AWSError, /* data */ GetLatestConfigurationResponse, Unit]): Request[GetLatestConfigurationResponse, AWSError] = js.native
     /**
-      * Retrieves the latest deployed configuration. This API may return empty configuration data if the client already has the latest version. For more information about this API action and to view example CLI commands that show how to use it with the StartConfigurationSession API action, see Receiving the configuration in the AppConfig User Guide.   Note the following important information.   Each configuration token is only valid for one call to GetLatestConfiguration. The GetLatestConfiguration response includes a NextPollConfigurationToken that should always replace the token used for the just-completed call in preparation for the next one.     GetLatestConfiguration is a priced call. For more information, see Pricing.   
+      * Retrieves the latest deployed configuration. This API may return empty configuration data if the client already has the latest version. For more information about this API action and to view example CLI commands that show how to use it with the StartConfigurationSession API action, see Retrieving the configuration in the AppConfig User Guide.   Note the following important information.   Each configuration token is only valid for one call to GetLatestConfiguration. The GetLatestConfiguration response includes a NextPollConfigurationToken that should always replace the token used for the just-completed call in preparation for the next one.     GetLatestConfiguration is a priced call. For more information, see Pricing.   
       */
     def getLatestConfiguration(params: GetLatestConfigurationRequest): Request[GetLatestConfigurationResponse, AWSError] = js.native
     def getLatestConfiguration(
@@ -42,12 +42,12 @@ object clientsAppconfigdataMod {
     ): Request[GetLatestConfigurationResponse, AWSError] = js.native
     
     /**
-      * Starts a configuration session used to retrieve a deployed configuration. For more information about this API action and to view example CLI commands that show how to use it with the GetLatestConfiguration API action, see Receiving the configuration in the AppConfig User Guide. 
+      * Starts a configuration session used to retrieve a deployed configuration. For more information about this API action and to view example CLI commands that show how to use it with the GetLatestConfiguration API action, see Retrieving the configuration in the AppConfig User Guide. 
       */
     def startConfigurationSession(): Request[StartConfigurationSessionResponse, AWSError] = js.native
     def startConfigurationSession(callback: js.Function2[/* err */ AWSError, /* data */ StartConfigurationSessionResponse, Unit]): Request[StartConfigurationSessionResponse, AWSError] = js.native
     /**
-      * Starts a configuration session used to retrieve a deployed configuration. For more information about this API action and to view example CLI commands that show how to use it with the GetLatestConfiguration API action, see Receiving the configuration in the AppConfig User Guide. 
+      * Starts a configuration session used to retrieve a deployed configuration. For more information about this API action and to view example CLI commands that show how to use it with the GetLatestConfiguration API action, see Retrieving the configuration in the AppConfig User Guide. 
       */
     def startConfigurationSession(params: StartConfigurationSessionRequest): Request[StartConfigurationSessionResponse, AWSError] = js.native
     def startConfigurationSession(
@@ -89,7 +89,7 @@ object clientsAppconfigdataMod {
   trait GetLatestConfigurationRequest extends StObject {
     
     /**
-      * Token describing the current state of the configuration session. To obtain a token, first call the StartConfigurationSession API. Note that every call to GetLatestConfiguration will return a new ConfigurationToken (NextPollConfigurationToken in the response) and MUST be provided to subsequent GetLatestConfiguration API calls.
+      * Token describing the current state of the configuration session. To obtain a token, first call the StartConfigurationSession API. Note that every call to GetLatestConfiguration will return a new ConfigurationToken (NextPollConfigurationToken in the response) and must be provided to subsequent GetLatestConfiguration API calls.  This token should only be used once. To support long poll use cases, the token is valid for up to 24 hours. If a GetLatestConfiguration call uses an expired token, the system returns BadRequestException. 
       */
     var ConfigurationToken: Token
   }
@@ -112,7 +112,7 @@ object clientsAppconfigdataMod {
     /**
       * The data of the configuration. This may be empty if the client already has the latest version of configuration.
       */
-    var Configuration: js.UndefOr[SyntheticGetLatestConfigurationResponseBlob] = js.undefined
+    var Configuration: js.UndefOr[SensitiveBlob] = js.undefined
     
     /**
       * A standard MIME type describing the format of the configuration content.
@@ -120,7 +120,7 @@ object clientsAppconfigdataMod {
     var ContentType: js.UndefOr[String] = js.undefined
     
     /**
-      * The latest token describing the current state of the configuration session. This MUST be provided to the next call to GetLatestConfiguration. 
+      * The latest token describing the current state of the configuration session. This must be provided to the next call to GetLatestConfiguration.   This token should only be used once. To support long poll use cases, the token is valid for up to 24 hours. If a GetLatestConfiguration call uses an expired token, the system returns BadRequestException. 
       */
     var NextPollConfigurationToken: js.UndefOr[Token] = js.undefined
     
@@ -128,6 +128,11 @@ object clientsAppconfigdataMod {
       * The amount of time the client should wait before polling for configuration updates again. Use RequiredMinimumPollIntervalInSeconds to set the desired poll interval.
       */
     var NextPollIntervalInSeconds: js.UndefOr[Integer] = js.undefined
+    
+    /**
+      * The user-defined label for the AppConfig hosted configuration version. This attribute doesn't apply if the configuration is not from an AppConfig hosted configuration version. If the client already has the latest version of the configuration data, this value is empty.
+      */
+    var VersionLabel: js.UndefOr[String] = js.undefined
   }
   object GetLatestConfigurationResponse {
     
@@ -139,7 +144,7 @@ object clientsAppconfigdataMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: GetLatestConfigurationResponse] (val x: Self) extends AnyVal {
       
-      inline def setConfiguration(value: SyntheticGetLatestConfigurationResponseBlob): Self = StObject.set(x, "Configuration", value.asInstanceOf[js.Any])
+      inline def setConfiguration(value: SensitiveBlob): Self = StObject.set(x, "Configuration", value.asInstanceOf[js.Any])
       
       inline def setConfigurationUndefined: Self = StObject.set(x, "Configuration", js.undefined)
       
@@ -154,6 +159,10 @@ object clientsAppconfigdataMod {
       inline def setNextPollIntervalInSeconds(value: Integer): Self = StObject.set(x, "NextPollIntervalInSeconds", value.asInstanceOf[js.Any])
       
       inline def setNextPollIntervalInSecondsUndefined: Self = StObject.set(x, "NextPollIntervalInSeconds", js.undefined)
+      
+      inline def setVersionLabel(value: String): Self = StObject.set(x, "VersionLabel", value.asInstanceOf[js.Any])
+      
+      inline def setVersionLabelUndefined: Self = StObject.set(x, "VersionLabel", js.undefined)
     }
   }
   
@@ -162,6 +171,8 @@ object clientsAppconfigdataMod {
   type Integer = Double
   
   type OptionalPollSeconds = Double
+  
+  type SensitiveBlob = Buffer | js.typedarray.Uint8Array | Blob | java.lang.String
   
   trait StartConfigurationSessionRequest extends StObject {
     
@@ -181,7 +192,7 @@ object clientsAppconfigdataMod {
     var EnvironmentIdentifier: Identifier
     
     /**
-      * Sets a constraint on a session. If you specify a value of, for example, 60 seconds, then the client that established the session can't call GetLatestConfiguration more frequently then every 60 seconds.
+      * Sets a constraint on a session. If you specify a value of, for example, 60 seconds, then the client that established the session can't call GetLatestConfiguration more frequently than every 60 seconds.
       */
     var RequiredMinimumPollIntervalInSeconds: js.UndefOr[OptionalPollSeconds] = js.undefined
   }
@@ -214,7 +225,7 @@ object clientsAppconfigdataMod {
   trait StartConfigurationSessionResponse extends StObject {
     
     /**
-      * Token encapsulating state about the configuration session. Provide this token to the GetLatestConfiguration API to retrieve configuration data.  This token should only be used once in your first call to GetLatestConfiguration. You MUST use the new token in the GetLatestConfiguration response (NextPollConfigurationToken) in each subsequent call to GetLatestConfiguration. 
+      * Token encapsulating state about the configuration session. Provide this token to the GetLatestConfiguration API to retrieve configuration data.  This token should only be used once in your first call to GetLatestConfiguration. You must use the new token in the GetLatestConfiguration response (NextPollConfigurationToken) in each subsequent call to GetLatestConfiguration. The InitialConfigurationToken and NextPollConfigurationToken should only be used once. To support long poll use cases, the tokens are valid for up to 24 hours. If a GetLatestConfiguration call uses an expired token, the system returns BadRequestException. 
       */
     var InitialConfigurationToken: js.UndefOr[Token] = js.undefined
   }
@@ -235,8 +246,6 @@ object clientsAppconfigdataMod {
   }
   
   type String = java.lang.String
-  
-  type SyntheticGetLatestConfigurationResponseBlob = Buffer | js.typedarray.Uint8Array | Blob | java.lang.String
   
   type Token = java.lang.String
   

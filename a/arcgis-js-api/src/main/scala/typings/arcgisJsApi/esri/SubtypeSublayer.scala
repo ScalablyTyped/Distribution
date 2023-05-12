@@ -1,6 +1,8 @@
 package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.arcgisJsApiStrings.`subtype-sublayer`
+import typings.std.FormData
+import typings.std.HTMLFormElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,6 +12,14 @@ trait SubtypeSublayer
   extends StObject
      with Identifiable {
   
+  def addAttachment(feature: Graphic, attachment: FormData): js.Promise[Any] = js.native
+  /**
+    * Adds an attachment to a feature.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-SubtypeSublayer.html#addAttachment)
+    */
+  def addAttachment(feature: Graphic, attachment: HTMLFormElement): js.Promise[Any] = js.native
+  
   /**
     * Creates a popup template for the layer, populated with all the fields of the layer.
     *
@@ -17,6 +27,13 @@ trait SubtypeSublayer
     */
   def createPopupTemplate(): PopupTemplate = js.native
   def createPopupTemplate(options: CreatePopupTemplateOptions): PopupTemplate = js.native
+  
+  /**
+    * Deletes attachments from a feature.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-SubtypeSublayer.html#deleteAttachments)
+    */
+  def deleteAttachments(feature: Graphic, attachmentIds: js.Array[Double]): js.Promise[Any] = js.native
   
   /**
     * Determines if the layer is editable.
@@ -28,11 +45,18 @@ trait SubtypeSublayer
   var editingEnabled: Boolean = js.native
   
   /**
+    * Indicates whether the layer is editable taking in to consideration privileges of the currently signed-in user and whether the parent subtype group layer is editable or not.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-SubtypeSublayer.html#effectiveEditingEnabled)
+    */
+  val effectiveEditingEnabled: Boolean = js.native
+  
+  /**
     * An array of fields in the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-SubtypeSublayer.html#fields)
     */
-  var fields: js.Array[Field] = js.native
+  val fields: js.Array[Field] = js.native
   
   /**
     * The [template](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-FormTemplate.html) used in an associated layer's [FeatureForm](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm.html).
@@ -99,6 +123,13 @@ trait SubtypeSublayer
   var minScale: Double = js.native
   
   /**
+    * The name of an `oid` [field](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-SubtypeSublayer.html#fields) containing a unique value or identifier for each feature in the layer.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-SubtypeSublayer.html#objectIdField)
+    */
+  var objectIdField: String = js.native
+  
+  /**
     * The opacity of the layer.
     *
     * @default 1
@@ -124,11 +155,28 @@ trait SubtypeSublayer
   var popupTemplate: PopupTemplate = js.native
   
   /**
+    * Query information about attachments associated with features.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-SubtypeSublayer.html#queryAttachments)
+    */
+  def queryAttachments(attachmentQuery: AttachmentQuery): js.Promise[Any] = js.native
+  def queryAttachments(attachmentQuery: AttachmentQueryProperties): js.Promise[Any] = js.native
+  def queryAttachments(attachmentQuery: AttachmentQueryProperties, options: SubtypeSublayerQueryAttachmentsOptions): js.Promise[Any] = js.native
+  def queryAttachments(attachmentQuery: AttachmentQuery, options: SubtypeSublayerQueryAttachmentsOptions): js.Promise[Any] = js.native
+  
+  /**
     * The renderer assigned to the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-SubtypeSublayer.html#renderer)
     */
   var renderer: Renderer = js.native
+  
+  /**
+    * The spatial reference of the layer.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-SubtypeSublayer.html#spatialReference)
+    */
+  var spatialReference: SpatialReference = js.native
   
   /**
     * The unique identifier representing the [SubtypeSublayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-SubtypeSublayer.html) created from the [SubtypeGroupLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-SubtypeGroupLayer.html).
@@ -154,6 +202,14 @@ trait SubtypeSublayer
   var title: String = js.native
   
   val `type`: `subtype-sublayer` = js.native
+  
+  def updateAttachment(feature: Graphic, attachmentId: Double, attachment: FormData): js.Promise[Any] = js.native
+  /**
+    * Updates an existing attachment for a feature.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-SubtypeSublayer.html#updateAttachment)
+    */
+  def updateAttachment(feature: Graphic, attachmentId: Double, attachment: HTMLFormElement): js.Promise[Any] = js.native
   
   /**
     * Indicates if the layer is visible in the [View](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html).

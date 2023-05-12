@@ -16,7 +16,7 @@ object libIconsSlidersTwoToneMod extends Shortcut {
   @js.native
   trait SlidersTwoToneIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_SlidersTwoToneIconType: String = js.native

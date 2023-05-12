@@ -15,6 +15,11 @@ trait EvaluationResultIdentifier extends StObject {
     * The time of the event that triggered the evaluation of your Amazon Web Services resources. The time can indicate when Config delivered a configuration item change notification, or it can indicate when Config delivered the configuration snapshot, depending on which event triggered the evaluation.
     */
   var OrderingTimestamp: js.UndefOr[js.Date] = js.undefined
+  
+  /**
+    * A Unique ID for an evaluation result.
+    */
+  var ResourceEvaluationId: js.UndefOr[typings.awsSdk.clientsConfigserviceMod.ResourceEvaluationId] = js.undefined
 }
 object EvaluationResultIdentifier {
   
@@ -33,5 +38,9 @@ object EvaluationResultIdentifier {
     inline def setOrderingTimestamp(value: js.Date): Self = StObject.set(x, "OrderingTimestamp", value.asInstanceOf[js.Any])
     
     inline def setOrderingTimestampUndefined: Self = StObject.set(x, "OrderingTimestamp", js.undefined)
+    
+    inline def setResourceEvaluationId(value: ResourceEvaluationId): Self = StObject.set(x, "ResourceEvaluationId", value.asInstanceOf[js.Any])
+    
+    inline def setResourceEvaluationIdUndefined: Self = StObject.set(x, "ResourceEvaluationId", js.undefined)
   }
 }

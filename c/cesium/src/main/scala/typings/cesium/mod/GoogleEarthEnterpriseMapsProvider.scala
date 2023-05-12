@@ -17,7 +17,7 @@ open class GoogleEarthEnterpriseMapsProvider protected () extends StObject {
   
   /**
     * Gets the credit to display when this imagery provider is active.  Typically this is used to credit
-    * the source of the imagery.  This function should not be called before {@link GoogleEarthEnterpriseMapsProvider#ready} returns true.
+    * the source of the imagery.
     */
   val credit: Credit = js.native
   
@@ -103,14 +103,12 @@ open class GoogleEarthEnterpriseMapsProvider protected () extends StObject {
   val hasAlphaChannel: Boolean = js.native
   
   /**
-    * Gets the maximum level-of-detail that can be requested.  This function should
-    * not be called before {@link GoogleEarthEnterpriseMapsProvider#ready} returns true.
+    * Gets the maximum level-of-detail that can be requested.
     */
   val maximumLevel: js.UndefOr[Double] = js.native
   
   /**
-    * Gets the minimum level-of-detail that can be requested.  This function should
-    * not be called before {@link GoogleEarthEnterpriseMapsProvider#ready} returns true.
+    * Gets the minimum level-of-detail that can be requested.
     */
   val minimumLevel: Double = js.native
   
@@ -147,14 +145,12 @@ open class GoogleEarthEnterpriseMapsProvider protected () extends StObject {
   val readyPromise: js.Promise[Boolean] = js.native
   
   /**
-    * Gets the rectangle, in radians, of the imagery provided by this instance.  This function should
-    * not be called before {@link GoogleEarthEnterpriseMapsProvider#ready} returns true.
+    * Gets the rectangle, in radians, of the imagery provided by this instance.
     */
   val rectangle: Rectangle = js.native
   
   /**
-    * Requests the image for a given tile.  This function should
-    * not be called before {@link GoogleEarthEnterpriseMapsProvider#ready} returns true.
+    * Requests the image for a given tile.
     * @param x - The tile X coordinate.
     * @param y - The tile Y coordinate.
     * @param level - The tile level.
@@ -166,34 +162,29 @@ open class GoogleEarthEnterpriseMapsProvider protected () extends StObject {
   def requestImage(x: Double, y: Double, level: Double, request: Request): js.UndefOr[js.Promise[ImageryTypes]] = js.native
   
   /**
-    * Gets the type of data that is being requested from the provider.  This function should
-    * not be called before {@link GoogleEarthEnterpriseMapsProvider#ready} returns true.
+    * Gets the type of data that is being requested from the provider.
     */
   val requestType: String = js.native
   
   /**
     * Gets the tile discard policy.  If not undefined, the discard policy is responsible
     * for filtering out "missing" tiles via its shouldDiscardImage function.  If this function
-    * returns undefined, no tiles are filtered.  This function should
-    * not be called before {@link GoogleEarthEnterpriseMapsProvider#ready} returns true.
+    * returns undefined, no tiles are filtered.
     */
   val tileDiscardPolicy: TileDiscardPolicy = js.native
   
   /**
-    * Gets the height of each tile, in pixels.  This function should
-    * not be called before {@link GoogleEarthEnterpriseMapsProvider#ready} returns true.
+    * Gets the height of each tile, in pixels.
     */
   val tileHeight: Double = js.native
   
   /**
-    * Gets the width of each tile, in pixels. This function should
-    * not be called before {@link GoogleEarthEnterpriseMapsProvider#ready} returns true.
+    * Gets the width of each tile, in pixels.
     */
   val tileWidth: Double = js.native
   
   /**
-    * Gets the tiling scheme used by this provider.  This function should
-    * not be called before {@link GoogleEarthEnterpriseMapsProvider#ready} returns true.
+    * Gets the tiling scheme used by this provider.
     */
   val tilingScheme: TilingScheme = js.native
   
@@ -203,8 +194,7 @@ open class GoogleEarthEnterpriseMapsProvider protected () extends StObject {
   val url: String = js.native
   
   /**
-    * Gets the version of the data used by this provider.  This function should
-    * not be called before {@link GoogleEarthEnterpriseMapsProvider#ready} returns true.
+    * Gets the version of the data used by this provider.
     */
   val version: Double = js.native
 }
@@ -214,6 +204,19 @@ object GoogleEarthEnterpriseMapsProvider {
   @JSImport("cesium", "GoogleEarthEnterpriseMapsProvider")
   @js.native
   val ^ : js.Any = js.native
+  
+  inline def fromUrl(url: String): js.Promise[GoogleEarthEnterpriseMapsProvider] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromUrl")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GoogleEarthEnterpriseMapsProvider]]
+  inline def fromUrl(url: String, options: ConstructorOptions): js.Promise[GoogleEarthEnterpriseMapsProvider] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromUrl")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GoogleEarthEnterpriseMapsProvider]]
+  /**
+    * Creates a tiled imagery provider using the Google Earth Imagery API.
+    * @example
+    * const google = await Cesium.GoogleEarthEnterpriseMapsProvider.fromUrl("https://earth.localdomain", 1008);
+    * @param url - The url of the Google Earth server hosting the imagery.
+    * @param [options] - Object describing initialization options
+    * @returns The created GoogleEarthEnterpriseMapsProvider.
+    */
+  inline def fromUrl(url: Resource): js.Promise[GoogleEarthEnterpriseMapsProvider] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromUrl")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GoogleEarthEnterpriseMapsProvider]]
+  inline def fromUrl(url: Resource, options: ConstructorOptions): js.Promise[GoogleEarthEnterpriseMapsProvider] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromUrl")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GoogleEarthEnterpriseMapsProvider]]
   
   /**
     * Gets or sets the URL to the Google Earth logo for display in the credit.
@@ -225,7 +228,7 @@ object GoogleEarthEnterpriseMapsProvider {
   
   /**
     * Initialization options for the GoogleEarthEnterpriseMapsProvider constructor
-    * @property url - The url of the Google Earth server hosting the imagery.
+    * @property [url] - The url of the Google Earth server hosting the imagery. Deprecated.
     * @property channel - The channel (id) to be used when requesting data from the server.
     *        The channel number can be found by looking at the json file located at:
     *        earth.localdomain/default_map/query?request=Json&vars=geeServerDefs The /default_map path may
@@ -264,12 +267,12 @@ object GoogleEarthEnterpriseMapsProvider {
     
     var tileDiscardPolicy: js.UndefOr[TileDiscardPolicy] = js.undefined
     
-    var url: Resource | String
+    var url: js.UndefOr[Resource | String] = js.undefined
   }
   object ConstructorOptions {
     
-    inline def apply(channel: Double, url: Resource | String): ConstructorOptions = {
-      val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    inline def apply(channel: Double): ConstructorOptions = {
+      val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any])
       __obj.asInstanceOf[ConstructorOptions]
     }
     
@@ -295,6 +298,8 @@ object GoogleEarthEnterpriseMapsProvider {
       inline def setTileDiscardPolicyUndefined: Self = StObject.set(x, "tileDiscardPolicy", js.undefined)
       
       inline def setUrl(value: Resource | String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
 }

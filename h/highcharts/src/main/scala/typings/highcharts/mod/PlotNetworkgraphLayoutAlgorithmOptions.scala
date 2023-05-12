@@ -1,5 +1,6 @@
 package typings.highcharts.mod
 
+import typings.highcharts.highchartsStrings.`reingold-fruchterman`
 import typings.highcharts.highchartsStrings.circle
 import typings.highcharts.highchartsStrings.random
 import org.scalablytyped.runtime.StObject
@@ -18,7 +19,7 @@ trait PlotNetworkgraphLayoutAlgorithmOptions extends StObject {
     * directly for nearby cells, and for all others, cells are treated as a
     * separate node with center of mass.
     */
-  var approximation: js.UndefOr[String] = js.undefined
+  var approximation: js.UndefOr[OptionsApproximationValue] = js.undefined
   
   /**
     * (Highcharts) Attraction force applied on a node which is conected to
@@ -79,7 +80,7 @@ trait PlotNetworkgraphLayoutAlgorithmOptions extends StObject {
     *
     * In Highcharts v7.0.x only `'euler'` integration was supported.
     */
-  var integration: js.UndefOr[String] = js.undefined
+  var integration: js.UndefOr[OptionsIntegrationValue] = js.undefined
   
   /**
     * (Highcharts) Ideal length (px) of the link between two nodes. When not
@@ -132,7 +133,7 @@ trait PlotNetworkgraphLayoutAlgorithmOptions extends StObject {
   /**
     * (Highcharts) Type of the algorithm used when positioning nodes.
     */
-  var `type`: js.UndefOr[String] = js.undefined
+  var `type`: js.UndefOr[`reingold-fruchterman`] = js.undefined
 }
 object PlotNetworkgraphLayoutAlgorithmOptions {
   
@@ -144,7 +145,7 @@ object PlotNetworkgraphLayoutAlgorithmOptions {
   @scala.inline
   implicit open class MutableBuilder[Self <: PlotNetworkgraphLayoutAlgorithmOptions] (val x: Self) extends AnyVal {
     
-    inline def setApproximation(value: String): Self = StObject.set(x, "approximation", value.asInstanceOf[js.Any])
+    inline def setApproximation(value: OptionsApproximationValue): Self = StObject.set(x, "approximation", value.asInstanceOf[js.Any])
     
     inline def setApproximationUndefined: Self = StObject.set(x, "approximation", js.undefined)
     
@@ -172,7 +173,7 @@ object PlotNetworkgraphLayoutAlgorithmOptions {
     
     inline def setInitialPositionsUndefined: Self = StObject.set(x, "initialPositions", js.undefined)
     
-    inline def setIntegration(value: String): Self = StObject.set(x, "integration", value.asInstanceOf[js.Any])
+    inline def setIntegration(value: OptionsIntegrationValue): Self = StObject.set(x, "integration", value.asInstanceOf[js.Any])
     
     inline def setIntegrationUndefined: Self = StObject.set(x, "integration", js.undefined)
     
@@ -196,7 +197,7 @@ object PlotNetworkgraphLayoutAlgorithmOptions {
     
     inline def setThetaUndefined: Self = StObject.set(x, "theta", js.undefined)
     
-    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `reingold-fruchterman`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }

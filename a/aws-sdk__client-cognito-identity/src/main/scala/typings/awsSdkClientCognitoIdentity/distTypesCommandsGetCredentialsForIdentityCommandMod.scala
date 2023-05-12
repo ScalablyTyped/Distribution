@@ -28,8 +28,14 @@ object distTypesCommandsGetCredentialsForIdentityCommandMod {
           Any, 
           Any
         ] {
+    /**
+      * @public
+      */
     def this(input: GetCredentialsForIdentityCommandInput) = this()
     
+    /**
+      * @internal
+      */
     /* private */ var deserialize: Any = js.native
     
     /**
@@ -45,6 +51,9 @@ object distTypesCommandsGetCredentialsForIdentityCommandMod {
       options: HttpHandlerOptions
     ): Handler[GetCredentialsForIdentityCommandInput, GetCredentialsForIdentityCommandOutput] = js.native
     
+    /**
+      * @internal
+      */
     /* private */ var serialize: Any = js.native
   }
   /* static members */

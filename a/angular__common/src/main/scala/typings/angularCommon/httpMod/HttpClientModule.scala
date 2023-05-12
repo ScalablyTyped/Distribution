@@ -1,6 +1,5 @@
 package typings.angularCommon.httpMod
 
-import typings.angularCommon.anon.TypeofHttpClientXsrfModul
 import typings.angularCore.mod.ɵɵFactoryDeclaration
 import typings.angularCore.mod.ɵɵInjectorDeclaration
 import typings.angularCore.mod.ɵɵNgModuleDeclaration
@@ -30,8 +29,6 @@ object HttpClientModule {
   
   @JSImport("@angular/common/http", "HttpClientModule.\u0275mod")
   @js.native
-  def ɵmod: ɵɵNgModuleDeclaration[HttpClientModule, scala.Nothing, js.Array[TypeofHttpClientXsrfModul], scala.Nothing] = js.native
-  inline def ɵmod_=(
-    x: ɵɵNgModuleDeclaration[HttpClientModule, scala.Nothing, js.Array[TypeofHttpClientXsrfModul], scala.Nothing]
-  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275mod")(x.asInstanceOf[js.Any])
+  def ɵmod: ɵɵNgModuleDeclaration[HttpClientModule, scala.Nothing, scala.Nothing, scala.Nothing] = js.native
+  inline def ɵmod_=(x: ɵɵNgModuleDeclaration[HttpClientModule, scala.Nothing, scala.Nothing, scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275mod")(x.asInstanceOf[js.Any])
 }

@@ -16,11 +16,11 @@ object typesInitializersInitializeMod {
     cssFilename: String,
     forceReload: Boolean,
     factoryMethod: js.Function3[/* id */ String, /* options */ Any, /* element */ HTMLElement, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(embedElementAttribute.asInstanceOf[js.Any], cssFilename.asInstanceOf[js.Any], forceReload.asInstanceOf[js.Any], factoryMethod.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(embedElementAttribute.asInstanceOf[js.Any], cssFilename.asInstanceOf[js.Any], forceReload.asInstanceOf[js.Any], factoryMethod.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   inline def initialize(
     embedElementAttribute: String,
     cssFilename: String,
     forceReload: Unit,
     factoryMethod: js.Function3[/* id */ String, /* options */ Any, /* element */ HTMLElement, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(embedElementAttribute.asInstanceOf[js.Any], cssFilename.asInstanceOf[js.Any], forceReload.asInstanceOf[js.Any], factoryMethod.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(embedElementAttribute.asInstanceOf[js.Any], cssFilename.asInstanceOf[js.Any], forceReload.asInstanceOf[js.Any], factoryMethod.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 }

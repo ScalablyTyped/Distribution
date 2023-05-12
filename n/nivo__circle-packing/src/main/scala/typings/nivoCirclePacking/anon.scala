@@ -13,6 +13,8 @@ import typings.nivoCore.mod.ValueFormat
 import typings.react.mod.MouseEvent
 import typings.react.mod.MutableRefObject
 import typings.react.mod.NativeMouseEvent
+import typings.reactSpringWeb.mod.Interpolation
+import typings.reactSpringWeb.mod.SpringValue
 import typings.std.Element
 import typings.std.HTMLCanvasElement
 import typings.std.Omit
@@ -24,30 +26,30 @@ object anon {
   
   trait BorderColor extends StObject {
     
-    var borderColor: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<string> */ Any
+    var borderColor: SpringValue[String]
     
     var borderWidth: Double
     
-    var color: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<string> */ Any
+    var color: SpringValue[String]
     
-    var opacity: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<number> */ Any
+    var opacity: SpringValue[Double]
     
-    var radius: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Interpolation<number> */ Any
+    var radius: Interpolation[Double, Any]
     
-    var x: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<number> */ Any
+    var x: SpringValue[Double]
     
-    var y: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<number> */ Any
+    var y: SpringValue[Double]
   }
   object BorderColor {
     
     inline def apply(
-      borderColor: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<string> */ Any,
+      borderColor: SpringValue[String],
       borderWidth: Double,
-      color: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<string> */ Any,
-      opacity: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<number> */ Any,
-      radius: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Interpolation<number> */ Any,
-      x: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<number> */ Any,
-      y: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<number> */ Any
+      color: SpringValue[String],
+      opacity: SpringValue[Double],
+      radius: Interpolation[Double, Any],
+      x: SpringValue[Double],
+      y: SpringValue[Double]
     ): BorderColor = {
       val __obj = js.Dynamic.literal(borderColor = borderColor.asInstanceOf[js.Any], borderWidth = borderWidth.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], opacity = opacity.asInstanceOf[js.Any], radius = radius.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[BorderColor]
@@ -56,31 +58,19 @@ object anon {
     @scala.inline
     implicit open class MutableBuilder[Self <: BorderColor] (val x: Self) extends AnyVal {
       
-      inline def setBorderColor(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<string> */ Any
-      ): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
+      inline def setBorderColor(value: SpringValue[String]): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
       
       inline def setBorderWidth(value: Double): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
       
-      inline def setColor(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<string> */ Any
-      ): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: SpringValue[String]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      inline def setOpacity(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<number> */ Any
-      ): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+      inline def setOpacity(value: SpringValue[Double]): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
       
-      inline def setRadius(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Interpolation<number> */ Any
-      ): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+      inline def setRadius(value: Interpolation[Double, Any]): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
       
-      inline def setX(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<number> */ Any
-      ): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: SpringValue[Double]): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      inline def setY(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<number> */ Any
-      ): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: SpringValue[Double]): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   
@@ -339,24 +329,24 @@ object anon {
   
   trait Opacity extends StObject {
     
-    var opacity: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<number> */ Any
+    var opacity: SpringValue[Double]
     
-    var radius: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Interpolation<number> */ Any
+    var radius: Interpolation[Double, Any]
     
-    var textColor: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<string> */ Any
+    var textColor: SpringValue[String]
     
-    var x: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<number> */ Any
+    var x: SpringValue[Double]
     
-    var y: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<number> */ Any
+    var y: SpringValue[Double]
   }
   object Opacity {
     
     inline def apply(
-      opacity: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<number> */ Any,
-      radius: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Interpolation<number> */ Any,
-      textColor: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<string> */ Any,
-      x: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<number> */ Any,
-      y: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<number> */ Any
+      opacity: SpringValue[Double],
+      radius: Interpolation[Double, Any],
+      textColor: SpringValue[String],
+      x: SpringValue[Double],
+      y: SpringValue[Double]
     ): Opacity = {
       val __obj = js.Dynamic.literal(opacity = opacity.asInstanceOf[js.Any], radius = radius.asInstanceOf[js.Any], textColor = textColor.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[Opacity]
@@ -365,25 +355,15 @@ object anon {
     @scala.inline
     implicit open class MutableBuilder[Self <: Opacity] (val x: Self) extends AnyVal {
       
-      inline def setOpacity(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<number> */ Any
-      ): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+      inline def setOpacity(value: SpringValue[Double]): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
       
-      inline def setRadius(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Interpolation<number> */ Any
-      ): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+      inline def setRadius(value: Interpolation[Double, Any]): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
       
-      inline def setTextColor(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<string> */ Any
-      ): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
+      inline def setTextColor(value: SpringValue[String]): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
       
-      inline def setX(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<number> */ Any
-      ): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: SpringValue[Double]): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      inline def setY(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<number> */ Any
-      ): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: SpringValue[Double]): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   

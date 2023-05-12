@@ -1,7 +1,7 @@
 package typings.awsSdkCredentialProviders
 
 import typings.awsSdkClientSts.distTypesStsclientMod.STSClientConfig
-import typings.awsSdkTypes.distTypesCredentialsMod.CredentialProvider
+import typings.awsSdkTypes.distTypesIdentityAwsCredentialIdentityMod.AwsCredentialIdentityProvider
 import typings.awsSdkTypes.distTypesMiddlewareMod.Pluggable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,7 +13,7 @@ object distTypesFromWebTokenMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def fromWebToken(init: FromWebTokenInit): CredentialProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("fromWebToken")(init.asInstanceOf[js.Any]).asInstanceOf[CredentialProvider]
+  inline def fromWebToken(init: FromWebTokenInit): AwsCredentialIdentityProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("fromWebToken")(init.asInstanceOf[js.Any]).asInstanceOf[AwsCredentialIdentityProvider]
   
   trait FromWebTokenInit
     extends StObject

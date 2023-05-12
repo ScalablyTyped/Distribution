@@ -13,6 +13,8 @@ object UPDATE_PRIORITY extends StObject {
   
   /* 25 */ val HIGH: typings.pixiTicker.libConstMod.UPDATE_PRIORITY.HIGH & Double = js.native
   
+  /* 50 */ val INTERACTION: typings.pixiTicker.libConstMod.UPDATE_PRIORITY.INTERACTION & Double = js.native
+  
   /* -25 */ val LOW: typings.pixiTicker.libConstMod.UPDATE_PRIORITY.LOW & Double = js.native
   
   /* 0 */ val NORMAL: typings.pixiTicker.libConstMod.UPDATE_PRIORITY.NORMAL & Double = js.native

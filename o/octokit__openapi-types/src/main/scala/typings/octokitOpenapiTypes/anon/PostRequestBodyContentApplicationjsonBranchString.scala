@@ -6,7 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PostRequestBodyContentApplicationjsonBranchString extends StObject {
   
-  /** Sync a branch of a forked repository to keep it up-to-date with the upstream repository. */
+  /**
+    * Sync a fork branch with the upstream repository
+    * @description Sync a branch of a forked repository to keep it up-to-date with the upstream repository.
+    */
   var post: RequestBodyContentApplicationjsonBranchString
 }
 object PostRequestBodyContentApplicationjsonBranchString {

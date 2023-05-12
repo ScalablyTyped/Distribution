@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@trimblemaps/trimblemaps-js" : "3.7.0"
+      "@trimblemaps/trimblemaps-js" : "3.9.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@trimblemaps/trimblemaps-js" : "3.7.0"
+      "@trimblemaps/trimblemaps-js" : "3.9.0"
     }
   ],
   "compile-devDependencies" : [

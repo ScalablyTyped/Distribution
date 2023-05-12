@@ -12,7 +12,6 @@ import typings.meteor.meteorInts.`16`
 import typings.meteor.meteorInts.`17`
 import typings.meteor.meteorInts.`18`
 import typings.meteor.meteorInts.`19`
-import typings.meteor.meteorInts.`1`
 import typings.meteor.meteorInts.`2`
 import typings.meteor.meteorInts.`3`
 import typings.meteor.meteorInts.`4`
@@ -39,7 +38,7 @@ trait TypeofBSONType extends StObject {
   
   val decimal: `19`
   
-  val double: `1`
+  val double: typings.meteor.meteorInts.`1`
   
   val int: `16`
   
@@ -93,7 +92,7 @@ object TypeofBSONType {
     
     inline def setDecimal(value: `19`): Self = StObject.set(x, "decimal", value.asInstanceOf[js.Any])
     
-    inline def setDouble(value: `1`): Self = StObject.set(x, "double", value.asInstanceOf[js.Any])
+    inline def setDouble(value: typings.meteor.meteorInts.`1`): Self = StObject.set(x, "double", value.asInstanceOf[js.Any])
     
     inline def setInt(value: `16`): Self = StObject.set(x, "int", value.asInstanceOf[js.Any])
     

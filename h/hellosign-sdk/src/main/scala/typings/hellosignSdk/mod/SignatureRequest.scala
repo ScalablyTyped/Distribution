@@ -50,6 +50,8 @@ trait SignatureRequest[Metadata] extends StObject {
   
   var subject: String
   
+  var template_ids: Null | js.Array[String]
+  
   var test_mode: Double
   
   var title: String
@@ -78,7 +80,7 @@ object SignatureRequest {
     test_mode: Double,
     title: String
   ): SignatureRequest[Metadata] = {
-    val __obj = js.Dynamic.literal(cc_email_addresses = cc_email_addresses.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], details_url = details_url.asInstanceOf[js.Any], files_url = files_url.asInstanceOf[js.Any], final_copy_uri = final_copy_uri.asInstanceOf[js.Any], has_error = has_error.asInstanceOf[js.Any], is_complete = is_complete.asInstanceOf[js.Any], is_declined = is_declined.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], original_title = original_title.asInstanceOf[js.Any], requester_email_address = requester_email_address.asInstanceOf[js.Any], response_data = response_data.asInstanceOf[js.Any], signature_request_id = signature_request_id.asInstanceOf[js.Any], signatures = signatures.asInstanceOf[js.Any], signing_redirect_url = signing_redirect_url.asInstanceOf[js.Any], signing_url = signing_url.asInstanceOf[js.Any], subject = subject.asInstanceOf[js.Any], test_mode = test_mode.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(cc_email_addresses = cc_email_addresses.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], details_url = details_url.asInstanceOf[js.Any], files_url = files_url.asInstanceOf[js.Any], final_copy_uri = final_copy_uri.asInstanceOf[js.Any], has_error = has_error.asInstanceOf[js.Any], is_complete = is_complete.asInstanceOf[js.Any], is_declined = is_declined.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], original_title = original_title.asInstanceOf[js.Any], requester_email_address = requester_email_address.asInstanceOf[js.Any], response_data = response_data.asInstanceOf[js.Any], signature_request_id = signature_request_id.asInstanceOf[js.Any], signatures = signatures.asInstanceOf[js.Any], signing_redirect_url = signing_redirect_url.asInstanceOf[js.Any], signing_url = signing_url.asInstanceOf[js.Any], subject = subject.asInstanceOf[js.Any], test_mode = test_mode.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], template_ids = null)
     __obj.asInstanceOf[SignatureRequest[Metadata]]
   }
   
@@ -132,6 +134,12 @@ object SignatureRequest {
     inline def setSigning_url(value: String): Self = StObject.set(x, "signing_url", value.asInstanceOf[js.Any])
     
     inline def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
+    
+    inline def setTemplate_ids(value: js.Array[String]): Self = StObject.set(x, "template_ids", value.asInstanceOf[js.Any])
+    
+    inline def setTemplate_idsNull: Self = StObject.set(x, "template_ids", null)
+    
+    inline def setTemplate_idsVarargs(value: String*): Self = StObject.set(x, "template_ids", js.Array(value*))
     
     inline def setTest_mode(value: Double): Self = StObject.set(x, "test_mode", value.asInstanceOf[js.Any])
     

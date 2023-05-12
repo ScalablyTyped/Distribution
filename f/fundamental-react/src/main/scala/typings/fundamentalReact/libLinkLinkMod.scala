@@ -3,7 +3,7 @@ package typings.fundamentalReact
 import typings.fundamentalReact.anon.PartialLinkProps
 import typings.fundamentalReact.anon.WeakValidationMapLinkProp
 import typings.fundamentalReact.fundamentalReactStrings.Link
-import typings.react.mod.HTMLAttributes
+import typings.react.mod.AnchorHTMLAttributes
 import typings.react.mod.ReactElement
 import typings.react.mod.Ref
 import typings.react.mod.ValidationMap
@@ -47,13 +47,11 @@ object libLinkLinkMod {
   
   trait LinkProps
     extends StObject
-       with HTMLAttributes[HTMLAnchorElement] {
+       with AnchorHTMLAttributes[HTMLAnchorElement] {
     
     var disableStyles: js.UndefOr[Boolean] = js.undefined
     
     var disabled: js.UndefOr[Boolean] = js.undefined
-    
-    var href: js.UndefOr[String] = js.undefined
     
     var ref: js.UndefOr[Ref[HTMLAnchorElement]] = js.undefined
   }
@@ -74,10 +72,6 @@ object libLinkLinkMod {
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
       inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
-      
-      inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
-      
-      inline def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
       
       inline def setRef(value: Ref[HTMLAnchorElement]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       

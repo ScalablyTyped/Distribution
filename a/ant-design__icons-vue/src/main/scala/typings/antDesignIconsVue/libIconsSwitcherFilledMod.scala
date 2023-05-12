@@ -16,7 +16,7 @@ object libIconsSwitcherFilledMod extends Shortcut {
   @js.native
   trait SwitcherFilledIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_SwitcherFilledIconType: String = js.native

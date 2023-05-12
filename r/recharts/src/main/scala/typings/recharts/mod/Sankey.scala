@@ -11,7 +11,7 @@ open class Sankey protected () extends Component[SankeyProps, SankeyState, Any] 
   def this(props: SankeyProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: SankeyProps, context: Any) = this()
 }

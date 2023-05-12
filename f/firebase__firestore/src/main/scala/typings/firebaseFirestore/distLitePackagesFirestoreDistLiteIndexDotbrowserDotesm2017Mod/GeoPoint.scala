@@ -30,7 +30,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class GeoPoint protected ()
   extends StObject
-     with xn {
+     with jn {
   /**
     * Creates a new immutable `GeoPoint` object with the provided latitude and
     * longitude values.

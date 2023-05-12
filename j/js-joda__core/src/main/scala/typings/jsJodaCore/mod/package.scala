@@ -19,10 +19,10 @@ inline def convert(temporal: ZonedDateTime, zone: ZoneId): ToDate = (^.asInstanc
 
 inline def esModule: `true` = ^.asInstanceOf[js.Dynamic].selectDynamic("__esModule").asInstanceOf[`true`]
 
-inline def nativeJs(date: js.Date): TemporalAccessor = ^.asInstanceOf[js.Dynamic].applyDynamic("nativeJs")(date.asInstanceOf[js.Any]).asInstanceOf[TemporalAccessor]
-inline def nativeJs(date: js.Date, zone: ZoneId): TemporalAccessor = (^.asInstanceOf[js.Dynamic].applyDynamic("nativeJs")(date.asInstanceOf[js.Any], zone.asInstanceOf[js.Any])).asInstanceOf[TemporalAccessor]
-inline def nativeJs(date: Any): TemporalAccessor = ^.asInstanceOf[js.Dynamic].applyDynamic("nativeJs")(date.asInstanceOf[js.Any]).asInstanceOf[TemporalAccessor]
-inline def nativeJs(date: Any, zone: ZoneId): TemporalAccessor = (^.asInstanceOf[js.Dynamic].applyDynamic("nativeJs")(date.asInstanceOf[js.Any], zone.asInstanceOf[js.Any])).asInstanceOf[TemporalAccessor]
+inline def nativeJs(date: js.Date): ZonedDateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("nativeJs")(date.asInstanceOf[js.Any]).asInstanceOf[ZonedDateTime]
+inline def nativeJs(date: js.Date, zone: ZoneId): ZonedDateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("nativeJs")(date.asInstanceOf[js.Any], zone.asInstanceOf[js.Any])).asInstanceOf[ZonedDateTime]
+inline def nativeJs(date: Any): ZonedDateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("nativeJs")(date.asInstanceOf[js.Any]).asInstanceOf[ZonedDateTime]
+inline def nativeJs(date: Any, zone: ZoneId): ZonedDateTime = (^.asInstanceOf[js.Dynamic].applyDynamic("nativeJs")(date.asInstanceOf[js.Any], zone.asInstanceOf[js.Any])).asInstanceOf[ZonedDateTime]
 
 inline def use(plugin: js.Function): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("use")(plugin.asInstanceOf[js.Any]).asInstanceOf[Any]
 

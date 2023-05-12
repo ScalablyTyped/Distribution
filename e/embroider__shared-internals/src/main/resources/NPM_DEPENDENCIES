@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@embroider/shared-internals" : "2.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@embroider/shared-internals" : "2.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -2,6 +2,7 @@ package typings.arcgisJsApi.esri
 
 import typings.arcgisJsApi.anon.FeatureLayerPropertiestyp
 import typings.arcgisJsApi.anon.SceneLayerPropertiestypes
+import typings.arcgisJsApi.anon.SubtypeSublayertypesubtyp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,7 +28,9 @@ trait FeatureFormViewModelProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-FeatureFormViewModel.html#layer)
     */
-  var layer: js.UndefOr[FeatureLayerPropertiestyp | SceneLayerPropertiestypes] = js.undefined
+  var layer: js.UndefOr[
+    FeatureLayerPropertiestyp | SceneLayerPropertiestypes | SubtypeSublayertypesubtyp
+  ] = js.undefined
   
   /**
     * When true, this form can be submitted without _introducing_ data validation issues.
@@ -61,7 +64,7 @@ object FeatureFormViewModelProperties {
     
     inline def setFormTemplateUndefined: Self = StObject.set(x, "formTemplate", js.undefined)
     
-    inline def setLayer(value: FeatureLayerPropertiestyp | SceneLayerPropertiestypes): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+    inline def setLayer(value: FeatureLayerPropertiestyp | SceneLayerPropertiestypes | SubtypeSublayertypesubtyp): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
     inline def setLayerUndefined: Self = StObject.set(x, "layer", js.undefined)
     

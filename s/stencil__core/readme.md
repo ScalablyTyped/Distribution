@@ -1,7 +1,7 @@
 
 # Scala.js typings for stencil__core
 
-Typings are for version 2.19.2
+Typings are for version 3.2.2
 
 ## Library description:
 A Compiler for Web Components and Progressive Web Apps

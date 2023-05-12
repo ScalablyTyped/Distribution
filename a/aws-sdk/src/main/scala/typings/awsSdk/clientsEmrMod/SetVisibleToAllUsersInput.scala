@@ -12,7 +12,7 @@ trait SetVisibleToAllUsersInput extends StObject {
   var JobFlowIds: XmlStringList
   
   /**
-    * A value of true indicates that an IAM principal in the Amazon Web Services account can perform EMR actions on the cluster that the IAM policies attached to the principal allow. A value of false indicates that only the IAM principal that created the cluster and the Amazon Web Services root user can perform EMR actions on the cluster.
+    * A value of true indicates that an IAM principal in the Amazon Web Services account can perform Amazon EMR actions on the cluster that the IAM policies attached to the principal allow. A value of false indicates that only the IAM principal that created the cluster and the Amazon Web Services root user can perform Amazon EMR actions on the cluster.
     */
   var VisibleToAllUsers: Boolean
 }

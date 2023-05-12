@@ -1,5 +1,6 @@
 package typings.vueRuntimeCore.mod
 
+import typings.std.Record
 import typings.std.ThisType
 import typings.vueRuntimeCore.vueRuntimeCoreBooleans.`false`
 import typings.vueRuntimeCore.vueRuntimeCoreStrings.B
@@ -9,9 +10,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ComponentOptions[Props, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */]
+trait ComponentOptions[Props, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, S /* <: SlotsType[Record[String, Any]] */]
   extends StObject
-     with ComponentOptionsBase[Props, RawBindings, D, C, M, Mixin, Extends, E, String, js.Object, js.Object, String]
+     with ComponentOptionsBase[Props, RawBindings, D, C, M, Mixin, Extends, E, String, S, js.Object, String, js.Object]
      with ThisType[
       CreateComponentPublicInstance[
         js.Object, 
@@ -25,6 +26,7 @@ trait ComponentOptions[Props, RawBindings, D, C /* <: ComputedOptions */, M /* <
         Props, 
         js.Object, 
         `false`, 
+        js.Object, 
         js.Object, 
         IntersectionMixin[Mixin] & IntersectionMixin[Extends], 
         (UnwrapMixinsType[IntersectionMixin[Mixin] & IntersectionMixin[Extends], P]) & EnsureNonVoid[js.Object], 
@@ -46,8 +48,8 @@ trait ComponentOptions[Props, RawBindings, D, C /* <: ComputedOptions */, M /* <
     ]
 object ComponentOptions {
   
-  inline def apply[Props, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */](): ComponentOptions[Props, RawBindings, D, C, M, Mixin, Extends, E] = {
+  inline def apply[Props, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, S /* <: SlotsType[Record[String, Any]] */](): ComponentOptions[Props, RawBindings, D, C, M, Mixin, Extends, E, S] = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[ComponentOptions[Props, RawBindings, D, C, M, Mixin, Extends, E]]
+    __obj.asInstanceOf[ComponentOptions[Props, RawBindings, D, C, M, Mixin, Extends, E, S]]
   }
 }

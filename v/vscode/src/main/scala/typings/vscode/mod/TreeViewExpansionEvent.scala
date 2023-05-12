@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TreeViewExpansionEvent[T] extends StObject {
   
   /**
-    * Element that is expanded or collapsed.
-    */
+  		 * Element that is expanded or collapsed.
+  		 */
   val element: T
 }
 object TreeViewExpansionEvent {

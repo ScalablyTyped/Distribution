@@ -27,7 +27,7 @@ trait Control extends StObject {
   val name: String = js.native
   
   def off(): this.type = js.native
-  // tslint:disable-line:no-unnecessary-generics
+  // eslint-disable-line no-unnecessary-generics
   @JSName("off")
   def off_init(eventName: init): this.type = js.native
   // tslint:disable-line:unified-signatures no-unnecessary-generics

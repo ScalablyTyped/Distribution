@@ -12,6 +12,12 @@ open class PeliasGeocoderService protected () extends StObject {
   def this(url: Resource) = this()
   
   /**
+    * Gets the credit to display after a geocode is performed. Typically this is used to credit
+    * the geocoder service.
+    */
+  val credit: js.UndefOr[Credit] = js.native
+  
+  /**
     * @param query - The query to be sent to the geocoder service
     * @param [type = GeocodeType.SEARCH] - The type of geocode to perform.
     */

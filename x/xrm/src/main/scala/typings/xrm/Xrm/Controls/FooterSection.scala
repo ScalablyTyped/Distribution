@@ -9,7 +9,7 @@ trait FooterSection extends StObject {
   /**
     * Returns the footer section visibility.
     * @remarks Available only for Unified Interface.  Footers aren't supported after 2021 wave 2 release.
-    * @see {@link https://docs.microsoft.com/en-us/power-platform/important-changes-coming#form-footers-in-model-driven-apps-wont-be-supported-with-the-2021-release-wave-2 External Link: Important notices}
+    * @see {@link https://learn.microsoft.com/en-us/power-platform/important-changes-coming#form-footers-in-model-driven-apps-wont-be-supported-with-the-2021-release-wave-2 External Link: Important notices}
     */
   def getVisible(): Boolean
   
@@ -17,7 +17,7 @@ trait FooterSection extends StObject {
     * Sets the visibility of the footer section.
     * @arg bool Specify true to show the footer section; false to hide the footer section.
     * @remarks Available only for Unified Interface.  Footers aren't supported after 2021 wave 2 release.
-    * @see {@link https://docs.microsoft.com/en-us/power-platform/important-changes-coming#form-footers-in-model-driven-apps-wont-be-supported-with-the-2021-release-wave-2 External Link: Important notices}
+    * @see {@link https://learn.microsoft.com/en-us/power-platform/important-changes-coming#form-footers-in-model-driven-apps-wont-be-supported-with-the-2021-release-wave-2 External Link: Important notices}
     */
   def setVisible(bool: Boolean): Unit
 }

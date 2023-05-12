@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait S3Config extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) of an AWS Key Management Service (KMS) key.
+    * The Amazon Resource Name (ARN) of an Key Management Service (KMS) key.
     */
   var KMSKeyArn: js.UndefOr[typings.awsSdk.clientsForecastserviceMod.KMSKeyArn] = js.undefined
   
@@ -17,7 +17,7 @@ trait S3Config extends StObject {
   var Path: S3Path
   
   /**
-    * The ARN of the AWS Identity and Access Management (IAM) role that Amazon Forecast can assume to access the Amazon S3 bucket or files. If you provide a value for the KMSKeyArn key, the role must allow access to the key. Passing a role across AWS accounts is not allowed. If you pass a role that isn't in your account, you get an InvalidInputException error.
+    * The ARN of the Identity and Access Management (IAM) role that Amazon Forecast can assume to access the Amazon S3 bucket or files. If you provide a value for the KMSKeyArn key, the role must allow access to the key. Passing a role across Amazon Web Services accounts is not allowed. If you pass a role that isn't in your account, you get an InvalidInputException error.
     */
   var RoleArn: Arn
 }

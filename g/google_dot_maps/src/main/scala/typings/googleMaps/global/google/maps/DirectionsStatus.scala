@@ -4,12 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The status returned by the <code>DirectionsService</code> on the completion
-  * of a call to <code>route()</code>. Specify these by value, or by using the
-  * constant&#39;s name. For example, <code>'OK'</code> or
-  * <code>google.maps.DirectionsStatus.OK</code>.
-  */
 @JSGlobal("google.maps.DirectionsStatus")
 @js.native
 object DirectionsStatus extends StObject {

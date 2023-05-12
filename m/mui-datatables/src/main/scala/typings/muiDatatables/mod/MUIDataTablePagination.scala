@@ -6,6 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait MUIDataTablePagination extends StObject {
   
+  def changePage(
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type any is not an array type */ args: Any
+  ): Any
+  
   def changeRowsPerPage(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type any is not an array type */ args: Any
   ): Any
@@ -21,18 +25,21 @@ trait MUIDataTablePagination extends StObject {
 object MUIDataTablePagination {
   
   inline def apply(
+    changePage: Any => Any,
     changeRowsPerPage: Any => Any,
     count: Double,
     options: MUIDataTableOptions,
     page: Double,
     rowsPerPage: Double
   ): MUIDataTablePagination = {
-    val __obj = js.Dynamic.literal(changeRowsPerPage = js.Any.fromFunction1(changeRowsPerPage), count = count.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any], rowsPerPage = rowsPerPage.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(changePage = js.Any.fromFunction1(changePage), changeRowsPerPage = js.Any.fromFunction1(changeRowsPerPage), count = count.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any], rowsPerPage = rowsPerPage.asInstanceOf[js.Any])
     __obj.asInstanceOf[MUIDataTablePagination]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: MUIDataTablePagination] (val x: Self) extends AnyVal {
+    
+    inline def setChangePage(value: Any => Any): Self = StObject.set(x, "changePage", js.Any.fromFunction1(value))
     
     inline def setChangeRowsPerPage(value: Any => Any): Self = StObject.set(x, "changeRowsPerPage", js.Any.fromFunction1(value))
     

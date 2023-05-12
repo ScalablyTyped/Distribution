@@ -5,10 +5,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Renders directions obtained from the <code><a
-  * href="#DirectionsService">DirectionsService</a></code>.
-  */
 @js.native
 trait DirectionsRenderer
   extends StObject

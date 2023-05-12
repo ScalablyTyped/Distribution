@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.FontVariantEastAsian
+import typings.csstype.mod.Property.ScrollTimelineName
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,11 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `61` extends StObject {
   
   var value: js.UndefOr[
-    FontVariantEastAsian | (js.Array[
+    ScrollTimelineName | (js.Array[
       (Extract[
-        js.UndefOr[FontVariantEastAsian | js.Array[NonNullable[js.UndefOr[FontVariantEastAsian]]]], 
+        js.UndefOr[ScrollTimelineName | js.Array[NonNullable[js.UndefOr[ScrollTimelineName]]]], 
         String
-      ]) | NonNullable[js.UndefOr[FontVariantEastAsian]]
+      ]) | NonNullable[js.UndefOr[ScrollTimelineName]]
     ])
   ] = js.native
 }

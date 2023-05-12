@@ -26,6 +26,6 @@ object examplesJsmNodesFogFogNodeMod {
     
     var isFogNode: `true` = js.native
     
-    def mix(outputNode: typings.three.examplesJsmNodesCoreNodeMod.default): typings.three.examplesJsmNodesCoreNodeMod.default = js.native
+    def mixAssign(outputNode: typings.three.examplesJsmNodesCoreNodeMod.default): typings.three.examplesJsmNodesCoreNodeMod.default = js.native
   }
 }

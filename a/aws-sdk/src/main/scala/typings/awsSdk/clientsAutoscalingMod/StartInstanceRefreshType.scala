@@ -12,17 +12,17 @@ trait StartInstanceRefreshType extends StObject {
   var AutoScalingGroupName: XmlStringMaxLen255
   
   /**
-    * The desired configuration. For example, the desired configuration can specify a new launch template or a new version of the current launch template. Once the instance refresh succeeds, Amazon EC2 Auto Scaling updates the settings of the Auto Scaling group to reflect the new desired configuration.   When you specify a new launch template or a new version of the current launch template for your desired configuration, consider enabling the SkipMatching property in preferences. If it's enabled, Amazon EC2 Auto Scaling skips replacing instances that already use the specified launch template and version. This can help you reduce the number of replacements that are required to apply updates.  
+    * The desired configuration. For example, the desired configuration can specify a new launch template or a new version of the current launch template. Once the instance refresh succeeds, Amazon EC2 Auto Scaling updates the settings of the Auto Scaling group to reflect the new desired configuration.   When you specify a new launch template or a new version of the current launch template for your desired configuration, consider enabling the SkipMatching property in preferences. If it's enabled, Amazon EC2 Auto Scaling skips replacing instances that already use the specified launch template and instance types. This can help you reduce the number of replacements that are required to apply updates.  
     */
   var DesiredConfiguration: js.UndefOr[typings.awsSdk.clientsAutoscalingMod.DesiredConfiguration] = js.undefined
   
   /**
-    * Set of preferences associated with the instance refresh request. If not provided, the default values are used.
+    * Sets your preferences for the instance refresh so that it performs as expected when you start it. Includes the instance warmup time, the minimum healthy percentage, and the behaviors that you want Amazon EC2 Auto Scaling to use if instances that are in Standby state or protected from scale in are found. You can also choose to enable additional features, such as the following:   Auto rollback   Checkpoints   Skip matching  
     */
   var Preferences: js.UndefOr[RefreshPreferences] = js.undefined
   
   /**
-    * The strategy to use for the instance refresh. The only valid value is Rolling. A rolling update helps you update your instances gradually. A rolling update can fail due to failed health checks or if instances are on standby or are protected from scale in. If the rolling update process fails, any instances that are replaced are not rolled back to their previous configuration. 
+    * The strategy to use for the instance refresh. The only valid value is Rolling.
     */
   var Strategy: js.UndefOr[RefreshStrategy] = js.undefined
 }

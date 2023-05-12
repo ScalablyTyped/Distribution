@@ -1,37 +1,74 @@
 package typings.fhir.r5Mod
 
-import typings.fhir.fhirStrings.bad
+import typings.fhir.fhirStrings.accepted
+import typings.fhir.fhirStrings.badGateway
+import typings.fhir.fhirStrings.badRequest
 import typings.fhir.fhirStrings.conflict
 import typings.fhir.fhirStrings.contains
+import typings.fhir.fhirStrings.contentTooLarge
+import typings.fhir.fhirStrings.continue
 import typings.fhir.fhirStrings.created
 import typings.fhir.fhirStrings.delete_
 import typings.fhir.fhirStrings.empty
 import typings.fhir.fhirStrings.equals
 import typings.fhir.fhirStrings.eval
+import typings.fhir.fhirStrings.expectationFailed
+import typings.fhir.fhirStrings.fail
 import typings.fhir.fhirStrings.forbidden
+import typings.fhir.fhirStrings.found
+import typings.fhir.fhirStrings.gatewayTimeout
 import typings.fhir.fhirStrings.get_
 import typings.fhir.fhirStrings.gone
 import typings.fhir.fhirStrings.greaterThan
 import typings.fhir.fhirStrings.head_
+import typings.fhir.fhirStrings.httpVersionNotSupported
 import typings.fhir.fhirStrings.in
+import typings.fhir.fhirStrings.internalServerError
+import typings.fhir.fhirStrings.lengthRequired
 import typings.fhir.fhirStrings.lessThan
+import typings.fhir.fhirStrings.manualEval
 import typings.fhir.fhirStrings.methodNotAllowed
+import typings.fhir.fhirStrings.misdirectedRequest
+import typings.fhir.fhirStrings.movedPermanently
+import typings.fhir.fhirStrings.multipleChoices
 import typings.fhir.fhirStrings.noContent
+import typings.fhir.fhirStrings.nonAuthoritativeInformation
+import typings.fhir.fhirStrings.notAcceptable
 import typings.fhir.fhirStrings.notContains
 import typings.fhir.fhirStrings.notEmpty
 import typings.fhir.fhirStrings.notEquals
 import typings.fhir.fhirStrings.notFound
+import typings.fhir.fhirStrings.notImplemented
 import typings.fhir.fhirStrings.notIn
 import typings.fhir.fhirStrings.notModified
 import typings.fhir.fhirStrings.okay
 import typings.fhir.fhirStrings.options
+import typings.fhir.fhirStrings.partialContent
+import typings.fhir.fhirStrings.pass
 import typings.fhir.fhirStrings.patch_
+import typings.fhir.fhirStrings.paymentRequired
+import typings.fhir.fhirStrings.permanentRedirect
 import typings.fhir.fhirStrings.post_
 import typings.fhir.fhirStrings.preconditionFailed
+import typings.fhir.fhirStrings.proxyAuthenticationRequired
 import typings.fhir.fhirStrings.put_
+import typings.fhir.fhirStrings.rangeNotSatisfiable
 import typings.fhir.fhirStrings.request
+import typings.fhir.fhirStrings.requestTimeout
+import typings.fhir.fhirStrings.resetContent
 import typings.fhir.fhirStrings.response
-import typings.fhir.fhirStrings.unprocessable
+import typings.fhir.fhirStrings.seeOther
+import typings.fhir.fhirStrings.serviceUnavailable
+import typings.fhir.fhirStrings.skip
+import typings.fhir.fhirStrings.stop
+import typings.fhir.fhirStrings.switchingProtocols
+import typings.fhir.fhirStrings.temporaryRedirect
+import typings.fhir.fhirStrings.unauthorized
+import typings.fhir.fhirStrings.unprocessableContent
+import typings.fhir.fhirStrings.unsupportedMediaType
+import typings.fhir.fhirStrings.upgradeRequired
+import typings.fhir.fhirStrings.uriTooLong
+import typings.fhir.fhirStrings.useProxy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -47,6 +84,8 @@ trait TestScriptSetupActionAssert
   var _compareToSourcePath: js.UndefOr[Element] = js.undefined
   
   var _contentType: js.UndefOr[Element] = js.undefined
+  
+  var _defaultManualCompletion: js.UndefOr[Element] = js.undefined
   
   var _description: js.UndefOr[Element] = js.undefined
   
@@ -107,6 +146,11 @@ trait TestScriptSetupActionAssert
   var contentType: js.UndefOr[String] = js.undefined
   
   /**
+    * Manual completion is used to pause the test engine execution and evaluation allowing an external review of the defined assert condition. The defaultManualCompletion defines the default manual completion outcome applied if one of the enumerated values is not applied.
+    */
+  var defaultManualCompletion: js.UndefOr[fail | pass | skip | stop] = js.undefined
+  
+  /**
     * This has no impact on the verification itself.
     */
   var description: js.UndefOr[String] = js.undefined
@@ -117,7 +161,8 @@ trait TestScriptSetupActionAssert
   var direction: js.UndefOr[response | request] = js.undefined
   
   /**
-    * If both "expression" and a "fixtureId" are specified, then the expression will be evaluated against the request or response body mapped to the fixtureId.  If "expression" is specified and a "fixtureId" is not, then the expression will be evaluated against the response body of the last operation.  Test engines are to store the request and response body and headers of the last operation at all times for subsequent assertions.
+    * If both "expression" and a "fixtureId" are specified, then the expression will be evaluated against the request or response body mapped to the fixtureId. If "expression" is specified and a "fixtureId" is not, then the expression will be evaluated against the response body of the last operation. Test engines are to store the request and response body and headers of the last operation at all times for subsequent assertions.
+    * The FHIRPath expression can be evaluated as either a path to a specific value or as a boolean expression against the given FHIR resource. When the FHIRPath is a boolean expression, the assert.value element is not used. See [Testing FHIR Use Expressions](testing.html#expressions).
     */
   var expression: js.UndefOr[String] = js.undefined
   
@@ -132,7 +177,8 @@ trait TestScriptSetupActionAssert
   var label: js.UndefOr[String] = js.undefined
   
   /**
-    * Asserts that the response contains all the element/content in another fixture pointed to by minimumId.  This can be a statically defined fixture or one that is dynamically set via responseId.
+    * Asserts that the response contains all the element/content in another fixture pointed to by minimumId. This can be a statically defined fixture or one that is dynamically set via responseId.
+    * See [Testing FHIR Use minimumId](testing.html##minimumId) for a more complete description of the test engine's comparison logic.
     */
   var minimumId: js.UndefOr[String] = js.undefined
   
@@ -142,10 +188,10 @@ trait TestScriptSetupActionAssert
   var navigationLinks: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Operators are useful especially for negative testing.  If operator is not specified, then the "equals" operator is assumed; e.g. ```<code>   <assert>  <operator value="in" />  <responseCode value="200,201,204" />    </assert>    <assert>  <operator value="notEquals" />  <response value="okay"/>   </assert>    <assert>  <operator value="greaterThan" />    <responseHeader>     <field value="Content-Length" />     <value value="0" />    </responseHeader/>   </assert> </code> ```.
+    * Operators are useful for both positive and negative testing. If operator is not specified, then the default conditional behavior is implemented as defined in [Testing FHIR Assertions](testing.html#assertion-table).
     */
   var operator: js.UndefOr[
-    equals | notEquals | in | notIn | greaterThan | lessThan | empty | notEmpty | contains | notContains | eval
+    equals | notEquals | in | notIn | greaterThan | lessThan | empty | notEmpty | contains | notContains | eval | manualEval
   ] = js.undefined
   
   /**
@@ -164,7 +210,12 @@ trait TestScriptSetupActionAssert
   var requestURL: js.UndefOr[String] = js.undefined
   
   /**
-    * This will be expected resource type in response body e.g. in read, vread, search, etc.  See http://build.fhir.org/resourcelist.html for complete list of resource types; e.g. <assert > <resourceType value="Patient" </assert>.
+    * TestScript and TestReport instances are typically (and expected to be) based on known, defined test requirements and documentation. These links provide traceability from the executable/executed TestScript and TestReport tests to these requirements.
+    */
+  var requirement: js.UndefOr[js.Array[TestScriptSetupActionAssertRequirement]] = js.undefined
+  
+  /**
+    * This will be expected resource type in response body e.g. in read, vread, search, etc.  See the [Resource List](resourcelist.html) for complete list of resource types; e.g. <assert > <resourceType value="Patient" </assert>.
     */
   var resource: js.UndefOr[String] = js.undefined
   
@@ -172,7 +223,7 @@ trait TestScriptSetupActionAssert
     * This is a shorter way of achieving similar verifications via "assert.responseCode".  If you need more control, then use "assert.responseCode"  e.g. <assert>  <contentType value="json" />  <response value="okay"/> </assert>.
     */
   var response: js.UndefOr[
-    okay | created | noContent | notModified | bad | forbidden | notFound | methodNotAllowed | conflict | gone | preconditionFailed | unprocessable
+    continue | switchingProtocols | okay | created | accepted | nonAuthoritativeInformation | noContent | resetContent | partialContent | multipleChoices | movedPermanently | found | seeOther | notModified | useProxy | temporaryRedirect | permanentRedirect | badRequest | unauthorized | paymentRequired | forbidden | notFound | methodNotAllowed | notAcceptable | proxyAuthenticationRequired | requestTimeout | conflict | gone | lengthRequired | preconditionFailed | contentTooLarge | uriTooLong | unsupportedMediaType | rangeNotSatisfiable | expectationFailed | misdirectedRequest | unprocessableContent | upgradeRequired | internalServerError | notImplemented | badGateway | serviceUnavailable | gatewayTimeout | httpVersionNotSupported
   ] = js.undefined
   
   /**
@@ -231,6 +282,10 @@ object TestScriptSetupActionAssert {
     
     inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
+    inline def setDefaultManualCompletion(value: fail | pass | skip | stop): Self = StObject.set(x, "defaultManualCompletion", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultManualCompletionUndefined: Self = StObject.set(x, "defaultManualCompletion", js.undefined)
+    
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
@@ -260,7 +315,7 @@ object TestScriptSetupActionAssert {
     inline def setNavigationLinksUndefined: Self = StObject.set(x, "navigationLinks", js.undefined)
     
     inline def setOperator(
-      value: equals | notEquals | in | notIn | greaterThan | lessThan | empty | notEmpty | contains | notContains | eval
+      value: equals | notEquals | in | notIn | greaterThan | lessThan | empty | notEmpty | contains | notContains | eval | manualEval
     ): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
     
     inline def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
@@ -277,12 +332,18 @@ object TestScriptSetupActionAssert {
     
     inline def setRequestURLUndefined: Self = StObject.set(x, "requestURL", js.undefined)
     
+    inline def setRequirement(value: js.Array[TestScriptSetupActionAssertRequirement]): Self = StObject.set(x, "requirement", value.asInstanceOf[js.Any])
+    
+    inline def setRequirementUndefined: Self = StObject.set(x, "requirement", js.undefined)
+    
+    inline def setRequirementVarargs(value: TestScriptSetupActionAssertRequirement*): Self = StObject.set(x, "requirement", js.Array(value*))
+    
     inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
     
     inline def setResponse(
-      value: okay | created | noContent | notModified | bad | forbidden | notFound | methodNotAllowed | conflict | gone | preconditionFailed | unprocessable
+      value: continue | switchingProtocols | okay | created | accepted | nonAuthoritativeInformation | noContent | resetContent | partialContent | multipleChoices | movedPermanently | found | seeOther | notModified | useProxy | temporaryRedirect | permanentRedirect | badRequest | unauthorized | paymentRequired | forbidden | notFound | methodNotAllowed | notAcceptable | proxyAuthenticationRequired | requestTimeout | conflict | gone | lengthRequired | preconditionFailed | contentTooLarge | uriTooLong | unsupportedMediaType | rangeNotSatisfiable | expectationFailed | misdirectedRequest | unprocessableContent | upgradeRequired | internalServerError | notImplemented | badGateway | serviceUnavailable | gatewayTimeout | httpVersionNotSupported
     ): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     
     inline def setResponseCode(value: String): Self = StObject.set(x, "responseCode", value.asInstanceOf[js.Any])
@@ -322,6 +383,10 @@ object TestScriptSetupActionAssert {
     inline def set_contentType(value: Element): Self = StObject.set(x, "_contentType", value.asInstanceOf[js.Any])
     
     inline def set_contentTypeUndefined: Self = StObject.set(x, "_contentType", js.undefined)
+    
+    inline def set_defaultManualCompletion(value: Element): Self = StObject.set(x, "_defaultManualCompletion", value.asInstanceOf[js.Any])
+    
+    inline def set_defaultManualCompletionUndefined: Self = StObject.set(x, "_defaultManualCompletion", js.undefined)
     
     inline def set_description(value: Element): Self = StObject.set(x, "_description", value.asInstanceOf[js.Any])
     

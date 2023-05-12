@@ -16,7 +16,7 @@ object libIconsPoweroffOutlinedMod extends Shortcut {
   @js.native
   trait PoweroffOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_PoweroffOutlinedIconType: String = js.native

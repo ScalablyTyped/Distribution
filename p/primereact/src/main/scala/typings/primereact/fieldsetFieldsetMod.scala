@@ -50,6 +50,8 @@ import typings.primereact.primereactStrings.tree
 import typings.primereact.primereactStrings.url
 import typings.primereact.primereactStrings.vertical
 import typings.primereact.primereactStrings.yes
+import typings.primereact.utilsUtilsMod.IconOptions
+import typings.primereact.utilsUtilsMod.IconType
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
@@ -104,12 +106,20 @@ object fieldsetFieldsetMod {
     def this(props: FieldsetProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: FieldsetProps, context: Any) = this()
     
+    /**
+      * Used to get the content element of the fieldset.
+      * @return {HTMLDivElement} Content element
+      */
     def getContent(): HTMLDivElement = js.native
     
+    /**
+      * Used to get container element.
+      * @return {HTMLFieldSetElement} Container element
+      */
     def getElement(): HTMLFieldSetElement = js.native
   }
   
@@ -222,15 +232,32 @@ object fieldsetFieldsetMod {
     
     var autoCorrect: js.UndefOr[String] = js.undefined
     
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
+    
     var autoSave: js.UndefOr[String] = js.undefined
     
+    /**
+      * Used to get the child elements of the component.
+      * @readonly
+      */
     var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
+    /**
+      * Icon of an expanded tab.
+      */
+    var collapseIcon: js.UndefOr[IconType[FieldsetProps]] = js.undefined
+    
+    /**
+      * Defines the default visibility state of the content.
+      * @defaultValue false
+      */
     var collapsed: js.UndefOr[Boolean] = js.undefined
     
     var color: js.UndefOr[String] = js.undefined
+    
+    var content: js.UndefOr[String] = js.undefined
     
     var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
@@ -247,6 +274,11 @@ object fieldsetFieldsetMod {
     var dir: js.UndefOr[String] = js.undefined
     
     var draggable: js.UndefOr[Booleanish] = js.undefined
+    
+    /**
+      * Icon of an collapsed tab.
+      */
+    var expandIcon: js.UndefOr[IconType[FieldsetProps]] = js.undefined
     
     var hidden: js.UndefOr[Boolean] = js.undefined
     
@@ -272,6 +304,9 @@ object fieldsetFieldsetMod {
     
     var lang: js.UndefOr[String] = js.undefined
     
+    /**
+      * Header text of the fieldset.
+      */
     var legend: js.UndefOr[ReactNode] = js.undefined
     
     var nonce: js.UndefOr[String] = js.undefined
@@ -296,8 +331,16 @@ object fieldsetFieldsetMod {
     
     var onChange: js.UndefOr[FormEventHandler[HTMLFieldSetElement]] = js.undefined
     
+    /**
+      * Callback to invoke when fieldset is clicked.
+      * @param {React.MouseEvent<HTMLElement>} event - Browser event.
+      */
     var onClick: js.UndefOr[js.Function1[/* event */ MouseEvent[HTMLElement, NativeMouseEvent], Unit]] = js.undefined
     
+    /**
+      * Callback to invoke when an active tab is collapsed by clicking on the header.
+      * @param {React.MouseEvent<HTMLElement>} event - Browser event.
+      */
     var onCollapse: js.UndefOr[js.Function1[/* event */ MouseEvent[HTMLElement, NativeMouseEvent], Unit]] = js.undefined
     
     var onCompositionEnd: js.UndefOr[CompositionEventHandler[HTMLFieldSetElement]] = js.undefined
@@ -340,6 +383,10 @@ object fieldsetFieldsetMod {
     
     var onError: js.UndefOr[ReactEventHandler[HTMLFieldSetElement]] = js.undefined
     
+    /**
+      * Callback to invoke when a tab gets expanded.
+      * @param {React.MouseEvent<HTMLElement>} event - Browser event.
+      */
     var onExpand: js.UndefOr[js.Function1[/* event */ MouseEvent[HTMLElement, NativeMouseEvent], Unit]] = js.undefined
     
     var onFocus: js.UndefOr[FocusEventHandler[HTMLFieldSetElement]] = js.undefined
@@ -424,7 +471,11 @@ object fieldsetFieldsetMod {
     
     var onTimeUpdate: js.UndefOr[ReactEventHandler[HTMLFieldSetElement]] = js.undefined
     
-    var onToggle: js.UndefOr[js.Function1[/* e */ FieldsetToggleParams, Unit]] = js.undefined
+    /**
+      * Callback to invoke when a tab gets expanded.
+      * @param {FieldsetToggleEvent} event - Custom toggle event.
+      */
+    var onToggle: js.UndefOr[js.Function1[/* event */ FieldsetToggleEvent, Unit]] = js.undefined
     
     var onTouchCancel: js.UndefOr[TouchEventHandler[HTMLFieldSetElement]] = js.undefined
     
@@ -450,9 +501,13 @@ object fieldsetFieldsetMod {
     
     var radioGroup: js.UndefOr[String] = js.undefined
     
+    var rel: js.UndefOr[String] = js.undefined
+    
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
+    
+    var rev: js.UndefOr[String] = js.undefined
     
     var role: js.UndefOr[AriaRole] = js.undefined
     
@@ -472,8 +527,16 @@ object fieldsetFieldsetMod {
     
     var title: js.UndefOr[String] = js.undefined
     
+    /**
+      * When specified, content can toggled by clicking the legend.
+      * @defaultValue false
+      */
     var toggleable: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * The properties of CSSTransition can be customized, except for "nodeRef" and "in" properties.
+      * @type {CSSTransitionProps}
+      */
     var transitionOptions: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSSTransitionProps */ Any
       ] = js.undefined
@@ -706,6 +769,10 @@ object fieldsetFieldsetMod {
       
       inline def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
       
+      inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+      
+      inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+      
       inline def setAutoSave(value: String): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
       
       inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
@@ -718,6 +785,12 @@ object fieldsetFieldsetMod {
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
+      inline def setCollapseIcon(value: IconType[FieldsetProps]): Self = StObject.set(x, "collapseIcon", value.asInstanceOf[js.Any])
+      
+      inline def setCollapseIconFunction1(value: /* options */ IconOptions[FieldsetProps] => ReactNode): Self = StObject.set(x, "collapseIcon", js.Any.fromFunction1(value))
+      
+      inline def setCollapseIconUndefined: Self = StObject.set(x, "collapseIcon", js.undefined)
+      
       inline def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
       
       inline def setCollapsedUndefined: Self = StObject.set(x, "collapsed", js.undefined)
@@ -726,9 +799,13 @@ object fieldsetFieldsetMod {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
       inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
       inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
@@ -759,6 +836,12 @@ object fieldsetFieldsetMod {
       inline def setDraggable(value: Booleanish): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
       
       inline def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
+      
+      inline def setExpandIcon(value: IconType[FieldsetProps]): Self = StObject.set(x, "expandIcon", value.asInstanceOf[js.Any])
+      
+      inline def setExpandIconFunction1(value: /* options */ IconOptions[FieldsetProps] => ReactNode): Self = StObject.set(x, "expandIcon", js.Any.fromFunction1(value))
+      
+      inline def setExpandIconUndefined: Self = StObject.set(x, "expandIcon", js.undefined)
       
       inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
       
@@ -1114,7 +1197,7 @@ object fieldsetFieldsetMod {
       
       inline def setOnTimeUpdateUndefined: Self = StObject.set(x, "onTimeUpdate", js.undefined)
       
-      inline def setOnToggle(value: /* e */ FieldsetToggleParams => Unit): Self = StObject.set(x, "onToggle", js.Any.fromFunction1(value))
+      inline def setOnToggle(value: /* event */ FieldsetToggleEvent => Unit): Self = StObject.set(x, "onToggle", js.Any.fromFunction1(value))
       
       inline def setOnToggleUndefined: Self = StObject.set(x, "onToggle", js.undefined)
       
@@ -1166,6 +1249,10 @@ object fieldsetFieldsetMod {
       
       inline def setRadioGroupUndefined: Self = StObject.set(x, "radioGroup", js.undefined)
       
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      
+      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+      
       inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
       inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
@@ -1173,6 +1260,10 @@ object fieldsetFieldsetMod {
       inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+      
+      inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+      
+      inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
       
       inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
@@ -1238,21 +1329,32 @@ object fieldsetFieldsetMod {
     }
   }
   
-  trait FieldsetToggleParams extends StObject {
+  /**
+    * Custom toggle event.
+    * @see {@link FieldsetProps.onToggle}
+    * @event
+    */
+  trait FieldsetToggleEvent extends StObject {
     
+    /**
+      * Browser mouse event.
+      */
     var originalEvent: MouseEvent[HTMLElement, NativeMouseEvent]
     
+    /**
+      * Collapsed state as a boolean.
+      */
     var value: Boolean
   }
-  object FieldsetToggleParams {
+  object FieldsetToggleEvent {
     
-    inline def apply(originalEvent: MouseEvent[HTMLElement, NativeMouseEvent], value: Boolean): FieldsetToggleParams = {
+    inline def apply(originalEvent: MouseEvent[HTMLElement, NativeMouseEvent], value: Boolean): FieldsetToggleEvent = {
       val __obj = js.Dynamic.literal(originalEvent = originalEvent.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.asInstanceOf[FieldsetToggleParams]
+      __obj.asInstanceOf[FieldsetToggleEvent]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: FieldsetToggleParams] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: FieldsetToggleEvent] (val x: Self) extends AnyVal {
       
       inline def setOriginalEvent(value: MouseEvent[HTMLElement, NativeMouseEvent]): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       

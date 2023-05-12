@@ -21,14 +21,14 @@ object distTypesTypesMod {
     var id: js.UndefOr[String] = js.undefined
     
     /**
-      * Role attribute is passed on to the span to aid screen readers.
+      * An ARIA role attribute to aid screen readers.
       */
     var role: js.UndefOr[String] = js.undefined
     
     /**
       * A `testId` prop is provided for specified elements, which is a unique
       * string that appears as a data attribute `data-testid` in the rendered code,
-      * serving as a hook for automated tests
+      * serving as a hook for automated tests.
       */
     var testId: js.UndefOr[String] = js.undefined
   }

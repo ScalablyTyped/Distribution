@@ -29,7 +29,7 @@ trait StartPipelineExecutionRequest extends StObject {
   /**
     * The name of the pipeline.
     */
-  var PipelineName: typings.awsSdk.clientsSagemakerMod.PipelineName
+  var PipelineName: PipelineNameOrArn
   
   /**
     * Contains a list of pipeline parameters. This list can be empty. 
@@ -38,7 +38,7 @@ trait StartPipelineExecutionRequest extends StObject {
 }
 object StartPipelineExecutionRequest {
   
-  inline def apply(ClientRequestToken: IdempotencyToken, PipelineName: PipelineName): StartPipelineExecutionRequest = {
+  inline def apply(ClientRequestToken: IdempotencyToken, PipelineName: PipelineNameOrArn): StartPipelineExecutionRequest = {
     val __obj = js.Dynamic.literal(ClientRequestToken = ClientRequestToken.asInstanceOf[js.Any], PipelineName = PipelineName.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartPipelineExecutionRequest]
   }
@@ -60,7 +60,7 @@ object StartPipelineExecutionRequest {
     
     inline def setPipelineExecutionDisplayNameUndefined: Self = StObject.set(x, "PipelineExecutionDisplayName", js.undefined)
     
-    inline def setPipelineName(value: PipelineName): Self = StObject.set(x, "PipelineName", value.asInstanceOf[js.Any])
+    inline def setPipelineName(value: PipelineNameOrArn): Self = StObject.set(x, "PipelineName", value.asInstanceOf[js.Any])
     
     inline def setPipelineParameters(value: ParameterList): Self = StObject.set(x, "PipelineParameters", value.asInstanceOf[js.Any])
     

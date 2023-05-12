@@ -69,7 +69,12 @@ object distPackagesFirestoreSrcModelDocumentMod {
       * Creates a new document that is known to exist with the given data at the
       * given version.
       */
-    inline def newFoundDocument(documentKey: DocumentKey, version: SnapshotVersion, value: ObjectValue): MutableDocument = (^.asInstanceOf[js.Dynamic].applyDynamic("newFoundDocument")(documentKey.asInstanceOf[js.Any], version.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[MutableDocument]
+    inline def newFoundDocument(
+      documentKey: DocumentKey,
+      version: SnapshotVersion,
+      createTime: SnapshotVersion,
+      value: ObjectValue
+    ): MutableDocument = (^.asInstanceOf[js.Dynamic].applyDynamic("newFoundDocument")(documentKey.asInstanceOf[js.Any], version.asInstanceOf[js.Any], createTime.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[MutableDocument]
     
     /**
       * Creates a document with no known version or data, but which can serve as
@@ -92,6 +97,13 @@ object distPackagesFirestoreSrcModelDocumentMod {
   
   @js.native
   trait Document extends StObject {
+    
+    /**
+      * The timestamp at which the document was created. This value increases
+      * monotonically when a document is deleted then recreated. It can also be
+      * compared to `createTime` of other documents and the `readTime` of a query.
+      */
+    val createTime: SnapshotVersion = js.native
     
     /** The underlying data of this document or an empty value if no data exists. */
     val data: ObjectValue = js.native

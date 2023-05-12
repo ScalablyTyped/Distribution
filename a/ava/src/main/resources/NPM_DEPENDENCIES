@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "ava" : "5.1.0"
+      "ava" : "5.2.0"
     }
   ],
   "test-dependencies" : [
     {
-      "ava" : "5.1.0"
+      "ava" : "5.2.0"
     }
   ],
   "compile-devDependencies" : [

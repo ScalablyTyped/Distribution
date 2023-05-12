@@ -1,6 +1,6 @@
 package typings.wdioTypes.anon
 
-import typings.node.fsMod.WriteStream
+import typings.node.nodeColonfsMod.WriteStream
 import typings.wdioTypes.buildReportersMod.OutputFileFormatOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

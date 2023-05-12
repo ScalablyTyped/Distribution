@@ -8,7 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** StepInTargets request; value of command field is 'stepInTargets'.
-		This request retrieves the possible stepIn targets for the specified stack frame.
+		This request retrieves the possible step-in targets for the specified stack frame.
 		These targets can be used in the `stepIn` request.
 		Clients should only call this request if the corresponding capability `supportsStepInTargetsRequest` is true.
 	*/

@@ -1,251 +1,187 @@
 package typings.twilio
 
+import typings.twilio.anon.Language
 import typings.twilio.libBasePageMod.TwilioResponsePayload
-import typings.twilio.libInterfacesMod.SerializableClass
+import typings.twilio.libRestPreviewUnderstandMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libRestPreviewUnderstandAssistantQueryMod {
   
-  @JSImport("twilio/lib/rest/preview/understand/assistant/query", JSImport.Namespace)
+  @JSImport("twilio/lib/rest/preview/understand/assistant/query", "QueryContextImpl")
   @js.native
-  val ^ : js.Any = js.native
-  
-  @JSImport("twilio/lib/rest/preview/understand/assistant/query", "QueryContext")
-  @js.native
-  open class QueryContext protected () extends StObject {
-    /**
-      * Initialize the QueryContext
-      *
-      * PLEASE NOTE that this class contains preview products that are subject to
-      * change. Use them with caution. If you currently do not have developer preview
-      * access, please contact help@twilio.com.
-      *
-      * @param version - Version of the resource
-      * @param assistantSid - The unique ID of the Assistant.
-      * @param sid - A 34 character string that uniquely identifies this resource.
-      */
-    def this(version: typings.twilio.libRestPreviewUnderstandMod.^, assistantSid: String, sid: String) = this()
+  open class QueryContextImpl protected ()
+    extends StObject
+       with QueryContext {
+    def this(_version: default, assistantSid: String, sid: String) = this()
     
-    /**
-      * fetch a QueryInstance
-      *
-      * @param callback - Callback to handle processed record
-      */
-    def fetch(): js.Promise[QueryInstance] = js.native
-    def fetch(callback: js.Function2[/* error */ js.Error | Null, /* items */ QueryInstance, Any]): js.Promise[QueryInstance] = js.native
+    /* protected */ var _solution: QueryContextSolution = js.native
     
-    /**
-      * remove a QueryInstance
-      *
-      * @param callback - Callback to handle processed record
-      */
-    def remove(): js.Promise[Boolean] = js.native
-    def remove(callback: js.Function2[/* error */ js.Error | Null, /* items */ QueryInstance, Any]): js.Promise[Boolean] = js.native
+    /* protected */ var _uri: String = js.native
     
-    /**
-      * Provide a user-friendly representation
-      */
-    def toJSON(): Any = js.native
+    /* protected */ var _version: default = js.native
     
-    /**
-      * update a QueryInstance
-      *
-      * @param callback - Callback to handle processed record
-      */
-    def update(): js.Promise[QueryInstance] = js.native
-    def update(callback: js.Function2[/* error */ js.Error | Null, /* items */ QueryInstance, Any]): js.Promise[QueryInstance] = js.native
-    def update(opts: Unit, callback: js.Function2[/* error */ js.Error | Null, /* items */ QueryInstance, Any]): js.Promise[QueryInstance] = js.native
-    def update(opts: QueryInstanceUpdateOptions): js.Promise[QueryInstance] = js.native
     def update(
-      opts: QueryInstanceUpdateOptions,
-      callback: js.Function2[/* error */ js.Error | Null, /* items */ QueryInstance, Any]
+      params: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[QueryInstance], Any],
+      callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[QueryInstance], Any]
+    ): js.Promise[QueryInstance] = js.native
+    def update(
+      params: Unit,
+      callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[QueryInstance], Any]
     ): js.Promise[QueryInstance] = js.native
   }
   
   @JSImport("twilio/lib/rest/preview/understand/assistant/query", "QueryInstance")
   @js.native
-  open class QueryInstance protected () extends SerializableClass {
+  open class QueryInstance protected () extends StObject {
+    def this(_version: default, payload: QueryResource, assistantSid: String) = this()
+    def this(_version: default, payload: QueryResource, assistantSid: String, sid: String) = this()
+    
+    /* protected */ var _context: js.UndefOr[QueryContext] = js.native
+    
+    /* private */ def _proxy: Any = js.native
+    
+    /* protected */ var _solution: QueryContextSolution = js.native
+    
+    /* protected */ var _version: default = js.native
+    
     /**
-      * Initialize the QueryContext
-      *
-      * PLEASE NOTE that this class contains preview products that are subject to
-      * change. Use them with caution. If you currently do not have developer preview
-      * access, please contact help@twilio.com.
-      *
-      * @param version - Version of the resource
-      * @param payload - The instance payload
-      * @param assistantSid - The unique ID of the parent Assistant.
-      * @param sid - A 34 character string that uniquely identifies this resource.
+      * The unique ID of the Account that created this Query.
       */
-    def this(
-      version: typings.twilio.libRestPreviewUnderstandMod.^,
-      payload: QueryPayload,
-      assistantSid: String,
-      sid: String
-    ) = this()
-    
-    /* private */ var _proxy: QueryContext = js.native
-    
     var accountSid: String = js.native
     
+    /**
+      * The unique ID of the parent Assistant.
+      */
     var assistantSid: String = js.native
     
+    /**
+      * The date that this resource was created
+      */
     var dateCreated: js.Date = js.native
     
+    /**
+      * The date that this resource was last updated
+      */
     var dateUpdated: js.Date = js.native
     
     /**
-      * fetch a QueryInstance
+      * Fetch a QueryInstance
       *
       * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed QueryInstance
       */
     def fetch(): js.Promise[QueryInstance] = js.native
-    def fetch(callback: js.Function2[/* error */ js.Error | Null, /* items */ this.type, Any]): js.Promise[QueryInstance] = js.native
+    def fetch(callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[this.type], Any]): js.Promise[QueryInstance] = js.native
     
+    /**
+      * An ISO language-country string of the sample.
+      */
     var language: String = js.native
     
+    /**
+      * The unique ID of the Model Build queried.
+      */
     var modelBuildSid: String = js.native
     
+    /**
+      * The end-user\'s natural language input.
+      */
     var query: String = js.native
     
     /**
-      * remove a QueryInstance
+      * Remove a QueryInstance
       *
       * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed boolean
       */
     def remove(): js.Promise[Boolean] = js.native
-    def remove(callback: js.Function2[/* error */ js.Error | Null, /* items */ this.type, Any]): js.Promise[Boolean] = js.native
+    def remove(callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[Boolean], Any]): js.Promise[Boolean] = js.native
     
+    /**
+      * The natural language analysis results which include the Task recognized, the confidence score and a list of identified Fields.
+      */
     var results: Any = js.native
     
+    /**
+      * An optional reference to the Sample created from this query.
+      */
     var sampleSid: String = js.native
     
+    /**
+      * A 34 character string that uniquely identifies this resource.
+      */
     var sid: String = js.native
     
+    /**
+      * The communication channel where this end-user input came from
+      */
     var sourceChannel: String = js.native
     
+    /**
+      * A string that described the query status. The values can be: pending_review, reviewed, discarded
+      */
     var status: String = js.native
     
     /**
-      * update a QueryInstance
+      * Provide a user-friendly representation
+      *
+      * @returns Object
+      */
+    def toJSON(): Language = js.native
+    
+    /**
+      * Update a QueryInstance
       *
       * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed QueryInstance
       */
     def update(): js.Promise[QueryInstance] = js.native
-    def update(callback: js.Function2[/* error */ js.Error | Null, /* items */ this.type, Any]): js.Promise[QueryInstance] = js.native
-    def update(opts: Unit, callback: js.Function2[/* error */ js.Error | Null, /* items */ this.type, Any]): js.Promise[QueryInstance] = js.native
-    def update(opts: QueryInstanceUpdateOptions): js.Promise[QueryInstance] = js.native
+    def update(callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[this.type], Any]): js.Promise[QueryInstance] = js.native
+    /**
+      * Update a QueryInstance
+      *
+      * @param params - Parameter for request
+      * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed QueryInstance
+      */
+    def update(params: QueryContextUpdateOptions): js.Promise[QueryInstance] = js.native
     def update(
-      opts: QueryInstanceUpdateOptions,
-      callback: js.Function2[/* error */ js.Error | Null, /* items */ this.type, Any]
+      params: QueryContextUpdateOptions,
+      callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[this.type], Any]
     ): js.Promise[QueryInstance] = js.native
     
     var url: String = js.native
   }
   
-  /**
-    * Initialize the QueryList
-    *
-    * PLEASE NOTE that this class contains preview products that are subject to
-    * change. Use them with caution. If you currently do not have developer preview
-    * access, please contact help@twilio.com.
-    *
-    * @param version - Version of the resource
-    * @param assistantSid - The unique ID of the parent Assistant.
-    */
-  inline def QueryList(version: typings.twilio.libRestPreviewUnderstandMod.^, assistantSid: String): QueryListInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("QueryList")(version.asInstanceOf[js.Any], assistantSid.asInstanceOf[js.Any])).asInstanceOf[QueryListInstance]
-  
-  @JSImport("twilio/lib/rest/preview/understand/assistant/query", "QueryPage")
-  @js.native
-  open class QueryPage protected ()
-    extends typings.twilio.libBasePageMod.^[
-          typings.twilio.libRestPreviewUnderstandMod.^, 
-          QueryPayload, 
-          QueryResource, 
-          QueryInstance
-        ] {
-    /**
-      * Initialize the QueryPage
-      *
-      * PLEASE NOTE that this class contains preview products that are subject to
-      * change. Use them with caution. If you currently do not have developer preview
-      * access, please contact help@twilio.com.
-      *
-      * @param version - Version of the resource
-      * @param response - Response from the API
-      * @param solution - Path solution
-      */
-    def this(
-      version: typings.twilio.libRestPreviewUnderstandMod.^,
-      response: typings.twilio.libHttpResponseMod.^[String],
-      solution: QuerySolution
-    ) = this()
-    
-    /**
-      * Build an instance of QueryInstance
-      *
-      * @param payload - Payload response from the API
-      */
-    def getInstance(payload: QueryPayload): QueryInstance = js.native
-    
-    /**
-      * Provide a user-friendly representation
-      */
-    def toJSON(): Any = js.native
-  }
-  
-  /**
-    * Options to pass to update
-    *
-    * @property sampleSid - An optional reference to the Sample created from this query.
-    * @property status - A string that described the query status. The values can be: pending_review, reviewed, discarded
-    */
-  trait QueryInstanceUpdateOptions extends StObject {
-    
-    var sampleSid: js.UndefOr[String] = js.undefined
-    
-    var status: js.UndefOr[String] = js.undefined
-  }
-  object QueryInstanceUpdateOptions {
-    
-    inline def apply(): QueryInstanceUpdateOptions = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[QueryInstanceUpdateOptions]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: QueryInstanceUpdateOptions] (val x: Self) extends AnyVal {
-      
-      inline def setSampleSid(value: String): Self = StObject.set(x, "sampleSid", value.asInstanceOf[js.Any])
-      
-      inline def setSampleSidUndefined: Self = StObject.set(x, "sampleSid", js.undefined)
-      
-      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
-      
-      inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
-    }
-  }
-  
   @js.native
   trait QueryListInstance extends StObject {
     
-    /**
-      * @param sid - sid of instance
-      */
     def apply(sid: String): QueryContext = js.native
     
+    var _solution: QuerySolution = js.native
+    
+    var _uri: String = js.native
+    
+    var _version: default = js.native
+    
     /**
-      * create a QueryInstance
+      * Create a QueryInstance
       *
-      * @param opts - Options for request
+      * @param params - Parameter for request
       * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed QueryInstance
       */
-    def create(opts: QueryListInstanceCreateOptions): js.Promise[QueryInstance] = js.native
+    def create(params: QueryListInstanceCreateOptions): js.Promise[QueryInstance] = js.native
     def create(
-      opts: QueryListInstanceCreateOptions,
-      callback: js.Function2[/* error */ js.Error | Null, /* item */ QueryInstance, Any]
+      params: QueryListInstanceCreateOptions,
+      callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[QueryInstance], Any]
     ): js.Promise[QueryInstance] = js.native
     
     /**
@@ -260,7 +196,8 @@ object libRestPreviewUnderstandAssistantQueryMod {
       * If a function is passed as the first argument, it will be used as the callback
       * function.
       *
-      * @param callback - Function to process each record
+      * @param { QueryListInstanceEachOptions } [params] - Options for request
+      * @param { function } [callback] - Function to process each record
       */
     def each(): Unit = js.native
     def each(
@@ -270,17 +207,9 @@ object libRestPreviewUnderstandAssistantQueryMod {
           Unit
         ]
     ): Unit = js.native
+    def each(params: QueryListInstanceEachOptions): Unit = js.native
     def each(
-      opts: Unit,
-      callback: js.Function2[
-          /* item */ QueryInstance, 
-          /* done */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
-          Unit
-        ]
-    ): Unit = js.native
-    def each(opts: QueryListInstanceEachOptions): Unit = js.native
-    def each(
-      opts: QueryListInstanceEachOptions,
+      params: QueryListInstanceEachOptions,
       callback: js.Function2[
           /* item */ QueryInstance, 
           /* done */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
@@ -288,11 +217,6 @@ object libRestPreviewUnderstandAssistantQueryMod {
         ]
     ): Unit = js.native
     
-    /**
-      * Constructs a query
-      *
-      * @param sid - A 34 character string that uniquely identifies this resource.
-      */
     def get(sid: String): QueryContext = js.native
     
     /**
@@ -300,16 +224,11 @@ object libRestPreviewUnderstandAssistantQueryMod {
       *
       * The request is executed immediately.
       *
-      * If a function is passed as the first argument, it will be used as the callback
-      * function.
-      *
-      * @param callback - Callback to handle list of records
+      * @param { string } [targetUrl] - API-generated URL for the requested results page
+      * @param { function } [callback] - Callback to handle list of records
       */
-    def getPage(): js.Promise[QueryPage] = js.native
-    def getPage(callback: js.Function2[/* error */ js.Error | Null, /* items */ QueryPage, Any]): js.Promise[QueryPage] = js.native
     def getPage(targetUrl: String): js.Promise[QueryPage] = js.native
     def getPage(targetUrl: String, callback: js.Function2[/* error */ js.Error | Null, /* items */ QueryPage, Any]): js.Promise[QueryPage] = js.native
-    def getPage(targetUrl: Unit, callback: js.Function2[/* error */ js.Error | Null, /* items */ QueryPage, Any]): js.Promise[QueryPage] = js.native
     
     /**
       * Lists QueryInstance records from the API as a list.
@@ -317,17 +236,14 @@ object libRestPreviewUnderstandAssistantQueryMod {
       * If a function is passed as the first argument, it will be used as the callback
       * function.
       *
-      * @param callback - Callback to handle list of records
+      * @param { QueryListInstanceOptions } [params] - Options for request
+      * @param { function } [callback] - Callback to handle list of records
       */
     def list(): js.Promise[js.Array[QueryInstance]] = js.native
     def list(callback: js.Function2[/* error */ js.Error | Null, /* items */ js.Array[QueryInstance], Any]): js.Promise[js.Array[QueryInstance]] = js.native
+    def list(params: QueryListInstanceOptions): js.Promise[js.Array[QueryInstance]] = js.native
     def list(
-      opts: Unit,
-      callback: js.Function2[/* error */ js.Error | Null, /* items */ js.Array[QueryInstance], Any]
-    ): js.Promise[js.Array[QueryInstance]] = js.native
-    def list(opts: QueryListInstanceOptions): js.Promise[js.Array[QueryInstance]] = js.native
-    def list(
-      opts: QueryListInstanceOptions,
+      params: QueryListInstanceOptions,
       callback: js.Function2[/* error */ js.Error | Null, /* items */ js.Array[QueryInstance], Any]
     ): js.Promise[js.Array[QueryInstance]] = js.native
     
@@ -339,14 +255,14 @@ object libRestPreviewUnderstandAssistantQueryMod {
       * If a function is passed as the first argument, it will be used as the callback
       * function.
       *
-      * @param callback - Callback to handle list of records
+      * @param { QueryListInstancePageOptions } [params] - Options for request
+      * @param { function } [callback] - Callback to handle list of records
       */
     def page(): js.Promise[QueryPage] = js.native
     def page(callback: js.Function2[/* error */ js.Error | Null, /* items */ QueryPage, Any]): js.Promise[QueryPage] = js.native
-    def page(opts: Unit, callback: js.Function2[/* error */ js.Error | Null, /* items */ QueryPage, Any]): js.Promise[QueryPage] = js.native
-    def page(opts: QueryListInstancePageOptions): js.Promise[QueryPage] = js.native
+    def page(params: QueryListInstancePageOptions): js.Promise[QueryPage] = js.native
     def page(
-      opts: QueryListInstancePageOptions,
+      params: QueryListInstancePageOptions,
       callback: js.Function2[/* error */ js.Error | Null, /* items */ QueryPage, Any]
     ): js.Promise[QueryPage] = js.native
     
@@ -355,26 +271,155 @@ object libRestPreviewUnderstandAssistantQueryMod {
       */
     def toJSON(): Any = js.native
   }
+  object QueryListInstance {
+    
+    @JSImport("twilio/lib/rest/preview/understand/assistant/query", "QueryListInstance")
+    @js.native
+    def apply(version: default, assistantSid: String): QueryListInstance = js.native
+  }
   
-  /**
-    * Options to pass to create
-    *
-    * @property field - Constraints the query to a given Field with an task. Useful when you know the Field you are expecting. It accepts one field in the format task-unique-name-1:field-unique-name
-    * @property language - An ISO language-country string of the sample.
-    * @property modelBuild - The Model Build Sid or unique name of the Model Build to be queried.
-    * @property query - A user-provided string that uniquely identifies this resource as an alternative to the sid. It can be up to 2048 characters long.
-    * @property tasks - Constraints the query to a set of tasks. Useful when you need to constrain the paths the user can take. Tasks should be comma separated task-unique-name-1, task-unique-name-2
-    */
+  @JSImport("twilio/lib/rest/preview/understand/assistant/query", "QueryPage")
+  @js.native
+  open class QueryPage protected ()
+    extends typings.twilio.libBasePageMod.default[default, QueryPayload, QueryResource, QueryInstance] {
+    /**
+      * Initialize the QueryPage
+      *
+      * @param version - Version of the resource
+      * @param response - Response from the API
+      * @param solution - Path solution
+      */
+    def this(
+      version: default,
+      response: typings.twilio.libHttpResponseMod.default[String],
+      solution: QuerySolution
+    ) = this()
+    
+    /**
+      * Build an instance of QueryInstance
+      *
+      * @param payload - Payload response from the API
+      */
+    def getInstance(payload: QueryResource): QueryInstance = js.native
+  }
+  
+  @js.native
+  trait QueryContext extends StObject {
+    
+    /**
+      * Fetch a QueryInstance
+      *
+      * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed QueryInstance
+      */
+    def fetch(): js.Promise[QueryInstance] = js.native
+    def fetch(callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[QueryInstance], Any]): js.Promise[QueryInstance] = js.native
+    
+    /**
+      * Remove a QueryInstance
+      *
+      * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed boolean
+      */
+    def remove(): js.Promise[Boolean] = js.native
+    def remove(callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[Boolean], Any]): js.Promise[Boolean] = js.native
+    
+    /**
+      * Provide a user-friendly representation
+      */
+    def toJSON(): Any = js.native
+    
+    /**
+      * Update a QueryInstance
+      *
+      * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed QueryInstance
+      */
+    def update(): js.Promise[QueryInstance] = js.native
+    def update(callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[QueryInstance], Any]): js.Promise[QueryInstance] = js.native
+    /**
+      * Update a QueryInstance
+      *
+      * @param params - Parameter for request
+      * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed QueryInstance
+      */
+    def update(params: QueryContextUpdateOptions): js.Promise[QueryInstance] = js.native
+    def update(
+      params: QueryContextUpdateOptions,
+      callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[QueryInstance], Any]
+    ): js.Promise[QueryInstance] = js.native
+  }
+  
+  trait QueryContextSolution extends StObject {
+    
+    var assistantSid: String
+    
+    var sid: String
+  }
+  object QueryContextSolution {
+    
+    inline def apply(assistantSid: String, sid: String): QueryContextSolution = {
+      val __obj = js.Dynamic.literal(assistantSid = assistantSid.asInstanceOf[js.Any], sid = sid.asInstanceOf[js.Any])
+      __obj.asInstanceOf[QueryContextSolution]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueryContextSolution] (val x: Self) extends AnyVal {
+      
+      inline def setAssistantSid(value: String): Self = StObject.set(x, "assistantSid", value.asInstanceOf[js.Any])
+      
+      inline def setSid(value: String): Self = StObject.set(x, "sid", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait QueryContextUpdateOptions extends StObject {
+    
+    /** An optional reference to the Sample created from this query. */
+    var sampleSid: js.UndefOr[String] = js.undefined
+    
+    /** A string that described the query status. The values can be: pending_review, reviewed, discarded */
+    var status: js.UndefOr[String] = js.undefined
+  }
+  object QueryContextUpdateOptions {
+    
+    inline def apply(): QueryContextUpdateOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[QueryContextUpdateOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueryContextUpdateOptions] (val x: Self) extends AnyVal {
+      
+      inline def setSampleSid(value: String): Self = StObject.set(x, "sampleSid", value.asInstanceOf[js.Any])
+      
+      inline def setSampleSidUndefined: Self = StObject.set(x, "sampleSid", js.undefined)
+      
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      
+      inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    }
+  }
+  
   trait QueryListInstanceCreateOptions extends StObject {
     
+    /** Constraints the query to a given Field with an task. Useful when you know the Field you are expecting. It accepts one field in the format *task-unique-name-1*:*field-unique-name* */
     var field: js.UndefOr[String] = js.undefined
     
+    /** An ISO language-country string of the sample. */
     var language: String
     
+    /** The Model Build Sid or unique name of the Model Build to be queried. */
     var modelBuild: js.UndefOr[String] = js.undefined
     
+    /** A user-provided string that uniquely identifies this resource as an alternative to the sid. It can be up to 2048 characters long. */
     var query: String
     
+    /** Constraints the query to a set of tasks. Useful when you need to constrain the paths the user can take. Tasks should be comma separated *task-unique-name-1*, *task-unique-name-2* */
     var tasks: js.UndefOr[String] = js.undefined
   }
   object QueryListInstanceCreateOptions {
@@ -405,29 +450,9 @@ object libRestPreviewUnderstandAssistantQueryMod {
     }
   }
   
-  /**
-    * Options to pass to each
-    *
-    * @property callback -
-    *                         Function to process each record. If this and a positional
-    *                         callback are passed, this one will be used
-    * @property done - Function to be called upon completion of streaming
-    * @property language - An ISO language-country string of the sample.
-    * @property limit -
-    *                         Upper limit for the number of records to return.
-    *                         each() guarantees never to return more than limit.
-    *                         Default is no limit
-    * @property modelBuild - The Model Build Sid or unique name of the Model Build to be queried.
-    * @property pageSize -
-    *                         Number of records to fetch per request,
-    *                         when not set will use the default value of 50 records.
-    *                         If no pageSize is defined but a limit is defined,
-    *                         each() will attempt to read the limit with the most efficient
-    *                         page size, i.e. min(limit, 1000)
-    * @property status - A string that described the query status. The values can be: pending_review, reviewed, discarded
-    */
   trait QueryListInstanceEachOptions extends StObject {
     
+    /** Function to process each record. If this and a positional callback are passed, this one will be used */
     var callback: js.UndefOr[
         js.Function2[
           /* item */ QueryInstance, 
@@ -436,16 +461,22 @@ object libRestPreviewUnderstandAssistantQueryMod {
         ]
       ] = js.undefined
     
+    /** Function to be called upon completion of streaming */
     var done: js.UndefOr[js.Function] = js.undefined
     
+    /** An ISO language-country string of the sample. */
     var language: js.UndefOr[String] = js.undefined
     
+    /** Upper limit for the number of records to return. each() guarantees never to return more than limit. Default is no limit */
     var limit: js.UndefOr[Double] = js.undefined
     
+    /** The Model Build Sid or unique name of the Model Build to be queried. */
     var modelBuild: js.UndefOr[String] = js.undefined
     
+    /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
     var pageSize: js.UndefOr[Double] = js.undefined
     
+    /** A string that described the query status. The values can be: pending_review, reviewed, discarded */
     var status: js.UndefOr[String] = js.undefined
   }
   object QueryListInstanceEachOptions {
@@ -490,33 +521,21 @@ object libRestPreviewUnderstandAssistantQueryMod {
     }
   }
   
-  /**
-    * Options to pass to list
-    *
-    * @property language - An ISO language-country string of the sample.
-    * @property limit -
-    *                         Upper limit for the number of records to return.
-    *                         list() guarantees never to return more than limit.
-    *                         Default is no limit
-    * @property modelBuild - The Model Build Sid or unique name of the Model Build to be queried.
-    * @property pageSize -
-    *                         Number of records to fetch per request,
-    *                         when not set will use the default value of 50 records.
-    *                         If no page_size is defined but a limit is defined,
-    *                         list() will attempt to read the limit with the most
-    *                         efficient page size, i.e. min(limit, 1000)
-    * @property status - A string that described the query status. The values can be: pending_review, reviewed, discarded
-    */
   trait QueryListInstanceOptions extends StObject {
     
+    /** An ISO language-country string of the sample. */
     var language: js.UndefOr[String] = js.undefined
     
+    /** Upper limit for the number of records to return. list() guarantees never to return more than limit. Default is no limit */
     var limit: js.UndefOr[Double] = js.undefined
     
+    /** The Model Build Sid or unique name of the Model Build to be queried. */
     var modelBuild: js.UndefOr[String] = js.undefined
     
+    /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
     var pageSize: js.UndefOr[Double] = js.undefined
     
+    /** A string that described the query status. The values can be: pending_review, reviewed, discarded */
     var status: js.UndefOr[String] = js.undefined
   }
   object QueryListInstanceOptions {
@@ -551,28 +570,24 @@ object libRestPreviewUnderstandAssistantQueryMod {
     }
   }
   
-  /**
-    * Options to pass to page
-    *
-    * @property language - An ISO language-country string of the sample.
-    * @property modelBuild - The Model Build Sid or unique name of the Model Build to be queried.
-    * @property pageNumber - Page Number, this value is simply for client state
-    * @property pageSize - Number of records to return, defaults to 50
-    * @property pageToken - PageToken provided by the API
-    * @property status - A string that described the query status. The values can be: pending_review, reviewed, discarded
-    */
   trait QueryListInstancePageOptions extends StObject {
     
+    /** An ISO language-country string of the sample. */
     var language: js.UndefOr[String] = js.undefined
     
+    /** The Model Build Sid or unique name of the Model Build to be queried. */
     var modelBuild: js.UndefOr[String] = js.undefined
     
+    /** Page Number, this value is simply for client state */
     var pageNumber: js.UndefOr[Double] = js.undefined
     
+    /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
     var pageSize: js.UndefOr[Double] = js.undefined
     
+    /** PageToken provided by the API */
     var pageToken: js.UndefOr[String] = js.undefined
     
+    /** A string that described the query status. The values can be: pending_review, reviewed, discarded */
     var status: js.UndefOr[String] = js.undefined
   }
   object QueryListInstancePageOptions {
@@ -613,33 +628,31 @@ object libRestPreviewUnderstandAssistantQueryMod {
   
   trait QueryPayload
     extends StObject
-       with QueryResource
-       with TwilioResponsePayload
+       with TwilioResponsePayload {
+    
+    var queries: js.Array[QueryResource]
+  }
   object QueryPayload {
     
     inline def apply(
-      account_sid: String,
-      assistant_sid: String,
-      date_created: js.Date,
-      date_updated: js.Date,
       first_page_uri: String,
-      language: String,
-      model_build_sid: String,
       next_page_uri: String,
       page: Double,
       page_size: Double,
       previous_page_uri: String,
-      query: String,
-      results: js.Object,
-      sample_sid: String,
-      sid: String,
-      source_channel: String,
-      status: String,
-      uri: String,
-      url: String
+      queries: js.Array[QueryResource],
+      uri: String
     ): QueryPayload = {
-      val __obj = js.Dynamic.literal(account_sid = account_sid.asInstanceOf[js.Any], assistant_sid = assistant_sid.asInstanceOf[js.Any], date_created = date_created.asInstanceOf[js.Any], date_updated = date_updated.asInstanceOf[js.Any], first_page_uri = first_page_uri.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any], model_build_sid = model_build_sid.asInstanceOf[js.Any], next_page_uri = next_page_uri.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any], page_size = page_size.asInstanceOf[js.Any], previous_page_uri = previous_page_uri.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], results = results.asInstanceOf[js.Any], sample_sid = sample_sid.asInstanceOf[js.Any], sid = sid.asInstanceOf[js.Any], source_channel = source_channel.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(first_page_uri = first_page_uri.asInstanceOf[js.Any], next_page_uri = next_page_uri.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any], page_size = page_size.asInstanceOf[js.Any], previous_page_uri = previous_page_uri.asInstanceOf[js.Any], queries = queries.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
       __obj.asInstanceOf[QueryPayload]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueryPayload] (val x: Self) extends AnyVal {
+      
+      inline def setQueries(value: js.Array[QueryResource]): Self = StObject.set(x, "queries", value.asInstanceOf[js.Any])
+      
+      inline def setQueriesVarargs(value: QueryResource*): Self = StObject.set(x, "queries", js.Array(value*))
     }
   }
   
@@ -659,7 +672,7 @@ object libRestPreviewUnderstandAssistantQueryMod {
     
     var query: String
     
-    var results: js.Object
+    var results: Any
     
     var sample_sid: String
     
@@ -681,7 +694,7 @@ object libRestPreviewUnderstandAssistantQueryMod {
       language: String,
       model_build_sid: String,
       query: String,
-      results: js.Object,
+      results: Any,
       sample_sid: String,
       sid: String,
       source_channel: String,
@@ -709,7 +722,7 @@ object libRestPreviewUnderstandAssistantQueryMod {
       
       inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
-      inline def setResults(value: js.Object): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+      inline def setResults(value: Any): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
       inline def setSample_sid(value: String): Self = StObject.set(x, "sample_sid", value.asInstanceOf[js.Any])
       
@@ -725,12 +738,12 @@ object libRestPreviewUnderstandAssistantQueryMod {
   
   trait QuerySolution extends StObject {
     
-    var assistantSid: js.UndefOr[String] = js.undefined
+    var assistantSid: String
   }
   object QuerySolution {
     
-    inline def apply(): QuerySolution = {
-      val __obj = js.Dynamic.literal()
+    inline def apply(assistantSid: String): QuerySolution = {
+      val __obj = js.Dynamic.literal(assistantSid = assistantSid.asInstanceOf[js.Any])
       __obj.asInstanceOf[QuerySolution]
     }
     
@@ -738,8 +751,6 @@ object libRestPreviewUnderstandAssistantQueryMod {
     implicit open class MutableBuilder[Self <: QuerySolution] (val x: Self) extends AnyVal {
       
       inline def setAssistantSid(value: String): Self = StObject.set(x, "assistantSid", value.asInstanceOf[js.Any])
-      
-      inline def setAssistantSidUndefined: Self = StObject.set(x, "assistantSid", js.undefined)
     }
   }
 }

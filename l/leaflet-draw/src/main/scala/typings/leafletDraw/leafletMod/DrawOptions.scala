@@ -1,7 +1,6 @@
 package typings.leafletDraw.leafletMod
 
 import typings.leaflet.mod.DivIcon_
-import typings.leaflet.mod.FeatureGroup_
 import typings.leaflet.mod.IconOptions
 import typings.leaflet.mod.Icon_
 import typings.leaflet.mod.PathOptions
@@ -225,90 +224,6 @@ object DrawOptions {
       inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
       inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
-    }
-  }
-  
-  trait EditHandlerOptions extends StObject {
-    
-    /**
-      * The path options for how the layers will look while in edit mode.
-      * If this is set to null the editable path options will not be set.
-      *
-      * @default { dashArray: '10, 10', fill: true, fillColor: '#fe57a1', fillOpacity: 0.1, maintainColor: false }
-      */
-    var selectedPathOptions: js.UndefOr[PathOptions] = js.undefined
-  }
-  object EditHandlerOptions {
-    
-    inline def apply(): EditHandlerOptions = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[EditHandlerOptions]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: EditHandlerOptions] (val x: Self) extends AnyVal {
-      
-      inline def setSelectedPathOptions(value: PathOptions): Self = StObject.set(x, "selectedPathOptions", value.asInstanceOf[js.Any])
-      
-      inline def setSelectedPathOptionsUndefined: Self = StObject.set(x, "selectedPathOptions", js.undefined)
-    }
-  }
-  
-  trait EditPolyOptions extends StObject {
-    
-    /**
-      * Determines if line segments can cross
-      *
-      * @default true
-      */
-    var allowIntersection: Boolean
-    
-    /**
-      * Edit handler options. Set to false to disable handler.
-      */
-    var edit: EditHandlerOptions
-    
-    /**
-      * This is the FeatureGroup that stores all editable shapes
-      * THIS IS REQUIRED FOR THE EDIT TOOLBAR TO WORK
-      */
-    var featureGroup: FeatureGroup_[Any]
-    
-    /**
-      * Set polygon editing options
-      */
-    var poly: EditPolyOptions
-    
-    /**
-      * Delete handler options. Set to false to disable handler.
-      */
-    var remove: Any
-  }
-  object EditPolyOptions {
-    
-    inline def apply(
-      allowIntersection: Boolean,
-      edit: EditHandlerOptions,
-      featureGroup: FeatureGroup_[Any],
-      poly: EditPolyOptions,
-      remove: Any
-    ): EditPolyOptions = {
-      val __obj = js.Dynamic.literal(allowIntersection = allowIntersection.asInstanceOf[js.Any], edit = edit.asInstanceOf[js.Any], featureGroup = featureGroup.asInstanceOf[js.Any], poly = poly.asInstanceOf[js.Any], remove = remove.asInstanceOf[js.Any])
-      __obj.asInstanceOf[EditPolyOptions]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: EditPolyOptions] (val x: Self) extends AnyVal {
-      
-      inline def setAllowIntersection(value: Boolean): Self = StObject.set(x, "allowIntersection", value.asInstanceOf[js.Any])
-      
-      inline def setEdit(value: EditHandlerOptions): Self = StObject.set(x, "edit", value.asInstanceOf[js.Any])
-      
-      inline def setFeatureGroup(value: FeatureGroup_[Any]): Self = StObject.set(x, "featureGroup", value.asInstanceOf[js.Any])
-      
-      inline def setPoly(value: EditPolyOptions): Self = StObject.set(x, "poly", value.asInstanceOf[js.Any])
-      
-      inline def setRemove(value: Any): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
     }
   }
   

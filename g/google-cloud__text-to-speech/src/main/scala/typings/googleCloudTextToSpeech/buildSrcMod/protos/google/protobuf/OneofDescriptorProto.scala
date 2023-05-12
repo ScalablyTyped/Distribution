@@ -86,7 +86,7 @@ object OneofDescriptorProto {
     * @returns OneofDescriptorProto
     */
   /* static member */
-  inline def fromObject(`object`: StringDictionary[Any]): typings.googleCloudTextToSpeech.buildProtosProtosMod.google.protobuf.OneofDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.buildProtosProtosMod.google.protobuf.OneofDescriptorProto]
+  inline def fromObject(`object`: StringDictionary[scala.Any]): typings.googleCloudTextToSpeech.buildProtosProtosMod.google.protobuf.OneofDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.buildProtosProtosMod.google.protobuf.OneofDescriptorProto]
   
   /**
     * Gets the default type url for OneofDescriptorProto
@@ -104,11 +104,11 @@ object OneofDescriptorProto {
     * @returns Plain object
     */
   /* static member */
-  inline def toObject(message: typings.googleCloudTextToSpeech.buildProtosProtosMod.google.protobuf.OneofDescriptorProto): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: typings.googleCloudTextToSpeech.buildProtosProtosMod.google.protobuf.OneofDescriptorProto): StringDictionary[scala.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[scala.Any]]
   inline def toObject(
     message: typings.googleCloudTextToSpeech.buildProtosProtosMod.google.protobuf.OneofDescriptorProto,
     options: IConversionOptions
-  ): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
+  ): StringDictionary[scala.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[scala.Any]]
   
   /**
     * Verifies an OneofDescriptorProto message.
@@ -116,5 +116,5 @@ object OneofDescriptorProto {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[scala.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

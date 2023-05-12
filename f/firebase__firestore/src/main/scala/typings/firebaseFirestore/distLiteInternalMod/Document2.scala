@@ -11,6 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Document2 extends StObject {
   
+  /**
+    * The timestamp at which the document was created. This value increases
+    * monotonically when a document is deleted then recreated. It can also be
+    * compared to `createTime` of other documents and the `readTime` of a query.
+    */
+  val createTime: SnapshotVersion = js.native
+  
   /** The underlying data of this document or an empty value if no data exists. */
   val data: ObjectValue = js.native
   

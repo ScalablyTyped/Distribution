@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.devtoolsProtocol.devtoolsProtocolStrings.ExcludeInvalidSameParty
   - typings.devtoolsProtocol.devtoolsProtocolStrings.ExcludeSamePartyCrossPartyContext
   - typings.devtoolsProtocol.devtoolsProtocolStrings.ExcludeDomainNonASCII
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.ExcludeThirdPartyCookieBlockedInFirstPartySet
 */
 trait CookieExclusionReason extends StObject
 object CookieExclusionReason {
@@ -29,4 +30,6 @@ object CookieExclusionReason {
   inline def ExcludeSameSiteStrict: typings.devtoolsProtocol.devtoolsProtocolStrings.ExcludeSameSiteStrict = "ExcludeSameSiteStrict".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.ExcludeSameSiteStrict]
   
   inline def ExcludeSameSiteUnspecifiedTreatedAsLax: typings.devtoolsProtocol.devtoolsProtocolStrings.ExcludeSameSiteUnspecifiedTreatedAsLax = "ExcludeSameSiteUnspecifiedTreatedAsLax".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.ExcludeSameSiteUnspecifiedTreatedAsLax]
+  
+  inline def ExcludeThirdPartyCookieBlockedInFirstPartySet: typings.devtoolsProtocol.devtoolsProtocolStrings.ExcludeThirdPartyCookieBlockedInFirstPartySet = "ExcludeThirdPartyCookieBlockedInFirstPartySet".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.ExcludeThirdPartyCookieBlockedInFirstPartySet]
 }

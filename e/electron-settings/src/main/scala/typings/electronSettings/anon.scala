@@ -129,6 +129,9 @@ object anon {
     /* was `typeof Session` */
     val session: Any
     
+    /* was `typeof UtilityProcess` */
+    val utilityProcess: Any
+    
     /* was `typeof WebContents` */
     val webContents: Any
     
@@ -137,8 +140,8 @@ object anon {
   }
   object TypeofCrossProcessExports {
     
-    inline def apply(nativeImage: Any, session: Any, webContents: Any, webFrameMain: Any): TypeofCrossProcessExports = {
-      val __obj = js.Dynamic.literal(nativeImage = nativeImage.asInstanceOf[js.Any], session = session.asInstanceOf[js.Any], webContents = webContents.asInstanceOf[js.Any], webFrameMain = webFrameMain.asInstanceOf[js.Any])
+    inline def apply(nativeImage: Any, session: Any, utilityProcess: Any, webContents: Any, webFrameMain: Any): TypeofCrossProcessExports = {
+      val __obj = js.Dynamic.literal(nativeImage = nativeImage.asInstanceOf[js.Any], session = session.asInstanceOf[js.Any], utilityProcess = utilityProcess.asInstanceOf[js.Any], webContents = webContents.asInstanceOf[js.Any], webFrameMain = webFrameMain.asInstanceOf[js.Any])
       __obj.asInstanceOf[TypeofCrossProcessExports]
     }
     
@@ -148,6 +151,8 @@ object anon {
       inline def setNativeImage(value: Any): Self = StObject.set(x, "nativeImage", value.asInstanceOf[js.Any])
       
       inline def setSession(value: Any): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
+      
+      inline def setUtilityProcess(value: Any): Self = StObject.set(x, "utilityProcess", value.asInstanceOf[js.Any])
       
       inline def setWebContents(value: Any): Self = StObject.set(x, "webContents", value.asInstanceOf[js.Any])
       
@@ -180,6 +185,8 @@ object anon {
     
     val TouchBar: Any
     
+    val UtilityProcess: Any
+    
     val WebContents: Any
     
     val WebFrameMain: Any
@@ -189,6 +196,9 @@ object anon {
     
     /* was `typeof Session` */
     val session: Any
+    
+    /* was `typeof UtilityProcess` */
+    val utilityProcess: Any
     
     /* was `typeof WebContents` */
     val webContents: Any
@@ -210,14 +220,16 @@ object anon {
       Renderer: Any,
       Session: Any,
       TouchBar: Any,
+      UtilityProcess: Any,
       WebContents: Any,
       WebFrameMain: Any,
       nativeImage: Any,
       session: Any,
+      utilityProcess: Any,
       webContents: Any,
       webFrameMain: Any
     ): TypeofElectron = {
-      val __obj = js.Dynamic.literal(BrowserWindow = BrowserWindow.asInstanceOf[js.Any], Common = Common.asInstanceOf[js.Any], CrossProcessExports = CrossProcessExports.asInstanceOf[js.Any], Main = Main.asInstanceOf[js.Any], Menu = Menu.asInstanceOf[js.Any], NativeImage = NativeImage.asInstanceOf[js.Any], NodeEventEmitter = NodeEventEmitter.asInstanceOf[js.Any], Notification = Notification.asInstanceOf[js.Any], Renderer = Renderer.asInstanceOf[js.Any], Session = Session.asInstanceOf[js.Any], TouchBar = TouchBar.asInstanceOf[js.Any], WebContents = WebContents.asInstanceOf[js.Any], WebFrameMain = WebFrameMain.asInstanceOf[js.Any], nativeImage = nativeImage.asInstanceOf[js.Any], session = session.asInstanceOf[js.Any], webContents = webContents.asInstanceOf[js.Any], webFrameMain = webFrameMain.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(BrowserWindow = BrowserWindow.asInstanceOf[js.Any], Common = Common.asInstanceOf[js.Any], CrossProcessExports = CrossProcessExports.asInstanceOf[js.Any], Main = Main.asInstanceOf[js.Any], Menu = Menu.asInstanceOf[js.Any], NativeImage = NativeImage.asInstanceOf[js.Any], NodeEventEmitter = NodeEventEmitter.asInstanceOf[js.Any], Notification = Notification.asInstanceOf[js.Any], Renderer = Renderer.asInstanceOf[js.Any], Session = Session.asInstanceOf[js.Any], TouchBar = TouchBar.asInstanceOf[js.Any], UtilityProcess = UtilityProcess.asInstanceOf[js.Any], WebContents = WebContents.asInstanceOf[js.Any], WebFrameMain = WebFrameMain.asInstanceOf[js.Any], nativeImage = nativeImage.asInstanceOf[js.Any], session = session.asInstanceOf[js.Any], utilityProcess = utilityProcess.asInstanceOf[js.Any], webContents = webContents.asInstanceOf[js.Any], webFrameMain = webFrameMain.asInstanceOf[js.Any])
       __obj.asInstanceOf[TypeofElectron]
     }
     
@@ -246,6 +258,8 @@ object anon {
       
       inline def setTouchBar(value: Any): Self = StObject.set(x, "TouchBar", value.asInstanceOf[js.Any])
       
+      inline def setUtilityProcess(value: Any): Self = StObject.set(x, "UtilityProcess", value.asInstanceOf[js.Any])
+      
       inline def setWebContents(value: Any): Self = StObject.set(x, "WebContents", value.asInstanceOf[js.Any])
       
       inline def setWebFrameMain(value: Any): Self = StObject.set(x, "WebFrameMain", value.asInstanceOf[js.Any])
@@ -257,6 +271,9 @@ object anon {
     /* was `typeof Session` */
     val session: Any
     
+    /* was `typeof UtilityProcess` */
+    val utilityProcess: Any
+    
     /* was `typeof WebContents` */
     val webContents: Any
     
@@ -265,8 +282,8 @@ object anon {
   }
   object TypeofMain {
     
-    inline def apply(session: Any, webContents: Any, webFrameMain: Any): TypeofMain = {
-      val __obj = js.Dynamic.literal(session = session.asInstanceOf[js.Any], webContents = webContents.asInstanceOf[js.Any], webFrameMain = webFrameMain.asInstanceOf[js.Any])
+    inline def apply(session: Any, utilityProcess: Any, webContents: Any, webFrameMain: Any): TypeofMain = {
+      val __obj = js.Dynamic.literal(session = session.asInstanceOf[js.Any], utilityProcess = utilityProcess.asInstanceOf[js.Any], webContents = webContents.asInstanceOf[js.Any], webFrameMain = webFrameMain.asInstanceOf[js.Any])
       __obj.asInstanceOf[TypeofMain]
     }
     
@@ -274,6 +291,8 @@ object anon {
     implicit open class MutableBuilder[Self <: TypeofMain] (val x: Self) extends AnyVal {
       
       inline def setSession(value: Any): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
+      
+      inline def setUtilityProcess(value: Any): Self = StObject.set(x, "utilityProcess", value.asInstanceOf[js.Any])
       
       inline def setWebContents(value: Any): Self = StObject.set(x, "webContents", value.asInstanceOf[js.Any])
       

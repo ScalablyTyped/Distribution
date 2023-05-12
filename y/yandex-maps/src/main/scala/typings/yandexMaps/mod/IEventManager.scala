@@ -1,6 +1,7 @@
 package typings.yandexMaps.mod
 
 import typings.std.AnimationEvent
+import typings.std.ClipboardEvent
 import typings.std.CompositionEvent
 import typings.std.DragEvent
 import typings.std.ErrorEvent
@@ -37,7 +38,9 @@ import typings.yandexMaps.yandexMapsStrings.compositionend
 import typings.yandexMaps.yandexMapsStrings.compositionstart
 import typings.yandexMaps.yandexMapsStrings.compositionupdate
 import typings.yandexMaps.yandexMapsStrings.contextmenu
+import typings.yandexMaps.yandexMapsStrings.copy
 import typings.yandexMaps.yandexMapsStrings.cuechange
+import typings.yandexMaps.yandexMapsStrings.cut
 import typings.yandexMaps.yandexMapsStrings.dblclick
 import typings.yandexMaps.yandexMapsStrings.drag
 import typings.yandexMaps.yandexMapsStrings.dragend
@@ -72,6 +75,7 @@ import typings.yandexMaps.yandexMapsStrings.mousemove
 import typings.yandexMaps.yandexMapsStrings.mouseout
 import typings.yandexMaps.yandexMapsStrings.mouseover
 import typings.yandexMaps.yandexMapsStrings.mouseup
+import typings.yandexMaps.yandexMapsStrings.paste
 import typings.yandexMaps.yandexMapsStrings.pause
 import typings.yandexMaps.yandexMapsStrings.play
 import typings.yandexMaps.yandexMapsStrings.playing
@@ -581,6 +585,28 @@ trait IEventManager[TargetGeometry]
     priority: Double
   ): this.type = js.native
   @JSName("add")
+  def add_copy(types: copy, callback: js.Function1[/* event */ IEvent[ClipboardEvent, TargetGeometry], Unit]): this.type = js.native
+  @JSName("add")
+  def add_copy(
+    types: copy,
+    callback: js.Function1[/* event */ IEvent[ClipboardEvent, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  def add_copy(
+    types: copy,
+    callback: js.Function1[/* event */ IEvent[ClipboardEvent, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  def add_copy(
+    types: copy,
+    callback: js.Function1[/* event */ IEvent[ClipboardEvent, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
   def add_cuechange(types: cuechange, callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit]): this.type = js.native
   @JSName("add")
   def add_cuechange(
@@ -599,6 +625,28 @@ trait IEventManager[TargetGeometry]
   def add_cuechange(
     types: cuechange,
     callback: js.Function1[/* event */ IEvent[Event, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  def add_cut(types: cut, callback: js.Function1[/* event */ IEvent[ClipboardEvent, TargetGeometry], Unit]): this.type = js.native
+  @JSName("add")
+  def add_cut(
+    types: cut,
+    callback: js.Function1[/* event */ IEvent[ClipboardEvent, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  def add_cut(
+    types: cut,
+    callback: js.Function1[/* event */ IEvent[ClipboardEvent, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  def add_cut(
+    types: cut,
+    callback: js.Function1[/* event */ IEvent[ClipboardEvent, TargetGeometry], Unit],
     context: Unit,
     priority: Double
   ): this.type = js.native
@@ -1353,6 +1401,28 @@ trait IEventManager[TargetGeometry]
   def add_mouseup(
     types: mouseup,
     callback: js.Function1[/* event */ IEvent[MouseEvent, TargetGeometry], Unit],
+    context: Unit,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  def add_paste(types: paste, callback: js.Function1[/* event */ IEvent[ClipboardEvent, TargetGeometry], Unit]): this.type = js.native
+  @JSName("add")
+  def add_paste(
+    types: paste,
+    callback: js.Function1[/* event */ IEvent[ClipboardEvent, TargetGeometry], Unit],
+    context: js.Object
+  ): this.type = js.native
+  @JSName("add")
+  def add_paste(
+    types: paste,
+    callback: js.Function1[/* event */ IEvent[ClipboardEvent, TargetGeometry], Unit],
+    context: js.Object,
+    priority: Double
+  ): this.type = js.native
+  @JSName("add")
+  def add_paste(
+    types: paste,
+    callback: js.Function1[/* event */ IEvent[ClipboardEvent, TargetGeometry], Unit],
     context: Unit,
     priority: Double
   ): this.type = js.native

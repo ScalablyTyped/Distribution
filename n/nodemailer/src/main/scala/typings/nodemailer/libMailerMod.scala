@@ -478,6 +478,9 @@ object libMailerMod {
     /** AMP4EMAIL specific HTML version of the message, same usage as with text and html. Make sure it is a full and valid AMP4EMAIL document, otherwise the displaying email client falls back to html and ignores the amp part */
     var amp: js.UndefOr[String | Buffer | Readable | AmpAttachment] = js.undefined
     
+    /** if set to true then converts data:images in the HTML content of message to embedded attachments */
+    var attachDataUrls: js.UndefOr[Boolean] = js.undefined
+    
     /** An array of attachment objects */
     var attachments: js.UndefOr[js.Array[Attachment]] = js.undefined
     
@@ -577,6 +580,10 @@ object libMailerMod {
       inline def setAmp(value: String | Buffer | Readable | AmpAttachment): Self = StObject.set(x, "amp", value.asInstanceOf[js.Any])
       
       inline def setAmpUndefined: Self = StObject.set(x, "amp", js.undefined)
+      
+      inline def setAttachDataUrls(value: Boolean): Self = StObject.set(x, "attachDataUrls", value.asInstanceOf[js.Any])
+      
+      inline def setAttachDataUrlsUndefined: Self = StObject.set(x, "attachDataUrls", js.undefined)
       
       inline def setAttachments(value: js.Array[Attachment]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
       

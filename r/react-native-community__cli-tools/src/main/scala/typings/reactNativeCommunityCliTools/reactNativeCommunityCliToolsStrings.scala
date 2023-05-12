@@ -1,5 +1,6 @@
 package typings.reactNativeCommunityCliTools
 
+import typings.reactNativeCommunityCliTools.buildDoclinkMod.Platforms
 import typings.reactNativeCommunityCliTools.buildReleaseCheckerReleaseCacheManagerMod.ReleaseCacheKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -8,10 +9,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object reactNativeCommunityCliToolsStrings {
   
   @js.native
+  sealed trait android
+    extends StObject
+       with Platforms
+  inline def android: android = "android".asInstanceOf[android]
+  
+  @js.native
   sealed trait eTag
     extends StObject
        with ReleaseCacheKey
   inline def eTag: eTag = "eTag".asInstanceOf[eTag]
+  
+  @js.native
+  sealed trait ios
+    extends StObject
+       with Platforms
+  inline def ios: ios = "ios".asInstanceOf[ios]
   
   @js.native
   sealed trait lastChecked

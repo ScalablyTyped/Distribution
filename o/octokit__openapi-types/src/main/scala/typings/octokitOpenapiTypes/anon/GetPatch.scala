@@ -6,16 +6,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GetPatch extends StObject {
   
-  var delete: Responses304403404
+  /** Delete a gist comment */
+  var delete: ParametersPathCommentidResponses304403404
   
-  var get: ParametersPathGistid
+  /** Get a gist comment */
+  var get: ParametersPathCommentid
   
-  /** Allows you to update or delete a gist file and rename gist files. Files from the previous version of the gist that aren't explicitly changed during an edit are unchanged. */
-  var patch: RequestBodyContent33
+  /** Update a gist comment */
+  var patch: Responses20024404
 }
 object GetPatch {
   
-  inline def apply(delete: Responses304403404, get: ParametersPathGistid, patch: RequestBodyContent33): GetPatch = {
+  inline def apply(
+    delete: ParametersPathCommentidResponses304403404,
+    get: ParametersPathCommentid,
+    patch: Responses20024404
+  ): GetPatch = {
     val __obj = js.Dynamic.literal(delete = delete.asInstanceOf[js.Any], get = get.asInstanceOf[js.Any], patch = patch.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetPatch]
   }
@@ -23,10 +29,10 @@ object GetPatch {
   @scala.inline
   implicit open class MutableBuilder[Self <: GetPatch] (val x: Self) extends AnyVal {
     
-    inline def setDelete(value: Responses304403404): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
+    inline def setDelete(value: ParametersPathCommentidResponses304403404): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
     
-    inline def setGet(value: ParametersPathGistid): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
+    inline def setGet(value: ParametersPathCommentid): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     
-    inline def setPatch(value: RequestBodyContent33): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
+    inline def setPatch(value: Responses20024404): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
   }
 }

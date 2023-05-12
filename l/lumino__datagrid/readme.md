@@ -1,7 +1,7 @@
 
 # Scala.js typings for lumino__datagrid
 
-Typings are for version 0.36.4
+Typings are for version 2.1.1
 
 ## Library description:
 Lumino Tabular Data Grid

@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.ScrollPaddingInlineStart
+import typings.csstype.mod.Property.ScrollbarColor
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,13 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `292` extends StObject {
   
   var value: js.UndefOr[
-    (ScrollPaddingInlineStart[Double | String]) | (js.Array[
+    ScrollbarColor | (js.Array[
       (Extract[
-        js.UndefOr[
-          (ScrollPaddingInlineStart[Double | String]) | (js.Array[NonNullable[js.UndefOr[ScrollPaddingInlineStart[Double | String]]]])
-        ], 
+        js.UndefOr[ScrollbarColor | js.Array[NonNullable[js.UndefOr[ScrollbarColor]]]], 
         String
-      ]) | (NonNullable[js.UndefOr[ScrollPaddingInlineStart[Double | String]]])
+      ]) | NonNullable[js.UndefOr[ScrollbarColor]]
     ])
   ] = js.native
 }

@@ -31,10 +31,14 @@ object wdioTypesStrings {
   inline def CONFIG: CONFIG = "CONFIG".asInstanceOf[CONFIG]
   
   @js.native
-  sealed trait `DotSlashprotocol-stub`
+  sealed trait DELETE extends StObject
+  inline def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
+  
+  @js.native
+  sealed trait `DotSlashprotocol-stubDotjs`
     extends StObject
        with SupportedProtocols
-  inline def `DotSlashprotocol-stub`: `DotSlashprotocol-stub` = "./protocol-stub".asInstanceOf[`DotSlashprotocol-stub`]
+  inline def `DotSlashprotocol-stubDotjs`: `DotSlashprotocol-stubDotjs` = "./protocol-stub.js".asInstanceOf[`DotSlashprotocol-stubDotjs`]
   
   @js.native
   sealed trait FAILED extends StObject
@@ -59,6 +63,14 @@ object wdioTypesStrings {
   inline def FINEST: FINEST = "FINEST".asInstanceOf[FINEST]
   
   @js.native
+  sealed trait GET extends StObject
+  inline def GET: GET = "GET".asInstanceOf[GET]
+  
+  @js.native
+  sealed trait HEAD extends StObject
+  inline def HEAD: HEAD = "HEAD".asInstanceOf[HEAD]
+  
+  @js.native
   sealed trait INFO
     extends StObject
        with LoggingPreferenceType
@@ -71,12 +83,28 @@ object wdioTypesStrings {
   inline def OFF: OFF = "OFF".asInstanceOf[OFF]
   
   @js.native
+  sealed trait OPTIONS extends StObject
+  inline def OPTIONS: OPTIONS = "OPTIONS".asInstanceOf[OPTIONS]
+  
+  @js.native
   sealed trait PASSED extends StObject
   inline def PASSED: PASSED = "PASSED".asInstanceOf[PASSED]
   
   @js.native
+  sealed trait PATCH extends StObject
+  inline def PATCH: PATCH = "PATCH".asInstanceOf[PATCH]
+  
+  @js.native
   sealed trait PENDING extends StObject
   inline def PENDING: PENDING = "PENDING".asInstanceOf[PENDING]
+  
+  @js.native
+  sealed trait POST extends StObject
+  inline def POST: POST = "POST".asInstanceOf[POST]
+  
+  @js.native
+  sealed trait PUT extends StObject
+  inline def PUT: PUT = "PUT".asInstanceOf[PUT]
   
   @js.native
   sealed trait SEVERE
@@ -87,6 +115,10 @@ object wdioTypesStrings {
   @js.native
   sealed trait SKIPPED extends StObject
   inline def SKIPPED: SKIPPED = "SKIPPED".asInstanceOf[SKIPPED]
+  
+  @js.native
+  sealed trait TRACE extends StObject
+  inline def TRACE: TRACE = "TRACE".asInstanceOf[TRACE]
   
   @js.native
   sealed trait UNDEFINED extends StObject
@@ -101,10 +133,6 @@ object wdioTypesStrings {
     extends StObject
        with LoggingPreferenceType
   inline def WARNING: WARNING = "WARNING".asInstanceOf[WARNING]
-  
-  @js.native
-  sealed trait _package extends StObject
-  inline def _package: _package = "package".asInstanceOf[_package]
   
   @js.native
   sealed trait apac
@@ -125,12 +153,16 @@ object wdioTypesStrings {
   inline def autodetect: autodetect = "autodetect".asInstanceOf[autodetect]
   
   @js.native
-  sealed trait capabilities extends StObject
-  inline def capabilities: capabilities = "capabilities".asInstanceOf[capabilities]
+  sealed trait browser extends StObject
+  inline def browser: browser = "browser".asInstanceOf[browser]
   
   @js.native
-  sealed trait cjs extends StObject
-  inline def cjs: cjs = "cjs".asInstanceOf[cjs]
+  sealed trait buffer extends StObject
+  inline def buffer: buffer = "buffer".asInstanceOf[buffer]
+  
+  @js.native
+  sealed trait capabilities extends StObject
+  inline def capabilities: capabilities = "capabilities".asInstanceOf[capabilities]
   
   @js.native
   sealed trait config_
@@ -144,6 +176,10 @@ object wdioTypesStrings {
        with FirefoxLogLevels
        with WebDriverLogTypes
   inline def debug: debug = "debug".asInstanceOf[debug]
+  
+  @js.native
+  sealed trait delete_ extends StObject
+  inline def delete_ : delete_ = "delete".asInstanceOf[delete_]
   
   @js.native
   sealed trait devtools
@@ -173,10 +209,6 @@ object wdioTypesStrings {
   inline def errors: errors = "errors".asInstanceOf[errors]
   
   @js.native
-  sealed trait esm extends StObject
-  inline def esm: esm = "esm".asInstanceOf[esm]
-  
-  @js.native
   sealed trait eu
     extends StObject
        with SauceRegions
@@ -195,6 +227,14 @@ object wdioTypesStrings {
   inline def fatal: fatal = "fatal".asInstanceOf[fatal]
   
   @js.native
+  sealed trait get_ extends StObject
+  inline def get_ : get_ = "get".asInstanceOf[get_]
+  
+  @js.native
+  sealed trait head_ extends StObject
+  inline def head_ : head_ = "head".asInstanceOf[head_]
+  
+  @js.native
   sealed trait horizontal
     extends StObject
        with MoonMobileDeviceOrientation
@@ -206,6 +246,10 @@ object wdioTypesStrings {
        with FirefoxLogLevels
        with WebDriverLogTypes
   inline def info_ : info_ = "info".asInstanceOf[info_]
+  
+  @js.native
+  sealed trait json extends StObject
+  inline def json: json = "json".asInstanceOf[json]
   
   @js.native
   sealed trait landscape
@@ -242,10 +286,18 @@ object wdioTypesStrings {
   inline def normal: normal = "normal".asInstanceOf[normal]
   
   @js.native
+  sealed trait options_ extends StObject
+  inline def options_ : options_ = "options".asInstanceOf[options_]
+  
+  @js.native
   sealed trait pac
     extends StObject
        with ProxyTypes
   inline def pac: pac = "pac".asInstanceOf[pac]
+  
+  @js.native
+  sealed trait patch_ extends StObject
+  inline def patch_ : patch_ = "patch".asInstanceOf[patch_]
   
   @js.native
   sealed trait portait
@@ -258,6 +310,10 @@ object wdioTypesStrings {
   inline def portrait: portrait = "portrait".asInstanceOf[portrait]
   
   @js.native
+  sealed trait post_ extends StObject
+  inline def post_ : post_ = "post".asInstanceOf[post_]
+  
+  @js.native
   sealed trait `private` extends StObject
   inline def `private`: `private` = "private".asInstanceOf[`private`]
   
@@ -268,6 +324,10 @@ object wdioTypesStrings {
   @js.native
   sealed trait `public restricted` extends StObject
   inline def `public restricted`: `public restricted` = ("public restricted").asInstanceOf[`public restricted`]
+  
+  @js.native
+  sealed trait put_ extends StObject
+  inline def put_ : put_ = "put".asInstanceOf[put_]
   
   @js.native
   sealed trait share extends StObject
@@ -296,11 +356,19 @@ object wdioTypesStrings {
   inline def team: team = "team".asInstanceOf[team]
   
   @js.native
-  sealed trait trace
+  sealed trait text extends StObject
+  inline def text: text = "text".asInstanceOf[text]
+  
+  @js.native
+  sealed trait trace_
     extends StObject
        with FirefoxLogLevels
        with WebDriverLogTypes
-  inline def trace: trace = "trace".asInstanceOf[trace]
+  inline def trace_ : trace_ = "trace".asInstanceOf[trace_]
+  
+  @js.native
+  sealed trait `true` extends StObject
+  inline def `true`: `true` = "true".asInstanceOf[`true`]
   
   @js.native
   sealed trait us

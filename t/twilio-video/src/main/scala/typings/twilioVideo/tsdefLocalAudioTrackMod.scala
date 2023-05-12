@@ -7,7 +7,9 @@ import typings.twilioVideo.tsdefLocalTrackOptionsMod.LocalTrackOptions
 import typings.twilioVideo.tsdefTrackMod.Track.ID
 import typings.twilioVideo.tsdefTypesMod.LocalTrack
 import typings.twilioVideo.tsdefTypesMod.NoiseCancellation
+import typings.twilioVideo.twilioVideoStrings.muted
 import typings.twilioVideo.twilioVideoStrings.stopped
+import typings.twilioVideo.twilioVideoStrings.unmuted
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,12 +31,18 @@ object tsdefLocalAudioTrackMod {
     
     var id: ID = js.native
     
+    var isMuted: Boolean = js.native
+    
     var isStopped: Boolean = js.native
     
     var noiseCancellation: js.UndefOr[NoiseCancellation] = js.native
     
     @JSName("on")
+    def on_muted(event: muted, listener: js.Function1[/* track */ this.type, Unit]): this.type = js.native
+    @JSName("on")
     def on_stopped(event: stopped, listener: js.Function1[/* track */ this.type, Unit]): this.type = js.native
+    @JSName("on")
+    def on_unmuted(event: unmuted, listener: js.Function1[/* track */ this.type, Unit]): this.type = js.native
     
     def restart(): js.Promise[Unit] = js.native
     def restart(constraints: MediaTrackConstraints): js.Promise[Unit] = js.native

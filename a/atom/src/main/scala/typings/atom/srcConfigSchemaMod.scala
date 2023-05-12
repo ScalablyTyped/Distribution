@@ -25,7 +25,7 @@ object srcConfigSchemaMod {
   trait ConfigValues extends StObject
   
   // NOTE: A hack to make ConfigValues extensible
-  // tslint:disable-next-line:no-declare-current-package
+  // eslint-disable-next-line no-declare-current-package
   /* augmented module */
   object atomAugmentingMod {
     

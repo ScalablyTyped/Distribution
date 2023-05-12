@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SimpleExpressionNode
   extends StObject
-     with Node2
+     with Node
      with ExpressionNode {
   
   var constType: ConstantTypes

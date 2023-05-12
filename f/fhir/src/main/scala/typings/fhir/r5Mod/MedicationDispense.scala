@@ -51,14 +51,9 @@ trait MedicationDispense
   var daysSupply: js.UndefOr[Quantity] = js.undefined
   
   /**
-    * Identification of the facility/location where the medication was shipped to, as part of the dispense event.
+    * Identification of the facility/location where the medication was/will be shipped to, as part of the dispense event.
     */
   var destination: js.UndefOr[Reference] = js.undefined
-  
-  /**
-    * This element can include a detected issue that has been identified either by a decision support system or by a clinician and may include information on the steps that were taken to address the issue.
-    */
-  var detectedIssue: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
     * When the dose or rate is intended to change over the entire administration period (e.g. Tapering dose prescriptions), multiple instances of dosage instructions will need to be supplied to convey the different doses/rates.
@@ -90,6 +85,11 @@ trait MedicationDispense
     * If only a code is specified, then it needs to be a code for a specific product. If more information is required, then the use of the medication resource is recommended.  For example, if you require form or lot number, then you must reference the Medication resource.
     */
   var medication: CodeableReference
+  
+  /**
+    * Indicates the reason why a dispense was not performed.
+    */
+  var notPerformedReason: js.UndefOr[CodeableReference] = js.undefined
   
   /**
     * Extra information about the dispense that could not be conveyed in the other attributes.
@@ -139,11 +139,6 @@ trait MedicationDispense
     * The date (and maybe time) when the status of the dispense record changed.
     */
   var statusChanged: js.UndefOr[String] = js.undefined
-  
-  /**
-    * Indicates the reason why a dispense was not performed.
-    */
-  var statusReason: js.UndefOr[CodeableReference] = js.undefined
   
   /**
     * SubstanceAdministration->subject->Patient.
@@ -215,12 +210,6 @@ object MedicationDispense {
     
     inline def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
     
-    inline def setDetectedIssue(value: js.Array[Reference]): Self = StObject.set(x, "detectedIssue", value.asInstanceOf[js.Any])
-    
-    inline def setDetectedIssueUndefined: Self = StObject.set(x, "detectedIssue", js.undefined)
-    
-    inline def setDetectedIssueVarargs(value: Reference*): Self = StObject.set(x, "detectedIssue", js.Array(value*))
-    
     inline def setDosageInstruction(value: js.Array[Dosage]): Self = StObject.set(x, "dosageInstruction", value.asInstanceOf[js.Any])
     
     inline def setDosageInstructionUndefined: Self = StObject.set(x, "dosageInstruction", js.undefined)
@@ -248,6 +237,10 @@ object MedicationDispense {
     inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     inline def setMedication(value: CodeableReference): Self = StObject.set(x, "medication", value.asInstanceOf[js.Any])
+    
+    inline def setNotPerformedReason(value: CodeableReference): Self = StObject.set(x, "notPerformedReason", value.asInstanceOf[js.Any])
+    
+    inline def setNotPerformedReasonUndefined: Self = StObject.set(x, "notPerformedReason", js.undefined)
     
     inline def setNote(value: js.Array[Annotation]): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
     
@@ -294,10 +287,6 @@ object MedicationDispense {
     inline def setStatusChanged(value: String): Self = StObject.set(x, "statusChanged", value.asInstanceOf[js.Any])
     
     inline def setStatusChangedUndefined: Self = StObject.set(x, "statusChanged", js.undefined)
-    
-    inline def setStatusReason(value: CodeableReference): Self = StObject.set(x, "statusReason", value.asInstanceOf[js.Any])
-    
-    inline def setStatusReasonUndefined: Self = StObject.set(x, "statusReason", js.undefined)
     
     inline def setSubject(value: Reference): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     

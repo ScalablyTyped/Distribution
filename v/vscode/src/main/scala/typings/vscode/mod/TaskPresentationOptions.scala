@@ -7,37 +7,37 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TaskPresentationOptions extends StObject {
   
   /**
-    * Controls whether the terminal is cleared before executing the task.
-    */
+  		 * Controls whether the terminal is cleared before executing the task.
+  		 */
   var clear: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Controls whether the command associated with the task is echoed
-    * in the user interface.
-    */
+  		 * Controls whether the command associated with the task is echoed
+  		 * in the user interface.
+  		 */
   var echo: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Controls whether the panel showing the task output is taking focus.
-    */
+  		 * Controls whether the panel showing the task output is taking focus.
+  		 */
   var focus: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Controls if the task panel is used for this task only (dedicated),
-    * shared between tasks (shared) or if a new panel is created on
-    * every task execution (new). Defaults to `TaskInstanceKind.Shared`
-    */
+  		 * Controls if the task panel is used for this task only (dedicated),
+  		 * shared between tasks (shared) or if a new panel is created on
+  		 * every task execution (new). Defaults to `TaskInstanceKind.Shared`
+  		 */
   var panel: js.UndefOr[TaskPanelKind] = js.undefined
   
   /**
-    * Controls whether the task output is reveal in the user interface.
-    * Defaults to `RevealKind.Always`.
-    */
+  		 * Controls whether the task output is reveal in the user interface.
+  		 * Defaults to `RevealKind.Always`.
+  		 */
   var reveal: js.UndefOr[TaskRevealKind] = js.undefined
   
   /**
-    * Controls whether to show the "Terminal will be reused by tasks, press any key to close it" message.
-    */
+  		 * Controls whether to show the "Terminal will be reused by tasks, press any key to close it" message.
+  		 */
   var showReuseMessage: js.UndefOr[Boolean] = js.undefined
 }
 object TaskPresentationOptions {

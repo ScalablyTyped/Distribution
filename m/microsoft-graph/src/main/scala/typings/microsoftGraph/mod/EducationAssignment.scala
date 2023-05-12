@@ -18,7 +18,9 @@ trait EducationAssignment
   
   /**
     * Optional field to control the assignment behavior for students who are added after the assignment is published. If not
-    * specified, defaults to none value. Currently supports only two values: none or assignIfOpen.
+    * specified, defaults to none. Supported values are: none, assignIfOpen. For example, a teacher can use assignIfOpen to
+    * indicate that an assignment should be assigned to any new student who joins the class while the assignment is still
+    * open, and none to indicate that an assignment should not be assigned to new students.
     */
   var addedStudentAction: js.UndefOr[NullableOption[EducationAddedStudentAction]] = js.undefined
   
@@ -82,6 +84,9 @@ trait EducationAssignment
     * and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     */
   var dueDateTime: js.UndefOr[NullableOption[String]] = js.undefined
+  
+  // Folder URL where all the feedback file resources for this assignment are stored.
+  var feedbackResourcesFolderUrl: js.UndefOr[NullableOption[String]] = js.undefined
   
   // How the assignment will be graded.
   var grading: js.UndefOr[NullableOption[EducationAssignmentGradeType]] = js.undefined
@@ -219,6 +224,12 @@ object EducationAssignment {
     inline def setDueDateTimeNull: Self = StObject.set(x, "dueDateTime", null)
     
     inline def setDueDateTimeUndefined: Self = StObject.set(x, "dueDateTime", js.undefined)
+    
+    inline def setFeedbackResourcesFolderUrl(value: NullableOption[String]): Self = StObject.set(x, "feedbackResourcesFolderUrl", value.asInstanceOf[js.Any])
+    
+    inline def setFeedbackResourcesFolderUrlNull: Self = StObject.set(x, "feedbackResourcesFolderUrl", null)
+    
+    inline def setFeedbackResourcesFolderUrlUndefined: Self = StObject.set(x, "feedbackResourcesFolderUrl", js.undefined)
     
     inline def setGrading(value: NullableOption[EducationAssignmentGradeType]): Self = StObject.set(x, "grading", value.asInstanceOf[js.Any])
     

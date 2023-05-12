@@ -13,7 +13,7 @@ open class Area protected ()
   def this(props: AreaProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: AreaProps, context: Any) = this()
 }

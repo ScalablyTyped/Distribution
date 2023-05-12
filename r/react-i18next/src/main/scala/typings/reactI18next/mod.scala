@@ -16,7 +16,6 @@ import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.LibraryManagedAttributes
 import typings.reactI18next.anon.Call
-import typings.reactI18next.anon.Children
 import typings.reactI18next.anon.I18n
 import typings.reactI18next.anon.I18nI18n
 import typings.reactI18next.anon.InitialI18nStore
@@ -27,6 +26,7 @@ import typings.reactI18next.reactI18nextStrings.fallback
 import typings.reactI18next.reactI18nextStrings.t
 import typings.reactI18next.reactI18nextStrings.tReady
 import typings.reactI18next.reactI18nextStrings.translation
+import typings.reactI18next.transWithoutContextMod.TransProps
 import typings.std.Omit
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -200,7 +200,7 @@ object mod {
     
     var children: js.UndefOr[ReactNode] = js.undefined
     
-    var defaultNS: js.UndefOr[String] = js.undefined
+    var defaultNS: js.UndefOr[String | js.Array[String]] = js.undefined
     
     var i18n: typings.i18next.mod.i18n
   }
@@ -218,9 +218,11 @@ object mod {
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      inline def setDefaultNS(value: String): Self = StObject.set(x, "defaultNS", value.asInstanceOf[js.Any])
+      inline def setDefaultNS(value: String | js.Array[String]): Self = StObject.set(x, "defaultNS", value.asInstanceOf[js.Any])
       
       inline def setDefaultNSUndefined: Self = StObject.set(x, "defaultNS", js.undefined)
+      
+      inline def setDefaultNSVarargs(value: String*): Self = StObject.set(x, "defaultNS", js.Array(value*))
       
       inline def setI18n(value: i18n): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])
     }
@@ -235,7 +237,7 @@ object mod {
     */
   type ObjectOrNever = Record[String, Any]
   
-  type ReactI18NextChild = ReactNode | ObjectOrNever
+  type ReactI18NextChildren = ReactNode | ObjectOrNever
   
   trait ReportNamespaces extends StObject {
     
@@ -264,13 +266,17 @@ object mod {
   
   type Subtract[T /* <: K */, K] = Omit[T, /* keyof K */ String]
   
-  type TransChild = ReactNode | (Record[String, Any])
-  
-  type TransProps[K /* <: /* import warning: importer.ImportType#apply Failed type conversion: i18next.i18next.TFuncKey<N, TKPrefix, i18next.i18next.Resources> extends infer A ? A : never */ js.Any */, N /* <: Namespace[FallbackOrNS[String, /* keyof i18next.i18next.Resources */ String]] */, TKPrefix, E] = E & (Children[K, N, TKPrefix])
-  
   trait TranslationProps[N /* <: Namespace[FallbackOrNS[String, /* keyof i18next.i18next.Resources */ String]] */, TKPrefix /* <: KeyPrefix[N] */] extends StObject {
     
-    def children(t: TFunction[N, TKPrefix], options: Lng, ready: Boolean): ReactNode
+    def children(
+      t: TFunction[
+          N, 
+          TKPrefix, 
+          /* import warning: importer.ImportType#apply Failed type conversion: N extends null ? i18next.i18next.DefaultNamespace : N */ js.Any
+        ],
+      options: Lng,
+      ready: Boolean
+    ): ReactNode
     
     var i18n: js.UndefOr[typings.i18next.mod.i18n] = js.undefined
     
@@ -284,7 +290,13 @@ object mod {
   }
   object TranslationProps {
     
-    inline def apply[N /* <: Namespace[FallbackOrNS[String, /* keyof i18next.i18next.Resources */ String]] */, TKPrefix /* <: KeyPrefix[N] */](children: (TFunction[N, TKPrefix], Lng, Boolean) => ReactNode): TranslationProps[N, TKPrefix] = {
+    inline def apply[N /* <: Namespace[FallbackOrNS[String, /* keyof i18next.i18next.Resources */ String]] */, TKPrefix /* <: KeyPrefix[N] */](
+      children: (TFunction[
+          N, 
+          TKPrefix, 
+          /* import warning: importer.ImportType#apply Failed type conversion: N extends null ? i18next.i18next.DefaultNamespace : N */ js.Any
+        ], Lng, Boolean) => ReactNode
+    ): TranslationProps[N, TKPrefix] = {
       val __obj = js.Dynamic.literal(children = js.Any.fromFunction3(children))
       __obj.asInstanceOf[TranslationProps[N, TKPrefix]]
     }
@@ -292,7 +304,13 @@ object mod {
     @scala.inline
     implicit open class MutableBuilder[Self <: TranslationProps[?, ?], N /* <: Namespace[FallbackOrNS[String, /* keyof i18next.i18next.Resources */ String]] */, TKPrefix /* <: KeyPrefix[N] */] (val x: Self & (TranslationProps[N, TKPrefix])) extends AnyVal {
       
-      inline def setChildren(value: (TFunction[N, TKPrefix], Lng, Boolean) => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction3(value))
+      inline def setChildren(
+        value: (TFunction[
+              N, 
+              TKPrefix, 
+              /* import warning: importer.ImportType#apply Failed type conversion: N extends null ? i18next.i18next.DefaultNamespace : N */ js.Any
+            ], Lng, Boolean) => ReactNode
+      ): Self = StObject.set(x, "children", js.Any.fromFunction3(value))
       
       inline def setI18n(value: i18n): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])
       
@@ -360,7 +378,15 @@ object mod {
     }
   }
   
-  type UseTranslationResponse[N /* <: Namespace[FallbackOrNS[String, /* keyof i18next.i18next.Resources */ String]] */, TKPrefix] = (js.Tuple3[TFunction[N, TKPrefix], i18n, Boolean]) & (I18n[N, TKPrefix])
+  type UseTranslationResponse[N /* <: Namespace[FallbackOrNS[String, /* keyof i18next.i18next.Resources */ String]] */, TKPrefix] = (js.Tuple3[
+    TFunction[
+      N, 
+      TKPrefix, 
+      /* import warning: importer.ImportType#apply Failed type conversion: N extends null ? i18next.i18next.DefaultNamespace : N */ js.Any
+    ], 
+    i18n, 
+    Boolean
+  ]) & (I18n[N, TKPrefix])
   
   trait WithTranslationProps extends StObject {
     
@@ -392,13 +418,25 @@ object mod {
     
     var i18n: typings.i18next.mod.i18n
     
-    var t: TFunction[N, TKPrefix]
+    var t: TFunction[
+        N, 
+        TKPrefix, 
+        /* import warning: importer.ImportType#apply Failed type conversion: N extends null ? i18next.i18next.DefaultNamespace : N */ js.Any
+      ]
     
     var tReady: Boolean
   }
   object WithTranslation_ {
     
-    inline def apply[N /* <: Namespace[FallbackOrNS[String, /* keyof i18next.i18next.Resources */ String]] */, TKPrefix /* <: KeyPrefix[N] */](i18n: i18n, t: TFunction[N, TKPrefix], tReady: Boolean): WithTranslation_[N, TKPrefix] = {
+    inline def apply[N /* <: Namespace[FallbackOrNS[String, /* keyof i18next.i18next.Resources */ String]] */, TKPrefix /* <: KeyPrefix[N] */](
+      i18n: i18n,
+      t: TFunction[
+          N, 
+          TKPrefix, 
+          /* import warning: importer.ImportType#apply Failed type conversion: N extends null ? i18next.i18next.DefaultNamespace : N */ js.Any
+        ],
+      tReady: Boolean
+    ): WithTranslation_[N, TKPrefix] = {
       val __obj = js.Dynamic.literal(i18n = i18n.asInstanceOf[js.Any], t = t.asInstanceOf[js.Any], tReady = tReady.asInstanceOf[js.Any])
       __obj.asInstanceOf[WithTranslation_[N, TKPrefix]]
     }
@@ -408,7 +446,13 @@ object mod {
       
       inline def setI18n(value: i18n): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])
       
-      inline def setT(value: TFunction[N, TKPrefix]): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
+      inline def setT(
+        value: TFunction[
+              N, 
+              TKPrefix, 
+              /* import warning: importer.ImportType#apply Failed type conversion: N extends null ? i18next.i18next.DefaultNamespace : N */ js.Any
+            ]
+      ): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
       
       inline def setTReady(value: Boolean): Self = StObject.set(x, "tReady", value.asInstanceOf[js.Any])
     }
@@ -441,7 +485,7 @@ object mod {
     
     trait HTMLAttributes[T] extends StObject {
       
-      var children: js.UndefOr[ReactI18NextChild | js.Iterable[ReactI18NextChild]] = js.undefined
+      var children: js.UndefOr[ReactI18NextChildren] = js.undefined
     }
     object HTMLAttributes {
       
@@ -453,7 +497,7 @@ object mod {
       @scala.inline
       implicit open class MutableBuilder[Self <: HTMLAttributes[?], T] (val x: Self & HTMLAttributes[T]) extends AnyVal {
         
-        inline def setChildren(value: ReactI18NextChild | js.Iterable[ReactI18NextChild]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+        inline def setChildren(value: ReactI18NextChildren): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
         
         inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       }

@@ -12,7 +12,7 @@ trait ListPlaceIndexesResponseEntry extends StObject {
   var CreateTime: js.Date
   
   /**
-    * The data provider of geospatial data. Values can be one of the following:    Esri     Here    For more information about data providers, see Amazon Location Service data providers.
+    * The data provider of geospatial data. Values can be one of the following:    Esri     Grab     Here    For more information about data providers, see Amazon Location Service data providers.
     */
   var DataSource: String
   

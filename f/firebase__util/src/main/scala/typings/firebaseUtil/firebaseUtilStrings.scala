@@ -45,6 +45,10 @@ object firebaseUtilStrings {
   inline def authTokenSyncURL: authTokenSyncURL = "authTokenSyncURL".asInstanceOf[authTokenSyncURL]
   
   @js.native
+  sealed trait browser extends StObject
+  inline def browser: browser = "browser".asInstanceOf[browser]
+  
+  @js.native
   sealed trait custom
     extends StObject
        with FirebaseSignInProvider
@@ -97,6 +101,10 @@ object firebaseUtilStrings {
        with typings.firebaseUtil.distNodeEsmSrcEmulatorMod.FirebaseSignInProvider
        with typings.firebaseUtil.distSrcEmulatorMod.FirebaseSignInProvider
   inline def microsoftDotcom: microsoftDotcom = "microsoft.com".asInstanceOf[microsoftDotcom]
+  
+  @js.native
+  sealed trait node extends StObject
+  inline def node: node = "node".asInstanceOf[node]
   
   @js.native
   sealed trait password

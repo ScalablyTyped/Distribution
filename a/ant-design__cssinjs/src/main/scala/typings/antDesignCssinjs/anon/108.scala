@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.AnimationDirection
+import typings.csstype.mod.Property.BoxShadow
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,11 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `108` extends StObject {
   
   var value: js.UndefOr[
-    AnimationDirection | (js.Array[
-      (Extract[
-        js.UndefOr[AnimationDirection | js.Array[NonNullable[js.UndefOr[AnimationDirection]]]], 
-        String
-      ]) | NonNullable[js.UndefOr[AnimationDirection]]
+    BoxShadow | (js.Array[
+      (Extract[js.UndefOr[BoxShadow | js.Array[NonNullable[js.UndefOr[BoxShadow]]]], String]) | NonNullable[js.UndefOr[BoxShadow]]
     ])
   ] = js.native
 }

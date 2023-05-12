@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "edge-paths" : "3.0.5"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "edge-paths" : "3.0.5"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

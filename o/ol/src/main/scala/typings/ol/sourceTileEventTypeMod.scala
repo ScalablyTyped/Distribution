@@ -6,39 +6,33 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object sourceTileEventTypeMod {
   
-  @JSImport("ol/source/TileEventType", JSImport.Default)
-  @js.native
-  object default extends StObject {
+  object default {
     
-    @JSBracketAccess
-    def apply(value: String): js.UndefOr[TileEventType & String] = js.native
+    @JSImport("ol/source/TileEventType", "default.TILELOADEND")
+    @js.native
+    val TILELOADEND: String = js.native
     
-    /* "tileloadend" */ val TILELOADEND: typings.ol.sourceTileEventTypeMod.TileEventType.TILELOADEND & String = js.native
+    @JSImport("ol/source/TileEventType", "default.TILELOADERROR")
+    @js.native
+    val TILELOADERROR: String = js.native
     
-    /* "tileloaderror" */ val TILELOADERROR: typings.ol.sourceTileEventTypeMod.TileEventType.TILELOADERROR & String = js.native
-    
-    /* "tileloadstart" */ val TILELOADSTART: typings.ol.sourceTileEventTypeMod.TileEventType.TILELOADSTART & String = js.native
+    @JSImport("ol/source/TileEventType", "default.TILELOADSTART")
+    @js.native
+    val TILELOADSTART: String = js.native
   }
   
-  @js.native
-  sealed trait TileEventType extends StObject
-  @JSImport("ol/source/TileEventType", "TileEventType")
-  @js.native
-  object TileEventType extends StObject {
+  /* Rewritten from type alias, can be one of: 
+    - typings.ol.olStrings.tileloadstart
+    - typings.ol.olStrings.tileloadend
+    - typings.ol.olStrings.tileloaderror
+  */
+  trait TileSourceEventTypes extends StObject
+  object TileSourceEventTypes {
     
-    @js.native
-    sealed trait TILELOADEND
-      extends StObject
-         with TileEventType
+    inline def tileloadend: typings.ol.olStrings.tileloadend = "tileloadend".asInstanceOf[typings.ol.olStrings.tileloadend]
     
-    @js.native
-    sealed trait TILELOADERROR
-      extends StObject
-         with TileEventType
+    inline def tileloaderror: typings.ol.olStrings.tileloaderror = "tileloaderror".asInstanceOf[typings.ol.olStrings.tileloaderror]
     
-    @js.native
-    sealed trait TILELOADSTART
-      extends StObject
-         with TileEventType
+    inline def tileloadstart: typings.ol.olStrings.tileloadstart = "tileloadstart".asInstanceOf[typings.ol.olStrings.tileloadstart]
   }
 }

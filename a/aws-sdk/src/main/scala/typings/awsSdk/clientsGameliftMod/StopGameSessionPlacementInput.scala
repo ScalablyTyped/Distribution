@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StopGameSessionPlacementInput extends StObject {
   
   /**
-    * A unique identifier for a game session placement to cancel.
+    * A unique identifier for a game session placement to stop.
     */
   var PlacementId: IdStringModel
 }

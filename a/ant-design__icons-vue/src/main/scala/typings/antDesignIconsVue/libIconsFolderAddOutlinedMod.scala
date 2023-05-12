@@ -16,7 +16,7 @@ object libIconsFolderAddOutlinedMod extends Shortcut {
   @js.native
   trait FolderAddOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_FolderAddOutlinedIconType: String = js.native

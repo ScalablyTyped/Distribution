@@ -3,6 +3,7 @@ package typings.pixiCore.mod
 import typings.pixiCore.libTexturesBaseTextureMod.IBaseTextureOptions
 import typings.pixiCore.libTexturesBaseTextureMod.ImageSource
 import typings.pixiCore.libTexturesResourcesAutoDetectResourceMod.IAutoDetectOptions
+import typings.pixiCore.libTexturesTextureMod.ITextureBorders
 import typings.pixiCore.libTexturesTextureMod.TextureSource
 import typings.pixiMath.libIpointdataMod.IPointData
 import typings.pixiMath.mod.ISize
@@ -21,229 +22,16 @@ open class Texture[R /* <: typings.pixiCore.libTexturesResourcesResourceMod.Reso
     * @param trim - Trimmed rectangle of original texture
     * @param rotate - indicates how the texture was rotated by texture packer. See {@link PIXI.groupD8}
     * @param anchor - Default anchor point used for sprite placement / rotation
+    * @param borders - Default borders used for 9-slice scaling. See {@link PIXI.NineSlicePlane}
     */
-  def this(baseTexture: typings.pixiCore.libTexturesBaseTextureMod.BaseTexture[R, IAutoDetectOptions]) = this()
   def this(
     baseTexture: typings.pixiCore.libTexturesBaseTextureMod.BaseTexture[R, IAutoDetectOptions],
-    frame: typings.pixiMath.mod.Rectangle
-  ) = this()
-  def this(
-    baseTexture: typings.pixiCore.libTexturesBaseTextureMod.BaseTexture[R, IAutoDetectOptions],
-    frame: Unit,
-    orig: typings.pixiMath.mod.Rectangle
-  ) = this()
-  def this(
-    baseTexture: typings.pixiCore.libTexturesBaseTextureMod.BaseTexture[R, IAutoDetectOptions],
-    frame: typings.pixiMath.mod.Rectangle,
-    orig: typings.pixiMath.mod.Rectangle
-  ) = this()
-  def this(
-    baseTexture: typings.pixiCore.libTexturesBaseTextureMod.BaseTexture[R, IAutoDetectOptions],
-    frame: Unit,
-    orig: Unit,
-    trim: typings.pixiMath.mod.Rectangle
-  ) = this()
-  def this(
-    baseTexture: typings.pixiCore.libTexturesBaseTextureMod.BaseTexture[R, IAutoDetectOptions],
-    frame: Unit,
-    orig: typings.pixiMath.mod.Rectangle,
-    trim: typings.pixiMath.mod.Rectangle
-  ) = this()
-  def this(
-    baseTexture: typings.pixiCore.libTexturesBaseTextureMod.BaseTexture[R, IAutoDetectOptions],
-    frame: typings.pixiMath.mod.Rectangle,
-    orig: Unit,
-    trim: typings.pixiMath.mod.Rectangle
-  ) = this()
-  def this(
-    baseTexture: typings.pixiCore.libTexturesBaseTextureMod.BaseTexture[R, IAutoDetectOptions],
-    frame: typings.pixiMath.mod.Rectangle,
-    orig: typings.pixiMath.mod.Rectangle,
-    trim: typings.pixiMath.mod.Rectangle
-  ) = this()
-  def this(
-    baseTexture: typings.pixiCore.libTexturesBaseTextureMod.BaseTexture[R, IAutoDetectOptions],
-    frame: Unit,
-    orig: Unit,
-    trim: Unit,
-    rotate: Double
-  ) = this()
-  def this(
-    baseTexture: typings.pixiCore.libTexturesBaseTextureMod.BaseTexture[R, IAutoDetectOptions],
-    frame: Unit,
-    orig: Unit,
-    trim: typings.pixiMath.mod.Rectangle,
-    rotate: Double
-  ) = this()
-  def this(
-    baseTexture: typings.pixiCore.libTexturesBaseTextureMod.BaseTexture[R, IAutoDetectOptions],
-    frame: Unit,
-    orig: typings.pixiMath.mod.Rectangle,
-    trim: Unit,
-    rotate: Double
-  ) = this()
-  def this(
-    baseTexture: typings.pixiCore.libTexturesBaseTextureMod.BaseTexture[R, IAutoDetectOptions],
-    frame: Unit,
-    orig: typings.pixiMath.mod.Rectangle,
-    trim: typings.pixiMath.mod.Rectangle,
-    rotate: Double
-  ) = this()
-  def this(
-    baseTexture: typings.pixiCore.libTexturesBaseTextureMod.BaseTexture[R, IAutoDetectOptions],
-    frame: typings.pixiMath.mod.Rectangle,
-    orig: Unit,
-    trim: Unit,
-    rotate: Double
-  ) = this()
-  def this(
-    baseTexture: typings.pixiCore.libTexturesBaseTextureMod.BaseTexture[R, IAutoDetectOptions],
-    frame: typings.pixiMath.mod.Rectangle,
-    orig: Unit,
-    trim: typings.pixiMath.mod.Rectangle,
-    rotate: Double
-  ) = this()
-  def this(
-    baseTexture: typings.pixiCore.libTexturesBaseTextureMod.BaseTexture[R, IAutoDetectOptions],
-    frame: typings.pixiMath.mod.Rectangle,
-    orig: typings.pixiMath.mod.Rectangle,
-    trim: Unit,
-    rotate: Double
-  ) = this()
-  def this(
-    baseTexture: typings.pixiCore.libTexturesBaseTextureMod.BaseTexture[R, IAutoDetectOptions],
-    frame: typings.pixiMath.mod.Rectangle,
-    orig: typings.pixiMath.mod.Rectangle,
-    trim: typings.pixiMath.mod.Rectangle,
-    rotate: Double
-  ) = this()
-  def this(
-    baseTexture: typings.pixiCore.libTexturesBaseTextureMod.BaseTexture[R, IAutoDetectOptions],
-    frame: Unit,
-    orig: Unit,
-    trim: Unit,
-    rotate: Double,
-    anchor: IPointData
-  ) = this()
-  def this(
-    baseTexture: typings.pixiCore.libTexturesBaseTextureMod.BaseTexture[R, IAutoDetectOptions],
-    frame: Unit,
-    orig: Unit,
-    trim: Unit,
-    rotate: Unit,
-    anchor: IPointData
-  ) = this()
-  def this(
-    baseTexture: typings.pixiCore.libTexturesBaseTextureMod.BaseTexture[R, IAutoDetectOptions],
-    frame: Unit,
-    orig: Unit,
-    trim: typings.pixiMath.mod.Rectangle,
-    rotate: Double,
-    anchor: IPointData
-  ) = this()
-  def this(
-    baseTexture: typings.pixiCore.libTexturesBaseTextureMod.BaseTexture[R, IAutoDetectOptions],
-    frame: Unit,
-    orig: Unit,
-    trim: typings.pixiMath.mod.Rectangle,
-    rotate: Unit,
-    anchor: IPointData
-  ) = this()
-  def this(
-    baseTexture: typings.pixiCore.libTexturesBaseTextureMod.BaseTexture[R, IAutoDetectOptions],
-    frame: Unit,
-    orig: typings.pixiMath.mod.Rectangle,
-    trim: Unit,
-    rotate: Double,
-    anchor: IPointData
-  ) = this()
-  def this(
-    baseTexture: typings.pixiCore.libTexturesBaseTextureMod.BaseTexture[R, IAutoDetectOptions],
-    frame: Unit,
-    orig: typings.pixiMath.mod.Rectangle,
-    trim: Unit,
-    rotate: Unit,
-    anchor: IPointData
-  ) = this()
-  def this(
-    baseTexture: typings.pixiCore.libTexturesBaseTextureMod.BaseTexture[R, IAutoDetectOptions],
-    frame: Unit,
-    orig: typings.pixiMath.mod.Rectangle,
-    trim: typings.pixiMath.mod.Rectangle,
-    rotate: Double,
-    anchor: IPointData
-  ) = this()
-  def this(
-    baseTexture: typings.pixiCore.libTexturesBaseTextureMod.BaseTexture[R, IAutoDetectOptions],
-    frame: Unit,
-    orig: typings.pixiMath.mod.Rectangle,
-    trim: typings.pixiMath.mod.Rectangle,
-    rotate: Unit,
-    anchor: IPointData
-  ) = this()
-  def this(
-    baseTexture: typings.pixiCore.libTexturesBaseTextureMod.BaseTexture[R, IAutoDetectOptions],
-    frame: typings.pixiMath.mod.Rectangle,
-    orig: Unit,
-    trim: Unit,
-    rotate: Double,
-    anchor: IPointData
-  ) = this()
-  def this(
-    baseTexture: typings.pixiCore.libTexturesBaseTextureMod.BaseTexture[R, IAutoDetectOptions],
-    frame: typings.pixiMath.mod.Rectangle,
-    orig: Unit,
-    trim: Unit,
-    rotate: Unit,
-    anchor: IPointData
-  ) = this()
-  def this(
-    baseTexture: typings.pixiCore.libTexturesBaseTextureMod.BaseTexture[R, IAutoDetectOptions],
-    frame: typings.pixiMath.mod.Rectangle,
-    orig: Unit,
-    trim: typings.pixiMath.mod.Rectangle,
-    rotate: Double,
-    anchor: IPointData
-  ) = this()
-  def this(
-    baseTexture: typings.pixiCore.libTexturesBaseTextureMod.BaseTexture[R, IAutoDetectOptions],
-    frame: typings.pixiMath.mod.Rectangle,
-    orig: Unit,
-    trim: typings.pixiMath.mod.Rectangle,
-    rotate: Unit,
-    anchor: IPointData
-  ) = this()
-  def this(
-    baseTexture: typings.pixiCore.libTexturesBaseTextureMod.BaseTexture[R, IAutoDetectOptions],
-    frame: typings.pixiMath.mod.Rectangle,
-    orig: typings.pixiMath.mod.Rectangle,
-    trim: Unit,
-    rotate: Double,
-    anchor: IPointData
-  ) = this()
-  def this(
-    baseTexture: typings.pixiCore.libTexturesBaseTextureMod.BaseTexture[R, IAutoDetectOptions],
-    frame: typings.pixiMath.mod.Rectangle,
-    orig: typings.pixiMath.mod.Rectangle,
-    trim: Unit,
-    rotate: Unit,
-    anchor: IPointData
-  ) = this()
-  def this(
-    baseTexture: typings.pixiCore.libTexturesBaseTextureMod.BaseTexture[R, IAutoDetectOptions],
-    frame: typings.pixiMath.mod.Rectangle,
-    orig: typings.pixiMath.mod.Rectangle,
-    trim: typings.pixiMath.mod.Rectangle,
-    rotate: Double,
-    anchor: IPointData
-  ) = this()
-  def this(
-    baseTexture: typings.pixiCore.libTexturesBaseTextureMod.BaseTexture[R, IAutoDetectOptions],
-    frame: typings.pixiMath.mod.Rectangle,
-    orig: typings.pixiMath.mod.Rectangle,
-    trim: typings.pixiMath.mod.Rectangle,
-    rotate: Unit,
-    anchor: IPointData
+    frame: js.UndefOr[typings.pixiMath.mod.Rectangle],
+    orig: js.UndefOr[typings.pixiMath.mod.Rectangle],
+    trim: js.UndefOr[typings.pixiMath.mod.Rectangle],
+    rotate: js.UndefOr[Double],
+    anchor: js.UndefOr[IPointData],
+    borders: js.UndefOr[ITextureBorders]
   ) = this()
 }
 /* static members */

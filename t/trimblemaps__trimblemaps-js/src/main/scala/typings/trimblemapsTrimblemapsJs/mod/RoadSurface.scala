@@ -6,4 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@trimblemaps/trimblemaps-js", "RoadSurface")
 @js.native
-open class RoadSurface () extends ContentBase
+open class RoadSurface () extends ContentBase {
+  def this(options: ContentOptions) = this()
+}

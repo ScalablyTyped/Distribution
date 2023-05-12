@@ -61,7 +61,7 @@ object Sound {
       */
     @JSGlobal("Phaser.Sound.Events.COMPLETE")
     @js.native
-    val COMPLETE: Any = js.native
+    val COMPLETE: String = js.native
     
     /**
       * The Audio Data Decoded Event.
@@ -77,7 +77,7 @@ object Sound {
       */
     @JSGlobal("Phaser.Sound.Events.DECODED")
     @js.native
-    val DECODED: Any = js.native
+    val DECODED: String = js.native
     
     /**
       * The Audio Data Decoded All Event.
@@ -97,7 +97,7 @@ object Sound {
       */
     @JSGlobal("Phaser.Sound.Events.DECODED_ALL")
     @js.native
-    val DECODED_ALL: Any = js.native
+    val DECODED_ALL: String = js.native
     
     /**
       * The Sound Destroy Event.
@@ -115,7 +115,7 @@ object Sound {
       */
     @JSGlobal("Phaser.Sound.Events.DESTROY")
     @js.native
-    val DESTROY: Any = js.native
+    val DESTROY: String = js.native
     
     /**
       * The Sound Detune Event.
@@ -133,7 +133,7 @@ object Sound {
       */
     @JSGlobal("Phaser.Sound.Events.DETUNE")
     @js.native
-    val DETUNE: Any = js.native
+    val DETUNE: String = js.native
     
     /**
       * The Sound Manager Global Detune Event.
@@ -146,7 +146,7 @@ object Sound {
       */
     @JSGlobal("Phaser.Sound.Events.GLOBAL_DETUNE")
     @js.native
-    val GLOBAL_DETUNE: Any = js.native
+    val GLOBAL_DETUNE: String = js.native
     
     /**
       * The Sound Manager Global Mute Event.
@@ -158,7 +158,7 @@ object Sound {
       */
     @JSGlobal("Phaser.Sound.Events.GLOBAL_MUTE")
     @js.native
-    val GLOBAL_MUTE: Any = js.native
+    val GLOBAL_MUTE: String = js.native
     
     /**
       * The Sound Manager Global Rate Event.
@@ -171,7 +171,7 @@ object Sound {
       */
     @JSGlobal("Phaser.Sound.Events.GLOBAL_RATE")
     @js.native
-    val GLOBAL_RATE: Any = js.native
+    val GLOBAL_RATE: String = js.native
     
     /**
       * The Sound Manager Global Volume Event.
@@ -183,7 +183,7 @@ object Sound {
       */
     @JSGlobal("Phaser.Sound.Events.GLOBAL_VOLUME")
     @js.native
-    val GLOBAL_VOLUME: Any = js.native
+    val GLOBAL_VOLUME: String = js.native
     
     /**
       * The Sound Loop Event.
@@ -202,7 +202,7 @@ object Sound {
       */
     @JSGlobal("Phaser.Sound.Events.LOOP")
     @js.native
-    val LOOP: Any = js.native
+    val LOOP: String = js.native
     
     /**
       * The Sound Looped Event.
@@ -222,7 +222,7 @@ object Sound {
       */
     @JSGlobal("Phaser.Sound.Events.LOOPED")
     @js.native
-    val LOOPED: Any = js.native
+    val LOOPED: String = js.native
     
     /**
       * The Sound Mute Event.
@@ -240,7 +240,7 @@ object Sound {
       */
     @JSGlobal("Phaser.Sound.Events.MUTE")
     @js.native
-    val MUTE: Any = js.native
+    val MUTE: String = js.native
     
     /**
       * The Sound Pan Event.
@@ -258,7 +258,7 @@ object Sound {
       */
     @JSGlobal("Phaser.Sound.Events.PAN")
     @js.native
-    val PAN: Any = js.native
+    val PAN: String = js.native
     
     /**
       * The Sound Pause Event.
@@ -276,7 +276,7 @@ object Sound {
       */
     @JSGlobal("Phaser.Sound.Events.PAUSE")
     @js.native
-    val PAUSE: Any = js.native
+    val PAUSE: String = js.native
     
     /**
       * The Pause All Sounds Event.
@@ -289,7 +289,7 @@ object Sound {
       */
     @JSGlobal("Phaser.Sound.Events.PAUSE_ALL")
     @js.native
-    val PAUSE_ALL: Any = js.native
+    val PAUSE_ALL: String = js.native
     
     /**
       * The Sound Play Event.
@@ -306,7 +306,7 @@ object Sound {
       */
     @JSGlobal("Phaser.Sound.Events.PLAY")
     @js.native
-    val PLAY: Any = js.native
+    val PLAY: String = js.native
     
     /**
       * The Sound Rate Change Event.
@@ -324,7 +324,7 @@ object Sound {
       */
     @JSGlobal("Phaser.Sound.Events.RATE")
     @js.native
-    val RATE: Any = js.native
+    val RATE: String = js.native
     
     /**
       * The Sound Resume Event.
@@ -343,7 +343,7 @@ object Sound {
       */
     @JSGlobal("Phaser.Sound.Events.RESUME")
     @js.native
-    val RESUME: Any = js.native
+    val RESUME: String = js.native
     
     /**
       * The Resume All Sounds Event.
@@ -356,7 +356,7 @@ object Sound {
       */
     @JSGlobal("Phaser.Sound.Events.RESUME_ALL")
     @js.native
-    val RESUME_ALL: Any = js.native
+    val RESUME_ALL: String = js.native
     
     /**
       * The Sound Seek Event.
@@ -374,7 +374,7 @@ object Sound {
       */
     @JSGlobal("Phaser.Sound.Events.SEEK")
     @js.native
-    val SEEK: Any = js.native
+    val SEEK: String = js.native
     
     /**
       * The Sound Stop Event.
@@ -392,7 +392,7 @@ object Sound {
       */
     @JSGlobal("Phaser.Sound.Events.STOP")
     @js.native
-    val STOP: Any = js.native
+    val STOP: String = js.native
     
     /**
       * The Stop All Sounds Event.
@@ -405,7 +405,7 @@ object Sound {
       */
     @JSGlobal("Phaser.Sound.Events.STOP_ALL")
     @js.native
-    val STOP_ALL: Any = js.native
+    val STOP_ALL: String = js.native
     
     /**
       * The Sound Manager Unlocked Event.
@@ -418,7 +418,7 @@ object Sound {
       */
     @JSGlobal("Phaser.Sound.Events.UNLOCKED")
     @js.native
-    val UNLOCKED: Any = js.native
+    val UNLOCKED: String = js.native
     
     /**
       * The Sound Volume Event.
@@ -436,7 +436,7 @@ object Sound {
       */
     @JSGlobal("Phaser.Sound.Events.VOLUME")
     @js.native
-    val VOLUME: Any = js.native
+    val VOLUME: String = js.native
   }
   
   /**
@@ -507,7 +507,7 @@ object Sound {
   @js.native
   open class NoAudioSoundManager protected ()
     extends StObject
-       with typings.phaser.Phaser.Sound.BaseSoundManager {
+       with typings.phaser.Phaser.Sound.NoAudioSoundManager {
     /**
       * 
       * @param game Reference to the current game instance.
@@ -533,7 +533,7 @@ object Sound {
        with typings.phaser.Phaser.Sound.WebAudioSound {
     /**
       * 
-      * @param manager Reference to the current sound manager instance.
+      * @param manager Reference to the WebAudio Sound Manager that owns this Sound instance.
       * @param key Asset key for the sound.
       * @param config An optional config object containing default sound settings. Default {}.
       */

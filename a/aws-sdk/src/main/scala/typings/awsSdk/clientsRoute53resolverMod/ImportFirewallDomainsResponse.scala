@@ -17,7 +17,7 @@ trait ImportFirewallDomainsResponse extends StObject {
   var Name: js.UndefOr[typings.awsSdk.clientsRoute53resolverMod.Name] = js.undefined
   
   /**
-    *  
+    * Status of the import request.
     */
   var Status: js.UndefOr[FirewallDomainListStatus] = js.undefined
   

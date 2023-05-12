@@ -4,6 +4,7 @@ import typings.googlemapsJsApiLoader.anon.Typeofgoogle
 import typings.googlemapsJsApiLoader.googlemapsJsApiLoaderStrings.drawing
 import typings.googlemapsJsApiLoader.googlemapsJsApiLoaderStrings.geometry
 import typings.googlemapsJsApiLoader.googlemapsJsApiLoaderStrings.localContext
+import typings.googlemapsJsApiLoader.googlemapsJsApiLoaderStrings.marker
 import typings.googlemapsJsApiLoader.googlemapsJsApiLoaderStrings.origin
 import typings.googlemapsJsApiLoader.googlemapsJsApiLoaderStrings.places
 import typings.googlemapsJsApiLoader.googlemapsJsApiLoaderStrings.visualization
@@ -209,7 +210,7 @@ object mod {
     /* 2 */ val SUCCESS: typings.googlemapsJsApiLoader.mod.LoaderStatus.SUCCESS & Double = js.native
   }
   
-  type Libraries = js.Array[drawing | geometry | localContext | places | visualization]
+  type Libraries = js.Array[drawing | geometry | localContext | marker | places | visualization]
   
   trait LoaderOptions extends StObject {
     
@@ -395,7 +396,7 @@ object mod {
       
       inline def setLibrariesUndefined: Self = StObject.set(x, "libraries", js.undefined)
       
-      inline def setLibrariesVarargs(value: (drawing | geometry | localContext | places | visualization)*): Self = StObject.set(x, "libraries", js.Array(value*))
+      inline def setLibrariesVarargs(value: (drawing | geometry | localContext | marker | places | visualization)*): Self = StObject.set(x, "libraries", js.Array(value*))
       
       inline def setMapIds(value: js.Array[String]): Self = StObject.set(x, "mapIds", value.asInstanceOf[js.Any])
       

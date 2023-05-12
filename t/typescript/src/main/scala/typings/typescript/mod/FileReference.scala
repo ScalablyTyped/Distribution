@@ -1,7 +1,5 @@
 package typings.typescript.mod
 
-import typings.typescript.mod.ModuleKind.CommonJS
-import typings.typescript.mod.ModuleKind.ESNext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +10,7 @@ trait FileReference
   
   var fileName: java.lang.String
   
-  var resolutionMode: js.UndefOr[ESNext | CommonJS] = js.undefined
+  var resolutionMode: js.UndefOr[ResolutionMode] = js.undefined
 }
 object FileReference {
   
@@ -26,7 +24,7 @@ object FileReference {
     
     inline def setFileName(value: java.lang.String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
-    inline def setResolutionMode(value: ESNext | CommonJS): Self = StObject.set(x, "resolutionMode", value.asInstanceOf[js.Any])
+    inline def setResolutionMode(value: ResolutionMode): Self = StObject.set(x, "resolutionMode", value.asInstanceOf[js.Any])
     
     inline def setResolutionModeUndefined: Self = StObject.set(x, "resolutionMode", js.undefined)
   }

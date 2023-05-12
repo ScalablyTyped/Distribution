@@ -17,7 +17,7 @@ trait Studio extends StObject {
   var arn: js.UndefOr[String] = js.undefined
   
   /**
-    * The Unix epoch timestamp in seconds for when the resource was created.
+    * The ISO timestamp in seconds for when the resource was created.
     */
   var createdAt: js.UndefOr[js.Date] = js.undefined
   
@@ -32,7 +32,7 @@ trait Studio extends StObject {
   var homeRegion: js.UndefOr[Region] = js.undefined
   
   /**
-    * The IAM Identity Center application client ID used to integrate with IAM Identity Center to enable IAM Identity Center users to log in to Nimble Studio portal.
+    * The IAM Identity Center application client ID used to integrate with IAM Identity Center. This ID allows IAM Identity Center users to log in to Nimble Studio portal.
     */
   var ssoClientId: js.UndefOr[String] = js.undefined
   
@@ -72,12 +72,12 @@ trait Studio extends StObject {
   var studioUrl: js.UndefOr[String] = js.undefined
   
   /**
-    * A collection of labels, in the form of key:value pairs, that apply to this resource.
+    * A collection of labels, in the form of key-value pairs, that apply to this resource.
     */
   var tags: js.UndefOr[Tags] = js.undefined
   
   /**
-    * The Unix epoch timestamp in seconds for when the resource was updated.
+    * The ISO timestamp in seconds for when the resource was updated.
     */
   var updatedAt: js.UndefOr[js.Date] = js.undefined
   

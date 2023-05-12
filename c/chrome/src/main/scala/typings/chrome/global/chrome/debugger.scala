@@ -14,15 +14,11 @@ object debugger {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def attach(target: Debuggee, requiredVersion: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("attach")(target.asInstanceOf[js.Any], requiredVersion.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def attach(target: Debuggee, requiredVersion: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("attach")(target.asInstanceOf[js.Any], requiredVersion.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   inline def attach(target: Debuggee, requiredVersion: String, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("attach")(target.asInstanceOf[js.Any], requiredVersion.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def attach_Promise(target: Debuggee, requiredVersion: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("attach")(target.asInstanceOf[js.Any], requiredVersion.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  
-  inline def detach(target: Debuggee): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("detach")(target.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def detach(target: Debuggee): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("detach")(target.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   inline def detach(target: Debuggee, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("detach")(target.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
-  inline def detach_Promise(target: Debuggee): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("detach")(target.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
   inline def getTargets(): js.Promise[js.Array[TargetInfo]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTargets")().asInstanceOf[js.Promise[js.Array[TargetInfo]]]
   inline def getTargets(callback: js.Function1[/* result */ js.Array[TargetInfo], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getTargets")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]

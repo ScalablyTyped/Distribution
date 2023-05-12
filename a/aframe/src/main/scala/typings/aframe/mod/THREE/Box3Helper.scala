@@ -10,8 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class Box3Helper protected ()
   extends typings.three.mod.Box3Helper {
   /**
-    * @param box
-    * @param [color=0xffff00]
+    * Creates a new wireframe box that represents the passed Box3.
+    * @param box The Box3 to show.
+    * @param color The box's color. Default `0xffff00`
     */
   def this(box: typings.three.srcMathBox3Mod.Box3) = this()
 }

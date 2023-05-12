@@ -22,7 +22,7 @@ trait GatingRule extends StObject {
   var Name: stringMin1Max64PatternS
   
   /**
-    * The criteria that you set for gating routing controls that designates how many of the routing control states must be ON to allow you to update target routing control states.
+    * The criteria that you set for gating routing controls that designate how many of the routing control states must be ON to allow you to update target routing control states.
     */
   var RuleConfig: typings.awsSdk.clientsRoute53recoverycontrolconfigMod.RuleConfig
   
@@ -37,7 +37,7 @@ trait GatingRule extends StObject {
   var Status: typings.awsSdk.clientsRoute53recoverycontrolconfigMod.Status
   
   /**
-    * An array of target routing control Amazon Resource Names (ARNs) for which the states can only be updated if the rule configuration that you specify evaluates to true for the gating routing control. As a simple example, if you have a single gating control, it acts as an overall "on/off" switch for a set of target routing controls. You can use this to manually override automated fail over, for example.
+    * An array of target routing control Amazon Resource Names (ARNs) for which the states can only be updated if the rule configuration that you specify evaluates to true for the gating routing control. As a simple example, if you have a single gating control, it acts as an overall "on/off" switch for a set of target routing controls. You can use this to manually override automated failover, for example.
     */
   var TargetControls: listOfStringMin1Max256PatternAZaZ09
   

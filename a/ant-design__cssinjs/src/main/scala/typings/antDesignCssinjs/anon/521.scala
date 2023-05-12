@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.Orphans
+import typings.csstype.mod.Property.MozUserInput
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `521` extends StObject {
   
   var value: js.UndefOr[
-    Orphans | (js.Array[
-      (Extract[js.UndefOr[Orphans | js.Array[NonNullable[js.UndefOr[Orphans]]]], String]) | NonNullable[js.UndefOr[Orphans]]
+    MozUserInput | (js.Array[
+      (Extract[js.UndefOr[MozUserInput | js.Array[NonNullable[js.UndefOr[MozUserInput]]]], String]) | NonNullable[js.UndefOr[MozUserInput]]
     ])
   ] = js.native
 }

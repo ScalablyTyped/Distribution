@@ -32,7 +32,7 @@ open class EnumValueDescriptorProto ()
     * Converts this EnumValueDescriptorProto to JSON.
     * @returns JSON object
     */
-  def toJSON(): StringDictionary[Any] = js.native
+  def toJSON(): StringDictionary[scala.Any] = js.native
 }
 object EnumValueDescriptorProto {
   
@@ -100,7 +100,7 @@ object EnumValueDescriptorProto {
     * @returns EnumValueDescriptorProto
     */
   /* static member */
-  inline def fromObject(`object`: StringDictionary[Any]): EnumValueDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[EnumValueDescriptorProto]
+  inline def fromObject(`object`: StringDictionary[scala.Any]): EnumValueDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[EnumValueDescriptorProto]
   
   /**
     * Gets the default type url for EnumValueDescriptorProto
@@ -118,8 +118,8 @@ object EnumValueDescriptorProto {
     * @returns Plain object
     */
   /* static member */
-  inline def toObject(message: EnumValueDescriptorProto): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
-  inline def toObject(message: EnumValueDescriptorProto, options: IConversionOptions): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
+  inline def toObject(message: EnumValueDescriptorProto): StringDictionary[scala.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[scala.Any]]
+  inline def toObject(message: EnumValueDescriptorProto, options: IConversionOptions): StringDictionary[scala.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[scala.Any]]
   
   /**
     * Verifies an EnumValueDescriptorProto message.
@@ -127,5 +127,5 @@ object EnumValueDescriptorProto {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  inline def verify(message: StringDictionary[Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[scala.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

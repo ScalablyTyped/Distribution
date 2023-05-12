@@ -44,6 +44,16 @@ object mod {
     @js.native
     def BATCHABLE_SIZE: Double = js.native
     inline def BATCHABLE_SIZE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BATCHABLE_SIZE")(x.asInstanceOf[js.Any])
+    
+    /**
+      * Used by the @pixi/canvas-mesh package to draw meshes using canvas.
+      * Added here because we cannot mixin a static property to Mesh type.
+      * @ignore
+      */
+    @JSImport("@pixi/mesh", "Mesh.defaultCanvasPadding")
+    @js.native
+    def defaultCanvasPadding: Double = js.native
+    inline def defaultCanvasPadding_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultCanvasPadding")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("@pixi/mesh", "MeshBatchUvs")
@@ -83,7 +93,7 @@ object mod {
       * @param uSampler - Texture that material uses to render.
       * @param options - Additional options
       * @param {number} [options.alpha=1] - Default alpha.
-      * @param {number} [options.tint=0xFFFFFF] - Default tint.
+      * @param {PIXI.ColorSource} [options.tint=0xFFFFFF] - Default tint.
       * @param {string} [options.pluginName='batch'] - Renderer plugin for batching.
       * @param {PIXI.Program} [options.program=0xFFFFFF] - Custom program.
       * @param {object} [options.uniforms] - Custom uniforms.

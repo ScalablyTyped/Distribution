@@ -1,5 +1,7 @@
 package typings.sucrase
 
+import typings.sucrase.distTypesParserTokenizerMod.Token
+import typings.sucrase.distTypesTransformersRootTransformerMod.RootTransformerResult
 import typings.sucrase.mod.SourceMapOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,7 +13,13 @@ object distTypesComputeSourceMapMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(code: String, filePath: String, param2: SourceMapOptions): RawSourceMap = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(code.asInstanceOf[js.Any], filePath.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[RawSourceMap]
+  inline def default(
+    param0: RootTransformerResult,
+    filePath: String,
+    options: SourceMapOptions,
+    source: String,
+    tokens: js.Array[Token]
+  ): RawSourceMap = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any], filePath.asInstanceOf[js.Any], options.asInstanceOf[js.Any], source.asInstanceOf[js.Any], tokens.asInstanceOf[js.Any])).asInstanceOf[RawSourceMap]
   
   trait RawSourceMap extends StObject {
     

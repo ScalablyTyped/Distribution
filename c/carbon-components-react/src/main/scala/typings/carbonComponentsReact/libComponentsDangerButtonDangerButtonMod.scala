@@ -23,6 +23,7 @@ import typings.carbonComponentsReact.carbonComponentsReactStrings.br
 import typings.carbonComponentsReact.carbonComponentsReactStrings.button
 import typings.carbonComponentsReact.carbonComponentsReactStrings.canvas
 import typings.carbonComponentsReact.carbonComponentsReactStrings.caption
+import typings.carbonComponentsReact.carbonComponentsReactStrings.center
 import typings.carbonComponentsReact.carbonComponentsReactStrings.circle
 import typings.carbonComponentsReact.carbonComponentsReactStrings.cite
 import typings.carbonComponentsReact.carbonComponentsReactStrings.clipPath
@@ -238,6 +239,8 @@ object libComponentsDangerButtonDangerButtonMod {
   inline def default_canvas(props: FCProps[ButtonIntrinsicProps[canvas]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   inline def default_caption(props: FCProps[ButtonIntrinsicProps[caption]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def default_center(props: FCProps[ButtonIntrinsicProps[center]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   inline def default_circle(props: FCProps[ButtonIntrinsicProps[circle]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   

@@ -12,7 +12,7 @@ trait GetSnapshotsResponse extends StObject {
   var NextToken: js.UndefOr[typings.awsSdk.clientsKendraMod.NextToken] = js.undefined
   
   /**
-    * The date-time for the beginning and end of the time window for the search metrics data.
+    * The Unix timestamp for the beginning and end of the time window for the search metrics data.
     */
   var SnapShotTimeFilter: js.UndefOr[TimeRange] = js.undefined
   

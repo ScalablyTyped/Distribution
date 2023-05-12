@@ -15,6 +15,7 @@ import typings.nivoLegends.distTypesTypesMod.LegendProps
 import typings.react.mod.FunctionComponent
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
+import typings.reactSpringCore.mod.SpringConfig
 import typings.std.CanvasRenderingContext2D
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
@@ -193,9 +194,7 @@ object distTypesTypesMod {
     
     var margin: js.UndefOr[Box] = js.undefined
     
-    var motionConfig: js.UndefOr[
-        String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringConfig */ Any)
-      ] = js.undefined
+    var motionConfig: js.UndefOr[String | SpringConfig] = js.undefined
     
     var onArcClick: js.UndefOr[ChordArcMouseHandler] = js.undefined
     
@@ -353,9 +352,7 @@ object distTypesTypesMod {
       
       inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
       
-      inline def setMotionConfig(
-        value: String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringConfig */ Any)
-      ): Self = StObject.set(x, "motionConfig", value.asInstanceOf[js.Any])
+      inline def setMotionConfig(value: String | SpringConfig): Self = StObject.set(x, "motionConfig", value.asInstanceOf[js.Any])
       
       inline def setMotionConfigUndefined: Self = StObject.set(x, "motionConfig", js.undefined)
       
@@ -419,7 +416,7 @@ object distTypesTypesMod {
     }
   }
   
-  /* Inlined {  margin :@nivo/core.@nivo/core.Box,   label :@nivo/core.@nivo/core.PropertyAccessor<std.Omit<@nivo/chord.@nivo/chord/dist/types/types.ArcDatum, 'label' | 'color'>, string>,   valueFormat :@nivo/core.@nivo/core.ValueFormat<number, void>,   padAngle :number,   innerRadiusRatio :number,   innerRadiusOffset :number,   theme :@nivo/core.@nivo/core.Theme,   colors :@nivo/colors.@nivo/colors.OrdinalColorScaleConfig<std.Omit<@nivo/chord.@nivo/chord/dist/types/types.ArcDatum, 'label' | 'color'>>,   arcOpacity :number,   activeArcOpacity :number,   inactiveArcOpacity :number,   arcBorderWidth :number,   arcBorderColor :@nivo/colors.@nivo/colors.InheritedColorConfig<@nivo/chord.@nivo/chord/dist/types/types.ArcDatum>,   onArcMouseEnter :@nivo/chord.@nivo/chord/dist/types/types.ChordArcMouseHandler,   onArcMouseMove :@nivo/chord.@nivo/chord/dist/types/types.ChordArcMouseHandler,   onArcMouseLeave :@nivo/chord.@nivo/chord/dist/types/types.ChordArcMouseHandler,   onArcClick :@nivo/chord.@nivo/chord/dist/types/types.ChordArcMouseHandler,   arcTooltip :@nivo/chord.@nivo/chord/dist/types/types.ArcTooltipComponent,   ribbonBlendMode :@nivo/core.@nivo/core.CssMixBlendMode,   ribbonOpacity :number,   activeRibbonOpacity :number,   inactiveRibbonOpacity :number,   ribbonBorderWidth :number,   ribbonBorderColor :@nivo/colors.@nivo/colors.InheritedColorConfig<@nivo/chord.@nivo/chord/dist/types/types.ArcDatum>,   enableLabel :boolean,   labelOffset :number,   labelRotation :number,   labelTextColor :@nivo/colors.@nivo/colors.InheritedColorConfig<@nivo/chord.@nivo/chord/dist/types/types.ArcDatum>,   isInteractive :boolean,   legends :std.Array<@nivo/legends.@nivo/legends.LegendProps>,   renderWrapper :boolean,   role :string,   ariaLabel :react.react.AriaAttributes['aria-label'],   ariaLabelledBy :react.react.AriaAttributes['aria-labelledby'],   ariaDescribedBy :react.react.AriaAttributes['aria-describedby']} & std.Required<@nivo/core.@nivo/core.ModernMotionProps> */
+  /* Inlined {  margin :@nivo/core.@nivo/core.Box,   label :@nivo/core.@nivo/core.PropertyAccessor<std.Omit<@nivo/chord.@nivo/chord/dist/types/types.ArcDatum, 'label' | 'color'>, string>,   valueFormat :@nivo/core.@nivo/core.ValueFormat<number, void>,   padAngle :number,   innerRadiusRatio :number,   innerRadiusOffset :number,   theme :@nivo/core.@nivo/core.Theme,   colors :@nivo/colors.@nivo/colors.OrdinalColorScaleConfig<std.Omit<@nivo/chord.@nivo/chord/dist/types/types.ArcDatum, 'label' | 'color'>>,   arcOpacity :number,   activeArcOpacity :number,   inactiveArcOpacity :number,   arcBorderWidth :number,   arcBorderColor :@nivo/colors.@nivo/colors.InheritedColorConfig<@nivo/chord.@nivo/chord/dist/types/types.ArcDatum>,   onArcMouseEnter :@nivo/chord.@nivo/chord/dist/types/types.ChordArcMouseHandler,   onArcMouseMove :@nivo/chord.@nivo/chord/dist/types/types.ChordArcMouseHandler,   onArcMouseLeave :@nivo/chord.@nivo/chord/dist/types/types.ChordArcMouseHandler,   onArcClick :@nivo/chord.@nivo/chord/dist/types/types.ChordArcMouseHandler,   arcTooltip :@nivo/chord.@nivo/chord/dist/types/types.ArcTooltipComponent,   ribbonBlendMode :@nivo/core.@nivo/core.CssMixBlendMode,   ribbonOpacity :number,   activeRibbonOpacity :number,   inactiveRibbonOpacity :number,   ribbonBorderWidth :number,   ribbonBorderColor :@nivo/colors.@nivo/colors.InheritedColorConfig<@nivo/chord.@nivo/chord/dist/types/types.ArcDatum>,   enableLabel :boolean,   labelOffset :number,   labelRotation :number,   labelTextColor :@nivo/colors.@nivo/colors.InheritedColorConfig<@nivo/chord.@nivo/chord/dist/types/types.ArcDatum>,   isInteractive :boolean,   legends :std.Array<@nivo/legends.@nivo/legends.LegendProps>,   renderWrapper :boolean,   role :string,   ariaLabel :react.react.AriaAttributes['aria-label'],   ariaLabelledBy :react.react.AriaAttributes['aria-labelledby'],   ariaDescribedBy :react.react.AriaAttributes['aria-describedby']} & std.Required<@nivo/core.@nivo/core.MotionProps> */
   trait ChordCommonProps extends StObject {
     
     var activeArcOpacity: Double
@@ -468,7 +465,7 @@ object distTypesTypesMod {
     
     var margin: Box
     
-    var motionConfig: String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringConfig */ Any)
+    var motionConfig: String | SpringConfig
     
     var onArcClick: ChordArcMouseHandler
     
@@ -519,7 +516,7 @@ object distTypesTypesMod {
       labelTextColor: InheritedColorConfig[ArcDatum],
       legends: js.Array[LegendProps],
       margin: Box,
-      motionConfig: String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringConfig */ Any),
+      motionConfig: String | SpringConfig,
       onArcClick: (/* arc */ Any, /* event */ MouseEvent[Element, NativeMouseEvent]) => Unit,
       onArcMouseEnter: (/* arc */ Any, /* event */ MouseEvent[Element, NativeMouseEvent]) => Unit,
       onArcMouseLeave: (/* arc */ Any, /* event */ MouseEvent[Element, NativeMouseEvent]) => Unit,
@@ -601,9 +598,7 @@ object distTypesTypesMod {
       
       inline def setMargin(value: Box): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
       
-      inline def setMotionConfig(
-        value: String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringConfig */ Any)
-      ): Self = StObject.set(x, "motionConfig", value.asInstanceOf[js.Any])
+      inline def setMotionConfig(value: String | SpringConfig): Self = StObject.set(x, "motionConfig", value.asInstanceOf[js.Any])
       
       inline def setOnArcClick(value: (/* arc */ Any, /* event */ MouseEvent[Element, NativeMouseEvent]) => Unit): Self = StObject.set(x, "onArcClick", js.Any.fromFunction2(value))
       
@@ -718,9 +713,7 @@ object distTypesTypesMod {
     
     var margin: js.UndefOr[Box] = js.undefined
     
-    var motionConfig: js.UndefOr[
-        String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringConfig */ Any)
-      ] = js.undefined
+    var motionConfig: js.UndefOr[String | SpringConfig] = js.undefined
     
     var onArcClick: js.UndefOr[ChordArcMouseHandler] = js.undefined
     
@@ -886,9 +879,7 @@ object distTypesTypesMod {
       
       inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
       
-      inline def setMotionConfig(
-        value: String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringConfig */ Any)
-      ): Self = StObject.set(x, "motionConfig", value.asInstanceOf[js.Any])
+      inline def setMotionConfig(value: String | SpringConfig): Self = StObject.set(x, "motionConfig", value.asInstanceOf[js.Any])
       
       inline def setMotionConfigUndefined: Self = StObject.set(x, "motionConfig", js.undefined)
       

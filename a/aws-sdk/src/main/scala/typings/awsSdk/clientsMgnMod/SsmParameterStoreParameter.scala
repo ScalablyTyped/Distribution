@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SsmParameterStoreParameter extends StObject {
   
   /**
-    * Source server replication type.
+    * AWS Systems Manager Parameter Store parameter name.
     */
   var parameterName: SsmParameterStoreParameterName
   
   /**
-    * Source server replication type.
+    * AWS Systems Manager Parameter Store parameter type.
     */
   var parameterType: SsmParameterStoreParameterType
 }

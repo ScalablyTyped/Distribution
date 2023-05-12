@@ -4,10 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A representation of time as a Date object, a localized string, and a time
-  * zone.
-  */
 trait Time extends StObject {
   
   /**

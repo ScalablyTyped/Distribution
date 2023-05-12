@@ -367,12 +367,19 @@ object buildSrcTimeunitMod {
   
   inline def containsTimeUnit(fullTimeUnit: TimeUnit, timeUnit: TimeUnit): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("containsTimeUnit")(fullTimeUnit.asInstanceOf[js.Any], timeUnit.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
+  inline def durationExpr(timeUnit: TimeUnit): String = ^.asInstanceOf[js.Dynamic].applyDynamic("durationExpr")(timeUnit.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def durationExpr(timeUnit: TimeUnitParams): String = ^.asInstanceOf[js.Dynamic].applyDynamic("durationExpr")(timeUnit.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def durationExpr(timeUnit: TimeUnitParams, wrap: js.Function1[/* x */ String, String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("durationExpr")(timeUnit.asInstanceOf[js.Any], wrap.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def durationExpr(timeUnit: TimeUnit, wrap: js.Function1[/* x */ String, String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("durationExpr")(timeUnit.asInstanceOf[js.Any], wrap.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   inline def fieldExpr(fullTimeUnit: TimeUnit, field: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("fieldExpr")(fullTimeUnit.asInstanceOf[js.Any], field.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def fieldExpr(fullTimeUnit: TimeUnit, field: String, param2: End): String = (^.asInstanceOf[js.Dynamic].applyDynamic("fieldExpr")(fullTimeUnit.asInstanceOf[js.Any], field.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def formatExpression(timeUnit: TimeUnit, field: String, isUTCScale: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatExpression")(timeUnit.asInstanceOf[js.Any], field.asInstanceOf[js.Any], isUTCScale.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def getLocalTimeUnit(t: UtcTimeUnit): LocalTimeUnit = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocalTimeUnit")(t.asInstanceOf[js.Any]).asInstanceOf[LocalTimeUnit]
+  
+  inline def getSmallestTimeUnitPart(timeUnit: TimeUnit): LocalSingleTimeUnit = ^.asInstanceOf[js.Dynamic].applyDynamic("getSmallestTimeUnitPart")(timeUnit.asInstanceOf[js.Any]).asInstanceOf[LocalSingleTimeUnit]
   
   inline def getTimeUnitParts(timeUnit: TimeUnit): js.Array[LocalSingleTimeUnit] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTimeUnitParts")(timeUnit.asInstanceOf[js.Any]).asInstanceOf[js.Array[LocalSingleTimeUnit]]
   

@@ -152,6 +152,17 @@ trait TypeofVector4Instantiable
   def One(): Vector4 = js.native
   
   /**
+    * Returns a new Vector4 with random values between min and max
+    * @param min the minimum random value
+    * @param max the maximum random value
+    * @returns a Vector4 with random values between min and max
+    */
+  def Random(): Vector4 = js.native
+  def Random(min: Double): Vector4 = js.native
+  def Random(min: Double, max: Double): Vector4 = js.native
+  def Random(min: Unit, max: Double): Vector4 = js.native
+  
+  /**
     * Returns a new Vector4 set with the result of the transformation by the given matrix of the given vector.
     * This method computes tranformed coordinates only, not transformed direction vectors (ie. it takes translation in account)
     * The difference with Vector3.TransformCoordinates is that the w component is not used to divide the other coordinates but is returned in the w coordinate instead

@@ -30,6 +30,10 @@ object libEsmErrorsMod {
   @js.native
   val POPOVER2_WARN_PLACEMENT_AND_POSITION_MUTEX: String = js.native
   
+  @JSImport("@blueprintjs/popover2/lib/esm/errors", "POPOVER2_WARN_TARGET_PROPS_WITH_RENDER_TARGET")
+  @js.native
+  val POPOVER2_WARN_TARGET_PROPS_WITH_RENDER_TARGET: String = js.native
+  
   @JSImport("@blueprintjs/popover2/lib/esm/errors", "POPOVER2_WARN_TOO_MANY_CHILDREN")
   @js.native
   val POPOVER2_WARN_TOO_MANY_CHILDREN: String = js.native

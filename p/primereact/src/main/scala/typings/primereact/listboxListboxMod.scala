@@ -1,5 +1,6 @@
 package typings.primereact
 
+import typings.primereact.primereactStrings._empty
 import typings.primereact.primereactStrings.`additions removals`
 import typings.primereact.primereactStrings.`additions text`
 import typings.primereact.primereactStrings.`inline`
@@ -7,8 +8,10 @@ import typings.primereact.primereactStrings.`removals additions`
 import typings.primereact.primereactStrings.`removals text`
 import typings.primereact.primereactStrings.`text additions`
 import typings.primereact.primereactStrings.`text removals`
+import typings.primereact.primereactStrings.`use-credentials`
 import typings.primereact.primereactStrings.additions
 import typings.primereact.primereactStrings.all
+import typings.primereact.primereactStrings.anonymous
 import typings.primereact.primereactStrings.ascending
 import typings.primereact.primereactStrings.assertive
 import typings.primereact.primereactStrings.both
@@ -61,6 +64,8 @@ import typings.primereact.primereactStrings.yes
 import typings.primereact.selectitemSelectitemMod.SelectItem
 import typings.primereact.selectitemSelectitemMod.SelectItemOptionsType
 import typings.primereact.tooltipTooltipoptionsMod.TooltipOptions
+import typings.primereact.utilsUtilsMod.IconOptions
+import typings.primereact.utilsUtilsMod.IconType
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
@@ -102,6 +107,7 @@ import typings.react.mod.WheelEvent
 import typings.react.mod.WheelEventHandler
 import typings.std.Element
 import typings.std.Event
+import typings.std.FormData
 import typings.std.HTMLDivElement
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
@@ -116,28 +122,61 @@ object listboxListboxMod {
     def this(props: ListBoxProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: ListBoxProps, context: Any) = this()
     
+    /**
+      * Used to focus the component.
+      */
+    def focus(): Unit = js.native
+    
+    /**
+      * Used to get container element.
+      * @return {HTMLSpanElement} Container element
+      */
     def getElement(): HTMLDivElement = js.native
     
+    /**
+      * Used to get the virtual scroller instance.
+      * @return {VirtualScroller} Virtual Scroller instance
+      */
     def getVirtualScroller(): Any = js.native
   }
   
-  trait ListBoxChangeParams extends StObject {
+  /**
+    * Custom change event.
+    * @see {@link ListBoxProps.onChange}
+    * @event
+    */
+  trait ListBoxChangeEvent extends StObject {
     
+    /**
+      * Browser event.
+      */
     var originalEvent: SyntheticEvent[Element, Event]
     
+    /**
+      * Prevents the default action of the event.
+      */
     def preventDefault(): Unit
     
+    /**
+      * Stops the event from propagating.
+      */
     def stopPropagation(): Unit
     
+    /**
+      * Target element.
+      */
     var target: ListBoxChangeTargetOptions
     
+    /**
+      * Single value or an array of values depending on the selection mode
+      */
     var value: Any
   }
-  object ListBoxChangeParams {
+  object ListBoxChangeEvent {
     
     inline def apply(
       originalEvent: SyntheticEvent[Element, Event],
@@ -145,13 +184,13 @@ object listboxListboxMod {
       stopPropagation: () => Unit,
       target: ListBoxChangeTargetOptions,
       value: Any
-    ): ListBoxChangeParams = {
+    ): ListBoxChangeEvent = {
       val __obj = js.Dynamic.literal(originalEvent = originalEvent.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.asInstanceOf[ListBoxChangeParams]
+      __obj.asInstanceOf[ListBoxChangeEvent]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: ListBoxChangeParams] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: ListBoxChangeEvent] (val x: Self) extends AnyVal {
       
       inline def setOriginalEvent(value: SyntheticEvent[Element, Event]): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
@@ -165,12 +204,24 @@ object listboxListboxMod {
     }
   }
   
+  /**
+    * Custom change target options.
+    */
   trait ListBoxChangeTargetOptions extends StObject {
     
+    /**
+      * Unique identifier of the element.
+      */
     var id: String
     
+    /**
+      * The name of the target.
+      */
     var name: String
     
+    /**
+      * New value of the element.
+      */
     var value: Any
   }
   object ListBoxChangeTargetOptions {
@@ -191,10 +242,20 @@ object listboxListboxMod {
     }
   }
   
+  /**
+    * Custom filter options.
+    */
   trait ListBoxFilterOptions extends StObject {
     
+    /**
+      * Used to filter options
+      * @param { React.ChangeEvent<HTMLInputElement>} event - Browser event.
+      */
     var filter: js.UndefOr[js.Function1[/* event */ js.UndefOr[ChangeEvent[HTMLInputElement]], Unit]] = js.undefined
     
+    /**
+      * Used to reset the filtered options
+      */
     var reset: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object ListBoxFilterOptions {
@@ -217,27 +278,65 @@ object listboxListboxMod {
     }
   }
   
+  /**
+    * Custom filter template options.
+    */
   trait ListBoxFilterTemplateOptions extends StObject {
     
+    /**
+      * Style class of the filter.
+      */
     var className: String
     
+    /**
+      * Whether the option is disabled or not
+      */
     var disabled: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * The filter element.
+      */
     var element: HTMLDivElement
     
+    /**
+      * The filter.
+      */
     var filter: js.UndefOr[String] = js.undefined
     
+    /**
+      * Icon of the filter.
+      */
+    var filterIcon: js.UndefOr[IconType[ListBox] | String] = js.undefined
+    
+    /**
+      * Style class of the filter icon.
+      */
     var filterIconClassName: String
     
+    /**
+      * Browser change event for the filter input element.
+      */
     var filterInputChange: js.UndefOr[ChangeEvent[HTMLInputElement]] = js.undefined
     
+    /**
+      * The props of the filter input element.
+      */
     var filterInputProps: js.UndefOr[Any] = js.undefined
     
+    /**
+      * The filter input options.
+      */
     var filterOptions: js.UndefOr[ListBoxFilterOptions] = js.undefined
     
+    /**
+      * The placeholder of the filter element.
+      */
     var filterPlaceholder: js.UndefOr[String] = js.undefined
     
-    var filterTemplate: js.UndefOr[ListBoxFilterTemplateType] = js.undefined
+    /**
+      * Custom filter template.
+      */
+    var filterTemplate: js.UndefOr[ReactNode | (js.Function1[/* options */ this.type, ReactNode])] = js.undefined
   }
   object ListBoxFilterTemplateOptions {
     
@@ -259,7 +358,13 @@ object listboxListboxMod {
       
       inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
+      inline def setFilterIcon(value: IconType[ListBox] | String): Self = StObject.set(x, "filterIcon", value.asInstanceOf[js.Any])
+      
       inline def setFilterIconClassName(value: String): Self = StObject.set(x, "filterIconClassName", value.asInstanceOf[js.Any])
+      
+      inline def setFilterIconFunction1(value: /* options */ IconOptions[ListBox] => ReactNode): Self = StObject.set(x, "filterIcon", js.Any.fromFunction1(value))
+      
+      inline def setFilterIconUndefined: Self = StObject.set(x, "filterIcon", js.undefined)
       
       inline def setFilterInputChange(value: ChangeEvent[HTMLInputElement]): Self = StObject.set(x, "filterInputChange", value.asInstanceOf[js.Any])
       
@@ -277,9 +382,9 @@ object listboxListboxMod {
       
       inline def setFilterPlaceholderUndefined: Self = StObject.set(x, "filterPlaceholder", js.undefined)
       
-      inline def setFilterTemplate(value: ListBoxFilterTemplateType): Self = StObject.set(x, "filterTemplate", value.asInstanceOf[js.Any])
+      inline def setFilterTemplate(value: ReactNode | (js.Function1[ListBoxFilterTemplateOptions, ReactNode])): Self = StObject.set(x, "filterTemplate", value.asInstanceOf[js.Any])
       
-      inline def setFilterTemplateFunction1(value: /* options */ ListBoxFilterTemplateOptions => ReactNode): Self = StObject.set(x, "filterTemplate", js.Any.fromFunction1(value))
+      inline def setFilterTemplateFunction1(value: ListBoxFilterTemplateOptions => ReactNode): Self = StObject.set(x, "filterTemplate", js.Any.fromFunction1(value))
       
       inline def setFilterTemplateUndefined: Self = StObject.set(x, "filterTemplate", js.undefined)
       
@@ -287,35 +392,38 @@ object listboxListboxMod {
     }
   }
   
-  type ListBoxFilterTemplateType = ReactNode | (js.Function1[/* options */ ListBoxFilterTemplateOptions, ReactNode])
-  
-  trait ListBoxFilterValueChangeParams extends StObject {
+  /**
+    * Custom filter value change event.
+    * @see {@link ListBoxProps.onFilterValueChange}
+    * @event
+    */
+  trait ListBoxFilterValueChangeEvent extends StObject {
     
+    /**
+      * Browser event.
+      */
     var originalEvent: SyntheticEvent[Element, Event]
     
+    /**
+      * The filtered value
+      */
     var value: Any
   }
-  object ListBoxFilterValueChangeParams {
+  object ListBoxFilterValueChangeEvent {
     
-    inline def apply(originalEvent: SyntheticEvent[Element, Event], value: Any): ListBoxFilterValueChangeParams = {
+    inline def apply(originalEvent: SyntheticEvent[Element, Event], value: Any): ListBoxFilterValueChangeEvent = {
       val __obj = js.Dynamic.literal(originalEvent = originalEvent.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.asInstanceOf[ListBoxFilterValueChangeParams]
+      __obj.asInstanceOf[ListBoxFilterValueChangeEvent]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: ListBoxFilterValueChangeParams] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: ListBoxFilterValueChangeEvent] (val x: Self) extends AnyVal {
       
       inline def setOriginalEvent(value: SyntheticEvent[Element, Event]): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
       inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
-  
-  type ListBoxItemTemplateType = ReactNode | (js.Function1[/* option */ Any, ReactNode])
-  
-  type ListBoxOptionDisabledType = String | (js.Function1[/* option */ Any, Boolean])
-  
-  type ListBoxOptionGroupTemplateType = ReactNode | (js.Function2[/* option */ Any, /* index */ Double, ReactNode])
   
   /* Inlined parent std.Omit<react.react.DetailedHTMLProps<react.react.InputHTMLAttributes<std.HTMLDivElement>, std.HTMLDivElement>, 'onChange' | 'ref'> */
   trait ListBoxProps extends StObject {
@@ -426,6 +534,9 @@ object listboxListboxMod {
     
     var `aria-valuetext`: js.UndefOr[String] = js.undefined
     
+    /**
+      * Establishes relationships between the component and label(s) where its value should be one or more element IDs.
+      */
     var ariaLabelledBy: js.UndefOr[String] = js.undefined
     
     var autoCapitalize: js.UndefOr[String] = js.undefined
@@ -442,20 +553,30 @@ object listboxListboxMod {
     
     var checked: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Used to get the child elements of the component.
+      * @readonly
+      */
     var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
     var color: js.UndefOr[String] = js.undefined
     
+    var content: js.UndefOr[String] = js.undefined
+    
     var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
     var contextMenu: js.UndefOr[String] = js.undefined
     
-    var crossOrigin: js.UndefOr[String] = js.undefined
+    var crossOrigin: js.UndefOr[anonymous | `use-credentials` | _empty] = js.undefined
     
     var dangerouslySetInnerHTML: js.UndefOr[Html] = js.undefined
     
+    /**
+      * A property to uniquely match the value in options for better performance.
+      * @defaultValue false
+      */
     var dataKey: js.UndefOr[String] = js.undefined
     
     var datatype: js.UndefOr[String] = js.undefined
@@ -466,31 +587,76 @@ object listboxListboxMod {
     
     var dir: js.UndefOr[String] = js.undefined
     
+    /**
+      * When specified, disables the component.
+      * @defaultValue false
+      */
     var disabled: js.UndefOr[Boolean] = js.undefined
     
     var draggable: js.UndefOr[Booleanish] = js.undefined
     
+    /**
+      * Template to display when filtering does not return any results.
+      */
+    var emptyFilterMessage: js.UndefOr[ReactNode | (js.Function1[/* props */ this.type, ReactNode])] = js.undefined
+    
+    /**
+      * Text to display when there is no data.
+      */
+    var emptyMessage: js.UndefOr[ReactNode | (js.Function1[/* props */ this.type, ReactNode])] = js.undefined
+    
     var enterKeyHint: js.UndefOr[enter | done | go | next | previous | search | send] = js.undefined
     
+    /**
+      * When specified, displays a filter input at header.
+      * @defaultValue false
+      */
     var filter: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * When filtering is enabled, filterBy decides which field or fields (comma separated) to search against.
+      * @defaultValue label
+      */
     var filterBy: js.UndefOr[String] = js.undefined
     
+    /**
+      * Props for the filter input, any prop is passed implicity to the filter input element.
+      * @defaultValue undefined
+      */
     var filterInputProps: js.UndefOr[Any] = js.undefined
     
+    /**
+      * Locale to use in filtering. The default locale is the host environment's current locale.
+      * @defaultValue undefined
+      */
     var filterLocale: js.UndefOr[String] = js.undefined
     
+    /**
+      * Defines how the items are filtered, valid values are "contains" (default), "startsWith", "endsWith", "equals" and "notEquals".
+      * @defaultValue contains
+      */
     var filterMatchMode: js.UndefOr[String] = js.undefined
     
+    /**
+      * Placeholder text to show when filter input is empty.
+      */
     var filterPlaceholder: js.UndefOr[String] = js.undefined
     
-    var filterTemplate: js.UndefOr[ListBoxFilterTemplateType] = js.undefined
+    /**
+      * Custom template for the filter element.
+      */
+    var filterTemplate: js.UndefOr[
+        ReactNode | (js.Function1[/* options */ ListBoxFilterTemplateOptions, ReactNode])
+      ] = js.undefined
     
+    /**
+      * When specified, filter displays with this value.
+      */
     var filterValue: js.UndefOr[String] = js.undefined
     
     var form: js.UndefOr[String] = js.undefined
     
-    var formAction: js.UndefOr[String] = js.undefined
+    var formAction: js.UndefOr[String | (js.Function1[/* formData */ FormData, Unit])] = js.undefined
     
     var formEncType: js.UndefOr[String] = js.undefined
     
@@ -520,7 +686,10 @@ object listboxListboxMod {
     
     var itemScope: js.UndefOr[Boolean] = js.undefined
     
-    var itemTemplate: js.UndefOr[ListBoxItemTemplateType] = js.undefined
+    /**
+      * Custom template for the items.
+      */
+    var itemTemplate: js.UndefOr[ReactNode | (js.Function1[/* option */ Any, ReactNode])] = js.undefined
     
     var itemType: js.UndefOr[String] = js.undefined
     
@@ -530,20 +699,34 @@ object listboxListboxMod {
     
     var list: js.UndefOr[String] = js.undefined
     
+    /**
+      * Inline style class of inner list element.
+      */
     var listClassName: js.UndefOr[String] = js.undefined
     
+    /**
+      * Inline style of inner list element.
+      */
     var listStyle: js.UndefOr[CSSProperties] = js.undefined
     
     var max: js.UndefOr[Double | String] = js.undefined
     
     var maxLength: js.UndefOr[Double] = js.undefined
     
+    /**
+      * Defines how multiple items can be selected, when true metaKey needs to be pressed to select or unselect an item and when set to false selection of each item can be toggled individually. On touch enabled devices, metaKeySelection is turned off automatically.
+      * @defaultValue true
+      */
     var metaKeySelection: js.UndefOr[Boolean] = js.undefined
     
     var min: js.UndefOr[Double | String] = js.undefined
     
     var minLength: js.UndefOr[Double] = js.undefined
     
+    /**
+      * When specified, allows selecting multiple values.
+      * @defaultValue false
+      */
     var multiple: js.UndefOr[Boolean] = js.undefined
     
     var name: js.UndefOr[String] = js.undefined
@@ -568,7 +751,11 @@ object listboxListboxMod {
     
     var onCanPlayThrough: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* e */ ListBoxChangeParams, Unit]] = js.undefined
+    /**
+      * Callback to invoke when value of listbox changes.
+      * @param {ListBoxChangeEvent} event - Custom change event.
+      */
+    var onChange: js.UndefOr[js.Function1[/* event */ ListBoxChangeEvent, Unit]] = js.undefined
     
     var onClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
@@ -612,7 +799,11 @@ object listboxListboxMod {
     
     var onError: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
-    var onFilterValueChange: js.UndefOr[js.Function1[/* e */ ListBoxFilterValueChangeParams, Unit]] = js.undefined
+    /**
+      * Callback to invoke when filter value changes.
+      * @param {ListBoxFilterValueChangeEvent} event - Custom filter value change event.
+      */
+    var onFilterValueChange: js.UndefOr[js.Function1[/* event */ ListBoxFilterValueChangeEvent, Unit]] = js.undefined
     
     var onFocus: js.UndefOr[FocusEventHandler[HTMLDivElement]] = js.undefined
     
@@ -712,18 +903,39 @@ object listboxListboxMod {
     
     var onWheel: js.UndefOr[WheelEventHandler[HTMLDivElement]] = js.undefined
     
-    var optionDisabled: js.UndefOr[ListBoxOptionDisabledType] = js.undefined
+    /**
+      * Property name or getter function to use as the disabled flag of an option, defaults to false when not defined.
+      */
+    var optionDisabled: js.UndefOr[String | (js.Function1[/* option */ Any, Boolean])] = js.undefined
     
+    /**
+      * Property name or getter function that refers to the children options of option group.
+      */
     var optionGroupChildren: js.UndefOr[String] = js.undefined
     
+    /**
+      * Property name or getter function to use as the label of an option group.
+      */
     var optionGroupLabel: js.UndefOr[String] = js.undefined
     
-    var optionGroupTemplate: js.UndefOr[ListBoxOptionGroupTemplateType] = js.undefined
+    /**
+      * Template of an option group item.
+      */
+    var optionGroupTemplate: js.UndefOr[ReactNode | (js.Function2[/* option */ Any, /* index */ Double, ReactNode])] = js.undefined
     
+    /**
+      * Name of the label field of an option when an arbitrary objects instead of SelectItems are used as options.
+      */
     var optionLabel: js.UndefOr[String] = js.undefined
     
+    /**
+      * Name of the value field of an option when arbitrary objects are used as options instead of SelectItems.
+      */
     var optionValue: js.UndefOr[String] = js.undefined
     
+    /**
+      * An array of objects to display as the available options.
+      */
     var options: js.UndefOr[SelectItemOptionsType] = js.undefined
     
     var pattern: js.UndefOr[String] = js.undefined
@@ -738,11 +950,15 @@ object listboxListboxMod {
     
     var readOnly: js.UndefOr[Boolean] = js.undefined
     
+    var rel: js.UndefOr[String] = js.undefined
+    
     var required: js.UndefOr[Boolean] = js.undefined
     
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
+    
+    var rev: js.UndefOr[String] = js.undefined
     
     var role: js.UndefOr[AriaRole] = js.undefined
     
@@ -768,8 +984,14 @@ object listboxListboxMod {
     
     var title: js.UndefOr[String] = js.undefined
     
+    /**
+      * Content of the tooltip.
+      */
     var tooltip: js.UndefOr[String] = js.undefined
     
+    /**
+      * Configuration of the tooltip, refer to the tooltip documentation for more information.
+      */
     var tooltipOptions: js.UndefOr[TooltipOptions] = js.undefined
     
     var translate: js.UndefOr[yes | no] = js.undefined
@@ -780,8 +1002,15 @@ object listboxListboxMod {
     
     var unselectable: js.UndefOr[on | off] = js.undefined
     
+    /**
+      * Selected value to display.
+      */
     var value: js.UndefOr[Any] = js.undefined
     
+    /**
+      * Whether to use the virtualScroller feature. The properties of VirtualScroller component can be used like an object in it.
+      * @type {VirtualScrollerProps}
+      */
     var virtualScrollerOptions: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VirtualScrollerProps */ Any
       ] = js.undefined
@@ -1054,15 +1283,19 @@ object listboxListboxMod {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
       inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
       inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
       inline def setContextMenuUndefined: Self = StObject.set(x, "contextMenu", js.undefined)
       
-      inline def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+      inline def setCrossOrigin(value: anonymous | `use-credentials` | _empty): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
       
       inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
       
@@ -1100,6 +1333,18 @@ object listboxListboxMod {
       
       inline def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
       
+      inline def setEmptyFilterMessage(value: ReactNode | (js.Function1[ListBoxProps, ReactNode])): Self = StObject.set(x, "emptyFilterMessage", value.asInstanceOf[js.Any])
+      
+      inline def setEmptyFilterMessageFunction1(value: ListBoxProps => ReactNode): Self = StObject.set(x, "emptyFilterMessage", js.Any.fromFunction1(value))
+      
+      inline def setEmptyFilterMessageUndefined: Self = StObject.set(x, "emptyFilterMessage", js.undefined)
+      
+      inline def setEmptyMessage(value: ReactNode | (js.Function1[ListBoxProps, ReactNode])): Self = StObject.set(x, "emptyMessage", value.asInstanceOf[js.Any])
+      
+      inline def setEmptyMessageFunction1(value: ListBoxProps => ReactNode): Self = StObject.set(x, "emptyMessage", js.Any.fromFunction1(value))
+      
+      inline def setEmptyMessageUndefined: Self = StObject.set(x, "emptyMessage", js.undefined)
+      
       inline def setEnterKeyHint(value: enter | done | go | next | previous | search | send): Self = StObject.set(x, "enterKeyHint", value.asInstanceOf[js.Any])
       
       inline def setEnterKeyHintUndefined: Self = StObject.set(x, "enterKeyHint", js.undefined)
@@ -1126,7 +1371,7 @@ object listboxListboxMod {
       
       inline def setFilterPlaceholderUndefined: Self = StObject.set(x, "filterPlaceholder", js.undefined)
       
-      inline def setFilterTemplate(value: ListBoxFilterTemplateType): Self = StObject.set(x, "filterTemplate", value.asInstanceOf[js.Any])
+      inline def setFilterTemplate(value: ReactNode | (js.Function1[/* options */ ListBoxFilterTemplateOptions, ReactNode])): Self = StObject.set(x, "filterTemplate", value.asInstanceOf[js.Any])
       
       inline def setFilterTemplateFunction1(value: /* options */ ListBoxFilterTemplateOptions => ReactNode): Self = StObject.set(x, "filterTemplate", js.Any.fromFunction1(value))
       
@@ -1140,7 +1385,9 @@ object listboxListboxMod {
       
       inline def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
       
-      inline def setFormAction(value: String): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+      inline def setFormAction(value: String | (js.Function1[/* formData */ FormData, Unit])): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+      
+      inline def setFormActionFunction1(value: /* formData */ FormData => Unit): Self = StObject.set(x, "formAction", js.Any.fromFunction1(value))
       
       inline def setFormActionUndefined: Self = StObject.set(x, "formAction", js.undefined)
       
@@ -1202,7 +1449,7 @@ object listboxListboxMod {
       
       inline def setItemScopeUndefined: Self = StObject.set(x, "itemScope", js.undefined)
       
-      inline def setItemTemplate(value: ListBoxItemTemplateType): Self = StObject.set(x, "itemTemplate", value.asInstanceOf[js.Any])
+      inline def setItemTemplate(value: ReactNode | (js.Function1[/* option */ Any, ReactNode])): Self = StObject.set(x, "itemTemplate", value.asInstanceOf[js.Any])
       
       inline def setItemTemplateFunction1(value: /* option */ Any => ReactNode): Self = StObject.set(x, "itemTemplate", js.Any.fromFunction1(value))
       
@@ -1302,7 +1549,7 @@ object listboxListboxMod {
       
       inline def setOnCanPlayUndefined: Self = StObject.set(x, "onCanPlay", js.undefined)
       
-      inline def setOnChange(value: /* e */ ListBoxChangeParams => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* event */ ListBoxChangeEvent => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
@@ -1390,7 +1637,7 @@ object listboxListboxMod {
       
       inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
-      inline def setOnFilterValueChange(value: /* e */ ListBoxFilterValueChangeParams => Unit): Self = StObject.set(x, "onFilterValueChange", js.Any.fromFunction1(value))
+      inline def setOnFilterValueChange(value: /* event */ ListBoxFilterValueChangeEvent => Unit): Self = StObject.set(x, "onFilterValueChange", js.Any.fromFunction1(value))
       
       inline def setOnFilterValueChangeUndefined: Self = StObject.set(x, "onFilterValueChange", js.undefined)
       
@@ -1590,7 +1837,7 @@ object listboxListboxMod {
       
       inline def setOnWheelUndefined: Self = StObject.set(x, "onWheel", js.undefined)
       
-      inline def setOptionDisabled(value: ListBoxOptionDisabledType): Self = StObject.set(x, "optionDisabled", value.asInstanceOf[js.Any])
+      inline def setOptionDisabled(value: String | (js.Function1[/* option */ Any, Boolean])): Self = StObject.set(x, "optionDisabled", value.asInstanceOf[js.Any])
       
       inline def setOptionDisabledFunction1(value: /* option */ Any => Boolean): Self = StObject.set(x, "optionDisabled", js.Any.fromFunction1(value))
       
@@ -1604,7 +1851,7 @@ object listboxListboxMod {
       
       inline def setOptionGroupLabelUndefined: Self = StObject.set(x, "optionGroupLabel", js.undefined)
       
-      inline def setOptionGroupTemplate(value: ListBoxOptionGroupTemplateType): Self = StObject.set(x, "optionGroupTemplate", value.asInstanceOf[js.Any])
+      inline def setOptionGroupTemplate(value: ReactNode | (js.Function2[/* option */ Any, /* index */ Double, ReactNode])): Self = StObject.set(x, "optionGroupTemplate", value.asInstanceOf[js.Any])
       
       inline def setOptionGroupTemplateFunction2(value: (/* option */ Any, /* index */ Double) => ReactNode): Self = StObject.set(x, "optionGroupTemplate", js.Any.fromFunction2(value))
       
@@ -1648,6 +1895,10 @@ object listboxListboxMod {
       
       inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
       
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      
+      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+      
       inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
       
       inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
@@ -1659,6 +1910,10 @@ object listboxListboxMod {
       inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+      
+      inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+      
+      inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
       
       inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       

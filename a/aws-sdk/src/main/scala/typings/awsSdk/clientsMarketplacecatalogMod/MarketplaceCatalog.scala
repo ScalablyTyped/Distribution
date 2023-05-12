@@ -29,6 +29,20 @@ trait MarketplaceCatalog extends Service {
   var config_MarketplaceCatalog: ConfigBase & ClientConfiguration = js.native
   
   /**
+    * Deletes a resource-based policy on an Entity that is identified by its resource ARN.
+    */
+  def deleteResourcePolicy(): Request[DeleteResourcePolicyResponse, AWSError] = js.native
+  def deleteResourcePolicy(callback: js.Function2[/* err */ AWSError, /* data */ DeleteResourcePolicyResponse, Unit]): Request[DeleteResourcePolicyResponse, AWSError] = js.native
+  /**
+    * Deletes a resource-based policy on an Entity that is identified by its resource ARN.
+    */
+  def deleteResourcePolicy(params: DeleteResourcePolicyRequest): Request[DeleteResourcePolicyResponse, AWSError] = js.native
+  def deleteResourcePolicy(
+    params: DeleteResourcePolicyRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteResourcePolicyResponse, Unit]
+  ): Request[DeleteResourcePolicyResponse, AWSError] = js.native
+  
+  /**
     * Provides information about a given change set.
     */
   def describeChangeSet(): Request[DescribeChangeSetResponse, AWSError] = js.native
@@ -55,6 +69,20 @@ trait MarketplaceCatalog extends Service {
     params: DescribeEntityRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeEntityResponse, Unit]
   ): Request[DescribeEntityResponse, AWSError] = js.native
+  
+  /**
+    * Gets a resource-based policy of an Entity that is identified by its resource ARN.
+    */
+  def getResourcePolicy(): Request[GetResourcePolicyResponse, AWSError] = js.native
+  def getResourcePolicy(callback: js.Function2[/* err */ AWSError, /* data */ GetResourcePolicyResponse, Unit]): Request[GetResourcePolicyResponse, AWSError] = js.native
+  /**
+    * Gets a resource-based policy of an Entity that is identified by its resource ARN.
+    */
+  def getResourcePolicy(params: GetResourcePolicyRequest): Request[GetResourcePolicyResponse, AWSError] = js.native
+  def getResourcePolicy(
+    params: GetResourcePolicyRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetResourcePolicyResponse, Unit]
+  ): Request[GetResourcePolicyResponse, AWSError] = js.native
   
   /**
     * Returns the list of change sets owned by the account being used to make the call. You can filter this list by providing any combination of entityId, ChangeSetName, and status. If you provide more than one filter, the API operation applies a logical AND between the filters. You can describe a change during the 60-day request history retention period for API calls.
@@ -99,12 +127,26 @@ trait MarketplaceCatalog extends Service {
   ): Request[ListTagsForResourceResponse, AWSError] = js.native
   
   /**
-    * Allows you to request changes for your entities. Within a single ChangeSet, you can't start the same change type against the same entity multiple times. Additionally, when a ChangeSet is running, all the entities targeted by the different changes are locked until the change set has completed (either succeeded, cancelled, or failed). If you try to start a change set containing a change against an entity that is already locked, you will receive a ResourceInUseException error. For example, you can't start the ChangeSet described in the example later in this topic because it contains two changes to run the same change type (AddRevisions) against the same entity (entity-id@1). For more information about working with change sets, see  Working with change sets.
+    * Attaches a resource-based policy to an Entity. Examples of an entity include: AmiProduct and ContainerProduct.
+    */
+  def putResourcePolicy(): Request[PutResourcePolicyResponse, AWSError] = js.native
+  def putResourcePolicy(callback: js.Function2[/* err */ AWSError, /* data */ PutResourcePolicyResponse, Unit]): Request[PutResourcePolicyResponse, AWSError] = js.native
+  /**
+    * Attaches a resource-based policy to an Entity. Examples of an entity include: AmiProduct and ContainerProduct.
+    */
+  def putResourcePolicy(params: PutResourcePolicyRequest): Request[PutResourcePolicyResponse, AWSError] = js.native
+  def putResourcePolicy(
+    params: PutResourcePolicyRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ PutResourcePolicyResponse, Unit]
+  ): Request[PutResourcePolicyResponse, AWSError] = js.native
+  
+  /**
+    * Allows you to request changes for your entities. Within a single ChangeSet, you can't start the same change type against the same entity multiple times. Additionally, when a ChangeSet is running, all the entities targeted by the different changes are locked until the change set has completed (either succeeded, cancelled, or failed). If you try to start a change set containing a change against an entity that is already locked, you will receive a ResourceInUseException error. For example, you can't start the ChangeSet described in the example later in this topic because it contains two changes to run the same change type (AddRevisions) against the same entity (entity-id@1). For more information about working with change sets, see  Working with change sets. For information on change types for single-AMI products, see Working with single-AMI products. Als, for more information on change types available for container-based products, see Working with container products.
     */
   def startChangeSet(): Request[StartChangeSetResponse, AWSError] = js.native
   def startChangeSet(callback: js.Function2[/* err */ AWSError, /* data */ StartChangeSetResponse, Unit]): Request[StartChangeSetResponse, AWSError] = js.native
   /**
-    * Allows you to request changes for your entities. Within a single ChangeSet, you can't start the same change type against the same entity multiple times. Additionally, when a ChangeSet is running, all the entities targeted by the different changes are locked until the change set has completed (either succeeded, cancelled, or failed). If you try to start a change set containing a change against an entity that is already locked, you will receive a ResourceInUseException error. For example, you can't start the ChangeSet described in the example later in this topic because it contains two changes to run the same change type (AddRevisions) against the same entity (entity-id@1). For more information about working with change sets, see  Working with change sets.
+    * Allows you to request changes for your entities. Within a single ChangeSet, you can't start the same change type against the same entity multiple times. Additionally, when a ChangeSet is running, all the entities targeted by the different changes are locked until the change set has completed (either succeeded, cancelled, or failed). If you try to start a change set containing a change against an entity that is already locked, you will receive a ResourceInUseException error. For example, you can't start the ChangeSet described in the example later in this topic because it contains two changes to run the same change type (AddRevisions) against the same entity (entity-id@1). For more information about working with change sets, see  Working with change sets. For information on change types for single-AMI products, see Working with single-AMI products. Als, for more information on change types available for container-based products, see Working with container products.
     */
   def startChangeSet(params: StartChangeSetRequest): Request[StartChangeSetResponse, AWSError] = js.native
   def startChangeSet(

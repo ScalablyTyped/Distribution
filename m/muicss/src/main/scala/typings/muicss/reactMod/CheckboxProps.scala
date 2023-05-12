@@ -11,8 +11,6 @@ trait CheckboxProps
   extends StObject
      with HTMLAttributes[HTMLDivElement] {
   
-  var autoFocus: js.UndefOr[Boolean] = js.undefined
-  
   var checked: js.UndefOr[Boolean] = js.undefined
   
   var disabled: js.UndefOr[Boolean] = js.undefined
@@ -36,10 +34,6 @@ object CheckboxProps {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: CheckboxProps] (val x: Self) extends AnyVal {
-    
-    inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
-    
-    inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
     
     inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
     

@@ -4,8 +4,8 @@ import typings.gestalt.gestaltStrings.error
 import typings.gestalt.gestaltStrings.info
 import typings.gestalt.mod.BadgeObject
 import typings.gestalt.mod.Icons
+import typings.gestalt.mod.Node
 import typings.react.mod.ReactElement
-import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +14,7 @@ trait Badge extends StObject {
   
   var badge: js.UndefOr[BadgeObject] = js.undefined
   
-  var children: js.UndefOr[ReactNode] = js.undefined
+  var children: js.UndefOr[Node] = js.undefined
   
   var icon: js.UndefOr[Icons] = js.undefined
   
@@ -42,7 +42,7 @@ object Badge {
     
     inline def setBadgeUndefined: Self = StObject.set(x, "badge", js.undefined)
     
-    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: Node): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     

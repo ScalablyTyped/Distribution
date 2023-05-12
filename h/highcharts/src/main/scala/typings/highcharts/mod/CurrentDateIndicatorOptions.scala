@@ -34,7 +34,7 @@ trait CurrentDateIndicatorOptions extends StObject {
     * properties are `click`, `mouseover`, `mouseout`, `mousemove`.
     */
   var events: js.UndefOr[
-    ChartParallelAxesCurrentDateIndicatorEventsOptions | ColorAxisCurrentDateIndicatorEventsOptions | NavigatorXAxisCurrentDateIndicatorEventsOptions | NavigatorYAxisCurrentDateIndicatorEventsOptions | XAxisCurrentDateIndicatorEventsOptions | YAxisCurrentDateIndicatorEventsOptions | ZAxisCurrentDateIndicatorEventsOptions
+    ColorAxisCurrentDateIndicatorEventsOptions | NavigatorXAxisCurrentDateIndicatorEventsOptions | XAxisCurrentDateIndicatorEventsOptions | ZAxisCurrentDateIndicatorEventsOptions
   ] = js.undefined
   
   /**
@@ -46,13 +46,12 @@ trait CurrentDateIndicatorOptions extends StObject {
     * (Gantt) Text labels for the plot bands
     */
   var label: js.UndefOr[
-    ChartParallelAxesCurrentDateIndicatorLabelOptions | ColorAxisCurrentDateIndicatorLabelOptions | NavigatorXAxisCurrentDateIndicatorLabelOptions | NavigatorYAxisCurrentDateIndicatorLabelOptions | XAxisCurrentDateIndicatorLabelOptions | YAxisCurrentDateIndicatorLabelOptions | ZAxisCurrentDateIndicatorLabelOptions
+    ColorAxisCurrentDateIndicatorLabelOptions | NavigatorXAxisCurrentDateIndicatorLabelOptions | XAxisCurrentDateIndicatorLabelOptions | ZAxisCurrentDateIndicatorLabelOptions
   ] = js.undefined
   
-  /**
-    * (Gantt) The position of the line in axis units.
-    */
-  var value: js.UndefOr[Double] = js.undefined
+  var labels: js.UndefOr[
+    ColorAxisCurrentDateIndicatorLabelsOptions | NavigatorXAxisCurrentDateIndicatorLabelsOptions | XAxisCurrentDateIndicatorLabelsOptions | ZAxisCurrentDateIndicatorLabelsOptions
+  ] = js.undefined
   
   /**
     * (Gantt) The width or thickness of the plot line.
@@ -91,7 +90,7 @@ object CurrentDateIndicatorOptions {
     inline def setDashStyleUndefined: Self = StObject.set(x, "dashStyle", js.undefined)
     
     inline def setEvents(
-      value: ChartParallelAxesCurrentDateIndicatorEventsOptions | ColorAxisCurrentDateIndicatorEventsOptions | NavigatorXAxisCurrentDateIndicatorEventsOptions | NavigatorYAxisCurrentDateIndicatorEventsOptions | XAxisCurrentDateIndicatorEventsOptions | YAxisCurrentDateIndicatorEventsOptions | ZAxisCurrentDateIndicatorEventsOptions
+      value: ColorAxisCurrentDateIndicatorEventsOptions | NavigatorXAxisCurrentDateIndicatorEventsOptions | XAxisCurrentDateIndicatorEventsOptions | ZAxisCurrentDateIndicatorEventsOptions
     ): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
@@ -101,14 +100,16 @@ object CurrentDateIndicatorOptions {
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     inline def setLabel(
-      value: ChartParallelAxesCurrentDateIndicatorLabelOptions | ColorAxisCurrentDateIndicatorLabelOptions | NavigatorXAxisCurrentDateIndicatorLabelOptions | NavigatorYAxisCurrentDateIndicatorLabelOptions | XAxisCurrentDateIndicatorLabelOptions | YAxisCurrentDateIndicatorLabelOptions | ZAxisCurrentDateIndicatorLabelOptions
+      value: ColorAxisCurrentDateIndicatorLabelOptions | NavigatorXAxisCurrentDateIndicatorLabelOptions | XAxisCurrentDateIndicatorLabelOptions | ZAxisCurrentDateIndicatorLabelOptions
     ): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setLabels(
+      value: ColorAxisCurrentDateIndicatorLabelsOptions | NavigatorXAxisCurrentDateIndicatorLabelsOptions | XAxisCurrentDateIndicatorLabelsOptions | ZAxisCurrentDateIndicatorLabelsOptions
+    ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     

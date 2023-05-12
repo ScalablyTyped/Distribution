@@ -10,19 +10,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class ProcessExecution protected ()
   extends typings.vscode.mod.ProcessExecution {
   /**
-    * Creates a process execution.
-    *
-    * @param process The process to start.
-    * @param options Optional options for the started process.
-    */
+  		 * Creates a process execution.
+  		 *
+  		 * @param process The process to start.
+  		 * @param options Optional options for the started process.
+  		 */
   def this(process: String) = this()
   /**
-    * Creates a process execution.
-    *
-    * @param process The process to start.
-    * @param args Arguments to be passed to the process.
-    * @param options Optional options for the started process.
-    */
+  		 * Creates a process execution.
+  		 *
+  		 * @param process The process to start.
+  		 * @param args Arguments to be passed to the process.
+  		 * @param options Optional options for the started process.
+  		 */
   def this(process: String, args: js.Array[String]) = this()
   def this(process: String, options: ProcessExecutionOptions) = this()
   def this(process: String, args: js.Array[String], options: ProcessExecutionOptions) = this()

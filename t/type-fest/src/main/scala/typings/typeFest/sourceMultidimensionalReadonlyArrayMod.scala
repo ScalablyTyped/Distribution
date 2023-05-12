@@ -11,7 +11,7 @@ object sourceMultidimensionalReadonlyArrayMod {
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
     * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
-    number extends Dimensions ? type-fest.type-fest/source/multidimensional-readonly-array.Recursive<Element> : type-fest.type-fest/source/internal.IsEqual<Dimensions, 0> extends true ? Element : std.ReadonlyArray<type-fest.type-fest/source/multidimensional-readonly-array.MultidimensionalReadonlyArray<Element, type-fest.type-fest/source/internal.Subtract<Dimensions, 1>>>
+    number extends Dimensions ? type-fest.type-fest/source/multidimensional-readonly-array.Recursive<Element> : type-fest.type-fest/source/is-equal.IsEqual<Dimensions, 0> extends true ? Element : std.ReadonlyArray<type-fest.type-fest/source/multidimensional-readonly-array.MultidimensionalReadonlyArray<Element, type-fest.type-fest/source/internal.Subtract<Dimensions, 1>>>
     }}}
     */
   type MultidimensionalReadonlyArray[Element, Dimensions /* <: Double */] = Element

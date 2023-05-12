@@ -22,7 +22,7 @@ trait AddOutputRequest extends StObject {
   var Destination: js.UndefOr[string] = js.undefined
   
   /**
-    * The type of key used for the encryption. If no keyType is provided, the service will use the default setting (static-key).
+    * The type of key used for the encryption. If no keyType is provided, the service will use the default setting (static-key). Allowable encryption types: static-key.
     */
   var Encryption: js.UndefOr[typings.awsSdk.clientsMediaconnectMod.Encryption] = js.undefined
   
@@ -72,7 +72,7 @@ trait AddOutputRequest extends StObject {
   var SmoothingLatency: js.UndefOr[integer] = js.undefined
   
   /**
-    * The stream ID that you want to use for this transport. This parameter applies only to Zixi-based streams.
+    * The stream ID that you want to use for this transport. This parameter applies only to Zixi and SRT caller-based streams.
     */
   var StreamId: js.UndefOr[string] = js.undefined
   

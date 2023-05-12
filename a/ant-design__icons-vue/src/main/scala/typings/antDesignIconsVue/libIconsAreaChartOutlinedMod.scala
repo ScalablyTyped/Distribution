@@ -16,7 +16,7 @@ object libIconsAreaChartOutlinedMod extends Shortcut {
   @js.native
   trait AreaChartOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_AreaChartOutlinedIconType: String = js.native

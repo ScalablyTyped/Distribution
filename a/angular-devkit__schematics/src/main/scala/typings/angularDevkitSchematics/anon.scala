@@ -102,26 +102,6 @@ object anon {
     }
   }
   
-  trait Next[T /* <: /* import warning: importer.ImportType#apply Failed type conversion: {  next :T | null} */ js.Any */] extends StObject {
-    
-    var next: T | Null
-  }
-  object Next {
-    
-    inline def apply[T /* <: /* import warning: importer.ImportType#apply Failed type conversion: {  next :T | null} */ js.Any */](): Next[T] = {
-      val __obj = js.Dynamic.literal(next = null)
-      __obj.asInstanceOf[Next[T]]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: Next[?], T /* <: /* import warning: importer.ImportType#apply Failed type conversion: {  next :T | null} */ js.Any */] (val x: Self & Next[T]) extends AnyVal {
-      
-      inline def setNext(value: T): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
-      
-      inline def setNextNull: Self = StObject.set(x, "next", null)
-    }
-  }
-  
   /* Inlined std.Partial<@angular-devkit/schematics.@angular-devkit/schematics/src/engine/interface.ExecutionOptions> */
   trait PartialExecutionOptions extends StObject {
     

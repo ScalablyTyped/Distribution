@@ -44,7 +44,7 @@ object typesPanelMod {
     /**
       * A read-only array of the widgets in the panel.
       */
-    val widgets: js.Array[Widget] = js.native
+    def widgets: js.Array[Widget] = js.native
   }
   object Panel {
     

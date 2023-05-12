@@ -4,16 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A <code>StreetViewPanoRequest</code> is used with the
-  * <code>getPanorama</code> to find a panorama with a specified ID.
-  */
 trait StreetViewPanoRequest extends StObject {
   
   /**
     * Specifies the pano ID to search for.
     */
-  var pano: js.UndefOr[String | Null] = js.undefined
+  var pano: js.UndefOr[Null | String] = js.undefined
 }
 object StreetViewPanoRequest {
   

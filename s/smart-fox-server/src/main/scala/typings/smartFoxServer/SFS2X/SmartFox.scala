@@ -56,10 +56,10 @@ trait SmartFox extends StObject {
     */
   def addEventListener(evtType: String, listener: js.Function, scope: Double): Unit = js.native
   
-  /** @type {Managers.BuddyManager} Returns a reference to the Buddy Manager. */
+  /** Returns a reference to the Buddy Manager. */
   var buddyManager: BuddyManager = js.native
   
-  /** @type {IconfigObj} Returns the client configuration object passed during the SmartFox instance creation. */
+  /** Returns the client configuration object passed during the SmartFox instance creation. */
   var config: IconfigObj = js.native
   
   /**
@@ -77,7 +77,7 @@ trait SmartFox extends StObject {
   def connect(host: Unit, port: Double, useSSL: Boolean): Unit = js.native
   def connect(host: Unit, port: Unit, useSSL: Boolean): Unit = js.native
   
-  /** @type {boolean} Indicates whether the client-server messages console debug is enabled or not. */
+  /** Indicates whether the client-server messages console debug is enabled or not. */
   var debug: Boolean = js.native
   
   /**
@@ -141,13 +141,13 @@ trait SmartFox extends StObject {
     */
   def isConnected(): Boolean = js.native
   
-  /** @type {Entities.SFSRoom} Returns the object representing the last Room joined by the client, if any. */
+  /** Returns the object representing the last Room joined by the client, if any. */
   var lastJoinedRoom: SFSRoom = js.native
   
-  /** @type {Logger} Returns a reference to the internal Logger instance used by SmartFoxServer 2X. */
+  /** Returns a reference to the internal Logger instance used by SmartFoxServer 2X. */
   var logger: Logger = js.native
   
-  /** @type {Entities.SFSUser} Returns the SFSUser object representing the client itself when connected to a SmartFoxServer 2X instance. */
+  /** Returns the SFSUser object representing the client itself when connected to a SmartFoxServer 2X instance. */
   var mySelf: SFSUser = js.native
   
   /**
@@ -157,7 +157,7 @@ trait SmartFox extends StObject {
     */
   def removeEventListener(evtType: String, listener: js.Function): Unit = js.native
   
-  /** @type {Managers.RoomManager} Returns a reference to the Room Manager. */
+  /** Returns a reference to the Room Manager. */
   var roomManager: RoomManager = js.native
   
   /**
@@ -201,7 +201,7 @@ trait SmartFox extends StObject {
   def send(request: SubscribeRoomGroupRequest): Unit = js.native
   def send(request: UnsubscribeRoomGroupRequest): Unit = js.native
   
-  /** @type {string} Returns the unique session token of the client. */
+  /** Returns the unique session token of the client. */
   var sessionToken: String = js.native
   
   /**
@@ -211,9 +211,9 @@ trait SmartFox extends StObject {
     */
   def setClientDetails(platformId: String, version: String): Unit = js.native
   
-  /** @type {Managers.UserManager} Returns a reference to the User Manager. */
+  /** Returns a reference to the User Manager. */
   var userManager: UserManager = js.native
   
-  /** @type {string} Returns the current version of the SmartFoxServer 2X JavaScript API. */
+  /** Returns the current version of the SmartFoxServer 2X JavaScript API. */
   var version: String = js.native
 }

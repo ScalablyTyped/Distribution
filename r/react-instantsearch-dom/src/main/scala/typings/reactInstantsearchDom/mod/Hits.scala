@@ -12,7 +12,7 @@ open class Hits[T] protected ()
   def this(props: HitsProps[T]) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: HitsProps[T], context: Any) = this()
 }

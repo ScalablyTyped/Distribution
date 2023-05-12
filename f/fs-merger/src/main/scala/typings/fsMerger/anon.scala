@@ -5,6 +5,7 @@ import typings.fsMerger.fsMergerStrings.buffer
 import typings.node.NodeJS.ErrnoException
 import typings.node.anon.ObjectEncodingOptionswith
 import typings.node.anon.ObjectEncodingOptionswithEncoding
+import typings.node.anon.Recursive
 import typings.node.bufferMod.global.Buffer
 import typings.node.bufferMod.global.BufferEncoding
 import typings.node.fsMod.Dirent
@@ -104,7 +105,7 @@ object anon {
     ): Unit = js.native
     def apply(
       path: PathLike,
-      options: typings.node.anon.WithFileTypes,
+      options: Recursive,
       callback: js.Function2[/* err */ ErrnoException | Null, /* files */ js.Array[String], Unit]
     ): Unit = js.native
     def apply(

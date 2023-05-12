@@ -16,7 +16,7 @@ object libIconsCameraOutlinedMod extends Shortcut {
   @js.native
   trait CameraOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_CameraOutlinedIconType: String = js.native

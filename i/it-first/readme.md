@@ -1,7 +1,7 @@
 
 # Scala.js typings for it-first
 
-Typings are for version 2.0.0
+Typings are for version 3.0.2
 
 ## Library description:
 Returns the first result from an async iterator

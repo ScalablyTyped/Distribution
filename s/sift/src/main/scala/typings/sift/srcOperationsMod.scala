@@ -1,9 +1,9 @@
 package typings.sift
 
-import typings.sift.libCoreMod.NopeOperation
 import typings.sift.srcCoreMod.BaseOperation
 import typings.sift.srcCoreMod.EqualsOperation
 import typings.sift.srcCoreMod.NamedGroupOperation
+import typings.sift.srcCoreMod.NopeOperation
 import typings.sift.srcCoreMod.Operation
 import typings.sift.srcCoreMod.Options
 import typings.sift.srcCoreMod.Query

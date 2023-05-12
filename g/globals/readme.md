@@ -1,7 +1,7 @@
 
 # Scala.js typings for globals
 
-Typings are for version 13.17.0
+Typings are for version 13.20.0
 
 ## Library description:
 Global identifiers from different JavaScript environments

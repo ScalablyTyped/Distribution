@@ -109,6 +109,8 @@ trait Branchesurl extends StObject {
   
   var git_url: js.UndefOr[String] = js.undefined
   
+  var has_discussions: js.UndefOr[Boolean] = js.undefined
+  
   var has_downloads: js.UndefOr[Boolean] = js.undefined
   
   var has_issues: js.UndefOr[Boolean] = js.undefined
@@ -211,6 +213,10 @@ trait Branchesurl extends StObject {
   /** @example admin */
   var role_name: js.UndefOr[String] = js.undefined
   
+  var security_and_analysis: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['security-and-analysis'] */ js.Any
+  ] = js.undefined
+  
   /** @description The size of the repository. Size is calculated hourly. When a repository is initially created, the size is 0. */
   var size: js.UndefOr[Double] = js.undefined
   
@@ -256,10 +262,6 @@ trait Branchesurl extends StObject {
   var teams_url: String
   
   var temp_clone_token: js.UndefOr[String] = js.undefined
-  
-  var template_repository: js.UndefOr[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-repository'] */ js.Any
-  ] = js.undefined
   
   var topics: js.UndefOr[js.Array[String]] = js.undefined
   
@@ -435,6 +437,10 @@ object Branchesurl {
     
     inline def setGit_urlUndefined: Self = StObject.set(x, "git_url", js.undefined)
     
+    inline def setHas_discussions(value: Boolean): Self = StObject.set(x, "has_discussions", value.asInstanceOf[js.Any])
+    
+    inline def setHas_discussionsUndefined: Self = StObject.set(x, "has_discussions", js.undefined)
+    
     inline def setHas_downloads(value: Boolean): Self = StObject.set(x, "has_downloads", value.asInstanceOf[js.Any])
     
     inline def setHas_downloadsUndefined: Self = StObject.set(x, "has_downloads", js.undefined)
@@ -547,6 +553,12 @@ object Branchesurl {
     
     inline def setRole_nameUndefined: Self = StObject.set(x, "role_name", js.undefined)
     
+    inline def setSecurity_and_analysis(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['security-and-analysis'] */ js.Any
+    ): Self = StObject.set(x, "security_and_analysis", value.asInstanceOf[js.Any])
+    
+    inline def setSecurity_and_analysisUndefined: Self = StObject.set(x, "security_and_analysis", js.undefined)
+    
     inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
@@ -582,12 +594,6 @@ object Branchesurl {
     inline def setTemp_clone_token(value: String): Self = StObject.set(x, "temp_clone_token", value.asInstanceOf[js.Any])
     
     inline def setTemp_clone_tokenUndefined: Self = StObject.set(x, "temp_clone_token", js.undefined)
-    
-    inline def setTemplate_repository(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-repository'] */ js.Any
-    ): Self = StObject.set(x, "template_repository", value.asInstanceOf[js.Any])
-    
-    inline def setTemplate_repositoryUndefined: Self = StObject.set(x, "template_repository", js.undefined)
     
     inline def setTopics(value: js.Array[String]): Self = StObject.set(x, "topics", value.asInstanceOf[js.Any])
     

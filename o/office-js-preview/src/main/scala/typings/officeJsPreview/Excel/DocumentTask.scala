@@ -29,7 +29,7 @@ trait DocumentTask
     *
     * @param assignee The identity of the user to add to the assignee list.
     */
-  def assign(assignee: Identity): Unit = js.native
+  def assign(assignee: EmailIdentity): Unit = js.native
   
   /**
     * Returns a collection of assignees of the task.
@@ -38,7 +38,7 @@ trait DocumentTask
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  val assignees: js.Array[Identity] = js.native
+  val assignees: js.Array[EmailIdentity] = js.native
   
   /**
     * Gets the change records of the task.
@@ -65,7 +65,7 @@ trait DocumentTask
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  val completedBy: Identity = js.native
+  val completedBy: EmailIdentity = js.native
   
   /**
     * Gets the date and time that the task was completed. All dates are in UTC.
@@ -87,7 +87,7 @@ trait DocumentTask
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  val createdBy: Identity = js.native
+  val createdBy: EmailIdentity = js.native
   
   /**
     * Gets the date and time that the task was created. All dates are in UTC.
@@ -97,15 +97,6 @@ trait DocumentTask
     * @beta
     */
   val createdDateTime: js.Date = js.native
-  
-  /**
-    * Gets or sets the date and time the task is due.
-    *
-    * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
-    */
-  var dueDateTime: js.Date = js.native
   
   /**
     * Gets the ID of the task.
@@ -146,13 +137,13 @@ trait DocumentTask
   var priority: Double = js.native
   
   /**
-    * Gets or sets the date and time the task starts.
+    * Gets or sets the date and time the task should start and is due.
     *
     * @remarks
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var startDateTime: js.Date = js.native
+  var startAndDueDateTime: DocumentTaskSchedule = js.native
   
   /**
     * Specifies title of the task.
@@ -178,7 +169,7 @@ trait DocumentTask
     *
     * @param assignee The identity of the user to remove from the assignee list.
     */
-  def unassign(assignee: Identity): Unit = js.native
+  def unassign(assignee: EmailIdentity): Unit = js.native
   
   /**
     * Removes all users from the list of assignees attached to the task.

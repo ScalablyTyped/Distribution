@@ -1,6 +1,6 @@
 package typings.openui5.anon
 
-import typings.openui5.sapMTabContainerItemMod.default
+import typings.openui5.sapMLibraryMod.ObjectMarkerType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,9 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `22` extends StObject {
   
   /**
-    * The selected item.
+    * Type of the `ObjectMarker`.
     */
-  var item: js.UndefOr[default] = js.undefined
+  var `type`: js.UndefOr[
+    ObjectMarkerType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ObjectMarkerType * / any */ String)
+  ] = js.undefined
 }
 object `22` {
   
@@ -22,8 +24,10 @@ object `22` {
   @scala.inline
   implicit open class MutableBuilder[Self <: `22`] (val x: Self) extends AnyVal {
     
-    inline def setItem(value: default): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setType(
+      value: ObjectMarkerType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ObjectMarkerType * / any */ String)
+    ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

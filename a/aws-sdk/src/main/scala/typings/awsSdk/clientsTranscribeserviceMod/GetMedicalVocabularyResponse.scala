@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetMedicalVocabularyResponse extends StObject {
   
   /**
-    * The S3 location where the specified medical vocabulary is stored; use this URI to view or download the vocabulary.
+    * The S3 location where the specified custom medical vocabulary is stored; use this URI to view or download the custom vocabulary.
     */
   var DownloadUri: js.UndefOr[Uri] = js.undefined
   
   /**
-    * If VocabularyState is FAILED, FailureReason contains information about why the medical vocabulary request failed. See also: Common Errors.
+    * If VocabularyState is FAILED, FailureReason contains information about why the custom medical vocabulary request failed. See also: Common Errors.
     */
   var FailureReason: js.UndefOr[typings.awsSdk.clientsTranscribeserviceMod.FailureReason] = js.undefined
   
   /**
-    * The language code you selected for your medical vocabulary. US English (en-US) is the only language supported with Amazon Transcribe Medical.
+    * The language code you selected for your custom medical vocabulary. US English (en-US) is the only language supported with Amazon Transcribe Medical.
     */
   var LanguageCode: js.UndefOr[typings.awsSdk.clientsTranscribeserviceMod.LanguageCode] = js.undefined
   
@@ -32,7 +32,7 @@ trait GetMedicalVocabularyResponse extends StObject {
   var VocabularyName: js.UndefOr[typings.awsSdk.clientsTranscribeserviceMod.VocabularyName] = js.undefined
   
   /**
-    * The processing state of your custom medical vocabulary. If the state is READY, you can use the vocabulary in a StartMedicalTranscriptionJob request.
+    * The processing state of your custom medical vocabulary. If the state is READY, you can use the custom vocabulary in a StartMedicalTranscriptionJob request.
     */
   var VocabularyState: js.UndefOr[typings.awsSdk.clientsTranscribeserviceMod.VocabularyState] = js.undefined
 }

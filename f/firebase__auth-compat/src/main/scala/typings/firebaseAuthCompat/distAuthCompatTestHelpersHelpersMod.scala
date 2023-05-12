@@ -10,6 +10,10 @@ object distAuthCompatTestHelpersHelpersMod {
   @js.native
   val ^ : js.Any = js.native
   
+  @JSImport("@firebase/auth-compat/dist/auth-compat/test/helpers/helpers", "FAKE_APP_CHECK_CONTROLLER_PROVIDER")
+  @js.native
+  val FAKE_APP_CHECK_CONTROLLER_PROVIDER: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Provider<'app-check-internal'> */ Any = js.native
+  
   @JSImport("@firebase/auth-compat/dist/auth-compat/test/helpers/helpers", "FAKE_HEARTBEAT_CONTROLLER_PROVIDER")
   @js.native
   val FAKE_HEARTBEAT_CONTROLLER_PROVIDER: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Provider<'heartbeat'> */ Any = js.native

@@ -1,16 +1,17 @@
 package typings.nivoBullet.distTypesTypesMod
 
 import typings.nivoBullet.anon.Color
+import typings.reactSpringCore.mod.SpringValues
 import typings.std.MouseEvent
 import typings.std.SVGLineElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Pick<@nivo/bullet.@nivo/bullet/dist/types/types.BulletMarkersProps, 'onMouseEnter' | 'onMouseLeave' | 'onClick'> & @nivo/bullet.@nivo/bullet/dist/types/types.Point & {  animatedProps :/ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValues<PositionWithColor> * / any,   size :number,   rotation :number,   color :string,   data :{  index :number,   value :number,   color :string},   onMouseMove :@nivo/bullet.@nivo/bullet/dist/types/types.BulletMarkersProps['onMouseEnter']} */
+/* Inlined std.Pick<@nivo/bullet.@nivo/bullet/dist/types/types.BulletMarkersProps, 'onMouseEnter' | 'onMouseLeave' | 'onClick'> & @nivo/bullet.@nivo/bullet/dist/types/types.Point & {  animatedProps :@react-spring/web.@react-spring/web.SpringValues<@nivo/bullet.@nivo/bullet/dist/types/types.PositionWithColor>,   size :number,   rotation :number,   color :string,   data :{  index :number,   value :number,   color :string},   onMouseMove :@nivo/bullet.@nivo/bullet/dist/types/types.BulletMarkersProps['onMouseEnter']} */
 trait BulletMarkersItemProps extends StObject {
   
-  var animatedProps: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValues<PositionWithColor> */ Any
+  var animatedProps: SpringValues[PositionWithColor]
   
   var color: String
   
@@ -35,7 +36,7 @@ trait BulletMarkersItemProps extends StObject {
 object BulletMarkersItemProps {
   
   inline def apply(
-    animatedProps: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValues<PositionWithColor> */ Any,
+    animatedProps: SpringValues[PositionWithColor],
     color: String,
     data: Color,
     onClick: (ComputedMarkersDatum, /* event */ typings.react.mod.MouseEvent[SVGLineElement, MouseEvent]) => Unit,
@@ -54,9 +55,7 @@ object BulletMarkersItemProps {
   @scala.inline
   implicit open class MutableBuilder[Self <: BulletMarkersItemProps] (val x: Self) extends AnyVal {
     
-    inline def setAnimatedProps(
-      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValues<PositionWithColor> */ Any
-    ): Self = StObject.set(x, "animatedProps", value.asInstanceOf[js.Any])
+    inline def setAnimatedProps(value: SpringValues[PositionWithColor]): Self = StObject.set(x, "animatedProps", value.asInstanceOf[js.Any])
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

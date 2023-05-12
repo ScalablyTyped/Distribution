@@ -1,19 +1,19 @@
 package typings.devtoolsProtocol.anon
 
-import typings.devtoolsProtocol.mod.Protocol.DOMDebugger.RemoveXHRBreakpointRequest
+import typings.devtoolsProtocol.mod.Protocol.DOMDebugger.RemoveInstrumentationBreakpointRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `70` extends StObject {
   
-  var paramsType: js.Array[RemoveXHRBreakpointRequest]
+  var paramsType: js.Array[RemoveInstrumentationBreakpointRequest]
   
   var returnType: Unit
 }
 object `70` {
   
-  inline def apply(paramsType: js.Array[RemoveXHRBreakpointRequest], returnType: Unit): `70` = {
+  inline def apply(paramsType: js.Array[RemoveInstrumentationBreakpointRequest], returnType: Unit): `70` = {
     val __obj = js.Dynamic.literal(paramsType = paramsType.asInstanceOf[js.Any], returnType = returnType.asInstanceOf[js.Any])
     __obj.asInstanceOf[`70`]
   }
@@ -21,9 +21,9 @@ object `70` {
   @scala.inline
   implicit open class MutableBuilder[Self <: `70`] (val x: Self) extends AnyVal {
     
-    inline def setParamsType(value: js.Array[RemoveXHRBreakpointRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
+    inline def setParamsType(value: js.Array[RemoveInstrumentationBreakpointRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    inline def setParamsTypeVarargs(value: RemoveXHRBreakpointRequest*): Self = StObject.set(x, "paramsType", js.Array(value*))
+    inline def setParamsTypeVarargs(value: RemoveInstrumentationBreakpointRequest*): Self = StObject.set(x, "paramsType", js.Array(value*))
     
     inline def setReturnType(value: Unit): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }

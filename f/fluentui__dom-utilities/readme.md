@@ -1,7 +1,7 @@
 
 # Scala.js typings for fluentui__dom-utilities
 
-Typings are for version 2.2.2
+Typings are for version 2.2.9
 
 ## Library description:
 DOM utilities for use within Fluent web components

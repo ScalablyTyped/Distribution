@@ -9,6 +9,8 @@ trait ConnectionOptions extends StObject {
   var cancellationStrategy: js.UndefOr[CancellationStrategy] = js.undefined
   
   var connectionStrategy: js.UndefOr[ConnectionStrategy] = js.undefined
+  
+  var messageStrategy: js.UndefOr[MessageStrategy] = js.undefined
 }
 object ConnectionOptions {
   
@@ -33,5 +35,9 @@ object ConnectionOptions {
     inline def setConnectionStrategy(value: ConnectionStrategy): Self = StObject.set(x, "connectionStrategy", value.asInstanceOf[js.Any])
     
     inline def setConnectionStrategyUndefined: Self = StObject.set(x, "connectionStrategy", js.undefined)
+    
+    inline def setMessageStrategy(value: MessageStrategy): Self = StObject.set(x, "messageStrategy", value.asInstanceOf[js.Any])
+    
+    inline def setMessageStrategyUndefined: Self = StObject.set(x, "messageStrategy", js.undefined)
   }
 }

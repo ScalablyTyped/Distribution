@@ -7,8 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Animation curve links an input data set to an output data set and defines the interpolation
   * method to use.
-  *
-  * @ignore
   */
 @JSImport("playcanvas", "AnimCurve")
 @js.native

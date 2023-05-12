@@ -1,5 +1,6 @@
 package typings.openui5.anon
 
+import typings.openui5.sapUiUnifiedMenuItemBaseMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `7` extends StObject {
   
   /**
-    * Id of the selected Datset item
+    * The action (item) which was selected by the user.
     */
-  var itemId: js.UndefOr[String] = js.undefined
+  var item: js.UndefOr[default] = js.undefined
 }
 object `7` {
   
@@ -21,8 +22,8 @@ object `7` {
   @scala.inline
   implicit open class MutableBuilder[Self <: `7`] (val x: Self) extends AnyVal {
     
-    inline def setItemId(value: String): Self = StObject.set(x, "itemId", value.asInstanceOf[js.Any])
+    inline def setItem(value: default): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
-    inline def setItemIdUndefined: Self = StObject.set(x, "itemId", js.undefined)
+    inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
   }
 }

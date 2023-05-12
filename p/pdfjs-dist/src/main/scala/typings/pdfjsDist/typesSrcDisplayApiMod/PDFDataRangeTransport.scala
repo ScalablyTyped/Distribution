@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("pdfjs-dist/types/src/display/api", "PDFDataRangeTransport")
 @js.native
-open class PDFDataRangeTransport protected ()
-  extends StObject
-     with _GetDocumentParameters {
+open class PDFDataRangeTransport protected () extends StObject {
   /**
     * @param {number} length
-    * @param {Uint8Array} initialData
+    * @param {Uint8Array|null} initialData
     * @param {boolean} [progressiveDone]
     * @param {string} [contentDispositionFilename]
     */
+  def this(length: Double) = this()
   def this(length: Double, initialData: js.typedarray.Uint8Array) = this()
   def this(length: Double, initialData: js.typedarray.Uint8Array, progressiveDone: Boolean) = this()
+  def this(length: Double, initialData: Null, progressiveDone: Boolean) = this()
   def this(
     length: Double,
     initialData: js.typedarray.Uint8Array,
@@ -30,6 +30,8 @@ open class PDFDataRangeTransport protected ()
     progressiveDone: Unit,
     contentDispositionFilename: String
   ) = this()
+  def this(length: Double, initialData: Null, progressiveDone: Boolean, contentDispositionFilename: String) = this()
+  def this(length: Double, initialData: Null, progressiveDone: Unit, contentDispositionFilename: String) = this()
   
   var _progressListeners: js.Array[Any] = js.native
   
@@ -43,31 +45,61 @@ open class PDFDataRangeTransport protected ()
   
   def abort(): Unit = js.native
   
-  def addProgressListener(listener: Any): Unit = js.native
+  /**
+    * @param {function} listener
+    */
+  def addProgressListener(listener: js.Function): Unit = js.native
   
-  def addProgressiveDoneListener(listener: Any): Unit = js.native
+  /**
+    * @param {function} listener
+    */
+  def addProgressiveDoneListener(listener: js.Function): Unit = js.native
   
-  def addProgressiveReadListener(listener: Any): Unit = js.native
+  /**
+    * @param {function} listener
+    */
+  def addProgressiveReadListener(listener: js.Function): Unit = js.native
   
-  def addRangeListener(listener: Any): Unit = js.native
+  /**
+    * @param {function} listener
+    */
+  def addRangeListener(listener: js.Function): Unit = js.native
   
   var contentDispositionFilename: String = js.native
   
-  var initialData: js.typedarray.Uint8Array = js.native
+  var initialData: js.typedarray.Uint8Array | Null = js.native
   
   var length: Double = js.native
   
-  def onDataProgress(loaded: Any, total: Any): Unit = js.native
+  /**
+    * @param {number} loaded
+    * @param {number|undefined} total
+    */
+  def onDataProgress(loaded: Double): Unit = js.native
+  def onDataProgress(loaded: Double, total: Double): Unit = js.native
   
   def onDataProgressiveDone(): Unit = js.native
   
-  def onDataProgressiveRead(chunk: Any): Unit = js.native
+  /**
+    * @param {Uint8Array|null} chunk
+    */
+  def onDataProgressiveRead(): Unit = js.native
+  def onDataProgressiveRead(chunk: js.typedarray.Uint8Array): Unit = js.native
   
-  def onDataRange(begin: Any, chunk: Any): Unit = js.native
+  /**
+    * @param {number} begin
+    * @param {Uint8Array|null} chunk
+    */
+  def onDataRange(begin: Double): Unit = js.native
+  def onDataRange(begin: Double, chunk: js.typedarray.Uint8Array): Unit = js.native
   
   var progressiveDone: Boolean = js.native
   
-  def requestDataRange(begin: Any, end: Any): Unit = js.native
+  /**
+    * @param {number} begin
+    * @param {number} end
+    */
+  def requestDataRange(begin: Double, end: Double): Unit = js.native
   
   def transportReady(): Unit = js.native
 }

@@ -92,6 +92,15 @@ trait UniqueValueRenderer
   var legendOptions: UniqueValueRendererLegendOptions = js.native
   
   /**
+    * Indicates whether the order of the classes or [uniqueValueInfos](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-UniqueValueRenderer.html#uniqueValueInfos) in the renderer definition should be used for the feature drawing order of the layer.
+    *
+    * @default false
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-UniqueValueRenderer.html#orderByClassesEnabled)
+    */
+  var orderByClassesEnabled: Boolean = js.native
+  
+  /**
     * Removes a unique value from the renderer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-UniqueValueRenderer.html#removeUniqueValueInfo)

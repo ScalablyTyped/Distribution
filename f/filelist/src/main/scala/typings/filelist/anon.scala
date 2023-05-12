@@ -81,13 +81,7 @@ object anon {
       ] = js.native
     
     def find[S /* <: String */](
-      predicate: js.ThisFunction3[
-          /* this */ Unit, 
-          /* value */ String, 
-          /* index */ Double, 
-          /* obj */ js.Array[String], 
-          /* is S */ Boolean
-        ]
+      predicate: js.Function3[/* value */ String, /* index */ Double, /* obj */ js.Array[String], /* is S */ Boolean]
     ): js.UndefOr[S] = js.native
     
     def findIndex(predicate: js.Function3[/* value */ String, /* index */ Double, /* obj */ js.Array[String], Any]): Double = js.native
@@ -97,10 +91,36 @@ object anon {
         Double
       ] = js.native
     
+    def findLast[S /* <: String */](
+      predicate: js.Function3[
+          /* value */ String, 
+          /* index */ Double, 
+          /* array */ js.Array[String], 
+          /* is S */ Boolean
+        ]
+    ): js.UndefOr[S] = js.native
+    
+    def findLastIndex(predicate: js.Function3[/* value */ String, /* index */ Double, /* array */ js.Array[String], Any]): Double = js.native
+    @JSName("findLastIndex")
+    var findLastIndex_Original: js.Function1[
+        /* predicate */ js.Function3[/* value */ String, /* index */ Double, /* array */ js.Array[String], Any], 
+        Double
+      ] = js.native
+    
+    @JSName("findLast")
+    var findLast_Original: js.Function1[
+        /* predicate */ js.Function3[
+          /* value */ String, 
+          /* index */ Double, 
+          /* array */ js.Array[String], 
+          /* is string */ Boolean
+        ], 
+        js.UndefOr[String]
+      ] = js.native
+    
     @JSName("find")
     var find_Original: js.Function1[
-        /* predicate */ js.ThisFunction3[
-          /* this */ Unit, 
+        /* predicate */ js.Function3[
           /* value */ String, 
           /* index */ Double, 
           /* obj */ js.Array[String], 

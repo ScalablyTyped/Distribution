@@ -187,6 +187,10 @@ object semanticUiReactStrings {
   inline def UNMOUNTED: UNMOUNTED = "UNMOUNTED".asInstanceOf[UNMOUNTED]
   
   @js.native
+  sealed trait _empty extends StObject
+  inline def _empty: _empty = "".asInstanceOf[_empty]
+  
+  @js.native
   sealed trait above extends StObject
   inline def above: above = "above".asInstanceOf[above]
   
@@ -571,6 +575,10 @@ object semanticUiReactStrings {
     extends StObject
        with SemanticICONS
   inline def announcement: announcement = "announcement".asInstanceOf[announcement]
+  
+  @js.native
+  sealed trait anonymous extends StObject
+  inline def anonymous: anonymous = "anonymous".asInstanceOf[anonymous]
   
   @js.native
   sealed trait antigua
@@ -10867,6 +10875,10 @@ object semanticUiReactStrings {
     extends StObject
        with SemanticICONS
   inline def usd: usd = "usd".asInstanceOf[usd]
+  
+  @js.native
+  sealed trait `use-credentials` extends StObject
+  inline def `use-credentials`: `use-credentials` = "use-credentials".asInstanceOf[`use-credentials`]
   
   @js.native
   sealed trait user

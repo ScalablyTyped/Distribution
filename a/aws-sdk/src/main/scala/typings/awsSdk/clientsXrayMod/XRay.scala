@@ -71,6 +71,20 @@ trait XRay
   ): Request[DeleteGroupResult, AWSError] = js.native
   
   /**
+    * Deletes a resource policy from the target Amazon Web Services account.
+    */
+  def deleteResourcePolicy(): Request[DeleteResourcePolicyResult, AWSError] = js.native
+  def deleteResourcePolicy(callback: js.Function2[/* err */ AWSError, /* data */ DeleteResourcePolicyResult, Unit]): Request[DeleteResourcePolicyResult, AWSError] = js.native
+  /**
+    * Deletes a resource policy from the target Amazon Web Services account.
+    */
+  def deleteResourcePolicy(params: DeleteResourcePolicyRequest): Request[DeleteResourcePolicyResult, AWSError] = js.native
+  def deleteResourcePolicy(
+    params: DeleteResourcePolicyRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteResourcePolicyResult, Unit]
+  ): Request[DeleteResourcePolicyResult, AWSError] = js.native
+  
+  /**
     * Deletes a sampling rule.
     */
   def deleteSamplingRule(): Request[DeleteSamplingRuleResult, AWSError] = js.native
@@ -281,6 +295,20 @@ trait XRay
   ): Request[GetTraceSummariesResult, AWSError] = js.native
   
   /**
+    * Returns the list of resource policies in the target Amazon Web Services account.
+    */
+  def listResourcePolicies(): Request[ListResourcePoliciesResult, AWSError] = js.native
+  def listResourcePolicies(callback: js.Function2[/* err */ AWSError, /* data */ ListResourcePoliciesResult, Unit]): Request[ListResourcePoliciesResult, AWSError] = js.native
+  /**
+    * Returns the list of resource policies in the target Amazon Web Services account.
+    */
+  def listResourcePolicies(params: ListResourcePoliciesRequest): Request[ListResourcePoliciesResult, AWSError] = js.native
+  def listResourcePolicies(
+    params: ListResourcePoliciesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListResourcePoliciesResult, Unit]
+  ): Request[ListResourcePoliciesResult, AWSError] = js.native
+  
+  /**
     * Returns a list of tags that are applied to the specified Amazon Web Services X-Ray group or sampling rule.
     */
   def listTagsForResource(): Request[ListTagsForResourceResponse, AWSError] = js.native
@@ -307,6 +335,20 @@ trait XRay
     params: PutEncryptionConfigRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ PutEncryptionConfigResult, Unit]
   ): Request[PutEncryptionConfigResult, AWSError] = js.native
+  
+  /**
+    *  Sets the resource policy to grant one or more Amazon Web Services services and accounts permissions to access X-Ray. Each resource policy will be associated with a specific Amazon Web Services account. Each Amazon Web Services account can have a maximum of 5 resource policies, and each policy name must be unique within that account. The maximum size of each resource policy is 5KB. 
+    */
+  def putResourcePolicy(): Request[PutResourcePolicyResult, AWSError] = js.native
+  def putResourcePolicy(callback: js.Function2[/* err */ AWSError, /* data */ PutResourcePolicyResult, Unit]): Request[PutResourcePolicyResult, AWSError] = js.native
+  /**
+    *  Sets the resource policy to grant one or more Amazon Web Services services and accounts permissions to access X-Ray. Each resource policy will be associated with a specific Amazon Web Services account. Each Amazon Web Services account can have a maximum of 5 resource policies, and each policy name must be unique within that account. The maximum size of each resource policy is 5KB. 
+    */
+  def putResourcePolicy(params: PutResourcePolicyRequest): Request[PutResourcePolicyResult, AWSError] = js.native
+  def putResourcePolicy(
+    params: PutResourcePolicyRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ PutResourcePolicyResult, Unit]
+  ): Request[PutResourcePolicyResult, AWSError] = js.native
   
   /**
     * Used by the Amazon Web Services X-Ray daemon to upload telemetry.

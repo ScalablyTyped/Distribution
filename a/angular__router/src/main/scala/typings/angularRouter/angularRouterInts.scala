@@ -2,6 +2,7 @@ package typings.angularRouter
 
 import typings.angularRouter.mod.EventType
 import typings.angularRouter.mod.NavigationCancellationCode
+import typings.angularRouter.mod.NavigationSkippedCode
 import typings.angularRouter.mod.RouterFeatureKind
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,6 +15,7 @@ object angularRouterInts {
     extends StObject
        with EventType
        with NavigationCancellationCode
+       with NavigationSkippedCode
        with RouterFeatureKind
   inline def `0`: `0` = 0.asInstanceOf[`0`]
   
@@ -22,6 +24,7 @@ object angularRouterInts {
     extends StObject
        with EventType
        with NavigationCancellationCode
+       with NavigationSkippedCode
        with RouterFeatureKind
   inline def `1`: `1` = 1.asInstanceOf[`1`]
   
@@ -62,6 +65,12 @@ object angularRouterInts {
   inline def `15`: `15` = 15.asInstanceOf[`15`]
   
   @js.native
+  sealed trait `16`
+    extends StObject
+       with EventType
+  inline def `16`: `16` = 16.asInstanceOf[`16`]
+  
+  @js.native
   sealed trait `2`
     extends StObject
        with EventType
@@ -95,18 +104,21 @@ object angularRouterInts {
   sealed trait `6`
     extends StObject
        with EventType
+       with RouterFeatureKind
   inline def `6`: `6` = 6.asInstanceOf[`6`]
   
   @js.native
   sealed trait `7`
     extends StObject
        with EventType
+       with RouterFeatureKind
   inline def `7`: `7` = 7.asInstanceOf[`7`]
   
   @js.native
   sealed trait `8`
     extends StObject
        with EventType
+       with RouterFeatureKind
   inline def `8`: `8` = 8.asInstanceOf[`8`]
   
   @js.native

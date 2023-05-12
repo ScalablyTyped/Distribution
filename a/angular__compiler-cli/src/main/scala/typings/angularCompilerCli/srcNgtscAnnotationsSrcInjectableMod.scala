@@ -4,15 +4,18 @@ import typings.angularCompiler.mod.R3ClassMetadata
 import typings.angularCompiler.mod.R3DependencyMetadata
 import typings.angularCompiler.mod.R3InjectableMetadata
 import typings.angularCompilerCli.angularCompilerCliStrings.invalid
+import typings.angularCompilerCli.anon.ClassDeclarationDeclarati
+import typings.angularCompilerCli.anon.ReadonlyDecorator
 import typings.angularCompilerCli.anon.ReadonlyInjectableHandler
-import typings.angularCompilerCli.srcNgtscMetadataMod.InjectableClassRegistry
+import typings.angularCompilerCli.srcNgtscAnnotationsCommonMod.InjectableClassRegistry
+import typings.angularCompilerCli.srcNgtscPartialEvaluatorMod.PartialEvaluator
 import typings.angularCompilerCli.srcNgtscPerfSrcApiMod.PerfRecorder
-import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.ClassDeclaration
-import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.DeclarationNode
 import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.Decorator
 import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.ReflectionHost
+import typings.angularCompilerCli.srcNgtscTransformSrcApiMod.AnalysisOutput
 import typings.angularCompilerCli.srcNgtscTransformSrcApiMod.CompileResult
 import typings.angularCompilerCli.srcNgtscTransformSrcApiMod.DecoratorHandler
+import typings.angularCompilerCli.srcNgtscTransformSrcApiMod.ResolveResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,6 +29,7 @@ object srcNgtscAnnotationsSrcInjectableMod {
        with DecoratorHandler[Decorator, InjectableHandlerData, Null, Any] {
     def this(
       reflector: ReflectionHost,
+      evaluator: PartialEvaluator,
       isCore: Boolean,
       strictCtorDeps: Boolean,
       injectableRegistry: InjectableClassRegistry,
@@ -33,6 +37,7 @@ object srcNgtscAnnotationsSrcInjectableMod {
     ) = this()
     def this(
       reflector: ReflectionHost,
+      evaluator: PartialEvaluator,
       isCore: Boolean,
       strictCtorDeps: Boolean,
       injectableRegistry: InjectableClassRegistry,
@@ -46,12 +51,14 @@ object srcNgtscAnnotationsSrcInjectableMod {
     errorOnDuplicateProv: Boolean
     ) = this()
     
+    def analyze(node: ClassDeclarationDeclarati, decorator: ReadonlyDecorator): AnalysisOutput[InjectableHandlerData] = js.native
+    
     /* private */ var compile: Any = js.native
     
-    def compileFull(node: ClassDeclaration[DeclarationNode], analysis: ReadonlyInjectableHandler): js.Array[CompileResult] = js.native
+    def compileFull(node: ClassDeclarationDeclarati, analysis: ReadonlyInjectableHandler): js.Array[CompileResult] = js.native
     
     @JSName("compilePartial")
-    def compilePartial_MInjectableDecoratorHandler(node: ClassDeclaration[DeclarationNode], analysis: ReadonlyInjectableHandler): js.Array[CompileResult] = js.native
+    def compilePartial_MInjectableDecoratorHandler(node: ClassDeclarationDeclarati, analysis: ReadonlyInjectableHandler): js.Array[CompileResult] = js.native
     
     /**
       * What to do if the injectable already contains a ɵprov property.
@@ -60,6 +67,8 @@ object srcNgtscAnnotationsSrcInjectableMod {
       * If false then there is no error and a new ɵprov property is not added.
       */
     /* private */ var errorOnDuplicateProv: Any = js.native
+    
+    /* private */ var evaluator: Any = js.native
     
     /* private */ var injectableRegistry: Any = js.native
     
@@ -73,7 +82,10 @@ object srcNgtscAnnotationsSrcInjectableMod {
     /* private */ var reflector: Any = js.native
     
     @JSName("register")
-    def register_MInjectableDecoratorHandler(node: ClassDeclaration[DeclarationNode]): Unit = js.native
+    def register_MInjectableDecoratorHandler(node: ClassDeclarationDeclarati, analysis: InjectableHandlerData): Unit = js.native
+    
+    @JSName("resolve")
+    def resolve_MInjectableDecoratorHandler(node: ClassDeclarationDeclarati, analysis: ReadonlyInjectableHandler, symbol: Null): ResolveResult[Any] = js.native
     
     /* private */ var strictCtorDeps: Any = js.native
     

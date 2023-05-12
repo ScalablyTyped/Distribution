@@ -1,7 +1,7 @@
 
 # Scala.js typings for fastq
 
-Typings are for version 1.13.0
+Typings are for version 1.15.0
 
 ## Library description:
 Fast, in memory work queue

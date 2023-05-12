@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object formatXlinkMod {
   
-  @JSImport("ol/format/XLink", JSImport.Namespace)
+  @JSImport("ol/format/xlink", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   

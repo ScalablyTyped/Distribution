@@ -15,7 +15,7 @@ object distWindowSizeWindowSizeMod {
     def this(props: WindowSizeConfig & SharedRenderProps[WindowSizeProps]) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: WindowSizeConfig & SharedRenderProps[WindowSizeProps], context: Any) = this()
     

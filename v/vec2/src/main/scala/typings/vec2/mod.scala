@@ -13,8 +13,25 @@ object mod {
     extends StObject
        with Vec2 {
     def this(xy: js.Array[Double]) = this()
+    def this(xy: X) = this()
     def this(x: Double, y: Double) = this()
   }
+  @JSImport("vec2", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  inline def clean(`val`: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("clean")(`val`.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  /* static member */
+  inline def fromArray(xy: js.Array[Double]): Vec2 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromArray")(xy.asInstanceOf[js.Any]).asInstanceOf[Vec2]
+  
+  // Floating point stability
+  /* static member */
+  @JSImport("vec2", "precision")
+  @js.native
+  def precision: Double = js.native
+  inline def precision_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("precision")(x.asInstanceOf[js.Any])
   
   @js.native
   trait Vec2 extends StObject {
@@ -78,7 +95,7 @@ object mod {
     /**
       * _returns_: `double`
       */
-    def dot(): Double = js.native
+    def dot(vec: Vec2): Double = js.native
     
     def equal(arrayVec2: js.Array[Double]): Boolean = js.native
     def equal(arrayVec2: Vec2): Boolean = js.native
@@ -169,7 +186,7 @@ object mod {
     /**
       * _returns_: `double`
       */
-    def perpDot(): Double = js.native
+    def perpDot(vec: Vec2): Double = js.native
     
     /**
       * Rotate this vector's cordinates around `(0,0)`.  If `returnNew` is specified, a new `Vec2` will be created and populated with the result and returned.
@@ -185,6 +202,7 @@ object mod {
     /**
       * Sets the `x` and `y` coordinates of this vector.  If `false` is passed for `notify`, none of the observers will be called.
       */
+    def set(x: Double, y: Double): Vec2 = js.native
     def set(x: Double, y: Double, notify: Boolean): Vec2 = js.native
     
     /**

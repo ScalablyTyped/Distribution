@@ -50,18 +50,19 @@ object Resolver {
     * Find a solution for pair positions.
     * @method solvePosition
     * @param {pair[]} pairs
-    * @param {body[]} bodies
-    * @param {number} timeScale
+    * @param {number} delta
+    * @param {number} [damping=1]
     */
   /* static member */
-  inline def solvePosition(pairs: js.Array[IPair], bodies: js.Array[BodyType], timeScale: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("solvePosition")(pairs.asInstanceOf[js.Any], bodies.asInstanceOf[js.Any], timeScale.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def solvePosition(pairs: js.Array[IPair], delta: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("solvePosition")(pairs.asInstanceOf[js.Any], delta.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def solvePosition(pairs: js.Array[IPair], delta: Double, damping: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("solvePosition")(pairs.asInstanceOf[js.Any], delta.asInstanceOf[js.Any], damping.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Find a solution for pair velocities.
     * @method solveVelocity
     * @param {pair[]} pairs
-    * @param {number} timeScale
+    * @param {number} delta
     */
   /* static member */
-  inline def solveVelocity(pairs: js.Array[IPair], timeScale: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("solveVelocity")(pairs.asInstanceOf[js.Any], timeScale.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def solveVelocity(pairs: js.Array[IPair], delta: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("solveVelocity")(pairs.asInstanceOf[js.Any], delta.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

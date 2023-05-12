@@ -57,6 +57,12 @@ open class DynamicImageViewer protected () extends EntityWidget {
   def height_=(newValue: Double): Unit = js.native
   
   /**
+    * In version 9.24.0: introduced
+    */
+  def nativeAccessibilitySettings: AccessibilitySettings | Null = js.native
+  def nativeAccessibilitySettings_=(newValue: AccessibilitySettings | Null): Unit = js.native
+  
+  /**
     * In version 7.18.0: deleted
     */
   def onClickBehavior: OnClickBehavior = js.native

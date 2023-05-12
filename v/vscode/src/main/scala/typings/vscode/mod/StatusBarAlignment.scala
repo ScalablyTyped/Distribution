@@ -14,8 +14,8 @@ object StatusBarAlignment extends StObject {
   def apply(value: Double): js.UndefOr[StatusBarAlignment & Double] = js.native
   
   /**
-    * Aligned to the left side.
-    */
+  		 * Aligned to the left side.
+  		 */
   @js.native
   sealed trait Left
     extends StObject
@@ -23,8 +23,8 @@ object StatusBarAlignment extends StObject {
   /* 1 */ val Left: typings.vscode.mod.StatusBarAlignment.Left & Double = js.native
   
   /**
-    * Aligned to the right side.
-    */
+  		 * Aligned to the right side.
+  		 */
   @js.native
   sealed trait Right
     extends StObject

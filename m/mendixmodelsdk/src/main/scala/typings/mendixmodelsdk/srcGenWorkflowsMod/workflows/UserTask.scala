@@ -124,6 +124,12 @@ open class UserTask protected () extends WorkflowActivity {
   def userSource_=(newValue: UserSource): Unit = js.native
   
   /**
+    * In version 9.22.0: introduced
+    */
+  def userTaskCompletion: UserTaskCompletion = js.native
+  def userTaskCompletion_=(newValue: UserTaskCompletion): Unit = js.native
+  
+  /**
     * In version 9.10.0: deleted
     * In version 9.6.0: introduced
     */

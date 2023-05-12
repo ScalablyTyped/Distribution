@@ -1,5 +1,6 @@
 package typings.fabric.mod.fabric
 
+import typings.fabric.anon.Objects
 import typings.fabric.fabricImplMod.ICanvasOptions
 import typings.fabric.fabricStrings.getImageData
 import typings.fabric.fabricStrings.setLineDash
@@ -48,6 +49,6 @@ object Canvas {
     * Returns JSON representation of canvas
     * @param [propertiesToInclude] Any properties that you might want to additionally include in the output
     */
-  inline def toJSON(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toJSON")().asInstanceOf[String]
-  inline def toJSON(propertiesToInclude: js.Array[String]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toJSON")(propertiesToInclude.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def toJSON(): Objects = ^.asInstanceOf[js.Dynamic].applyDynamic("toJSON")().asInstanceOf[Objects]
+  inline def toJSON(propertiesToInclude: js.Array[String]): Objects = ^.asInstanceOf[js.Dynamic].applyDynamic("toJSON")(propertiesToInclude.asInstanceOf[js.Any]).asInstanceOf[Objects]
 }

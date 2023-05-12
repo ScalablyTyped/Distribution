@@ -5,7 +5,6 @@ import typings.angularCompilerCli.srcNgtscCoreApiSrcPublicOptionsMod.DiagnosticO
 import typings.angularCompilerCli.srcNgtscCoreApiSrcPublicOptionsMod.I18nOptions
 import typings.angularCompilerCli.srcNgtscCoreApiSrcPublicOptionsMod.LegacyNgcOptions
 import typings.angularCompilerCli.srcNgtscCoreApiSrcPublicOptionsMod.MiscOptions
-import typings.angularCompilerCli.srcNgtscCoreApiSrcPublicOptionsMod.NgcCompatibilityOptions
 import typings.angularCompilerCli.srcNgtscCoreApiSrcPublicOptionsMod.StrictTemplateOptions
 import typings.angularCompilerCli.srcNgtscCoreApiSrcPublicOptionsMod.TargetOptions
 import typings.typescript.mod.CompilerOptions
@@ -23,7 +22,6 @@ object srcNgtscCoreApiSrcOptionsMod {
        with LegacyNgcOptions
        with BazelAndG3Options
        with DiagnosticOptions
-       with NgcCompatibilityOptions
        with StrictTemplateOptions
        with TestOnlyOptions
        with I18nOptions

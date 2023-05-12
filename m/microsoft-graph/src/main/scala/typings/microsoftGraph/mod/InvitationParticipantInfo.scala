@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait InvitationParticipantInfo extends StObject {
   
+  // Optional. Whether to hide the participant from the roster.
   var hidden: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // The identitySet associated with this invitation.
@@ -14,6 +15,7 @@ trait InvitationParticipantInfo extends StObject {
   // Optional. The ID of the target participant.
   var participantId: js.UndefOr[NullableOption[String]] = js.undefined
   
+  // Optional. Whether to remove them from the main mixer.
   var removeFromDefaultAudioRoutingGroup: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   /**

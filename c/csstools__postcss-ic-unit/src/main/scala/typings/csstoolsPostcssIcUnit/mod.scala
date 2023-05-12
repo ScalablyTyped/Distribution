@@ -19,8 +19,10 @@ object mod extends Shortcut {
   
   trait pluginOptions extends StObject {
     
+    /** Enable "@csstools/postcss-progressive-custom-properties". default: true */
     var enableProgressiveCustomProperties: js.UndefOr[Boolean] = js.undefined
     
+    /** Preserve the original notation. default: false */
     var preserve: js.UndefOr[Boolean] = js.undefined
   }
   object pluginOptions {

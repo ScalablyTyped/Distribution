@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /* note: abstract class */ @JSImport("twilio/lib/jwt/AccessToken", "Grant")
 @js.native
-open class Grant[TOptions, TPayload, TKey] () extends StObject {
-  def this(opts: TOptions) = this()
+open class Grant[TOptions, TPayload, TKey] protected () extends StObject {
+  /* protected */ def this(key: TKey) = this()
   
   var key: TKey = js.native
   

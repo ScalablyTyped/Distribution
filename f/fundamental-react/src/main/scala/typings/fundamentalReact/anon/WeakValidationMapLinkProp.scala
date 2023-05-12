@@ -215,6 +215,10 @@ trait WeakValidationMapLinkProp extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : undefined extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : react.react.Validator<string | undefined> */ js.Any
   ] = js.undefined
   
+  var autoFocus: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: null extends boolean | undefined ? react.react.Validator<boolean | undefined | null | undefined> : undefined extends boolean | undefined ? react.react.Validator<boolean | undefined | null | undefined> : react.react.Validator<boolean | undefined> */ js.Any
+  ] = js.undefined
+  
   var autoSave: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : undefined extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : react.react.Validator<string | undefined> */ js.Any
   ] = js.undefined
@@ -228,6 +232,10 @@ trait WeakValidationMapLinkProp extends StObject {
   ] = js.undefined
   
   var color: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : undefined extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : react.react.Validator<string | undefined> */ js.Any
+  ] = js.undefined
+  
+  var content: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : undefined extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : react.react.Validator<string | undefined> */ js.Any
   ] = js.undefined
   
@@ -267,6 +275,10 @@ trait WeakValidationMapLinkProp extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: null extends boolean | undefined ? react.react.Validator<boolean | undefined | null | undefined> : undefined extends boolean | undefined ? react.react.Validator<boolean | undefined | null | undefined> : react.react.Validator<boolean | undefined> */ js.Any
   ] = js.undefined
   
+  var download: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: null extends any | undefined ? react.react.Validator<any | undefined | null | undefined> : undefined extends any | undefined ? react.react.Validator<any | undefined | null | undefined> : react.react.Validator<any | undefined> */ js.Any
+  ] = js.undefined
+  
   var draggable: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: null extends react.react.Booleanish | undefined ? react.react.Validator<react.react.Booleanish | undefined | null | undefined> : undefined extends react.react.Booleanish | undefined ? react.react.Validator<react.react.Booleanish | undefined | null | undefined> : react.react.Validator<react.react.Booleanish | undefined> */ js.Any
   ] = js.undefined
@@ -276,6 +288,10 @@ trait WeakValidationMapLinkProp extends StObject {
   ] = js.undefined
   
   var href: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : undefined extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : react.react.Validator<string | undefined> */ js.Any
+  ] = js.undefined
+  
+  var hrefLang: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : undefined extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : react.react.Validator<string | undefined> */ js.Any
   ] = js.undefined
   
@@ -316,6 +332,10 @@ trait WeakValidationMapLinkProp extends StObject {
   ] = js.undefined
   
   var lang: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : undefined extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : react.react.Validator<string | undefined> */ js.Any
+  ] = js.undefined
+  
+  var media: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : undefined extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : react.react.Validator<string | undefined> */ js.Any
   ] = js.undefined
   
@@ -643,6 +663,10 @@ trait WeakValidationMapLinkProp extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: null extends react.react.WheelEventHandler<std.HTMLAnchorElement> | undefined ? react.react.Validator<react.react.WheelEventHandler<std.HTMLAnchorElement> | undefined | null | undefined> : undefined extends react.react.WheelEventHandler<std.HTMLAnchorElement> | undefined ? react.react.Validator<react.react.WheelEventHandler<std.HTMLAnchorElement> | undefined | null | undefined> : react.react.Validator<react.react.WheelEventHandler<std.HTMLAnchorElement> | undefined> */ js.Any
   ] = js.undefined
   
+  var ping: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : undefined extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : react.react.Validator<string | undefined> */ js.Any
+  ] = js.undefined
+  
   var placeholder: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : undefined extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : react.react.Validator<string | undefined> */ js.Any
   ] = js.undefined
@@ -663,12 +687,24 @@ trait WeakValidationMapLinkProp extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: null extends react.react.Ref<std.HTMLAnchorElement> | undefined ? react.react.Validator<react.react.Ref<std.HTMLAnchorElement> | undefined | null | undefined> : undefined extends react.react.Ref<std.HTMLAnchorElement> | undefined ? react.react.Validator<react.react.Ref<std.HTMLAnchorElement> | undefined | null | undefined> : react.react.Validator<react.react.Ref<std.HTMLAnchorElement> | undefined> */ js.Any
   ] = js.undefined
   
+  var referrerPolicy: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: null extends react.react.HTMLAttributeReferrerPolicy | undefined ? react.react.Validator<react.react.HTMLAttributeReferrerPolicy | undefined | null | undefined> : undefined extends react.react.HTMLAttributeReferrerPolicy | undefined ? react.react.Validator<react.react.HTMLAttributeReferrerPolicy | undefined | null | undefined> : react.react.Validator<react.react.HTMLAttributeReferrerPolicy | undefined> */ js.Any
+  ] = js.undefined
+  
+  var rel: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : undefined extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : react.react.Validator<string | undefined> */ js.Any
+  ] = js.undefined
+  
   var resource: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : undefined extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : react.react.Validator<string | undefined> */ js.Any
   ] = js.undefined
   
   var results: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: null extends number | undefined ? react.react.Validator<number | undefined | null | undefined> : undefined extends number | undefined ? react.react.Validator<number | undefined | null | undefined> : react.react.Validator<number | undefined> */ js.Any
+  ] = js.undefined
+  
+  var rev: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : undefined extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : react.react.Validator<string | undefined> */ js.Any
   ] = js.undefined
   
   var role: js.UndefOr[
@@ -703,12 +739,20 @@ trait WeakValidationMapLinkProp extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: null extends number | undefined ? react.react.Validator<number | undefined | null | undefined> : undefined extends number | undefined ? react.react.Validator<number | undefined | null | undefined> : react.react.Validator<number | undefined> */ js.Any
   ] = js.undefined
   
+  var target: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: null extends react.react.HTMLAttributeAnchorTarget | undefined ? react.react.Validator<react.react.HTMLAttributeAnchorTarget | undefined | null | undefined> : undefined extends react.react.HTMLAttributeAnchorTarget | undefined ? react.react.Validator<react.react.HTMLAttributeAnchorTarget | undefined | null | undefined> : react.react.Validator<react.react.HTMLAttributeAnchorTarget | undefined> */ js.Any
+  ] = js.undefined
+  
   var title: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : undefined extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : react.react.Validator<string | undefined> */ js.Any
   ] = js.undefined
   
   var translate: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: null extends 'yes' | 'no' | undefined ? react.react.Validator<'yes' | 'no' | undefined | null | undefined> : undefined extends 'yes' | 'no' | undefined ? react.react.Validator<'yes' | 'no' | undefined | null | undefined> : react.react.Validator<'yes' | 'no' | undefined> */ js.Any
+  ] = js.undefined
+  
+  var `type`: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : undefined extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : react.react.Validator<string | undefined> */ js.Any
   ] = js.undefined
   
   var typeof: js.UndefOr[
@@ -1045,6 +1089,12 @@ object WeakValidationMapLinkProp {
     
     inline def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
     
+    inline def setAutoFocus(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: null extends boolean | undefined ? react.react.Validator<boolean | undefined | null | undefined> : undefined extends boolean | undefined ? react.react.Validator<boolean | undefined | null | undefined> : react.react.Validator<boolean | undefined> */ js.Any
+    ): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+    
+    inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+    
     inline def setAutoSave(
       value: /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : undefined extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : react.react.Validator<string | undefined> */ js.Any
     ): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
@@ -1069,11 +1119,17 @@ object WeakValidationMapLinkProp {
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
+    inline def setContent(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : undefined extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : react.react.Validator<string | undefined> */ js.Any
+    ): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    
     inline def setContentEditable(
       value: /* import warning: importer.ImportType#apply Failed type conversion: null extends react.react.Booleanish | 'inherit' | undefined ? react.react.Validator<react.react.Booleanish | 'inherit' | undefined | null | undefined> : undefined extends react.react.Booleanish | 'inherit' | undefined ? react.react.Validator<react.react.Booleanish | 'inherit' | undefined | null | undefined> : react.react.Validator<react.react.Booleanish | 'inherit' | undefined> */ js.Any
     ): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
     
     inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+    
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
     inline def setContextMenu(
       value: /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : undefined extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : react.react.Validator<string | undefined> */ js.Any
@@ -1123,6 +1179,12 @@ object WeakValidationMapLinkProp {
     
     inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
+    inline def setDownload(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: null extends any | undefined ? react.react.Validator<any | undefined | null | undefined> : undefined extends any | undefined ? react.react.Validator<any | undefined | null | undefined> : react.react.Validator<any | undefined> */ js.Any
+    ): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
+    
+    inline def setDownloadUndefined: Self = StObject.set(x, "download", js.undefined)
+    
     inline def setDraggable(
       value: /* import warning: importer.ImportType#apply Failed type conversion: null extends react.react.Booleanish | undefined ? react.react.Validator<react.react.Booleanish | undefined | null | undefined> : undefined extends react.react.Booleanish | undefined ? react.react.Validator<react.react.Booleanish | undefined | null | undefined> : react.react.Validator<react.react.Booleanish | undefined> */ js.Any
     ): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
@@ -1138,6 +1200,12 @@ object WeakValidationMapLinkProp {
     inline def setHref(
       value: /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : undefined extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : react.react.Validator<string | undefined> */ js.Any
     ): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+    
+    inline def setHrefLang(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : undefined extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : react.react.Validator<string | undefined> */ js.Any
+    ): Self = StObject.set(x, "hrefLang", value.asInstanceOf[js.Any])
+    
+    inline def setHrefLangUndefined: Self = StObject.set(x, "hrefLang", js.undefined)
     
     inline def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
     
@@ -1200,6 +1268,12 @@ object WeakValidationMapLinkProp {
     ): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
     
     inline def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
+    
+    inline def setMedia(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : undefined extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : react.react.Validator<string | undefined> */ js.Any
+    ): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
+    
+    inline def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
     
     inline def setNonce(
       value: /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : undefined extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : react.react.Validator<string | undefined> */ js.Any
@@ -1687,6 +1761,12 @@ object WeakValidationMapLinkProp {
     
     inline def setOnWheelUndefined: Self = StObject.set(x, "onWheel", js.undefined)
     
+    inline def setPing(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : undefined extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : react.react.Validator<string | undefined> */ js.Any
+    ): Self = StObject.set(x, "ping", value.asInstanceOf[js.Any])
+    
+    inline def setPingUndefined: Self = StObject.set(x, "ping", js.undefined)
+    
     inline def setPlaceholder(
       value: /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : undefined extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : react.react.Validator<string | undefined> */ js.Any
     ): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
@@ -1717,6 +1797,18 @@ object WeakValidationMapLinkProp {
     
     inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
     
+    inline def setReferrerPolicy(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: null extends react.react.HTMLAttributeReferrerPolicy | undefined ? react.react.Validator<react.react.HTMLAttributeReferrerPolicy | undefined | null | undefined> : undefined extends react.react.HTMLAttributeReferrerPolicy | undefined ? react.react.Validator<react.react.HTMLAttributeReferrerPolicy | undefined | null | undefined> : react.react.Validator<react.react.HTMLAttributeReferrerPolicy | undefined> */ js.Any
+    ): Self = StObject.set(x, "referrerPolicy", value.asInstanceOf[js.Any])
+    
+    inline def setReferrerPolicyUndefined: Self = StObject.set(x, "referrerPolicy", js.undefined)
+    
+    inline def setRel(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : undefined extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : react.react.Validator<string | undefined> */ js.Any
+    ): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+    
+    inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+    
     inline def setResource(
       value: /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : undefined extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : react.react.Validator<string | undefined> */ js.Any
     ): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
@@ -1728,6 +1820,12 @@ object WeakValidationMapLinkProp {
     ): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
     inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+    
+    inline def setRev(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : undefined extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : react.react.Validator<string | undefined> */ js.Any
+    ): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+    
+    inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
     
     inline def setRole(
       value: /* import warning: importer.ImportType#apply Failed type conversion: null extends react.react.AriaRole | undefined ? react.react.Validator<react.react.AriaRole | undefined | null | undefined> : undefined extends react.react.AriaRole | undefined ? react.react.Validator<react.react.AriaRole | undefined | null | undefined> : react.react.Validator<react.react.AriaRole | undefined> */ js.Any
@@ -1777,6 +1875,12 @@ object WeakValidationMapLinkProp {
     
     inline def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
     
+    inline def setTarget(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: null extends react.react.HTMLAttributeAnchorTarget | undefined ? react.react.Validator<react.react.HTMLAttributeAnchorTarget | undefined | null | undefined> : undefined extends react.react.HTMLAttributeAnchorTarget | undefined ? react.react.Validator<react.react.HTMLAttributeAnchorTarget | undefined | null | undefined> : react.react.Validator<react.react.HTMLAttributeAnchorTarget | undefined> */ js.Any
+    ): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    
     inline def setTitle(
       value: /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : undefined extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : react.react.Validator<string | undefined> */ js.Any
     ): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
@@ -1788,6 +1892,12 @@ object WeakValidationMapLinkProp {
     ): Self = StObject.set(x, "translate", value.asInstanceOf[js.Any])
     
     inline def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
+    
+    inline def setType(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : undefined extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : react.react.Validator<string | undefined> */ js.Any
+    ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     inline def setTypeof(
       value: /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : undefined extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : react.react.Validator<string | undefined> */ js.Any

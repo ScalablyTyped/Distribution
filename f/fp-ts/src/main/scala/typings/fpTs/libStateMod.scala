@@ -100,7 +100,7 @@ object libStateMod {
     ]
   ]]
   
-  inline def chain[E, A, B](f: js.Function1[/* a */ A, State_[E, B]]): js.Function1[/* ma */ State_[E, A], State_[E, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("chain")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ State_[E, A], State_[E, B]]]
+  inline def chain[S, A, B](f: js.Function1[/* a */ A, State_[S, B]]): js.Function1[/* ma */ State_[S, A], State_[S, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("chain")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ State_[S, A], State_[S, B]]]
   
   inline def chainFirst[S, A, B](f: js.Function1[/* a */ A, State_[S, B]]): js.Function1[/* ma */ State_[S, A], State_[S, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainFirst")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ State_[S, A], State_[S, A]]]
   
@@ -113,6 +113,9 @@ object libStateMod {
   inline def execute[S](s: S): js.Function1[/* ma */ State_[S, Any], S] = ^.asInstanceOf[js.Dynamic].applyDynamic("execute")(s.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ State_[S, Any], S]]
   
   inline def flap[A](a: A): js.Function1[/* fab */ State_[Any, js.Function1[/* a */ A, Any]], State_[Any, Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("flap")(a.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fab */ State_[Any, js.Function1[/* a */ A, Any]], State_[Any, Any]]]
+  
+  inline def flatMap[A, S, B](f: js.Function1[/* a */ A, State_[S, B]]): js.Function1[/* ma */ State_[S, A], State_[S, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatMap")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ State_[S, A], State_[S, B]]]
+  inline def flatMap[S, A, B](ma: State_[S, A], f: js.Function1[/* a */ A, State_[S, B]]): State_[S, B] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatMap")(ma.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[State_[S, B]]
   
   inline def flatten[E, A](mma: State_[E, State_[E, A]]): State_[E, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(mma.asInstanceOf[js.Any]).asInstanceOf[State_[E, A]]
   
@@ -147,6 +150,9 @@ object libStateMod {
   @JSImport("fp-ts/lib/State", "state")
   @js.native
   val state: Monad2[typings.fpTs.libStateMod.URI] = js.native
+  
+  inline def tap[A, S, _underscore](f: js.Function1[/* a */ A, State_[S, _underscore]]): js.Function1[/* self */ State_[S, A], State_[S, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("tap")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* self */ State_[S, A], State_[S, A]]]
+  inline def tap[S, A, _underscore](self: State_[S, A], f: js.Function1[/* a */ A, State_[S, _underscore]]): State_[S, A] = (^.asInstanceOf[js.Dynamic].applyDynamic("tap")(self.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[State_[S, A]]
   
   inline def traverseArray[A, S, B](f: js.Function1[/* a */ A, State_[S, B]]): js.Function1[/* as */ js.Array[A], State_[S, js.Array[B]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("traverseArray")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* as */ js.Array[A], State_[S, js.Array[B]]]]
   

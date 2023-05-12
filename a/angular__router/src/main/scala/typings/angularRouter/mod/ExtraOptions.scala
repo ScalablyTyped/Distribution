@@ -1,7 +1,5 @@
 package typings.angularRouter.mod
 
-import typings.angularRouter.angularRouterStrings.corrected
-import typings.angularRouter.angularRouterStrings.legacy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,6 +8,12 @@ trait ExtraOptions
   extends StObject
      with InMemoryScrollingOptions
      with RouterConfigOptions {
+  
+  /**
+    * When true, enables binding information from the `Router` state directly to the inputs of the
+    * component in `Route` configurations.
+    */
+  var bindToComponentInputs: js.UndefOr[Boolean] = js.undefined
   
   /**
     * When true, log all internal navigation events to the console.
@@ -22,8 +26,9 @@ trait ExtraOptions
     * If the handler returns a value, the navigation Promise is resolved with this value.
     * If the handler throws an exception, the navigation Promise is rejected with the exception.
     *
+    * @deprecated Subscribe to the `Router` events and watch for `NavigationError` instead.
     */
-  var errorHandler: js.UndefOr[ErrorHandler] = js.undefined
+  var errorHandler: js.UndefOr[js.Function1[/* error */ Any, Any]] = js.undefined
   
   /**
     * One of `enabled`, `enabledBlocking`, `enabledNonBlocking` or `disabled`.
@@ -47,6 +52,8 @@ trait ExtraOptions
     * - `'URIError'` - Error thrown when parsing a bad URL.
     * - `'UrlSerializer'` - UrlSerializer that’s configured with the router.
     * - `'url'` -  The malformed URL that caused the URIError
+    *
+    * @deprecated URI parsing errors should be handled in the `UrlSerializer` instead.
     * */
   var malformedUriErrorHandler: js.UndefOr[
     js.Function3[/* error */ js.URIError, /* urlSerializer */ UrlSerializer, /* url */ String, UrlTree]
@@ -57,42 +64,6 @@ trait ExtraOptions
     * One of `PreloadAllModules` or `NoPreloading` (the default).
     */
   var preloadingStrategy: js.UndefOr[Any] = js.undefined
-  
-  /**
-    * Enables a bug fix that corrects relative link resolution in components with empty paths.
-    * Example:
-    *
-    * ```
-    * const routes = [
-    *   {
-    *     path: '',
-    *     component: ContainerComponent,
-    *     children: [
-    *       { path: 'a', component: AComponent },
-    *       { path: 'b', component: BComponent },
-    *     ]
-    *   }
-    * ];
-    * ```
-    *
-    * From the `ContainerComponent`, you should be able to navigate to `AComponent` using
-    * the following `routerLink`, but it will not work if `relativeLinkResolution` is set
-    * to `'legacy'`:
-    *
-    * `<a [routerLink]="['./a']">Link to A</a>`
-    *
-    * However, this will work:
-    *
-    * `<a [routerLink]="['../a']">Link to A</a>`
-    *
-    * In other words, you're required to use `../` rather than `./` when the relative link
-    * resolution is set to `'legacy'`.
-    *
-    * The default in v11 is `corrected`.
-    *
-    * @deprecated
-    */
-  var relativeLinkResolution: js.UndefOr[legacy | corrected] = js.undefined
   
   /**
     * Configures the scroll offset the router will use when scrolling to an element.
@@ -120,6 +91,10 @@ object ExtraOptions {
   @scala.inline
   implicit open class MutableBuilder[Self <: ExtraOptions] (val x: Self) extends AnyVal {
     
+    inline def setBindToComponentInputs(value: Boolean): Self = StObject.set(x, "bindToComponentInputs", value.asInstanceOf[js.Any])
+    
+    inline def setBindToComponentInputsUndefined: Self = StObject.set(x, "bindToComponentInputs", js.undefined)
+    
     inline def setEnableTracing(value: Boolean): Self = StObject.set(x, "enableTracing", value.asInstanceOf[js.Any])
     
     inline def setEnableTracingUndefined: Self = StObject.set(x, "enableTracing", js.undefined)
@@ -139,10 +114,6 @@ object ExtraOptions {
     inline def setPreloadingStrategy(value: Any): Self = StObject.set(x, "preloadingStrategy", value.asInstanceOf[js.Any])
     
     inline def setPreloadingStrategyUndefined: Self = StObject.set(x, "preloadingStrategy", js.undefined)
-    
-    inline def setRelativeLinkResolution(value: legacy | corrected): Self = StObject.set(x, "relativeLinkResolution", value.asInstanceOf[js.Any])
-    
-    inline def setRelativeLinkResolutionUndefined: Self = StObject.set(x, "relativeLinkResolution", js.undefined)
     
     inline def setScrollOffset(value: (js.Tuple2[Double, Double]) | (js.Function0[js.Tuple2[Double, Double]])): Self = StObject.set(x, "scrollOffset", value.asInstanceOf[js.Any])
     

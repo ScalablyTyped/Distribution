@@ -12,6 +12,9 @@ import typings.newman.newmanStrings.on
 import typings.node.eventsMod.EventEmitter
 import typings.postmanCollection.mod.Collection
 import typings.postmanCollection.mod.CollectionDefinition
+import typings.postmanCollection.mod.Item
+import typings.postmanCollection.mod.Request
+import typings.postmanCollection.mod.Response
 import typings.postmanCollection.mod.VariableScope
 import typings.postmanCollection.mod.VariableScopeDefinition
 import typings.toughCookie.mod.CookieJar
@@ -150,11 +153,18 @@ object mod {
     var failures: js.Array[NewmanRunFailure]
     
     var stats: Assertions
+    
+    var timings: NewmanRunTimings
   }
   object NewmanRun {
     
-    inline def apply(executions: js.Array[NewmanRunExecution], failures: js.Array[NewmanRunFailure], stats: Assertions): NewmanRun = {
-      val __obj = js.Dynamic.literal(executions = executions.asInstanceOf[js.Any], failures = failures.asInstanceOf[js.Any], stats = stats.asInstanceOf[js.Any])
+    inline def apply(
+      executions: js.Array[NewmanRunExecution],
+      failures: js.Array[NewmanRunFailure],
+      stats: Assertions,
+      timings: NewmanRunTimings
+    ): NewmanRun = {
+      val __obj = js.Dynamic.literal(executions = executions.asInstanceOf[js.Any], failures = failures.asInstanceOf[js.Any], stats = stats.asInstanceOf[js.Any], timings = timings.asInstanceOf[js.Any])
       __obj.asInstanceOf[NewmanRun]
     }
     
@@ -170,6 +180,8 @@ object mod {
       inline def setFailuresVarargs(value: NewmanRunFailure*): Self = StObject.set(x, "failures", js.Array(value*))
       
       inline def setStats(value: Assertions): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
+      
+      inline def setTimings(value: NewmanRunTimings): Self = StObject.set(x, "timings", value.asInstanceOf[js.Any])
     }
   }
   
@@ -177,12 +189,24 @@ object mod {
     
     var assertions: js.Array[NewmanRunExecutionAssertion]
     
+    var cursor: Cursor
+    
     var item: NewmanRunExecutionItem
+    
+    var request: Request
+    
+    var response: Response
   }
   object NewmanRunExecution {
     
-    inline def apply(assertions: js.Array[NewmanRunExecutionAssertion], item: NewmanRunExecutionItem): NewmanRunExecution = {
-      val __obj = js.Dynamic.literal(assertions = assertions.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any])
+    inline def apply(
+      assertions: js.Array[NewmanRunExecutionAssertion],
+      cursor: Cursor,
+      item: NewmanRunExecutionItem,
+      request: Request,
+      response: Response
+    ): NewmanRunExecution = {
+      val __obj = js.Dynamic.literal(assertions = assertions.asInstanceOf[js.Any], cursor = cursor.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
       __obj.asInstanceOf[NewmanRunExecution]
     }
     
@@ -193,7 +217,13 @@ object mod {
       
       inline def setAssertionsVarargs(value: NewmanRunExecutionAssertion*): Self = StObject.set(x, "assertions", js.Array(value*))
       
+      inline def setCursor(value: Cursor): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
+      
       inline def setItem(value: NewmanRunExecutionItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      
+      inline def setRequest(value: Request): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      
+      inline def setResponse(value: Response): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     }
   }
   
@@ -202,11 +232,13 @@ object mod {
     var assertion: String
     
     var error: NewmanRunExecutionAssertionError
+    
+    var skipped: Boolean
   }
   object NewmanRunExecutionAssertion {
     
-    inline def apply(assertion: String, error: NewmanRunExecutionAssertionError): NewmanRunExecutionAssertion = {
-      val __obj = js.Dynamic.literal(assertion = assertion.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any])
+    inline def apply(assertion: String, error: NewmanRunExecutionAssertionError, skipped: Boolean): NewmanRunExecutionAssertion = {
+      val __obj = js.Dynamic.literal(assertion = assertion.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], skipped = skipped.asInstanceOf[js.Any])
       __obj.asInstanceOf[NewmanRunExecutionAssertion]
     }
     
@@ -216,6 +248,8 @@ object mod {
       inline def setAssertion(value: String): Self = StObject.set(x, "assertion", value.asInstanceOf[js.Any])
       
       inline def setError(value: NewmanRunExecutionAssertionError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      
+      inline def setSkipped(value: Boolean): Self = StObject.set(x, "skipped", value.asInstanceOf[js.Any])
     }
   }
   
@@ -253,22 +287,11 @@ object mod {
     }
   }
   
-  trait NewmanRunExecutionItem extends StObject {
+  @js.native
+  trait NewmanRunExecutionItem extends Item {
     
-    var name: String
-  }
-  object NewmanRunExecutionItem {
-    
-    inline def apply(name: String): NewmanRunExecutionItem = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-      __obj.asInstanceOf[NewmanRunExecutionItem]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: NewmanRunExecutionItem] (val x: Self) extends AnyVal {
-      
-      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-    }
+    @JSName("name")
+    var name_NewmanRunExecutionItem: String = js.native
   }
   
   trait NewmanRunFailure extends StObject {
@@ -667,19 +690,19 @@ object mod {
   
   trait NewmanRunSummary extends StObject {
     
-    var collection: Any
+    var collection: Collection
     
-    var environment: Any
+    var environment: VariableScope
     
     var error: js.UndefOr[Any] = js.undefined
     
-    var globals: Any
+    var globals: VariableScope
     
     var run: NewmanRun
   }
   object NewmanRunSummary {
     
-    inline def apply(collection: Any, environment: Any, globals: Any, run: NewmanRun): NewmanRunSummary = {
+    inline def apply(collection: Collection, environment: VariableScope, globals: VariableScope, run: NewmanRun): NewmanRunSummary = {
       val __obj = js.Dynamic.literal(collection = collection.asInstanceOf[js.Any], environment = environment.asInstanceOf[js.Any], globals = globals.asInstanceOf[js.Any], run = run.asInstanceOf[js.Any])
       __obj.asInstanceOf[NewmanRunSummary]
     }
@@ -687,17 +710,116 @@ object mod {
     @scala.inline
     implicit open class MutableBuilder[Self <: NewmanRunSummary] (val x: Self) extends AnyVal {
       
-      inline def setCollection(value: Any): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
+      inline def setCollection(value: Collection): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
       
-      inline def setEnvironment(value: Any): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
+      inline def setEnvironment(value: VariableScope): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
       
       inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
       inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      inline def setGlobals(value: Any): Self = StObject.set(x, "globals", value.asInstanceOf[js.Any])
+      inline def setGlobals(value: VariableScope): Self = StObject.set(x, "globals", value.asInstanceOf[js.Any])
       
       inline def setRun(value: NewmanRun): Self = StObject.set(x, "run", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait NewmanRunTimings extends StObject {
+    
+    var completed: js.UndefOr[Double] = js.undefined
+    
+    /** The average DNS lookup time of the run */
+    var dnsAverage: Double
+    
+    /** The maximum DNS lookup time of the run */
+    var dnsMax: Double
+    
+    /** The minimum DNS lookup time of the run */
+    var dnsMin: Double
+    
+    /** Standard deviation of DNS lookup time of the run */
+    var dnsSd: Double
+    
+    /** The average first byte time of the run */
+    var firstByteAverage: Double
+    
+    /** The maximum first byte time of the run */
+    var firstByteMax: Double
+    
+    /** The minimum first byte time of the run */
+    var firstByteMin: Double
+    
+    /** Standard deviation of first byte time of the run */
+    var firstByteSd: Double
+    
+    /** The average response time of the run */
+    var responseAverage: Double
+    
+    /** The maximum response time of the run */
+    var responseMax: Double
+    
+    /** The miminum response time of the run */
+    var responseMin: Double
+    
+    /** Standard deviation of response time of the run */
+    var responseSd: Double
+    
+    var started: js.UndefOr[Double] = js.undefined
+  }
+  object NewmanRunTimings {
+    
+    inline def apply(
+      dnsAverage: Double,
+      dnsMax: Double,
+      dnsMin: Double,
+      dnsSd: Double,
+      firstByteAverage: Double,
+      firstByteMax: Double,
+      firstByteMin: Double,
+      firstByteSd: Double,
+      responseAverage: Double,
+      responseMax: Double,
+      responseMin: Double,
+      responseSd: Double
+    ): NewmanRunTimings = {
+      val __obj = js.Dynamic.literal(dnsAverage = dnsAverage.asInstanceOf[js.Any], dnsMax = dnsMax.asInstanceOf[js.Any], dnsMin = dnsMin.asInstanceOf[js.Any], dnsSd = dnsSd.asInstanceOf[js.Any], firstByteAverage = firstByteAverage.asInstanceOf[js.Any], firstByteMax = firstByteMax.asInstanceOf[js.Any], firstByteMin = firstByteMin.asInstanceOf[js.Any], firstByteSd = firstByteSd.asInstanceOf[js.Any], responseAverage = responseAverage.asInstanceOf[js.Any], responseMax = responseMax.asInstanceOf[js.Any], responseMin = responseMin.asInstanceOf[js.Any], responseSd = responseSd.asInstanceOf[js.Any])
+      __obj.asInstanceOf[NewmanRunTimings]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NewmanRunTimings] (val x: Self) extends AnyVal {
+      
+      inline def setCompleted(value: Double): Self = StObject.set(x, "completed", value.asInstanceOf[js.Any])
+      
+      inline def setCompletedUndefined: Self = StObject.set(x, "completed", js.undefined)
+      
+      inline def setDnsAverage(value: Double): Self = StObject.set(x, "dnsAverage", value.asInstanceOf[js.Any])
+      
+      inline def setDnsMax(value: Double): Self = StObject.set(x, "dnsMax", value.asInstanceOf[js.Any])
+      
+      inline def setDnsMin(value: Double): Self = StObject.set(x, "dnsMin", value.asInstanceOf[js.Any])
+      
+      inline def setDnsSd(value: Double): Self = StObject.set(x, "dnsSd", value.asInstanceOf[js.Any])
+      
+      inline def setFirstByteAverage(value: Double): Self = StObject.set(x, "firstByteAverage", value.asInstanceOf[js.Any])
+      
+      inline def setFirstByteMax(value: Double): Self = StObject.set(x, "firstByteMax", value.asInstanceOf[js.Any])
+      
+      inline def setFirstByteMin(value: Double): Self = StObject.set(x, "firstByteMin", value.asInstanceOf[js.Any])
+      
+      inline def setFirstByteSd(value: Double): Self = StObject.set(x, "firstByteSd", value.asInstanceOf[js.Any])
+      
+      inline def setResponseAverage(value: Double): Self = StObject.set(x, "responseAverage", value.asInstanceOf[js.Any])
+      
+      inline def setResponseMax(value: Double): Self = StObject.set(x, "responseMax", value.asInstanceOf[js.Any])
+      
+      inline def setResponseMin(value: Double): Self = StObject.set(x, "responseMin", value.asInstanceOf[js.Any])
+      
+      inline def setResponseSd(value: Double): Self = StObject.set(x, "responseSd", value.asInstanceOf[js.Any])
+      
+      inline def setStarted(value: Double): Self = StObject.set(x, "started", value.asInstanceOf[js.Any])
+      
+      inline def setStartedUndefined: Self = StObject.set(x, "started", js.undefined)
     }
   }
 }

@@ -1,5 +1,6 @@
 package typings.sinonjsSamsam
 
+import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +18,7 @@ object typesCreateSetMod {
     *
     * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set
     */
-  inline def apply(array: js.Array[Any], args: Any*): Any = ^.asInstanceOf[js.Dynamic].apply(scala.List(array.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
+  inline def apply(array: js.Array[Any], args: Any*): Set[Any] = ^.asInstanceOf[js.Dynamic].apply(scala.List(array.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Set[Any]]
   
   @JSImport("@sinonjs/samsam/types/create-set", JSImport.Namespace)
   @js.native

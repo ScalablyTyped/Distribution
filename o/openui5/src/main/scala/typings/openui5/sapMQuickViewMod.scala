@@ -483,6 +483,8 @@ object sapMQuickViewMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:afterClose afterClose} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -494,6 +496,8 @@ object sapMQuickViewMod {
     mParameters: OpenByOrigin): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:afterOpen afterOpen} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -505,6 +509,8 @@ object sapMQuickViewMod {
     mParameters: OpenBy): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:beforeClose beforeClose} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -516,6 +522,8 @@ object sapMQuickViewMod {
     mParameters: OpenByOrigin): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:beforeOpen beforeOpen} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining

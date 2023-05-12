@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `200ContentApplicationjsonCanapprovepullrequestreviewsDefaultworkflowpermissions` extends StObject {
   
-  /** Response */
+  /** @description Response */
   var `200`: ContentApplicationjsonCanapprovepullrequestreviewsDefaultworkflowpermissions
 }
 object `200ContentApplicationjsonCanapprovepullrequestreviewsDefaultworkflowpermissions` {

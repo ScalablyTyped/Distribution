@@ -11,6 +11,10 @@ object anon {
     
     var close: js.UndefOr[ReactNode] = js.undefined
     
+    var flipX: js.UndefOr[ReactNode] = js.undefined
+    
+    var flipY: js.UndefOr[ReactNode] = js.undefined
+    
     var left: js.UndefOr[ReactNode] = js.undefined
     
     var right: js.UndefOr[ReactNode] = js.undefined
@@ -37,6 +41,14 @@ object anon {
       
       inline def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
       
+      inline def setFlipX(value: ReactNode): Self = StObject.set(x, "flipX", value.asInstanceOf[js.Any])
+      
+      inline def setFlipXUndefined: Self = StObject.set(x, "flipX", js.undefined)
+      
+      inline def setFlipY(value: ReactNode): Self = StObject.set(x, "flipY", value.asInstanceOf[js.Any])
+      
+      inline def setFlipYUndefined: Self = StObject.set(x, "flipY", js.undefined)
+      
       inline def setLeft(value: ReactNode): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
       inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
@@ -60,6 +72,110 @@ object anon {
       inline def setZoomOut(value: ReactNode): Self = StObject.set(x, "zoomOut", value.asInstanceOf[js.Any])
       
       inline def setZoomOutUndefined: Self = StObject.set(x, "zoomOut", js.undefined)
+    }
+  }
+  
+  @js.native
+  trait DispatchZoomChange extends StObject {
+    
+    def dispatchZoomChange(ratio: Double): Unit = js.native
+    def dispatchZoomChange(ratio: Double, clientX: Double): Unit = js.native
+    def dispatchZoomChange(ratio: Double, clientX: Double, clientY: Double): Unit = js.native
+    def dispatchZoomChange(ratio: Double, clientX: Unit, clientY: Double): Unit = js.native
+    
+    def resetTransform(): Unit = js.native
+    
+    var transform: FlipX = js.native
+    
+    def updateTransform(newTransform: PartialTransformType): Unit = js.native
+  }
+  
+  trait FlipX extends StObject {
+    
+    var flipX: Boolean
+    
+    var flipY: Boolean
+    
+    var rotate: Double
+    
+    var scale: Double
+    
+    var x: Double
+    
+    var y: Double
+  }
+  object FlipX {
+    
+    inline def apply(flipX: Boolean, flipY: Boolean, rotate: Double, scale: Double, x: Double, y: Double): FlipX = {
+      val __obj = js.Dynamic.literal(flipX = flipX.asInstanceOf[js.Any], flipY = flipY.asInstanceOf[js.Any], rotate = rotate.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+      __obj.asInstanceOf[FlipX]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlipX] (val x: Self) extends AnyVal {
+      
+      inline def setFlipX(value: Boolean): Self = StObject.set(x, "flipX", value.asInstanceOf[js.Any])
+      
+      inline def setFlipY(value: Boolean): Self = StObject.set(x, "flipY", value.asInstanceOf[js.Any])
+      
+      inline def setRotate(value: Double): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
+      
+      inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+      
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  /* Inlined std.Partial<rc-image.rc-image/lib/hooks/useImageTransform.TransformType> */
+  trait PartialTransformType extends StObject {
+    
+    var flipX: js.UndefOr[Boolean] = js.undefined
+    
+    var flipY: js.UndefOr[Boolean] = js.undefined
+    
+    var rotate: js.UndefOr[Double] = js.undefined
+    
+    var scale: js.UndefOr[Double] = js.undefined
+    
+    var x: js.UndefOr[Double] = js.undefined
+    
+    var y: js.UndefOr[Double] = js.undefined
+  }
+  object PartialTransformType {
+    
+    inline def apply(): PartialTransformType = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[PartialTransformType]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialTransformType] (val x: Self) extends AnyVal {
+      
+      inline def setFlipX(value: Boolean): Self = StObject.set(x, "flipX", value.asInstanceOf[js.Any])
+      
+      inline def setFlipXUndefined: Self = StObject.set(x, "flipX", js.undefined)
+      
+      inline def setFlipY(value: Boolean): Self = StObject.set(x, "flipY", value.asInstanceOf[js.Any])
+      
+      inline def setFlipYUndefined: Self = StObject.set(x, "flipY", js.undefined)
+      
+      inline def setRotate(value: Double): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
+      
+      inline def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
+      
+      inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+      
+      inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+      
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      
+      inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+      
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      
+      inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
     }
   }
   

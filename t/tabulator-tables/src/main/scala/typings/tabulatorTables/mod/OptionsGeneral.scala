@@ -89,6 +89,8 @@ trait OptionsGeneral extends StObject {
   /** Manually set the size of the virtual DOM buffer. */
   var renderVerticalBuffer: js.UndefOr[Boolean | Double] = js.undefined
   
+  var rowHeight: js.UndefOr[Double] = js.undefined
+  
   /** Callback is triggered when the table is horizontally scrolled. */
   var scrollHorizontal: js.UndefOr[js.Function1[/* left */ Any, Unit]] = js.undefined
   
@@ -203,6 +205,10 @@ object OptionsGeneral {
     inline def setRenderVerticalBufferUndefined: Self = StObject.set(x, "renderVerticalBuffer", js.undefined)
     
     inline def setRenderVerticalUndefined: Self = StObject.set(x, "renderVertical", js.undefined)
+    
+    inline def setRowHeight(value: Double): Self = StObject.set(x, "rowHeight", value.asInstanceOf[js.Any])
+    
+    inline def setRowHeightUndefined: Self = StObject.set(x, "rowHeight", js.undefined)
     
     inline def setScrollHorizontal(value: /* left */ Any => Unit): Self = StObject.set(x, "scrollHorizontal", js.Any.fromFunction1(value))
     

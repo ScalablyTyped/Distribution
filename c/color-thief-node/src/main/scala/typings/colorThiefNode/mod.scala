@@ -11,8 +11,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def getColor(sourceImage: HTMLImageElement): js.Promise[Palette] = ^.asInstanceOf[js.Dynamic].applyDynamic("getColor")(sourceImage.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Palette]]
-  inline def getColor(sourceImage: HTMLImageElement, quality: Double): js.Promise[Palette] = (^.asInstanceOf[js.Dynamic].applyDynamic("getColor")(sourceImage.asInstanceOf[js.Any], quality.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Palette]]
+  inline def getColor(sourceImage: HTMLImageElement): Palette = ^.asInstanceOf[js.Dynamic].applyDynamic("getColor")(sourceImage.asInstanceOf[js.Any]).asInstanceOf[Palette]
+  inline def getColor(sourceImage: HTMLImageElement, quality: Double): Palette = (^.asInstanceOf[js.Dynamic].applyDynamic("getColor")(sourceImage.asInstanceOf[js.Any], quality.asInstanceOf[js.Any])).asInstanceOf[Palette]
   
   inline def getColorFromURL(imageURL: String): js.Promise[Palette] = ^.asInstanceOf[js.Dynamic].applyDynamic("getColorFromURL")(imageURL.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Palette]]
   inline def getColorFromURL(imageURL: String, quality: Double): js.Promise[Palette] = (^.asInstanceOf[js.Dynamic].applyDynamic("getColorFromURL")(imageURL.asInstanceOf[js.Any], quality.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Palette]]

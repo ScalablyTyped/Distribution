@@ -6,10 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ProjectidNumberUsernameString extends StObject {
   
-  /** The unique identifier of the project. */
   var project_id: Double
   
-  /** The handle for the GitHub user account. */
   var username: String
 }
 object ProjectidNumberUsernameString {

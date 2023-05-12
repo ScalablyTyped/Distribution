@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class QueryConstraint () extends StObject {
   
-  /** The type of this query constraints */
+  /** The type of this query constraint */
   val `type`: QueryConstraintType = js.native
 }

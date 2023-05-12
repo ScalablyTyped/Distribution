@@ -666,6 +666,8 @@ object sapUiDeviceMod extends Shortcut {
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initRangeSet")(sName.asInstanceOf[js.Any], aRangeBorders.asInstanceOf[js.Any], sUnit.asInstanceOf[js.Any], aRangeNames.asInstanceOf[js.Any], bSuppressClasses.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Removes a previously initialized range set and detaches all registered handlers.
       *
       * Only custom range sets can be removed via this function. Initialized predefined range sets ({@link sap.ui.Device.media.RANGESETS})

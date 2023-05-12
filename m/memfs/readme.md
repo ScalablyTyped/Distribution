@@ -1,7 +1,7 @@
 
 # Scala.js typings for memfs
 
-Typings are for version 3.4.7
+Typings are for version 3.5.1
 
 ## Library description:
 In-memory file-system with Node's fs API.

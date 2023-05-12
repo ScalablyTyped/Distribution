@@ -64,9 +64,9 @@ trait Slot
   var serviceCategory: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
   /**
-    * The type of appointments that can be booked into this slot (ideally this would be an identifiable service - which is at a location, rather than the location itself). If provided then this overrides the value provided on the availability resource.
+    * The type of appointments that can be booked into this slot (ideally this would be an identifiable service - which is at a location, rather than the location itself). If provided then this overrides the value provided on the Schedule resource.
     */
-  var serviceType: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
+  var serviceType: js.UndefOr[js.Array[CodeableReference]] = js.undefined
   
   /**
     * The specialty of a practitioner that would be required to perform the service requested in this appointment.
@@ -130,11 +130,11 @@ object Slot {
     
     inline def setServiceCategoryVarargs(value: CodeableConcept*): Self = StObject.set(x, "serviceCategory", js.Array(value*))
     
-    inline def setServiceType(value: js.Array[CodeableConcept]): Self = StObject.set(x, "serviceType", value.asInstanceOf[js.Any])
+    inline def setServiceType(value: js.Array[CodeableReference]): Self = StObject.set(x, "serviceType", value.asInstanceOf[js.Any])
     
     inline def setServiceTypeUndefined: Self = StObject.set(x, "serviceType", js.undefined)
     
-    inline def setServiceTypeVarargs(value: CodeableConcept*): Self = StObject.set(x, "serviceType", js.Array(value*))
+    inline def setServiceTypeVarargs(value: CodeableReference*): Self = StObject.set(x, "serviceType", js.Array(value*))
     
     inline def setSpecialty(value: js.Array[CodeableConcept]): Self = StObject.set(x, "specialty", value.asInstanceOf[js.Any])
     

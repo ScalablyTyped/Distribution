@@ -24,6 +24,11 @@ trait ProactiveAnomalySummary extends StObject {
   var AssociatedInsightId: js.UndefOr[InsightId] = js.undefined
   
   /**
+    *  A description of the proactive anomaly. 
+    */
+  var Description: js.UndefOr[AnomalyDescription] = js.undefined
+  
+  /**
     * The ID of the anomaly.
     */
   var Id: js.UndefOr[AnomalyId] = js.undefined
@@ -89,6 +94,10 @@ object ProactiveAnomalySummary {
     inline def setAssociatedInsightId(value: InsightId): Self = StObject.set(x, "AssociatedInsightId", value.asInstanceOf[js.Any])
     
     inline def setAssociatedInsightIdUndefined: Self = StObject.set(x, "AssociatedInsightId", js.undefined)
+    
+    inline def setDescription(value: AnomalyDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
     inline def setId(value: AnomalyId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     

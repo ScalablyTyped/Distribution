@@ -28,6 +28,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.arcgisJsApi.esri.CIMGeometricEffectControlMeasureLine
   - typings.arcgisJsApi.esri.CIMGeometricEffectCut
   - typings.arcgisJsApi.esri.CIMGeometricEffectDashes
+  - typings.arcgisJsApi.esri.CIMGeometricEffectDonut
   - typings.arcgisJsApi.esri.CIMGeometricEffectJog
   - typings.arcgisJsApi.esri.CIMGeometricEffectMove
   - typings.arcgisJsApi.esri.CIMGeometricEffectOffset
@@ -70,6 +71,12 @@ object CIMGeometricEffect {
     val __obj = js.Dynamic.literal(dashTemplate = dashTemplate.asInstanceOf[js.Any], lineDashEnding = lineDashEnding.asInstanceOf[js.Any], offsetAlongLine = offsetAlongLine.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("CIMGeometricEffectDashes")
     __obj.asInstanceOf[typings.arcgisJsApi.esri.CIMGeometricEffectDashes]
+  }
+  
+  inline def CIMGeometricEffectDonut(option: Fast | Accurate, width: Double): typings.arcgisJsApi.esri.CIMGeometricEffectDonut = {
+    val __obj = js.Dynamic.literal(option = option.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("CIMGeometricEffectDonut")
+    __obj.asInstanceOf[typings.arcgisJsApi.esri.CIMGeometricEffectDonut]
   }
   
   inline def CIMGeometricEffectJog(angle: Double, length: Double, position: Double): typings.arcgisJsApi.esri.CIMGeometricEffectJog = {

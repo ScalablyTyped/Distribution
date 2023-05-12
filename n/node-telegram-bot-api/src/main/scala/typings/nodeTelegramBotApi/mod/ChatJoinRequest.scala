@@ -15,11 +15,13 @@ trait ChatJoinRequest extends StObject {
   var from: User
   
   var invite_link: js.UndefOr[ChatInviteLink] = js.undefined
+  
+  var user_chat_id: Double
 }
 object ChatJoinRequest {
   
-  inline def apply(chat: Chat, date: Double, from: User): ChatJoinRequest = {
-    val __obj = js.Dynamic.literal(chat = chat.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any])
+  inline def apply(chat: Chat, date: Double, from: User, user_chat_id: Double): ChatJoinRequest = {
+    val __obj = js.Dynamic.literal(chat = chat.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any], user_chat_id = user_chat_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChatJoinRequest]
   }
   
@@ -39,5 +41,7 @@ object ChatJoinRequest {
     inline def setInvite_link(value: ChatInviteLink): Self = StObject.set(x, "invite_link", value.asInstanceOf[js.Any])
     
     inline def setInvite_linkUndefined: Self = StObject.set(x, "invite_link", js.undefined)
+    
+    inline def setUser_chat_id(value: Double): Self = StObject.set(x, "user_chat_id", value.asInstanceOf[js.Any])
   }
 }

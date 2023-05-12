@@ -1,5 +1,6 @@
 package typings.awsSdk.clientsApplicationautoscalingMod
 
+import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,9 +16,17 @@ type AdjustmentType = _AdjustmentType | String
 
 type Alarms = js.Array[Alarm]
 
+type AmazonResourceName = String
+
 type Cooldown = Double
 
 type DisableScaleIn = Boolean
+
+type Expression = String
+
+type Id = String
+
+type IncludeNotScaledActivities = Boolean
 
 type MaxResults = Double
 
@@ -73,6 +82,7 @@ type MetricStatistic = _MetricStatistic | String
   - typings.awsSdk.awsSdkStrings.ElastiCacheReplicaEngineCPUUtilization
   - typings.awsSdk.awsSdkStrings.ElastiCacheDatabaseMemoryUsageCountedForEvictPercentage
   - typings.awsSdk.awsSdkStrings.NeptuneReaderAverageCPUUtilization
+  - typings.awsSdk.awsSdkStrings.SageMakerVariantProvisionedConcurrencyUtilization
   - java.lang.String
 */
 type MetricType = _MetricType | String
@@ -80,6 +90,8 @@ type MetricType = _MetricType | String
 type MetricUnit = String
 
 type MinAdjustmentMagnitude = Double
+
+type NotScaledReasons = js.Array[NotScaledReason]
 
 type PolicyName = String
 
@@ -99,6 +111,8 @@ type ResourceIdMaxLen1600 = String
 type ResourceIdsMaxLen1600 = js.Array[ResourceIdMaxLen1600]
 
 type ResourceLabel = String
+
+type ReturnData = Boolean
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ecsColonserviceColonDesiredCount
@@ -121,6 +135,7 @@ type ResourceLabel = String
   - typings.awsSdk.awsSdkStrings.`elasticacheColonreplication-groupColonNodeGroups`
   - typings.awsSdk.awsSdkStrings.`elasticacheColonreplication-groupColonReplicas`
   - typings.awsSdk.awsSdkStrings.neptuneColonclusterColonReadReplicaCount
+  - typings.awsSdk.awsSdkStrings.sagemakerColonvariantColonDesiredProvisionedConcurrency
 */
 type ScalableDimension = _ScalableDimension | (/* comprehend:document-classifier-endpoint:DesiredInferenceUnits */ String)
 
@@ -160,8 +175,8 @@ type ScheduledActions = js.Array[ScheduledAction]
   - typings.awsSdk.awsSdkStrings.`custom-resource`
   - typings.awsSdk.awsSdkStrings.comprehend
   - typings.awsSdk.awsSdkStrings.lambda__
-  - typings.awsSdk.awsSdkStrings.cassandra
-  - typings.awsSdk.awsSdkStrings.kafka_
+  - typings.awsSdk.awsSdkStrings.cassandra_
+  - typings.awsSdk.awsSdkStrings.kafka__
   - typings.awsSdk.awsSdkStrings.elasticache
   - typings.awsSdk.awsSdkStrings.neptune
   - java.lang.String
@@ -169,6 +184,28 @@ type ScheduledActions = js.Array[ScheduledAction]
 type ServiceNamespace = _ServiceNamespace | String
 
 type StepAdjustments = js.Array[StepAdjustment]
+
+type TagKey = String
+
+type TagKeyList = js.Array[TagKey]
+
+type TagMap = StringDictionary[TagValue]
+
+type TagValue = String
+
+type TargetTrackingMetricDataQueries = js.Array[TargetTrackingMetricDataQuery]
+
+type TargetTrackingMetricDimensionName = String
+
+type TargetTrackingMetricDimensionValue = String
+
+type TargetTrackingMetricDimensions = js.Array[TargetTrackingMetricDimension]
+
+type TargetTrackingMetricName = String
+
+type TargetTrackingMetricNamespace = String
+
+type TargetTrackingMetricUnit = String
 
 type TimestampType = js.Date
 

@@ -125,6 +125,8 @@ object sapMViewSettingsDialogMod {
     inline def getMetadata(): typings.openui5.sapUiCoreElementMetadataMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("getMetadata")().asInstanceOf[typings.openui5.sapUiCoreElementMetadataMod.default]
   }
   
+  type SelectedFilterKeys = Record[String, Boolean]
+  
   @js.native
   trait ViewSettingsDialog
     extends typings.openui5.sapUiCoreControlMod.default {
@@ -133,12 +135,14 @@ object sapMViewSettingsDialogMod {
       * Overwrites the aggregation setter in order to have ID validation logic as some strings are reserved for
       * the predefined tabs.
       *
-      * @returns this pointer for chaining
+      * @returns Reference to `this` for method chaining
       */
-    def addCustomTab(/**
+    def addCustomTab(
+      /**
       * The custom tab to be added
       */
-    oCustomTab: js.Object): this.type = js.native
+    oCustomTab: typings.openui5.sapMViewSettingsCustomTabMod.default
+    ): this.type = js.native
     
     /**
       * @SINCE 1.16
@@ -157,7 +161,7 @@ object sapMViewSettingsDialogMod {
     /**
       * Adds a group item and sets the association to reflect the selected state.
       *
-      * @returns this pointer for chaining
+      * @returns Reference to `this` for method chaining
       */
     def addGroupItem(
       /**
@@ -169,7 +173,7 @@ object sapMViewSettingsDialogMod {
     /**
       * Adds a preset filter item and sets the association to reflect the selected state.
       *
-      * @returns this pointer for chaining
+      * @returns Reference to `this` for method chaining
       */
     def addPresetFilterItem(
       /**
@@ -181,7 +185,7 @@ object sapMViewSettingsDialogMod {
     /**
       * Adds a sort item and sets the association to reflect the selected state.
       *
-      * @returns this pointer for chaining
+      * @returns Reference to `this` for method chaining
       */
     def addSortItem(
       /**
@@ -593,7 +597,7 @@ object sapMViewSettingsDialogMod {
     /**
       * Clears the selected filters and navigates to the filter overview page
       *
-      * @returns this pointer for chaining
+      * @returns Reference to `this` for method chaining
       */
     def clearFilters(): this.type = js.native
     
@@ -764,6 +768,8 @@ object sapMViewSettingsDialogMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:cancel cancel} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -775,6 +781,8 @@ object sapMViewSettingsDialogMod {
     mParameters: js.Object): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:confirm confirm} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -786,6 +794,8 @@ object sapMViewSettingsDialogMod {
     mParameters: FilterCompoundKeys): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:filterDetailPageOpened filterDetailPageOpened} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -797,6 +807,8 @@ object sapMViewSettingsDialogMod {
     mParameters: ParentFilterItem): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:reset reset} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -808,6 +820,8 @@ object sapMViewSettingsDialogMod {
     mParameters: js.Object): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:resetFilters resetFilters} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -891,7 +905,7 @@ object sapMViewSettingsDialogMod {
       *
       * @returns An object with item and sub-item keys
       */
-    def getSelectedFilterCompoundKeys(): js.Object = js.native
+    def getSelectedFilterCompoundKeys(): Record[String, SelectedFilterKeys] = js.native
     
     /**
       * Returns the selected filters as an array of ViewSettingsItems.
@@ -911,7 +925,7 @@ object sapMViewSettingsDialogMod {
       *
       * @returns An object with item and sub-item keys
       */
-    def getSelectedFilterKeys(): js.Object = js.native
+    def getSelectedFilterKeys(): SelectedFilterKeys = js.native
     
     /**
       * Gets the filter string in format: "filter name (subfilter1 name, subfilter2 name, ...), ...". For custom
@@ -1170,7 +1184,7 @@ object sapMViewSettingsDialogMod {
     /**
       * Opens the ViewSettingsDialog relative to the parent control.
       *
-      * @returns this pointer for chaining
+      * @returns Reference to `this` for method chaining
       */
     def open(): this.type = js.native
     def open(
@@ -1348,14 +1362,14 @@ object sapMViewSettingsDialogMod {
       * Sets a callback that will check the ViewSettingsItem's text against the search query. If a callback is
       * set, `filterSearchOperator` property will be ignored, as it serves the same purpose.
       *
-      * @returns this instance for chaining
+      * @returns Reference to `this` for method chaining
       */
     def setFilterSearchCallback(
       /**
       * A function that accepts two parameters fnTest({string} query, {string} value) and returns boolean if
       * the value satisfies the query.
       */
-    fnTest: js.Function
+    fnTest: js.Function2[/* p1 */ String, /* p2 */ String, Boolean]
     ): this.type = js.native
     
     /**
@@ -1409,7 +1423,7 @@ object sapMViewSettingsDialogMod {
       *
       * Sets the selected filter object in format { parent_key: { key: boolean, key2: boolean, ...}, ... }.
       *
-      * @returns this pointer for chaining
+      * @returns Reference to `this` for method chaining
       */
     def setSelectedFilterCompoundKeys(
       /**
@@ -1417,7 +1431,7 @@ object sapMViewSettingsDialogMod {
       * key2: boolean, ...}, ... }. Setting boolean to true will set the filter to true, false or omitting an
       * entry will set the filter to false. It can be used to set the dialog state based on presets.
       */
-    oSelectedFilterKeys: js.Object
+    oSelectedFilterKeys: Record[String, SelectedFilterKeys]
     ): this.type = js.native
     
     /**
@@ -1426,7 +1440,7 @@ object sapMViewSettingsDialogMod {
       * Sets the selected filter object in format {key: boolean}. **Note:** Do not use duplicated item keys with
       * this method.
       *
-      * @returns this pointer for chaining
+      * @returns Reference to `this` for method chaining
       */
     def setSelectedFilterKeys(
       /**
@@ -1434,7 +1448,7 @@ object sapMViewSettingsDialogMod {
       * to true will set the filter to true, false or omitting an entry will set the filter to false. It can
       * be used to set the dialog state based on presets.
       */
-    oSelectedFilterKeys: js.Object
+    oSelectedFilterKeys: SelectedFilterKeys
     ): this.type = js.native
     
     def setSelectedGroupItem(/**
@@ -1444,7 +1458,7 @@ object sapMViewSettingsDialogMod {
     /**
       * Sets the selected group item (either by key, item id or item instance).
       *
-      * @returns this pointer for chaining
+      * @returns Reference to `this` for method chaining
       */
     def setSelectedGroupItem(
       /**
@@ -1456,7 +1470,7 @@ object sapMViewSettingsDialogMod {
     /**
       * Sets the selected preset filter item.
       *
-      * @returns this pointer for chaining
+      * @returns Reference to `this` for method chaining
       */
     def setSelectedPresetFilterItem(): this.type = js.native
     def setSelectedPresetFilterItem(/**
@@ -1477,7 +1491,7 @@ object sapMViewSettingsDialogMod {
     /**
       * Sets the selected sort item (either by key, item id or item instance).
       *
-      * @returns this pointer for chaining
+      * @returns Reference to `this` for method chaining
       */
     def setSelectedSortItem(
       /**
@@ -1506,7 +1520,7 @@ object sapMViewSettingsDialogMod {
     /**
       * Sets the title of the internal dialog.
       *
-      * @returns this pointer for chaining
+      * @returns Reference to `this` for method chaining
       */
     def setTitle(/**
       * The title text for the dialog

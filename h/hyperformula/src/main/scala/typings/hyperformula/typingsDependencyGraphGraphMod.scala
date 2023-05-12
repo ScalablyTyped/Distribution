@@ -1,5 +1,7 @@
 package typings.hyperformula
 
+import typings.hyperformula.typingsAbsoluteCellRangeMod.SimpleCellRange_
+import typings.hyperformula.typingsCellMod.SimpleCellAddress_
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -106,7 +108,7 @@ object typingsDependencyGraphGraphMod {
     
     def removeIncomingEdges(toNode: T): Unit = js.native
     
-    def removeNode(node: T): js.Array[T] = js.native
+    def removeNode(node: T): js.Array[js.Tuple2[SimpleCellAddress_ | SimpleCellRange_, T]] = js.native
     
     def softRemoveEdge(fromNode: T, toNode: T): Unit = js.native
     
@@ -119,7 +121,7 @@ object typingsDependencyGraphGraphMod {
     def topSortWithScc(): TopSortResult[T] = js.native
   }
   
-  type DependencyQuery[T] = js.Function1[/* vertex */ T, js.Array[T]]
+  type DependencyQuery[T] = js.Function1[/* vertex */ T, js.Array[js.Tuple2[SimpleCellAddress_ | SimpleCellRange_, T]]]
   
   trait TopSortResult[T] extends StObject {
     

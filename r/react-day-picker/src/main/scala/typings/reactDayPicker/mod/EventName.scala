@@ -12,6 +12,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.reactDayPicker.reactDayPickerStrings.onKeyUp
   - typings.reactDayPicker.reactDayPickerStrings.onMouseEnter
   - typings.reactDayPicker.reactDayPickerStrings.onMouseLeave
+  - typings.reactDayPicker.reactDayPickerStrings.onPointerEnter
+  - typings.reactDayPicker.reactDayPickerStrings.onPointerLeave
   - typings.reactDayPicker.reactDayPickerStrings.onTouchCancel
   - typings.reactDayPicker.reactDayPickerStrings.onTouchEnd
   - typings.reactDayPicker.reactDayPickerStrings.onTouchMove
@@ -33,6 +35,10 @@ object EventName {
   inline def onMouseEnter: typings.reactDayPicker.reactDayPickerStrings.onMouseEnter = "onMouseEnter".asInstanceOf[typings.reactDayPicker.reactDayPickerStrings.onMouseEnter]
   
   inline def onMouseLeave: typings.reactDayPicker.reactDayPickerStrings.onMouseLeave = "onMouseLeave".asInstanceOf[typings.reactDayPicker.reactDayPickerStrings.onMouseLeave]
+  
+  inline def onPointerEnter: typings.reactDayPicker.reactDayPickerStrings.onPointerEnter = "onPointerEnter".asInstanceOf[typings.reactDayPicker.reactDayPickerStrings.onPointerEnter]
+  
+  inline def onPointerLeave: typings.reactDayPicker.reactDayPickerStrings.onPointerLeave = "onPointerLeave".asInstanceOf[typings.reactDayPicker.reactDayPickerStrings.onPointerLeave]
   
   inline def onTouchCancel: typings.reactDayPicker.reactDayPickerStrings.onTouchCancel = "onTouchCancel".asInstanceOf[typings.reactDayPicker.reactDayPickerStrings.onTouchCancel]
   

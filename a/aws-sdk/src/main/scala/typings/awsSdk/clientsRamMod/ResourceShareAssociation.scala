@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ResourceShareAssociation extends StObject {
   
   /**
-    * The associated entity. This can be either of the following:   For a resource association, this is the Amazon Resoure Name (ARN) of the resource.   For principal associations, this is one of the following:   The ID of an Amazon Web Services account   The Amazon Resoure Name (ARN) of an organization in Organizations   The ARN of an organizational unit (OU) in Organizations   The ARN of an IAM role   The ARN of an IAM user    
+    * The associated entity. This can be either of the following:   For a resource association, this is the Amazon Resource Name (ARN) of the resource.   For principal associations, this is one of the following:   The ID of an Amazon Web Services account   The Amazon Resource Name (ARN) of an organization in Organizations   The ARN of an organizational unit (OU) in Organizations   The ARN of an IAM role   The ARN of an IAM user    
     */
   var associatedEntity: js.UndefOr[String] = js.undefined
   
@@ -32,7 +32,7 @@ trait ResourceShareAssociation extends StObject {
   var lastUpdatedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The Amazon Resoure Name (ARN) of the resource share.
+    * The Amazon Resource Name (ARN) of the resource share.
     */
   var resourceShareArn: js.UndefOr[String] = js.undefined
   

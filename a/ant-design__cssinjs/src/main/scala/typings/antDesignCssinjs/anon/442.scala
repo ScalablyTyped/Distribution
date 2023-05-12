@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.Contain
+import typings.csstype.mod.Property.Left
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,8 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `442` extends StObject {
   
   var value: js.UndefOr[
-    Contain | (js.Array[
-      (Extract[js.UndefOr[Contain | js.Array[NonNullable[js.UndefOr[Contain]]]], String]) | NonNullable[js.UndefOr[Contain]]
+    (Left[Double | String]) | (js.Array[
+      (Extract[
+        js.UndefOr[
+          (Left[Double | String]) | (js.Array[NonNullable[js.UndefOr[Left[Double | String]]]])
+        ], 
+        String
+      ]) | (NonNullable[js.UndefOr[Left[Double | String]]])
     ])
   ] = js.native
 }

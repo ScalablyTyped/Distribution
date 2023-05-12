@@ -1,7 +1,7 @@
 
 # Scala.js typings for entities
 
-Typings are for version 4.4.0
+Typings are for version 4.5.0
 
 ## Library description:
 Encode & decode XML and HTML entities with ease & speed

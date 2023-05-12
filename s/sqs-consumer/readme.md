@@ -1,7 +1,7 @@
 
 # Scala.js typings for sqs-consumer
 
-Typings are for version 5.7.0
+Typings are for version 7.1.0
 
 ## Library description:
 Build SQS-based Node applications without the boilerplate

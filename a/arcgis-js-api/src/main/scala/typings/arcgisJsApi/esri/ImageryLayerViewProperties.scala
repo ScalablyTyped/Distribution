@@ -6,7 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ImageryLayerViewProperties
   extends StObject
-     with LayerViewProperties {
+     with LayerViewProperties
+     with HighlightLayerViewMixinProperties {
   
   /**
     * An object that provides the user access to [pixels](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-PixelBlock.html#pixels) and their values in the layer.

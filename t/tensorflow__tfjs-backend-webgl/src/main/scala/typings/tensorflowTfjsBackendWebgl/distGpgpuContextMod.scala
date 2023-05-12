@@ -13,6 +13,8 @@ import typings.std.WebGLShader
 import typings.std.WebGLSync
 import typings.std.WebGLTexture
 import typings.std.WebGLUniformLocation
+import typings.std.WebGLVertexArrayObject
+import typings.std.WebGLVertexArrayObjectOES
 import typings.tensorflowTfjsBackendWebgl.distTexUtilMod.Texture
 import typings.tensorflowTfjsBackendWebgl.distTexUtilMod.TextureConfig
 import typings.tensorflowTfjsBackendWebgl.distWebglTypesMod.WebGL1DisjointQueryTimerExtension
@@ -41,7 +43,12 @@ object distGpgpuContextMod {
     
     /* private */ var bindTextureToFrameBuffer: Any = js.native
     
+    def bindVertexArray(): Unit = js.native
+    def bindVertexArray(vao: WebGLVao): Unit = js.native
+    
     def blockUntilAllProgramsCompleted(): Unit = js.native
+    
+    def buildVao(program: GPGPUContextProgram): Unit = js.native
     
     def createAndWaitForFence(): js.Promise[Unit] = js.native
     
@@ -57,9 +64,11 @@ object distGpgpuContextMod {
     
     def createPackedMatrixTexture(rows: Double, columns: Double): Texture = js.native
     
-    def createProgram(fragmentShader: WebGLShader): WebGLProgram = js.native
+    def createProgram(fragmentShader: WebGLShader): GPGPUContextProgram = js.native
     
     def createUnsignedBytesMatrixTexture(rows: Double, columns: Double): Texture = js.native
+    
+    def createVertexArray(): WebGLVao | Null = js.native
     
     /* private */ def debug: Any = js.native
     
@@ -67,7 +76,10 @@ object distGpgpuContextMod {
     
     def deleteMatrixTexture(texture: WebGLTexture): Unit = js.native
     
-    def deleteProgram(program: WebGLProgram): Unit = js.native
+    def deleteProgram(program: GPGPUContextProgram): Unit = js.native
+    
+    def deleteVertexArray(): Unit = js.native
+    def deleteVertexArray(vao: WebGLVao): Unit = js.native
     
     /* private */ var disjoint: Any = js.native
     
@@ -115,6 +127,8 @@ object distGpgpuContextMod {
     
     def getUniformLocationNoThrow(program: WebGLProgram, uniformName: String): WebGLUniformLocation = js.native
     
+    def getVertexArray(): WebGLVao | Null = js.native
+    
     var gl: WebGLRenderingContext = js.native
     
     var indexBuffer: WebGLBuffer = js.native
@@ -131,7 +145,7 @@ object distGpgpuContextMod {
     
     def pollItems(): Unit = js.native
     
-    var program: WebGLProgram | Null = js.native
+    var program: GPGPUContextProgram | Null = js.native
     
     def setInputMatrixTexture(inputMatrixTexture: WebGLTexture, uniformLocation: WebGLUniformLocation, textureUnit: Double): Unit = js.native
     
@@ -148,7 +162,7 @@ object distGpgpuContextMod {
     def setOutputPackedMatrixWriteRegion(startRow: Double, numRows: Double, startColumn: Double, numColumns: Double): Unit = js.native
     
     def setProgram(): Unit = js.native
-    def setProgram(program: WebGLProgram): Unit = js.native
+    def setProgram(program: GPGPUContextProgram): Unit = js.native
     
     var textureConfig: TextureConfig = js.native
     
@@ -165,8 +179,6 @@ object distGpgpuContextMod {
     def uploadPixelDataToTexture(texture: WebGLTexture, pixels: ImageBitmap): Unit = js.native
     def uploadPixelDataToTexture(texture: WebGLTexture, pixels: ImageData): Unit = js.native
     def uploadPixelDataToTexture(texture: WebGLTexture, pixels: PixelData): Unit = js.native
-    
-    /* private */ var vertexAttrsAreBound: Any = js.native
     
     var vertexBuffer: WebGLBuffer = js.native
     
@@ -198,4 +210,26 @@ object distGpgpuContextMod {
       inline def setQuery(value: WebGLQuery | WebGLSync): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     }
   }
+  
+  trait GPGPUContextProgram
+    extends StObject
+       with WebGLProgram {
+    
+    var vao: WebGLVao
+  }
+  object GPGPUContextProgram {
+    
+    inline def apply(vao: WebGLVao): GPGPUContextProgram = {
+      val __obj = js.Dynamic.literal(vao = vao.asInstanceOf[js.Any])
+      __obj.asInstanceOf[GPGPUContextProgram]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GPGPUContextProgram] (val x: Self) extends AnyVal {
+      
+      inline def setVao(value: WebGLVao): Self = StObject.set(x, "vao", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  type WebGLVao = WebGLVertexArrayObject | WebGLVertexArrayObjectOES
 }

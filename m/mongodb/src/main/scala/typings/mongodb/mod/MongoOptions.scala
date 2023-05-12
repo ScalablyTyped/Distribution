@@ -10,6 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - Dropped {[ P in std.Extract<'isServer' | 'server' | 'session' | 'requestOCSP', 'ALPNProtocols' | 'ca' | 'cert' | 'checkServerIdentity' | 'ciphers' | 'crl' | 'ecdhCurve' | 'key' | 'minDHSize' | 'passphrase' | 'pfx' | 'rejectUnauthorized' | 'secureContext' | 'secureProtocol' | 'servername' | 'session'> ]: node.tls.TLSSocketOptions[P]}
 - Dropped {[ P in 'family' | 'hints' | 'localAddress' | 'localPort' | 'lookup' ]: node.net.TcpNetConnectOpts[P]} */ trait MongoOptions extends StObject {
   
+  var appName: js.UndefOr[String] = js.undefined
+  
   var autoEncrypter: js.UndefOr[AutoEncrypter] = js.undefined
   
   var compressors: js.Array[CompressorName]
@@ -85,6 +87,10 @@ object MongoOptions {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: MongoOptions] (val x: Self) extends AnyVal {
+    
+    inline def setAppName(value: String): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
+    
+    inline def setAppNameUndefined: Self = StObject.set(x, "appName", js.undefined)
     
     inline def setAutoEncrypter(value: AutoEncrypter): Self = StObject.set(x, "autoEncrypter", value.asInstanceOf[js.Any])
     

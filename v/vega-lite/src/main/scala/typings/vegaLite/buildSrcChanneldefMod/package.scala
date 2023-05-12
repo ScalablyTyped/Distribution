@@ -116,7 +116,7 @@ Position2Def[Any] | TextDef[Any] | ColorDef[Any] | PositionDef[Any] | OrderField
   (FieldDefWithoutScale[Any, StandardType]) | OrderFieldDef[Any] | StringFieldDef[Any]
 ]) | OrderValueDef | NumericArrayMarkPropDef[Any] | LatLongDef[Any] | (OffsetDef[Any, StandardType]) | (FieldDefWithoutScale[Any, StandardType]) | ShapeDef[Any] | StringFieldDefWithCondition[Any] | (StringValueDefWithCondition[Any, StandardType]) | NumericMarkPropDef[Any] | PolarDef[Any] | Null] */](channelDef: CD): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isConditionalDef")(channelDef.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 
-inline def isConditionalParameter[T](c: Conditional[T]): /* is vega-lite.vega-lite/build/src/channeldef.ConditionalParameter<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isConditionalParameter")(c.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/channeldef.ConditionalParameter<T> */ Boolean]
+inline def isConditionalParameter[T /* <: ConditionalTemplate */](c: Conditional[T]): /* is vega-lite.vega-lite/build/src/channeldef.ConditionalParameter<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isConditionalParameter")(c.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/channeldef.ConditionalParameter<T> */ Boolean]
 
 inline def isContinuousFieldOrDatumDef[F /* <: Field */](cd: ChannelDef[F]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isContinuousFieldOrDatumDef")(cd.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 
@@ -149,8 +149,6 @@ inline def isNumericDataDef[F /* <: Field */](cd: ChannelDef[F]): /* is vega-lit
 
 inline def isPositionFieldOrDatumDef[F /* <: Field */](channelDef: ChannelDef[F]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPositionFieldOrDatumDef")(channelDef.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 
-inline def isQuantitativeFieldOrDatumDef[F /* <: Field */](cd: ChannelDef[F]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isQuantitativeFieldOrDatumDef")(cd.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-
 inline def isRepeatRef(field: Any | Field): /* is vega-lite.vega-lite/build/src/channeldef.RepeatRef */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRepeatRef")(field.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/channeldef.RepeatRef */ Boolean]
 
 inline def isScaleFieldDef[F /* <: Field */](channelDef: ChannelDef[F]): /* is vega-lite.vega-lite/build/src/channeldef.ScaleFieldDef<F, vega-lite.vega-lite/build/src/type.StandardType, boolean | vega-lite.vega-lite/build/src/bin.BinParams | null> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isScaleFieldDef")(channelDef.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/channeldef.ScaleFieldDef<F, vega-lite.vega-lite/build/src/type.StandardType, boolean | vega-lite.vega-lite/build/src/bin.BinParams | null> */ Boolean]
@@ -163,6 +161,8 @@ inline def isTimeFieldDef(`def`: DatumDef[String, PrimitiveValue | DateTime | Ex
 inline def isTimeFieldDef(`def`: FieldDef[Any, Any]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTimeFieldDef")(`def`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 
 inline def isTypedFieldDef[F /* <: Field */](channelDef: ChannelDef[F]): /* is vega-lite.vega-lite/build/src/channeldef.TypedFieldDef<F, any, boolean | vega-lite.vega-lite/build/src/bin.BinParams | 'binned' | null> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTypedFieldDef")(channelDef.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/channeldef.TypedFieldDef<F, any, boolean | vega-lite.vega-lite/build/src/bin.BinParams | 'binned' | null> */ Boolean]
+
+inline def isUnbinnedQuantitativeFieldOrDatumDef[F /* <: Field */](cd: ChannelDef[F]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUnbinnedQuantitativeFieldOrDatumDef")(cd.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 
 inline def isValueDef[F /* <: Field */](channelDef: Partial[ChannelDef[F]]): /* is vega-lite.vega-lite/build/src/channeldef.ValueDef<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValueDef")(channelDef.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/channeldef.ValueDef<any> */ Boolean]
 
@@ -252,11 +252,13 @@ _ChannelDef[F] | (FieldDefWithoutScale[F, StandardType]) | (StringValueDefWithCo
 
 type ColorDef[F /* <: Field */] = MarkPropDef[F, Gradient | String | Null, StandardType]
 
-type Conditional[CD /* <: (FieldDef[Any, Any]) | (DatumDef[String, PrimitiveValue | DateTime | ExprRef | SignalRef]) | ValueDef[Any] | ExprRef | SignalRef */] = ConditionalPredicate[CD] | ConditionalParameter[CD]
+type Conditional[CD /* <: ConditionalTemplate */] = ConditionalPredicate[CD] | ConditionalParameter[CD]
 
-type ConditionalParameter[CD /* <: (FieldDef[Any, Any]) | (DatumDef[String, PrimitiveValue | DateTime | ExprRef | SignalRef]) | ValueDef[Any] | ExprRef | SignalRef */] = ParameterPredicate & CD
+type ConditionalParameter[CD /* <: ConditionalTemplate */] = ParameterPredicate & CD
 
-type ConditionalPredicate[CD /* <: (FieldDef[Any, Any]) | (DatumDef[String, PrimitiveValue | DateTime | ExprRef | SignalRef]) | ValueDef[Any] | ExprRef | SignalRef */] = Test & CD
+type ConditionalPredicate[CD /* <: ConditionalTemplate */] = Test & CD
+
+type ConditionalTemplate = (FieldDef[Any, Any]) | (DatumDef[String, PrimitiveValue | DateTime | ExprRef | SignalRef]) | ValueDef[Any] | ExprRef | SignalRef
 
 type Field = FieldName | RepeatRef
 

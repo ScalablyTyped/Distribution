@@ -1,6 +1,7 @@
 package typings.nodeCron
 
 import typings.node.eventsMod.EventEmitter
+import typings.nodeCron.nodeCronStrings.init
 import typings.nodeCron.nodeCronStrings.manual
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
@@ -17,11 +18,10 @@ object mod {
   
   inline def schedule(cronExpression: String, func: String): ScheduledTask = (^.asInstanceOf[js.Dynamic].applyDynamic("schedule")(cronExpression.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[ScheduledTask]
   inline def schedule(cronExpression: String, func: String, options: ScheduleOptions): ScheduledTask = (^.asInstanceOf[js.Dynamic].applyDynamic("schedule")(cronExpression.asInstanceOf[js.Any], func.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ScheduledTask]
-  
-  inline def schedule_manual(cronExpression: String, func: js.Function1[/* now */ js.Date | manual, Unit]): ScheduledTask = (^.asInstanceOf[js.Dynamic].applyDynamic("schedule")(cronExpression.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[ScheduledTask]
-  inline def schedule_manual(
+  inline def schedule(cronExpression: String, func: js.Function1[/* now */ js.Date | manual | init, Unit]): ScheduledTask = (^.asInstanceOf[js.Dynamic].applyDynamic("schedule")(cronExpression.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[ScheduledTask]
+  inline def schedule(
     cronExpression: String,
-    func: js.Function1[/* now */ js.Date | manual, Unit],
+    func: js.Function1[/* now */ js.Date | manual | init, Unit],
     options: ScheduleOptions
   ): ScheduledTask = (^.asInstanceOf[js.Dynamic].applyDynamic("schedule")(cronExpression.asInstanceOf[js.Any], func.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ScheduledTask]
   
@@ -40,6 +40,11 @@ object mod {
       * Defaults to `false`
       */
     var recoverMissedExecutions: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Execute task immediately after creation
+      */
+    var runOnInit: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A boolean to set if the created task is scheduled.
@@ -70,6 +75,10 @@ object mod {
       inline def setRecoverMissedExecutions(value: Boolean): Self = StObject.set(x, "recoverMissedExecutions", value.asInstanceOf[js.Any])
       
       inline def setRecoverMissedExecutionsUndefined: Self = StObject.set(x, "recoverMissedExecutions", js.undefined)
+      
+      inline def setRunOnInit(value: Boolean): Self = StObject.set(x, "runOnInit", value.asInstanceOf[js.Any])
+      
+      inline def setRunOnInitUndefined: Self = StObject.set(x, "runOnInit", js.undefined)
       
       inline def setScheduled(value: Boolean): Self = StObject.set(x, "scheduled", value.asInstanceOf[js.Any])
       

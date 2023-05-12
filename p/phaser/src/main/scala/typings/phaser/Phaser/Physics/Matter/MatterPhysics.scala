@@ -1,28 +1,27 @@
 package typings.phaser.Phaser.Physics.Matter
 
-import typings.phaser.ArcadePhysicsCallback
 import typings.phaser.MatterJS.AxesFactory
 import typings.phaser.MatterJS.BodiesFactory
 import typings.phaser.MatterJS.BodyFactory
 import typings.phaser.MatterJS.BodyType
 import typings.phaser.MatterJS.BoundsFactory
+import typings.phaser.MatterJS.Collision
 import typings.phaser.MatterJS.CompositeFactory
 import typings.phaser.MatterJS.CompositesFactory
 import typings.phaser.MatterJS.ConstraintFactory
 import typings.phaser.MatterJS.ConstraintType
 import typings.phaser.MatterJS.DetectorFactory
-import typings.phaser.MatterJS.GridFactory
 import typings.phaser.MatterJS.PairFactory
 import typings.phaser.MatterJS.PairsFactory
 import typings.phaser.MatterJS.QueryFactory
 import typings.phaser.MatterJS.ResolverFactory
-import typings.phaser.MatterJS.SATFactory
 import typings.phaser.MatterJS.SvgFactory
 import typings.phaser.MatterJS.VectorFactory
 import typings.phaser.MatterJS.VerticesFactory
 import typings.phaser.Phaser.Scene
 import typings.phaser.Phaser.Scenes.Systems
 import typings.phaser.Phaser.Types.Math.Vector2Like
+import typings.phaser.Phaser.Types.Physics.Arcade.ArcadePhysicsCallback
 import typings.phaser.Phaser.Types.Physics.Matter.MatterBody
 import typings.phaser.Phaser.Types.Physics.Matter.MatterWorldConfig
 import org.scalablytyped.runtime.StObject
@@ -193,6 +192,15 @@ trait MatterPhysics extends StObject {
   var bounds: BoundsFactory = js.native
   
   /**
+    * A reference to the `Matter.Collision` module.
+    * 
+    * The `Matter.Collision` module contains methods for detecting collisions between a given pair of bodies.
+    * 
+    * For efficient detection between a list of bodies, see `Matter.Detector` and `Matter.Query`.
+    */
+  var collision: Collision = js.native
+  
+  /**
     * A reference to the `Matter.Composite` module.
     * 
     * The `Matter.Composite` module contains methods for creating and manipulating composite bodies.
@@ -325,13 +333,6 @@ trait MatterPhysics extends StObject {
     */
   def getMatterBodies(): js.Array[BodyType] = js.native
   def getMatterBodies(bodies: js.Array[Any]): js.Array[BodyType] = js.native
-  
-  /**
-    * A reference to the `Matter.Grid` module.
-    * 
-    * The `Matter.Grid` module contains methods for creating and manipulating collision broadphase grid structures.
-    */
-  var grid: GridFactory = js.native
   
   /**
     * Checks the given Matter Body to see if it intersects with any of the given bodies.
@@ -629,13 +630,6 @@ trait MatterPhysics extends StObject {
   def resume(): World = js.native
   
   /**
-    * A reference to the `Matter.SAT` module.
-    * 
-    * The `Matter.SAT` module contains methods for detecting collisions using the Separating Axis Theorem.
-    */
-  var sat: SATFactory = js.native
-  
-  /**
     * The Phaser Scene that owns this Matter Physics instance
     */
   var scene: Scene = js.native
@@ -666,7 +660,7 @@ trait MatterPhysics extends StObject {
     * Sets the collision filter mask of all given Matter Bodies to the given value.
     * 
     * Two Matter Bodies with different collision groups will only collide if each one includes the others
-    * category in its mask based on a bitwise AND operation: `(categoryA & maskB) !== 0` and 
+    * category in its mask based on a bitwise AND operation: `(categoryA & maskB) !== 0` and
     * `(categoryB & maskA) !== 0` are both true.
     * @param bodies An array of bodies to update. If falsey it will use all bodies in the world.
     * @param categories A unique category bitfield, or an array of them.

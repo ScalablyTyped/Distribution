@@ -12,9 +12,9 @@ trait OcspConfiguration extends StObject {
   var Enabled: Boolean
   
   /**
-    * By default, ACM Private CA injects an Amazon Web Services domain into certificates being validated by the Online Certificate Status Protocol (OCSP). A customer can alternatively use this object to define a CNAME specifying a customized OCSP domain. Note: The value of the CNAME must not include a protocol prefix such as "http://" or "https://". For more information, see Customizing Online Certificate Status Protocol (OCSP)  in the Private Certificate Authority (PCA) User Guide.
+    * By default, Amazon Web Services Private CA injects an Amazon Web Services domain into certificates being validated by the Online Certificate Status Protocol (OCSP). A customer can alternatively use this object to define a CNAME specifying a customized OCSP domain.  The content of a Canonical Name (CNAME) record must conform to RFC2396 restrictions on the use of special characters in URIs. Additionally, the value of the CNAME must not include a protocol prefix such as "http://" or "https://".  For more information, see Customizing Online Certificate Status Protocol (OCSP)  in the Amazon Web Services Private Certificate Authority User Guide.
     */
-  var OcspCustomCname: js.UndefOr[String253] = js.undefined
+  var OcspCustomCname: js.UndefOr[CnameString] = js.undefined
 }
 object OcspConfiguration {
   
@@ -28,7 +28,7 @@ object OcspConfiguration {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    inline def setOcspCustomCname(value: String253): Self = StObject.set(x, "OcspCustomCname", value.asInstanceOf[js.Any])
+    inline def setOcspCustomCname(value: CnameString): Self = StObject.set(x, "OcspCustomCname", value.asInstanceOf[js.Any])
     
     inline def setOcspCustomCnameUndefined: Self = StObject.set(x, "OcspCustomCname", js.undefined)
   }

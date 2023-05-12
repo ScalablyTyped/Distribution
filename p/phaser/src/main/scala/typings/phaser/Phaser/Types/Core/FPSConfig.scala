@@ -17,6 +17,11 @@ trait FPSConfig extends StObject {
   var forceSetTimeOut: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Enforces an fps rate limit that the game step will run at, regardless of browser frequency. 0 means 'no limit'. Never set this higher than RAF can handle.
+    */
+  var limit: js.UndefOr[Double] = js.undefined
+  
+  /**
     * The minimum acceptable rendering rate, in frames per second.
     */
   var min: js.UndefOr[Double] = js.undefined
@@ -53,6 +58,10 @@ object FPSConfig {
     inline def setForceSetTimeOut(value: Boolean): Self = StObject.set(x, "forceSetTimeOut", value.asInstanceOf[js.Any])
     
     inline def setForceSetTimeOutUndefined: Self = StObject.set(x, "forceSetTimeOut", js.undefined)
+    
+    inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
     inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     

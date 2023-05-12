@@ -16,11 +16,14 @@ open class Lightmapper protected () extends StObject {
   /**
     * Create a new Lightmapper instance.
     *
-    * @param {GraphicsDevice} device - The graphics device used by the lightmapper.
-    * @param {Entity} root - The root entity of the scene.
-    * @param {Scene} scene - The scene to lightmap.
-    * @param {ForwardRenderer} renderer - The renderer.
-    * @param {AssetRegistry} assets - Registry of assets to lightmap.
+    * @param {import('../../platform/graphics/graphics-device.js').GraphicsDevice} device - The
+    * graphics device used by the lightmapper.
+    * @param {import('../entity.js').Entity} root - The root entity of the scene.
+    * @param {import('../../scene/scene.js').Scene} scene - The scene to lightmap.
+    * @param {import('../../scene/renderer/forward-renderer.js').ForwardRenderer} renderer - The
+    * renderer.
+    * @param {import('../asset/asset-registry.js').AssetRegistry} assets - Registry of assets to
+    * lightmap.
     * @hideconstructor
     */
   def this(
@@ -48,8 +51,8 @@ open class Lightmapper protected () extends StObject {
   /**
     * Generates and applies the lightmaps.
     *
-    * @param {Entity[]|null} nodes - An array of entities (with model or render components) to
-    * render lightmaps for. If not supplied, the entire scene will be baked.
+    * @param {import('../entity.js').Entity[]|null} nodes - An array of entities (with model or
+    * render components) to render lightmaps for. If not supplied, the entire scene will be baked.
     * @param {number} [mode] - Baking mode. Can be:
     *
     * - {@link BAKE_COLOR}: single color lightmap
@@ -86,7 +89,7 @@ open class Lightmapper protected () extends StObject {
   
   def createMaterials(device: Any, scene: Any, passCount: Any): Unit = js.native
   
-  def createTexture(size: Any, `type`: Any, name: Any): Texture = js.native
+  def createTexture(size: Any, name: Any): Texture = js.native
   
   def destroy(): Unit = js.native
   
@@ -116,7 +119,7 @@ open class Lightmapper protected () extends StObject {
   
   def prepareShadowCasters(nodes: Any): js.Array[Any] = js.native
   
-  def renderShadowMap(shadowMapRendered: Any, casters: Any, lightArray: Any, bakeLight: Any): Boolean = js.native
+  def renderShadowMap(shadowMapRendered: Any, casters: Any, bakeLight: Any): Boolean = js.native
   
   var renderTargets: Map[Any, Any] = js.native
   

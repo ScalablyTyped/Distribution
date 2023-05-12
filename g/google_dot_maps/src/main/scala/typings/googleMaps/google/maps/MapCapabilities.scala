@@ -4,11 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Available only in the v=beta channel: https://goo.gle/3oAthT3.
-  * Object containing a snapshot of what capabilities are currently available
-  * for the Map. See the properties for a list of possible capabilities.
-  */
 trait MapCapabilities extends StObject {
   
   var isAdvancedMarkersAvailable: js.UndefOr[Boolean] = js.undefined

@@ -31,6 +31,9 @@ import typings.nivoCore.mod.PropertyAccessor
 import typings.nivoLegends.distTypesTypesMod.LegendProps
 import typings.react.mod.MemoExoticComponent
 import typings.react.mod.global.JSX.Element
+import typings.reactSpringCore.mod.Interpolation
+import typings.reactSpringCore.mod.SpringConfig
+import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -307,10 +310,8 @@ object mod {
     
     @JSImport("@nivo/chord", "commonDefaultProps.motionConfig")
     @js.native
-    def motionConfig: String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringConfig */ Any) = js.native
-    inline def motionConfig_=(
-      x: String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringConfig */ Any)
-    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("motionConfig")(x.asInstanceOf[js.Any])
+    def motionConfig: String | SpringConfig = js.native
+    inline def motionConfig_=(x: String | SpringConfig): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("motionConfig")(x.asInstanceOf[js.Any])
     
     @JSImport("@nivo/chord", "commonDefaultProps.padAngle")
     @js.native
@@ -343,7 +344,7 @@ object mod {
     inline def role_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("role")(x.asInstanceOf[js.Any])
   }
   
-  inline def computeArcPath(param0: EndAngle): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("computeArcPath")(param0.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def computeArcPath(param0: EndAngle): Interpolation[String | Null, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("computeArcPath")(param0.asInstanceOf[js.Any]).asInstanceOf[Interpolation[String | Null, Any]]
   
   inline def computeChordArcsAndRibbons(param0: Chord): Arcs = ^.asInstanceOf[js.Dynamic].applyDynamic("computeChordArcsAndRibbons")(param0.asInstanceOf[js.Any]).asInstanceOf[Arcs]
   
@@ -351,7 +352,7 @@ object mod {
   
   inline def computeChordLayout(param0: PadAngle): ChordLayout = ^.asInstanceOf[js.Dynamic].applyDynamic("computeChordLayout")(param0.asInstanceOf[js.Any]).asInstanceOf[ChordLayout]
   
-  inline def computeRibbonPath(param0: RibbonGenerator): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("computeRibbonPath")(param0.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def computeRibbonPath(param0: RibbonGenerator): Interpolation[Unit, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("computeRibbonPath")(param0.asInstanceOf[js.Any]).asInstanceOf[Interpolation[Unit, Any]]
   
   object svgDefaultProps {
     
@@ -472,8 +473,8 @@ object mod {
     
     @JSImport("@nivo/chord", "svgDefaultProps.ribbonBlendMode")
     @js.native
-    def ribbonBlendMode: CssMixBlendMode = js.native
-    inline def ribbonBlendMode_=(x: CssMixBlendMode): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ribbonBlendMode")(x.asInstanceOf[js.Any])
+    def ribbonBlendMode: NonNullable[js.UndefOr[CssMixBlendMode]] = js.native
+    inline def ribbonBlendMode_=(x: NonNullable[js.UndefOr[CssMixBlendMode]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ribbonBlendMode")(x.asInstanceOf[js.Any])
     
     @JSImport("@nivo/chord", "svgDefaultProps.ribbonBorderColor")
     @js.native

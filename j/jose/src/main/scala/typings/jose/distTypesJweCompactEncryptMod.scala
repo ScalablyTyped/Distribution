@@ -23,7 +23,8 @@ object distTypesJweCompactEncryptMod {
     /**
       * Encrypts and resolves the value of the Compact JWE string.
       *
-      * @param key Public Key or Secret to encrypt the JWE with.
+      * @param key Public Key or Secret to encrypt the JWE with. See
+      *   {@link https://github.com/panva/jose/issues/210#jwe-alg Algorithm Key Requirements}.
       * @param options JWE Encryption options.
       */
     def encrypt(key: KeyLike): js.Promise[String] = js.native

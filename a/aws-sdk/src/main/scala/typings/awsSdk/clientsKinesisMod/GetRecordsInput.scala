@@ -15,6 +15,11 @@ trait GetRecordsInput extends StObject {
     * The position in the shard from which you want to start sequentially reading data records. A shard iterator specifies this position using the sequence number of a data record in the shard.
     */
   var ShardIterator: typings.awsSdk.clientsKinesisMod.ShardIterator
+  
+  /**
+    * The ARN of the stream.
+    */
+  var StreamARN: js.UndefOr[typings.awsSdk.clientsKinesisMod.StreamARN] = js.undefined
 }
 object GetRecordsInput {
   
@@ -31,5 +36,9 @@ object GetRecordsInput {
     inline def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
     
     inline def setShardIterator(value: ShardIterator): Self = StObject.set(x, "ShardIterator", value.asInstanceOf[js.Any])
+    
+    inline def setStreamARN(value: StreamARN): Self = StObject.set(x, "StreamARN", value.asInstanceOf[js.Any])
+    
+    inline def setStreamARNUndefined: Self = StObject.set(x, "StreamARN", js.undefined)
   }
 }

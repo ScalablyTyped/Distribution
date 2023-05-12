@@ -343,6 +343,8 @@ trait DetailedHTMLPropsMetaHTML extends StObject {
   
   var autoCorrect: js.UndefOr[String] = js.undefined
   
+  var autoFocus: js.UndefOr[Boolean] = js.undefined
+  
   var autoSave: js.UndefOr[String] = js.undefined
   
   var charSet: js.UndefOr[String] = js.undefined
@@ -601,11 +603,20 @@ trait DetailedHTMLPropsMetaHTML extends StObject {
   // Unknown
   var radioGroup: js.UndefOr[String] = js.undefined
   
+  /**
+    * Allows getting a ref to the component instance.
+    * Once the component unmounts, React will set `ref.current` to `null` (or call the ref with `null` if you passed a callback ref).
+    * @see https://react.dev/learn/referencing-values-with-refs#refs-and-the-dom
+    */
   var ref: js.UndefOr[LegacyRef[HTMLMetaElement]] = js.undefined
+  
+  var rel: js.UndefOr[String] = js.undefined
   
   var resource: js.UndefOr[String] = js.undefined
   
   var results: js.UndefOr[Double] = js.undefined
+  
+  var rev: js.UndefOr[String] = js.undefined
   
   // <command>, <menuitem>
   // WAI-ARIA
@@ -854,6 +865,10 @@ object DetailedHTMLPropsMetaHTML {
     inline def setAutoCorrect(value: String): Self = StObject.set(x, "autoCorrect", value.asInstanceOf[js.Any])
     
     inline def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
+    
+    inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+    
+    inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
     
     inline def setAutoSave(value: String): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
     
@@ -1329,6 +1344,10 @@ object DetailedHTMLPropsMetaHTML {
     
     inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
     
+    inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+    
+    inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+    
     inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
@@ -1336,6 +1355,10 @@ object DetailedHTMLPropsMetaHTML {
     inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
     inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+    
+    inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+    
+    inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
     
     inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     

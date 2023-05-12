@@ -139,7 +139,7 @@ trait colorCreateAgeRendererParams extends StObject {
   /**
     * The time unit used to calculate the difference between `endTime` and `startTime`.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createAgeRenderer)
+    * [Read more...](global.html#unit)
     */
   var unit: js.UndefOr[years | months | days | hours | minutes | seconds] = js.undefined
   

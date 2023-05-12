@@ -5,20 +5,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait Typeofsearch extends StObject {
   
-  def query(options: QueryInfo, callback: js.Function0[Unit]): Unit
-}
-object Typeofsearch {
-  
-  inline def apply(query: (QueryInfo, js.Function0[Unit]) => Unit): Typeofsearch = {
-    val __obj = js.Dynamic.literal(query = js.Any.fromFunction2(query))
-    __obj.asInstanceOf[Typeofsearch]
-  }
-  
-  @scala.inline
-  implicit open class MutableBuilder[Self <: Typeofsearch] (val x: Self) extends AnyVal {
-    
-    inline def setQuery(value: (QueryInfo, js.Function0[Unit]) => Unit): Self = StObject.set(x, "query", js.Any.fromFunction2(value))
-  }
+  def query(options: QueryInfo): js.Promise[Unit] = js.native
+  def query(options: QueryInfo, callback: js.Function0[Unit]): Unit = js.native
 }

@@ -23,6 +23,16 @@ trait AuthenticationMethodsPolicy
   // The date and time of the last update to the policy. Read-only.
   var lastModifiedDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
+  /**
+    * The state of migration of the authentication methods policy from the legacy multifactor authentication and self-service
+    * password reset (SSPR) policies. The possible values are: premigration - means the authentication methods policy is used
+    * for authentication only, legacy policies are respected. migrationInProgress - means the authentication methods policy
+    * is used for both authentication and SSPR, legacy policies are respected. migrationComplete - means the authentication
+    * methods policy is used for authentication and SSPR, legacy policies are ignored. unknownFutureValue - Evolvable
+    * enumeration sentinel value. Do not use.
+    */
+  var policyMigrationState: js.UndefOr[NullableOption[AuthenticationMethodsPolicyMigrationState]] = js.undefined
+  
   // The version of the policy in use. Read-only.
   var policyVersion: js.UndefOr[NullableOption[String]] = js.undefined
   
@@ -69,6 +79,12 @@ object AuthenticationMethodsPolicy {
     inline def setLastModifiedDateTimeNull: Self = StObject.set(x, "lastModifiedDateTime", null)
     
     inline def setLastModifiedDateTimeUndefined: Self = StObject.set(x, "lastModifiedDateTime", js.undefined)
+    
+    inline def setPolicyMigrationState(value: NullableOption[AuthenticationMethodsPolicyMigrationState]): Self = StObject.set(x, "policyMigrationState", value.asInstanceOf[js.Any])
+    
+    inline def setPolicyMigrationStateNull: Self = StObject.set(x, "policyMigrationState", null)
+    
+    inline def setPolicyMigrationStateUndefined: Self = StObject.set(x, "policyMigrationState", js.undefined)
     
     inline def setPolicyVersion(value: NullableOption[String]): Self = StObject.set(x, "policyVersion", value.asInstanceOf[js.Any])
     

@@ -1,7 +1,7 @@
 
 # Scala.js typings for theme-ui__color-modes
 
-Typings are for version 0.15.4
+Typings are for version 0.15.7
 
 ## Library description:
 Adds support for user-controlled color modes

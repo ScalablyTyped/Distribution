@@ -6,7 +6,6 @@ import typings.mongodb.mod.CommonEvents
 import typings.mongodb.mod.CompressorName
 import typings.mongodb.mod.CursorFlag
 import typings.mongodb.mod.GSSAPICanonicalizationValue
-import typings.mongodb.mod.LoggerLevel
 import typings.mongodb.mod.MongoErrorLabel
 import typings.mongodb.mod.ProfilingLevel
 import typings.mongodb.mod.ReadConcernLevel
@@ -61,6 +60,12 @@ object mongodbStrings {
   inline def HandshakeError: HandshakeError = "HandshakeError".asInstanceOf[HandshakeError]
   
   @js.native
+  sealed trait InterruptInUseConnections
+    extends StObject
+       with MongoErrorLabel
+  inline def InterruptInUseConnections: InterruptInUseConnections = "InterruptInUseConnections".asInstanceOf[InterruptInUseConnections]
+  
+  @js.native
   sealed trait LessthansignmonitorGreaterthansign extends StObject
   inline def LessthansignmonitorGreaterthansign: LessthansignmonitorGreaterthansign = "<monitor>".asInstanceOf[LessthansignmonitorGreaterthansign]
   
@@ -87,6 +92,12 @@ object mongodbStrings {
     extends StObject
        with AuthMechanism
   inline def `MONGODB-CR`: `MONGODB-CR` = "MONGODB-CR".asInstanceOf[`MONGODB-CR`]
+  
+  @js.native
+  sealed trait `MONGODB-OIDC`
+    extends StObject
+       with AuthMechanism
+  inline def `MONGODB-OIDC`: `MONGODB-OIDC` = "MONGODB-OIDC".asInstanceOf[`MONGODB-OIDC`]
   
   @js.native
   sealed trait `MONGODB-X509`
@@ -282,6 +293,18 @@ object mongodbStrings {
   inline def awaitData: awaitData = "awaitData".asInstanceOf[awaitData]
   
   @js.native
+  sealed trait aws extends StObject
+  inline def aws: aws = "aws".asInstanceOf[aws]
+  
+  @js.native
+  sealed trait awsDotlambda extends StObject
+  inline def awsDotlambda: awsDotlambda = "aws.lambda".asInstanceOf[awsDotlambda]
+  
+  @js.native
+  sealed trait azureDotfunc extends StObject
+  inline def azureDotfunc: azureDotfunc = "azure.func".asInstanceOf[azureDotfunc]
+  
+  @js.native
   sealed trait before
     extends StObject
        with ReturnDocument
@@ -408,12 +431,6 @@ object mongodbStrings {
   inline def dbPointer: dbPointer = "dbPointer".asInstanceOf[dbPointer]
   
   @js.native
-  sealed trait debug
-    extends StObject
-       with LoggerLevel
-  inline def debug: debug = "debug".asInstanceOf[debug]
-  
-  @js.native
   sealed trait decimal
     extends StObject
        with BSONTypeAlias
@@ -462,9 +479,7 @@ object mongodbStrings {
   inline def end: end = "end".asInstanceOf[end]
   
   @js.native
-  sealed trait error
-    extends StObject
-       with LoggerLevel
+  sealed trait error extends StObject
   inline def error: error = "error".asInstanceOf[error]
   
   @js.native
@@ -498,8 +513,8 @@ object mongodbStrings {
   inline def forwardAndReverse: forwardAndReverse = "forwardAndReverse".asInstanceOf[forwardAndReverse]
   
   @js.native
-  sealed trait generation extends StObject
-  inline def generation: generation = "generation".asInstanceOf[generation]
+  sealed trait gcpDotfunc extends StObject
+  inline def gcpDotfunc: gcpDotfunc = "gcp.func".asInstanceOf[gcpDotfunc]
   
   @js.native
   sealed trait geoHaystack
@@ -522,34 +537,16 @@ object mongodbStrings {
   inline def host: host = "host".asInstanceOf[host]
   
   @js.native
-  sealed trait hostAddress extends StObject
-  inline def hostAddress: hostAddress = "hostAddress".asInstanceOf[hostAddress]
-  
-  @js.native
   sealed trait hours extends StObject
   inline def hours: hours = "hours".asInstanceOf[hours]
-  
-  @js.native
-  sealed trait id extends StObject
-  inline def id: id = "id".asInstanceOf[id]
   
   @js.native
   sealed trait index extends StObject
   inline def index: index = "index".asInstanceOf[index]
   
   @js.native
-  sealed trait info
-    extends StObject
-       with LoggerLevel
-  inline def info: info = "info".asInstanceOf[info]
-  
-  @js.native
   sealed trait init extends StObject
   inline def init: init = "init".asInstanceOf[init]
-  
-  @js.native
-  sealed trait `inline` extends StObject
-  inline def `inline`: `inline` = "inline".asInstanceOf[`inline`]
   
   @js.native
   sealed trait insert extends StObject
@@ -941,10 +938,8 @@ object mongodbStrings {
   inline def update: update = "update".asInstanceOf[update]
   
   @js.native
-  sealed trait warn
-    extends StObject
-       with LoggerLevel
-  inline def warn: warn = "warn".asInstanceOf[warn]
+  sealed trait vercel extends StObject
+  inline def vercel: vercel = "vercel".asInstanceOf[vercel]
   
   @js.native
   sealed trait zlib

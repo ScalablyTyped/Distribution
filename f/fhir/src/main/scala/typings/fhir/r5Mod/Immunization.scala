@@ -14,10 +14,6 @@ trait Immunization
   
   var _expirationDate: js.UndefOr[Element] = js.undefined
   
-  var _instantiatesCanonical: js.UndefOr[js.Array[Element]] = js.undefined
-  
-  var _instantiatesUri: js.UndefOr[js.Array[Element]] = js.undefined
-  
   var _isSubpotent: js.UndefOr[Element] = js.undefined
   
   var _lotNumber: js.UndefOr[Element] = js.undefined
@@ -28,9 +24,12 @@ trait Immunization
   
   var _primarySource: js.UndefOr[Element] = js.undefined
   
-  var _recorded: js.UndefOr[Element] = js.undefined
-  
   var _status: js.UndefOr[Element] = js.undefined
+  
+  /**
+    * An indication of which product was administered to the patient. This is typically a more detailed representation of the concept conveyed by the vaccineCode data element. If a Medication resource is referenced, it may be to a stand-alone resource or a contained resource within the Immunization resource.
+    */
+  var administeredProduct: js.UndefOr[CodeableReference] = js.undefined
   
   /**
     * Allows tracing of an authorization for the Immunization.
@@ -41,11 +40,6 @@ trait Immunization
     * The quantity of vaccine product that was administered.
     */
   var doseQuantity: js.UndefOr[Quantity] = js.undefined
-  
-  /**
-    * Educational material presented to the patient (or guardian) at the time of vaccine administration.
-    */
-  var education: js.UndefOr[js.Array[ImmunizationEducation]] = js.undefined
   
   /**
     * The visit or admission or other contact between patient and health care provider the immunization was performed as part of.
@@ -70,22 +64,7 @@ trait Immunization
   /**
     * Typically will not be populated if primarySource = True, not required even if primarySource = False.
     */
-  var informationSourceCodeableConcept: js.UndefOr[CodeableConcept] = js.undefined
-  
-  /**
-    * Typically will not be populated if primarySource = True, not required even if primarySource = False.
-    */
-  var informationSourceReference: js.UndefOr[Reference] = js.undefined
-  
-  /**
-    * The URL pointing to a FHIR-defined protocol, guideline, orderset or other definition that is adhered to in whole or in part by this Immunization.
-    */
-  var instantiatesCanonical: js.UndefOr[js.Array[String]] = js.undefined
-  
-  /**
-    * This might be an HTML page, PDF, etc. or could just be a non-resolvable URI identifier.
-    */
-  var instantiatesUri: js.UndefOr[js.Array[String]] = js.undefined
+  var informationSource: js.UndefOr[CodeableReference] = js.undefined
   
   /**
     * Typically, the recognition of the dose being sub-potent is retrospective, after the administration (ex. notification of a manufacturer recall after administration). However, in the case of a partial administration (the patient moves unexpectedly and only some of the dose is actually administered), subpotency may be recognized immediately, but it is still important to record the event.
@@ -105,7 +84,7 @@ trait Immunization
   /**
     * Name of vaccine manufacturer.
     */
-  var manufacturer: js.UndefOr[Reference] = js.undefined
+  var manufacturer: js.UndefOr[CodeableReference] = js.undefined
   
   /**
     * Extra information about the immunization that is not conveyed by the other attributes.
@@ -140,7 +119,7 @@ trait Immunization
   /**
     * Indicates a patient's eligibility for a funding program.
     */
-  var programEligibility: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
+  var programEligibility: js.UndefOr[js.Array[ImmunizationProgramEligibility]] = js.undefined
   
   /**
     * The protocol (set of recommendations) being followed by the provider who administered the dose.
@@ -156,11 +135,6 @@ trait Immunization
     * Describes why the immunization occurred in coded or textual form, or Indicates another resource (Condition, Observation or DiagnosticReport) whose existence justifies this immunization.
     */
   var reason: js.UndefOr[js.Array[CodeableReference]] = js.undefined
-  
-  /**
-    * The date the occurrence of the immunization was first captured in the record - potentially significantly after the occurrence of the event.
-    */
-  var recorded: js.UndefOr[String] = js.undefined
   
   /** Resource Type Name (for serialization) */
   @JSName("resourceType")
@@ -192,6 +166,11 @@ trait Immunization
   var subpotentReason: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
   /**
+    * Additional information that is relevant to the immunization (e.g. for a vaccine recipient who is pregnant, the gestational age of the fetus). The reason why a vaccine was given (e.g. occupation, underlying medical condition) should be conveyed in Immunization.reason, not as supporting information. The reason why a vaccine was not given (e.g. contraindication) should be conveyed in Immunization.statusReason, not as supporting information.
+    */
+  var supportingInformation: js.UndefOr[js.Array[Reference]] = js.undefined
+  
+  /**
     * The code for the administered vaccine may be reported at various levels of granularity from a very generic code for a general type of vaccine (e.g. the SNOMED or CVX code for the flu vaccine) to a very discrete code for a specific product including the form and packaging (e.g. an NDC code). Because vaccineCode uses the CodeableConcept data type, multiple codes at different levels of granularity may be reported for a single immunization event provided that all codes are appropriate for the same vaccine. For example, both NDC and CVX codes may be provided for a given immunization event by repeating the coding element within vaccineCode.
     */
   var vaccineCode: CodeableConcept
@@ -210,6 +189,10 @@ object Immunization {
   @scala.inline
   implicit open class MutableBuilder[Self <: Immunization] (val x: Self) extends AnyVal {
     
+    inline def setAdministeredProduct(value: CodeableReference): Self = StObject.set(x, "administeredProduct", value.asInstanceOf[js.Any])
+    
+    inline def setAdministeredProductUndefined: Self = StObject.set(x, "administeredProduct", js.undefined)
+    
     inline def setBasedOn(value: js.Array[Reference]): Self = StObject.set(x, "basedOn", value.asInstanceOf[js.Any])
     
     inline def setBasedOnUndefined: Self = StObject.set(x, "basedOn", js.undefined)
@@ -219,12 +202,6 @@ object Immunization {
     inline def setDoseQuantity(value: Quantity): Self = StObject.set(x, "doseQuantity", value.asInstanceOf[js.Any])
     
     inline def setDoseQuantityUndefined: Self = StObject.set(x, "doseQuantity", js.undefined)
-    
-    inline def setEducation(value: js.Array[ImmunizationEducation]): Self = StObject.set(x, "education", value.asInstanceOf[js.Any])
-    
-    inline def setEducationUndefined: Self = StObject.set(x, "education", js.undefined)
-    
-    inline def setEducationVarargs(value: ImmunizationEducation*): Self = StObject.set(x, "education", js.Array(value*))
     
     inline def setEncounter(value: Reference): Self = StObject.set(x, "encounter", value.asInstanceOf[js.Any])
     
@@ -244,25 +221,9 @@ object Immunization {
     
     inline def setIdentifierVarargs(value: Identifier*): Self = StObject.set(x, "identifier", js.Array(value*))
     
-    inline def setInformationSourceCodeableConcept(value: CodeableConcept): Self = StObject.set(x, "informationSourceCodeableConcept", value.asInstanceOf[js.Any])
+    inline def setInformationSource(value: CodeableReference): Self = StObject.set(x, "informationSource", value.asInstanceOf[js.Any])
     
-    inline def setInformationSourceCodeableConceptUndefined: Self = StObject.set(x, "informationSourceCodeableConcept", js.undefined)
-    
-    inline def setInformationSourceReference(value: Reference): Self = StObject.set(x, "informationSourceReference", value.asInstanceOf[js.Any])
-    
-    inline def setInformationSourceReferenceUndefined: Self = StObject.set(x, "informationSourceReference", js.undefined)
-    
-    inline def setInstantiatesCanonical(value: js.Array[String]): Self = StObject.set(x, "instantiatesCanonical", value.asInstanceOf[js.Any])
-    
-    inline def setInstantiatesCanonicalUndefined: Self = StObject.set(x, "instantiatesCanonical", js.undefined)
-    
-    inline def setInstantiatesCanonicalVarargs(value: String*): Self = StObject.set(x, "instantiatesCanonical", js.Array(value*))
-    
-    inline def setInstantiatesUri(value: js.Array[String]): Self = StObject.set(x, "instantiatesUri", value.asInstanceOf[js.Any])
-    
-    inline def setInstantiatesUriUndefined: Self = StObject.set(x, "instantiatesUri", js.undefined)
-    
-    inline def setInstantiatesUriVarargs(value: String*): Self = StObject.set(x, "instantiatesUri", js.Array(value*))
+    inline def setInformationSourceUndefined: Self = StObject.set(x, "informationSource", js.undefined)
     
     inline def setIsSubpotent(value: Boolean): Self = StObject.set(x, "isSubpotent", value.asInstanceOf[js.Any])
     
@@ -276,7 +237,7 @@ object Immunization {
     
     inline def setLotNumberUndefined: Self = StObject.set(x, "lotNumber", js.undefined)
     
-    inline def setManufacturer(value: Reference): Self = StObject.set(x, "manufacturer", value.asInstanceOf[js.Any])
+    inline def setManufacturer(value: CodeableReference): Self = StObject.set(x, "manufacturer", value.asInstanceOf[js.Any])
     
     inline def setManufacturerUndefined: Self = StObject.set(x, "manufacturer", js.undefined)
     
@@ -306,11 +267,11 @@ object Immunization {
     
     inline def setPrimarySourceUndefined: Self = StObject.set(x, "primarySource", js.undefined)
     
-    inline def setProgramEligibility(value: js.Array[CodeableConcept]): Self = StObject.set(x, "programEligibility", value.asInstanceOf[js.Any])
+    inline def setProgramEligibility(value: js.Array[ImmunizationProgramEligibility]): Self = StObject.set(x, "programEligibility", value.asInstanceOf[js.Any])
     
     inline def setProgramEligibilityUndefined: Self = StObject.set(x, "programEligibility", js.undefined)
     
-    inline def setProgramEligibilityVarargs(value: CodeableConcept*): Self = StObject.set(x, "programEligibility", js.Array(value*))
+    inline def setProgramEligibilityVarargs(value: ImmunizationProgramEligibility*): Self = StObject.set(x, "programEligibility", js.Array(value*))
     
     inline def setProtocolApplied(value: js.Array[ImmunizationProtocolApplied]): Self = StObject.set(x, "protocolApplied", value.asInstanceOf[js.Any])
     
@@ -329,10 +290,6 @@ object Immunization {
     inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
     
     inline def setReasonVarargs(value: CodeableReference*): Self = StObject.set(x, "reason", js.Array(value*))
-    
-    inline def setRecorded(value: String): Self = StObject.set(x, "recorded", value.asInstanceOf[js.Any])
-    
-    inline def setRecordedUndefined: Self = StObject.set(x, "recorded", js.undefined)
     
     inline def setResourceType(value: typings.fhir.fhirStrings.Immunization): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
@@ -356,23 +313,17 @@ object Immunization {
     
     inline def setSubpotentReasonVarargs(value: CodeableConcept*): Self = StObject.set(x, "subpotentReason", js.Array(value*))
     
+    inline def setSupportingInformation(value: js.Array[Reference]): Self = StObject.set(x, "supportingInformation", value.asInstanceOf[js.Any])
+    
+    inline def setSupportingInformationUndefined: Self = StObject.set(x, "supportingInformation", js.undefined)
+    
+    inline def setSupportingInformationVarargs(value: Reference*): Self = StObject.set(x, "supportingInformation", js.Array(value*))
+    
     inline def setVaccineCode(value: CodeableConcept): Self = StObject.set(x, "vaccineCode", value.asInstanceOf[js.Any])
     
     inline def set_expirationDate(value: Element): Self = StObject.set(x, "_expirationDate", value.asInstanceOf[js.Any])
     
     inline def set_expirationDateUndefined: Self = StObject.set(x, "_expirationDate", js.undefined)
-    
-    inline def set_instantiatesCanonical(value: js.Array[Element]): Self = StObject.set(x, "_instantiatesCanonical", value.asInstanceOf[js.Any])
-    
-    inline def set_instantiatesCanonicalUndefined: Self = StObject.set(x, "_instantiatesCanonical", js.undefined)
-    
-    inline def set_instantiatesCanonicalVarargs(value: Element*): Self = StObject.set(x, "_instantiatesCanonical", js.Array(value*))
-    
-    inline def set_instantiatesUri(value: js.Array[Element]): Self = StObject.set(x, "_instantiatesUri", value.asInstanceOf[js.Any])
-    
-    inline def set_instantiatesUriUndefined: Self = StObject.set(x, "_instantiatesUri", js.undefined)
-    
-    inline def set_instantiatesUriVarargs(value: Element*): Self = StObject.set(x, "_instantiatesUri", js.Array(value*))
     
     inline def set_isSubpotent(value: Element): Self = StObject.set(x, "_isSubpotent", value.asInstanceOf[js.Any])
     
@@ -393,10 +344,6 @@ object Immunization {
     inline def set_primarySource(value: Element): Self = StObject.set(x, "_primarySource", value.asInstanceOf[js.Any])
     
     inline def set_primarySourceUndefined: Self = StObject.set(x, "_primarySource", js.undefined)
-    
-    inline def set_recorded(value: Element): Self = StObject.set(x, "_recorded", value.asInstanceOf[js.Any])
-    
-    inline def set_recordedUndefined: Self = StObject.set(x, "_recorded", js.undefined)
     
     inline def set_status(value: Element): Self = StObject.set(x, "_status", value.asInstanceOf[js.Any])
     

@@ -44,7 +44,6 @@ object fileSystem {
   @js.native
   val ^ : js.Any = js.native
   
-  /** @enum */
   object ChildChangeType {
     
     @JSGlobal("chrome.fileSystem.ChildChangeType")
@@ -86,7 +85,6 @@ object fileSystem {
     *    permission under 'fileSystem'. If the application has the 'write' permission under
     *    'fileSystem', the returned DirectoryEntry will be writable; otherwise it will be read-only.
     *    New in Chrome 31.
-    * @enum
     */
   object ChooseEntryType {
     

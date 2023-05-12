@@ -40,12 +40,17 @@ object mod {
   inline def getFocusableTreeWalker(root: typings.std.Element, opts: FocusManagerOptions): TreeWalker = (^.asInstanceOf[js.Dynamic].applyDynamic("getFocusableTreeWalker")(root.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[TreeWalker]
   inline def getFocusableTreeWalker(root: typings.std.Element, opts: FocusManagerOptions, scope: js.Array[typings.std.Element]): TreeWalker = (^.asInstanceOf[js.Dynamic].applyDynamic("getFocusableTreeWalker")(root.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[TreeWalker]
   
+  inline def isElementInChildOfActiveScope(element: typings.std.Element): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isElementInChildOfActiveScope")(element.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
   inline def useFocusManager(): FocusManager = ^.asInstanceOf[js.Dynamic].applyDynamic("useFocusManager")().asInstanceOf[FocusManager]
   
   inline def useFocusRing(): FocusRingAria = ^.asInstanceOf[js.Dynamic].applyDynamic("useFocusRing")().asInstanceOf[FocusRingAria]
   inline def useFocusRing(props: AriaFocusRingProps): FocusRingAria = ^.asInstanceOf[js.Dynamic].applyDynamic("useFocusRing")(props.asInstanceOf[js.Any]).asInstanceOf[FocusRingAria]
   
   inline def useFocusable(props: FocusableOptions, domRef: RefObject[FocusableElement]): FocusableAria = (^.asInstanceOf[js.Dynamic].applyDynamic("useFocusable")(props.asInstanceOf[js.Any], domRef.asInstanceOf[js.Any])).asInstanceOf[FocusableAria]
+  
+  inline def useHasTabbableChild(ref: RefObject[typings.std.Element]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("useHasTabbableChild")(ref.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def useHasTabbableChild(ref: RefObject[typings.std.Element], options: AriaHasTabbableChildOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("useHasTabbableChild")(ref.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   trait AriaFocusRingProps extends StObject {
     
@@ -84,6 +89,26 @@ object mod {
       inline def setWithin(value: Boolean): Self = StObject.set(x, "within", value.asInstanceOf[js.Any])
       
       inline def setWithinUndefined: Self = StObject.set(x, "within", js.undefined)
+    }
+  }
+  
+  trait AriaHasTabbableChildOptions extends StObject {
+    
+    var isDisabled: js.UndefOr[Boolean] = js.undefined
+  }
+  object AriaHasTabbableChildOptions {
+    
+    inline def apply(): AriaHasTabbableChildOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[AriaHasTabbableChildOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AriaHasTabbableChildOptions] (val x: Self) extends AnyVal {
+      
+      inline def setIsDisabled(value: Boolean): Self = StObject.set(x, "isDisabled", value.asInstanceOf[js.Any])
+      
+      inline def setIsDisabledUndefined: Self = StObject.set(x, "isDisabled", js.undefined)
     }
   }
   
@@ -306,7 +331,7 @@ object mod {
   
   trait FocusableOptions
     extends StObject
-       with FocusableProps
+       with FocusableProps[typings.std.Element]
        with FocusableDOMProps {
     
     /** Whether focus should be disabled. */

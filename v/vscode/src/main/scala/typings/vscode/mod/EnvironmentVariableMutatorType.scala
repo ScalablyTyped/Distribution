@@ -14,8 +14,8 @@ object EnvironmentVariableMutatorType extends StObject {
   def apply(value: Double): js.UndefOr[EnvironmentVariableMutatorType & Double] = js.native
   
   /**
-    * Append to the end of the variable's existing value.
-    */
+  		 * Append to the end of the variable's existing value.
+  		 */
   @js.native
   sealed trait Append
     extends StObject
@@ -23,8 +23,8 @@ object EnvironmentVariableMutatorType extends StObject {
   /* 2 */ val Append: typings.vscode.mod.EnvironmentVariableMutatorType.Append & Double = js.native
   
   /**
-    * Prepend to the start of the variable's existing value.
-    */
+  		 * Prepend to the start of the variable's existing value.
+  		 */
   @js.native
   sealed trait Prepend
     extends StObject
@@ -32,8 +32,8 @@ object EnvironmentVariableMutatorType extends StObject {
   /* 3 */ val Prepend: typings.vscode.mod.EnvironmentVariableMutatorType.Prepend & Double = js.native
   
   /**
-    * Replace the variable's existing value.
-    */
+  		 * Replace the variable's existing value.
+  		 */
   @js.native
   sealed trait Replace
     extends StObject

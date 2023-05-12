@@ -295,6 +295,36 @@ trait MemoryDB extends Service {
   ): Request[DescribeParametersResponse, AWSError] = js.native
   
   /**
+    * Returns information about reserved nodes for this account, or about a specified reserved node.
+    */
+  def describeReservedNodes(): Request[DescribeReservedNodesResponse, AWSError] = js.native
+  def describeReservedNodes(callback: js.Function2[/* err */ AWSError, /* data */ DescribeReservedNodesResponse, Unit]): Request[DescribeReservedNodesResponse, AWSError] = js.native
+  /**
+    * Returns information about reserved nodes for this account, or about a specified reserved node.
+    */
+  def describeReservedNodes(params: DescribeReservedNodesRequest): Request[DescribeReservedNodesResponse, AWSError] = js.native
+  def describeReservedNodes(
+    params: DescribeReservedNodesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeReservedNodesResponse, Unit]
+  ): Request[DescribeReservedNodesResponse, AWSError] = js.native
+  
+  /**
+    * Lists available reserved node offerings.
+    */
+  def describeReservedNodesOfferings(): Request[DescribeReservedNodesOfferingsResponse, AWSError] = js.native
+  def describeReservedNodesOfferings(
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeReservedNodesOfferingsResponse, Unit]
+  ): Request[DescribeReservedNodesOfferingsResponse, AWSError] = js.native
+  /**
+    * Lists available reserved node offerings.
+    */
+  def describeReservedNodesOfferings(params: DescribeReservedNodesOfferingsRequest): Request[DescribeReservedNodesOfferingsResponse, AWSError] = js.native
+  def describeReservedNodesOfferings(
+    params: DescribeReservedNodesOfferingsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeReservedNodesOfferingsResponse, Unit]
+  ): Request[DescribeReservedNodesOfferingsResponse, AWSError] = js.native
+  
+  /**
     * Returns details of the service updates
     */
   def describeServiceUpdates(): Request[DescribeServiceUpdatesResponse, AWSError] = js.native
@@ -391,6 +421,20 @@ trait MemoryDB extends Service {
     params: ListTagsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListTagsResponse, Unit]
   ): Request[ListTagsResponse, AWSError] = js.native
+  
+  /**
+    * Allows you to purchase a reserved node offering. Reserved nodes are not eligible for cancellation and are non-refundable.
+    */
+  def purchaseReservedNodesOffering(): Request[PurchaseReservedNodesOfferingResponse, AWSError] = js.native
+  def purchaseReservedNodesOffering(callback: js.Function2[/* err */ AWSError, /* data */ PurchaseReservedNodesOfferingResponse, Unit]): Request[PurchaseReservedNodesOfferingResponse, AWSError] = js.native
+  /**
+    * Allows you to purchase a reserved node offering. Reserved nodes are not eligible for cancellation and are non-refundable.
+    */
+  def purchaseReservedNodesOffering(params: PurchaseReservedNodesOfferingRequest): Request[PurchaseReservedNodesOfferingResponse, AWSError] = js.native
+  def purchaseReservedNodesOffering(
+    params: PurchaseReservedNodesOfferingRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ PurchaseReservedNodesOfferingResponse, Unit]
+  ): Request[PurchaseReservedNodesOfferingResponse, AWSError] = js.native
   
   /**
     * Modifies the parameters of a parameter group to the engine or system default value. You can reset specific parameters by submitting a list of parameter names. To reset the entire parameter group, specify the AllParameters and ParameterGroupName parameters.

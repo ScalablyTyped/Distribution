@@ -20,12 +20,12 @@ trait Decimals extends StObject {
   var decimals: js.UndefOr[int] = js.undefined
   
   /**
-    * @since 1.30.0 defines what an empty string is parsed as, and what is formatted as an empty string. The
+    * since 1.30.0 defines what an empty string is parsed as, and what is formatted as an empty string. The
     * allowed values are "" (empty string), NaN, `null`, or 0. The 'format' and 'parse' functions are done
     * in a symmetric way. For example, when this parameter is set to NaN, an empty string is parsed as NaN,
     * and NaN is formatted as an empty string.
     */
-  var emptyString: js.UndefOr[Double] = js.undefined
+  var emptyString: js.UndefOr[Null | Double | String] = js.undefined
   
   /**
     * defines the grouping base size in digits if it is different from the grouping size (e.g. Indian grouping)
@@ -75,7 +75,7 @@ trait Decimals extends StObject {
   var minusSign: js.UndefOr[String] = js.undefined
   
   /**
-    * @since 1.28.2 defines whether to output the string from the parse function in order to keep the precision
+    * since 1.28.2 defines whether to output the string from the parse function in order to keep the precision
     * for big numbers. Numbers in scientific notation are parsed back to standard notation. For example, "5e-3"
     * is parsed to "0.005".
     */
@@ -132,7 +132,7 @@ trait Decimals extends StObject {
   var shortLimit: js.UndefOr[int] = js.undefined
   
   /**
-    * @since 1.40 specifies a number from which the scale factor for 'short' or 'long' style format is generated.
+    * since 1.40 specifies a number from which the scale factor for 'short' or 'long' style format is generated.
     * The generated scale factor is used for all numbers which are formatted with this format instance. This
     * option has effect only when the option 'style' is set to 'short' or 'long'. This option is by default
     * set with `undefined` which means the scale factor is selected automatically for each number being formatted.
@@ -140,7 +140,7 @@ trait Decimals extends StObject {
   var shortRefNumber: js.UndefOr[int] = js.undefined
   
   /**
-    * @since 1.40 specifies whether the scale factor is shown in the formatted number. This option takes effect
+    * since 1.40 specifies whether the scale factor is shown in the formatted number. This option takes effect
     * only when the 'style' options is set to either 'short' or 'long'.
     */
   var showScale: js.UndefOr[Boolean] = js.undefined
@@ -177,7 +177,9 @@ object Decimals {
     
     inline def setDecimalsUndefined: Self = StObject.set(x, "decimals", js.undefined)
     
-    inline def setEmptyString(value: Double): Self = StObject.set(x, "emptyString", value.asInstanceOf[js.Any])
+    inline def setEmptyString(value: Double | String): Self = StObject.set(x, "emptyString", value.asInstanceOf[js.Any])
+    
+    inline def setEmptyStringNull: Self = StObject.set(x, "emptyString", null)
     
     inline def setEmptyStringUndefined: Self = StObject.set(x, "emptyString", js.undefined)
     

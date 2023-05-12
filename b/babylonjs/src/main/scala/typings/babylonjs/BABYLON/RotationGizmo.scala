@@ -66,8 +66,14 @@ trait RotationGizmo
   @JSName("snapDistance")
   var snapDistance_FRotationGizmo: Double = js.native
   
+  @JSName("updateGizmoPositionToMatchAttachedMesh")
+  def updateGizmoPositionToMatchAttachedMesh_MRotationGizmo: Boolean = js.native
+  
   @JSName("updateGizmoRotationToMatchAttachedMesh")
   def updateGizmoRotationToMatchAttachedMesh_MRotationGizmo: Boolean = js.native
+  
+  @JSName("updateScale")
+  def updateScale_MRotationGizmo: Boolean = js.native
   
   /**
     * Internal gizmo used for interactions on the x axis

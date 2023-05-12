@@ -1,11 +1,7 @@
 package typings.pixiCore
 
-import typings.pixiCore.libBackgroundBackgroundSystemMod.BackgroundOptions
-import typings.pixiCore.libContextContextSystemMod.ContextOptions
 import typings.pixiCore.libIrendererMod.IRenderer
-import typings.pixiCore.libPluginPluginSystemMod.IRendererPlugins
 import typings.pixiCore.libSystemIsystemMod.ISystem
-import typings.pixiCore.libViewViewSystemMod.ViewOptions
 import typings.pixiExtensions.mod.ExtensionMetadata
 import typings.pixiSettings.libIcanvasMod.ICanvas
 import org.scalablytyped.runtime.StObject
@@ -18,7 +14,7 @@ object libStartupStartupSystemMod {
   @js.native
   open class StartupSystem protected ()
     extends StObject
-       with ISystem[Null, Null] {
+       with ISystem[StartupSystemOptions, Null] {
     def this(renderer: IRenderer[ICanvas]) = this()
     
     @JSName("destroy")
@@ -30,10 +26,20 @@ object libStartupStartupSystemMod {
       * It all starts here! This initiates every system, passing in the options for any system by name.
       * @param options - the config for the renderer and all its systems
       */
-    def run(options: StartupOptions): Unit = js.native
+    def run(options: StartupSystemOptions): Unit = js.native
   }
   /* static members */
   object StartupSystem {
+    
+    @JSImport("@pixi/core/lib/startup/StartupSystem", "StartupSystem")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /** @ignore */
+    @JSImport("@pixi/core/lib/startup/StartupSystem", "StartupSystem.defaultOptions")
+    @js.native
+    def defaultOptions: StartupSystemOptions = js.native
+    inline def defaultOptions_=(x: StartupSystemOptions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultOptions")(x.asInstanceOf[js.Any])
     
     /** @ignore */
     @JSImport("@pixi/core/lib/startup/StartupSystem", "StartupSystem.extension")
@@ -41,40 +47,25 @@ object libStartupStartupSystemMod {
     val `extension`: ExtensionMetadata = js.native
   }
   
-  /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped {[ P in string ]: unknown} */ trait StartupOptions extends StObject {
+  trait StartupSystemOptions extends StObject {
     
-    var _plugin: IRendererPlugins
-    
-    var _view: ViewOptions
-    
-    var background: BackgroundOptions
-    
-    var context: js.UndefOr[ContextOptions] = js.undefined
-    
+    /**
+      * Whether to log the version and type information of renderer to console.
+      * @memberof PIXI.IRendererOptions
+      */
     var hello: Boolean
   }
-  object StartupOptions {
+  object StartupSystemOptions {
     
-    inline def apply(_plugin: IRendererPlugins, _view: ViewOptions, background: BackgroundOptions, hello: Boolean): StartupOptions = {
-      val __obj = js.Dynamic.literal(_plugin = _plugin.asInstanceOf[js.Any], _view = _view.asInstanceOf[js.Any], background = background.asInstanceOf[js.Any], hello = hello.asInstanceOf[js.Any])
-      __obj.asInstanceOf[StartupOptions]
+    inline def apply(hello: Boolean): StartupSystemOptions = {
+      val __obj = js.Dynamic.literal(hello = hello.asInstanceOf[js.Any])
+      __obj.asInstanceOf[StartupSystemOptions]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: StartupOptions] (val x: Self) extends AnyVal {
-      
-      inline def setBackground(value: BackgroundOptions): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
-      
-      inline def setContext(value: ContextOptions): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
-      
-      inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+    implicit open class MutableBuilder[Self <: StartupSystemOptions] (val x: Self) extends AnyVal {
       
       inline def setHello(value: Boolean): Self = StObject.set(x, "hello", value.asInstanceOf[js.Any])
-      
-      inline def set_plugin(value: IRendererPlugins): Self = StObject.set(x, "_plugin", value.asInstanceOf[js.Any])
-      
-      inline def set_view(value: ViewOptions): Self = StObject.set(x, "_view", value.asInstanceOf[js.Any])
     }
   }
 }

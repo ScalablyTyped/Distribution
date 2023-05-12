@@ -27,7 +27,7 @@ trait UpdateImageRequest extends StObject {
   var ImageName: typings.awsSdk.clientsSagemakerMod.ImageName
   
   /**
-    * The new Amazon Resource Name (ARN) for the IAM role that enables Amazon SageMaker to perform tasks on your behalf.
+    * The new ARN for the IAM role that enables Amazon SageMaker to perform tasks on your behalf.
     */
   var RoleArn: js.UndefOr[typings.awsSdk.clientsSagemakerMod.RoleArn] = js.undefined
 }

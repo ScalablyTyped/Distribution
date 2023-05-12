@@ -12,7 +12,7 @@ trait CreateQuerySuggestionsBlockListRequest extends StObject {
   var ClientToken: js.UndefOr[ClientTokenName] = js.undefined
   
   /**
-    * A user-friendly description for the block list. For example, the description "List of all offensive words that can appear in user queries and need to be blocked from suggestions."
+    * A description for the block list. For example, the description "List of all offensive words that can appear in user queries and need to be blocked from suggestions."
     */
   var Description: js.UndefOr[typings.awsSdk.clientsKendraMod.Description] = js.undefined
   
@@ -22,12 +22,12 @@ trait CreateQuerySuggestionsBlockListRequest extends StObject {
   var IndexId: typings.awsSdk.clientsKendraMod.IndexId
   
   /**
-    * A user friendly name for the block list. For example, the block list named 'offensive-words' includes all offensive words that could appear in user queries and need to be blocked from suggestions.
+    * A name for the block list. For example, the name 'offensive-words', which includes all offensive words that could appear in user queries and need to be blocked from suggestions.
     */
   var Name: QuerySuggestionsBlockListName
   
   /**
-    * The IAM (Identity and Access Management) role used by Amazon Kendra to access the block list text file in your S3 bucket. You need permissions to the role ARN (Amazon Web Services Resource Name). The role needs S3 read permissions to your file in S3 and needs to give STS (Security Token Service) assume role permissions to Amazon Kendra.
+    * The Amazon Resource Name (ARN) of an IAM role with permission to access your S3 bucket that contains the block list text file. For more information, see IAM access roles for Amazon Kendra.
     */
   var RoleArn: typings.awsSdk.clientsKendraMod.RoleArn
   
@@ -37,7 +37,7 @@ trait CreateQuerySuggestionsBlockListRequest extends StObject {
   var SourceS3Path: S3Path
   
   /**
-    * A tag that you can assign to a block list that categorizes the block list.
+    * A list of key-value pairs that identify or categorize the block list. Tag keys and values can consist of Unicode letters, digits, white space, and any of the following symbols: _ . : / = + - @.
     */
   var Tags: js.UndefOr[TagList] = js.undefined
 }

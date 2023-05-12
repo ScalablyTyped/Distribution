@@ -1,5 +1,6 @@
 package typings.phaser.Phaser
 
+import typings.phaser.Phaser.Cameras.Scene2D.Camera
 import typings.phaser.Phaser.Device.Fullscreen
 import typings.phaser.Phaser.Events.EventEmitter
 import typings.phaser.Phaser.Geom.Rectangle
@@ -388,7 +389,7 @@ object Scale {
     /**
       * The DOM Element which is sent into fullscreen mode.
       */
-    var fullscreenTarget: Any = js.native
+    var fullscreenTarget: Any | Null = js.native
     
     /**
       * A reference to the Phaser.Game instance.
@@ -422,9 +423,20 @@ object Scale {
     def getParent(config: GameConfig): Unit = js.native
     
     /**
-      * Calculates the size of the parent bounds and updates the `parentSize` component, if the canvas has a dom parent.
+      * Calculates the size of the parent bounds and updates the `parentSize`
+      * properties, only if the canvas has a dom parent.
       */
     def getParentBounds(): Boolean = js.native
+    
+    /**
+      * Get Rectange of visible area.
+      * @param camera The camera this viewport is respond upon.
+      * @param out The Rectangle of visible area.
+      */
+    def getViewPort(): Rectangle = js.native
+    def getViewPort(camera: Unit, out: Rectangle): Rectangle = js.native
+    def getViewPort(camera: Camera): Rectangle = js.native
+    def getViewPort(camera: Camera, out: Rectangle): Rectangle = js.native
     
     /**
       * The game height.
@@ -496,7 +508,7 @@ object Scale {
       * This is set in the Game Config as the `parent` property. If undefined (or just not present), it will default
       * to use the document body. If specifically set to `null` Phaser will ignore all parent operations.
       */
-    var parent: Any = js.native
+    var parent: Any | Null = js.native
     
     /**
       * Is the parent element the browser window?

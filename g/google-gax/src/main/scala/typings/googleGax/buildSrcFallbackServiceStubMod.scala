@@ -43,9 +43,11 @@ object buildSrcFallbackServiceStubMod {
   type FallbackServiceStub = StringDictionary[
     js.Function4[
       /* request */ js.Object, 
-      /* options */ js.Object, 
-      /* metadata */ js.Object, 
-      /* callback */ js.Function2[/* err */ js.UndefOr[js.Error], /* response */ js.UndefOr[js.Object], Unit], 
+      /* options */ js.UndefOr[js.Object], 
+      /* metadata */ js.UndefOr[js.Object], 
+      /* callback */ js.UndefOr[
+        js.Function2[/* err */ js.UndefOr[js.Error], /* response */ js.UndefOr[js.Object], Unit]
+      ], 
       StreamArrayParser | Cancel
     ]
   ]

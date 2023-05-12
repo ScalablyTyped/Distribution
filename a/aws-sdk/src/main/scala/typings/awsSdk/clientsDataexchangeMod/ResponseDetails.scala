@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ResponseDetails extends StObject {
   
   /**
+    * Response details from the CreateS3DataAccessFromS3Bucket job.
+    */
+  var CreateS3DataAccessFromS3Bucket: js.UndefOr[CreateS3DataAccessFromS3BucketResponseDetails] = js.undefined
+  
+  /**
     * Details for the export to signed URL response.
     */
   var ExportAssetToSignedUrl: js.UndefOr[ExportAssetToSignedUrlResponseDetails] = js.undefined
@@ -32,6 +37,11 @@ trait ResponseDetails extends StObject {
   var ImportAssetFromSignedUrl: js.UndefOr[ImportAssetFromSignedUrlResponseDetails] = js.undefined
   
   /**
+    * Response details from the ImportAssetsFromLakeFormationTagPolicy job.
+    */
+  var ImportAssetsFromLakeFormationTagPolicy: js.UndefOr[ImportAssetsFromLakeFormationTagPolicyResponseDetails] = js.undefined
+  
+  /**
     * Details from an import from Amazon Redshift datashare response.
     */
   var ImportAssetsFromRedshiftDataShares: js.UndefOr[ImportAssetsFromRedshiftDataSharesResponseDetails] = js.undefined
@@ -50,6 +60,10 @@ object ResponseDetails {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: ResponseDetails] (val x: Self) extends AnyVal {
+    
+    inline def setCreateS3DataAccessFromS3Bucket(value: CreateS3DataAccessFromS3BucketResponseDetails): Self = StObject.set(x, "CreateS3DataAccessFromS3Bucket", value.asInstanceOf[js.Any])
+    
+    inline def setCreateS3DataAccessFromS3BucketUndefined: Self = StObject.set(x, "CreateS3DataAccessFromS3Bucket", js.undefined)
     
     inline def setExportAssetToSignedUrl(value: ExportAssetToSignedUrlResponseDetails): Self = StObject.set(x, "ExportAssetToSignedUrl", value.asInstanceOf[js.Any])
     
@@ -70,6 +84,10 @@ object ResponseDetails {
     inline def setImportAssetFromSignedUrl(value: ImportAssetFromSignedUrlResponseDetails): Self = StObject.set(x, "ImportAssetFromSignedUrl", value.asInstanceOf[js.Any])
     
     inline def setImportAssetFromSignedUrlUndefined: Self = StObject.set(x, "ImportAssetFromSignedUrl", js.undefined)
+    
+    inline def setImportAssetsFromLakeFormationTagPolicy(value: ImportAssetsFromLakeFormationTagPolicyResponseDetails): Self = StObject.set(x, "ImportAssetsFromLakeFormationTagPolicy", value.asInstanceOf[js.Any])
+    
+    inline def setImportAssetsFromLakeFormationTagPolicyUndefined: Self = StObject.set(x, "ImportAssetsFromLakeFormationTagPolicy", js.undefined)
     
     inline def setImportAssetsFromRedshiftDataShares(value: ImportAssetsFromRedshiftDataSharesResponseDetails): Self = StObject.set(x, "ImportAssetsFromRedshiftDataShares", value.asInstanceOf[js.Any])
     

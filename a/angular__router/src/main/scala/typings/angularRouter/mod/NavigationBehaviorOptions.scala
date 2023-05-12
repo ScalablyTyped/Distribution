@@ -1,11 +1,24 @@
 package typings.angularRouter.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.angularRouter.angularRouterStrings.reload
+import typings.std.Extract
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait NavigationBehaviorOptions extends StObject {
+  
+  /**
+    * How to handle a navigation request to the current URL.
+    *
+    * This value is a subset of the options available in `OnSameUrlNavigation` and
+    * will take precedence over the default value set for the `Router`.
+    *
+    * @see `OnSameUrlNavigation`
+    * @see `RouterConfigOptions`
+    */
+  var onSameUrlNavigation: js.UndefOr[Extract[OnSameUrlNavigation, reload]] = js.undefined
   
   /**
     * When true, navigates while replacing the current state in history.
@@ -53,6 +66,10 @@ object NavigationBehaviorOptions {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: NavigationBehaviorOptions] (val x: Self) extends AnyVal {
+    
+    inline def setOnSameUrlNavigation(value: Extract[OnSameUrlNavigation, reload]): Self = StObject.set(x, "onSameUrlNavigation", value.asInstanceOf[js.Any])
+    
+    inline def setOnSameUrlNavigationUndefined: Self = StObject.set(x, "onSameUrlNavigation", js.undefined)
     
     inline def setReplaceUrl(value: Boolean): Self = StObject.set(x, "replaceUrl", value.asInstanceOf[js.Any])
     

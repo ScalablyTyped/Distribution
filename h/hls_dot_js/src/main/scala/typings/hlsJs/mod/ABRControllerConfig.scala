@@ -10,6 +10,9 @@ trait ABRControllerConfig extends StObject {
   
   var abrBandWidthUpFactor: Double
   
+  /**
+    * Default bandwidth estimate in bits/s prior to collecting fragment bandwidth samples
+    */
   var abrEwmaDefaultEstimate: Double
   
   var abrEwmaFastLive: Double

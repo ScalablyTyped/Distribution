@@ -1,7 +1,7 @@
 package typings.hapiNes
 
 import org.scalablytyped.runtime.Shortcut
-import typings.hapiHapi.mod.Plugin
+import typings.hapiHapi.libTypesPluginMod.Plugin
 import typings.hapiNes.anon.Instantiable
 import typings.hapiNes.hapiNesStrings.any
 import typings.hapiNes.hapiNesStrings.app
@@ -16,7 +16,7 @@ object mod extends Shortcut {
   
   @JSImport("@hapi/nes", JSImport.Namespace)
   @js.native
-  val ^ : NesClassExports & Plugin[js.Object] = js.native
+  val ^ : NesClassExports & (Plugin[js.Object, Unit]) = js.native
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("@hapi/nes", "Client")
@@ -352,10 +352,10 @@ object mod extends Shortcut {
     }
   }
   
-  type _To = NesClassExports & Plugin[js.Object]
+  type _To = NesClassExports & (Plugin[js.Object, Unit])
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: NesClassExports & Plugin[js.Object] = ^
+  override def _to: NesClassExports & (Plugin[js.Object, Unit]) = ^
   
   /* augmented module */
   object hapiHapiAugmentingMod {

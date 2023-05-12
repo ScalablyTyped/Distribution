@@ -62,6 +62,13 @@ object mod {
     var open: js.UndefOr[OpenOptions | Boolean] = js.undefined
     
     /**
+      * whether or not to open the iOS Simulator with the preview url file path
+      * (defaults to true via process.env.NODE_ENV !== 'test' and will only run if macOS detected and not in a CI environment)
+      * @default true
+      */
+    var openSimulator: js.UndefOr[Boolean] = js.undefined
+    
+    /**
       *  file path to a pug template file (defaults to preview-email's `template.pug` by default)
       * - this is where you can pass a custom template for rendering email previews, e.g. your own stylesheet
       */
@@ -93,6 +100,10 @@ object mod {
       inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
       inline def setOpen(value: OpenOptions | Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+      
+      inline def setOpenSimulator(value: Boolean): Self = StObject.set(x, "openSimulator", value.asInstanceOf[js.Any])
+      
+      inline def setOpenSimulatorUndefined: Self = StObject.set(x, "openSimulator", js.undefined)
       
       inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
       

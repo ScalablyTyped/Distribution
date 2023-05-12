@@ -6,6 +6,7 @@ import typings.babylonjs.BABYLON.IOfflineProvider
 import typings.babylonjs.BABYLON.IScreenshotSize
 import typings.babylonjs.BABYLON.Nullable
 import typings.babylonjs.HTMLCanvasElement
+import typings.babylonjs.OffscreenCanvas
 import typings.babylonjs.Window
 import typings.babylonjs.anon.CrossOrigin
 import typings.babylonjs.anon.HandlerName
@@ -86,7 +87,7 @@ object Tools {
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateScreenshot")(engine.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], size.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /**
     * Captures a screenshot of the current rendering
-    * @see https://doc.babylonjs.com/how_to/render_scene_on_a_png
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/scene/renderToPNG
     * @param engine defines the rendering engine
     * @param camera defines the source camera
     * @param size This parameter can be set to a single number or to an object with the
@@ -135,7 +136,7 @@ object Tools {
   ): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateScreenshotAsync")(engine.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], size.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   /**
     * Captures a screenshot of the current rendering
-    * @see https://doc.babylonjs.com/how_to/render_scene_on_a_png
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/scene/renderToPNG
     * @param engine defines the rendering engine
     * @param camera defines the source camera
     * @param size This parameter can be set to a single number or to an object with the
@@ -162,7 +163,7 @@ object Tools {
   
   /**
     * Generates an image screenshot from the specified camera.
-    * @see https://doc.babylonjs.com/how_to/render_scene_on_a_png
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/scene/renderToPNG
     * @param engine The engine to use for rendering
     * @param camera The camera to use for rendering
     * @param size This parameter can be set to a single number or to an object with the
@@ -317,7 +318,7 @@ object Tools {
   ): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateScreenshotUsingRenderTargetAsync")(engine.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], size.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], samples.asInstanceOf[js.Any], antialiasing.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   /**
     * Generates an image screenshot from the specified camera.
-    * @see https://doc.babylonjs.com/how_to/render_scene_on_a_png
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/scene/renderToPNG
     * @param engine The engine to use for rendering
     * @param camera The camera to use for rendering
     * @param size This parameter can be set to a single number or to an object with the
@@ -897,131 +898,141 @@ object Tools {
   ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("DumpFramebuffer")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], engine.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   /**
-    * Encodes the canvas data to base 64 or automatically download the result if filename is defined
-    * @param successCallback defines the callback triggered once the data are available
-    * @param mimeType defines the mime type of the result
-    * @param fileName defines he filename to download. If present, the result will automatically be downloaded
-    * @param canvas canvas to get the data from. If not provided, use the default screenshot canvas
-    * @param quality defines the quality of the result
+    * Encodes the canvas data to base 64, or automatically downloads the result if `fileName` is defined.
+    * @param canvas The canvas to get the data from, which can be an offscreen canvas.
+    * @param successCallback The callback which is triggered once the data is available. If `fileName` is defined, the callback will be invoked after the download occurs, and the `data` argument will be an empty string.
+    * @param mimeType The mime type of the result.
+    * @param fileName The name of the file to download. If defined, the result will automatically be downloaded. If not defined, and `successCallback` is also not defined, the result will automatically be downloaded with an auto-generated file name.
+    * @param quality The quality of the result. See {@link https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/toBlob | HTMLCanvasElement.toBlob()}'s `quality` parameter.
     */
-  inline def EncodeScreenshotCanvasData(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")().asInstanceOf[Unit]
-  inline def EncodeScreenshotCanvasData(successCallback: js.Function1[/* data */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(successCallback.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def EncodeScreenshotCanvasData(successCallback: js.Function1[/* data */ String, Unit], mimeType: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def EncodeScreenshotCanvasData(successCallback: js.Function1[/* data */ String, Unit], mimeType: String, fileName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def EncodeScreenshotCanvasData(canvas: HTMLCanvasElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(canvas.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def EncodeScreenshotCanvasData(canvas: HTMLCanvasElement, successCallback: js.Function1[/* data */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(canvas.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def EncodeScreenshotCanvasData(
-    successCallback: js.Function1[/* data */ String, Unit],
-    mimeType: String,
-    fileName: String,
-    canvas: Unit,
-    quality: Double
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], canvas.asInstanceOf[js.Any], quality.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def EncodeScreenshotCanvasData(
-    successCallback: js.Function1[/* data */ String, Unit],
-    mimeType: String,
-    fileName: String,
-    canvas: HTMLCanvasElement
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], canvas.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def EncodeScreenshotCanvasData(
-    successCallback: js.Function1[/* data */ String, Unit],
-    mimeType: String,
-    fileName: String,
     canvas: HTMLCanvasElement,
-    quality: Double
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], canvas.asInstanceOf[js.Any], quality.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    successCallback: js.Function1[/* data */ String, Unit],
+    mimeType: String
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(canvas.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def EncodeScreenshotCanvasData(
+    canvas: HTMLCanvasElement,
+    successCallback: js.Function1[/* data */ String, Unit],
+    mimeType: String,
+    fileName: String
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(canvas.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def EncodeScreenshotCanvasData(
+    canvas: HTMLCanvasElement,
+    successCallback: js.Function1[/* data */ String, Unit],
+    mimeType: String,
+    fileName: String,
+    quality: Double
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(canvas.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], quality.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def EncodeScreenshotCanvasData(
+    canvas: HTMLCanvasElement,
     successCallback: js.Function1[/* data */ String, Unit],
     mimeType: String,
     fileName: Unit,
-    canvas: Unit,
     quality: Double
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], canvas.asInstanceOf[js.Any], quality.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(canvas.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], quality.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def EncodeScreenshotCanvasData(
-    successCallback: js.Function1[/* data */ String, Unit],
-    mimeType: String,
-    fileName: Unit,
-    canvas: HTMLCanvasElement
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], canvas.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def EncodeScreenshotCanvasData(
-    successCallback: js.Function1[/* data */ String, Unit],
-    mimeType: String,
-    fileName: Unit,
     canvas: HTMLCanvasElement,
-    quality: Double
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], canvas.asInstanceOf[js.Any], quality.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def EncodeScreenshotCanvasData(successCallback: js.Function1[/* data */ String, Unit], mimeType: Unit, fileName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    successCallback: js.Function1[/* data */ String, Unit],
+    mimeType: Unit,
+    fileName: String
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(canvas.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def EncodeScreenshotCanvasData(
+    canvas: HTMLCanvasElement,
     successCallback: js.Function1[/* data */ String, Unit],
     mimeType: Unit,
     fileName: String,
-    canvas: Unit,
     quality: Double
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], canvas.asInstanceOf[js.Any], quality.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(canvas.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], quality.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def EncodeScreenshotCanvasData(
-    successCallback: js.Function1[/* data */ String, Unit],
-    mimeType: Unit,
-    fileName: String,
-    canvas: HTMLCanvasElement
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], canvas.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def EncodeScreenshotCanvasData(
-    successCallback: js.Function1[/* data */ String, Unit],
-    mimeType: Unit,
-    fileName: String,
     canvas: HTMLCanvasElement,
+    successCallback: js.Function1[/* data */ String, Unit],
+    mimeType: Unit,
+    fileName: Unit,
     quality: Double
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], canvas.asInstanceOf[js.Any], quality.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(canvas.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], quality.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def EncodeScreenshotCanvasData(canvas: HTMLCanvasElement, successCallback: Unit, mimeType: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(canvas.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def EncodeScreenshotCanvasData(canvas: HTMLCanvasElement, successCallback: Unit, mimeType: String, fileName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(canvas.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def EncodeScreenshotCanvasData(
-    successCallback: js.Function1[/* data */ String, Unit],
-    mimeType: Unit,
-    fileName: Unit,
-    canvas: Unit,
-    quality: Double
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], canvas.asInstanceOf[js.Any], quality.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def EncodeScreenshotCanvasData(
-    successCallback: js.Function1[/* data */ String, Unit],
-    mimeType: Unit,
-    fileName: Unit,
-    canvas: HTMLCanvasElement
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], canvas.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def EncodeScreenshotCanvasData(
-    successCallback: js.Function1[/* data */ String, Unit],
-    mimeType: Unit,
-    fileName: Unit,
     canvas: HTMLCanvasElement,
-    quality: Double
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], canvas.asInstanceOf[js.Any], quality.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def EncodeScreenshotCanvasData(successCallback: Unit, mimeType: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def EncodeScreenshotCanvasData(successCallback: Unit, mimeType: String, fileName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def EncodeScreenshotCanvasData(successCallback: Unit, mimeType: String, fileName: String, canvas: Unit, quality: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], canvas.asInstanceOf[js.Any], quality.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def EncodeScreenshotCanvasData(successCallback: Unit, mimeType: String, fileName: String, canvas: HTMLCanvasElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], canvas.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def EncodeScreenshotCanvasData(
     successCallback: Unit,
     mimeType: String,
     fileName: String,
-    canvas: HTMLCanvasElement,
     quality: Double
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], canvas.asInstanceOf[js.Any], quality.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def EncodeScreenshotCanvasData(successCallback: Unit, mimeType: String, fileName: Unit, canvas: Unit, quality: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], canvas.asInstanceOf[js.Any], quality.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def EncodeScreenshotCanvasData(successCallback: Unit, mimeType: String, fileName: Unit, canvas: HTMLCanvasElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], canvas.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(canvas.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], quality.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def EncodeScreenshotCanvasData(
+    canvas: HTMLCanvasElement,
     successCallback: Unit,
     mimeType: String,
     fileName: Unit,
-    canvas: HTMLCanvasElement,
     quality: Double
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], canvas.asInstanceOf[js.Any], quality.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def EncodeScreenshotCanvasData(successCallback: Unit, mimeType: Unit, fileName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def EncodeScreenshotCanvasData(successCallback: Unit, mimeType: Unit, fileName: String, canvas: Unit, quality: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], canvas.asInstanceOf[js.Any], quality.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def EncodeScreenshotCanvasData(successCallback: Unit, mimeType: Unit, fileName: String, canvas: HTMLCanvasElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], canvas.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(canvas.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], quality.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def EncodeScreenshotCanvasData(canvas: HTMLCanvasElement, successCallback: Unit, mimeType: Unit, fileName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(canvas.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def EncodeScreenshotCanvasData(
+    canvas: HTMLCanvasElement,
     successCallback: Unit,
     mimeType: Unit,
     fileName: String,
-    canvas: HTMLCanvasElement,
     quality: Double
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], canvas.asInstanceOf[js.Any], quality.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def EncodeScreenshotCanvasData(successCallback: Unit, mimeType: Unit, fileName: Unit, canvas: Unit, quality: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], canvas.asInstanceOf[js.Any], quality.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def EncodeScreenshotCanvasData(successCallback: Unit, mimeType: Unit, fileName: Unit, canvas: HTMLCanvasElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], canvas.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def EncodeScreenshotCanvasData(successCallback: Unit, mimeType: Unit, fileName: Unit, canvas: HTMLCanvasElement, quality: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], canvas.asInstanceOf[js.Any], quality.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(canvas.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], quality.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def EncodeScreenshotCanvasData(canvas: HTMLCanvasElement, successCallback: Unit, mimeType: Unit, fileName: Unit, quality: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(canvas.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], quality.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def EncodeScreenshotCanvasData(canvas: OffscreenCanvas): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(canvas.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def EncodeScreenshotCanvasData(canvas: OffscreenCanvas, successCallback: js.Function1[/* data */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(canvas.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def EncodeScreenshotCanvasData(canvas: OffscreenCanvas, successCallback: js.Function1[/* data */ String, Unit], mimeType: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(canvas.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def EncodeScreenshotCanvasData(
+    canvas: OffscreenCanvas,
+    successCallback: js.Function1[/* data */ String, Unit],
+    mimeType: String,
+    fileName: String
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(canvas.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def EncodeScreenshotCanvasData(
+    canvas: OffscreenCanvas,
+    successCallback: js.Function1[/* data */ String, Unit],
+    mimeType: String,
+    fileName: String,
+    quality: Double
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(canvas.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], quality.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def EncodeScreenshotCanvasData(
+    canvas: OffscreenCanvas,
+    successCallback: js.Function1[/* data */ String, Unit],
+    mimeType: String,
+    fileName: Unit,
+    quality: Double
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(canvas.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], quality.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def EncodeScreenshotCanvasData(
+    canvas: OffscreenCanvas,
+    successCallback: js.Function1[/* data */ String, Unit],
+    mimeType: Unit,
+    fileName: String
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(canvas.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def EncodeScreenshotCanvasData(
+    canvas: OffscreenCanvas,
+    successCallback: js.Function1[/* data */ String, Unit],
+    mimeType: Unit,
+    fileName: String,
+    quality: Double
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(canvas.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], quality.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def EncodeScreenshotCanvasData(
+    canvas: OffscreenCanvas,
+    successCallback: js.Function1[/* data */ String, Unit],
+    mimeType: Unit,
+    fileName: Unit,
+    quality: Double
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(canvas.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], quality.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def EncodeScreenshotCanvasData(canvas: OffscreenCanvas, successCallback: Unit, mimeType: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(canvas.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def EncodeScreenshotCanvasData(canvas: OffscreenCanvas, successCallback: Unit, mimeType: String, fileName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(canvas.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def EncodeScreenshotCanvasData(
+    canvas: OffscreenCanvas,
+    successCallback: Unit,
+    mimeType: String,
+    fileName: String,
+    quality: Double
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(canvas.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], quality.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def EncodeScreenshotCanvasData(canvas: OffscreenCanvas, successCallback: Unit, mimeType: String, fileName: Unit, quality: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(canvas.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], quality.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def EncodeScreenshotCanvasData(canvas: OffscreenCanvas, successCallback: Unit, mimeType: Unit, fileName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(canvas.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def EncodeScreenshotCanvasData(canvas: OffscreenCanvas, successCallback: Unit, mimeType: Unit, fileName: String, quality: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(canvas.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], quality.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def EncodeScreenshotCanvasData(canvas: OffscreenCanvas, successCallback: Unit, mimeType: Unit, fileName: Unit, quality: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EncodeScreenshotCanvasData")(canvas.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], quality.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Ends a specific performance counter
@@ -1739,7 +1750,7 @@ object Tools {
   /**
     * Converts the canvas data to blob.
     * This acts as a polyfill for browsers not supporting the to blob function.
-    * @param canvas Defines the canvas to extract the data from
+    * @param canvas Defines the canvas to extract the data from (can be an offscreen canvas)
     * @param successCallback Defines the callback triggered once the data are available
     * @param mimeType Defines the mime type of the result
     * @param quality defines the quality of the result
@@ -1758,6 +1769,24 @@ object Tools {
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ToBlob")(canvas.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], quality.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def ToBlob(
     canvas: HTMLCanvasElement,
+    successCallback: js.Function1[/* blob */ Nullable[Blob], Unit],
+    mimeType: Unit,
+    quality: Double
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ToBlob")(canvas.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], quality.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def ToBlob(canvas: OffscreenCanvas, successCallback: js.Function1[/* blob */ Nullable[Blob], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ToBlob")(canvas.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def ToBlob(
+    canvas: OffscreenCanvas,
+    successCallback: js.Function1[/* blob */ Nullable[Blob], Unit],
+    mimeType: String
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ToBlob")(canvas.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def ToBlob(
+    canvas: OffscreenCanvas,
+    successCallback: js.Function1[/* blob */ Nullable[Blob], Unit],
+    mimeType: String,
+    quality: Double
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ToBlob")(canvas.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], quality.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def ToBlob(
+    canvas: OffscreenCanvas,
     successCallback: js.Function1[/* blob */ Nullable[Blob], Unit],
     mimeType: Unit,
     quality: Double
@@ -1822,18 +1851,15 @@ object Tools {
   def _EndUserMark: Any = js.native
   inline def _EndUserMark_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_EndUserMark")(x.asInstanceOf[js.Any])
   
+  @JSGlobal("BABYLON.Tools._IsOffScreenCanvas")
+  @js.native
+  def _IsOffScreenCanvas: Any = js.native
+  inline def _IsOffScreenCanvas_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_IsOffScreenCanvas")(x.asInstanceOf[js.Any])
+  
   @JSGlobal("BABYLON.Tools._Performance")
   @js.native
   def _Performance: Any = js.native
   inline def _Performance_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Performance")(x.asInstanceOf[js.Any])
-  
-  /**
-    * @ignore
-    */
-  @JSGlobal("BABYLON.Tools._ScreenshotCanvas")
-  @js.native
-  def _ScreenshotCanvas: HTMLCanvasElement = js.native
-  inline def _ScreenshotCanvas_=(x: HTMLCanvasElement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ScreenshotCanvas")(x.asInstanceOf[js.Any])
   
   @JSGlobal("BABYLON.Tools._StartPerformanceConsole")
   @js.native

@@ -9,12 +9,8 @@ object appShellSchemaMod {
   trait Schema extends StObject {
     
     /**
-      * The name of the application directory.
-      */
-    var appDir: js.UndefOr[String] = js.undefined
-    
-    /**
       * The application ID to use in withServerTransition().
+      * @deprecated This option is no longer used.
       */
     var appId: js.UndefOr[String] = js.undefined
     
@@ -52,10 +48,6 @@ object appShellSchemaMod {
     
     @scala.inline
     implicit open class MutableBuilder[Self <: Schema] (val x: Self) extends AnyVal {
-      
-      inline def setAppDir(value: String): Self = StObject.set(x, "appDir", value.asInstanceOf[js.Any])
-      
-      inline def setAppDirUndefined: Self = StObject.set(x, "appDir", js.undefined)
       
       inline def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
       

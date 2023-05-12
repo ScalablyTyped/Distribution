@@ -23,7 +23,8 @@ trait TypeofNgControlStatusGrou
     js.Object, 
     scala.Nothing, 
     scala.Nothing, 
-    `false`
+    `false`, 
+    scala.Nothing
   ] = js.native
   
   var ɵfac: ɵɵFactoryDeclaration[NgControlStatusGroup, js.Array[Self]] = js.native

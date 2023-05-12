@@ -80,22 +80,15 @@ object mod {
     
     /* static member */
     /* was `typeof shouldInstrument` */
-    @JSImport("jest-runtime", "default.shouldInstrument")
-    @js.native
-    def shouldInstrument: js.Function3[
-        /* filename */ String, 
-        /* options */ ShouldInstrumentOptions, 
-        /* config */ ProjectConfig, 
-        Boolean
-      ] = js.native
-    inline def shouldInstrument_=(
-      x: js.Function3[
-          /* filename */ String, 
-          /* options */ ShouldInstrumentOptions, 
-          /* config */ ProjectConfig, 
-          Boolean
-        ]
-    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("shouldInstrument")(x.asInstanceOf[js.Any])
+    inline def shouldInstrument(filename: String, options: ShouldInstrumentOptions, config: ProjectConfig): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shouldInstrument")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    /* static member */
+    /* was `typeof shouldInstrument` */
+    inline def shouldInstrument(
+      filename: String,
+      options: ShouldInstrumentOptions,
+      config: ProjectConfig,
+      loadedFilenames: js.Array[String]
+    ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shouldInstrument")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], config.asInstanceOf[js.Any], loadedFilenames.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   }
   
   trait HasteMapOptions extends StObject {
@@ -109,6 +102,8 @@ object mod {
     var watch: js.UndefOr[Boolean] = js.undefined
     
     var watchman: Boolean
+    
+    var workerThreads: js.UndefOr[Boolean] = js.undefined
   }
   object HasteMapOptions {
     
@@ -133,6 +128,10 @@ object mod {
       inline def setWatchUndefined: Self = StObject.set(x, "watch", js.undefined)
       
       inline def setWatchman(value: Boolean): Self = StObject.set(x, "watchman", value.asInstanceOf[js.Any])
+      
+      inline def setWorkerThreads(value: Boolean): Self = StObject.set(x, "workerThreads", value.asInstanceOf[js.Any])
+      
+      inline def setWorkerThreadsUndefined: Self = StObject.set(x, "workerThreads", js.undefined)
     }
   }
   
@@ -369,6 +368,8 @@ object mod {
     /* private */ var isTornDown: Any = js.native
     
     def isolateModules(fn: js.Function0[Unit]): Unit = js.native
+    
+    def isolateModulesAsync(fn: js.Function0[js.Promise[Unit]]): js.Promise[Unit] = js.native
     
     /* private */ var jestGlobals: Any = js.native
     

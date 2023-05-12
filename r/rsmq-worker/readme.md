@@ -1,7 +1,7 @@
 
 # Scala.js typings for rsmq-worker
 
-Typings are for version 0.3.5
+Typings are for version 0.4.2
 
 ## Library description:
 RSMQ helper to simply implement a worker around the message queue

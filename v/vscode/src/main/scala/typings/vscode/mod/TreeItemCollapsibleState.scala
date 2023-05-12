@@ -14,8 +14,8 @@ object TreeItemCollapsibleState extends StObject {
   def apply(value: Double): js.UndefOr[TreeItemCollapsibleState & Double] = js.native
   
   /**
-    * Determines an item is collapsed
-    */
+  		 * Determines an item is collapsed
+  		 */
   @js.native
   sealed trait Collapsed
     extends StObject
@@ -23,8 +23,8 @@ object TreeItemCollapsibleState extends StObject {
   /* 1 */ val Collapsed: typings.vscode.mod.TreeItemCollapsibleState.Collapsed & Double = js.native
   
   /**
-    * Determines an item is expanded
-    */
+  		 * Determines an item is expanded
+  		 */
   @js.native
   sealed trait Expanded
     extends StObject
@@ -32,8 +32,8 @@ object TreeItemCollapsibleState extends StObject {
   /* 2 */ val Expanded: typings.vscode.mod.TreeItemCollapsibleState.Expanded & Double = js.native
   
   /**
-    * Determines an item can be neither collapsed nor expanded. Implies it has no children.
-    */
+  		 * Determines an item can be neither collapsed nor expanded. Implies it has no children.
+  		 */
   @js.native
   sealed trait None
     extends StObject

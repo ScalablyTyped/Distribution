@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** @typedef {import('./mat4.js').Mat4} Mat4 */
 /**
   * A 3x3 matrix.
   */

@@ -33,11 +33,11 @@ object srcResourceLoaderMod {
     
     def get(filePath: String): js.Promise[String] = js.native
     
-    def getAffectedResources(file: String): Set[String] | js.Array[scala.Nothing] = js.native
+    def getAffectedResources(file: String): js.Array[scala.Nothing] | Set[String] = js.native
     
     def getModifiedResourceFiles(): Set[String] = js.native
     
-    def getResourceDependencies(filePath: String): Set[String] | js.Array[scala.Nothing] = js.native
+    def getResourceDependencies(filePath: String): js.Array[scala.Nothing] | Set[String] = js.native
     
     /* private */ val inlineDataLoaderPath: Any = js.native
     

@@ -22,6 +22,9 @@ trait InternalTextureCreationOptions extends StObject {
     */
   var generateMipMaps: js.UndefOr[Boolean] = js.undefined
   
+  /** Label of the texture (used for debugging only) */
+  var label: js.UndefOr[String] = js.undefined
+  
   /** Defines sample count (1 by default) */
   var samples: js.UndefOr[Double] = js.undefined
   
@@ -59,6 +62,10 @@ object InternalTextureCreationOptions {
     inline def setGenerateMipMaps(value: Boolean): Self = StObject.set(x, "generateMipMaps", value.asInstanceOf[js.Any])
     
     inline def setGenerateMipMapsUndefined: Self = StObject.set(x, "generateMipMaps", js.undefined)
+    
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     inline def setSamples(value: Double): Self = StObject.set(x, "samples", value.asInstanceOf[js.Any])
     

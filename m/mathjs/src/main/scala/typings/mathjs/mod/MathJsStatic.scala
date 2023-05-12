@@ -74,6 +74,7 @@ trait MathJsStatic
   
   var SymbolNode: SymbolNodeCtor = js.native
   
+  def abs(x: js.Array[js.Array[MathNumericType] | MathNumericType]): js.Array[MathNumericType] = js.native
   /*************************************************************************
     * Arithmetic functions
     ************************************************************************/
@@ -84,10 +85,9 @@ trait MathJsStatic
     * @returns Absolute value of x
     */
   def abs(x: Double): Double = js.native
-  def abs(x: BigNumber): BigNumber = js.native
+  def abs(x: Decimal): Decimal = js.native
   def abs(x: Complex): Complex = js.native
   def abs(x: Fraction): Fraction = js.native
-  def abs(x: MathArray): MathArray = js.native
   def abs(x: Matrix): Matrix = js.native
   def abs(x: Unit): Unit = js.native
   
@@ -100,7 +100,7 @@ trait MathJsStatic
     * @returns The arc cosine of x
     */
   def acos(x: Double): Double | Complex = js.native
-  def acos(x: BigNumber): BigNumber = js.native
+  def acos(x: Decimal): Decimal = js.native
   def acos(x: Complex): Complex = js.native
   
   /**
@@ -110,7 +110,7 @@ trait MathJsStatic
     * @returns The hyperbolic arccosine of x
     */
   def acosh(x: Double): Double | Complex = js.native
-  def acosh(x: BigNumber): BigNumber = js.native
+  def acosh(x: Decimal): Decimal = js.native
   def acosh(x: Complex): Complex = js.native
   
   /**
@@ -119,7 +119,7 @@ trait MathJsStatic
     * @returns The arc cotangent of x
     */
   def acot(x: Double): Double = js.native
-  def acot(x: BigNumber): BigNumber = js.native
+  def acot(x: Decimal): Decimal = js.native
   def acot(x: Complex): Complex = js.native
   
   /**
@@ -129,7 +129,7 @@ trait MathJsStatic
     * @returns The hyperbolic arccotangent of x
     */
   def acoth(x: Double): Double = js.native
-  def acoth(x: BigNumber): BigNumber = js.native
+  def acoth(x: Decimal): Decimal = js.native
   def acoth(x: Complex): Complex = js.native
   
   /**
@@ -138,7 +138,7 @@ trait MathJsStatic
     * @returns The arc cosecant of x
     */
   def acsc(x: Double): Double | Complex = js.native
-  def acsc(x: BigNumber): BigNumber = js.native
+  def acsc(x: Decimal): Decimal = js.native
   def acsc(x: Complex): Complex = js.native
   
   /**
@@ -148,7 +148,7 @@ trait MathJsStatic
     * @returns The hyperbolic arccosecant of x
     */
   def acsch(x: Double): Double = js.native
-  def acsch(x: BigNumber): BigNumber = js.native
+  def acsch(x: Decimal): Decimal = js.native
   def acsch(x: Complex): Complex = js.native
   
   def add(
@@ -230,6 +230,7 @@ trait MathJsStatic
   @JSName("apply")
   def apply(array: Matrix, dim: Double, callback: js.Function1[/* array */ MathCollection, Double]): Matrix = js.native
   
+  def arg(x: js.Array[js.Array[MathNumericType] | MathNumericType]): js.Array[MathNumericType] = js.native
   /*************************************************************************
     * Complex functions
     ************************************************************************/
@@ -243,7 +244,6 @@ trait MathJsStatic
   def arg(x: Double): Double = js.native
   def arg(x: BigNumber): BigNumber = js.native
   def arg(x: Complex): Double = js.native
-  def arg(x: MathArray): MathArray = js.native
   def arg(x: Matrix): Matrix = js.native
   @JSName("arg")
   def arg_BigNumber(x: Complex): BigNumber = js.native
@@ -254,7 +254,7 @@ trait MathJsStatic
     * @returns The arc secant of x
     */
   def asec(x: Double): Double | Complex = js.native
-  def asec(x: BigNumber): BigNumber = js.native
+  def asec(x: Decimal): Decimal = js.native
   def asec(x: Complex): Complex = js.native
   
   /**
@@ -264,7 +264,7 @@ trait MathJsStatic
     * @returns The hyperbolic arcsecant of x
     */
   def asech(x: Double): Double | Complex = js.native
-  def asech(x: BigNumber): BigNumber = js.native
+  def asech(x: Decimal): Decimal = js.native
   def asech(x: Complex): Complex = js.native
   
   /**
@@ -273,7 +273,7 @@ trait MathJsStatic
     * @returns The arc sine of x
     */
   def asin(x: Double): Double | Complex = js.native
-  def asin(x: BigNumber): BigNumber = js.native
+  def asin(x: Decimal): Decimal = js.native
   def asin(x: Complex): Complex = js.native
   
   /**
@@ -283,7 +283,7 @@ trait MathJsStatic
     * @returns The hyperbolic arcsine of x
     */
   def asinh(x: Double): Double = js.native
-  def asinh(x: BigNumber): BigNumber = js.native
+  def asinh(x: Decimal): Decimal = js.native
   def asinh(x: Complex): Complex = js.native
   
   /**
@@ -292,9 +292,13 @@ trait MathJsStatic
     * @returns The arc tangent of x
     */
   def atan(x: Double): Double = js.native
-  def atan(x: BigNumber): BigNumber = js.native
+  def atan(x: Decimal): Decimal = js.native
   def atan(x: Complex): Complex = js.native
   
+  def atan2(
+    y: js.Array[js.Array[MathNumericType] | MathNumericType],
+    x: js.Array[js.Array[MathNumericType] | MathNumericType]
+  ): js.Array[MathNumericType] = js.native
   /**
     * Calculate the inverse tangent function with two arguments, y/x. By
     * providing two arguments, the right quadrant of the computed angle can
@@ -303,7 +307,7 @@ trait MathJsStatic
     * @returns Four quadrant inverse tangent
     */
   def atan2(y: Double, x: Double): Double = js.native
-  def atan2(y: MathCollection, x: MathCollection): MathCollection = js.native
+  def atan2(y: Matrix, x: Matrix): Matrix = js.native
   
   /**
     * Calculate the hyperbolic arctangent of a value, defined as atanh(x) =
@@ -312,7 +316,7 @@ trait MathJsStatic
     * @returns The hyperbolic arctangent of x
     */
   def atanh(x: Double): Double | Complex = js.native
-  def atanh(x: BigNumber): BigNumber = js.native
+  def atanh(x: Decimal): Decimal = js.native
   def atanh(x: Complex): Complex = js.native
   
   /*************************************************************************
@@ -327,7 +331,7 @@ trait MathJsStatic
     * @returns B(n)
     */
   def bellNumbers(n: Double): Double = js.native
-  def bellNumbers(n: BigNumber): BigNumber = js.native
+  def bellNumbers(n: Decimal): Decimal = js.native
   
   /*************************************************************************
     * Construction functions
@@ -347,6 +351,7 @@ trait MathJsStatic
   def bignumber(x: BigNumber): BigNumber = js.native
   def bignumber(x: Fraction): BigNumber = js.native
   def bignumber(x: Matrix): Matrix = js.native
+  def bignumber(x: Unit): BigNumber = js.native
   
   def bitAnd(x: js.Array[js.Array[MathNumericType] | MathNumericType], y: Double): NoLiteralType[js.Array[MathNumericType]] = js.native
   def bitAnd(x: js.Array[js.Array[MathNumericType] | MathNumericType], y: BigNumber): NoLiteralType[js.Array[MathNumericType]] = js.native
@@ -371,6 +376,7 @@ trait MathJsStatic
   def bitAnd(x: Matrix, y: BigNumber): NoLiteralType[Matrix] = js.native
   def bitAnd(x: Matrix, y: MathCollection): NoLiteralType[Matrix] = js.native
   
+  def bitNot(x: js.Array[js.Array[MathNumericType] | MathNumericType]): js.Array[MathNumericType] = js.native
   /**
     * Bitwise NOT value, ~x. For matrices, the function is evaluated
     * element wise. For units, the function is evaluated on the best prefix
@@ -379,10 +385,13 @@ trait MathJsStatic
     * @returns NOT of x
     */
   def bitNot(x: Double): Double = js.native
-  def bitNot(x: BigNumber): BigNumber = js.native
-  def bitNot(x: MathArray): MathArray = js.native
+  def bitNot(x: Decimal): Decimal = js.native
   def bitNot(x: Matrix): Matrix = js.native
   
+  def bitOr(
+    x: js.Array[js.Array[MathNumericType] | MathNumericType],
+    y: js.Array[js.Array[MathNumericType] | MathNumericType]
+  ): js.Array[MathNumericType] = js.native
   /**
     * Bitwise OR two values, x | y. For matrices, the function is evaluated
     * element wise. For units, the function is evaluated on the lowest
@@ -392,8 +401,7 @@ trait MathJsStatic
     * @returns OR of x and y
     */
   def bitOr(x: Double, y: Double): Double = js.native
-  def bitOr(x: BigNumber, y: BigNumber): BigNumber = js.native
-  def bitOr(x: MathArray, y: MathArray): MathArray = js.native
+  def bitOr(x: Decimal, y: Decimal): Decimal = js.native
   def bitOr(x: Matrix, y: Matrix): Matrix = js.native
   
   def bitXor(x: js.Array[js.Array[MathNumericType] | MathNumericType], y: Double): NoLiteralType[js.Array[MathNumericType]] = js.native
@@ -438,8 +446,10 @@ trait MathJsStatic
     * @returns Cn(n)
     */
   def catalan(n: Double): Double = js.native
-  def catalan(n: BigNumber): BigNumber = js.native
+  def catalan(n: Decimal): Decimal = js.native
   
+  def cbrt(x: Double): Double = js.native
+  def cbrt(x: Decimal): Decimal = js.native
   /**
     * Calculate the cubic root of a value.
     * @param x Value for which to calculate the cubic root.
@@ -448,9 +458,6 @@ trait MathJsStatic
     * if false (default) the principal root is returned.
     * @returns Returns the cubic root of x
     */
-  def cbrt(x: Double): Double = js.native
-  def cbrt(x: Double, allRoots: Boolean): Double = js.native
-  def cbrt(x: BigNumber): BigNumber = js.native
   def cbrt(x: Complex): Complex = js.native
   def cbrt(x: Complex, allRoots: Boolean): Complex = js.native
   def cbrt(x: Unit): Unit = js.native
@@ -609,8 +616,8 @@ trait MathJsStatic
     */
   def complex(): Complex = js.native
   def complex(arg: String): Complex = js.native
-  def complex(arg: Complex): Complex = js.native
   def complex(arg: MathCollection): MathCollection = js.native
+  def complex(arg: MathNumericType): Complex = js.native
   def complex(arg: PolarCoordinates): Complex = js.native
   /**
     * @param re Argument specifying the real part of the complex number
@@ -681,7 +688,7 @@ trait MathJsStatic
     * @returns The cosine of x
     */
   def cos(x: Double): Double = js.native
-  def cos(x: BigNumber): BigNumber = js.native
+  def cos(x: Decimal): Decimal = js.native
   def cos(x: Complex): Complex = js.native
   def cos(x: Unit): Double = js.native
   
@@ -692,7 +699,7 @@ trait MathJsStatic
     * @returns The hyperbolic cosine of x
     */
   def cosh(x: Double): Double = js.native
-  def cosh(x: BigNumber): BigNumber = js.native
+  def cosh(x: Decimal): Decimal = js.native
   def cosh(x: Complex): Complex = js.native
   def cosh(x: Unit): Double = js.native
   
@@ -702,7 +709,7 @@ trait MathJsStatic
     * @returns The cotangent of x
     */
   def cot(x: Double): Double = js.native
-  def cot(x: BigNumber): BigNumber = js.native
+  def cot(x: Decimal): Decimal = js.native
   def cot(x: Complex): Complex = js.native
   def cot(x: Unit): Double = js.native
   
@@ -713,7 +720,7 @@ trait MathJsStatic
     * @returns The hyperbolic cotangent of x
     */
   def coth(x: Double): Double = js.native
-  def coth(x: BigNumber): BigNumber = js.native
+  def coth(x: Decimal): Decimal = js.native
   def coth(x: Complex): Complex = js.native
   def coth(x: Unit): Double = js.native
   
@@ -765,7 +772,7 @@ trait MathJsStatic
     * @param y Second vector
     * @returns Returns the cross product of x and y
     */
-  def cross(x: MathCollection, y: MathCollection): Matrix | MathArray = js.native
+  def cross(x: MathCollection, y: MathCollection): MathCollection = js.native
   
   /**
     * Calculate the cosecant of a value, defined as csc(x) = 1/sin(x).
@@ -773,7 +780,7 @@ trait MathJsStatic
     * @returns The cosecant hof x
     */
   def csc(x: Double): Double = js.native
-  def csc(x: BigNumber): BigNumber = js.native
+  def csc(x: Decimal): Decimal = js.native
   def csc(x: Complex): Complex = js.native
   def csc(x: Unit): Double = js.native
   
@@ -784,7 +791,7 @@ trait MathJsStatic
     * @returns The hyperbolic cosecant of x
     */
   def csch(x: Double): Double = js.native
-  def csch(x: BigNumber): BigNumber = js.native
+  def csch(x: Decimal): Decimal = js.native
   def csch(x: Complex): Complex = js.native
   def csch(x: Unit): Double = js.native
   
@@ -796,7 +803,7 @@ trait MathJsStatic
     * @returns Cube of x
     */
   def cube(x: Double): Double = js.native
-  def cube(x: BigNumber): BigNumber = js.native
+  def cube(x: Decimal): Decimal = js.native
   def cube(x: Complex): Complex = js.native
   def cube(x: Fraction): Fraction = js.native
   def cube(x: Unit): Unit = js.native
@@ -825,7 +832,7 @@ trait MathJsStatic
     * @returns Returns true when the input matrices have the same size and
     * each of their elements is equal.
     */
-  def deepEqual(x: MathType, y: MathType): Double | BigNumber | Fraction | Complex | Unit | MathCollection = js.native
+  def deepEqual(x: MathType, y: MathType): MathType = js.native
   
   def derivative(expr: String, variable: String): MathNode = js.native
   def derivative(expr: String, variable: String, options: typings.mathjs.anon.Simplify): MathNode = js.native
@@ -869,10 +876,10 @@ trait MathJsStatic
     */
   def diag(X: MathCollection): Matrix = js.native
   def diag(X: MathCollection, format: String): Matrix = js.native
-  def diag(X: MathCollection, k: Double): Matrix | MathArray = js.native
-  def diag(X: MathCollection, k: Double, format: String): Matrix | MathArray = js.native
-  def diag(X: MathCollection, k: BigNumber): Matrix | MathArray = js.native
-  def diag(X: MathCollection, k: BigNumber, format: String): Matrix | MathArray = js.native
+  def diag(X: MathCollection, k: Double): MathCollection = js.native
+  def diag(X: MathCollection, k: Double, format: String): MathCollection = js.native
+  def diag(X: MathCollection, k: BigNumber): MathCollection = js.native
+  def diag(X: MathCollection, k: BigNumber, format: String): MathCollection = js.native
   
   /*************************************************************************
     * Geometry functions
@@ -920,7 +927,13 @@ trait MathJsStatic
     * @param y Denominator
     * @returns Quotient, x ./ y
     */
-  def dotDivide(x: MathType, y: MathType): MathType = js.native
+  def dotDivide(x: js.Array[js.Array[MathNumericType] | MathNumericType], y: MathType): js.Array[MathNumericType] = js.native
+  def dotDivide(x: MathNumericType, y: MathNumericType): MathNumericType = js.native
+  def dotDivide(x: MathType, y: js.Array[js.Array[MathNumericType] | MathNumericType]): js.Array[MathNumericType] = js.native
+  def dotDivide(x: MathType, y: Matrix): Matrix = js.native
+  def dotDivide(x: MathType, y: Unit): Unit = js.native
+  def dotDivide(x: Matrix, y: MathType): Matrix = js.native
+  def dotDivide(x: Unit, y: MathType): Unit = js.native
   
   /**
     * Multiply two matrices element wise. The function accepts both
@@ -929,15 +942,27 @@ trait MathJsStatic
     * @param y Right hand value
     * @returns Multiplication of x and y
     */
-  def dotMultiply(x: MathType, y: MathType): MathType = js.native
+  def dotMultiply(x: js.Array[js.Array[MathNumericType] | MathNumericType], y: MathType): js.Array[MathNumericType] = js.native
+  def dotMultiply(x: MathNumericType, y: MathNumericType): MathNumericType = js.native
+  def dotMultiply(x: MathType, y: js.Array[js.Array[MathNumericType] | MathNumericType]): js.Array[MathNumericType] = js.native
+  def dotMultiply(x: MathType, y: Matrix): Matrix = js.native
+  def dotMultiply(x: MathType, y: Unit): Unit = js.native
+  def dotMultiply(x: Matrix, y: MathType): Matrix = js.native
+  def dotMultiply(x: Unit, y: MathType): Unit = js.native
   
+  def dotPow(x: js.Array[js.Array[MathNumericType] | MathNumericType], y: MathType): js.Array[MathNumericType] = js.native
   /**
     * Calculates the power of x to y element wise.
     * @param x The base
     * @param y The exponent
     * @returns The value of x to the power y
     */
-  def dotPow(x: MathType, y: MathType): MathType = js.native
+  def dotPow(x: Double, y: MathType): Double = js.native
+  def dotPow(x: Decimal, y: MathType): Decimal = js.native
+  def dotPow(x: Complex, y: MathType): Complex = js.native
+  def dotPow(x: Fraction, y: MathType): Fraction = js.native
+  def dotPow(x: Matrix, y: MathType): Matrix = js.native
+  def dotPow(x: Unit, y: MathType): Unit = js.native
   
   var e: Double = js.native
   
@@ -1024,7 +1049,7 @@ trait MathJsStatic
     * @returns Exponent of x
     */
   def exp(x: Double): Double = js.native
-  def exp(x: BigNumber): BigNumber = js.native
+  def exp(x: Decimal): Decimal = js.native
   def exp(x: Complex): Complex = js.native
   
   /**
@@ -1045,7 +1070,7 @@ trait MathJsStatic
     * @returns Exponent of x
     */
   def expm1(x: Double): Double = js.native
-  def expm1(x: BigNumber): BigNumber = js.native
+  def expm1(x: Decimal): Decimal = js.native
   def expm1(x: Complex): Complex = js.native
   
   var expression: MathNode = js.native
@@ -1074,10 +1099,15 @@ trait MathJsStatic
   def fft(arr: Matrix): Matrix = js.native
   
   def filter(
-    x: js.Array[String] | MathArray,
-    test: js.Function3[/* value */ Any, /* index */ Any, js.Array[String] | MathArray | Matrix, Boolean]
-  ): Matrix | MathArray = js.native
-  def filter(x: js.Array[String] | MathArray, test: js.RegExp): Matrix | MathArray = js.native
+    x: js.Array[String],
+    test: js.Function3[
+      /* value */ Any, 
+      /* index */ Any, 
+      /* matrix */ MathCollection | js.Array[String], 
+      Boolean
+    ]
+  ): MathCollection = js.native
+  def filter(x: js.Array[String], test: js.RegExp): MathCollection = js.native
   /**
     * Filter the items in an array or one dimensional matrix.
     * @param x A one dimensional matrix or array to filter
@@ -1088,15 +1118,15 @@ trait MathJsStatic
     * traversed. The function must return a boolean.
     */
   def filter(
-    x: Matrix,
+    x: MathCollection,
     test: js.Function3[
       /* value */ Any, 
       /* index */ Any, 
-      /* matrix */ Matrix | MathArray | js.Array[String], 
+      /* matrix */ MathCollection | js.Array[String], 
       Boolean
     ]
-  ): Matrix | MathArray = js.native
-  def filter(x: Matrix, test: js.RegExp): Matrix | MathArray = js.native
+  ): MathCollection = js.native
+  def filter(x: MathCollection, test: js.RegExp): MathCollection = js.native
   
   def fix(x: js.Array[js.Array[MathNumericType] | MathNumericType]): NoLiteralType[js.Array[MathNumericType]] = js.native
   def fix(x: js.Array[js.Array[MathNumericType] | MathNumericType], n: Double): NoLiteralType[js.Array[MathNumericType]] = js.native
@@ -1162,6 +1192,14 @@ trait MathJsStatic
   def floor(x: Matrix, n: Double): NoLiteralType[Matrix] = js.native
   def floor(x: Matrix, n: BigNumber): NoLiteralType[Matrix] = js.native
   
+  /**
+    * Iterate over all elements of a matrix/array, and executes the given
+    * callback function.
+    * @param x The matrix to iterate on.
+    * @param callback The callback function is invoked with three
+    * parameters: the value of the element, the index of the element, and
+    * the Matrix/array being traversed.
+    */
   def forEach(
     x: js.Array[js.Array[MathNumericType] | MathNumericType],
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -1172,14 +1210,6 @@ trait MathJsStatic
       scala.Unit
     ]
   ): scala.Unit = js.native
-  /**
-    * Iterate over all elements of a matrix/array, and executes the given
-    * callback function.
-    * @param x The matrix to iterate on.
-    * @param callback The callback function is invoked with three
-    * parameters: the value of the element, the index of the element, and
-    * the Matrix/array being traversed.
-    */
   def forEach(
     x: Matrix,
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -1265,7 +1295,7 @@ trait MathJsStatic
   def fraction(value: String): Fraction = js.native
   /**
     * Create a fraction convert a value to a fraction.
-    * @param args Arguments specifying the numerator and denominator of the
+    * @param value Arguments specifying the numerator and denominator of the
     * fraction
     * @returns Returns a fraction
     */
@@ -1274,6 +1304,7 @@ trait MathJsStatic
   def fraction(value: BigNumber): Fraction = js.native
   def fraction(value: Fraction): Fraction = js.native
   def fraction(value: FractionDefinition): Fraction = js.native
+  def fraction(value: Unit): Fraction = js.native
   
   /**
     * Compute the gamma function of a value using Lanczos approximation for
@@ -1286,21 +1317,14 @@ trait MathJsStatic
   def gamma(n: Decimal): NoLiteralType[Decimal] = js.native
   def gamma(n: Complex): NoLiteralType[Complex] = js.native
   
-  def gcd(args: MathArray*): MathArray = js.native
-  @JSName("gcd")
-  def gcd_BigNumber(args: BigNumber*): BigNumber = js.native
   /**
     * Calculate the greatest common divisor for two or more values or
     * arrays. For matrices, the function is evaluated element wise.
     * @param args Two or more integer numbers
     * @returns The greatest common divisor
     */
-  @JSName("gcd")
-  def gcd_Double(args: Double*): Double = js.native
-  @JSName("gcd")
-  def gcd_Fraction(args: Fraction*): Fraction = js.native
-  @JSName("gcd")
-  def gcd_Matrix(args: Matrix*): Matrix = js.native
+  def gcd[T /* <: Double | BigNumber | Fraction | MathCollection */](args: T*): T = js.native
+  def gcd[T /* <: Double | BigNumber | Fraction | Matrix */](args: js.Array[T]): T = js.native
   
   /**
     * Test whether a value is an numeric value. In case of a string,
@@ -1332,9 +1356,7 @@ trait MathJsStatic
     * whole matrix.
     * @returns Returns the hypothenuse of the input values.
     */
-  def hypot(args: Double*): Double = js.native
-  @JSName("hypot")
-  def hypot_BigNumber(args: BigNumber*): BigNumber = js.native
+  def hypot[T /* <: js.Array[Double | BigNumber] */](args: T*): T = js.native
   
   var i: Double = js.native
   
@@ -1344,10 +1366,10 @@ trait MathJsStatic
     * @param format The Matrix storage format
     * @returns A matrix with ones on the diagonal
     */
-  def identity(m: Double, n: Double): Matrix | MathArray | Double = js.native
-  def identity(m: Double, n: Double, format: String): Matrix | MathArray | Double = js.native
-  def identity(size: js.Array[Double] | MathArray): Matrix | MathArray | Double = js.native
-  def identity(size: js.Array[Double] | MathArray, format: String): Matrix | MathArray | Double = js.native
+  def identity(m: Double, n: Double): MathCollection | Double = js.native
+  def identity(m: Double, n: Double, format: String): MathCollection | Double = js.native
+  def identity(size: js.Array[Double]): MathCollection | Double = js.native
+  def identity(size: js.Array[Double], format: String): MathCollection | Double = js.native
   /**
     * Create a 2-dimensional identity matrix with size m x n or n x n. The
     * matrix has ones on the diagonal and zeros elsewhere.
@@ -1355,10 +1377,10 @@ trait MathJsStatic
     * @param format The Matrix storage format
     * @returns A matrix with ones on the diagonal
     */
-  def identity(size: Double): Matrix | MathArray | Double = js.native
-  def identity(size: Double, format: String): Matrix | MathArray | Double = js.native
-  def identity(size: Matrix): Matrix | MathArray | Double = js.native
-  def identity(size: Matrix, format: String): Matrix | MathArray | Double = js.native
+  def identity(size: Double): MathCollection | Double = js.native
+  def identity(size: Double, format: String): MathCollection | Double = js.native
+  def identity(size: MathCollection): MathCollection | Double = js.native
+  def identity(size: MathCollection, format: String): MathCollection | Double = js.native
   
   /**
     * Calculate N-dimensional inverse fourier transform
@@ -1375,7 +1397,9 @@ trait MathJsStatic
     * @param x A complex number or array with complex numbers
     * @returns The imaginary part of x
     */
-  def im(x: MathJsChain[BigNumber | Complex | Double | MathCollection]): MathJsChain[Double] = js.native
+  def im(x: MathJsChain[Double | Complex]): MathJsChain[Double] = js.native
+  @JSName("im")
+  def im_T[T /* <: BigNumber | MathCollection */](x: MathJsChain[T]): MathJsChain[T] = js.native
   
   def `import`(`object`: js.Array[ImportObject]): scala.Unit = js.native
   def `import`(`object`: js.Array[ImportObject], options: ImportOptions): scala.Unit = js.native
@@ -1422,6 +1446,7 @@ trait MathJsStatic
     * the calculation is for line and plane
     * @returns Returns the point of intersection of lines/lines-planes
     */
+  def intersect(w: MathCollection, x: MathCollection, y: MathCollection): MathArray = js.native
   def intersect(w: MathCollection, x: MathCollection, y: MathCollection, z: MathCollection): MathArray = js.native
   
   def inv(x: js.Array[js.Array[MathNumericType] | MathNumericType]): NoLiteralType[js.Array[MathNumericType]] = js.native
@@ -1605,12 +1630,7 @@ trait MathJsStatic
     * @returns Returns true when x is zero. Throws an error in case of an
     * unknown data type.
     */
-  def isZero(x: Double): Boolean = js.native
-  def isZero(x: BigNumber): Boolean = js.native
-  def isZero(x: Complex): Boolean = js.native
-  def isZero(x: Fraction): Boolean = js.native
-  def isZero(x: MathCollection): Boolean = js.native
-  def isZero(x: Unit): Boolean = js.native
+  def isZero(x: MathType): Boolean = js.native
   
   /**
     * Calculate the Kullback-Leibler (KL) divergence between two
@@ -1621,16 +1641,13 @@ trait MathJsStatic
     */
   def kldivergence(q: MathCollection, p: MathCollection): Double = js.native
   
-  def kron(x: MathArray, y: MathArray): Matrix = js.native
-  def kron(x: MathArray, y: Matrix): Matrix = js.native
-  def kron(x: Matrix, y: MathArray): Matrix = js.native
   /**
     * Calculate the kronecker product of two matrices or vectors
     * @param x First vector
     * @param y Second vector
     * @returns Returns the kronecker product of x and y
     */
-  def kron(x: Matrix, y: Matrix): Matrix = js.native
+  def kron(x: MathCollection, y: MathCollection): Matrix = js.native
   
   def larger(x: String, y: String): Boolean | MathCollection = js.native
   def larger(x: String, y: MathType): Boolean | MathCollection = js.native
@@ -1663,6 +1680,10 @@ trait MathJsStatic
     */
   def largerEq(x: MathType, y: MathType): Boolean | MathCollection = js.native
   
+  def lcm(
+    a: js.Array[js.Array[MathNumericType] | MathNumericType],
+    b: js.Array[js.Array[MathNumericType] | MathNumericType]
+  ): js.Array[MathNumericType] = js.native
   /**
     * Calculate the least common multiple for two or more values or arrays.
     * lcm is defined as: lcm(a, b) = abs(a * b) / gcd(a, b) For matrices,
@@ -1672,8 +1693,7 @@ trait MathJsStatic
     * @returns The least common multiple
     */
   def lcm(a: Double, b: Double): Double = js.native
-  def lcm(a: BigNumber, b: BigNumber): BigNumber = js.native
-  def lcm(a: MathArray, b: MathArray): MathArray = js.native
+  def lcm(a: Decimal, b: Decimal): Decimal = js.native
   def lcm(a: Matrix, b: Matrix): Matrix = js.native
   
   def leftShift(x: js.Array[js.Array[MathNumericType] | MathNumericType], y: Double): NoLiteralType[js.Array[MathNumericType]] = js.native
@@ -1721,6 +1741,7 @@ trait MathJsStatic
   def log(x: Complex, base: BigNumber): NoLiteralType[Complex] = js.native
   def log(x: Complex, base: Complex): NoLiteralType[Complex] = js.native
   
+  def log10(x: js.Array[js.Array[MathNumericType] | MathNumericType]): js.Array[MathNumericType] = js.native
   /**
     * Calculate the 10-base of a value. This is the same as calculating
     * log(x, 10). For matrices, the function is evaluated element wise.
@@ -1728,11 +1749,14 @@ trait MathJsStatic
     * @returns Returns the 10-base logarithm of x
     */
   def log10(x: Double): Double = js.native
-  def log10(x: BigNumber): BigNumber = js.native
+  def log10(x: Decimal): Decimal = js.native
   def log10(x: Complex): Complex = js.native
-  def log10(x: MathArray): MathArray = js.native
   def log10(x: Matrix): Matrix = js.native
   
+  def log1p(x: js.Array[js.Array[MathNumericType] | MathNumericType]): js.Array[MathNumericType] = js.native
+  def log1p(x: js.Array[js.Array[MathNumericType] | MathNumericType], base: Double): js.Array[MathNumericType] = js.native
+  def log1p(x: js.Array[js.Array[MathNumericType] | MathNumericType], base: BigNumber): js.Array[MathNumericType] = js.native
+  def log1p(x: js.Array[js.Array[MathNumericType] | MathNumericType], base: Complex): js.Array[MathNumericType] = js.native
   /**
     * Calculate the logarithm of a value+1. For matrices, the function is
     * evaluated element wise.
@@ -1743,23 +1767,20 @@ trait MathJsStatic
   def log1p(x: Double, base: Double): Double = js.native
   def log1p(x: Double, base: BigNumber): Double = js.native
   def log1p(x: Double, base: Complex): Double = js.native
-  def log1p(x: BigNumber): BigNumber = js.native
-  def log1p(x: BigNumber, base: Double): BigNumber = js.native
-  def log1p(x: BigNumber, base: BigNumber): BigNumber = js.native
-  def log1p(x: BigNumber, base: Complex): BigNumber = js.native
+  def log1p(x: Decimal): Decimal = js.native
+  def log1p(x: Decimal, base: Double): Decimal = js.native
+  def log1p(x: Decimal, base: BigNumber): Decimal = js.native
+  def log1p(x: Decimal, base: Complex): Decimal = js.native
   def log1p(x: Complex): Complex = js.native
   def log1p(x: Complex, base: Double): Complex = js.native
   def log1p(x: Complex, base: BigNumber): Complex = js.native
   def log1p(x: Complex, base: Complex): Complex = js.native
-  def log1p(x: MathArray): MathArray = js.native
-  def log1p(x: MathArray, base: Double): MathArray = js.native
-  def log1p(x: MathArray, base: BigNumber): MathArray = js.native
-  def log1p(x: MathArray, base: Complex): MathArray = js.native
   def log1p(x: Matrix): Matrix = js.native
   def log1p(x: Matrix, base: Double): Matrix = js.native
   def log1p(x: Matrix, base: BigNumber): Matrix = js.native
   def log1p(x: Matrix, base: Complex): Matrix = js.native
   
+  def log2(x: js.Array[js.Array[MathNumericType] | MathNumericType]): js.Array[MathNumericType] = js.native
   /**
     * Calculate the 2-base of a value. This is the same as calculating
     * log(x, 2). For matrices, the function is evaluated element wise.
@@ -1767,14 +1788,11 @@ trait MathJsStatic
     * @returns Returns the 2-base logarithm of x
     */
   def log2(x: Double): Double = js.native
-  def log2(x: BigNumber): BigNumber = js.native
+  def log2(x: Decimal): Decimal = js.native
   def log2(x: Complex): Complex = js.native
-  def log2(x: MathArray): MathArray = js.native
   def log2(x: Matrix): Matrix = js.native
   
-  def lsolve(L: MathArray, b: MathArray): MathArray = js.native
-  def lsolve(L: MathArray, b: Matrix): MathArray = js.native
-  def lsolve(L: Matrix, b: MathArray): Matrix = js.native
+  def lsolve(L: MathArray, b: MathCollection): MathArray = js.native
   /**
     * Solves the linear equation system by forwards substitution. Matrix
     * must be a lower triangular matrix.
@@ -1782,7 +1800,7 @@ trait MathJsStatic
     * @param b A column vector with the b values
     * @returns A column vector with the linear system solution (x)
     */
-  def lsolve(L: Matrix, b: Matrix): Matrix = js.native
+  def lsolve(L: Matrix, b: MathCollection): Matrix = js.native
   
   /**
     * Calculate the Matrix LU decomposition with partial pivoting. Matrix A
@@ -1794,21 +1812,13 @@ trait MathJsStatic
     * the permutation matrix.
     */
   def lup(): LUDecomposition = js.native
-  def lup(A: MathArray): LUDecomposition = js.native
-  def lup(A: Matrix): LUDecomposition = js.native
+  def lup(A: MathCollection): LUDecomposition = js.native
   
-  def lusolve(A: MathArray, b: MathArray): MathArray = js.native
-  def lusolve(A: MathArray, b: MathArray, order: Double): MathArray = js.native
-  def lusolve(A: MathArray, b: MathArray, order: Double, threshold: Double): MathArray = js.native
-  def lusolve(A: MathArray, b: MathArray, order: scala.Unit, threshold: Double): MathArray = js.native
-  def lusolve(A: MathArray, b: Matrix): MathArray = js.native
-  def lusolve(A: MathArray, b: Matrix, order: Double): MathArray = js.native
-  def lusolve(A: MathArray, b: Matrix, order: Double, threshold: Double): MathArray = js.native
-  def lusolve(A: MathArray, b: Matrix, order: scala.Unit, threshold: Double): MathArray = js.native
-  def lusolve(A: Matrix, b: MathArray): Matrix = js.native
-  def lusolve(A: Matrix, b: MathArray, order: Double): Matrix = js.native
-  def lusolve(A: Matrix, b: MathArray, order: Double, threshold: Double): Matrix = js.native
-  def lusolve(A: Matrix, b: MathArray, order: scala.Unit, threshold: Double): Matrix = js.native
+  def lusolve(A: LUDecomposition, b: MathCollection): Matrix = js.native
+  def lusolve(A: MathArray, b: MathCollection): MathArray = js.native
+  def lusolve(A: MathArray, b: MathCollection, order: Double): MathArray = js.native
+  def lusolve(A: MathArray, b: MathCollection, order: Double, threshold: Double): MathArray = js.native
+  def lusolve(A: MathArray, b: MathCollection, order: scala.Unit, threshold: Double): MathArray = js.native
   /**
     * Solves the linear system A * x = b where A is an [n x n] matrix and b
     * is a [n] column vector.
@@ -1821,10 +1831,20 @@ trait MathJsStatic
     * @returns Column vector with the solution to the linear system A * x =
     * b
     */
-  def lusolve(A: Matrix, b: Matrix): Matrix = js.native
-  def lusolve(A: Matrix, b: Matrix, order: Double): Matrix = js.native
-  def lusolve(A: Matrix, b: Matrix, order: Double, threshold: Double): Matrix = js.native
-  def lusolve(A: Matrix, b: Matrix, order: scala.Unit, threshold: Double): Matrix = js.native
+  def lusolve(A: Matrix, b: MathCollection): Matrix = js.native
+  def lusolve(A: Matrix, b: MathCollection, order: Double): Matrix = js.native
+  def lusolve(A: Matrix, b: MathCollection, order: Double, threshold: Double): Matrix = js.native
+  def lusolve(A: Matrix, b: MathCollection, order: scala.Unit, threshold: Double): Matrix = js.native
+  
+  /**
+    * Solves the Continuous-time Lyapunov equation AP+PA'=Q for P, where Q is a positive semidefinite
+    * matrix.
+    * https://en.wikipedia.org/wiki/Lyapunov_equation
+    * @param A  Matrix A
+    * @param Q  Matrix Q
+    * @returns  Matrix P solution to the Continuous-time Lyapunov equation AP+PA'=Q
+    */
+  def lyap(A: MathCollection, Q: MathCollection): MathCollection = js.native
   
   /*************************************************************************
     * Statistics functions
@@ -1839,6 +1859,15 @@ trait MathJsStatic
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   def mad(array: MathCollection): Any = js.native
   
+  /**
+    * Iterate over all elements of a matrix/array, and executes the given
+    * callback function.
+    * @param x The matrix to iterate on.
+    * @param callback The callback function is invoked with three
+    * parameters: the value of the element, the index of the element, and
+    * the Matrix/array being traversed.
+    * @returns Transformed map of x
+    */
   def map(
     x: js.Array[js.Array[MathNumericType] | MathNumericType],
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -1849,15 +1878,6 @@ trait MathJsStatic
       MathType | String
     ]
   ): js.Array[MathNumericType] = js.native
-  /**
-    * Iterate over all elements of a matrix/array, and executes the given
-    * callback function.
-    * @param x The matrix to iterate on.
-    * @param callback The callback function is invoked with three
-    * parameters: the value of the element, the index of the element, and
-    * the Matrix/array being traversed.
-    * @returns Transformed map of x
-    */
   def map(
     x: Matrix,
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -2009,10 +2029,15 @@ trait MathJsStatic
     */
   def multinomial[T /* <: Double | BigNumber */](a: js.Array[T]): NoLiteralType[T] = js.native
   
+  def multiply(
+    x: js.Array[js.Array[MathNumericType] | MathNumericType],
+    y: js.Array[js.Array[MathNumericType] | MathNumericType]
+  ): js.Array[MathNumericType] = js.native
   def multiply(x: Double, y: Double): Double = js.native
-  def multiply(x: MathArray, y: MathArray): MathArray = js.native
   def multiply(x: MathType, y: MathType): MathType = js.native
   def multiply(x: Unit, y: Unit): Unit = js.native
+  def multiply[T /* <: js.Array[MathNumericType] */](x: T, y: js.Array[T]): T = js.native
+  def multiply[T /* <: js.Array[MathNumericType] */](x: js.Array[T], y: T): T = js.native
   /**
     * Multiply two values, x * y. The result is squeezed. For matrices, the
     * matrix product is calculated.
@@ -2310,6 +2335,52 @@ trait MathJsStatic
   def pinv(x: Matrix): Matrix = js.native
   def pinv(x: Unit): Unit = js.native
   
+  /* Finds the roots of a polynomial of degree three or less. Coefficients are given constant first
+    * followed by linear and higher powers in order; coefficients beyond the degree of the polynomial
+    * need not be specified.
+    * @param {number|Complex} constantCoeff
+    * @param {number|Complex} linearCoeff
+    * @param {number|Complex} quadraticCoeff
+    * @param {number|Complex} cubicCoeff
+    * @returns {Array<number|Complex>} array of roots of specified polynomial
+    */
+  def polynomialRoot(constantCoeff: Double, linearCoeff: Double): js.Array[Double | Complex] = js.native
+  def polynomialRoot(constantCoeff: Double, linearCoeff: Double, quadraticCoeff: Double): js.Array[Double | Complex] = js.native
+  def polynomialRoot(constantCoeff: Double, linearCoeff: Double, quadraticCoeff: Double, cubicCoeff: Double): js.Array[Double | Complex] = js.native
+  def polynomialRoot(constantCoeff: Double, linearCoeff: Double, quadraticCoeff: Double, cubicCoeff: Complex): js.Array[Double | Complex] = js.native
+  def polynomialRoot(constantCoeff: Double, linearCoeff: Double, quadraticCoeff: scala.Unit, cubicCoeff: Double): js.Array[Double | Complex] = js.native
+  def polynomialRoot(constantCoeff: Double, linearCoeff: Double, quadraticCoeff: scala.Unit, cubicCoeff: Complex): js.Array[Double | Complex] = js.native
+  def polynomialRoot(constantCoeff: Double, linearCoeff: Double, quadraticCoeff: Complex): js.Array[Double | Complex] = js.native
+  def polynomialRoot(constantCoeff: Double, linearCoeff: Double, quadraticCoeff: Complex, cubicCoeff: Double): js.Array[Double | Complex] = js.native
+  def polynomialRoot(constantCoeff: Double, linearCoeff: Double, quadraticCoeff: Complex, cubicCoeff: Complex): js.Array[Double | Complex] = js.native
+  def polynomialRoot(constantCoeff: Double, linearCoeff: Complex): js.Array[Double | Complex] = js.native
+  def polynomialRoot(constantCoeff: Double, linearCoeff: Complex, quadraticCoeff: Double): js.Array[Double | Complex] = js.native
+  def polynomialRoot(constantCoeff: Double, linearCoeff: Complex, quadraticCoeff: Double, cubicCoeff: Double): js.Array[Double | Complex] = js.native
+  def polynomialRoot(constantCoeff: Double, linearCoeff: Complex, quadraticCoeff: Double, cubicCoeff: Complex): js.Array[Double | Complex] = js.native
+  def polynomialRoot(constantCoeff: Double, linearCoeff: Complex, quadraticCoeff: scala.Unit, cubicCoeff: Double): js.Array[Double | Complex] = js.native
+  def polynomialRoot(constantCoeff: Double, linearCoeff: Complex, quadraticCoeff: scala.Unit, cubicCoeff: Complex): js.Array[Double | Complex] = js.native
+  def polynomialRoot(constantCoeff: Double, linearCoeff: Complex, quadraticCoeff: Complex): js.Array[Double | Complex] = js.native
+  def polynomialRoot(constantCoeff: Double, linearCoeff: Complex, quadraticCoeff: Complex, cubicCoeff: Double): js.Array[Double | Complex] = js.native
+  def polynomialRoot(constantCoeff: Double, linearCoeff: Complex, quadraticCoeff: Complex, cubicCoeff: Complex): js.Array[Double | Complex] = js.native
+  def polynomialRoot(constantCoeff: Complex, linearCoeff: Double): js.Array[Double | Complex] = js.native
+  def polynomialRoot(constantCoeff: Complex, linearCoeff: Double, quadraticCoeff: Double): js.Array[Double | Complex] = js.native
+  def polynomialRoot(constantCoeff: Complex, linearCoeff: Double, quadraticCoeff: Double, cubicCoeff: Double): js.Array[Double | Complex] = js.native
+  def polynomialRoot(constantCoeff: Complex, linearCoeff: Double, quadraticCoeff: Double, cubicCoeff: Complex): js.Array[Double | Complex] = js.native
+  def polynomialRoot(constantCoeff: Complex, linearCoeff: Double, quadraticCoeff: scala.Unit, cubicCoeff: Double): js.Array[Double | Complex] = js.native
+  def polynomialRoot(constantCoeff: Complex, linearCoeff: Double, quadraticCoeff: scala.Unit, cubicCoeff: Complex): js.Array[Double | Complex] = js.native
+  def polynomialRoot(constantCoeff: Complex, linearCoeff: Double, quadraticCoeff: Complex): js.Array[Double | Complex] = js.native
+  def polynomialRoot(constantCoeff: Complex, linearCoeff: Double, quadraticCoeff: Complex, cubicCoeff: Double): js.Array[Double | Complex] = js.native
+  def polynomialRoot(constantCoeff: Complex, linearCoeff: Double, quadraticCoeff: Complex, cubicCoeff: Complex): js.Array[Double | Complex] = js.native
+  def polynomialRoot(constantCoeff: Complex, linearCoeff: Complex): js.Array[Double | Complex] = js.native
+  def polynomialRoot(constantCoeff: Complex, linearCoeff: Complex, quadraticCoeff: Double): js.Array[Double | Complex] = js.native
+  def polynomialRoot(constantCoeff: Complex, linearCoeff: Complex, quadraticCoeff: Double, cubicCoeff: Double): js.Array[Double | Complex] = js.native
+  def polynomialRoot(constantCoeff: Complex, linearCoeff: Complex, quadraticCoeff: Double, cubicCoeff: Complex): js.Array[Double | Complex] = js.native
+  def polynomialRoot(constantCoeff: Complex, linearCoeff: Complex, quadraticCoeff: scala.Unit, cubicCoeff: Double): js.Array[Double | Complex] = js.native
+  def polynomialRoot(constantCoeff: Complex, linearCoeff: Complex, quadraticCoeff: scala.Unit, cubicCoeff: Complex): js.Array[Double | Complex] = js.native
+  def polynomialRoot(constantCoeff: Complex, linearCoeff: Complex, quadraticCoeff: Complex): js.Array[Double | Complex] = js.native
+  def polynomialRoot(constantCoeff: Complex, linearCoeff: Complex, quadraticCoeff: Complex, cubicCoeff: Double): js.Array[Double | Complex] = js.native
+  def polynomialRoot(constantCoeff: Complex, linearCoeff: Complex, quadraticCoeff: Complex, cubicCoeff: Complex): js.Array[Double | Complex] = js.native
+  
   /**
     * Calculates the power of x to y, x ^ y. Matrix exponentiation is
     * supported for square matrices x, and positive integer exponents y.
@@ -2379,7 +2450,6 @@ trait MathJsStatic
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   def prod(args: MathType*): Any = js.native
   
-  def qr(A: MathArray): QRDecomposition = js.native
   /**
     * Calculate the Matrix QR decomposition. Matrix A is decomposed in two
     * matrices (Q, R) where Q is an orthogonal matrix and R is an upper
@@ -2388,7 +2458,7 @@ trait MathJsStatic
     * decomposition.
     * @returns Q: the orthogonal matrix and R: the upper triangular matrix
     */
-  def qr(A: Matrix): QRDecomposition = js.native
+  def qr(A: MathCollection): QRDecomposition = js.native
   
   /**
     * Compute the prob order quantile of a matrix or a list with values.
@@ -2555,7 +2625,9 @@ trait MathJsStatic
     * @param x A complex number or array of complex numbers
     * @returns The real part of x
     */
-  def re(x: MathJsChain[BigNumber | Complex | Double | MathCollection]): MathJsChain[Double] = js.native
+  def re(x: MathJsChain[Double | Complex]): MathJsChain[Double] = js.native
+  @JSName("re")
+  def re_T[T /* <: BigNumber | MathCollection */](x: MathJsChain[T]): MathJsChain[T] = js.native
   
   /**
     * Returns replacer function that can be used as replacer in JSON.stringify function.
@@ -2691,6 +2763,34 @@ trait MathJsStatic
   def rotate(w: Matrix, theta: Unit): Matrix = js.native
   def rotate(w: Matrix, theta: Unit, v: Matrix): Matrix = js.native
   
+  /**
+    * Return a Rotation Matrix for a given angle in radians
+    * @param {number | BigNumber | Complex | Unit} theta    Rotation angle
+    * @param {Array | Matrix} [v]                           Rotation axis
+    * @param {string} [format]                              Result Matrix storage format. Default value: 'dense'.
+    * @return {Matrix}                                      Rotation Matrix
+    */
+  def rotationMatrix[T /* <: MathCollection */](): T = js.native
+  def rotationMatrix[T /* <: MathCollection */](theta: Double): T = js.native
+  def rotationMatrix[T /* <: MathCollection */](theta: Double, axis: T): T = js.native
+  def rotationMatrix[T /* <: MathCollection */](theta: Double, axis: T, format: sparse | dense): T = js.native
+  def rotationMatrix[T /* <: MathCollection */](theta: Double, axis: scala.Unit, format: sparse | dense): T = js.native
+  def rotationMatrix[T /* <: MathCollection */](theta: scala.Unit, axis: T): T = js.native
+  def rotationMatrix[T /* <: MathCollection */](theta: scala.Unit, axis: T, format: sparse | dense): T = js.native
+  def rotationMatrix[T /* <: MathCollection */](theta: scala.Unit, axis: scala.Unit, format: sparse | dense): T = js.native
+  def rotationMatrix[T /* <: MathCollection */](theta: BigNumber): T = js.native
+  def rotationMatrix[T /* <: MathCollection */](theta: BigNumber, axis: T): T = js.native
+  def rotationMatrix[T /* <: MathCollection */](theta: BigNumber, axis: T, format: sparse | dense): T = js.native
+  def rotationMatrix[T /* <: MathCollection */](theta: BigNumber, axis: scala.Unit, format: sparse | dense): T = js.native
+  def rotationMatrix[T /* <: MathCollection */](theta: Complex): T = js.native
+  def rotationMatrix[T /* <: MathCollection */](theta: Complex, axis: T): T = js.native
+  def rotationMatrix[T /* <: MathCollection */](theta: Complex, axis: T, format: sparse | dense): T = js.native
+  def rotationMatrix[T /* <: MathCollection */](theta: Complex, axis: scala.Unit, format: sparse | dense): T = js.native
+  def rotationMatrix[T /* <: MathCollection */](theta: Unit): T = js.native
+  def rotationMatrix[T /* <: MathCollection */](theta: Unit, axis: T): T = js.native
+  def rotationMatrix[T /* <: MathCollection */](theta: Unit, axis: T, format: sparse | dense): T = js.native
+  def rotationMatrix[T /* <: MathCollection */](theta: Unit, axis: scala.Unit, format: sparse | dense): T = js.native
+  
   def round(x: js.Array[js.Array[MathNumericType] | MathNumericType]): NoLiteralType[js.Array[MathNumericType]] = js.native
   def round(x: js.Array[js.Array[MathNumericType] | MathNumericType], n: Double): NoLiteralType[js.Array[MathNumericType]] = js.native
   def round(x: js.Array[js.Array[MathNumericType] | MathNumericType], n: BigNumber): NoLiteralType[js.Array[MathNumericType]] = js.native
@@ -2729,12 +2829,21 @@ trait MathJsStatic
   def row(value: Matrix, row: Double): Matrix = js.native
   
   /**
+    * Performs a real Schur decomposition of the real matrix A = UTU' where U is orthogonal
+    * and T is upper quasi-triangular.
+    * https://en.wikipedia.org/wiki/Schur_decomposition
+    * @param A  Matrix A
+    * @returns Object containing both matrix U and T of the Schur Decomposition A=UTU'
+    */
+  def schur(A: MathCollection): SchurDecomposition = js.native
+  
+  /**
     * Calculate the secant of a value, defined as sec(x) = 1/cos(x).
     * @param x Function input
     * @returns The secant of x
     */
   def sec(x: Double): Double = js.native
-  def sec(x: BigNumber): BigNumber = js.native
+  def sec(x: Decimal): Decimal = js.native
   def sec(x: Complex): Complex = js.native
   def sec(x: Unit): Double = js.native
   
@@ -2745,7 +2854,7 @@ trait MathJsStatic
     * @returns The hyperbolic secant of x
     */
   def sech(x: Double): Double = js.native
-  def sech(x: BigNumber): BigNumber = js.native
+  def sech(x: Decimal): Decimal = js.native
   def sech(x: Complex): Complex = js.native
   def sech(x: Unit): Double = js.native
   
@@ -2812,10 +2921,7 @@ trait MathJsStatic
     * @returns The number of how many times the multiset contains the
     * element
     */
-  def setMultiplicity(e: Double, a: MathCollection): Double = js.native
-  def setMultiplicity(e: BigNumber, a: MathCollection): Double = js.native
-  def setMultiplicity(e: Complex, a: MathCollection): Double = js.native
-  def setMultiplicity(e: Fraction, a: MathCollection): Double = js.native
+  def setMultiplicity(e: MathNumericType, a: MathCollection): Double = js.native
   
   /**
     * Create the powerset of a (multi)set. (The powerset contains very
@@ -2857,6 +2963,7 @@ trait MathJsStatic
   def setUnion(a1: js.Array[js.Array[MathNumericType] | MathNumericType], a2: MathCollection): js.Array[MathNumericType] = js.native
   def setUnion(a1: Matrix, a2: MathCollection): Matrix = js.native
   
+  def sign(x: js.Array[js.Array[MathNumericType] | MathNumericType]): js.Array[MathNumericType] = js.native
   /**
     * Compute the sign of a value. The sign of a value x is: 1 when x > 1
     * -1 when x < 0 0 when x == 0 For matrices, the function is evaluated
@@ -2865,10 +2972,9 @@ trait MathJsStatic
     * @returns The sign of x
     */
   def sign(x: Double): Double = js.native
-  def sign(x: BigNumber): BigNumber = js.native
+  def sign(x: Decimal): Decimal = js.native
   def sign(x: Complex): Complex = js.native
   def sign(x: Fraction): Fraction = js.native
-  def sign(x: MathArray): MathArray = js.native
   def sign(x: Matrix): Matrix = js.native
   def sign(x: Unit): Unit = js.native
   
@@ -2950,7 +3056,7 @@ trait MathJsStatic
     * @returns The sine of x
     */
   def sin(x: Double): Double = js.native
-  def sin(x: BigNumber): BigNumber = js.native
+  def sin(x: Decimal): Decimal = js.native
   def sin(x: Complex): Complex = js.native
   def sin(x: Unit): Double = js.native
   
@@ -2961,7 +3067,7 @@ trait MathJsStatic
     * @returns The hyperbolic sine of x
     */
   def sinh(x: Double): Double = js.native
-  def sinh(x: BigNumber): BigNumber = js.native
+  def sinh(x: Decimal): Decimal = js.native
   def sinh(x: Complex): Complex = js.native
   def sinh(x: Unit): Double = js.native
   
@@ -3034,6 +3140,14 @@ trait MathJsStatic
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
   compare: asc | desc | natural
   ): js.Array[MathNumericType] = js.native
+  /**
+    * Sort the items in a matrix
+    * @param x A one dimensional matrix or array to sort
+    * @param compare An optional _comparator function or name. The function
+    * is called as compare(a, b), and must return 1 when a > b, -1 when a <
+    * b, and 0 when a == b. Default value: ‘asc’
+    * @returns Returns the sorted matrix
+    */
   def sort(
     x: js.Array[js.Array[MathNumericType] | MathNumericType],
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -3044,14 +3158,6 @@ trait MathJsStatic
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
   compare: asc | desc | natural
   ): Matrix = js.native
-  /**
-    * Sort the items in a matrix
-    * @param x A one dimensional matrix or array to sort
-    * @param compare An optional _comparator function or name. The function
-    * is called as compare(a, b), and must return 1 when a > b, -1 when a <
-    * b, and 0 when a == b. Default value: ‘asc’
-    * @returns Returns the sorted matrix
-    */
   def sort(
     x: Matrix,
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -3089,7 +3195,7 @@ trait MathJsStatic
     * @returns Returns the square root of x
     */
   def sqrt(x: Double): Double | Complex = js.native
-  def sqrt(x: BigNumber): BigNumber = js.native
+  def sqrt(x: Decimal): Decimal = js.native
   def sqrt(x: Complex): Complex = js.native
   def sqrt(x: Unit): Unit = js.native
   
@@ -3108,7 +3214,7 @@ trait MathJsStatic
     * @returns Squared value
     */
   def square(x: Double): Double = js.native
-  def square(x: BigNumber): BigNumber = js.native
+  def square(x: Decimal): Decimal = js.native
   def square(x: Complex): Complex = js.native
   def square(x: Fraction): Fraction = js.native
   def square(x: Unit): Unit = js.native
@@ -3320,12 +3426,24 @@ trait MathJsStatic
   def sum(array: MathCollection): Any = js.native
   
   /**
+    * Solves the real-valued Sylvester equation AX-XB=C for X, where A, B and C are
+    * matrices of appropriate dimensions, being A and B squared. The method used is
+    * the Bartels-Stewart algorithm.
+    * https://en.wikipedia.org/wiki/Sylvester_equation
+    * @param A  Matrix A
+    * @param B  Matrix B
+    * @param C  Matrix C
+    * @returns  Matrix X, solving the Sylvester equation
+    */
+  def sylvester(A: MathCollection, B: MathCollection, C: MathCollection): MathCollection = js.native
+  
+  /**
     * Calculate the tangent of a value. tan(x) is equal to sin(x) / cos(x).
     * @param x Function input
     * @returns The tangent of x
     */
   def tan(x: Double): Double = js.native
-  def tan(x: BigNumber): BigNumber = js.native
+  def tan(x: Decimal): Decimal = js.native
   def tan(x: Complex): Complex = js.native
   def tan(x: Unit): Double = js.native
   
@@ -3336,7 +3454,7 @@ trait MathJsStatic
     * @returns The hyperbolic tangent of x
     */
   def tanh(x: Double): Double = js.native
-  def tanh(x: BigNumber): BigNumber = js.native
+  def tanh(x: Decimal): Decimal = js.native
   def tanh(x: Complex): Complex = js.native
   def tanh(x: Unit): Double = js.native
   
@@ -3401,6 +3519,7 @@ trait MathJsStatic
   signatures: Record[String, js.Function1[/* repeated */ Any, Any]]
   ): js.Function1[/* repeated */ Any, Any] = js.native
   
+  def unaryMinus(x: js.Array[js.Array[MathNumericType] | MathNumericType]): js.Array[MathNumericType] = js.native
   /**
     * Inverse the sign of a value, apply a unary minus operation. For
     * matrices, the function is evaluated element wise. Boolean values and
@@ -3410,14 +3529,12 @@ trait MathJsStatic
     * @returns Retursn the value with inverted sign
     */
   def unaryMinus(x: Double): Double = js.native
-  def unaryMinus(x: BigNumber): BigNumber = js.native
+  def unaryMinus(x: Decimal): Decimal = js.native
   def unaryMinus(x: Complex): Complex = js.native
   def unaryMinus(x: Fraction): Fraction = js.native
-  def unaryMinus(x: MathArray): MathArray = js.native
   def unaryMinus(x: Matrix): Matrix = js.native
   def unaryMinus(x: Unit): Unit = js.native
   
-  def unaryPlus(x: String): String = js.native
   /**
     * Unary plus operation. Boolean values and strings will be converted to
     * a number, numeric values will be returned as is. For matrices, the
@@ -3426,11 +3543,12 @@ trait MathJsStatic
     * @returns Returns the input value when numeric, converts to a number
     * when input is non-numeric.
     */
+  def unaryPlus(x: String): String = js.native
+  def unaryPlus(x: js.Array[js.Array[MathNumericType] | MathNumericType]): js.Array[MathNumericType] = js.native
   def unaryPlus(x: Double): Double = js.native
-  def unaryPlus(x: BigNumber): BigNumber = js.native
+  def unaryPlus(x: Decimal): Decimal = js.native
   def unaryPlus(x: Complex): Complex = js.native
   def unaryPlus(x: Fraction): Fraction = js.native
-  def unaryPlus(x: MathArray): MathArray = js.native
   def unaryPlus(x: Matrix): Matrix = js.native
   def unaryPlus(x: Unit): Unit = js.native
   
@@ -3477,18 +3595,15 @@ trait MathJsStatic
     * @returns The created unit
     */
   def unit(unit: Unit): Unit = js.native
+  def unit(value: MathCollection, unit: String): js.Array[Unit] = js.native
   /**
     * @param value The value of the unit to be created
     * @param unit The unit to be created
     * @returns The created unit
     */
-  def unit(value: Double, unit: String): Unit = js.native
-  def unit(value: BigNumber, unit: String): Unit = js.native
-  def unit(value: MathCollection, unit: String): js.Array[Unit] = js.native
+  def unit(value: MathNumericType, unit: String): Unit = js.native
   
-  def usolve(U: MathArray, b: MathArray): MathArray = js.native
-  def usolve(U: MathArray, b: Matrix): MathArray = js.native
-  def usolve(U: Matrix, b: MathArray): Matrix = js.native
+  def usolve(U: MathArray, b: MathCollection): MathArray = js.native
   /**
     * Solves the linear equation system by backward substitution. Matrix
     * must be an upper triangular matrix. U * x = b
@@ -3496,7 +3611,7 @@ trait MathJsStatic
     * @param b A column vector with the b values
     * @returns A column vector with the linear system solution (x)
     */
-  def usolve(U: Matrix, b: Matrix): Matrix = js.native
+  def usolve(U: Matrix, b: MathCollection): Matrix = js.native
   
   /**
     * Compute the variance of a matrix or a list with values. In case of a

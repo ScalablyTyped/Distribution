@@ -39,6 +39,10 @@ object reactBootstrapTypeaheadStrings {
   inline def all: all = "all".asInstanceOf[all]
   
   @js.native
+  sealed trait anonymous extends StObject
+  inline def anonymous: anonymous = "anonymous".asInstanceOf[anonymous]
+  
+  @js.native
   sealed trait ascending extends StObject
   inline def ascending: ascending = "ascending".asInstanceOf[ascending]
   
@@ -428,6 +432,10 @@ object reactBootstrapTypeaheadStrings {
   @js.native
   sealed trait url extends StObject
   inline def url: url = "url".asInstanceOf[url]
+  
+  @js.native
+  sealed trait `use-credentials` extends StObject
+  inline def `use-credentials`: `use-credentials` = "use-credentials".asInstanceOf[`use-credentials`]
   
   @js.native
   sealed trait user extends StObject

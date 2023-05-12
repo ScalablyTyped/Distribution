@@ -135,8 +135,8 @@ object mod {
     
     @JSImport("@nivo/legends", "LegendPropShape.symbolShape")
     @js.native
-    def symbolShape: Requireable[String | (js.Function1[/* repeated */ Any, Any])] = js.native
-    inline def symbolShape_=(x: Requireable[String | (js.Function1[/* repeated */ Any, Any])]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("symbolShape")(x.asInstanceOf[js.Any])
+    def symbolShape: Requireable[NonNullable[js.UndefOr[String | (js.Function1[/* repeated */ Any, Any]) | Null]]] = js.native
+    inline def symbolShape_=(x: Requireable[NonNullable[js.UndefOr[String | (js.Function1[/* repeated */ Any, Any]) | Null]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("symbolShape")(x.asInstanceOf[js.Any])
     
     @JSImport("@nivo/legends", "LegendPropShape.symbolSize")
     @js.native

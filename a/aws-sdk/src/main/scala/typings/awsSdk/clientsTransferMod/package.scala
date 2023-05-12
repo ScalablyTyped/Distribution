@@ -1,6 +1,7 @@
 package typings.awsSdk.clientsTransferMod
 
 import typings.awsSdk.awsSdkStrings.HTTP
+import typings.awsSdk.awsSdkStrings.PGP
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -106,9 +107,12 @@ type EfsPath = String
   - typings.awsSdk.awsSdkStrings.AES128_CBC
   - typings.awsSdk.awsSdkStrings.AES192_CBC
   - typings.awsSdk.awsSdkStrings.AES256_CBC
+  - typings.awsSdk.awsSdkStrings.NONE
   - java.lang.String
 */
 type EncryptionAlg = _EncryptionAlg | String
+
+type EncryptionType = PGP | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PUBLIC
@@ -408,6 +412,7 @@ type WorkflowStepName = String
   - typings.awsSdk.awsSdkStrings.CUSTOM
   - typings.awsSdk.awsSdkStrings.TAG
   - typings.awsSdk.awsSdkStrings.DELETE
+  - typings.awsSdk.awsSdkStrings.DECRYPT
   - java.lang.String
 */
 type WorkflowStepType = _WorkflowStepType | String

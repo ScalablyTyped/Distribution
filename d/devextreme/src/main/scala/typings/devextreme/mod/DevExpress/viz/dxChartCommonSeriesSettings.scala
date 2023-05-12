@@ -126,7 +126,7 @@ trait dxChartCommonSeriesSettings
   /**
     * Specifies the type of the series.
     */
-  var `type`: js.UndefOr[SeriesType] = js.undefined
+  var `type`: js.UndefOr[typings.devextreme.mod.DevExpress.common.charts.SeriesType] = js.undefined
 }
 object dxChartCommonSeriesSettings {
   
@@ -230,7 +230,7 @@ object dxChartCommonSeriesSettings {
     
     inline def setStockUndefined: Self = StObject.set(x, "stock", js.undefined)
     
-    inline def setType(value: SeriesType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.devextreme.mod.DevExpress.common.charts.SeriesType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }

@@ -70,21 +70,23 @@ object typesGridlayoutMod {
     /**
       * Get the number of columns in the layout.
       */
+    def columnCount: Double = js.native
     /**
       * Set the number of columns in the layout.
       *
       * #### Notes
       * The minimum column count is `1`.
       */
-    var columnCount: Double = js.native
+    def columnCount_=(value: Double): Unit = js.native
     
     /**
       * Get the column spacing for the layout.
       */
+    def columnSpacing: Double = js.native
     /**
       * Set the col spacing for the layout.
       */
-    var columnSpacing: Double = js.native
+    def columnSpacing_=(value: Double): Unit = js.native
     
     /**
       * Get the stretch factor for a specific column.
@@ -108,21 +110,23 @@ object typesGridlayoutMod {
     /**
       * Get the number of rows in the layout.
       */
+    def rowCount: Double = js.native
     /**
       * Set the number of rows in the layout.
       *
       * #### Notes
       * The minimum row count is `1`.
       */
-    var rowCount: Double = js.native
+    def rowCount_=(value: Double): Unit = js.native
     
     /**
       * Get the row spacing for the layout.
       */
+    def rowSpacing: Double = js.native
     /**
       * Set the row spacing for the layout.
       */
-    var rowSpacing: Double = js.native
+    def rowSpacing_=(value: Double): Unit = js.native
     
     /**
       * Get the stretch factor for a specific row.

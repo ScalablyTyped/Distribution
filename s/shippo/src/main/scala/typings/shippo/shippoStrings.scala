@@ -1,11 +1,33 @@
 package typings.shippo
 
-import typings.shippo.mod.Shippo._Country
-import typings.shippo.mod.Shippo._DistanceUnit
-import typings.shippo.mod.Shippo._FEDEXServiceLevel
-import typings.shippo.mod.Shippo._MassUnit
-import typings.shippo.mod.Shippo._UPSServiceLevel
-import typings.shippo.mod.Shippo._USPSServiceLevel
+import typings.shippo.mod.Batch.ObjectResult
+import typings.shippo.mod.CustomsDeclaration.B13aFilingOption
+import typings.shippo.mod.CustomsDeclaration.EelPfc
+import typings.shippo.mod.CustomsDeclaration._ContentsType
+import typings.shippo.mod.CustomsDeclaration._NonDeliveryOption
+import typings.shippo.mod.CustomsTaxIdentification._Type
+import typings.shippo.mod.LabelFileType
+import typings.shippo.mod.Manifest.Status
+import typings.shippo.mod.ObjectState
+import typings.shippo.mod.ParcelExtras.COD.PaymentMethod
+import typings.shippo.mod.ParcelExtras.Insurance.Provider
+import typings.shippo.mod.Rate.Attribute
+import typings.shippo.mod.ShipmentExtras.Alcohol.RecipientType
+import typings.shippo.mod.ShipmentExtras.AncillaryEndorsement
+import typings.shippo.mod.ShipmentExtras.Billing.Type
+import typings.shippo.mod.ShipmentExtras.DangerousGoodsCode
+import typings.shippo.mod.ShipmentExtras.LasershipAttrs
+import typings.shippo.mod.ShipmentExtras.PreferredDeliveryTimeframe
+import typings.shippo.mod.ShipmentExtras.ReturnServiceType
+import typings.shippo.mod.ShipmentExtras.SignatureConfirmation
+import typings.shippo.mod.TrackingStatuses
+import typings.shippo.mod._Carriers
+import typings.shippo.mod._Country
+import typings.shippo.mod._DistanceUnit
+import typings.shippo.mod._FEDEXServiceLevel
+import typings.shippo.mod._MassUnit
+import typings.shippo.mod._UPSServiceLevel
+import typings.shippo.mod._USPSServiceLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +35,99 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object shippoStrings {
   
   @js.native
-  sealed trait ABANDON extends StObject
+  sealed trait `01`
+    extends StObject
+       with DangerousGoodsCode
+  inline def `01`: `01` = "01".asInstanceOf[`01`]
+  
+  @js.native
+  sealed trait `02`
+    extends StObject
+       with DangerousGoodsCode
+  inline def `02`: `02` = "02".asInstanceOf[`02`]
+  
+  @js.native
+  sealed trait `03`
+    extends StObject
+       with DangerousGoodsCode
+  inline def `03`: `03` = "03".asInstanceOf[`03`]
+  
+  @js.native
+  sealed trait `04`
+    extends StObject
+       with DangerousGoodsCode
+  inline def `04`: `04` = "04".asInstanceOf[`04`]
+  
+  @js.native
+  sealed trait `05`
+    extends StObject
+       with DangerousGoodsCode
+  inline def `05`: `05` = "05".asInstanceOf[`05`]
+  
+  @js.native
+  sealed trait `06`
+    extends StObject
+       with DangerousGoodsCode
+  inline def `06`: `06` = "06".asInstanceOf[`06`]
+  
+  @js.native
+  sealed trait `07`
+    extends StObject
+       with DangerousGoodsCode
+  inline def `07`: `07` = "07".asInstanceOf[`07`]
+  
+  @js.native
+  sealed trait `08`
+    extends StObject
+       with DangerousGoodsCode
+  inline def `08`: `08` = "08".asInstanceOf[`08`]
+  
+  @js.native
+  sealed trait `09`
+    extends StObject
+       with DangerousGoodsCode
+  inline def `09`: `09` = "09".asInstanceOf[`09`]
+  
+  @js.native
+  sealed trait `10001200`
+    extends StObject
+       with PreferredDeliveryTimeframe
+  inline def `10001200`: `10001200` = "10001200".asInstanceOf[`10001200`]
+  
+  @js.native
+  sealed trait `12001400`
+    extends StObject
+       with PreferredDeliveryTimeframe
+  inline def `12001400`: `12001400` = "12001400".asInstanceOf[`12001400`]
+  
+  @js.native
+  sealed trait `14001600`
+    extends StObject
+       with PreferredDeliveryTimeframe
+  inline def `14001600`: `14001600` = "14001600".asInstanceOf[`14001600`]
+  
+  @js.native
+  sealed trait `16001800`
+    extends StObject
+       with PreferredDeliveryTimeframe
+  inline def `16001800`: `16001800` = "16001800".asInstanceOf[`16001800`]
+  
+  @js.native
+  sealed trait `18002000`
+    extends StObject
+       with PreferredDeliveryTimeframe
+  inline def `18002000`: `18002000` = "18002000".asInstanceOf[`18002000`]
+  
+  @js.native
+  sealed trait `19002100`
+    extends StObject
+       with PreferredDeliveryTimeframe
+  inline def `19002100`: `19002100` = "19002100".asInstanceOf[`19002100`]
+  
+  @js.native
+  sealed trait ABANDON
+    extends StObject
+       with _NonDeliveryOption
   inline def ABANDON: ABANDON = "ABANDON".asInstanceOf[ABANDON]
   
   @js.native
@@ -23,7 +137,9 @@ object shippoStrings {
   inline def AD: AD = "AD".asInstanceOf[AD]
   
   @js.native
-  sealed trait ADULT extends StObject
+  sealed trait ADULT
+    extends StObject
+       with SignatureConfirmation
   inline def ADULT: ADULT = "ADULT".asInstanceOf[ADULT]
   
   @js.native
@@ -33,7 +149,9 @@ object shippoStrings {
   inline def AE: AE = "AE".asInstanceOf[AE]
   
   @js.native
-  sealed trait AES_ITN extends StObject
+  sealed trait AES_ITN
+    extends StObject
+       with EelPfc
   inline def AES_ITN: AES_ITN = "AES_ITN".asInstanceOf[AES_ITN]
   
   @js.native
@@ -67,7 +185,10 @@ object shippoStrings {
   inline def AM: AM = "AM".asInstanceOf[AM]
   
   @js.native
-  sealed trait ANY extends StObject
+  sealed trait ANY
+    extends StObject
+       with PaymentMethod
+       with typings.shippo.mod.ShipmentExtras.COD.PaymentMethod
   inline def ANY: ANY = "ANY".asInstanceOf[ANY]
   
   @js.native
@@ -89,6 +210,12 @@ object shippoStrings {
   inline def AR: AR = "AR".asInstanceOf[AR]
   
   @js.native
+  sealed trait ARN
+    extends StObject
+       with _Type
+  inline def ARN: ARN = "ARN".asInstanceOf[ARN]
+  
+  @js.native
   sealed trait AS
     extends StObject
        with _Country
@@ -99,6 +226,18 @@ object shippoStrings {
     extends StObject
        with _Country
   inline def AT: AT = "AT".asInstanceOf[AT]
+  
+  @js.native
+  sealed trait ATTEMPT_1
+    extends StObject
+       with ReturnServiceType
+  inline def ATTEMPT_1: ATTEMPT_1 = "ATTEMPT_1".asInstanceOf[ATTEMPT_1]
+  
+  @js.native
+  sealed trait ATTEMPT_3
+    extends StObject
+       with ReturnServiceType
+  inline def ATTEMPT_3: ATTEMPT_3 = "ATTEMPT_3".asInstanceOf[ATTEMPT_3]
   
   @js.native
   sealed trait AU
@@ -125,6 +264,12 @@ object shippoStrings {
   inline def AZ: AZ = "AZ".asInstanceOf[AZ]
   
   @js.native
+  sealed trait Alcohol
+    extends StObject
+       with LasershipAttrs
+  inline def Alcohol: Alcohol = "Alcohol".asInstanceOf[Alcohol]
+  
+  @js.native
   sealed trait BA
     extends StObject
        with _Country
@@ -149,7 +294,9 @@ object shippoStrings {
   inline def BE: BE = "BE".asInstanceOf[BE]
   
   @js.native
-  sealed trait BESTVALUE extends StObject
+  sealed trait BESTVALUE
+    extends StObject
+       with Attribute
   inline def BESTVALUE: BESTVALUE = "BESTVALUE".asInstanceOf[BESTVALUE]
   
   @js.native
@@ -261,11 +408,16 @@ object shippoStrings {
   inline def CA: CA = "CA".asInstanceOf[CA]
   
   @js.native
-  sealed trait CARRIER_CONFIRMATION extends StObject
+  sealed trait CARRIER_CONFIRMATION
+    extends StObject
+       with SignatureConfirmation
   inline def CARRIER_CONFIRMATION: CARRIER_CONFIRMATION = "CARRIER_CONFIRMATION".asInstanceOf[CARRIER_CONFIRMATION]
   
   @js.native
-  sealed trait CASH extends StObject
+  sealed trait CASH
+    extends StObject
+       with PaymentMethod
+       with typings.shippo.mod.ShipmentExtras.COD.PaymentMethod
   inline def CASH: CASH = "CASH".asInstanceOf[CASH]
   
   @js.native
@@ -281,7 +433,9 @@ object shippoStrings {
   inline def CD: CD = "CD".asInstanceOf[CD]
   
   @js.native
-  sealed trait CERTIFIED extends StObject
+  sealed trait CERTIFIED
+    extends StObject
+       with SignatureConfirmation
   inline def CERTIFIED: CERTIFIED = "CERTIFIED".asInstanceOf[CERTIFIED]
   
   @js.native
@@ -303,7 +457,9 @@ object shippoStrings {
   inline def CH: CH = "CH".asInstanceOf[CH]
   
   @js.native
-  sealed trait CHEAPEST extends StObject
+  sealed trait CHEAPEST
+    extends StObject
+       with Attribute
   inline def CHEAPEST: CHEAPEST = "CHEAPEST".asInstanceOf[CHEAPEST]
   
   @js.native
@@ -385,12 +541,10 @@ object shippoStrings {
   inline def CZ: CZ = "CZ".asInstanceOf[CZ]
   
   @js.native
-  sealed trait DDP extends StObject
-  inline def DDP: DDP = "DDP".asInstanceOf[DDP]
-  
-  @js.native
-  sealed trait DDU extends StObject
-  inline def DDU: DDU = "DDU".asInstanceOf[DDU]
+  sealed trait ControlledSubstance
+    extends StObject
+       with LasershipAttrs
+  inline def ControlledSubstance: ControlledSubstance = "ControlledSubstance".asInstanceOf[ControlledSubstance]
   
   @js.native
   sealed trait DE
@@ -399,7 +553,9 @@ object shippoStrings {
   inline def DE: DE = "DE".asInstanceOf[DE]
   
   @js.native
-  sealed trait DELIVERED extends StObject
+  sealed trait DELIVERED
+    extends StObject
+       with TrackingStatuses
   inline def DELIVERED: DELIVERED = "DELIVERED".asInstanceOf[DELIVERED]
   
   @js.native
@@ -427,7 +583,9 @@ object shippoStrings {
   inline def DO: DO = "DO".asInstanceOf[DO]
   
   @js.native
-  sealed trait DOCUMENTS extends StObject
+  sealed trait DOCUMENTS
+    extends StObject
+       with _ContentsType
   inline def DOCUMENTS: DOCUMENTS = "DOCUMENTS".asInstanceOf[DOCUMENTS]
   
   @js.native
@@ -435,6 +593,12 @@ object shippoStrings {
     extends StObject
        with _Country
   inline def DZ: DZ = "DZ".asInstanceOf[DZ]
+  
+  @js.native
+  sealed trait DryIce
+    extends StObject
+       with LasershipAttrs
+  inline def DryIce: DryIce = "DryIce".asInstanceOf[DryIce]
   
   @js.native
   sealed trait EC
@@ -461,13 +625,30 @@ object shippoStrings {
   inline def EH: EH = "EH".asInstanceOf[EH]
   
   @js.native
+  sealed trait EIN
+    extends StObject
+       with _Type
+  inline def EIN: EIN = "EIN".asInstanceOf[EIN]
+  
+  @js.native
+  sealed trait ELECTRONIC_LABEL
+    extends StObject
+       with ReturnServiceType
+  inline def ELECTRONIC_LABEL: ELECTRONIC_LABEL = "ELECTRONIC_LABEL".asInstanceOf[ELECTRONIC_LABEL]
+  
+  @js.native
   sealed trait ER
     extends StObject
        with _Country
   inline def ER: ER = "ER".asInstanceOf[ER]
   
   @js.native
-  sealed trait ERROR extends StObject
+  sealed trait ERROR
+    extends StObject
+       with Status
+       with typings.shippo.mod.Transaction.Status
+       with typings.shippo.mod.Shipment.Status
+       with typings.shippo.mod.Refund.Status
   inline def ERROR: ERROR = "ERROR".asInstanceOf[ERROR]
   
   @js.native
@@ -483,15 +664,28 @@ object shippoStrings {
   inline def ET: ET = "ET".asInstanceOf[ET]
   
   @js.native
-  sealed trait FAILURE extends StObject
+  sealed trait Explosive
+    extends StObject
+       with LasershipAttrs
+  inline def Explosive: Explosive = "Explosive".asInstanceOf[Explosive]
+  
+  @js.native
+  sealed trait FAILURE
+    extends StObject
+       with TrackingStatuses
   inline def FAILURE: FAILURE = "FAILURE".asInstanceOf[FAILURE]
   
   @js.native
-  sealed trait FASTEST extends StObject
+  sealed trait FASTEST
+    extends StObject
+       with Attribute
   inline def FASTEST: FASTEST = "FASTEST".asInstanceOf[FASTEST]
   
   @js.native
-  sealed trait FEDEX extends StObject
+  sealed trait FEDEX
+    extends StObject
+       with Provider
+       with typings.shippo.mod.ShipmentExtras.Insurance.Provider
   inline def FEDEX: FEDEX = "FEDEX".asInstanceOf[FEDEX]
   
   @js.native
@@ -499,6 +693,12 @@ object shippoStrings {
     extends StObject
        with _Country
   inline def FI: FI = "FI".asInstanceOf[FI]
+  
+  @js.native
+  sealed trait FILED_ELECTRONICALLY
+    extends StObject
+       with B13aFilingOption
+  inline def FILED_ELECTRONICALLY: FILED_ELECTRONICALLY = "FILED_ELECTRONICALLY".asInstanceOf[FILED_ELECTRONICALLY]
   
   @js.native
   sealed trait FJ
@@ -523,6 +723,12 @@ object shippoStrings {
     extends StObject
        with _Country
   inline def FO: FO = "FO".asInstanceOf[FO]
+  
+  @js.native
+  sealed trait FORWARDING_SERVICE_REQUESTED
+    extends StObject
+       with AncillaryEndorsement
+  inline def FORWARDING_SERVICE_REQUESTED: FORWARDING_SERVICE_REQUESTED = "FORWARDING_SERVICE_REQUESTED".asInstanceOf[FORWARDING_SERVICE_REQUESTED]
   
   @js.native
   sealed trait FR
@@ -579,7 +785,9 @@ object shippoStrings {
   inline def GI: GI = "GI".asInstanceOf[GI]
   
   @js.native
-  sealed trait GIFT extends StObject
+  sealed trait GIFT
+    extends StObject
+       with _ContentsType
   inline def GIFT: GIFT = "GIFT".asInstanceOf[GIFT]
   
   @js.native
@@ -685,8 +893,16 @@ object shippoStrings {
   inline def HU: HU = "HU".asInstanceOf[HU]
   
   @js.native
-  sealed trait HUMANITARIAN_DONATION extends StObject
+  sealed trait HUMANITARIAN_DONATION
+    extends StObject
+       with _ContentsType
   inline def HUMANITARIAN_DONATION: HUMANITARIAN_DONATION = "HUMANITARIAN_DONATION".asInstanceOf[HUMANITARIAN_DONATION]
+  
+  @js.native
+  sealed trait Hazmat
+    extends StObject
+       with LasershipAttrs
+  inline def Hazmat: Hazmat = "Hazmat".asInstanceOf[Hazmat]
   
   @js.native
   sealed trait ID
@@ -719,11 +935,23 @@ object shippoStrings {
   inline def IN: IN = "IN".asInstanceOf[IN]
   
   @js.native
-  sealed trait INDIRECT extends StObject
+  sealed trait INCOMPLETE
+    extends StObject
+       with typings.shippo.mod.Batch.Shipment.Status
+  inline def INCOMPLETE: INCOMPLETE = "INCOMPLETE".asInstanceOf[INCOMPLETE]
+  
+  @js.native
+  sealed trait INDIRECT
+    extends StObject
+       with SignatureConfirmation
   inline def INDIRECT: INDIRECT = "INDIRECT".asInstanceOf[INDIRECT]
   
   @js.native
-  sealed trait INVALID extends StObject
+  sealed trait INVALID
+    extends StObject
+       with ObjectState
+       with typings.shippo.mod.Batch.Shipment.Status
+       with typings.shippo.mod.Batch.Status
   inline def INVALID: INVALID = "INVALID".asInstanceOf[INVALID]
   
   @js.native
@@ -731,6 +959,12 @@ object shippoStrings {
     extends StObject
        with _Country
   inline def IO: IO = "IO".asInstanceOf[IO]
+  
+  @js.native
+  sealed trait IOSS
+    extends StObject
+       with _Type
+  inline def IOSS: IOSS = "IOSS".asInstanceOf[IOSS]
   
   @js.native
   sealed trait IQ
@@ -937,7 +1171,9 @@ object shippoStrings {
   inline def ME: ME = "ME".asInstanceOf[ME]
   
   @js.native
-  sealed trait MERCHANDISE extends StObject
+  sealed trait MERCHANDISE
+    extends StObject
+       with _ContentsType
   inline def MERCHANDISE: MERCHANDISE = "MERCHANDISE".asInstanceOf[MERCHANDISE]
   
   @js.native
@@ -1103,16 +1339,34 @@ object shippoStrings {
   inline def NO: NO = "NO".asInstanceOf[NO]
   
   @js.native
-  sealed trait NOEEI_30_36 extends StObject
+  sealed trait NOEEI_30_36
+    extends StObject
+       with EelPfc
   inline def NOEEI_30_36: NOEEI_30_36 = "NOEEI_30_36".asInstanceOf[NOEEI_30_36]
   
   @js.native
-  sealed trait NOEEI_30_37_a extends StObject
+  sealed trait NOEEI_30_37_a
+    extends StObject
+       with EelPfc
   inline def NOEEI_30_37_a: NOEEI_30_37_a = "NOEEI_30_37_a".asInstanceOf[NOEEI_30_37_a]
   
   @js.native
-  sealed trait NOEEI_30_37_h extends StObject
+  sealed trait NOEEI_30_37_f
+    extends StObject
+       with EelPfc
+  inline def NOEEI_30_37_f: NOEEI_30_37_f = "NOEEI_30_37_f".asInstanceOf[NOEEI_30_37_f]
+  
+  @js.native
+  sealed trait NOEEI_30_37_h
+    extends StObject
+       with EelPfc
   inline def NOEEI_30_37_h: NOEEI_30_37_h = "NOEEI_30_37_h".asInstanceOf[NOEEI_30_37_h]
+  
+  @js.native
+  sealed trait NOT_REQUIRED
+    extends StObject
+       with B13aFilingOption
+  inline def NOT_REQUIRED: NOT_REQUIRED = "NOT_REQUIRED".asInstanceOf[NOT_REQUIRED]
   
   @js.native
   sealed trait NP
@@ -1139,13 +1393,27 @@ object shippoStrings {
   inline def NZ: NZ = "NZ".asInstanceOf[NZ]
   
   @js.native
+  sealed trait NoRTS
+    extends StObject
+       with LasershipAttrs
+  inline def NoRTS: NoRTS = "NoRTS".asInstanceOf[NoRTS]
+  
+  @js.native
   sealed trait OM
     extends StObject
        with _Country
   inline def OM: OM = "OM".asInstanceOf[OM]
   
   @js.native
-  sealed trait OTHER extends StObject
+  sealed trait ONTRAC
+    extends StObject
+       with typings.shippo.mod.ShipmentExtras.Insurance.Provider
+  inline def ONTRAC: ONTRAC = "ONTRAC".asInstanceOf[ONTRAC]
+  
+  @js.native
+  sealed trait OTHER
+    extends StObject
+       with _ContentsType
   inline def OTHER: OTHER = "OTHER".asInstanceOf[OTHER]
   
   @js.native
@@ -1155,27 +1423,39 @@ object shippoStrings {
   inline def PA: PA = "PA".asInstanceOf[PA]
   
   @js.native
-  sealed trait PDF extends StObject
+  sealed trait PDF
+    extends StObject
+       with LabelFileType
   inline def PDF: PDF = "PDF".asInstanceOf[PDF]
   
   @js.native
-  sealed trait PDF_2Dot3x7Dot5 extends StObject
+  sealed trait PDF_2Dot3x7Dot5
+    extends StObject
+       with LabelFileType
   inline def PDF_2Dot3x7Dot5: PDF_2Dot3x7Dot5 = "PDF_2.3x7.5".asInstanceOf[PDF_2Dot3x7Dot5]
   
   @js.native
-  sealed trait PDF_4x6 extends StObject
+  sealed trait PDF_4x6
+    extends StObject
+       with LabelFileType
   inline def PDF_4x6: PDF_4x6 = "PDF_4x6".asInstanceOf[PDF_4x6]
   
   @js.native
-  sealed trait PDF_4x8 extends StObject
+  sealed trait PDF_4x8
+    extends StObject
+       with LabelFileType
   inline def PDF_4x8: PDF_4x8 = "PDF_4x8".asInstanceOf[PDF_4x8]
   
   @js.native
-  sealed trait PDF_A4 extends StObject
+  sealed trait PDF_A4
+    extends StObject
+       with LabelFileType
   inline def PDF_A4: PDF_A4 = "PDF_A4".asInstanceOf[PDF_A4]
   
   @js.native
-  sealed trait PDF_A6 extends StObject
+  sealed trait PDF_A6
+    extends StObject
+       with LabelFileType
   inline def PDF_A6: PDF_A6 = "PDF_A6".asInstanceOf[PDF_A6]
   
   @js.native
@@ -1183,6 +1463,12 @@ object shippoStrings {
     extends StObject
        with _Country
   inline def PE: PE = "PE".asInstanceOf[PE]
+  
+  @js.native
+  sealed trait PENDING
+    extends StObject
+       with typings.shippo.mod.Refund.Status
+  inline def PENDING: PENDING = "PENDING".asInstanceOf[PENDING]
   
   @js.native
   sealed trait PF
@@ -1227,11 +1513,15 @@ object shippoStrings {
   inline def PN: PN = "PN".asInstanceOf[PN]
   
   @js.native
-  sealed trait PNG extends StObject
+  sealed trait PNG
+    extends StObject
+       with LabelFileType
   inline def PNG: PNG = "PNG".asInstanceOf[PNG]
   
   @js.native
-  sealed trait PNG_2Dot3x7Dot5 extends StObject
+  sealed trait PNG_2Dot3x7Dot5
+    extends StObject
+       with LabelFileType
   inline def PNG_2Dot3x7Dot5: PNG_2Dot3x7Dot5 = "PNG_2.3x7.5".asInstanceOf[PNG_2Dot3x7Dot5]
   
   @js.native
@@ -1239,6 +1529,18 @@ object shippoStrings {
     extends StObject
        with _Country
   inline def PR: PR = "PR".asInstanceOf[PR]
+  
+  @js.native
+  sealed trait PRE_TRANSIT
+    extends StObject
+       with TrackingStatuses
+  inline def PRE_TRANSIT: PRE_TRANSIT = "PRE_TRANSIT".asInstanceOf[PRE_TRANSIT]
+  
+  @js.native
+  sealed trait PRINT_AND_MAIL
+    extends StObject
+       with ReturnServiceType
+  inline def PRINT_AND_MAIL: PRINT_AND_MAIL = "PRINT_AND_MAIL".asInstanceOf[PRINT_AND_MAIL]
   
   @js.native
   sealed trait PS
@@ -1253,6 +1555,18 @@ object shippoStrings {
   inline def PT: PT = "PT".asInstanceOf[PT]
   
   @js.native
+  sealed trait PURCHASED
+    extends StObject
+       with typings.shippo.mod.Batch.Status
+  inline def PURCHASED: PURCHASED = "PURCHASED".asInstanceOf[PURCHASED]
+  
+  @js.native
+  sealed trait PURCHASING
+    extends StObject
+       with typings.shippo.mod.Batch.Status
+  inline def PURCHASING: PURCHASING = "PURCHASING".asInstanceOf[PURCHASING]
+  
+  @js.native
   sealed trait PW
     extends StObject
        with _Country
@@ -1265,13 +1579,24 @@ object shippoStrings {
   inline def PY: PY = "PY".asInstanceOf[PY]
   
   @js.native
+  sealed trait Perishable
+    extends StObject
+       with LasershipAttrs
+  inline def Perishable: Perishable = "Perishable".asInstanceOf[Perishable]
+  
+  @js.native
   sealed trait QA
     extends StObject
        with _Country
   inline def QA: QA = "QA".asInstanceOf[QA]
   
   @js.native
-  sealed trait QUEUED extends StObject
+  sealed trait QUEUED
+    extends StObject
+       with Status
+       with typings.shippo.mod.Transaction.Status
+       with typings.shippo.mod.Shipment.Status
+       with typings.shippo.mod.Refund.Status
   inline def QUEUED: QUEUED = "QUEUED".asInstanceOf[QUEUED]
   
   @js.native
@@ -1281,28 +1606,52 @@ object shippoStrings {
   inline def RE: RE = "RE".asInstanceOf[RE]
   
   @js.native
-  sealed trait REFUNDED extends StObject
+  sealed trait RECIPIENT
+    extends StObject
+       with Type
+  inline def RECIPIENT: RECIPIENT = "RECIPIENT".asInstanceOf[RECIPIENT]
+  
+  @js.native
+  sealed trait REFUNDED
+    extends StObject
+       with typings.shippo.mod.Transaction.Status
   inline def REFUNDED: REFUNDED = "REFUNDED".asInstanceOf[REFUNDED]
   
   @js.native
-  sealed trait REFUNDPENDING extends StObject
+  sealed trait REFUNDPENDING
+    extends StObject
+       with typings.shippo.mod.Transaction.Status
   inline def REFUNDPENDING: REFUNDPENDING = "REFUNDPENDING".asInstanceOf[REFUNDPENDING]
   
   @js.native
-  sealed trait REFUNDREJECTED extends StObject
+  sealed trait REFUNDREJECTED
+    extends StObject
+       with typings.shippo.mod.Transaction.Status
   inline def REFUNDREJECTED: REFUNDREJECTED = "REFUNDREJECTED".asInstanceOf[REFUNDREJECTED]
   
   @js.native
-  sealed trait RETURN extends StObject
+  sealed trait RETURN
+    extends StObject
+       with _NonDeliveryOption
   inline def RETURN: RETURN = "RETURN".asInstanceOf[RETURN]
   
   @js.native
-  sealed trait RETURNED extends StObject
+  sealed trait RETURNED
+    extends StObject
+       with TrackingStatuses
   inline def RETURNED: RETURNED = "RETURNED".asInstanceOf[RETURNED]
   
   @js.native
-  sealed trait RETURN_MERCHANDISE extends StObject
+  sealed trait RETURN_MERCHANDISE
+    extends StObject
+       with _ContentsType
   inline def RETURN_MERCHANDISE: RETURN_MERCHANDISE = "RETURN_MERCHANDISE".asInstanceOf[RETURN_MERCHANDISE]
+  
+  @js.native
+  sealed trait RETURN_SERVICE_REQUESTED
+    extends StObject
+       with AncillaryEndorsement
+  inline def RETURN_SERVICE_REQUESTED: RETURN_SERVICE_REQUESTED = "RETURN_SERVICE_REQUESTED".asInstanceOf[RETURN_SERVICE_REQUESTED]
   
   @js.native
   sealed trait RO
@@ -1329,13 +1678,21 @@ object shippoStrings {
   inline def RW: RW = "RW".asInstanceOf[RW]
   
   @js.native
+  sealed trait Refrigerated
+    extends StObject
+       with LasershipAttrs
+  inline def Refrigerated: Refrigerated = "Refrigerated".asInstanceOf[Refrigerated]
+  
+  @js.native
   sealed trait SA
     extends StObject
        with _Country
   inline def SA: SA = "SA".asInstanceOf[SA]
   
   @js.native
-  sealed trait SAMPLE extends StObject
+  sealed trait SAMPLE
+    extends StObject
+       with _ContentsType
   inline def SAMPLE: SAMPLE = "SAMPLE".asInstanceOf[SAMPLE]
   
   @js.native
@@ -1363,8 +1720,17 @@ object shippoStrings {
   inline def SE: SE = "SE".asInstanceOf[SE]
   
   @js.native
-  sealed trait SECURED_FUNDS extends StObject
+  sealed trait SECURED_FUNDS
+    extends StObject
+       with PaymentMethod
+       with typings.shippo.mod.ShipmentExtras.COD.PaymentMethod
   inline def SECURED_FUNDS: SECURED_FUNDS = "SECURED_FUNDS".asInstanceOf[SECURED_FUNDS]
+  
+  @js.native
+  sealed trait SENDER
+    extends StObject
+       with Type
+  inline def SENDER: SENDER = "SENDER".asInstanceOf[SENDER]
   
   @js.native
   sealed trait SG
@@ -1439,12 +1805,25 @@ object shippoStrings {
   inline def ST: ST = "ST".asInstanceOf[ST]
   
   @js.native
-  sealed trait STANDARD extends StObject
+  sealed trait STANDARD
+    extends StObject
+       with SignatureConfirmation
   inline def STANDARD: STANDARD = "STANDARD".asInstanceOf[STANDARD]
   
   @js.native
-  sealed trait SUCCESS extends StObject
+  sealed trait SUCCESS
+    extends StObject
+       with Status
+       with typings.shippo.mod.Transaction.Status
+       with typings.shippo.mod.Shipment.Status
+       with typings.shippo.mod.Refund.Status
   inline def SUCCESS: SUCCESS = "SUCCESS".asInstanceOf[SUCCESS]
+  
+  @js.native
+  sealed trait SUMMARY_REPORTING
+    extends StObject
+       with B13aFilingOption
+  inline def SUMMARY_REPORTING: SUMMARY_REPORTING = "SUMMARY_REPORTING".asInstanceOf[SUMMARY_REPORTING]
   
   @js.native
   sealed trait SV
@@ -1501,6 +1880,18 @@ object shippoStrings {
   inline def TH: TH = "TH".asInstanceOf[TH]
   
   @js.native
+  sealed trait THIRD_PARTY
+    extends StObject
+       with Type
+  inline def THIRD_PARTY: THIRD_PARTY = "THIRD_PARTY".asInstanceOf[THIRD_PARTY]
+  
+  @js.native
+  sealed trait THIRD_PARTY_CONSIGNEE
+    extends StObject
+       with Type
+  inline def THIRD_PARTY_CONSIGNEE: THIRD_PARTY_CONSIGNEE = "THIRD_PARTY_CONSIGNEE".asInstanceOf[THIRD_PARTY_CONSIGNEE]
+  
+  @js.native
   sealed trait TJ
     extends StObject
        with _Country
@@ -1543,7 +1934,15 @@ object shippoStrings {
   inline def TR: TR = "TR".asInstanceOf[TR]
   
   @js.native
-  sealed trait TRANSIT extends StObject
+  sealed trait TRANSACTION_FAILED
+    extends StObject
+       with typings.shippo.mod.Batch.Shipment.Status
+  inline def TRANSACTION_FAILED: TRANSACTION_FAILED = "TRANSACTION_FAILED".asInstanceOf[TRANSACTION_FAILED]
+  
+  @js.native
+  sealed trait TRANSIT
+    extends StObject
+       with TrackingStatuses
   inline def TRANSIT: TRANSIT = "TRANSIT".asInstanceOf[TRANSIT]
   
   @js.native
@@ -1571,6 +1970,12 @@ object shippoStrings {
   inline def TZ: TZ = "TZ".asInstanceOf[TZ]
   
   @js.native
+  sealed trait TwoPersonDelivery
+    extends StObject
+       with LasershipAttrs
+  inline def TwoPersonDelivery: TwoPersonDelivery = "TwoPersonDelivery".asInstanceOf[TwoPersonDelivery]
+  
+  @js.native
   sealed trait UA
     extends StObject
        with _Country
@@ -1589,11 +1994,16 @@ object shippoStrings {
   inline def UM: UM = "UM".asInstanceOf[UM]
   
   @js.native
-  sealed trait UNKNOWN extends StObject
+  sealed trait UNKNOWN
+    extends StObject
+       with TrackingStatuses
   inline def UNKNOWN: UNKNOWN = "UNKNOWN".asInstanceOf[UNKNOWN]
   
   @js.native
-  sealed trait UPS extends StObject
+  sealed trait UPS
+    extends StObject
+       with Provider
+       with typings.shippo.mod.ShipmentExtras.Insurance.Provider
   inline def UPS: UPS = "UPS".asInstanceOf[UPS]
   
   @js.native
@@ -1621,8 +2031,24 @@ object shippoStrings {
   inline def VA: VA = "VA".asInstanceOf[VA]
   
   @js.native
-  sealed trait VALID extends StObject
+  sealed trait VALID
+    extends StObject
+       with ObjectState
+       with typings.shippo.mod.Batch.Shipment.Status
+       with typings.shippo.mod.Batch.Status
   inline def VALID: VALID = "VALID".asInstanceOf[VALID]
+  
+  @js.native
+  sealed trait VALIDATING
+    extends StObject
+       with typings.shippo.mod.Batch.Status
+  inline def VALIDATING: VALIDATING = "VALIDATING".asInstanceOf[VALIDATING]
+  
+  @js.native
+  sealed trait VAT
+    extends StObject
+       with _Type
+  inline def VAT: VAT = "VAT".asInstanceOf[VAT]
   
   @js.native
   sealed trait VC
@@ -1661,7 +2087,10 @@ object shippoStrings {
   inline def VU: VU = "VU".asInstanceOf[VU]
   
   @js.native
-  sealed trait WAITING extends StObject
+  sealed trait WAITING
+    extends StObject
+       with typings.shippo.mod.Transaction.Status
+       with typings.shippo.mod.Shipment.Status
   inline def WAITING: WAITING = "WAITING".asInstanceOf[WAITING]
   
   @js.native
@@ -1701,7 +2130,9 @@ object shippoStrings {
   inline def ZM: ZM = "ZM".asInstanceOf[ZM]
   
   @js.native
-  sealed trait ZPLII extends StObject
+  sealed trait ZPLII
+    extends StObject
+       with LabelFileType
   inline def ZPLII: ZPLII = "ZPLII".asInstanceOf[ZPLII]
   
   @js.native
@@ -1715,6 +2146,30 @@ object shippoStrings {
     extends StObject
        with _DistanceUnit
   inline def cm_ : cm_ = "cm".asInstanceOf[cm_]
+  
+  @js.native
+  sealed trait consumer
+    extends StObject
+       with RecipientType
+  inline def consumer: consumer = "consumer".asInstanceOf[consumer]
+  
+  @js.native
+  sealed trait creation_failed
+    extends StObject
+       with ObjectResult
+  inline def creation_failed: creation_failed = "creation_failed".asInstanceOf[creation_failed]
+  
+  @js.native
+  sealed trait creation_succeeded
+    extends StObject
+       with ObjectResult
+  inline def creation_succeeded: creation_succeeded = "creation_succeeded".asInstanceOf[creation_succeeded]
+  
+  @js.native
+  sealed trait fedex_
+    extends StObject
+       with _Carriers
+  inline def fedex_ : fedex_ = "fedex".asInstanceOf[fedex_]
   
   @js.native
   sealed trait fedex_2_day
@@ -1861,6 +2316,12 @@ object shippoStrings {
   inline def lb_ : lb_ = "lb".asInstanceOf[lb_]
   
   @js.native
+  sealed trait licensee
+    extends StObject
+       with RecipientType
+  inline def licensee: licensee = "licensee".asInstanceOf[licensee]
+  
+  @js.native
   sealed trait m
     extends StObject
        with _DistanceUnit
@@ -1877,6 +2338,24 @@ object shippoStrings {
     extends StObject
        with _MassUnit
   inline def oz: oz = "oz".asInstanceOf[oz]
+  
+  @js.native
+  sealed trait purchase_failed
+    extends StObject
+       with ObjectResult
+  inline def purchase_failed: purchase_failed = "purchase_failed".asInstanceOf[purchase_failed]
+  
+  @js.native
+  sealed trait purchase_succeeded
+    extends StObject
+       with ObjectResult
+  inline def purchase_succeeded: purchase_succeeded = "purchase_succeeded".asInstanceOf[purchase_succeeded]
+  
+  @js.native
+  sealed trait ups_
+    extends StObject
+       with _Carriers
+  inline def ups_ : ups_ = "ups".asInstanceOf[ups_]
   
   @js.native
   sealed trait ups_3_day_select
@@ -1997,6 +2476,12 @@ object shippoStrings {
     extends StObject
        with _UPSServiceLevel
   inline def ups_surepost_media: ups_surepost_media = "ups_surepost_media".asInstanceOf[ups_surepost_media]
+  
+  @js.native
+  sealed trait usps
+    extends StObject
+       with _Carriers
+  inline def usps: usps = "usps".asInstanceOf[usps]
   
   @js.native
   sealed trait usps_first

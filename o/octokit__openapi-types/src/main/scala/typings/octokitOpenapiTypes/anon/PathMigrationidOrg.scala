@@ -8,11 +8,11 @@ trait PathMigrationidOrg extends StObject {
   
   var path: MigrationidOrg
   
-  var query: `91`
+  var query: `95`
 }
 object PathMigrationidOrg {
   
-  inline def apply(path: MigrationidOrg, query: `91`): PathMigrationidOrg = {
+  inline def apply(path: MigrationidOrg, query: `95`): PathMigrationidOrg = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
     __obj.asInstanceOf[PathMigrationidOrg]
   }
@@ -22,6 +22,6 @@ object PathMigrationidOrg {
     
     inline def setPath(value: MigrationidOrg): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    inline def setQuery(value: `91`): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: `95`): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
   }
 }

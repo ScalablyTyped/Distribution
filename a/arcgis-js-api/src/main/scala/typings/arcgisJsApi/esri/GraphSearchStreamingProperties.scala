@@ -11,9 +11,9 @@ trait GraphSearchStreamingProperties
   /**
     * Specifies list of IDs to search.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphSearchStreaming.html#globalIdsFilter)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphSearchStreaming.html#idsFilter)
     */
-  var globalIdsFilter: js.UndefOr[js.Array[String]] = js.undefined
+  var idsFilter: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Specifies list of names of [entity types](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-EntityType.html#name) or [relationship types](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-RelationshipType.html#name) to search.
@@ -55,11 +55,11 @@ object GraphSearchStreamingProperties {
   @scala.inline
   implicit open class MutableBuilder[Self <: GraphSearchStreamingProperties] (val x: Self) extends AnyVal {
     
-    inline def setGlobalIdsFilter(value: js.Array[String]): Self = StObject.set(x, "globalIdsFilter", value.asInstanceOf[js.Any])
+    inline def setIdsFilter(value: js.Array[String]): Self = StObject.set(x, "idsFilter", value.asInstanceOf[js.Any])
     
-    inline def setGlobalIdsFilterUndefined: Self = StObject.set(x, "globalIdsFilter", js.undefined)
+    inline def setIdsFilterUndefined: Self = StObject.set(x, "idsFilter", js.undefined)
     
-    inline def setGlobalIdsFilterVarargs(value: String*): Self = StObject.set(x, "globalIdsFilter", js.Array(value*))
+    inline def setIdsFilterVarargs(value: String*): Self = StObject.set(x, "idsFilter", js.Array(value*))
     
     inline def setNamedTypesFilter(value: js.Array[String]): Self = StObject.set(x, "namedTypesFilter", value.asInstanceOf[js.Any])
     

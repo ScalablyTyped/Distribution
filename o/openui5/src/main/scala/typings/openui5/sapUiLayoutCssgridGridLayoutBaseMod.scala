@@ -125,6 +125,8 @@ object sapUiLayoutCssgridGridLayoutBaseMod {
     extends typings.openui5.sapUiBaseManagedObjectMod.default {
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Removes all display:grid styles from the provided HTML element
       */
     def _removeGridLayout(/**
@@ -133,6 +135,8 @@ object sapUiLayoutCssgridGridLayoutBaseMod {
     oElement: HTMLElement): Unit = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Sets all display:grid styles to the provided HTML element
       */
     def _setGridLayout(
@@ -168,6 +172,8 @@ object sapUiLayoutCssgridGridLayoutBaseMod {
     def isResponsive(): Boolean = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Hook function for the Grid's onAfterRendering
       */
     def onGridAfterRendering(/**
@@ -176,6 +182,8 @@ object sapUiLayoutCssgridGridLayoutBaseMod {
     oGrid: IGridConfigurable): Unit = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Hook function for the Grid's resize. Will be called if the grid layout is responsive.
       */
     def onGridResize(/**

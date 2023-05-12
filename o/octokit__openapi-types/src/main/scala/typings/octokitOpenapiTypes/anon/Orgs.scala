@@ -20,34 +20,29 @@ trait Orgs extends StObject {
   
   var collab: js.UndefOr[Boolean] = js.undefined
   
-  /** The direction to sort the results by. */
   var direction: js.UndefOr[asc | desc] = js.undefined
   
-  /** Indicates which sorts of issues to return. `assigned` means issues assigned to you. `created` means issues created by you. `mentioned` means issues mentioning you. `subscribed` means issues you're subscribed to updates for. `all` or `repos` means all issues you can see, regardless of participation or creation. */
+  /** @description Indicates which sorts of issues to return. `assigned` means issues assigned to you. `created` means issues created by you. `mentioned` means issues mentioning you. `subscribed` means issues you're subscribed to updates for. `all` or `repos` means all issues you can see, regardless of participation or creation. */
   var filter: js.UndefOr[assigned | created_ | mentioned | subscribed | repos | all] = js.undefined
   
-  /** A list of comma separated label names. Example: `bug,ui,@high` */
   var labels: js.UndefOr[String] = js.undefined
   
   var orgs: js.UndefOr[Boolean] = js.undefined
   
   var owned: js.UndefOr[Boolean] = js.undefined
   
-  /** Page number of the results to fetch. */
   var page: js.UndefOr[Double] = js.undefined
   
-  /** The number of results per page (max 100). */
   var per_page: js.UndefOr[Double] = js.undefined
   
   var pulls: js.UndefOr[Boolean] = js.undefined
   
-  /** Only show notifications updated after the given time. This is a timestamp in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format: `YYYY-MM-DDTHH:MM:SSZ`. */
   var since: js.UndefOr[String] = js.undefined
   
-  /** What to sort results by. */
+  /** @description What to sort results by. */
   var sort: js.UndefOr[created_ | updated | comments] = js.undefined
   
-  /** Indicates the state of the issues to return. */
+  /** @description Indicates the state of the issues to return. */
   var state: js.UndefOr[open | closed | all] = js.undefined
 }
 object Orgs {

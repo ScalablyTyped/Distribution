@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait S3DestinationConfiguration extends StObject {
   
   /**
-    * The ARN of the S3 bucket. For more information, see Amazon Resource Names (ARNs) and AWS Service Namespaces.
+    * The ARN of the S3 bucket. For more information, see Amazon Resource Names (ARNs) and Amazon Web Services Service Namespaces.
     */
   var BucketARN: typings.awsSdk.clientsFirehoseMod.BucketARN
   
@@ -42,7 +42,7 @@ trait S3DestinationConfiguration extends StObject {
   var Prefix: js.UndefOr[typings.awsSdk.clientsFirehoseMod.Prefix] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the AWS credentials. For more information, see Amazon Resource Names (ARNs) and AWS Service Namespaces.
+    * The Amazon Resource Name (ARN) of the Amazon Web Services credentials. For more information, see Amazon Resource Names (ARNs) and Amazon Web Services Service Namespaces.
     */
   var RoleARN: typings.awsSdk.clientsFirehoseMod.RoleARN
 }

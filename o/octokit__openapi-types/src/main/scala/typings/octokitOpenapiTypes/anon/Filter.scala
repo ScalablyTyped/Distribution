@@ -16,38 +16,33 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Filter extends StObject {
   
-  /** The direction to sort the results by. */
   var direction: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['direction'] */ js.Any
   ] = js.undefined
   
-  /** Indicates which sorts of issues to return. `assigned` means issues assigned to you. `created` means issues created by you. `mentioned` means issues mentioning you. `subscribed` means issues you're subscribed to updates for. `all` or `repos` means all issues you can see, regardless of participation or creation. */
+  /** @description Indicates which sorts of issues to return. `assigned` means issues assigned to you. `created` means issues created by you. `mentioned` means issues mentioning you. `subscribed` means issues you're subscribed to updates for. `all` or `repos` means all issues you can see, regardless of participation or creation. */
   var filter: js.UndefOr[assigned | created_ | mentioned | subscribed | repos | all] = js.undefined
   
-  /** A list of comma separated label names. Example: `bug,ui,@high` */
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['labels'] */ js.Any
   ] = js.undefined
   
-  /** Page number of the results to fetch. */
   var page: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['page'] */ js.Any
   ] = js.undefined
   
-  /** The number of results per page (max 100). */
   var per_page: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['per-page'] */ js.Any
   ] = js.undefined
   
-  /** Only show notifications updated after the given time. This is a timestamp in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format: `YYYY-MM-DDTHH:MM:SSZ`. */
   var since: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['since'] */ js.Any
   ] = js.undefined
   
-  /** What to sort results by. */
+  /** @description What to sort results by. */
   var sort: js.UndefOr[created_ | updated | comments] = js.undefined
   
-  /** Indicates the state of the issues to return. */
+  /** @description Indicates the state of the issues to return. */
   var state: js.UndefOr[open | closed | all] = js.undefined
 }
 object Filter {

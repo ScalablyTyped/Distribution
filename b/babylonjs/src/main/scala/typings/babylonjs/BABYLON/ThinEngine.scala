@@ -12,8 +12,8 @@ import typings.babylonjs.anon.FramebufferHeight
 import typings.babylonjs.anon.Height
 import typings.babylonjs.anon.Layers
 import typings.babylonjs.anon.Mag
-import typings.babylonjs.anon.PartialRenderTargetCreati
 import typings.babylonjs.anon.Renderer
+import typings.babylonjs.anon.SRGB
 import typings.babylonjs.anon.W
 import typings.std.AudioContext
 import typings.std.AudioDestinationNode
@@ -23,7 +23,6 @@ import typings.std.HTMLImageElement
 import typings.std.ImageBitmap
 import typings.std.ImageData
 import typings.std.MediaStreamAudioDestinationNode
-import typings.std.WebGLBuffer
 import typings.std.WebGLContextEvent
 import typings.std.WebGLFramebuffer
 import typings.std.WebGLRenderbuffer
@@ -329,7 +328,7 @@ trait ThinEngine extends StObject {
   
   /* protected */ var _creationOptions: EngineOptions = js.native
   
-  /* protected */ var _currentBoundBuffer: js.Array[Nullable[WebGLBuffer]] = js.native
+  /* protected */ var _currentBoundBuffer: js.Array[Nullable[DataBuffer]] = js.native
   
   /* private */ var _currentBufferPointers: Any = js.native
   
@@ -447,6 +446,7 @@ trait ThinEngine extends StObject {
     * @internal
     */
   def _getRGBAMultiSampleBufferFormat(`type`: Double): Double = js.native
+  def _getRGBAMultiSampleBufferFormat(`type`: Double, format: Double): Double = js.native
   
   /**
     * @internal
@@ -490,6 +490,9 @@ trait ThinEngine extends StObject {
   
   /* private */ var _glRenderer: Any = js.native
   
+  /** @internal */
+  var _glSRGBExtensionValues: SRGB = js.native
+  
   /* private */ var _glVendor: Any = js.native
   
   /* private */ var _glVersion: Any = js.native
@@ -506,6 +509,8 @@ trait ThinEngine extends StObject {
   /** @internal */
   var _internalTexturesCache: js.Array[InternalTexture] = js.native
   
+  /* protected */ var _isDisposed: Boolean = js.native
+  
   /**
     * @internal
     */
@@ -517,7 +522,7 @@ trait ThinEngine extends StObject {
   /* protected */ var _isWebGPU: Boolean = js.native
   
   /** @internal */
-  /* private */ var _lastDevicePixelRatio: Any = js.native
+  /* protected */ var _lastDevicePixelRatio: Double = js.native
   
   /**
     * @internal
@@ -1005,6 +1010,8 @@ trait ThinEngine extends StObject {
     samples: Double
   ): Nullable[WebGLRenderbuffer] = js.native
   
+  /* protected */ def _setupMobileChecks(): Unit = js.native
+  
   /** @internal */
   /* protected */ var _shaderPlatformName: String = js.native
   
@@ -1013,10 +1020,8 @@ trait ThinEngine extends StObject {
   /**
     * Shared initialization across engines types.
     * @param canvas The canvas associated with this instance of the engine.
-    * @param doNotHandleTouchAction Defines that engine should ignore modifying touch action attribute and style
-    * @param audioEngine Defines if an audio engine should be created by default
     */
-  /* protected */ def _sharedInit(canvas: HTMLCanvasElement, doNotHandleTouchAction: Boolean, audioEngine: Boolean): Unit = js.native
+  /* protected */ def _sharedInit(canvas: HTMLCanvasElement): Unit = js.native
   
   /** @internal */
   def _shouldUseHighPrecisionShader: Boolean = js.native
@@ -1218,8 +1223,6 @@ trait ThinEngine extends StObject {
     useTextureWidthAndHeight: Boolean
   ): Unit = js.native
   
-  /* protected */ var _useExactSrgbConversions: Boolean = js.native
-  
   /* private */ var _useReverseDepthBuffer: Any = js.native
   
   /* private */ var _vaoRecordInProgress: Any = js.native
@@ -1348,16 +1351,16 @@ trait ThinEngine extends StObject {
   
   /**
     * Binds the frame buffer to the specified texture.
-    * @param texture The render target wrapper to render to
-    * @param faceIndex The face of the texture to render to in case of cube texture
+    * @param rtWrapper The render target wrapper to render to
+    * @param faceIndex The face of the texture to render to in case of cube texture and if the render target wrapper is not a multi render target
     * @param requiredWidth The width of the target to render to
     * @param requiredHeight The height of the target to render to
     * @param forceFullscreenViewport Forces the viewport to be the entire texture/screen if true
-    * @param lodLevel defines the lod level to bind to the frame buffer
-    * @param layer defines the 2d array index to bind to frame buffer to
+    * @param lodLevel Defines the lod level to bind to the frame buffer
+    * @param layer Defines the 2d array index to bind to the frame buffer if the render target wrapper is not a multi render target
     */
   def bindFramebuffer(
-    texture: RenderTargetWrapper,
+    rtWrapper: RenderTargetWrapper,
     faceIndex: js.UndefOr[Double],
     requiredWidth: js.UndefOr[Double],
     requiredHeight: js.UndefOr[Double],
@@ -1411,7 +1414,7 @@ trait ThinEngine extends StObject {
   
   /**
     * Bind a specific vertex array object
-    * @see https://doc.babylonjs.com/features/webgl2#vertex-array-objects
+    * @see https://doc.babylonjs.com/setup/support/webGL2#vertex-array-objects
     * @param vertexArrayObject defines the vertex array object to bind
     * @param indexBuffer defines the index buffer to bind
     */
@@ -1809,7 +1812,7 @@ trait ThinEngine extends StObject {
   
   /**
     * Create a dynamic uniform buffer
-    * @see https://doc.babylonjs.com/features/webgl2#uniform-buffer-objets
+    * @see https://doc.babylonjs.com/setup/support/webGL2#uniform-buffer-objets
     * @param elements defines the content of the uniform buffer
     * @returns the webGL uniform buffer
     */
@@ -1873,7 +1876,7 @@ trait ThinEngine extends StObject {
   
   /**
     * Create a multi render target texture
-    * @see https://doc.babylonjs.com/features/webgl2#multiple-render-target
+    * @see https://doc.babylonjs.com/setup/support/webGL2#multiple-render-target
     * @param size defines the size of the texture
     * @param options defines the creation options
     * @param initializeBuffers if set to true, the engine will make an initializing call of drawBuffers
@@ -2536,7 +2539,7 @@ trait ThinEngine extends StObject {
     * @returns a new render target cube wrapper
     */
   def createRenderTargetCubeTexture(size: Double): RenderTargetWrapper = js.native
-  def createRenderTargetCubeTexture(size: Double, options: PartialRenderTargetCreati): RenderTargetWrapper = js.native
+  def createRenderTargetCubeTexture(size: Double, options: RenderTargetCreationOptions): RenderTargetWrapper = js.native
   
   /**
     * Creates a new render target texture
@@ -2643,7 +2646,7 @@ trait ThinEngine extends StObject {
   
   /**
     * Create an uniform buffer
-    * @see https://doc.babylonjs.com/features/webgl2#uniform-buffer-objets
+    * @see https://doc.babylonjs.com/setup/support/webGL2#uniform-buffer-objets
     * @param elements defines the content of the uniform buffer
     * @returns the webGL uniform buffer
     */
@@ -2712,7 +2715,7 @@ trait ThinEngine extends StObject {
   
   /**
     * Gets or sets a boolean indicating if resources should be retained to be able to handle context lost events
-    * @see https://doc.babylonjs.com/how_to/optimizing_your_scene#handling-webgl-context-lost
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/scene/optimize_your_scene#handling-webgl-context-lost
     */
   def doNotHandleContextLost: Boolean = js.native
   def doNotHandleContextLost_=(value: Boolean): Unit = js.native
@@ -2840,7 +2843,7 @@ trait ThinEngine extends StObject {
   
   /**
     * Gets the current alpha mode
-    * @see https://doc.babylonjs.com/resources/transparency_and_how_meshes_are_rendered
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/materials/advanced/transparent_rendering
     * @returns the current alpha mode
     */
   def getAlphaMode(): Double = js.native
@@ -2985,7 +2988,7 @@ trait ThinEngine extends StObject {
   /**
     * Indicates that the origin of the texture/framebuffer space is the bottom left corner. If false, the origin is top left
     */
-  val hasOriginBottomLeft: /* true */ Boolean = js.native
+  val hasOriginBottomLeft: Boolean = js.native
   
   /**
     * Gets information about the current host
@@ -2999,6 +3002,8 @@ trait ThinEngine extends StObject {
     */
   def inlineShaderCode(code: String): String = js.native
   
+  def isDisposed: Boolean = js.native
+  
   /**
     * Gets a boolean indicating if the engine is currently rendering in fullscreen mode
     */
@@ -3007,7 +3012,7 @@ trait ThinEngine extends StObject {
   /**
     * Indicates if the z range in NDC space is 0..1 (value: true) or -1..1 (value: false)
     */
-  val isNDCHalfZRange: /* false */ Boolean = js.native
+  val isNDCHalfZRange: Boolean = js.native
   
   /**
     * Returns true if the stencil buffer has been enabled through the creation option of the context.
@@ -3095,7 +3100,7 @@ trait ThinEngine extends StObject {
   
   /**
     * Records a vertex array object
-    * @see https://doc.babylonjs.com/features/webgl2#vertex-array-objects
+    * @see https://doc.babylonjs.com/setup/support/webGL2#vertex-array-objects
     * @param vertexBuffers defines the list of vertex buffers to store
     * @param indexBuffer defines the index buffer to store
     * @param effect defines the effect to store
@@ -3189,7 +3194,7 @@ trait ThinEngine extends StObject {
     * Sets the current alpha mode
     * @param mode defines the mode to use (one of the Engine.ALPHA_XXX)
     * @param noDepthWriteChange defines if depth writing state should remains unchanged (false by default)
-    * @see https://doc.babylonjs.com/resources/transparency_and_how_meshes_are_rendered
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/materials/advanced/transparent_rendering
     */
   def setAlphaMode(mode: Double): Unit = js.native
   def setAlphaMode(mode: Double, noDepthWriteChange: Boolean): Unit = js.native
@@ -3462,6 +3467,76 @@ trait ThinEngine extends StObject {
   def setTextureSampler(name: String, sampler: Nullable[TextureSampler]): Unit = js.native
   
   /**
+    * Set the value of an uniform to a number (unsigned int)
+    * @param uniform defines the webGL uniform location where to store the value
+    * @param value defines the unsigned int number to store
+    * @returns true if the value was set
+    */
+  def setUInt(uniform: Nullable[WebGLUniformLocation], value: Double): Boolean = js.native
+  
+  /**
+    * Set the value of an uniform to a unsigned int2
+    * @param uniform defines the webGL uniform location where to store the value
+    * @param x defines the 1st component of the value
+    * @param y defines the 2nd component of the value
+    * @returns true if the value was set
+    */
+  def setUInt2(uniform: Nullable[WebGLUniformLocation], x: Double, y: Double): Boolean = js.native
+  
+  /**
+    * Set the value of an uniform to a unsigned int3
+    * @param uniform defines the webGL uniform location where to store the value
+    * @param x defines the 1st component of the value
+    * @param y defines the 2nd component of the value
+    * @param z defines the 3rd component of the value
+    * @returns true if the value was set
+    */
+  def setUInt3(uniform: Nullable[WebGLUniformLocation], x: Double, y: Double, z: Double): Boolean = js.native
+  
+  /**
+    * Set the value of an uniform to a unsigned int4
+    * @param uniform defines the webGL uniform location where to store the value
+    * @param x defines the 1st component of the value
+    * @param y defines the 2nd component of the value
+    * @param z defines the 3rd component of the value
+    * @param w defines the 4th component of the value
+    * @returns true if the value was set
+    */
+  def setUInt4(uniform: Nullable[WebGLUniformLocation], x: Double, y: Double, z: Double, w: Double): Boolean = js.native
+  
+  /**
+    * Set the value of an uniform to an array of unsigned int32
+    * @param uniform defines the webGL uniform location where to store the value
+    * @param array defines the array of unsigned int32 to store
+    * @returns true if the value was set
+    */
+  def setUIntArray(uniform: Nullable[WebGLUniformLocation], array: js.typedarray.Uint32Array): Boolean = js.native
+  
+  /**
+    * Set the value of an uniform to an array of unsigned int32 (stored as vec2)
+    * @param uniform defines the webGL uniform location where to store the value
+    * @param array defines the array of unsigned int32 to store
+    * @returns true if the value was set
+    */
+  def setUIntArray2(uniform: Nullable[WebGLUniformLocation], array: js.typedarray.Uint32Array): Boolean = js.native
+  
+  /**
+    * Set the value of an uniform to an array of unsigned int32 (stored as vec3)
+    * @param uniform defines the webGL uniform location where to store the value
+    * @param array defines the array of unsigned int32 to store
+    * @returns true if the value was set
+    */
+  def setUIntArray3(uniform: Nullable[WebGLUniformLocation], array: js.typedarray.Uint32Array): Boolean = js.native
+  
+  /**
+    * Set the value of an uniform to an array of unsigned int32 (stored as vec4)
+    * @param uniform defines the webGL uniform location where to store the value
+    * @param array defines the array of unsigned int32 to store
+    * @returns true if the value was set
+    */
+  def setUIntArray4(uniform: Nullable[WebGLUniformLocation], array: js.typedarray.Uint32Array): Boolean = js.native
+  
+  /**
     * Set the WebGL's viewport
     * @param viewport defines the viewport element to be used
     * @param requiredWidth defines the width required for rendering. If not provided the rendering canvas' width is used
@@ -3509,6 +3584,11 @@ trait ThinEngine extends StObject {
   def snapshotRendering_=(activate: Boolean): Unit = js.native
   
   /**
+    * The time (in milliseconds elapsed since the current page has been loaded) when the engine was initialized
+    */
+  val startTime: Double = js.native
+  
+  /**
     * Gets the stencil state manager
     */
   def stencilState: StencilState = js.native
@@ -3527,7 +3607,7 @@ trait ThinEngine extends StObject {
   
   /**
     * Gets a boolean indicating that the engine supports uniform buffers
-    * @see https://doc.babylonjs.com/features/webgl2#uniform-buffer-objets
+    * @see https://doc.babylonjs.com/setup/support/webGL2#uniform-buffer-objets
     */
   def supportsUniformBuffers: Boolean = js.native
   
@@ -3632,7 +3712,7 @@ trait ThinEngine extends StObject {
   
   /**
     * Update the sample count for a given multiple render target texture
-    * @see https://doc.babylonjs.com/features/webgl2#multisample-render-targets
+    * @see https://doc.babylonjs.com/setup/support/webGL2#multisample-render-targets
     * @param rtWrapper defines the render target wrapper to update
     * @param samples defines the sample count to set
     * @param initializeBuffers if set to true, the engine will make an initializing call of drawBuffers
@@ -3790,7 +3870,7 @@ trait ThinEngine extends StObject {
   
   /**
     * Updates the sample count of a render target texture
-    * @see https://doc.babylonjs.com/features/webgl2#multisample-render-targets
+    * @see https://doc.babylonjs.com/setup/support/webGL2#multisample-render-targets
     * @param rtWrapper defines the render target wrapper to update
     * @param samples defines the sample count to set
     * @returns the effective sample count (could be 0 if multisample render targets are not supported)
@@ -3941,7 +4021,7 @@ trait ThinEngine extends StObject {
   
   /**
     * Update an existing uniform buffer
-    * @see https://doc.babylonjs.com/features/webgl2#uniform-buffer-objets
+    * @see https://doc.babylonjs.com/setup/support/webGL2#uniform-buffer-objets
     * @param uniformBuffer defines the target uniform buffer
     * @param elements defines the content to update
     * @param offset defines the offset in the uniform buffer where update should start
@@ -3952,6 +4032,7 @@ trait ThinEngine extends StObject {
   def updateUniformBuffer(uniformBuffer: DataBuffer, elements: FloatArray, offset: Double, count: Double): Unit = js.native
   def updateUniformBuffer(uniformBuffer: DataBuffer, elements: FloatArray, offset: Unit, count: Double): Unit = js.native
   
+  def updateVideoTexture(texture: Nullable[InternalTexture], video: Nullable[ExternalTexture], invertY: Boolean): Unit = js.native
   /**
     * Update a video texture
     * @param texture defines the texture to update
@@ -3963,7 +4044,7 @@ trait ThinEngine extends StObject {
   /**
     * Gets a boolean indicating if the exact sRGB conversions or faster approximations are used for converting to and from linear space.
     */
-  def useExactSrgbConversions: Boolean = js.native
+  val useExactSrgbConversions: Boolean = js.native
   
   /**
     * Gets or sets a boolean indicating if depth buffer should be reverse, going from far to near.

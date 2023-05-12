@@ -2,6 +2,7 @@ package typings.azureMsalCommon
 
 import typings.azureMsalCommon.distConfigClientConfigurationMod.AzureCloudOptions
 import typings.azureMsalCommon.distUtilsConstantsMod.AuthenticationScheme
+import typings.azureMsalCommon.distUtilsMsalTypesMod.StringDict
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,6 +21,8 @@ object distRequestBaseAuthRequestMod {
     
     var correlationId: String
     
+    var maxAge: js.UndefOr[Double] = js.undefined
+    
     var requestedClaimsHash: js.UndefOr[String] = js.undefined
     
     var resourceRequestMethod: js.UndefOr[String] = js.undefined
@@ -35,6 +38,8 @@ object distRequestBaseAuthRequestMod {
     var sshJwk: js.UndefOr[String] = js.undefined
     
     var sshKid: js.UndefOr[String] = js.undefined
+    
+    var tokenQueryParameters: js.UndefOr[StringDict] = js.undefined
   }
   object BaseAuthRequest {
     
@@ -61,6 +66,10 @@ object distRequestBaseAuthRequestMod {
       inline def setClaimsUndefined: Self = StObject.set(x, "claims", js.undefined)
       
       inline def setCorrelationId(value: String): Self = StObject.set(x, "correlationId", value.asInstanceOf[js.Any])
+      
+      inline def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
+      
+      inline def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
       
       inline def setRequestedClaimsHash(value: String): Self = StObject.set(x, "requestedClaimsHash", value.asInstanceOf[js.Any])
       
@@ -93,6 +102,10 @@ object distRequestBaseAuthRequestMod {
       inline def setSshKid(value: String): Self = StObject.set(x, "sshKid", value.asInstanceOf[js.Any])
       
       inline def setSshKidUndefined: Self = StObject.set(x, "sshKid", js.undefined)
+      
+      inline def setTokenQueryParameters(value: StringDict): Self = StObject.set(x, "tokenQueryParameters", value.asInstanceOf[js.Any])
+      
+      inline def setTokenQueryParametersUndefined: Self = StObject.set(x, "tokenQueryParameters", js.undefined)
     }
   }
 }

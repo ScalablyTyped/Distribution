@@ -28,6 +28,51 @@ object anon {
     }
   }
   
+  trait Bottom extends StObject {
+    
+    var bottom: Offset
+    
+    var bottomLeft: Offset
+    
+    var bottomRight: Offset
+    
+    var top: Offset
+    
+    var topLeft: Offset
+    
+    var topRight: Offset
+  }
+  object Bottom {
+    
+    inline def apply(
+      bottom: Offset,
+      bottomLeft: Offset,
+      bottomRight: Offset,
+      top: Offset,
+      topLeft: Offset,
+      topRight: Offset
+    ): Bottom = {
+      val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any], bottomLeft = bottomLeft.asInstanceOf[js.Any], bottomRight = bottomRight.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any], topLeft = topLeft.asInstanceOf[js.Any], topRight = topRight.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Bottom]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bottom] (val x: Self) extends AnyVal {
+      
+      inline def setBottom(value: Offset): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+      
+      inline def setBottomLeft(value: Offset): Self = StObject.set(x, "bottomLeft", value.asInstanceOf[js.Any])
+      
+      inline def setBottomRight(value: Offset): Self = StObject.set(x, "bottomRight", value.asInstanceOf[js.Any])
+      
+      inline def setTop(value: Offset): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      
+      inline def setTopLeft(value: Offset): Self = StObject.set(x, "topLeft", value.asInstanceOf[js.Any])
+      
+      inline def setTopRight(value: Offset): Self = StObject.set(x, "topRight", value.asInstanceOf[js.Any])
+    }
+  }
+  
   trait Offset extends StObject {
     
     var offset: js.Array[Double]

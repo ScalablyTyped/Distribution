@@ -1,7 +1,7 @@
 package typings.awsSdkCredentialProviderIni
 
 import typings.awsSdkCredentialProviderIni.distTypesFromIniMod.FromIniInit
-import typings.awsSdkTypes.distTypesCredentialsMod.Credentials
+import typings.awsSdkTypes.distTypesIdentityAwsCredentialIdentityMod.AwsCredentialIdentity
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +14,7 @@ object distTypesResolveWebIdentityCredentialsMod {
   
   inline def isWebIdentityProfile(arg: Any): /* is @aws-sdk/credential-provider-ini.@aws-sdk/credential-provider-ini/dist-types/resolveWebIdentityCredentials.WebIdentityProfile */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWebIdentityProfile")(arg.asInstanceOf[js.Any]).asInstanceOf[/* is @aws-sdk/credential-provider-ini.@aws-sdk/credential-provider-ini/dist-types/resolveWebIdentityCredentials.WebIdentityProfile */ Boolean]
   
-  inline def resolveWebIdentityCredentials(profile: WebIdentityProfile, options: FromIniInit): js.Promise[Credentials] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveWebIdentityCredentials")(profile.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Credentials]]
+  inline def resolveWebIdentityCredentials(profile: WebIdentityProfile, options: FromIniInit): js.Promise[AwsCredentialIdentity] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveWebIdentityCredentials")(profile.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[AwsCredentialIdentity]]
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped {[ P in string ]: string | undefined} */ trait WebIdentityProfile extends StObject {

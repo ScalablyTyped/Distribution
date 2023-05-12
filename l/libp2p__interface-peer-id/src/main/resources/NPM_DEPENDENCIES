@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@libp2p/interface-peer-id" : "1.0.5"
+      "@libp2p/interface-peer-id" : "2.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@libp2p/interface-peer-id" : "1.0.5"
+      "@libp2p/interface-peer-id" : "2.0.2"
     }
   ],
   "compile-devDependencies" : [

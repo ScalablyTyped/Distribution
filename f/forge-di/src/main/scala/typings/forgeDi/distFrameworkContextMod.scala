@@ -15,13 +15,13 @@ object distFrameworkContextMod {
   @js.native
   trait Context extends StObject {
     
-    var bindings: js.Array[typings.forgeDi.distFrameworkBindingMod.default] = js.native
+    var bindings: js.Array[typings.forgeDi.distFrameworkBindingMod.default[Any]] = js.native
     
-    def has(binding: typings.forgeDi.distFrameworkBindingMod.default): Boolean = js.native
+    def has(binding: typings.forgeDi.distFrameworkBindingMod.default[Any]): Boolean = js.native
     
-    def pop(): typings.forgeDi.distFrameworkBindingMod.default = js.native
+    def pop(): typings.forgeDi.distFrameworkBindingMod.default[Any] = js.native
     
-    def push(binding: typings.forgeDi.distFrameworkBindingMod.default): Double = js.native
+    def push(binding: typings.forgeDi.distFrameworkBindingMod.default[Any]): Double = js.native
     
     def toString(indent: Double): String = js.native
   }

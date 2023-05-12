@@ -4,10 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * This class implements the MapType interface and is provided for rendering
-  * image tiles.
-  */
 @js.native
 trait ImageMapType
   extends StObject

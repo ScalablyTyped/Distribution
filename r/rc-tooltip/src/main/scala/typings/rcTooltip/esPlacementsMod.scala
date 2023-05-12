@@ -1,7 +1,7 @@
 package typings.rcTooltip
 
 import org.scalablytyped.runtime.Shortcut
-import typings.rcTrigger.esInterfaceMod.BuildInPlacements
+import typings.rcComponentTrigger.esInterfaceMod.BuildInPlacements
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

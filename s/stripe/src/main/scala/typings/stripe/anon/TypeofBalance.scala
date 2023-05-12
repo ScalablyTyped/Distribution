@@ -12,13 +12,19 @@ trait TypeofBalance extends StObject {
   
   val InstantAvailable: Any
   
-  val Issuing: TypeofIssuing
+  val Issuing: TypeofIssuingAvailable
   
   val Pending: Any
 }
 object TypeofBalance {
   
-  inline def apply(Available: Any, ConnectReserved: Any, InstantAvailable: Any, Issuing: TypeofIssuing, Pending: Any): TypeofBalance = {
+  inline def apply(
+    Available: Any,
+    ConnectReserved: Any,
+    InstantAvailable: Any,
+    Issuing: TypeofIssuingAvailable,
+    Pending: Any
+  ): TypeofBalance = {
     val __obj = js.Dynamic.literal(Available = Available.asInstanceOf[js.Any], ConnectReserved = ConnectReserved.asInstanceOf[js.Any], InstantAvailable = InstantAvailable.asInstanceOf[js.Any], Issuing = Issuing.asInstanceOf[js.Any], Pending = Pending.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofBalance]
   }
@@ -32,7 +38,7 @@ object TypeofBalance {
     
     inline def setInstantAvailable(value: Any): Self = StObject.set(x, "InstantAvailable", value.asInstanceOf[js.Any])
     
-    inline def setIssuing(value: TypeofIssuing): Self = StObject.set(x, "Issuing", value.asInstanceOf[js.Any])
+    inline def setIssuing(value: TypeofIssuingAvailable): Self = StObject.set(x, "Issuing", value.asInstanceOf[js.Any])
     
     inline def setPending(value: Any): Self = StObject.set(x, "Pending", value.asInstanceOf[js.Any])
   }

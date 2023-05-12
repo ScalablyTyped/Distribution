@@ -1,7 +1,7 @@
 
 # Scala.js typings for it-pb-stream
 
-Typings are for version 2.0.2
+Typings are for version 4.0.1
 
 ## Library description:
 A convenience-wrapper around protocol-buffers and lp-messages functions

@@ -95,8 +95,11 @@ object nativeImage {
   /**
     * fulfilled with the file's thumbnail preview image, which is a NativeImage.
     *
+    * Note: The Windows implementation will ignore `size.height` and scale the height
+    * according to `size.width`.
+    *
     * @platform darwin,win32
     */
   /* static member */
-  inline def createThumbnailFromPath(path: String, maxSize: Size): js.Promise[typings.electron.Electron.NativeImage_] = (^.asInstanceOf[js.Dynamic].applyDynamic("createThumbnailFromPath")(path.asInstanceOf[js.Any], maxSize.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.electron.Electron.NativeImage_]]
+  inline def createThumbnailFromPath(path: String, size: Size): js.Promise[typings.electron.Electron.NativeImage_] = (^.asInstanceOf[js.Dynamic].applyDynamic("createThumbnailFromPath")(path.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.electron.Electron.NativeImage_]]
 }

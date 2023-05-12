@@ -29,7 +29,7 @@ trait GetAllTemplates extends StObject {
     * List all templates available to pass as an option when [creating a repository](https://docs.github.com/rest/reference/repos#create-a-repository-for-the-authenticated-user).
     */
   @JSName("getAllTemplates")
-  var getAllTemplates_Original: `300`
+  var getAllTemplates_Original: `320`
   
   /**
     * The API also allows fetching the source of a single template.
@@ -51,11 +51,11 @@ trait GetAllTemplates extends StObject {
     * Use the raw [media type](https://docs.github.com/rest/overview/media-types/) to get the raw contents.
     */
   @JSName("getTemplate")
-  var getTemplate_Original: `301`
+  var getTemplate_Original: `321`
 }
 object GetAllTemplates {
   
-  inline def apply(getAllTemplates: `300`, getTemplate: `301`): GetAllTemplates = {
+  inline def apply(getAllTemplates: `320`, getTemplate: `321`): GetAllTemplates = {
     val __obj = js.Dynamic.literal(getAllTemplates = getAllTemplates.asInstanceOf[js.Any], getTemplate = getTemplate.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAllTemplates]
   }
@@ -63,8 +63,8 @@ object GetAllTemplates {
   @scala.inline
   implicit open class MutableBuilder[Self <: GetAllTemplates] (val x: Self) extends AnyVal {
     
-    inline def setGetAllTemplates(value: `300`): Self = StObject.set(x, "getAllTemplates", value.asInstanceOf[js.Any])
+    inline def setGetAllTemplates(value: `320`): Self = StObject.set(x, "getAllTemplates", value.asInstanceOf[js.Any])
     
-    inline def setGetTemplate(value: `301`): Self = StObject.set(x, "getTemplate", value.asInstanceOf[js.Any])
+    inline def setGetTemplate(value: `321`): Self = StObject.set(x, "getTemplate", value.asInstanceOf[js.Any])
   }
 }

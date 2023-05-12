@@ -1,21 +1,13 @@
 package typings.ecmarkdown
 
-import typings.ecmarkdown.distNodeTypesMod.CommentNode
 import typings.ecmarkdown.distNodeTypesMod.LocationRange
 import typings.ecmarkdown.distNodeTypesMod.OrderedListItemNode
 import typings.ecmarkdown.distNodeTypesMod.OrderedListNode
-import typings.ecmarkdown.distNodeTypesMod.TagNode
-import typings.ecmarkdown.distNodeTypesMod.TextNode
 import typings.ecmarkdown.distNodeTypesMod.UnorderedListItemNode
 import typings.ecmarkdown.ecmarkdownStrings.algorithm
 import typings.ecmarkdown.ecmarkdownStrings.ol
-import typings.ecmarkdown.ecmarkdownStrings.pipe
-import typings.ecmarkdown.ecmarkdownStrings.star
 import typings.ecmarkdown.ecmarkdownStrings.text
-import typings.ecmarkdown.ecmarkdownStrings.tick
-import typings.ecmarkdown.ecmarkdownStrings.tilde
 import typings.ecmarkdown.ecmarkdownStrings.ul
-import typings.ecmarkdown.ecmarkdownStrings.underscore
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,38 +37,6 @@ object anon {
       inline def setLocation(value: LocationRange): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
       inline def setName(value: algorithm): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait ContentsLocation extends StObject {
-    
-    var contents: js.Array[TagNode | CommentNode | TextNode]
-    
-    var location: LocationRange
-    
-    var name: star | underscore | tick | tilde
-  }
-  object ContentsLocation {
-    
-    inline def apply(
-      contents: js.Array[TagNode | CommentNode | TextNode],
-      location: LocationRange,
-      name: star | underscore | tick | tilde
-    ): ContentsLocation = {
-      val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-      __obj.asInstanceOf[ContentsLocation]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: ContentsLocation] (val x: Self) extends AnyVal {
-      
-      inline def setContents(value: js.Array[TagNode | CommentNode | TextNode]): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
-      
-      inline def setContentsVarargs(value: (TagNode | CommentNode | TextNode)*): Self = StObject.set(x, "contents", js.Array(value*))
-      
-      inline def setLocation(value: LocationRange): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
-      
-      inline def setName(value: star | underscore | tick | tilde): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -184,45 +144,6 @@ object anon {
       inline def setName(value: ol): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  /* Inlined std.Pick<ecmarkdown.ecmarkdown/dist/node-types.PipeNode, 'contents' | 'name' | 'nonTerminal' | 'params' | 'optional'> & {  location :ecmarkdown.ecmarkdown/dist/node-types.LocationRange} */
-  trait PickPipeNodecontentsnamen extends StObject {
-    
-    var contents: Null
-    
-    var location: LocationRange
-    
-    var name: pipe
-    
-    var nonTerminal: String
-    
-    var optional: Boolean
-    
-    var params: String
-  }
-  object PickPipeNodecontentsnamen {
-    
-    inline def apply(contents: Null, location: LocationRange, nonTerminal: String, optional: Boolean, params: String): PickPipeNodecontentsnamen = {
-      val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = "pipe", nonTerminal = nonTerminal.asInstanceOf[js.Any], optional = optional.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
-      __obj.asInstanceOf[PickPipeNodecontentsnamen]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: PickPipeNodecontentsnamen] (val x: Self) extends AnyVal {
-      
-      inline def setContents(value: Null): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
-      
-      inline def setLocation(value: LocationRange): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
-      
-      inline def setName(value: pipe): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-      
-      inline def setNonTerminal(value: String): Self = StObject.set(x, "nonTerminal", value.asInstanceOf[js.Any])
-      
-      inline def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
-      
-      inline def setParams(value: String): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     }
   }
   

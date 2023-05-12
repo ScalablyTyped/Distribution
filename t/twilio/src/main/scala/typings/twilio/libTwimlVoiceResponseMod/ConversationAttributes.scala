@@ -6,32 +6,46 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ConversationAttributes extends StObject {
   
+  /** inboundAutocreation - Inbound autocreation */
   var inboundAutocreation: js.UndefOr[Boolean] = js.undefined
   
+  /** inboundTimeout - Inbound timeout */
   var inboundTimeout: js.UndefOr[Double] = js.undefined
   
+  /** method - TwiML URL method */
   var method: js.UndefOr[String] = js.undefined
   
+  /** record - Record */
   var record: js.UndefOr[ConversationRecord] = js.undefined
   
+  /** recordingStatusCallback - Recording status callback URL */
   var recordingStatusCallback: js.UndefOr[String] = js.undefined
   
+  /** recordingStatusCallbackEvent - Recording status callback events */
   var recordingStatusCallbackEvent: js.UndefOr[js.Array[ConversationRecordingEvent]] = js.undefined
   
+  /** recordingStatusCallbackMethod - Recording status callback URL method */
   var recordingStatusCallbackMethod: js.UndefOr[String] = js.undefined
   
+  /** routingAssignmentTimeout - Routing assignment timeout */
   var routingAssignmentTimeout: js.UndefOr[Double] = js.undefined
   
+  /** serviceInstanceSid - Service instance Sid */
   var serviceInstanceSid: js.UndefOr[String] = js.undefined
   
+  /** statusCallback - Status callback URL */
   var statusCallback: js.UndefOr[String] = js.undefined
   
+  /** statusCallbackEvent - Events to call status callback URL */
   var statusCallbackEvent: js.UndefOr[js.Array[ConversationEvent]] = js.undefined
   
+  /** statusCallbackMethod - Status callback URL method */
   var statusCallbackMethod: js.UndefOr[String] = js.undefined
   
+  /** trim - Trim */
   var trim: js.UndefOr[ConversationTrim] = js.undefined
   
+  /** url - TwiML URL */
   var url: js.UndefOr[String] = js.undefined
 }
 object ConversationAttributes {

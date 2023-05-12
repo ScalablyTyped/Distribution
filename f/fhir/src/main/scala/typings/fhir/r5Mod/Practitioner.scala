@@ -39,9 +39,10 @@ trait Practitioner
   var birthDate: js.UndefOr[String] = js.undefined
   
   /**
-    * The structure aa-BB with this exact casing is one the most widely used notations for locale. However not all systems code this but instead have it as free text. Hence CodeableConcept instead of code as the data type.
+    * If no language is specified, this *implies* that the default local language is spoken.  If you need to convey proficiency for multiple modes, then you need multiple Practitioner.Communication associations.
+    * For animals, language is not a relevant field, and should be absent from the instance.
     */
-  var communication: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
+  var communication: js.UndefOr[js.Array[PractitionerCommunication]] = js.undefined
   
   /**
     * If there's no value in the instance, it means there is no statement on whether or not the practitioner is deceased. Most systems will interpret the absence of a value as a sign of the person being alive.
@@ -80,7 +81,7 @@ trait Practitioner
   var photo: js.UndefOr[js.Array[Attachment]] = js.undefined
   
   /**
-    * The official certifications, training, and licenses that authorize or otherwise pertain to the provision of care by the practitioner.  For example, a medical license issued by a medical board authorizing the practitioner to practice medicine within a certain locality.
+    * The PractitionerRole.specialty defines the functional role that they are practicing at a given organization or location.  Those specialties may or might not require a qualification, and are not defined on the practitioner.
     */
   var qualification: js.UndefOr[js.Array[PractitionerQualification]] = js.undefined
   
@@ -117,11 +118,11 @@ object Practitioner {
     
     inline def setBirthDateUndefined: Self = StObject.set(x, "birthDate", js.undefined)
     
-    inline def setCommunication(value: js.Array[CodeableConcept]): Self = StObject.set(x, "communication", value.asInstanceOf[js.Any])
+    inline def setCommunication(value: js.Array[PractitionerCommunication]): Self = StObject.set(x, "communication", value.asInstanceOf[js.Any])
     
     inline def setCommunicationUndefined: Self = StObject.set(x, "communication", js.undefined)
     
-    inline def setCommunicationVarargs(value: CodeableConcept*): Self = StObject.set(x, "communication", js.Array(value*))
+    inline def setCommunicationVarargs(value: PractitionerCommunication*): Self = StObject.set(x, "communication", js.Array(value*))
     
     inline def setDeceasedBoolean(value: Boolean): Self = StObject.set(x, "deceasedBoolean", value.asInstanceOf[js.Any])
     

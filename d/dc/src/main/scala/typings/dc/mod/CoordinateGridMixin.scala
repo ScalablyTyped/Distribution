@@ -1,5 +1,6 @@
 package typings.dc.mod
 
+import typings.d3Axis.mod.Axis
 import typings.d3Selection.mod.BaseType
 import typings.d3Selection.mod.Selection_
 import org.scalablytyped.runtime.StObject
@@ -18,12 +19,7 @@ trait CoordinateGridMixin[T]
   @JSName("brushOn")
   var brushOn_Original: IGetSet[Boolean, T] = js.native
   
-  def chartBodyG(): Selection_[
-    Any, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-    BaseType, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-  ] = js.native
+  def chartBodyG(): Selection_[BaseType, Any, BaseType, Any] = js.native
   
   def clipPadding(): Double = js.native
   def clipPadding(t: Double): T = js.native
@@ -43,30 +39,10 @@ trait CoordinateGridMixin[T]
   def focus(): Unit = js.native
   def focus(range: js.Array[Any]): Unit = js.native
   
-  def g(): Selection_[
-    Any, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-    BaseType, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-  ] = js.native
-  def g(
-    t: Selection_[
-      Any, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-      BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-    ]
-  ): T = js.native
+  def g(): Selection_[BaseType, Any, BaseType, Any] = js.native
+  def g(t: Selection_[BaseType, Any, BaseType, Any]): T = js.native
   @JSName("g")
-  var g_Original: IGetSet[
-    Selection_[
-      Any, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-      BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-    ], 
-    T
-  ] = js.native
+  var g_Original: IGetSet[Selection_[BaseType, Any, BaseType, Any], T] = js.native
   
   def isOrdinal(): Boolean = js.native
   
@@ -103,10 +79,8 @@ trait CoordinateGridMixin[T]
   def x(): js.Function1[/* n */ Any, Any] = js.native
   def x(t: js.Function1[/* n */ Any, Any]): T = js.native
   
-  def xAxis(): Any = js.native
-  def xAxis(
-    t: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify d3.svg.Axis */ Any
-  ): T = js.native
+  def xAxis(): Axis[Any] = js.native
+  def xAxis(t: Axis[Any]): T = js.native
   
   def xAxisLabel(): String = js.native
   def xAxisLabel(t: String): T = js.native
@@ -124,10 +98,7 @@ trait CoordinateGridMixin[T]
   var xAxisPadding_Original: IGetSet[Double, T] = js.native
   
   @JSName("xAxis")
-  var xAxis_Original: IGetSet[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify d3.svg.Axis */ Any, 
-    T
-  ] = js.native
+  var xAxis_Original: IGetSet[Axis[Any], T] = js.native
   
   def xUnitCount(): Double = js.native
   
@@ -142,10 +113,8 @@ trait CoordinateGridMixin[T]
   def y(): Scale[Double] = js.native
   def y(t: Scale[Double]): T = js.native
   
-  def yAxis(): Any = js.native
-  def yAxis(
-    t: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify d3.svg.Axis */ Any
-  ): T = js.native
+  def yAxis(): Axis[Any] = js.native
+  def yAxis(t: Axis[Any]): T = js.native
   
   def yAxisLabel(): String = js.native
   def yAxisLabel(t: String): T = js.native
@@ -163,10 +132,7 @@ trait CoordinateGridMixin[T]
   var yAxisPadding_Original: IGetSet[Double, T] = js.native
   
   @JSName("yAxis")
-  var yAxis_Original: IGetSet[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify d3.svg.Axis */ Any, 
-    T
-  ] = js.native
+  var yAxis_Original: IGetSet[Axis[Any], T] = js.native
   
   @JSName("y")
   var y_Original: IGetSet[Scale[Double], T] = js.native

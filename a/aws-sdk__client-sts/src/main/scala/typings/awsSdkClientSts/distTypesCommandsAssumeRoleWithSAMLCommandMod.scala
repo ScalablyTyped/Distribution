@@ -27,8 +27,14 @@ object distTypesCommandsAssumeRoleWithSAMLCommandMod {
           Any, 
           Any
         ] {
+    /**
+      * @public
+      */
     def this(input: AssumeRoleWithSAMLCommandInput) = this()
     
+    /**
+      * @internal
+      */
     /* private */ var deserialize: Any = js.native
     
     /**
@@ -44,6 +50,9 @@ object distTypesCommandsAssumeRoleWithSAMLCommandMod {
       options: HttpHandlerOptions
     ): Handler[AssumeRoleWithSAMLCommandInput, AssumeRoleWithSAMLCommandOutput] = js.native
     
+    /**
+      * @internal
+      */
     /* private */ var serialize: Any = js.native
   }
   /* static members */

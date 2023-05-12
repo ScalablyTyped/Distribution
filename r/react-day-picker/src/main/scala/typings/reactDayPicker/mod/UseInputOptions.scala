@@ -11,7 +11,12 @@ trait UseInputOptions extends StObject {
   /** The initially selected date */
   var defaultSelected: js.UndefOr[js.Date] = js.undefined
   
-  /** The format string for formatting the input field. See https://date-fns.org/docs/format for a list of format strings. Default to `PP`. */
+  /**
+    * The format string for formatting the input field. See
+    * https://date-fns.org/docs/format for a list of format strings.
+    *
+    * @defaultValue PP
+    */
   var format: js.UndefOr[String] = js.undefined
   
   var fromDate: js.UndefOr[js.Date] = js.undefined

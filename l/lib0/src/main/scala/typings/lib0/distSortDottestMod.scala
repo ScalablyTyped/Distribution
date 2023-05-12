@@ -18,4 +18,6 @@ object distSortDottestMod {
   inline def testSortUint16(tc: TestCase): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testSortUint16")(tc.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def testSortUint32(tc: TestCase): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testSortUint32")(tc.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  inline def testSortUint8(tc: TestCase): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testSortUint8")(tc.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

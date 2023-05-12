@@ -1,9 +1,6 @@
 package typings.expoMetroConfig
 
 import typings.expoMetroConfig.expoMetroConfigStrings.exotic
-import typings.metro.libReportingMod.Reporter
-import typings.metroConfig.configTypesMod.ConfigT
-import typings.metroConfig.configTypesMod.InputConfigT
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,19 +19,23 @@ object buildExpoMetroConfigMod {
   @js.native
   val INTERNAL_CALLSITES_REGEX: js.RegExp = js.native
   
-  inline def getDefaultConfig(projectRoot: String): InputConfigT = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultConfig")(projectRoot.asInstanceOf[js.Any]).asInstanceOf[InputConfigT]
-  inline def getDefaultConfig(projectRoot: String, options: DefaultConfigOptions): InputConfigT = (^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultConfig")(projectRoot.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[InputConfigT]
+  inline def getDefaultConfig(projectRoot: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultConfig")(projectRoot.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def getDefaultConfig(projectRoot: String, options: DefaultConfigOptions): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultConfig")(projectRoot.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  inline def loadAsync(projectRoot: String): js.Promise[ConfigT] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadAsync")(projectRoot.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ConfigT]]
-  inline def loadAsync(projectRoot: String, param1: LoadOptions): js.Promise[ConfigT] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadAsync")(projectRoot.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ConfigT]]
+  inline def loadAsync(projectRoot: String): js.Promise[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MetroConfig.ConfigT */ Any
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadAsync")(projectRoot.asInstanceOf[js.Any]).asInstanceOf[js.Promise[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MetroConfig.ConfigT */ Any
+  ]]
+  inline def loadAsync(projectRoot: String, param1: LoadOptions): js.Promise[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MetroConfig.ConfigT */ Any
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadAsync")(projectRoot.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MetroConfig.ConfigT */ Any
+  ]]
   
   trait DefaultConfigOptions extends StObject {
     
     var mode: js.UndefOr[exotic] = js.undefined
-    
-    var target: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ProjectTarget */ Any
-      ] = js.undefined
   }
   object DefaultConfigOptions {
     
@@ -49,12 +50,6 @@ object buildExpoMetroConfigMod {
       inline def setMode(value: exotic): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
       inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
-      
-      inline def setTarget(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ProjectTarget */ Any
-      ): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
-      
-      inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     }
   }
   
@@ -66,13 +61,11 @@ object buildExpoMetroConfigMod {
     
     var port: js.UndefOr[Double] = js.undefined
     
-    var reporter: js.UndefOr[Reporter] = js.undefined
+    var reporter: js.UndefOr[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Reporter */ Any
+      ] = js.undefined
     
     var resetCache: js.UndefOr[Boolean] = js.undefined
-    
-    var target: js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ProjectTarget */ Any
-      ] = js.undefined
   }
   object LoadOptions {
     
@@ -96,19 +89,15 @@ object buildExpoMetroConfigMod {
       
       inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       
-      inline def setReporter(value: Reporter): Self = StObject.set(x, "reporter", value.asInstanceOf[js.Any])
+      inline def setReporter(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Reporter */ Any
+      ): Self = StObject.set(x, "reporter", value.asInstanceOf[js.Any])
       
       inline def setReporterUndefined: Self = StObject.set(x, "reporter", js.undefined)
       
       inline def setResetCache(value: Boolean): Self = StObject.set(x, "resetCache", value.asInstanceOf[js.Any])
       
       inline def setResetCacheUndefined: Self = StObject.set(x, "resetCache", js.undefined)
-      
-      inline def setTarget(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ProjectTarget */ Any
-      ): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
-      
-      inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     }
   }
 }

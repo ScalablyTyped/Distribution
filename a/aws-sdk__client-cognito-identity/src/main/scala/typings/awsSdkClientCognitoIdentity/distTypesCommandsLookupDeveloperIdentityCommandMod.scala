@@ -28,8 +28,14 @@ object distTypesCommandsLookupDeveloperIdentityCommandMod {
           Any, 
           Any
         ] {
+    /**
+      * @public
+      */
     def this(input: LookupDeveloperIdentityCommandInput) = this()
     
+    /**
+      * @internal
+      */
     /* private */ var deserialize: Any = js.native
     
     /**
@@ -45,6 +51,9 @@ object distTypesCommandsLookupDeveloperIdentityCommandMod {
       options: HttpHandlerOptions
     ): Handler[LookupDeveloperIdentityCommandInput, LookupDeveloperIdentityCommandOutput] = js.native
     
+    /**
+      * @internal
+      */
     /* private */ var serialize: Any = js.native
   }
   /* static members */

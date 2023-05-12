@@ -31,7 +31,7 @@ trait Select2Plugin[TElement] extends StObject {
     * Opens the dropdown
     */
   def apply(method: open): JQuery[TElement] = js.native
-  // tslint:disable-next-line:no-unnecessary-generics
+  // eslint-disable-next-line no-unnecessary-generics
   def apply[Result, RemoteResult](options: Options[Result, RemoteResult]): JQuery[TElement] = js.native
   
   var amd: Require = js.native

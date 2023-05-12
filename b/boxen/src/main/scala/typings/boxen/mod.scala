@@ -1,17 +1,12 @@
 package typings.boxen
 
-import typings.boxen.boxenStrings.arrow
 import typings.boxen.boxenStrings.black
 import typings.boxen.boxenStrings.blackBright
 import typings.boxen.boxenStrings.blue
 import typings.boxen.boxenStrings.blueBright
-import typings.boxen.boxenStrings.bold
 import typings.boxen.boxenStrings.center
-import typings.boxen.boxenStrings.classic
 import typings.boxen.boxenStrings.cyan
 import typings.boxen.boxenStrings.cyanBright
-import typings.boxen.boxenStrings.double
-import typings.boxen.boxenStrings.doubleSingle
 import typings.boxen.boxenStrings.gray
 import typings.boxen.boxenStrings.green
 import typings.boxen.boxenStrings.greenBright
@@ -19,12 +14,10 @@ import typings.boxen.boxenStrings.grey
 import typings.boxen.boxenStrings.left
 import typings.boxen.boxenStrings.magenta
 import typings.boxen.boxenStrings.magentaBright
+import typings.boxen.boxenStrings.none
 import typings.boxen.boxenStrings.red
 import typings.boxen.boxenStrings.redBright
 import typings.boxen.boxenStrings.right
-import typings.boxen.boxenStrings.round
-import typings.boxen.boxenStrings.single
-import typings.boxen.boxenStrings.singleDouble
 import typings.boxen.boxenStrings.white
 import typings.boxen.boxenStrings.whiteBright
 import typings.boxen.boxenStrings.yellow
@@ -43,6 +36,39 @@ object mod {
   
   inline def default(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def default(text: String, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  /**
+  All box styles.
+  */
+  trait Boxes
+    extends StObject
+       with typings.cliBoxes.mod.Boxes {
+    
+    val none: BoxStyle
+  }
+  object Boxes {
+    
+    inline def apply(
+      arrow: BoxStyle,
+      bold: BoxStyle,
+      classic: BoxStyle,
+      double: BoxStyle,
+      doubleSingle: BoxStyle,
+      none: BoxStyle,
+      round: BoxStyle,
+      single: BoxStyle,
+      singleDouble: BoxStyle
+    ): Boxes = {
+      val __obj = js.Dynamic.literal(arrow = arrow.asInstanceOf[js.Any], bold = bold.asInstanceOf[js.Any], classic = classic.asInstanceOf[js.Any], double = double.asInstanceOf[js.Any], doubleSingle = doubleSingle.asInstanceOf[js.Any], none = none.asInstanceOf[js.Any], round = round.asInstanceOf[js.Any], single = single.asInstanceOf[js.Any], singleDouble = singleDouble.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Boxes]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Boxes] (val x: Self) extends AnyVal {
+      
+      inline def setNone(value: BoxStyle): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
+    }
+  }
   
   trait CustomBorderStyle
     extends StObject
@@ -120,9 +146,7 @@ object mod {
     	Style of the box border.
     	@default 'single'
     	*/
-    val borderStyle: js.UndefOr[
-        single | double | round | bold | singleDouble | doubleSingle | classic | arrow | CustomBorderStyle
-      ] = js.undefined
+    val borderStyle: js.UndefOr[none | CustomBorderStyle] = js.undefined
     
     /**
     	Reduce opacity of the border.
@@ -137,13 +161,13 @@ object mod {
     val float: js.UndefOr[left | right | center] = js.undefined
     
     /**
-    	__boolean__: Wether or not to fit all available space within the terminal.
+    	__boolean__: Whether or not to fit all available space within the terminal.
     	__function__: Pass a callback function to control box dimensions.
     	@example
     	```
     	import boxen from 'boxen';
     	console.log(boxen('foo bar', {
-    		fullscreen: (width, height) => [width, height - 1];
+    		fullscreen: (width, height) => [width, height - 1],
     	}));
     	```
     	*/
@@ -265,9 +289,7 @@ object mod {
       
       inline def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
       
-      inline def setBorderStyle(
-        value: single | double | round | bold | singleDouble | doubleSingle | classic | arrow | CustomBorderStyle
-      ): Self = StObject.set(x, "borderStyle", value.asInstanceOf[js.Any])
+      inline def setBorderStyle(value: none | CustomBorderStyle): Self = StObject.set(x, "borderStyle", value.asInstanceOf[js.Any])
       
       inline def setBorderStyleUndefined: Self = StObject.set(x, "borderStyle", js.undefined)
       
@@ -325,18 +347,18 @@ object mod {
   
   trait Spacing extends StObject {
     
-    val bottom: Double
+    val bottom: js.UndefOr[Double] = js.undefined
     
-    val left: Double
+    val left: js.UndefOr[Double] = js.undefined
     
-    val right: Double
+    val right: js.UndefOr[Double] = js.undefined
     
-    val top: Double
+    val top: js.UndefOr[Double] = js.undefined
   }
   object Spacing {
     
-    inline def apply(bottom: Double, left: Double, right: Double, top: Double): Spacing = {
-      val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
+    inline def apply(): Spacing = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Spacing]
     }
     
@@ -345,11 +367,19 @@ object mod {
       
       inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
+      inline def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
+      
       inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      
+      inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
       
       inline def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
       
+      inline def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
+      
       inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      
+      inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
     }
   }
 }

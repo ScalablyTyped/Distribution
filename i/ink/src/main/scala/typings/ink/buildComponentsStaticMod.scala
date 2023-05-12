@@ -9,31 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object buildComponentsStaticMod {
   
-  /**
-    * `<Static>` component permanently renders its output above everything else.
-    * It's useful for displaying activity like completed tasks or logs - things that
-    * are not changing after they're rendered (hence the name "Static").
-    *
-    * It's preferred to use `<Static>` for use cases like these, when you can't know
-    * or control the amount of items that need to be rendered.
-    *
-    * For example, [Tap](https://github.com/tapjs/node-tap) uses `<Static>` to display
-    * a list of completed tests. [Gatsby](https://github.com/gatsbyjs/gatsby) uses it
-    * to display a list of generated pages, while still displaying a live progress bar.
-    */
-  object default {
-    
-    inline def apply[T](props: Props[T]): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
-    
-    @JSImport("ink/build/components/Static", JSImport.Default)
-    @js.native
-    val ^ : js.Any = js.native
-    
-    @JSImport("ink/build/components/Static", "default.displayName")
-    @js.native
-    def displayName: String = js.native
-    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
-  }
+  @JSImport("ink/build/components/Static", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def default[T](props: Props[T]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait Props[T] extends StObject {
     

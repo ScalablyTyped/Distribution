@@ -27,7 +27,7 @@ trait OrderSummary extends StObject {
   var OrderSubmissionDate: js.UndefOr[js.Date] = js.undefined
   
   /**
-    *  The type of order. 
+    * The type of order.
     */
   var OrderType: js.UndefOr[typings.awsSdk.clientsOutpostsMod.OrderType] = js.undefined
   

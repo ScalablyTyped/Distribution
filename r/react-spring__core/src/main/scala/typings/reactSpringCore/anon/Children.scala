@@ -1,7 +1,7 @@
 package typings.reactSpringCore.anon
 
 import typings.react.mod.global.JSX.Element
-import typings.reactSpringCore.distDeclarationsSrcTypesObjectsMod.SpringValues
+import typings.reactSpringCore.mod.SpringValues
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -344,6 +344,13 @@ object distNativeMqttMod {
       */
     def disconnect(): js.Promise[Unit] = js.native
     
+    /**
+      * Queries a small set of numerical statistics about the current state of the connection's operation queue
+      *
+      * @group Node-only
+      */
+    def getQueueStatistics(): ConnectionStatistics = js.native
+    
     @JSName("on")
     def on_connect(event: connect, listener: MqttConnectionConnected): this.type = js.native
     @JSName("on")
@@ -435,7 +442,7 @@ object distNativeMqttMod {
     inline def CONNECT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CONNECT")(x.asInstanceOf[js.Any])
     
     /**
-      * Emitted when connection has disconnected sucessfully.
+      * Emitted when connection has disconnected successfully.
       *
       * @event
       */
@@ -525,6 +532,57 @@ object distNativeMqttMod {
     /* 2 */ val ExactlyOnce: typings.awsCrt.distCommonMqttMod.QoS.ExactlyOnce & Double = js.native
   }
   
+  trait ConnectionStatistics extends StObject {
+    
+    /**
+      * Total number of operations submitted to the connection that have not yet been completed.  Unacked operations
+      * are a subset of this.
+      */
+    var incompleteOperationCount: Double
+    
+    /**
+      * Total packet size of operations submitted to the connection that have not yet been completed.  Unacked operations
+      * are a subset of this.
+      */
+    var incompleteOperationSize: Double
+    
+    /**
+      * Total number of operations that have been sent to the server and are waiting for a corresponding ACK before
+      * they can be completed.
+      */
+    var unackedOperationCount: Double
+    
+    /**
+      * Total packet size of operations that have been sent to the server and are waiting for a corresponding ACK before
+      * they can be completed.
+      */
+    var unackedOperationSize: Double
+  }
+  object ConnectionStatistics {
+    
+    inline def apply(
+      incompleteOperationCount: Double,
+      incompleteOperationSize: Double,
+      unackedOperationCount: Double,
+      unackedOperationSize: Double
+    ): ConnectionStatistics = {
+      val __obj = js.Dynamic.literal(incompleteOperationCount = incompleteOperationCount.asInstanceOf[js.Any], incompleteOperationSize = incompleteOperationSize.asInstanceOf[js.Any], unackedOperationCount = unackedOperationCount.asInstanceOf[js.Any], unackedOperationSize = unackedOperationSize.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ConnectionStatistics]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectionStatistics] (val x: Self) extends AnyVal {
+      
+      inline def setIncompleteOperationCount(value: Double): Self = StObject.set(x, "incompleteOperationCount", value.asInstanceOf[js.Any])
+      
+      inline def setIncompleteOperationSize(value: Double): Self = StObject.set(x, "incompleteOperationSize", value.asInstanceOf[js.Any])
+      
+      inline def setUnackedOperationCount(value: Double): Self = StObject.set(x, "unackedOperationCount", value.asInstanceOf[js.Any])
+      
+      inline def setUnackedOperationSize(value: Double): Self = StObject.set(x, "unackedOperationSize", value.asInstanceOf[js.Any])
+    }
+  }
+  
   trait MqttConnectionConfig extends StObject {
     
     /**
@@ -597,7 +655,7 @@ object distNativeMqttMod {
       */
     var reconnect_min_sec: js.UndefOr[Double] = js.undefined
     
-    /** Optional socket options */
+    /** Socket options */
     var socket_options: SocketOptions
     
     /**

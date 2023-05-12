@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "fast-content-type-parse" : "1.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "fast-content-type-parse" : "1.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

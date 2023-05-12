@@ -20,7 +20,6 @@ object mod {
   @JSImport("imap", JSImport.Namespace)
   @js.native
   open class ^ protected () extends Connection {
-    /** @constructor */
     def this(config: Config) = this()
     
     /** Adds flag(s) to message(s). */

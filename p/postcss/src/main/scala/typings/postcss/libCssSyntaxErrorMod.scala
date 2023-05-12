@@ -7,11 +7,46 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object libCssSyntaxErrorMod {
   
+  @JSImport("postcss/lib/css-syntax-error", JSImport.Namespace)
+  @js.native
+  open class ^ ()
+    extends StObject
+       with CssSyntaxError_
+  
+  /**
+    * The CSS parser throws this error for broken CSS.
+    *
+    * Custom parsers can throw this error for broken custom syntax using
+    * the `Node#error` method.
+    *
+    * PostCSS will use the input source map to detect the original error location.
+    * If you wrote a Sass file, compiled it to CSS and then parsed it with PostCSS,
+    * PostCSS will show the original position in the Sass file.
+    *
+    * If you need the position in the PostCSS input
+    * (e.g., to debug the previous compiler), use `error.input.file`.
+    *
+    * ```js
+    * // Raising error from plugin
+    * throw node.error('Unknown variable', { plugin: 'postcss-vars' })
+    * ```
+    *
+    * ```js
+    * // Catching and checking syntax error
+    * try {
+    *   postcss.parse('a{')
+    * } catch (error) {
+    *   if (error.name === 'CssSyntaxError') {
+    *     error //=> CssSyntaxError
+    *   }
+    * }
+    * ```
+    */
   @JSImport("postcss/lib/css-syntax-error", JSImport.Default)
   @js.native
   open class default protected ()
     extends StObject
-       with CssSyntaxError {
+       with CssSyntaxError_ {
     /**
       * Instantiates a CSS syntax error. Can be instantiated for a single position
       * or for a range.
@@ -34,8 +69,39 @@ object libCssSyntaxErrorMod {
     ) = this()
   }
   
+  type CssSyntaxError = CssSyntaxError_
+  
+  /**
+    * The CSS parser throws this error for broken CSS.
+    *
+    * Custom parsers can throw this error for broken custom syntax using
+    * the `Node#error` method.
+    *
+    * PostCSS will use the input source map to detect the original error location.
+    * If you wrote a Sass file, compiled it to CSS and then parsed it with PostCSS,
+    * PostCSS will show the original position in the Sass file.
+    *
+    * If you need the position in the PostCSS input
+    * (e.g., to debug the previous compiler), use `error.input.file`.
+    *
+    * ```js
+    * // Raising error from plugin
+    * throw node.error('Unknown variable', { plugin: 'postcss-vars' })
+    * ```
+    *
+    * ```js
+    * // Catching and checking syntax error
+    * try {
+    *   postcss.parse('a{')
+    * } catch (error) {
+    *   if (error.name === 'CssSyntaxError') {
+    *     error //=> CssSyntaxError
+    *   }
+    * }
+    * ```
+    */
   @js.native
-  trait CssSyntaxError extends StObject {
+  trait CssSyntaxError_ extends StObject {
     
     /**
       * Source column of the error.

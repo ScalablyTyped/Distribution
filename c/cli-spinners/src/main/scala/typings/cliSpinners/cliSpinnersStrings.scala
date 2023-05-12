@@ -56,6 +56,12 @@ object cliSpinnersStrings {
   inline def betaWave: betaWave = "betaWave".asInstanceOf[betaWave]
   
   @js.native
+  sealed trait binary
+    extends StObject
+       with SpinnerName
+  inline def binary: binary = "binary".asInstanceOf[binary]
+  
+  @js.native
   sealed trait bluePulse
     extends StObject
        with SpinnerName
@@ -204,6 +210,12 @@ object cliSpinnersStrings {
     extends StObject
        with SpinnerName
   inline def dqpb: dqpb = "dqpb".asInstanceOf[dqpb]
+  
+  @js.native
+  sealed trait dwarfFortress
+    extends StObject
+       with SpinnerName
+  inline def dwarfFortress: dwarfFortress = "dwarfFortress".asInstanceOf[dwarfFortress]
   
   @js.native
   sealed trait earth

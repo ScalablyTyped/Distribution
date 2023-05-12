@@ -67,7 +67,7 @@ trait GlobalReplicationGroup extends StObject {
   var Status: js.UndefOr[String] = js.undefined
   
   /**
-    * A flag that enables in-transit encryption when set to true. You cannot modify the value of TransitEncryptionEnabled after the cluster is created. To enable in-transit encryption on a cluster you must set TransitEncryptionEnabled to true when you create a cluster.   Required: Only available when creating a replication group in an Amazon VPC using redis version 3.2.6, 4.x or later.
+    * A flag that enables in-transit encryption when set to true.  Required: Only available when creating a replication group in an Amazon VPC using redis version 3.2.6, 4.x or later.
     */
   var TransitEncryptionEnabled: js.UndefOr[BooleanOptional] = js.undefined
 }

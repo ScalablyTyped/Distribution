@@ -85,6 +85,8 @@ object mod extends Shortcut {
     
     var quiet: js.UndefOr[Boolean] = js.undefined
     
+    var quietDeprecationWarnings: js.UndefOr[Boolean] = js.undefined
+    
     var reportDescriptionlessDisables: js.UndefOr[Boolean] = js.undefined
     
     var reportInvalidScopeDisables: js.UndefOr[Boolean] = js.undefined
@@ -102,8 +104,6 @@ object mod extends Shortcut {
       * @default []
       */
     var reporters: js.UndefOr[js.Array[Reporter]] = js.undefined
-    
-    var syntax: js.UndefOr[String] = js.undefined
   }
   object Options {
     
@@ -203,6 +203,10 @@ object mod extends Shortcut {
       
       inline def setQuiet(value: Boolean): Self = StObject.set(x, "quiet", value.asInstanceOf[js.Any])
       
+      inline def setQuietDeprecationWarnings(value: Boolean): Self = StObject.set(x, "quietDeprecationWarnings", value.asInstanceOf[js.Any])
+      
+      inline def setQuietDeprecationWarningsUndefined: Self = StObject.set(x, "quietDeprecationWarnings", js.undefined)
+      
       inline def setQuietUndefined: Self = StObject.set(x, "quiet", js.undefined)
       
       inline def setReportDescriptionlessDisables(value: Boolean): Self = StObject.set(x, "reportDescriptionlessDisables", value.asInstanceOf[js.Any])
@@ -226,10 +230,6 @@ object mod extends Shortcut {
       inline def setReportersUndefined: Self = StObject.set(x, "reporters", js.undefined)
       
       inline def setReportersVarargs(value: Reporter*): Self = StObject.set(x, "reporters", js.Array(value*))
-      
-      inline def setSyntax(value: String): Self = StObject.set(x, "syntax", value.asInstanceOf[js.Any])
-      
-      inline def setSyntaxUndefined: Self = StObject.set(x, "syntax", js.undefined)
     }
   }
   

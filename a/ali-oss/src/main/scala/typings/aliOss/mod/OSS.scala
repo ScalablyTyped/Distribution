@@ -291,6 +291,12 @@ trait OSS extends StObject {
   def listUploads(query: ListUploadsQuery): js.Promise[ListUploadsResult] = js.native
   def listUploads(query: ListUploadsQuery, options: RequestOptions): js.Promise[ListUploadsResult] = js.native
   
+  def listV2(query: Null, options: RequestOptions): js.Promise[ListObjectResult] = js.native
+  /**
+    * List Objects in the bucket.(V2)
+    */
+  def listV2(query: ListV2ObjectsQuery, options: RequestOptions): js.Promise[ListObjectResult] = js.native
+  
   /**
     * Upload file with OSS multipart.
     */

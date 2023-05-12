@@ -187,14 +187,14 @@ object global {
   ): Unit = (js.Dynamic.global.applyDynamic("useEventListener")(eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def useEventListener(eventName: String, handler: EventListenerOrEventListenerObject, element: Window): Unit = (js.Dynamic.global.applyDynamic("useEventListener")(eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def useEventListener(eventName: String, handler: EventListenerOrEventListenerObject, element: Window, options: Options): Unit = (js.Dynamic.global.applyDynamic("useEventListener")(eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def useEventListener[K /* <: /* keyof std.HTMLElementEventMap & std.DocumentEventMap & std.WindowEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 127, starting with typings.useItEventListener.useItEventListenerStrings.fullscreenchange, typings.useItEventListener.useItEventListenerStrings.fullscreenerror, typings.useItEventListener.useItEventListenerStrings.copy */ Any */](
+  inline def useEventListener[K /* <: /* keyof std.HTMLElementEventMap & std.DocumentEventMap & std.WindowEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 127, starting with typings.useItEventListener.useItEventListenerStrings.fullscreenchange, typings.useItEventListener.useItEventListenerStrings.fullscreenerror, typings.useItEventListener.useItEventListenerStrings.abort */ Any */](
     eventName: K,
     handler: js.Function1[
       /* import warning: importer.ImportType#apply Failed type conversion: std.HTMLElementEventMap & std.DocumentEventMap & std.WindowEventMap[K] */ /* event */ js.Any, 
       Unit
     ]
   ): Unit = (js.Dynamic.global.applyDynamic("useEventListener")(eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def useEventListener[K /* <: /* keyof std.HTMLElementEventMap & std.DocumentEventMap & std.WindowEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 127, starting with typings.useItEventListener.useItEventListenerStrings.fullscreenchange, typings.useItEventListener.useItEventListenerStrings.fullscreenerror, typings.useItEventListener.useItEventListenerStrings.copy */ Any */](
+  inline def useEventListener[K /* <: /* keyof std.HTMLElementEventMap & std.DocumentEventMap & std.WindowEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 127, starting with typings.useItEventListener.useItEventListenerStrings.fullscreenchange, typings.useItEventListener.useItEventListenerStrings.fullscreenerror, typings.useItEventListener.useItEventListenerStrings.abort */ Any */](
     eventName: K,
     handler: js.Function1[
       /* import warning: importer.ImportType#apply Failed type conversion: std.HTMLElementEventMap & std.DocumentEventMap & std.WindowEventMap[K] */ /* event */ js.Any, 
@@ -203,7 +203,7 @@ object global {
     element: Null,
     options: Options
   ): Unit = (js.Dynamic.global.applyDynamic("useEventListener")(eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def useEventListener[K /* <: /* keyof std.HTMLElementEventMap & std.DocumentEventMap & std.WindowEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 127, starting with typings.useItEventListener.useItEventListenerStrings.fullscreenchange, typings.useItEventListener.useItEventListenerStrings.fullscreenerror, typings.useItEventListener.useItEventListenerStrings.copy */ Any */](
+  inline def useEventListener[K /* <: /* keyof std.HTMLElementEventMap & std.DocumentEventMap & std.WindowEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 127, starting with typings.useItEventListener.useItEventListenerStrings.fullscreenchange, typings.useItEventListener.useItEventListenerStrings.fullscreenerror, typings.useItEventListener.useItEventListenerStrings.abort */ Any */](
     eventName: K,
     handler: js.Function1[
       /* import warning: importer.ImportType#apply Failed type conversion: std.HTMLElementEventMap & std.DocumentEventMap & std.WindowEventMap[K] */ /* event */ js.Any, 
@@ -212,7 +212,7 @@ object global {
     element: Unit,
     options: Options
   ): Unit = (js.Dynamic.global.applyDynamic("useEventListener")(eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def useEventListener[K /* <: /* keyof std.HTMLElementEventMap & std.DocumentEventMap & std.WindowEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 127, starting with typings.useItEventListener.useItEventListenerStrings.fullscreenchange, typings.useItEventListener.useItEventListenerStrings.fullscreenerror, typings.useItEventListener.useItEventListenerStrings.copy */ Any */](
+  inline def useEventListener[K /* <: /* keyof std.HTMLElementEventMap & std.DocumentEventMap & std.WindowEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 127, starting with typings.useItEventListener.useItEventListenerStrings.fullscreenchange, typings.useItEventListener.useItEventListenerStrings.fullscreenerror, typings.useItEventListener.useItEventListenerStrings.abort */ Any */](
     eventName: K,
     handler: js.Function1[
       /* import warning: importer.ImportType#apply Failed type conversion: std.HTMLElementEventMap & std.DocumentEventMap & std.WindowEventMap[K] */ /* event */ js.Any, 
@@ -220,7 +220,7 @@ object global {
     ],
     element: Document
   ): Unit = (js.Dynamic.global.applyDynamic("useEventListener")(eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def useEventListener[K /* <: /* keyof std.HTMLElementEventMap & std.DocumentEventMap & std.WindowEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 127, starting with typings.useItEventListener.useItEventListenerStrings.fullscreenchange, typings.useItEventListener.useItEventListenerStrings.fullscreenerror, typings.useItEventListener.useItEventListenerStrings.copy */ Any */](
+  inline def useEventListener[K /* <: /* keyof std.HTMLElementEventMap & std.DocumentEventMap & std.WindowEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 127, starting with typings.useItEventListener.useItEventListenerStrings.fullscreenchange, typings.useItEventListener.useItEventListenerStrings.fullscreenerror, typings.useItEventListener.useItEventListenerStrings.abort */ Any */](
     eventName: K,
     handler: js.Function1[
       /* import warning: importer.ImportType#apply Failed type conversion: std.HTMLElementEventMap & std.DocumentEventMap & std.WindowEventMap[K] */ /* event */ js.Any, 
@@ -229,7 +229,7 @@ object global {
     element: Document,
     options: Options
   ): Unit = (js.Dynamic.global.applyDynamic("useEventListener")(eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def useEventListener[K /* <: /* keyof std.HTMLElementEventMap & std.DocumentEventMap & std.WindowEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 127, starting with typings.useItEventListener.useItEventListenerStrings.fullscreenchange, typings.useItEventListener.useItEventListenerStrings.fullscreenerror, typings.useItEventListener.useItEventListenerStrings.copy */ Any */](
+  inline def useEventListener[K /* <: /* keyof std.HTMLElementEventMap & std.DocumentEventMap & std.WindowEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 127, starting with typings.useItEventListener.useItEventListenerStrings.fullscreenchange, typings.useItEventListener.useItEventListenerStrings.fullscreenerror, typings.useItEventListener.useItEventListenerStrings.abort */ Any */](
     eventName: K,
     handler: js.Function1[
       /* import warning: importer.ImportType#apply Failed type conversion: std.HTMLElementEventMap & std.DocumentEventMap & std.WindowEventMap[K] */ /* event */ js.Any, 
@@ -237,7 +237,7 @@ object global {
     ],
     element: HTMLElement
   ): Unit = (js.Dynamic.global.applyDynamic("useEventListener")(eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def useEventListener[K /* <: /* keyof std.HTMLElementEventMap & std.DocumentEventMap & std.WindowEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 127, starting with typings.useItEventListener.useItEventListenerStrings.fullscreenchange, typings.useItEventListener.useItEventListenerStrings.fullscreenerror, typings.useItEventListener.useItEventListenerStrings.copy */ Any */](
+  inline def useEventListener[K /* <: /* keyof std.HTMLElementEventMap & std.DocumentEventMap & std.WindowEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 127, starting with typings.useItEventListener.useItEventListenerStrings.fullscreenchange, typings.useItEventListener.useItEventListenerStrings.fullscreenerror, typings.useItEventListener.useItEventListenerStrings.abort */ Any */](
     eventName: K,
     handler: js.Function1[
       /* import warning: importer.ImportType#apply Failed type conversion: std.HTMLElementEventMap & std.DocumentEventMap & std.WindowEventMap[K] */ /* event */ js.Any, 
@@ -246,7 +246,7 @@ object global {
     element: HTMLElement,
     options: Options
   ): Unit = (js.Dynamic.global.applyDynamic("useEventListener")(eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def useEventListener[K /* <: /* keyof std.HTMLElementEventMap & std.DocumentEventMap & std.WindowEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 127, starting with typings.useItEventListener.useItEventListenerStrings.fullscreenchange, typings.useItEventListener.useItEventListenerStrings.fullscreenerror, typings.useItEventListener.useItEventListenerStrings.copy */ Any */](
+  inline def useEventListener[K /* <: /* keyof std.HTMLElementEventMap & std.DocumentEventMap & std.WindowEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 127, starting with typings.useItEventListener.useItEventListenerStrings.fullscreenchange, typings.useItEventListener.useItEventListenerStrings.fullscreenerror, typings.useItEventListener.useItEventListenerStrings.abort */ Any */](
     eventName: K,
     handler: js.Function1[
       /* import warning: importer.ImportType#apply Failed type conversion: std.HTMLElementEventMap & std.DocumentEventMap & std.WindowEventMap[K] */ /* event */ js.Any, 
@@ -254,7 +254,7 @@ object global {
     ],
     element: Window
   ): Unit = (js.Dynamic.global.applyDynamic("useEventListener")(eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def useEventListener[K /* <: /* keyof std.HTMLElementEventMap & std.DocumentEventMap & std.WindowEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 127, starting with typings.useItEventListener.useItEventListenerStrings.fullscreenchange, typings.useItEventListener.useItEventListenerStrings.fullscreenerror, typings.useItEventListener.useItEventListenerStrings.copy */ Any */](
+  inline def useEventListener[K /* <: /* keyof std.HTMLElementEventMap & std.DocumentEventMap & std.WindowEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 127, starting with typings.useItEventListener.useItEventListenerStrings.fullscreenchange, typings.useItEventListener.useItEventListenerStrings.fullscreenerror, typings.useItEventListener.useItEventListenerStrings.abort */ Any */](
     eventName: K,
     handler: js.Function1[
       /* import warning: importer.ImportType#apply Failed type conversion: std.HTMLElementEventMap & std.DocumentEventMap & std.WindowEventMap[K] */ /* event */ js.Any, 
@@ -780,6 +780,7 @@ object global {
   element: Null,
     options: Options
   ): Unit = (js.Dynamic.global.applyDynamic("useEventListener")(eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useEventListener_copy(eventName: copy, handler: ClipboardEvent, element: Unit, options: Options): Unit = (js.Dynamic.global.applyDynamic("useEventListener")(eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def useEventListener_copy(eventName: copy, handler: ClipboardEvent, element: Document): Unit = (js.Dynamic.global.applyDynamic("useEventListener")(eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def useEventListener_copy(eventName: copy, handler: ClipboardEvent, element: Document, options: Options): Unit = (js.Dynamic.global.applyDynamic("useEventListener")(eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def useEventListener_copy(
@@ -795,6 +796,8 @@ object global {
   element: HTMLElement,
     options: Options
   ): Unit = (js.Dynamic.global.applyDynamic("useEventListener")(eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useEventListener_copy(eventName: copy, handler: ClipboardEvent, element: Window): Unit = (js.Dynamic.global.applyDynamic("useEventListener")(eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useEventListener_copy(eventName: copy, handler: ClipboardEvent, element: Window, options: Options): Unit = (js.Dynamic.global.applyDynamic("useEventListener")(eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def useEventListener_cuechange(eventName: cuechange, handler: Event): Unit = (js.Dynamic.global.applyDynamic("useEventListener")(eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def useEventListener_cuechange(
@@ -831,6 +834,7 @@ object global {
   element: Null,
     options: Options
   ): Unit = (js.Dynamic.global.applyDynamic("useEventListener")(eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useEventListener_cut(eventName: cut, handler: ClipboardEvent, element: Unit, options: Options): Unit = (js.Dynamic.global.applyDynamic("useEventListener")(eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def useEventListener_cut(eventName: cut, handler: ClipboardEvent, element: Document): Unit = (js.Dynamic.global.applyDynamic("useEventListener")(eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def useEventListener_cut(eventName: cut, handler: ClipboardEvent, element: Document, options: Options): Unit = (js.Dynamic.global.applyDynamic("useEventListener")(eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def useEventListener_cut(
@@ -846,6 +850,8 @@ object global {
   element: HTMLElement,
     options: Options
   ): Unit = (js.Dynamic.global.applyDynamic("useEventListener")(eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useEventListener_cut(eventName: cut, handler: ClipboardEvent, element: Window): Unit = (js.Dynamic.global.applyDynamic("useEventListener")(eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useEventListener_cut(eventName: cut, handler: ClipboardEvent, element: Window, options: Options): Unit = (js.Dynamic.global.applyDynamic("useEventListener")(eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def useEventListener_dblclick(eventName: dblclick, handler: MouseEvent): Unit = (js.Dynamic.global.applyDynamic("useEventListener")(eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def useEventListener_dblclick(
@@ -1889,6 +1895,7 @@ object global {
   element: Null,
     options: Options
   ): Unit = (js.Dynamic.global.applyDynamic("useEventListener")(eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useEventListener_paste(eventName: paste, handler: ClipboardEvent, element: Unit, options: Options): Unit = (js.Dynamic.global.applyDynamic("useEventListener")(eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def useEventListener_paste(eventName: paste, handler: ClipboardEvent, element: Document): Unit = (js.Dynamic.global.applyDynamic("useEventListener")(eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def useEventListener_paste(eventName: paste, handler: ClipboardEvent, element: Document, options: Options): Unit = (js.Dynamic.global.applyDynamic("useEventListener")(eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def useEventListener_paste(
@@ -1904,6 +1911,8 @@ object global {
   element: HTMLElement,
     options: Options
   ): Unit = (js.Dynamic.global.applyDynamic("useEventListener")(eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useEventListener_paste(eventName: paste, handler: ClipboardEvent, element: Window): Unit = (js.Dynamic.global.applyDynamic("useEventListener")(eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useEventListener_paste(eventName: paste, handler: ClipboardEvent, element: Window, options: Options): Unit = (js.Dynamic.global.applyDynamic("useEventListener")(eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def useEventListener_pause(eventName: pause, handler: Event): Unit = (js.Dynamic.global.applyDynamic("useEventListener")(eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def useEventListener_pause(

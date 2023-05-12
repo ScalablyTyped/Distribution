@@ -1,5 +1,6 @@
 package typings.rcSelect
 
+import typings.rcSelect.libBaseSelectMod.DisplayInfoType
 import typings.rcSelect.libBaseSelectMod.Mode
 import typings.rcSelect.libBaseSelectMod.Placement
 import org.scalablytyped.runtime.StObject
@@ -9,7 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object rcSelectStrings {
   
   @js.native
-  sealed trait add extends StObject
+  sealed trait add
+    extends StObject
+       with DisplayInfoType
   inline def add: add = "add".asInstanceOf[add]
   
   @js.native
@@ -57,7 +60,9 @@ object rcSelectStrings {
   inline def bottomRight: bottomRight = "bottomRight".asInstanceOf[bottomRight]
   
   @js.native
-  sealed trait clear extends StObject
+  sealed trait clear
+    extends StObject
+       with DisplayInfoType
   inline def clear: clear = "clear".asInstanceOf[clear]
   
   @js.native
@@ -197,7 +202,9 @@ object rcSelectStrings {
   inline def `removals text`: `removals text` = ("removals text").asInstanceOf[`removals text`]
   
   @js.native
-  sealed trait remove extends StObject
+  sealed trait remove
+    extends StObject
+       with DisplayInfoType
   inline def remove: remove = "remove".asInstanceOf[remove]
   
   @js.native

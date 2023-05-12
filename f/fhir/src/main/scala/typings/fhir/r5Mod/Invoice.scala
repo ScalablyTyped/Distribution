@@ -16,9 +16,13 @@ trait Invoice
   
   var _cancelledReason: js.UndefOr[Element] = js.undefined
   
+  var _creation: js.UndefOr[Element] = js.undefined
+  
   var _date: js.UndefOr[Element] = js.undefined
   
   var _paymentTerms: js.UndefOr[Element] = js.undefined
+  
+  var _periodDate: js.UndefOr[Element] = js.undefined
   
   var _status: js.UndefOr[Element] = js.undefined
   
@@ -35,6 +39,11 @@ trait Invoice
   /**
     * The list of types may be constrained as appropriate for the type of charge item.
     */
+  var creation: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Depricared by the element below.
+    */
   var date: js.UndefOr[String] = js.undefined
   
   /**
@@ -48,7 +57,7 @@ trait Invoice
   var issuer: js.UndefOr[Reference] = js.undefined
   
   /**
-    * Each line item represents one charge for goods and services rendered. Details such as date, code and amount are found in the referenced ChargeItem resource.
+    * Each line item represents one charge for goods and services rendered. Details such.ofType(date), code and amount are found in the referenced ChargeItem resource.
     */
   var lineItem: js.UndefOr[js.Array[InvoiceLineItem]] = js.undefined
   
@@ -66,6 +75,16 @@ trait Invoice
     * Derived Profiles may chose to add invariants requiring this field to be populated if either priceOverride or factorOverride have been filled.
     */
   var paymentTerms: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Date/time(s) range of services included in this invoice.
+    */
+  var periodDate: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Date/time(s) range of services included in this invoice.
+    */
+  var periodPeriod: js.UndefOr[Period] = js.undefined
   
   /**
     * The individual or Organization responsible for balancing of this invoice.
@@ -99,7 +118,7 @@ trait Invoice
   /**
     * The total amount for the Invoice may be calculated as the sum of the line items with surcharges/deductions that apply in certain conditions.  The priceComponent element can be used to offer transparency to the recipient of the Invoice of how the total price was calculated.
     */
-  var totalPriceComponent: js.UndefOr[js.Array[InvoiceLineItemPriceComponent]] = js.undefined
+  var totalPriceComponent: js.UndefOr[js.Array[MonetaryComponent]] = js.undefined
   
   /**
     * Type of Invoice depending on domain, realm an usage (e.g. internal/external, dental, preliminary).
@@ -123,6 +142,10 @@ object Invoice {
     inline def setCancelledReason(value: String): Self = StObject.set(x, "cancelledReason", value.asInstanceOf[js.Any])
     
     inline def setCancelledReasonUndefined: Self = StObject.set(x, "cancelledReason", js.undefined)
+    
+    inline def setCreation(value: String): Self = StObject.set(x, "creation", value.asInstanceOf[js.Any])
+    
+    inline def setCreationUndefined: Self = StObject.set(x, "creation", js.undefined)
     
     inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
@@ -160,6 +183,14 @@ object Invoice {
     
     inline def setPaymentTermsUndefined: Self = StObject.set(x, "paymentTerms", js.undefined)
     
+    inline def setPeriodDate(value: String): Self = StObject.set(x, "periodDate", value.asInstanceOf[js.Any])
+    
+    inline def setPeriodDateUndefined: Self = StObject.set(x, "periodDate", js.undefined)
+    
+    inline def setPeriodPeriod(value: Period): Self = StObject.set(x, "periodPeriod", value.asInstanceOf[js.Any])
+    
+    inline def setPeriodPeriodUndefined: Self = StObject.set(x, "periodPeriod", js.undefined)
+    
     inline def setRecipient(value: Reference): Self = StObject.set(x, "recipient", value.asInstanceOf[js.Any])
     
     inline def setRecipientUndefined: Self = StObject.set(x, "recipient", js.undefined)
@@ -180,11 +211,11 @@ object Invoice {
     
     inline def setTotalNetUndefined: Self = StObject.set(x, "totalNet", js.undefined)
     
-    inline def setTotalPriceComponent(value: js.Array[InvoiceLineItemPriceComponent]): Self = StObject.set(x, "totalPriceComponent", value.asInstanceOf[js.Any])
+    inline def setTotalPriceComponent(value: js.Array[MonetaryComponent]): Self = StObject.set(x, "totalPriceComponent", value.asInstanceOf[js.Any])
     
     inline def setTotalPriceComponentUndefined: Self = StObject.set(x, "totalPriceComponent", js.undefined)
     
-    inline def setTotalPriceComponentVarargs(value: InvoiceLineItemPriceComponent*): Self = StObject.set(x, "totalPriceComponent", js.Array(value*))
+    inline def setTotalPriceComponentVarargs(value: MonetaryComponent*): Self = StObject.set(x, "totalPriceComponent", js.Array(value*))
     
     inline def setType(value: CodeableConcept): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
@@ -194,6 +225,10 @@ object Invoice {
     
     inline def set_cancelledReasonUndefined: Self = StObject.set(x, "_cancelledReason", js.undefined)
     
+    inline def set_creation(value: Element): Self = StObject.set(x, "_creation", value.asInstanceOf[js.Any])
+    
+    inline def set_creationUndefined: Self = StObject.set(x, "_creation", js.undefined)
+    
     inline def set_date(value: Element): Self = StObject.set(x, "_date", value.asInstanceOf[js.Any])
     
     inline def set_dateUndefined: Self = StObject.set(x, "_date", js.undefined)
@@ -201,6 +236,10 @@ object Invoice {
     inline def set_paymentTerms(value: Element): Self = StObject.set(x, "_paymentTerms", value.asInstanceOf[js.Any])
     
     inline def set_paymentTermsUndefined: Self = StObject.set(x, "_paymentTerms", js.undefined)
+    
+    inline def set_periodDate(value: Element): Self = StObject.set(x, "_periodDate", value.asInstanceOf[js.Any])
+    
+    inline def set_periodDateUndefined: Self = StObject.set(x, "_periodDate", js.undefined)
     
     inline def set_status(value: Element): Self = StObject.set(x, "_status", value.asInstanceOf[js.Any])
     

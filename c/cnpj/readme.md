@@ -1,7 +1,7 @@
 
 # Scala.js typings for cnpj
 
-Typings are for version 4.0.1
+Typings are for version 4.0.3
 
 ## Library description:
 Format, validate and generate CNPJ numbers

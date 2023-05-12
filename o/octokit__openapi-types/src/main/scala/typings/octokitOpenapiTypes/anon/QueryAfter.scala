@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait QueryAfter extends StObject {
   
-  var path: Enterprise
+  var path: Org
   
   var query: After
 }
 object QueryAfter {
   
-  inline def apply(path: Enterprise, query: After): QueryAfter = {
+  inline def apply(path: Org, query: After): QueryAfter = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryAfter]
   }
@@ -20,7 +20,7 @@ object QueryAfter {
   @scala.inline
   implicit open class MutableBuilder[Self <: QueryAfter] (val x: Self) extends AnyVal {
     
-    inline def setPath(value: Enterprise): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: Org): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     inline def setQuery(value: After): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
   }

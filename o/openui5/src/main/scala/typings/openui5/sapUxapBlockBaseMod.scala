@@ -209,6 +209,8 @@ object sapUxapBlockBaseMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Creates a view.
       *
       * @returns A promise on the created view.
@@ -259,6 +261,7 @@ object sapUxapBlockBaseMod {
     
     /**
       * @SINCE 1.72
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:viewInit viewInit} to attached listeners.
       *

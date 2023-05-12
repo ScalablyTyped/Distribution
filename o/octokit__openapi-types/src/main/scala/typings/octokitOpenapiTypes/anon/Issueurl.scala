@@ -85,7 +85,7 @@ trait Issueurl extends StObject {
     */
   var issue_url: String
   
-  var labels: js.Array[DefaultDescription]
+  var labels: js.Array[ColorDefault]
   
   /** @example true */
   var locked: Boolean
@@ -99,7 +99,7 @@ trait Issueurl extends StObject {
     */
   var merged_at: String | Null
   
-  var milestone: Labelsurl | Null
+  var milestone: Closedissues | Null
   
   /** @example MDExOlB1bGxSZXF1ZXN0MQ== */
   var node_id: String
@@ -166,7 +166,7 @@ object Issueurl {
     html_url: String,
     id: Double,
     issue_url: String,
-    labels: js.Array[DefaultDescription],
+    labels: js.Array[ColorDefault],
     locked: Boolean,
     node_id: String,
     number: Double,
@@ -242,9 +242,9 @@ object Issueurl {
     
     inline def setIssue_url(value: String): Self = StObject.set(x, "issue_url", value.asInstanceOf[js.Any])
     
-    inline def setLabels(value: js.Array[DefaultDescription]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: js.Array[ColorDefault]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    inline def setLabelsVarargs(value: DefaultDescription*): Self = StObject.set(x, "labels", js.Array(value*))
+    inline def setLabelsVarargs(value: ColorDefault*): Self = StObject.set(x, "labels", js.Array(value*))
     
     inline def setLocked(value: Boolean): Self = StObject.set(x, "locked", value.asInstanceOf[js.Any])
     
@@ -256,7 +256,7 @@ object Issueurl {
     
     inline def setMerged_atNull: Self = StObject.set(x, "merged_at", null)
     
-    inline def setMilestone(value: Labelsurl): Self = StObject.set(x, "milestone", value.asInstanceOf[js.Any])
+    inline def setMilestone(value: Closedissues): Self = StObject.set(x, "milestone", value.asInstanceOf[js.Any])
     
     inline def setMilestoneNull: Self = StObject.set(x, "milestone", null)
     

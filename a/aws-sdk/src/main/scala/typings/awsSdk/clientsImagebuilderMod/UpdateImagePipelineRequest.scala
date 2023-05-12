@@ -22,12 +22,12 @@ trait UpdateImagePipelineRequest extends StObject {
   var description: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the distribution configuration that will be used to configure and distribute images updated by this image pipeline.
+    * The Amazon Resource Name (ARN) of the distribution configuration that Image Builder uses to configure and distribute images that this image pipeline has updated.
     */
   var distributionConfigurationArn: js.UndefOr[DistributionConfigurationArn] = js.undefined
   
   /**
-    *  Collects additional information about the image being created, including the operating system (OS) version and package list. This information is used to enhance the overall experience of using EC2 Image Builder. Enabled by default.
+    * Collects additional information about the image being created, including the operating system (OS) version and package list. This information is used to enhance the overall experience of using EC2 Image Builder. Enabled by default.
     */
   var enhancedImageMetadataEnabled: js.UndefOr[NullableBoolean] = js.undefined
   
@@ -42,12 +42,17 @@ trait UpdateImagePipelineRequest extends StObject {
   var imageRecipeArn: js.UndefOr[ImageRecipeArn] = js.undefined
   
   /**
+    * Contains settings for vulnerability scans.
+    */
+  var imageScanningConfiguration: js.UndefOr[ImageScanningConfiguration] = js.undefined
+  
+  /**
     * The image test configuration of the image pipeline.
     */
   var imageTestsConfiguration: js.UndefOr[ImageTestsConfiguration] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the infrastructure configuration that will be used to build images updated by this image pipeline.
+    * The Amazon Resource Name (ARN) of the infrastructure configuration that Image Builder uses to build images that this image pipeline has updated.
     */
   var infrastructureConfigurationArn: InfrastructureConfigurationArn
   
@@ -98,6 +103,10 @@ object UpdateImagePipelineRequest {
     inline def setImageRecipeArn(value: ImageRecipeArn): Self = StObject.set(x, "imageRecipeArn", value.asInstanceOf[js.Any])
     
     inline def setImageRecipeArnUndefined: Self = StObject.set(x, "imageRecipeArn", js.undefined)
+    
+    inline def setImageScanningConfiguration(value: ImageScanningConfiguration): Self = StObject.set(x, "imageScanningConfiguration", value.asInstanceOf[js.Any])
+    
+    inline def setImageScanningConfigurationUndefined: Self = StObject.set(x, "imageScanningConfiguration", js.undefined)
     
     inline def setImageTestsConfiguration(value: ImageTestsConfiguration): Self = StObject.set(x, "imageTestsConfiguration", value.asInstanceOf[js.Any])
     

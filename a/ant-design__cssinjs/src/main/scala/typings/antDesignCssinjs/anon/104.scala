@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.OffsetPath
+import typings.csstype.mod.Property.Fill
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `104` extends StObject {
   
   var value: js.UndefOr[
-    OffsetPath | (js.Array[
-      (Extract[js.UndefOr[OffsetPath | js.Array[NonNullable[js.UndefOr[OffsetPath]]]], String]) | NonNullable[js.UndefOr[OffsetPath]]
+    Fill | (js.Array[
+      (Extract[js.UndefOr[Fill | js.Array[NonNullable[js.UndefOr[Fill]]]], String]) | NonNullable[js.UndefOr[Fill]]
     ])
   ] = js.native
 }

@@ -302,7 +302,7 @@ object sapUiUnifiedCalendarTimesRowMod {
     def checkDateFocusable(/**
       * JavaScript Date object for focused date.
       */
-    oDate: js.Object): Boolean = js.native
+    oDate: js.Date): Boolean = js.native
     
     /**
       * Destroys all the selectedDates in the aggregation {@link #getSelectedDates selectedDates}.
@@ -367,16 +367,18 @@ object sapUiUnifiedCalendarTimesRowMod {
     ): this.type = js.native
     
     /**
-      * Displays the given date without setting the focus
+      * Displays the given date without setting the focus.
       *
-      * @returns `this` to allow method chaining
+      * @returns Reference to `this` for method chaining
       */
     def displayDate(/**
-      * JavaScript Date object for focused date.
+      * A JavaScript Date
       */
-    oDate: js.Object): this.type = js.native
+    oDate: js.Date): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:focus focus} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -388,6 +390,8 @@ object sapUiUnifiedCalendarTimesRowMod {
     mParameters: NotVisible): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:select select} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -473,6 +477,18 @@ object sapUiUnifiedCalendarTimesRowMod {
       * @returns Value of property `primaryCalendarType`
       */
     def getPrimaryCalendarType(): CalendarType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CalendarType * / any */ String) = js.native
+    
+    /**
+      * @SINCE 1.109.0
+      *
+      * Gets current value of property {@link #getSecondaryCalendarType secondaryCalendarType}.
+      *
+      * If set, the days are also displayed in this calendar type If not set, the dates are only displayed in
+      * the primary calendar type
+      *
+      * @returns Value of property `secondaryCalendarType`
+      */
+    def getSecondaryCalendarType(): CalendarType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CalendarType * / any */ String) = js.native
     
     /**
       * Gets content of aggregation {@link #getSelectedDates selectedDates}.
@@ -670,21 +686,14 @@ object sapUiUnifiedCalendarTimesRowMod {
     ): typings.openui5.sapUiUnifiedDateTypeRangeMod.default | Null = js.native
     
     /**
-      * Sets a new value for property {@link #getDate date}.
+      * Setter for the `date` property.
       *
-      * A date as JavaScript Date object. The month including this date is rendered and this date is focused
-      * initially (if no other focus is set). If the date property is not in the range `startDate` + `items`
-      * in the rendering phase, it is set to the `startDate`. So after setting the `startDate` the date should
-      * be set to be in the visible range.
-      *
-      * When called with a value of `null` or `undefined`, the default value of the property will be restored.
-      *
-      * @returns Reference to `this` in order to allow method chaining
+      * @returns Reference to `this` for method chaining
       */
     def setDate(/**
-      * New value for property `date`
+      * A JavaScript Date
       */
-    oDate: js.Object): this.type = js.native
+    oDate: js.Date): this.type = js.native
     
     /**
       * Sets a new value for property {@link #getIntervalMinutes intervalMinutes}.
@@ -765,6 +774,12 @@ object sapUiUnifiedCalendarTimesRowMod {
     oLegend: typings.openui5.sapUiUnifiedCalendarLegendMod.default
     ): this.type = js.native
     
+    def setPrimaryCalendarType(
+      /**
+      * New value for property `primaryCalendarType`
+      */
+    sPrimaryCalendarType: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CalendarType * / any */ String
+    ): this.type = js.native
     /**
       * @SINCE 1.108.0
       *
@@ -777,17 +792,33 @@ object sapUiUnifiedCalendarTimesRowMod {
       *
       * @returns Reference to `this` in order to allow method chaining
       */
-    def setPrimaryCalendarType(): this.type = js.native
-    def setPrimaryCalendarType(
-      /**
-      * New value for property `primaryCalendarType`
-      */
-    sPrimaryCalendarType: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CalendarType * / any */ String
-    ): this.type = js.native
     def setPrimaryCalendarType(/**
       * New value for property `primaryCalendarType`
       */
     sPrimaryCalendarType: CalendarType): this.type = js.native
+    
+    def setSecondaryCalendarType(
+      /**
+      * New value for property `secondaryCalendarType`
+      */
+    sSecondaryCalendarType: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CalendarType * / any */ String
+    ): this.type = js.native
+    /**
+      * @SINCE 1.109.0
+      *
+      * Sets a new value for property {@link #getSecondaryCalendarType secondaryCalendarType}.
+      *
+      * If set, the days are also displayed in this calendar type If not set, the dates are only displayed in
+      * the primary calendar type
+      *
+      * When called with a value of `null` or `undefined`, the default value of the property will be restored.
+      *
+      * @returns Reference to `this` in order to allow method chaining
+      */
+    def setSecondaryCalendarType(/**
+      * New value for property `secondaryCalendarType`
+      */
+    sSecondaryCalendarType: CalendarType): this.type = js.native
     
     /**
       * Sets a new value for property {@link #getShowHeader showHeader}.
@@ -826,18 +857,14 @@ object sapUiUnifiedCalendarTimesRowMod {
     bSingleSelection: Boolean): this.type = js.native
     
     /**
-      * Sets a new value for property {@link #getStartDate startDate}.
+      * Sets start date, as JavaScript Date object, of the row.
       *
-      * Start date, as JavaScript Date object, of the row.
-      *
-      * When called with a value of `null` or `undefined`, the default value of the property will be restored.
-      *
-      * @returns Reference to `this` in order to allow method chaining
+      * @returns Reference to `this` for method chaining
       */
     def setStartDate(/**
-      * New value for property `startDate`
+      * A JavaScript Date
       */
-    oStartDate: js.Object): this.type = js.native
+    oStartDate: js.Date): this.type = js.native
   }
   
   trait TimesRowSettings
@@ -903,6 +930,16 @@ object sapUiUnifiedCalendarTimesRowMod {
       * is used.
       */
     var primaryCalendarType: js.UndefOr[
+        CalendarType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CalendarType * / any */ String) | PropertyBindingInfo
+      ] = js.undefined
+    
+    /**
+      * @SINCE 1.109.0
+      *
+      * If set, the days are also displayed in this calendar type If not set, the dates are only displayed in
+      * the primary calendar type
+      */
+    var secondaryCalendarType: js.UndefOr[
         CalendarType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CalendarType * / any */ String) | PropertyBindingInfo
       ] = js.undefined
     
@@ -994,6 +1031,12 @@ object sapUiUnifiedCalendarTimesRowMod {
       ): Self = StObject.set(x, "primaryCalendarType", value.asInstanceOf[js.Any])
       
       inline def setPrimaryCalendarTypeUndefined: Self = StObject.set(x, "primaryCalendarType", js.undefined)
+      
+      inline def setSecondaryCalendarType(
+        value: CalendarType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CalendarType * / any */ String) | PropertyBindingInfo
+      ): Self = StObject.set(x, "secondaryCalendarType", value.asInstanceOf[js.Any])
+      
+      inline def setSecondaryCalendarTypeUndefined: Self = StObject.set(x, "secondaryCalendarType", js.undefined)
       
       inline def setSelect(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
       

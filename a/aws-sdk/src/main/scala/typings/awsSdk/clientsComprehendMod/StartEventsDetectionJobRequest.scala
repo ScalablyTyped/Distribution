@@ -12,7 +12,7 @@ trait StartEventsDetectionJobRequest extends StObject {
   var ClientRequestToken: js.UndefOr[ClientRequestTokenString] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the AWS Identity and Access Management (IAM) role that grants Amazon Comprehend read access to your input data.
+    * The Amazon Resource Name (ARN) of the IAM role that grants Amazon Comprehend read access to your input data.
     */
   var DataAccessRoleArn: IamRoleArn
   
@@ -37,7 +37,7 @@ trait StartEventsDetectionJobRequest extends StObject {
   var OutputDataConfig: typings.awsSdk.clientsComprehendMod.OutputDataConfig
   
   /**
-    * Tags to be associated with the events detection job. A tag is a key-value pair that adds metadata to a resource used by Amazon Comprehend. For example, a tag with "Sales" as the key might be added to a resource to indicate its use by the sales department.
+    * Tags to associate with the events detection job. A tag is a key-value pair that adds metadata to a resource used by Amazon Comprehend. For example, a tag with "Sales" as the key might be added to a resource to indicate its use by the sales department.
     */
   var Tags: js.UndefOr[TagList] = js.undefined
   

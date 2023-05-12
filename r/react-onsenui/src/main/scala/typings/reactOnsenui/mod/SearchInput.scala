@@ -12,7 +12,7 @@ open class SearchInput protected () extends Component[OnInput, Any] {
   def this(props: HTMLAttributesidclassName & OnInput) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: HTMLAttributesidclassName & OnInput, context: Any) = this()
 }

@@ -12,8 +12,24 @@ trait DropAnimation extends StObject {
   
   var moveTo: Position
   
+  /**
+    * This value will actually be `null` instead of `undefined`.
+    *
+    * The type is fudged because `null` is not compatible with the
+    * `React.CSSProperties` type.
+    *
+    * The `style` prop should interpret `null` and `undefined` the same way.
+    */
   var opacity: js.UndefOr[Double] = js.undefined
   
+  /**
+    * This value will actually be `null` instead of `undefined`.
+    *
+    * The type is fudged because `null` is not compatible with the
+    * `React.CSSProperties` type.
+    *
+    * The `style` prop should interpret `null` and `undefined` the same way.
+    */
   var scale: js.UndefOr[Double] = js.undefined
 }
 object DropAnimation {

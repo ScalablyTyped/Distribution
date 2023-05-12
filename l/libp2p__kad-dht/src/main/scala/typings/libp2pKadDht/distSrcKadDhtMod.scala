@@ -1,13 +1,15 @@
 package typings.libp2pKadDht
 
-import typings.libp2pInterfaceDht.mod.DHT
+import typings.libp2pInterfacePeerDiscovery.mod.PeerDiscoveryEvents
 import typings.libp2pInterfacePeerInfo.mod.PeerInfo
+import typings.libp2pInterfaces.eventsMod.EventEmitter
 import typings.libp2pKadDht.distSrcNetworkMod.Network
 import typings.libp2pKadDht.distSrcPeerRoutingMod.PeerRouting
 import typings.libp2pKadDht.distSrcProvidersMod.Providers
 import typings.libp2pKadDht.distSrcRoutingTableMod.RoutingTable
 import typings.libp2pKadDht.mod.KadDHTComponents
 import typings.libp2pKadDht.mod.KadDHTInit
+import typings.libp2pKadDht.mod.KadDHT_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,9 +24,11 @@ object distSrcKadDhtMod {
   @js.native
   val DEFAULT_MAX_OUTBOUND_STREAMS: /* 64 */ Double = js.native
   
-  @JSImport("@libp2p/kad-dht/dist/src/kad-dht", "KadDHT")
+  @JSImport("@libp2p/kad-dht/dist/src/kad-dht", "DefaultKadDHT")
   @js.native
-  open class KadDHT protected () extends DHT {
+  open class DefaultKadDHT protected ()
+    extends EventEmitter[PeerDiscoveryEvents]
+       with KadDHT_ {
     /**
       * Create a new KadDHT
       */
@@ -37,8 +41,6 @@ object distSrcKadDhtMod {
     /* private */ val contentFetching: Any = js.native
     
     /* private */ val contentRouting: Any = js.native
-    
-    var get: Any = js.native
     
     /**
       * Is this DHT running.
@@ -89,9 +91,6 @@ object distSrcKadDhtMod {
       * messages.
       */
     def stop(): js.Promise[Unit] = js.native
-    
-    @JSName(js.Symbol.toStringTag)
-    var toStringTag_KadDHT: js.Function0[String] = js.native
     
     /* private */ val topologyListener: Any = js.native
     

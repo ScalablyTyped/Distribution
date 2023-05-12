@@ -17,7 +17,7 @@ trait ResponseHeadersPolicy extends StObject {
   var LastModifiedTime: js.Date
   
   /**
-    * A response headers policy configuration. A response headers policy contains information about a set of HTTP response headers and their values. CloudFront adds the headers in the policy to HTTP responses that it sends for requests that match a cache behavior that’s associated with the policy.
+    * A response headers policy configuration.
     */
   var ResponseHeadersPolicyConfig: typings.awsSdk.clientsCloudfrontMod.ResponseHeadersPolicyConfig
 }

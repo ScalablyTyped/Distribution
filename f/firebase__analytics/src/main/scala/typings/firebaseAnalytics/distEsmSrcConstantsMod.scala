@@ -3,6 +3,7 @@ package typings.firebaseAnalytics
 import typings.firebaseAnalytics.firebaseAnalyticsStrings.config
 import typings.firebaseAnalytics.firebaseAnalyticsStrings.consent
 import typings.firebaseAnalytics.firebaseAnalyticsStrings.event
+import typings.firebaseAnalytics.firebaseAnalyticsStrings.get
 import typings.firebaseAnalytics.firebaseAnalyticsStrings.set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -39,6 +40,7 @@ object distEsmSrcConstantsMod {
     - typings.firebaseAnalytics.firebaseAnalyticsStrings.set
     - typings.firebaseAnalytics.firebaseAnalyticsStrings.config
     - typings.firebaseAnalytics.firebaseAnalyticsStrings.consent
+    - typings.firebaseAnalytics.firebaseAnalyticsStrings.get
   */
   trait GtagCommand extends StObject
   object GtagCommand {
@@ -48,6 +50,8 @@ object distEsmSrcConstantsMod {
     inline def CONSENT: consent = "consent".asInstanceOf[consent]
     
     inline def EVENT: event = "event".asInstanceOf[event]
+    
+    inline def GET: get = "get".asInstanceOf[get]
     
     inline def SET: set = "set".asInstanceOf[set]
   }

@@ -43,13 +43,6 @@ object NodeBuilderFlags extends StObject {
        with NodeBuilderFlags
   /* 67108864 */ val AllowNodeModulesRelativePaths: typings.typescript.mod.NodeBuilderFlags.AllowNodeModulesRelativePaths & Double = js.native
   
-  /** @deprecated AllowQualifedNameInPlaceOfIdentifier. Use AllowQualifiedNameInPlaceOfIdentifier instead. */
-  @js.native
-  sealed trait AllowQualifedNameInPlaceOfIdentifier
-    extends StObject
-       with NodeBuilderFlags
-  /* 65536 */ val AllowQualifedNameInPlaceOfIdentifier: typings.typescript.mod.NodeBuilderFlags.AllowQualifedNameInPlaceOfIdentifier & Double = js.native
-  
   @js.native
   sealed trait AllowQualifiedNameInPlaceOfIdentifier
     extends StObject

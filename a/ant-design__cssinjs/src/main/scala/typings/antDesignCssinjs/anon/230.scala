@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.ListStyleImage
+import typings.csstype.mod.Property.BorderBottom
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,11 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `230` extends StObject {
   
   var value: js.UndefOr[
-    ListStyleImage | (js.Array[
+    (BorderBottom[Double | String]) | (js.Array[
       (Extract[
-        js.UndefOr[ListStyleImage | js.Array[NonNullable[js.UndefOr[ListStyleImage]]]], 
+        js.UndefOr[
+          (BorderBottom[Double | String]) | (js.Array[NonNullable[js.UndefOr[BorderBottom[Double | String]]]])
+        ], 
         String
-      ]) | NonNullable[js.UndefOr[ListStyleImage]]
+      ]) | (NonNullable[js.UndefOr[BorderBottom[Double | String]]])
     ])
   ] = js.native
 }

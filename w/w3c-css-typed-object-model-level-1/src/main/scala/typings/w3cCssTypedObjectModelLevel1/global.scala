@@ -1,5 +1,6 @@
 package typings.w3cCssTypedObjectModelLevel1
 
+import typings.std.CSSNumberish
 import typings.std.DOMMatrix
 import typings.std.DOMMatrixReadOnly
 import org.scalablytyped.runtime.StObject
@@ -83,12 +84,14 @@ object global {
     inline def vw(value: Double): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = ^.asInstanceOf[js.Dynamic].applyDynamic("vw")(value.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSUnitValue]
   }
   
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("CSSImageValue")
   @js.native
   open class CSSImageValue ()
     extends StObject
        with typings.w3cCssTypedObjectModelLevel1.CSSStyleValue
   
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("CSSKeywordValue")
   @js.native
   open class CSSKeywordValue protected ()
@@ -100,36 +103,88 @@ object global {
     var value: String = js.native
   }
   
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSGlobal("CSSMathClamp")
+  @js.native
+  open class CSSMathClamp protected ()
+    extends StObject
+       with typings.w3cCssTypedObjectModelLevel1.CSSMathClamp {
+    def this(lower: CSSNumberish, value: CSSNumberish, upper: CSSNumberish) = this()
+    
+    /* CompleteClass */
+    override def add(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    
+    /* CompleteClass */
+    override def div(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    
+    /* CompleteClass */
+    override def equals(value: CSSNumberish*): Boolean = js.native
+    
+    /* CompleteClass */
+    override val lower: typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    
+    /* CompleteClass */
+    override def max(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    
+    /* CompleteClass */
+    override def min(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    
+    /* CompleteClass */
+    override def mul(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    
+    /* CompleteClass */
+    override val operator: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSSMathOperator */ Any = js.native
+    
+    /* CompleteClass */
+    override def sub(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    
+    /* CompleteClass */
+    override def to(unit: String): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = js.native
+    
+    /* CompleteClass */
+    override def toSum(units: String*): typings.w3cCssTypedObjectModelLevel1.CSSMathSum = js.native
+    
+    /* CompleteClass */
+    override def `type`(): CSSNumericType = js.native
+    
+    /* CompleteClass */
+    override val upper: typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    
+    /* CompleteClass */
+    override val value: typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+  }
+  
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("CSSMathInvert")
   @js.native
   open class CSSMathInvert protected ()
     extends StObject
        with typings.w3cCssTypedObjectModelLevel1.CSSMathInvert {
-    def this(arg: CSSNumberOrNumeric) = this()
+    def this(arg: CSSNumberish) = this()
     
     /* CompleteClass */
-    override def add(values: CSSNumberOrNumeric*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    override def add(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
     
     /* CompleteClass */
-    override def div(values: CSSNumberOrNumeric*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    override def div(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
     
     /* CompleteClass */
-    override def equals(values: CSSNumberOrNumeric*): Boolean = js.native
+    override def equals(value: CSSNumberish*): Boolean = js.native
     
     /* CompleteClass */
-    override def max(values: CSSNumberOrNumeric*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    override def max(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
     
     /* CompleteClass */
-    override def min(values: CSSNumberOrNumeric*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    override def min(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
     
     /* CompleteClass */
-    override def mul(values: CSSNumberOrNumeric*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    override def mul(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
     
     /* CompleteClass */
-    override val operator: CSSMathOperator = js.native
+    override val operator: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSSMathOperator */ Any = js.native
     
     /* CompleteClass */
-    override def sub(values: CSSNumberOrNumeric*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    override def sub(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
     
     /* CompleteClass */
     override def to(unit: String): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = js.native
@@ -144,36 +199,37 @@ object global {
     override val value: typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
   }
   
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("CSSMathMax")
   @js.native
   open class CSSMathMax protected ()
     extends StObject
        with typings.w3cCssTypedObjectModelLevel1.CSSMathMax {
-    def this(args: CSSNumberOrNumeric*) = this()
+    def this(args: CSSNumberish*) = this()
     
     /* CompleteClass */
-    override def add(values: CSSNumberOrNumeric*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    override def add(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
     
     /* CompleteClass */
-    override def div(values: CSSNumberOrNumeric*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    override def div(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
     
     /* CompleteClass */
-    override def equals(values: CSSNumberOrNumeric*): Boolean = js.native
+    override def equals(value: CSSNumberish*): Boolean = js.native
     
     /* CompleteClass */
-    override def max(values: CSSNumberOrNumeric*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    override def max(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
     
     /* CompleteClass */
-    override def min(values: CSSNumberOrNumeric*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    override def min(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
     
     /* CompleteClass */
-    override def mul(values: CSSNumberOrNumeric*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    override def mul(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
     
     /* CompleteClass */
-    override val operator: CSSMathOperator = js.native
+    override val operator: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSSMathOperator */ Any = js.native
     
     /* CompleteClass */
-    override def sub(values: CSSNumberOrNumeric*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    override def sub(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
     
     /* CompleteClass */
     override def to(unit: String): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = js.native
@@ -188,36 +244,37 @@ object global {
     override val values: typings.w3cCssTypedObjectModelLevel1.CSSNumericArray = js.native
   }
   
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("CSSMathMin")
   @js.native
   open class CSSMathMin protected ()
     extends StObject
        with typings.w3cCssTypedObjectModelLevel1.CSSMathMin {
-    def this(args: CSSNumberOrNumeric*) = this()
+    def this(args: CSSNumberish*) = this()
     
     /* CompleteClass */
-    override def add(values: CSSNumberOrNumeric*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    override def add(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
     
     /* CompleteClass */
-    override def div(values: CSSNumberOrNumeric*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    override def div(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
     
     /* CompleteClass */
-    override def equals(values: CSSNumberOrNumeric*): Boolean = js.native
+    override def equals(value: CSSNumberish*): Boolean = js.native
     
     /* CompleteClass */
-    override def max(values: CSSNumberOrNumeric*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    override def max(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
     
     /* CompleteClass */
-    override def min(values: CSSNumberOrNumeric*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    override def min(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
     
     /* CompleteClass */
-    override def mul(values: CSSNumberOrNumeric*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    override def mul(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
     
     /* CompleteClass */
-    override val operator: CSSMathOperator = js.native
+    override val operator: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSSMathOperator */ Any = js.native
     
     /* CompleteClass */
-    override def sub(values: CSSNumberOrNumeric*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    override def sub(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
     
     /* CompleteClass */
     override def to(unit: String): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = js.native
@@ -232,36 +289,37 @@ object global {
     override val values: typings.w3cCssTypedObjectModelLevel1.CSSNumericArray = js.native
   }
   
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("CSSMathNegate")
   @js.native
   open class CSSMathNegate protected ()
     extends StObject
        with typings.w3cCssTypedObjectModelLevel1.CSSMathNegate {
-    def this(arg: CSSNumberOrNumeric) = this()
+    def this(arg: CSSNumberish) = this()
     
     /* CompleteClass */
-    override def add(values: CSSNumberOrNumeric*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    override def add(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
     
     /* CompleteClass */
-    override def div(values: CSSNumberOrNumeric*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    override def div(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
     
     /* CompleteClass */
-    override def equals(values: CSSNumberOrNumeric*): Boolean = js.native
+    override def equals(value: CSSNumberish*): Boolean = js.native
     
     /* CompleteClass */
-    override def max(values: CSSNumberOrNumeric*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    override def max(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
     
     /* CompleteClass */
-    override def min(values: CSSNumberOrNumeric*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    override def min(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
     
     /* CompleteClass */
-    override def mul(values: CSSNumberOrNumeric*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    override def mul(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
     
     /* CompleteClass */
-    override val operator: CSSMathOperator = js.native
+    override val operator: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSSMathOperator */ Any = js.native
     
     /* CompleteClass */
-    override def sub(values: CSSNumberOrNumeric*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    override def sub(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
     
     /* CompleteClass */
     override def to(unit: String): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = js.native
@@ -276,58 +334,37 @@ object global {
     override val value: typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
   }
   
-  @JSGlobal("CSSMathOperator")
-  @js.native
-  object CSSMathOperator extends StObject {
-    
-    @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.w3cCssTypedObjectModelLevel1.CSSMathOperator & Double] = js.native
-    
-    /* 6 */ val clamp: typings.w3cCssTypedObjectModelLevel1.CSSMathOperator.clamp & Double = js.native
-    
-    /* 3 */ val invert: typings.w3cCssTypedObjectModelLevel1.CSSMathOperator.invert & Double = js.native
-    
-    /* 5 */ val max: typings.w3cCssTypedObjectModelLevel1.CSSMathOperator.max & Double = js.native
-    
-    /* 4 */ val min: typings.w3cCssTypedObjectModelLevel1.CSSMathOperator.min & Double = js.native
-    
-    /* 2 */ val negate: typings.w3cCssTypedObjectModelLevel1.CSSMathOperator.negate & Double = js.native
-    
-    /* 1 */ val product: typings.w3cCssTypedObjectModelLevel1.CSSMathOperator.product & Double = js.native
-    
-    /* 0 */ val sum: typings.w3cCssTypedObjectModelLevel1.CSSMathOperator.sum & Double = js.native
-  }
-  
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("CSSMathProduct")
   @js.native
   open class CSSMathProduct protected ()
     extends StObject
        with typings.w3cCssTypedObjectModelLevel1.CSSMathProduct {
-    def this(args: CSSNumberOrNumeric*) = this()
+    def this(args: CSSNumberish*) = this()
     
     /* CompleteClass */
-    override def add(values: CSSNumberOrNumeric*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    override def add(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
     
     /* CompleteClass */
-    override def div(values: CSSNumberOrNumeric*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    override def div(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
     
     /* CompleteClass */
-    override def equals(values: CSSNumberOrNumeric*): Boolean = js.native
+    override def equals(value: CSSNumberish*): Boolean = js.native
     
     /* CompleteClass */
-    override def max(values: CSSNumberOrNumeric*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    override def max(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
     
     /* CompleteClass */
-    override def min(values: CSSNumberOrNumeric*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    override def min(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
     
     /* CompleteClass */
-    override def mul(values: CSSNumberOrNumeric*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    override def mul(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
     
     /* CompleteClass */
-    override val operator: CSSMathOperator = js.native
+    override val operator: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSSMathOperator */ Any = js.native
     
     /* CompleteClass */
-    override def sub(values: CSSNumberOrNumeric*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    override def sub(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
     
     /* CompleteClass */
     override def to(unit: String): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = js.native
@@ -342,36 +379,37 @@ object global {
     override val values: typings.w3cCssTypedObjectModelLevel1.CSSNumericArray = js.native
   }
   
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("CSSMathSum")
   @js.native
   open class CSSMathSum protected ()
     extends StObject
        with typings.w3cCssTypedObjectModelLevel1.CSSMathSum {
-    def this(args: CSSNumberOrNumeric*) = this()
+    def this(args: CSSNumberish*) = this()
     
     /* CompleteClass */
-    override def add(values: CSSNumberOrNumeric*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    override def add(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
     
     /* CompleteClass */
-    override def div(values: CSSNumberOrNumeric*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    override def div(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
     
     /* CompleteClass */
-    override def equals(values: CSSNumberOrNumeric*): Boolean = js.native
+    override def equals(value: CSSNumberish*): Boolean = js.native
     
     /* CompleteClass */
-    override def max(values: CSSNumberOrNumeric*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    override def max(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
     
     /* CompleteClass */
-    override def min(values: CSSNumberOrNumeric*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    override def min(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
     
     /* CompleteClass */
-    override def mul(values: CSSNumberOrNumeric*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    override def mul(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
     
     /* CompleteClass */
-    override val operator: CSSMathOperator = js.native
+    override val operator: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSSMathOperator */ Any = js.native
     
     /* CompleteClass */
-    override def sub(values: CSSNumberOrNumeric*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    override def sub(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
     
     /* CompleteClass */
     override def to(unit: String): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = js.native
@@ -386,6 +424,7 @@ object global {
     override val values: typings.w3cCssTypedObjectModelLevel1.CSSNumericArray = js.native
   }
   
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("CSSMathValue")
   @js.native
   open class CSSMathValue ()
@@ -393,28 +432,28 @@ object global {
        with typings.w3cCssTypedObjectModelLevel1.CSSMathValue {
     
     /* CompleteClass */
-    override def add(values: CSSNumberOrNumeric*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    override def add(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
     
     /* CompleteClass */
-    override def div(values: CSSNumberOrNumeric*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    override def div(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
     
     /* CompleteClass */
-    override def equals(values: CSSNumberOrNumeric*): Boolean = js.native
+    override def equals(value: CSSNumberish*): Boolean = js.native
     
     /* CompleteClass */
-    override def max(values: CSSNumberOrNumeric*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    override def max(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
     
     /* CompleteClass */
-    override def min(values: CSSNumberOrNumeric*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    override def min(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
     
     /* CompleteClass */
-    override def mul(values: CSSNumberOrNumeric*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    override def mul(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
     
     /* CompleteClass */
-    override val operator: CSSMathOperator = js.native
+    override val operator: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSSMathOperator */ Any = js.native
     
     /* CompleteClass */
-    override def sub(values: CSSNumberOrNumeric*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    override def sub(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
     
     /* CompleteClass */
     override def to(unit: String): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = js.native
@@ -426,6 +465,7 @@ object global {
     override def `type`(): CSSNumericType = js.native
   }
   
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("CSSMatrixComponent")
   @js.native
   open class CSSMatrixComponent protected ()
@@ -444,43 +484,14 @@ object global {
     override def toMatrix(): DOMMatrix = js.native
   }
   
-  // TODO(yavanosta): conflict with base class properties
-  // Since there is no support for this class in any browser, it's better
-  // wait for the implementation.
-  // declare class CSSMathClamp extends CSSMathValue {
-  // constructor(min: CSSNumberOrNumeric, val: CSSNumberOrNumeric, max: CSSNumberOrNumeric);
-  //     readonly min: CSSNumericValue;
-  //     readonly val: CSSNumericValue;
-  //     readonly max: CSSNumericValue;
-  // };
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("CSSNumericArray")
   @js.native
   open class CSSNumericArray ()
     extends StObject
        with typings.w3cCssTypedObjectModelLevel1.CSSNumericArray
   
-  @JSGlobal("CSSNumericBaseType")
-  @js.native
-  object CSSNumericBaseType extends StObject {
-    
-    @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.w3cCssTypedObjectModelLevel1.CSSNumericBaseType & Double] = js.native
-    
-    /* 1 */ val angle: typings.w3cCssTypedObjectModelLevel1.CSSNumericBaseType.angle & Double = js.native
-    
-    /* 5 */ val flex: typings.w3cCssTypedObjectModelLevel1.CSSNumericBaseType.flex & Double = js.native
-    
-    /* 3 */ val frequency: typings.w3cCssTypedObjectModelLevel1.CSSNumericBaseType.frequency & Double = js.native
-    
-    /* 0 */ val length: typings.w3cCssTypedObjectModelLevel1.CSSNumericBaseType.length & Double = js.native
-    
-    /* 6 */ val percent: typings.w3cCssTypedObjectModelLevel1.CSSNumericBaseType.percent & Double = js.native
-    
-    /* 4 */ val resolution: typings.w3cCssTypedObjectModelLevel1.CSSNumericBaseType.resolution & Double = js.native
-    
-    /* 2 */ val time: typings.w3cCssTypedObjectModelLevel1.CSSNumericBaseType.time & Double = js.native
-  }
-  
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("CSSNumericValue")
   @js.native
   open class CSSNumericValue ()
@@ -488,25 +499,25 @@ object global {
        with typings.w3cCssTypedObjectModelLevel1.CSSNumericValue {
     
     /* CompleteClass */
-    override def add(values: CSSNumberOrNumeric*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    override def add(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
     
     /* CompleteClass */
-    override def div(values: CSSNumberOrNumeric*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    override def div(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
     
     /* CompleteClass */
-    override def equals(values: CSSNumberOrNumeric*): Boolean = js.native
+    override def equals(value: CSSNumberish*): Boolean = js.native
     
     /* CompleteClass */
-    override def max(values: CSSNumberOrNumeric*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    override def max(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
     
     /* CompleteClass */
-    override def min(values: CSSNumberOrNumeric*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    override def min(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
     
     /* CompleteClass */
-    override def mul(values: CSSNumberOrNumeric*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    override def mul(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
     
     /* CompleteClass */
-    override def sub(values: CSSNumberOrNumeric*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    override def sub(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
     
     /* CompleteClass */
     override def to(unit: String): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = js.native
@@ -523,29 +534,28 @@ object global {
     @js.native
     val ^ : js.Any = js.native
     
-    /* static member */
     inline def parse(cssText: String): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(cssText.asInstanceOf[js.Any]).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSNumericValue]
   }
   
-  /* Note that skew(x,y) is *not* the same as skewX(x) skewY(y),
-    thus the separate interfaces for all three. */
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("CSSPerspective")
   @js.native
   open class CSSPerspective protected ()
     extends StObject
        with typings.w3cCssTypedObjectModelLevel1.CSSPerspective {
-    def this(length: typings.w3cCssTypedObjectModelLevel1.CSSNumericValue) = this()
+    def this(length: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSSPerspectiveValue */ Any) = this()
     
     /* CompleteClass */
     var is2D: Boolean = js.native
     
     /* CompleteClass */
-    var length: typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    var length: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSSPerspectiveValue */ Any = js.native
     
     /* CompleteClass */
     override def toMatrix(): DOMMatrix = js.native
   }
   
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("CSSRotate")
   @js.native
   open class CSSRotate protected ()
@@ -553,9 +563,9 @@ object global {
        with typings.w3cCssTypedObjectModelLevel1.CSSRotate {
     def this(angle: typings.w3cCssTypedObjectModelLevel1.CSSNumericValue) = this()
     def this(
-      x: CSSNumberOrNumeric,
-      y: CSSNumberOrNumeric,
-      z: CSSNumberOrNumeric,
+      x: CSSNumberish,
+      y: CSSNumberish,
+      z: CSSNumberish,
       angle: typings.w3cCssTypedObjectModelLevel1.CSSNumericValue
     ) = this()
     
@@ -569,22 +579,23 @@ object global {
     override def toMatrix(): DOMMatrix = js.native
     
     /* CompleteClass */
-    var x: CSSNumberOrNumeric = js.native
+    var x: CSSNumberish = js.native
     
     /* CompleteClass */
-    var y: CSSNumberOrNumeric = js.native
+    var y: CSSNumberish = js.native
     
     /* CompleteClass */
-    var z: CSSNumberOrNumeric = js.native
+    var z: CSSNumberish = js.native
   }
   
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("CSSScale")
   @js.native
   open class CSSScale protected ()
     extends StObject
        with typings.w3cCssTypedObjectModelLevel1.CSSScale {
-    def this(x: CSSNumberOrNumeric, y: CSSNumberOrNumeric) = this()
-    def this(x: CSSNumberOrNumeric, y: CSSNumberOrNumeric, z: CSSNumberOrNumeric) = this()
+    def this(x: CSSNumberish, y: CSSNumberish) = this()
+    def this(x: CSSNumberish, y: CSSNumberish, z: CSSNumberish) = this()
     
     /* CompleteClass */
     var is2D: Boolean = js.native
@@ -593,15 +604,16 @@ object global {
     override def toMatrix(): DOMMatrix = js.native
     
     /* CompleteClass */
-    var x: CSSNumberOrNumeric = js.native
+    var x: CSSNumberish = js.native
     
     /* CompleteClass */
-    var y: CSSNumberOrNumeric = js.native
+    var y: CSSNumberish = js.native
     
     /* CompleteClass */
-    var z: CSSNumberOrNumeric = js.native
+    var z: CSSNumberish = js.native
   }
   
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("CSSSkew")
   @js.native
   open class CSSSkew protected ()
@@ -625,6 +637,7 @@ object global {
     override def toMatrix(): DOMMatrix = js.native
   }
   
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("CSSSkewX")
   @js.native
   open class CSSSkewX protected ()
@@ -642,6 +655,7 @@ object global {
     override def toMatrix(): DOMMatrix = js.native
   }
   
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("CSSSkewY")
   @js.native
   open class CSSSkewY protected ()
@@ -659,6 +673,7 @@ object global {
     override def toMatrix(): DOMMatrix = js.native
   }
   
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("CSSStyleValue")
   @js.native
   open class CSSStyleValue ()
@@ -670,13 +685,12 @@ object global {
     @js.native
     val ^ : js.Any = js.native
     
-    /* static member */
     inline def parse(property: String, cssText: String): typings.w3cCssTypedObjectModelLevel1.CSSStyleValue = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(property.asInstanceOf[js.Any], cssText.asInstanceOf[js.Any])).asInstanceOf[typings.w3cCssTypedObjectModelLevel1.CSSStyleValue]
     
-    /* static member */
     inline def parseAll(property: String, cssText: String): js.Array[typings.w3cCssTypedObjectModelLevel1.CSSStyleValue] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseAll")(property.asInstanceOf[js.Any], cssText.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.w3cCssTypedObjectModelLevel1.CSSStyleValue]]
   }
   
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("CSSTransformComponent")
   @js.native
   open class CSSTransformComponent ()
@@ -690,6 +704,7 @@ object global {
     override def toMatrix(): DOMMatrix = js.native
   }
   
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("CSSTransformValue")
   @js.native
   open class CSSTransformValue protected ()
@@ -698,6 +713,7 @@ object global {
     def this(transforms: js.Array[typings.w3cCssTypedObjectModelLevel1.CSSTransformComponent]) = this()
   }
   
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("CSSTranslate")
   @js.native
   open class CSSTranslate protected ()
@@ -729,6 +745,7 @@ object global {
     var z: typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
   }
   
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("CSSUnitValue")
   @js.native
   open class CSSUnitValue protected ()
@@ -737,25 +754,25 @@ object global {
     def this(value: Double, unit: String) = this()
     
     /* CompleteClass */
-    override def add(values: CSSNumberOrNumeric*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    override def add(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
     
     /* CompleteClass */
-    override def div(values: CSSNumberOrNumeric*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    override def div(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
     
     /* CompleteClass */
-    override def equals(values: CSSNumberOrNumeric*): Boolean = js.native
+    override def equals(value: CSSNumberish*): Boolean = js.native
     
     /* CompleteClass */
-    override def max(values: CSSNumberOrNumeric*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    override def max(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
     
     /* CompleteClass */
-    override def min(values: CSSNumberOrNumeric*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    override def min(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
     
     /* CompleteClass */
-    override def mul(values: CSSNumberOrNumeric*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    override def mul(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
     
     /* CompleteClass */
-    override def sub(values: CSSNumberOrNumeric*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
+    override def sub(values: CSSNumberish*): typings.w3cCssTypedObjectModelLevel1.CSSNumericValue = js.native
     
     /* CompleteClass */
     override def to(unit: String): typings.w3cCssTypedObjectModelLevel1.CSSUnitValue = js.native
@@ -773,14 +790,18 @@ object global {
     var value: Double = js.native
   }
   
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("CSSUnparsedValue")
   @js.native
   open class CSSUnparsedValue protected ()
     extends StObject
        with typings.w3cCssTypedObjectModelLevel1.CSSUnparsedValue {
-    def this(members: js.Array[CSSUnparsedSegment]) = this()
+    def this(members: js.Array[
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSSUnparsedSegment */ Any
+          ]) = this()
   }
   
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("CSSVariableReferenceValue")
   @js.native
   open class CSSVariableReferenceValue protected ()
@@ -790,15 +811,20 @@ object global {
     def this(variable: String, fallback: typings.w3cCssTypedObjectModelLevel1.CSSUnparsedValue) = this()
     
     /* CompleteClass */
+    override val fallback: typings.w3cCssTypedObjectModelLevel1.CSSUnparsedValue | Null = js.native
+    
+    /* CompleteClass */
     var variable: String = js.native
   }
   
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("StylePropertyMap")
   @js.native
   open class StylePropertyMap ()
     extends StObject
        with typings.w3cCssTypedObjectModelLevel1.StylePropertyMap
   
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("StylePropertyMapReadOnly")
   @js.native
   open class StylePropertyMapReadOnly ()

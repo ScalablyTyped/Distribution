@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.ScrollMarginBlockStart
+import typings.csstype.mod.Property.MsScrollbarFaceColor
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,13 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `537` extends StObject {
   
   var value: js.UndefOr[
-    (ScrollMarginBlockStart[Double | String]) | (js.Array[
+    MsScrollbarFaceColor | (js.Array[
       (Extract[
-        js.UndefOr[
-          (ScrollMarginBlockStart[Double | String]) | (js.Array[NonNullable[js.UndefOr[ScrollMarginBlockStart[Double | String]]]])
-        ], 
+        js.UndefOr[MsScrollbarFaceColor | js.Array[NonNullable[js.UndefOr[MsScrollbarFaceColor]]]], 
         String
-      ]) | (NonNullable[js.UndefOr[ScrollMarginBlockStart[Double | String]]])
+      ]) | NonNullable[js.UndefOr[MsScrollbarFaceColor]]
     ])
   ] = js.native
 }

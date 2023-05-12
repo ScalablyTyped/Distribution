@@ -17,7 +17,7 @@ trait SearchForPositionResult extends StObject {
   var Place: typings.awsSdk.clientsLocationMod.Place
   
   /**
-    * The unique identifier of the place. You can use this with the GetPlace operation to find the place again later.  For SearchPlaceIndexForPosition operations, the PlaceId is returned only by place indexes that use HERE as a data provider. 
+    * The unique identifier of the place. You can use this with the GetPlace operation to find the place again later.  For SearchPlaceIndexForPosition operations, the PlaceId is returned only by place indexes that use HERE or Grab as a data provider. 
     */
   var PlaceId: js.UndefOr[typings.awsSdk.clientsLocationMod.PlaceId] = js.undefined
 }

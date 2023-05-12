@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Tag extends StObject {
   
   /**
-    *  The key for a developer-defined key:value pair for tagging an Amazon Web Services resource. 
+    * The key for a developer-defined key value pair for tagging an Amazon Web Services resource. 
     */
   var Key: TagKey
   
   /**
-    *  The value for a developer-defined key:value pair for tagging an Amazon Web Services resource. 
+    * The value for a developer-defined key value pair for tagging an Amazon Web Services resource. 
     */
   var Value: TagValue
 }

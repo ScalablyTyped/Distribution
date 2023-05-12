@@ -37,6 +37,7 @@ object mod {
   inline def createVerify(options: VerifyOptions): VerifyStream = ^.asInstanceOf[js.Dynamic].applyDynamic("createVerify")(options.asInstanceOf[js.Any]).asInstanceOf[VerifyStream]
   
   inline def decode(signature: String): Signature = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(signature.asInstanceOf[js.Any]).asInstanceOf[Signature]
+  inline def decode(signature: String, options: DecodeOptions): Signature = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(signature.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Signature]
   
   inline def isValid(signature: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(signature.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
@@ -108,6 +109,28 @@ object mod {
       inline def setX5u(value: String): Self = StObject.set(x, "x5u", value.asInstanceOf[js.Any])
       
       inline def setX5uUndefined: Self = StObject.set(x, "x5u", js.undefined)
+    }
+  }
+  
+  trait DecodeOptions extends StObject {
+    
+    /**
+      * Whether to force {@link JSON.parse} on the payload
+      * even if the header doesn't contain "typ":"JWT".
+      */
+    var json: Boolean
+  }
+  object DecodeOptions {
+    
+    inline def apply(json: Boolean): DecodeOptions = {
+      val __obj = js.Dynamic.literal(json = json.asInstanceOf[js.Any])
+      __obj.asInstanceOf[DecodeOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DecodeOptions] (val x: Self) extends AnyVal {
+      
+      inline def setJson(value: Boolean): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
     }
   }
   

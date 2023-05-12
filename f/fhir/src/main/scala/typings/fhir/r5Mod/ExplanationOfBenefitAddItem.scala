@@ -16,9 +16,9 @@ trait ExplanationOfBenefitAddItem
   var adjudication: js.UndefOr[js.Array[ExplanationOfBenefitItemAdjudication]] = js.undefined
   
   /**
-    * For example, providing a tooth code allows an insurer to identify a provider performing a filling on a tooth that was previously removed.
+    * Physical location where the service is performed or applies.
     */
-  var bodySite: js.UndefOr[CodeableConcept] = js.undefined
+  var bodySite: js.UndefOr[js.Array[ExplanationOfBenefitAddItemBodySite]] = js.undefined
   
   /**
     * The second-tier service adjudications for payor added services.
@@ -71,9 +71,19 @@ trait ExplanationOfBenefitAddItem
   var noteNumber: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
+    * The amount paid by the patient, in total at the claim claim level or specifically for the item and detail level, to the provider for goods and services.
+    */
+  var patientPaid: js.UndefOr[Money] = js.undefined
+  
+  /**
     * If this is an actual service or product line, i.e. not a Group, then use code to indicate the Professional Service or Product supplied (e.g. CTP, HCPCS, USCLS, ICD10, NCPDP, DIN, RxNorm, ACHI, CCI). If a grouping item then use a group code to indicate the type of thing being grouped e.g. 'glasses' or 'compound'.
     */
-  var productOrService: CodeableConcept
+  var productOrService: js.UndefOr[CodeableConcept] = js.undefined
+  
+  /**
+    * This contains the end of a range of product, service, drug or other billing codes for the item. This element is not used when the .productOrService is a group code. This value may only be present when a .productOfService code has been provided to convey the start of the range. Typically this value may be used only with preauthorizations and not with claims.
+    */
+  var productOrServiceEnd: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * For example: Neonatal program, child dental program or drug users recovery program.
@@ -91,6 +101,21 @@ trait ExplanationOfBenefitAddItem
   var quantity: js.UndefOr[Quantity] = js.undefined
   
   /**
+    * Request or Referral for Goods or Service to be rendered.
+    */
+  var request: js.UndefOr[js.Array[Reference]] = js.undefined
+  
+  /**
+    * The type of revenue or cost center providing the product and/or service.
+    */
+  var revenue: js.UndefOr[CodeableConcept] = js.undefined
+  
+  /**
+    * The high-level results of the adjudication if adjudication has been performed.
+    */
+  var reviewOutcome: js.UndefOr[ExplanationOfBenefitItemReviewOutcome] = js.undefined
+  
+  /**
     * The date or dates when the service or product was supplied, performed or completed.
     */
   var servicedDate: js.UndefOr[String] = js.undefined
@@ -106,9 +131,14 @@ trait ExplanationOfBenefitAddItem
   var subDetailSequence: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
-    * A region or surface of the bodySite, e.g. limb region or tooth surface(s).
+    * The total of taxes applicable for this product or service.
     */
-  var subSite: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
+  var tax: js.UndefOr[Money] = js.undefined
+  
+  /**
+    * Trace number for tracking purposes. May be defined at the jurisdiction level or between trading partners.
+    */
+  var traceNumber: js.UndefOr[js.Array[Identifier]] = js.undefined
   
   /**
     * If the item is not a group then this is the fee for the product or service, otherwise this is the total of the fees for the details of the group.
@@ -117,8 +147,8 @@ trait ExplanationOfBenefitAddItem
 }
 object ExplanationOfBenefitAddItem {
   
-  inline def apply(productOrService: CodeableConcept): ExplanationOfBenefitAddItem = {
-    val __obj = js.Dynamic.literal(productOrService = productOrService.asInstanceOf[js.Any])
+  inline def apply(): ExplanationOfBenefitAddItem = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExplanationOfBenefitAddItem]
   }
   
@@ -131,9 +161,11 @@ object ExplanationOfBenefitAddItem {
     
     inline def setAdjudicationVarargs(value: ExplanationOfBenefitItemAdjudication*): Self = StObject.set(x, "adjudication", js.Array(value*))
     
-    inline def setBodySite(value: CodeableConcept): Self = StObject.set(x, "bodySite", value.asInstanceOf[js.Any])
+    inline def setBodySite(value: js.Array[ExplanationOfBenefitAddItemBodySite]): Self = StObject.set(x, "bodySite", value.asInstanceOf[js.Any])
     
     inline def setBodySiteUndefined: Self = StObject.set(x, "bodySite", js.undefined)
+    
+    inline def setBodySiteVarargs(value: ExplanationOfBenefitAddItemBodySite*): Self = StObject.set(x, "bodySite", js.Array(value*))
     
     inline def setDetail(value: js.Array[ExplanationOfBenefitAddItemDetail]): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
     
@@ -185,7 +217,17 @@ object ExplanationOfBenefitAddItem {
     
     inline def setNoteNumberVarargs(value: Double*): Self = StObject.set(x, "noteNumber", js.Array(value*))
     
+    inline def setPatientPaid(value: Money): Self = StObject.set(x, "patientPaid", value.asInstanceOf[js.Any])
+    
+    inline def setPatientPaidUndefined: Self = StObject.set(x, "patientPaid", js.undefined)
+    
     inline def setProductOrService(value: CodeableConcept): Self = StObject.set(x, "productOrService", value.asInstanceOf[js.Any])
+    
+    inline def setProductOrServiceEnd(value: CodeableConcept): Self = StObject.set(x, "productOrServiceEnd", value.asInstanceOf[js.Any])
+    
+    inline def setProductOrServiceEndUndefined: Self = StObject.set(x, "productOrServiceEnd", js.undefined)
+    
+    inline def setProductOrServiceUndefined: Self = StObject.set(x, "productOrService", js.undefined)
     
     inline def setProgramCode(value: js.Array[CodeableConcept]): Self = StObject.set(x, "programCode", value.asInstanceOf[js.Any])
     
@@ -203,6 +245,20 @@ object ExplanationOfBenefitAddItem {
     
     inline def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
     
+    inline def setRequest(value: js.Array[Reference]): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    
+    inline def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
+    
+    inline def setRequestVarargs(value: Reference*): Self = StObject.set(x, "request", js.Array(value*))
+    
+    inline def setRevenue(value: CodeableConcept): Self = StObject.set(x, "revenue", value.asInstanceOf[js.Any])
+    
+    inline def setRevenueUndefined: Self = StObject.set(x, "revenue", js.undefined)
+    
+    inline def setReviewOutcome(value: ExplanationOfBenefitItemReviewOutcome): Self = StObject.set(x, "reviewOutcome", value.asInstanceOf[js.Any])
+    
+    inline def setReviewOutcomeUndefined: Self = StObject.set(x, "reviewOutcome", js.undefined)
+    
     inline def setServicedDate(value: String): Self = StObject.set(x, "servicedDate", value.asInstanceOf[js.Any])
     
     inline def setServicedDateUndefined: Self = StObject.set(x, "servicedDate", js.undefined)
@@ -217,11 +273,15 @@ object ExplanationOfBenefitAddItem {
     
     inline def setSubDetailSequenceVarargs(value: Double*): Self = StObject.set(x, "subDetailSequence", js.Array(value*))
     
-    inline def setSubSite(value: js.Array[CodeableConcept]): Self = StObject.set(x, "subSite", value.asInstanceOf[js.Any])
+    inline def setTax(value: Money): Self = StObject.set(x, "tax", value.asInstanceOf[js.Any])
     
-    inline def setSubSiteUndefined: Self = StObject.set(x, "subSite", js.undefined)
+    inline def setTaxUndefined: Self = StObject.set(x, "tax", js.undefined)
     
-    inline def setSubSiteVarargs(value: CodeableConcept*): Self = StObject.set(x, "subSite", js.Array(value*))
+    inline def setTraceNumber(value: js.Array[Identifier]): Self = StObject.set(x, "traceNumber", value.asInstanceOf[js.Any])
+    
+    inline def setTraceNumberUndefined: Self = StObject.set(x, "traceNumber", js.undefined)
+    
+    inline def setTraceNumberVarargs(value: Identifier*): Self = StObject.set(x, "traceNumber", js.Array(value*))
     
     inline def setUnitPrice(value: Money): Self = StObject.set(x, "unitPrice", value.asInstanceOf[js.Any])
     

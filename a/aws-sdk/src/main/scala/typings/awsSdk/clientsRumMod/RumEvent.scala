@@ -14,7 +14,7 @@ trait RumEvent extends StObject {
   /**
     * A unique ID for this event.
     */
-  var id: String
+  var id: RumEventIdString
   
   /**
     * Metadata about this event, which contains a JSON serialization of the identity of the user for this session. The user information comes from information such as the HTTP user-agent request header and document interface.
@@ -33,7 +33,7 @@ trait RumEvent extends StObject {
 }
 object RumEvent {
   
-  inline def apply(details: JsonValue, id: String, timestamp: js.Date, `type`: String): RumEvent = {
+  inline def apply(details: JsonValue, id: RumEventIdString, timestamp: js.Date, `type`: String): RumEvent = {
     val __obj = js.Dynamic.literal(details = details.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RumEvent]
@@ -44,7 +44,7 @@ object RumEvent {
     
     inline def setDetails(value: JsonValue): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
-    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: RumEventIdString): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     inline def setMetadata(value: JsonValue): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     

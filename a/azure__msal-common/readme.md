@@ -1,7 +1,7 @@
 
 # Scala.js typings for azure__msal-common
 
-Typings are for version 7.4.1
+Typings are for version 13.0.0
 
 ## Library description:
 Microsoft Authentication Library for js

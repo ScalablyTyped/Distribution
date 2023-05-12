@@ -1,6 +1,5 @@
 package typings.jsrsasign.anon
 
-import typings.jsrsasign.jsrsasign.KJUR.crypto.ECDSA
 import typings.jsrsasign.jsrsasign.RSAKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -8,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PrvKeyObj extends StObject {
   
-  var prvKeyObj: RSAKey | ECDSA
+  var prvKeyObj: RSAKey
   
-  var pubKeyObj: RSAKey | ECDSA
+  var pubKeyObj: RSAKey
 }
 object PrvKeyObj {
   
-  inline def apply(prvKeyObj: RSAKey | ECDSA, pubKeyObj: RSAKey | ECDSA): PrvKeyObj = {
+  inline def apply(prvKeyObj: RSAKey, pubKeyObj: RSAKey): PrvKeyObj = {
     val __obj = js.Dynamic.literal(prvKeyObj = prvKeyObj.asInstanceOf[js.Any], pubKeyObj = pubKeyObj.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrvKeyObj]
   }
@@ -22,8 +21,8 @@ object PrvKeyObj {
   @scala.inline
   implicit open class MutableBuilder[Self <: PrvKeyObj] (val x: Self) extends AnyVal {
     
-    inline def setPrvKeyObj(value: RSAKey | ECDSA): Self = StObject.set(x, "prvKeyObj", value.asInstanceOf[js.Any])
+    inline def setPrvKeyObj(value: RSAKey): Self = StObject.set(x, "prvKeyObj", value.asInstanceOf[js.Any])
     
-    inline def setPubKeyObj(value: RSAKey | ECDSA): Self = StObject.set(x, "pubKeyObj", value.asInstanceOf[js.Any])
+    inline def setPubKeyObj(value: RSAKey): Self = StObject.set(x, "pubKeyObj", value.asInstanceOf[js.Any])
   }
 }

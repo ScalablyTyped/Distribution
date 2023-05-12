@@ -1,7 +1,7 @@
 
 # Scala.js typings for rc-util
 
-Typings are for version 5.24.4
+Typings are for version 5.30.0
 
 ## Library description:
 Common Utils For React Component

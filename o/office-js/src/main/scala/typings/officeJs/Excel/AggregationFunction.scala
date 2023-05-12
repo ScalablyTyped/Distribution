@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 sealed trait AggregationFunction extends StObject
 /**
-  * Aggregation function for the DataPivotField.
+  * Aggregation function for the `DataPivotHierarchy`.
   *
   * @remarks
   * [Api set: ExcelApi 1.8]

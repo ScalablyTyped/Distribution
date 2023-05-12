@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StudioComponent extends StObject {
   
   /**
-    * The ARN of the resource.
+    * The Amazon Resource Name (ARN) that is assigned to a studio resource and uniquely identifies it. ARNs are unique across all Regions.
     */
   var arn: js.UndefOr[String] = js.undefined
   
@@ -17,7 +17,7 @@ trait StudioComponent extends StObject {
   var configuration: js.UndefOr[StudioComponentConfiguration] = js.undefined
   
   /**
-    * The Unix epoch timestamp in seconds for when the resource was created.
+    * The ISO timestamp in seconds for when the resource was created.
     */
   var createdAt: js.UndefOr[js.Date] = js.undefined
   
@@ -47,7 +47,7 @@ trait StudioComponent extends StObject {
   var name: js.UndefOr[StudioComponentName] = js.undefined
   
   /**
-    * An IAM role attached to a Studio Component that gives the studio component access to AWS resources at anytime while the instance is running. 
+    * An IAM role attached to a Studio Component that gives the studio component access to Amazon Web Services resources at anytime while the instance is running. 
     */
   var runtimeRoleArn: js.UndefOr[RoleArn] = js.undefined
   
@@ -57,7 +57,7 @@ trait StudioComponent extends StObject {
   var scriptParameters: js.UndefOr[StudioComponentScriptParameterKeyValueList] = js.undefined
   
   /**
-    * An IAM role attached to Studio Component when the system initialization script runs which give the studio component access to AWS resources when the system initialization script runs.
+    * An IAM role attached to Studio Component when the system initialization script runs which give the studio component access to Amazon Web Services resources when the system initialization script runs.
     */
   var secureInitializationRoleArn: js.UndefOr[RoleArn] = js.undefined
   
@@ -87,7 +87,7 @@ trait StudioComponent extends StObject {
   var subtype: js.UndefOr[StudioComponentSubtype] = js.undefined
   
   /**
-    * A collection of labels, in the form of key:value pairs, that apply to this resource.
+    * A collection of labels, in the form of key-value pairs, that apply to this resource.
     */
   var tags: js.UndefOr[Tags] = js.undefined
   
@@ -97,7 +97,7 @@ trait StudioComponent extends StObject {
   var `type`: js.UndefOr[StudioComponentType] = js.undefined
   
   /**
-    * The Unix epoch timestamp in seconds for when the resource was updated.
+    * The ISO timestamp in seconds for when the resource was updated.
     */
   var updatedAt: js.UndefOr[js.Date] = js.undefined
   

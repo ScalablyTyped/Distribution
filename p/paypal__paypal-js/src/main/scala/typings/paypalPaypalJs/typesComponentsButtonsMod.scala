@@ -5,7 +5,7 @@ import typings.paypalPaypalJs.anon.Authorize
 import typings.paypalPaypalJs.anon.Color
 import typings.paypalPaypalJs.anon.Create
 import typings.paypalPaypalJs.anon.Patch
-import typings.paypalPaypalJs.anon.`1`
+import typings.paypalPaypalJs.anon.Revise
 import typings.paypalPaypalJs.typesApisShippingMod.SelectedShippingOption
 import typings.paypalPaypalJs.typesApisShippingMod.ShippingAddress
 import typings.paypalPaypalJs.typesComponentsFundingEligibilityMod.FUNDING_SOURCE
@@ -55,11 +55,11 @@ object typesComponentsButtonsMod {
   
   trait CreateSubscriptionActions extends StObject {
     
-    var subscription: `1`
+    var subscription: Revise
   }
   object CreateSubscriptionActions {
     
-    inline def apply(subscription: `1`): CreateSubscriptionActions = {
+    inline def apply(subscription: Revise): CreateSubscriptionActions = {
       val __obj = js.Dynamic.literal(subscription = subscription.asInstanceOf[js.Any])
       __obj.asInstanceOf[CreateSubscriptionActions]
     }
@@ -67,7 +67,7 @@ object typesComponentsButtonsMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: CreateSubscriptionActions] (val x: Self) extends AnyVal {
       
-      inline def setSubscription(value: `1`): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
+      inline def setSubscription(value: Revise): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
     }
   }
   

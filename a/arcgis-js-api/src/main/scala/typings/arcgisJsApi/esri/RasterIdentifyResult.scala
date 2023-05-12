@@ -21,6 +21,13 @@ trait RasterIdentifyResult extends StObject {
   var location: Point
   
   /**
+    * The processed pixel values showing results of the [rasterFunction](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryTileLayer.html#rasterFunction) applied to the layer.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryTileLayer.html#RasterIdentifyResult)
+    */
+  var processedValue: js.Array[Double]
+  
+  /**
     * Image service pixel values.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryTileLayer.html#RasterIdentifyResult)
@@ -29,8 +36,8 @@ trait RasterIdentifyResult extends StObject {
 }
 object RasterIdentifyResult {
   
-  inline def apply(location: Point, value: js.Array[Double]): RasterIdentifyResult = {
-    val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+  inline def apply(location: Point, processedValue: js.Array[Double], value: js.Array[Double]): RasterIdentifyResult = {
+    val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any], processedValue = processedValue.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[RasterIdentifyResult]
   }
   
@@ -44,6 +51,10 @@ object RasterIdentifyResult {
     inline def setDataSeriesVarargs(value: RasterSliceValue*): Self = StObject.set(x, "dataSeries", js.Array(value*))
     
     inline def setLocation(value: Point): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    
+    inline def setProcessedValue(value: js.Array[Double]): Self = StObject.set(x, "processedValue", value.asInstanceOf[js.Any])
+    
+    inline def setProcessedValueVarargs(value: Double*): Self = StObject.set(x, "processedValue", js.Array(value*))
     
     inline def setValue(value: js.Array[Double]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     

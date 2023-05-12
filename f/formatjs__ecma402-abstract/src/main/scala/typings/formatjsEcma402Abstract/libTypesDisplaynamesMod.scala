@@ -1,6 +1,6 @@
 package typings.formatjsEcma402Abstract
 
-import typings.formatjsEcma402Abstract.anon.Language
+import typings.formatjsEcma402Abstract.anon.Calendar
 import typings.formatjsEcma402Abstract.anon.Locale
 import typings.formatjsEcma402Abstract.libTypesCoreMod.LocaleData
 import org.scalablytyped.runtime.StObject
@@ -9,7 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object libTypesDisplaynamesMod {
   
+  type CalendarCode = String
+  
   type CurrencyCode = String
+  
+  type DateTimeFieldCode = String
   
   trait DisplayNamesData extends StObject {
     
@@ -24,11 +28,11 @@ object libTypesDisplaynamesMod {
       * Note that for style fields, `short` and `narrow` might not exist.
       * At runtime, the fallback order will be narrow -> short -> long.
       */
-    var types: Language
+    var types: Calendar
   }
   object DisplayNamesData {
     
-    inline def apply(patterns: Locale, types: Language): DisplayNamesData = {
+    inline def apply(patterns: Locale, types: Calendar): DisplayNamesData = {
       val __obj = js.Dynamic.literal(patterns = patterns.asInstanceOf[js.Any], types = types.asInstanceOf[js.Any])
       __obj.asInstanceOf[DisplayNamesData]
     }
@@ -38,7 +42,7 @@ object libTypesDisplaynamesMod {
       
       inline def setPatterns(value: Locale): Self = StObject.set(x, "patterns", value.asInstanceOf[js.Any])
       
-      inline def setTypes(value: Language): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+      inline def setTypes(value: Calendar): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     }
   }
   

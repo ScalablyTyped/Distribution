@@ -49,6 +49,8 @@ trait InputHTMLAttributes[T]
   
   var height: js.UndefOr[Double | String | Null] = js.undefined
   
+  var indeterminate: js.UndefOr[Boolean | Null] = js.undefined
+  
   var list: js.UndefOr[String | Null] = js.undefined
   
   var max: js.UndefOr[Double | String | Null] = js.undefined
@@ -186,6 +188,12 @@ object InputHTMLAttributes {
     inline def setHeightNull: Self = StObject.set(x, "height", null)
     
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
+    inline def setIndeterminate(value: Boolean): Self = StObject.set(x, "indeterminate", value.asInstanceOf[js.Any])
+    
+    inline def setIndeterminateNull: Self = StObject.set(x, "indeterminate", null)
+    
+    inline def setIndeterminateUndefined: Self = StObject.set(x, "indeterminate", js.undefined)
     
     inline def setList(value: String): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
     

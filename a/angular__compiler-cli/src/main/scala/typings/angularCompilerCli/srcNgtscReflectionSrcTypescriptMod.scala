@@ -1,8 +1,8 @@
 package typings.angularCompilerCli
 
+import typings.angularCompilerCli.anon.ClassDeclarationDeclarati
 import typings.angularCompilerCli.anon.Decorators
 import typings.angularCompilerCli.anon.From
-import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.ClassDeclaration
 import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.ClassMember
 import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.CtorParameter
 import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.DeclarationNode
@@ -44,18 +44,6 @@ object srcNgtscReflectionSrcTypescriptMod {
     /* protected */ var checker: TypeChecker = js.native
     
     /**
-      * Get a `ts.Identifier` for a given `ClassDeclaration` which can be used to refer to the class
-      * from statements that are "adjacent", and conceptually tightly bound, to the class but not
-      * actually inside it.
-      *
-      * Similar to `getInternalNameOfClass()`, this name can differ from `clazz.name` when ngcc runs
-      * over ES5 code, since these "adjacent" statements need to exist in the IIFE where the class may
-      * have a different name than it does externally.
-      */
-    /* CompleteClass */
-    override def getAdjacentNameOfClass(clazz: ClassDeclaration[DeclarationNode]): Identifier = js.native
-    
-    /**
       * Get an expression representing the base class (if any) of the given `clazz`.
       *
       * This expression is most commonly an Identifier, but is possible to inherit from a more dynamic
@@ -64,7 +52,7 @@ object srcNgtscReflectionSrcTypescriptMod {
       * @param clazz the class whose base we want to get.
       */
     /* CompleteClass */
-    override def getBaseClassExpression(clazz: ClassDeclaration[DeclarationNode]): Expression | Null = js.native
+    override def getBaseClassExpression(clazz: ClassDeclarationDeclarati): Expression | Null = js.native
     
     /**
       * Reflect over the constructor of a class and return metadata about its parameters.
@@ -79,7 +67,7 @@ object srcNgtscReflectionSrcTypescriptMod {
       * If the class has no constructor, this method returns `null`.
       */
     /* CompleteClass */
-    override def getConstructorParameters(clazz: ClassDeclaration[DeclarationNode]): js.Array[CtorParameter] | Null = js.native
+    override def getConstructorParameters(clazz: ClassDeclarationDeclarati): js.Array[CtorParameter] | Null = js.native
     
     /**
       * Trace an identifier to its declaration, if possible.
@@ -163,22 +151,6 @@ object srcNgtscReflectionSrcTypescriptMod {
     
     /* protected */ def getDirectImportOfIdentifier(id: Identifier): Import | Null = js.native
     
-    def getDtsDeclaration(_underscore: ClassDeclaration[DeclarationNode]): Declaration | Null = js.native
-    /**
-      * Take an exported declaration (maybe a class down-leveled to a variable) and look up the
-      * declaration of its type in a separate .d.ts tree.
-      *
-      * This function is allowed to return `null` if the current compilation unit does not have a
-      * separate .d.ts tree. When compiling TypeScript code this is always the case, since .d.ts files
-      * are produced only during the emit of such a compilation. When compiling .js code, however,
-      * there is frequently a parallel .d.ts tree which this method exposes.
-      *
-      * Note that the `ts.Declaration` returned from this function may not be from the same
-      * `ts.Program` as the input declaration.
-      */
-    /* CompleteClass */
-    override def getDtsDeclaration(declaration: DeclarationNode): Declaration | Null = js.native
-    
     /**
       * Collect the declarations exported from a module by name.
       *
@@ -206,7 +178,7 @@ object srcNgtscReflectionSrcTypescriptMod {
       * is not a class or has an unknown number of type parameters.
       */
     /* CompleteClass */
-    override def getGenericArityOfClass(clazz: ClassDeclaration[DeclarationNode]): Double | Null = js.native
+    override def getGenericArityOfClass(clazz: ClassDeclarationDeclarati): Double | Null = js.native
     
     /**
       * Determine if an identifier was imported from another module and return `Import` metadata
@@ -242,16 +214,6 @@ object srcNgtscReflectionSrcTypescriptMod {
     /* protected */ def getImportOfNamespacedIdentifier(id: Identifier, namespaceIdentifier: Identifier): Import | Null = js.native
     
     /**
-      * Get a `ts.Identifier` for a given `ClassDeclaration` which can be used to refer to the class
-      * within its definition (such as in static fields).
-      *
-      * This can differ from `clazz.name` when ngcc runs over ES5 code, since the class may have a
-      * different name within its IIFE wrapper than it does externally.
-      */
-    /* CompleteClass */
-    override def getInternalNameOfClass(clazz: ClassDeclaration[DeclarationNode]): Identifier = js.native
-    
-    /**
       * Get the set of declarations declared in `file` which are exported.
       */
     /* private */ var getLocalExportedDeclarationsOfSourceFile: Any = js.native
@@ -267,7 +229,7 @@ object srcNgtscReflectionSrcTypescriptMod {
       * @throws if `declaration` does not resolve to a class declaration.
       */
     /* CompleteClass */
-    override def getMembersOfClass(clazz: ClassDeclaration[DeclarationNode]): js.Array[ClassMember] = js.native
+    override def getMembersOfClass(clazz: ClassDeclarationDeclarati): js.Array[ClassMember] = js.native
     
     /**
       * Find the assigned value of a variable declaration.
@@ -288,13 +250,13 @@ object srcNgtscReflectionSrcTypescriptMod {
       * @param clazz a `ClassDeclaration` representing the class over which to reflect.
       */
     /* CompleteClass */
-    override def hasBaseClass(clazz: ClassDeclaration[DeclarationNode]): Boolean = js.native
+    override def hasBaseClass(clazz: ClassDeclarationDeclarati): Boolean = js.native
     
     /**
       * Check whether the given node actually represents a class.
       */
     /* CompleteClass */
-    override def isClass(node: Node): /* is @angular/compiler-cli.@angular/compiler-cli/src/ngtsc/reflection/src/host.ClassDeclaration<@angular/compiler-cli.@angular/compiler-cli/src/ngtsc/reflection/src/host.DeclarationNode> */ Boolean = js.native
+    override def isClass(node: Node): /* is @angular/compiler-cli.anon.ClassDeclarationDeclarati */ Boolean = js.native
     
     /**
       * Returns `true` if a declaration is exported from the module in which it's defined.

@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Accuracy extends StObject {
   
   /**
-    * The horizontal accuracy of the estimated position in meters.
+    * The horizontal accuracy of the estimated position, which is the difference between the estimated location and the actual device location.
     */
   var HorizontalAccuracy: js.UndefOr[typings.awsSdk.clientsIotwirelessMod.HorizontalAccuracy] = js.undefined
   
   /**
-    * The vertical accuracy of the estimated position in meters.
+    * The vertical accuracy of the estimated position, which is the difference between the estimated altitude and actual device latitude in meters.
     */
   var VerticalAccuracy: js.UndefOr[typings.awsSdk.clientsIotwirelessMod.VerticalAccuracy] = js.undefined
 }

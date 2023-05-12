@@ -87,30 +87,40 @@ object sapUiCoreRoutingTargetsMod {
   trait TargetInfo extends StObject {
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Since 1.90. Whether the router of the "Component" target ignores the browser hash when it's re-initialized.
       * This parameter only has effect when the target is of type "Component" and its router is currently stopped.
-      * It has no effect on the first call of {link sap.ui.core.routing.Router#initialize}, because this is done
-      * by the application and not by the UI5 routing.
+      * It has no effect on the first call of {@link sap.ui.core.routing.Router#initialize}, because this is
+      * done by the application and not by the UI5 routing.
       */
     var ignoreInitialHash: js.UndefOr[Boolean] = js.undefined
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Defines the name of the target that is going to be displayed
       */
     var name: String
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * A prefix that is used for reserving a dedicated section in the browser hash for the router of this target.
       * This needs to be set only for target that has type "Component"
       */
     var prefix: js.UndefOr[String] = js.undefined
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Whether the titleChanged event from this target should be propagated to the parent or not
       */
     var propagateTitle: js.UndefOr[Boolean] = js.undefined
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Whether the target is relevant to the current matched route or not. If 'true', then the dynamic target
       * is linked to the route's life cycle. When switching to a different route, then the dynamic target will
       * be suspended.

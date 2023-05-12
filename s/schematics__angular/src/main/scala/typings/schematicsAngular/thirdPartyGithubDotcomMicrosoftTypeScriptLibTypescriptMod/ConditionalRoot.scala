@@ -1,5 +1,6 @@
 package typings.schematicsAngular.thirdPartyGithubDotcomMicrosoftTypeScriptLibTypescriptMod
 
+import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +17,7 @@ trait ConditionalRoot extends StObject {
   
   var inferTypeParameters: js.UndefOr[js.Array[TypeParameter]] = js.undefined
   
-  var instantiations: js.UndefOr[Map[Type]] = js.undefined
+  var instantiations: js.UndefOr[Map[java.lang.String, Type]] = js.undefined
   
   var isDistributive: Boolean
   
@@ -54,7 +55,7 @@ object ConditionalRoot {
     
     inline def setInferTypeParametersVarargs(value: TypeParameter*): Self = StObject.set(x, "inferTypeParameters", js.Array(value*))
     
-    inline def setInstantiations(value: Map[Type]): Self = StObject.set(x, "instantiations", value.asInstanceOf[js.Any])
+    inline def setInstantiations(value: Map[java.lang.String, Type]): Self = StObject.set(x, "instantiations", value.asInstanceOf[js.Any])
     
     inline def setInstantiationsUndefined: Self = StObject.set(x, "instantiations", js.undefined)
     

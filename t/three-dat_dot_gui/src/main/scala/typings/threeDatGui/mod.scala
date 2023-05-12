@@ -10,7 +10,9 @@ import typings.three.mod.Mesh
 import typings.three.mod.Object3D
 import typings.three.mod.Scene
 import typings.three.srcCoreBufferGeometryMod.BufferGeometry
+import typings.three.srcCoreBufferGeometryMod.NormalBufferAttributes
 import typings.three.srcCoreEventDispatcherMod.Event
+import typings.three.srcLightsLightShadowMod.LightShadow
 import typings.three.srcMathVector2Mod.Vector
 import typings.threeDatGui.anon.GUI
 import typings.threeDatGui.anon.Inner
@@ -40,21 +42,21 @@ object mod {
       def addFog(name: String, fog: Fog): typings.threeDatGui.mod.datGuiAugmentingMod.GUI = js.native
       def addFog(name: String, fog: FogExp2): typings.threeDatGui.mod.datGuiAugmentingMod.GUI = js.native
       
-      def addLight(name: String, light: Light): typings.threeDatGui.mod.datGuiAugmentingMod.GUI = js.native
+      def addLight(name: String, light: Light[js.UndefOr[LightShadow[typings.three.srcCamerasCameraMod.Camera]]]): typings.threeDatGui.mod.datGuiAugmentingMod.GUI = js.native
       
       def addMaterial(name: String, material: Material): typings.threeDatGui.mod.datGuiAugmentingMod.GUI = js.native
       
       def addMesh(
         name: String,
         mesh: Mesh[
-              BufferGeometry, 
+              BufferGeometry[NormalBufferAttributes], 
               typings.three.srcMaterialsMaterialMod.Material | js.Array[typings.three.srcMaterialsMaterialMod.Material]
             ]
       ): typings.threeDatGui.mod.datGuiAugmentingMod.GUI = js.native
       def addMesh(
         name: String,
         mesh: Mesh[
-              BufferGeometry, 
+              BufferGeometry[NormalBufferAttributes], 
               typings.three.srcMaterialsMaterialMod.Material | js.Array[typings.three.srcMaterialsMaterialMod.Material]
             ],
         options: Recursive

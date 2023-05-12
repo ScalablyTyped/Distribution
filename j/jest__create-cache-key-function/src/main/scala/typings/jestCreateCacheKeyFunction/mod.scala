@@ -11,10 +11,22 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
+  /**
+    * Returns a function that can be used to generate cache keys based on source code of provided files and provided values.
+    *
+    * @param files - Array of absolute paths to files whose code should be accounted for when generating cache key
+    * @param values - Array of string values that should be accounted for when generating cache key
+    * @param length - Length of the resulting key. The default is `32`, or `16` on Windows.
+    * @returns A function that can be used to generate cache keys.
+    */
   inline def default(): GetCacheKeyFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[GetCacheKeyFunction]
   inline def default(files: js.Array[String]): GetCacheKeyFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(files.asInstanceOf[js.Any]).asInstanceOf[GetCacheKeyFunction]
   inline def default(files: js.Array[String], values: js.Array[String]): GetCacheKeyFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(files.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[GetCacheKeyFunction]
+  inline def default(files: js.Array[String], values: js.Array[String], length: Double): GetCacheKeyFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(files.asInstanceOf[js.Any], values.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[GetCacheKeyFunction]
+  inline def default(files: js.Array[String], values: Unit, length: Double): GetCacheKeyFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(files.asInstanceOf[js.Any], values.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[GetCacheKeyFunction]
   inline def default(files: Unit, values: js.Array[String]): GetCacheKeyFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(files.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[GetCacheKeyFunction]
+  inline def default(files: Unit, values: js.Array[String], length: Double): GetCacheKeyFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(files.asInstanceOf[js.Any], values.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[GetCacheKeyFunction]
+  inline def default(files: Unit, values: Unit, length: Double): GetCacheKeyFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(files.asInstanceOf[js.Any], values.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[GetCacheKeyFunction]
   
   type GetCacheKeyFunction = OldGetCacheKeyFunction | NewGetCacheKeyFunction
   

@@ -10,6 +10,8 @@ trait UserDevice extends StObject {
   
   var is_active: Boolean
   
+  var is_private_session: Boolean
+  
   var is_restricted: Boolean
   
   var name: String
@@ -20,8 +22,14 @@ trait UserDevice extends StObject {
 }
 object UserDevice {
   
-  inline def apply(is_active: Boolean, is_restricted: Boolean, name: String, `type`: String): UserDevice = {
-    val __obj = js.Dynamic.literal(is_active = is_active.asInstanceOf[js.Any], is_restricted = is_restricted.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], id = null, volume_percent = null)
+  inline def apply(
+    is_active: Boolean,
+    is_private_session: Boolean,
+    is_restricted: Boolean,
+    name: String,
+    `type`: String
+  ): UserDevice = {
+    val __obj = js.Dynamic.literal(is_active = is_active.asInstanceOf[js.Any], is_private_session = is_private_session.asInstanceOf[js.Any], is_restricted = is_restricted.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], id = null, volume_percent = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserDevice]
   }
@@ -34,6 +42,8 @@ object UserDevice {
     inline def setIdNull: Self = StObject.set(x, "id", null)
     
     inline def setIs_active(value: Boolean): Self = StObject.set(x, "is_active", value.asInstanceOf[js.Any])
+    
+    inline def setIs_private_session(value: Boolean): Self = StObject.set(x, "is_private_session", value.asInstanceOf[js.Any])
     
     inline def setIs_restricted(value: Boolean): Self = StObject.set(x, "is_restricted", value.asInstanceOf[js.Any])
     

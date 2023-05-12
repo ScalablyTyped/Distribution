@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SourceServer extends StObject {
   
   /**
+    * Source server application ID.
+    */
+  var applicationID: js.UndefOr[ApplicationID] = js.undefined
+  
+  /**
     * Source server ARN.
     */
   var arn: js.UndefOr[ARN] = js.undefined
@@ -15,6 +20,11 @@ trait SourceServer extends StObject {
     * Source server data replication info.
     */
   var dataReplicationInfo: js.UndefOr[DataReplicationInfo] = js.undefined
+  
+  /**
+    * Source server fqdn for action framework.
+    */
+  var fqdnForActionFramework: js.UndefOr[BoundedString] = js.undefined
   
   /**
     * Source server archived status.
@@ -52,6 +62,11 @@ trait SourceServer extends StObject {
   var tags: js.UndefOr[TagsMap] = js.undefined
   
   /**
+    * Source server user provided ID.
+    */
+  var userProvidedID: js.UndefOr[BoundedString] = js.undefined
+  
+  /**
     * Source server vCenter client id.
     */
   var vcenterClientID: js.UndefOr[VcenterClientID] = js.undefined
@@ -66,6 +81,10 @@ object SourceServer {
   @scala.inline
   implicit open class MutableBuilder[Self <: SourceServer] (val x: Self) extends AnyVal {
     
+    inline def setApplicationID(value: ApplicationID): Self = StObject.set(x, "applicationID", value.asInstanceOf[js.Any])
+    
+    inline def setApplicationIDUndefined: Self = StObject.set(x, "applicationID", js.undefined)
+    
     inline def setArn(value: ARN): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
     inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
@@ -73,6 +92,10 @@ object SourceServer {
     inline def setDataReplicationInfo(value: DataReplicationInfo): Self = StObject.set(x, "dataReplicationInfo", value.asInstanceOf[js.Any])
     
     inline def setDataReplicationInfoUndefined: Self = StObject.set(x, "dataReplicationInfo", js.undefined)
+    
+    inline def setFqdnForActionFramework(value: BoundedString): Self = StObject.set(x, "fqdnForActionFramework", value.asInstanceOf[js.Any])
+    
+    inline def setFqdnForActionFrameworkUndefined: Self = StObject.set(x, "fqdnForActionFramework", js.undefined)
     
     inline def setIsArchived(value: Boolean): Self = StObject.set(x, "isArchived", value.asInstanceOf[js.Any])
     
@@ -101,6 +124,10 @@ object SourceServer {
     inline def setTags(value: TagsMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    
+    inline def setUserProvidedID(value: BoundedString): Self = StObject.set(x, "userProvidedID", value.asInstanceOf[js.Any])
+    
+    inline def setUserProvidedIDUndefined: Self = StObject.set(x, "userProvidedID", js.undefined)
     
     inline def setVcenterClientID(value: VcenterClientID): Self = StObject.set(x, "vcenterClientID", value.asInstanceOf[js.Any])
     

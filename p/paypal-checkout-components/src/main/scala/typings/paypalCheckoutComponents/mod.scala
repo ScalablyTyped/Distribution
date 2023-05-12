@@ -29,6 +29,8 @@ object mod {
     /* "gold" */ val Gold: typings.paypalCheckoutComponents.modulesConfigurationMod.ButtonColorOption.Gold & String = js.native
     
     /* "silver" */ val Silver: typings.paypalCheckoutComponents.modulesConfigurationMod.ButtonColorOption.Silver & String = js.native
+    
+    /* "white" */ val White: typings.paypalCheckoutComponents.modulesConfigurationMod.ButtonColorOption.White & String = js.native
   }
   
   @JSImport("paypal-checkout-components", "ButtonLabelOption")

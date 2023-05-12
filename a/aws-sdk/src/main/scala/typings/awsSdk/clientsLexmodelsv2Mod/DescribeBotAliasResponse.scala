@@ -61,6 +61,11 @@ trait DescribeBotAliasResponse extends StObject {
     */
   var lastUpdatedDateTime: js.UndefOr[js.Date] = js.undefined
   
+  /**
+    * A list of the networks to which the bot alias you described belongs.
+    */
+  var parentBotNetworks: js.UndefOr[ParentBotNetworks] = js.undefined
+  
   var sentimentAnalysisSettings: js.UndefOr[SentimentAnalysisSettings] = js.undefined
 }
 object DescribeBotAliasResponse {
@@ -118,6 +123,12 @@ object DescribeBotAliasResponse {
     inline def setLastUpdatedDateTime(value: js.Date): Self = StObject.set(x, "lastUpdatedDateTime", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedDateTimeUndefined: Self = StObject.set(x, "lastUpdatedDateTime", js.undefined)
+    
+    inline def setParentBotNetworks(value: ParentBotNetworks): Self = StObject.set(x, "parentBotNetworks", value.asInstanceOf[js.Any])
+    
+    inline def setParentBotNetworksUndefined: Self = StObject.set(x, "parentBotNetworks", js.undefined)
+    
+    inline def setParentBotNetworksVarargs(value: ParentBotNetwork*): Self = StObject.set(x, "parentBotNetworks", js.Array(value*))
     
     inline def setSentimentAnalysisSettings(value: SentimentAnalysisSettings): Self = StObject.set(x, "sentimentAnalysisSettings", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,7 @@ trait StartTaskContactRequest extends StObject {
   var Description: js.UndefOr[typings.awsSdk.clientsConnectMod.Description] = js.undefined
   
   /**
-    * The identifier of the Amazon Connect instance. You can find the instanceId in the ARN of the instance.
+    * The identifier of the Amazon Connect instance. You can find the instance ID in the Amazon Resource Name (ARN) of the instance.
     */
   var InstanceId: typings.awsSdk.clientsConnectMod.InstanceId
   
@@ -50,6 +50,11 @@ trait StartTaskContactRequest extends StObject {
     * A formatted URL that is shown to an agent in the Contact Control Panel (CCP).
     */
   var References: js.UndefOr[ContactReferences] = js.undefined
+  
+  /**
+    * The contactId that is related to this contact.
+    */
+  var RelatedContactId: js.UndefOr[ContactId] = js.undefined
   
   /**
     * The timestamp, in Unix Epoch seconds format, at which to start running the inbound flow. The scheduled time cannot be in the past. It must be within up to 6 days in future. 
@@ -102,6 +107,10 @@ object StartTaskContactRequest {
     inline def setReferences(value: ContactReferences): Self = StObject.set(x, "References", value.asInstanceOf[js.Any])
     
     inline def setReferencesUndefined: Self = StObject.set(x, "References", js.undefined)
+    
+    inline def setRelatedContactId(value: ContactId): Self = StObject.set(x, "RelatedContactId", value.asInstanceOf[js.Any])
+    
+    inline def setRelatedContactIdUndefined: Self = StObject.set(x, "RelatedContactId", js.undefined)
     
     inline def setScheduledTime(value: js.Date): Self = StObject.set(x, "ScheduledTime", value.asInstanceOf[js.Any])
     

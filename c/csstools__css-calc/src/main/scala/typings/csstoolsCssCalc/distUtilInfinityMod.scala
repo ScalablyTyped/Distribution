@@ -1,0 +1,20 @@
+package typings.csstoolsCssCalc
+
+import typings.csstoolsCssCalc.csstoolsCssCalcInts.`-1`
+import typings.csstoolsCssParserAlgorithms.mod.FunctionNode
+import typings.csstoolsCssParserAlgorithms.mod.TokenNode
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+object distUtilInfinityMod {
+  
+  @JSImport("@csstools/css-calc/dist/util/infinity", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def patchInfinity(x: FunctionNode): TokenNode | FunctionNode | `-1` = ^.asInstanceOf[js.Dynamic].applyDynamic("patchInfinity")(x.asInstanceOf[js.Any]).asInstanceOf[TokenNode | FunctionNode | `-1`]
+  inline def patchInfinity(x: TokenNode): TokenNode | FunctionNode | `-1` = ^.asInstanceOf[js.Dynamic].applyDynamic("patchInfinity")(x.asInstanceOf[js.Any]).asInstanceOf[TokenNode | FunctionNode | `-1`]
+  
+  inline def patchInfinity_1(x: `-1`): TokenNode | FunctionNode | `-1` = ^.asInstanceOf[js.Dynamic].applyDynamic("patchInfinity")(x.asInstanceOf[js.Any]).asInstanceOf[TokenNode | FunctionNode | `-1`]
+}

@@ -33,7 +33,7 @@ trait ServerHttp2Stream extends StObject {
     * Initiates a push stream. The callback is invoked with the new `Http2Stream`instance created for the push stream passed as the second argument, or an`Error` passed as the first argument.
     *
     * ```js
-    * const http2 = require('http2');
+    * const http2 = require('node:http2');
     * const server = http2.createServer();
     * server.on('stream', (stream) => {
     *   stream.respond({ ':status': 200 });
@@ -88,7 +88,7 @@ trait ServerHttp2Stream extends StObject {
   
   /**
     * ```js
-    * const http2 = require('http2');
+    * const http2 = require('node:http2');
     * const server = http2.createServer();
     * server.on('stream', (stream) => {
     *   stream.respond({ ':status': 200 });
@@ -96,16 +96,15 @@ trait ServerHttp2Stream extends StObject {
     * });
     * ```
     *
-    * When the `options.waitForTrailers` option is set, the `'wantTrailers'` event
-    * will be emitted immediately after queuing the last chunk of payload data to be
-    * sent. The `http2stream.sendTrailers()` method can then be used to sent trailing
-    * header fields to the peer.
+    * Initiates a response. When the `options.waitForTrailers` option is set, the`'wantTrailers'` event will be emitted immediately after queuing the last chunk
+    * of payload data to be sent. The `http2stream.sendTrailers()` method can then be
+    * used to sent trailing header fields to the peer.
     *
     * When `options.waitForTrailers` is set, the `Http2Stream` will not automatically
     * close when the final `DATA` frame is transmitted. User code must call either`http2stream.sendTrailers()` or `http2stream.close()` to close the`Http2Stream`.
     *
     * ```js
-    * const http2 = require('http2');
+    * const http2 = require('node:http2');
     * const server = http2.createServer();
     * server.on('stream', (stream) => {
     *   stream.respond({ ':status': 200 }, { waitForTrailers: true });
@@ -132,8 +131,8 @@ trait ServerHttp2Stream extends StObject {
     * automatically.
     *
     * ```js
-    * const http2 = require('http2');
-    * const fs = require('fs');
+    * const http2 = require('node:http2');
+    * const fs = require('node:fs');
     *
     * const server = http2.createServer();
     * server.on('stream', (stream) => {
@@ -143,7 +142,7 @@ trait ServerHttp2Stream extends StObject {
     *   const headers = {
     *     'content-length': stat.size,
     *     'last-modified': stat.mtime.toUTCString(),
-    *     'content-type': 'text/plain; charset=utf-8'
+    *     'content-type': 'text/plain; charset=utf-8',
     *   };
     *   stream.respondWithFD(fd, headers);
     *   stream.on('close', () => fs.closeSync(fd));
@@ -174,8 +173,8 @@ trait ServerHttp2Stream extends StObject {
     * close when the final `DATA` frame is transmitted. User code _must_ call either`http2stream.sendTrailers()` or `http2stream.close()` to close the`Http2Stream`.
     *
     * ```js
-    * const http2 = require('http2');
-    * const fs = require('fs');
+    * const http2 = require('node:http2');
+    * const fs = require('node:fs');
     *
     * const server = http2.createServer();
     * server.on('stream', (stream) => {
@@ -185,7 +184,7 @@ trait ServerHttp2Stream extends StObject {
     *   const headers = {
     *     'content-length': stat.size,
     *     'last-modified': stat.mtime.toUTCString(),
-    *     'content-type': 'text/plain; charset=utf-8'
+    *     'content-type': 'text/plain; charset=utf-8',
     *   };
     *   stream.respondWithFD(fd, headers, { waitForTrailers: true });
     *   stream.on('wantTrailers', () => {
@@ -225,7 +224,7 @@ trait ServerHttp2Stream extends StObject {
     * Example using a file path:
     *
     * ```js
-    * const http2 = require('http2');
+    * const http2 = require('node:http2');
     * const server = http2.createServer();
     * server.on('stream', (stream) => {
     *   function statCheck(stat, headers) {
@@ -243,7 +242,7 @@ trait ServerHttp2Stream extends StObject {
     *       }
     *     } catch (err) {
     *       // Perform actual error handling.
-    *       console.log(err);
+    *       console.error(err);
     *     }
     *     stream.end();
     *   }
@@ -259,7 +258,7 @@ trait ServerHttp2Stream extends StObject {
     * results to determine if the file has been modified to return an appropriate`304` response:
     *
     * ```js
-    * const http2 = require('http2');
+    * const http2 = require('node:http2');
     * const server = http2.createServer();
     * server.on('stream', (stream) => {
     *   function statCheck(stat, headers) {
@@ -292,7 +291,7 @@ trait ServerHttp2Stream extends StObject {
     * close when the final `DATA` frame is transmitted. User code must call either`http2stream.sendTrailers()` or `http2stream.close()` to close the`Http2Stream`.
     *
     * ```js
-    * const http2 = require('http2');
+    * const http2 = require('node:http2');
     * const server = http2.createServer();
     * server.on('stream', (stream) => {
     *   stream.respondWithFile('/some/file',

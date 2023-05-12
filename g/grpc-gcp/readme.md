@@ -1,7 +1,7 @@
 
 # Scala.js typings for grpc-gcp
 
-Typings are for version 1.0.0
+Typings are for version 1.0.1
 
 ## Library description:
 Extension for supporting Google Cloud Platform specific features for gRPC.

@@ -6,7 +6,7 @@ import typings.rollup.mod.Plugin
 import typings.rollup.mod.PluginContext
 import typings.rollup.mod.ResolveIdResult
 import typings.rollup.mod.TransformPluginContext
-import typings.vite.anon.IsEntry
+import typings.vite.anon.Custom
 import typings.vite.anon.Ssr
 import typings.vite.viteStrings.post
 import typings.vite.viteStrings.pre
@@ -80,8 +80,9 @@ trait Plugin2
   ] = js.undefined
   
   /**
-    * Configure the preview server. The hook receives the connect server and
-    * its underlying http server.
+    * Configure the preview server. The hook receives the {@link PreviewServerForHook}
+    * instance. This can also be used to store a reference to the server
+    * for use in other hooks.
     *
     * The hooks are called before other middlewares are applied. A hook can
     * return a post hook that will be called after other middlewares are
@@ -163,7 +164,7 @@ trait Plugin2
         /* this */ PluginContext, 
         /* source */ String, 
         /* importer */ js.UndefOr[String], 
-        /* options */ IsEntry, 
+        /* options */ Custom, 
         js.Promise[ResolveIdResult] | ResolveIdResult
       ], 
       js.Object
@@ -183,7 +184,7 @@ trait Plugin2
     *
     * By default the transform is applied **after** vite's internal html
     * transform. If you need to apply the transform before vite, use an object:
-    * `{ enforce: 'pre', transform: hook }`
+    * `{ order: 'pre', handler: hook }`
     */
   var transformIndexHtml: js.UndefOr[IndexHtmlTransform] = js.undefined
   
@@ -285,7 +286,7 @@ object Plugin2 {
             /* this */ PluginContext, 
             /* source */ String, 
             /* importer */ js.UndefOr[String], 
-            /* options */ IsEntry, 
+            /* options */ Custom, 
             js.Promise[ResolveIdResult] | ResolveIdResult
           ], 
           js.Object

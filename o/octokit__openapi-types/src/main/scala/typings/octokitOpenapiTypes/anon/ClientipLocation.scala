@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ClientipLocation extends StObject {
   
-  /** IP for location auto-detection when proxying a request */
+  /** @description IP for location auto-detection when proxying a request */
   var client_ip: js.UndefOr[String] = js.undefined
   
-  /** The location to check for available machines. Assigned by IP if not provided. */
+  /** @description The location to check for available machines. Assigned by IP if not provided. */
   var location: js.UndefOr[String] = js.undefined
 }
 object ClientipLocation {

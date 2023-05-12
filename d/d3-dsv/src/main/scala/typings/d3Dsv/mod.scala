@@ -12,9 +12,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def autoType[ParsedRow /* <: js.UndefOr[js.Object | Null] */, Columns /* <: String */](// tslint:disable-next-line:no-unnecessary-generics
+  inline def autoType[ParsedRow /* <: js.UndefOr[js.Object | Null] */, Columns /* <: String */](// eslint-disable-next-line no-unnecessary-generics
   `object`: js.Array[String]): ParsedRow = ^.asInstanceOf[js.Dynamic].applyDynamic("autoType")(`object`.asInstanceOf[js.Any]).asInstanceOf[ParsedRow]
-  inline def autoType[ParsedRow /* <: js.UndefOr[js.Object | Null] */, Columns /* <: String */](// tslint:disable-next-line:no-unnecessary-generics
+  inline def autoType[ParsedRow /* <: js.UndefOr[js.Object | Null] */, Columns /* <: String */](// eslint-disable-next-line no-unnecessary-generics
   `object`: DSVRowString[Columns]): ParsedRow = ^.asInstanceOf[js.Dynamic].applyDynamic("autoType")(`object`.asInstanceOf[js.Any]).asInstanceOf[ParsedRow]
   
   inline def csvFormat[T /* <: js.Object */](rows: js.Array[T]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("csvFormat")(rows.asInstanceOf[js.Any]).asInstanceOf[String]
@@ -149,7 +149,7 @@ object mod {
       *
       * @param dsvString A string, which must be in the delimiter-separated values format with the appropriate delimiter.
       */
-    // tslint:disable-next-line:no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
     def parse[Columns /* <: String */](dsvString: String): DSVRowArray[Columns] = js.native
     /**
       * Parses the specified string, which must be in the delimiter-separated values format with the appropriate delimiter, returning an array of objects representing the parsed rows.

@@ -8,31 +8,45 @@ object libRestMessagingMod {
   
   @JSImport("twilio/lib/rest/Messaging", JSImport.Namespace)
   @js.native
-  open class ^ protected () extends Messaging {
-    /**
-      * Initialize messaging domain
-      *
-      * @param twilio - The twilio client
-      */
-    def this(twilio: typings.twilio.libRestTwilioMod.^) = this()
-  }
+  open class ^ () extends Messaging
   
   @js.native
   trait Messaging
-    extends typings.twilio.libBaseDomainMod.^ {
+    extends typings.twilio.libRestMessagingBaseMod.^ {
     
-    val brandRegistrations: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BrandRegistrationListInstance */ Any = js.native
+    /**
+      * @deprecated - Use v1.brandRegistrations instead
+      */
+    def brandRegistrations: Any = js.native
     
-    val deactivations: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DeactivationsListInstance */ Any = js.native
+    /**
+      * @deprecated - Use v1.deactivations instead
+      */
+    def deactivations: Any = js.native
     
-    val externalCampaign: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ExternalCampaignListInstance */ Any = js.native
+    /**
+      * @deprecated - Use v1.domainCerts instead
+      */
+    def domainCerts: Any = js.native
     
-    val services: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ServiceListInstance */ Any = js.native
+    /**
+      * @deprecated - Use v1.domainConfig instead
+      */
+    def domainConfig: Any = js.native
     
-    val tollfreeVerifications: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TollfreeVerificationListInstance */ Any = js.native
+    /**
+      * @deprecated - Use v1.externalCampaign instead
+      */
+    def externalCampaign: Any = js.native
     
-    val usecases: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify UsecaseListInstance */ Any = js.native
+    /**
+      * @deprecated - Use v1.services instead
+      */
+    def services: Any = js.native
     
-    val v1: typings.twilio.libRestMessagingV1Mod.^ = js.native
+    /**
+      * @deprecated - Use v1.usecases instead
+      */
+    def usecases: Any = js.native
   }
 }

@@ -16,12 +16,12 @@ object sapUiModelOdataTypeDateTimeOffsetMod {
     */
   open class default () extends DateTimeOffset {
     def this(/**
-      * Format options as defined in {@link sap.ui.core.format.DateFormat}
+      * Format options as defined in {@link sap.ui.core.format.DateFormat.getDateTimeInstance}
       */
     oFormatOptions: js.Object) = this()
     def this(
       /**
-      * Format options as defined in {@link sap.ui.core.format.DateFormat}
+      * Format options as defined in {@link sap.ui.core.format.DateFormat.getDateTimeInstance}
       */
     oFormatOptions: js.Object,
       /**
@@ -32,7 +32,7 @@ object sapUiModelOdataTypeDateTimeOffsetMod {
     ) = this()
     def this(
       /**
-      * Format options as defined in {@link sap.ui.core.format.DateFormat}
+      * Format options as defined in {@link sap.ui.core.format.DateFormat.getDateTimeInstance}
       */
     oFormatOptions: Unit,
       /**
@@ -128,7 +128,7 @@ object sapUiModelOdataTypeDateTimeOffsetMod {
       * for more information.
       */
     sTargetType: String
-    ): js.Date | String = js.native
+    ): js.Date | typings.openui5.sapUiCoreDateUi5dateMod.default | String = js.native
     def formatValue(
       /**
       * The value to be formatted, which is represented in the model as a `Date` instance (OData V2) or as a
@@ -142,6 +142,29 @@ object sapUiModelOdataTypeDateTimeOffsetMod {
       * for more information.
       */
     sTargetType: String
-    ): js.Date | String = js.native
+    ): js.Date | typings.openui5.sapUiCoreDateUi5dateMod.default | String = js.native
+    
+    /**
+      * @SINCE 1.111.0
+      *
+      * Gets the model value according to this type's constraints and format options for the given date object
+      * which represents a timestamp in the configured time zone. Validates the resulting value against the constraints
+      * of this type instance.
+      *
+      * @returns The model representation for the given Date
+      */
+    def getModelValue(): js.Date | typings.openui5.sapUiCoreDateUi5dateMod.default | String | Null = js.native
+    def getModelValue(
+      /**
+      * The date object considering the configured time zone. Must be created via {@link module:sap/ui/core/date/UI5Date.getInstance}
+      */
+    oDate: js.Date
+    ): js.Date | typings.openui5.sapUiCoreDateUi5dateMod.default | String | Null = js.native
+    def getModelValue(
+      /**
+      * The date object considering the configured time zone. Must be created via {@link module:sap/ui/core/date/UI5Date.getInstance}
+      */
+    oDate: typings.openui5.sapUiCoreDateUi5dateMod.default
+    ): js.Date | typings.openui5.sapUiCoreDateUi5dateMod.default | String | Null = js.native
   }
 }

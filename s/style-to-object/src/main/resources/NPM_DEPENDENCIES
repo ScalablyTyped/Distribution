@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "style-to-object" : "0.3.0"
+      "style-to-object" : "0.4.1"
     }
   ],
   "test-dependencies" : [
     {
-      "style-to-object" : "0.3.0"
+      "style-to-object" : "0.4.1"
     }
   ],
   "compile-devDependencies" : [

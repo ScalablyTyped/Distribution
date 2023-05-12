@@ -5,7 +5,7 @@ import typings.react.mod.LegacyRef
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactElement
-import typings.react.mod.global.JSX.Element
+import typings.reactPdf.anon.Items
 import typings.reactPdf.reactPdfInts.`0`
 import typings.reactPdf.reactPdfInts.`180`
 import typings.reactPdf.reactPdfInts.`270`
@@ -13,6 +13,7 @@ import typings.reactPdf.reactPdfInts.`90`
 import typings.reactPdf.reactPdfStrings.canvas
 import typings.reactPdf.reactPdfStrings.none
 import typings.reactPdf.reactPdfStrings.svg
+import typings.std.Element
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
@@ -104,7 +105,13 @@ object distPageMod {
       * A function that customizes how a text layer is rendered.
       * Passes itext item and index for item.
       */
-    var customTextRenderer: js.UndefOr[js.Function1[/* layer */ TextLayerItemInternal, Element]] = js.undefined
+    var customTextRenderer: js.UndefOr[js.Function1[/* layer */ TextLayerItemInternal, String]] = js.undefined
+    
+    /**
+      * The ratio between physical pixels and device-independent pixels (DIPs) on the current device.
+      * @default window.devicePixelRatio
+      */
+    var devicePixelRatio: js.UndefOr[Double] = js.undefined
     
     /**
       * Defines what the component should display in case of an error.
@@ -142,11 +149,7 @@ object distPageMod {
       * Function called when page has been clicked.
       */
     var onClick: js.UndefOr[
-        js.Function2[
-          /* event */ MouseEvent[typings.std.Element, NativeMouseEvent], 
-          /* page */ PDFPageProxy, 
-          Unit
-        ]
+        js.Function2[/* event */ MouseEvent[Element, NativeMouseEvent], /* page */ PDFPageProxy, Unit]
       ] = js.undefined
     
     /**
@@ -167,7 +170,7 @@ object distPageMod {
     /**
       * Function called when text layer items are successfully loaded.
       */
-    var onGetTextSuccess: js.UndefOr[js.Function1[/* items */ js.Array[TextItem], Unit]] = js.undefined
+    var onGetTextSuccess: js.UndefOr[js.Function1[/* param0 */ Items, Unit]] = js.undefined
     
     /**
       * Function called in case of an error while loading the page.
@@ -188,6 +191,16 @@ object distPageMod {
       * Function called when the page is successfully rendered on the screen.
       */
     var onRenderSuccess: js.UndefOr[js.Function1[/* page */ PDFPageProxy, Unit]] = js.undefined
+    
+    /**
+      * Function called in case of an error while rendering the text layer.
+      */
+    var onRenderTextLayerError: js.UndefOr[js.Function1[/* error */ js.Error, Unit]] = js.undefined
+    
+    /**
+      * Function called when the text layer is successfully rendered on the screen.
+      */
+    var onRenderTextLayerSuccess: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Defines which page from PDF file should be displayed.
@@ -272,13 +285,17 @@ object distPageMod {
       
       inline def setClassNameVarargs(value: String*): Self = StObject.set(x, "className", js.Array(value*))
       
-      inline def setCustomTextRenderer(value: /* layer */ TextLayerItemInternal => Element): Self = StObject.set(x, "customTextRenderer", js.Any.fromFunction1(value))
+      inline def setCustomTextRenderer(value: /* layer */ TextLayerItemInternal => String): Self = StObject.set(x, "customTextRenderer", js.Any.fromFunction1(value))
       
       inline def setCustomTextRendererUndefined: Self = StObject.set(x, "customTextRenderer", js.undefined)
       
+      inline def setDevicePixelRatio(value: Double): Self = StObject.set(x, "devicePixelRatio", value.asInstanceOf[js.Any])
+      
+      inline def setDevicePixelRatioUndefined: Self = StObject.set(x, "devicePixelRatio", js.undefined)
+      
       inline def setError(value: String | ReactElement | RenderFunction): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      inline def setErrorFunction0(value: () => Element): Self = StObject.set(x, "error", js.Any.fromFunction0(value))
+      inline def setErrorFunction0(value: () => typings.react.mod.global.JSX.Element): Self = StObject.set(x, "error", js.Any.fromFunction0(value))
       
       inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
@@ -296,19 +313,17 @@ object distPageMod {
       
       inline def setLoading(value: String | ReactElement | RenderFunction): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
       
-      inline def setLoadingFunction0(value: () => Element): Self = StObject.set(x, "loading", js.Any.fromFunction0(value))
+      inline def setLoadingFunction0(value: () => typings.react.mod.global.JSX.Element): Self = StObject.set(x, "loading", js.Any.fromFunction0(value))
       
       inline def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
       
       inline def setNoData(value: String | ReactElement | RenderFunction): Self = StObject.set(x, "noData", value.asInstanceOf[js.Any])
       
-      inline def setNoDataFunction0(value: () => Element): Self = StObject.set(x, "noData", js.Any.fromFunction0(value))
+      inline def setNoDataFunction0(value: () => typings.react.mod.global.JSX.Element): Self = StObject.set(x, "noData", js.Any.fromFunction0(value))
       
       inline def setNoDataUndefined: Self = StObject.set(x, "noData", js.undefined)
       
-      inline def setOnClick(
-        value: (/* event */ MouseEvent[typings.std.Element, NativeMouseEvent], /* page */ PDFPageProxy) => Unit
-      ): Self = StObject.set(x, "onClick", js.Any.fromFunction2(value))
+      inline def setOnClick(value: (/* event */ MouseEvent[Element, NativeMouseEvent], /* page */ PDFPageProxy) => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction2(value))
       
       inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
@@ -324,7 +339,7 @@ object distPageMod {
       
       inline def setOnGetTextErrorUndefined: Self = StObject.set(x, "onGetTextError", js.undefined)
       
-      inline def setOnGetTextSuccess(value: /* items */ js.Array[TextItem] => Unit): Self = StObject.set(x, "onGetTextSuccess", js.Any.fromFunction1(value))
+      inline def setOnGetTextSuccess(value: /* param0 */ Items => Unit): Self = StObject.set(x, "onGetTextSuccess", js.Any.fromFunction1(value))
       
       inline def setOnGetTextSuccessUndefined: Self = StObject.set(x, "onGetTextSuccess", js.undefined)
       
@@ -343,6 +358,14 @@ object distPageMod {
       inline def setOnRenderSuccess(value: /* page */ PDFPageProxy => Unit): Self = StObject.set(x, "onRenderSuccess", js.Any.fromFunction1(value))
       
       inline def setOnRenderSuccessUndefined: Self = StObject.set(x, "onRenderSuccess", js.undefined)
+      
+      inline def setOnRenderTextLayerError(value: /* error */ js.Error => Unit): Self = StObject.set(x, "onRenderTextLayerError", js.Any.fromFunction1(value))
+      
+      inline def setOnRenderTextLayerErrorUndefined: Self = StObject.set(x, "onRenderTextLayerError", js.undefined)
+      
+      inline def setOnRenderTextLayerSuccess(value: () => Unit): Self = StObject.set(x, "onRenderTextLayerSuccess", js.Any.fromFunction0(value))
+      
+      inline def setOnRenderTextLayerSuccessUndefined: Self = StObject.set(x, "onRenderTextLayerSuccess", js.undefined)
       
       inline def setPageIndex(value: Double): Self = StObject.set(x, "pageIndex", value.asInstanceOf[js.Any])
       
@@ -382,7 +405,7 @@ object distPageMod {
     }
   }
   
-  type RenderFunction = js.Function0[Element]
+  type RenderFunction = js.Function0[typings.react.mod.global.JSX.Element]
   
   trait TextItem extends StObject {
     

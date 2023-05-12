@@ -1,6 +1,7 @@
 package typings.openui5
 
 import typings.openui5.anon.Origin
+import typings.openui5.anon.Reject
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapMLibraryMod.DialogType
 import typings.openui5.sapMLibraryMod.IBar
@@ -138,6 +139,8 @@ object sapMDialogMod {
        with PopupInterface {
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Returns the custom header instance when the `customHeader` aggregation is set. Otherwise, it returns
       * the internal managed header instance. This method can be called within composite controls which use `sap.m.Dialog`
       * inside.
@@ -505,6 +508,15 @@ object sapMDialogMod {
     def destroyEndButton(): this.type = js.native
     
     /**
+      * @SINCE 1.110
+      *
+      * Destroys the footer in the aggregation {@link #getFooter footer}.
+      *
+      * @returns Reference to `this` in order to allow method chaining
+      */
+    def destroyFooter(): this.type = js.native
+    
+    /**
       * @SINCE 1.12.2
       *
       * Destroys the subHeader in the aggregation {@link #getSubHeader subHeader}.
@@ -610,6 +622,8 @@ object sapMDialogMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:afterClose afterClose} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -621,6 +635,8 @@ object sapMDialogMod {
     mParameters: Origin): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:afterOpen afterOpen} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -632,6 +648,8 @@ object sapMDialogMod {
     mParameters: js.Object): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:beforeClose beforeClose} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -643,6 +661,8 @@ object sapMDialogMod {
     mParameters: Origin): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:beforeOpen beforeOpen} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -690,7 +710,7 @@ object sapMDialogMod {
       * Buttons can be added to the footer area of the Dialog through this aggregation. When this aggregation
       * is set, any change to the `beginButton` and `endButton` has no effect anymore. Buttons which are inside
       * this aggregation are aligned at the right side (left side in RTL mode) of the footer instead of in the
-      * middle of the footer.
+      * middle of the footer. The buttons aggregation can not be used together with the footer aggregation.
       */
     def getButtons(): js.Array[typings.openui5.sapMButtonMod.default] = js.native
     
@@ -751,6 +771,7 @@ object sapMDialogMod {
       *
       * When it is set, the `icon`, `title` and `showHeader` properties are ignored. Only the `customHeader`
       * is shown as the header of the Dialog.
+      * **Note:** To improve accessibility, titles with heading level `H1` should be used inside the custom header.
       */
     def getCustomHeader(): IBar = js.native
     
@@ -787,18 +808,26 @@ object sapMDialogMod {
     def getEndButton(): typings.openui5.sapMButtonMod.default = js.native
     
     /**
-      * @SINCE 1.44
-      *
       * Gets current value of property {@link #getEscapeHandler escapeHandler}.
       *
       * This property expects a function with one parameter of type Promise. In the function, you should call
-      * either `resolve()` or `reject()` on the Promise object.
-      *  The function allows you to define custom behavior which will be executed when the Escape key is pressed.
-      * By default, when the Escape key is pressed, the Dialog is immediately closed.
+      * either `resolve()` or `reject()` on the Promise object. The function allows you to define custom behavior
+      * which will be executed when the Escape key is pressed. By default, when the Escape key is pressed, the
+      * dialog is immediately closed.
       *
       * @returns Value of property `escapeHandler`
       */
-    def getEscapeHandler(): js.Function = js.native
+    def getEscapeHandler(): (js.Function1[/* p1 */ Reject, Unit]) | Null = js.native
+    
+    /**
+      * @SINCE 1.110
+      *
+      * Gets content of aggregation {@link #getFooter footer}.
+      *
+      * The footer of this dialog. It is always located at the bottom of the dialog. The footer aggregation can
+      * not be used together with the buttons aggregation.
+      */
+    def getFooter(): typings.openui5.sapMToolbarMod.default = js.native
     
     /**
       * @SINCE 1.15.1
@@ -873,7 +902,7 @@ object sapMDialogMod {
       *
       * Gets current value of property {@link #getShowHeader showHeader}.
       *
-      * Determines whether the header is shown inside the Dialog. If this property is set to `true`, the `text`
+      * Determines whether the header is shown inside the Dialog. If this property is set to `false`, the `text`
       * and `icon` properties are ignored. This property has a default value `true`.
       *
       * Default value is `true`.
@@ -944,6 +973,8 @@ object sapMDialogMod {
       * Gets current value of property {@link #getTitle title}.
       *
       * Title text appears in the Dialog header.
+      * **Note:** The heading level of the Dialog is `H1`. Headings in the Dialog content should start with `H2`
+      * heading level.
       *
       * @returns Value of property `title`
       */
@@ -1308,24 +1339,36 @@ object sapMDialogMod {
     oEndButton: typings.openui5.sapMButtonMod.default): this.type = js.native
     
     /**
-      * @SINCE 1.44
-      *
-      * Sets a new value for property {@link #getEscapeHandler escapeHandler}.
+      * Sets a new value for property {@link #setEscapeHandler escapeHandler}.
       *
       * This property expects a function with one parameter of type Promise. In the function, you should call
-      * either `resolve()` or `reject()` on the Promise object.
-      *  The function allows you to define custom behavior which will be executed when the Escape key is pressed.
-      * By default, when the Escape key is pressed, the Dialog is immediately closed.
+      * either `resolve()` or `reject()` on the Promise object. The function allows you to define custom behavior
+      * which will be executed when the Escape key is pressed. By default, when the Escape key is pressed, the
+      * dialog is immediately closed.
       *
       * When called with a value of `null` or `undefined`, the default value of the property will be restored.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
     def setEscapeHandler(): this.type = js.native
-    def setEscapeHandler(/**
+    def setEscapeHandler(
+      /**
       * New value for property `escapeHandler`
       */
-    fnEscapeHandler: js.Function): this.type = js.native
+    fnEscapeHandler: js.Function1[/* p1 */ Reject, Unit]
+    ): this.type = js.native
+    
+    /**
+      * @SINCE 1.110
+      *
+      * Sets the aggregated {@link #getFooter footer}.
+      *
+      * @returns Reference to `this` in order to allow method chaining
+      */
+    def setFooter(/**
+      * The footer to set
+      */
+    oFooter: typings.openui5.sapMToolbarMod.default): this.type = js.native
     
     /**
       * @SINCE 1.15.1
@@ -1460,7 +1503,7 @@ object sapMDialogMod {
       *
       * Sets a new value for property {@link #getShowHeader showHeader}.
       *
-      * Determines whether the header is shown inside the Dialog. If this property is set to `true`, the `text`
+      * Determines whether the header is shown inside the Dialog. If this property is set to `false`, the `text`
       * and `icon` properties are ignored. This property has a default value `true`.
       *
       * When called with a value of `null` or `undefined`, the default value of the property will be restored.
@@ -1562,6 +1605,8 @@ object sapMDialogMod {
       * Sets a new value for property {@link #getTitle title}.
       *
       * Title text appears in the Dialog header.
+      * **Note:** The heading level of the Dialog is `H1`. Headings in the Dialog content should start with `H2`
+      * heading level.
       *
       * When called with a value of `null` or `undefined`, the default value of the property will be restored.
       *
@@ -1702,7 +1747,7 @@ object sapMDialogMod {
       * Buttons can be added to the footer area of the Dialog through this aggregation. When this aggregation
       * is set, any change to the `beginButton` and `endButton` has no effect anymore. Buttons which are inside
       * this aggregation are aligned at the right side (left side in RTL mode) of the footer instead of in the
-      * middle of the footer.
+      * middle of the footer. The buttons aggregation can not be used together with the footer aggregation.
       */
     var buttons: js.UndefOr[
         js.Array[typings.openui5.sapMButtonMod.default] | typings.openui5.sapMButtonMod.default | AggregationBindingInfo | (/* template literal string: {${string}} */ String)
@@ -1755,6 +1800,7 @@ object sapMDialogMod {
       *
       * When it is set, the `icon`, `title` and `showHeader` properties are ignored. Only the `customHeader`
       * is shown as the header of the Dialog.
+      * **Note:** To improve accessibility, titles with heading level `H1` should be used inside the custom header.
       */
     var customHeader: js.UndefOr[IBar] = js.undefined
     
@@ -1795,6 +1841,14 @@ object sapMDialogMod {
     var escapeHandler: js.UndefOr[
         js.Function | PropertyBindingInfo | (/* template literal string: {${string}} */ String)
       ] = js.undefined
+    
+    /**
+      * @SINCE 1.110
+      *
+      * The footer of this dialog. It is always located at the bottom of the dialog. The footer aggregation can
+      * not be used together with the buttons aggregation.
+      */
+    var footer: js.UndefOr[typings.openui5.sapMToolbarMod.default] = js.undefined
     
     /**
       * @SINCE 1.15.1
@@ -1861,7 +1915,7 @@ object sapMDialogMod {
     /**
       * @SINCE 1.15.1
       *
-      * Determines whether the header is shown inside the Dialog. If this property is set to `true`, the `text`
+      * Determines whether the header is shown inside the Dialog. If this property is set to `false`, the `text`
       * and `icon` properties are ignored. This property has a default value `true`.
       */
     var showHeader: js.UndefOr[
@@ -1914,6 +1968,8 @@ object sapMDialogMod {
     
     /**
       * Title text appears in the Dialog header.
+      * **Note:** The heading level of the Dialog is `H1`. Headings in the Dialog content should start with `H2`
+      * heading level.
       */
     var title: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
@@ -2033,6 +2089,10 @@ object sapMDialogMod {
       inline def setEscapeHandler(value: js.Function | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "escapeHandler", value.asInstanceOf[js.Any])
       
       inline def setEscapeHandlerUndefined: Self = StObject.set(x, "escapeHandler", js.undefined)
+      
+      inline def setFooter(value: typings.openui5.sapMToolbarMod.default): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
+      
+      inline def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
       
       inline def setHorizontalScrolling(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "horizontalScrolling", value.asInstanceOf[js.Any])
       

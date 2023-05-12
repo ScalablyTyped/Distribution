@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "it-reduce" : "2.0.0"
+      "it-reduce" : "3.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "it-reduce" : "2.0.0"
+      "it-reduce" : "3.0.2"
     }
   ],
   "compile-devDependencies" : [

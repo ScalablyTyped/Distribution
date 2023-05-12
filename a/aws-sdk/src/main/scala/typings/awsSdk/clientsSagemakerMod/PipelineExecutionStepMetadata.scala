@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PipelineExecutionStepMetadata extends StObject {
   
   /**
+    * The Amazon Resource Name (ARN) of the AutoML job that was run by this step.
+    */
+  var AutoMLJob: js.UndefOr[AutoMLJobStepMetadata] = js.undefined
+  
+  /**
     * The URL of the Amazon SQS queue used by this step execution, the pipeline generated token, and a list of output parameters.
     */
   var Callback: js.UndefOr[CallbackStepMetadata] = js.undefined
@@ -22,7 +27,7 @@ trait PipelineExecutionStepMetadata extends StObject {
   var Condition: js.UndefOr[ConditionStepMetadata] = js.undefined
   
   /**
-    * The configurations and outcomes of an EMR step execution.
+    * The configurations and outcomes of an Amazon EMR step execution.
     */
   var EMR: js.UndefOr[EMRStepMetadata] = js.undefined
   
@@ -47,12 +52,12 @@ trait PipelineExecutionStepMetadata extends StObject {
   var ProcessingJob: js.UndefOr[ProcessingJobStepMetadata] = js.undefined
   
   /**
-    * The configurations and outcomes of the check step execution. This includes:    The type of the check conducted,   The Amazon S3 URIs of baseline constraints and statistics files to be used for the drift check.   The Amazon S3 URIs of newly calculated baseline constraints and statistics.   The model package group name provided.   The Amazon S3 URI of the violation report if violations detected.   The Amazon Resource Name (ARN) of check processing job initiated by the step execution.   The boolean flags indicating if the drift check is skipped.   If step property BaselineUsedForDriftCheck is set the same as CalculatedBaseline.  
+    * The configurations and outcomes of the check step execution. This includes:    The type of the check conducted.   The Amazon S3 URIs of baseline constraints and statistics files to be used for the drift check.   The Amazon S3 URIs of newly calculated baseline constraints and statistics.   The model package group name provided.   The Amazon S3 URI of the violation report if violations detected.   The Amazon Resource Name (ARN) of check processing job initiated by the step execution.   The Boolean flags indicating if the drift check is skipped.   If step property BaselineUsedForDriftCheck is set the same as CalculatedBaseline.  
     */
   var QualityCheck: js.UndefOr[QualityCheckStepMetadata] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the model package the model was registered to by this step execution.
+    * The Amazon Resource Name (ARN) of the model package that the model was registered to by this step execution.
     */
   var RegisterModel: js.UndefOr[RegisterModelStepMetadata] = js.undefined
   
@@ -80,6 +85,10 @@ object PipelineExecutionStepMetadata {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: PipelineExecutionStepMetadata] (val x: Self) extends AnyVal {
+    
+    inline def setAutoMLJob(value: AutoMLJobStepMetadata): Self = StObject.set(x, "AutoMLJob", value.asInstanceOf[js.Any])
+    
+    inline def setAutoMLJobUndefined: Self = StObject.set(x, "AutoMLJob", js.undefined)
     
     inline def setCallback(value: CallbackStepMetadata): Self = StObject.set(x, "Callback", value.asInstanceOf[js.Any])
     

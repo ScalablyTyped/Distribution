@@ -9,12 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object libLiteralMod {
   
-  // tslint:disable-next-line:no-unnecessary-class
-  @JSImport("rdf-ext/lib/Literal", JSImport.Namespace)
+  @JSImport("rdf-ext/lib/Literal", JSImport.Default)
   @js.native
-  open class ^ protected ()
-    extends StObject
-       with LiteralExt {
+  open class default protected () extends LiteralExt {
     def this(value: String) = this()
     def this(value: String, language: String) = this()
     def this(value: String, language: String, datatype: NamedNode[String]) = this()
@@ -22,11 +19,16 @@ object libLiteralMod {
     def this(value: String, language: Unit, datatype: NamedNode[String]) = this()
   }
   
-  // tslint:disable-next-line:no-unnecessary-class
+  @JSImport("rdf-ext/lib/Literal", "LiteralExt")
   @js.native
-  trait LiteralExt
+  open class LiteralExt protected ()
     extends StObject
        with Literal {
+    def this(value: String) = this()
+    def this(value: String, language: String) = this()
+    def this(value: String, language: String, datatype: NamedNode[String]) = this()
+    def this(value: String, language: Null, datatype: NamedNode[String]) = this()
+    def this(value: String, language: Unit, datatype: NamedNode[String]) = this()
     
     def toCanonical(): String = js.native
     

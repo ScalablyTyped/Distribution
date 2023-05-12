@@ -20,7 +20,7 @@ object distDeclarationsSrcComponentsPlaceholderMod {
   
   inline def default[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](props: PlaceholderProps[Option, IsMulti, Group]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def placeholderCSS[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](param0: PlaceholderProps[Option, IsMulti, Group]): CSSObjectWithLabel = ^.asInstanceOf[js.Dynamic].applyDynamic("placeholderCSS")(param0.asInstanceOf[js.Any]).asInstanceOf[CSSObjectWithLabel]
+  inline def placeholderCSS[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](param0: PlaceholderProps[Option, IsMulti, Group], unstyled: Boolean): CSSObjectWithLabel = (^.asInstanceOf[js.Dynamic].applyDynamic("placeholderCSS")(param0.asInstanceOf[js.Any], unstyled.asInstanceOf[js.Any])).asInstanceOf[CSSObjectWithLabel]
   
   @js.native
   trait PlaceholderProps[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */]

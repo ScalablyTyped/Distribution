@@ -16,7 +16,7 @@ object libIconsSkypeOutlinedMod extends Shortcut {
   @js.native
   trait SkypeOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_SkypeOutlinedIconType: String = js.native

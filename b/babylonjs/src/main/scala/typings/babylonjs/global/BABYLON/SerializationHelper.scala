@@ -1,5 +1,6 @@
 package typings.babylonjs.global.BABYLON
 
+import typings.babylonjs.BABYLON.CopySourceOptions
 import typings.babylonjs.BABYLON.IAnimatable
 import typings.babylonjs.BABYLON.Nullable
 import org.scalablytyped.runtime.StObject
@@ -40,6 +41,7 @@ object SerializationHelper {
     * @returns the cloned object
     */
   inline def Clone[T](creationFunction: js.Function0[T], source: T): T = (^.asInstanceOf[js.Dynamic].applyDynamic("Clone")(creationFunction.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def Clone[T](creationFunction: js.Function0[T], source: T, options: CopySourceOptions): T = (^.asInstanceOf[js.Dynamic].applyDynamic("Clone")(creationFunction.asInstanceOf[js.Any], source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T]
   
   /**
     * Instanciates a new object based on a source one (some data will be shared between both object)
@@ -64,6 +66,20 @@ object SerializationHelper {
     scene: Nullable[typings.babylonjs.BABYLON.Scene],
     rootUrl: Nullable[String]
   ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(creationFunction.asInstanceOf[js.Any], source.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[T]
+  
+  /**
+    * Given a source json and a destination object in a scene, this function will parse the source and will try to apply its content to the destination object
+    * @param source the source json data
+    * @param destination the destination object
+    * @param scene the scene where the object is
+    * @param rootUrl root url to use to load assets
+    */
+  inline def ParseProperties(
+    source: Any,
+    destination: Any,
+    scene: Nullable[typings.babylonjs.BABYLON.Scene],
+    rootUrl: Nullable[String]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseProperties")(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Static function used to serialized a specific entity

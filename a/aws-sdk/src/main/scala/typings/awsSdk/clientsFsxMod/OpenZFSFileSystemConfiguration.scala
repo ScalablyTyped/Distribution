@@ -21,7 +21,7 @@ trait OpenZFSFileSystemConfiguration extends StObject {
   var DailyAutomaticBackupStartTime: js.UndefOr[DailyTime] = js.undefined
   
   /**
-    * Specifies the file-system deployment type. Amazon FSx for OpenZFS supports SINGLE_AZ_1. SINGLE_AZ_1 is a file system configured for a single Availability Zone (AZ) of redundancy. 
+    * Specifies the file-system deployment type. Amazon FSx for OpenZFS supports&#x2028; SINGLE_AZ_1 and SINGLE_AZ_2.
     */
   var DeploymentType: js.UndefOr[OpenZFSDeploymentType] = js.undefined
   
@@ -33,7 +33,7 @@ trait OpenZFSFileSystemConfiguration extends StObject {
   var RootVolumeId: js.UndefOr[VolumeId] = js.undefined
   
   /**
-    * The throughput of an Amazon FSx file system, measured in megabytes per second (MBps). Valid values are 64, 128, 256, 512, 1024, 2048, 3072, or 4096 MB/s.
+    * The throughput of an Amazon FSx file system, measured in megabytes per second (MBps).
     */
   var ThroughputCapacity: js.UndefOr[MegabytesPerSecond] = js.undefined
   

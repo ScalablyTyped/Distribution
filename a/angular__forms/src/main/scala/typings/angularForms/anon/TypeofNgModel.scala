@@ -2,6 +2,7 @@ package typings.angularForms.anon
 
 import org.scalablytyped.runtime.Instantiable4
 import org.scalablytyped.runtime.Instantiable5
+import org.scalablytyped.runtime.Instantiable6
 import typings.angularCore.mod.ChangeDetectorRef
 import typings.angularCore.mod.ɵɵDirectiveDeclaration
 import typings.angularCore.mod.ɵɵFactoryDeclaration
@@ -12,6 +13,7 @@ import typings.angularForms.mod.AsyncValidatorFn
 import typings.angularForms.mod.ControlContainer
 import typings.angularForms.mod.ControlValueAccessor
 import typings.angularForms.mod.NgModel
+import typings.angularForms.mod.SetDisabledStateOption
 import typings.angularForms.mod.Validator
 import typings.angularForms.mod.ValidatorFn
 import org.scalablytyped.runtime.StObject
@@ -35,6 +37,15 @@ trait TypeofNgModel
       /* valueAccessors */ js.Array[ControlValueAccessor], 
       /* _changeDetectorRef */ ChangeDetectorRef, 
       NgModel
+    ]
+     with Instantiable6[
+      /* parent */ ControlContainer, 
+      /* validators */ js.Array[Validator | ValidatorFn], 
+      /* asyncValidators */ js.Array[AsyncValidator | AsyncValidatorFn], 
+      /* valueAccessors */ js.Array[ControlValueAccessor], 
+      (/* _changeDetectorRef */ ChangeDetectorRef) | (/* _changeDetectorRef */ Null) | (/* _changeDetectorRef */ Unit), 
+      /* callSetDisabledState */ SetDisabledStateOption, 
+      NgModel
     ] {
   
   /** @nodoc */
@@ -48,8 +59,9 @@ trait TypeofNgModel
     Update, 
     scala.Nothing, 
     scala.Nothing, 
-    `false`
+    `false`, 
+    scala.Nothing
   ] = js.native
   
-  var ɵfac: ɵɵFactoryDeclaration[NgModel, js.Tuple5[HostOptional, Self, Self, Self, Optional]] = js.native
+  var ɵfac: ɵɵFactoryDeclaration[NgModel, js.Tuple6[HostOptional, Self, Self, Self, Optional, Optional]] = js.native
 }

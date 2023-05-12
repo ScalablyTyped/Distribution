@@ -1,7 +1,7 @@
 package typings.gestalt.anon
 
 import typings.gestalt.gestaltStrings.dot
-import typings.react.mod.ReactNode
+import typings.gestalt.mod.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +16,7 @@ trait Id extends StObject {
   
   var ref: js.UndefOr[Current] = js.undefined
   
-  var text: ReactNode
+  var text: Node
 }
 object Id {
   
@@ -42,7 +42,7 @@ object Id {
     
     inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
     
-    inline def setText(value: ReactNode): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: Node): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }

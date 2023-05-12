@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object Pano {
   
   /**
-    * @property alignment {H.ui.LayoutAlignment=} - the layout alignment which should be applied to this control, default is H.ui.LayoutAlignment.RIGHT_BOTTOM
-    * @property mapTypes {H.service.MapTypes} - The map types to use
+    * alignment {H.ui.LayoutAlignment=} - the layout alignment which should be applied to this control, default is H.ui.LayoutAlignment.RIGHT_BOTTOM
+    * mapTypes {H.service.MapTypes} - The map types to use
     */
   trait Options extends StObject {
     

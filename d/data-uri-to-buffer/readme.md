@@ -1,7 +1,7 @@
 
 # Scala.js typings for data-uri-to-buffer
 
-Typings are for version 4.0.0
+Typings are for version 5.0.1
 
 ## Library description:
 Generate a Buffer instance from a Data URI string

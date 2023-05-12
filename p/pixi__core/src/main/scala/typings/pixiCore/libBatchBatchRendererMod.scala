@@ -34,13 +34,11 @@ object libBatchBatchRendererMod {
     def this(renderer: Renderer) = this()
     
     /**
-      * Maximum number of textures that can be uploaded to
-      * the GPU under the current context. It is initialized
-      * properly in `this.contextChange`.
-      * @see PIXI.BatchRenderer#contextChange
+      * @see PIXI.BatchRenderer#maxTextures
+      * @deprecated since 7.1.0
       * @readonly
       */
-    var MAX_TEXTURES: Double = js.native
+    def MAX_TEXTURES: Double = js.native
     
     /**
       * Pool of `ViewableBuffer` objects that are sorted in
@@ -79,7 +77,7 @@ object libBatchBatchRendererMod {
     /**
       * A flush may occur multiple times in a single
       * frame. On iOS devices or when
-      * `settings.CAN_UPLOAD_SAME_BUFFER` is false, the
+      * `BatchRenderer.canUploadSameBuffer` is false, the
       * batch renderer does not upload data to the same
       * `WebGLBuffer` for performance reasons.
       *
@@ -160,7 +158,7 @@ object libBatchBatchRendererMod {
     /**
       * Handles the `contextChange` signal.
       *
-      * It calculates `this.MAX_TEXTURES` and allocating the packed-geometry object pool.
+      * It calculates `this.maxTextures` and allocating the packed-geometry object pool.
       */
     def contextChange(): Unit = js.native
     
@@ -195,6 +193,15 @@ object libBatchBatchRendererMod {
     
     /** Makes sure that static and dynamic flush pooled objects have correct dimensions. */
     def initFlushBuffers(): Unit = js.native
+    
+    /**
+      * Maximum number of textures that can be uploaded to
+      * the GPU under the current context. It is initialized
+      * properly in `this.contextChange`.
+      * @see PIXI.BatchRenderer#contextChange
+      * @readonly
+      */
+    var maxTextures: Double = js.native
     
     /** Handles the `prerender` signal. It ensures that flushes start from the first geometry object again. */
     def onPrerender(): Unit = js.native
@@ -252,7 +259,7 @@ object libBatchBatchRendererMod {
     /**
       * The number of bufferable objects before a flush
       * occurs automatically.
-      * @default settings.SPRITE_BATCH_SIZE * 4
+      * @default PIXI.BatchRenderer.defaultBatchSize * 4
       */
     var size: Double = js.native
     
@@ -282,6 +289,18 @@ object libBatchBatchRendererMod {
     @js.native
     val ^ : js.Any = js.native
     
+    /** @ignore */
+    @JSImport("@pixi/core/lib/batch/BatchRenderer", "BatchRenderer._canUploadSameBuffer")
+    @js.native
+    def _canUploadSameBuffer: Any = js.native
+    inline def _canUploadSameBuffer_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_canUploadSameBuffer")(x.asInstanceOf[js.Any])
+    
+    /** @ignore */
+    @JSImport("@pixi/core/lib/batch/BatchRenderer", "BatchRenderer._defaultMaxTextures")
+    @js.native
+    def _defaultMaxTextures: Any = js.native
+    inline def _defaultMaxTextures_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_defaultMaxTextures")(x.asInstanceOf[js.Any])
+    
     /**
       * Pool of `BatchDrawCall` objects that `flush` used
       * to create "batches" of the objects being rendered.
@@ -307,6 +326,17 @@ object libBatchBatchRendererMod {
     @js.native
     def _textureArrayPool: js.Array[BatchTextureArray] = js.native
     inline def _textureArrayPool_=(x: js.Array[BatchTextureArray]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_textureArrayPool")(x.asInstanceOf[js.Any])
+    
+    /**
+      * The default sprite batch size.
+      *
+      * The default aims to balance desktop and mobile devices.
+      * @static
+      */
+    @JSImport("@pixi/core/lib/batch/BatchRenderer", "BatchRenderer.defaultBatchSize")
+    @js.native
+    def defaultBatchSize: Double = js.native
+    inline def defaultBatchSize_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultBatchSize")(x.asInstanceOf[js.Any])
     
     /** @ignore */
     @JSImport("@pixi/core/lib/batch/BatchRenderer", "BatchRenderer.extension")

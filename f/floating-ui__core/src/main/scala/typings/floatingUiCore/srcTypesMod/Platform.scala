@@ -2,6 +2,7 @@ package typings.floatingUiCore.srcTypesMod
 
 import typings.floatingUiCore.anon.Floating
 import typings.floatingUiCore.anon.OffsetParent
+import typings.floatingUiCore.anon.X
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,6 +22,8 @@ trait Platform extends StObject {
   def getElementRects(args: Floating): Promisable[ElementRects]
   
   var getOffsetParent: js.UndefOr[js.Function1[/* element */ Any, Promisable[Any]]] = js.undefined
+  
+  var getScale: js.UndefOr[js.Function1[/* element */ Any, Promisable[X]]] = js.undefined
   
   var isElement: js.UndefOr[js.Function1[/* value */ Any, Promisable[Boolean]]] = js.undefined
   
@@ -61,6 +64,10 @@ object Platform {
     inline def setGetOffsetParent(value: /* element */ Any => Promisable[Any]): Self = StObject.set(x, "getOffsetParent", js.Any.fromFunction1(value))
     
     inline def setGetOffsetParentUndefined: Self = StObject.set(x, "getOffsetParent", js.undefined)
+    
+    inline def setGetScale(value: /* element */ Any => Promisable[X]): Self = StObject.set(x, "getScale", js.Any.fromFunction1(value))
+    
+    inline def setGetScaleUndefined: Self = StObject.set(x, "getScale", js.undefined)
     
     inline def setIsElement(value: /* value */ Any => Promisable[Boolean]): Self = StObject.set(x, "isElement", js.Any.fromFunction1(value))
     

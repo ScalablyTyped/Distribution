@@ -22,6 +22,13 @@ type ActiveDirectoryDnsIpAddressList = js.Array[ActiveDirectoryDnsIpAddress]
 
 type ActiveDirectoryOrganizationalUnitDistinguishedName = java.lang.String
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.DEACTIVATED
+  - typings.awsSdk.awsSdkStrings.ACTIVATED
+  - java.lang.String
+*/
+type AutomaticTerminationMode = _AutomaticTerminationMode | java.lang.String
+
 type ClientToken = java.lang.String
 
 type DirectoryId = java.lang.String
@@ -165,6 +172,22 @@ type SecurityGroupId = java.lang.String
 
 type SensitiveString = java.lang.String
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.AUTOMATIC
+  - typings.awsSdk.awsSdkStrings.DEACTIVATED
+  - java.lang.String
+*/
+type SessionBackupMode = _SessionBackupMode | java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.DEACTIVATED
+  - typings.awsSdk.awsSdkStrings.ACTIVATED
+  - java.lang.String
+*/
+type SessionPersistenceMode = _SessionPersistenceMode | java.lang.String
+
+type StreamConfigurationMaxBackupsToRetain = Double
+
 type StreamConfigurationMaxSessionLengthInMinutes = Double
 
 type StreamConfigurationMaxStoppedSessionLengthInMinutes = Double
@@ -238,6 +261,8 @@ type StreamingImageStatusCode = _StreamingImageStatusCode | java.lang.String
 type StreamingInstanceType = _StreamingInstanceType | java.lang.String
 
 type StreamingInstanceTypeList = js.Array[StreamingInstanceType]
+
+type StreamingSessionBackupList = js.Array[StreamingSessionBackup]
 
 type StreamingSessionId = java.lang.String
 
@@ -443,6 +468,7 @@ type StudioState = _StudioState | java.lang.String
   - typings.awsSdk.awsSdkStrings.ENCRYPTION_KEY_ACCESS_DENIED
   - typings.awsSdk.awsSdkStrings.AWS_SSO_CONFIGURATION_REPAIRED
   - typings.awsSdk.awsSdkStrings.AWS_SSO_CONFIGURATION_REPAIR_IN_PROGRESS
+  - typings.awsSdk.awsSdkStrings.AWS_STS_REGION_DISABLED
   - java.lang.String
 */
 type StudioStatusCode = _StudioStatusCode | java.lang.String
@@ -452,6 +478,19 @@ type Tags = StringDictionary[String]
 type Timestamp = js.Date
 
 type ValidationResults = js.Array[ValidationResult]
+
+type VolumeIops = Double
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.RETAIN
+  - typings.awsSdk.awsSdkStrings.DELETE
+  - java.lang.String
+*/
+type VolumeRetentionMode = _VolumeRetentionMode | java.lang.String
+
+type VolumeSizeInGiB = Double
+
+type VolumeThroughputInMiBs = Double
 
 type WindowsMountDrive = java.lang.String
 

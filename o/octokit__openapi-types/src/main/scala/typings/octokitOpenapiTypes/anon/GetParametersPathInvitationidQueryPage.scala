@@ -6,7 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GetParametersPathInvitationidQueryPage extends StObject {
   
-  /** List all teams associated with an invitation. In order to see invitations in an organization, the authenticated user must be an organization owner. */
+  /**
+    * List organization invitation teams
+    * @description List all teams associated with an invitation. In order to see invitations in an organization, the authenticated user must be an organization owner.
+    */
   var get: ParametersPathInvitationidQueryPage
 }
 object GetParametersPathInvitationidQueryPage {

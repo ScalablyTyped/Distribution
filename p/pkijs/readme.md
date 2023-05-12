@@ -1,7 +1,7 @@
 
 # Scala.js typings for pkijs
 
-Typings are for version 3.0.8
+Typings are for version 3.0.14
 
 ## Library description:
 Public Key Infrastructure (PKI) is the basis of how identity and key management is performed on the web today. PKIjs is a pure JavaScript library implementing the formats that are used in PKI applications. It is built on WebCrypto and aspires to make it p

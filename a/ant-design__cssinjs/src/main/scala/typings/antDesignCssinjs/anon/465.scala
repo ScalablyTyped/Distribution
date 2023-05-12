@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.ImageRendering
+import typings.csstype.mod.Property.ScrollBehavior
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,11 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `465` extends StObject {
   
   var value: js.UndefOr[
-    ImageRendering | (js.Array[
+    ScrollBehavior | (js.Array[
       (Extract[
-        js.UndefOr[ImageRendering | js.Array[NonNullable[js.UndefOr[ImageRendering]]]], 
+        js.UndefOr[ScrollBehavior | js.Array[NonNullable[js.UndefOr[ScrollBehavior]]]], 
         String
-      ]) | NonNullable[js.UndefOr[ImageRendering]]
+      ]) | NonNullable[js.UndefOr[ScrollBehavior]]
     ])
   ] = js.native
 }

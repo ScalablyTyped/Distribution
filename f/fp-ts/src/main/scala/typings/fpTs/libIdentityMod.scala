@@ -126,6 +126,9 @@ object libIdentityMod {
   
   inline def flap[A](a: A): js.Function1[/* fab */ js.Function1[/* a */ A, Any], Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("flap")(a.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fab */ js.Function1[/* a */ A, Any], Any]]
   
+  inline def flatMap[A, B](f: js.Function1[/* a */ A, Identity_[B]]): js.Function1[/* ma */ Identity_[A], Identity_[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatMap")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ Identity_[A], Identity_[B]]]
+  inline def flatMap[A, B](ma: Identity_[A], f: js.Function1[/* a */ A, Identity_[B]]): Identity_[B] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatMap")(ma.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[Identity_[B]]
+  
   inline def flatten[A](mma: Identity_[Identity_[A]]): Identity_[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(mma.asInstanceOf[js.Any]).asInstanceOf[Identity_[A]]
   
   inline def foldMap[M](M: Monoid[M]): js.Function1[/* f */ js.Function1[/* a */ Any, M], js.Function1[/* fa */ Identity_[Any], M]] = ^.asInstanceOf[js.Dynamic].applyDynamic("foldMap")(M.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* f */ js.Function1[/* a */ Any, M], js.Function1[/* fa */ Identity_[Any], M]]]

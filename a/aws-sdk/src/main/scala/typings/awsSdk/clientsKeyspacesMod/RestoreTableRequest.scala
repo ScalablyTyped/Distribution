@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RestoreTableRequest extends StObject {
   
   /**
-    * Specifies the read/write throughput capacity mode for the target table. The options are: • throughputMode:PAY_PER_REQUEST  • throughputMode:PROVISIONED - Provisioned capacity mode requires readCapacityUnits and writeCapacityUnits as input. The default is throughput_mode:PAY_PER_REQUEST. For more information, see Read/write capacity modes in the Amazon Keyspaces Developer Guide.
+    * Specifies the read/write throughput capacity mode for the target table. The options are:    throughputMode:PAY_PER_REQUEST     throughputMode:PROVISIONED - Provisioned capacity mode requires readCapacityUnits and writeCapacityUnits as input.   The default is throughput_mode:PAY_PER_REQUEST. For more information, see Read/write capacity modes in the Amazon Keyspaces Developer Guide.
     */
   var capacitySpecificationOverride: js.UndefOr[CapacitySpecification] = js.undefined
   
   /**
-    * Specifies the encryption settings for the target table. You can choose one of the following KMS key (KMS key): • type:AWS_OWNED_KMS_KEY - This key is owned by Amazon Keyspaces.  • type:CUSTOMER_MANAGED_KMS_KEY - This key is stored in your account and is created, owned, and managed by you. This option requires the kms_key_identifier of the KMS key in Amazon Resource Name (ARN) format as input.  The default is type:AWS_OWNED_KMS_KEY. For more information, see Encryption at rest in the Amazon Keyspaces Developer Guide.
+    * Specifies the encryption settings for the target table. You can choose one of the following KMS key (KMS key):    type:AWS_OWNED_KMS_KEY - This key is owned by Amazon Keyspaces.     type:CUSTOMER_MANAGED_KMS_KEY - This key is stored in your account and is created, owned, and managed by you. This option requires the kms_key_identifier of the KMS key in Amazon Resource Name (ARN) format as input.    The default is type:AWS_OWNED_KMS_KEY. For more information, see Encryption at rest in the Amazon Keyspaces Developer Guide.
     */
   var encryptionSpecificationOverride: js.UndefOr[EncryptionSpecification] = js.undefined
   
   /**
-    * Specifies the pointInTimeRecovery settings for the target table. The options are: • ENABLED  • DISABLED  If it's not specified, the default is DISABLED. For more information, see Point-in-time recovery in the Amazon Keyspaces Developer Guide.
+    * Specifies the pointInTimeRecovery settings for the target table. The options are:    status=ENABLED     status=DISABLED    If it's not specified, the default is status=DISABLED. For more information, see Point-in-time recovery in the Amazon Keyspaces Developer Guide.
     */
   var pointInTimeRecoveryOverride: js.UndefOr[PointInTimeRecovery] = js.undefined
   

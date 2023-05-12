@@ -22,7 +22,7 @@ trait ElasticsearchDestinationDescription extends StObject {
   var ClusterEndpoint: js.UndefOr[ElasticsearchClusterEndpoint] = js.undefined
   
   /**
-    * The ARN of the Amazon ES domain. For more information, see Amazon Resource Names (ARNs) and AWS Service Namespaces. Kinesis Data Firehose uses either ClusterEndpoint or DomainARN to send data to Amazon ES.
+    * The ARN of the Amazon ES domain. For more information, see Amazon Resource Names (ARNs) and Amazon Web Services Service Namespaces. Kinesis Data Firehose uses either ClusterEndpoint or DomainARN to send data to Amazon ES.
     */
   var DomainARN: js.UndefOr[ElasticsearchDomainARN] = js.undefined
   
@@ -47,7 +47,7 @@ trait ElasticsearchDestinationDescription extends StObject {
   var RetryOptions: js.UndefOr[ElasticsearchRetryOptions] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the AWS credentials. For more information, see Amazon Resource Names (ARNs) and AWS Service Namespaces.
+    * The Amazon Resource Name (ARN) of the Amazon Web Services credentials. For more information, see Amazon Resource Names (ARNs) and Amazon Web Services Service Namespaces.
     */
   var RoleARN: js.UndefOr[typings.awsSdk.clientsFirehoseMod.RoleARN] = js.undefined
   
@@ -62,7 +62,7 @@ trait ElasticsearchDestinationDescription extends StObject {
   var S3DestinationDescription: js.UndefOr[typings.awsSdk.clientsFirehoseMod.S3DestinationDescription] = js.undefined
   
   /**
-    * The Elasticsearch type name. This applies to Elasticsearch 6.x and lower versions. For Elasticsearch 7.x, there's no value for TypeName.
+    * The Elasticsearch type name. This applies to Elasticsearch 6.x and lower versions. For Elasticsearch 7.x and OpenSearch Service 1.x, there's no value for TypeName.
     */
   var TypeName: js.UndefOr[ElasticsearchTypeName] = js.undefined
   

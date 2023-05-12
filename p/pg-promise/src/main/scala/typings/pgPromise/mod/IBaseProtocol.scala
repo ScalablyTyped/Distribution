@@ -110,14 +110,14 @@ trait IBaseProtocol[Ext] extends StObject {
   def query[T](query: QueryParam, values: Unit, qrm: queryResult): js.Promise[T] = js.native
   
   // API: http://vitaly-t.github.io/pg-promise/Database.html#result
-  def result[T](query: QueryParam): js.Promise[T] = js.native
-  def result[T](query: QueryParam, values: Any): js.Promise[T] = js.native
-  def result[T](query: QueryParam, values: Any, cb: js.Function1[/* value */ IResultExt[Any], T]): js.Promise[T] = js.native
-  def result[T](query: QueryParam, values: Any, cb: js.Function1[/* value */ IResultExt[Any], T], thisArg: Any): js.Promise[T] = js.native
-  def result[T](query: QueryParam, values: Any, cb: Unit, thisArg: Any): js.Promise[T] = js.native
-  def result[T](query: QueryParam, values: Unit, cb: js.Function1[/* value */ IResultExt[Any], T]): js.Promise[T] = js.native
-  def result[T](query: QueryParam, values: Unit, cb: js.Function1[/* value */ IResultExt[Any], T], thisArg: Any): js.Promise[T] = js.native
-  def result[T](query: QueryParam, values: Unit, cb: Unit, thisArg: Any): js.Promise[T] = js.native
+  def result[T, R](query: QueryParam): js.Promise[R] = js.native
+  def result[T, R](query: QueryParam, values: Any): js.Promise[R] = js.native
+  def result[T, R](query: QueryParam, values: Any, cb: js.Function1[/* value */ IResultExt[T], R]): js.Promise[R] = js.native
+  def result[T, R](query: QueryParam, values: Any, cb: js.Function1[/* value */ IResultExt[T], R], thisArg: Any): js.Promise[R] = js.native
+  def result[T, R](query: QueryParam, values: Any, cb: Unit, thisArg: Any): js.Promise[R] = js.native
+  def result[T, R](query: QueryParam, values: Unit, cb: js.Function1[/* value */ IResultExt[T], R]): js.Promise[R] = js.native
+  def result[T, R](query: QueryParam, values: Unit, cb: js.Function1[/* value */ IResultExt[T], R], thisArg: Any): js.Promise[R] = js.native
+  def result[T, R](query: QueryParam, values: Unit, cb: Unit, thisArg: Any): js.Promise[R] = js.native
   
   // API: http://vitaly-t.github.io/pg-promise/Database.html#stream
   def stream(qs: ReadableStream, init: js.Function1[/* stream */ ReadableStream, Unit]): js.Promise[Duration] = js.native

@@ -8,12 +8,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Hasmultiplesinglefiles extends StObject {
   
-  var account: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['simple-user'] */ js.Any
+  var account: Avatarurl
   
   /** @example true */
   var has_multiple_single_files: js.UndefOr[Boolean] = js.undefined
   
-  var permissions: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['app-permissions'] */ js.Any
+  var permissions: Administration
   
   /**
     * Format: uri
@@ -41,8 +41,8 @@ trait Hasmultiplesinglefiles extends StObject {
 object Hasmultiplesinglefiles {
   
   inline def apply(
-    account: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['simple-user'] */ js.Any,
-    permissions: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['app-permissions'] */ js.Any,
+    account: Avatarurl,
+    permissions: Administration,
     repositories_url: String,
     repository_selection: all | selected
   ): Hasmultiplesinglefiles = {
@@ -53,17 +53,13 @@ object Hasmultiplesinglefiles {
   @scala.inline
   implicit open class MutableBuilder[Self <: Hasmultiplesinglefiles] (val x: Self) extends AnyVal {
     
-    inline def setAccount(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['simple-user'] */ js.Any
-    ): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
+    inline def setAccount(value: Avatarurl): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
     
     inline def setHas_multiple_single_files(value: Boolean): Self = StObject.set(x, "has_multiple_single_files", value.asInstanceOf[js.Any])
     
     inline def setHas_multiple_single_filesUndefined: Self = StObject.set(x, "has_multiple_single_files", js.undefined)
     
-    inline def setPermissions(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['app-permissions'] */ js.Any
-    ): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
+    inline def setPermissions(value: Administration): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
     
     inline def setRepositories_url(value: String): Self = StObject.set(x, "repositories_url", value.asInstanceOf[js.Any])
     

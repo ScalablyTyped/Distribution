@@ -12,6 +12,11 @@ trait Application extends StObject {
   var applicationId: ApplicationId
   
   /**
+    * The CPU architecture of an application.
+    */
+  var architecture: js.UndefOr[Architecture] = js.undefined
+  
+  /**
     * The ARN of the application.
     */
   var arn: ApplicationArn
@@ -30,6 +35,11 @@ trait Application extends StObject {
     * The date and time when the application run was created.
     */
   var createdAt: js.Date
+  
+  /**
+    * The image configuration applied to all worker types.
+    */
+  var imageConfiguration: js.UndefOr[ImageConfiguration] = js.undefined
   
   /**
     * The initial capacity of the application.
@@ -52,7 +62,7 @@ trait Application extends StObject {
   var networkConfiguration: js.UndefOr[NetworkConfiguration] = js.undefined
   
   /**
-    * The EMR release version associated with the application.
+    * The EMR release associated with the application.
     */
   var releaseLabel: ReleaseLabel
   
@@ -80,6 +90,11 @@ trait Application extends StObject {
     * The date and time when the application run was last updated.
     */
   var updatedAt: js.Date
+  
+  /**
+    * The specification applied to each worker type.
+    */
+  var workerTypeSpecifications: js.UndefOr[WorkerTypeSpecificationMap] = js.undefined
 }
 object Application {
   
@@ -102,6 +117,10 @@ object Application {
     
     inline def setApplicationId(value: ApplicationId): Self = StObject.set(x, "applicationId", value.asInstanceOf[js.Any])
     
+    inline def setArchitecture(value: Architecture): Self = StObject.set(x, "architecture", value.asInstanceOf[js.Any])
+    
+    inline def setArchitectureUndefined: Self = StObject.set(x, "architecture", js.undefined)
+    
     inline def setArn(value: ApplicationArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
     inline def setAutoStartConfiguration(value: AutoStartConfig): Self = StObject.set(x, "autoStartConfiguration", value.asInstanceOf[js.Any])
@@ -113,6 +132,10 @@ object Application {
     inline def setAutoStopConfigurationUndefined: Self = StObject.set(x, "autoStopConfiguration", js.undefined)
     
     inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    
+    inline def setImageConfiguration(value: ImageConfiguration): Self = StObject.set(x, "imageConfiguration", value.asInstanceOf[js.Any])
+    
+    inline def setImageConfigurationUndefined: Self = StObject.set(x, "imageConfiguration", js.undefined)
     
     inline def setInitialCapacity(value: InitialCapacityConfigMap): Self = StObject.set(x, "initialCapacity", value.asInstanceOf[js.Any])
     
@@ -145,5 +168,9 @@ object Application {
     inline def setType(value: EngineType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setUpdatedAt(value: js.Date): Self = StObject.set(x, "updatedAt", value.asInstanceOf[js.Any])
+    
+    inline def setWorkerTypeSpecifications(value: WorkerTypeSpecificationMap): Self = StObject.set(x, "workerTypeSpecifications", value.asInstanceOf[js.Any])
+    
+    inline def setWorkerTypeSpecificationsUndefined: Self = StObject.set(x, "workerTypeSpecifications", js.undefined)
   }
 }

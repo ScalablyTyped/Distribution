@@ -27,7 +27,7 @@ trait FunctionCode extends StObject {
   var S3ObjectVersion: js.UndefOr[typings.awsSdk.clientsLambdaMod.S3ObjectVersion] = js.undefined
   
   /**
-    * The base64-encoded contents of the deployment package. Amazon Web Services SDK and Amazon Web Services CLI clients handle the encoding for you.
+    * The base64-encoded contents of the deployment package. Amazon Web Services SDK and CLI clients handle the encoding for you.
     */
   var ZipFile: js.UndefOr[_Blob] = js.undefined
 }

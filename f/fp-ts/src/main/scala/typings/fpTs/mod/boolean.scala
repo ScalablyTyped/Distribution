@@ -1,6 +1,6 @@
 package typings.fpTs.mod
 
-import typings.fpTs.libFunctionMod.Lazy
+import typings.fpTs.libFunctionMod.LazyArg
 import typings.fpTs.libMonoidMod.Monoid
 import typings.fpTs.libOrdMod.Ord_
 import typings.fpTs.libRefinementMod.Refinement
@@ -47,15 +47,15 @@ object boolean {
   @js.native
   val Show: typings.fpTs.libShowMod.Show[Boolean] = js.native
   
-  inline def fold[A](onFalse: Lazy[A], onTrue: Lazy[A]): js.Function1[/* value */ Boolean, A] = (^.asInstanceOf[js.Dynamic].applyDynamic("fold")(onFalse.asInstanceOf[js.Any], onTrue.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* value */ Boolean, A]]
+  inline def fold[A](onFalse: LazyArg[A], onTrue: LazyArg[A]): js.Function1[/* value */ Boolean, A] = (^.asInstanceOf[js.Dynamic].applyDynamic("fold")(onFalse.asInstanceOf[js.Any], onTrue.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* value */ Boolean, A]]
   
-  inline def foldW[A, B](onFalse: Lazy[A], onTrue: Lazy[B]): js.Function1[/* value */ Boolean, A | B] = (^.asInstanceOf[js.Dynamic].applyDynamic("foldW")(onFalse.asInstanceOf[js.Any], onTrue.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* value */ Boolean, A | B]]
+  inline def foldW[A, B](onFalse: LazyArg[A], onTrue: LazyArg[B]): js.Function1[/* value */ Boolean, A | B] = (^.asInstanceOf[js.Dynamic].applyDynamic("foldW")(onFalse.asInstanceOf[js.Any], onTrue.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* value */ Boolean, A | B]]
   
   @JSImport("fp-ts", "boolean.isBoolean")
   @js.native
   val isBoolean: Refinement[Any, Boolean] = js.native
   
-  inline def `match`[A](onFalse: Lazy[A], onTrue: Lazy[A]): js.Function1[/* value */ Boolean, A] = (^.asInstanceOf[js.Dynamic].applyDynamic("match")(onFalse.asInstanceOf[js.Any], onTrue.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* value */ Boolean, A]]
+  inline def `match`[A](onFalse: LazyArg[A], onTrue: LazyArg[A]): js.Function1[/* value */ Boolean, A] = (^.asInstanceOf[js.Dynamic].applyDynamic("match")(onFalse.asInstanceOf[js.Any], onTrue.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* value */ Boolean, A]]
   
-  inline def matchW[A, B](onFalse: Lazy[A], onTrue: Lazy[B]): js.Function1[/* value */ Boolean, A | B] = (^.asInstanceOf[js.Dynamic].applyDynamic("matchW")(onFalse.asInstanceOf[js.Any], onTrue.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* value */ Boolean, A | B]]
+  inline def matchW[A, B](onFalse: LazyArg[A], onTrue: LazyArg[B]): js.Function1[/* value */ Boolean, A | B] = (^.asInstanceOf[js.Dynamic].applyDynamic("matchW")(onFalse.asInstanceOf[js.Any], onTrue.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* value */ Boolean, A | B]]
 }

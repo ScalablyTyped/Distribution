@@ -44,6 +44,9 @@ object examplesJsmLoadersLdrawloaderMod {
       onError: js.Function1[/* event */ ErrorEvent, Unit]
     ): Unit = js.native
     
+    def loadAsync(url: String): js.Promise[Group] = js.native
+    def loadAsync(url: String, onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit]): js.Promise[Group] = js.native
+    
     var materials: js.Array[Material] = js.native
     
     var materialsLibrary: Record[String, Material] = js.native

@@ -12,6 +12,9 @@ trait DefaultUserRolePermissions extends StObject {
   // Indicates whether the default user role can create security groups.
   var allowedToCreateSecurityGroups: js.UndefOr[Boolean] = js.undefined
   
+  // Indicates whether the registered owners of a device can read their own BitLocker recovery keys with default user role.
+  var allowedToReadBitlockerKeysForOwnedDevice: js.UndefOr[NullableOption[Boolean]] = js.undefined
+  
   // Indicates whether the default user role can read other users.
   var allowedToReadOtherUsers: js.UndefOr[Boolean] = js.undefined
   
@@ -40,6 +43,12 @@ object DefaultUserRolePermissions {
     inline def setAllowedToCreateSecurityGroups(value: Boolean): Self = StObject.set(x, "allowedToCreateSecurityGroups", value.asInstanceOf[js.Any])
     
     inline def setAllowedToCreateSecurityGroupsUndefined: Self = StObject.set(x, "allowedToCreateSecurityGroups", js.undefined)
+    
+    inline def setAllowedToReadBitlockerKeysForOwnedDevice(value: NullableOption[Boolean]): Self = StObject.set(x, "allowedToReadBitlockerKeysForOwnedDevice", value.asInstanceOf[js.Any])
+    
+    inline def setAllowedToReadBitlockerKeysForOwnedDeviceNull: Self = StObject.set(x, "allowedToReadBitlockerKeysForOwnedDevice", null)
+    
+    inline def setAllowedToReadBitlockerKeysForOwnedDeviceUndefined: Self = StObject.set(x, "allowedToReadBitlockerKeysForOwnedDevice", js.undefined)
     
     inline def setAllowedToReadOtherUsers(value: Boolean): Self = StObject.set(x, "allowedToReadOtherUsers", value.asInstanceOf[js.Any])
     

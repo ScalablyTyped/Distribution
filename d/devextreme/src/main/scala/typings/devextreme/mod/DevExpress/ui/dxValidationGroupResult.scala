@@ -12,7 +12,7 @@ trait dxValidationGroupResult extends StObject {
     */
   var brokenRules: js.UndefOr[
     js.Array[
-      RequiredRule | NumericRule | RangeRule | StringLengthRule | CustomRule | CompareRule | PatternRule | EmailRule | AsyncRule
+      typings.devextreme.mod.DevExpress.common.RequiredRule | typings.devextreme.mod.DevExpress.common.NumericRule | typings.devextreme.mod.DevExpress.common.RangeRule | typings.devextreme.mod.DevExpress.common.StringLengthRule | typings.devextreme.mod.DevExpress.common.CustomRule | typings.devextreme.mod.DevExpress.common.CompareRule | typings.devextreme.mod.DevExpress.common.PatternRule | typings.devextreme.mod.DevExpress.common.EmailRule | typings.devextreme.mod.DevExpress.common.AsyncRule
     ]
   ] = js.undefined
   
@@ -48,14 +48,14 @@ object dxValidationGroupResult {
     
     inline def setBrokenRules(
       value: js.Array[
-          RequiredRule | NumericRule | RangeRule | StringLengthRule | CustomRule | CompareRule | PatternRule | EmailRule | AsyncRule
+          typings.devextreme.mod.DevExpress.common.RequiredRule | typings.devextreme.mod.DevExpress.common.NumericRule | typings.devextreme.mod.DevExpress.common.RangeRule | typings.devextreme.mod.DevExpress.common.StringLengthRule | typings.devextreme.mod.DevExpress.common.CustomRule | typings.devextreme.mod.DevExpress.common.CompareRule | typings.devextreme.mod.DevExpress.common.PatternRule | typings.devextreme.mod.DevExpress.common.EmailRule | typings.devextreme.mod.DevExpress.common.AsyncRule
         ]
     ): Self = StObject.set(x, "brokenRules", value.asInstanceOf[js.Any])
     
     inline def setBrokenRulesUndefined: Self = StObject.set(x, "brokenRules", js.undefined)
     
     inline def setBrokenRulesVarargs(
-      value: (RequiredRule | NumericRule | RangeRule | StringLengthRule | CustomRule | CompareRule | PatternRule | EmailRule | AsyncRule)*
+      value: (typings.devextreme.mod.DevExpress.common.RequiredRule | typings.devextreme.mod.DevExpress.common.NumericRule | typings.devextreme.mod.DevExpress.common.RangeRule | typings.devextreme.mod.DevExpress.common.StringLengthRule | typings.devextreme.mod.DevExpress.common.CustomRule | typings.devextreme.mod.DevExpress.common.CompareRule | typings.devextreme.mod.DevExpress.common.PatternRule | typings.devextreme.mod.DevExpress.common.EmailRule | typings.devextreme.mod.DevExpress.common.AsyncRule)*
     ): Self = StObject.set(x, "brokenRules", js.Array(value*))
     
     inline def setComplete(value: js.Promise[dxValidationGroupResult]): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])

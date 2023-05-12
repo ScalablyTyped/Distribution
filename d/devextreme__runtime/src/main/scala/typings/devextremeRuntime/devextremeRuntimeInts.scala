@@ -23,6 +23,30 @@ object devextremeRuntimeInts {
   inline def `0`: `0` = 0.asInstanceOf[`0`]
   
   @js.native
+  sealed trait `0x01` extends StObject
+  inline def `0x01`: `0x01` = 0x01.asInstanceOf[`0x01`]
+  
+  @js.native
+  sealed trait `0x02` extends StObject
+  inline def `0x02`: `0x02` = 0x02.asInstanceOf[`0x02`]
+  
+  @js.native
+  sealed trait `0x04` extends StObject
+  inline def `0x04`: `0x04` = 0x04.asInstanceOf[`0x04`]
+  
+  @js.native
+  sealed trait `0x08` extends StObject
+  inline def `0x08`: `0x08` = 0x08.asInstanceOf[`0x08`]
+  
+  @js.native
+  sealed trait `0x10` extends StObject
+  inline def `0x10`: `0x10` = 0x10.asInstanceOf[`0x10`]
+  
+  @js.native
+  sealed trait `0x20` extends StObject
+  inline def `0x20`: `0x20` = 0x20.asInstanceOf[`0x20`]
+  
+  @js.native
   sealed trait `1`
     extends StObject
        with ChildFlags
@@ -32,11 +56,19 @@ object devextremeRuntimeInts {
   inline def `1`: `1` = 1.asInstanceOf[`1`]
   
   @js.native
+  sealed trait `10` extends StObject
+  inline def `10`: `10` = 10.asInstanceOf[`10`]
+  
+  @js.native
   sealed trait `1024`
     extends StObject
        with VNodeFlags
        with typings.devextremeRuntime.cjsInfernoMockedVnodeFlagsMod.VNodeFlags
   inline def `1024`: `1024` = 1024.asInstanceOf[`1024`]
+  
+  @js.native
+  sealed trait `11` extends StObject
+  inline def `11`: `11` = 11.asInstanceOf[`11`]
   
   @js.native
   sealed trait `12`
@@ -108,6 +140,10 @@ object devextremeRuntimeInts {
   inline def `256`: `256` = 256.asInstanceOf[`256`]
   
   @js.native
+  sealed trait `3` extends StObject
+  inline def `3`: `3` = 3.asInstanceOf[`3`]
+  
+  @js.native
   sealed trait `32`
     extends StObject
        with VNodeFlags
@@ -159,11 +195,19 @@ object devextremeRuntimeInts {
   inline def `481`: `481` = 481.asInstanceOf[`481`]
   
   @js.native
+  sealed trait `5` extends StObject
+  inline def `5`: `5` = 5.asInstanceOf[`5`]
+  
+  @js.native
   sealed trait `512`
     extends StObject
        with VNodeFlags
        with typings.devextremeRuntime.cjsInfernoMockedVnodeFlagsMod.VNodeFlags
   inline def `512`: `512` = 512.asInstanceOf[`512`]
+  
+  @js.native
+  sealed trait `6` extends StObject
+  inline def `6`: `6` = 6.asInstanceOf[`6`]
   
   @js.native
   sealed trait `64`
@@ -178,6 +222,10 @@ object devextremeRuntimeInts {
        with VNodeFlags
        with typings.devextremeRuntime.cjsInfernoMockedVnodeFlagsMod.VNodeFlags
   inline def `65536`: `65536` = 65536.asInstanceOf[`65536`]
+  
+  @js.native
+  sealed trait `7` extends StObject
+  inline def `7`: `7` = 7.asInstanceOf[`7`]
   
   @js.native
   sealed trait `8`
@@ -201,4 +249,8 @@ object devextremeRuntimeInts {
        with VNodeFlags
        with typings.devextremeRuntime.cjsInfernoMockedVnodeFlagsMod.VNodeFlags
   inline def `81920`: `81920` = 81920.asInstanceOf[`81920`]
+  
+  @js.native
+  sealed trait `9` extends StObject
+  inline def `9`: `9` = 9.asInstanceOf[`9`]
 }

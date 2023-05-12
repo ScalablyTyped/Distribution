@@ -21,7 +21,7 @@ object mod {
     def this(props: MotionProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: MotionProps, context: Any) = this()
   }
@@ -47,7 +47,7 @@ object mod {
     def this(props: StaggeredMotionProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: StaggeredMotionProps, context: Any) = this()
   }
@@ -59,7 +59,7 @@ object mod {
     def this(props: TransitionProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: TransitionProps, context: Any) = this()
   }

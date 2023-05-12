@@ -4,6 +4,7 @@ import typings.std.HTMLElement
 import typings.three.anon.LEFT_
 import typings.three.anon.Rotate
 import typings.three.srcCoreBufferGeometryMod.BufferGeometry
+import typings.three.srcCoreBufferGeometryMod.NormalBufferAttributes
 import typings.three.srcCoreEventDispatcherMod.Event
 import typings.three.srcMaterialsMaterialMod.Material
 import typings.three.srcThreeMod.Camera
@@ -118,7 +119,7 @@ object examplesJsmControlsTransformControlsMod {
   @JSImport("three/examples/jsm/controls/TransformControls", "TransformControlsPlane")
   @js.native
   open class TransformControlsPlane ()
-    extends Mesh[BufferGeometry, Material | js.Array[Material]] {
+    extends Mesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]] {
     
     var axis: X | Y | Z | XY | YZ | XZ | XYZ | E = js.native
     

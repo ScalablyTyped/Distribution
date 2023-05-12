@@ -1,7 +1,7 @@
 
 # Scala.js typings for wonka
 
-Typings are for version 6.1.1
+Typings are for version 6.3.2
 
 ## Library description:
 A tiny but capable push & pull stream library for TypeScript and Flow

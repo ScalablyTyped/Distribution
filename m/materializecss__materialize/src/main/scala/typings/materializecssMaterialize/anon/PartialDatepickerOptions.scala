@@ -23,7 +23,7 @@ trait PartialDatepickerOptions extends StObject {
   
   var firstDay: js.UndefOr[Double] = js.undefined
   
-  var format: js.UndefOr[String] = js.undefined
+  var format: js.UndefOr[String | (js.Function1[/* d */ js.Date, String])] = js.undefined
   
   var i18n: js.UndefOr[PartialInternationalizati] = js.undefined
   
@@ -54,6 +54,8 @@ trait PartialDatepickerOptions extends StObject {
   var showMonthAfterYear: js.UndefOr[Boolean] = js.undefined
   
   var yearRange: js.UndefOr[Double | js.Array[Double]] = js.undefined
+  
+  var yearRangeReverse: js.UndefOr[Boolean] = js.undefined
 }
 object PartialDatepickerOptions {
   
@@ -101,7 +103,9 @@ object PartialDatepickerOptions {
     
     inline def setFirstDayUndefined: Self = StObject.set(x, "firstDay", js.undefined)
     
-    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: String | (js.Function1[/* d */ js.Date, String])): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    
+    inline def setFormatFunction1(value: /* d */ js.Date => String): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
     
     inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
@@ -172,6 +176,10 @@ object PartialDatepickerOptions {
     inline def setShowMonthAfterYearUndefined: Self = StObject.set(x, "showMonthAfterYear", js.undefined)
     
     inline def setYearRange(value: Double | js.Array[Double]): Self = StObject.set(x, "yearRange", value.asInstanceOf[js.Any])
+    
+    inline def setYearRangeReverse(value: Boolean): Self = StObject.set(x, "yearRangeReverse", value.asInstanceOf[js.Any])
+    
+    inline def setYearRangeReverseUndefined: Self = StObject.set(x, "yearRangeReverse", js.undefined)
     
     inline def setYearRangeUndefined: Self = StObject.set(x, "yearRange", js.undefined)
     

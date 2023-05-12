@@ -16,6 +16,8 @@ trait CitationCitedArtifactPublicationForm
   
   var _firstPage: js.UndefOr[Element] = js.undefined
   
+  var _issue: js.UndefOr[Element] = js.undefined
+  
   var _lastPage: js.UndefOr[Element] = js.undefined
   
   var _lastRevisionDate: js.UndefOr[Element] = js.undefined
@@ -24,18 +26,29 @@ trait CitationCitedArtifactPublicationForm
   
   var _pageString: js.UndefOr[Element] = js.undefined
   
+  var _publicationDateSeason: js.UndefOr[Element] = js.undefined
+  
+  var _publicationDateText: js.UndefOr[Element] = js.undefined
+  
+  var _volume: js.UndefOr[Element] = js.undefined
+  
   /**
-    * Entry number or identifier for inclusion in a database.
+    * Accession numbers may be used instead of or in addition to page numbers.  Accession numbers are functionally identifiers when coupled with the identity of the database for which they are accession numbers. Accession numbers which are used for indexing citations in a dataset of citations should NOT be entered in Citation.citedArtifact.publicationForm.accessionNumber -- this use would be a type of Citation.identifier for the citation record itself.
     */
   var accessionNumber: js.UndefOr[String] = js.undefined
   
   /**
-    * The date the article was added to the database, or the date the article was released (which may differ from the journal issue publication date).
+    * The articleDate is the preferred element for expressing the publication date as structured data.
     */
   var articleDate: js.UndefOr[String] = js.undefined
   
   /**
-    * Copyright notice for the full article or artifact.
+    * Describes the form of the medium cited. Common codes are "Internet" or "Print". The CitedMedium value set has 6 codes. The codes internet, print, and offline-digital-storage are the common codes for a typical publication form, though internet and print are more common for study citations. Three additional codes (each appending one of the primary codes with "-without-issue" are used for situations when a study is published both within an issue (of a periodical release as commonly done for journals) AND is published separately from the issue (as commonly done with early online publication), to represent specific identification of the publication form not associated with the issue.
+    */
+  var citedMedium: js.UndefOr[CodeableConcept] = js.undefined
+  
+  /**
+    * It is possible that different publication forms have different copyright notices.
     */
   var copyright: js.UndefOr[String] = js.undefined
   
@@ -45,7 +58,12 @@ trait CitationCitedArtifactPublicationForm
   var firstPage: js.UndefOr[String] = js.undefined
   
   /**
-    * Language is provided to support indexing and accessibility (typically, services such as text to speech use the language tag). The html language tag in the narrative applies  to the narrative. The language tag on the resource may be used to specify the language of other presentations generated from the data in the resource. Not all the content has to be in the base language. The Resource.language should not be assumed to apply to the narrative automatically. If a language is specified, it should it also be specified on the div element in the html (see rules in HTML5 for information about the relationship between xml:lang and the html lang attribute).
+    * Issue, part or supplement of journal or other collection in which the article is published.
+    */
+  var issue: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The language or languages in which this form of the article is published.
     */
   var language: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
@@ -55,12 +73,12 @@ trait CitationCitedArtifactPublicationForm
   var lastPage: js.UndefOr[String] = js.undefined
   
   /**
-    * The date the article was last revised or updated in the database.
+    * The lastRevisionDate is used for the cited article and not the date the Citation Resource is last revised.
     */
   var lastRevisionDate: js.UndefOr[String] = js.undefined
   
   /**
-    * Actual or approximate number of pages or screens.
+    * Actual or approximate number of pages or screens. Distinct from reporting the page numbers.
     */
   var pageCount: js.UndefOr[String] = js.undefined
   
@@ -70,14 +88,24 @@ trait CitationCitedArtifactPublicationForm
   var pageString: js.UndefOr[String] = js.undefined
   
   /**
-    * The specific issue in which the cited article resides.
+    * Spring, Summer, Fall/Autumn, Winter.
     */
-  var periodicRelease: js.UndefOr[CitationCitedArtifactPublicationFormPeriodicRelease] = js.undefined
+  var publicationDateSeason: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The publicationDateText element is prefererntially used when a date is not represented in a form that can be handled as structured data in other elements.
+    */
+  var publicationDateText: js.UndefOr[String] = js.undefined
   
   /**
     * The collection the cited article or artifact is published in.
     */
   var publishedIn: js.UndefOr[CitationCitedArtifactPublicationFormPublishedIn] = js.undefined
+  
+  /**
+    * Volume number of journal or other collection in which the article is published.
+    */
+  var volume: js.UndefOr[String] = js.undefined
 }
 object CitationCitedArtifactPublicationForm {
   
@@ -97,6 +125,10 @@ object CitationCitedArtifactPublicationForm {
     
     inline def setArticleDateUndefined: Self = StObject.set(x, "articleDate", js.undefined)
     
+    inline def setCitedMedium(value: CodeableConcept): Self = StObject.set(x, "citedMedium", value.asInstanceOf[js.Any])
+    
+    inline def setCitedMediumUndefined: Self = StObject.set(x, "citedMedium", js.undefined)
+    
     inline def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
     
     inline def setCopyrightUndefined: Self = StObject.set(x, "copyright", js.undefined)
@@ -104,6 +136,10 @@ object CitationCitedArtifactPublicationForm {
     inline def setFirstPage(value: String): Self = StObject.set(x, "firstPage", value.asInstanceOf[js.Any])
     
     inline def setFirstPageUndefined: Self = StObject.set(x, "firstPage", js.undefined)
+    
+    inline def setIssue(value: String): Self = StObject.set(x, "issue", value.asInstanceOf[js.Any])
+    
+    inline def setIssueUndefined: Self = StObject.set(x, "issue", js.undefined)
     
     inline def setLanguage(value: js.Array[CodeableConcept]): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
@@ -127,13 +163,21 @@ object CitationCitedArtifactPublicationForm {
     
     inline def setPageStringUndefined: Self = StObject.set(x, "pageString", js.undefined)
     
-    inline def setPeriodicRelease(value: CitationCitedArtifactPublicationFormPeriodicRelease): Self = StObject.set(x, "periodicRelease", value.asInstanceOf[js.Any])
+    inline def setPublicationDateSeason(value: String): Self = StObject.set(x, "publicationDateSeason", value.asInstanceOf[js.Any])
     
-    inline def setPeriodicReleaseUndefined: Self = StObject.set(x, "periodicRelease", js.undefined)
+    inline def setPublicationDateSeasonUndefined: Self = StObject.set(x, "publicationDateSeason", js.undefined)
+    
+    inline def setPublicationDateText(value: String): Self = StObject.set(x, "publicationDateText", value.asInstanceOf[js.Any])
+    
+    inline def setPublicationDateTextUndefined: Self = StObject.set(x, "publicationDateText", js.undefined)
     
     inline def setPublishedIn(value: CitationCitedArtifactPublicationFormPublishedIn): Self = StObject.set(x, "publishedIn", value.asInstanceOf[js.Any])
     
     inline def setPublishedInUndefined: Self = StObject.set(x, "publishedIn", js.undefined)
+    
+    inline def setVolume(value: String): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
+    
+    inline def setVolumeUndefined: Self = StObject.set(x, "volume", js.undefined)
     
     inline def set_accessionNumber(value: Element): Self = StObject.set(x, "_accessionNumber", value.asInstanceOf[js.Any])
     
@@ -151,6 +195,10 @@ object CitationCitedArtifactPublicationForm {
     
     inline def set_firstPageUndefined: Self = StObject.set(x, "_firstPage", js.undefined)
     
+    inline def set_issue(value: Element): Self = StObject.set(x, "_issue", value.asInstanceOf[js.Any])
+    
+    inline def set_issueUndefined: Self = StObject.set(x, "_issue", js.undefined)
+    
     inline def set_lastPage(value: Element): Self = StObject.set(x, "_lastPage", value.asInstanceOf[js.Any])
     
     inline def set_lastPageUndefined: Self = StObject.set(x, "_lastPage", js.undefined)
@@ -166,5 +214,17 @@ object CitationCitedArtifactPublicationForm {
     inline def set_pageString(value: Element): Self = StObject.set(x, "_pageString", value.asInstanceOf[js.Any])
     
     inline def set_pageStringUndefined: Self = StObject.set(x, "_pageString", js.undefined)
+    
+    inline def set_publicationDateSeason(value: Element): Self = StObject.set(x, "_publicationDateSeason", value.asInstanceOf[js.Any])
+    
+    inline def set_publicationDateSeasonUndefined: Self = StObject.set(x, "_publicationDateSeason", js.undefined)
+    
+    inline def set_publicationDateText(value: Element): Self = StObject.set(x, "_publicationDateText", value.asInstanceOf[js.Any])
+    
+    inline def set_publicationDateTextUndefined: Self = StObject.set(x, "_publicationDateText", js.undefined)
+    
+    inline def set_volume(value: Element): Self = StObject.set(x, "_volume", value.asInstanceOf[js.Any])
+    
+    inline def set_volumeUndefined: Self = StObject.set(x, "_volume", js.undefined)
   }
 }

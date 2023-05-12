@@ -29,12 +29,20 @@ object monacoEditorStrings {
   inline def _vscode: _vscode = "_vscode".asInstanceOf[_vscode]
   
   @js.native
+  sealed trait above extends StObject
+  inline def above: above = "above".asInstanceOf[above]
+  
+  @js.native
   sealed trait active extends StObject
   inline def active: active = "active".asInstanceOf[active]
   
   @js.native
   sealed trait advanced extends StObject
   inline def advanced: advanced = "advanced".asInstanceOf[advanced]
+  
+  @js.native
+  sealed trait afterDrop extends StObject
+  inline def afterDrop: afterDrop = "afterDrop".asInstanceOf[afterDrop]
   
   @js.native
   sealed trait all extends StObject
@@ -66,6 +74,10 @@ object monacoEditorStrings {
     extends StObject
        with EditorAutoClosingStrategy
   inline def beforeWhitespace: beforeWhitespace = "beforeWhitespace".asInstanceOf[beforeWhitespace]
+  
+  @js.native
+  sealed trait below extends StObject
+  inline def below: below = "below".asInstanceOf[below]
   
   @js.native
   sealed trait blink extends StObject
@@ -122,6 +134,10 @@ object monacoEditorStrings {
   inline def deepIndent: deepIndent = "deepIndent".asInstanceOf[deepIndent]
   
   @js.native
+  sealed trait dimmed extends StObject
+  inline def dimmed: dimmed = "dimmed".asInstanceOf[dimmed]
+  
+  @js.native
   sealed trait editable extends StObject
   inline def editable: editable = "editable".asInstanceOf[editable]
   
@@ -146,6 +162,10 @@ object monacoEditorStrings {
   inline def experimental: experimental = "experimental".asInstanceOf[experimental]
   
   @js.native
+  sealed trait explicit extends StObject
+  inline def explicit: explicit = "explicit".asInstanceOf[explicit]
+  
+  @js.native
   sealed trait fill extends StObject
   inline def fill: fill = "fill".asInstanceOf[fill]
   
@@ -156,6 +176,14 @@ object monacoEditorStrings {
   @js.native
   sealed trait fit extends StObject
   inline def fit: fit = "fit".asInstanceOf[fit]
+  
+  @js.native
+  sealed trait foldingProviderModel extends StObject
+  inline def foldingProviderModel: foldingProviderModel = "foldingProviderModel".asInstanceOf[foldingProviderModel]
+  
+  @js.native
+  sealed trait font extends StObject
+  inline def font: font = "font".asInstanceOf[font]
   
   @js.native
   sealed trait force extends StObject
@@ -224,6 +252,10 @@ object monacoEditorStrings {
   inline def indentation: indentation = "indentation".asInstanceOf[indentation]
   
   @js.native
+  sealed trait indentationModel extends StObject
+  inline def indentationModel: indentationModel = "indentationModel".asInstanceOf[indentationModel]
+  
+  @js.native
   sealed trait inherit extends StObject
   inline def inherit: inherit = "inherit".asInstanceOf[inherit]
   
@@ -248,6 +280,10 @@ object monacoEditorStrings {
   inline def keep: keep = "keep".asInstanceOf[keep]
   
   @js.native
+  sealed trait keepAll extends StObject
+  inline def keepAll: keepAll = "keepAll".asInstanceOf[keepAll]
+  
+  @js.native
   sealed trait languageDefined
     extends StObject
        with EditorAutoClosingStrategy
@@ -257,6 +293,10 @@ object monacoEditorStrings {
   @js.native
   sealed trait left extends StObject
   inline def left: left = "left".asInstanceOf[left]
+  
+  @js.native
+  sealed trait legacy extends StObject
+  inline def legacy: legacy = "legacy".asInstanceOf[legacy]
   
   @js.native
   sealed trait line extends StObject
@@ -312,6 +352,10 @@ object monacoEditorStrings {
   inline def nonstandard: nonstandard = "nonstandard".asInstanceOf[nonstandard]
   
   @js.native
+  sealed trait normal extends StObject
+  inline def normal: normal = "normal".asInstanceOf[normal]
+  
+  @js.native
   sealed trait obsolete
     extends StObject
        with EntryStatus
@@ -336,12 +380,20 @@ object monacoEditorStrings {
   inline def on: on = "on".asInstanceOf[on]
   
   @js.native
+  sealed trait onHover extends StObject
+  inline def onHover: onHover = "onHover".asInstanceOf[onHover]
+  
+  @js.native
   sealed trait onUnlessPressed extends StObject
   inline def onUnlessPressed: onUnlessPressed = "onUnlessPressed".asInstanceOf[onUnlessPressed]
   
   @js.native
   sealed trait onlySnippets extends StObject
   inline def onlySnippets: onlySnippets = "onlySnippets".asInstanceOf[onlySnippets]
+  
+  @js.native
+  sealed trait outlineModel extends StObject
+  inline def outlineModel: outlineModel = "outlineModel".asInstanceOf[outlineModel]
   
   @js.native
   sealed trait peek
@@ -443,6 +495,14 @@ object monacoEditorStrings {
   inline def subwordSmart: subwordSmart = "subwordSmart".asInstanceOf[subwordSmart]
   
   @js.native
+  sealed trait svg extends StObject
+  inline def svg: svg = "svg".asInstanceOf[svg]
+  
+  @js.native
+  sealed trait tabSize extends StObject
+  inline def tabSize: tabSize = "tabSize".asInstanceOf[tabSize]
+  
+  @js.native
   sealed trait text extends StObject
   inline def text: text = "text".asInstanceOf[text]
   
@@ -487,6 +547,14 @@ object monacoEditorStrings {
     extends StObject
        with SeverityLevel
   inline def warning: warning = "warning".asInstanceOf[warning]
+  
+  @js.native
+  sealed trait whenQuickSuggestion extends StObject
+  inline def whenQuickSuggestion: whenQuickSuggestion = "whenQuickSuggestion".asInstanceOf[whenQuickSuggestion]
+  
+  @js.native
+  sealed trait whenTriggerCharacter extends StObject
+  inline def whenTriggerCharacter: whenTriggerCharacter = "whenTriggerCharacter".asInstanceOf[whenTriggerCharacter]
   
   @js.native
   sealed trait wordWrapColumn extends StObject

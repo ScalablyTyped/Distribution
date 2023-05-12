@@ -910,9 +910,10 @@ object Matrix4 {
     * Sets the rotation assuming the matrix is an affine transformation.
     * @param matrix - The matrix.
     * @param rotation - The rotation matrix.
+    * @param result - The object onto which to store the result.
     * @returns The modified result parameter.
     */
-  inline def setRotation(matrix: Matrix4, rotation: Matrix3): Matrix4 = (^.asInstanceOf[js.Dynamic].applyDynamic("setRotation")(matrix.asInstanceOf[js.Any], rotation.asInstanceOf[js.Any])).asInstanceOf[Matrix4]
+  inline def setRotation(matrix: Matrix4, rotation: Matrix3, result: Matrix4): Matrix4 = (^.asInstanceOf[js.Dynamic].applyDynamic("setRotation")(matrix.asInstanceOf[js.Any], rotation.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Matrix4]
   
   /**
     * Computes a new matrix that replaces the specified row in the provided matrix with the provided Cartesian4 instance.

@@ -19,6 +19,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 /**
   * Abstract base class that implements functionality for event handling.
+  *
+  * ```javascript
+  * const obj = new EventHandlerSubclass();
+  *
+  * // subscribe to an event
+  * obj.on('hello', function (str) {
+  *     console.log('event hello is fired', str);
+  * });
+  *
+  * // fire event
+  * obj.fire('hello', 'world');
+  * ```
   */
 @JSImport("playcanvas", "EventHandler")
 @js.native
@@ -106,7 +118,7 @@ open class EventHandler () extends StObject {
     * @param {object} [scope] - Scope that was used as the this when the event is fired.
     * @returns {EventHandler} Self for chaining.
     * @example
-    * var handler = function () {
+    * const handler = function () {
     * };
     * obj.on('test', handler);
     *

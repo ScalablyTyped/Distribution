@@ -1,7 +1,7 @@
 
 # Scala.js typings for ignore
 
-Typings are for version 5.2.0
+Typings are for version 5.2.4
 
 ## Library description:
 Ignore is a manager and filter for .gitignore rules, the one used by eslint, gitbook and many others.

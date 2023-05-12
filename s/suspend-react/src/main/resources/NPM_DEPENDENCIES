@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "suspend-react" : "0.0.8"
+      "suspend-react" : "0.0.10"
     }
   ],
   "test-dependencies" : [
     {
-      "suspend-react" : "0.0.8"
+      "suspend-react" : "0.0.10"
     }
   ],
   "compile-devDependencies" : [

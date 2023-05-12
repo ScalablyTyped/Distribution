@@ -12,17 +12,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  /**
-    * Run semantic-release and returns a Promise that resolves to a Result
-    * object.
-    * @async
-    */
-  inline def apply(options: Options): js.Promise[Result] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Result]]
-  inline def apply(options: Options, environment: Config): js.Promise[Result] = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], environment.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Result]]
-  
   @JSImport("semantic-release", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
+  
+  inline def default(options: Options): js.Promise[Result] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Result]]
+  inline def default(options: Options, environment: Config): js.Promise[Result] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any], environment.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Result]]
   
   trait BranchObject extends StObject {
     
@@ -128,13 +123,6 @@ object mod {
     }
   }
   
-  /**
-    * Specifies a git branch holding commits to analyze and code to release.
-    *
-    * Each branch may be defined either by a string or an object. Specifying
-    * a string is a shortcut for specifying that string as the `name` field,
-    * for example `"master"` expands to `{name: "master"}`.
-    */
   type BranchSpec = String | BranchObject
   
   trait Commit extends StObject {
@@ -224,7 +212,6 @@ object mod {
     }
   }
   
-  /** semantic-release configuration specific for API usage. */
   trait Config extends StObject {
     
     /**
@@ -369,10 +356,6 @@ object mod {
     }
   }
   
-  /**
-    * semantic-release options, after normalization and defaults have been
-    * applied.
-    */
   trait GlobalConfig
     extends StObject
        with Options {
@@ -546,7 +529,7 @@ object mod {
     var notes: String
     
     /**
-      * The semver type of the release.
+      * The semver export type of the release.
       */
     var `type`: ReleaseType
   }
@@ -575,13 +558,6 @@ object mod {
     }
   }
   
-  /**
-    * semantic-release options.
-    *
-    * Can be used to set any core option or plugin options.
-    * Each option will take precedence over options configured in the
-    * configuration file and shareable configurations.
-    */
   trait Options
     extends StObject
        with /**
@@ -735,19 +711,8 @@ object mod {
     }
   }
   
-  /**
-    * Specifies a plugin to use.
-    *
-    * The plugin is specified by its module name.
-    *
-    * To pass options to a plugin, specify an array containing the plugin module
-    * name and an options object.
-    */
   type PluginSpec = String | (js.Tuple2[String, Any])
   
-  /**
-    * Details of a release published by a publish plugin.
-    */
   trait Release extends StObject {
     
     /**
@@ -776,7 +741,7 @@ object mod {
     var pluginName: String
     
     /**
-      * The semver type of the release.
+      * The semver export type of the release.
       */
     var `type`: ReleaseType
     
@@ -830,10 +795,6 @@ object mod {
     }
   }
   
-  /**
-    * A semver release type.
-    * See https://github.com/semantic-release/commit-analyzer/blob/master/lib/default-release-types.js
-    */
   /* Rewritten from type alias, can be one of: 
     - typings.semanticRelease.semanticReleaseStrings.prerelease
     - typings.semanticRelease.semanticReleaseStrings.prepatch
@@ -861,10 +822,6 @@ object mod {
     inline def prerelease: typings.semanticRelease.semanticReleaseStrings.prerelease = "prerelease".asInstanceOf[typings.semanticRelease.semanticReleaseStrings.prerelease]
   }
   
-  /**
-    * An object with details of the release if a release was published, or
-    * false if no release was published.
-    */
   /* Rewritten from type alias, can be one of: 
     - typings.semanticRelease.semanticReleaseBooleans.`false`
     - typings.semanticRelease.anon.Commits

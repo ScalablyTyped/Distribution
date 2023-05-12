@@ -112,6 +112,11 @@ trait Client extends StObject {
   var sso_disabled: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * The name of the tenant the client belongs to.
+    */
+  var tenant: js.UndefOr[String] = js.undefined
+  
+  /**
     * Defines the requested authentication method for the token endpoint.
     * Possible values are 'none' (public client without a client secret),
     * 'client_secret_post' (client uses HTTP POST parameters) or 'client_secret_basic' (client uses HTTP Basic)
@@ -260,6 +265,10 @@ object Client {
     inline def setSso_disabled(value: Boolean): Self = StObject.set(x, "sso_disabled", value.asInstanceOf[js.Any])
     
     inline def setSso_disabledUndefined: Self = StObject.set(x, "sso_disabled", js.undefined)
+    
+    inline def setTenant(value: String): Self = StObject.set(x, "tenant", value.asInstanceOf[js.Any])
+    
+    inline def setTenantUndefined: Self = StObject.set(x, "tenant", js.undefined)
     
     inline def setToken_endpoint_auth_method(value: String): Self = StObject.set(x, "token_endpoint_auth_method", value.asInstanceOf[js.Any])
     

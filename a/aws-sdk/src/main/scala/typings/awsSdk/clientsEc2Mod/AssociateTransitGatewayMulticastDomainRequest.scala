@@ -14,22 +14,26 @@ trait AssociateTransitGatewayMulticastDomainRequest extends StObject {
   /**
     * The IDs of the subnets to associate with the transit gateway multicast domain.
     */
-  var SubnetIds: js.UndefOr[TransitGatewaySubnetIdList] = js.undefined
+  var SubnetIds: TransitGatewaySubnetIdList
   
   /**
     * The ID of the transit gateway attachment to associate with the transit gateway multicast domain.
     */
-  var TransitGatewayAttachmentId: js.UndefOr[typings.awsSdk.clientsEc2Mod.TransitGatewayAttachmentId] = js.undefined
+  var TransitGatewayAttachmentId: typings.awsSdk.clientsEc2Mod.TransitGatewayAttachmentId
   
   /**
     * The ID of the transit gateway multicast domain.
     */
-  var TransitGatewayMulticastDomainId: js.UndefOr[typings.awsSdk.clientsEc2Mod.TransitGatewayMulticastDomainId] = js.undefined
+  var TransitGatewayMulticastDomainId: typings.awsSdk.clientsEc2Mod.TransitGatewayMulticastDomainId
 }
 object AssociateTransitGatewayMulticastDomainRequest {
   
-  inline def apply(): AssociateTransitGatewayMulticastDomainRequest = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(
+    SubnetIds: TransitGatewaySubnetIdList,
+    TransitGatewayAttachmentId: TransitGatewayAttachmentId,
+    TransitGatewayMulticastDomainId: TransitGatewayMulticastDomainId
+  ): AssociateTransitGatewayMulticastDomainRequest = {
+    val __obj = js.Dynamic.literal(SubnetIds = SubnetIds.asInstanceOf[js.Any], TransitGatewayAttachmentId = TransitGatewayAttachmentId.asInstanceOf[js.Any], TransitGatewayMulticastDomainId = TransitGatewayMulticastDomainId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssociateTransitGatewayMulticastDomainRequest]
   }
   
@@ -42,16 +46,10 @@ object AssociateTransitGatewayMulticastDomainRequest {
     
     inline def setSubnetIds(value: TransitGatewaySubnetIdList): Self = StObject.set(x, "SubnetIds", value.asInstanceOf[js.Any])
     
-    inline def setSubnetIdsUndefined: Self = StObject.set(x, "SubnetIds", js.undefined)
-    
     inline def setSubnetIdsVarargs(value: SubnetId*): Self = StObject.set(x, "SubnetIds", js.Array(value*))
     
     inline def setTransitGatewayAttachmentId(value: TransitGatewayAttachmentId): Self = StObject.set(x, "TransitGatewayAttachmentId", value.asInstanceOf[js.Any])
     
-    inline def setTransitGatewayAttachmentIdUndefined: Self = StObject.set(x, "TransitGatewayAttachmentId", js.undefined)
-    
     inline def setTransitGatewayMulticastDomainId(value: TransitGatewayMulticastDomainId): Self = StObject.set(x, "TransitGatewayMulticastDomainId", value.asInstanceOf[js.Any])
-    
-    inline def setTransitGatewayMulticastDomainIdUndefined: Self = StObject.set(x, "TransitGatewayMulticastDomainId", js.undefined)
   }
 }

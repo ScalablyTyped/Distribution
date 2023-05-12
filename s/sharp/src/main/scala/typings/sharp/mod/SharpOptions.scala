@@ -12,12 +12,12 @@ trait SharpOptions extends StObject {
   /** Describes a new image to be created. */
   var create: js.UndefOr[Create] = js.undefined
   
-  /** Number representing the DPI for vector images. (optional, default 72) */
+  /** Number representing the DPI for vector images in the range 1 to 100000. (optional, default 72) */
   var density: js.UndefOr[Double] = js.undefined
   
   /**
-    *  Level of sensitivity to invalid images, one of (in order of sensitivity):
-    *  'none' (least), 'truncated', 'error' or 'warning' (most), highers level imply lower levels. (optional, default 'warning')
+    *  When to abort processing of invalid pixel data, one of (in order of sensitivity):
+    *  'none' (least), 'truncated', 'error' or 'warning' (most), highers level imply lower levels, invalid metadata will always abort. (optional, default 'warning')
     */
   var failOn: js.UndefOr[FailOnOptions] = js.undefined
   
@@ -29,6 +29,9 @@ trait SharpOptions extends StObject {
     * @deprecated Use `failOn` instead
     */
   var failOnError: js.UndefOr[Boolean] = js.undefined
+  
+  /** Should the embedded ICC profile, if any, be ignored. */
+  var ignoreIcc: js.UndefOr[Boolean] = js.undefined
   
   /** Level to extract from a multi-level input (OpenSlide), zero based. (optional, default 0) */
   var level: js.UndefOr[Double] = js.undefined
@@ -47,9 +50,9 @@ trait SharpOptions extends StObject {
   var pages: js.UndefOr[Double] = js.undefined
   
   /** Describes raw pixel input image data. See raw() for pixel ordering. */
-  var raw: js.UndefOr[Raw] = js.undefined
+  var raw: js.UndefOr[CreateRaw] = js.undefined
   
-  /** Set this to true to use sequential rather than random access where possible. This can reduce memory usage and might improve performance on some systems. (optional, default false) */
+  /** Set this to false to use random access rather than sequential read. Some operations will do this automatically. */
   var sequentialRead: js.UndefOr[Boolean] = js.undefined
   
   /** subIFD (Sub Image File Directory) to extract for OME-TIFF, defaults to main image. (optional, default -1) */
@@ -91,6 +94,10 @@ object SharpOptions {
     
     inline def setFailOnUndefined: Self = StObject.set(x, "failOn", js.undefined)
     
+    inline def setIgnoreIcc(value: Boolean): Self = StObject.set(x, "ignoreIcc", value.asInstanceOf[js.Any])
+    
+    inline def setIgnoreIccUndefined: Self = StObject.set(x, "ignoreIcc", js.undefined)
+    
     inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
     inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
@@ -107,7 +114,7 @@ object SharpOptions {
     
     inline def setPagesUndefined: Self = StObject.set(x, "pages", js.undefined)
     
-    inline def setRaw(value: Raw): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+    inline def setRaw(value: CreateRaw): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     
     inline def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
     

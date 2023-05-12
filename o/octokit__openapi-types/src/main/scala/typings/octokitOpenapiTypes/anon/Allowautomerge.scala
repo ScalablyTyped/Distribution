@@ -7,7 +7,6 @@ import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.MERGE_MESSAGE
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.PR_BODY
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.PR_TITLE
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.`private`
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.internal
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.public
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -46,7 +45,7 @@ trait Allowautomerge extends StObject {
   var auto_init: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * @description Either `true` to allow automatically deleting head branches when pull requests are merged, or `false` to prevent automatic deletion.
+    * @description Either `true` to allow automatically deleting head branches when pull requests are merged, or `false` to prevent automatic deletion. **The authenticated user must be an organization owner to set this property to `true`.**
     * @default false
     */
   var delete_branch_on_merge: js.UndefOr[Boolean] = js.undefined
@@ -56,6 +55,13 @@ trait Allowautomerge extends StObject {
   
   /** @description Desired language or platform [.gitignore template](https://github.com/github/gitignore) to apply. Use the name of the template without the extension. For example, "Haskell". */
   var gitignore_template: js.UndefOr[String] = js.undefined
+  
+  /**
+    * @description Whether downloads are enabled.
+    * @default true
+    * @example true
+    */
+  var has_downloads: js.UndefOr[Boolean] = js.undefined
   
   /**
     * @description Either `true` to enable issues for this repository or `false` to disable them.
@@ -145,10 +151,10 @@ trait Allowautomerge extends StObject {
   var use_squash_pr_title_as_default: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * @description Can be `public` or `private`. If your organization is associated with an enterprise account using GitHub Enterprise Cloud or GitHub Enterprise Server 2.20+, `visibility` can also be `internal`. Note: For GitHub Enterprise Server and GitHub AE, this endpoint will only list repositories available to all users on the enterprise. For more information, see "[Creating an internal repository](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/about-repository-visibility#about-internal-repositories)" in the GitHub Help documentation.
+    * @description The visibility of the repository.
     * @enum {string}
     */
-  var visibility: js.UndefOr[public | `private` | internal] = js.undefined
+  var visibility: js.UndefOr[public | `private`] = js.undefined
 }
 object Allowautomerge {
   
@@ -191,6 +197,10 @@ object Allowautomerge {
     inline def setGitignore_template(value: String): Self = StObject.set(x, "gitignore_template", value.asInstanceOf[js.Any])
     
     inline def setGitignore_templateUndefined: Self = StObject.set(x, "gitignore_template", js.undefined)
+    
+    inline def setHas_downloads(value: Boolean): Self = StObject.set(x, "has_downloads", value.asInstanceOf[js.Any])
+    
+    inline def setHas_downloadsUndefined: Self = StObject.set(x, "has_downloads", js.undefined)
     
     inline def setHas_issues(value: Boolean): Self = StObject.set(x, "has_issues", value.asInstanceOf[js.Any])
     
@@ -246,7 +256,7 @@ object Allowautomerge {
     
     inline def setUse_squash_pr_title_as_defaultUndefined: Self = StObject.set(x, "use_squash_pr_title_as_default", js.undefined)
     
-    inline def setVisibility(value: public | `private` | internal): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
+    inline def setVisibility(value: public | `private`): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
     
     inline def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
   }

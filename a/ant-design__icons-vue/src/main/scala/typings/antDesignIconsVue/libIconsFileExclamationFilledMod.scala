@@ -16,7 +16,7 @@ object libIconsFileExclamationFilledMod extends Shortcut {
   @js.native
   trait FileExclamationFilledIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_FileExclamationFilledIconType: String = js.native

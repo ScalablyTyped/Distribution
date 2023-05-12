@@ -100,7 +100,7 @@ open class PostProcessStage protected () extends StObject {
     * if (czm_selected(v_textureCoordinates)) {
     *     // apply post-process stage
     * } else {
-    *     gl_FragColor = texture2D(colorTexture, v_textureCoordinates);
+    *     out_FragColor = texture(colorTexture, v_textureCoordinates);
     * }
     * </code>
     * </p>

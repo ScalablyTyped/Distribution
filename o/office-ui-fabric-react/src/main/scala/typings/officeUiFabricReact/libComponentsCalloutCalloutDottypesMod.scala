@@ -4,6 +4,7 @@ import typings.fluentuiTheme.libTypesIthemeMod.ITheme
 import typings.officeUiFabricReact.anon.ContainsFocus
 import typings.officeUiFabricReact.libCommonDirectionalHintMod.DirectionalHint
 import typings.officeUiFabricReact.libComponentsLayerLayerDottypesMod.ILayerProps
+import typings.officeUiFabricReact.libComponentsPopupPopupDottypesMod.IPopupProps
 import typings.officeUiFabricReact.libUtilitiesPositioningPositioningDottypesMod.ICalloutPositionedInfo
 import typings.react.mod.FocusEvent
 import typings.react.mod.HTMLAttributes
@@ -368,6 +369,11 @@ object libComponentsCalloutCalloutDottypesMod {
     var onScroll_ICalloutProps: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
+      * Optional props to pass the Popup component that the callout uses.
+      */
+    var popupProps: js.UndefOr[IPopupProps] = js.undefined
+    
+    /**
       * If defined, then takes priority over preventDismissOnLostFocus, preventDismissOnResize,
       * and preventDismissOnScroll.
       * If it returns true, then callout will not dismiss for this event.
@@ -587,6 +593,10 @@ object libComponentsCalloutCalloutDottypesMod {
       inline def setOnScroll(value: () => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction0(value))
       
       inline def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
+      
+      inline def setPopupProps(value: IPopupProps): Self = StObject.set(x, "popupProps", value.asInstanceOf[js.Any])
+      
+      inline def setPopupPropsUndefined: Self = StObject.set(x, "popupProps", js.undefined)
       
       inline def setPreventDismissOnEvent(
         value: /* ev */ Event | (FocusEvent[Element, Element]) | KeyboardEvent[Element] | (MouseEvent[Element, NativeMouseEvent]) => Boolean

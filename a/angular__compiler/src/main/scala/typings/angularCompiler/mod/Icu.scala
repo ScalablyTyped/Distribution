@@ -14,7 +14,7 @@ trait Icu
   
   var expression: String = js.native
   
-  var expressionPlaceholder: String = js.native
+  var expressionPlaceholder: js.UndefOr[String] = js.native
   
   var `type`: String = js.native
 }

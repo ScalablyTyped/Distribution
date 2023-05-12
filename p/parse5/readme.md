@@ -1,7 +1,7 @@
 
 # Scala.js typings for parse5
 
-Typings are for version 7.1.1
+Typings are for version 7.1.2
 
 ## Library description:
 HTML parser and serializer.

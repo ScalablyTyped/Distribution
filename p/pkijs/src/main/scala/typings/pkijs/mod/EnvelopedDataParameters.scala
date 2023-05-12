@@ -4,8 +4,13 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined pkijs.pkijs.PkiObjectParameters & std.Partial<pkijs.pkijs.IEnvelopedData> */
+/* Inlined pkijs.pkijs.PkiObjectParameters & std.Partial<pkijs.pkijs.IEnvelopedData> & pkijs.pkijs.EncryptedContentInfoSplit */
 trait EnvelopedDataParameters extends StObject {
+  
+  /**
+    * Disables OctetString splitting for encryptedContent.
+    */
+  var disableSplit: js.UndefOr[Boolean] = js.undefined
   
   var encryptedContentInfo: js.UndefOr[EncryptedContentInfo] = js.undefined
   
@@ -28,6 +33,10 @@ object EnvelopedDataParameters {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: EnvelopedDataParameters] (val x: Self) extends AnyVal {
+    
+    inline def setDisableSplit(value: Boolean): Self = StObject.set(x, "disableSplit", value.asInstanceOf[js.Any])
+    
+    inline def setDisableSplitUndefined: Self = StObject.set(x, "disableSplit", js.undefined)
     
     inline def setEncryptedContentInfo(value: EncryptedContentInfo): Self = StObject.set(x, "encryptedContentInfo", value.asInstanceOf[js.Any])
     

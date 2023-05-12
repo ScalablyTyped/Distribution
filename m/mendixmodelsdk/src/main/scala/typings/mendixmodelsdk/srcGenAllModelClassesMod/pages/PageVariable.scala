@@ -45,6 +45,17 @@ object PageVariable {
   /**
     * Creates and returns a new PageVariable instance in the SDK and on the server.
     * The new PageVariable will be automatically stored in the 'sourceVariable' property
+    * of the parent AssociationWidget element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  9.24.0 and higher
+    */
+  /* static member */
+  inline def createInAssociationWidgetUnderSourceVariable(container: typings.mendixmodelsdk.srcGenPagesMod.pages.AssociationWidget): typings.mendixmodelsdk.srcGenPagesMod.pages.PageVariable = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAssociationWidgetUnderSourceVariable")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.PageVariable]
+  
+  /**
+    * Creates and returns a new PageVariable instance in the SDK and on the server.
+    * The new PageVariable will be automatically stored in the 'sourceVariable' property
     * of the parent AttributeWidget element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
@@ -52,6 +63,28 @@ object PageVariable {
     */
   /* static member */
   inline def createInAttributeWidgetUnderSourceVariable(container: typings.mendixmodelsdk.srcGenPagesMod.pages.AttributeWidget): typings.mendixmodelsdk.srcGenPagesMod.pages.PageVariable = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetUnderSourceVariable")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.PageVariable]
+  
+  /**
+    * Creates and returns a new PageVariable instance in the SDK and on the server.
+    * The new PageVariable will be automatically stored in the 'sourceVariable' property
+    * of the parent ClientTemplateParameter element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  9.24.0 and higher
+    */
+  /* static member */
+  inline def createInClientTemplateParameterUnderSourceVariable(container: typings.mendixmodelsdk.srcGenPagesMod.pages.ClientTemplateParameter): typings.mendixmodelsdk.srcGenPagesMod.pages.PageVariable = ^.asInstanceOf[js.Dynamic].applyDynamic("createInClientTemplateParameterUnderSourceVariable")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.PageVariable]
+  
+  /**
+    * Creates and returns a new PageVariable instance in the SDK and on the server.
+    * The new PageVariable will be automatically stored in the 'sourceVariable' property
+    * of the parent ConditionalSettings element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  9.24.0 and higher
+    */
+  /* static member */
+  inline def createInConditionalSettingsUnderSourceVariable(container: typings.mendixmodelsdk.srcGenPagesMod.pages.ConditionalSettings): typings.mendixmodelsdk.srcGenPagesMod.pages.PageVariable = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConditionalSettingsUnderSourceVariable")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.PageVariable]
   
   /**
     * Creates and returns a new PageVariable instance in the SDK and on the server.
@@ -85,6 +118,17 @@ object PageVariable {
     */
   /* static member */
   inline def createInPageParameterMappingUnderVariable(container: typings.mendixmodelsdk.srcGenPagesMod.pages.PageParameterMapping): typings.mendixmodelsdk.srcGenPagesMod.pages.PageVariable = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPageParameterMappingUnderVariable")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.PageVariable]
+  
+  /**
+    * Creates and returns a new PageVariable instance in the SDK and on the server.
+    * The new PageVariable will be automatically stored in the 'variable' property
+    * of the parent SnippetParameterMapping element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  9.21.0 and higher
+    */
+  /* static member */
+  inline def createInSnippetParameterMappingUnderVariable(container: typings.mendixmodelsdk.srcGenPagesMod.pages.SnippetParameterMapping): typings.mendixmodelsdk.srcGenPagesMod.pages.PageVariable = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetParameterMappingUnderVariable")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenPagesMod.pages.PageVariable]
   
   /**
     * Creates and returns a new PageVariable instance in the SDK and on the server.

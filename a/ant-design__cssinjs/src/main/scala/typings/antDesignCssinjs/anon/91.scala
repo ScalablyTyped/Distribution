@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.PaddingRight
+import typings.csstype.mod.Property.PageBreakAfter
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,13 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `91` extends StObject {
   
   var value: js.UndefOr[
-    (PaddingRight[Double | String]) | (js.Array[
+    PageBreakAfter | (js.Array[
       (Extract[
-        js.UndefOr[
-          (PaddingRight[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingRight[Double | String]]]])
-        ], 
+        js.UndefOr[PageBreakAfter | js.Array[NonNullable[js.UndefOr[PageBreakAfter]]]], 
         String
-      ]) | (NonNullable[js.UndefOr[PaddingRight[Double | String]]])
+      ]) | NonNullable[js.UndefOr[PageBreakAfter]]
     ])
   ] = js.native
 }

@@ -102,6 +102,25 @@ trait Chart
   val format: ChartAreaFormat = js.native
   
   /**
+    * Gets the data source of the whole chart. If the data range is empty, this method will return the `EmptyChartSeries` error.
+    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  def getDataRange(): ClientResult[String] = js.native
+  
+  /**
+    * Gets the data source of the whole chart. If the data range is empty, then this method returns an object with its `isNullObject` property set to `true`.
+    For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  def getDataRangeOrNullObject(): ClientResult[String] = js.native
+  
+  /**
     * Gets the data table on the chart. If the chart doesn't allow a data table, it will throw an exception.
     *
     * @remarks

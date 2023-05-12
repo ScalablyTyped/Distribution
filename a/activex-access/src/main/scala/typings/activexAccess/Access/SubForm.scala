@@ -41,7 +41,7 @@ trait SubForm extends StObject {
   var ControlType: Double = js.native
   
   def Controls[T](Index: String): T = js.native
-  // tslint:disable-next-line:no-unnecessary-generics
+  // eslint-disable-next-line no-unnecessary-generics
   def Controls[T](Index: Double): T = js.native
   @JSName("Controls")
   val Controls_Original: Controls = js.native

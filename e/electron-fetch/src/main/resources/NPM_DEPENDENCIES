@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "electron-fetch" : "1.7.4"
+      "electron-fetch" : "1.9.1"
     }
   ],
   "test-dependencies" : [
     {
-      "electron-fetch" : "1.7.4"
+      "electron-fetch" : "1.9.1"
     }
   ],
   "compile-devDependencies" : [

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "seq-logging" : "1.1.2"
+      "seq-logging" : "2.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "seq-logging" : "1.1.2"
+      "seq-logging" : "2.0.0"
     }
   ],
   "compile-devDependencies" : [

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@libp2p/bootstrap" : "5.0.0"
+      "@libp2p/bootstrap" : "8.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@libp2p/bootstrap" : "5.0.0"
+      "@libp2p/bootstrap" : "8.0.0"
     }
   ],
   "compile-devDependencies" : [

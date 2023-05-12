@@ -2,6 +2,8 @@ package typings.leafletGpx
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.leaflet.mod.FeatureGroup_
+import typings.leaflet.mod.IconOptions
+import typings.leaflet.mod.Icon_
 import typings.leaflet.mod.PolylineOptions
 import typings.leafletGpx.anon.ParseElements
 import org.scalablytyped.runtime.StObject
@@ -104,13 +106,19 @@ object leafletMod {
   
   trait GPXMarkerOptions extends StObject {
     
+    var endIcon: js.UndefOr[Icon_[IconOptions]] = js.undefined
+    
     var endIconUrl: js.UndefOr[String] = js.undefined
     
     var shadowUrl: js.UndefOr[String] = js.undefined
     
+    var startIcon: js.UndefOr[Icon_[IconOptions]] = js.undefined
+    
     var startIconUrl: js.UndefOr[String] = js.undefined
     
     var wptIconUrls: js.UndefOr[StringDictionary[String]] = js.undefined
+    
+    var wptIcons: js.UndefOr[StringDictionary[Icon_[IconOptions]]] = js.undefined
   }
   object GPXMarkerOptions {
     
@@ -122,6 +130,10 @@ object leafletMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: GPXMarkerOptions] (val x: Self) extends AnyVal {
       
+      inline def setEndIcon(value: Icon_[IconOptions]): Self = StObject.set(x, "endIcon", value.asInstanceOf[js.Any])
+      
+      inline def setEndIconUndefined: Self = StObject.set(x, "endIcon", js.undefined)
+      
       inline def setEndIconUrl(value: String): Self = StObject.set(x, "endIconUrl", value.asInstanceOf[js.Any])
       
       inline def setEndIconUrlUndefined: Self = StObject.set(x, "endIconUrl", js.undefined)
@@ -130,6 +142,10 @@ object leafletMod {
       
       inline def setShadowUrlUndefined: Self = StObject.set(x, "shadowUrl", js.undefined)
       
+      inline def setStartIcon(value: Icon_[IconOptions]): Self = StObject.set(x, "startIcon", value.asInstanceOf[js.Any])
+      
+      inline def setStartIconUndefined: Self = StObject.set(x, "startIcon", js.undefined)
+      
       inline def setStartIconUrl(value: String): Self = StObject.set(x, "startIconUrl", value.asInstanceOf[js.Any])
       
       inline def setStartIconUrlUndefined: Self = StObject.set(x, "startIconUrl", js.undefined)
@@ -137,6 +153,10 @@ object leafletMod {
       inline def setWptIconUrls(value: StringDictionary[String]): Self = StObject.set(x, "wptIconUrls", value.asInstanceOf[js.Any])
       
       inline def setWptIconUrlsUndefined: Self = StObject.set(x, "wptIconUrls", js.undefined)
+      
+      inline def setWptIcons(value: StringDictionary[Icon_[IconOptions]]): Self = StObject.set(x, "wptIcons", value.asInstanceOf[js.Any])
+      
+      inline def setWptIconsUndefined: Self = StObject.set(x, "wptIcons", js.undefined)
     }
   }
   

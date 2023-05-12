@@ -1,17 +1,18 @@
 package typings.awsSdkClientCognitoIdentity.mod
 
+import typings.awsSdkClientCognitoIdentity.awsSdkClientCognitoIdentityStrings.AccessDenied
+import typings.awsSdkClientCognitoIdentity.awsSdkClientCognitoIdentityStrings.InternalServerError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-cognito-identity", "ErrorCode")
-@js.native
-object ErrorCode extends StObject {
+object ErrorCode {
   
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.awsSdkClientCognitoIdentity.distTypesModelsModels0Mod.ErrorCode & String] = js.native
+  @JSImport("@aws-sdk/client-cognito-identity", "ErrorCode.ACCESS_DENIED")
+  @js.native
+  val ACCESS_DENIED: AccessDenied = js.native
   
-  /* "AccessDenied" */ val ACCESS_DENIED: typings.awsSdkClientCognitoIdentity.distTypesModelsModels0Mod.ErrorCode.ACCESS_DENIED & String = js.native
-  
-  /* "InternalServerError" */ val INTERNAL_SERVER_ERROR: typings.awsSdkClientCognitoIdentity.distTypesModelsModels0Mod.ErrorCode.INTERNAL_SERVER_ERROR & String = js.native
+  @JSImport("@aws-sdk/client-cognito-identity", "ErrorCode.INTERNAL_SERVER_ERROR")
+  @js.native
+  val INTERNAL_SERVER_ERROR: InternalServerError = js.native
 }

@@ -156,6 +156,8 @@ object mod {
     
     var nextLabel: js.UndefOr[String] = js.undefined
     
+    var nextToDone: js.UndefOr[Boolean] = js.undefined
+    
     var overlayOpacity: js.UndefOr[Double] = js.undefined
     
     var positionPrecedence: js.UndefOr[js.Array[String]] = js.undefined
@@ -249,6 +251,10 @@ object mod {
       inline def setNextLabel(value: String): Self = StObject.set(x, "nextLabel", value.asInstanceOf[js.Any])
       
       inline def setNextLabelUndefined: Self = StObject.set(x, "nextLabel", js.undefined)
+      
+      inline def setNextToDone(value: Boolean): Self = StObject.set(x, "nextToDone", value.asInstanceOf[js.Any])
+      
+      inline def setNextToDoneUndefined: Self = StObject.set(x, "nextToDone", js.undefined)
       
       inline def setOverlayOpacity(value: Double): Self = StObject.set(x, "overlayOpacity", value.asInstanceOf[js.Any])
       

@@ -1,6 +1,6 @@
 package typings.tensorflowTfjsBackendWebgl.anon
 
-import typings.tensorflowTfjsBackendWebgl.tensorflowTfjsBackendWebglStrings.int
+import typings.tensorflowTfjsBackendWebgl.tensorflowTfjsBackendWebglStrings.ivec4
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,13 +9,13 @@ trait NameString extends StObject {
   
   var name: String
   
-  var `type`: int
+  var `type`: ivec4
 }
 object NameString {
   
   inline def apply(name: String): NameString = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")("int")
+    __obj.updateDynamic("type")("ivec4")
     __obj.asInstanceOf[NameString]
   }
   
@@ -24,6 +24,6 @@ object NameString {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setType(value: int): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ivec4): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -22,7 +22,7 @@ trait GetContactChannelResult extends StObject {
   var ContactChannelArn: SsmContactsArn
   
   /**
-    * The details that Incident Manager uses when trying to engage the contact channel. 
+    * The details that Incident Manager uses when trying to engage the contact channel.
     */
   var DeliveryAddress: ContactChannelAddress
   

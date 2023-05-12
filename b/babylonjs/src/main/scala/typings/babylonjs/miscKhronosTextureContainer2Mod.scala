@@ -3,11 +3,87 @@ package typings.babylonjs
 import typings.babylonjs.anon.JsDecoderModule
 import typings.babylonjs.enginesThinEngineMod.ThinEngine
 import typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture
+import typings.babylonjs.materialsTexturesKtx2decoderTypesMod.IDecodedData
+import typings.babylonjs.materialsTexturesKtx2decoderTypesMod.IKTX2DecoderOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object miscKhronosTextureContainer2Mod {
+  
+  @JSImport("babylonjs/Misc/khronosTextureContainer2", "DefaultKTX2DecoderOptions")
+  @js.native
+  open class DefaultKTX2DecoderOptions () extends StObject {
+    
+    /* private */ var _bypassTranscoders: Any = js.native
+    
+    /* private */ var _forceR8: Any = js.native
+    
+    /* private */ var _forceRG8: Any = js.native
+    
+    /* private */ var _forceRGBA: Any = js.native
+    
+    /** @internal */
+    def _getKTX2DecoderOptions(): IKTX2DecoderOptions = js.native
+    
+    /* private */ var _isDirty: Any = js.native
+    
+    /* private */ var _ktx2DecoderOptions: Any = js.native
+    
+    /* private */ var _useRGBAIfASTCBC7NotAvailableWhenUASTC: Any = js.native
+    
+    /* private */ var _useRGBAIfOnlyBC1BC3AvailableWhenUASTC: Any = js.native
+    
+    /**
+      * list of transcoders to bypass when looking for a suitable transcoder. The available transcoders are:
+      *      UniversalTranscoder_UASTC_ASTC
+      *      UniversalTranscoder_UASTC_BC7
+      *      UniversalTranscoder_UASTC_RGBA_UNORM
+      *      UniversalTranscoder_UASTC_RGBA_SRGB
+      *      UniversalTranscoder_UASTC_R8_UNORM
+      *      UniversalTranscoder_UASTC_RG8_UNORM
+      *      MSCTranscoder
+      */
+    def bypassTranscoders: js.UndefOr[js.Array[String]] = js.native
+    def bypassTranscoders_=(value: js.UndefOr[js.Array[String]]): Unit = js.native
+    
+    /**
+      * force to always use (uncompressed) R8 for transcoded format
+      */
+    def forceR8: js.UndefOr[Boolean] = js.native
+    def forceR8_=(value: js.UndefOr[Boolean]): Unit = js.native
+    
+    /**
+      * force to always use (uncompressed) RG8 for transcoded format
+      */
+    def forceRG8: js.UndefOr[Boolean] = js.native
+    def forceRG8_=(value: js.UndefOr[Boolean]): Unit = js.native
+    
+    /**
+      * force to always use (uncompressed) RGBA for transcoded format
+      */
+    def forceRGBA: js.UndefOr[Boolean] = js.native
+    def forceRGBA_=(value: js.UndefOr[Boolean]): Unit = js.native
+    
+    /**
+      * Gets the dirty flag
+      */
+    def isDirty: Boolean = js.native
+    
+    /**
+      * force a (uncompressed) RGBA transcoded format if transcoding a UASTC source format and ASTC + BC7 are not available as a compressed transcoded format
+      */
+    def useRGBAIfASTCBC7NotAvailableWhenUASTC: js.UndefOr[Boolean] = js.native
+    def useRGBAIfASTCBC7NotAvailableWhenUASTC_=(value: js.UndefOr[Boolean]): Unit = js.native
+    
+    /**
+      * force a (uncompressed) RGBA transcoded format if transcoding a UASTC source format and only BC1 or BC3 are available as a compressed transcoded format.
+      * This property is true by default to favor speed over memory, because currently transcoding from UASTC to BC1/3 is slow because the transcoder transcodes
+      * to uncompressed and then recompresses the texture
+      */
+    def useRGBAIfOnlyBC1BC3AvailableWhenUASTC: js.UndefOr[Boolean] = js.native
+    def useRGBAIfOnlyBC1BC3AvailableWhenUASTC_=(value: js.UndefOr[Boolean]): Unit = js.native
+  }
   
   @JSImport("babylonjs/Misc/khronosTextureContainer2", "KhronosTextureContainer2")
   @js.native
@@ -20,8 +96,8 @@ object miscKhronosTextureContainer2Mod {
     def this(engine: ThinEngine) = this()
     def this(engine: ThinEngine, numWorkers: Double) = this()
     
-    /* protected */ def _createTexture(data: Any, internalTexture: InternalTexture): Unit = js.native
-    /* protected */ def _createTexture(data: Any, internalTexture: InternalTexture, options: Any): Unit = js.native
+    /* protected */ def _createTexture(data: IDecodedData, internalTexture: InternalTexture): Unit = js.native
+    /* protected */ def _createTexture(data: IDecodedData, internalTexture: InternalTexture, options: IKTX2DecoderOptions & IDecodedData): Unit = js.native
     
     /* private */ var _engine: Any = js.native
     
@@ -29,7 +105,11 @@ object miscKhronosTextureContainer2Mod {
       * @internal
       */
     def uploadAsync(data: js.typedarray.ArrayBufferView, internalTexture: InternalTexture): js.Promise[Unit] = js.native
-    def uploadAsync(data: js.typedarray.ArrayBufferView, internalTexture: InternalTexture, options: Any): js.Promise[Unit] = js.native
+    def uploadAsync(
+      data: js.typedarray.ArrayBufferView,
+      internalTexture: InternalTexture,
+      options: IKTX2DecoderOptions & IDecodedData
+    ): js.Promise[Unit] = js.native
   }
   /* static members */
   object KhronosTextureContainer2 {
@@ -37,6 +117,15 @@ object miscKhronosTextureContainer2Mod {
     @JSImport("babylonjs/Misc/khronosTextureContainer2", "KhronosTextureContainer2")
     @js.native
     val ^ : js.Any = js.native
+    
+    /**
+      * Default configuration for the KTX2 decoder.
+      * The options defined in this way have priority over those passed when creating a KTX2 texture with new Texture(...).
+      */
+    @JSImport("babylonjs/Misc/khronosTextureContainer2", "KhronosTextureContainer2.DefaultDecoderOptions")
+    @js.native
+    def DefaultDecoderOptions: DefaultKTX2DecoderOptions = js.native
+    inline def DefaultDecoderOptions_=(x: DefaultKTX2DecoderOptions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultDecoderOptions")(x.asInstanceOf[js.Any])
     
     /**
       * Default number of workers used to handle data decoding
@@ -68,6 +157,8 @@ object miscKhronosTextureContainer2Mod {
       *     URLConfig.wasmUASTCToBC7
       *     URLConfig.wasmUASTCToRGBA_UNORM
       *     URLConfig.wasmUASTCToRGBA_SRGB
+      *     URLConfig.wasmUASTCToR8_UNORM
+      *     URLConfig.wasmUASTCToRG8_UNORM
       *     URLConfig.jsMSCTranscoder
       *     URLConfig.wasmMSCTranscoder
       *     URLConfig.wasmZSTDDecoder

@@ -30,6 +30,11 @@ trait ClinicalImpression
   var _summary: js.UndefOr[Element] = js.undefined
   
   /**
+    * Change in the status/pattern of a subject's condition since previously assessed, such as worsening, improving, or no change.  It is a subjective assessment of the direction of the change.
+    */
+  var changePattern: js.UndefOr[CodeableConcept] = js.undefined
+  
+  /**
     * Indicates when the documentation of the assessment was complete.
     */
   var date: js.UndefOr[String] = js.undefined
@@ -140,6 +145,10 @@ object ClinicalImpression {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: ClinicalImpression] (val x: Self) extends AnyVal {
+    
+    inline def setChangePattern(value: CodeableConcept): Self = StObject.set(x, "changePattern", value.asInstanceOf[js.Any])
+    
+    inline def setChangePatternUndefined: Self = StObject.set(x, "changePattern", js.undefined)
     
     inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     

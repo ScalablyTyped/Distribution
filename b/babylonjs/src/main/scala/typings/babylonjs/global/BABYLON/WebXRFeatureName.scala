@@ -27,6 +27,13 @@ object WebXRFeatureName {
   val BACKGROUND_REMOVER: /* "xr-background-remover" */ String = js.native
   
   /**
+    * The name of the depth sensing feature
+    */
+  @JSGlobal("BABYLON.WebXRFeatureName.DEPTH_SENSING")
+  @js.native
+  val DEPTH_SENSING: /* "xr-depth-sensing" */ String = js.native
+  
+  /**
     * The name of the DOM overlay feature
     */
   @JSGlobal("BABYLON.WebXRFeatureName.DOM_OVERLAY")

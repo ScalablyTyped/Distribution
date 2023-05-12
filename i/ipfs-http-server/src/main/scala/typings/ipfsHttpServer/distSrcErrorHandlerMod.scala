@@ -1,5 +1,6 @@
 package typings.ipfsHttpServer
 
+import typings.hapiHapi.libTypesServerServerMod.ServerApplicationState
 import typings.ipfsHttpServer.distSrcTypesMod.Server
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,5 +12,5 @@ object distSrcErrorHandlerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def errorHandler(server: Server): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("errorHandler")(server.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def errorHandler(server: Server[ServerApplicationState]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("errorHandler")(server.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

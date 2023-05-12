@@ -58,8 +58,6 @@ trait ActivityDefinition
   
   var _status: js.UndefOr[Element] = js.undefined
   
-  var _subjectCanonical: js.UndefOr[Element] = js.undefined
-  
   var _subtitle: js.UndefOr[Element] = js.undefined
   
   var _timingDateTime: js.UndefOr[Element] = js.undefined
@@ -266,17 +264,12 @@ trait ActivityDefinition
   var status: draft | active | retired | unknown
   
   /**
-    * A code, group definition, or canonical reference that describes  or identifies the intended subject of the activity being defined.  Canonical references are allowed to support the definition of protocols for drug and substance quality specifications, and is allowed to reference a MedicinalProductDefinition, SubstanceDefinition, AdministrableProductDefinition, ManufacturedItemDefinition, or PackagedProductDefinition resource.
-    */
-  var subjectCanonical: js.UndefOr[String] = js.undefined
-  
-  /**
-    * A code, group definition, or canonical reference that describes  or identifies the intended subject of the activity being defined.  Canonical references are allowed to support the definition of protocols for drug and substance quality specifications, and is allowed to reference a MedicinalProductDefinition, SubstanceDefinition, AdministrableProductDefinition, ManufacturedItemDefinition, or PackagedProductDefinition resource.
+    * A code or group definition that describes the intended subject of the activity being defined.
     */
   var subjectCodeableConcept: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
-    * A code, group definition, or canonical reference that describes  or identifies the intended subject of the activity being defined.  Canonical references are allowed to support the definition of protocols for drug and substance quality specifications, and is allowed to reference a MedicinalProductDefinition, SubstanceDefinition, AdministrableProductDefinition, ManufacturedItemDefinition, or PackagedProductDefinition resource.
+    * A code or group definition that describes the intended subject of the activity being defined.
     */
   var subjectReference: js.UndefOr[Reference] = js.undefined
   
@@ -544,10 +537,6 @@ object ActivityDefinition {
     
     inline def setStatus(value: draft | active | retired | unknown): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    inline def setSubjectCanonical(value: String): Self = StObject.set(x, "subjectCanonical", value.asInstanceOf[js.Any])
-    
-    inline def setSubjectCanonicalUndefined: Self = StObject.set(x, "subjectCanonical", js.undefined)
-    
     inline def setSubjectCodeableConcept(value: CodeableConcept): Self = StObject.set(x, "subjectCodeableConcept", value.asInstanceOf[js.Any])
     
     inline def setSubjectCodeableConceptUndefined: Self = StObject.set(x, "subjectCodeableConcept", js.undefined)
@@ -681,10 +670,6 @@ object ActivityDefinition {
     inline def set_status(value: Element): Self = StObject.set(x, "_status", value.asInstanceOf[js.Any])
     
     inline def set_statusUndefined: Self = StObject.set(x, "_status", js.undefined)
-    
-    inline def set_subjectCanonical(value: Element): Self = StObject.set(x, "_subjectCanonical", value.asInstanceOf[js.Any])
-    
-    inline def set_subjectCanonicalUndefined: Self = StObject.set(x, "_subjectCanonical", js.undefined)
     
     inline def set_subtitle(value: Element): Self = StObject.set(x, "_subtitle", value.asInstanceOf[js.Any])
     

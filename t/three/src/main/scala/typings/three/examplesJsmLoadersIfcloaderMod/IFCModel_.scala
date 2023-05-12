@@ -2,6 +2,7 @@ package typings.three.examplesJsmLoadersIfcloaderMod
 
 import typings.three.anon.Children
 import typings.three.srcCoreBufferGeometryMod.BufferGeometry
+import typings.three.srcCoreBufferGeometryMod.NormalBufferAttributes
 import typings.three.srcCoreEventDispatcherMod.Event
 import typings.three.srcMaterialsMaterialMod.Material
 import typings.three.srcThreeMod.Mesh
@@ -13,11 +14,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("three/examples/jsm/loaders/IFCLoader", "IFCModel")
 @js.native
+/**
+  * Create a new instance of {@link Mesh}
+  * @param geometry An instance of {@link THREE.BufferGeometry | BufferGeometry}. Default {@link THREE.BufferGeometry | `new THREE.BufferGeometry()`}.
+  * @param material A single or an array of {@link THREE.Material | Material}. Default {@link THREE.MeshBasicMaterial | `new THREE.MeshBasicMaterial()`}.
+  */
 open class IFCModel_ ()
-  extends Mesh[BufferGeometry, Material | js.Array[Material]] {
-  def this(geometry: BufferGeometry) = this()
+  extends Mesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]] {
+  def this(geometry: BufferGeometry[NormalBufferAttributes]) = this()
   def this(geometry: Unit, material: Material | js.Array[Material]) = this()
-  def this(geometry: BufferGeometry, material: Material | js.Array[Material]) = this()
+  def this(geometry: BufferGeometry[NormalBufferAttributes], material: Material | js.Array[Material]) = this()
   
   /**
     * @deprecated Use `IfcModel.ifcManager.close` instead.
@@ -38,7 +44,7 @@ open class IFCModel_ ()
     * - **removePrevious**: Wether to remove the previous subset of this model with this material.
     * - **material**: (optional) Wether to apply a material to the subset
     */
-  def createSubset(config: HighlightConfig): Unit | (Mesh[BufferGeometry, Material | js.Array[Material]]) = js.native
+  def createSubset(config: HighlightConfig): Unit | (Mesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]]) = js.native
   
   /**
     * @deprecated Use `IfcModel.ifcManager.getAllItemsOfType` instead.
@@ -64,7 +70,7 @@ open class IFCModel_ ()
     * @geometry The geometry of the IFC model.
     * @faceIndex The index of the face of a geometry.You can easily get this index using the [Raycaster](https://threejs.org/docs/#api/en/core/Raycaster).
     */
-  def getExpressId(geometry: typings.three.srcThreeMod.BufferGeometry, faceIndex: Double): js.UndefOr[Double] = js.native
+  def getExpressId(geometry: typings.three.srcThreeMod.BufferGeometry[NormalBufferAttributes], faceIndex: Double): js.UndefOr[Double] = js.native
   
   /**
     * @deprecated Use `IfcModel.ifcManager.getIfcType` instead.
@@ -115,8 +121,8 @@ open class IFCModel_ ()
     * If no material is given, this returns the subset with the original materials.
     * @material Material assigned to the subset, if any.
     */
-  def getSubset(): (Mesh[BufferGeometry, Material | js.Array[Material]]) | Null = js.native
-  def getSubset(material: typings.three.srcThreeMod.Material): (Mesh[BufferGeometry, Material | js.Array[Material]]) | Null = js.native
+  def getSubset(): (Mesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]]) | Null = js.native
+  def getSubset(material: typings.three.srcThreeMod.Material): (Mesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]]) | Null = js.native
   
   /**
     * @deprecated Use `IfcModel.ifcManager.getTypeProperties` instead.

@@ -5,12 +5,11 @@ import typings.phaser.Phaser.GameObjects.Components.BlendMode
 import typings.phaser.Phaser.GameObjects.Components.ComputedSize
 import typings.phaser.Phaser.GameObjects.Components.Depth
 import typings.phaser.Phaser.GameObjects.Components.Mask
-import typings.phaser.Phaser.GameObjects.Components.Pipeline
+import typings.phaser.Phaser.GameObjects.Components.PostPipeline
 import typings.phaser.Phaser.GameObjects.Components.Transform
 import typings.phaser.Phaser.GameObjects.Components.TransformMatrix
 import typings.phaser.Phaser.GameObjects.Components.Visible
-import typings.phaser.Phaser.Geom.Point
-import typings.phaser.Phaser.Math.Vector2
+import typings.phaser.Phaser.Types.Math.Vector2Like
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -66,21 +65,19 @@ trait Container
      with ComputedSize
      with Depth
      with Mask
-     with Pipeline
+     with PostPipeline
      with Transform
      with Visible {
   
-  def add(child: js.Array[GameObject]): this.type = js.native
   /**
     * Adds the given Game Object, or array of Game Objects, to this Container.
     * 
     * Each Game Object must be unique within the Container.
     * @param child The Game Object, or array of Game Objects, to add to the Container.
     */
-  def add(child: GameObject): this.type = js.native
+  def add[T /* <: GameObject */](child: T): this.type = js.native
+  def add[T /* <: GameObject */](child: js.Array[T]): this.type = js.native
   
-  def addAt(child: js.Array[GameObject]): this.type = js.native
-  def addAt(child: js.Array[GameObject], index: Double): this.type = js.native
   /**
     * Adds the given Game Object, or array of Game Objects, to this Container at the specified position.
     * 
@@ -90,15 +87,17 @@ trait Container
     * @param child The Game Object, or array of Game Objects, to add to the Container.
     * @param index The position to insert the Game Object/s at. Default 0.
     */
-  def addAt(child: GameObject): this.type = js.native
-  def addAt(child: GameObject, index: Double): this.type = js.native
+  def addAt[T /* <: GameObject */](child: T): this.type = js.native
+  def addAt[T /* <: GameObject */](child: T, index: Double): this.type = js.native
+  def addAt[T /* <: GameObject */](child: js.Array[T]): this.type = js.native
+  def addAt[T /* <: GameObject */](child: js.Array[T], index: Double): this.type = js.native
   
   /**
     * Brings the given Game Object to the top of this Container.
     * This will cause it to render on-top of any other objects in the Container.
     * @param child The Game Object to bring to the top of the Container.
     */
-  def bringToTop(child: GameObject): this.type = js.native
+  def bringToTop[T /* <: GameObject */](child: T): this.type = js.native
   
   /**
     * Returns the total number of Game Objects in this Container that have a property
@@ -165,14 +164,14 @@ trait Container
     * This check does not scan nested Containers.
     * @param child The Game Object to check for within this Container.
     */
-  def exists(child: GameObject): Boolean = js.native
+  def exists[T /* <: GameObject */](child: T): Boolean = js.native
   
   /**
     * Returns the first Game Object within the Container, or `null` if it is empty.
     * 
     * You can move the cursor by calling `Container.next` and `Container.previous`.
     */
-  val first: GameObject = js.native
+  val first: GameObject | Null = js.native
   
   /**
     * Returns all Game Objects in this Container.
@@ -193,28 +192,28 @@ trait Container
     * @param startIndex An optional start index to search from. Default 0.
     * @param endIndex An optional end index to search up to (but not included) Default Container.length.
     */
-  def getAll(): js.Array[GameObject] = js.native
-  def getAll(property: String): js.Array[GameObject] = js.native
-  def getAll(property: String, value: Any): js.Array[GameObject] = js.native
-  def getAll(property: String, value: Any, startIndex: Double): js.Array[GameObject] = js.native
-  def getAll(property: String, value: Any, startIndex: Double, endIndex: Double): js.Array[GameObject] = js.native
-  def getAll(property: String, value: Any, startIndex: Unit, endIndex: Double): js.Array[GameObject] = js.native
-  def getAll(property: String, value: Unit, startIndex: Double): js.Array[GameObject] = js.native
-  def getAll(property: String, value: Unit, startIndex: Double, endIndex: Double): js.Array[GameObject] = js.native
-  def getAll(property: String, value: Unit, startIndex: Unit, endIndex: Double): js.Array[GameObject] = js.native
-  def getAll(property: Unit, value: Any): js.Array[GameObject] = js.native
-  def getAll(property: Unit, value: Any, startIndex: Double): js.Array[GameObject] = js.native
-  def getAll(property: Unit, value: Any, startIndex: Double, endIndex: Double): js.Array[GameObject] = js.native
-  def getAll(property: Unit, value: Any, startIndex: Unit, endIndex: Double): js.Array[GameObject] = js.native
-  def getAll(property: Unit, value: Unit, startIndex: Double): js.Array[GameObject] = js.native
-  def getAll(property: Unit, value: Unit, startIndex: Double, endIndex: Double): js.Array[GameObject] = js.native
-  def getAll(property: Unit, value: Unit, startIndex: Unit, endIndex: Double): js.Array[GameObject] = js.native
+  def getAll[T /* <: GameObject */](): js.Array[T] = js.native
+  def getAll[T /* <: GameObject */](property: String): js.Array[T] = js.native
+  def getAll[T /* <: GameObject */](property: String, value: Any): js.Array[T] = js.native
+  def getAll[T /* <: GameObject */](property: String, value: Any, startIndex: Double): js.Array[T] = js.native
+  def getAll[T /* <: GameObject */](property: String, value: Any, startIndex: Double, endIndex: Double): js.Array[T] = js.native
+  def getAll[T /* <: GameObject */](property: String, value: Any, startIndex: Unit, endIndex: Double): js.Array[T] = js.native
+  def getAll[T /* <: GameObject */](property: String, value: Unit, startIndex: Double): js.Array[T] = js.native
+  def getAll[T /* <: GameObject */](property: String, value: Unit, startIndex: Double, endIndex: Double): js.Array[T] = js.native
+  def getAll[T /* <: GameObject */](property: String, value: Unit, startIndex: Unit, endIndex: Double): js.Array[T] = js.native
+  def getAll[T /* <: GameObject */](property: Unit, value: Any): js.Array[T] = js.native
+  def getAll[T /* <: GameObject */](property: Unit, value: Any, startIndex: Double): js.Array[T] = js.native
+  def getAll[T /* <: GameObject */](property: Unit, value: Any, startIndex: Double, endIndex: Double): js.Array[T] = js.native
+  def getAll[T /* <: GameObject */](property: Unit, value: Any, startIndex: Unit, endIndex: Double): js.Array[T] = js.native
+  def getAll[T /* <: GameObject */](property: Unit, value: Unit, startIndex: Double): js.Array[T] = js.native
+  def getAll[T /* <: GameObject */](property: Unit, value: Unit, startIndex: Double, endIndex: Double): js.Array[T] = js.native
+  def getAll[T /* <: GameObject */](property: Unit, value: Unit, startIndex: Unit, endIndex: Double): js.Array[T] = js.native
   
   /**
     * Returns the Game Object at the given position in this Container.
     * @param index The position to get the Game Object from.
     */
-  def getAt(index: Double): GameObject = js.native
+  def getAt[T /* <: GameObject */](index: Double): T = js.native
   
   /**
     * Gets the bounds of this Container. It works by iterating all children of the Container,
@@ -245,7 +244,7 @@ trait Container
     * Should more than one child have the same name only the first is returned.
     * @param name The name to search for.
     */
-  def getByName(name: String): GameObject = js.native
+  def getByName[T /* <: GameObject */](name: String): T = js.native
   
   /**
     * Gets the first Game Object in this Container.
@@ -261,26 +260,26 @@ trait Container
     * @param startIndex An optional start index to search from. Default 0.
     * @param endIndex An optional end index to search up to (but not included) Default Container.length.
     */
-  def getFirst(property: String, value: Any): GameObject = js.native
-  def getFirst(property: String, value: Any, startIndex: Double): GameObject = js.native
-  def getFirst(property: String, value: Any, startIndex: Double, endIndex: Double): GameObject = js.native
-  def getFirst(property: String, value: Any, startIndex: Unit, endIndex: Double): GameObject = js.native
+  def getFirst[T /* <: GameObject */](property: String, value: Any): T = js.native
+  def getFirst[T /* <: GameObject */](property: String, value: Any, startIndex: Double): T = js.native
+  def getFirst[T /* <: GameObject */](property: String, value: Any, startIndex: Double, endIndex: Double): T = js.native
+  def getFirst[T /* <: GameObject */](property: String, value: Any, startIndex: Unit, endIndex: Double): T = js.native
   
   /**
     * Returns the index of the given Game Object in this Container.
     * @param child The Game Object to search for in this Container.
     */
-  def getIndex(child: GameObject): Double = js.native
+  def getIndex[T /* <: GameObject */](child: T): Double = js.native
   
   /**
     * Returns a random Game Object from this Container.
     * @param startIndex An optional start index. Default 0.
     * @param length An optional length, the total number of elements (from the startIndex) to choose from.
     */
-  def getRandom(): GameObject = js.native
-  def getRandom(startIndex: Double): GameObject = js.native
-  def getRandom(startIndex: Double, length: Double): GameObject = js.native
-  def getRandom(startIndex: Unit, length: Double): GameObject = js.native
+  def getRandom[T /* <: GameObject */](): T = js.native
+  def getRandom[T /* <: GameObject */](startIndex: Double): T = js.native
+  def getRandom[T /* <: GameObject */](startIndex: Double, length: Double): T = js.native
+  def getRandom[T /* <: GameObject */](startIndex: Unit, length: Double): T = js.native
   
   /**
     * Passes all Game Objects in this Container to the given callback.
@@ -299,7 +298,7 @@ trait Container
     * 
     * You can move the cursor by calling `Container.next` and `Container.previous`.
     */
-  val last: GameObject = js.native
+  val last: GameObject | Null = js.native
   
   /**
     * The number of Game Objects inside this Container.
@@ -330,7 +329,7 @@ trait Container
     * @param child1 The Game Object to move above base Game Object.
     * @param child2 The base Game Object.
     */
-  def moveAbove(child1: GameObject, child2: GameObject): this.type = js.native
+  def moveAbove[T /* <: GameObject */](child1: T, child2: T): this.type = js.native
   
   /**
     * Moves a Game Object below another one within this Container.
@@ -339,13 +338,13 @@ trait Container
     * @param child1 The Game Object to move below base Game Object.
     * @param child2 The base Game Object.
     */
-  def moveBelow(child1: GameObject, child2: GameObject): this.type = js.native
+  def moveBelow[T /* <: GameObject */](child1: T, child2: T): this.type = js.native
   
   /**
     * Moves the given Game Object down one place in this Container, unless it's already at the bottom.
     * @param child The Game Object to be moved in the Container.
     */
-  def moveDown(child: GameObject): this.type = js.native
+  def moveDown[T /* <: GameObject */](child: T): this.type = js.native
   
   /**
     * Moves a Game Object to a new position within this Container.
@@ -357,20 +356,20 @@ trait Container
     * @param child The Game Object to move.
     * @param index The new position of the Game Object in this Container.
     */
-  def moveTo(child: GameObject, index: Double): this.type = js.native
+  def moveTo[T /* <: GameObject */](child: T, index: Double): this.type = js.native
   
   /**
     * Moves the given Game Object up one place in this Container, unless it's already at the top.
     * @param child The Game Object to be moved in the Container.
     */
-  def moveUp(child: GameObject): this.type = js.native
+  def moveUp[T /* <: GameObject */](child: T): this.type = js.native
   
   /**
     * Returns the next Game Object within the Container, or `null` if it is empty.
     * 
     * You can move the cursor by calling `Container.next` and `Container.previous`.
     */
-  val next: GameObject = js.native
+  val next: GameObject | Null = js.native
   
   /**
     * Internal value to allow Containers to be used for input and physics.
@@ -390,18 +389,8 @@ trait Container
     * @param source The Source Point to be transformed.
     * @param output A destination object to store the transformed point in. If none given a Vector2 will be created and returned.
     */
-  def pointToContainer(source: js.Object): js.Object | Point | Vector2 = js.native
-  def pointToContainer(source: js.Object, output: js.Object): js.Object | Point | Vector2 = js.native
-  def pointToContainer(source: js.Object, output: Point): js.Object | Point | Vector2 = js.native
-  def pointToContainer(source: js.Object, output: Vector2): js.Object | Point | Vector2 = js.native
-  def pointToContainer(source: Point): js.Object | Point | Vector2 = js.native
-  def pointToContainer(source: Point, output: js.Object): js.Object | Point | Vector2 = js.native
-  def pointToContainer(source: Point, output: Point): js.Object | Point | Vector2 = js.native
-  def pointToContainer(source: Point, output: Vector2): js.Object | Point | Vector2 = js.native
-  def pointToContainer(source: Vector2): js.Object | Point | Vector2 = js.native
-  def pointToContainer(source: Vector2, output: js.Object): js.Object | Point | Vector2 = js.native
-  def pointToContainer(source: Vector2, output: Point): js.Object | Point | Vector2 = js.native
-  def pointToContainer(source: Vector2, output: Vector2): js.Object | Point | Vector2 = js.native
+  def pointToContainer(source: Vector2Like): Vector2Like = js.native
+  def pointToContainer(source: Vector2Like, output: Vector2Like): Vector2Like = js.native
   
   /**
     * The cursor position.
@@ -418,10 +407,8 @@ trait Container
     * 
     * You can move the cursor by calling `Container.next` and `Container.previous`.
     */
-  val previous: GameObject = js.native
+  val previous: GameObject | Null = js.native
   
-  def remove(child: js.Array[GameObject]): this.type = js.native
-  def remove(child: js.Array[GameObject], destroyChild: Boolean): this.type = js.native
   /**
     * Removes the given Game Object, or array of Game Objects, from this Container.
     * 
@@ -431,8 +418,10 @@ trait Container
     * @param child The Game Object, or array of Game Objects, to be removed from the Container.
     * @param destroyChild Optionally call `destroy` on each child successfully removed from this Container. Default false.
     */
-  def remove(child: GameObject): this.type = js.native
-  def remove(child: GameObject, destroyChild: Boolean): this.type = js.native
+  def remove[T /* <: GameObject */](child: T): this.type = js.native
+  def remove[T /* <: GameObject */](child: T, destroyChild: Boolean): this.type = js.native
+  def remove[T /* <: GameObject */](child: js.Array[T]): this.type = js.native
+  def remove[T /* <: GameObject */](child: js.Array[T], destroyChild: Boolean): this.type = js.native
   
   /**
     * Removes all Game Objects from this Container.
@@ -477,8 +466,8 @@ trait Container
     * @param newChild The Game Object to be added to this Container.
     * @param destroyChild Optionally call `destroy` on the Game Object if successfully removed from this Container. Default false.
     */
-  def replace(oldChild: GameObject, newChild: GameObject): this.type = js.native
-  def replace(oldChild: GameObject, newChild: GameObject, destroyChild: Boolean): this.type = js.native
+  def replace[T /* <: GameObject */](oldChild: T, newChild: T): this.type = js.native
+  def replace[T /* <: GameObject */](oldChild: T, newChild: T, destroyChild: Boolean): this.type = js.native
   
   /**
     * Reverses the order of all Game Objects in this Container.
@@ -534,7 +523,7 @@ trait Container
     * This will cause it to render below any other objects in the Container.
     * @param child The Game Object to send to the bottom of the Container.
     */
-  def sendToBack(child: GameObject): this.type = js.native
+  def sendToBack[T /* <: GameObject */](child: T): this.type = js.native
   
   /**
     * Sets the property to the given value on all Game Objects in this Container.
@@ -614,5 +603,5 @@ trait Container
     * @param child1 The first Game Object to swap.
     * @param child2 The second Game Object to swap.
     */
-  def swap(child1: GameObject, child2: GameObject): this.type = js.native
+  def swap[T /* <: GameObject */](child1: T, child2: T): this.type = js.native
 }

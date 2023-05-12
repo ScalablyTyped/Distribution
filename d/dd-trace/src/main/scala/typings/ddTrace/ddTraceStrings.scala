@@ -19,6 +19,10 @@ object ddTraceStrings {
   inline def agent: agent = "agent".asInstanceOf[agent]
   
   @js.native
+  sealed trait agent_proxy extends StObject
+  inline def agent_proxy: agent_proxy = "agent_proxy".asInstanceOf[agent_proxy]
+  
+  @js.native
   sealed trait amqp10 extends StObject
   inline def amqp10: amqp10 = "amqp10".asInstanceOf[amqp10]
   
@@ -83,6 +87,10 @@ object ddTraceStrings {
   inline def debug: debug = "debug".asInstanceOf[debug]
   
   @js.native
+  sealed trait disabled extends StObject
+  inline def disabled: disabled = "disabled".asInstanceOf[disabled]
+  
+  @js.native
   sealed trait dns extends StObject
   inline def dns: dns = "dns".asInstanceOf[dns]
   
@@ -101,6 +109,10 @@ object ddTraceStrings {
   @js.native
   sealed trait fastify extends StObject
   inline def fastify: fastify = "fastify".asInstanceOf[fastify]
+  
+  @js.native
+  sealed trait full extends StObject
+  inline def full: full = "full".asInstanceOf[full]
   
   @js.native
   sealed trait `generic-pool` extends StObject
@@ -169,6 +181,10 @@ object ddTraceStrings {
   @js.native
   sealed trait jest extends StObject
   inline def jest: jest = "jest".asInstanceOf[jest]
+  
+  @js.native
+  sealed trait jest_worker extends StObject
+  inline def jest_worker: jest_worker = "jest_worker".asInstanceOf[jest_worker]
   
   @js.native
   sealed trait kafkajs extends StObject
@@ -263,6 +279,10 @@ object ddTraceStrings {
   inline def pino: pino = "pino".asInstanceOf[pino]
   
   @js.native
+  sealed trait playwright extends StObject
+  inline def playwright: playwright = "playwright".asInstanceOf[playwright]
+  
+  @js.native
   sealed trait producer extends StObject
   inline def producer: producer = "producer".asInstanceOf[producer]
   
@@ -293,6 +313,10 @@ object ddTraceStrings {
   @js.native
   sealed trait server extends StObject
   inline def server: server = "server".asInstanceOf[server]
+  
+  @js.native
+  sealed trait service extends StObject
+  inline def service: service = "service".asInstanceOf[service]
   
   @js.native
   sealed trait serviceDotname extends StObject

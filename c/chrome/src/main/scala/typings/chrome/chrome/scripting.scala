@@ -2,7 +2,7 @@ package typings.chrome.chrome
 
 import typings.chrome.anon.ArgsFunc
 import typings.chrome.anon.Func
-import typings.chrome.anon.Target
+import typings.chrome.anon.InjectImmediately
 import typings.chrome.anon.filesArraystringtargetInj
 import typings.chrome.chromeStrings.document_end
 import typings.chrome.chromeStrings.document_idle
@@ -204,6 +204,8 @@ object scripting {
     @JSName("js")
     var js_ : js.UndefOr[js.Array[String]] = js.undefined
     
+    var matchOriginAsFallback: js.UndefOr[Boolean] = js.undefined
+    
     var matches: js.UndefOr[js.Array[String]] = js.undefined
     
     var persistAcrossSessions: js.UndefOr[Boolean] = js.undefined
@@ -246,6 +248,10 @@ object scripting {
       
       inline def setJs_Varargs(value: String*): Self = StObject.set(x, "js", js.Array(value*))
       
+      inline def setMatchOriginAsFallback(value: Boolean): Self = StObject.set(x, "matchOriginAsFallback", value.asInstanceOf[js.Any])
+      
+      inline def setMatchOriginAsFallbackUndefined: Self = StObject.set(x, "matchOriginAsFallback", js.undefined)
+      
       inline def setMatches(value: js.Array[String]): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
       
       inline def setMatchesUndefined: Self = StObject.set(x, "matches", js.undefined)
@@ -266,7 +272,7 @@ object scripting {
     }
   }
   
-  type ScriptInjection[Args /* <: js.Array[Any] */, Result] = filesArraystringtargetInj | (Func[Result] & Target) | ((ArgsFunc[Args, Result]) & Target)
+  type ScriptInjection[Args /* <: js.Array[Any] */, Result] = filesArraystringtargetInj | (Func[Result] & InjectImmediately) | ((ArgsFunc[Args, Result]) & InjectImmediately)
   
   /* Rewritten from type alias, can be one of: 
     - typings.chrome.chromeStrings.AUTHOR

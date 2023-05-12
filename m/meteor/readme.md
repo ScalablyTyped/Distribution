@@ -1,7 +1,7 @@
 
 # Scala.js typings for meteor
 
-Typings are for version 2.8
+Typings are for version 2.9
 
 ## Library description:
 Install Meteor

@@ -12,7 +12,7 @@ trait Bundle
   @JSName("kind")
   val kind_Bundle: typings.typescript.mod.SyntaxKind.Bundle = js.native
   
-  val prepends: js.Array[InputFiles | UnparsedSource] = js.native
+  /** @deprecated */ val prepends: js.Array[InputFiles | UnparsedSource] = js.native
   
   val sourceFiles: js.Array[SourceFile] = js.native
 }

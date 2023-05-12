@@ -499,6 +499,14 @@ object distOptionsMod {
     var falseStr: js.UndefOr[String] = js.undefined
     
     /**
+      * When true, a single space of padding will be added inside the delimiters
+      * of non-empty single-line flow collections.
+      *
+      * Default: `true`
+      */
+    var flowCollectionPadding: js.UndefOr[Boolean] = js.undefined
+    
+    /**
       * The number of spaces to use when indenting code.
       *
       * Default: `2`
@@ -620,6 +628,10 @@ object distOptionsMod {
       inline def setFalseStr(value: String): Self = StObject.set(x, "falseStr", value.asInstanceOf[js.Any])
       
       inline def setFalseStrUndefined: Self = StObject.set(x, "falseStr", js.undefined)
+      
+      inline def setFlowCollectionPadding(value: Boolean): Self = StObject.set(x, "flowCollectionPadding", value.asInstanceOf[js.Any])
+      
+      inline def setFlowCollectionPaddingUndefined: Self = StObject.set(x, "flowCollectionPadding", js.undefined)
       
       inline def setIndent(value: Double): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
       

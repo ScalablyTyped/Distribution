@@ -58,7 +58,7 @@ object esComponentsNoticeBarNoticeBarMod {
   @js.native
   val NoticeBar: NamedExoticComponent[NoticeBarProps] = js.native
   
-  /* Inlined {  color :'default' | 'alert' | 'error' | 'info' | undefined,   delay :number | undefined,   speed :number | undefined,   content :react.react.ReactNode,   closeable :boolean | undefined,   onClose :(): void | undefined,   extra :react.react.ReactNode | undefined,   icon :react.react.ReactNode | undefined} & antd-mobile.antd-mobile/es/utils/native-props.NativeProps<'--background-color' | '--border-color' | '--text-color' | '--font-size' | '--icon-font-size' | '--height'> */
+  /* Inlined {  color :'default' | 'alert' | 'error' | 'info' | undefined,   delay :number | undefined,   speed :number | undefined,   content :react.react.ReactNode,   closeable :boolean | undefined,   onClose :(): void | undefined,   extra :react.react.ReactNode | undefined,   icon :react.react.ReactNode | undefined,   wrap :boolean | undefined} & antd-mobile.antd-mobile/es/utils/native-props.NativeProps<'--background-color' | '--border-color' | '--text-color' | '--font-size' | '--icon-font-size' | '--height'> */
   trait NoticeBarProps extends StObject {
     
     /** Identifies the currently active element when DOM focus is on a composite widget, textbox, group, or application. */
@@ -297,33 +297,36 @@ object esComponentsNoticeBarNoticeBarMod {
     
     var className: js.UndefOr[String] = js.undefined
     
-    /** 是否可关闭 */
+    /** Whether it can be closed */
     var closeable: js.UndefOr[Boolean] = js.undefined
     
-    /** 通告栏的类型 */
+    /** The type of the NoticeBar */
     var color: js.UndefOr[default | alert | error | info] = js.undefined
     
-    /** 公告内容 */
+    /** The content of the NoticeBar */
     var content: ReactNode
     
-    /** 开始滚动的延迟，单位 ms */
+    /** TDelay to start scrolling, unit ms */
     var delay: js.UndefOr[Double] = js.undefined
     
-    /** 额外操作区域，显示在关闭按钮左侧 */
+    /** Additional operating area, displayed to the left of the close button */
     var extra: js.UndefOr[ReactNode] = js.undefined
     
-    /** 左侧广播图标 */
+    /** Radio icon on the left */
     var icon: js.UndefOr[ReactNode] = js.undefined
     
-    /** 关闭时的回调 */
+    /** Callback when closed */
     var onClose: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    /** 滚动速度，单位 px/s */
+    /** Scroll speed, unit px/s */
     var speed: js.UndefOr[Double] = js.undefined
     
     var style: js.UndefOr[CSSPropertiesPartialRecorBackground] = js.undefined
     
     var tabIndex: js.UndefOr[Double] = js.undefined
+    
+    /** Whether to display multiple lines */
+    var wrap: js.UndefOr[Boolean] = js.undefined
   }
   object NoticeBarProps {
     
@@ -572,6 +575,10 @@ object esComponentsNoticeBarNoticeBarMod {
       inline def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
       
       inline def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
+      
+      inline def setWrap(value: Boolean): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
+      
+      inline def setWrapUndefined: Self = StObject.set(x, "wrap", js.undefined)
     }
   }
 }

@@ -24,7 +24,7 @@ trait MediaLayer
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MediaLayer.html#source)
     */
-  var source: LocalMediaElementSource = js.native
+  var source: ImageElement | VideoElement | LocalMediaElementSource = js.native
   
   /**
     * The spatial reference of the layer and defines the spatial reference of the layer's [fullExtent](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MediaLayer.html#fullExtent).

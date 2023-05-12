@@ -16,6 +16,10 @@ import typings.monacoEditor.mod.editor.MouseTargetType.OVERVIEW_RULER
 import typings.monacoEditor.mod.editor.MouseTargetType.SCROLLBAR
 import typings.monacoEditor.mod.editor.MouseTargetType.TEXTAREA
 import typings.monacoEditor.mod.editor.MouseTargetType.UNKNOWN
+import typings.monacoEditor.monacoEditorStrings.above
+import typings.monacoEditor.monacoEditorStrings.below
+import typings.monacoEditor.monacoEditorStrings.left
+import typings.monacoEditor.monacoEditorStrings.right
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -78,8 +82,13 @@ object IMouseTarget {
     __obj.asInstanceOf[typings.monacoEditor.mod.editor.IMouseTargetMargin]
   }
   
-  inline def IMouseTargetOutsideEditor(mouseColumn: Double, `type`: OUTSIDE_EDITOR): typings.monacoEditor.mod.editor.IMouseTargetOutsideEditor = {
-    val __obj = js.Dynamic.literal(mouseColumn = mouseColumn.asInstanceOf[js.Any], element = null, position = null, range = null)
+  inline def IMouseTargetOutsideEditor(
+    mouseColumn: Double,
+    outsideDistance: Double,
+    outsidePosition: above | below | left | right,
+    `type`: OUTSIDE_EDITOR
+  ): typings.monacoEditor.mod.editor.IMouseTargetOutsideEditor = {
+    val __obj = js.Dynamic.literal(mouseColumn = mouseColumn.asInstanceOf[js.Any], outsideDistance = outsideDistance.asInstanceOf[js.Any], outsidePosition = outsidePosition.asInstanceOf[js.Any], element = null, position = null, range = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.monacoEditor.mod.editor.IMouseTargetOutsideEditor]
   }

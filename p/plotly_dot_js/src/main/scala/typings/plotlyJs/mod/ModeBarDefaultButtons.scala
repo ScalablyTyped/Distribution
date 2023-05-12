@@ -1,5 +1,7 @@
 package typings.plotlyJs.mod
 
+import typings.plotlyJs.plotlyJsStrings.togglehover_
+import typings.plotlyJs.plotlyJsStrings.togglespikelines_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,6 +22,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.plotlyJs.plotlyJsStrings.pan3d
   - typings.plotlyJs.plotlyJsStrings.orbitRotation
   - typings.plotlyJs.plotlyJsStrings.tableRotation
+  - typings.plotlyJs.plotlyJsStrings.handleDrag3d
   - typings.plotlyJs.plotlyJsStrings.resetCameraDefault3d
   - typings.plotlyJs.plotlyJsStrings.resetCameraLastSave3d
   - typings.plotlyJs.plotlyJsStrings.hoverClosest3d
@@ -33,11 +36,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.plotlyJs.plotlyJsStrings.toImage
   - typings.plotlyJs.plotlyJsStrings.resetViews
   - typings.plotlyJs.plotlyJsStrings.toggleSpikelines
+  - typings.plotlyJs.plotlyJsStrings.zoomInMapbox
+  - typings.plotlyJs.plotlyJsStrings.zoomOutMapbox
+  - typings.plotlyJs.plotlyJsStrings.resetViewMapbox
+  - typings.plotlyJs.plotlyJsStrings.togglespikelines_
+  - typings.plotlyJs.plotlyJsStrings.togglehover_
+  - typings.plotlyJs.plotlyJsStrings.hovercompare
+  - typings.plotlyJs.plotlyJsStrings.hoverclosest
+  - typings.plotlyJs.plotlyJsStrings.v1hovermode
 */
-trait ModeBarDefaultButtons extends StObject
+trait ModeBarDefaultButtons
+  extends StObject
+     with ModeBarButtonAny
 object ModeBarDefaultButtons {
   
   inline def autoScale2d: typings.plotlyJs.plotlyJsStrings.autoScale2d = "autoScale2d".asInstanceOf[typings.plotlyJs.plotlyJsStrings.autoScale2d]
+  
+  inline def handleDrag3d: typings.plotlyJs.plotlyJsStrings.handleDrag3d = "handleDrag3d".asInstanceOf[typings.plotlyJs.plotlyJsStrings.handleDrag3d]
   
   inline def hoverClosest3d: typings.plotlyJs.plotlyJsStrings.hoverClosest3d = "hoverClosest3d".asInstanceOf[typings.plotlyJs.plotlyJsStrings.hoverClosest3d]
   
@@ -50,6 +65,10 @@ object ModeBarDefaultButtons {
   inline def hoverClosestPie: typings.plotlyJs.plotlyJsStrings.hoverClosestPie = "hoverClosestPie".asInstanceOf[typings.plotlyJs.plotlyJsStrings.hoverClosestPie]
   
   inline def hoverCompareCartesian: typings.plotlyJs.plotlyJsStrings.hoverCompareCartesian = "hoverCompareCartesian".asInstanceOf[typings.plotlyJs.plotlyJsStrings.hoverCompareCartesian]
+  
+  inline def hoverclosest: typings.plotlyJs.plotlyJsStrings.hoverclosest = "hoverclosest".asInstanceOf[typings.plotlyJs.plotlyJsStrings.hoverclosest]
+  
+  inline def hovercompare: typings.plotlyJs.plotlyJsStrings.hovercompare = "hovercompare".asInstanceOf[typings.plotlyJs.plotlyJsStrings.hovercompare]
   
   inline def lasso2d: typings.plotlyJs.plotlyJsStrings.lasso2d = "lasso2d".asInstanceOf[typings.plotlyJs.plotlyJsStrings.lasso2d]
   
@@ -67,6 +86,8 @@ object ModeBarDefaultButtons {
   
   inline def resetScale2d: typings.plotlyJs.plotlyJsStrings.resetScale2d = "resetScale2d".asInstanceOf[typings.plotlyJs.plotlyJsStrings.resetScale2d]
   
+  inline def resetViewMapbox: typings.plotlyJs.plotlyJsStrings.resetViewMapbox = "resetViewMapbox".asInstanceOf[typings.plotlyJs.plotlyJsStrings.resetViewMapbox]
+  
   inline def resetViews: typings.plotlyJs.plotlyJsStrings.resetViews = "resetViews".asInstanceOf[typings.plotlyJs.plotlyJsStrings.resetViews]
   
   inline def select2d: typings.plotlyJs.plotlyJsStrings.select2d = "select2d".asInstanceOf[typings.plotlyJs.plotlyJsStrings.select2d]
@@ -81,6 +102,12 @@ object ModeBarDefaultButtons {
   
   inline def toggleSpikelines: typings.plotlyJs.plotlyJsStrings.toggleSpikelines = "toggleSpikelines".asInstanceOf[typings.plotlyJs.plotlyJsStrings.toggleSpikelines]
   
+  inline def togglehover: togglehover_ = "togglehover".asInstanceOf[togglehover_]
+  
+  inline def togglespikelines: togglespikelines_ = "togglespikelines".asInstanceOf[togglespikelines_]
+  
+  inline def v1hovermode: typings.plotlyJs.plotlyJsStrings.v1hovermode = "v1hovermode".asInstanceOf[typings.plotlyJs.plotlyJsStrings.v1hovermode]
+  
   inline def zoom2d: typings.plotlyJs.plotlyJsStrings.zoom2d = "zoom2d".asInstanceOf[typings.plotlyJs.plotlyJsStrings.zoom2d]
   
   inline def zoom3d: typings.plotlyJs.plotlyJsStrings.zoom3d = "zoom3d".asInstanceOf[typings.plotlyJs.plotlyJsStrings.zoom3d]
@@ -89,7 +116,11 @@ object ModeBarDefaultButtons {
   
   inline def zoomInGeo: typings.plotlyJs.plotlyJsStrings.zoomInGeo = "zoomInGeo".asInstanceOf[typings.plotlyJs.plotlyJsStrings.zoomInGeo]
   
+  inline def zoomInMapbox: typings.plotlyJs.plotlyJsStrings.zoomInMapbox = "zoomInMapbox".asInstanceOf[typings.plotlyJs.plotlyJsStrings.zoomInMapbox]
+  
   inline def zoomOut2d: typings.plotlyJs.plotlyJsStrings.zoomOut2d = "zoomOut2d".asInstanceOf[typings.plotlyJs.plotlyJsStrings.zoomOut2d]
   
   inline def zoomOutGeo: typings.plotlyJs.plotlyJsStrings.zoomOutGeo = "zoomOutGeo".asInstanceOf[typings.plotlyJs.plotlyJsStrings.zoomOutGeo]
+  
+  inline def zoomOutMapbox: typings.plotlyJs.plotlyJsStrings.zoomOutMapbox = "zoomOutMapbox".asInstanceOf[typings.plotlyJs.plotlyJsStrings.zoomOutMapbox]
 }

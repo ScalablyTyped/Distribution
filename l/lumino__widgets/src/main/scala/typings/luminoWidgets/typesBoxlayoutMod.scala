@@ -58,6 +58,7 @@ object typesBoxlayoutMod {
       * The alignment has no effect if the widgets can expand to fill the
       * entire box layout.
       */
+    def alignment: Alignment = js.native
     /**
       * Set the content alignment for the box layout.
       *
@@ -67,23 +68,25 @@ object typesBoxlayoutMod {
       * The alignment has no effect if the widgets can expand to fill the
       * entire box layout.
       */
-    var alignment: Alignment = js.native
+    def alignment_=(value: Alignment): Unit = js.native
     
     /**
       * Get the layout direction for the box layout.
       */
+    def direction: Direction = js.native
     /**
       * Set the layout direction for the box layout.
       */
-    var direction: Direction = js.native
+    def direction_=(value: Direction): Unit = js.native
     
     /**
       * Get the inter-element spacing for the box layout.
       */
+    def spacing: Double = js.native
     /**
       * Set the inter-element spacing for the box layout.
       */
-    var spacing: Double = js.native
+    def spacing_=(value: Double): Unit = js.native
   }
   object BoxLayout {
     

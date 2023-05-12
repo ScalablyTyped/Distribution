@@ -17,21 +17,57 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object formatEsriJSONMod {
   
+  /**
+    * @typedef {Object} Options
+    * @property {string} [geometryName] Geometry name to use when creating features.
+    */
+  /**
+    * @classdesc
+    * Feature format for reading and writing data in the EsriJSON format.
+    *
+    * @api
+    */
   @JSImport("ol/format/EsriJSON", JSImport.Default)
   @js.native
+  /**
+    * @param {Options} [options] Options.
+    */
   open class default () extends EsriJSON {
-    def this(opt_options: Options) = this()
+    def this(options: Options) = this()
   }
   
+  /**
+    * @typedef {Object} Options
+    * @property {string} [geometryName] Geometry name to use when creating features.
+    */
+  /**
+    * @classdesc
+    * Feature format for reading and writing data in the EsriJSON format.
+    *
+    * @api
+    */
   @js.native
   trait EsriJSON
     extends typings.ol.formatJsonfeatureMod.default {
     
-    /* protected */ def readFeatureFromObject(`object`: Any, opt_options: Unit, opt_idField: String): typings.ol.featureMod.default[typings.ol.geomGeometryMod.default] = js.native
-    /* protected */ def readFeatureFromObject(`object`: Any, opt_options: ReadOptions, opt_idField: String): typings.ol.featureMod.default[typings.ol.geomGeometryMod.default] = js.native
+    /**
+      * Name of the geometry attribute for features.
+      * @type {string|undefined}
+      * @private
+      */
+    /* private */ var geometryName_ : Any = js.native
     
+    /* protected */ def readFeatureFromObject(`object`: Any, options: Unit, idField: String): typings.ol.renderFeatureMod.default = js.native
+    /* protected */ def readFeatureFromObject(`object`: Any, options: ReadOptions, idField: String): typings.ol.renderFeatureMod.default = js.native
+    
+    /**
+      * @param {EsriJSONGeometry} object Object.
+      * @param {import("./Feature.js").ReadOptions} [options] Read options.
+      * @protected
+      * @return {import("../geom/Geometry.js").default} Geometry.
+      */
     /* protected */ def readGeometryFromObject(`object`: EsriJSONGeometry): typings.ol.geomGeometryMod.default = js.native
-    /* protected */ def readGeometryFromObject(`object`: EsriJSONGeometry, opt_options: ReadOptions): typings.ol.geomGeometryMod.default = js.native
+    /* protected */ def readGeometryFromObject(`object`: EsriJSONGeometry, options: ReadOptions): typings.ol.geomGeometryMod.default = js.native
   }
   
   type EsriJSONFeature = Feature
@@ -44,13 +80,25 @@ object formatEsriJSONMod {
   
   trait EsriJSONMultiPolygon extends StObject {
     
+    /**
+      * If the polygon coordinates have an M value.
+      */
     var hasM: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * If the polygon coordinates have a Z value.
+      */
     var hasZ: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Rings for the MultiPolygon.
+      */
     var rings: js.Array[js.Array[js.Array[js.Array[Double]]]]
     
-    var spatialReference: js.UndefOr[EsriJSONSpatialReferenceWkid] = js.undefined
+    /**
+      * The coordinate reference system.
+      */
+    var spatialReference: js.UndefOr[SpatialReferenceWkid] = js.undefined
   }
   object EsriJSONMultiPolygon {
     
@@ -74,7 +122,7 @@ object formatEsriJSONMod {
       
       inline def setRingsVarargs(value: js.Array[js.Array[js.Array[Double]]]*): Self = StObject.set(x, "rings", js.Array(value*))
       
-      inline def setSpatialReference(value: EsriJSONSpatialReferenceWkid): Self = StObject.set(x, "spatialReference", value.asInstanceOf[js.Any])
+      inline def setSpatialReference(value: SpatialReferenceWkid): Self = StObject.set(x, "spatialReference", value.asInstanceOf[js.Any])
       
       inline def setSpatialReferenceUndefined: Self = StObject.set(x, "spatialReference", js.undefined)
     }
@@ -94,6 +142,9 @@ object formatEsriJSONMod {
   
   trait Options extends StObject {
     
+    /**
+      * Geometry name to use when creating features.
+      */
     var geometryName: js.UndefOr[String] = js.undefined
   }
   object Options {

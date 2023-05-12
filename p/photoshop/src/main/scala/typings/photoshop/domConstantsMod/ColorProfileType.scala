@@ -1,32 +1,42 @@
 package typings.photoshop.domConstantsMod
 
-import typings.photoshop.photoshopStrings.customEnum
-import typings.photoshop.photoshopStrings.none
-import typings.photoshop.photoshopStrings.workingSpaceCode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Rewritten from type alias, can be one of: 
-  - typings.photoshop.photoshopStrings.customEnum
-  - typings.photoshop.photoshopStrings.none
-  - typings.photoshop.photoshopStrings.workingSpaceCode
-*/
-trait ColorProfileType extends StObject
-object ColorProfileType {
+@js.native
+sealed trait ColorProfileType extends StObject
+@JSImport("photoshop/dom/Constants", "ColorProfileType")
+@js.native
+object ColorProfileType extends StObject {
+  
+  @JSBracketAccess
+  def apply(value: String): js.UndefOr[ColorProfileType & String] = js.native
   
   /**
     * Set for all custom profiles
     */
-  inline def CUSTOM: customEnum = "customEnum".asInstanceOf[customEnum]
+  @js.native
+  sealed trait CUSTOM
+    extends StObject
+       with ColorProfileType
+  /* "customEnum" */ val CUSTOM: typings.photoshop.domConstantsMod.ColorProfileType.CUSTOM & String = js.native
   
   /**
     * Set when document is not color managed
     */
-  inline def NONE: none = "none".asInstanceOf[none]
+  @js.native
+  sealed trait NONE
+    extends StObject
+       with ColorProfileType
+  /* "none" */ val NONE: typings.photoshop.domConstantsMod.ColorProfileType.NONE & String = js.native
   
   /**
     * Set when document uses the working color profile
     */
-  inline def WORKING: workingSpaceCode = "workingSpaceCode".asInstanceOf[workingSpaceCode]
+  @js.native
+  sealed trait WORKING
+    extends StObject
+       with ColorProfileType
+  /* "workingSpaceCode" */ val WORKING: typings.photoshop.domConstantsMod.ColorProfileType.WORKING & String = js.native
 }

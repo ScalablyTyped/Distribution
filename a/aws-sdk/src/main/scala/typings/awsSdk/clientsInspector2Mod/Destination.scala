@@ -12,7 +12,7 @@ trait Destination extends StObject {
   var bucketName: String
   
   /**
-    * The prefix of the KMS key used to export findings.
+    * The prefix of the Amazon S3 bucket used to export findings.
     */
   var keyPrefix: js.UndefOr[String] = js.undefined
   

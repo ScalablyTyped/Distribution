@@ -1,6 +1,5 @@
 package typings.angularCli
 
-import typings.angularCli.srcCommandBuilderCommandModuleMod.CommandContext
 import typings.angularCli.srcCommandBuilderSchematicsCommandModuleMod.SchematicsCommandArgs
 import typings.angularCli.srcCommandBuilderSchematicsCommandModuleMod.SchematicsCommandModule
 import org.scalablytyped.runtime.StObject
@@ -9,13 +8,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object srcCommandsAddCliMod {
   
-  @JSImport("@angular/cli/src/commands/add/cli", "AddCommandModule")
+  @JSImport("@angular/cli/src/commands/add/cli", JSImport.Default)
   @js.native
-  open class AddCommandModule protected () extends SchematicsCommandModule {
-    def this(context: CommandContext) = this()
+  open class default () extends AddCommadModule
+  
+  @js.native
+  trait AddCommadModule extends SchematicsCommandModule {
     
     @JSName("describe")
-    var describe_AddCommandModule: String = js.native
+    var describe_AddCommadModule: String = js.native
     
     /* private */ var executeSchematic: Any = js.native
     
@@ -30,7 +31,9 @@ object srcCommandsAddCliMod {
     /* private */ var isProjectVersionValid: Any = js.native
     
     @JSName("longDescriptionPath")
-    var longDescriptionPath_AddCommandModule: String = js.native
+    var longDescriptionPath_AddCommadModule: String = js.native
+    
+    /* private */ var rootRequire: Any = js.native
     
     /* private */ val schematicName: Any = js.native
   }

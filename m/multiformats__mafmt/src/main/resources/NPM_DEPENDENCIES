@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@multiformats/mafmt" : "11.0.3"
+      "@multiformats/mafmt" : "12.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@multiformats/mafmt" : "11.0.3"
+      "@multiformats/mafmt" : "12.1.0"
     }
   ],
   "compile-devDependencies" : [

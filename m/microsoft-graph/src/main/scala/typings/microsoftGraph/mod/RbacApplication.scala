@@ -8,6 +8,8 @@ trait RbacApplication
   extends StObject
      with Entity {
   
+  var resourceNamespaces: js.UndefOr[NullableOption[js.Array[UnifiedRbacResourceNamespace]]] = js.undefined
+  
   // Instances for active role assignments.
   var roleAssignmentScheduleInstances: js.UndefOr[NullableOption[js.Array[UnifiedRoleAssignmentScheduleInstance]]] = js.undefined
   
@@ -41,6 +43,14 @@ object RbacApplication {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: RbacApplication] (val x: Self) extends AnyVal {
+    
+    inline def setResourceNamespaces(value: NullableOption[js.Array[UnifiedRbacResourceNamespace]]): Self = StObject.set(x, "resourceNamespaces", value.asInstanceOf[js.Any])
+    
+    inline def setResourceNamespacesNull: Self = StObject.set(x, "resourceNamespaces", null)
+    
+    inline def setResourceNamespacesUndefined: Self = StObject.set(x, "resourceNamespaces", js.undefined)
+    
+    inline def setResourceNamespacesVarargs(value: UnifiedRbacResourceNamespace*): Self = StObject.set(x, "resourceNamespaces", js.Array(value*))
     
     inline def setRoleAssignmentScheduleInstances(value: NullableOption[js.Array[UnifiedRoleAssignmentScheduleInstance]]): Self = StObject.set(x, "roleAssignmentScheduleInstances", value.asInstanceOf[js.Any])
     

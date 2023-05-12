@@ -16,6 +16,10 @@ trait Currentuser extends StObject {
   
   var current_user_public: js.UndefOr[Href] = js.undefined
   
+  var repository_discussions: js.UndefOr[Href] = js.undefined
+  
+  var repository_discussions_category: js.UndefOr[Href] = js.undefined
+  
   var security_advisories: js.UndefOr[Href] = js.undefined
   
   var timeline: Href
@@ -53,6 +57,14 @@ object Currentuser {
     inline def setCurrent_user_public(value: Href): Self = StObject.set(x, "current_user_public", value.asInstanceOf[js.Any])
     
     inline def setCurrent_user_publicUndefined: Self = StObject.set(x, "current_user_public", js.undefined)
+    
+    inline def setRepository_discussions(value: Href): Self = StObject.set(x, "repository_discussions", value.asInstanceOf[js.Any])
+    
+    inline def setRepository_discussionsUndefined: Self = StObject.set(x, "repository_discussions", js.undefined)
+    
+    inline def setRepository_discussions_category(value: Href): Self = StObject.set(x, "repository_discussions_category", value.asInstanceOf[js.Any])
+    
+    inline def setRepository_discussions_categoryUndefined: Self = StObject.set(x, "repository_discussions_category", js.undefined)
     
     inline def setSecurity_advisories(value: Href): Self = StObject.set(x, "security_advisories", value.asInstanceOf[js.Any])
     

@@ -4,10 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * An Geocoder response returned by the {@link google.maps.Geocoder}
-  * containing the list of {@link google.maps.GeocoderResult}s.
-  */
 trait GeocoderResponse extends StObject {
   
   /**

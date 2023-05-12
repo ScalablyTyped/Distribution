@@ -7,7 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeploymentConfiguration extends StObject {
   
   /**
-    *  The deployment circuit breaker can only be used for services using the rolling update (ECS) deployment type.  The deployment circuit breaker determines whether a service deployment will fail if the service can't reach a steady state. If deployment circuit breaker is enabled, a service deployment will transition to a failed state and stop launching new tasks. If rollback is enabled, when a service deployment fails, the service is rolled back to the last deployment that completed successfully.
+    * Information about the CloudWatch alarms.
+    */
+  var alarms: js.UndefOr[DeploymentAlarms] = js.undefined
+  
+  /**
+    *  The deployment circuit breaker can only be used for services using the rolling update (ECS) deployment type.  The deployment circuit breaker determines whether a service deployment will fail if the service can't reach a steady state. If you use the deployment circuit breaker, a service deployment will transition to a failed state and stop launching new tasks. If you use the rollback option, when a service deployment fails, the service is rolled back to the last deployment that completed successfully. For more information, see Rolling update in the Amazon Elastic Container Service Developer Guide 
     */
   var deploymentCircuitBreaker: js.UndefOr[DeploymentCircuitBreaker] = js.undefined
   
@@ -30,6 +35,10 @@ object DeploymentConfiguration {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: DeploymentConfiguration] (val x: Self) extends AnyVal {
+    
+    inline def setAlarms(value: DeploymentAlarms): Self = StObject.set(x, "alarms", value.asInstanceOf[js.Any])
+    
+    inline def setAlarmsUndefined: Self = StObject.set(x, "alarms", js.undefined)
     
     inline def setDeploymentCircuitBreaker(value: DeploymentCircuitBreaker): Self = StObject.set(x, "deploymentCircuitBreaker", value.asInstanceOf[js.Any])
     

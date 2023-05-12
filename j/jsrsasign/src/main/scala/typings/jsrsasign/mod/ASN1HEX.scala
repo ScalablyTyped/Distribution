@@ -390,6 +390,7 @@ object ASN1HEX {
     * ASN1HEX.getString("xxxx1303616161xxxxxx", 4) &rarr "aaa"
     * ASN1HEX.getString("xxxx0c03616161xxxxxx", 4) &rarr "aaa"
     */
+  inline def getString(h: String, idx: Double): String | ErrorReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("getString")(h.asInstanceOf[js.Any], idx.asInstanceOf[js.Any])).asInstanceOf[String | ErrorReturn]
   inline def getString(h: String, idx: Double, errorReturn: ErrorReturn): String | ErrorReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("getString")(h.asInstanceOf[js.Any], idx.asInstanceOf[js.Any], errorReturn.asInstanceOf[js.Any])).asInstanceOf[String | ErrorReturn]
   
   /**

@@ -379,7 +379,14 @@ trait LanguageService extends StObject {
   def getDefinitionAtPosition(fileName: java.lang.String, position: Double): js.UndefOr[js.Array[DefinitionInfo]] = js.native
   
   def getDocCommentTemplateAtPosition(fileName: java.lang.String, position: Double): js.UndefOr[TextInsertion] = js.native
+  def getDocCommentTemplateAtPosition(fileName: java.lang.String, position: Double, options: Unit, formatOptions: FormatCodeSettings): js.UndefOr[TextInsertion] = js.native
   def getDocCommentTemplateAtPosition(fileName: java.lang.String, position: Double, options: DocCommentTemplateOptions): js.UndefOr[TextInsertion] = js.native
+  def getDocCommentTemplateAtPosition(
+    fileName: java.lang.String,
+    position: Double,
+    options: DocCommentTemplateOptions,
+    formatOptions: FormatCodeSettings
+  ): js.UndefOr[TextInsertion] = js.native
   
   def getDocumentHighlights(fileName: java.lang.String, position: Double, filesToSearch: js.Array[java.lang.String]): js.UndefOr[js.Array[DocumentHighlights]] = js.native
   
@@ -548,6 +555,9 @@ trait LanguageService extends StObject {
     * @param fileName A path to the file you want semantic diagnostics for
     */
   def getSuggestionDiagnostics(fileName: java.lang.String): js.Array[DiagnosticWithLocation] = js.native
+  
+  def getSupportedCodeFixes(): js.Array[java.lang.String] = js.native
+  def getSupportedCodeFixes(fileName: java.lang.String): js.Array[java.lang.String] = js.native
   
   /** @deprecated Use getEncodedSyntacticClassifications instead. */
   def getSyntacticClassifications(fileName: java.lang.String, span: TextSpan): js.Array[ClassifiedSpan] = js.native

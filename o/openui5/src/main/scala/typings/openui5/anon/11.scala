@@ -1,6 +1,6 @@
 package typings.openui5.anon
 
-import typings.std.HTMLElement
+import typings.openui5.sapUiUx3ThingActionMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,9 +8,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `11` extends StObject {
   
   /**
-    * the toggled item.
+    * Selected ThingAction
     */
-  var item: js.UndefOr[HTMLElement] = js.undefined
+  var action: js.UndefOr[default] = js.undefined
+  
+  /**
+    * Id of selected ThingAction
+    */
+  var id: js.UndefOr[String] = js.undefined
 }
 object `11` {
   
@@ -22,8 +27,12 @@ object `11` {
   @scala.inline
   implicit open class MutableBuilder[Self <: `11`] (val x: Self) extends AnyVal {
     
-    inline def setItem(value: HTMLElement): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setAction(value: default): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+    inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+    
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
   }
 }

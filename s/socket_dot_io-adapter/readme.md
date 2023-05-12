@@ -1,7 +1,7 @@
 
 # Scala.js typings for socket_dot_io-adapter
 
-Typings are for version 2.4.0
+Typings are for version 2.5.2
 
 ## Library description:
 default socket.io in-memory adapter

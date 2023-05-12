@@ -19,6 +19,7 @@ trait KtxParser extends TextureParser {
   var maxRetries: Double = js.native
   
   def open(url: Any, data: Any, device: Any): Texture = js.native
+  def open(url: Any, data: Any, device: Any, textureOptions: js.Object): Texture = js.native
   
   def parse(data: Any): Cubemap = js.native
 }

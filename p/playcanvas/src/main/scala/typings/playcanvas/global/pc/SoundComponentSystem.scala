@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Manages creation of {@link SoundComponent}s.
   *
   * @augments ComponentSystem
-  * @ignore
   */
 @JSGlobal("pc.SoundComponentSystem")
 @js.native
@@ -17,7 +16,7 @@ open class SoundComponentSystem protected ()
   /**
     * Create a new ComponentSystem instance.
     *
-    * @param {AppBase} app - The application managing this system.
+    * @param {import('../app-base.js').AppBase} app - The application managing this system.
     */
   def this(app: typings.playcanvas.mod.AppBase) = this()
 }

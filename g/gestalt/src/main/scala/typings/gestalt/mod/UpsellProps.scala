@@ -1,6 +1,5 @@
 package typings.gestalt.mod
 
-import typings.gestalt.anon.AccessibilityLabel
 import typings.gestalt.anon.Component
 import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
@@ -11,11 +10,11 @@ trait UpsellProps extends StObject {
   
   var children: js.UndefOr[ReactElement] = js.undefined
   
-  var dismissButton: js.UndefOr[AccessibilityLabel] = js.undefined
+  var dismissButton: js.UndefOr[OnDismissButtonObject] = js.undefined
   
   var imageData: js.UndefOr[Component] = js.undefined
   
-  var message: String
+  var message: String | ReactElement
   
   var primaryAction: js.UndefOr[ActionData] = js.undefined
   
@@ -25,7 +24,7 @@ trait UpsellProps extends StObject {
 }
 object UpsellProps {
   
-  inline def apply(message: String): UpsellProps = {
+  inline def apply(message: String | ReactElement): UpsellProps = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpsellProps]
   }
@@ -37,7 +36,7 @@ object UpsellProps {
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    inline def setDismissButton(value: AccessibilityLabel): Self = StObject.set(x, "dismissButton", value.asInstanceOf[js.Any])
+    inline def setDismissButton(value: OnDismissButtonObject): Self = StObject.set(x, "dismissButton", value.asInstanceOf[js.Any])
     
     inline def setDismissButtonUndefined: Self = StObject.set(x, "dismissButton", js.undefined)
     
@@ -45,7 +44,7 @@ object UpsellProps {
     
     inline def setImageDataUndefined: Self = StObject.set(x, "imageData", js.undefined)
     
-    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String | ReactElement): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     inline def setPrimaryAction(value: ActionData): Self = StObject.set(x, "primaryAction", value.asInstanceOf[js.Any])
     

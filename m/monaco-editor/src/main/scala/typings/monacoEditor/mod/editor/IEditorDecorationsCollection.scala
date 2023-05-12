@@ -50,7 +50,7 @@ trait IEditorDecorationsCollection extends StObject {
   /**
     * Replace all previous decorations with `newDecorations`.
     */
-  def set(newDecorations: js.Array[IModelDeltaDecoration]): Unit
+  def set(newDecorations: js.Array[IModelDeltaDecoration]): js.Array[String]
 }
 object IEditorDecorationsCollection {
   
@@ -61,7 +61,7 @@ object IEditorDecorationsCollection {
     has: IModelDecoration => Boolean,
     length: Double,
     onDidChange: (/* listener */ js.Function1[IModelDecorationsChangedEvent, Any], /* thisArg */ js.UndefOr[Any]) => IDisposable,
-    set: js.Array[IModelDeltaDecoration] => Unit
+    set: js.Array[IModelDeltaDecoration] => js.Array[String]
   ): IEditorDecorationsCollection = {
     val __obj = js.Dynamic.literal(clear = js.Any.fromFunction0(clear), getRange = js.Any.fromFunction1(getRange), getRanges = js.Any.fromFunction0(getRanges), has = js.Any.fromFunction1(has), length = length.asInstanceOf[js.Any], onDidChange = js.Any.fromFunction2(onDidChange), set = js.Any.fromFunction1(set))
     __obj.asInstanceOf[IEditorDecorationsCollection]
@@ -84,6 +84,6 @@ object IEditorDecorationsCollection {
       value: (/* listener */ js.Function1[IModelDecorationsChangedEvent, Any], /* thisArg */ js.UndefOr[Any]) => IDisposable
     ): Self = StObject.set(x, "onDidChange", js.Any.fromFunction2(value))
     
-    inline def setSet(value: js.Array[IModelDeltaDecoration] => Unit): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
+    inline def setSet(value: js.Array[IModelDeltaDecoration] => js.Array[String]): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
   }
 }

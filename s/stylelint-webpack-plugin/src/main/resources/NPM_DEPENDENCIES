@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "stylelint-webpack-plugin" : "3.3.0"
+      "stylelint-webpack-plugin" : "4.1.1"
     }
   ],
   "test-dependencies" : [
     {
-      "stylelint-webpack-plugin" : "3.3.0"
+      "stylelint-webpack-plugin" : "4.1.1"
     }
   ],
   "compile-devDependencies" : [

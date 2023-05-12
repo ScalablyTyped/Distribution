@@ -1,7 +1,7 @@
 
 # Scala.js typings for panva__hkdf
 
-Typings are for version 1.0.2
+Typings are for version 1.1.1
 
 ## Library description:
 HKDF with no dependencies using runtime's native crypto

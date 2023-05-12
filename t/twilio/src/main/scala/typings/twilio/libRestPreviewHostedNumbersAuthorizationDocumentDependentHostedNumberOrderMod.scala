@@ -1,136 +1,139 @@
 package typings.twilio
 
+import typings.twilio.anon.CallDelay
 import typings.twilio.libBasePageMod.TwilioResponsePayload
 import typings.twilio.libInterfacesMod.PhoneNumberCapabilities
-import typings.twilio.libInterfacesMod.SerializableClass
+import typings.twilio.libRestPreviewHostedNumbersMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libRestPreviewHostedNumbersAuthorizationDocumentDependentHostedNumberOrderMod {
   
-  @JSImport("twilio/lib/rest/preview/hosted_numbers/authorizationDocument/dependentHostedNumberOrder", JSImport.Namespace)
-  @js.native
-  val ^ : js.Any = js.native
-  
   @JSImport("twilio/lib/rest/preview/hosted_numbers/authorizationDocument/dependentHostedNumberOrder", "DependentHostedNumberOrderInstance")
   @js.native
-  open class DependentHostedNumberOrderInstance protected () extends SerializableClass {
-    /**
-      * Initialize the DependentHostedNumberOrderContext
-      *
-      * PLEASE NOTE that this class contains preview products that are subject to
-      * change. Use them with caution. If you currently do not have developer preview
-      * access, please contact help@twilio.com.
-      *
-      * @param version - Version of the resource
-      * @param payload - The instance payload
-      * @param signingDocumentSid - LOA document sid.
-      */
-    def this(
-      version: typings.twilio.libRestPreviewHostedNumbersMod.^,
-      payload: DependentHostedNumberOrderPayload,
-      signingDocumentSid: String
-    ) = this()
+  open class DependentHostedNumberOrderInstance protected () extends StObject {
+    def this(_version: default, payload: DependentHostedNumberOrderResource, signingDocumentSid: String) = this()
     
+    /* protected */ var _version: default = js.native
+    
+    /**
+      * The unique SID identifier of the Account.
+      */
     var accountSid: String = js.native
     
+    /**
+      * A 34 character string that uniquely identifies the Address resource that represents the address of the owner of this phone number.
+      */
     var addressSid: String = js.native
     
+    /**
+      * A value between 0-30 specifying the number of seconds to delay initiating the ownership verification call.
+      */
     var callDelay: Double = js.native
     
     var capabilities: PhoneNumberCapabilities = js.native
     
+    /**
+      * Email recipients who will be informed when an Authorization Document has been sent and signed
+      */
     var ccEmails: js.Array[String] = js.native
     
+    /**
+      * The date this resource was created, given as [GMT RFC 2822](http://www.ietf.org/rfc/rfc2822.txt) format.
+      */
     var dateCreated: js.Date = js.native
     
+    /**
+      * The date that this resource was updated, given as [GMT RFC 2822](http://www.ietf.org/rfc/rfc2822.txt) format.
+      */
     var dateUpdated: js.Date = js.native
     
+    /**
+      * Email of the owner of this phone number that is being hosted.
+      */
     var email: String = js.native
     
+    /**
+      * A numerical extension to be used when making the ownership verification call.
+      */
     var `extension`: String = js.native
     
+    /**
+      * A message that explains why a hosted_number_order went to status \"action-required\"
+      */
     var failureReason: String = js.native
     
+    /**
+      * A human readable description of this resource, up to 64 characters.
+      */
     var friendlyName: String = js.native
     
+    /**
+      * A 34 character string that uniquely identifies the IncomingPhoneNumber resource created by this HostedNumberOrder.
+      */
     var incomingPhoneNumberSid: String = js.native
     
+    /**
+      * An E164 formatted phone number hosted by this HostedNumberOrder.
+      */
     var phoneNumber: String = js.native
     
+    /**
+      * A 34 character string that uniquely identifies this Authorization Document
+      */
     var sid: String = js.native
     
+    /**
+      * A 34 character string that uniquely identifies the LOA document associated with this HostedNumberOrder.
+      */
     var signingDocumentSid: String = js.native
     
     var status: DependentHostedNumberOrderStatus = js.native
     
+    /**
+      * Provide a user-friendly representation
+      *
+      * @returns Object
+      */
+    def toJSON(): CallDelay = js.native
+    
+    /**
+      * Provides a unique and addressable name to be assigned to this HostedNumberOrder, assigned by the developer, to be optionally used in addition to SID.
+      */
     var uniqueName: String = js.native
     
+    /**
+      * The number of attempts made to verify ownership of the phone number that is being hosted.
+      */
     var verificationAttempts: Double = js.native
     
+    /**
+      * A list of 34 character strings that are unique identifiers for the calls placed as part of ownership verification.
+      */
     var verificationCallSids: js.Array[String] = js.native
     
+    /**
+      * The digits passed during the ownership verification call.
+      */
     var verificationCode: String = js.native
     
+    /**
+      * A 34 character string that uniquely identifies the Identity Document resource that represents the document for verifying ownership of the number to be hosted.
+      */
     var verificationDocumentSid: String = js.native
     
     var verificationType: DependentHostedNumberOrderVerificationType = js.native
   }
   
-  /**
-    * Initialize the DependentHostedNumberOrderList
-    *
-    * PLEASE NOTE that this class contains preview products that are subject to
-    * change. Use them with caution. If you currently do not have developer preview
-    * access, please contact help@twilio.com.
-    *
-    * @param version - Version of the resource
-    * @param signingDocumentSid - LOA document sid.
-    */
-  inline def DependentHostedNumberOrderList(version: typings.twilio.libRestPreviewHostedNumbersMod.^, signingDocumentSid: String): DependentHostedNumberOrderListInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("DependentHostedNumberOrderList")(version.asInstanceOf[js.Any], signingDocumentSid.asInstanceOf[js.Any])).asInstanceOf[DependentHostedNumberOrderListInstance]
-  
-  @JSImport("twilio/lib/rest/preview/hosted_numbers/authorizationDocument/dependentHostedNumberOrder", "DependentHostedNumberOrderPage")
-  @js.native
-  open class DependentHostedNumberOrderPage protected ()
-    extends typings.twilio.libBasePageMod.^[
-          typings.twilio.libRestPreviewHostedNumbersMod.^, 
-          DependentHostedNumberOrderPayload, 
-          DependentHostedNumberOrderResource, 
-          DependentHostedNumberOrderInstance
-        ] {
-    /**
-      * Initialize the DependentHostedNumberOrderPage
-      *
-      * PLEASE NOTE that this class contains preview products that are subject to
-      * change. Use them with caution. If you currently do not have developer preview
-      * access, please contact help@twilio.com.
-      *
-      * @param version - Version of the resource
-      * @param response - Response from the API
-      * @param solution - Path solution
-      */
-    def this(
-      version: typings.twilio.libRestPreviewHostedNumbersMod.^,
-      response: typings.twilio.libHttpResponseMod.^[String],
-      solution: DependentHostedNumberOrderSolution
-    ) = this()
-    
-    /**
-      * Build an instance of DependentHostedNumberOrderInstance
-      *
-      * @param payload - Payload response from the API
-      */
-    def getInstance(payload: DependentHostedNumberOrderPayload): DependentHostedNumberOrderInstance = js.native
-    
-    /**
-      * Provide a user-friendly representation
-      */
-    def toJSON(): Any = js.native
-  }
-  
   @js.native
   trait DependentHostedNumberOrderListInstance extends StObject {
+    
+    var _solution: DependentHostedNumberOrderSolution = js.native
+    
+    var _uri: String = js.native
+    
+    var _version: default = js.native
     
     /**
       * Streams DependentHostedNumberOrderInstance records from the API.
@@ -144,7 +147,8 @@ object libRestPreviewHostedNumbersAuthorizationDocumentDependentHostedNumberOrde
       * If a function is passed as the first argument, it will be used as the callback
       * function.
       *
-      * @param callback - Function to process each record
+      * @param { DependentHostedNumberOrderListInstanceEachOptions } [params] - Options for request
+      * @param { function } [callback] - Function to process each record
       */
     def each(): Unit = js.native
     def each(
@@ -154,17 +158,9 @@ object libRestPreviewHostedNumbersAuthorizationDocumentDependentHostedNumberOrde
           Unit
         ]
     ): Unit = js.native
+    def each(params: DependentHostedNumberOrderListInstanceEachOptions): Unit = js.native
     def each(
-      opts: Unit,
-      callback: js.Function2[
-          /* item */ DependentHostedNumberOrderInstance, 
-          /* done */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
-          Unit
-        ]
-    ): Unit = js.native
-    def each(opts: DependentHostedNumberOrderListInstanceEachOptions): Unit = js.native
-    def each(
-      opts: DependentHostedNumberOrderListInstanceEachOptions,
+      params: DependentHostedNumberOrderListInstanceEachOptions,
       callback: js.Function2[
           /* item */ DependentHostedNumberOrderInstance, 
           /* done */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
@@ -173,27 +169,16 @@ object libRestPreviewHostedNumbersAuthorizationDocumentDependentHostedNumberOrde
     ): Unit = js.native
     
     /**
-      * Retrieve a single target page of DependentHostedNumberOrderInstance records from
-      * the API.
+      * Retrieve a single target page of DependentHostedNumberOrderInstance records from the API.
       *
       * The request is executed immediately.
       *
-      * If a function is passed as the first argument, it will be used as the callback
-      * function.
-      *
-      * @param callback - Callback to handle list of records
+      * @param { string } [targetUrl] - API-generated URL for the requested results page
+      * @param { function } [callback] - Callback to handle list of records
       */
-    def getPage(): js.Promise[DependentHostedNumberOrderPage] = js.native
-    def getPage(
-      callback: js.Function2[/* error */ js.Error | Null, /* items */ DependentHostedNumberOrderPage, Any]
-    ): js.Promise[DependentHostedNumberOrderPage] = js.native
     def getPage(targetUrl: String): js.Promise[DependentHostedNumberOrderPage] = js.native
     def getPage(
       targetUrl: String,
-      callback: js.Function2[/* error */ js.Error | Null, /* items */ DependentHostedNumberOrderPage, Any]
-    ): js.Promise[DependentHostedNumberOrderPage] = js.native
-    def getPage(
-      targetUrl: Unit,
       callback: js.Function2[/* error */ js.Error | Null, /* items */ DependentHostedNumberOrderPage, Any]
     ): js.Promise[DependentHostedNumberOrderPage] = js.native
     
@@ -203,7 +188,8 @@ object libRestPreviewHostedNumbersAuthorizationDocumentDependentHostedNumberOrde
       * If a function is passed as the first argument, it will be used as the callback
       * function.
       *
-      * @param callback - Callback to handle list of records
+      * @param { DependentHostedNumberOrderListInstanceOptions } [params] - Options for request
+      * @param { function } [callback] - Callback to handle list of records
       */
     def list(): js.Promise[js.Array[DependentHostedNumberOrderInstance]] = js.native
     def list(
@@ -213,17 +199,9 @@ object libRestPreviewHostedNumbersAuthorizationDocumentDependentHostedNumberOrde
           Any
         ]
     ): js.Promise[js.Array[DependentHostedNumberOrderInstance]] = js.native
+    def list(params: DependentHostedNumberOrderListInstanceOptions): js.Promise[js.Array[DependentHostedNumberOrderInstance]] = js.native
     def list(
-      opts: Unit,
-      callback: js.Function2[
-          /* error */ js.Error | Null, 
-          /* items */ js.Array[DependentHostedNumberOrderInstance], 
-          Any
-        ]
-    ): js.Promise[js.Array[DependentHostedNumberOrderInstance]] = js.native
-    def list(opts: DependentHostedNumberOrderListInstanceOptions): js.Promise[js.Array[DependentHostedNumberOrderInstance]] = js.native
-    def list(
-      opts: DependentHostedNumberOrderListInstanceOptions,
+      params: DependentHostedNumberOrderListInstanceOptions,
       callback: js.Function2[
           /* error */ js.Error | Null, 
           /* items */ js.Array[DependentHostedNumberOrderInstance], 
@@ -232,27 +210,23 @@ object libRestPreviewHostedNumbersAuthorizationDocumentDependentHostedNumberOrde
     ): js.Promise[js.Array[DependentHostedNumberOrderInstance]] = js.native
     
     /**
-      * Retrieve a single page of DependentHostedNumberOrderInstance records from the
-      * API.
+      * Retrieve a single page of DependentHostedNumberOrderInstance records from the API.
       *
       * The request is executed immediately.
       *
       * If a function is passed as the first argument, it will be used as the callback
       * function.
       *
-      * @param callback - Callback to handle list of records
+      * @param { DependentHostedNumberOrderListInstancePageOptions } [params] - Options for request
+      * @param { function } [callback] - Callback to handle list of records
       */
     def page(): js.Promise[DependentHostedNumberOrderPage] = js.native
     def page(
       callback: js.Function2[/* error */ js.Error | Null, /* items */ DependentHostedNumberOrderPage, Any]
     ): js.Promise[DependentHostedNumberOrderPage] = js.native
+    def page(params: DependentHostedNumberOrderListInstancePageOptions): js.Promise[DependentHostedNumberOrderPage] = js.native
     def page(
-      opts: Unit,
-      callback: js.Function2[/* error */ js.Error | Null, /* items */ DependentHostedNumberOrderPage, Any]
-    ): js.Promise[DependentHostedNumberOrderPage] = js.native
-    def page(opts: DependentHostedNumberOrderListInstancePageOptions): js.Promise[DependentHostedNumberOrderPage] = js.native
-    def page(
-      opts: DependentHostedNumberOrderListInstancePageOptions,
+      params: DependentHostedNumberOrderListInstancePageOptions,
       callback: js.Function2[/* error */ js.Error | Null, /* items */ DependentHostedNumberOrderPage, Any]
     ): js.Promise[DependentHostedNumberOrderPage] = js.native
     
@@ -261,32 +235,46 @@ object libRestPreviewHostedNumbersAuthorizationDocumentDependentHostedNumberOrde
       */
     def toJSON(): Any = js.native
   }
+  object DependentHostedNumberOrderListInstance {
+    
+    @JSImport("twilio/lib/rest/preview/hosted_numbers/authorizationDocument/dependentHostedNumberOrder", "DependentHostedNumberOrderListInstance")
+    @js.native
+    def apply(version: default, signingDocumentSid: String): DependentHostedNumberOrderListInstance = js.native
+  }
   
-  /**
-    * Options to pass to each
-    *
-    * @property callback -
-    *                         Function to process each record. If this and a positional
-    *                         callback are passed, this one will be used
-    * @property done - Function to be called upon completion of streaming
-    * @property friendlyName - A human readable description of this resource.
-    * @property incomingPhoneNumberSid - IncomingPhoneNumber sid.
-    * @property limit -
-    *                         Upper limit for the number of records to return.
-    *                         each() guarantees never to return more than limit.
-    *                         Default is no limit
-    * @property pageSize -
-    *                         Number of records to fetch per request,
-    *                         when not set will use the default value of 50 records.
-    *                         If no pageSize is defined but a limit is defined,
-    *                         each() will attempt to read the limit with the most efficient
-    *                         page size, i.e. min(limit, 1000)
-    * @property phoneNumber - An E164 formatted phone number.
-    * @property status - The Status of this HostedNumberOrder.
-    * @property uniqueName - A unique, developer assigned name of this HostedNumberOrder.
-    */
+  @JSImport("twilio/lib/rest/preview/hosted_numbers/authorizationDocument/dependentHostedNumberOrder", "DependentHostedNumberOrderPage")
+  @js.native
+  open class DependentHostedNumberOrderPage protected ()
+    extends typings.twilio.libBasePageMod.default[
+          default, 
+          DependentHostedNumberOrderPayload, 
+          DependentHostedNumberOrderResource, 
+          DependentHostedNumberOrderInstance
+        ] {
+    /**
+      * Initialize the DependentHostedNumberOrderPage
+      *
+      * @param version - Version of the resource
+      * @param response - Response from the API
+      * @param solution - Path solution
+      */
+    def this(
+      version: default,
+      response: typings.twilio.libHttpResponseMod.default[String],
+      solution: DependentHostedNumberOrderSolution
+    ) = this()
+    
+    /**
+      * Build an instance of DependentHostedNumberOrderInstance
+      *
+      * @param payload - Payload response from the API
+      */
+    def getInstance(payload: DependentHostedNumberOrderResource): DependentHostedNumberOrderInstance = js.native
+  }
+  
   trait DependentHostedNumberOrderListInstanceEachOptions extends StObject {
     
+    /** Function to process each record. If this and a positional callback are passed, this one will be used */
     var callback: js.UndefOr[
         js.Function2[
           /* item */ DependentHostedNumberOrderInstance, 
@@ -295,20 +283,28 @@ object libRestPreviewHostedNumbersAuthorizationDocumentDependentHostedNumberOrde
         ]
       ] = js.undefined
     
+    /** Function to be called upon completion of streaming */
     var done: js.UndefOr[js.Function] = js.undefined
     
+    /** A human readable description of this resource, up to 64 characters. */
     var friendlyName: js.UndefOr[String] = js.undefined
     
+    /** A 34 character string that uniquely identifies the IncomingPhoneNumber resource created by this HostedNumberOrder. */
     var incomingPhoneNumberSid: js.UndefOr[String] = js.undefined
     
+    /** Upper limit for the number of records to return. each() guarantees never to return more than limit. Default is no limit */
     var limit: js.UndefOr[Double] = js.undefined
     
+    /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
     var pageSize: js.UndefOr[Double] = js.undefined
     
+    /** An E164 formatted phone number hosted by this HostedNumberOrder. */
     var phoneNumber: js.UndefOr[String] = js.undefined
     
+    /** Status of an instance resource. It can hold one of the values: 1. opened 2. signing, 3. signed LOA, 4. canceled, 5. failed. See the section entitled [Status Values](https://www.twilio.com/docs/api/phone-numbers/hosted-number-authorization-documents#status-values) for more information on each of these statuses. */
     var status: js.UndefOr[DependentHostedNumberOrderStatus] = js.undefined
     
+    /** Provides a unique and addressable name to be assigned to this HostedNumberOrder, assigned by the developer, to be optionally used in addition to SID. */
     var uniqueName: js.UndefOr[String] = js.undefined
   }
   object DependentHostedNumberOrderListInstanceEachOptions {
@@ -361,39 +357,27 @@ object libRestPreviewHostedNumbersAuthorizationDocumentDependentHostedNumberOrde
     }
   }
   
-  /**
-    * Options to pass to list
-    *
-    * @property friendlyName - A human readable description of this resource.
-    * @property incomingPhoneNumberSid - IncomingPhoneNumber sid.
-    * @property limit -
-    *                         Upper limit for the number of records to return.
-    *                         list() guarantees never to return more than limit.
-    *                         Default is no limit
-    * @property pageSize -
-    *                         Number of records to fetch per request,
-    *                         when not set will use the default value of 50 records.
-    *                         If no page_size is defined but a limit is defined,
-    *                         list() will attempt to read the limit with the most
-    *                         efficient page size, i.e. min(limit, 1000)
-    * @property phoneNumber - An E164 formatted phone number.
-    * @property status - The Status of this HostedNumberOrder.
-    * @property uniqueName - A unique, developer assigned name of this HostedNumberOrder.
-    */
   trait DependentHostedNumberOrderListInstanceOptions extends StObject {
     
+    /** A human readable description of this resource, up to 64 characters. */
     var friendlyName: js.UndefOr[String] = js.undefined
     
+    /** A 34 character string that uniquely identifies the IncomingPhoneNumber resource created by this HostedNumberOrder. */
     var incomingPhoneNumberSid: js.UndefOr[String] = js.undefined
     
+    /** Upper limit for the number of records to return. list() guarantees never to return more than limit. Default is no limit */
     var limit: js.UndefOr[Double] = js.undefined
     
+    /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
     var pageSize: js.UndefOr[Double] = js.undefined
     
+    /** An E164 formatted phone number hosted by this HostedNumberOrder. */
     var phoneNumber: js.UndefOr[String] = js.undefined
     
+    /** Status of an instance resource. It can hold one of the values: 1. opened 2. signing, 3. signed LOA, 4. canceled, 5. failed. See the section entitled [Status Values](https://www.twilio.com/docs/api/phone-numbers/hosted-number-authorization-documents#status-values) for more information on each of these statuses. */
     var status: js.UndefOr[DependentHostedNumberOrderStatus] = js.undefined
     
+    /** Provides a unique and addressable name to be assigned to this HostedNumberOrder, assigned by the developer, to be optionally used in addition to SID. */
     var uniqueName: js.UndefOr[String] = js.undefined
   }
   object DependentHostedNumberOrderListInstanceOptions {
@@ -436,34 +420,30 @@ object libRestPreviewHostedNumbersAuthorizationDocumentDependentHostedNumberOrde
     }
   }
   
-  /**
-    * Options to pass to page
-    *
-    * @property friendlyName - A human readable description of this resource.
-    * @property incomingPhoneNumberSid - IncomingPhoneNumber sid.
-    * @property pageNumber - Page Number, this value is simply for client state
-    * @property pageSize - Number of records to return, defaults to 50
-    * @property pageToken - PageToken provided by the API
-    * @property phoneNumber - An E164 formatted phone number.
-    * @property status - The Status of this HostedNumberOrder.
-    * @property uniqueName - A unique, developer assigned name of this HostedNumberOrder.
-    */
   trait DependentHostedNumberOrderListInstancePageOptions extends StObject {
     
+    /** A human readable description of this resource, up to 64 characters. */
     var friendlyName: js.UndefOr[String] = js.undefined
     
+    /** A 34 character string that uniquely identifies the IncomingPhoneNumber resource created by this HostedNumberOrder. */
     var incomingPhoneNumberSid: js.UndefOr[String] = js.undefined
     
+    /** Page Number, this value is simply for client state */
     var pageNumber: js.UndefOr[Double] = js.undefined
     
+    /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
     var pageSize: js.UndefOr[Double] = js.undefined
     
+    /** PageToken provided by the API */
     var pageToken: js.UndefOr[String] = js.undefined
     
+    /** An E164 formatted phone number hosted by this HostedNumberOrder. */
     var phoneNumber: js.UndefOr[String] = js.undefined
     
+    /** Status of an instance resource. It can hold one of the values: 1. opened 2. signing, 3. signed LOA, 4. canceled, 5. failed. See the section entitled [Status Values](https://www.twilio.com/docs/api/phone-numbers/hosted-number-authorization-documents#status-values) for more information on each of these statuses. */
     var status: js.UndefOr[DependentHostedNumberOrderStatus] = js.undefined
     
+    /** Provides a unique and addressable name to be assigned to this HostedNumberOrder, assigned by the developer, to be optionally used in addition to SID. */
     var uniqueName: js.UndefOr[String] = js.undefined
   }
   object DependentHostedNumberOrderListInstancePageOptions {
@@ -512,43 +492,31 @@ object libRestPreviewHostedNumbersAuthorizationDocumentDependentHostedNumberOrde
   
   trait DependentHostedNumberOrderPayload
     extends StObject
-       with DependentHostedNumberOrderResource
-       with TwilioResponsePayload
+       with TwilioResponsePayload {
+    
+    var items: js.Array[DependentHostedNumberOrderResource]
+  }
   object DependentHostedNumberOrderPayload {
     
     inline def apply(
-      account_sid: String,
-      address_sid: String,
-      call_delay: Double,
-      capabilities: PhoneNumberCapabilities,
-      cc_emails: js.Array[String],
-      date_created: js.Date,
-      date_updated: js.Date,
-      email: String,
-      `extension`: String,
-      failure_reason: String,
       first_page_uri: String,
-      friendly_name: String,
-      incoming_phone_number_sid: String,
+      items: js.Array[DependentHostedNumberOrderResource],
       next_page_uri: String,
       page: Double,
       page_size: Double,
-      phone_number: String,
       previous_page_uri: String,
-      sid: String,
-      signing_document_sid: String,
-      status: DependentHostedNumberOrderStatus,
-      unique_name: String,
-      uri: String,
-      verification_attempts: Double,
-      verification_call_sids: js.Array[String],
-      verification_code: String,
-      verification_document_sid: String,
-      verification_type: DependentHostedNumberOrderVerificationType
+      uri: String
     ): DependentHostedNumberOrderPayload = {
-      val __obj = js.Dynamic.literal(account_sid = account_sid.asInstanceOf[js.Any], address_sid = address_sid.asInstanceOf[js.Any], call_delay = call_delay.asInstanceOf[js.Any], capabilities = capabilities.asInstanceOf[js.Any], cc_emails = cc_emails.asInstanceOf[js.Any], date_created = date_created.asInstanceOf[js.Any], date_updated = date_updated.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], failure_reason = failure_reason.asInstanceOf[js.Any], first_page_uri = first_page_uri.asInstanceOf[js.Any], friendly_name = friendly_name.asInstanceOf[js.Any], incoming_phone_number_sid = incoming_phone_number_sid.asInstanceOf[js.Any], next_page_uri = next_page_uri.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any], page_size = page_size.asInstanceOf[js.Any], phone_number = phone_number.asInstanceOf[js.Any], previous_page_uri = previous_page_uri.asInstanceOf[js.Any], sid = sid.asInstanceOf[js.Any], signing_document_sid = signing_document_sid.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], unique_name = unique_name.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any], verification_attempts = verification_attempts.asInstanceOf[js.Any], verification_call_sids = verification_call_sids.asInstanceOf[js.Any], verification_code = verification_code.asInstanceOf[js.Any], verification_document_sid = verification_document_sid.asInstanceOf[js.Any], verification_type = verification_type.asInstanceOf[js.Any])
-      __obj.updateDynamic("extension")(`extension`.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(first_page_uri = first_page_uri.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], next_page_uri = next_page_uri.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any], page_size = page_size.asInstanceOf[js.Any], previous_page_uri = previous_page_uri.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
       __obj.asInstanceOf[DependentHostedNumberOrderPayload]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DependentHostedNumberOrderPayload] (val x: Self) extends AnyVal {
+      
+      inline def setItems(value: js.Array[DependentHostedNumberOrderResource]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      
+      inline def setItemsVarargs(value: DependentHostedNumberOrderResource*): Self = StObject.set(x, "items", js.Array(value*))
     }
   }
   
@@ -684,12 +652,12 @@ object libRestPreviewHostedNumbersAuthorizationDocumentDependentHostedNumberOrde
   
   trait DependentHostedNumberOrderSolution extends StObject {
     
-    var signingDocumentSid: js.UndefOr[String] = js.undefined
+    var signingDocumentSid: String
   }
   object DependentHostedNumberOrderSolution {
     
-    inline def apply(): DependentHostedNumberOrderSolution = {
-      val __obj = js.Dynamic.literal()
+    inline def apply(signingDocumentSid: String): DependentHostedNumberOrderSolution = {
+      val __obj = js.Dynamic.literal(signingDocumentSid = signingDocumentSid.asInstanceOf[js.Any])
       __obj.asInstanceOf[DependentHostedNumberOrderSolution]
     }
     
@@ -697,8 +665,6 @@ object libRestPreviewHostedNumbersAuthorizationDocumentDependentHostedNumberOrde
     implicit open class MutableBuilder[Self <: DependentHostedNumberOrderSolution] (val x: Self) extends AnyVal {
       
       inline def setSigningDocumentSid(value: String): Self = StObject.set(x, "signingDocumentSid", value.asInstanceOf[js.Any])
-      
-      inline def setSigningDocumentSidUndefined: Self = StObject.set(x, "signingDocumentSid", js.undefined)
     }
   }
   

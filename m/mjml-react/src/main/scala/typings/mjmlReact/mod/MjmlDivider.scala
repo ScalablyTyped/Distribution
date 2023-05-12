@@ -12,7 +12,7 @@ open class MjmlDivider protected ()
   def this(props: MjmlDividerProps & ClassNameProps & PaddingProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: MjmlDividerProps & ClassNameProps & PaddingProps, context: Any) = this()
 }

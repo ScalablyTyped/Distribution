@@ -45,16 +45,6 @@ object mod {
     def dotSize: Double = js.native
     inline def dotSize_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dotSize")(x.asInstanceOf[js.Any])
     
-    @JSImport("@nivo/annotations", "defaultProps.motionDamping")
-    @js.native
-    def motionDamping: Double = js.native
-    inline def motionDamping_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("motionDamping")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@nivo/annotations", "defaultProps.motionStiffness")
-    @js.native
-    def motionStiffness: Double = js.native
-    inline def motionStiffness_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("motionStiffness")(x.asInstanceOf[js.Any])
-    
     @JSImport("@nivo/annotations", "defaultProps.noteTextOffset")
     @js.native
     def noteTextOffset: Double = js.native

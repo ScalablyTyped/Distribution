@@ -1,6 +1,7 @@
 package typings.three
 
 import typings.three.srcCoreBufferGeometryMod.BufferGeometry
+import typings.three.srcCoreBufferGeometryMod.NormalBufferAttributes
 import typings.three.srcMaterialsMaterialMod.Material
 import typings.three.srcThreeMod.Mesh
 import typings.three.srcThreeMod.Points
@@ -14,8 +15,14 @@ object examplesJsmExportersDracoexporterMod {
   @js.native
   open class DRACOExporter () extends StObject {
     
-    def parse(`object`: Mesh[BufferGeometry, Material | js.Array[Material]], options: DRACOExporterOptions): js.typedarray.Int8Array = js.native
-    def parse(`object`: Points[BufferGeometry, Material | js.Array[Material]], options: DRACOExporterOptions): js.typedarray.Int8Array = js.native
+    def parse(
+      `object`: Mesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]],
+      options: DRACOExporterOptions
+    ): js.typedarray.Int8Array = js.native
+    def parse(
+      `object`: Points[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]],
+      options: DRACOExporterOptions
+    ): js.typedarray.Int8Array = js.native
   }
   
   trait DRACOExporterOptions extends StObject {

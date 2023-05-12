@@ -1,7 +1,91 @@
 package typings.httpStatus
 
+import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
+import typings.httpStatus.httpStatusInts.`100`
+import typings.httpStatus.httpStatusInts.`101`
+import typings.httpStatus.httpStatusInts.`103`
+import typings.httpStatus.httpStatusInts.`200`
+import typings.httpStatus.httpStatusInts.`201`
+import typings.httpStatus.httpStatusInts.`202`
+import typings.httpStatus.httpStatusInts.`203`
+import typings.httpStatus.httpStatusInts.`204`
+import typings.httpStatus.httpStatusInts.`205`
+import typings.httpStatus.httpStatusInts.`206`
+import typings.httpStatus.httpStatusInts.`207`
+import typings.httpStatus.httpStatusInts.`208`
+import typings.httpStatus.httpStatusInts.`226`
+import typings.httpStatus.httpStatusInts.`300`
+import typings.httpStatus.httpStatusInts.`301`
+import typings.httpStatus.httpStatusInts.`302`
+import typings.httpStatus.httpStatusInts.`303`
+import typings.httpStatus.httpStatusInts.`304`
+import typings.httpStatus.httpStatusInts.`305`
+import typings.httpStatus.httpStatusInts.`306`
+import typings.httpStatus.httpStatusInts.`307`
+import typings.httpStatus.httpStatusInts.`308`
+import typings.httpStatus.httpStatusInts.`400`
+import typings.httpStatus.httpStatusInts.`401`
+import typings.httpStatus.httpStatusInts.`402`
+import typings.httpStatus.httpStatusInts.`403`
+import typings.httpStatus.httpStatusInts.`404`
+import typings.httpStatus.httpStatusInts.`405`
+import typings.httpStatus.httpStatusInts.`406`
+import typings.httpStatus.httpStatusInts.`407`
+import typings.httpStatus.httpStatusInts.`408`
+import typings.httpStatus.httpStatusInts.`409`
+import typings.httpStatus.httpStatusInts.`410`
+import typings.httpStatus.httpStatusInts.`411`
+import typings.httpStatus.httpStatusInts.`412`
+import typings.httpStatus.httpStatusInts.`413`
+import typings.httpStatus.httpStatusInts.`414`
+import typings.httpStatus.httpStatusInts.`415`
+import typings.httpStatus.httpStatusInts.`416`
+import typings.httpStatus.httpStatusInts.`417`
+import typings.httpStatus.httpStatusInts.`418`
+import typings.httpStatus.httpStatusInts.`420`
+import typings.httpStatus.httpStatusInts.`421`
+import typings.httpStatus.httpStatusInts.`422`
+import typings.httpStatus.httpStatusInts.`423`
+import typings.httpStatus.httpStatusInts.`424`
+import typings.httpStatus.httpStatusInts.`426`
+import typings.httpStatus.httpStatusInts.`428`
+import typings.httpStatus.httpStatusInts.`429`
+import typings.httpStatus.httpStatusInts.`431`
+import typings.httpStatus.httpStatusInts.`440`
+import typings.httpStatus.httpStatusInts.`444`
+import typings.httpStatus.httpStatusInts.`449`
+import typings.httpStatus.httpStatusInts.`450`
+import typings.httpStatus.httpStatusInts.`451`
+import typings.httpStatus.httpStatusInts.`494`
+import typings.httpStatus.httpStatusInts.`495`
+import typings.httpStatus.httpStatusInts.`496`
+import typings.httpStatus.httpStatusInts.`497`
+import typings.httpStatus.httpStatusInts.`498`
+import typings.httpStatus.httpStatusInts.`499`
+import typings.httpStatus.httpStatusInts.`500`
+import typings.httpStatus.httpStatusInts.`501`
+import typings.httpStatus.httpStatusInts.`502`
+import typings.httpStatus.httpStatusInts.`503`
+import typings.httpStatus.httpStatusInts.`504`
+import typings.httpStatus.httpStatusInts.`505`
+import typings.httpStatus.httpStatusInts.`506`
+import typings.httpStatus.httpStatusInts.`507`
+import typings.httpStatus.httpStatusInts.`508`
+import typings.httpStatus.httpStatusInts.`509`
+import typings.httpStatus.httpStatusInts.`510`
+import typings.httpStatus.httpStatusInts.`511`
+import typings.httpStatus.httpStatusInts.`520`
+import typings.httpStatus.httpStatusInts.`521`
+import typings.httpStatus.httpStatusInts.`522`
+import typings.httpStatus.httpStatusInts.`523`
+import typings.httpStatus.httpStatusInts.`524`
+import typings.httpStatus.httpStatusInts.`525`
+import typings.httpStatus.httpStatusInts.`526`
+import typings.httpStatus.httpStatusInts.`527`
+import typings.httpStatus.httpStatusInts.`530`
+import typings.httpStatus.httpStatusInts.`598`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,11 +94,12 @@ object mod extends Shortcut {
   
   @JSImport("http-status", JSImport.Namespace)
   @js.native
-  val ^ : HttpStatus = js.native
+  val ^ : js.Object & HttpStatus = js.native
   
   trait HttpStatus
     extends StObject
-       with /* key */ StringDictionary[String | Double | HttpStatusClasses | HttpStatusExtra] {
+       with /* key */ NumberDictionary[js.UndefOr[String]]
+       with /* key */ StringDictionary[js.UndefOr[String | Double | HttpStatusClasses | HttpStatusExtra]] {
     
     val `100`: String
     
@@ -496,125 +581,125 @@ object mod extends Shortcut {
     
     val `511_NAME`: String
     
-    val ACCEPTED: Double
+    val ACCEPTED: typings.httpStatus.httpStatusInts.`202`
     
-    val ALREADY_REPORTED: Double
+    val ALREADY_REPORTED: typings.httpStatus.httpStatusInts.`208`
     
-    val BAD_GATEWAY: Double
+    val BAD_GATEWAY: typings.httpStatus.httpStatusInts.`502`
     
-    val BAD_REQUEST: Double
+    val BAD_REQUEST: typings.httpStatus.httpStatusInts.`400`
     
-    val CONFLICT: Double
+    val CONFLICT: typings.httpStatus.httpStatusInts.`409`
     
-    val CONTINUE: Double
+    val CONTINUE: typings.httpStatus.httpStatusInts.`100`
     
-    val CREATED: Double
+    val CREATED: typings.httpStatus.httpStatusInts.`201`
     
-    val EXPECTATION_FAILED: Double
+    val EXPECTATION_FAILED: typings.httpStatus.httpStatusInts.`417`
     
-    val FAILED_DEPENDENCY: Double
+    val FAILED_DEPENDENCY: typings.httpStatus.httpStatusInts.`424`
     
-    val FORBIDDEN: Double
+    val FORBIDDEN: typings.httpStatus.httpStatusInts.`403`
     
-    val FOUND: Double
+    val FOUND: typings.httpStatus.httpStatusInts.`302`
     
-    val GATEWAY_TIMEOUT: Double
+    val GATEWAY_TIMEOUT: typings.httpStatus.httpStatusInts.`504`
     
-    val GONE: Double
+    val GONE: typings.httpStatus.httpStatusInts.`410`
     
-    val HTTP_VERSION_NOT_SUPPORTED: Double
+    val HTTP_VERSION_NOT_SUPPORTED: typings.httpStatus.httpStatusInts.`505`
     
-    val IM_A_TEAPOT: Double
+    val IM_A_TEAPOT: typings.httpStatus.httpStatusInts.`418`
     
-    val IM_USED: Double
+    val IM_USED: typings.httpStatus.httpStatusInts.`226`
     
-    val INSUFFICIENT_STORAGE: Double
+    val INSUFFICIENT_STORAGE: typings.httpStatus.httpStatusInts.`507`
     
-    val INTERNAL_SERVER_ERROR: Double
+    val INTERNAL_SERVER_ERROR: typings.httpStatus.httpStatusInts.`500`
     
-    val LENGTH_REQUIRED: Double
+    val LENGTH_REQUIRED: typings.httpStatus.httpStatusInts.`411`
     
-    val LOCKED: Double
+    val LOCKED: typings.httpStatus.httpStatusInts.`423`
     
-    val LOOP_DETECTED: Double
+    val LOOP_DETECTED: typings.httpStatus.httpStatusInts.`508`
     
-    val METHOD_NOT_ALLOWED: Double
+    val METHOD_NOT_ALLOWED: typings.httpStatus.httpStatusInts.`405`
     
-    val MISDIRECTED_REQUEST: Double
+    val MISDIRECTED_REQUEST: typings.httpStatus.httpStatusInts.`421`
     
-    val MOVED_PERMANENTLY: Double
+    val MOVED_PERMANENTLY: typings.httpStatus.httpStatusInts.`301`
     
-    val MULTIPLE_CHOICES: Double
+    val MULTIPLE_CHOICES: typings.httpStatus.httpStatusInts.`300`
     
-    val MULTI_STATUS: Double
+    val MULTI_STATUS: typings.httpStatus.httpStatusInts.`207`
     
-    val NETWORK_AUTHENTICATION_REQUIRED: Double
+    val NETWORK_AUTHENTICATION_REQUIRED: typings.httpStatus.httpStatusInts.`511`
     
-    val NON_AUTHORITATIVE_INFORMATION: Double
+    val NON_AUTHORITATIVE_INFORMATION: typings.httpStatus.httpStatusInts.`203`
     
-    val NOT_ACCEPTABLE: Double
+    val NOT_ACCEPTABLE: typings.httpStatus.httpStatusInts.`406`
     
-    val NOT_EXTENDED: Double
+    val NOT_EXTENDED: typings.httpStatus.httpStatusInts.`510`
     
-    val NOT_FOUND: Double
+    val NOT_FOUND: typings.httpStatus.httpStatusInts.`404`
     
-    val NOT_IMPLEMENTED: Double
+    val NOT_IMPLEMENTED: typings.httpStatus.httpStatusInts.`501`
     
-    val NOT_MODIFIED: Double
+    val NOT_MODIFIED: typings.httpStatus.httpStatusInts.`304`
     
-    val NO_CONTENT: Double
+    val NO_CONTENT: typings.httpStatus.httpStatusInts.`204`
     
-    val OK: Double
+    val OK: typings.httpStatus.httpStatusInts.`200`
     
-    val PARTIAL_CONTENT: Double
+    val PARTIAL_CONTENT: typings.httpStatus.httpStatusInts.`206`
     
-    val PAYMENT_REQUIRED: Double
+    val PAYMENT_REQUIRED: typings.httpStatus.httpStatusInts.`402`
     
-    val PERMANENT_REDIRECT: Double
+    val PERMANENT_REDIRECT: typings.httpStatus.httpStatusInts.`308`
     
-    val PRECONDITION_FAILED: Double
+    val PRECONDITION_FAILED: typings.httpStatus.httpStatusInts.`412`
     
-    val PRECONDITION_REQUIRED: Double
+    val PRECONDITION_REQUIRED: typings.httpStatus.httpStatusInts.`428`
     
-    val PROXY_AUTHENTICATION_REQUIRED: Double
+    val PROXY_AUTHENTICATION_REQUIRED: typings.httpStatus.httpStatusInts.`407`
     
-    val REQUESTED_RANGE_NOT_SATISFIABLE: Double
+    val REQUESTED_RANGE_NOT_SATISFIABLE: typings.httpStatus.httpStatusInts.`416`
     
-    val REQUEST_ENTITY_TOO_LARGE: Double
+    val REQUEST_ENTITY_TOO_LARGE: typings.httpStatus.httpStatusInts.`413`
     
-    val REQUEST_HEADER_FIELDS_TOO_LARGE: Double
+    val REQUEST_HEADER_FIELDS_TOO_LARGE: typings.httpStatus.httpStatusInts.`431`
     
-    val REQUEST_TIMEOUT: Double
+    val REQUEST_TIMEOUT: typings.httpStatus.httpStatusInts.`408`
     
-    val REQUEST_URI_TOO_LONG: Double
+    val REQUEST_URI_TOO_LONG: typings.httpStatus.httpStatusInts.`414`
     
-    val RESET_CONTENT: Double
+    val RESET_CONTENT: typings.httpStatus.httpStatusInts.`205`
     
-    val SEE_OTHER: Double
+    val SEE_OTHER: typings.httpStatus.httpStatusInts.`303`
     
-    val SERVICE_UNAVAILABLE: Double
+    val SERVICE_UNAVAILABLE: typings.httpStatus.httpStatusInts.`503`
     
-    val SWITCHING_PROTOCOLS: Double
+    val SWITCHING_PROTOCOLS: typings.httpStatus.httpStatusInts.`101`
     
-    val SWITCH_PROXY: Double
+    val SWITCH_PROXY: typings.httpStatus.httpStatusInts.`306`
     
-    val TEMPORARY_REDIRECT: Double
+    val TEMPORARY_REDIRECT: typings.httpStatus.httpStatusInts.`307`
     
-    val TOO_MANY_REQUESTS: Double
+    val TOO_MANY_REQUESTS: typings.httpStatus.httpStatusInts.`429`
     
-    val UNAUTHORIZED: Double
+    val UNAUTHORIZED: typings.httpStatus.httpStatusInts.`401`
     
-    val UNAVAILABLE_FOR_LEGAL_REASONS: Double
+    val UNAVAILABLE_FOR_LEGAL_REASONS: typings.httpStatus.httpStatusInts.`451`
     
-    val UNPROCESSABLE_ENTITY: Double
+    val UNPROCESSABLE_ENTITY: typings.httpStatus.httpStatusInts.`422`
     
-    val UNSUPPORTED_MEDIA_TYPE: Double
+    val UNSUPPORTED_MEDIA_TYPE: typings.httpStatus.httpStatusInts.`415`
     
-    val UPGRADE_REQUIRED: Double
+    val UPGRADE_REQUIRED: typings.httpStatus.httpStatusInts.`426`
     
-    val USE_PROXY: Double
+    val USE_PROXY: typings.httpStatus.httpStatusInts.`305`
     
-    val VARIANT_ALSO_NEGOTIATES: Double
+    val VARIANT_ALSO_NEGOTIATES: typings.httpStatus.httpStatusInts.`506`
     
     var classes: HttpStatusClasses
     
@@ -862,23 +947,9 @@ object mod extends Shortcut {
       `511`: String,
       `511_CLASS`: String,
       `511_MESSAGE`: String,
-      `511_NAME`: String,
-      ACCEPTED: Double,
-      ALREADY_REPORTED: Double,
-      BAD_GATEWAY: Double,
-      BAD_REQUEST: Double,
-      CONFLICT: Double,
-      CONTINUE: Double,
-      CREATED: Double,
-      EXPECTATION_FAILED: Double,
-      FAILED_DEPENDENCY: Double,
-      FORBIDDEN: Double,
-      FOUND: Double,
-      GATEWAY_TIMEOUT: Double,
-      GONE: Double,
-      HTTP_VERSION_NOT_SUPPORTED: Double
+      `511_NAME`: String
     ): HttpStatus = {
-      val __obj = js.Dynamic.literal(ACCEPTED = ACCEPTED.asInstanceOf[js.Any], ALREADY_REPORTED = ALREADY_REPORTED.asInstanceOf[js.Any], BAD_GATEWAY = BAD_GATEWAY.asInstanceOf[js.Any], BAD_REQUEST = BAD_REQUEST.asInstanceOf[js.Any], CONFLICT = CONFLICT.asInstanceOf[js.Any], CONTINUE = CONTINUE.asInstanceOf[js.Any], CREATED = CREATED.asInstanceOf[js.Any], EXPECTATION_FAILED = EXPECTATION_FAILED.asInstanceOf[js.Any], FAILED_DEPENDENCY = FAILED_DEPENDENCY.asInstanceOf[js.Any], FORBIDDEN = FORBIDDEN.asInstanceOf[js.Any], FOUND = FOUND.asInstanceOf[js.Any], GATEWAY_TIMEOUT = GATEWAY_TIMEOUT.asInstanceOf[js.Any], GONE = GONE.asInstanceOf[js.Any], HTTP_VERSION_NOT_SUPPORTED = HTTP_VERSION_NOT_SUPPORTED.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(ACCEPTED = 202, ALREADY_REPORTED = 208, BAD_GATEWAY = 502, BAD_REQUEST = 400, CONFLICT = 409, CONTINUE = 100, CREATED = 201, EXPECTATION_FAILED = 417, FAILED_DEPENDENCY = 424, FORBIDDEN = 403, FOUND = 302, GATEWAY_TIMEOUT = 504, GONE = 410, HTTP_VERSION_NOT_SUPPORTED = 505)
       __obj.updateDynamic("100")(`100`.asInstanceOf[js.Any])
       __obj.updateDynamic("100_CLASS")(`100_CLASS`.asInstanceOf[js.Any])
       __obj.updateDynamic("100_MESSAGE")(`100_MESSAGE`.asInstanceOf[js.Any])
@@ -1605,129 +1676,129 @@ object mod extends Shortcut {
       
       inline def set511_NAME(value: String): Self = StObject.set(x, "511_NAME", value.asInstanceOf[js.Any])
       
-      inline def setACCEPTED(value: Double): Self = StObject.set(x, "ACCEPTED", value.asInstanceOf[js.Any])
+      inline def setACCEPTED(value: `202`): Self = StObject.set(x, "ACCEPTED", value.asInstanceOf[js.Any])
       
-      inline def setALREADY_REPORTED(value: Double): Self = StObject.set(x, "ALREADY_REPORTED", value.asInstanceOf[js.Any])
+      inline def setALREADY_REPORTED(value: `208`): Self = StObject.set(x, "ALREADY_REPORTED", value.asInstanceOf[js.Any])
       
-      inline def setBAD_GATEWAY(value: Double): Self = StObject.set(x, "BAD_GATEWAY", value.asInstanceOf[js.Any])
+      inline def setBAD_GATEWAY(value: `502`): Self = StObject.set(x, "BAD_GATEWAY", value.asInstanceOf[js.Any])
       
-      inline def setBAD_REQUEST(value: Double): Self = StObject.set(x, "BAD_REQUEST", value.asInstanceOf[js.Any])
+      inline def setBAD_REQUEST(value: `400`): Self = StObject.set(x, "BAD_REQUEST", value.asInstanceOf[js.Any])
       
-      inline def setCONFLICT(value: Double): Self = StObject.set(x, "CONFLICT", value.asInstanceOf[js.Any])
+      inline def setCONFLICT(value: `409`): Self = StObject.set(x, "CONFLICT", value.asInstanceOf[js.Any])
       
-      inline def setCONTINUE(value: Double): Self = StObject.set(x, "CONTINUE", value.asInstanceOf[js.Any])
+      inline def setCONTINUE(value: `100`): Self = StObject.set(x, "CONTINUE", value.asInstanceOf[js.Any])
       
-      inline def setCREATED(value: Double): Self = StObject.set(x, "CREATED", value.asInstanceOf[js.Any])
+      inline def setCREATED(value: `201`): Self = StObject.set(x, "CREATED", value.asInstanceOf[js.Any])
       
       inline def setClasses(value: HttpStatusClasses): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
       
-      inline def setEXPECTATION_FAILED(value: Double): Self = StObject.set(x, "EXPECTATION_FAILED", value.asInstanceOf[js.Any])
+      inline def setEXPECTATION_FAILED(value: `417`): Self = StObject.set(x, "EXPECTATION_FAILED", value.asInstanceOf[js.Any])
       
       inline def setExtra(value: HttpStatusExtra): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
       
-      inline def setFAILED_DEPENDENCY(value: Double): Self = StObject.set(x, "FAILED_DEPENDENCY", value.asInstanceOf[js.Any])
+      inline def setFAILED_DEPENDENCY(value: `424`): Self = StObject.set(x, "FAILED_DEPENDENCY", value.asInstanceOf[js.Any])
       
-      inline def setFORBIDDEN(value: Double): Self = StObject.set(x, "FORBIDDEN", value.asInstanceOf[js.Any])
+      inline def setFORBIDDEN(value: `403`): Self = StObject.set(x, "FORBIDDEN", value.asInstanceOf[js.Any])
       
-      inline def setFOUND(value: Double): Self = StObject.set(x, "FOUND", value.asInstanceOf[js.Any])
+      inline def setFOUND(value: `302`): Self = StObject.set(x, "FOUND", value.asInstanceOf[js.Any])
       
-      inline def setGATEWAY_TIMEOUT(value: Double): Self = StObject.set(x, "GATEWAY_TIMEOUT", value.asInstanceOf[js.Any])
+      inline def setGATEWAY_TIMEOUT(value: `504`): Self = StObject.set(x, "GATEWAY_TIMEOUT", value.asInstanceOf[js.Any])
       
-      inline def setGONE(value: Double): Self = StObject.set(x, "GONE", value.asInstanceOf[js.Any])
+      inline def setGONE(value: `410`): Self = StObject.set(x, "GONE", value.asInstanceOf[js.Any])
       
-      inline def setHTTP_VERSION_NOT_SUPPORTED(value: Double): Self = StObject.set(x, "HTTP_VERSION_NOT_SUPPORTED", value.asInstanceOf[js.Any])
+      inline def setHTTP_VERSION_NOT_SUPPORTED(value: `505`): Self = StObject.set(x, "HTTP_VERSION_NOT_SUPPORTED", value.asInstanceOf[js.Any])
       
-      inline def setIM_A_TEAPOT(value: Double): Self = StObject.set(x, "IM_A_TEAPOT", value.asInstanceOf[js.Any])
+      inline def setIM_A_TEAPOT(value: `418`): Self = StObject.set(x, "IM_A_TEAPOT", value.asInstanceOf[js.Any])
       
-      inline def setIM_USED(value: Double): Self = StObject.set(x, "IM_USED", value.asInstanceOf[js.Any])
+      inline def setIM_USED(value: `226`): Self = StObject.set(x, "IM_USED", value.asInstanceOf[js.Any])
       
-      inline def setINSUFFICIENT_STORAGE(value: Double): Self = StObject.set(x, "INSUFFICIENT_STORAGE", value.asInstanceOf[js.Any])
+      inline def setINSUFFICIENT_STORAGE(value: `507`): Self = StObject.set(x, "INSUFFICIENT_STORAGE", value.asInstanceOf[js.Any])
       
-      inline def setINTERNAL_SERVER_ERROR(value: Double): Self = StObject.set(x, "INTERNAL_SERVER_ERROR", value.asInstanceOf[js.Any])
+      inline def setINTERNAL_SERVER_ERROR(value: `500`): Self = StObject.set(x, "INTERNAL_SERVER_ERROR", value.asInstanceOf[js.Any])
       
-      inline def setLENGTH_REQUIRED(value: Double): Self = StObject.set(x, "LENGTH_REQUIRED", value.asInstanceOf[js.Any])
+      inline def setLENGTH_REQUIRED(value: `411`): Self = StObject.set(x, "LENGTH_REQUIRED", value.asInstanceOf[js.Any])
       
-      inline def setLOCKED(value: Double): Self = StObject.set(x, "LOCKED", value.asInstanceOf[js.Any])
+      inline def setLOCKED(value: `423`): Self = StObject.set(x, "LOCKED", value.asInstanceOf[js.Any])
       
-      inline def setLOOP_DETECTED(value: Double): Self = StObject.set(x, "LOOP_DETECTED", value.asInstanceOf[js.Any])
+      inline def setLOOP_DETECTED(value: `508`): Self = StObject.set(x, "LOOP_DETECTED", value.asInstanceOf[js.Any])
       
-      inline def setMETHOD_NOT_ALLOWED(value: Double): Self = StObject.set(x, "METHOD_NOT_ALLOWED", value.asInstanceOf[js.Any])
+      inline def setMETHOD_NOT_ALLOWED(value: `405`): Self = StObject.set(x, "METHOD_NOT_ALLOWED", value.asInstanceOf[js.Any])
       
-      inline def setMISDIRECTED_REQUEST(value: Double): Self = StObject.set(x, "MISDIRECTED_REQUEST", value.asInstanceOf[js.Any])
+      inline def setMISDIRECTED_REQUEST(value: `421`): Self = StObject.set(x, "MISDIRECTED_REQUEST", value.asInstanceOf[js.Any])
       
-      inline def setMOVED_PERMANENTLY(value: Double): Self = StObject.set(x, "MOVED_PERMANENTLY", value.asInstanceOf[js.Any])
+      inline def setMOVED_PERMANENTLY(value: `301`): Self = StObject.set(x, "MOVED_PERMANENTLY", value.asInstanceOf[js.Any])
       
-      inline def setMULTIPLE_CHOICES(value: Double): Self = StObject.set(x, "MULTIPLE_CHOICES", value.asInstanceOf[js.Any])
+      inline def setMULTIPLE_CHOICES(value: `300`): Self = StObject.set(x, "MULTIPLE_CHOICES", value.asInstanceOf[js.Any])
       
-      inline def setMULTI_STATUS(value: Double): Self = StObject.set(x, "MULTI_STATUS", value.asInstanceOf[js.Any])
+      inline def setMULTI_STATUS(value: `207`): Self = StObject.set(x, "MULTI_STATUS", value.asInstanceOf[js.Any])
       
-      inline def setNETWORK_AUTHENTICATION_REQUIRED(value: Double): Self = StObject.set(x, "NETWORK_AUTHENTICATION_REQUIRED", value.asInstanceOf[js.Any])
+      inline def setNETWORK_AUTHENTICATION_REQUIRED(value: `511`): Self = StObject.set(x, "NETWORK_AUTHENTICATION_REQUIRED", value.asInstanceOf[js.Any])
       
-      inline def setNON_AUTHORITATIVE_INFORMATION(value: Double): Self = StObject.set(x, "NON_AUTHORITATIVE_INFORMATION", value.asInstanceOf[js.Any])
+      inline def setNON_AUTHORITATIVE_INFORMATION(value: `203`): Self = StObject.set(x, "NON_AUTHORITATIVE_INFORMATION", value.asInstanceOf[js.Any])
       
-      inline def setNOT_ACCEPTABLE(value: Double): Self = StObject.set(x, "NOT_ACCEPTABLE", value.asInstanceOf[js.Any])
+      inline def setNOT_ACCEPTABLE(value: `406`): Self = StObject.set(x, "NOT_ACCEPTABLE", value.asInstanceOf[js.Any])
       
-      inline def setNOT_EXTENDED(value: Double): Self = StObject.set(x, "NOT_EXTENDED", value.asInstanceOf[js.Any])
+      inline def setNOT_EXTENDED(value: `510`): Self = StObject.set(x, "NOT_EXTENDED", value.asInstanceOf[js.Any])
       
-      inline def setNOT_FOUND(value: Double): Self = StObject.set(x, "NOT_FOUND", value.asInstanceOf[js.Any])
+      inline def setNOT_FOUND(value: `404`): Self = StObject.set(x, "NOT_FOUND", value.asInstanceOf[js.Any])
       
-      inline def setNOT_IMPLEMENTED(value: Double): Self = StObject.set(x, "NOT_IMPLEMENTED", value.asInstanceOf[js.Any])
+      inline def setNOT_IMPLEMENTED(value: `501`): Self = StObject.set(x, "NOT_IMPLEMENTED", value.asInstanceOf[js.Any])
       
-      inline def setNOT_MODIFIED(value: Double): Self = StObject.set(x, "NOT_MODIFIED", value.asInstanceOf[js.Any])
+      inline def setNOT_MODIFIED(value: `304`): Self = StObject.set(x, "NOT_MODIFIED", value.asInstanceOf[js.Any])
       
-      inline def setNO_CONTENT(value: Double): Self = StObject.set(x, "NO_CONTENT", value.asInstanceOf[js.Any])
+      inline def setNO_CONTENT(value: `204`): Self = StObject.set(x, "NO_CONTENT", value.asInstanceOf[js.Any])
       
-      inline def setOK(value: Double): Self = StObject.set(x, "OK", value.asInstanceOf[js.Any])
+      inline def setOK(value: `200`): Self = StObject.set(x, "OK", value.asInstanceOf[js.Any])
       
-      inline def setPARTIAL_CONTENT(value: Double): Self = StObject.set(x, "PARTIAL_CONTENT", value.asInstanceOf[js.Any])
+      inline def setPARTIAL_CONTENT(value: `206`): Self = StObject.set(x, "PARTIAL_CONTENT", value.asInstanceOf[js.Any])
       
-      inline def setPAYMENT_REQUIRED(value: Double): Self = StObject.set(x, "PAYMENT_REQUIRED", value.asInstanceOf[js.Any])
+      inline def setPAYMENT_REQUIRED(value: `402`): Self = StObject.set(x, "PAYMENT_REQUIRED", value.asInstanceOf[js.Any])
       
-      inline def setPERMANENT_REDIRECT(value: Double): Self = StObject.set(x, "PERMANENT_REDIRECT", value.asInstanceOf[js.Any])
+      inline def setPERMANENT_REDIRECT(value: `308`): Self = StObject.set(x, "PERMANENT_REDIRECT", value.asInstanceOf[js.Any])
       
-      inline def setPRECONDITION_FAILED(value: Double): Self = StObject.set(x, "PRECONDITION_FAILED", value.asInstanceOf[js.Any])
+      inline def setPRECONDITION_FAILED(value: `412`): Self = StObject.set(x, "PRECONDITION_FAILED", value.asInstanceOf[js.Any])
       
-      inline def setPRECONDITION_REQUIRED(value: Double): Self = StObject.set(x, "PRECONDITION_REQUIRED", value.asInstanceOf[js.Any])
+      inline def setPRECONDITION_REQUIRED(value: `428`): Self = StObject.set(x, "PRECONDITION_REQUIRED", value.asInstanceOf[js.Any])
       
-      inline def setPROXY_AUTHENTICATION_REQUIRED(value: Double): Self = StObject.set(x, "PROXY_AUTHENTICATION_REQUIRED", value.asInstanceOf[js.Any])
+      inline def setPROXY_AUTHENTICATION_REQUIRED(value: `407`): Self = StObject.set(x, "PROXY_AUTHENTICATION_REQUIRED", value.asInstanceOf[js.Any])
       
-      inline def setREQUESTED_RANGE_NOT_SATISFIABLE(value: Double): Self = StObject.set(x, "REQUESTED_RANGE_NOT_SATISFIABLE", value.asInstanceOf[js.Any])
+      inline def setREQUESTED_RANGE_NOT_SATISFIABLE(value: `416`): Self = StObject.set(x, "REQUESTED_RANGE_NOT_SATISFIABLE", value.asInstanceOf[js.Any])
       
-      inline def setREQUEST_ENTITY_TOO_LARGE(value: Double): Self = StObject.set(x, "REQUEST_ENTITY_TOO_LARGE", value.asInstanceOf[js.Any])
+      inline def setREQUEST_ENTITY_TOO_LARGE(value: `413`): Self = StObject.set(x, "REQUEST_ENTITY_TOO_LARGE", value.asInstanceOf[js.Any])
       
-      inline def setREQUEST_HEADER_FIELDS_TOO_LARGE(value: Double): Self = StObject.set(x, "REQUEST_HEADER_FIELDS_TOO_LARGE", value.asInstanceOf[js.Any])
+      inline def setREQUEST_HEADER_FIELDS_TOO_LARGE(value: `431`): Self = StObject.set(x, "REQUEST_HEADER_FIELDS_TOO_LARGE", value.asInstanceOf[js.Any])
       
-      inline def setREQUEST_TIMEOUT(value: Double): Self = StObject.set(x, "REQUEST_TIMEOUT", value.asInstanceOf[js.Any])
+      inline def setREQUEST_TIMEOUT(value: `408`): Self = StObject.set(x, "REQUEST_TIMEOUT", value.asInstanceOf[js.Any])
       
-      inline def setREQUEST_URI_TOO_LONG(value: Double): Self = StObject.set(x, "REQUEST_URI_TOO_LONG", value.asInstanceOf[js.Any])
+      inline def setREQUEST_URI_TOO_LONG(value: `414`): Self = StObject.set(x, "REQUEST_URI_TOO_LONG", value.asInstanceOf[js.Any])
       
-      inline def setRESET_CONTENT(value: Double): Self = StObject.set(x, "RESET_CONTENT", value.asInstanceOf[js.Any])
+      inline def setRESET_CONTENT(value: `205`): Self = StObject.set(x, "RESET_CONTENT", value.asInstanceOf[js.Any])
       
-      inline def setSEE_OTHER(value: Double): Self = StObject.set(x, "SEE_OTHER", value.asInstanceOf[js.Any])
+      inline def setSEE_OTHER(value: `303`): Self = StObject.set(x, "SEE_OTHER", value.asInstanceOf[js.Any])
       
-      inline def setSERVICE_UNAVAILABLE(value: Double): Self = StObject.set(x, "SERVICE_UNAVAILABLE", value.asInstanceOf[js.Any])
+      inline def setSERVICE_UNAVAILABLE(value: `503`): Self = StObject.set(x, "SERVICE_UNAVAILABLE", value.asInstanceOf[js.Any])
       
-      inline def setSWITCHING_PROTOCOLS(value: Double): Self = StObject.set(x, "SWITCHING_PROTOCOLS", value.asInstanceOf[js.Any])
+      inline def setSWITCHING_PROTOCOLS(value: `101`): Self = StObject.set(x, "SWITCHING_PROTOCOLS", value.asInstanceOf[js.Any])
       
-      inline def setSWITCH_PROXY(value: Double): Self = StObject.set(x, "SWITCH_PROXY", value.asInstanceOf[js.Any])
+      inline def setSWITCH_PROXY(value: `306`): Self = StObject.set(x, "SWITCH_PROXY", value.asInstanceOf[js.Any])
       
-      inline def setTEMPORARY_REDIRECT(value: Double): Self = StObject.set(x, "TEMPORARY_REDIRECT", value.asInstanceOf[js.Any])
+      inline def setTEMPORARY_REDIRECT(value: `307`): Self = StObject.set(x, "TEMPORARY_REDIRECT", value.asInstanceOf[js.Any])
       
-      inline def setTOO_MANY_REQUESTS(value: Double): Self = StObject.set(x, "TOO_MANY_REQUESTS", value.asInstanceOf[js.Any])
+      inline def setTOO_MANY_REQUESTS(value: `429`): Self = StObject.set(x, "TOO_MANY_REQUESTS", value.asInstanceOf[js.Any])
       
-      inline def setUNAUTHORIZED(value: Double): Self = StObject.set(x, "UNAUTHORIZED", value.asInstanceOf[js.Any])
+      inline def setUNAUTHORIZED(value: `401`): Self = StObject.set(x, "UNAUTHORIZED", value.asInstanceOf[js.Any])
       
-      inline def setUNAVAILABLE_FOR_LEGAL_REASONS(value: Double): Self = StObject.set(x, "UNAVAILABLE_FOR_LEGAL_REASONS", value.asInstanceOf[js.Any])
+      inline def setUNAVAILABLE_FOR_LEGAL_REASONS(value: `451`): Self = StObject.set(x, "UNAVAILABLE_FOR_LEGAL_REASONS", value.asInstanceOf[js.Any])
       
-      inline def setUNPROCESSABLE_ENTITY(value: Double): Self = StObject.set(x, "UNPROCESSABLE_ENTITY", value.asInstanceOf[js.Any])
+      inline def setUNPROCESSABLE_ENTITY(value: `422`): Self = StObject.set(x, "UNPROCESSABLE_ENTITY", value.asInstanceOf[js.Any])
       
-      inline def setUNSUPPORTED_MEDIA_TYPE(value: Double): Self = StObject.set(x, "UNSUPPORTED_MEDIA_TYPE", value.asInstanceOf[js.Any])
+      inline def setUNSUPPORTED_MEDIA_TYPE(value: `415`): Self = StObject.set(x, "UNSUPPORTED_MEDIA_TYPE", value.asInstanceOf[js.Any])
       
-      inline def setUPGRADE_REQUIRED(value: Double): Self = StObject.set(x, "UPGRADE_REQUIRED", value.asInstanceOf[js.Any])
+      inline def setUPGRADE_REQUIRED(value: `426`): Self = StObject.set(x, "UPGRADE_REQUIRED", value.asInstanceOf[js.Any])
       
-      inline def setUSE_PROXY(value: Double): Self = StObject.set(x, "USE_PROXY", value.asInstanceOf[js.Any])
+      inline def setUSE_PROXY(value: `305`): Self = StObject.set(x, "USE_PROXY", value.asInstanceOf[js.Any])
       
-      inline def setVARIANT_ALSO_NEGOTIATES(value: Double): Self = StObject.set(x, "VARIANT_ALSO_NEGOTIATES", value.asInstanceOf[js.Any])
+      inline def setVARIANT_ALSO_NEGOTIATES(value: `506`): Self = StObject.set(x, "VARIANT_ALSO_NEGOTIATES", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1929,21 +2000,21 @@ object mod extends Shortcut {
     
     val `527_NAME`: String
     
-    val A_TIMEOUT_OCCURRED: Double
+    val A_TIMEOUT_OCCURRED: typings.httpStatus.httpStatusInts.`524`
     
-    val CONNECTION_TIMED_OUT: Double
+    val CONNECTION_TIMED_OUT: typings.httpStatus.httpStatusInts.`522`
     
-    val INVALID_SSL_CERTIFICATE: Double
+    val INVALID_SSL_CERTIFICATE: typings.httpStatus.httpStatusInts.`526`
     
-    val ORIGIN_IS_UNREACHABLE: Double
+    val ORIGIN_IS_UNREACHABLE: typings.httpStatus.httpStatusInts.`523`
     
-    val RAILGUN_ERROR: Double
+    val RAILGUN_ERROR: typings.httpStatus.httpStatusInts.`527`
     
-    val SSL_HANDSHAKE_FAILED: Double
+    val SSL_HANDSHAKE_FAILED: typings.httpStatus.httpStatusInts.`525`
     
-    val UNKNOWN_ERROR: Double
+    val UNKNOWN_ERROR: typings.httpStatus.httpStatusInts.`520`
     
-    val WEB_SERVER_IS_DOWN: Double
+    val WEB_SERVER_IS_DOWN: typings.httpStatus.httpStatusInts.`521`
   }
   object HttpStatusCloudfare {
     
@@ -1979,17 +2050,9 @@ object mod extends Shortcut {
       `527`: String,
       `527_CLASS`: String,
       `527_MESSAGE`: String,
-      `527_NAME`: String,
-      A_TIMEOUT_OCCURRED: Double,
-      CONNECTION_TIMED_OUT: Double,
-      INVALID_SSL_CERTIFICATE: Double,
-      ORIGIN_IS_UNREACHABLE: Double,
-      RAILGUN_ERROR: Double,
-      SSL_HANDSHAKE_FAILED: Double,
-      UNKNOWN_ERROR: Double,
-      WEB_SERVER_IS_DOWN: Double
+      `527_NAME`: String
     ): HttpStatusCloudfare = {
-      val __obj = js.Dynamic.literal(A_TIMEOUT_OCCURRED = A_TIMEOUT_OCCURRED.asInstanceOf[js.Any], CONNECTION_TIMED_OUT = CONNECTION_TIMED_OUT.asInstanceOf[js.Any], INVALID_SSL_CERTIFICATE = INVALID_SSL_CERTIFICATE.asInstanceOf[js.Any], ORIGIN_IS_UNREACHABLE = ORIGIN_IS_UNREACHABLE.asInstanceOf[js.Any], RAILGUN_ERROR = RAILGUN_ERROR.asInstanceOf[js.Any], SSL_HANDSHAKE_FAILED = SSL_HANDSHAKE_FAILED.asInstanceOf[js.Any], UNKNOWN_ERROR = UNKNOWN_ERROR.asInstanceOf[js.Any], WEB_SERVER_IS_DOWN = WEB_SERVER_IS_DOWN.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(A_TIMEOUT_OCCURRED = 524, CONNECTION_TIMED_OUT = 522, INVALID_SSL_CERTIFICATE = 526, ORIGIN_IS_UNREACHABLE = 523, RAILGUN_ERROR = 527, SSL_HANDSHAKE_FAILED = 525, UNKNOWN_ERROR = 520, WEB_SERVER_IS_DOWN = 521)
       __obj.updateDynamic("520")(`520`.asInstanceOf[js.Any])
       __obj.updateDynamic("520_CLASS")(`520_CLASS`.asInstanceOf[js.Any])
       __obj.updateDynamic("520_MESSAGE")(`520_MESSAGE`.asInstanceOf[js.Any])
@@ -2092,21 +2155,21 @@ object mod extends Shortcut {
       
       inline def set527_NAME(value: String): Self = StObject.set(x, "527_NAME", value.asInstanceOf[js.Any])
       
-      inline def setA_TIMEOUT_OCCURRED(value: Double): Self = StObject.set(x, "A_TIMEOUT_OCCURRED", value.asInstanceOf[js.Any])
+      inline def setA_TIMEOUT_OCCURRED(value: `524`): Self = StObject.set(x, "A_TIMEOUT_OCCURRED", value.asInstanceOf[js.Any])
       
-      inline def setCONNECTION_TIMED_OUT(value: Double): Self = StObject.set(x, "CONNECTION_TIMED_OUT", value.asInstanceOf[js.Any])
+      inline def setCONNECTION_TIMED_OUT(value: `522`): Self = StObject.set(x, "CONNECTION_TIMED_OUT", value.asInstanceOf[js.Any])
       
-      inline def setINVALID_SSL_CERTIFICATE(value: Double): Self = StObject.set(x, "INVALID_SSL_CERTIFICATE", value.asInstanceOf[js.Any])
+      inline def setINVALID_SSL_CERTIFICATE(value: `526`): Self = StObject.set(x, "INVALID_SSL_CERTIFICATE", value.asInstanceOf[js.Any])
       
-      inline def setORIGIN_IS_UNREACHABLE(value: Double): Self = StObject.set(x, "ORIGIN_IS_UNREACHABLE", value.asInstanceOf[js.Any])
+      inline def setORIGIN_IS_UNREACHABLE(value: `523`): Self = StObject.set(x, "ORIGIN_IS_UNREACHABLE", value.asInstanceOf[js.Any])
       
-      inline def setRAILGUN_ERROR(value: Double): Self = StObject.set(x, "RAILGUN_ERROR", value.asInstanceOf[js.Any])
+      inline def setRAILGUN_ERROR(value: `527`): Self = StObject.set(x, "RAILGUN_ERROR", value.asInstanceOf[js.Any])
       
-      inline def setSSL_HANDSHAKE_FAILED(value: Double): Self = StObject.set(x, "SSL_HANDSHAKE_FAILED", value.asInstanceOf[js.Any])
+      inline def setSSL_HANDSHAKE_FAILED(value: `525`): Self = StObject.set(x, "SSL_HANDSHAKE_FAILED", value.asInstanceOf[js.Any])
       
-      inline def setUNKNOWN_ERROR(value: Double): Self = StObject.set(x, "UNKNOWN_ERROR", value.asInstanceOf[js.Any])
+      inline def setUNKNOWN_ERROR(value: `520`): Self = StObject.set(x, "UNKNOWN_ERROR", value.asInstanceOf[js.Any])
       
-      inline def setWEB_SERVER_IS_DOWN(value: Double): Self = StObject.set(x, "WEB_SERVER_IS_DOWN", value.asInstanceOf[js.Any])
+      inline def setWEB_SERVER_IS_DOWN(value: `521`): Self = StObject.set(x, "WEB_SERVER_IS_DOWN", value.asInstanceOf[js.Any])
     }
   }
   
@@ -2173,11 +2236,11 @@ object mod extends Shortcut {
     
     val `451_NAME`: String
     
-    val LOGIN_TIME_OUT: Double
+    val LOGIN_TIME_OUT: typings.httpStatus.httpStatusInts.`440`
     
-    val REDIRECT: Double
+    val REDIRECT: typings.httpStatus.httpStatusInts.`451`
     
-    val RETRY_WITH: Double
+    val RETRY_WITH: typings.httpStatus.httpStatusInts.`449`
   }
   object HttpStatusIis {
     
@@ -2193,12 +2256,9 @@ object mod extends Shortcut {
       `451`: String,
       `451_CLASS`: String,
       `451_MESSAGE`: String,
-      `451_NAME`: String,
-      LOGIN_TIME_OUT: Double,
-      REDIRECT: Double,
-      RETRY_WITH: Double
+      `451_NAME`: String
     ): HttpStatusIis = {
-      val __obj = js.Dynamic.literal(LOGIN_TIME_OUT = LOGIN_TIME_OUT.asInstanceOf[js.Any], REDIRECT = REDIRECT.asInstanceOf[js.Any], RETRY_WITH = RETRY_WITH.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(LOGIN_TIME_OUT = 440, REDIRECT = 451, RETRY_WITH = 449)
       __obj.updateDynamic("440")(`440`.asInstanceOf[js.Any])
       __obj.updateDynamic("440_CLASS")(`440_CLASS`.asInstanceOf[js.Any])
       __obj.updateDynamic("440_MESSAGE")(`440_MESSAGE`.asInstanceOf[js.Any])
@@ -2241,11 +2301,11 @@ object mod extends Shortcut {
       
       inline def set451_NAME(value: String): Self = StObject.set(x, "451_NAME", value.asInstanceOf[js.Any])
       
-      inline def setLOGIN_TIME_OUT(value: Double): Self = StObject.set(x, "LOGIN_TIME_OUT", value.asInstanceOf[js.Any])
+      inline def setLOGIN_TIME_OUT(value: `440`): Self = StObject.set(x, "LOGIN_TIME_OUT", value.asInstanceOf[js.Any])
       
-      inline def setREDIRECT(value: Double): Self = StObject.set(x, "REDIRECT", value.asInstanceOf[js.Any])
+      inline def setREDIRECT(value: `451`): Self = StObject.set(x, "REDIRECT", value.asInstanceOf[js.Any])
       
-      inline def setRETRY_WITH(value: Double): Self = StObject.set(x, "RETRY_WITH", value.asInstanceOf[js.Any])
+      inline def setRETRY_WITH(value: `449`): Self = StObject.set(x, "RETRY_WITH", value.asInstanceOf[js.Any])
     }
   }
   
@@ -2301,17 +2361,17 @@ object mod extends Shortcut {
     
     val `499_NAME`: String
     
-    val CLIENT_CLOSED_REQUEST: Double
+    val CLIENT_CLOSED_REQUEST: typings.httpStatus.httpStatusInts.`499`
     
-    val HTTP_REQUEST_SENT_TO_HTTPS_PORT: Double
+    val HTTP_REQUEST_SENT_TO_HTTPS_PORT: typings.httpStatus.httpStatusInts.`497`
     
-    val NO_RESPONSE: Double
+    val NO_RESPONSE: typings.httpStatus.httpStatusInts.`444`
     
-    val REQUEST_HEADER_TOO_LARGE: Double
+    val REQUEST_HEADER_TOO_LARGE: typings.httpStatus.httpStatusInts.`494`
     
-    val SSL_CERTIFICATE_ERROR: Double
+    val SSL_CERTIFICATE_ERROR: typings.httpStatus.httpStatusInts.`495`
     
-    val SSL_CERTIFICATE_REQUIRED: Double
+    val SSL_CERTIFICATE_REQUIRED: typings.httpStatus.httpStatusInts.`496`
   }
   object HttpStatusNginx {
     
@@ -2339,15 +2399,9 @@ object mod extends Shortcut {
       `499`: String,
       `499_CLASS`: String,
       `499_MESSAGE`: String,
-      `499_NAME`: String,
-      CLIENT_CLOSED_REQUEST: Double,
-      HTTP_REQUEST_SENT_TO_HTTPS_PORT: Double,
-      NO_RESPONSE: Double,
-      REQUEST_HEADER_TOO_LARGE: Double,
-      SSL_CERTIFICATE_ERROR: Double,
-      SSL_CERTIFICATE_REQUIRED: Double
+      `499_NAME`: String
     ): HttpStatusNginx = {
-      val __obj = js.Dynamic.literal(CLIENT_CLOSED_REQUEST = CLIENT_CLOSED_REQUEST.asInstanceOf[js.Any], HTTP_REQUEST_SENT_TO_HTTPS_PORT = HTTP_REQUEST_SENT_TO_HTTPS_PORT.asInstanceOf[js.Any], NO_RESPONSE = NO_RESPONSE.asInstanceOf[js.Any], REQUEST_HEADER_TOO_LARGE = REQUEST_HEADER_TOO_LARGE.asInstanceOf[js.Any], SSL_CERTIFICATE_ERROR = SSL_CERTIFICATE_ERROR.asInstanceOf[js.Any], SSL_CERTIFICATE_REQUIRED = SSL_CERTIFICATE_REQUIRED.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(CLIENT_CLOSED_REQUEST = 499, HTTP_REQUEST_SENT_TO_HTTPS_PORT = 497, NO_RESPONSE = 444, REQUEST_HEADER_TOO_LARGE = 494, SSL_CERTIFICATE_ERROR = 495, SSL_CERTIFICATE_REQUIRED = 496)
       __obj.updateDynamic("444")(`444`.asInstanceOf[js.Any])
       __obj.updateDynamic("444_CLASS")(`444_CLASS`.asInstanceOf[js.Any])
       __obj.updateDynamic("444_MESSAGE")(`444_MESSAGE`.asInstanceOf[js.Any])
@@ -2426,17 +2480,17 @@ object mod extends Shortcut {
       
       inline def set499_NAME(value: String): Self = StObject.set(x, "499_NAME", value.asInstanceOf[js.Any])
       
-      inline def setCLIENT_CLOSED_REQUEST(value: Double): Self = StObject.set(x, "CLIENT_CLOSED_REQUEST", value.asInstanceOf[js.Any])
+      inline def setCLIENT_CLOSED_REQUEST(value: `499`): Self = StObject.set(x, "CLIENT_CLOSED_REQUEST", value.asInstanceOf[js.Any])
       
-      inline def setHTTP_REQUEST_SENT_TO_HTTPS_PORT(value: Double): Self = StObject.set(x, "HTTP_REQUEST_SENT_TO_HTTPS_PORT", value.asInstanceOf[js.Any])
+      inline def setHTTP_REQUEST_SENT_TO_HTTPS_PORT(value: `497`): Self = StObject.set(x, "HTTP_REQUEST_SENT_TO_HTTPS_PORT", value.asInstanceOf[js.Any])
       
-      inline def setNO_RESPONSE(value: Double): Self = StObject.set(x, "NO_RESPONSE", value.asInstanceOf[js.Any])
+      inline def setNO_RESPONSE(value: `444`): Self = StObject.set(x, "NO_RESPONSE", value.asInstanceOf[js.Any])
       
-      inline def setREQUEST_HEADER_TOO_LARGE(value: Double): Self = StObject.set(x, "REQUEST_HEADER_TOO_LARGE", value.asInstanceOf[js.Any])
+      inline def setREQUEST_HEADER_TOO_LARGE(value: `494`): Self = StObject.set(x, "REQUEST_HEADER_TOO_LARGE", value.asInstanceOf[js.Any])
       
-      inline def setSSL_CERTIFICATE_ERROR(value: Double): Self = StObject.set(x, "SSL_CERTIFICATE_ERROR", value.asInstanceOf[js.Any])
+      inline def setSSL_CERTIFICATE_ERROR(value: `495`): Self = StObject.set(x, "SSL_CERTIFICATE_ERROR", value.asInstanceOf[js.Any])
       
-      inline def setSSL_CERTIFICATE_REQUIRED(value: Double): Self = StObject.set(x, "SSL_CERTIFICATE_REQUIRED", value.asInstanceOf[js.Any])
+      inline def setSSL_CERTIFICATE_REQUIRED(value: `496`): Self = StObject.set(x, "SSL_CERTIFICATE_REQUIRED", value.asInstanceOf[js.Any])
     }
   }
   
@@ -2508,21 +2562,21 @@ object mod extends Shortcut {
     
     val `598_NAME`: String
     
-    val BANDWIDTH_LIMIT_EXCEEDED: Double
+    val BANDWIDTH_LIMIT_EXCEEDED: typings.httpStatus.httpStatusInts.`509`
     
-    val BLOCKED_BY_WINDOWS_PARENTAL_CONTROLS: Double
+    val BLOCKED_BY_WINDOWS_PARENTAL_CONTROLS: typings.httpStatus.httpStatusInts.`450`
     
-    val CHECKPOINT: Double
+    val CHECKPOINT: typings.httpStatus.httpStatusInts.`103`
     
-    val ENHANCE_YOUR_CALM: Double
+    val ENHANCE_YOUR_CALM: typings.httpStatus.httpStatusInts.`420`
     
-    val INVALID_TOKEN: Double
+    val INVALID_TOKEN: typings.httpStatus.httpStatusInts.`498`
     
-    val NETWORK_READ_TIMEOUT_ERROR: Double
+    val NETWORK_READ_TIMEOUT_ERROR: typings.httpStatus.httpStatusInts.`598`
     
-    val SITE_IS_FROZEN: Double
+    val SITE_IS_FROZEN: typings.httpStatus.httpStatusInts.`530`
     
-    val TOKEN_REQUIRED: Double
+    val TOKEN_REQUIRED: typings.httpStatus.httpStatusInts.`499`
   }
   object HttpStatusUnofficial {
     
@@ -2558,17 +2612,9 @@ object mod extends Shortcut {
       `598`: String,
       `598_CLASS`: String,
       `598_MESSAGE`: String,
-      `598_NAME`: String,
-      BANDWIDTH_LIMIT_EXCEEDED: Double,
-      BLOCKED_BY_WINDOWS_PARENTAL_CONTROLS: Double,
-      CHECKPOINT: Double,
-      ENHANCE_YOUR_CALM: Double,
-      INVALID_TOKEN: Double,
-      NETWORK_READ_TIMEOUT_ERROR: Double,
-      SITE_IS_FROZEN: Double,
-      TOKEN_REQUIRED: Double
+      `598_NAME`: String
     ): HttpStatusUnofficial = {
-      val __obj = js.Dynamic.literal(BANDWIDTH_LIMIT_EXCEEDED = BANDWIDTH_LIMIT_EXCEEDED.asInstanceOf[js.Any], BLOCKED_BY_WINDOWS_PARENTAL_CONTROLS = BLOCKED_BY_WINDOWS_PARENTAL_CONTROLS.asInstanceOf[js.Any], CHECKPOINT = CHECKPOINT.asInstanceOf[js.Any], ENHANCE_YOUR_CALM = ENHANCE_YOUR_CALM.asInstanceOf[js.Any], INVALID_TOKEN = INVALID_TOKEN.asInstanceOf[js.Any], NETWORK_READ_TIMEOUT_ERROR = NETWORK_READ_TIMEOUT_ERROR.asInstanceOf[js.Any], SITE_IS_FROZEN = SITE_IS_FROZEN.asInstanceOf[js.Any], TOKEN_REQUIRED = TOKEN_REQUIRED.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(BANDWIDTH_LIMIT_EXCEEDED = 509, BLOCKED_BY_WINDOWS_PARENTAL_CONTROLS = 450, CHECKPOINT = 103, ENHANCE_YOUR_CALM = 420, INVALID_TOKEN = 498, NETWORK_READ_TIMEOUT_ERROR = 598, SITE_IS_FROZEN = 530, TOKEN_REQUIRED = 499)
       __obj.updateDynamic("103")(`103`.asInstanceOf[js.Any])
       __obj.updateDynamic("103_CLASS")(`103_CLASS`.asInstanceOf[js.Any])
       __obj.updateDynamic("103_MESSAGE")(`103_MESSAGE`.asInstanceOf[js.Any])
@@ -2671,26 +2717,26 @@ object mod extends Shortcut {
       
       inline def set598_NAME(value: String): Self = StObject.set(x, "598_NAME", value.asInstanceOf[js.Any])
       
-      inline def setBANDWIDTH_LIMIT_EXCEEDED(value: Double): Self = StObject.set(x, "BANDWIDTH_LIMIT_EXCEEDED", value.asInstanceOf[js.Any])
+      inline def setBANDWIDTH_LIMIT_EXCEEDED(value: `509`): Self = StObject.set(x, "BANDWIDTH_LIMIT_EXCEEDED", value.asInstanceOf[js.Any])
       
-      inline def setBLOCKED_BY_WINDOWS_PARENTAL_CONTROLS(value: Double): Self = StObject.set(x, "BLOCKED_BY_WINDOWS_PARENTAL_CONTROLS", value.asInstanceOf[js.Any])
+      inline def setBLOCKED_BY_WINDOWS_PARENTAL_CONTROLS(value: `450`): Self = StObject.set(x, "BLOCKED_BY_WINDOWS_PARENTAL_CONTROLS", value.asInstanceOf[js.Any])
       
-      inline def setCHECKPOINT(value: Double): Self = StObject.set(x, "CHECKPOINT", value.asInstanceOf[js.Any])
+      inline def setCHECKPOINT(value: `103`): Self = StObject.set(x, "CHECKPOINT", value.asInstanceOf[js.Any])
       
-      inline def setENHANCE_YOUR_CALM(value: Double): Self = StObject.set(x, "ENHANCE_YOUR_CALM", value.asInstanceOf[js.Any])
+      inline def setENHANCE_YOUR_CALM(value: `420`): Self = StObject.set(x, "ENHANCE_YOUR_CALM", value.asInstanceOf[js.Any])
       
-      inline def setINVALID_TOKEN(value: Double): Self = StObject.set(x, "INVALID_TOKEN", value.asInstanceOf[js.Any])
+      inline def setINVALID_TOKEN(value: `498`): Self = StObject.set(x, "INVALID_TOKEN", value.asInstanceOf[js.Any])
       
-      inline def setNETWORK_READ_TIMEOUT_ERROR(value: Double): Self = StObject.set(x, "NETWORK_READ_TIMEOUT_ERROR", value.asInstanceOf[js.Any])
+      inline def setNETWORK_READ_TIMEOUT_ERROR(value: `598`): Self = StObject.set(x, "NETWORK_READ_TIMEOUT_ERROR", value.asInstanceOf[js.Any])
       
-      inline def setSITE_IS_FROZEN(value: Double): Self = StObject.set(x, "SITE_IS_FROZEN", value.asInstanceOf[js.Any])
+      inline def setSITE_IS_FROZEN(value: `530`): Self = StObject.set(x, "SITE_IS_FROZEN", value.asInstanceOf[js.Any])
       
-      inline def setTOKEN_REQUIRED(value: Double): Self = StObject.set(x, "TOKEN_REQUIRED", value.asInstanceOf[js.Any])
+      inline def setTOKEN_REQUIRED(value: `499`): Self = StObject.set(x, "TOKEN_REQUIRED", value.asInstanceOf[js.Any])
     }
   }
   
-  type _To = HttpStatus
+  type _To = js.Object & HttpStatus
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: HttpStatus = ^
+  override def _to: js.Object & HttpStatus = ^
 }

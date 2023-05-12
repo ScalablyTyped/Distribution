@@ -30,13 +30,13 @@ open class WorkspaceChange () extends StObject {
   def deleteFile(uri: DocumentUri, options: DeleteFileOptions): Unit = js.native
   
   /**
-    * Returns the underlying [WorkspaceEdit](#WorkspaceEdit) literal
+    * Returns the underlying {@link WorkspaceEdit} literal
     * use to be returned from a workspace edit operation like rename.
     */
   def edit: WorkspaceEdit = js.native
   
   /**
-    * Returns the [TextEditChange](#TextEditChange) to manage text edits
+    * Returns the {@link TextEditChange} to manage text edits
     * for resources.
     */
   def getTextEditChange(textDocument: OptionalVersionedTextDocumentIdentifier): TextEditChange = js.native

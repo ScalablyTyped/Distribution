@@ -22,7 +22,7 @@ trait AssessmentControl extends StObject {
   var description: js.UndefOr[ControlDescription] = js.undefined
   
   /**
-    *  The amount of evidence that's generated for the control. 
+    *  The amount of evidence that's collected for the control. 
     */
   var evidenceCount: js.UndefOr[Integer] = js.undefined
   

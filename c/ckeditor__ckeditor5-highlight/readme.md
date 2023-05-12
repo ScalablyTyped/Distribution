@@ -1,7 +1,7 @@
 
 # Scala.js typings for ckeditor__ckeditor5-highlight
 
-Typings are for version 29.0
+Typings are for version 37.1.0
 
 ## Library description:
 Highlight feature for CKEditor 5.
@@ -24,7 +24,7 @@ Highlight feature for CKEditor 5.
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

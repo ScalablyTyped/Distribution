@@ -1,23 +1,30 @@
 package typings.listr2.anon
 
+import typings.listr2.mod.ListrVerboseRendererOptions
+import typings.listr2.mod.ListrVerboseRendererTaskOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait TypeofVerboseRenderer extends StObject {
   
-  /** designates whether this renderer can output to a non-tty console */
   /* static member */
   var nonTTY: Boolean
   
-  /** renderer options for the verbose renderer */
   /* static member */
-  var rendererOptions: LogEmptyTitle
+  var rendererOptions: ListrVerboseRendererOptions
+  
+  /* static member */
+  var rendererTaskOptions: ListrVerboseRendererTaskOptions
 }
 object TypeofVerboseRenderer {
   
-  inline def apply(nonTTY: Boolean, rendererOptions: LogEmptyTitle): TypeofVerboseRenderer = {
-    val __obj = js.Dynamic.literal(nonTTY = nonTTY.asInstanceOf[js.Any], rendererOptions = rendererOptions.asInstanceOf[js.Any])
+  inline def apply(
+    nonTTY: Boolean,
+    rendererOptions: ListrVerboseRendererOptions,
+    rendererTaskOptions: ListrVerboseRendererTaskOptions
+  ): TypeofVerboseRenderer = {
+    val __obj = js.Dynamic.literal(nonTTY = nonTTY.asInstanceOf[js.Any], rendererOptions = rendererOptions.asInstanceOf[js.Any], rendererTaskOptions = rendererTaskOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofVerboseRenderer]
   }
   
@@ -26,6 +33,8 @@ object TypeofVerboseRenderer {
     
     inline def setNonTTY(value: Boolean): Self = StObject.set(x, "nonTTY", value.asInstanceOf[js.Any])
     
-    inline def setRendererOptions(value: LogEmptyTitle): Self = StObject.set(x, "rendererOptions", value.asInstanceOf[js.Any])
+    inline def setRendererOptions(value: ListrVerboseRendererOptions): Self = StObject.set(x, "rendererOptions", value.asInstanceOf[js.Any])
+    
+    inline def setRendererTaskOptions(value: ListrVerboseRendererTaskOptions): Self = StObject.set(x, "rendererTaskOptions", value.asInstanceOf[js.Any])
   }
 }

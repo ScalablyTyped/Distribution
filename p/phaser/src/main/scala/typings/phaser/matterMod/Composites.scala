@@ -27,15 +27,15 @@ object Composites {
   /**
     * Creates a composite with simple car setup of bodies and constraints.
     * @method car
-    * @param {number} xx
-    * @param {number} yy
+    * @param {number} x
+    * @param {number} y
     * @param {number} width
     * @param {number} height
     * @param {number} wheelSize
     * @return {composite} A new composite car body
     */
   /* static member */
-  inline def car(xx: Double, yy: Double, width: Double, height: Double, wheelSize: Double): CompositeType = (^.asInstanceOf[js.Dynamic].applyDynamic("car")(xx.asInstanceOf[js.Any], yy.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], wheelSize.asInstanceOf[js.Any])).asInstanceOf[CompositeType]
+  inline def car(x: Double, y: Double, width: Double, height: Double, wheelSize: Double): CompositeType = (^.asInstanceOf[js.Dynamic].applyDynamic("car")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], wheelSize.asInstanceOf[js.Any])).asInstanceOf[CompositeType]
   
   /**
     * Chains all bodies in the given composite together using constraints.
@@ -74,22 +74,22 @@ object Composites {
   /**
     * Creates a composite with a Newton's Cradle setup of bodies and constraints.
     * @method newtonsCradle
-    * @param {number} xx
-    * @param {number} yy
+    * @param {number} x
+    * @param {number} y
     * @param {number} number
     * @param {number} size
     * @param {number} length
     * @return {composite} A new composite newtonsCradle body
     */
   /* static member */
-  inline def newtonsCradle(xx: Double, yy: Double, number: Double, size: Double, length: Double): CompositeType = (^.asInstanceOf[js.Dynamic].applyDynamic("newtonsCradle")(xx.asInstanceOf[js.Any], yy.asInstanceOf[js.Any], number.asInstanceOf[js.Any], size.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[CompositeType]
+  inline def newtonsCradle(x: Double, y: Double, number: Double, size: Double, length: Double): CompositeType = (^.asInstanceOf[js.Dynamic].applyDynamic("newtonsCradle")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], number.asInstanceOf[js.Any], size.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[CompositeType]
   
   /**
     * Create a new composite containing bodies created in the callback in a pyramid arrangement.
     * This function uses the body's bounds to prevent overlaps.
     * @method pyramid
-    * @param {number} xx
-    * @param {number} yy
+    * @param {number} x
+    * @param {number} y
     * @param {number} columns
     * @param {number} rows
     * @param {number} columnGap
@@ -99,20 +99,20 @@ object Composites {
     */
   /* static member */
   inline def pyramid(
-    xx: Double,
-    yy: Double,
+    x: Double,
+    y: Double,
     columns: Double,
     rows: Double,
     columnGap: Double,
     rowGap: Double,
     callback: js.Function
-  ): CompositeType = (^.asInstanceOf[js.Dynamic].applyDynamic("pyramid")(xx.asInstanceOf[js.Any], yy.asInstanceOf[js.Any], columns.asInstanceOf[js.Any], rows.asInstanceOf[js.Any], columnGap.asInstanceOf[js.Any], rowGap.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[CompositeType]
+  ): CompositeType = (^.asInstanceOf[js.Dynamic].applyDynamic("pyramid")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], columns.asInstanceOf[js.Any], rows.asInstanceOf[js.Any], columnGap.asInstanceOf[js.Any], rowGap.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[CompositeType]
   
   /**
     * Creates a simple soft body like object.
     * @method softBody
-    * @param {number} xx
-    * @param {number} yy
+    * @param {number} x
+    * @param {number} y
     * @param {number} columns
     * @param {number} rows
     * @param {number} columnGap
@@ -125,8 +125,8 @@ object Composites {
     */
   /* static member */
   inline def softBody(
-    xx: Double,
-    yy: Double,
+    x: Double,
+    y: Double,
     columns: Double,
     rows: Double,
     columnGap: Double,
@@ -135,14 +135,14 @@ object Composites {
     particleRadius: Double,
     particleOptions: Any,
     constraintOptions: Any
-  ): CompositeType = (^.asInstanceOf[js.Dynamic].applyDynamic("softBody")(xx.asInstanceOf[js.Any], yy.asInstanceOf[js.Any], columns.asInstanceOf[js.Any], rows.asInstanceOf[js.Any], columnGap.asInstanceOf[js.Any], rowGap.asInstanceOf[js.Any], crossBrace.asInstanceOf[js.Any], particleRadius.asInstanceOf[js.Any], particleOptions.asInstanceOf[js.Any], constraintOptions.asInstanceOf[js.Any])).asInstanceOf[CompositeType]
+  ): CompositeType = (^.asInstanceOf[js.Dynamic].applyDynamic("softBody")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], columns.asInstanceOf[js.Any], rows.asInstanceOf[js.Any], columnGap.asInstanceOf[js.Any], rowGap.asInstanceOf[js.Any], crossBrace.asInstanceOf[js.Any], particleRadius.asInstanceOf[js.Any], particleOptions.asInstanceOf[js.Any], constraintOptions.asInstanceOf[js.Any])).asInstanceOf[CompositeType]
   
   /**
     * Create a new composite containing bodies created in the callback in a grid arrangement.
     * This function uses the body's bounds to prevent overlaps.
     * @method stack
-    * @param {number} xx
-    * @param {number} yy
+    * @param {number} x Starting position in X.
+    * @param {number} y Starting position in Y.
     * @param {number} columns
     * @param {number} rows
     * @param {number} columnGap
@@ -152,12 +152,12 @@ object Composites {
     */
   /* static member */
   inline def stack(
-    xx: Double,
-    yy: Double,
+    x: Double,
+    y: Double,
     columns: Double,
     rows: Double,
     columnGap: Double,
     rowGap: Double,
     callback: js.Function
-  ): CompositeType = (^.asInstanceOf[js.Dynamic].applyDynamic("stack")(xx.asInstanceOf[js.Any], yy.asInstanceOf[js.Any], columns.asInstanceOf[js.Any], rows.asInstanceOf[js.Any], columnGap.asInstanceOf[js.Any], rowGap.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[CompositeType]
+  ): CompositeType = (^.asInstanceOf[js.Dynamic].applyDynamic("stack")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], columns.asInstanceOf[js.Any], rows.asInstanceOf[js.Any], columnGap.asInstanceOf[js.Any], rowGap.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[CompositeType]
 }

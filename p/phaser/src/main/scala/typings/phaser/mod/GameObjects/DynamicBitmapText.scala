@@ -27,7 +27,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * BMFont (Windows, free): {@link http://www.angelcode.com/products/bmfont/|http://www.angelcode.com/products/bmfont/}
   * Glyph Designer (OS X, commercial): {@link http://www.71squared.com/en/glyphdesigner|http://www.71squared.com/en/glyphdesigner}
-  * Littera (Web-based, free): {@link http://kvazars.com/littera/|http://kvazars.com/littera/}
+  * Snow BMF (Web-based, free): {@link https://snowb.org//|https://snowb.org/}
+  * Littera (Flash-based, free): {@link http://kvazars.com/littera/|http://kvazars.com/littera/}
   * 
   * For most use cases it is recommended to use XML. If you wish to use JSON, the formatting should be equal to the result of
   * converting a valid XML file through the popular X2JS library. An online tool for conversion can be found here: {@link http://codebeautify.org/xmltojson|http://codebeautify.org/xmltojson}
@@ -77,7 +78,7 @@ open class DynamicBitmapText protected ()
   def this(scene: Scene, x: Double, y: Double, font: String, text: Unit, size: Unit, align: Double) = this()
   
   /**
-    * The depth of this Game Object within the Scene.
+    * The depth of this Game Object within the Scene. Ensure this value is only ever set to a number data-type.
     * 
     * The depth is also known as the 'z-index' in some environments, and allows you to change the rendering order
     * of Game Objects, without actually moving their position in the display list.
@@ -100,7 +101,7 @@ open class DynamicBitmapText protected ()
     * value will always render in front of one with a lower value.
     * 
     * Setting the depth will queue a depth sort event within the Scene.
-    * @param value The depth of this Game Object.
+    * @param value The depth of this Game Object. Ensure this value is only ever a number data-type.
     */
   /* CompleteClass */
   override def setDepth(value: Double): this.type = js.native

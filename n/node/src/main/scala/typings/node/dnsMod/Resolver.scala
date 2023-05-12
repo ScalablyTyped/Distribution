@@ -101,6 +101,17 @@ open class Resolver () extends StObject {
     Unit
   ] = js.native
   
+  def resolveCaa(
+    hostname: String,
+    callback: js.Function2[/* err */ ErrnoException | Null, /* records */ js.Array[CaaRecord], Unit]
+  ): Unit = js.native
+  @JSName("resolveCaa")
+  var resolveCaa_Original: js.Function2[
+    /* hostname */ String, 
+    /* callback */ js.Function2[/* err */ ErrnoException | Null, /* records */ js.Array[CaaRecord], Unit], 
+    Unit
+  ] = js.native
+  
   def resolveCname(
     hostname: String,
     callback: js.Function2[/* err */ ErrnoException | Null, /* addresses */ js.Array[String], Unit]
@@ -274,7 +285,7 @@ open class Resolver () extends StObject {
     * This allows programs to specify outbound interfaces when used on multi-homed
     * systems.
     *
-    * If a v4 or v6 address is not specified, it is set to the default, and the
+    * If a v4 or v6 address is not specified, it is set to the default and the
     * operating system will choose a local address automatically.
     *
     * The resolver will use the v4 local address when making requests to IPv4 DNS

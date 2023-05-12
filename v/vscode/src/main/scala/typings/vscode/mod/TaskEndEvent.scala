@@ -5,15 +5,15 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * An event signaling the end of an executed task.
-  *
-  * This interface is not intended to be implemented.
-  */
+	 * An event signaling the end of an executed task.
+	 *
+	 * This interface is not intended to be implemented.
+	 */
 trait TaskEndEvent extends StObject {
   
   /**
-    * The task item representing the task that finished.
-    */
+  		 * The task item representing the task that finished.
+  		 */
   val execution: TaskExecution
 }
 object TaskEndEvent {

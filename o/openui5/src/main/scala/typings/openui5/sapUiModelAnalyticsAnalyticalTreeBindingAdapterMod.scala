@@ -9,6 +9,8 @@ object sapUiModelAnalyticsAnalyticalTreeBindingAdapterMod {
   @JSImport("sap/ui/model/analytics/AnalyticalTreeBindingAdapter", JSImport.Default)
   @js.native
   /**
+    * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+    *
     * Adapter for TreeBindings to add the ListBinding functionality and use the tree structure in list based
     * controls.
     */
@@ -17,6 +19,8 @@ object sapUiModelAnalyticsAnalyticalTreeBindingAdapterMod {
        with AnalyticalTreeBindingAdapter {
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Retrieves the currently set number of expanded levels from the Binding (commonly an AnalyticalBinding).
       *
       * @returns the number of expanded levels
@@ -33,6 +37,8 @@ object sapUiModelAnalyticsAnalyticalTreeBindingAdapterMod {
     override def hasTotaledMeasures(): Boolean = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Sets the number of expanded levels on the TreeBinding (commonly an AnalyticalBinding). This is NOT the
       * same as AnalyticalTreeBindingAdapter#collapse or AnalyticalTreeBindingAdapter#expand. Setting the number
       * of expanded levels leads to different requests. This function is used by the AnalyticalTable for the
@@ -48,6 +54,8 @@ object sapUiModelAnalyticsAnalyticalTreeBindingAdapterMod {
   trait AnalyticalTreeBindingAdapter extends StObject {
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Retrieves the currently set number of expanded levels from the Binding (commonly an AnalyticalBinding).
       *
       * @returns the number of expanded levels
@@ -62,6 +70,8 @@ object sapUiModelAnalyticsAnalyticalTreeBindingAdapterMod {
     def hasTotaledMeasures(): Boolean
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Sets the number of expanded levels on the TreeBinding (commonly an AnalyticalBinding). This is NOT the
       * same as AnalyticalTreeBindingAdapter#collapse or AnalyticalTreeBindingAdapter#expand. Setting the number
       * of expanded levels leads to different requests. This function is used by the AnalyticalTable for the

@@ -39,7 +39,7 @@ object InsertReplaceEdit {
   
   inline def is(value: InsertReplaceEdit): /* is vscode-languageserver-types.vscode-languageserver-types.InsertReplaceEdit */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.InsertReplaceEdit */ Boolean]
   /**
-    * Checks whether the given literal conforms to the [InsertReplaceEdit](#InsertReplaceEdit) interface.
+    * Checks whether the given literal conforms to the {@link InsertReplaceEdit} interface.
     */
   inline def is(value: TextEdit): /* is vscode-languageserver-types.vscode-languageserver-types.InsertReplaceEdit */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.InsertReplaceEdit */ Boolean]
   

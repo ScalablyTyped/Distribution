@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateImageRequest extends StObject {
   
   /**
-    *  The idempotency token used to make this request idempotent.
+    * The idempotency token used to make this request idempotent.
     */
   var clientToken: ClientToken
   
@@ -17,32 +17,37 @@ trait CreateImageRequest extends StObject {
   var containerRecipeArn: js.UndefOr[ContainerRecipeArn] = js.undefined
   
   /**
-    *  The Amazon Resource Name (ARN) of the distribution configuration that defines and configures the outputs of your pipeline.
+    * The Amazon Resource Name (ARN) of the distribution configuration that defines and configures the outputs of your pipeline.
     */
   var distributionConfigurationArn: js.UndefOr[DistributionConfigurationArn] = js.undefined
   
   /**
-    *  Collects additional information about the image being created, including the operating system (OS) version and package list. This information is used to enhance the overall experience of using EC2 Image Builder. Enabled by default.
+    * Collects additional information about the image being created, including the operating system (OS) version and package list. This information is used to enhance the overall experience of using EC2 Image Builder. Enabled by default.
     */
   var enhancedImageMetadataEnabled: js.UndefOr[NullableBoolean] = js.undefined
   
   /**
-    *  The Amazon Resource Name (ARN) of the image recipe that defines how images are configured, tested, and assessed.
+    * The Amazon Resource Name (ARN) of the image recipe that defines how images are configured, tested, and assessed.
     */
   var imageRecipeArn: js.UndefOr[ImageRecipeArn] = js.undefined
   
   /**
-    *  The image tests configuration of the image.
+    * Contains settings for vulnerability scans.
+    */
+  var imageScanningConfiguration: js.UndefOr[ImageScanningConfiguration] = js.undefined
+  
+  /**
+    * The image tests configuration of the image.
     */
   var imageTestsConfiguration: js.UndefOr[ImageTestsConfiguration] = js.undefined
   
   /**
-    *  The Amazon Resource Name (ARN) of the infrastructure configuration that defines the environment in which your image will be built and tested.
+    * The Amazon Resource Name (ARN) of the infrastructure configuration that defines the environment in which your image will be built and tested.
     */
   var infrastructureConfigurationArn: InfrastructureConfigurationArn
   
   /**
-    *  The tags of the image.
+    * The tags of the image.
     */
   var tags: js.UndefOr[TagMap] = js.undefined
 }
@@ -73,6 +78,10 @@ object CreateImageRequest {
     inline def setImageRecipeArn(value: ImageRecipeArn): Self = StObject.set(x, "imageRecipeArn", value.asInstanceOf[js.Any])
     
     inline def setImageRecipeArnUndefined: Self = StObject.set(x, "imageRecipeArn", js.undefined)
+    
+    inline def setImageScanningConfiguration(value: ImageScanningConfiguration): Self = StObject.set(x, "imageScanningConfiguration", value.asInstanceOf[js.Any])
+    
+    inline def setImageScanningConfigurationUndefined: Self = StObject.set(x, "imageScanningConfiguration", js.undefined)
     
     inline def setImageTestsConfiguration(value: ImageTestsConfiguration): Self = StObject.set(x, "imageTestsConfiguration", value.asInstanceOf[js.Any])
     

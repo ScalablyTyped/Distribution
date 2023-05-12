@@ -334,6 +334,13 @@ object libComponentsComboBoxComboBoxDottypesMod {
       ] = js.undefined
     
     /**
+      * Called when the user types in to the input of the combo box
+      *
+      * Ideal if you want to be notified of raw text input
+      */
+    var onInputValueChange: js.UndefOr[js.Function1[/* text */ String, Unit]] = js.undefined
+    
+    /**
       * Callback for when a ComboBox item is clicked.
       */
     var onItemClick: js.UndefOr[
@@ -356,15 +363,28 @@ object libComponentsComboBoxComboBoxDottypesMod {
     var onMenuDismissed: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
-      * Callback for when the ComboBox menu is launched.
+      * Called when the ComboBox menu is launched.
       */
     var onMenuOpen: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
-      * Callback for when the user changes the pending value in ComboBox.
-      * This will be called any time the component is updated and there is a current
-      * pending value. Option, index, and value will all be undefined if no change
-      * has taken place and the previously entered pending value is still valid.
+      * Called when the user changes the pending value in ComboBox, either by typing in the
+      * input or hovering over options. When typing, the behavior varies depending on `autoComplete`
+      * and `allowFreeform` settings.
+      *
+      * In all cases, when the pending value is reset, all parameters will be undefined.
+      *
+      * When hovering options: `option` and `index` will be provided, and `value` will be undefined.
+      *
+      * Typing with `allowFreeform` on: If there's an option matching the input (an exact match if
+      * `autoComplete` is off, or a prefix match otherwise), `option` and `index` are provided and
+      * `value` is undefined. Otherwise only `value` is provided.
+      *
+      * Typing with `allowFreeform` off (or unspecified): If `autoComplete` is on (or unspecified),
+      * and the user types text matching the start of an option within a timeout, `option` and `index`
+      * are provided and `value` is undefined. If `autoComplete` is off, typing does nothing.
+      *
+      * If you simply want to be notified of raw text input, use the prop `onInputValueChange`.
       */
     var onPendingValueChanged: js.UndefOr[
         js.Function3[
@@ -528,6 +548,10 @@ object libComponentsComboBoxComboBoxDottypesMod {
       ): Self = StObject.set(x, "onChange", js.Any.fromFunction4(value))
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      
+      inline def setOnInputValueChange(value: /* text */ String => Unit): Self = StObject.set(x, "onInputValueChange", js.Any.fromFunction1(value))
+      
+      inline def setOnInputValueChangeUndefined: Self = StObject.set(x, "onInputValueChange", js.undefined)
       
       inline def setOnItemClick(
         value: (/* event */ FormEvent[IComboBox], /* option */ js.UndefOr[IComboBoxOption], /* index */ js.UndefOr[Double]) => Unit

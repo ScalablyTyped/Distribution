@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.LineBreak
+import typings.csstype.mod.Property.OverflowAnchor
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,8 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `131` extends StObject {
   
   var value: js.UndefOr[
-    LineBreak | (js.Array[
-      (Extract[js.UndefOr[LineBreak | js.Array[NonNullable[js.UndefOr[LineBreak]]]], String]) | NonNullable[js.UndefOr[LineBreak]]
+    OverflowAnchor | (js.Array[
+      (Extract[
+        js.UndefOr[OverflowAnchor | js.Array[NonNullable[js.UndefOr[OverflowAnchor]]]], 
+        String
+      ]) | NonNullable[js.UndefOr[OverflowAnchor]]
     ])
   ] = js.native
 }

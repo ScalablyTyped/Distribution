@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@nivo/heatmap" : "0.80.0"
+      "@nivo/heatmap" : "0.83.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@nivo/heatmap" : "0.80.0"
+      "@nivo/heatmap" : "0.83.0"
     }
   ],
   "compile-devDependencies" : [

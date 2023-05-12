@@ -1,8 +1,8 @@
 package typings.hyperformula.typingsInterpreterPluginMod
 
-import typings.hyperformula.anon.BESSELI
 import typings.hyperformula.anon.BETADIST
 import typings.hyperformula.typingsInterpreterInterpreterMod.Interpreter
+import typings.hyperformula.typingsInterpreterPluginFunctionPluginMod.ImplementedFunctions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,6 +27,6 @@ object StatisticalPlugin {
   
   @JSImport("hyperformula/typings/interpreter/plugin", "StatisticalPlugin.implementedFunctions")
   @js.native
-  def implementedFunctions: BESSELI = js.native
-  inline def implementedFunctions_=(x: BESSELI): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("implementedFunctions")(x.asInstanceOf[js.Any])
+  def implementedFunctions: ImplementedFunctions = js.native
+  inline def implementedFunctions_=(x: ImplementedFunctions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("implementedFunctions")(x.asInstanceOf[js.Any])
 }

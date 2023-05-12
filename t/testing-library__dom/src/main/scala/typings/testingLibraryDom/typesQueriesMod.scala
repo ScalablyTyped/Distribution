@@ -4,6 +4,7 @@ import typings.std.Element
 import typings.std.HTMLElement
 import typings.std.Parameters
 import typings.std.ReturnType
+import typings.testingLibraryDom.anon.Max
 import typings.testingLibraryDom.typesMatchesMod.ByRoleMatcher
 import typings.testingLibraryDom.typesMatchesMod.Matcher
 import typings.testingLibraryDom.typesMatchesMod.MatcherOptions
@@ -232,9 +233,13 @@ object typesQueriesMod {
     js.Array[T]
   ]
   
-  trait ByRoleOptions
-    extends StObject
-       with MatcherOptions {
+  trait ByRoleOptions extends StObject {
+    
+    /**
+      * If true only includes elements in the query set that are marked as
+      * busy in the accessibility tree, i.e., `aria-busy="true"`
+      */
+    var busy: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true only includes elements in the query set that are marked as
@@ -298,6 +303,11 @@ object typesQueriesMod {
       * selected in the accessibility tree, i.e., `aria-selected="true"`
       */
     var selected: js.UndefOr[Boolean] = js.undefined
+    
+    /** suppress suggestions for a specific query */
+    var suggest: js.UndefOr[Boolean] = js.undefined
+    
+    var value: js.UndefOr[Max] = js.undefined
   }
   object ByRoleOptions {
     
@@ -308,6 +318,10 @@ object typesQueriesMod {
     
     @scala.inline
     implicit open class MutableBuilder[Self <: ByRoleOptions] (val x: Self) extends AnyVal {
+      
+      inline def setBusy(value: Boolean): Self = StObject.set(x, "busy", value.asInstanceOf[js.Any])
+      
+      inline def setBusyUndefined: Self = StObject.set(x, "busy", js.undefined)
       
       inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
       
@@ -356,6 +370,14 @@ object typesQueriesMod {
       inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
       
       inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
+      
+      inline def setSuggest(value: Boolean): Self = StObject.set(x, "suggest", value.asInstanceOf[js.Any])
+      
+      inline def setSuggestUndefined: Self = StObject.set(x, "suggest", js.undefined)
+      
+      inline def setValue(value: Max): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   

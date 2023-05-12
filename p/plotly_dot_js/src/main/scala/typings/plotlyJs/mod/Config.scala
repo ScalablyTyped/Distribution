@@ -72,10 +72,10 @@ trait Config extends StObject {
     * buttons config objects or names of default buttons
     * (see ./components/modebar/buttons.js for more info)
     */
-  var modeBarButtons: (js.Array[js.Array[ModeBarDefaultButtons | ModeBarButton]]) | `false`
+  var modeBarButtons: js.Array[js.Array[ModeBarButtonAny]] | `false`
   
   /** add mode bar button using config objects (see ./components/modebar/buttons.js for list of arguments) */
-  var modeBarButtonsToAdd: js.Array[ModeBarButton | ModeBarDefaultButtons]
+  var modeBarButtonsToAdd: js.Array[ModeBarButtonAny]
   
   /** remove mode bar button by name (see ./components/modebar/buttons.js for the list of names) */
   var modeBarButtonsToRemove: js.Array[ModeBarDefaultButtons]
@@ -176,8 +176,8 @@ object Config {
     locale: String,
     logging: Boolean | `0` | `1` | `2`,
     mapboxAccessToken: String,
-    modeBarButtons: (js.Array[js.Array[ModeBarDefaultButtons | ModeBarButton]]) | `false`,
-    modeBarButtonsToAdd: js.Array[ModeBarButton | ModeBarDefaultButtons],
+    modeBarButtons: js.Array[js.Array[ModeBarButtonAny]] | `false`,
+    modeBarButtonsToAdd: js.Array[ModeBarButtonAny],
     modeBarButtonsToRemove: js.Array[ModeBarDefaultButtons],
     plotGlPixelRatio: Double,
     plotlyServerURL: String,
@@ -236,17 +236,17 @@ object Config {
     
     inline def setMapboxAccessToken(value: String): Self = StObject.set(x, "mapboxAccessToken", value.asInstanceOf[js.Any])
     
-    inline def setModeBarButtons(value: (js.Array[js.Array[ModeBarDefaultButtons | ModeBarButton]]) | `false`): Self = StObject.set(x, "modeBarButtons", value.asInstanceOf[js.Any])
+    inline def setModeBarButtons(value: js.Array[js.Array[ModeBarButtonAny]] | `false`): Self = StObject.set(x, "modeBarButtons", value.asInstanceOf[js.Any])
     
-    inline def setModeBarButtonsToAdd(value: js.Array[ModeBarButton | ModeBarDefaultButtons]): Self = StObject.set(x, "modeBarButtonsToAdd", value.asInstanceOf[js.Any])
+    inline def setModeBarButtonsToAdd(value: js.Array[ModeBarButtonAny]): Self = StObject.set(x, "modeBarButtonsToAdd", value.asInstanceOf[js.Any])
     
-    inline def setModeBarButtonsToAddVarargs(value: (ModeBarButton | ModeBarDefaultButtons)*): Self = StObject.set(x, "modeBarButtonsToAdd", js.Array(value*))
+    inline def setModeBarButtonsToAddVarargs(value: ModeBarButtonAny*): Self = StObject.set(x, "modeBarButtonsToAdd", js.Array(value*))
     
     inline def setModeBarButtonsToRemove(value: js.Array[ModeBarDefaultButtons]): Self = StObject.set(x, "modeBarButtonsToRemove", value.asInstanceOf[js.Any])
     
     inline def setModeBarButtonsToRemoveVarargs(value: ModeBarDefaultButtons*): Self = StObject.set(x, "modeBarButtonsToRemove", js.Array(value*))
     
-    inline def setModeBarButtonsVarargs(value: (js.Array[ModeBarDefaultButtons | ModeBarButton])*): Self = StObject.set(x, "modeBarButtons", js.Array(value*))
+    inline def setModeBarButtonsVarargs(value: js.Array[ModeBarButtonAny]*): Self = StObject.set(x, "modeBarButtons", js.Array(value*))
     
     inline def setPlotGlPixelRatio(value: Double): Self = StObject.set(x, "plotGlPixelRatio", value.asInstanceOf[js.Any])
     

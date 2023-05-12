@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class CallHierarchyItem protected ()
   extends typings.vscode.mod.CallHierarchyItem {
   /**
-    * Creates a new call hierarchy item.
-    */
+  		 * Creates a new call hierarchy item.
+  		 */
   def this(
     kind: typings.vscode.mod.SymbolKind,
     name: String,

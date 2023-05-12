@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "socket.io-adapter" : "2.4.0"
+      "socket.io-adapter" : "2.5.2"
     }
   ],
   "test-dependencies" : [
     {
-      "socket.io-adapter" : "2.4.0"
+      "socket.io-adapter" : "2.5.2"
     }
   ],
   "compile-devDependencies" : [

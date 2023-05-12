@@ -28,10 +28,10 @@ object mod {
     override def entries(): IterableIterator[js.Tuple2[String, TValue]] = js.native
     
     /* CompleteClass */
-    override def get(key: String): TValue = js.native
+    override def get(key: String): js.UndefOr[TValue] = js.native
     
     /* CompleteClass */
-    override def getKey(value: TValue): String = js.native
+    override def getKey(value: TValue): js.UndefOr[String] = js.native
     
     /* CompleteClass */
     override def has(key: String): Boolean = js.native
@@ -62,9 +62,9 @@ object mod {
     
     def entries(): IterableIterator[js.Tuple2[String, TValue]]
     
-    def get(key: String): TValue
+    def get(key: String): js.UndefOr[TValue]
     
-    def getKey(value: TValue): String
+    def getKey(value: TValue): js.UndefOr[String]
     
     def has(key: String): Boolean
     
@@ -85,8 +85,8 @@ object mod {
       delete: String => Unit,
       deleteValue: TValue => Unit,
       entries: () => IterableIterator[js.Tuple2[String, TValue]],
-      get: String => TValue,
-      getKey: TValue => String,
+      get: String => js.UndefOr[TValue],
+      getKey: TValue => js.UndefOr[String],
       has: String => Boolean,
       hasValue: TValue => Boolean,
       keys: () => IterableIterator[String],
@@ -109,9 +109,9 @@ object mod {
       
       inline def setEntries(value: () => IterableIterator[js.Tuple2[String, TValue]]): Self = StObject.set(x, "entries", js.Any.fromFunction0(value))
       
-      inline def setGet(value: String => TValue): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      inline def setGet(value: String => js.UndefOr[TValue]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
-      inline def setGetKey(value: TValue => String): Self = StObject.set(x, "getKey", js.Any.fromFunction1(value))
+      inline def setGetKey(value: TValue => js.UndefOr[String]): Self = StObject.set(x, "getKey", js.Any.fromFunction1(value))
       
       inline def setHas(value: String => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
       

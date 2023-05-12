@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** An ExceptionOptions assigns configuration options to a set of exceptions. */
+/** An `ExceptionOptions` assigns configuration options to a set of exceptions. */
 trait ExceptionOptions extends StObject {
   
   /** Condition when a thrown exception should result in a break. */

@@ -28,8 +28,14 @@ object distTypesCommandsDescribeIdentityCommandMod {
           Any, 
           Any
         ] {
+    /**
+      * @public
+      */
     def this(input: DescribeIdentityCommandInput) = this()
     
+    /**
+      * @internal
+      */
     /* private */ var deserialize: Any = js.native
     
     /**
@@ -45,6 +51,9 @@ object distTypesCommandsDescribeIdentityCommandMod {
       options: HttpHandlerOptions
     ): Handler[DescribeIdentityCommandInput, DescribeIdentityCommandOutput] = js.native
     
+    /**
+      * @internal
+      */
     /* private */ var serialize: Any = js.native
   }
   /* static members */

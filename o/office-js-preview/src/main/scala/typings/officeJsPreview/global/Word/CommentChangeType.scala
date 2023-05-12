@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Represents how the comments in the event were changed.
   *
   * @remarks
-  * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+  * [Api set: WordApi BETA (PREVIEW ONLY)]
   * @beta
   */
 @JSGlobal("Word.CommentChangeType")

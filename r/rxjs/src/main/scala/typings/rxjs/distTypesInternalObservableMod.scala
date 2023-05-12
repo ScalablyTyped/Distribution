@@ -184,7 +184,6 @@ object distTypesInternalObservableMod {
     var source: js.UndefOr[Observable[Any]] = js.native
     
     def subscribe(): Subscription = js.native
-    def subscribe(next: js.Function1[/* value */ T, Unit]): Subscription = js.native
     def subscribe(next: js.Function1[/* value */ T, Unit], error: js.Function1[/* error */ Any, Unit]): Subscription = js.native
     def subscribe(
       next: js.Function1[/* value */ T, Unit],
@@ -201,6 +200,7 @@ object distTypesInternalObservableMod {
     def subscribe(next: Unit, error: js.Function1[/* error */ Any, Unit], complete: js.Function0[Unit]): Subscription = js.native
     def subscribe(next: Unit, error: Null, complete: js.Function0[Unit]): Subscription = js.native
     def subscribe(next: Unit, error: Unit, complete: js.Function0[Unit]): Subscription = js.native
+    def subscribe(observerOrNext: js.Function1[/* value */ T, Unit]): Subscription = js.native
     /* CompleteClass */
     override def subscribe(observer: Partial[Observer[T]]): Unsubscribable = js.native
     

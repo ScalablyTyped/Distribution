@@ -1,7 +1,7 @@
 
 # Scala.js typings for hapi__catbox
 
-Typings are for version 10.2
+Typings are for version 12.1.1
 
 ## Library description:
 Multi-strategy object caching service
@@ -24,7 +24,7 @@ Multi-strategy object caching service
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

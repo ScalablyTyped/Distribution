@@ -18,6 +18,7 @@ object libGeometryAttributeMod {
       * @param [stride=0] - How far apart, in bytes, the start of each value is. (used for interleaving data)
       * @param [start=0] - How far into the array to start reading values (used for interleaving data)
       * @param [instance=false] - Whether the geometry is instanced.
+      * @param [divisor=1] - Divisor to use when doing instanced rendering
       */
     def this(
       buffer: Double,
@@ -26,13 +27,16 @@ object libGeometryAttributeMod {
       `type`: js.UndefOr[TYPES],
       stride: js.UndefOr[Double],
       start: js.UndefOr[Double],
-      instance: js.UndefOr[Boolean]
+      instance: js.UndefOr[Boolean],
+      divisor: js.UndefOr[Double]
     ) = this()
     
     var buffer: Double = js.native
     
     /** Destroys the Attribute. */
     def destroy(): Unit = js.native
+    
+    var divisor: Double = js.native
     
     var instance: Boolean = js.native
     

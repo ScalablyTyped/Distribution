@@ -16,6 +16,6 @@ object geomFlatSegmentsMod {
     offset: Double,
     end: Double,
     stride: Double,
-    callback: js.Function2[/* p0 */ Coordinate, /* p1 */ Coordinate, T]
-  ): T | Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], end.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[T | Boolean]
+    callback: js.Function2[/* arg0 */ Coordinate, /* arg1 */ Coordinate, T]
+  ): Boolean | T = (^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], end.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Boolean | T]
 }

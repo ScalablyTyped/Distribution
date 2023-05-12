@@ -3,6 +3,7 @@ package typings.xstate.anon
 import typings.std.Record
 import typings.xstate.libTypesMod.ActionObject
 import typings.xstate.libTypesMod.ActionTypes.NullEvent
+import typings.xstate.libTypesMod.BaseActionObject
 import typings.xstate.libTypesMod.EventObject
 import typings.xstate.libTypesMod.Guard
 import typings.xstate.xstateStrings.Asterisk
@@ -12,7 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Cond[TContext, TEvent /* <: EventObject */] extends StObject {
   
-  var actions: js.Array[ActionObject[TContext, TEvent]]
+  var actions: js.Array[ActionObject[TContext, TEvent, TEvent, BaseActionObject]]
   
   var cond: js.UndefOr[Guard[TContext, TEvent]] = js.undefined
   
@@ -27,7 +28,7 @@ trait Cond[TContext, TEvent /* <: EventObject */] extends StObject {
 object Cond {
   
   inline def apply[TContext, TEvent /* <: EventObject */](
-    actions: js.Array[ActionObject[TContext, TEvent]],
+    actions: js.Array[ActionObject[TContext, TEvent, TEvent, BaseActionObject]],
     eventType: (/* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any) | NullEvent | Asterisk,
     source: String
   ): Cond[TContext, TEvent] = {
@@ -38,9 +39,9 @@ object Cond {
   @scala.inline
   implicit open class MutableBuilder[Self <: Cond[?, ?], TContext, TEvent /* <: EventObject */] (val x: Self & (Cond[TContext, TEvent])) extends AnyVal {
     
-    inline def setActions(value: js.Array[ActionObject[TContext, TEvent]]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+    inline def setActions(value: js.Array[ActionObject[TContext, TEvent, TEvent, BaseActionObject]]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
-    inline def setActionsVarargs(value: (ActionObject[TContext, TEvent])*): Self = StObject.set(x, "actions", js.Array(value*))
+    inline def setActionsVarargs(value: (ActionObject[TContext, TEvent, TEvent, BaseActionObject])*): Self = StObject.set(x, "actions", js.Array(value*))
     
     inline def setCond(value: Guard[TContext, TEvent]): Self = StObject.set(x, "cond", value.asInstanceOf[js.Any])
     

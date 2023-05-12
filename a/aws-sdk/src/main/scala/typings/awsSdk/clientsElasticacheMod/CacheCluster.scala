@@ -159,9 +159,14 @@ trait CacheCluster extends StObject {
   var SnapshotWindow: js.UndefOr[String] = js.undefined
   
   /**
-    * A flag that enables in-transit encryption when set to true. You cannot modify the value of TransitEncryptionEnabled after the cluster is created. To enable in-transit encryption on a cluster you must set TransitEncryptionEnabled to true when you create a cluster.  Required: Only available when creating a replication group in an Amazon VPC using redis version 3.2.6, 4.x or later. Default: false 
+    * A flag that enables in-transit encryption when set to true.  Required: Only available when creating a replication group in an Amazon VPC using redis version 3.2.6, 4.x or later. Default: false 
     */
   var TransitEncryptionEnabled: js.UndefOr[BooleanOptional] = js.undefined
+  
+  /**
+    * A setting that allows you to migrate your clients to use in-transit encryption, with no downtime.
+    */
+  var TransitEncryptionMode: js.UndefOr[typings.awsSdk.clientsElasticacheMod.TransitEncryptionMode] = js.undefined
 }
 object CacheCluster {
   
@@ -308,5 +313,9 @@ object CacheCluster {
     inline def setTransitEncryptionEnabled(value: BooleanOptional): Self = StObject.set(x, "TransitEncryptionEnabled", value.asInstanceOf[js.Any])
     
     inline def setTransitEncryptionEnabledUndefined: Self = StObject.set(x, "TransitEncryptionEnabled", js.undefined)
+    
+    inline def setTransitEncryptionMode(value: TransitEncryptionMode): Self = StObject.set(x, "TransitEncryptionMode", value.asInstanceOf[js.Any])
+    
+    inline def setTransitEncryptionModeUndefined: Self = StObject.set(x, "TransitEncryptionMode", js.undefined)
   }
 }

@@ -3,8 +3,8 @@ package typings.awsSdkCredentialProviderIni
 import typings.awsSdkCredentialProviderIni.distTypesResolveAssumeRoleCredentialsMod.AssumeRoleParams
 import typings.awsSdkCredentialProviderWebIdentity.distTypesFromWebTokenMod.AssumeRoleWithWebIdentityParams
 import typings.awsSdkSharedIniFileLoader.distTypesParseKnownFilesMod.SourceProfileInit
-import typings.awsSdkTypes.distTypesCredentialsMod.CredentialProvider
-import typings.awsSdkTypes.distTypesCredentialsMod.Credentials
+import typings.awsSdkTypes.distTypesIdentityAwsCredentialIdentityMod.AwsCredentialIdentity
+import typings.awsSdkTypes.distTypesIdentityAwsCredentialIdentityMod.AwsCredentialIdentityProvider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,8 +15,8 @@ object distTypesFromIniMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def fromIni(): CredentialProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIni")().asInstanceOf[CredentialProvider]
-  inline def fromIni(init: FromIniInit): CredentialProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIni")(init.asInstanceOf[js.Any]).asInstanceOf[CredentialProvider]
+  inline def fromIni(): AwsCredentialIdentityProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIni")().asInstanceOf[AwsCredentialIdentityProvider]
+  inline def fromIni(init: FromIniInit): AwsCredentialIdentityProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIni")(init.asInstanceOf[js.Any]).asInstanceOf[AwsCredentialIdentityProvider]
   
   trait FromIniInit
     extends StObject
@@ -41,9 +41,9 @@ object distTypesFromIniMod {
       */
     var roleAssumer: js.UndefOr[
         js.Function2[
-          /* sourceCreds */ Credentials, 
+          /* sourceCreds */ AwsCredentialIdentity, 
           /* params */ AssumeRoleParams, 
-          js.Promise[Credentials]
+          js.Promise[AwsCredentialIdentity]
         ]
       ] = js.undefined
     
@@ -55,7 +55,7 @@ object distTypesFromIniMod {
       * @param params
       */
     var roleAssumerWithWebIdentity: js.UndefOr[
-        js.Function1[/* params */ AssumeRoleWithWebIdentityParams, js.Promise[Credentials]]
+        js.Function1[/* params */ AssumeRoleWithWebIdentityParams, js.Promise[AwsCredentialIdentity]]
       ] = js.undefined
   }
   object FromIniInit {
@@ -72,11 +72,13 @@ object distTypesFromIniMod {
       
       inline def setMfaCodeProviderUndefined: Self = StObject.set(x, "mfaCodeProvider", js.undefined)
       
-      inline def setRoleAssumer(value: (/* sourceCreds */ Credentials, /* params */ AssumeRoleParams) => js.Promise[Credentials]): Self = StObject.set(x, "roleAssumer", js.Any.fromFunction2(value))
+      inline def setRoleAssumer(
+        value: (/* sourceCreds */ AwsCredentialIdentity, /* params */ AssumeRoleParams) => js.Promise[AwsCredentialIdentity]
+      ): Self = StObject.set(x, "roleAssumer", js.Any.fromFunction2(value))
       
       inline def setRoleAssumerUndefined: Self = StObject.set(x, "roleAssumer", js.undefined)
       
-      inline def setRoleAssumerWithWebIdentity(value: /* params */ AssumeRoleWithWebIdentityParams => js.Promise[Credentials]): Self = StObject.set(x, "roleAssumerWithWebIdentity", js.Any.fromFunction1(value))
+      inline def setRoleAssumerWithWebIdentity(value: /* params */ AssumeRoleWithWebIdentityParams => js.Promise[AwsCredentialIdentity]): Self = StObject.set(x, "roleAssumerWithWebIdentity", js.Any.fromFunction1(value))
       
       inline def setRoleAssumerWithWebIdentityUndefined: Self = StObject.set(x, "roleAssumerWithWebIdentity", js.undefined)
     }

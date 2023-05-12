@@ -27,6 +27,11 @@ trait CreateFormData extends StObject {
   var formActionType: FormActionType
   
   /**
+    * Specifies an icon or decoration to display on the form.
+    */
+  var labelDecorator: js.UndefOr[LabelDecorator] = js.undefined
+  
+  /**
     * The name of the form.
     */
   var name: FormName
@@ -78,6 +83,10 @@ object CreateFormData {
     inline def setFields(value: FieldsMap): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     inline def setFormActionType(value: FormActionType): Self = StObject.set(x, "formActionType", value.asInstanceOf[js.Any])
+    
+    inline def setLabelDecorator(value: LabelDecorator): Self = StObject.set(x, "labelDecorator", value.asInstanceOf[js.Any])
+    
+    inline def setLabelDecoratorUndefined: Self = StObject.set(x, "labelDecorator", js.undefined)
     
     inline def setName(value: FormName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

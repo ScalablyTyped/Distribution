@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.MozWindowDragging
+import typings.csstype.mod.Property.InitialLetter
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,11 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `176` extends StObject {
   
   var value: js.UndefOr[
-    MozWindowDragging | (js.Array[
+    InitialLetter | (js.Array[
       (Extract[
-        js.UndefOr[MozWindowDragging | js.Array[NonNullable[js.UndefOr[MozWindowDragging]]]], 
+        js.UndefOr[InitialLetter | js.Array[NonNullable[js.UndefOr[InitialLetter]]]], 
         String
-      ]) | NonNullable[js.UndefOr[MozWindowDragging]]
+      ]) | NonNullable[js.UndefOr[InitialLetter]]
     ])
   ] = js.native
 }

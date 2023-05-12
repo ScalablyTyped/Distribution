@@ -42,6 +42,11 @@ trait DescribeEndpointConfigOutput extends StObject {
     * An array of ProductionVariant objects, one for each model that you want to host at this endpoint.
     */
   var ProductionVariants: ProductionVariantList
+  
+  /**
+    * An array of ProductionVariant objects, one for each model that you want to host at this endpoint in shadow mode with production traffic replicated from the model specified on ProductionVariants.
+    */
+  var ShadowProductionVariants: js.UndefOr[ProductionVariantList] = js.undefined
 }
 object DescribeEndpointConfigOutput {
   
@@ -83,5 +88,11 @@ object DescribeEndpointConfigOutput {
     inline def setProductionVariants(value: ProductionVariantList): Self = StObject.set(x, "ProductionVariants", value.asInstanceOf[js.Any])
     
     inline def setProductionVariantsVarargs(value: ProductionVariant*): Self = StObject.set(x, "ProductionVariants", js.Array(value*))
+    
+    inline def setShadowProductionVariants(value: ProductionVariantList): Self = StObject.set(x, "ShadowProductionVariants", value.asInstanceOf[js.Any])
+    
+    inline def setShadowProductionVariantsUndefined: Self = StObject.set(x, "ShadowProductionVariants", js.undefined)
+    
+    inline def setShadowProductionVariantsVarargs(value: ProductionVariant*): Self = StObject.set(x, "ShadowProductionVariants", js.Array(value*))
   }
 }

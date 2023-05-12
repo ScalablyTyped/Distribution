@@ -293,6 +293,10 @@ object uiBoxStrings {
   inline def caption: caption = "caption".asInstanceOf[caption]
   
   @js.native
+  sealed trait center extends StObject
+  inline def center: center = "center".asInstanceOf[center]
+  
+  @js.native
   sealed trait circle extends StObject
   inline def circle: circle = "circle".asInstanceOf[circle]
   
@@ -515,6 +519,10 @@ object uiBoxStrings {
   @js.native
   sealed trait figure extends StObject
   inline def figure: figure = "figure".asInstanceOf[figure]
+  
+  @js.native
+  sealed trait fill extends StObject
+  inline def fill: fill = "fill".asInstanceOf[fill]
   
   @js.native
   sealed trait filter extends StObject
@@ -1130,6 +1138,30 @@ object uiBoxStrings {
   @js.native
   sealed trait stop extends StObject
   inline def stop: stop = "stop".asInstanceOf[stop]
+  
+  @js.native
+  sealed trait stroke extends StObject
+  inline def stroke: stroke = "stroke".asInstanceOf[stroke]
+  
+  @js.native
+  sealed trait strokeDasharray extends StObject
+  inline def strokeDasharray: strokeDasharray = "strokeDasharray".asInstanceOf[strokeDasharray]
+  
+  @js.native
+  sealed trait strokeDashoffset extends StObject
+  inline def strokeDashoffset: strokeDashoffset = "strokeDashoffset".asInstanceOf[strokeDashoffset]
+  
+  @js.native
+  sealed trait strokeLinecap extends StObject
+  inline def strokeLinecap: strokeLinecap = "strokeLinecap".asInstanceOf[strokeLinecap]
+  
+  @js.native
+  sealed trait strokeMiterlimit extends StObject
+  inline def strokeMiterlimit: strokeMiterlimit = "strokeMiterlimit".asInstanceOf[strokeMiterlimit]
+  
+  @js.native
+  sealed trait strokeWidth extends StObject
+  inline def strokeWidth: strokeWidth = "strokeWidth".asInstanceOf[strokeWidth]
   
   @js.native
   sealed trait strong extends StObject

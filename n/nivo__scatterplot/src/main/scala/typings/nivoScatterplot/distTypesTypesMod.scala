@@ -14,12 +14,15 @@ import typings.nivoLegends.distTypesTypesMod.LegendProps
 import typings.nivoScales.distTypesTypesMod.AnyScale
 import typings.nivoScales.distTypesTypesMod.ScaleSpec
 import typings.nivoScatterplot.anon.SerieId
+import typings.nivoScatterplot.anon.Size
 import typings.nivoScatterplot.nivoScatterplotStrings.color
 import typings.nivoScatterplot.nivoScatterplotStrings.id
 import typings.nivoScatterplot.nivoScatterplotStrings.size
 import typings.react.mod.FunctionComponent
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
+import typings.reactSpringCore.mod.SpringConfig
+import typings.reactSpringCore.mod.SpringValues
 import typings.std.CanvasRenderingContext2D
 import typings.std.Omit
 import org.scalablytyped.runtime.StObject
@@ -853,7 +856,7 @@ object distTypesTypesMod {
     
     var onMouseMove: js.UndefOr[ScatterPlotMouseHandler[RawDatum]] = js.undefined
     
-    var style: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValues<{  x :number,   y :number,   size :number,   color :string}> */ Any
+    var style: SpringValues[Size]
   }
   object ScatterPlotNodeProps {
     
@@ -861,7 +864,7 @@ object distTypesTypesMod {
       blendMode: CssMixBlendMode,
       isInteractive: Boolean,
       node: ScatterPlotNodeData[RawDatum],
-      style: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValues<{  x :number,   y :number,   size :number,   color :string}> */ Any
+      style: SpringValues[Size]
     ): ScatterPlotNodeProps[RawDatum] = {
       val __obj = js.Dynamic.literal(blendMode = blendMode.asInstanceOf[js.Any], isInteractive = isInteractive.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
       __obj.asInstanceOf[ScatterPlotNodeProps[RawDatum]]
@@ -900,9 +903,7 @@ object distTypesTypesMod {
       
       inline def setOnMouseMoveUndefined: Self = StObject.set(x, "onMouseMove", js.undefined)
       
-      inline def setStyle(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValues<{  x :number,   y :number,   size :number,   color :string}> */ Any
-      ): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: SpringValues[Size]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     }
   }
   
@@ -930,7 +931,7 @@ object distTypesTypesMod {
     }
   }
   
-  /* Inlined std.Partial<@nivo/scatterplot.@nivo/scatterplot/dist/types/types.ScatterPlotCommonProps<RawDatum>> & @nivo/scatterplot.@nivo/scatterplot/dist/types/types.ScatterPlotDataProps<RawDatum> & @nivo/core.@nivo/core.Dimensions & @nivo/core.@nivo/core.ModernMotionProps & {  blendMode :@nivo/core.@nivo/core.CssMixBlendMode | undefined,   layers :std.Array<@nivo/scatterplot.@nivo/scatterplot/dist/types/types.ScatterPlotLayerId | @nivo/scatterplot.@nivo/scatterplot/dist/types/types.ScatterPlotCustomSvgLayer<RawDatum>> | undefined,   nodeComponent :@nivo/scatterplot.@nivo/scatterplot/dist/types/types.ScatterPlotNode<RawDatum> | undefined,   markers :std.Array<@nivo/core.@nivo/core.CartesianMarkerProps<RawDatum['x'] | RawDatum['y']>> | undefined} */
+  /* Inlined std.Partial<@nivo/scatterplot.@nivo/scatterplot/dist/types/types.ScatterPlotCommonProps<RawDatum>> & @nivo/scatterplot.@nivo/scatterplot/dist/types/types.ScatterPlotDataProps<RawDatum> & @nivo/core.@nivo/core.Dimensions & @nivo/core.@nivo/core.MotionProps & {  blendMode :@nivo/core.@nivo/core.CssMixBlendMode | undefined,   layers :std.Array<@nivo/scatterplot.@nivo/scatterplot/dist/types/types.ScatterPlotLayerId | @nivo/scatterplot.@nivo/scatterplot/dist/types/types.ScatterPlotCustomSvgLayer<RawDatum>> | undefined,   nodeComponent :@nivo/scatterplot.@nivo/scatterplot/dist/types/types.ScatterPlotNode<RawDatum> | undefined,   markers :std.Array<@nivo/core.@nivo/core.CartesianMarkerProps<RawDatum['x'] | RawDatum['y']>> | undefined} */
   trait ScatterPlotSvgProps[RawDatum /* <: ScatterPlotDatum */] extends StObject {
     
     var animate: js.UndefOr[Boolean] = js.undefined
@@ -993,9 +994,7 @@ object distTypesTypesMod {
         ]
       ] = js.undefined
     
-    var motionConfig: js.UndefOr[
-        String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringConfig */ Any)
-      ] = js.undefined
+    var motionConfig: js.UndefOr[String | SpringConfig] = js.undefined
     
     var nodeComponent: js.UndefOr[ScatterPlotNode[RawDatum]] = js.undefined
     
@@ -1185,9 +1184,7 @@ object distTypesTypesMod {
             ])*
       ): Self = StObject.set(x, "markers", js.Array(value*))
       
-      inline def setMotionConfig(
-        value: String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringConfig */ Any)
-      ): Self = StObject.set(x, "motionConfig", value.asInstanceOf[js.Any])
+      inline def setMotionConfig(value: String | SpringConfig): Self = StObject.set(x, "motionConfig", value.asInstanceOf[js.Any])
       
       inline def setMotionConfigUndefined: Self = StObject.set(x, "motionConfig", js.undefined)
       

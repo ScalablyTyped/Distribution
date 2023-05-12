@@ -242,6 +242,7 @@ type RoleARN = String
   - typings.awsSdk.awsSdkStrings.`FLINK-1_11`
   - typings.awsSdk.awsSdkStrings.`FLINK-1_13`
   - typings.awsSdk.awsSdkStrings.`ZEPPELIN-FLINK-2_0`
+  - typings.awsSdk.awsSdkStrings.`FLINK-1_15`
   - java.lang.String
 */
 type RuntimeEnvironment = _RuntimeEnvironment | String

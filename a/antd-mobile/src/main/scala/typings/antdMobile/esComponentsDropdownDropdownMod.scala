@@ -42,10 +42,12 @@ import typings.antdMobile.antdMobileStrings.text
 import typings.antdMobile.antdMobileStrings.time
 import typings.antdMobile.antdMobileStrings.tree
 import typings.antdMobile.antdMobileStrings.vertical
+import typings.antdMobile.esUtilsRenderToContainerMod.GetContainer
 import typings.react.mod.Booleanish
 import typings.react.mod.CSSProperties
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.ReactNode
+import typings.std.HTMLElement
 import typings.std.Partial
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -58,7 +60,7 @@ object esComponentsDropdownDropdownMod extends Shortcut {
   @js.native
   val default: ForwardRefExoticComponent[activeKeystringnullundefi] = js.native
   
-  /* Inlined {  activeKey :string | null | undefined,   defaultActiveKey :string | null | undefined,   closeOnMaskClick :boolean | undefined,   closeOnClickAway :boolean | undefined,   onChange :(key : string | null): void | undefined,   arrow :react.react.ReactNode | undefined} & antd-mobile.antd-mobile/es/utils/native-props.NativeProps<never> */
+  /* Inlined {  activeKey :string | null | undefined,   defaultActiveKey :string | null | undefined,   closeOnMaskClick :boolean | undefined,   closeOnClickAway :boolean | undefined,   onChange :(key : string | null): void | undefined,   arrow :react.react.ReactNode | undefined,   getContainer :antd-mobile.antd-mobile/es/components/popup.PopupProps['getContainer'] | undefined} & antd-mobile.antd-mobile/es/utils/native-props.NativeProps<never> */
   trait DropdownProps extends StObject {
     
     var activeKey: js.UndefOr[String | Null] = js.undefined
@@ -307,6 +309,8 @@ object esComponentsDropdownDropdownMod extends Shortcut {
     
     var defaultActiveKey: js.UndefOr[String | Null] = js.undefined
     
+    var getContainer: js.UndefOr[GetContainer] = js.undefined
+    
     var onChange: js.UndefOr[js.Function1[/* key */ String | Null, Unit]] = js.undefined
     
     var style: js.UndefOr[CSSProperties & (Partial[Record[scala.Nothing, String]])] = js.undefined
@@ -544,6 +548,14 @@ object esComponentsDropdownDropdownMod extends Shortcut {
       inline def setDefaultActiveKeyNull: Self = StObject.set(x, "defaultActiveKey", null)
       
       inline def setDefaultActiveKeyUndefined: Self = StObject.set(x, "defaultActiveKey", js.undefined)
+      
+      inline def setGetContainer(value: GetContainer): Self = StObject.set(x, "getContainer", value.asInstanceOf[js.Any])
+      
+      inline def setGetContainerFunction0(value: () => HTMLElement): Self = StObject.set(x, "getContainer", js.Any.fromFunction0(value))
+      
+      inline def setGetContainerNull: Self = StObject.set(x, "getContainer", null)
+      
+      inline def setGetContainerUndefined: Self = StObject.set(x, "getContainer", js.undefined)
       
       inline def setOnChange(value: /* key */ String | Null => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       

@@ -6,7 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IdentifierString extends StObject {
   
-  var identifier: String
+  /** @description The package version that patches this vulnerability. */
+  val identifier: String
 }
 object IdentifierString {
   

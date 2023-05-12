@@ -11,14 +11,14 @@ object distTypesKeyGenerateSecretMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def generateSecret(alg: String): js.Promise[KeyLike | js.typedarray.Uint8Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateSecret")(alg.asInstanceOf[js.Any]).asInstanceOf[js.Promise[KeyLike | js.typedarray.Uint8Array]]
-  inline def generateSecret(alg: String, options: GenerateSecretOptions): js.Promise[KeyLike | js.typedarray.Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSecret")(alg.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[KeyLike | js.typedarray.Uint8Array]]
+  inline def generateSecret[T /* <: KeyLike */](alg: String): js.Promise[T | js.typedarray.Uint8Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateSecret")(alg.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T | js.typedarray.Uint8Array]]
+  inline def generateSecret[T /* <: KeyLike */](alg: String, options: GenerateSecretOptions): js.Promise[T | js.typedarray.Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSecret")(alg.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T | js.typedarray.Uint8Array]]
   
   trait GenerateSecretOptions extends StObject {
     
     /**
-      * (Web Cryptography API specific) The value to use as
-      * [SubtleCrypto.generateKey()](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/generateKey)
+      * (Only effective in Web Crypto API runtimes) The value to use as
+      * {@link https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/generateKey SubtleCrypto.generateKey()}
       * `extractable` argument. Default is false.
       */
     var extractable: js.UndefOr[Boolean] = js.undefined

@@ -12,7 +12,7 @@ open class Box protected ()
   def this(props: BoxProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: BoxProps, context: Any) = this()
 }

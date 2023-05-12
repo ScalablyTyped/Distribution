@@ -9,7 +9,7 @@ trait IModelDecorationMinimapOptions
      with IDecorationOptions {
   
   /**
-    * The position in the overview ruler.
+    * The position in the minimap.
     */
   var position: MinimapPosition
 }

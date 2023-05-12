@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Extensions extends StObject {
   
   /**
-    * The list of available extensions. The list includes Amazon Web Services-authored and user-created extensions.
+    * The list of available extensions. The list includes Amazon Web Services authored and user-created extensions.
     */
   var Items: js.UndefOr[ExtensionSummaries] = js.undefined
   

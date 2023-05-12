@@ -6,20 +6,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `513` extends StObject {
   
-  /** Response */
-  var `200`: ContentApplicationjsonNameNodeid
+  var content: ApplicationjsonDeliveriesurl
 }
 object `513` {
   
-  inline def apply(`200`: ContentApplicationjsonNameNodeid): `513` = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("200")(`200`.asInstanceOf[js.Any])
+  inline def apply(content: ApplicationjsonDeliveriesurl): `513` = {
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
     __obj.asInstanceOf[`513`]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: `513`] (val x: Self) extends AnyVal {
     
-    inline def set200(value: ContentApplicationjsonNameNodeid): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
+    inline def setContent(value: ApplicationjsonDeliveriesurl): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
   }
 }

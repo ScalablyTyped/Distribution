@@ -17,9 +17,10 @@ open class LayoutGroupComponent protected ()
   /**
     * Create a new LayoutGroupComponent instance.
     *
-    * @param {LayoutGroupComponentSystem} system - The ComponentSystem that created this
-    * Component.
-    * @param {Entity} entity - The Entity that this Component is attached to.
+    * @param {import('./system.js').LayoutGroupComponentSystem} system - The ComponentSystem that
+    * created this Component.
+    * @param {import('../../entity.js').Entity} entity - The Entity that this Component is
+    * attached to.
     */
   def this(system: typings.playcanvas.mod.LayoutGroupComponentSystem, entity: typings.playcanvas.mod.Entity) = this()
 }

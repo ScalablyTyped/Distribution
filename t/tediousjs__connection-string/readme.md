@@ -1,7 +1,7 @@
 
 # Scala.js typings for tediousjs__connection-string
 
-Typings are for version 0.4.1
+Typings are for version 0.4.2
 
 ## Library description:
 SQL ConnectionString parser

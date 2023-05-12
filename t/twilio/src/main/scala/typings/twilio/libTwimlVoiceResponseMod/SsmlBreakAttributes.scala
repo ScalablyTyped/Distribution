@@ -6,8 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SsmlBreakAttributes extends StObject {
   
+  /** strength - Set a pause based on strength */
   var strength: js.UndefOr[SsmlBreakStrength] = js.undefined
   
+  /** time - Set a pause to a specific length of time in seconds or milliseconds, available values: [number]s, [number]ms */
   var time: js.UndefOr[String] = js.undefined
 }
 object SsmlBreakAttributes {

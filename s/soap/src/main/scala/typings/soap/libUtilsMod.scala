@@ -20,7 +20,11 @@ object libUtilsMod {
   
   inline def findPrefix(xmlnsMapping: Any, nsURI: Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("findPrefix")(xmlnsMapping.asInstanceOf[js.Any], nsURI.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def parseMTOMResp(payload: Buffer, boundary: String): IMTOMAttachments = (^.asInstanceOf[js.Dynamic].applyDynamic("parseMTOMResp")(payload.asInstanceOf[js.Any], boundary.asInstanceOf[js.Any])).asInstanceOf[IMTOMAttachments]
+  inline def parseMTOMResp(
+    payload: Buffer,
+    boundary: String,
+    callback: js.Function2[/* err */ js.UndefOr[js.Error], /* resp */ js.UndefOr[IMTOMAttachments], Unit]
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseMTOMResp")(payload.asInstanceOf[js.Any], boundary.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   inline def passwordDigest(nonce: String, created: String, password: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("passwordDigest")(nonce.asInstanceOf[js.Any], created.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[String]
   

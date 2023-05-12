@@ -12,6 +12,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.webextensionPolyfill.webextensionPolyfillStrings.fingerprinting_content
   - typings.webextensionPolyfill.webextensionPolyfillStrings.cryptomining
   - typings.webextensionPolyfill.webextensionPolyfillStrings.cryptomining_content
+  - typings.webextensionPolyfill.webextensionPolyfillStrings.emailtracking
+  - typings.webextensionPolyfill.webextensionPolyfillStrings.emailtracking_content
   - typings.webextensionPolyfill.webextensionPolyfillStrings.tracking
   - typings.webextensionPolyfill.webextensionPolyfillStrings.tracking_ad
   - typings.webextensionPolyfill.webextensionPolyfillStrings.tracking_analytics
@@ -33,6 +35,10 @@ object UrlClassificationFlags {
   inline def cryptomining: typings.webextensionPolyfill.webextensionPolyfillStrings.cryptomining = "cryptomining".asInstanceOf[typings.webextensionPolyfill.webextensionPolyfillStrings.cryptomining]
   
   inline def cryptomining_content: typings.webextensionPolyfill.webextensionPolyfillStrings.cryptomining_content = "cryptomining_content".asInstanceOf[typings.webextensionPolyfill.webextensionPolyfillStrings.cryptomining_content]
+  
+  inline def emailtracking: typings.webextensionPolyfill.webextensionPolyfillStrings.emailtracking = "emailtracking".asInstanceOf[typings.webextensionPolyfill.webextensionPolyfillStrings.emailtracking]
+  
+  inline def emailtracking_content: typings.webextensionPolyfill.webextensionPolyfillStrings.emailtracking_content = "emailtracking_content".asInstanceOf[typings.webextensionPolyfill.webextensionPolyfillStrings.emailtracking_content]
   
   inline def fingerprinting: typings.webextensionPolyfill.webextensionPolyfillStrings.fingerprinting = "fingerprinting".asInstanceOf[typings.webextensionPolyfill.webextensionPolyfillStrings.fingerprinting]
   

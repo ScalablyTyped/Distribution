@@ -1,11 +1,13 @@
 package typings.libp2pCrypto
 
 import typings.libp2pCrypto.anon.Bytes
-import typings.libp2pCrypto.anon.K1
+import typings.libp2pCrypto.anon.PartialPrivateKey
+import typings.libp2pCrypto.anon.PartialPublicKey
 import typings.libp2pCrypto.anon.TypeofEd25519
 import typings.libp2pCrypto.anon.TypeofRSA
 import typings.libp2pCrypto.anon.TypeofSecp256k1
 import typings.libp2pCrypto.distSrcKeysInterfaceMod.ECDHKey
+import typings.libp2pCrypto.distSrcKeysInterfaceMod.EnhancedKeyPair
 import typings.libp2pCrypto.distSrcKeysMod.KeyTypes
 import typings.libp2pCrypto.libp2pCryptoStrings.Blowfish
 import typings.libp2pCrypto.libp2pCryptoStrings.SHA1
@@ -42,7 +44,7 @@ object keysMod {
     cipherType: `AES-128` | `AES-256` | Blowfish,
     hash: SHA1 | SHA256 | SHA512,
     secret: js.typedarray.Uint8Array
-  ): js.Promise[K1] = (^.asInstanceOf[js.Dynamic].applyDynamic("keyStretcher")(cipherType.asInstanceOf[js.Any], hash.asInstanceOf[js.Any], secret.asInstanceOf[js.Any])).asInstanceOf[js.Promise[K1]]
+  ): js.Promise[EnhancedKeyPair] = (^.asInstanceOf[js.Dynamic].applyDynamic("keyStretcher")(cipherType.asInstanceOf[js.Any], hash.asInstanceOf[js.Any], secret.asInstanceOf[js.Any])).asInstanceOf[js.Promise[EnhancedKeyPair]]
   
   object keysPBM {
     
@@ -73,7 +75,7 @@ object keysMod {
       inline def decode(buf: js.typedarray.Uint8Array): typings.libp2pCrypto.distSrcKeysKeysMod.PrivateKey = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(buf.asInstanceOf[js.Any]).asInstanceOf[typings.libp2pCrypto.distSrcKeysKeysMod.PrivateKey]
       inline def decode(buf: Uint8ArrayList): typings.libp2pCrypto.distSrcKeysKeysMod.PrivateKey = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(buf.asInstanceOf[js.Any]).asInstanceOf[typings.libp2pCrypto.distSrcKeysKeysMod.PrivateKey]
       
-      inline def encode(obj: typings.libp2pCrypto.distSrcKeysKeysMod.PrivateKey): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+      inline def encode(obj: PartialPrivateKey): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
     }
     
     object PublicKey {
@@ -87,7 +89,7 @@ object keysMod {
       inline def decode(buf: js.typedarray.Uint8Array): typings.libp2pCrypto.distSrcKeysKeysMod.PublicKey = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(buf.asInstanceOf[js.Any]).asInstanceOf[typings.libp2pCrypto.distSrcKeysKeysMod.PublicKey]
       inline def decode(buf: Uint8ArrayList): typings.libp2pCrypto.distSrcKeysKeysMod.PublicKey = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(buf.asInstanceOf[js.Any]).asInstanceOf[typings.libp2pCrypto.distSrcKeysKeysMod.PublicKey]
       
-      inline def encode(obj: typings.libp2pCrypto.distSrcKeysKeysMod.PublicKey): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+      inline def encode(obj: PartialPublicKey): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
     }
   }
   

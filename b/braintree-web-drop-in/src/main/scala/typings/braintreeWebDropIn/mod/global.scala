@@ -1,6 +1,5 @@
 package typings.braintreeWebDropIn.mod
 
-import typings.braintreeWebDropIn.anon.Create
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,13 +9,17 @@ object global {
   
   object braintree {
     
-    @JSGlobal("braintree")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    @JSGlobal("braintree.dropin")
-    @js.native
-    def dropin: Create = js.native
-    inline def dropin_=(x: Create): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dropin")(x.asInstanceOf[js.Any])
+    object dropin {
+      
+      @JSGlobal("braintree.dropin")
+      @js.native
+      val ^ : js.Any = js.native
+      
+      inline def create(options: Options): js.Promise[Dropin] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Dropin]]
+      inline def create(
+        options: Options,
+        callback: js.Function2[/* error */ js.Object | Null, /* dropin */ js.UndefOr[Dropin], Unit]
+      ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    }
   }
 }

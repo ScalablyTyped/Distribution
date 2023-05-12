@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-aria__focus
 
-Typings are for version 3.9.0
+Typings are for version 3.12.0
 
 ## Library description:
 Spectrum UI components in React

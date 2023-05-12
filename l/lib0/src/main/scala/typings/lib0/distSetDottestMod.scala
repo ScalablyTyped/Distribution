@@ -11,5 +11,5 @@ object distSetDottestMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def testFirst[T](tc: TestCase): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testFirst")(tc.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def testFirst(_tc: TestCase): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testFirst")(_tc.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

@@ -102,32 +102,48 @@ object datascrollerDatascrollerMod {
     def this(props: DataScrollerProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: DataScrollerProps, context: Any) = this()
     
+    /**
+      * Used to get container element.
+      * @return {HTMLDivElement} Container element
+      */
     def getElement(): HTMLDivElement = js.native
     
+    /**
+      * Used to load data manually
+      */
     def load(): Unit = js.native
   }
   
-  type DataScrollerEmptyMessageType = ReactNode | (js.Function1[/* props */ DataScrollerProps, ReactNode])
-  
-  trait DataScrollerLazyLoadParams extends StObject {
+  /**
+    * Custom lazy event.
+    * @see {@link DataScrollerProps.onLazyLoad}
+    * @event
+    */
+  trait DataScrollerLazyLoadEvents extends StObject {
     
+    /**
+      * First row offset
+      */
     var first: Double
     
+    /**
+      * Number of rows per page
+      */
     var rows: Double
   }
-  object DataScrollerLazyLoadParams {
+  object DataScrollerLazyLoadEvents {
     
-    inline def apply(first: Double, rows: Double): DataScrollerLazyLoadParams = {
+    inline def apply(first: Double, rows: Double): DataScrollerLazyLoadEvents = {
       val __obj = js.Dynamic.literal(first = first.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any])
-      __obj.asInstanceOf[DataScrollerLazyLoadParams]
+      __obj.asInstanceOf[DataScrollerLazyLoadEvents]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: DataScrollerLazyLoadParams] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: DataScrollerLazyLoadEvents] (val x: Self) extends AnyVal {
       
       inline def setFirst(value: Double): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
       
@@ -244,15 +260,27 @@ object datascrollerDatascrollerMod {
     
     var autoCorrect: js.UndefOr[String] = js.undefined
     
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
+    
     var autoSave: js.UndefOr[String] = js.undefined
     
+    /**
+      * Number of buffer size.
+      * @defaultValue 0.9
+      */
     var buffer: js.UndefOr[Double] = js.undefined
     
+    /**
+      * Used to get the child elements of the component.
+      * @readonly
+      */
     var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
     var color: js.UndefOr[String] = js.undefined
+    
+    var content: js.UndefOr[String] = js.undefined
     
     var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
@@ -270,16 +298,30 @@ object datascrollerDatascrollerMod {
     
     var draggable: js.UndefOr[Booleanish] = js.undefined
     
-    var emptyMessage: js.UndefOr[DataScrollerEmptyMessageType] = js.undefined
+    /**
+      * Text to display when there is no data.
+      * @defaultValue No records found
+      */
+    var emptyMessage: js.UndefOr[ReactNode | (js.Function1[/* props */ this.type, ReactNode])] = js.undefined
     
+    /**
+      * Label of footer.
+      */
     var footer: js.UndefOr[ReactNode] = js.undefined
     
+    /**
+      * Label of header.
+      */
     var header: js.UndefOr[ReactNode] = js.undefined
     
     var hidden: js.UndefOr[Boolean] = js.undefined
     
     var id: js.UndefOr[String] = js.undefined
     
+    /**
+      * Defines if the event target to listen the scroll event is the element itself.
+      * @defaultValue false
+      */
     var `inline`: js.UndefOr[Boolean] = js.undefined
     
     var inlist: js.UndefOr[Any] = js.undefined
@@ -296,7 +338,11 @@ object datascrollerDatascrollerMod {
     
     var itemScope: js.UndefOr[Boolean] = js.undefined
     
-    var itemTemplate: js.UndefOr[js.Function1[/* item */ Any, ReactNode]] = js.undefined
+    /**
+      * Function that gets an item in the value and returns the content for it.
+      * @param {*} item - Current item
+      */
+    var itemTemplate: js.UndefOr[js.Function1[/* item */ Any, js.UndefOr[ReactNode]]] = js.undefined
     
     var itemType: js.UndefOr[String] = js.undefined
     
@@ -304,8 +350,15 @@ object datascrollerDatascrollerMod {
     
     var lang: js.UndefOr[String] = js.undefined
     
+    /**
+      * Defines if data is loaded and interacted with in lazy manner.
+      * @defaultValue false
+      */
     var `lazy`: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Determines whether data is loaded by a target element.
+      */
     var loader: js.UndefOr[Boolean] = js.undefined
     
     var nonce: js.UndefOr[String] = js.undefined
@@ -384,7 +437,11 @@ object datascrollerDatascrollerMod {
     
     var onKeyUp: js.UndefOr[KeyboardEventHandler[HTMLDivElement]] = js.undefined
     
-    var onLazyLoad: js.UndefOr[js.Function1[/* e */ DataScrollerLazyLoadParams, Unit]] = js.undefined
+    /**
+      * Callback to invoke in lazy mode to load new data.
+      * @param {DataScrollerLazyLoadEvents} event - Custom lazy event
+      */
+    var onLazyLoad: js.UndefOr[js.Function1[/* event */ DataScrollerLazyLoadEvents, Unit]] = js.undefined
     
     var onLoad: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
@@ -480,14 +537,24 @@ object datascrollerDatascrollerMod {
     
     var radioGroup: js.UndefOr[String] = js.undefined
     
+    var rel: js.UndefOr[String] = js.undefined
+    
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
     
+    var rev: js.UndefOr[String] = js.undefined
+    
     var role: js.UndefOr[AriaRole] = js.undefined
     
+    /**
+      * Number of rows to fetch in a load event.
+      */
     var rows: js.UndefOr[Double] = js.undefined
     
+    /**
+      * Max height of the content area in inline mode.
+      */
     var scrollHeight: js.UndefOr[String] = js.undefined
     
     var security: js.UndefOr[String] = js.undefined
@@ -512,6 +579,9 @@ object datascrollerDatascrollerMod {
     
     var unselectable: js.UndefOr[on | off] = js.undefined
     
+    /**
+      * An array of objects to display.
+      */
     var value: js.UndefOr[js.Array[Any]] = js.undefined
     
     var vocab: js.UndefOr[String] = js.undefined
@@ -736,6 +806,10 @@ object datascrollerDatascrollerMod {
       
       inline def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
       
+      inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+      
+      inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+      
       inline def setAutoSave(value: String): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
       
       inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
@@ -756,9 +830,13 @@ object datascrollerDatascrollerMod {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
       inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
       inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
@@ -790,9 +868,9 @@ object datascrollerDatascrollerMod {
       
       inline def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
       
-      inline def setEmptyMessage(value: DataScrollerEmptyMessageType): Self = StObject.set(x, "emptyMessage", value.asInstanceOf[js.Any])
+      inline def setEmptyMessage(value: ReactNode | (js.Function1[DataScrollerProps, ReactNode])): Self = StObject.set(x, "emptyMessage", value.asInstanceOf[js.Any])
       
-      inline def setEmptyMessageFunction1(value: /* props */ DataScrollerProps => ReactNode): Self = StObject.set(x, "emptyMessage", js.Any.fromFunction1(value))
+      inline def setEmptyMessageFunction1(value: DataScrollerProps => ReactNode): Self = StObject.set(x, "emptyMessage", js.Any.fromFunction1(value))
       
       inline def setEmptyMessageUndefined: Self = StObject.set(x, "emptyMessage", js.undefined)
       
@@ -844,7 +922,7 @@ object datascrollerDatascrollerMod {
       
       inline def setItemScopeUndefined: Self = StObject.set(x, "itemScope", js.undefined)
       
-      inline def setItemTemplate(value: /* item */ Any => ReactNode): Self = StObject.set(x, "itemTemplate", js.Any.fromFunction1(value))
+      inline def setItemTemplate(value: /* item */ Any => js.UndefOr[ReactNode]): Self = StObject.set(x, "itemTemplate", js.Any.fromFunction1(value))
       
       inline def setItemTemplateUndefined: Self = StObject.set(x, "itemTemplate", js.undefined)
       
@@ -1022,7 +1100,7 @@ object datascrollerDatascrollerMod {
       
       inline def setOnKeyUpUndefined: Self = StObject.set(x, "onKeyUp", js.undefined)
       
-      inline def setOnLazyLoad(value: /* e */ DataScrollerLazyLoadParams => Unit): Self = StObject.set(x, "onLazyLoad", js.Any.fromFunction1(value))
+      inline def setOnLazyLoad(value: /* event */ DataScrollerLazyLoadEvents => Unit): Self = StObject.set(x, "onLazyLoad", js.Any.fromFunction1(value))
       
       inline def setOnLazyLoadUndefined: Self = StObject.set(x, "onLazyLoad", js.undefined)
       
@@ -1214,6 +1292,10 @@ object datascrollerDatascrollerMod {
       
       inline def setRadioGroupUndefined: Self = StObject.set(x, "radioGroup", js.undefined)
       
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      
+      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+      
       inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
       inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
@@ -1221,6 +1303,10 @@ object datascrollerDatascrollerMod {
       inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+      
+      inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+      
+      inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
       
       inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       

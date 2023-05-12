@@ -11,6 +11,26 @@ object libErrorsMod {
   object codes {
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("import-meta-resolve/lib/errors", "codes.ERR_INVALID_ARG_TYPE")
+    @js.native
+    open class ERR_INVALID_ARG_TYPE protected ()
+      extends StObject
+         with Error {
+      def this(args: Any*) = this()
+      
+      /* standard es5 */
+      /* CompleteClass */
+      var message: String = js.native
+      
+      /* standard es5 */
+      /* CompleteClass */
+      var name: String = js.native
+    }
+    @JSImport("import-meta-resolve/lib/errors", "codes.ERR_INVALID_ARG_TYPE")
+    @js.native
+    val ERR_INVALID_ARG_TYPE: Instantiable1[/* args (repeated) */ Any, js.Error] = js.native
+    
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("import-meta-resolve/lib/errors", "codes.ERR_INVALID_ARG_VALUE")
     @js.native
     open class ERR_INVALID_ARG_VALUE protected ()

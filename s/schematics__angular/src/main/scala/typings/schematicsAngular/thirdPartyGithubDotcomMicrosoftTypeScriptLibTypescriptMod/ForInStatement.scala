@@ -8,6 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ForInStatement
   extends StObject
      with IterationStatement
+     with LocalsContainer
+     with FlowContainer
      with ForInOrOfStatement
      with HasInitializer
      with HasJSDoc {

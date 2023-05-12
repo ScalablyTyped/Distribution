@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /**
   * Interface for the form's record context, {@link Data.entity formContext.data.entity}
-  * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/formcontext-data-entity External Link: formContext.data.entity (Client API reference)}
+  * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/reference/formcontext-data-entity External Link: formContext.data.entity (Client API reference)}
   */
 @js.native
 trait Entity extends StObject {
@@ -20,7 +20,7 @@ trait Entity extends StObject {
     * Adds a function to be called after the OnSave is complete.
     * @param handler The handler.
     * @remarks Added in 9.2
-    * @see {@link https://docs.microsoft.com/en-us/powerapps/developer/model-driven-apps/clientapi/reference/events/postsave External Link: PostSave Event Documentation}
+    * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/reference/events/postsave External Link: PostSave Event Documentation}
     */
   def addOnPostSave(handler: PostSaveEventHandler): Unit = js.native
   
@@ -32,8 +32,8 @@ trait Entity extends StObject {
   
   /**
     * The collection of attributes for the record.
-    * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/attributes External Link: Attributes (Client API reference)}
-    * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/collections External Link: Collections (Client API reference)}
+    * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/reference/attributes External Link: Attributes (Client API reference)}
+    * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/reference/collections External Link: Collections (Client API reference)}
     */
   var attributes: ItemCollection[Attribute[Any]] = js.native
   
@@ -55,7 +55,7 @@ trait Entity extends StObject {
   /**
     * Gets a lookup value that references the record.
     * @returns A lookup value that references the record.
-    * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/formcontext-data-entity/getentityreference External Link: getEntityReference API Documentation}
+    * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/reference/formcontext-data-entity/getentityreference External Link: getEntityReference API Documentation}
     */
   def getEntityReference(): LookupValue = js.native
   
@@ -86,7 +86,7 @@ trait Entity extends StObject {
   def isValid(): Boolean = js.native
   
   /**
-    * @see {@link https://learn.microsoft.com/power-apps/developer/model-driven-apps/clientapi/reference/controls/removeonpostsave removeOnPostSave (Client API reference)}
+    * @see {@link https://learn.microsoft.com/power-apps/developer/model-driven-apps/clientapi/reference/controls/removeonpostsave External Link: removeOnPostSave (Client API reference)}
     */
   def removeOnPostSave(handler: PostSaveEventHandler): Unit = js.native
   

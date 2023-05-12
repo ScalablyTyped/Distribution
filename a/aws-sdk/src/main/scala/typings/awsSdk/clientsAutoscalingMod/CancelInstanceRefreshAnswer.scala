@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CancelInstanceRefreshAnswer extends StObject {
   
   /**
-    * The instance refresh ID.
+    * The instance refresh ID associated with the request. This is the unique ID assigned to the instance refresh when it was started.
     */
   var InstanceRefreshId: js.UndefOr[XmlStringMaxLen255] = js.undefined
 }

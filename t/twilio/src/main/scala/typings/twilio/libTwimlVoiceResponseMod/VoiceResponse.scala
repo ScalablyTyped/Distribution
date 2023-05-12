@@ -1,11 +1,34 @@
 package typings.twilio.libTwimlVoiceResponseMod
 
+import typings.twilio.libTwimlTwiMLMod.default
+import typings.xmlbuilder.mod.XMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VoiceResponse extends StObject {
+trait VoiceResponse extends default {
+  
+  /**
+    * Comments in <Response>
+    *
+    * @param comment - XML Comment
+    */
+  def comment(comment: String): XMLElement = js.native
+  
+  /**
+    * Comments after <Response>
+    *
+    * @param comment - XML Comment
+    */
+  def commentAfter(comment: String): XMLElement = js.native
+  
+  /**
+    * Comments before <Response>
+    *
+    * @param comment - XML Comment
+    */
+  def commentBefore(comment: String): XMLElement = js.native
   
   /**
     * <Connect> TwiML Verb
@@ -18,6 +41,7 @@ trait VoiceResponse extends StObject {
   /**
     * <Dial> TwiML Verb
     *
+    * @param attributes - TwiML attributes
     * @param number - Phone number to dial
     */
   def dial(): Dial = js.native
@@ -31,12 +55,13 @@ trait VoiceResponse extends StObject {
     *
     * @param attributes - TwiML attributes
     */
-  def echo(): Unit = js.native
-  def echo(attributes: js.Object): Unit = js.native
+  def echo(): Echo = js.native
+  def echo(attributes: js.Object): Echo = js.native
   
   /**
     * <Enqueue> TwiML Noun
     *
+    * @param attributes - TwiML attributes
     * @param name - Friendly name
     */
   def enqueue(): Enqueue = js.native
@@ -58,24 +83,24 @@ trait VoiceResponse extends StObject {
     *
     * @param attributes - TwiML attributes
     */
-  def hangup(): Unit = js.native
-  def hangup(attributes: js.Object): Unit = js.native
+  def hangup(): Hangup = js.native
+  def hangup(attributes: js.Object): Hangup = js.native
   
   /**
     * <Leave> TwiML Verb
     *
     * @param attributes - TwiML attributes
     */
-  def leave(): Unit = js.native
-  def leave(attributes: js.Object): Unit = js.native
+  def leave(): Leave = js.native
+  def leave(attributes: js.Object): Leave = js.native
   
   /**
     * <Pause> TwiML Verb
     *
     * @param attributes - TwiML attributes
     */
-  def pause(): Unit = js.native
-  def pause(attributes: PauseAttributes): Unit = js.native
+  def pause(): Pause = js.native
+  def pause(attributes: PauseAttributes): Pause = js.native
   
   /**
     * <Pay> Twiml Verb
@@ -88,13 +113,14 @@ trait VoiceResponse extends StObject {
   /**
     * <Play> TwiML Verb
     *
+    * @param attributes - TwiML attributes
     * @param url - Media URL
     */
-  def play(): Unit = js.native
-  def play(attributes: Unit, url: String): Unit = js.native
-  def play(attributes: PlayAttributes): Unit = js.native
-  def play(attributes: PlayAttributes, url: String): Unit = js.native
-  def play(url: String): Unit = js.native
+  def play(): Play = js.native
+  def play(attributes: Unit, url: String): Play = js.native
+  def play(attributes: PlayAttributes): Play = js.native
+  def play(attributes: PlayAttributes, url: String): Play = js.native
+  def play(url: String): Play = js.native
   
   /**
     * <Prompt> Twiml Verb
@@ -104,41 +130,31 @@ trait VoiceResponse extends StObject {
   def prompt(): Prompt = js.native
   def prompt(attributes: PromptAttributes): Prompt = js.native
   
+  def queue(attributes: QueueAttributes, name: String): Queue = js.native
   /**
     * <Queue> TwiML Noun
     *
     * @param attributes - TwiML attributes
     * @param name - Queue name
     */
-  def queue(attributes: QueueAttributes, name: String): Unit = js.native
-  /**
-    * <Queue> TwiML Noun
-    *
-    * @param name - Queue name
-    */
-  def queue(name: String): Unit = js.native
+  def queue(name: String): Queue = js.native
   
   /**
     * <Record> TwiML Verb
     *
     * @param attributes - TwiML attributes
     */
-  def record(): Unit = js.native
-  def record(attributes: RecordAttributes): Unit = js.native
+  def record(): Record = js.native
+  def record(attributes: RecordAttributes): Record = js.native
   
+  def redirect(attributes: RedirectAttributes, url: String): Redirect = js.native
   /**
     * <Redirect> TwiML Verb
     *
     * @param attributes - TwiML attributes
     * @param url - Redirect URL
     */
-  def redirect(attributes: RedirectAttributes, url: String): Unit = js.native
-  /**
-    * <Redirect> TwiML Verb
-    *
-    * @param url - Redirect URL
-    */
-  def redirect(url: String): Unit = js.native
+  def redirect(url: String): Redirect = js.native
   
   /**
     * <Refer> TwiML Verb
@@ -153,36 +169,26 @@ trait VoiceResponse extends StObject {
     *
     * @param attributes - TwiML attributes
     */
-  def reject(): Unit = js.native
-  def reject(attributes: RejectAttributes): Unit = js.native
+  def reject(): Reject = js.native
+  def reject(attributes: RejectAttributes): Reject = js.native
   
-  /**
-    * <Say> TwiML Verb
-    *
-    * @param attributes - TwiML attributes
-    * @param message - Message to say
-    */
   def say(attributes: SayAttributes, message: String): Say = js.native
   /**
     * <Say> TwiML Verb
     *
+    * @param attributes - TwiML attributes
     * @param message - Message to say
     */
   def say(message: String): Say = js.native
   
+  def sms(attributes: SmsAttributes, message: String): Sms = js.native
   /**
     * <Sms> TwiML Noun
     *
     * @param attributes - TwiML attributes
     * @param message - Message body
     */
-  def sms(attributes: SmsAttributes, message: String): Unit = js.native
-  /**
-    * <Sms> TwiML Noun
-    *
-    * @param message - Message body
-    */
-  def sms(message: String): Unit = js.native
+  def sms(message: String): Sms = js.native
   
   /**
     * <Start> TwiML Verb

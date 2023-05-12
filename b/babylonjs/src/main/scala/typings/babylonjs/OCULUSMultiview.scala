@@ -3,6 +3,7 @@ package typings.babylonjs
 import typings.std.GLenum
 import typings.std.GLint
 import typings.std.GLsizei
+import typings.std.OVRMultiview2
 import typings.std.WebGLTexture
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

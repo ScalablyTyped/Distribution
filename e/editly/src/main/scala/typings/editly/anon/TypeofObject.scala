@@ -22,7 +22,6 @@ trait TypeofObject
     * @param {fabric.Object} Original object
     * @param {Function} Callback when complete
     * @param {Object} Extra parameters for fabric.Object
-    * @private
     * @return {fabric.Object}
     */
   def _fromObject(className: String, `object`: typings.fabric.fabricImplMod.Object): typings.fabric.fabricImplMod.Object = js.native

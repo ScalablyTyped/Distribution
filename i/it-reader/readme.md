@@ -1,7 +1,7 @@
 
 # Scala.js typings for it-reader
 
-Typings are for version 6.0.1
+Typings are for version 6.0.4
 
 ## Library description:
 Read an exact number of bytes from a binary (async) iterable

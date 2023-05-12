@@ -1,7 +1,7 @@
 
 # Scala.js typings for fluentui__merge-styles
 
-Typings are for version 8.5.3
+Typings are for version 8.5.10
 
 ## Library description:
 Style loading utilities.

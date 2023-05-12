@@ -40,18 +40,20 @@ trait CubeTexture
   
   /* private */ var _textureMatrix: Any = js.native
   
+  /* private */ var _textureMatrixRefraction: Any = js.native
+  
   /* private */ var _useSRGBBuffer: Any = js.native
   
   /**
     * Gets or sets the center of the bounding box associated with the cube texture.
     * It must define where the camera used to render the texture was set
-    * @see https://doc.babylonjs.com/how_to/reflect#using-local-cubemap-mode
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/materials/using/reflectionTexture#using-local-cubemap-mode
     */
   var boundingBoxPosition: Vector3 = js.native
   
   /**
     * Returns the bounding box size
-    * @see https://doc.babylonjs.com/how_to/reflect#using-local-cubemap-mode
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/materials/using/reflectionTexture#using-local-cubemap-mode
     */
   def boundingBoxSize: Vector3 = js.native
   /**

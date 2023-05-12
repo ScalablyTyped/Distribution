@@ -47,6 +47,11 @@ trait CreateGraphqlApiRequest extends StObject {
   var userPoolConfig: js.UndefOr[UserPoolConfig] = js.undefined
   
   /**
+    * Sets the value of the GraphQL API to public (GLOBAL) or private (PRIVATE). If no value is provided, the visibility will be set to GLOBAL by default. This value cannot be changed once the API has been created.
+    */
+  var visibility: js.UndefOr[GraphQLApiVisibility] = js.undefined
+  
+  /**
     * A flag indicating whether to use X-Ray tracing for the GraphqlApi.
     */
   var xrayEnabled: js.UndefOr[Boolean] = js.undefined
@@ -90,6 +95,10 @@ object CreateGraphqlApiRequest {
     inline def setUserPoolConfig(value: UserPoolConfig): Self = StObject.set(x, "userPoolConfig", value.asInstanceOf[js.Any])
     
     inline def setUserPoolConfigUndefined: Self = StObject.set(x, "userPoolConfig", js.undefined)
+    
+    inline def setVisibility(value: GraphQLApiVisibility): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
+    
+    inline def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
     
     inline def setXrayEnabled(value: Boolean): Self = StObject.set(x, "xrayEnabled", value.asInstanceOf[js.Any])
     

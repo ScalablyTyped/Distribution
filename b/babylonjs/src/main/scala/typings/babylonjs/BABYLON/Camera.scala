@@ -206,7 +206,7 @@ trait Camera
   
   /**
     * Attach a post process to the camera.
-    * @see https://doc.babylonjs.com/how_to/how_to_use_postprocesses#attach-postprocess
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/postProcesses/usePostProcesses#attach-postprocess
     * @param postProcess The post process to attach to the camera
     * @param insertAt The position of the post process in case several of them are in use in the scene
     * @returns the position the post process has been inserted at
@@ -228,7 +228,6 @@ trait Camera
     * @returns the cloned camera
     */
   def clone(name: String): Camera = js.native
-  def clone(name: String, newParent: Nullable[Node]): Camera = js.native
   
   /**
     * needs to be overridden by children so sub has required properties to be copied
@@ -253,7 +252,7 @@ trait Camera
   
   /**
     * Detach a post process to the camera.
-    * @see https://doc.babylonjs.com/how_to/how_to_use_postprocesses#attach-postprocess
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/postProcesses/usePostProcesses#attach-postprocess
     * @param postProcess The post process to detach from the camera
     */
   def detachPostProcess(postProcess: PostProcess): Unit = js.native

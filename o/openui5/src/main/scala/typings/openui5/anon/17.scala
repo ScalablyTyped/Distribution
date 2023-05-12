@@ -1,6 +1,6 @@
 package typings.openui5.anon
 
-import typings.openui5.sapUiCoreItemMod.default
+import typings.openui5.sapMMenuItemMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `17` extends StObject {
   
   /**
-    * The selected items which are selected after list box has been closed.
+    * The `MenuItem` which was selected.
     */
-  var selectedItems: js.UndefOr[js.Array[default]] = js.undefined
+  var item: js.UndefOr[default] = js.undefined
 }
 object `17` {
   
@@ -22,10 +22,8 @@ object `17` {
   @scala.inline
   implicit open class MutableBuilder[Self <: `17`] (val x: Self) extends AnyVal {
     
-    inline def setSelectedItems(value: js.Array[default]): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
+    inline def setItem(value: default): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
-    inline def setSelectedItemsUndefined: Self = StObject.set(x, "selectedItems", js.undefined)
-    
-    inline def setSelectedItemsVarargs(value: default*): Self = StObject.set(x, "selectedItems", js.Array(value*))
+    inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
   }
 }

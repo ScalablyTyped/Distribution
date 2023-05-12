@@ -1,8 +1,8 @@
 package typings.rollupPluginutils
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.estreeWalker.mod.Node
 import typings.rollupPluginutils.anon.Resolve
-import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

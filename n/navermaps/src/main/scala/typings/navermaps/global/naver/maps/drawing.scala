@@ -11,22 +11,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object drawing {
   
-  @JSGlobal("naver.maps.drawing.DrawingEvent")
+  @JSGlobal("naver.maps.drawing.DrawingEvents")
   @js.native
-  object DrawingEvent extends StObject {
+  object DrawingEvents extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.navermaps.naver.maps.drawing.DrawingEvent & String] = js.native
+    def apply(value: String): js.UndefOr[typings.navermaps.naver.maps.drawing.DrawingEvents & String] = js.native
     
-    /* "drawing_added" */ val ADD: typings.navermaps.naver.maps.drawing.DrawingEvent.ADD & String = js.native
+    /* "drawing_added" */ val ADD: typings.navermaps.naver.maps.drawing.DrawingEvents.ADD & String = js.native
     
-    /* "drawing_cancled" */ val CANCLE: typings.navermaps.naver.maps.drawing.DrawingEvent.CANCLE & String = js.native
+    /* "drawing_cancled" */ val CANCLE: typings.navermaps.naver.maps.drawing.DrawingEvents.CANCLE & String = js.native
     
-    /* "drawing_removed" */ val REMOVE: typings.navermaps.naver.maps.drawing.DrawingEvent.REMOVE & String = js.native
+    /* "drawing_removed" */ val REMOVE: typings.navermaps.naver.maps.drawing.DrawingEvents.REMOVE & String = js.native
     
-    /* "drawing_selected" */ val SELECT: typings.navermaps.naver.maps.drawing.DrawingEvent.SELECT & String = js.native
+    /* "drawing_selected" */ val SELECT: typings.navermaps.naver.maps.drawing.DrawingEvents.SELECT & String = js.native
     
-    /* "drawing_start" */ val START: typings.navermaps.naver.maps.drawing.DrawingEvent.START & String = js.native
+    /* "drawing_start" */ val START: typings.navermaps.naver.maps.drawing.DrawingEvents.START & String = js.native
   }
   
   @JSGlobal("naver.maps.drawing.DrawingManager")

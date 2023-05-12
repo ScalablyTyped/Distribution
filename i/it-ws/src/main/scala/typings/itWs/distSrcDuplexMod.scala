@@ -3,6 +3,7 @@ package typings.itWs
 import typings.itStreamTypes.mod.Duplex
 import typings.itStreamTypes.mod.Source
 import typings.itWs.distSrcSinkMod.SinkOptions
+import typings.std.AsyncGenerator
 import typings.ws.mod.WebSocket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -19,7 +20,11 @@ object distSrcDuplexMod {
   
   trait DuplexWebSocket
     extends StObject
-       with Duplex[js.typedarray.Uint8Array, js.typedarray.Uint8Array, js.Promise[Unit]] {
+       with Duplex[
+          AsyncGenerator[js.typedarray.Uint8Array, Any, Any], 
+          Source[js.typedarray.Uint8Array], 
+          js.Promise[Unit]
+        ] {
     
     def close(): js.Promise[Unit]
     
@@ -45,9 +50,9 @@ object distSrcDuplexMod {
       destroy: () => Unit,
       remoteAddress: String,
       remotePort: Double,
-      sink: /* source */ Source[js.typedarray.Uint8Array] => js.Promise[Unit],
+      sink: Source[js.typedarray.Uint8Array] => js.Promise[Unit],
       socket: WebSocket,
-      source: Source[js.typedarray.Uint8Array]
+      source: AsyncGenerator[js.typedarray.Uint8Array, Any, Any]
     ): DuplexWebSocket = {
       val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), connected = js.Any.fromFunction0(connected), destroy = js.Any.fromFunction0(destroy), remoteAddress = remoteAddress.asInstanceOf[js.Any], remotePort = remotePort.asInstanceOf[js.Any], sink = js.Any.fromFunction1(sink), socket = socket.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
       __obj.asInstanceOf[DuplexWebSocket]

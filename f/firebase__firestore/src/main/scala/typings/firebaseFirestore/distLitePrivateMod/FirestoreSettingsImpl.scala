@@ -11,6 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 trait FirestoreSettingsImpl extends StObject {
   
+  val cache: js.UndefOr[FirestoreLocalCache] = js.undefined
+  
   val cacheSizeBytes: Double
   
   var credentials: js.UndefOr[Any] = js.undefined
@@ -50,7 +52,11 @@ object FirestoreSettingsImpl {
   @scala.inline
   implicit open class MutableBuilder[Self <: FirestoreSettingsImpl] (val x: Self) extends AnyVal {
     
+    inline def setCache(value: FirestoreLocalCache): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+    
     inline def setCacheSizeBytes(value: Double): Self = StObject.set(x, "cacheSizeBytes", value.asInstanceOf[js.Any])
+    
+    inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
     
     inline def setCredentials(value: Any): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
     

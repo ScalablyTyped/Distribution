@@ -46,6 +46,12 @@ object srcNgtscDiagnosticsSrcExtendedTemplateDiagnosticNameMod {
     /* "optionalChainNotNullable" */ val OPTIONAL_CHAIN_NOT_NULLABLE: typings.angularCompilerCli.srcNgtscDiagnosticsSrcExtendedTemplateDiagnosticNameMod.ExtendedTemplateDiagnosticName.OPTIONAL_CHAIN_NOT_NULLABLE & String = js.native
     
     @js.native
+    sealed trait SKIP_HYDRATION_NOT_STATIC
+      extends StObject
+         with ExtendedTemplateDiagnosticName
+    /* "skipHydrationNotStatic" */ val SKIP_HYDRATION_NOT_STATIC: typings.angularCompilerCli.srcNgtscDiagnosticsSrcExtendedTemplateDiagnosticNameMod.ExtendedTemplateDiagnosticName.SKIP_HYDRATION_NOT_STATIC & String = js.native
+    
+    @js.native
     sealed trait SUFFIX_NOT_SUPPORTED
       extends StObject
          with ExtendedTemplateDiagnosticName

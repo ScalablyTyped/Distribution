@@ -15,12 +15,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object esmVanillaMod extends Shortcut {
   
+  /**
+    * @deprecated Use `import { createStore } from 'zustand/vanilla'`
+    */
   @JSImport("zustand/esm/vanilla", JSImport.Default)
   @js.native
-  val default: CreateStore = js.native
+  val default: CreateStore_ = js.native
+  
+  @JSImport("zustand/esm/vanilla", "createStore")
+  @js.native
+  val createStore: CreateStore_ = js.native
   
   @js.native
-  trait CreateStore extends StObject {
+  trait CreateStore_ extends StObject {
     
     def apply[T](): js.Function1[
         /* initializer */ StateCreator[T, js.Array[Any], js.Array[Any], T], 
@@ -48,7 +55,7 @@ object esmVanillaMod extends Shortcut {
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
     * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
-    Ms extends [] ? S : Ms extends [[infer Mi, infer Ma], ...infer Mrs] ? zustand.zustand/esm/vanilla.Mutate<zustand.zustand/esm/vanilla.StoreMutators<S, Ma>[Mi & zustand.zustand/esm/vanilla.StoreMutatorIdentifier], Mrs> : never
+    number extends Ms['length' & keyof Ms] ? S : Ms extends [] ? S : Ms extends [[infer Mi, infer Ma], ...infer Mrs] ? zustand.zustand/esm/vanilla.Mutate<zustand.zustand/esm/vanilla.StoreMutators<S, Ma>[Mi & zustand.zustand/esm/vanilla.StoreMutatorIdentifier], Mrs> : never
     }}}
     */
   type Mutate[S, Ms] = S
@@ -69,11 +76,10 @@ object esmVanillaMod extends Shortcut {
   
   type State = Any
   
-  type StateCreator[T, Mis /* <: js.Array[js.Tuple2[StoreMutatorIdentifier, Any]] */, Mos /* <: js.Array[js.Tuple2[StoreMutatorIdentifier, Any]] */, U] = (js.Function4[
-    /* setState */ Get[Mutate[StoreApi[T], Mis], setState, Unit], 
-    /* getState */ Get[Mutate[StoreApi[T], Mis], getState, Unit], 
+  type StateCreator[T, Mis /* <: js.Array[js.Tuple2[StoreMutatorIdentifier, Any]] */, Mos /* <: js.Array[js.Tuple2[StoreMutatorIdentifier, Any]] */, U] = (js.Function3[
+    /* setState */ Get[Mutate[StoreApi[T], Mis], setState, scala.Nothing], 
+    /* getState */ Get[Mutate[StoreApi[T], Mis], getState, scala.Nothing], 
     /* store */ Mutate[StoreApi[T], Mis], 
-    /* $$storeMutations */ Mis, 
     U
   ]) & typings.zustand.anon.StoreMutators[Mos]
   
@@ -85,6 +91,9 @@ object esmVanillaMod extends Shortcut {
   
   trait StoreApi[T] extends StObject {
     
+    /**
+      * @deprecated Use `unsubscribe` returned by `subscribe`
+      */
     def destroy(): Unit
     
     def getState(): T
@@ -184,8 +193,8 @@ object esmVanillaMod extends Shortcut {
     js.Function0[Unit]
   ]
   
-  type _To = CreateStore
+  type _To = CreateStore_
   
   /* This means you don't have to write `default`, but can instead just say `esmVanillaMod.foo` */
-  override def _to: CreateStore = default
+  override def _to: CreateStore_ = default
 }

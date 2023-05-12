@@ -20,7 +20,6 @@ object srcTransformersDownlevelDecoratorsTransformMod {
     host: ReflectionHost,
     diagnostics: js.Array[Diagnostic],
     isCore: Boolean,
-    isClosureCompilerEnabled: Boolean,
-    skipClassDecorators: Boolean
-  ): TransformerFactory[SourceFile] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDownlevelDecoratorsTransform")(typeChecker.asInstanceOf[js.Any], host.asInstanceOf[js.Any], diagnostics.asInstanceOf[js.Any], isCore.asInstanceOf[js.Any], isClosureCompilerEnabled.asInstanceOf[js.Any], skipClassDecorators.asInstanceOf[js.Any])).asInstanceOf[TransformerFactory[SourceFile]]
+    isClosureCompilerEnabled: Boolean
+  ): TransformerFactory[SourceFile] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDownlevelDecoratorsTransform")(typeChecker.asInstanceOf[js.Any], host.asInstanceOf[js.Any], diagnostics.asInstanceOf[js.Any], isCore.asInstanceOf[js.Any], isClosureCompilerEnabled.asInstanceOf[js.Any])).asInstanceOf[TransformerFactory[SourceFile]]
 }

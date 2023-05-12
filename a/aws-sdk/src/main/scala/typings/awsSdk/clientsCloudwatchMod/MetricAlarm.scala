@@ -62,6 +62,11 @@ trait MetricAlarm extends StObject {
   var EvaluationPeriods: js.UndefOr[typings.awsSdk.clientsCloudwatchMod.EvaluationPeriods] = js.undefined
   
   /**
+    * If the value of this field is PARTIAL_DATA, the alarm is being evaluated based on only partial data. This happens if the query used for the alarm returns more than 10,000 metrics. For more information, see Create alarms on Metrics Insights queries.
+    */
+  var EvaluationState: js.UndefOr[typings.awsSdk.clientsCloudwatchMod.EvaluationState] = js.undefined
+  
+  /**
     * The percentile statistic for the metric associated with the alarm. Specify a value between p0.0 and p100.
     */
   var ExtendedStatistic: js.UndefOr[typings.awsSdk.clientsCloudwatchMod.ExtendedStatistic] = js.undefined
@@ -107,7 +112,12 @@ trait MetricAlarm extends StObject {
   var StateReasonData: js.UndefOr[typings.awsSdk.clientsCloudwatchMod.StateReasonData] = js.undefined
   
   /**
-    * The time stamp of the last update to the alarm state.
+    * The date and time that the alarm's StateValue most recently changed.
+    */
+  var StateTransitionedTimestamp: js.UndefOr[js.Date] = js.undefined
+  
+  /**
+    * The time stamp of the last update to the value of either the StateValue or EvaluationState parameters.
     */
   var StateUpdatedTimestamp: js.UndefOr[js.Date] = js.undefined
   
@@ -199,6 +209,10 @@ object MetricAlarm {
     
     inline def setEvaluationPeriodsUndefined: Self = StObject.set(x, "EvaluationPeriods", js.undefined)
     
+    inline def setEvaluationState(value: EvaluationState): Self = StObject.set(x, "EvaluationState", value.asInstanceOf[js.Any])
+    
+    inline def setEvaluationStateUndefined: Self = StObject.set(x, "EvaluationState", js.undefined)
+    
     inline def setExtendedStatistic(value: ExtendedStatistic): Self = StObject.set(x, "ExtendedStatistic", value.asInstanceOf[js.Any])
     
     inline def setExtendedStatisticUndefined: Self = StObject.set(x, "ExtendedStatistic", js.undefined)
@@ -240,6 +254,10 @@ object MetricAlarm {
     inline def setStateReasonDataUndefined: Self = StObject.set(x, "StateReasonData", js.undefined)
     
     inline def setStateReasonUndefined: Self = StObject.set(x, "StateReason", js.undefined)
+    
+    inline def setStateTransitionedTimestamp(value: js.Date): Self = StObject.set(x, "StateTransitionedTimestamp", value.asInstanceOf[js.Any])
+    
+    inline def setStateTransitionedTimestampUndefined: Self = StObject.set(x, "StateTransitionedTimestamp", js.undefined)
     
     inline def setStateUpdatedTimestamp(value: js.Date): Self = StObject.set(x, "StateUpdatedTimestamp", value.asInstanceOf[js.Any])
     

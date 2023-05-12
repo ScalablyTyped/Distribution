@@ -1,7 +1,7 @@
 
 # Scala.js typings for fetch-retry
 
-Typings are for version 5.0.3
+Typings are for version 5.0.5
 
 ## Library description:
 Extend any fetch library with retry functionality

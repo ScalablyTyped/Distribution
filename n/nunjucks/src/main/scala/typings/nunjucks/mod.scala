@@ -244,6 +244,8 @@ object mod {
     
     var autoescape: js.UndefOr[Boolean] = js.undefined
     
+    var dev: js.UndefOr[Boolean] = js.undefined
+    
     var express: js.UndefOr[js.Object] = js.undefined
     
     var lstripBlocks: js.UndefOr[Boolean] = js.undefined
@@ -273,6 +275,10 @@ object mod {
       inline def setAutoescape(value: Boolean): Self = StObject.set(x, "autoescape", value.asInstanceOf[js.Any])
       
       inline def setAutoescapeUndefined: Self = StObject.set(x, "autoescape", js.undefined)
+      
+      inline def setDev(value: Boolean): Self = StObject.set(x, "dev", value.asInstanceOf[js.Any])
+      
+      inline def setDevUndefined: Self = StObject.set(x, "dev", js.undefined)
       
       inline def setExpress(value: js.Object): Self = StObject.set(x, "express", value.asInstanceOf[js.Any])
       

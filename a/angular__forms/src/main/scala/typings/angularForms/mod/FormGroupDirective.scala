@@ -9,9 +9,10 @@ import typings.angularCore.mod.ɵɵFactoryDeclaration
 import typings.angularForms.angularFormsBooleans.`false`
 import typings.angularForms.angularFormsStrings.`[formGroup]`
 import typings.angularForms.angularFormsStrings.ngForm
+import typings.angularForms.anon.Form4
 import typings.angularForms.anon.NgSubmit
+import typings.angularForms.anon.Optional
 import typings.angularForms.anon.Self
-import typings.angularForms.anon.`1`
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -27,6 +28,11 @@ open class FormGroupDirective protected ()
   def this(
     validators: js.Array[Validator | ValidatorFn],
     asyncValidators: js.Array[AsyncValidator | AsyncValidatorFn]
+  ) = this()
+  def this(
+    validators: js.Array[Validator | ValidatorFn],
+    asyncValidators: js.Array[AsyncValidator | AsyncValidatorFn],
+    callSetDisabledState: SetDisabledStateOption
   ) = this()
   
   /* private */ var _checkFormPresent: Any = js.native
@@ -89,6 +95,8 @@ open class FormGroupDirective protected ()
     * @param dir The `FormGroupName` directive instance.
     */
   def addFormGroup(dir: FormGroupName): Unit = js.native
+  
+  /* private */ var callSetDisabledState: Any = js.native
   
   /**
     * @description
@@ -265,27 +273,29 @@ object FormGroupDirective {
     FormGroupDirective, 
     `[formGroup]`, 
     js.Array[ngForm], 
-    `1`, 
+    Form4, 
     NgSubmit, 
     scala.Nothing, 
     scala.Nothing, 
-    `false`
+    `false`, 
+    scala.Nothing
   ] = js.native
   inline def ɵdir_=(
     x: ɵɵDirectiveDeclaration[
       FormGroupDirective, 
       `[formGroup]`, 
       js.Array[ngForm], 
-      `1`, 
+      Form4, 
       NgSubmit, 
       scala.Nothing, 
       scala.Nothing, 
-      `false`
+      `false`, 
+      scala.Nothing
     ]
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275dir")(x.asInstanceOf[js.Any])
   
   @JSImport("@angular/forms", "FormGroupDirective.\u0275fac")
   @js.native
-  def ɵfac: ɵɵFactoryDeclaration[FormGroupDirective, js.Tuple2[Self, Self]] = js.native
-  inline def ɵfac_=(x: ɵɵFactoryDeclaration[FormGroupDirective, js.Tuple2[Self, Self]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275fac")(x.asInstanceOf[js.Any])
+  def ɵfac: ɵɵFactoryDeclaration[FormGroupDirective, js.Tuple3[Self, Self, Optional]] = js.native
+  inline def ɵfac_=(x: ɵɵFactoryDeclaration[FormGroupDirective, js.Tuple3[Self, Self, Optional]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275fac")(x.asInstanceOf[js.Any])
 }

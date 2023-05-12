@@ -1,15 +1,29 @@
 package typings.awsSdk.clientsConnectMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.awsSdk.awsSdkStrings.EMAIL
 import typings.awsSdk.awsSdkStrings.KMS
 import typings.awsSdk.awsSdkStrings.LT
+import typings.awsSdk.awsSdkStrings.PLAIN_TEXT
 import typings.awsSdk.awsSdkStrings.STANDARD
+import typings.awsSdk.awsSdkStrings.Unset
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
 type ARN = java.lang.String
+
+type ActionSummaries = js.Array[ActionSummary]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.CREATE_TASK
+  - typings.awsSdk.awsSdkStrings.ASSIGN_CONTACT_CATEGORY
+  - typings.awsSdk.awsSdkStrings.GENERATE_EVENTBRIDGE_EVENT
+  - typings.awsSdk.awsSdkStrings.SEND_NOTIFICATION
+  - java.lang.String
+*/
+type ActionType = _ActionType | java.lang.String
 
 type AfterContactWorkTimeLimit = Double
 
@@ -50,7 +64,13 @@ type AgentStatusTypes = js.Array[AgentStatusType]
 
 type AgentUsername = java.lang.String
 
+type AgentsMinOneMaxHundred = js.Array[UserId]
+
 type AliasArn = java.lang.String
+
+type AllowedAccessControlTags = StringDictionary[SecurityProfilePolicyValue]
+
+type AllowedMonitorCapabilities = js.Array[MonitorCapability]
 
 type ApproximateTotalCount = Double
 
@@ -70,9 +90,18 @@ type AvailableNumbersList = js.Array[AvailableNumberSummary]
 
 type AwsRegion = java.lang.String
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ROUTE_CURRENT_CHANNEL_ONLY
+  - typings.awsSdk.awsSdkStrings.ROUTE_ANY_CHANNEL
+  - java.lang.String
+*/
+type BehaviorType = _BehaviorType | java.lang.String
+
 type Boolean = scala.Boolean
 
 type BotName = java.lang.String
+
+type BoxedBoolean = scala.Boolean
 
 type BucketName = java.lang.String
 
@@ -172,6 +201,8 @@ type ContactId = java.lang.String
   - typings.awsSdk.awsSdkStrings.QUEUE_TRANSFER
   - typings.awsSdk.awsSdkStrings.CALLBACK
   - typings.awsSdk.awsSdkStrings.API
+  - typings.awsSdk.awsSdkStrings.DISCONNECT
+  - typings.awsSdk.awsSdkStrings.MONITOR
   - java.lang.String
 */
 type ContactInitiationMethod = _ContactInitiationMethod | java.lang.String
@@ -193,6 +224,10 @@ type ContactReferences = StringDictionary[Reference]
 type ContactState = _ContactState | java.lang.String
 
 type ContactStates = js.Array[ContactState]
+
+type Content = java.lang.String
+
+type CreateSecurityProfileName = java.lang.String
 
 type CurrentMetricDataCollections = js.Array[CurrentMetricData]
 
@@ -216,6 +251,8 @@ type CurrentMetricName = _CurrentMetricName | java.lang.String
 
 type CurrentMetricResults = js.Array[CurrentMetricResult]
 
+type CurrentMetricSortCriteriaMaxOne = js.Array[CurrentMetricSortCriteria]
+
 type CurrentMetrics = js.Array[CurrentMetric]
 
 type DefaultVocabularyList = js.Array[DefaultVocabulary]
@@ -225,6 +262,12 @@ type Delay = Double
 type Description = java.lang.String
 
 type Description250 = java.lang.String
+
+type DimensionsV2Key = java.lang.String
+
+type DimensionsV2Map = StringDictionary[DimensionsV2Value]
+
+type DimensionsV2Value = java.lang.String
 
 type DirectoryAlias = java.lang.String
 
@@ -248,6 +291,115 @@ type Email = java.lang.String
 
 type EncryptionType = KMS | java.lang.String
 
+type EvaluationAnswerDataNumericValue = Double
+
+type EvaluationAnswerDataStringValue = java.lang.String
+
+type EvaluationAnswersInputMap = StringDictionary[EvaluationAnswerInput]
+
+type EvaluationAnswersOutputMap = StringDictionary[EvaluationAnswerOutput]
+
+type EvaluationFormDescription = java.lang.String
+
+type EvaluationFormItemWeight = Double
+
+type EvaluationFormItemsList = js.Array[EvaluationFormItem]
+
+type EvaluationFormNumericQuestionOptionList = js.Array[EvaluationFormNumericQuestionOption]
+
+type EvaluationFormQuestionAnswerScore = Double
+
+type EvaluationFormQuestionInstructions = java.lang.String
+
+type EvaluationFormQuestionTitle = java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.TEXT
+  - typings.awsSdk.awsSdkStrings.SINGLESELECT
+  - typings.awsSdk.awsSdkStrings.NUMERIC
+  - java.lang.String
+*/
+type EvaluationFormQuestionType = _EvaluationFormQuestionType | java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.QUESTION_ONLY
+  - typings.awsSdk.awsSdkStrings.SECTION_ONLY
+  - java.lang.String
+*/
+type EvaluationFormScoringMode = _EvaluationFormScoringMode | java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ENABLED
+  - typings.awsSdk.awsSdkStrings.DISABLED
+  - java.lang.String
+*/
+type EvaluationFormScoringStatus = _EvaluationFormScoringStatus | java.lang.String
+
+type EvaluationFormSectionTitle = java.lang.String
+
+type EvaluationFormSingleSelectQuestionAutomationOptionList = js.Array[EvaluationFormSingleSelectQuestionAutomationOption]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.DROPDOWN
+  - typings.awsSdk.awsSdkStrings.RADIO
+  - java.lang.String
+*/
+type EvaluationFormSingleSelectQuestionDisplayMode = _EvaluationFormSingleSelectQuestionDisplayMode | java.lang.String
+
+type EvaluationFormSingleSelectQuestionOptionList = js.Array[EvaluationFormSingleSelectQuestionOption]
+
+type EvaluationFormSingleSelectQuestionOptionText = java.lang.String
+
+type EvaluationFormSummaryList = js.Array[EvaluationFormSummary]
+
+type EvaluationFormTitle = java.lang.String
+
+type EvaluationFormVersionIsLocked = scala.Boolean
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.DRAFT
+  - typings.awsSdk.awsSdkStrings.ACTIVE
+  - java.lang.String
+*/
+type EvaluationFormVersionStatus = _EvaluationFormVersionStatus | java.lang.String
+
+type EvaluationFormVersionSummaryList = js.Array[EvaluationFormVersionSummary]
+
+type EvaluationNoteString = java.lang.String
+
+type EvaluationNotesMap = StringDictionary[EvaluationNote]
+
+type EvaluationScorePercentage = Double
+
+type EvaluationScoresMap = StringDictionary[EvaluationScore]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.DRAFT
+  - typings.awsSdk.awsSdkStrings.SUBMITTED
+  - java.lang.String
+*/
+type EvaluationStatus = _EvaluationStatus | java.lang.String
+
+type EvaluationSummaryList = js.Array[EvaluationSummary]
+
+type EventBridgeActionName = java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.OnPostCallAnalysisAvailable
+  - typings.awsSdk.awsSdkStrings.OnRealTimeCallAnalysisAvailable
+  - typings.awsSdk.awsSdkStrings.OnPostChatAnalysisAvailable
+  - typings.awsSdk.awsSdkStrings.OnZendeskTicketCreate
+  - typings.awsSdk.awsSdkStrings.OnZendeskTicketStatusUpdate
+  - typings.awsSdk.awsSdkStrings.OnSalesforceCaseCreate
+  - typings.awsSdk.awsSdkStrings.OnContactEvaluationSubmit
+  - java.lang.String
+*/
+type EventSourceName = _EventSourceName | java.lang.String
+
+type FilterValueList = js.Array[ResourceArnOrId]
+
+type FiltersV2List = js.Array[FilterV2]
+
 type FunctionArn = java.lang.String
 
 type FunctionArnsList = js.Array[FunctionArn]
@@ -255,11 +407,16 @@ type FunctionArnsList = js.Array[FunctionArn]
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.QUEUE
   - typings.awsSdk.awsSdkStrings.CHANNEL
+  - typings.awsSdk.awsSdkStrings.ROUTING_PROFILE
   - java.lang.String
 */
 type Grouping = _Grouping | java.lang.String
 
+type GroupingV2 = java.lang.String
+
 type Groupings = js.Array[Grouping]
+
+type GroupingsV2 = js.Array[GroupingV2]
 
 type HierarchyGroupId = java.lang.String
 
@@ -340,6 +497,8 @@ type HoursOfOperationName = java.lang.String
 
 type HoursOfOperationSummaryList = js.Array[HoursOfOperationSummary]
 
+type ISO8601Datetime = java.lang.String
+
 type InboundCallsEnabled = scala.Boolean
 
 type InstanceArn = java.lang.String
@@ -383,11 +542,15 @@ type InstanceStorageConfigs = js.Array[InstanceStorageConfig]
   - typings.awsSdk.awsSdkStrings.CONTACT_TRACE_RECORDS
   - typings.awsSdk.awsSdkStrings.AGENT_EVENTS
   - typings.awsSdk.awsSdkStrings.REAL_TIME_CONTACT_ANALYSIS_SEGMENTS
+  - typings.awsSdk.awsSdkStrings.ATTACHMENTS
+  - typings.awsSdk.awsSdkStrings.CONTACT_EVALUATIONS
   - java.lang.String
 */
 type InstanceStorageResourceType = _InstanceStorageResourceType | java.lang.String
 
 type InstanceSummaryList = js.Array[InstanceSummary]
+
+type Integer = Double
 
 type IntegerCount = Double
 
@@ -437,13 +600,34 @@ type MaxResult1000 = Double
 
 type MaxResult2 = Double
 
+type MaxResult200 = Double
+
 type MaxResult25 = Double
 
 type MaxResult7 = Double
 
 type MediaConcurrencies = js.Array[MediaConcurrency]
 
+type MetricDataCollectionsV2 = js.Array[MetricDataV2]
+
+type MetricFilterValueList = js.Array[String]
+
+type MetricFiltersV2List = js.Array[MetricFilterV2]
+
+type MetricNameV2 = java.lang.String
+
+type MetricResultsV2 = js.Array[MetricResultV2]
+
+type MetricsV2 = js.Array[MetricV2]
+
 type MinutesLimit60 = Double
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.SILENT_MONITOR
+  - typings.awsSdk.awsSdkStrings.BARGE
+  - java.lang.String
+*/
+type MonitorCapability = _MonitorCapability | java.lang.String
 
 type Name = java.lang.String
 
@@ -452,6 +636,23 @@ type Name128 = java.lang.String
 type NextToken = java.lang.String
 
 type NextToken2500 = java.lang.String
+
+type NotificationContentType = PLAIN_TEXT | java.lang.String
+
+type NotificationDeliveryType = EMAIL | java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.OVERALL_CUSTOMER_SENTIMENT_SCORE
+  - typings.awsSdk.awsSdkStrings.OVERALL_AGENT_SENTIMENT_SCORE
+  - typings.awsSdk.awsSdkStrings.NON_TALK_TIME
+  - typings.awsSdk.awsSdkStrings.NON_TALK_TIME_PERCENTAGE
+  - typings.awsSdk.awsSdkStrings.NUMBER_OF_INTERRUPTIONS
+  - typings.awsSdk.awsSdkStrings.CONTACT_DURATION
+  - typings.awsSdk.awsSdkStrings.AGENT_INTERACTION_DURATION
+  - typings.awsSdk.awsSdkStrings.CUSTOMER_HOLD_TIME
+  - java.lang.String
+*/
+type NumericQuestionPropertyAutomationLabel = _NumericQuestionPropertyAutomationLabel | java.lang.String
 
 type Origin = java.lang.String
 
@@ -464,6 +665,28 @@ type OutboundCallsEnabled = scala.Boolean
 type PEM = java.lang.String
 
 type ParticipantId = java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.AGENT
+  - typings.awsSdk.awsSdkStrings.CUSTOMER
+  - typings.awsSdk.awsSdkStrings.SYSTEM
+  - typings.awsSdk.awsSdkStrings.CUSTOM_BOT
+  - java.lang.String
+*/
+type ParticipantRole = _ParticipantRole | java.lang.String
+
+type ParticipantTimerAction = Unset | java.lang.String
+
+type ParticipantTimerConfigList = js.Array[ParticipantTimerConfiguration]
+
+type ParticipantTimerDurationInMinutes = Double
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.IDLE
+  - typings.awsSdk.awsSdkStrings.DISCONNECT_NONCUSTOMER
+  - java.lang.String
+*/
+type ParticipantTimerType = _ParticipantTimerType | java.lang.String
 
 type ParticipantToken = java.lang.String
 
@@ -817,6 +1040,8 @@ type QuickConnectsList = js.Array[QuickConnectId]
 
 type ReadOnlyTaskTemplateFields = js.Array[ReadOnlyFieldInfo]
 
+type ReferenceId = java.lang.String
+
 type ReferenceKey = java.lang.String
 
 /* Rewritten from type alias, can be one of: 
@@ -843,7 +1068,18 @@ type ReferenceTypes = js.Array[ReferenceType]
 
 type ReferenceValue = java.lang.String
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ENTIRE_PAST_SESSION
+  - typings.awsSdk.awsSdkStrings.FROM_SEGMENT
+  - java.lang.String
+*/
+type RehydrationType = _RehydrationType | java.lang.String
+
 type RequiredTaskTemplateFields = js.Array[RequiredFieldInfo]
+
+type ResourceArnOrId = java.lang.String
+
+type ResourceId = java.lang.String
 
 type RoutingProfileDescription = java.lang.String
 
@@ -863,6 +1099,25 @@ type RoutingProfileSearchConditionList = js.Array[RoutingProfileSearchCriteria]
 
 type RoutingProfileSummaryList = js.Array[RoutingProfileSummary]
 
+type RoutingProfiles = js.Array[RoutingProfileId]
+
+type RuleActions = js.Array[RuleAction]
+
+type RuleFunction = java.lang.String
+
+type RuleId = java.lang.String
+
+type RuleName = java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.DRAFT
+  - typings.awsSdk.awsSdkStrings.PUBLISHED
+  - java.lang.String
+*/
+type RulePublishStatus = _RulePublishStatus | java.lang.String
+
+type RuleSummaryList = js.Array[RuleSummary]
+
 type SearchableQueueType = STANDARD | java.lang.String
 
 type SecurityKeysList = js.Array[SecurityKey]
@@ -877,6 +1132,10 @@ type SecurityProfileName = java.lang.String
 
 type SecurityProfilePermission = java.lang.String
 
+type SecurityProfilePolicyKey = java.lang.String
+
+type SecurityProfilePolicyValue = java.lang.String
+
 type SecurityProfileSearchConditionList = js.Array[SecurityProfileSearchCriteria]
 
 type SecurityProfileSummaryList = js.Array[SecurityProfileSummary]
@@ -887,7 +1146,23 @@ type SecurityToken = java.lang.String
 
 type SingleSelectOptions = js.Array[TaskTemplateSingleSelectOption]
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.PRESENT
+  - typings.awsSdk.awsSdkStrings.NOT_PRESENT
+  - java.lang.String
+*/
+type SingleSelectQuestionRuleCategoryAutomationCondition = _SingleSelectQuestionRuleCategoryAutomationCondition | java.lang.String
+
+type SingleSelectQuestionRuleCategoryAutomationLabel = java.lang.String
+
 type SnapshotVersion = java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ASCENDING
+  - typings.awsSdk.awsSdkStrings.DESCENDING
+  - java.lang.String
+*/
+type SortOrder = _SortOrder | java.lang.String
 
 type SourceApplicationName = java.lang.String
 
@@ -927,6 +1202,8 @@ type String = java.lang.String
 */
 type StringComparisonType = _StringComparisonType | java.lang.String
 
+type Subject = java.lang.String
+
 type SupportedMessagingContentType = java.lang.String
 
 type SupportedMessagingContentTypes = js.Array[SupportedMessagingContentType]
@@ -941,7 +1218,15 @@ type TagMap = StringDictionary[TagValue]
 
 type TagOrConditionList = js.Array[TagAndConditionList]
 
+type TagRestrictedResourceList = js.Array[TagRestrictedResourceName]
+
+type TagRestrictedResourceName = java.lang.String
+
 type TagValue = java.lang.String
+
+type TaskDescriptionExpression = java.lang.String
+
+type TaskNameExpression = java.lang.String
 
 type TaskTemplateArn = java.lang.String
 
@@ -989,9 +1274,18 @@ type TaskTemplateSingleSelectOption = java.lang.String
 */
 type TaskTemplateStatus = _TaskTemplateStatus | java.lang.String
 
+type ThresholdCollections = js.Array[ThresholdV2]
+
 type ThresholdValue = Double
 
 type TimeZone = java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.CUSTOMER
+  - typings.awsSdk.awsSdkStrings.AGENT
+  - java.lang.String
+*/
+type TimerEligibleParticipantRoles = _TimerEligibleParticipantRoles | java.lang.String
 
 type Timestamp_ = js.Date
 
@@ -1050,9 +1344,13 @@ type UseCaseSummaryList = js.Array[UseCase]
 */
 type UseCaseType = _UseCaseType | java.lang.String
 
+type UserDataHierarchyGroups = js.Array[HierarchyGroupId]
+
 type UserDataList = js.Array[UserData]
 
 type UserId = java.lang.String
+
+type UserIdList = js.Array[UserId]
 
 type UserSearchConditionList = js.Array[UserSearchCriteria]
 
@@ -1060,7 +1358,11 @@ type UserSearchSummaryList = js.Array[UserSearchSummary]
 
 type UserSummaryList = js.Array[UserSummary]
 
+type UserTagMap = StringDictionary[String]
+
 type Value = Double
+
+type VersionNumber = Double
 
 type VocabularyContent = java.lang.String
 
@@ -1090,6 +1392,8 @@ type VocabularyId = java.lang.String
   - typings.awsSdk.awsSdkStrings.`pt-BR`
   - typings.awsSdk.awsSdkStrings.`pt-PT`
   - typings.awsSdk.awsSdkStrings.`zh-CN`
+  - typings.awsSdk.awsSdkStrings.`en-NZ`
+  - typings.awsSdk.awsSdkStrings.`en-ZA`
   - java.lang.String
 */
 type VocabularyLanguageCode = _VocabularyLanguageCode | java.lang.String

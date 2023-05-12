@@ -6,14 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Reponame extends StObject {
   
-  /** The unique identifier of the migration. */
   var migration_id: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['migration-id'] */ js.Any
   
-  /** The organization name. The name is not case sensitive. */
   @JSName("org")
   var org_ : /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['org'] */ js.Any
   
-  /** repo_name parameter */
   var repo_name: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['repo-name'] */ js.Any
 }
 object Reponame {

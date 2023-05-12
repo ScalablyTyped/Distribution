@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-tooltip
 
-Typings are for version 4.5.0
+Typings are for version 5.11.2
 
 ## Library description:
 react tooltip component

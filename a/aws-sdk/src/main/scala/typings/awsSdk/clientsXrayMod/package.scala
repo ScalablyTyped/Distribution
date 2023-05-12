@@ -128,6 +128,12 @@ type NullableInteger = scala.Double
 
 type NullableLong = scala.Double
 
+type PolicyDocument = java.lang.String
+
+type PolicyName = java.lang.String
+
+type PolicyRevisionId = java.lang.String
+
 type Priority = scala.Double
 
 type RequestCount = scala.Double
@@ -135,6 +141,10 @@ type RequestCount = scala.Double
 type ReservoirSize = scala.Double
 
 type ResourceARN = java.lang.String
+
+type ResourcePolicyList = js.Array[ResourcePolicy]
+
+type ResourcePolicyNextToken = java.lang.String
 
 type ResponseTimeRootCauseEntityPath = js.Array[ResponseTimeRootCauseEntity]
 

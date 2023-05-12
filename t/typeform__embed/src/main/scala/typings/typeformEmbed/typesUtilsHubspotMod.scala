@@ -14,6 +14,8 @@ object typesUtilsHubspotMod {
   
   inline def getHubspotHiddenFields(): HubspotFieldsType = ^.asInstanceOf[js.Dynamic].applyDynamic("getHubspotHiddenFields")().asInstanceOf[HubspotFieldsType]
   
+  inline def waitForHubspotCookie(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitForHubspotCookie")().asInstanceOf[js.Promise[Unit]]
+  
   trait HubspotFieldsType extends StObject {
     
     var hubspot_page_name: String

@@ -12,9 +12,9 @@ trait BindTextureFormat extends StObject {
   /** @type {string} */
   var name: String
   
-  var sampleType: String
+  var sampleType: Double
   
-  /** @type {ScopeId} */
+  /** @type {import('./scope-id.js').ScopeId} */
   var scopeId: ScopeId
   
   var textureDimension: String
@@ -23,7 +23,7 @@ trait BindTextureFormat extends StObject {
 }
 object BindTextureFormat {
   
-  inline def apply(name: String, sampleType: String, scopeId: ScopeId, textureDimension: String, visibility: Any): BindTextureFormat = {
+  inline def apply(name: String, sampleType: Double, scopeId: ScopeId, textureDimension: String, visibility: Any): BindTextureFormat = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], sampleType = sampleType.asInstanceOf[js.Any], scopeId = scopeId.asInstanceOf[js.Any], textureDimension = textureDimension.asInstanceOf[js.Any], visibility = visibility.asInstanceOf[js.Any])
     __obj.asInstanceOf[BindTextureFormat]
   }
@@ -33,7 +33,7 @@ object BindTextureFormat {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setSampleType(value: String): Self = StObject.set(x, "sampleType", value.asInstanceOf[js.Any])
+    inline def setSampleType(value: Double): Self = StObject.set(x, "sampleType", value.asInstanceOf[js.Any])
     
     inline def setScopeId(value: ScopeId): Self = StObject.set(x, "scopeId", value.asInstanceOf[js.Any])
     

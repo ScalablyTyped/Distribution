@@ -1,5 +1,6 @@
 package typings.ckeditorCkeditor5Indent
 
+import typings.ckeditorCkeditor5Indent.srcIndentcommandbehaviorIndentbehaviorMod.IndentBehavior
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,51 +12,55 @@ object srcIndentblockcommandMod {
   open class default protected ()
     extends StObject
        with IndentBlockCommand {
+    /**
+      * Creates an instance of the command.
+      */
     def this(
       editor: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Editor */ Any,
       indentBehavior: IndentBehavior
     ) = this()
     
+    /**
+      * The command's indentation behavior.
+      */
+    /* private */ /* CompleteClass */
+    override val _indentBehavior: Any = js.native
+    
+    /**
+      * @inheritDoc
+      */
     /* CompleteClass */
     override def execute(): Unit = js.native
     
+    /**
+      * @inheritDoc
+      */
     /* CompleteClass */
     override def refresh(): Unit = js.native
-  }
-  
-  trait IndentBehavior extends StObject {
-    
-    def checkEnabled(indentAttributeValue: String): Boolean
-    
-    def getNextIndent(indentAttributeValue: String): js.UndefOr[String]
-  }
-  object IndentBehavior {
-    
-    inline def apply(checkEnabled: String => Boolean, getNextIndent: String => js.UndefOr[String]): IndentBehavior = {
-      val __obj = js.Dynamic.literal(checkEnabled = js.Any.fromFunction1(checkEnabled), getNextIndent = js.Any.fromFunction1(getNextIndent))
-      __obj.asInstanceOf[IndentBehavior]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: IndentBehavior] (val x: Self) extends AnyVal {
-      
-      inline def setCheckEnabled(value: String => Boolean): Self = StObject.set(x, "checkEnabled", js.Any.fromFunction1(value))
-      
-      inline def setGetNextIndent(value: String => js.UndefOr[String]): Self = StObject.set(x, "getNextIndent", js.Any.fromFunction1(value))
-    }
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Command * / any */ trait IndentBlockCommand extends StObject {
     
+    /**
+      * The command's indentation behavior.
+      */
+    /* private */ val _indentBehavior: Any
+    
+    /**
+      * @inheritDoc
+      */
     def execute(): Unit
     
+    /**
+      * @inheritDoc
+      */
     def refresh(): Unit
   }
   object IndentBlockCommand {
     
-    inline def apply(execute: () => Unit, refresh: () => Unit): IndentBlockCommand = {
-      val __obj = js.Dynamic.literal(execute = js.Any.fromFunction0(execute), refresh = js.Any.fromFunction0(refresh))
+    inline def apply(_indentBehavior: Any, execute: () => Unit, refresh: () => Unit): IndentBlockCommand = {
+      val __obj = js.Dynamic.literal(_indentBehavior = _indentBehavior.asInstanceOf[js.Any], execute = js.Any.fromFunction0(execute), refresh = js.Any.fromFunction0(refresh))
       __obj.asInstanceOf[IndentBlockCommand]
     }
     
@@ -65,28 +70,8 @@ object srcIndentblockcommandMod {
       inline def setExecute(value: () => Unit): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
       
       inline def setRefresh(value: () => Unit): Self = StObject.set(x, "refresh", js.Any.fromFunction0(value))
-    }
-  }
-  
-  /* augmented module */
-  object ckeditorCkeditor5CoreSrcCommandcollectionAugmentingMod {
-    
-    trait Commands extends StObject {
       
-      var IndentBlockCommand: typings.ckeditorCkeditor5Indent.srcIndentblockcommandMod.IndentBlockCommand
-    }
-    object Commands {
-      
-      inline def apply(IndentBlockCommand: IndentBlockCommand): Commands = {
-        val __obj = js.Dynamic.literal(IndentBlockCommand = IndentBlockCommand.asInstanceOf[js.Any])
-        __obj.asInstanceOf[Commands]
-      }
-      
-      @scala.inline
-      implicit open class MutableBuilder[Self <: Commands] (val x: Self) extends AnyVal {
-        
-        inline def setIndentBlockCommand(value: IndentBlockCommand): Self = StObject.set(x, "IndentBlockCommand", value.asInstanceOf[js.Any])
-      }
+      inline def set_indentBehavior(value: Any): Self = StObject.set(x, "_indentBehavior", value.asInstanceOf[js.Any])
     }
   }
 }

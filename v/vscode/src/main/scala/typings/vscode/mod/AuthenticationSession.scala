@@ -7,24 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AuthenticationSession extends StObject {
   
   /**
-    * The access token.
-    */
+  		 * The access token.
+  		 */
   val accessToken: String
   
   /**
-    * The account associated with the session.
-    */
+  		 * The account associated with the session.
+  		 */
   val account: AuthenticationSessionAccountInformation
   
   /**
-    * The identifier of the authentication session.
-    */
+  		 * The identifier of the authentication session.
+  		 */
   val id: String
   
   /**
-    * The permissions granted by the session's access token. Available scopes
-    * are defined by the {@link AuthenticationProvider}.
-    */
+  		 * The permissions granted by the session's access token. Available scopes
+  		 * are defined by the {@link AuthenticationProvider}.
+  		 */
   val scopes: js.Array[String]
 }
 object AuthenticationSession {

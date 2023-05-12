@@ -1,8 +1,8 @@
 package typings.rcPicker
 
+import typings.rcComponentTrigger.esInterfaceMod.AlignType
 import typings.rcPicker.rcPickerStrings.ltr
 import typings.rcPicker.rcPickerStrings.rtl
-import typings.rcTrigger.esInterfaceMod.AlignType
 import typings.react.mod.CSSProperties
 import typings.react.mod.ReactElement
 import typings.react.mod.global.JSX.Element

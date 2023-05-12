@@ -56,252 +56,252 @@ trait ParametersParameter
   var resource: js.UndefOr[FhirResource] = js.undefined
   
   /**
-    * Conveys the content if the parameter is a data type.
+    * If the parameter is a data type.
     */
   var valueAddress: js.UndefOr[Address] = js.undefined
   
   /**
-    * Conveys the content if the parameter is a data type.
+    * If the parameter is a data type.
     */
   var valueAge: js.UndefOr[Age] = js.undefined
   
   /**
-    * Conveys the content if the parameter is a data type.
+    * If the parameter is a data type.
     */
   var valueAnnotation: js.UndefOr[Annotation] = js.undefined
   
   /**
-    * Conveys the content if the parameter is a data type.
+    * If the parameter is a data type.
     */
   var valueAttachment: js.UndefOr[Attachment] = js.undefined
   
   /**
-    * Conveys the content if the parameter is a data type.
+    * If the parameter is a data type.
     */
   var valueBase64Binary: js.UndefOr[String] = js.undefined
   
   /**
-    * Conveys the content if the parameter is a data type.
+    * If the parameter is a data type.
     */
   var valueBoolean: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Conveys the content if the parameter is a data type.
+    * If the parameter is a data type.
     */
   var valueCanonical: js.UndefOr[String] = js.undefined
   
   /**
-    * Conveys the content if the parameter is a data type.
+    * If the parameter is a data type.
     */
   var valueCode: js.UndefOr[String] = js.undefined
   
   /**
-    * Conveys the content if the parameter is a data type.
+    * If the parameter is a data type.
     */
   var valueCodeableConcept: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
-    * Conveys the content if the parameter is a data type.
+    * If the parameter is a data type.
     */
   var valueCoding: js.UndefOr[Coding] = js.undefined
   
   /**
-    * Conveys the content if the parameter is a data type.
+    * If the parameter is a data type.
     */
   var valueContactDetail: js.UndefOr[ContactDetail] = js.undefined
   
   /**
-    * Conveys the content if the parameter is a data type.
+    * If the parameter is a data type.
     */
   var valueContactPoint: js.UndefOr[ContactPoint] = js.undefined
   
   /**
-    * Conveys the content if the parameter is a data type.
+    * If the parameter is a data type.
     */
   var valueContributor: js.UndefOr[Contributor] = js.undefined
   
   /**
-    * Conveys the content if the parameter is a data type.
+    * If the parameter is a data type.
     */
   var valueCount: js.UndefOr[Count] = js.undefined
   
   /**
-    * Conveys the content if the parameter is a data type.
+    * If the parameter is a data type.
     */
   var valueDataRequirement: js.UndefOr[DataRequirement] = js.undefined
   
   /**
-    * Conveys the content if the parameter is a data type.
+    * If the parameter is a data type.
     */
   var valueDate: js.UndefOr[String] = js.undefined
   
   /**
-    * Conveys the content if the parameter is a data type.
+    * If the parameter is a data type.
     */
   var valueDateTime: js.UndefOr[String] = js.undefined
   
   /**
-    * Conveys the content if the parameter is a data type.
+    * If the parameter is a data type.
     */
   var valueDecimal: js.UndefOr[Double] = js.undefined
   
   /**
-    * Conveys the content if the parameter is a data type.
+    * If the parameter is a data type.
     */
   var valueDistance: js.UndefOr[Distance] = js.undefined
   
   /**
-    * Conveys the content if the parameter is a data type.
+    * If the parameter is a data type.
     */
   var valueDosage: js.UndefOr[Dosage] = js.undefined
   
   /**
-    * Conveys the content if the parameter is a data type.
+    * If the parameter is a data type.
     */
   var valueDuration: js.UndefOr[Duration] = js.undefined
   
   /**
-    * Conveys the content if the parameter is a data type.
+    * If the parameter is a data type.
     */
   var valueExpression: js.UndefOr[Expression] = js.undefined
   
   /**
-    * Conveys the content if the parameter is a data type.
+    * If the parameter is a data type.
     */
   var valueHumanName: js.UndefOr[HumanName] = js.undefined
   
   /**
-    * Conveys the content if the parameter is a data type.
+    * If the parameter is a data type.
     */
   var valueId: js.UndefOr[String] = js.undefined
   
   /**
-    * Conveys the content if the parameter is a data type.
+    * If the parameter is a data type.
     */
   var valueIdentifier: js.UndefOr[Identifier] = js.undefined
   
   /**
-    * Conveys the content if the parameter is a data type.
+    * If the parameter is a data type.
     */
   var valueInstant: js.UndefOr[String] = js.undefined
   
   /**
-    * Conveys the content if the parameter is a data type.
+    * If the parameter is a data type.
     */
   var valueInteger: js.UndefOr[Double] = js.undefined
   
   /**
-    * Conveys the content if the parameter is a data type.
+    * If the parameter is a data type.
     */
   var valueMarkdown: js.UndefOr[String] = js.undefined
   
   /**
-    * Conveys the content if the parameter is a data type.
+    * If the parameter is a data type.
     */
   var valueMeta: js.UndefOr[Meta] = js.undefined
   
   /**
-    * Conveys the content if the parameter is a data type.
+    * If the parameter is a data type.
     */
   var valueMoney: js.UndefOr[Money] = js.undefined
   
   /**
-    * Conveys the content if the parameter is a data type.
+    * If the parameter is a data type.
     */
   var valueOid: js.UndefOr[String] = js.undefined
   
   /**
-    * Conveys the content if the parameter is a data type.
+    * If the parameter is a data type.
     */
   var valueParameterDefinition: js.UndefOr[ParameterDefinition] = js.undefined
   
   /**
-    * Conveys the content if the parameter is a data type.
+    * If the parameter is a data type.
     */
   var valuePeriod: js.UndefOr[Period] = js.undefined
   
   /**
-    * Conveys the content if the parameter is a data type.
+    * If the parameter is a data type.
     */
   var valuePositiveInt: js.UndefOr[Double] = js.undefined
   
   /**
-    * Conveys the content if the parameter is a data type.
+    * If the parameter is a data type.
     */
   var valueQuantity: js.UndefOr[Quantity] = js.undefined
   
   /**
-    * Conveys the content if the parameter is a data type.
+    * If the parameter is a data type.
     */
   var valueRange: js.UndefOr[Range] = js.undefined
   
   /**
-    * Conveys the content if the parameter is a data type.
+    * If the parameter is a data type.
     */
   var valueRatio: js.UndefOr[Ratio] = js.undefined
   
   /**
-    * Conveys the content if the parameter is a data type.
+    * If the parameter is a data type.
     */
   var valueReference: js.UndefOr[Reference] = js.undefined
   
   /**
-    * Conveys the content if the parameter is a data type.
+    * If the parameter is a data type.
     */
   var valueRelatedArtifact: js.UndefOr[RelatedArtifact] = js.undefined
   
   /**
-    * Conveys the content if the parameter is a data type.
+    * If the parameter is a data type.
     */
   var valueSampledData: js.UndefOr[SampledData] = js.undefined
   
   /**
-    * Conveys the content if the parameter is a data type.
+    * If the parameter is a data type.
     */
   var valueSignature: js.UndefOr[Signature] = js.undefined
   
   /**
-    * Conveys the content if the parameter is a data type.
+    * If the parameter is a data type.
     */
   var valueString: js.UndefOr[String] = js.undefined
   
   /**
-    * Conveys the content if the parameter is a data type.
+    * If the parameter is a data type.
     */
   var valueTime: js.UndefOr[String] = js.undefined
   
   /**
-    * Conveys the content if the parameter is a data type.
+    * If the parameter is a data type.
     */
   var valueTiming: js.UndefOr[Timing] = js.undefined
   
   /**
-    * Conveys the content if the parameter is a data type.
+    * If the parameter is a data type.
     */
   var valueTriggerDefinition: js.UndefOr[TriggerDefinition] = js.undefined
   
   /**
-    * Conveys the content if the parameter is a data type.
+    * If the parameter is a data type.
     */
   var valueUnsignedInt: js.UndefOr[Double] = js.undefined
   
   /**
-    * Conveys the content if the parameter is a data type.
+    * If the parameter is a data type.
     */
   var valueUri: js.UndefOr[String] = js.undefined
   
   /**
-    * Conveys the content if the parameter is a data type.
+    * If the parameter is a data type.
     */
   var valueUrl: js.UndefOr[String] = js.undefined
   
   /**
-    * Conveys the content if the parameter is a data type.
+    * If the parameter is a data type.
     */
   var valueUsageContext: js.UndefOr[UsageContext] = js.undefined
   
   /**
-    * Conveys the content if the parameter is a data type.
+    * If the parameter is a data type.
     */
   var valueUuid: js.UndefOr[String] = js.undefined
 }

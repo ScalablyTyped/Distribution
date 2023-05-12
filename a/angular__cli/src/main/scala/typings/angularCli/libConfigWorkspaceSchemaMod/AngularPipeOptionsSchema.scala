@@ -34,7 +34,7 @@ trait AngularPipeOptionsSchema extends StObject {
   /**
     * The name of the project.
     */
-  var project: js.UndefOr[String] = js.undefined
+  var project: String
   
   /**
     * Do not import this pipe into the owning NgModule.
@@ -53,8 +53,8 @@ trait AngularPipeOptionsSchema extends StObject {
 }
 object AngularPipeOptionsSchema {
   
-  inline def apply(name: String): AngularPipeOptionsSchema = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+  inline def apply(name: String, project: String): AngularPipeOptionsSchema = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any])
     __obj.asInstanceOf[AngularPipeOptionsSchema]
   }
   
@@ -80,8 +80,6 @@ object AngularPipeOptionsSchema {
     inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
     inline def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
-    
-    inline def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
     
     inline def setSkipImport(value: Boolean): Self = StObject.set(x, "skipImport", value.asInstanceOf[js.Any])
     

@@ -61,8 +61,6 @@ object utilityAstUtilsMod {
   
   inline def getDecoratorMetadata(source: SourceFile, identifier: String, module: String): js.Array[Node] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDecoratorMetadata")(source.asInstanceOf[js.Any], identifier.asInstanceOf[js.Any], module.asInstanceOf[js.Any])).asInstanceOf[js.Array[Node]]
   
-  inline def getEnvironmentExportName(source: SourceFile): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getEnvironmentExportName")(source.asInstanceOf[js.Any]).asInstanceOf[String | Null]
-  
   inline def getMetadataField(node: ObjectLiteralExpression, metadataField: String): js.Array[ObjectLiteralElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("getMetadataField")(node.asInstanceOf[js.Any], metadataField.asInstanceOf[js.Any])).asInstanceOf[js.Array[ObjectLiteralElement]]
   
   inline def getRouterModuleDeclaration(source: SourceFile): js.UndefOr[Expression] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRouterModuleDeclaration")(source.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Expression]]

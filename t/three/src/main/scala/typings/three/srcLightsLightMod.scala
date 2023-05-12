@@ -1,9 +1,11 @@
 package typings.three
 
+import typings.three.srcCamerasCameraMod.Camera
 import typings.three.srcCoreEventDispatcherMod.Event
 import typings.three.srcCoreObject3DMod.Object3D
 import typings.three.srcLightsLightShadowMod.LightShadow
 import typings.three.srcMathColorMod.Color
+import typings.three.srcMathColorMod.ColorRepresentation
 import typings.three.threeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,76 +13,60 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object srcLightsLightMod {
   
-  @JSImport("three/src/lights/Light", "Light")
+  /* note: abstract class */ @JSImport("three/src/lights/Light", "Light")
   @js.native
-  open class Light () extends Object3D[Event] {
-    def this(hex: String) = this()
-    def this(hex: Double) = this()
-    def this(hex: String, intensity: Double) = this()
-    def this(hex: Double, intensity: Double) = this()
-    def this(hex: Unit, intensity: Double) = this()
+  /**
+    * Creates a new {@link Light}
+    * @remarks
+    * **Note** that this is not intended to be called directly (use one of derived classes instead).
+    * @param color Hexadecimal color of the light. Default `0xffffff` _(white)_.
+    * @param intensity Numeric value of the light's strength/intensity. Expects a `Float`. Default `1`.
+    */
+  open class Light[TShadowSupport /* <: js.UndefOr[LightShadow[Camera]] */] () extends Object3D[Event] {
+    def this(color: ColorRepresentation) = this()
+    def this(color: Unit, intensity: Double) = this()
+    def this(color: ColorRepresentation, intensity: Double) = this()
     
+    /**
+      * Color of the light. \
+      * @defaultValue `new THREE.Color(0xffffff)` _(white)_.
+      */
     var color: Color = js.native
     
+    /**
+      * Frees the GPU-related resources allocated by this instance
+      * @remarks
+      * Call this method whenever this instance is no longer used in your app.
+      */
     def dispose(): Unit = js.native
     
     /**
-      * @default 1
+      * The light's intensity, or strength.
+      * In {@link THREE.WebGLRenderer.physicallyCorrectLights | physically correct} mode, the units of intensity depend on the type of light.
+      * @remarks Expects a `Float`
+      * @defaultValue `1`
       */
     var intensity: Double = js.native
     
+    /**
+      * Read-only flag to check if a given object is of type {@link HemisphereLight}.
+      * @remarks This is a _constant_ value
+      * @defaultValue `true`
+      */
     val isLight: `true` = js.native
     
-    var shadow: LightShadow = js.native
+    /**
+      * A {@link THREE.LightShadow | LightShadow} used to calculate shadows for this light.
+      * @remarks Available only on Light's that support shadows.
+      */
+    var shadow: TShadowSupport = js.native
     
     /**
-      * @deprecated Use shadow.bias instead.
+      * A Read-only _string_ to check if `this` object type.
+      * @remarks Sub-classes will update this value.
+      * @defaultValue `Light`
       */
-    var shadowBias: Any = js.native
-    
-    /**
-      * @deprecated Use shadow.camera.bottom instead.
-      */
-    var shadowCameraBottom: Any = js.native
-    
-    /**
-      * @deprecated Use shadow.camera.far instead.
-      */
-    var shadowCameraFar: Any = js.native
-    
-    /**
-      * @deprecated Use shadow.camera.fov instead.
-      */
-    var shadowCameraFov: Any = js.native
-    
-    /**
-      * @deprecated Use shadow.camera.left instead.
-      */
-    var shadowCameraLeft: Any = js.native
-    
-    /**
-      * @deprecated Use shadow.camera.near instead.
-      */
-    var shadowCameraNear: Any = js.native
-    
-    /**
-      * @deprecated Use shadow.camera.right instead.
-      */
-    var shadowCameraRight: Any = js.native
-    
-    /**
-      * @deprecated Use shadow.camera.top instead.
-      */
-    var shadowCameraTop: Any = js.native
-    
-    /**
-      * @deprecated Use shadow.mapSize.height instead.
-      */
-    var shadowMapHeight: Any = js.native
-    
-    /**
-      * @deprecated Use shadow.mapSize.width instead.
-      */
-    var shadowMapWidth: Any = js.native
+    @JSName("type")
+    val type_Light: String | typings.three.threeStrings.Light = js.native
   }
 }

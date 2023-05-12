@@ -33,6 +33,7 @@ object EnvironmentHelper {
   
   /**
     * Creates the default options for the helper.
+    * @param scene The scene the environment helper belongs to.
     */
   @JSImport("babylonjs/index", "EnvironmentHelper._GetDefaultOptions")
   @js.native

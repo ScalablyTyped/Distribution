@@ -6,44 +6,84 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object formatIgcMod {
   
+  /**
+    * @typedef {Object} Options
+    * @property {IGCZ} [altitudeMode='none'] Altitude mode. Possible
+    * values are `'barometric'`, `'gps'`, and `'none'`.
+    */
+  /**
+    * @classdesc
+    * Feature format for `*.igc` flight recording files.
+    *
+    * As IGC sources contain a single feature,
+    * {@link module:ol/format/IGC~IGC#readFeatures} will return the feature in an
+    * array
+    *
+    * @api
+    */
   @JSImport("ol/format/IGC", JSImport.Default)
   @js.native
-  open class default () extends IGC {
-    def this(opt_options: Options) = this()
-  }
-  
-  @js.native
-  sealed trait IGCZ extends StObject
   /**
-    * IGC altitude/z. One of 'barometric', 'gps', 'none'.
+    * @param {Options} [options] Options.
     */
-  @JSImport("ol/format/IGC", "IGCZ")
-  @js.native
-  object IGCZ extends StObject {
-    
-    @js.native
-    sealed trait BAROMETRIC
-      extends StObject
-         with IGCZ
-    
-    @js.native
-    sealed trait GPS
-      extends StObject
-         with IGCZ
-    
-    @js.native
-    sealed trait NONE
-      extends StObject
-         with IGCZ
+  open class default () extends IGC {
+    def this(options: Options) = this()
   }
   
+  /**
+    * @typedef {Object} Options
+    * @property {IGCZ} [altitudeMode='none'] Altitude mode. Possible
+    * values are `'barometric'`, `'gps'`, and `'none'`.
+    */
+  /**
+    * @classdesc
+    * Feature format for `*.igc` flight recording files.
+    *
+    * As IGC sources contain a single feature,
+    * {@link module:ol/format/IGC~IGC#readFeatures} will return the feature in an
+    * array
+    *
+    * @api
+    */
   @js.native
   trait IGC
-    extends typings.ol.formatTextFeatureMod.default
+    extends typings.ol.formatTextFeatureMod.default {
+    
+    /**
+      * @private
+      * @type {IGCZ}
+      */
+    /* private */ var altitudeMode_ : Any = js.native
+    
+    /**
+      * @type {import("../proj/Projection.js").default}
+      */
+    @JSName("dataProjection")
+    var dataProjection_IGC: typings.ol.projProjectionMod.default = js.native
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.ol.olStrings.barometric
+    - typings.ol.olStrings.gps
+    - typings.ol.olStrings.none
+  */
+  trait IGCZ extends StObject
+  object IGCZ {
+    
+    inline def barometric: typings.ol.olStrings.barometric = "barometric".asInstanceOf[typings.ol.olStrings.barometric]
+    
+    inline def gps: typings.ol.olStrings.gps = "gps".asInstanceOf[typings.ol.olStrings.gps]
+    
+    inline def none: typings.ol.olStrings.none = "none".asInstanceOf[typings.ol.olStrings.none]
+  }
   
   trait Options extends StObject {
     
-    var altitudeMode: js.UndefOr[IGCZ | String] = js.undefined
+    /**
+      * Altitude mode. Possible
+      * values are `'barometric'`, `'gps'`, and `'none'`.
+      */
+    var altitudeMode: js.UndefOr[IGCZ] = js.undefined
   }
   object Options {
     
@@ -55,7 +95,7 @@ object formatIgcMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
-      inline def setAltitudeMode(value: IGCZ | String): Self = StObject.set(x, "altitudeMode", value.asInstanceOf[js.Any])
+      inline def setAltitudeMode(value: IGCZ): Self = StObject.set(x, "altitudeMode", value.asInstanceOf[js.Any])
       
       inline def setAltitudeModeUndefined: Self = StObject.set(x, "altitudeMode", js.undefined)
     }

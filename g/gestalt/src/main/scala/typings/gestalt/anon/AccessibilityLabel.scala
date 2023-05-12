@@ -1,19 +1,22 @@
 package typings.gestalt.anon
 
+import typings.gestalt.mod.Indexable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait AccessibilityLabel extends StObject {
   
-  var accessibilityLabel: String
+  var accessibilityLabel: js.UndefOr[String] = js.undefined
   
-  def onDismiss(): Unit
+  var text: String
+  
+  var zIndex: js.UndefOr[Indexable] = js.undefined
 }
 object AccessibilityLabel {
   
-  inline def apply(accessibilityLabel: String, onDismiss: () => Unit): AccessibilityLabel = {
-    val __obj = js.Dynamic.literal(accessibilityLabel = accessibilityLabel.asInstanceOf[js.Any], onDismiss = js.Any.fromFunction0(onDismiss))
+  inline def apply(text: String): AccessibilityLabel = {
+    val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccessibilityLabel]
   }
   
@@ -22,6 +25,12 @@ object AccessibilityLabel {
     
     inline def setAccessibilityLabel(value: String): Self = StObject.set(x, "accessibilityLabel", value.asInstanceOf[js.Any])
     
-    inline def setOnDismiss(value: () => Unit): Self = StObject.set(x, "onDismiss", js.Any.fromFunction0(value))
+    inline def setAccessibilityLabelUndefined: Self = StObject.set(x, "accessibilityLabel", js.undefined)
+    
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    
+    inline def setZIndex(value: Indexable): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
+    
+    inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
   }
 }

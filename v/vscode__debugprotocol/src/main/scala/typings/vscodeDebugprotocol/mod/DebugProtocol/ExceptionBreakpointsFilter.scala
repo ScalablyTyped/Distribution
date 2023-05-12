@@ -4,10 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** An ExceptionBreakpointsFilter is shown in the UI as an filter option for configuring how exceptions are dealt with. */
+/** An `ExceptionBreakpointsFilter` is shown in the UI as an filter option for configuring how exceptions are dealt with. */
 trait ExceptionBreakpointsFilter extends StObject {
   
-  /** Initial value of the filter option. If not specified a value `false` is assumed. */
+  /** Initial value of the filter option. If not specified a value false is assumed. */
   var default: js.UndefOr[Boolean] = js.undefined
   
   /** A help text providing information about the condition. This string is shown as the placeholder text for a text box and can be translated. */

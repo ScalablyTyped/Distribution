@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait QuickInputButton extends StObject {
   
   /**
-    * Icon for the button.
-    */
+  		 * Icon for the button.
+  		 */
   val iconPath: Uri | Dark | ThemeIcon
   
   /**
-    * An optional tooltip.
-    */
+  		 * An optional tooltip.
+  		 */
   val tooltip: js.UndefOr[String] = js.undefined
 }
 object QuickInputButton {

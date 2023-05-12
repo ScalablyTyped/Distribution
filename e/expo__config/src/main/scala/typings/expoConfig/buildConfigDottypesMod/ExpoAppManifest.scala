@@ -59,11 +59,6 @@ trait ExpoAppManifest extends StObject {
   var androidStatusBar: js.UndefOr[BackgroundColor] = js.undefined
   
   /**
-    * @deprecated By default, Expo looks for the application registered with the AppRegistry as `main`. If you would like to change this, you can specify the name in this property.
-    */
-  var appKey: js.UndefOr[String] = js.undefined
-  
-  /**
     * An array of file glob strings which point to assets that will be bundled within your standalone app binary. Read more in the [Offline Support guide](https://docs.expo.dev/guides/offline-support/)
     */
   var assetBundlePatterns: js.UndefOr[js.Array[String]] = js.undefined
@@ -106,7 +101,7 @@ trait ExpoAppManifest extends StObject {
   var developmentClient: js.UndefOr[SilentLaunch] = js.undefined
   
   /**
-    * The relative path to your main JavaScript file.
+    * @deprecated Use a `main` field in the project `package.json` instead.
     */
   var entryPoint: js.UndefOr[String] = js.undefined
   
@@ -121,36 +116,6 @@ trait ExpoAppManifest extends StObject {
     * Any extra fields you want to pass to your experience. Values are accessible via `Expo.Constants.manifest.extra` ([Learn more](https://docs.expo.dev/versions/latest/sdk/constants/#constantsmanifest))
     */
   var extra: js.UndefOr[StringDictionary[Any]] = js.undefined
-  
-  /**
-    * Whether the Facebook SDK should collect advertiser ID properties, like the Apple IDFA and Android Advertising ID, automatically. If you don't set this property, Facebook's default policy will be used. (Applicable only to standalone apps.)
-    */
-  var facebookAdvertiserIDCollectionEnabled: js.UndefOr[Boolean] = js.undefined
-  
-  /**
-    * Used for all Facebook libraries. Set up your Facebook App ID at https://developers.facebook.com.
-    */
-  var facebookAppId: js.UndefOr[String] = js.undefined
-  
-  /**
-    * Whether the Facebook SDK should be initialized automatically. The default in Expo (Client and in standalone apps) is `false`.
-    */
-  var facebookAutoInitEnabled: js.UndefOr[Boolean] = js.undefined
-  
-  /**
-    * Whether the Facebook SDK log app events automatically. If you don't set this property, Facebook's default will be used. (Applicable only to standalone apps.) Note: The Facebook SDK must be initialized for app events to work. You may autoinitialize Facebook SDK by setting `facebookAutoInitEnabled` to `true`
-    */
-  var facebookAutoLogAppEventsEnabled: js.UndefOr[Boolean] = js.undefined
-  
-  /**
-    * Used for native Facebook login.
-    */
-  var facebookDisplayName: js.UndefOr[String] = js.undefined
-  
-  /**
-    * Used for Facebook native login. Starts with 'fb' and followed by a string of digits, like 'fb1234567890'. You can find your scheme [here](https://developers.facebook.com/docs/facebook-login/ios)in the 'Configuring Your info.plist' section (only applicable to standalone apps and custom Expo Go apps).
-    */
-  var facebookScheme: js.UndefOr[String] = js.undefined
   
   /**
     * If you would like to share the source code of your app on Github, enter the URL for the repository here and it will be linked to from your Expo project page.
@@ -181,7 +146,7 @@ trait ExpoAppManifest extends StObject {
   var isKernel: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Specifies the JavaScript engine for apps. Supported only on EAS Build. Defaults to `jsc`. Valid values: `hermes`, `jsc`.
+    * Specifies the JavaScript engine for apps. Supported only on EAS Build. Defaults to `hermes`. Valid values: `hermes`, `jsc`.
     */
   var jsEngine: js.UndefOr[hermes | jsc] = js.undefined
   
@@ -258,8 +223,7 @@ trait ExpoAppManifest extends StObject {
     * **Note: Don't use this property unless you are sure what you're doing**
     *
     * The runtime version associated with this manifest.
-    * Set this to `{"policy": "nativeVersion"}` to generate it automatically based on the 'version' and
-    * 'android.versionCode'/'ios.buildNumber' or to `{"policy": "appVersion"}` to use just 'version' field.
+    * Set this to `{"policy": "nativeVersion"}` to generate it automatically.
     */
   var runtimeVersion: js.UndefOr[String | Policy] = js.undefined
   
@@ -318,10 +282,6 @@ object ExpoAppManifest {
     inline def setAndroidStatusBarUndefined: Self = StObject.set(x, "androidStatusBar", js.undefined)
     
     inline def setAndroidUndefined: Self = StObject.set(x, "android", js.undefined)
-    
-    inline def setAppKey(value: String): Self = StObject.set(x, "appKey", value.asInstanceOf[js.Any])
-    
-    inline def setAppKeyUndefined: Self = StObject.set(x, "appKey", js.undefined)
     
     inline def setAssetBundlePatterns(value: js.Array[String]): Self = StObject.set(x, "assetBundlePatterns", value.asInstanceOf[js.Any])
     
@@ -390,30 +350,6 @@ object ExpoAppManifest {
     inline def setExtra(value: StringDictionary[Any]): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
     
     inline def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
-    
-    inline def setFacebookAdvertiserIDCollectionEnabled(value: Boolean): Self = StObject.set(x, "facebookAdvertiserIDCollectionEnabled", value.asInstanceOf[js.Any])
-    
-    inline def setFacebookAdvertiserIDCollectionEnabledUndefined: Self = StObject.set(x, "facebookAdvertiserIDCollectionEnabled", js.undefined)
-    
-    inline def setFacebookAppId(value: String): Self = StObject.set(x, "facebookAppId", value.asInstanceOf[js.Any])
-    
-    inline def setFacebookAppIdUndefined: Self = StObject.set(x, "facebookAppId", js.undefined)
-    
-    inline def setFacebookAutoInitEnabled(value: Boolean): Self = StObject.set(x, "facebookAutoInitEnabled", value.asInstanceOf[js.Any])
-    
-    inline def setFacebookAutoInitEnabledUndefined: Self = StObject.set(x, "facebookAutoInitEnabled", js.undefined)
-    
-    inline def setFacebookAutoLogAppEventsEnabled(value: Boolean): Self = StObject.set(x, "facebookAutoLogAppEventsEnabled", value.asInstanceOf[js.Any])
-    
-    inline def setFacebookAutoLogAppEventsEnabledUndefined: Self = StObject.set(x, "facebookAutoLogAppEventsEnabled", js.undefined)
-    
-    inline def setFacebookDisplayName(value: String): Self = StObject.set(x, "facebookDisplayName", value.asInstanceOf[js.Any])
-    
-    inline def setFacebookDisplayNameUndefined: Self = StObject.set(x, "facebookDisplayName", js.undefined)
-    
-    inline def setFacebookScheme(value: String): Self = StObject.set(x, "facebookScheme", value.asInstanceOf[js.Any])
-    
-    inline def setFacebookSchemeUndefined: Self = StObject.set(x, "facebookScheme", js.undefined)
     
     inline def setGithubUrl(value: String): Self = StObject.set(x, "githubUrl", value.asInstanceOf[js.Any])
     

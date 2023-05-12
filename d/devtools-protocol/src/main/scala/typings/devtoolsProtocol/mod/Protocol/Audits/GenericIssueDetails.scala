@@ -1,5 +1,6 @@
 package typings.devtoolsProtocol.mod.Protocol.Audits
 
+import typings.devtoolsProtocol.mod.Protocol.DOM.BackendNodeId
 import typings.devtoolsProtocol.mod.Protocol.Page.FrameId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,6 +14,10 @@ trait GenericIssueDetails extends StObject {
   var errorType: GenericIssueErrorType
   
   var frameId: js.UndefOr[FrameId] = js.undefined
+  
+  var violatingNodeAttribute: js.UndefOr[String] = js.undefined
+  
+  var violatingNodeId: js.UndefOr[BackendNodeId] = js.undefined
 }
 object GenericIssueDetails {
   
@@ -29,5 +34,13 @@ object GenericIssueDetails {
     inline def setFrameId(value: FrameId): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
     
     inline def setFrameIdUndefined: Self = StObject.set(x, "frameId", js.undefined)
+    
+    inline def setViolatingNodeAttribute(value: String): Self = StObject.set(x, "violatingNodeAttribute", value.asInstanceOf[js.Any])
+    
+    inline def setViolatingNodeAttributeUndefined: Self = StObject.set(x, "violatingNodeAttribute", js.undefined)
+    
+    inline def setViolatingNodeId(value: BackendNodeId): Self = StObject.set(x, "violatingNodeId", value.asInstanceOf[js.Any])
+    
+    inline def setViolatingNodeIdUndefined: Self = StObject.set(x, "violatingNodeId", js.undefined)
   }
 }

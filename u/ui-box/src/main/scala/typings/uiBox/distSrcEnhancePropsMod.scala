@@ -43,6 +43,6 @@ object distSrcEnhancePropsMod {
   
   type PreservedProps = Without[
     ComponentProps[Any], 
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 154, starting with typings.uiBox.uiBoxStrings.borderColor, typings.uiBox.uiBoxStrings.gridTemplate, typings.uiBox.uiBoxStrings.backgroundImage */ Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 161, starting with typings.uiBox.uiBoxStrings.borderColor, typings.uiBox.uiBoxStrings.gridTemplate, typings.uiBox.uiBoxStrings.backgroundImage */ Any
   ]
 }

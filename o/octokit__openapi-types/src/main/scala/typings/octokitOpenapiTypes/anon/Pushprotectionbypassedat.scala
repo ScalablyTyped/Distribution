@@ -37,15 +37,11 @@ trait Pushprotectionbypassedat extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-simple-user'] */ js.Any
   ] = js.undefined
   
-  var repository: js.UndefOr[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['simple-repository'] */ js.Any
-  ] = js.undefined
-  
   var resolution: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['secret-scanning-alert-resolution'] */ js.Any
   ] = js.undefined
   
-  /** @description The comment that was optionally added when this alert was closed */
+  /** @description An optional comment to resolve an alert. */
   var resolution_comment: js.UndefOr[String | Null] = js.undefined
   
   /**
@@ -131,12 +127,6 @@ object Pushprotectionbypassedat {
     ): Self = StObject.set(x, "push_protection_bypassed_by", value.asInstanceOf[js.Any])
     
     inline def setPush_protection_bypassed_byUndefined: Self = StObject.set(x, "push_protection_bypassed_by", js.undefined)
-    
-    inline def setRepository(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['simple-repository'] */ js.Any
-    ): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
-    
-    inline def setRepositoryUndefined: Self = StObject.set(x, "repository", js.undefined)
     
     inline def setResolution(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['secret-scanning-alert-resolution'] */ js.Any

@@ -13,21 +13,23 @@ object srcObjectsServersideCustomDataMod {
     extends StObject
        with CustomData {
     def this(
-      value: Double,
-      currency: String,
-      content_name: String,
-      content_category: String,
-      content_ids: js.Array[String],
-      contents: js.Array[typings.facebookNodejsBusinessSdk.srcObjectsServersideContentMod.default],
-      content_type: String,
-      order_id: String,
-      predicted_ltv: Double,
-      num_items: Double,
-      search_string: String,
-      status: String,
-      item_number: String,
-      delivery_category: String,
-      custom_properties: Record[String, Any]
+      value: js.UndefOr[Double],
+      currency: js.UndefOr[String],
+      content_name: js.UndefOr[String],
+      content_category: js.UndefOr[String],
+      content_ids: js.UndefOr[js.Array[String]],
+      contents: js.UndefOr[
+            js.Array[typings.facebookNodejsBusinessSdk.srcObjectsServersideContentMod.default]
+          ],
+      content_type: js.UndefOr[String],
+      order_id: js.UndefOr[String],
+      predicted_ltv: js.UndefOr[Double],
+      num_items: js.UndefOr[Double],
+      search_string: js.UndefOr[String],
+      status: js.UndefOr[String],
+      item_number: js.UndefOr[String],
+      delivery_category: js.UndefOr[String],
+      custom_properties: js.UndefOr[Record[String, Any]]
     ) = this()
   }
   

@@ -1,7 +1,7 @@
 
 # Scala.js typings for prosemirror-keymap
 
-Typings are for version 1.2.0
+Typings are for version 1.2.1
 
 ## Library description:
 Keymap plugin for ProseMirror

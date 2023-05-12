@@ -1,7 +1,7 @@
 
 # Scala.js typings for pretty-bytes
 
-Typings are for version 6.0.0
+Typings are for version 6.1.0
 
 ## Library description:
 Convert bytes to a human readable string: 1337 → 1.34 kB

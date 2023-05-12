@@ -1,11 +1,13 @@
 package typings.expressValidator
 
+import typings.expressValidator.anon.DryRun
+import typings.expressValidator.srcBaseMod.Request
 import typings.expressValidator.srcChainContextRunnerMod.ContextRunner
+import typings.expressValidator.srcChainContextRunnerMod.ResultWithContext
 import typings.expressValidator.srcContextBuilderMod.ContextBuilder
 import typings.expressValidator.srcContextMod.Context
 import typings.expressValidator.srcContextMod.ReadonlyContext
-import typings.expressValidator.srcSelectFieldsMod.SelectFields_
-import typings.expressValidator.srcValidationResultMod.Result
+import typings.expressValidator.srcFieldSelectionMod.SelectFields_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,14 +26,14 @@ object srcChainContextRunnerImplMod {
     
     /* private */ val builderOrContext: Any = js.native
     
+    def run(req: Request, options: DryRun): js.Promise[ResultWithContextImpl] = js.native
+    
     /* private */ val selectFields: Any = js.native
   }
   
-  @JSImport("express-validator/src/chain/context-runner-impl", "ResultWithContext")
+  @JSImport("express-validator/src/chain/context-runner-impl", "ResultWithContextImpl")
   @js.native
-  open class ResultWithContext protected () extends Result[Any] {
+  open class ResultWithContextImpl protected () extends ResultWithContext {
     def this(context: ReadonlyContext) = this()
-    
-    val context: ReadonlyContext = js.native
   }
 }

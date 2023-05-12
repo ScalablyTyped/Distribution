@@ -1,7 +1,7 @@
 
 # Scala.js typings for firebase__auth-compat
 
-Typings are for version 0.2.24
+Typings are for version 0.4.1
 
 ## Library description:
 FirebaseAuth compatibility package that uses API style compatible with Firebase@8 and prior versions

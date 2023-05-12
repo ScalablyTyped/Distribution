@@ -6,6 +6,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.node.eventsMod.global.NodeJS.EventEmitter
 import typings.svgSprite.anon.Attributes
 import typings.svgSprite.anon.Box
+import typings.svgSprite.anon.Data
 import typings.svgSprite.anon.Generator
 import typings.svgSprite.anon.Plugins
 import typings.vinyl.mod.File
@@ -195,7 +196,7 @@ object mod extends Shortcut {
   
   trait Mode
     extends StObject
-       with /* customConfigName */ StringDictionary[ModeConfig | Boolean] {
+       with /* customConfigName */ StringDictionary[js.UndefOr[ModeConfig | Boolean]] {
     
     var css: js.UndefOr[CssAndViewSpecificModeConfig | Boolean] = js.undefined
     
@@ -389,12 +390,14 @@ object mod extends Shortcut {
       * @param svg SVG file content.
       */
     def add(file: String, name: String, svg: String): SVGSpriter = js.native
+    def add(file: String, name: Null, svg: String): SVGSpriter = js.native
     /**
       * Registering source SVG files
       * @param file Absolute path to the SVG file or a vinyl file object carrying all the necessary values (the following arguments are ignored then).
       */
     def add(file: File): SVGSpriter = js.native
     def add(file: File, name: String, svg: String): SVGSpriter = js.native
+    def add(file: File, name: Null, svg: String): SVGSpriter = js.native
     
     /**
       * Triggering the sprite compilation
@@ -407,6 +410,13 @@ object mod extends Shortcut {
       * @param callback Callback triggered when the compilation has finished.
       */
     def compile(config: Config, callback: CompileCallback): SVGSpriter = js.native
+    
+    /**
+      * Simple Promise wrapper on `SVGSpriter.compile`.
+      * @param config Configuration object (same as in `SVGSpriter.compile`).
+      */
+    def compileAsync(): js.Promise[Data] = js.native
+    def compileAsync(config: Config): js.Promise[Data] = js.native
     
     /**
       * Accessing the intermediate SVG resources

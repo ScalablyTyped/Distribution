@@ -25,7 +25,7 @@ object TextDocumentItem {
   ): typings.vscodeLanguageserverTypes.mod.TextDocumentItem = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(uri.asInstanceOf[js.Any], languageId.asInstanceOf[js.Any], version.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[typings.vscodeLanguageserverTypes.mod.TextDocumentItem]
   
   /**
-    * Checks whether the given literal conforms to the [TextDocumentItem](#TextDocumentItem) interface.
+    * Checks whether the given literal conforms to the {@link TextDocumentItem} interface.
     */
   inline def is(value: Any): /* is vscode-languageserver-types.vscode-languageserver-types.TextDocumentItem */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.TextDocumentItem */ Boolean]
 }

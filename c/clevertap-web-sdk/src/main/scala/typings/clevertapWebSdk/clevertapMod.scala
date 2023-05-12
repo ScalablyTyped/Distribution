@@ -28,6 +28,11 @@ object clevertapMod {
   @js.native
   trait CleverTap extends StObject {
     
+    def addMultiValueForKey(key: Any, value: String): Unit = js.native
+    def addMultiValueForKey(key: Any, value: Double): Unit = js.native
+    
+    def addMultiValuesForKey(key: Any, value: js.Array[String | Double]): Unit = js.native
+    
     def clear(): Unit = js.native
     
     var enablePersonalization: Boolean = js.native
@@ -36,12 +41,18 @@ object clevertapMod {
     
     def getCleverTapID(): String | Null = js.native
     
+    def handleDecrementValue(key: Any, value: Double): Unit = js.native
+    
+    def handleIncrementValue(key: Any, value: Double): Unit = js.native
+    
     def init(accountId: String): Unit = js.native
     def init(accountId: String, region: Unit, targetDomain: String): Unit = js.native
     def init(accountId: String, region: Region): Unit = js.native
     def init(accountId: String, region: Region, targetDomain: String): Unit = js.native
     
     def logout(): Unit = js.native
+    
+    def notificationCallback(arg: notificationCallbackData): Any = js.native
     
     var notifications: NotificationHandler = js.native
     
@@ -55,13 +66,67 @@ object clevertapMod {
     
     def raiseNotificationClicked(): Unit = js.native
     
+    def removeMultiValueForKey(key: Any, value: String): Unit = js.native
+    def removeMultiValueForKey(key: Any, value: Double): Unit = js.native
+    
+    def removeMultiValuesForKey(key: Any, value: js.Array[String | Double]): Unit = js.native
+    
+    def renderNotificationClicked(detail: CustomNotificationEvent): Unit = js.native
+    
+    def renderNotificationViewed(detail: CustomNotificationEvent): Unit = js.native
+    
     var session: Session = js.native
     
     def setLogLevel(logLevel: `0` | `1` | `2` | `3`): Unit = js.native
     
+    def setOffline(arg: Boolean): Unit = js.native
+    
     var spa: Boolean = js.native
     
     var user: User = js.native
+  }
+  
+  trait CustomNotificationEvent extends StObject {
+    
+    // evtData?: any;
+    var kv: js.UndefOr[Any] = js.undefined
+    
+    var msgCTkv: js.UndefOr[Any] = js.undefined
+    
+    var msgId: String
+    
+    var pivotId: js.UndefOr[String] = js.undefined
+    
+    var wzrk_slideNo: js.UndefOr[Double] = js.undefined
+  }
+  object CustomNotificationEvent {
+    
+    inline def apply(msgId: String): CustomNotificationEvent = {
+      val __obj = js.Dynamic.literal(msgId = msgId.asInstanceOf[js.Any])
+      __obj.asInstanceOf[CustomNotificationEvent]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomNotificationEvent] (val x: Self) extends AnyVal {
+      
+      inline def setKv(value: Any): Self = StObject.set(x, "kv", value.asInstanceOf[js.Any])
+      
+      inline def setKvUndefined: Self = StObject.set(x, "kv", js.undefined)
+      
+      inline def setMsgCTkv(value: Any): Self = StObject.set(x, "msgCTkv", value.asInstanceOf[js.Any])
+      
+      inline def setMsgCTkvUndefined: Self = StObject.set(x, "msgCTkv", js.undefined)
+      
+      inline def setMsgId(value: String): Self = StObject.set(x, "msgId", value.asInstanceOf[js.Any])
+      
+      inline def setPivotId(value: String): Self = StObject.set(x, "pivotId", value.asInstanceOf[js.Any])
+      
+      inline def setPivotIdUndefined: Self = StObject.set(x, "pivotId", js.undefined)
+      
+      inline def setWzrk_slideNo(value: Double): Self = StObject.set(x, "wzrk_slideNo", value.asInstanceOf[js.Any])
+      
+      inline def setWzrk_slideNoUndefined: Self = StObject.set(x, "wzrk_slideNo", js.undefined)
+    }
   }
   
   type EventData = js.Object
@@ -488,5 +553,27 @@ object clevertapMod {
        with Array[Any] {
     
     def clear(): Unit = js.native
+  }
+  
+  trait notificationCallbackData extends StObject {
+    
+    var msgContent: String
+    
+    var msgId: String
+  }
+  object notificationCallbackData {
+    
+    inline def apply(msgContent: String, msgId: String): notificationCallbackData = {
+      val __obj = js.Dynamic.literal(msgContent = msgContent.asInstanceOf[js.Any], msgId = msgId.asInstanceOf[js.Any])
+      __obj.asInstanceOf[notificationCallbackData]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: notificationCallbackData] (val x: Self) extends AnyVal {
+      
+      inline def setMsgContent(value: String): Self = StObject.set(x, "msgContent", value.asInstanceOf[js.Any])
+      
+      inline def setMsgId(value: String): Self = StObject.set(x, "msgId", value.asInstanceOf[js.Any])
+    }
   }
 }

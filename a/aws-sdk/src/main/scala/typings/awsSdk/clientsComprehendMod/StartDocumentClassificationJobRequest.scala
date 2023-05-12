@@ -12,14 +12,19 @@ trait StartDocumentClassificationJobRequest extends StObject {
   var ClientRequestToken: js.UndefOr[ClientRequestTokenString] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the AWS Identity and Access Management (IAM) role that grants Amazon Comprehend read access to your input data.
+    * The Amazon Resource Name (ARN) of the IAM role that grants Amazon Comprehend read access to your input data.
     */
   var DataAccessRoleArn: IamRoleArn
   
   /**
     * The Amazon Resource Name (ARN) of the document classifier to use to process the job.
     */
-  var DocumentClassifierArn: typings.awsSdk.clientsComprehendMod.DocumentClassifierArn
+  var DocumentClassifierArn: js.UndefOr[typings.awsSdk.clientsComprehendMod.DocumentClassifierArn] = js.undefined
+  
+  /**
+    * The Amazon Resource Number (ARN) of the flywheel associated with the model to use.
+    */
+  var FlywheelArn: js.UndefOr[ComprehendFlywheelArn] = js.undefined
   
   /**
     * Specifies the format and location of the input data for the job.
@@ -37,12 +42,12 @@ trait StartDocumentClassificationJobRequest extends StObject {
   var OutputDataConfig: typings.awsSdk.clientsComprehendMod.OutputDataConfig
   
   /**
-    * Tags to be associated with the document classification job. A tag is a key-value pair that adds metadata to a resource used by Amazon Comprehend. For example, a tag with "Sales" as the key might be added to a resource to indicate its use by the sales department.
+    * Tags to associate with the document classification job. A tag is a key-value pair that adds metadata to a resource used by Amazon Comprehend. For example, a tag with "Sales" as the key might be added to a resource to indicate its use by the sales department.
     */
   var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
-    * ID for the AWS Key Management Service (KMS) key that Amazon Comprehend uses to encrypt data on the storage volume attached to the ML compute instance(s) that process the analysis job. The VolumeKmsKeyId can be either of the following formats:   KMS Key ID: "1234abcd-12ab-34cd-56ef-1234567890ab"    Amazon Resource Name (ARN) of a KMS Key: "arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab"   
+    * ID for the Amazon Web Services Key Management Service (KMS) key that Amazon Comprehend uses to encrypt data on the storage volume attached to the ML compute instance(s) that process the analysis job. The VolumeKmsKeyId can be either of the following formats:   KMS Key ID: "1234abcd-12ab-34cd-56ef-1234567890ab"    Amazon Resource Name (ARN) of a KMS Key: "arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab"   
     */
   var VolumeKmsKeyId: js.UndefOr[KmsKeyId] = js.undefined
   
@@ -55,11 +60,10 @@ object StartDocumentClassificationJobRequest {
   
   inline def apply(
     DataAccessRoleArn: IamRoleArn,
-    DocumentClassifierArn: DocumentClassifierArn,
     InputDataConfig: InputDataConfig,
     OutputDataConfig: OutputDataConfig
   ): StartDocumentClassificationJobRequest = {
-    val __obj = js.Dynamic.literal(DataAccessRoleArn = DataAccessRoleArn.asInstanceOf[js.Any], DocumentClassifierArn = DocumentClassifierArn.asInstanceOf[js.Any], InputDataConfig = InputDataConfig.asInstanceOf[js.Any], OutputDataConfig = OutputDataConfig.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(DataAccessRoleArn = DataAccessRoleArn.asInstanceOf[js.Any], InputDataConfig = InputDataConfig.asInstanceOf[js.Any], OutputDataConfig = OutputDataConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartDocumentClassificationJobRequest]
   }
   
@@ -73,6 +77,12 @@ object StartDocumentClassificationJobRequest {
     inline def setDataAccessRoleArn(value: IamRoleArn): Self = StObject.set(x, "DataAccessRoleArn", value.asInstanceOf[js.Any])
     
     inline def setDocumentClassifierArn(value: DocumentClassifierArn): Self = StObject.set(x, "DocumentClassifierArn", value.asInstanceOf[js.Any])
+    
+    inline def setDocumentClassifierArnUndefined: Self = StObject.set(x, "DocumentClassifierArn", js.undefined)
+    
+    inline def setFlywheelArn(value: ComprehendFlywheelArn): Self = StObject.set(x, "FlywheelArn", value.asInstanceOf[js.Any])
+    
+    inline def setFlywheelArnUndefined: Self = StObject.set(x, "FlywheelArn", js.undefined)
     
     inline def setInputDataConfig(value: InputDataConfig): Self = StObject.set(x, "InputDataConfig", value.asInstanceOf[js.Any])
     

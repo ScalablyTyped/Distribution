@@ -31,7 +31,6 @@ open class Line () extends Object {
   
   /**
     * Recalculates line points given width and height
-    * @private
     */
   def calcLinePoints(): X1 = js.native
   

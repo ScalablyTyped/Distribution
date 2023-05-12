@@ -66,6 +66,12 @@ trait PostProcessRenderPipelineManager extends StObject {
   def enableEffectInPipeline(renderPipelineName: String, renderEffectName: String, cameras: Camera): Unit = js.native
   
   /**
+    * Remove the pipeline from the manager
+    * @param renderPipelineName the name of the pipeline to remove
+    */
+  def removePipeline(renderPipelineName: String): Unit = js.native
+  
+  /**
     * Gets the list of supported render pipelines
     */
   def supportedPipelines: js.Array[PostProcessRenderPipeline] = js.native

@@ -1,7 +1,7 @@
 
 # Scala.js typings for vfile-location
 
-Typings are for version 4.0.1
+Typings are for version 4.1.0
 
 ## Library description:
 vfile utility to convert between positional (line and column-based) and offset (range-based) locations

@@ -1,12 +1,9 @@
 package typings.ipfsBitswap
 
 import typings.events.mod.EventEmitter
-import typings.ipfsBitswap.anon.ComputeThrottleMaxQueueSize
-import typings.ipfsBitswap.anon.ComputeThrottleTimeout
 import typings.ipfsBitswap.distSrcStatsStatMod.Stat
-import typings.libp2p.mod.Libp2p
-import typings.multiformats.distTypesSrcLinkInterfaceMod.Version
-import typings.std.Map
+import typings.libp2pInterfaceLibp2p.mod.Libp2p
+import typings.libp2pInterfacePeerId.mod.PeerId
 import typings.std.Record
 import typings.vascosantosMovingAverage.mod.IMovingAverage
 import org.scalablytyped.runtime.StObject
@@ -18,65 +15,77 @@ object distSrcStatsMod {
   @JSImport("ipfs-bitswap/dist/src/stats", "Stats")
   @js.native
   open class Stats protected () extends EventEmitter {
-    /**
-      * @param {import('libp2p').Libp2p} libp2p
-      * @param {string[]} [initialCounters]
-      * @param {object} _options
-      * @param {boolean} _options.enabled
-      * @param {number} _options.computeThrottleTimeout
-      * @param {number} _options.computeThrottleMaxQueueSize
-      */
-    def this(libp2p: Libp2p) = this()
-    def this(libp2p: Libp2p, initialCounters: js.Array[String]) = this()
-    def this(libp2p: Libp2p, initialCounters: js.Array[String], _options: ComputeThrottleMaxQueueSize) = this()
-    def this(libp2p: Libp2p, initialCounters: Unit, _options: ComputeThrottleMaxQueueSize) = this()
+    def this(libp2p: Libp2p[Record[String, Any]]) = this()
+    def this(libp2p: Libp2p[Record[String, Any]], initialCounters: js.Array[String]) = this()
+    def this(libp2p: Libp2p[Record[String, Any]], initialCounters: js.Array[String], _options: StatsOptions) = this()
+    def this(libp2p: Libp2p[Record[String, Any]], initialCounters: Unit, _options: StatsOptions) = this()
     
-    var _enabled: Boolean = js.native
+    /* private */ var _enabled: Any = js.native
     
-    var _global: Stat = js.native
+    /* private */ val _global: Any = js.native
     
-    var _initialCounters: js.Array[String] = js.native
+    /* private */ val _initialCounters: Any = js.native
     
-    var _options: ComputeThrottleTimeout = js.native
+    /* private */ val _options: Any = js.native
     
-    /** @type {Map<string, Stat>} */
-    var _peers: Map[String, Stat] = js.native
+    /* private */ val _peers: Any = js.native
     
     def disable(): Unit = js.native
     
-    /**
-      * @param {PeerId} peer
-      */
     def disconnected(peer: PeerId): Unit = js.native
     
     def enable(): Unit = js.native
     
     def forPeer(peerId: String): js.UndefOr[Stat] = js.native
-    /**
-      * @param {PeerId|string} peerId
-      * @returns {Stat|undefined}
-      */
     def forPeer(peerId: PeerId): js.UndefOr[Stat] = js.native
     
     def movingAverages: Record[String, Record[Double, IMovingAverage]] = js.native
     
-    /**
-      *
-      * @param {string|null} peer
-      * @param {string} counter
-      * @param {number} inc
-      */
     def push(peer: String, counter: String, inc: Double): Unit = js.native
-    def push(peer: Null, counter: String, inc: Double): Unit = js.native
+    def push(peer: Unit, counter: String, inc: Double): Unit = js.native
     
     def snapshot: Record[String, js.BigInt] = js.native
     
     def stop(): Unit = js.native
   }
   
-  type AverageIntervals = js.Tuple3[Double, Double, Double]
-  
-  type CID = typings.multiformats.mod.CID[Any, Double, Double, Version]
-  
-  type PeerId = typings.libp2pInterfacePeerId.mod.PeerId
+  trait StatsOptions extends StObject {
+    
+    var computeThrottleMaxQueueSize: js.UndefOr[Double] = js.undefined
+    
+    var computeThrottleTimeout: js.UndefOr[Double] = js.undefined
+    
+    var enabled: js.UndefOr[Boolean] = js.undefined
+    
+    var movingAverageIntervals: js.UndefOr[js.Array[Double]] = js.undefined
+  }
+  object StatsOptions {
+    
+    inline def apply(): StatsOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[StatsOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatsOptions] (val x: Self) extends AnyVal {
+      
+      inline def setComputeThrottleMaxQueueSize(value: Double): Self = StObject.set(x, "computeThrottleMaxQueueSize", value.asInstanceOf[js.Any])
+      
+      inline def setComputeThrottleMaxQueueSizeUndefined: Self = StObject.set(x, "computeThrottleMaxQueueSize", js.undefined)
+      
+      inline def setComputeThrottleTimeout(value: Double): Self = StObject.set(x, "computeThrottleTimeout", value.asInstanceOf[js.Any])
+      
+      inline def setComputeThrottleTimeoutUndefined: Self = StObject.set(x, "computeThrottleTimeout", js.undefined)
+      
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      
+      inline def setMovingAverageIntervals(value: js.Array[Double]): Self = StObject.set(x, "movingAverageIntervals", value.asInstanceOf[js.Any])
+      
+      inline def setMovingAverageIntervalsUndefined: Self = StObject.set(x, "movingAverageIntervals", js.undefined)
+      
+      inline def setMovingAverageIntervalsVarargs(value: Double*): Self = StObject.set(x, "movingAverageIntervals", js.Array(value*))
+    }
+  }
 }

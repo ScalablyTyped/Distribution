@@ -6,4 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("mongodb", "ConnectionPoolClearedEvent")
 @js.native
-open class ConnectionPoolClearedEvent () extends ConnectionPoolMonitoringEvent
+open class ConnectionPoolClearedEvent () extends ConnectionPoolMonitoringEvent {
+  
+  /* Excluded from this release type: serviceId */
+  var interruptInUseConnections: js.UndefOr[Boolean] = js.native
+}

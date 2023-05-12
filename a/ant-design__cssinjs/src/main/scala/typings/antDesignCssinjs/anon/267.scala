@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.InsetInlineStart
+import typings.csstype.mod.Property.TextAlignLast
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,13 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `267` extends StObject {
   
   var value: js.UndefOr[
-    (InsetInlineStart[Double | String]) | (js.Array[
+    TextAlignLast | (js.Array[
       (Extract[
-        js.UndefOr[
-          (InsetInlineStart[Double | String]) | (js.Array[NonNullable[js.UndefOr[InsetInlineStart[Double | String]]]])
-        ], 
+        js.UndefOr[TextAlignLast | js.Array[NonNullable[js.UndefOr[TextAlignLast]]]], 
         String
-      ]) | (NonNullable[js.UndefOr[InsetInlineStart[Double | String]]])
+      ]) | NonNullable[js.UndefOr[TextAlignLast]]
     ])
   ] = js.native
 }

@@ -12,7 +12,7 @@ open class PolarGrid protected ()
   def this(props: PolarGridProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: PolarGridProps, context: Any) = this()
 }

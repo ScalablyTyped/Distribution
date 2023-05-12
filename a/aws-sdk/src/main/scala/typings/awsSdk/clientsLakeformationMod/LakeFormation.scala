@@ -225,6 +225,20 @@ trait LakeFormation extends Service {
   ): Request[ExtendTransactionResponse, AWSError] = js.native
   
   /**
+    * Returns a data cells filter.
+    */
+  def getDataCellsFilter(): Request[GetDataCellsFilterResponse, AWSError] = js.native
+  def getDataCellsFilter(callback: js.Function2[/* err */ AWSError, /* data */ GetDataCellsFilterResponse, Unit]): Request[GetDataCellsFilterResponse, AWSError] = js.native
+  /**
+    * Returns a data cells filter.
+    */
+  def getDataCellsFilter(params: GetDataCellsFilterRequest): Request[GetDataCellsFilterResponse, AWSError] = js.native
+  def getDataCellsFilter(
+    params: GetDataCellsFilterRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetDataCellsFilterResponse, Unit]
+  ): Request[GetDataCellsFilterResponse, AWSError] = js.native
+  
+  /**
     * Retrieves the list of the data lake administrators of a Lake Formation-managed data lake. 
     */
   def getDataLakeSettings(): Request[GetDataLakeSettingsResponse, AWSError] = js.native
@@ -593,6 +607,20 @@ trait LakeFormation extends Service {
     params: StartTransactionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ StartTransactionResponse, Unit]
   ): Request[StartTransactionResponse, AWSError] = js.native
+  
+  /**
+    * Updates a data cell filter.
+    */
+  def updateDataCellsFilter(): Request[UpdateDataCellsFilterResponse, AWSError] = js.native
+  def updateDataCellsFilter(callback: js.Function2[/* err */ AWSError, /* data */ UpdateDataCellsFilterResponse, Unit]): Request[UpdateDataCellsFilterResponse, AWSError] = js.native
+  /**
+    * Updates a data cell filter.
+    */
+  def updateDataCellsFilter(params: UpdateDataCellsFilterRequest): Request[UpdateDataCellsFilterResponse, AWSError] = js.native
+  def updateDataCellsFilter(
+    params: UpdateDataCellsFilterRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateDataCellsFilterResponse, Unit]
+  ): Request[UpdateDataCellsFilterResponse, AWSError] = js.native
   
   /**
     * Updates the list of possible values for the specified LF-tag key. If the LF-tag does not exist, the operation throws an EntityNotFoundException. The values in the delete key values will be deleted from list of possible values. If any value in the delete key values is attached to a resource, then API errors out with a 400 Exception - "Update not allowed". Untag the attribute before deleting the LF-tag key's value. 

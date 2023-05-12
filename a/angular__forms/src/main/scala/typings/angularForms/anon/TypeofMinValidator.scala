@@ -22,7 +22,8 @@ trait TypeofMinValidator
     js.Object, 
     scala.Nothing, 
     scala.Nothing, 
-    `false`
+    `false`, 
+    scala.Nothing
   ] = js.native
   
   var ɵfac: ɵɵFactoryDeclaration[MinValidator, scala.Nothing] = js.native

@@ -1,7 +1,7 @@
 
 # Scala.js typings for hibp
 
-Typings are for version 11.1.0
+Typings are for version 13.0.0
 
 ## Library description:
 A Promise-based client for the 'Have I been pwned?' service.

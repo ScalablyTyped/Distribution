@@ -13,7 +13,7 @@ trait GetLaunchProfileRequestwa extends StObject {
   var $waiter: js.UndefOr[WaiterConfiguration] = js.undefined
   
   /**
-    * The Launch Profile ID.
+    * The ID of the launch profile used to control access from the streaming session.
     */
   var launchProfileId: String
   

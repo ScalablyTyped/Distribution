@@ -1,7 +1,7 @@
 
 # Scala.js typings for achingbrain__nat-port-mapper
 
-Typings are for version 1.0.7
+Typings are for version 1.0.8
 
 
 

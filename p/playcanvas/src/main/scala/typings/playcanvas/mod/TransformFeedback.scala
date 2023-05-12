@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** @typedef {import('./graphics-device.js').GraphicsDevice} GraphicsDevice */
 /**
   * This object allows you to configure and use the transform feedback feature (WebGL2 only). How to
   * use:
@@ -16,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 3. Create the shader using `TransformFeedback.createShader(device, vsCode, yourShaderName)`.
   * 4. Create/acquire the input vertex buffer. Can be any VertexBuffer, either manually created, or
   * from a Mesh.
-  * 5. Create the TransformFeedback object: `var tf = new TransformFeedback(inputBuffer)`. This
+  * 5. Create the TransformFeedback object: `const tf = new TransformFeedback(inputBuffer)`. This
   * object will internally create an output buffer.
   * 6. Run the shader: `tf.process(shader)`. Shader will take the input buffer, process it and write
   * to the output buffer, then the input/output buffers will be automatically swapped, so you'll
@@ -48,10 +47,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * TransformExample.attributes.add('material', { type: 'asset', assetType: 'material' });
   *
   * TransformExample.prototype.initialize = function() {
-  *     var device = this.app.graphicsDevice;
-  *     var mesh = pc.createTorus(device, { tubeRadius: 0.01, ringRadius: 3 });
-  *     var meshInstance = new pc.MeshInstance(mesh, this.material.resource);
-  *     var entity = new pc.Entity();
+  *     const device = this.app.graphicsDevice;
+  *     const mesh = pc.createTorus(device, { tubeRadius: 0.01, ringRadius: 3 });
+  *     const meshInstance = new pc.MeshInstance(mesh, this.material.resource);
+  *     const entity = new pc.Entity();
   *     entity.addComponent('render', {
   *         type: 'asset',
   *         meshInstances: [meshInstance]
@@ -60,7 +59,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   *     // if webgl2 is not supported, transform-feedback is not available
   *     if (!device.webgl2) return;
-  *     var inputBuffer = mesh.vertexBuffer;
+  *     const inputBuffer = mesh.vertexBuffer;
   *     this.tf = new pc.TransformFeedback(inputBuffer);
   *     this.shader = pc.TransformFeedback.createShader(device, this.shaderCode.resource, "tfMoveUp");
   * };
@@ -136,7 +135,8 @@ object TransformFeedback {
   /**
     * Creates a transform feedback ready vertex shader from code.
     *
-    * @param {GraphicsDevice} graphicsDevice - The graphics device used by the renderer.
+    * @param {import('./graphics-device.js').GraphicsDevice} graphicsDevice - The graphics device
+    * used by the renderer.
     * @param {string} vertexCode - Vertex shader code. Should contain output variables starting with "out_".
     * @param {string} name - Unique name for caching the shader.
     * @returns {Shader} A shader to use in the process() function.

@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object ckeditorCkeditor5AutosaveStrings {
   
   @js.native
-  sealed trait Autosave extends StObject
-  inline def Autosave: Autosave = "Autosave".asInstanceOf[Autosave]
+  sealed trait error extends StObject
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
   sealed trait saving extends StObject

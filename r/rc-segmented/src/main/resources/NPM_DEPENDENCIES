@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "rc-segmented" : "2.1.0"
+      "rc-segmented" : "2.2.0"
     }
   ],
   "test-dependencies" : [
     {
-      "rc-segmented" : "2.1.0"
+      "rc-segmented" : "2.2.0"
     }
   ],
   "compile-devDependencies" : [

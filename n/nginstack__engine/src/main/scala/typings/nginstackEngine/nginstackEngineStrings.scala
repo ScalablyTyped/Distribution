@@ -4,7 +4,9 @@ import typings.nginstackEngine.libCryptoDigestTypeMod.DigestType
 import typings.nginstackEngine.libDatasetDataSetDataTypeMod.DataSetFieldType
 import typings.nginstackEngine.libDateDateFormatMod.DateFormatType
 import typings.nginstackEngine.libDomNodeMod.NodeType
-import typings.nginstackEngine.libMailPop3Mod.AuthMode
+import typings.nginstackEngine.libEmailPop3Mod.AuthMode
+import typings.nginstackEngine.libEncodingBase32Mod.Base32Variant
+import typings.nginstackEngine.libXmlTokenTypeMod.TokenString
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -90,6 +92,24 @@ object nginstackEngineStrings {
   inline def APOP: APOP = "APOP".asInstanceOf[APOP]
   
   @js.native
+  sealed trait CData
+    extends StObject
+       with TokenString
+  inline def CData: CData = "CData".asInstanceOf[CData]
+  
+  @js.native
+  sealed trait Characters
+    extends StObject
+       with TokenString
+  inline def Characters: Characters = "Characters".asInstanceOf[Characters]
+  
+  @js.native
+  sealed trait Comment
+    extends StObject
+       with TokenString
+  inline def Comment: Comment = "Comment".asInstanceOf[Comment]
+  
+  @js.native
   sealed trait DDMM
     extends StObject
        with DateFormatType
@@ -100,6 +120,36 @@ object nginstackEngineStrings {
     extends StObject
        with DateFormatType
   inline def DDMMYYYY: DDMMYYYY = "DDMMYYYY".asInstanceOf[DDMMYYYY]
+  
+  @js.native
+  sealed trait Declaration
+    extends StObject
+       with TokenString
+  inline def Declaration: Declaration = "Declaration".asInstanceOf[Declaration]
+  
+  @js.native
+  sealed trait DoctypeDefinition
+    extends StObject
+       with TokenString
+  inline def DoctypeDefinition: DoctypeDefinition = "DoctypeDefinition".asInstanceOf[DoctypeDefinition]
+  
+  @js.native
+  sealed trait EmptyElement
+    extends StObject
+       with TokenString
+  inline def EmptyElement: EmptyElement = "EmptyElement".asInstanceOf[EmptyElement]
+  
+  @js.native
+  sealed trait EndDocument
+    extends StObject
+       with TokenString
+  inline def EndDocument: EndDocument = "EndDocument".asInstanceOf[EndDocument]
+  
+  @js.native
+  sealed trait EndElement
+    extends StObject
+       with TokenString
+  inline def EndElement: EndElement = "EndElement".asInstanceOf[EndElement]
   
   @js.native
   sealed trait MMMYYYY
@@ -114,10 +164,28 @@ object nginstackEngineStrings {
   inline def MMYYYY: MMYYYY = "MMYYYY".asInstanceOf[MMYYYY]
   
   @js.native
+  sealed trait NoToken
+    extends StObject
+       with TokenString
+  inline def NoToken: NoToken = "NoToken".asInstanceOf[NoToken]
+  
+  @js.native
   sealed trait PASS
     extends StObject
        with AuthMode
   inline def PASS: PASS = "PASS".asInstanceOf[PASS]
+  
+  @js.native
+  sealed trait ProcessingInstruction
+    extends StObject
+       with TokenString
+  inline def ProcessingInstruction: ProcessingInstruction = "ProcessingInstruction".asInstanceOf[ProcessingInstruction]
+  
+  @js.native
+  sealed trait StartElement
+    extends StObject
+       with TokenString
+  inline def StartElement: StartElement = "StartElement".asInstanceOf[StartElement]
   
   @js.native
   sealed trait WWYYYY
@@ -142,6 +210,42 @@ object nginstackEngineStrings {
   inline def arraybuffer: arraybuffer = "arraybuffer".asInstanceOf[arraybuffer]
   
   @js.native
+  sealed trait base32
+    extends StObject
+       with Base32Variant
+  inline def base32: base32 = "base32".asInstanceOf[base32]
+  
+  @js.native
+  sealed trait base32_dnscurve
+    extends StObject
+       with Base32Variant
+  inline def base32_dnscurve: base32_dnscurve = "base32_dnscurve".asInstanceOf[base32_dnscurve]
+  
+  @js.native
+  sealed trait base32_dnssec
+    extends StObject
+       with Base32Variant
+  inline def base32_dnssec: base32_dnssec = "base32_dnssec".asInstanceOf[base32_dnssec]
+  
+  @js.native
+  sealed trait base32_nopad
+    extends StObject
+       with Base32Variant
+  inline def base32_nopad: base32_nopad = "base32_nopad".asInstanceOf[base32_nopad]
+  
+  @js.native
+  sealed trait base32hex
+    extends StObject
+       with Base32Variant
+  inline def base32hex: base32hex = "base32hex".asInstanceOf[base32hex]
+  
+  @js.native
+  sealed trait base32hex_nopad
+    extends StObject
+       with Base32Variant
+  inline def base32hex_nopad: base32hex_nopad = "base32hex_nopad".asInstanceOf[base32hex_nopad]
+  
+  @js.native
   sealed trait bigint extends StObject
   inline def bigint: bigint = "bigint".asInstanceOf[bigint]
   
@@ -158,6 +262,14 @@ object nginstackEngineStrings {
   inline def boolean: boolean = "boolean".asInstanceOf[boolean]
   
   @js.native
+  sealed trait bzip2 extends StObject
+  inline def bzip2: bzip2 = "bzip2".asInstanceOf[bzip2]
+  
+  @js.native
+  sealed trait create extends StObject
+  inline def create: create = "create".asInstanceOf[create]
+  
+  @js.native
   sealed trait date
     extends StObject
        with DataSetFieldType
@@ -168,6 +280,10 @@ object nginstackEngineStrings {
     extends StObject
        with DataSetFieldType
   inline def datetime: datetime = "datetime".asInstanceOf[datetime]
+  
+  @js.native
+  sealed trait deflate extends StObject
+  inline def deflate: deflate = "deflate".asInstanceOf[deflate]
   
   @js.native
   sealed trait function extends StObject
@@ -220,4 +336,16 @@ object nginstackEngineStrings {
   @js.native
   sealed trait undefined extends StObject
   inline def undefined: undefined = "undefined".asInstanceOf[undefined]
+  
+  @js.native
+  sealed trait unzip extends StObject
+  inline def unzip: unzip = "unzip".asInstanceOf[unzip]
+  
+  @js.native
+  sealed trait zip extends StObject
+  inline def zip: zip = "zip".asInstanceOf[zip]
+  
+  @js.native
+  sealed trait zstd extends StObject
+  inline def zstd: zstd = "zstd".asInstanceOf[zstd]
 }

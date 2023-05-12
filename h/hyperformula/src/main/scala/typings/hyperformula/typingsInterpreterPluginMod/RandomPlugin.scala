@@ -1,7 +1,7 @@
 package typings.hyperformula.typingsInterpreterPluginMod
 
-import typings.hyperformula.anon.RAND
 import typings.hyperformula.typingsInterpreterInterpreterMod.Interpreter
+import typings.hyperformula.typingsInterpreterPluginFunctionPluginMod.ImplementedFunctions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,6 +21,6 @@ object RandomPlugin {
   
   @JSImport("hyperformula/typings/interpreter/plugin", "RandomPlugin.implementedFunctions")
   @js.native
-  def implementedFunctions: RAND = js.native
-  inline def implementedFunctions_=(x: RAND): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("implementedFunctions")(x.asInstanceOf[js.Any])
+  def implementedFunctions: ImplementedFunctions = js.native
+  inline def implementedFunctions_=(x: ImplementedFunctions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("implementedFunctions")(x.asInstanceOf[js.Any])
 }

@@ -25,6 +25,13 @@ trait WCSLayerProperties
   var coverageId: js.UndefOr[String] = js.undefined
   
   /**
+    * Coverage information retrieved from the WCS Server.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#coverageInfo)
+    */
+  var coverageInfo: js.UndefOr[CoverageInfo] = js.undefined
+  
+  /**
     * Use this property to append custom parameters to all WCS requests.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#customParameters)
@@ -116,6 +123,10 @@ object WCSLayerProperties {
     inline def setCoverageId(value: String): Self = StObject.set(x, "coverageId", value.asInstanceOf[js.Any])
     
     inline def setCoverageIdUndefined: Self = StObject.set(x, "coverageId", js.undefined)
+    
+    inline def setCoverageInfo(value: CoverageInfo): Self = StObject.set(x, "coverageInfo", value.asInstanceOf[js.Any])
+    
+    inline def setCoverageInfoUndefined: Self = StObject.set(x, "coverageInfo", js.undefined)
     
     inline def setCustomParameters(value: Any): Self = StObject.set(x, "customParameters", value.asInstanceOf[js.Any])
     

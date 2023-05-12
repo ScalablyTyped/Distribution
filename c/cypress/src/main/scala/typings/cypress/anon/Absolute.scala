@@ -20,11 +20,13 @@ trait Absolute extends StObject {
     * name relative to the project root, like "cypress/integration/spec.js"
     */
   var relative: String
+  
+  var relativeToCommonRoot: String
 }
 object Absolute {
   
-  inline def apply(absolute: String, name: String, relative: String): Absolute = {
-    val __obj = js.Dynamic.literal(absolute = absolute.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], relative = relative.asInstanceOf[js.Any])
+  inline def apply(absolute: String, name: String, relative: String, relativeToCommonRoot: String): Absolute = {
+    val __obj = js.Dynamic.literal(absolute = absolute.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], relative = relative.asInstanceOf[js.Any], relativeToCommonRoot = relativeToCommonRoot.asInstanceOf[js.Any])
     __obj.asInstanceOf[Absolute]
   }
   
@@ -36,5 +38,7 @@ object Absolute {
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setRelative(value: String): Self = StObject.set(x, "relative", value.asInstanceOf[js.Any])
+    
+    inline def setRelativeToCommonRoot(value: String): Self = StObject.set(x, "relativeToCommonRoot", value.asInstanceOf[js.Any])
   }
 }

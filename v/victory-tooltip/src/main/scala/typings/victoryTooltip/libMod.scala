@@ -19,7 +19,7 @@ object libMod {
     def this(props: FlyoutProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: FlyoutProps, context: Any) = this()
   }
@@ -30,7 +30,7 @@ object libMod {
     def this(props: VictoryTooltipProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: VictoryTooltipProps, context: Any) = this()
   }

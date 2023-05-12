@@ -85,6 +85,20 @@ trait BackupGateway extends Service {
   ): Request[DisassociateGatewayFromServerOutput, AWSError] = js.native
   
   /**
+    * Retrieves the bandwidth rate limit schedule for a specified gateway. By default, gateways do not have bandwidth rate limit schedules, which means no bandwidth rate limiting is in effect. Use this to get a gateway's bandwidth rate limit schedule.
+    */
+  def getBandwidthRateLimitSchedule(): Request[GetBandwidthRateLimitScheduleOutput, AWSError] = js.native
+  def getBandwidthRateLimitSchedule(callback: js.Function2[/* err */ AWSError, /* data */ GetBandwidthRateLimitScheduleOutput, Unit]): Request[GetBandwidthRateLimitScheduleOutput, AWSError] = js.native
+  /**
+    * Retrieves the bandwidth rate limit schedule for a specified gateway. By default, gateways do not have bandwidth rate limit schedules, which means no bandwidth rate limiting is in effect. Use this to get a gateway's bandwidth rate limit schedule.
+    */
+  def getBandwidthRateLimitSchedule(params: GetBandwidthRateLimitScheduleInput): Request[GetBandwidthRateLimitScheduleOutput, AWSError] = js.native
+  def getBandwidthRateLimitSchedule(
+    params: GetBandwidthRateLimitScheduleInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetBandwidthRateLimitScheduleOutput, Unit]
+  ): Request[GetBandwidthRateLimitScheduleOutput, AWSError] = js.native
+  
+  /**
     * By providing the ARN (Amazon Resource Name), this API returns the gateway.
     */
   def getGateway(): Request[GetGatewayOutput, AWSError] = js.native
@@ -97,6 +111,34 @@ trait BackupGateway extends Service {
     params: GetGatewayInput,
     callback: js.Function2[/* err */ AWSError, /* data */ GetGatewayOutput, Unit]
   ): Request[GetGatewayOutput, AWSError] = js.native
+  
+  /**
+    * This action requests information about the specified hypervisor to which the gateway will connect. A hypervisor is hardware, software, or firmware that creates and manages virtual machines, and allocates resources to them.
+    */
+  def getHypervisor(): Request[GetHypervisorOutput, AWSError] = js.native
+  def getHypervisor(callback: js.Function2[/* err */ AWSError, /* data */ GetHypervisorOutput, Unit]): Request[GetHypervisorOutput, AWSError] = js.native
+  /**
+    * This action requests information about the specified hypervisor to which the gateway will connect. A hypervisor is hardware, software, or firmware that creates and manages virtual machines, and allocates resources to them.
+    */
+  def getHypervisor(params: GetHypervisorInput): Request[GetHypervisorOutput, AWSError] = js.native
+  def getHypervisor(
+    params: GetHypervisorInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetHypervisorOutput, Unit]
+  ): Request[GetHypervisorOutput, AWSError] = js.native
+  
+  /**
+    * This action retrieves the property mappings for the specified hypervisor. A hypervisor property mapping displays the relationship of entity properties available from the on-premises hypervisor to the properties available in Amazon Web Services.
+    */
+  def getHypervisorPropertyMappings(): Request[GetHypervisorPropertyMappingsOutput, AWSError] = js.native
+  def getHypervisorPropertyMappings(callback: js.Function2[/* err */ AWSError, /* data */ GetHypervisorPropertyMappingsOutput, Unit]): Request[GetHypervisorPropertyMappingsOutput, AWSError] = js.native
+  /**
+    * This action retrieves the property mappings for the specified hypervisor. A hypervisor property mapping displays the relationship of entity properties available from the on-premises hypervisor to the properties available in Amazon Web Services.
+    */
+  def getHypervisorPropertyMappings(params: GetHypervisorPropertyMappingsInput): Request[GetHypervisorPropertyMappingsOutput, AWSError] = js.native
+  def getHypervisorPropertyMappings(
+    params: GetHypervisorPropertyMappingsInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetHypervisorPropertyMappingsOutput, Unit]
+  ): Request[GetHypervisorPropertyMappingsOutput, AWSError] = js.native
   
   /**
     * By providing the ARN (Amazon Resource Name), this API returns the virtual machine.
@@ -183,6 +225,34 @@ trait BackupGateway extends Service {
   ): Request[ListVirtualMachinesOutput, AWSError] = js.native
   
   /**
+    * This action sets the bandwidth rate limit schedule for a specified gateway. By default, gateways do not have a bandwidth rate limit schedule, which means no bandwidth rate limiting is in effect. Use this to initiate a gateway's bandwidth rate limit schedule.
+    */
+  def putBandwidthRateLimitSchedule(): Request[PutBandwidthRateLimitScheduleOutput, AWSError] = js.native
+  def putBandwidthRateLimitSchedule(callback: js.Function2[/* err */ AWSError, /* data */ PutBandwidthRateLimitScheduleOutput, Unit]): Request[PutBandwidthRateLimitScheduleOutput, AWSError] = js.native
+  /**
+    * This action sets the bandwidth rate limit schedule for a specified gateway. By default, gateways do not have a bandwidth rate limit schedule, which means no bandwidth rate limiting is in effect. Use this to initiate a gateway's bandwidth rate limit schedule.
+    */
+  def putBandwidthRateLimitSchedule(params: PutBandwidthRateLimitScheduleInput): Request[PutBandwidthRateLimitScheduleOutput, AWSError] = js.native
+  def putBandwidthRateLimitSchedule(
+    params: PutBandwidthRateLimitScheduleInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ PutBandwidthRateLimitScheduleOutput, Unit]
+  ): Request[PutBandwidthRateLimitScheduleOutput, AWSError] = js.native
+  
+  /**
+    * This action sets the property mappings for the specified hypervisor. A hypervisor property mapping displays the relationship of entity properties available from the on-premises hypervisor to the properties available in Amazon Web Services.
+    */
+  def putHypervisorPropertyMappings(): Request[PutHypervisorPropertyMappingsOutput, AWSError] = js.native
+  def putHypervisorPropertyMappings(callback: js.Function2[/* err */ AWSError, /* data */ PutHypervisorPropertyMappingsOutput, Unit]): Request[PutHypervisorPropertyMappingsOutput, AWSError] = js.native
+  /**
+    * This action sets the property mappings for the specified hypervisor. A hypervisor property mapping displays the relationship of entity properties available from the on-premises hypervisor to the properties available in Amazon Web Services.
+    */
+  def putHypervisorPropertyMappings(params: PutHypervisorPropertyMappingsInput): Request[PutHypervisorPropertyMappingsOutput, AWSError] = js.native
+  def putHypervisorPropertyMappings(
+    params: PutHypervisorPropertyMappingsInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ PutHypervisorPropertyMappingsOutput, Unit]
+  ): Request[PutHypervisorPropertyMappingsOutput, AWSError] = js.native
+  
+  /**
     * Set the maintenance start time for a gateway.
     */
   def putMaintenanceStartTime(): Request[PutMaintenanceStartTimeOutput, AWSError] = js.native
@@ -195,6 +265,22 @@ trait BackupGateway extends Service {
     params: PutMaintenanceStartTimeInput,
     callback: js.Function2[/* err */ AWSError, /* data */ PutMaintenanceStartTimeOutput, Unit]
   ): Request[PutMaintenanceStartTimeOutput, AWSError] = js.native
+  
+  /**
+    * This action sends a request to sync metadata across the specified virtual machines.
+    */
+  def startVirtualMachinesMetadataSync(): Request[StartVirtualMachinesMetadataSyncOutput, AWSError] = js.native
+  def startVirtualMachinesMetadataSync(
+    callback: js.Function2[/* err */ AWSError, /* data */ StartVirtualMachinesMetadataSyncOutput, Unit]
+  ): Request[StartVirtualMachinesMetadataSyncOutput, AWSError] = js.native
+  /**
+    * This action sends a request to sync metadata across the specified virtual machines.
+    */
+  def startVirtualMachinesMetadataSync(params: StartVirtualMachinesMetadataSyncInput): Request[StartVirtualMachinesMetadataSyncOutput, AWSError] = js.native
+  def startVirtualMachinesMetadataSync(
+    params: StartVirtualMachinesMetadataSyncInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ StartVirtualMachinesMetadataSyncOutput, Unit]
+  ): Request[StartVirtualMachinesMetadataSyncOutput, AWSError] = js.native
   
   /**
     * Tag the resource.

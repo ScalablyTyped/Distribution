@@ -110,6 +110,7 @@ import typings.reactIcons.reactIconsStrings.vertical
 import typings.reactIcons.reactIconsStrings.yes
 import typings.std.Element
 import typings.std.Event
+import typings.std.Record
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -117,8 +118,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
-  /* Inlined react-icons.react-icons/lib/esm/iconBase.IconBaseProps & {  attr :{} | undefined} */
-  trait IconBasePropsattrundefine extends StObject {
+  /* Inlined react-icons.react-icons/lib/esm/iconBase.IconBaseProps & {  attr :std.Record<string, string> | undefined} */
+  trait IconBasePropsattrRecordst extends StObject {
     
     // SVG Specific attributes
     var accentHeight: js.UndefOr[Double | String] = js.undefined
@@ -375,7 +376,7 @@ object anon {
     
     var ascent: js.UndefOr[Double | String] = js.undefined
     
-    var attr: js.UndefOr[js.Object] = js.undefined
+    var attr: js.UndefOr[Record[String, String]] = js.undefined
     
     var attributeName: js.UndefOr[String] = js.undefined
     
@@ -1065,15 +1066,15 @@ object anon {
     
     var zoomAndPan: js.UndefOr[String] = js.undefined
   }
-  object IconBasePropsattrundefine {
+  object IconBasePropsattrRecordst {
     
-    inline def apply(): IconBasePropsattrundefine = {
+    inline def apply(): IconBasePropsattrRecordst = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[IconBasePropsattrundefine]
+      __obj.asInstanceOf[IconBasePropsattrRecordst]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: IconBasePropsattrundefine] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: IconBasePropsattrRecordst] (val x: Self) extends AnyVal {
       
       inline def setAccentHeight(value: Double | String): Self = StObject.set(x, "accentHeight", value.asInstanceOf[js.Any])
       
@@ -1307,7 +1308,7 @@ object anon {
       
       inline def setAscentUndefined: Self = StObject.set(x, "ascent", js.undefined)
       
-      inline def setAttr(value: js.Object): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
+      inline def setAttr(value: Record[String, String]): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
       
       inline def setAttrUndefined: Self = StObject.set(x, "attr", js.undefined)
       

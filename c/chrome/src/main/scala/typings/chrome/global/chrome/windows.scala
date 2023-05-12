@@ -36,13 +36,10 @@ object windows {
   def WINDOW_ID_NONE: `-1` = js.native
   inline def WINDOW_ID_NONE_=(x: `-1`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WINDOW_ID_NONE")(x.asInstanceOf[js.Any])
   
-  inline def create(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Unit]
+  inline def create(): js.Promise[Window] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[js.Promise[Window]]
   inline def create(callback: js.Function1[/* window */ js.UndefOr[Window], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def create(createData: CreateData): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(createData.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def create(createData: CreateData): js.Promise[Window] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(createData.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Window]]
   inline def create(createData: CreateData, callback: js.Function1[/* window */ js.UndefOr[Window], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(createData.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
-  inline def create_Promise(): js.Promise[Window] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[js.Promise[Window]]
-  inline def create_Promise(createData: CreateData): js.Promise[Window] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(createData.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Window]]
   
   inline def get(windowId: Double): js.Promise[Window] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(windowId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Window]]
   inline def get(windowId: Double, callback: js.Function1[/* window */ Window, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(windowId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -84,13 +81,9 @@ object windows {
   def onRemoved: WindowIdEvent = js.native
   inline def onRemoved_=(x: WindowIdEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onRemoved")(x.asInstanceOf[js.Any])
   
-  inline def remove(windowId: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(windowId.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def remove(windowId: Double): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(windowId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   inline def remove(windowId: Double, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(windowId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def remove_Promise(windowId: Double): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(windowId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
-  
-  inline def update(windowId: Double, updateInfo: UpdateInfo): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(windowId.asInstanceOf[js.Any], updateInfo.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def update(windowId: Double, updateInfo: UpdateInfo): js.Promise[Window] = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(windowId.asInstanceOf[js.Any], updateInfo.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Window]]
   inline def update(windowId: Double, updateInfo: UpdateInfo, callback: js.Function1[/* window */ Window, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(windowId.asInstanceOf[js.Any], updateInfo.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
-  inline def update_Promise(windowId: Double, updateInfo: UpdateInfo): js.Promise[Window] = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(windowId.asInstanceOf[js.Any], updateInfo.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Window]]
 }

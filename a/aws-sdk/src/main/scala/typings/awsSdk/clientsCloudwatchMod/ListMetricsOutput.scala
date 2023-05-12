@@ -15,6 +15,11 @@ trait ListMetricsOutput extends StObject {
     * The token that marks the start of the next batch of returned results. 
     */
   var NextToken: js.UndefOr[typings.awsSdk.clientsCloudwatchMod.NextToken] = js.undefined
+  
+  /**
+    * If you are using this operation in a monitoring account, this array contains the account IDs of the source accounts where the metrics in the returned data are from. This field is a 1:1 mapping between each metric that is returned and the ID of the owning account.
+    */
+  var OwningAccounts: js.UndefOr[typings.awsSdk.clientsCloudwatchMod.OwningAccounts] = js.undefined
 }
 object ListMetricsOutput {
   
@@ -35,5 +40,11 @@ object ListMetricsOutput {
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    
+    inline def setOwningAccounts(value: OwningAccounts): Self = StObject.set(x, "OwningAccounts", value.asInstanceOf[js.Any])
+    
+    inline def setOwningAccountsUndefined: Self = StObject.set(x, "OwningAccounts", js.undefined)
+    
+    inline def setOwningAccountsVarargs(value: AccountId*): Self = StObject.set(x, "OwningAccounts", js.Array(value*))
   }
 }

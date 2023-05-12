@@ -68,6 +68,11 @@ trait TaskInput
   /**
     * The value of the input parameter as a basic type.
     */
+  var valueAvailability: js.UndefOr[Availability] = js.undefined
+  
+  /**
+    * The value of the input parameter as a basic type.
+    */
   var valueBase64Binary: js.UndefOr[String] = js.undefined
   
   /**
@@ -113,11 +118,6 @@ trait TaskInput
   /**
     * The value of the input parameter as a basic type.
     */
-  var valueContributor: js.UndefOr[Contributor] = js.undefined
-  
-  /**
-    * The value of the input parameter as a basic type.
-    */
   var valueCount: js.UndefOr[Count] = js.undefined
   
   /**
@@ -159,6 +159,11 @@ trait TaskInput
     * The value of the input parameter as a basic type.
     */
   var valueExpression: js.UndefOr[Expression] = js.undefined
+  
+  /**
+    * The value of the input parameter as a basic type.
+    */
+  var valueExtendedContactDetail: js.UndefOr[ExtendedContactDetail] = js.undefined
   
   /**
     * The value of the input parameter as a basic type.
@@ -339,6 +344,10 @@ object TaskInput {
     
     inline def setValueAttachmentUndefined: Self = StObject.set(x, "valueAttachment", js.undefined)
     
+    inline def setValueAvailability(value: Availability): Self = StObject.set(x, "valueAvailability", value.asInstanceOf[js.Any])
+    
+    inline def setValueAvailabilityUndefined: Self = StObject.set(x, "valueAvailability", js.undefined)
+    
     inline def setValueBase64Binary(value: String): Self = StObject.set(x, "valueBase64Binary", value.asInstanceOf[js.Any])
     
     inline def setValueBase64BinaryUndefined: Self = StObject.set(x, "valueBase64Binary", js.undefined)
@@ -375,10 +384,6 @@ object TaskInput {
     
     inline def setValueContactPointUndefined: Self = StObject.set(x, "valueContactPoint", js.undefined)
     
-    inline def setValueContributor(value: Contributor): Self = StObject.set(x, "valueContributor", value.asInstanceOf[js.Any])
-    
-    inline def setValueContributorUndefined: Self = StObject.set(x, "valueContributor", js.undefined)
-    
     inline def setValueCount(value: Count): Self = StObject.set(x, "valueCount", value.asInstanceOf[js.Any])
     
     inline def setValueCountUndefined: Self = StObject.set(x, "valueCount", js.undefined)
@@ -414,6 +419,10 @@ object TaskInput {
     inline def setValueExpression(value: Expression): Self = StObject.set(x, "valueExpression", value.asInstanceOf[js.Any])
     
     inline def setValueExpressionUndefined: Self = StObject.set(x, "valueExpression", js.undefined)
+    
+    inline def setValueExtendedContactDetail(value: ExtendedContactDetail): Self = StObject.set(x, "valueExtendedContactDetail", value.asInstanceOf[js.Any])
+    
+    inline def setValueExtendedContactDetailUndefined: Self = StObject.set(x, "valueExtendedContactDetail", js.undefined)
     
     inline def setValueHumanName(value: HumanName): Self = StObject.set(x, "valueHumanName", value.asInstanceOf[js.Any])
     

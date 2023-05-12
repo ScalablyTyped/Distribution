@@ -4,7 +4,7 @@ import typings.react.mod.CSSProperties
 import typings.react.mod.FunctionComponent
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
-import typings.reactHtmlEmail.anon.Strict
+import typings.reactHtmlEmail.anon.Platforms
 import typings.reactHtmlEmail.reactHtmlEmailStrings.bottom
 import typings.reactHtmlEmail.reactHtmlEmailStrings.center
 import typings.reactHtmlEmail.reactHtmlEmailStrings.left
@@ -45,7 +45,7 @@ object mod {
   @js.native
   val Span: FunctionComponent[SpanProps] = js.native
   
-  inline def configStyleValidator(config: Strict): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configStyleValidator")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def configStyleValidator(config: Platforms): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configStyleValidator")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def renderEmail(emailElement: ReactElement): String = ^.asInstanceOf[js.Dynamic].applyDynamic("renderEmail")(emailElement.asInstanceOf[js.Any]).asInstanceOf[String]
   

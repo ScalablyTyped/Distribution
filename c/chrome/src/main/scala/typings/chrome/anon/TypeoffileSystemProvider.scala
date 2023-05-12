@@ -3,9 +3,11 @@ package typings.chrome.anon
 import typings.chrome.chrome.fileSystemProvider.DirectoryPathRecursiveRequestedEvent
 import typings.chrome.chrome.fileSystemProvider.DirectoryPathRequestedEvent
 import typings.chrome.chrome.fileSystemProvider.EntryPathRecursiveRequestedEvent
+import typings.chrome.chrome.fileSystemProvider.ExecuteActionRequested
 import typings.chrome.chrome.fileSystemProvider.FilePathLengthRequestedEvent
 import typings.chrome.chrome.fileSystemProvider.FilePathRequestedEvent
 import typings.chrome.chrome.fileSystemProvider.FileSystemInfo
+import typings.chrome.chrome.fileSystemProvider.GetActionsRequested
 import typings.chrome.chrome.fileSystemProvider.MetadataRequestedEvent
 import typings.chrome.chrome.fileSystemProvider.MountOptions
 import typings.chrome.chrome.fileSystemProvider.NotificationOptions
@@ -49,6 +51,10 @@ trait TypeoffileSystemProvider extends StObject {
   var onCreateFileRequested: FilePathRequestedEvent = js.native
   
   var onDeleteEntryRequested: EntryPathRecursiveRequestedEvent = js.native
+  
+  var onExecuteActionRequested: ExecuteActionRequested = js.native
+  
+  var onGetActionsRequested: GetActionsRequested = js.native
   
   var onGetMetadataRequested: MetadataRequestedEvent = js.native
   

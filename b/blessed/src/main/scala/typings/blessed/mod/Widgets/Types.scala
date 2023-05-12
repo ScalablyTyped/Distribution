@@ -54,6 +54,38 @@ object Types {
     }
   }
   
+  trait Effects extends StObject {
+    
+    var bg: js.UndefOr[String] = js.undefined
+    
+    var border: js.UndefOr[TStyleBorder] = js.undefined
+    
+    var fg: js.UndefOr[String] = js.undefined
+  }
+  object Effects {
+    
+    inline def apply(): Effects = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Effects]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Effects] (val x: Self) extends AnyVal {
+      
+      inline def setBg(value: String): Self = StObject.set(x, "bg", value.asInstanceOf[js.Any])
+      
+      inline def setBgUndefined: Self = StObject.set(x, "bg", js.undefined)
+      
+      inline def setBorder(value: TStyleBorder): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
+      
+      inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
+      
+      inline def setFg(value: String): Self = StObject.set(x, "fg", value.asInstanceOf[js.Any])
+      
+      inline def setFgUndefined: Self = StObject.set(x, "fg", js.undefined)
+    }
+  }
+  
   trait ListbarCommand extends StObject {
     
     def callback(): Unit
@@ -262,15 +294,15 @@ object Types {
     
     var bold: js.UndefOr[Boolean] = js.undefined
     
-    var border: js.UndefOr[line | bg | TBorder] = js.undefined
+    var border: js.UndefOr[TStyleBorder] = js.undefined
     
     var ch: js.UndefOr[String] = js.undefined
     
     var fg: js.UndefOr[String] = js.undefined
     
-    var focus: js.UndefOr[Boolean] = js.undefined
+    var focus: js.UndefOr[Effects] = js.undefined
     
-    var hover: js.UndefOr[Boolean] = js.undefined
+    var hover: js.UndefOr[Effects] = js.undefined
     
     var inverse: js.UndefOr[Boolean] = js.undefined
     
@@ -283,8 +315,6 @@ object Types {
     var track: js.UndefOr[Bg] = js.undefined
     
     var transparent: js.UndefOr[Boolean] = js.undefined
-    
-    var `type`: js.UndefOr[String] = js.undefined
     
     var underline: js.UndefOr[Boolean] = js.undefined
   }
@@ -310,7 +340,7 @@ object Types {
       
       inline def setBoldUndefined: Self = StObject.set(x, "bold", js.undefined)
       
-      inline def setBorder(value: line | bg | TBorder): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
+      inline def setBorder(value: TStyleBorder): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
       
       inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
       
@@ -322,11 +352,11 @@ object Types {
       
       inline def setFgUndefined: Self = StObject.set(x, "fg", js.undefined)
       
-      inline def setFocus(value: Boolean): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
+      inline def setFocus(value: Effects): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
       
       inline def setFocusUndefined: Self = StObject.set(x, "focus", js.undefined)
       
-      inline def setHover(value: Boolean): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
+      inline def setHover(value: Effects): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
       
       inline def setHoverUndefined: Self = StObject.set(x, "hover", js.undefined)
       
@@ -354,13 +384,35 @@ object Types {
       
       inline def setTransparentUndefined: Self = StObject.set(x, "transparent", js.undefined)
       
-      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-      
-      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
-      
       inline def setUnderline(value: Boolean): Self = StObject.set(x, "underline", value.asInstanceOf[js.Any])
       
       inline def setUnderlineUndefined: Self = StObject.set(x, "underline", js.undefined)
+    }
+  }
+  
+  trait TStyleBorder extends StObject {
+    
+    var bg: js.UndefOr[String] = js.undefined
+    
+    var fg: js.UndefOr[String] = js.undefined
+  }
+  object TStyleBorder {
+    
+    inline def apply(): TStyleBorder = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[TStyleBorder]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TStyleBorder] (val x: Self) extends AnyVal {
+      
+      inline def setBg(value: String): Self = StObject.set(x, "bg", value.asInstanceOf[js.Any])
+      
+      inline def setBgUndefined: Self = StObject.set(x, "bg", js.undefined)
+      
+      inline def setFg(value: String): Self = StObject.set(x, "fg", value.asInstanceOf[js.Any])
+      
+      inline def setFgUndefined: Self = StObject.set(x, "fg", js.undefined)
     }
   }
   

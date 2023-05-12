@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "victory-polar-axis" : "36.6.8"
+      "victory-polar-axis" : "36.6.10"
     }
   ],
   "test-dependencies" : [
     {
-      "victory-polar-axis" : "36.6.8"
+      "victory-polar-axis" : "36.6.10"
     }
   ],
   "compile-devDependencies" : [

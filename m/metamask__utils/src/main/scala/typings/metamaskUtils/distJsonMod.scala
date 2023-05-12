@@ -18,7 +18,7 @@ import typings.metamaskUtils.metamaskUtilsStrings.params
 import typings.metamaskUtils.metamaskUtilsStrings.result
 import typings.std.Omit
 import typings.std.Record
-import typings.superstruct.libStructMod.Infer
+import typings.superstruct.distStructMod.Infer
 import typings.superstruct.mod.Struct_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

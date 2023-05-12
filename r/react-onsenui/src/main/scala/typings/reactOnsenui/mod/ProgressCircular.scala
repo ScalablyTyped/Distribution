@@ -12,7 +12,7 @@ open class ProgressCircular protected () extends Component[SecondaryValue, Any] 
   def this(props: HTMLAttributesidclassName & SecondaryValue) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: HTMLAttributesidclassName & SecondaryValue, context: Any) = this()
 }

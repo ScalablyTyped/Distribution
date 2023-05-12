@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** module Or Internal Object */
 /**
   * @brief HeapGraphEdge表示两个HeapGraphNode节点间的关联，从上游节点到下游节点
-  * @detail 
+  * @detail
   */
 @JSGlobal("Class_HeapGraphEdge")
 @js.native

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "force-graph" : "1.42.16"
+      "force-graph" : "1.43.1"
     }
   ],
   "test-dependencies" : [
     {
-      "force-graph" : "1.42.16"
+      "force-graph" : "1.43.1"
     }
   ],
   "compile-devDependencies" : [

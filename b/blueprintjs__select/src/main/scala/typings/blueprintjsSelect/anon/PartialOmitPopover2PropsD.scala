@@ -2,6 +2,7 @@ package typings.blueprintjsSelect.anon
 
 import typings.blueprintjsCore.libEsmComponentsPopoverPopoverSharedPropsMod.PopoverPosition
 import typings.blueprintjsPopover2.libEsmPopover2Mod.Popover2InteractionKind
+import typings.blueprintjsPopover2.libEsmPopover2SharedPropsMod.DefaultPopover2TargetHTMLProps
 import typings.blueprintjsPopover2.libEsmPopover2SharedPropsMod.PopperCustomModifer
 import typings.blueprintjsPopover2.libEsmPopover2SharedPropsMod.PopperModifierOverrides
 import typings.blueprintjsPopover2.libEsmPopupKindMod.PopupKind
@@ -21,7 +22,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Partial<std.Omit<@blueprintjs/popover2.@blueprintjs/popover2.Popover2Props<@blueprintjs/popover2.@blueprintjs/popover2/lib/esm/popover2SharedProps.DefaultPopover2TargetHTMLProps>, 'content' | 'defaultIsOpen' | 'disabled' | 'fill' | 'renderTarget'>> */
+/* Inlined std.Partial<std.Omit<@blueprintjs/popover2.@blueprintjs/popover2.Popover2Props<@blueprintjs/popover2.@blueprintjs/popover2/lib/esm/popover2SharedProps.DefaultPopover2TargetHTMLProps>, 'content' | 'defaultIsOpen' | 'fill' | 'renderTarget'>> */
 trait PartialOmitPopover2PropsD extends StObject {
   
   var autoFocus: js.UndefOr[Boolean] = js.undefined
@@ -37,6 +38,8 @@ trait PartialOmitPopover2PropsD extends StObject {
   var children: js.UndefOr[ReactNode] = js.undefined
   
   var className: js.UndefOr[String] = js.undefined
+  
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
   var enforceFocus: js.UndefOr[Boolean] = js.undefined
   
@@ -102,8 +105,10 @@ trait PartialOmitPopover2PropsD extends StObject {
   
   var shouldReturnFocusOnClose: js.UndefOr[Boolean] = js.undefined
   
+  var targetProps: js.UndefOr[DefaultPopover2TargetHTMLProps] = js.undefined
+  
   var targetTagName: js.UndefOr[
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.blueprintjsSelect.blueprintjsSelectStrings.a, typings.blueprintjsSelect.blueprintjsSelectStrings.abbr, typings.blueprintjsSelect.blueprintjsSelectStrings.address */ Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177, starting with typings.blueprintjsSelect.blueprintjsSelectStrings.a, typings.blueprintjsSelect.blueprintjsSelectStrings.abbr, typings.blueprintjsSelect.blueprintjsSelectStrings.address */ Any
   ] = js.undefined
   
   var transitionDuration: js.UndefOr[Double] = js.undefined
@@ -149,6 +154,10 @@ object PartialOmitPopover2PropsD {
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     inline def setEnforceFocus(value: Boolean): Self = StObject.set(x, "enforceFocus", value.asInstanceOf[js.Any])
     
@@ -274,8 +283,12 @@ object PartialOmitPopover2PropsD {
     
     inline def setShouldReturnFocusOnCloseUndefined: Self = StObject.set(x, "shouldReturnFocusOnClose", js.undefined)
     
+    inline def setTargetProps(value: DefaultPopover2TargetHTMLProps): Self = StObject.set(x, "targetProps", value.asInstanceOf[js.Any])
+    
+    inline def setTargetPropsUndefined: Self = StObject.set(x, "targetProps", js.undefined)
+    
     inline def setTargetTagName(
-      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.blueprintjsSelect.blueprintjsSelectStrings.a, typings.blueprintjsSelect.blueprintjsSelectStrings.abbr, typings.blueprintjsSelect.blueprintjsSelectStrings.address */ Any
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177, starting with typings.blueprintjsSelect.blueprintjsSelectStrings.a, typings.blueprintjsSelect.blueprintjsSelectStrings.abbr, typings.blueprintjsSelect.blueprintjsSelectStrings.address */ Any
     ): Self = StObject.set(x, "targetTagName", value.asInstanceOf[js.Any])
     
     inline def setTargetTagNameUndefined: Self = StObject.set(x, "targetTagName", js.undefined)

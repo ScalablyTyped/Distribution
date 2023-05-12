@@ -47,7 +47,7 @@ trait Role extends StObject {
   var RoleId: idType
   
   /**
-    * Contains information about the last time that an IAM role was used. This includes the date and time and the Region in which the role was last used. Activity is only reported for the trailing 400 days. This period can be shorter if your Region began supporting these features within the last year. The role might have been used more than 400 days ago. For more information, see Regions where data is tracked in the IAM User Guide.
+    * Contains information about the last time that an IAM role was used. This includes the date and time and the Region in which the role was last used. Activity is only reported for the trailing 400 days. This period can be shorter if your Region began supporting these features within the last year. The role might have been used more than 400 days ago. For more information, see Regions where data is tracked in the IAM user Guide.
     */
   var RoleLastUsed: js.UndefOr[typings.awsSdk.clientsIamMod.RoleLastUsed] = js.undefined
   

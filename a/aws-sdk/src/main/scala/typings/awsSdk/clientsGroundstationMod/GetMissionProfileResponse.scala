@@ -47,6 +47,16 @@ trait GetMissionProfileResponse extends StObject {
   var region: js.UndefOr[AWSRegion] = js.undefined
   
   /**
+    * KMS key to use for encrypting streams.
+    */
+  var streamsKmsKey: js.UndefOr[KmsKey] = js.undefined
+  
+  /**
+    * Role to use for encrypting streams with KMS key.
+    */
+  var streamsKmsRole: js.UndefOr[RoleArn] = js.undefined
+  
+  /**
     * Tags assigned to a mission profile.
     */
   var tags: js.UndefOr[TagsMap] = js.undefined
@@ -99,6 +109,14 @@ object GetMissionProfileResponse {
     inline def setRegion(value: AWSRegion): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
     inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
+    
+    inline def setStreamsKmsKey(value: KmsKey): Self = StObject.set(x, "streamsKmsKey", value.asInstanceOf[js.Any])
+    
+    inline def setStreamsKmsKeyUndefined: Self = StObject.set(x, "streamsKmsKey", js.undefined)
+    
+    inline def setStreamsKmsRole(value: RoleArn): Self = StObject.set(x, "streamsKmsRole", value.asInstanceOf[js.Any])
+    
+    inline def setStreamsKmsRoleUndefined: Self = StObject.set(x, "streamsKmsRole", js.undefined)
     
     inline def setTags(value: TagsMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     

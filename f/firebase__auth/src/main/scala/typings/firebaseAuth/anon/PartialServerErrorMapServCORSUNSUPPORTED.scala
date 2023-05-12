@@ -1,11 +1,11 @@
 package typings.firebaseAuth.anon
 
-import typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
+import typings.firebaseAuth.distNodeEsmSrcCoreErrorsMod.AuthErrorCode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Partial<@firebase/auth.@firebase/auth/dist/node/src/api/errors.ServerErrorMap<@firebase/auth.@firebase/auth/dist/node/src/api/errors.ServerError>> */
+/* Inlined std.Partial<@firebase/auth.@firebase/auth/dist/node-esm/src/api/errors.ServerErrorMap<@firebase/auth.@firebase/auth/dist/node-esm/src/api/errors.ServerError>> */
 trait PartialServerErrorMapServCORSUNSUPPORTED extends StObject {
   
   var ADMIN_ONLY_OPERATION: js.UndefOr[AuthErrorCode] = js.undefined
@@ -70,7 +70,15 @@ trait PartialServerErrorMapServCORSUNSUPPORTED extends StObject {
   
   var INVALID_PROVIDER_ID: js.UndefOr[AuthErrorCode] = js.undefined
   
+  var INVALID_RECAPTCHA_ACTION: js.UndefOr[AuthErrorCode] = js.undefined
+  
+  var INVALID_RECAPTCHA_TOKEN: js.UndefOr[AuthErrorCode] = js.undefined
+  
+  var INVALID_RECAPTCHA_VERSION: js.UndefOr[AuthErrorCode] = js.undefined
+  
   var INVALID_RECIPIENT_EMAIL: js.UndefOr[AuthErrorCode] = js.undefined
+  
+  var INVALID_REQ_TYPE: js.UndefOr[AuthErrorCode] = js.undefined
   
   var INVALID_SENDER: js.UndefOr[AuthErrorCode] = js.undefined
   
@@ -85,6 +93,8 @@ trait PartialServerErrorMapServCORSUNSUPPORTED extends StObject {
   var MISSING_ANDROID_PACKAGE_NAME: js.UndefOr[AuthErrorCode] = js.undefined
   
   var MISSING_APP_CREDENTIAL: js.UndefOr[AuthErrorCode] = js.undefined
+  
+  var MISSING_CLIENT_TYPE: js.UndefOr[AuthErrorCode] = js.undefined
   
   var MISSING_CODE: js.UndefOr[AuthErrorCode] = js.undefined
   
@@ -106,6 +116,10 @@ trait PartialServerErrorMapServCORSUNSUPPORTED extends StObject {
   
   var MISSING_PHONE_NUMBER: js.UndefOr[AuthErrorCode] = js.undefined
   
+  var MISSING_RECAPTCHA_TOKEN: js.UndefOr[AuthErrorCode] = js.undefined
+  
+  var MISSING_RECAPTCHA_VERSION: js.UndefOr[AuthErrorCode] = js.undefined
+  
   var MISSING_REQ_TYPE: js.UndefOr[AuthErrorCode] = js.undefined
   
   var MISSING_SESSION_INFO: js.UndefOr[AuthErrorCode] = js.undefined
@@ -115,6 +129,8 @@ trait PartialServerErrorMapServCORSUNSUPPORTED extends StObject {
   var PASSWORD_LOGIN_DISABLED: js.UndefOr[AuthErrorCode] = js.undefined
   
   var QUOTA_EXCEEDED: js.UndefOr[AuthErrorCode] = js.undefined
+  
+  var RECAPTCHA_NOT_ENABLED: js.UndefOr[AuthErrorCode] = js.undefined
   
   var REJECTED_CREDENTIAL: js.UndefOr[AuthErrorCode] = js.undefined
   
@@ -282,9 +298,25 @@ object PartialServerErrorMapServCORSUNSUPPORTED {
     
     inline def setINVALID_PROVIDER_IDUndefined: Self = StObject.set(x, "INVALID_PROVIDER_ID", js.undefined)
     
+    inline def setINVALID_RECAPTCHA_ACTION(value: AuthErrorCode): Self = StObject.set(x, "INVALID_RECAPTCHA_ACTION", value.asInstanceOf[js.Any])
+    
+    inline def setINVALID_RECAPTCHA_ACTIONUndefined: Self = StObject.set(x, "INVALID_RECAPTCHA_ACTION", js.undefined)
+    
+    inline def setINVALID_RECAPTCHA_TOKEN(value: AuthErrorCode): Self = StObject.set(x, "INVALID_RECAPTCHA_TOKEN", value.asInstanceOf[js.Any])
+    
+    inline def setINVALID_RECAPTCHA_TOKENUndefined: Self = StObject.set(x, "INVALID_RECAPTCHA_TOKEN", js.undefined)
+    
+    inline def setINVALID_RECAPTCHA_VERSION(value: AuthErrorCode): Self = StObject.set(x, "INVALID_RECAPTCHA_VERSION", value.asInstanceOf[js.Any])
+    
+    inline def setINVALID_RECAPTCHA_VERSIONUndefined: Self = StObject.set(x, "INVALID_RECAPTCHA_VERSION", js.undefined)
+    
     inline def setINVALID_RECIPIENT_EMAIL(value: AuthErrorCode): Self = StObject.set(x, "INVALID_RECIPIENT_EMAIL", value.asInstanceOf[js.Any])
     
     inline def setINVALID_RECIPIENT_EMAILUndefined: Self = StObject.set(x, "INVALID_RECIPIENT_EMAIL", js.undefined)
+    
+    inline def setINVALID_REQ_TYPE(value: AuthErrorCode): Self = StObject.set(x, "INVALID_REQ_TYPE", value.asInstanceOf[js.Any])
+    
+    inline def setINVALID_REQ_TYPEUndefined: Self = StObject.set(x, "INVALID_REQ_TYPE", js.undefined)
     
     inline def setINVALID_SENDER(value: AuthErrorCode): Self = StObject.set(x, "INVALID_SENDER", value.asInstanceOf[js.Any])
     
@@ -313,6 +345,10 @@ object PartialServerErrorMapServCORSUNSUPPORTED {
     inline def setMISSING_APP_CREDENTIAL(value: AuthErrorCode): Self = StObject.set(x, "MISSING_APP_CREDENTIAL", value.asInstanceOf[js.Any])
     
     inline def setMISSING_APP_CREDENTIALUndefined: Self = StObject.set(x, "MISSING_APP_CREDENTIAL", js.undefined)
+    
+    inline def setMISSING_CLIENT_TYPE(value: AuthErrorCode): Self = StObject.set(x, "MISSING_CLIENT_TYPE", value.asInstanceOf[js.Any])
+    
+    inline def setMISSING_CLIENT_TYPEUndefined: Self = StObject.set(x, "MISSING_CLIENT_TYPE", js.undefined)
     
     inline def setMISSING_CODE(value: AuthErrorCode): Self = StObject.set(x, "MISSING_CODE", value.asInstanceOf[js.Any])
     
@@ -354,6 +390,14 @@ object PartialServerErrorMapServCORSUNSUPPORTED {
     
     inline def setMISSING_PHONE_NUMBERUndefined: Self = StObject.set(x, "MISSING_PHONE_NUMBER", js.undefined)
     
+    inline def setMISSING_RECAPTCHA_TOKEN(value: AuthErrorCode): Self = StObject.set(x, "MISSING_RECAPTCHA_TOKEN", value.asInstanceOf[js.Any])
+    
+    inline def setMISSING_RECAPTCHA_TOKENUndefined: Self = StObject.set(x, "MISSING_RECAPTCHA_TOKEN", js.undefined)
+    
+    inline def setMISSING_RECAPTCHA_VERSION(value: AuthErrorCode): Self = StObject.set(x, "MISSING_RECAPTCHA_VERSION", value.asInstanceOf[js.Any])
+    
+    inline def setMISSING_RECAPTCHA_VERSIONUndefined: Self = StObject.set(x, "MISSING_RECAPTCHA_VERSION", js.undefined)
+    
     inline def setMISSING_REQ_TYPE(value: AuthErrorCode): Self = StObject.set(x, "MISSING_REQ_TYPE", value.asInstanceOf[js.Any])
     
     inline def setMISSING_REQ_TYPEUndefined: Self = StObject.set(x, "MISSING_REQ_TYPE", js.undefined)
@@ -373,6 +417,10 @@ object PartialServerErrorMapServCORSUNSUPPORTED {
     inline def setQUOTA_EXCEEDED(value: AuthErrorCode): Self = StObject.set(x, "QUOTA_EXCEEDED", value.asInstanceOf[js.Any])
     
     inline def setQUOTA_EXCEEDEDUndefined: Self = StObject.set(x, "QUOTA_EXCEEDED", js.undefined)
+    
+    inline def setRECAPTCHA_NOT_ENABLED(value: AuthErrorCode): Self = StObject.set(x, "RECAPTCHA_NOT_ENABLED", value.asInstanceOf[js.Any])
+    
+    inline def setRECAPTCHA_NOT_ENABLEDUndefined: Self = StObject.set(x, "RECAPTCHA_NOT_ENABLED", js.undefined)
     
     inline def setREJECTED_CREDENTIAL(value: AuthErrorCode): Self = StObject.set(x, "REJECTED_CREDENTIAL", value.asInstanceOf[js.Any])
     

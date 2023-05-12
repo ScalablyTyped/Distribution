@@ -30,6 +30,12 @@ trait ChatMessageAttachment extends StObject {
   var name: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
+    * The ID of the Teams app that is associated with the attachment. The property is specifically used to attribute a Teams
+    * message card to the specified app.
+    */
+  var teamsAppId: js.UndefOr[NullableOption[String]] = js.undefined
+  
+  /**
     * URL to a thumbnail image that the channel can use if it supports using an alternative, smaller form of content or
     * contentUrl. For example, if you set contentType to application/word and set contentUrl to the location of the Word
     * document, you might include a thumbnail image that represents the document. The channel could display the thumbnail
@@ -76,6 +82,12 @@ object ChatMessageAttachment {
     inline def setNameNull: Self = StObject.set(x, "name", null)
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setTeamsAppId(value: NullableOption[String]): Self = StObject.set(x, "teamsAppId", value.asInstanceOf[js.Any])
+    
+    inline def setTeamsAppIdNull: Self = StObject.set(x, "teamsAppId", null)
+    
+    inline def setTeamsAppIdUndefined: Self = StObject.set(x, "teamsAppId", js.undefined)
     
     inline def setThumbnailUrl(value: NullableOption[String]): Self = StObject.set(x, "thumbnailUrl", value.asInstanceOf[js.Any])
     

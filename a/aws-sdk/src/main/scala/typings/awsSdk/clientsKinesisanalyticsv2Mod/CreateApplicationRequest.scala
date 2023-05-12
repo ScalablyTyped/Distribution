@@ -17,7 +17,7 @@ trait CreateApplicationRequest extends StObject {
   var ApplicationDescription: js.UndefOr[typings.awsSdk.clientsKinesisanalyticsv2Mod.ApplicationDescription] = js.undefined
   
   /**
-    * Use the STREAMING mode to create a Kinesis Data Analytics Studio notebook. To create a Kinesis Data Analytics Studio notebook, use the INTERACTIVE mode.
+    * Use the STREAMING mode to create a Kinesis Data Analytics For Flink application. To create a Kinesis Data Analytics Studio notebook, use the INTERACTIVE mode.
     */
   var ApplicationMode: js.UndefOr[typings.awsSdk.clientsKinesisanalyticsv2Mod.ApplicationMode] = js.undefined
   
@@ -32,7 +32,7 @@ trait CreateApplicationRequest extends StObject {
   var CloudWatchLoggingOptions: js.UndefOr[typings.awsSdk.clientsKinesisanalyticsv2Mod.CloudWatchLoggingOptions] = js.undefined
   
   /**
-    * The runtime environment for the application (SQL-1_0, FLINK-1_6, FLINK-1_8, or FLINK-1_11).
+    * The runtime environment for the application.
     */
   var RuntimeEnvironment: typings.awsSdk.clientsKinesisanalyticsv2Mod.RuntimeEnvironment
   

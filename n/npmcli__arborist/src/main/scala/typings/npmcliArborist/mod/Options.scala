@@ -39,6 +39,9 @@ trait Options
     */
   var _password: js.UndefOr[String] = js.undefined
   
+  // ActualLoader
+  var actualTree: js.UndefOr[Node | Null] = js.undefined
+  
   /**
     * An `Agent` instance to be shared across requests. This allows
     * multiple concurrent fetch requests to happen on the same socket.
@@ -59,6 +62,8 @@ trait Options
     * published before the specified date. Default `null`.
     */
   var before: js.UndefOr[js.Date | Null] = js.undefined
+  
+  var binLinks: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Request body to send through the outgoing request. Buffers and
@@ -138,6 +143,8 @@ trait Options
     */
   var dmode: js.UndefOr[Double] = js.undefined
   
+  var dryRun: js.UndefOr[Boolean] = js.undefined
+  
   var email: js.UndefOr[String] = js.undefined
   
   /**
@@ -177,6 +184,11 @@ trait Options
     */
   var fmode: js.UndefOr[Double] = js.undefined
   
+  // IdealTreeBuilder
+  var follow: js.UndefOr[Boolean] = js.undefined
+  
+  var force: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * If present, other auth-related values in `opts` will be completely
     * ignored, including `alwaysAuth`, `email`, and `otp`, when calculating
@@ -185,6 +197,8 @@ trait Options
     */
   var forceAuth: js.UndefOr[PartialAuthOptions] = js.undefined
   
+  var formatPackageLock: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Fetch the full metadata from the registry for packuments, including
     * information not strictly required for installation (author, description,
@@ -192,6 +206,10 @@ trait Options
     * time is part of the extended packument metadata.
     */
   var fullMetadata: js.UndefOr[Boolean] = js.undefined
+  
+  var global: js.UndefOr[Boolean] = js.undefined
+  
+  var globalStyle: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If true, `npm-registry-fetch` will set the `Content-Encoding` header
@@ -207,12 +225,21 @@ trait Options
     */
   var headers: js.UndefOr[Record[String, String]] = js.undefined
   
+  var idealTree: js.UndefOr[Node | Null] = js.undefined
+  
   /**
     * If true, the response body will be thrown away and `res.body` set to
     * `null`. This will prevent dangling response sockets for requests
     * where you don't usually care what the response body is.
     */
   var ignoreBody: js.UndefOr[Boolean] = js.undefined
+  
+  // Builder
+  var ignoreScripts: js.UndefOr[Boolean] = js.undefined
+  
+  var includeWorkspaceRoot: js.UndefOr[Boolean] = js.undefined
+  
+  var installLinks: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Expected integrity of fetched package tarball. If specified, tarballs
@@ -258,6 +285,8 @@ trait Options
     * See also: `opts.ca` and `opts.cert`
     */
   var key: js.UndefOr[String] = js.undefined
+  
+  var legacyPeerDeps: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The IP address of the local interface to use when making connections
@@ -331,6 +360,10 @@ trait Options
     */
   var otp: js.UndefOr[Double | String] = js.undefined
   
+  var packageLock: js.UndefOr[Boolean] = js.undefined
+  
+  var packageLockOnly: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * you usually don't want to fetch the same packument multiple times in
     * the span of a given script or command, no matter how many pacote calls
@@ -381,6 +414,9 @@ trait Options
     */
   var preferOnline: js.UndefOr[Boolean] = js.undefined
   
+  // Tracker
+  var progress: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * If provided, will be sent in the npm-scope header. This header is
     * used by the npm registry to identify the toplevel package scope that
@@ -403,6 +439,8 @@ trait Options
     * `opts.query`, preferring `opts.query` values.
     */
   var query: js.UndefOr[String | js.Object] = js.undefined
+  
+  var rebuildBundle: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The npm registry to use by default. Defaults to
@@ -434,6 +472,9 @@ trait Options
     */
   var retry: js.UndefOr[PartialFetchRetryOptions] = js.undefined
   
+  // Reifier
+  var savePrefix: js.UndefOr[String] = js.undefined
+  
   var saveType: js.UndefOr[SaveType] = js.undefined
   
   /**
@@ -446,12 +487,16 @@ trait Options
     */
   var scope: js.UndefOr[String] = js.undefined
   
+  var scriptShell: js.UndefOr[String] = js.undefined
+  
   /**
     * If provided, can be used to automatically configure `opts.scope`
     * based on a specific package name. Non-registry package specs will
     * throw an error.
     */
   var spec: js.UndefOr[String | Result] = js.undefined
+  
+  var strictPeerDeps: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether or not to do SSL key validation when making requests to the
@@ -508,10 +553,15 @@ trait Options
     */
   var username: js.UndefOr[String] = js.undefined
   
+  // VirtualLoader
+  var virtualTree: js.UndefOr[Node | Null] = js.undefined
+  
   /**
     * Base folder for resolving relative `file:` dependencies.
     */
   var where: js.UndefOr[String] = js.undefined
+  
+  var workspaces: js.UndefOr[js.Array[String]] = js.undefined
   
   var workspacesEnabled: js.UndefOr[Boolean] = js.undefined
 }
@@ -524,6 +574,12 @@ object Options {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    
+    inline def setActualTree(value: Node): Self = StObject.set(x, "actualTree", value.asInstanceOf[js.Any])
+    
+    inline def setActualTreeNull: Self = StObject.set(x, "actualTree", null)
+    
+    inline def setActualTreeUndefined: Self = StObject.set(x, "actualTree", js.undefined)
     
     inline def setAgent(value: Agent): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
     
@@ -542,6 +598,10 @@ object Options {
     inline def setBeforeNull: Self = StObject.set(x, "before", null)
     
     inline def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
+    
+    inline def setBinLinks(value: Boolean): Self = StObject.set(x, "binLinks", value.asInstanceOf[js.Any])
+    
+    inline def setBinLinksUndefined: Self = StObject.set(x, "binLinks", js.undefined)
     
     inline def setBody(value: Buffer | Stream | js.Object | String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
@@ -571,6 +631,10 @@ object Options {
     
     inline def setDmodeUndefined: Self = StObject.set(x, "dmode", js.undefined)
     
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "dryRun", value.asInstanceOf[js.Any])
+    
+    inline def setDryRunUndefined: Self = StObject.set(x, "dryRun", js.undefined)
+    
     inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
     inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
@@ -595,13 +659,33 @@ object Options {
     
     inline def setFmodeUndefined: Self = StObject.set(x, "fmode", js.undefined)
     
+    inline def setFollow(value: Boolean): Self = StObject.set(x, "follow", value.asInstanceOf[js.Any])
+    
+    inline def setFollowUndefined: Self = StObject.set(x, "follow", js.undefined)
+    
+    inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
+    
     inline def setForceAuth(value: PartialAuthOptions): Self = StObject.set(x, "forceAuth", value.asInstanceOf[js.Any])
     
     inline def setForceAuthUndefined: Self = StObject.set(x, "forceAuth", js.undefined)
     
+    inline def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
+    
+    inline def setFormatPackageLock(value: Boolean): Self = StObject.set(x, "formatPackageLock", value.asInstanceOf[js.Any])
+    
+    inline def setFormatPackageLockUndefined: Self = StObject.set(x, "formatPackageLock", js.undefined)
+    
     inline def setFullMetadata(value: Boolean): Self = StObject.set(x, "fullMetadata", value.asInstanceOf[js.Any])
     
     inline def setFullMetadataUndefined: Self = StObject.set(x, "fullMetadata", js.undefined)
+    
+    inline def setGlobal(value: Boolean): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
+    
+    inline def setGlobalStyle(value: Boolean): Self = StObject.set(x, "globalStyle", value.asInstanceOf[js.Any])
+    
+    inline def setGlobalStyleUndefined: Self = StObject.set(x, "globalStyle", js.undefined)
+    
+    inline def setGlobalUndefined: Self = StObject.set(x, "global", js.undefined)
     
     inline def setGzip(value: Boolean): Self = StObject.set(x, "gzip", value.asInstanceOf[js.Any])
     
@@ -611,9 +695,27 @@ object Options {
     
     inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
+    inline def setIdealTree(value: Node): Self = StObject.set(x, "idealTree", value.asInstanceOf[js.Any])
+    
+    inline def setIdealTreeNull: Self = StObject.set(x, "idealTree", null)
+    
+    inline def setIdealTreeUndefined: Self = StObject.set(x, "idealTree", js.undefined)
+    
     inline def setIgnoreBody(value: Boolean): Self = StObject.set(x, "ignoreBody", value.asInstanceOf[js.Any])
     
     inline def setIgnoreBodyUndefined: Self = StObject.set(x, "ignoreBody", js.undefined)
+    
+    inline def setIgnoreScripts(value: Boolean): Self = StObject.set(x, "ignoreScripts", value.asInstanceOf[js.Any])
+    
+    inline def setIgnoreScriptsUndefined: Self = StObject.set(x, "ignoreScripts", js.undefined)
+    
+    inline def setIncludeWorkspaceRoot(value: Boolean): Self = StObject.set(x, "includeWorkspaceRoot", value.asInstanceOf[js.Any])
+    
+    inline def setIncludeWorkspaceRootUndefined: Self = StObject.set(x, "includeWorkspaceRoot", js.undefined)
+    
+    inline def setInstallLinks(value: Boolean): Self = StObject.set(x, "installLinks", value.asInstanceOf[js.Any])
+    
+    inline def setInstallLinksUndefined: Self = StObject.set(x, "installLinks", js.undefined)
     
     inline def setIntegrity(value: String | Integrity): Self = StObject.set(x, "integrity", value.asInstanceOf[js.Any])
     
@@ -626,6 +728,10 @@ object Options {
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    
+    inline def setLegacyPeerDeps(value: Boolean): Self = StObject.set(x, "legacyPeerDeps", value.asInstanceOf[js.Any])
+    
+    inline def setLegacyPeerDepsUndefined: Self = StObject.set(x, "legacyPeerDeps", js.undefined)
     
     inline def setLocalAddress(value: String): Self = StObject.set(x, "localAddress", value.asInstanceOf[js.Any])
     
@@ -679,6 +785,14 @@ object Options {
     
     inline def setOtpUndefined: Self = StObject.set(x, "otp", js.undefined)
     
+    inline def setPackageLock(value: Boolean): Self = StObject.set(x, "packageLock", value.asInstanceOf[js.Any])
+    
+    inline def setPackageLockOnly(value: Boolean): Self = StObject.set(x, "packageLockOnly", value.asInstanceOf[js.Any])
+    
+    inline def setPackageLockOnlyUndefined: Self = StObject.set(x, "packageLockOnly", js.undefined)
+    
+    inline def setPackageLockUndefined: Self = StObject.set(x, "packageLock", js.undefined)
+    
     inline def setPackumentCache(value: Map[String, Packument_]): Self = StObject.set(x, "packumentCache", value.asInstanceOf[js.Any])
     
     inline def setPackumentCacheUndefined: Self = StObject.set(x, "packumentCache", js.undefined)
@@ -699,6 +813,10 @@ object Options {
     
     inline def setPreferOnlineUndefined: Self = StObject.set(x, "preferOnline", js.undefined)
     
+    inline def setProgress(value: Boolean): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+    
+    inline def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
+    
     inline def setProjectScope(value: String): Self = StObject.set(x, "projectScope", value.asInstanceOf[js.Any])
     
     inline def setProjectScopeUndefined: Self = StObject.set(x, "projectScope", js.undefined)
@@ -710,6 +828,10 @@ object Options {
     inline def setQuery(value: String | js.Object): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
     inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+    
+    inline def setRebuildBundle(value: Boolean): Self = StObject.set(x, "rebuildBundle", value.asInstanceOf[js.Any])
+    
+    inline def setRebuildBundleUndefined: Self = StObject.set(x, "rebuildBundle", js.undefined)
     
     inline def setRegistry(value: String): Self = StObject.set(x, "registry", value.asInstanceOf[js.Any])
     
@@ -727,6 +849,10 @@ object Options {
     
     inline def setRetryUndefined: Self = StObject.set(x, "retry", js.undefined)
     
+    inline def setSavePrefix(value: String): Self = StObject.set(x, "savePrefix", value.asInstanceOf[js.Any])
+    
+    inline def setSavePrefixUndefined: Self = StObject.set(x, "savePrefix", js.undefined)
+    
     inline def setSaveType(value: SaveType): Self = StObject.set(x, "saveType", value.asInstanceOf[js.Any])
     
     inline def setSaveTypeUndefined: Self = StObject.set(x, "saveType", js.undefined)
@@ -735,9 +861,17 @@ object Options {
     
     inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
+    inline def setScriptShell(value: String): Self = StObject.set(x, "scriptShell", value.asInstanceOf[js.Any])
+    
+    inline def setScriptShellUndefined: Self = StObject.set(x, "scriptShell", js.undefined)
+    
     inline def setSpec(value: String | Result): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
     
     inline def setSpecUndefined: Self = StObject.set(x, "spec", js.undefined)
+    
+    inline def setStrictPeerDeps(value: Boolean): Self = StObject.set(x, "strictPeerDeps", value.asInstanceOf[js.Any])
+    
+    inline def setStrictPeerDepsUndefined: Self = StObject.set(x, "strictPeerDeps", js.undefined)
     
     inline def setStrictSSL(value: Boolean): Self = StObject.set(x, "strictSSL", value.asInstanceOf[js.Any])
     
@@ -763,13 +897,25 @@ object Options {
     
     inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
     
+    inline def setVirtualTree(value: Node): Self = StObject.set(x, "virtualTree", value.asInstanceOf[js.Any])
+    
+    inline def setVirtualTreeNull: Self = StObject.set(x, "virtualTree", null)
+    
+    inline def setVirtualTreeUndefined: Self = StObject.set(x, "virtualTree", js.undefined)
+    
     inline def setWhere(value: String): Self = StObject.set(x, "where", value.asInstanceOf[js.Any])
     
     inline def setWhereUndefined: Self = StObject.set(x, "where", js.undefined)
     
+    inline def setWorkspaces(value: js.Array[String]): Self = StObject.set(x, "workspaces", value.asInstanceOf[js.Any])
+    
     inline def setWorkspacesEnabled(value: Boolean): Self = StObject.set(x, "workspacesEnabled", value.asInstanceOf[js.Any])
     
     inline def setWorkspacesEnabledUndefined: Self = StObject.set(x, "workspacesEnabled", js.undefined)
+    
+    inline def setWorkspacesUndefined: Self = StObject.set(x, "workspaces", js.undefined)
+    
+    inline def setWorkspacesVarargs(value: String*): Self = StObject.set(x, "workspaces", js.Array(value*))
     
     inline def set_auth(value: String): Self = StObject.set(x, "_auth", value.asInstanceOf[js.Any])
     

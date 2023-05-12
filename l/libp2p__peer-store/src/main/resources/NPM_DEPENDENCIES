@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@libp2p/peer-store" : "5.0.0"
+      "@libp2p/peer-store" : "8.1.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@libp2p/peer-store" : "5.0.0"
+      "@libp2p/peer-store" : "8.1.2"
     }
   ],
   "compile-devDependencies" : [

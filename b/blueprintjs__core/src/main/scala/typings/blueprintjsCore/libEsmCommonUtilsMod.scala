@@ -6,6 +6,7 @@ import typings.blueprintjsCore.libEsmCommonUtilsCompareUtilsMod.KeyDenylist
 import typings.blueprintjsCore.libEsmCommonUtilsDomUtilsMod.IThrottledReactEventOptions
 import typings.blueprintjsCore.libEsmCommonUtilsReactUtilsMod.INamed
 import typings.react.mod.ComponentType
+import typings.react.mod.KeyboardEvent
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import typings.react.mod.Ref
@@ -40,6 +41,8 @@ object libEsmCommonUtilsMod {
   
   inline def clamp(`val`: Double, min: Double, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("clamp")(`val`.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
   
+  inline def clickElementOnKeyPress(keys: js.Array[String]): js.Function1[/* e */ KeyboardEvent[Element], Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("clickElementOnKeyPress")(keys.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* e */ KeyboardEvent[Element], Boolean]]
+  
   inline def countDecimalPlaces(num: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("countDecimalPlaces")(num.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   inline def deepCompareKeys(objA: Any, objB: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("deepCompareKeys")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
@@ -47,15 +50,17 @@ object libEsmCommonUtilsMod {
   
   inline def elementIsOrContains(element: HTMLElement, testElement: HTMLElement): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("elementIsOrContains")(element.asInstanceOf[js.Any], testElement.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
+  inline def elementIsTextInput(elem: HTMLElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("elementIsTextInput")(elem.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
   inline def ensureElement(): js.UndefOr[ReactElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureElement")().asInstanceOf[js.UndefOr[ReactElement]]
   inline def ensureElement(
     child: Unit,
-    tagName: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175, starting with typings.blueprintjsCore.blueprintjsCoreStrings.a, typings.blueprintjsCore.blueprintjsCoreStrings.abbr, typings.blueprintjsCore.blueprintjsCoreStrings.address */ Any
+    tagName: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.blueprintjsCore.blueprintjsCoreStrings.a, typings.blueprintjsCore.blueprintjsCoreStrings.abbr, typings.blueprintjsCore.blueprintjsCoreStrings.address */ Any
   ): js.UndefOr[ReactElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureElement")(child.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ReactElement]]
   inline def ensureElement(child: ReactNode): js.UndefOr[ReactElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureElement")(child.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[ReactElement]]
   inline def ensureElement(
     child: ReactNode,
-    tagName: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175, starting with typings.blueprintjsCore.blueprintjsCoreStrings.a, typings.blueprintjsCore.blueprintjsCoreStrings.abbr, typings.blueprintjsCore.blueprintjsCoreStrings.address */ Any
+    tagName: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.blueprintjsCore.blueprintjsCoreStrings.a, typings.blueprintjsCore.blueprintjsCoreStrings.abbr, typings.blueprintjsCore.blueprintjsCoreStrings.address */ Any
   ): js.UndefOr[ReactElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureElement")(child.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ReactElement]]
   
   inline def getActiveElement(): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getActiveElement")().asInstanceOf[Element | Null]

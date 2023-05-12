@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetParametersPathAssignee extends StObject {
   
   /**
-    * Checks if a user has permission to be assigned to an issue in this repository.
+    * Check if a user can be assigned
+    * @description Checks if a user has permission to be assigned to an issue in this repository.
     *
     * If the `assignee` can be assigned to issues in the repository, a `204` header with no content is returned.
     *

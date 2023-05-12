@@ -16,7 +16,7 @@ open class PointLight protected ()
     * ```javascript
     * var pointLight = new PointLight("pl", camera.position, scene);
     * ```
-    * Documentation : https://doc.babylonjs.com/babylon101/lights
+    * Documentation : https://doc.babylonjs.com/features/featuresDeepDive/lights/lights_introduction
     * @param name The light friendly name
     * @param position The position of the point light in the scene
     * @param scene The scene the lights belongs to

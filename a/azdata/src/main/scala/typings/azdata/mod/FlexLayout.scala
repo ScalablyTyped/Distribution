@@ -29,7 +29,7 @@ trait FlexLayout extends StObject {
   var flexWrap: js.UndefOr[FlexWrapType] = js.undefined
   
   /**
-    * Container Height
+    * Container Height. Accepted values are px, %, auto and calc expressions.
     */
   var height: js.UndefOr[Double | String] = js.undefined
   
@@ -53,7 +53,7 @@ trait FlexLayout extends StObject {
   var textAlign: js.UndefOr[TextAlignType] = js.undefined
   
   /**
-    * Container Width
+    * Container Width. Accepted values are px, %, auto and calc expressions.
     */
   var width: js.UndefOr[Double | String] = js.undefined
 }

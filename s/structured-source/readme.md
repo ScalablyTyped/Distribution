@@ -1,7 +1,7 @@
 
 # Scala.js typings for structured-source
 
-Typings are for version 3.0
+Typings are for version 4.0.0
 
 ## Library description:
 Provides StructuredSource and functionality for converting range and loc vice versa.
@@ -24,7 +24,7 @@ Provides StructuredSource and functionality for converting range and loc vice ve
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

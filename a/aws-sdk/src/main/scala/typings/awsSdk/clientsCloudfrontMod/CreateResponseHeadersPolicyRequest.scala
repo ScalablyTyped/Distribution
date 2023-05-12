@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateResponseHeadersPolicyRequest extends StObject {
   
   /**
-    * Contains metadata about the response headers policy, and a set of configurations that specify the response headers.
+    * Contains metadata about the response headers policy, and a set of configurations that specify the HTTP headers.
     */
   var ResponseHeadersPolicyConfig: typings.awsSdk.clientsCloudfrontMod.ResponseHeadersPolicyConfig
 }

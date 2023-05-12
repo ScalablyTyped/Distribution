@@ -1,5 +1,6 @@
 package typings.johnnyFive.mod
 
+import typings.johnnyFive.anon.DRIVER
 import typings.johnnyFive.johnnyFiveStrings.change
 import typings.johnnyFive.johnnyFiveStrings.data
 import org.scalablytyped.runtime.StObject
@@ -26,7 +27,6 @@ open class Stepper protected () extends StObject {
   def direction(): Stepper = js.native
   def direction(value: Double): Stepper = js.native
   
-  def on(event: String, cb: js.Function0[Unit]): this.type = js.native
   @JSName("on")
   def on_change(event: change, cb: js.Function0[Unit]): this.type = js.native
   @JSName("on")
@@ -43,31 +43,15 @@ open class Stepper protected () extends StObject {
   def within(range: js.Array[Double], cb: js.Function0[Unit]): Unit = js.native
   def within(range: js.Array[Double], unit: String, cb: js.Function0[Unit]): Unit = js.native
 }
+/* static members */
 object Stepper {
+  
+  @JSImport("johnny-five", "Stepper")
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("johnny-five", "Stepper.TYPE")
   @js.native
-  open class TYPE () extends StObject
-  /* static members */
-  object TYPE {
-    
-    @JSImport("johnny-five", "Stepper.TYPE")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    @JSImport("johnny-five", "Stepper.TYPE.DRIVER")
-    @js.native
-    def DRIVER: Double = js.native
-    inline def DRIVER_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DRIVER")(x.asInstanceOf[js.Any])
-    
-    @JSImport("johnny-five", "Stepper.TYPE.FOUR_WIRE")
-    @js.native
-    def FOUR_WIRE: Double = js.native
-    inline def FOUR_WIRE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FOUR_WIRE")(x.asInstanceOf[js.Any])
-    
-    @JSImport("johnny-five", "Stepper.TYPE.TWO_WIRE")
-    @js.native
-    def TWO_WIRE: Double = js.native
-    inline def TWO_WIRE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TWO_WIRE")(x.asInstanceOf[js.Any])
-  }
+  def TYPE: DRIVER = js.native
+  inline def TYPE_=(x: DRIVER): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TYPE")(x.asInstanceOf[js.Any])
 }

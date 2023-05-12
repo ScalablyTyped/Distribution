@@ -42,7 +42,7 @@ object directiveSchemaMod {
     /**
       * The name of the project.
       */
-    var project: js.UndefOr[String] = js.undefined
+    var project: String
     
     /**
       * The HTML selector to use for this directive.
@@ -66,8 +66,8 @@ object directiveSchemaMod {
   }
   object Schema {
     
-    inline def apply(name: String): Schema = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    inline def apply(name: String, project: String): Schema = {
+      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any])
       __obj.asInstanceOf[Schema]
     }
     
@@ -97,8 +97,6 @@ object directiveSchemaMod {
       inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
       
       inline def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
-      
-      inline def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
       
       inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
       

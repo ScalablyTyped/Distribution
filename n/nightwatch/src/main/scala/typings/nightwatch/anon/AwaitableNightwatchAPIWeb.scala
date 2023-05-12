@@ -4,12 +4,15 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.devtoolsProtocol.mod.Protocol.Network.RequestWillBeSentEvent
 import typings.devtoolsProtocol.mod.Protocol.Runtime.ExceptionThrownEvent
 import typings.nightwatch.expectMod.Expect
+import typings.nightwatch.mod.AppiumCommands
 import typings.nightwatch.mod.Assert
 import typings.nightwatch.mod.Awaitable
 import typings.nightwatch.mod.Cookie
 import typings.nightwatch.mod.Definition
 import typings.nightwatch.mod.ElementResult
 import typings.nightwatch.mod.Ensure
+import typings.nightwatch.mod.ExecuteAsyncScriptFunction
+import typings.nightwatch.mod.ExecuteScriptFunction
 import typings.nightwatch.mod.JSON_WEB_OBJECT
 import typings.nightwatch.mod.LocateStrategy
 import typings.nightwatch.mod.NightwatchAPI
@@ -19,27 +22,33 @@ import typings.nightwatch.mod.NightwatchElement
 import typings.nightwatch.mod.NightwatchGlobals
 import typings.nightwatch.mod.NightwatchKeys
 import typings.nightwatch.mod.NightwatchLogEntry
+import typings.nightwatch.mod.NightwatchLogTypes
 import typings.nightwatch.mod.NightwatchPage
 import typings.nightwatch.mod.NightwatchPosition
+import typings.nightwatch.mod.NightwatchServerStatusResult
 import typings.nightwatch.mod.NightwatchSizeAndPosition
 import typings.nightwatch.mod.NightwatchTestOptions
 import typings.nightwatch.mod.NightwatchTestSuite
+import typings.nightwatch.mod.VoidToNull
 import typings.nightwatch.mod.WindowPosition
 import typings.nightwatch.mod.WindowSizeAndPosition
 import typings.nightwatch.mod.WindowType
 import typings.nightwatch.nightwatchInts.`0`
 import typings.nightwatch.nightwatchInts.`1`
 import typings.nightwatch.nightwatchInts.`2`
+import typings.nightwatch.nightwatchStrings.DELETE
+import typings.nightwatch.nightwatchStrings.GET
 import typings.nightwatch.nightwatchStrings.LANDSCAPE
 import typings.nightwatch.nightwatchStrings.PORTRAIT
-import typings.nightwatch.nightwatchStrings.browser
-import typings.nightwatch.nightwatchStrings.client
-import typings.nightwatch.nightwatchStrings.driver
+import typings.nightwatch.nightwatchStrings.POST
+import typings.nightwatch.nightwatchStrings.`implicit`
+import typings.nightwatch.nightwatchStrings.delete_
 import typings.nightwatch.nightwatchStrings.left
 import typings.nightwatch.nightwatchStrings.middle
-import typings.nightwatch.nightwatchStrings.performance
+import typings.nightwatch.nightwatchStrings.pageLoad
+import typings.nightwatch.nightwatchStrings.post_
 import typings.nightwatch.nightwatchStrings.right
-import typings.nightwatch.nightwatchStrings.server
+import typings.nightwatch.nightwatchStrings.script
 import typings.seleniumWebdriver.mod.Actions
 import typings.seleniumWebdriver.mod.By
 import typings.seleniumWebdriver.mod.WebElement
@@ -66,22 +75,24 @@ trait AwaitableNightwatchAPIWeb extends StObject {
   @JSName("__isPlatformName")
   var __isPlatformName_Original: js.Function1[/* platform */ String, Boolean] = js.native
   
-  def acceptAlert(): this.type = js.native
+  def acceptAlert(): Awaitable[this.type, Null] = js.native
   def acceptAlert(
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
-  ): this.type = js.native
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
+  ): Awaitable[this.type, Null] = js.native
   @JSName("acceptAlert")
   var acceptAlert_Original: js.Function1[
     /* callback */ js.UndefOr[
-      js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
+      js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
     ], 
-    this.type
+    Awaitable[this.type, Null]
   ] = js.native
   
   def actions(): Actions = js.native
   def actions(options: Async): Actions = js.native
   @JSName("actions")
   var actions_Original: js.Function1[/* options */ js.UndefOr[Async], Actions] = js.native
+  
+  var appium: AppiumCommands = js.native
   
   var assert: Assert = js.native
   
@@ -123,16 +134,16 @@ trait AwaitableNightwatchAPIWeb extends StObject {
     Awaitable[this.type, Null]
   ] = js.native
   
-  def back(): this.type = js.native
+  def back(): Awaitable[this.type, Null] = js.native
   def back(
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
-  ): this.type = js.native
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
+  ): Awaitable[this.type, Null] = js.native
   @JSName("back")
   var back_Original: js.Function1[
     /* callback */ js.UndefOr[
-      js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
+      js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
     ], 
-    this.type
+    Awaitable[this.type, Null]
   ] = js.native
   
   var baseUrl: String = js.native
@@ -201,18 +212,18 @@ trait AwaitableNightwatchAPIWeb extends StObject {
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
   ): Awaitable[this.type, Null] = js.native
   
-  def clickAndHold(selector: String): this.type = js.native
+  def clickAndHold(selector: String): Awaitable[this.type, Null] = js.native
   def clickAndHold(
     selector: String,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
-  ): this.type = js.native
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
+  ): Awaitable[this.type, Null] = js.native
   @JSName("clickAndHold")
   var clickAndHold_Original: js.Function2[
     /* selector */ String, 
     /* callback */ js.UndefOr[
-      js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
+      js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
     ], 
-    this.type
+    Awaitable[this.type, Null]
   ] = js.native
   
   @JSName("click")
@@ -236,37 +247,58 @@ trait AwaitableNightwatchAPIWeb extends StObject {
     Awaitable[this.type, Null]
   ] = js.native
   
-  def contexts(): this.type = js.native
+  def contexts(): Awaitable[this.type, js.Array[String]] = js.native
   def contexts(
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Any], Unit]
-  ): this.type = js.native
+    callback: js.ThisFunction1[
+      /* this */ NightwatchAPI, 
+      /* result */ NightwatchCallbackResult[js.Array[String]], 
+      Unit
+    ]
+  ): Awaitable[this.type, js.Array[String]] = js.native
   @JSName("contexts")
   var contexts_Original: js.Function1[
     /* callback */ js.UndefOr[
-      js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Any], Unit]
+      js.ThisFunction1[
+        /* this */ NightwatchAPI, 
+        /* result */ NightwatchCallbackResult[js.Array[String]], 
+        Unit
+      ]
     ], 
-    this.type
+    Awaitable[this.type, js.Array[String]]
   ] = js.native
   
-  def cookie(method: String): this.type = js.native
-  def cookie(method: String, callbackOrCookie: js.Function0[Unit]): this.type = js.native
+  def cookie(method: GET | DELETE): Awaitable[this.type, js.Array[Cookie] | Null] = js.native
+  def cookie(
+    method: GET | DELETE,
+    callback: js.ThisFunction1[
+      /* this */ NightwatchAPI, 
+      /* result */ NightwatchCallbackResult[js.Array[Cookie] | Null], 
+      Unit
+    ]
+  ): Awaitable[this.type, js.Array[Cookie] | Null] = js.native
   @JSName("cookie")
   var cookie_Original: js.Function2[
-    /* method */ String, 
-    /* callbackOrCookie */ js.UndefOr[js.Function0[Unit]], 
-    this.type
+    /* method */ GET | DELETE, 
+    /* callback */ js.UndefOr[
+      js.ThisFunction1[
+        /* this */ NightwatchAPI, 
+        /* result */ NightwatchCallbackResult[js.Array[Cookie] | Null], 
+        Unit
+      ]
+    ], 
+    Awaitable[this.type, js.Array[Cookie] | Null]
   ] = js.native
   
-  def currentContext(): this.type = js.native
+  def currentContext(): Awaitable[this.type, String | Null] = js.native
   def currentContext(
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Any], Unit]
-  ): this.type = js.native
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[String | Null], Unit]
+  ): Awaitable[this.type, String | Null] = js.native
   @JSName("currentContext")
   var currentContext_Original: js.Function1[
     /* callback */ js.UndefOr[
-      js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Any], Unit]
+      js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[String | Null], Unit]
     ], 
-    this.type
+    Awaitable[this.type, String | Null]
   ] = js.native
   
   var currentTest: NightwatchTestSuite = js.native
@@ -308,30 +340,30 @@ trait AwaitableNightwatchAPIWeb extends StObject {
     Awaitable[this.type, Null]
   ] = js.native
   
-  def dismissAlert(): this.type = js.native
+  def dismissAlert(): Awaitable[this.type, Null] = js.native
   def dismissAlert(
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
-  ): this.type = js.native
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
+  ): Awaitable[this.type, Null] = js.native
   @JSName("dismissAlert")
   var dismissAlert_Original: js.Function1[
     /* callback */ js.UndefOr[
-      js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
+      js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
     ], 
-    this.type
+    Awaitable[this.type, Null]
   ] = js.native
   
-  def doubleClick(selector: String): this.type = js.native
+  def doubleClick(selector: String): Awaitable[this.type, Null] = js.native
   def doubleClick(
     selector: String,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
-  ): this.type = js.native
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
+  ): Awaitable[this.type, Null] = js.native
   @JSName("doubleClick")
   var doubleClick_Original: js.Function2[
     /* selector */ String, 
     /* callback */ js.UndefOr[
-      js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
+      js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
     ], 
-    this.type
+    Awaitable[this.type, Null]
   ] = js.native
   
   def dragAndDrop(selector: Definition, destination: NightwatchElement): Awaitable[this.type, Null] = js.native
@@ -356,31 +388,31 @@ trait AwaitableNightwatchAPIWeb extends StObject {
     Awaitable[this.type, Null]
   ] = js.native
   
-  def element(`using`: LocateStrategy, value: String): Awaitable[this.type, ELEMENTKEY] = js.native
+  def element(`using`: LocateStrategy, value: String): Awaitable[this.type, ElementResult] = js.native
   def element(
     `using`: LocateStrategy,
     value: String,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[ELEMENTKEY], Unit]
-  ): Awaitable[this.type, ELEMENTKEY] = js.native
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[ElementResult], Unit]
+  ): Awaitable[this.type, ElementResult] = js.native
   
-  def elementActive(): this.type = js.native
+  def elementActive(): Awaitable[this.type, String] = js.native
   def elementActive(
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[ELEMENTKEY], Unit]
-  ): this.type = js.native
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[String], Unit]
+  ): Awaitable[this.type, String] = js.native
   @JSName("elementActive")
   var elementActive_Original: js.Function1[
     /* callback */ js.UndefOr[
-      js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[ELEMENTKEY], Unit]
+      js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[String], Unit]
     ], 
-    this.type
+    Awaitable[this.type, String]
   ] = js.native
   
-  def elementIdAttribute(id: String, attributeName: String): this.type = js.native
+  def elementIdAttribute(id: String, attributeName: String): Awaitable[this.type, String | Null] = js.native
   def elementIdAttribute(
     id: String,
     attributeName: String,
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[String | Null], Unit]
-  ): this.type = js.native
+  ): Awaitable[this.type, String | Null] = js.native
   @JSName("elementIdAttribute")
   var elementIdAttribute_Original: js.Function3[
     /* id */ String, 
@@ -388,21 +420,21 @@ trait AwaitableNightwatchAPIWeb extends StObject {
     /* callback */ js.UndefOr[
       js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[String | Null], Unit]
     ], 
-    this.type
+    Awaitable[this.type, String | Null]
   ] = js.native
   
-  def elementIdClear(id: String): this.type = js.native
+  def elementIdClear(id: String): Awaitable[this.type, Null] = js.native
   def elementIdClear(
     id: String,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
-  ): this.type = js.native
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
+  ): Awaitable[this.type, Null] = js.native
   @JSName("elementIdClear")
   var elementIdClear_Original: js.Function2[
     /* id */ String, 
     /* callback */ js.UndefOr[
-      js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
+      js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
     ], 
-    this.type
+    Awaitable[this.type, Null]
   ] = js.native
   
   def elementIdClick(id: String): Awaitable[this.type, Null] = js.native
@@ -419,12 +451,12 @@ trait AwaitableNightwatchAPIWeb extends StObject {
     Awaitable[this.type, Null]
   ] = js.native
   
-  def elementIdCssProperty(id: String, cssPropertyName: String): this.type = js.native
+  def elementIdCssProperty(id: String, cssPropertyName: String): Awaitable[this.type, String] = js.native
   def elementIdCssProperty(
     id: String,
     cssPropertyName: String,
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[String], Unit]
-  ): this.type = js.native
+  ): Awaitable[this.type, String] = js.native
   @JSName("elementIdCssProperty")
   var elementIdCssProperty_Original: js.Function3[
     /* id */ String, 
@@ -432,66 +464,74 @@ trait AwaitableNightwatchAPIWeb extends StObject {
     /* callback */ js.UndefOr[
       js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[String], Unit]
     ], 
-    this.type
+    Awaitable[this.type, String]
   ] = js.native
   
-  def elementIdDisplayed(id: String): this.type = js.native
+  def elementIdDisplayed(id: String): Awaitable[this.type, Boolean] = js.native
   def elementIdDisplayed(
     id: String,
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Boolean], Unit]
-  ): this.type = js.native
+  ): Awaitable[this.type, Boolean] = js.native
   @JSName("elementIdDisplayed")
   var elementIdDisplayed_Original: js.Function2[
     /* id */ String, 
     /* callback */ js.UndefOr[
       js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Boolean], Unit]
     ], 
-    this.type
+    Awaitable[this.type, Boolean]
   ] = js.native
   
-  def elementIdDoubleClick(webElementId: String): this.type = js.native
+  def elementIdDoubleClick(webElementId: String): Awaitable[this.type, Null] = js.native
   def elementIdDoubleClick(
     webElementId: String,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
-  ): this.type = js.native
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
+  ): Awaitable[this.type, Null] = js.native
   @JSName("elementIdDoubleClick")
   var elementIdDoubleClick_Original: js.Function2[
     /* webElementId */ String, 
     /* callback */ js.UndefOr[
-      js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
+      js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
     ], 
-    this.type
+    Awaitable[this.type, Null]
   ] = js.native
   
-  def elementIdElement(id: String, `using`: LocateStrategy, value: String): this.type = js.native
+  def elementIdElement(id: String, `using`: LocateStrategy, value: String): Awaitable[this.type, ElementResult | js.Array[Any]] = js.native
   def elementIdElement(
     id: String,
     `using`: LocateStrategy,
     value: String,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[ELEMENTKEY], Unit]
-  ): this.type = js.native
+    callback: js.ThisFunction1[
+      /* this */ NightwatchAPI, 
+      /* result */ NightwatchCallbackResult[ElementResult | js.Array[Any]], 
+      Unit
+    ]
+  ): Awaitable[this.type, ElementResult | js.Array[Any]] = js.native
   @JSName("elementIdElement")
   var elementIdElement_Original: js.Function4[
     /* id */ String, 
     /* using */ LocateStrategy, 
     /* value */ String, 
     /* callback */ js.UndefOr[
-      js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[ELEMENTKEY], Unit]
+      js.ThisFunction1[
+        /* this */ NightwatchAPI, 
+        /* result */ NightwatchCallbackResult[ElementResult | js.Array[Any]], 
+        Unit
+      ]
     ], 
-    this.type
+    Awaitable[this.type, ElementResult | js.Array[Any]]
   ] = js.native
   
-  def elementIdElements(id: String, `using`: LocateStrategy, value: String): this.type = js.native
+  def elementIdElements(id: String, `using`: LocateStrategy, value: String): Awaitable[this.type, js.Array[ElementResult]] = js.native
   def elementIdElements(
     id: String,
     `using`: LocateStrategy,
     value: String,
     callback: js.ThisFunction1[
       /* this */ NightwatchAPI, 
-      /* result */ NightwatchCallbackResult[js.Array[ELEMENTKEY]], 
+      /* result */ NightwatchCallbackResult[js.Array[ElementResult]], 
       Unit
     ]
-  ): this.type = js.native
+  ): Awaitable[this.type, js.Array[ElementResult]] = js.native
   @JSName("elementIdElements")
   var elementIdElements_Original: js.Function4[
     /* id */ String, 
@@ -500,33 +540,33 @@ trait AwaitableNightwatchAPIWeb extends StObject {
     /* callback */ js.UndefOr[
       js.ThisFunction1[
         /* this */ NightwatchAPI, 
-        /* result */ NightwatchCallbackResult[js.Array[ELEMENTKEY]], 
+        /* result */ NightwatchCallbackResult[js.Array[ElementResult]], 
         Unit
       ]
     ], 
-    this.type
+    Awaitable[this.type, js.Array[ElementResult]]
   ] = js.native
   
-  def elementIdEnabled(id: String): this.type = js.native
+  def elementIdEnabled(id: String): Awaitable[this.type, Boolean] = js.native
   def elementIdEnabled(
     id: String,
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Boolean], Unit]
-  ): this.type = js.native
+  ): Awaitable[this.type, Boolean] = js.native
   @JSName("elementIdEnabled")
   var elementIdEnabled_Original: js.Function2[
     /* id */ String, 
     /* callback */ js.UndefOr[
       js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Boolean], Unit]
     ], 
-    this.type
+    Awaitable[this.type, Boolean]
   ] = js.native
   
-  def elementIdEquals(id: String, otherId: String): this.type = js.native
+  def elementIdEquals(id: String, otherId: String): Awaitable[this.type, Boolean] = js.native
   def elementIdEquals(
     id: String,
     otherId: String,
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Boolean], Unit]
-  ): this.type = js.native
+  ): Awaitable[this.type, Boolean] = js.native
   @JSName("elementIdEquals")
   var elementIdEquals_Original: js.Function3[
     /* id */ String, 
@@ -534,20 +574,20 @@ trait AwaitableNightwatchAPIWeb extends StObject {
     /* callback */ js.UndefOr[
       js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Boolean], Unit]
     ], 
-    this.type
+    Awaitable[this.type, Boolean]
   ] = js.native
   
-  def elementIdLocation(id: String): this.type = js.native
+  def elementIdLocation(id: String): Awaitable[this.type, NightwatchSizeAndPosition] = js.native
   def elementIdLocation(
     id: String,
     callback: js.ThisFunction1[
       /* this */ NightwatchAPI, 
-      /* result */ NightwatchCallbackResult[NightwatchPosition], 
+      /* result */ NightwatchCallbackResult[NightwatchSizeAndPosition], 
       Unit
     ]
-  ): this.type = js.native
+  ): Awaitable[this.type, NightwatchSizeAndPosition] = js.native
   
-  def elementIdLocationInView(id: String): this.type = js.native
+  def elementIdLocationInView(id: String): Awaitable[this.type, NightwatchPosition] = js.native
   def elementIdLocationInView(
     id: String,
     callback: js.ThisFunction1[
@@ -555,7 +595,7 @@ trait AwaitableNightwatchAPIWeb extends StObject {
       /* result */ NightwatchCallbackResult[NightwatchPosition], 
       Unit
     ]
-  ): this.type = js.native
+  ): Awaitable[this.type, NightwatchPosition] = js.native
   @JSName("elementIdLocationInView")
   var elementIdLocationInView_Original: js.Function2[
     /* id */ String, 
@@ -566,7 +606,7 @@ trait AwaitableNightwatchAPIWeb extends StObject {
         Unit
       ]
     ], 
-    this.type
+    Awaitable[this.type, NightwatchPosition]
   ] = js.native
   
   @JSName("elementIdLocation")
@@ -575,105 +615,105 @@ trait AwaitableNightwatchAPIWeb extends StObject {
     /* callback */ js.UndefOr[
       js.ThisFunction1[
         /* this */ NightwatchAPI, 
-        /* result */ NightwatchCallbackResult[NightwatchPosition], 
+        /* result */ NightwatchCallbackResult[NightwatchSizeAndPosition], 
         Unit
       ]
     ], 
-    this.type
+    Awaitable[this.type, NightwatchSizeAndPosition]
   ] = js.native
   
-  def elementIdName(id: String): this.type = js.native
+  def elementIdName(id: String): Awaitable[this.type, String] = js.native
   def elementIdName(
     id: String,
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[String], Unit]
-  ): this.type = js.native
+  ): Awaitable[this.type, String] = js.native
   @JSName("elementIdName")
   var elementIdName_Original: js.Function2[
     /* id */ String, 
     /* callback */ js.UndefOr[
       js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[String], Unit]
     ], 
-    this.type
+    Awaitable[this.type, String]
   ] = js.native
   
-  def elementIdProperty(webElementId: String, DOMPropertyName: String): this.type = js.native
+  def elementIdProperty(webElementId: String, DOMPropertyName: String): Awaitable[this.type, Any] = js.native
   def elementIdProperty(
     webElementId: String,
     DOMPropertyName: String,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[String], Unit]
-  ): this.type = js.native
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Any], Unit]
+  ): Awaitable[this.type, Any] = js.native
   @JSName("elementIdProperty")
   var elementIdProperty_Original: js.Function3[
     /* webElementId */ String, 
     /* DOMPropertyName */ String, 
     /* callback */ js.UndefOr[
-      js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[String], Unit]
+      js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Any], Unit]
     ], 
-    this.type
+    Awaitable[this.type, Any]
   ] = js.native
   
-  def elementIdSelected(id: String): this.type = js.native
+  def elementIdSelected(id: String): Awaitable[this.type, Boolean] = js.native
   def elementIdSelected(
     id: String,
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Boolean], Unit]
-  ): this.type = js.native
+  ): Awaitable[this.type, Boolean] = js.native
   @JSName("elementIdSelected")
   var elementIdSelected_Original: js.Function2[
     /* id */ String, 
     /* callback */ js.UndefOr[
       js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Boolean], Unit]
     ], 
-    this.type
+    Awaitable[this.type, Boolean]
   ] = js.native
   
-  def elementIdSize(id: String): this.type = js.native
+  def elementIdSize(id: String): Awaitable[this.type, NightwatchSizeAndPosition] = js.native
   def elementIdSize(
     id: String,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Width], Unit]
-  ): this.type = js.native
+    callback: js.ThisFunction1[
+      /* this */ NightwatchAPI, 
+      /* result */ NightwatchCallbackResult[NightwatchSizeAndPosition], 
+      Unit
+    ]
+  ): Awaitable[this.type, NightwatchSizeAndPosition] = js.native
   @JSName("elementIdSize")
   var elementIdSize_Original: js.Function2[
     /* id */ String, 
     /* callback */ js.UndefOr[
-      js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Width], Unit]
+      js.ThisFunction1[
+        /* this */ NightwatchAPI, 
+        /* result */ NightwatchCallbackResult[NightwatchSizeAndPosition], 
+        Unit
+      ]
     ], 
-    this.type
+    Awaitable[this.type, NightwatchSizeAndPosition]
   ] = js.native
   
-  def elementIdText(id: String): this.type = js.native
+  def elementIdText(id: String): Awaitable[this.type, String] = js.native
   def elementIdText(
     id: String,
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[String], Unit]
-  ): this.type = js.native
+  ): Awaitable[this.type, String] = js.native
   @JSName("elementIdText")
   var elementIdText_Original: js.Function2[
     /* id */ String, 
     /* callback */ js.UndefOr[
       js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[String], Unit]
     ], 
-    this.type
+    Awaitable[this.type, String]
   ] = js.native
   
-  def elementIdValue(id: String): this.type = js.native
-  def elementIdValue(id: String, value: String): this.type = js.native
+  def elementIdValue(id: String): Awaitable[this.type, String] = js.native
   def elementIdValue(
     id: String,
-    value: String,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
-  ): this.type = js.native
-  def elementIdValue(
-    id: String,
-    value: Unit,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
-  ): this.type = js.native
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[String], Unit]
+  ): Awaitable[this.type, String] = js.native
   @JSName("elementIdValue")
-  var elementIdValue_Original: js.Function3[
+  var elementIdValue_Original: js.Function2[
     /* id */ String, 
-    /* value */ js.UndefOr[String], 
     /* callback */ js.UndefOr[
-      js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
+      js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[String], Unit]
     ], 
-    this.type
+    Awaitable[this.type, String]
   ] = js.native
   
   @JSName("element")
@@ -681,21 +721,21 @@ trait AwaitableNightwatchAPIWeb extends StObject {
     /* using */ LocateStrategy, 
     /* value */ String, 
     /* callback */ js.UndefOr[
-      js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[ELEMENTKEY], Unit]
+      js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[ElementResult], Unit]
     ], 
-    Awaitable[this.type, ELEMENTKEY]
+    Awaitable[this.type, ElementResult]
   ] = js.native
   
-  def elements(`using`: LocateStrategy, value: String): Awaitable[this.type, js.Array[ELEMENTKEY]] = js.native
+  def elements(`using`: LocateStrategy, value: String): Awaitable[this.type, js.Array[ElementResult]] = js.native
   def elements(
     `using`: LocateStrategy,
     value: String,
     callback: js.ThisFunction1[
       /* this */ NightwatchAPI, 
-      /* result */ NightwatchCallbackResult[js.Array[ELEMENTKEY]], 
+      /* result */ NightwatchCallbackResult[js.Array[ElementResult]], 
       Unit
     ]
-  ): Awaitable[this.type, js.Array[ELEMENTKEY]] = js.native
+  ): Awaitable[this.type, js.Array[ElementResult]] = js.native
   @JSName("elements")
   var elements_Original: js.Function3[
     /* using */ LocateStrategy, 
@@ -703,11 +743,11 @@ trait AwaitableNightwatchAPIWeb extends StObject {
     /* callback */ js.UndefOr[
       js.ThisFunction1[
         /* this */ NightwatchAPI, 
-        /* result */ NightwatchCallbackResult[js.Array[ELEMENTKEY]], 
+        /* result */ NightwatchCallbackResult[js.Array[ElementResult]], 
         Unit
       ]
     ], 
-    Awaitable[this.type, js.Array[ELEMENTKEY]]
+    Awaitable[this.type, js.Array[ElementResult]]
   ] = js.native
   
   def enablePerformanceMetrics(): Awaitable[this.type, Null] = js.native
@@ -743,130 +783,106 @@ trait AwaitableNightwatchAPIWeb extends StObject {
   
   var ensure: Ensure = js.native
   
-  def execute[T](body: String): Awaitable[this.type, T] = js.native
-  def execute[T](body: String, args: js.Array[Any]): Awaitable[this.type, T] = js.native
-  def execute[T](
+  def execute[ReturnValue](body: String): Awaitable[this.type, VoidToNull[ReturnValue]] = js.native
+  def execute[ReturnValue](
     body: String,
-    args: js.Array[Any],
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[T], Unit]
-  ): Awaitable[this.type, T] = js.native
-  def execute[T](
-    body: String,
-    args: Unit,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[T], Unit]
-  ): Awaitable[this.type, T] = js.native
-  def execute[T](body: js.ThisFunction1[/* this */ Unit, /* repeated */ Any, T]): Awaitable[this.type, T] = js.native
-  def execute[T](body: js.ThisFunction1[/* this */ Unit, /* repeated */ Any, T], args: js.Array[Any]): Awaitable[this.type, T] = js.native
-  def execute[T](
-    body: js.ThisFunction1[/* this */ Unit, /* repeated */ Any, T],
-    args: js.Array[Any],
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[T], Unit]
-  ): Awaitable[this.type, T] = js.native
-  def execute[T](
-    body: js.ThisFunction1[/* this */ Unit, /* repeated */ Any, T],
-    args: Unit,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[T], Unit]
-  ): Awaitable[this.type, T] = js.native
+    callback: js.ThisFunction1[
+      /* this */ NightwatchAPI, 
+      /* result */ NightwatchCallbackResult[VoidToNull[ReturnValue]], 
+      Unit
+    ]
+  ): Awaitable[this.type, VoidToNull[ReturnValue]] = js.native
+  def execute[ReturnValue](body: ExecuteScriptFunction[js.Array[Any], ReturnValue]): Awaitable[this.type, VoidToNull[ReturnValue]] = js.native
+  def execute[ReturnValue](
+    body: ExecuteScriptFunction[js.Array[Any], ReturnValue],
+    callback: js.ThisFunction1[
+      /* this */ NightwatchAPI, 
+      /* result */ NightwatchCallbackResult[VoidToNull[ReturnValue]], 
+      Unit
+    ]
+  ): Awaitable[this.type, VoidToNull[ReturnValue]] = js.native
   
-  def executeAsync(script: String): this.type = js.native
-  def executeAsync(script: String, args: js.Array[Any]): this.type = js.native
-  def executeAsync(
+  def executeAsync[ReturnValue](script: String): Awaitable[this.type, ReturnValue] = js.native
+  def executeAsync[ReturnValue](
     script: String,
-    args: js.Array[Any],
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Any], Unit]
-  ): this.type = js.native
-  def executeAsync(
-    script: String,
-    args: Unit,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Any], Unit]
-  ): this.type = js.native
-  def executeAsync(script: js.ThisFunction1[/* this */ Unit, /* repeated */ Any, Any]): this.type = js.native
-  def executeAsync(script: js.ThisFunction1[/* this */ Unit, /* repeated */ Any, Any], args: js.Array[Any]): this.type = js.native
-  def executeAsync(
-    script: js.ThisFunction1[/* this */ Unit, /* repeated */ Any, Any],
-    args: js.Array[Any],
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Any], Unit]
-  ): this.type = js.native
-  def executeAsync(
-    script: js.ThisFunction1[/* this */ Unit, /* repeated */ Any, Any],
-    args: Unit,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Any], Unit]
-  ): this.type = js.native
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[ReturnValue], Unit]
+  ): Awaitable[this.type, ReturnValue] = js.native
+  def executeAsync[ReturnValue](script: ExecuteAsyncScriptFunction[js.Array[Any], ReturnValue]): Awaitable[this.type, ReturnValue] = js.native
+  def executeAsync[ReturnValue](
+    script: ExecuteAsyncScriptFunction[js.Array[Any], ReturnValue],
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[ReturnValue], Unit]
+  ): Awaitable[this.type, ReturnValue] = js.native
   
-  def executeAsyncScript[T](script: String, args: js.Array[Any]): this.type = js.native
-  def executeAsyncScript[T](
+  def executeAsyncScript[ReturnValue](script: String): Awaitable[this.type, ReturnValue] = js.native
+  def executeAsyncScript[ReturnValue](
     script: String,
-    args: js.Array[Any],
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[T], Unit]
-  ): this.type = js.native
-  def executeAsyncScript[T](script: js.ThisFunction1[/* this */ Unit, /* repeated */ Any, T], args: js.Array[Any]): this.type = js.native
-  def executeAsyncScript[T](
-    script: js.ThisFunction1[/* this */ Unit, /* repeated */ Any, T],
-    args: js.Array[Any],
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[T], Unit]
-  ): this.type = js.native
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[ReturnValue], Unit]
+  ): Awaitable[this.type, ReturnValue] = js.native
+  def executeAsyncScript[ReturnValue](script: ExecuteAsyncScriptFunction[js.Array[Any], ReturnValue]): Awaitable[this.type, ReturnValue] = js.native
+  def executeAsyncScript[ReturnValue](
+    script: ExecuteAsyncScriptFunction[js.Array[Any], ReturnValue],
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[ReturnValue], Unit]
+  ): Awaitable[this.type, ReturnValue] = js.native
   @JSName("executeAsyncScript")
-  var executeAsyncScript_Original: js.Function3[
-    /* script */ String | (js.ThisFunction1[/* this */ Unit, /* repeated */ Any, Any]), 
-    /* args */ js.Array[Any], 
+  var executeAsyncScript_Original: js.Function2[
+    /* script */ (ExecuteAsyncScriptFunction[js.Array[Any], Any]) | String, 
     /* callback */ js.UndefOr[
       js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Any], Unit]
     ], 
-    this.type
+    Awaitable[this.type, Any]
   ] = js.native
   
   @JSName("executeAsync")
-  var executeAsync_Original: js.Function3[
-    /* script */ (js.ThisFunction1[/* this */ Unit, /* repeated */ Any, Any]) | String, 
-    /* args */ js.UndefOr[js.Array[Any]], 
+  var executeAsync_Original: js.Function2[
+    /* script */ (ExecuteAsyncScriptFunction[js.Array[Any], Any]) | String, 
     /* callback */ js.UndefOr[
       js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Any], Unit]
     ], 
-    this.type
+    Awaitable[this.type, Any]
   ] = js.native
   
-  def executeScript[T](body: String): Awaitable[this.type, T] = js.native
-  def executeScript[T](body: String, args: js.Array[Any]): Awaitable[this.type, T] = js.native
-  def executeScript[T](
+  def executeScript[ReturnValue](body: String): Awaitable[this.type, VoidToNull[ReturnValue]] = js.native
+  def executeScript[ReturnValue](
     body: String,
-    args: js.Array[Any],
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[T], Unit]
-  ): Awaitable[this.type, T] = js.native
-  def executeScript[T](
-    body: String,
-    args: Unit,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[T], Unit]
-  ): Awaitable[this.type, T] = js.native
-  def executeScript[T](body: js.ThisFunction1[/* this */ Unit, /* repeated */ Any, T]): Awaitable[this.type, T] = js.native
-  def executeScript[T](body: js.ThisFunction1[/* this */ Unit, /* repeated */ Any, T], args: js.Array[Any]): Awaitable[this.type, T] = js.native
-  def executeScript[T](
-    body: js.ThisFunction1[/* this */ Unit, /* repeated */ Any, T],
-    args: js.Array[Any],
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[T], Unit]
-  ): Awaitable[this.type, T] = js.native
-  def executeScript[T](
-    body: js.ThisFunction1[/* this */ Unit, /* repeated */ Any, T],
-    args: Unit,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[T], Unit]
-  ): Awaitable[this.type, T] = js.native
+    callback: js.ThisFunction1[
+      /* this */ NightwatchAPI, 
+      /* result */ NightwatchCallbackResult[VoidToNull[ReturnValue]], 
+      Unit
+    ]
+  ): Awaitable[this.type, VoidToNull[ReturnValue]] = js.native
+  def executeScript[ReturnValue](body: ExecuteScriptFunction[js.Array[Any], ReturnValue]): Awaitable[this.type, VoidToNull[ReturnValue]] = js.native
+  def executeScript[ReturnValue](
+    body: ExecuteScriptFunction[js.Array[Any], ReturnValue],
+    callback: js.ThisFunction1[
+      /* this */ NightwatchAPI, 
+      /* result */ NightwatchCallbackResult[VoidToNull[ReturnValue]], 
+      Unit
+    ]
+  ): Awaitable[this.type, VoidToNull[ReturnValue]] = js.native
   @JSName("executeScript")
-  var executeScript_Original: js.Function3[
-    /* body */ (js.ThisFunction1[/* this */ Unit, /* repeated */ Any, Null]) | String, 
-    /* args */ js.UndefOr[js.Array[Any]], 
+  var executeScript_Original: js.Function2[
+    /* body */ (ExecuteScriptFunction[js.Array[Any], Any]) | String, 
     /* callback */ js.UndefOr[
-      js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
+      js.ThisFunction1[
+        /* this */ NightwatchAPI, 
+        /* result */ NightwatchCallbackResult[VoidToNull[Any]], 
+        Unit
+      ]
     ], 
-    Awaitable[this.type, Null]
+    Awaitable[this.type, VoidToNull[Any]]
   ] = js.native
   
   @JSName("execute")
-  var execute_Original: js.Function3[
-    /* body */ (js.ThisFunction1[/* this */ Unit, /* repeated */ Any, Null]) | String, 
-    /* args */ js.UndefOr[js.Array[Any]], 
+  var execute_Original: js.Function2[
+    /* body */ (ExecuteScriptFunction[js.Array[Any], Any]) | String, 
     /* callback */ js.UndefOr[
-      js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
+      js.ThisFunction1[
+        /* this */ NightwatchAPI, 
+        /* result */ NightwatchCallbackResult[VoidToNull[Any]], 
+        Unit
+      ]
     ], 
-    Awaitable[this.type, Null]
+    Awaitable[this.type, VoidToNull[Any]]
   ] = js.native
   
   var expect: Expect = js.native
@@ -915,62 +931,41 @@ trait AwaitableNightwatchAPIWeb extends StObject {
     Awaitable[this.type, js.Array[JSON_WEB_OBJECT]]
   ] = js.native
   
-  def forward(): this.type = js.native
+  def forward(): Awaitable[this.type, Null] = js.native
   def forward(
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
-  ): this.type = js.native
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
+  ): Awaitable[this.type, Null] = js.native
   @JSName("forward")
   var forward_Original: js.Function1[
     /* callback */ js.UndefOr[
-      js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
+      js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
     ], 
-    this.type
+    Awaitable[this.type, Null]
   ] = js.native
   
-  def frame(): this.type = js.native
-  def frame(frameId: String): this.type = js.native
+  def frame(): Awaitable[this.type, Null] = js.native
   def frame(
-    frameId: String,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
-  ): this.type = js.native
-  def frame(frameId: Double): this.type = js.native
-  def frame(
-    frameId: Double,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
-  ): this.type = js.native
-  def frame(
-    frameId: Null,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
-  ): this.type = js.native
-  def frame(
-    frameId: Unit,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
-  ): this.type = js.native
-  def frame(frameId: WebElement): this.type = js.native
-  def frame(
-    frameId: WebElement,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
-  ): this.type = js.native
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
+  ): Awaitable[this.type, Null] = js.native
   
-  def frameParent(): this.type = js.native
+  def frameParent(): Awaitable[this.type, Null] = js.native
   def frameParent(
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
-  ): this.type = js.native
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
+  ): Awaitable[this.type, Null] = js.native
   @JSName("frameParent")
   var frameParent_Original: js.Function1[
     /* callback */ js.UndefOr[
-      js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
+      js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
     ], 
-    this.type
+    Awaitable[this.type, Null]
   ] = js.native
   
   @JSName("frame")
-  var frame_Original: js.Function2[
-    /* frameId */ js.UndefOr[WebElement | String | Double | Null], 
+  var frame_Original: js.Function1[
     /* callback */ js.UndefOr[
-      js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
+      js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
     ], 
-    this.type
+    Awaitable[this.type, Null]
   ] = js.native
   
   def fullscreenWindow(): Awaitable[this.type, Null] = js.native
@@ -999,16 +994,16 @@ trait AwaitableNightwatchAPIWeb extends StObject {
     Awaitable[this.type, String]
   ] = js.native
   
-  def getAlertText(): this.type = js.native
+  def getAlertText(): Awaitable[this.type, String] = js.native
   def getAlertText(
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[String], Unit]
-  ): this.type = js.native
+  ): Awaitable[this.type, String] = js.native
   @JSName("getAlertText")
   var getAlertText_Original: js.Function1[
     /* callback */ js.UndefOr[
       js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[String], Unit]
     ], 
-    this.type
+    Awaitable[this.type, String]
   ] = js.native
   
   def getAriaRole(selector: Definition): Awaitable[this.type, String] = js.native
@@ -1258,24 +1253,16 @@ trait AwaitableNightwatchAPIWeb extends StObject {
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* log */ js.Array[NightwatchLogEntry], Unit]
   ): Awaitable[this.type, js.Array[NightwatchLogEntry]] = js.native
   
-  def getLogTypes(): Awaitable[this.type, js.Array[client | driver | browser | server | performance]] = js.native
+  def getLogTypes(): Awaitable[this.type, js.Array[NightwatchLogTypes]] = js.native
   def getLogTypes(
-    callback: js.ThisFunction1[
-      /* this */ NightwatchAPI, 
-      /* result */ js.Array[client | driver | browser | server | performance], 
-      Unit
-    ]
-  ): Awaitable[this.type, js.Array[client | driver | browser | server | performance]] = js.native
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ js.Array[NightwatchLogTypes], Unit]
+  ): Awaitable[this.type, js.Array[NightwatchLogTypes]] = js.native
   @JSName("getLogTypes")
   var getLogTypes_Original: js.Function1[
     /* callback */ js.UndefOr[
-      js.ThisFunction1[
-        /* this */ NightwatchAPI, 
-        /* result */ js.Array[client | driver | browser | server | performance], 
-        Unit
-      ]
+      js.ThisFunction1[/* this */ NightwatchAPI, /* result */ js.Array[NightwatchLogTypes], Unit]
     ], 
-    Awaitable[this.type, js.Array[client | driver | browser | server | performance]]
+    Awaitable[this.type, js.Array[NightwatchLogTypes]]
   ] = js.native
   
   @JSName("getLog")
@@ -1309,14 +1296,14 @@ trait AwaitableNightwatchAPIWeb extends StObject {
     Awaitable[this.type, JSON_WEB_OBJECT]
   ] = js.native
   
-  def getOrientation(): this.type = js.native
+  def getOrientation(): Awaitable[this.type, LANDSCAPE | PORTRAIT] = js.native
   def getOrientation(
     callback: js.ThisFunction1[
       /* this */ NightwatchAPI, 
       /* result */ NightwatchCallbackResult[LANDSCAPE | PORTRAIT], 
       Unit
     ]
-  ): this.type = js.native
+  ): Awaitable[this.type, LANDSCAPE | PORTRAIT] = js.native
   @JSName("getOrientation")
   var getOrientation_Original: js.Function1[
     /* callback */ js.UndefOr[
@@ -1326,7 +1313,7 @@ trait AwaitableNightwatchAPIWeb extends StObject {
         Unit
       ]
     ], 
-    this.type
+    Awaitable[this.type, LANDSCAPE | PORTRAIT]
   ] = js.native
   
   def getPerformanceMetrics(): Awaitable[this.type, StringDictionary[Double]] = js.native
@@ -1594,6 +1581,10 @@ trait AwaitableNightwatchAPIWeb extends StObject {
   @JSName("isAndroid")
   var isAndroid_Original: js.Function0[Boolean] = js.native
   
+  def isAppiumClient(): Boolean = js.native
+  @JSName("isAppiumClient")
+  var isAppiumClient_Original: js.Function0[Boolean] = js.native
+  
   def isChrome(): Boolean = js.native
   @JSName("isChrome")
   var isChrome_Original: js.Function0[Boolean] = js.native
@@ -1694,23 +1685,23 @@ trait AwaitableNightwatchAPIWeb extends StObject {
     Awaitable[this.type, Boolean]
   ] = js.native
   
-  def keys(keysToSend: String): this.type = js.native
+  def keys(keysToSend: String): Awaitable[this.type, Null] = js.native
   def keys(
     keysToSend: String,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
-  ): this.type = js.native
-  def keys(keysToSend: js.Array[String]): this.type = js.native
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
+  ): Awaitable[this.type, Null] = js.native
+  def keys(keysToSend: js.Array[String]): Awaitable[this.type, Null] = js.native
   def keys(
     keysToSend: js.Array[String],
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
-  ): this.type = js.native
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
+  ): Awaitable[this.type, Null] = js.native
   @JSName("keys")
   var keys_Original: js.Function2[
     /* keysToSend */ String | js.Array[String], 
     /* callback */ js.UndefOr[
-      js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
+      js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
     ], 
-    this.type
+    Awaitable[this.type, Null]
   ] = js.native
   
   var launchUrl: String = js.native
@@ -1763,62 +1754,58 @@ trait AwaitableNightwatchAPIWeb extends StObject {
     Awaitable[this.type, Null]
   ] = js.native
   
-  def mouseButtonClick(button: `0` | `1` | `2` | left | middle | right): this.type = js.native
+  def mouseButtonClick(button: `0` | `1` | `2` | left | middle | right): Awaitable[this.type, Null] = js.native
   def mouseButtonClick(
     button: `0` | `1` | `2` | left | middle | right,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
-  ): this.type = js.native
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
+  ): Awaitable[this.type, Null] = js.native
   @JSName("mouseButtonClick")
   var mouseButtonClick_Original: js.Function2[
     /* button */ `0` | `1` | `2` | left | middle | right, 
     /* callback */ js.UndefOr[
-      js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
+      js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
     ], 
-    this.type
+    Awaitable[this.type, Null]
   ] = js.native
   
-  def mouseButtonDown(button: `0` | `1` | `2` | left | middle | right): this.type = js.native
+  def mouseButtonDown(button: `0` | `1` | `2` | left | middle | right): Awaitable[this.type, Null] = js.native
   def mouseButtonDown(
     button: `0` | `1` | `2` | left | middle | right,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
-  ): this.type = js.native
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
+  ): Awaitable[this.type, Null] = js.native
   @JSName("mouseButtonDown")
   var mouseButtonDown_Original: js.Function2[
     /* button */ `0` | `1` | `2` | left | middle | right, 
     /* callback */ js.UndefOr[
-      js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
+      js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
     ], 
-    this.type
+    Awaitable[this.type, Null]
   ] = js.native
   
-  def mouseButtonUp(button: `0` | `1` | `2` | left | middle | right): this.type = js.native
+  def mouseButtonUp(button: `0` | `1` | `2` | left | middle | right): Awaitable[this.type, Null] = js.native
   def mouseButtonUp(
     button: `0` | `1` | `2` | left | middle | right,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
-  ): this.type = js.native
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
+  ): Awaitable[this.type, Null] = js.native
   @JSName("mouseButtonUp")
   var mouseButtonUp_Original: js.Function2[
     /* button */ `0` | `1` | `2` | left | middle | right, 
     /* callback */ js.UndefOr[
-      js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
+      js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
     ], 
-    this.type
+    Awaitable[this.type, Null]
   ] = js.native
   
-  def moveTo(element: String, xoffset: Double, yoffset: Double): this.type = js.native
+  def moveTo(): Awaitable[this.type, Null] = js.native
+  def moveTo(elementId: String): Awaitable[this.type, Null] = js.native
   def moveTo(
-    element: String,
-    xoffset: Double,
-    yoffset: Double,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
-  ): this.type = js.native
-  def moveTo(element: Null, xoffset: Double, yoffset: Double): this.type = js.native
+    elementId: String,
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
+  ): Awaitable[this.type, Null] = js.native
   def moveTo(
-    element: Null,
-    xoffset: Double,
-    yoffset: Double,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
-  ): this.type = js.native
+    elementId: Null,
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
+  ): Awaitable[this.type, Null] = js.native
   
   def moveToElement(selector: Definition, xoffset: Double, yoffset: Double): Awaitable[this.type, Null] = js.native
   def moveToElement(
@@ -1839,14 +1826,12 @@ trait AwaitableNightwatchAPIWeb extends StObject {
   ] = js.native
   
   @JSName("moveTo")
-  var moveTo_Original: js.Function4[
-    /* element */ String | Null, 
-    /* xoffset */ Double, 
-    /* yoffset */ Double, 
+  var moveTo_Original: js.Function2[
+    /* elementId */ String | Null, 
     /* callback */ js.UndefOr[
-      js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
+      js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
     ], 
-    this.type
+    Awaitable[this.type, Null]
   ] = js.native
   
   def navigateTo(url: String): Awaitable[this.type, Null] = js.native
@@ -1932,24 +1917,24 @@ trait AwaitableNightwatchAPIWeb extends StObject {
     Awaitable[this.type, Null]
   ] = js.native
   
-  def refresh(): this.type = js.native
+  def refresh(): Awaitable[this.type, Null] = js.native
   def refresh(
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
-  ): this.type = js.native
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
+  ): Awaitable[this.type, Null] = js.native
   @JSName("refresh")
   var refresh_Original: js.Function1[
     /* callback */ js.UndefOr[
-      js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
+      js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
     ], 
-    this.type
+    Awaitable[this.type, Null]
   ] = js.native
   
-  def registerBasicAuth(username: String, password: String): this.type = js.native
+  def registerBasicAuth(username: String, password: String): Awaitable[this.type, Null] = js.native
   def registerBasicAuth(
     username: String,
     password: String,
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
-  ): this.type = js.native
+  ): Awaitable[this.type, Null] = js.native
   @JSName("registerBasicAuth")
   var registerBasicAuth_Original: js.Function3[
     /* username */ String, 
@@ -1957,19 +1942,19 @@ trait AwaitableNightwatchAPIWeb extends StObject {
     /* callback */ js.UndefOr[
       js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
     ], 
-    this.type
+    Awaitable[this.type, Null]
   ] = js.native
   
-  def releaseMouseButton(): this.type = js.native
+  def releaseMouseButton(): Awaitable[this.type, Null] = js.native
   def releaseMouseButton(
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
-  ): this.type = js.native
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
+  ): Awaitable[this.type, Null] = js.native
   @JSName("releaseMouseButton")
   var releaseMouseButton_Original: js.Function1[
     /* callback */ js.UndefOr[
-      js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
+      js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
     ], 
-    this.type
+    Awaitable[this.type, Null]
   ] = js.native
   
   def resizeWindow(width: Double, height: Double): Awaitable[this.type, Null] = js.native
@@ -1988,18 +1973,18 @@ trait AwaitableNightwatchAPIWeb extends StObject {
     Awaitable[this.type, Null]
   ] = js.native
   
-  def rightClick(selector: Definition): this.type = js.native
+  def rightClick(selector: Definition): Awaitable[this.type, Null] = js.native
   def rightClick(
     selector: Definition,
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
-  ): this.type = js.native
+  ): Awaitable[this.type, Null] = js.native
   @JSName("rightClick")
   var rightClick_Original: js.Function2[
     /* selector */ Definition, 
     /* callback */ js.UndefOr[
       js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
     ], 
-    this.type
+    Awaitable[this.type, Null]
   ] = js.native
   
   def saveScreenshot(fileName: String): Awaitable[this.type, String] = js.native
@@ -2016,13 +2001,16 @@ trait AwaitableNightwatchAPIWeb extends StObject {
     Awaitable[this.type, String]
   ] = js.native
   
-  def screenshot(log_screenshot_data: Boolean): this.type = js.native
-  def screenshot(log_screenshot_data: Boolean, callback: js.Function1[/* screenshotEncoded */ String, Unit]): this.type = js.native
+  def screenshot(): Awaitable[this.type, String] = js.native
+  def screenshot(
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[String], Unit]
+  ): Awaitable[this.type, String] = js.native
   @JSName("screenshot")
-  var screenshot_Original: js.Function2[
-    /* log_screenshot_data */ Boolean, 
-    /* callback */ js.UndefOr[js.Function1[/* screenshotEncoded */ String, Unit]], 
-    this.type
+  var screenshot_Original: js.Function1[
+    /* callback */ js.UndefOr[
+      js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[String], Unit]
+    ], 
+    Awaitable[this.type, String]
   ] = js.native
   
   def sendKeys(selector: Definition, inputValue: String): Awaitable[this.type, Null] = js.native
@@ -2047,88 +2035,62 @@ trait AwaitableNightwatchAPIWeb extends StObject {
     Awaitable[this.type, Null]
   ] = js.native
   
-  def session(): this.type = js.native
-  def session(action: String): this.type = js.native
-  def session(action: String, sessionId: String): this.type = js.native
+  def session(): Awaitable[this.type, Record[String, Any]] = js.native
   def session(
-    action: String,
-    sessionId: String,
     callback: js.ThisFunction1[
       /* this */ NightwatchAPI, 
       /* result */ NightwatchCallbackResult[Record[String, Any]], 
       Unit
     ]
-  ): this.type = js.native
-  def session(
-    action: String,
-    sessionId: Unit,
-    callback: js.ThisFunction1[
-      /* this */ NightwatchAPI, 
-      /* result */ NightwatchCallbackResult[Record[String, Any]], 
-      Unit
-    ]
-  ): this.type = js.native
-  def session(action: Unit, sessionId: String): this.type = js.native
-  def session(
-    action: Unit,
-    sessionId: String,
-    callback: js.ThisFunction1[
-      /* this */ NightwatchAPI, 
-      /* result */ NightwatchCallbackResult[Record[String, Any]], 
-      Unit
-    ]
-  ): this.type = js.native
-  def session(
-    action: Unit,
-    sessionId: Unit,
-    callback: js.ThisFunction1[
-      /* this */ NightwatchAPI, 
-      /* result */ NightwatchCallbackResult[Record[String, Any]], 
-      Unit
-    ]
-  ): this.type = js.native
+  ): Awaitable[this.type, Record[String, Any]] = js.native
   
   var sessionId: String = js.native
   
-  def sessionLog(typeString: String): this.type = js.native
+  def sessionLog(typeString: String): Awaitable[this.type, js.Array[NightwatchLogEntry]] = js.native
   def sessionLog(
     typeString: String,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* log */ js.Array[NightwatchLogEntry], Unit]
-  ): this.type = js.native
+    callback: js.ThisFunction1[
+      /* this */ NightwatchAPI, 
+      /* result */ NightwatchCallbackResult[js.Array[NightwatchLogEntry]], 
+      Unit
+    ]
+  ): Awaitable[this.type, js.Array[NightwatchLogEntry]] = js.native
   
-  def sessionLogTypes(): this.type = js.native
+  def sessionLogTypes(): Awaitable[this.type, js.Array[NightwatchLogTypes]] = js.native
   def sessionLogTypes(
     callback: js.ThisFunction1[
       /* this */ NightwatchAPI, 
-      /* result */ NightwatchCallbackResult[js.Array[client | driver | browser | server]], 
+      /* result */ NightwatchCallbackResult[js.Array[NightwatchLogTypes]], 
       Unit
     ]
-  ): this.type = js.native
+  ): Awaitable[this.type, js.Array[NightwatchLogTypes]] = js.native
   @JSName("sessionLogTypes")
   var sessionLogTypes_Original: js.Function1[
     /* callback */ js.UndefOr[
       js.ThisFunction1[
         /* this */ NightwatchAPI, 
-        /* result */ NightwatchCallbackResult[js.Array[client | driver | browser | server]], 
+        /* result */ NightwatchCallbackResult[js.Array[NightwatchLogTypes]], 
         Unit
       ]
     ], 
-    this.type
+    Awaitable[this.type, js.Array[NightwatchLogTypes]]
   ] = js.native
   
   @JSName("sessionLog")
   var sessionLog_Original: js.Function2[
     /* typeString */ String, 
     /* callback */ js.UndefOr[
-      js.ThisFunction1[/* this */ NightwatchAPI, /* log */ js.Array[NightwatchLogEntry], Unit]
+      js.ThisFunction1[
+        /* this */ NightwatchAPI, 
+        /* result */ NightwatchCallbackResult[js.Array[NightwatchLogEntry]], 
+        Unit
+      ]
     ], 
-    this.type
+    Awaitable[this.type, js.Array[NightwatchLogEntry]]
   ] = js.native
   
   @JSName("session")
-  var session_Original: js.Function3[
-    /* action */ js.UndefOr[String], 
-    /* sessionId */ js.UndefOr[String], 
+  var session_Original: js.Function1[
     /* callback */ js.UndefOr[
       js.ThisFunction1[
         /* this */ NightwatchAPI, 
@@ -2136,17 +2098,17 @@ trait AwaitableNightwatchAPIWeb extends StObject {
         Unit
       ]
     ], 
-    this.type
+    Awaitable[this.type, Record[String, Any]]
   ] = js.native
   
-  def sessions(): this.type = js.native
+  def sessions(): Awaitable[this.type, js.Array[Record[String, Any]]] = js.native
   def sessions(
     callback: js.ThisFunction1[
       /* this */ NightwatchAPI, 
       /* result */ NightwatchCallbackResult[js.Array[Record[String, Any]]], 
       Unit
     ]
-  ): this.type = js.native
+  ): Awaitable[this.type, js.Array[Record[String, Any]]] = js.native
   @JSName("sessions")
   var sessions_Original: js.Function1[
     /* callback */ js.UndefOr[
@@ -2156,21 +2118,21 @@ trait AwaitableNightwatchAPIWeb extends StObject {
         Unit
       ]
     ], 
-    this.type
+    Awaitable[this.type, js.Array[Record[String, Any]]]
   ] = js.native
   
-  def setAlertText(value: String): this.type = js.native
+  def setAlertText(value: String): Awaitable[this.type, Null] = js.native
   def setAlertText(
     value: String,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
-  ): this.type = js.native
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
+  ): Awaitable[this.type, Null] = js.native
   @JSName("setAlertText")
   var setAlertText_Original: js.Function2[
     /* value */ String, 
     /* callback */ js.UndefOr[
-      js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
+      js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
     ], 
-    this.type
+    Awaitable[this.type, Null]
   ] = js.native
   
   def setAttribute(selector: Definition, attribute: String, value: String): Awaitable[this.type, Boolean] = js.native
@@ -2191,10 +2153,19 @@ trait AwaitableNightwatchAPIWeb extends StObject {
     Awaitable[this.type, Boolean]
   ] = js.native
   
-  def setContext(context: String): this.type = js.native
-  def setContext(context: String, callback: js.Function0[Unit]): this.type = js.native
+  def setContext(context: String): Awaitable[this.type, Null] = js.native
+  def setContext(
+    context: String,
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
+  ): Awaitable[this.type, Null] = js.native
   @JSName("setContext")
-  var setContext_Original: js.Function2[/* context */ String, /* callback */ js.UndefOr[js.Function0[Unit]], this.type] = js.native
+  var setContext_Original: js.Function2[
+    /* context */ String, 
+    /* callback */ js.UndefOr[
+      js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
+    ], 
+    Awaitable[this.type, Null]
+  ] = js.native
   
   def setCookie(cookie: Cookie): Awaitable[this.type, Null] = js.native
   def setCookie(
@@ -2248,32 +2219,40 @@ trait AwaitableNightwatchAPIWeb extends StObject {
     Awaitable[this.type, Null]
   ] = js.native
   
-  def setNetworkConditions(spec: StringDictionary[Any]): this.type = js.native
+  def setNetworkConditions(spec: Downloadthroughput): Awaitable[this.type, Null] = js.native
   def setNetworkConditions(
-    spec: StringDictionary[Any],
+    spec: Downloadthroughput,
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
-  ): this.type = js.native
+  ): Awaitable[this.type, Null] = js.native
   @JSName("setNetworkConditions")
   var setNetworkConditions_Original: js.Function2[
-    /* spec */ StringDictionary[Any], 
+    /* spec */ Downloadthroughput, 
     /* callback */ js.UndefOr[
       js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
     ], 
-    this.type
+    Awaitable[this.type, Null]
   ] = js.native
   
-  def setOrientation(orientation: LANDSCAPE | PORTRAIT): this.type = js.native
+  def setOrientation(orientation: LANDSCAPE | PORTRAIT): Awaitable[this.type, LANDSCAPE | PORTRAIT] = js.native
   def setOrientation(
     orientation: LANDSCAPE | PORTRAIT,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
-  ): this.type = js.native
+    callback: js.ThisFunction1[
+      /* this */ NightwatchAPI, 
+      /* result */ NightwatchCallbackResult[LANDSCAPE | PORTRAIT], 
+      Unit
+    ]
+  ): Awaitable[this.type, LANDSCAPE | PORTRAIT] = js.native
   @JSName("setOrientation")
   var setOrientation_Original: js.Function2[
     /* orientation */ LANDSCAPE | PORTRAIT, 
     /* callback */ js.UndefOr[
-      js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
+      js.ThisFunction1[
+        /* this */ NightwatchAPI, 
+        /* result */ NightwatchCallbackResult[LANDSCAPE | PORTRAIT], 
+        Unit
+      ]
     ], 
-    this.type
+    Awaitable[this.type, LANDSCAPE | PORTRAIT]
   ] = js.native
   
   def setPassword(selector: Definition, inputValue: String): Awaitable[this.type, Null] = js.native
@@ -2370,35 +2349,43 @@ trait AwaitableNightwatchAPIWeb extends StObject {
     Awaitable[this.type, Null]
   ] = js.native
   
-  def source(): this.type = js.native
+  def source(): Awaitable[this.type, String] = js.native
   def source(
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[String], Unit]
-  ): this.type = js.native
+  ): Awaitable[this.type, String] = js.native
   @JSName("source")
   var source_Original: js.Function1[
     /* callback */ js.UndefOr[
       js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[String], Unit]
     ], 
-    this.type
+    Awaitable[this.type, String]
   ] = js.native
   
-  def status(): this.type = js.native
+  def status(): Awaitable[this.type, NightwatchServerStatusResult] = js.native
   def status(
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Build], Unit]
-  ): this.type = js.native
+    callback: js.ThisFunction1[
+      /* this */ NightwatchAPI, 
+      /* result */ NightwatchCallbackResult[NightwatchServerStatusResult], 
+      Unit
+    ]
+  ): Awaitable[this.type, NightwatchServerStatusResult] = js.native
   @JSName("status")
   var status_Original: js.Function1[
     /* callback */ js.UndefOr[
-      js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Build], Unit]
+      js.ThisFunction1[
+        /* this */ NightwatchAPI, 
+        /* result */ NightwatchCallbackResult[NightwatchServerStatusResult], 
+        Unit
+      ]
     ], 
-    this.type
+    Awaitable[this.type, NightwatchServerStatusResult]
   ] = js.native
   
-  def submit(id: String): this.type = js.native
+  def submit(id: String): Awaitable[this.type, Null] = js.native
   def submit(
     id: String,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
-  ): this.type = js.native
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
+  ): Awaitable[this.type, Null] = js.native
   
   def submitForm(selector: Definition): Awaitable[this.type, Null] = js.native
   def submitForm(
@@ -2418,9 +2405,9 @@ trait AwaitableNightwatchAPIWeb extends StObject {
   var submit_Original: js.Function2[
     /* id */ String, 
     /* callback */ js.UndefOr[
-      js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
+      js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
     ], 
-    this.type
+    Awaitable[this.type, Null]
   ] = js.native
   
   def switchToWindow(handleOrName: String): Awaitable[this.type, Null] = js.native
@@ -2500,61 +2487,61 @@ trait AwaitableNightwatchAPIWeb extends StObject {
   def `then`[TResult1, TResult2](onfulfilled: Null, onrejected: js.Function1[/* reason */ Any, TResult2 | PromiseLike[TResult2]]): PromiseLike[TResult1 | TResult2] = js.native
   def `then`[TResult1, TResult2](onfulfilled: Unit, onrejected: js.Function1[/* reason */ Any, TResult2 | PromiseLike[TResult2]]): PromiseLike[TResult1 | TResult2] = js.native
   
-  def timeouts(typeOfOperation: String, ms: Double): this.type = js.native
+  def timeouts(typeOfOperation: script | `implicit` | pageLoad, ms: Double): Awaitable[this.type, Null] = js.native
   def timeouts(
-    typeOfOperation: String,
+    typeOfOperation: script | `implicit` | pageLoad,
     ms: Double,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
-  ): this.type = js.native
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
+  ): Awaitable[this.type, Null] = js.native
   
-  def timeoutsAsyncScript(ms: Double): this.type = js.native
+  def timeoutsAsyncScript(ms: Double): Awaitable[this.type, Null] = js.native
   def timeoutsAsyncScript(
     ms: Double,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
-  ): this.type = js.native
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
+  ): Awaitable[this.type, Null] = js.native
   @JSName("timeoutsAsyncScript")
   var timeoutsAsyncScript_Original: js.Function2[
     /* ms */ Double, 
     /* callback */ js.UndefOr[
-      js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
+      js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
     ], 
-    this.type
+    Awaitable[this.type, Null]
   ] = js.native
   
-  def timeoutsImplicitWait(ms: Double): this.type = js.native
+  def timeoutsImplicitWait(ms: Double): Awaitable[this.type, Null] = js.native
   def timeoutsImplicitWait(
     ms: Double,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
-  ): this.type = js.native
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
+  ): Awaitable[this.type, Null] = js.native
   @JSName("timeoutsImplicitWait")
   var timeoutsImplicitWait_Original: js.Function2[
     /* ms */ Double, 
     /* callback */ js.UndefOr[
-      js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
+      js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
     ], 
-    this.type
+    Awaitable[this.type, Null]
   ] = js.native
   
   @JSName("timeouts")
   var timeouts_Original: js.Function3[
-    /* typeOfOperation */ String, 
+    /* typeOfOperation */ script | `implicit` | pageLoad, 
     /* ms */ Double, 
     /* callback */ js.UndefOr[
-      js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
+      js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
     ], 
-    this.type
+    Awaitable[this.type, Null]
   ] = js.native
   
-  def title(): this.type = js.native
+  def title(): Awaitable[this.type, String] = js.native
   def title(
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[String], Unit]
-  ): this.type = js.native
+  ): Awaitable[this.type, String] = js.native
   @JSName("title")
   var title_Original: js.Function1[
     /* callback */ js.UndefOr[
       js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[String], Unit]
     ], 
-    this.type
+    Awaitable[this.type, String]
   ] = js.native
   
   def updateValue(selector: Definition, inputValue: String): Awaitable[this.type, Null] = js.native
@@ -2595,16 +2582,10 @@ trait AwaitableNightwatchAPIWeb extends StObject {
     Awaitable[this.type, Null]
   ] = js.native
   
-  def url(): this.type = js.native
-  def url(url: String): this.type = js.native
+  def url(): Awaitable[this.type, String] = js.native
   def url(
-    url: String,
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[String], Unit]
-  ): this.type = js.native
-  def url(
-    url: Unit,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[String], Unit]
-  ): this.type = js.native
+  ): Awaitable[this.type, String] = js.native
   
   def urlHash(hash: String): Awaitable[this.type, Null] = js.native
   def urlHash(
@@ -2621,12 +2602,11 @@ trait AwaitableNightwatchAPIWeb extends StObject {
   ] = js.native
   
   @JSName("url")
-  var url_Original: js.Function2[
-    /* url */ js.UndefOr[String], 
+  var url_Original: js.Function1[
     /* callback */ js.UndefOr[
       js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[String], Unit]
     ], 
-    this.type
+    Awaitable[this.type, String]
   ] = js.native
   
   def useCss(): Awaitable[this.type, Unit] = js.native
@@ -3778,18 +3758,18 @@ trait AwaitableNightwatchAPIWeb extends StObject {
     Awaitable[this.type, Null]
   ] = js.native
   
-  def window(method: String): this.type = js.native
-  def window(method: String, handleOrName: String): this.type = js.native
+  def window(method: post_ | delete_ | POST | DELETE): Awaitable[this.type, Null] = js.native
+  def window(method: post_ | delete_ | POST | DELETE, handleOrName: String): Awaitable[this.type, Null] = js.native
   def window(
-    method: String,
+    method: post_ | delete_ | POST | DELETE,
     handleOrName: String,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
-  ): this.type = js.native
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
+  ): Awaitable[this.type, Null] = js.native
   def window(
-    method: String,
+    method: post_ | delete_ | POST | DELETE,
     handleOrName: Unit,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
-  ): this.type = js.native
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
+  ): Awaitable[this.type, Null] = js.native
   
   def windowHandle(): Awaitable[this.type, String] = js.native
   def windowHandle(
@@ -3823,90 +3803,82 @@ trait AwaitableNightwatchAPIWeb extends StObject {
     Awaitable[this.type, js.Array[String]]
   ] = js.native
   
-  def windowMaximize(): this.type = js.native
-  def windowMaximize(handleOrName: String): this.type = js.native
+  def windowMaximize(): Awaitable[this.type, Null] = js.native
+  def windowMaximize(handleOrName: String): Awaitable[this.type, Null] = js.native
   def windowMaximize(
     handleOrName: String,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
-  ): this.type = js.native
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
+  ): Awaitable[this.type, Null] = js.native
   def windowMaximize(
     handleOrName: Unit,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
-  ): this.type = js.native
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
+  ): Awaitable[this.type, Null] = js.native
   @JSName("windowMaximize")
   var windowMaximize_Original: js.Function2[
     /* handleOrName */ js.UndefOr[String], 
     /* callback */ js.UndefOr[
-      js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
+      js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
     ], 
-    this.type
+    Awaitable[this.type, Null]
   ] = js.native
   
-  def windowPosition(windowHandle: String, offsetX: Double, offsetY: Double): this.type = js.native
+  def windowPosition(windowHandle: String, offsetX: Double, offsetY: Double): Awaitable[this.type, Null] = js.native
   def windowPosition(
     windowHandle: String,
     offsetX: Double,
     offsetY: Double,
-    callback: js.ThisFunction1[
-      /* this */ NightwatchAPI, 
-      /* result */ NightwatchCallbackResult[NightwatchPosition], 
-      Unit
-    ]
-  ): this.type = js.native
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
+  ): Awaitable[this.type, Null] = js.native
   @JSName("windowPosition")
   var windowPosition_Original: js.Function4[
     /* windowHandle */ String, 
     /* offsetX */ Double, 
     /* offsetY */ Double, 
     /* callback */ js.UndefOr[
-      js.ThisFunction1[
-        /* this */ NightwatchAPI, 
-        /* result */ NightwatchCallbackResult[NightwatchPosition], 
-        Unit
-      ]
+      js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
     ], 
-    this.type
+    Awaitable[this.type, Null]
   ] = js.native
   
-  def windowRect(options: Height): this.type = js.native
+  def windowRect(options: Height): Awaitable[this.type, Null] = js.native
   def windowRect(
     options: Height,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
-  ): this.type = js.native
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
+  ): Awaitable[this.type, Null] = js.native
   @JSName("windowRect")
   var windowRect_Original: js.Function2[
     /* options */ Height, 
     /* callback */ js.UndefOr[
-      js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
+      js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
     ], 
-    this.type
+    Awaitable[this.type, Null]
   ] = js.native
   
-  def windowSize(windowHandle: String, width: Double, height: Double): this.type = js.native
+  def windowSize(windowHandle: String, width: Double, height: Double): Awaitable[this.type, Null] = js.native
   def windowSize(
     windowHandle: String,
     width: Double,
     height: Double,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
-  ): this.type = js.native
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
+  ): Awaitable[this.type, Null] = js.native
   @JSName("windowSize")
   var windowSize_Original: js.Function4[
     /* windowHandle */ String, 
     /* width */ Double, 
     /* height */ Double, 
     /* callback */ js.UndefOr[
-      js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
+      js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
     ], 
-    this.type
+    Awaitable[this.type, Null]
   ] = js.native
   
   @JSName("window")
   var window_Original: js.Function3[
-    /* method */ String, 
+    /* method */ post_ | delete_ | POST | DELETE, 
     /* handleOrName */ js.UndefOr[String], 
     /* callback */ js.UndefOr[
-      js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
+      js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
     ], 
-    this.type
+    Awaitable[this.type, Null]
   ] = js.native
 }

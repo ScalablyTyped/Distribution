@@ -5,10 +5,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Available only in the v=beta channel: https://goo.gle/3oAthT3.
-  * The details for a task returned by Fleet Engine.
-  */
 trait Task extends StObject {
   
   /**
@@ -28,7 +24,7 @@ trait Task extends StObject {
     * shipment, use the tracking_id field. Multiple tasks can have the same
     * tracking_id.
     */
-  var name: String | Null
+  var name: String
   
   /**
     * The outcome of the task.
@@ -59,12 +55,17 @@ trait Task extends StObject {
   /**
     * Information about the segments left to be completed for this task.
     */
-  var remainingVehicleJourneySegments: js.Array[VehicleJourneySegment] | Null
+  var remainingVehicleJourneySegments: js.Array[VehicleJourneySegment]
   
   /**
     * The current execution state of the task.
     */
-  var status: String | Null
+  var status: String
+  
+  /**
+    * The time window during which the task should be completed.
+    */
+  var targetTimeWindow: TimeWindow | Null
   
   /**
     * The tracking ID of the shipment.
@@ -74,7 +75,7 @@ trait Task extends StObject {
   /**
     * The task type; for example, a break or shipment.
     */
-  var `type`: String | Null
+  var `type`: String
   
   /**
     * The ID of the vehicle performing this task.
@@ -83,9 +84,14 @@ trait Task extends StObject {
 }
 object Task {
   
-  inline def apply(): Task = {
-    val __obj = js.Dynamic.literal(estimatedCompletionTime = null, latestVehicleLocationUpdate = null, name = null, outcome = null, outcomeLocation = null, outcomeLocationSource = null, outcomeTime = null, plannedLocation = null, remainingVehicleJourneySegments = null, status = null, trackingId = null, vehicleId = null)
-    __obj.updateDynamic("type")(null)
+  inline def apply(
+    name: String,
+    remainingVehicleJourneySegments: js.Array[VehicleJourneySegment],
+    status: String,
+    `type`: String
+  ): Task = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], remainingVehicleJourneySegments = remainingVehicleJourneySegments.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], estimatedCompletionTime = null, latestVehicleLocationUpdate = null, outcome = null, outcomeLocation = null, outcomeLocationSource = null, outcomeTime = null, plannedLocation = null, targetTimeWindow = null, trackingId = null, vehicleId = null)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Task]
   }
   
@@ -101,8 +107,6 @@ object Task {
     inline def setLatestVehicleLocationUpdateNull: Self = StObject.set(x, "latestVehicleLocationUpdate", null)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-    
-    inline def setNameNull: Self = StObject.set(x, "name", null)
     
     inline def setOutcome(value: String): Self = StObject.set(x, "outcome", value.asInstanceOf[js.Any])
     
@@ -126,21 +130,19 @@ object Task {
     
     inline def setRemainingVehicleJourneySegments(value: js.Array[VehicleJourneySegment]): Self = StObject.set(x, "remainingVehicleJourneySegments", value.asInstanceOf[js.Any])
     
-    inline def setRemainingVehicleJourneySegmentsNull: Self = StObject.set(x, "remainingVehicleJourneySegments", null)
-    
     inline def setRemainingVehicleJourneySegmentsVarargs(value: VehicleJourneySegment*): Self = StObject.set(x, "remainingVehicleJourneySegments", js.Array(value*))
     
     inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    inline def setStatusNull: Self = StObject.set(x, "status", null)
+    inline def setTargetTimeWindow(value: TimeWindow): Self = StObject.set(x, "targetTimeWindow", value.asInstanceOf[js.Any])
+    
+    inline def setTargetTimeWindowNull: Self = StObject.set(x, "targetTimeWindow", null)
     
     inline def setTrackingId(value: String): Self = StObject.set(x, "trackingId", value.asInstanceOf[js.Any])
     
     inline def setTrackingIdNull: Self = StObject.set(x, "trackingId", null)
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-    
-    inline def setTypeNull: Self = StObject.set(x, "type", null)
     
     inline def setVehicleId(value: String): Self = StObject.set(x, "vehicleId", value.asInstanceOf[js.Any])
     

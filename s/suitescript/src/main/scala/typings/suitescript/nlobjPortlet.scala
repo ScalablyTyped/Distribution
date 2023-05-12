@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @classDescription UI Object used for building portlets that are displayed on dashboard pages
   * @return {nlobjPortlet}
-  * @constructor
   */
 @js.native
 trait nlobjPortlet

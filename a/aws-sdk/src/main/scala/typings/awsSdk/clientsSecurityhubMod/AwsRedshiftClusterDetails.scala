@@ -27,7 +27,7 @@ trait AwsRedshiftClusterDetails extends StObject {
   var ClusterAvailabilityStatus: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * Indicates when the cluster was created. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces. For example, 2020-03-22T13:22:13.933Z.
+    * Indicates when the cluster was created. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces, and date and time should be separated by T. For example, 2020-03-22T13:22:13.933Z.
     */
   var ClusterCreateTime: js.UndefOr[NonEmptyString] = js.undefined
   
@@ -117,7 +117,7 @@ trait AwsRedshiftClusterDetails extends StObject {
   var EnhancedVpcRouting: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates when the next snapshot is expected to be taken. The cluster must have a valid snapshot schedule and have backups enabled. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces. For example, 2020-03-22T13:22:13.933Z.
+    * Indicates when the next snapshot is expected to be taken. The cluster must have a valid snapshot schedule and have backups enabled. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces, and date and time should be separated by T. For example, 2020-03-22T13:22:13.933Z.
     */
   var ExpectedNextSnapshotScheduleTime: js.UndefOr[NonEmptyString] = js.undefined
   
@@ -162,7 +162,7 @@ trait AwsRedshiftClusterDetails extends StObject {
   var MasterUsername: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * Indicates the start of the next maintenance window. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces. For example, 2020-03-22T13:22:13.933Z.
+    * Indicates the start of the next maintenance window. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces, and date and time should be separated by T. For example, 2020-03-22T13:22:13.933Z.
     */
   var NextMaintenanceWindowStartTime: js.UndefOr[NonEmptyString] = js.undefined
   

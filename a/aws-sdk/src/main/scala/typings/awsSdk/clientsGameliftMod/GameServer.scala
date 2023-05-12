@@ -17,7 +17,7 @@ trait GameServer extends StObject {
   var ConnectionInfo: js.UndefOr[GameServerConnectionInfo] = js.undefined
   
   /**
-    * A set of custom game server properties, formatted as a single string value. This data is passed to a game client or service when it requests information on game servers using ListGameServers or ClaimGameServer.
+    * A set of custom game server properties, formatted as a single string value. This data is passed to a game client or service when it requests information on game servers.
     */
   var GameServerData: js.UndefOr[typings.awsSdk.clientsGameliftMod.GameServerData] = js.undefined
   
@@ -27,7 +27,7 @@ trait GameServer extends StObject {
   var GameServerGroupArn: js.UndefOr[typings.awsSdk.clientsGameliftMod.GameServerGroupArn] = js.undefined
   
   /**
-    * A unique identifier for the game server group where the game server is running. Use either the GameServerGroup name or ARN value.
+    * A unique identifier for the game server group where the game server is running.
     */
   var GameServerGroupName: js.UndefOr[typings.awsSdk.clientsGameliftMod.GameServerGroupName] = js.undefined
   
@@ -42,17 +42,17 @@ trait GameServer extends StObject {
   var InstanceId: js.UndefOr[GameServerInstanceId] = js.undefined
   
   /**
-    * Timestamp that indicates the last time the game server was claimed with a ClaimGameServer request. The format is a number expressed in Unix time as milliseconds (for example "1469498468.057"). This value is used to calculate when a claimed game server's status should revert to null.
+    * Timestamp that indicates the last time the game server was claimed. The format is a number expressed in Unix time as milliseconds (for example "1469498468.057"). This value is used to calculate when a claimed game server's status should revert to null.
     */
   var LastClaimTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * Timestamp that indicates the last time the game server was updated with health status using an UpdateGameServer request. The format is a number expressed in Unix time as milliseconds (for example "1469498468.057"). After game server registration, this property is only changed when a game server update specifies a health check value.
+    * Timestamp that indicates the last time the game server was updated with health status. The format is a number expressed in Unix time as milliseconds (for example "1469498468.057"). After game server registration, this property is only changed when a game server update specifies a health check value.
     */
   var LastHealthCheckTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * Timestamp that indicates when the game server was created with a RegisterGameServer request. The format is a number expressed in Unix time as milliseconds (for example "1469498468.057").
+    * Timestamp that indicates when the game server registered. The format is a number expressed in Unix time as milliseconds (for example "1469498468.057").
     */
   var RegistrationTime: js.UndefOr[js.Date] = js.undefined
   

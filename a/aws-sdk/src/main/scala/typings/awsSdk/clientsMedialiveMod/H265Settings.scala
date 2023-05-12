@@ -160,6 +160,11 @@ trait H265Settings extends StObject {
   var Tier: js.UndefOr[H265Tier] = js.undefined
   
   /**
+    * Timecode burn-in settings
+    */
+  var TimecodeBurninSettings: js.UndefOr[typings.awsSdk.clientsMedialiveMod.TimecodeBurninSettings] = js.undefined
+  
+  /**
     * Determines how timecodes should be inserted into the video elementary stream.
   - 'disabled': Do not include timecodes
   - 'picTimingSei': Pass through picture timing SEI messages from the source specified in Timecode Config
@@ -283,6 +288,10 @@ object H265Settings {
     inline def setTier(value: H265Tier): Self = StObject.set(x, "Tier", value.asInstanceOf[js.Any])
     
     inline def setTierUndefined: Self = StObject.set(x, "Tier", js.undefined)
+    
+    inline def setTimecodeBurninSettings(value: TimecodeBurninSettings): Self = StObject.set(x, "TimecodeBurninSettings", value.asInstanceOf[js.Any])
+    
+    inline def setTimecodeBurninSettingsUndefined: Self = StObject.set(x, "TimecodeBurninSettings", js.undefined)
     
     inline def setTimecodeInsertion(value: H265TimecodeInsertionBehavior): Self = StObject.set(x, "TimecodeInsertion", value.asInstanceOf[js.Any])
     

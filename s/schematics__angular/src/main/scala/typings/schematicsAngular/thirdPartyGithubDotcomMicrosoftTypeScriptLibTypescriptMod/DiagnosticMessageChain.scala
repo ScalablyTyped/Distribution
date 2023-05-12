@@ -4,6 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+  * A linked list of formatted diagnostic messages to be used as part of a multiline message.
+  * It is built from the bottom up, leaving the head to be the "main" diagnostic.
+  * While it seems that DiagnosticMessageChain is structurally similar to DiagnosticMessage,
+  * the difference is that messages are all preformatted in DMC.
+  */
 trait DiagnosticMessageChain extends StObject {
   
   var category: DiagnosticCategory

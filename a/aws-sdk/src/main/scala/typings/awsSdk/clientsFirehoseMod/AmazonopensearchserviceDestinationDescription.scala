@@ -6,28 +6,55 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AmazonopensearchserviceDestinationDescription extends StObject {
   
+  /**
+    * The buffering options.
+    */
   var BufferingHints: js.UndefOr[AmazonopensearchserviceBufferingHints] = js.undefined
   
   var CloudWatchLoggingOptions: js.UndefOr[typings.awsSdk.clientsFirehoseMod.CloudWatchLoggingOptions] = js.undefined
   
+  /**
+    * The endpoint to use when communicating with the cluster. Kinesis Data Firehose uses either this ClusterEndpoint or the DomainARN field to send data to Amazon OpenSearch Service. 
+    */
   var ClusterEndpoint: js.UndefOr[AmazonopensearchserviceClusterEndpoint] = js.undefined
   
+  /**
+    * The ARN of the Amazon OpenSearch Service domain.
+    */
   var DomainARN: js.UndefOr[AmazonopensearchserviceDomainARN] = js.undefined
   
+  /**
+    * The Amazon OpenSearch Service index name.
+    */
   var IndexName: js.UndefOr[AmazonopensearchserviceIndexName] = js.undefined
   
+  /**
+    * The Amazon OpenSearch Service index rotation period
+    */
   var IndexRotationPeriod: js.UndefOr[AmazonopensearchserviceIndexRotationPeriod] = js.undefined
   
   var ProcessingConfiguration: js.UndefOr[typings.awsSdk.clientsFirehoseMod.ProcessingConfiguration] = js.undefined
   
+  /**
+    * The Amazon OpenSearch Service retry options.
+    */
   var RetryOptions: js.UndefOr[AmazonopensearchserviceRetryOptions] = js.undefined
   
+  /**
+    * The Amazon Resource Name (ARN) of the Amazon Web Services credentials. 
+    */
   var RoleARN: js.UndefOr[typings.awsSdk.clientsFirehoseMod.RoleARN] = js.undefined
   
+  /**
+    * The Amazon S3 backup mode.
+    */
   var S3BackupMode: js.UndefOr[AmazonopensearchserviceS3BackupMode] = js.undefined
   
   var S3DestinationDescription: js.UndefOr[typings.awsSdk.clientsFirehoseMod.S3DestinationDescription] = js.undefined
   
+  /**
+    * The Amazon OpenSearch Service type name. This applies to Elasticsearch 6.x and lower versions. For Elasticsearch 7.x and OpenSearch Service 1.x, there's no value for TypeName. 
+    */
   var TypeName: js.UndefOr[AmazonopensearchserviceTypeName] = js.undefined
   
   var VpcConfigurationDescription: js.UndefOr[typings.awsSdk.clientsFirehoseMod.VpcConfigurationDescription] = js.undefined

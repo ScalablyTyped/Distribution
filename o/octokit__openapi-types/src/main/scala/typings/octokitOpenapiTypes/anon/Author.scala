@@ -6,31 +6,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Author extends StObject {
   
-  /** GitHub login or email address by which to filter by commit author. */
+  /** @description GitHub username or email address to use to filter by commit author. */
   var author: js.UndefOr[String] = js.undefined
   
-  /** Page number of the results to fetch. */
+  /** @description GitHub username or email address to use to filter by commit committer. */
+  var committer: js.UndefOr[String] = js.undefined
+  
   var page: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['page'] */ js.Any
   ] = js.undefined
   
-  /** Only commits containing this file path will be returned. */
+  /** @description Only commits containing this file path will be returned. */
   var path: js.UndefOr[String] = js.undefined
   
-  /** The number of results per page (max 100). */
   var per_page: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['per-page'] */ js.Any
   ] = js.undefined
   
-  /** SHA or branch to start listing commits from. Default: the repository’s default branch (usually `master`). */
+  /** @description SHA or branch to start listing commits from. Default: the repository’s default branch (usually `main`). */
   var sha: js.UndefOr[String] = js.undefined
   
-  /** Only show notifications updated after the given time. This is a timestamp in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format: `YYYY-MM-DDTHH:MM:SSZ`. */
   var since: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['since'] */ js.Any
   ] = js.undefined
   
-  /** Only commits before this date will be returned. This is a timestamp in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format: `YYYY-MM-DDTHH:MM:SSZ`. */
+  /** @description Only commits before this date will be returned. This is a timestamp in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format: `YYYY-MM-DDTHH:MM:SSZ`. */
   var until: js.UndefOr[String] = js.undefined
 }
 object Author {
@@ -46,6 +46,10 @@ object Author {
     inline def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     
     inline def setAuthorUndefined: Self = StObject.set(x, "author", js.undefined)
+    
+    inline def setCommitter(value: String): Self = StObject.set(x, "committer", value.asInstanceOf[js.Any])
+    
+    inline def setCommitterUndefined: Self = StObject.set(x, "committer", js.undefined)
     
     inline def setPage(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['page'] */ js.Any

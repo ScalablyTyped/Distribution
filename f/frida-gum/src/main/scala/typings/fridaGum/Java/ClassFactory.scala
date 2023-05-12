@@ -43,7 +43,7 @@ trait ClassFactory extends StObject {
     * @param className Name of class to enumerate instances of.
     * @param callbacks Object with callbacks.
     */
-  def choose(className: String, callbacks: ChooseCallbacks[js.Object]): Unit = js.native
+  def choose[T /* <: Members[T] */](className: String, callbacks: ChooseCallbacks[T]): Unit = js.native
   
   /**
     * Class loader currently being used. For the default class factory this

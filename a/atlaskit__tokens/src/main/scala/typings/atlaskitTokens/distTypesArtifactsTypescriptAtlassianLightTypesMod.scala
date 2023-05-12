@@ -175,6 +175,100 @@ object distTypesArtifactsTypescriptAtlassianLightTypesMod {
     - typings.atlaskitTokens.atlaskitTokensStrings.colorDotblanket
     - typings.atlaskitTokens.atlaskitTokensStrings.colorDotblanketDotselected
     - typings.atlaskitTokens.atlaskitTokensStrings.colorDotblanketDotdanger
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotbrand
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotbrandDothovered
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotneutral
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotneutralDothovered
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotsuccess
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotsuccessDothovered
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotsuccessDotbold
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotsuccessDotboldDothovered
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotdanger
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotdangerDothovered
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotdangerDotbold
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotdangerDotboldDothovered
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotwarning
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotwarningDothovered
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotwarningDotbold
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotwarningDotboldDothovered
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotinformation
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotinformationDothovered
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotinformationDotbold
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotinformationDotboldDothovered
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotdiscovery
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotdiscoveryDothovered
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotdiscoveryDotbold
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotdiscoveryDotboldDothovered
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotcategoricalDot1
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotcategoricalDot1Dothovered
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotcategoricalDot2
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotcategoricalDot2Dothovered
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotcategoricalDot3
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotcategoricalDot3Dothovered
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotcategoricalDot4
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotcategoricalDot4Dothovered
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotcategoricalDot5
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotcategoricalDot5Dothovered
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotcategoricalDot6
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotcategoricalDot6Dothovered
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotcategoricalDot7
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotcategoricalDot7Dothovered
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotcategoricalDot8
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotcategoricalDot8Dothovered
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotblueDotbold
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotblueDotboldDothovered
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotblueDotbolder
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotblueDotbolderDothovered
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotblueDotboldest
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotblueDotboldestDothovered
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotredDotbold
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotredDotboldDothovered
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotredDotbolder
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotredDotbolderDothovered
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotredDotboldest
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotredDotboldestDothovered
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotorangeDotbold
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotorangeDotboldDothovered
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotorangeDotbolder
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotorangeDotbolderDothovered
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotorangeDotboldest
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotorangeDotboldestDothovered
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotyellowDotbold
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotyellowDotboldDothovered
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotyellowDotbolder
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotyellowDotbolderDothovered
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotyellowDotboldest
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotyellowDotboldestDothovered
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotgreenDotbold
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotgreenDotboldDothovered
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotgreenDotbolder
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotgreenDotbolderDothovered
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotgreenDotboldest
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotgreenDotboldestDothovered
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDottealDotbold
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDottealDotboldDothovered
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDottealDotbolder
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDottealDotbolderDothovered
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDottealDotboldest
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDottealDotboldestDothovered
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotpurpleDotbold
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotpurpleDotboldDothovered
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotpurpleDotbolder
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotpurpleDotbolderDothovered
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotpurpleDotboldest
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotpurpleDotboldestDothovered
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotmagentaDotbold
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotmagentaDotboldDothovered
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotmagentaDotbolder
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotmagentaDotbolderDothovered
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotmagentaDotboldest
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotmagentaDotboldestDothovered
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotgrayDotbold
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotgrayDotboldDothovered
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotgrayDotbolder
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotgrayDotbolderDothovered
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotgrayDotboldest
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotgrayDotboldestDothovered
     - typings.atlaskitTokens.atlaskitTokensStrings.colorDotinteractionDothovered
     - typings.atlaskitTokens.atlaskitTokensStrings.colorDotinteractionDotpressed
     - typings.atlaskitTokens.atlaskitTokensStrings.colorDotskeleton
@@ -183,6 +277,8 @@ object distTypesArtifactsTypescriptAtlassianLightTypesMod {
     - typings.atlaskitTokens.atlaskitTokensStrings.colorDotlinkDotpressed
     - typings.atlaskitTokens.atlaskitTokensStrings.elevationDotshadowDotraised
     - typings.atlaskitTokens.atlaskitTokensStrings.elevationDotshadowDotoverflow
+    - typings.atlaskitTokens.atlaskitTokensStrings.elevationDotshadowDotoverflowDotspread
+    - typings.atlaskitTokens.atlaskitTokensStrings.elevationDotshadowDotoverflowDotperimeter
     - typings.atlaskitTokens.atlaskitTokensStrings.elevationDotshadowDotoverlay
     - typings.atlaskitTokens.atlaskitTokensStrings.elevationDotsurface
     - typings.atlaskitTokens.atlaskitTokensStrings.elevationDotsurfaceDothovered
@@ -434,6 +530,194 @@ object distTypesArtifactsTypescriptAtlassianLightTypesMod {
     
     inline def colorDotborderDotwarning: typings.atlaskitTokens.atlaskitTokensStrings.colorDotborderDotwarning = "color.border.warning".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotborderDotwarning]
     
+    inline def colorDotchartDotblueDotbold: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotblueDotbold = "color.chart.blue.bold".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotblueDotbold]
+    
+    inline def colorDotchartDotblueDotboldDothovered: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotblueDotboldDothovered = "color.chart.blue.bold.hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotblueDotboldDothovered]
+    
+    inline def colorDotchartDotblueDotbolder: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotblueDotbolder = "color.chart.blue.bolder".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotblueDotbolder]
+    
+    inline def colorDotchartDotblueDotbolderDothovered: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotblueDotbolderDothovered = "color.chart.blue.bolder.hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotblueDotbolderDothovered]
+    
+    inline def colorDotchartDotblueDotboldest: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotblueDotboldest = "color.chart.blue.boldest".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotblueDotboldest]
+    
+    inline def colorDotchartDotblueDotboldestDothovered: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotblueDotboldestDothovered = "color.chart.blue.boldest.hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotblueDotboldestDothovered]
+    
+    inline def colorDotchartDotbrand: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotbrand = "color.chart.brand".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotbrand]
+    
+    inline def colorDotchartDotbrandDothovered: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotbrandDothovered = "color.chart.brand.hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotbrandDothovered]
+    
+    inline def colorDotchartDotcategoricalDot1: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotcategoricalDot1 = "color.chart.categorical.1".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotcategoricalDot1]
+    
+    inline def colorDotchartDotcategoricalDot1Dothovered: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotcategoricalDot1Dothovered = "color.chart.categorical.1.hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotcategoricalDot1Dothovered]
+    
+    inline def colorDotchartDotcategoricalDot2: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotcategoricalDot2 = "color.chart.categorical.2".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotcategoricalDot2]
+    
+    inline def colorDotchartDotcategoricalDot2Dothovered: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotcategoricalDot2Dothovered = "color.chart.categorical.2.hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotcategoricalDot2Dothovered]
+    
+    inline def colorDotchartDotcategoricalDot3: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotcategoricalDot3 = "color.chart.categorical.3".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotcategoricalDot3]
+    
+    inline def colorDotchartDotcategoricalDot3Dothovered: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotcategoricalDot3Dothovered = "color.chart.categorical.3.hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotcategoricalDot3Dothovered]
+    
+    inline def colorDotchartDotcategoricalDot4: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotcategoricalDot4 = "color.chart.categorical.4".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotcategoricalDot4]
+    
+    inline def colorDotchartDotcategoricalDot4Dothovered: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotcategoricalDot4Dothovered = "color.chart.categorical.4.hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotcategoricalDot4Dothovered]
+    
+    inline def colorDotchartDotcategoricalDot5: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotcategoricalDot5 = "color.chart.categorical.5".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotcategoricalDot5]
+    
+    inline def colorDotchartDotcategoricalDot5Dothovered: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotcategoricalDot5Dothovered = "color.chart.categorical.5.hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotcategoricalDot5Dothovered]
+    
+    inline def colorDotchartDotcategoricalDot6: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotcategoricalDot6 = "color.chart.categorical.6".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotcategoricalDot6]
+    
+    inline def colorDotchartDotcategoricalDot6Dothovered: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotcategoricalDot6Dothovered = "color.chart.categorical.6.hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotcategoricalDot6Dothovered]
+    
+    inline def colorDotchartDotcategoricalDot7: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotcategoricalDot7 = "color.chart.categorical.7".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotcategoricalDot7]
+    
+    inline def colorDotchartDotcategoricalDot7Dothovered: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotcategoricalDot7Dothovered = "color.chart.categorical.7.hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotcategoricalDot7Dothovered]
+    
+    inline def colorDotchartDotcategoricalDot8: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotcategoricalDot8 = "color.chart.categorical.8".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotcategoricalDot8]
+    
+    inline def colorDotchartDotcategoricalDot8Dothovered: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotcategoricalDot8Dothovered = "color.chart.categorical.8.hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotcategoricalDot8Dothovered]
+    
+    inline def colorDotchartDotdanger: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotdanger = "color.chart.danger".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotdanger]
+    
+    inline def colorDotchartDotdangerDotbold: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotdangerDotbold = "color.chart.danger.bold".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotdangerDotbold]
+    
+    inline def colorDotchartDotdangerDotboldDothovered: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotdangerDotboldDothovered = "color.chart.danger.bold.hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotdangerDotboldDothovered]
+    
+    inline def colorDotchartDotdangerDothovered: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotdangerDothovered = "color.chart.danger.hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotdangerDothovered]
+    
+    inline def colorDotchartDotdiscovery: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotdiscovery = "color.chart.discovery".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotdiscovery]
+    
+    inline def colorDotchartDotdiscoveryDotbold: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotdiscoveryDotbold = "color.chart.discovery.bold".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotdiscoveryDotbold]
+    
+    inline def colorDotchartDotdiscoveryDotboldDothovered: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotdiscoveryDotboldDothovered = "color.chart.discovery.bold.hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotdiscoveryDotboldDothovered]
+    
+    inline def colorDotchartDotdiscoveryDothovered: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotdiscoveryDothovered = "color.chart.discovery.hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotdiscoveryDothovered]
+    
+    inline def colorDotchartDotgrayDotbold: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotgrayDotbold = "color.chart.gray.bold".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotgrayDotbold]
+    
+    inline def colorDotchartDotgrayDotboldDothovered: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotgrayDotboldDothovered = "color.chart.gray.bold.hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotgrayDotboldDothovered]
+    
+    inline def colorDotchartDotgrayDotbolder: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotgrayDotbolder = "color.chart.gray.bolder".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotgrayDotbolder]
+    
+    inline def colorDotchartDotgrayDotbolderDothovered: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotgrayDotbolderDothovered = "color.chart.gray.bolder.hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotgrayDotbolderDothovered]
+    
+    inline def colorDotchartDotgrayDotboldest: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotgrayDotboldest = "color.chart.gray.boldest".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotgrayDotboldest]
+    
+    inline def colorDotchartDotgrayDotboldestDothovered: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotgrayDotboldestDothovered = "color.chart.gray.boldest.hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotgrayDotboldestDothovered]
+    
+    inline def colorDotchartDotgreenDotbold: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotgreenDotbold = "color.chart.green.bold".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotgreenDotbold]
+    
+    inline def colorDotchartDotgreenDotboldDothovered: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotgreenDotboldDothovered = "color.chart.green.bold.hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotgreenDotboldDothovered]
+    
+    inline def colorDotchartDotgreenDotbolder: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotgreenDotbolder = "color.chart.green.bolder".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotgreenDotbolder]
+    
+    inline def colorDotchartDotgreenDotbolderDothovered: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotgreenDotbolderDothovered = "color.chart.green.bolder.hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotgreenDotbolderDothovered]
+    
+    inline def colorDotchartDotgreenDotboldest: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotgreenDotboldest = "color.chart.green.boldest".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotgreenDotboldest]
+    
+    inline def colorDotchartDotgreenDotboldestDothovered: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotgreenDotboldestDothovered = "color.chart.green.boldest.hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotgreenDotboldestDothovered]
+    
+    inline def colorDotchartDotinformation: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotinformation = "color.chart.information".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotinformation]
+    
+    inline def colorDotchartDotinformationDotbold: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotinformationDotbold = "color.chart.information.bold".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotinformationDotbold]
+    
+    inline def colorDotchartDotinformationDotboldDothovered: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotinformationDotboldDothovered = "color.chart.information.bold.hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotinformationDotboldDothovered]
+    
+    inline def colorDotchartDotinformationDothovered: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotinformationDothovered = "color.chart.information.hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotinformationDothovered]
+    
+    inline def colorDotchartDotmagentaDotbold: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotmagentaDotbold = "color.chart.magenta.bold".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotmagentaDotbold]
+    
+    inline def colorDotchartDotmagentaDotboldDothovered: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotmagentaDotboldDothovered = "color.chart.magenta.bold.hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotmagentaDotboldDothovered]
+    
+    inline def colorDotchartDotmagentaDotbolder: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotmagentaDotbolder = "color.chart.magenta.bolder".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotmagentaDotbolder]
+    
+    inline def colorDotchartDotmagentaDotbolderDothovered: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotmagentaDotbolderDothovered = "color.chart.magenta.bolder.hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotmagentaDotbolderDothovered]
+    
+    inline def colorDotchartDotmagentaDotboldest: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotmagentaDotboldest = "color.chart.magenta.boldest".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotmagentaDotboldest]
+    
+    inline def colorDotchartDotmagentaDotboldestDothovered: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotmagentaDotboldestDothovered = "color.chart.magenta.boldest.hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotmagentaDotboldestDothovered]
+    
+    inline def colorDotchartDotneutral: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotneutral = "color.chart.neutral".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotneutral]
+    
+    inline def colorDotchartDotneutralDothovered: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotneutralDothovered = "color.chart.neutral.hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotneutralDothovered]
+    
+    inline def colorDotchartDotorangeDotbold: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotorangeDotbold = "color.chart.orange.bold".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotorangeDotbold]
+    
+    inline def colorDotchartDotorangeDotboldDothovered: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotorangeDotboldDothovered = "color.chart.orange.bold.hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotorangeDotboldDothovered]
+    
+    inline def colorDotchartDotorangeDotbolder: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotorangeDotbolder = "color.chart.orange.bolder".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotorangeDotbolder]
+    
+    inline def colorDotchartDotorangeDotbolderDothovered: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotorangeDotbolderDothovered = "color.chart.orange.bolder.hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotorangeDotbolderDothovered]
+    
+    inline def colorDotchartDotorangeDotboldest: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotorangeDotboldest = "color.chart.orange.boldest".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotorangeDotboldest]
+    
+    inline def colorDotchartDotorangeDotboldestDothovered: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotorangeDotboldestDothovered = "color.chart.orange.boldest.hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotorangeDotboldestDothovered]
+    
+    inline def colorDotchartDotpurpleDotbold: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotpurpleDotbold = "color.chart.purple.bold".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotpurpleDotbold]
+    
+    inline def colorDotchartDotpurpleDotboldDothovered: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotpurpleDotboldDothovered = "color.chart.purple.bold.hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotpurpleDotboldDothovered]
+    
+    inline def colorDotchartDotpurpleDotbolder: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotpurpleDotbolder = "color.chart.purple.bolder".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotpurpleDotbolder]
+    
+    inline def colorDotchartDotpurpleDotbolderDothovered: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotpurpleDotbolderDothovered = "color.chart.purple.bolder.hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotpurpleDotbolderDothovered]
+    
+    inline def colorDotchartDotpurpleDotboldest: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotpurpleDotboldest = "color.chart.purple.boldest".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotpurpleDotboldest]
+    
+    inline def colorDotchartDotpurpleDotboldestDothovered: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotpurpleDotboldestDothovered = "color.chart.purple.boldest.hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotpurpleDotboldestDothovered]
+    
+    inline def colorDotchartDotredDotbold: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotredDotbold = "color.chart.red.bold".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotredDotbold]
+    
+    inline def colorDotchartDotredDotboldDothovered: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotredDotboldDothovered = "color.chart.red.bold.hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotredDotboldDothovered]
+    
+    inline def colorDotchartDotredDotbolder: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotredDotbolder = "color.chart.red.bolder".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotredDotbolder]
+    
+    inline def colorDotchartDotredDotbolderDothovered: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotredDotbolderDothovered = "color.chart.red.bolder.hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotredDotbolderDothovered]
+    
+    inline def colorDotchartDotredDotboldest: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotredDotboldest = "color.chart.red.boldest".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotredDotboldest]
+    
+    inline def colorDotchartDotredDotboldestDothovered: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotredDotboldestDothovered = "color.chart.red.boldest.hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotredDotboldestDothovered]
+    
+    inline def colorDotchartDotsuccess: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotsuccess = "color.chart.success".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotsuccess]
+    
+    inline def colorDotchartDotsuccessDotbold: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotsuccessDotbold = "color.chart.success.bold".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotsuccessDotbold]
+    
+    inline def colorDotchartDotsuccessDotboldDothovered: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotsuccessDotboldDothovered = "color.chart.success.bold.hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotsuccessDotboldDothovered]
+    
+    inline def colorDotchartDotsuccessDothovered: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotsuccessDothovered = "color.chart.success.hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotsuccessDothovered]
+    
+    inline def colorDotchartDottealDotbold: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDottealDotbold = "color.chart.teal.bold".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDottealDotbold]
+    
+    inline def colorDotchartDottealDotboldDothovered: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDottealDotboldDothovered = "color.chart.teal.bold.hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDottealDotboldDothovered]
+    
+    inline def colorDotchartDottealDotbolder: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDottealDotbolder = "color.chart.teal.bolder".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDottealDotbolder]
+    
+    inline def colorDotchartDottealDotbolderDothovered: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDottealDotbolderDothovered = "color.chart.teal.bolder.hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDottealDotbolderDothovered]
+    
+    inline def colorDotchartDottealDotboldest: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDottealDotboldest = "color.chart.teal.boldest".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDottealDotboldest]
+    
+    inline def colorDotchartDottealDotboldestDothovered: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDottealDotboldestDothovered = "color.chart.teal.boldest.hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDottealDotboldestDothovered]
+    
+    inline def colorDotchartDotwarning: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotwarning = "color.chart.warning".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotwarning]
+    
+    inline def colorDotchartDotwarningDotbold: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotwarningDotbold = "color.chart.warning.bold".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotwarningDotbold]
+    
+    inline def colorDotchartDotwarningDotboldDothovered: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotwarningDotboldDothovered = "color.chart.warning.bold.hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotwarningDotboldDothovered]
+    
+    inline def colorDotchartDotwarningDothovered: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotwarningDothovered = "color.chart.warning.hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotwarningDothovered]
+    
+    inline def colorDotchartDotyellowDotbold: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotyellowDotbold = "color.chart.yellow.bold".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotyellowDotbold]
+    
+    inline def colorDotchartDotyellowDotboldDothovered: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotyellowDotboldDothovered = "color.chart.yellow.bold.hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotyellowDotboldDothovered]
+    
+    inline def colorDotchartDotyellowDotbolder: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotyellowDotbolder = "color.chart.yellow.bolder".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotyellowDotbolder]
+    
+    inline def colorDotchartDotyellowDotbolderDothovered: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotyellowDotbolderDothovered = "color.chart.yellow.bolder.hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotyellowDotbolderDothovered]
+    
+    inline def colorDotchartDotyellowDotboldest: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotyellowDotboldest = "color.chart.yellow.boldest".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotyellowDotboldest]
+    
+    inline def colorDotchartDotyellowDotboldestDothovered: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotyellowDotboldestDothovered = "color.chart.yellow.boldest.hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotyellowDotboldestDothovered]
+    
     inline def colorDoticon: typings.atlaskitTokens.atlaskitTokensStrings.colorDoticon = "color.icon".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDoticon]
     
     inline def colorDoticonDotaccentDotblue: typings.atlaskitTokens.atlaskitTokensStrings.colorDoticonDotaccentDotblue = "color.icon.accent.blue".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDoticonDotaccentDotblue]
@@ -551,6 +835,10 @@ object distTypesArtifactsTypescriptAtlassianLightTypesMod {
     inline def colorDottextDotwarningDotinverse: typings.atlaskitTokens.atlaskitTokensStrings.colorDottextDotwarningDotinverse = "color.text.warning.inverse".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDottextDotwarningDotinverse]
     
     inline def elevationDotshadowDotoverflow: typings.atlaskitTokens.atlaskitTokensStrings.elevationDotshadowDotoverflow = "elevation.shadow.overflow".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.elevationDotshadowDotoverflow]
+    
+    inline def elevationDotshadowDotoverflowDotperimeter: typings.atlaskitTokens.atlaskitTokensStrings.elevationDotshadowDotoverflowDotperimeter = "elevation.shadow.overflow.perimeter".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.elevationDotshadowDotoverflowDotperimeter]
+    
+    inline def elevationDotshadowDotoverflowDotspread: typings.atlaskitTokens.atlaskitTokensStrings.elevationDotshadowDotoverflowDotspread = "elevation.shadow.overflow.spread".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.elevationDotshadowDotoverflowDotspread]
     
     inline def elevationDotshadowDotoverlay: typings.atlaskitTokens.atlaskitTokensStrings.elevationDotshadowDotoverlay = "elevation.shadow.overlay".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.elevationDotshadowDotoverlay]
     

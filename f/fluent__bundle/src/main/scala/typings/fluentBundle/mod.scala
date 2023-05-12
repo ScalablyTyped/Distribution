@@ -1,8 +1,10 @@
 package typings.fluentBundle
 
 import typings.fluentBundle.anon.Functions
+import typings.fluentBundle.esmBundleMod.FluentVariable
 import typings.std.Intl.DateTimeFormatOptions
 import typings.std.Intl.NumberFormatOptions
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,31 +18,22 @@ object mod {
     /**
       * Create an instance of `FluentBundle`.
       *
-      * The `locales` argument is used to instantiate `Intl` formatters used by
-      * translations. The `options` object can be used to configure the bundle.
+      * @example
+      * ```js
+      * let bundle = new FluentBundle(["en-US", "en"]);
       *
-      * Examples:
+      * let bundle = new FluentBundle(locales, {useIsolating: false});
       *
-      *     let bundle = new FluentBundle(["en-US", "en"]);
+      * let bundle = new FluentBundle(locales, {
+      *   useIsolating: true,
+      *   functions: {
+      *     NODE_ENV: () => process.env.NODE_ENV
+      *   }
+      * });
+      * ```
       *
-      *     let bundle = new FluentBundle(locales, {useIsolating: false});
-      *
-      *     let bundle = new FluentBundle(locales, {
-      *       useIsolating: true,
-      *       functions: {
-      *         NODE_ENV: () => process.env.NODE_ENV
-      *       }
-      *     });
-      *
-      * Available options:
-      *
-      *   - `functions` - an object of additional functions available to
-      *     translations as builtins.
-      *
-      *   - `useIsolating` - boolean specifying whether to use Unicode isolation
-      *     marks (FSI, PDI) for bidi interpolations. Default: `true`.
-      *
-      *   - `transform` - a function used to transform string parts of patterns.
+      * @param locales - Used to instantiate `Intl` formatters used by translations.
+      * @param options - Optional configuration for the bundle.
       */
     def this(locales: String) = this()
     def this(locales: js.Array[String]) = this()
@@ -106,5 +99,23 @@ object mod {
       * @param value The JavaScript value to wrap.
       */
     def this(value: T) = this()
+  }
+  
+  @JSImport("@fluent/bundle", "Scope")
+  @js.native
+  open class Scope protected ()
+    extends typings.fluentBundle.esmScopeMod.Scope {
+    def this(bundle: typings.fluentBundle.esmBundleMod.FluentBundle) = this()
+    def this(bundle: typings.fluentBundle.esmBundleMod.FluentBundle, errors: js.Array[js.Error]) = this()
+    def this(
+      bundle: typings.fluentBundle.esmBundleMod.FluentBundle,
+      errors: js.Array[js.Error],
+      args: Record[String, FluentVariable]
+    ) = this()
+    def this(
+      bundle: typings.fluentBundle.esmBundleMod.FluentBundle,
+      errors: Null,
+      args: Record[String, FluentVariable]
+    ) = this()
   }
 }

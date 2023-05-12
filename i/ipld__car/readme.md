@@ -1,7 +1,7 @@
 
 # Scala.js typings for ipld__car
 
-Typings are for version 5.0.0
+Typings are for version 5.1.1
 
 ## Library description:
 Content Addressable aRchive format reader and writer

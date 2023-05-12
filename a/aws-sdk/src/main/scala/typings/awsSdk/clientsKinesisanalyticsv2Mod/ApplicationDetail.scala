@@ -84,7 +84,7 @@ trait ApplicationDetail extends StObject {
   var LastUpdateTimestamp: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The runtime environment for the application (SQL-1_0, FLINK-1_6, FLINK-1_8, or FLINK-1_11).
+    * The runtime environment for the application.
     */
   var RuntimeEnvironment: typings.awsSdk.clientsKinesisanalyticsv2Mod.RuntimeEnvironment
   

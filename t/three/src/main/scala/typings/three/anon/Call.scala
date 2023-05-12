@@ -1,6 +1,6 @@
 package typings.three.anon
 
-import typings.three.examplesJsmNodesCoreFunctionNodeMod.FunctionNodeArguments
+import typings.three.examplesJsmNodesCodeFunctionNodeMod.FunctionNodeArguments
 import typings.three.examplesJsmNodesNodesMod.Node
 import typings.three.examplesJsmNodesShadernodeShaderNodeBaseElementsMod.Fn_
 import typings.three.examplesJsmNodesShadernodeShaderNodeMod.Swizzable

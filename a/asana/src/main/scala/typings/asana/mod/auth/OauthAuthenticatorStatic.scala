@@ -20,6 +20,5 @@ trait OauthAuthenticatorStatic
   *     be either the object returned from an access token request (which
   *     contains the token and some other metadata) or just the `access_token`
   *     field.
-  * @constructor
   */
 Instantiable1[/* options */ OauthAuthenticatorOptions, OauthAuthenticator]

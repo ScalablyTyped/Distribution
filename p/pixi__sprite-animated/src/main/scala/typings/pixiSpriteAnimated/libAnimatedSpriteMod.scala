@@ -15,7 +15,7 @@ object libAnimatedSpriteMod {
     /**
       * @param textures - An array of {@link PIXI.Texture} or frame
       *  objects that make up the animation.
-      * @param {boolean} [autoUpdate=true] - Whether to use PIXI.Ticker.shared to auto update animation time.
+      * @param {boolean} [autoUpdate=true] - Whether to use Ticker.shared to auto update animation time.
       */
     def this(textures: js.Array[FrameObject | Texture[Resource]]) = this()
     def this(textures: js.Array[FrameObject | Texture[Resource]], autoUpdate: Boolean) = this()
@@ -50,11 +50,11 @@ object libAnimatedSpriteMod {
       */
     var animationSpeed: Double = js.native
     
-    /** Whether to use PIXI.Ticker.shared to auto update animation time. */
+    /** Whether to use Ticker.shared to auto update animation time. */
     def autoUpdate: Boolean = js.native
     def autoUpdate_=(value: Boolean): Unit = js.native
     
-    /** The AnimatedSprites current frame index. */
+    /** The AnimatedSprite's current frame index. */
     def currentFrame: Double = js.native
     def currentFrame_=(value: Double): Unit = js.native
     

@@ -5,6 +5,7 @@ import typings.openui5.jQuery.Event
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
 import typings.openui5.sapUiCoreElementMod.ElementSettings
+import typings.openui5.sapUiCoreLibraryMod.AccessibilityInfo
 import typings.openui5.sapUiCoreLibraryMod.BusyIndicatorSize
 import typings.std.Element
 import typings.std.Record
@@ -256,13 +257,6 @@ object sapUiCoreControlMod {
       *
       * @returns Returns `this` to allow method chaining
       */
-    def attachBrowserEvent(): this.type = js.native
-    def attachBrowserEvent(
-      /**
-      * A string containing one or more JavaScript event types, such as "click" or "blur".
-      */
-    sEventType: String
-    ): this.type = js.native
     def attachBrowserEvent(
       /**
       * A string containing one or more JavaScript event types, such as "click" or "blur".
@@ -282,58 +276,6 @@ object sapUiCoreControlMod {
       * A function to execute each time the event is triggered.
       */
     fnHandler: js.Function,
-      /**
-      * The object, that wants to be notified, when the event occurs
-      */
-    oListener: js.Object
-    ): this.type = js.native
-    def attachBrowserEvent(
-      /**
-      * A string containing one or more JavaScript event types, such as "click" or "blur".
-      */
-    sEventType: String,
-      /**
-      * A function to execute each time the event is triggered.
-      */
-    fnHandler: Unit,
-      /**
-      * The object, that wants to be notified, when the event occurs
-      */
-    oListener: js.Object
-    ): this.type = js.native
-    def attachBrowserEvent(
-      /**
-      * A string containing one or more JavaScript event types, such as "click" or "blur".
-      */
-    sEventType: Unit,
-      /**
-      * A function to execute each time the event is triggered.
-      */
-    fnHandler: js.Function
-    ): this.type = js.native
-    def attachBrowserEvent(
-      /**
-      * A string containing one or more JavaScript event types, such as "click" or "blur".
-      */
-    sEventType: Unit,
-      /**
-      * A function to execute each time the event is triggered.
-      */
-    fnHandler: js.Function,
-      /**
-      * The object, that wants to be notified, when the event occurs
-      */
-    oListener: js.Object
-    ): this.type = js.native
-    def attachBrowserEvent(
-      /**
-      * A string containing one or more JavaScript event types, such as "click" or "blur".
-      */
-    sEventType: Unit,
-      /**
-      * A function to execute each time the event is triggered.
-      */
-    fnHandler: Unit,
       /**
       * The object, that wants to be notified, when the event occurs
       */
@@ -457,13 +399,6 @@ object sapUiCoreControlMod {
       *
       * @returns Returns `this` to allow method chaining
       */
-    def detachBrowserEvent(): this.type = js.native
-    def detachBrowserEvent(
-      /**
-      * A string containing one or more JavaScript event types, such as "click" or "blur".
-      */
-    sEventType: String
-    ): this.type = js.native
     def detachBrowserEvent(
       /**
       * A string containing one or more JavaScript event types, such as "click" or "blur".
@@ -483,58 +418,6 @@ object sapUiCoreControlMod {
       * The function that is to be no longer executed.
       */
     fnHandler: js.Function,
-      /**
-      * The context object that was given in the call to `attachBrowserEvent`.
-      */
-    oListener: js.Object
-    ): this.type = js.native
-    def detachBrowserEvent(
-      /**
-      * A string containing one or more JavaScript event types, such as "click" or "blur".
-      */
-    sEventType: String,
-      /**
-      * The function that is to be no longer executed.
-      */
-    fnHandler: Unit,
-      /**
-      * The context object that was given in the call to `attachBrowserEvent`.
-      */
-    oListener: js.Object
-    ): this.type = js.native
-    def detachBrowserEvent(
-      /**
-      * A string containing one or more JavaScript event types, such as "click" or "blur".
-      */
-    sEventType: Unit,
-      /**
-      * The function that is to be no longer executed.
-      */
-    fnHandler: js.Function
-    ): this.type = js.native
-    def detachBrowserEvent(
-      /**
-      * A string containing one or more JavaScript event types, such as "click" or "blur".
-      */
-    sEventType: Unit,
-      /**
-      * The function that is to be no longer executed.
-      */
-    fnHandler: js.Function,
-      /**
-      * The context object that was given in the call to `attachBrowserEvent`.
-      */
-    oListener: js.Object
-    ): this.type = js.native
-    def detachBrowserEvent(
-      /**
-      * A string containing one or more JavaScript event types, such as "click" or "blur".
-      */
-    sEventType: Unit,
-      /**
-      * The function that is to be no longer executed.
-      */
-    fnHandler: Unit,
       /**
       * The context object that was given in the call to `attachBrowserEvent`.
       */
@@ -567,6 +450,8 @@ object sapUiCoreControlMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:validateFieldGroup validateFieldGroup} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -579,6 +464,7 @@ object sapUiCoreControlMod {
     
     /**
       * @SINCE 1.37.0
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * This function (if available on the concrete control) provides the current accessibility state of the
       * control.
@@ -592,24 +478,14 @@ object sapUiCoreControlMod {
       *
       * MyControl.prototype.getAccessibilityInfo = function() {
       *    return {
-      *      role: "textbox",      // String which represents the WAI-ARIA role which is implemented by the control.
-      *      type: "date input",   // String which represents the control type (Must be a translated text). Might correlate with
-      *                            // the role.
-      *      description: "value", // String which describes the most relevant control state (e.g. the inputs value). Must be a
-      *                            // translated text.
-      *                            // Note: The type and the enabled/editable state must not be handled here.
-      *      focusable: true,      // Boolean which describes whether the control can get the focus.
-      *      enabled: true,        // Boolean which describes whether the control is enabled. If not relevant it must not be set or
-      *                            // `null` can be provided.
-      *      editable: true,       // Boolean which describes whether the control is editable. If not relevant it must not be set or
-      *                            // `null` can be provided.
-      *      required: true,       // Boolean which describes whether the control is mandatory. If not relevant it must not be set or
-      *                            // `null` can be provided. The required state might also be handled as part of the description. In this
-      *                            // case this flag should not be used.
-      *      children: []          // Aggregations of the given control (e.g. when the control is a layout). Primitive aggregations will be ignored.
-      *                            // Note: Children should only be provided when it is helpful to understand the accessibility context
-      *                            //       (e.g. a form control must not provide details of its internals (fields, labels, ...) but a
-      *                            //       layout should).
+      *      role: "textbox",
+      *      type: "date input",
+      *      description: "value",
+      *      focusable: true,
+      *      enabled: true,
+      *      editable: true,
+      *      required: true,
+      *      children: []
       *    };
       * };
       * ```
@@ -620,7 +496,7 @@ object sapUiCoreControlMod {
       *
       * @returns Current accessibility state of the control.
       */
-    def getAccessibilityInfo(): js.Object = js.native
+    def getAccessibilityInfo(): AccessibilityInfo = js.native
     
     /**
       * @deprecated (since 1.69) - The blocked property is deprecated. There is no accessibility support for
@@ -711,6 +587,8 @@ object sapUiCoreControlMod {
     def getIdForLabel(): String = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Returns a renderer for this control instance.
       *
       * It is retrieved using the RenderManager as done during rendering.
@@ -761,6 +639,8 @@ object sapUiCoreControlMod {
     def isBusy(): Boolean = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Function is called when the rendering of the control is completed.
       *
       * Applications must not call this hook method directly, it is called by the framework.
@@ -773,6 +653,8 @@ object sapUiCoreControlMod {
     oEvent: Event): Unit = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Function is called before the rendering of the control is started.
       *
       * Applications must not call this hook method directly, it is called by the framework.

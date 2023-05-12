@@ -13,16 +13,20 @@ trait Typeofsessions extends StObject {
   
   var MAX_SESSION_RESULTS: Double = js.native
   
+  def getDevices(): js.Promise[js.Array[Device]] = js.native
   def getDevices(callback: js.Function1[/* devices */ js.Array[Device], Unit]): Unit = js.native
+  def getDevices(filter: Filter): js.Promise[js.Array[Device]] = js.native
   def getDevices(filter: Filter, callback: js.Function1[/* devices */ js.Array[Device], Unit]): Unit = js.native
   
+  def getRecentlyClosed(): js.Promise[js.Array[Session]] = js.native
   def getRecentlyClosed(callback: js.Function1[/* sessions */ js.Array[Session], Unit]): Unit = js.native
+  def getRecentlyClosed(filter: Filter): js.Promise[js.Array[Session]] = js.native
   def getRecentlyClosed(filter: Filter, callback: js.Function1[/* sessions */ js.Array[Session], Unit]): Unit = js.native
   
   var onChanged: SessionChangedEvent = js.native
   
-  def restore(): Unit = js.native
-  def restore(sessionId: String): Unit = js.native
+  def restore(): js.Promise[Session] = js.native
+  def restore(callback: js.Function1[/* restoredSession */ Session, Unit]): Unit = js.native
+  def restore(sessionId: String): js.Promise[Session] = js.native
   def restore(sessionId: String, callback: js.Function1[/* restoredSession */ Session, Unit]): Unit = js.native
-  def restore(sessionId: Unit, callback: js.Function1[/* restoredSession */ Session, Unit]): Unit = js.native
 }

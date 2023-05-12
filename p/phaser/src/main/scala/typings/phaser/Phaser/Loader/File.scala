@@ -77,7 +77,7 @@ trait File extends StObject {
     * Atlases and Bitmap Fonts use the multiFile, because those files need loading together but aren't
     * actually bound by data, where-as a linkFile is.
     */
-  var linkFile: File
+  var linkFile: File | Null
   
   /**
     * Called by the Loader, starts the actual file downloading.
@@ -95,7 +95,7 @@ trait File extends StObject {
     * If this is a multipart file, i.e. an atlas and its json together, then this is a reference
     * to the parent MultiFile. Set and used internally by the Loader or specific file types.
     */
-  var multiFile: MultiFile
+  var multiFile: MultiFile | Null
   
   /**
     * Called if the file errors while loading, is sent a DOM ProgressEvent.
@@ -186,7 +186,7 @@ trait File extends StObject {
   /**
     * The XMLHttpRequest instance (as created by XHR Loader) that is loading this File.
     */
-  var xhrLoader: XMLHttpRequest
+  var xhrLoader: XMLHttpRequest | Null
   
   /**
     * The merged XHRSettings for this file.
@@ -205,10 +205,8 @@ object File {
     destroy: () => Unit,
     hasCacheConflict: () => Boolean,
     key: String,
-    linkFile: File,
     load: () => Unit,
     loader: LoaderPlugin,
-    multiFile: MultiFile,
     onError: (XMLHttpRequest, ProgressEvent[EventTarget]) => Unit,
     onLoad: (XMLHttpRequest, ProgressEvent[EventTarget]) => Unit,
     onProcess: () => Unit,
@@ -223,10 +221,9 @@ object File {
     state: Double,
     `type`: String,
     url: js.Object | String,
-    xhrLoader: XMLHttpRequest,
     xhrSettings: XHRSettingsObject
   ): File = {
-    val __obj = js.Dynamic.literal(addToCache = js.Any.fromFunction0(addToCache), bytesLoaded = bytesLoaded.asInstanceOf[js.Any], bytesTotal = bytesTotal.asInstanceOf[js.Any], cache = cache.asInstanceOf[js.Any], config = config.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], destroy = js.Any.fromFunction0(destroy), hasCacheConflict = js.Any.fromFunction0(hasCacheConflict), key = key.asInstanceOf[js.Any], linkFile = linkFile.asInstanceOf[js.Any], load = js.Any.fromFunction0(load), loader = loader.asInstanceOf[js.Any], multiFile = multiFile.asInstanceOf[js.Any], onError = js.Any.fromFunction2(onError), onLoad = js.Any.fromFunction2(onLoad), onProcess = js.Any.fromFunction0(onProcess), onProcessComplete = js.Any.fromFunction0(onProcessComplete), onProcessError = js.Any.fromFunction0(onProcessError), onProgress = js.Any.fromFunction1(onProgress), pendingDestroy = js.Any.fromFunction0(pendingDestroy), percentComplete = percentComplete.asInstanceOf[js.Any], resetXHR = js.Any.fromFunction0(resetXHR), setLink = js.Any.fromFunction1(setLink), src = src.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], xhrLoader = xhrLoader.asInstanceOf[js.Any], xhrSettings = xhrSettings.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(addToCache = js.Any.fromFunction0(addToCache), bytesLoaded = bytesLoaded.asInstanceOf[js.Any], bytesTotal = bytesTotal.asInstanceOf[js.Any], cache = cache.asInstanceOf[js.Any], config = config.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], destroy = js.Any.fromFunction0(destroy), hasCacheConflict = js.Any.fromFunction0(hasCacheConflict), key = key.asInstanceOf[js.Any], load = js.Any.fromFunction0(load), loader = loader.asInstanceOf[js.Any], onError = js.Any.fromFunction2(onError), onLoad = js.Any.fromFunction2(onLoad), onProcess = js.Any.fromFunction0(onProcess), onProcessComplete = js.Any.fromFunction0(onProcessComplete), onProcessError = js.Any.fromFunction0(onProcessError), onProgress = js.Any.fromFunction1(onProgress), pendingDestroy = js.Any.fromFunction0(pendingDestroy), percentComplete = percentComplete.asInstanceOf[js.Any], resetXHR = js.Any.fromFunction0(resetXHR), setLink = js.Any.fromFunction1(setLink), src = src.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], xhrSettings = xhrSettings.asInstanceOf[js.Any], linkFile = null, multiFile = null, xhrLoader = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[File]
   }
@@ -258,11 +255,15 @@ object File {
     
     inline def setLinkFile(value: File): Self = StObject.set(x, "linkFile", value.asInstanceOf[js.Any])
     
+    inline def setLinkFileNull: Self = StObject.set(x, "linkFile", null)
+    
     inline def setLoad(value: () => Unit): Self = StObject.set(x, "load", js.Any.fromFunction0(value))
     
     inline def setLoader(value: LoaderPlugin): Self = StObject.set(x, "loader", value.asInstanceOf[js.Any])
     
     inline def setMultiFile(value: MultiFile): Self = StObject.set(x, "multiFile", value.asInstanceOf[js.Any])
+    
+    inline def setMultiFileNull: Self = StObject.set(x, "multiFile", null)
     
     inline def setOnError(value: (XMLHttpRequest, ProgressEvent[EventTarget]) => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction2(value))
     
@@ -293,6 +294,8 @@ object File {
     inline def setUrl(value: js.Object | String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     inline def setXhrLoader(value: XMLHttpRequest): Self = StObject.set(x, "xhrLoader", value.asInstanceOf[js.Any])
+    
+    inline def setXhrLoaderNull: Self = StObject.set(x, "xhrLoader", null)
     
     inline def setXhrSettings(value: XHRSettingsObject): Self = StObject.set(x, "xhrSettings", value.asInstanceOf[js.Any])
   }

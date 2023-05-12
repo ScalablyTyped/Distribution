@@ -42,7 +42,7 @@ trait DocumentIdentifier extends StObject {
   var Name: js.UndefOr[DocumentARN] = js.undefined
   
   /**
-    * The Amazon Web Services user account that created the document.
+    * The Amazon Web Services user that created the document.
     */
   var Owner: js.UndefOr[DocumentOwner] = js.undefined
   

@@ -1,7 +1,7 @@
 
 # Scala.js typings for url-state
 
-Typings are for version 2.0
+Typings are for version 3.0
 
 ## Library description:
 Minimalist history API abstraction for building URL driven browser applications

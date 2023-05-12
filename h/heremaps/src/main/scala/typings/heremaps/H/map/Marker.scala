@@ -9,14 +9,14 @@ object Marker {
   
   /**
     * Options used to initialize a Marker
-    * @property min {number=} - The minimum zoom level for which the object is visible, default is -Infinity
-    * @property max {number=} - The maximum zoom level for which the object is visible, default is Infinity
-    * @property visibility {boolean=} - Indicates whether the map object is visible at all, default is true.
-    * @property zIndex {number=} - The z-index value of the map object, default is 0
-    * @property provider {(H.map.provider.Provider | null)=} - The provider of this object. This property is only needed if a customized Implementation of ObjectProvider wants to instantiate
+    * min {number=} - The minimum zoom level for which the object is visible, default is -Infinity
+    * max {number=} - The maximum zoom level for which the object is visible, default is Infinity
+    * visibility {boolean=} - Indicates whether the map object is visible at all, default is true.
+    * zIndex {number=} - The z-index value of the map object, default is 0
+    * provider {(H.map.provider.Provider | null)=} - The provider of this object. This property is only needed if a customized Implementation of ObjectProvider wants to instantiate
     * an object.
-    * @property icon {H.map.Icon=} - The icon to use for the visual representation, if omitted a default icon is used.
-    * @property data {*} - Optional arbitrary data to be stored with this map object. This data can be retrieved by calling getData.
+    * icon {H.map.Icon=} - The icon to use for the visual representation, if omitted a default icon is used.
+    * data {*} - Optional arbitrary data to be stored with this map object. This data can be retrieved by calling getData.
     */
   trait Options extends StObject {
     

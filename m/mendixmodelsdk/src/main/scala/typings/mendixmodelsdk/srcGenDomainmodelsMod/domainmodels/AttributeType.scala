@@ -1,6 +1,7 @@
 package typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels
 
 import typings.mendixmodelsdk.srcGenBaseModelMod.IModel
+import typings.mendixmodelsdk.srcGenBusinesseventsMod.businessevents.MessageAttribute
 import typings.mendixmodelsdk.srcGenBusinesseventsMod.businessevents.PublishedMessageAttribute
 import typings.mendixmodelsdk.srcGenDomainmodelsMod.StructureVersionInfo
 import typings.mendixmodelsdk.srcGenMlmappingsMod.mlmappings.TensorMappingElement
@@ -40,6 +41,8 @@ open class AttributeType protected () extends Element[IModel] {
   def containerAsEntityKeyPart: EntityKeyPart = js.native
   @JSName("containerAsEntityKeyPart")
   val containerAsEntityKeyPart_FAttributeType: IEntityKeyPart = js.native
+  
+  def containerAsMessageAttribute: MessageAttribute = js.native
   
   def containerAsODataKeyPart: ODataKeyPart = js.native
   @JSName("containerAsODataKeyPart")

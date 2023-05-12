@@ -16,7 +16,7 @@ object libIconsPieChartFilledMod extends Shortcut {
   @js.native
   trait PieChartFilledIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_PieChartFilledIconType: String = js.native

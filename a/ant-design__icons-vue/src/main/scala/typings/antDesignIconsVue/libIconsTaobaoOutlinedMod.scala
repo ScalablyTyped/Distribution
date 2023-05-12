@@ -16,7 +16,7 @@ object libIconsTaobaoOutlinedMod extends Shortcut {
   @js.native
   trait TaobaoOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_TaobaoOutlinedIconType: String = js.native

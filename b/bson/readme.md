@@ -1,7 +1,7 @@
 
 # Scala.js typings for bson
 
-Typings are for version 4.7.0
+Typings are for version 5.3.0
 
 ## Library description:
 A bson parser for node.js and the browser

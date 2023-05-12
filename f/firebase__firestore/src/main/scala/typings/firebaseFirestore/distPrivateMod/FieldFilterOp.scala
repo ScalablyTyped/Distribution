@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Excluded from this release type: executeWrite */
 /* Rewritten from type alias, can be one of: 
   - typings.firebaseFirestore.firebaseFirestoreStrings.OPERATOR_UNSPECIFIED
   - typings.firebaseFirestore.firebaseFirestoreStrings.LESS_THAN

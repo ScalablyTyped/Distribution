@@ -1,0 +1,39 @@
+package typings.awsSdk.clientsChimesdkvoiceMod
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait ListSipMediaApplicationsResponse extends StObject {
+  
+  /**
+    * The token used to return the next page of results.
+    */
+  var NextToken: js.UndefOr[NextTokenString] = js.undefined
+  
+  /**
+    * The list of SIP media applications and application details.
+    */
+  var SipMediaApplications: js.UndefOr[SipMediaApplicationList] = js.undefined
+}
+object ListSipMediaApplicationsResponse {
+  
+  inline def apply(): ListSipMediaApplicationsResponse = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[ListSipMediaApplicationsResponse]
+  }
+  
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListSipMediaApplicationsResponse] (val x: Self) extends AnyVal {
+    
+    inline def setNextToken(value: NextTokenString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    
+    inline def setSipMediaApplications(value: SipMediaApplicationList): Self = StObject.set(x, "SipMediaApplications", value.asInstanceOf[js.Any])
+    
+    inline def setSipMediaApplicationsUndefined: Self = StObject.set(x, "SipMediaApplications", js.undefined)
+    
+    inline def setSipMediaApplicationsVarargs(value: SipMediaApplication*): Self = StObject.set(x, "SipMediaApplications", js.Array(value*))
+  }
+}

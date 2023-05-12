@@ -13,6 +13,11 @@ trait LanguageFilter extends StObject {
     */
   val hasAccessToAllModels: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * This provider comes from a builtin extension.
+    */
+  val isBuiltin: js.UndefOr[Boolean] = js.undefined
+  
   val language: js.UndefOr[String] = js.undefined
   
   val notebookType: js.UndefOr[String] = js.undefined
@@ -38,6 +43,10 @@ object LanguageFilter {
     inline def setHasAccessToAllModels(value: Boolean): Self = StObject.set(x, "hasAccessToAllModels", value.asInstanceOf[js.Any])
     
     inline def setHasAccessToAllModelsUndefined: Self = StObject.set(x, "hasAccessToAllModels", js.undefined)
+    
+    inline def setIsBuiltin(value: Boolean): Self = StObject.set(x, "isBuiltin", value.asInstanceOf[js.Any])
+    
+    inline def setIsBuiltinUndefined: Self = StObject.set(x, "isBuiltin", js.undefined)
     
     inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     

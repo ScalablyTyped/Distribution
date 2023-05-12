@@ -687,6 +687,12 @@ object countriesAndTimezonesStrings {
   inline def AmericaSlashChihuahua: AmericaSlashChihuahua = "America/Chihuahua".asInstanceOf[AmericaSlashChihuahua]
   
   @js.native
+  sealed trait AmericaSlashCiudad_Juarez
+    extends StObject
+       with TimezoneName
+  inline def AmericaSlashCiudad_Juarez: AmericaSlashCiudad_Juarez = "America/Ciudad_Juarez".asInstanceOf[AmericaSlashCiudad_Juarez]
+  
+  @js.native
   sealed trait AmericaSlashCoral_Harbour
     extends StObject
        with TimezoneName
@@ -3385,6 +3391,12 @@ object countriesAndTimezonesStrings {
   inline def EuropeSlashKirov: EuropeSlashKirov = "Europe/Kirov".asInstanceOf[EuropeSlashKirov]
   
   @js.native
+  sealed trait EuropeSlashKyiv
+    extends StObject
+       with TimezoneName
+  inline def EuropeSlashKyiv: EuropeSlashKyiv = "Europe/Kyiv".asInstanceOf[EuropeSlashKyiv]
+  
+  @js.native
   sealed trait EuropeSlashLisbon
     extends StObject
        with TimezoneName
@@ -5705,6 +5717,10 @@ object countriesAndTimezonesStrings {
   @js.native
   sealed trait Tuvalu extends StObject
   inline def Tuvalu: Tuvalu = "Tuvalu".asInstanceOf[Tuvalu]
+  
+  @js.native
+  sealed trait Türkiye extends StObject
+  inline def Türkiye: Türkiye = "T\u00FCrkiye".asInstanceOf[Türkiye]
   
   @js.native
   sealed trait UA

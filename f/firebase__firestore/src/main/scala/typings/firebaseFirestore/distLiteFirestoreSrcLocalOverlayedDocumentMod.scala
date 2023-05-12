@@ -15,15 +15,19 @@ object distLiteFirestoreSrcLocalOverlayedDocumentMod {
     def this(
       overlayedDocument: Document,
       /**
-      * The fields that are locally mutated by patch mutations. If the overlayed
-      * document is from set or delete mutations, this returns null.
+      * The fields that are locally mutated by patch mutations.
+      *
+      * If the overlayed	document is from set or delete mutations, this is `null`.
+      * If there is no overlay (mutation) for the document, this is an empty `FieldMask`.
       */
     mutatedFields: FieldMask
     ) = this()
     
     /**
-      * The fields that are locally mutated by patch mutations. If the overlayed
-      * document is from set or delete mutations, this returns null.
+      * The fields that are locally mutated by patch mutations.
+      *
+      * If the overlayed	document is from set or delete mutations, this is `null`.
+      * If there is no overlay (mutation) for the document, this is an empty `FieldMask`.
       */
     val mutatedFields: FieldMask | Null = js.native
     

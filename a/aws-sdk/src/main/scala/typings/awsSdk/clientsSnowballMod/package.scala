@@ -30,6 +30,8 @@ type ClusterState = _ClusterState | java.lang.String
 
 type CompatibleImageList = js.Array[CompatibleImage]
 
+type DependentServiceList = js.Array[DependentService]
+
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NFS_ON_DEVICE_SERVICE
   - typings.awsSdk.awsSdkStrings.S3_ON_DEVICE_SERVICE
@@ -42,6 +44,8 @@ type Ec2AmiResourceList = js.Array[Ec2AmiResource]
 type EventTriggerDefinitionList = js.Array[EventTriggerDefinition]
 
 type GSTIN = java.lang.String
+
+type InitialClusterSize = Double
 
 type Integer = Double
 
@@ -95,12 +99,17 @@ type LongTermPricingEntryList = js.Array[LongTermPricingListEntry]
 
 type LongTermPricingId = java.lang.String
 
+type LongTermPricingIdList = js.Array[LongTermPricingId]
+
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.OneYear
   - typings.awsSdk.awsSdkStrings.ThreeYear
+  - typings.awsSdk.awsSdkStrings.OneMonth
   - java.lang.String
 */
 type LongTermPricingType = _LongTermPricingType | java.lang.String
+
+type NodeFaultTolerance = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.INSTALLED_ONLY
@@ -114,6 +123,19 @@ type ResourceARN = java.lang.String
 type RoleARN = java.lang.String
 
 type S3ResourceList = js.Array[S3Resource]
+
+type S3StorageLimit = Double
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.KUBERNETES
+  - typings.awsSdk.awsSdkStrings.EKS_ANYWHERE
+  - java.lang.String
+*/
+type ServiceName = _ServiceName | java.lang.String
+
+type ServiceSize = Double
+
+type ServiceVersionList = js.Array[ServiceVersion]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.RECEIVED
@@ -148,8 +170,9 @@ type ShippingOption = _ShippingOption | java.lang.String
   - typings.awsSdk.awsSdkStrings.T98
   - typings.awsSdk.awsSdkStrings.T8
   - typings.awsSdk.awsSdkStrings.T14
-  - typings.awsSdk.awsSdkStrings.NoPreference
   - typings.awsSdk.awsSdkStrings.T32
+  - typings.awsSdk.awsSdkStrings.NoPreference
+  - typings.awsSdk.awsSdkStrings.T240
   - java.lang.String
 */
 type SnowballCapacity = _SnowballCapacity | java.lang.String
@@ -163,6 +186,7 @@ type SnowballCapacity = _SnowballCapacity | java.lang.String
   - typings.awsSdk.awsSdkStrings.SNC1_HDD
   - typings.awsSdk.awsSdkStrings.SNC1_SSD
   - typings.awsSdk.awsSdkStrings.V3_5C
+  - typings.awsSdk.awsSdkStrings.V3_5S
   - java.lang.String
 */
 type SnowballType = _SnowballType | java.lang.String

@@ -2,11 +2,6 @@ package typings.nightwatch.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.nightwatch.anon.Preview
-import typings.nightwatch.nightwatchStrings.browser
-import typings.nightwatch.nightwatchStrings.client
-import typings.nightwatch.nightwatchStrings.driver
-import typings.nightwatch.nightwatchStrings.performance
-import typings.nightwatch.nightwatchStrings.server
 import typings.std.HTMLScriptElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -322,14 +317,10 @@ trait ClientCommands
     *
     * @see https://nightwatchjs.org/api/getLogTypes.html
     */
-  def getLogTypes(): Awaitable[this.type, js.Array[client | driver | browser | server | performance]] = js.native
+  def getLogTypes(): Awaitable[this.type, js.Array[NightwatchLogTypes]] = js.native
   def getLogTypes(
-    callback: js.ThisFunction1[
-      /* this */ NightwatchAPI, 
-      /* result */ js.Array[client | driver | browser | server | performance], 
-      Unit
-    ]
-  ): Awaitable[this.type, js.Array[client | driver | browser | server | performance]] = js.native
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ js.Array[NightwatchLogTypes], Unit]
+  ): Awaitable[this.type, js.Array[NightwatchLogTypes]] = js.native
   
   /**
     * Returns the title of the current page. Uses title protocol command.
@@ -885,7 +876,7 @@ trait ClientCommands
     *
     *  this.demoTestAsync = async function () {
     *    const result = await browser.windowHandles();
-    *    const handle = result.value[0];
+    *    const handle = result[0];
     *    browser.switchToWindow(handle);
     *  };
     *
@@ -912,7 +903,7 @@ trait ClientCommands
     *
     *  this.demoTestAsync = async function () {
     *    const result = await browser.windowHandles();
-    *    const handle = result.value[0];
+    *    const handle = result[0];
     *    browser.switchWindow(handle);
     *  };
     *

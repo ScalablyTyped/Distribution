@@ -73,13 +73,13 @@ object distTypesUtilMod {
     
     /**
       * Enables IPv6/IPv4 dualstack endpoint.
-      * @default false
+      * @defaultValue false
       */
     var useDualstackEndpoint: Boolean
     
     /**
       * Enables FIPS compatible endpoints.
-      * @default false
+      * @defaultValue false
       */
     var useFipsEndpoint: Boolean
   }

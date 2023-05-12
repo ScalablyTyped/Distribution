@@ -15,6 +15,11 @@ trait Filters extends StObject {
     * The queues to use to filter the metrics. You should specify at least one queue, and can specify up to 100 queues per request. The GetCurrentMetricsData API in particular requires a queue when you include a Filter in your request. 
     */
   var Queues: js.UndefOr[typings.awsSdk.clientsConnectMod.Queues] = js.undefined
+  
+  /**
+    * A list of up to 100 routing profile IDs or ARNs.
+    */
+  var RoutingProfiles: js.UndefOr[typings.awsSdk.clientsConnectMod.RoutingProfiles] = js.undefined
 }
 object Filters {
   
@@ -37,5 +42,11 @@ object Filters {
     inline def setQueuesUndefined: Self = StObject.set(x, "Queues", js.undefined)
     
     inline def setQueuesVarargs(value: QueueId*): Self = StObject.set(x, "Queues", js.Array(value*))
+    
+    inline def setRoutingProfiles(value: RoutingProfiles): Self = StObject.set(x, "RoutingProfiles", value.asInstanceOf[js.Any])
+    
+    inline def setRoutingProfilesUndefined: Self = StObject.set(x, "RoutingProfiles", js.undefined)
+    
+    inline def setRoutingProfilesVarargs(value: RoutingProfileId*): Self = StObject.set(x, "RoutingProfiles", js.Array(value*))
   }
 }

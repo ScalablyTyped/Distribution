@@ -20,6 +20,7 @@ import typings.semanticUiReact.semanticUiReactStrings.massive
 import typings.semanticUiReact.semanticUiReactStrings.mini
 import typings.semanticUiReact.semanticUiReactStrings.right
 import typings.semanticUiReact.semanticUiReactStrings.small
+import typings.std.FocusOptions
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -36,6 +37,7 @@ object distCommonjsElementsInputInputMod {
     extends Component[InputProps, js.Object, Any] {
     
     def focus(): Unit = js.native
+    def focus(options: FocusOptions): Unit = js.native
     
     def select(): Unit = js.native
   }

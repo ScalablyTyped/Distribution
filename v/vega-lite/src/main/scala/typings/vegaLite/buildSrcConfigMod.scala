@@ -351,9 +351,103 @@ object buildSrcConfigMod {
   
   type FontSizeConfig = Record[String, Double]
   
+  trait FormatConfig extends StObject {
+    
+    /**
+      * If normalizedNumberFormatType is not specified,
+      * D3 number format for axis labels, text marks, and tooltips of normalized stacked fields (fields with `stack: "normalize"`). For example `"s"` for SI units.
+      * Use [D3's number format pattern](https://github.com/d3/d3-format#locale_format).
+      *
+      * If `config.normalizedNumberFormatType` is specified and `config.customFormatTypes` is `true`, this value will be passed as `format` alongside `datum.value` to the `config.numberFormatType` function.
+      * __Default value:__ `%`
+      */
+    var normalizedNumberFormat: js.UndefOr[String] = js.undefined
+    
+    /**
+      * [Custom format type](https://vega.github.io/vega-lite/docs/config.html#custom-format-type)
+      * for `config.normalizedNumberFormat`.
+      *
+      * __Default value:__ `undefined` -- This is equilvalent to call D3-format, which is exposed as [`format` in Vega-Expression](https://vega.github.io/vega/docs/expressions/#format).
+      * __Note:__ You must also set `customFormatTypes` to `true` to use this feature.
+      */
+    var normalizedNumberFormatType: js.UndefOr[String] = js.undefined
+    
+    /**
+      * If numberFormatType is not specified,
+      * D3 number format for guide labels, text marks, and tooltips of non-normalized fields (fields *without* `stack: "normalize"`). For example `"s"` for SI units.
+      * Use [D3's number format pattern](https://github.com/d3/d3-format#locale_format).
+      *
+      * If `config.numberFormatType` is specified and `config.customFormatTypes` is `true`, this value will be passed as `format` alongside `datum.value` to the `config.numberFormatType` function.
+      */
+    var numberFormat: js.UndefOr[String] = js.undefined
+    
+    /**
+      * [Custom format type](https://vega.github.io/vega-lite/docs/config.html#custom-format-type)
+      * for `config.numberFormat`.
+      *
+      * __Default value:__ `undefined` -- This is equilvalent to call D3-format, which is exposed as [`format` in Vega-Expression](https://vega.github.io/vega/docs/expressions/#format).
+      * __Note:__ You must also set `customFormatTypes` to `true` to use this feature.
+      */
+    var numberFormatType: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Default time format for raw time values (without time units) in text marks, legend labels and header labels.
+      *
+      * __Default value:__ `"%b %d, %Y"`
+      * __Note:__ Axes automatically determine the format for each label automatically so this config does not affect axes.
+      */
+    var timeFormat: js.UndefOr[String] = js.undefined
+    
+    /**
+      * [Custom format type](https://vega.github.io/vega-lite/docs/config.html#custom-format-type)
+      * for `config.timeFormat`.
+      *
+      * __Default value:__ `undefined` -- This is equilvalent to call D3-time-format, which is exposed as [`timeFormat` in Vega-Expression](https://vega.github.io/vega/docs/expressions/#timeFormat).
+      * __Note:__ You must also set `customFormatTypes` to `true` and there must *not* be a `timeUnit` defined to use this feature.
+      */
+    var timeFormatType: js.UndefOr[String] = js.undefined
+  }
+  object FormatConfig {
+    
+    inline def apply(): FormatConfig = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[FormatConfig]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormatConfig] (val x: Self) extends AnyVal {
+      
+      inline def setNormalizedNumberFormat(value: String): Self = StObject.set(x, "normalizedNumberFormat", value.asInstanceOf[js.Any])
+      
+      inline def setNormalizedNumberFormatType(value: String): Self = StObject.set(x, "normalizedNumberFormatType", value.asInstanceOf[js.Any])
+      
+      inline def setNormalizedNumberFormatTypeUndefined: Self = StObject.set(x, "normalizedNumberFormatType", js.undefined)
+      
+      inline def setNormalizedNumberFormatUndefined: Self = StObject.set(x, "normalizedNumberFormat", js.undefined)
+      
+      inline def setNumberFormat(value: String): Self = StObject.set(x, "numberFormat", value.asInstanceOf[js.Any])
+      
+      inline def setNumberFormatType(value: String): Self = StObject.set(x, "numberFormatType", value.asInstanceOf[js.Any])
+      
+      inline def setNumberFormatTypeUndefined: Self = StObject.set(x, "numberFormatType", js.undefined)
+      
+      inline def setNumberFormatUndefined: Self = StObject.set(x, "numberFormat", js.undefined)
+      
+      inline def setTimeFormat(value: String): Self = StObject.set(x, "timeFormat", value.asInstanceOf[js.Any])
+      
+      inline def setTimeFormatType(value: String): Self = StObject.set(x, "timeFormatType", value.asInstanceOf[js.Any])
+      
+      inline def setTimeFormatTypeUndefined: Self = StObject.set(x, "timeFormatType", js.undefined)
+      
+      inline def setTimeFormatUndefined: Self = StObject.set(x, "timeFormat", js.undefined)
+    }
+  }
+  
   type StyleConfigIndex[ES /* <: ExprRef | SignalRef */] = (Partial[Record[String, AnyMarkConfig[ES] | Axis[ES]]]) & MarkConfigMixins[ES] & Groupsubtitle[ES]
   
-  trait VLOnlyConfig[ES /* <: ExprRef | SignalRef */] extends StObject {
+  trait VLOnlyConfig[ES /* <: ExprRef | SignalRef */]
+    extends StObject
+       with FormatConfig {
     
     /**
       * Default color signals.
@@ -397,43 +491,6 @@ object buildSrcConfigMod {
     var fontSize: js.UndefOr[Boolean | FontSizeConfig] = js.undefined
     
     /**
-      * If normalizedNumberFormatType is not specified,
-      * D3 number format for axis labels, text marks, and tooltips of normalized stacked fields (fields with `stack: "normalize"`). For example `"s"` for SI units.
-      * Use [D3's number format pattern](https://github.com/d3/d3-format#locale_format).
-      *
-      * If `config.normalizedNumberFormatType` is specified and `config.customFormatTypes` is `true`, this value will be passed as `format` alongside `datum.value` to the `config.numberFormatType` function.
-      * __Default value:__ `%`
-      */
-    var normalizedNumberFormat: js.UndefOr[String] = js.undefined
-    
-    /**
-      * [Custom format type](https://vega.github.io/vega-lite/docs/config.html#custom-format-type)
-      * for `config.normalizedNumberFormat`.
-      *
-      * __Default value:__ `undefined` -- This is equilvalent to call D3-format, which is exposed as [`format` in Vega-Expression](https://vega.github.io/vega/docs/expressions/#format).
-      * __Note:__ You must also set `customFormatTypes` to `true` to use this feature.
-      */
-    var normalizedNumberFormatType: js.UndefOr[String] = js.undefined
-    
-    /**
-      * If numberFormatType is not specified,
-      * D3 number format for guide labels, text marks, and tooltips of non-normalized fields (fields *without* `stack: "normalize"`). For example `"s"` for SI units.
-      * Use [D3's number format pattern](https://github.com/d3/d3-format#locale_format).
-      *
-      * If `config.numberFormatType` is specified and `config.customFormatTypes` is `true`, this value will be passed as `format` alongside `datum.value` to the `config.numberFormatType` function.
-      */
-    var numberFormat: js.UndefOr[String] = js.undefined
-    
-    /**
-      * [Custom format type](https://vega.github.io/vega-lite/docs/config.html#custom-format-type)
-      * for `config.numberFormat`.
-      *
-      * __Default value:__ `undefined` -- This is equilvalent to call D3-format, which is exposed as [`format` in Vega-Expression](https://vega.github.io/vega/docs/expressions/#format).
-      * __Note:__ You must also set `customFormatTypes` to `true` to use this feature.
-      */
-    var numberFormatType: js.UndefOr[String] = js.undefined
-    
-    /**
       * Scale configuration determines default properties for all [scales](https://vega.github.io/vega-lite/docs/scale.html). For a full list of scale configuration options, please see the [corresponding section of the scale documentation](https://vega.github.io/vega-lite/docs/scale.html#config).
       */
     var scale: js.UndefOr[ScaleConfig[ES]] = js.undefined
@@ -442,21 +499,9 @@ object buildSrcConfigMod {
     var selection: js.UndefOr[SelectionConfig] = js.undefined
     
     /**
-      * Default time format for raw time values (without time units) in text marks, legend labels and header labels.
-      *
-      * __Default value:__ `"%b %d, %Y"`
-      * __Note:__ Axes automatically determine the format for each label automatically so this config does not affect axes.
+      * Define [custom format configuration](https://vega.github.io/vega-lite/docs/config.html#format) for tooltips. If unspecified, default format config will be applied.
       */
-    var timeFormat: js.UndefOr[String] = js.undefined
-    
-    /**
-      * [Custom format type](https://vega.github.io/vega-lite/docs/config.html#custom-format-type)
-      * for `config.timeFormat`.
-      *
-      * __Default value:__ `undefined` -- This is equilvalent to call D3-time-format, which is exposed as [`timeFormat` in Vega-Expression](https://vega.github.io/vega/docs/expressions/#timeFormat).
-      * __Note:__ You must also set `customFormatTypes` to `true` and there must *not* be a `timeUnit` defined to use this feature.
-      */
-    var timeFormatType: js.UndefOr[String] = js.undefined
+    var tooltipFormat: js.UndefOr[FormatConfig] = js.undefined
     
     /** Default properties for [single view plots](https://vega.github.io/vega-lite/docs/spec.html#single). */
     var view: js.UndefOr[ViewConfig[ES]] = js.undefined
@@ -495,22 +540,6 @@ object buildSrcConfigMod {
       
       inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
       
-      inline def setNormalizedNumberFormat(value: String): Self = StObject.set(x, "normalizedNumberFormat", value.asInstanceOf[js.Any])
-      
-      inline def setNormalizedNumberFormatType(value: String): Self = StObject.set(x, "normalizedNumberFormatType", value.asInstanceOf[js.Any])
-      
-      inline def setNormalizedNumberFormatTypeUndefined: Self = StObject.set(x, "normalizedNumberFormatType", js.undefined)
-      
-      inline def setNormalizedNumberFormatUndefined: Self = StObject.set(x, "normalizedNumberFormat", js.undefined)
-      
-      inline def setNumberFormat(value: String): Self = StObject.set(x, "numberFormat", value.asInstanceOf[js.Any])
-      
-      inline def setNumberFormatType(value: String): Self = StObject.set(x, "numberFormatType", value.asInstanceOf[js.Any])
-      
-      inline def setNumberFormatTypeUndefined: Self = StObject.set(x, "numberFormatType", js.undefined)
-      
-      inline def setNumberFormatUndefined: Self = StObject.set(x, "numberFormat", js.undefined)
-      
       inline def setScale(value: ScaleConfig[ES]): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
       
       inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
@@ -519,13 +548,9 @@ object buildSrcConfigMod {
       
       inline def setSelectionUndefined: Self = StObject.set(x, "selection", js.undefined)
       
-      inline def setTimeFormat(value: String): Self = StObject.set(x, "timeFormat", value.asInstanceOf[js.Any])
+      inline def setTooltipFormat(value: FormatConfig): Self = StObject.set(x, "tooltipFormat", value.asInstanceOf[js.Any])
       
-      inline def setTimeFormatType(value: String): Self = StObject.set(x, "timeFormatType", value.asInstanceOf[js.Any])
-      
-      inline def setTimeFormatTypeUndefined: Self = StObject.set(x, "timeFormatType", js.undefined)
-      
-      inline def setTimeFormatUndefined: Self = StObject.set(x, "timeFormat", js.undefined)
+      inline def setTooltipFormatUndefined: Self = StObject.set(x, "tooltipFormat", js.undefined)
       
       inline def setView(value: ViewConfig[ES]): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
       

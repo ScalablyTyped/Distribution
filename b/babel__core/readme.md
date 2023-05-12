@@ -1,7 +1,7 @@
 
 # Scala.js typings for babel__core
 
-Typings are for version 7.1
+Typings are for version 7.20
 
 
 

@@ -23,7 +23,7 @@ trait ContractTermAction
   var _requesterLinkId: js.UndefOr[js.Array[Element]] = js.undefined
   
   /**
-    * Encounter or Episode with primary association to specified term activity.
+    * Encounter or Episode with primary association to the specified term activity.
     */
   var context: js.UndefOr[Reference] = js.undefined
   

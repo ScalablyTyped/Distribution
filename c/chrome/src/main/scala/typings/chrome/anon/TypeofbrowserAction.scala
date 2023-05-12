@@ -16,8 +16,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TypeofbrowserAction extends StObject {
   
   def disable(): Unit = js.native
+  def disable(callback: js.Function0[Unit]): Unit = js.native
   def disable(tabId: Double): Unit = js.native
   def disable(tabId: Double, callback: js.Function0[Unit]): Unit = js.native
+  def disable(tabId: Null, callback: js.Function0[Unit]): Unit = js.native
   def disable(tabId: Unit, callback: js.Function0[Unit]): Unit = js.native
   @JSName("disable")
   def disable_Promise(): js.Promise[Unit] = js.native
@@ -25,8 +27,10 @@ trait TypeofbrowserAction extends StObject {
   def disable_Promise(tabId: Double): js.Promise[Unit] = js.native
   
   def enable(): Unit = js.native
+  def enable(callback: js.Function0[Unit]): Unit = js.native
   def enable(tabId: Double): Unit = js.native
   def enable(tabId: Double, callback: js.Function0[Unit]): Unit = js.native
+  def enable(tabId: Null, callback: js.Function0[Unit]): Unit = js.native
   def enable(tabId: Unit, callback: js.Function0[Unit]): Unit = js.native
   @JSName("enable")
   def enable_Promise(): js.Promise[Unit] = js.native
@@ -52,10 +56,8 @@ trait TypeofbrowserAction extends StObject {
   @JSName("setBadgeBackgroundColor")
   def setBadgeBackgroundColor_Promise(details: BadgeBackgroundColorDetails): js.Promise[Unit] = js.native
   
-  def setBadgeText(details: BadgeTextDetails): Unit = js.native
+  def setBadgeText(details: BadgeTextDetails): js.Promise[Unit] = js.native
   def setBadgeText(details: BadgeTextDetails, callback: js.Function0[Unit]): Unit = js.native
-  @JSName("setBadgeText")
-  def setBadgeText_Promise(details: BadgeTextDetails): js.Promise[Unit] = js.native
   
   def setIcon(details: TabIconDetails): Unit = js.native
   def setIcon(details: TabIconDetails, callback: js.Function): Unit = js.native
@@ -65,8 +67,6 @@ trait TypeofbrowserAction extends StObject {
   @JSName("setPopup")
   def setPopup_Promise(details: PopupDetails): js.Promise[Unit] = js.native
   
-  def setTitle(details: TitleDetails): Unit = js.native
+  def setTitle(details: TitleDetails): js.Promise[Unit] = js.native
   def setTitle(details: TitleDetails, callback: js.Function0[Unit]): Unit = js.native
-  @JSName("setTitle")
-  def setTitle_Promise(details: TitleDetails): js.Promise[Unit] = js.native
 }

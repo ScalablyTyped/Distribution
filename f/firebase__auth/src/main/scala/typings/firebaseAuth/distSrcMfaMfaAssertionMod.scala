@@ -6,6 +6,7 @@ import typings.firebaseAuth.distSrcModelAuthMod.AuthInternal
 import typings.firebaseAuth.distSrcModelPublicTypesMod.FactorId
 import typings.firebaseAuth.distSrcModelPublicTypesMod.MultiFactorAssertion
 import typings.firebaseAuth.firebaseAuthStrings.phone
+import typings.firebaseAuth.firebaseAuthStrings.totp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,7 +30,7 @@ object distSrcMfaMfaAssertionMod {
     
     /** The identifier of the second factor. */
     /* CompleteClass */
-    override val factorId: phone = js.native
+    override val factorId: phone | totp = js.native
     @JSName("factorId")
     val factorId_MultiFactorAssertionImpl: FactorId = js.native
   }

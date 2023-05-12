@@ -228,7 +228,13 @@ object anon {
     
     var onCancel: js.UndefOr[js.Function2[/* data */ CancellationData, /* actions */ js.Object, Unit]] = js.undefined
     
+    var onClick: js.UndefOr[js.Function0[Unit]] = js.undefined
+    
     var onError: js.UndefOr[js.Function1[/* error */ String, Unit]] = js.undefined
+    
+    var onInit: js.UndefOr[js.Function2[/* data */ AuthorizationData, /* actions */ js.Object, Unit]] = js.undefined
+    
+    var style: js.UndefOr[ButtonStyle] = js.undefined
   }
   object CreateBillingAgreement {
     
@@ -258,9 +264,21 @@ object anon {
       
       inline def setOnCancelUndefined: Self = StObject.set(x, "onCancel", js.undefined)
       
+      inline def setOnClick(value: () => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction0(value))
+      
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      
       inline def setOnError(value: /* error */ String => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
       
       inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
+      
+      inline def setOnInit(value: (/* data */ AuthorizationData, /* actions */ js.Object) => Unit): Self = StObject.set(x, "onInit", js.Any.fromFunction2(value))
+      
+      inline def setOnInitUndefined: Self = StObject.set(x, "onInit", js.undefined)
+      
+      inline def setStyle(value: ButtonStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
 }

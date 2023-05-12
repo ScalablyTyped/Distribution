@@ -9,48 +9,52 @@ trait JWTPayload
   extends StObject
      with /* propName */ StringDictionary[Any] {
   
-  /** JWT Audience [RFC7519#section-4.1.3](https://www.rfc-editor.org/rfc/rfc7519#section-4.1.3). */
+  /**
+    * JWT Audience
+    *
+    * @see {@link https://www.rfc-editor.org/rfc/rfc7519#section-4.1.3 RFC7519#section-4.1.3}
+    */
   var aud: js.UndefOr[String | js.Array[String]] = js.undefined
   
   /**
     * JWT Expiration Time
     *
-    * @see [RFC7519#section-4.1.4](https://www.rfc-editor.org/rfc/rfc7519#section-4.1.4)
+    * @see {@link https://www.rfc-editor.org/rfc/rfc7519#section-4.1.4 RFC7519#section-4.1.4}
     */
   var exp: js.UndefOr[Double] = js.undefined
   
   /**
     * JWT Issued At
     *
-    * @see [RFC7519#section-4.1.6](https://www.rfc-editor.org/rfc/rfc7519#section-4.1.6)
+    * @see {@link https://www.rfc-editor.org/rfc/rfc7519#section-4.1.6 RFC7519#section-4.1.6}
     */
   var iat: js.UndefOr[Double] = js.undefined
   
   /**
     * JWT Issuer
     *
-    * @see [RFC7519#section-4.1.1](https://www.rfc-editor.org/rfc/rfc7519#section-4.1.1)
+    * @see {@link https://www.rfc-editor.org/rfc/rfc7519#section-4.1.1 RFC7519#section-4.1.1}
     */
   var iss: js.UndefOr[String] = js.undefined
   
   /**
     * JWT ID
     *
-    * @see [RFC7519#section-4.1.7](https://www.rfc-editor.org/rfc/rfc7519#section-4.1.7)
+    * @see {@link https://www.rfc-editor.org/rfc/rfc7519#section-4.1.7 RFC7519#section-4.1.7}
     */
   var jti: js.UndefOr[String] = js.undefined
   
   /**
     * JWT Not Before
     *
-    * @see [RFC7519#section-4.1.5](https://www.rfc-editor.org/rfc/rfc7519#section-4.1.5)
+    * @see {@link https://www.rfc-editor.org/rfc/rfc7519#section-4.1.5 RFC7519#section-4.1.5}
     */
   var nbf: js.UndefOr[Double] = js.undefined
   
   /**
     * JWT Subject
     *
-    * @see [RFC7519#section-4.1.2](https://www.rfc-editor.org/rfc/rfc7519#section-4.1.2)
+    * @see {@link https://www.rfc-editor.org/rfc/rfc7519#section-4.1.2 RFC7519#section-4.1.2}
     */
   var sub: js.UndefOr[String] = js.undefined
 }

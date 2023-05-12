@@ -19,17 +19,17 @@ object PhrasingContentMap {
     delete: Delete,
     emphasis: Emphasis,
     footnote: Footnote,
-    footnotereference: FootnoteReference,
+    footnoteReference: FootnoteReference,
     html: HTML,
     image: Image,
-    imagereference: ImageReference,
-    inlinecode: InlineCode,
+    imageReference: ImageReference,
+    inlineCode: InlineCode,
     link: Link,
     linkReference: LinkReference,
     strong: Strong,
     text: Text
   ): PhrasingContentMap = {
-    val __obj = js.Dynamic.literal(break = break.asInstanceOf[js.Any], delete = delete.asInstanceOf[js.Any], emphasis = emphasis.asInstanceOf[js.Any], footnote = footnote.asInstanceOf[js.Any], footnotereference = footnotereference.asInstanceOf[js.Any], html = html.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], imagereference = imagereference.asInstanceOf[js.Any], inlinecode = inlinecode.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], linkReference = linkReference.asInstanceOf[js.Any], strong = strong.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(break = break.asInstanceOf[js.Any], delete = delete.asInstanceOf[js.Any], emphasis = emphasis.asInstanceOf[js.Any], footnote = footnote.asInstanceOf[js.Any], footnoteReference = footnoteReference.asInstanceOf[js.Any], html = html.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], imageReference = imageReference.asInstanceOf[js.Any], inlineCode = inlineCode.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], linkReference = linkReference.asInstanceOf[js.Any], strong = strong.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[PhrasingContentMap]
   }
   

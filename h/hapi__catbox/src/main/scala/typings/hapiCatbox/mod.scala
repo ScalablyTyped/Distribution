@@ -2,6 +2,7 @@ package typings.hapiCatbox
 
 import org.scalablytyped.runtime.Instantiable1
 import typings.hapiCatbox.hapiCatboxBooleans.`false`
+import typings.hapiPodium.mod.Podium
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,8 +14,9 @@ object mod {
   open class Client[T] protected ()
     extends StObject
        with ClientApi[T] {
-    def this(engine: EnginePrototypeOrObject) = this()
-    def this(engine: EnginePrototypeOrObject, options: ClientOptions) = this()
+    def this(engine: ClientApi[Any]) = this()
+    def this(engine: EnginePrototype[Any]) = this()
+    def this(engine: EnginePrototype[Any], options: ClientOptions) = this()
     
     /**
       * drop(key) - remove an item from cache where:
@@ -62,10 +64,22 @@ object mod {
     def this(options: O, cache: Client[T], segment: String) = this()
     
     /**
+      * a reference to the cache client if set.
+      */
+    var client: Client[T] = js.native
+    
+    /**
       * remove the item from cache where:
       * @param id the unique item identifier (within the policy segment).
       */
     def drop(id: Id): js.Promise[Unit] = js.native
+    
+    /**
+      * a podium event emitter, emitting 'error' events under the 'persist' (emits any cache errors
+      * thrown during the generation of new values as a result of a get() request) and 'generate'
+      * (emits any new value generation errors thrown as a result of a get() request) channels.
+      */
+    var events: Podium[Unit] = js.native
     
     /**
       *  retrieve an item from the cache. If the item is not
@@ -100,7 +114,7 @@ object mod {
     def set(id: Id, value: T, ttl: Double): js.Promise[Unit] = js.native
     
     /** an object with cache statistics */
-    def stats(): CacheStatisticsObject = js.native
+    var stats: CacheStatisticsObject = js.native
     
     /**
       * given a created timestamp in milliseconds, returns the time-to-live left
@@ -353,8 +367,6 @@ object mod {
   trait EnginePrototype[T]
     extends StObject
        with Instantiable1[/* settings */ ClientOptions, ClientApi[T]]
-  
-  type EnginePrototypeOrObject = EnginePrototype[Any] | ClientApi[Any]
   
   type GenerateFunc[T] = js.Function2[/* id */ Id, /* flags */ GenerateFuncFlags, js.Promise[T]]
   

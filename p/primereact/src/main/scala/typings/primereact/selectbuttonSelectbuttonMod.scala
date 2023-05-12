@@ -1,5 +1,6 @@
 package typings.primereact
 
+import typings.primereact.primereactStrings._empty
 import typings.primereact.primereactStrings.`additions removals`
 import typings.primereact.primereactStrings.`additions text`
 import typings.primereact.primereactStrings.`inline`
@@ -7,8 +8,10 @@ import typings.primereact.primereactStrings.`removals additions`
 import typings.primereact.primereactStrings.`removals text`
 import typings.primereact.primereactStrings.`text additions`
 import typings.primereact.primereactStrings.`text removals`
+import typings.primereact.primereactStrings.`use-credentials`
 import typings.primereact.primereactStrings.additions
 import typings.primereact.primereactStrings.all
+import typings.primereact.primereactStrings.anonymous
 import typings.primereact.primereactStrings.ascending
 import typings.primereact.primereactStrings.assertive
 import typings.primereact.primereactStrings.both
@@ -60,6 +63,7 @@ import typings.primereact.primereactStrings.yes
 import typings.primereact.selectitemSelectitemMod.SelectItem
 import typings.primereact.selectitemSelectitemMod.SelectItemOptionsType
 import typings.primereact.tooltipTooltipoptionsMod.TooltipOptions
+import typings.primereact.tsHelpersMod.FormEvent
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
@@ -75,7 +79,6 @@ import typings.react.mod.DragEvent
 import typings.react.mod.DragEventHandler
 import typings.react.mod.FocusEvent
 import typings.react.mod.FocusEventHandler
-import typings.react.mod.FormEvent
 import typings.react.mod.FormEventHandler
 import typings.react.mod.HTMLInputTypeAttribute
 import typings.react.mod.Key
@@ -100,6 +103,7 @@ import typings.react.mod.WheelEvent
 import typings.react.mod.WheelEventHandler
 import typings.std.Element
 import typings.std.Event
+import typings.std.FormData
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -113,80 +117,29 @@ object selectbuttonSelectbuttonMod {
     def this(props: SelectButtonProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: SelectButtonProps, context: Any) = this()
     
+    /**
+      * Used to focus the component.
+      */
+    def focus(): Unit = js.native
+    
+    /**
+      * Used to get container element.
+      * @return {HTMLDivElement} Container element
+      */
     def getElement(): HTMLDivElement = js.native
   }
   
-  trait SelectButtonChangeParams extends StObject {
-    
-    var originalEvent: SyntheticEvent[Element, Event]
-    
-    def preventDefault(): Unit
-    
-    def stopPropagation(): Unit
-    
-    var target: SelectButtonChangeTargetOptions
-    
-    var value: Any
-  }
-  object SelectButtonChangeParams {
-    
-    inline def apply(
-      originalEvent: SyntheticEvent[Element, Event],
-      preventDefault: () => Unit,
-      stopPropagation: () => Unit,
-      target: SelectButtonChangeTargetOptions,
-      value: Any
-    ): SelectButtonChangeParams = {
-      val __obj = js.Dynamic.literal(originalEvent = originalEvent.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.asInstanceOf[SelectButtonChangeParams]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: SelectButtonChangeParams] (val x: Self) extends AnyVal {
-      
-      inline def setOriginalEvent(value: SyntheticEvent[Element, Event]): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
-      
-      inline def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
-      
-      inline def setStopPropagation(value: () => Unit): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
-      
-      inline def setTarget(value: SelectButtonChangeTargetOptions): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
-      
-      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait SelectButtonChangeTargetOptions extends StObject {
-    
-    var id: String
-    
-    var name: String
-    
-    var value: Any
-  }
-  object SelectButtonChangeTargetOptions {
-    
-    inline def apply(id: String, name: String, value: Any): SelectButtonChangeTargetOptions = {
-      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.asInstanceOf[SelectButtonChangeTargetOptions]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: SelectButtonChangeTargetOptions] (val x: Self) extends AnyVal {
-      
-      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
-      
-      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-      
-      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  type SelectButtonOptionDisabledType = String | (js.Function1[/* option */ Any, Boolean])
+  /**
+    * Custom change event.
+    * @see {@link SelectButtonProps.onChange}
+    * @extends {FormEvent}
+    * @event
+    */
+  type SelectButtonChangeEvent = FormEvent[Any, SyntheticEvent[Element, Event]]
   
   /* Inlined parent std.Omit<react.react.DetailedHTMLProps<react.react.InputHTMLAttributes<std.HTMLDivElement>, std.HTMLDivElement>, 'unselectable' | 'onChange' | 'ref'> */
   trait SelectButtonProps extends StObject {
@@ -297,6 +250,9 @@ object selectbuttonSelectbuttonMod {
     
     var `aria-valuetext`: js.UndefOr[String] = js.undefined
     
+    /**
+      * Establishes relationships between the component and label(s) where its value should be one or more element IDs.
+      */
     var ariaLabelledBy: js.UndefOr[String] = js.undefined
     
     var autoCapitalize: js.UndefOr[String] = js.undefined
@@ -313,20 +269,29 @@ object selectbuttonSelectbuttonMod {
     
     var checked: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Used to get the child elements of the component.
+      * @readonly
+      */
     var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
     var color: js.UndefOr[String] = js.undefined
     
+    var content: js.UndefOr[String] = js.undefined
+    
     var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
     var contextMenu: js.UndefOr[String] = js.undefined
     
-    var crossOrigin: js.UndefOr[String] = js.undefined
+    var crossOrigin: js.UndefOr[anonymous | `use-credentials` | _empty] = js.undefined
     
     var dangerouslySetInnerHTML: js.UndefOr[Html] = js.undefined
     
+    /**
+      * A property to uniquely match the value in options for better performance.
+      */
     var dataKey: js.UndefOr[String] = js.undefined
     
     var datatype: js.UndefOr[String] = js.undefined
@@ -337,6 +302,10 @@ object selectbuttonSelectbuttonMod {
     
     var dir: js.UndefOr[String] = js.undefined
     
+    /**
+      * When present, it specifies that the element should be disabled.
+      * @defaultValue false
+      */
     var disabled: js.UndefOr[Boolean] = js.undefined
     
     var draggable: js.UndefOr[Booleanish] = js.undefined
@@ -345,7 +314,7 @@ object selectbuttonSelectbuttonMod {
     
     var form: js.UndefOr[String] = js.undefined
     
-    var formAction: js.UndefOr[String] = js.undefined
+    var formAction: js.UndefOr[String | (js.Function1[/* formData */ FormData, Unit])] = js.undefined
     
     var formEncType: js.UndefOr[String] = js.undefined
     
@@ -375,7 +344,11 @@ object selectbuttonSelectbuttonMod {
     
     var itemScope: js.UndefOr[Boolean] = js.undefined
     
-    var itemTemplate: js.UndefOr[js.Function1[/* option */ Any, ReactNode]] = js.undefined
+    /**
+      * Function that gets the option and returns the content.
+      * @param {*} item - Current item
+      */
+    var itemTemplate: js.UndefOr[js.Function1[/* item */ Any, ReactNode]] = js.undefined
     
     var itemType: js.UndefOr[String] = js.undefined
     
@@ -393,6 +366,10 @@ object selectbuttonSelectbuttonMod {
     
     var minLength: js.UndefOr[Double] = js.undefined
     
+    /**
+      * When specified, allows selecting multiple values.
+      * @defaultValue false
+      */
     var multiple: js.UndefOr[Boolean] = js.undefined
     
     var name: js.UndefOr[String] = js.undefined
@@ -417,7 +394,11 @@ object selectbuttonSelectbuttonMod {
     
     var onCanPlayThrough: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* e */ SelectButtonChangeParams, Unit]] = js.undefined
+    /**
+      * Callback to invoke on value change.
+      * @param {SelectButtonChangeEvent} event - Custom change event.
+      */
+    var onChange: js.UndefOr[js.Function1[/* event */ SelectButtonChangeEvent, Unit]] = js.undefined
     
     var onClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
@@ -559,12 +540,24 @@ object selectbuttonSelectbuttonMod {
     
     var onWheel: js.UndefOr[WheelEventHandler[HTMLDivElement]] = js.undefined
     
-    var optionDisabled: js.UndefOr[SelectButtonOptionDisabledType] = js.undefined
+    /**
+      * Property name or getter function to use as the disabled flag of an option, defaults to false when not defined.
+      */
+    var optionDisabled: js.UndefOr[String | (js.Function1[/* option */ Any, Boolean])] = js.undefined
     
+    /**
+      * Name of the label field of an option when an arbitrary objects instead of SelectItems are used as options.
+      */
     var optionLabel: js.UndefOr[String] = js.undefined
     
+    /**
+      * Name of the value field of an option when arbitrary objects are used as options instead of SelectItems.
+      */
     var optionValue: js.UndefOr[String] = js.undefined
     
+    /**
+      * An array of objects to display as the available options.
+      */
     var options: js.UndefOr[SelectItemOptionsType] = js.undefined
     
     var pattern: js.UndefOr[String] = js.undefined
@@ -579,11 +572,15 @@ object selectbuttonSelectbuttonMod {
     
     var readOnly: js.UndefOr[Boolean] = js.undefined
     
+    var rel: js.UndefOr[String] = js.undefined
+    
     var required: js.UndefOr[Boolean] = js.undefined
     
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
+    
+    var rev: js.UndefOr[String] = js.undefined
     
     var role: js.UndefOr[AriaRole] = js.undefined
     
@@ -605,12 +602,21 @@ object selectbuttonSelectbuttonMod {
     
     var suppressHydrationWarning: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Index of the element in tabbing order.
+      */
     var tabIndex: js.UndefOr[Double] = js.undefined
     
     var title: js.UndefOr[String] = js.undefined
     
+    /**
+      * Content of the tooltip.
+      */
     var tooltip: js.UndefOr[String] = js.undefined
     
+    /**
+      * Configuration of the tooltip, refer to the tooltip documentation for more information.
+      */
     var tooltipOptions: js.UndefOr[TooltipOptions] = js.undefined
     
     var translate: js.UndefOr[yes | no] = js.undefined
@@ -619,8 +625,15 @@ object selectbuttonSelectbuttonMod {
     
     var typeof: js.UndefOr[String] = js.undefined
     
+    /**
+      * Whether selection can be cleared.
+      * @defaultValue true
+      */
     var unselectable: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Value of the component.
+      */
     var value: js.UndefOr[Any] = js.undefined
     
     var vocab: js.UndefOr[String] = js.undefined
@@ -891,15 +904,19 @@ object selectbuttonSelectbuttonMod {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
       inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
       inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
       inline def setContextMenuUndefined: Self = StObject.set(x, "contextMenu", js.undefined)
       
-      inline def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+      inline def setCrossOrigin(value: anonymous | `use-credentials` | _empty): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
       
       inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
       
@@ -943,7 +960,9 @@ object selectbuttonSelectbuttonMod {
       
       inline def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
       
-      inline def setFormAction(value: String): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+      inline def setFormAction(value: String | (js.Function1[/* formData */ FormData, Unit])): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+      
+      inline def setFormActionFunction1(value: /* formData */ FormData => Unit): Self = StObject.set(x, "formAction", js.Any.fromFunction1(value))
       
       inline def setFormActionUndefined: Self = StObject.set(x, "formAction", js.undefined)
       
@@ -1005,7 +1024,7 @@ object selectbuttonSelectbuttonMod {
       
       inline def setItemScopeUndefined: Self = StObject.set(x, "itemScope", js.undefined)
       
-      inline def setItemTemplate(value: /* option */ Any => ReactNode): Self = StObject.set(x, "itemTemplate", js.Any.fromFunction1(value))
+      inline def setItemTemplate(value: /* item */ Any => ReactNode): Self = StObject.set(x, "itemTemplate", js.Any.fromFunction1(value))
       
       inline def setItemTemplateUndefined: Self = StObject.set(x, "itemTemplate", js.undefined)
       
@@ -1075,7 +1094,7 @@ object selectbuttonSelectbuttonMod {
       
       inline def setOnAuxClickUndefined: Self = StObject.set(x, "onAuxClick", js.undefined)
       
-      inline def setOnBeforeInput(value: FormEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onBeforeInput", js.Any.fromFunction1(value))
+      inline def setOnBeforeInput(value: typings.react.mod.FormEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onBeforeInput", js.Any.fromFunction1(value))
       
       inline def setOnBeforeInputUndefined: Self = StObject.set(x, "onBeforeInput", js.undefined)
       
@@ -1091,7 +1110,7 @@ object selectbuttonSelectbuttonMod {
       
       inline def setOnCanPlayUndefined: Self = StObject.set(x, "onCanPlay", js.undefined)
       
-      inline def setOnChange(value: /* e */ SelectButtonChangeParams => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* event */ SelectButtonChangeEvent => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
@@ -1183,11 +1202,11 @@ object selectbuttonSelectbuttonMod {
       
       inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
-      inline def setOnInput(value: FormEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onInput", js.Any.fromFunction1(value))
+      inline def setOnInput(value: typings.react.mod.FormEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onInput", js.Any.fromFunction1(value))
       
       inline def setOnInputUndefined: Self = StObject.set(x, "onInput", js.undefined)
       
-      inline def setOnInvalid(value: FormEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onInvalid", js.Any.fromFunction1(value))
+      inline def setOnInvalid(value: typings.react.mod.FormEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onInvalid", js.Any.fromFunction1(value))
       
       inline def setOnInvalidUndefined: Self = StObject.set(x, "onInvalid", js.undefined)
       
@@ -1303,7 +1322,7 @@ object selectbuttonSelectbuttonMod {
       
       inline def setOnRateChangeUndefined: Self = StObject.set(x, "onRateChange", js.undefined)
       
-      inline def setOnReset(value: FormEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
+      inline def setOnReset(value: typings.react.mod.FormEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
       
       inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
       
@@ -1331,7 +1350,7 @@ object selectbuttonSelectbuttonMod {
       
       inline def setOnStalledUndefined: Self = StObject.set(x, "onStalled", js.undefined)
       
-      inline def setOnSubmit(value: FormEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onSubmit", js.Any.fromFunction1(value))
+      inline def setOnSubmit(value: typings.react.mod.FormEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onSubmit", js.Any.fromFunction1(value))
       
       inline def setOnSubmitUndefined: Self = StObject.set(x, "onSubmit", js.undefined)
       
@@ -1375,7 +1394,7 @@ object selectbuttonSelectbuttonMod {
       
       inline def setOnWheelUndefined: Self = StObject.set(x, "onWheel", js.undefined)
       
-      inline def setOptionDisabled(value: SelectButtonOptionDisabledType): Self = StObject.set(x, "optionDisabled", value.asInstanceOf[js.Any])
+      inline def setOptionDisabled(value: String | (js.Function1[/* option */ Any, Boolean])): Self = StObject.set(x, "optionDisabled", value.asInstanceOf[js.Any])
       
       inline def setOptionDisabledFunction1(value: /* option */ Any => Boolean): Self = StObject.set(x, "optionDisabled", js.Any.fromFunction1(value))
       
@@ -1419,6 +1438,10 @@ object selectbuttonSelectbuttonMod {
       
       inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
       
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      
+      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+      
       inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
       
       inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
@@ -1430,6 +1453,10 @@ object selectbuttonSelectbuttonMod {
       inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+      
+      inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+      
+      inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
       
       inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       

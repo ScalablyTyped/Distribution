@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "yargs" : "17.7.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "yargs" : "17.7.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -1,7 +1,7 @@
 
 # Scala.js typings for aws-crypto__util
 
-Typings are for version 2.0.2
+Typings are for version 4.0.0
 
 ## Library description:
 Helper functions

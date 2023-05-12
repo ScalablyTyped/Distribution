@@ -248,7 +248,7 @@ object mod {
     
     /** Create a concat-stream and pipe output from markdown-pdf to it. The callback function cb will be invoked when the buffer has been created. */
     def buffer(opts: Any): Unit = js.native
-    def buffer(opts: Any, callback: js.Function0[Unit]): Unit = js.native
+    def buffer(opts: Any, callback: js.Function2[/* err */ Any, /* buffer */ js.typedarray.ArrayBuffer, Unit]): Unit = js.native
     
     /**
       * Create a writeable stream to path and pipe output from markdown-pdf to it.

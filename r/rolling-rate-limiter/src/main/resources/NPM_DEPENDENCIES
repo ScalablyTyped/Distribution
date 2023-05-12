@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "rolling-rate-limiter" : "0.3.0"
+      "rolling-rate-limiter" : "0.4.2"
     }
   ],
   "test-dependencies" : [
     {
-      "rolling-rate-limiter" : "0.3.0"
+      "rolling-rate-limiter" : "0.4.2"
     }
   ],
   "compile-devDependencies" : [

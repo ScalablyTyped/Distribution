@@ -1,5 +1,6 @@
 package typings.wordpressElement
 
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,13 +32,13 @@ object buildTypesCreateInterpolateElementMod {
     * }
     * ```
     *
-    * @param {string} interpolatedString The interpolation string to be parsed.
-    * @param {Object} conversionMap      The map used to convert the string to
-    *                                    a react element.
+    * @param {string}                    interpolatedString The interpolation string to be parsed.
+    * @param {Record<string, WPElement>} conversionMap      The map used to convert the string to
+    *                                                       a react element.
     * @throws {TypeError}
     * @return {WPElement}  A wp element.
     */
-  inline def default(interpolatedString: String, conversionMap: Any): WPElement = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(interpolatedString.asInstanceOf[js.Any], conversionMap.asInstanceOf[js.Any])).asInstanceOf[WPElement]
+  inline def default(interpolatedString: String, conversionMap: Record[String, WPElement]): WPElement = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(interpolatedString.asInstanceOf[js.Any], conversionMap.asInstanceOf[js.Any])).asInstanceOf[WPElement]
   
   trait Frame extends StObject {
     

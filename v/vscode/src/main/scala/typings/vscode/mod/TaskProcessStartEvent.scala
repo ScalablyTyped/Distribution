@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TaskProcessStartEvent extends StObject {
   
   /**
-    * The task execution for which the process got started.
-    */
+  		 * The task execution for which the process got started.
+  		 */
   val execution: TaskExecution
   
   /**
-    * The underlying process id.
-    */
+  		 * The underlying process id.
+  		 */
   val processId: Double
 }
 object TaskProcessStartEvent {

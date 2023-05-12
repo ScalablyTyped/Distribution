@@ -2,7 +2,7 @@ package typings.libp2pPeerRecord
 
 import typings.libp2pInterfacePeerId.mod.PeerId
 import typings.libp2pInterfaceRecord.mod.Record
-import typings.libp2pPeerRecord.distSrcEnvelopeMod.EnvelopeInit
+import typings.libp2pPeerRecord.distSrcEnvelopeMod.RecordEnvelopeInit
 import typings.libp2pPeerRecord.distSrcPeerRecordMod.PeerRecordInit
 import typings.uint8arraylist.mod.Uint8ArrayList
 import org.scalablytyped.runtime.StObject
@@ -49,7 +49,7 @@ object mod {
       * The Envelope is responsible for keeping an arbitrary signed record
       * by a libp2p peer.
       */
-    def this(init: EnvelopeInit) = this()
+    def this(init: RecordEnvelopeInit) = this()
   }
   /* static members */
   object RecordEnvelope {

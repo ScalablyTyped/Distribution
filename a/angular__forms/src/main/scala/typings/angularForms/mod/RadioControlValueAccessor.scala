@@ -39,6 +39,8 @@ open class RadioControlValueAccessor protected ()
   /* private */ /* CompleteClass */
   var _renderer: Any = js.native
   
+  /* private */ var callSetDisabledState: Any = js.native
+  
   /**
     * Sets the "value" on the radio input element and unchecks it.
     *
@@ -120,6 +122,8 @@ open class RadioControlValueAccessor protected ()
   /* CompleteClass */
   override def setDisabledState(isDisabled: Boolean): Unit = js.native
   
+  /* private */ var setDisabledStateFired: Any = js.native
+  
   /**
     * Helper method that sets a property on a target element using the current Renderer
     * implementation.
@@ -177,7 +181,8 @@ object RadioControlValueAccessor {
     js.Object, 
     scala.Nothing, 
     scala.Nothing, 
-    `false`
+    `false`, 
+    scala.Nothing
   ] = js.native
   inline def ɵdir_=(
     x: ɵɵDirectiveDeclaration[
@@ -188,7 +193,8 @@ object RadioControlValueAccessor {
       js.Object, 
       scala.Nothing, 
       scala.Nothing, 
-      `false`
+      `false`, 
+      scala.Nothing
     ]
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275dir")(x.asInstanceOf[js.Any])
   

@@ -12,7 +12,7 @@ trait StartGameSessionPlacementInput extends StObject {
   var DesiredPlayerSessions: js.UndefOr[DesiredPlayerSessionList] = js.undefined
   
   /**
-    * A set of custom properties for a game session, formatted as key:value pairs. These properties are passed to a game server process in the GameSession object with a request to start a new game session (see Start a Game Session).
+    * A set of custom properties for a game session, formatted as key:value pairs. These properties are passed to a game server process with a request to start a new game session (see Start a Game Session).
     */
   var GameProperties: js.UndefOr[GamePropertyList] = js.undefined
   
@@ -37,12 +37,12 @@ trait StartGameSessionPlacementInput extends StObject {
   var MaximumPlayerSessionCount: WholeNumber
   
   /**
-    * A unique identifier to assign to the new game session placement. This value is developer-defined. The value must be unique across all Regions and cannot be reused unless you are resubmitting a canceled or timed-out placement request.
+    * A unique identifier to assign to the new game session placement. This value is developer-defined. The value must be unique across all Regions and cannot be reused.
     */
   var PlacementId: IdStringModel
   
   /**
-    * A set of values, expressed in milliseconds, that indicates the amount of latency that a player experiences when connected to @aws; Regions. This information is used to try to place the new game session where it can offer the best possible gameplay experience for the players. 
+    * A set of values, expressed in milliseconds, that indicates the amount of latency that a player experiences when connected to Amazon Web Services Regions. This information is used to try to place the new game session where it can offer the best possible gameplay experience for the players. 
     */
   var PlayerLatencies: js.UndefOr[PlayerLatencyList] = js.undefined
 }

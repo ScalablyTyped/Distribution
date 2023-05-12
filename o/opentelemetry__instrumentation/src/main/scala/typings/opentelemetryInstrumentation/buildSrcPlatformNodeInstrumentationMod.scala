@@ -24,6 +24,8 @@ object buildSrcPlatformNodeInstrumentationMod {
     
     /* private */ var _onRequire: Any = js.native
     
+    /* private */ var _requireInTheMiddleSingleton: Any = js.native
+    
     /* private */ var _warnOnPreloadedModules: Any = js.native
     
     def isEnabled(): Boolean = js.native

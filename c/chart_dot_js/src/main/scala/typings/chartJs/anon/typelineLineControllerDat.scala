@@ -10,55 +10,54 @@ import typings.chartJs.chartJsStrings.middle
 import typings.chartJs.chartJsStrings.monotone
 import typings.chartJs.chartJsStrings.x
 import typings.chartJs.chartJsStrings.y
-import typings.chartJs.mod.AnimationsSpec
-import typings.chartJs.mod.ComplexFillTarget
-import typings.chartJs.mod.FillTarget
-import typings.chartJs.mod.Scriptable
-import typings.chartJs.mod.ScriptableAndArray
-import typings.chartJs.mod.ScriptableContext
-import typings.chartJs.mod.TransitionsSpec
-import typings.chartJs.typesBasicMod.AnyObject
-import typings.chartJs.typesGeometricMod.ChartArea
+import typings.chartJs.distTypesBasicMod.AnyObject
+import typings.chartJs.distTypesGeometricMod.ChartArea
+import typings.chartJs.distTypesIndexMod.AnimationsSpec
+import typings.chartJs.distTypesIndexMod.ComplexFillTarget
+import typings.chartJs.distTypesIndexMod.FillTarget
+import typings.chartJs.distTypesIndexMod.ScriptableAndArray
+import typings.chartJs.distTypesIndexMod.ScriptableContext
+import typings.chartJs.distTypesIndexMod.TransitionsSpec
 import typings.std.CanvasLineCap
 import typings.std.CanvasLineJoin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined {  type :'line'} & chart.js.chart.js.LineControllerDatasetOptions & chart.js.chart.js.FillerControllerDatasetOptions */
+/* Inlined {  type :'line'} & chart.js.chart.js/dist/types/index.LineControllerDatasetOptions & chart.js.chart.js/dist/types/index.FillerControllerDatasetOptions */
 trait typelineLineControllerDat extends StObject {
   
   var animation: `false` | AnimationSpeclineonProgre
   
   var animations: AnimationsSpec[line]
   
-  var backgroundColor: ScriptableAndArray[typings.chartJs.typesColorMod.Color, ScriptableContext[line]]
+  var backgroundColor: ScriptableAndArray[typings.chartJs.distTypesColorMod.Color, ScriptableContext[line]]
   
-  var borderCapStyle: Scriptable[CanvasLineCap, ScriptableContext[line]]
+  var borderCapStyle: typings.chartJs.distTypesIndexMod.Scriptable[CanvasLineCap, ScriptableContext[line]]
   
-  var borderColor: ScriptableAndArray[typings.chartJs.typesColorMod.Color, ScriptableContext[line]]
+  var borderColor: ScriptableAndArray[typings.chartJs.distTypesColorMod.Color, ScriptableContext[line]]
   
-  var borderDash: Scriptable[js.Array[Double], ScriptableContext[line]]
+  var borderDash: typings.chartJs.distTypesIndexMod.Scriptable[js.Array[Double], ScriptableContext[line]]
   
-  var borderDashOffset: Scriptable[Double, ScriptableContext[line]]
+  var borderDashOffset: typings.chartJs.distTypesIndexMod.Scriptable[Double, ScriptableContext[line]]
   
-  var borderJoinStyle: Scriptable[CanvasLineJoin, ScriptableContext[line]]
+  var borderJoinStyle: typings.chartJs.distTypesIndexMod.Scriptable[CanvasLineJoin, ScriptableContext[line]]
   
   var borderWidth: ScriptableAndArray[Double, ScriptableContext[line]]
   
-  var capBezierPoints: Scriptable[Boolean, ScriptableContext[line]]
+  var capBezierPoints: typings.chartJs.distTypesIndexMod.Scriptable[Boolean, ScriptableContext[line]]
   
   /**
-    * How to clip relative to chartArea. Positive value allows overflow, negative value clips that many pixels inside chartArea. 0 = clip at chartArea. Clipping can also be configured per side: clip: {left: 5, top: false, right: -2, bottom: 0}
+    * How to clip relative to chartArea. Positive value allows overflow, negative value clips that many pixels inside chartArea. 0 = clip at chartArea. Clipping can also be configured per side: `clip: {left: 5, top: false, right: -2, bottom: 0}`
     */
   var clip: Double | ChartArea | `false`
   
-  var cubicInterpolationMode: Scriptable[default | monotone, ScriptableContext[line]]
+  var cubicInterpolationMode: typings.chartJs.distTypesIndexMod.Scriptable[default | monotone, ScriptableContext[line]]
   
   /**
     * Both line and radar charts support a fill option on the dataset object which can be used to create area between two datasets or a dataset and a boundary, i.e. the scale origin, start or end
     */
-  var fill: Scriptable[FillTarget | ComplexFillTarget, ScriptableContext[line]]
+  var fill: typings.chartJs.distTypesIndexMod.Scriptable[FillTarget | ComplexFillTarget, ScriptableContext[line]]
   
   /**
     * Configures the visibility state of the dataset. Set it to true, to hide the dataset from the chart.
@@ -66,17 +65,17 @@ trait typelineLineControllerDat extends StObject {
     */
   var hidden: Boolean
   
-  var hoverBackgroundColor: ScriptableAndArray[typings.chartJs.typesColorMod.Color, ScriptableContext[line]]
+  var hoverBackgroundColor: ScriptableAndArray[typings.chartJs.distTypesColorMod.Color, ScriptableContext[line]]
   
-  var hoverBorderCapStyle: Scriptable[CanvasLineCap, ScriptableContext[line]]
+  var hoverBorderCapStyle: typings.chartJs.distTypesIndexMod.Scriptable[CanvasLineCap, ScriptableContext[line]]
   
-  var hoverBorderColor: ScriptableAndArray[typings.chartJs.typesColorMod.Color, ScriptableContext[line]]
+  var hoverBorderColor: ScriptableAndArray[typings.chartJs.distTypesColorMod.Color, ScriptableContext[line]]
   
-  var hoverBorderDash: Scriptable[js.Array[Double], ScriptableContext[line]]
+  var hoverBorderDash: typings.chartJs.distTypesIndexMod.Scriptable[js.Array[Double], ScriptableContext[line]]
   
-  var hoverBorderDashOffset: Scriptable[Double, ScriptableContext[line]]
+  var hoverBorderDashOffset: typings.chartJs.distTypesIndexMod.Scriptable[Double, ScriptableContext[line]]
   
-  var hoverBorderJoinStyle: Scriptable[CanvasLineJoin, ScriptableContext[line]]
+  var hoverBorderJoinStyle: typings.chartJs.distTypesIndexMod.Scriptable[CanvasLineJoin, ScriptableContext[line]]
   
   var hoverBorderWidth: ScriptableAndArray[Double, ScriptableContext[line]]
   
@@ -106,17 +105,17 @@ trait typelineLineControllerDat extends StObject {
     */
   var parsing: StringDictionary[String] | `false`
   
-  var pointBackgroundColor: ScriptableAndArray[typings.chartJs.typesColorMod.Color, ScriptableContext[line]]
+  var pointBackgroundColor: ScriptableAndArray[typings.chartJs.distTypesColorMod.Color, ScriptableContext[line]]
   
-  var pointBorderColor: ScriptableAndArray[typings.chartJs.typesColorMod.Color, ScriptableContext[line]]
+  var pointBorderColor: ScriptableAndArray[typings.chartJs.distTypesColorMod.Color, ScriptableContext[line]]
   
   var pointBorderWidth: ScriptableAndArray[Double, ScriptableContext[line]]
   
   var pointHitRadius: ScriptableAndArray[Double, ScriptableContext[line]]
   
-  var pointHoverBackgroundColor: ScriptableAndArray[typings.chartJs.typesColorMod.Color, ScriptableContext[line]]
+  var pointHoverBackgroundColor: ScriptableAndArray[typings.chartJs.distTypesColorMod.Color, ScriptableContext[line]]
   
-  var pointHoverBorderColor: ScriptableAndArray[typings.chartJs.typesColorMod.Color, ScriptableContext[line]]
+  var pointHoverBorderColor: ScriptableAndArray[typings.chartJs.distTypesColorMod.Color, ScriptableContext[line]]
   
   var pointHoverBorderWidth: ScriptableAndArray[Double, ScriptableContext[line]]
   
@@ -126,9 +125,9 @@ trait typelineLineControllerDat extends StObject {
   
   var pointRotation: ScriptableAndArray[Double, ScriptableContext[line]]
   
-  var pointStyle: ScriptableAndArray[typings.chartJs.mod.PointStyle, ScriptableContext[line]]
+  var pointStyle: ScriptableAndArray[typings.chartJs.distTypesIndexMod.PointStyle, ScriptableContext[line]]
   
-  var segment: Scriptable[BackgroundColor, ScriptableContext[line]]
+  var segment: typings.chartJs.distTypesIndexMod.Scriptable[BorderCapStyle, ScriptableContext[line]]
   
   var showLine: Boolean
   
@@ -143,9 +142,9 @@ trait typelineLineControllerDat extends StObject {
     */
   var stack: String
   
-  var stepped: Scriptable[before | after | middle | Boolean, ScriptableContext[line]]
+  var stepped: typings.chartJs.distTypesIndexMod.Scriptable[before | after | middle | Boolean, ScriptableContext[line]]
   
-  var tension: Scriptable[Double, ScriptableContext[line]]
+  var tension: typings.chartJs.distTypesIndexMod.Scriptable[Double, ScriptableContext[line]]
   
   var transitions: TransitionsSpec[line]
   
@@ -166,47 +165,47 @@ object typelineLineControllerDat {
   inline def apply(
     animation: `false` | AnimationSpeclineonProgre,
     animations: AnimationsSpec[line],
-    backgroundColor: ScriptableAndArray[typings.chartJs.typesColorMod.Color, ScriptableContext[line]],
-    borderCapStyle: Scriptable[CanvasLineCap, ScriptableContext[line]],
-    borderColor: ScriptableAndArray[typings.chartJs.typesColorMod.Color, ScriptableContext[line]],
-    borderDash: Scriptable[js.Array[Double], ScriptableContext[line]],
-    borderDashOffset: Scriptable[Double, ScriptableContext[line]],
-    borderJoinStyle: Scriptable[CanvasLineJoin, ScriptableContext[line]],
+    backgroundColor: ScriptableAndArray[typings.chartJs.distTypesColorMod.Color, ScriptableContext[line]],
+    borderCapStyle: typings.chartJs.distTypesIndexMod.Scriptable[CanvasLineCap, ScriptableContext[line]],
+    borderColor: ScriptableAndArray[typings.chartJs.distTypesColorMod.Color, ScriptableContext[line]],
+    borderDash: typings.chartJs.distTypesIndexMod.Scriptable[js.Array[Double], ScriptableContext[line]],
+    borderDashOffset: typings.chartJs.distTypesIndexMod.Scriptable[Double, ScriptableContext[line]],
+    borderJoinStyle: typings.chartJs.distTypesIndexMod.Scriptable[CanvasLineJoin, ScriptableContext[line]],
     borderWidth: ScriptableAndArray[Double, ScriptableContext[line]],
-    capBezierPoints: Scriptable[Boolean, ScriptableContext[line]],
+    capBezierPoints: typings.chartJs.distTypesIndexMod.Scriptable[Boolean, ScriptableContext[line]],
     clip: Double | ChartArea | `false`,
-    cubicInterpolationMode: Scriptable[default | monotone, ScriptableContext[line]],
-    fill: Scriptable[FillTarget | ComplexFillTarget, ScriptableContext[line]],
+    cubicInterpolationMode: typings.chartJs.distTypesIndexMod.Scriptable[default | monotone, ScriptableContext[line]],
+    fill: typings.chartJs.distTypesIndexMod.Scriptable[FillTarget | ComplexFillTarget, ScriptableContext[line]],
     hidden: Boolean,
-    hoverBackgroundColor: ScriptableAndArray[typings.chartJs.typesColorMod.Color, ScriptableContext[line]],
-    hoverBorderCapStyle: Scriptable[CanvasLineCap, ScriptableContext[line]],
-    hoverBorderColor: ScriptableAndArray[typings.chartJs.typesColorMod.Color, ScriptableContext[line]],
-    hoverBorderDash: Scriptable[js.Array[Double], ScriptableContext[line]],
-    hoverBorderDashOffset: Scriptable[Double, ScriptableContext[line]],
-    hoverBorderJoinStyle: Scriptable[CanvasLineJoin, ScriptableContext[line]],
+    hoverBackgroundColor: ScriptableAndArray[typings.chartJs.distTypesColorMod.Color, ScriptableContext[line]],
+    hoverBorderCapStyle: typings.chartJs.distTypesIndexMod.Scriptable[CanvasLineCap, ScriptableContext[line]],
+    hoverBorderColor: ScriptableAndArray[typings.chartJs.distTypesColorMod.Color, ScriptableContext[line]],
+    hoverBorderDash: typings.chartJs.distTypesIndexMod.Scriptable[js.Array[Double], ScriptableContext[line]],
+    hoverBorderDashOffset: typings.chartJs.distTypesIndexMod.Scriptable[Double, ScriptableContext[line]],
+    hoverBorderJoinStyle: typings.chartJs.distTypesIndexMod.Scriptable[CanvasLineJoin, ScriptableContext[line]],
     hoverBorderWidth: ScriptableAndArray[Double, ScriptableContext[line]],
     indexAxis: x | y,
     label: String,
     normalized: Boolean,
     order: Double,
     parsing: StringDictionary[String] | `false`,
-    pointBackgroundColor: ScriptableAndArray[typings.chartJs.typesColorMod.Color, ScriptableContext[line]],
-    pointBorderColor: ScriptableAndArray[typings.chartJs.typesColorMod.Color, ScriptableContext[line]],
+    pointBackgroundColor: ScriptableAndArray[typings.chartJs.distTypesColorMod.Color, ScriptableContext[line]],
+    pointBorderColor: ScriptableAndArray[typings.chartJs.distTypesColorMod.Color, ScriptableContext[line]],
     pointBorderWidth: ScriptableAndArray[Double, ScriptableContext[line]],
     pointHitRadius: ScriptableAndArray[Double, ScriptableContext[line]],
-    pointHoverBackgroundColor: ScriptableAndArray[typings.chartJs.typesColorMod.Color, ScriptableContext[line]],
-    pointHoverBorderColor: ScriptableAndArray[typings.chartJs.typesColorMod.Color, ScriptableContext[line]],
+    pointHoverBackgroundColor: ScriptableAndArray[typings.chartJs.distTypesColorMod.Color, ScriptableContext[line]],
+    pointHoverBorderColor: ScriptableAndArray[typings.chartJs.distTypesColorMod.Color, ScriptableContext[line]],
     pointHoverBorderWidth: ScriptableAndArray[Double, ScriptableContext[line]],
     pointHoverRadius: ScriptableAndArray[Double, ScriptableContext[line]],
     pointRadius: ScriptableAndArray[Double, ScriptableContext[line]],
     pointRotation: ScriptableAndArray[Double, ScriptableContext[line]],
-    pointStyle: ScriptableAndArray[typings.chartJs.mod.PointStyle, ScriptableContext[line]],
-    segment: Scriptable[BackgroundColor, ScriptableContext[line]],
+    pointStyle: ScriptableAndArray[typings.chartJs.distTypesIndexMod.PointStyle, ScriptableContext[line]],
+    segment: typings.chartJs.distTypesIndexMod.Scriptable[BorderCapStyle, ScriptableContext[line]],
     showLine: Boolean,
     spanGaps: Boolean | Double,
     stack: String,
-    stepped: Scriptable[before | after | middle | Boolean, ScriptableContext[line]],
-    tension: Scriptable[Double, ScriptableContext[line]],
+    stepped: typings.chartJs.distTypesIndexMod.Scriptable[before | after | middle | Boolean, ScriptableContext[line]],
+    tension: typings.chartJs.distTypesIndexMod.Scriptable[Double, ScriptableContext[line]],
     transitions: TransitionsSpec[line],
     xAxisID: String,
     yAxisID: String
@@ -223,37 +222,37 @@ object typelineLineControllerDat {
     
     inline def setAnimations(value: AnimationsSpec[line]): Self = StObject.set(x, "animations", value.asInstanceOf[js.Any])
     
-    inline def setBackgroundColor(value: ScriptableAndArray[typings.chartJs.typesColorMod.Color, ScriptableContext[line]]): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    inline def setBackgroundColor(value: ScriptableAndArray[typings.chartJs.distTypesColorMod.Color, ScriptableContext[line]]): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     inline def setBackgroundColorFunction2(
-      value: (ScriptableContext[line], /* options */ AnyObject) => js.UndefOr[typings.chartJs.typesColorMod.Color]
+      value: (ScriptableContext[line], /* options */ AnyObject) => js.UndefOr[typings.chartJs.distTypesColorMod.Color]
     ): Self = StObject.set(x, "backgroundColor", js.Any.fromFunction2(value))
     
-    inline def setBackgroundColorVarargs(value: typings.chartJs.typesColorMod.Color*): Self = StObject.set(x, "backgroundColor", js.Array(value*))
+    inline def setBackgroundColorVarargs(value: typings.chartJs.distTypesColorMod.Color*): Self = StObject.set(x, "backgroundColor", js.Array(value*))
     
-    inline def setBorderCapStyle(value: Scriptable[CanvasLineCap, ScriptableContext[line]]): Self = StObject.set(x, "borderCapStyle", value.asInstanceOf[js.Any])
+    inline def setBorderCapStyle(value: typings.chartJs.distTypesIndexMod.Scriptable[CanvasLineCap, ScriptableContext[line]]): Self = StObject.set(x, "borderCapStyle", value.asInstanceOf[js.Any])
     
     inline def setBorderCapStyleFunction2(value: (ScriptableContext[line], /* options */ AnyObject) => js.UndefOr[CanvasLineCap]): Self = StObject.set(x, "borderCapStyle", js.Any.fromFunction2(value))
     
-    inline def setBorderColor(value: ScriptableAndArray[typings.chartJs.typesColorMod.Color, ScriptableContext[line]]): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
+    inline def setBorderColor(value: ScriptableAndArray[typings.chartJs.distTypesColorMod.Color, ScriptableContext[line]]): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     
     inline def setBorderColorFunction2(
-      value: (ScriptableContext[line], /* options */ AnyObject) => js.UndefOr[typings.chartJs.typesColorMod.Color]
+      value: (ScriptableContext[line], /* options */ AnyObject) => js.UndefOr[typings.chartJs.distTypesColorMod.Color]
     ): Self = StObject.set(x, "borderColor", js.Any.fromFunction2(value))
     
-    inline def setBorderColorVarargs(value: typings.chartJs.typesColorMod.Color*): Self = StObject.set(x, "borderColor", js.Array(value*))
+    inline def setBorderColorVarargs(value: typings.chartJs.distTypesColorMod.Color*): Self = StObject.set(x, "borderColor", js.Array(value*))
     
-    inline def setBorderDash(value: Scriptable[js.Array[Double], ScriptableContext[line]]): Self = StObject.set(x, "borderDash", value.asInstanceOf[js.Any])
+    inline def setBorderDash(value: typings.chartJs.distTypesIndexMod.Scriptable[js.Array[Double], ScriptableContext[line]]): Self = StObject.set(x, "borderDash", value.asInstanceOf[js.Any])
     
     inline def setBorderDashFunction2(value: (ScriptableContext[line], /* options */ AnyObject) => js.UndefOr[js.Array[Double]]): Self = StObject.set(x, "borderDash", js.Any.fromFunction2(value))
     
-    inline def setBorderDashOffset(value: Scriptable[Double, ScriptableContext[line]]): Self = StObject.set(x, "borderDashOffset", value.asInstanceOf[js.Any])
+    inline def setBorderDashOffset(value: typings.chartJs.distTypesIndexMod.Scriptable[Double, ScriptableContext[line]]): Self = StObject.set(x, "borderDashOffset", value.asInstanceOf[js.Any])
     
     inline def setBorderDashOffsetFunction2(value: (ScriptableContext[line], /* options */ AnyObject) => js.UndefOr[Double]): Self = StObject.set(x, "borderDashOffset", js.Any.fromFunction2(value))
     
     inline def setBorderDashVarargs(value: Double*): Self = StObject.set(x, "borderDash", js.Array(value*))
     
-    inline def setBorderJoinStyle(value: Scriptable[CanvasLineJoin, ScriptableContext[line]]): Self = StObject.set(x, "borderJoinStyle", value.asInstanceOf[js.Any])
+    inline def setBorderJoinStyle(value: typings.chartJs.distTypesIndexMod.Scriptable[CanvasLineJoin, ScriptableContext[line]]): Self = StObject.set(x, "borderJoinStyle", value.asInstanceOf[js.Any])
     
     inline def setBorderJoinStyleFunction2(value: (ScriptableContext[line], /* options */ AnyObject) => js.UndefOr[CanvasLineJoin]): Self = StObject.set(x, "borderJoinStyle", js.Any.fromFunction2(value))
     
@@ -263,17 +262,19 @@ object typelineLineControllerDat {
     
     inline def setBorderWidthVarargs(value: Double*): Self = StObject.set(x, "borderWidth", js.Array(value*))
     
-    inline def setCapBezierPoints(value: Scriptable[Boolean, ScriptableContext[line]]): Self = StObject.set(x, "capBezierPoints", value.asInstanceOf[js.Any])
+    inline def setCapBezierPoints(value: typings.chartJs.distTypesIndexMod.Scriptable[Boolean, ScriptableContext[line]]): Self = StObject.set(x, "capBezierPoints", value.asInstanceOf[js.Any])
     
     inline def setCapBezierPointsFunction2(value: (ScriptableContext[line], /* options */ AnyObject) => js.UndefOr[Boolean]): Self = StObject.set(x, "capBezierPoints", js.Any.fromFunction2(value))
     
     inline def setClip(value: Double | ChartArea | `false`): Self = StObject.set(x, "clip", value.asInstanceOf[js.Any])
     
-    inline def setCubicInterpolationMode(value: Scriptable[default | monotone, ScriptableContext[line]]): Self = StObject.set(x, "cubicInterpolationMode", value.asInstanceOf[js.Any])
+    inline def setCubicInterpolationMode(value: typings.chartJs.distTypesIndexMod.Scriptable[default | monotone, ScriptableContext[line]]): Self = StObject.set(x, "cubicInterpolationMode", value.asInstanceOf[js.Any])
     
     inline def setCubicInterpolationModeFunction2(value: (ScriptableContext[line], /* options */ AnyObject) => js.UndefOr[default | monotone]): Self = StObject.set(x, "cubicInterpolationMode", js.Any.fromFunction2(value))
     
-    inline def setFill(value: Scriptable[FillTarget | ComplexFillTarget, ScriptableContext[line]]): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+    inline def setFill(
+      value: typings.chartJs.distTypesIndexMod.Scriptable[FillTarget | ComplexFillTarget, ScriptableContext[line]]
+    ): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
     inline def setFillFunction2(
       value: (ScriptableContext[line], /* options */ AnyObject) => js.UndefOr[FillTarget | ComplexFillTarget]
@@ -281,37 +282,37 @@ object typelineLineControllerDat {
     
     inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     
-    inline def setHoverBackgroundColor(value: ScriptableAndArray[typings.chartJs.typesColorMod.Color, ScriptableContext[line]]): Self = StObject.set(x, "hoverBackgroundColor", value.asInstanceOf[js.Any])
+    inline def setHoverBackgroundColor(value: ScriptableAndArray[typings.chartJs.distTypesColorMod.Color, ScriptableContext[line]]): Self = StObject.set(x, "hoverBackgroundColor", value.asInstanceOf[js.Any])
     
     inline def setHoverBackgroundColorFunction2(
-      value: (ScriptableContext[line], /* options */ AnyObject) => js.UndefOr[typings.chartJs.typesColorMod.Color]
+      value: (ScriptableContext[line], /* options */ AnyObject) => js.UndefOr[typings.chartJs.distTypesColorMod.Color]
     ): Self = StObject.set(x, "hoverBackgroundColor", js.Any.fromFunction2(value))
     
-    inline def setHoverBackgroundColorVarargs(value: typings.chartJs.typesColorMod.Color*): Self = StObject.set(x, "hoverBackgroundColor", js.Array(value*))
+    inline def setHoverBackgroundColorVarargs(value: typings.chartJs.distTypesColorMod.Color*): Self = StObject.set(x, "hoverBackgroundColor", js.Array(value*))
     
-    inline def setHoverBorderCapStyle(value: Scriptable[CanvasLineCap, ScriptableContext[line]]): Self = StObject.set(x, "hoverBorderCapStyle", value.asInstanceOf[js.Any])
+    inline def setHoverBorderCapStyle(value: typings.chartJs.distTypesIndexMod.Scriptable[CanvasLineCap, ScriptableContext[line]]): Self = StObject.set(x, "hoverBorderCapStyle", value.asInstanceOf[js.Any])
     
     inline def setHoverBorderCapStyleFunction2(value: (ScriptableContext[line], /* options */ AnyObject) => js.UndefOr[CanvasLineCap]): Self = StObject.set(x, "hoverBorderCapStyle", js.Any.fromFunction2(value))
     
-    inline def setHoverBorderColor(value: ScriptableAndArray[typings.chartJs.typesColorMod.Color, ScriptableContext[line]]): Self = StObject.set(x, "hoverBorderColor", value.asInstanceOf[js.Any])
+    inline def setHoverBorderColor(value: ScriptableAndArray[typings.chartJs.distTypesColorMod.Color, ScriptableContext[line]]): Self = StObject.set(x, "hoverBorderColor", value.asInstanceOf[js.Any])
     
     inline def setHoverBorderColorFunction2(
-      value: (ScriptableContext[line], /* options */ AnyObject) => js.UndefOr[typings.chartJs.typesColorMod.Color]
+      value: (ScriptableContext[line], /* options */ AnyObject) => js.UndefOr[typings.chartJs.distTypesColorMod.Color]
     ): Self = StObject.set(x, "hoverBorderColor", js.Any.fromFunction2(value))
     
-    inline def setHoverBorderColorVarargs(value: typings.chartJs.typesColorMod.Color*): Self = StObject.set(x, "hoverBorderColor", js.Array(value*))
+    inline def setHoverBorderColorVarargs(value: typings.chartJs.distTypesColorMod.Color*): Self = StObject.set(x, "hoverBorderColor", js.Array(value*))
     
-    inline def setHoverBorderDash(value: Scriptable[js.Array[Double], ScriptableContext[line]]): Self = StObject.set(x, "hoverBorderDash", value.asInstanceOf[js.Any])
+    inline def setHoverBorderDash(value: typings.chartJs.distTypesIndexMod.Scriptable[js.Array[Double], ScriptableContext[line]]): Self = StObject.set(x, "hoverBorderDash", value.asInstanceOf[js.Any])
     
     inline def setHoverBorderDashFunction2(value: (ScriptableContext[line], /* options */ AnyObject) => js.UndefOr[js.Array[Double]]): Self = StObject.set(x, "hoverBorderDash", js.Any.fromFunction2(value))
     
-    inline def setHoverBorderDashOffset(value: Scriptable[Double, ScriptableContext[line]]): Self = StObject.set(x, "hoverBorderDashOffset", value.asInstanceOf[js.Any])
+    inline def setHoverBorderDashOffset(value: typings.chartJs.distTypesIndexMod.Scriptable[Double, ScriptableContext[line]]): Self = StObject.set(x, "hoverBorderDashOffset", value.asInstanceOf[js.Any])
     
     inline def setHoverBorderDashOffsetFunction2(value: (ScriptableContext[line], /* options */ AnyObject) => js.UndefOr[Double]): Self = StObject.set(x, "hoverBorderDashOffset", js.Any.fromFunction2(value))
     
     inline def setHoverBorderDashVarargs(value: Double*): Self = StObject.set(x, "hoverBorderDash", js.Array(value*))
     
-    inline def setHoverBorderJoinStyle(value: Scriptable[CanvasLineJoin, ScriptableContext[line]]): Self = StObject.set(x, "hoverBorderJoinStyle", value.asInstanceOf[js.Any])
+    inline def setHoverBorderJoinStyle(value: typings.chartJs.distTypesIndexMod.Scriptable[CanvasLineJoin, ScriptableContext[line]]): Self = StObject.set(x, "hoverBorderJoinStyle", value.asInstanceOf[js.Any])
     
     inline def setHoverBorderJoinStyleFunction2(value: (ScriptableContext[line], /* options */ AnyObject) => js.UndefOr[CanvasLineJoin]): Self = StObject.set(x, "hoverBorderJoinStyle", js.Any.fromFunction2(value))
     
@@ -331,21 +332,21 @@ object typelineLineControllerDat {
     
     inline def setParsing(value: StringDictionary[String] | `false`): Self = StObject.set(x, "parsing", value.asInstanceOf[js.Any])
     
-    inline def setPointBackgroundColor(value: ScriptableAndArray[typings.chartJs.typesColorMod.Color, ScriptableContext[line]]): Self = StObject.set(x, "pointBackgroundColor", value.asInstanceOf[js.Any])
+    inline def setPointBackgroundColor(value: ScriptableAndArray[typings.chartJs.distTypesColorMod.Color, ScriptableContext[line]]): Self = StObject.set(x, "pointBackgroundColor", value.asInstanceOf[js.Any])
     
     inline def setPointBackgroundColorFunction2(
-      value: (ScriptableContext[line], /* options */ AnyObject) => js.UndefOr[typings.chartJs.typesColorMod.Color]
+      value: (ScriptableContext[line], /* options */ AnyObject) => js.UndefOr[typings.chartJs.distTypesColorMod.Color]
     ): Self = StObject.set(x, "pointBackgroundColor", js.Any.fromFunction2(value))
     
-    inline def setPointBackgroundColorVarargs(value: typings.chartJs.typesColorMod.Color*): Self = StObject.set(x, "pointBackgroundColor", js.Array(value*))
+    inline def setPointBackgroundColorVarargs(value: typings.chartJs.distTypesColorMod.Color*): Self = StObject.set(x, "pointBackgroundColor", js.Array(value*))
     
-    inline def setPointBorderColor(value: ScriptableAndArray[typings.chartJs.typesColorMod.Color, ScriptableContext[line]]): Self = StObject.set(x, "pointBorderColor", value.asInstanceOf[js.Any])
+    inline def setPointBorderColor(value: ScriptableAndArray[typings.chartJs.distTypesColorMod.Color, ScriptableContext[line]]): Self = StObject.set(x, "pointBorderColor", value.asInstanceOf[js.Any])
     
     inline def setPointBorderColorFunction2(
-      value: (ScriptableContext[line], /* options */ AnyObject) => js.UndefOr[typings.chartJs.typesColorMod.Color]
+      value: (ScriptableContext[line], /* options */ AnyObject) => js.UndefOr[typings.chartJs.distTypesColorMod.Color]
     ): Self = StObject.set(x, "pointBorderColor", js.Any.fromFunction2(value))
     
-    inline def setPointBorderColorVarargs(value: typings.chartJs.typesColorMod.Color*): Self = StObject.set(x, "pointBorderColor", js.Array(value*))
+    inline def setPointBorderColorVarargs(value: typings.chartJs.distTypesColorMod.Color*): Self = StObject.set(x, "pointBorderColor", js.Array(value*))
     
     inline def setPointBorderWidth(value: ScriptableAndArray[Double, ScriptableContext[line]]): Self = StObject.set(x, "pointBorderWidth", value.asInstanceOf[js.Any])
     
@@ -359,21 +360,21 @@ object typelineLineControllerDat {
     
     inline def setPointHitRadiusVarargs(value: Double*): Self = StObject.set(x, "pointHitRadius", js.Array(value*))
     
-    inline def setPointHoverBackgroundColor(value: ScriptableAndArray[typings.chartJs.typesColorMod.Color, ScriptableContext[line]]): Self = StObject.set(x, "pointHoverBackgroundColor", value.asInstanceOf[js.Any])
+    inline def setPointHoverBackgroundColor(value: ScriptableAndArray[typings.chartJs.distTypesColorMod.Color, ScriptableContext[line]]): Self = StObject.set(x, "pointHoverBackgroundColor", value.asInstanceOf[js.Any])
     
     inline def setPointHoverBackgroundColorFunction2(
-      value: (ScriptableContext[line], /* options */ AnyObject) => js.UndefOr[typings.chartJs.typesColorMod.Color]
+      value: (ScriptableContext[line], /* options */ AnyObject) => js.UndefOr[typings.chartJs.distTypesColorMod.Color]
     ): Self = StObject.set(x, "pointHoverBackgroundColor", js.Any.fromFunction2(value))
     
-    inline def setPointHoverBackgroundColorVarargs(value: typings.chartJs.typesColorMod.Color*): Self = StObject.set(x, "pointHoverBackgroundColor", js.Array(value*))
+    inline def setPointHoverBackgroundColorVarargs(value: typings.chartJs.distTypesColorMod.Color*): Self = StObject.set(x, "pointHoverBackgroundColor", js.Array(value*))
     
-    inline def setPointHoverBorderColor(value: ScriptableAndArray[typings.chartJs.typesColorMod.Color, ScriptableContext[line]]): Self = StObject.set(x, "pointHoverBorderColor", value.asInstanceOf[js.Any])
+    inline def setPointHoverBorderColor(value: ScriptableAndArray[typings.chartJs.distTypesColorMod.Color, ScriptableContext[line]]): Self = StObject.set(x, "pointHoverBorderColor", value.asInstanceOf[js.Any])
     
     inline def setPointHoverBorderColorFunction2(
-      value: (ScriptableContext[line], /* options */ AnyObject) => js.UndefOr[typings.chartJs.typesColorMod.Color]
+      value: (ScriptableContext[line], /* options */ AnyObject) => js.UndefOr[typings.chartJs.distTypesColorMod.Color]
     ): Self = StObject.set(x, "pointHoverBorderColor", js.Any.fromFunction2(value))
     
-    inline def setPointHoverBorderColorVarargs(value: typings.chartJs.typesColorMod.Color*): Self = StObject.set(x, "pointHoverBorderColor", js.Array(value*))
+    inline def setPointHoverBorderColorVarargs(value: typings.chartJs.distTypesColorMod.Color*): Self = StObject.set(x, "pointHoverBorderColor", js.Array(value*))
     
     inline def setPointHoverBorderWidth(value: ScriptableAndArray[Double, ScriptableContext[line]]): Self = StObject.set(x, "pointHoverBorderWidth", value.asInstanceOf[js.Any])
     
@@ -399,17 +400,17 @@ object typelineLineControllerDat {
     
     inline def setPointRotationVarargs(value: Double*): Self = StObject.set(x, "pointRotation", js.Array(value*))
     
-    inline def setPointStyle(value: ScriptableAndArray[typings.chartJs.mod.PointStyle, ScriptableContext[line]]): Self = StObject.set(x, "pointStyle", value.asInstanceOf[js.Any])
+    inline def setPointStyle(value: ScriptableAndArray[typings.chartJs.distTypesIndexMod.PointStyle, ScriptableContext[line]]): Self = StObject.set(x, "pointStyle", value.asInstanceOf[js.Any])
     
     inline def setPointStyleFunction2(
-      value: (ScriptableContext[line], /* options */ AnyObject) => js.UndefOr[typings.chartJs.mod.PointStyle]
+      value: (ScriptableContext[line], /* options */ AnyObject) => js.UndefOr[typings.chartJs.distTypesIndexMod.PointStyle]
     ): Self = StObject.set(x, "pointStyle", js.Any.fromFunction2(value))
     
-    inline def setPointStyleVarargs(value: typings.chartJs.mod.PointStyle*): Self = StObject.set(x, "pointStyle", js.Array(value*))
+    inline def setPointStyleVarargs(value: typings.chartJs.distTypesIndexMod.PointStyle*): Self = StObject.set(x, "pointStyle", js.Array(value*))
     
-    inline def setSegment(value: Scriptable[BackgroundColor, ScriptableContext[line]]): Self = StObject.set(x, "segment", value.asInstanceOf[js.Any])
+    inline def setSegment(value: typings.chartJs.distTypesIndexMod.Scriptable[BorderCapStyle, ScriptableContext[line]]): Self = StObject.set(x, "segment", value.asInstanceOf[js.Any])
     
-    inline def setSegmentFunction2(value: (ScriptableContext[line], /* options */ AnyObject) => js.UndefOr[BackgroundColor]): Self = StObject.set(x, "segment", js.Any.fromFunction2(value))
+    inline def setSegmentFunction2(value: (ScriptableContext[line], /* options */ AnyObject) => js.UndefOr[BorderCapStyle]): Self = StObject.set(x, "segment", js.Any.fromFunction2(value))
     
     inline def setShowLine(value: Boolean): Self = StObject.set(x, "showLine", value.asInstanceOf[js.Any])
     
@@ -417,13 +418,15 @@ object typelineLineControllerDat {
     
     inline def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
     
-    inline def setStepped(value: Scriptable[before | after | middle | Boolean, ScriptableContext[line]]): Self = StObject.set(x, "stepped", value.asInstanceOf[js.Any])
+    inline def setStepped(
+      value: typings.chartJs.distTypesIndexMod.Scriptable[before | after | middle | Boolean, ScriptableContext[line]]
+    ): Self = StObject.set(x, "stepped", value.asInstanceOf[js.Any])
     
     inline def setSteppedFunction2(
       value: (ScriptableContext[line], /* options */ AnyObject) => js.UndefOr[before | after | middle | Boolean]
     ): Self = StObject.set(x, "stepped", js.Any.fromFunction2(value))
     
-    inline def setTension(value: Scriptable[Double, ScriptableContext[line]]): Self = StObject.set(x, "tension", value.asInstanceOf[js.Any])
+    inline def setTension(value: typings.chartJs.distTypesIndexMod.Scriptable[Double, ScriptableContext[line]]): Self = StObject.set(x, "tension", value.asInstanceOf[js.Any])
     
     inline def setTensionFunction2(value: (ScriptableContext[line], /* options */ AnyObject) => js.UndefOr[Double]): Self = StObject.set(x, "tension", js.Any.fromFunction2(value))
     

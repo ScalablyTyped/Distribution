@@ -148,13 +148,12 @@ object mod {
     * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
     T extends std.Array<any> ? // Handle arrays or tuples.
-  {[ P in keyof T ]: T[P] extends std.Record<string, any> | std.Array<any>? snakecase-keys.snakecase-keys.SnakeCaseKeys<T[P], Deep, Exclude, ''> : T[P]} : T extends std.Record<string, any> ? // Handle objects.
+  {[ P in keyof T ]: T[P] extends std.Record<string, any> | std.Array<any>? snakecase-keys.snakecase-keys.SnakeCaseKeys<T[P], Deep, Exclude, ''> : T[P]} : T extends std.Record<string, std.Date | std.Error | std.RegExp> ? T : T extends std.Record<string, any> ? // Handle objects.
   {[ P in keyof T as [snakecase-keys.snakecase-keys.Includes<Exclude, P>] extends [true]? P : type-fest.type-fest/source/snake-case.SnakeCase<P> ]: [Deep] extends [true]? T[P] extends std.Record<string, any> | undefined? snakecase-keys.snakecase-keys.SnakeCaseKeys<T[P], Deep, Exclude, snakecase-keys.snakecase-keys.AppendPath<Path, P & string>> : T[P] : T[P]} : // Return anything else as-is.
   T
     }}}
     */
-  type SnakeCaseKeys[T /* <: (Record[String, Any]) | js.Array[Any] */, Deep /* <: Boolean */, Exclude /* <: js.Array[Any] */, Path /* <: String */] = // Return anything else as-is.
-  T
+  type SnakeCaseKeys[T /* <: (Record[String, Any]) | js.Array[Any] */, Deep /* <: Boolean */, Exclude /* <: js.Array[Any] */, Path /* <: String */] = T
   
   /**
   Return a default type if input type is nil.

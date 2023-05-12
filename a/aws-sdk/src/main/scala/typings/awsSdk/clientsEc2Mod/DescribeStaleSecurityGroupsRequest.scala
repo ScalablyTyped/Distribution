@@ -12,12 +12,12 @@ trait DescribeStaleSecurityGroupsRequest extends StObject {
   var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The maximum number of items to return for this request. The request returns a token that you can specify in a subsequent call to get the next set of results.
+    * The maximum number of items to return for this request. To get the next page of items, make another request with the token returned in the output. For more information, see Pagination.
     */
   var MaxResults: js.UndefOr[DescribeStaleSecurityGroupsMaxResults] = js.undefined
   
   /**
-    * The token for the next set of items to return. (You received this token from a prior call.)
+    * The token returned from a previous paginated request. Pagination continues from the end of the items returned by the previous request.
     */
   var NextToken: js.UndefOr[DescribeStaleSecurityGroupsNextToken] = js.undefined
   

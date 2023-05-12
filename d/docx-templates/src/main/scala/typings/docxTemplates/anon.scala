@@ -17,6 +17,32 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
+  trait Caption extends StObject {
+    
+    var caption: js.UndefOr[js.Array[NonTextNode]] = js.undefined
+    
+    var image: NonTextNode
+  }
+  object Caption {
+    
+    inline def apply(image: NonTextNode): Caption = {
+      val __obj = js.Dynamic.literal(image = image.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Caption]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Caption] (val x: Self) extends AnyVal {
+      
+      inline def setCaption(value: js.Array[NonTextNode]): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
+      
+      inline def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
+      
+      inline def setCaptionVarargs(value: NonTextNode*): Self = StObject.set(x, "caption", js.Array(value*))
+      
+      inline def setImage(value: NonTextNode): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    }
+  }
+  
   trait Category extends StObject {
     
     var category: js.UndefOr[String] = js.undefined

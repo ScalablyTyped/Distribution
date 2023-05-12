@@ -16,7 +16,7 @@ object libIconsWarningTwoToneMod extends Shortcut {
   @js.native
   trait WarningTwoToneIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_WarningTwoToneIconType: String = js.native

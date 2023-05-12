@@ -23,6 +23,8 @@ trait PartialIGlowLayerOptionsAlphaBlendingMode extends StObject {
   
   var mainTextureSamples: js.UndefOr[Double] = js.undefined
   
+  var mainTextureType: js.UndefOr[Double] = js.undefined
+  
   var renderingGroupId: js.UndefOr[Double] = js.undefined
 }
 object PartialIGlowLayerOptionsAlphaBlendingMode {
@@ -64,6 +66,10 @@ object PartialIGlowLayerOptionsAlphaBlendingMode {
     inline def setMainTextureSamples(value: Double): Self = StObject.set(x, "mainTextureSamples", value.asInstanceOf[js.Any])
     
     inline def setMainTextureSamplesUndefined: Self = StObject.set(x, "mainTextureSamples", js.undefined)
+    
+    inline def setMainTextureType(value: Double): Self = StObject.set(x, "mainTextureType", value.asInstanceOf[js.Any])
+    
+    inline def setMainTextureTypeUndefined: Self = StObject.set(x, "mainTextureType", js.undefined)
     
     inline def setRenderingGroupId(value: Double): Self = StObject.set(x, "renderingGroupId", value.asInstanceOf[js.Any])
     

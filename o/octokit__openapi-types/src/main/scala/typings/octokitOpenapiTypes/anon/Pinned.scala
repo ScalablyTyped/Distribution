@@ -6,22 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Pinned extends StObject {
   
-  /** The direction to sort the results by. */
   var direction: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['direction'] */ js.Any
   ] = js.undefined
   
-  /** Page number of the results to fetch. */
   var page: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['page'] */ js.Any
   ] = js.undefined
   
-  /** The number of results per page (max 100). */
   var per_page: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['per-page'] */ js.Any
   ] = js.undefined
   
-  /** Pinned discussions only filter */
+  /** @description Pinned discussions only filter */
   var pinned: js.UndefOr[String] = js.undefined
 }
 object Pinned {

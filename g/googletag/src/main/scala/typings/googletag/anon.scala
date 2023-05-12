@@ -1,6 +1,7 @@
 package typings.googletag
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.googletag.googletag.secureSignals.SecureSignalProvider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -92,6 +93,40 @@ object anon {
       inline def setTrustedScoringSignalsUrl(value: String): Self = StObject.set(x, "trustedScoringSignalsUrl", value.asInstanceOf[js.Any])
       
       inline def setTrustedScoringSignalsUrlUndefined: Self = StObject.set(x, "trustedScoringSignalsUrl", js.undefined)
+    }
+  }
+  
+  /* Inlined googletag.googletag.secureSignals.BidderSignalProvider & {  networkCode :never | undefined} */
+  trait BidderSignalProvidernetwo
+    extends StObject
+       with SecureSignalProvider {
+    
+    /**
+      * A function which returns a `Promise` that resolves to a secure signal.
+      * @returns A [Promise](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise) that resolves to a secure signal.
+      */
+    def collectorFunction(): js.Promise[String]
+    
+    /**
+      * A unique identifier for the collector associated with this secure signal, as registered in Google Ad Manager.
+      */
+    var id: String
+    
+    var networkCode: js.UndefOr[scala.Nothing] = js.undefined
+  }
+  object BidderSignalProvidernetwo {
+    
+    inline def apply(collectorFunction: () => js.Promise[String], id: String): BidderSignalProvidernetwo = {
+      val __obj = js.Dynamic.literal(collectorFunction = js.Any.fromFunction0(collectorFunction), id = id.asInstanceOf[js.Any])
+      __obj.asInstanceOf[BidderSignalProvidernetwo]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BidderSignalProvidernetwo] (val x: Self) extends AnyVal {
+      
+      inline def setCollectorFunction(value: () => js.Promise[String]): Self = StObject.set(x, "collectorFunction", js.Any.fromFunction0(value))
+      
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
   }
   

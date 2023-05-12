@@ -57,11 +57,11 @@ object srcUtilsMod {
     @JSImport("react-intl/src/utils", "DEFAULT_INTL_CONFIG.textComponent")
     @js.native
     def textComponent: js.UndefOr[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 118, starting with typings.react.mod.ComponentType[js.Object], typings.reactIntl.reactIntlStrings.a, typings.reactIntl.reactIntlStrings.abbr */ Any
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 119, starting with typings.react.mod.ComponentType[js.Object], typings.reactIntl.reactIntlStrings.a, typings.reactIntl.reactIntlStrings.abbr */ Any
       ] = js.native
     inline def textComponent_=(
       x: js.UndefOr[
-          /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 118, starting with typings.react.mod.ComponentType[js.Object], typings.reactIntl.reactIntlStrings.a, typings.reactIntl.reactIntlStrings.abbr */ Any
+          /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 119, starting with typings.react.mod.ComponentType[js.Object], typings.reactIntl.reactIntlStrings.a, typings.reactIntl.reactIntlStrings.abbr */ Any
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("textComponent")(x.asInstanceOf[js.Any])
     

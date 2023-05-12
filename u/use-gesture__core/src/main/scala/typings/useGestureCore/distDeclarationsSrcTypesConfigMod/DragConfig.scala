@@ -18,7 +18,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Omit<@use-gesture/core.@use-gesture/core/dist/declarations/src/types/config.CoordinatesConfig<'drag'>, 'axisThreshold' | 'bounds'> & {  filterTaps :boolean | undefined,   tapsThreshold :number | undefined,   bounds :@use-gesture/core.@use-gesture/core/dist/declarations/src/types/config.DragBounds | (state : @use-gesture/core.@use-gesture/core/dist/declarations/src/types/state.State['drag']): @use-gesture/core.@use-gesture/core/dist/declarations/src/types/config.DragBounds | undefined,   pointer :{  buttons :number | std.Array<number> | undefined,   touch :boolean | undefined,   mouse :boolean | undefined,   keys :boolean | undefined,   capture :boolean | undefined,   lock :boolean | undefined} | undefined,   swipe :{  velocity :number | @use-gesture/core.@use-gesture/core/dist/declarations/src/types/utils.Vector2 | undefined,   distance :number | @use-gesture/core.@use-gesture/core/dist/declarations/src/types/utils.Vector2 | undefined,   duration :number | undefined} | undefined,   preventScroll :boolean | number | undefined,   preventScrollAxis :'x' | 'y' | 'xy' | undefined,   delay :boolean | number | undefined,   axisThreshold :std.Partial<std.Record<@use-gesture/core.@use-gesture/core/dist/declarations/src/types/utils.PointerType, number>> | undefined} */
+/* Inlined std.Omit<@use-gesture/core.@use-gesture/core/dist/declarations/src/types/config.CoordinatesConfig<'drag'>, 'axisThreshold' | 'bounds'> & {  filterTaps :boolean | undefined,   tapsThreshold :number | undefined,   bounds :@use-gesture/core.@use-gesture/core/dist/declarations/src/types/config.DragBounds | (state : @use-gesture/core.@use-gesture/core/dist/declarations/src/types/state.State['drag']): @use-gesture/core.@use-gesture/core/dist/declarations/src/types/config.DragBounds | undefined,   pointer :{  buttons :number | std.Array<number> | undefined,   touch :boolean | undefined,   mouse :boolean | undefined,   keys :boolean | undefined,   capture :boolean | undefined,   lock :boolean | undefined} | undefined,   swipe :{  velocity :number | @use-gesture/core.@use-gesture/core/dist/declarations/src/types/utils.Vector2 | undefined,   distance :number | @use-gesture/core.@use-gesture/core/dist/declarations/src/types/utils.Vector2 | undefined,   duration :number | undefined} | undefined,   preventScroll :boolean | number | undefined,   preventScrollAxis :'x' | 'y' | 'xy' | undefined,   delay :boolean | number | undefined,   axisThreshold :std.Partial<std.Record<@use-gesture/core.@use-gesture/core/dist/declarations/src/types/utils.PointerType, number>> | undefined,   keyboardDisplacement :number | undefined} */
 trait DragConfig extends StObject {
   
   var axis: js.UndefOr[x | y | lock] = js.undefined
@@ -60,6 +60,11 @@ trait DragConfig extends StObject {
   var from: js.UndefOr[
     Vector2 | (js.Function1[/* state */ NonUndefined[js.UndefOr[DragStateeventEventTypesd]], Vector2])
   ] = js.undefined
+  
+  /**
+    * The distance (in pixels) emulated by arrow keys.
+    */
+  var keyboardDisplacement: js.UndefOr[Double] = js.undefined
   
   var pointer: js.UndefOr[Keys] = js.undefined
   
@@ -145,6 +150,10 @@ object DragConfig {
     inline def setFromFunction1(value: /* state */ NonUndefined[js.UndefOr[DragStateeventEventTypesd]] => Vector2): Self = StObject.set(x, "from", js.Any.fromFunction1(value))
     
     inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+    
+    inline def setKeyboardDisplacement(value: Double): Self = StObject.set(x, "keyboardDisplacement", value.asInstanceOf[js.Any])
+    
+    inline def setKeyboardDisplacementUndefined: Self = StObject.set(x, "keyboardDisplacement", js.undefined)
     
     inline def setPointer(value: Keys): Self = StObject.set(x, "pointer", value.asInstanceOf[js.Any])
     

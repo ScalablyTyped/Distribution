@@ -17,6 +17,11 @@ trait ReplicationConfigurationTemplate extends StObject {
   var associateDefaultSecurityGroup: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Whether to allow the AWS replication agent to automatically replicate newly added disks.
+    */
+  var autoReplicateNewDisks: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * Configure bandwidth throttling for the outbound data transfer rate of the Source Server in Mbps.
     */
   var bandwidthThrottling: js.UndefOr[PositiveInteger] = js.undefined
@@ -103,6 +108,10 @@ object ReplicationConfigurationTemplate {
     inline def setAssociateDefaultSecurityGroup(value: Boolean): Self = StObject.set(x, "associateDefaultSecurityGroup", value.asInstanceOf[js.Any])
     
     inline def setAssociateDefaultSecurityGroupUndefined: Self = StObject.set(x, "associateDefaultSecurityGroup", js.undefined)
+    
+    inline def setAutoReplicateNewDisks(value: Boolean): Self = StObject.set(x, "autoReplicateNewDisks", value.asInstanceOf[js.Any])
+    
+    inline def setAutoReplicateNewDisksUndefined: Self = StObject.set(x, "autoReplicateNewDisks", js.undefined)
     
     inline def setBandwidthThrottling(value: PositiveInteger): Self = StObject.set(x, "bandwidthThrottling", value.asInstanceOf[js.Any])
     

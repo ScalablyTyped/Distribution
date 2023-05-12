@@ -9,6 +9,8 @@ import typings.logfmt.anon.End
 import typings.node.NodeJS.ReadWriteStream
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
+import typings.std.Partial
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -53,7 +55,7 @@ object mod extends Shortcut {
     
     def namespace(data: js.Object): Logfmt = js.native
     
-    def parse(line: String): js.Object = js.native
+    def parse(line: String): Partial[Record[String, String | Boolean | Null]] = js.native
     
     def requestLogger(): HTTPHandler = js.native
     def requestLogger(formatter: RequestLoggerFormatter): HTTPHandler = js.native

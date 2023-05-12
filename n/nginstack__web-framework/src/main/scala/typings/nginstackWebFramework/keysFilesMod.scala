@@ -69,4 +69,16 @@ object keysFilesMod {
   @JSImport("@nginstack/web-framework/keys/Files", "WEB_UI_JS")
   @js.native
   val WEB_UI_JS: Double = js.native
+  
+  @JSImport("@nginstack/web-framework/keys/Files", "WF_ICONS_CSS")
+  @js.native
+  val WF_ICONS_CSS: Double = js.native
+  
+  @JSImport("@nginstack/web-framework/keys/Files", "WF_ICONS_TXT")
+  @js.native
+  val WF_ICONS_TXT: Double = js.native
+  
+  @JSImport("@nginstack/web-framework/keys/Files", "WF_ICONS_WOFF")
+  @js.native
+  val WF_ICONS_WOFF: Double = js.native
 }

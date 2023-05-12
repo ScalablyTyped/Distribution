@@ -1,7 +1,7 @@
 
 # Scala.js typings for import-meta-resolve
 
-Typings are for version 2.1.0
+Typings are for version 3.0.0
 
 ## Library description:
 Resolve things like Node.js — ponyfill for `import.meta.resolve`

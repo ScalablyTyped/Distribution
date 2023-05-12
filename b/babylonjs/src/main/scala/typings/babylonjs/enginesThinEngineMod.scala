@@ -8,8 +8,8 @@ import typings.babylonjs.anon.FramebufferHeight
 import typings.babylonjs.anon.Height
 import typings.babylonjs.anon.Layers
 import typings.babylonjs.anon.Mag
-import typings.babylonjs.anon.PartialRenderTargetCreati
 import typings.babylonjs.anon.Renderer
+import typings.babylonjs.anon.SRGB
 import typings.babylonjs.anon.W
 import typings.babylonjs.audioInterfacesIaudioengineoptionsMod.IAudioEngineOptions
 import typings.babylonjs.buffersBufferMod.VertexBuffer
@@ -82,7 +82,6 @@ import typings.std.ImageBitmapOptions
 import typings.std.ImageData
 import typings.std.MediaStreamAudioDestinationNode
 import typings.std.ProgressEvent
-import typings.std.WebGLBuffer
 import typings.std.WebGLContextEvent
 import typings.std.WebGLFramebuffer
 import typings.std.WebGLRenderbuffer
@@ -453,7 +452,7 @@ object enginesThinEngineMod {
     
     /* protected */ var _creationOptions: EngineOptions = js.native
     
-    /* protected */ var _currentBoundBuffer: js.Array[Nullable[WebGLBuffer]] = js.native
+    /* protected */ var _currentBoundBuffer: js.Array[Nullable[DataBuffer]] = js.native
     
     /* private */ var _currentBufferPointers: Any = js.native
     
@@ -571,6 +570,7 @@ object enginesThinEngineMod {
       * @internal
       */
     def _getRGBAMultiSampleBufferFormat(`type`: Double): Double = js.native
+    def _getRGBAMultiSampleBufferFormat(`type`: Double, format: Double): Double = js.native
     
     /**
       * @internal
@@ -614,6 +614,9 @@ object enginesThinEngineMod {
     
     /* private */ var _glRenderer: Any = js.native
     
+    /** @internal */
+    var _glSRGBExtensionValues: SRGB = js.native
+    
     /* private */ var _glVendor: Any = js.native
     
     /* private */ var _glVersion: Any = js.native
@@ -630,6 +633,8 @@ object enginesThinEngineMod {
     /** @internal */
     var _internalTexturesCache: js.Array[InternalTexture] = js.native
     
+    /* protected */ var _isDisposed: Boolean = js.native
+    
     /**
       * @internal
       */
@@ -641,7 +646,7 @@ object enginesThinEngineMod {
     /* protected */ var _isWebGPU: Boolean = js.native
     
     /** @internal */
-    /* private */ var _lastDevicePixelRatio: Any = js.native
+    /* protected */ var _lastDevicePixelRatio: Double = js.native
     
     /**
       * @internal
@@ -1129,6 +1134,8 @@ object enginesThinEngineMod {
       samples: Double
     ): Nullable[WebGLRenderbuffer] = js.native
     
+    /* protected */ def _setupMobileChecks(): Unit = js.native
+    
     /** @internal */
     /* protected */ var _shaderPlatformName: String = js.native
     
@@ -1137,10 +1144,8 @@ object enginesThinEngineMod {
     /**
       * Shared initialization across engines types.
       * @param canvas The canvas associated with this instance of the engine.
-      * @param doNotHandleTouchAction Defines that engine should ignore modifying touch action attribute and style
-      * @param audioEngine Defines if an audio engine should be created by default
       */
-    /* protected */ def _sharedInit(canvas: HTMLCanvasElement, doNotHandleTouchAction: Boolean, audioEngine: Boolean): Unit = js.native
+    /* protected */ def _sharedInit(canvas: HTMLCanvasElement): Unit = js.native
     
     /** @internal */
     def _shouldUseHighPrecisionShader: Boolean = js.native
@@ -1342,8 +1347,6 @@ object enginesThinEngineMod {
       useTextureWidthAndHeight: Boolean
     ): Unit = js.native
     
-    /* protected */ var _useExactSrgbConversions: Boolean = js.native
-    
     /* private */ var _useReverseDepthBuffer: Any = js.native
     
     /* private */ var _vaoRecordInProgress: Any = js.native
@@ -1472,16 +1475,16 @@ object enginesThinEngineMod {
     
     /**
       * Binds the frame buffer to the specified texture.
-      * @param texture The render target wrapper to render to
-      * @param faceIndex The face of the texture to render to in case of cube texture
+      * @param rtWrapper The render target wrapper to render to
+      * @param faceIndex The face of the texture to render to in case of cube texture and if the render target wrapper is not a multi render target
       * @param requiredWidth The width of the target to render to
       * @param requiredHeight The height of the target to render to
       * @param forceFullscreenViewport Forces the viewport to be the entire texture/screen if true
-      * @param lodLevel defines the lod level to bind to the frame buffer
-      * @param layer defines the 2d array index to bind to frame buffer to
+      * @param lodLevel Defines the lod level to bind to the frame buffer
+      * @param layer Defines the 2d array index to bind to the frame buffer if the render target wrapper is not a multi render target
       */
     def bindFramebuffer(
-      texture: RenderTargetWrapper,
+      rtWrapper: RenderTargetWrapper,
       faceIndex: js.UndefOr[Double],
       requiredWidth: js.UndefOr[Double],
       requiredHeight: js.UndefOr[Double],
@@ -1535,7 +1538,7 @@ object enginesThinEngineMod {
     
     /**
       * Bind a specific vertex array object
-      * @see https://doc.babylonjs.com/features/webgl2#vertex-array-objects
+      * @see https://doc.babylonjs.com/setup/support/webGL2#vertex-array-objects
       * @param vertexArrayObject defines the vertex array object to bind
       * @param indexBuffer defines the index buffer to bind
       */
@@ -1933,7 +1936,7 @@ object enginesThinEngineMod {
     
     /**
       * Create a dynamic uniform buffer
-      * @see https://doc.babylonjs.com/features/webgl2#uniform-buffer-objets
+      * @see https://doc.babylonjs.com/setup/support/webGL2#uniform-buffer-objets
       * @param elements defines the content of the uniform buffer
       * @returns the webGL uniform buffer
       */
@@ -1997,7 +2000,7 @@ object enginesThinEngineMod {
     
     /**
       * Create a multi render target texture
-      * @see https://doc.babylonjs.com/features/webgl2#multiple-render-target
+      * @see https://doc.babylonjs.com/setup/support/webGL2#multiple-render-target
       * @param size defines the size of the texture
       * @param options defines the creation options
       * @param initializeBuffers if set to true, the engine will make an initializing call of drawBuffers
@@ -2660,7 +2663,7 @@ object enginesThinEngineMod {
       * @returns a new render target cube wrapper
       */
     def createRenderTargetCubeTexture(size: Double): RenderTargetWrapper = js.native
-    def createRenderTargetCubeTexture(size: Double, options: PartialRenderTargetCreati): RenderTargetWrapper = js.native
+    def createRenderTargetCubeTexture(size: Double, options: RenderTargetCreationOptions): RenderTargetWrapper = js.native
     
     /**
       * Creates a new render target texture
@@ -2767,7 +2770,7 @@ object enginesThinEngineMod {
     
     /**
       * Create an uniform buffer
-      * @see https://doc.babylonjs.com/features/webgl2#uniform-buffer-objets
+      * @see https://doc.babylonjs.com/setup/support/webGL2#uniform-buffer-objets
       * @param elements defines the content of the uniform buffer
       * @returns the webGL uniform buffer
       */
@@ -2836,7 +2839,7 @@ object enginesThinEngineMod {
     
     /**
       * Gets or sets a boolean indicating if resources should be retained to be able to handle context lost events
-      * @see https://doc.babylonjs.com/how_to/optimizing_your_scene#handling-webgl-context-lost
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/scene/optimize_your_scene#handling-webgl-context-lost
       */
     def doNotHandleContextLost: Boolean = js.native
     def doNotHandleContextLost_=(value: Boolean): Unit = js.native
@@ -2964,7 +2967,7 @@ object enginesThinEngineMod {
     
     /**
       * Gets the current alpha mode
-      * @see https://doc.babylonjs.com/resources/transparency_and_how_meshes_are_rendered
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/materials/advanced/transparent_rendering
       * @returns the current alpha mode
       */
     def getAlphaMode(): Double = js.native
@@ -3123,6 +3126,8 @@ object enginesThinEngineMod {
       */
     def inlineShaderCode(code: String): String = js.native
     
+    def isDisposed: Boolean = js.native
+    
     /**
       * Gets a boolean indicating if the engine is currently rendering in fullscreen mode
       */
@@ -3219,7 +3224,7 @@ object enginesThinEngineMod {
     
     /**
       * Records a vertex array object
-      * @see https://doc.babylonjs.com/features/webgl2#vertex-array-objects
+      * @see https://doc.babylonjs.com/setup/support/webGL2#vertex-array-objects
       * @param vertexBuffers defines the list of vertex buffers to store
       * @param indexBuffer defines the index buffer to store
       * @param effect defines the effect to store
@@ -3309,7 +3314,7 @@ object enginesThinEngineMod {
       * Sets the current alpha mode
       * @param mode defines the mode to use (one of the Engine.ALPHA_XXX)
       * @param noDepthWriteChange defines if depth writing state should remains unchanged (false by default)
-      * @see https://doc.babylonjs.com/resources/transparency_and_how_meshes_are_rendered
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/materials/advanced/transparent_rendering
       */
     def setAlphaMode(mode: Double): Unit = js.native
     def setAlphaMode(mode: Double, noDepthWriteChange: Boolean): Unit = js.native
@@ -3582,6 +3587,76 @@ object enginesThinEngineMod {
     def setTextureSampler(name: String, sampler: Nullable[TextureSampler]): Unit = js.native
     
     /**
+      * Set the value of an uniform to a number (unsigned int)
+      * @param uniform defines the webGL uniform location where to store the value
+      * @param value defines the unsigned int number to store
+      * @returns true if the value was set
+      */
+    def setUInt(uniform: Nullable[WebGLUniformLocation], value: Double): Boolean = js.native
+    
+    /**
+      * Set the value of an uniform to a unsigned int2
+      * @param uniform defines the webGL uniform location where to store the value
+      * @param x defines the 1st component of the value
+      * @param y defines the 2nd component of the value
+      * @returns true if the value was set
+      */
+    def setUInt2(uniform: Nullable[WebGLUniformLocation], x: Double, y: Double): Boolean = js.native
+    
+    /**
+      * Set the value of an uniform to a unsigned int3
+      * @param uniform defines the webGL uniform location where to store the value
+      * @param x defines the 1st component of the value
+      * @param y defines the 2nd component of the value
+      * @param z defines the 3rd component of the value
+      * @returns true if the value was set
+      */
+    def setUInt3(uniform: Nullable[WebGLUniformLocation], x: Double, y: Double, z: Double): Boolean = js.native
+    
+    /**
+      * Set the value of an uniform to a unsigned int4
+      * @param uniform defines the webGL uniform location where to store the value
+      * @param x defines the 1st component of the value
+      * @param y defines the 2nd component of the value
+      * @param z defines the 3rd component of the value
+      * @param w defines the 4th component of the value
+      * @returns true if the value was set
+      */
+    def setUInt4(uniform: Nullable[WebGLUniformLocation], x: Double, y: Double, z: Double, w: Double): Boolean = js.native
+    
+    /**
+      * Set the value of an uniform to an array of unsigned int32
+      * @param uniform defines the webGL uniform location where to store the value
+      * @param array defines the array of unsigned int32 to store
+      * @returns true if the value was set
+      */
+    def setUIntArray(uniform: Nullable[WebGLUniformLocation], array: js.typedarray.Uint32Array): Boolean = js.native
+    
+    /**
+      * Set the value of an uniform to an array of unsigned int32 (stored as vec2)
+      * @param uniform defines the webGL uniform location where to store the value
+      * @param array defines the array of unsigned int32 to store
+      * @returns true if the value was set
+      */
+    def setUIntArray2(uniform: Nullable[WebGLUniformLocation], array: js.typedarray.Uint32Array): Boolean = js.native
+    
+    /**
+      * Set the value of an uniform to an array of unsigned int32 (stored as vec3)
+      * @param uniform defines the webGL uniform location where to store the value
+      * @param array defines the array of unsigned int32 to store
+      * @returns true if the value was set
+      */
+    def setUIntArray3(uniform: Nullable[WebGLUniformLocation], array: js.typedarray.Uint32Array): Boolean = js.native
+    
+    /**
+      * Set the value of an uniform to an array of unsigned int32 (stored as vec4)
+      * @param uniform defines the webGL uniform location where to store the value
+      * @param array defines the array of unsigned int32 to store
+      * @returns true if the value was set
+      */
+    def setUIntArray4(uniform: Nullable[WebGLUniformLocation], array: js.typedarray.Uint32Array): Boolean = js.native
+    
+    /**
       * Set the WebGL's viewport
       * @param viewport defines the viewport element to be used
       * @param requiredWidth defines the width required for rendering. If not provided the rendering canvas' width is used
@@ -3629,6 +3704,11 @@ object enginesThinEngineMod {
     def snapshotRendering_=(activate: Boolean): Unit = js.native
     
     /**
+      * The time (in milliseconds elapsed since the current page has been loaded) when the engine was initialized
+      */
+    val startTime: Double = js.native
+    
+    /**
       * Gets the stencil state manager
       */
     def stencilState: StencilState = js.native
@@ -3647,7 +3727,7 @@ object enginesThinEngineMod {
     
     /**
       * Gets a boolean indicating that the engine supports uniform buffers
-      * @see https://doc.babylonjs.com/features/webgl2#uniform-buffer-objets
+      * @see https://doc.babylonjs.com/setup/support/webGL2#uniform-buffer-objets
       */
     def supportsUniformBuffers: Boolean = js.native
     
@@ -3752,7 +3832,7 @@ object enginesThinEngineMod {
     
     /**
       * Update the sample count for a given multiple render target texture
-      * @see https://doc.babylonjs.com/features/webgl2#multisample-render-targets
+      * @see https://doc.babylonjs.com/setup/support/webGL2#multisample-render-targets
       * @param rtWrapper defines the render target wrapper to update
       * @param samples defines the sample count to set
       * @param initializeBuffers if set to true, the engine will make an initializing call of drawBuffers
@@ -3910,7 +3990,7 @@ object enginesThinEngineMod {
     
     /**
       * Updates the sample count of a render target texture
-      * @see https://doc.babylonjs.com/features/webgl2#multisample-render-targets
+      * @see https://doc.babylonjs.com/setup/support/webGL2#multisample-render-targets
       * @param rtWrapper defines the render target wrapper to update
       * @param samples defines the sample count to set
       * @returns the effective sample count (could be 0 if multisample render targets are not supported)
@@ -4061,7 +4141,7 @@ object enginesThinEngineMod {
     
     /**
       * Update an existing uniform buffer
-      * @see https://doc.babylonjs.com/features/webgl2#uniform-buffer-objets
+      * @see https://doc.babylonjs.com/setup/support/webGL2#uniform-buffer-objets
       * @param uniformBuffer defines the target uniform buffer
       * @param elements defines the content to update
       * @param offset defines the offset in the uniform buffer where update should start
@@ -4079,11 +4159,12 @@ object enginesThinEngineMod {
       * @param invertY defines if data must be stored with Y axis inverted
       */
     def updateVideoTexture(texture: Nullable[InternalTexture], video: HTMLVideoElement, invertY: Boolean): Unit = js.native
+    def updateVideoTexture(texture: Nullable[InternalTexture], video: Nullable[ExternalTexture], invertY: Boolean): Unit = js.native
     
     /**
       * Gets a boolean indicating if the exact sRGB conversions or faster approximations are used for converting to and from linear space.
       */
-    def useExactSrgbConversions: Boolean = js.native
+    val useExactSrgbConversions: Boolean = js.native
     
     /**
       * Gets or sets a boolean indicating if depth buffer should be reverse, going from far to near.
@@ -4167,7 +4248,7 @@ object enginesThinEngineMod {
     inline def NearestPOT(x: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("NearestPOT")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
-      * Queue a new function into the requested animation frame pool (ie. this function will be executed byt the browser for the next frame)
+      * Queue a new function into the requested animation frame pool (ie. this function will be executed by the browser (or the javascript engine) for the next frame)
       * @param func - the function to be called
       * @param requester - the object that will request the next frame. Falls back to window.
       * @returns frame number
@@ -4558,53 +4639,20 @@ object enginesThinEngineMod {
   
   trait EngineOptions
     extends StObject
+       with ThinEngineOptions
        with WebGLContextAttributes {
     
     /**
-      * Defines whether to adapt to the device's viewport characteristics (default: false)
-      */
-    var adaptToDeviceRatio: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * Defines if webaudio should be initialized as well
-      * @see https://doc.babylonjs.com/how_to/playing_sounds_and_music
-      */
-    var audioEngine: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * Specifies options for the audio engine
-      */
-    var audioEngineOptions: js.UndefOr[IAudioEngineOptions] = js.undefined
-    
-    /**
       * Defines if webvr should be enabled automatically
-      * @see https://doc.babylonjs.com/how_to/webvr_camera
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/cameras/webVRCamera
       */
     var autoEnableWebVR: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * Defines if animations should run using a deterministic lock step
-      * @see https://doc.babylonjs.com/babylon101/animations#deterministic-lockstep
-      */
-    var deterministicLockstep: js.UndefOr[Boolean] = js.undefined
-    
-    /**
       * Defines if webgl2 should be turned off even if supported
-      * @see https://doc.babylonjs.com/features/webgl2
+      * @see https://doc.babylonjs.com/setup/support/webGL2
       */
     var disableWebGL2Support: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * Defines that engine should ignore context lost events
-      * If this event happens when this parameter is true, you will have to reload the page to restore rendering
-      */
-    var doNotHandleContextLost: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * Defines that engine should ignore modifying touch action attribute and style
-      * If not handle, you might need to set it up on your side for expected touch devices behavior.
-      */
-    var doNotHandleTouchAction: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Will prevent the system from falling back to software implementation if a hardware device cannot be created
@@ -4619,32 +4667,9 @@ object enginesThinEngineMod {
     var forceSRGBBufferSupportState: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * Defines if the engine should no exceed a specified device ratio
-      * @see https://developer.mozilla.org/en-US/docs/Web/API/Window/devicePixelRatio
-      */
-    var limitDeviceRatio: js.UndefOr[Double] = js.undefined
-    
-    /** Defines the maximum steps to use with deterministic lock step mode */
-    var lockstepMaxSteps: js.UndefOr[Double] = js.undefined
-    
-    /** Defines the seconds between each deterministic lock step */
-    var timeStep: js.UndefOr[Double] = js.undefined
-    
-    /**
-      * True if the more expensive but exact conversions should be used for transforming colors to and from linear space within shaders.
-      * Otherwise, the default is to use a cheaper approximation.
-      */
-    var useExactSrgbConversions: js.UndefOr[Boolean] = js.undefined
-    
-    /**
       * Defines that engine should compile shaders with high precision floats (if supported). True by default
       */
     var useHighPrecisionFloats: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * Make the matrix computations to be performed in 64 bits instead of 32 bits. False by default
-      */
-    var useHighPrecisionMatrix: js.UndefOr[Boolean] = js.undefined
   }
   object EngineOptions {
     
@@ -4656,37 +4681,13 @@ object enginesThinEngineMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: EngineOptions] (val x: Self) extends AnyVal {
       
-      inline def setAdaptToDeviceRatio(value: Boolean): Self = StObject.set(x, "adaptToDeviceRatio", value.asInstanceOf[js.Any])
-      
-      inline def setAdaptToDeviceRatioUndefined: Self = StObject.set(x, "adaptToDeviceRatio", js.undefined)
-      
-      inline def setAudioEngine(value: Boolean): Self = StObject.set(x, "audioEngine", value.asInstanceOf[js.Any])
-      
-      inline def setAudioEngineOptions(value: IAudioEngineOptions): Self = StObject.set(x, "audioEngineOptions", value.asInstanceOf[js.Any])
-      
-      inline def setAudioEngineOptionsUndefined: Self = StObject.set(x, "audioEngineOptions", js.undefined)
-      
-      inline def setAudioEngineUndefined: Self = StObject.set(x, "audioEngine", js.undefined)
-      
       inline def setAutoEnableWebVR(value: Boolean): Self = StObject.set(x, "autoEnableWebVR", value.asInstanceOf[js.Any])
       
       inline def setAutoEnableWebVRUndefined: Self = StObject.set(x, "autoEnableWebVR", js.undefined)
       
-      inline def setDeterministicLockstep(value: Boolean): Self = StObject.set(x, "deterministicLockstep", value.asInstanceOf[js.Any])
-      
-      inline def setDeterministicLockstepUndefined: Self = StObject.set(x, "deterministicLockstep", js.undefined)
-      
       inline def setDisableWebGL2Support(value: Boolean): Self = StObject.set(x, "disableWebGL2Support", value.asInstanceOf[js.Any])
       
       inline def setDisableWebGL2SupportUndefined: Self = StObject.set(x, "disableWebGL2Support", js.undefined)
-      
-      inline def setDoNotHandleContextLost(value: Boolean): Self = StObject.set(x, "doNotHandleContextLost", value.asInstanceOf[js.Any])
-      
-      inline def setDoNotHandleContextLostUndefined: Self = StObject.set(x, "doNotHandleContextLost", js.undefined)
-      
-      inline def setDoNotHandleTouchAction(value: Boolean): Self = StObject.set(x, "doNotHandleTouchAction", value.asInstanceOf[js.Any])
-      
-      inline def setDoNotHandleTouchActionUndefined: Self = StObject.set(x, "doNotHandleTouchAction", js.undefined)
       
       inline def setFailIfMajorPerformanceCaveat(value: Boolean): Self = StObject.set(x, "failIfMajorPerformanceCaveat", value.asInstanceOf[js.Any])
       
@@ -4696,29 +4697,9 @@ object enginesThinEngineMod {
       
       inline def setForceSRGBBufferSupportStateUndefined: Self = StObject.set(x, "forceSRGBBufferSupportState", js.undefined)
       
-      inline def setLimitDeviceRatio(value: Double): Self = StObject.set(x, "limitDeviceRatio", value.asInstanceOf[js.Any])
-      
-      inline def setLimitDeviceRatioUndefined: Self = StObject.set(x, "limitDeviceRatio", js.undefined)
-      
-      inline def setLockstepMaxSteps(value: Double): Self = StObject.set(x, "lockstepMaxSteps", value.asInstanceOf[js.Any])
-      
-      inline def setLockstepMaxStepsUndefined: Self = StObject.set(x, "lockstepMaxSteps", js.undefined)
-      
-      inline def setTimeStep(value: Double): Self = StObject.set(x, "timeStep", value.asInstanceOf[js.Any])
-      
-      inline def setTimeStepUndefined: Self = StObject.set(x, "timeStep", js.undefined)
-      
-      inline def setUseExactSrgbConversions(value: Boolean): Self = StObject.set(x, "useExactSrgbConversions", value.asInstanceOf[js.Any])
-      
-      inline def setUseExactSrgbConversionsUndefined: Self = StObject.set(x, "useExactSrgbConversions", js.undefined)
-      
       inline def setUseHighPrecisionFloats(value: Boolean): Self = StObject.set(x, "useHighPrecisionFloats", value.asInstanceOf[js.Any])
       
       inline def setUseHighPrecisionFloatsUndefined: Self = StObject.set(x, "useHighPrecisionFloats", js.undefined)
-      
-      inline def setUseHighPrecisionMatrix(value: Boolean): Self = StObject.set(x, "useHighPrecisionMatrix", value.asInstanceOf[js.Any])
-      
-      inline def setUseHighPrecisionMatrixUndefined: Self = StObject.set(x, "useHighPrecisionMatrix", js.undefined)
     }
   }
   
@@ -4766,6 +4747,148 @@ object enginesThinEngineMod {
       inline def setOfflineProvider(value: IOfflineProvider): Self = StObject.set(x, "offlineProvider", value.asInstanceOf[js.Any])
       
       inline def setRemovePendingData(value: Any => Unit): Self = StObject.set(x, "removePendingData", js.Any.fromFunction1(value))
+    }
+  }
+  
+  trait ThinEngineOptions extends StObject {
+    
+    /**
+      * Defines whether to adapt to the device's viewport characteristics (default: false)
+      */
+    var adaptToDeviceRatio: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Defines whether MSAA is enabled on the canvas.
+      */
+    var antialias: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Defines if webaudio should be initialized as well
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/audio/playingSoundsMusic
+      */
+    var audioEngine: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Specifies options for the audio engine
+      */
+    var audioEngineOptions: js.UndefOr[IAudioEngineOptions] = js.undefined
+    
+    /**
+      * Defines if animations should run using a deterministic lock step
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/animation/advanced_animations#deterministic-lockstep
+      */
+    var deterministicLockstep: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Defines that engine should ignore context lost events
+      * If this event happens when this parameter is true, you will have to reload the page to restore rendering
+      */
+    var doNotHandleContextLost: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Defines that engine should ignore modifying touch action attribute and style
+      * If not handle, you might need to set it up on your side for expected touch devices behavior.
+      */
+    var doNotHandleTouchAction: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Defines if the engine should no exceed a specified device ratio
+      * @see https://developer.mozilla.org/en-US/docs/Web/API/Window/devicePixelRatio
+      */
+    var limitDeviceRatio: js.UndefOr[Double] = js.undefined
+    
+    /** Defines the maximum steps to use with deterministic lock step mode */
+    var lockstepMaxSteps: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * Defines whether the canvas should be created in "premultiplied" mode (if false, the canvas is created in the "opaque" mode) (true by default)
+      */
+    var premultipliedAlpha: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Defines whether the stencil buffer should be enabled.
+      */
+    var stencil: js.UndefOr[Boolean] = js.undefined
+    
+    /** Defines the seconds between each deterministic lock step */
+    var timeStep: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * True if the more expensive but exact conversions should be used for transforming colors to and from linear space within shaders.
+      * Otherwise, the default is to use a cheaper approximation.
+      */
+    var useExactSrgbConversions: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Make the matrix computations to be performed in 64 bits instead of 32 bits. False by default
+      */
+    var useHighPrecisionMatrix: js.UndefOr[Boolean] = js.undefined
+  }
+  object ThinEngineOptions {
+    
+    inline def apply(): ThinEngineOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ThinEngineOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThinEngineOptions] (val x: Self) extends AnyVal {
+      
+      inline def setAdaptToDeviceRatio(value: Boolean): Self = StObject.set(x, "adaptToDeviceRatio", value.asInstanceOf[js.Any])
+      
+      inline def setAdaptToDeviceRatioUndefined: Self = StObject.set(x, "adaptToDeviceRatio", js.undefined)
+      
+      inline def setAntialias(value: Boolean): Self = StObject.set(x, "antialias", value.asInstanceOf[js.Any])
+      
+      inline def setAntialiasUndefined: Self = StObject.set(x, "antialias", js.undefined)
+      
+      inline def setAudioEngine(value: Boolean): Self = StObject.set(x, "audioEngine", value.asInstanceOf[js.Any])
+      
+      inline def setAudioEngineOptions(value: IAudioEngineOptions): Self = StObject.set(x, "audioEngineOptions", value.asInstanceOf[js.Any])
+      
+      inline def setAudioEngineOptionsUndefined: Self = StObject.set(x, "audioEngineOptions", js.undefined)
+      
+      inline def setAudioEngineUndefined: Self = StObject.set(x, "audioEngine", js.undefined)
+      
+      inline def setDeterministicLockstep(value: Boolean): Self = StObject.set(x, "deterministicLockstep", value.asInstanceOf[js.Any])
+      
+      inline def setDeterministicLockstepUndefined: Self = StObject.set(x, "deterministicLockstep", js.undefined)
+      
+      inline def setDoNotHandleContextLost(value: Boolean): Self = StObject.set(x, "doNotHandleContextLost", value.asInstanceOf[js.Any])
+      
+      inline def setDoNotHandleContextLostUndefined: Self = StObject.set(x, "doNotHandleContextLost", js.undefined)
+      
+      inline def setDoNotHandleTouchAction(value: Boolean): Self = StObject.set(x, "doNotHandleTouchAction", value.asInstanceOf[js.Any])
+      
+      inline def setDoNotHandleTouchActionUndefined: Self = StObject.set(x, "doNotHandleTouchAction", js.undefined)
+      
+      inline def setLimitDeviceRatio(value: Double): Self = StObject.set(x, "limitDeviceRatio", value.asInstanceOf[js.Any])
+      
+      inline def setLimitDeviceRatioUndefined: Self = StObject.set(x, "limitDeviceRatio", js.undefined)
+      
+      inline def setLockstepMaxSteps(value: Double): Self = StObject.set(x, "lockstepMaxSteps", value.asInstanceOf[js.Any])
+      
+      inline def setLockstepMaxStepsUndefined: Self = StObject.set(x, "lockstepMaxSteps", js.undefined)
+      
+      inline def setPremultipliedAlpha(value: Boolean): Self = StObject.set(x, "premultipliedAlpha", value.asInstanceOf[js.Any])
+      
+      inline def setPremultipliedAlphaUndefined: Self = StObject.set(x, "premultipliedAlpha", js.undefined)
+      
+      inline def setStencil(value: Boolean): Self = StObject.set(x, "stencil", value.asInstanceOf[js.Any])
+      
+      inline def setStencilUndefined: Self = StObject.set(x, "stencil", js.undefined)
+      
+      inline def setTimeStep(value: Double): Self = StObject.set(x, "timeStep", value.asInstanceOf[js.Any])
+      
+      inline def setTimeStepUndefined: Self = StObject.set(x, "timeStep", js.undefined)
+      
+      inline def setUseExactSrgbConversions(value: Boolean): Self = StObject.set(x, "useExactSrgbConversions", value.asInstanceOf[js.Any])
+      
+      inline def setUseExactSrgbConversionsUndefined: Self = StObject.set(x, "useExactSrgbConversions", js.undefined)
+      
+      inline def setUseHighPrecisionMatrix(value: Boolean): Self = StObject.set(x, "useHighPrecisionMatrix", value.asInstanceOf[js.Any])
+      
+      inline def setUseHighPrecisionMatrixUndefined: Self = StObject.set(x, "useHighPrecisionMatrix", js.undefined)
     }
   }
 }

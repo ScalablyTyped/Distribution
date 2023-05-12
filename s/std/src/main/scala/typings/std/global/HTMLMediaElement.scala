@@ -1,5 +1,10 @@
 package typings.std.global
 
+import typings.std.stdInts.`0`
+import typings.std.stdInts.`1`
+import typings.std.stdInts.`2`
+import typings.std.stdInts.`3`
+import typings.std.stdInts.`4`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,10 +40,6 @@ open class HTMLMediaElement ()
   /* standard dom */
   /* CompleteClass */
   var ariaColIndex: java.lang.String | Null = js.native
-  
-  /* standard dom */
-  /* CompleteClass */
-  var ariaColIndexText: java.lang.String | Null = js.native
   
   /* standard dom */
   /* CompleteClass */
@@ -134,10 +135,6 @@ open class HTMLMediaElement ()
   
   /* standard dom */
   /* CompleteClass */
-  var ariaRowIndexText: java.lang.String | Null = js.native
-  
-  /* standard dom */
-  /* CompleteClass */
   var ariaRowSpan: java.lang.String | Null = js.native
   
   /* standard dom */
@@ -215,45 +212,45 @@ object HTMLMediaElement {
   /* standard dom */
   @JSGlobal("HTMLMediaElement.HAVE_CURRENT_DATA")
   @js.native
-  val HAVE_CURRENT_DATA: Double = js.native
+  val HAVE_CURRENT_DATA: `2` = js.native
   
   /* standard dom */
   @JSGlobal("HTMLMediaElement.HAVE_ENOUGH_DATA")
   @js.native
-  val HAVE_ENOUGH_DATA: Double = js.native
+  val HAVE_ENOUGH_DATA: `4` = js.native
   
   /* standard dom */
   @JSGlobal("HTMLMediaElement.HAVE_FUTURE_DATA")
   @js.native
-  val HAVE_FUTURE_DATA: Double = js.native
+  val HAVE_FUTURE_DATA: `3` = js.native
   
   /* standard dom */
   @JSGlobal("HTMLMediaElement.HAVE_METADATA")
   @js.native
-  val HAVE_METADATA: Double = js.native
+  val HAVE_METADATA: `1` = js.native
   
   /* standard dom */
   @JSGlobal("HTMLMediaElement.HAVE_NOTHING")
   @js.native
-  val HAVE_NOTHING: Double = js.native
+  val HAVE_NOTHING: `0` = js.native
   
   /* standard dom */
   @JSGlobal("HTMLMediaElement.NETWORK_EMPTY")
   @js.native
-  val NETWORK_EMPTY: Double = js.native
+  val NETWORK_EMPTY: `0` = js.native
   
   /* standard dom */
   @JSGlobal("HTMLMediaElement.NETWORK_IDLE")
   @js.native
-  val NETWORK_IDLE: Double = js.native
+  val NETWORK_IDLE: `1` = js.native
   
   /* standard dom */
   @JSGlobal("HTMLMediaElement.NETWORK_LOADING")
   @js.native
-  val NETWORK_LOADING: Double = js.native
+  val NETWORK_LOADING: `2` = js.native
   
   /* standard dom */
   @JSGlobal("HTMLMediaElement.NETWORK_NO_SOURCE")
   @js.native
-  val NETWORK_NO_SOURCE: Double = js.native
+  val NETWORK_NO_SOURCE: `3` = js.native
 }

@@ -24,7 +24,7 @@ object srcMaterialsShaderMaterialMod {
     var clipping: Boolean = js.native
     
     /**
-      * @default { 'color': [ 1, 1, 1 ], 'uv': [ 0, 0 ], 'uv2': [ 0, 0 ] }
+      * @default { 'color': [ 1, 1, 1 ], 'uv': [ 0, 0 ], 'uv1': [ 0, 0 ] }
       */
     var defaultAttributeValues: Any = js.native
     

@@ -22,7 +22,7 @@ trait IpamScope extends StObject {
   var IpamRegion: js.UndefOr[String] = js.undefined
   
   /**
-    * The ARN of the scope.
+    * The Amazon Resource Name (ARN) of the scope.
     */
   var IpamScopeArn: js.UndefOr[ResourceArn] = js.undefined
   

@@ -11,7 +11,6 @@ import typings.react.mod.ReactElement
 import typings.react.mod.RefObject
 import typings.react.mod.ValidationMap
 import typings.std.HTMLButtonElement
-import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -73,10 +72,8 @@ object libButtonButtonMod {
     
     var glyph: js.UndefOr[String] = js.undefined
     
-    @JSName("onClick")
-    var onClick_ButtonProps: js.UndefOr[
-        js.Function1[/* event */ typings.react.mod.MouseEvent[HTMLButtonElement, MouseEvent], Unit]
-      ] = js.undefined
+    /** Determines whether the icon should be placed before the text */
+    var iconBeforeText: js.UndefOr[Boolean] = js.undefined
     
     var option: js.UndefOr[ButtonOptions] = js.undefined
     
@@ -114,9 +111,9 @@ object libButtonButtonMod {
       
       inline def setGlyphUndefined: Self = StObject.set(x, "glyph", js.undefined)
       
-      inline def setOnClick(value: /* event */ typings.react.mod.MouseEvent[HTMLButtonElement, MouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setIconBeforeText(value: Boolean): Self = StObject.set(x, "iconBeforeText", value.asInstanceOf[js.Any])
       
-      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      inline def setIconBeforeTextUndefined: Self = StObject.set(x, "iconBeforeText", js.undefined)
       
       inline def setOption(value: ButtonOptions): Self = StObject.set(x, "option", value.asInstanceOf[js.Any])
       

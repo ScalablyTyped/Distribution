@@ -1,14 +1,14 @@
 package typings.angularCompilerCli
 
-import typings.angularCompilerCli.angularCompilerCliStrings.component
-import typings.angularCompilerCli.angularCompilerCliStrings.directive
-import typings.angularCompilerCli.angularCompilerCliStrings.pipe
+import typings.angularCompilerCli.angularCompilerCliStrings.component_
+import typings.angularCompilerCli.angularCompilerCliStrings.directive_
+import typings.angularCompilerCli.angularCompilerCliStrings.pipe_
+import typings.angularCompilerCli.anon.ClassDeclarationDeclarati
 import typings.angularCompilerCli.srcNgtscImportsMod.Reference
 import typings.angularCompilerCli.srcNgtscImportsMod.ReferenceEmitter
 import typings.angularCompilerCli.srcNgtscImportsSrcAliasMod.AliasingHost
+import typings.angularCompilerCli.srcNgtscMetadataMod.HostDirectivesResolver
 import typings.angularCompilerCli.srcNgtscMetadataSrcApiMod.MetadataReader
-import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.ClassDeclaration
-import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.DeclarationNode
 import typings.angularCompilerCli.srcNgtscScopeSrcApiMod.ComponentScopeReader
 import typings.angularCompilerCli.srcNgtscScopeSrcDependencyMod.DtsModuleScopeResolver
 import typings.typescript.mod.Diagnostic
@@ -77,21 +77,25 @@ object srcNgtscScopeMod {
   @js.native
   open class TypeCheckScopeRegistry protected ()
     extends typings.angularCompilerCli.srcNgtscScopeSrcTypecheckMod.TypeCheckScopeRegistry {
-    def this(scopeReader: ComponentScopeReader, metaReader: MetadataReader) = this()
+    def this(
+      scopeReader: ComponentScopeReader,
+      metaReader: MetadataReader,
+      hostDirectivesResolver: HostDirectivesResolver
+    ) = this()
   }
   
   inline def makeNotStandaloneDiagnostic(
     scopeReader: ComponentScopeReader,
-    ref: Reference[ClassDeclaration[DeclarationNode]],
+    ref: Reference[ClassDeclarationDeclarati],
     rawExpr: Null,
-    kind: component | directive | pipe
+    kind: component_ | directive_ | pipe_
   ): Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("makeNotStandaloneDiagnostic")(scopeReader.asInstanceOf[js.Any], ref.asInstanceOf[js.Any], rawExpr.asInstanceOf[js.Any], kind.asInstanceOf[js.Any])).asInstanceOf[Diagnostic]
   inline def makeNotStandaloneDiagnostic(
     scopeReader: ComponentScopeReader,
-    ref: Reference[ClassDeclaration[DeclarationNode]],
+    ref: Reference[ClassDeclarationDeclarati],
     rawExpr: Expression,
-    kind: component | directive | pipe
+    kind: component_ | directive_ | pipe_
   ): Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("makeNotStandaloneDiagnostic")(scopeReader.asInstanceOf[js.Any], ref.asInstanceOf[js.Any], rawExpr.asInstanceOf[js.Any], kind.asInstanceOf[js.Any])).asInstanceOf[Diagnostic]
   
-  inline def makeUnknownComponentImportDiagnostic(ref: Reference[ClassDeclaration[DeclarationNode]], rawExpr: Expression): DiagnosticWithLocation = (^.asInstanceOf[js.Dynamic].applyDynamic("makeUnknownComponentImportDiagnostic")(ref.asInstanceOf[js.Any], rawExpr.asInstanceOf[js.Any])).asInstanceOf[DiagnosticWithLocation]
+  inline def makeUnknownComponentImportDiagnostic(ref: Reference[ClassDeclarationDeclarati], rawExpr: Expression): DiagnosticWithLocation = (^.asInstanceOf[js.Dynamic].applyDynamic("makeUnknownComponentImportDiagnostic")(ref.asInstanceOf[js.Any], rawExpr.asInstanceOf[js.Any])).asInstanceOf[DiagnosticWithLocation]
 }

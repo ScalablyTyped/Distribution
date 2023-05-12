@@ -24,11 +24,6 @@ trait ExplanationOfBenefitDiagnosis
   var onAdmission: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
-    * For example, DRG (Diagnosis Related Group) or a bundled billing code. A patient may have a diagnosis of a Myocardio-infarction and a DRG for HeartAttack would assigned. The Claim item (and possible subsequent claims) would refer to the DRG for those line items that were for services related to the heart attack event.
-    */
-  var packageCode: js.UndefOr[CodeableConcept] = js.undefined
-  
-  /**
     * Diagnosis are presented in list order to their expected importance: primary, secondary, etc.
     */
   var sequence: Double
@@ -59,10 +54,6 @@ object ExplanationOfBenefitDiagnosis {
     inline def setOnAdmission(value: CodeableConcept): Self = StObject.set(x, "onAdmission", value.asInstanceOf[js.Any])
     
     inline def setOnAdmissionUndefined: Self = StObject.set(x, "onAdmission", js.undefined)
-    
-    inline def setPackageCode(value: CodeableConcept): Self = StObject.set(x, "packageCode", value.asInstanceOf[js.Any])
-    
-    inline def setPackageCodeUndefined: Self = StObject.set(x, "packageCode", js.undefined)
     
     inline def setSequence(value: Double): Self = StObject.set(x, "sequence", value.asInstanceOf[js.Any])
     

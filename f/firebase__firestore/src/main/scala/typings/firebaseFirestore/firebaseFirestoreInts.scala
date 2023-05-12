@@ -4,10 +4,9 @@ import typings.firebaseFirestore.distFirestoreSrcCoreTypesMod.OnlineStateSource
 import typings.firebaseFirestore.distFirestoreSrcCoreViewSnapshotMod.SyncState
 import typings.firebaseFirestore.distFirestoreSrcLiteApiUserDataReaderMod.UserDataSource
 import typings.firebaseFirestore.distFirestoreSrcRemoteWatchChangeMod.WatchTargetChangeState
-import typings.firebaseFirestore.distInternalMod.ChangeType
 import typings.firebaseFirestore.distLiteFirestoreSrcLocalIndexManagerMod.IndexType
+import typings.firebaseFirestore.distLiteInternalMod.ChangeType
 import typings.firebaseFirestore.distLiteInternalMod.MutationType
-import typings.firebaseFirestore.distLitePackagesFirestoreSrcLocalTargetDataMod.TargetPurpose
 import typings.firebaseFirestore.distLitePackagesFirestoreSrcModelTypeOrderMod.TypeOrder
 import typings.firebaseFirestore.distPackagesFirestoreSrcModelFieldIndexMod.IndexKind
 import typings.firebaseFirestore.distPackagesFirestoreSrcRemoteConnectivityMonitorMod.NetworkStatus
@@ -25,22 +24,28 @@ object firebaseFirestoreInts {
   sealed trait `0`
     extends StObject
        with ChangeType
+       with typings.firebaseFirestore.distInternalMod.ChangeType
        with typings.firebaseFirestore.distFirestoreSrcCoreViewSnapshotMod.ChangeType
        with typings.firebaseFirestore.distLiteFirestoreSrcCoreViewSnapshotMod.ChangeType
        with typings.firebaseFirestore.distLitePackagesFirestoreSrcCoreViewSnapshotMod.ChangeType
+       with typings.firebaseFirestore.distLitePrivateMod.ChangeType
        with typings.firebaseFirestore.distPrivateMod.ChangeType
        with typings.firebaseFirestore.distPackagesFirestoreSrcCoreViewSnapshotMod.ChangeType
        with IndexKind
        with typings.firebaseFirestore.distFirestoreSrcModelFieldIndexMod.IndexKind
+       with typings.firebaseFirestore.distLiteInternalMod.IndexKind
        with typings.firebaseFirestore.distLiteFirestoreSrcModelFieldIndexMod.IndexKind
        with typings.firebaseFirestore.distInternalMod.IndexKind
        with typings.firebaseFirestore.distLitePackagesFirestoreSrcModelFieldIndexMod.IndexKind
+       with typings.firebaseFirestore.distLitePrivateMod.IndexKind
        with typings.firebaseFirestore.distPrivateMod.IndexKind
        with IndexType
+       with typings.firebaseFirestore.distLiteInternalMod.IndexType
        with typings.firebaseFirestore.distFirestoreSrcLocalIndexManagerMod.IndexType
        with typings.firebaseFirestore.distInternalMod.IndexType
        with typings.firebaseFirestore.distPackagesFirestoreSrcLocalIndexManagerMod.IndexType
        with typings.firebaseFirestore.distLitePackagesFirestoreSrcLocalIndexManagerMod.IndexType
+       with typings.firebaseFirestore.distLitePrivateMod.IndexType
        with typings.firebaseFirestore.distPrivateMod.IndexType
        with MutationType
        with typings.firebaseFirestore.distFirestoreSrcModelMutationMod.MutationType
@@ -62,12 +67,6 @@ object firebaseFirestoreInts {
        with typings.firebaseFirestore.distLiteFirestoreSrcCoreViewSnapshotMod.SyncState
        with typings.firebaseFirestore.distLitePackagesFirestoreSrcCoreViewSnapshotMod.SyncState
        with typings.firebaseFirestore.distPackagesFirestoreSrcCoreViewSnapshotMod.SyncState
-       with TargetPurpose
-       with typings.firebaseFirestore.distInternalMod.TargetPurpose
-       with typings.firebaseFirestore.distFirestoreSrcLocalTargetDataMod.TargetPurpose
-       with typings.firebaseFirestore.distPackagesFirestoreSrcLocalTargetDataMod.TargetPurpose
-       with typings.firebaseFirestore.distPrivateMod.TargetPurpose
-       with typings.firebaseFirestore.distLiteFirestoreSrcLocalTargetDataMod.TargetPurpose
        with TypeOrder
        with typings.firebaseFirestore.distFirestoreSrcModelTypeOrderMod.TypeOrder
        with typings.firebaseFirestore.distPackagesFirestoreSrcModelTypeOrderMod.TypeOrder
@@ -86,22 +85,28 @@ object firebaseFirestoreInts {
   sealed trait `1`
     extends StObject
        with ChangeType
+       with typings.firebaseFirestore.distInternalMod.ChangeType
        with typings.firebaseFirestore.distFirestoreSrcCoreViewSnapshotMod.ChangeType
        with typings.firebaseFirestore.distLiteFirestoreSrcCoreViewSnapshotMod.ChangeType
        with typings.firebaseFirestore.distLitePackagesFirestoreSrcCoreViewSnapshotMod.ChangeType
+       with typings.firebaseFirestore.distLitePrivateMod.ChangeType
        with typings.firebaseFirestore.distPrivateMod.ChangeType
        with typings.firebaseFirestore.distPackagesFirestoreSrcCoreViewSnapshotMod.ChangeType
        with IndexKind
        with typings.firebaseFirestore.distFirestoreSrcModelFieldIndexMod.IndexKind
+       with typings.firebaseFirestore.distLiteInternalMod.IndexKind
        with typings.firebaseFirestore.distLiteFirestoreSrcModelFieldIndexMod.IndexKind
        with typings.firebaseFirestore.distInternalMod.IndexKind
        with typings.firebaseFirestore.distLitePackagesFirestoreSrcModelFieldIndexMod.IndexKind
+       with typings.firebaseFirestore.distLitePrivateMod.IndexKind
        with typings.firebaseFirestore.distPrivateMod.IndexKind
        with IndexType
+       with typings.firebaseFirestore.distLiteInternalMod.IndexType
        with typings.firebaseFirestore.distFirestoreSrcLocalIndexManagerMod.IndexType
        with typings.firebaseFirestore.distInternalMod.IndexType
        with typings.firebaseFirestore.distPackagesFirestoreSrcLocalIndexManagerMod.IndexType
        with typings.firebaseFirestore.distLitePackagesFirestoreSrcLocalIndexManagerMod.IndexType
+       with typings.firebaseFirestore.distLitePrivateMod.IndexType
        with typings.firebaseFirestore.distPrivateMod.IndexType
        with MutationType
        with typings.firebaseFirestore.distFirestoreSrcModelMutationMod.MutationType
@@ -123,12 +128,6 @@ object firebaseFirestoreInts {
        with typings.firebaseFirestore.distLiteFirestoreSrcCoreViewSnapshotMod.SyncState
        with typings.firebaseFirestore.distLitePackagesFirestoreSrcCoreViewSnapshotMod.SyncState
        with typings.firebaseFirestore.distPackagesFirestoreSrcCoreViewSnapshotMod.SyncState
-       with TargetPurpose
-       with typings.firebaseFirestore.distInternalMod.TargetPurpose
-       with typings.firebaseFirestore.distFirestoreSrcLocalTargetDataMod.TargetPurpose
-       with typings.firebaseFirestore.distPackagesFirestoreSrcLocalTargetDataMod.TargetPurpose
-       with typings.firebaseFirestore.distPrivateMod.TargetPurpose
-       with typings.firebaseFirestore.distLiteFirestoreSrcLocalTargetDataMod.TargetPurpose
        with TypeOrder
        with typings.firebaseFirestore.distFirestoreSrcModelTypeOrderMod.TypeOrder
        with typings.firebaseFirestore.distPackagesFirestoreSrcModelTypeOrderMod.TypeOrder
@@ -156,22 +155,28 @@ object firebaseFirestoreInts {
   sealed trait `2`
     extends StObject
        with ChangeType
+       with typings.firebaseFirestore.distInternalMod.ChangeType
        with typings.firebaseFirestore.distFirestoreSrcCoreViewSnapshotMod.ChangeType
        with typings.firebaseFirestore.distLiteFirestoreSrcCoreViewSnapshotMod.ChangeType
        with typings.firebaseFirestore.distLitePackagesFirestoreSrcCoreViewSnapshotMod.ChangeType
+       with typings.firebaseFirestore.distLitePrivateMod.ChangeType
        with typings.firebaseFirestore.distPrivateMod.ChangeType
        with typings.firebaseFirestore.distPackagesFirestoreSrcCoreViewSnapshotMod.ChangeType
        with IndexKind
        with typings.firebaseFirestore.distFirestoreSrcModelFieldIndexMod.IndexKind
+       with typings.firebaseFirestore.distLiteInternalMod.IndexKind
        with typings.firebaseFirestore.distLiteFirestoreSrcModelFieldIndexMod.IndexKind
        with typings.firebaseFirestore.distInternalMod.IndexKind
        with typings.firebaseFirestore.distLitePackagesFirestoreSrcModelFieldIndexMod.IndexKind
+       with typings.firebaseFirestore.distLitePrivateMod.IndexKind
        with typings.firebaseFirestore.distPrivateMod.IndexKind
        with IndexType
+       with typings.firebaseFirestore.distLiteInternalMod.IndexType
        with typings.firebaseFirestore.distFirestoreSrcLocalIndexManagerMod.IndexType
        with typings.firebaseFirestore.distInternalMod.IndexType
        with typings.firebaseFirestore.distPackagesFirestoreSrcLocalIndexManagerMod.IndexType
        with typings.firebaseFirestore.distLitePackagesFirestoreSrcLocalIndexManagerMod.IndexType
+       with typings.firebaseFirestore.distLitePrivateMod.IndexType
        with typings.firebaseFirestore.distPrivateMod.IndexType
        with MutationType
        with typings.firebaseFirestore.distFirestoreSrcModelMutationMod.MutationType
@@ -181,12 +186,6 @@ object firebaseFirestoreInts {
        with typings.firebaseFirestore.distPackagesFirestoreSrcModelMutationMod.MutationType
        with typings.firebaseFirestore.distLiteFirestoreSrcModelMutationMod.MutationType
        with typings.firebaseFirestore.distLitePackagesFirestoreSrcModelMutationMod.MutationType
-       with TargetPurpose
-       with typings.firebaseFirestore.distInternalMod.TargetPurpose
-       with typings.firebaseFirestore.distFirestoreSrcLocalTargetDataMod.TargetPurpose
-       with typings.firebaseFirestore.distPackagesFirestoreSrcLocalTargetDataMod.TargetPurpose
-       with typings.firebaseFirestore.distPrivateMod.TargetPurpose
-       with typings.firebaseFirestore.distLiteFirestoreSrcLocalTargetDataMod.TargetPurpose
        with TypeOrder
        with typings.firebaseFirestore.distFirestoreSrcModelTypeOrderMod.TypeOrder
        with typings.firebaseFirestore.distPackagesFirestoreSrcModelTypeOrderMod.TypeOrder
@@ -205,9 +204,11 @@ object firebaseFirestoreInts {
   sealed trait `3`
     extends StObject
        with ChangeType
+       with typings.firebaseFirestore.distInternalMod.ChangeType
        with typings.firebaseFirestore.distFirestoreSrcCoreViewSnapshotMod.ChangeType
        with typings.firebaseFirestore.distLiteFirestoreSrcCoreViewSnapshotMod.ChangeType
        with typings.firebaseFirestore.distLitePackagesFirestoreSrcCoreViewSnapshotMod.ChangeType
+       with typings.firebaseFirestore.distLitePrivateMod.ChangeType
        with typings.firebaseFirestore.distPrivateMod.ChangeType
        with typings.firebaseFirestore.distPackagesFirestoreSrcCoreViewSnapshotMod.ChangeType
        with MutationType

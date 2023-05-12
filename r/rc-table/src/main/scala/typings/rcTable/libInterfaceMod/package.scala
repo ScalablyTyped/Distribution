@@ -43,6 +43,7 @@ type ColumnsType[RecordType] = js.Array[ColumnGroupType[RecordType] | ColumnType
   - typings.rcTable.rcTableStrings.button
   - typings.rcTable.rcTableStrings.canvas
   - typings.rcTable.rcTableStrings.caption
+  - typings.rcTable.rcTableStrings.center
   - typings.rcTable.rcTableStrings.cite
   - typings.rcTable.rcTableStrings.code
   - typings.rcTable.rcTableStrings.col

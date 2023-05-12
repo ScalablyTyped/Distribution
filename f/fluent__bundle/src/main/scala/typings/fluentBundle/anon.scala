@@ -18,6 +18,12 @@ object anon {
   
   trait AllowOverrides extends StObject {
     
+    /**
+      * Boolean specifying whether it's allowed to override
+      * an existing message or term with a new value.
+      *
+      * Default: `false`.
+      */
     var allowOverrides: js.UndefOr[Boolean] = js.undefined
   }
   object AllowOverrides {
@@ -38,10 +44,17 @@ object anon {
   
   trait Functions extends StObject {
     
+    /** Additional functions available to translations as builtins. */
     var functions: js.UndefOr[Record[String, FluentFunction]] = js.undefined
     
+    /** A function used to transform string parts of patterns. */
     var transform: js.UndefOr[TextTransform] = js.undefined
     
+    /**
+      * Whether to use Unicode isolation marks (FSI, PDI) for bidi interpolations.
+      *
+      * Default: `true`.
+      */
     var useIsolating: js.UndefOr[Boolean] = js.undefined
   }
   object Functions {

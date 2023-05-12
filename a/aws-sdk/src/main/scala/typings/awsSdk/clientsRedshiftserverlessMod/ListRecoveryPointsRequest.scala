@@ -12,9 +12,14 @@ trait ListRecoveryPointsRequest extends StObject {
   var endTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * An optional parameter that specifies the maximum number of results to return. You can use nextToken to get the next page of results.
+    * An optional parameter that specifies the maximum number of results to return. You can use nextToken to display the next page of results.
     */
   var maxResults: js.UndefOr[ListRecoveryPointsRequestMaxResultsInteger] = js.undefined
+  
+  /**
+    * The Amazon Resource Name (ARN) of the namespace from which to list recovery points.
+    */
+  var namespaceArn: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the namespace to list recovery points for.
@@ -22,7 +27,7 @@ trait ListRecoveryPointsRequest extends StObject {
   var namespaceName: js.UndefOr[NamespaceName] = js.undefined
   
   /**
-    * If your initial ListRecoveryPoints operation returns a nextToken, you can include the returned nextToken in subsequent ListRecoveryPoints operations, which returns results in the next page.
+    * If your initial ListRecoveryPoints operation returns a nextToken, you can include the returned nextToken in following ListRecoveryPoints operations, which returns results in the next page.
     */
   var nextToken: js.UndefOr[String] = js.undefined
   
@@ -48,6 +53,10 @@ object ListRecoveryPointsRequest {
     inline def setMaxResults(value: ListRecoveryPointsRequestMaxResultsInteger): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
     inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    
+    inline def setNamespaceArn(value: String): Self = StObject.set(x, "namespaceArn", value.asInstanceOf[js.Any])
+    
+    inline def setNamespaceArnUndefined: Self = StObject.set(x, "namespaceArn", js.undefined)
     
     inline def setNamespaceName(value: NamespaceName): Self = StObject.set(x, "namespaceName", value.asInstanceOf[js.Any])
     

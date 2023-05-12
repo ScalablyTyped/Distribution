@@ -1,7 +1,7 @@
 package typings.pgPromise.anon
 
 import typings.pgPromise.mod.ITask
-import typings.pgPromise.mod.TransactionMode
+import typings.pgPromise.mod._txMode.TransactionMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

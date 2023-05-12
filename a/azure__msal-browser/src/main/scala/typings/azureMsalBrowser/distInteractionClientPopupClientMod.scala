@@ -3,6 +3,7 @@ package typings.azureMsalBrowser
 import typings.azureMsalBrowser.distBrokerNativeBrokerNativeMessageHandlerMod.NativeMessageHandler
 import typings.azureMsalBrowser.distCacheBrowserCacheManagerMod.BrowserCacheManager
 import typings.azureMsalBrowser.distConfigConfigurationMod.BrowserConfiguration
+import typings.azureMsalBrowser.distCryptoMsrBrowserCryptoMod.global.Window
 import typings.azureMsalBrowser.distEventEventHandlerMod.EventHandler
 import typings.azureMsalBrowser.distInteractionClientStandardInteractionClientMod.StandardInteractionClient
 import typings.azureMsalBrowser.distNavigationInavigationclientMod.INavigationClient
@@ -15,7 +16,6 @@ import typings.azureMsalCommon.distResponseAuthenticationResultMod.Authenticatio
 import typings.azureMsalCommon.distTelemetryPerformanceIperformanceclientMod.IPerformanceClient
 import typings.azureMsalCommon.mod.Logger
 import typings.std.Event
-import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

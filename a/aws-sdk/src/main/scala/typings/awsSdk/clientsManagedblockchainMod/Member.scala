@@ -57,7 +57,7 @@ trait Member extends StObject {
   var Status: js.UndefOr[MemberStatus] = js.undefined
   
   /**
-    * Tags assigned to the member. Tags consist of a key and optional value. For more information about tags, see Tagging Resources in the Amazon Managed Blockchain Hyperledger Fabric Developer Guide.
+    * Tags assigned to the member. Tags consist of a key and optional value. For more information about tags, see Tagging Resources in the Amazon Managed Blockchain Ethereum Developer Guide, or Tagging Resources in the Amazon Managed Blockchain Hyperledger Fabric Developer Guide.
     */
   var Tags: js.UndefOr[OutputTagMap] = js.undefined
 }

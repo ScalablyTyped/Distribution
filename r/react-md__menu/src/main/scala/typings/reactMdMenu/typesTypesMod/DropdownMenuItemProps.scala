@@ -100,7 +100,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.reactMdMenu.typesTypesMod.MenuItemProps because var conflicts: className, id. Inlined role, tabIndex, translate, inlist, threeLines, `aria-activedescendant`, onMouseEnter, onLoadedData, unselectable, placeholder, `aria-multiselectable`, title, slot, onClick, enablePressedAndRipple, onTouchStart, onDrop, `aria-grabbed`, children, rightAddonPosition, onDragOver, rippleClassNames, autoSave, onAnimationIteration, spellCheck, `aria-multiline`, about, dir, onPlaying, `aria-current`, height, itemType, disabled, `aria-relevant`, `aria-placeholder`, autoCorrect, onPointerMove, `aria-label`, `aria-rowcount`, onPaste, `aria-busy`, resource, onSeeked, onError, onTimeUpdate, `aria-roledescription`, color, disableProgrammaticRipple, onEnded, onPointerCancel, autoCapitalize, inputMode, onCompositionUpdate, onMouseMove, onSelect, onStalled, onPointerOut, onAuxClick, textChildren, `aria-autocomplete`, onCopy, textClassName, `aria-live`, handlers, `aria-keyshortcuts`, onDurationChange, `aria-orientation`, onVolumeChange, lang, `aria-owns`, secondaryTextClassName, `aria-atomic`, `aria-dropeffect`, property, style, is, onLoadedMetadata, `aria-labelledby`, onTransitionEnd, onMouseOver, leftAddonPosition, onChange, datatype, onDragStart, onSeeking, `aria-flowto`, leftAddon, onAnimationEnd, disableEnterClick, onCanPlay, `aria-readonly`, secondaryText, onMouseOut, onKeyDown, `aria-pressed`, onMouseLeave, contextMenu, onProgress, `aria-level`, contentEditable, rightAddonType, onPointerLeave, rightAddon, onMouseUp, onInput, itemRef, results, accessKey, `aria-haspopup`, `aria-posinset`, onInvalid, `aria-required`, vocab, `aria-describedby`, onSuspend, onLoad, onTouchCancel, onAnimationStart, onTouchMove, onPointerEnter, `aria-controls`, clickable, `aria-modal`, onDragEnter, onPointerOver, onWaiting, onReset, `aria-selected`, onPlay, onKeyUp, onMouseDown, radioGroup, onSubmit, onBeforeInput, nonce, `aria-disabled`, `aria-sort`, onCompositionStart, itemProp, security, `aria-valuemin`, disablePressedFallback, dangerouslySetInnerHTML, `aria-colcount`, onFocus, onCanPlayThrough, `aria-invalid`, disabledOpacity, onBlur, onDoubleClick, rippleTimeout, primaryText, `aria-valuemax`, `aria-details`, onContextMenu, disableSpacebarClick, defaultValue, suppressHydrationWarning, `aria-setsize`, onDragLeave, rippleClassName, onTouchEnd, onPause, `aria-checked`, defaultChecked, `aria-valuetext`, prefix, onEmptied, onPointerUp, forceAddonWrap, onCompositionEnd, `aria-colspan`, hidden, `aria-errormessage`, onScroll, onPointerDown, `aria-colindex`, onCut, suppressContentEditableWarning, `aria-hidden`, onAbort, onDragExit, `aria-valuenow`, disableRipple, onWheel, typeof, onDrag, `aria-expanded`, onResize, draggable, leftAddonType, onEncrypted, onDragEnd, `aria-rowindex`, itemScope, onRateChange, rippleContainerClassName, onKeyPress, onLoadStart, itemID, `aria-rowspan`
+- typings.reactMdMenu.typesTypesMod.MenuItemProps because var conflicts: className, id. Inlined role, tabIndex, translate, inlist, threeLines, `aria-activedescendant`, onMouseEnter, onLoadedData, unselectable, placeholder, `aria-multiselectable`, title, slot, onClick, enablePressedAndRipple, onTouchStart, onDrop, `aria-grabbed`, children, rightAddonPosition, onDragOver, rippleClassNames, autoSave, onAnimationIteration, spellCheck, `aria-multiline`, about, dir, onPlaying, `aria-current`, height, itemType, disabled, `aria-relevant`, `aria-placeholder`, autoCorrect, onPointerMove, `aria-label`, `aria-rowcount`, onPaste, `aria-busy`, resource, onSeeked, onError, onTimeUpdate, `aria-roledescription`, color, disableProgrammaticRipple, onEnded, onPointerCancel, autoCapitalize, inputMode, onCompositionUpdate, onMouseMove, onSelect, onStalled, onPointerOut, onAuxClick, textChildren, `aria-autocomplete`, onCopy, textClassName, `aria-live`, handlers, `aria-keyshortcuts`, onDurationChange, `aria-orientation`, onVolumeChange, lang, `aria-owns`, secondaryTextClassName, `aria-atomic`, `aria-dropeffect`, property, style, is, onLoadedMetadata, `aria-labelledby`, onTransitionEnd, onMouseOver, leftAddonPosition, onChange, datatype, onDragStart, onSeeking, `aria-flowto`, leftAddon, onAnimationEnd, disableEnterClick, onCanPlay, `aria-readonly`, secondaryText, onMouseOut, onKeyDown, `aria-pressed`, onMouseLeave, contextMenu, onProgress, `aria-level`, contentEditable, rightAddonType, onPointerLeave, rightAddon, onMouseUp, onInput, itemRef, autoFocus, results, accessKey, `aria-haspopup`, `aria-posinset`, onInvalid, `aria-required`, vocab, `aria-describedby`, onSuspend, onLoad, onTouchCancel, onAnimationStart, onTouchMove, onPointerEnter, `aria-controls`, rel, clickable, `aria-modal`, onDragEnter, onPointerOver, onWaiting, onReset, `aria-selected`, onPlay, onKeyUp, onMouseDown, radioGroup, onSubmit, onBeforeInput, content, nonce, `aria-disabled`, `aria-sort`, onCompositionStart, itemProp, security, `aria-valuemin`, disablePressedFallback, dangerouslySetInnerHTML, `aria-colcount`, onFocus, onCanPlayThrough, `aria-invalid`, disabledOpacity, onBlur, onDoubleClick, rippleTimeout, primaryText, `aria-valuemax`, `aria-details`, onContextMenu, disableSpacebarClick, defaultValue, suppressHydrationWarning, rev, `aria-setsize`, onDragLeave, rippleClassName, onTouchEnd, onPause, `aria-checked`, defaultChecked, `aria-valuetext`, prefix, onEmptied, onPointerUp, forceAddonWrap, onCompositionEnd, `aria-colspan`, hidden, `aria-errormessage`, onScroll, onPointerDown, `aria-colindex`, onCut, suppressContentEditableWarning, `aria-hidden`, onAbort, onDragExit, `aria-valuenow`, disableRipple, onWheel, typeof, onDrag, `aria-expanded`, onResize, draggable, leftAddonType, onEncrypted, onDragEnd, `aria-rowindex`, itemScope, onRateChange, rippleContainerClassName, onKeyPress, onLoadStart, itemID, `aria-rowspan`
 - typings.reactMdMenu.typesTypesMod.BaseMenuItemButtonProps because var conflicts: className. Inlined id, disableDropdownIcon, iconRotatorProps */ trait DropdownMenuItemProps
   extends StObject
      with BaseDropdownMenuProps
@@ -213,6 +213,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   
   var autoCorrect: js.UndefOr[String] = js.undefined
   
+  var autoFocus: js.UndefOr[Boolean] = js.undefined
+  
   var autoSave: js.UndefOr[String] = js.undefined
   
   /**
@@ -225,6 +227,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var clickable: js.UndefOr[Boolean] = js.undefined
   
   var color: js.UndefOr[String] = js.undefined
+  
+  var content: js.UndefOr[String] = js.undefined
   
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
   
@@ -484,9 +488,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   
   var radioGroup: js.UndefOr[String] = js.undefined
   
+  var rel: js.UndefOr[String] = js.undefined
+  
   var resource: js.UndefOr[String] = js.undefined
   
   var results: js.UndefOr[Double] = js.undefined
+  
+  var rev: js.UndefOr[String] = js.undefined
   
   var rightAddon: js.UndefOr[ReactNode] = js.undefined
   
@@ -767,6 +775,10 @@ object DropdownMenuItemProps {
     
     inline def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
     
+    inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+    
+    inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+    
     inline def setAutoSave(value: String): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
     
     inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
@@ -787,9 +799,13 @@ object DropdownMenuItemProps {
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    
     inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
     
     inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+    
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
     inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
     
@@ -1271,6 +1287,10 @@ object DropdownMenuItemProps {
     
     inline def setRadioGroupUndefined: Self = StObject.set(x, "radioGroup", js.undefined)
     
+    inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+    
+    inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+    
     inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
@@ -1278,6 +1298,10 @@ object DropdownMenuItemProps {
     inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
     inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+    
+    inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+    
+    inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
     
     inline def setRightAddon(value: ReactNode): Self = StObject.set(x, "rightAddon", value.asInstanceOf[js.Any])
     

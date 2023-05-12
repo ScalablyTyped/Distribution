@@ -36,9 +36,9 @@ object mod {
     
     var _nodeLoaders: Map[String, Any] = js.native
     
-    def load[T /* <: Any */, // tslint:disable-next-line:no-unnecessary-generics
+    def load[T /* <: Any */, // eslint-disable-next-line no-unnecessary-generics
     TLoader /* <: Loader[T, TOptions] */, TOptions /* <: Record[String, Any] */](node: GraphPointer[Term, DatasetCore[Quad, Quad]]): js.UndefOr[js.Promise[T] | T] = js.native
-    def load[T /* <: Any */, // tslint:disable-next-line:no-unnecessary-generics
+    def load[T /* <: Any */, // eslint-disable-next-line no-unnecessary-generics
     TLoader /* <: Loader[T, TOptions] */, TOptions /* <: Record[String, Any] */](node: GraphPointer[Term, DatasetCore[Quad, Quad]], options: TOptions): js.UndefOr[js.Promise[T] | T] = js.native
     
     def loader(node: GraphPointer[Term, DatasetCore[Quad, Quad]]): (Loader[Any, Any]) | Null = js.native

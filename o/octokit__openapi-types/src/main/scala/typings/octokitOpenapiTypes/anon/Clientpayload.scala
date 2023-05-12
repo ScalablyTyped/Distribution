@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Clientpayload extends StObject {
   
-  /** @description JSON payload with extra information about the webhook event that your action or workflow may use. */
+  /** @description JSON payload with extra information about the webhook event that your action or workflow may use. The maximum number of top-level properties is 10. */
   var client_payload: js.UndefOr[StringDictionary[Any]] = js.undefined
   
   /** @description A custom webhook event name. Must be 100 characters or fewer. */

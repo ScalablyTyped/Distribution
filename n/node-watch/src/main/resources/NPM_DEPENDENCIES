@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "node-watch" : "0.7.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "node-watch" : "0.7.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

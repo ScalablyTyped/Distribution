@@ -1,7 +1,7 @@
 
 # Scala.js typings for rc-virtual-list
 
-Typings are for version 3.4.8
+Typings are for version 3.4.13
 
 ## Library description:
 React Virtual List Component

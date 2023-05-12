@@ -189,6 +189,21 @@ trait CSSPseudoSelectorProps
   @JSName("::target-text")
   var `ColonColontarget-text`: js.UndefOr[SystemStyleObject] = js.undefined
   
+  @JSName("::view-transition")
+  var `ColonColonview-transition`: js.UndefOr[SystemStyleObject] = js.undefined
+  
+  @JSName("::view-transition-group")
+  var `ColonColonview-transition-group`: js.UndefOr[SystemStyleObject] = js.undefined
+  
+  @JSName("::view-transition-image-pair")
+  var `ColonColonview-transition-image-pair`: js.UndefOr[SystemStyleObject] = js.undefined
+  
+  @JSName("::view-transition-new")
+  var `ColonColonview-transition-new`: js.UndefOr[SystemStyleObject] = js.undefined
+  
+  @JSName("::view-transition-old")
+  var `ColonColonview-transition-old`: js.UndefOr[SystemStyleObject] = js.undefined
+  
   @JSName(":active")
   var Colonactive: js.UndefOr[SystemStyleObject] = js.undefined
   
@@ -759,6 +774,36 @@ object CSSPseudoSelectorProps {
     inline def `setColonColontarget-textNull`: Self = StObject.set(x, "::target-text", null)
     
     inline def `setColonColontarget-textUndefined`: Self = StObject.set(x, "::target-text", js.undefined)
+    
+    inline def `setColonColonview-transition`(value: SystemStyleObject): Self = StObject.set(x, "::view-transition", value.asInstanceOf[js.Any])
+    
+    inline def `setColonColonview-transition-group`(value: SystemStyleObject): Self = StObject.set(x, "::view-transition-group", value.asInstanceOf[js.Any])
+    
+    inline def `setColonColonview-transition-groupNull`: Self = StObject.set(x, "::view-transition-group", null)
+    
+    inline def `setColonColonview-transition-groupUndefined`: Self = StObject.set(x, "::view-transition-group", js.undefined)
+    
+    inline def `setColonColonview-transition-image-pair`(value: SystemStyleObject): Self = StObject.set(x, "::view-transition-image-pair", value.asInstanceOf[js.Any])
+    
+    inline def `setColonColonview-transition-image-pairNull`: Self = StObject.set(x, "::view-transition-image-pair", null)
+    
+    inline def `setColonColonview-transition-image-pairUndefined`: Self = StObject.set(x, "::view-transition-image-pair", js.undefined)
+    
+    inline def `setColonColonview-transition-new`(value: SystemStyleObject): Self = StObject.set(x, "::view-transition-new", value.asInstanceOf[js.Any])
+    
+    inline def `setColonColonview-transition-newNull`: Self = StObject.set(x, "::view-transition-new", null)
+    
+    inline def `setColonColonview-transition-newUndefined`: Self = StObject.set(x, "::view-transition-new", js.undefined)
+    
+    inline def `setColonColonview-transition-old`(value: SystemStyleObject): Self = StObject.set(x, "::view-transition-old", value.asInstanceOf[js.Any])
+    
+    inline def `setColonColonview-transition-oldNull`: Self = StObject.set(x, "::view-transition-old", null)
+    
+    inline def `setColonColonview-transition-oldUndefined`: Self = StObject.set(x, "::view-transition-old", js.undefined)
+    
+    inline def `setColonColonview-transitionNull`: Self = StObject.set(x, "::view-transition", null)
+    
+    inline def `setColonColonview-transitionUndefined`: Self = StObject.set(x, "::view-transition", js.undefined)
     
     inline def setColonactive(value: SystemStyleObject): Self = StObject.set(x, ":active", value.asInstanceOf[js.Any])
     

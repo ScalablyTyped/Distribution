@@ -95,7 +95,6 @@ object pluginsDialogMod {
   
   /**
     * Models a message box's message, title and options.
-    * @class
     */
   trait Box extends StObject {
     

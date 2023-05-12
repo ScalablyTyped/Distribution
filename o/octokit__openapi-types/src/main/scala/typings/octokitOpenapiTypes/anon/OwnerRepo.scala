@@ -6,23 +6,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait OwnerRepo extends StObject {
   
-  /** The account owner of the repository. The name is not case sensitive. */
   var owner: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['owner'] */ js.Any
   
-  /** The name of the repository. The name is not case sensitive. */
   var repo: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['repo'] */ js.Any
   
-  /** Unique identifier of the self-hosted runner. */
-  var runner_id: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['runner-id'] */ js.Any
+  var required_workflow_id_for_repo: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['repo-required-workflow-id'] */ js.Any
 }
 object OwnerRepo {
   
   inline def apply(
     owner: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['owner'] */ js.Any,
     repo: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['repo'] */ js.Any,
-    runner_id: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['runner-id'] */ js.Any
+    required_workflow_id_for_repo: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['repo-required-workflow-id'] */ js.Any
   ): OwnerRepo = {
-    val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any], runner_id = runner_id.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any], required_workflow_id_for_repo = required_workflow_id_for_repo.asInstanceOf[js.Any])
     __obj.asInstanceOf[OwnerRepo]
   }
   
@@ -37,8 +34,8 @@ object OwnerRepo {
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['repo'] */ js.Any
     ): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
     
-    inline def setRunner_id(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['runner-id'] */ js.Any
-    ): Self = StObject.set(x, "runner_id", value.asInstanceOf[js.Any])
+    inline def setRequired_workflow_id_for_repo(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['repo-required-workflow-id'] */ js.Any
+    ): Self = StObject.set(x, "required_workflow_id_for_repo", value.asInstanceOf[js.Any])
   }
 }

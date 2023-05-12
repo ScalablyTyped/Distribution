@@ -1,24 +1,23 @@
 package typings.angularForms.anon
 
-import typings.angularForms.angularFormsStrings.pattern
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Pattern extends StObject {
   
-  var pattern: typings.angularForms.angularFormsStrings.pattern
+  var pattern: `17`
 }
 object Pattern {
   
-  inline def apply(): Pattern = {
-    val __obj = js.Dynamic.literal(pattern = "pattern")
+  inline def apply(pattern: `17`): Pattern = {
+    val __obj = js.Dynamic.literal(pattern = pattern.asInstanceOf[js.Any])
     __obj.asInstanceOf[Pattern]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: Pattern] (val x: Self) extends AnyVal {
     
-    inline def setPattern(value: pattern): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+    inline def setPattern(value: `17`): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
   }
 }

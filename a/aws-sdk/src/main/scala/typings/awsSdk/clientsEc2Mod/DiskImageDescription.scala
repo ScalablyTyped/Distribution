@@ -19,7 +19,7 @@ trait DiskImageDescription extends StObject {
   /**
     * A presigned URL for the import manifest stored in Amazon S3. For information about creating a presigned URL for an Amazon S3 object, read the "Query String Request Authentication Alternative" section of the Authenticating REST Requests topic in the Amazon Simple Storage Service Developer Guide. For information about the import manifest referenced by this API action, see VM Import Manifest.
     */
-  var ImportManifestUrl: js.UndefOr[String] = js.undefined
+  var ImportManifestUrl: js.UndefOr[typings.awsSdk.clientsEc2Mod.ImportManifestUrl] = js.undefined
   
   /**
     * The size of the disk image, in GiB.
@@ -44,7 +44,7 @@ object DiskImageDescription {
     
     inline def setFormatUndefined: Self = StObject.set(x, "Format", js.undefined)
     
-    inline def setImportManifestUrl(value: String): Self = StObject.set(x, "ImportManifestUrl", value.asInstanceOf[js.Any])
+    inline def setImportManifestUrl(value: ImportManifestUrl): Self = StObject.set(x, "ImportManifestUrl", value.asInstanceOf[js.Any])
     
     inline def setImportManifestUrlUndefined: Self = StObject.set(x, "ImportManifestUrl", js.undefined)
     

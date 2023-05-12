@@ -15,6 +15,11 @@ trait AddOnRequest extends StObject {
     * An object that represents additional parameters when enabling or modifying the automatic snapshot add-on.
     */
   var autoSnapshotAddOnRequest: js.UndefOr[AutoSnapshotAddOnRequest] = js.undefined
+  
+  /**
+    * An object that represents additional parameters when enabling or modifying the StopInstanceOnIdle add-on.  This object only applies to Lightsail for Research resources. 
+    */
+  var stopInstanceOnIdleRequest: js.UndefOr[StopInstanceOnIdleRequest] = js.undefined
 }
 object AddOnRequest {
   
@@ -31,5 +36,9 @@ object AddOnRequest {
     inline def setAutoSnapshotAddOnRequest(value: AutoSnapshotAddOnRequest): Self = StObject.set(x, "autoSnapshotAddOnRequest", value.asInstanceOf[js.Any])
     
     inline def setAutoSnapshotAddOnRequestUndefined: Self = StObject.set(x, "autoSnapshotAddOnRequest", js.undefined)
+    
+    inline def setStopInstanceOnIdleRequest(value: StopInstanceOnIdleRequest): Self = StObject.set(x, "stopInstanceOnIdleRequest", value.asInstanceOf[js.Any])
+    
+    inline def setStopInstanceOnIdleRequestUndefined: Self = StObject.set(x, "stopInstanceOnIdleRequest", js.undefined)
   }
 }

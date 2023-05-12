@@ -1,38 +1,30 @@
 package typings.reactSpringCore.anon
 
-import typings.reactSpringCore.distDeclarationsSrcTypesFunctionsMod.SpringToFn
-import typings.reactSpringCore.distDeclarationsSrcTypesFunctionsMod.StartFn
-import typings.reactSpringCore.distDeclarationsSrcTypesFunctionsMod.StopFn
-import typings.reactSpringCore.distDeclarationsSrcTypesPropsMod.GoalProp
-import typings.reactSpringCore.distDeclarationsSrcTypesPropsMod.SpringChain
+import typings.reactSpringCore.mod.GoalValues
+import typings.reactSpringTypes.mod.Falsy
+import typings.reactSpringTypes.mod.Lookup
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait `7`[T] extends StObject {
+trait `7`[State /* <: Lookup[Any] */] extends StObject {
   
-  var to: js.UndefOr[GoalProp[T] | SpringToFn[T] | SpringChain[T]] = js.undefined
+  var to: js.UndefOr[GoalValues[State] | Falsy] = js.undefined
 }
 object `7` {
   
-  inline def apply[T](): `7`[T] = {
+  inline def apply[State /* <: Lookup[Any] */](): `7`[State] = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[`7`[T]]
+    __obj.asInstanceOf[`7`[State]]
   }
   
   @scala.inline
-  implicit open class MutableBuilder[Self <: `7`[?], T] (val x: Self & `7`[T]) extends AnyVal {
+  implicit open class MutableBuilder[Self <: `7`[?], State /* <: Lookup[Any] */] (val x: Self & `7`[State]) extends AnyVal {
     
-    inline def setTo(value: GoalProp[T] | SpringToFn[T] | SpringChain[T]): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
-    
-    inline def setToFunction2(value: (/* start */ StartFn[T], /* stop */ StopFn[T]) => js.Promise[Any] | Unit): Self = StObject.set(x, "to", js.Any.fromFunction2(value))
+    inline def setTo(value: GoalValues[State] | Falsy): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     
     inline def setToNull: Self = StObject.set(x, "to", null)
     
     inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
-    
-    inline def setToVarargs(
-      value: (/* import warning: importer.ImportType#apply Failed type conversion: [T] extends [@react-spring/core.@react-spring/core/dist/declarations/src/types/common.IsPlainObject<T>] ? @react-spring/core.@react-spring/core/dist/declarations/src/types/props.ControllerUpdate<T, undefined> : @react-spring/core.@react-spring/core/dist/declarations/src/types/props.SpringTo<T> | @react-spring/core.@react-spring/core/dist/declarations/src/types/props.SpringUpdate<T> */ js.Any)*
-    ): Self = StObject.set(x, "to", js.Array(value*))
   }
 }

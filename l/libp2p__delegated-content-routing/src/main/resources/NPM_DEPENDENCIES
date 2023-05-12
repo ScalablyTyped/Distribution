@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@libp2p/delegated-content-routing" : "3.0.0"
+      "@libp2p/delegated-content-routing" : "4.0.3"
     }
   ],
   "test-dependencies" : [
     {
-      "@libp2p/delegated-content-routing" : "3.0.0"
+      "@libp2p/delegated-content-routing" : "4.0.3"
     }
   ],
   "compile-devDependencies" : [

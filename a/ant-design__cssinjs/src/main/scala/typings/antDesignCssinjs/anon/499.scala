@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.Rotate
+import typings.csstype.mod.Property.Top
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,8 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `499` extends StObject {
   
   var value: js.UndefOr[
-    Rotate | (js.Array[
-      (Extract[js.UndefOr[Rotate | js.Array[NonNullable[js.UndefOr[Rotate]]]], String]) | NonNullable[js.UndefOr[Rotate]]
+    (Top[Double | String]) | (js.Array[
+      (Extract[
+        js.UndefOr[
+          (Top[Double | String]) | (js.Array[NonNullable[js.UndefOr[Top[Double | String]]]])
+        ], 
+        String
+      ]) | (NonNullable[js.UndefOr[Top[Double | String]]])
     ])
   ] = js.native
 }

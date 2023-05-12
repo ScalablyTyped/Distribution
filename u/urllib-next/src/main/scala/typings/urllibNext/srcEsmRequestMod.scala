@@ -2,14 +2,15 @@ package typings.urllibNext
 
 import typings.node.bufferMod.global.Buffer
 import typings.node.httpMod.IncomingHttpHeaders
-import typings.node.streamMod.Readable
-import typings.node.streamMod.Writable
+import typings.node.nodeColonstreamMod.Readable
+import typings.node.nodeColonstreamMod.Writable
 import typings.std.Lowercase
 import typings.std.Record
 import typings.std.URL
-import typings.undici.typesDispatcherMod.^
+import typings.undici.typesDispatcherMod.default
 import typings.urllibNext.srcEsmResponseMod.HttpClientResponse
 import typings.urllibNext.urllibNextStrings.buffer
+import typings.urllibNext.urllibNextStrings.html
 import typings.urllibNext.urllibNextStrings.json
 import typings.urllibNext.urllibNextStrings.stream
 import typings.urllibNext.urllibNextStrings.text
@@ -23,7 +24,7 @@ object srcEsmRequestMod {
   
   type FixJSONCtlCharsHandler = js.Function1[/* data */ String, String]
   
-  type HttpMethod = typings.undici.typesDispatcherMod.HttpMethod
+  type HttpMethod = typings.undici.typesDispatcherMod.Dispatcher.HttpMethod
   
   trait RequestOptions extends StObject {
     
@@ -61,13 +62,19 @@ object srcEsmRequestMod {
     var data: js.UndefOr[Any] = js.undefined
     
     /**
+      * @deprecated
+      * Only for d.ts keep compatible with urllib@2, don't use it anymore.
+      */
+    var dataAsQueryString: js.UndefOr[Boolean] = js.undefined
+    
+    /**
       * Type of response data. Could be text or json.
-      * If it's text, the callbacked data would be a String.
+      * If it's text or html, the callbacked data would be a String.
       * If it's json, the data of callback would be a parsed JSON Object
       * and will auto set Accept: 'application/json' header.
       * Default is 'buffer'.
       */
-    var dataType: js.UndefOr[text | json | buffer | stream] = js.undefined
+    var dataType: js.UndefOr[text | html | json | buffer | stream] = js.undefined
     
     /**
       * username:password used in HTTP Digest Authorization.
@@ -77,14 +84,14 @@ object srcEsmRequestMod {
     /**
       * request dispatcher, default is getGlobalDispatcher()
       */
-    var dispatcher: js.UndefOr[^] = js.undefined
+    var dispatcher: js.UndefOr[default] = js.undefined
     
     /**
       * The files will send with multipart/form-data format, base on formstream.
       * If method not set, will use POST method by default.
       */
     var files: js.UndefOr[
-        (js.Array[Readable | Buffer | String]) | (Record[String, Readable | Buffer | String]) | Readable | Buffer | String
+        (js.Array[Readable | Buffer | String]) | (Record[String, Readable | Buffer | String]) | Readable | Buffer | String | js.Object
       ] = js.undefined
     
     /** Fix the control characters (U+0000 through U+001F) before JSON parse response. Default is false. */
@@ -109,7 +116,7 @@ object srcEsmRequestMod {
       * Determine whether retry, a response object as the first argument.
       * It will retry when status >= 500 by default. Request error is not included.
       */
-    var isRetry: js.UndefOr[js.Function1[/* response */ HttpClientResponse, Boolean]] = js.undefined
+    var isRetry: js.UndefOr[js.Function1[/* response */ HttpClientResponse[Any], Boolean]] = js.undefined
     
     /** The maximum number of redirects to follow, defaults to 10. */
     var maxRedirects: js.UndefOr[Double] = js.undefined
@@ -119,6 +126,9 @@ object srcEsmRequestMod {
     
     /** Default: `null` */
     var opaque: js.UndefOr[Any] = js.undefined
+    
+    /** Whether the request should stablish a keep-alive or not. Default `undefined` */
+    var reset: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Auto retry times on 5xx response, default is 0. Don't work on streaming request
@@ -209,7 +219,11 @@ object srcEsmRequestMod {
       
       inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setDataType(value: text | json | buffer | stream): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
+      inline def setDataAsQueryString(value: Boolean): Self = StObject.set(x, "dataAsQueryString", value.asInstanceOf[js.Any])
+      
+      inline def setDataAsQueryStringUndefined: Self = StObject.set(x, "dataAsQueryString", js.undefined)
+      
+      inline def setDataType(value: text | html | json | buffer | stream): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
       
       inline def setDataTypeUndefined: Self = StObject.set(x, "dataType", js.undefined)
       
@@ -219,12 +233,12 @@ object srcEsmRequestMod {
       
       inline def setDigestAuthUndefined: Self = StObject.set(x, "digestAuth", js.undefined)
       
-      inline def setDispatcher(value: ^): Self = StObject.set(x, "dispatcher", value.asInstanceOf[js.Any])
+      inline def setDispatcher(value: default): Self = StObject.set(x, "dispatcher", value.asInstanceOf[js.Any])
       
       inline def setDispatcherUndefined: Self = StObject.set(x, "dispatcher", js.undefined)
       
       inline def setFiles(
-        value: (js.Array[Readable | Buffer | String]) | (Record[String, Readable | Buffer | String]) | Readable | Buffer | String
+        value: (js.Array[Readable | Buffer | String]) | (Record[String, Readable | Buffer | String]) | Readable | Buffer | String | js.Object
       ): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
       inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
@@ -253,7 +267,7 @@ object srcEsmRequestMod {
       
       inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      inline def setIsRetry(value: /* response */ HttpClientResponse => Boolean): Self = StObject.set(x, "isRetry", js.Any.fromFunction1(value))
+      inline def setIsRetry(value: /* response */ HttpClientResponse[Any] => Boolean): Self = StObject.set(x, "isRetry", js.Any.fromFunction1(value))
       
       inline def setIsRetryUndefined: Self = StObject.set(x, "isRetry", js.undefined)
       
@@ -268,6 +282,10 @@ object srcEsmRequestMod {
       inline def setOpaque(value: Any): Self = StObject.set(x, "opaque", value.asInstanceOf[js.Any])
       
       inline def setOpaqueUndefined: Self = StObject.set(x, "opaque", js.undefined)
+      
+      inline def setReset(value: Boolean): Self = StObject.set(x, "reset", value.asInstanceOf[js.Any])
+      
+      inline def setResetUndefined: Self = StObject.set(x, "reset", js.undefined)
       
       inline def setRetry(value: Double): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])
       

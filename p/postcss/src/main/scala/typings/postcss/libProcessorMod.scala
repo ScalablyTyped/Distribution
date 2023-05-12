@@ -2,17 +2,33 @@ package typings.postcss
 
 import typings.postcss.anon.ToString
 import typings.postcss.mod.AcceptedPlugin
-import typings.postcss.mod.Plugin
 import typings.postcss.mod.ProcessOptions
 import typings.postcss.mod.TransformCallback
-import typings.postcss.mod.Transformer
 import typings.postcss.mod._AcceptedPlugin
+import typings.std.Plugin
+import typings.std.Transformer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libProcessorMod {
   
+  @JSImport("postcss/lib/processor", JSImport.Namespace)
+  @js.native
+  open class ^ ()
+    extends StObject
+       with Processor_
+  
+  /**
+    * Contains plugins to process CSS. Create one `Processor` instance,
+    * initialize its plugins, and then use that instance on numerous CSS files.
+    *
+    * ```js
+    * const processor = postcss([autoprefixer, postcssNested])
+    * processor.process(css1).then(result => console.log(result.css))
+    * processor.process(css2).then(result => console.log(result.css))
+    * ```
+    */
   @JSImport("postcss/lib/processor", JSImport.Default)
   @js.native
   /**
@@ -20,13 +36,25 @@ object libProcessorMod {
     */
   open class default ()
     extends StObject
-       with Processor
+       with Processor_
        with _AcceptedPlugin {
     def this(plugins: js.Array[AcceptedPlugin]) = this()
   }
   
+  type Processor = Processor_
+  
+  /**
+    * Contains plugins to process CSS. Create one `Processor` instance,
+    * initialize its plugins, and then use that instance on numerous CSS files.
+    *
+    * ```js
+    * const processor = postcss([autoprefixer, postcssNested])
+    * processor.process(css1).then(result => console.log(result.css))
+    * processor.process(css2).then(result => console.log(result.css))
+    * ```
+    */
   @js.native
-  trait Processor extends StObject {
+  trait Processor_ extends StObject {
     
     /**
       * Plugins added to this processor.
@@ -36,7 +64,7 @@ object libProcessorMod {
       * processor.plugins.length //=> 2
       * ```
       */
-    var plugins: js.Array[Plugin | Transformer | TransformCallback] = js.native
+    var plugins: js.Array[Plugin | (Transformer[Any, Any]) | TransformCallback] = js.native
     
     /**
       * Parses source CSS and returns a `LazyResult` Promise proxy.
@@ -52,7 +80,7 @@ object libProcessorMod {
       * ```
       *
       * @param css String with input CSS or any object with a `toString()` method,
-      *            like a Buffer. Optionally, senda `Result` instance
+      *            like a Buffer. Optionally, send a `Result` instance
       *            and the processor will take the `Root` from it.
       * @param opts Options.
       * @return Promise proxy.
@@ -75,7 +103,7 @@ object libProcessorMod {
       * * A plugin in `Plugin` format.
       * * A plugin creator function with `pluginCreator.postcss = true`.
       *   PostCSS will call this function without argument to get plugin.
-      * * A function. PostCSS will pass the function a @{link Root}
+      * * A function. PostCSS will pass the function a {@link Root}
       *   as the first argument and current `Result` instance
       *   as the second.
       * * Another `Processor` instance. PostCSS will copy plugins

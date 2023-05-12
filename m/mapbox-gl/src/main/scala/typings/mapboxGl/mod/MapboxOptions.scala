@@ -1,7 +1,6 @@
 package typings.mapboxGl.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.mapboxGl.anon.Center
 import typings.mapboxGl.mapboxGlStrings.`bottom-left`
 import typings.mapboxGl.mapboxGlStrings.`bottom-right`
 import typings.mapboxGl.mapboxGlStrings.`top-left`
@@ -210,7 +209,7 @@ trait MapboxOptions extends StObject {
     *
     * @default 'mercator'
     */
-  var projection: js.UndefOr[Center] = js.undefined
+  var projection: js.UndefOr[Projection] = js.undefined
   
   /**
     * If `false`, the map won't attempt to re-request tiles once they expire per their HTTP
@@ -436,7 +435,7 @@ object MapboxOptions {
     
     inline def setPreserveDrawingBufferUndefined: Self = StObject.set(x, "preserveDrawingBuffer", js.undefined)
     
-    inline def setProjection(value: Center): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
+    inline def setProjection(value: Projection): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
     
     inline def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
     

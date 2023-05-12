@@ -54,6 +54,17 @@ object CustomRange {
   /* static member */
   inline def createInImportMappingCallUnderRange(container: typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.ImportMappingCall): typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.CustomRange = ^.asInstanceOf[js.Dynamic].applyDynamic("createInImportMappingCallUnderRange")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.CustomRange]
   
+  /**
+    * Creates and returns a new CustomRange instance in the SDK and on the server.
+    * The new CustomRange will be automatically stored in the 'customRange' property
+    * of the parent ListRange element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  9.24.0 and higher
+    */
+  /* static member */
+  inline def createInListRangeUnderCustomRange(container: typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.ListRange): typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.CustomRange = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListRangeUnderCustomRange")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.CustomRange]
+  
   /* static member */
   @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.CustomRange.structureTypeName")
   @js.native

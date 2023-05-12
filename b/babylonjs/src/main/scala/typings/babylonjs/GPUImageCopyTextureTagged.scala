@@ -1,5 +1,6 @@
 package typings.babylonjs
 
+import typings.std.PredefinedColorSpace
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ trait GPUImageCopyTextureTagged
   extends StObject
      with GPUImageCopyTexture {
   
-  var colorSpace: js.UndefOr[GPUPredefinedColorSpace] = js.undefined
+  var colorSpace: js.UndefOr[PredefinedColorSpace] = js.undefined
   
   var premultipliedAlpha: js.UndefOr[Boolean] = js.undefined
 }
@@ -22,7 +23,7 @@ object GPUImageCopyTextureTagged {
   @scala.inline
   implicit open class MutableBuilder[Self <: GPUImageCopyTextureTagged] (val x: Self) extends AnyVal {
     
-    inline def setColorSpace(value: GPUPredefinedColorSpace): Self = StObject.set(x, "colorSpace", value.asInstanceOf[js.Any])
+    inline def setColorSpace(value: PredefinedColorSpace): Self = StObject.set(x, "colorSpace", value.asInstanceOf[js.Any])
     
     inline def setColorSpaceUndefined: Self = StObject.set(x, "colorSpace", js.undefined)
     

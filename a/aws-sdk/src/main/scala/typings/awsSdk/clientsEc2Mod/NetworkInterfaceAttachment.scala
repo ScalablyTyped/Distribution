@@ -27,6 +27,11 @@ trait NetworkInterfaceAttachment extends StObject {
   var DeviceIndex: js.UndefOr[Integer] = js.undefined
   
   /**
+    * Configures ENA Express for the network interface that this action attaches to the instance.
+    */
+  var EnaSrdSpecification: js.UndefOr[AttachmentEnaSrdSpecification] = js.undefined
+  
+  /**
     * The ID of the instance.
     */
   var InstanceId: js.UndefOr[String] = js.undefined
@@ -71,6 +76,10 @@ object NetworkInterfaceAttachment {
     inline def setDeviceIndex(value: Integer): Self = StObject.set(x, "DeviceIndex", value.asInstanceOf[js.Any])
     
     inline def setDeviceIndexUndefined: Self = StObject.set(x, "DeviceIndex", js.undefined)
+    
+    inline def setEnaSrdSpecification(value: AttachmentEnaSrdSpecification): Self = StObject.set(x, "EnaSrdSpecification", value.asInstanceOf[js.Any])
+    
+    inline def setEnaSrdSpecificationUndefined: Self = StObject.set(x, "EnaSrdSpecification", js.undefined)
     
     inline def setInstanceId(value: String): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     

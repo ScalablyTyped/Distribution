@@ -33,5 +33,9 @@ object EventType extends StObject {
   
   /* "ContentControlDeleted" */ val contentControlDeleted: typings.officeJsPreview.Word.EventType.contentControlDeleted & String = js.native
   
+  /* "ContentControlEntered" */ val contentControlEntered: typings.officeJsPreview.Word.EventType.contentControlEntered & String = js.native
+  
+  /* "ContentControlExited" */ val contentControlExited: typings.officeJsPreview.Word.EventType.contentControlExited & String = js.native
+  
   /* "ContentControlSelectionChanged" */ val contentControlSelectionChanged: typings.officeJsPreview.Word.EventType.contentControlSelectionChanged & String = js.native
 }

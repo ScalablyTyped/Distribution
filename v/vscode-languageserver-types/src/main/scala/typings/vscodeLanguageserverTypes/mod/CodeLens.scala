@@ -13,7 +13,7 @@ trait CodeLens extends StObject {
   
   /**
     * A data entry field that is preserved on a code lens item between
-    * a [CodeLensRequest](#CodeLensRequest) and a [CodeLensResolveRequest]
+    * a {@link CodeLensRequest} and a [CodeLensResolveRequest]
     * (#CodeLensResolveRequest)
     */
   var data: js.UndefOr[LSPAny] = js.undefined
@@ -41,7 +41,7 @@ object CodeLens {
   inline def create(range: Range, data: LSPAny): CodeLens = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[CodeLens]
   
   /**
-    * Checks whether the given literal conforms to the [CodeLens](#CodeLens) interface.
+    * Checks whether the given literal conforms to the {@link CodeLens} interface.
     */
   inline def is(value: Any): /* is vscode-languageserver-types.vscode-languageserver-types.CodeLens */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.CodeLens */ Boolean]
   

@@ -17,7 +17,7 @@ trait StartAttachmentUploadRequest extends StObject {
   var AttachmentSizeInBytes: typings.awsSdk.clientsConnectparticipantMod.AttachmentSizeInBytes
   
   /**
-    * A unique case sensitive identifier to support idempotency of request.
+    * A unique, case-sensitive identifier that you provide to ensure the idempotency of the request. If not provided, the Amazon Web Services SDK populates this field. For more information about idempotency, see Making retries safe with idempotent APIs.
     */
   var ClientToken: NonEmptyClientToken
   

@@ -1,92 +1,37 @@
 package typings.datastoreLevel
 
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable2
-import org.scalablytyped.runtime.Shortcut
-import org.scalablytyped.runtime.StringDictionary
-import typings.abstractLeveldown.mod.AbstractBatch
-import typings.abstractLeveldown.mod.AbstractIterator
-import typings.abstractLeveldown.mod.AbstractLevelDOWN
-import typings.interfaceDatastore.mod.Adapter
-import typings.interfaceDatastore.mod.Batch
-import typings.levelup.mod.LevelUp
-import typings.node.Buffer
+import typings.datastoreCore.mod.BaseDatastore
+import typings.datastoreLevel.anon.Prefix
+import typings.interfaceDatastore.mod.Pair
+import typings.level.mod.DatabaseOptions
+import typings.level.mod.Level
+import typings.level.mod.OpenOptions
+import typings.std.AsyncIterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object mod extends Shortcut {
+object mod {
   
-  @JSImport("datastore-level", JSImport.Namespace)
+  @JSImport("datastore-level", "LevelDatastore")
   @js.native
-  val ^ : js.Object & LevelDatastoreConstructor = js.native
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
-  @JSImport("datastore-level", JSImport.Namespace)
-  @js.native
-  class Class protected () extends LevelDatastore[Buffer] {
+  open class LevelDatastore protected () extends BaseDatastore {
     def this(path: String) = this()
-    def this(path: String, options: LevelDatastoreOptions) = this()
-  }
-  
-  /**
-    * A datastore backed by leveldb.
-    */
-  @js.native
-  trait LevelDatastore[Value] extends Adapter[Value] {
+    def this(path: Level[String, js.typedarray.Uint8Array]) = this()
+    def this(path: String, opts: (DatabaseOptions[String, js.typedarray.Uint8Array]) & OpenOptions) = this()
+    def this(
+      path: Level[String, js.typedarray.Uint8Array],
+      opts: (DatabaseOptions[String, js.typedarray.Uint8Array]) & OpenOptions
+    ) = this()
     
-    var db: LevelUp[AbstractLevelDOWN[String, Value], AbstractIterator[String, Value]] = js.native
-  }
-  
-  @js.native
-  trait LevelDatastoreBatch[Value]
-    extends StObject
-       with Batch[Value] {
+    def _query(opts: Prefix): AsyncIterable[Pair] = js.native
     
-    var ops: js.Array[AbstractBatch[String, Value]] = js.native
-  }
-  
-  @js.native
-  trait LevelDatastoreConstructor
-    extends StObject
-       with Instantiable1[/* path */ String, LevelDatastore[Buffer]]
-       with Instantiable2[/* path */ String, /* options */ LevelDatastoreOptions, LevelDatastore[Buffer]] {
+    def close(): js.Promise[Unit] = js.native
     
-    def apply(path: String): LevelDatastore[Buffer] = js.native
-    def apply(path: String, options: LevelDatastoreOptions): LevelDatastore[Buffer] = js.native
-  }
-  
-  trait LevelDatastoreOptions
-    extends StObject
-       with /* key */ StringDictionary[js.Any] {
+    var db: Level[String, js.typedarray.Uint8Array] = js.native
     
-    var db: js.UndefOr[
-        js.Function2[
-          /* location */ String, 
-          /* options */ js.UndefOr[js.Any], 
-          LevelUp[AbstractLevelDOWN[js.Any, js.Any], AbstractIterator[js.Any, js.Any]]
-        ]
-      ] = js.undefined
-  }
-  object LevelDatastoreOptions {
+    def open(): js.Promise[Unit] = js.native
     
-    inline def apply(): LevelDatastoreOptions = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[LevelDatastoreOptions]
-    }
-    
-    extension [Self <: LevelDatastoreOptions](x: Self) {
-      
-      inline def setDb(
-        value: (/* location */ String, /* options */ js.UndefOr[js.Any]) => LevelUp[AbstractLevelDOWN[js.Any, js.Any], AbstractIterator[js.Any, js.Any]]
-      ): Self = StObject.set(x, "db", js.Any.fromFunction2(value))
-      
-      inline def setDbUndefined: Self = StObject.set(x, "db", js.undefined)
-    }
+    /* private */ val opts: Any = js.native
   }
-  
-  type _To = js.Object & LevelDatastoreConstructor
-  
-  /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: js.Object & LevelDatastoreConstructor = ^
 }

@@ -35,10 +35,10 @@ trait InitializeRequestArguments extends StObject {
   /** Client supports the `argsCanBeInterpretedByShell` attribute on the `runInTerminal` request. */
   var supportsArgsCanBeInterpretedByShell: js.UndefOr[Boolean] = js.undefined
   
-  /** Client supports the invalidated event. */
+  /** Client supports the `invalidated` event. */
   var supportsInvalidatedEvent: js.UndefOr[Boolean] = js.undefined
   
-  /** Client supports the memory event. */
+  /** Client supports the `memory` event. */
   var supportsMemoryEvent: js.UndefOr[Boolean] = js.undefined
   
   /** Client supports memory references. */
@@ -47,8 +47,11 @@ trait InitializeRequestArguments extends StObject {
   /** Client supports progress reporting. */
   var supportsProgressReporting: js.UndefOr[Boolean] = js.undefined
   
-  /** Client supports the runInTerminal request. */
+  /** Client supports the `runInTerminal` request. */
   var supportsRunInTerminalRequest: js.UndefOr[Boolean] = js.undefined
+  
+  /** Client supports the `startDebugging` request. */
+  var supportsStartDebuggingRequest: js.UndefOr[Boolean] = js.undefined
   
   /** Client supports the paging of variables. */
   var supportsVariablePaging: js.UndefOr[Boolean] = js.undefined
@@ -115,6 +118,10 @@ object InitializeRequestArguments {
     inline def setSupportsRunInTerminalRequest(value: Boolean): Self = StObject.set(x, "supportsRunInTerminalRequest", value.asInstanceOf[js.Any])
     
     inline def setSupportsRunInTerminalRequestUndefined: Self = StObject.set(x, "supportsRunInTerminalRequest", js.undefined)
+    
+    inline def setSupportsStartDebuggingRequest(value: Boolean): Self = StObject.set(x, "supportsStartDebuggingRequest", value.asInstanceOf[js.Any])
+    
+    inline def setSupportsStartDebuggingRequestUndefined: Self = StObject.set(x, "supportsStartDebuggingRequest", js.undefined)
     
     inline def setSupportsVariablePaging(value: Boolean): Self = StObject.set(x, "supportsVariablePaging", value.asInstanceOf[js.Any])
     

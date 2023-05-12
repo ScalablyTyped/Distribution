@@ -9,5 +9,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class ConnectionCheckOutFailedEvent () extends ConnectionPoolMonitoringEvent {
   
   /** The reason the attempt to check out failed */
-  var reason: AnyError | String = js.native
+  var reason: String = js.native
 }

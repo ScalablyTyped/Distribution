@@ -6,12 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GetRootPropsOptions extends StObject {
   
-  var refKey: String
+  var refKey: js.UndefOr[String] = js.undefined
 }
 object GetRootPropsOptions {
   
-  inline def apply(refKey: String): GetRootPropsOptions = {
-    val __obj = js.Dynamic.literal(refKey = refKey.asInstanceOf[js.Any])
+  inline def apply(): GetRootPropsOptions = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetRootPropsOptions]
   }
   
@@ -19,5 +19,7 @@ object GetRootPropsOptions {
   implicit open class MutableBuilder[Self <: GetRootPropsOptions] (val x: Self) extends AnyVal {
     
     inline def setRefKey(value: String): Self = StObject.set(x, "refKey", value.asInstanceOf[js.Any])
+    
+    inline def setRefKeyUndefined: Self = StObject.set(x, "refKey", js.undefined)
   }
 }

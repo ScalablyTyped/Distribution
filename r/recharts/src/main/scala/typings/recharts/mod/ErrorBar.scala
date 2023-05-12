@@ -12,7 +12,7 @@ open class ErrorBar protected ()
   def this(props: ErrorBarProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: ErrorBarProps, context: Any) = this()
 }

@@ -69,6 +69,8 @@ object mod {
     def close(): Unit = js.native
     def close(cb: ServerCallback): Unit = js.native
     
+    /** Listen for all the messages received by the server or for a specific address */
+    def on(event: String, listener: ServerMessageListener): this.type = js.native
     /**
       * Listen for all the bundles received by the server.
       *
@@ -119,11 +121,41 @@ object mod {
   
   type MessageLike = (Array[String | ArgumentType]) | Address
   
+  trait RequestInfo extends StObject {
+    
+    var address: String
+    
+    var family: String
+    
+    var port: Double
+    
+    var size: Double
+  }
+  object RequestInfo {
+    
+    inline def apply(address: String, family: String, port: Double, size: Double): RequestInfo = {
+      val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], family = family.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
+      __obj.asInstanceOf[RequestInfo]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestInfo] (val x: Self) extends AnyVal {
+      
+      inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+      
+      inline def setFamily(value: String): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
+      
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    }
+  }
+  
   type ServerBundleListener = js.Function1[/* bundle */ Bundle, Unit]
   
   type ServerCallback = js.Function0[Unit]
   
   type ServerErrorListner = js.Function1[/* error */ js.Error, Unit]
   
-  type ServerMessageListener = js.Function1[/* message */ Array[String | ArgumentType], Unit]
+  type ServerMessageListener = js.Function2[/* message */ Array[String | ArgumentType], /* rinfo */ RequestInfo, Unit]
 }

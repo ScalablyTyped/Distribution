@@ -11,5 +11,5 @@ object esHooksUseRangeDisabledMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[DateType](param0: Disabled[DateType], disabledStart: Boolean, disabledEnd: Boolean): js.Array[js.Function1[/* date */ DateType, Boolean]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any], disabledStart.asInstanceOf[js.Any], disabledEnd.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Function1[/* date */ DateType, Boolean]]]
+  inline def default[DateType](param0: Disabled[DateType], firstTimeOpen: Boolean): js.Array[js.Function1[/* date */ DateType, Boolean]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any], firstTimeOpen.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Function1[/* date */ DateType, Boolean]]]
 }

@@ -427,6 +427,8 @@ object sapFSearchManagerMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:liveChange liveChange} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -438,6 +440,8 @@ object sapFSearchManagerMod {
     mParameters: NewValue): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:search search} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -449,6 +453,8 @@ object sapFSearchManagerMod {
     mParameters: ClearButtonPressed): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:suggest suggest} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining

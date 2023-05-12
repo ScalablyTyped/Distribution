@@ -12,6 +12,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.csstype.csstypeStrings.`ColonColoncue-region`
   - typings.csstype.csstypeStrings.ColonColonpart
   - typings.csstype.csstypeStrings.ColonColonslotted
+  - typings.csstype.csstypeStrings.`ColonColonview-transition-group`
+  - typings.csstype.csstypeStrings.`ColonColonview-transition-image-pair`
+  - typings.csstype.csstypeStrings.`ColonColonview-transition-new`
+  - typings.csstype.csstypeStrings.`ColonColonview-transition-old`
   - typings.csstype.csstypeStrings.Colondir
   - typings.csstype.csstypeStrings.Colonhas
   - typings.csstype.csstypeStrings.Colonhost
@@ -43,6 +47,10 @@ type PropertyValue[TValue] = TValue
   - typings.csstype.csstypeStrings.`ColonColoncue-region`
   - typings.csstype.csstypeStrings.ColonColonpart
   - typings.csstype.csstypeStrings.ColonColonslotted
+  - typings.csstype.csstypeStrings.`ColonColonview-transition-group`
+  - typings.csstype.csstypeStrings.`ColonColonview-transition-image-pair`
+  - typings.csstype.csstypeStrings.`ColonColonview-transition-new`
+  - typings.csstype.csstypeStrings.`ColonColonview-transition-old`
   - typings.csstype.csstypeStrings.Colondir
   - typings.csstype.csstypeStrings.Colonhas
   - typings.csstype.csstypeStrings.Colonhost
@@ -108,6 +116,7 @@ type PropertyValue[TValue] = TValue
   - typings.csstype.csstypeStrings.ColonColonselection
   - typings.csstype.csstypeStrings.`ColonColonspelling-error`
   - typings.csstype.csstypeStrings.`ColonColontarget-text`
+  - typings.csstype.csstypeStrings.`ColonColonview-transition`
   - typings.csstype.csstypeStrings.Colonactive
   - typings.csstype.csstypeStrings.Colonafter
   - typings.csstype.csstypeStrings.`Colonany-link`

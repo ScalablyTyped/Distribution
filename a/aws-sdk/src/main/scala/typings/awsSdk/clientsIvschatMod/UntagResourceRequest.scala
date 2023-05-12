@@ -12,7 +12,7 @@ trait UntagResourceRequest extends StObject {
   var resourceArn: ResourceArn
   
   /**
-    * Array of tags to be removed. See Tagging AWS Resources for details, including restrictions that apply to tags and "Tag naming limits and requirements"; Amazon IVS Chat has no constraints beyond what is documented there.
+    * Array of tags to be removed. Array of maps, each of the form string:string (key:value). See Tagging AWS Resources for details, including restrictions that apply to tags and "Tag naming limits and requirements"; Amazon IVS Chat has no constraints beyond what is documented there.
     */
   var tagKeys: TagKeyList
 }

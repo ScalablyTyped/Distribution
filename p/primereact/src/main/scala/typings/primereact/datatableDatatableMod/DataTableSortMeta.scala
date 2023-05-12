@@ -1,14 +1,26 @@
 package typings.primereact.datatableDatatableMod
 
+import typings.primereact.primereactInts.`-1`
+import typings.primereact.primereactInts.`0`
+import typings.primereact.primereactInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+  * Custom datatable sort meta
+  */
 trait DataTableSortMeta extends StObject {
   
+  /**
+    * Column field to sort against.
+    */
   var field: String
   
-  var order: DataTableSortOrderType
+  /**
+    * Sort order as integer.
+    */
+  var order: js.UndefOr[`1` | `0` | `-1` | Null] = js.undefined
 }
 object DataTableSortMeta {
   
@@ -22,7 +34,7 @@ object DataTableSortMeta {
     
     inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    inline def setOrder(value: DataTableSortOrderType): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+    inline def setOrder(value: `1` | `0` | `-1`): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
     inline def setOrderNull: Self = StObject.set(x, "order", null)
     

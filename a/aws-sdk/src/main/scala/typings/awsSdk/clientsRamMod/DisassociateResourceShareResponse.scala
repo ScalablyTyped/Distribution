@@ -12,7 +12,7 @@ trait DisassociateResourceShareResponse extends StObject {
   var clientToken: js.UndefOr[String] = js.undefined
   
   /**
-    * An array of objects that contain information about the updated associations for this resource share.
+    * An array of objects with information about the updated associations for this resource share.
     */
   var resourceShareAssociations: js.UndefOr[ResourceShareAssociationList] = js.undefined
 }

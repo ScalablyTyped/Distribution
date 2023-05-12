@@ -25,6 +25,11 @@ object distAccountAuthTokenMod {
     val ^ : js.Any = js.native
     
     /**
+      * Determine if the token's max_age has transpired
+      */
+    inline def checkMaxAge(authTime: Double, maxAge: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkMaxAge")(authTime.asInstanceOf[js.Any], maxAge.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    /**
       * Extract token by decoding the rawToken
       *
       * @param encodedToken

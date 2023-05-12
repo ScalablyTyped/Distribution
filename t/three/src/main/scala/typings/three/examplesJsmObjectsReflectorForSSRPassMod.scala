@@ -2,6 +2,7 @@ package typings.three
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.three.anon.DISTANCEATTENUATION
+import typings.three.srcCoreBufferGeometryMod.NormalBufferAttributes
 import typings.three.srcMaterialsMaterialMod.Material
 import typings.three.srcRenderersShadersUniformsLibMod.IUniform
 import typings.three.srcThreeMod.BufferGeometry
@@ -19,7 +20,7 @@ object examplesJsmObjectsReflectorForSSRPassMod {
   
   @JSImport("three/examples/jsm/objects/ReflectorForSSRPass", "ReflectorForSSRPass")
   @js.native
-  open class ReflectorForSSRPass[TGeometry /* <: BufferGeometry */] protected ()
+  open class ReflectorForSSRPass[TGeometry /* <: BufferGeometry[NormalBufferAttributes] */] protected ()
     extends Mesh[TGeometry, Material | js.Array[Material]] {
     def this(geometry: TGeometry, options: ReflectorForSSRPassOptions) = this()
     

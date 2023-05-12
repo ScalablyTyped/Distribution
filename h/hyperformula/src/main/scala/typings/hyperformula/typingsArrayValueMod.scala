@@ -4,7 +4,7 @@ import typings.hyperformula.typingsArraySizeMod.ArraySize
 import typings.hyperformula.typingsCellMod.CellError
 import typings.hyperformula.typingsInterpreterInterpreterValueMod.InternalScalarValue
 import typings.hyperformula.typingsInterpreterInterpreterValueMod.InterpreterValue
-import typings.hyperformula.typingsInterpreterSimpleRangeValueMod.SimpleRangeValue
+import typings.hyperformula.typingsSimpleRangeValueMod.SimpleRangeValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

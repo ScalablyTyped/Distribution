@@ -3,6 +3,10 @@ package typings.std.global
 import typings.std.AddEventListenerOptions
 import typings.std.EventListenerOptions
 import typings.std.EventListenerOrEventListenerObject
+import typings.std.stdInts.`0`
+import typings.std.stdInts.`1`
+import typings.std.stdInts.`2`
+import typings.std.stdInts.`3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -49,10 +53,6 @@ open class SVGGradientElement ()
   /* standard dom */
   /* CompleteClass */
   var ariaColIndex: java.lang.String | Null = js.native
-  
-  /* standard dom */
-  /* CompleteClass */
-  var ariaColIndexText: java.lang.String | Null = js.native
   
   /* standard dom */
   /* CompleteClass */
@@ -148,10 +148,6 @@ open class SVGGradientElement ()
   
   /* standard dom */
   /* CompleteClass */
-  var ariaRowIndexText: java.lang.String | Null = js.native
-  
-  /* standard dom */
-  /* CompleteClass */
   var ariaRowSpan: java.lang.String | Null = js.native
   
   /* standard dom */
@@ -228,20 +224,20 @@ object SVGGradientElement {
   /* standard dom */
   @JSGlobal("SVGGradientElement.SVG_SPREADMETHOD_PAD")
   @js.native
-  val SVG_SPREADMETHOD_PAD: Double = js.native
+  val SVG_SPREADMETHOD_PAD: `1` = js.native
   
   /* standard dom */
   @JSGlobal("SVGGradientElement.SVG_SPREADMETHOD_REFLECT")
   @js.native
-  val SVG_SPREADMETHOD_REFLECT: Double = js.native
+  val SVG_SPREADMETHOD_REFLECT: `2` = js.native
   
   /* standard dom */
   @JSGlobal("SVGGradientElement.SVG_SPREADMETHOD_REPEAT")
   @js.native
-  val SVG_SPREADMETHOD_REPEAT: Double = js.native
+  val SVG_SPREADMETHOD_REPEAT: `3` = js.native
   
   /* standard dom */
   @JSGlobal("SVGGradientElement.SVG_SPREADMETHOD_UNKNOWN")
   @js.native
-  val SVG_SPREADMETHOD_UNKNOWN: Double = js.native
+  val SVG_SPREADMETHOD_UNKNOWN: `0` = js.native
 }

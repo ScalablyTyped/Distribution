@@ -21,8 +21,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * ```js
   * const {
-  *   createHash
-  * } = await import('crypto');
+  *   createHash,
+  * } = await import('node:crypto');
   *
   * const hash = createHash('sha256');
   *
@@ -44,9 +44,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Example: Using `Hash` and piped streams:
   *
   * ```js
-  * import { createReadStream } from 'fs';
-  * import { stdout } from 'process';
-  * const { createHash } = await import('crypto');
+  * import { createReadStream } from 'node:fs';
+  * import { stdout } from 'node:process';
+  * const { createHash } = await import('node:crypto');
   *
   * const hash = createHash('sha256');
   *
@@ -58,8 +58,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * ```js
   * const {
-  *   createHash
-  * } = await import('crypto');
+  *   createHash,
+  * } = await import('node:crypto');
   *
   * const hash = createHash('sha256');
   *
@@ -88,8 +88,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * ```js
     * // Calculate a rolling hash.
     * const {
-    *   createHash
-    * } = await import('crypto');
+    *   createHash,
+    * } = await import('node:crypto');
     *
     * const hash = createHash('sha256');
     *

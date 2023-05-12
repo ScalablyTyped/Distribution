@@ -1,12 +1,13 @@
 package typings.rjsfUtils.mod
 
 import typings.react.mod.ReactElement
+import typings.react.mod.StyleHTMLAttributes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The properties that are passed to a FieldTemplate implementation */
-trait FieldTemplateProps[T, F] extends StObject {
+trait FieldTemplateProps[T, S /* <: StrictRJSFSchema */, F /* <: FormContextType */] extends StObject {
   
   /** The field or widget component instance for this field row */
   var children: ReactElement
@@ -34,7 +35,7 @@ trait FieldTemplateProps[T, F] extends StObject {
   var formContext: js.UndefOr[F] = js.undefined
   
   /** The formData for this field */
-  var formData: T
+  var formData: js.UndefOr[T] = js.undefined
   
   /** A component instance rendering any `ui:help` uiSchema directive defined */
   var help: js.UndefOr[ReactElement] = js.undefined
@@ -53,7 +54,7 @@ trait FieldTemplateProps[T, F] extends StObject {
   
   /** The value change event handler; Can be called with a new value to change the value for this field */
   var onChange: js.Function3[
-    /* newFormData */ Any, 
+    /* newFormData */ js.UndefOr[Any], 
     /* es */ js.UndefOr[ErrorSchema[Any]], 
     /* id */ js.UndefOr[String], 
     Any
@@ -80,38 +81,40 @@ trait FieldTemplateProps[T, F] extends StObject {
   var readonly: Boolean
   
   /** The `registry` object */
-  var registry: Registry[T, F]
+  var registry: Registry[T, S, F]
   
   /** A boolean value stating if the field is required */
   var required: js.UndefOr[Boolean] = js.undefined
   
   /** The schema object for this field */
-  var schema: RJSFSchema
+  var schema: S
+  
+  /** An object containing the style as defined in the `uiSchema` */
+  var style: js.UndefOr[StyleHTMLAttributes[Any]] = js.undefined
   
   /** The uiSchema object for this field */
-  var uiSchema: js.UndefOr[UiSchema[T, F]] = js.undefined
+  var uiSchema: js.UndefOr[UiSchema[T, S, F]] = js.undefined
 }
 object FieldTemplateProps {
   
-  inline def apply[T, F](
+  inline def apply[T, S /* <: StrictRJSFSchema */, F /* <: FormContextType */](
     children: ReactElement,
     disabled: Boolean,
-    formData: T,
     id: String,
     label: String,
-    onChange: (/* newFormData */ Any, /* es */ js.UndefOr[ErrorSchema[Any]], /* id */ js.UndefOr[String]) => Any,
+    onChange: (/* newFormData */ js.UndefOr[Any], /* es */ js.UndefOr[ErrorSchema[Any]], /* id */ js.UndefOr[String]) => Any,
     onDropPropertyClick: String => js.Function0[Unit],
     onKeyChange: String => js.Function0[Unit],
     readonly: Boolean,
-    registry: Registry[T, F],
-    schema: RJSFSchema
-  ): FieldTemplateProps[T, F] = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], formData = formData.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], onChange = js.Any.fromFunction3(onChange), onDropPropertyClick = js.Any.fromFunction1(onDropPropertyClick), onKeyChange = js.Any.fromFunction1(onKeyChange), readonly = readonly.asInstanceOf[js.Any], registry = registry.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any])
-    __obj.asInstanceOf[FieldTemplateProps[T, F]]
+    registry: Registry[T, S, F],
+    schema: S
+  ): FieldTemplateProps[T, S, F] = {
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], onChange = js.Any.fromFunction3(onChange), onDropPropertyClick = js.Any.fromFunction1(onDropPropertyClick), onKeyChange = js.Any.fromFunction1(onKeyChange), readonly = readonly.asInstanceOf[js.Any], registry = registry.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FieldTemplateProps[T, S, F]]
   }
   
   @scala.inline
-  implicit open class MutableBuilder[Self <: FieldTemplateProps[?, ?], T, F] (val x: Self & (FieldTemplateProps[T, F])) extends AnyVal {
+  implicit open class MutableBuilder[Self <: FieldTemplateProps[?, ?, ?], T, S /* <: StrictRJSFSchema */, F /* <: FormContextType */] (val x: Self & (FieldTemplateProps[T, S, F])) extends AnyVal {
     
     inline def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
@@ -139,6 +142,8 @@ object FieldTemplateProps {
     
     inline def setFormData(value: T): Self = StObject.set(x, "formData", value.asInstanceOf[js.Any])
     
+    inline def setFormDataUndefined: Self = StObject.set(x, "formData", js.undefined)
+    
     inline def setHelp(value: ReactElement): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
     
     inline def setHelpUndefined: Self = StObject.set(x, "help", js.undefined)
@@ -156,7 +161,7 @@ object FieldTemplateProps {
     inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     inline def setOnChange(
-      value: (/* newFormData */ Any, /* es */ js.UndefOr[ErrorSchema[Any]], /* id */ js.UndefOr[String]) => Any
+      value: (/* newFormData */ js.UndefOr[Any], /* es */ js.UndefOr[ErrorSchema[Any]], /* id */ js.UndefOr[String]) => Any
     ): Self = StObject.set(x, "onChange", js.Any.fromFunction3(value))
     
     inline def setOnDropPropertyClick(value: String => js.Function0[Unit]): Self = StObject.set(x, "onDropPropertyClick", js.Any.fromFunction1(value))
@@ -179,15 +184,19 @@ object FieldTemplateProps {
     
     inline def setReadonly(value: Boolean): Self = StObject.set(x, "readonly", value.asInstanceOf[js.Any])
     
-    inline def setRegistry(value: Registry[T, F]): Self = StObject.set(x, "registry", value.asInstanceOf[js.Any])
+    inline def setRegistry(value: Registry[T, S, F]): Self = StObject.set(x, "registry", value.asInstanceOf[js.Any])
     
     inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     
     inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
     
-    inline def setSchema(value: RJSFSchema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+    inline def setSchema(value: S): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
-    inline def setUiSchema(value: UiSchema[T, F]): Self = StObject.set(x, "uiSchema", value.asInstanceOf[js.Any])
+    inline def setStyle(value: StyleHTMLAttributes[Any]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    
+    inline def setUiSchema(value: UiSchema[T, S, F]): Self = StObject.set(x, "uiSchema", value.asInstanceOf[js.Any])
     
     inline def setUiSchemaUndefined: Self = StObject.set(x, "uiSchema", js.undefined)
   }

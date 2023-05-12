@@ -27,12 +27,12 @@ trait LanguageModel extends StObject {
   var InputDataConfig: js.UndefOr[typings.awsSdk.clientsTranscribeserviceMod.InputDataConfig] = js.undefined
   
   /**
-    * The language code used to create your custom language model. Each language model must contain terms in only one language, and the language you select for your model must match the language of your training and tuning data. For a list of supported languages and their associated language codes, refer to the Supported languages table. Note that U.S. English (en-US) is the only language supported with Amazon Transcribe Medical.
+    * The language code used to create your custom language model. Each custom language model must contain terms in only one language, and the language you select for your custom language model must match the language of your training and tuning data. For a list of supported languages and their associated language codes, refer to the Supported languages table. Note that U.S. English (en-US) is the only language supported with Amazon Transcribe Medical.
     */
   var LanguageCode: js.UndefOr[CLMLanguageCode] = js.undefined
   
   /**
-    * The date and time the specified language model was last modified. Timestamps are in the format YYYY-MM-DD'T'HH:MM:SS.SSSSSS-UTC. For example, 2022-05-04T12:32:58.761000-07:00 represents 12:32 PM UTC-7 on May 4, 2022.
+    * The date and time the specified custom language model was last modified. Timestamps are in the format YYYY-MM-DD'T'HH:MM:SS.SSSSSS-UTC. For example, 2022-05-04T12:32:58.761000-07:00 represents 12:32 PM UTC-7 on May 4, 2022.
     */
   var LastModifiedTime: js.UndefOr[js.Date] = js.undefined
   
@@ -47,7 +47,7 @@ trait LanguageModel extends StObject {
   var ModelStatus: js.UndefOr[typings.awsSdk.clientsTranscribeserviceMod.ModelStatus] = js.undefined
   
   /**
-    * Shows if a more current base model is available for use with the specified custom language model. If false, your language model is using the most up-to-date base model. If true, there is a newer base model available than the one your language model is using. Note that to update a base model, you must recreate the custom language model using the new base model. Base model upgrades for existing custom language models are not supported.
+    * Shows if a more current base model is available for use with the specified custom language model. If false, your custom language model is using the most up-to-date base model. If true, there is a newer base model available than the one your language model is using. Note that to update a base model, you must recreate the custom language model using the new base model. Base model upgrades for existing custom language models are not supported.
     */
   var UpgradeAvailability: js.UndefOr[Boolean] = js.undefined
 }

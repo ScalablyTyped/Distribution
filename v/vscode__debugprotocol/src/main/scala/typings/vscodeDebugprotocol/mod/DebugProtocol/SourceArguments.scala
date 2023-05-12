@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Arguments for `source` request. */
 trait SourceArguments extends StObject {
   
-  /** Specifies the source content to load. Either source.path or source.sourceReference must be specified. */
+  /** Specifies the source content to load. Either `source.path` or `source.sourceReference` must be specified. */
   var source: js.UndefOr[Source] = js.undefined
   
-  /** The reference to the source. This is the same as source.sourceReference.
+  /** The reference to the source. This is the same as `source.sourceReference`.
   			This is provided for backward compatibility since old clients do not understand the `source` attribute.
   		*/
   var sourceReference: Double

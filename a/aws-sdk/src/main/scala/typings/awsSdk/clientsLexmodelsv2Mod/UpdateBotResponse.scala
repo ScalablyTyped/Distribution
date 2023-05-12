@@ -12,6 +12,11 @@ trait UpdateBotResponse extends StObject {
   var botId: js.UndefOr[Id] = js.undefined
   
   /**
+    * The list of bot members in the network that was updated.
+    */
+  var botMembers: js.UndefOr[BotMembers] = js.undefined
+  
+  /**
     * The name of the bot after the update.
     */
   var botName: js.UndefOr[Name] = js.undefined
@@ -20,6 +25,11 @@ trait UpdateBotResponse extends StObject {
     * Shows the current status of the bot. The bot is first in the Creating status. Once the bot is read for use, it changes to the Available status. After the bot is created, you can use the DRAFT version of the bot.
     */
   var botStatus: js.UndefOr[BotStatus] = js.undefined
+  
+  /**
+    * The type of the bot that was updated.
+    */
+  var botType: js.UndefOr[BotType] = js.undefined
   
   /**
     * A timestamp of the date and time that the bot was created.
@@ -65,6 +75,12 @@ object UpdateBotResponse {
     
     inline def setBotIdUndefined: Self = StObject.set(x, "botId", js.undefined)
     
+    inline def setBotMembers(value: BotMembers): Self = StObject.set(x, "botMembers", value.asInstanceOf[js.Any])
+    
+    inline def setBotMembersUndefined: Self = StObject.set(x, "botMembers", js.undefined)
+    
+    inline def setBotMembersVarargs(value: BotMember*): Self = StObject.set(x, "botMembers", js.Array(value*))
+    
     inline def setBotName(value: Name): Self = StObject.set(x, "botName", value.asInstanceOf[js.Any])
     
     inline def setBotNameUndefined: Self = StObject.set(x, "botName", js.undefined)
@@ -72,6 +88,10 @@ object UpdateBotResponse {
     inline def setBotStatus(value: BotStatus): Self = StObject.set(x, "botStatus", value.asInstanceOf[js.Any])
     
     inline def setBotStatusUndefined: Self = StObject.set(x, "botStatus", js.undefined)
+    
+    inline def setBotType(value: BotType): Self = StObject.set(x, "botType", value.asInstanceOf[js.Any])
+    
+    inline def setBotTypeUndefined: Self = StObject.set(x, "botType", js.undefined)
     
     inline def setCreationDateTime(value: js.Date): Self = StObject.set(x, "creationDateTime", value.asInstanceOf[js.Any])
     

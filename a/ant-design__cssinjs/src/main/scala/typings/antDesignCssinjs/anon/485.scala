@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.InlineSize
+import typings.csstype.mod.Property.MathStyle
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,13 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `485` extends StObject {
   
   var value: js.UndefOr[
-    (InlineSize[Double | String]) | (js.Array[
-      (Extract[
-        js.UndefOr[
-          (InlineSize[Double | String]) | (js.Array[NonNullable[js.UndefOr[InlineSize[Double | String]]]])
-        ], 
-        String
-      ]) | (NonNullable[js.UndefOr[InlineSize[Double | String]]])
+    MathStyle | (js.Array[
+      (Extract[js.UndefOr[MathStyle | js.Array[NonNullable[js.UndefOr[MathStyle]]]], String]) | NonNullable[js.UndefOr[MathStyle]]
     ])
   ] = js.native
 }

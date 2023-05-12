@@ -161,7 +161,7 @@ object distNodesHtmlMod {
       * traverses the Element and its parents (heading toward the document root) until it finds a node that matches the provided selector string. Will return itself or the matching ancestor. If no such element exists, it returns null.
       * @param selector a DOMString containing a selector list
       */
-    def closest(selector: String): typings.nodeHtmlParser.distNodesNodeMod.default = js.native
+    def closest(selector: String): HTMLElement = js.native
     
     /**
       * Exchanges given child with new child

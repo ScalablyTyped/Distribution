@@ -1,6 +1,8 @@
 package typings.remarkPrism
 
 import org.scalablytyped.runtime.Shortcut
+import typings.mdast.mod.Root
+import typings.unified.mod.Plugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -43,7 +45,7 @@ object mod extends Shortcut {
     * Plugin to use prism with remark.
     * https://github.com/unifiedjs/unified/blob/main/index.d.ts#L488-L489
     */
-  type Prism = js.Function1[/* settings */ js.UndefOr[Options], Unit]
+  type Prism = Plugin[js.Array[js.UndefOr[Options | Unit]], Root, Root]
   
   /* Rewritten from type alias, can be one of: 
     - typings.remarkPrism.remarkPrismStrings.autolinker

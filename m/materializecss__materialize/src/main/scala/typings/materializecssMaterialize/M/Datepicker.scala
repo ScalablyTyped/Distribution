@@ -27,15 +27,15 @@ trait Datepicker
   var doneBtn: HTMLButtonElement = js.native
   
   /**
-    * Change date view to a specific date on the datepicker
+    * Change date view to a specific date on the datepicker.
     * @param date Date to show on the datepicker.
     */
   def gotoDate(date: js.Date): Unit = js.native
   
   /**
-    * Set a date on the datepicker
+    * Set a date on the datepicker.
     * @param date Date to set on the datepicker.
-    * @param preventOnSelect Undocumented as of 5 March 2018
+    * @param preventOnSelect Undocumented as of 5 March 2018.
     */
   def setDate(): Unit = js.native
   def setDate(date: String): Unit = js.native
@@ -44,5 +44,8 @@ trait Datepicker
   def setDate(date: js.Date, preventOnSelect: Boolean): Unit = js.native
   def setDate(date: Unit, preventOnSelect: Boolean): Unit = js.native
   
+  /**
+    * Sets current date as the input value.
+    */
   def setInputValue(): Unit = js.native
 }

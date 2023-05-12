@@ -1,5 +1,6 @@
 package typings.minio.mod
 
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,13 +11,19 @@ open class PostPolicy () extends StObject {
   
   def setBucket(bucketName: String): Unit = js.native
   
+  def setContentDisposition(disposition: String): Unit = js.native
+  
   def setContentLengthRange(min: Double, max: Double): Unit = js.native
   
   def setContentType(`type`: String): Unit = js.native
+  
+  def setContentTypeStartsWith(prefix: String): Unit = js.native
   
   def setExpires(date: js.Date): Unit = js.native
   
   def setKey(objectName: String): Unit = js.native
   
   def setKeyStartsWith(prefix: String): Unit = js.native
+  
+  def setUserMetaData(metadata: Record[String, String]): Unit = js.native
 }

@@ -24,7 +24,7 @@ object mod {
       * @param {string} serverUrl
       * @param {string} roomname
       * @param {Y.Doc} doc
-      * @param {object} [opts]
+      * @param {object} opts
       * @param {boolean} [opts.connect]
       * @param {awarenessProtocol.Awareness} [opts.awareness]
       * @param {Object<string,string>} [opts.params]

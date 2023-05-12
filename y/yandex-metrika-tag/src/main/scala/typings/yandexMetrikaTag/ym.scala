@@ -69,14 +69,14 @@ object ym {
     def apply(counterId: Double, eventName: replacePhones): Unit = js.native
     def apply(counterId: Double, eventName: setUserID, userID: String): Unit = js.native
     def apply(counterId: Double, eventName: userParams, parameters: UserParameters): Unit = js.native
-    // tslint:disable-next-line no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
     def apply[CTX](counterId: Double, eventName: extLink, url: String): Unit = js.native
     def apply[CTX](counterId: Double, eventName: extLink, url: String, options: ExtLinkOptions[CTX]): Unit = js.native
-    // tslint:disable-next-line no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
     def apply[CTX](counterId: Double, eventName: file, url: String): Unit = js.native
     def apply[CTX](counterId: Double, eventName: file, url: String, options: FileOptions[CTX]): Unit = js.native
     def apply[CTX](counterId: Double, eventName: hit, url: String, options: HitOptions[CTX]): Unit = js.native
-    // tslint:disable-next-line no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
     def apply[CTX](counterId: Double, eventName: notBounce): Unit = js.native
     def apply[CTX](counterId: Double, eventName: notBounce, options: NotBounceOptions[CTX]): Unit = js.native
     def apply[CTX](counterId: Double, eventName: reachGoal, target: String): Unit = js.native

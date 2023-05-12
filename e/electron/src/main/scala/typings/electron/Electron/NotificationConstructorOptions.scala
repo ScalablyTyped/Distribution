@@ -53,7 +53,8 @@ trait NotificationConstructorOptions extends StObject {
   var replyPlaceholder: js.UndefOr[String] = js.undefined
   
   /**
-    * Whether or not to emit an OS notification noise when showing the notification.
+    * Whether or not to suppress the OS notification noise when showing the
+    * notification.
     */
   var silent: js.UndefOr[Boolean] = js.undefined
   
@@ -79,8 +80,8 @@ trait NotificationConstructorOptions extends StObject {
   var timeoutType: js.UndefOr[default | never] = js.undefined
   
   /**
-    * A title for the notification, which will be shown at the top of the notification
-    * window when it is shown.
+    * A title for the notification, which will be displayed at the top of the
+    * notification window when it is shown.
     */
   var title: js.UndefOr[String] = js.undefined
   

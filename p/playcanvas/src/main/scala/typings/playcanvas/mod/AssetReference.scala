@@ -5,8 +5,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** @typedef {import('./asset.js').Asset} Asset */
-/** @typedef {import('./asset-registry.js').AssetRegistry} AssetRegistry */
 /**
   * An object that manages the case where an object holds a reference to an asset and needs to be
   * notified when changes occur in the asset. e.g. notifications include load, add and remove
@@ -21,9 +19,11 @@ open class AssetReference protected () extends StObject {
     *
     * @param {string} propertyName - The name of the property that the asset is stored under,
     * passed into callbacks to enable updating.
-    * @param {Asset|object} parent - The parent object that contains the asset reference, passed
-    * into callbacks to enable updating. Currently an asset, but could be component or other.
-    * @param {AssetRegistry} registry - The asset registry that stores all assets.
+    * @param {import('./asset.js').Asset|object} parent - The parent object that contains the
+    * asset reference, passed into callbacks to enable updating. Currently an asset, but could be
+    * component or other.
+    * @param {import('./asset-registry.js').AssetRegistry} registry - The asset registry that
+    * stores all assets.
     * @param {object} callbacks - A set of functions called when the asset state changes: load,
     * add, remove.
     * @param {object} [callbacks.load] - The function called when the asset loads
@@ -36,7 +36,7 @@ open class AssetReference protected () extends StObject {
     * unload(propertyName, parent, asset).
     * @param {object} [scope] - The scope to call the callbacks in.
     * @example
-    * var reference = new pc.AssetReference('textureAsset', this, this.app.assets, {
+    * const reference = new pc.AssetReference('textureAsset', this, this.app.assets, {
     *     load: this.onTextureAssetLoad,
     *     add: this.onTextureAssetAdd,
     *     remove: this.onTextureAssetRemove

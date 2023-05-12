@@ -5,6 +5,7 @@ import typings.azureMsalBrowser.distCacheItokencacheMod.ITokenCache
 import typings.azureMsalBrowser.distConfigConfigurationMod.BrowserConfiguration
 import typings.azureMsalBrowser.distRequestSilentRequestMod.SilentRequest
 import typings.azureMsalCommon.distCryptoIcryptoMod.ICrypto
+import typings.azureMsalCommon.distResponseAuthenticationResultMod.AuthenticationResult
 import typings.azureMsalCommon.distResponseExternalTokenResponseMod.ExternalTokenResponse
 import typings.azureMsalCommon.mod.Logger
 import org.scalablytyped.runtime.StObject
@@ -29,23 +30,46 @@ object distCacheTokenCacheMod {
     
     /* private */ var cryptoObj: Any = js.native
     
+    /**
+      * Helper function to generate an `AuthenticationResult` for the result.
+      * @param request
+      * @param idTokenObj
+      * @param cacheRecord
+      * @param authority
+      * @returns `AuthenticationResult`
+      */
+    /* private */ var generateAuthenticationResult: Any = js.native
+    
     var isBrowserEnvironment: Boolean = js.native
     
     /**
       * Helper function to load access tokens to msal-browser cache
       * @param request
       * @param response
-      * @param options
       * @param homeAccountId
       * @param environment
       * @param tenantId
-      * @returns
+      * @returns `AccessTokenEntity`
       */
     /* private */ var loadAccessToken: Any = js.native
     
-    /** API to side-load tokens to MSAL cache */
+    /**
+      * Helper function to load account to msal-browser cache
+      * @param idToken
+      * @param environment
+      * @param clientInfo
+      * @param authorityType
+      * @param requestHomeAccountId
+      * @returns `AccountEntity`
+      */
+    /* private */ var loadAccount: Any = js.native
+    
+    /**
+      * API to side-load tokens to MSAL cache
+      * @returns `AuthenticationResult` for the response that was loaded.
+      */
     /* CompleteClass */
-    override def loadExternalTokens(request: SilentRequest, response: ExternalTokenResponse, options: LoadTokenOptions): Unit = js.native
+    override def loadExternalTokens(request: SilentRequest, response: ExternalTokenResponse, options: LoadTokenOptions): AuthenticationResult = js.native
     
     /**
       * Helper function to load id tokens to msal-browser cache
@@ -53,9 +77,19 @@ object distCacheTokenCacheMod {
       * @param homeAccountId
       * @param environment
       * @param tenantId
-      * @param options
+      * @returns `IdTokenEntity`
       */
     /* private */ var loadIdToken: Any = js.native
+    
+    /**
+      * Helper function to load refresh tokens to msal-browser cache
+      * @param request
+      * @param response
+      * @param homeAccountId
+      * @param environment
+      * @returns `RefreshTokenEntity`
+      */
+    /* private */ var loadRefreshToken: Any = js.native
     
     /* private */ var logger: Any = js.native
     

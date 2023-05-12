@@ -16,7 +16,7 @@ object libIconsShoppingCartOutlinedMod extends Shortcut {
   @js.native
   trait ShoppingCartOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_ShoppingCartOutlinedIconType: String = js.native

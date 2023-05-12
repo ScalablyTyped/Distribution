@@ -16,7 +16,7 @@ object libIconsMinusSquareTwoToneMod extends Shortcut {
   @js.native
   trait MinusSquareTwoToneIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_MinusSquareTwoToneIconType: String = js.native

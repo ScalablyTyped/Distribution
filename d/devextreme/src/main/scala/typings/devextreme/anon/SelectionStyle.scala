@@ -19,7 +19,7 @@ trait SelectionStyle extends StObject {
   /**
     * Specifies the appearance of tiles in the hover state.
     */
-  var hoverStyle: js.UndefOr[`7`] = js.undefined
+  var hoverStyle: js.UndefOr[`8`] = js.undefined
   
   /**
     * Configures the tile labels.
@@ -29,7 +29,7 @@ trait SelectionStyle extends StObject {
   /**
     * Specifies the appearance of tiles in the selected state.
     */
-  var selectionStyle: js.UndefOr[`7`] = js.undefined
+  var selectionStyle: js.UndefOr[`8`] = js.undefined
 }
 object SelectionStyle {
   
@@ -49,7 +49,7 @@ object SelectionStyle {
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    inline def setHoverStyle(value: `7`): Self = StObject.set(x, "hoverStyle", value.asInstanceOf[js.Any])
+    inline def setHoverStyle(value: `8`): Self = StObject.set(x, "hoverStyle", value.asInstanceOf[js.Any])
     
     inline def setHoverStyleUndefined: Self = StObject.set(x, "hoverStyle", js.undefined)
     
@@ -57,7 +57,7 @@ object SelectionStyle {
     
     inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    inline def setSelectionStyle(value: `7`): Self = StObject.set(x, "selectionStyle", value.asInstanceOf[js.Any])
+    inline def setSelectionStyle(value: `8`): Self = StObject.set(x, "selectionStyle", value.asInstanceOf[js.Any])
     
     inline def setSelectionStyleUndefined: Self = StObject.set(x, "selectionStyle", js.undefined)
   }

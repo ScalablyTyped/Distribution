@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "structured-source" : "4.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "structured-source" : "4.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

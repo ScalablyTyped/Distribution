@@ -323,6 +323,8 @@ object sapUiUx3ActionBarMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:actionSelected actionSelected} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -334,6 +336,8 @@ object sapUiUx3ActionBarMod {
     mParameters: Action): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:feedSubmit feedSubmit} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -490,6 +494,8 @@ object sapUiUx3ActionBarMod {
     ): int = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Checks whether the control is still valid (is in the DOM). ActionBar instance is rendered if and only
       * if 'isActive' returns 'true'. This check is called implicitely by the rendere, MUST not be removed.
       *

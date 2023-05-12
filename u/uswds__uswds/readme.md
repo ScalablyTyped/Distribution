@@ -1,7 +1,7 @@
 
 # Scala.js typings for uswds__uswds
 
-Typings are for version 3.0
+Typings are for version 3.3
 
 ## Library description:
 Open source UI components and visual style guide for U.S. government websites

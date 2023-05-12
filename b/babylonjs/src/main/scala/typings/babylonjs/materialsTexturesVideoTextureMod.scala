@@ -21,7 +21,7 @@ object materialsTexturesVideoTextureMod {
       * Creates a video texture.
       * If you want to display a video in your scene, this is the special texture for that.
       * This special texture works similar to other textures, with the exception of a few parameters.
-      * @see https://doc.babylonjs.com/how_to/video_texture
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/materials/using/videoTexture
       * @param name optional name, will detect from video source, if not defined
       * @param src can be used to provide an url, array of urls or an already setup HTML video element.
       * @param scene is obviously the current scene.
@@ -58,6 +58,8 @@ object materialsTexturesVideoTextureMod {
     
     /* private */ var _errorFound: Any = js.native
     
+    /* private */ var _externalTexture: Any = js.native
+    
     /* private */ var _frameId: Any = js.native
     
     /* private */ var _generateMipMaps: Any = js.native
@@ -75,6 +77,8 @@ object materialsTexturesVideoTextureMod {
     /* private */ var _processError: Any = js.native
     
     /* private */ var _reset: Any = js.native
+    
+    /* private */ var _resizeInternalTexture: Any = js.native
     
     /* private */ var _settings: Any = js.native
     
@@ -213,6 +217,12 @@ object materialsTexturesVideoTextureMod {
     var format: js.UndefOr[Double] = js.undefined
     
     /**
+      * Notify babylon to not modify any video settings and not control the video's playback.
+      * Set this to true if you are controlling the way the video is being played, stopped and paused.
+      */
+    var independentVideoSource: js.UndefOr[Boolean] = js.undefined
+    
+    /**
       * Applies `loop` to video, if specified
       */
     var loop: js.UndefOr[Boolean] = js.undefined
@@ -246,6 +256,10 @@ object materialsTexturesVideoTextureMod {
       inline def setFormat(value: Double): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
       inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      
+      inline def setIndependentVideoSource(value: Boolean): Self = StObject.set(x, "independentVideoSource", value.asInstanceOf[js.Any])
+      
+      inline def setIndependentVideoSourceUndefined: Self = StObject.set(x, "independentVideoSource", js.undefined)
       
       inline def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
       

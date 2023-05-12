@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.sparc64
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.`x86-32`
   - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.`x86-64`
+  - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.noarch
 */
 trait PlatformArch extends StObject
 object PlatformArch {
@@ -20,6 +21,8 @@ object PlatformArch {
   inline def aarch64: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.aarch64 = "aarch64".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.aarch64]
   
   inline def arm: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.arm = "arm".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.arm]
+  
+  inline def noarch: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.noarch = "noarch".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.noarch]
   
   inline def ppc64: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.ppc64 = "ppc64".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.ppc64]
   

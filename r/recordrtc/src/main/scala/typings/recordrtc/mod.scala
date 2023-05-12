@@ -632,7 +632,7 @@ object mod {
     def getBlob(): Blob = js.native
     
     /** returns Data-URL */
-    def getDataURL(): String = js.native
+    def getDataURL(cb: js.Function1[/* dataURL */ String, Unit]): Unit = js.native
     
     /** get recorded blob from indexded-db storage */
     def getFromDisk(
@@ -653,7 +653,7 @@ object mod {
     def initRecorder(): Unit = js.native
     
     /** fired if recorder's state changes */
-    def onStateChanged(cb: js.Function1[/* state */ State, Unit]): Unit = js.native
+    def onStateChanged(state: State): Unit = js.native
     
     /** pause the recording */
     def pauseRecording(): Unit = js.native

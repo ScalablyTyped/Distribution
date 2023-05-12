@@ -51,8 +51,13 @@ object enginesExtensionsEngineDotviewsMod {
       var _onEngineViewChanged: js.UndefOr[js.Function0[Unit]] = js.native
       
       /**
+        * @internal
+        */
+      def _renderViewStep(view: EngineView): Boolean = js.native
+      
+      /**
         * Gets the current engine view
-        * @see https://doc.babylonjs.com/how_to/multi_canvases
+        * @see https://doc.babylonjs.com/features/featuresDeepDive/scene/multiCanvas
         */
       var activeView: Nullable[EngineView] = js.native
       

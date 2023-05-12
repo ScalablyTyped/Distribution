@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait InlineValueContext extends StObject {
   
   /**
-    * The stack frame (as a DAP Id) where the execution has stopped.
-    */
+  		 * The stack frame (as a DAP Id) where the execution has stopped.
+  		 */
   val frameId: Double
   
   /**
-    * The document range where execution has stopped.
-    * Typically the end position of the range denotes the line where the inline values are shown.
-    */
+  		 * The document range where execution has stopped.
+  		 * Typically the end position of the range denotes the line where the inline values are shown.
+  		 */
   val stoppedLocation: Range
 }
 object InlineValueContext {

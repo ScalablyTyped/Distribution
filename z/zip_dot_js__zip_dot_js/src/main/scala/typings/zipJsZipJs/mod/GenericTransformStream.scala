@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /**
   * Represents a generic `TransformStream` class.
-  * 
+  *
   * @see {@link https://streams.spec.whatwg.org/#generictransformstream|specification}
   */
 trait GenericTransformStream extends StObject {

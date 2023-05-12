@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait IsSuspense
   extends StObject
-     with Instantiable0[`1`]
+     with Instantiable0[Props]
      with _VNodeTypes {
   
   var __isSuspense: `true` = js.native

@@ -1,5 +1,6 @@
 package typings.blueprintjsPopover2
 
+import typings.blueprintjsPopover2.anon.OmitContextMenu2PopoverPr
 import typings.blueprintjsPopover2.anon.PartialBreadcrumbs2Props
 import typings.blueprintjsPopover2.anon.PartialTooltip2PropsDefau
 import typings.blueprintjsPopover2.blueprintjsPopover2Strings.`click-target`
@@ -8,6 +9,7 @@ import typings.blueprintjsPopover2.blueprintjsPopover2Strings.click
 import typings.blueprintjsPopover2.blueprintjsPopover2Strings.hover
 import typings.blueprintjsPopover2.libEsmBreadcrumbs2Mod.Breadcrumbs2Props
 import typings.blueprintjsPopover2.libEsmContextMenu2Mod.ContextMenu2Props
+import typings.blueprintjsPopover2.libEsmContextMenu2PopoverMod.ContextMenu2PopoverProps
 import typings.blueprintjsPopover2.libEsmMenuItem2Mod.MenuItem2Props
 import typings.blueprintjsPopover2.libEsmPopover2Mod.Popover2Props
 import typings.blueprintjsPopover2.libEsmPopover2SharedPropsMod.DefaultPopover2TargetHTMLProps
@@ -15,12 +17,17 @@ import typings.blueprintjsPopover2.libEsmResizeSensor2Mod.ResizeSensor2Props
 import typings.blueprintjsPopover2.libEsmTooltip2Mod.Tooltip2Props
 import typings.react.mod.AnchorHTMLAttributes
 import typings.react.mod.FC
+import typings.react.mod.NamedExoticComponent
 import typings.std.HTMLAnchorElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@blueprintjs/popover2", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@blueprintjs/popover2", "Breadcrumbs2")
   @js.native
@@ -133,6 +140,10 @@ object mod {
   @js.native
   val ContextMenu2: FC[ContextMenu2Props] = js.native
   
+  @JSImport("@blueprintjs/popover2", "ContextMenu2Popover")
+  @js.native
+  val ContextMenu2Popover: NamedExoticComponent[ContextMenu2PopoverProps] = js.native
+  
   object Errors {
     
     @JSImport("@blueprintjs/popover2", "Errors.POPOVER2_HAS_BACKDROP_INTERACTION")
@@ -158,6 +169,10 @@ object mod {
     @JSImport("@blueprintjs/popover2", "Errors.POPOVER2_WARN_PLACEMENT_AND_POSITION_MUTEX")
     @js.native
     val POPOVER2_WARN_PLACEMENT_AND_POSITION_MUTEX: String = js.native
+    
+    @JSImport("@blueprintjs/popover2", "Errors.POPOVER2_WARN_TARGET_PROPS_WITH_RENDER_TARGET")
+    @js.native
+    val POPOVER2_WARN_TARGET_PROPS_WITH_RENDER_TARGET: String = js.native
     
     @JSImport("@blueprintjs/popover2", "Errors.POPOVER2_WARN_TOO_MANY_CHILDREN")
     @js.native
@@ -195,7 +210,7 @@ object mod {
   
   @JSImport("@blueprintjs/popover2", "Popover2")
   @js.native
-  open class Popover2[T] protected ()
+  open class Popover2[T /* <: DefaultPopover2TargetHTMLProps */] protected ()
     extends typings.blueprintjsPopover2.libEsmPopover2Mod.Popover2[T] {
     def this(props: Popover2Props[T]) = this()
     def this(props: Popover2Props[T], context: Any) = this()
@@ -285,12 +300,12 @@ object mod {
   
   @JSImport("@blueprintjs/popover2", "Tooltip2")
   @js.native
-  open class Tooltip2[T] protected ()
+  open class Tooltip2[T /* <: DefaultPopover2TargetHTMLProps */] protected ()
     extends typings.blueprintjsPopover2.libEsmTooltip2Mod.Tooltip2[T] {
     def this(props: Tooltip2Props[T]) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: Tooltip2Props[T], context: Any) = this()
   }
@@ -311,4 +326,8 @@ object mod {
     def displayName: String = js.native
     inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
+  
+  inline def hideContextMenu(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hideContextMenu")().asInstanceOf[Unit]
+  
+  inline def showContextMenu(props: OmitContextMenu2PopoverPr): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showContextMenu")(props.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

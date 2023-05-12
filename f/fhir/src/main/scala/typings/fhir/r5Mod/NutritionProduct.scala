@@ -20,7 +20,12 @@ trait NutritionProduct
   var category: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
   /**
-    * The code assigned to the product, for example a manufacturer number or other terminology.
+    * Specifies descriptive properties of the nutrition product.
+    */
+  var characteristic: js.UndefOr[js.Array[NutritionProductCharacteristic]] = js.undefined
+  
+  /**
+    * The code assigned to the product, for example a USDA NDB number, a USDA FDC ID number, or a Langual code.
     */
   var code: js.UndefOr[CodeableConcept] = js.undefined
   
@@ -32,7 +37,7 @@ trait NutritionProduct
   /**
     * Conveys instance-level information about this product item. One or several physical, countable instances or occurrences of the product.
     */
-  var instance: js.UndefOr[NutritionProductInstance] = js.undefined
+  var instance: js.UndefOr[js.Array[NutritionProductInstance]] = js.undefined
   
   /**
     * Allergens that are known or suspected to be a part of this nutrition product.
@@ -40,7 +45,7 @@ trait NutritionProduct
   var knownAllergen: js.UndefOr[js.Array[CodeableReference]] = js.undefined
   
   /**
-    * The organisation (manufacturer, representative or legal authorisation holder) that is responsible for the device.
+    * The organisation (manufacturer, representative or legal authorization holder) that is responsible for the device.
     */
   var manufacturer: js.UndefOr[js.Array[Reference]] = js.undefined
   
@@ -53,11 +58,6 @@ trait NutritionProduct
     * Note: This is a business identifier, not a resource identifier (see [discussion](resource.html#identifiers)).  It is best practice for the identifier to only appear on a single resource instance, however business practices may occasionally dictate that multiple resource instances with the same identifier can exist - possibly even with different resource types.  For example, multiple Patient and a Person resource instance might share the same social insurance number.
     */
   var nutrient: js.UndefOr[js.Array[NutritionProductNutrient]] = js.undefined
-  
-  /**
-    * Specifies descriptive properties of the nutrition product.
-    */
-  var productCharacteristic: js.UndefOr[js.Array[NutritionProductProductCharacteristic]] = js.undefined
   
   /** Resource Type Name (for serialization) */
   @JSName("resourceType")
@@ -84,6 +84,12 @@ object NutritionProduct {
     
     inline def setCategoryVarargs(value: CodeableConcept*): Self = StObject.set(x, "category", js.Array(value*))
     
+    inline def setCharacteristic(value: js.Array[NutritionProductCharacteristic]): Self = StObject.set(x, "characteristic", value.asInstanceOf[js.Any])
+    
+    inline def setCharacteristicUndefined: Self = StObject.set(x, "characteristic", js.undefined)
+    
+    inline def setCharacteristicVarargs(value: NutritionProductCharacteristic*): Self = StObject.set(x, "characteristic", js.Array(value*))
+    
     inline def setCode(value: CodeableConcept): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
@@ -94,9 +100,11 @@ object NutritionProduct {
     
     inline def setIngredientVarargs(value: NutritionProductIngredient*): Self = StObject.set(x, "ingredient", js.Array(value*))
     
-    inline def setInstance(value: NutritionProductInstance): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
+    inline def setInstance(value: js.Array[NutritionProductInstance]): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     
     inline def setInstanceUndefined: Self = StObject.set(x, "instance", js.undefined)
+    
+    inline def setInstanceVarargs(value: NutritionProductInstance*): Self = StObject.set(x, "instance", js.Array(value*))
     
     inline def setKnownAllergen(value: js.Array[CodeableReference]): Self = StObject.set(x, "knownAllergen", value.asInstanceOf[js.Any])
     
@@ -121,12 +129,6 @@ object NutritionProduct {
     inline def setNutrientUndefined: Self = StObject.set(x, "nutrient", js.undefined)
     
     inline def setNutrientVarargs(value: NutritionProductNutrient*): Self = StObject.set(x, "nutrient", js.Array(value*))
-    
-    inline def setProductCharacteristic(value: js.Array[NutritionProductProductCharacteristic]): Self = StObject.set(x, "productCharacteristic", value.asInstanceOf[js.Any])
-    
-    inline def setProductCharacteristicUndefined: Self = StObject.set(x, "productCharacteristic", js.undefined)
-    
-    inline def setProductCharacteristicVarargs(value: NutritionProductProductCharacteristic*): Self = StObject.set(x, "productCharacteristic", js.Array(value*))
     
     inline def setResourceType(value: typings.fhir.fhirStrings.NutritionProduct): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     

@@ -9,27 +9,27 @@ trait SendApiAssetRequest extends StObject {
   /**
     * Asset ID value for the API request.
     */
-  var AssetId: string
+  var AssetId: _String
   
   /**
     * The request body.
     */
-  var Body: js.UndefOr[string] = js.undefined
+  var Body: js.UndefOr[_String] = js.undefined
   
   /**
     * Data set ID value for the API request.
     */
-  var DataSetId: string
+  var DataSetId: _String
   
   /**
     * HTTP method value for the API request. Alternatively, you can use the appropriate verb in your request.
     */
-  var Method: js.UndefOr[string] = js.undefined
+  var Method: js.UndefOr[_String] = js.undefined
   
   /**
     * URI path value for the API request. Alternatively, you can set the URI path directly by invoking /v1/{pathValue}.
     */
-  var Path: js.UndefOr[string] = js.undefined
+  var Path: js.UndefOr[_String] = js.undefined
   
   /**
     * Attach query string parameters to the end of the URI (for example, /v1/examplePath?exampleParam=exampleValue).
@@ -44,11 +44,11 @@ trait SendApiAssetRequest extends StObject {
   /**
     * Revision ID value for the API request.
     */
-  var RevisionId: string
+  var RevisionId: _String
 }
 object SendApiAssetRequest {
   
-  inline def apply(AssetId: string, DataSetId: string, RevisionId: string): SendApiAssetRequest = {
+  inline def apply(AssetId: _String, DataSetId: _String, RevisionId: _String): SendApiAssetRequest = {
     val __obj = js.Dynamic.literal(AssetId = AssetId.asInstanceOf[js.Any], DataSetId = DataSetId.asInstanceOf[js.Any], RevisionId = RevisionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SendApiAssetRequest]
   }
@@ -56,19 +56,19 @@ object SendApiAssetRequest {
   @scala.inline
   implicit open class MutableBuilder[Self <: SendApiAssetRequest] (val x: Self) extends AnyVal {
     
-    inline def setAssetId(value: string): Self = StObject.set(x, "AssetId", value.asInstanceOf[js.Any])
+    inline def setAssetId(value: _String): Self = StObject.set(x, "AssetId", value.asInstanceOf[js.Any])
     
-    inline def setBody(value: string): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
+    inline def setBody(value: _String): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
     
     inline def setBodyUndefined: Self = StObject.set(x, "Body", js.undefined)
     
-    inline def setDataSetId(value: string): Self = StObject.set(x, "DataSetId", value.asInstanceOf[js.Any])
+    inline def setDataSetId(value: _String): Self = StObject.set(x, "DataSetId", value.asInstanceOf[js.Any])
     
-    inline def setMethod(value: string): Self = StObject.set(x, "Method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: _String): Self = StObject.set(x, "Method", value.asInstanceOf[js.Any])
     
     inline def setMethodUndefined: Self = StObject.set(x, "Method", js.undefined)
     
-    inline def setPath(value: string): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
+    inline def setPath(value: _String): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
     
     inline def setPathUndefined: Self = StObject.set(x, "Path", js.undefined)
     
@@ -80,6 +80,6 @@ object SendApiAssetRequest {
     
     inline def setRequestHeadersUndefined: Self = StObject.set(x, "RequestHeaders", js.undefined)
     
-    inline def setRevisionId(value: string): Self = StObject.set(x, "RevisionId", value.asInstanceOf[js.Any])
+    inline def setRevisionId(value: _String): Self = StObject.set(x, "RevisionId", value.asInstanceOf[js.Any])
   }
 }

@@ -8,7 +8,6 @@ trait RepositoryidNumberSecretnameString extends StObject {
   
   var repository_id: Double
   
-  /** The name of the secret. */
   var secret_name: String
 }
 object RepositoryidNumberSecretnameString {

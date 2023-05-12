@@ -1,7 +1,7 @@
 
 # Scala.js typings for mdast-comment-marker
 
-Typings are for version 2.1.0
+Typings are for version 2.1.2
 
 ## Library description:
 mdast utility to parse a comment marker

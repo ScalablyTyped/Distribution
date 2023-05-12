@@ -5,16 +5,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** @typedef {import('../../../scene/materials/material.js').Material} Material */
-/** @typedef {import('../../../core/shape/bounding-box.js').BoundingBox} BoundingBox */
-/** @typedef {import('../../entity.js').Entity} Entity */
-/** @typedef {import('./system.js').RenderComponentSystem} RenderComponentSystem */
 /**
   * Enables an Entity to render a {@link Mesh} or a primitive shape. This component attaches
   * {@link MeshInstance} geometry to the Entity.
   *
-  * @property {Entity} rootBone A reference to the entity to be used as the root bone for any
-  * skinned meshes that are rendered by this component.
+  * @property {import('../../entity.js').Entity} rootBone A reference to the entity to be used as
+  * the root bone for any skinned meshes that are rendered by this component.
   * @augments Component
   */
 @JSImport("playcanvas", "RenderComponent")
@@ -23,8 +19,10 @@ open class RenderComponent protected () extends Component {
   /**
     * Create a new RenderComponent.
     *
-    * @param {RenderComponentSystem} system - The ComponentSystem that created this Component.
-    * @param {Entity} entity - The Entity that this Component is attached to.
+    * @param {import('./system.js').RenderComponentSystem} system - The ComponentSystem that
+    * created this Component.
+    * @param {import('../../entity.js').Entity} entity - The Entity that this Component is
+    * attached to.
     */
   def this(system: RenderComponentSystem, entity: Entity) = this()
   
@@ -58,7 +56,7 @@ open class RenderComponent protected () extends Component {
   def _cloneSkinInstances(): Unit = js.native
   
   /**
-    * @type {BoundingBox|null}
+    * @type {import('../../../core/shape/bounding-box.js').BoundingBox|null}
     * @private
     */
   /* private */ var _customAabb: Any = js.native
@@ -79,7 +77,7 @@ open class RenderComponent protected () extends Component {
     * Material used to render meshes other than asset type. It gets priority when set to
     * something else than defaultMaterial, otherwise materialASsets[0] is used.
     *
-    * @type {Material}
+    * @type {import('../../../scene/materials/material.js').Material}
     * @private
     */
   /* private */ var _material: Any = js.native
@@ -118,7 +116,7 @@ open class RenderComponent protected () extends Component {
   def _onSetMeshes(meshes: Any): Unit = js.native
   
   /**
-    * @param {Entity} entity - The entity set as the root bone.
+    * @param {import('../../entity.js').Entity} entity - The entity set as the root bone.
     * @private
     */
   /* private */ var _onSetRootBone: Any = js.native
@@ -194,7 +192,7 @@ open class RenderComponent protected () extends Component {
     * specified for skinned characters in order to avoid per frame bounding box computations based
     * on bone positions.
     *
-    * @type {BoundingBox}
+    * @type {import('../../../core/shape/bounding-box.js').BoundingBox}
     */
   def customAabb_=(arg: BoundingBox): Unit = js.native
   
@@ -259,7 +257,7 @@ open class RenderComponent protected () extends Component {
     * The material {@link Material} that will be used to render the meshes (not used on renders of
     * type 'asset').
     *
-    * @type {Material}
+    * @type {import('../../../scene/materials/material.js').Material}
     */
   def material_=(arg: Material): Unit = js.native
   

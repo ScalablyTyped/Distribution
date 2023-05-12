@@ -121,11 +121,11 @@ object mod {
     
     var maxSpan: DurationInputArg1 | Boolean = js.native
     
-    var maxYear: Double = js.native
+    var maxYear: String | Double = js.native
     
     var minDate: Moment = js.native
     
-    var minYear: Double = js.native
+    var minYear: String | Double = js.native
     
     var oldEndDate: Moment = js.native
     

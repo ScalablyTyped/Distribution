@@ -1,35 +1,32 @@
 package typings.octokitOpenapiTypes.anon
 
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.asc
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.created_
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.created_at
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.desc
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.updated
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait SinceSort extends StObject {
   
-  /** The direction to sort results. Ignored without `sort` parameter. */
+  /** @description The direction to sort results. Ignored without `sort` parameter. */
   var direction: js.UndefOr[asc | desc] = js.undefined
   
-  /** Page number of the results to fetch. */
   var page: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['page'] */ js.Any
   ] = js.undefined
   
-  /** The number of results per page (max 100). */
   var per_page: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['per-page'] */ js.Any
   ] = js.undefined
   
-  /** Only show notifications updated after the given time. This is a timestamp in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format: `YYYY-MM-DDTHH:MM:SSZ`. */
   var since: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['since'] */ js.Any
   ] = js.undefined
   
-  /** The property to sort the results by. `created` means when the repository was starred. `updated` means when the repository was last pushed to. */
-  var sort: js.UndefOr[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['sort'] */ js.Any
-  ] = js.undefined
+  var sort: js.UndefOr[created_ | updated | created_at] = js.undefined
 }
 object SinceSort {
   
@@ -63,9 +60,7 @@ object SinceSort {
     
     inline def setSinceUndefined: Self = StObject.set(x, "since", js.undefined)
     
-    inline def setSort(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['sort'] */ js.Any
-    ): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+    inline def setSort(value: created_ | updated | created_at): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     
     inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
   }

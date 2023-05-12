@@ -16,7 +16,7 @@ object libIconsDeleteFilledMod extends Shortcut {
   @js.native
   trait DeleteFilledIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_DeleteFilledIconType: String = js.native

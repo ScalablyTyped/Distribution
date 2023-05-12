@@ -211,6 +211,14 @@ trait TView extends StObject {
   var schemas: js.Array[SchemaMetadata] | Null
   
   /**
+    * Unique id of this TView for hydration purposes:
+    * - TViewType.Embedded: a unique id generated during serialization on the server
+    * - TViewType.Component: an id generated based on component properties
+    *                        (see `getComponentId` function for details)
+    */
+  var ssrId: String | Null
+  
+  /**
     * Whether or not there are any static content queries tracked on this view.
     *
     * We store this so we know whether or not we should do a content query
@@ -274,7 +282,7 @@ object TView {
     staticViewQueries: Boolean,
     `type`: TViewType
   ): TView = {
-    val __obj = js.Dynamic.literal(bindingStartIndex = bindingStartIndex.asInstanceOf[js.Any], blueprint = blueprint.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], expandoStartIndex = expandoStartIndex.asInstanceOf[js.Any], firstCreatePass = firstCreatePass.asInstanceOf[js.Any], firstUpdatePass = firstUpdatePass.asInstanceOf[js.Any], incompleteFirstPass = incompleteFirstPass.asInstanceOf[js.Any], staticContentQueries = staticContentQueries.asInstanceOf[js.Any], staticViewQueries = staticViewQueries.asInstanceOf[js.Any], cleanup = null, components = null, consts = null, contentCheckHooks = null, contentHooks = null, contentQueries = null, declTNode = null, destroyHooks = null, directiveRegistry = null, firstChild = null, hostBindingOpCodes = null, pipeRegistry = null, preOrderCheckHooks = null, preOrderHooks = null, queries = null, schemas = null, template = null, viewCheckHooks = null, viewHooks = null, viewQuery = null)
+    val __obj = js.Dynamic.literal(bindingStartIndex = bindingStartIndex.asInstanceOf[js.Any], blueprint = blueprint.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], expandoStartIndex = expandoStartIndex.asInstanceOf[js.Any], firstCreatePass = firstCreatePass.asInstanceOf[js.Any], firstUpdatePass = firstUpdatePass.asInstanceOf[js.Any], incompleteFirstPass = incompleteFirstPass.asInstanceOf[js.Any], staticContentQueries = staticContentQueries.asInstanceOf[js.Any], staticViewQueries = staticViewQueries.asInstanceOf[js.Any], cleanup = null, components = null, consts = null, contentCheckHooks = null, contentHooks = null, contentQueries = null, declTNode = null, destroyHooks = null, directiveRegistry = null, firstChild = null, hostBindingOpCodes = null, pipeRegistry = null, preOrderCheckHooks = null, preOrderHooks = null, queries = null, schemas = null, ssrId = null, template = null, viewCheckHooks = null, viewHooks = null, viewQuery = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TView]
   }
@@ -387,6 +395,10 @@ object TView {
     inline def setSchemasNull: Self = StObject.set(x, "schemas", null)
     
     inline def setSchemasVarargs(value: SchemaMetadata*): Self = StObject.set(x, "schemas", js.Array(value*))
+    
+    inline def setSsrId(value: String): Self = StObject.set(x, "ssrId", value.asInstanceOf[js.Any])
+    
+    inline def setSsrIdNull: Self = StObject.set(x, "ssrId", null)
     
     inline def setStaticContentQueries(value: Boolean): Self = StObject.set(x, "staticContentQueries", value.asInstanceOf[js.Any])
     

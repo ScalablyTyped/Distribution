@@ -14,7 +14,7 @@ open class ZipReader[Type] protected () extends StObject {
   def this(reader: ReadableReader) = this()
   /**
     * Creates the instance
-    * 
+    *
     * @param reader The {@link Reader} instance used to read data.
     * @param options The options.
     */
@@ -44,7 +44,7 @@ open class ZipReader[Type] protected () extends StObject {
   
   /**
     * Returns all the entries in the zip file
-    * 
+    *
     * @param options The options.
     * @returns A promise resolving to an `array` of {@link Entry} instances.
     */
@@ -53,7 +53,7 @@ open class ZipReader[Type] protected () extends StObject {
   
   /**
     * Returns a generator used to iterate on all the entries in the zip file
-    * 
+    *
     * @param options The options.
     * @returns An asynchrounous generator of {@link Entry} instances.
     */

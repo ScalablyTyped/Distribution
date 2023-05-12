@@ -1,7 +1,7 @@
 package typings.hapipalAvocat
 
 import typings.hapiBoom.mod.Boom
-import typings.hapiHapi.mod.ResponseObject
+import typings.hapiHapi.libTypesResponseMod.ResponseObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

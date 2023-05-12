@@ -16,6 +16,4 @@ object distSrcUtilsMod {
   inline def keyToTopic(key: js.typedarray.Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("keyToTopic")(key.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def topicToKey(topic: String): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("topicToKey")(topic.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
-  
-  type Key = typings.interfaceDatastore.mod.Key
 }

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@pixi/assets" : "7.0.4"
+      "@pixi/assets" : "7.2.4"
     }
   ],
   "test-dependencies" : [
     {
-      "@pixi/assets" : "7.0.4"
+      "@pixi/assets" : "7.2.4"
     }
   ],
   "compile-devDependencies" : [

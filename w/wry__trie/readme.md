@@ -1,7 +1,7 @@
 
 # Scala.js typings for wry__trie
 
-Typings are for version 0.3.2
+Typings are for version 0.4.2
 
 ## Library description:
 https://en.wikipedia.org/wiki/Trie

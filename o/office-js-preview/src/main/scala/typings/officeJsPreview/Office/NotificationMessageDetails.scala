@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @remarks
   * [Api set: Mailbox 1.3]
   *
-  * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+  * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
   *
   * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
   */
@@ -32,7 +32,7 @@ trait NotificationMessageDetails extends StObject {
   var actions: js.UndefOr[js.Array[NotificationMessageAction]] = js.undefined
   
   /**
-    * A reference to an icon that is defined in the manifest in the `Resources` section. It appears in the infobar area.
+    * A reference to an icon that is defined in the manifest. It appears in the infobar area.
     * It is applicable if the type is `InformationalMessage`, and is required if the type is `InsightMessage`.
     * Specifying this parameter for an unsupported type results in an exception.
     *

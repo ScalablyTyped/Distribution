@@ -9,7 +9,7 @@ trait CreateExplainabilityRequest extends StObject {
   var DataSource: js.UndefOr[typings.awsSdk.clientsForecastserviceMod.DataSource] = js.undefined
   
   /**
-    * Create an Explainability visualization that is viewable within the AWS console.
+    * Create an Explainability visualization that is viewable within the Amazon Web Services console.
     */
   var EnableVisualization: js.UndefOr[Boolean] = js.undefined
   

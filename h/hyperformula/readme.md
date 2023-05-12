@@ -1,7 +1,7 @@
 
 # Scala.js typings for hyperformula
 
-Typings are for version 2.1.0
+Typings are for version 2.4.0
 
 ## Library description:
 HyperFormula is a JavaScript engine for efficient processing of spreadsheet-like data and formulas

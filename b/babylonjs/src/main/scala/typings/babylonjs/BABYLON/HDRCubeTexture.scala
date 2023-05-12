@@ -32,6 +32,8 @@ trait HDRCubeTexture
   
   /* private */ var _size: Any = js.native
   
+  /* private */ var _supersample: Any = js.native
+  
   /* private */ var _textureMatrix: Any = js.native
   
   /**

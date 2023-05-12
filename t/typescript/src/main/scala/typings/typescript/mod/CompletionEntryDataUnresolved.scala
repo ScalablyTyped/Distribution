@@ -9,8 +9,8 @@ trait CompletionEntryDataUnresolved
      with CompletionEntryDataAutoImport
      with CompletionEntryData {
   
-  /** The key in the `ExportMapCache` where the completion entry's `SymbolExportInfo[]` is found */
-  var exportMapKey: java.lang.String
+  @JSName("exportMapKey")
+  var exportMapKey_CompletionEntryDataUnresolved: java.lang.String
 }
 object CompletionEntryDataUnresolved {
   

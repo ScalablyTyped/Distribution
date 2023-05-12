@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DbOptions
   extends StObject
      with BSONSerializeOptions
-     with WriteConcernOptions
-     with LoggerOptions {
+     with WriteConcernOptions {
   
   /** If the database authentication is dependent on another databaseName. */
   var authSource: js.UndefOr[String] = js.undefined

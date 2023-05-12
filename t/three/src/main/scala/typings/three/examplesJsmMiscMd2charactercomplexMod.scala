@@ -1,6 +1,7 @@
 package typings.three
 
 import typings.three.srcCoreBufferGeometryMod.BufferGeometry
+import typings.three.srcCoreBufferGeometryMod.NormalBufferAttributes
 import typings.three.srcCoreEventDispatcherMod.Event
 import typings.three.srcMaterialsMaterialMod.Material
 import typings.three.srcThreeMod.Mesh
@@ -48,11 +49,11 @@ object examplesJsmMiscMd2charactercomplexMod {
     
     var maxSpeed: Double = js.native
     
-    var meshBody: (Mesh[BufferGeometry, Material | js.Array[Material]]) | Null = js.native
+    var meshBody: (Mesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]]) | Null = js.native
     
-    var meshWeapon: (Mesh[BufferGeometry, Material | js.Array[Material]]) | Null = js.native
+    var meshWeapon: (Mesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]]) | Null = js.native
     
-    var meshes: js.Array[Mesh[BufferGeometry, Material | js.Array[Material]]] = js.native
+    var meshes: js.Array[Mesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]]] = js.native
     
     var oldAnimation: String = js.native
     
@@ -94,6 +95,6 @@ object examplesJsmMiscMd2charactercomplexMod {
     
     var walkSpeed: Double = js.native
     
-    var weapons: js.Array[Mesh[BufferGeometry, Material | js.Array[Material]]] = js.native
+    var weapons: js.Array[Mesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]]] = js.native
   }
 }

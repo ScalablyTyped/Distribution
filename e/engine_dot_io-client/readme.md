@@ -1,7 +1,7 @@
 
 # Scala.js typings for engine_dot_io-client
 
-Typings are for version 6.2.3
+Typings are for version 6.4.0
 
 ## Library description:
 Client for the realtime Engine

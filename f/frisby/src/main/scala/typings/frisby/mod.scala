@@ -13,6 +13,7 @@ import typings.nodeFetch.mod.RequestInit
 import typings.nodeFetch.mod.ResponseInit
 import typings.std.FormData
 import typings.std.Record
+import typings.std.URL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -159,6 +160,8 @@ object mod {
     
     inline def default(url: RequestInfo): js.Promise[typings.nodeFetch.mod.Response] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.nodeFetch.mod.Response]]
     inline def default(url: RequestInfo, init: RequestInit): js.Promise[typings.nodeFetch.mod.Response] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(url.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.nodeFetch.mod.Response]]
+    inline def default(url: URL): js.Promise[typings.nodeFetch.mod.Response] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.nodeFetch.mod.Response]]
+    inline def default(url: URL, init: RequestInit): js.Promise[typings.nodeFetch.mod.Response] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(url.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.nodeFetch.mod.Response]]
     
     @JSImport("frisby", "nodeFetch.AbortError")
     @js.native
@@ -193,7 +196,9 @@ object mod {
     open class Request protected ()
       extends typings.nodeFetch.mod.Request {
       def this(input: RequestInfo) = this()
+      def this(input: URL) = this()
       def this(input: RequestInfo, init: RequestInit) = this()
+      def this(input: URL, init: RequestInit) = this()
     }
     
     @JSImport("frisby", "nodeFetch.Response")

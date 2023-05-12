@@ -1,5 +1,9 @@
 package typings.std
 
+import typings.std.stdInts.`1`
+import typings.std.stdInts.`2`
+import typings.std.stdInts.`3`
+import typings.std.stdInts.`4`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,16 +12,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MediaError extends StObject {
   
   /* standard dom */
-  val MEDIA_ERR_ABORTED: Double
+  val MEDIA_ERR_ABORTED: `1`
   
   /* standard dom */
-  val MEDIA_ERR_DECODE: Double
+  val MEDIA_ERR_DECODE: `3`
   
   /* standard dom */
-  val MEDIA_ERR_NETWORK: Double
+  val MEDIA_ERR_NETWORK: `2`
   
   /* standard dom */
-  val MEDIA_ERR_SRC_NOT_SUPPORTED: Double
+  val MEDIA_ERR_SRC_NOT_SUPPORTED: `4`
   
   /* standard dom */
   val code: Double
@@ -27,15 +31,8 @@ trait MediaError extends StObject {
 }
 object MediaError {
   
-  inline def apply(
-    MEDIA_ERR_ABORTED: Double,
-    MEDIA_ERR_DECODE: Double,
-    MEDIA_ERR_NETWORK: Double,
-    MEDIA_ERR_SRC_NOT_SUPPORTED: Double,
-    code: Double,
-    message: java.lang.String
-  ): MediaError = {
-    val __obj = js.Dynamic.literal(MEDIA_ERR_ABORTED = MEDIA_ERR_ABORTED.asInstanceOf[js.Any], MEDIA_ERR_DECODE = MEDIA_ERR_DECODE.asInstanceOf[js.Any], MEDIA_ERR_NETWORK = MEDIA_ERR_NETWORK.asInstanceOf[js.Any], MEDIA_ERR_SRC_NOT_SUPPORTED = MEDIA_ERR_SRC_NOT_SUPPORTED.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
+  inline def apply(code: Double, message: java.lang.String): MediaError = {
+    val __obj = js.Dynamic.literal(MEDIA_ERR_ABORTED = 1, MEDIA_ERR_DECODE = 3, MEDIA_ERR_NETWORK = 2, MEDIA_ERR_SRC_NOT_SUPPORTED = 4, code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaError]
   }
   
@@ -44,13 +41,13 @@ object MediaError {
     
     inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    inline def setMEDIA_ERR_ABORTED(value: Double): Self = StObject.set(x, "MEDIA_ERR_ABORTED", value.asInstanceOf[js.Any])
+    inline def setMEDIA_ERR_ABORTED(value: `1`): Self = StObject.set(x, "MEDIA_ERR_ABORTED", value.asInstanceOf[js.Any])
     
-    inline def setMEDIA_ERR_DECODE(value: Double): Self = StObject.set(x, "MEDIA_ERR_DECODE", value.asInstanceOf[js.Any])
+    inline def setMEDIA_ERR_DECODE(value: `3`): Self = StObject.set(x, "MEDIA_ERR_DECODE", value.asInstanceOf[js.Any])
     
-    inline def setMEDIA_ERR_NETWORK(value: Double): Self = StObject.set(x, "MEDIA_ERR_NETWORK", value.asInstanceOf[js.Any])
+    inline def setMEDIA_ERR_NETWORK(value: `2`): Self = StObject.set(x, "MEDIA_ERR_NETWORK", value.asInstanceOf[js.Any])
     
-    inline def setMEDIA_ERR_SRC_NOT_SUPPORTED(value: Double): Self = StObject.set(x, "MEDIA_ERR_SRC_NOT_SUPPORTED", value.asInstanceOf[js.Any])
+    inline def setMEDIA_ERR_SRC_NOT_SUPPORTED(value: `4`): Self = StObject.set(x, "MEDIA_ERR_SRC_NOT_SUPPORTED", value.asInstanceOf[js.Any])
     
     inline def setMessage(value: java.lang.String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
   }

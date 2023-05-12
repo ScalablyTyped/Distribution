@@ -27,9 +27,6 @@ open class ɵHammerGesturesPlugin protected ()
   /* CompleteClass */
   override def addEventListener(element: HTMLElement, eventName: String, handler: js.Function): js.Function = js.native
   
-  /* CompleteClass */
-  override def addGlobalEventListener(element: String, eventName: String, handler: js.Function): js.Function = js.native
-  
   /* private */ var console: Any = js.native
   
   def isCustomEvent(eventName: String): Boolean = js.native

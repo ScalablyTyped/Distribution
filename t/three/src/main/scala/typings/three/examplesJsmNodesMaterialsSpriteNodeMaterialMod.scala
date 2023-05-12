@@ -19,10 +19,6 @@ object examplesJsmNodesMaterialsSpriteNodeMaterialMod {
   trait SpriteNodeMaterial
     extends typings.three.examplesJsmNodesMaterialsNodeMaterialMod.default {
     
-    var alphaTestNode: typings.three.examplesJsmNodesCoreNodeMod.default | Null = js.native
-    
-    var colorNode: typings.three.examplesJsmNodesCoreNodeMod.default | Null = js.native
-    
     def copy(source: SpriteNodeMaterial): this.type = js.native
     
     def generatePosition(builder: NodeBuilder): Unit = js.native
@@ -30,10 +26,6 @@ object examplesJsmNodesMaterialsSpriteNodeMaterialMod {
     var isSpriteNodeMaterial: `true` = js.native
     
     var lightNode: typings.three.examplesJsmNodesCoreNodeMod.default | Null = js.native
-    
-    var opacityNode: typings.three.examplesJsmNodesCoreNodeMod.default | Null = js.native
-    
-    var positionNode: typings.three.examplesJsmNodesCoreNodeMod.default | Null = js.native
     
     var rotationNode: typings.three.examplesJsmNodesCoreNodeMod.default | Null = js.native
     

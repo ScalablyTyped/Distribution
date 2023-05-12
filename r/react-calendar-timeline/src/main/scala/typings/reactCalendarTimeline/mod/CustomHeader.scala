@@ -12,7 +12,7 @@ open class CustomHeader[Data] protected ()
   def this(props: CustomHeaderProps[Data]) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: CustomHeaderProps[Data], context: Any) = this()
 }

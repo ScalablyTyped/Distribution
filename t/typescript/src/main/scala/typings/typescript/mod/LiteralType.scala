@@ -6,11 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait LiteralType
   extends StObject
-     with Type {
-  
-  var freshType: LiteralType
-  
-  var regularType: LiteralType
+     with FreshableType {
   
   var value: java.lang.String | Double | PseudoBigInt
 }
@@ -18,7 +14,7 @@ object LiteralType {
   
   inline def apply(
     flags: TypeFlags,
-    freshType: LiteralType,
+    freshType: FreshableType,
     getApparentProperties: () => js.Array[Symbol],
     getBaseTypes: () => js.UndefOr[js.Array[BaseType]],
     getCallSignatures: () => js.Array[Signature],
@@ -42,7 +38,7 @@ object LiteralType {
     isTypeParameter: () => /* is typescript.typescript.TypeParameter */ Boolean,
     isUnion: () => /* is typescript.typescript.UnionType */ Boolean,
     isUnionOrIntersection: () => /* is typescript.typescript.UnionOrIntersectionType */ Boolean,
-    regularType: LiteralType,
+    regularType: FreshableType,
     symbol: Symbol,
     value: java.lang.String | Double | PseudoBigInt
   ): LiteralType = {
@@ -52,10 +48,6 @@ object LiteralType {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: LiteralType] (val x: Self) extends AnyVal {
-    
-    inline def setFreshType(value: LiteralType): Self = StObject.set(x, "freshType", value.asInstanceOf[js.Any])
-    
-    inline def setRegularType(value: LiteralType): Self = StObject.set(x, "regularType", value.asInstanceOf[js.Any])
     
     inline def setValue(value: java.lang.String | Double | PseudoBigInt): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }

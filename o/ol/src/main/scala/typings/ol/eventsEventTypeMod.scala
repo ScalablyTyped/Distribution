@@ -6,137 +6,74 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object eventsEventTypeMod {
   
-  @JSImport("ol/events/EventType", JSImport.Default)
-  @js.native
-  object default extends StObject {
+  object default {
     
-    @JSBracketAccess
-    def apply(value: String): js.UndefOr[EventType & String] = js.native
-    
-    /* "blur" */ val BLUR: typings.ol.eventsEventTypeMod.EventType.BLUR & String = js.native
-    
-    /* "change" */ val CHANGE: typings.ol.eventsEventTypeMod.EventType.CHANGE & String = js.native
-    
-    /* "clear" */ val CLEAR: typings.ol.eventsEventTypeMod.EventType.CLEAR & String = js.native
-    
-    /* "click" */ val CLICK: typings.ol.eventsEventTypeMod.EventType.CLICK & String = js.native
-    
-    /* "contextmenu" */ val CONTEXTMENU: typings.ol.eventsEventTypeMod.EventType.CONTEXTMENU & String = js.native
-    
-    /* "dblclick" */ val DBLCLICK: typings.ol.eventsEventTypeMod.EventType.DBLCLICK & String = js.native
-    
-    /* "dragenter" */ val DRAGENTER: typings.ol.eventsEventTypeMod.EventType.DRAGENTER & String = js.native
-    
-    /* "dragover" */ val DRAGOVER: typings.ol.eventsEventTypeMod.EventType.DRAGOVER & String = js.native
-    
-    /* "drop" */ val DROP: typings.ol.eventsEventTypeMod.EventType.DROP & String = js.native
-    
-    /* "error" */ val ERROR: typings.ol.eventsEventTypeMod.EventType.ERROR & String = js.native
-    
-    /* "focus" */ val FOCUS: typings.ol.eventsEventTypeMod.EventType.FOCUS & String = js.native
-    
-    /* "keydown" */ val KEYDOWN: typings.ol.eventsEventTypeMod.EventType.KEYDOWN & String = js.native
-    
-    /* "keypress" */ val KEYPRESS: typings.ol.eventsEventTypeMod.EventType.KEYPRESS & String = js.native
-    
-    /* "load" */ val LOAD: typings.ol.eventsEventTypeMod.EventType.LOAD & String = js.native
-    
-    /* "resize" */ val RESIZE: typings.ol.eventsEventTypeMod.EventType.RESIZE & String = js.native
-    
-    /* "touchmove" */ val TOUCHMOVE: typings.ol.eventsEventTypeMod.EventType.TOUCHMOVE & String = js.native
-    
-    /* "wheel" */ val WHEEL: typings.ol.eventsEventTypeMod.EventType.WHEEL & String = js.native
-  }
-  
-  @js.native
-  sealed trait EventType extends StObject
-  @JSImport("ol/events/EventType", "EventType")
-  @js.native
-  object EventType extends StObject {
-    
+    @JSImport("ol/events/EventType", "default.BLUR")
     @js.native
-    sealed trait BLUR
-      extends StObject
-         with EventType
+    val BLUR: String = js.native
     
+    @JSImport("ol/events/EventType", "default.CHANGE")
     @js.native
-    sealed trait CHANGE
-      extends StObject
-         with EventType
+    val CHANGE: String = js.native
     
+    @JSImport("ol/events/EventType", "default.CLEAR")
     @js.native
-    sealed trait CLEAR
-      extends StObject
-         with EventType
+    val CLEAR: String = js.native
     
+    @JSImport("ol/events/EventType", "default.CLICK")
     @js.native
-    sealed trait CLICK
-      extends StObject
-         with EventType
+    val CLICK: String = js.native
     
+    @JSImport("ol/events/EventType", "default.CONTEXTMENU")
     @js.native
-    sealed trait CONTEXTMENU
-      extends StObject
-         with EventType
+    val CONTEXTMENU: String = js.native
     
+    @JSImport("ol/events/EventType", "default.DBLCLICK")
     @js.native
-    sealed trait DBLCLICK
-      extends StObject
-         with EventType
+    val DBLCLICK: String = js.native
     
+    @JSImport("ol/events/EventType", "default.DRAGENTER")
     @js.native
-    sealed trait DRAGENTER
-      extends StObject
-         with EventType
+    val DRAGENTER: String = js.native
     
+    @JSImport("ol/events/EventType", "default.DRAGOVER")
     @js.native
-    sealed trait DRAGOVER
-      extends StObject
-         with EventType
+    val DRAGOVER: String = js.native
     
+    @JSImport("ol/events/EventType", "default.DROP")
     @js.native
-    sealed trait DROP
-      extends StObject
-         with EventType
+    val DROP: String = js.native
     
+    @JSImport("ol/events/EventType", "default.ERROR")
     @js.native
-    sealed trait ERROR
-      extends StObject
-         with EventType
+    val ERROR: String = js.native
     
+    @JSImport("ol/events/EventType", "default.FOCUS")
     @js.native
-    sealed trait FOCUS
-      extends StObject
-         with EventType
+    val FOCUS: String = js.native
     
+    @JSImport("ol/events/EventType", "default.KEYDOWN")
     @js.native
-    sealed trait KEYDOWN
-      extends StObject
-         with EventType
+    val KEYDOWN: String = js.native
     
+    @JSImport("ol/events/EventType", "default.KEYPRESS")
     @js.native
-    sealed trait KEYPRESS
-      extends StObject
-         with EventType
+    val KEYPRESS: String = js.native
     
+    @JSImport("ol/events/EventType", "default.LOAD")
     @js.native
-    sealed trait LOAD
-      extends StObject
-         with EventType
+    val LOAD: String = js.native
     
+    @JSImport("ol/events/EventType", "default.RESIZE")
     @js.native
-    sealed trait RESIZE
-      extends StObject
-         with EventType
+    val RESIZE: String = js.native
     
+    @JSImport("ol/events/EventType", "default.TOUCHMOVE")
     @js.native
-    sealed trait TOUCHMOVE
-      extends StObject
-         with EventType
+    val TOUCHMOVE: String = js.native
     
+    @JSImport("ol/events/EventType", "default.WHEEL")
     @js.native
-    sealed trait WHEEL
-      extends StObject
-         with EventType
+    val WHEEL: String = js.native
   }
 }

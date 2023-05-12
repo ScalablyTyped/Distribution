@@ -12,7 +12,7 @@ trait CreateTrackerResponse extends StObject {
   var CreateTime: js.Date
   
   /**
-    * The Amazon Resource Name (ARN) for the tracker resource. Used when you need to specify a resource across all AWS.   Format example: arn:aws:geo:region:account-id:tracker/ExampleTracker   
+    * The Amazon Resource Name (ARN) for the tracker resource. Used when you need to specify a resource across all Amazon Web Services.   Format example: arn:aws:geo:region:account-id:tracker/ExampleTracker   
     */
   var TrackerArn: Arn
   

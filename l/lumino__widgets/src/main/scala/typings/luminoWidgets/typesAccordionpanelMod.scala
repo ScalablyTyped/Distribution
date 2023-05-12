@@ -2,7 +2,6 @@ package typings.luminoWidgets
 
 import typings.luminoWidgets.typesAccordionlayoutMod.AccordionLayout
 import typings.luminoWidgets.typesAccordionpanelMod.AccordionPanel.IOptions
-import typings.luminoWidgets.typesAccordionpanelMod.AccordionPanel.IRenderer
 import typings.luminoWidgets.typesSplitpanelMod.SplitPanel
 import typings.luminoWidgets.typesTitleMod.Title
 import typings.luminoWidgets.typesWidgetMod.Widget
@@ -80,23 +79,18 @@ object typesAccordionpanelMod {
     def expand(index: Double): Unit = js.native
     
     /**
-      * The renderer used by the accordion panel.
-      */
-    @JSName("renderer")
-    val renderer_AccordionPanel: IRenderer = js.native
-    
-    /**
       * The section title space.
       *
       * This is the height if the panel is vertical and the width if it is
       * horizontal.
       */
-    var titleSpace: Double = js.native
+    def titleSpace: Double = js.native
+    def titleSpace_=(value: Double): Unit = js.native
     
     /**
       * A read-only array of the section titles in the panel.
       */
-    val titles: js.Array[HTMLElement] = js.native
+    def titles: js.Array[HTMLElement] = js.native
   }
   object AccordionPanel {
     

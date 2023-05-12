@@ -1,15 +1,39 @@
 package typings.telegramWebApp
 
 import typings.telegramWebApp.telegramWebAppStrings.cancel
+import typings.telegramWebApp.telegramWebAppStrings.cancelled
 import typings.telegramWebApp.telegramWebAppStrings.close
 import typings.telegramWebApp.telegramWebAppStrings.default
 import typings.telegramWebApp.telegramWebAppStrings.destructive
+import typings.telegramWebApp.telegramWebAppStrings.failed
 import typings.telegramWebApp.telegramWebAppStrings.ok
+import typings.telegramWebApp.telegramWebAppStrings.paid
+import typings.telegramWebApp.telegramWebAppStrings.pending
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
+  
+  trait `0` extends StObject {
+    
+    var data: String | Null
+  }
+  object `0` {
+    
+    inline def apply(): `0` = {
+      val __obj = js.Dynamic.literal(data = null)
+      __obj.asInstanceOf[`0`]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
+      
+      inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      
+      inline def setDataNull: Self = StObject.set(x, "data", null)
+    }
+  }
   
   trait Buttonid extends StObject {
     
@@ -31,6 +55,24 @@ object anon {
     }
   }
   
+  trait Data extends StObject {
+    
+    var data: String
+  }
+  object Data {
+    
+    inline def apply(data: String): Data = {
+      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Data]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
+      
+      inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    }
+  }
+  
   trait IsStateStable extends StObject {
     
     var isStateStable: Boolean
@@ -46,6 +88,48 @@ object anon {
     implicit open class MutableBuilder[Self <: IsStateStable] (val x: Self) extends AnyVal {
       
       inline def setIsStateStable(value: Boolean): Self = StObject.set(x, "isStateStable", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait Status extends StObject {
+    
+    var status: paid | cancelled | failed | pending
+    
+    var url: String
+  }
+  object Status {
+    
+    inline def apply(status: paid | cancelled | failed | pending, url: String): Status = {
+      val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Status]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Status] (val x: Self) extends AnyVal {
+      
+      inline def setStatus(value: paid | cancelled | failed | pending): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait Tryinstantview extends StObject {
+    
+    var try_instant_view: js.UndefOr[Boolean] = js.undefined
+  }
+  object Tryinstantview {
+    
+    inline def apply(): Tryinstantview = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Tryinstantview]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tryinstantview] (val x: Self) extends AnyVal {
+      
+      inline def setTry_instant_view(value: Boolean): Self = StObject.set(x, "try_instant_view", value.asInstanceOf[js.Any])
+      
+      inline def setTry_instant_viewUndefined: Self = StObject.set(x, "try_instant_view", js.undefined)
     }
   }
   

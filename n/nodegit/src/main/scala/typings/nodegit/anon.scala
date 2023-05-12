@@ -53,7 +53,7 @@ object anon {
       * Returns `true` if the event had listeners, `false` otherwise.
       *
       * ```js
-      * const EventEmitter = require('events');
+      * import { EventEmitter } from 'node:events';
       * const myEmitter = new EventEmitter();
       *
       * // First listener
@@ -94,7 +94,8 @@ object anon {
       * listeners. The values in the array are strings or `Symbol`s.
       *
       * ```js
-      * const EventEmitter = require('events');
+      * import { EventEmitter } from 'node:events';
+      *
       * const myEE = new EventEmitter();
       * myEE.on('foo', () => {});
       * myEE.on('bar', () => {});
@@ -117,12 +118,17 @@ object anon {
     def getMaxListeners(): Double = js.native
     
     /**
-      * Returns the number of listeners listening to the event named `eventName`.
+      * Returns the number of listeners listening for the event named `eventName`.
+      * If `listener` is provided, it will return how many times the listener is found
+      * in the list of the listeners of the event.
       * @since v3.2.0
       * @param eventName The name of the event being listened for
+      * @param listener The event handler function
       */
     def listenerCount(eventName: String): Double = js.native
+    def listenerCount(eventName: String, listener: js.Function): Double = js.native
     def listenerCount(eventName: js.Symbol): Double = js.native
+    def listenerCount(eventName: js.Symbol, listener: js.Function): Double = js.native
     
     /**
       * Returns a copy of the array of listeners for the event named `eventName`.
@@ -164,6 +170,7 @@ object anon {
       * event listener to the beginning of the listeners array.
       *
       * ```js
+      * import { EventEmitter } from 'node:events';
       * const myEE = new EventEmitter();
       * myEE.on('foo', () => console.log('a'));
       * myEE.prependListener('foo', () => console.log('b'));
@@ -195,6 +202,7 @@ object anon {
       * event listener to the beginning of the listeners array.
       *
       * ```js
+      * import { EventEmitter } from 'node:events';
       * const myEE = new EventEmitter();
       * myEE.once('foo', () => console.log('a'));
       * myEE.prependOnceListener('foo', () => console.log('b'));
@@ -253,6 +261,7 @@ object anon {
       * including any wrappers (such as those created by `.once()`).
       *
       * ```js
+      * import { EventEmitter } from 'node:events';
       * const emitter = new EventEmitter();
       * emitter.once('log', () => console.log('log once'));
       *
@@ -316,6 +325,8 @@ object anon {
       * will not remove them from`emit()` in progress. Subsequent events behave as expected.
       *
       * ```js
+      * import { EventEmitter } from 'node:events';
+      * class MyEmitter extends EventEmitter {}
       * const myEmitter = new MyEmitter();
       *
       * const callbackA = () => {
@@ -356,6 +367,7 @@ object anon {
       * recently added instance. In the example the `once('ping')`listener is removed:
       *
       * ```js
+      * import { EventEmitter } from 'node:events';
       * const ee = new EventEmitter();
       *
       * function pong() {

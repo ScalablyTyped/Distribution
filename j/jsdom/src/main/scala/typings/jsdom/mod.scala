@@ -61,6 +61,7 @@ import typings.std.BigUint64ArrayConstructor
 import typings.std.BooleanConstructor
 import typings.std.CSSStyleDeclaration
 import typings.std.CacheStorage
+import typings.std.ClipboardEvent
 import typings.std.Console
 import typings.std.Crypto
 import typings.std.CustomElementRegistry
@@ -164,8 +165,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 // Needed to allow adding properties to `DOMWindow` that are only supported
 // in newer TypeScript versions:
-// tslint:disable-next-line: no-declare-current-package no-single-declare-module
-// tslint:disable-next-line: no-declare-current-package no-single-declare-module
+// eslint-disable-next-line no-declare-current-package
+// eslint-disable-next-line no-declare-current-package
 object mod {
   
   @JSImport("jsdom", "CookieJar")
@@ -1340,7 +1341,11 @@ object mod {
     
     var oncontextmenu: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]) | Null] = js.native
     
+    var oncopy: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any]) | Null] = js.native
+    
     var oncuechange: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null] = js.native
+    
+    var oncut: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any]) | Null] = js.native
     
     var ondblclick: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]) | Null] = js.native
     
@@ -1437,6 +1442,8 @@ object mod {
     var onpageshow: js.UndefOr[
         (js.ThisFunction1[/* this */ this.type, /* ev */ PageTransitionEvent, Any]) | Null
       ] = js.native
+    
+    var onpaste: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any]) | Null] = js.native
     
     var onpause: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null] = js.native
     

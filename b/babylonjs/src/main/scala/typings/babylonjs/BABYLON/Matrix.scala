@@ -21,6 +21,7 @@ trait Matrix extends StObject {
   
   /**
     * Adds the current matrix with a second one
+    * Example Playground - https://playground.babylonjs.com/#AV9X17#44
     * @param other defines the matrix to add
     * @returns a new matrix as the addition of the current matrix and the given one
     */
@@ -28,6 +29,7 @@ trait Matrix extends StObject {
   
   /**
     * add a value at the specified position in the current Matrix
+    * Example Playground - https://playground.babylonjs.com/#AV9X17#47
     * @param index the index of the value within the matrix. between 0 and 15.
     * @param value the value to be added
     * @returns the current updated matrix
@@ -36,6 +38,7 @@ trait Matrix extends StObject {
   
   /**
     * Sets the given matrix "result" to the addition of the current matrix and the given one
+    * Example Playground - https://playground.babylonjs.com/#AV9X17#45
     * @param other defines the matrix to add
     * @param result defines the target matrix
     * @returns result input
@@ -44,6 +47,7 @@ trait Matrix extends StObject {
   
   /**
     * Adds in place the given matrix to the current matrix
+    * Example Playground - https://playground.babylonjs.com/#AV9X17#46
     * @param other defines the second operand
     * @returns the current updated matrix
     */
@@ -51,6 +55,8 @@ trait Matrix extends StObject {
   
   /**
     * Adds the translation vector (using 3 floats) in the current matrix
+    * Example Playground - https://playground.babylonjs.com/#AV9X17#20
+    * Example Playground - https://playground.babylonjs.com/#AV9X17#48
     * @param x defines the 1st component of the translation
     * @param y defines the 2nd component of the translation
     * @param z defines the 3rd component of the translation
@@ -60,12 +66,14 @@ trait Matrix extends StObject {
   
   /**
     * Returns the matrix as a Float32Array or Array<number>
+    * Example Playground - https://playground.babylonjs.com/#AV9X17#114
     * @returns the matrix underlying array.
     */
   def asArray(): DeepImmutable[js.typedarray.Float32Array | js.Array[Double]] = js.native
   
   /**
     * Copy the current matrix from the given one
+    * Example Playground - https://playground.babylonjs.com/#AV9X17#21
     * @param other defines the source matrix
     * @returns the current updated matrix
     */
@@ -84,6 +92,7 @@ trait Matrix extends StObject {
   
   /**
     * Decomposes the current Matrix into a translation, rotation and scaling components
+    * Example Playground - https://playground.babylonjs.com/#AV9X17#12
     * @param scale defines the scale vector3 given as a reference to update
     * @param rotation defines the rotation quaternion given as a reference to update
     * @param translation defines the translation vector3 given as a reference to update
@@ -109,6 +118,7 @@ trait Matrix extends StObject {
   
   /**
     * Decomposes the current Matrix into a translation, rotation and scaling components of the provided node
+    * Example Playground - https://playground.babylonjs.com/#AV9X17#13
     * @param node the node to decompose the matrix to
     * @returns true if operation was successful
     */
@@ -116,6 +126,7 @@ trait Matrix extends StObject {
   
   /**
     * Gets the determinant of the matrix
+    * Example Playground - https://playground.babylonjs.com/#AV9X17#34
     * @returns the matrix determinant
     */
   def determinant(): Double = js.native
@@ -154,6 +165,7 @@ trait Matrix extends StObject {
   
   /**
     * Gets specific row of the matrix
+    * Example Playground - https://playground.babylonjs.com/#AV9X17#36
     * @param index defines the number of the row to get
     * @returns the index-th row of the current matrix as a new Vector4
     */
@@ -161,6 +173,7 @@ trait Matrix extends StObject {
   
   /**
     * Gets specific row of the matrix to ref
+    * Example Playground - https://playground.babylonjs.com/#AV9X17#36
     * @param index defines the number of the row to get
     * @param rowVector vector to store the index-th row of the current matrix
     * @returns result input
@@ -169,12 +182,14 @@ trait Matrix extends StObject {
   
   /**
     * Gets the translation value of the current matrix
+    * Example Playground - https://playground.babylonjs.com/#AV9X17#122
     * @returns a new Vector3 as the extracted translation from the matrix
     */
   def getTranslation(): Vector3 = js.native
   
   /**
     * Fill a Vector3 with the extracted translation from the matrix
+    * Example Playground - https://playground.babylonjs.com/#AV9X17#123
     * @param result defines the Vector3 where to store the translation
     * @returns the current matrix
     */
@@ -182,12 +197,14 @@ trait Matrix extends StObject {
   
   /**
     * Inverts the current matrix in place
+    * Example Playground - https://playground.babylonjs.com/#AV9X17#118
     * @returns the current inverted matrix
     */
   def invert(): this.type = js.native
   
   /**
     * Sets the given matrix to the current inverted Matrix
+    * Example Playground - https://playground.babylonjs.com/#AV9X17#119
     * @param other defines the target matrix
     * @returns result input
     */
@@ -217,6 +234,7 @@ trait Matrix extends StObject {
   
   /**
     * Multiply two matrices
+    * Example Playground - https://playground.babylonjs.com/#AV9X17#15
     * A.multiply(B) means apply B to A so result is B x A
     * @param other defines the second operand
     * @returns a new matrix set with the multiplication result of the current Matrix and the given one
@@ -244,6 +262,7 @@ trait Matrix extends StObject {
   /**
     * Sets the given matrix "result" with the multiplication result of the current Matrix and the given one
     * A.multiplyToRef(B, R) means apply B to A and store in R and R = B x A
+    * Example Playground - https://playground.babylonjs.com/#AV9X17#16
     * @param other defines the second operand
     * @param result defines the matrix where to store the multiplication
     * @returns result input
@@ -287,6 +306,7 @@ trait Matrix extends StObject {
   
   /**
     * Sets the index-th row of the current matrix to the vector4 values
+    * Example Playground - https://playground.babylonjs.com/#AV9X17#36
     * @param index defines the number of the row to set
     * @param row defines the target vector4
     * @returns the updated current matrix
@@ -295,6 +315,7 @@ trait Matrix extends StObject {
   
   /**
     * Sets the index-th row of the current matrix with the given 4 x float values
+    * Example Playground - https://playground.babylonjs.com/#AV9X17#36
     * @param index defines the row index
     * @param x defines the x component to set
     * @param y defines the y component to set
@@ -306,6 +327,7 @@ trait Matrix extends StObject {
   
   /**
     * Inserts the translation vector in the current matrix
+    * Example Playground - https://playground.babylonjs.com/#AV9X17#121
     * @param vector3 defines the translation to insert
     * @returns the current updated matrix
     */
@@ -313,6 +335,7 @@ trait Matrix extends StObject {
   
   /**
     * Inserts the translation vector (using 3 floats) in the current matrix
+    * Example Playground - https://playground.babylonjs.com/#AV9X17#120
     * @param x defines the 1st component of the translation
     * @param y defines the 2nd component of the translation
     * @param z defines the 3rd component of the translation
@@ -322,12 +345,14 @@ trait Matrix extends StObject {
   
   /**
     * Returns the matrix as a Float32Array or Array<number>
+    * Example Playground - https://playground.babylonjs.com/#AV9X17#49
     * @returns the matrix underlying array
     */
   def toArray(): DeepImmutable[js.typedarray.Float32Array | js.Array[Double]] = js.native
   
   /**
     * Writes to the given matrix a normal matrix, computed from this one (using values from identity matrix for fourth row and column).
+    * Example Playground - https://playground.babylonjs.com/#AV9X17#17
     * @param ref matrix to store the result
     */
   def toNormalMatrix[T /* <: Matrix */](ref: T): T = js.native
@@ -344,12 +369,14 @@ trait Matrix extends StObject {
   
   /**
     * Compute the transpose of the matrix
+    * Example Playground - https://playground.babylonjs.com/#AV9X17#40
     * @returns the new transposed matrix
     */
   def transpose(): this.type = js.native
   
   /**
     * Compute the transpose of the matrix and store it in a given matrix
+    * Example Playground - https://playground.babylonjs.com/#AV9X17#41
     * @param result defines the target matrix
     * @returns result input
     */

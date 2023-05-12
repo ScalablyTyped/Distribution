@@ -5,10 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.std.stdStrings.beforebegin
   - typings.std.stdStrings.afterbegin
-  - typings.std.stdStrings.beforeend
   - typings.std.stdStrings.afterend
+  - typings.std.stdStrings.beforebegin
+  - typings.std.stdStrings.beforeend
 */
 trait InsertPosition extends StObject
 object InsertPosition {

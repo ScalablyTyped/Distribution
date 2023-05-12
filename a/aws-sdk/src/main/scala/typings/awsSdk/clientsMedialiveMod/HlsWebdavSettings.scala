@@ -22,7 +22,7 @@ trait HlsWebdavSettings extends StObject {
   var HttpTransferMode: js.UndefOr[HlsWebdavHttpTransferMode] = js.undefined
   
   /**
-    * Number of retry attempts that will be made before the Live Event is put into an error state.
+    * Number of retry attempts that will be made before the Live Event is put into an error state. Applies only if the CDN destination URI begins with "s3" or "mediastore". For other URIs, the value is always 3.
     */
   var NumRetries: js.UndefOr[integerMin0] = js.undefined
   

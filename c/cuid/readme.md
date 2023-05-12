@@ -1,7 +1,7 @@
 
 # Scala.js typings for cuid
 
-Typings are for version 2.1.8
+Typings are for version 3.0.0
 
 ## Library description:
 Collision-resistant ids optimized for horizontal scaling and performance. For node and browsers.

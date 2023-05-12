@@ -1,7 +1,7 @@
 package typings.antdMobile
 
 import typings.antdMobile.anon.CSSPropertiesPartialRecorAlignSelf
-import typings.antdMobile.anon.valueDatenullundefineddef
+import typings.antdMobile.anon.valuePickerDatenullundefi
 import typings.antdMobile.antdMobileStrings.`additions removals`
 import typings.antdMobile.antdMobileStrings.`additions text`
 import typings.antdMobile.antdMobileStrings.`inline`
@@ -30,6 +30,7 @@ import typings.antdMobile.antdMobileStrings.menu
 import typings.antdMobile.antdMobileStrings.mixed
 import typings.antdMobile.antdMobileStrings.move
 import typings.antdMobile.antdMobileStrings.none
+import typings.antdMobile.antdMobileStrings.now
 import typings.antdMobile.antdMobileStrings.off
 import typings.antdMobile.antdMobileStrings.other
 import typings.antdMobile.antdMobileStrings.page
@@ -44,6 +45,8 @@ import typings.antdMobile.antdMobileStrings.tree
 import typings.antdMobile.antdMobileStrings.vertical
 import typings.antdMobile.esComponentsDatePickerDatePickerUtilsMod.DatePickerFilter
 import typings.antdMobile.esComponentsDatePickerDatePickerUtilsMod.Precision
+import typings.antdMobile.esComponentsDatePickerUtilMod.PickerDate
+import typings.antdMobile.esComponentsDatePickerViewDatePickerViewMod.RenderLabel
 import typings.antdMobile.esComponentsPickerPickerMod.PickerActions
 import typings.antdMobile.esComponentsPickerPickerMod.PickerRef
 import typings.antdMobile.esUtilsRenderToContainerMod.GetContainer
@@ -62,9 +65,9 @@ object esComponentsDatePickerDatePickerMod {
   
   @JSImport("antd-mobile/es/components/date-picker/date-picker", "DatePicker")
   @js.native
-  val DatePicker: ForwardRefExoticComponent[valueDatenullundefineddef] = js.native
+  val DatePicker: ForwardRefExoticComponent[valuePickerDatenullundefi] = js.native
   
-  /* Inlined std.Pick<antd-mobile.antd-mobile/es/components/picker.PickerProps, 'onCancel' | 'onClose' | 'closeOnMaskClick' | 'visible' | 'confirmText' | 'cancelText' | 'getContainer' | 'loading' | 'loadingContent' | 'afterShow' | 'afterClose' | 'onClick' | 'title' | 'stopPropagation' | 'style' | 'mouseWheel' | 'forceRender' | 'destroyOnClose'> & {  value :std.Date | null | undefined,   defaultValue :std.Date | null | undefined,   onSelect :(value : std.Date): void | undefined,   onConfirm :(value : std.Date): void | undefined,   min :std.Date | undefined,   max :std.Date | undefined,   precision :antd-mobile.antd-mobile/es/components/date-picker/date-picker-utils.Precision | undefined,   children :(value : std.Date | null, actions : antd-mobile.antd-mobile/es/components/picker.PickerActions): react.react.ReactNode | undefined,   renderLabel :(type : antd-mobile.antd-mobile/es/components/date-picker/date-picker-utils.Precision, data : number): react.react.ReactNode | undefined,   filter :antd-mobile.antd-mobile/es/components/date-picker/date-picker-utils.DatePickerFilter | undefined} & antd-mobile.antd-mobile/es/utils/native-props.NativeProps<never> */
+  /* Inlined std.Pick<antd-mobile.antd-mobile/es/components/picker.PickerProps, 'onCancel' | 'onClose' | 'closeOnMaskClick' | 'visible' | 'confirmText' | 'cancelText' | 'getContainer' | 'loading' | 'loadingContent' | 'afterShow' | 'afterClose' | 'onClick' | 'title' | 'stopPropagation' | 'style' | 'mouseWheel' | 'forceRender' | 'destroyOnClose'> & {  value :antd-mobile.antd-mobile/es/components/date-picker/util.PickerDate | null | undefined,   defaultValue :antd-mobile.antd-mobile/es/components/date-picker/util.PickerDate | null | undefined,   onSelect :(value : antd-mobile.antd-mobile/es/components/date-picker/util.PickerDate): void | undefined,   onConfirm :(value : antd-mobile.antd-mobile/es/components/date-picker/util.PickerDate): void | undefined,   min :antd-mobile.antd-mobile/es/components/date-picker/util.PickerDate | undefined,   max :antd-mobile.antd-mobile/es/components/date-picker/util.PickerDate | undefined,   precision :antd-mobile.antd-mobile/es/components/date-picker/date-picker-utils.Precision | undefined,   children :(value : antd-mobile.antd-mobile/es/components/date-picker/util.PickerDate | null, actions : antd-mobile.antd-mobile/es/components/picker.PickerActions): react.react.ReactNode | undefined,   renderLabel :antd-mobile.antd-mobile/es/components/date-picker-view/date-picker-view.RenderLabel | undefined,   filter :antd-mobile.antd-mobile/es/components/date-picker/date-picker-utils.DatePickerFilter | undefined,   tillNow :boolean | undefined} & antd-mobile.antd-mobile/es/utils/native-props.NativeProps<never> */
   trait DatePickerProps extends StObject {
     
     var afterClose: js.UndefOr[js.Function0[Unit]] = js.undefined
@@ -307,7 +310,9 @@ object esComponentsDatePickerDatePickerMod {
     
     var cancelText: js.UndefOr[ReactNode] = js.undefined
     
-    var children: js.UndefOr[js.Function2[/* value */ js.Date | Null, /* actions */ PickerActions, ReactNode]] = js.undefined
+    var children: js.UndefOr[
+        js.Function2[/* value */ PickerDate | Null, /* actions */ PickerActions, ReactNode]
+      ] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
@@ -315,7 +320,7 @@ object esComponentsDatePickerDatePickerMod {
     
     var confirmText: js.UndefOr[ReactNode] = js.undefined
     
-    var defaultValue: js.UndefOr[js.Date | Null] = js.undefined
+    var defaultValue: js.UndefOr[PickerDate | Null] = js.undefined
     
     var destroyOnClose: js.UndefOr[Boolean] = js.undefined
     
@@ -329,9 +334,9 @@ object esComponentsDatePickerDatePickerMod {
     
     var loadingContent: js.UndefOr[ReactNode] = js.undefined
     
-    var max: js.UndefOr[js.Date] = js.undefined
+    var max: js.UndefOr[PickerDate] = js.undefined
     
-    var min: js.UndefOr[js.Date] = js.undefined
+    var min: js.UndefOr[PickerDate] = js.undefined
     
     var mouseWheel: js.UndefOr[Boolean] = js.undefined
     
@@ -343,13 +348,13 @@ object esComponentsDatePickerDatePickerMod {
     
     var onClose: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onConfirm: js.UndefOr[js.Function1[/* value */ js.Date, Unit]] = js.undefined
+    var onConfirm: js.UndefOr[js.Function1[/* value */ PickerDate, Unit]] = js.undefined
     
-    var onSelect: js.UndefOr[js.Function1[/* value */ js.Date, Unit]] = js.undefined
+    var onSelect: js.UndefOr[js.Function1[/* value */ PickerDate, Unit]] = js.undefined
     
     var precision: js.UndefOr[Precision] = js.undefined
     
-    var renderLabel: js.UndefOr[js.Function2[/* type */ Precision, /* data */ Double, ReactNode]] = js.undefined
+    var renderLabel: js.UndefOr[RenderLabel] = js.undefined
     
     var stopPropagation: js.UndefOr[js.Array[PropagationEvent]] = js.undefined
     
@@ -357,9 +362,11 @@ object esComponentsDatePickerDatePickerMod {
     
     var tabIndex: js.UndefOr[Double] = js.undefined
     
+    var tillNow: js.UndefOr[Boolean] = js.undefined
+    
     var title: js.UndefOr[ReactNode] = js.undefined
     
-    var value: js.UndefOr[js.Date | Null] = js.undefined
+    var value: js.UndefOr[PickerDate | Null] = js.undefined
     
     var visible: js.UndefOr[Boolean] = js.undefined
   }
@@ -579,7 +586,7 @@ object esComponentsDatePickerDatePickerMod {
       
       inline def setCancelTextUndefined: Self = StObject.set(x, "cancelText", js.undefined)
       
-      inline def setChildren(value: (/* value */ js.Date | Null, /* actions */ PickerActions) => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction2(value))
+      inline def setChildren(value: (/* value */ PickerDate | Null, /* actions */ PickerActions) => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction2(value))
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
@@ -595,7 +602,7 @@ object esComponentsDatePickerDatePickerMod {
       
       inline def setConfirmTextUndefined: Self = StObject.set(x, "confirmText", js.undefined)
       
-      inline def setDefaultValue(value: js.Date): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      inline def setDefaultValue(value: PickerDate): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
       inline def setDefaultValueNull: Self = StObject.set(x, "defaultValue", null)
       
@@ -629,11 +636,11 @@ object esComponentsDatePickerDatePickerMod {
       
       inline def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
       
-      inline def setMax(value: js.Date): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: PickerDate): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
       inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
       
-      inline def setMin(value: js.Date): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+      inline def setMin(value: PickerDate): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
       
       inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
       
@@ -653,11 +660,11 @@ object esComponentsDatePickerDatePickerMod {
       
       inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
       
-      inline def setOnConfirm(value: /* value */ js.Date => Unit): Self = StObject.set(x, "onConfirm", js.Any.fromFunction1(value))
+      inline def setOnConfirm(value: /* value */ PickerDate => Unit): Self = StObject.set(x, "onConfirm", js.Any.fromFunction1(value))
       
       inline def setOnConfirmUndefined: Self = StObject.set(x, "onConfirm", js.undefined)
       
-      inline def setOnSelect(value: /* value */ js.Date => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
+      inline def setOnSelect(value: /* value */ PickerDate => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
       
       inline def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
       
@@ -665,7 +672,7 @@ object esComponentsDatePickerDatePickerMod {
       
       inline def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
       
-      inline def setRenderLabel(value: (/* type */ Precision, /* data */ Double) => ReactNode): Self = StObject.set(x, "renderLabel", js.Any.fromFunction2(value))
+      inline def setRenderLabel(value: (/* type */ Precision | now, /* data */ Double) => ReactNode): Self = StObject.set(x, "renderLabel", js.Any.fromFunction2(value))
       
       inline def setRenderLabelUndefined: Self = StObject.set(x, "renderLabel", js.undefined)
       
@@ -683,11 +690,15 @@ object esComponentsDatePickerDatePickerMod {
       
       inline def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
       
+      inline def setTillNow(value: Boolean): Self = StObject.set(x, "tillNow", value.asInstanceOf[js.Any])
+      
+      inline def setTillNowUndefined: Self = StObject.set(x, "tillNow", js.undefined)
+      
       inline def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
       inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      inline def setValue(value: js.Date): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: PickerDate): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       inline def setValueNull: Self = StObject.set(x, "value", null)
       

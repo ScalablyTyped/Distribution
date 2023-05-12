@@ -6,6 +6,7 @@ import typings.firebaseMessaging.firebaseMessagingStrings.pushsubscriptionchange
 import typings.std.AddEventListenerOptions
 import typings.std.Blob
 import typings.std.ClientTypes
+import typings.std.DocumentVisibilityState
 import typings.std.Event
 import typings.std.Notification
 import typings.std.PushSubscription
@@ -246,7 +247,7 @@ object distEsmSrcUtilSwTypesMod {
     
     def navigate(url: String): js.Promise[WindowClient] = js.native
     
-    val visibilityState: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VisibilityState */ Any = js.native
+    val visibilityState: DocumentVisibilityState = js.native
   }
   
   trait WorkerLocation extends StObject {

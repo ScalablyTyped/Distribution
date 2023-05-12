@@ -1,34 +1,35 @@
 package typings.countriesAndTimezones.anon
 
-import typings.countriesAndTimezones.countriesAndTimezonesStrings.BG
+import typings.countriesAndTimezones.countriesAndTimezonesStrings.EuropeSlashRome
+import typings.countriesAndTimezones.countriesAndTimezonesStrings.SM
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `337` extends StObject {
   
-  var c: js.Array[BG]
+  var a: EuropeSlashRome
   
-  var d: typings.countriesAndTimezones.countriesAndTimezonesInts.`180`
+  var c: js.Array[SM]
   
-  var u: typings.countriesAndTimezones.countriesAndTimezonesInts.`120`
+  var r: typings.countriesAndTimezones.countriesAndTimezonesInts.`1`
 }
 object `337` {
   
-  inline def apply(c: js.Array[BG]): `337` = {
-    val __obj = js.Dynamic.literal(c = c.asInstanceOf[js.Any], d = 180, u = 120)
+  inline def apply(c: js.Array[SM]): `337` = {
+    val __obj = js.Dynamic.literal(a = "Europe/Rome", c = c.asInstanceOf[js.Any], r = 1)
     __obj.asInstanceOf[`337`]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: `337`] (val x: Self) extends AnyVal {
     
-    inline def setC(value: js.Array[BG]): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
+    inline def setA(value: EuropeSlashRome): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
     
-    inline def setCVarargs(value: BG*): Self = StObject.set(x, "c", js.Array(value*))
+    inline def setC(value: js.Array[SM]): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
     
-    inline def setD(value: typings.countriesAndTimezones.countriesAndTimezonesInts.`180`): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
+    inline def setCVarargs(value: SM*): Self = StObject.set(x, "c", js.Array(value*))
     
-    inline def setU(value: typings.countriesAndTimezones.countriesAndTimezonesInts.`120`): Self = StObject.set(x, "u", value.asInstanceOf[js.Any])
+    inline def setR(value: typings.countriesAndTimezones.countriesAndTimezonesInts.`1`): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
   }
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for cfcs__core
 
-Typings are for version 0.0.5
+Typings are for version 0.1.0
 
 
 

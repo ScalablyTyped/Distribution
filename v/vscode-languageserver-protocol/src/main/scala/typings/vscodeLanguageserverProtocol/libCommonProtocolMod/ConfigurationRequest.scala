@@ -20,5 +20,5 @@ object ConfigurationRequest {
   
   @JSImport("vscode-languageserver-protocol/lib/common/protocol", "ConfigurationRequest.type")
   @js.native
-  val `type`: ProtocolRequestType[ConfigurationParams & PartialResultParams, js.Array[Any], scala.Nothing, Unit, Unit] = js.native
+  val `type`: ProtocolRequestType[ConfigurationParams, js.Array[Any], scala.Nothing, Unit, Unit] = js.native
 }

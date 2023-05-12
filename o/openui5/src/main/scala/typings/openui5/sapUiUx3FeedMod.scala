@@ -663,6 +663,8 @@ object sapUiUx3FeedMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:chunkAdded chunkAdded} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -674,6 +676,8 @@ object sapUiUx3FeedMod {
     mParameters: Chunk): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:filterChange filterChange} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -685,6 +689,8 @@ object sapUiUx3FeedMod {
     mParameters: NewValue): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:search search} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -696,6 +702,8 @@ object sapUiUx3FeedMod {
     mParameters: Query): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:toggleLive toggleLive} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -707,6 +715,8 @@ object sapUiUx3FeedMod {
     mParameters: Live): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:toolsItemSelected toolsItemSelected} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining

@@ -22,6 +22,8 @@ trait ObservationDefinition
   
   var _copyright: js.UndefOr[Element] = js.undefined
   
+  var _copyrightLabel: js.UndefOr[Element] = js.undefined
+  
   var _date: js.UndefOr[Element] = js.undefined
   
   var _derivedFromCanonical: js.UndefOr[js.Array[Element]] = js.undefined
@@ -42,6 +44,8 @@ trait ObservationDefinition
   
   var _preferredReportName: js.UndefOr[Element] = js.undefined
   
+  var _publisher: js.UndefOr[Element] = js.undefined
+  
   var _purpose: js.UndefOr[Element] = js.undefined
   
   var _status: js.UndefOr[Element] = js.undefined
@@ -52,8 +56,11 @@ trait ObservationDefinition
   
   var _version: js.UndefOr[Element] = js.undefined
   
+  var _versionAlgorithmString: js.UndefOr[Element] = js.undefined
+  
   /**
     * The date may be more recent than the approval date because of minor changes / editorial corrections.
+    * See guidance around (not) making local changes to elements [here](canonicalresource.html#localization).
     */
   var approvalDate: js.UndefOr[String] = js.undefined
   
@@ -80,6 +87,7 @@ trait ObservationDefinition
   
   /**
     * May be a web site, an email address, a telephone number, etc.
+    * See guidance around (not) making local changes to elements [here](canonicalresource.html#localization).
     */
   var contact: js.UndefOr[js.Array[ContactDetail]] = js.undefined
   
@@ -89,7 +97,13 @@ trait ObservationDefinition
   var copyright: js.UndefOr[String] = js.undefined
   
   /**
-    * Note that this is not the same as the resource last-modified-date, since the resource may be a secondary representation of the ObservationDefinition. Additional specific dates may be added as extensions or be found by consulting Provenances associated with past versions of the resource.
+    * The (c) symbol should NOT be included in this string. It will be added by software when rendering the notation. Full details about licensing, restrictions, warrantees, etc. goes in the more general 'copyright' element.
+    */
+  var copyrightLabel: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The date is often not tracked until the resource is published, but may be present on draft content. Note that this is not the same as the resource last-modified-date, since the resource may be a secondary representation of the ObservationDefinition. Additional specific dates may be added as extensions or be found by consulting Provenances associated with past versions of the resource.
+    * See guidance around (not) making local changes to elements [here](canonicalresource.html#localization).
     */
   var date: js.UndefOr[String] = js.undefined
   
@@ -104,7 +118,7 @@ trait ObservationDefinition
   var derivedFromUri: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
-    * This description can be used to capture details such as why the ObservationDefinition was built, comments about misuse, instructions for clinical use and interpretation, literature references, examples from the paper world, etc. It is not a rendering of the module as conveyed in the text field of the resource itself. This item SHOULD be populated unless the information is available from context.
+    * This description can be used to capture details such as comments about misuse, instructions for clinical use and interpretation, literature references, examples from the paper world, etc. It is not a rendering of the module as conveyed in the text field of the resource itself. This item SHOULD be populated unless the information is available from context.
     */
   var description: js.UndefOr[String] = js.undefined
   
@@ -114,7 +128,8 @@ trait ObservationDefinition
   var device: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
-    * The effective period for an ObservationDefinition determines when the content is applicable for usage and is independent of publication and review dates. For example, an observation intended to be used for the year 2021 might be published in 2020.
+    * The effective period for an ObservationDefinition determines when the content is applicable for usage and is independent of publication and review dates. For example, an observation definition intended to be used for the year 2021 might be published in 2020.
+    * See guidance around (not) making local changes to elements [here](canonicalresource.html#localization).
     */
   var effectivePeriod: js.UndefOr[Period] = js.undefined
   
@@ -135,11 +150,13 @@ trait ObservationDefinition
   
   /**
     * It may be possible for the ObservationDefinition to be used in jurisdictions other than those for which it was originally designed or intended.
+    * DEPRECATION NOTE: For consistency, implementations are encouraged to migrate to using the new 'jurisdiction' code in the useContext element.  (I.e. useContext.code indicating http://terminology.hl7.org/CodeSystem/usage-context-type#jurisdiction and useContext.valueCodeableConcept indicating the jurisdiction.)
     */
   var jurisdiction: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
   /**
     * If specified, this is usually after the approval date.
+    * See guidance around (not) making local changes to elements [here](canonicalresource.html#localization).
     */
   var lastReviewDate: js.UndefOr[String] = js.undefined
   
@@ -174,6 +191,11 @@ trait ObservationDefinition
   ] = js.undefined
   
   /**
+    * Units allowed for the valueQuantity element in the instance observations conforming to this ObservationDefinition.
+    */
+  var permittedUnit: js.UndefOr[js.Array[Coding]] = js.undefined
+  
+  /**
     * The preferred name to be used when reporting the results of observations conforming to this ObservationDefinition.
     */
   var preferredReportName: js.UndefOr[String] = js.undefined
@@ -181,7 +203,7 @@ trait ObservationDefinition
   /**
     * Helps establish the "authority/credibility" of the ObservationDefinition. May also allow for contact.
     */
-  var publisher: js.UndefOr[Reference] = js.undefined
+  var publisher: js.UndefOr[String] = js.undefined
   
   /**
     * This element does not describe the usage of the ObservationDefinition. Rather it is for traceability of ''why'' the resource is either needed or ''why'' it is defined as it is. This may be used to point to source materials or specifications that drove the structure of this ObservationDefinition.
@@ -193,11 +215,6 @@ trait ObservationDefinition
     */
   var qualifiedValue: js.UndefOr[js.Array[ObservationDefinitionQualifiedValue]] = js.undefined
   
-  /**
-    * Characteristics for quantitative results of observations conforming to this ObservationDefinition.
-    */
-  var quantitativeDetails: js.UndefOr[ObservationDefinitionQuantitativeDetails] = js.undefined
-  
   /** Resource Type Name (for serialization) */
   @JSName("resourceType")
   val resourceType_ObservationDefinition: typings.fhir.fhirStrings.ObservationDefinition
@@ -208,8 +225,9 @@ trait ObservationDefinition
   var specimen: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
-    * A nominal state-transition diagram can be found in the [[definition.html#statemachine | Definition pattern]] documentation
+    * A nominal state-transition diagram can be found in the [Definition pattern](definition.html#statemachine) documentation
     * Unknown does not represent "other" - one of the defined statuses must apply. Unknown is used when the authoring system is not sure what the current status is.
+    * See guidance around (not) making local changes to elements [here](canonicalresource.html#localization).
     */
   var status: draft | active | retired | unknown
   
@@ -234,9 +252,19 @@ trait ObservationDefinition
   var useContext: js.UndefOr[js.Array[UsageContext]] = js.undefined
   
   /**
-    * There may be multiple different instances of a ObservationDefinition that have the same identifier but different versions.
+    * There may be multiple different instances of an observationDefinition that have the same identifier but different versions.
     */
   var version: js.UndefOr[String] = js.undefined
+  
+  /**
+    * If set as a string, this is a FHIRPath expression that has two additional context variables passed in - %version1 and %version2 and will return a negative number if version1 is newer, a positive number if version2 and a 0 if the version ordering can't be successfully be determined.
+    */
+  var versionAlgorithmCoding: js.UndefOr[Coding] = js.undefined
+  
+  /**
+    * If set as a string, this is a FHIRPath expression that has two additional context variables passed in - %version1 and %version2 and will return a negative number if version1 is newer, a positive number if version2 and a 0 if the version ordering can't be successfully be determined.
+    */
+  var versionAlgorithmString: js.UndefOr[String] = js.undefined
 }
 object ObservationDefinition {
   
@@ -277,6 +305,10 @@ object ObservationDefinition {
     inline def setContactVarargs(value: ContactDetail*): Self = StObject.set(x, "contact", js.Array(value*))
     
     inline def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
+    
+    inline def setCopyrightLabel(value: String): Self = StObject.set(x, "copyrightLabel", value.asInstanceOf[js.Any])
+    
+    inline def setCopyrightLabelUndefined: Self = StObject.set(x, "copyrightLabel", js.undefined)
     
     inline def setCopyrightUndefined: Self = StObject.set(x, "copyright", js.undefined)
     
@@ -362,11 +394,17 @@ object ObservationDefinition {
       value: (typings.fhir.fhirStrings.Quantity | typings.fhir.fhirStrings.CodeableConcept | string | boolean | integer | typings.fhir.fhirStrings.Range | typings.fhir.fhirStrings.Ratio | typings.fhir.fhirStrings.SampledData | time | dateTime | typings.fhir.fhirStrings.Period)*
     ): Self = StObject.set(x, "permittedDataType", js.Array(value*))
     
+    inline def setPermittedUnit(value: js.Array[Coding]): Self = StObject.set(x, "permittedUnit", value.asInstanceOf[js.Any])
+    
+    inline def setPermittedUnitUndefined: Self = StObject.set(x, "permittedUnit", js.undefined)
+    
+    inline def setPermittedUnitVarargs(value: Coding*): Self = StObject.set(x, "permittedUnit", js.Array(value*))
+    
     inline def setPreferredReportName(value: String): Self = StObject.set(x, "preferredReportName", value.asInstanceOf[js.Any])
     
     inline def setPreferredReportNameUndefined: Self = StObject.set(x, "preferredReportName", js.undefined)
     
-    inline def setPublisher(value: Reference): Self = StObject.set(x, "publisher", value.asInstanceOf[js.Any])
+    inline def setPublisher(value: String): Self = StObject.set(x, "publisher", value.asInstanceOf[js.Any])
     
     inline def setPublisherUndefined: Self = StObject.set(x, "publisher", js.undefined)
     
@@ -379,10 +417,6 @@ object ObservationDefinition {
     inline def setQualifiedValueUndefined: Self = StObject.set(x, "qualifiedValue", js.undefined)
     
     inline def setQualifiedValueVarargs(value: ObservationDefinitionQualifiedValue*): Self = StObject.set(x, "qualifiedValue", js.Array(value*))
-    
-    inline def setQuantitativeDetails(value: ObservationDefinitionQuantitativeDetails): Self = StObject.set(x, "quantitativeDetails", value.asInstanceOf[js.Any])
-    
-    inline def setQuantitativeDetailsUndefined: Self = StObject.set(x, "quantitativeDetails", js.undefined)
     
     inline def setResourceType(value: typings.fhir.fhirStrings.ObservationDefinition): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
@@ -416,6 +450,14 @@ object ObservationDefinition {
     
     inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
+    inline def setVersionAlgorithmCoding(value: Coding): Self = StObject.set(x, "versionAlgorithmCoding", value.asInstanceOf[js.Any])
+    
+    inline def setVersionAlgorithmCodingUndefined: Self = StObject.set(x, "versionAlgorithmCoding", js.undefined)
+    
+    inline def setVersionAlgorithmString(value: String): Self = StObject.set(x, "versionAlgorithmString", value.asInstanceOf[js.Any])
+    
+    inline def setVersionAlgorithmStringUndefined: Self = StObject.set(x, "versionAlgorithmString", js.undefined)
+    
     inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     
     inline def set_approvalDate(value: Element): Self = StObject.set(x, "_approvalDate", value.asInstanceOf[js.Any])
@@ -423,6 +465,10 @@ object ObservationDefinition {
     inline def set_approvalDateUndefined: Self = StObject.set(x, "_approvalDate", js.undefined)
     
     inline def set_copyright(value: Element): Self = StObject.set(x, "_copyright", value.asInstanceOf[js.Any])
+    
+    inline def set_copyrightLabel(value: Element): Self = StObject.set(x, "_copyrightLabel", value.asInstanceOf[js.Any])
+    
+    inline def set_copyrightLabelUndefined: Self = StObject.set(x, "_copyrightLabel", js.undefined)
     
     inline def set_copyrightUndefined: Self = StObject.set(x, "_copyright", js.undefined)
     
@@ -472,6 +518,10 @@ object ObservationDefinition {
     
     inline def set_preferredReportNameUndefined: Self = StObject.set(x, "_preferredReportName", js.undefined)
     
+    inline def set_publisher(value: Element): Self = StObject.set(x, "_publisher", value.asInstanceOf[js.Any])
+    
+    inline def set_publisherUndefined: Self = StObject.set(x, "_publisher", js.undefined)
+    
     inline def set_purpose(value: Element): Self = StObject.set(x, "_purpose", value.asInstanceOf[js.Any])
     
     inline def set_purposeUndefined: Self = StObject.set(x, "_purpose", js.undefined)
@@ -489,6 +539,10 @@ object ObservationDefinition {
     inline def set_urlUndefined: Self = StObject.set(x, "_url", js.undefined)
     
     inline def set_version(value: Element): Self = StObject.set(x, "_version", value.asInstanceOf[js.Any])
+    
+    inline def set_versionAlgorithmString(value: Element): Self = StObject.set(x, "_versionAlgorithmString", value.asInstanceOf[js.Any])
+    
+    inline def set_versionAlgorithmStringUndefined: Self = StObject.set(x, "_versionAlgorithmString", js.undefined)
     
     inline def set_versionUndefined: Self = StObject.set(x, "_version", js.undefined)
   }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DirectiveNode
   extends StObject
-     with Node2 {
+     with Node {
   
   var arg: js.UndefOr[ExpressionNode] = js.undefined
   

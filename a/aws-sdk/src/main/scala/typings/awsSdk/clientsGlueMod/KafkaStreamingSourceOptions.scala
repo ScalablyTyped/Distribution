@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait KafkaStreamingSourceOptions extends StObject {
   
   /**
+    * When this option is set to 'true', the data output will contain an additional column named "__src_timestamp" that indicates the time when the corresponding record received by the topic. The default value is 'false'. This option is supported in Glue version 4.0 or later.
+    */
+  var AddRecordTimestamp: js.UndefOr[EnclosedInStringProperty] = js.undefined
+  
+  /**
     * The specific TopicPartitions to consume. You must specify at least one of "topicName", "assign" or "subscribePattern".
     */
   var Assign: js.UndefOr[EnclosedInStringProperty] = js.undefined
@@ -32,9 +37,19 @@ trait KafkaStreamingSourceOptions extends StObject {
   var Delimiter: js.UndefOr[EnclosedInStringProperty] = js.undefined
   
   /**
+    * When this option is set to 'true', for each batch, it will emit the metrics for the duration between the oldest record received by the topic and the time it arrives in Glue to CloudWatch. The metric's name is "glue.driver.streaming.maxConsumerLagInMs". The default value is 'false'. This option is supported in Glue version 4.0 or later.
+    */
+  var EmitConsumerLagMetrics: js.UndefOr[EnclosedInStringProperty] = js.undefined
+  
+  /**
     * The end point when a batch query is ended. Possible values are either "latest" or a JSON string that specifies an ending offset for each TopicPartition.
     */
   var EndingOffsets: js.UndefOr[EnclosedInStringProperty] = js.undefined
+  
+  /**
+    * Whether to include the Kafka headers. When the option is set to "true", the data output will contain an additional column named "glue_streaming_kafka_headers" with type Array[Struct(key: String, value: String)]. The default value is "false". This option is available in Glue version 3.0 or later only.
+    */
+  var IncludeHeaders: js.UndefOr[BoxedBoolean] = js.undefined
   
   /**
     * The rate limit on the maximum number of offsets that are processed per trigger interval. The specified total number of offsets is proportionally split across topicPartitions of different volumes. The default value is null, which means that the consumer reads all offsets until the known latest offset.
@@ -91,6 +106,10 @@ object KafkaStreamingSourceOptions {
   @scala.inline
   implicit open class MutableBuilder[Self <: KafkaStreamingSourceOptions] (val x: Self) extends AnyVal {
     
+    inline def setAddRecordTimestamp(value: EnclosedInStringProperty): Self = StObject.set(x, "AddRecordTimestamp", value.asInstanceOf[js.Any])
+    
+    inline def setAddRecordTimestampUndefined: Self = StObject.set(x, "AddRecordTimestamp", js.undefined)
+    
     inline def setAssign(value: EnclosedInStringProperty): Self = StObject.set(x, "Assign", value.asInstanceOf[js.Any])
     
     inline def setAssignUndefined: Self = StObject.set(x, "Assign", js.undefined)
@@ -111,9 +130,17 @@ object KafkaStreamingSourceOptions {
     
     inline def setDelimiterUndefined: Self = StObject.set(x, "Delimiter", js.undefined)
     
+    inline def setEmitConsumerLagMetrics(value: EnclosedInStringProperty): Self = StObject.set(x, "EmitConsumerLagMetrics", value.asInstanceOf[js.Any])
+    
+    inline def setEmitConsumerLagMetricsUndefined: Self = StObject.set(x, "EmitConsumerLagMetrics", js.undefined)
+    
     inline def setEndingOffsets(value: EnclosedInStringProperty): Self = StObject.set(x, "EndingOffsets", value.asInstanceOf[js.Any])
     
     inline def setEndingOffsetsUndefined: Self = StObject.set(x, "EndingOffsets", js.undefined)
+    
+    inline def setIncludeHeaders(value: BoxedBoolean): Self = StObject.set(x, "IncludeHeaders", value.asInstanceOf[js.Any])
+    
+    inline def setIncludeHeadersUndefined: Self = StObject.set(x, "IncludeHeaders", js.undefined)
     
     inline def setMaxOffsetsPerTrigger(value: BoxedNonNegativeLong): Self = StObject.set(x, "MaxOffsetsPerTrigger", value.asInstanceOf[js.Any])
     

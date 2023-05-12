@@ -77,8 +77,8 @@ object typingsParserCellAddressMod {
     inline def fromColAndRow(col: ColumnAddress, row: RowAddress): CellAddress = (^.asInstanceOf[js.Dynamic].applyDynamic("fromColAndRow")(col.asInstanceOf[js.Any], row.asInstanceOf[js.Any])).asInstanceOf[CellAddress]
     inline def fromColAndRow(col: ColumnAddress, row: RowAddress, sheet: Double): CellAddress = (^.asInstanceOf[js.Dynamic].applyDynamic("fromColAndRow")(col.asInstanceOf[js.Any], row.asInstanceOf[js.Any], sheet.asInstanceOf[js.Any])).asInstanceOf[CellAddress]
     
-    inline def relative(row: Double, col: Double): CellAddress = (^.asInstanceOf[js.Dynamic].applyDynamic("relative")(row.asInstanceOf[js.Any], col.asInstanceOf[js.Any])).asInstanceOf[CellAddress]
-    inline def relative(row: Double, col: Double, sheet: Double): CellAddress = (^.asInstanceOf[js.Dynamic].applyDynamic("relative")(row.asInstanceOf[js.Any], col.asInstanceOf[js.Any], sheet.asInstanceOf[js.Any])).asInstanceOf[CellAddress]
+    inline def relative(col: Double, row: Double): CellAddress = (^.asInstanceOf[js.Dynamic].applyDynamic("relative")(col.asInstanceOf[js.Any], row.asInstanceOf[js.Any])).asInstanceOf[CellAddress]
+    inline def relative(col: Double, row: Double, sheet: Double): CellAddress = (^.asInstanceOf[js.Dynamic].applyDynamic("relative")(col.asInstanceOf[js.Any], row.asInstanceOf[js.Any], sheet.asInstanceOf[js.Any])).asInstanceOf[CellAddress]
   }
   
   @js.native

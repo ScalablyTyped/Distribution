@@ -25,7 +25,7 @@ type AppAttributesKeys = _AppAttributesKeys | java.lang.String
   - typings.awsSdk.awsSdkStrings.java_
   - typings.awsSdk.awsSdkStrings.rails
   - typings.awsSdk.awsSdkStrings.php_
-  - typings.awsSdk.awsSdkStrings.nodejs
+  - typings.awsSdk.awsSdkStrings.nodejs_
   - typings.awsSdk.awsSdkStrings.static__
   - typings.awsSdk.awsSdkStrings.other__
   - java.lang.String

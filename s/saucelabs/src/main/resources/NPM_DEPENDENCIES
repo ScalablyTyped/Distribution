@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "saucelabs" : "7.2.0"
+      "saucelabs" : "7.2.1"
     }
   ],
   "test-dependencies" : [
     {
-      "saucelabs" : "7.2.0"
+      "saucelabs" : "7.2.1"
     }
   ],
   "compile-devDependencies" : [

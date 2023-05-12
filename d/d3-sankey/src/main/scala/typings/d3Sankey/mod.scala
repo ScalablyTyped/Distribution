@@ -339,6 +339,11 @@ object mod {
     var depth: js.UndefOr[Double] = js.undefined
     
     /**
+      * Node's fixedValue (user-defined)
+      */
+    var fixedValue: js.UndefOr[Double] = js.undefined
+    
+    /**
       * Node’s zero-based graph height, derived from the graph topology calculated by Sankey layout generator.
       */
     var height: js.UndefOr[Double] = js.undefined
@@ -399,6 +404,10 @@ object mod {
       inline def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
       
       inline def setDepthUndefined: Self = StObject.set(x, "depth", js.undefined)
+      
+      inline def setFixedValue(value: Double): Self = StObject.set(x, "fixedValue", value.asInstanceOf[js.Any])
+      
+      inline def setFixedValueUndefined: Self = StObject.set(x, "fixedValue", js.undefined)
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

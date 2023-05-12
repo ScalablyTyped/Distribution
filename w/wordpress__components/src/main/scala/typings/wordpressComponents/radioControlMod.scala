@@ -11,7 +11,7 @@ object radioControlMod {
   
   object default {
     
-    // tslint:disable-next-line:no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
     inline def apply[T](props: Props[T]): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("@wordpress/components/radio-control", JSImport.Default)

@@ -14,7 +14,6 @@ trait IWebDriverCookie
     * The expiry is always returned in seconds since epoch when
     * {@linkplain Options#getCookies() retrieving cookies} from the browser.
     *
-    * @type {(!number|undefined)}
     */
   @JSName("expiry")
   var expiry_IWebDriverCookie: js.UndefOr[Double] = js.undefined

@@ -64,6 +64,8 @@ object mod {
     
     var component: js.UndefOr[String] = js.undefined
     
+    var includeAllElements: js.UndefOr[Boolean] = js.undefined
+    
     var responsiveInlinedCanvases: js.UndefOr[Boolean] = js.undefined
     
     var targets: js.UndefOr[js.Array[String]] = js.undefined
@@ -85,6 +87,10 @@ object mod {
       inline def setComponent(value: String): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
       inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+      
+      inline def setIncludeAllElements(value: Boolean): Self = StObject.set(x, "includeAllElements", value.asInstanceOf[js.Any])
+      
+      inline def setIncludeAllElementsUndefined: Self = StObject.set(x, "includeAllElements", js.undefined)
       
       inline def setResponsiveInlinedCanvases(value: Boolean): Self = StObject.set(x, "responsiveInlinedCanvases", value.asInstanceOf[js.Any])
       

@@ -2,6 +2,7 @@ package typings.pixiAssets
 
 import typings.pixiAssets.libLoaderLoaderMod.Loader
 import typings.pixiAssets.libLoaderParsersLoaderParserMod.LoaderParser
+import typings.pixiAssets.libLoaderParsersTexturesLoadTexturesMod.LoadTextureConfig
 import typings.pixiCore.libTexturesBaseTextureMod.IBaseTextureOptions
 import typings.pixiCore.libTexturesResourcesAutoDetectResourceMod.IAutoDetectOptions
 import typings.pixiCore.libTexturesResourcesResourceMod.Resource
@@ -9,6 +10,7 @@ import typings.pixiCore.mod.BaseTexture
 import typings.pixiCore.mod.Texture
 import typings.std.FontFace
 import typings.std.ImageBitmap
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,9 +35,6 @@ object libLoaderParsersMod {
     /* 1 */ val Normal: typings.pixiAssets.libLoaderParsersLoaderParserMod.LoaderParserPriority.Normal & Double = js.native
   }
   
-  inline def checkExtension(url: String, `extension`: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("checkExtension")(url.asInstanceOf[js.Any], `extension`.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  inline def checkExtension(url: String, `extension`: js.Array[String]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("checkExtension")(url.asInstanceOf[js.Any], `extension`.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  
   inline def createTexture(base: BaseTexture[Resource, IAutoDetectOptions], loader: Loader, url: String): Texture[typings.pixiCore.mod.Resource] = (^.asInstanceOf[js.Dynamic].applyDynamic("createTexture")(base.asInstanceOf[js.Any], loader.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[Texture[typings.pixiCore.mod.Resource]]
   
   inline def getFontFamilyName(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getFontFamilyName")(url.asInstanceOf[js.Any]).asInstanceOf[String]
@@ -44,21 +43,25 @@ object libLoaderParsersMod {
   
   @JSImport("@pixi/assets/lib/loader/parsers", "loadJson")
   @js.native
-  val loadJson: LoaderParser[Any, Any] = js.native
+  val loadJson: LoaderParser[Any, Any, Record[String, Any]] = js.native
   
   @JSImport("@pixi/assets/lib/loader/parsers", "loadSVG")
   @js.native
-  val loadSVG: LoaderParser[String | Texture[typings.pixiCore.mod.Resource], IBaseTextureOptions[Any]] = js.native
+  val loadSVG: LoaderParser[
+    String | Texture[typings.pixiCore.mod.Resource], 
+    IBaseTextureOptions[Any], 
+    Record[String, Any]
+  ] = js.native
   
   @JSImport("@pixi/assets/lib/loader/parsers", "loadTextures")
   @js.native
-  val loadTextures: LoaderParser[Texture[typings.pixiCore.mod.Resource], IBaseTextureOptions[Any]] = js.native
+  val loadTextures: LoaderParser[Texture[typings.pixiCore.mod.Resource], IBaseTextureOptions[Any], LoadTextureConfig] = js.native
   
   @JSImport("@pixi/assets/lib/loader/parsers", "loadTxt")
   @js.native
-  val loadTxt: LoaderParser[Any, Any] = js.native
+  val loadTxt: LoaderParser[Any, Any, Record[String, Any]] = js.native
   
   @JSImport("@pixi/assets/lib/loader/parsers", "loadWebFont")
   @js.native
-  val loadWebFont: LoaderParser[FontFace | js.Array[FontFace], Any] = js.native
+  val loadWebFont: LoaderParser[FontFace | js.Array[FontFace], Any, Record[String, Any]] = js.native
 }

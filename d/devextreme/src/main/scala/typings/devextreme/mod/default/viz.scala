@@ -170,11 +170,11 @@ object viz {
       @js.native
       val ^ : js.Any = js.native
       
-      inline def add(name: String, projection: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(name.asInstanceOf[js.Any], projection.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def add(name: String, projectionConfig: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(name.asInstanceOf[js.Any], projectionConfig.asInstanceOf[js.Any])).asInstanceOf[Unit]
       /**
-        * Adds a new projection to the internal projection storage.
+        * 
         */
-      inline def add(name: String, projection: VectorMapProjectionConfig): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(name.asInstanceOf[js.Any], projection.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def add(name: String, projectionConfig: VectorMapProjectionConfig): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(name.asInstanceOf[js.Any], projectionConfig.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       inline def get(name: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any]).asInstanceOf[Any]
       /**

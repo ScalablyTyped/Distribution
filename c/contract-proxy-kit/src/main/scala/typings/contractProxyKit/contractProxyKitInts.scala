@@ -13,4 +13,12 @@ object contractProxyKitInts {
   @js.native
   sealed trait `1` extends StObject
   inline def `1`: `1` = 1.asInstanceOf[`1`]
+  
+  @js.native
+  sealed trait `27` extends StObject
+  inline def `27`: `27` = 27.asInstanceOf[`27`]
+  
+  @js.native
+  sealed trait `28` extends StObject
+  inline def `28`: `28` = 28.asInstanceOf[`28`]
 }

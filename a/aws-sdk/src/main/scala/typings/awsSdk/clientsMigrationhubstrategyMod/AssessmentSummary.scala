@@ -32,6 +32,11 @@ trait AssessmentSummary extends StObject {
   var listAntipatternSeveritySummary: js.UndefOr[ListAntipatternSeveritySummary] = js.undefined
   
   /**
+    * List of status summaries of the analyzed application components.
+    */
+  var listApplicationComponentStatusSummary: js.UndefOr[ListApplicationComponentStatusSummary] = js.undefined
+  
+  /**
     *  List of ApplicationComponentStrategySummary. 
     */
   var listApplicationComponentStrategySummary: js.UndefOr[ListStrategySummary] = js.undefined
@@ -40,6 +45,11 @@ trait AssessmentSummary extends StObject {
     *  List of ApplicationComponentSummary. 
     */
   var listApplicationComponentSummary: js.UndefOr[ListApplicationComponentSummary] = js.undefined
+  
+  /**
+    * List of status summaries of the analyzed servers.
+    */
+  var listServerStatusSummary: js.UndefOr[ListServerStatusSummary] = js.undefined
   
   /**
     *  List of ServerStrategySummary. 
@@ -83,6 +93,12 @@ object AssessmentSummary {
     
     inline def setListAntipatternSeveritySummaryVarargs(value: AntipatternSeveritySummary*): Self = StObject.set(x, "listAntipatternSeveritySummary", js.Array(value*))
     
+    inline def setListApplicationComponentStatusSummary(value: ListApplicationComponentStatusSummary): Self = StObject.set(x, "listApplicationComponentStatusSummary", value.asInstanceOf[js.Any])
+    
+    inline def setListApplicationComponentStatusSummaryUndefined: Self = StObject.set(x, "listApplicationComponentStatusSummary", js.undefined)
+    
+    inline def setListApplicationComponentStatusSummaryVarargs(value: ApplicationComponentStatusSummary*): Self = StObject.set(x, "listApplicationComponentStatusSummary", js.Array(value*))
+    
     inline def setListApplicationComponentStrategySummary(value: ListStrategySummary): Self = StObject.set(x, "listApplicationComponentStrategySummary", value.asInstanceOf[js.Any])
     
     inline def setListApplicationComponentStrategySummaryUndefined: Self = StObject.set(x, "listApplicationComponentStrategySummary", js.undefined)
@@ -94,6 +110,12 @@ object AssessmentSummary {
     inline def setListApplicationComponentSummaryUndefined: Self = StObject.set(x, "listApplicationComponentSummary", js.undefined)
     
     inline def setListApplicationComponentSummaryVarargs(value: ApplicationComponentSummary*): Self = StObject.set(x, "listApplicationComponentSummary", js.Array(value*))
+    
+    inline def setListServerStatusSummary(value: ListServerStatusSummary): Self = StObject.set(x, "listServerStatusSummary", value.asInstanceOf[js.Any])
+    
+    inline def setListServerStatusSummaryUndefined: Self = StObject.set(x, "listServerStatusSummary", js.undefined)
+    
+    inline def setListServerStatusSummaryVarargs(value: ServerStatusSummary*): Self = StObject.set(x, "listServerStatusSummary", js.Array(value*))
     
     inline def setListServerStrategySummary(value: ListStrategySummary): Self = StObject.set(x, "listServerStrategySummary", value.asInstanceOf[js.Any])
     

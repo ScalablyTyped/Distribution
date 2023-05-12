@@ -3,15 +3,18 @@ package typings.xstate
 import typings.std.Exclude
 import typings.std.Pick
 import typings.std.Record
-import typings.xstate.anon.Actions
+import typings.xstate.anon.Delays
 import typings.xstate.anon.TypegenMetaindexedActions
 import typings.xstate.libTypesMod.BaseActionObject
+import typings.xstate.libTypesMod.Compute
 import typings.xstate.libTypesMod.EventObject
 import typings.xstate.libTypesMod.Prop
 import typings.xstate.libTypesMod.ServiceMap
+import typings.xstate.libTypesMod.Values
 import typings.xstate.xstateBooleans.`false`
 import typings.xstate.xstateBooleans.`true`
 import typings.xstate.xstateStrings.`@@xstateSlashtypegen`
+import typings.xstate.xstateStrings.`Some implementations missing`
 import typings.xstate.xstateStrings.resolved
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -115,6 +118,15 @@ object libTypegenTypesMod {
     Exclude[/* keyof TInternalEvents */ String, /* keyof TIndexedEvents */ String]
   ])
   
+  type MissingImplementationsError[TResolvedTypesMeta, TMissingImplementations] = Compute[
+    js.Tuple2[
+      `Some implementations missing`, 
+      Values[
+        /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof TMissingImplementations ]: TMissingImplementations[K]} */ js.Any
+      ]
+    ]
+  ]
+  
   trait ResolveTypegenMeta[TTypesMeta /* <: TypegenConstraint */, TEvent /* <: EventObject */, TAction /* <: BaseActionObject */, TServiceMap /* <: ServiceMap */] extends StObject {
     
     @JSName("@@xstate/typegen")
@@ -161,7 +173,7 @@ object libTypegenTypesMod {
       eventsCausingServices: Record[String, String],
       invokeSrcNameMap: Record[String, String],
       matchesStates: String | js.Object,
-      missingImplementations: Actions,
+      missingImplementations: Delays,
       resolved: TypegenMetaindexedActions,
       tags: String
     ): ResolvedTypegenMeta = {
@@ -299,7 +311,7 @@ object libTypegenTypesMod {
       * Allows you to specify all the missing implementations
       * of the machine
       */
-    var missingImplementations: Actions
+    var missingImplementations: Delays
     
     /**
       * Allows you to specify all tags used by the machine
@@ -315,7 +327,7 @@ object libTypegenTypesMod {
       eventsCausingServices: Record[String, String],
       invokeSrcNameMap: Record[String, String],
       matchesStates: String | js.Object,
-      missingImplementations: Actions,
+      missingImplementations: Delays,
       tags: String
     ): TypegenMeta = {
       val __obj = js.Dynamic.literal(eventsCausingActions = eventsCausingActions.asInstanceOf[js.Any], eventsCausingDelays = eventsCausingDelays.asInstanceOf[js.Any], eventsCausingGuards = eventsCausingGuards.asInstanceOf[js.Any], eventsCausingServices = eventsCausingServices.asInstanceOf[js.Any], invokeSrcNameMap = invokeSrcNameMap.asInstanceOf[js.Any], matchesStates = matchesStates.asInstanceOf[js.Any], missingImplementations = missingImplementations.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any])
@@ -338,7 +350,7 @@ object libTypegenTypesMod {
       
       inline def setMatchesStates(value: String | js.Object): Self = StObject.set(x, "matchesStates", value.asInstanceOf[js.Any])
       
-      inline def setMissingImplementations(value: Actions): Self = StObject.set(x, "missingImplementations", value.asInstanceOf[js.Any])
+      inline def setMissingImplementations(value: Delays): Self = StObject.set(x, "missingImplementations", value.asInstanceOf[js.Any])
       
       inline def setTags(value: String): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     }

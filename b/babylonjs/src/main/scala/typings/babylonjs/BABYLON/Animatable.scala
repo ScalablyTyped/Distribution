@@ -26,7 +26,8 @@ trait Animatable extends StObject {
   
   /* private */ var _raiseOnAnimationEnd: Any = js.native
   
-  /* private */ var _runtimeAnimations: Any = js.native
+  /** @hidden */
+  var _runtimeAnimations: js.Array[RuntimeAnimation] = js.native
   
   /* private */ var _scene: Any = js.native
   
@@ -50,7 +51,7 @@ trait Animatable extends StObject {
   
   /**
     * Disable animation blending
-    * @see https://doc.babylonjs.com/babylon101/animations#animation-blending
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/animation/advanced_animations#animation-blending
     */
   def disableBlending(): Unit = js.native
   
@@ -62,7 +63,7 @@ trait Animatable extends StObject {
   
   /**
     * Allows the animatable to blend with current running animations
-    * @see https://doc.babylonjs.com/babylon101/animations#animation-blending
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/animation/advanced_animations#animation-blending
     * @param blendingSpeed defines the blending speed to use
     */
   def enableBlending(blendingSpeed: Double): Unit = js.native
@@ -148,12 +149,21 @@ trait Animatable extends StObject {
   /**
     * Stop and delete the current animation
     * @param animationName defines a string used to only stop some of the runtime animations instead of all
-    * @param targetMask - a function that determines if the animation should be stopped based on its target (all animations will be stopped if both this and animationName are empty)
+    * @param targetMask a function that determines if the animation should be stopped based on its target (all animations will be stopped if both this and animationName are empty)
+    * @param useGlobalSplice if true, the animatables will be removed by the caller of this function (false by default)
     */
   def stop(): Unit = js.native
   def stop(animationName: String): Unit = js.native
   def stop(animationName: String, targetMask: js.Function1[/* target */ Any, Boolean]): Unit = js.native
+  def stop(
+    animationName: String,
+    targetMask: js.Function1[/* target */ Any, Boolean],
+    useGlobalSplice: Boolean
+  ): Unit = js.native
+  def stop(animationName: String, targetMask: Unit, useGlobalSplice: Boolean): Unit = js.native
   def stop(animationName: Unit, targetMask: js.Function1[/* target */ Any, Boolean]): Unit = js.native
+  def stop(animationName: Unit, targetMask: js.Function1[/* target */ Any, Boolean], useGlobalSplice: Boolean): Unit = js.native
+  def stop(animationName: Unit, targetMask: Unit, useGlobalSplice: Boolean): Unit = js.native
   
   /**
     * Gets the root Animatable used to synchronize and normalize animations

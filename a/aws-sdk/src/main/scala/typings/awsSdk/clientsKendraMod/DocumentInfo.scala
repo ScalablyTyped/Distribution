@@ -12,7 +12,7 @@ trait DocumentInfo extends StObject {
   var Attributes: js.UndefOr[DocumentAttributeList] = js.undefined
   
   /**
-    * The unique identifier of the document.
+    * The identifier of the document.
     */
   var DocumentId: typings.awsSdk.clientsKendraMod.DocumentId
 }

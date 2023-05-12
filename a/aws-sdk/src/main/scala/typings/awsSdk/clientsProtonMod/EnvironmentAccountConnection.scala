@@ -52,7 +52,7 @@ trait EnvironmentAccountConnection extends StObject {
   var requestedAt: js.Date
   
   /**
-    * The Amazon Resource Name (ARN) of an IAM service role in the environment account. Proton uses this role to provision infrastructure resources using Amazon Web Services-managed provisioning and CloudFormation in the associated environment account.
+    * The IAM service role that's associated with the environment account connection.
     */
   var roleArn: Arn
   

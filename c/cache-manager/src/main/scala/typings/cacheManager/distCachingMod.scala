@@ -30,12 +30,12 @@ object distCachingMod {
     def reset(): js.Promise[Unit] = js.native
     
     def set(key: String, value: Any): js.Promise[Unit] = js.native
-    def set(key: String, value: Any, ttl: Ttl): js.Promise[Unit] = js.native
+    def set(key: String, value: Any, ttl: Milliseconds): js.Promise[Unit] = js.native
     
     var store: S = js.native
     
     def wrap[T](key: String, fn: js.Function0[js.Promise[T]]): js.Promise[T] = js.native
-    def wrap[T](key: String, fn: js.Function0[js.Promise[T]], ttl: Ttl): js.Promise[T] = js.native
+    def wrap[T](key: String, fn: js.Function0[js.Promise[T]], ttl: Milliseconds): js.Promise[T] = js.native
   }
   
   type CachingConfig[T] = MemoryConfig | StoreConfig | FactoryConfig[T]
@@ -44,7 +44,7 @@ object distCachingMod {
     
     var isCacheable: js.UndefOr[js.Function1[/* val */ Any, Boolean]] = js.undefined
     
-    var ttl: js.UndefOr[Ttl] = js.undefined
+    var ttl: js.UndefOr[Milliseconds] = js.undefined
   }
   object Config {
     
@@ -60,7 +60,7 @@ object distCachingMod {
       
       inline def setIsCacheableUndefined: Self = StObject.set(x, "isCacheable", js.undefined)
       
-      inline def setTtl(value: Ttl): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
+      inline def setTtl(value: Milliseconds): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
       
       inline def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
     }
@@ -69,6 +69,8 @@ object distCachingMod {
   type FactoryConfig[T] = T & Config
   
   type FactoryStore[S /* <: Store */, T /* <: js.Object */] = js.Function1[/* config */ js.UndefOr[FactoryConfig[T]], S | js.Promise[S]]
+  
+  type Milliseconds = Double
   
   @js.native
   trait Store
@@ -87,12 +89,12 @@ object distCachingMod {
     def mget(args: String*): js.Promise[js.Array[Any]] = js.native
     
     def mset(args: js.Array[js.Tuple2[String, Any]]): js.Promise[Unit] = js.native
-    def mset(args: js.Array[js.Tuple2[String, Any]], ttl: Ttl): js.Promise[Unit] = js.native
+    def mset(args: js.Array[js.Tuple2[String, Any]], ttl: Milliseconds): js.Promise[Unit] = js.native
     
     def reset(): js.Promise[Unit] = js.native
     
     def set[T](key: String, data: T): js.Promise[Unit] = js.native
-    def set[T](key: String, data: T, ttl: Ttl): js.Promise[Unit] = js.native
+    def set[T](key: String, data: T, ttl: Milliseconds): js.Promise[Unit] = js.native
     
     def ttl(key: String): js.Promise[Double] = js.native
   }
@@ -106,7 +108,7 @@ object distCachingMod {
   */
   type Stores[S /* <: Store */, T /* <: js.Object */] = (_Stores[S, T]) | (FactoryStore[S, T])
   
-  type Ttl = Double
+  type Ttl = Milliseconds
   
   trait _Stores[S /* <: Store */, T /* <: js.Object */] extends StObject
 }

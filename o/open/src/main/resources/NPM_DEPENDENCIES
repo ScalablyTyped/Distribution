@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "open" : "8.4.0"
+      "open" : "9.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "open" : "8.4.0"
+      "open" : "9.1.0"
     }
   ],
   "compile-devDependencies" : [

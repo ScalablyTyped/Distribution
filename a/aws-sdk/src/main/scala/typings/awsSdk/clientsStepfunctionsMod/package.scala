@@ -91,6 +91,10 @@ type HistoryEventList = js.Array[HistoryEvent]
   - typings.awsSdk.awsSdkStrings.WaitStateAborted
   - typings.awsSdk.awsSdkStrings.WaitStateEntered
   - typings.awsSdk.awsSdkStrings.WaitStateExited
+  - typings.awsSdk.awsSdkStrings.MapRunAborted
+  - typings.awsSdk.awsSdkStrings.MapRunFailed
+  - typings.awsSdk.awsSdkStrings.MapRunStarted
+  - typings.awsSdk.awsSdkStrings.MapRunSucceeded
   - java.lang.String
 */
 type HistoryEventType = _HistoryEventType | String
@@ -113,6 +117,23 @@ type LogDestinationList = js.Array[LogDestination]
   - java.lang.String
 */
 type LogLevel = _LogLevel | String
+
+type LongArn = String
+
+type MapRunLabel = String
+
+type MapRunList = js.Array[MapRunListItem]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.RUNNING
+  - typings.awsSdk.awsSdkStrings.SUCCEEDED
+  - typings.awsSdk.awsSdkStrings.FAILED
+  - typings.awsSdk.awsSdkStrings.ABORTED
+  - java.lang.String
+*/
+type MapRunStatus = _MapRunStatus | String
+
+type MaxConcurrency = Double
 
 type Name = String
 
@@ -168,9 +189,15 @@ type TimeoutInSeconds = Double
 
 type Timestamp = js.Date
 
+type ToleratedFailureCount = Double
+
+type ToleratedFailurePercentage = Double
+
 type TraceHeader = String
 
 type UnsignedInteger = Double
+
+type UnsignedLong = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2016-11-23`

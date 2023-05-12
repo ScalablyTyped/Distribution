@@ -3,24 +3,26 @@ package typings.hapipalToys
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.StringDictionary
 import typings.hapiBoom.mod.Boom
-import typings.hapiHapi.mod.Lifecycle.Method
-import typings.hapiHapi.mod.Lifecycle.ReturnValue
-import typings.hapiHapi.mod.Plugin
-import typings.hapiHapi.mod.ReqRefDefaults
-import typings.hapiHapi.mod.Request
-import typings.hapiHapi.mod.ResponseObject
-import typings.hapiHapi.mod.ResponseObjectHeaderOptions
-import typings.hapiHapi.mod.ResponseToolkit
-import typings.hapiHapi.mod.RouteExtObject
-import typings.hapiHapi.mod.RouteOptionsPreArray
-import typings.hapiHapi.mod.ServerAuthScheme
-import typings.hapiHapi.mod.ServerAuthSchemeOptions
-import typings.hapiHapi.mod.ServerExtEventsObject
-import typings.hapiHapi.mod.ServerExtOptions
-import typings.hapiHapi.mod.ServerRealm
-import typings.hapiHapi.mod.ServerRoute
+import typings.hapiHapi.libTypesPluginMod.Plugin
+import typings.hapiHapi.libTypesPluginMod.ServerRealm
+import typings.hapiHapi.libTypesRequestMod.ReqRefDefaults
+import typings.hapiHapi.libTypesRequestMod.Request
+import typings.hapiHapi.libTypesResponseMod.ResponseObject
+import typings.hapiHapi.libTypesResponseMod.ResponseObjectHeaderOptions
+import typings.hapiHapi.libTypesResponseMod.ResponseToolkit
+import typings.hapiHapi.libTypesRouteMod.RouteOptionsPreArray
+import typings.hapiHapi.libTypesRouteMod.ServerRoute
+import typings.hapiHapi.libTypesServerAuthMod.ServerAuthScheme
+import typings.hapiHapi.libTypesServerAuthMod.ServerAuthSchemeOptions
+import typings.hapiHapi.libTypesServerExtMod.RouteExtObject
+import typings.hapiHapi.libTypesServerExtMod.ServerExtEventsObject
+import typings.hapiHapi.libTypesServerExtMod.ServerExtOptions
+import typings.hapiHapi.libTypesServerServerMod.ServerApplicationState
+import typings.hapiHapi.libTypesUtilsMod.Lifecycle.Method
+import typings.hapiHapi.libTypesUtilsMod.Lifecycle.ReturnValue
 import typings.hapiHapi.mod.Server_
 import typings.hapipalToys.anon.PartialServerRouteReqRefD
+import typings.hapipalToys.anon.TypeofAsyncLocalStorage
 import typings.node.asyncHooksMod.AsyncLocalStorage
 import typings.node.eventsMod.EventEmitter
 import typings.node.streamMod.FinishedOptions
@@ -38,7 +40,7 @@ object mod {
   
   inline def asyncStorage(identifier: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("asyncStorage")(identifier.asInstanceOf[js.Any]).asInstanceOf[Any]
   
-  inline def asyncStorageInternals(): Map[String, Instantiable0[AsyncLocalStorage[js.Object]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("asyncStorageInternals")().asInstanceOf[Map[String, Instantiable0[AsyncLocalStorage[js.Object]]]]
+  inline def asyncStorageInternals(): Map[String, TypeofAsyncLocalStorage & Instantiable0[AsyncLocalStorage[js.Object]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("asyncStorageInternals")().asInstanceOf[Map[String, TypeofAsyncLocalStorage & Instantiable0[AsyncLocalStorage[js.Object]]]]
   
   object auth {
     
@@ -46,7 +48,7 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def strategy(server: Server_, name: String, authenticate: ServerAuthSchemeAuthenticate): ServerAuthScheme[ServerAuthSchemeOptions, ReqRefDefaults] = (^.asInstanceOf[js.Dynamic].applyDynamic("strategy")(server.asInstanceOf[js.Any], name.asInstanceOf[js.Any], authenticate.asInstanceOf[js.Any])).asInstanceOf[ServerAuthScheme[ServerAuthSchemeOptions, ReqRefDefaults]]
+    inline def strategy(server: Server_[ServerApplicationState], name: String, authenticate: ServerAuthSchemeAuthenticate): ServerAuthScheme[ServerAuthSchemeOptions, ReqRefDefaults] = (^.asInstanceOf[js.Dynamic].applyDynamic("strategy")(server.asInstanceOf[js.Any], name.asInstanceOf[js.Any], authenticate.asInstanceOf[js.Any])).asInstanceOf[ServerAuthScheme[ServerAuthSchemeOptions, ReqRefDefaults]]
     
     type ServerAuthSchemeAuthenticate = js.Function2[
         /* request */ Request[ReqRefDefaults], 
@@ -79,31 +81,31 @@ object mod {
   
   @JSImport("@hapipal/toys", "noop")
   @js.native
-  val noop: Plugin[Any] = js.native
+  val noop: Plugin[Any, Unit] = js.native
   
-  inline def onCredentials(method: Method[ReqRefDefaults, ReturnValue[ReqRefDefaults]]): ServerExtEventsObject = ^.asInstanceOf[js.Dynamic].applyDynamic("onCredentials")(method.asInstanceOf[js.Any]).asInstanceOf[ServerExtEventsObject]
-  inline def onCredentials(method: Method[ReqRefDefaults, ReturnValue[ReqRefDefaults]], options: ServerExtOptions): ServerExtEventsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("onCredentials")(method.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ServerExtEventsObject]
+  inline def onCredentials(method: Method[ReqRefDefaults, ReturnValue[ReqRefDefaults]]): ServerExtEventsObject[ServerApplicationState] = ^.asInstanceOf[js.Dynamic].applyDynamic("onCredentials")(method.asInstanceOf[js.Any]).asInstanceOf[ServerExtEventsObject[ServerApplicationState]]
+  inline def onCredentials(method: Method[ReqRefDefaults, ReturnValue[ReqRefDefaults]], options: ServerExtOptions): ServerExtEventsObject[ServerApplicationState] = (^.asInstanceOf[js.Dynamic].applyDynamic("onCredentials")(method.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ServerExtEventsObject[ServerApplicationState]]
   
-  inline def onPostAuth(method: Method[ReqRefDefaults, ReturnValue[ReqRefDefaults]]): ServerExtEventsObject = ^.asInstanceOf[js.Dynamic].applyDynamic("onPostAuth")(method.asInstanceOf[js.Any]).asInstanceOf[ServerExtEventsObject]
-  inline def onPostAuth(method: Method[ReqRefDefaults, ReturnValue[ReqRefDefaults]], options: ServerExtOptions): ServerExtEventsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("onPostAuth")(method.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ServerExtEventsObject]
+  inline def onPostAuth(method: Method[ReqRefDefaults, ReturnValue[ReqRefDefaults]]): ServerExtEventsObject[ServerApplicationState] = ^.asInstanceOf[js.Dynamic].applyDynamic("onPostAuth")(method.asInstanceOf[js.Any]).asInstanceOf[ServerExtEventsObject[ServerApplicationState]]
+  inline def onPostAuth(method: Method[ReqRefDefaults, ReturnValue[ReqRefDefaults]], options: ServerExtOptions): ServerExtEventsObject[ServerApplicationState] = (^.asInstanceOf[js.Dynamic].applyDynamic("onPostAuth")(method.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ServerExtEventsObject[ServerApplicationState]]
   
-  inline def onPostHandler(method: Method[ReqRefDefaults, ReturnValue[ReqRefDefaults]]): ServerExtEventsObject = ^.asInstanceOf[js.Dynamic].applyDynamic("onPostHandler")(method.asInstanceOf[js.Any]).asInstanceOf[ServerExtEventsObject]
-  inline def onPostHandler(method: Method[ReqRefDefaults, ReturnValue[ReqRefDefaults]], options: ServerExtOptions): ServerExtEventsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("onPostHandler")(method.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ServerExtEventsObject]
+  inline def onPostHandler(method: Method[ReqRefDefaults, ReturnValue[ReqRefDefaults]]): ServerExtEventsObject[ServerApplicationState] = ^.asInstanceOf[js.Dynamic].applyDynamic("onPostHandler")(method.asInstanceOf[js.Any]).asInstanceOf[ServerExtEventsObject[ServerApplicationState]]
+  inline def onPostHandler(method: Method[ReqRefDefaults, ReturnValue[ReqRefDefaults]], options: ServerExtOptions): ServerExtEventsObject[ServerApplicationState] = (^.asInstanceOf[js.Dynamic].applyDynamic("onPostHandler")(method.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ServerExtEventsObject[ServerApplicationState]]
   
-  inline def onPostResponse(method: Method[ReqRefDefaults, ReturnValue[ReqRefDefaults]]): ServerExtEventsObject = ^.asInstanceOf[js.Dynamic].applyDynamic("onPostResponse")(method.asInstanceOf[js.Any]).asInstanceOf[ServerExtEventsObject]
-  inline def onPostResponse(method: Method[ReqRefDefaults, ReturnValue[ReqRefDefaults]], options: ServerExtOptions): ServerExtEventsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("onPostResponse")(method.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ServerExtEventsObject]
+  inline def onPostResponse(method: Method[ReqRefDefaults, ReturnValue[ReqRefDefaults]]): ServerExtEventsObject[ServerApplicationState] = ^.asInstanceOf[js.Dynamic].applyDynamic("onPostResponse")(method.asInstanceOf[js.Any]).asInstanceOf[ServerExtEventsObject[ServerApplicationState]]
+  inline def onPostResponse(method: Method[ReqRefDefaults, ReturnValue[ReqRefDefaults]], options: ServerExtOptions): ServerExtEventsObject[ServerApplicationState] = (^.asInstanceOf[js.Dynamic].applyDynamic("onPostResponse")(method.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ServerExtEventsObject[ServerApplicationState]]
   
-  inline def onPreAuth(method: Method[ReqRefDefaults, ReturnValue[ReqRefDefaults]]): ServerExtEventsObject = ^.asInstanceOf[js.Dynamic].applyDynamic("onPreAuth")(method.asInstanceOf[js.Any]).asInstanceOf[ServerExtEventsObject]
-  inline def onPreAuth(method: Method[ReqRefDefaults, ReturnValue[ReqRefDefaults]], options: ServerExtOptions): ServerExtEventsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("onPreAuth")(method.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ServerExtEventsObject]
+  inline def onPreAuth(method: Method[ReqRefDefaults, ReturnValue[ReqRefDefaults]]): ServerExtEventsObject[ServerApplicationState] = ^.asInstanceOf[js.Dynamic].applyDynamic("onPreAuth")(method.asInstanceOf[js.Any]).asInstanceOf[ServerExtEventsObject[ServerApplicationState]]
+  inline def onPreAuth(method: Method[ReqRefDefaults, ReturnValue[ReqRefDefaults]], options: ServerExtOptions): ServerExtEventsObject[ServerApplicationState] = (^.asInstanceOf[js.Dynamic].applyDynamic("onPreAuth")(method.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ServerExtEventsObject[ServerApplicationState]]
   
-  inline def onPreHandler(method: Method[ReqRefDefaults, ReturnValue[ReqRefDefaults]]): ServerExtEventsObject = ^.asInstanceOf[js.Dynamic].applyDynamic("onPreHandler")(method.asInstanceOf[js.Any]).asInstanceOf[ServerExtEventsObject]
-  inline def onPreHandler(method: Method[ReqRefDefaults, ReturnValue[ReqRefDefaults]], options: ServerExtOptions): ServerExtEventsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("onPreHandler")(method.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ServerExtEventsObject]
+  inline def onPreHandler(method: Method[ReqRefDefaults, ReturnValue[ReqRefDefaults]]): ServerExtEventsObject[ServerApplicationState] = ^.asInstanceOf[js.Dynamic].applyDynamic("onPreHandler")(method.asInstanceOf[js.Any]).asInstanceOf[ServerExtEventsObject[ServerApplicationState]]
+  inline def onPreHandler(method: Method[ReqRefDefaults, ReturnValue[ReqRefDefaults]], options: ServerExtOptions): ServerExtEventsObject[ServerApplicationState] = (^.asInstanceOf[js.Dynamic].applyDynamic("onPreHandler")(method.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ServerExtEventsObject[ServerApplicationState]]
   
-  inline def onPreResponse(method: Method[ReqRefDefaults, ReturnValue[ReqRefDefaults]]): ServerExtEventsObject = ^.asInstanceOf[js.Dynamic].applyDynamic("onPreResponse")(method.asInstanceOf[js.Any]).asInstanceOf[ServerExtEventsObject]
-  inline def onPreResponse(method: Method[ReqRefDefaults, ReturnValue[ReqRefDefaults]], options: ServerExtOptions): ServerExtEventsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("onPreResponse")(method.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ServerExtEventsObject]
+  inline def onPreResponse(method: Method[ReqRefDefaults, ReturnValue[ReqRefDefaults]]): ServerExtEventsObject[ServerApplicationState] = ^.asInstanceOf[js.Dynamic].applyDynamic("onPreResponse")(method.asInstanceOf[js.Any]).asInstanceOf[ServerExtEventsObject[ServerApplicationState]]
+  inline def onPreResponse(method: Method[ReqRefDefaults, ReturnValue[ReqRefDefaults]], options: ServerExtOptions): ServerExtEventsObject[ServerApplicationState] = (^.asInstanceOf[js.Dynamic].applyDynamic("onPreResponse")(method.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ServerExtEventsObject[ServerApplicationState]]
   
-  inline def onRequest(method: Method[ReqRefDefaults, ReturnValue[ReqRefDefaults]]): ServerExtEventsObject = ^.asInstanceOf[js.Dynamic].applyDynamic("onRequest")(method.asInstanceOf[js.Any]).asInstanceOf[ServerExtEventsObject]
-  inline def onRequest(method: Method[ReqRefDefaults, ReturnValue[ReqRefDefaults]], options: ServerExtOptions): ServerExtEventsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("onRequest")(method.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ServerExtEventsObject]
+  inline def onRequest(method: Method[ReqRefDefaults, ReturnValue[ReqRefDefaults]]): ServerExtEventsObject[ServerApplicationState] = ^.asInstanceOf[js.Dynamic].applyDynamic("onRequest")(method.asInstanceOf[js.Any]).asInstanceOf[ServerExtEventsObject[ServerApplicationState]]
+  inline def onRequest(method: Method[ReqRefDefaults, ReturnValue[ReqRefDefaults]], options: ServerExtOptions): ServerExtEventsObject[ServerApplicationState] = (^.asInstanceOf[js.Dynamic].applyDynamic("onRequest")(method.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ServerExtEventsObject[ServerApplicationState]]
   
   inline def options(obj: TypesWithRealmsAndOptions): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("options")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Object]
   
@@ -240,5 +242,5 @@ object mod {
   
   type Transformer_ = StringDictionary[String]
   
-  type TypesWithRealmsAndOptions = Server_ | Request[ReqRefDefaults] | ResponseToolkit[ReqRefDefaults] | ServerRealm | ServerRoute[ReqRefDefaults]
+  type TypesWithRealmsAndOptions = Server_[ServerApplicationState] | Request[ReqRefDefaults] | ResponseToolkit[ReqRefDefaults] | ServerRealm | ServerRoute[ReqRefDefaults]
 }

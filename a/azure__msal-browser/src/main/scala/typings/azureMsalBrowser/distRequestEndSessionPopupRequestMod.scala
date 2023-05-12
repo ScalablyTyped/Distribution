@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distRequestEndSessionPopupRequestMod {
   
-  /* Inlined std.Partial<@azure/msal-common.@azure/msal-common.CommonEndSessionRequest> & {  authority :string | undefined,   mainWindowRedirectUri :string | undefined,   popupWindowAttributes :@azure/msal-browser.@azure/msal-browser/dist/request/PopupWindowAttributes.PopupWindowAttributes | undefined} */
+  /* Inlined std.Partial<std.Omit<@azure/msal-common.@azure/msal-common.CommonEndSessionRequest, 'tokenQueryParameters'>> & {  authority :string | undefined,   mainWindowRedirectUri :string | undefined,   popupWindowAttributes :@azure/msal-browser.@azure/msal-browser/dist/request/PopupWindowAttributes.PopupWindowAttributes | undefined} */
   trait EndSessionPopupRequest extends StObject {
     
     var account: js.UndefOr[AccountInfo | Null] = js.undefined

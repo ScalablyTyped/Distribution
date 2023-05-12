@@ -7,8 +7,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ResourceProvider extends StObject {
   
+  /**
+    * Creates a firewall rule for the given account
+    * @param account Account with which firewall rule request will be made.
+    * @param firewallruleInfo Firewall rule creation information
+    */
   def createFirewallRule(account: Account, firewallruleInfo: FirewallRuleInfo): Thenable[CreateFirewallRuleResponse]
   
+  /**
+    * Handles the response from the firewall rule creation request
+    * @param errorCode Error code from the firewall rule creation request
+    * @param errorMessage Error message from the firewall rule creation request
+    * @param connectionTypeId Connection type id of the firewall rule creation request
+    */
   def handleFirewallRule(errorCode: Double, errorMessage: String, connectionTypeId: String): Thenable[HandleFirewallRuleResponse]
 }
 object ResourceProvider {

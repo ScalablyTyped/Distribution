@@ -45,8 +45,8 @@ object distSrcUtilsWebSocketMessageChannelMod {
     def sendTrailer(): Unit = js.native
     def sendTrailer(err: Errorcodestringundefined): Unit = js.native
     
-    var sink: Pushable_[Any] = js.native
+    var sink: Pushable_[Any, Unit, Any] = js.native
     
-    var source: Pushable_[Any] = js.native
+    var source: Pushable_[Any, Unit, Any] = js.native
   }
 }

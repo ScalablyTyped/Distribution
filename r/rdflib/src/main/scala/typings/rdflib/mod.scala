@@ -787,17 +787,6 @@ object mod {
     inline def toString(variable: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toString")(variable.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
-  object convert {
-    
-    @JSImport("rdflib", "convert")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    inline def convertToJson(n3String: Any, jsonCallback: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("convertToJson")(n3String.asInstanceOf[js.Any], jsonCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    
-    inline def convertToNQuads(n3String: Any, nquadCallback: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("convertToNQuads")(n3String.asInstanceOf[js.Any], nquadCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  }
-  
   /* import warning: parser.TsParser#tsDeclVar Dropped IArray(graph, lit, st, namedNode, variable, blankNode, defaultGraph, literal, quad, triple) */ inline def fetcher(store: typings.rdflib.libStoreMod.default, options: Any): typings.rdflib.libFetcherMod.default = (^.asInstanceOf[js.Dynamic].applyDynamic("fetcher")(store.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.rdflib.libFetcherMod.default]
   
   inline def fromNT(str: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNT")(str.asInstanceOf[js.Any]).asInstanceOf[Any]

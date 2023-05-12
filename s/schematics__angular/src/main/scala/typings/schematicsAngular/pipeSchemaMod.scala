@@ -36,7 +36,7 @@ object pipeSchemaMod {
     /**
       * The name of the project.
       */
-    var project: js.UndefOr[String] = js.undefined
+    var project: String
     
     /**
       * Do not import this pipe into the owning NgModule.
@@ -55,8 +55,8 @@ object pipeSchemaMod {
   }
   object Schema {
     
-    inline def apply(name: String): Schema = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    inline def apply(name: String, project: String): Schema = {
+      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any])
       __obj.asInstanceOf[Schema]
     }
     
@@ -82,8 +82,6 @@ object pipeSchemaMod {
       inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
       inline def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
-      
-      inline def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
       
       inline def setSkipImport(value: Boolean): Self = StObject.set(x, "skipImport", value.asInstanceOf[js.Any])
       

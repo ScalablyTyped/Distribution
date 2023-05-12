@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteRepositoryRequest extends StObject {
   
   /**
-    *  If a repository contains images, forces the deletion.
+    *  The force option can be used to delete a repository that contains images. If the force option is not used, the repository must be empty prior to deletion.
     */
   var force: js.UndefOr[ForceFlag] = js.undefined
   
   /**
-    * The AWS account ID associated with the public registry that contains the repository to delete. If you do not specify a registry, the default public registry is assumed.
+    * The Amazon Web Services account ID that's associated with the public registry that contains the repository to delete. If you do not specify a registry, the default public registry is assumed.
     */
   var registryId: js.UndefOr[RegistryId] = js.undefined
   

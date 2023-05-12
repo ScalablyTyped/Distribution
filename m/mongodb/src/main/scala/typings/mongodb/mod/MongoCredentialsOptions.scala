@@ -16,12 +16,12 @@ trait MongoCredentialsOptions extends StObject {
   
   var source: String
   
-  var username: String
+  var username: js.UndefOr[String] = js.undefined
 }
 object MongoCredentialsOptions {
   
-  inline def apply(mechanismProperties: AuthMechanismProperties, password: String, source: String, username: String): MongoCredentialsOptions = {
-    val __obj = js.Dynamic.literal(mechanismProperties = mechanismProperties.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
+  inline def apply(mechanismProperties: AuthMechanismProperties, password: String, source: String): MongoCredentialsOptions = {
+    val __obj = js.Dynamic.literal(mechanismProperties = mechanismProperties.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
     __obj.asInstanceOf[MongoCredentialsOptions]
   }
   
@@ -43,5 +43,7 @@ object MongoCredentialsOptions {
     inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    
+    inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
   }
 }

@@ -1,13 +1,12 @@
 package typings.angularCompilerCli
 
 import typings.angularCompiler.mod.Expression
+import typings.angularCompilerCli.anon.ClassDeclarationDeclarati
 import typings.angularCompilerCli.srcNgtscCoreApiSrcInterfacesMod.UnifiedModulesHost
 import typings.angularCompilerCli.srcNgtscImportsSrcEmitterMod.ImportFlags
 import typings.angularCompilerCli.srcNgtscImportsSrcEmitterMod.ReferenceEmitResult
 import typings.angularCompilerCli.srcNgtscImportsSrcEmitterMod.ReferenceEmitStrategy
 import typings.angularCompilerCli.srcNgtscImportsSrcReferencesMod.Reference
-import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.ClassDeclaration
-import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.DeclarationNode
 import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.ReflectionHost
 import typings.typescript.mod.Node
 import typings.typescript.mod.SourceFile
@@ -76,11 +75,11 @@ object srcNgtscImportsSrcAliasMod {
       * @param via the `ts.SourceFile` which might contain an alias to the
       */
     /* CompleteClass */
-    override def getAliasIn(decl: ClassDeclaration[DeclarationNode], via: SourceFile, isReExport: Boolean): Expression | Null = js.native
+    override def getAliasIn(decl: ClassDeclarationDeclarati, via: SourceFile, isReExport: Boolean): Expression | Null = js.native
     
     /* private */ var host: Any = js.native
     
-    def maybeAliasSymbolAs(ref: Reference[ClassDeclaration[DeclarationNode]], context: SourceFile, ngModuleName: String): String | Null = js.native
+    def maybeAliasSymbolAs(ref: Reference[ClassDeclarationDeclarati], context: SourceFile, ngModuleName: String): String | Null = js.native
     /**
       * Determine a name by which `decl` should be re-exported from `context`, depending on the
       * particular set of aliasing rules in place.
@@ -96,7 +95,7 @@ object srcNgtscImportsSrcAliasMod {
       */
     /* CompleteClass */
     override def maybeAliasSymbolAs(
-      ref: Reference[ClassDeclaration[DeclarationNode]],
+      ref: Reference[ClassDeclarationDeclarati],
       context: SourceFile,
       ngModuleName: String,
       isReExport: Boolean
@@ -137,7 +136,7 @@ object srcNgtscImportsSrcAliasMod {
       * @param via the `ts.SourceFile` which might contain an alias to the
       */
     /* CompleteClass */
-    override def getAliasIn(decl: ClassDeclaration[DeclarationNode], via: SourceFile, isReExport: Boolean): Expression | Null = js.native
+    override def getAliasIn(decl: ClassDeclarationDeclarati, via: SourceFile, isReExport: Boolean): Expression | Null = js.native
     
     /**
       * Determine a name by which `decl` should be re-exported from `context`, depending on the
@@ -154,7 +153,7 @@ object srcNgtscImportsSrcAliasMod {
       */
     /* CompleteClass */
     override def maybeAliasSymbolAs(
-      ref: Reference[ClassDeclaration[DeclarationNode]],
+      ref: Reference[ClassDeclarationDeclarati],
       context: SourceFile,
       ngModuleName: String,
       isReExport: Boolean
@@ -184,7 +183,7 @@ object srcNgtscImportsSrcAliasMod {
       * aliased.
       * @param via the `ts.SourceFile` which might contain an alias to the
       */
-    def getAliasIn(decl: ClassDeclaration[DeclarationNode], via: SourceFile, isReExport: Boolean): Expression | Null
+    def getAliasIn(decl: ClassDeclarationDeclarati, via: SourceFile, isReExport: Boolean): Expression | Null
     
     /**
       * Determine a name by which `decl` should be re-exported from `context`, depending on the
@@ -200,7 +199,7 @@ object srcNgtscImportsSrcAliasMod {
       * NgModule (as opposed to being declared by it directly).
       */
     def maybeAliasSymbolAs(
-      ref: Reference[ClassDeclaration[DeclarationNode]],
+      ref: Reference[ClassDeclarationDeclarati],
       context: SourceFile,
       ngModuleName: String,
       isReExport: Boolean
@@ -210,8 +209,8 @@ object srcNgtscImportsSrcAliasMod {
     
     inline def apply(
       aliasExportsInDts: Boolean,
-      getAliasIn: (ClassDeclaration[DeclarationNode], SourceFile, Boolean) => Expression | Null,
-      maybeAliasSymbolAs: (Reference[ClassDeclaration[DeclarationNode]], SourceFile, String, Boolean) => String | Null
+      getAliasIn: (ClassDeclarationDeclarati, SourceFile, Boolean) => Expression | Null,
+      maybeAliasSymbolAs: (Reference[ClassDeclarationDeclarati], SourceFile, String, Boolean) => String | Null
     ): AliasingHost = {
       val __obj = js.Dynamic.literal(aliasExportsInDts = aliasExportsInDts.asInstanceOf[js.Any], getAliasIn = js.Any.fromFunction3(getAliasIn), maybeAliasSymbolAs = js.Any.fromFunction4(maybeAliasSymbolAs))
       __obj.asInstanceOf[AliasingHost]
@@ -222,11 +221,9 @@ object srcNgtscImportsSrcAliasMod {
       
       inline def setAliasExportsInDts(value: Boolean): Self = StObject.set(x, "aliasExportsInDts", value.asInstanceOf[js.Any])
       
-      inline def setGetAliasIn(value: (ClassDeclaration[DeclarationNode], SourceFile, Boolean) => Expression | Null): Self = StObject.set(x, "getAliasIn", js.Any.fromFunction3(value))
+      inline def setGetAliasIn(value: (ClassDeclarationDeclarati, SourceFile, Boolean) => Expression | Null): Self = StObject.set(x, "getAliasIn", js.Any.fromFunction3(value))
       
-      inline def setMaybeAliasSymbolAs(
-        value: (Reference[ClassDeclaration[DeclarationNode]], SourceFile, String, Boolean) => String | Null
-      ): Self = StObject.set(x, "maybeAliasSymbolAs", js.Any.fromFunction4(value))
+      inline def setMaybeAliasSymbolAs(value: (Reference[ClassDeclarationDeclarati], SourceFile, String, Boolean) => String | Null): Self = StObject.set(x, "maybeAliasSymbolAs", js.Any.fromFunction4(value))
     }
   }
 }

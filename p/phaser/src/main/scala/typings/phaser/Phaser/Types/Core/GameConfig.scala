@@ -1,8 +1,8 @@
 package typings.phaser.Phaser.Types.Core
 
-import typings.phaser.Phaser.Scene
-import typings.phaser.Phaser.Types.Scenes.CreateSceneFromObjectConfig
-import typings.phaser.Phaser.Types.Scenes.SettingsConfig
+import typings.phaser.Phaser.Scale.CenterType
+import typings.phaser.Phaser.Scale.ScaleModeType
+import typings.phaser.Phaser.Types.Scenes.SceneType
 import typings.std.CanvasRenderingContext2D
 import typings.std.HTMLCanvasElement
 import typings.std.HTMLElement
@@ -28,9 +28,24 @@ trait GameConfig extends StObject {
   var audio: js.UndefOr[AudioConfig] = js.undefined
   
   /**
+    * Automatically center the canvas within the parent?
+    */
+  var autoCenter: js.UndefOr[CenterType] = js.undefined
+  
+  /**
     * Automatically call window.focus() when the game boots. Usually necessary to capture input events if the game is in a separate frame.
     */
   var autoFocus: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Automatically enable the Mobile Pipeline if iOS or Android detected?
+    */
+  var autoMobilePipeline: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Automatically round the display and style sizes of the canvas. This can help with performance in lower-powered devices.
+    */
+  var autoRound: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The background color of the game canvas. The default is black.
@@ -78,6 +93,11 @@ trait GameConfig extends StObject {
   var customEnvironment: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * The WebGL Pipeline that Game Objects will use by default. Set to 'MultiPipeline' as standard.
+    */
+  var defaultPipeline: js.UndefOr[String] = js.undefined
+  
+  /**
     * When set to `true` it will create a desynchronized context for both 2D and WebGL. See https://developers.google.com/web/updates/2019/05/desynchronized for details.
     */
   var desynchronized: js.UndefOr[Boolean] = js.undefined
@@ -93,6 +113,11 @@ trait GameConfig extends StObject {
   var dom: js.UndefOr[DOMContainerConfig] = js.undefined
   
   /**
+    * Is the Scale Manager allowed to adjust the CSS height property of the parent and/or document body to be 100%?
+    */
+  var expandParent: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * Let the browser abort creating a WebGL context if it judges performance would be unacceptable.
     */
   var failIfMajorPerformanceCaveat: js.UndefOr[Boolean] = js.undefined
@@ -101,6 +126,11 @@ trait GameConfig extends StObject {
     * Game loop configuration.
     */
   var fps: js.UndefOr[FPSConfig] = js.undefined
+  
+  /**
+    * The DOM element that will be sent into full screen mode, or its `id`. If undefined Phaser will create its own div and insert the canvas into it when entering fullscreen mode.
+    */
+  var fullscreenTarget: js.UndefOr[HTMLElement | String | Null] = js.undefined
   
   /**
     * The height of the game, in game pixels.
@@ -123,6 +153,11 @@ trait GameConfig extends StObject {
   var loader: js.UndefOr[LoaderConfig] = js.undefined
   
   /**
+    * The maximum width the canvas can be scaled up to.
+    */
+  var max: js.UndefOr[WidthHeight] = js.undefined
+  
+  /**
     * The maximum number of lights allowed to be visible within range of a single Camera in the LightManager.
     */
   var maxLights: js.UndefOr[Double] = js.undefined
@@ -133,9 +168,19 @@ trait GameConfig extends StObject {
   var maxTextures: js.UndefOr[Double] = js.undefined
   
   /**
+    * The minimum width and height the canvas can be scaled down to.
+    */
+  var min: js.UndefOr[WidthHeight] = js.undefined
+  
+  /**
     * The mipmap magFilter to be used when creating WebGL textures.
     */
   var mipmapFilter: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The scale mode.
+    */
+  var mode: js.UndefOr[ScaleModeType] = js.undefined
   
   /**
     * The DOM element that will contain the game canvas, or its `id`. If undefined, or if the named element doesn't exist, the game canvas is appended to the document body. If `null` no parent will be used and you are responsible for adding the canvas to the dom.
@@ -183,6 +228,11 @@ trait GameConfig extends StObject {
   var render: js.UndefOr[RenderConfig] = js.undefined
   
   /**
+    * How many ms should elapse before checking if the browser size has changed?
+    */
+  var resizeInterval: js.UndefOr[Double] = js.undefined
+  
+  /**
     * Draw texture-based Game Objects at only whole-integer positions. Game Objects without textures, like Graphics, ignore this property.
     */
   var roundPixels: js.UndefOr[Boolean] = js.undefined
@@ -195,14 +245,17 @@ trait GameConfig extends StObject {
   /**
     * A scene or scenes to add to the game. If several are given, the first is started; the remainder are started only if they have `{ active: true }`. See the `sceneConfig` argument in `Phaser.Scenes.SceneManager#add`.
     */
-  var scene: js.UndefOr[
-    Scene | (js.Array[CreateSceneFromObjectConfig | js.Function | Scene | SettingsConfig]) | SettingsConfig | CreateSceneFromObjectConfig | js.Function
-  ] = js.undefined
+  var scene: js.UndefOr[SceneType | js.Array[SceneType]] = js.undefined
   
   /**
     * Seed for the random number generator.
     */
   var seed: js.UndefOr[js.Array[String]] = js.undefined
+  
+  /**
+    * `true` or `1` = Use the built-in StableSort (needed for older browsers), `false` or `0` = Rely on ES2019 Array.sort being stable (modern browsers only), or `-1` = Try and determine this automatically based on browser inspection (not guaranteed to work, errs on side of caution).
+    */
+  var stableSort: js.UndefOr[Double | Boolean] = js.undefined
   
   /**
     * The title of the game. Shown in the browser console.
@@ -261,9 +314,21 @@ object GameConfig {
     
     inline def setAudioUndefined: Self = StObject.set(x, "audio", js.undefined)
     
+    inline def setAutoCenter(value: CenterType): Self = StObject.set(x, "autoCenter", value.asInstanceOf[js.Any])
+    
+    inline def setAutoCenterUndefined: Self = StObject.set(x, "autoCenter", js.undefined)
+    
     inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
     
     inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+    
+    inline def setAutoMobilePipeline(value: Boolean): Self = StObject.set(x, "autoMobilePipeline", value.asInstanceOf[js.Any])
+    
+    inline def setAutoMobilePipelineUndefined: Self = StObject.set(x, "autoMobilePipeline", js.undefined)
+    
+    inline def setAutoRound(value: Boolean): Self = StObject.set(x, "autoRound", value.asInstanceOf[js.Any])
+    
+    inline def setAutoRoundUndefined: Self = StObject.set(x, "autoRound", js.undefined)
     
     inline def setBackgroundColor(value: String | Double): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
@@ -301,6 +366,10 @@ object GameConfig {
     
     inline def setCustomEnvironmentUndefined: Self = StObject.set(x, "customEnvironment", js.undefined)
     
+    inline def setDefaultPipeline(value: String): Self = StObject.set(x, "defaultPipeline", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultPipelineUndefined: Self = StObject.set(x, "defaultPipeline", js.undefined)
+    
     inline def setDesynchronized(value: Boolean): Self = StObject.set(x, "desynchronized", value.asInstanceOf[js.Any])
     
     inline def setDesynchronizedUndefined: Self = StObject.set(x, "desynchronized", js.undefined)
@@ -313,6 +382,10 @@ object GameConfig {
     
     inline def setDomUndefined: Self = StObject.set(x, "dom", js.undefined)
     
+    inline def setExpandParent(value: Boolean): Self = StObject.set(x, "expandParent", value.asInstanceOf[js.Any])
+    
+    inline def setExpandParentUndefined: Self = StObject.set(x, "expandParent", js.undefined)
+    
     inline def setFailIfMajorPerformanceCaveat(value: Boolean): Self = StObject.set(x, "failIfMajorPerformanceCaveat", value.asInstanceOf[js.Any])
     
     inline def setFailIfMajorPerformanceCaveatUndefined: Self = StObject.set(x, "failIfMajorPerformanceCaveat", js.undefined)
@@ -320,6 +393,12 @@ object GameConfig {
     inline def setFps(value: FPSConfig): Self = StObject.set(x, "fps", value.asInstanceOf[js.Any])
     
     inline def setFpsUndefined: Self = StObject.set(x, "fps", js.undefined)
+    
+    inline def setFullscreenTarget(value: HTMLElement | String): Self = StObject.set(x, "fullscreenTarget", value.asInstanceOf[js.Any])
+    
+    inline def setFullscreenTargetNull: Self = StObject.set(x, "fullscreenTarget", null)
+    
+    inline def setFullscreenTargetUndefined: Self = StObject.set(x, "fullscreenTarget", js.undefined)
     
     inline def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
@@ -337,6 +416,8 @@ object GameConfig {
     
     inline def setLoaderUndefined: Self = StObject.set(x, "loader", js.undefined)
     
+    inline def setMax(value: WidthHeight): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    
     inline def setMaxLights(value: Double): Self = StObject.set(x, "maxLights", value.asInstanceOf[js.Any])
     
     inline def setMaxLightsUndefined: Self = StObject.set(x, "maxLights", js.undefined)
@@ -345,9 +426,19 @@ object GameConfig {
     
     inline def setMaxTexturesUndefined: Self = StObject.set(x, "maxTextures", js.undefined)
     
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    
+    inline def setMin(value: WidthHeight): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    
+    inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+    
     inline def setMipmapFilter(value: String): Self = StObject.set(x, "mipmapFilter", value.asInstanceOf[js.Any])
     
     inline def setMipmapFilterUndefined: Self = StObject.set(x, "mipmapFilter", js.undefined)
+    
+    inline def setMode(value: ScaleModeType): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
     inline def setParent(value: HTMLElement | String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
@@ -387,6 +478,10 @@ object GameConfig {
     
     inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
     
+    inline def setResizeInterval(value: Double): Self = StObject.set(x, "resizeInterval", value.asInstanceOf[js.Any])
+    
+    inline def setResizeIntervalUndefined: Self = StObject.set(x, "resizeInterval", js.undefined)
+    
     inline def setRoundPixels(value: Boolean): Self = StObject.set(x, "roundPixels", value.asInstanceOf[js.Any])
     
     inline def setRoundPixelsUndefined: Self = StObject.set(x, "roundPixels", js.undefined)
@@ -395,19 +490,21 @@ object GameConfig {
     
     inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
-    inline def setScene(
-      value: Scene | (js.Array[CreateSceneFromObjectConfig | js.Function | Scene | SettingsConfig]) | SettingsConfig | CreateSceneFromObjectConfig | js.Function
-    ): Self = StObject.set(x, "scene", value.asInstanceOf[js.Any])
+    inline def setScene(value: SceneType | js.Array[SceneType]): Self = StObject.set(x, "scene", value.asInstanceOf[js.Any])
     
     inline def setSceneUndefined: Self = StObject.set(x, "scene", js.undefined)
     
-    inline def setSceneVarargs(value: (CreateSceneFromObjectConfig | js.Function | Scene | SettingsConfig)*): Self = StObject.set(x, "scene", js.Array(value*))
+    inline def setSceneVarargs(value: SceneType*): Self = StObject.set(x, "scene", js.Array(value*))
     
     inline def setSeed(value: js.Array[String]): Self = StObject.set(x, "seed", value.asInstanceOf[js.Any])
     
     inline def setSeedUndefined: Self = StObject.set(x, "seed", js.undefined)
     
     inline def setSeedVarargs(value: String*): Self = StObject.set(x, "seed", js.Array(value*))
+    
+    inline def setStableSort(value: Double | Boolean): Self = StObject.set(x, "stableSort", value.asInstanceOf[js.Any])
+    
+    inline def setStableSortUndefined: Self = StObject.set(x, "stableSort", js.undefined)
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     

@@ -51,7 +51,7 @@ trait SliceViewModel
   var shape: SlicePlane = js.native
   
   /**
-    * Starts the interactive placement of a new slice, clearing the previous [shape](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slice-SliceViewModel.html#shape).
+    * Starts the interactive creation of a new slice, clearing the previous [shape](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slice-SliceViewModel.html#shape).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slice-SliceViewModel.html#start)
     */

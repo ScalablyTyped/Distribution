@@ -44,6 +44,10 @@ trait PBRMaterialDefines
   
   var BonesPerMesh: Double = js.native
   
+  var CAMERA_ORTHOGRAPHIC: Boolean = js.native
+  
+  var CAMERA_PERSPECTIVE: Boolean = js.native
+  
   var CLIPPLANE: Boolean = js.native
   
   var CLIPPLANE2: Boolean = js.native

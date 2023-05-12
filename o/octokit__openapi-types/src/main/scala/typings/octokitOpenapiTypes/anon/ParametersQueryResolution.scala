@@ -8,11 +8,11 @@ trait ParametersQueryResolution extends StObject {
   
   var parameters: QueryResolution
   
-  var responses: `404503`
+  var responses: `503`
 }
 object ParametersQueryResolution {
   
-  inline def apply(parameters: QueryResolution, responses: `404503`): ParametersQueryResolution = {
+  inline def apply(parameters: QueryResolution, responses: `503`): ParametersQueryResolution = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersQueryResolution]
   }
@@ -22,6 +22,6 @@ object ParametersQueryResolution {
     
     inline def setParameters(value: QueryResolution): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `404503`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `503`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

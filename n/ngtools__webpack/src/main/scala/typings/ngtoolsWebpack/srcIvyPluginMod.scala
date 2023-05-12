@@ -26,8 +26,6 @@ object srcIvyPluginMod {
     
     /* private */ var compilerCliModule: Any = js.native
     
-    /* private */ var compilerNgccModule: Any = js.native
-    
     /* private */ var createFileEmitter: Any = js.native
     
     /* private */ val fileDependencies: Any = js.native

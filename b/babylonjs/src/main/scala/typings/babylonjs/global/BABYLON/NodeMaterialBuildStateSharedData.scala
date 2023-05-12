@@ -1,6 +1,7 @@
 package typings.babylonjs.global.BABYLON
 
 import typings.babylonjs.BABYLON.Immutable
+import typings.babylonjs.BABYLON.NodeMaterialTextureBlocks
 import typings.babylonjs.anon.EmitVertex
 import typings.babylonjs.anon.NeedAlphaBlending
 import org.scalablytyped.runtime.StObject
@@ -126,9 +127,7 @@ open class NodeMaterialBuildStateSharedData ()
     * Input blocks
     */
   /* CompleteClass */
-  var textureBlocks: js.Array[
-    typings.babylonjs.BABYLON.ImageSourceBlock | typings.babylonjs.BABYLON.TextureBlock | typings.babylonjs.BABYLON.ReflectionTextureBaseBlock | typings.babylonjs.BABYLON.RefractionBlock | typings.babylonjs.BABYLON.CurrentScreenBlock | typings.babylonjs.BABYLON.ParticleTextureBlock
-  ] = js.native
+  var textureBlocks: js.Array[NodeMaterialTextureBlocks] = js.native
   
   /** List of emitted variables */
   /* CompleteClass */

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "vectorious" : "6.1.4"
+      "vectorious" : "6.1.6"
     }
   ],
   "test-dependencies" : [
     {
-      "vectorious" : "6.1.4"
+      "vectorious" : "6.1.6"
     }
   ],
   "compile-devDependencies" : [

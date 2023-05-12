@@ -1,6 +1,7 @@
 package typings.prompts
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.kleur.mod.Kleur
 import typings.node.streamMod.Readable
 import typings.node.streamMod.Writable
 import typings.prompts.promptsBooleans.`false`
@@ -178,6 +179,8 @@ object mod {
     
     var name: ValueOrFunc[T]
     
+    var onRender: js.UndefOr[js.Function1[/* kleur */ Kleur, Unit]] = js.undefined
+    
     var onState: js.UndefOr[PrevCaller[T, Unit]] = js.undefined
     
     var round: js.UndefOr[Double | (PrevCaller[T, Double | Falsy])] = js.undefined
@@ -315,6 +318,10 @@ object mod {
       inline def setName(value: ValueOrFunc[T]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       inline def setNameFunction3(value: (/* prev */ Any, /* values */ Answers[T], /* prompt */ PromptObject[String]) => T): Self = StObject.set(x, "name", js.Any.fromFunction3(value))
+      
+      inline def setOnRender(value: /* kleur */ Kleur => Unit): Self = StObject.set(x, "onRender", js.Any.fromFunction1(value))
+      
+      inline def setOnRenderUndefined: Self = StObject.set(x, "onRender", js.undefined)
       
       inline def setOnState(value: (/* prev */ Any, /* values */ Answers[T], /* prompt */ PromptObject[String]) => Unit): Self = StObject.set(x, "onState", js.Any.fromFunction3(value))
       

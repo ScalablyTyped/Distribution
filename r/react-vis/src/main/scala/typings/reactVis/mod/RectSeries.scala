@@ -10,7 +10,7 @@ open class RectSeries protected () extends AbstractSeries[RectSeriesProps] {
   def this(props: RectSeriesProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: RectSeriesProps, context: Any) = this()
 }

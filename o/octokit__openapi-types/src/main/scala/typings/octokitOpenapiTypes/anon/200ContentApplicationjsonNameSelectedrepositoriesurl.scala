@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `200ContentApplicationjsonNameSelectedrepositoriesurl` extends StObject {
   
-  /** Response */
+  /** @description Response */
   var `200`: ContentApplicationjsonNameSelectedrepositoriesurl
 }
 object `200ContentApplicationjsonNameSelectedrepositoriesurl` {

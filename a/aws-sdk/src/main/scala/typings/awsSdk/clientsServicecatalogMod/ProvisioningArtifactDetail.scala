@@ -37,6 +37,11 @@ trait ProvisioningArtifactDetail extends StObject {
   var Name: js.UndefOr[ProvisioningArtifactName] = js.undefined
   
   /**
+    * Specifies the revision of the external artifact that was used to automatically sync the Service Catalog product and create the provisioning artifact. Service Catalog includes this response parameter as a high level field to the existing ProvisioningArtifactDetail type, which is returned as part of the response for CreateProduct, UpdateProduct, DescribeProductAsAdmin, DescribeProvisioningArtifact, ListProvisioningArtifact, and UpdateProvisioningArticat APIs.  This field only exists for Repo-Synced products. 
+    */
+  var SourceRevision: js.UndefOr[typings.awsSdk.clientsServicecatalogMod.SourceRevision] = js.undefined
+  
+  /**
     * The type of provisioning artifact.    CLOUD_FORMATION_TEMPLATE - CloudFormation template    MARKETPLACE_AMI - Amazon Web Services Marketplace AMI    MARKETPLACE_CAR - Amazon Web Services Marketplace Clusters and Amazon Web Services Resources  
     */
   var Type: js.UndefOr[ProvisioningArtifactType] = js.undefined
@@ -74,6 +79,10 @@ object ProvisioningArtifactDetail {
     inline def setName(value: ProvisioningArtifactName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    
+    inline def setSourceRevision(value: SourceRevision): Self = StObject.set(x, "SourceRevision", value.asInstanceOf[js.Any])
+    
+    inline def setSourceRevisionUndefined: Self = StObject.set(x, "SourceRevision", js.undefined)
     
     inline def setType(value: ProvisioningArtifactType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     

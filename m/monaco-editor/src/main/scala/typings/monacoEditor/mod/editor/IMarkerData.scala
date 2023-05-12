@@ -17,6 +17,8 @@ trait IMarkerData extends StObject {
   
   var message: String
   
+  var modelVersionId: js.UndefOr[Double] = js.undefined
+  
   var relatedInformation: js.UndefOr[js.Array[IRelatedInformation]] = js.undefined
   
   var severity: MarkerSeverity
@@ -55,6 +57,10 @@ object IMarkerData {
     inline def setEndLineNumber(value: Double): Self = StObject.set(x, "endLineNumber", value.asInstanceOf[js.Any])
     
     inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    
+    inline def setModelVersionId(value: Double): Self = StObject.set(x, "modelVersionId", value.asInstanceOf[js.Any])
+    
+    inline def setModelVersionIdUndefined: Self = StObject.set(x, "modelVersionId", js.undefined)
     
     inline def setRelatedInformation(value: js.Array[IRelatedInformation]): Self = StObject.set(x, "relatedInformation", value.asInstanceOf[js.Any])
     

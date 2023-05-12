@@ -95,6 +95,15 @@ object libColorMatrixFilterMod {
     /** Desaturate image (remove color) Call the saturate function */
     def desaturate(): Unit = js.native
     
+    /**
+      * Americanized alias of greyscale.
+      * @method
+      * @param scale - value of the grey (0-1, where 0 is black)
+      * @param multiply - if true, current matrix and matrix are multiplied. If false,
+      *  just set the current matrix with @param matrix
+      * @returns {void}
+      * @see PIXI.ColorMatrixFilter.greyscale
+      */
     def grayscale(scale: Double, multiply: Boolean): Unit = js.native
     
     /**

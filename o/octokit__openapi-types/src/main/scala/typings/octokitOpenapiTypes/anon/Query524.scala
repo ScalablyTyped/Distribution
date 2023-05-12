@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Query524 extends StObject {
   
-  var path: OwnerString
+  var path: OrgString
   
   var query: `524`
 }
 object Query524 {
   
-  inline def apply(path: OwnerString, query: `524`): Query524 = {
+  inline def apply(path: OrgString, query: `524`): Query524 = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
     __obj.asInstanceOf[Query524]
   }
@@ -20,7 +20,7 @@ object Query524 {
   @scala.inline
   implicit open class MutableBuilder[Self <: Query524] (val x: Self) extends AnyVal {
     
-    inline def setPath(value: OwnerString): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: OrgString): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     inline def setQuery(value: `524`): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
   }

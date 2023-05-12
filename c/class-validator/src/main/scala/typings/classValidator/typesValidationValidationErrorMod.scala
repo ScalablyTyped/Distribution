@@ -38,10 +38,18 @@ object typesValidationValidationErrorMod {
     def toString(shouldDecorate: Boolean): String = js.native
     def toString(shouldDecorate: Boolean, hasParent: Boolean): String = js.native
     def toString(shouldDecorate: Boolean, hasParent: Boolean, parentPath: String): String = js.native
+    def toString(shouldDecorate: Boolean, hasParent: Boolean, parentPath: String, showConstraintMessages: Boolean): String = js.native
+    def toString(shouldDecorate: Boolean, hasParent: Boolean, parentPath: Unit, showConstraintMessages: Boolean): String = js.native
     def toString(shouldDecorate: Boolean, hasParent: Unit, parentPath: String): String = js.native
+    def toString(shouldDecorate: Boolean, hasParent: Unit, parentPath: String, showConstraintMessages: Boolean): String = js.native
+    def toString(shouldDecorate: Boolean, hasParent: Unit, parentPath: Unit, showConstraintMessages: Boolean): String = js.native
     def toString(shouldDecorate: Unit, hasParent: Boolean): String = js.native
     def toString(shouldDecorate: Unit, hasParent: Boolean, parentPath: String): String = js.native
+    def toString(shouldDecorate: Unit, hasParent: Boolean, parentPath: String, showConstraintMessages: Boolean): String = js.native
+    def toString(shouldDecorate: Unit, hasParent: Boolean, parentPath: Unit, showConstraintMessages: Boolean): String = js.native
     def toString(shouldDecorate: Unit, hasParent: Unit, parentPath: String): String = js.native
+    def toString(shouldDecorate: Unit, hasParent: Unit, parentPath: String, showConstraintMessages: Boolean): String = js.native
+    def toString(shouldDecorate: Unit, hasParent: Unit, parentPath: Unit, showConstraintMessages: Boolean): String = js.native
     
     /**
       * Value that haven't pass a validation.

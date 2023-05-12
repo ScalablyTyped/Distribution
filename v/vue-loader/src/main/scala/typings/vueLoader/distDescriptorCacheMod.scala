@@ -1,5 +1,6 @@
 package typings.vueLoader
 
+import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,6 +10,13 @@ object distDescriptorCacheMod {
   @JSImport("vue-loader/dist/descriptorCache", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
+  
+  @JSImport("vue-loader/dist/descriptorCache", "descriptorCache")
+  @js.native
+  val descriptorCache: Map[
+    String, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SFCDescriptor */ Any
+  ] = js.native
   
   inline def getDescriptor(filename: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getDescriptor")(filename.asInstanceOf[js.Any]).asInstanceOf[Any]
   

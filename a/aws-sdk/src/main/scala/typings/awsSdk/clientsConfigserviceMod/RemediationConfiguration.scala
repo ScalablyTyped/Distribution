@@ -52,7 +52,7 @@ trait RemediationConfiguration extends StObject {
   var RetryAttemptSeconds: js.UndefOr[AutoRemediationAttemptSeconds] = js.undefined
   
   /**
-    * Target ID is the name of the public document.
+    * Target ID is the name of the SSM document.
     */
   var TargetId: StringWithCharLimit256
   

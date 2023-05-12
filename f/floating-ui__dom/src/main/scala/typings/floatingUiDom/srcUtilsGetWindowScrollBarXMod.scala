@@ -11,5 +11,5 @@ object srcUtilsGetWindowScrollBarXMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(element: Element): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def getWindowScrollBarX(element: Element): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getWindowScrollBarX")(element.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

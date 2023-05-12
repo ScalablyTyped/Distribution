@@ -6,47 +6,43 @@ import typings.postcss.libNodeMod.ChildNode
 import typings.postcss.libNodeMod.ChildProps
 import typings.postcss.libNodeMod.NodeProps
 import typings.postcss.postcssStrings.comment
+import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libCommentMod {
   
+  @JSImport("postcss/lib/comment", JSImport.Namespace)
+  @js.native
+  open class ^ ()
+    extends StObject
+       with Comment_
+  
+  /**
+    * Represents a comment between declarations or statements (rule and at-rules).
+    *
+    * ```js
+    * Once (root, { Comment }) {
+    *   let note = new Comment({ text: 'Note: …' })
+    *   root.append(note)
+    * }
+    * ```
+    *
+    * Comments inside selectors, at-rule parameters, or declaration values
+    * will be stored in the `raws` properties explained above.
+    */
   @JSImport("postcss/lib/comment", JSImport.Default)
   @js.native
   open class default ()
-    extends Comment
+    extends StObject
+       with Comment_
        with AnyNode
        with ChildNode {
     def this(defaults: CommentProps) = this()
   }
   
-  @js.native
-  trait Comment
-    extends typings.postcss.libNodeMod.default {
-    
-    def assign(overrides: CommentProps): this.type = js.native
-    
-    def clone(overrides: PartialCommentProps): this.type = js.native
-    
-    def cloneAfter(overrides: PartialCommentProps): this.type = js.native
-    
-    def cloneBefore(overrides: PartialCommentProps): this.type = js.native
-    
-    @JSName("parent")
-    var parent_Comment: js.UndefOr[typings.postcss.libContainerMod.default[ChildNode]] = js.native
-    
-    @JSName("raws")
-    var raws_Comment: CommentRaws = js.native
-    
-    /**
-      * The comment's text.
-      */
-    var text: String = js.native
-    
-    @JSName("type")
-    var type_Comment: comment = js.native
-  }
+  type Comment = Comment_
   
   trait CommentProps
     extends StObject
@@ -117,5 +113,46 @@ object libCommentMod {
       
       inline def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
     }
+  }
+  
+  /**
+    * Represents a comment between declarations or statements (rule and at-rules).
+    *
+    * ```js
+    * Once (root, { Comment }) {
+    *   let note = new Comment({ text: 'Note: …' })
+    *   root.append(note)
+    * }
+    * ```
+    *
+    * Comments inside selectors, at-rule parameters, or declaration values
+    * will be stored in the `raws` properties explained above.
+    */
+  @js.native
+  trait Comment_
+    extends StObject
+       with Node {
+    
+    def assign(overrides: js.Object): this.type = js.native
+    def assign(overrides: CommentProps): this.type = js.native
+    
+    def clone(overrides: PartialCommentProps): this.type = js.native
+    
+    def cloneAfter(): this.type = js.native
+    def cloneAfter(overrides: PartialCommentProps): this.type = js.native
+    
+    def cloneBefore(): this.type = js.native
+    def cloneBefore(overrides: PartialCommentProps): this.type = js.native
+    
+    var parent: js.UndefOr[typings.postcss.libContainerMod.default[typings.std.ChildNode]] = js.native
+    
+    var raws: CommentRaws = js.native
+    
+    /**
+      * The comment's text.
+      */
+    var text: String = js.native
+    
+    var `type`: comment = js.native
   }
 }

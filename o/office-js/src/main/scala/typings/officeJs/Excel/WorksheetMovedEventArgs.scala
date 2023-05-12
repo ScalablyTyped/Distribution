@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   as a result of that primary move.
   *
   * @remarks
-  * [Api set: ExcelApiOnline 1.1]
+  * [Api set: ExcelApi 1.17]
   */
 trait WorksheetMovedEventArgs extends StObject {
   
@@ -25,7 +25,7 @@ trait WorksheetMovedEventArgs extends StObject {
     * Gets the new position of the worksheet, after the move.
     *
     * @remarks
-    * [Api set: ExcelApiOnline 1.1]
+    * [Api set: ExcelApi 1.17]
     */
   var positionAfter: Double
   
@@ -33,7 +33,7 @@ trait WorksheetMovedEventArgs extends StObject {
     * Gets the previous position of the worksheet, prior to the move.
     *
     * @remarks
-    * [Api set: ExcelApiOnline 1.1]
+    * [Api set: ExcelApi 1.17]
     */
   var positionBefore: Double
   
@@ -41,7 +41,7 @@ trait WorksheetMovedEventArgs extends StObject {
     * The source of the event. It can be local or remote (through co-authoring).
     *
     * @remarks
-    * [Api set: ExcelApiOnline 1.1]
+    * [Api set: ExcelApi 1.17]
     */
   var source: EventSource | Local | Remote
   
@@ -49,7 +49,7 @@ trait WorksheetMovedEventArgs extends StObject {
     * Gets the type of the event.
     *
     * @remarks
-    * [Api set: ExcelApiOnline 1.1]
+    * [Api set: ExcelApi 1.17]
     */
   var `type`: String
   
@@ -57,7 +57,7 @@ trait WorksheetMovedEventArgs extends StObject {
     * Gets the ID of the worksheet that was moved.
     *
     * @remarks
-    * [Api set: ExcelApiOnline 1.1]
+    * [Api set: ExcelApi 1.17]
     */
   var worksheetId: String
 }

@@ -1,16 +1,31 @@
 package typings.telegramWebApp
 
 import typings.telegramWebApp.anon.Buttonid
+import typings.telegramWebApp.anon.Data
 import typings.telegramWebApp.anon.IsStateStable
+import typings.telegramWebApp.anon.Status
+import typings.telegramWebApp.anon.Tryinstantview
+import typings.telegramWebApp.anon.`0`
 import typings.telegramWebApp.telegramWebAppStrings.backButtonClicked
 import typings.telegramWebApp.telegramWebAppStrings.bg_color
+import typings.telegramWebApp.telegramWebAppStrings.bots
+import typings.telegramWebApp.telegramWebAppStrings.cancelled
+import typings.telegramWebApp.telegramWebAppStrings.channels
+import typings.telegramWebApp.telegramWebAppStrings.clipboardTextReceived
 import typings.telegramWebApp.telegramWebAppStrings.dark
+import typings.telegramWebApp.telegramWebAppStrings.failed
+import typings.telegramWebApp.telegramWebAppStrings.groups
+import typings.telegramWebApp.telegramWebAppStrings.invoiceClosed
 import typings.telegramWebApp.telegramWebAppStrings.light
 import typings.telegramWebApp.telegramWebAppStrings.mainButtonClicked
+import typings.telegramWebApp.telegramWebAppStrings.paid
+import typings.telegramWebApp.telegramWebAppStrings.pending
 import typings.telegramWebApp.telegramWebAppStrings.popupClosed
+import typings.telegramWebApp.telegramWebAppStrings.qrTextReceived
 import typings.telegramWebApp.telegramWebAppStrings.secondary_bg_color
 import typings.telegramWebApp.telegramWebAppStrings.settingsButtonClicked
 import typings.telegramWebApp.telegramWebAppStrings.themeChanged
+import typings.telegramWebApp.telegramWebAppStrings.users
 import typings.telegramWebApp.telegramWebAppStrings.viewportChanged
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -43,6 +58,12 @@ trait WebApp extends StObject {
   
   /** A method that closes the Web App. */
   def close(): Unit = js.native
+  
+  /**
+    * A method that closes the native popup for scanning a QR code opened with the
+    * showScanQrPopup method. Run it if you received valid data in the event qrTextReceived.
+    */
+  def closeScanQrPopup(): Unit = js.native
   
   /**
     * The color scheme currently used in the Telegram app. Either “light” or
@@ -111,7 +132,13 @@ trait WebApp extends StObject {
     eventHandler: js.Function0[Unit]
   ): Unit = js.native
   @JSName("offEvent")
+  def offEvent_clipboardTextReceived(eventType: clipboardTextReceived, eventHandler: js.Function1[/* eventData */ `0`, Unit]): Unit = js.native
+  @JSName("offEvent")
+  def offEvent_invoiceClosed(eventType: invoiceClosed, eventHandler: js.Function1[/* eventData */ Status, Unit]): Unit = js.native
+  @JSName("offEvent")
   def offEvent_popupClosed(eventType: popupClosed, eventHandler: js.Function1[/* eventData */ Buttonid, Unit]): Unit = js.native
+  @JSName("offEvent")
+  def offEvent_qrTextReceived(eventType: qrTextReceived, eventHandler: js.Function1[/* eventData */ Data, Unit]): Unit = js.native
   @JSName("offEvent")
   def offEvent_viewportChanged(eventType: viewportChanged, eventHandler: js.Function1[/* eventData */ IsStateStable, Unit]): Unit = js.native
   
@@ -124,7 +151,13 @@ trait WebApp extends StObject {
     eventHandler: js.Function0[Unit]
   ): Unit = js.native
   @JSName("onEvent")
+  def onEvent_clipboardTextReceived(eventType: clipboardTextReceived, eventHandler: js.Function1[/* eventData */ `0`, Unit]): Unit = js.native
+  @JSName("onEvent")
+  def onEvent_invoiceClosed(eventType: invoiceClosed, eventHandler: js.Function1[/* eventData */ Status, Unit]): Unit = js.native
+  @JSName("onEvent")
   def onEvent_popupClosed(eventType: popupClosed, eventHandler: js.Function1[/* eventData */ Buttonid, Unit]): Unit = js.native
+  @JSName("onEvent")
+  def onEvent_qrTextReceived(eventType: qrTextReceived, eventHandler: js.Function1[/* eventData */ Data, Unit]): Unit = js.native
   @JSName("onEvent")
   def onEvent_viewportChanged(eventType: viewportChanged, eventHandler: js.Function1[/* eventData */ IsStateStable, Unit]): Unit = js.native
   
@@ -134,21 +167,44 @@ trait WebApp extends StObject {
     *  optional callback parameter was passed, the callback function will be
     *  called and the invoice status will be passed as the first argument.
     */
-  def openInvoice(url: String, callback: js.Function0[Unit]): Unit = js.native
+  def openInvoice(
+    url: String,
+    callback: js.Function2[/* url */ String, /* status */ paid | cancelled | failed | pending, Unit]
+  ): Unit = js.native
   
   /**
-    * A method that opens a link in an external browser. The Web App will not
-    * be closed. Note that this method can be called only in response to the
-    * user interaction with the Web App interface (e.g. click inside the Web
-    * App or on the main button)
+    * A method that opens a link in an external browser.
+    * The Web App will not be closed.
+    * If the optional options parameter is passed with the field
+    * @param try_instant_view the link will be opened in Instant View mode if possible.
+    *
+    * Note that this method can be called only in response to user interaction with
+    * the Web App interface (e.g. a click inside the Web App or on the main button)
     */
   def openLink(url: String): Unit = js.native
+  def openLink(url: String, options: Tryinstantview): Unit = js.native
   
   /**
     * A method that opens a telegram link inside Telegram app. The Web App will
     * be closed.
     */
   def openTelegramLink(url: String): Unit = js.native
+  
+  /**
+    * The name of the platform of the user's Telegram app.
+    */
+  var platform: String = js.native
+  
+  /**
+    * A method that requests text from the clipboard. The Web App will receive the event clipboardTextReceived.
+    * If an optional callback parameter was passed, the callback function will be
+    * called and the text from the clipboard will be passed as the first argument.
+    *
+    * Note: this method can be called only for Web Apps launched from the attachment menu and only
+    * in response to a user interaction with the Web App interface (e.g. a click inside the Web App or on the main button).
+    */
+  def readTextFromClipboard(): Unit = js.native
+  def readTextFromClipboard(callback: js.Function1[/* data */ String | Null, Unit]): Unit = js.native
   
   /**
     * A method that informs the Telegram app that the Web App is ready to be
@@ -209,6 +265,26 @@ trait WebApp extends StObject {
     */
   def showPopup(params: PopupParams): Unit = js.native
   def showPopup(params: PopupParams, callback: js.Function1[/* button_id */ String, Unit]): Unit = js.native
+  
+  /**
+    * A method that shows a native popup for scanning a QR code described by the params argument of the type ScanQrPopupParams.
+    * The Web App will receive the event qrTextReceived every time the scanner catches a code with text data.
+    * If an optional callback parameter was passed, the callback function will be called and the text from the QR
+    * code will be passed as the first argument. Returning true inside this callback function causes the popup to be closed.
+    */
+  def showScanQrPopup(params: ScanQrPopupParams): Unit = js.native
+  def showScanQrPopup(params: ScanQrPopupParams, callback: js.Function1[/* data */ String, Unit]): Unit = js.native
+  
+  /**
+    * A method that inserts the bot's username and the specified inline query in the current chat's input field.
+    * Query may be empty, in which case only the bot's username will be inserted.
+    * If an optional choose_chat_types parameter was passed, the client prompts the user to choose a specific chat,
+    * then opens that chat and inserts the bot's username and the specified inline query in the input field.
+    * You can specify which types of chats the user will be able to choose from.
+    * It can be one or more of the following types: users, bots, groups, channels.
+    */
+  def switchInlineQuery(query: String): Unit = js.native
+  def switchInlineQuery(query: String, choose_chat_types: js.Array[users | bots | groups | channels]): Unit = js.native
   
   /**
     * An object containing the current theme settings used in the Telegram app.

@@ -310,7 +310,7 @@ trait WorksheetCollection
     * Occurs when a worksheet is moved within a workbook. This event only triggers when a worksheet is directly moved within a workbook. This event doesn't trigger when the position of a worksheet is indirectly changed, such as when a new worksheet is inserted and causes existing worksheets to change positions.
     *
     * @remarks
-    * [Api set: ExcelApiOnline 1.1]
+    * [Api set: ExcelApi 1.17]
     *
     * @eventproperty
     */
@@ -320,7 +320,7 @@ trait WorksheetCollection
     * Occurs when the worksheet name is changed in the worksheet collection.
     *
     * @remarks
-    * [Api set: ExcelApiOnline 1.1]
+    * [Api set: ExcelApi 1.17]
     *
     * @eventproperty
     */
@@ -382,7 +382,7 @@ trait WorksheetCollection
     * Occurs when the worksheet visibility is changed in the worksheet collection.
     *
     * @remarks
-    * [Api set: ExcelApiOnline 1.1]
+    * [Api set: ExcelApi 1.17]
     *
     * @eventproperty
     */

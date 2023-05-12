@@ -105,7 +105,7 @@ object clusterMod extends Shortcut {
       *   });
       *
       * } else if (cluster.isWorker) {
-      *   const net = require('net');
+      *   const net = require('node:net');
       *   const server = net.createServer((socket) => {
       *     // Connections never end
       *   });
@@ -185,12 +185,12 @@ object clusterMod extends Shortcut {
       * because of exiting or being signaled). Otherwise, it returns `false`.
       *
       * ```js
-      * import cluster from 'cluster';
-      * import http from 'http';
-      * import { cpus } from 'os';
-      * import process from 'process';
+      * import cluster from 'node:cluster';
+      * import http from 'node:http';
+      * import { availableParallelism } from 'node:os';
+      * import process from 'node:process';
       *
-      * const numCPUs = cpus().length;
+      * const numCPUs = availableParallelism();
       *
       * if (cluster.isPrimary) {
       *   console.log(`Primary ${process.pid} is running`);

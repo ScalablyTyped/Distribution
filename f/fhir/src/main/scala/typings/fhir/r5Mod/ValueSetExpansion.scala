@@ -10,6 +10,8 @@ trait ValueSetExpansion
   
   var _identifier: js.UndefOr[Element] = js.undefined
   
+  var _next: js.UndefOr[Element] = js.undefined
+  
   var _timestamp: js.UndefOr[Element] = js.undefined
   
   /**
@@ -21,6 +23,11 @@ trait ValueSetExpansion
     * Typically, this uri is a UUID (e.g. urn:uuid:8230ff20-c97a-4167-a59d-dc2cb9df16dd).
     */
   var identifier: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Clients SHOULD use the next link, if present, to page through expansion results in preference to using the offset and count parameters. Due to the optional nature of the next link, its absence does not necessarily indicate that it is the last page of results. Instead, as the offset and count parameters SHALL be populated when paging, clients can reliably use the count/offset parameters to determine whether the whole expansion is returned.
+    */
+  var next: js.UndefOr[String] = js.undefined
   
   /**
     * Paging only applies to flat expansions. If a filter is applied, the count is the number of concepts that matched the filter, not the number of concepts in an unfiltered view of the expansion.
@@ -67,6 +74,10 @@ object ValueSetExpansion {
     
     inline def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
     
+    inline def setNext(value: String): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+    
+    inline def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
+    
     inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
     inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
@@ -92,6 +103,10 @@ object ValueSetExpansion {
     inline def set_identifier(value: Element): Self = StObject.set(x, "_identifier", value.asInstanceOf[js.Any])
     
     inline def set_identifierUndefined: Self = StObject.set(x, "_identifier", js.undefined)
+    
+    inline def set_next(value: Element): Self = StObject.set(x, "_next", value.asInstanceOf[js.Any])
+    
+    inline def set_nextUndefined: Self = StObject.set(x, "_next", js.undefined)
     
     inline def set_timestamp(value: Element): Self = StObject.set(x, "_timestamp", value.asInstanceOf[js.Any])
     

@@ -1,6 +1,5 @@
 package typings.eslintVisitorKeys
 
-import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +11,7 @@ object mod {
   val ^ : js.Any = js.native
   
   /**
-    * @typedef {import('./index.js').VisitorKeys} VisitorKeys
+    * @typedef {{ readonly [type: string]: ReadonlyArray<string> }} VisitorKeys
     */
   /**
     * @type {VisitorKeys}
@@ -25,5 +24,5 @@ object mod {
   
   inline def unionWith(additionalKeys: VisitorKeys): VisitorKeys = ^.asInstanceOf[js.Dynamic].applyDynamic("unionWith")(additionalKeys.asInstanceOf[js.Any]).asInstanceOf[VisitorKeys]
   
-  type VisitorKeys = StringDictionary[js.Array[String]]
+  type VisitorKeys = typings.eslintVisitorKeys.distVisitorKeysMod.VisitorKeys
 }

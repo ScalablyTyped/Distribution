@@ -2,8 +2,6 @@ package typings.forkTsCheckerWebpackPlugin
 
 import typings.forkTsCheckerWebpackPlugin.libFilesChangeMod.FilesChange
 import typings.forkTsCheckerWebpackPlugin.libIssueIssueMod.Issue
-import typings.forkTsCheckerWebpackPlugin.libTypescriptExtensionVueTypeScriptVueExtensionConfigMod.TypeScriptVueExtensionConfig
-import typings.forkTsCheckerWebpackPlugin.libTypescriptExtensionVueTypeScriptVueExtensionOptionsMod.TypeScriptVueExtensionOptions
 import typings.forkTsCheckerWebpackPlugin.libWatchWatchFileSystemMod.Watchpack
 import typings.tapable.mod.AsyncSeriesWaterfallHook
 import typings.tapable.mod.SyncHook
@@ -16,26 +14,6 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
-  
-  trait `0` extends StObject {
-    
-    var vue: js.UndefOr[TypeScriptVueExtensionOptions] = js.undefined
-  }
-  object `0` {
-    
-    inline def apply(): `0` = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[`0`]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
-      
-      inline def setVue(value: TypeScriptVueExtensionOptions): Self = StObject.set(x, "vue", value.asInstanceOf[js.Any])
-      
-      inline def setVueUndefined: Self = StObject.set(x, "vue", js.undefined)
-    }
-  }
   
   trait Canceled extends StObject {
     
@@ -74,32 +52,6 @@ object anon {
       inline def setStart(value: AsyncSeriesWaterfallHook[js.Tuple2[FilesChange, Compilation], UnsetAdditionalOptions]): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
       inline def setWaiting(value: SyncHook[js.Array[Compilation], Unit, UnsetAdditionalOptions]): Self = StObject.set(x, "waiting", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait Compiler extends StObject {
-    
-    var compiler: js.UndefOr[String] = js.undefined
-    
-    var enabled: js.UndefOr[Boolean] = js.undefined
-  }
-  object Compiler {
-    
-    inline def apply(): Compiler = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Compiler]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: Compiler] (val x: Self) extends AnyVal {
-      
-      inline def setCompiler(value: String): Self = StObject.set(x, "compiler", value.asInstanceOf[js.Any])
-      
-      inline def setCompilerUndefined: Self = StObject.set(x, "compiler", js.undefined)
-      
-      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
-      
-      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     }
   }
   
@@ -207,24 +159,6 @@ object anon {
     implicit open class MutableBuilder[Self <: TypeofScriptSnapshot] (val x: Self) extends AnyVal {
       
       inline def setFromString(value: String => IScriptSnapshot): Self = StObject.set(x, "fromString", js.Any.fromFunction1(value))
-    }
-  }
-  
-  trait Vue extends StObject {
-    
-    var vue: TypeScriptVueExtensionConfig
-  }
-  object Vue {
-    
-    inline def apply(vue: TypeScriptVueExtensionConfig): Vue = {
-      val __obj = js.Dynamic.literal(vue = vue.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Vue]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: Vue] (val x: Self) extends AnyVal {
-      
-      inline def setVue(value: TypeScriptVueExtensionConfig): Self = StObject.set(x, "vue", value.asInstanceOf[js.Any])
     }
   }
   

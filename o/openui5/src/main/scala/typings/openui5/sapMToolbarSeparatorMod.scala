@@ -2,6 +2,7 @@ package typings.openui5
 
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapMLibraryMod.IOverflowToolbarContent
+import typings.openui5.sapMLibraryMod.OverflowToolbarConfig
 import typings.openui5.sapUiCoreControlMod.ControlSettings
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -131,11 +132,12 @@ object sapMToolbarSeparatorMod {
     /**
       * @SINCE 1.65
       *
-      * Sets the behavior of the `ToolbarSeparator` inside an `OverflowToolbar` configuration.
+      * Sets the behavior of the `ToolbarSeparator` inside an `OverflowToolbar` configuration. Required by the
+      * {@link sap.m.IOverflowToolbarContent} interface.
       *
       * @returns Configuration information for the `sap.m.IOverflowToolbarContent` interface.
       */
-    def getOverflowToolbarConfig(): js.Object = js.native
+    def getOverflowToolbarConfig(): OverflowToolbarConfig = js.native
   }
   
   type ToolbarSeparatorSettings = ControlSettings

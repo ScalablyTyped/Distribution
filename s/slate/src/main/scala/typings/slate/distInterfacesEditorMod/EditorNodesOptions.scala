@@ -4,7 +4,7 @@ import typings.slate.distInterfacesLocationMod.Location
 import typings.slate.distInterfacesLocationMod.Span
 import typings.slate.distInterfacesNodeMod.Node
 import typings.slate.distInterfacesPathMod.Path
-import typings.slate.distInterfacesTypesMod.SelectionMode
+import typings.slate.distTypesTypesMod.SelectionMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,6 +12,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EditorNodesOptions[T /* <: Node */] extends StObject {
   
   var at: js.UndefOr[Location | Span] = js.undefined
+  
+  var ignoreNonSelectable: js.UndefOr[Boolean] = js.undefined
   
   var `match`: js.UndefOr[NodeMatch[T]] = js.undefined
   
@@ -38,6 +40,10 @@ object EditorNodesOptions {
     inline def setAtUndefined: Self = StObject.set(x, "at", js.undefined)
     
     inline def setAtVarargs(value: Double*): Self = StObject.set(x, "at", js.Array(value*))
+    
+    inline def setIgnoreNonSelectable(value: Boolean): Self = StObject.set(x, "ignoreNonSelectable", value.asInstanceOf[js.Any])
+    
+    inline def setIgnoreNonSelectableUndefined: Self = StObject.set(x, "ignoreNonSelectable", js.undefined)
     
     inline def setMatch(value: (/* node */ Node, /* path */ Path) => /* is T */ Boolean): Self = StObject.set(x, "match", js.Any.fromFunction2(value))
     

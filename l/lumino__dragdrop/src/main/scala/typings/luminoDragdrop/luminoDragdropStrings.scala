@@ -1,7 +1,7 @@
 package typings.luminoDragdrop
 
-import typings.luminoDragdrop.mod.DropAction
-import typings.luminoDragdrop.mod.SupportedActions
+import typings.luminoDragdrop.mod.Drag.DropAction
+import typings.luminoDragdrop.mod.Drag.SupportedActions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,6 +45,26 @@ object luminoDragdropStrings {
     extends StObject
        with SupportedActions
   inline def `link-move`: `link-move` = "link-move".asInstanceOf[`link-move`]
+  
+  @js.native
+  sealed trait `lm-dragenter` extends StObject
+  inline def `lm-dragenter`: `lm-dragenter` = "lm-dragenter".asInstanceOf[`lm-dragenter`]
+  
+  @js.native
+  sealed trait `lm-dragexit` extends StObject
+  inline def `lm-dragexit`: `lm-dragexit` = "lm-dragexit".asInstanceOf[`lm-dragexit`]
+  
+  @js.native
+  sealed trait `lm-dragleave` extends StObject
+  inline def `lm-dragleave`: `lm-dragleave` = "lm-dragleave".asInstanceOf[`lm-dragleave`]
+  
+  @js.native
+  sealed trait `lm-dragover` extends StObject
+  inline def `lm-dragover`: `lm-dragover` = "lm-dragover".asInstanceOf[`lm-dragover`]
+  
+  @js.native
+  sealed trait `lm-drop` extends StObject
+  inline def `lm-drop`: `lm-drop` = "lm-drop".asInstanceOf[`lm-drop`]
   
   @js.native
   sealed trait move

@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.expressValidator.expressValidatorStrings.`dk-DK`
   - typings.expressValidator.expressValidatorStrings.`el-CY`
   - typings.expressValidator.expressValidatorStrings.`el-GR`
+  - typings.expressValidator.expressValidatorStrings.`en-CA`
   - typings.expressValidator.expressValidatorStrings.`en-GB`
   - typings.expressValidator.expressValidatorStrings.`en-IE`
   - typings.expressValidator.expressValidatorStrings.`en-US`
@@ -54,6 +55,8 @@ object TaxIDLocale {
   inline def `el-CY`: typings.expressValidator.expressValidatorStrings.`el-CY` = "el-CY".asInstanceOf[typings.expressValidator.expressValidatorStrings.`el-CY`]
   
   inline def `el-GR`: typings.expressValidator.expressValidatorStrings.`el-GR` = "el-GR".asInstanceOf[typings.expressValidator.expressValidatorStrings.`el-GR`]
+  
+  inline def `en-CA`: typings.expressValidator.expressValidatorStrings.`en-CA` = "en-CA".asInstanceOf[typings.expressValidator.expressValidatorStrings.`en-CA`]
   
   inline def `en-GB`: typings.expressValidator.expressValidatorStrings.`en-GB` = "en-GB".asInstanceOf[typings.expressValidator.expressValidatorStrings.`en-GB`]
   

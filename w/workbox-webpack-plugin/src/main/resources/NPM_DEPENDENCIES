@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "workbox-webpack-plugin" : "6.5.4"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "workbox-webpack-plugin" : "6.5.4"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

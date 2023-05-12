@@ -6,13 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait OwnerPathRepo extends StObject {
   
-  /** The account owner of the repository. The name is not case sensitive. */
   var owner: String
   
-  /** path parameter */
+  /** @description path parameter */
   var path: String
   
-  /** The name of the repository. The name is not case sensitive. */
   var repo: String
 }
 object OwnerPathRepo {

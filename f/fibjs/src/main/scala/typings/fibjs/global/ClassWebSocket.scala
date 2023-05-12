@@ -10,14 +10,14 @@ open class ClassWebSocket protected ()
   extends StObject
      with typings.fibjs.ClassWebSocket {
   /**
-    * 
+    *
     * @brief WebSocket 构造函数
     * @param url 指定连接的服务器
     * @param protocol 指定握手协议，缺省为 ""
     * @param origin 指定握手时模拟的源
-    * 
-    * 
-    * 
+    *
+    *
+    *
     */
   def this(url: String) = this()
   def this(url: String, protocol: String) = this()

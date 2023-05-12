@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeregisterGameServerInput extends StObject {
   
   /**
-    * A unique identifier for the game server group where the game server is running. Use either the GameServerGroup name or ARN value.
+    * A unique identifier for the game server group where the game server is running.
     */
   var GameServerGroupName: GameServerGroupNameOrArn
   

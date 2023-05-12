@@ -42,6 +42,8 @@ object libSelectorMod extends Shortcut {
     
     var activeDescendantId: js.UndefOr[String] = js.undefined
     
+    var autoClearSearchValue: js.UndefOr[Boolean] = js.undefined
+    
     var autoComplete: js.UndefOr[String] = js.undefined
     
     var autoFocus: js.UndefOr[Boolean] = js.undefined
@@ -80,6 +82,8 @@ object libSelectorMod extends Shortcut {
     
     var tabIndex: js.UndefOr[Double] = js.undefined
     
+    var title: js.UndefOr[String] = js.undefined
+    
     var values: js.Array[DisplayValueType]
   }
   object InnerSelectorProps {
@@ -108,6 +112,10 @@ object libSelectorMod extends Shortcut {
       inline def setActiveDescendantId(value: String): Self = StObject.set(x, "activeDescendantId", value.asInstanceOf[js.Any])
       
       inline def setActiveDescendantIdUndefined: Self = StObject.set(x, "activeDescendantId", js.undefined)
+      
+      inline def setAutoClearSearchValue(value: Boolean): Self = StObject.set(x, "autoClearSearchValue", value.asInstanceOf[js.Any])
+      
+      inline def setAutoClearSearchValueUndefined: Self = StObject.set(x, "autoClearSearchValue", js.undefined)
       
       inline def setAutoComplete(value: String): Self = StObject.set(x, "autoComplete", value.asInstanceOf[js.Any])
       
@@ -165,6 +173,10 @@ object libSelectorMod extends Shortcut {
       
       inline def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
       
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      
       inline def setValues(value: js.Array[DisplayValueType]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
       inline def setValuesVarargs(value: DisplayValueType*): Self = StObject.set(x, "values", js.Array(value*))
@@ -205,6 +217,8 @@ object libSelectorMod extends Shortcut {
     var activeDescendantId: js.UndefOr[String] = js.native
     
     var activeValue: String = js.native
+    
+    var autoClearSearchValue: Boolean = js.native
     
     var autoFocus: js.UndefOr[Boolean] = js.native
     

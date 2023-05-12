@@ -13,7 +13,7 @@ import typings.fpTs.libEitherMod.Either_
 import typings.fpTs.libFilterableMod.Filterable2C
 import typings.fpTs.libFromEitherMod.FromEither2
 import typings.fpTs.libFromIOMod.FromIO2
-import typings.fpTs.libFunctionMod.Lazy
+import typings.fpTs.libFunctionMod.LazyArg
 import typings.fpTs.libFunctorMod.Functor2
 import typings.fpTs.libIOMod.IO_
 import typings.fpTs.libMonadIOMod.MonadIO2
@@ -30,6 +30,7 @@ import typings.fpTs.libReadonlyNonEmptyArrayMod.ReadonlyNonEmptyArray_
 import typings.fpTs.libRefinementMod.Refinement
 import typings.fpTs.libSemigroupMod.Semigroup
 import typings.std.Exclude
+import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -109,9 +110,9 @@ object libIoeitherMod {
   val URI: /* "IOEither" */ String = js.native
   type URI = /* "IOEither" */ String
   
-  inline def alt[E, A](that: Lazy[IOEither_[E, A]]): js.Function1[/* fa */ IOEither_[E, A], IOEither_[E, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("alt")(that.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ IOEither_[E, A], IOEither_[E, A]]]
+  inline def alt[E, A](that: LazyArg[IOEither_[E, A]]): js.Function1[/* fa */ IOEither_[E, A], IOEither_[E, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("alt")(that.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ IOEither_[E, A], IOEither_[E, A]]]
   
-  inline def altW[E2, B](that: Lazy[IOEither_[E2, B]]): js.Function1[/* fa */ IOEither_[Any, Any], IOEither_[E2, Any | B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("altW")(that.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ IOEither_[Any, Any], IOEither_[E2, Any | B]]]
+  inline def altW[E2, B](that: LazyArg[IOEither_[E2, B]]): js.Function1[/* fa */ IOEither_[Any, Any], IOEither_[E2, Any | B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("altW")(that.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ IOEither_[Any, Any], IOEither_[E2, Any | B]]]
   
   inline def ap[E, A](fa: IOEither_[E, A]): js.Function1[/* fab */ IOEither_[E, js.Function1[/* a */ A, Any]], IOEither_[E, Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ap")(fa.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fab */ IOEither_[E, js.Function1[/* a */ A, Any]], IOEither_[E, Any]]]
   
@@ -227,12 +228,20 @@ object libIoeitherMod {
   
   inline def chainIOK[A, B](f: js.Function1[/* a */ A, IO_[B]]): js.Function1[/* first */ IOEither_[Any, A], IOEither_[Any, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainIOK")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* first */ IOEither_[Any, A], IOEither_[Any, B]]]
   
-  inline def chainOptionK[E](onNone: Lazy[E]): js.Function1[
+  inline def chainOptionK[E](onNone: LazyArg[E]): js.Function1[
     /* f */ js.Function1[/* a */ Any, Option_[Any]], 
     js.Function1[/* ma */ IOEither_[E, Any], IOEither_[E, Any]]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainOptionK")(onNone.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
     /* f */ js.Function1[/* a */ Any, Option_[Any]], 
     js.Function1[/* ma */ IOEither_[E, Any], IOEither_[E, Any]]
+  ]]
+  
+  inline def chainOptionKW[E2](onNone: LazyArg[E2]): js.Function1[
+    /* f */ js.Function1[/* a */ Any, Option_[Any]], 
+    js.Function1[/* ma */ IOEither_[Any, Any], IOEither_[Any | E2, Any]]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainOptionKW")(onNone.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* f */ js.Function1[/* a */ Any, Option_[Any]], 
+    js.Function1[/* ma */ IOEither_[Any, Any], IOEither_[Any | E2, Any]]
   ]]
   
   inline def chainW[E2, A, B](f: js.Function1[/* a */ A, IOEither_[E2, B]]): js.Function1[/* ma */ IOEither_[Any, A], IOEither_[Any | E2, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainW")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ IOEither_[Any, A], IOEither_[Any | E2, B]]]
@@ -246,6 +255,26 @@ object libIoeitherMod {
   inline def filterOrElse_EAB[E, A, B /* <: A */](refinement: Refinement[A, B], onFalse: js.Function1[/* a */ A, E]): js.Function1[/* ma */ IOEither_[E, A], IOEither_[E, B]] = (^.asInstanceOf[js.Dynamic].applyDynamic("filterOrElse")(refinement.asInstanceOf[js.Any], onFalse.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* ma */ IOEither_[E, A], IOEither_[E, B]]]
   
   inline def flap[A](a: A): js.Function1[/* fab */ IOEither_[Any, js.Function1[/* a */ A, Any]], IOEither_[Any, Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("flap")(a.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fab */ IOEither_[Any, js.Function1[/* a */ A, Any]], IOEither_[Any, Any]]]
+  
+  inline def flatMap[A, E2, B](f: js.Function1[/* a */ A, IOEither_[E2, B]]): js.Function1[/* ma */ IOEither_[Any, A], IOEither_[Any | E2, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatMap")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ IOEither_[Any, A], IOEither_[Any | E2, B]]]
+  inline def flatMap[E1, A, E2, B](ma: IOEither_[E1, A], f: js.Function1[/* a */ A, IOEither_[E2, B]]): IOEither_[E1 | E2, B] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatMap")(ma.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[IOEither_[E1 | E2, B]]
+  
+  inline def flatMapEither[A, B, E2](f: js.Function1[/* a */ A, Either_[E2, B]]): js.Function1[/* self */ IOEither_[Any, A], IOEither_[E2 | Any, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatMapEither")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* self */ IOEither_[Any, A], IOEither_[E2 | Any, B]]]
+  inline def flatMapEither[E1, A, B, E2](self: IOEither_[E1, A], f: js.Function1[/* a */ A, Either_[E2, B]]): IOEither_[E1 | E2, B] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatMapEither")(self.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[IOEither_[E1 | E2, B]]
+  
+  inline def flatMapNullable[A, B, E2](f: js.Function1[/* a */ A, js.UndefOr[B | Null]], onNullable: js.Function1[/* a */ A, E2]): js.Function1[/* self */ IOEither_[Any, A], IOEither_[E2 | Any, NonNullable[B]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatMapNullable")(f.asInstanceOf[js.Any], onNullable.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* self */ IOEither_[Any, A], IOEither_[E2 | Any, NonNullable[B]]]]
+  inline def flatMapNullable[E1, A, B, E2](
+    self: IOEither_[E1, A],
+    f: js.Function1[/* a */ A, js.UndefOr[B | Null]],
+    onNullable: js.Function1[/* a */ A, E2]
+  ): IOEither_[E1 | E2, NonNullable[B]] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatMapNullable")(self.asInstanceOf[js.Any], f.asInstanceOf[js.Any], onNullable.asInstanceOf[js.Any])).asInstanceOf[IOEither_[E1 | E2, NonNullable[B]]]
+  
+  inline def flatMapOption[A, B, E2](f: js.Function1[/* a */ A, Option_[B]], onNone: js.Function1[/* a */ A, E2]): js.Function1[/* self */ IOEither_[Any, A], IOEither_[E2 | Any, B]] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatMapOption")(f.asInstanceOf[js.Any], onNone.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* self */ IOEither_[Any, A], IOEither_[E2 | Any, B]]]
+  inline def flatMapOption[E1, A, B, E2](
+    self: IOEither_[E1, A],
+    f: js.Function1[/* a */ A, Option_[B]],
+    onNone: js.Function1[/* a */ A, E2]
+  ): IOEither_[E1 | E2, B] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatMapOption")(self.asInstanceOf[js.Any], f.asInstanceOf[js.Any], onNone.asInstanceOf[js.Any])).asInstanceOf[IOEither_[E1 | E2, B]]
   
   inline def flatten[E, A](mma: IOEither_[E, IOEither_[E, A]]): IOEither_[E, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(mma.asInstanceOf[js.Any]).asInstanceOf[IOEither_[E, A]]
   
@@ -263,9 +292,9 @@ object libIoeitherMod {
   
   inline def fromIOK[A /* <: js.Array[Any] */, B](f: js.Function1[/* a */ A, IO_[B]]): js.Function1[/* a */ A, IOEither_[scala.Nothing, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIOK")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* a */ A, IOEither_[scala.Nothing, B]]]
   
-  inline def fromOption[E](onNone: Lazy[E]): js.Function1[/* fa */ Option_[Any], IOEither_[E, Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromOption")(onNone.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Option_[Any], IOEither_[E, Any]]]
+  inline def fromOption[E](onNone: LazyArg[E]): js.Function1[/* fa */ Option_[Any], IOEither_[E, Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromOption")(onNone.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Option_[Any], IOEither_[E, Any]]]
   
-  inline def fromOptionK[E](onNone: Lazy[E]): js.Function1[
+  inline def fromOptionK[E](onNone: LazyArg[E]): js.Function1[
     /* f */ js.Function1[/* a */ js.Array[Any], Option_[Any]], 
     js.Function1[/* a */ js.Array[Any], IOEither_[E, Any]]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromOptionK")(onNone.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
@@ -319,6 +348,10 @@ object libIoeitherMod {
     ]
   ]]
   
+  inline def liftNullable[A /* <: js.Array[Any] */, B, E](f: js.Function1[/* a */ A, js.UndefOr[B | Null]], onNullable: js.Function1[/* a */ A, E]): js.Function1[/* a */ A, IOEither_[E, NonNullable[B]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("liftNullable")(f.asInstanceOf[js.Any], onNullable.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* a */ A, IOEither_[E, NonNullable[B]]]]
+  
+  inline def liftOption[A /* <: js.Array[Any] */, B, E](f: js.Function1[/* a */ A, Option_[B]], onNone: js.Function1[/* a */ A, E]): js.Function1[/* a */ A, IOEither_[E, B]] = (^.asInstanceOf[js.Dynamic].applyDynamic("liftOption")(f.asInstanceOf[js.Any], onNone.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* a */ A, IOEither_[E, B]]]
+  
   inline def map[A, B](f: js.Function1[/* a */ A, B]): js.Function1[/* fa */ IOEither_[Any, A], IOEither_[Any, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("map")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ IOEither_[Any, A], IOEither_[Any, B]]]
   
   inline def mapLeft[E, G](f: js.Function1[/* e */ E, G]): js.Function1[/* fa */ IOEither_[E, Any], IOEither_[G, Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("mapLeft")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ IOEither_[E, Any], IOEither_[G, Any]]]
@@ -355,6 +388,12 @@ object libIoeitherMod {
   
   inline def swap[E, A](ma: IOEither_[E, A]): IOEither_[A, E] = ^.asInstanceOf[js.Dynamic].applyDynamic("swap")(ma.asInstanceOf[js.Any]).asInstanceOf[IOEither_[A, E]]
   
+  inline def tap[A, E2, _underscore](f: js.Function1[/* a */ A, IOEither_[E2, _underscore]]): js.Function1[/* self */ IOEither_[Any, A], IOEither_[E2 | Any, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("tap")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* self */ IOEither_[Any, A], IOEither_[E2 | Any, A]]]
+  inline def tap[E1, A, E2, _underscore](self: IOEither_[E1, A], f: js.Function1[/* a */ A, IOEither_[E2, _underscore]]): IOEither_[E1 | E2, A] = (^.asInstanceOf[js.Dynamic].applyDynamic("tap")(self.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[IOEither_[E1 | E2, A]]
+  
+  inline def tapError[E1, E2, _underscore](onLeft: js.Function1[/* e */ E1, IOEither_[E2, _underscore]]): js.Function1[/* self */ IOEither_[E1, Any], IOEither_[E1 | E2, Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("tapError")(onLeft.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* self */ IOEither_[E1, Any], IOEither_[E1 | E2, Any]]]
+  inline def tapError[E1, A, E2, _underscore](self: IOEither_[E1, A], onLeft: js.Function1[/* e */ E1, IOEither_[E2, _underscore]]): IOEither_[E1 | E2, A] = (^.asInstanceOf[js.Dynamic].applyDynamic("tapError")(self.asInstanceOf[js.Any], onLeft.asInstanceOf[js.Any])).asInstanceOf[IOEither_[E1 | E2, A]]
+  
   @JSImport("fp-ts/lib/IOEither", "throwError")
   @js.native
   val throwError: js.Function1[
@@ -380,7 +419,7 @@ object libIoeitherMod {
   
   inline def traverseSeqArrayWithIndex[A, E, B](f: js.Function2[/* index */ Double, /* a */ A, IOEither_[E, B]]): js.Function1[/* as */ js.Array[A], IOEither_[E, js.Array[B]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("traverseSeqArrayWithIndex")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* as */ js.Array[A], IOEither_[E, js.Array[B]]]]
   
-  inline def tryCatch[E, A](f: Lazy[A], onThrow: js.Function1[/* reason */ Any, E]): IOEither_[E, A] = (^.asInstanceOf[js.Dynamic].applyDynamic("tryCatch")(f.asInstanceOf[js.Any], onThrow.asInstanceOf[js.Any])).asInstanceOf[IOEither_[E, A]]
+  inline def tryCatch[E, A](f: LazyArg[A], onThrow: js.Function1[/* reason */ Any, E]): IOEither_[E, A] = (^.asInstanceOf[js.Dynamic].applyDynamic("tryCatch")(f.asInstanceOf[js.Any], onThrow.asInstanceOf[js.Any])).asInstanceOf[IOEither_[E, A]]
   
   inline def tryCatchK[A /* <: js.Array[Any] */, B, E](f: js.Function1[/* a */ A, B], onThrow: js.Function1[/* reason */ Any, E]): js.Function1[/* a */ A, IOEither_[E, B]] = (^.asInstanceOf[js.Dynamic].applyDynamic("tryCatchK")(f.asInstanceOf[js.Any], onThrow.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* a */ A, IOEither_[E, B]]]
   

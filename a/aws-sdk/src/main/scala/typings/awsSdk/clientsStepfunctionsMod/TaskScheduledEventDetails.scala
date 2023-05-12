@@ -22,14 +22,19 @@ trait TaskScheduledEventDetails extends StObject {
   var region: Name
   
   /**
-    * The service name of the resource in a task state.
+    * The action of the resource called by a task state.
     */
   var resource: Name
   
   /**
-    * The action of the resource called by a task state.
+    * The service name of the resource in a task state.
     */
   var resourceType: Name
+  
+  /**
+    * The credentials that Step Functions uses for the task.
+    */
+  var taskCredentials: js.UndefOr[TaskCredentials] = js.undefined
   
   /**
     * The maximum allowed duration of the task.
@@ -57,6 +62,10 @@ object TaskScheduledEventDetails {
     inline def setResource(value: Name): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setResourceType(value: Name): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
+    
+    inline def setTaskCredentials(value: TaskCredentials): Self = StObject.set(x, "taskCredentials", value.asInstanceOf[js.Any])
+    
+    inline def setTaskCredentialsUndefined: Self = StObject.set(x, "taskCredentials", js.undefined)
     
     inline def setTimeoutInSeconds(value: TimeoutInSeconds): Self = StObject.set(x, "timeoutInSeconds", value.asInstanceOf[js.Any])
     

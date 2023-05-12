@@ -21,7 +21,7 @@ trait PartialShader extends StObject {
     ]
   ] = js.undefined
   
-  var material: js.UndefOr[typings.three.mod.Material] = js.undefined
+  var material: js.UndefOr[typings.three.buildThreeDotmoduleDotminMod.Material] = js.undefined
   
   var name: js.UndefOr[String] = js.undefined
   
@@ -68,7 +68,7 @@ object PartialShader {
     
     inline def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
     
-    inline def setMaterial(value: typings.three.mod.Material): Self = StObject.set(x, "material", value.asInstanceOf[js.Any])
+    inline def setMaterial(value: typings.three.buildThreeDotmoduleDotminMod.Material): Self = StObject.set(x, "material", value.asInstanceOf[js.Any])
     
     inline def setMaterialUndefined: Self = StObject.set(x, "material", js.undefined)
     

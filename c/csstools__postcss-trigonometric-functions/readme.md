@@ -1,7 +1,7 @@
 
 # Scala.js typings for csstools__postcss-trigonometric-functions
 
-Typings are for version 1.0.2
+Typings are for version 2.1.1
 
 ## Library description:
 Use sin(), cos(), tan(), acos(), atan(), and atan2() to compute trigonometric relationships

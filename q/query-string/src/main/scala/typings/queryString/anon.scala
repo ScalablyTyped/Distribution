@@ -15,38 +15,38 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
-  /* Inlined {  parseBooleans :true} & query-string.query-string.ParseOptions */
+  /* Inlined {  parseBooleans :true} & query-string.query-string/base.ParseOptions */
   trait parseBooleanstrueParseOpt extends StObject {
     
     /**
     	@default 'none'
     	- `bracket`: Parse arrays with bracket representation:
     		```
-    		import queryString = require('query-string');
+    		import queryString from 'query-string';
     		queryString.parse('foo[]=1&foo[]=2&foo[]=3', {arrayFormat: 'bracket'});
     		//=> {foo: ['1', '2', '3']}
     		```
     	- `index`: Parse arrays with index representation:
     		```
-    		import queryString = require('query-string');
+    		import queryString from 'query-string';
     		queryString.parse('foo[0]=1&foo[1]=2&foo[3]=3', {arrayFormat: 'index'});
     		//=> {foo: ['1', '2', '3']}
     		```
     	- `comma`: Parse arrays with elements separated by comma:
     		```
-    		import queryString = require('query-string');
+    		import queryString from 'query-string';
     		queryString.parse('foo=1,2,3', {arrayFormat: 'comma'});
     		//=> {foo: ['1', '2', '3']}
     		```
     	- `separator`: Parse arrays with elements separated by a custom character:
     		```
-    		import queryString = require('query-string');
+    		import queryString from 'query-string';
     		queryString.parse('foo=1|2|3', {arrayFormat: 'separator', arrayFormatSeparator: '|'});
     		//=> {foo: ['1', '2', '3']}
     		```
     	- `bracket-separator`: Parse arrays (that are explicitly marked with brackets) with elements separated by a custom character:
     		```
-    		import queryString = require('query-string');
+    		import queryString from 'query-string';
     		queryString.parse('foo[]', {arrayFormat: 'bracket-separator', arrayFormatSeparator: '|'});
     		//=> {foo: []}
     		queryString.parse('foo[]=', {arrayFormat: 'bracket-separator', arrayFormatSeparator: '|'});
@@ -62,13 +62,13 @@ object anon {
     		```
     	- `colon-list-separator`: Parse arrays with parameter names that are explicitly marked with `:list`:
     		```
-    		import queryString = require('query-string');
+    		import queryString from 'query-string';
     		queryString.parse('foo:list=one&foo:list=two', {arrayFormat: 'colon-list-separator'});
     		//=> {foo: ['one', 'two']}
     		```
     	- `none`: Parse arrays with elements using duplicate keys:
     		```
-    		import queryString = require('query-string');
+    		import queryString from 'query-string';
     		queryString.parse('foo=1&foo=2&foo=3');
     		//=> {foo: ['1', '2', '3']}
     		```
@@ -94,7 +94,7 @@ object anon {
     	@default false
     	@example
     	```
-    	import queryString = require('query-string');
+    	import queryString from 'query-string';
     	queryString.parse('foo=true', {parseBooleans: true});
     	//=> {foo: true}
     	```
@@ -106,7 +106,7 @@ object anon {
     	@default false
     	@example
     	```
-    	import queryString = require('query-string');
+    	import queryString from 'query-string';
     	queryString.parseUrl('https://foo.bar?foo=bar#xyz', {parseFragmentIdentifier: true});
     	//=> {url: 'https://foo.bar', query: {foo: 'bar'}, fragmentIdentifier: 'xyz'}
     	```
@@ -118,7 +118,7 @@ object anon {
     	@default false
     	@example
     	```
-    	import queryString = require('query-string');
+    	import queryString from 'query-string';
     	queryString.parse('foo=1', {parseNumbers: true});
     	//=> {foo: 1}
     	```
@@ -131,7 +131,7 @@ object anon {
     	@default true
     	@example
     	```
-    	import queryString = require('query-string');
+    	import queryString from 'query-string';
     	const order = ['c', 'a', 'b'];
     	queryString.parse('?a=one&b=two&c=three', {
     		sort: (itemLeft, itemRight) => order.indexOf(itemLeft) - order.indexOf(itemRight)
@@ -140,7 +140,7 @@ object anon {
     	```
     	@example
     	```
-    	import queryString = require('query-string');
+    	import queryString from 'query-string';
     	queryString.parse('?a=one&c=three&b=two', {sort: false});
     	//=> {a: 'one', c: 'three', b: 'two'}
     	```
@@ -187,38 +187,38 @@ object anon {
     }
   }
   
-  /* Inlined {  parseBooleans :true} & query-string.query-string.ParseOptions & query-string.query-string.StringifyOptions */
+  /* Inlined {  parseBooleans :true} & query-string.query-string/base.ParseOptions & query-string.query-string/base.StringifyOptions */
   trait parseBooleanstrueParseOptArrayFormat extends StObject {
     
     /**
     	@default 'none'
     	- `bracket`: Parse arrays with bracket representation:
     		```
-    		import queryString = require('query-string');
+    		import queryString from 'query-string';
     		queryString.parse('foo[]=1&foo[]=2&foo[]=3', {arrayFormat: 'bracket'});
     		//=> {foo: ['1', '2', '3']}
     		```
     	- `index`: Parse arrays with index representation:
     		```
-    		import queryString = require('query-string');
+    		import queryString from 'query-string';
     		queryString.parse('foo[0]=1&foo[1]=2&foo[3]=3', {arrayFormat: 'index'});
     		//=> {foo: ['1', '2', '3']}
     		```
     	- `comma`: Parse arrays with elements separated by comma:
     		```
-    		import queryString = require('query-string');
+    		import queryString from 'query-string';
     		queryString.parse('foo=1,2,3', {arrayFormat: 'comma'});
     		//=> {foo: ['1', '2', '3']}
     		```
     	- `separator`: Parse arrays with elements separated by a custom character:
     		```
-    		import queryString = require('query-string');
+    		import queryString from 'query-string';
     		queryString.parse('foo=1|2|3', {arrayFormat: 'separator', arrayFormatSeparator: '|'});
     		//=> {foo: ['1', '2', '3']}
     		```
     	- `bracket-separator`: Parse arrays (that are explicitly marked with brackets) with elements separated by a custom character:
     		```
-    		import queryString = require('query-string');
+    		import queryString from 'query-string';
     		queryString.parse('foo[]', {arrayFormat: 'bracket-separator', arrayFormatSeparator: '|'});
     		//=> {foo: []}
     		queryString.parse('foo[]=', {arrayFormat: 'bracket-separator', arrayFormatSeparator: '|'});
@@ -234,13 +234,13 @@ object anon {
     		```
     	- `colon-list-separator`: Parse arrays with parameter names that are explicitly marked with `:list`:
     		```
-    		import queryString = require('query-string');
+    		import queryString from 'query-string';
     		queryString.parse('foo:list=one&foo:list=two', {arrayFormat: 'colon-list-separator'});
     		//=> {foo: ['one', 'two']}
     		```
     	- `none`: Parse arrays with elements using duplicate keys:
     		```
-    		import queryString = require('query-string');
+    		import queryString from 'query-string';
     		queryString.parse('foo=1&foo=2&foo=3');
     		//=> {foo: ['1', '2', '3']}
     		```
@@ -249,19 +249,19 @@ object anon {
     	@default 'none'
     	- `bracket`: Serialize arrays using bracket representation:
     		```
-    		import queryString = require('query-string');
+    		import queryString from 'query-string';
     		queryString.stringify({foo: [1, 2, 3]}, {arrayFormat: 'bracket'});
     		//=> 'foo[]=1&foo[]=2&foo[]=3'
     		```
     	- `index`: Serialize arrays using index representation:
     		```
-    		import queryString = require('query-string');
+    		import queryString from 'query-string';
     		queryString.stringify({foo: [1, 2, 3]}, {arrayFormat: 'index'});
     		//=> 'foo[0]=1&foo[1]=2&foo[2]=3'
     		```
     	- `comma`: Serialize arrays by separating elements with comma:
     		```
-    		import queryString = require('query-string');
+    		import queryString from 'query-string';
     		queryString.stringify({foo: [1, 2, 3]}, {arrayFormat: 'comma'});
     		//=> 'foo=1,2,3'
     		queryString.stringify({foo: [1, null, '']}, {arrayFormat: 'comma'});
@@ -271,13 +271,13 @@ object anon {
     		```
     	- `separator`: Serialize arrays by separating elements with character:
     		```
-    		import queryString = require('query-string');
+    		import queryString from 'query-string';
     		queryString.stringify({foo: [1, 2, 3]}, {arrayFormat: 'separator', arrayFormatSeparator: '|'});
     		//=> 'foo=1|2|3'
     		```
     	- `bracket-separator`: Serialize arrays by explicitly post-fixing array names with brackets and separating elements with a custom character:
     		```
-    		import queryString = require('query-string');
+    		import queryString from 'query-string';
     		queryString.stringify({foo: []}, {arrayFormat: 'bracket-separator', arrayFormatSeparator: '|'});
     		//=> 'foo[]'
     		queryString.stringify({foo: ['']}, {arrayFormat: 'bracket-separator', arrayFormatSeparator: '|'});
@@ -295,13 +295,13 @@ object anon {
     		```
     	- `colon-list-separator`: Serialize arrays with parameter names that are explicitly marked with `:list`:
     		```js
-    		import queryString = require('query-string');
+    		import queryString from 'query-string';
     		queryString.stringify({foo: ['one', 'two']}, {arrayFormat: 'colon-list-separator'});
     		//=> 'foo:list=one&foo:list=two'
     		```
     	- `none`: Serialize arrays by using duplicate keys:
     		```
-    		import queryString = require('query-string');
+    		import queryString from 'query-string';
     		queryString.stringify({foo: [1, 2, 3]});
     		//=> 'foo=1&foo=2&foo=3'
     		```
@@ -333,7 +333,7 @@ object anon {
     	@default false
     	@example
     	```
-    	import queryString = require('query-string');
+    	import queryString from 'query-string';
     	queryString.parse('foo=true', {parseBooleans: true});
     	//=> {foo: true}
     	```
@@ -345,7 +345,7 @@ object anon {
     	@default false
     	@example
     	```
-    	import queryString = require('query-string');
+    	import queryString from 'query-string';
     	queryString.parseUrl('https://foo.bar?foo=bar#xyz', {parseFragmentIdentifier: true});
     	//=> {url: 'https://foo.bar', query: {foo: 'bar'}, fragmentIdentifier: 'xyz'}
     	```
@@ -357,7 +357,7 @@ object anon {
     	@default false
     	@example
     	```
-    	import queryString = require('query-string');
+    	import queryString from 'query-string';
     	queryString.parse('foo=1', {parseNumbers: true});
     	//=> {foo: 1}
     	```
@@ -369,7 +369,7 @@ object anon {
     	@default false
     	@example
     	```
-    	import queryString = require('query-string');
+    	import queryString from 'query-string';
     	queryString.stringify({a: 1, b: '', c: '', d: 4}, {
     		skipEmptyString: true
     	});
@@ -377,7 +377,7 @@ object anon {
     	```
     	@example
     	```
-    	import queryString = require('query-string');
+    	import queryString from 'query-string';
     	queryString.stringify({a: '', b: ''}, {
     		skipEmptyString: true
     	});
@@ -392,7 +392,7 @@ object anon {
     	@default false
     	@example
     	```
-    	import queryString = require('query-string');
+    	import queryString from 'query-string';
     	queryString.stringify({a: 1, b: undefined, c: null, d: 4}, {
     		skipNull: true
     	});
@@ -411,7 +411,7 @@ object anon {
     	@default true
     	@example
     	```
-    	import queryString = require('query-string');
+    	import queryString from 'query-string';
     	const order = ['c', 'a', 'b'];
     	queryString.parse('?a=one&b=two&c=three', {
     		sort: (itemLeft, itemRight) => order.indexOf(itemLeft) - order.indexOf(itemRight)
@@ -420,7 +420,7 @@ object anon {
     	```
     	@example
     	```
-    	import queryString = require('query-string');
+    	import queryString from 'query-string';
     	queryString.parse('?a=one&c=three&b=two', {sort: false});
     	//=> {a: 'one', c: 'three', b: 'two'}
     	```
@@ -431,7 +431,7 @@ object anon {
     	@default true
     	@example
     	```
-    	import queryString = require('query-string');
+    	import queryString from 'query-string';
     	const order = ['c', 'a', 'b'];
     	queryString.stringify({a: 1, b: 2, c: 3}, {
     		sort: (itemLeft, itemRight) => order.indexOf(itemLeft) - order.indexOf(itemRight)
@@ -440,7 +440,7 @@ object anon {
     	```
     	@example
     	```
-    	import queryString = require('query-string');
+    	import queryString from 'query-string';
     	queryString.stringify({b: 1, c: 2, a: 3}, {sort: false});
     	//=> 'b=1&c=2&a=3'
     	```
@@ -509,38 +509,38 @@ object anon {
     }
   }
   
-  /* Inlined {  parseBooleans :true,   parseNumbers :true} & query-string.query-string.ParseOptions */
+  /* Inlined {  parseBooleans :true,   parseNumbers :true} & query-string.query-string/base.ParseOptions */
   trait parseBooleanstrueparseNum extends StObject {
     
     /**
     	@default 'none'
     	- `bracket`: Parse arrays with bracket representation:
     		```
-    		import queryString = require('query-string');
+    		import queryString from 'query-string';
     		queryString.parse('foo[]=1&foo[]=2&foo[]=3', {arrayFormat: 'bracket'});
     		//=> {foo: ['1', '2', '3']}
     		```
     	- `index`: Parse arrays with index representation:
     		```
-    		import queryString = require('query-string');
+    		import queryString from 'query-string';
     		queryString.parse('foo[0]=1&foo[1]=2&foo[3]=3', {arrayFormat: 'index'});
     		//=> {foo: ['1', '2', '3']}
     		```
     	- `comma`: Parse arrays with elements separated by comma:
     		```
-    		import queryString = require('query-string');
+    		import queryString from 'query-string';
     		queryString.parse('foo=1,2,3', {arrayFormat: 'comma'});
     		//=> {foo: ['1', '2', '3']}
     		```
     	- `separator`: Parse arrays with elements separated by a custom character:
     		```
-    		import queryString = require('query-string');
+    		import queryString from 'query-string';
     		queryString.parse('foo=1|2|3', {arrayFormat: 'separator', arrayFormatSeparator: '|'});
     		//=> {foo: ['1', '2', '3']}
     		```
     	- `bracket-separator`: Parse arrays (that are explicitly marked with brackets) with elements separated by a custom character:
     		```
-    		import queryString = require('query-string');
+    		import queryString from 'query-string';
     		queryString.parse('foo[]', {arrayFormat: 'bracket-separator', arrayFormatSeparator: '|'});
     		//=> {foo: []}
     		queryString.parse('foo[]=', {arrayFormat: 'bracket-separator', arrayFormatSeparator: '|'});
@@ -556,13 +556,13 @@ object anon {
     		```
     	- `colon-list-separator`: Parse arrays with parameter names that are explicitly marked with `:list`:
     		```
-    		import queryString = require('query-string');
+    		import queryString from 'query-string';
     		queryString.parse('foo:list=one&foo:list=two', {arrayFormat: 'colon-list-separator'});
     		//=> {foo: ['one', 'two']}
     		```
     	- `none`: Parse arrays with elements using duplicate keys:
     		```
-    		import queryString = require('query-string');
+    		import queryString from 'query-string';
     		queryString.parse('foo=1&foo=2&foo=3');
     		//=> {foo: ['1', '2', '3']}
     		```
@@ -588,7 +588,7 @@ object anon {
     	@default false
     	@example
     	```
-    	import queryString = require('query-string');
+    	import queryString from 'query-string';
     	queryString.parse('foo=true', {parseBooleans: true});
     	//=> {foo: true}
     	```
@@ -600,7 +600,7 @@ object anon {
     	@default false
     	@example
     	```
-    	import queryString = require('query-string');
+    	import queryString from 'query-string';
     	queryString.parseUrl('https://foo.bar?foo=bar#xyz', {parseFragmentIdentifier: true});
     	//=> {url: 'https://foo.bar', query: {foo: 'bar'}, fragmentIdentifier: 'xyz'}
     	```
@@ -612,7 +612,7 @@ object anon {
     	@default false
     	@example
     	```
-    	import queryString = require('query-string');
+    	import queryString from 'query-string';
     	queryString.parse('foo=1', {parseNumbers: true});
     	//=> {foo: 1}
     	```
@@ -625,7 +625,7 @@ object anon {
     	@default true
     	@example
     	```
-    	import queryString = require('query-string');
+    	import queryString from 'query-string';
     	const order = ['c', 'a', 'b'];
     	queryString.parse('?a=one&b=two&c=three', {
     		sort: (itemLeft, itemRight) => order.indexOf(itemLeft) - order.indexOf(itemRight)
@@ -634,7 +634,7 @@ object anon {
     	```
     	@example
     	```
-    	import queryString = require('query-string');
+    	import queryString from 'query-string';
     	queryString.parse('?a=one&c=three&b=two', {sort: false});
     	//=> {a: 'one', c: 'three', b: 'two'}
     	```
@@ -679,38 +679,38 @@ object anon {
     }
   }
   
-  /* Inlined {  parseBooleans :true,   parseNumbers :true} & query-string.query-string.ParseOptions & query-string.query-string.StringifyOptions */
+  /* Inlined {  parseBooleans :true,   parseNumbers :true} & query-string.query-string/base.ParseOptions & query-string.query-string/base.StringifyOptions */
   trait parseBooleanstrueparseNumArrayFormat extends StObject {
     
     /**
     	@default 'none'
     	- `bracket`: Parse arrays with bracket representation:
     		```
-    		import queryString = require('query-string');
+    		import queryString from 'query-string';
     		queryString.parse('foo[]=1&foo[]=2&foo[]=3', {arrayFormat: 'bracket'});
     		//=> {foo: ['1', '2', '3']}
     		```
     	- `index`: Parse arrays with index representation:
     		```
-    		import queryString = require('query-string');
+    		import queryString from 'query-string';
     		queryString.parse('foo[0]=1&foo[1]=2&foo[3]=3', {arrayFormat: 'index'});
     		//=> {foo: ['1', '2', '3']}
     		```
     	- `comma`: Parse arrays with elements separated by comma:
     		```
-    		import queryString = require('query-string');
+    		import queryString from 'query-string';
     		queryString.parse('foo=1,2,3', {arrayFormat: 'comma'});
     		//=> {foo: ['1', '2', '3']}
     		```
     	- `separator`: Parse arrays with elements separated by a custom character:
     		```
-    		import queryString = require('query-string');
+    		import queryString from 'query-string';
     		queryString.parse('foo=1|2|3', {arrayFormat: 'separator', arrayFormatSeparator: '|'});
     		//=> {foo: ['1', '2', '3']}
     		```
     	- `bracket-separator`: Parse arrays (that are explicitly marked with brackets) with elements separated by a custom character:
     		```
-    		import queryString = require('query-string');
+    		import queryString from 'query-string';
     		queryString.parse('foo[]', {arrayFormat: 'bracket-separator', arrayFormatSeparator: '|'});
     		//=> {foo: []}
     		queryString.parse('foo[]=', {arrayFormat: 'bracket-separator', arrayFormatSeparator: '|'});
@@ -726,13 +726,13 @@ object anon {
     		```
     	- `colon-list-separator`: Parse arrays with parameter names that are explicitly marked with `:list`:
     		```
-    		import queryString = require('query-string');
+    		import queryString from 'query-string';
     		queryString.parse('foo:list=one&foo:list=two', {arrayFormat: 'colon-list-separator'});
     		//=> {foo: ['one', 'two']}
     		```
     	- `none`: Parse arrays with elements using duplicate keys:
     		```
-    		import queryString = require('query-string');
+    		import queryString from 'query-string';
     		queryString.parse('foo=1&foo=2&foo=3');
     		//=> {foo: ['1', '2', '3']}
     		```
@@ -741,19 +741,19 @@ object anon {
     	@default 'none'
     	- `bracket`: Serialize arrays using bracket representation:
     		```
-    		import queryString = require('query-string');
+    		import queryString from 'query-string';
     		queryString.stringify({foo: [1, 2, 3]}, {arrayFormat: 'bracket'});
     		//=> 'foo[]=1&foo[]=2&foo[]=3'
     		```
     	- `index`: Serialize arrays using index representation:
     		```
-    		import queryString = require('query-string');
+    		import queryString from 'query-string';
     		queryString.stringify({foo: [1, 2, 3]}, {arrayFormat: 'index'});
     		//=> 'foo[0]=1&foo[1]=2&foo[2]=3'
     		```
     	- `comma`: Serialize arrays by separating elements with comma:
     		```
-    		import queryString = require('query-string');
+    		import queryString from 'query-string';
     		queryString.stringify({foo: [1, 2, 3]}, {arrayFormat: 'comma'});
     		//=> 'foo=1,2,3'
     		queryString.stringify({foo: [1, null, '']}, {arrayFormat: 'comma'});
@@ -763,13 +763,13 @@ object anon {
     		```
     	- `separator`: Serialize arrays by separating elements with character:
     		```
-    		import queryString = require('query-string');
+    		import queryString from 'query-string';
     		queryString.stringify({foo: [1, 2, 3]}, {arrayFormat: 'separator', arrayFormatSeparator: '|'});
     		//=> 'foo=1|2|3'
     		```
     	- `bracket-separator`: Serialize arrays by explicitly post-fixing array names with brackets and separating elements with a custom character:
     		```
-    		import queryString = require('query-string');
+    		import queryString from 'query-string';
     		queryString.stringify({foo: []}, {arrayFormat: 'bracket-separator', arrayFormatSeparator: '|'});
     		//=> 'foo[]'
     		queryString.stringify({foo: ['']}, {arrayFormat: 'bracket-separator', arrayFormatSeparator: '|'});
@@ -787,13 +787,13 @@ object anon {
     		```
     	- `colon-list-separator`: Serialize arrays with parameter names that are explicitly marked with `:list`:
     		```js
-    		import queryString = require('query-string');
+    		import queryString from 'query-string';
     		queryString.stringify({foo: ['one', 'two']}, {arrayFormat: 'colon-list-separator'});
     		//=> 'foo:list=one&foo:list=two'
     		```
     	- `none`: Serialize arrays by using duplicate keys:
     		```
-    		import queryString = require('query-string');
+    		import queryString from 'query-string';
     		queryString.stringify({foo: [1, 2, 3]});
     		//=> 'foo=1&foo=2&foo=3'
     		```
@@ -825,7 +825,7 @@ object anon {
     	@default false
     	@example
     	```
-    	import queryString = require('query-string');
+    	import queryString from 'query-string';
     	queryString.parse('foo=true', {parseBooleans: true});
     	//=> {foo: true}
     	```
@@ -837,7 +837,7 @@ object anon {
     	@default false
     	@example
     	```
-    	import queryString = require('query-string');
+    	import queryString from 'query-string';
     	queryString.parseUrl('https://foo.bar?foo=bar#xyz', {parseFragmentIdentifier: true});
     	//=> {url: 'https://foo.bar', query: {foo: 'bar'}, fragmentIdentifier: 'xyz'}
     	```
@@ -849,7 +849,7 @@ object anon {
     	@default false
     	@example
     	```
-    	import queryString = require('query-string');
+    	import queryString from 'query-string';
     	queryString.parse('foo=1', {parseNumbers: true});
     	//=> {foo: 1}
     	```
@@ -861,7 +861,7 @@ object anon {
     	@default false
     	@example
     	```
-    	import queryString = require('query-string');
+    	import queryString from 'query-string';
     	queryString.stringify({a: 1, b: '', c: '', d: 4}, {
     		skipEmptyString: true
     	});
@@ -869,7 +869,7 @@ object anon {
     	```
     	@example
     	```
-    	import queryString = require('query-string');
+    	import queryString from 'query-string';
     	queryString.stringify({a: '', b: ''}, {
     		skipEmptyString: true
     	});
@@ -884,7 +884,7 @@ object anon {
     	@default false
     	@example
     	```
-    	import queryString = require('query-string');
+    	import queryString from 'query-string';
     	queryString.stringify({a: 1, b: undefined, c: null, d: 4}, {
     		skipNull: true
     	});
@@ -903,7 +903,7 @@ object anon {
     	@default true
     	@example
     	```
-    	import queryString = require('query-string');
+    	import queryString from 'query-string';
     	const order = ['c', 'a', 'b'];
     	queryString.parse('?a=one&b=two&c=three', {
     		sort: (itemLeft, itemRight) => order.indexOf(itemLeft) - order.indexOf(itemRight)
@@ -912,7 +912,7 @@ object anon {
     	```
     	@example
     	```
-    	import queryString = require('query-string');
+    	import queryString from 'query-string';
     	queryString.parse('?a=one&c=three&b=two', {sort: false});
     	//=> {a: 'one', c: 'three', b: 'two'}
     	```
@@ -923,7 +923,7 @@ object anon {
     	@default true
     	@example
     	```
-    	import queryString = require('query-string');
+    	import queryString from 'query-string';
     	const order = ['c', 'a', 'b'];
     	queryString.stringify({a: 1, b: 2, c: 3}, {
     		sort: (itemLeft, itemRight) => order.indexOf(itemLeft) - order.indexOf(itemRight)
@@ -932,7 +932,7 @@ object anon {
     	```
     	@example
     	```
-    	import queryString = require('query-string');
+    	import queryString from 'query-string';
     	queryString.stringify({b: 1, c: 2, a: 3}, {sort: false});
     	//=> 'b=1&c=2&a=3'
     	```
@@ -999,38 +999,38 @@ object anon {
     }
   }
   
-  /* Inlined {  parseNumbers :true} & query-string.query-string.ParseOptions */
+  /* Inlined {  parseNumbers :true} & query-string.query-string/base.ParseOptions */
   trait parseNumberstrueParseOpti extends StObject {
     
     /**
     	@default 'none'
     	- `bracket`: Parse arrays with bracket representation:
     		```
-    		import queryString = require('query-string');
+    		import queryString from 'query-string';
     		queryString.parse('foo[]=1&foo[]=2&foo[]=3', {arrayFormat: 'bracket'});
     		//=> {foo: ['1', '2', '3']}
     		```
     	- `index`: Parse arrays with index representation:
     		```
-    		import queryString = require('query-string');
+    		import queryString from 'query-string';
     		queryString.parse('foo[0]=1&foo[1]=2&foo[3]=3', {arrayFormat: 'index'});
     		//=> {foo: ['1', '2', '3']}
     		```
     	- `comma`: Parse arrays with elements separated by comma:
     		```
-    		import queryString = require('query-string');
+    		import queryString from 'query-string';
     		queryString.parse('foo=1,2,3', {arrayFormat: 'comma'});
     		//=> {foo: ['1', '2', '3']}
     		```
     	- `separator`: Parse arrays with elements separated by a custom character:
     		```
-    		import queryString = require('query-string');
+    		import queryString from 'query-string';
     		queryString.parse('foo=1|2|3', {arrayFormat: 'separator', arrayFormatSeparator: '|'});
     		//=> {foo: ['1', '2', '3']}
     		```
     	- `bracket-separator`: Parse arrays (that are explicitly marked with brackets) with elements separated by a custom character:
     		```
-    		import queryString = require('query-string');
+    		import queryString from 'query-string';
     		queryString.parse('foo[]', {arrayFormat: 'bracket-separator', arrayFormatSeparator: '|'});
     		//=> {foo: []}
     		queryString.parse('foo[]=', {arrayFormat: 'bracket-separator', arrayFormatSeparator: '|'});
@@ -1046,13 +1046,13 @@ object anon {
     		```
     	- `colon-list-separator`: Parse arrays with parameter names that are explicitly marked with `:list`:
     		```
-    		import queryString = require('query-string');
+    		import queryString from 'query-string';
     		queryString.parse('foo:list=one&foo:list=two', {arrayFormat: 'colon-list-separator'});
     		//=> {foo: ['one', 'two']}
     		```
     	- `none`: Parse arrays with elements using duplicate keys:
     		```
-    		import queryString = require('query-string');
+    		import queryString from 'query-string';
     		queryString.parse('foo=1&foo=2&foo=3');
     		//=> {foo: ['1', '2', '3']}
     		```
@@ -1078,7 +1078,7 @@ object anon {
     	@default false
     	@example
     	```
-    	import queryString = require('query-string');
+    	import queryString from 'query-string';
     	queryString.parse('foo=true', {parseBooleans: true});
     	//=> {foo: true}
     	```
@@ -1090,7 +1090,7 @@ object anon {
     	@default false
     	@example
     	```
-    	import queryString = require('query-string');
+    	import queryString from 'query-string';
     	queryString.parseUrl('https://foo.bar?foo=bar#xyz', {parseFragmentIdentifier: true});
     	//=> {url: 'https://foo.bar', query: {foo: 'bar'}, fragmentIdentifier: 'xyz'}
     	```
@@ -1102,7 +1102,7 @@ object anon {
     	@default false
     	@example
     	```
-    	import queryString = require('query-string');
+    	import queryString from 'query-string';
     	queryString.parse('foo=1', {parseNumbers: true});
     	//=> {foo: 1}
     	```
@@ -1115,7 +1115,7 @@ object anon {
     	@default true
     	@example
     	```
-    	import queryString = require('query-string');
+    	import queryString from 'query-string';
     	const order = ['c', 'a', 'b'];
     	queryString.parse('?a=one&b=two&c=three', {
     		sort: (itemLeft, itemRight) => order.indexOf(itemLeft) - order.indexOf(itemRight)
@@ -1124,7 +1124,7 @@ object anon {
     	```
     	@example
     	```
-    	import queryString = require('query-string');
+    	import queryString from 'query-string';
     	queryString.parse('?a=one&c=three&b=two', {sort: false});
     	//=> {a: 'one', c: 'three', b: 'two'}
     	```
@@ -1171,38 +1171,38 @@ object anon {
     }
   }
   
-  /* Inlined {  parseNumbers :true} & query-string.query-string.ParseOptions & query-string.query-string.StringifyOptions */
+  /* Inlined {  parseNumbers :true} & query-string.query-string/base.ParseOptions & query-string.query-string/base.StringifyOptions */
   trait parseNumberstrueParseOptiArrayFormat extends StObject {
     
     /**
     	@default 'none'
     	- `bracket`: Parse arrays with bracket representation:
     		```
-    		import queryString = require('query-string');
+    		import queryString from 'query-string';
     		queryString.parse('foo[]=1&foo[]=2&foo[]=3', {arrayFormat: 'bracket'});
     		//=> {foo: ['1', '2', '3']}
     		```
     	- `index`: Parse arrays with index representation:
     		```
-    		import queryString = require('query-string');
+    		import queryString from 'query-string';
     		queryString.parse('foo[0]=1&foo[1]=2&foo[3]=3', {arrayFormat: 'index'});
     		//=> {foo: ['1', '2', '3']}
     		```
     	- `comma`: Parse arrays with elements separated by comma:
     		```
-    		import queryString = require('query-string');
+    		import queryString from 'query-string';
     		queryString.parse('foo=1,2,3', {arrayFormat: 'comma'});
     		//=> {foo: ['1', '2', '3']}
     		```
     	- `separator`: Parse arrays with elements separated by a custom character:
     		```
-    		import queryString = require('query-string');
+    		import queryString from 'query-string';
     		queryString.parse('foo=1|2|3', {arrayFormat: 'separator', arrayFormatSeparator: '|'});
     		//=> {foo: ['1', '2', '3']}
     		```
     	- `bracket-separator`: Parse arrays (that are explicitly marked with brackets) with elements separated by a custom character:
     		```
-    		import queryString = require('query-string');
+    		import queryString from 'query-string';
     		queryString.parse('foo[]', {arrayFormat: 'bracket-separator', arrayFormatSeparator: '|'});
     		//=> {foo: []}
     		queryString.parse('foo[]=', {arrayFormat: 'bracket-separator', arrayFormatSeparator: '|'});
@@ -1218,13 +1218,13 @@ object anon {
     		```
     	- `colon-list-separator`: Parse arrays with parameter names that are explicitly marked with `:list`:
     		```
-    		import queryString = require('query-string');
+    		import queryString from 'query-string';
     		queryString.parse('foo:list=one&foo:list=two', {arrayFormat: 'colon-list-separator'});
     		//=> {foo: ['one', 'two']}
     		```
     	- `none`: Parse arrays with elements using duplicate keys:
     		```
-    		import queryString = require('query-string');
+    		import queryString from 'query-string';
     		queryString.parse('foo=1&foo=2&foo=3');
     		//=> {foo: ['1', '2', '3']}
     		```
@@ -1233,19 +1233,19 @@ object anon {
     	@default 'none'
     	- `bracket`: Serialize arrays using bracket representation:
     		```
-    		import queryString = require('query-string');
+    		import queryString from 'query-string';
     		queryString.stringify({foo: [1, 2, 3]}, {arrayFormat: 'bracket'});
     		//=> 'foo[]=1&foo[]=2&foo[]=3'
     		```
     	- `index`: Serialize arrays using index representation:
     		```
-    		import queryString = require('query-string');
+    		import queryString from 'query-string';
     		queryString.stringify({foo: [1, 2, 3]}, {arrayFormat: 'index'});
     		//=> 'foo[0]=1&foo[1]=2&foo[2]=3'
     		```
     	- `comma`: Serialize arrays by separating elements with comma:
     		```
-    		import queryString = require('query-string');
+    		import queryString from 'query-string';
     		queryString.stringify({foo: [1, 2, 3]}, {arrayFormat: 'comma'});
     		//=> 'foo=1,2,3'
     		queryString.stringify({foo: [1, null, '']}, {arrayFormat: 'comma'});
@@ -1255,13 +1255,13 @@ object anon {
     		```
     	- `separator`: Serialize arrays by separating elements with character:
     		```
-    		import queryString = require('query-string');
+    		import queryString from 'query-string';
     		queryString.stringify({foo: [1, 2, 3]}, {arrayFormat: 'separator', arrayFormatSeparator: '|'});
     		//=> 'foo=1|2|3'
     		```
     	- `bracket-separator`: Serialize arrays by explicitly post-fixing array names with brackets and separating elements with a custom character:
     		```
-    		import queryString = require('query-string');
+    		import queryString from 'query-string';
     		queryString.stringify({foo: []}, {arrayFormat: 'bracket-separator', arrayFormatSeparator: '|'});
     		//=> 'foo[]'
     		queryString.stringify({foo: ['']}, {arrayFormat: 'bracket-separator', arrayFormatSeparator: '|'});
@@ -1279,13 +1279,13 @@ object anon {
     		```
     	- `colon-list-separator`: Serialize arrays with parameter names that are explicitly marked with `:list`:
     		```js
-    		import queryString = require('query-string');
+    		import queryString from 'query-string';
     		queryString.stringify({foo: ['one', 'two']}, {arrayFormat: 'colon-list-separator'});
     		//=> 'foo:list=one&foo:list=two'
     		```
     	- `none`: Serialize arrays by using duplicate keys:
     		```
-    		import queryString = require('query-string');
+    		import queryString from 'query-string';
     		queryString.stringify({foo: [1, 2, 3]});
     		//=> 'foo=1&foo=2&foo=3'
     		```
@@ -1317,7 +1317,7 @@ object anon {
     	@default false
     	@example
     	```
-    	import queryString = require('query-string');
+    	import queryString from 'query-string';
     	queryString.parse('foo=true', {parseBooleans: true});
     	//=> {foo: true}
     	```
@@ -1329,7 +1329,7 @@ object anon {
     	@default false
     	@example
     	```
-    	import queryString = require('query-string');
+    	import queryString from 'query-string';
     	queryString.parseUrl('https://foo.bar?foo=bar#xyz', {parseFragmentIdentifier: true});
     	//=> {url: 'https://foo.bar', query: {foo: 'bar'}, fragmentIdentifier: 'xyz'}
     	```
@@ -1341,7 +1341,7 @@ object anon {
     	@default false
     	@example
     	```
-    	import queryString = require('query-string');
+    	import queryString from 'query-string';
     	queryString.parse('foo=1', {parseNumbers: true});
     	//=> {foo: 1}
     	```
@@ -1353,7 +1353,7 @@ object anon {
     	@default false
     	@example
     	```
-    	import queryString = require('query-string');
+    	import queryString from 'query-string';
     	queryString.stringify({a: 1, b: '', c: '', d: 4}, {
     		skipEmptyString: true
     	});
@@ -1361,7 +1361,7 @@ object anon {
     	```
     	@example
     	```
-    	import queryString = require('query-string');
+    	import queryString from 'query-string';
     	queryString.stringify({a: '', b: ''}, {
     		skipEmptyString: true
     	});
@@ -1376,7 +1376,7 @@ object anon {
     	@default false
     	@example
     	```
-    	import queryString = require('query-string');
+    	import queryString from 'query-string';
     	queryString.stringify({a: 1, b: undefined, c: null, d: 4}, {
     		skipNull: true
     	});
@@ -1395,7 +1395,7 @@ object anon {
     	@default true
     	@example
     	```
-    	import queryString = require('query-string');
+    	import queryString from 'query-string';
     	const order = ['c', 'a', 'b'];
     	queryString.parse('?a=one&b=two&c=three', {
     		sort: (itemLeft, itemRight) => order.indexOf(itemLeft) - order.indexOf(itemRight)
@@ -1404,7 +1404,7 @@ object anon {
     	```
     	@example
     	```
-    	import queryString = require('query-string');
+    	import queryString from 'query-string';
     	queryString.parse('?a=one&c=three&b=two', {sort: false});
     	//=> {a: 'one', c: 'three', b: 'two'}
     	```
@@ -1415,7 +1415,7 @@ object anon {
     	@default true
     	@example
     	```
-    	import queryString = require('query-string');
+    	import queryString from 'query-string';
     	const order = ['c', 'a', 'b'];
     	queryString.stringify({a: 1, b: 2, c: 3}, {
     		sort: (itemLeft, itemRight) => order.indexOf(itemLeft) - order.indexOf(itemRight)
@@ -1424,7 +1424,7 @@ object anon {
     	```
     	@example
     	```
-    	import queryString = require('query-string');
+    	import queryString from 'query-string';
     	queryString.stringify({b: 1, c: 2, a: 3}, {sort: false});
     	//=> 'b=1&c=2&a=3'
     	```

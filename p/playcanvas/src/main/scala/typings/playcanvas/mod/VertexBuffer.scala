@@ -14,9 +14,10 @@ open class VertexBuffer protected () extends StObject {
   /**
     * Create a new VertexBuffer instance.
     *
-    * @param {GraphicsDevice} graphicsDevice - The graphics device used to manage this vertex
+    * @param {import('./graphics-device.js').GraphicsDevice} graphicsDevice - The graphics device
+    * used to manage this vertex buffer.
+    * @param {import('./vertex-format.js').VertexFormat} format - The vertex format of this vertex
     * buffer.
-    * @param {VertexFormat} format - The vertex format of this vertex buffer.
     * @param {number} numVertices - The number of vertices that this vertex buffer will hold.
     * @param {number} [usage] - The usage type of the vertex buffer (see BUFFER_*). Defaults to BUFFER_STATIC.
     * @param {ArrayBuffer} [initialData] - Initial data.
@@ -52,7 +53,8 @@ open class VertexBuffer protected () extends StObject {
   /**
     * Returns the data format of the specified vertex buffer.
     *
-    * @returns {VertexFormat} The data format of the specified vertex buffer.
+    * @returns {import('./vertex-format.js').VertexFormat} The data format of the specified vertex
+    * buffer.
     */
   def getFormat(): VertexFormat = js.native
   
@@ -76,8 +78,6 @@ open class VertexBuffer protected () extends StObject {
   var id: Double = js.native
   
   var impl: Any = js.native
-  
-  var instancing: Boolean = js.native
   
   /**
     * Returns a mapped memory block representing the content of the vertex buffer.

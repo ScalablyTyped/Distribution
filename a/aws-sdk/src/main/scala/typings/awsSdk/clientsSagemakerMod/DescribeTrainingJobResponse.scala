@@ -31,12 +31,12 @@ trait DescribeTrainingJobResponse extends StObject {
   var DebugHookConfig: js.UndefOr[typings.awsSdk.clientsSagemakerMod.DebugHookConfig] = js.undefined
   
   /**
-    * Configuration information for Debugger rules for debugging output tensors.
+    * Configuration information for Amazon SageMaker Debugger rules for debugging output tensors.
     */
   var DebugRuleConfigurations: js.UndefOr[typings.awsSdk.clientsSagemakerMod.DebugRuleConfigurations] = js.undefined
   
   /**
-    * Evaluation status of Debugger rules for debugging on a training job.
+    * Evaluation status of Amazon SageMaker Debugger rules for debugging on a training job.
     */
   var DebugRuleEvaluationStatuses: js.UndefOr[typings.awsSdk.clientsSagemakerMod.DebugRuleEvaluationStatuses] = js.undefined
   
@@ -105,12 +105,12 @@ trait DescribeTrainingJobResponse extends StObject {
   var ProfilerConfig: js.UndefOr[typings.awsSdk.clientsSagemakerMod.ProfilerConfig] = js.undefined
   
   /**
-    * Configuration information for Debugger rules for profiling system and framework metrics.
+    * Configuration information for Amazon SageMaker Debugger rules for profiling system and framework metrics.
     */
   var ProfilerRuleConfigurations: js.UndefOr[typings.awsSdk.clientsSagemakerMod.ProfilerRuleConfigurations] = js.undefined
   
   /**
-    * Evaluation status of Debugger rules for profiling on a training job.
+    * Evaluation status of Amazon SageMaker Debugger rules for profiling on a training job.
     */
   var ProfilerRuleEvaluationStatuses: js.UndefOr[typings.awsSdk.clientsSagemakerMod.ProfilerRuleEvaluationStatuses] = js.undefined
   

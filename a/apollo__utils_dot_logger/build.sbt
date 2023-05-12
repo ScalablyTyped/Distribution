@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "apollo__utils_dot_logger"
-version := "1.0.1-e283d7"
+version := "3.0.0-57ec21"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

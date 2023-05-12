@@ -1,7 +1,7 @@
 package typings.openui5
 
-import typings.openui5.anon.MaximumMinimum
-import typings.openui5.anon.`37`
+import typings.openui5.anon.Interval
+import typings.openui5.anon.`46`
 import typings.openui5.sap.ClassInfo
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -13,35 +13,32 @@ object sapUiModelTypeDateIntervalMod {
   @JSImport("sap/ui/model/type/DateInterval", JSImport.Default)
   @js.native
   /**
-    * Constructor for a Date interval type.
+    * Constructor for a date interval type.
     */
   open class default () extends DateInterval {
     def this(/**
-      * Formatting options. For a list of all available options, see {@link sap.ui.core.format.DateFormat.getDateInstance
-      * DateFormat}.
+      * Format options as defined in {@link sap.ui.core.format.DateFormat.getDateInstance}
       */
-    oFormatOptions: `37`) = this()
+    oFormatOptions: Interval) = this()
     def this(
       /**
-      * Formatting options. For a list of all available options, see {@link sap.ui.core.format.DateFormat.getDateInstance
-      * DateFormat}.
+      * Format options as defined in {@link sap.ui.core.format.DateFormat.getDateInstance}
       */
     oFormatOptions: Unit,
       /**
-      * Value constraints
+      * Value constraints; {@link #validateValue validateValue} throws an error if any constraint is violated
       */
-    oConstraints: MaximumMinimum
+    oConstraints: `46`
     ) = this()
     def this(
       /**
-      * Formatting options. For a list of all available options, see {@link sap.ui.core.format.DateFormat.getDateInstance
-      * DateFormat}.
+      * Format options as defined in {@link sap.ui.core.format.DateFormat.getDateInstance}
       */
-    oFormatOptions: `37`,
+    oFormatOptions: Interval,
       /**
-      * Value constraints
+      * Value constraints; {@link #validateValue validateValue} throws an error if any constraint is violated
       */
-    oConstraints: MaximumMinimum
+    oConstraints: `46`
     ) = this()
   }
   /* static members */
@@ -114,5 +111,31 @@ object sapUiModelTypeDateIntervalMod {
   
   @js.native
   trait DateInterval
-    extends typings.openui5.sapUiModelCompositeTypeMod.default
+    extends typings.openui5.sapUiModelCompositeTypeMod.default {
+    
+    /**
+      * Parses the given value to an array of two values representing the start date and the end date of the
+      * interval, where the time part of the start date is 0 and the time part of end date is the end of day
+      * (23:59:59.999). If the `singleIntervalValue` format option is used, the second entry is `null` if no
+      * end date is given.
+      *
+      * @returns The start and the end date of the interval. The resulting values in the array are:
+      * 	 - Two `Date` or `module:sap/ui/core/date/UI5Date` objects, or
+      * 	 - Two strings as formatted start and end dates based on the `source` format option, or
+      * 	 - Two numbers, representing the milliseconds of the timestamps based on the UNIX epoch if the `source`
+      * 			format option is used and `source.pattern` is `"timestamp"`.
+      */
+    def parseValue(
+      /**
+      * The value to be parsed; the empty string is parsed to `[null, null]`
+      */
+    sValue: String,
+      /**
+      * The source type (the expected type of `sValue`); it must be either "string" or a type with "string" as
+      * its {@link sap.ui.base.DataType#getPrimitiveType primitive type}. See {@link sap.ui.model.odata.type}
+      * for more information.
+      */
+    sSourceType: String
+    ): js.Array[js.Date | typings.openui5.sapUiCoreDateUi5dateMod.default | int | String | Null] = js.native
+  }
 }

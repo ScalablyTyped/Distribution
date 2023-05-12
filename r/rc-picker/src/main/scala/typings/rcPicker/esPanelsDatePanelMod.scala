@@ -1,7 +1,7 @@
 package typings.rcPicker
 
+import typings.rcPicker.esInterfaceMod.CellRender
 import typings.rcPicker.esInterfaceMod.PanelSharedProps
-import typings.rcPicker.esPanelsDatePanelDateBodyMod.DateRender
 import typings.rcPicker.esUtilsUiUtilMod.KeyboardConfig
 import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
@@ -18,14 +18,16 @@ object esPanelsDatePanelMod {
   inline def default[DateType](props: DatePanelProps[DateType]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.rcPicker.esPanelsDatePanelDateBodyMod.DateBodyPassProps because var conflicts: disabledDate. Inlined dateRender, prefixColumn, rowClassName */ @js.native
+  - typings.rcPicker.esPanelsDatePanelDateBodyMod.DateBodyPassProps because var conflicts: disabledDate. Inlined cellRender, prefixColumn, rowClassName, isSameCell */ @js.native
   trait DatePanelProps[DateType]
     extends StObject
        with PanelSharedProps[DateType] {
     
     var active: js.UndefOr[Boolean] = js.native
     
-    var dateRender: js.UndefOr[DateRender[DateType]] = js.native
+    var cellRender: js.UndefOr[CellRender[DateType, DateType]] = js.native
+    
+    var isSameCell: js.UndefOr[js.Function2[DateType, DateType, Boolean]] = js.native
     
     var keyboardConfig: js.UndefOr[KeyboardConfig] = js.native
     

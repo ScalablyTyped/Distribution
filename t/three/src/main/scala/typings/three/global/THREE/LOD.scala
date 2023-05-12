@@ -6,5 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("THREE.LOD")
 @js.native
+/**
+  * Creates a new {@link LOD}.
+  */
 open class LOD ()
   extends typings.three.mod.LOD

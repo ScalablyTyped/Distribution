@@ -23,7 +23,7 @@ object TermStore {
     // ID of the parent site of this group.
     var parentSiteId: js.UndefOr[NullableOption[String]] = js.undefined
     
-    // Returns the type of the group. Possible values are global, system, and siteCollection.
+    // Returns the type of the group. Possible values are: global, system, and siteCollection.
     var scope: js.UndefOr[NullableOption[TermGroupScope]] = js.undefined
     
     // All sets under the group in a term [store].
@@ -363,7 +363,7 @@ object TermStore {
     // List of languages for the term store.
     var languageTags: js.UndefOr[js.Array[String]] = js.undefined
     
-    // Collection of all sets available in the term store.
+    // Collection of all sets available in the term store. This relationship can only be used to load a specific term set.
     var sets: js.UndefOr[NullableOption[js.Array[Set]]] = js.undefined
   }
   object Store {

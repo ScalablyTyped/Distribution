@@ -1,17 +1,17 @@
 organization := "org.scalablytyped"
 name := "snyk"
-version := "1.1008.0-abc722"
+version := "1.1008.0-5e5f21"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "chalk" % "5.1.2-e9f967",
-  "org.scalablytyped" %%% "cli-spinners" % "2.7.0-1bf7b7",
-  "org.scalablytyped" %%% "needle" % "2.5-dt-20220201Z-482e8f",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-874609",
-  "org.scalablytyped" %%% "ora" % "6.1.2-0349bd",
-  "org.scalablytyped" %%% "sarif" % "2.1-dt-20211202Z-8beb31",
-  "org.scalablytyped" %%% "std" % "4.9-ecb5eb")
+  "org.scalablytyped" %%% "chalk" % "5.2.0-9bd557",
+  "org.scalablytyped" %%% "cli-spinners" % "2.9.0-db2f39",
+  "org.scalablytyped" %%% "needle" % "3.2-dt-20221210Z-46d8bd",
+  "org.scalablytyped" %%% "node" % "20.1-dt-20230511Z-0320fc",
+  "org.scalablytyped" %%% "ora" % "6.3.0-63b499",
+  "org.scalablytyped" %%% "sarif" % "2.1-dt-20211202Z-d9cf83",
+  "org.scalablytyped" %%% "std" % "5.0-e63739")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -26,6 +26,9 @@ trait RegExpMatchArray
   /* standard es5 */
   var index: js.UndefOr[Double] = js.native
   
+  /* standard es2022.regexp */
+  var indices: js.UndefOr[RegExpIndicesArray] = js.native
+  
   /**
     * A copy of the search string.
     */

@@ -5,6 +5,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+  *
+  */
+/** @internal */
 @js.native
 trait TransformNode
   extends StObject
@@ -20,7 +24,12 @@ trait TransformNode
   
   /* private */ var _billboardMode: Any = js.native
   
+  /* private */ var _computeUseBillboardPath: Any = js.native
+  
   /* private */ var _currentParentWhenAttachingToBone: Any = js.native
+  
+  /** @internal */
+  var _disposePhysicsObserver: Nullable[Observer[Node]] = js.native
   
   /* private */ var _forward: Any = js.native
   
@@ -42,6 +51,9 @@ trait TransformNode
   var _localMatrix: Matrix = js.native
   
   /* private */ var _nonUniformScaling: Any = js.native
+  
+  /** @internal */
+  var _physicsBody: Nullable[PhysicsBody] = js.native
   
   /* private */ var _pivotMatrix: Any = js.native
   
@@ -115,6 +127,13 @@ trait TransformNode
     */
   def addRotation(x: Double, y: Double, z: Double): TransformNode = js.native
   
+  /** Apply a physic impulse to the mesh
+    * @param force defines the force to apply
+    * @param contactPoint defines where to apply the force
+    * @returns the current mesh
+    */
+  def applyImpulse(force: Vector3, contactPoint: Vector3): TransformNode = js.native
+  
   /**
     * Attach the current TransformNode to another TransformNode associated with a bone
     * @param bone Bone affecting the TransformNode
@@ -138,15 +157,8 @@ trait TransformNode
   def billboardMode: Double = js.native
   def billboardMode_=(value: Double): Unit = js.native
   
-  /**
-    * Clone the current transform node
-    * @param name Name of the new clone
-    * @param newParent New parent for the clone
-    * @param doNotCloneChildren Do not clone children hierarchy
-    * @returns the new transform node
-    */
-  def clone(name: String, newParent: Nullable[Node]): Nullable[TransformNode] = js.native
-  def clone(name: String, newParent: Nullable[Node], doNotCloneChildren: Boolean): Nullable[TransformNode] = js.native
+  def computeWorldMatrix(force: Boolean, camera: Nullable[Camera]): Matrix = js.native
+  def computeWorldMatrix(force: Unit, camera: Nullable[Camera]): Matrix = js.native
   
   /**
     * Detach the transform node if its associated with a bone
@@ -227,6 +239,11 @@ trait TransformNode
     */
   def getDistanceToCamera(): Double = js.native
   def getDistanceToCamera(camera: Nullable[Camera]): Double = js.native
+  
+  /**
+    *
+    */
+  def getPhysicsBody(): Nullable[PhysicsBody] = js.native
   
   /**
     * Returns the mesh pivot matrix.
@@ -320,6 +337,13 @@ trait TransformNode
   def isUsingPivotMatrix(): Boolean = js.native
   
   /**
+    * Returns whether the transform node world matrix computation needs the camera information to be computed.
+    * This is the case when the node is a billboard or has an infinite distance for instance.
+    * @returns true if the world matrix computation needs the camera information to be computed
+    */
+  def isWorldMatrixCameraDependent(): Boolean = js.native
+  
+  /**
     * True if the World matrix has been frozen.
     */
   def isWorldMatrixFrozen: Boolean = js.native
@@ -398,6 +422,11 @@ trait TransformNode
     * An event triggered after the world matrix is updated
     */
   var onAfterWorldMatrixUpdateObservable: Observable[TransformNode] = js.native
+  
+  /**
+    * @see
+    */
+  var physicsBody: Nullable[PhysicsBody] = js.native
   
   /**
     * Gets or set the node position (default is (0.0, 0.0, 0.0))

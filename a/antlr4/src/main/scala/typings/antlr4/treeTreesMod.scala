@@ -31,11 +31,14 @@ object treeTreesMod {
       */
     inline def getChildren(t: typings.antlr4.treeTreeMod.default): js.Array[typings.antlr4.treeTreeMod.default] = ^.asInstanceOf[js.Dynamic].applyDynamic("getChildren")(t.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.antlr4.treeTreeMod.default]]
     
+    inline def getNodeText(t: typings.antlr4.treeTreeMod.default): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getNodeText")(t.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def getNodeText(t: typings.antlr4.treeTreeMod.default, ruleNames: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getNodeText")(t.asInstanceOf[js.Any], ruleNames.asInstanceOf[js.Any])).asInstanceOf[String]
     inline def getNodeText(
       t: typings.antlr4.treeTreeMod.default,
       ruleNames: js.Array[String],
       recog: typings.antlr4.parserMod.default
     ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getNodeText")(t.asInstanceOf[js.Any], ruleNames.asInstanceOf[js.Any], recog.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def getNodeText(t: typings.antlr4.treeTreeMod.default, ruleNames: Unit, recog: typings.antlr4.parserMod.default): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getNodeText")(t.asInstanceOf[js.Any], ruleNames.asInstanceOf[js.Any], recog.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * Print out a whole tree in LISP form.
@@ -45,10 +48,13 @@ object treeTreesMod {
       *
       * Detect parse trees and extract data appropriately.
       */
+    inline def toStringTree(t: typings.antlr4.treeTreeMod.default): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toStringTree")(t.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def toStringTree(t: typings.antlr4.treeTreeMod.default, ruleNames: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toStringTree")(t.asInstanceOf[js.Any], ruleNames.asInstanceOf[js.Any])).asInstanceOf[String]
     inline def toStringTree(
       t: typings.antlr4.treeTreeMod.default,
       ruleNames: js.Array[String],
       recog: typings.antlr4.parserMod.default
     ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toStringTree")(t.asInstanceOf[js.Any], ruleNames.asInstanceOf[js.Any], recog.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def toStringTree(t: typings.antlr4.treeTreeMod.default, ruleNames: Unit, recog: typings.antlr4.parserMod.default): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toStringTree")(t.asInstanceOf[js.Any], ruleNames.asInstanceOf[js.Any], recog.asInstanceOf[js.Any])).asInstanceOf[String]
   }
 }

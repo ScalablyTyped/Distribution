@@ -15,6 +15,8 @@ trait TestScript
   
   var _copyright: js.UndefOr[Element] = js.undefined
   
+  var _copyrightLabel: js.UndefOr[Element] = js.undefined
+  
   var _date: js.UndefOr[Element] = js.undefined
   
   var _description: js.UndefOr[Element] = js.undefined
@@ -22,6 +24,8 @@ trait TestScript
   var _experimental: js.UndefOr[Element] = js.undefined
   
   var _name: js.UndefOr[Element] = js.undefined
+  
+  var _profile: js.UndefOr[js.Array[Element]] = js.undefined
   
   var _publisher: js.UndefOr[Element] = js.undefined
   
@@ -35,8 +39,11 @@ trait TestScript
   
   var _version: js.UndefOr[Element] = js.undefined
   
+  var _versionAlgorithmString: js.UndefOr[Element] = js.undefined
+  
   /**
     * May be a web site, an email address, a telephone number, etc.
+    * See guidance around (not) making local changes to elements [here](canonicalresource.html#localization).
     */
   var contact: js.UndefOr[js.Array[ContactDetail]] = js.undefined
   
@@ -46,12 +53,18 @@ trait TestScript
   var copyright: js.UndefOr[String] = js.undefined
   
   /**
-    * Note that this is not the same as the resource last-modified-date, since the resource may be a secondary representation of the test script. Additional specific dates may be added as extensions or be found by consulting Provenances associated with past versions of the resource.
+    * The (c) symbol should NOT be included in this string. It will be added by software when rendering the notation. Full details about licensing, restrictions, warrantees, etc. goes in the more general 'copyright' element.
+    */
+  var copyrightLabel: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The date is often not tracked until the resource is published, but may be present on draft content. Note that this is not the same as the resource last-modified-date, since the resource may be a secondary representation of the test script. Additional specific dates may be added as extensions or be found by consulting Provenances associated with past versions of the resource.
+    * See guidance around (not) making local changes to elements [here](canonicalresource.html#localization).
     */
   var date: js.UndefOr[String] = js.undefined
   
   /**
-    * This description can be used to capture details such as why the test script was built, comments about misuse, instructions for clinical use and interpretation, literature references, examples from the paper world, etc. It is not a rendering of the test script as conveyed in the 'text' field of the resource itself. This item SHOULD be populated unless the information is available from context (e.g. the language of the test script is presumed to be the predominant language in the place the test script was created).
+    * This description can be used to capture details such as comments about misuse, instructions for clinical use and interpretation, literature references, examples from the paper world, etc. It is not a rendering of the test script as conveyed in the 'text' field of the resource itself. This item SHOULD be populated unless the information is available from context (e.g. the language of the test script is presumed to be the predominant language in the place the test script was created).
     */
   var description: js.UndefOr[String] = js.undefined
   
@@ -77,6 +90,7 @@ trait TestScript
   
   /**
     * It may be possible for the test script to be used in jurisdictions other than those for which it was originally designed or intended.
+    * DEPRECATION NOTE: For consistency, implementations are encouraged to migrate to using the new 'jurisdiction' code in the useContext element.  (I.e. useContext.code indicating http://terminology.hl7.org/CodeSystem/usage-context-type#jurisdiction and useContext.valueCodeableConcept indicating the jurisdiction.)
     */
   var jurisdiction: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
@@ -96,9 +110,9 @@ trait TestScript
   var origin: js.UndefOr[js.Array[TestScriptOrigin]] = js.undefined
   
   /**
-    * See http://build.fhir.org/resourcelist.html for complete list of resource types.
+    * See the [Resource List](resourcelist.html) for complete list of resource types.
     */
-  var profile: js.UndefOr[js.Array[Reference]] = js.undefined
+  var profile: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Usually an organization but may be an individual. The publisher (or steward) of the test script is the organization or individual primarily responsible for the maintenance and upkeep of the test script. This is not necessarily the same individual or organization that developed and initially authored the content. The publisher is the primary point of contact for questions or issues with the test script. This item SHOULD be populated unless the information is available from context.
@@ -126,6 +140,7 @@ trait TestScript
   
   /**
     * Allows filtering of test scripts that are appropriate for use versus not.
+    * See guidance around (not) making local changes to elements [here](canonicalresource.html#localization).
     */
   var status: draft | active | retired | unknown
   
@@ -162,9 +177,19 @@ trait TestScript
   var variable: js.UndefOr[js.Array[TestScriptVariable]] = js.undefined
   
   /**
-    * There may be different test script instances that have the same identifier but different versions.  The version can be appended to the url in a reference to allow a reference to a particular business version of the test script with the format [url]|[version].
+    * There may be different test script instances that have the same identifier but different versions.  The version can be appended to the url in a reference to allow a reference to a particular business version of the test script with the format [url]|[version]. The version SHOULD NOT contain a '#' - see [Business Version](resource.html#bv-format).
     */
   var version: js.UndefOr[String] = js.undefined
+  
+  /**
+    * If set as a string, this is a FHIRPath expression that has two additional context variables passed in - %version1 and %version2 and will return a negative number if version1 is newer, a positive number if version2 and a 0 if the version ordering can't be successfully be determined.
+    */
+  var versionAlgorithmCoding: js.UndefOr[Coding] = js.undefined
+  
+  /**
+    * If set as a string, this is a FHIRPath expression that has two additional context variables passed in - %version1 and %version2 and will return a negative number if version1 is newer, a positive number if version2 and a 0 if the version ordering can't be successfully be determined.
+    */
+  var versionAlgorithmString: js.UndefOr[String] = js.undefined
 }
 object TestScript {
   
@@ -183,6 +208,10 @@ object TestScript {
     inline def setContactVarargs(value: ContactDetail*): Self = StObject.set(x, "contact", js.Array(value*))
     
     inline def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
+    
+    inline def setCopyrightLabel(value: String): Self = StObject.set(x, "copyrightLabel", value.asInstanceOf[js.Any])
+    
+    inline def setCopyrightLabelUndefined: Self = StObject.set(x, "copyrightLabel", js.undefined)
     
     inline def setCopyrightUndefined: Self = StObject.set(x, "copyright", js.undefined)
     
@@ -234,11 +263,11 @@ object TestScript {
     
     inline def setOriginVarargs(value: TestScriptOrigin*): Self = StObject.set(x, "origin", js.Array(value*))
     
-    inline def setProfile(value: js.Array[Reference]): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
+    inline def setProfile(value: js.Array[String]): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
     
     inline def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
     
-    inline def setProfileVarargs(value: Reference*): Self = StObject.set(x, "profile", js.Array(value*))
+    inline def setProfileVarargs(value: String*): Self = StObject.set(x, "profile", js.Array(value*))
     
     inline def setPublisher(value: String): Self = StObject.set(x, "publisher", value.asInstanceOf[js.Any])
     
@@ -294,9 +323,21 @@ object TestScript {
     
     inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
+    inline def setVersionAlgorithmCoding(value: Coding): Self = StObject.set(x, "versionAlgorithmCoding", value.asInstanceOf[js.Any])
+    
+    inline def setVersionAlgorithmCodingUndefined: Self = StObject.set(x, "versionAlgorithmCoding", js.undefined)
+    
+    inline def setVersionAlgorithmString(value: String): Self = StObject.set(x, "versionAlgorithmString", value.asInstanceOf[js.Any])
+    
+    inline def setVersionAlgorithmStringUndefined: Self = StObject.set(x, "versionAlgorithmString", js.undefined)
+    
     inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     
     inline def set_copyright(value: Element): Self = StObject.set(x, "_copyright", value.asInstanceOf[js.Any])
+    
+    inline def set_copyrightLabel(value: Element): Self = StObject.set(x, "_copyrightLabel", value.asInstanceOf[js.Any])
+    
+    inline def set_copyrightLabelUndefined: Self = StObject.set(x, "_copyrightLabel", js.undefined)
     
     inline def set_copyrightUndefined: Self = StObject.set(x, "_copyright", js.undefined)
     
@@ -315,6 +356,12 @@ object TestScript {
     inline def set_name(value: Element): Self = StObject.set(x, "_name", value.asInstanceOf[js.Any])
     
     inline def set_nameUndefined: Self = StObject.set(x, "_name", js.undefined)
+    
+    inline def set_profile(value: js.Array[Element]): Self = StObject.set(x, "_profile", value.asInstanceOf[js.Any])
+    
+    inline def set_profileUndefined: Self = StObject.set(x, "_profile", js.undefined)
+    
+    inline def set_profileVarargs(value: Element*): Self = StObject.set(x, "_profile", js.Array(value*))
     
     inline def set_publisher(value: Element): Self = StObject.set(x, "_publisher", value.asInstanceOf[js.Any])
     
@@ -337,6 +384,10 @@ object TestScript {
     inline def set_urlUndefined: Self = StObject.set(x, "_url", js.undefined)
     
     inline def set_version(value: Element): Self = StObject.set(x, "_version", value.asInstanceOf[js.Any])
+    
+    inline def set_versionAlgorithmString(value: Element): Self = StObject.set(x, "_versionAlgorithmString", value.asInstanceOf[js.Any])
+    
+    inline def set_versionAlgorithmStringUndefined: Self = StObject.set(x, "_versionAlgorithmString", js.undefined)
     
     inline def set_versionUndefined: Self = StObject.set(x, "_version", js.undefined)
   }

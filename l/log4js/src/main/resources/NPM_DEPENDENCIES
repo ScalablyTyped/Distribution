@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "log4js" : "6.7.0"
+      "log4js" : "6.9.1"
     }
   ],
   "test-dependencies" : [
     {
-      "log4js" : "6.7.0"
+      "log4js" : "6.9.1"
     }
   ],
   "compile-devDependencies" : [

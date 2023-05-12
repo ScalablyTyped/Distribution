@@ -13,7 +13,7 @@ trait ZipDeflate
   
   /**
     * Flushes the data
-    * 
+    *
     * @returns A chunk of compressed data.
     */
   def flush(): js.typedarray.Uint8Array

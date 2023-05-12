@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.babylonjs.BABYLON.IDisposable because Already inherited
 - typings.babylonjs.BABYLON.IGizmo because Already inherited
-- typings.babylonjs.BABYLON.IBoundingBoxGizmo because var conflicts: _rootMesh, attachedMesh, attachedNode, customRotationQuaternion, gizmoLayer, isHovered, scaleRatio, updateGizmoPositionToMatchAttachedMesh, updateGizmoRotationToMatchAttachedMesh, updateScale. Inlined ignoreChildren, includeChildPredicate, rotationSphereSize, scaleBoxSize, fixedDragMeshScreenSize, fixedDragMeshBoundsSize, fixedDragMeshScreenSizeDistanceFactor, onDragStartObservable, onScaleBoxDragObservable, onScaleBoxDragEndObservable, onRotationSphereDragObservable, onRotationSphereDragEndObservable, scalePivot, axisFactor, scaleDragSpeed, setColor, getScaleBoxes, updateBoundingBox, setEnabledRotationAxis, setEnabledScaling, setEnabledScaling, enableDragBehavior */ @js.native
+- typings.babylonjs.BABYLON.IBoundingBoxGizmo because var conflicts: _rootMesh, attachedMesh, attachedNode, customRotationQuaternion, gizmoLayer, isHovered, scaleRatio, updateGizmoPositionToMatchAttachedMesh, updateGizmoRotationToMatchAttachedMesh, updateScale. Inlined ignoreChildren, includeChildPredicate, rotationSphereSize, scaleBoxSize, fixedDragMeshScreenSize, fixedDragMeshBoundsSize, fixedDragMeshScreenSizeDistanceFactor, onDragStartObservable, onScaleBoxDragObservable, onScaleBoxDragEndObservable, onRotationSphereDragObservable, onRotationSphereDragEndObservable, scalePivot, axisFactor, scaleDragSpeed, setColor, getScaleBoxes, updateBoundingBox, setEnabledRotationAxis, setEnabledScaling, setEnabledScaling, enableDragBehavior, coloredMaterial, hoverMaterial */ @js.native
 trait BoundingBoxGizmo
   extends StObject
      with Gizmo {
@@ -56,6 +56,8 @@ trait BoundingBoxGizmo
   
   /* private */ var _tmpVector: Any = js.native
   
+  /* protected */ def _unhoverMeshOnTouchUp(pointerInfo: Nullable[PointerInfo], selectedMesh: AbstractMesh): Unit = js.native
+  
   /* protected */ def _updateDummy(): Unit = js.native
   
   /* protected */ def _updateRotationSpheres(): Unit = js.native
@@ -75,6 +77,12 @@ trait BoundingBoxGizmo
   /** Scale factor vector used for masking some axis */
   @JSName("axisFactor")
   var axisFactor_FBoundingBoxGizmo: Vector3 = js.native
+  
+  /** Default material used to render when gizmo is not disabled or hovered */
+  def coloredMaterial: StandardMaterial = js.native
+  /** Default material used to render when gizmo is not disabled or hovered */
+  @JSName("coloredMaterial")
+  var coloredMaterial_FBoundingBoxGizmo: StandardMaterial = js.native
   
   /**
     * Enables a pointer drag behavior on the bounding box of the gizmo
@@ -104,6 +112,12 @@ trait BoundingBoxGizmo
     */
   /** Returns an array containing all boxes used for scaling (in increasing x, y and z orders) */
   def getScaleBoxes(): js.Array[AbstractMesh] = js.native
+  
+  /** Material used to render when gizmo is hovered with mouse*/
+  def hoverMaterial: StandardMaterial = js.native
+  /** Material used to render when gizmo is hovered with mouse*/
+  @JSName("hoverMaterial")
+  var hoverMaterial_FBoundingBoxGizmo: StandardMaterial = js.native
   
   /**
     * If child meshes should be ignored when calculating the bounding box. This should be set to true to avoid perf hits with heavily nested meshes (Default: false)

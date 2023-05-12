@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OracleParameters extends StObject {
   
   /**
-    * Database.
+    * The database.
     */
   var Database: typings.awsSdk.clientsQuicksightMod.Database
   
@@ -17,7 +17,7 @@ trait OracleParameters extends StObject {
   var Host: typings.awsSdk.clientsQuicksightMod.Host
   
   /**
-    * Port.
+    * The port.
     */
   var Port: typings.awsSdk.clientsQuicksightMod.Port
 }

@@ -2,9 +2,8 @@ package typings.angularCompilerCli
 
 import typings.angularCompiler.mod.R3DependencyMetadata
 import typings.angularCompilerCli.angularCompilerCliStrings.invalid
-import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.ClassDeclaration
+import typings.angularCompilerCli.anon.ClassDeclarationDeclarati
 import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.CtorParameter
-import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.DeclarationNode
 import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.ReflectionHost
 import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.UnavailableValue
 import org.scalablytyped.runtime.StObject
@@ -17,15 +16,15 @@ object srcNgtscAnnotationsCommonSrcDiMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def getConstructorDependencies(clazz: ClassDeclaration[DeclarationNode], reflector: ReflectionHost, isCore: Boolean): ConstructorDeps | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getConstructorDependencies")(clazz.asInstanceOf[js.Any], reflector.asInstanceOf[js.Any], isCore.asInstanceOf[js.Any])).asInstanceOf[ConstructorDeps | Null]
+  inline def getConstructorDependencies(clazz: ClassDeclarationDeclarati, reflector: ReflectionHost, isCore: Boolean): ConstructorDeps | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getConstructorDependencies")(clazz.asInstanceOf[js.Any], reflector.asInstanceOf[js.Any], isCore.asInstanceOf[js.Any])).asInstanceOf[ConstructorDeps | Null]
   
-  inline def getValidConstructorDependencies(clazz: ClassDeclaration[DeclarationNode], reflector: ReflectionHost, isCore: Boolean): js.Array[R3DependencyMetadata] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getValidConstructorDependencies")(clazz.asInstanceOf[js.Any], reflector.asInstanceOf[js.Any], isCore.asInstanceOf[js.Any])).asInstanceOf[js.Array[R3DependencyMetadata] | Null]
+  inline def getValidConstructorDependencies(clazz: ClassDeclarationDeclarati, reflector: ReflectionHost, isCore: Boolean): js.Array[R3DependencyMetadata] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getValidConstructorDependencies")(clazz.asInstanceOf[js.Any], reflector.asInstanceOf[js.Any], isCore.asInstanceOf[js.Any])).asInstanceOf[js.Array[R3DependencyMetadata] | Null]
   
   inline def unwrapConstructorDependencies(): js.Array[R3DependencyMetadata] | invalid | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("unwrapConstructorDependencies")().asInstanceOf[js.Array[R3DependencyMetadata] | invalid | Null]
   inline def unwrapConstructorDependencies(deps: ConstructorDeps): js.Array[R3DependencyMetadata] | invalid | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("unwrapConstructorDependencies")(deps.asInstanceOf[js.Any]).asInstanceOf[js.Array[R3DependencyMetadata] | invalid | Null]
   
-  inline def validateConstructorDependencies(clazz: ClassDeclaration[DeclarationNode]): js.Array[R3DependencyMetadata] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("validateConstructorDependencies")(clazz.asInstanceOf[js.Any]).asInstanceOf[js.Array[R3DependencyMetadata] | Null]
-  inline def validateConstructorDependencies(clazz: ClassDeclaration[DeclarationNode], deps: ConstructorDeps): js.Array[R3DependencyMetadata] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("validateConstructorDependencies")(clazz.asInstanceOf[js.Any], deps.asInstanceOf[js.Any])).asInstanceOf[js.Array[R3DependencyMetadata] | Null]
+  inline def validateConstructorDependencies(clazz: ClassDeclarationDeclarati): js.Array[R3DependencyMetadata] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("validateConstructorDependencies")(clazz.asInstanceOf[js.Any]).asInstanceOf[js.Array[R3DependencyMetadata] | Null]
+  inline def validateConstructorDependencies(clazz: ClassDeclarationDeclarati, deps: ConstructorDeps): js.Array[R3DependencyMetadata] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("validateConstructorDependencies")(clazz.asInstanceOf[js.Any], deps.asInstanceOf[js.Any])).asInstanceOf[js.Array[R3DependencyMetadata] | Null]
   
   trait ConstructorDepError extends StObject {
     

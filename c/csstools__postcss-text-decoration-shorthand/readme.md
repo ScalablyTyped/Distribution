@@ -1,7 +1,7 @@
 
 # Scala.js typings for csstools__postcss-text-decoration-shorthand
 
-Typings are for version 1.0.0
+Typings are for version 2.2.3
 
 
 

@@ -9,5 +9,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class AggregateField[T] () extends StObject {
   
   /** A type string to uniquely identify instances of this class. */
-  var `type`: String = js.native
+  val `type`: /* "AggregateField" */ String = js.native
 }

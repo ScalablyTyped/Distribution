@@ -88,7 +88,7 @@ object Plugin {
   inline def register(plugin: typings.phaser.MatterJS.Plugin): typings.phaser.MatterJS.Plugin = ^.asInstanceOf[js.Dynamic].applyDynamic("register")(plugin.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.MatterJS.Plugin]
   
   /**
-    * Resolves a dependency to a plugin object from the registry if it exists. 
+    * Resolves a dependency to a plugin object from the registry if it exists.
     * The `dependency` may contain a version, but only the name matters when resolving.
     * @method resolve
     * @param dependency {string} The dependency.

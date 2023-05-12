@@ -5,9 +5,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CloudCommunications
-  extends StObject
-     with Entity {
+trait CloudCommunications extends StObject {
   
   var callRecords: js.UndefOr[NullableOption[js.Array[CallRecord]]] = js.undefined
   

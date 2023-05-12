@@ -2,9 +2,9 @@ package typings.firebaseStorage
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.firebaseApp.mod.FirebaseApp
+import typings.firebaseStorage.distNodeEsmSrcImplementationErrorMod.StorageError
 import typings.firebaseStorage.firebaseStorageStrings.state_changed
 import typings.firebaseUtil.mod.CompleteFn
-import typings.firebaseUtil.mod.FirebaseError
 import typings.firebaseUtil.mod.NextFn
 import typings.firebaseUtil.mod.Subscribe
 import typings.firebaseUtil.mod.Unsubscribe
@@ -306,15 +306,6 @@ object distNodeEsmSrcPublicTypesMod {
       
       inline def setCustomMetadataUndefined: Self = StObject.set(x, "customMetadata", js.undefined)
     }
-  }
-  
-  @js.native
-  trait StorageError extends FirebaseError {
-    
-    /**
-      * A server response message for the error, if applicable.
-      */
-    var serverResponse: String | Null = js.native
   }
   
   trait StorageObserver[T] extends StObject {

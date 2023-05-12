@@ -29,15 +29,10 @@ trait GPUCanvasContext extends StObject {
     * Get the {@link GPUTexture} that will be composited to the document by the {@link GPUCanvasContext}
     * next.
     * Note: The same {@link GPUTexture} object will be returned by every
-    * call to {@link GPUCanvasContext#getCurrentTexture} made within the same frame (i.e. between
-    * invocations of "[$update the rendering of the WebGPU canvas$]"), even if that {@link GPUTexture}
-    * is destroyed, failed validation, or failed to allocate, **unless** the current texture has
-    * been removed (in [$Replace the drawing buffer$]).
+    * call to {@link GPUCanvasContext#getCurrentTexture} until "[$Expire the current texture$]"
+    * runs, even if that {@link GPUTexture} is destroyed, failed validation, or failed to allocate.
     */
   def getCurrentTexture(): GPUTexture
-  
-  /** @deprecated Use {@link GPU#getPreferredCanvasFormat} instead. */
-  def getPreferredFormat(adapter: GPUAdapter): GPUTextureFormat
   
   /**
     * Removes the context configuration. Destroys any textures produced while configured.
@@ -50,10 +45,9 @@ object GPUCanvasContext {
     canvas: HTMLCanvasElement | OffscreenCanvas,
     configure: GPUCanvasConfiguration => Unit,
     getCurrentTexture: () => GPUTexture,
-    getPreferredFormat: GPUAdapter => GPUTextureFormat,
     unconfigure: () => Unit
   ): GPUCanvasContext = {
-    val __obj = js.Dynamic.literal(__brand = "GPUCanvasContext", canvas = canvas.asInstanceOf[js.Any], configure = js.Any.fromFunction1(configure), getCurrentTexture = js.Any.fromFunction0(getCurrentTexture), getPreferredFormat = js.Any.fromFunction1(getPreferredFormat), unconfigure = js.Any.fromFunction0(unconfigure))
+    val __obj = js.Dynamic.literal(__brand = "GPUCanvasContext", canvas = canvas.asInstanceOf[js.Any], configure = js.Any.fromFunction1(configure), getCurrentTexture = js.Any.fromFunction0(getCurrentTexture), unconfigure = js.Any.fromFunction0(unconfigure))
     __obj.asInstanceOf[GPUCanvasContext]
   }
   
@@ -65,8 +59,6 @@ object GPUCanvasContext {
     inline def setConfigure(value: GPUCanvasConfiguration => Unit): Self = StObject.set(x, "configure", js.Any.fromFunction1(value))
     
     inline def setGetCurrentTexture(value: () => GPUTexture): Self = StObject.set(x, "getCurrentTexture", js.Any.fromFunction0(value))
-    
-    inline def setGetPreferredFormat(value: GPUAdapter => GPUTextureFormat): Self = StObject.set(x, "getPreferredFormat", js.Any.fromFunction1(value))
     
     inline def setUnconfigure(value: () => Unit): Self = StObject.set(x, "unconfigure", js.Any.fromFunction0(value))
     

@@ -17,7 +17,7 @@ object websocketMod {
   open class WebsocketClient protected () extends Observable[String] {
     /**
       * @param {string} url
-      * @param {object} [opts]
+      * @param {object} opts
       * @param {'arraybuffer' | 'blob' | null} [opts.binaryType] Set `ws.binaryType`
       */
     def this(url: String) = this()

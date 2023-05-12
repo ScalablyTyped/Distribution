@@ -17,15 +17,23 @@ trait TypeofSimulate extends StObject {
   
   val animationStart: EventSimulator
   
+  val auxClick: EventSimulator
+  
+  val beforeInput: EventSimulator
+  
   val blur: EventSimulator
   
   val canPlay: EventSimulator
   
   val canPlayThrough: EventSimulator
   
+  val cancel: EventSimulator
+  
   val change: EventSimulator
   
   val click: EventSimulator
+  
+  val close: EventSimulator
   
   val compositionEnd: EventSimulator
   
@@ -69,6 +77,8 @@ trait TypeofSimulate extends StObject {
   
   val focus: EventSimulator
   
+  val gotPointerCapture: EventSimulator
+  
   val input: EventSimulator
   
   val invalid: EventSimulator
@@ -86,6 +96,8 @@ trait TypeofSimulate extends StObject {
   val loadedData: EventSimulator
   
   val loadedMetadata: EventSimulator
+  
+  val lostPointerCapture: EventSimulator
   
   val mouseDown: EventSimulator
   
@@ -109,9 +121,29 @@ trait TypeofSimulate extends StObject {
   
   val playing: EventSimulator
   
+  val pointerCancel: EventSimulator
+  
+  val pointerDown: EventSimulator
+  
+  val pointerEnter: EventSimulator
+  
+  val pointerLeave: EventSimulator
+  
+  val pointerMove: EventSimulator
+  
+  val pointerOut: EventSimulator
+  
+  val pointerOver: EventSimulator
+  
+  val pointerUp: EventSimulator
+  
   val progress: EventSimulator
   
   val rateChange: EventSimulator
+  
+  val reset: EventSimulator
+  
+  val resize: EventSimulator
   
   val scroll: EventSimulator
   
@@ -128,6 +160,8 @@ trait TypeofSimulate extends StObject {
   val suspend: EventSimulator
   
   val timeUpdate: EventSimulator
+  
+  val toggle: EventSimulator
   
   val touchCancel: EventSimulator
   
@@ -152,11 +186,15 @@ object TypeofSimulate {
     animationEnd: (/* element */ typings.std.Element | (Component[Any, js.Object, Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit,
     animationIteration: (/* element */ typings.std.Element | (Component[Any, js.Object, Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit,
     animationStart: (/* element */ typings.std.Element | (Component[Any, js.Object, Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit,
+    auxClick: (/* element */ typings.std.Element | (Component[Any, js.Object, Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit,
+    beforeInput: (/* element */ typings.std.Element | (Component[Any, js.Object, Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit,
     blur: (/* element */ typings.std.Element | (Component[Any, js.Object, Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit,
     canPlay: (/* element */ typings.std.Element | (Component[Any, js.Object, Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit,
     canPlayThrough: (/* element */ typings.std.Element | (Component[Any, js.Object, Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit,
+    cancel: (/* element */ typings.std.Element | (Component[Any, js.Object, Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit,
     change: (/* element */ typings.std.Element | (Component[Any, js.Object, Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit,
     click: (/* element */ typings.std.Element | (Component[Any, js.Object, Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit,
+    close: (/* element */ typings.std.Element | (Component[Any, js.Object, Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit,
     compositionEnd: (/* element */ typings.std.Element | (Component[Any, js.Object, Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit,
     compositionStart: (/* element */ typings.std.Element | (Component[Any, js.Object, Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit,
     compositionUpdate: (/* element */ typings.std.Element | (Component[Any, js.Object, Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit,
@@ -178,6 +216,7 @@ object TypeofSimulate {
     ended: (/* element */ typings.std.Element | (Component[Any, js.Object, Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit,
     error: (/* element */ typings.std.Element | (Component[Any, js.Object, Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit,
     focus: (/* element */ typings.std.Element | (Component[Any, js.Object, Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit,
+    gotPointerCapture: (/* element */ typings.std.Element | (Component[Any, js.Object, Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit,
     input: (/* element */ typings.std.Element | (Component[Any, js.Object, Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit,
     invalid: (/* element */ typings.std.Element | (Component[Any, js.Object, Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit,
     keyDown: (/* element */ typings.std.Element | (Component[Any, js.Object, Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit,
@@ -187,6 +226,7 @@ object TypeofSimulate {
     loadStart: (/* element */ typings.std.Element | (Component[Any, js.Object, Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit,
     loadedData: (/* element */ typings.std.Element | (Component[Any, js.Object, Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit,
     loadedMetadata: (/* element */ typings.std.Element | (Component[Any, js.Object, Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit,
+    lostPointerCapture: (/* element */ typings.std.Element | (Component[Any, js.Object, Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit,
     mouseDown: (/* element */ typings.std.Element | (Component[Any, js.Object, Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit,
     mouseEnter: (/* element */ typings.std.Element | (Component[Any, js.Object, Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit,
     mouseLeave: (/* element */ typings.std.Element | (Component[Any, js.Object, Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit,
@@ -198,8 +238,18 @@ object TypeofSimulate {
     pause: (/* element */ typings.std.Element | (Component[Any, js.Object, Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit,
     play: (/* element */ typings.std.Element | (Component[Any, js.Object, Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit,
     playing: (/* element */ typings.std.Element | (Component[Any, js.Object, Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit,
+    pointerCancel: (/* element */ typings.std.Element | (Component[Any, js.Object, Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit,
+    pointerDown: (/* element */ typings.std.Element | (Component[Any, js.Object, Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit,
+    pointerEnter: (/* element */ typings.std.Element | (Component[Any, js.Object, Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit,
+    pointerLeave: (/* element */ typings.std.Element | (Component[Any, js.Object, Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit,
+    pointerMove: (/* element */ typings.std.Element | (Component[Any, js.Object, Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit,
+    pointerOut: (/* element */ typings.std.Element | (Component[Any, js.Object, Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit,
+    pointerOver: (/* element */ typings.std.Element | (Component[Any, js.Object, Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit,
+    pointerUp: (/* element */ typings.std.Element | (Component[Any, js.Object, Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit,
     progress: (/* element */ typings.std.Element | (Component[Any, js.Object, Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit,
     rateChange: (/* element */ typings.std.Element | (Component[Any, js.Object, Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit,
+    reset: (/* element */ typings.std.Element | (Component[Any, js.Object, Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit,
+    resize: (/* element */ typings.std.Element | (Component[Any, js.Object, Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit,
     scroll: (/* element */ typings.std.Element | (Component[Any, js.Object, Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit,
     seeked: (/* element */ typings.std.Element | (Component[Any, js.Object, Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit,
     seeking: (/* element */ typings.std.Element | (Component[Any, js.Object, Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit,
@@ -208,6 +258,7 @@ object TypeofSimulate {
     submit: (/* element */ typings.std.Element | (Component[Any, js.Object, Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit,
     suspend: (/* element */ typings.std.Element | (Component[Any, js.Object, Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit,
     timeUpdate: (/* element */ typings.std.Element | (Component[Any, js.Object, Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit,
+    toggle: (/* element */ typings.std.Element | (Component[Any, js.Object, Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit,
     touchCancel: (/* element */ typings.std.Element | (Component[Any, js.Object, Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit,
     touchEnd: (/* element */ typings.std.Element | (Component[Any, js.Object, Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit,
     touchMove: (/* element */ typings.std.Element | (Component[Any, js.Object, Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit,
@@ -217,7 +268,7 @@ object TypeofSimulate {
     waiting: (/* element */ typings.std.Element | (Component[Any, js.Object, Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit,
     wheel: (/* element */ typings.std.Element | (Component[Any, js.Object, Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
   ): TypeofSimulate = {
-    val __obj = js.Dynamic.literal(abort = js.Any.fromFunction2(abort), animationEnd = js.Any.fromFunction2(animationEnd), animationIteration = js.Any.fromFunction2(animationIteration), animationStart = js.Any.fromFunction2(animationStart), blur = js.Any.fromFunction2(blur), canPlay = js.Any.fromFunction2(canPlay), canPlayThrough = js.Any.fromFunction2(canPlayThrough), change = js.Any.fromFunction2(change), click = js.Any.fromFunction2(click), compositionEnd = js.Any.fromFunction2(compositionEnd), compositionStart = js.Any.fromFunction2(compositionStart), compositionUpdate = js.Any.fromFunction2(compositionUpdate), contextMenu = js.Any.fromFunction2(contextMenu), copy = js.Any.fromFunction2(copy), cut = js.Any.fromFunction2(cut), doubleClick = js.Any.fromFunction2(doubleClick), drag = js.Any.fromFunction2(drag), dragEnd = js.Any.fromFunction2(dragEnd), dragEnter = js.Any.fromFunction2(dragEnter), dragExit = js.Any.fromFunction2(dragExit), dragLeave = js.Any.fromFunction2(dragLeave), dragOver = js.Any.fromFunction2(dragOver), dragStart = js.Any.fromFunction2(dragStart), drop = js.Any.fromFunction2(drop), durationChange = js.Any.fromFunction2(durationChange), emptied = js.Any.fromFunction2(emptied), encrypted = js.Any.fromFunction2(encrypted), ended = js.Any.fromFunction2(ended), error = js.Any.fromFunction2(error), focus = js.Any.fromFunction2(focus), input = js.Any.fromFunction2(input), invalid = js.Any.fromFunction2(invalid), keyDown = js.Any.fromFunction2(keyDown), keyPress = js.Any.fromFunction2(keyPress), keyUp = js.Any.fromFunction2(keyUp), load = js.Any.fromFunction2(load), loadStart = js.Any.fromFunction2(loadStart), loadedData = js.Any.fromFunction2(loadedData), loadedMetadata = js.Any.fromFunction2(loadedMetadata), mouseDown = js.Any.fromFunction2(mouseDown), mouseEnter = js.Any.fromFunction2(mouseEnter), mouseLeave = js.Any.fromFunction2(mouseLeave), mouseMove = js.Any.fromFunction2(mouseMove), mouseOut = js.Any.fromFunction2(mouseOut), mouseOver = js.Any.fromFunction2(mouseOver), mouseUp = js.Any.fromFunction2(mouseUp), paste = js.Any.fromFunction2(paste), pause = js.Any.fromFunction2(pause), play = js.Any.fromFunction2(play), playing = js.Any.fromFunction2(playing), progress = js.Any.fromFunction2(progress), rateChange = js.Any.fromFunction2(rateChange), scroll = js.Any.fromFunction2(scroll), seeked = js.Any.fromFunction2(seeked), seeking = js.Any.fromFunction2(seeking), select = js.Any.fromFunction2(select), stalled = js.Any.fromFunction2(stalled), submit = js.Any.fromFunction2(submit), suspend = js.Any.fromFunction2(suspend), timeUpdate = js.Any.fromFunction2(timeUpdate), touchCancel = js.Any.fromFunction2(touchCancel), touchEnd = js.Any.fromFunction2(touchEnd), touchMove = js.Any.fromFunction2(touchMove), touchStart = js.Any.fromFunction2(touchStart), transitionEnd = js.Any.fromFunction2(transitionEnd), volumeChange = js.Any.fromFunction2(volumeChange), waiting = js.Any.fromFunction2(waiting), wheel = js.Any.fromFunction2(wheel))
+    val __obj = js.Dynamic.literal(abort = js.Any.fromFunction2(abort), animationEnd = js.Any.fromFunction2(animationEnd), animationIteration = js.Any.fromFunction2(animationIteration), animationStart = js.Any.fromFunction2(animationStart), auxClick = js.Any.fromFunction2(auxClick), beforeInput = js.Any.fromFunction2(beforeInput), blur = js.Any.fromFunction2(blur), canPlay = js.Any.fromFunction2(canPlay), canPlayThrough = js.Any.fromFunction2(canPlayThrough), cancel = js.Any.fromFunction2(cancel), change = js.Any.fromFunction2(change), click = js.Any.fromFunction2(click), close = js.Any.fromFunction2(close), compositionEnd = js.Any.fromFunction2(compositionEnd), compositionStart = js.Any.fromFunction2(compositionStart), compositionUpdate = js.Any.fromFunction2(compositionUpdate), contextMenu = js.Any.fromFunction2(contextMenu), copy = js.Any.fromFunction2(copy), cut = js.Any.fromFunction2(cut), doubleClick = js.Any.fromFunction2(doubleClick), drag = js.Any.fromFunction2(drag), dragEnd = js.Any.fromFunction2(dragEnd), dragEnter = js.Any.fromFunction2(dragEnter), dragExit = js.Any.fromFunction2(dragExit), dragLeave = js.Any.fromFunction2(dragLeave), dragOver = js.Any.fromFunction2(dragOver), dragStart = js.Any.fromFunction2(dragStart), drop = js.Any.fromFunction2(drop), durationChange = js.Any.fromFunction2(durationChange), emptied = js.Any.fromFunction2(emptied), encrypted = js.Any.fromFunction2(encrypted), ended = js.Any.fromFunction2(ended), error = js.Any.fromFunction2(error), focus = js.Any.fromFunction2(focus), gotPointerCapture = js.Any.fromFunction2(gotPointerCapture), input = js.Any.fromFunction2(input), invalid = js.Any.fromFunction2(invalid), keyDown = js.Any.fromFunction2(keyDown), keyPress = js.Any.fromFunction2(keyPress), keyUp = js.Any.fromFunction2(keyUp), load = js.Any.fromFunction2(load), loadStart = js.Any.fromFunction2(loadStart), loadedData = js.Any.fromFunction2(loadedData), loadedMetadata = js.Any.fromFunction2(loadedMetadata), lostPointerCapture = js.Any.fromFunction2(lostPointerCapture), mouseDown = js.Any.fromFunction2(mouseDown), mouseEnter = js.Any.fromFunction2(mouseEnter), mouseLeave = js.Any.fromFunction2(mouseLeave), mouseMove = js.Any.fromFunction2(mouseMove), mouseOut = js.Any.fromFunction2(mouseOut), mouseOver = js.Any.fromFunction2(mouseOver), mouseUp = js.Any.fromFunction2(mouseUp), paste = js.Any.fromFunction2(paste), pause = js.Any.fromFunction2(pause), play = js.Any.fromFunction2(play), playing = js.Any.fromFunction2(playing), pointerCancel = js.Any.fromFunction2(pointerCancel), pointerDown = js.Any.fromFunction2(pointerDown), pointerEnter = js.Any.fromFunction2(pointerEnter), pointerLeave = js.Any.fromFunction2(pointerLeave), pointerMove = js.Any.fromFunction2(pointerMove), pointerOut = js.Any.fromFunction2(pointerOut), pointerOver = js.Any.fromFunction2(pointerOver), pointerUp = js.Any.fromFunction2(pointerUp), progress = js.Any.fromFunction2(progress), rateChange = js.Any.fromFunction2(rateChange), reset = js.Any.fromFunction2(reset), resize = js.Any.fromFunction2(resize), scroll = js.Any.fromFunction2(scroll), seeked = js.Any.fromFunction2(seeked), seeking = js.Any.fromFunction2(seeking), select = js.Any.fromFunction2(select), stalled = js.Any.fromFunction2(stalled), submit = js.Any.fromFunction2(submit), suspend = js.Any.fromFunction2(suspend), timeUpdate = js.Any.fromFunction2(timeUpdate), toggle = js.Any.fromFunction2(toggle), touchCancel = js.Any.fromFunction2(touchCancel), touchEnd = js.Any.fromFunction2(touchEnd), touchMove = js.Any.fromFunction2(touchMove), touchStart = js.Any.fromFunction2(touchStart), transitionEnd = js.Any.fromFunction2(transitionEnd), volumeChange = js.Any.fromFunction2(volumeChange), waiting = js.Any.fromFunction2(waiting), wheel = js.Any.fromFunction2(wheel))
     __obj.asInstanceOf[TypeofSimulate]
   }
   
@@ -240,6 +291,14 @@ object TypeofSimulate {
       value: (/* element */ typings.std.Element | (Component[Any, js.Object, Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
     ): Self = StObject.set(x, "animationStart", js.Any.fromFunction2(value))
     
+    inline def setAuxClick(
+      value: (/* element */ typings.std.Element | (Component[Any, js.Object, Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
+    ): Self = StObject.set(x, "auxClick", js.Any.fromFunction2(value))
+    
+    inline def setBeforeInput(
+      value: (/* element */ typings.std.Element | (Component[Any, js.Object, Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
+    ): Self = StObject.set(x, "beforeInput", js.Any.fromFunction2(value))
+    
     inline def setBlur(
       value: (/* element */ typings.std.Element | (Component[Any, js.Object, Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
     ): Self = StObject.set(x, "blur", js.Any.fromFunction2(value))
@@ -252,6 +311,10 @@ object TypeofSimulate {
       value: (/* element */ typings.std.Element | (Component[Any, js.Object, Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
     ): Self = StObject.set(x, "canPlayThrough", js.Any.fromFunction2(value))
     
+    inline def setCancel(
+      value: (/* element */ typings.std.Element | (Component[Any, js.Object, Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
+    ): Self = StObject.set(x, "cancel", js.Any.fromFunction2(value))
+    
     inline def setChange(
       value: (/* element */ typings.std.Element | (Component[Any, js.Object, Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
     ): Self = StObject.set(x, "change", js.Any.fromFunction2(value))
@@ -259,6 +322,10 @@ object TypeofSimulate {
     inline def setClick(
       value: (/* element */ typings.std.Element | (Component[Any, js.Object, Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
     ): Self = StObject.set(x, "click", js.Any.fromFunction2(value))
+    
+    inline def setClose(
+      value: (/* element */ typings.std.Element | (Component[Any, js.Object, Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
+    ): Self = StObject.set(x, "close", js.Any.fromFunction2(value))
     
     inline def setCompositionEnd(
       value: (/* element */ typings.std.Element | (Component[Any, js.Object, Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
@@ -344,6 +411,10 @@ object TypeofSimulate {
       value: (/* element */ typings.std.Element | (Component[Any, js.Object, Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
     ): Self = StObject.set(x, "focus", js.Any.fromFunction2(value))
     
+    inline def setGotPointerCapture(
+      value: (/* element */ typings.std.Element | (Component[Any, js.Object, Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
+    ): Self = StObject.set(x, "gotPointerCapture", js.Any.fromFunction2(value))
+    
     inline def setInput(
       value: (/* element */ typings.std.Element | (Component[Any, js.Object, Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
     ): Self = StObject.set(x, "input", js.Any.fromFunction2(value))
@@ -379,6 +450,10 @@ object TypeofSimulate {
     inline def setLoadedMetadata(
       value: (/* element */ typings.std.Element | (Component[Any, js.Object, Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
     ): Self = StObject.set(x, "loadedMetadata", js.Any.fromFunction2(value))
+    
+    inline def setLostPointerCapture(
+      value: (/* element */ typings.std.Element | (Component[Any, js.Object, Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
+    ): Self = StObject.set(x, "lostPointerCapture", js.Any.fromFunction2(value))
     
     inline def setMouseDown(
       value: (/* element */ typings.std.Element | (Component[Any, js.Object, Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
@@ -424,6 +499,38 @@ object TypeofSimulate {
       value: (/* element */ typings.std.Element | (Component[Any, js.Object, Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
     ): Self = StObject.set(x, "playing", js.Any.fromFunction2(value))
     
+    inline def setPointerCancel(
+      value: (/* element */ typings.std.Element | (Component[Any, js.Object, Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
+    ): Self = StObject.set(x, "pointerCancel", js.Any.fromFunction2(value))
+    
+    inline def setPointerDown(
+      value: (/* element */ typings.std.Element | (Component[Any, js.Object, Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
+    ): Self = StObject.set(x, "pointerDown", js.Any.fromFunction2(value))
+    
+    inline def setPointerEnter(
+      value: (/* element */ typings.std.Element | (Component[Any, js.Object, Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
+    ): Self = StObject.set(x, "pointerEnter", js.Any.fromFunction2(value))
+    
+    inline def setPointerLeave(
+      value: (/* element */ typings.std.Element | (Component[Any, js.Object, Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
+    ): Self = StObject.set(x, "pointerLeave", js.Any.fromFunction2(value))
+    
+    inline def setPointerMove(
+      value: (/* element */ typings.std.Element | (Component[Any, js.Object, Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
+    ): Self = StObject.set(x, "pointerMove", js.Any.fromFunction2(value))
+    
+    inline def setPointerOut(
+      value: (/* element */ typings.std.Element | (Component[Any, js.Object, Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
+    ): Self = StObject.set(x, "pointerOut", js.Any.fromFunction2(value))
+    
+    inline def setPointerOver(
+      value: (/* element */ typings.std.Element | (Component[Any, js.Object, Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
+    ): Self = StObject.set(x, "pointerOver", js.Any.fromFunction2(value))
+    
+    inline def setPointerUp(
+      value: (/* element */ typings.std.Element | (Component[Any, js.Object, Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
+    ): Self = StObject.set(x, "pointerUp", js.Any.fromFunction2(value))
+    
     inline def setProgress(
       value: (/* element */ typings.std.Element | (Component[Any, js.Object, Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
     ): Self = StObject.set(x, "progress", js.Any.fromFunction2(value))
@@ -431,6 +538,14 @@ object TypeofSimulate {
     inline def setRateChange(
       value: (/* element */ typings.std.Element | (Component[Any, js.Object, Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
     ): Self = StObject.set(x, "rateChange", js.Any.fromFunction2(value))
+    
+    inline def setReset(
+      value: (/* element */ typings.std.Element | (Component[Any, js.Object, Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
+    ): Self = StObject.set(x, "reset", js.Any.fromFunction2(value))
+    
+    inline def setResize(
+      value: (/* element */ typings.std.Element | (Component[Any, js.Object, Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
+    ): Self = StObject.set(x, "resize", js.Any.fromFunction2(value))
     
     inline def setScroll(
       value: (/* element */ typings.std.Element | (Component[Any, js.Object, Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
@@ -463,6 +578,10 @@ object TypeofSimulate {
     inline def setTimeUpdate(
       value: (/* element */ typings.std.Element | (Component[Any, js.Object, Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
     ): Self = StObject.set(x, "timeUpdate", js.Any.fromFunction2(value))
+    
+    inline def setToggle(
+      value: (/* element */ typings.std.Element | (Component[Any, js.Object, Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
+    ): Self = StObject.set(x, "toggle", js.Any.fromFunction2(value))
     
     inline def setTouchCancel(
       value: (/* element */ typings.std.Element | (Component[Any, js.Object, Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit

@@ -8,21 +8,15 @@ object libRestProxyMod {
   
   @JSImport("twilio/lib/rest/Proxy", JSImport.Namespace)
   @js.native
-  open class ^ protected () extends Proxy {
-    /**
-      * Initialize proxy domain
-      *
-      * @param twilio - The twilio client
-      */
-    def this(twilio: typings.twilio.libRestTwilioMod.^) = this()
-  }
+  open class ^ () extends Proxy
   
   @js.native
   trait Proxy
-    extends typings.twilio.libBaseDomainMod.^ {
+    extends typings.twilio.libRestProxyBaseMod.^ {
     
-    val services: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ServiceListInstance */ Any = js.native
-    
-    val v1: typings.twilio.libRestProxyV1Mod.^ = js.native
+    /**
+      * @deprecated - Use v1.services instead
+      */
+    def services: Any = js.native
   }
 }

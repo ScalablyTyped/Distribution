@@ -12,7 +12,7 @@ trait CreatePlaceIndexResponse extends StObject {
   var CreateTime: js.Date
   
   /**
-    * The Amazon Resource Name (ARN) for the place index resource. Used to specify a resource across AWS.    Format example: arn:aws:geo:region:account-id:place-index/ExamplePlaceIndex   
+    * The Amazon Resource Name (ARN) for the place index resource. Used to specify a resource across Amazon Web Services.    Format example: arn:aws:geo:region:account-id:place-index/ExamplePlaceIndex   
     */
   var IndexArn: Arn
   

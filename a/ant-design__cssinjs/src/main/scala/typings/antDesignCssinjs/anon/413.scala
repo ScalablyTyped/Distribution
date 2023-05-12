@@ -1,7 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.antDesignCssinjs.esKeyframesMod.default
-import typings.csstype.mod.Property.AnimationName
+import typings.csstype.mod.Property.BorderBlockEndStyle
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -12,11 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `413` extends StObject {
   
   var value: js.UndefOr[
-    AnimationName | (js.Array[
+    BorderBlockEndStyle | (js.Array[
       (Extract[
-        js.UndefOr[AnimationName | js.Array[NonNullable[js.UndefOr[AnimationName]]] | default], 
+        js.UndefOr[BorderBlockEndStyle | js.Array[NonNullable[js.UndefOr[BorderBlockEndStyle]]]], 
         String
-      ]) | NonNullable[js.UndefOr[AnimationName]]
-    ]) | default
+      ]) | NonNullable[js.UndefOr[BorderBlockEndStyle]]
+    ])
   ] = js.native
 }

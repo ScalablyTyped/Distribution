@@ -1,7 +1,7 @@
 
 # Scala.js typings for is-builtin-module
 
-Typings are for version 3.2.0
+Typings are for version 3.2.1
 
 ## Library description:
 Check if a string matches the name of a Node.js builtin module

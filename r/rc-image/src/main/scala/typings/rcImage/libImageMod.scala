@@ -63,7 +63,7 @@ import typings.rcImage.rcImageStrings.tree
 import typings.rcImage.rcImageStrings.url
 import typings.rcImage.rcImageStrings.vertical
 import typings.rcImage.rcImageStrings.yes
-import typings.rcUtil.libPortalWrapperMod.GetContainer
+import typings.rcUtil.esPortalWrapperMod.GetContainer
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
@@ -129,6 +129,8 @@ object libImageMod extends Shortcut {
   /* Inlined parent std.Omit<rc-dialog.rc-dialog/es/IDialogPropTypes.IDialogPropTypes, 'mask' | 'visible' | 'closable' | 'prefixCls' | 'onClose' | 'afterClose' | 'wrapClassName'> */
   trait ImagePreviewType extends StObject {
     
+    var afterOpenChange: js.UndefOr[js.Function1[/* open */ Boolean, Unit]] = js.undefined
+    
     var animation: js.UndefOr[Any] = js.undefined
     
     var bodyProps: js.UndefOr[Any] = js.undefined
@@ -175,7 +177,14 @@ object libImageMod extends Shortcut {
     
     var mousePosition: js.UndefOr[X | Null] = js.undefined
     
-    var onVisibleChange: js.UndefOr[js.Function2[/* value */ Boolean, /* prevValue */ Boolean, Unit]] = js.undefined
+    var onVisibleChange: js.UndefOr[
+        js.Function3[
+          /* value */ Boolean, 
+          /* prevValue */ Boolean, 
+          /* currentIndex */ js.UndefOr[Double], 
+          Unit
+        ]
+      ] = js.undefined
     
     var rootClassName: js.UndefOr[String] = js.undefined
     
@@ -208,6 +217,10 @@ object libImageMod extends Shortcut {
     
     @scala.inline
     implicit open class MutableBuilder[Self <: ImagePreviewType] (val x: Self) extends AnyVal {
+      
+      inline def setAfterOpenChange(value: /* open */ Boolean => Unit): Self = StObject.set(x, "afterOpenChange", js.Any.fromFunction1(value))
+      
+      inline def setAfterOpenChangeUndefined: Self = StObject.set(x, "afterOpenChange", js.undefined)
       
       inline def setAnimation(value: Any): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
@@ -305,7 +318,9 @@ object libImageMod extends Shortcut {
       
       inline def setMousePositionUndefined: Self = StObject.set(x, "mousePosition", js.undefined)
       
-      inline def setOnVisibleChange(value: (/* value */ Boolean, /* prevValue */ Boolean) => Unit): Self = StObject.set(x, "onVisibleChange", js.Any.fromFunction2(value))
+      inline def setOnVisibleChange(
+        value: (/* value */ Boolean, /* prevValue */ Boolean, /* currentIndex */ js.UndefOr[Double]) => Unit
+      ): Self = StObject.set(x, "onVisibleChange", js.Any.fromFunction3(value))
       
       inline def setOnVisibleChangeUndefined: Self = StObject.set(x, "onVisibleChange", js.undefined)
       
@@ -466,6 +481,8 @@ object libImageMod extends Shortcut {
     
     var autoCorrect: js.UndefOr[String] = js.undefined
     
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
+    
     var autoSave: js.UndefOr[String] = js.undefined
     
     var children: js.UndefOr[ReactNode] = js.undefined
@@ -473,6 +490,8 @@ object libImageMod extends Shortcut {
     var className: js.UndefOr[String] = js.undefined
     
     var color: js.UndefOr[String] = js.undefined
+    
+    var content: js.UndefOr[String] = js.undefined
     
     var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
@@ -705,9 +724,13 @@ object libImageMod extends Shortcut {
     
     var referrerPolicy: js.UndefOr[HTMLAttributeReferrerPolicy] = js.undefined
     
+    var rel: js.UndefOr[String] = js.undefined
+    
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
+    
+    var rev: js.UndefOr[String] = js.undefined
     
     var role: js.UndefOr[AriaRole] = js.undefined
     
@@ -975,6 +998,10 @@ object libImageMod extends Shortcut {
       
       inline def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
       
+      inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+      
+      inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+      
       inline def setAutoSave(value: String): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
       
       inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
@@ -991,9 +1018,13 @@ object libImageMod extends Shortcut {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
       inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
       inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
@@ -1449,6 +1480,10 @@ object libImageMod extends Shortcut {
       
       inline def setReferrerPolicyUndefined: Self = StObject.set(x, "referrerPolicy", js.undefined)
       
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      
+      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+      
       inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
       inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
@@ -1456,6 +1491,10 @@ object libImageMod extends Shortcut {
       inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+      
+      inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+      
+      inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
       
       inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       

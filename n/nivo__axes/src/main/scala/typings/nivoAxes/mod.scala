@@ -22,6 +22,7 @@ import typings.propTypes.mod.Requireable
 import typings.react.mod.MemoExoticComponent
 import typings.react.mod.global.JSX.Element
 import typings.std.CanvasRenderingContext2D
+import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -69,8 +70,8 @@ object mod {
     
     @JSImport("@nivo/axes", "axisPropTypes.format")
     @js.native
-    def format: Requireable[String | (js.Function1[/* repeated */ Any, Any])] = js.native
-    inline def format_=(x: Requireable[String | (js.Function1[/* repeated */ Any, Any])]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("format")(x.asInstanceOf[js.Any])
+    def format: Requireable[NonNullable[js.UndefOr[String | (js.Function1[/* repeated */ Any, Any]) | Null]]] = js.native
+    inline def format_=(x: Requireable[NonNullable[js.UndefOr[String | (js.Function1[/* repeated */ Any, Any]) | Null]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("format")(x.asInstanceOf[js.Any])
     
     @JSImport("@nivo/axes", "axisPropTypes.legend")
     @js.native
@@ -110,8 +111,22 @@ object mod {
     
     @JSImport("@nivo/axes", "axisPropTypes.tickValues")
     @js.native
-    def tickValues: Requireable[String | Double | (js.Array[js.UndefOr[String | Double | js.Date | Null]])] = js.native
-    inline def tickValues_=(x: Requireable[String | Double | (js.Array[js.UndefOr[String | Double | js.Date | Null]])]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tickValues")(x.asInstanceOf[js.Any])
+    def tickValues: Requireable[
+        NonNullable[
+          js.UndefOr[
+            String | Double | (js.Array[js.UndefOr[(NonNullable[js.UndefOr[String | Double | js.Date | Null]]) | Null]]) | Null
+          ]
+        ]
+      ] = js.native
+    inline def tickValues_=(
+      x: Requireable[
+          NonNullable[
+            js.UndefOr[
+              String | Double | (js.Array[js.UndefOr[(NonNullable[js.UndefOr[String | Double | js.Date | Null]]) | Null]]) | Null
+            ]
+          ]
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tickValues")(x.asInstanceOf[js.Any])
     
     @JSImport("@nivo/axes", "axisPropTypes.ticksPosition")
     @js.native

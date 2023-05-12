@@ -22,19 +22,19 @@ object libTexturesTextureGCSystemMod {
     def this(renderer: Renderer) = this()
     
     /**
-      * Check count
+      * Frame count since last garbage collection.
       * @readonly
       */
     var checkCount: Double = js.native
     
     /**
-      * Maximum number of item to check
-      * @see PIXI.settings.GC_MAX_CHECK_COUNT
+      * Frames between two garbage collections.
+      * @see PIXI.TextureGCSystem.defaultCheckCountMax
       */
     var checkCountMax: Double = js.native
     
     /**
-      * Count
+      * Frame count since started.
       * @readonly
       */
     var count: Double = js.native
@@ -43,39 +43,77 @@ object libTexturesTextureGCSystemMod {
     def destroy_MTextureGCSystem(): Unit = js.native
     
     /**
-      * Maximum idle time, in seconds
-      * @see PIXI.settings.GC_MAX_IDLE
+      * Maximum idle frames before a texture is destroyed by garbage collection.
+      * @see PIXI.TextureGCSystem.defaultMaxIdle
       */
     var maxIdle: Double = js.native
     
     /**
-      * Current garbage collection mode
-      * @see PIXI.settings.GC_MODE
+      * Current garbage collection mode.
+      * @see PIXI.TextureGCSystem.defaultMode
       */
     var mode: GC_MODES = js.native
     
     /**
-      * Checks to see when the last time a texture was used
-      * if the texture has not been used for a specified amount of time it will be removed from the GPU
+      * Checks to see when the last time a texture was used.
+      * If the texture has not been used for a specified amount of time, it will be removed from the GPU.
       */
     /* protected */ def postrender(): Unit = js.native
     
     /* private */ var renderer: Any = js.native
     
     /**
-      * Checks to see when the last time a texture was used
-      * if the texture has not been used for a specified amount of time it will be removed from the GPU
+      * Checks to see when the last time a texture was used.
+      * If the texture has not been used for a specified amount of time, it will be removed from the GPU.
       */
     def run(): Unit = js.native
     
     /**
-      * Removes all the textures within the specified displayObject and its children from the GPU
+      * Removes all the textures within the specified displayObject and its children from the GPU.
       * @param {PIXI.DisplayObject} displayObject - the displayObject to remove the textures from.
       */
     def unload(displayObject: IUnloadableTexture): Unit = js.native
   }
   /* static members */
   object TextureGCSystem {
+    
+    @JSImport("@pixi/core/lib/textures/TextureGCSystem", "TextureGCSystem")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * Default frames between two garbage collections.
+      * @static
+      * @default 600
+      * @see PIXI.TextureGCSystem#checkCountMax
+      */
+    @JSImport("@pixi/core/lib/textures/TextureGCSystem", "TextureGCSystem.defaultCheckCountMax")
+    @js.native
+    def defaultCheckCountMax: Double = js.native
+    inline def defaultCheckCountMax_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultCheckCountMax")(x.asInstanceOf[js.Any])
+    
+    /**
+      * Default maximum idle frames before a texture is destroyed by garbage collection.
+      * @static
+      * @default 3600
+      * @see PIXI.TextureGCSystem#maxIdle
+      */
+    @JSImport("@pixi/core/lib/textures/TextureGCSystem", "TextureGCSystem.defaultMaxIdle")
+    @js.native
+    def defaultMaxIdle: Double = js.native
+    inline def defaultMaxIdle_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultMaxIdle")(x.asInstanceOf[js.Any])
+    
+    /**
+      * Default garbage collection mode.
+      * @static
+      * @type {PIXI.GC_MODES}
+      * @default PIXI.GC_MODES.AUTO
+      * @see PIXI.TextureGCSystem#mode
+      */
+    @JSImport("@pixi/core/lib/textures/TextureGCSystem", "TextureGCSystem.defaultMode")
+    @js.native
+    def defaultMode: GC_MODES = js.native
+    inline def defaultMode_=(x: GC_MODES): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultMode")(x.asInstanceOf[js.Any])
     
     /** @ignore */
     @JSImport("@pixi/core/lib/textures/TextureGCSystem", "TextureGCSystem.extension")

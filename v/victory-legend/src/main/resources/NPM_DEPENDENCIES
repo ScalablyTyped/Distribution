@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "victory-legend" : "36.6.8"
+      "victory-legend" : "36.6.10"
     }
   ],
   "test-dependencies" : [
     {
-      "victory-legend" : "36.6.8"
+      "victory-legend" : "36.6.10"
     }
   ],
   "compile-devDependencies" : [

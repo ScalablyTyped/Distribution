@@ -1,6 +1,7 @@
 package typings.webappsecCredentialManagement
 
 import typings.std.AbortSignal
+import typings.webappsecCredentialManagement.webappsecCredentialManagementStrings.conditional
 import typings.webappsecCredentialManagement.webappsecCredentialManagementStrings.optional
 import typings.webappsecCredentialManagement.webappsecCredentialManagementStrings.required
 import typings.webappsecCredentialManagement.webappsecCredentialManagementStrings.silent
@@ -23,7 +24,7 @@ trait CredentialRequestOptions extends StObject {
     * This property specifies the mediation requirements for a given credential
     * request.
     */
-  var mediation: js.UndefOr[silent | optional | required] = js.undefined
+  var mediation: js.UndefOr[silent | optional | required | conditional] = js.undefined
   
   /**
     * If set, the user agent will request {@link PasswordCredential} objects.
@@ -63,7 +64,7 @@ object CredentialRequestOptions {
     
     inline def setFederatedUndefined: Self = StObject.set(x, "federated", js.undefined)
     
-    inline def setMediation(value: silent | optional | required): Self = StObject.set(x, "mediation", value.asInstanceOf[js.Any])
+    inline def setMediation(value: silent | optional | required | conditional): Self = StObject.set(x, "mediation", value.asInstanceOf[js.Any])
     
     inline def setMediationUndefined: Self = StObject.set(x, "mediation", js.undefined)
     

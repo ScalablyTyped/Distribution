@@ -39,12 +39,13 @@ object typesAccordionlayoutMod {
     /**
       * The section title height or width depending on the orientation.
       */
-    var titleSpace: Double = js.native
+    def titleSpace: Double = js.native
+    def titleSpace_=(value: Double): Unit = js.native
     
     /**
       * A read-only array of the section titles in the panel.
       */
-    val titles: js.Array[HTMLElement] = js.native
+    def titles: js.Array[HTMLElement] = js.native
     
     def updateTitle(index: Double, widget: Widget): Unit = js.native
   }

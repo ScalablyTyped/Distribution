@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateAppInstanceRequest extends StObject {
   
   /**
-    * The ClientRequestToken of the AppInstance.
+    * The unique ID of the request. Use different tokens to create different AppInstances.
     */
   var ClientRequestToken: typings.awsSdk.clientsChimesdkidentityMod.ClientRequestToken
   
@@ -22,7 +22,7 @@ trait CreateAppInstanceRequest extends StObject {
   var Name: NonEmptyResourceName
   
   /**
-    * Tags assigned to the AppInstanceUser.
+    * Tags assigned to the AppInstance.
     */
   var Tags: js.UndefOr[TagList] = js.undefined
 }

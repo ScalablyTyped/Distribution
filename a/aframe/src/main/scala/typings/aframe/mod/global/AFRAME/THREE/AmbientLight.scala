@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("AFRAME.THREE.AmbientLight")
 @js.native
 /**
-  * This creates a Ambientlight with a color.
-  * @param color Numeric value of the RGB component of the color or a Color instance.
-  * @param [intensity=1]
+  * Creates a new {@link AmbientLight}.
+  * @param color Numeric value of the RGB component of the color. Default `0xffffff`
+  * @param intensity Numeric value of the light's strength/intensity. Expects a `Float`. Default `1`
   */
 open class AmbientLight ()
   extends typings.three.mod.AmbientLight

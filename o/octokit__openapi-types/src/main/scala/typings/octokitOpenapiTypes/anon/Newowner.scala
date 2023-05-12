@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Newowner extends StObject {
   
+  /** @description The new name to be given to the repository. */
+  var new_name: js.UndefOr[String] = js.undefined
+  
   /** @description The username or organization name the repository will be transferred to. */
   var new_owner: String
   
@@ -21,6 +24,10 @@ object Newowner {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: Newowner] (val x: Self) extends AnyVal {
+    
+    inline def setNew_name(value: String): Self = StObject.set(x, "new_name", value.asInstanceOf[js.Any])
+    
+    inline def setNew_nameUndefined: Self = StObject.set(x, "new_name", js.undefined)
     
     inline def setNew_owner(value: String): Self = StObject.set(x, "new_owner", value.asInstanceOf[js.Any])
     

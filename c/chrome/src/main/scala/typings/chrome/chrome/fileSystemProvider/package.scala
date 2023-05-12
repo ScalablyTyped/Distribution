@@ -30,6 +30,14 @@ js.Function3[
   Unit
 ]]
 
+type ExecuteActionRequested = Event[
+js.Function3[
+  /* options */ ExecuteActionRequestedOptions, 
+  /* successCallback */ js.Function0[Unit], 
+  /* errorCallback */ js.Function1[/* error */ String, Unit], 
+  Unit
+]]
+
 type FilePathLengthRequestedEvent = Event[
 js.Function3[
   /* options */ FilePathLengthRequestedEventOptions, 
@@ -42,6 +50,14 @@ type FilePathRequestedEvent = Event[
 js.Function3[
   /* options */ FilePathRequestedEventOptions, 
   /* successCallback */ js.Function, 
+  /* errorCallback */ js.Function1[/* error */ String, Unit], 
+  Unit
+]]
+
+type GetActionsRequested = Event[
+js.Function3[
+  /* options */ GetActionsRequestedOptions, 
+  /* successCallback */ js.Function1[/* actions */ js.Array[Action], Unit], 
   /* errorCallback */ js.Function1[/* error */ String, Unit], 
   Unit
 ]]

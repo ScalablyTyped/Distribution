@@ -1,7 +1,7 @@
 
 # Scala.js typings for expo__spawn-async
 
-Typings are for version 1.7.0
+Typings are for version 1.7.2
 
 ## Library description:
 A Promise-based interface into processes created by child_process.spawn

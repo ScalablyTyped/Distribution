@@ -595,14 +595,16 @@ object sapUiUnifiedCalendarMod {
       *
       * Displays a date in the calendar but doesn't set the focus.
       *
-      * @returns `this` to allow method chaining
+      * @returns Reference to `this` for method chaining
       */
     def displayDate(/**
-      * JavaScript date object for focused date.
+      * JavaScript date object for focused date
       */
-    oDate: js.Object): this.type = js.native
+    oDate: js.Date): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:cancel cancel} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -614,6 +616,8 @@ object sapUiUnifiedCalendarMod {
     mParameters: js.Object): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:select select} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -626,6 +630,7 @@ object sapUiUnifiedCalendarMod {
     
     /**
       * @SINCE 1.34.0
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:startDateChange startDateChange} to attached listeners.
       *
@@ -639,6 +644,7 @@ object sapUiUnifiedCalendarMod {
     
     /**
       * @SINCE 1.56
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:weekNumberSelect weekNumberSelect} to attached listeners.
       *
@@ -656,12 +662,12 @@ object sapUiUnifiedCalendarMod {
     /**
       * Displays and sets the focused date of the calendar.
       *
-      * @returns `this` to allow method chaining
+      * @returns Reference to `this` for method chaining
       */
     def focusDate(/**
       * A JavaScript date object for focused date
       */
-    oDate: js.Object): this.type = js.native
+    oDate: js.Date): this.type = js.native
     
     /**
       * @SINCE 1.28.0
@@ -709,6 +715,17 @@ object sapUiUnifiedCalendarMod {
       * @returns Value of property `firstDayOfWeek`
       */
     def getFirstDayOfWeek(): int = js.native
+    
+    /**
+      * @SINCE 1.111
+      *
+      * Gets current value of property {@link #getInitialFocusedDate initialFocusedDate}.
+      *
+      * Holds a reference to a JavaScript Date Object to define the initially navigated date in the calendar.
+      *
+      * @returns Value of property `initialFocusedDate`
+      */
+    def getInitialFocusedDate(): js.Object = js.native
     
     /**
       * Gets current value of property {@link #getIntervalSelection intervalSelection}.
@@ -871,32 +888,15 @@ object sapUiUnifiedCalendarMod {
     def getSingleSelection(): Boolean = js.native
     
     /**
-      * @SINCE 1.24.0
-      *
-      * Gets content of aggregation {@link #getSpecialDates specialDates}.
-      *
-      * Dates or date ranges with type, to visualize special days in the `Calendar`. If one day is assigned to
-      * more than one Type, only the first one will be used.
-      *
-      * To set a single date (instead of a range), set only the `startDate` property of the {@link sap.ui.unified.DateRange}
-      * class.
-      *
-      * **Note:** Keep in mind that the `NonWorking` type is for marking specific dates or date ranges as non-working,
-      * where if you need a weekly-reccuring non-working days (weekend), you should use the `nonWorkingDays`
-      * property. Both the non-working days (from property) and dates (from aggregation) are visualized the same.
-      */
-    def getSpecialDates(): js.Array[typings.openui5.sapUiUnifiedDateTypeRangeMod.default] = js.native
-    
-    /**
       * @SINCE 1.34.1
       *
       * Returns the first day of the displayed month.
       *
       * There might be some days of the previous month shown, but they can not be focused.
       *
-      * @returns JavaScript date object for start date.
+      * @returns JavaScript date object for start date
       */
-    def getStartDate(): js.Object = js.native
+    def getStartDate(): js.Date = js.native
     
     /**
       * @SINCE 1.38.0
@@ -1186,6 +1186,23 @@ object sapUiUnifiedCalendarMod {
     iFirstDayOfWeek: int): this.type = js.native
     
     /**
+      * @SINCE 1.111
+      *
+      * Sets a new value for property {@link #getInitialFocusedDate initialFocusedDate}.
+      *
+      * Holds a reference to a JavaScript Date Object to define the initially navigated date in the calendar.
+      *
+      * When called with a value of `null` or `undefined`, the default value of the property will be restored.
+      *
+      * @returns Reference to `this` in order to allow method chaining
+      */
+    def setInitialFocusedDate(): this.type = js.native
+    def setInitialFocusedDate(/**
+      * New value for property `initialFocusedDate`
+      */
+    oInitialFocusedDate: js.Object): this.type = js.native
+    
+    /**
       * Sets a new value for property {@link #getIntervalSelection intervalSelection}.
       *
       * If set, interval selection is allowed
@@ -1227,7 +1244,7 @@ object sapUiUnifiedCalendarMod {
     /**
       * Sets a maximum date for the calendar.
       *
-      * @returns `this` for method chaining
+      * @returns Reference to `this` for method chaining
       */
     def setMaxDate(/**
       * a JavaScript date
@@ -1237,7 +1254,7 @@ object sapUiUnifiedCalendarMod {
     /**
       * Sets a minimum date for the calendar.
       *
-      * @returns `this` for method chaining
+      * @returns Reference to `this` for method chaining
       */
     def setMinDate(/**
       * a JavaScript date
@@ -1289,6 +1306,12 @@ object sapUiUnifiedCalendarMod {
       */
     sNonWorkingDays: js.Array[int]): this.type = js.native
     
+    def setPrimaryCalendarType(
+      /**
+      * New value for property `primaryCalendarType`
+      */
+    sPrimaryCalendarType: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CalendarType * / any */ String
+    ): this.type = js.native
     /**
       * @SINCE 1.34.0
       *
@@ -1301,18 +1324,17 @@ object sapUiUnifiedCalendarMod {
       *
       * @returns Reference to `this` in order to allow method chaining
       */
-    def setPrimaryCalendarType(): this.type = js.native
-    def setPrimaryCalendarType(
-      /**
-      * New value for property `primaryCalendarType`
-      */
-    sPrimaryCalendarType: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CalendarType * / any */ String
-    ): this.type = js.native
     def setPrimaryCalendarType(/**
       * New value for property `primaryCalendarType`
       */
     sPrimaryCalendarType: CalendarType): this.type = js.native
     
+    def setSecondaryCalendarType(
+      /**
+      * New value for property `secondaryCalendarType`
+      */
+    sSecondaryCalendarType: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CalendarType * / any */ String
+    ): this.type = js.native
     /**
       * @SINCE 1.34.0
       *
@@ -1325,13 +1347,6 @@ object sapUiUnifiedCalendarMod {
       *
       * @returns Reference to `this` in order to allow method chaining
       */
-    def setSecondaryCalendarType(): this.type = js.native
-    def setSecondaryCalendarType(
-      /**
-      * New value for property `secondaryCalendarType`
-      */
-    sSecondaryCalendarType: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CalendarType * / any */ String
-    ): this.type = js.native
     def setSecondaryCalendarType(/**
       * New value for property `secondaryCalendarType`
       */
@@ -1340,7 +1355,7 @@ object sapUiUnifiedCalendarMod {
     /**
       * Sets the visibility of the Current date button in the calendar.
       *
-      * @returns `this` for method chaining
+      * @returns Reference to `this` for method chaining
       */
     def setShowCurrentDateButton(/**
       * whether the Today button will be displayed
@@ -1452,6 +1467,15 @@ object sapUiUnifiedCalendarMod {
       * with the calendarWeekNumbering property.
       */
     var firstDayOfWeek: js.UndefOr[int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)] = js.undefined
+    
+    /**
+      * @SINCE 1.111
+      *
+      * Holds a reference to a JavaScript Date Object to define the initially navigated date in the calendar.
+      */
+    var initialFocusedDate: js.UndefOr[
+        js.Object | PropertyBindingInfo | (/* template literal string: {${string}} */ String)
+      ] = js.undefined
     
     /**
       * If set, interval selection is allowed
@@ -1674,6 +1698,10 @@ object sapUiUnifiedCalendarMod {
       inline def setFirstDayOfWeek(value: int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "firstDayOfWeek", value.asInstanceOf[js.Any])
       
       inline def setFirstDayOfWeekUndefined: Self = StObject.set(x, "firstDayOfWeek", js.undefined)
+      
+      inline def setInitialFocusedDate(value: js.Object | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "initialFocusedDate", value.asInstanceOf[js.Any])
+      
+      inline def setInitialFocusedDateUndefined: Self = StObject.set(x, "initialFocusedDate", js.undefined)
       
       inline def setIntervalSelection(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "intervalSelection", value.asInstanceOf[js.Any])
       

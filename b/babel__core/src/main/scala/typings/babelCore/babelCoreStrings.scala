@@ -1179,6 +1179,10 @@ object babelCoreStrings {
   inline def constructor: constructor = "constructor".asInstanceOf[constructor]
   
   @js.native
+  sealed trait current extends StObject
+  inline def current: current = "current".asInstanceOf[current]
+  
+  @js.native
   sealed trait delete extends StObject
   inline def delete: delete = "delete".asInstanceOf[delete]
   
@@ -1269,6 +1273,10 @@ object babelCoreStrings {
   @js.native
   sealed trait `throw` extends StObject
   inline def `throw`: `throw` = "throw".asInstanceOf[`throw`]
+  
+  @js.native
+  sealed trait tp extends StObject
+  inline def tp: tp = "tp".asInstanceOf[tp]
   
   @js.native
   sealed trait typeof extends StObject

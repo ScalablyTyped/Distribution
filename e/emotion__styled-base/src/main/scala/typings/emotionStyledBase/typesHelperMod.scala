@@ -22,5 +22,5 @@ object typesHelperMod {
   
   type Overwrapped[T, U] = Pick[T, Extract[/* keyof T */ String, /* keyof U */ String]]
   
-  type PropsOf[C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.emotionStyledBase.emotionStyledBaseStrings.a, typings.emotionStyledBase.emotionStyledBaseStrings.abbr, typings.emotionStyledBase.emotionStyledBaseStrings.address */ Any */] = LibraryManagedAttributes[C, ComponentPropsWithRef[C]]
+  type PropsOf[C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177, starting with typings.emotionStyledBase.emotionStyledBaseStrings.a, typings.emotionStyledBase.emotionStyledBaseStrings.abbr, typings.emotionStyledBase.emotionStyledBaseStrings.address */ Any */] = LibraryManagedAttributes[C, ComponentPropsWithRef[C]]
 }

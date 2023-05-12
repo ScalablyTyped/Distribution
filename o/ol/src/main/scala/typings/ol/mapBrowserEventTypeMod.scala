@@ -6,102 +6,75 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mapBrowserEventTypeMod {
   
-  @JSImport("ol/MapBrowserEventType", JSImport.Default)
-  @js.native
-  object default extends StObject {
+  object default {
     
-    @JSBracketAccess
-    def apply(value: String): js.UndefOr[MapBrowserEventType & String] = js.native
+    @JSImport("ol/MapBrowserEventType", "default.CLICK")
+    @js.native
+    val CLICK: String = js.native
     
-    /* "click" */ val CLICK: typings.ol.mapBrowserEventTypeMod.MapBrowserEventType.CLICK & String = js.native
+    @JSImport("ol/MapBrowserEventType", "default.DBLCLICK")
+    @js.native
+    val DBLCLICK: String = js.native
     
-    /* "dblclick" */ val DBLCLICK: typings.ol.mapBrowserEventTypeMod.MapBrowserEventType.DBLCLICK & String = js.native
+    @JSImport("ol/MapBrowserEventType", "default.POINTERCANCEL")
+    @js.native
+    val POINTERCANCEL: String = js.native
     
-    /* "pointercancel" */ val POINTERCANCEL: typings.ol.mapBrowserEventTypeMod.MapBrowserEventType.POINTERCANCEL & String = js.native
+    @JSImport("ol/MapBrowserEventType", "default.POINTERDOWN")
+    @js.native
+    val POINTERDOWN: String = js.native
     
-    /* "pointerdown" */ val POINTERDOWN: typings.ol.mapBrowserEventTypeMod.MapBrowserEventType.POINTERDOWN & String = js.native
+    @JSImport("ol/MapBrowserEventType", "default.POINTERDRAG")
+    @js.native
+    val POINTERDRAG: String = js.native
     
-    /* "pointerdrag" */ val POINTERDRAG: typings.ol.mapBrowserEventTypeMod.MapBrowserEventType.POINTERDRAG & String = js.native
+    @JSImport("ol/MapBrowserEventType", "default.POINTERENTER")
+    @js.native
+    val POINTERENTER: String = js.native
     
-    /* "pointerenter" */ val POINTERENTER: typings.ol.mapBrowserEventTypeMod.MapBrowserEventType.POINTERENTER & String = js.native
+    @JSImport("ol/MapBrowserEventType", "default.POINTERLEAVE")
+    @js.native
+    val POINTERLEAVE: String = js.native
     
-    /* "pointerleave" */ val POINTERLEAVE: typings.ol.mapBrowserEventTypeMod.MapBrowserEventType.POINTERLEAVE & String = js.native
+    @JSImport("ol/MapBrowserEventType", "default.POINTERMOVE")
+    @js.native
+    val POINTERMOVE: String = js.native
     
-    /* "pointermove" */ val POINTERMOVE: typings.ol.mapBrowserEventTypeMod.MapBrowserEventType.POINTERMOVE & String = js.native
+    @JSImport("ol/MapBrowserEventType", "default.POINTEROUT")
+    @js.native
+    val POINTEROUT: String = js.native
     
-    /* "pointerout" */ val POINTEROUT: typings.ol.mapBrowserEventTypeMod.MapBrowserEventType.POINTEROUT & String = js.native
+    @JSImport("ol/MapBrowserEventType", "default.POINTEROVER")
+    @js.native
+    val POINTEROVER: String = js.native
     
-    /* "pointerover" */ val POINTEROVER: typings.ol.mapBrowserEventTypeMod.MapBrowserEventType.POINTEROVER & String = js.native
+    @JSImport("ol/MapBrowserEventType", "default.POINTERUP")
+    @js.native
+    val POINTERUP: String = js.native
     
-    /* "pointerup" */ val POINTERUP: typings.ol.mapBrowserEventTypeMod.MapBrowserEventType.POINTERUP & String = js.native
-    
-    /* "singleclick" */ val SINGLECLICK: typings.ol.mapBrowserEventTypeMod.MapBrowserEventType.SINGLECLICK & String = js.native
+    @JSImport("ol/MapBrowserEventType", "default.SINGLECLICK")
+    @js.native
+    val SINGLECLICK: String = js.native
   }
   
-  @js.native
-  sealed trait MapBrowserEventType extends StObject
-  @JSImport("ol/MapBrowserEventType", "MapBrowserEventType")
-  @js.native
-  object MapBrowserEventType extends StObject {
+  /* Rewritten from type alias, can be one of: 
+    - typings.ol.olStrings.singleclick
+    - typings.ol.olStrings.click
+    - typings.ol.olStrings.dblclick
+    - typings.ol.olStrings.pointerdrag
+    - typings.ol.olStrings.pointermove
+  */
+  trait Types extends StObject
+  object Types {
     
-    @js.native
-    sealed trait CLICK
-      extends StObject
-         with MapBrowserEventType
+    inline def click: typings.ol.olStrings.click = "click".asInstanceOf[typings.ol.olStrings.click]
     
-    @js.native
-    sealed trait DBLCLICK
-      extends StObject
-         with MapBrowserEventType
+    inline def dblclick: typings.ol.olStrings.dblclick = "dblclick".asInstanceOf[typings.ol.olStrings.dblclick]
     
-    @js.native
-    sealed trait POINTERCANCEL
-      extends StObject
-         with MapBrowserEventType
+    inline def pointerdrag: typings.ol.olStrings.pointerdrag = "pointerdrag".asInstanceOf[typings.ol.olStrings.pointerdrag]
     
-    @js.native
-    sealed trait POINTERDOWN
-      extends StObject
-         with MapBrowserEventType
+    inline def pointermove: typings.ol.olStrings.pointermove = "pointermove".asInstanceOf[typings.ol.olStrings.pointermove]
     
-    @js.native
-    sealed trait POINTERDRAG
-      extends StObject
-         with MapBrowserEventType
-    
-    @js.native
-    sealed trait POINTERENTER
-      extends StObject
-         with MapBrowserEventType
-    
-    @js.native
-    sealed trait POINTERLEAVE
-      extends StObject
-         with MapBrowserEventType
-    
-    @js.native
-    sealed trait POINTERMOVE
-      extends StObject
-         with MapBrowserEventType
-    
-    @js.native
-    sealed trait POINTEROUT
-      extends StObject
-         with MapBrowserEventType
-    
-    @js.native
-    sealed trait POINTEROVER
-      extends StObject
-         with MapBrowserEventType
-    
-    @js.native
-    sealed trait POINTERUP
-      extends StObject
-         with MapBrowserEventType
-    
-    @js.native
-    sealed trait SINGLECLICK
-      extends StObject
-         with MapBrowserEventType
+    inline def singleclick: typings.ol.olStrings.singleclick = "singleclick".asInstanceOf[typings.ol.olStrings.singleclick]
   }
 }

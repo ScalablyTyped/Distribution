@@ -9,6 +9,9 @@ trait FirestoreSettings
      with FirestoreSettings2 {
   
   /**
+    * NOTE: This field will be deprecated in a future major release. Use `cache` field
+    * instead to specify cache size, and other cache configurations.
+    *
     * An approximate cache size threshold for the on-disk data. If the cache
     * grows beyond this size, Firestore will start removing data that hasn't been
     * recently used. The size is not a guarantee that the cache will stay below
@@ -45,6 +48,18 @@ trait FirestoreSettings
     * it in https://github.com/firebase/firebase-js-sdk/issues/1674.
     */
   var experimentalForceLongPolling: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Specifies the cache used by the SDK. Available options are `MemoryLocalCache`
+    * and `IndexedDbLocalCache`, each with different configuration options.
+    *
+    * When unspecified, `MemoryLocalCache` will be used by default.
+    *
+    * NOTE: setting this field and `cacheSizeBytes` at the same time will throw
+    * exception during SDK initialization. Instead, using the configuration in
+    * the `FirestoreLocalCache` object to specify the cache size.
+    */
+  var localCache: js.UndefOr[FirestoreLocalCache] = js.undefined
 }
 object FirestoreSettings {
   
@@ -67,5 +82,9 @@ object FirestoreSettings {
     inline def setExperimentalForceLongPolling(value: Boolean): Self = StObject.set(x, "experimentalForceLongPolling", value.asInstanceOf[js.Any])
     
     inline def setExperimentalForceLongPollingUndefined: Self = StObject.set(x, "experimentalForceLongPolling", js.undefined)
+    
+    inline def setLocalCache(value: FirestoreLocalCache): Self = StObject.set(x, "localCache", value.asInstanceOf[js.Any])
+    
+    inline def setLocalCacheUndefined: Self = StObject.set(x, "localCache", js.undefined)
   }
 }

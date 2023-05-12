@@ -12,7 +12,6 @@ object libCommandMod {
     // region Constructors
     /**
       * @param {!CommandName} name The name of this command.
-      * @constructor
       */
     def this(name: String) = this()
     

@@ -1,7 +1,7 @@
 package typings.tensorflowTfjsNode
 
 import typings.tensorflowTfjsCore.distKernelRegistryMod.KernelConfig
-import typings.tensorflowTfjsCore.distKernelRegistryMod.TensorInfo
+import typings.tensorflowTfjsCore.distTensorInfoMod.TensorInfo
 import typings.tensorflowTfjsNode.anon.Attrs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

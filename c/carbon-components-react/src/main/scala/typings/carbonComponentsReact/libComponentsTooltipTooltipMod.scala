@@ -254,6 +254,8 @@ object libComponentsTooltipTooltipMod extends Shortcut {
     
     var autoCorrect: js.UndefOr[String] = js.undefined
     
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
+    
     var autoOrientation: js.UndefOr[Boolean] = js.undefined
     
     var autoSave: js.UndefOr[String] = js.undefined
@@ -263,6 +265,8 @@ object libComponentsTooltipTooltipMod extends Shortcut {
     var className: js.UndefOr[String] = js.undefined
     
     var color: js.UndefOr[String] = js.undefined
+    
+    var content: js.UndefOr[String] = js.undefined
     
     var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
@@ -485,11 +489,15 @@ object libComponentsTooltipTooltipMod extends Shortcut {
     
     var radioGroup: js.UndefOr[String] = js.undefined
     
+    var rel: js.UndefOr[String] = js.undefined
+    
     var renderIcon: js.UndefOr[ForwardRefReturn[Any, Any]] = js.undefined
     
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
+    
+    var rev: js.UndefOr[String] = js.undefined
     
     var security: js.UndefOr[String] = js.undefined
     
@@ -753,6 +761,10 @@ object libComponentsTooltipTooltipMod extends Shortcut {
       
       inline def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
       
+      inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+      
+      inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+      
       inline def setAutoOrientation(value: Boolean): Self = StObject.set(x, "autoOrientation", value.asInstanceOf[js.Any])
       
       inline def setAutoOrientationUndefined: Self = StObject.set(x, "autoOrientation", js.undefined)
@@ -773,9 +785,13 @@ object libComponentsTooltipTooltipMod extends Shortcut {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
       inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
       inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
@@ -1209,6 +1225,10 @@ object libComponentsTooltipTooltipMod extends Shortcut {
       
       inline def setRadioGroupUndefined: Self = StObject.set(x, "radioGroup", js.undefined)
       
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      
+      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+      
       inline def setRenderIcon(value: ForwardRefReturn[Any, Any]): Self = StObject.set(x, "renderIcon", value.asInstanceOf[js.Any])
       
       inline def setRenderIconUndefined: Self = StObject.set(x, "renderIcon", js.undefined)
@@ -1220,6 +1240,10 @@ object libComponentsTooltipTooltipMod extends Shortcut {
       inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+      
+      inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+      
+      inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
       
       inline def setSecurity(value: String): Self = StObject.set(x, "security", value.asInstanceOf[js.Any])
       

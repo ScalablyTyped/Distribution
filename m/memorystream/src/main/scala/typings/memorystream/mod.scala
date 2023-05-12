@@ -18,6 +18,41 @@ object mod {
     def this(data: Unit, options: Options) = this()
     def this(data: DataType, options: Options) = this()
   }
+  @JSImport("memorystream", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @JSImport("memorystream", "createReadStream")
+  @js.native
+  def createReadStream: js.Function2[
+    /* data */ js.UndefOr[DataType | js.Array[DataType]], 
+    /* options */ js.UndefOr[Options], 
+    MemoryStream
+  ] = js.native
+  inline def createReadStream_=(
+    x: js.Function2[
+      /* data */ js.UndefOr[DataType | js.Array[DataType]], 
+      /* options */ js.UndefOr[Options], 
+      MemoryStream
+    ]
+  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("createReadStream")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("memorystream", "createWriteStream")
+  @js.native
+  def createWriteStream: js.Function2[
+    /* data */ js.UndefOr[DataType | js.Array[DataType]], 
+    /* options */ js.UndefOr[Options], 
+    MemoryStream
+  ] = js.native
+  inline def createWriteStream_=(
+    x: js.Function2[
+      /* data */ js.UndefOr[DataType | js.Array[DataType]], 
+      /* options */ js.UndefOr[Options], 
+      MemoryStream
+    ]
+  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("createWriteStream")(x.asInstanceOf[js.Any])
   
   type DataType = String | Buffer | Stream
   
@@ -25,20 +60,20 @@ object mod {
   
   trait Options extends StObject {
     
-    var bufoverflow: Double
+    var bufoverflow: js.UndefOr[Double] = js.undefined
     
-    var frequence: Double
+    var frequence: js.UndefOr[Double] = js.undefined
     
-    var maxbufsize: Double
+    var maxbufsize: js.UndefOr[Double] = js.undefined
     
-    var readable: Boolean
+    var readable: js.UndefOr[Boolean] = js.undefined
     
-    var writeable: Boolean
+    var writeable: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
-    inline def apply(bufoverflow: Double, frequence: Double, maxbufsize: Double, readable: Boolean, writeable: Boolean): Options = {
-      val __obj = js.Dynamic.literal(bufoverflow = bufoverflow.asInstanceOf[js.Any], frequence = frequence.asInstanceOf[js.Any], maxbufsize = maxbufsize.asInstanceOf[js.Any], readable = readable.asInstanceOf[js.Any], writeable = writeable.asInstanceOf[js.Any])
+    inline def apply(): Options = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
@@ -47,13 +82,23 @@ object mod {
       
       inline def setBufoverflow(value: Double): Self = StObject.set(x, "bufoverflow", value.asInstanceOf[js.Any])
       
+      inline def setBufoverflowUndefined: Self = StObject.set(x, "bufoverflow", js.undefined)
+      
       inline def setFrequence(value: Double): Self = StObject.set(x, "frequence", value.asInstanceOf[js.Any])
+      
+      inline def setFrequenceUndefined: Self = StObject.set(x, "frequence", js.undefined)
       
       inline def setMaxbufsize(value: Double): Self = StObject.set(x, "maxbufsize", value.asInstanceOf[js.Any])
       
+      inline def setMaxbufsizeUndefined: Self = StObject.set(x, "maxbufsize", js.undefined)
+      
       inline def setReadable(value: Boolean): Self = StObject.set(x, "readable", value.asInstanceOf[js.Any])
       
+      inline def setReadableUndefined: Self = StObject.set(x, "readable", js.undefined)
+      
       inline def setWriteable(value: Boolean): Self = StObject.set(x, "writeable", value.asInstanceOf[js.Any])
+      
+      inline def setWriteableUndefined: Self = StObject.set(x, "writeable", js.undefined)
     }
   }
 }

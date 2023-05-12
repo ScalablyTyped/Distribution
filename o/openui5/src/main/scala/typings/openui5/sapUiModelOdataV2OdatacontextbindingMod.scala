@@ -165,5 +165,9 @@ object sapUiModelOdataV2OdatacontextbindingMod {
       */
     sGroupId: String
     ): Unit = js.native
+    def refresh(/**
+      * The group Id for the refresh
+      */
+    sGroupId: String): Unit = js.native
   }
 }

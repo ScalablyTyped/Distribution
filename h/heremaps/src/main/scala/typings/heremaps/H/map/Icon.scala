@@ -122,12 +122,12 @@ object Icon {
   
   /**
     * Options used to initialize a Icon
-    * @property size {H.math.ISize=} - The icon's size in pixel, default is the bitmap's natural size
-    * @property anchor {H.math.IPoint=} - The anchorage point in pixel, default is bottom-center
-    * @property hitArea {H.map.HitArea=} - The area to use for hit detection, default is the whole rectangular area
-    * @property asCanvas {H.map.HitArea=} - Indicates whether a non canvas bitmap is converted into a canvas, default is true. The conversion improves the rendering performance but it could
+    * size {H.math.ISize=} - The icon's size in pixel, default is the bitmap's natural size
+    * anchor {H.math.IPoint=} - The anchorage point in pixel, default is bottom-center
+    * hitArea {H.map.HitArea=} - The area to use for hit detection, default is the whole rectangular area
+    * asCanvas {H.map.HitArea=} - Indicates whether a non canvas bitmap is converted into a canvas, default is true. The conversion improves the rendering performance but it could
     * also cause a higher memory consumption.
-    * @property crossOrigin {boolean} - Specifies whether to use anonynous Cross-Origin Resource Sharing (CORS) when fetching an image to prevent resulting canvas from tainting, default is
+    * crossOrigin {boolean} - Specifies whether to use anonynous Cross-Origin Resource Sharing (CORS) when fetching an image to prevent resulting canvas from tainting, default is
     * false. The option is ignored by IE9-10.
     */
   trait Options extends StObject {
@@ -136,7 +136,7 @@ object Icon {
     
     var asCanvas: js.UndefOr[HitArea] = js.undefined
     
-    var crossOrigin: Boolean
+    var crossOrigin: js.UndefOr[Boolean | Null] = js.undefined
     
     var hitArea: js.UndefOr[HitArea] = js.undefined
     
@@ -144,8 +144,8 @@ object Icon {
   }
   object Options {
     
-    inline def apply(crossOrigin: Boolean): Options = {
-      val __obj = js.Dynamic.literal(crossOrigin = crossOrigin.asInstanceOf[js.Any])
+    inline def apply(): Options = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
@@ -161,6 +161,10 @@ object Icon {
       inline def setAsCanvasUndefined: Self = StObject.set(x, "asCanvas", js.undefined)
       
       inline def setCrossOrigin(value: Boolean): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+      
+      inline def setCrossOriginNull: Self = StObject.set(x, "crossOrigin", null)
+      
+      inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
       
       inline def setHitArea(value: HitArea): Self = StObject.set(x, "hitArea", value.asInstanceOf[js.Any])
       

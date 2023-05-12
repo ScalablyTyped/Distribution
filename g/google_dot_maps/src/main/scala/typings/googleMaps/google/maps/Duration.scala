@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A representation of duration as a numeric value and a display string.
-  */
 trait Duration extends StObject {
   
   /**

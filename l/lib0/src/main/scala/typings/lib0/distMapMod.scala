@@ -21,5 +21,5 @@ object distMapMod {
   
   inline def map[K, V, R](m: Map[K, V], f: js.Function2[/* arg0 */ V, /* arg1 */ K, R]): js.Array[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(m.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[js.Array[R]]
   
-  inline def setIfUndefined[T, K](map: Map[K, T], key: K, createT: js.Function0[T]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("setIfUndefined")(map.asInstanceOf[js.Any], key.asInstanceOf[js.Any], createT.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def setIfUndefined[V, K, MAP /* <: Map[K, V] */](map: MAP, key: K, createT: js.Function0[V]): V = (^.asInstanceOf[js.Dynamic].applyDynamic("setIfUndefined")(map.asInstanceOf[js.Any], key.asInstanceOf[js.Any], createT.asInstanceOf[js.Any])).asInstanceOf[V]
 }

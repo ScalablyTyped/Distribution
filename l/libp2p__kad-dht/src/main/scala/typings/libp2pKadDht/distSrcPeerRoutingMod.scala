@@ -1,21 +1,18 @@
 package typings.libp2pKadDht
 
-import typings.libp2pInterfaceDht.mod.DHTRecord
-import typings.libp2pInterfaceDht.mod.DialingPeerEvent
-import typings.libp2pInterfaceDht.mod.PeerResponseEvent
-import typings.libp2pInterfaceDht.mod.QueryErrorEvent
-import typings.libp2pInterfaceDht.mod.QueryEvent
-import typings.libp2pInterfaceDht.mod.QueryOptions
-import typings.libp2pInterfaceDht.mod.SendingQueryEvent
-import typings.libp2pInterfaceDht.mod.Validators
-import typings.libp2pInterfaceDht.mod.ValueEvent
 import typings.libp2pInterfacePeerId.mod.PeerId
 import typings.libp2pInterfacePeerInfo.mod.PeerInfo
 import typings.libp2pInterfaces.mod.AbortOptions
 import typings.libp2pKadDht.distSrcNetworkMod.Network
 import typings.libp2pKadDht.distSrcQueryManagerMod.QueryManager
+import typings.libp2pKadDht.distSrcQueryManagerMod.QueryOptions
 import typings.libp2pKadDht.distSrcRoutingTableMod.RoutingTable
+import typings.libp2pKadDht.mod.DHTRecord
+import typings.libp2pKadDht.mod.DialPeerEvent
+import typings.libp2pKadDht.mod.FinalPeerEvent
 import typings.libp2pKadDht.mod.KadDHTComponents
+import typings.libp2pKadDht.mod.QueryEvent
+import typings.libp2pKadDht.mod.Validators
 import typings.std.AsyncGenerator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -31,16 +28,8 @@ object distSrcPeerRoutingMod {
     /**
       * Get a value via rpc call for the given parameters
       */
-    def _getValueSingle(peer: PeerId, key: js.typedarray.Uint8Array): AsyncGenerator[
-        SendingQueryEvent | PeerResponseEvent | QueryErrorEvent | DialingPeerEvent, 
-        Unit, 
-        Any
-      ] = js.native
-    def _getValueSingle(peer: PeerId, key: js.typedarray.Uint8Array, options: AbortOptions): AsyncGenerator[
-        SendingQueryEvent | PeerResponseEvent | QueryErrorEvent | DialingPeerEvent, 
-        Unit, 
-        Any
-      ] = js.native
+    def _getValueSingle(peer: PeerId, key: js.typedarray.Uint8Array): AsyncGenerator[QueryEvent, Any, Any] = js.native
+    def _getValueSingle(peer: PeerId, key: js.typedarray.Uint8Array, options: AbortOptions): AsyncGenerator[QueryEvent, Any, Any] = js.native
     
     /**
       * Verify a record, fetching missing public keys from the network.
@@ -53,8 +42,8 @@ object distSrcPeerRoutingMod {
     /**
       * Search for a peer with the given ID
       */
-    def findPeer(id: PeerId): AsyncGenerator[QueryEvent, Unit, Any] = js.native
-    def findPeer(id: PeerId, options: QueryOptions): AsyncGenerator[QueryEvent, Unit, Any] = js.native
+    def findPeer(id: PeerId): AsyncGenerator[FinalPeerEvent | QueryEvent, Any, Any] = js.native
+    def findPeer(id: PeerId, options: QueryOptions): AsyncGenerator[FinalPeerEvent | QueryEvent, Any, Any] = js.native
     
     /**
       * Look if we are connected to a peer with the given id.
@@ -72,22 +61,14 @@ object distSrcPeerRoutingMod {
       * Kademlia 'node lookup' operation on a key, which could be a the
       * bytes from a multihash or a peer ID
       */
-    def getClosestPeers(key: js.typedarray.Uint8Array): AsyncGenerator[QueryEvent, Unit, Any] = js.native
-    def getClosestPeers(key: js.typedarray.Uint8Array, options: QueryOptions): AsyncGenerator[QueryEvent, Unit, Any] = js.native
+    def getClosestPeers(key: js.typedarray.Uint8Array): AsyncGenerator[DialPeerEvent | QueryEvent, Any, Any] = js.native
+    def getClosestPeers(key: js.typedarray.Uint8Array, options: QueryOptions): AsyncGenerator[DialPeerEvent | QueryEvent, Any, Any] = js.native
     
     /**
       * Get the public key directly from a node
       */
-    def getPublicKeyFromNode(peer: PeerId): AsyncGenerator[
-        SendingQueryEvent | PeerResponseEvent | QueryErrorEvent | ValueEvent | DialingPeerEvent, 
-        Unit, 
-        Any
-      ] = js.native
-    def getPublicKeyFromNode(peer: PeerId, options: AbortOptions): AsyncGenerator[
-        SendingQueryEvent | PeerResponseEvent | QueryErrorEvent | ValueEvent | DialingPeerEvent, 
-        Unit, 
-        Any
-      ] = js.native
+    def getPublicKeyFromNode(peer: PeerId): AsyncGenerator[QueryEvent, Any, Any] = js.native
+    def getPublicKeyFromNode(peer: PeerId, options: AbortOptions): AsyncGenerator[QueryEvent, Any, Any] = js.native
     
     /**
       * Query a particular peer for the value for the given key.
@@ -95,16 +76,8 @@ object distSrcPeerRoutingMod {
       *
       * Note: The peerStore is updated with new addresses found for the given peer.
       */
-    def getValueOrPeers(peer: PeerId, key: js.typedarray.Uint8Array): AsyncGenerator[
-        SendingQueryEvent | PeerResponseEvent | QueryErrorEvent | DialingPeerEvent, 
-        Unit, 
-        Any
-      ] = js.native
-    def getValueOrPeers(peer: PeerId, key: js.typedarray.Uint8Array, options: AbortOptions): AsyncGenerator[
-        SendingQueryEvent | PeerResponseEvent | QueryErrorEvent | DialingPeerEvent, 
-        Unit, 
-        Any
-      ] = js.native
+    def getValueOrPeers(peer: PeerId, key: js.typedarray.Uint8Array): AsyncGenerator[DialPeerEvent | QueryEvent, Any, Any] = js.native
+    def getValueOrPeers(peer: PeerId, key: js.typedarray.Uint8Array, options: AbortOptions): AsyncGenerator[DialPeerEvent | QueryEvent, Any, Any] = js.native
     
     /* private */ val log: Any = js.native
     

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This is not an Entity Lookup, but a control that supports AutoComplete / KeyPress Events (Text or Number)
   * @remarks This interface is not supported for CRM mobile clients (phones or tablets) and the interactive service hub.  It is only available for Updated entities.
   * @deprecated Deprecated in v9.
-  * @see {@link https://docs.microsoft.com/en-us/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#some-client-apis-are-deprecated External Link: Deprecated Client APIs}
+  * @see {@link https://learn.microsoft.com/en-us/power-platform/important-changes-coming#some-client-apis-are-deprecated External Link: Deprecated Client APIs}
   * @see {@link StandardControl}
   */
 @js.native
@@ -29,7 +29,7 @@ trait AutoLookupControl
   /**
     * Hides the auto-completion drop-down list configured for a specific text field
     * @deprecated Deprecated in v9.
-    * @see {@link https://docs.microsoft.com/en-us/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#some-client-apis-are-deprecated External Link: Deprecated Client APIs}
+    * @see {@link https://learn.microsoft.com/en-us/power-platform/important-changes-coming#some-client-apis-are-deprecated External Link: Deprecated Client APIs}
     */
   def hideAutoComplete(): Unit = js.native
   
@@ -37,7 +37,7 @@ trait AutoLookupControl
     * Shows upt to 10 matching strings in a drop-down list as users press keys to type charactrer in a specific text field.
     * On selecting an item in the drop-down list, the value in the text field changes to the selected item, the drop-down list disappears, and the OnChange event for the text field is invoked
     * @deprecated Deprecated in v9.
-    * @see {@link https://docs.microsoft.com/en-us/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#some-client-apis-are-deprecated External Link: Deprecated Client APIs}
+    * @see {@link https://learn.microsoft.com/en-us/power-platform/important-changes-coming#some-client-apis-are-deprecated External Link: Deprecated Client APIs}
     * @param resultSet The results to show
     */
   def showAutoComplete(resultSet: AutoCompleteResultSet): Unit = js.native

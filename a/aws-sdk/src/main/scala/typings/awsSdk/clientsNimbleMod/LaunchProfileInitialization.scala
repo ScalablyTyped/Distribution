@@ -17,7 +17,7 @@ trait LaunchProfileInitialization extends StObject {
   var ec2SecurityGroupIds: js.UndefOr[LaunchProfileSecurityGroupIdList] = js.undefined
   
   /**
-    * The launch profile ID.
+    * The ID of the launch profile used to control access from the streaming session.
     */
   var launchProfileId: js.UndefOr[LaunchProfileId] = js.undefined
   
@@ -37,7 +37,7 @@ trait LaunchProfileInitialization extends StObject {
   var name: js.UndefOr[LaunchProfileName] = js.undefined
   
   /**
-    * The platform of the launch platform, either WINDOWS or LINUX.
+    * The platform of the launch platform, either Windows or Linux.
     */
   var platform: js.UndefOr[LaunchProfilePlatform] = js.undefined
   

@@ -1,11 +1,16 @@
 package typings.forgeApis
 
+import typings.forgeApis.mod.DownloadResponseType
 import typings.forgeApis.mod.Scope
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object forgeApisStrings {
+  
+  @js.native
+  sealed trait OK extends StObject
+  inline def OK: OK = "OK".asInstanceOf[OK]
   
   @js.native
   sealed trait accountColonread
@@ -18,6 +23,12 @@ object forgeApisStrings {
     extends StObject
        with Scope
   inline def accountColonwrite: accountColonwrite = "account:write".asInstanceOf[accountColonwrite]
+  
+  @js.native
+  sealed trait arraybuffer
+    extends StObject
+       with DownloadResponseType
+  inline def arraybuffer: arraybuffer = "arraybuffer".asInstanceOf[arraybuffer]
   
   @js.native
   sealed trait bucketColoncreate
@@ -72,6 +83,30 @@ object forgeApisStrings {
     extends StObject
        with Scope
   inline def dataColonwrite: dataColonwrite = "data:write".asInstanceOf[dataColonwrite]
+  
+  @js.native
+  sealed trait document
+    extends StObject
+       with DownloadResponseType
+  inline def document: document = "document".asInstanceOf[document]
+  
+  @js.native
+  sealed trait json
+    extends StObject
+       with DownloadResponseType
+  inline def json: json = "json".asInstanceOf[json]
+  
+  @js.native
+  sealed trait stream
+    extends StObject
+       with DownloadResponseType
+  inline def stream: stream = "stream".asInstanceOf[stream]
+  
+  @js.native
+  sealed trait text
+    extends StObject
+       with DownloadResponseType
+  inline def text: text = "text".asInstanceOf[text]
   
   @js.native
   sealed trait `user-profileColonread`

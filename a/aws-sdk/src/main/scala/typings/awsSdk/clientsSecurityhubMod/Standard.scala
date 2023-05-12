@@ -25,6 +25,11 @@ trait Standard extends StObject {
     * The ARN of a standard.
     */
   var StandardsArn: js.UndefOr[NonEmptyString] = js.undefined
+  
+  /**
+    * Provides details about the management of a standard. 
+    */
+  var StandardsManagedBy: js.UndefOr[typings.awsSdk.clientsSecurityhubMod.StandardsManagedBy] = js.undefined
 }
 object Standard {
   
@@ -51,5 +56,9 @@ object Standard {
     inline def setStandardsArn(value: NonEmptyString): Self = StObject.set(x, "StandardsArn", value.asInstanceOf[js.Any])
     
     inline def setStandardsArnUndefined: Self = StObject.set(x, "StandardsArn", js.undefined)
+    
+    inline def setStandardsManagedBy(value: StandardsManagedBy): Self = StObject.set(x, "StandardsManagedBy", value.asInstanceOf[js.Any])
+    
+    inline def setStandardsManagedByUndefined: Self = StObject.set(x, "StandardsManagedBy", js.undefined)
   }
 }

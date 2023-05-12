@@ -1,7 +1,6 @@
 package typings.angularCompilerCli
 
-import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.ClassDeclaration
-import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.DeclarationNode
+import typings.angularCompilerCli.anon.ClassDeclarationDeclarati
 import typings.angularCompilerCli.srcNgtscScopeSrcApiMod.ComponentScope
 import typings.angularCompilerCli.srcNgtscScopeSrcApiMod.ComponentScopeReader
 import typings.angularCompilerCli.srcNgtscScopeSrcApiMod.RemoteScope
@@ -25,10 +24,10 @@ object srcNgtscScopeSrcComponentScopeMod {
       * that component. If remote scoping is not required (the common case), returns `null`.
       */
     /* CompleteClass */
-    override def getRemoteScope(clazz: ClassDeclaration[DeclarationNode]): RemoteScope | Null = js.native
+    override def getRemoteScope(clazz: ClassDeclarationDeclarati): RemoteScope | Null = js.native
     
     /* CompleteClass */
-    override def getScopeForComponent(clazz: ClassDeclaration[DeclarationNode]): ComponentScope | Null = js.native
+    override def getScopeForComponent(clazz: ClassDeclarationDeclarati): ComponentScope | Null = js.native
     
     /* private */ var readers: Any = js.native
   }

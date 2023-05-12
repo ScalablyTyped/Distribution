@@ -1,32 +1,21 @@
 package typings.rcMentions
 
+import org.scalablytyped.runtime.Shortcut
+import typings.rcMentions.esMentionsMod.DataDrivenOptionProps
 import typings.rcMentions.esMentionsMod.Direction
 import typings.rcMentions.esMentionsMod.Placement
-import typings.rcMentions.esOptionMod.OptionProps
-import typings.react.mod.Component
+import typings.react.mod.FC
 import typings.react.mod.ReactElement
-import typings.react.mod.global.JSX.Element
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esKeywordTriggerMod {
+object esKeywordTriggerMod extends Shortcut {
   
   @JSImport("rc-mentions/es/KeywordTrigger", JSImport.Default)
   @js.native
-  open class default () extends KeywordTrigger
-  
-  @js.native
-  trait KeywordTrigger
-    extends Component[KeywordTriggerProps, js.Object, Any] {
-    
-    def getDropDownPlacement(): String = js.native
-    
-    def getDropdownElement(): Element = js.native
-    
-    def getDropdownPrefix(): String = js.native
-  }
+  val default: FC[KeywordTriggerProps] = js.native
   
   trait KeywordTriggerProps extends StObject {
     
@@ -40,7 +29,7 @@ object esKeywordTriggerMod {
     
     var loading: js.UndefOr[Boolean] = js.undefined
     
-    var options: js.Array[OptionProps]
+    var options: js.Array[DataDrivenOptionProps]
     
     var placement: js.UndefOr[Placement] = js.undefined
     
@@ -52,7 +41,7 @@ object esKeywordTriggerMod {
   }
   object KeywordTriggerProps {
     
-    inline def apply(options: js.Array[OptionProps]): KeywordTriggerProps = {
+    inline def apply(options: js.Array[DataDrivenOptionProps]): KeywordTriggerProps = {
       val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
       __obj.asInstanceOf[KeywordTriggerProps]
     }
@@ -80,9 +69,9 @@ object esKeywordTriggerMod {
       
       inline def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
       
-      inline def setOptions(value: js.Array[OptionProps]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: js.Array[DataDrivenOptionProps]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      inline def setOptionsVarargs(value: OptionProps*): Self = StObject.set(x, "options", js.Array(value*))
+      inline def setOptionsVarargs(value: DataDrivenOptionProps*): Self = StObject.set(x, "options", js.Array(value*))
       
       inline def setPlacement(value: Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
       
@@ -101,4 +90,9 @@ object esKeywordTriggerMod {
       inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
     }
   }
+  
+  type _To = FC[KeywordTriggerProps]
+  
+  /* This means you don't have to write `default`, but can instead just say `esKeywordTriggerMod.foo` */
+  override def _to: FC[KeywordTriggerProps] = default
 }

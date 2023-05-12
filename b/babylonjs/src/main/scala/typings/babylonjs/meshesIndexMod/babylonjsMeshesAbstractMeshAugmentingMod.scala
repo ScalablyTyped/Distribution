@@ -12,7 +12,7 @@ object babylonjsMeshesAbstractMeshAugmentingMod {
     
     /**
       * Object used to store instanced buffers defined by user
-      * @see https://doc.babylonjs.com/how_to/how_to_use_instances#custom-buffers
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/mesh/copies/instances#custom-buffers
       */
     var instancedBuffers: StringDictionary[Any]
   }

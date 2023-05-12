@@ -3,8 +3,6 @@ package typings.wordpressBlocks
 import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.ReactChild
 import typings.std.Record
-import typings.wordpressBlocks.mod.Block
-import typings.wordpressBlocks.mod.BlockInstance
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

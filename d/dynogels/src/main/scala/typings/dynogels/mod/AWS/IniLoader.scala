@@ -7,4 +7,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("dynogels", "AWS.IniLoader")
 @js.native
 open class IniLoader ()
-  extends typings.awsSdk.mod.IniLoader
+  extends typings.awsSdk2Types.mod.IniLoader

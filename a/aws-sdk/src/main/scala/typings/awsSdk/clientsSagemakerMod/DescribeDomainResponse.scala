@@ -27,6 +27,11 @@ trait DescribeDomainResponse extends StObject {
   var CreationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
+    * The default settings used to create a space.
+    */
+  var DefaultSpaceSettings: js.UndefOr[typings.awsSdk.clientsSagemakerMod.DefaultSpaceSettings] = js.undefined
+  
+  /**
     * Settings which are applied to UserProfiles in this domain if settings are not explicitly specified in a given UserProfile. 
     */
   var DefaultUserSettings: js.UndefOr[UserSettings] = js.undefined
@@ -131,6 +136,10 @@ object DescribeDomainResponse {
     inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
     inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
+    
+    inline def setDefaultSpaceSettings(value: DefaultSpaceSettings): Self = StObject.set(x, "DefaultSpaceSettings", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultSpaceSettingsUndefined: Self = StObject.set(x, "DefaultSpaceSettings", js.undefined)
     
     inline def setDefaultUserSettings(value: UserSettings): Self = StObject.set(x, "DefaultUserSettings", value.asInstanceOf[js.Any])
     

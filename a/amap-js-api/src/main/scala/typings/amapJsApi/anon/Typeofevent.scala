@@ -18,8 +18,8 @@ trait Typeofevent extends StObject {
     * @param handler 事件功能函数
     * @param context 事件上下文
     */
-  def addDomListener[N /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 111, starting with typings.amapJsApi.amapJsApiStrings.a, typings.amapJsApi.amapJsApiStrings.abbr, typings.amapJsApi.amapJsApiStrings.address */ Any */, E /* <: /* keyof std.HTMLElementEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 101, starting with typings.amapJsApi.amapJsApiStrings.fullscreenchange, typings.amapJsApi.amapJsApiStrings.fullscreenerror, typings.amapJsApi.amapJsApiStrings.copy */ Any */, C](
-    // tslint:disable-next-line: no-unnecessary-generics
+  def addDomListener[N /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 111, starting with typings.amapJsApi.amapJsApiStrings.a, typings.amapJsApi.amapJsApiStrings.abbr, typings.amapJsApi.amapJsApiStrings.address */ Any */, E /* <: /* keyof std.HTMLElementEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 101, starting with typings.amapJsApi.amapJsApiStrings.fullscreenchange, typings.amapJsApi.amapJsApiStrings.fullscreenerror, typings.amapJsApi.amapJsApiStrings.abort */ Any */, C](
+    // eslint-disable-next-line no-unnecessary-generics
   instance: /* import warning: importer.ImportType#apply Failed type conversion: std.HTMLElementTagNameMap[N] */ js.Any,
     eventName: E,
     handler: js.ThisFunction1[
@@ -28,8 +28,8 @@ trait Typeofevent extends StObject {
       Unit
     ]
   ): EventListener[`0`] = js.native
-  def addDomListener[N /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 111, starting with typings.amapJsApi.amapJsApiStrings.a, typings.amapJsApi.amapJsApiStrings.abbr, typings.amapJsApi.amapJsApiStrings.address */ Any */, E /* <: /* keyof std.HTMLElementEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 101, starting with typings.amapJsApi.amapJsApiStrings.fullscreenchange, typings.amapJsApi.amapJsApiStrings.fullscreenerror, typings.amapJsApi.amapJsApiStrings.copy */ Any */, C](
-    // tslint:disable-next-line: no-unnecessary-generics
+  def addDomListener[N /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 111, starting with typings.amapJsApi.amapJsApiStrings.a, typings.amapJsApi.amapJsApiStrings.abbr, typings.amapJsApi.amapJsApiStrings.address */ Any */, E /* <: /* keyof std.HTMLElementEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 101, starting with typings.amapJsApi.amapJsApiStrings.fullscreenchange, typings.amapJsApi.amapJsApiStrings.fullscreenerror, typings.amapJsApi.amapJsApiStrings.abort */ Any */, C](
+    // eslint-disable-next-line no-unnecessary-generics
   instance: /* import warning: importer.ImportType#apply Failed type conversion: std.HTMLElementTagNameMap[N] */ js.Any,
     eventName: E,
     handler: js.ThisFunction1[
@@ -48,13 +48,13 @@ trait Typeofevent extends StObject {
     * @param context 事件上下文
     */
   def addListener[I /* <: EventEmitter */, C](
-    // tslint:disable-next-line: no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
   instance: I,
     eventName: String,
     handler: js.ThisFunction1[/* this */ C, /* event */ Any, Unit]
   ): EventListener[`1`] = js.native
   def addListener[I /* <: EventEmitter */, C](
-    // tslint:disable-next-line: no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
   instance: I,
     eventName: String,
     handler: js.ThisFunction1[/* this */ C, /* event */ Any, Unit],
@@ -69,13 +69,13 @@ trait Typeofevent extends StObject {
     * @param context 事件上下文
     */
   def addListenerOnce[I /* <: EventEmitter */, C](
-    // tslint:disable-next-line: no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
   instance: I,
     eventName: String,
     handler: js.ThisFunction1[/* this */ C, /* event */ Any, Unit]
   ): EventListener[`1`] = js.native
   def addListenerOnce[I /* <: EventEmitter */, C](
-    // tslint:disable-next-line: no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
   instance: I,
     eventName: String,
     handler: js.ThisFunction1[/* this */ C, /* event */ Any, Unit],

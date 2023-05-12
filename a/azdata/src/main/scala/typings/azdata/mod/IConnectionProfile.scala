@@ -1,6 +1,7 @@
 package typings.azdata.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.azdata.mod.connection.AuthenticationType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,10 @@ trait IConnectionProfile
   extends StObject
      with ConnectionInfo {
   
-  var authenticationType: String
+  /**
+    * The type of authentication to use when connecting
+    */
+  var authenticationType: String | AuthenticationType
   
   var azureTenantId: js.UndefOr[String] = js.undefined
   
@@ -38,7 +42,7 @@ trait IConnectionProfile
 object IConnectionProfile {
   
   inline def apply(
-    authenticationType: String,
+    authenticationType: String | AuthenticationType,
     id: String,
     options: StringDictionary[Any],
     password: String,
@@ -55,7 +59,7 @@ object IConnectionProfile {
   @scala.inline
   implicit open class MutableBuilder[Self <: IConnectionProfile] (val x: Self) extends AnyVal {
     
-    inline def setAuthenticationType(value: String): Self = StObject.set(x, "authenticationType", value.asInstanceOf[js.Any])
+    inline def setAuthenticationType(value: String | AuthenticationType): Self = StObject.set(x, "authenticationType", value.asInstanceOf[js.Any])
     
     inline def setAzureTenantId(value: String): Self = StObject.set(x, "azureTenantId", value.asInstanceOf[js.Any])
     

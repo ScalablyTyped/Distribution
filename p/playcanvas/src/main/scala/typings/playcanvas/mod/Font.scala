@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** @typedef {import('../../platform/graphics/texture.js').Texture} Texture */
 /**
   * Represents the resource of a font asset.
   */
@@ -14,7 +13,8 @@ open class Font protected () extends StObject {
   /**
     * Create a new Font instance.
     *
-    * @param {Texture[]} textures - The font textures.
+    * @param {import('../../platform/graphics/texture.js').Texture[]} textures - The font
+    * textures.
     * @param {object} data - The font data.
     */
   def this(textures: js.Array[Texture], data: js.Object) = this()
@@ -36,7 +36,7 @@ open class Font protected () extends StObject {
   /**
     * The font textures.
     *
-    * @type {Texture[]}
+    * @type {import('../../platform/graphics/texture.js').Texture[]}
     */
   var textures: js.Array[Texture] = js.native
   

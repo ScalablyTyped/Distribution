@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "postcss-color-hex-alpha" : "8.0.4"
+      "postcss-color-hex-alpha" : "9.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "postcss-color-hex-alpha" : "8.0.4"
+      "postcss-color-hex-alpha" : "9.0.2"
     }
   ],
   "compile-devDependencies" : [

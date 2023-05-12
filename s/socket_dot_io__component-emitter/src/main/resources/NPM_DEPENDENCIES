@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@socket.io/component-emitter" : "3.1.0"
+      "@socket.io/component-emitter" : "4.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@socket.io/component-emitter" : "3.1.0"
+      "@socket.io/component-emitter" : "4.0.0"
     }
   ],
   "compile-devDependencies" : [

@@ -29,14 +29,14 @@ trait TranslateTextResponse extends StObject {
   /**
     * The translated text.
     */
-  var TranslatedText: String
+  var TranslatedText: TranslatedTextString
 }
 object TranslateTextResponse {
   
   inline def apply(
     SourceLanguageCode: LanguageCodeString,
     TargetLanguageCode: LanguageCodeString,
-    TranslatedText: String
+    TranslatedText: TranslatedTextString
   ): TranslateTextResponse = {
     val __obj = js.Dynamic.literal(SourceLanguageCode = SourceLanguageCode.asInstanceOf[js.Any], TargetLanguageCode = TargetLanguageCode.asInstanceOf[js.Any], TranslatedText = TranslatedText.asInstanceOf[js.Any])
     __obj.asInstanceOf[TranslateTextResponse]
@@ -59,6 +59,6 @@ object TranslateTextResponse {
     
     inline def setTargetLanguageCode(value: LanguageCodeString): Self = StObject.set(x, "TargetLanguageCode", value.asInstanceOf[js.Any])
     
-    inline def setTranslatedText(value: String): Self = StObject.set(x, "TranslatedText", value.asInstanceOf[js.Any])
+    inline def setTranslatedText(value: TranslatedTextString): Self = StObject.set(x, "TranslatedText", value.asInstanceOf[js.Any])
   }
 }

@@ -14,6 +14,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Addin extends StObject {
   
   /**
+    * Represents a modal notification dialog that can appear when the user attempts to close a document. The document won't close until the user responds.
+    * This API is only supported in Excel.
+    *
+    * @remarks
+    * **Requirement set**: {@link https://learn.microsoft.com/javascript/api/requirement-sets/common/shared-runtime-requirement-sets | SharedRuntime 1.2}
+    */
+  var beforeDocumentCloseNotification: BeforeDocumentCloseNotification
+  
+  /**
     * Gets the current startup behavior for the add-in.
     * 
     * @remarks
@@ -61,18 +70,21 @@ trait Addin extends StObject {
 object Addin {
   
   inline def apply(
+    beforeDocumentCloseNotification: BeforeDocumentCloseNotification,
     getStartupBehavior: () => js.Promise[StartupBehavior],
     hide: () => js.Promise[Unit],
     onVisibilityModeChanged: js.Function1[/* message */ VisibilityModeChangedMessage, Unit] => js.Promise[js.Function0[js.Promise[Unit]]],
     setStartupBehavior: StartupBehavior => js.Promise[Unit],
     showAsTaskpane: () => js.Promise[Unit]
   ): Addin = {
-    val __obj = js.Dynamic.literal(getStartupBehavior = js.Any.fromFunction0(getStartupBehavior), hide = js.Any.fromFunction0(hide), onVisibilityModeChanged = js.Any.fromFunction1(onVisibilityModeChanged), setStartupBehavior = js.Any.fromFunction1(setStartupBehavior), showAsTaskpane = js.Any.fromFunction0(showAsTaskpane))
+    val __obj = js.Dynamic.literal(beforeDocumentCloseNotification = beforeDocumentCloseNotification.asInstanceOf[js.Any], getStartupBehavior = js.Any.fromFunction0(getStartupBehavior), hide = js.Any.fromFunction0(hide), onVisibilityModeChanged = js.Any.fromFunction1(onVisibilityModeChanged), setStartupBehavior = js.Any.fromFunction1(setStartupBehavior), showAsTaskpane = js.Any.fromFunction0(showAsTaskpane))
     __obj.asInstanceOf[Addin]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: Addin] (val x: Self) extends AnyVal {
+    
+    inline def setBeforeDocumentCloseNotification(value: BeforeDocumentCloseNotification): Self = StObject.set(x, "beforeDocumentCloseNotification", value.asInstanceOf[js.Any])
     
     inline def setGetStartupBehavior(value: () => js.Promise[StartupBehavior]): Self = StObject.set(x, "getStartupBehavior", js.Any.fromFunction0(value))
     

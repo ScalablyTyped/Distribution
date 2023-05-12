@@ -87,6 +87,16 @@ trait Deployment extends StObject {
   var GrowthType: js.UndefOr[typings.awsSdk.clientsAppconfigMod.GrowthType] = js.undefined
   
   /**
+    * The Amazon Resource Name of the Key Management Service key used to encrypt configuration data. You can encrypt secrets stored in Secrets Manager, Amazon Simple Storage Service (Amazon S3) objects encrypted with SSE-KMS, or secure string parameters stored in Amazon Web Services Systems Manager Parameter Store. 
+    */
+  var KmsKeyArn: js.UndefOr[Arn] = js.undefined
+  
+  /**
+    * The KMS key identifier (key ID, key alias, or key ARN). AppConfig uses this ID to encrypt the configuration data using a customer managed key. 
+    */
+  var KmsKeyIdentifier: js.UndefOr[Identifier] = js.undefined
+  
+  /**
     * The percentage of targets for which the deployment is available.
     */
   var PercentageComplete: js.UndefOr[Percentage] = js.undefined
@@ -178,6 +188,14 @@ object Deployment {
     inline def setGrowthType(value: GrowthType): Self = StObject.set(x, "GrowthType", value.asInstanceOf[js.Any])
     
     inline def setGrowthTypeUndefined: Self = StObject.set(x, "GrowthType", js.undefined)
+    
+    inline def setKmsKeyArn(value: Arn): Self = StObject.set(x, "KmsKeyArn", value.asInstanceOf[js.Any])
+    
+    inline def setKmsKeyArnUndefined: Self = StObject.set(x, "KmsKeyArn", js.undefined)
+    
+    inline def setKmsKeyIdentifier(value: Identifier): Self = StObject.set(x, "KmsKeyIdentifier", value.asInstanceOf[js.Any])
+    
+    inline def setKmsKeyIdentifierUndefined: Self = StObject.set(x, "KmsKeyIdentifier", js.undefined)
     
     inline def setPercentageComplete(value: Percentage): Self = StObject.set(x, "PercentageComplete", value.asInstanceOf[js.Any])
     

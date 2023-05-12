@@ -12,7 +12,7 @@ trait DescribeFlowLogsResult extends StObject {
   var FlowLogs: js.UndefOr[FlowLogSet] = js.undefined
   
   /**
-    * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
+    * The token to request the next page of items. This value is null when there are no more items to return.
     */
   var NextToken: js.UndefOr[String] = js.undefined
 }

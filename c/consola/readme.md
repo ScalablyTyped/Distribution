@@ -1,7 +1,7 @@
 
 # Scala.js typings for consola
 
-Typings are for version 2.15.3
+Typings are for version 3.1.0
 
 ## Library description:
 Elegant Console Logger for Node.js and Browser

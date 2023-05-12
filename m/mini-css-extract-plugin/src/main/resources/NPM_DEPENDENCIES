@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "mini-css-extract-plugin" : "2.6.1"
+      "mini-css-extract-plugin" : "2.7.5"
     }
   ],
   "test-dependencies" : [
     {
-      "mini-css-extract-plugin" : "2.6.1"
+      "mini-css-extract-plugin" : "2.7.5"
     }
   ],
   "compile-devDependencies" : [

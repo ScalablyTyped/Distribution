@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteVpcEndpointConnectionNotificationsRequest extends StObject {
   
   /**
-    * One or more notification IDs.
+    * The IDs of the notifications.
     */
   var ConnectionNotificationIds: ConnectionNotificationIdsList
   

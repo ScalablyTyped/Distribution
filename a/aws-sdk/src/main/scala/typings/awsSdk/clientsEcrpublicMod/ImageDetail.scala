@@ -22,27 +22,27 @@ trait ImageDetail extends StObject {
   var imageManifestMediaType: js.UndefOr[MediaType] = js.undefined
   
   /**
-    * The date and time, expressed in standard JavaScript date format, at which the current image was pushed to the repository. 
+    * The date and time, expressed in standard JavaScript date format, that the current image was pushed to the repository at. 
     */
   var imagePushedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The size, in bytes, of the image in the repository. If the image is a manifest list, this will be the max size of all manifests in the list.  Beginning with Docker version 1.9, the Docker client compresses image layers before pushing them to a V2 Docker registry. The output of the docker images command shows the uncompressed image size, so it may return a larger image size than the image sizes returned by DescribeImages. 
+    * The size, in bytes, of the image in the repository. If the image is a manifest list, this is the max size of all manifests in the list.  Beginning with Docker version 1.9, the Docker client compresses image layers before pushing them to a V2 Docker registry. The output of the docker images command shows the uncompressed image size, so it might return a larger image size than the image sizes that are returned by DescribeImages. 
     */
   var imageSizeInBytes: js.UndefOr[ImageSizeInBytes] = js.undefined
   
   /**
-    * The list of tags associated with this image.
+    * The list of tags that's associated with this image.
     */
   var imageTags: js.UndefOr[ImageTagList] = js.undefined
   
   /**
-    * The AWS account ID associated with the public registry to which this image belongs.
+    * The Amazon Web Services account ID that's associated with the public registry where this image belongs.
     */
   var registryId: js.UndefOr[RegistryId] = js.undefined
   
   /**
-    * The name of the repository to which this image belongs.
+    * The name of the repository where this image belongs.
     */
   var repositoryName: js.UndefOr[RepositoryName] = js.undefined
 }

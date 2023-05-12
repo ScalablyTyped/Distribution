@@ -38,7 +38,7 @@ trait PstnCallLogRow extends StObject {
   // Connection fee price.
   var connectionCharge: js.UndefOr[NullableOption[Double]] = js.undefined
   
-  // Type of currency used to calculate the cost of the call (ISO 4217).
+  // Type of currency used to calculate the cost of the call. For details, see (ISO 4217.
   var currency: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
@@ -74,10 +74,10 @@ trait PstnCallLogRow extends StObject {
   // Call start time.
   var startDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // Country code of the tenant, ISO 3166-1 alpha-2.
+  // Country code of the tenant. For details, see ISO 3166-1 alpha-2.
   var tenantCountryCode: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // Country code of the user, ISO 3166-1 alpha-2.
+  // Country code of the user. For details, see ISO 3166-1 alpha-2.
   var usageCountryCode: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Display name of the user.
@@ -87,8 +87,8 @@ trait PstnCallLogRow extends StObject {
   var userId: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
-    * UserPrincipalName (sign-in name) in Azure Active Directory. This is usually the same as user's SIP Address, and can be
-    * same as user's e-mail address.
+    * The user principal name (sign-in name) in Azure Active Directory. This is usually the same as the user's SIP address,
+    * and can be same as the user's e-mail address.
     */
   var userPrincipalName: js.UndefOr[NullableOption[String]] = js.undefined
 }

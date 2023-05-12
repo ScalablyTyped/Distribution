@@ -6,34 +6,49 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @JSImport("structured-source", JSImport.Namespace)
+  @JSImport("structured-source", "StructuredSource")
   @js.native
-  open class ^ protected ()
-    extends StObject
-       with StructuredSource {
+  open class StructuredSource protected () extends StObject {
     /**
-      * @param source - source code text.
+      * @constructs StructuredSource
+      * @param {string} source - source code text.
       */
     def this(source: String) = this()
     
-    /* CompleteClass */
-    override def indexToPosition(index: Double): SourcePosition = js.native
+    /**
+      * @param {number} index - index to the source code.
+      * @return {SourcePosition} position.
+      */
+    def indexToPosition(index: Double): SourcePosition = js.native
     
-    /* CompleteClass */
-    override def locationToRange(loc: SourceLocation): js.Tuple2[Double, Double] = js.native
+    /* private */ val indice: Any = js.native
     
-    /* CompleteClass */
-    override def positionToIndex(pos: SourcePosition): Double = js.native
+    def line: Double = js.native
     
-    /* CompleteClass */
-    override def rangeToLocation(range: js.Tuple2[Double, Double]): SourceLocation = js.native
+    /**
+      * @param {SourceLocation} loc - location indicator.
+      * @return {[ number, number ]} range.
+      */
+    def locationToRange(loc: SourceLocation): SourceRange = js.native
+    
+    /**
+      * @param {SourcePosition} pos - position indicator.
+      * @return {number} index.
+      */
+    def positionToIndex(pos: SourcePosition): Double = js.native
+    
+    /**
+      * @param {[ number, number ]} range - pair of indice.
+      * @return {SourceLocation} location.
+      */
+    def rangeToLocation(range: SourceRange): SourceLocation = js.native
   }
   
   trait SourceLocation extends StObject {
     
-    var end: SourcePosition
+    val end: SourcePosition
     
-    var start: SourcePosition
+    val start: SourcePosition
   }
   object SourceLocation {
     
@@ -53,11 +68,9 @@ object mod {
   
   trait SourcePosition extends StObject {
     
-    // Column number starts with 0.
-    var column: Double
+    val column: Double
     
-    // Line number starts with 1.
-    var line: Double
+    val line: Double
   }
   object SourcePosition {
     
@@ -75,38 +88,5 @@ object mod {
     }
   }
   
-  trait StructuredSource extends StObject {
-    
-    def indexToPosition(index: Double): SourcePosition
-    
-    def locationToRange(loc: SourceLocation): js.Tuple2[Double, Double]
-    
-    def positionToIndex(pos: SourcePosition): Double
-    
-    def rangeToLocation(range: js.Tuple2[Double, Double]): SourceLocation
-  }
-  object StructuredSource {
-    
-    inline def apply(
-      indexToPosition: Double => SourcePosition,
-      locationToRange: SourceLocation => js.Tuple2[Double, Double],
-      positionToIndex: SourcePosition => Double,
-      rangeToLocation: js.Tuple2[Double, Double] => SourceLocation
-    ): StructuredSource = {
-      val __obj = js.Dynamic.literal(indexToPosition = js.Any.fromFunction1(indexToPosition), locationToRange = js.Any.fromFunction1(locationToRange), positionToIndex = js.Any.fromFunction1(positionToIndex), rangeToLocation = js.Any.fromFunction1(rangeToLocation))
-      __obj.asInstanceOf[StructuredSource]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: StructuredSource] (val x: Self) extends AnyVal {
-      
-      inline def setIndexToPosition(value: Double => SourcePosition): Self = StObject.set(x, "indexToPosition", js.Any.fromFunction1(value))
-      
-      inline def setLocationToRange(value: SourceLocation => js.Tuple2[Double, Double]): Self = StObject.set(x, "locationToRange", js.Any.fromFunction1(value))
-      
-      inline def setPositionToIndex(value: SourcePosition => Double): Self = StObject.set(x, "positionToIndex", js.Any.fromFunction1(value))
-      
-      inline def setRangeToLocation(value: js.Tuple2[Double, Double] => SourceLocation): Self = StObject.set(x, "rangeToLocation", js.Any.fromFunction1(value))
-    }
-  }
+  type SourceRange = js.Tuple2[Double, Double]
 }

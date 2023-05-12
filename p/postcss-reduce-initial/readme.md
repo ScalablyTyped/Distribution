@@ -1,7 +1,7 @@
 
 # Scala.js typings for postcss-reduce-initial
 
-Typings are for version 5.1.1
+Typings are for version 6.0.0
 
 ## Library description:
 Reduce initial definitions to the actual initial value, where possible.

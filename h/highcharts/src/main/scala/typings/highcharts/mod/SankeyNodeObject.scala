@@ -8,6 +8,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SankeyNodeObject extends Point {
   
   /**
+    * The color index of the auto generated node, especially for use in styled
+    * mode.
+    */
+  @JSName("colorIndex")
+  var colorIndex_SankeyNodeObject: Double = js.native
+  
+  /**
     * The color of the auto generated node.
     */
   @JSName("color")

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RequestBodyContentApplicationjsonExpiryLimit extends StObject {
   
-  var parameters: `433`
+  var parameters: `496`
   
   var requestBody: ContentApplicationjsonExpiryLimit
   
@@ -15,7 +15,7 @@ trait RequestBodyContentApplicationjsonExpiryLimit extends StObject {
 object RequestBodyContentApplicationjsonExpiryLimit {
   
   inline def apply(
-    parameters: `433`,
+    parameters: `496`,
     requestBody: ContentApplicationjsonExpiryLimit,
     responses: `200ContentApplicationjsonOrigin`
   ): RequestBodyContentApplicationjsonExpiryLimit = {
@@ -26,7 +26,7 @@ object RequestBodyContentApplicationjsonExpiryLimit {
   @scala.inline
   implicit open class MutableBuilder[Self <: RequestBodyContentApplicationjsonExpiryLimit] (val x: Self) extends AnyVal {
     
-    inline def setParameters(value: `433`): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: `496`): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     inline def setRequestBody(value: ContentApplicationjsonExpiryLimit): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     

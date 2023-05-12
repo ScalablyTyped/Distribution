@@ -399,6 +399,8 @@ object sapUiCoreDndDropInfoMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:dragEnter dragEnter} to attached listeners.
       *
       * Listeners may prevent the default action of this event by calling the `preventDefault` method on the
@@ -414,6 +416,7 @@ object sapUiCoreDndDropInfoMod {
     
     /**
       * @SINCE 1.56
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:dragOver dragOver} to attached listeners.
       *
@@ -426,6 +429,8 @@ object sapUiCoreDndDropInfoMod {
     mParameters: js.Object): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:drop drop} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining

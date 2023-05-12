@@ -10,6 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class UntagResourceCommand protected ()
   extends typings.awsSdkClientCognitoIdentity.distTypesCommandsUntagResourceCommandMod.UntagResourceCommand {
+  /**
+    * @public
+    */
   def this(input: UntagResourceCommandInput) = this()
 }
 /* static members */

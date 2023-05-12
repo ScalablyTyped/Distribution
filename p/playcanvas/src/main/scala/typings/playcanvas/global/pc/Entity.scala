@@ -25,9 +25,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Create a new Entity.
   *
   * @param {string} [name] - The non-unique name of the entity, default is "Untitled".
-  * @param {AppBase} [app] - The application the entity belongs to, default is the current application.
+  * @param {import('./app-base.js').AppBase} [app] - The application the entity belongs to,
+  * default is the current application.
   * @example
-  * var entity = new pc.Entity();
+  * const entity = new pc.Entity();
   *
   * // Add a Component to the Entity
   * entity.addComponent("camera", {
@@ -43,11 +44,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * entity.translate(10, 0, 0);
   *
   * // Or translate it by setting its position directly
-  * var p = entity.getPosition();
+  * const p = entity.getPosition();
   * entity.setPosition(p.x + 10, p.y, p.z);
   *
   * // Change the entity's rotation in local space
-  * var e = entity.getLocalEulerAngles();
+  * const e = entity.getLocalEulerAngles();
   * entity.setLocalEulerAngles(e.x, e.y + 90, e.z);
   *
   * // Or use rotateLocal

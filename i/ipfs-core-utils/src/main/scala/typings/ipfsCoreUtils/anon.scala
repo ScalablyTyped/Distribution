@@ -5,6 +5,8 @@ import typings.ipfsCoreUtils.distSrcTypesMod.LoadBaseFn
 import typings.ipfsCoreUtils.distSrcTypesMod.LoadCodecFn
 import typings.ipfsCoreUtils.distSrcTypesMod.LoadHasherFn
 import typings.multiformats.cidMod.CID
+import typings.multiformats.distTypesSrcBasesInterfaceMod.MultibaseCodec
+import typings.multiformats.distTypesSrcCodecsInterfaceMod.BlockCodec
 import typings.multiformats.distTypesSrcLinkInterfaceMod.Version
 import typings.std.FormData
 import typings.std.Record
@@ -16,19 +18,13 @@ object anon {
   
   trait Bases extends StObject {
     
-    var bases: js.Array[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_interface.MultibaseCodec<any> */ Any
-      ]
+    var bases: js.Array[MultibaseCodec[Any]]
     
     var loadBase: js.UndefOr[LoadBaseFn] = js.undefined
   }
   object Bases {
     
-    inline def apply(
-      bases: js.Array[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_interface.MultibaseCodec<any> */ Any
-        ]
-    ): Bases = {
+    inline def apply(bases: js.Array[MultibaseCodec[Any]]): Bases = {
       val __obj = js.Dynamic.literal(bases = bases.asInstanceOf[js.Any])
       __obj.asInstanceOf[Bases]
     }
@@ -36,21 +32,11 @@ object anon {
     @scala.inline
     implicit open class MutableBuilder[Self <: Bases] (val x: Self) extends AnyVal {
       
-      inline def setBases(
-        value: js.Array[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_interface.MultibaseCodec<any> */ Any
-            ]
-      ): Self = StObject.set(x, "bases", value.asInstanceOf[js.Any])
+      inline def setBases(value: js.Array[MultibaseCodec[Any]]): Self = StObject.set(x, "bases", value.asInstanceOf[js.Any])
       
-      inline def setBasesVarargs(
-        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_interface.MultibaseCodec<any> */ Any)*
-      ): Self = StObject.set(x, "bases", js.Array(value*))
+      inline def setBasesVarargs(value: MultibaseCodec[Any]*): Self = StObject.set(x, "bases", js.Array(value*))
       
-      inline def setLoadBase(
-        value: /* codeOrName */ String => js.Promise[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MultibaseCodec<any> */ Any
-            ]
-      ): Self = StObject.set(x, "loadBase", js.Any.fromFunction1(value))
+      inline def setLoadBase(value: /* codeOrName */ String => js.Promise[MultibaseCodec[Any]]): Self = StObject.set(x, "loadBase", js.Any.fromFunction1(value))
       
       inline def setLoadBaseUndefined: Self = StObject.set(x, "loadBase", js.undefined)
     }
@@ -119,19 +105,13 @@ object anon {
   
   trait Codecs extends StObject {
     
-    var codecs: js.Array[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_interface.BlockCodec<any, any> */ Any
-      ]
+    var codecs: js.Array[BlockCodec[Any, Any]]
     
     var loadCodec: js.UndefOr[LoadCodecFn] = js.undefined
   }
   object Codecs {
     
-    inline def apply(
-      codecs: js.Array[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_interface.BlockCodec<any, any> */ Any
-        ]
-    ): Codecs = {
+    inline def apply(codecs: js.Array[BlockCodec[Any, Any]]): Codecs = {
       val __obj = js.Dynamic.literal(codecs = codecs.asInstanceOf[js.Any])
       __obj.asInstanceOf[Codecs]
     }
@@ -139,21 +119,11 @@ object anon {
     @scala.inline
     implicit open class MutableBuilder[Self <: Codecs] (val x: Self) extends AnyVal {
       
-      inline def setCodecs(
-        value: js.Array[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_interface.BlockCodec<any, any> */ Any
-            ]
-      ): Self = StObject.set(x, "codecs", value.asInstanceOf[js.Any])
+      inline def setCodecs(value: js.Array[BlockCodec[Any, Any]]): Self = StObject.set(x, "codecs", value.asInstanceOf[js.Any])
       
-      inline def setCodecsVarargs(
-        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_interface.BlockCodec<any, any> */ Any)*
-      ): Self = StObject.set(x, "codecs", js.Array(value*))
+      inline def setCodecsVarargs(value: (BlockCodec[Any, Any])*): Self = StObject.set(x, "codecs", js.Array(value*))
       
-      inline def setLoadCodec(
-        value: /* codeOrName */ Double | String => js.Promise[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BlockCodec<any, any> */ Any
-            ]
-      ): Self = StObject.set(x, "loadCodec", js.Any.fromFunction1(value))
+      inline def setLoadCodec(value: /* codeOrName */ Double | String => js.Promise[BlockCodec[Any, Any]]): Self = StObject.set(x, "loadCodec", js.Any.fromFunction1(value))
       
       inline def setLoadCodecUndefined: Self = StObject.set(x, "loadCodec", js.undefined)
     }
@@ -208,9 +178,7 @@ object anon {
       inline def setHashersVarargs(value: MultihashHasher*): Self = StObject.set(x, "hashers", js.Array(value*))
       
       inline def setLoadHasher(
-        value: /* codeOrName */ Double | String => js.Promise[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MultihashHasher */ Any
-            ]
+        value: /* codeOrName */ Double | String => js.Promise[typings.multiformats.distTypesSrcHashesInterfaceMod.MultihashHasher[Double]]
       ): Self = StObject.set(x, "loadHasher", js.Any.fromFunction1(value))
       
       inline def setLoadHasherUndefined: Self = StObject.set(x, "loadHasher", js.undefined)

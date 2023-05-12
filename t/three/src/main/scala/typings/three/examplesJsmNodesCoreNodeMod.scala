@@ -38,8 +38,6 @@ object examplesJsmNodesCoreNodeMod {
     
     def getChildren(): js.Array[Node] = js.native
     
-    def getConstructHash(builder: typings.three.examplesJsmNodesCoreNodeBuilderMod.default): String = js.native
-    
     def getHash(builder: typings.three.examplesJsmNodesCoreNodeBuilderMod.default): String = js.native
     
     def getNodeType(builder: typings.three.examplesJsmNodesCoreNodeBuilderMod.default): NodeTypeOption | Null = js.native
@@ -50,6 +48,8 @@ object examplesJsmNodesCoreNodeMod {
     def getUpdateType(builder: typings.three.examplesJsmNodesCoreNodeBuilderMod.default): NodeUpdateTypeOption = js.native
     
     var id: Double = js.native
+    
+    def isGlobal(builder: typings.three.examplesJsmNodesCoreNodeBuilderMod.default): Boolean = js.native
     
     var isNode: `true` = js.native
     

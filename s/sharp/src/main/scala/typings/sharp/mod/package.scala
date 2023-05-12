@@ -19,6 +19,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 inline def apply(): Sharp = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Sharp]
 inline def apply(input: String): Sharp = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[Sharp]
 inline def apply(input: String, options: SharpOptions): Sharp = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Sharp]
+inline def apply(input: js.typedarray.ArrayBuffer): Sharp = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[Sharp]
+inline def apply(input: js.typedarray.ArrayBuffer, options: SharpOptions): Sharp = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Sharp]
 inline def apply(input: js.typedarray.Float32Array): Sharp = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[Sharp]
 inline def apply(input: js.typedarray.Float32Array, options: SharpOptions): Sharp = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Sharp]
 inline def apply(input: js.typedarray.Float64Array): Sharp = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[Sharp]

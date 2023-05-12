@@ -1,6 +1,6 @@
 package typings.dynogels.mod.AWS
 
-import typings.awsSdk.libCredentialsSamlCredentialsMod.SAMLCredentialsParams
+import typings.awsSdk2Types.libCredentialsSamlCredentialsMod.SAMLCredentialsParams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("dynogels", "AWS.SAMLCredentials")
 @js.native
 open class SAMLCredentials protected ()
-  extends typings.awsSdk.mod.SAMLCredentials {
+  extends typings.awsSdk2Types.mod.SAMLCredentials {
   /**
   		 * Creates a new credentials object.
   		 * @param {object} params - The map of params passed to AWS.STS.assumeRoleWithSAML().

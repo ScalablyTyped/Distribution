@@ -20,7 +20,7 @@ object mod {
     def this(props: AnimatedProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: AnimatedProps, context: Any) = this()
   }
@@ -32,7 +32,7 @@ object mod {
     def this(props: ConductorProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: ConductorProps, context: Any) = this()
   }

@@ -12,7 +12,7 @@ trait Static extends StObject {
     *
     * @param details Information about the tab to retrieve all frames from.
     */
-  def getAllFrames(details: GetAllFramesDetailsType): js.Promise[js.Array[GetAllFramesCallbackDetailsItemType]]
+  def getAllFrames(details: GetAllFramesDetailsType): js.Promise[js.Array[GetAllFramesCallbackDetailsItemType] | Null]
   
   /**
     * Retrieves information about the given frame. A frame refers to an &lt;iframe&gt; or a &lt;frame&gt; of a web page and is
@@ -20,7 +20,7 @@ trait Static extends StObject {
     *
     * @param details Information about the frame to retrieve information about.
     */
-  def getFrame(details: GetFrameDetailsType): js.Promise[GetFrameCallbackDetailsType]
+  def getFrame(details: GetFrameDetailsType): js.Promise[GetFrameCallbackDetailsType | Null]
   
   /**
     * Fired when a navigation is about to occur.
@@ -75,8 +75,8 @@ trait Static extends StObject {
 object Static {
   
   inline def apply(
-    getAllFrames: GetAllFramesDetailsType => js.Promise[js.Array[GetAllFramesCallbackDetailsItemType]],
-    getFrame: GetFrameDetailsType => js.Promise[GetFrameCallbackDetailsType],
+    getAllFrames: GetAllFramesDetailsType => js.Promise[js.Array[GetAllFramesCallbackDetailsItemType] | Null],
+    getFrame: GetFrameDetailsType => js.Promise[GetFrameCallbackDetailsType | Null],
     onBeforeNavigate: onBeforeNavigateEvent,
     onCommitted: onCommittedEvent,
     onCompleted: onCompletedEvent,
@@ -94,9 +94,9 @@ object Static {
   @scala.inline
   implicit open class MutableBuilder[Self <: Static] (val x: Self) extends AnyVal {
     
-    inline def setGetAllFrames(value: GetAllFramesDetailsType => js.Promise[js.Array[GetAllFramesCallbackDetailsItemType]]): Self = StObject.set(x, "getAllFrames", js.Any.fromFunction1(value))
+    inline def setGetAllFrames(value: GetAllFramesDetailsType => js.Promise[js.Array[GetAllFramesCallbackDetailsItemType] | Null]): Self = StObject.set(x, "getAllFrames", js.Any.fromFunction1(value))
     
-    inline def setGetFrame(value: GetFrameDetailsType => js.Promise[GetFrameCallbackDetailsType]): Self = StObject.set(x, "getFrame", js.Any.fromFunction1(value))
+    inline def setGetFrame(value: GetFrameDetailsType => js.Promise[GetFrameCallbackDetailsType | Null]): Self = StObject.set(x, "getFrame", js.Any.fromFunction1(value))
     
     inline def setOnBeforeNavigate(value: onBeforeNavigateEvent): Self = StObject.set(x, "onBeforeNavigate", value.asInstanceOf[js.Any])
     

@@ -1,7 +1,7 @@
 
 # Scala.js typings for opentelemetry__instrumentation-grpc
 
-Typings are for version 0.33.0
+Typings are for version 0.39.0
 
 ## Library description:
 OpenTelemetry grpc automatic instrumentation package.

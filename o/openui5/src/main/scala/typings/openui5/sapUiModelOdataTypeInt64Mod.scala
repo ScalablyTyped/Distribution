@@ -24,8 +24,8 @@ object sapUiModelOdataTypeInt64Mod {
       */
     def this(
       /**
-      * format options as defined in {@link sap.ui.core.format.NumberFormat}. In contrast to NumberFormat `groupingEnabled`
-      * defaults to `true`.
+      * Format options as defined in {@link sap.ui.core.format.NumberFormat.getIntegerInstance}. In contrast
+      * to NumberFormat `groupingEnabled` defaults to `true`.
       */
     oFormatOptions: js.Object,
       /**

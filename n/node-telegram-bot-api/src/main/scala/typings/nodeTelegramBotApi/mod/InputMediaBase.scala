@@ -8,6 +8,8 @@ trait InputMediaBase extends StObject {
   
   var caption: js.UndefOr[String] = js.undefined
   
+  var has_spoiler: js.UndefOr[Boolean] = js.undefined
+  
   var media: String
   
   var parse_mode: js.UndefOr[ParseMode] = js.undefined
@@ -25,6 +27,10 @@ object InputMediaBase {
     inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
     
     inline def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
+    
+    inline def setHas_spoiler(value: Boolean): Self = StObject.set(x, "has_spoiler", value.asInstanceOf[js.Any])
+    
+    inline def setHas_spoilerUndefined: Self = StObject.set(x, "has_spoiler", js.undefined)
     
     inline def setMedia(value: String): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
     

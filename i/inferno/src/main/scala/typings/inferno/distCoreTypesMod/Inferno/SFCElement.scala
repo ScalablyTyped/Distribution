@@ -20,7 +20,7 @@ trait SFCElement[P]
 object SFCElement {
   
   inline def apply[P](props: P, `type`: SFC[P]): SFCElement[P] = {
-    val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any], key = null)
+    val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SFCElement[P]]
   }

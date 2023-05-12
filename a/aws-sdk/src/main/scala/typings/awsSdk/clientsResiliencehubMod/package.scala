@@ -7,6 +7,10 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
+type AdditionalInfoMap = StringDictionary[AdditionalInfoValueList]
+
+type AdditionalInfoValueList = js.Array[String1024]
+
 type AlarmRecommendationList = js.Array[AlarmRecommendation]
 
 type AlarmReferenceIdList = js.Array[String500]
@@ -40,6 +44,10 @@ type AppAssessmentSummaryList = js.Array[AppAssessmentSummary]
 type AppComplianceStatusType = _AppComplianceStatusType | String
 
 type AppComponentList = js.Array[AppComponent]
+
+type AppComponentNameList = js.Array[String255]
+
+type AppInputSourceList = js.Array[AppInputSource]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Active_
@@ -112,7 +120,7 @@ type ConfigRecommendationOptimizationType = _ConfigRecommendationOptimizationTyp
   - typings.awsSdk.awsSdkStrings.Hourly_
   - typings.awsSdk.awsSdkStrings.Daily_
   - typings.awsSdk.awsSdkStrings.Monthly_
-  - typings.awsSdk.awsSdkStrings.Yearly
+  - typings.awsSdk.awsSdkStrings.Yearly_
   - java.lang.String
 */
 type CostFrequency = _CostFrequency | String
@@ -146,6 +154,12 @@ type DocumentName = String
 
 type Double = scala.Double
 
+type EksNamespace = String
+
+type EksNamespaceList = js.Array[EksNamespace]
+
+type EksSourceList = js.Array[EksSource]
+
 type EntityDescription = String
 
 type EntityId = String
@@ -176,6 +190,8 @@ type EstimatedCostTier = _EstimatedCostTier | String
   - java.lang.String
 */
 type HaArchitecture = _HaArchitecture | String
+
+type Integer = scala.Double
 
 type MaxResults = scala.Double
 
@@ -250,6 +266,13 @@ type ResourceErrorList = js.Array[ResourceError]
 */
 type ResourceImportStatusType = _ResourceImportStatusType | String
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.AddOnly
+  - typings.awsSdk.awsSdkStrings.ReplaceAll
+  - java.lang.String
+*/
+type ResourceImportStrategyType = _ResourceImportStrategyType | String
+
 type ResourceMappingList = js.Array[ResourceMapping]
 
 /* Rewritten from type alias, can be one of: 
@@ -258,6 +281,7 @@ type ResourceMappingList = js.Array[ResourceMapping]
   - typings.awsSdk.awsSdkStrings.AppRegistryApp
   - typings.awsSdk.awsSdkStrings.ResourceGroup
   - typings.awsSdk.awsSdkStrings.Terraform_
+  - typings.awsSdk.awsSdkStrings.EKS
   - java.lang.String
 */
 type ResourceMappingType = _ResourceMappingType | String
@@ -271,6 +295,13 @@ type ResourceMappingType = _ResourceMappingType | String
 */
 type ResourceResolutionStatusType = _ResourceResolutionStatusType | String
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.AppTemplate
+  - typings.awsSdk.awsSdkStrings.Discovered_
+  - java.lang.String
+*/
+type ResourceSourceType = _ResourceSourceType | String
+
 type S3Url = String
 
 type Seconds = scala.Double
@@ -280,6 +311,12 @@ type SopRecommendationList = js.Array[SopRecommendation]
 type SopServiceType = SSM | String
 
 type SpecReferenceId = String
+
+type String1024 = String
+
+type String128WithoutWhitespace = String
+
+type String2048 = String
 
 type String255 = String
 

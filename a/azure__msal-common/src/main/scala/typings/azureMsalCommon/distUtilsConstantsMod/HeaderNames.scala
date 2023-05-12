@@ -42,4 +42,16 @@ object HeaderNames extends StObject {
     extends StObject
        with HeaderNames
   /* "WWW-Authenticate" */ val WWWAuthenticate: typings.azureMsalCommon.distUtilsConstantsMod.HeaderNames.WWWAuthenticate & String = js.native
+  
+  @js.native
+  sealed trait X_MS_HTTP_VERSION
+    extends StObject
+       with HeaderNames
+  /* "x-ms-httpver" */ val X_MS_HTTP_VERSION: typings.azureMsalCommon.distUtilsConstantsMod.HeaderNames.X_MS_HTTP_VERSION & String = js.native
+  
+  @js.native
+  sealed trait X_MS_REQUEST_ID
+    extends StObject
+       with HeaderNames
+  /* "x-ms-request-id" */ val X_MS_REQUEST_ID: typings.azureMsalCommon.distUtilsConstantsMod.HeaderNames.X_MS_REQUEST_ID & String = js.native
 }

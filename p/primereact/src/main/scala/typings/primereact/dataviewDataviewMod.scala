@@ -1,5 +1,8 @@
 package typings.primereact
 
+import typings.primereact.primereactInts.`-1`
+import typings.primereact.primereactInts.`0`
+import typings.primereact.primereactInts.`1`
 import typings.primereact.primereactStrings.`additions removals`
 import typings.primereact.primereactStrings.`additions text`
 import typings.primereact.primereactStrings.`inline`
@@ -12,6 +15,7 @@ import typings.primereact.primereactStrings.all
 import typings.primereact.primereactStrings.ascending
 import typings.primereact.primereactStrings.assertive
 import typings.primereact.primereactStrings.both
+import typings.primereact.primereactStrings.bottom
 import typings.primereact.primereactStrings.copy
 import typings.primereact.primereactStrings.date
 import typings.primereact.primereactStrings.decimal
@@ -47,10 +51,13 @@ import typings.primereact.primereactStrings.step
 import typings.primereact.primereactStrings.tel
 import typings.primereact.primereactStrings.text
 import typings.primereact.primereactStrings.time
+import typings.primereact.primereactStrings.top
 import typings.primereact.primereactStrings.tree
 import typings.primereact.primereactStrings.url
 import typings.primereact.primereactStrings.vertical
 import typings.primereact.primereactStrings.yes
+import typings.primereact.utilsUtilsMod.IconOptions
+import typings.primereact.utilsUtilsMod.IconType
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
@@ -106,10 +113,14 @@ object dataviewDataviewMod {
     def this(props: DataViewProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: DataViewProps, context: Any) = this()
     
+    /**
+      * Used to get container element.
+      * @return {HTMLDivElement} Container element
+      */
     def getElement(): HTMLDivElement = js.native
   }
   
@@ -119,52 +130,92 @@ object dataviewDataviewMod {
     def this(props: DataViewLayoutOptionsProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: DataViewLayoutOptionsProps, context: Any) = this()
   }
   
-  type DataViewAppendToType = js.UndefOr[self | HTMLElement | Null]
-  
-  trait DataViewLayoutOptionsChangeParams extends StObject {
+  /**
+    * Custom data view layout options event.
+    */
+  trait DataViewLayoutOptionsChangeEvent extends StObject {
     
+    /**
+      * Browser event.
+      */
     var originalEvent: MouseEvent[HTMLButtonElement, NativeMouseEvent]
     
-    var value: DataViewLayoutType
+    /**
+      * New value.
+      */
+    var value: list | grid | (String & (Record[String, Any]))
   }
-  object DataViewLayoutOptionsChangeParams {
+  object DataViewLayoutOptionsChangeEvent {
     
-    inline def apply(originalEvent: MouseEvent[HTMLButtonElement, NativeMouseEvent], value: DataViewLayoutType): DataViewLayoutOptionsChangeParams = {
+    inline def apply(
+      originalEvent: MouseEvent[HTMLButtonElement, NativeMouseEvent],
+      value: list | grid | (String & (Record[String, Any]))
+    ): DataViewLayoutOptionsChangeEvent = {
       val __obj = js.Dynamic.literal(originalEvent = originalEvent.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.asInstanceOf[DataViewLayoutOptionsChangeParams]
+      __obj.asInstanceOf[DataViewLayoutOptionsChangeEvent]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: DataViewLayoutOptionsChangeParams] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: DataViewLayoutOptionsChangeEvent] (val x: Self) extends AnyVal {
       
       inline def setOriginalEvent(value: MouseEvent[HTMLButtonElement, NativeMouseEvent]): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
-      inline def setValue(value: DataViewLayoutType): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: list | grid | (String & (Record[String, Any]))): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
   trait DataViewLayoutOptionsProps extends StObject {
     
+    /**
+      * Used to get the child elements of the component.
+      * @readonly
+      */
     var children: js.UndefOr[ReactNode] = js.undefined
     
+    /**
+      * Style class of the element.
+      */
     var className: js.UndefOr[String] = js.undefined
     
+    /**
+      * Defines the display mode grid icon.
+      */
+    var gridIcon: js.UndefOr[IconType[DataViewProps]] = js.undefined
+    
+    /**
+      * Unique identifier of the element.
+      */
     var id: js.UndefOr[String] = js.undefined
     
-    var layout: js.UndefOr[DataViewLayoutType] = js.undefined
+    /**
+      * Orientation of the panels, valid values are "list" and "grid".
+      */
+    var layout: js.UndefOr[list | grid | (String & (Record[String, Any]))] = js.undefined
     
-    def onChange(e: DataViewLayoutOptionsChangeParams): Unit
+    /**
+      * Defines the display mode list icon.
+      */
+    var listIcon: js.UndefOr[IconType[DataViewProps]] = js.undefined
     
+    /**
+      * Layout options change callback
+      * @param {DataViewLayoutOptionsChangeEvent} event - Custom event.
+      */
+    def onChange(event: DataViewLayoutOptionsChangeEvent): Unit
+    
+    /**
+      * Inline style of the element.
+      */
     var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object DataViewLayoutOptionsProps {
     
-    inline def apply(onChange: DataViewLayoutOptionsChangeParams => Unit): DataViewLayoutOptionsProps = {
+    inline def apply(onChange: DataViewLayoutOptionsChangeEvent => Unit): DataViewLayoutOptionsProps = {
       val __obj = js.Dynamic.literal(onChange = js.Any.fromFunction1(onChange))
       __obj.asInstanceOf[DataViewLayoutOptionsProps]
     }
@@ -180,15 +231,27 @@ object dataviewDataviewMod {
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
+      inline def setGridIcon(value: IconType[DataViewProps]): Self = StObject.set(x, "gridIcon", value.asInstanceOf[js.Any])
+      
+      inline def setGridIconFunction1(value: /* options */ IconOptions[DataViewProps] => ReactNode): Self = StObject.set(x, "gridIcon", js.Any.fromFunction1(value))
+      
+      inline def setGridIconUndefined: Self = StObject.set(x, "gridIcon", js.undefined)
+      
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
       inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      inline def setLayout(value: DataViewLayoutType): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+      inline def setLayout(value: list | grid | (String & (Record[String, Any]))): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
       
       inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
       
-      inline def setOnChange(value: DataViewLayoutOptionsChangeParams => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setListIcon(value: IconType[DataViewProps]): Self = StObject.set(x, "listIcon", value.asInstanceOf[js.Any])
+      
+      inline def setListIconFunction1(value: /* options */ IconOptions[DataViewProps] => ReactNode): Self = StObject.set(x, "listIcon", js.Any.fromFunction1(value))
+      
+      inline def setListIconUndefined: Self = StObject.set(x, "listIcon", js.undefined)
+      
+      inline def setOnChange(value: DataViewLayoutOptionsChangeEvent => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
       inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
@@ -196,32 +259,42 @@ object dataviewDataviewMod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.primereact.primereactStrings.list
-    - typings.primereact.primereactStrings.grid
-    - java.lang.String & (typings.std.Record[java.lang.String, scala.Any])
-  */
-  type DataViewLayoutType = _DataViewLayoutType | (String & (Record[String, Any]))
-  
-  trait DataViewPageParams extends StObject {
+  /**
+    * Custom page event.
+    * @see {@link DataViewProps.onPage}
+    * @event
+    */
+  trait DataViewPageEvent extends StObject {
     
+    /**
+      * Index of the first records on page.
+      */
     var first: Double
     
+    /**
+      * Value of the new page.
+      */
     var page: Double
     
+    /**
+      * Total number of pages.
+      */
     var pageCount: Double
     
+    /**
+      * Number of records to display per page.
+      */
     var rows: Double
   }
-  object DataViewPageParams {
+  object DataViewPageEvent {
     
-    inline def apply(first: Double, page: Double, pageCount: Double, rows: Double): DataViewPageParams = {
+    inline def apply(first: Double, page: Double, pageCount: Double, rows: Double): DataViewPageEvent = {
       val __obj = js.Dynamic.literal(first = first.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any], pageCount = pageCount.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any])
-      __obj.asInstanceOf[DataViewPageParams]
+      __obj.asInstanceOf[DataViewPageEvent]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: DataViewPageParams] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: DataViewPageEvent] (val x: Self) extends AnyVal {
       
       inline def setFirst(value: Double): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
       
@@ -233,21 +306,6 @@ object dataviewDataviewMod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.primereact.primereactStrings.top
-    - typings.primereact.primereactStrings.bottom
-    - typings.primereact.primereactStrings.both
-  */
-  trait DataViewPaginatorPositionType extends StObject
-  object DataViewPaginatorPositionType {
-    
-    inline def both: typings.primereact.primereactStrings.both = "both".asInstanceOf[typings.primereact.primereactStrings.both]
-    
-    inline def bottom: typings.primereact.primereactStrings.bottom = "bottom".asInstanceOf[typings.primereact.primereactStrings.bottom]
-    
-    inline def top: typings.primereact.primereactStrings.top = "top".asInstanceOf[typings.primereact.primereactStrings.top]
-  }
-  
   /* Inlined parent std.Omit<react.react.DetailedHTMLProps<react.react.HTMLAttributes<std.HTMLDivElement>, std.HTMLDivElement>, 'ref'> */
   trait DataViewProps extends StObject {
     
@@ -255,6 +313,10 @@ object dataviewDataviewMod {
     
     var accessKey: js.UndefOr[String] = js.undefined
     
+    /**
+      * Whether to show it even there is only one page.
+      * @defaultValue true
+      */
     var alwaysShowPaginator: js.UndefOr[Boolean] = js.undefined
     
     var `aria-activedescendant`: js.UndefOr[String] = js.undefined
@@ -359,22 +421,37 @@ object dataviewDataviewMod {
     
     var autoCorrect: js.UndefOr[String] = js.undefined
     
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
+    
     var autoSave: js.UndefOr[String] = js.undefined
     
+    /**
+      * Used to get the child elements of the component.
+      * @readonly
+      */
     var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
     var color: js.UndefOr[String] = js.undefined
     
+    var content: js.UndefOr[String] = js.undefined
+    
     var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
     var contextMenu: js.UndefOr[String] = js.undefined
     
+    /**
+      * Template of the current page report element.
+      * @defaultValue (&#123;currentPage&#125; of &#123;totalPages&#125;)
+      */
     var currentPageReportTemplate: js.UndefOr[String] = js.undefined
     
     var dangerouslySetInnerHTML: js.UndefOr[Html] = js.undefined
     
+    /**
+      * Name of the field that uniquely identifies a record in the data. Should be a unique business key to prevent re-rendering.
+      */
     var dataKey: js.UndefOr[String] = js.undefined
     
     var datatype: js.UndefOr[String] = js.undefined
@@ -387,14 +464,32 @@ object dataviewDataviewMod {
     
     var draggable: js.UndefOr[Booleanish] = js.undefined
     
+    /**
+      * Text to display when there is no data.
+      * @defaultValue No records found.
+      */
     var emptyMessage: js.UndefOr[String] = js.undefined
     
+    /**
+      * Index of the first record to render.
+      * @defaultValue 0
+      */
     var first: js.UndefOr[Double] = js.undefined
     
+    /**
+      * Footer content of the component.
+      */
     var footer: js.UndefOr[ReactNode] = js.undefined
     
+    /**
+      * Whether the grid structure in the container has gutter. Default value is false.
+      * @defaultValue false
+      */
     var gutter: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Header content of the component.
+      */
     var header: js.UndefOr[ReactNode] = js.undefined
     
     var hidden: js.UndefOr[Boolean] = js.undefined
@@ -415,7 +510,18 @@ object dataviewDataviewMod {
     
     var itemScope: js.UndefOr[Boolean] = js.undefined
     
-    var itemTemplate: js.UndefOr[js.Function2[/* item */ Any, /* layout */ DataViewLayoutType, ReactNode]] = js.undefined
+    /**
+      * Function that gets the option along with the layout mode and returns the content.
+      * @param {*} item - Current item.
+      * @param {'list' | 'grid' | (string & Record<string, unknown>)} layout - Current layout.
+      */
+    var itemTemplate: js.UndefOr[
+        js.Function2[
+          /* item */ Any, 
+          /* layout */ list | grid | (String & (Record[String, Any])), 
+          ReactNode
+        ]
+      ] = js.undefined
     
     var itemType: js.UndefOr[String] = js.undefined
     
@@ -423,13 +529,27 @@ object dataviewDataviewMod {
     
     var lang: js.UndefOr[String] = js.undefined
     
-    var layout: js.UndefOr[DataViewLayoutType] = js.undefined
+    /**
+      * Layout of the items, valid values are "list" and "grid".
+      * @defaultValue list
+      */
+    var layout: js.UndefOr[list | grid | (String & (Record[String, Any]))] = js.undefined
     
+    /**
+      * Defines if data is loaded and interacted with in lazy manner.
+      * @defaultValue false
+      */
     var `lazy`: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Display loading icon of the button.
+      */
     var loading: js.UndefOr[Boolean] = js.undefined
     
-    var loadingIcon: js.UndefOr[String] = js.undefined
+    /**
+      * Name of the loading icon or JSX.Element for loading icon.
+      */
+    var loadingIcon: js.UndefOr[IconType[DataViewProps]] = js.undefined
     
     var nonce: js.UndefOr[String] = js.undefined
     
@@ -529,7 +649,11 @@ object dataviewDataviewMod {
     
     var onMouseUp: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
-    var onPage: js.UndefOr[js.Function1[/* e */ DataViewPageParams, Unit]] = js.undefined
+    /**
+      * Callback to invoke on pagination.
+      * @param {DataViewPageEvent} event - Custom page event.
+      */
+    var onPage: js.UndefOr[js.Function1[/* event */ DataViewPageEvent, Unit]] = js.undefined
     
     var onPaste: js.UndefOr[ClipboardEventHandler[HTMLDivElement]] = js.undefined
     
@@ -595,20 +719,49 @@ object dataviewDataviewMod {
     
     var onWheel: js.UndefOr[WheelEventHandler[HTMLDivElement]] = js.undefined
     
+    /**
+      * Number of page links to display.
+      * @defaultValue 5
+      */
     var pageLinkSize: js.UndefOr[Double] = js.undefined
     
+    /**
+      * When specified as true, enables the pagination.
+      * @defaultValue false
+      */
     var paginator: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Style class of the paginator element.
+      */
     var paginatorClassName: js.UndefOr[String] = js.undefined
     
-    var paginatorDropdownAppendTo: js.UndefOr[DataViewAppendToType] = js.undefined
+    /**
+      * DOM element instance where the overlay panel should be mounted. Valid values are any DOM Element and 'self'. The self value is used to render a component where it is located.
+      * @defaultValue document.body
+      */
+    var paginatorDropdownAppendTo: js.UndefOr[self | HTMLElement | Null] = js.undefined
     
+    /**
+      * Content for the left side of the paginator.
+      */
     var paginatorLeft: js.UndefOr[ReactNode] = js.undefined
     
-    var paginatorPosition: js.UndefOr[DataViewPaginatorPositionType] = js.undefined
+    /**
+      * Position of the paginator, options are "top","bottom" or "both".
+      * @defaultValue bottom
+      */
+    var paginatorPosition: js.UndefOr[top | bottom | both] = js.undefined
     
+    /**
+      * Content for the right side of the paginator.
+      */
     var paginatorRight: js.UndefOr[ReactNode] = js.undefined
     
+    /**
+      * Template of the paginator. For details, refer to the template section of the paginator documentation for further options.
+      * @defaultValue FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink RowsPerPageDropdown
+      */
     var paginatorTemplate: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PaginatorTemplate */ Any
       ] = js.undefined
@@ -621,23 +774,39 @@ object dataviewDataviewMod {
     
     var radioGroup: js.UndefOr[String] = js.undefined
     
+    var rel: js.UndefOr[String] = js.undefined
+    
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
     
+    var rev: js.UndefOr[String] = js.undefined
+    
     var role: js.UndefOr[AriaRole] = js.undefined
     
+    /**
+      * Number of rows to display per page.
+      */
     var rows: js.UndefOr[Double] = js.undefined
     
+    /**
+      * Array of integer values to display inside rows per page dropdown.
+      */
     var rowsPerPageOptions: js.UndefOr[js.Array[Double]] = js.undefined
     
     var security: js.UndefOr[String] = js.undefined
     
     var slot: js.UndefOr[String] = js.undefined
     
+    /**
+      * Name of the field to sort data by default.
+      */
     var sortField: js.UndefOr[String] = js.undefined
     
-    var sortOrder: js.UndefOr[DataViewSortOrderType] = js.undefined
+    /**
+      * Order to sort the data by default.
+      */
+    var sortOrder: js.UndefOr[`1` | `0` | `-1` | Null] = js.undefined
     
     var spellCheck: js.UndefOr[Booleanish] = js.undefined
     
@@ -651,6 +820,9 @@ object dataviewDataviewMod {
     
     var title: js.UndefOr[String] = js.undefined
     
+    /**
+      * Number of total records, defaults to length of value when not defined.
+      */
     var totalRecords: js.UndefOr[Double] = js.undefined
     
     var translate: js.UndefOr[yes | no] = js.undefined
@@ -659,6 +831,9 @@ object dataviewDataviewMod {
     
     var unselectable: js.UndefOr[on | off] = js.undefined
     
+    /**
+      * An array of objects to display.
+      */
     var value: js.UndefOr[js.Array[Any]] = js.undefined
     
     var vocab: js.UndefOr[String] = js.undefined
@@ -887,6 +1062,10 @@ object dataviewDataviewMod {
       
       inline def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
       
+      inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+      
+      inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+      
       inline def setAutoSave(value: String): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
       
       inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
@@ -903,9 +1082,13 @@ object dataviewDataviewMod {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
       inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
       inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
@@ -1001,7 +1184,7 @@ object dataviewDataviewMod {
       
       inline def setItemScopeUndefined: Self = StObject.set(x, "itemScope", js.undefined)
       
-      inline def setItemTemplate(value: (/* item */ Any, /* layout */ DataViewLayoutType) => ReactNode): Self = StObject.set(x, "itemTemplate", js.Any.fromFunction2(value))
+      inline def setItemTemplate(value: (/* item */ Any, /* layout */ list | grid | (String & (Record[String, Any]))) => ReactNode): Self = StObject.set(x, "itemTemplate", js.Any.fromFunction2(value))
       
       inline def setItemTemplateUndefined: Self = StObject.set(x, "itemTemplate", js.undefined)
       
@@ -1019,7 +1202,7 @@ object dataviewDataviewMod {
       
       inline def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
       
-      inline def setLayout(value: DataViewLayoutType): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+      inline def setLayout(value: list | grid | (String & (Record[String, Any]))): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
       
       inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
       
@@ -1029,7 +1212,9 @@ object dataviewDataviewMod {
       
       inline def setLoading(value: Boolean): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
       
-      inline def setLoadingIcon(value: String): Self = StObject.set(x, "loadingIcon", value.asInstanceOf[js.Any])
+      inline def setLoadingIcon(value: IconType[DataViewProps]): Self = StObject.set(x, "loadingIcon", value.asInstanceOf[js.Any])
+      
+      inline def setLoadingIconFunction1(value: /* options */ IconOptions[DataViewProps] => ReactNode): Self = StObject.set(x, "loadingIcon", js.Any.fromFunction1(value))
       
       inline def setLoadingIconUndefined: Self = StObject.set(x, "loadingIcon", js.undefined)
       
@@ -1231,7 +1416,7 @@ object dataviewDataviewMod {
       
       inline def setOnMouseUpUndefined: Self = StObject.set(x, "onMouseUp", js.undefined)
       
-      inline def setOnPage(value: /* e */ DataViewPageParams => Unit): Self = StObject.set(x, "onPage", js.Any.fromFunction1(value))
+      inline def setOnPage(value: /* event */ DataViewPageEvent => Unit): Self = StObject.set(x, "onPage", js.Any.fromFunction1(value))
       
       inline def setOnPageUndefined: Self = StObject.set(x, "onPage", js.undefined)
       
@@ -1373,7 +1558,7 @@ object dataviewDataviewMod {
       
       inline def setPaginatorClassNameUndefined: Self = StObject.set(x, "paginatorClassName", js.undefined)
       
-      inline def setPaginatorDropdownAppendTo(value: DataViewAppendToType): Self = StObject.set(x, "paginatorDropdownAppendTo", value.asInstanceOf[js.Any])
+      inline def setPaginatorDropdownAppendTo(value: self | HTMLElement): Self = StObject.set(x, "paginatorDropdownAppendTo", value.asInstanceOf[js.Any])
       
       inline def setPaginatorDropdownAppendToNull: Self = StObject.set(x, "paginatorDropdownAppendTo", null)
       
@@ -1383,7 +1568,7 @@ object dataviewDataviewMod {
       
       inline def setPaginatorLeftUndefined: Self = StObject.set(x, "paginatorLeft", js.undefined)
       
-      inline def setPaginatorPosition(value: DataViewPaginatorPositionType): Self = StObject.set(x, "paginatorPosition", value.asInstanceOf[js.Any])
+      inline def setPaginatorPosition(value: top | bottom | both): Self = StObject.set(x, "paginatorPosition", value.asInstanceOf[js.Any])
       
       inline def setPaginatorPositionUndefined: Self = StObject.set(x, "paginatorPosition", js.undefined)
       
@@ -1415,6 +1600,10 @@ object dataviewDataviewMod {
       
       inline def setRadioGroupUndefined: Self = StObject.set(x, "radioGroup", js.undefined)
       
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      
+      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+      
       inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
       inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
@@ -1422,6 +1611,10 @@ object dataviewDataviewMod {
       inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+      
+      inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+      
+      inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
       
       inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
@@ -1449,7 +1642,7 @@ object dataviewDataviewMod {
       
       inline def setSortFieldUndefined: Self = StObject.set(x, "sortField", js.undefined)
       
-      inline def setSortOrder(value: DataViewSortOrderType): Self = StObject.set(x, "sortOrder", value.asInstanceOf[js.Any])
+      inline def setSortOrder(value: `1` | `0` | `-1`): Self = StObject.set(x, "sortOrder", value.asInstanceOf[js.Any])
       
       inline def setSortOrderNull: Self = StObject.set(x, "sortOrder", null)
       
@@ -1506,17 +1699,4 @@ object dataviewDataviewMod {
       inline def setVocabUndefined: Self = StObject.set(x, "vocab", js.undefined)
     }
   }
-  
-  /* Rewritten from type alias, can be one of: 
-    - typings.primereact.primereactInts.`1`
-    - typings.primereact.primereactInts.`0`
-    - typings.primereact.primereactInts.`-1`
-    - scala.Unit
-    - scala.Null
-  */
-  type DataViewSortOrderType = js.UndefOr[_DataViewSortOrderType | Null]
-  
-  trait _DataViewLayoutType extends StObject
-  
-  trait _DataViewSortOrderType extends StObject
 }

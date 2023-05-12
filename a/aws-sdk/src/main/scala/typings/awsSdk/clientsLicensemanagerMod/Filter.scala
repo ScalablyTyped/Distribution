@@ -12,7 +12,7 @@ trait Filter extends StObject {
   var Name: js.UndefOr[FilterName] = js.undefined
   
   /**
-    * Filter values. Filter values are case-sensitive.
+    * The value of the filter, which is case-sensitive. You can only specify one value for the filter.
     */
   var Values: js.UndefOr[FilterValues] = js.undefined
 }

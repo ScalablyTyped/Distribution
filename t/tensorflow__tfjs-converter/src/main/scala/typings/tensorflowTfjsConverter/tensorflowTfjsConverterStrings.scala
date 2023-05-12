@@ -211,6 +211,12 @@ object tensorflowTfjsConverterStrings {
   inline def `number[]`: `number[]` = "number[]".asInstanceOf[`number[]`]
   
   @js.native
+  sealed trait ragged
+    extends StObject
+       with Category
+  inline def ragged: ragged = "ragged".asInstanceOf[ragged]
+  
+  @js.native
   sealed trait reduction
     extends StObject
        with Category

@@ -1,5 +1,6 @@
 package typings.chromeRemoteInterface.mod
 
+import typings.chromeRemoteInterface.chromeRemoteInterfaceBooleans.`true`
 import typings.chromeRemoteInterface.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -29,3 +30,25 @@ inline def New(): js.Promise[Target] = ^.asInstanceOf[js.Dynamic].applyDynamic("
 inline def New(callback: js.Function2[/* err */ js.Error | Null, /* target */ Target, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("New")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
 inline def New(options: NewOptions): js.Promise[Target] = ^.asInstanceOf[js.Dynamic].applyDynamic("New")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Target]]
 inline def New(options: NewOptions, callback: js.Function2[/* err */ js.Error | Null, /* target */ Target, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("New")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  D extends string ? chrome-remote-interface.chrome-remote-interface.DoEventPromises<D> & chrome-remote-interface.chrome-remote-interface.DoEventListeners<D> : {}
+  }}}
+  */
+type DoEventObj[D] = DoEventPromises[D] & DoEventListeners[D]
+
+type GetEvent[D /* <: String */] = GetEventFromString[
+D, 
+/* keyof devtools-protocol.devtools-protocol/types/protocol-mapping.ProtocolMapping.Events */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 185, starting with typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.ConsoleDotmessageAdded, typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.DebuggerDotbreakpointResolved, typings.chromeRemoteInterface.chromeRemoteInterfaceStrings.DebuggerDotpaused */ Any]
+
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+  * TS definition: {{{
+  std.Record<keyof T, undefined> extends T ? true : false
+  }}}
+  */
+type IsNullableObj[T] = `true`

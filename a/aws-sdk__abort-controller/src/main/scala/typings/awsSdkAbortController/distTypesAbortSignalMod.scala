@@ -31,6 +31,6 @@ object distTypesAbortSignalMod {
       * been cancelled.
       */
     /* CompleteClass */
-    var onabort: AbortHandler | Null = js.native
+    var onabort: AbortHandler | js.Function | Null = js.native
   }
 }

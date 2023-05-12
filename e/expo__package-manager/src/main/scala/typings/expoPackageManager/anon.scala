@@ -1,6 +1,5 @@
 package typings.expoPackageManager
 
-import typings.expoPackageManager.buildPackageManagerMod.Logger
 import typings.expoSpawnAsync.mod.SpawnOptions
 import typings.node.nodeColonurlMod.URL
 import typings.ora.mod.Ora
@@ -69,36 +68,6 @@ object anon {
       inline def setUpdatedPackagesUndefined: Self = StObject.set(x, "updatedPackages", js.undefined)
       
       inline def setUpdatedPackagesVarargs(value: String*): Self = StObject.set(x, "updatedPackages", js.Array(value*))
-    }
-  }
-  
-  trait Log extends StObject {
-    
-    var cwd: String
-    
-    var log: js.UndefOr[Logger] = js.undefined
-    
-    var silent: js.UndefOr[Boolean] = js.undefined
-  }
-  object Log {
-    
-    inline def apply(cwd: String): Log = {
-      val __obj = js.Dynamic.literal(cwd = cwd.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Log]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: Log] (val x: Self) extends AnyVal {
-      
-      inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
-      
-      inline def setLog(value: Logger): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
-      
-      inline def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
-      
-      inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
-      
-      inline def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
     }
   }
   

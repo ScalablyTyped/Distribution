@@ -11,10 +11,10 @@ trait RiskyUserHistoryItem
   // The activity related to user risk level change.
   var activity: js.UndefOr[NullableOption[RiskUserActivity]] = js.undefined
   
-  // The id of actor that does the operation.
+  // The ID of actor that does the operation.
   var initiatedBy: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // The id of the user.
+  // The ID of the user.
   var userId: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object RiskyUserHistoryItem {

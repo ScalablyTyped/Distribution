@@ -3,7 +3,7 @@ package typings.nivoBar.distTypesTypesMod
 import typings.nivoAnnotations.distTypesTypesMod.AnnotationMatcher
 import typings.nivoAxes.distTypesTypesMod.CanvasAxisProps
 import typings.nivoAxes.distTypesTypesMod.GridValues
-import typings.nivoBar.anon.Color
+import typings.nivoBar.anon.ColorString
 import typings.nivoBar.nivoBarStrings.auto
 import typings.nivoBar.nivoBarStrings.grouped
 import typings.nivoBar.nivoBarStrings.horizontal
@@ -71,7 +71,7 @@ trait BarCanvasProps[RawDatum /* <: BarDatum */] extends StObject {
   
   var indexScale: js.UndefOr[ScaleBandSpec] = js.undefined
   
-  var initialHiddenIds: js.UndefOr[js.Array[String]] = js.undefined
+  var initialHiddenIds: js.UndefOr[js.Array[String | Double]] = js.undefined
   
   var innerPadding: js.UndefOr[Double] = js.undefined
   
@@ -105,7 +105,7 @@ trait BarCanvasProps[RawDatum /* <: BarDatum */] extends StObject {
   
   var onClick: js.UndefOr[
     js.Function2[
-      /* datum */ ComputedDatum[RawDatum] & Color, 
+      /* datum */ ComputedDatum[RawDatum] & ColorString, 
       /* event */ MouseEvent[HTMLCanvasElement, NativeMouseEvent], 
       Unit
     ]
@@ -259,11 +259,11 @@ object BarCanvasProps {
     
     inline def setIndexScaleUndefined: Self = StObject.set(x, "indexScale", js.undefined)
     
-    inline def setInitialHiddenIds(value: js.Array[String]): Self = StObject.set(x, "initialHiddenIds", value.asInstanceOf[js.Any])
+    inline def setInitialHiddenIds(value: js.Array[String | Double]): Self = StObject.set(x, "initialHiddenIds", value.asInstanceOf[js.Any])
     
     inline def setInitialHiddenIdsUndefined: Self = StObject.set(x, "initialHiddenIds", js.undefined)
     
-    inline def setInitialHiddenIdsVarargs(value: String*): Self = StObject.set(x, "initialHiddenIds", js.Array(value*))
+    inline def setInitialHiddenIdsVarargs(value: (String | Double)*): Self = StObject.set(x, "initialHiddenIds", js.Array(value*))
     
     inline def setInnerPadding(value: Double): Self = StObject.set(x, "innerPadding", value.asInstanceOf[js.Any])
     
@@ -338,7 +338,7 @@ object BarCanvasProps {
     inline def setMinValueUndefined: Self = StObject.set(x, "minValue", js.undefined)
     
     inline def setOnClick(
-      value: (/* datum */ ComputedDatum[RawDatum] & Color, /* event */ MouseEvent[HTMLCanvasElement, NativeMouseEvent]) => Unit
+      value: (/* datum */ ComputedDatum[RawDatum] & ColorString, /* event */ MouseEvent[HTMLCanvasElement, NativeMouseEvent]) => Unit
     ): Self = StObject.set(x, "onClick", js.Any.fromFunction2(value))
     
     inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)

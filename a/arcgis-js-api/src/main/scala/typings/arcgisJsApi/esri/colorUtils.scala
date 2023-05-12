@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-support-colorUtils.html)
   */
+@js.native
 trait colorUtils extends StObject {
   
   /**
@@ -16,30 +17,14 @@ trait colorUtils extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-support-colorUtils.html#getBackgroundColor)
     */
-  def getBackgroundColor(view: MapView): js.Promise[Color_]
+  def getBackgroundColor(view: MapView): js.Promise[Color_] = js.native
+  def getBackgroundColor(view: SceneView): js.Promise[Color_] = js.native
   
   /**
     * This method inspects the basemap and background of a MapView and returns either `light` or `dark` as the theme of the background depending on if the average color of the basemap and the view's background is light or dark.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-support-colorUtils.html#getBackgroundColorTheme)
     */
-  def getBackgroundColorTheme(view: MapView): js.Promise[String]
-}
-object colorUtils {
-  
-  inline def apply(
-    getBackgroundColor: MapView => js.Promise[Color_],
-    getBackgroundColorTheme: MapView => js.Promise[String]
-  ): colorUtils = {
-    val __obj = js.Dynamic.literal(getBackgroundColor = js.Any.fromFunction1(getBackgroundColor), getBackgroundColorTheme = js.Any.fromFunction1(getBackgroundColorTheme))
-    __obj.asInstanceOf[colorUtils]
-  }
-  
-  @scala.inline
-  implicit open class MutableBuilder[Self <: colorUtils] (val x: Self) extends AnyVal {
-    
-    inline def setGetBackgroundColor(value: MapView => js.Promise[Color_]): Self = StObject.set(x, "getBackgroundColor", js.Any.fromFunction1(value))
-    
-    inline def setGetBackgroundColorTheme(value: MapView => js.Promise[String]): Self = StObject.set(x, "getBackgroundColorTheme", js.Any.fromFunction1(value))
-  }
+  def getBackgroundColorTheme(view: MapView): js.Promise[String] = js.native
+  def getBackgroundColorTheme(view: SceneView): js.Promise[String] = js.native
 }

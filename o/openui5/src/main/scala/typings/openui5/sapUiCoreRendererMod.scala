@@ -215,6 +215,8 @@ object sapUiCoreRendererMod extends Shortcut {
     oTextDirection: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TextDirection * / any */ String
     ): String = js.native
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Returns the TextAlignment for the provided configuration.
       *
       * @returns the actual text alignment that must be set for this environment

@@ -12,8 +12,6 @@ trait AuditLogRoot
   
   var provisioning: js.UndefOr[NullableOption[js.Array[ProvisioningObjectSummary]]] = js.undefined
   
-  var restrictedSignIns: js.UndefOr[NullableOption[js.Array[RestrictedSignIn]]] = js.undefined
-  
   var signIns: js.UndefOr[NullableOption[js.Array[SignIn]]] = js.undefined
 }
 object AuditLogRoot {
@@ -41,14 +39,6 @@ object AuditLogRoot {
     inline def setProvisioningUndefined: Self = StObject.set(x, "provisioning", js.undefined)
     
     inline def setProvisioningVarargs(value: ProvisioningObjectSummary*): Self = StObject.set(x, "provisioning", js.Array(value*))
-    
-    inline def setRestrictedSignIns(value: NullableOption[js.Array[RestrictedSignIn]]): Self = StObject.set(x, "restrictedSignIns", value.asInstanceOf[js.Any])
-    
-    inline def setRestrictedSignInsNull: Self = StObject.set(x, "restrictedSignIns", null)
-    
-    inline def setRestrictedSignInsUndefined: Self = StObject.set(x, "restrictedSignIns", js.undefined)
-    
-    inline def setRestrictedSignInsVarargs(value: RestrictedSignIn*): Self = StObject.set(x, "restrictedSignIns", js.Array(value*))
     
     inline def setSignIns(value: NullableOption[js.Array[SignIn]]): Self = StObject.set(x, "signIns", value.asInstanceOf[js.Any])
     

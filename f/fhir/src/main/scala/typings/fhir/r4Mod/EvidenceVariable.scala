@@ -2,13 +2,10 @@ package typings.fhir.r4Mod
 
 import typings.fhir.fhirStrings.active
 import typings.fhir.fhirStrings.continuous
+import typings.fhir.fhirStrings.descriptive
 import typings.fhir.fhirStrings.dichotomous
 import typings.fhir.fhirStrings.draft
-import typings.fhir.fhirStrings.intersection
-import typings.fhir.fhirStrings.ordinal
-import typings.fhir.fhirStrings.polychotomous
 import typings.fhir.fhirStrings.retired
-import typings.fhir.fhirStrings.union
 import typings.fhir.fhirStrings.unknown
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -19,15 +16,15 @@ trait EvidenceVariable
      with DomainResource
      with _FhirResource {
   
-  var _actual: js.UndefOr[Element] = js.undefined
+  var _approvalDate: js.UndefOr[Element] = js.undefined
   
-  var _characteristicCombination: js.UndefOr[Element] = js.undefined
+  var _copyright: js.UndefOr[Element] = js.undefined
   
   var _date: js.UndefOr[Element] = js.undefined
   
   var _description: js.UndefOr[Element] = js.undefined
   
-  var _handling: js.UndefOr[Element] = js.undefined
+  var _lastReviewDate: js.UndefOr[Element] = js.undefined
   
   var _name: js.UndefOr[Element] = js.undefined
   
@@ -41,39 +38,36 @@ trait EvidenceVariable
   
   var _title: js.UndefOr[Element] = js.undefined
   
+  var _type: js.UndefOr[Element] = js.undefined
+  
   var _url: js.UndefOr[Element] = js.undefined
   
   var _version: js.UndefOr[Element] = js.undefined
   
   /**
-    * True if the actual variable measured, false if a conceptual representation of the intended variable.
+    * The 'date' element may be more recent than the approval date because of minor changes or editorial corrections.
     */
-  var actual: js.UndefOr[Boolean] = js.undefined
+  var approvalDate: js.UndefOr[String] = js.undefined
   
   /**
-    * Extensions to ContactDetail include: contactReference, contactAddress, and contributionTime (Details at: http://build.fhir.org/clinicalreasoning-module.html).
+    * An individiual or organization primarily involved in the creation and maintenance of the content.
     */
   var author: js.UndefOr[js.Array[ContactDetail]] = js.undefined
   
   /**
-    * A grouping (or set of values) described along with other groupings to specify the set of groupings allowed for the variable.
-    */
-  var category: js.UndefOr[js.Array[EvidenceVariableCategory]] = js.undefined
-  
-  /**
     * Characteristics can be defined flexibly to accommodate different use cases for membership criteria, ranging from simple codes, all the way to using an expression language to express the criteria.
     */
-  var characteristic: js.UndefOr[js.Array[EvidenceVariableCharacteristic]] = js.undefined
+  var characteristic: js.Array[EvidenceVariableCharacteristic]
   
   /**
-    * Used to specify if two or more characteristics are combined with OR or AND.
-    */
-  var characteristicCombination: js.UndefOr[intersection | union] = js.undefined
-  
-  /**
-    * Extensions to ContactDetail include: contactReference, contactAddress, and contributionTime (Details at: http://build.fhir.org/clinicalreasoning-module.html).
+    * May be a web site, an email address, a telephone number, etc.
     */
   var contact: js.UndefOr[js.Array[ContactDetail]] = js.undefined
+  
+  /**
+    * A copyright statement relating to the evidence variable and/or its contents. Copyright statements are generally legal restrictions on the use and publishing of the evidence variable.
+    */
+  var copyright: js.UndefOr[String] = js.undefined
   
   /**
     * Note that this is not the same as the resource last-modified-date, since the resource may be a secondary representation of the evidence variable. Additional specific dates may be added as extensions or be found by consulting Provenances associated with past versions of the resource.
@@ -86,24 +80,34 @@ trait EvidenceVariable
   var description: js.UndefOr[String] = js.undefined
   
   /**
-    * Extensions to ContactDetail include: contactReference, contactAddress, and contributionTime (Details at: http://build.fhir.org/clinicalreasoning-module.html).
+    * An individual or organization primarily responsible for internal coherence of the content.
     */
   var editor: js.UndefOr[js.Array[ContactDetail]] = js.undefined
   
   /**
-    * Extensions to ContactDetail include: contactReference, contactAddress, and contributionTime (Details at: http://build.fhir.org/clinicalreasoning-module.html).
+    * The effective period for a evidence variable  determines when the content is applicable for usage and is independent of publication and review dates. For example, a measure intended to be used for the year 2016 might be published in 2015.
     */
-  var endorser: js.UndefOr[js.Array[ContactDetail]] = js.undefined
+  var effectivePeriod: js.UndefOr[Period] = js.undefined
   
   /**
-    * Used for an outcome to classify.
+    * An individual or organization responsible for officially endorsing the content for use in some setting.
     */
-  var handling: js.UndefOr[continuous | dichotomous | ordinal | polychotomous] = js.undefined
+  var endorser: js.UndefOr[js.Array[ContactDetail]] = js.undefined
   
   /**
     * Typically, this is used for identifiers that can go in an HL7 V3 II (instance identifier) data type, and can then identify this evidence variable outside of FHIR, where it is not possible to use the logical URI.
     */
   var identifier: js.UndefOr[js.Array[Identifier]] = js.undefined
+  
+  /**
+    * It may be possible for the evidence variable to be used in jurisdictions other than those for which it was originally designed or intended.
+    */
+  var jurisdiction: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
+  
+  /**
+    * If specified, this date follows the original approval date.
+    */
+  var lastReviewDate: js.UndefOr[String] = js.undefined
   
   /**
     * The name is not expected to be globally unique. The name should be a simple alphanumeric type name to ensure that it is machine-processing friendly.
@@ -130,7 +134,7 @@ trait EvidenceVariable
   val resourceType_EvidenceVariable: typings.fhir.fhirStrings.EvidenceVariable
   
   /**
-    * Extensions to ContactDetail include: contactReference, contactAddress, and contributionTime (Details at: http://build.fhir.org/clinicalreasoning-module.html).
+    * An individual or organization primarily responsible for review of some aspect of the content.
     */
   var reviewer: js.UndefOr[js.Array[ContactDetail]] = js.undefined
   
@@ -155,6 +159,16 @@ trait EvidenceVariable
   var title: js.UndefOr[String] = js.undefined
   
   /**
+    * Descriptive topics related to the content of the EvidenceVariable. Topics provide a high-level categorization grouping types of EvidenceVariables that can be useful for filtering and searching.
+    */
+  var topic: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
+  
+  /**
+    * The type of evidence element, a population, an exposure, or an outcome.
+    */
+  var `type`: js.UndefOr[dichotomous | continuous | descriptive] = js.undefined
+  
+  /**
     * Can be a urn:uuid: or a urn:oid: but real http: addresses are preferred.  Multiple instances may share the same URL if they have a distinct version.
     * The determination of when to create a new version of a resource (same url, new version) vs. defining a new artifact is up to the author.  Considerations for making this decision are found in [Technical and Business Versions](resource.html#versions).
     * In some cases, the resource can no longer be found at the stated url, but the url itself cannot change. Implementations can use the [meta.source](resource.html#meta) element to indicate where the current master source of the resource can be found.
@@ -173,17 +187,20 @@ trait EvidenceVariable
 }
 object EvidenceVariable {
   
-  inline def apply(status: draft | active | retired | unknown): EvidenceVariable = {
-    val __obj = js.Dynamic.literal(resourceType = "EvidenceVariable", status = status.asInstanceOf[js.Any])
+  inline def apply(
+    characteristic: js.Array[EvidenceVariableCharacteristic],
+    status: draft | active | retired | unknown
+  ): EvidenceVariable = {
+    val __obj = js.Dynamic.literal(characteristic = characteristic.asInstanceOf[js.Any], resourceType = "EvidenceVariable", status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[EvidenceVariable]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: EvidenceVariable] (val x: Self) extends AnyVal {
     
-    inline def setActual(value: Boolean): Self = StObject.set(x, "actual", value.asInstanceOf[js.Any])
+    inline def setApprovalDate(value: String): Self = StObject.set(x, "approvalDate", value.asInstanceOf[js.Any])
     
-    inline def setActualUndefined: Self = StObject.set(x, "actual", js.undefined)
+    inline def setApprovalDateUndefined: Self = StObject.set(x, "approvalDate", js.undefined)
     
     inline def setAuthor(value: js.Array[ContactDetail]): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     
@@ -191,19 +208,7 @@ object EvidenceVariable {
     
     inline def setAuthorVarargs(value: ContactDetail*): Self = StObject.set(x, "author", js.Array(value*))
     
-    inline def setCategory(value: js.Array[EvidenceVariableCategory]): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
-    
-    inline def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
-    
-    inline def setCategoryVarargs(value: EvidenceVariableCategory*): Self = StObject.set(x, "category", js.Array(value*))
-    
     inline def setCharacteristic(value: js.Array[EvidenceVariableCharacteristic]): Self = StObject.set(x, "characteristic", value.asInstanceOf[js.Any])
-    
-    inline def setCharacteristicCombination(value: intersection | union): Self = StObject.set(x, "characteristicCombination", value.asInstanceOf[js.Any])
-    
-    inline def setCharacteristicCombinationUndefined: Self = StObject.set(x, "characteristicCombination", js.undefined)
-    
-    inline def setCharacteristicUndefined: Self = StObject.set(x, "characteristic", js.undefined)
     
     inline def setCharacteristicVarargs(value: EvidenceVariableCharacteristic*): Self = StObject.set(x, "characteristic", js.Array(value*))
     
@@ -212,6 +217,10 @@ object EvidenceVariable {
     inline def setContactUndefined: Self = StObject.set(x, "contact", js.undefined)
     
     inline def setContactVarargs(value: ContactDetail*): Self = StObject.set(x, "contact", js.Array(value*))
+    
+    inline def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
+    
+    inline def setCopyrightUndefined: Self = StObject.set(x, "copyright", js.undefined)
     
     inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
@@ -227,21 +236,31 @@ object EvidenceVariable {
     
     inline def setEditorVarargs(value: ContactDetail*): Self = StObject.set(x, "editor", js.Array(value*))
     
+    inline def setEffectivePeriod(value: Period): Self = StObject.set(x, "effectivePeriod", value.asInstanceOf[js.Any])
+    
+    inline def setEffectivePeriodUndefined: Self = StObject.set(x, "effectivePeriod", js.undefined)
+    
     inline def setEndorser(value: js.Array[ContactDetail]): Self = StObject.set(x, "endorser", value.asInstanceOf[js.Any])
     
     inline def setEndorserUndefined: Self = StObject.set(x, "endorser", js.undefined)
     
     inline def setEndorserVarargs(value: ContactDetail*): Self = StObject.set(x, "endorser", js.Array(value*))
     
-    inline def setHandling(value: continuous | dichotomous | ordinal | polychotomous): Self = StObject.set(x, "handling", value.asInstanceOf[js.Any])
-    
-    inline def setHandlingUndefined: Self = StObject.set(x, "handling", js.undefined)
-    
     inline def setIdentifier(value: js.Array[Identifier]): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
     inline def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
     
     inline def setIdentifierVarargs(value: Identifier*): Self = StObject.set(x, "identifier", js.Array(value*))
+    
+    inline def setJurisdiction(value: js.Array[CodeableConcept]): Self = StObject.set(x, "jurisdiction", value.asInstanceOf[js.Any])
+    
+    inline def setJurisdictionUndefined: Self = StObject.set(x, "jurisdiction", js.undefined)
+    
+    inline def setJurisdictionVarargs(value: CodeableConcept*): Self = StObject.set(x, "jurisdiction", js.Array(value*))
+    
+    inline def setLastReviewDate(value: String): Self = StObject.set(x, "lastReviewDate", value.asInstanceOf[js.Any])
+    
+    inline def setLastReviewDateUndefined: Self = StObject.set(x, "lastReviewDate", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
@@ -285,6 +304,16 @@ object EvidenceVariable {
     
     inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
+    inline def setTopic(value: js.Array[CodeableConcept]): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
+    
+    inline def setTopicUndefined: Self = StObject.set(x, "topic", js.undefined)
+    
+    inline def setTopicVarargs(value: CodeableConcept*): Self = StObject.set(x, "topic", js.Array(value*))
+    
+    inline def setType(value: dichotomous | continuous | descriptive): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
@@ -299,13 +328,13 @@ object EvidenceVariable {
     
     inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     
-    inline def set_actual(value: Element): Self = StObject.set(x, "_actual", value.asInstanceOf[js.Any])
+    inline def set_approvalDate(value: Element): Self = StObject.set(x, "_approvalDate", value.asInstanceOf[js.Any])
     
-    inline def set_actualUndefined: Self = StObject.set(x, "_actual", js.undefined)
+    inline def set_approvalDateUndefined: Self = StObject.set(x, "_approvalDate", js.undefined)
     
-    inline def set_characteristicCombination(value: Element): Self = StObject.set(x, "_characteristicCombination", value.asInstanceOf[js.Any])
+    inline def set_copyright(value: Element): Self = StObject.set(x, "_copyright", value.asInstanceOf[js.Any])
     
-    inline def set_characteristicCombinationUndefined: Self = StObject.set(x, "_characteristicCombination", js.undefined)
+    inline def set_copyrightUndefined: Self = StObject.set(x, "_copyright", js.undefined)
     
     inline def set_date(value: Element): Self = StObject.set(x, "_date", value.asInstanceOf[js.Any])
     
@@ -315,9 +344,9 @@ object EvidenceVariable {
     
     inline def set_descriptionUndefined: Self = StObject.set(x, "_description", js.undefined)
     
-    inline def set_handling(value: Element): Self = StObject.set(x, "_handling", value.asInstanceOf[js.Any])
+    inline def set_lastReviewDate(value: Element): Self = StObject.set(x, "_lastReviewDate", value.asInstanceOf[js.Any])
     
-    inline def set_handlingUndefined: Self = StObject.set(x, "_handling", js.undefined)
+    inline def set_lastReviewDateUndefined: Self = StObject.set(x, "_lastReviewDate", js.undefined)
     
     inline def set_name(value: Element): Self = StObject.set(x, "_name", value.asInstanceOf[js.Any])
     
@@ -342,6 +371,10 @@ object EvidenceVariable {
     inline def set_title(value: Element): Self = StObject.set(x, "_title", value.asInstanceOf[js.Any])
     
     inline def set_titleUndefined: Self = StObject.set(x, "_title", js.undefined)
+    
+    inline def set_type(value: Element): Self = StObject.set(x, "_type", value.asInstanceOf[js.Any])
+    
+    inline def set_typeUndefined: Self = StObject.set(x, "_type", js.undefined)
     
     inline def set_url(value: Element): Self = StObject.set(x, "_url", value.asInstanceOf[js.Any])
     

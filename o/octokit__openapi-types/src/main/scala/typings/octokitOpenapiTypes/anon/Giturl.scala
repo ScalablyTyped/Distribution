@@ -1,7 +1,7 @@
 package typings.octokitOpenapiTypes.anon
 
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.dir
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.file
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.file_
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.submodule
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.symlink
 import org.scalablytyped.runtime.StObject
@@ -32,7 +32,7 @@ trait Giturl extends StObject {
   var size: Double
   
   /** @enum {string} */
-  var `type`: dir | file | submodule | symlink
+  var `type`: dir | file_ | submodule | symlink
   
   /** Format: uri */
   var url: String
@@ -45,7 +45,7 @@ object Giturl {
     path: String,
     sha: String,
     size: Double,
-    `type`: dir | file | submodule | symlink,
+    `type`: dir | file_ | submodule | symlink,
     url: String
   ): Giturl = {
     val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], sha = sha.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], download_url = null, git_url = null, html_url = null)
@@ -80,7 +80,7 @@ object Giturl {
     
     inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    inline def setType(value: dir | file | submodule | symlink): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: dir | file_ | submodule | symlink): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     

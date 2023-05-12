@@ -7,17 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait GraphicsLayerView
   extends StObject
-     with LayerView {
-  
-  /**
-    * Highlights the given feature(s).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-GraphicsLayerView.html#highlight)
-    */
-  def highlight(): Handle = js.native
-  def highlight(target: js.Array[Double | Graphic]): Handle = js.native
-  def highlight(target: Double): Handle = js.native
-  def highlight(target: Graphic): Handle = js.native
+     with LayerView
+     with HighlightLayerViewMixin {
   
   /**
     * Returns all graphics available for drawing in the layer view as a [collection](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html).

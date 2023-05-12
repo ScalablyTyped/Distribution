@@ -14,7 +14,7 @@ trait TypeofAccountCreateParams extends StObject {
   
   val Individual: TypeofIndividual
   
-  val Settings: TypeofSettingsCardIssuing
+  val Settings: TypeofSettings
 }
 object TypeofAccountCreateParams {
   
@@ -23,7 +23,7 @@ object TypeofAccountCreateParams {
     Company: TypeofCompany,
     Documents: Any,
     Individual: TypeofIndividual,
-    Settings: TypeofSettingsCardIssuing
+    Settings: TypeofSettings
   ): TypeofAccountCreateParams = {
     val __obj = js.Dynamic.literal(Capabilities = Capabilities.asInstanceOf[js.Any], Company = Company.asInstanceOf[js.Any], Documents = Documents.asInstanceOf[js.Any], Individual = Individual.asInstanceOf[js.Any], Settings = Settings.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofAccountCreateParams]
@@ -40,6 +40,6 @@ object TypeofAccountCreateParams {
     
     inline def setIndividual(value: TypeofIndividual): Self = StObject.set(x, "Individual", value.asInstanceOf[js.Any])
     
-    inline def setSettings(value: TypeofSettingsCardIssuing): Self = StObject.set(x, "Settings", value.asInstanceOf[js.Any])
+    inline def setSettings(value: TypeofSettings): Self = StObject.set(x, "Settings", value.asInstanceOf[js.Any])
   }
 }

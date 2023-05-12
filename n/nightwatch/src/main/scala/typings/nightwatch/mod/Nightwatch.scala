@@ -1,7 +1,6 @@
 package typings.nightwatch.mod
 
 import typings.nightwatch.expectMod.Expect
-import typings.nightwatch.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,14 +8,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Nightwatch extends StObject {
   
+  def CliRunner(): this.type = js.native
+  def CliRunner(argv: js.Object): this.type = js.native
+  
   var api: NightwatchAPI = js.native
   
   var assert: Assert = js.native
   
   def cli(callback: Any): this.type = js.native
-  
-  def cliRunner(): this.type = js.native
-  def cliRunner(argv: js.Object): this.type = js.native
   
   def client(settings: NightwatchOptions): this.type = js.native
   def client(settings: NightwatchOptions, reporter: Any): this.type = js.native
@@ -50,8 +49,4 @@ trait Nightwatch extends StObject {
   ): this.type = js.native
   
   var verify: Assert = js.native
-}
-object Nightwatch {
-  
-  inline def apply: NightwatchClient & Nightwatch = ^.asInstanceOf[js.Dynamic].selectDynamic("Nightwatch").asInstanceOf[NightwatchClient & Nightwatch]
 }

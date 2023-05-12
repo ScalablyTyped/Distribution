@@ -6,51 +6,40 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `400404422` extends StObject {
   
-  /** Response */
-  var `200`: Content323
+  /** @description Response */
+  var `200`: ContentApplicationjsonPageurl
   
-  /** Bad request, resolution comment is invalid or the resolution was not changed. */
-  var `400`: Any
+  var `400`: ContentApplicationjsonApplicationscimjson
   
-  /** Repository is public, or secret scanning is disabled for the repository, or the resource is not found */
-  var `404`: Any
+  var `404`: Content36
   
-  /** State does not match the resolution or resolution comment */
-  var `422`: Any
-  
-  var `503`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['service_unavailable'] */ js.Any
+  var `422`: Content346
 }
 object `400404422` {
   
   inline def apply(
-    `200`: Content323,
-    `400`: Any,
-    `404`: Any,
-    `422`: Any,
-    `503`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['service_unavailable'] */ js.Any
+    `200`: ContentApplicationjsonPageurl,
+    `400`: ContentApplicationjsonApplicationscimjson,
+    `404`: Content36,
+    `422`: Content346
   ): `400404422` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("200")(`200`.asInstanceOf[js.Any])
     __obj.updateDynamic("400")(`400`.asInstanceOf[js.Any])
     __obj.updateDynamic("404")(`404`.asInstanceOf[js.Any])
     __obj.updateDynamic("422")(`422`.asInstanceOf[js.Any])
-    __obj.updateDynamic("503")(`503`.asInstanceOf[js.Any])
     __obj.asInstanceOf[`400404422`]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: `400404422`] (val x: Self) extends AnyVal {
     
-    inline def set200(value: Content323): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
+    inline def set200(value: ContentApplicationjsonPageurl): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
     
-    inline def set400(value: Any): Self = StObject.set(x, "400", value.asInstanceOf[js.Any])
+    inline def set400(value: ContentApplicationjsonApplicationscimjson): Self = StObject.set(x, "400", value.asInstanceOf[js.Any])
     
-    inline def set404(value: Any): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
+    inline def set404(value: Content36): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
     
-    inline def set422(value: Any): Self = StObject.set(x, "422", value.asInstanceOf[js.Any])
-    
-    inline def set503(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['service_unavailable'] */ js.Any
-    ): Self = StObject.set(x, "503", value.asInstanceOf[js.Any])
+    inline def set422(value: Content346): Self = StObject.set(x, "422", value.asInstanceOf[js.Any])
   }
 }

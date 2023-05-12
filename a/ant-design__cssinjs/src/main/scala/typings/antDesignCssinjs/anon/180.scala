@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.BorderStyle
+import typings.csstype.mod.Property.MozWindowDragging
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,8 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `180` extends StObject {
   
   var value: js.UndefOr[
-    BorderStyle | (js.Array[
-      (Extract[js.UndefOr[BorderStyle | js.Array[NonNullable[js.UndefOr[BorderStyle]]]], String]) | NonNullable[js.UndefOr[BorderStyle]]
+    MozWindowDragging | (js.Array[
+      (Extract[
+        js.UndefOr[MozWindowDragging | js.Array[NonNullable[js.UndefOr[MozWindowDragging]]]], 
+        String
+      ]) | NonNullable[js.UndefOr[MozWindowDragging]]
     ])
   ] = js.native
 }

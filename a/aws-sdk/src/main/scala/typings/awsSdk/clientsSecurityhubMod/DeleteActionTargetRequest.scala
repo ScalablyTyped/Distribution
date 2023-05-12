@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteActionTargetRequest extends StObject {
   
   /**
-    * The ARN of the custom action target to delete.
+    * The Amazon Resource Name (ARN) of the custom action target to delete.
     */
   var ActionTargetArn: NonEmptyString
 }

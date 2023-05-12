@@ -10,6 +10,11 @@ trait PhysicsRadialExplosionEventOptions extends StObject {
   /**
     * Sphere options for the radial explosion.
     */
+  def affectedBodiesCallback(affectedBodiesWithData: js.Array[PhysicsAffectedBodyWithData]): Unit
+  
+  /**
+    * Sphere options for the radial explosion.
+    */
   def affectedImpostorsCallback(affectedImpostorsWithData: js.Array[PhysicsAffectedImpostorWithData]): Unit
   
   /**
@@ -35,18 +40,21 @@ trait PhysicsRadialExplosionEventOptions extends StObject {
 object PhysicsRadialExplosionEventOptions {
   
   inline def apply(
+    affectedBodiesCallback: js.Array[PhysicsAffectedBodyWithData] => Unit,
     affectedImpostorsCallback: js.Array[PhysicsAffectedImpostorWithData] => Unit,
     falloff: PhysicsRadialImpulseFalloff,
     radius: Double,
     sphere: DiameterSegments,
     strength: Double
   ): PhysicsRadialExplosionEventOptions = {
-    val __obj = js.Dynamic.literal(affectedImpostorsCallback = js.Any.fromFunction1(affectedImpostorsCallback), falloff = falloff.asInstanceOf[js.Any], radius = radius.asInstanceOf[js.Any], sphere = sphere.asInstanceOf[js.Any], strength = strength.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(affectedBodiesCallback = js.Any.fromFunction1(affectedBodiesCallback), affectedImpostorsCallback = js.Any.fromFunction1(affectedImpostorsCallback), falloff = falloff.asInstanceOf[js.Any], radius = radius.asInstanceOf[js.Any], sphere = sphere.asInstanceOf[js.Any], strength = strength.asInstanceOf[js.Any])
     __obj.asInstanceOf[PhysicsRadialExplosionEventOptions]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: PhysicsRadialExplosionEventOptions] (val x: Self) extends AnyVal {
+    
+    inline def setAffectedBodiesCallback(value: js.Array[PhysicsAffectedBodyWithData] => Unit): Self = StObject.set(x, "affectedBodiesCallback", js.Any.fromFunction1(value))
     
     inline def setAffectedImpostorsCallback(value: js.Array[PhysicsAffectedImpostorWithData] => Unit): Self = StObject.set(x, "affectedImpostorsCallback", js.Any.fromFunction1(value))
     

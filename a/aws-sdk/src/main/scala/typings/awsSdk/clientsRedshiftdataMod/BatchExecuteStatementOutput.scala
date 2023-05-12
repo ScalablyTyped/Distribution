@@ -37,7 +37,7 @@ trait BatchExecuteStatementOutput extends StObject {
   var SecretArn: js.UndefOr[typings.awsSdk.clientsRedshiftdataMod.SecretArn] = js.undefined
   
   /**
-    * The serverless workgroup name. This element is not returned when connecting to a provisioned cluster.
+    * The serverless workgroup name or Amazon Resource Name (ARN). This element is not returned when connecting to a provisioned cluster.
     */
   var WorkgroupName: js.UndefOr[WorkgroupNameString] = js.undefined
 }

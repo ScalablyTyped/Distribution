@@ -4,11 +4,12 @@ import typings.multiformats.distTypesSrcBlockInterfaceMod.ByteView
 import typings.multiformats.distTypesSrcCodecsInterfaceMod.BlockDecoder
 import typings.multiformats.distTypesSrcHashesInterfaceMod.MultihashHasher
 import typings.multiformats.distTypesSrcLinkInterfaceMod.Link
+import typings.multiformats.distTypesSrcLinkInterfaceMod.Version
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Cid[T /* <: Any */, Code /* <: Double */, Alg /* <: Double */, V /* <: typings.multiformats.distTypesSrcLinkInterfaceMod.Version */] extends StObject {
+trait Cid[T /* <: Any */, Code /* <: Double */, Alg /* <: Double */, V /* <: Version */] extends StObject {
   
   var bytes: ByteView[T]
   
@@ -20,7 +21,7 @@ trait Cid[T /* <: Any */, Code /* <: Double */, Alg /* <: Double */, V /* <: typ
 }
 object Cid {
   
-  inline def apply[T /* <: Any */, Code /* <: Double */, Alg /* <: Double */, V /* <: typings.multiformats.distTypesSrcLinkInterfaceMod.Version */](
+  inline def apply[T /* <: Any */, Code /* <: Double */, Alg /* <: Double */, V /* <: Version */](
     bytes: ByteView[T],
     cid: Link[T, Code, Alg, V],
     codec: BlockDecoder[Code, T],
@@ -31,7 +32,7 @@ object Cid {
   }
   
   @scala.inline
-  implicit open class MutableBuilder[Self <: Cid[?, ?, ?, ?], T /* <: Any */, Code /* <: Double */, Alg /* <: Double */, V /* <: typings.multiformats.distTypesSrcLinkInterfaceMod.Version */] (val x: Self & (Cid[T, Code, Alg, V])) extends AnyVal {
+  implicit open class MutableBuilder[Self <: Cid[?, ?, ?, ?], T /* <: Any */, Code /* <: Double */, Alg /* <: Double */, V /* <: Version */] (val x: Self & (Cid[T, Code, Alg, V])) extends AnyVal {
     
     inline def setBytes(value: ByteView[T]): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
     

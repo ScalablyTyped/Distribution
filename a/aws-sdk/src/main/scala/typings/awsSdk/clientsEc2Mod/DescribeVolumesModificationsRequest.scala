@@ -17,12 +17,12 @@ trait DescribeVolumesModificationsRequest extends StObject {
   var Filters: js.UndefOr[FilterList] = js.undefined
   
   /**
-    * The maximum number of results (up to a limit of 500) to be returned in a paginated request.
+    * The maximum number of results (up to a limit of 500) to be returned in a paginated request. For more information, see Pagination.
     */
   var MaxResults: js.UndefOr[Integer] = js.undefined
   
   /**
-    * The nextToken value returned by a previous paginated request.
+    * The token returned by a previous paginated request. Pagination continues from the end of the items returned by the previous request.
     */
   var NextToken: js.UndefOr[String] = js.undefined
   

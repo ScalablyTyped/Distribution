@@ -27,8 +27,8 @@ import typings.tensorflowTfjsLayers.distKerasFormatLayersPoolingSerializationMod
 import typings.tensorflowTfjsLayers.distKerasFormatLayersRecurrentSerializationMod.RecurrentLayerClassName
 import typings.tensorflowTfjsLayers.distKerasFormatLayersWrappersSerializationMod.WrapperLayerClassName
 import typings.tensorflowTfjsLayers.distKerasFormatOptimizerConfigMod.OptimizerClassName
-import typings.tensorflowTfjsLayers.distLayersPreprocessingImageResizingMod.InterpolationType
 import typings.tensorflowTfjsLayers.distLayersPreprocessingPreprocessingUtilsMod.OutputMode
+import typings.tensorflowTfjsLayers.distLayersPreprocessingRandomHeightMod.InterpolationType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -593,6 +593,8 @@ object tensorflowTfjsLayersStrings {
     extends StObject
        with InterpolationFormat
        with InterpolationType
+       with typings.tensorflowTfjsLayers.distLayersPreprocessingImageResizingMod.InterpolationType
+       with typings.tensorflowTfjsLayers.distLayersPreprocessingRandomWidthMod.InterpolationType
   inline def bilinear: bilinear = "bilinear".asInstanceOf[bilinear]
   
   @js.native
@@ -888,6 +890,8 @@ object tensorflowTfjsLayersStrings {
     extends StObject
        with InterpolationFormat
        with InterpolationType
+       with typings.tensorflowTfjsLayers.distLayersPreprocessingImageResizingMod.InterpolationType
+       with typings.tensorflowTfjsLayers.distLayersPreprocessingRandomWidthMod.InterpolationType
   inline def nearest: nearest = "nearest".asInstanceOf[nearest]
   
   @js.native

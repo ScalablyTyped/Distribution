@@ -131,6 +131,6 @@ object typesPanellayoutMod {
     /**
       * A read-only array of the widgets in the layout.
       */
-    val widgets: js.Array[Widget] = js.native
+    def widgets: js.Array[Widget] = js.native
   }
 }

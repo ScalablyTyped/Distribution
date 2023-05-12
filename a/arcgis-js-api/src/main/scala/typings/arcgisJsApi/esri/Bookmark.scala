@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Bookmark
   extends StObject
      with Accessor
+     with JSONSupport
      with Identifiable {
   
   /**

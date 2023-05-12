@@ -53,6 +53,11 @@ trait ArtifactAssessmentContent
   var path: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
+    * A quantitative rating of the artifact.
+    */
+  var quantity: js.UndefOr[Quantity] = js.undefined
+  
+  /**
     * Additional related artifacts that provide supporting documentation, additional evidence, or further information related to the content.
     */
   var relatedArtifact: js.UndefOr[js.Array[RelatedArtifact]] = js.undefined
@@ -106,6 +111,10 @@ object ArtifactAssessmentContent {
     inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
     inline def setPathVarargs(value: String*): Self = StObject.set(x, "path", js.Array(value*))
+    
+    inline def setQuantity(value: Quantity): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
+    
+    inline def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
     
     inline def setRelatedArtifact(value: js.Array[RelatedArtifact]): Self = StObject.set(x, "relatedArtifact", value.asInstanceOf[js.Any])
     

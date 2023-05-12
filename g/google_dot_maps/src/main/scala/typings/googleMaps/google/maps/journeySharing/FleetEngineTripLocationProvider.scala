@@ -5,13 +5,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Available only in the v=beta channel: https://goo.gle/3oAthT3.
-  * Trip location provider.
-  */
 trait FleetEngineTripLocationProvider
   extends StObject
-     with LocationProvider {
+     with PollingLocationProvider {
   
   /**
     * Explicitly refreshes the tracked location.
@@ -26,8 +22,14 @@ trait FleetEngineTripLocationProvider
 }
 object FleetEngineTripLocationProvider {
   
-  inline def apply(addListener: (String, js.Function) => MapsEventListener, refresh: () => Unit, tripId: String): FleetEngineTripLocationProvider = {
-    val __obj = js.Dynamic.literal(addListener = js.Any.fromFunction2(addListener), refresh = js.Any.fromFunction0(refresh), tripId = tripId.asInstanceOf[js.Any])
+  inline def apply(
+    addListener: (String, js.Function) => MapsEventListener,
+    isPolling: Boolean,
+    pollingIntervalMillis: Double,
+    refresh: () => Unit,
+    tripId: String
+  ): FleetEngineTripLocationProvider = {
+    val __obj = js.Dynamic.literal(addListener = js.Any.fromFunction2(addListener), isPolling = isPolling.asInstanceOf[js.Any], pollingIntervalMillis = pollingIntervalMillis.asInstanceOf[js.Any], refresh = js.Any.fromFunction0(refresh), tripId = tripId.asInstanceOf[js.Any])
     __obj.asInstanceOf[FleetEngineTripLocationProvider]
   }
   

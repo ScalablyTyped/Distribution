@@ -295,6 +295,7 @@ object sapMMessagePageMod {
     
     /**
       * @SINCE 1.28.1
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:navButtonPress navButtonPress} to attached listeners.
       *

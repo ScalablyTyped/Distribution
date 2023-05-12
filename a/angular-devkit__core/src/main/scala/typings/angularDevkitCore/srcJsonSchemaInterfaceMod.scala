@@ -7,7 +7,7 @@ import typings.angularDevkitCore.anon.Label
 import typings.angularDevkitCore.srcJsonUtilsMod.JsonArray
 import typings.angularDevkitCore.srcJsonUtilsMod.JsonObject
 import typings.angularDevkitCore.srcJsonUtilsMod.JsonValue
-import typings.rxjs.distTypesInternalTypesMod.SubscribableOrPromise
+import typings.rxjs.distTypesInternalTypesMod.ObservableInput
 import typings.rxjs.mod.Observable_
 import typings.std.Record
 import typings.std.Set
@@ -158,7 +158,7 @@ object srcJsonSchemaInterfaceMod {
   /** 
   NOTE: Rewritten from type alias:
   {{{
-  type PromptProvider = (definitions : std.Array<@angular-devkit/core.@angular-devkit/core/src/json/schema/interface.PromptDefinition>): rxjs.rxjs/dist/types/internal/types.SubscribableOrPromise<{[id: string] : @angular-devkit/core.@angular-devkit/core/src/json/utils.JsonValue}>
+  type PromptProvider = (definitions : std.Array<@angular-devkit/core.@angular-devkit/core/src/json/schema/interface.PromptDefinition>): rxjs.rxjs/dist/types/internal/types.ObservableInput<{[id: string] : @angular-devkit/core.@angular-devkit/core/src/json/utils.JsonValue}>
   }}}
   to avoid circular code involving: 
   - @angular-devkit/core.@angular-devkit/core/src/json/schema/interface.PromptProvider
@@ -169,7 +169,7 @@ object srcJsonSchemaInterfaceMod {
   @js.native
   trait PromptProvider extends StObject {
     
-    def apply(definitions: js.Array[PromptDefinition]): SubscribableOrPromise[StringDictionary[JsonValue]] = js.native
+    def apply(definitions: js.Array[PromptDefinition]): ObservableInput[StringDictionary[JsonValue]] = js.native
   }
   
   trait SchemaFormat extends StObject {
@@ -311,25 +311,21 @@ object srcJsonSchemaInterfaceMod {
     
     def addSmartDefaultProvider[T](source: java.lang.String, provider: SmartDefaultProvider[T]): Unit = js.native
     
-    def compile(schema: js.Object): Observable_[SchemaValidator] = js.native
-    
-    def flatten(schema: java.lang.String): Observable_[JsonObject] = js.native
-    /**
-      * @deprecated since 11.2 without replacement.
-      * Producing a flatten schema document does not in all cases produce a schema with identical behavior to the original.
-      * See: https://json-schema.org/draft/2019-09/json-schema-core.html#rfc.appendix.B.2
-      */
-    def flatten(schema: JsonObject): Observable_[JsonObject] = js.native
+    def compile(schema: js.Object): js.Promise[SchemaValidator] = js.native
     
     def usePromptProvider(provider: PromptProvider): Unit = js.native
     
     def useXDeprecatedProvider(onUsage: js.Function1[/* message */ java.lang.String, Unit]): Unit = js.native
+    
+    def ɵflatten(schema: java.lang.String): js.Promise[JsonObject] = js.native
+    /** @private */
+    def ɵflatten(schema: JsonObject): js.Promise[JsonObject] = js.native
   }
   
   /** 
   NOTE: Rewritten from type alias:
   {{{
-  type SchemaValidator = (data : @angular-devkit/core.@angular-devkit/core/src/json/utils.JsonValue, options : @angular-devkit/core.@angular-devkit/core/src/json/schema/interface.SchemaValidatorOptions | undefined): rxjs.rxjs.Observable<@angular-devkit/core.@angular-devkit/core/src/json/schema/interface.SchemaValidatorResult>
+  type SchemaValidator = (data : @angular-devkit/core.@angular-devkit/core/src/json/utils.JsonValue, options : @angular-devkit/core.@angular-devkit/core/src/json/schema/interface.SchemaValidatorOptions | undefined): std.Promise<@angular-devkit/core.@angular-devkit/core/src/json/schema/interface.SchemaValidatorResult>
   }}}
   to avoid circular code involving: 
   - @angular-devkit/core.@angular-devkit/core/src/json/schema/interface.SchemaValidator
@@ -339,8 +335,8 @@ object srcJsonSchemaInterfaceMod {
   @js.native
   trait SchemaValidator extends StObject {
     
-    def apply(data: JsonValue): Observable_[SchemaValidatorResult] = js.native
-    def apply(data: JsonValue, options: SchemaValidatorOptions): Observable_[SchemaValidatorResult] = js.native
+    def apply(data: JsonValue): js.Promise[SchemaValidatorResult] = js.native
+    def apply(data: JsonValue, options: SchemaValidatorOptions): js.Promise[SchemaValidatorResult] = js.native
   }
   
   /* Inlined std.Partial<ajv.ajv.ErrorObject<string, std.Record<string, any>, unknown>> */

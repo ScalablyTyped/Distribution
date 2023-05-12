@@ -4,6 +4,7 @@ import typings.std.HTMLElement
 import typings.std.MouseEvent
 import typings.std.Record
 import typings.std.UIEvent
+import typings.tabulatorTables.anon.Precision
 import typings.tabulatorTables.tabulatorTablesBooleans.`false`
 import typings.tabulatorTables.tabulatorTablesStrings.clipboard
 import typings.tabulatorTables.tabulatorTablesStrings.data
@@ -35,7 +36,7 @@ scala.Any]
 */
 type ColumnCalc = _ColumnCalc | (js.Function3[/* values */ js.Array[Any], /* data */ js.Array[Any], /* calcParams */ js.Object, Any])
 
-type ColumnCalcParams = js.Function2[/* values */ Any, /* data */ Any, Any]
+type ColumnCalcParams = Precision | (js.Function2[/* values */ Any, /* data */ Any, Any])
 
 type ColumnEventCallback = js.Function2[/* e */ UIEvent, /* column */ ColumnComponent, Unit]
 

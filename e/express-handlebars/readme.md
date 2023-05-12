@@ -1,7 +1,7 @@
 
 # Scala.js typings for express-handlebars
 
-Typings are for version 6.0.6
+Typings are for version 7.0.7
 
 ## Library description:
 A Handlebars view engine for Express which doesn't suck.

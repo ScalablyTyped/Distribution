@@ -305,6 +305,10 @@ object vscodeDebugprotocolStrings {
   inline def normal: normal = "normal".asInstanceOf[normal]
   
   @js.native
+  sealed trait notStopped extends StObject
+  inline def notStopped: notStopped = "notStopped".asInstanceOf[notStopped]
+  
+  @js.native
   sealed trait number extends StObject
   inline def number: number = "number".asInstanceOf[number]
   

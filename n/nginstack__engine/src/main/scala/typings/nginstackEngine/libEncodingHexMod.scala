@@ -23,8 +23,7 @@ object libEncodingHexMod {
   
   inline def encode(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  inline def encodeToString(src: js.typedarray.ArrayBuffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeToString")(src.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def encodeToString(src: js.typedarray.Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeToString")(src.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def encodeToString(src: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeToString")(src.asInstanceOf[js.Any]).asInstanceOf[String]
   
   trait Hex extends StObject
 }

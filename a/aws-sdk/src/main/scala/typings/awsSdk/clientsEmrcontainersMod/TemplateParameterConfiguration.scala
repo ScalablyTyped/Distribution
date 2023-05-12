@@ -12,7 +12,7 @@ trait TemplateParameterConfiguration extends StObject {
   var defaultValue: js.UndefOr[String1024] = js.undefined
   
   /**
-    * The type of the job template parameter. Allowed values are: ‘String’, ‘Number’.
+    * The type of the job template parameter. Allowed values are: ‘STRING’, ‘NUMBER’.
     */
   var `type`: js.UndefOr[TemplateParameterDataType] = js.undefined
 }

@@ -24,6 +24,8 @@ object libSimpleLayoutHeaderMod {
   
   inline def groupFilters(filters: Any): js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("groupFilters")(filters.asInstanceOf[js.Any]).asInstanceOf[js.Array[Any]]
   
+  type Email = typings.nginstackEngine.libEmailEmailMod.^
+  
   type Event = typings.nginstackEngine.libEventEventMod.^
   
   @js.native
@@ -64,8 +66,6 @@ object libSimpleLayoutHeaderMod {
     
     def writePlain(sender: SimpleLayout, outputObj: NewLine, options: CurrentPage): Unit = js.native
   }
-  
-  type Mail = typings.nginstackEngine.libMailMailMod.^
   
   type SimpleLayout = typings.nginstackWebFramework.libSimpleLayoutSimpleLayoutMod.^
   

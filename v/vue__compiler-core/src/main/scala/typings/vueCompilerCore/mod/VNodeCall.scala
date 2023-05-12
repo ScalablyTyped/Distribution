@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait VNodeCall
   extends StObject
-     with Node2
+     with Node
      with BlockCodegenNode
      with JSChildNode {
   

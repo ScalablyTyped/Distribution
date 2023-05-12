@@ -1,14 +1,13 @@
 package typings.typescript.anon
 
-import typings.typescript.mod.ModuleKind.CommonJS
-import typings.typescript.mod.ModuleKind.ESNext
+import typings.typescript.mod.ResolutionMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ImpliedNodeFormat extends StObject {
   
-  var impliedNodeFormat: js.UndefOr[ESNext | CommonJS] = js.undefined
+  var impliedNodeFormat: js.UndefOr[ResolutionMode] = js.undefined
 }
 object ImpliedNodeFormat {
   
@@ -20,7 +19,7 @@ object ImpliedNodeFormat {
   @scala.inline
   implicit open class MutableBuilder[Self <: ImpliedNodeFormat] (val x: Self) extends AnyVal {
     
-    inline def setImpliedNodeFormat(value: ESNext | CommonJS): Self = StObject.set(x, "impliedNodeFormat", value.asInstanceOf[js.Any])
+    inline def setImpliedNodeFormat(value: ResolutionMode): Self = StObject.set(x, "impliedNodeFormat", value.asInstanceOf[js.Any])
     
     inline def setImpliedNodeFormatUndefined: Self = StObject.set(x, "impliedNodeFormat", js.undefined)
   }

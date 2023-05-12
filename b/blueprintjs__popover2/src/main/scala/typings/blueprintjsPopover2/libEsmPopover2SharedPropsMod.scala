@@ -6,12 +6,17 @@ import typings.blueprintjsCore.libEsmComponentsPopoverPopoverSharedPropsMod.Popo
 import typings.blueprintjsPopover2.blueprintjsPopover2Strings.applyStyles
 import typings.blueprintjsPopover2.blueprintjsPopover2Strings.arrow
 import typings.blueprintjsPopover2.blueprintjsPopover2Strings.computeStyles
+import typings.blueprintjsPopover2.blueprintjsPopover2Strings.dialog
 import typings.blueprintjsPopover2.blueprintjsPopover2Strings.eventListeners
 import typings.blueprintjsPopover2.blueprintjsPopover2Strings.flip
+import typings.blueprintjsPopover2.blueprintjsPopover2Strings.grid
 import typings.blueprintjsPopover2.blueprintjsPopover2Strings.hide
+import typings.blueprintjsPopover2.blueprintjsPopover2Strings.listbox
+import typings.blueprintjsPopover2.blueprintjsPopover2Strings.menu
 import typings.blueprintjsPopover2.blueprintjsPopover2Strings.offset
 import typings.blueprintjsPopover2.blueprintjsPopover2Strings.popperOffsets
 import typings.blueprintjsPopover2.blueprintjsPopover2Strings.preventOverflow
+import typings.blueprintjsPopover2.blueprintjsPopover2Strings.tree
 import typings.popperjsCore.libEnumsMod.Boundary
 import typings.popperjsCore.libEnumsMod.ModifierPhases_
 import typings.popperjsCore.libEnumsMod.Placement
@@ -40,7 +45,7 @@ object libEsmPopover2SharedPropsMod {
   
   type DefaultPopover2TargetHTMLProps = HTMLProps[HTMLElement]
   
-  trait IPopover2SharedProps[TProps]
+  trait IPopover2SharedProps[TProps /* <: DefaultPopover2TargetHTMLProps */]
     extends StObject
        with IOverlayableProps
        with IProps {
@@ -225,7 +230,12 @@ object libEsmPopover2SharedPropsMod {
       *
       * Mutually exclusive with `children` and `targetTagName` props.
       */
-    var renderTarget: js.UndefOr[js.Function1[/* props */ Popover2TargetProps & TProps, Element]] = js.undefined
+    var renderTarget: js.UndefOr[
+        js.Function1[
+          /* props */ Popover2TargetProps & Popover2HoverTargetHandlers[TProps] & Popover2ClickTargetHandlers[TProps], 
+          Element
+        ]
+      ] = js.undefined
     
     /**
       * A root boundary element supplied to the "flip" and "preventOverflow" modifiers.
@@ -234,6 +244,15 @@ object libEsmPopover2SharedPropsMod {
       * @see https://popper.js.org/docs/v2/utils/detect-overflow/#rootboundary
       */
     var rootBoundary: js.UndefOr[RootBoundary] = js.undefined
+    
+    /**
+      * HTML props for the target element. This is useful in some cases where you
+      * need to render some simple attributes on the generated target element.
+      *
+      * For more complex use cases, consider using the `renderTarget` API instead.
+      * This prop will be ignored if `renderTarget` is used.
+      */
+    var targetProps: js.UndefOr[TProps] = js.undefined
     
     /**
       * HTML tag name for the target element. This must be an HTML element to
@@ -254,18 +273,18 @@ object libEsmPopover2SharedPropsMod {
       * @default "span" ("div" if `fill={true}`)
       */
     var targetTagName: js.UndefOr[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.blueprintjsPopover2.blueprintjsPopover2Strings.a, typings.blueprintjsPopover2.blueprintjsPopover2Strings.abbr, typings.blueprintjsPopover2.blueprintjsPopover2Strings.address */ Any
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177, starting with typings.blueprintjsPopover2.blueprintjsPopover2Strings.a, typings.blueprintjsPopover2.blueprintjsPopover2Strings.abbr, typings.blueprintjsPopover2.blueprintjsPopover2Strings.address */ Any
       ] = js.undefined
   }
   object IPopover2SharedProps {
     
-    inline def apply[TProps](): IPopover2SharedProps[TProps] = {
+    inline def apply[TProps /* <: DefaultPopover2TargetHTMLProps */](): IPopover2SharedProps[TProps] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IPopover2SharedProps[TProps]]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: IPopover2SharedProps[?], TProps] (val x: Self & IPopover2SharedProps[TProps]) extends AnyVal {
+    implicit open class MutableBuilder[Self <: IPopover2SharedProps[?], TProps /* <: DefaultPopover2TargetHTMLProps */] (val x: Self & IPopover2SharedProps[TProps]) extends AnyVal {
       
       inline def setBoundary(value: Boundary): Self = StObject.set(x, "boundary", value.asInstanceOf[js.Any])
       
@@ -357,7 +376,9 @@ object libEsmPopover2SharedPropsMod {
       
       inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
       
-      inline def setRenderTarget(value: /* props */ Popover2TargetProps & TProps => Element): Self = StObject.set(x, "renderTarget", js.Any.fromFunction1(value))
+      inline def setRenderTarget(
+        value: /* props */ Popover2TargetProps & Popover2HoverTargetHandlers[TProps] & Popover2ClickTargetHandlers[TProps] => Element
+      ): Self = StObject.set(x, "renderTarget", js.Any.fromFunction1(value))
       
       inline def setRenderTargetUndefined: Self = StObject.set(x, "renderTarget", js.undefined)
       
@@ -365,21 +386,32 @@ object libEsmPopover2SharedPropsMod {
       
       inline def setRootBoundaryUndefined: Self = StObject.set(x, "rootBoundary", js.undefined)
       
+      inline def setTargetProps(value: TProps): Self = StObject.set(x, "targetProps", value.asInstanceOf[js.Any])
+      
+      inline def setTargetPropsUndefined: Self = StObject.set(x, "targetProps", js.undefined)
+      
       inline def setTargetTagName(
-        value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.blueprintjsPopover2.blueprintjsPopover2Strings.a, typings.blueprintjsPopover2.blueprintjsPopover2Strings.abbr, typings.blueprintjsPopover2.blueprintjsPopover2Strings.address */ Any
+        value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177, starting with typings.blueprintjsPopover2.blueprintjsPopover2Strings.a, typings.blueprintjsPopover2.blueprintjsPopover2Strings.abbr, typings.blueprintjsPopover2.blueprintjsPopover2Strings.address */ Any
       ): Self = StObject.set(x, "targetTagName", value.asInstanceOf[js.Any])
       
       inline def setTargetTagNameUndefined: Self = StObject.set(x, "targetTagName", js.undefined)
     }
   }
   
+  /* Inlined parent std.Pick<react.react.HTMLAttributes<std.HTMLElement>, 'aria-haspopup' | 'className' | 'tabIndex'> */
   trait IPopover2TargetProps extends StObject {
+    
+    var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
+    
+    var className: js.UndefOr[String] = js.undefined
     
     /** Whether the popover or tooltip is currently open. */
     var isOpen: Boolean
     
     /** Target ref. */
     var ref: Ref[Any]
+    
+    var tabIndex: js.UndefOr[Double] = js.undefined
   }
   object IPopover2TargetProps {
     
@@ -391,6 +423,14 @@ object libEsmPopover2SharedPropsMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: IPopover2TargetProps] (val x: Self) extends AnyVal {
       
+      inline def `setAria-haspopup`(value: Boolean | menu | listbox | tree | grid | dialog): Self = StObject.set(x, "aria-haspopup", value.asInstanceOf[js.Any])
+      
+      inline def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
+      
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      
       inline def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
       
       inline def setRef(value: Ref[Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
@@ -398,10 +438,86 @@ object libEsmPopover2SharedPropsMod {
       inline def setRefFunction1(value: /* instance */ Any | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
       
       inline def setRefNull: Self = StObject.set(x, "ref", null)
+      
+      inline def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
+      
+      inline def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
     }
   }
   
-  type Popover2SharedProps[T] = IPopover2SharedProps[T]
+  /* Inlined std.Pick<TProps, 'onClick' | 'onKeyDown'> */
+  trait Popover2ClickTargetHandlers[TProps /* <: DefaultPopover2TargetHTMLProps */] extends StObject {
+    
+    var onClick: js.UndefOr[Any] = js.undefined
+    
+    var onKeyDown: js.UndefOr[Any] = js.undefined
+  }
+  object Popover2ClickTargetHandlers {
+    
+    inline def apply[TProps /* <: DefaultPopover2TargetHTMLProps */](): Popover2ClickTargetHandlers[TProps] = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Popover2ClickTargetHandlers[TProps]]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Popover2ClickTargetHandlers[?], TProps /* <: DefaultPopover2TargetHTMLProps */] (val x: Self & Popover2ClickTargetHandlers[TProps]) extends AnyVal {
+      
+      inline def setOnClick(value: Any): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
+      
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      
+      inline def setOnKeyDown(value: Any): Self = StObject.set(x, "onKeyDown", value.asInstanceOf[js.Any])
+      
+      inline def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
+    }
+  }
+  
+  /* Inlined std.Pick<TProps, 'onBlur' | 'onContextMenu' | 'onFocus' | 'onMouseEnter' | 'onMouseLeave'> */
+  trait Popover2HoverTargetHandlers[TProps /* <: DefaultPopover2TargetHTMLProps */] extends StObject {
+    
+    var onBlur: js.UndefOr[Any] = js.undefined
+    
+    var onContextMenu: js.UndefOr[Any] = js.undefined
+    
+    var onFocus: js.UndefOr[Any] = js.undefined
+    
+    var onMouseEnter: js.UndefOr[Any] = js.undefined
+    
+    var onMouseLeave: js.UndefOr[Any] = js.undefined
+  }
+  object Popover2HoverTargetHandlers {
+    
+    inline def apply[TProps /* <: DefaultPopover2TargetHTMLProps */](): Popover2HoverTargetHandlers[TProps] = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Popover2HoverTargetHandlers[TProps]]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Popover2HoverTargetHandlers[?], TProps /* <: DefaultPopover2TargetHTMLProps */] (val x: Self & Popover2HoverTargetHandlers[TProps]) extends AnyVal {
+      
+      inline def setOnBlur(value: Any): Self = StObject.set(x, "onBlur", value.asInstanceOf[js.Any])
+      
+      inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
+      
+      inline def setOnContextMenu(value: Any): Self = StObject.set(x, "onContextMenu", value.asInstanceOf[js.Any])
+      
+      inline def setOnContextMenuUndefined: Self = StObject.set(x, "onContextMenu", js.undefined)
+      
+      inline def setOnFocus(value: Any): Self = StObject.set(x, "onFocus", value.asInstanceOf[js.Any])
+      
+      inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
+      
+      inline def setOnMouseEnter(value: Any): Self = StObject.set(x, "onMouseEnter", value.asInstanceOf[js.Any])
+      
+      inline def setOnMouseEnterUndefined: Self = StObject.set(x, "onMouseEnter", js.undefined)
+      
+      inline def setOnMouseLeave(value: Any): Self = StObject.set(x, "onMouseLeave", value.asInstanceOf[js.Any])
+      
+      inline def setOnMouseLeaveUndefined: Self = StObject.set(x, "onMouseLeave", js.undefined)
+    }
+  }
+  
+  type Popover2SharedProps[T /* <: DefaultPopover2TargetHTMLProps */] = IPopover2SharedProps[T]
   
   type Popover2TargetProps = IPopover2TargetProps
   

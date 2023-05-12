@@ -1,7 +1,6 @@
 package typings.gestalt.mod
 
 import typings.gestalt.anon.Height
-import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,13 +17,13 @@ trait CollageProps extends StObject {
   
   var layoutKey: js.UndefOr[Double] = js.undefined
   
-  def renderImage(args: Height): ReactNode
+  def renderImage(args: Height): Node
   
   var width: Double
 }
 object CollageProps {
   
-  inline def apply(columns: Double, height: Double, renderImage: Height => ReactNode, width: Double): CollageProps = {
+  inline def apply(columns: Double, height: Double, renderImage: Height => Node, width: Double): CollageProps = {
     val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], renderImage = js.Any.fromFunction1(renderImage), width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[CollageProps]
   }
@@ -48,7 +47,7 @@ object CollageProps {
     
     inline def setLayoutKeyUndefined: Self = StObject.set(x, "layoutKey", js.undefined)
     
-    inline def setRenderImage(value: Height => ReactNode): Self = StObject.set(x, "renderImage", js.Any.fromFunction1(value))
+    inline def setRenderImage(value: Height => Node): Self = StObject.set(x, "renderImage", js.Any.fromFunction1(value))
     
     inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }

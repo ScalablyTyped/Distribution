@@ -86,6 +86,24 @@ trait VoxelLayer
   def getVolumeStyle(variableId: Double): voxelVoxelVolumeStyle | Null = js.native
   
   /**
+    * Indicates whether the layer will be included in the legend.
+    *
+    * @default true
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VoxelLayer.html#legendEnabled)
+    */
+  var legendEnabled: Boolean = js.native
+  
+  /**
+    * Indicates whether to display popups when voxels in the layer are clicked.
+    *
+    * @default true
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VoxelLayer.html#popupEnabled)
+    */
+  var popupEnabled: Boolean = js.native
+  
+  /**
     * Current rendering mode for the [VoxelLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VoxelLayer.html).
     *
     * @default "volume"

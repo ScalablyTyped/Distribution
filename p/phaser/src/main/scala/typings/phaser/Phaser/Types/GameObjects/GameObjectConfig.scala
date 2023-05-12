@@ -19,7 +19,7 @@ trait GameObjectConfig extends StObject {
   /**
     * The rotation angle of the Game Object, in degrees.
     */
-  var angle: js.UndefOr[Double | js.Object] = js.undefined
+  var angle: js.UndefOr[Double | js.Object | Null] = js.undefined
   
   /**
     * The blend mode of the GameObject.
@@ -44,7 +44,7 @@ trait GameObjectConfig extends StObject {
   /**
     * The origin of the Game Object.
     */
-  var origin: js.UndefOr[Double | js.Object] = js.undefined
+  var origin: js.UndefOr[Double | js.Object | Null] = js.undefined
   
   /**
     * The rotation angle of the Game Object, in radians.
@@ -54,7 +54,7 @@ trait GameObjectConfig extends StObject {
   /**
     * The scale of the GameObject.
     */
-  var scale: js.UndefOr[Double | js.Object] = js.undefined
+  var scale: js.UndefOr[Double | js.Object | Null] = js.undefined
   
   /**
     * The scale mode of the GameObject.
@@ -64,7 +64,7 @@ trait GameObjectConfig extends StObject {
   /**
     * The scroll factor of the GameObject.
     */
-  var scrollFactor: js.UndefOr[Double | js.Object] = js.undefined
+  var scrollFactor: js.UndefOr[Double | js.Object | Null] = js.undefined
   
   /**
     * The visible state of the Game Object.
@@ -101,6 +101,8 @@ object GameObjectConfig {
     
     inline def setAngle(value: Double | js.Object): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     
+    inline def setAngleNull: Self = StObject.set(x, "angle", null)
+    
     inline def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
     
     inline def setBlendMode(value: Double): Self = StObject.set(x, "blendMode", value.asInstanceOf[js.Any])
@@ -121,6 +123,8 @@ object GameObjectConfig {
     
     inline def setOrigin(value: Double | js.Object): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
+    inline def setOriginNull: Self = StObject.set(x, "origin", null)
+    
     inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
     
     inline def setRotation(value: Double | js.Object): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
@@ -133,9 +137,13 @@ object GameObjectConfig {
     
     inline def setScaleModeUndefined: Self = StObject.set(x, "scaleMode", js.undefined)
     
+    inline def setScaleNull: Self = StObject.set(x, "scale", null)
+    
     inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
     inline def setScrollFactor(value: Double | js.Object): Self = StObject.set(x, "scrollFactor", value.asInstanceOf[js.Any])
+    
+    inline def setScrollFactorNull: Self = StObject.set(x, "scrollFactor", null)
     
     inline def setScrollFactorUndefined: Self = StObject.set(x, "scrollFactor", js.undefined)
     

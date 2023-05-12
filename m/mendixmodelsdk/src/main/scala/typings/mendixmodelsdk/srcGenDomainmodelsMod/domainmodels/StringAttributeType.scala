@@ -1,6 +1,7 @@
 package typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels
 
 import typings.mendixmodelsdk.srcGenBaseModelMod.IModel
+import typings.mendixmodelsdk.srcGenBusinesseventsMod.businessevents.MessageAttribute
 import typings.mendixmodelsdk.srcGenBusinesseventsMod.businessevents.PublishedMessageAttribute
 import typings.mendixmodelsdk.srcGenDomainmodelsMod.StructureVersionInfo
 import typings.mendixmodelsdk.srcGenMlmappingsMod.mlmappings.TensorMappingElement
@@ -90,6 +91,17 @@ object StringAttributeType {
   
   /**
     * Creates and returns a new StringAttributeType instance in the SDK and on the server.
+    * The new StringAttributeType will be automatically stored in the 'attributeType' property
+    * of the parent businessevents.MessageAttribute element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  9.24.0 and higher
+    */
+  /* static member */
+  inline def createInMessageAttributeUnderAttributeType(container: MessageAttribute): StringAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMessageAttributeUnderAttributeType")(container.asInstanceOf[js.Any]).asInstanceOf[StringAttributeType]
+  
+  /**
+    * Creates and returns a new StringAttributeType instance in the SDK and on the server.
     * The new StringAttributeType will be automatically stored in the 'type' property
     * of the parent rest.ODataKeyPart element passed as argument.
     *
@@ -105,7 +117,7 @@ object StringAttributeType {
     * of the parent businessevents.PublishedMessageAttribute element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  9.14.0 and higher
+    *  9.14.0 to 9.23.0
     */
   /* static member */
   inline def createInPublishedMessageAttributeUnderAttributeType(container: PublishedMessageAttribute): StringAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedMessageAttributeUnderAttributeType")(container.asInstanceOf[js.Any]).asInstanceOf[StringAttributeType]
@@ -116,7 +128,7 @@ object StringAttributeType {
     * of the parent mlmappings.TensorMappingElement element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  9.17.0 and higher
+    *  9.17.0 to 9.20.0
     */
   /* static member */
   inline def createInTensorMappingElementUnderAttributeType(container: TensorMappingElement): StringAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTensorMappingElementUnderAttributeType")(container.asInstanceOf[js.Any]).asInstanceOf[StringAttributeType]

@@ -18,6 +18,13 @@ object default {
     x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof v1.TextToSpeechClient */ Any
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TextToSpeechClient")(x.asInstanceOf[js.Any])
   
+  @JSImport("@google-cloud/text-to-speech/build/src", "default.TextToSpeechLongAudioSynthesizeClient")
+  @js.native
+  def TextToSpeechLongAudioSynthesizeClient: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof v1.TextToSpeechLongAudioSynthesizeClient */ Any = js.native
+  inline def TextToSpeechLongAudioSynthesizeClient_=(
+    x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof v1.TextToSpeechLongAudioSynthesizeClient */ Any
+  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TextToSpeechLongAudioSynthesizeClient")(x.asInstanceOf[js.Any])
+  
   @JSImport("@google-cloud/text-to-speech/build/src", "default.v1")
   @js.native
   def v1: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof v1 */ Any = js.native

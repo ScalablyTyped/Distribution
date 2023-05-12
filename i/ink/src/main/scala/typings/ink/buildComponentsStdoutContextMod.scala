@@ -21,7 +21,7 @@ object buildComponentsStdoutContextMod extends Shortcut {
     /**
       * Stdout stream passed to `render()` in `options.stdout` or `process.stdout` by default.
       */
-    val stdout: js.UndefOr[WriteStream] = js.undefined
+    val stdout: WriteStream
     
     /**
       * Write any string to stdout, while preserving Ink's output.
@@ -32,8 +32,8 @@ object buildComponentsStdoutContextMod extends Shortcut {
   }
   object Props {
     
-    inline def apply(write: String => Unit): Props = {
-      val __obj = js.Dynamic.literal(write = js.Any.fromFunction1(write))
+    inline def apply(stdout: WriteStream, write: String => Unit): Props = {
+      val __obj = js.Dynamic.literal(stdout = stdout.asInstanceOf[js.Any], write = js.Any.fromFunction1(write))
       __obj.asInstanceOf[Props]
     }
     
@@ -41,8 +41,6 @@ object buildComponentsStdoutContextMod extends Shortcut {
     implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
       
       inline def setStdout(value: WriteStream): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
-      
-      inline def setStdoutUndefined: Self = StObject.set(x, "stdout", js.undefined)
       
       inline def setWrite(value: String => Unit): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
     }

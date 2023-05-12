@@ -14,8 +14,8 @@ object math {
   
   /**
     * An interface for a 2-dimensional point consisting a x and y coordinate.
-    * @property x {number} - The point's coordinate on X-axis.
-    * @property y {number} - The point's coordinate on Y-axis.
+    * x {number} - The point's coordinate on X-axis.
+    * y {number} - The point's coordinate on Y-axis.
     */
   trait IPoint extends StObject {
     
@@ -41,8 +41,8 @@ object math {
   
   /**
     * An interface for a 2-dimensional size consisting a with and a height.
-    * @property w {number} - The size's width.
-    * @property h {number} - The size's height.
+    * w {number} - The size's width.
+    * h {number} - The size's height.
     */
   trait ISize extends StObject {
     
@@ -68,8 +68,8 @@ object math {
   
   /**
     * Class represents a 2-dimensional point, defined by x and y coordinates.
-    * @property x {number} - The point's coordinate on X-axis.
-    * @property y {number} - The point's coordinate on Y-axis.
+    * x {number} - The point's coordinate on X-axis.
+    * y {number} - The point's coordinate on Y-axis.
     */
   @js.native
   trait Point
@@ -210,8 +210,8 @@ object math {
   
   /**
     * Class for representing sizes consisting of a width and height.
-    * @property w {number} - The size's width value
-    * @property h {number} - The size's height value
+    * w {number} - The size's width value
+    * h {number} - The size's height value
     */
   trait Size extends StObject {
     

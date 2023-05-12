@@ -1,35 +1,43 @@
 package typings.postcss
 
 import typings.postcss.libNodeMod.AnyNode
-import typings.postcss.libNodeMod.ChildNode
 import typings.postcss.mod.AtRule_
 import typings.postcss.mod.Builder
-import typings.postcss.mod.Comment_
 import typings.postcss.mod.Container
 import typings.postcss.mod.Declaration
-import typings.postcss.mod.Document
 import typings.postcss.mod.Root_
 import typings.postcss.mod.Rule_
 import typings.postcss.postcssStrings.after
 import typings.postcss.postcssStrings.before
 import typings.postcss.postcssStrings.end
 import typings.postcss.postcssStrings.start
+import typings.std.ChildNode
+import typings.std.Comment
+import typings.std.Document
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libStringifierMod {
   
+  @JSImport("postcss/lib/stringifier", JSImport.Namespace)
+  @js.native
+  open class ^ ()
+    extends StObject
+       with Stringifier_
+  
   @JSImport("postcss/lib/stringifier", JSImport.Default)
   @js.native
   open class default protected ()
     extends StObject
-       with Stringifier {
+       with Stringifier_ {
     def this(builder: Builder) = this()
   }
   
+  type Stringifier = Stringifier_
+  
   @js.native
-  trait Stringifier extends StObject {
+  trait Stringifier_ extends StObject {
     
     def atrule(node: AtRule_): Unit = js.native
     def atrule(node: AtRule_, semicolon: Boolean): Unit = js.native
@@ -47,7 +55,7 @@ object libStringifierMod {
     @JSName("builder")
     var builder_Original: Builder = js.native
     
-    def comment(node: Comment_): Unit = js.native
+    def comment(node: Comment): Unit = js.native
     
     def decl(node: Declaration): Unit = js.native
     def decl(node: Declaration, semicolon: Boolean): Unit = js.native
@@ -61,7 +69,7 @@ object libStringifierMod {
     
     def rawBeforeClose(root: Root_): js.UndefOr[String] = js.native
     
-    def rawBeforeComment(root: Root_, node: Comment_): js.UndefOr[String] = js.native
+    def rawBeforeComment(root: Root_, node: Comment): js.UndefOr[String] = js.native
     
     def rawBeforeDecl(root: Root_, node: Declaration): js.UndefOr[String] = js.native
     

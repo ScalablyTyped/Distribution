@@ -22,7 +22,7 @@ trait CreateTransitGatewayRouteTableAttachmentRequest extends StObject {
   var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
-    * The ARN of the transit gateway route table for the attachment request.
+    * The ARN of the transit gateway route table for the attachment request. For example, "TransitGatewayRouteTableArn": "arn:aws:ec2:us-west-2:123456789012:transit-gateway-route-table/tgw-rtb-9876543210123456".
     */
   var TransitGatewayRouteTableArn: typings.awsSdk.clientsNetworkmanagerMod.TransitGatewayRouteTableArn
 }

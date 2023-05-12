@@ -8,6 +8,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 type AmazonResourceName = String
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.X509ClientCertificate
+  - typings.awsSdk.awsSdkStrings.SignatureVersion4
+  - java.lang.String
+*/
+type AuthenticationMethod = _AuthenticationMethod | String
+
 type DeviceUnderTestList = js.Array[DeviceUnderTest]
 
 type Endpoint = String
@@ -33,6 +40,8 @@ type ParallelRun = Boolean
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.MqttV3_1_1
   - typings.awsSdk.awsSdkStrings.MqttV5
+  - typings.awsSdk.awsSdkStrings.MqttV3_1_1_OverWebSocket
+  - typings.awsSdk.awsSdkStrings.MqttV5_OverWebSocket
   - java.lang.String
 */
 type Protocol = _Protocol | String

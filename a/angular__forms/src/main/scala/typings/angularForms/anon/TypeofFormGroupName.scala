@@ -29,11 +29,12 @@ trait TypeofFormGroupName
     FormGroupName, 
     `[formGroupName]`, 
     scala.Nothing, 
-    `2`, 
+    Name5, 
     js.Object, 
     scala.Nothing, 
     scala.Nothing, 
-    `false`
+    `false`, 
+    scala.Nothing
   ] = js.native
   
   var ɵfac: ɵɵFactoryDeclaration[FormGroupName, js.Tuple3[Host, Self, Self]] = js.native

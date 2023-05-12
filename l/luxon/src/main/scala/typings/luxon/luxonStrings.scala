@@ -83,6 +83,18 @@ object luxonStrings {
   inline def DATE_SHORT: DATE_SHORT = "DATE_SHORT".asInstanceOf[DATE_SHORT]
   
   @js.native
+  sealed trait `Invalid DateTime` extends StObject
+  inline def `Invalid DateTime`: `Invalid DateTime` = ("Invalid DateTime").asInstanceOf[`Invalid DateTime`]
+  
+  @js.native
+  sealed trait `Invalid Duration` extends StObject
+  inline def `Invalid Duration`: `Invalid Duration` = ("Invalid Duration").asInstanceOf[`Invalid Duration`]
+  
+  @js.native
+  sealed trait `Invalid Interval` extends StObject
+  inline def `Invalid Interval`: `Invalid Interval` = ("Invalid Interval").asInstanceOf[`Invalid Interval`]
+  
+  @js.native
   sealed trait TIME_24_SIMPLE extends StObject
   inline def TIME_24_SIMPLE: TIME_24_SIMPLE = "TIME_24_SIMPLE".asInstanceOf[TIME_24_SIMPLE]
   
@@ -113,6 +125,10 @@ object luxonStrings {
   @js.native
   sealed trait TIME_WITH_SHORT_OFFSET extends StObject
   inline def TIME_WITH_SHORT_OFFSET: TIME_WITH_SHORT_OFFSET = "TIME_WITH_SHORT_OFFSET".asInstanceOf[TIME_WITH_SHORT_OFFSET]
+  
+  @js.native
+  sealed trait _empty extends StObject
+  inline def _empty: _empty = "".asInstanceOf[_empty]
   
   @js.native
   sealed trait arab

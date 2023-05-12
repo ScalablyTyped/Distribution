@@ -27,8 +27,14 @@ object distTypesCommandsDecodeAuthorizationMessageCommandMod {
           Any, 
           Any
         ] {
+    /**
+      * @public
+      */
     def this(input: DecodeAuthorizationMessageCommandInput) = this()
     
+    /**
+      * @internal
+      */
     /* private */ var deserialize: Any = js.native
     
     /**
@@ -44,6 +50,9 @@ object distTypesCommandsDecodeAuthorizationMessageCommandMod {
       options: HttpHandlerOptions
     ): Handler[DecodeAuthorizationMessageCommandInput, DecodeAuthorizationMessageCommandOutput] = js.native
     
+    /**
+      * @internal
+      */
     /* private */ var serialize: Any = js.native
   }
   /* static members */

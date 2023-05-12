@@ -3,6 +3,8 @@ package typings.egjsAxes
 import typings.egjsAxes.anon.X
 import typings.egjsAxes.declarationEventInputEventInputMod.EventInput
 import typings.egjsAxes.declarationTypesMod.ActiveEvent
+import typings.egjsAxes.declarationTypesMod.ExtendedEvent
+import typings.egjsAxes.declarationTypesMod.InputEventType
 import typings.std.PointerEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -35,6 +37,12 @@ object declarationEventInputPointerEventInputMod {
     def getTouches(): Double = js.native
     
     val move: js.Array[String] = js.native
+    
+    def onEventMove(event: InputEventType, inputKey: js.Array[String], inputButton: js.Array[String]): ExtendedEvent = js.native
+    def onEventMove(event: InputEventType, inputKey: Unit, inputButton: js.Array[String]): ExtendedEvent = js.native
+    
+    def onEventStart(event: InputEventType, inputKey: js.Array[String], inputButton: js.Array[String]): ExtendedEvent = js.native
+    def onEventStart(event: InputEventType, inputKey: Unit, inputButton: js.Array[String]): ExtendedEvent = js.native
     
     def onRelease(): Unit = js.native
     

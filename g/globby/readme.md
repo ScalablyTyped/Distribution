@@ -1,7 +1,7 @@
 
 # Scala.js typings for globby
 
-Typings are for version 13.1.2
+Typings are for version 13.1.4
 
 ## Library description:
 User-friendly glob matching

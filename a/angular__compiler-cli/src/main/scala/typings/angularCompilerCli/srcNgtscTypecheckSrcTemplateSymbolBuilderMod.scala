@@ -34,6 +34,8 @@ object srcNgtscTypecheckSrcTemplateSymbolBuilderMod {
       getTypeChecker: js.Function0[TypeChecker]
     ) = this()
     
+    /* private */ var addHostDirectiveSymbols: Any = js.native
+    
     /* private */ val componentScopeReader: Any = js.native
     
     /* private */ var getDirectiveMeta: Any = js.native

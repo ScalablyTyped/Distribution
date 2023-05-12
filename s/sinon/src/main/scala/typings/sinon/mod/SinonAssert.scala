@@ -1,7 +1,6 @@
 package typings.sinon.mod
 
 import typings.sinon.anon.PartialSinonExposeOptions
-import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +20,7 @@ trait SinonAssert extends StObject {
     */
   def alwaysCalledWith[TArgs /* <: js.Array[Any] */](
     spy: SinonSpy[TArgs, Any],
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Partial<MatchArguments<TArgs>> is not an array type */ args: Partial[MatchArguments[TArgs]]
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type MatchPartialArguments<TArgs> is not an array type */ args: MatchPartialArguments[TArgs]
   ): Unit = js.native
   
   /**
@@ -29,7 +28,7 @@ trait SinonAssert extends StObject {
     */
   def alwaysCalledWithExactly[TArgs /* <: js.Array[Any] */](
     spy: SinonSpy[TArgs, Any],
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type MatchArguments<TArgs> is not an array type */ args: MatchArguments[TArgs]
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type MatchExactArguments<TArgs> is not an array type */ args: MatchExactArguments[TArgs]
   ): Unit = js.native
   
   /**
@@ -38,7 +37,7 @@ trait SinonAssert extends StObject {
     */
   def alwaysCalledWithMatch[TArgs /* <: js.Array[Any] */](
     spy: SinonSpy[TArgs, Any],
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type DeepPartialOrMatcher<TArgs> is not an array type */ args: DeepPartialOrMatcher[TArgs]
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type MatchPartialArguments<TArgs> is not an array type */ args: MatchPartialArguments[TArgs]
   ): Unit = js.native
   
   /**
@@ -84,7 +83,7 @@ trait SinonAssert extends StObject {
   
   def calledOnceWithExactly[TArgs /* <: js.Array[Any] */](
     spyOrSpyCall: SinonSpyCall[TArgs, Any],
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type MatchArguments<TArgs> is not an array type */ args: MatchArguments[TArgs]
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type MatchExactArguments<TArgs> is not an array type */ args: MatchExactArguments[TArgs]
   ): Unit = js.native
   /**
     * Passes if spy was called at exactly once with the provided arguments and no others.
@@ -93,7 +92,7 @@ trait SinonAssert extends StObject {
     */
   def calledOnceWithExactly[TArgs /* <: js.Array[Any] */](
     spyOrSpyCall: SinonSpy[TArgs, Any],
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type MatchArguments<TArgs> is not an array type */ args: MatchArguments[TArgs]
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type MatchExactArguments<TArgs> is not an array type */ args: MatchExactArguments[TArgs]
   ): Unit = js.native
   
   def calledOnceWithMatch[TArgs /* <: js.Array[Any] */](
@@ -122,7 +121,7 @@ trait SinonAssert extends StObject {
   
   def calledWith[TArgs /* <: js.Array[Any] */](
     spyOrSpyCall: SinonSpyCall[TArgs, Any],
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Partial<MatchArguments<TArgs>> is not an array type */ args: Partial[MatchArguments[TArgs]]
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type MatchPartialArguments<TArgs> is not an array type */ args: MatchPartialArguments[TArgs]
   ): Unit = js.native
   /**
     * Passes if spy was called with the provided arguments.
@@ -132,12 +131,12 @@ trait SinonAssert extends StObject {
     */
   def calledWith[TArgs /* <: js.Array[Any] */](
     spyOrSpyCall: SinonSpy[TArgs, Any],
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Partial<MatchArguments<TArgs>> is not an array type */ args: Partial[MatchArguments[TArgs]]
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type MatchPartialArguments<TArgs> is not an array type */ args: MatchPartialArguments[TArgs]
   ): Unit = js.native
   
   def calledWithExactly[TArgs /* <: js.Array[Any] */](
     spyOrSpyCall: SinonSpyCall[TArgs, Any],
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type MatchArguments<TArgs> is not an array type */ args: MatchArguments[TArgs]
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type MatchExactArguments<TArgs> is not an array type */ args: MatchExactArguments[TArgs]
   ): Unit = js.native
   /**
     * Passes if spy was called with the provided arguments and no others.
@@ -147,12 +146,12 @@ trait SinonAssert extends StObject {
     */
   def calledWithExactly[TArgs /* <: js.Array[Any] */](
     spyOrSpyCall: SinonSpy[TArgs, Any],
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type MatchArguments<TArgs> is not an array type */ args: MatchArguments[TArgs]
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type MatchExactArguments<TArgs> is not an array type */ args: MatchExactArguments[TArgs]
   ): Unit = js.native
   
   def calledWithMatch[TArgs /* <: js.Array[Any] */](
     spyOrSpyCall: SinonSpyCall[TArgs, Any],
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type DeepPartialOrMatcher<TArgs> is not an array type */ args: DeepPartialOrMatcher[TArgs]
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type MatchPartialArguments<TArgs> is not an array type */ args: MatchPartialArguments[TArgs]
   ): Unit = js.native
   /**
     * Passes if spy was called with matching arguments.
@@ -161,7 +160,7 @@ trait SinonAssert extends StObject {
     */
   def calledWithMatch[TArgs /* <: js.Array[Any] */](
     spyOrSpyCall: SinonSpy[TArgs, Any],
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type DeepPartialOrMatcher<TArgs> is not an array type */ args: DeepPartialOrMatcher[TArgs]
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type MatchPartialArguments<TArgs> is not an array type */ args: MatchPartialArguments[TArgs]
   ): Unit = js.native
   
   /**
@@ -209,7 +208,7 @@ trait SinonAssert extends StObject {
     */
   def neverCalledWith[TArgs /* <: js.Array[Any] */](
     spy: SinonSpy[TArgs, Any],
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Partial<MatchArguments<TArgs>> is not an array type */ args: Partial[MatchArguments[TArgs]]
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type MatchPartialArguments<TArgs> is not an array type */ args: MatchPartialArguments[TArgs]
   ): Unit = js.native
   
   /**
@@ -220,7 +219,7 @@ trait SinonAssert extends StObject {
     */
   def neverCalledWithMatch[TArgs /* <: js.Array[Any] */](
     spy: SinonSpy[TArgs, Any],
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type DeepPartialOrMatcher<TArgs> is not an array type */ args: DeepPartialOrMatcher[TArgs]
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type MatchPartialArguments<TArgs> is not an array type */ args: MatchPartialArguments[TArgs]
   ): Unit = js.native
   
   // Overridable

@@ -17,6 +17,11 @@ trait EnhancedMonitoringOutput extends StObject {
   var DesiredShardLevelMetrics: js.UndefOr[MetricsNameList] = js.undefined
   
   /**
+    * The ARN of the stream.
+    */
+  var StreamARN: js.UndefOr[typings.awsSdk.clientsKinesisMod.StreamARN] = js.undefined
+  
+  /**
     * The name of the Kinesis data stream.
     */
   var StreamName: js.UndefOr[typings.awsSdk.clientsKinesisMod.StreamName] = js.undefined
@@ -42,6 +47,10 @@ object EnhancedMonitoringOutput {
     inline def setDesiredShardLevelMetricsUndefined: Self = StObject.set(x, "DesiredShardLevelMetrics", js.undefined)
     
     inline def setDesiredShardLevelMetricsVarargs(value: MetricsName*): Self = StObject.set(x, "DesiredShardLevelMetrics", js.Array(value*))
+    
+    inline def setStreamARN(value: StreamARN): Self = StObject.set(x, "StreamARN", value.asInstanceOf[js.Any])
+    
+    inline def setStreamARNUndefined: Self = StObject.set(x, "StreamARN", js.undefined)
     
     inline def setStreamName(value: StreamName): Self = StObject.set(x, "StreamName", value.asInstanceOf[js.Any])
     

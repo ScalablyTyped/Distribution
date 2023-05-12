@@ -141,11 +141,7 @@ object global {
         * 자주 가는 사이트에서 해당 url을 삭제합니다.
         * @param url 삭제할 url
         */
-      @JSGlobal("whale.topSites._delete")
-      @js.native
-      def delete: js.Function1[/* url */ String, Unit] = js.native
-      
-      inline def delete_=(x: js.Function1[/* url */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_delete")(x.asInstanceOf[js.Any])
+      inline def delete(url: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_delete")(url.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
       inline def get(callback: js.Function1[/* data */ js.Array[MostVisitedURL], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
       

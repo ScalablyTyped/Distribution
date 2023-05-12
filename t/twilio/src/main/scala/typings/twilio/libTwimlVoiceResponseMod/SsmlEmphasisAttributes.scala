@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SsmlEmphasisAttributes extends StObject {
   
+  /** level - Specify the degree of emphasis */
   var level: js.UndefOr[SsmlEmphasisLevel] = js.undefined
 }
 object SsmlEmphasisAttributes {

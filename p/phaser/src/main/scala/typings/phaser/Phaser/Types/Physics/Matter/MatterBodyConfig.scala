@@ -144,6 +144,11 @@ trait MatterBodyConfig extends StObject {
   var scale: js.UndefOr[Vector2Like] = js.undefined
   
   /**
+    * Set this Game Object to create and use a new Body based on the configuration object given.
+    */
+  var shape: js.UndefOr[String | MatterSetBodyConfig] = js.undefined
+  
+  /**
     * A `Number` that defines the number of updates in which this body must have near-zero velocity before it is set as sleeping by the `Matter.Sleeping` module (if sleeping is enabled by the engine).
     */
   var sleepThreshold: js.UndefOr[Double] = js.undefined
@@ -289,6 +294,10 @@ object MatterBodyConfig {
     inline def setScale(value: Vector2Like): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
     inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+    
+    inline def setShape(value: String | MatterSetBodyConfig): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
+    
+    inline def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
     
     inline def setSleepThreshold(value: Double): Self = StObject.set(x, "sleepThreshold", value.asInstanceOf[js.Any])
     

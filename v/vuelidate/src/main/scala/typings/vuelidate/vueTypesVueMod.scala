@@ -17,7 +17,7 @@ object vueTypesVueMod {
     * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
     * You'll have to cast your way around this structure, unfortunately. 
     * TS definition: {{{
-    {[ P in std.Exclude<keyof V, '$v'> ]:? vuelidate.vuelidate/vuelidate.Validation & vuelidate.vue/types/vue.ValidationProperties<V[P]> & vuelidate.vue/types/vue.ValidationEvaluation}
+    {[ P in std.Exclude<keyof V, '$v' | '$parent' | '$root' | '$children'> ]:? vuelidate.vuelidate/vuelidate.Validation & vuelidate.vue/types/vue.ValidationProperties<V[P]> & vuelidate.vue/types/vue.ValidationEvaluation}
     }}}
     */
   @js.native

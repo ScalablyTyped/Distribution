@@ -49,7 +49,7 @@ object RecoverySnapshot {
     
     inline def setEbsSnapshotsUndefined: Self = StObject.set(x, "ebsSnapshots", js.undefined)
     
-    inline def setEbsSnapshotsVarargs(value: ebsSnapshot*): Self = StObject.set(x, "ebsSnapshots", js.Array(value*))
+    inline def setEbsSnapshotsVarargs(value: EbsSnapshot*): Self = StObject.set(x, "ebsSnapshots", js.Array(value*))
     
     inline def setExpectedTimestamp(value: ISO8601DatetimeString): Self = StObject.set(x, "expectedTimestamp", value.asInstanceOf[js.Any])
     

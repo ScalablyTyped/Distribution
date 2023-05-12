@@ -4,6 +4,7 @@ import typings.opentelemetryApi.buildSrcContextTypesMod.Context
 import typings.opentelemetryApi.buildSrcTraceAttributesMod.SpanAttributes
 import typings.opentelemetryApi.buildSrcTraceLinkMod.Link
 import typings.opentelemetryApi.buildSrcTraceSpanKindMod.SpanKind
+import typings.opentelemetryApi.buildSrcTraceTraceStateMod.TraceState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -104,6 +105,14 @@ object buildSrcSamplerMod {
       * A sampling decision, refer to {@link SamplingDecision} for details.
       */
     var decision: SamplingDecision
+    
+    /**
+      * A {@link TraceState} that will be associated with the {@link Span} through
+      * the new {@link SpanContext}. Samplers SHOULD return the TraceState from
+      * the passed-in {@link Context} if they do not intend to change it. Leaving
+      * the value undefined will also leave the TraceState unchanged.
+      */
+    var traceState: js.UndefOr[TraceState] = js.undefined
   }
   object SamplingResult {
     
@@ -120,6 +129,10 @@ object buildSrcSamplerMod {
       inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
       
       inline def setDecision(value: SamplingDecision): Self = StObject.set(x, "decision", value.asInstanceOf[js.Any])
+      
+      inline def setTraceState(value: TraceState): Self = StObject.set(x, "traceState", value.asInstanceOf[js.Any])
+      
+      inline def setTraceStateUndefined: Self = StObject.set(x, "traceState", js.undefined)
     }
   }
 }

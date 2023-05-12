@@ -1,7 +1,7 @@
 
 # Scala.js typings for vectorious
 
-Typings are for version 6.1.4
+Typings are for version 6.1.6
 
 ## Library description:
 A high performance linear algebra library.

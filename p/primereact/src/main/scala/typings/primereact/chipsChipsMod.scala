@@ -1,5 +1,6 @@
 package typings.primereact
 
+import typings.primereact.primereactStrings._empty
 import typings.primereact.primereactStrings.`additions removals`
 import typings.primereact.primereactStrings.`additions text`
 import typings.primereact.primereactStrings.`inline`
@@ -7,8 +8,10 @@ import typings.primereact.primereactStrings.`removals additions`
 import typings.primereact.primereactStrings.`removals text`
 import typings.primereact.primereactStrings.`text additions`
 import typings.primereact.primereactStrings.`text removals`
+import typings.primereact.primereactStrings.`use-credentials`
 import typings.primereact.primereactStrings.additions
 import typings.primereact.primereactStrings.all
+import typings.primereact.primereactStrings.anonymous
 import typings.primereact.primereactStrings.ascending
 import typings.primereact.primereactStrings.assertive
 import typings.primereact.primereactStrings.both
@@ -59,6 +62,9 @@ import typings.primereact.primereactStrings.user
 import typings.primereact.primereactStrings.vertical
 import typings.primereact.primereactStrings.yes
 import typings.primereact.tooltipTooltipoptionsMod.TooltipOptions
+import typings.primereact.tsHelpersMod.FormEvent
+import typings.primereact.utilsUtilsMod.IconOptions
+import typings.primereact.utilsUtilsMod.IconType
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
@@ -73,7 +79,6 @@ import typings.react.mod.CompositionEventHandler
 import typings.react.mod.DragEvent
 import typings.react.mod.DragEventHandler
 import typings.react.mod.FocusEvent
-import typings.react.mod.FormEvent
 import typings.react.mod.FormEventHandler
 import typings.react.mod.HTMLInputTypeAttribute
 import typings.react.mod.Key
@@ -99,6 +104,7 @@ import typings.react.mod.WheelEvent
 import typings.react.mod.WheelEventHandler
 import typings.std.Element
 import typings.std.Event
+import typings.std.FormData
 import typings.std.HTMLDivElement
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
@@ -113,30 +119,52 @@ object chipsChipsMod {
     def this(props: ChipsProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: ChipsProps, context: Any) = this()
     
+    /**
+      * Used to focus the component.
+      */
+    def focus(): Unit = js.native
+    
+    /**
+      * Used to get container element.
+      * @return {HTMLDivElement} Container element
+      */
     def getElement(): HTMLDivElement = js.native
     
+    /**
+      * Used to get input element.
+      * @return {HTMLInputElement} Input element
+      */
     def getInput(): HTMLInputElement = js.native
   }
   
-  trait ChipsAddParams extends StObject {
+  /**
+    * Custom add event
+    */
+  trait ChipsAddEvent extends StObject {
     
+    /**
+      * Browser event
+      */
     var originalEvent: SyntheticEvent[Element, Event]
     
+    /**
+      * Added item value
+      */
     var value: Any
   }
-  object ChipsAddParams {
+  object ChipsAddEvent {
     
-    inline def apply(originalEvent: SyntheticEvent[Element, Event], value: Any): ChipsAddParams = {
+    inline def apply(originalEvent: SyntheticEvent[Element, Event], value: Any): ChipsAddEvent = {
       val __obj = js.Dynamic.literal(originalEvent = originalEvent.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.asInstanceOf[ChipsAddParams]
+      __obj.asInstanceOf[ChipsAddEvent]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: ChipsAddParams] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: ChipsAddEvent] (val x: Self) extends AnyVal {
       
       inline def setOriginalEvent(value: SyntheticEvent[Element, Event]): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
@@ -144,75 +172,13 @@ object chipsChipsMod {
     }
   }
   
-  trait ChipsChangeParams extends StObject {
-    
-    var originalEvent: SyntheticEvent[Element, Event]
-    
-    def preventDefault(): Unit
-    
-    def stopPropagation(): Unit
-    
-    var target: ChipsChangeTargetOptions
-    
-    var value: js.Array[Any]
-  }
-  object ChipsChangeParams {
-    
-    inline def apply(
-      originalEvent: SyntheticEvent[Element, Event],
-      preventDefault: () => Unit,
-      stopPropagation: () => Unit,
-      target: ChipsChangeTargetOptions,
-      value: js.Array[Any]
-    ): ChipsChangeParams = {
-      val __obj = js.Dynamic.literal(originalEvent = originalEvent.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.asInstanceOf[ChipsChangeParams]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: ChipsChangeParams] (val x: Self) extends AnyVal {
-      
-      inline def setOriginalEvent(value: SyntheticEvent[Element, Event]): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
-      
-      inline def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
-      
-      inline def setStopPropagation(value: () => Unit): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
-      
-      inline def setTarget(value: ChipsChangeTargetOptions): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
-      
-      inline def setValue(value: js.Array[Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
-      
-      inline def setValueVarargs(value: Any*): Self = StObject.set(x, "value", js.Array(value*))
-    }
-  }
-  
-  trait ChipsChangeTargetOptions extends StObject {
-    
-    var id: String
-    
-    var name: String
-    
-    var value: js.Array[Any]
-  }
-  object ChipsChangeTargetOptions {
-    
-    inline def apply(id: String, name: String, value: js.Array[Any]): ChipsChangeTargetOptions = {
-      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.asInstanceOf[ChipsChangeTargetOptions]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: ChipsChangeTargetOptions] (val x: Self) extends AnyVal {
-      
-      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
-      
-      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-      
-      inline def setValue(value: js.Array[Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
-      
-      inline def setValueVarargs(value: Any*): Self = StObject.set(x, "value", js.Array(value*))
-    }
-  }
+  /**
+    * Custom change event.
+    * @see {@link ChipsProps.onChange}
+    * @extends {FormEvent}
+    * @event
+    */
+  type ChipsChangeEvent = FormEvent[js.Array[Any], SyntheticEvent[Element, Event]]
   
   /* Inlined parent std.Omit<react.react.DetailedHTMLProps<react.react.InputHTMLAttributes<std.HTMLDivElement>, std.HTMLDivElement>, 'onChange' | 'onFocus' | 'onBlur' | 'onKeyDown' | 'ref'> */
   trait ChipsProps extends StObject {
@@ -223,8 +189,16 @@ object chipsChipsMod {
     
     var accessKey: js.UndefOr[String] = js.undefined
     
+    /**
+      * Whether to add an item when the input loses focus.
+      * @defaultValue false
+      */
     var addOnBlur: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Whether to allow duplicate values or not.
+      * @defaultValue true
+      */
     var allowDuplicate: js.UndefOr[Boolean] = js.undefined
     
     var alt: js.UndefOr[String] = js.undefined
@@ -327,6 +301,9 @@ object chipsChipsMod {
     
     var `aria-valuetext`: js.UndefOr[String] = js.undefined
     
+    /**
+      * Establishes relationships between the component and label(s) where its value should be one or more element IDs.
+      */
     var ariaLabelledBy: js.UndefOr[String] = js.undefined
     
     var autoCapitalize: js.UndefOr[String] = js.undefined
@@ -343,17 +320,23 @@ object chipsChipsMod {
     
     var checked: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Used to get the child elements of the component.
+      * @readonly
+      */
     var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
     var color: js.UndefOr[String] = js.undefined
     
+    var content: js.UndefOr[String] = js.undefined
+    
     var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
     var contextMenu: js.UndefOr[String] = js.undefined
     
-    var crossOrigin: js.UndefOr[String] = js.undefined
+    var crossOrigin: js.UndefOr[anonymous | `use-credentials` | _empty] = js.undefined
     
     var dangerouslySetInnerHTML: js.UndefOr[Html] = js.undefined
     
@@ -365,6 +348,10 @@ object chipsChipsMod {
     
     var dir: js.UndefOr[String] = js.undefined
     
+    /**
+      * When present, it specifies that the element should be disabled.
+      * @defaultValue false
+      */
     var disabled: js.UndefOr[Boolean] = js.undefined
     
     var draggable: js.UndefOr[Booleanish] = js.undefined
@@ -373,7 +360,7 @@ object chipsChipsMod {
     
     var form: js.UndefOr[String] = js.undefined
     
-    var formAction: js.UndefOr[String] = js.undefined
+    var formAction: js.UndefOr[String | (js.Function1[/* formData */ FormData, Unit])] = js.undefined
     
     var formEncType: js.UndefOr[String] = js.undefined
     
@@ -391,10 +378,16 @@ object chipsChipsMod {
     
     var inlist: js.UndefOr[Any] = js.undefined
     
+    /**
+      * Identifier of the input element.
+      */
     var inputId: js.UndefOr[String] = js.undefined
     
     var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
     
+    /**
+      * Reference of the input element.
+      */
     var inputRef: js.UndefOr[Ref[HTMLInputElement]] = js.undefined
     
     var is: js.UndefOr[String] = js.undefined
@@ -407,12 +400,20 @@ object chipsChipsMod {
     
     var itemScope: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * The template of each item
+      * @param {*} item - Current item
+      */
     var itemTemplate: js.UndefOr[js.Function1[/* item */ Any, ReactNode]] = js.undefined
     
     var itemType: js.UndefOr[String] = js.undefined
     
     var key: js.UndefOr[Key | Null] = js.undefined
     
+    /**
+      * Format definition of the keys to block.
+      * @type {KeyFilterType}
+      */
     var keyfilter: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KeyFilterType */ Any
       ] = js.undefined
@@ -421,6 +422,9 @@ object chipsChipsMod {
     
     var list: js.UndefOr[String] = js.undefined
     
+    /**
+      * Maximum number of entries allowed.
+      */
     var max: js.UndefOr[Double] = js.undefined
     
     var maxLength: js.UndefOr[Double] = js.undefined
@@ -431,13 +435,20 @@ object chipsChipsMod {
     
     var multiple: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Name of the input field.
+      */
     var name: js.UndefOr[String] = js.undefined
     
     var nonce: js.UndefOr[String] = js.undefined
     
     var onAbort: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
-    var onAdd: js.UndefOr[js.Function1[/* e */ ChipsAddParams, Unit]] = js.undefined
+    /**
+      * Callback to invoke when a chip is added. Return 'false' to prevent the item from being added.
+      * @param {ChipsAddEvent} event - Custom add event
+      */
+    var onAdd: js.UndefOr[js.Function1[/* event */ ChipsAddEvent, Unit]] = js.undefined
     
     var onAnimationEnd: js.UndefOr[AnimationEventHandler[HTMLDivElement]] = js.undefined
     
@@ -449,13 +460,21 @@ object chipsChipsMod {
     
     var onBeforeInput: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
     
+    /**
+      * Callback to invoke when the component loses focus.
+      * @param {React.FocusEvent<HTMLInputElement>} event - Browser event
+      */
     var onBlur: js.UndefOr[js.Function1[/* event */ FocusEvent[HTMLInputElement, Element], Unit]] = js.undefined
     
     var onCanPlay: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
     var onCanPlayThrough: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* e */ ChipsChangeParams, Unit]] = js.undefined
+    /**
+      * Callback to invoke when a chip is added or removed.
+      * @param {ChipsChangeEvent} event - Custom change event
+      */
+    var onChange: js.UndefOr[js.Function1[/* event */ ChipsChangeEvent, Unit]] = js.undefined
     
     var onClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
@@ -499,12 +518,20 @@ object chipsChipsMod {
     
     var onError: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
+    /**
+      * Callback to invoke when the component gets focus.
+      * @param {React.FocusEvent<HTMLInputElement>} event - Browser event
+      */
     var onFocus: js.UndefOr[js.Function1[/* event */ FocusEvent[HTMLInputElement, Element], Unit]] = js.undefined
     
     var onInput: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
     
     var onInvalid: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
     
+    /**
+      * Callback to invoke when the key pressed.
+      * @param {React.KeyboardEvent<HTMLInputElement>} event - Browser event
+      */
     var onKeyDown: js.UndefOr[js.Function1[/* event */ KeyboardEvent[HTMLInputElement], Unit]] = js.undefined
     
     var onKeyPress: js.UndefOr[KeyboardEventHandler[HTMLDivElement]] = js.undefined
@@ -561,7 +588,11 @@ object chipsChipsMod {
     
     var onRateChange: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
-    var onRemove: js.UndefOr[js.Function1[/* e */ ChipsRemoveParams, Unit]] = js.undefined
+    /**
+      * Callback to invoke when a chip is removed.
+      * @param {ChipsRemoveEvent} event - Custom remove event
+      */
+    var onRemove: js.UndefOr[js.Function1[/* event */ ChipsRemoveEvent, Unit]] = js.undefined
     
     var onReset: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
     
@@ -601,6 +632,9 @@ object chipsChipsMod {
     
     var pattern: js.UndefOr[String] = js.undefined
     
+    /**
+      * Advisory information to display on input.
+      */
     var placeholder: js.UndefOr[String] = js.undefined
     
     var prefix: js.UndefOr[String] = js.undefined
@@ -609,9 +643,24 @@ object chipsChipsMod {
     
     var radioGroup: js.UndefOr[String] = js.undefined
     
+    /**
+      * When present, it specifies that the element should be read-only.
+      * @defaultValue false
+      */
     var readOnly: js.UndefOr[Boolean] = js.undefined
     
-    var removable: js.UndefOr[ChipsRemovableType] = js.undefined
+    var rel: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Whether an item is removable.
+      * @defaultValue true
+      */
+    var removable: js.UndefOr[Boolean | (js.Function1[/* options */ ChipsRemovableOptions, Boolean])] = js.undefined
+    
+    /**
+      * Icon of the remove element.
+      */
+    var removeIcon: js.UndefOr[IconType[ChipsProps]] = js.undefined
     
     var required: js.UndefOr[Boolean] = js.undefined
     
@@ -619,10 +668,15 @@ object chipsChipsMod {
     
     var results: js.UndefOr[Double] = js.undefined
     
+    var rev: js.UndefOr[String] = js.undefined
+    
     var role: js.UndefOr[AriaRole] = js.undefined
     
     var security: js.UndefOr[String] = js.undefined
     
+    /**
+      * Separator char to add an item when pressed in addition to the enter key. Currently only possible value is ','.
+      */
     var separator: js.UndefOr[String] = js.undefined
     
     var size: js.UndefOr[Double] = js.undefined
@@ -645,8 +699,15 @@ object chipsChipsMod {
     
     var title: js.UndefOr[String] = js.undefined
     
+    /**
+      * Content of the tooltip.
+      */
     var tooltip: js.UndefOr[String] = js.undefined
     
+    /**
+      * Configuration of the tooltip, refer to the tooltip documentation for more information.
+      * @type {TooltipOptions}
+      */
     var tooltipOptions: js.UndefOr[TooltipOptions] = js.undefined
     
     var translate: js.UndefOr[yes | no] = js.undefined
@@ -657,6 +718,9 @@ object chipsChipsMod {
     
     var unselectable: js.UndefOr[on | off] = js.undefined
     
+    /**
+      * Value of the component.
+      */
     var value: js.UndefOr[js.Array[Any]] = js.undefined
     
     var vocab: js.UndefOr[String] = js.undefined
@@ -935,15 +999,19 @@ object chipsChipsMod {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
       inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
       inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
       inline def setContextMenuUndefined: Self = StObject.set(x, "contextMenu", js.undefined)
       
-      inline def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+      inline def setCrossOrigin(value: anonymous | `use-credentials` | _empty): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
       
       inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
       
@@ -983,7 +1051,9 @@ object chipsChipsMod {
       
       inline def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
       
-      inline def setFormAction(value: String): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+      inline def setFormAction(value: String | (js.Function1[/* formData */ FormData, Unit])): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+      
+      inline def setFormActionFunction1(value: /* formData */ FormData => Unit): Self = StObject.set(x, "formAction", js.Any.fromFunction1(value))
       
       inline def setFormActionUndefined: Self = StObject.set(x, "formAction", js.undefined)
       
@@ -1117,7 +1187,7 @@ object chipsChipsMod {
       
       inline def setOnAbortUndefined: Self = StObject.set(x, "onAbort", js.undefined)
       
-      inline def setOnAdd(value: /* e */ ChipsAddParams => Unit): Self = StObject.set(x, "onAdd", js.Any.fromFunction1(value))
+      inline def setOnAdd(value: /* event */ ChipsAddEvent => Unit): Self = StObject.set(x, "onAdd", js.Any.fromFunction1(value))
       
       inline def setOnAddUndefined: Self = StObject.set(x, "onAdd", js.undefined)
       
@@ -1137,7 +1207,7 @@ object chipsChipsMod {
       
       inline def setOnAuxClickUndefined: Self = StObject.set(x, "onAuxClick", js.undefined)
       
-      inline def setOnBeforeInput(value: FormEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onBeforeInput", js.Any.fromFunction1(value))
+      inline def setOnBeforeInput(value: typings.react.mod.FormEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onBeforeInput", js.Any.fromFunction1(value))
       
       inline def setOnBeforeInputUndefined: Self = StObject.set(x, "onBeforeInput", js.undefined)
       
@@ -1153,7 +1223,7 @@ object chipsChipsMod {
       
       inline def setOnCanPlayUndefined: Self = StObject.set(x, "onCanPlay", js.undefined)
       
-      inline def setOnChange(value: /* e */ ChipsChangeParams => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* event */ ChipsChangeEvent => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
@@ -1245,11 +1315,11 @@ object chipsChipsMod {
       
       inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
-      inline def setOnInput(value: FormEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onInput", js.Any.fromFunction1(value))
+      inline def setOnInput(value: typings.react.mod.FormEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onInput", js.Any.fromFunction1(value))
       
       inline def setOnInputUndefined: Self = StObject.set(x, "onInput", js.undefined)
       
-      inline def setOnInvalid(value: FormEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onInvalid", js.Any.fromFunction1(value))
+      inline def setOnInvalid(value: typings.react.mod.FormEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onInvalid", js.Any.fromFunction1(value))
       
       inline def setOnInvalidUndefined: Self = StObject.set(x, "onInvalid", js.undefined)
       
@@ -1365,11 +1435,11 @@ object chipsChipsMod {
       
       inline def setOnRateChangeUndefined: Self = StObject.set(x, "onRateChange", js.undefined)
       
-      inline def setOnRemove(value: /* e */ ChipsRemoveParams => Unit): Self = StObject.set(x, "onRemove", js.Any.fromFunction1(value))
+      inline def setOnRemove(value: /* event */ ChipsRemoveEvent => Unit): Self = StObject.set(x, "onRemove", js.Any.fromFunction1(value))
       
       inline def setOnRemoveUndefined: Self = StObject.set(x, "onRemove", js.undefined)
       
-      inline def setOnReset(value: FormEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
+      inline def setOnReset(value: typings.react.mod.FormEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
       
       inline def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
       
@@ -1397,7 +1467,7 @@ object chipsChipsMod {
       
       inline def setOnStalledUndefined: Self = StObject.set(x, "onStalled", js.undefined)
       
-      inline def setOnSubmit(value: FormEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onSubmit", js.Any.fromFunction1(value))
+      inline def setOnSubmit(value: typings.react.mod.FormEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onSubmit", js.Any.fromFunction1(value))
       
       inline def setOnSubmitUndefined: Self = StObject.set(x, "onSubmit", js.undefined)
       
@@ -1465,11 +1535,21 @@ object chipsChipsMod {
       
       inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
       
-      inline def setRemovable(value: ChipsRemovableType): Self = StObject.set(x, "removable", value.asInstanceOf[js.Any])
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      
+      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+      
+      inline def setRemovable(value: Boolean | (js.Function1[/* options */ ChipsRemovableOptions, Boolean])): Self = StObject.set(x, "removable", value.asInstanceOf[js.Any])
       
       inline def setRemovableFunction1(value: /* options */ ChipsRemovableOptions => Boolean): Self = StObject.set(x, "removable", js.Any.fromFunction1(value))
       
       inline def setRemovableUndefined: Self = StObject.set(x, "removable", js.undefined)
+      
+      inline def setRemoveIcon(value: IconType[ChipsProps]): Self = StObject.set(x, "removeIcon", value.asInstanceOf[js.Any])
+      
+      inline def setRemoveIconFunction1(value: /* options */ IconOptions[ChipsProps] => ReactNode): Self = StObject.set(x, "removeIcon", js.Any.fromFunction1(value))
+      
+      inline def setRemoveIconUndefined: Self = StObject.set(x, "removeIcon", js.undefined)
       
       inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
       
@@ -1482,6 +1562,10 @@ object chipsChipsMod {
       inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+      
+      inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+      
+      inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
       
       inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
@@ -1575,12 +1659,26 @@ object chipsChipsMod {
     }
   }
   
+  /**
+    * @group Others
+    * @see {@link ChipsProps.removable}
+    */
   trait ChipsRemovableOptions extends StObject {
     
+    /**
+      * Current index
+      */
     var index: Double
     
+    /**
+      * Props of Chips component
+      * @type {ChipsProps}
+      */
     var props: ChipsProps
     
+    /**
+      * Current value
+      */
     var value: Any
   }
   object ChipsRemovableOptions {
@@ -1601,7 +1699,35 @@ object chipsChipsMod {
     }
   }
   
-  type ChipsRemovableType = Boolean | (js.Function1[/* options */ ChipsRemovableOptions, Boolean])
-  
-  type ChipsRemoveParams = ChipsAddParams
+  /**
+    * Custom remove event
+    * @event
+    */
+  trait ChipsRemoveEvent extends StObject {
+    
+    /**
+      * Browser event
+      */
+    var originalEvent: SyntheticEvent[Element, Event]
+    
+    /**
+      * Removed item value
+      */
+    var value: Any
+  }
+  object ChipsRemoveEvent {
+    
+    inline def apply(originalEvent: SyntheticEvent[Element, Event], value: Any): ChipsRemoveEvent = {
+      val __obj = js.Dynamic.literal(originalEvent = originalEvent.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ChipsRemoveEvent]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChipsRemoveEvent] (val x: Self) extends AnyVal {
+      
+      inline def setOriginalEvent(value: SyntheticEvent[Element, Event]): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+      
+      inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    }
+  }
 }

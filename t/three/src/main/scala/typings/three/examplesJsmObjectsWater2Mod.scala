@@ -2,12 +2,13 @@ package typings.three
 
 import typings.three.srcConstantsMod.TextureEncoding
 import typings.three.srcCoreBufferGeometryMod.BufferGeometry
+import typings.three.srcCoreBufferGeometryMod.NormalBufferAttributes
 import typings.three.srcMaterialsMaterialMod.Material
+import typings.three.srcMathColorMod.ColorRepresentation
 import typings.three.srcThreeMod.Mesh
 import typings.three.srcThreeMod.ShaderMaterial
 import typings.three.srcThreeMod.Texture
 import typings.three.srcThreeMod.Vector2
-import typings.three.srcUtilsMod.ColorRepresentation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,8 +18,8 @@ object examplesJsmObjectsWater2Mod {
   @JSImport("three/examples/jsm/objects/Water2", "Water")
   @js.native
   open class Water protected ()
-    extends Mesh[BufferGeometry, Material | js.Array[Material]] {
-    def this(geometry: typings.three.srcThreeMod.BufferGeometry, options: Water2Options) = this()
+    extends Mesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]] {
+    def this(geometry: typings.three.srcThreeMod.BufferGeometry[NormalBufferAttributes], options: Water2Options) = this()
     
     @JSName("material")
     var material_Water: ShaderMaterial = js.native

@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * array will be used to populate all components.
   * @param {number} [y] - The y value. Defaults to 0.
   * @example
-  * var v = new pc.Vec2(1, 2);
+  * const v = new pc.Vec2(1, 2);
   */
 open class Vec2 ()
   extends typings.playcanvas.mod.Vec2 {

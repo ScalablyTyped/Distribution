@@ -21,6 +21,8 @@ type Arn = java.lang.String
 */
 type AuthenticationDecision = _AuthenticationDecision | java.lang.String
 
+type Boolean = scala.Boolean
+
 type ClientTokenString = java.lang.String
 
 type CustomerSpeakerId = java.lang.String
@@ -47,6 +49,8 @@ type DomainSummaries = js.Array[DomainSummary]
   - java.lang.String
 */
 type DuplicateRegistrationAction = _DuplicateRegistrationAction | java.lang.String
+
+type EnrollmentJobFraudDetectionConfigWatchlistIds = js.Array[WatchlistId]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.SKIP
@@ -93,6 +97,8 @@ type FraudsterRegistrationJobStatus = _FraudsterRegistrationJobStatus | java.lan
 
 type FraudsterRegistrationJobSummaries = js.Array[FraudsterRegistrationJobSummary]
 
+type FraudsterSummaries = js.Array[FraudsterSummary]
+
 type GeneratedFraudsterId = java.lang.String
 
 type GeneratedSpeakerId = java.lang.String
@@ -112,6 +118,10 @@ type MaxResultsForList = Double
 type MaxResultsForListDomainFe = Double
 
 type NextToken = java.lang.String
+
+type RegistrationConfigWatchlistIds = js.Array[WatchlistId]
+
+type ResponseWatchlistIds = js.Array[WatchlistId]
 
 type S3Uri = java.lang.String
 
@@ -177,6 +187,14 @@ type TagValue = java.lang.String
 type Timestamp = js.Date
 
 type UniqueIdLarge = java.lang.String
+
+type WatchlistDescription = java.lang.String
+
+type WatchlistId = java.lang.String
+
+type WatchlistName = java.lang.String
+
+type WatchlistSummaries = js.Array[WatchlistSummary]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2021-09-27`

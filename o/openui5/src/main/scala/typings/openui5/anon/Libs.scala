@@ -30,17 +30,17 @@ trait Libs extends StObject {
   
   /**
     * a list of additional preload bundles The framework will try to load these bundles asynchronously before
-    * requiring the Component, errors will be ignored. The named modules must only represent preload bundles.
-    * If they are normal modules, their dependencies will be loaded with the normal synchronous request mechanism
+    * requiring the component, errors will be ignored. The named modules must only represent preload bundles.
+    * If they are normal modules, their dependencies will be loaded with the standard module loading mechanism
     * and performance might degrade. Instead of specifying just the names of preload bundles, an object might
-    * be given that contains a mandatory `name` property and optionally, an `url` that will be used for a `registerModulePath`.
+    * be given that contains a mandatory `name` property and, optionally, a `url` that will be used for a `registerModulePath`.
     */
   var preloadBundles: js.UndefOr[js.Array[js.Object | String]] = js.undefined
   
   /**
-    * `Promise` or array of `Promise`s for which the Component instantiation should wait
+    * Whether only the preloads should be done, but not the loading of the Component controller class itself.
     */
-  var waitFor: js.UndefOr[js.Promise[Any] | js.Array[js.Promise[Any]]] = js.undefined
+  var preloadOnly: js.UndefOr[Boolean] = js.undefined
 }
 object Libs {
   
@@ -70,10 +70,8 @@ object Libs {
     
     inline def setPreloadBundlesVarargs(value: (js.Object | String)*): Self = StObject.set(x, "preloadBundles", js.Array(value*))
     
-    inline def setWaitFor(value: js.Promise[Any] | js.Array[js.Promise[Any]]): Self = StObject.set(x, "waitFor", value.asInstanceOf[js.Any])
+    inline def setPreloadOnly(value: Boolean): Self = StObject.set(x, "preloadOnly", value.asInstanceOf[js.Any])
     
-    inline def setWaitForUndefined: Self = StObject.set(x, "waitFor", js.undefined)
-    
-    inline def setWaitForVarargs(value: js.Promise[Any]*): Self = StObject.set(x, "waitFor", js.Array(value*))
+    inline def setPreloadOnlyUndefined: Self = StObject.set(x, "preloadOnly", js.undefined)
   }
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for cucumber__html-formatter
 
-Typings are for version 20.1.0
+Typings are for version 20.3.0
 
 ## Library description:
 HTML formatter for Cucumber

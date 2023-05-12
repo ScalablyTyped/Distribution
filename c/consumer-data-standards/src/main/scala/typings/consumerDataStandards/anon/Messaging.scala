@@ -1,0 +1,49 @@
+package typings.consumerDataStandards.anon
+
+import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait Messaging
+  extends StObject
+     with /* k */ StringDictionary[Any] {
+  
+  /**
+    * Summary of data balances
+    */
+  var data: js.UndefOr[PlanType] = js.undefined
+  
+  /**
+    * Summary of messaging. Required if messaging services is included in the product plan
+    */
+  var messaging: js.UndefOr[Sms] = js.undefined
+  
+  /**
+    * Summary of voice balances. Required if voice calls are included in product plan
+    */
+  var voice: js.UndefOr[DictkInternational] = js.undefined
+}
+object Messaging {
+  
+  inline def apply(): Messaging = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[Messaging]
+  }
+  
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Messaging] (val x: Self) extends AnyVal {
+    
+    inline def setData(value: PlanType): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    
+    inline def setMessaging(value: Sms): Self = StObject.set(x, "messaging", value.asInstanceOf[js.Any])
+    
+    inline def setMessagingUndefined: Self = StObject.set(x, "messaging", js.undefined)
+    
+    inline def setVoice(value: DictkInternational): Self = StObject.set(x, "voice", value.asInstanceOf[js.Any])
+    
+    inline def setVoiceUndefined: Self = StObject.set(x, "voice", js.undefined)
+  }
+}

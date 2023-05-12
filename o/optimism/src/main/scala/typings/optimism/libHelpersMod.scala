@@ -1,5 +1,6 @@
 package typings.optimism
 
+import typings.std.PropertyKey
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,9 +12,7 @@ object libHelpersMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def hasOwnProperty_(v: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasOwnProperty")(v.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  inline def hasOwnProperty_(v: js.Symbol): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasOwnProperty")(v.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  inline def hasOwnProperty_(v: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasOwnProperty")(v.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def hasOwnProperty_(v: PropertyKey): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasOwnProperty")(v.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def maybeUnsubscribe(entryOrDep: Unsubscribable): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("maybeUnsubscribe")(entryOrDep.asInstanceOf[js.Any]).asInstanceOf[Unit]
   

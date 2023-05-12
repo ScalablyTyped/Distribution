@@ -17,7 +17,7 @@ object mod {
     
     def getRandomValues[T /* <: js.typedarray.ArrayBufferView | Null */](array: T): T = js.native
     
-    def randomUUID(): String = js.native
+    def randomUUID(): /* template literal string: ${string}-${string}-${string}-${string}-${string} */ String = js.native
     
     var subtle: SubtleCrypto = js.native
   }

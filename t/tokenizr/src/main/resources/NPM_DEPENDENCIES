@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "tokenizr" : "1.6.7"
+      "tokenizr" : "1.6.9"
     }
   ],
   "test-dependencies" : [
     {
-      "tokenizr" : "1.6.7"
+      "tokenizr" : "1.6.9"
     }
   ],
   "compile-devDependencies" : [

@@ -1,24 +1,24 @@
 package typings.atlaskitTokens.distTypesTypesMod
 
-import typings.atlaskitTokens.anon.Ecl
+import typings.atlaskitTokens.anon.`025`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SpacingTokenSchema[BaseToken] extends StObject {
+trait SpacingTokenSchema extends StObject {
   
-  var spacing: Ecl[BaseToken]
+  var space: `025`
 }
 object SpacingTokenSchema {
   
-  inline def apply[BaseToken](spacing: Ecl[BaseToken]): SpacingTokenSchema[BaseToken] = {
-    val __obj = js.Dynamic.literal(spacing = spacing.asInstanceOf[js.Any])
-    __obj.asInstanceOf[SpacingTokenSchema[BaseToken]]
+  inline def apply(space: `025`): SpacingTokenSchema = {
+    val __obj = js.Dynamic.literal(space = space.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SpacingTokenSchema]
   }
   
   @scala.inline
-  implicit open class MutableBuilder[Self <: SpacingTokenSchema[?], BaseToken] (val x: Self & SpacingTokenSchema[BaseToken]) extends AnyVal {
+  implicit open class MutableBuilder[Self <: SpacingTokenSchema] (val x: Self) extends AnyVal {
     
-    inline def setSpacing(value: Ecl[BaseToken]): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
+    inline def setSpace(value: `025`): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
   }
 }

@@ -13,8 +13,8 @@ import typings.tensorflowTfjsBackendWebgl.distTextureManagerMod.TextureManager
 import typings.tensorflowTfjsCore.anon.Error
 import typings.tensorflowTfjsCore.distEngineMod.MemoryInfo
 import typings.tensorflowTfjsCore.distEngineMod.TimingInfo
-import typings.tensorflowTfjsCore.distKernelRegistryMod.DataId
-import typings.tensorflowTfjsCore.distKernelRegistryMod.TensorInfo
+import typings.tensorflowTfjsCore.distTensorInfoMod.DataId
+import typings.tensorflowTfjsCore.distTensorInfoMod.TensorInfo
 import typings.tensorflowTfjsCore.distTensorMod.Tensor
 import typings.tensorflowTfjsCore.distTensorMod.Tensor2D
 import typings.tensorflowTfjsCore.distTypesMod.BackendValues

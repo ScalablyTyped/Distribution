@@ -32,6 +32,8 @@ type BabylonFileParser = js.Function4[
 /* rootUrl */ String, 
 Unit]
 
+type BallAndSocketConstraint = PhysicsConstraint
+
 type BaseError = js.Error
 
 type CameraInputsMap[TCamera /* <: Camera */] = (/**
@@ -94,6 +96,8 @@ type DeviceSourceEvent[T /* <: DeviceType */] = IKeyboardEvent
 
 type DeviceSourceType = Distribute[DeviceType]
 
+type DistanceConstraint = PhysicsConstraint
+
 /** NOTE: Conditional type definitions are impossible to translate to Scala.
   * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
   * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
@@ -106,6 +110,15 @@ type Distribute[T] = DeviceSource[T]
 type EvaluateSubMeshStageAction = js.Function2[/* mesh */ AbstractMesh, /* subMesh */ SubMesh, Unit]
 
 type FloatArray = js.Array[Double] | js.typedarray.Float32Array
+
+type GetDepthInMetersType = js.Function2[/* x */ Double, /* y */ Double, Double]
+
+type HingeConstraint = PhysicsConstraint
+
+type IDecisionTree = /**
+  * textureFormat can be either UASTC or ETC1S
+  */
+org.scalablytyped.runtime.StringDictionary[INode]
 
 type IMotionControllerLayoutMap = /**
   * Layouts with handedness type as a key
@@ -132,6 +145,8 @@ type IndividualBabylonFileParser = js.Function3[/* parsedData */ Any, /* scene *
 
 type KeepAssets = AbstractScene
 
+type LockConstraint = PhysicsConstraint
+
 type MaterialPluginCreated = js.Object
 
 type MatrixConstructor[T /* <: Matrix */] = Instantiable0[T]
@@ -141,6 +156,16 @@ type MeshStageAction = js.Function2[/* mesh */ AbstractMesh, /* hardwareInstance
 type MotionControllerConstructor = js.Function2[/* xrInput */ XRInputSource, /* scene */ Scene, WebXRAbstractMotionController]
 
 type NativeData = js.typedarray.Uint32Array
+
+type NativeFramebuffer = js.typedarray.Uint32Array
+
+type NativeProgram = js.typedarray.Uint32Array
+
+type NativeTexture = js.typedarray.Uint32Array
+
+type NativeUniform = js.typedarray.Uint32Array
+
+type NativeVertexArrayObject = js.typedarray.Uint32Array
 
 type NodeConstructor = js.Function3[
 /* name */ String, 
@@ -157,6 +182,20 @@ type OcclusionMaterial = ShaderMaterial
 type OcclusionQuery = WebGLQuery | Double
 
 type PerfStrategyInitialization = js.Function1[/* scene */ Scene, IPerfViewerCollectionStrategy]
+
+type PhysicsShapeBox = PhysicsShape
+
+type PhysicsShapeCapsule = PhysicsShape
+
+type PhysicsShapeContainer = PhysicsShape
+
+type PhysicsShapeConvexHull = PhysicsShape
+
+type PhysicsShapeCylinder = PhysicsShape
+
+type PhysicsShapeMesh = PhysicsShape
+
+type PhysicsShapeSphere = PhysicsShape
 
 type PluginMaterialFactory = js.Function1[/* material */ Material, Nullable[MaterialPluginBase]]
 
@@ -183,6 +222,8 @@ type PreActiveMeshStageAction = js.Function1[/* mesh */ AbstractMesh, Unit]
   * @ignorenaming
   */
 type Primitive = js.UndefOr[Null | Boolean | String | Double | js.Function | Element]
+
+type PrismaticConstraint = PhysicsConstraint
 
 type QuaternionConstructor[T /* <: Quaternion */] = Instantiable1[/* args */ ConstructorParameters[TypeofQuaternionInstantiable], T]
 
@@ -219,9 +260,19 @@ type ShaderCustomProcessingFunction = js.Function2[/* shaderType */ String, /* c
 
 type SimpleStageAction = js.Function0[Unit]
 
+type SliderConstraint = PhysicsConstraint
+
 type TextureSize = Double | Layers
 
-type TrianglePickingPredicate = js.Function4[/* p0 */ Vector3, /* p1 */ Vector3, /* p2 */ Vector3, /* ray */ Ray, Boolean]
+type TrianglePickingPredicate = js.Function7[
+/* p0 */ Vector3, 
+/* p1 */ Vector3, 
+/* p2 */ Vector3, 
+/* ray */ Ray, 
+/* i0 */ Double, 
+/* i1 */ Double, 
+/* i2 */ Double, 
+Boolean]
 
 type Vector2Constructor[T /* <: Vector2 */] = Instantiable1[/* args */ ConstructorParameters[TypeofVector2Instantiable], T]
 

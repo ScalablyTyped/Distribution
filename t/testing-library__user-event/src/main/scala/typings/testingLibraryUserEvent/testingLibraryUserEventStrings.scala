@@ -57,6 +57,10 @@ object testingLibraryUserEventStrings {
   inline def abort: abort = "abort".asInstanceOf[abort]
   
   @js.native
+  sealed trait acronym extends StObject
+  inline def acronym: acronym = "acronym".asInstanceOf[acronym]
+  
+  @js.native
   sealed trait address
     extends StObject
        with tag
@@ -101,6 +105,18 @@ object testingLibraryUserEventStrings {
   @js.native
   sealed trait animationstart_ extends StObject
   inline def animationstart_ : animationstart_ = "animationstart".asInstanceOf[animationstart_]
+  
+  @js.native
+  sealed trait annotation extends StObject
+  inline def annotation: annotation = "annotation".asInstanceOf[annotation]
+  
+  @js.native
+  sealed trait `annotation-xml` extends StObject
+  inline def `annotation-xml`: `annotation-xml` = "annotation-xml".asInstanceOf[`annotation-xml`]
+  
+  @js.native
+  sealed trait applet extends StObject
+  inline def applet: applet = "applet".asInstanceOf[applet]
   
   @js.native
   sealed trait area
@@ -155,6 +171,10 @@ object testingLibraryUserEventStrings {
   inline def base: base = "base".asInstanceOf[base]
   
   @js.native
+  sealed trait basefont extends StObject
+  inline def basefont: basefont = "basefont".asInstanceOf[basefont]
+  
+  @js.native
   sealed trait bdi
     extends StObject
        with tag
@@ -173,6 +193,18 @@ object testingLibraryUserEventStrings {
   @js.native
   sealed trait beforeinput_ extends StObject
   inline def beforeinput_ : beforeinput_ = "beforeinput".asInstanceOf[beforeinput_]
+  
+  @js.native
+  sealed trait bgsound extends StObject
+  inline def bgsound: bgsound = "bgsound".asInstanceOf[bgsound]
+  
+  @js.native
+  sealed trait big extends StObject
+  inline def big: big = "big".asInstanceOf[big]
+  
+  @js.native
+  sealed trait blink extends StObject
+  inline def blink: blink = "blink".asInstanceOf[blink]
   
   @js.native
   sealed trait blockquote
@@ -233,6 +265,10 @@ object testingLibraryUserEventStrings {
     extends StObject
        with tag
   inline def caption: caption = "caption".asInstanceOf[caption]
+  
+  @js.native
+  sealed trait center extends StObject
+  inline def center: center = "center".asInstanceOf[center]
   
   @js.native
   sealed trait change extends StObject
@@ -387,6 +423,10 @@ object testingLibraryUserEventStrings {
     extends StObject
        with tag
   inline def dialog: dialog = "dialog".asInstanceOf[dialog]
+  
+  @js.native
+  sealed trait dir extends StObject
+  inline def dir: dir = "dir".asInstanceOf[dir]
   
   @js.native
   sealed trait div
@@ -649,6 +689,10 @@ object testingLibraryUserEventStrings {
   inline def focusout_ : focusout_ = "focusout".asInstanceOf[focusout_]
   
   @js.native
+  sealed trait font extends StObject
+  inline def font: font = "font".asInstanceOf[font]
+  
+  @js.native
   sealed trait footer
     extends StObject
        with tag
@@ -673,6 +717,14 @@ object testingLibraryUserEventStrings {
     extends StObject
        with _MouseButton
   inline def forward: forward = "forward".asInstanceOf[forward]
+  
+  @js.native
+  sealed trait frame extends StObject
+  inline def frame: frame = "frame".asInstanceOf[frame]
+  
+  @js.native
+  sealed trait frameset extends StObject
+  inline def frameset: frameset = "frameset".asInstanceOf[frameset]
   
   @js.native
   sealed trait fullscreenchange
@@ -765,6 +817,10 @@ object testingLibraryUserEventStrings {
   inline def html: html = "html".asInstanceOf[html]
   
   @js.native
+  sealed trait httpColonSlashSlashwwwDotw3DotorgSlash1998SlashMathSlashMathML extends StObject
+  inline def httpColonSlashSlashwwwDotw3DotorgSlash1998SlashMathSlashMathML: httpColonSlashSlashwwwDotw3DotorgSlash1998SlashMathSlashMathML = "http://www.w3.org/1998/Math/MathML".asInstanceOf[httpColonSlashSlashwwwDotw3DotorgSlash1998SlashMathSlashMathML]
+  
+  @js.native
   sealed trait httpColonSlashSlashwwwDotw3DotorgSlash1999Slashxhtml extends StObject
   inline def httpColonSlashSlashwwwDotw3DotorgSlash1999Slashxhtml: httpColonSlashSlashwwwDotw3DotorgSlash1999Slashxhtml = "http://www.w3.org/1999/xhtml".asInstanceOf[httpColonSlashSlashwwwDotw3DotorgSlash1999Slashxhtml]
   
@@ -811,6 +867,10 @@ object testingLibraryUserEventStrings {
   inline def invalid: invalid = "invalid".asInstanceOf[invalid]
   
   @js.native
+  sealed trait isindex extends StObject
+  inline def isindex: isindex = "isindex".asInstanceOf[isindex]
+  
+  @js.native
   sealed trait kbd
     extends StObject
        with tag
@@ -837,6 +897,10 @@ object testingLibraryUserEventStrings {
   @js.native
   sealed trait keydown_ extends StObject
   inline def keydown_ : keydown_ = "keydown".asInstanceOf[keydown_]
+  
+  @js.native
+  sealed trait keygen extends StObject
+  inline def keygen: keygen = "keygen".asInstanceOf[keygen]
   
   @js.native
   sealed trait keypress_ extends StObject
@@ -879,6 +943,10 @@ object testingLibraryUserEventStrings {
   inline def link: link = "link".asInstanceOf[link]
   
   @js.native
+  sealed trait listing extends StObject
+  inline def listing: listing = "listing".asInstanceOf[listing]
+  
+  @js.native
   sealed trait load extends StObject
   inline def load: load = "load".asInstanceOf[load]
   
@@ -915,6 +983,10 @@ object testingLibraryUserEventStrings {
   inline def lostpointercapture_ : lostpointercapture_ = "lostpointercapture".asInstanceOf[lostpointercapture_]
   
   @js.native
+  sealed trait maction extends StObject
+  inline def maction: maction = "maction".asInstanceOf[maction]
+  
+  @js.native
   sealed trait main
     extends StObject
        with tag
@@ -937,14 +1009,30 @@ object testingLibraryUserEventStrings {
   inline def marker: marker = "marker".asInstanceOf[marker]
   
   @js.native
+  sealed trait marquee extends StObject
+  inline def marquee: marquee = "marquee".asInstanceOf[marquee]
+  
+  @js.native
   sealed trait mask extends StObject
   inline def mask: mask = "mask".asInstanceOf[mask]
+  
+  @js.native
+  sealed trait math extends StObject
+  inline def math: math = "math".asInstanceOf[math]
   
   @js.native
   sealed trait menu
     extends StObject
        with tag
   inline def menu: menu = "menu".asInstanceOf[menu]
+  
+  @js.native
+  sealed trait menuitem extends StObject
+  inline def menuitem: menuitem = "menuitem".asInstanceOf[menuitem]
+  
+  @js.native
+  sealed trait merror extends StObject
+  inline def merror: merror = "merror".asInstanceOf[merror]
   
   @js.native
   sealed trait meta
@@ -961,6 +1049,26 @@ object testingLibraryUserEventStrings {
     extends StObject
        with tag
   inline def meter: meter = "meter".asInstanceOf[meter]
+  
+  @js.native
+  sealed trait mfrac extends StObject
+  inline def mfrac: mfrac = "mfrac".asInstanceOf[mfrac]
+  
+  @js.native
+  sealed trait mi extends StObject
+  inline def mi: mi = "mi".asInstanceOf[mi]
+  
+  @js.native
+  sealed trait mmultiscripts extends StObject
+  inline def mmultiscripts: mmultiscripts = "mmultiscripts".asInstanceOf[mmultiscripts]
+  
+  @js.native
+  sealed trait mn extends StObject
+  inline def mn: mn = "mn".asInstanceOf[mn]
+  
+  @js.native
+  sealed trait mo extends StObject
+  inline def mo: mo = "mo".asInstanceOf[mo]
   
   @js.native
   sealed trait modify extends StObject
@@ -1027,14 +1135,110 @@ object testingLibraryUserEventStrings {
   inline def mouseup_ : mouseup_ = "mouseup".asInstanceOf[mouseup_]
   
   @js.native
+  sealed trait mover extends StObject
+  inline def mover: mover = "mover".asInstanceOf[mover]
+  
+  @js.native
+  sealed trait mpadded extends StObject
+  inline def mpadded: mpadded = "mpadded".asInstanceOf[mpadded]
+  
+  @js.native
   sealed trait mpath extends StObject
   inline def mpath: mpath = "mpath".asInstanceOf[mpath]
+  
+  @js.native
+  sealed trait mphantom extends StObject
+  inline def mphantom: mphantom = "mphantom".asInstanceOf[mphantom]
+  
+  @js.native
+  sealed trait mprescripts extends StObject
+  inline def mprescripts: mprescripts = "mprescripts".asInstanceOf[mprescripts]
+  
+  @js.native
+  sealed trait mroot extends StObject
+  inline def mroot: mroot = "mroot".asInstanceOf[mroot]
+  
+  @js.native
+  sealed trait mrow extends StObject
+  inline def mrow: mrow = "mrow".asInstanceOf[mrow]
+  
+  @js.native
+  sealed trait ms extends StObject
+  inline def ms: ms = "ms".asInstanceOf[ms]
+  
+  @js.native
+  sealed trait mspace extends StObject
+  inline def mspace: mspace = "mspace".asInstanceOf[mspace]
+  
+  @js.native
+  sealed trait msqrt extends StObject
+  inline def msqrt: msqrt = "msqrt".asInstanceOf[msqrt]
+  
+  @js.native
+  sealed trait mstyle extends StObject
+  inline def mstyle: mstyle = "mstyle".asInstanceOf[mstyle]
+  
+  @js.native
+  sealed trait msub extends StObject
+  inline def msub: msub = "msub".asInstanceOf[msub]
+  
+  @js.native
+  sealed trait msubsup extends StObject
+  inline def msubsup: msubsup = "msubsup".asInstanceOf[msubsup]
+  
+  @js.native
+  sealed trait msup extends StObject
+  inline def msup: msup = "msup".asInstanceOf[msup]
+  
+  @js.native
+  sealed trait mtable extends StObject
+  inline def mtable: mtable = "mtable".asInstanceOf[mtable]
+  
+  @js.native
+  sealed trait mtd extends StObject
+  inline def mtd: mtd = "mtd".asInstanceOf[mtd]
+  
+  @js.native
+  sealed trait mtext extends StObject
+  inline def mtext: mtext = "mtext".asInstanceOf[mtext]
+  
+  @js.native
+  sealed trait mtr extends StObject
+  inline def mtr: mtr = "mtr".asInstanceOf[mtr]
+  
+  @js.native
+  sealed trait multicol extends StObject
+  inline def multicol: multicol = "multicol".asInstanceOf[multicol]
+  
+  @js.native
+  sealed trait munder extends StObject
+  inline def munder: munder = "munder".asInstanceOf[munder]
+  
+  @js.native
+  sealed trait munderover extends StObject
+  inline def munderover: munderover = "munderover".asInstanceOf[munderover]
   
   @js.native
   sealed trait nav
     extends StObject
        with tag
   inline def nav: nav = "nav".asInstanceOf[nav]
+  
+  @js.native
+  sealed trait nextid extends StObject
+  inline def nextid: nextid = "nextid".asInstanceOf[nextid]
+  
+  @js.native
+  sealed trait nobr extends StObject
+  inline def nobr: nobr = "nobr".asInstanceOf[nobr]
+  
+  @js.native
+  sealed trait noembed extends StObject
+  inline def noembed: noembed = "noembed".asInstanceOf[noembed]
+  
+  @js.native
+  sealed trait noframes extends StObject
+  inline def noframes: noframes = "noframes".asInstanceOf[noframes]
   
   @js.native
   sealed trait noscript
@@ -1079,6 +1283,10 @@ object testingLibraryUserEventStrings {
   inline def p: p = "p".asInstanceOf[p]
   
   @js.native
+  sealed trait param extends StObject
+  inline def param: param = "param".asInstanceOf[param]
+  
+  @js.native
   sealed trait paste extends StObject
   inline def paste: paste = "paste".asInstanceOf[paste]
   
@@ -1103,6 +1311,10 @@ object testingLibraryUserEventStrings {
     extends StObject
        with tag
   inline def picture: picture = "picture".asInstanceOf[picture]
+  
+  @js.native
+  sealed trait plaintext extends StObject
+  inline def plaintext: plaintext = "plaintext".asInstanceOf[plaintext]
   
   @js.native
   sealed trait play extends StObject
@@ -1247,6 +1459,10 @@ object testingLibraryUserEventStrings {
   inline def ratechange_ : ratechange_ = "ratechange".asInstanceOf[ratechange_]
   
   @js.native
+  sealed trait rb extends StObject
+  inline def rb: rb = "rb".asInstanceOf[rb]
+  
+  @js.native
   sealed trait readystatechange
     extends StObject
        with EventType
@@ -1279,6 +1495,10 @@ object testingLibraryUserEventStrings {
     extends StObject
        with tag
   inline def rt: rt = "rt".asInstanceOf[rt]
+  
+  @js.native
+  sealed trait rtc extends StObject
+  inline def rtc: rtc = "rtc".asInstanceOf[rtc]
   
   @js.native
   sealed trait ruby
@@ -1347,6 +1567,10 @@ object testingLibraryUserEventStrings {
   inline def selectstart: selectstart = "selectstart".asInstanceOf[selectstart]
   
   @js.native
+  sealed trait semantics extends StObject
+  inline def semantics: semantics = "semantics".asInstanceOf[semantics]
+  
+  @js.native
   sealed trait set extends StObject
   inline def set: set = "set".asInstanceOf[set]
   
@@ -1373,6 +1597,10 @@ object testingLibraryUserEventStrings {
   inline def source: source = "source".asInstanceOf[source]
   
   @js.native
+  sealed trait spacer extends StObject
+  inline def spacer: spacer = "spacer".asInstanceOf[spacer]
+  
+  @js.native
   sealed trait span
     extends StObject
        with tag
@@ -1385,6 +1613,10 @@ object testingLibraryUserEventStrings {
   @js.native
   sealed trait stop extends StObject
   inline def stop: stop = "stop".asInstanceOf[stop]
+  
+  @js.native
+  sealed trait strike extends StObject
+  inline def strike: strike = "strike".asInstanceOf[strike]
   
   @js.native
   sealed trait strong
@@ -1605,6 +1837,10 @@ object testingLibraryUserEventStrings {
   inline def tspan: tspan = "tspan".asInstanceOf[tspan]
   
   @js.native
+  sealed trait tt extends StObject
+  inline def tt: tt = "tt".asInstanceOf[tt]
+  
+  @js.native
   sealed trait u
     extends StObject
        with tag
@@ -1679,4 +1915,8 @@ object testingLibraryUserEventStrings {
   @js.native
   sealed trait wheel extends StObject
   inline def wheel: wheel = "wheel".asInstanceOf[wheel]
+  
+  @js.native
+  sealed trait xmp extends StObject
+  inline def xmp: xmp = "xmp".asInstanceOf[xmp]
 }

@@ -10,27 +10,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** A Stackframe contains the source location. */
 trait StackFrame extends StObject {
   
-  /** Indicates whether this frame can be restarted with the `restart` request. Clients should only use this if the debug adapter supports the `restart` request and the corresponding capability `supportsRestartRequest` is true. */
+  /** Indicates whether this frame can be restarted with the `restart` request. Clients should only use this if the debug adapter supports the `restart` request and the corresponding capability `supportsRestartRequest` is true. If a debug adapter has this capability, then `canRestart` defaults to `true` if the property is absent. */
   var canRestart: js.UndefOr[Boolean] = js.undefined
   
-  /** The column within the line. If source attribute is missing or doesn't exist, column is 0 and should be ignored by the client. */
+  /** Start position of the range covered by the stack frame. It is measured in UTF-16 code units and the client capability `columnsStartAt1` determines whether it is 0- or 1-based. If attribute `source` is missing or doesn't exist, `column` is 0 and should be ignored by the client. */
   var column: Double
   
-  /** The end column of the range covered by the stack frame. */
+  /** End position of the range covered by the stack frame. It is measured in UTF-16 code units and the client capability `columnsStartAt1` determines whether it is 0- or 1-based. */
   var endColumn: js.UndefOr[Double] = js.undefined
   
   /** The end line of the range covered by the stack frame. */
   var endLine: js.UndefOr[Double] = js.undefined
   
   /** An identifier for the stack frame. It must be unique across all threads.
-  			This id can be used to retrieve the scopes of the frame with the `scopes` request or to restart the execution of a stackframe.
+  			This id can be used to retrieve the scopes of the frame with the `scopes` request or to restart the execution of a stack frame.
   		*/
   var id: Double
   
   /** A memory reference for the current instruction pointer in this frame. */
   var instructionPointerReference: js.UndefOr[String] = js.undefined
   
-  /** The line within the source of the frame. If the source attribute is missing or doesn't exist, line is 0 and should be ignored by the client. */
+  /** The line within the source of the frame. If the source attribute is missing or doesn't exist, `line` is 0 and should be ignored by the client. */
   var line: Double
   
   /** The module associated with this frame, if any. */

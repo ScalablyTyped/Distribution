@@ -254,6 +254,14 @@ object Utils {
     inline def FindClosestInSorted(value: Double, array: js.Array[Any], key: String): Double | Any = (^.asInstanceOf[js.Dynamic].applyDynamic("FindClosestInSorted")(value.asInstanceOf[js.Any], array.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Double | Any]
     
     /**
+      * Takes an array and flattens it, returning a shallow-copy flattened array.
+      * @param array The array to flatten.
+      * @param output An array to hold the results in.
+      */
+    inline def Flatten(array: js.Array[Any]): js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("Flatten")(array.asInstanceOf[js.Any]).asInstanceOf[js.Array[Any]]
+    inline def Flatten(array: js.Array[Any], output: js.Array[Any]): js.Array[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("Flatten")(array.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[js.Array[Any]]
+    
+    /**
       * Returns all elements in the array.
       * 
       * You can optionally specify a matching criteria using the `property` and `value` arguments.
@@ -339,7 +347,7 @@ object Utils {
         * Checks if an array can be used as a matrix.
         * 
         * A matrix is a two-dimensional array (array of arrays), where all sub-arrays (rows)
-        * have the same length. There must be at least two rows. This is an example matrix:
+        * have the same length. This is an example matrix:
         * 
         * ```
         * [
@@ -933,6 +941,16 @@ object Utils {
     */
   inline def NOOP(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("NOOP")().asInstanceOf[Unit]
   
+  /**
+    * A NULL OP callback function.
+    * 
+    * This function always returns `null`.
+    * 
+    * Used internally by Phaser when it's more expensive to determine if a callback exists
+    * than it is to just invoke an empty function.
+    */
+  inline def NULL(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("NULL")().asInstanceOf[Unit]
+  
   object Objects {
     
     @JSImport("phaser", "Utils.Objects")
@@ -1012,12 +1030,37 @@ object Utils {
     inline def GetMinMaxValue(source: js.Object, key: String, min: Double, max: Double, defaultValue: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("GetMinMaxValue")(source.asInstanceOf[js.Any], key.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
-      * Retrieves a value from an object.
-      * @param source The object to retrieve the value from.
+      * Retrieves a value from an object, or an alternative object, falling to a back-up default value if not found.
+      * 
+      * The key is a string, which can be split based on the use of the period character.
+      * 
+      * For example:
+      * 
+      * ```javascript
+      * const source = {
+      *   lives: 3,
+      *   render: {
+      *     screen: {
+      *       width: 1024
+      *     }
+      *   }
+      * }
+      * 
+      * const lives = GetValue(source, 'lives', 1);
+      * const width = GetValue(source, 'render.screen.width', 800);
+      * const height = GetValue(source, 'render.screen.height', 600);
+      * ```
+      * 
+      * In the code above, `lives` will be 3 because it's defined at the top level of `source`.
+      * The `width` value will be 1024 because it can be found inside the `render.screen` object.
+      * The `height` value will be 600, the default value, because it is missing from the `render.screen` object.
+      * @param source The primary object to try to retrieve the value from. If not found in here, `altSource` is checked.
       * @param key The name of the property to retrieve from the object. If a property is nested, the names of its preceding properties should be separated by a dot (`.`) - `banner.hideBanner` would return the value of the `hideBanner` property from the object stored in the `banner` property of the `source` object.
       * @param defaultValue The value to return if the `key` isn't found in the `source` object.
+      * @param altSource An alternative object to retrieve the value from. If the property exists in `source` then `altSource` will not be used.
       */
     inline def GetValue(source: js.Object, key: String, defaultValue: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("GetValue")(source.asInstanceOf[js.Any], key.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[Any]
+    inline def GetValue(source: js.Object, key: String, defaultValue: Any, altSource: js.Object): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("GetValue")(source.asInstanceOf[js.Any], key.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], altSource.asInstanceOf[js.Any])).asInstanceOf[Any]
     
     /**
       * Verifies that an object contains all requested keys

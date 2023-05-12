@@ -1,5 +1,7 @@
 package typings.ink
 
+import typings.chalk.sourceVendorAnsiStylesMod.ForegroundColorName
+import typings.cliBoxes.mod.BoxStyle
 import typings.ink.inkStrings.`column-reverse`
 import typings.ink.inkStrings.`flex-end`
 import typings.ink.inkStrings.`flex-start`
@@ -9,6 +11,7 @@ import typings.ink.inkStrings.`space-between`
 import typings.ink.inkStrings.`truncate-end`
 import typings.ink.inkStrings.`truncate-middle`
 import typings.ink.inkStrings.`truncate-start`
+import typings.ink.inkStrings.`wrap-reverse`
 import typings.ink.inkStrings.absolute
 import typings.ink.inkStrings.arrow
 import typings.ink.inkStrings.auto
@@ -20,8 +23,10 @@ import typings.ink.inkStrings.double
 import typings.ink.inkStrings.doubleSingle
 import typings.ink.inkStrings.end
 import typings.ink.inkStrings.flex
+import typings.ink.inkStrings.hidden
 import typings.ink.inkStrings.middle
 import typings.ink.inkStrings.none
+import typings.ink.inkStrings.nowrap
 import typings.ink.inkStrings.relative
 import typings.ink.inkStrings.round
 import typings.ink.inkStrings.row
@@ -29,9 +34,10 @@ import typings.ink.inkStrings.single
 import typings.ink.inkStrings.singleDouble
 import typings.ink.inkStrings.stretch
 import typings.ink.inkStrings.truncate
+import typings.ink.inkStrings.visible
 import typings.ink.inkStrings.wrap
 import typings.typeFest.sourceLiteralUnionMod.LiteralUnion
-import typings.yogaLayout.mod.YogaNode
+import typings.yogaWasmWeb.distWrapAsmMod.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,8 +48,8 @@ object buildStylesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(node: YogaNode): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def default(node: YogaNode, style: Styles): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any], style.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default(node: Node): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def default(node: Node, style: Styles): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any], style.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait Styles extends StObject {
     
@@ -60,21 +66,75 @@ object buildStylesMod {
     val alignSelf: js.UndefOr[`flex-start` | center | `flex-end` | auto] = js.undefined
     
     /**
-      * Change border color.
-      * Accepts the same values as `color` in <Text> component.
+      * Determines whether bottom border is visible.
+      *
+      * @default true
       */
-    val borderColor: js.UndefOr[
-        LiteralUnion[
-          /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ForegroundColor */ Any, 
-          String
-        ]
-      ] = js.undefined
+    val borderBottom: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Change bottom border color.
+      * Accepts the same values as `color` in `Text` component.
+      */
+    val borderBottomColor: js.UndefOr[LiteralUnion[ForegroundColorName, String]] = js.undefined
+    
+    /**
+      * Change border color.
+      * Shorthand for setting `borderTopColor`, `borderRightColor`, `borderBottomColor` and `borderLeftColor`.
+      */
+    val borderColor: js.UndefOr[LiteralUnion[ForegroundColorName, String]] = js.undefined
+    
+    /**
+      * Determines whether left border is visible.
+      *
+      * @default true
+      */
+    val borderLeft: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Change left border color.
+      * Accepts the same values as `color` in `Text` component.
+      */
+    val borderLeftColor: js.UndefOr[LiteralUnion[ForegroundColorName, String]] = js.undefined
+    
+    /**
+      * Determines whether right border is visible.
+      *
+      * @default true
+      */
+    val borderRight: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Change right border color.
+      * Accepts the same values as `color` in `Text` component.
+      */
+    val borderRightColor: js.UndefOr[LiteralUnion[ForegroundColorName, String]] = js.undefined
     
     /**
       * Add a border with a specified style.
       * If `borderStyle` is `undefined` (which it is by default), no border will be added.
       */
-    val borderStyle: js.UndefOr[single | double | round | bold | singleDouble | doubleSingle | classic | arrow] = js.undefined
+    val borderStyle: js.UndefOr[
+        single | double | round | bold | singleDouble | doubleSingle | classic | arrow | BoxStyle
+      ] = js.undefined
+    
+    /**
+      * Determines whether top border is visible.
+      *
+      * @default true
+      */
+    val borderTop: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Change top border color.
+      * Accepts the same values as `color` in `Text` component.
+      */
+    val borderTopColor: js.UndefOr[LiteralUnion[ForegroundColorName, String]] = js.undefined
+    
+    /**
+      * Size of the gap between an element's columns.
+      */
+    val columnGap: js.UndefOr[Double] = js.undefined
     
     /**
       * Set this property to `none` to hide the element.
@@ -106,6 +166,17 @@ object buildStylesMod {
     val flexShrink: js.UndefOr[Double] = js.undefined
     
     /**
+      * It defines whether the flex items are forced in a single line or can be flowed into multiple lines. If set to multiple lines, it also defines the cross-axis which determines the direction new lines are stacked in.
+      * See [flex-wrap](https://css-tricks.com/almanac/properties/f/flex-wrap/).
+      */
+    val flexWrap: js.UndefOr[nowrap | wrap | `wrap-reverse`] = js.undefined
+    
+    /**
+      * Size of the gap between an element's columns and rows. Shorthand for `columnGap` and `rowGap`.
+      */
+    val gap: js.UndefOr[Double] = js.undefined
+    
+    /**
       * Height of the element in lines (rows).
       * You can also set it in percent, which will calculate the height based on the height of parent element.
       */
@@ -116,6 +187,11 @@ object buildStylesMod {
       * See [justify-content](https://css-tricks.com/almanac/properties/j/justify-content/).
       */
     val justifyContent: js.UndefOr[`flex-start` | `flex-end` | `space-between` | `space-around` | center] = js.undefined
+    
+    /**
+      * Margin on all sides. Equivalent to setting `marginTop`, `marginBottom`, `marginLeft` and `marginRight`.
+      */
+    val margin: js.UndefOr[Double] = js.undefined
     
     /**
       * Bottom margin.
@@ -138,6 +214,16 @@ object buildStylesMod {
     val marginTop: js.UndefOr[Double] = js.undefined
     
     /**
+      * Horizontal margin. Equivalent to setting `marginLeft` and `marginRight`.
+      */
+    val marginX: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * Vertical margin. Equivalent to setting `marginTop` and `marginBottom`.
+      */
+    val marginY: js.UndefOr[Double] = js.undefined
+    
+    /**
       * Sets a minimum height of the element.
       */
     val minHeight: js.UndefOr[Double | String] = js.undefined
@@ -146,6 +232,32 @@ object buildStylesMod {
       * Sets a minimum width of the element.
       */
     val minWidth: js.UndefOr[Double | String] = js.undefined
+    
+    /**
+      * Behavior for an element's overflow in both directions.
+      *
+      * @default 'visible'
+      */
+    val overflow: js.UndefOr[visible | hidden] = js.undefined
+    
+    /**
+      * Behavior for an element's overflow in horizontal direction.
+      *
+      * @default 'visible'
+      */
+    val overflowX: js.UndefOr[visible | hidden] = js.undefined
+    
+    /**
+      * Behavior for an element's overflow in vertical direction.
+      *
+      * @default 'visible'
+      */
+    val overflowY: js.UndefOr[visible | hidden] = js.undefined
+    
+    /**
+      * Padding on all sides. Equivalent to setting `paddingTop`, `paddingBottom`, `paddingLeft` and `paddingRight`.
+      */
+    val padding: js.UndefOr[Double] = js.undefined
     
     /**
       * Bottom padding.
@@ -167,7 +279,22 @@ object buildStylesMod {
       */
     val paddingTop: js.UndefOr[Double] = js.undefined
     
+    /**
+      * Horizontal padding. Equivalent to setting `paddingLeft` and `paddingRight`.
+      */
+    val paddingX: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * Vertical padding. Equivalent to setting `paddingTop` and `paddingBottom`.
+      */
+    val paddingY: js.UndefOr[Double] = js.undefined
+    
     val position: js.UndefOr[absolute | relative] = js.undefined
+    
+    /**
+      * Size of the gap between element's rows.
+      */
+    val rowGap: js.UndefOr[Double] = js.undefined
     
     val textWrap: js.UndefOr[
         wrap | end | middle | `truncate-end` | truncate | `truncate-middle` | `truncate-start`
@@ -197,18 +324,49 @@ object buildStylesMod {
       
       inline def setAlignSelfUndefined: Self = StObject.set(x, "alignSelf", js.undefined)
       
-      inline def setBorderColor(
-        value: LiteralUnion[
-              /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ForegroundColor */ Any, 
-              String
-            ]
-      ): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
+      inline def setBorderBottom(value: Boolean): Self = StObject.set(x, "borderBottom", value.asInstanceOf[js.Any])
+      
+      inline def setBorderBottomColor(value: LiteralUnion[ForegroundColorName, String]): Self = StObject.set(x, "borderBottomColor", value.asInstanceOf[js.Any])
+      
+      inline def setBorderBottomColorUndefined: Self = StObject.set(x, "borderBottomColor", js.undefined)
+      
+      inline def setBorderBottomUndefined: Self = StObject.set(x, "borderBottom", js.undefined)
+      
+      inline def setBorderColor(value: LiteralUnion[ForegroundColorName, String]): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
       
       inline def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
       
-      inline def setBorderStyle(value: single | double | round | bold | singleDouble | doubleSingle | classic | arrow): Self = StObject.set(x, "borderStyle", value.asInstanceOf[js.Any])
+      inline def setBorderLeft(value: Boolean): Self = StObject.set(x, "borderLeft", value.asInstanceOf[js.Any])
+      
+      inline def setBorderLeftColor(value: LiteralUnion[ForegroundColorName, String]): Self = StObject.set(x, "borderLeftColor", value.asInstanceOf[js.Any])
+      
+      inline def setBorderLeftColorUndefined: Self = StObject.set(x, "borderLeftColor", js.undefined)
+      
+      inline def setBorderLeftUndefined: Self = StObject.set(x, "borderLeft", js.undefined)
+      
+      inline def setBorderRight(value: Boolean): Self = StObject.set(x, "borderRight", value.asInstanceOf[js.Any])
+      
+      inline def setBorderRightColor(value: LiteralUnion[ForegroundColorName, String]): Self = StObject.set(x, "borderRightColor", value.asInstanceOf[js.Any])
+      
+      inline def setBorderRightColorUndefined: Self = StObject.set(x, "borderRightColor", js.undefined)
+      
+      inline def setBorderRightUndefined: Self = StObject.set(x, "borderRight", js.undefined)
+      
+      inline def setBorderStyle(value: single | double | round | bold | singleDouble | doubleSingle | classic | arrow | BoxStyle): Self = StObject.set(x, "borderStyle", value.asInstanceOf[js.Any])
       
       inline def setBorderStyleUndefined: Self = StObject.set(x, "borderStyle", js.undefined)
+      
+      inline def setBorderTop(value: Boolean): Self = StObject.set(x, "borderTop", value.asInstanceOf[js.Any])
+      
+      inline def setBorderTopColor(value: LiteralUnion[ForegroundColorName, String]): Self = StObject.set(x, "borderTopColor", value.asInstanceOf[js.Any])
+      
+      inline def setBorderTopColorUndefined: Self = StObject.set(x, "borderTopColor", js.undefined)
+      
+      inline def setBorderTopUndefined: Self = StObject.set(x, "borderTop", js.undefined)
+      
+      inline def setColumnGap(value: Double): Self = StObject.set(x, "columnGap", value.asInstanceOf[js.Any])
+      
+      inline def setColumnGapUndefined: Self = StObject.set(x, "columnGap", js.undefined)
       
       inline def setDisplay(value: flex | none): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
       
@@ -230,6 +388,14 @@ object buildStylesMod {
       
       inline def setFlexShrinkUndefined: Self = StObject.set(x, "flexShrink", js.undefined)
       
+      inline def setFlexWrap(value: nowrap | wrap | `wrap-reverse`): Self = StObject.set(x, "flexWrap", value.asInstanceOf[js.Any])
+      
+      inline def setFlexWrapUndefined: Self = StObject.set(x, "flexWrap", js.undefined)
+      
+      inline def setGap(value: Double): Self = StObject.set(x, "gap", value.asInstanceOf[js.Any])
+      
+      inline def setGapUndefined: Self = StObject.set(x, "gap", js.undefined)
+      
       inline def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
       inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
@@ -237,6 +403,8 @@ object buildStylesMod {
       inline def setJustifyContent(value: `flex-start` | `flex-end` | `space-between` | `space-around` | center): Self = StObject.set(x, "justifyContent", value.asInstanceOf[js.Any])
       
       inline def setJustifyContentUndefined: Self = StObject.set(x, "justifyContent", js.undefined)
+      
+      inline def setMargin(value: Double): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
       
       inline def setMarginBottom(value: Double): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
       
@@ -254,6 +422,16 @@ object buildStylesMod {
       
       inline def setMarginTopUndefined: Self = StObject.set(x, "marginTop", js.undefined)
       
+      inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
+      
+      inline def setMarginX(value: Double): Self = StObject.set(x, "marginX", value.asInstanceOf[js.Any])
+      
+      inline def setMarginXUndefined: Self = StObject.set(x, "marginX", js.undefined)
+      
+      inline def setMarginY(value: Double): Self = StObject.set(x, "marginY", value.asInstanceOf[js.Any])
+      
+      inline def setMarginYUndefined: Self = StObject.set(x, "marginY", js.undefined)
+      
       inline def setMinHeight(value: Double | String): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
       
       inline def setMinHeightUndefined: Self = StObject.set(x, "minHeight", js.undefined)
@@ -261,6 +439,20 @@ object buildStylesMod {
       inline def setMinWidth(value: Double | String): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
       
       inline def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
+      
+      inline def setOverflow(value: visible | hidden): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
+      
+      inline def setOverflowUndefined: Self = StObject.set(x, "overflow", js.undefined)
+      
+      inline def setOverflowX(value: visible | hidden): Self = StObject.set(x, "overflowX", value.asInstanceOf[js.Any])
+      
+      inline def setOverflowXUndefined: Self = StObject.set(x, "overflowX", js.undefined)
+      
+      inline def setOverflowY(value: visible | hidden): Self = StObject.set(x, "overflowY", value.asInstanceOf[js.Any])
+      
+      inline def setOverflowYUndefined: Self = StObject.set(x, "overflowY", js.undefined)
+      
+      inline def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
       
       inline def setPaddingBottom(value: Double): Self = StObject.set(x, "paddingBottom", value.asInstanceOf[js.Any])
       
@@ -278,9 +470,23 @@ object buildStylesMod {
       
       inline def setPaddingTopUndefined: Self = StObject.set(x, "paddingTop", js.undefined)
       
+      inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+      
+      inline def setPaddingX(value: Double): Self = StObject.set(x, "paddingX", value.asInstanceOf[js.Any])
+      
+      inline def setPaddingXUndefined: Self = StObject.set(x, "paddingX", js.undefined)
+      
+      inline def setPaddingY(value: Double): Self = StObject.set(x, "paddingY", value.asInstanceOf[js.Any])
+      
+      inline def setPaddingYUndefined: Self = StObject.set(x, "paddingY", js.undefined)
+      
       inline def setPosition(value: absolute | relative): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
       inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+      
+      inline def setRowGap(value: Double): Self = StObject.set(x, "rowGap", value.asInstanceOf[js.Any])
+      
+      inline def setRowGapUndefined: Self = StObject.set(x, "rowGap", js.undefined)
       
       inline def setTextWrap(value: wrap | end | middle | `truncate-end` | truncate | `truncate-middle` | `truncate-start`): Self = StObject.set(x, "textWrap", value.asInstanceOf[js.Any])
       

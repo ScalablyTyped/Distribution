@@ -15,11 +15,15 @@ import typings.std.HTMLDataElement
 import typings.std.HTMLDataListElement
 import typings.std.HTMLDetailsElement
 import typings.std.HTMLDialogElement
+import typings.std.HTMLDirectoryElement
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import typings.std.HTMLEmbedElement
 import typings.std.HTMLFieldSetElement
+import typings.std.HTMLFontElement
 import typings.std.HTMLFormElement
+import typings.std.HTMLFrameElement
+import typings.std.HTMLFrameSetElement
 import typings.std.HTMLHRElement
 import typings.std.HTMLHeadElement
 import typings.std.HTMLHeadingElement
@@ -32,6 +36,7 @@ import typings.std.HTMLLabelElement
 import typings.std.HTMLLegendElement
 import typings.std.HTMLLinkElement
 import typings.std.HTMLMapElement
+import typings.std.HTMLMarqueeElement
 import typings.std.HTMLMenuElement
 import typings.std.HTMLMetaElement
 import typings.std.HTMLMeterElement
@@ -42,6 +47,7 @@ import typings.std.HTMLOptGroupElement
 import typings.std.HTMLOptionElement
 import typings.std.HTMLOutputElement
 import typings.std.HTMLParagraphElement
+import typings.std.HTMLParamElement
 import typings.std.HTMLPictureElement
 import typings.std.HTMLPreElement
 import typings.std.HTMLProgressElement
@@ -64,7 +70,9 @@ import typings.std.HTMLTimeElement
 import typings.std.HTMLTitleElement
 import typings.std.HTMLTrackElement
 import typings.std.HTMLUListElement
+import typings.std.HTMLUnknownElement
 import typings.std.HTMLVideoElement
+import typings.std.MathMLElement
 import typings.std.NodeListOf
 import typings.std.SVGAnimateElement
 import typings.std.SVGAnimateMotionElement
@@ -127,28 +135,37 @@ import typings.std.SVGUseElement
 import typings.std.SVGViewElement
 import typings.stylableDomTestKit.anon.FnCall
 import typings.stylableDomTestKit.anon.FnCallSelectors
+import typings.stylableDomTestKit.stylableDomTestKitStrings.`annotation-xml`
 import typings.stylableDomTestKit.stylableDomTestKitStrings.`object`
 import typings.stylableDomTestKit.stylableDomTestKitStrings.`var`
 import typings.stylableDomTestKit.stylableDomTestKitStrings.a
 import typings.stylableDomTestKit.stylableDomTestKitStrings.abbr
+import typings.stylableDomTestKit.stylableDomTestKitStrings.acronym
 import typings.stylableDomTestKit.stylableDomTestKitStrings.address
 import typings.stylableDomTestKit.stylableDomTestKitStrings.animate
 import typings.stylableDomTestKit.stylableDomTestKitStrings.animateMotion
 import typings.stylableDomTestKit.stylableDomTestKitStrings.animateTransform
+import typings.stylableDomTestKit.stylableDomTestKitStrings.annotation
+import typings.stylableDomTestKit.stylableDomTestKitStrings.applet
 import typings.stylableDomTestKit.stylableDomTestKitStrings.area
 import typings.stylableDomTestKit.stylableDomTestKitStrings.article
 import typings.stylableDomTestKit.stylableDomTestKitStrings.aside
 import typings.stylableDomTestKit.stylableDomTestKitStrings.audio
 import typings.stylableDomTestKit.stylableDomTestKitStrings.b
 import typings.stylableDomTestKit.stylableDomTestKitStrings.base
+import typings.stylableDomTestKit.stylableDomTestKitStrings.basefont
 import typings.stylableDomTestKit.stylableDomTestKitStrings.bdi
 import typings.stylableDomTestKit.stylableDomTestKitStrings.bdo
+import typings.stylableDomTestKit.stylableDomTestKitStrings.bgsound
+import typings.stylableDomTestKit.stylableDomTestKitStrings.big
+import typings.stylableDomTestKit.stylableDomTestKitStrings.blink
 import typings.stylableDomTestKit.stylableDomTestKitStrings.blockquote
 import typings.stylableDomTestKit.stylableDomTestKitStrings.body
 import typings.stylableDomTestKit.stylableDomTestKitStrings.br
 import typings.stylableDomTestKit.stylableDomTestKitStrings.button
 import typings.stylableDomTestKit.stylableDomTestKitStrings.canvas
 import typings.stylableDomTestKit.stylableDomTestKitStrings.caption
+import typings.stylableDomTestKit.stylableDomTestKitStrings.center
 import typings.stylableDomTestKit.stylableDomTestKitStrings.circle
 import typings.stylableDomTestKit.stylableDomTestKitStrings.cite
 import typings.stylableDomTestKit.stylableDomTestKitStrings.clipPath
@@ -164,6 +181,7 @@ import typings.stylableDomTestKit.stylableDomTestKitStrings.desc
 import typings.stylableDomTestKit.stylableDomTestKitStrings.details
 import typings.stylableDomTestKit.stylableDomTestKitStrings.dfn
 import typings.stylableDomTestKit.stylableDomTestKitStrings.dialog
+import typings.stylableDomTestKit.stylableDomTestKitStrings.dir
 import typings.stylableDomTestKit.stylableDomTestKitStrings.div
 import typings.stylableDomTestKit.stylableDomTestKitStrings.dl
 import typings.stylableDomTestKit.stylableDomTestKitStrings.dt
@@ -199,9 +217,12 @@ import typings.stylableDomTestKit.stylableDomTestKitStrings.fieldset
 import typings.stylableDomTestKit.stylableDomTestKitStrings.figcaption
 import typings.stylableDomTestKit.stylableDomTestKitStrings.figure
 import typings.stylableDomTestKit.stylableDomTestKitStrings.filter
+import typings.stylableDomTestKit.stylableDomTestKitStrings.font
 import typings.stylableDomTestKit.stylableDomTestKitStrings.footer
 import typings.stylableDomTestKit.stylableDomTestKitStrings.foreignObject
 import typings.stylableDomTestKit.stylableDomTestKitStrings.form
+import typings.stylableDomTestKit.stylableDomTestKitStrings.frame
+import typings.stylableDomTestKit.stylableDomTestKitStrings.frameset
 import typings.stylableDomTestKit.stylableDomTestKitStrings.g
 import typings.stylableDomTestKit.stylableDomTestKitStrings.h1
 import typings.stylableDomTestKit.stylableDomTestKitStrings.h2
@@ -220,54 +241,98 @@ import typings.stylableDomTestKit.stylableDomTestKitStrings.image
 import typings.stylableDomTestKit.stylableDomTestKitStrings.img
 import typings.stylableDomTestKit.stylableDomTestKitStrings.input
 import typings.stylableDomTestKit.stylableDomTestKitStrings.ins
+import typings.stylableDomTestKit.stylableDomTestKitStrings.isindex
 import typings.stylableDomTestKit.stylableDomTestKitStrings.kbd
+import typings.stylableDomTestKit.stylableDomTestKitStrings.keygen
 import typings.stylableDomTestKit.stylableDomTestKitStrings.label
 import typings.stylableDomTestKit.stylableDomTestKitStrings.legend
 import typings.stylableDomTestKit.stylableDomTestKitStrings.li
 import typings.stylableDomTestKit.stylableDomTestKitStrings.line
 import typings.stylableDomTestKit.stylableDomTestKitStrings.linearGradient
 import typings.stylableDomTestKit.stylableDomTestKitStrings.link
+import typings.stylableDomTestKit.stylableDomTestKitStrings.listing
+import typings.stylableDomTestKit.stylableDomTestKitStrings.maction
 import typings.stylableDomTestKit.stylableDomTestKitStrings.main
 import typings.stylableDomTestKit.stylableDomTestKitStrings.map
 import typings.stylableDomTestKit.stylableDomTestKitStrings.mark
 import typings.stylableDomTestKit.stylableDomTestKitStrings.marker
+import typings.stylableDomTestKit.stylableDomTestKitStrings.marquee
 import typings.stylableDomTestKit.stylableDomTestKitStrings.mask
+import typings.stylableDomTestKit.stylableDomTestKitStrings.math
 import typings.stylableDomTestKit.stylableDomTestKitStrings.menu
+import typings.stylableDomTestKit.stylableDomTestKitStrings.menuitem
+import typings.stylableDomTestKit.stylableDomTestKitStrings.merror
 import typings.stylableDomTestKit.stylableDomTestKitStrings.meta
 import typings.stylableDomTestKit.stylableDomTestKitStrings.metadata
 import typings.stylableDomTestKit.stylableDomTestKitStrings.meter
+import typings.stylableDomTestKit.stylableDomTestKitStrings.mfrac
+import typings.stylableDomTestKit.stylableDomTestKitStrings.mi
+import typings.stylableDomTestKit.stylableDomTestKitStrings.mmultiscripts
+import typings.stylableDomTestKit.stylableDomTestKitStrings.mn
+import typings.stylableDomTestKit.stylableDomTestKitStrings.mo
+import typings.stylableDomTestKit.stylableDomTestKitStrings.mover
+import typings.stylableDomTestKit.stylableDomTestKitStrings.mpadded
 import typings.stylableDomTestKit.stylableDomTestKitStrings.mpath
+import typings.stylableDomTestKit.stylableDomTestKitStrings.mphantom
+import typings.stylableDomTestKit.stylableDomTestKitStrings.mprescripts
+import typings.stylableDomTestKit.stylableDomTestKitStrings.mroot
+import typings.stylableDomTestKit.stylableDomTestKitStrings.mrow
+import typings.stylableDomTestKit.stylableDomTestKitStrings.ms
+import typings.stylableDomTestKit.stylableDomTestKitStrings.mspace
+import typings.stylableDomTestKit.stylableDomTestKitStrings.msqrt
+import typings.stylableDomTestKit.stylableDomTestKitStrings.mstyle
+import typings.stylableDomTestKit.stylableDomTestKitStrings.msub
+import typings.stylableDomTestKit.stylableDomTestKitStrings.msubsup
+import typings.stylableDomTestKit.stylableDomTestKitStrings.msup
+import typings.stylableDomTestKit.stylableDomTestKitStrings.mtable
+import typings.stylableDomTestKit.stylableDomTestKitStrings.mtd
+import typings.stylableDomTestKit.stylableDomTestKitStrings.mtext
+import typings.stylableDomTestKit.stylableDomTestKitStrings.mtr
+import typings.stylableDomTestKit.stylableDomTestKitStrings.multicol
+import typings.stylableDomTestKit.stylableDomTestKitStrings.munder
+import typings.stylableDomTestKit.stylableDomTestKitStrings.munderover
 import typings.stylableDomTestKit.stylableDomTestKitStrings.nav
+import typings.stylableDomTestKit.stylableDomTestKitStrings.nextid
+import typings.stylableDomTestKit.stylableDomTestKitStrings.nobr
+import typings.stylableDomTestKit.stylableDomTestKitStrings.noembed
+import typings.stylableDomTestKit.stylableDomTestKitStrings.noframes
 import typings.stylableDomTestKit.stylableDomTestKitStrings.noscript
 import typings.stylableDomTestKit.stylableDomTestKitStrings.ol
 import typings.stylableDomTestKit.stylableDomTestKitStrings.optgroup
 import typings.stylableDomTestKit.stylableDomTestKitStrings.option
 import typings.stylableDomTestKit.stylableDomTestKitStrings.output
 import typings.stylableDomTestKit.stylableDomTestKitStrings.p
+import typings.stylableDomTestKit.stylableDomTestKitStrings.param
 import typings.stylableDomTestKit.stylableDomTestKitStrings.path
 import typings.stylableDomTestKit.stylableDomTestKitStrings.pattern
 import typings.stylableDomTestKit.stylableDomTestKitStrings.picture
+import typings.stylableDomTestKit.stylableDomTestKitStrings.plaintext
 import typings.stylableDomTestKit.stylableDomTestKitStrings.polygon
 import typings.stylableDomTestKit.stylableDomTestKitStrings.polyline
 import typings.stylableDomTestKit.stylableDomTestKitStrings.pre
 import typings.stylableDomTestKit.stylableDomTestKitStrings.progress
 import typings.stylableDomTestKit.stylableDomTestKitStrings.q
 import typings.stylableDomTestKit.stylableDomTestKitStrings.radialGradient
+import typings.stylableDomTestKit.stylableDomTestKitStrings.rb
 import typings.stylableDomTestKit.stylableDomTestKitStrings.rect
 import typings.stylableDomTestKit.stylableDomTestKitStrings.rp
 import typings.stylableDomTestKit.stylableDomTestKitStrings.rt
+import typings.stylableDomTestKit.stylableDomTestKitStrings.rtc
 import typings.stylableDomTestKit.stylableDomTestKitStrings.ruby
 import typings.stylableDomTestKit.stylableDomTestKitStrings.s
 import typings.stylableDomTestKit.stylableDomTestKitStrings.samp
 import typings.stylableDomTestKit.stylableDomTestKitStrings.script
 import typings.stylableDomTestKit.stylableDomTestKitStrings.section
 import typings.stylableDomTestKit.stylableDomTestKitStrings.select
+import typings.stylableDomTestKit.stylableDomTestKitStrings.semantics
 import typings.stylableDomTestKit.stylableDomTestKitStrings.set
 import typings.stylableDomTestKit.stylableDomTestKitStrings.slot
 import typings.stylableDomTestKit.stylableDomTestKitStrings.small
 import typings.stylableDomTestKit.stylableDomTestKitStrings.source
+import typings.stylableDomTestKit.stylableDomTestKitStrings.spacer
 import typings.stylableDomTestKit.stylableDomTestKitStrings.span
 import typings.stylableDomTestKit.stylableDomTestKitStrings.stop
+import typings.stylableDomTestKit.stylableDomTestKitStrings.strike
 import typings.stylableDomTestKit.stylableDomTestKitStrings.strong
 import typings.stylableDomTestKit.stylableDomTestKitStrings.style
 import typings.stylableDomTestKit.stylableDomTestKitStrings.sub
@@ -291,12 +356,14 @@ import typings.stylableDomTestKit.stylableDomTestKitStrings.title
 import typings.stylableDomTestKit.stylableDomTestKitStrings.tr
 import typings.stylableDomTestKit.stylableDomTestKitStrings.track
 import typings.stylableDomTestKit.stylableDomTestKitStrings.tspan
+import typings.stylableDomTestKit.stylableDomTestKitStrings.tt
 import typings.stylableDomTestKit.stylableDomTestKitStrings.u
 import typings.stylableDomTestKit.stylableDomTestKitStrings.ul
 import typings.stylableDomTestKit.stylableDomTestKitStrings.use
 import typings.stylableDomTestKit.stylableDomTestKitStrings.video
 import typings.stylableDomTestKit.stylableDomTestKitStrings.view
 import typings.stylableDomTestKit.stylableDomTestKitStrings.wbr
+import typings.stylableDomTestKit.stylableDomTestKitStrings.xmp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -356,6 +423,8 @@ object distStylableDomUtilMod {
     @JSName("querySelectorAll")
     def querySelectorAll_abbr(selectors: abbr): NodeListOf[HTMLElement]
     @JSName("querySelectorAll")
+    def querySelectorAll_acronym(selectors: acronym): NodeListOf[HTMLElement]
+    @JSName("querySelectorAll")
     def querySelectorAll_address(selectors: address): NodeListOf[HTMLElement]
     @JSName("querySelectorAll")
     def querySelectorAll_animate(selectors: animate): NodeListOf[SVGAnimateElement]
@@ -363,6 +432,12 @@ object distStylableDomUtilMod {
     def querySelectorAll_animateMotion(selectors: animateMotion): NodeListOf[SVGAnimateMotionElement]
     @JSName("querySelectorAll")
     def querySelectorAll_animateTransform(selectors: animateTransform): NodeListOf[SVGAnimateTransformElement]
+    @JSName("querySelectorAll")
+    def querySelectorAll_annotation(selectors: annotation): NodeListOf[MathMLElement]
+    @JSName("querySelectorAll")
+    def querySelectorAll_annotationxml(selectors: `annotation-xml`): NodeListOf[MathMLElement]
+    @JSName("querySelectorAll")
+    def querySelectorAll_applet(selectors: applet): NodeListOf[HTMLUnknownElement]
     @JSName("querySelectorAll")
     def querySelectorAll_area(selectors: area): NodeListOf[HTMLAreaElement]
     @JSName("querySelectorAll")
@@ -376,9 +451,17 @@ object distStylableDomUtilMod {
     @JSName("querySelectorAll")
     def querySelectorAll_base(selectors: base): NodeListOf[HTMLBaseElement]
     @JSName("querySelectorAll")
+    def querySelectorAll_basefont(selectors: basefont): NodeListOf[HTMLElement]
+    @JSName("querySelectorAll")
     def querySelectorAll_bdi(selectors: bdi): NodeListOf[HTMLElement]
     @JSName("querySelectorAll")
     def querySelectorAll_bdo(selectors: bdo): NodeListOf[HTMLElement]
+    @JSName("querySelectorAll")
+    def querySelectorAll_bgsound(selectors: bgsound): NodeListOf[HTMLUnknownElement]
+    @JSName("querySelectorAll")
+    def querySelectorAll_big(selectors: big): NodeListOf[HTMLElement]
+    @JSName("querySelectorAll")
+    def querySelectorAll_blink(selectors: blink): NodeListOf[HTMLUnknownElement]
     @JSName("querySelectorAll")
     def querySelectorAll_blockquote(selectors: blockquote): NodeListOf[HTMLQuoteElement]
     @JSName("querySelectorAll")
@@ -391,6 +474,8 @@ object distStylableDomUtilMod {
     def querySelectorAll_canvas(selectors: canvas): NodeListOf[HTMLCanvasElement]
     @JSName("querySelectorAll")
     def querySelectorAll_caption(selectors: caption): NodeListOf[HTMLTableCaptionElement]
+    @JSName("querySelectorAll")
+    def querySelectorAll_center(selectors: center): NodeListOf[HTMLElement]
     @JSName("querySelectorAll")
     def querySelectorAll_circle(selectors: circle): NodeListOf[SVGCircleElement]
     @JSName("querySelectorAll")
@@ -421,6 +506,8 @@ object distStylableDomUtilMod {
     def querySelectorAll_dfn(selectors: dfn): NodeListOf[HTMLElement]
     @JSName("querySelectorAll")
     def querySelectorAll_dialog(selectors: dialog): NodeListOf[HTMLDialogElement]
+    @JSName("querySelectorAll")
+    def querySelectorAll_dir(selectors: dir): NodeListOf[HTMLDirectoryElement]
     @JSName("querySelectorAll")
     def querySelectorAll_div(selectors: div): NodeListOf[HTMLDivElement]
     @JSName("querySelectorAll")
@@ -492,11 +579,17 @@ object distStylableDomUtilMod {
     @JSName("querySelectorAll")
     def querySelectorAll_filter(selectors: filter): NodeListOf[SVGFilterElement]
     @JSName("querySelectorAll")
+    def querySelectorAll_font(selectors: font): NodeListOf[HTMLFontElement]
+    @JSName("querySelectorAll")
     def querySelectorAll_footer(selectors: footer): NodeListOf[HTMLElement]
     @JSName("querySelectorAll")
     def querySelectorAll_foreignObject(selectors: foreignObject): NodeListOf[SVGForeignObjectElement]
     @JSName("querySelectorAll")
     def querySelectorAll_form(selectors: form): NodeListOf[HTMLFormElement]
+    @JSName("querySelectorAll")
+    def querySelectorAll_frame(selectors: frame): NodeListOf[HTMLFrameElement]
+    @JSName("querySelectorAll")
+    def querySelectorAll_frameset(selectors: frameset): NodeListOf[HTMLFrameSetElement]
     @JSName("querySelectorAll")
     def querySelectorAll_g(selectors: g): NodeListOf[SVGGElement]
     @JSName("querySelectorAll")
@@ -534,7 +627,11 @@ object distStylableDomUtilMod {
     @JSName("querySelectorAll")
     def querySelectorAll_ins(selectors: ins): NodeListOf[HTMLModElement]
     @JSName("querySelectorAll")
+    def querySelectorAll_isindex(selectors: isindex): NodeListOf[HTMLUnknownElement]
+    @JSName("querySelectorAll")
     def querySelectorAll_kbd(selectors: kbd): NodeListOf[HTMLElement]
+    @JSName("querySelectorAll")
+    def querySelectorAll_keygen(selectors: keygen): NodeListOf[HTMLUnknownElement]
     @JSName("querySelectorAll")
     def querySelectorAll_label(selectors: label): NodeListOf[HTMLLabelElement]
     @JSName("querySelectorAll")
@@ -548,6 +645,10 @@ object distStylableDomUtilMod {
     @JSName("querySelectorAll")
     def querySelectorAll_link(selectors: link): NodeListOf[HTMLLinkElement]
     @JSName("querySelectorAll")
+    def querySelectorAll_listing(selectors: listing): NodeListOf[HTMLPreElement]
+    @JSName("querySelectorAll")
+    def querySelectorAll_maction(selectors: maction): NodeListOf[MathMLElement]
+    @JSName("querySelectorAll")
     def querySelectorAll_main(selectors: main): NodeListOf[HTMLElement]
     @JSName("querySelectorAll")
     def querySelectorAll_map(selectors: map): NodeListOf[HTMLMapElement]
@@ -556,9 +657,17 @@ object distStylableDomUtilMod {
     @JSName("querySelectorAll")
     def querySelectorAll_marker(selectors: marker): NodeListOf[SVGMarkerElement]
     @JSName("querySelectorAll")
+    def querySelectorAll_marquee(selectors: marquee): NodeListOf[HTMLMarqueeElement]
+    @JSName("querySelectorAll")
     def querySelectorAll_mask(selectors: mask): NodeListOf[SVGMaskElement]
     @JSName("querySelectorAll")
+    def querySelectorAll_math(selectors: math): NodeListOf[MathMLElement]
+    @JSName("querySelectorAll")
     def querySelectorAll_menu(selectors: menu): NodeListOf[HTMLMenuElement]
+    @JSName("querySelectorAll")
+    def querySelectorAll_menuitem(selectors: menuitem): NodeListOf[HTMLElement]
+    @JSName("querySelectorAll")
+    def querySelectorAll_merror(selectors: merror): NodeListOf[MathMLElement]
     @JSName("querySelectorAll")
     def querySelectorAll_meta(selectors: meta): NodeListOf[HTMLMetaElement]
     @JSName("querySelectorAll")
@@ -566,9 +675,67 @@ object distStylableDomUtilMod {
     @JSName("querySelectorAll")
     def querySelectorAll_meter(selectors: meter): NodeListOf[HTMLMeterElement]
     @JSName("querySelectorAll")
+    def querySelectorAll_mfrac(selectors: mfrac): NodeListOf[MathMLElement]
+    @JSName("querySelectorAll")
+    def querySelectorAll_mi(selectors: mi): NodeListOf[MathMLElement]
+    @JSName("querySelectorAll")
+    def querySelectorAll_mmultiscripts(selectors: mmultiscripts): NodeListOf[MathMLElement]
+    @JSName("querySelectorAll")
+    def querySelectorAll_mn(selectors: mn): NodeListOf[MathMLElement]
+    @JSName("querySelectorAll")
+    def querySelectorAll_mo(selectors: mo): NodeListOf[MathMLElement]
+    @JSName("querySelectorAll")
+    def querySelectorAll_mover(selectors: mover): NodeListOf[MathMLElement]
+    @JSName("querySelectorAll")
+    def querySelectorAll_mpadded(selectors: mpadded): NodeListOf[MathMLElement]
+    @JSName("querySelectorAll")
     def querySelectorAll_mpath(selectors: mpath): NodeListOf[SVGMPathElement]
     @JSName("querySelectorAll")
+    def querySelectorAll_mphantom(selectors: mphantom): NodeListOf[MathMLElement]
+    @JSName("querySelectorAll")
+    def querySelectorAll_mprescripts(selectors: mprescripts): NodeListOf[MathMLElement]
+    @JSName("querySelectorAll")
+    def querySelectorAll_mroot(selectors: mroot): NodeListOf[MathMLElement]
+    @JSName("querySelectorAll")
+    def querySelectorAll_mrow(selectors: mrow): NodeListOf[MathMLElement]
+    @JSName("querySelectorAll")
+    def querySelectorAll_ms(selectors: ms): NodeListOf[MathMLElement]
+    @JSName("querySelectorAll")
+    def querySelectorAll_mspace(selectors: mspace): NodeListOf[MathMLElement]
+    @JSName("querySelectorAll")
+    def querySelectorAll_msqrt(selectors: msqrt): NodeListOf[MathMLElement]
+    @JSName("querySelectorAll")
+    def querySelectorAll_mstyle(selectors: mstyle): NodeListOf[MathMLElement]
+    @JSName("querySelectorAll")
+    def querySelectorAll_msub(selectors: msub): NodeListOf[MathMLElement]
+    @JSName("querySelectorAll")
+    def querySelectorAll_msubsup(selectors: msubsup): NodeListOf[MathMLElement]
+    @JSName("querySelectorAll")
+    def querySelectorAll_msup(selectors: msup): NodeListOf[MathMLElement]
+    @JSName("querySelectorAll")
+    def querySelectorAll_mtable(selectors: mtable): NodeListOf[MathMLElement]
+    @JSName("querySelectorAll")
+    def querySelectorAll_mtd(selectors: mtd): NodeListOf[MathMLElement]
+    @JSName("querySelectorAll")
+    def querySelectorAll_mtext(selectors: mtext): NodeListOf[MathMLElement]
+    @JSName("querySelectorAll")
+    def querySelectorAll_mtr(selectors: mtr): NodeListOf[MathMLElement]
+    @JSName("querySelectorAll")
+    def querySelectorAll_multicol(selectors: multicol): NodeListOf[HTMLUnknownElement]
+    @JSName("querySelectorAll")
+    def querySelectorAll_munder(selectors: munder): NodeListOf[MathMLElement]
+    @JSName("querySelectorAll")
+    def querySelectorAll_munderover(selectors: munderover): NodeListOf[MathMLElement]
+    @JSName("querySelectorAll")
     def querySelectorAll_nav(selectors: nav): NodeListOf[HTMLElement]
+    @JSName("querySelectorAll")
+    def querySelectorAll_nextid(selectors: nextid): NodeListOf[HTMLUnknownElement]
+    @JSName("querySelectorAll")
+    def querySelectorAll_nobr(selectors: nobr): NodeListOf[HTMLElement]
+    @JSName("querySelectorAll")
+    def querySelectorAll_noembed(selectors: noembed): NodeListOf[HTMLElement]
+    @JSName("querySelectorAll")
+    def querySelectorAll_noframes(selectors: noframes): NodeListOf[HTMLElement]
     @JSName("querySelectorAll")
     def querySelectorAll_noscript(selectors: noscript): NodeListOf[HTMLElement]
     @JSName("querySelectorAll")
@@ -584,11 +751,15 @@ object distStylableDomUtilMod {
     @JSName("querySelectorAll")
     def querySelectorAll_p(selectors: p): NodeListOf[HTMLParagraphElement]
     @JSName("querySelectorAll")
+    def querySelectorAll_param(selectors: param): NodeListOf[HTMLParamElement]
+    @JSName("querySelectorAll")
     def querySelectorAll_path(selectors: path): NodeListOf[SVGPathElement]
     @JSName("querySelectorAll")
     def querySelectorAll_pattern(selectors: pattern): NodeListOf[SVGPatternElement]
     @JSName("querySelectorAll")
     def querySelectorAll_picture(selectors: picture): NodeListOf[HTMLPictureElement]
+    @JSName("querySelectorAll")
+    def querySelectorAll_plaintext(selectors: plaintext): NodeListOf[HTMLElement]
     @JSName("querySelectorAll")
     def querySelectorAll_polygon(selectors: polygon): NodeListOf[SVGPolygonElement]
     @JSName("querySelectorAll")
@@ -602,11 +773,15 @@ object distStylableDomUtilMod {
     @JSName("querySelectorAll")
     def querySelectorAll_radialGradient(selectors: radialGradient): NodeListOf[SVGRadialGradientElement]
     @JSName("querySelectorAll")
+    def querySelectorAll_rb(selectors: rb): NodeListOf[HTMLElement]
+    @JSName("querySelectorAll")
     def querySelectorAll_rect(selectors: rect): NodeListOf[SVGRectElement]
     @JSName("querySelectorAll")
     def querySelectorAll_rp(selectors: rp): NodeListOf[HTMLElement]
     @JSName("querySelectorAll")
     def querySelectorAll_rt(selectors: rt): NodeListOf[HTMLElement]
+    @JSName("querySelectorAll")
+    def querySelectorAll_rtc(selectors: rtc): NodeListOf[HTMLElement]
     @JSName("querySelectorAll")
     def querySelectorAll_ruby(selectors: ruby): NodeListOf[HTMLElement]
     @JSName("querySelectorAll")
@@ -620,6 +795,8 @@ object distStylableDomUtilMod {
     @JSName("querySelectorAll")
     def querySelectorAll_select(selectors: select): NodeListOf[HTMLSelectElement]
     @JSName("querySelectorAll")
+    def querySelectorAll_semantics(selectors: semantics): NodeListOf[MathMLElement]
+    @JSName("querySelectorAll")
     def querySelectorAll_set(selectors: set): NodeListOf[SVGSetElement]
     @JSName("querySelectorAll")
     def querySelectorAll_slot(selectors: slot): NodeListOf[HTMLSlotElement]
@@ -628,9 +805,13 @@ object distStylableDomUtilMod {
     @JSName("querySelectorAll")
     def querySelectorAll_source(selectors: source): NodeListOf[HTMLSourceElement]
     @JSName("querySelectorAll")
+    def querySelectorAll_spacer(selectors: spacer): NodeListOf[HTMLUnknownElement]
+    @JSName("querySelectorAll")
     def querySelectorAll_span(selectors: span): NodeListOf[HTMLSpanElement]
     @JSName("querySelectorAll")
     def querySelectorAll_stop(selectors: stop): NodeListOf[SVGStopElement]
+    @JSName("querySelectorAll")
+    def querySelectorAll_strike(selectors: strike): NodeListOf[HTMLElement]
     @JSName("querySelectorAll")
     def querySelectorAll_strong(selectors: strong): NodeListOf[HTMLElement]
     @JSName("querySelectorAll")
@@ -678,6 +859,8 @@ object distStylableDomUtilMod {
     @JSName("querySelectorAll")
     def querySelectorAll_tspan(selectors: tspan): NodeListOf[SVGTSpanElement]
     @JSName("querySelectorAll")
+    def querySelectorAll_tt(selectors: tt): NodeListOf[HTMLElement]
+    @JSName("querySelectorAll")
     def querySelectorAll_u(selectors: u): NodeListOf[HTMLElement]
     @JSName("querySelectorAll")
     def querySelectorAll_ul(selectors: ul): NodeListOf[HTMLUListElement]
@@ -691,6 +874,8 @@ object distStylableDomUtilMod {
     def querySelectorAll_view(selectors: view): NodeListOf[SVGViewElement]
     @JSName("querySelectorAll")
     def querySelectorAll_wbr(selectors: wbr): NodeListOf[HTMLElement]
+    @JSName("querySelectorAll")
+    def querySelectorAll_xmp(selectors: xmp): NodeListOf[HTMLPreElement]
     
     @JSName("querySelector")
     var querySelector_Original: FnCall
@@ -699,6 +884,8 @@ object distStylableDomUtilMod {
     @JSName("querySelector")
     def querySelector_abbr(selectors: abbr): HTMLElement | Null
     @JSName("querySelector")
+    def querySelector_acronym(selectors: acronym): HTMLElement | Null
+    @JSName("querySelector")
     def querySelector_address(selectors: address): HTMLElement | Null
     @JSName("querySelector")
     def querySelector_animate(selectors: animate): SVGAnimateElement | Null
@@ -706,6 +893,12 @@ object distStylableDomUtilMod {
     def querySelector_animateMotion(selectors: animateMotion): SVGAnimateMotionElement | Null
     @JSName("querySelector")
     def querySelector_animateTransform(selectors: animateTransform): SVGAnimateTransformElement | Null
+    @JSName("querySelector")
+    def querySelector_annotation(selectors: annotation): MathMLElement | Null
+    @JSName("querySelector")
+    def querySelector_annotationxml(selectors: `annotation-xml`): MathMLElement | Null
+    @JSName("querySelector")
+    def querySelector_applet(selectors: applet): HTMLUnknownElement | Null
     @JSName("querySelector")
     def querySelector_area(selectors: area): HTMLAreaElement | Null
     @JSName("querySelector")
@@ -719,9 +912,17 @@ object distStylableDomUtilMod {
     @JSName("querySelector")
     def querySelector_base(selectors: base): HTMLBaseElement | Null
     @JSName("querySelector")
+    def querySelector_basefont(selectors: basefont): HTMLElement | Null
+    @JSName("querySelector")
     def querySelector_bdi(selectors: bdi): HTMLElement | Null
     @JSName("querySelector")
     def querySelector_bdo(selectors: bdo): HTMLElement | Null
+    @JSName("querySelector")
+    def querySelector_bgsound(selectors: bgsound): HTMLUnknownElement | Null
+    @JSName("querySelector")
+    def querySelector_big(selectors: big): HTMLElement | Null
+    @JSName("querySelector")
+    def querySelector_blink(selectors: blink): HTMLUnknownElement | Null
     @JSName("querySelector")
     def querySelector_blockquote(selectors: blockquote): HTMLQuoteElement | Null
     @JSName("querySelector")
@@ -734,6 +935,8 @@ object distStylableDomUtilMod {
     def querySelector_canvas(selectors: canvas): HTMLCanvasElement | Null
     @JSName("querySelector")
     def querySelector_caption(selectors: caption): HTMLTableCaptionElement | Null
+    @JSName("querySelector")
+    def querySelector_center(selectors: center): HTMLElement | Null
     @JSName("querySelector")
     def querySelector_circle(selectors: circle): SVGCircleElement | Null
     @JSName("querySelector")
@@ -764,6 +967,8 @@ object distStylableDomUtilMod {
     def querySelector_dfn(selectors: dfn): HTMLElement | Null
     @JSName("querySelector")
     def querySelector_dialog(selectors: dialog): HTMLDialogElement | Null
+    @JSName("querySelector")
+    def querySelector_dir(selectors: dir): HTMLDirectoryElement | Null
     @JSName("querySelector")
     def querySelector_div(selectors: div): HTMLDivElement | Null
     @JSName("querySelector")
@@ -835,11 +1040,17 @@ object distStylableDomUtilMod {
     @JSName("querySelector")
     def querySelector_filter(selectors: filter): SVGFilterElement | Null
     @JSName("querySelector")
+    def querySelector_font(selectors: font): HTMLFontElement | Null
+    @JSName("querySelector")
     def querySelector_footer(selectors: footer): HTMLElement | Null
     @JSName("querySelector")
     def querySelector_foreignObject(selectors: foreignObject): SVGForeignObjectElement | Null
     @JSName("querySelector")
     def querySelector_form(selectors: form): HTMLFormElement | Null
+    @JSName("querySelector")
+    def querySelector_frame(selectors: frame): HTMLFrameElement | Null
+    @JSName("querySelector")
+    def querySelector_frameset(selectors: frameset): HTMLFrameSetElement | Null
     @JSName("querySelector")
     def querySelector_g(selectors: g): SVGGElement | Null
     @JSName("querySelector")
@@ -877,7 +1088,11 @@ object distStylableDomUtilMod {
     @JSName("querySelector")
     def querySelector_ins(selectors: ins): HTMLModElement | Null
     @JSName("querySelector")
+    def querySelector_isindex(selectors: isindex): HTMLUnknownElement | Null
+    @JSName("querySelector")
     def querySelector_kbd(selectors: kbd): HTMLElement | Null
+    @JSName("querySelector")
+    def querySelector_keygen(selectors: keygen): HTMLUnknownElement | Null
     @JSName("querySelector")
     def querySelector_label(selectors: label): HTMLLabelElement | Null
     @JSName("querySelector")
@@ -891,6 +1106,10 @@ object distStylableDomUtilMod {
     @JSName("querySelector")
     def querySelector_link(selectors: link): HTMLLinkElement | Null
     @JSName("querySelector")
+    def querySelector_listing(selectors: listing): HTMLPreElement | Null
+    @JSName("querySelector")
+    def querySelector_maction(selectors: maction): MathMLElement | Null
+    @JSName("querySelector")
     def querySelector_main(selectors: main): HTMLElement | Null
     @JSName("querySelector")
     def querySelector_map(selectors: map): HTMLMapElement | Null
@@ -899,9 +1118,17 @@ object distStylableDomUtilMod {
     @JSName("querySelector")
     def querySelector_marker(selectors: marker): SVGMarkerElement | Null
     @JSName("querySelector")
+    def querySelector_marquee(selectors: marquee): HTMLMarqueeElement | Null
+    @JSName("querySelector")
     def querySelector_mask(selectors: mask): SVGMaskElement | Null
     @JSName("querySelector")
+    def querySelector_math(selectors: math): MathMLElement | Null
+    @JSName("querySelector")
     def querySelector_menu(selectors: menu): HTMLMenuElement | Null
+    @JSName("querySelector")
+    def querySelector_menuitem(selectors: menuitem): HTMLElement | Null
+    @JSName("querySelector")
+    def querySelector_merror(selectors: merror): MathMLElement | Null
     @JSName("querySelector")
     def querySelector_meta(selectors: meta): HTMLMetaElement | Null
     @JSName("querySelector")
@@ -909,9 +1136,67 @@ object distStylableDomUtilMod {
     @JSName("querySelector")
     def querySelector_meter(selectors: meter): HTMLMeterElement | Null
     @JSName("querySelector")
+    def querySelector_mfrac(selectors: mfrac): MathMLElement | Null
+    @JSName("querySelector")
+    def querySelector_mi(selectors: mi): MathMLElement | Null
+    @JSName("querySelector")
+    def querySelector_mmultiscripts(selectors: mmultiscripts): MathMLElement | Null
+    @JSName("querySelector")
+    def querySelector_mn(selectors: mn): MathMLElement | Null
+    @JSName("querySelector")
+    def querySelector_mo(selectors: mo): MathMLElement | Null
+    @JSName("querySelector")
+    def querySelector_mover(selectors: mover): MathMLElement | Null
+    @JSName("querySelector")
+    def querySelector_mpadded(selectors: mpadded): MathMLElement | Null
+    @JSName("querySelector")
     def querySelector_mpath(selectors: mpath): SVGMPathElement | Null
     @JSName("querySelector")
+    def querySelector_mphantom(selectors: mphantom): MathMLElement | Null
+    @JSName("querySelector")
+    def querySelector_mprescripts(selectors: mprescripts): MathMLElement | Null
+    @JSName("querySelector")
+    def querySelector_mroot(selectors: mroot): MathMLElement | Null
+    @JSName("querySelector")
+    def querySelector_mrow(selectors: mrow): MathMLElement | Null
+    @JSName("querySelector")
+    def querySelector_ms(selectors: ms): MathMLElement | Null
+    @JSName("querySelector")
+    def querySelector_mspace(selectors: mspace): MathMLElement | Null
+    @JSName("querySelector")
+    def querySelector_msqrt(selectors: msqrt): MathMLElement | Null
+    @JSName("querySelector")
+    def querySelector_mstyle(selectors: mstyle): MathMLElement | Null
+    @JSName("querySelector")
+    def querySelector_msub(selectors: msub): MathMLElement | Null
+    @JSName("querySelector")
+    def querySelector_msubsup(selectors: msubsup): MathMLElement | Null
+    @JSName("querySelector")
+    def querySelector_msup(selectors: msup): MathMLElement | Null
+    @JSName("querySelector")
+    def querySelector_mtable(selectors: mtable): MathMLElement | Null
+    @JSName("querySelector")
+    def querySelector_mtd(selectors: mtd): MathMLElement | Null
+    @JSName("querySelector")
+    def querySelector_mtext(selectors: mtext): MathMLElement | Null
+    @JSName("querySelector")
+    def querySelector_mtr(selectors: mtr): MathMLElement | Null
+    @JSName("querySelector")
+    def querySelector_multicol(selectors: multicol): HTMLUnknownElement | Null
+    @JSName("querySelector")
+    def querySelector_munder(selectors: munder): MathMLElement | Null
+    @JSName("querySelector")
+    def querySelector_munderover(selectors: munderover): MathMLElement | Null
+    @JSName("querySelector")
     def querySelector_nav(selectors: nav): HTMLElement | Null
+    @JSName("querySelector")
+    def querySelector_nextid(selectors: nextid): HTMLUnknownElement | Null
+    @JSName("querySelector")
+    def querySelector_nobr(selectors: nobr): HTMLElement | Null
+    @JSName("querySelector")
+    def querySelector_noembed(selectors: noembed): HTMLElement | Null
+    @JSName("querySelector")
+    def querySelector_noframes(selectors: noframes): HTMLElement | Null
     @JSName("querySelector")
     def querySelector_noscript(selectors: noscript): HTMLElement | Null
     @JSName("querySelector")
@@ -927,11 +1212,15 @@ object distStylableDomUtilMod {
     @JSName("querySelector")
     def querySelector_p(selectors: p): HTMLParagraphElement | Null
     @JSName("querySelector")
+    def querySelector_param(selectors: param): HTMLParamElement | Null
+    @JSName("querySelector")
     def querySelector_path(selectors: path): SVGPathElement | Null
     @JSName("querySelector")
     def querySelector_pattern(selectors: pattern): SVGPatternElement | Null
     @JSName("querySelector")
     def querySelector_picture(selectors: picture): HTMLPictureElement | Null
+    @JSName("querySelector")
+    def querySelector_plaintext(selectors: plaintext): HTMLElement | Null
     @JSName("querySelector")
     def querySelector_polygon(selectors: polygon): SVGPolygonElement | Null
     @JSName("querySelector")
@@ -945,11 +1234,15 @@ object distStylableDomUtilMod {
     @JSName("querySelector")
     def querySelector_radialGradient(selectors: radialGradient): SVGRadialGradientElement | Null
     @JSName("querySelector")
+    def querySelector_rb(selectors: rb): HTMLElement | Null
+    @JSName("querySelector")
     def querySelector_rect(selectors: rect): SVGRectElement | Null
     @JSName("querySelector")
     def querySelector_rp(selectors: rp): HTMLElement | Null
     @JSName("querySelector")
     def querySelector_rt(selectors: rt): HTMLElement | Null
+    @JSName("querySelector")
+    def querySelector_rtc(selectors: rtc): HTMLElement | Null
     @JSName("querySelector")
     def querySelector_ruby(selectors: ruby): HTMLElement | Null
     @JSName("querySelector")
@@ -963,6 +1256,8 @@ object distStylableDomUtilMod {
     @JSName("querySelector")
     def querySelector_select(selectors: select): HTMLSelectElement | Null
     @JSName("querySelector")
+    def querySelector_semantics(selectors: semantics): MathMLElement | Null
+    @JSName("querySelector")
     def querySelector_set(selectors: set): SVGSetElement | Null
     @JSName("querySelector")
     def querySelector_slot(selectors: slot): HTMLSlotElement | Null
@@ -971,9 +1266,13 @@ object distStylableDomUtilMod {
     @JSName("querySelector")
     def querySelector_source(selectors: source): HTMLSourceElement | Null
     @JSName("querySelector")
+    def querySelector_spacer(selectors: spacer): HTMLUnknownElement | Null
+    @JSName("querySelector")
     def querySelector_span(selectors: span): HTMLSpanElement | Null
     @JSName("querySelector")
     def querySelector_stop(selectors: stop): SVGStopElement | Null
+    @JSName("querySelector")
+    def querySelector_strike(selectors: strike): HTMLElement | Null
     @JSName("querySelector")
     def querySelector_strong(selectors: strong): HTMLElement | Null
     @JSName("querySelector")
@@ -1021,6 +1320,8 @@ object distStylableDomUtilMod {
     @JSName("querySelector")
     def querySelector_tspan(selectors: tspan): SVGTSpanElement | Null
     @JSName("querySelector")
+    def querySelector_tt(selectors: tt): HTMLElement | Null
+    @JSName("querySelector")
     def querySelector_u(selectors: u): HTMLElement | Null
     @JSName("querySelector")
     def querySelector_ul(selectors: ul): HTMLUListElement | Null
@@ -1034,6 +1335,8 @@ object distStylableDomUtilMod {
     def querySelector_view(selectors: view): SVGViewElement | Null
     @JSName("querySelector")
     def querySelector_wbr(selectors: wbr): HTMLElement | Null
+    @JSName("querySelector")
+    def querySelector_xmp(selectors: xmp): HTMLPreElement | Null
   }
   object PartialElement {
     

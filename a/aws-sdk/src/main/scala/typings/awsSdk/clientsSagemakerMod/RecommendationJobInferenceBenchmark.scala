@@ -8,6 +8,8 @@ trait RecommendationJobInferenceBenchmark extends StObject {
   
   var EndpointConfiguration: js.UndefOr[EndpointOutputConfiguration] = js.undefined
   
+  var EndpointMetrics: js.UndefOr[InferenceMetrics] = js.undefined
+  
   /**
     * The reason why a benchmark failed.
     */
@@ -30,6 +32,10 @@ object RecommendationJobInferenceBenchmark {
     inline def setEndpointConfiguration(value: EndpointOutputConfiguration): Self = StObject.set(x, "EndpointConfiguration", value.asInstanceOf[js.Any])
     
     inline def setEndpointConfigurationUndefined: Self = StObject.set(x, "EndpointConfiguration", js.undefined)
+    
+    inline def setEndpointMetrics(value: InferenceMetrics): Self = StObject.set(x, "EndpointMetrics", value.asInstanceOf[js.Any])
+    
+    inline def setEndpointMetricsUndefined: Self = StObject.set(x, "EndpointMetrics", js.undefined)
     
     inline def setFailureReason(value: RecommendationFailureReason): Self = StObject.set(x, "FailureReason", value.asInstanceOf[js.Any])
     

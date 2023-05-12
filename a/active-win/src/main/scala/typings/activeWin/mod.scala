@@ -12,7 +12,6 @@ object mod {
   
   /**
   	Get metadata about the [active window](https://en.wikipedia.org/wiki/Active_window) (title, id, bounds, owner, etc).
-  	@returns The active window metadata.
   	@example
   	```
   	import activeWindow = require('active-win');
@@ -40,8 +39,21 @@ object mod {
   val ^ : js.Any = js.native
   
   /**
-  	Synchronously get metadata about the [active window](https://en.wikipedia.org/wiki/Active_window) (title, id, bounds, owner, etc).
-  	@returns The active window metadata.
+  	Get metadata about all open windows.
+  	Windows are returned in order from front to back.
+  	*/
+  inline def getOpenWindows(): js.Promise[js.Array[Result]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOpenWindows")().asInstanceOf[js.Promise[js.Array[Result]]]
+  inline def getOpenWindows(options: Options): js.Promise[js.Array[Result]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOpenWindows")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Result]]]
+  
+  /**
+  	Get metadata about all open windows synchronously.
+  	Windows are returned in order from front to back.
+  	*/
+  inline def getOpenWindowsSync(): js.Array[Result] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOpenWindowsSync")().asInstanceOf[js.Array[Result]]
+  inline def getOpenWindowsSync(options: Options): js.Array[Result] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOpenWindowsSync")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[Result]]
+  
+  /**
+  	Get metadata about the [active window](https://en.wikipedia.org/wiki/Active_window) synchronously (title, id, bounds, owner, etc).
   	@example
   	```
   	import activeWindow = require('active-win');

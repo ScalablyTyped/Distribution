@@ -1,7 +1,6 @@
 package typings.cfcsCore
 
-import typings.cfcsCore.declarationReactiveObserverMod.Observer
-import typings.cfcsCore.declarationReactiveReactiveSubscribeMod.ReactiveSubscribe
+import typings.cfcsCore.declarationReactiveDecoratorsReactiveSubscribeMod.ReactiveSubscribe
 import typings.std.Parameters
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -17,13 +16,6 @@ object declarationReactiveTypesMod {
   }
   
   type EventKey[T /* <: Record[String, Any] */] = String
-  
-  @js.native
-  trait GetReactiveValue extends StObject {
-    
-    def apply[Type](observer: Observer[Type]): Type = js.native
-    def apply[Inst /* <: ReactiveSubscribe[js.Object] */, Name](inst: Inst, name: Any): Name = js.native
-  }
   
   type NoArguments = js.UndefOr[Null | Unit]
   
@@ -46,6 +38,16 @@ object declarationReactiveTypesMod {
     }}}
     */
   type ReactiveMethods[Instance, Names /* <: /* keyof Instance */ String */] = Instance
+  
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately.
+    * TS definition: {{{
+    Instance extends @cfcs/core.@cfcs/core/declaration/reactive/inline.ReactiveObject<infer State> | @cfcs/core.@cfcs/core/declaration/reactive/decorators/ReactiveSubscribe.ReactiveSubscribe<infer State> ? std.Omit<State, 'subscribe' | 'unsubscribe'> : never
+    }}}
+    */
+  @js.native
+  trait ReactiveState[Instance /* <: ReactiveSubscribe[js.Object] */] extends StObject
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.

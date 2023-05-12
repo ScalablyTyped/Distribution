@@ -20,6 +20,11 @@ trait AddonVersionInfo extends StObject {
     * An object representing the compatibilities of a version.
     */
   var compatibilities: js.UndefOr[Compatibilities] = js.undefined
+  
+  /**
+    * Whether the add-on requires configuration.
+    */
+  var requiresConfiguration: js.UndefOr[Boolean] = js.undefined
 }
 object AddonVersionInfo {
   
@@ -46,5 +51,9 @@ object AddonVersionInfo {
     inline def setCompatibilitiesUndefined: Self = StObject.set(x, "compatibilities", js.undefined)
     
     inline def setCompatibilitiesVarargs(value: Compatibility*): Self = StObject.set(x, "compatibilities", js.Array(value*))
+    
+    inline def setRequiresConfiguration(value: Boolean): Self = StObject.set(x, "requiresConfiguration", value.asInstanceOf[js.Any])
+    
+    inline def setRequiresConfigurationUndefined: Self = StObject.set(x, "requiresConfiguration", js.undefined)
   }
 }

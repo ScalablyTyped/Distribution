@@ -11,7 +11,7 @@ open class HTMLOverlay protected () extends BaseControl[HTMLOverlayProps, HTMLDi
   def this(props: HTMLOverlayProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: HTMLOverlayProps, context: Any) = this()
 }

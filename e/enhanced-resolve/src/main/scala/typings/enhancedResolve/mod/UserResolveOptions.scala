@@ -1,6 +1,6 @@
 package typings.enhancedResolve.mod
 
-import typings.enhancedResolve.anon.Name
+import typings.enhancedResolve.anon.ForceRelative
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -80,7 +80,7 @@ trait UserResolveOptions extends StObject {
   /**
   	 * A list of main fields in description files
   	 */
-  var mainFields: js.UndefOr[js.Array[String | js.Array[String] | Name]] = js.undefined
+  var mainFields: js.UndefOr[js.Array[String | js.Array[String] | ForceRelative]] = js.undefined
   
   /**
   	 * A list of main files in directories
@@ -227,11 +227,11 @@ object UserResolveOptions {
     
     inline def setImportsFieldsVarargs(value: (String | js.Array[String])*): Self = StObject.set(x, "importsFields", js.Array(value*))
     
-    inline def setMainFields(value: js.Array[String | js.Array[String] | Name]): Self = StObject.set(x, "mainFields", value.asInstanceOf[js.Any])
+    inline def setMainFields(value: js.Array[String | js.Array[String] | ForceRelative]): Self = StObject.set(x, "mainFields", value.asInstanceOf[js.Any])
     
     inline def setMainFieldsUndefined: Self = StObject.set(x, "mainFields", js.undefined)
     
-    inline def setMainFieldsVarargs(value: (String | js.Array[String] | Name)*): Self = StObject.set(x, "mainFields", js.Array(value*))
+    inline def setMainFieldsVarargs(value: (String | js.Array[String] | ForceRelative)*): Self = StObject.set(x, "mainFields", js.Array(value*))
     
     inline def setMainFiles(value: js.Array[String]): Self = StObject.set(x, "mainFiles", value.asInstanceOf[js.Any])
     

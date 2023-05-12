@@ -22,6 +22,11 @@ trait ContainerDetail extends StObject {
   var environment: js.UndefOr[EnvironmentVariables] = js.undefined
   
   /**
+    * The amount of ephemeral storage allocated for the task. This parameter is used to expand the total amount of ephemeral storage available, beyond the default amount, for tasks hosted on Fargate.
+    */
+  var ephemeralStorage: js.UndefOr[EphemeralStorage] = js.undefined
+  
+  /**
     * The Amazon Resource Name (ARN) of the execution role that Batch can assume. For more information, see Batch execution IAM role in the Batch User Guide.
     */
   var executionRoleArn: js.UndefOr[String] = js.undefined
@@ -161,6 +166,10 @@ object ContainerDetail {
     inline def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
     
     inline def setEnvironmentVarargs(value: KeyValuePair*): Self = StObject.set(x, "environment", js.Array(value*))
+    
+    inline def setEphemeralStorage(value: EphemeralStorage): Self = StObject.set(x, "ephemeralStorage", value.asInstanceOf[js.Any])
+    
+    inline def setEphemeralStorageUndefined: Self = StObject.set(x, "ephemeralStorage", js.undefined)
     
     inline def setExecutionRoleArn(value: String): Self = StObject.set(x, "executionRoleArn", value.asInstanceOf[js.Any])
     

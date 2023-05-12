@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@fluent/sequence" : "0.7.0"
+      "@fluent/sequence" : "0.8.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@fluent/sequence" : "0.7.0"
+      "@fluent/sequence" : "0.8.0"
     }
   ],
   "compile-devDependencies" : [

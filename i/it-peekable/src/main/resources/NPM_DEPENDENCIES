@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "it-peekable" : "2.0.0"
+      "it-peekable" : "3.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "it-peekable" : "2.0.0"
+      "it-peekable" : "3.0.1"
     }
   ],
   "compile-devDependencies" : [

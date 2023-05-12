@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** module Or Internal Object */
 /**
   * @brief 包含 multipart 的一个条目数据
-  * @detail 
+  * @detail
   */
 @JSGlobal("Class_HttpUploadData")
 @js.native

@@ -6,7 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait InteractiveCredentialOptions
   extends StObject
-     with MultiTenantTokenCredentialOptions {
+     with MultiTenantTokenCredentialOptions
+     with AuthorityValidationOptions {
   
   /**
     * Result of a previous authentication that can be used to retrieve the cached credentials of each individual account.

@@ -35,7 +35,7 @@ object mod {
   
   inline def validate(node: typings.ipldDagPb.distSrcUtilMod.PBNode): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("validate")(node.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  type ByteView[T] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_interface.ByteView<T> */ Any
+  type ByteView[T] = typings.multiformats.distTypesSrcBlockInterfaceMod.ByteView[T]
   
   type PBLink = typings.ipldDagPb.distSrcInterfaceMod.PBLink
   

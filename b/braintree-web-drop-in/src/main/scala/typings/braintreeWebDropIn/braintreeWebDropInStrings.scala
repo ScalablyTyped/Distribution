@@ -1,6 +1,7 @@
 package typings.braintreeWebDropIn
 
 import typings.braintreeWebDropIn.mod.ActiveView
+import typings.braintreeWebDropIn.mod.UpdatableConfigurationOption
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -43,6 +44,7 @@ object braintreeWebDropInStrings {
   sealed trait applePay
     extends StObject
        with ActiveView
+       with UpdatableConfigurationOption
   inline def applePay: applePay = "applePay".asInstanceOf[applePay]
   
   @js.native
@@ -73,6 +75,7 @@ object braintreeWebDropInStrings {
   sealed trait googlePay
     extends StObject
        with ActiveView
+       with UpdatableConfigurationOption
   inline def googlePay: googlePay = "googlePay".asInstanceOf[googlePay]
   
   @js.native
@@ -103,13 +106,21 @@ object braintreeWebDropInStrings {
   sealed trait paypal
     extends StObject
        with ActiveView
+       with UpdatableConfigurationOption
   inline def paypal: paypal = "paypal".asInstanceOf[paypal]
   
   @js.native
   sealed trait paypalCredit
     extends StObject
        with ActiveView
+       with UpdatableConfigurationOption
   inline def paypalCredit: paypalCredit = "paypalCredit".asInstanceOf[paypalCredit]
+  
+  @js.native
+  sealed trait threeDSecure
+    extends StObject
+       with UpdatableConfigurationOption
+  inline def threeDSecure: threeDSecure = "threeDSecure".asInstanceOf[threeDSecure]
   
   @js.native
   sealed trait vault extends StObject

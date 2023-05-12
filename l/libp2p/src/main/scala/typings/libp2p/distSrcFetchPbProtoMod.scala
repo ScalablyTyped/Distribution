@@ -1,5 +1,7 @@
 package typings.libp2p
 
+import typings.libp2p.anon.PartialFetchRequest
+import typings.libp2p.anon.PartialFetchResponse
 import typings.libp2p.distSrcFetchPbProtoMod.FetchResponse.StatusCode
 import typings.protonsRuntime.distSrcCodecMod.Codec
 import typings.uint8arraylist.mod.Uint8ArrayList
@@ -29,7 +31,7 @@ object distSrcFetchPbProtoMod {
     inline def decode(buf: js.typedarray.Uint8Array): FetchRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(buf.asInstanceOf[js.Any]).asInstanceOf[FetchRequest]
     inline def decode(buf: Uint8ArrayList): FetchRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(buf.asInstanceOf[js.Any]).asInstanceOf[FetchRequest]
     
-    inline def encode(obj: FetchRequest): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+    inline def encode(obj: PartialFetchRequest): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
     
     @scala.inline
     implicit open class MutableBuilder[Self <: FetchRequest] (val x: Self) extends AnyVal {
@@ -90,7 +92,7 @@ object distSrcFetchPbProtoMod {
     inline def decode(buf: js.typedarray.Uint8Array): FetchResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(buf.asInstanceOf[js.Any]).asInstanceOf[FetchResponse]
     inline def decode(buf: Uint8ArrayList): FetchResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(buf.asInstanceOf[js.Any]).asInstanceOf[FetchResponse]
     
-    inline def encode(obj: FetchResponse): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+    inline def encode(obj: PartialFetchResponse): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
     
     @scala.inline
     implicit open class MutableBuilder[Self <: FetchResponse] (val x: Self) extends AnyVal {

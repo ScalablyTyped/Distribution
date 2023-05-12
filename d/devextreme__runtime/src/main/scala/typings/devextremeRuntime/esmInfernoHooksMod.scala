@@ -1,17 +1,16 @@
 package typings.devextremeRuntime
 
-import typings.devextremeRuntime.anon.ComponentDidMount
 import typings.devextremeRuntime.anon.Context
+import typings.devextremeRuntime.anon.DefaultProps
 import typings.devextremeRuntime.anon.DefaultValue
 import typings.devextremeRuntime.anon.DefaultValueId
-import typings.devextremeRuntime.anon.ForwardRefanyanydefaultPr
-import typings.devextremeRuntime.anon.FunctiondefaultPropsunkno
-import typings.devextremeRuntime.anon.IComponentanyanydefaultPr
-import typings.devextremeRuntime.anon.RenderRef
+import typings.devextremeRuntime.anon.RenderProps
 import typings.devextremeRuntime.esmInfernoHooksContainerMod.RefObject
 import typings.devextremeRuntime.esmInfernoHooksHooksMod.Dispatch
 import typings.devextremeRuntime.esmInfernoHooksHooksMod.SetStateAction
 import typings.devextremeRuntime.esmInfernoHooksPortalMod.PortalProps
+import typings.devextremeRuntime.esmInfernoHooksRecorderMod.Recorder
+import typings.devextremeRuntime.esmInfernoHooksUtilsGetTemplateMod.InfernoComponent
 import typings.inferno.distCoreTypesMod.ForwardRef
 import typings.inferno.distCoreTypesMod.IComponent
 import typings.inferno.distCoreTypesMod.Props
@@ -31,18 +30,18 @@ object esmInfernoHooksMod {
   @js.native
   open class HookContainer ()
     extends typings.devextremeRuntime.esmInfernoHooksContainerMod.HookContainer {
-    def this(props: RenderRef) = this()
+    def this(props: RenderProps) = this()
     def this(props: Unit, context: Any) = this()
-    def this(props: RenderRef, context: Any) = this()
+    def this(props: RenderProps, context: Any) = this()
   }
   
   @JSImport("@devextreme/runtime/esm/inferno-hooks", "InfernoWrapperComponent")
   @js.native
   open class InfernoWrapperComponent ()
     extends typings.devextremeRuntime.esmInfernoHooksBaseHooksComponentMod.InfernoWrapperComponent {
-    def this(props: RenderRef) = this()
+    def this(props: RenderProps) = this()
     def this(props: Unit, context: Any) = this()
-    def this(props: RenderRef, context: Any) = this()
+    def this(props: RenderProps, context: Any) = this()
   }
   
   inline def Portal(param0: PortalProps): VNode | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Portal")(param0.asInstanceOf[js.Any]).asInstanceOf[VNode | Null]
@@ -51,7 +50,7 @@ object esmInfernoHooksMod {
   
   inline def createContext[T](defaultValue: T): DefaultValue = ^.asInstanceOf[js.Dynamic].applyDynamic("createContext")(defaultValue.asInstanceOf[js.Any]).asInstanceOf[DefaultValue]
   
-  inline def createRecorder(component: typings.devextremeRuntime.esmInfernoHooksContainerMod.HookContainer): ComponentDidMount = ^.asInstanceOf[js.Dynamic].applyDynamic("createRecorder")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentDidMount]
+  inline def createRecorder(component: typings.devextremeRuntime.esmInfernoHooksContainerMod.HookContainer): Recorder = ^.asInstanceOf[js.Dynamic].applyDynamic("createRecorder")(component.asInstanceOf[js.Any]).asInstanceOf[Recorder]
   
   object currentComponent {
     
@@ -81,21 +80,7 @@ object esmInfernoHooksMod {
     /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for T */ Any
   ])]
   
-  inline def getTemplate(TemplateProp: ForwardRefanyanydefaultPr): js.Function | (ForwardRef[
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for P */ Any, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for T */ Any
-  ]) | (IComponent[Any, Any]) | (js.Function1[/* props */ js.UndefOr[Props[Any] | Null], VNode]) = ^.asInstanceOf[js.Dynamic].applyDynamic("getTemplate")(TemplateProp.asInstanceOf[js.Any]).asInstanceOf[js.Function | (ForwardRef[
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for P */ Any, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for T */ Any
-  ]) | (IComponent[Any, Any]) | (js.Function1[/* props */ js.UndefOr[Props[Any] | Null], VNode])]
-  inline def getTemplate(TemplateProp: FunctiondefaultPropsunkno): js.Function | (ForwardRef[
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for P */ Any, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for T */ Any
-  ]) | (IComponent[Any, Any]) | (js.Function1[/* props */ js.UndefOr[Props[Any] | Null], VNode]) = ^.asInstanceOf[js.Dynamic].applyDynamic("getTemplate")(TemplateProp.asInstanceOf[js.Any]).asInstanceOf[js.Function | (ForwardRef[
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for P */ Any, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for T */ Any
-  ]) | (IComponent[Any, Any]) | (js.Function1[/* props */ js.UndefOr[Props[Any] | Null], VNode])]
-  inline def getTemplate(TemplateProp: IComponentanyanydefaultPr): js.Function | (ForwardRef[
+  inline def getTemplate(TemplateProp: InfernoComponent & DefaultProps): js.Function | (ForwardRef[
     /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for P */ Any, 
     /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for T */ Any
   ]) | (IComponent[Any, Any]) | (js.Function1[/* props */ js.UndefOr[Props[Any] | Null], VNode]) = ^.asInstanceOf[js.Dynamic].applyDynamic("getTemplate")(TemplateProp.asInstanceOf[js.Any]).asInstanceOf[js.Function | (ForwardRef[

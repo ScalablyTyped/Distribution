@@ -2,7 +2,7 @@ package typings.opentelemetrySdkTraceBase
 
 import typings.opentelemetryApi.buildSrcContextTypesMod.ContextManager
 import typings.opentelemetryApi.buildSrcPropagationTextMapPropagatorMod.TextMapPropagator
-import typings.opentelemetryResources.mod.Resource
+import typings.opentelemetryResources.buildSrcIresourceMod.IResource
 import typings.opentelemetrySdkTraceBase.buildSrcIdGeneratorMod.IdGenerator
 import typings.opentelemetrySdkTraceBase.buildSrcSamplerMod.Sampler
 import org.scalablytyped.runtime.StObject
@@ -146,6 +146,12 @@ object buildSrcTypesMod {
     /** attributeCountLimit is number of attributes per span */
     var attributeCountLimit: js.UndefOr[Double] = js.undefined
     
+    /** attributePerEventCountLimit is the maximum number of attributes allowed per span event */
+    var attributePerEventCountLimit: js.UndefOr[Double] = js.undefined
+    
+    /** attributePerLinkCountLimit is the maximum number of attributes allowed per span link */
+    var attributePerLinkCountLimit: js.UndefOr[Double] = js.undefined
+    
     /** attributeValueLengthLimit is maximum allowed attribute value size */
     var attributeValueLengthLimit: js.UndefOr[Double] = js.undefined
     
@@ -168,6 +174,14 @@ object buildSrcTypesMod {
       inline def setAttributeCountLimit(value: Double): Self = StObject.set(x, "attributeCountLimit", value.asInstanceOf[js.Any])
       
       inline def setAttributeCountLimitUndefined: Self = StObject.set(x, "attributeCountLimit", js.undefined)
+      
+      inline def setAttributePerEventCountLimit(value: Double): Self = StObject.set(x, "attributePerEventCountLimit", value.asInstanceOf[js.Any])
+      
+      inline def setAttributePerEventCountLimitUndefined: Self = StObject.set(x, "attributePerEventCountLimit", js.undefined)
+      
+      inline def setAttributePerLinkCountLimit(value: Double): Self = StObject.set(x, "attributePerLinkCountLimit", value.asInstanceOf[js.Any])
+      
+      inline def setAttributePerLinkCountLimitUndefined: Self = StObject.set(x, "attributePerLinkCountLimit", js.undefined)
       
       inline def setAttributeValueLengthLimit(value: Double): Self = StObject.set(x, "attributeValueLengthLimit", value.asInstanceOf[js.Any])
       
@@ -201,7 +215,7 @@ object buildSrcTypesMod {
     var idGenerator: js.UndefOr[IdGenerator] = js.undefined
     
     /** Resource associated with trace telemetry  */
-    var resource: js.UndefOr[Resource] = js.undefined
+    var resource: js.UndefOr[IResource] = js.undefined
     
     /**
       * Sampler determines if a span should be recorded or should be a NoopSpan.
@@ -233,7 +247,7 @@ object buildSrcTypesMod {
       
       inline def setIdGeneratorUndefined: Self = StObject.set(x, "idGenerator", js.undefined)
       
-      inline def setResource(value: Resource): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+      inline def setResource(value: IResource): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
       inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
       

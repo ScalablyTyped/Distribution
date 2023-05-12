@@ -90,24 +90,24 @@ object anon {
   
   trait Comment extends StObject {
     
-    var comment: TReadonly[TString[String]]
+    var comment: TReadonly[TString]
     
-    var content: TReadonly[TString[String]]
+    var content: TReadonly[TString]
     
-    var prop: TReadonly[TString[String]]
+    var prop: TReadonly[TString]
     
-    var tag: TReadonly[TString[String]]
+    var tag: TReadonly[TString]
     
-    var value: TReadonly[TString[String]]
+    var value: TReadonly[TString]
   }
   object Comment {
     
     inline def apply(
-      comment: TReadonly[TString[String]],
-      content: TReadonly[TString[String]],
-      prop: TReadonly[TString[String]],
-      tag: TReadonly[TString[String]],
-      value: TReadonly[TString[String]]
+      comment: TReadonly[TString],
+      content: TReadonly[TString],
+      prop: TReadonly[TString],
+      tag: TReadonly[TString],
+      value: TReadonly[TString]
     ): Comment = {
       val __obj = js.Dynamic.literal(comment = comment.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], prop = prop.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Comment]
@@ -116,15 +116,15 @@ object anon {
     @scala.inline
     implicit open class MutableBuilder[Self <: Comment] (val x: Self) extends AnyVal {
       
-      inline def setComment(value: TReadonly[TString[String]]): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+      inline def setComment(value: TReadonly[TString]): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       
-      inline def setContent(value: TReadonly[TString[String]]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: TReadonly[TString]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      inline def setProp(value: TReadonly[TString[String]]): Self = StObject.set(x, "prop", value.asInstanceOf[js.Any])
+      inline def setProp(value: TReadonly[TString]): Self = StObject.set(x, "prop", value.asInstanceOf[js.Any])
       
-      inline def setTag(value: TReadonly[TString[String]]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: TReadonly[TString]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
-      inline def setValue(value: TReadonly[TString[String]]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: TReadonly[TString]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

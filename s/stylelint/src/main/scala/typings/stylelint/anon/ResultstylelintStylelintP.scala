@@ -4,12 +4,12 @@ import typings.postcss.libProcessorMod.default
 import typings.postcss.libResultMod.Message
 import typings.postcss.libResultMod.ResultOptions
 import typings.postcss.libWarningMod.WarningOptions
-import typings.postcss.mod.Document
-import typings.postcss.mod.Plugin
 import typings.postcss.mod.Root_
 import typings.postcss.mod.SourceMap
 import typings.postcss.mod.TransformCallback
 import typings.postcss.mod.Warning
+import typings.std.Document
+import typings.std.Plugin
 import typings.stylelint.mod.PostcssResult
 import typings.stylelint.mod.StylelintPostcssResult
 import org.scalablytyped.runtime.StObject

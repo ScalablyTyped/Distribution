@@ -6,13 +6,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CancellationStrategy extends StObject {
   
-  var receiver: CancellationReceiverStrategy
+  var receiver: CancellationReceiverStrategy | RequestCancellationReceiverStrategy
   
   var sender: CancellationSenderStrategy
 }
 object CancellationStrategy {
   
-  inline def apply(receiver: CancellationReceiverStrategy, sender: CancellationSenderStrategy): CancellationStrategy = {
+  inline def apply(
+    receiver: CancellationReceiverStrategy | RequestCancellationReceiverStrategy,
+    sender: CancellationSenderStrategy
+  ): CancellationStrategy = {
     val __obj = js.Dynamic.literal(receiver = receiver.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[CancellationStrategy]
   }
@@ -30,7 +33,7 @@ object CancellationStrategy {
   @scala.inline
   implicit open class MutableBuilder[Self <: CancellationStrategy] (val x: Self) extends AnyVal {
     
-    inline def setReceiver(value: CancellationReceiverStrategy): Self = StObject.set(x, "receiver", value.asInstanceOf[js.Any])
+    inline def setReceiver(value: CancellationReceiverStrategy | RequestCancellationReceiverStrategy): Self = StObject.set(x, "receiver", value.asInstanceOf[js.Any])
     
     inline def setSender(value: CancellationSenderStrategy): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
   }

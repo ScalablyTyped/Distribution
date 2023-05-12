@@ -1,5 +1,6 @@
 package typings.pixiMesh
 
+import typings.pixiColor.libColorMod.ColorSource
 import typings.pixiCore.libTexturesResourcesResourceMod.Resource
 import typings.pixiCore.mod.Program
 import typings.pixiCore.mod.Shader
@@ -20,7 +21,7 @@ object libMeshMaterialMod {
       * @param uSampler - Texture that material uses to render.
       * @param options - Additional options
       * @param {number} [options.alpha=1] - Default alpha.
-      * @param {number} [options.tint=0xFFFFFF] - Default tint.
+      * @param {PIXI.ColorSource} [options.tint=0xFFFFFF] - Default tint.
       * @param {string} [options.pluginName='batch'] - Renderer plugin for batching.
       * @param {PIXI.Program} [options.program=0xFFFFFF] - Custom program.
       * @param {object} [options.uniforms] - Custom uniforms.
@@ -37,7 +38,7 @@ object libMeshMaterialMod {
       */
     /* private */ var _colorDirty: Any = js.native
     
-    /* private */ var _tint: Any = js.native
+    /* private */ var _tintColor: Any = js.native
     
     var _tintRGB: Double = js.native
     
@@ -64,14 +65,21 @@ object libMeshMaterialMod {
     def texture: Texture[Resource] = js.native
     def texture_=(value: Texture[Resource]): Unit = js.native
     
-    def tint: Double = js.native
+    def tint: ColorSource = js.native
+    
+    /**
+      * Get the internal number from tint color
+      * @ignore
+      */
+    def tintValue: Double = js.native
+    
     /**
       * Multiply tint for the material.
       * @default 0xFFFFFF
       */
-    def tint_=(value: Double): Unit = js.native
+    def tint_=(value: ColorSource): Unit = js.native
     
-    /** Gets called automatically by the Mesh. Intended to be overridden for custom {@link MeshMaterial} objects. */
+    /** Gets called automatically by the Mesh. Intended to be overridden for custom {@link PIXI.MeshMaterial} objects. */
     def update(): Unit = js.native
     
     /**
@@ -89,7 +97,7 @@ object libMeshMaterialMod {
     
     var program: js.UndefOr[Program] = js.undefined
     
-    var tint: js.UndefOr[Double] = js.undefined
+    var tint: js.UndefOr[ColorSource] = js.undefined
     
     var uniforms: js.UndefOr[Dict[Any]] = js.undefined
   }
@@ -115,9 +123,11 @@ object libMeshMaterialMod {
       
       inline def setProgramUndefined: Self = StObject.set(x, "program", js.undefined)
       
-      inline def setTint(value: Double): Self = StObject.set(x, "tint", value.asInstanceOf[js.Any])
+      inline def setTint(value: ColorSource): Self = StObject.set(x, "tint", value.asInstanceOf[js.Any])
       
       inline def setTintUndefined: Self = StObject.set(x, "tint", js.undefined)
+      
+      inline def setTintVarargs(value: Double*): Self = StObject.set(x, "tint", js.Array(value*))
       
       inline def setUniforms(value: Dict[Any]): Self = StObject.set(x, "uniforms", value.asInstanceOf[js.Any])
       

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "fp-ts" : "2.13.1"
+      "fp-ts" : "2.15.0"
     }
   ],
   "test-dependencies" : [
     {
-      "fp-ts" : "2.13.1"
+      "fp-ts" : "2.15.0"
     }
   ],
   "compile-devDependencies" : [

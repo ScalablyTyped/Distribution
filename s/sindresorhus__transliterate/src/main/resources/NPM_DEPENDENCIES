@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@sindresorhus/transliterate" : "1.5.0"
+      "@sindresorhus/transliterate" : "1.6.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@sindresorhus/transliterate" : "1.5.0"
+      "@sindresorhus/transliterate" : "1.6.0"
     }
   ],
   "compile-devDependencies" : [

@@ -134,7 +134,7 @@ object distDeclarationsSrcTypesInternalConfigMod {
     }
   }
   
-  /* Inlined std.Omit<@use-gesture/core.@use-gesture/core/dist/declarations/src/types/internalConfig.InternalCoordinatesOptions<'drag'>, 'axisThreshold'> & {  filterTaps :boolean,   tapsThreshold :number,   pointerButtons :number | std.Array<number>,   pointerCapture :boolean,   preventScrollDelay :number | undefined,   preventScrollAxis :'x' | 'y' | 'xy' | undefined,   pointerLock :boolean,   keys :boolean,   device :'pointer' | 'touch' | 'mouse',   swipe :{  velocity :@use-gesture/core.@use-gesture/core/dist/declarations/src/types/utils.Vector2,   distance :@use-gesture/core.@use-gesture/core/dist/declarations/src/types/utils.Vector2,   duration :number},   delay :number,   axisThreshold :std.Record<@use-gesture/core.@use-gesture/core/dist/declarations/src/types/utils.PointerType, number>} */
+  /* Inlined std.Omit<@use-gesture/core.@use-gesture/core/dist/declarations/src/types/internalConfig.InternalCoordinatesOptions<'drag'>, 'axisThreshold'> & {  filterTaps :boolean,   tapsThreshold :number,   pointerButtons :number | std.Array<number>,   pointerCapture :boolean,   preventScrollDelay :number | undefined,   preventScrollAxis :'x' | 'y' | 'xy' | undefined,   pointerLock :boolean,   keys :boolean,   device :'pointer' | 'touch' | 'mouse',   swipe :{  velocity :@use-gesture/core.@use-gesture/core/dist/declarations/src/types/utils.Vector2,   distance :@use-gesture/core.@use-gesture/core/dist/declarations/src/types/utils.Vector2,   duration :number},   delay :number,   axisThreshold :std.Record<@use-gesture/core.@use-gesture/core/dist/declarations/src/types/utils.PointerType, number>,   keyboardDisplacement :number} */
   trait InternalDragOptions extends StObject {
     
     var axis: js.UndefOr[x | y] = js.undefined
@@ -156,6 +156,8 @@ object distDeclarationsSrcTypesInternalConfigMod {
     var from: Vector2 | (js.Function1[/* state */ js.UndefOr[DragStateeventEventTypesd], Vector2])
     
     var hasCustomTransform: Boolean
+    
+    var keyboardDisplacement: Double
     
     var keys: Boolean
     
@@ -199,6 +201,7 @@ object distDeclarationsSrcTypesInternalConfigMod {
       filterTaps: Boolean,
       from: Vector2 | (js.Function1[/* state */ js.UndefOr[DragStateeventEventTypesd], Vector2]),
       hasCustomTransform: Boolean,
+      keyboardDisplacement: Double,
       keys: Boolean,
       lockDirection: Boolean,
       pointerButtons: Double | js.Array[Double],
@@ -212,7 +215,7 @@ object distDeclarationsSrcTypesInternalConfigMod {
       transform: /* v */ Vector2 => Vector2,
       triggerAllEvents: Boolean
     ): InternalDragOptions = {
-      val __obj = js.Dynamic.literal(axisThreshold = axisThreshold.asInstanceOf[js.Any], bounds = bounds.asInstanceOf[js.Any], delay = delay.asInstanceOf[js.Any], device = device.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any], eventOptions = eventOptions.asInstanceOf[js.Any], filterTaps = filterTaps.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any], hasCustomTransform = hasCustomTransform.asInstanceOf[js.Any], keys = keys.asInstanceOf[js.Any], lockDirection = lockDirection.asInstanceOf[js.Any], pointerButtons = pointerButtons.asInstanceOf[js.Any], pointerCapture = pointerCapture.asInstanceOf[js.Any], pointerLock = pointerLock.asInstanceOf[js.Any], preventDefault = preventDefault.asInstanceOf[js.Any], rubberband = rubberband.asInstanceOf[js.Any], swipe = swipe.asInstanceOf[js.Any], tapsThreshold = tapsThreshold.asInstanceOf[js.Any], threshold = threshold.asInstanceOf[js.Any], transform = js.Any.fromFunction1(transform), triggerAllEvents = triggerAllEvents.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(axisThreshold = axisThreshold.asInstanceOf[js.Any], bounds = bounds.asInstanceOf[js.Any], delay = delay.asInstanceOf[js.Any], device = device.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any], eventOptions = eventOptions.asInstanceOf[js.Any], filterTaps = filterTaps.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any], hasCustomTransform = hasCustomTransform.asInstanceOf[js.Any], keyboardDisplacement = keyboardDisplacement.asInstanceOf[js.Any], keys = keys.asInstanceOf[js.Any], lockDirection = lockDirection.asInstanceOf[js.Any], pointerButtons = pointerButtons.asInstanceOf[js.Any], pointerCapture = pointerCapture.asInstanceOf[js.Any], pointerLock = pointerLock.asInstanceOf[js.Any], preventDefault = preventDefault.asInstanceOf[js.Any], rubberband = rubberband.asInstanceOf[js.Any], swipe = swipe.asInstanceOf[js.Any], tapsThreshold = tapsThreshold.asInstanceOf[js.Any], threshold = threshold.asInstanceOf[js.Any], transform = js.Any.fromFunction1(transform), triggerAllEvents = triggerAllEvents.asInstanceOf[js.Any])
       __obj.asInstanceOf[InternalDragOptions]
     }
     
@@ -246,6 +249,8 @@ object distDeclarationsSrcTypesInternalConfigMod {
       inline def setFromFunction1(value: /* state */ js.UndefOr[DragStateeventEventTypesd] => Vector2): Self = StObject.set(x, "from", js.Any.fromFunction1(value))
       
       inline def setHasCustomTransform(value: Boolean): Self = StObject.set(x, "hasCustomTransform", value.asInstanceOf[js.Any])
+      
+      inline def setKeyboardDisplacement(value: Double): Self = StObject.set(x, "keyboardDisplacement", value.asInstanceOf[js.Any])
       
       inline def setKeys(value: Boolean): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
       

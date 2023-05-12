@@ -8,23 +8,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DebugConfiguration
   extends StObject
      with /**
-  * Additional debug type specific properties.
-  */
+		 * Additional debug type specific properties.
+		 */
 /* key */ StringDictionary[Any] {
   
   /**
-    * The name of the debug session.
-    */
+  		 * The name of the debug session.
+  		 */
   var name: String
   
   /**
-    * The request type of the debug session.
-    */
+  		 * The request type of the debug session.
+  		 */
   var request: String
   
   /**
-    * The type of the debug session.
-    */
+  		 * The type of the debug session.
+  		 */
   var `type`: String
 }
 object DebugConfiguration {

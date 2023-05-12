@@ -22,7 +22,7 @@ trait Component extends StObject {
   var data: js.UndefOr[ComponentData] = js.undefined
   
   /**
-    * The date that the component was created.
+    * The date that Image Builder created the component.
     */
   var dateCreated: js.UndefOr[DateTime] = js.undefined
   
@@ -47,19 +47,29 @@ trait Component extends StObject {
   var name: js.UndefOr[ResourceName] = js.undefined
   
   /**
+    * Indicates whether component source is hidden from view in the console, and from component detail results for API, CLI, or SDK operations.
+    */
+  var obfuscate: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * The owner of the component.
     */
   var owner: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * Contains parameter details for each of the parameters that are defined for the component.
+    * Contains parameter details for each of the parameters that the component document defined for the component.
     */
   var parameters: js.UndefOr[ComponentParameterDetailList] = js.undefined
   
   /**
-    * The platform of the component.
+    * The operating system platform of the component.
     */
   var platform: js.UndefOr[Platform] = js.undefined
+  
+  /**
+    * Contains the name of the publisher if this is a third-party component. Otherwise, this property is empty.
+    */
+  var publisher: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * Describes the current status of the component. This is used for components that are no longer active.
@@ -67,17 +77,17 @@ trait Component extends StObject {
   var state: js.UndefOr[ComponentState] = js.undefined
   
   /**
-    * The operating system (OS) version supported by the component. If the OS information is available, a prefix match is performed against the base image OS version during image recipe creation.
+    * The operating system (OS) version supported by the component. If the OS information is available, Image Builder performs a prefix match against the base image OS version during image recipe creation.
     */
   var supportedOsVersions: js.UndefOr[OsVersionList] = js.undefined
   
   /**
-    * The tags associated with the component.
+    * The tags that apply to the component.
     */
   var tags: js.UndefOr[TagMap] = js.undefined
   
   /**
-    * The type of the component denotes whether the component is used to build the image or only to test it.
+    * The component type specifies whether Image Builder uses the component to build the image or only to test it.
     */
   var `type`: js.UndefOr[ComponentType] = js.undefined
   
@@ -128,6 +138,10 @@ object Component {
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
+    inline def setObfuscate(value: Boolean): Self = StObject.set(x, "obfuscate", value.asInstanceOf[js.Any])
+    
+    inline def setObfuscateUndefined: Self = StObject.set(x, "obfuscate", js.undefined)
+    
     inline def setOwner(value: NonEmptyString): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
     inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
@@ -141,6 +155,10 @@ object Component {
     inline def setPlatform(value: Platform): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
     inline def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
+    
+    inline def setPublisher(value: NonEmptyString): Self = StObject.set(x, "publisher", value.asInstanceOf[js.Any])
+    
+    inline def setPublisherUndefined: Self = StObject.set(x, "publisher", js.undefined)
     
     inline def setState(value: ComponentState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     

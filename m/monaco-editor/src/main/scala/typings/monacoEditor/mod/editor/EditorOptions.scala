@@ -10,6 +10,7 @@ import typings.monacoEditor.anon.ReadonlyRequiredIEditorLi
 import typings.monacoEditor.anon.ReadonlyRequiredIEditorMi
 import typings.monacoEditor.anon.ReadonlyRequiredIEditorPa
 import typings.monacoEditor.anon.ReadonlyRequiredIEditorPaCycle
+import typings.monacoEditor.anon.ReadonlyRequiredIEditorSt
 import typings.monacoEditor.anon.ReadonlyRequiredIGotoLoca
 import typings.monacoEditor.anon.ReadonlyRequiredIGuidesOp
 import typings.monacoEditor.anon.ReadonlyRequiredIInlineSu
@@ -32,6 +33,7 @@ import typings.monacoEditor.mod.editor.EditorOption.codeLens
 import typings.monacoEditor.mod.editor.EditorOption.codeLensFontFamily
 import typings.monacoEditor.mod.editor.EditorOption.codeLensFontSize
 import typings.monacoEditor.mod.editor.EditorOption.colorDecorators
+import typings.monacoEditor.mod.editor.EditorOption.colorDecoratorsLimit
 import typings.monacoEditor.mod.editor.EditorOption.columnSelection
 import typings.monacoEditor.mod.editor.EditorOption.comments
 import typings.monacoEditor.mod.editor.EditorOption.contextmenu
@@ -42,6 +44,7 @@ import typings.monacoEditor.mod.editor.EditorOption.cursorStyle
 import typings.monacoEditor.mod.editor.EditorOption.cursorSurroundingLines
 import typings.monacoEditor.mod.editor.EditorOption.cursorSurroundingLinesStyle
 import typings.monacoEditor.mod.editor.EditorOption.cursorWidth
+import typings.monacoEditor.mod.editor.EditorOption.defaultColorDecorators
 import typings.monacoEditor.mod.editor.EditorOption.definitionLinkOpensInPeek
 import typings.monacoEditor.mod.editor.EditorOption.disableLayerHinting
 import typings.monacoEditor.mod.editor.EditorOption.disableMonospaceOptimizations
@@ -50,7 +53,7 @@ import typings.monacoEditor.mod.editor.EditorOption.dragAndDrop
 import typings.monacoEditor.mod.editor.EditorOption.dropIntoEditor
 import typings.monacoEditor.mod.editor.EditorOption.editorClassName
 import typings.monacoEditor.mod.editor.EditorOption.emptySelectionClipboard
-import typings.monacoEditor.mod.editor.EditorOption.experimental
+import typings.monacoEditor.mod.editor.EditorOption.experimentalWhitespaceRendering
 import typings.monacoEditor.mod.editor.EditorOption.extraEditorClassName
 import typings.monacoEditor.mod.editor.EditorOption.fastScrollSensitivity
 import typings.monacoEditor.mod.editor.EditorOption.find
@@ -64,6 +67,7 @@ import typings.monacoEditor.mod.editor.EditorOption.fontFamily
 import typings.monacoEditor.mod.editor.EditorOption.fontInfo
 import typings.monacoEditor.mod.editor.EditorOption.fontLigatures
 import typings.monacoEditor.mod.editor.EditorOption.fontSize
+import typings.monacoEditor.mod.editor.EditorOption.fontVariations
 import typings.monacoEditor.mod.editor.EditorOption.fontWeight
 import typings.monacoEditor.mod.editor.EditorOption.formatOnPaste
 import typings.monacoEditor.mod.editor.EditorOption.formatOnType
@@ -89,6 +93,7 @@ import typings.monacoEditor.mod.editor.EditorOption.minimap
 import typings.monacoEditor.mod.editor.EditorOption.mouseStyle
 import typings.monacoEditor.mod.editor.EditorOption.mouseWheelScrollSensitivity
 import typings.monacoEditor.mod.editor.EditorOption.mouseWheelZoom
+import typings.monacoEditor.mod.editor.EditorOption.multiCursorLimit
 import typings.monacoEditor.mod.editor.EditorOption.multiCursorMergeOverlapping
 import typings.monacoEditor.mod.editor.EditorOption.multiCursorModifier
 import typings.monacoEditor.mod.editor.EditorOption.multiCursorPaste
@@ -112,6 +117,7 @@ import typings.monacoEditor.mod.editor.EditorOption.renderWhitespace
 import typings.monacoEditor.mod.editor.EditorOption.revealHorizontalRightPadding
 import typings.monacoEditor.mod.editor.EditorOption.roundedSelection
 import typings.monacoEditor.mod.editor.EditorOption.rulers
+import typings.monacoEditor.mod.editor.EditorOption.screenReaderAnnounceInlineSuggestion
 import typings.monacoEditor.mod.editor.EditorOption.scrollBeyondLastColumn
 import typings.monacoEditor.mod.editor.EditorOption.scrollBeyondLastLine
 import typings.monacoEditor.mod.editor.EditorOption.scrollPredominantAxis
@@ -125,6 +131,7 @@ import typings.monacoEditor.mod.editor.EditorOption.showUnused
 import typings.monacoEditor.mod.editor.EditorOption.smartSelect
 import typings.monacoEditor.mod.editor.EditorOption.smoothScrolling
 import typings.monacoEditor.mod.editor.EditorOption.snippetSuggestions
+import typings.monacoEditor.mod.editor.EditorOption.stickyScroll
 import typings.monacoEditor.mod.editor.EditorOption.stickyTabStops
 import typings.monacoEditor.mod.editor.EditorOption.stopRenderingLineAfter
 import typings.monacoEditor.mod.editor.EditorOption.suggest
@@ -140,6 +147,7 @@ import typings.monacoEditor.mod.editor.EditorOption.unicodeHighlighting
 import typings.monacoEditor.mod.editor.EditorOption.unusualLineTerminators
 import typings.monacoEditor.mod.editor.EditorOption.useShadowDOM
 import typings.monacoEditor.mod.editor.EditorOption.useTabStops
+import typings.monacoEditor.mod.editor.EditorOption.wordBreak
 import typings.monacoEditor.mod.editor.EditorOption.wordSeparators
 import typings.monacoEditor.mod.editor.EditorOption.wordWrap
 import typings.monacoEditor.mod.editor.EditorOption.wordWrapBreakAfterCharacters
@@ -163,12 +171,16 @@ import typings.monacoEditor.monacoEditorStrings.brackets
 import typings.monacoEditor.monacoEditorStrings.copy
 import typings.monacoEditor.monacoEditorStrings.ctrlKey
 import typings.monacoEditor.monacoEditorStrings.default
+import typings.monacoEditor.monacoEditorStrings.dimmed
 import typings.monacoEditor.monacoEditorStrings.editable
+import typings.monacoEditor.monacoEditorStrings.explicit
 import typings.monacoEditor.monacoEditorStrings.first
+import typings.monacoEditor.monacoEditorStrings.font
 import typings.monacoEditor.monacoEditorStrings.full
 import typings.monacoEditor.monacoEditorStrings.gutter
 import typings.monacoEditor.monacoEditorStrings.indentation
 import typings.monacoEditor.monacoEditorStrings.inherit
+import typings.monacoEditor.monacoEditorStrings.keepAll
 import typings.monacoEditor.monacoEditorStrings.languageDefined
 import typings.monacoEditor.monacoEditorStrings.line
 import typings.monacoEditor.monacoEditorStrings.metaKey
@@ -176,6 +188,7 @@ import typings.monacoEditor.monacoEditorStrings.mouseover
 import typings.monacoEditor.monacoEditorStrings.near
 import typings.monacoEditor.monacoEditorStrings.never
 import typings.monacoEditor.monacoEditorStrings.none
+import typings.monacoEditor.monacoEditorStrings.normal
 import typings.monacoEditor.monacoEditorStrings.off
 import typings.monacoEditor.monacoEditorStrings.on
 import typings.monacoEditor.monacoEditorStrings.onlySnippets
@@ -187,6 +200,7 @@ import typings.monacoEditor.monacoEditorStrings.selection
 import typings.monacoEditor.monacoEditorStrings.simple
 import typings.monacoEditor.monacoEditorStrings.smart
 import typings.monacoEditor.monacoEditorStrings.spread
+import typings.monacoEditor.monacoEditorStrings.svg
 import typings.monacoEditor.monacoEditorStrings.text
 import typings.monacoEditor.monacoEditorStrings.top
 import typings.monacoEditor.monacoEditorStrings.trailing
@@ -318,6 +332,12 @@ object EditorOptions {
   @JSImport("monaco-editor", "editor.EditorOptions.colorDecorators")
   @js.native
   def colorDecorators: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.colorDecorators, Boolean] = js.native
+  
+  @JSImport("monaco-editor", "editor.EditorOptions.colorDecoratorsLimit")
+  @js.native
+  def colorDecoratorsLimit: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.colorDecoratorsLimit, Double] = js.native
+  inline def colorDecoratorsLimit_=(x: IEditorOption[colorDecoratorsLimit, Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("colorDecoratorsLimit")(x.asInstanceOf[js.Any])
+  
   inline def colorDecorators_=(x: IEditorOption[colorDecorators, Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("colorDecorators")(x.asInstanceOf[js.Any])
   
   @JSImport("monaco-editor", "editor.EditorOptions.columnSelection")
@@ -350,8 +370,11 @@ object EditorOptions {
   
   @JSImport("monaco-editor", "editor.EditorOptions.cursorSmoothCaretAnimation")
   @js.native
-  def cursorSmoothCaretAnimation: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.cursorSmoothCaretAnimation, Boolean] = js.native
-  inline def cursorSmoothCaretAnimation_=(x: IEditorOption[cursorSmoothCaretAnimation, Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cursorSmoothCaretAnimation")(x.asInstanceOf[js.Any])
+  def cursorSmoothCaretAnimation: IEditorOption[
+    typings.monacoEditor.mod.editor.EditorOption.cursorSmoothCaretAnimation, 
+    on | off | explicit
+  ] = js.native
+  inline def cursorSmoothCaretAnimation_=(x: IEditorOption[cursorSmoothCaretAnimation, on | off | explicit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cursorSmoothCaretAnimation")(x.asInstanceOf[js.Any])
   
   @JSImport("monaco-editor", "editor.EditorOptions.cursorStyle")
   @js.native
@@ -376,6 +399,11 @@ object EditorOptions {
   @js.native
   def cursorWidth: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.cursorWidth, Double] = js.native
   inline def cursorWidth_=(x: IEditorOption[cursorWidth, Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cursorWidth")(x.asInstanceOf[js.Any])
+  
+  @JSImport("monaco-editor", "editor.EditorOptions.defaultColorDecorators")
+  @js.native
+  def defaultColorDecorators: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.defaultColorDecorators, Boolean] = js.native
+  inline def defaultColorDecorators_=(x: IEditorOption[defaultColorDecorators, Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultColorDecorators")(x.asInstanceOf[js.Any])
   
   @JSImport("monaco-editor", "editor.EditorOptions.definitionLinkOpensInPeek")
   @js.native
@@ -423,13 +451,13 @@ object EditorOptions {
   def emptySelectionClipboard: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.emptySelectionClipboard, Boolean] = js.native
   inline def emptySelectionClipboard_=(x: IEditorOption[emptySelectionClipboard, Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("emptySelectionClipboard")(x.asInstanceOf[js.Any])
   
-  @JSImport("monaco-editor", "editor.EditorOptions.experimental")
+  @JSImport("monaco-editor", "editor.EditorOptions.experimentalWhitespaceRendering")
   @js.native
-  def experimental: IEditorOption[
-    typings.monacoEditor.mod.editor.EditorOption.experimental, 
-    EditorExperimentalOptions
+  def experimentalWhitespaceRendering: IEditorOption[
+    typings.monacoEditor.mod.editor.EditorOption.experimentalWhitespaceRendering, 
+    off | svg | font
   ] = js.native
-  inline def experimental_=(x: IEditorOption[experimental, EditorExperimentalOptions]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("experimental")(x.asInstanceOf[js.Any])
+  inline def experimentalWhitespaceRendering_=(x: IEditorOption[experimentalWhitespaceRendering, off | svg | font]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("experimentalWhitespaceRendering")(x.asInstanceOf[js.Any])
   
   @JSImport("monaco-editor", "editor.EditorOptions.extraEditorClassName")
   @js.native
@@ -496,6 +524,11 @@ object EditorOptions {
   @js.native
   def fontSize: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.fontSize, Double] = js.native
   inline def fontSize_=(x: IEditorOption[fontSize, Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fontSize")(x.asInstanceOf[js.Any])
+  
+  @JSImport("monaco-editor", "editor.EditorOptions.fontVariations")
+  @js.native
+  def fontVariations: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.fontVariations, String] = js.native
+  inline def fontVariations_=(x: IEditorOption[fontVariations, String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fontVariations")(x.asInstanceOf[js.Any])
   
   @JSImport("monaco-editor", "editor.EditorOptions.fontWeight")
   @js.native
@@ -570,8 +603,8 @@ object EditorOptions {
   
   @JSImport("monaco-editor", "editor.EditorOptions.lineDecorationsWidth")
   @js.native
-  def lineDecorationsWidth: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.lineDecorationsWidth, String | Double] = js.native
-  inline def lineDecorationsWidth_=(x: IEditorOption[lineDecorationsWidth, String | Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lineDecorationsWidth")(x.asInstanceOf[js.Any])
+  def lineDecorationsWidth: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.lineDecorationsWidth, Double] = js.native
+  inline def lineDecorationsWidth_=(x: IEditorOption[lineDecorationsWidth, Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lineDecorationsWidth")(x.asInstanceOf[js.Any])
   
   @JSImport("monaco-editor", "editor.EditorOptions.lineHeight")
   @js.native
@@ -626,6 +659,11 @@ object EditorOptions {
   @js.native
   def mouseWheelZoom: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.mouseWheelZoom, Boolean] = js.native
   inline def mouseWheelZoom_=(x: IEditorOption[mouseWheelZoom, Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mouseWheelZoom")(x.asInstanceOf[js.Any])
+  
+  @JSImport("monaco-editor", "editor.EditorOptions.multiCursorLimit")
+  @js.native
+  def multiCursorLimit: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.multiCursorLimit, Double] = js.native
+  inline def multiCursorLimit_=(x: IEditorOption[multiCursorLimit, Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("multiCursorLimit")(x.asInstanceOf[js.Any])
   
   @JSImport("monaco-editor", "editor.EditorOptions.multiCursorMergeOverlapping")
   @js.native
@@ -717,8 +755,8 @@ object EditorOptions {
   
   @JSImport("monaco-editor", "editor.EditorOptions.renderFinalNewline")
   @js.native
-  def renderFinalNewline: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.renderFinalNewline, Boolean] = js.native
-  inline def renderFinalNewline_=(x: IEditorOption[renderFinalNewline, Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("renderFinalNewline")(x.asInstanceOf[js.Any])
+  def renderFinalNewline: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.renderFinalNewline, on | off | dimmed] = js.native
+  inline def renderFinalNewline_=(x: IEditorOption[renderFinalNewline, on | off | dimmed]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("renderFinalNewline")(x.asInstanceOf[js.Any])
   
   @JSImport("monaco-editor", "editor.EditorOptions.renderLineHighlight")
   @js.native
@@ -767,6 +805,14 @@ object EditorOptions {
   @js.native
   def rulers: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.rulers, js.Object] = js.native
   inline def rulers_=(x: IEditorOption[rulers, js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rulers")(x.asInstanceOf[js.Any])
+  
+  @JSImport("monaco-editor", "editor.EditorOptions.screenReaderAnnounceInlineSuggestion")
+  @js.native
+  def screenReaderAnnounceInlineSuggestion: IEditorOption[
+    typings.monacoEditor.mod.editor.EditorOption.screenReaderAnnounceInlineSuggestion, 
+    Boolean
+  ] = js.native
+  inline def screenReaderAnnounceInlineSuggestion_=(x: IEditorOption[screenReaderAnnounceInlineSuggestion, Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("screenReaderAnnounceInlineSuggestion")(x.asInstanceOf[js.Any])
   
   @JSImport("monaco-editor", "editor.EditorOptions.scrollBeyondLastColumn")
   @js.native
@@ -844,6 +890,14 @@ object EditorOptions {
     none | top | bottom | `inline`
   ] = js.native
   inline def snippetSuggestions_=(x: IEditorOption[snippetSuggestions, none | top | bottom | `inline`]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("snippetSuggestions")(x.asInstanceOf[js.Any])
+  
+  @JSImport("monaco-editor", "editor.EditorOptions.stickyScroll")
+  @js.native
+  def stickyScroll: IEditorOption[
+    typings.monacoEditor.mod.editor.EditorOption.stickyScroll, 
+    ReadonlyRequiredIEditorSt
+  ] = js.native
+  inline def stickyScroll_=(x: IEditorOption[stickyScroll, ReadonlyRequiredIEditorSt]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stickyScroll")(x.asInstanceOf[js.Any])
   
   @JSImport("monaco-editor", "editor.EditorOptions.stickyTabStops")
   @js.native
@@ -929,6 +983,11 @@ object EditorOptions {
   @js.native
   def useTabStops: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.useTabStops, Boolean] = js.native
   inline def useTabStops_=(x: IEditorOption[useTabStops, Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("useTabStops")(x.asInstanceOf[js.Any])
+  
+  @JSImport("monaco-editor", "editor.EditorOptions.wordBreak")
+  @js.native
+  def wordBreak: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.wordBreak, normal | keepAll] = js.native
+  inline def wordBreak_=(x: IEditorOption[wordBreak, normal | keepAll]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("wordBreak")(x.asInstanceOf[js.Any])
   
   @JSImport("monaco-editor", "editor.EditorOptions.wordSeparators")
   @js.native

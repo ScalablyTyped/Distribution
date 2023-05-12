@@ -12,7 +12,7 @@ trait SessionIssuer extends StObject {
   var accountId: js.UndefOr[string] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the source account, IAM user, or role that was used to get the credentials.
+    * The Amazon Resource Name (ARN) of the source account, Identity and Access Management (IAM) user, or role that was used to get the credentials.
     */
   var arn: js.UndefOr[string] = js.undefined
   

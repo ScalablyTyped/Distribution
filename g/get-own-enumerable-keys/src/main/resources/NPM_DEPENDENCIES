@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "get-own-enumerable-keys" : "1.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "get-own-enumerable-keys" : "1.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

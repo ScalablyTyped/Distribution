@@ -12,7 +12,7 @@ trait CreateStageRequest extends StObject {
   var cacheClusterEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The stage's cache cluster size.
+    * The stage's cache capacity in GB. For more information about choosing a cache size, see Enabling API caching to enhance responsiveness.
     */
   var cacheClusterSize: js.UndefOr[CacheClusterSize] = js.undefined
   

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "pusher-js" : "7.5.0"
+      "pusher-js" : "8.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "pusher-js" : "7.5.0"
+      "pusher-js" : "8.0.2"
     }
   ],
   "compile-devDependencies" : [

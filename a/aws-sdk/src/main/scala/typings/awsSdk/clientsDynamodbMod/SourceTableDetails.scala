@@ -49,7 +49,7 @@ trait SourceTableDetails extends StObject {
   /**
     * Size of the table in bytes. Note that this is an approximate value.
     */
-  var TableSizeBytes: js.UndefOr[Long] = js.undefined
+  var TableSizeBytes: js.UndefOr[LongObject] = js.undefined
 }
 object SourceTableDetails {
   
@@ -91,7 +91,7 @@ object SourceTableDetails {
     
     inline def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
     
-    inline def setTableSizeBytes(value: Long): Self = StObject.set(x, "TableSizeBytes", value.asInstanceOf[js.Any])
+    inline def setTableSizeBytes(value: LongObject): Self = StObject.set(x, "TableSizeBytes", value.asInstanceOf[js.Any])
     
     inline def setTableSizeBytesUndefined: Self = StObject.set(x, "TableSizeBytes", js.undefined)
   }

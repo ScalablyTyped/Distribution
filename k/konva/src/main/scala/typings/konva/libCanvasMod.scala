@@ -65,6 +65,8 @@ object libCanvasMod {
     var pixelRatio: js.UndefOr[Double] = js.undefined
     
     var width: js.UndefOr[Double] = js.undefined
+    
+    var willReadFrequently: js.UndefOr[Boolean] = js.undefined
   }
   object ICanvasConfig {
     
@@ -87,6 +89,10 @@ object libCanvasMod {
       inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
       inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      
+      inline def setWillReadFrequently(value: Boolean): Self = StObject.set(x, "willReadFrequently", value.asInstanceOf[js.Any])
+      
+      inline def setWillReadFrequentlyUndefined: Self = StObject.set(x, "willReadFrequently", js.undefined)
     }
   }
 }

@@ -12,12 +12,15 @@ trait TupleType
   
   var elementFlags: js.Array[ElementFlags]
   
+  /** Number of initial required or optional elements */
   var fixedLength: Double
   
+  /** True if tuple has any rest or variadic elements */
   var hasRestElement: Boolean
   
   var labeledElementDeclarations: js.UndefOr[js.Array[NamedTupleMember | ParameterDeclaration]] = js.undefined
   
+  /** Number of required or variadic elements */
   var minLength: Double
   
   var readonly: Boolean

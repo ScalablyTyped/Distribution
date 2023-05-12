@@ -17,7 +17,7 @@ trait DescribeEventTypesRequest extends StObject {
   var locale: js.UndefOr[typings.awsSdk.clientsHealthMod.locale] = js.undefined
   
   /**
-    * The maximum number of items to return in one batch, between 10 and 100, inclusive.
+    * The maximum number of items to return in one batch, between 10 and 100, inclusive.  If you don't specify the maxResults parameter, this operation returns a maximum of 30 items by default. 
     */
   var maxResults: js.UndefOr[typings.awsSdk.clientsHealthMod.maxResults] = js.undefined
   

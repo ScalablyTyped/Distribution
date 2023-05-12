@@ -15,6 +15,13 @@ object materialsNodeEnumsNodeMaterialBlockConnectionPointTypesMod {
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[NodeMaterialBlockConnectionPointTypes & Double] = js.native
     
+    /** Bitmask of all types */
+    @js.native
+    sealed trait All
+      extends StObject
+         with NodeMaterialBlockConnectionPointTypes
+    /* 4095 */ val All: typings.babylonjs.materialsNodeEnumsNodeMaterialBlockConnectionPointTypesMod.NodeMaterialBlockConnectionPointTypes.All & Double = js.native
+    
     /** Detect type based on connection */
     @js.native
     sealed trait AutoDetect

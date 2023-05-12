@@ -19,6 +19,14 @@ trait NumberFormatInfoLoadOptions extends StObject {
   var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Gets the currency symbol for currency values. This is based on current system settings.
+    *
+    * @remarks
+    * [Api set: ExcelApi 1.17]
+    */
+  var currencySymbol: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * Gets the string used as the decimal separator for numeric values. This is based on current system settings.
     *
     * @remarks
@@ -47,6 +55,10 @@ object NumberFormatInfoLoadOptions {
     inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
     inline def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
+    
+    inline def setCurrencySymbol(value: Boolean): Self = StObject.set(x, "currencySymbol", value.asInstanceOf[js.Any])
+    
+    inline def setCurrencySymbolUndefined: Self = StObject.set(x, "currencySymbol", js.undefined)
     
     inline def setNumberDecimalSeparator(value: Boolean): Self = StObject.set(x, "numberDecimalSeparator", value.asInstanceOf[js.Any])
     

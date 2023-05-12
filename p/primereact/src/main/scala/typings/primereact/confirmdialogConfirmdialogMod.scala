@@ -21,36 +21,68 @@ object confirmdialogConfirmdialogMod {
     def this(props: ConfirmDialogProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: ConfirmDialogProps, context: Any) = this()
     
+    /**
+      * Used to call/update the component manually
+      * @param {ConfirmDialogProps} props - All component props
+      */
     def confirm(): Unit = js.native
     def confirm(props: ConfirmDialogProps): Unit = js.native
   }
   
   inline def confirmDialog(props: ConfirmDialogProps): ConfirmDialogReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("confirmDialog")(props.asInstanceOf[js.Any]).asInstanceOf[ConfirmDialogReturn]
   
-  type ConfirmDialogAppendToType = js.UndefOr[self | HTMLElement | Null]
-  
+  /**
+    * Custom confirm dialog options
+    */
   trait ConfirmDialogOptions
     extends StObject
        with /* key */ StringDictionary[Any] {
     
+    /**
+      * Callback to execute when action is confirmed.
+      */
     def accept(): Unit
     
+    /**
+      * Style class of the accept button.
+      */
     var acceptClassName: String
     
+    /**
+      * Label of the accept button.
+      * @defaultValue Yes
+      */
     var acceptLabel: String
     
+    /**
+      * Default element created by the component.
+      */
     var element: ReactNode
     
+    /**
+      * All component props
+      * @type {ConfirmDialogProps}
+      */
     var props: ConfirmDialogProps
     
+    /**
+      * Callback to execute when action is rejected.
+      */
     def reject(): Unit
     
+    /**
+      * Style class of the reject button.
+      */
     var rejectClassName: String
     
+    /**
+      * Label of the reject button.
+      * @defaultValue No
+      */
     var rejectLabel: String
   }
   object ConfirmDialogOptions {
@@ -94,44 +126,100 @@ object confirmdialogConfirmdialogMod {
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped {[ P in std.Exclude<keyof / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DialogProps * / any, 'onHide' | 'footer'> ]: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DialogProps * / any[P]} */ trait ConfirmDialogProps extends StObject {
     
+    /**
+      * Callback to execute when action is confirmed.
+      */
     var accept: js.UndefOr[js.Function0[Unit]] = js.undefined
     
+    /**
+      * Style class of the accept button.
+      */
     var acceptClassName: js.UndefOr[String] = js.undefined
     
+    /**
+      * Icon of the accept button.
+      */
     var acceptIcon: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconType<ConfirmDialogProps> */ Any
       ] = js.undefined
     
+    /**
+      * Label of the accept button.
+      * @defaultValue Yes
+      */
     var acceptLabel: js.UndefOr[String] = js.undefined
     
-    var appendTo: js.UndefOr[ConfirmDialogAppendToType] = js.undefined
+    /**
+      * DOM element instance where the overlay panel should be mounted. Valid values are any DOM Element and "self". The "self" value is used to render a component where it is located.
+      * @defaultValue document.body
+      */
+    var appendTo: js.UndefOr[self | HTMLElement | Null] = js.undefined
     
+    /**
+      * Used to get the child elements of the component.
+      * @readonly
+      */
     var children: js.UndefOr[ReactNode] = js.undefined
     
+    /**
+      * Style class of the element.
+      */
     var className: js.UndefOr[String] = js.undefined
     
-    var footer: js.UndefOr[ConfirmDialogTemplateType] = js.undefined
+    /**
+      * Footer content of the confirm dialog.
+      */
+    var footer: js.UndefOr[ReactNode | (js.Function1[/* options */ ConfirmDialogOptions, ReactNode])] = js.undefined
     
+    /**
+      * Icon to display next to the message.
+      */
     var icon: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconType<ConfirmDialogProps> */ Any
       ] = js.undefined
     
-    var message: js.UndefOr[ConfirmDialogTemplateType] = js.undefined
+    /**
+      * Message of the confirmation.
+      */
+    var message: js.UndefOr[ReactNode | (js.Function1[/* options */ ConfirmDialogOptions, ReactNode])] = js.undefined
     
+    /**
+      * Callback to invoke when confirm dialog is hidden.
+      */
     var onHide: js.UndefOr[js.Function1[/* result */ String, Unit]] = js.undefined
     
+    /**
+      * Callback to execute when action is rejected.
+      */
     var reject: js.UndefOr[js.Function0[Unit]] = js.undefined
     
+    /**
+      * Style class of the reject button.
+      */
     var rejectClassName: js.UndefOr[String] = js.undefined
     
+    /**
+      * Icon of the reject button.
+      */
     var rejectIcon: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconType<ConfirmDialogProps> */ Any
       ] = js.undefined
     
+    /**
+      * Label of the reject button.
+      * @defaultValue No
+      */
     var rejectLabel: js.UndefOr[String] = js.undefined
     
+    /**
+      * Unique tag key used to separate the confirmDialog components in the page.
+      */
     var tagKey: js.UndefOr[String] = js.undefined
     
+    /**
+      * Specifies the visibility of the confirm dialog.
+      * @defaultValue false
+      */
     var visible: js.UndefOr[Boolean] = js.undefined
   }
   object ConfirmDialogProps {
@@ -162,7 +250,7 @@ object confirmdialogConfirmdialogMod {
       
       inline def setAcceptUndefined: Self = StObject.set(x, "accept", js.undefined)
       
-      inline def setAppendTo(value: ConfirmDialogAppendToType): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
+      inline def setAppendTo(value: self | HTMLElement): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
       
       inline def setAppendToNull: Self = StObject.set(x, "appendTo", null)
       
@@ -176,7 +264,7 @@ object confirmdialogConfirmdialogMod {
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      inline def setFooter(value: ConfirmDialogTemplateType): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
+      inline def setFooter(value: ReactNode | (js.Function1[/* options */ ConfirmDialogOptions, ReactNode])): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
       
       inline def setFooterFunction1(value: /* options */ ConfirmDialogOptions => ReactNode): Self = StObject.set(x, "footer", js.Any.fromFunction1(value))
       
@@ -188,7 +276,7 @@ object confirmdialogConfirmdialogMod {
       
       inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
-      inline def setMessage(value: ConfirmDialogTemplateType): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: ReactNode | (js.Function1[/* options */ ConfirmDialogOptions, ReactNode])): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
       inline def setMessageFunction1(value: /* options */ ConfirmDialogOptions => ReactNode): Self = StObject.set(x, "message", js.Any.fromFunction1(value))
       
@@ -226,10 +314,19 @@ object confirmdialogConfirmdialogMod {
     }
   }
   
+  /**
+    * Object returned by the {@link confirmDialog} method.
+    */
   trait ConfirmDialogReturn extends StObject {
     
+    /**
+      * Used to hide the dialog.
+      */
     def hide(): Unit
     
+    /**
+      * Used to show the dialog.
+      */
     def show(): Unit
   }
   object ConfirmDialogReturn {
@@ -247,6 +344,4 @@ object confirmdialogConfirmdialogMod {
       inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
     }
   }
-  
-  type ConfirmDialogTemplateType = ReactNode | (js.Function1[/* options */ ConfirmDialogOptions, ReactNode])
 }

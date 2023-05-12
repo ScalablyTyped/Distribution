@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class TabInputTextDiff protected ()
   extends typings.vscode.mod.TabInputTextDiff {
   /**
-    * Constructs a new text diff tab input with the given URIs.
-    * @param original The uri of the original text resource.
-    * @param modified The uri of the modified text resource.
-    */
+  		 * Constructs a new text diff tab input with the given URIs.
+  		 * @param original The uri of the original text resource.
+  		 * @param modified The uri of the modified text resource.
+  		 */
   def this(original: typings.vscode.mod.Uri, modified: typings.vscode.mod.Uri) = this()
 }

@@ -11,9 +11,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def decode(string: String): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(string.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  inline def decode(string: String): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(string.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
   
-  inline def decodeUnsafe(string: String): js.UndefOr[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeUnsafe")(string.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Buffer]]
+  inline def decodeUnsafe(string: String): js.UndefOr[js.typedarray.Uint8Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeUnsafe")(string.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.typedarray.Uint8Array]]
   
   inline def encode(buffer: js.Array[Double]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(buffer.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def encode(buffer: js.typedarray.Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(buffer.asInstanceOf[js.Any]).asInstanceOf[String]

@@ -29,7 +29,7 @@ trait Theme extends StObject {
   /**
     * The identifier that the user gives to the theme.
     */
-  var ThemeId: js.UndefOr[RestrictiveResourceId] = js.undefined
+  var ThemeId: js.UndefOr[ShortRestrictiveResourceId] = js.undefined
   
   /**
     * The type of theme, based on how it was created. Valid values include: QUICKSIGHT and CUSTOM.
@@ -64,7 +64,7 @@ object Theme {
     
     inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    inline def setThemeId(value: RestrictiveResourceId): Self = StObject.set(x, "ThemeId", value.asInstanceOf[js.Any])
+    inline def setThemeId(value: ShortRestrictiveResourceId): Self = StObject.set(x, "ThemeId", value.asInstanceOf[js.Any])
     
     inline def setThemeIdUndefined: Self = StObject.set(x, "ThemeId", js.undefined)
     

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@fluentui/react-component-ref" : "0.64.0"
+      "@fluentui/react-component-ref" : "0.66.4"
     }
   ],
   "test-dependencies" : [
     {
-      "@fluentui/react-component-ref" : "0.64.0"
+      "@fluentui/react-component-ref" : "0.66.4"
     }
   ],
   "compile-devDependencies" : [

@@ -1,7 +1,7 @@
 
 # Scala.js typings for ipfs-utils
 
-Typings are for version 9.0.7
+Typings are for version 9.0.14
 
 ## Library description:
 Package to aggregate shared logic and dependencies for the IPFS ecosystem

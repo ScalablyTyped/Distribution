@@ -1,6 +1,7 @@
 package typings.awsSdk.clientsConfigserviceMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.awsSdk.awsSdkStrings.CFN_RESOURCE_SCHEMA
 import typings.awsSdk.awsSdkStrings.RESOURCE_ID
 import typings.awsSdk.awsSdkStrings.SCORE
 import typings.awsSdk.awsSdkStrings.SSM_DOCUMENT
@@ -86,6 +87,8 @@ type ChannelName = java.lang.String
   - java.lang.String
 */
 type ChronologicalOrder = _ChronologicalOrder | java.lang.String
+
+type ClientToken = java.lang.String
 
 type ComplianceByConfigRules = js.Array[ComplianceByConfigRule]
 
@@ -252,7 +255,20 @@ type EarlierTime = js.Date
 
 type EmptiableStringWithCharLimit256 = java.lang.String
 
+type EvaluationContextIdentifier = java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.DETECTIVE
+  - typings.awsSdk.awsSdkStrings.PROACTIVE
+  - java.lang.String
+*/
+type EvaluationMode = _EvaluationMode | java.lang.String
+
+type EvaluationModes = js.Array[EvaluationModeConfiguration]
+
 type EvaluationResults = js.Array[EvaluationResult]
+
+type EvaluationTimeout = Double
 
 type Evaluations = js.Array[Evaluation]
 
@@ -287,6 +303,8 @@ type LastUpdatedTime = js.Date
 type LaterTime = js.Date
 
 type Limit = Double
+
+type ListResourceEvaluationsPageItemLimit = Double
 
 type Long = Double
 
@@ -493,6 +511,10 @@ type RemediationParameters = StringDictionary[RemediationParameterValue]
 
 type RemediationTargetType = SSM_DOCUMENT | java.lang.String
 
+type ResourceConfiguration = java.lang.String
+
+type ResourceConfigurationSchemaType = CFN_RESOURCE_SCHEMA | java.lang.String
+
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.RESOURCE_TYPE
   - typings.awsSdk.awsSdkStrings.ACCOUNT_ID
@@ -506,6 +528,18 @@ type ResourceCounts = js.Array[ResourceCount]
 type ResourceCreationTime = js.Date
 
 type ResourceDeletionTime = js.Date
+
+type ResourceEvaluationId = java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.IN_PROGRESS
+  - typings.awsSdk.awsSdkStrings.FAILED
+  - typings.awsSdk.awsSdkStrings.SUCCEEDED
+  - java.lang.String
+*/
+type ResourceEvaluationStatus = _ResourceEvaluationStatus | java.lang.String
+
+type ResourceEvaluations = js.Array[ResourceEvaluation]
 
 type ResourceId = java.lang.String
 
@@ -684,6 +718,139 @@ type ResourceName = java.lang.String
   - typings.awsSdk.awsSdkStrings.AWSColonColonSESColonColonContactList
   - typings.awsSdk.awsSdkStrings.AWSColonColonSESColonColonConfigurationSet
   - typings.awsSdk.awsSdkStrings.AWSColonColonRoute53ColonColonHostedZone
+  - typings.awsSdk.awsSdkStrings.AWSColonColonIoTEventsColonColonInput
+  - typings.awsSdk.awsSdkStrings.AWSColonColonIoTEventsColonColonDetectorModel
+  - typings.awsSdk.awsSdkStrings.AWSColonColonIoTEventsColonColonAlarmModel
+  - typings.awsSdk.awsSdkStrings.AWSColonColonServiceDiscoveryColonColonHttpNamespace
+  - typings.awsSdk.awsSdkStrings.AWSColonColonEventsColonColonEventBus
+  - typings.awsSdk.awsSdkStrings.AWSColonColonImageBuilderColonColonContainerRecipe
+  - typings.awsSdk.awsSdkStrings.AWSColonColonImageBuilderColonColonDistributionConfiguration
+  - typings.awsSdk.awsSdkStrings.AWSColonColonImageBuilderColonColonInfrastructureConfiguration
+  - typings.awsSdk.awsSdkStrings.AWSColonColonDataSyncColonColonLocationObjectStorage
+  - typings.awsSdk.awsSdkStrings.AWSColonColonDataSyncColonColonLocationHDFS
+  - typings.awsSdk.awsSdkStrings.AWSColonColonGlueColonColonClassifier
+  - typings.awsSdk.awsSdkStrings.AWSColonColonRoute53RecoveryReadinessColonColonCell
+  - typings.awsSdk.awsSdkStrings.AWSColonColonRoute53RecoveryReadinessColonColonReadinessCheck
+  - typings.awsSdk.awsSdkStrings.AWSColonColonECRColonColonRegistryPolicy
+  - typings.awsSdk.awsSdkStrings.AWSColonColonBackupColonColonReportPlan
+  - typings.awsSdk.awsSdkStrings.AWSColonColonLightsailColonColonCertificate
+  - typings.awsSdk.awsSdkStrings.AWSColonColonRUMColonColonAppMonitor
+  - typings.awsSdk.awsSdkStrings.AWSColonColonEventsColonColonEndpoint
+  - typings.awsSdk.awsSdkStrings.AWSColonColonSESColonColonReceiptRuleSet
+  - typings.awsSdk.awsSdkStrings.AWSColonColonEventsColonColonArchive
+  - typings.awsSdk.awsSdkStrings.AWSColonColonEventsColonColonApiDestination
+  - typings.awsSdk.awsSdkStrings.AWSColonColonLightsailColonColonDisk
+  - typings.awsSdk.awsSdkStrings.AWSColonColonFISColonColonExperimentTemplate
+  - typings.awsSdk.awsSdkStrings.AWSColonColonDataSyncColonColonLocationFSxWindows
+  - typings.awsSdk.awsSdkStrings.AWSColonColonSESColonColonReceiptFilter
+  - typings.awsSdk.awsSdkStrings.AWSColonColonGuardDutyColonColonFilter
+  - typings.awsSdk.awsSdkStrings.AWSColonColonSESColonColonTemplate
+  - typings.awsSdk.awsSdkStrings.AWSColonColonAmazonMQColonColonBroker
+  - typings.awsSdk.awsSdkStrings.AWSColonColonAppConfigColonColonEnvironment
+  - typings.awsSdk.awsSdkStrings.AWSColonColonAppConfigColonColonConfigurationProfile
+  - typings.awsSdk.awsSdkStrings.AWSColonColonCloud9ColonColonEnvironmentEC2
+  - typings.awsSdk.awsSdkStrings.AWSColonColonEventSchemasColonColonRegistry
+  - typings.awsSdk.awsSdkStrings.AWSColonColonEventSchemasColonColonRegistryPolicy
+  - typings.awsSdk.awsSdkStrings.AWSColonColonEventSchemasColonColonDiscoverer
+  - typings.awsSdk.awsSdkStrings.AWSColonColonFraudDetectorColonColonLabel
+  - typings.awsSdk.awsSdkStrings.AWSColonColonFraudDetectorColonColonEntityType
+  - typings.awsSdk.awsSdkStrings.AWSColonColonFraudDetectorColonColonVariable
+  - typings.awsSdk.awsSdkStrings.AWSColonColonFraudDetectorColonColonOutcome
+  - typings.awsSdk.awsSdkStrings.AWSColonColonIoTColonColonAuthorizer
+  - typings.awsSdk.awsSdkStrings.AWSColonColonIoTColonColonSecurityProfile
+  - typings.awsSdk.awsSdkStrings.AWSColonColonIoTColonColonRoleAlias
+  - typings.awsSdk.awsSdkStrings.AWSColonColonIoTColonColonDimension
+  - typings.awsSdk.awsSdkStrings.AWSColonColonIoTAnalyticsColonColonDatastore
+  - typings.awsSdk.awsSdkStrings.AWSColonColonLightsailColonColonBucket
+  - typings.awsSdk.awsSdkStrings.AWSColonColonLightsailColonColonStaticIp
+  - typings.awsSdk.awsSdkStrings.AWSColonColonMediaPackageColonColonPackagingGroup
+  - typings.awsSdk.awsSdkStrings.AWSColonColonRoute53RecoveryReadinessColonColonRecoveryGroup
+  - typings.awsSdk.awsSdkStrings.AWSColonColonResilienceHubColonColonResiliencyPolicy
+  - typings.awsSdk.awsSdkStrings.AWSColonColonTransferColonColonWorkflow
+  - typings.awsSdk.awsSdkStrings.AWSColonColonEKSColonColonIdentityProviderConfig
+  - typings.awsSdk.awsSdkStrings.AWSColonColonEKSColonColonAddon
+  - typings.awsSdk.awsSdkStrings.AWSColonColonGlueColonColonMLTransform
+  - typings.awsSdk.awsSdkStrings.AWSColonColonIoTColonColonPolicy
+  - typings.awsSdk.awsSdkStrings.AWSColonColonIoTColonColonMitigationAction
+  - typings.awsSdk.awsSdkStrings.AWSColonColonIoTTwinMakerColonColonWorkspace
+  - typings.awsSdk.awsSdkStrings.AWSColonColonIoTTwinMakerColonColonEntity
+  - typings.awsSdk.awsSdkStrings.AWSColonColonIoTAnalyticsColonColonDataset
+  - typings.awsSdk.awsSdkStrings.AWSColonColonIoTAnalyticsColonColonPipeline
+  - typings.awsSdk.awsSdkStrings.AWSColonColonIoTAnalyticsColonColonChannel
+  - typings.awsSdk.awsSdkStrings.AWSColonColonIoTSiteWiseColonColonDashboard
+  - typings.awsSdk.awsSdkStrings.AWSColonColonIoTSiteWiseColonColonProject
+  - typings.awsSdk.awsSdkStrings.AWSColonColonIoTSiteWiseColonColonPortal
+  - typings.awsSdk.awsSdkStrings.AWSColonColonIoTSiteWiseColonColonAssetModel
+  - typings.awsSdk.awsSdkStrings.AWSColonColonIVSColonColonChannel
+  - typings.awsSdk.awsSdkStrings.AWSColonColonIVSColonColonRecordingConfiguration
+  - typings.awsSdk.awsSdkStrings.AWSColonColonIVSColonColonPlaybackKeyPair
+  - typings.awsSdk.awsSdkStrings.AWSColonColonKinesisAnalyticsV2ColonColonApplication
+  - typings.awsSdk.awsSdkStrings.AWSColonColonRDSColonColonGlobalCluster
+  - typings.awsSdk.awsSdkStrings.AWSColonColonS3ColonColonMultiRegionAccessPoint
+  - typings.awsSdk.awsSdkStrings.AWSColonColonDeviceFarmColonColonTestGridProject
+  - typings.awsSdk.awsSdkStrings.AWSColonColonBudgetsColonColonBudgetsAction
+  - typings.awsSdk.awsSdkStrings.AWSColonColonLexColonColonBot
+  - typings.awsSdk.awsSdkStrings.AWSColonColonCodeGuruReviewerColonColonRepositoryAssociation
+  - typings.awsSdk.awsSdkStrings.AWSColonColonIoTColonColonCustomMetric
+  - typings.awsSdk.awsSdkStrings.AWSColonColonRoute53ResolverColonColonFirewallDomainList
+  - typings.awsSdk.awsSdkStrings.AWSColonColonRoboMakerColonColonRobotApplicationVersion
+  - typings.awsSdk.awsSdkStrings.AWSColonColonEC2ColonColonTrafficMirrorSession
+  - typings.awsSdk.awsSdkStrings.AWSColonColonIoTSiteWiseColonColonGateway
+  - typings.awsSdk.awsSdkStrings.AWSColonColonLexColonColonBotAlias
+  - typings.awsSdk.awsSdkStrings.AWSColonColonLookoutMetricsColonColonAlert
+  - typings.awsSdk.awsSdkStrings.AWSColonColonIoTColonColonAccountAuditConfiguration
+  - typings.awsSdk.awsSdkStrings.AWSColonColonEC2ColonColonTrafficMirrorTarget
+  - typings.awsSdk.awsSdkStrings.AWSColonColonS3ColonColonStorageLens
+  - typings.awsSdk.awsSdkStrings.AWSColonColonIoTColonColonScheduledAudit
+  - typings.awsSdk.awsSdkStrings.AWSColonColonEventsColonColonConnection
+  - typings.awsSdk.awsSdkStrings.AWSColonColonEventSchemasColonColonSchema
+  - typings.awsSdk.awsSdkStrings.AWSColonColonMediaPackageColonColonPackagingConfiguration
+  - typings.awsSdk.awsSdkStrings.AWSColonColonKinesisVideoColonColonSignalingChannel
+  - typings.awsSdk.awsSdkStrings.AWSColonColonAppStreamColonColonDirectoryConfig
+  - typings.awsSdk.awsSdkStrings.AWSColonColonLookoutVisionColonColonProject
+  - typings.awsSdk.awsSdkStrings.AWSColonColonRoute53RecoveryControlColonColonCluster
+  - typings.awsSdk.awsSdkStrings.AWSColonColonRoute53RecoveryControlColonColonSafetyRule
+  - typings.awsSdk.awsSdkStrings.AWSColonColonRoute53RecoveryControlColonColonControlPanel
+  - typings.awsSdk.awsSdkStrings.AWSColonColonRoute53RecoveryControlColonColonRoutingControl
+  - typings.awsSdk.awsSdkStrings.AWSColonColonRoute53RecoveryReadinessColonColonResourceSet
+  - typings.awsSdk.awsSdkStrings.AWSColonColonRoboMakerColonColonSimulationApplication
+  - typings.awsSdk.awsSdkStrings.AWSColonColonRoboMakerColonColonRobotApplication
+  - typings.awsSdk.awsSdkStrings.AWSColonColonHealthLakeColonColonFHIRDatastore
+  - typings.awsSdk.awsSdkStrings.AWSColonColonPinpointColonColonSegment
+  - typings.awsSdk.awsSdkStrings.AWSColonColonPinpointColonColonApplicationSettings
+  - typings.awsSdk.awsSdkStrings.AWSColonColonEventsColonColonRule
+  - typings.awsSdk.awsSdkStrings.AWSColonColonEC2ColonColonDHCPOptions
+  - typings.awsSdk.awsSdkStrings.AWSColonColonEC2ColonColonNetworkInsightsPath
+  - typings.awsSdk.awsSdkStrings.AWSColonColonEC2ColonColonTrafficMirrorFilter
+  - typings.awsSdk.awsSdkStrings.AWSColonColonEC2ColonColonIPAM
+  - typings.awsSdk.awsSdkStrings.AWSColonColonIoTTwinMakerColonColonScene
+  - typings.awsSdk.awsSdkStrings.AWSColonColonNetworkManagerColonColonTransitGatewayRegistration
+  - typings.awsSdk.awsSdkStrings.AWSColonColonCustomerProfilesColonColonDomain
+  - typings.awsSdk.awsSdkStrings.AWSColonColonAutoScalingColonColonWarmPool
+  - typings.awsSdk.awsSdkStrings.AWSColonColonConnectColonColonPhoneNumber
+  - typings.awsSdk.awsSdkStrings.AWSColonColonAppConfigColonColonDeploymentStrategy
+  - typings.awsSdk.awsSdkStrings.AWSColonColonAppFlowColonColonFlow
+  - typings.awsSdk.awsSdkStrings.AWSColonColonAuditManagerColonColonAssessment
+  - typings.awsSdk.awsSdkStrings.AWSColonColonCloudWatchColonColonMetricStream
+  - typings.awsSdk.awsSdkStrings.AWSColonColonDeviceFarmColonColonInstanceProfile
+  - typings.awsSdk.awsSdkStrings.AWSColonColonDeviceFarmColonColonProject
+  - typings.awsSdk.awsSdkStrings.AWSColonColonEC2ColonColonEC2Fleet
+  - typings.awsSdk.awsSdkStrings.AWSColonColonEC2ColonColonSubnetRouteTableAssociation
+  - typings.awsSdk.awsSdkStrings.AWSColonColonECRColonColonPullThroughCacheRule
+  - typings.awsSdk.awsSdkStrings.AWSColonColonGroundStationColonColonConfig
+  - typings.awsSdk.awsSdkStrings.AWSColonColonImageBuilderColonColonImagePipeline
+  - typings.awsSdk.awsSdkStrings.AWSColonColonIoTColonColonFleetMetric
+  - typings.awsSdk.awsSdkStrings.AWSColonColonIoTWirelessColonColonServiceProfile
+  - typings.awsSdk.awsSdkStrings.AWSColonColonNetworkManagerColonColonDevice
+  - typings.awsSdk.awsSdkStrings.AWSColonColonNetworkManagerColonColonGlobalNetwork
+  - typings.awsSdk.awsSdkStrings.AWSColonColonNetworkManagerColonColonLink
+  - typings.awsSdk.awsSdkStrings.AWSColonColonNetworkManagerColonColonSite
+  - typings.awsSdk.awsSdkStrings.AWSColonColonPanoramaColonColonPackage
+  - typings.awsSdk.awsSdkStrings.AWSColonColonPinpointColonColonApp
+  - typings.awsSdk.awsSdkStrings.AWSColonColonRedshiftColonColonScheduledAction
+  - typings.awsSdk.awsSdkStrings.AWSColonColonRoute53ResolverColonColonFirewallRuleGroupAssociation
+  - typings.awsSdk.awsSdkStrings.AWSColonColonSageMakerColonColonAppImageConfig
+  - typings.awsSdk.awsSdkStrings.AWSColonColonSageMakerColonColonImage
   - java.lang.String
 */
 type ResourceType = _ResourceType | java.lang.String

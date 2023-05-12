@@ -11,6 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Manifest keys: `user_scripts`, `user_scripts`
   *
+  * Not supported on manifest versions above 2.
+  *
   * Not allowed in: Devtools pages
   */
 object userScripts {

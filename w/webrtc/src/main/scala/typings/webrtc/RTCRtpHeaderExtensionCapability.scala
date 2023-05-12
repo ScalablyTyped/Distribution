@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // https://www.w3.org/TR/webrtc/#idl-def-rtcrtpheaderextensioncapability
 trait RTCRtpHeaderExtensionCapability extends StObject {
   
-  var uri: js.UndefOr[String] = js.undefined
+  var uri: String
 }
 object RTCRtpHeaderExtensionCapability {
   
-  inline def apply(): RTCRtpHeaderExtensionCapability = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(uri: String): RTCRtpHeaderExtensionCapability = {
+    val __obj = js.Dynamic.literal(uri = uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCRtpHeaderExtensionCapability]
   }
   
@@ -20,7 +20,5 @@ object RTCRtpHeaderExtensionCapability {
   implicit open class MutableBuilder[Self <: RTCRtpHeaderExtensionCapability] (val x: Self) extends AnyVal {
     
     inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
-    
-    inline def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
   }
 }

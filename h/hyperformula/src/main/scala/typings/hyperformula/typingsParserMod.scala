@@ -16,7 +16,7 @@ import typings.hyperformula.typingsParserAstMod.ProcedureAst
 import typings.hyperformula.typingsParserAstMod.RangeSheetReferenceType
 import typings.hyperformula.typingsParserCellAddressMod.CellReferenceType
 import typings.hyperformula.typingsParserColumnAddressMod.ColumnAddress
-import typings.hyperformula.typingsParserLexerConfigMod.ILexerConfig
+import typings.hyperformula.typingsParserLexerConfigMod.LexerConfig
 import typings.hyperformula.typingsParserParserConfigMod.ParserConfig
 import typings.hyperformula.typingsParserRelativeDependencyMod.RelativeDependency
 import typings.hyperformula.typingsParserRowAddressMod.RowAddress
@@ -127,8 +127,8 @@ object typingsParserMod {
     inline def fromColAndRow(col: ColumnAddress, row: RowAddress): typings.hyperformula.typingsParserCellAddressMod.CellAddress = (^.asInstanceOf[js.Dynamic].applyDynamic("fromColAndRow")(col.asInstanceOf[js.Any], row.asInstanceOf[js.Any])).asInstanceOf[typings.hyperformula.typingsParserCellAddressMod.CellAddress]
     inline def fromColAndRow(col: ColumnAddress, row: RowAddress, sheet: Double): typings.hyperformula.typingsParserCellAddressMod.CellAddress = (^.asInstanceOf[js.Dynamic].applyDynamic("fromColAndRow")(col.asInstanceOf[js.Any], row.asInstanceOf[js.Any], sheet.asInstanceOf[js.Any])).asInstanceOf[typings.hyperformula.typingsParserCellAddressMod.CellAddress]
     
-    inline def relative(row: Double, col: Double): typings.hyperformula.typingsParserCellAddressMod.CellAddress = (^.asInstanceOf[js.Dynamic].applyDynamic("relative")(row.asInstanceOf[js.Any], col.asInstanceOf[js.Any])).asInstanceOf[typings.hyperformula.typingsParserCellAddressMod.CellAddress]
-    inline def relative(row: Double, col: Double, sheet: Double): typings.hyperformula.typingsParserCellAddressMod.CellAddress = (^.asInstanceOf[js.Dynamic].applyDynamic("relative")(row.asInstanceOf[js.Any], col.asInstanceOf[js.Any], sheet.asInstanceOf[js.Any])).asInstanceOf[typings.hyperformula.typingsParserCellAddressMod.CellAddress]
+    inline def relative(col: Double, row: Double): typings.hyperformula.typingsParserCellAddressMod.CellAddress = (^.asInstanceOf[js.Dynamic].applyDynamic("relative")(col.asInstanceOf[js.Any], row.asInstanceOf[js.Any])).asInstanceOf[typings.hyperformula.typingsParserCellAddressMod.CellAddress]
+    inline def relative(col: Double, row: Double, sheet: Double): typings.hyperformula.typingsParserCellAddressMod.CellAddress = (^.asInstanceOf[js.Dynamic].applyDynamic("relative")(col.asInstanceOf[js.Any], row.asInstanceOf[js.Any], sheet.asInstanceOf[js.Any])).asInstanceOf[typings.hyperformula.typingsParserCellAddressMod.CellAddress]
   }
   
   @JSImport("hyperformula/typings/parser", "CellRangeDependency")
@@ -149,7 +149,7 @@ object typingsParserMod {
   @js.native
   open class FormulaLexer protected ()
     extends typings.hyperformula.typingsParserFormulaParserMod.FormulaLexer {
-    def this(lexerConfig: ILexerConfig) = this()
+    def this(lexerConfig: LexerConfig) = this()
   }
   /* static members */
   object FormulaLexer {
@@ -176,6 +176,18 @@ object typingsParserMod {
   open class ParserWithCaching protected ()
     extends typings.hyperformula.typingsParserParserWithCachingMod.ParserWithCaching {
     def this(config: ParserConfig, functionRegistry: FunctionRegistry, sheetMapping: SheetMappingFn) = this()
+  }
+  /* static members */
+  object ParserWithCaching {
+    
+    @JSImport("hyperformula/typings/parser", "ParserWithCaching")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("hyperformula/typings/parser", "ParserWithCaching.compareSheetIds")
+    @js.native
+    def compareSheetIds: Any = js.native
+    inline def compareSheetIds_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("compareSheetIds")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("hyperformula/typings/parser", "ParsingErrorType")
@@ -209,7 +221,7 @@ object typingsParserMod {
     extends typings.hyperformula.typingsParserUnparserMod.Unparser {
     def this(
       config: ParserConfig,
-      lexerConfig: ILexerConfig,
+      lexerConfig: LexerConfig,
       sheetMappingFn: SheetIndexMappingFn,
       namedExpressions: NamedExpressions
     ) = this()
@@ -230,7 +242,7 @@ object typingsParserMod {
     leadingWhitespace: String
   ): CellRangeAst = (^.asInstanceOf[js.Dynamic].applyDynamic("buildCellRangeAst")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], sheetReferenceType.asInstanceOf[js.Any], leadingWhitespace.asInstanceOf[js.Any])).asInstanceOf[CellRangeAst]
   
-  inline def buildLexerConfig(config: ParserConfig): ILexerConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("buildLexerConfig")(config.asInstanceOf[js.Any]).asInstanceOf[ILexerConfig]
+  inline def buildLexerConfig(config: ParserConfig): LexerConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("buildLexerConfig")(config.asInstanceOf[js.Any]).asInstanceOf[LexerConfig]
   
   inline def buildParsingErrorAst(): ErrorAst = ^.asInstanceOf[js.Dynamic].applyDynamic("buildParsingErrorAst")().asInstanceOf[ErrorAst]
   

@@ -1,7 +1,7 @@
 
 # Scala.js typings for commitlint__types
 
-Typings are for version 17.0.0
+Typings are for version 17.4.4
 
 ## Library description:
 Shared types for commitlint packages

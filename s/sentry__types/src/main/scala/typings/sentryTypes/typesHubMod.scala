@@ -200,6 +200,12 @@ object typesHubMod {
     def setUser(user: User): Unit = js.native
     
     /**
+      * Returns if default PII should be sent to Sentry and propagated in ourgoing requests
+      * when Tracing is used.
+      */
+    def shouldSendDefaultPii(): Boolean = js.native
+    
+    /**
       * Starts a new `Session`, sets on the current scope and returns it.
       *
       * To finish a `session`, it has to be passed directly to `client.captureSession`, which is done automatically

@@ -14,6 +14,8 @@ trait IsFQDNOptions extends StObject {
   
   var allow_wildcard: js.UndefOr[Boolean] = js.undefined
   
+  var ignore_max_length: js.UndefOr[Boolean] = js.undefined
+  
   var require_tld: js.UndefOr[Boolean] = js.undefined
 }
 object IsFQDNOptions {
@@ -41,6 +43,10 @@ object IsFQDNOptions {
     inline def setAllow_wildcard(value: Boolean): Self = StObject.set(x, "allow_wildcard", value.asInstanceOf[js.Any])
     
     inline def setAllow_wildcardUndefined: Self = StObject.set(x, "allow_wildcard", js.undefined)
+    
+    inline def setIgnore_max_length(value: Boolean): Self = StObject.set(x, "ignore_max_length", value.asInstanceOf[js.Any])
+    
+    inline def setIgnore_max_lengthUndefined: Self = StObject.set(x, "ignore_max_length", js.undefined)
     
     inline def setRequire_tld(value: Boolean): Self = StObject.set(x, "require_tld", value.asInstanceOf[js.Any])
     

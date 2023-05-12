@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class TestTag protected ()
   extends typings.vscode.mod.TestTag {
   /**
-    * Creates a new TestTag instance.
-    * @param id ID of the test tag.
-    */
+  		 * Creates a new TestTag instance.
+  		 * @param id ID of the test tag.
+  		 */
   def this(id: String) = this()
 }

@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PostResponses402 extends StObject {
   
   /**
-    * Starts a user's codespace.
+    * Start a codespace for the authenticated user
+    * @description Starts a user's codespace.
     *
     * You must authenticate using an access token with the `codespace` scope to use this endpoint.
     *

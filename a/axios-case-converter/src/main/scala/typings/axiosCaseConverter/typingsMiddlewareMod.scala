@@ -1,7 +1,7 @@
 package typings.axiosCaseConverter
 
 import typings.axiosCaseConverter.typingsTypesMod.ApplyCaseMiddleware
-import typings.axiosCaseConverter.typingsTypesMod.CreateAxiosInterceptor
+import typings.axiosCaseConverter.typingsTypesMod.CreateAxiosRequestInterceptor
 import typings.axiosCaseConverter.typingsTypesMod.CreateAxiosRequestTransformer
 import typings.axiosCaseConverter.typingsTypesMod.CreateAxiosResponseTransformer
 import org.scalablytyped.runtime.StObject
@@ -20,7 +20,7 @@ object typingsMiddlewareMod {
   
   @JSImport("axios-case-converter/typings/middleware", "createSnakeParamsInterceptor")
   @js.native
-  val createSnakeParamsInterceptor: CreateAxiosInterceptor = js.native
+  val createSnakeParamsInterceptor: CreateAxiosRequestInterceptor = js.native
   
   @JSImport("axios-case-converter/typings/middleware", "createSnakeRequestTransformer")
   @js.native

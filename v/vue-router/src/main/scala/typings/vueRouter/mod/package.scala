@@ -19,6 +19,7 @@ import typings.vueRuntimeCore.mod.ExtractDefaultPropTypes
 import typings.vueRuntimeCore.mod.InjectionKey
 import typings.vueRuntimeCore.mod.MethodOptions
 import typings.vueRuntimeCore.mod.PublicProps
+import typings.vueRuntimeCore.mod.ResolveProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -147,7 +148,8 @@ type NavigationGuardNextCallback = js.Function1[
   js.Object, 
   js.Object, 
   `false`, 
-  ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+  ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String, js.Object], 
+  js.Object, 
   js.Object
 ], 
 Any]
@@ -185,8 +187,9 @@ ComponentOptionsMixin,
 js.Object, 
 String, 
 PublicProps, 
-/* import warning: importer.ImportType#apply Failed type conversion: {} extends @vue/runtime-core.@vue/runtime-core.ComponentPropsOptions<@vue/runtime-core.@vue/runtime-core.Data> ? @vue/runtime-core.@vue/runtime-core.ExtractPropTypes<{}> : {} */ js.Any, 
-ExtractDefaultPropTypes[js.Object]])
+ResolveProps[js.Object, js.Object], 
+ExtractDefaultPropTypes[js.Object], 
+js.Object])
 
 /* Rewritten from type alias, can be one of: 
   - java.lang.String

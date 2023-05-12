@@ -75,23 +75,23 @@ inline def color: StyleFunc = ^.asInstanceOf[js.Dynamic].selectDynamic("color").
 
 inline def compose(parsers: StyleFunc*): StyleFunc = ^.asInstanceOf[js.Dynamic].applyDynamic("compose")(parsers.asInstanceOf[Seq[js.Any]]*).asInstanceOf[StyleFunc]
 
-inline def createSystemComponent[T](react: TypeofReact): // tslint:disable-next-line no-unnecessary-generics
-ComponentType[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createSystemComponent")(react.asInstanceOf[js.Any]).asInstanceOf[// tslint:disable-next-line no-unnecessary-generics
+inline def createSystemComponent[T](react: TypeofReact): // eslint-disable-next-line no-unnecessary-generics
+ComponentType[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createSystemComponent")(react.asInstanceOf[js.Any]).asInstanceOf[// eslint-disable-next-line no-unnecessary-generics
 ComponentType[T]]
-inline def createSystemComponent[T](react: TypeofReact, defaultComponent: String): // tslint:disable-next-line no-unnecessary-generics
-ComponentType[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createSystemComponent")(react.asInstanceOf[js.Any], defaultComponent.asInstanceOf[js.Any])).asInstanceOf[// tslint:disable-next-line no-unnecessary-generics
+inline def createSystemComponent[T](react: TypeofReact, defaultComponent: String): // eslint-disable-next-line no-unnecessary-generics
+ComponentType[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createSystemComponent")(react.asInstanceOf[js.Any], defaultComponent.asInstanceOf[js.Any])).asInstanceOf[// eslint-disable-next-line no-unnecessary-generics
 ComponentType[T]]
-inline def createSystemComponent[T](react: TypeofReact, defaultComponent: String, system: StyleFunc): // tslint:disable-next-line no-unnecessary-generics
-ComponentType[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createSystemComponent")(react.asInstanceOf[js.Any], defaultComponent.asInstanceOf[js.Any], system.asInstanceOf[js.Any])).asInstanceOf[// tslint:disable-next-line no-unnecessary-generics
+inline def createSystemComponent[T](react: TypeofReact, defaultComponent: String, system: StyleFunc): // eslint-disable-next-line no-unnecessary-generics
+ComponentType[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createSystemComponent")(react.asInstanceOf[js.Any], defaultComponent.asInstanceOf[js.Any], system.asInstanceOf[js.Any])).asInstanceOf[// eslint-disable-next-line no-unnecessary-generics
 ComponentType[T]]
-inline def createSystemComponent[T](react: TypeofReact, defaultComponent: Unit, system: StyleFunc): // tslint:disable-next-line no-unnecessary-generics
-ComponentType[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createSystemComponent")(react.asInstanceOf[js.Any], defaultComponent.asInstanceOf[js.Any], system.asInstanceOf[js.Any])).asInstanceOf[// tslint:disable-next-line no-unnecessary-generics
+inline def createSystemComponent[T](react: TypeofReact, defaultComponent: Unit, system: StyleFunc): // eslint-disable-next-line no-unnecessary-generics
+ComponentType[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createSystemComponent")(react.asInstanceOf[js.Any], defaultComponent.asInstanceOf[js.Any], system.asInstanceOf[js.Any])).asInstanceOf[// eslint-disable-next-line no-unnecessary-generics
 ComponentType[T]]
-inline def createSystemComponent[T](react: TypeofReact, defaultComponent: ReactNode): // tslint:disable-next-line no-unnecessary-generics
-ComponentType[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createSystemComponent")(react.asInstanceOf[js.Any], defaultComponent.asInstanceOf[js.Any])).asInstanceOf[// tslint:disable-next-line no-unnecessary-generics
+inline def createSystemComponent[T](react: TypeofReact, defaultComponent: ReactNode): // eslint-disable-next-line no-unnecessary-generics
+ComponentType[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createSystemComponent")(react.asInstanceOf[js.Any], defaultComponent.asInstanceOf[js.Any])).asInstanceOf[// eslint-disable-next-line no-unnecessary-generics
 ComponentType[T]]
-inline def createSystemComponent[T](react: TypeofReact, defaultComponent: ReactNode, system: StyleFunc): // tslint:disable-next-line no-unnecessary-generics
-ComponentType[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createSystemComponent")(react.asInstanceOf[js.Any], defaultComponent.asInstanceOf[js.Any], system.asInstanceOf[js.Any])).asInstanceOf[// tslint:disable-next-line no-unnecessary-generics
+inline def createSystemComponent[T](react: TypeofReact, defaultComponent: ReactNode, system: StyleFunc): // eslint-disable-next-line no-unnecessary-generics
+ComponentType[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createSystemComponent")(react.asInstanceOf[js.Any], defaultComponent.asInstanceOf[js.Any], system.asInstanceOf[js.Any])).asInstanceOf[// eslint-disable-next-line no-unnecessary-generics
 ComponentType[T]]
 
 inline def display: StyleFunc = ^.asInstanceOf[js.Dynamic].selectDynamic("display").asInstanceOf[StyleFunc]

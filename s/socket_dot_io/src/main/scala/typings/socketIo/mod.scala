@@ -3,28 +3,37 @@ package typings.socketIo
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
 import typings.engineIo.buildServerMod.AttachOptions
+import typings.engineIo.mod.BaseServer
 import typings.node.http2Mod.Http2SecureServer
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
+import typings.socketIo.anon.BroadcastFlagsexpectSingl
+import typings.socketIo.anon.MaxDisconnectionDuration
 import typings.socketIo.anon.PartialServerOptions
 import typings.socketIo.anon.Typeofparser
 import typings.socketIo.distBroadcastOperatorMod.SocketDetails
 import typings.socketIo.distClientMod.Client
 import typings.socketIo.distNamespaceMod.ExtendedError
 import typings.socketIo.distNamespaceMod.ServerReservedEventsMap
+import typings.socketIo.distTypedEventsMod.AllButLast
+import typings.socketIo.distTypedEventsMod.DecorateAcknowledgementsWithTimeoutAndMultipleResponses
 import typings.socketIo.distTypedEventsMod.DefaultEventsMap
 import typings.socketIo.distTypedEventsMod.EventNames
 import typings.socketIo.distTypedEventsMod.EventParams
 import typings.socketIo.distTypedEventsMod.EventsMap
+import typings.socketIo.distTypedEventsMod.FirstArg
+import typings.socketIo.distTypedEventsMod.Last
+import typings.socketIo.distTypedEventsMod.SecondArg
 import typings.socketIo.distTypedEventsMod.StrictEventEmitter
 import typings.socketIo.socketIoBooleans.`false`
 import typings.socketIo.socketIoStrings.message
 import typings.socketIoAdapter.mod.Adapter
-import typings.socketIoAdapter.mod.BroadcastFlags
 import typings.socketIoAdapter.mod.Room
+import typings.socketIoAdapter.mod.Session
 import typings.socketIoAdapter.mod.SocketId
 import typings.socketIoParser.mod.Encoder
 import typings.std.Map
+import typings.std.Record
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -40,10 +49,10 @@ object mod {
     def this(adapter: Adapter, rooms: Set[Room]) = this()
     def this(adapter: Adapter, rooms: Unit, exceptRooms: Set[Room]) = this()
     def this(adapter: Adapter, rooms: Set[Room], exceptRooms: Set[Room]) = this()
-    def this(adapter: Adapter, rooms: Unit, exceptRooms: Unit, flags: BroadcastFlags) = this()
-    def this(adapter: Adapter, rooms: Unit, exceptRooms: Set[Room], flags: BroadcastFlags) = this()
-    def this(adapter: Adapter, rooms: Set[Room], exceptRooms: Unit, flags: BroadcastFlags) = this()
-    def this(adapter: Adapter, rooms: Set[Room], exceptRooms: Set[Room], flags: BroadcastFlags) = this()
+    def this(adapter: Adapter, rooms: Unit, exceptRooms: Unit, flags: BroadcastFlagsexpectSingl) = this()
+    def this(adapter: Adapter, rooms: Unit, exceptRooms: Set[Room], flags: BroadcastFlagsexpectSingl) = this()
+    def this(adapter: Adapter, rooms: Set[Room], exceptRooms: Unit, flags: BroadcastFlagsexpectSingl) = this()
+    def this(adapter: Adapter, rooms: Set[Room], exceptRooms: Set[Room], flags: BroadcastFlagsexpectSingl) = this()
   }
   
   @JSImport("socket.io", "Namespace")
@@ -161,6 +170,8 @@ object mod {
         typings.socketIo.distNamespaceMod.Namespace[ListenEvents, EmitEvents, ServerSideEvents, SocketData]
       ] = js.native
     
+    def _opts: PartialServerOptions = js.native
+    
     /** @private */
     val _parser: Typeofparser = js.native
     
@@ -255,10 +266,10 @@ object mod {
     /**
       * Binds socket.io to an engine.io instance.
       *
-      * @param {engine.Server} engine engine.io (or compatible) server
+      * @param engine engine.io (or compatible) server
       * @return self
       */
-    def bind(engine: Any): this.type = js.native
+    def bind(engine: BaseServer): this.type = js.native
     
     /* private */ var clientPathRegex: Any = js.native
     
@@ -311,6 +322,24 @@ object mod {
     
     /* private */ var eio: Any = js.native
     
+    /**
+      * Emits an event and waits for an acknowledgement from all clients.
+      *
+      * @example
+      * try {
+      *   const responses = await io.timeout(1000).emitWithAck("some-event");
+      *   console.log(responses); // one response per client
+      * } catch (e) {
+      *   // some clients did not acknowledge the event in the given delay
+      * }
+      *
+      * @return a Promise that will be fulfilled when all clients have acknowledged the event
+      */
+    def emitWithAck[Ev /* <: EventNames[EmitEvents] */](
+      ev: Ev,
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type AllButLast<EventParams<EmitEvents, Ev>> is not an array type */ args: AllButLast[EventParams[EmitEvents, Ev]]
+    ): js.Promise[SecondArg[Last[EventParams[EmitEvents, Ev]]]] = js.native
+    
     /** @private */
     val encoder: Encoder = js.native
     
@@ -321,7 +350,7 @@ object mod {
       * const clientsCount = io.engine.clientsCount;
       *
       */
-    var engine: Any = js.native
+    var engine: BaseServer = js.native
     
     def except(room: js.Array[Room]): typings.socketIo.distBroadcastOperatorMod.BroadcastOperator[EmitEvents, SocketData] = js.native
     /**
@@ -513,7 +542,15 @@ object mod {
       */
     /* private */ var onconnection: Any = js.native
     
-    /* private */ var opts: Any = js.native
+    /* private */ val opts: Any = js.native
+    
+    /**
+      * A subset of the {@link parentNsps} map, only containing {@link ParentNamespace} which are based on a regular
+      * expression.
+      *
+      * @private
+      */
+    /* private */ var parentNamespacesFromRegExp: Any = js.native
     
     /* private */ var parentNsps: Any = js.native
     
@@ -585,9 +622,9 @@ object mod {
       * // acknowledgements (without binary content) are supported too:
       * io.serverSideEmit("ping", (err, responses) => {
       *  if (err) {
-      *     // some clients did not acknowledge the event in the given delay
+      *     // some servers did not acknowledge the event in the given delay
       *   } else {
-      *     console.log(responses); // one response per client
+      *     console.log(responses); // one response per server (except the current one)
       *   }
       * });
       *
@@ -600,8 +637,29 @@ object mod {
       */
     def serverSideEmit[Ev /* <: EventNames[ServerSideEvents] */](
       ev: Ev,
-      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type EventParams<ServerSideEvents, Ev> is not an array type */ args: EventParams[ServerSideEvents, Ev]
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type EventParams<DecorateAcknowledgementsWithTimeoutAndMultipleResponses<ServerSideEvents>, Ev> is not an array type */ args: EventParams[DecorateAcknowledgementsWithTimeoutAndMultipleResponses[ServerSideEvents], Ev]
     ): Boolean = js.native
+    
+    /**
+      * Sends a message and expect an acknowledgement from the other Socket.IO servers of the cluster.
+      *
+      * @example
+      * try {
+      *   const responses = await io.serverSideEmitWithAck("ping");
+      *   console.log(responses); // one response per server (except the current one)
+      * } catch (e) {
+      *   // some servers did not acknowledge the event in the given delay
+      * }
+      *
+      * @param ev - the event name
+      * @param args - an array of arguments
+      *
+      * @return a Promise that will be fulfilled when all servers have acknowledged the event
+      */
+    def serverSideEmitWithAck[Ev /* <: EventNames[ServerSideEvents] */](
+      ev: Ev,
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type AllButLast<EventParams<ServerSideEvents, Ev>> is not an array type */ args: AllButLast[EventParams[ServerSideEvents, Ev]]
+    ): js.Promise[js.Array[FirstArg[Last[EventParams[ServerSideEvents, Ev]]]]] = js.native
     
     val sockets: typings.socketIo.distNamespaceMod.Namespace[ListenEvents, EmitEvents, ServerSideEvents, SocketData] = js.native
     
@@ -654,7 +712,7 @@ object mod {
       *
       * @param timeout
       */
-    def timeout(timeout: Double): typings.socketIo.distBroadcastOperatorMod.BroadcastOperator[EmitEvents, SocketData] = js.native
+    def timeout(timeout: Double): typings.socketIo.distBroadcastOperatorMod.BroadcastOperator[DecorateAcknowledgementsWithTimeoutAndMultipleResponses[EmitEvents], SocketData] = js.native
     
     def to(room: js.Array[Room]): typings.socketIo.distBroadcastOperatorMod.BroadcastOperator[EmitEvents, SocketData] = js.native
     /**
@@ -750,7 +808,13 @@ object mod {
     def this(
       nsp: typings.socketIo.distNamespaceMod.Namespace[ListenEvents, EmitEvents, ServerSideEvents, Any],
       client: Client[ListenEvents, EmitEvents, ServerSideEvents, Any],
-      auth: js.Object
+      auth: Record[String, Any]
+    ) = this()
+    def this(
+      nsp: typings.socketIo.distNamespaceMod.Namespace[ListenEvents, EmitEvents, ServerSideEvents, Any],
+      client: Client[ListenEvents, EmitEvents, ServerSideEvents, Any],
+      auth: Record[String, Any],
+      previousSession: Session
     ) = this()
   }
   
@@ -778,10 +842,23 @@ object mod {
     var adapter: AdapterConstructor
     
     /**
+      * Whether to remove child namespaces that have no sockets connected to them
+      * @default false
+      */
+    var cleanupEmptyChildNamespaces: Boolean
+    
+    /**
       * how many ms before a client without namespace is closed
       * @default 45000
       */
     var connectTimeout: Double
+    
+    /**
+      * Whether to enable the recovery of connection state when a client temporarily disconnects.
+      *
+      * The connection state includes the missed packets, the rooms the socket was in and the `data` attribute.
+      */
+    var connectionStateRecovery: MaxDisconnectionDuration
     
     /**
       * the parser to use
@@ -797,8 +874,15 @@ object mod {
   }
   object ServerOptions {
     
-    inline def apply(adapter: AdapterConstructor, connectTimeout: Double, parser: Any, serveClient: Boolean): ServerOptions = {
-      val __obj = js.Dynamic.literal(adapter = adapter.asInstanceOf[js.Any], connectTimeout = connectTimeout.asInstanceOf[js.Any], parser = parser.asInstanceOf[js.Any], serveClient = serveClient.asInstanceOf[js.Any])
+    inline def apply(
+      adapter: AdapterConstructor,
+      cleanupEmptyChildNamespaces: Boolean,
+      connectTimeout: Double,
+      connectionStateRecovery: MaxDisconnectionDuration,
+      parser: Any,
+      serveClient: Boolean
+    ): ServerOptions = {
+      val __obj = js.Dynamic.literal(adapter = adapter.asInstanceOf[js.Any], cleanupEmptyChildNamespaces = cleanupEmptyChildNamespaces.asInstanceOf[js.Any], connectTimeout = connectTimeout.asInstanceOf[js.Any], connectionStateRecovery = connectionStateRecovery.asInstanceOf[js.Any], parser = parser.asInstanceOf[js.Any], serveClient = serveClient.asInstanceOf[js.Any])
       __obj.asInstanceOf[ServerOptions]
     }
     
@@ -811,7 +895,11 @@ object mod {
         value: /* nsp */ typings.socketIo.distNamespaceMod.Namespace[DefaultEventsMap, DefaultEventsMap, DefaultEventsMap, Any] => Adapter
       ): Self = StObject.set(x, "adapter", js.Any.fromFunction1(value))
       
+      inline def setCleanupEmptyChildNamespaces(value: Boolean): Self = StObject.set(x, "cleanupEmptyChildNamespaces", value.asInstanceOf[js.Any])
+      
       inline def setConnectTimeout(value: Double): Self = StObject.set(x, "connectTimeout", value.asInstanceOf[js.Any])
+      
+      inline def setConnectionStateRecovery(value: MaxDisconnectionDuration): Self = StObject.set(x, "connectionStateRecovery", value.asInstanceOf[js.Any])
       
       inline def setParser(value: Any): Self = StObject.set(x, "parser", value.asInstanceOf[js.Any])
       

@@ -10,7 +10,7 @@ object declarationIndexDotumdMod {
   @JSImport("@egjs/component/declaration/index.umd", JSImport.Default)
   @js.native
   open class default[T /* <: EventMap */] ()
-    extends typings.egjsComponent.declarationComponentMod.default[T]
+    extends typings.egjsComponent.mod.default[T]
   object default {
     
     @JSImport("@egjs/component/declaration/index.umd", JSImport.Default)

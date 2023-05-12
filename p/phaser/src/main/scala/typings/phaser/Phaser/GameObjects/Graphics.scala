@@ -5,6 +5,7 @@ import typings.phaser.Phaser.GameObjects.Components.BlendMode
 import typings.phaser.Phaser.GameObjects.Components.Depth
 import typings.phaser.Phaser.GameObjects.Components.Mask
 import typings.phaser.Phaser.GameObjects.Components.Pipeline
+import typings.phaser.Phaser.GameObjects.Components.PostPipeline
 import typings.phaser.Phaser.GameObjects.Components.ScrollFactor
 import typings.phaser.Phaser.GameObjects.Components.Transform
 import typings.phaser.Phaser.GameObjects.Components.Visible
@@ -67,6 +68,7 @@ trait Graphics
      with Depth
      with Mask
      with Pipeline
+     with PostPipeline
      with Transform
      with Visible
      with ScrollFactor {
@@ -136,28 +138,33 @@ trait Graphics
   
   /**
     * The default fill alpha for shapes rendered by this Graphics object.
+    * Set this value with `setDefaultStyles()`.
     */
-  var defaultFillAlpha: Double = js.native
+  val defaultFillAlpha: Double = js.native
   
   /**
     * The default fill color for shapes rendered by this Graphics object.
+    * Set this value with `setDefaultStyles()`.
     */
-  var defaultFillColor: Double = js.native
+  val defaultFillColor: Double = js.native
   
   /**
     * The default stroke alpha for shapes rendered by this Graphics object.
+    * Set this value with `setDefaultStyles()`.
     */
-  var defaultStrokeAlpha: Double = js.native
+  val defaultStrokeAlpha: Double = js.native
   
   /**
     * The default stroke color for shapes rendered by this Graphics object.
+    * Set this value with `setDefaultStyles()`.
     */
-  var defaultStrokeColor: Double = js.native
+  val defaultStrokeColor: Double = js.native
   
   /**
     * The default stroke width for shapes rendered by this Graphics object.
+    * Set this value with `setDefaultStyles()`.
     */
-  var defaultStrokeWidth: Double = js.native
+  val defaultStrokeWidth: Double = js.native
   
   /**
     * The horizontal display origin of the Graphics.
@@ -439,14 +446,14 @@ trait Graphics
     * @param y The y coordinate of the top-left of the rectangle.
     * @param width The width of the rectangle.
     * @param height The height of the rectangle.
-    * @param radius The corner radius; It can also be an object to specify different radii for corners. Default 20.
+    * @param radius The corner radius; It can also be an object to specify different radius for corners. Default 20.
     */
   def fillRoundedRect(x: Double, y: Double, width: Double, height: Double): this.type = js.native
   def fillRoundedRect(x: Double, y: Double, width: Double, height: Double, radius: Double): this.type = js.native
   def fillRoundedRect(x: Double, y: Double, width: Double, height: Double, radius: RoundedRectRadius): this.type = js.native
   
   /**
-    * Set the current fill style.
+    * Set the current fill style. Used for all 'fill' related functions.
     * @param color The fill color.
     * @param alpha The fill alpha. Default 1.
     */
@@ -534,7 +541,7 @@ trait Graphics
   ): this.type = js.native
   
   /**
-    * Set the current line style.
+    * Set the current line style. Used for all 'stroke' related functions.
     * @param lineWidth The stroke width.
     * @param color The stroke color.
     * @param alpha The stroke alpha. Default 1.

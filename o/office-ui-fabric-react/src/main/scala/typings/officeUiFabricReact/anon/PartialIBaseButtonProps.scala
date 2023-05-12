@@ -12,6 +12,7 @@ import typings.officeUiFabricReact.libComponentsButtonSplitButtonSplitButtonDotc
 import typings.officeUiFabricReact.libComponentsContextualMenuContextualMenuDottypesMod.IContextualMenuProps
 import typings.officeUiFabricReact.libComponentsIconIconDottypesMod.IIconProps
 import typings.officeUiFabricReact.libComponentsKeytipKeytipDottypesMod.IKeytipProps
+import typings.officeUiFabricReact.officeUiFabricReactStrings._empty
 import typings.officeUiFabricReact.officeUiFabricReactStrings.`additions removals`
 import typings.officeUiFabricReact.officeUiFabricReactStrings.`additions text`
 import typings.officeUiFabricReact.officeUiFabricReactStrings.`inline`
@@ -19,8 +20,10 @@ import typings.officeUiFabricReact.officeUiFabricReactStrings.`removals addition
 import typings.officeUiFabricReact.officeUiFabricReactStrings.`removals text`
 import typings.officeUiFabricReact.officeUiFabricReactStrings.`text additions`
 import typings.officeUiFabricReact.officeUiFabricReactStrings.`text removals`
+import typings.officeUiFabricReact.officeUiFabricReactStrings.`use-credentials`
 import typings.officeUiFabricReact.officeUiFabricReactStrings.additions
 import typings.officeUiFabricReact.officeUiFabricReactStrings.all
+import typings.officeUiFabricReact.officeUiFabricReactStrings.anonymous
 import typings.officeUiFabricReact.officeUiFabricReactStrings.ascending
 import typings.officeUiFabricReact.officeUiFabricReactStrings.assertive
 import typings.officeUiFabricReact.officeUiFabricReactStrings.both
@@ -104,6 +107,7 @@ import typings.react.mod.WheelEvent
 import typings.react.mod.WheelEventHandler
 import typings.std.Element
 import typings.std.Event
+import typings.std.FormData
 import typings.std.HTMLAnchorElement
 import typings.std.HTMLButtonElement
 import typings.std.HTMLDivElement
@@ -131,7 +135,7 @@ trait PartialIBaseButtonProps extends StObject {
   
   var accessKey: js.UndefOr[String] = js.undefined
   
-  var action: js.UndefOr[String] = js.undefined
+  var action: js.UndefOr[String | (js.Function1[/* formData */ FormData, scala.Unit])] = js.undefined
   
   var allowDisabledFocus: js.UndefOr[Boolean] = js.undefined
   
@@ -303,7 +307,7 @@ trait PartialIBaseButtonProps extends StObject {
   
   var coords: js.UndefOr[String] = js.undefined
   
-  var crossOrigin: js.UndefOr[String] = js.undefined
+  var crossOrigin: js.UndefOr[anonymous | `use-credentials` | _empty] = js.undefined
   
   var dangerouslySetInnerHTML: js.UndefOr[Html] = js.undefined
   
@@ -337,7 +341,7 @@ trait PartialIBaseButtonProps extends StObject {
   
   var form: js.UndefOr[String] = js.undefined
   
-  var formAction: js.UndefOr[String] = js.undefined
+  var formAction: js.UndefOr[String | (js.Function1[/* formData */ FormData, scala.Unit])] = js.undefined
   
   var formEncType: js.UndefOr[String] = js.undefined
   
@@ -1014,6 +1018,8 @@ trait PartialIBaseButtonProps extends StObject {
   
   var results: js.UndefOr[Double] = js.undefined
   
+  var rev: js.UndefOr[String] = js.undefined
+  
   var reversed: js.UndefOr[Boolean] = js.undefined
   
   var role: js.UndefOr[AriaRole] = js.undefined
@@ -1146,7 +1152,9 @@ object PartialIBaseButtonProps {
     
     inline def setAccessKeyUndefined: Self = StObject.set(x, "accessKey", js.undefined)
     
-    inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: String | (js.Function1[/* formData */ FormData, scala.Unit])): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    
+    inline def setActionFunction1(value: /* formData */ FormData => scala.Unit): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
     
     inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
@@ -1490,7 +1498,7 @@ object PartialIBaseButtonProps {
     
     inline def setCoordsUndefined: Self = StObject.set(x, "coords", js.undefined)
     
-    inline def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+    inline def setCrossOrigin(value: anonymous | `use-credentials` | _empty): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
     
     inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
     
@@ -1568,7 +1576,9 @@ object PartialIBaseButtonProps {
     
     inline def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
     
-    inline def setFormAction(value: String): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+    inline def setFormAction(value: String | (js.Function1[/* formData */ FormData, scala.Unit])): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+    
+    inline def setFormActionFunction1(value: /* formData */ FormData => scala.Unit): Self = StObject.set(x, "formAction", js.Any.fromFunction1(value))
     
     inline def setFormActionUndefined: Self = StObject.set(x, "formAction", js.undefined)
     
@@ -2624,6 +2634,10 @@ object PartialIBaseButtonProps {
     inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
     inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+    
+    inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+    
+    inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
     
     inline def setReversed(value: Boolean): Self = StObject.set(x, "reversed", value.asInstanceOf[js.Any])
     

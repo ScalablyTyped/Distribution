@@ -105,6 +105,8 @@ type ReplicationConfigurationDescriptions = js.Array[ReplicationConfigurationDes
   - typings.awsSdk.awsSdkStrings.ENABLING
   - typings.awsSdk.awsSdkStrings.DELETING
   - typings.awsSdk.awsSdkStrings.ERROR
+  - typings.awsSdk.awsSdkStrings.PAUSED
+  - typings.awsSdk.awsSdkStrings.PAUSING
   - java.lang.String
 */
 type ReplicationStatus = _ReplicationStatus | String
@@ -155,6 +157,7 @@ type Tags = js.Array[Tag]
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.bursting
   - typings.awsSdk.awsSdkStrings.provisioned__
+  - typings.awsSdk.awsSdkStrings.elastic_
   - java.lang.String
 */
 type ThroughputMode = _ThroughputMode | String
@@ -169,6 +172,7 @@ type Token = String
   - typings.awsSdk.awsSdkStrings.AFTER_30_DAYS
   - typings.awsSdk.awsSdkStrings.AFTER_60_DAYS
   - typings.awsSdk.awsSdkStrings.AFTER_90_DAYS
+  - typings.awsSdk.awsSdkStrings.AFTER_1_DAY
   - java.lang.String
 */
 type TransitionToIARules = _TransitionToIARules | String

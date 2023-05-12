@@ -16,7 +16,7 @@ object libIconsHeartFilledMod extends Shortcut {
   @js.native
   trait HeartFilledIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_HeartFilledIconType: String = js.native

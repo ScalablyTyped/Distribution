@@ -16,7 +16,7 @@ object libIconsMedicineBoxOutlinedMod extends Shortcut {
   @js.native
   trait MedicineBoxOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_MedicineBoxOutlinedIconType: String = js.native

@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.Perspective
+import typings.csstype.mod.Property.MsWrapFlow
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,13 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `286` extends StObject {
   
   var value: js.UndefOr[
-    (Perspective[Double | String]) | (js.Array[
-      (Extract[
-        js.UndefOr[
-          (Perspective[Double | String]) | (js.Array[NonNullable[js.UndefOr[Perspective[Double | String]]]])
-        ], 
-        String
-      ]) | (NonNullable[js.UndefOr[Perspective[Double | String]]])
+    MsWrapFlow | (js.Array[
+      (Extract[js.UndefOr[MsWrapFlow | js.Array[NonNullable[js.UndefOr[MsWrapFlow]]]], String]) | NonNullable[js.UndefOr[MsWrapFlow]]
     ])
   ] = js.native
 }

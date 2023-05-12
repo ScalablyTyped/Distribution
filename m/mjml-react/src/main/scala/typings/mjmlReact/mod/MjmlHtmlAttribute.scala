@@ -13,7 +13,7 @@ open class MjmlHtmlAttribute protected ()
   def this(props: ChildrenName) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: ChildrenName, context: Any) = this()
 }

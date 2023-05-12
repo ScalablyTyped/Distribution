@@ -16,17 +16,17 @@ object nodeColonasyncHooksMod {
   /**
     * This class creates stores that stay coherent through asynchronous operations.
     *
-    * While you can create your own implementation on top of the `async_hooks` module,`AsyncLocalStorage` should be preferred as it is a performant and memory safe
-    * implementation that involves significant optimizations that are non-obvious to
-    * implement.
+    * While you can create your own implementation on top of the `node:async_hooks`module, `AsyncLocalStorage` should be preferred as it is a performant and memory
+    * safe implementation that involves significant optimizations that are non-obvious
+    * to implement.
     *
     * The following example uses `AsyncLocalStorage` to build a simple logger
     * that assigns IDs to incoming HTTP requests and includes them in messages
     * logged within each request.
     *
     * ```js
-    * import http from 'http';
-    * import { AsyncLocalStorage } from 'async_hooks';
+    * import http from 'node:http';
+    * import { AsyncLocalStorage } from 'node:async_hooks';
     *
     * const asyncLocalStorage = new AsyncLocalStorage();
     *
@@ -65,6 +65,54 @@ object nodeColonasyncHooksMod {
   @js.native
   open class AsyncLocalStorage[T] ()
     extends typings.node.asyncHooksMod.AsyncLocalStorage[T]
+  object AsyncLocalStorage {
+    
+    @JSImport("node:async_hooks", "AsyncLocalStorage")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * Binds the given function to the current execution context.
+      * @since v19.8.0
+      * @experimental
+      * @param fn The function to bind to the current execution context.
+      * @return A new function that calls `fn` within the captured execution context.
+      */
+    /* static member */
+    inline def bind[Func /* <: js.Function1[/* repeated */ Any, Any] */](fn: Func): Func = ^.asInstanceOf[js.Dynamic].applyDynamic("bind")(fn.asInstanceOf[js.Any]).asInstanceOf[Func]
+    
+    /**
+      * Captures the current execution context and returns a function that accepts a
+      * function as an argument. Whenever the returned function is called, it
+      * calls the function passed to it within the captured context.
+      *
+      * ```js
+      * const asyncLocalStorage = new AsyncLocalStorage();
+      * const runInAsyncScope = asyncLocalStorage.run(123, () => AsyncLocalStorage.snapshot());
+      * const result = asyncLocalStorage.run(321, () => runInAsyncScope(() => asyncLocalStorage.getStore()));
+      * console.log(result);  // returns 123
+      * ```
+      *
+      * AsyncLocalStorage.snapshot() can replace the use of AsyncResource for simple
+      * async context tracking purposes, for example:
+      *
+      * ```js
+      * class Foo {
+      *   #runInAsyncScope = AsyncLocalStorage.snapshot();
+      *
+      *   get() { return this.#runInAsyncScope(() => asyncLocalStorage.getStore()); }
+      * }
+      *
+      * const foo = asyncLocalStorage.run(123, () => new Foo());
+      * console.log(asyncLocalStorage.run(321, () => foo.get())); // returns 123
+      * ```
+      * @since v19.8.0
+      * @experimental
+      * @return A new function with the signature `(fn: (...args) : R, ...args) : R`.
+      */
+    /* static member */
+    inline def snapshot(): js.Function2[/* fn */ js.Function1[/* args */ js.Array[Any], Any], /* args */ js.Array[Any], Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("snapshot")().asInstanceOf[js.Function2[/* fn */ js.Function1[/* args */ js.Array[Any], Any], /* args */ js.Array[Any], Any]]
+  }
   
   /**
     * The class `AsyncResource` is designed to be extended by the embedder's async
@@ -76,13 +124,13 @@ object nodeColonasyncHooksMod {
     * The following is an overview of the `AsyncResource` API.
     *
     * ```js
-    * import { AsyncResource, executionAsyncId } from 'async_hooks';
+    * import { AsyncResource, executionAsyncId } from 'node:async_hooks';
     *
     * // AsyncResource() is meant to be extended. Instantiating a
     * // new AsyncResource() also triggers init. If triggerAsyncId is omitted then
     * // async_hook.executionAsyncId() is used.
     * const asyncResource = new AsyncResource(
-    *   type, { triggerAsyncId: executionAsyncId(), requireManualDestroy: false }
+    *   type, { triggerAsyncId: executionAsyncId(), requireManualDestroy: false },
     * );
     *
     * // Run a function in the execution context of the resource. This will
@@ -128,18 +176,15 @@ object nodeColonasyncHooksMod {
     
     /**
       * Binds the given function to the current execution context.
-      *
-      * The returned function will have an `asyncResource` property referencing
-      * the `AsyncResource` to which the function is bound.
       * @since v14.8.0, v12.19.0
       * @param fn The function to bind to the current execution context.
       * @param type An optional name to associate with the underlying `AsyncResource`.
       */
     /* static member */
-    inline def bind[Func /* <: js.ThisFunction1[/* this */ ThisArg, /* repeated */ Any, Any] */, ThisArg](fn: Func): Func & typings.node.anon.AsyncResource = ^.asInstanceOf[js.Dynamic].applyDynamic("bind")(fn.asInstanceOf[js.Any]).asInstanceOf[Func & typings.node.anon.AsyncResource]
-    inline def bind[Func /* <: js.ThisFunction1[/* this */ ThisArg, /* repeated */ Any, Any] */, ThisArg](fn: Func, `type`: String): Func & typings.node.anon.AsyncResource = (^.asInstanceOf[js.Dynamic].applyDynamic("bind")(fn.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Func & typings.node.anon.AsyncResource]
-    inline def bind[Func /* <: js.ThisFunction1[/* this */ ThisArg, /* repeated */ Any, Any] */, ThisArg](fn: Func, `type`: String, thisArg: ThisArg): Func & typings.node.anon.AsyncResource = (^.asInstanceOf[js.Dynamic].applyDynamic("bind")(fn.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[Func & typings.node.anon.AsyncResource]
-    inline def bind[Func /* <: js.ThisFunction1[/* this */ ThisArg, /* repeated */ Any, Any] */, ThisArg](fn: Func, `type`: Unit, thisArg: ThisArg): Func & typings.node.anon.AsyncResource = (^.asInstanceOf[js.Dynamic].applyDynamic("bind")(fn.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[Func & typings.node.anon.AsyncResource]
+    inline def bind[Func /* <: js.ThisFunction1[/* this */ ThisArg, /* repeated */ Any, Any] */, ThisArg](fn: Func): Func = ^.asInstanceOf[js.Dynamic].applyDynamic("bind")(fn.asInstanceOf[js.Any]).asInstanceOf[Func]
+    inline def bind[Func /* <: js.ThisFunction1[/* this */ ThisArg, /* repeated */ Any, Any] */, ThisArg](fn: Func, `type`: String): Func = (^.asInstanceOf[js.Dynamic].applyDynamic("bind")(fn.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Func]
+    inline def bind[Func /* <: js.ThisFunction1[/* this */ ThisArg, /* repeated */ Any, Any] */, ThisArg](fn: Func, `type`: String, thisArg: ThisArg): Func = (^.asInstanceOf[js.Dynamic].applyDynamic("bind")(fn.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[Func]
+    inline def bind[Func /* <: js.ThisFunction1[/* this */ ThisArg, /* repeated */ Any, Any] */, ThisArg](fn: Func, `type`: Unit, thisArg: ThisArg): Func = (^.asInstanceOf[js.Dynamic].applyDynamic("bind")(fn.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[Func]
   }
   
   /**
@@ -154,11 +199,11 @@ object nodeColonasyncHooksMod {
     * specifics of all functions that can be passed to `callbacks` is in the `Hook Callbacks` section.
     *
     * ```js
-    * import { createHook } from 'async_hooks';
+    * import { createHook } from 'node:async_hooks';
     *
     * const asyncHook = createHook({
     *   init(asyncId, type, triggerAsyncId, resource) { },
-    *   destroy(asyncId) { }
+    *   destroy(asyncId) { },
     * });
     * ```
     *
@@ -188,7 +233,8 @@ object nodeColonasyncHooksMod {
   
   /**
     * ```js
-    * import { executionAsyncId } from 'async_hooks';
+    * import { executionAsyncId } from 'node:async_hooks';
+    * import fs from 'node:fs';
     *
     * console.log(executionAsyncId());  // 1 - bootstrap
     * fs.open(path, 'r', (err, fd) => {
@@ -229,8 +275,8 @@ object nodeColonasyncHooksMod {
     * but having an object representing the top-level can be helpful.
     *
     * ```js
-    * import { open } from 'fs';
-    * import { executionAsyncId, executionAsyncResource } from 'async_hooks';
+    * import { open } from 'node:fs';
+    * import { executionAsyncId, executionAsyncResource } from 'node:async_hooks';
     *
     * console.log(executionAsyncId(), executionAsyncResource());  // 1 {}
     * open(new URL(import.meta.url), 'r', (err, fd) => {
@@ -242,11 +288,11 @@ object nodeColonasyncHooksMod {
     * use of a tracking `Map` to store the metadata:
     *
     * ```js
-    * import { createServer } from 'http';
+    * import { createServer } from 'node:http';
     * import {
     *   executionAsyncId,
     *   executionAsyncResource,
-    *   createHook
+    *   createHook,
     * } from 'async_hooks';
     * const sym = Symbol('state'); // Private symbol to avoid pollution
     *
@@ -256,7 +302,7 @@ object nodeColonasyncHooksMod {
     *     if (cr) {
     *       resource[sym] = cr[sym];
     *     }
-    *   }
+    *   },
     * }).enable();
     *
     * const server = createServer((req, res) => {

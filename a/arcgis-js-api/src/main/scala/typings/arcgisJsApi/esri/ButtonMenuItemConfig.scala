@@ -37,7 +37,7 @@ trait ButtonMenuItemConfig extends StObject {
   /**
     * The label of the menu item.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#ButtonMenuItemConfig)
+    * [Read more...](global.html)
     */
   var label: js.UndefOr[String] = js.undefined
   

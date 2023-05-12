@@ -1,9 +1,10 @@
 package typings.relayRuntime.anon
 
 import typings.relayRuntime.libStoreRelayStoreTypesMod.MissingFieldHandler
+import typings.relayRuntime.libStoreRelayStoreTypesMod.ReadOnlyRecordProxy
 import typings.relayRuntime.libStoreRelayStoreTypesMod.ReadOnlyRecordSourceProxy
-import typings.relayRuntime.libStoreRelayStoreTypesMod.Record
 import typings.relayRuntime.libUtilNormalizationNodeMod.NormalizationLinkedField
+import typings.relayRuntime.libUtilReaderNodeMod.ReaderLinkedField
 import typings.relayRuntime.libUtilRelayRuntimeTypesMod.DataID
 import typings.relayRuntime.libUtilRelayRuntimeTypesMod.Variables
 import typings.relayRuntime.relayRuntimeStrings.pluralLinked
@@ -16,11 +17,29 @@ trait HandleKind
   extends StObject
      with MissingFieldHandler {
   
-  def handle(field: NormalizationLinkedField, record: Null, args: Variables, store: ReadOnlyRecordSourceProxy): js.UndefOr[(js.Array[js.UndefOr[DataID | Null]]) | Null] = js.native
-  def handle(field: NormalizationLinkedField, record: Unit, args: Variables, store: ReadOnlyRecordSourceProxy): js.UndefOr[(js.Array[js.UndefOr[DataID | Null]]) | Null] = js.native
   def handle(
     field: NormalizationLinkedField,
-    record: Record[js.Object],
+    parentRecord: Null,
+    args: Variables,
+    store: ReadOnlyRecordSourceProxy
+  ): js.UndefOr[(js.Array[js.UndefOr[DataID | Null]]) | Null] = js.native
+  def handle(
+    field: NormalizationLinkedField,
+    parentRecord: Unit,
+    args: Variables,
+    store: ReadOnlyRecordSourceProxy
+  ): js.UndefOr[(js.Array[js.UndefOr[DataID | Null]]) | Null] = js.native
+  def handle(
+    field: NormalizationLinkedField,
+    parentRecord: ReadOnlyRecordProxy,
+    args: Variables,
+    store: ReadOnlyRecordSourceProxy
+  ): js.UndefOr[(js.Array[js.UndefOr[DataID | Null]]) | Null] = js.native
+  def handle(field: ReaderLinkedField, parentRecord: Null, args: Variables, store: ReadOnlyRecordSourceProxy): js.UndefOr[(js.Array[js.UndefOr[DataID | Null]]) | Null] = js.native
+  def handle(field: ReaderLinkedField, parentRecord: Unit, args: Variables, store: ReadOnlyRecordSourceProxy): js.UndefOr[(js.Array[js.UndefOr[DataID | Null]]) | Null] = js.native
+  def handle(
+    field: ReaderLinkedField,
+    parentRecord: ReadOnlyRecordProxy,
     args: Variables,
     store: ReadOnlyRecordSourceProxy
   ): js.UndefOr[(js.Array[js.UndefOr[DataID | Null]]) | Null] = js.native

@@ -32,6 +32,10 @@ object SceneComponentConstants {
   @js.native
   val NAME_EFFECTLAYER: /* "EffectLayer" */ String = js.native
   
+  @JSGlobal("BABYLON.SceneComponentConstants.NAME_FLUIDRENDERER")
+  @js.native
+  val NAME_FLUIDRENDERER: /* "FluidRenderer" */ String = js.native
+  
   @JSGlobal("BABYLON.SceneComponentConstants.NAME_GAMEPAD")
   @js.native
   val NAME_GAMEPAD: /* "Gamepad" */ String = js.native
@@ -99,6 +103,10 @@ object SceneComponentConstants {
   @JSGlobal("BABYLON.SceneComponentConstants.STEP_AFTERCAMERADRAW_EFFECTLAYER_DRAW")
   @js.native
   val STEP_AFTERCAMERADRAW_EFFECTLAYER_DRAW: /* 3 */ Double = js.native
+  
+  @JSGlobal("BABYLON.SceneComponentConstants.STEP_AFTERCAMERADRAW_FLUIDRENDERER")
+  @js.native
+  val STEP_AFTERCAMERADRAW_FLUIDRENDERER: /* 5 */ Double = js.native
   
   @JSGlobal("BABYLON.SceneComponentConstants.STEP_AFTERCAMERADRAW_LAYER")
   @js.native
@@ -211,6 +219,10 @@ object SceneComponentConstants {
   @JSGlobal("BABYLON.SceneComponentConstants.STEP_GATHERACTIVECAMERARENDERTARGETS_DEPTHRENDERER")
   @js.native
   val STEP_GATHERACTIVECAMERARENDERTARGETS_DEPTHRENDERER: /* 0 */ Double = js.native
+  
+  @JSGlobal("BABYLON.SceneComponentConstants.STEP_GATHERACTIVECAMERARENDERTARGETS_FLUIDRENDERER")
+  @js.native
+  val STEP_GATHERACTIVECAMERARENDERTARGETS_FLUIDRENDERER: /* 1 */ Double = js.native
   
   @JSGlobal("BABYLON.SceneComponentConstants.STEP_GATHERRENDERTARGETS_DEPTHRENDERER")
   @js.native

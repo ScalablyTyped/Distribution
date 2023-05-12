@@ -7,19 +7,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TerminalLinkProvider[T /* <: TerminalLink */] extends StObject {
   
   /**
-    * Handle an activated terminal link.
-    * @param link The link to handle.
-    */
+  		 * Handle an activated terminal link.
+  		 * @param link The link to handle.
+  		 */
   def handleTerminalLink(link: T): ProviderResult[Unit]
   
   /**
-    * Provide terminal links for the given context. Note that this can be called multiple times
-    * even before previous calls resolve, make sure to not share global objects (eg. `RegExp`)
-    * that could have problems when asynchronous usage may overlap.
-    * @param context Information about what links are being provided for.
-    * @param token A cancellation token.
-    * @return A list of terminal links for the given line.
-    */
+  		 * Provide terminal links for the given context. Note that this can be called multiple times
+  		 * even before previous calls resolve, make sure to not share global objects (eg. `RegExp`)
+  		 * that could have problems when asynchronous usage may overlap.
+  		 * @param context Information about what links are being provided for.
+  		 * @param token A cancellation token.
+  		 * @return A list of terminal links for the given line.
+  		 */
   def provideTerminalLinks(context: TerminalLinkContext, token: CancellationToken): ProviderResult[js.Array[T]]
 }
 object TerminalLinkProvider {

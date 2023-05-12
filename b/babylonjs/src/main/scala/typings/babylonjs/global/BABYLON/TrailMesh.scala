@@ -12,7 +12,7 @@ open class TrailMesh protected ()
   extends StObject
      with typings.babylonjs.BABYLON.TrailMesh {
   /**
-    * @constructor
+    * Creates a new TrailMesh.
     * @param name The value used by scene.getMeshByName() to do a lookup.
     * @param generator The mesh or transform node to generate a trail.
     * @param scene The scene to add this mesh to.

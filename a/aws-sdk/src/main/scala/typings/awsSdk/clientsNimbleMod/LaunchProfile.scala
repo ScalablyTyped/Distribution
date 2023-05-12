@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LaunchProfile extends StObject {
   
   /**
-    * The ARN of the resource.
+    * The Amazon Resource Name (ARN) that is assigned to a studio resource and uniquely identifies it. ARNs are unique across all Regions.
     */
   var arn: js.UndefOr[String] = js.undefined
   
   /**
-    * The Unix epoch timestamp in seconds for when the resource was created.
+    * The ISO timestamp in seconds for when the resource was created.
     */
   var createdAt: js.UndefOr[js.Date] = js.undefined
   
@@ -32,7 +32,7 @@ trait LaunchProfile extends StObject {
   var ec2SubnetIds: js.UndefOr[EC2SubnetIdList] = js.undefined
   
   /**
-    * The launch profile ID.
+    * The ID of the launch profile used to control access from the streaming session.
     */
   var launchProfileId: js.UndefOr[LaunchProfileId] = js.undefined
   
@@ -72,12 +72,12 @@ trait LaunchProfile extends StObject {
   var studioComponentIds: js.UndefOr[LaunchProfileStudioComponentIdList] = js.undefined
   
   /**
-    * A collection of labels, in the form of key:value pairs, that apply to this resource.
+    * A collection of labels, in the form of key-value pairs, that apply to this resource.
     */
   var tags: js.UndefOr[Tags] = js.undefined
   
   /**
-    * The Unix epoch timestamp in seconds for when the resource was updated.
+    * The ISO timestamp in seconds for when the resource was updated.
     */
   var updatedAt: js.UndefOr[js.Date] = js.undefined
   

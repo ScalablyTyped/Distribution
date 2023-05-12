@@ -14,8 +14,8 @@ open class SkinInstance protected () extends StObject {
   /**
     * Create a new SkinInstance instance.
     *
-    * @param {Skin} skin - The skin that will provide the inverse bind pose matrices to generate
-    * the final matrix palette.
+    * @param {import('./skin.js').Skin} skin - The skin that will provide the inverse bind pose
+    * matrices to generate the final matrix palette.
     */
   def this(skin: Skin) = this()
   
@@ -34,7 +34,7 @@ open class SkinInstance protected () extends StObject {
   /**
     * An array of nodes representing each bone in this skin instance.
     *
-    * @type {GraphNode[]}
+    * @type {import('./graph-node.js').GraphNode[]}
     */
   var bones: js.Array[GraphNode] = js.native
   

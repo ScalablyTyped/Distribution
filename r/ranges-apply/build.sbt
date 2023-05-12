@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "ranges-apply"
-version := "6.2.12-651c43"
+version := "7.0.8-29d385"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "ranges-sort" % "5.1.6-9cd690",
-  "org.scalablytyped" %%% "std" % "4.9-ecb5eb")
+  "org.scalablytyped" %%% "ranges-sort" % "6.0.7-0fb696",
+  "org.scalablytyped" %%% "std" % "5.0-e63739")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

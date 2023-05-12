@@ -22,7 +22,7 @@ trait FleetLaunchTemplateOverridesRequest extends StObject {
   var InstanceRequirements: js.UndefOr[InstanceRequirementsRequest] = js.undefined
   
   /**
-    * The instance type.  If you specify InstanceType, you can't specify InstanceRequirements. 
+    * The instance type.  mac1.metal is not supported as a launch template override.  If you specify InstanceType, you can't specify InstanceRequirements. 
     */
   var InstanceType: js.UndefOr[typings.awsSdk.clientsEc2Mod.InstanceType] = js.undefined
   

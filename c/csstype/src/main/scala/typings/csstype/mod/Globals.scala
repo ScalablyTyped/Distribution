@@ -6,6 +6,7 @@ import typings.csstype.mod.Property._AlignItems
 import typings.csstype.mod.Property._AlignSelf
 import typings.csstype.mod.Property._AlignTracks
 import typings.csstype.mod.Property._Animation
+import typings.csstype.mod.Property._AnimationComposition
 import typings.csstype.mod.Property._AnimationDirection
 import typings.csstype.mod.Property._AnimationFillMode
 import typings.csstype.mod.Property._AnimationIterationCount
@@ -71,6 +72,7 @@ import typings.csstype.mod.Property._BorderTopWidth
 import typings.csstype.mod.Property._BorderWidth
 import typings.csstype.mod.Property._Bottom
 import typings.csstype.mod.Property._BoxShadow
+import typings.csstype.mod.Property._Caret
 import typings.csstype.mod.Property._CaretColor
 import typings.csstype.mod.Property._Clip
 import typings.csstype.mod.Property._ClipPath
@@ -85,6 +87,13 @@ import typings.csstype.mod.Property._ColumnRuleWidth
 import typings.csstype.mod.Property._ColumnWidth
 import typings.csstype.mod.Property._Columns
 import typings.csstype.mod.Property._Contain
+import typings.csstype.mod.Property._ContainIntrinsicBlockSize
+import typings.csstype.mod.Property._ContainIntrinsicHeight
+import typings.csstype.mod.Property._ContainIntrinsicInlineSize
+import typings.csstype.mod.Property._ContainIntrinsicSize
+import typings.csstype.mod.Property._ContainIntrinsicWidth
+import typings.csstype.mod.Property._Container
+import typings.csstype.mod.Property._ContainerName
 import typings.csstype.mod.Property._Content
 import typings.csstype.mod.Property._CounterIncrement
 import typings.csstype.mod.Property._CounterReset
@@ -101,6 +110,7 @@ import typings.csstype.mod.Property._Font
 import typings.csstype.mod.Property._FontFamily
 import typings.csstype.mod.Property._FontFeatureSettings
 import typings.csstype.mod.Property._FontLanguageOverride
+import typings.csstype.mod.Property._FontPalette
 import typings.csstype.mod.Property._FontSize
 import typings.csstype.mod.Property._FontSizeAdjust
 import typings.csstype.mod.Property._FontSmooth
@@ -127,6 +137,7 @@ import typings.csstype.mod.Property._GridTemplateRows
 import typings.csstype.mod.Property._HangingPunctuation
 import typings.csstype.mod.Property._Height
 import typings.csstype.mod.Property._HyphenateCharacter
+import typings.csstype.mod.Property._HyphenateLimitChars
 import typings.csstype.mod.Property._ImageOrientation
 import typings.csstype.mod.Property._ImageResolution
 import typings.csstype.mod.Property._InitialLetter
@@ -217,6 +228,7 @@ import typings.csstype.mod.Property._ObjectPosition
 import typings.csstype.mod.Property._Offset
 import typings.csstype.mod.Property._OffsetAnchor
 import typings.csstype.mod.Property._OffsetPath
+import typings.csstype.mod.Property._OffsetPosition
 import typings.csstype.mod.Property._OffsetRotate
 import typings.csstype.mod.Property._Outline
 import typings.csstype.mod.Property._OutlineColor
@@ -225,6 +237,7 @@ import typings.csstype.mod.Property._OutlineWidth
 import typings.csstype.mod.Property._Overflow
 import typings.csstype.mod.Property._OverflowClipMargin
 import typings.csstype.mod.Property._OverscrollBehavior
+import typings.csstype.mod.Property._Page
 import typings.csstype.mod.Property._PaintOrder
 import typings.csstype.mod.Property._Perspective
 import typings.csstype.mod.Property._PerspectiveOrigin
@@ -254,6 +267,9 @@ import typings.csstype.mod.Property._ScrollSnapDestination
 import typings.csstype.mod.Property._ScrollSnapPointsX
 import typings.csstype.mod.Property._ScrollSnapPointsY
 import typings.csstype.mod.Property._ScrollSnapType
+import typings.csstype.mod.Property._ScrollTimeline
+import typings.csstype.mod.Property._ScrollTimelineAxis
+import typings.csstype.mod.Property._ScrollTimelineName
 import typings.csstype.mod.Property._ScrollbarColor
 import typings.csstype.mod.Property._ScrollbarGutter
 import typings.csstype.mod.Property._ShapeOutside
@@ -283,6 +299,7 @@ import typings.csstype.mod.Property._TransitionProperty
 import typings.csstype.mod.Property._TransitionTimingFunction
 import typings.csstype.mod.Property._Translate
 import typings.csstype.mod.Property._VerticalAlign
+import typings.csstype.mod.Property._ViewTransitionName
 import typings.csstype.mod.Property._WebkitBorderBefore
 import typings.csstype.mod.Property._WebkitBorderBeforeColor
 import typings.csstype.mod.Property._WebkitBorderBeforeStyle
@@ -329,6 +346,7 @@ trait Globals
      with _AlignSelf
      with _AlignTracks
      with _Animation[Any]
+     with _AnimationComposition
      with _AnimationDirection
      with _AnimationFillMode
      with _AnimationIterationCount
@@ -394,6 +412,7 @@ trait Globals
      with _BorderWidth[Any]
      with _Bottom[Any]
      with _BoxShadow
+     with _Caret
      with _CaretColor
      with _Clip
      with _ClipPath
@@ -408,6 +427,13 @@ trait Globals
      with _ColumnWidth[Any]
      with _Columns[Any]
      with _Contain
+     with _ContainIntrinsicBlockSize[Any]
+     with _ContainIntrinsicHeight[Any]
+     with _ContainIntrinsicInlineSize[Any]
+     with _ContainIntrinsicSize[Any]
+     with _ContainIntrinsicWidth[Any]
+     with _Container
+     with _ContainerName
      with _Content
      with _CounterIncrement
      with _CounterReset
@@ -424,6 +450,7 @@ trait Globals
      with _FontFamily
      with _FontFeatureSettings
      with _FontLanguageOverride
+     with _FontPalette
      with _FontSize[Any]
      with _FontSizeAdjust
      with _FontSmooth[Any]
@@ -450,6 +477,7 @@ trait Globals
      with _HangingPunctuation
      with _Height[Any]
      with _HyphenateCharacter
+     with _HyphenateLimitChars
      with _ImageOrientation
      with _ImageResolution
      with _InitialLetter
@@ -540,6 +568,7 @@ trait Globals
      with _Offset[Any]
      with _OffsetAnchor[Any]
      with _OffsetPath
+     with _OffsetPosition[Any]
      with _OffsetRotate
      with _Outline[Any]
      with _OutlineColor
@@ -548,6 +577,7 @@ trait Globals
      with _Overflow
      with _OverflowClipMargin[Any]
      with _OverscrollBehavior
+     with _Page
      with _PaintOrder
      with _Perspective[Any]
      with _PerspectiveOrigin[Any]
@@ -577,6 +607,9 @@ trait Globals
      with _ScrollSnapPointsX
      with _ScrollSnapPointsY
      with _ScrollSnapType
+     with _ScrollTimeline
+     with _ScrollTimelineAxis
+     with _ScrollTimelineName
      with _ScrollbarColor
      with _ScrollbarGutter
      with _ShapeOutside
@@ -606,6 +639,7 @@ trait Globals
      with _TransitionTimingFunction
      with _Translate[Any]
      with _VerticalAlign[Any]
+     with _ViewTransitionName
      with _WebkitBorderBefore[Any]
      with _WebkitBorderBeforeColor
      with _WebkitBorderBeforeStyle

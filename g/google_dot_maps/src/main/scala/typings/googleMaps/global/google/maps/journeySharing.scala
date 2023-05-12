@@ -13,7 +13,6 @@ import typings.googleMaps.google.maps.journeySharing.FleetEngineTripLocationProv
 import typings.googleMaps.google.maps.journeySharing.JourneySharingMapViewOptions
 import typings.googleMaps.google.maps.journeySharing.MarkerSetupOptions
 import typings.googleMaps.google.maps.journeySharing.PolylineSetupOptions
-import typings.googleMaps.google.maps.journeySharing.Task
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -21,10 +20,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object journeySharing {
   
-  /**
-    * Available only in the v=beta channel: https://goo.gle/3oAthT3.
-    * Automatic viewport mode.
-    */
   @JSGlobal("google.maps.journeySharing.AutomaticViewportMode")
   @js.native
   object AutomaticViewportMode extends StObject {
@@ -37,21 +32,34 @@ object journeySharing {
     /* "NONE" */ val NONE: typings.googleMaps.google.maps.journeySharing.AutomaticViewportMode.NONE & String = js.native
   }
   
-  /**
-    * Available only in the v=beta channel: https://goo.gle/3oAthT3.
-    * Delivery Fleet Location Provider.
-    */
+  @JSGlobal("google.maps.journeySharing.DeliveryVehicleStopState")
+  @js.native
+  object DeliveryVehicleStopState extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[typings.googleMaps.google.maps.journeySharing.DeliveryVehicleStopState & String] = js.native
+    
+    /* "ARRIVED" */ val ARRIVED: typings.googleMaps.google.maps.journeySharing.DeliveryVehicleStopState.ARRIVED & String = js.native
+    
+    /* "ENROUTE" */ val ENROUTE: typings.googleMaps.google.maps.journeySharing.DeliveryVehicleStopState.ENROUTE & String = js.native
+    
+    /* "NEW" */ val NEW: typings.googleMaps.google.maps.journeySharing.DeliveryVehicleStopState.NEW & String = js.native
+    
+    /* "UNSPECIFIED" */ val UNSPECIFIED: typings.googleMaps.google.maps.journeySharing.DeliveryVehicleStopState.UNSPECIFIED & String = js.native
+  }
+  
   @JSGlobal("google.maps.journeySharing.FleetEngineDeliveryFleetLocationProvider")
   @js.native
   open class FleetEngineDeliveryFleetLocationProvider protected ()
     extends StObject
        with typings.googleMaps.google.maps.journeySharing.FleetEngineDeliveryFleetLocationProvider {
     /**
-      * Available only in the v=beta channel: https://goo.gle/3oAthT3.
       * Delivery Fleet Location Provider.
-      * @param options <p>{@link
-      *     google.maps.journeySharing.FleetEngineDeliveryFleetLocationProviderOptions}
-      *     <p>Options to pass to the location provider.
+      *
+      * Access by calling `const {FleetEngineDeliveryFleetLocationProvider} =
+      * await google.maps.importLibrary("journeySharing")`. See
+      * https://developers.google.com/maps/documentation/javascript/libraries.
+      * @param options Options to pass to the location provider.
       */
     def this(options: FleetEngineDeliveryFleetLocationProviderOptions) = this()
     
@@ -66,17 +74,26 @@ object journeySharing {
     override def addListener(eventName: String, handler: js.Function): MapsEventListener = js.native
     
     /**
+      * True if this location provider is polling. Read only.
+      */
+    /* CompleteClass */
+    var isPolling: Boolean = js.native
+    
+    /**
       * Minimum time between fetching location updates in milliseconds. If it
       * takes longer than <code>pollingIntervalMillis</code> to fetch a location
       * update, the next location update is not started until the current one
-      * finishes. <p>Setting this value to 0 disables recurring location updates.
-      * A new location update is fetched if any of the parameters observed by the
-      * location provider changes. <p>The default polling interval is 5000
-      * milliseconds, the minimum interval. If you set the polling interval to a
-      * lower non-zero value, 5000 is used.
+      * finishes. <br><br>Setting this value to 0, Infinity, or a negative value
+      * disables automatic location updates. A new location update is fetched
+      * once if the tracking ID parameter (for example, the shipment tracking ID
+      * of the shipment location provider), or a filtering option (for example,
+      * viewport bounds or attribute filters for fleet location providers)
+      * changes. <br><br>The default, and minimum, polling interval is 5000
+      * milliseconds. If you set the polling interval to a lower positive value,
+      * 5000 is stored and used.
       */
     /* CompleteClass */
-    var pollingIntervalMillis: Double | Null = js.native
+    var pollingIntervalMillis: Double = js.native
     
     /**
       * This Field is read-only. Threshold for stale vehicle location. If the
@@ -87,21 +104,18 @@ object journeySharing {
     var staleLocationThresholdMillis: Double = js.native
   }
   
-  /**
-    * Available only in the v=beta channel: https://goo.gle/3oAthT3.
-    * Delivery Vehicle Location Provider.
-    */
   @JSGlobal("google.maps.journeySharing.FleetEngineDeliveryVehicleLocationProvider")
   @js.native
   open class FleetEngineDeliveryVehicleLocationProvider protected ()
     extends StObject
        with typings.googleMaps.google.maps.journeySharing.FleetEngineDeliveryVehicleLocationProvider {
     /**
-      * Available only in the v=beta channel: https://goo.gle/3oAthT3.
       * Delivery Vehicle Location Provider.
-      * @param options <p>{@link
-      *     google.maps.journeySharing.FleetEngineDeliveryVehicleLocationProviderOptions}
-      *     <p>Options to pass to the location provider.
+      *
+      * Access by calling `const {FleetEngineDeliveryVehicleLocationProvider} =
+      * await google.maps.importLibrary("journeySharing")`. See
+      * https://developers.google.com/maps/documentation/javascript/libraries.
+      * @param options Options to pass to the location provider.
       */
     def this(options: FleetEngineDeliveryVehicleLocationProviderOptions) = this()
     
@@ -121,6 +135,28 @@ object journeySharing {
       */
     /* CompleteClass */
     var deliveryVehicleId: String = js.native
+    
+    /**
+      * True if this location provider is polling. Read only.
+      */
+    /* CompleteClass */
+    var isPolling: Boolean = js.native
+    
+    /**
+      * Minimum time between fetching location updates in milliseconds. If it
+      * takes longer than <code>pollingIntervalMillis</code> to fetch a location
+      * update, the next location update is not started until the current one
+      * finishes. <br><br>Setting this value to 0, Infinity, or a negative value
+      * disables automatic location updates. A new location update is fetched
+      * once if the tracking ID parameter (for example, the shipment tracking ID
+      * of the shipment location provider), or a filtering option (for example,
+      * viewport bounds or attribute filters for fleet location providers)
+      * changes. <br><br>The default, and minimum, polling interval is 5000
+      * milliseconds. If you set the polling interval to a lower positive value,
+      * 5000 is stored and used.
+      */
+    /* CompleteClass */
+    var pollingIntervalMillis: Double = js.native
     
     /**
       * Optionally allow users to display the task&#39;s outcome location.
@@ -149,10 +185,6 @@ object journeySharing {
     var taskFilterOptions: FleetEngineTaskFilterOptions = js.native
   }
   
-  /**
-    * Available only in the v=beta channel: https://goo.gle/3oAthT3.
-    * Types of Fleet Engine services.
-    */
   @JSGlobal("google.maps.journeySharing.FleetEngineServiceType")
   @js.native
   object FleetEngineServiceType extends StObject {
@@ -169,21 +201,18 @@ object journeySharing {
     /* "UNKNOWN_SERVICE" */ val UNKNOWN_SERVICE: typings.googleMaps.google.maps.journeySharing.FleetEngineServiceType.UNKNOWN_SERVICE & String = js.native
   }
   
-  /**
-    * Available only in the v=beta channel: https://goo.gle/3oAthT3.
-    * Shipment location provider.
-    */
   @JSGlobal("google.maps.journeySharing.FleetEngineShipmentLocationProvider")
   @js.native
   open class FleetEngineShipmentLocationProvider protected ()
     extends StObject
        with typings.googleMaps.google.maps.journeySharing.FleetEngineShipmentLocationProvider {
     /**
-      * Available only in the v=beta channel: https://goo.gle/3oAthT3.
       * Shipment location provider.
-      * @param options <p>{@link
-      *     google.maps.journeySharing.FleetEngineShipmentLocationProviderOptions}
-      *     <p>Options for the location provider.
+      *
+      * Access by calling `const {FleetEngineShipmentLocationProvider} = await
+      * google.maps.importLibrary("journeySharing")`. See
+      * https://developers.google.com/maps/documentation/javascript/libraries.
+      * @param options Options for the location provider.
       */
     def this(options: FleetEngineShipmentLocationProviderOptions) = this()
     
@@ -198,10 +227,26 @@ object journeySharing {
     override def addListener(eventName: String, handler: js.Function): MapsEventListener = js.native
     
     /**
-      * Returns the currently tracked task.
+      * True if this location provider is polling. Read only.
       */
     /* CompleteClass */
-    override def getTask(): Task | Null = js.native
+    var isPolling: Boolean = js.native
+    
+    /**
+      * Minimum time between fetching location updates in milliseconds. If it
+      * takes longer than <code>pollingIntervalMillis</code> to fetch a location
+      * update, the next location update is not started until the current one
+      * finishes. <br><br>Setting this value to 0, Infinity, or a negative value
+      * disables automatic location updates. A new location update is fetched
+      * once if the tracking ID parameter (for example, the shipment tracking ID
+      * of the shipment location provider), or a filtering option (for example,
+      * viewport bounds or attribute filters for fleet location providers)
+      * changes. <br><br>The default, and minimum, polling interval is 5000
+      * milliseconds. If you set the polling interval to a lower positive value,
+      * 5000 is stored and used.
+      */
+    /* CompleteClass */
+    var pollingIntervalMillis: Double = js.native
     
     /**
       * Explicitly refreshes the tracked location.
@@ -217,21 +262,18 @@ object journeySharing {
     var trackingId: String = js.native
   }
   
-  /**
-    * Available only in the v=beta channel: https://goo.gle/3oAthT3.
-    * Trip location provider.
-    */
   @JSGlobal("google.maps.journeySharing.FleetEngineTripLocationProvider")
   @js.native
   open class FleetEngineTripLocationProvider protected ()
     extends StObject
        with typings.googleMaps.google.maps.journeySharing.FleetEngineTripLocationProvider {
     /**
-      * Available only in the v=beta channel: https://goo.gle/3oAthT3.
       * Trip location provider.
-      * @param options <p>{@link
-      *     google.maps.journeySharing.FleetEngineTripLocationProviderOptions}
-      *     <p>Options for the location provider.
+      *
+      * Access by calling `const {FleetEngineTripLocationProvider} = await
+      * google.maps.importLibrary("journeySharing")`. See
+      * https://developers.google.com/maps/documentation/javascript/libraries.
+      * @param options Options for the location provider.
       */
     def this(options: FleetEngineTripLocationProviderOptions) = this()
     
@@ -244,6 +286,28 @@ object journeySharing {
       */
     /* CompleteClass */
     override def addListener(eventName: String, handler: js.Function): MapsEventListener = js.native
+    
+    /**
+      * True if this location provider is polling. Read only.
+      */
+    /* CompleteClass */
+    var isPolling: Boolean = js.native
+    
+    /**
+      * Minimum time between fetching location updates in milliseconds. If it
+      * takes longer than <code>pollingIntervalMillis</code> to fetch a location
+      * update, the next location update is not started until the current one
+      * finishes. <br><br>Setting this value to 0, Infinity, or a negative value
+      * disables automatic location updates. A new location update is fetched
+      * once if the tracking ID parameter (for example, the shipment tracking ID
+      * of the shipment location provider), or a filtering option (for example,
+      * viewport bounds or attribute filters for fleet location providers)
+      * changes. <br><br>The default, and minimum, polling interval is 5000
+      * milliseconds. If you set the polling interval to a lower positive value,
+      * 5000 is stored and used.
+      */
+    /* CompleteClass */
+    var pollingIntervalMillis: Double = js.native
     
     /**
       * Explicitly refreshes the tracked location.
@@ -259,38 +323,35 @@ object journeySharing {
     var tripId: String = js.native
   }
   
-  /**
-    * Available only in the v=beta channel: https://goo.gle/3oAthT3.
-    * The map view.
-    */
   @JSGlobal("google.maps.journeySharing.JourneySharingMapView")
   @js.native
   open class JourneySharingMapView protected ()
     extends StObject
        with typings.googleMaps.google.maps.journeySharing.JourneySharingMapView {
     /**
-      * Available only in the v=beta channel: https://goo.gle/3oAthT3.
       * The map view.
-      * @param options <p>{@link
-      *     google.maps.journeySharing.JourneySharingMapViewOptions} <p>Options
-      *     for the map view.
+      *
+      * Access by calling `const {JourneySharingMapView} = await
+      * google.maps.importLibrary("journeySharing")`. See
+      * https://developers.google.com/maps/documentation/javascript/libraries.
+      * @param options Options for the map view.
       */
     def this(options: JourneySharingMapViewOptions) = this()
     
     /**
       * Configures options for an anticipated route polyline. Invoked whenever a
-      * new anticipated route polyline is rendered. <p>If specifying a function,
-      * the function can and should modify the input&#39;s defaultPolylineOptions
-      * field containing a google.maps.PolylineOptions object, and return it as
-      * polylineOptions in the output PolylineSetupOptions object. <p>Specifying
-      * a PolylineSetupOptions object has the same effect as specifying a
-      * function that returns that static object. <p>Do not reuse the same
-      * PolylineSetupOptions object in different PolylineSetup functions or
-      * static values, and do not reuse the same google.maps.PolylineOptions
-      * object for the polylineOptions key in different PolylineSetupOptions
-      * objects. If polylineOptions or visible is unset or null, it will be
-      * overwritten with the default. Any values set for polylineOptions.map or
-      * polylineOptions.path will be ignored.
+      * new anticipated route polyline is rendered. <br><br>If specifying a
+      * function, the function can and should modify the input&#39;s
+      * defaultPolylineOptions field containing a google.maps.PolylineOptions
+      * object, and return it as polylineOptions in the output
+      * PolylineSetupOptions object. <br><br>Specifying a PolylineSetupOptions
+      * object has the same effect as specifying a function that returns that
+      * static object. <br><br>Do not reuse the same PolylineSetupOptions object
+      * in different PolylineSetup functions or static values, and do not reuse
+      * the same google.maps.PolylineOptions object for the polylineOptions key
+      * in different PolylineSetupOptions objects. If polylineOptions or visible
+      * is unset or null, it will be overwritten with the default. Any values set
+      * for polylineOptions.map or polylineOptions.path will be ignored.
       */
     /* CompleteClass */
     var anticipatedRoutePolylineSetup: PolylineSetupOptions | (js.Function1[/* a */ DefaultPolylineSetupOptions, PolylineSetupOptions]) = js.native
@@ -309,24 +370,31 @@ object journeySharing {
     
     /**
       * Configures options for a destination location marker. Invoked whenever a
-      * new destination marker is rendered. <p>If specifying a function, the
+      * new destination marker is rendered. <br><br>If specifying a function, the
       * function can and should modify the input&#39;s defaultMarkerOptions field
       * containing a google.maps.MarkerOptions object, and return it as
-      * markerOptions in the output MarkerSetupOptions object. <p>Specifying a
-      * MarkerSetupOptions object has the same effect as specifying a function
-      * that returns that static object. <p>Do not reuse the same
+      * markerOptions in the output MarkerSetupOptions object. <br><br>Specifying
+      * a MarkerSetupOptions object has the same effect as specifying a function
+      * that returns that static object. <br><br>Do not reuse the same
       * MarkerSetupOptions object in different MarkerSetup functions or static
       * values, and do not reuse the same google.maps.MarkerOptions object for
       * the markerOptions key in different MarkerSetupOptions objects. If
       * markerOptions is unset or null, it will be overwritten with the default.
       * Any value set for markerOptions.map or markerOptions.position will be
       * ignored.
+      * @deprecated Marker setup is deprecated. Use the
+      *     <code>MarkerCustomizationFunction</code> methods for your location
+      *     provider instead. This field will be removed in the future.
       */
     /* CompleteClass */
     var destinationMarkerSetup: MarkerSetupOptions | (js.Function1[/* a */ DefaultMarkerSetupOptions, MarkerSetupOptions]) = js.native
     
     /**
       * Returns the destination markers, if any.
+      * @deprecated getting a list of markers via the <code>MapView</code> is
+      *     deprecated. Use the <code>MarkerCustomizationFunction</code>s for
+      *     your location provider to receive callbacks when a marker is added to
+      *     the map or updated.
       */
     /* CompleteClass */
     var destinationMarkers: js.Array[typings.googleMaps.google.maps.Marker_] = js.native
@@ -351,95 +419,115 @@ object journeySharing {
     var locationProvider: typings.googleMaps.google.maps.journeySharing.LocationProvider = js.native
     
     /**
-      * The map object contained in the map view.
+      * This Field is read-only. The map object contained in the map view.
       */
     /* CompleteClass */
     var map: typings.googleMaps.google.maps.Map = js.native
     
     /**
-      * The map options passed into the map via the map view.
+      * This Field is read-only. The map options passed into the map via the map
+      * view.
       */
     /* CompleteClass */
     var mapOptions: MapOptions = js.native
     
     /**
       * Configures options for an origin location marker. Invoked whenever a new
-      * origin marker is rendered. <p>If specifying a function, the function can
-      * and should modify the input&#39;s defaultMarkerOptions field containing a
-      * google.maps.MarkerOptions object, and return it as markerOptions in the
-      * output MarkerSetupOptions object. <p>Specifying a MarkerSetupOptions
-      * object has the same effect as specifying a function that returns that
-      * static object. <p>Do not reuse the same MarkerSetupOptions object in
-      * different MarkerSetup functions or static values, and do not reuse the
-      * same google.maps.MarkerOptions object for the markerOptions key in
-      * different MarkerSetupOptions objects. If markerOptions is unset or null,
-      * it will be overwritten with the default. Any value set for
-      * markerOptions.map or markerOptions.position will be ignored.
+      * origin marker is rendered. <br><br>If specifying a function, the function
+      * can and should modify the input&#39;s defaultMarkerOptions field
+      * containing a google.maps.MarkerOptions object, and return it as
+      * markerOptions in the output MarkerSetupOptions object. <br><br>Specifying
+      * a MarkerSetupOptions object has the same effect as specifying a function
+      * that returns that static object. <br><br>Do not reuse the same
+      * MarkerSetupOptions object in different MarkerSetup functions or static
+      * values, and do not reuse the same google.maps.MarkerOptions object for
+      * the markerOptions key in different MarkerSetupOptions objects. If
+      * markerOptions is unset or null, it will be overwritten with the default.
+      * Any value set for markerOptions.map or markerOptions.position will be
+      * ignored.
+      * @deprecated Marker setup is deprecated. Use the
+      *     <code>MarkerCustomizationFunction</code> methods for your location
+      *     provider instead. This field will be removed in the future.
       */
     /* CompleteClass */
     var originMarkerSetup: MarkerSetupOptions | (js.Function1[/* a */ DefaultMarkerSetupOptions, MarkerSetupOptions]) = js.native
     
     /**
       * Returns the origin markers, if any.
+      * @deprecated getting a list of markers via the <code>MapView</code> is
+      *     deprecated. Use the <code>MarkerCustomizationFunction</code>s for
+      *     your location provider to receive callbacks when a marker is added to
+      *     the map or updated.
       */
     /* CompleteClass */
     var originMarkers: js.Array[typings.googleMaps.google.maps.Marker_] = js.native
     
     /**
       * Configures options for a ping location marker. Invoked whenever a new
-      * ping marker is rendered. <p>If specifying a function, the function can
-      * and should modify the input&#39;s defaultMarkerOptions field containing a
-      * google.maps.MarkerOptions object, and return it as markerOptions in the
-      * output MarkerSetupOptions object. <p>Specifying a MarkerSetupOptions
-      * object has the same effect as specifying a function that returns that
-      * static object. <p>Do not reuse the same MarkerSetupOptions object in
-      * different MarkerSetup functions or static values, and do not reuse the
-      * same google.maps.MarkerOptions object for the markerOptions key in
-      * different MarkerSetupOptions objects. If markerOptions is unset or null,
-      * it will be overwritten with the default. Any value set for
-      * markerOptions.map or markerOptions.position will be ignored.
+      * ping marker is rendered. <br><br>If specifying a function, the function
+      * can and should modify the input&#39;s defaultMarkerOptions field
+      * containing a google.maps.MarkerOptions object, and return it as
+      * markerOptions in the output MarkerSetupOptions object. <br><br>Specifying
+      * a MarkerSetupOptions object has the same effect as specifying a function
+      * that returns that static object. <br><br>Do not reuse the same
+      * MarkerSetupOptions object in different MarkerSetup functions or static
+      * values, and do not reuse the same google.maps.MarkerOptions object for
+      * the markerOptions key in different MarkerSetupOptions objects. If
+      * markerOptions is unset or null, it will be overwritten with the default.
+      * Any value set for markerOptions.map or markerOptions.position will be
+      * ignored.
+      * @deprecated Marker setup is deprecated. Use the
+      *     <code>MarkerCustomizationFunction</code> methods for your location
+      *     provider instead. This field will be removed in the future.
       */
     /* CompleteClass */
     var pingMarkerSetup: MarkerSetupOptions | (js.Function1[/* a */ DefaultMarkerSetupOptions, MarkerSetupOptions]) = js.native
     
     /**
       * Configures options for a successful task location marker. Invoked
-      * whenever a new successful task marker is rendered. <p>If specifying a
-      * function, the function can and should modify the input&#39;s
+      * whenever a new successful task marker is rendered. <br><br>If specifying
+      * a function, the function can and should modify the input&#39;s
       * defaultMarkerOptions field containing a google.maps.MarkerOptions object,
       * and return it as markerOptions in the output MarkerSetupOptions object.
-      * <p>Specifying a MarkerSetupOptions object has the same effect as
-      * specifying a function that returns that static object. <p>Do not reuse
-      * the same MarkerSetupOptions object in different MarkerSetup functions or
-      * static values, and do not reuse the same google.maps.MarkerOptions object
-      * for the markerOptions key in different MarkerSetupOptions objects. If
-      * markerOptions is unset or null, it will be overwritten with the default.
-      * Any value set for markerOptions.map or markerOptions.position will be
-      * ignored.
+      * <br><br>Specifying a MarkerSetupOptions object has the same effect as
+      * specifying a function that returns that static object. <br><br>Do not
+      * reuse the same MarkerSetupOptions object in different MarkerSetup
+      * functions or static values, and do not reuse the same
+      * google.maps.MarkerOptions object for the markerOptions key in different
+      * MarkerSetupOptions objects. If markerOptions is unset or null, it will be
+      * overwritten with the default. Any value set for markerOptions.map or
+      * markerOptions.position will be ignored.
+      * @deprecated Marker setup is deprecated. Use the
+      *     <code>MarkerCustomizationFunction</code> methods for your location
+      *     provider instead. This field will be removed in the future.
       */
     /* CompleteClass */
     var successfulTaskMarkerSetup: MarkerSetupOptions | (js.Function1[/* a */ DefaultMarkerSetupOptions, MarkerSetupOptions]) = js.native
     
     /**
       * Returns the successful task markers, if any.
+      * @deprecated getting a list of markers via the <code>MapView</code> is
+      *     deprecated. Use the <code>MarkerCustomizationFunction</code>s for
+      *     your location provider to receive callbacks when a marker is added to
+      *     the map or updated.
       */
     /* CompleteClass */
     var successfulTaskMarkers: js.Array[typings.googleMaps.google.maps.Marker_] = js.native
     
     /**
       * Configures options for a taken route polyline. Invoked whenever a new
-      * taken route polyline is rendered. <p>If specifying a function, the
+      * taken route polyline is rendered. <br><br>If specifying a function, the
       * function can and should modify the input&#39;s defaultPolylineOptions
       * field containing a google.maps.PolylineOptions object, and return it as
-      * polylineOptions in the output PolylineSetupOptions object. <p>Specifying
-      * a PolylineSetupOptions object has the same effect as specifying a
-      * function that returns that static object. <p>Do not reuse the same
-      * PolylineSetupOptions object in different PolylineSetup functions or
-      * static values, and do not reuse the same google.maps.PolylineOptions
-      * object for the polylineOptions key in different PolylineSetupOptions
-      * objects. <p>Any values set for polylineOptions.map or
-      * polylineOptions.path will be ignored. Any unset or null value will be
-      * overwritten with the default.
+      * polylineOptions in the output PolylineSetupOptions object.
+      * <br><br>Specifying a PolylineSetupOptions object has the same effect as
+      * specifying a function that returns that static object. <br><br>Do not
+      * reuse the same PolylineSetupOptions object in different PolylineSetup
+      * functions or static values, and do not reuse the same
+      * google.maps.PolylineOptions object for the polylineOptions key in
+      * different PolylineSetupOptions objects. <br><br>Any values set for
+      * polylineOptions.map or polylineOptions.path will be ignored. Any unset or
+      * null value will be overwritten with the default.
       */
     /* CompleteClass */
     var takenRoutePolylineSetup: PolylineSetupOptions | (js.Function1[/* a */ DefaultPolylineSetupOptions, PolylineSetupOptions]) = js.native
@@ -452,105 +540,129 @@ object journeySharing {
     
     /**
       * Configures options for a task outcome location marker. Invoked whenever a
-      * new task outcome location marker is rendered. <p>If specifying a
+      * new task outcome location marker is rendered. <br><br>If specifying a
       * function, the function can and should modify the input&#39;s
       * defaultMarkerOptions field containing a google.maps.MarkerOptions object,
       * and return it as markerOptions in the output MarkerSetupOptions object.
-      * <p>Specifying a MarkerSetupOptions object has the same effect as
-      * specifying a function that returns that static object. <p>Do not reuse
-      * the same MarkerSetupOptions object in different MarkerSetup functions or
-      * static values, and do not reuse the same google.maps.MarkerOptions object
-      * for the markerOptions key in different MarkerSetupOptions objects. If
-      * markerOptions is unset or null, it will be overwritten with the default.
-      * Any value set for markerOptions.map or markerOptions.position will be
-      * ignored.
+      * <br><br>Specifying a MarkerSetupOptions object has the same effect as
+      * specifying a function that returns that static object. <br><br>Do not
+      * reuse the same MarkerSetupOptions object in different MarkerSetup
+      * functions or static values, and do not reuse the same
+      * google.maps.MarkerOptions object for the markerOptions key in different
+      * MarkerSetupOptions objects. If markerOptions is unset or null, it will be
+      * overwritten with the default. Any value set for markerOptions.map or
+      * markerOptions.position will be ignored.
+      * @deprecated Marker setup is deprecated. Use the
+      *     <code>MarkerCustomizationFunction</code> methods for your location
+      *     provider instead. This field will be removed in the future.
       */
     /* CompleteClass */
     var taskOutcomeMarkerSetup: MarkerSetupOptions | (js.Function1[/* a */ DefaultMarkerSetupOptions, MarkerSetupOptions]) = js.native
     
     /**
       * Returns the task outcome markers, if any.
+      * @deprecated getting a list of markers via the <code>MapView</code> is
+      *     deprecated. Use the <code>MarkerCustomizationFunction</code>s for
+      *     your location provider to receive callbacks when a marker is added to
+      *     the map or updated.
       */
     /* CompleteClass */
     var taskOutcomeMarkers: js.Array[typings.googleMaps.google.maps.Marker_] = js.native
     
     /**
       * Configures options for an unsuccessful task location marker. Invoked
-      * whenever a new unsuccessful task marker is rendered. <p>If specifying a
-      * function, the function can and should modify the input&#39;s
+      * whenever a new unsuccessful task marker is rendered. <br><br>If
+      * specifying a function, the function can and should modify the input&#39;s
       * defaultMarkerOptions field containing a google.maps.MarkerOptions object,
       * and return it as markerOptions in the output MarkerSetupOptions object.
-      * <p>Specifying a MarkerSetupOptions object has the same effect as
-      * specifying a function that returns that static object. <p>Do not reuse
-      * the same MarkerSetupOptions object in different MarkerSetup functions or
-      * static values, and do not reuse the same google.maps.MarkerOptions object
-      * for the markerOptions key in different MarkerSetupOptions objects. If
-      * markerOptions is unset or null, it will be overwritten with the default.
-      * Any value set for markerOptions.map or markerOptions.position will be
-      * ignored.
+      * <br><br>Specifying a MarkerSetupOptions object has the same effect as
+      * specifying a function that returns that static object. <br><br>Do not
+      * reuse the same MarkerSetupOptions object in different MarkerSetup
+      * functions or static values, and do not reuse the same
+      * google.maps.MarkerOptions object for the markerOptions key in different
+      * MarkerSetupOptions objects. If markerOptions is unset or null, it will be
+      * overwritten with the default. Any value set for markerOptions.map or
+      * markerOptions.position will be ignored.
+      * @deprecated Marker setup is deprecated. Use the
+      *     <code>MarkerCustomizationFunction</code> methods for your location
+      *     provider instead. This field will be removed in the future.
       */
     /* CompleteClass */
     var unsuccessfulTaskMarkerSetup: MarkerSetupOptions | (js.Function1[/* a */ DefaultMarkerSetupOptions, MarkerSetupOptions]) = js.native
     
     /**
       * Returns the unsuccessful task markers, if any.
+      * @deprecated getting a list of markers via the <code>MapView</code> is
+      *     deprecated. Use the <code>MarkerCustomizationFunction</code>s for
+      *     your location provider to receive callbacks when a marker is added to
+      *     the map or updated.
       */
     /* CompleteClass */
     var unsuccessfulTaskMarkers: js.Array[typings.googleMaps.google.maps.Marker_] = js.native
     
     /**
       * Configures options for a vehicle location marker. Invoked whenever a new
-      * vehicle marker is rendered. <p>If specifying a function, the function can
-      * and should modify the input&#39;s defaultMarkerOptions field containing a
-      * google.maps.MarkerOptions object, and return it as markerOptions in the
-      * output MarkerSetupOptions object. <p>Specifying a MarkerSetupOptions
-      * object has the same effect as specifying a function that returns that
-      * static object. <p>Do not reuse the same MarkerSetupOptions object in
-      * different MarkerSetup functions or static values, and do not reuse the
-      * same google.maps.MarkerOptions object for the markerOptions key in
-      * different MarkerSetupOptions objects. If markerOptions is unset or null,
-      * it will be overwritten with the default. Any value set for
-      * markerOptions.map or markerOptions.position will be ignored.
-      */
-    /* CompleteClass */
-    var vehicleMarkerSetup: MarkerSetupOptions | (js.Function1[/* a */ DefaultMarkerSetupOptions, MarkerSetupOptions]) = js.native
-    
-    /**
-      * Returns the vehicle markers, if any.
-      */
-    /* CompleteClass */
-    var vehicleMarkers: js.Array[typings.googleMaps.google.maps.Marker_] = js.native
-    
-    /**
-      * Configures options for a waypoint location marker. Invoked whenever a new
-      * waypoint marker is rendered. <p>If specifying a function, the function
-      * can and should modify the input&#39;s defaultMarkerOptions field
+      * vehicle marker is rendered. <br><br>If specifying a function, the
+      * function can and should modify the input&#39;s defaultMarkerOptions field
       * containing a google.maps.MarkerOptions object, and return it as
-      * markerOptions in the output MarkerSetupOptions object. <p>Specifying a
-      * MarkerSetupOptions object has the same effect as specifying a function
-      * that returns that static object. <p>Do not reuse the same
+      * markerOptions in the output MarkerSetupOptions object. <br><br>Specifying
+      * a MarkerSetupOptions object has the same effect as specifying a function
+      * that returns that static object. <br><br>Do not reuse the same
       * MarkerSetupOptions object in different MarkerSetup functions or static
       * values, and do not reuse the same google.maps.MarkerOptions object for
       * the markerOptions key in different MarkerSetupOptions objects. If
       * markerOptions is unset or null, it will be overwritten with the default.
       * Any value set for markerOptions.map or markerOptions.position will be
       * ignored.
+      * @deprecated Marker setup is deprecated. Use the
+      *     <code>MarkerCustomizationFunction</code> methods for your location
+      *     provider instead. This field will be removed in the future.
+      */
+    /* CompleteClass */
+    var vehicleMarkerSetup: MarkerSetupOptions | (js.Function1[/* a */ DefaultMarkerSetupOptions, MarkerSetupOptions]) = js.native
+    
+    /**
+      * Returns the vehicle markers, if any.
+      * @deprecated getting a list of markers via the <code>MapView</code> is
+      *     deprecated. Use the <code>MarkerCustomizationFunction</code>s for
+      *     your location provider to receive callbacks when a marker is added to
+      *     the map or updated.
+      */
+    /* CompleteClass */
+    var vehicleMarkers: js.Array[typings.googleMaps.google.maps.Marker_] = js.native
+    
+    /**
+      * Configures options for a waypoint location marker. Invoked whenever a new
+      * waypoint marker is rendered. <br><br>If specifying a function, the
+      * function can and should modify the input&#39;s defaultMarkerOptions field
+      * containing a google.maps.MarkerOptions object, and return it as
+      * markerOptions in the output MarkerSetupOptions object. <br><br>Specifying
+      * a MarkerSetupOptions object has the same effect as specifying a function
+      * that returns that static object. <br><br>Do not reuse the same
+      * MarkerSetupOptions object in different MarkerSetup functions or static
+      * values, and do not reuse the same google.maps.MarkerOptions object for
+      * the markerOptions key in different MarkerSetupOptions objects. If
+      * markerOptions is unset or null, it will be overwritten with the default.
+      * Any value set for markerOptions.map or markerOptions.position will be
+      * ignored.
+      * @deprecated Marker setup is deprecated. Use the
+      *     <code>MarkerCustomizationFunction</code> methods for your location
+      *     provider instead. This field will be removed in the future.
       */
     /* CompleteClass */
     var waypointMarkerSetup: MarkerSetupOptions | (js.Function1[/* a */ DefaultMarkerSetupOptions, MarkerSetupOptions]) = js.native
     
     /**
       * Returns the waypoint markers, if any.
+      * @deprecated getting a list of markers via the <code>MapView</code> is
+      *     deprecated. Use the <code>MarkerCustomizationFunction</code>s for
+      *     your location provider to receive callbacks when a marker is added to
+      *     the map or updated.
       */
     /* CompleteClass */
     var waypointMarkers: js.Array[typings.googleMaps.google.maps.Marker_] = js.native
   }
   
-  /**
-    * Available only in the v=beta channel: https://goo.gle/3oAthT3.
-    * Parent class of location providers. Use the child location provider that
-    * suits your purpose, rather than the parent class.
-    */
   /* note: abstract class */ @JSGlobal("google.maps.journeySharing.LocationProvider")
   @js.native
   open class LocationProvider ()
@@ -566,5 +678,44 @@ object journeySharing {
       */
     /* CompleteClass */
     override def addListener(eventName: String, handler: js.Function): MapsEventListener = js.native
+  }
+  
+  /* note: abstract class */ @JSGlobal("google.maps.journeySharing.PollingLocationProvider")
+  @js.native
+  open class PollingLocationProvider ()
+    extends StObject
+       with typings.googleMaps.google.maps.journeySharing.PollingLocationProvider {
+    
+    /**
+      * Adds a {@link google.maps.MapsEventListener} for an event fired by this
+      * location provider. Returns an identifier for this listener that can be
+      * used with {@link google.maps.event.removeListener}.
+      * @param eventName The name of the event to listen for.
+      * @param handler The event handler.
+      */
+    /* CompleteClass */
+    override def addListener(eventName: String, handler: js.Function): MapsEventListener = js.native
+    
+    /**
+      * True if this location provider is polling. Read only.
+      */
+    /* CompleteClass */
+    var isPolling: Boolean = js.native
+    
+    /**
+      * Minimum time between fetching location updates in milliseconds. If it
+      * takes longer than <code>pollingIntervalMillis</code> to fetch a location
+      * update, the next location update is not started until the current one
+      * finishes. <br><br>Setting this value to 0, Infinity, or a negative value
+      * disables automatic location updates. A new location update is fetched
+      * once if the tracking ID parameter (for example, the shipment tracking ID
+      * of the shipment location provider), or a filtering option (for example,
+      * viewport bounds or attribute filters for fleet location providers)
+      * changes. <br><br>The default, and minimum, polling interval is 5000
+      * milliseconds. If you set the polling interval to a lower positive value,
+      * 5000 is stored and used.
+      */
+    /* CompleteClass */
+    var pollingIntervalMillis: Double = js.native
   }
 }

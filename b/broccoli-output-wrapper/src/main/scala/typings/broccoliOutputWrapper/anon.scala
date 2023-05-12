@@ -10,7 +10,6 @@ import typings.node.anon.MakeDirectoryOptionsrecurMode
 import typings.node.anon.ObjectEncodingOptionsflagEncoding
 import typings.node.anon.ObjectEncodingOptionswith
 import typings.node.anon.ObjectEncodingOptionswithEncoding
-import typings.node.anon.WithFileTypes
 import typings.node.bufferMod.global.Buffer
 import typings.node.bufferMod.global.BufferEncoding
 import typings.node.fsMod.Dirent
@@ -72,7 +71,7 @@ object anon {
     def apply(path: PathLike, options: Encoding): js.Array[Buffer] = js.native
     def apply(path: PathLike, options: ObjectEncodingOptionswith): js.Array[Buffer | String] = js.native
     def apply(path: PathLike, options: ObjectEncodingOptionswithEncoding): js.Array[Dirent] = js.native
-    def apply(path: PathLike, options: WithFileTypes): js.Array[String] = js.native
+    def apply(path: PathLike, options: typings.node.anon.Recursive): js.Array[String] = js.native
     def apply(path: PathLike, options: BufferEncoding): js.Array[Buffer | String] = js.native
   }
   

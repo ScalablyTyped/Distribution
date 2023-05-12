@@ -25,7 +25,7 @@ object mod {
     *                object contains, but not limits to the following fields.
     * @param options
     */
-  // tslint:disable-next-line no-unnecessary-generics
+  // eslint-disable-next-line no-unnecessary-generics
   inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](): Transform = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Transform]
   inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](context: Unit, options: Options[TCommit, TContext]): Transform = (^.asInstanceOf[js.Dynamic].apply(context.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Transform]
   inline def apply[TCommit /* <: Commit[String | Double | js.Symbol] */, TContext /* <: Context */](context: Partial[TContext]): Transform = ^.asInstanceOf[js.Dynamic].apply(context.asInstanceOf[js.Any]).asInstanceOf[Transform]

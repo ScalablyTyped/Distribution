@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.devtoolsProtocol.devtoolsProtocolStrings.CompileError
   - typings.devtoolsProtocol.devtoolsProtocolStrings.BlockedByActiveGenerator
   - typings.devtoolsProtocol.devtoolsProtocolStrings.BlockedByActiveFunction
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.BlockedByTopLevelEsModuleChange
 */
 trait SetScriptSourceResponseStatus extends StObject
 object SetScriptSourceResponseStatus {
@@ -16,6 +17,8 @@ object SetScriptSourceResponseStatus {
   inline def BlockedByActiveFunction: typings.devtoolsProtocol.devtoolsProtocolStrings.BlockedByActiveFunction = "BlockedByActiveFunction".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.BlockedByActiveFunction]
   
   inline def BlockedByActiveGenerator: typings.devtoolsProtocol.devtoolsProtocolStrings.BlockedByActiveGenerator = "BlockedByActiveGenerator".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.BlockedByActiveGenerator]
+  
+  inline def BlockedByTopLevelEsModuleChange: typings.devtoolsProtocol.devtoolsProtocolStrings.BlockedByTopLevelEsModuleChange = "BlockedByTopLevelEsModuleChange".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.BlockedByTopLevelEsModuleChange]
   
   inline def CompileError: typings.devtoolsProtocol.devtoolsProtocolStrings.CompileError = "CompileError".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.CompileError]
   

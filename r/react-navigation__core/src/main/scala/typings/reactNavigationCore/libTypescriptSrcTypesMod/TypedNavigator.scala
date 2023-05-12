@@ -3,7 +3,6 @@ package typings.reactNavigationCore.libTypescriptSrcTypesMod
 import typings.react.mod.ComponentProps
 import typings.react.mod.ComponentType
 import typings.reactNavigationCore.reactNavigationCoreStrings.children
-import typings.reactNavigationCore.reactNavigationCoreStrings.defaultScreenOptions
 import typings.reactNavigationCore.reactNavigationCoreStrings.id
 import typings.reactNavigationCore.reactNavigationCoreStrings.initialRouteName
 import typings.reactNavigationCore.reactNavigationCoreStrings.screenListeners
@@ -28,7 +27,7 @@ trait TypedNavigator[ParamList /* <: ParamListBase */, State /* <: NavigationSta
   var Navigator: ComponentType[
     (Omit[
       ComponentProps[Navigator], 
-      /* keyof @react-navigation/core.@react-navigation/core/lib/typescript/src/types.DefaultNavigatorOptions<any, any, any, any> */ id | children | screenListeners | screenOptions | defaultScreenOptions | initialRouteName
+      /* keyof @react-navigation/core.@react-navigation/core/lib/typescript/src/types.DefaultNavigatorOptions<any, any, any, any> */ id | children | screenListeners | screenOptions | initialRouteName
     ]) & (DefaultNavigatorOptions[ParamList, State, ScreenOptions, EventMap])
   ]
   
@@ -44,7 +43,7 @@ object TypedNavigator {
     Navigator: ComponentType[
       (Omit[
         ComponentProps[Navigator], 
-        /* keyof @react-navigation/core.@react-navigation/core/lib/typescript/src/types.DefaultNavigatorOptions<any, any, any, any> */ id | children | screenListeners | screenOptions | defaultScreenOptions | initialRouteName
+        /* keyof @react-navigation/core.@react-navigation/core/lib/typescript/src/types.DefaultNavigatorOptions<any, any, any, any> */ id | children | screenListeners | screenOptions | initialRouteName
       ]) & (DefaultNavigatorOptions[ParamList, State, ScreenOptions, EventMap])
     ],
     Screen: RouteConfig[ParamList, Any, State, ScreenOptions, EventMap] => Null
@@ -62,7 +61,7 @@ object TypedNavigator {
       value: ComponentType[
           (Omit[
             ComponentProps[Navigator], 
-            /* keyof @react-navigation/core.@react-navigation/core/lib/typescript/src/types.DefaultNavigatorOptions<any, any, any, any> */ id | children | screenListeners | screenOptions | defaultScreenOptions | initialRouteName
+            /* keyof @react-navigation/core.@react-navigation/core/lib/typescript/src/types.DefaultNavigatorOptions<any, any, any, any> */ id | children | screenListeners | screenOptions | initialRouteName
           ]) & (DefaultNavigatorOptions[ParamList, State, ScreenOptions, EventMap])
         ]
     ): Self = StObject.set(x, "Navigator", value.asInstanceOf[js.Any])

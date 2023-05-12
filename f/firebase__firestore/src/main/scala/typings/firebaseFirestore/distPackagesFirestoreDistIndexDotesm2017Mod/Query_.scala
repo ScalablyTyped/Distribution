@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class Query_ protected ()
   extends StObject
-     with Zc {
+     with fh {
   /** @hideconstructor protected */
   def this(t: Any, e: Any, n: Any) = this()
   
@@ -29,5 +29,5 @@ open class Query_ protected ()
   var `type`: String = js.native
   
   /* CompleteClass */
-  override def withConverter(t: Any): Zc = js.native
+  override def withConverter(t: Any): fh = js.native
 }

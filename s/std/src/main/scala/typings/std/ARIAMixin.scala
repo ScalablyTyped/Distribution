@@ -25,9 +25,6 @@ trait ARIAMixin extends StObject {
   var ariaColIndex: java.lang.String | Null
   
   /* standard dom */
-  var ariaColIndexText: java.lang.String | Null
-  
-  /* standard dom */
   var ariaColSpan: java.lang.String | Null
   
   /* standard dom */
@@ -97,9 +94,6 @@ trait ARIAMixin extends StObject {
   var ariaRowIndex: java.lang.String | Null
   
   /* standard dom */
-  var ariaRowIndexText: java.lang.String | Null
-  
-  /* standard dom */
   var ariaRowSpan: java.lang.String | Null
   
   /* standard dom */
@@ -129,7 +123,7 @@ trait ARIAMixin extends StObject {
 object ARIAMixin {
   
   inline def apply(): ARIAMixin = {
-    val __obj = js.Dynamic.literal(ariaAtomic = null, ariaAutoComplete = null, ariaBusy = null, ariaChecked = null, ariaColCount = null, ariaColIndex = null, ariaColIndexText = null, ariaColSpan = null, ariaCurrent = null, ariaDisabled = null, ariaExpanded = null, ariaHasPopup = null, ariaHidden = null, ariaInvalid = null, ariaKeyShortcuts = null, ariaLabel = null, ariaLevel = null, ariaLive = null, ariaModal = null, ariaMultiLine = null, ariaMultiSelectable = null, ariaOrientation = null, ariaPlaceholder = null, ariaPosInSet = null, ariaPressed = null, ariaReadOnly = null, ariaRequired = null, ariaRoleDescription = null, ariaRowCount = null, ariaRowIndex = null, ariaRowIndexText = null, ariaRowSpan = null, ariaSelected = null, ariaSetSize = null, ariaSort = null, ariaValueMax = null, ariaValueMin = null, ariaValueNow = null, ariaValueText = null, role = null)
+    val __obj = js.Dynamic.literal(ariaAtomic = null, ariaAutoComplete = null, ariaBusy = null, ariaChecked = null, ariaColCount = null, ariaColIndex = null, ariaColSpan = null, ariaCurrent = null, ariaDisabled = null, ariaExpanded = null, ariaHasPopup = null, ariaHidden = null, ariaInvalid = null, ariaKeyShortcuts = null, ariaLabel = null, ariaLevel = null, ariaLive = null, ariaModal = null, ariaMultiLine = null, ariaMultiSelectable = null, ariaOrientation = null, ariaPlaceholder = null, ariaPosInSet = null, ariaPressed = null, ariaReadOnly = null, ariaRequired = null, ariaRoleDescription = null, ariaRowCount = null, ariaRowIndex = null, ariaRowSpan = null, ariaSelected = null, ariaSetSize = null, ariaSort = null, ariaValueMax = null, ariaValueMin = null, ariaValueNow = null, ariaValueText = null, role = null)
     __obj.asInstanceOf[ARIAMixin]
   }
   
@@ -159,10 +153,6 @@ object ARIAMixin {
     inline def setAriaColIndex(value: java.lang.String): Self = StObject.set(x, "ariaColIndex", value.asInstanceOf[js.Any])
     
     inline def setAriaColIndexNull: Self = StObject.set(x, "ariaColIndex", null)
-    
-    inline def setAriaColIndexText(value: java.lang.String): Self = StObject.set(x, "ariaColIndexText", value.asInstanceOf[js.Any])
-    
-    inline def setAriaColIndexTextNull: Self = StObject.set(x, "ariaColIndexText", null)
     
     inline def setAriaColSpan(value: java.lang.String): Self = StObject.set(x, "ariaColSpan", value.asInstanceOf[js.Any])
     
@@ -255,10 +245,6 @@ object ARIAMixin {
     inline def setAriaRowIndex(value: java.lang.String): Self = StObject.set(x, "ariaRowIndex", value.asInstanceOf[js.Any])
     
     inline def setAriaRowIndexNull: Self = StObject.set(x, "ariaRowIndex", null)
-    
-    inline def setAriaRowIndexText(value: java.lang.String): Self = StObject.set(x, "ariaRowIndexText", value.asInstanceOf[js.Any])
-    
-    inline def setAriaRowIndexTextNull: Self = StObject.set(x, "ariaRowIndexText", null)
     
     inline def setAriaRowSpan(value: java.lang.String): Self = StObject.set(x, "ariaRowSpan", value.asInstanceOf[js.Any])
     

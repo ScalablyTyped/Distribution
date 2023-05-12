@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetHistogramRequest extends StObject {
   
   /**
-    * If true, retrieve delta since last call.
+    * If true, retrieve delta since last delta call.
     */
   var delta: js.UndefOr[Boolean] = js.undefined
   

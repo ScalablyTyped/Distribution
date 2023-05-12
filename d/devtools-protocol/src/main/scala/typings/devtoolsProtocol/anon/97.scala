@@ -1,19 +1,19 @@
 package typings.devtoolsProtocol.anon
 
-import typings.devtoolsProtocol.mod.Protocol.Emulation.SetTouchEmulationEnabledRequest
+import typings.devtoolsProtocol.mod.Protocol.Emulation.SetScriptExecutionDisabledRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `97` extends StObject {
   
-  var paramsType: js.Array[SetTouchEmulationEnabledRequest]
+  var paramsType: js.Array[SetScriptExecutionDisabledRequest]
   
   var returnType: Unit
 }
 object `97` {
   
-  inline def apply(paramsType: js.Array[SetTouchEmulationEnabledRequest], returnType: Unit): `97` = {
+  inline def apply(paramsType: js.Array[SetScriptExecutionDisabledRequest], returnType: Unit): `97` = {
     val __obj = js.Dynamic.literal(paramsType = paramsType.asInstanceOf[js.Any], returnType = returnType.asInstanceOf[js.Any])
     __obj.asInstanceOf[`97`]
   }
@@ -21,9 +21,9 @@ object `97` {
   @scala.inline
   implicit open class MutableBuilder[Self <: `97`] (val x: Self) extends AnyVal {
     
-    inline def setParamsType(value: js.Array[SetTouchEmulationEnabledRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
+    inline def setParamsType(value: js.Array[SetScriptExecutionDisabledRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    inline def setParamsTypeVarargs(value: SetTouchEmulationEnabledRequest*): Self = StObject.set(x, "paramsType", js.Array(value*))
+    inline def setParamsTypeVarargs(value: SetScriptExecutionDisabledRequest*): Self = StObject.set(x, "paramsType", js.Array(value*))
     
     inline def setReturnType(value: Unit): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }

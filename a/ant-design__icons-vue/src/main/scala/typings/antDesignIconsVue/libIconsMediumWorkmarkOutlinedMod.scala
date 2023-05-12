@@ -16,7 +16,7 @@ object libIconsMediumWorkmarkOutlinedMod extends Shortcut {
   @js.native
   trait MediumWorkmarkOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_MediumWorkmarkOutlinedIconType: String = js.native

@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TimeRange extends StObject {
   
   /**
-    * The UNIX datetime of the end of the time range.
+    * The Unix timestamp for the end of the time range.
     */
   var EndTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The UNIX datetime of the beginning of the time range.
+    * The Unix timestamp for the beginning of the time range.
     */
   var StartTime: js.UndefOr[js.Date] = js.undefined
 }

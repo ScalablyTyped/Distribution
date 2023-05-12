@@ -12,23 +12,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object cloneMod {
   
-  @JSImport("nodegit/clone", "Clone")
-  @js.native
-  open class Clone () extends StObject
-  /* static members */
   object Clone {
+    
+    inline def apply(url: String, localPath: String): js.Promise[Repository] = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], localPath.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Repository]]
+    inline def apply(url: String, localPath: String, options: CloneOptions): js.Promise[Repository] = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], localPath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Repository]]
     
     @JSImport("nodegit/clone", "Clone")
     @js.native
     val ^ : js.Any = js.native
-    
-    /**
-      * Patch repository cloning to automatically coerce objects.
-      */
-    inline def clone(url: String, localPath: String): js.Promise[Repository] = (^.asInstanceOf[js.Dynamic].applyDynamic("clone")(url.asInstanceOf[js.Any], localPath.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Repository]]
-    inline def clone(url: String, localPath: String, options: CloneOptions): js.Promise[Repository] = (^.asInstanceOf[js.Dynamic].applyDynamic("clone")(url.asInstanceOf[js.Any], localPath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Repository]]
-    
-    inline def initOptions(opts: CloneOptions, version: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("initOptions")(opts.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /* Rewritten from type alias, can be one of: 
       - typings.nodegit.nodegitInts.`0`

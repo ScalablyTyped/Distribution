@@ -6,6 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("THREE.LightProbe")
 @js.native
+/**
+  * Creates a new LightProbe.
+  * @param sh An instance of {@link THREE.SphericalHarmonics3 | SphericalHarmonics3}. Default `new THREE.SphericalHarmonics3()``.
+  * @param intensity Numeric value of the light probe's intensity. Expects a `Float`. Default `1`.
+  */
 open class LightProbe ()
   extends typings.three.mod.LightProbe {
   def this(sh: typings.three.srcMathSphericalHarmonics3Mod.SphericalHarmonics3) = this()

@@ -1,5 +1,6 @@
 package typings.three
 
+import typings.three.srcCoreBufferGeometryMod.NormalBufferAttributes
 import typings.three.srcThreeMod.BufferGeometry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,6 +12,6 @@ object examplesJsmModifiersSimplifyModifierMod {
   @js.native
   open class SimplifyModifier () extends StObject {
     
-    def modify(geometry: BufferGeometry, count: Double): BufferGeometry = js.native
+    def modify(geometry: BufferGeometry[NormalBufferAttributes], count: Double): BufferGeometry[NormalBufferAttributes] = js.native
   }
 }

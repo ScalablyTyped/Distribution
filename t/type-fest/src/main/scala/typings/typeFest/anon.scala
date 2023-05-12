@@ -3,6 +3,7 @@ package typings.typeFest
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.IterableIterator
+import typings.typeFest.sourceJsonifiableMod.Jsonifiable
 import typings.typeFest.sourceLiteralUnionMod.LiteralUnion
 import typings.typeFest.typeFestBooleans.`false`
 import typings.typeFest.typeFestBooleans.`true`
@@ -428,6 +429,60 @@ object anon {
     implicit open class MutableBuilder[Self <: Optional] (val x: Self) extends AnyVal {
       
       inline def setOptional(value: `true`): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait PreserveConsecutiveUppercase extends StObject {
+    
+    var preserveConsecutiveUppercase: `true`
+  }
+  object PreserveConsecutiveUppercase {
+    
+    inline def apply(): PreserveConsecutiveUppercase = {
+      val __obj = js.Dynamic.literal(preserveConsecutiveUppercase = true)
+      __obj.asInstanceOf[PreserveConsecutiveUppercase]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PreserveConsecutiveUppercase] (val x: Self) extends AnyVal {
+      
+      inline def setPreserveConsecutiveUppercase(value: `true`): Self = StObject.set(x, "preserveConsecutiveUppercase", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait RequireExactProps extends StObject {
+    
+    var requireExactProps: `false`
+  }
+  object RequireExactProps {
+    
+    inline def apply(): RequireExactProps = {
+      val __obj = js.Dynamic.literal(requireExactProps = false)
+      __obj.asInstanceOf[RequireExactProps]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequireExactProps] (val x: Self) extends AnyVal {
+      
+      inline def setRequireExactProps(value: `false`): Self = StObject.set(x, "requireExactProps", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait ToJSON extends StObject {
+    
+    def toJSON(): Jsonifiable
+  }
+  object ToJSON {
+    
+    inline def apply(toJSON: () => Jsonifiable): ToJSON = {
+      val __obj = js.Dynamic.literal(toJSON = js.Any.fromFunction0(toJSON))
+      __obj.asInstanceOf[ToJSON]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToJSON] (val x: Self) extends AnyVal {
+      
+      inline def setToJSON(value: () => Jsonifiable): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
     }
   }
   

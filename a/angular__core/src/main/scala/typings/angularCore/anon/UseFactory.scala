@@ -8,6 +8,8 @@ trait UseFactory extends StObject {
   
   var deps: js.UndefOr[js.Array[Any]] = js.undefined
   
+  var multi: js.UndefOr[Boolean] = js.undefined
+  
   var useFactory: js.UndefOr[js.Function] = js.undefined
   
   var useValue: js.UndefOr[Any] = js.undefined
@@ -27,6 +29,10 @@ object UseFactory {
     inline def setDepsUndefined: Self = StObject.set(x, "deps", js.undefined)
     
     inline def setDepsVarargs(value: Any*): Self = StObject.set(x, "deps", js.Array(value*))
+    
+    inline def setMulti(value: Boolean): Self = StObject.set(x, "multi", value.asInstanceOf[js.Any])
+    
+    inline def setMultiUndefined: Self = StObject.set(x, "multi", js.undefined)
     
     inline def setUseFactory(value: js.Function): Self = StObject.set(x, "useFactory", value.asInstanceOf[js.Any])
     

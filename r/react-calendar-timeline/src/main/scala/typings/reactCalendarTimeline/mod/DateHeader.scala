@@ -12,7 +12,7 @@ open class DateHeader[Data] protected ()
   def this(props: DateHeaderProps[Data]) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: DateHeaderProps[Data], context: Any) = this()
 }

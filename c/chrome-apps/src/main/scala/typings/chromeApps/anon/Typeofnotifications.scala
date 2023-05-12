@@ -14,18 +14,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Typeofnotifications extends StObject {
   
   /**
-    * @enum
-    * @property GRANTED - User has elected to show notifications from the app . This is the default at install time.
-    * @property DENIED - User has elected not to show notifications from the app.
+    * GRANTED - User has elected to show notifications from the app . This is the default at install time.
+    * DENIED - User has elected not to show notifications from the app.
     */
   val PermissionLevel: DENIED = js.native
   
   /**
-    * @enum
-    * @prop BASIC - icon, title, message, expandedMessage, up to two buttons.
-    * @prop IMAGE - icon, title, message, expandedMessage, image, up to two buttons.
-    * @prop LIST - icon, title, message, items, up to two buttons. Users on Mac OS X only see the first item.
-    * @prop PROGRESS - icon, title, message, progress, up to two buttons.
+    * BASIC - icon, title, message, expandedMessage, up to two buttons.
+    * IMAGE - icon, title, message, expandedMessage, image, up to two buttons.
+    * LIST - icon, title, message, items, up to two buttons. Users on Mac OS X only see the first item.
+    * PROGRESS - icon, title, message, progress, up to two buttons.
     */
   val TemplateType: BASIC = js.native
   

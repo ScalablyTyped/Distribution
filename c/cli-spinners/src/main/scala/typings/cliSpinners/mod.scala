@@ -60,6 +60,10 @@ object mod {
   @js.native
   val betaWave: Spinner = js.native
   
+  @JSImport("cli-spinners", "binary")
+  @js.native
+  val binary: Spinner = js.native
+  
   @JSImport("cli-spinners", "bluePulse")
   @js.native
   val bluePulse: Spinner = js.native
@@ -161,6 +165,10 @@ object mod {
   @JSImport("cli-spinners", "dqpb")
   @js.native
   val dqpb: Spinner = js.native
+  
+  @JSImport("cli-spinners", "dwarfFortress")
+  @js.native
+  val dwarfFortress: Spinner = js.native
   
   @JSImport("cli-spinners", "earth")
   @js.native
@@ -426,6 +434,7 @@ object mod {
     - typings.cliSpinners.cliSpinnersStrings.bounce
     - typings.cliSpinners.cliSpinnersStrings.boxBounce
     - typings.cliSpinners.cliSpinnersStrings.boxBounce2
+    - typings.cliSpinners.cliSpinnersStrings.binary
     - typings.cliSpinners.cliSpinnersStrings.triangle
     - typings.cliSpinners.cliSpinnersStrings.arc
     - typings.cliSpinners.cliSpinnersStrings.circle
@@ -478,6 +487,7 @@ object mod {
     - typings.cliSpinners.cliSpinnersStrings.orangeBluePulse
     - typings.cliSpinners.cliSpinnersStrings.timeTravel
     - typings.cliSpinners.cliSpinnersStrings.aesthetic
+    - typings.cliSpinners.cliSpinnersStrings.dwarfFortress
   */
   trait SpinnerName extends StObject
   object SpinnerName {
@@ -497,6 +507,8 @@ object mod {
     inline def balloon2: typings.cliSpinners.cliSpinnersStrings.balloon2 = "balloon2".asInstanceOf[typings.cliSpinners.cliSpinnersStrings.balloon2]
     
     inline def betaWave: typings.cliSpinners.cliSpinnersStrings.betaWave = "betaWave".asInstanceOf[typings.cliSpinners.cliSpinnersStrings.betaWave]
+    
+    inline def binary: typings.cliSpinners.cliSpinnersStrings.binary = "binary".asInstanceOf[typings.cliSpinners.cliSpinnersStrings.binary]
     
     inline def bluePulse: typings.cliSpinners.cliSpinnersStrings.bluePulse = "bluePulse".asInstanceOf[typings.cliSpinners.cliSpinnersStrings.bluePulse]
     
@@ -547,6 +559,8 @@ object mod {
     inline def dots9: typings.cliSpinners.cliSpinnersStrings.dots9 = "dots9".asInstanceOf[typings.cliSpinners.cliSpinnersStrings.dots9]
     
     inline def dqpb: typings.cliSpinners.cliSpinnersStrings.dqpb = "dqpb".asInstanceOf[typings.cliSpinners.cliSpinnersStrings.dqpb]
+    
+    inline def dwarfFortress: typings.cliSpinners.cliSpinnersStrings.dwarfFortress = "dwarfFortress".asInstanceOf[typings.cliSpinners.cliSpinnersStrings.dwarfFortress]
     
     inline def earth: typings.cliSpinners.cliSpinnersStrings.earth = "earth".asInstanceOf[typings.cliSpinners.cliSpinnersStrings.earth]
     

@@ -32,7 +32,7 @@ trait CreateIPSetRequest extends StObject {
   var Location: typings.awsSdk.clientsGuarddutyMod.Location
   
   /**
-    * The user-friendly name to identify the IPSet.  Allowed characters are alphanumerics, spaces, hyphens (-), and underscores (_).
+    * The user-friendly name to identify the IPSet.  Allowed characters are alphanumeric, whitespace, dash (-), and underscores (_).
     */
   var Name: typings.awsSdk.clientsGuarddutyMod.Name
   

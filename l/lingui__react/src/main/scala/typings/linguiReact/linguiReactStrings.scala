@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object linguiReactStrings {
   
   @js.native
-  sealed trait i18n extends StObject
-  inline def i18n: i18n = "i18n".asInstanceOf[i18n]
+  sealed trait component extends StObject
+  inline def component: component = "component".asInstanceOf[component]
+  
+  @js.native
+  sealed trait render extends StObject
+  inline def render: render = "render".asInstanceOf[render]
 }

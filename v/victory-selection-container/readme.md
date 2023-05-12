@@ -1,7 +1,7 @@
 
 # Scala.js typings for victory-selection-container
 
-Typings are for version 36.6.8
+Typings are for version 36.6.10
 
 ## Library description:
 Interactive Selection Component for Victory

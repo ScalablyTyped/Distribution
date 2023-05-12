@@ -15,8 +15,6 @@ object buildPluginsUnversionedExpoSplashScreenGetIosSplashConfigMod {
   
   inline def getIosSplashConfig(config: ExpoConfig): IOSSplashConfig | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getIosSplashConfig")(config.asInstanceOf[js.Any]).asInstanceOf[IOSSplashConfig | Null]
   
-  inline def warnUnsupportedSplashProperties(config: ExpoConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warnUnsupportedSplashProperties")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  
   type ExpoConfigIosSplash = NonNullable[
     /* import warning: importer.ImportType#apply Failed type conversion: std.NonNullable<@expo/config-types.@expo/config-types.IOS | undefined>['splash'] */ js.Any
   ]

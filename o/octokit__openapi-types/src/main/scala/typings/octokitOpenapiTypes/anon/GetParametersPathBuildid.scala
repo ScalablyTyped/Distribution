@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GetParametersPathBuildid extends StObject {
   
+  /** Get GitHub Pages build */
   var get: ParametersPathBuildid
 }
 object GetParametersPathBuildid {

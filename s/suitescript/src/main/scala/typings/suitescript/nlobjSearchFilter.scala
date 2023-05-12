@@ -9,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Return a new instance of nlobjSearchFilter filter objects used to define search criteria.
   *
   * @classDescription search filter
-  * @constructor
   * @param {string} name filter name.
   * @param {string} join internal ID for joined search where this filter is defined
   * @param {string} operator operator name (i.e. anyOf, contains, lessThan, etc..)

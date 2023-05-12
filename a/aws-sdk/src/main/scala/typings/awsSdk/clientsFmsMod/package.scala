@@ -2,7 +2,6 @@ package typings.awsSdk.clientsFmsMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.awsSdk.awsSdkStrings.DROP_TO_ALERT
-import typings.awsSdk.awsSdkStrings.PALO_ALTO_NETWORKS_CLOUD_NGFW
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,6 +10,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 type AWSAccountId = String
 
 type AWSAccountIdList = js.Array[AWSAccountId]
+
+type AWSRegion = String
+
+type AWSRegionList = js.Array[AWSRegion]
+
+type AccountIdList = js.Array[AWSAccountId]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.READY
@@ -21,6 +26,8 @@ type AWSAccountIdList = js.Array[AWSAccountId]
   - java.lang.String
 */
 type AccountRoleStatus = _AccountRoleStatus | String
+
+type AdminAccountSummaryList = js.Array[AdminAccountSummary]
 
 type AppsList = js.Array[App]
 
@@ -52,6 +59,13 @@ type CustomerPolicyScopeIdList = js.Array[CustomerPolicyScopeId]
 type CustomerPolicyScopeIdType = _CustomerPolicyScopeIdType | String
 
 type CustomerPolicyScopeMap = StringDictionary[CustomerPolicyScopeIdList]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ACTIVE
+  - typings.awsSdk.awsSdkStrings.OUT_OF_ADMIN_SCOPE
+  - java.lang.String
+*/
+type CustomerPolicyStatus = _CustomerPolicyStatus | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.AWSCONFIG
@@ -146,6 +160,19 @@ type NetworkFirewallResourceName = String
 
 type OrderedRemediationActions = js.Array[RemediationActionWithOrder]
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ONBOARDING
+  - typings.awsSdk.awsSdkStrings.ONBOARDING_COMPLETE
+  - typings.awsSdk.awsSdkStrings.OFFBOARDING
+  - typings.awsSdk.awsSdkStrings.OFFBOARDING_COMPLETE
+  - java.lang.String
+*/
+type OrganizationStatus = _OrganizationStatus | String
+
+type OrganizationalUnitId = String
+
+type OrganizationalUnitIdList = js.Array[OrganizationalUnitId]
+
 type PaginationMaxResults = Double
 
 type PaginationToken = String
@@ -212,6 +239,13 @@ type ResourceName = String
 
 type ResourceSetIds = js.Array[Base62Id]
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ACTIVE
+  - typings.awsSdk.awsSdkStrings.OUT_OF_ADMIN_SCOPE
+  - java.lang.String
+*/
+type ResourceSetStatus = _ResourceSetStatus | String
+
 type ResourceSetSummaryList = js.Array[ResourceSetSummary]
 
 type ResourceTagKey = String
@@ -252,6 +286,8 @@ type SecurityGroupRemediationActions = js.Array[SecurityGroupRemediationAction]
 */
 type SecurityServiceType = _SecurityServiceType | String
 
+type SecurityServiceTypeList = js.Array[SecurityServiceType]
+
 type StatefulRuleGroupList = js.Array[StatefulRuleGroup]
 
 type StatelessRuleGroupList = js.Array[StatelessRuleGroup]
@@ -285,7 +321,12 @@ type TargetViolationReason = String
 
 type TargetViolationReasons = js.Array[TargetViolationReason]
 
-type ThirdPartyFirewall = PALO_ALTO_NETWORKS_CLOUD_NGFW | String
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.PALO_ALTO_NETWORKS_CLOUD_NGFW
+  - typings.awsSdk.awsSdkStrings.FORTIGATE_CLOUD_NATIVE_FIREWALL
+  - java.lang.String
+*/
+type ThirdPartyFirewall = _ThirdPartyFirewall | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ONBOARDING

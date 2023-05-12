@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StreamingImage extends StObject {
   
   /**
-    * The ARN of the resource.
+    * The Amazon Resource Name (ARN) that is assigned to a studio resource and uniquely identifies it. ARNs are unique across all Regions.
     */
   var arn: js.UndefOr[String] = js.undefined
   
@@ -37,12 +37,12 @@ trait StreamingImage extends StObject {
   var name: js.UndefOr[StreamingImageName] = js.undefined
   
   /**
-    * The owner of the streaming image, either the studioId that contains the streaming image, or 'amazon' for images that are provided by Amazon Nimble Studio.
+    * The owner of the streaming image, either the studioId that contains the streaming image, or amazon for images that are provided by Amazon Nimble Studio.
     */
   var owner: js.UndefOr[StreamingImageOwner] = js.undefined
   
   /**
-    * The platform of the streaming image, either WINDOWS or LINUX.
+    * The platform of the streaming image, either Windows or Linux.
     */
   var platform: js.UndefOr[StreamingImagePlatform] = js.undefined
   
@@ -67,7 +67,7 @@ trait StreamingImage extends StObject {
   var streamingImageId: js.UndefOr[StreamingImageId] = js.undefined
   
   /**
-    * A collection of labels, in the form of key:value pairs, that apply to this resource.
+    * A collection of labels, in the form of key-value pairs, that apply to this resource.
     */
   var tags: js.UndefOr[Tags] = js.undefined
 }

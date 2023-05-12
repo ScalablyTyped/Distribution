@@ -1,7 +1,7 @@
 
 # Scala.js typings for https-proxy-agent
 
-Typings are for version 5.0.1
+Typings are for version 6.1.0
 
 ## Library description:
 An HTTP(s) proxy `http.Agent` implementation for HTTPS

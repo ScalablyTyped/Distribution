@@ -13,23 +13,23 @@ object mod {
   open class GUI () extends StObject {
     def this(option: GUIParams) = this()
     
-    var __controllers: js.Array[GUIController] = js.native
+    var __controllers: js.Array[GUIController[js.Object]] = js.native
     
     var __folders: StringDictionary[GUI] = js.native
     
-    def add(target: js.Object, propName: String): GUIController = js.native
-    def add(target: js.Object, propName: String, items: js.Array[Double | String]): GUIController = js.native
-    def add(target: js.Object, propName: String, items: js.Object): GUIController = js.native
-    def add(target: js.Object, propName: String, min: Double): GUIController = js.native
-    def add(target: js.Object, propName: String, min: Double, max: Double): GUIController = js.native
-    def add(target: js.Object, propName: String, min: Double, max: Double, step: Double): GUIController = js.native
-    def add(target: js.Object, propName: String, min: Double, max: Unit, step: Double): GUIController = js.native
-    def add(target: js.Object, propName: String, min: Unit, max: Double): GUIController = js.native
-    def add(target: js.Object, propName: String, min: Unit, max: Double, step: Double): GUIController = js.native
-    def add(target: js.Object, propName: String, min: Unit, max: Unit, step: Double): GUIController = js.native
-    def add(target: js.Object, propName: String, status: Boolean): GUIController = js.native
+    def add[T /* <: js.Object */](target: T, propName: /* keyof T */ String): GUIController[js.Object] = js.native
+    def add[T /* <: js.Object */](target: T, propName: /* keyof T */ String, items: js.Array[Double | String]): GUIController[js.Object] = js.native
+    def add[T /* <: js.Object */](target: T, propName: /* keyof T */ String, items: js.Object): GUIController[js.Object] = js.native
+    def add[T /* <: js.Object */](target: T, propName: /* keyof T */ String, min: Double): GUIController[js.Object] = js.native
+    def add[T /* <: js.Object */](target: T, propName: /* keyof T */ String, min: Double, max: Double): GUIController[js.Object] = js.native
+    def add[T /* <: js.Object */](target: T, propName: /* keyof T */ String, min: Double, max: Double, step: Double): GUIController[js.Object] = js.native
+    def add[T /* <: js.Object */](target: T, propName: /* keyof T */ String, min: Double, max: Unit, step: Double): GUIController[js.Object] = js.native
+    def add[T /* <: js.Object */](target: T, propName: /* keyof T */ String, min: Unit, max: Double): GUIController[js.Object] = js.native
+    def add[T /* <: js.Object */](target: T, propName: /* keyof T */ String, min: Unit, max: Double, step: Double): GUIController[js.Object] = js.native
+    def add[T /* <: js.Object */](target: T, propName: /* keyof T */ String, min: Unit, max: Unit, step: Double): GUIController[js.Object] = js.native
+    def add[T /* <: js.Object */](target: T, propName: /* keyof T */ String, status: Boolean): GUIController[js.Object] = js.native
     
-    def addColor(target: js.Object, propName: String): GUIController = js.native
+    def addColor(target: js.Object, propName: String): GUIController[js.Object] = js.native
     
     def addFolder(propName: String): GUI = js.native
     
@@ -49,7 +49,7 @@ object mod {
     
     def hide(): Unit = js.native
     
-    def listen(controller: GUIController): Unit = js.native
+    def listen(controller: GUIController[js.Object]): Unit = js.native
     
     val load: js.Object = js.native
     
@@ -64,7 +64,7 @@ object mod {
     
     def remember(target: js.Object, additionalTargets: js.Object*): Unit = js.native
     
-    def remove(controller: GUIController): Unit = js.native
+    def remove(controller: GUIController[js.Object]): Unit = js.native
     
     def removeFolder(subFolder: GUI): Unit = js.native
     
@@ -159,44 +159,44 @@ object mod {
   
   @JSImport("dat.gui", "GUIController")
   @js.native
-  open class GUIController protected () extends StObject {
-    def this(`object`: js.Object, property: String) = this()
+  open class GUIController[T /* <: js.Object */] protected () extends StObject {
+    def this(`object`: T, property: /* keyof T */ String) = this()
     
     var domElement: HTMLElement = js.native
     
     // FunctionController
-    def fire(): GUIController = js.native
+    def fire(): GUIController[js.Object] = js.native
     
     def getValue(): Any = js.native
     
     def isModified(): Boolean = js.native
     
-    def listen(): GUIController = js.native
+    def listen(): GUIController[js.Object] = js.native
     
-    def max(n: Double): GUIController = js.native
+    def max(n: Double): GUIController[js.Object] = js.native
     
     // NumberController
-    def min(n: Double): GUIController = js.native
+    def min(n: Double): GUIController[js.Object] = js.native
     
-    def name(name: String): GUIController = js.native
+    def name(name: String): GUIController[js.Object] = js.native
     
     var `object`: js.Object = js.native
     
-    def onChange(fnc: js.Function1[/* value */ js.UndefOr[Any], Unit]): GUIController = js.native
+    def onChange(fnc: js.Function1[/* value */ js.UndefOr[Any], Unit]): GUIController[js.Object] = js.native
     
-    def onFinishChange(fnc: js.Function1[/* value */ js.UndefOr[Any], Unit]): GUIController = js.native
+    def onFinishChange(fnc: js.Function1[/* value */ js.UndefOr[Any], Unit]): GUIController[js.Object] = js.native
     
-    def options(option: Any): GUIController = js.native
+    def options(option: Any): GUIController[js.Object] = js.native
     
     var property: String = js.native
     
-    def remove(): GUIController = js.native
+    def remove(): GUIController[js.Object] = js.native
     
-    def setValue(value: Any): GUIController = js.native
+    def setValue(value: Any): GUIController[js.Object] = js.native
     
-    def step(n: Double): GUIController = js.native
+    def step(n: Double): GUIController[js.Object] = js.native
     
-    def updateDisplay(): GUIController = js.native
+    def updateDisplay(): GUIController[js.Object] = js.native
   }
   
   trait GUIParams extends StObject {

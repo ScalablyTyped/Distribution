@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.TransformBox
+import typings.csstype.mod.Property.WebkitUserModify
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,8 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `257` extends StObject {
   
   var value: js.UndefOr[
-    TransformBox | (js.Array[
-      (Extract[js.UndefOr[TransformBox | js.Array[NonNullable[js.UndefOr[TransformBox]]]], String]) | NonNullable[js.UndefOr[TransformBox]]
+    WebkitUserModify | (js.Array[
+      (Extract[
+        js.UndefOr[WebkitUserModify | js.Array[NonNullable[js.UndefOr[WebkitUserModify]]]], 
+        String
+      ]) | NonNullable[js.UndefOr[WebkitUserModify]]
     ])
   ] = js.native
 }

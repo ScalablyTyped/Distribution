@@ -1,7 +1,7 @@
 
 # Scala.js typings for azure__msal-browser
 
-Typings are for version 2.28.3
+Typings are for version 2.37.0
 
 ## Library description:
 Microsoft Authentication Library for js

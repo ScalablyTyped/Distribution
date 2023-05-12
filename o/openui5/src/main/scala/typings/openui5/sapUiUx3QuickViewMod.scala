@@ -440,6 +440,8 @@ object sapUiUx3QuickViewMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:actionSelected actionSelected} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -451,6 +453,8 @@ object sapUiUx3QuickViewMod {
     mParameters: Action): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:feedSubmit feedSubmit} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -462,6 +466,8 @@ object sapUiUx3QuickViewMod {
     mParameters: Text): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:navigate navigate} to attached listeners.
       *
       * Listeners may prevent the default action of this event by calling the `preventDefault` method on the

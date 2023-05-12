@@ -5,10 +5,10 @@ import typings.react.mod.ComponentType
 import typings.react.mod.DetailedHTMLProps
 import typings.react.mod.HTMLAttributes
 import typings.react.mod.ReactNode
+import typings.reactSelect.anon.FnCallPropertyNameProps
 import typings.reactSelect.distDeclarationsSrcSelectMod.Props
 import typings.reactSelect.distDeclarationsSrcTypesMod.CSSObjectWithLabel
 import typings.reactSelect.distDeclarationsSrcTypesMod.CX
-import typings.reactSelect.distDeclarationsSrcTypesMod.ClassNamesState
 import typings.reactSelect.distDeclarationsSrcTypesMod.CommonPropsAndClassName
 import typings.reactSelect.distDeclarationsSrcTypesMod.GetStyles
 import typings.reactSelect.distDeclarationsSrcTypesMod.GroupBase
@@ -51,9 +51,9 @@ object distDeclarationsSrcComponentsGroupMod {
   
   inline def GroupHeading[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](props: GroupHeadingProps[Option, IsMulti, Group]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("GroupHeading")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def groupCSS[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](param0: GroupProps[Option, IsMulti, Group]): CSSObjectWithLabel = ^.asInstanceOf[js.Dynamic].applyDynamic("groupCSS")(param0.asInstanceOf[js.Any]).asInstanceOf[CSSObjectWithLabel]
+  inline def groupCSS[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](param0: GroupProps[Option, IsMulti, Group], unstyled: Boolean): CSSObjectWithLabel = (^.asInstanceOf[js.Dynamic].applyDynamic("groupCSS")(param0.asInstanceOf[js.Any], unstyled.asInstanceOf[js.Any])).asInstanceOf[CSSObjectWithLabel]
   
-  inline def groupHeadingCSS[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](param0: GroupHeadingProps[Option, IsMulti, Group]): CSSObjectWithLabel = ^.asInstanceOf[js.Dynamic].applyDynamic("groupHeadingCSS")(param0.asInstanceOf[js.Any]).asInstanceOf[CSSObjectWithLabel]
+  inline def groupHeadingCSS[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](param0: GroupHeadingProps[Option, IsMulti, Group], unstyled: Boolean): CSSObjectWithLabel = (^.asInstanceOf[js.Dynamic].applyDynamic("groupHeadingCSS")(param0.asInstanceOf[js.Any], unstyled.asInstanceOf[js.Any])).asInstanceOf[CSSObjectWithLabel]
   
   trait ForwardedHeadingProps[Option, Group /* <: GroupBase[Option] */] extends StObject {
     
@@ -87,6 +87,8 @@ object distDeclarationsSrcComponentsGroupMod {
     
     var cx: CX
     
+    var getClassNames: FnCallPropertyNameProps[Option, IsMulti, Group]
+    
     var getStyles: GetStyles[Option, IsMulti, Group]
     
     var selectProps: Props[Option, IsMulti, Group]
@@ -96,14 +98,15 @@ object distDeclarationsSrcComponentsGroupMod {
   object GroupHeadingPropsDefinedProps {
     
     inline def apply[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](
-      cx: (/* state */ ClassNamesState, /* className */ js.UndefOr[String]) => String,
+      cx: CX,
       data: Group,
+      getClassNames: FnCallPropertyNameProps[Option, IsMulti, Group],
       getStyles: (/* keyof react-select.react-select/dist/declarations/src/styles.StylesProps<Option, IsMulti, Group> */ /* propertyName */ clearIndicator | container | control | dropdownIndicator | group | groupHeading | indicatorsContainer | indicatorSeparator | input | loadingIndicator | loadingMessage | menu | menuList | menuPortal | multiValue | multiValueLabel | multiValueRemove | noOptionsMessage | option | placeholder | singleValue | valueContainer, /* import warning: importer.ImportType#apply Failed type conversion: react-select.react-select/dist/declarations/src/styles.StylesProps<Option, IsMulti, Group>[keyof react-select.react-select/dist/declarations/src/styles.StylesProps<Option, IsMulti, Group>] */ /* props */ js.Any) => CSSObjectWithLabel,
       id: String,
       selectProps: Props[Option, IsMulti, Group],
       theme: Theme
     ): GroupHeadingPropsDefinedProps[Option, IsMulti, Group] = {
-      val __obj = js.Dynamic.literal(cx = js.Any.fromFunction2(cx), data = data.asInstanceOf[js.Any], getStyles = js.Any.fromFunction2(getStyles), id = id.asInstanceOf[js.Any], selectProps = selectProps.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(cx = cx.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], getClassNames = getClassNames.asInstanceOf[js.Any], getStyles = js.Any.fromFunction2(getStyles), id = id.asInstanceOf[js.Any], selectProps = selectProps.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any])
       __obj.asInstanceOf[GroupHeadingPropsDefinedProps[Option, IsMulti, Group]]
     }
     
@@ -114,7 +117,9 @@ object distDeclarationsSrcComponentsGroupMod {
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      inline def setCx(value: (/* state */ ClassNamesState, /* className */ js.UndefOr[String]) => String): Self = StObject.set(x, "cx", js.Any.fromFunction2(value))
+      inline def setCx(value: CX): Self = StObject.set(x, "cx", value.asInstanceOf[js.Any])
+      
+      inline def setGetClassNames(value: FnCallPropertyNameProps[Option, IsMulti, Group]): Self = StObject.set(x, "getClassNames", value.asInstanceOf[js.Any])
       
       inline def setGetStyles(
         value: (/* keyof react-select.react-select/dist/declarations/src/styles.StylesProps<Option, IsMulti, Group> */ /* propertyName */ clearIndicator | container | control | dropdownIndicator | group | groupHeading | indicatorsContainer | indicatorSeparator | input | loadingIndicator | loadingMessage | menu | menuList | menuPortal | multiValue | multiValueLabel | multiValueRemove | noOptionsMessage | option | placeholder | singleValue | valueContainer, /* import warning: importer.ImportType#apply Failed type conversion: react-select.react-select/dist/declarations/src/styles.StylesProps<Option, IsMulti, Group>[keyof react-select.react-select/dist/declarations/src/styles.StylesProps<Option, IsMulti, Group>] */ /* props */ js.Any) => CSSObjectWithLabel

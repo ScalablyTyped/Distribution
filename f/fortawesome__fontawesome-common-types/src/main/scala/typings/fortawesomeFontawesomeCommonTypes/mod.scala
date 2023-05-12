@@ -857,6 +857,7 @@ object mod {
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`down-right`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`scroll-torah`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.torah
+    - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.webhook
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`blinds-open`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.fence
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.up
@@ -910,6 +911,7 @@ object mod {
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.flushed
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hospital-user`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.microwave
+    - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chf-sign`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`tent-arrow-left-right`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`cart-circle-arrow-up`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`trash-clock`
@@ -938,6 +940,7 @@ object mod {
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`concierge-bell`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`pen-ruler`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`pencil-ruler`
+    - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-progress`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chess-rook-piece`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chess-rook-alt`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`square-root`
@@ -1058,6 +1061,7 @@ object mod {
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`face-cowboy-hat`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.hanukiah
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chart-scatter-3d`
+    - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`display-chart-up`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`square-code`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.feather
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`volume-low`
@@ -1167,6 +1171,7 @@ object mod {
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`utensil-knife`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`share-nodes`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`share-alt`
+    - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`display-chart-up-circle-dollar`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`wave-sine`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`heart-circle-minus`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`circle-w`
@@ -1254,6 +1259,7 @@ object mod {
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`grin-tongue`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`up-to-dotted-line`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`thought-bubble`
+    - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`skeleton-ribs`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.raygun
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.flute
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.acorn
@@ -1285,6 +1291,7 @@ object mod {
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`land-mine-on`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`square-arrow-up-left`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`i-cursor`
+    - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chart-mixed-up-circle-dollar`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`salt-shaker`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.stamp
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`file-plus`
@@ -1433,6 +1440,7 @@ object mod {
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`plane-up-slash`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.radiation
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`pen-circle`
+    - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`bag-seedling`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chart-simple`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.crutches
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`circle-parking`
@@ -1508,6 +1516,7 @@ object mod {
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chart-area`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`area-chart`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`house-flag`
+    - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`circle-three-quarters-stroke`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`person-circle-minus`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.scalpel
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.ban
@@ -1543,6 +1552,7 @@ object mod {
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`signal-bars-good`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`signal-alt3`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.cactus
+    - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`lightbulb-gear`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.maximize
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`expand-arrows-alt`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`charging-station`
@@ -1564,6 +1574,7 @@ object mod {
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.running
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`mobile-retro`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`grip-lines-vertical`
+    - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`bin-bottles-recycle`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-up-from-square`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`file-dashed-line`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`page-break`
@@ -1588,6 +1599,7 @@ object mod {
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`location-xmark`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`map-marker-times`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`map-marker-xmark`
+    - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`circle-quarter-stroke`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.lasso
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.slash
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`person-to-portal`
@@ -1607,6 +1619,7 @@ object mod {
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`store-alt-slash`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`wind-turbine`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sliders-simple`
+    - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`grid-round`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`badge-sheriff`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.server
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`virus-covid-slash`
@@ -1627,6 +1640,7 @@ object mod {
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`lightbulb-exclamation`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`layer-minus`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`layer-group-minus`
+    - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chart-pie-simple-circle-currency`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`circle-e`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`building-wheat`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`gauge-max`
@@ -1847,6 +1861,7 @@ object mod {
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`mars-stroke-h`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hand-back-fist`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hand-rock`
+    - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`grid-round-5`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.tally
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.tally5
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`square-caret-up`
@@ -1895,6 +1910,7 @@ object mod {
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`window-frame`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.microphone
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.cow
+    - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`file-zip`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`square-ring`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`down-from-line`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-alt-from-top`
@@ -1973,6 +1989,7 @@ object mod {
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`id-badge`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.kazoo
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.marker
+    - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`bin-bottles`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`face-laugh-beam`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`laugh-beam`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`square-arrow-down-left`
@@ -1981,6 +1998,7 @@ object mod {
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`helicopter-symbol`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.aperture
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`universal-access`
+    - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`gear-complex`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`file-magnifying-glass`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`file-search`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`up-right`
@@ -2080,6 +2098,7 @@ object mod {
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`cloud-upload-alt`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.palette
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`transporter-4`
+    - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chart-mixed-up-circle-currency`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`objects-align-right`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrows-turn-right`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.vest
@@ -2117,6 +2136,7 @@ object mod {
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`comment-alt-check`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`cloud-bolt`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.thunderstorm
+    - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chart-line-up-down`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`text-slash`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`remove-format`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.watch
@@ -2198,6 +2218,7 @@ object mod {
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`book-atlas`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.atlas
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.virus
+    - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`grid-round-2`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`comment-middle-top`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`envelope-circle-check`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`layer-group`
@@ -2249,6 +2270,7 @@ object mod {
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.sausage
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`trash-can-clock`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.p
+    - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`broom-wide`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.snowflake
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.stomach
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.newspaper
@@ -2272,6 +2294,7 @@ object mod {
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.list12
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`list-numeric`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chart-waterfall`
+    - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.sparkle
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`face-party`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.kidneys
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`wifi-exclamation`
@@ -2429,6 +2452,7 @@ object mod {
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`trophy-alt`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`plug-circle-bolt`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`face-thermometer`
+    - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`grid-round-4`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`shirt-running`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`book-circle-arrow-up`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`face-nauseated`
@@ -2464,6 +2488,7 @@ object mod {
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`value-absolute`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.rabbit
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`toilet-paper-slash`
+    - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`circle-euro`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`apple-whole`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`apple-alt`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`kitchen-set`
@@ -2576,6 +2601,7 @@ object mod {
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`phone-flip`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`phone-alt`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-down-from-dotted-line`
+    - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`file-doc`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`square-quarters`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`truck-front`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.cat
@@ -2831,6 +2857,7 @@ object mod {
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.shirt
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`t-shirt`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.tshirt
+    - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.billboard
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`square-r`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.cubes
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`envelope-open-dollar`
@@ -2939,6 +2966,7 @@ object mod {
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`book-law`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.inboxes
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`coffee-bean`
+    - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`circle-yen`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`brackets-curly`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`ellipsis-stroke-vertical`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`ellipsis-v-alt`
@@ -2953,6 +2981,7 @@ object mod {
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`face-tissue`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`angles-up`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`angle-double-up`
+    - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`bin-recycle`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.paperclip
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chart-line-down`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-right-to-city`
@@ -3040,6 +3069,7 @@ object mod {
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`person-cane`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.alien
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.tent
+    - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`laptop-binary`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`vest-patches`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`people-dress-simple`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`check-double`
@@ -3121,6 +3151,7 @@ object mod {
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.dna
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`virus-slash`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`bracket-round-right`
+    - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`circle-sterling`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`circle-5`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.minus
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.subtract
@@ -3345,6 +3376,7 @@ object mod {
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`compress-wide`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`circle-phone-hangup`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`phone-circle-down`
+    - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`gear-complex-code`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`house-medical-circle-exclamation`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.badminton
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`closed-captioning`
@@ -3385,6 +3417,7 @@ object mod {
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`delete-left`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.backspace
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.oven
+    - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`cloud-binary`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`eye-dropper`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`eye-dropper-empty`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.eyedropper
@@ -3447,6 +3480,7 @@ object mod {
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.cutlery
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-up-wide-short`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sort-amount-up`
+    - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chart-pie-simple-circle-dollar`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.balloons
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`mill-sign`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`bowl-rice`
@@ -3477,6 +3511,7 @@ object mod {
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-alt-from-bottom`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.upload
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.hurricane
+    - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`grid-round-2-plus`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`people-pants`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.mound
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.windsock
@@ -3515,6 +3550,7 @@ object mod {
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.jpy
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.rmb
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.yen
+    - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`gear-code`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.notes
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`ruble-sign`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.rouble
@@ -3554,6 +3590,7 @@ object mod {
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.industry
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`image-polaroid`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`wave-triangle`
+    - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`person-running-fast`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`circle-down`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-alt-circle-down`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.grill
@@ -3645,6 +3682,7 @@ object mod {
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`square-c`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`clock-two`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`square-ellipsis-vertical`
+    - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`calendar-users`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.podcast
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.bee
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`temperature-full`
@@ -3856,6 +3894,7 @@ object mod {
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`school-lock`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`tower-cell`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sd-cards`
+    - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`jug-bottle`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`down-long`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`long-arrow-alt-down`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.envelopes
@@ -3889,6 +3928,7 @@ object mod {
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.mushroom
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`user-shield`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.megaphone
+    - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`wreath-laurel`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`circle-exclamation-check`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.wind
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`box-dollar`
@@ -3975,6 +4015,7 @@ object mod {
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.gun
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`square-phone`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`phone-square`
+    - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hat-beach`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.plus
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.add
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.expand
@@ -4015,6 +4056,7 @@ object mod {
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.symbols
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`icons-alt`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.copyright
+    - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`flask-gear`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`highlighter-line`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`bracket-square`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.bracket
@@ -4088,6 +4130,7 @@ object mod {
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`message-minus`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`comment-alt-minus`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`angle-up`
+    - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.dinosaur
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`drumstick-bite`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`link-horizontal-slash`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chain-horizontal-slash`
@@ -4189,6 +4232,7 @@ object mod {
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sun-bright`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`sun-alt`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.warehouse
+    - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`conveyor-belt-arm`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`lock-keyhole-open`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`lock-open-alt`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`square-fragile`
@@ -4220,6 +4264,7 @@ object mod {
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`flag-pennant`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.pennant
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`conveyor-belt-empty`
+    - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`user-group-simple`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.award
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`ticket-simple`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`ticket-alt`
@@ -4304,6 +4349,7 @@ object mod {
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`temperature-low`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`person-biking`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.biking
+    - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`display-chart-up-circle-currency`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.skeleton
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`circle-g`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`circle-arrow-up-left`
@@ -4350,6 +4396,7 @@ object mod {
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`caravan-simple`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`caravan-alt`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.turtle
+    - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`pencil-mechanical`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`up-down`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrows-alt-v`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`cloud-moon-rain`
@@ -4601,7 +4648,9 @@ object mod {
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`magnifying-glass-minus`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`search-minus`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.flower
+    - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`right-left-large`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`ruler-vertical`
+    - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`circles-overlap`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`user-large`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`user-alt`
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`starship-freighter`
@@ -5071,6 +5120,8 @@ object mod {
     
     inline def `arrow-pointer`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-pointer` = "arrow-pointer".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-pointer`]
     
+    inline def `arrow-progress`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-progress` = "arrow-progress".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-progress`]
+    
     inline def `arrow-right`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-right` = "arrow-right".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-right`]
     
     inline def `arrow-right-arrow-left`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-right-arrow-left` = "arrow-right-arrow-left".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`arrow-right-arrow-left`]
@@ -5343,6 +5394,8 @@ object mod {
     
     inline def badminton: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.badminton = "badminton".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.badminton]
     
+    inline def `bag-seedling`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`bag-seedling` = "bag-seedling".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`bag-seedling`]
+    
     inline def `bag-shopping`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`bag-shopping` = "bag-shopping".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`bag-shopping`]
     
     inline def bagel: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.bagel = "bagel".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.bagel]
@@ -5533,7 +5586,15 @@ object mod {
     
     inline def bilibili: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.bilibili = "bilibili".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.bilibili]
     
+    inline def billboard: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.billboard = "billboard".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.billboard]
+    
     inline def bimobject: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.bimobject = "bimobject".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.bimobject]
+    
+    inline def `bin-bottles`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`bin-bottles` = "bin-bottles".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`bin-bottles`]
+    
+    inline def `bin-bottles-recycle`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`bin-bottles-recycle` = "bin-bottles-recycle".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`bin-bottles-recycle`]
+    
+    inline def `bin-recycle`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`bin-recycle` = "bin-recycle".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`bin-recycle`]
     
     inline def binary: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.binary = "binary".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.binary]
     
@@ -5893,6 +5954,8 @@ object mod {
     
     inline def `broom-ball`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`broom-ball` = "broom-ball".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`broom-ball`]
     
+    inline def `broom-wide`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`broom-wide` = "broom-wide".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`broom-wide`]
+    
     inline def browser: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.browser = "browser".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.browser]
     
     inline def browsers: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.browsers = "browsers".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.browsers]
@@ -6070,6 +6133,8 @@ object mod {
     inline def `calendar-times`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`calendar-times` = "calendar-times".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`calendar-times`]
     
     inline def `calendar-upload`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`calendar-upload` = "calendar-upload".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`calendar-upload`]
+    
+    inline def `calendar-users`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`calendar-users` = "calendar-users".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`calendar-users`]
     
     inline def `calendar-week`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`calendar-week` = "calendar-week".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`calendar-week`]
     
@@ -6347,7 +6412,13 @@ object mod {
     
     inline def `chart-line-up`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chart-line-up` = "chart-line-up".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chart-line-up`]
     
+    inline def `chart-line-up-down`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chart-line-up-down` = "chart-line-up-down".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chart-line-up-down`]
+    
     inline def `chart-mixed`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chart-mixed` = "chart-mixed".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chart-mixed`]
+    
+    inline def `chart-mixed-up-circle-currency`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chart-mixed-up-circle-currency` = "chart-mixed-up-circle-currency".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chart-mixed-up-circle-currency`]
+    
+    inline def `chart-mixed-up-circle-dollar`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chart-mixed-up-circle-dollar` = "chart-mixed-up-circle-dollar".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chart-mixed-up-circle-dollar`]
     
     inline def `chart-network`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chart-network` = "chart-network".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chart-network`]
     
@@ -6356,6 +6427,10 @@ object mod {
     inline def `chart-pie-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chart-pie-alt` = "chart-pie-alt".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chart-pie-alt`]
     
     inline def `chart-pie-simple`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chart-pie-simple` = "chart-pie-simple".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chart-pie-simple`]
+    
+    inline def `chart-pie-simple-circle-currency`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chart-pie-simple-circle-currency` = "chart-pie-simple-circle-currency".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chart-pie-simple-circle-currency`]
+    
+    inline def `chart-pie-simple-circle-dollar`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chart-pie-simple-circle-dollar` = "chart-pie-simple-circle-dollar".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chart-pie-simple-circle-dollar`]
     
     inline def `chart-pyramid`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chart-pyramid` = "chart-pyramid".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chart-pyramid`]
     
@@ -6483,6 +6558,8 @@ object mod {
     
     inline def `chevrons-up`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chevrons-up` = "chevrons-up".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chevrons-up`]
     
+    inline def `chf-sign`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chf-sign` = "chf-sign".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`chf-sign`]
+    
     inline def child: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.child = "child".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.child]
     
     inline def `child-combatant`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`child-combatant` = "child-combatant".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`child-combatant`]
@@ -6607,6 +6684,8 @@ object mod {
     
     inline def `circle-envelope`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`circle-envelope` = "circle-envelope".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`circle-envelope`]
     
+    inline def `circle-euro`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`circle-euro` = "circle-euro".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`circle-euro`]
+    
     inline def `circle-exclamation`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`circle-exclamation` = "circle-exclamation".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`circle-exclamation`]
     
     inline def `circle-exclamation-check`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`circle-exclamation-check` = "circle-exclamation-check".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`circle-exclamation-check`]
@@ -6673,6 +6752,8 @@ object mod {
     
     inline def `circle-quarter`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`circle-quarter` = "circle-quarter".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`circle-quarter`]
     
+    inline def `circle-quarter-stroke`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`circle-quarter-stroke` = "circle-quarter-stroke".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`circle-quarter-stroke`]
+    
     inline def `circle-quarters`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`circle-quarters` = "circle-quarters".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`circle-quarters`]
     
     inline def `circle-question`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`circle-question` = "circle-question".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`circle-question`]
@@ -6695,11 +6776,15 @@ object mod {
     
     inline def `circle-star`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`circle-star` = "circle-star".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`circle-star`]
     
+    inline def `circle-sterling`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`circle-sterling` = "circle-sterling".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`circle-sterling`]
+    
     inline def `circle-stop`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`circle-stop` = "circle-stop".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`circle-stop`]
     
     inline def `circle-t`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`circle-t` = "circle-t".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`circle-t`]
     
     inline def `circle-three-quarters`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`circle-three-quarters` = "circle-three-quarters".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`circle-three-quarters`]
+    
+    inline def `circle-three-quarters-stroke`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`circle-three-quarters-stroke` = "circle-three-quarters-stroke".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`circle-three-quarters-stroke`]
     
     inline def `circle-trash`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`circle-trash` = "circle-trash".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`circle-trash`]
     
@@ -6727,7 +6812,11 @@ object mod {
     
     inline def `circle-y`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`circle-y` = "circle-y".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`circle-y`]
     
+    inline def `circle-yen`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`circle-yen` = "circle-yen".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`circle-yen`]
+    
     inline def `circle-z`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`circle-z` = "circle-z".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`circle-z`]
+    
+    inline def `circles-overlap`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`circles-overlap` = "circles-overlap".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`circles-overlap`]
     
     inline def citrus: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.citrus = "citrus".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.citrus]
     
@@ -6828,6 +6917,8 @@ object mod {
     inline def `cloud-arrow-down`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`cloud-arrow-down` = "cloud-arrow-down".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`cloud-arrow-down`]
     
     inline def `cloud-arrow-up`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`cloud-arrow-up` = "cloud-arrow-up".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`cloud-arrow-up`]
+    
+    inline def `cloud-binary`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`cloud-binary` = "cloud-binary".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`cloud-binary`]
     
     inline def `cloud-bolt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`cloud-bolt` = "cloud-bolt".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`cloud-bolt`]
     
@@ -7149,6 +7240,8 @@ object mod {
     
     inline def `conveyor-belt-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`conveyor-belt-alt` = "conveyor-belt-alt".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`conveyor-belt-alt`]
     
+    inline def `conveyor-belt-arm`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`conveyor-belt-arm` = "conveyor-belt-arm".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`conveyor-belt-arm`]
+    
     inline def `conveyor-belt-boxes`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`conveyor-belt-boxes` = "conveyor-belt-boxes".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`conveyor-belt-boxes`]
     
     inline def `conveyor-belt-empty`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`conveyor-belt-empty` = "conveyor-belt-empty".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`conveyor-belt-empty`]
@@ -7443,6 +7536,8 @@ object mod {
     
     inline def `digital-tachograph`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`digital-tachograph` = "digital-tachograph".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`digital-tachograph`]
     
+    inline def dinosaur: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.dinosaur = "dinosaur".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.dinosaur]
+    
     inline def diploma: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.diploma = "diploma".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.diploma]
     
     inline def directions: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.directions = "directions".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.directions]
@@ -7458,6 +7553,12 @@ object mod {
     inline def display: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.display = "display".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.display]
     
     inline def `display-arrow-down`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`display-arrow-down` = "display-arrow-down".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`display-arrow-down`]
+    
+    inline def `display-chart-up`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`display-chart-up` = "display-chart-up".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`display-chart-up`]
+    
+    inline def `display-chart-up-circle-currency`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`display-chart-up-circle-currency` = "display-chart-up-circle-currency".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`display-chart-up-circle-currency`]
+    
+    inline def `display-chart-up-circle-dollar`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`display-chart-up-circle-dollar` = "display-chart-up-circle-dollar".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`display-chart-up-circle-dollar`]
     
     inline def `display-code`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`display-code` = "display-code".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`display-code`]
     
@@ -8137,6 +8238,8 @@ object mod {
     
     inline def `file-dashed-line`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`file-dashed-line` = "file-dashed-line".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`file-dashed-line`]
     
+    inline def `file-doc`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`file-doc` = "file-doc".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`file-doc`]
+    
     inline def `file-download`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`file-download` = "file-download".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`file-download`]
     
     inline def `file-edit`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`file-edit` = "file-edit".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`file-edit`]
@@ -8208,6 +8311,8 @@ object mod {
     inline def `file-word`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`file-word` = "file-word".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`file-word`]
     
     inline def `file-xmark`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`file-xmark` = "file-xmark".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`file-xmark`]
+    
+    inline def `file-zip`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`file-zip` = "file-zip".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`file-zip`]
     
     inline def `file-zipper`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`file-zipper` = "file-zipper".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`file-zipper`]
     
@@ -8310,6 +8415,8 @@ object mod {
     inline def flashlight: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.flashlight = "flashlight".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.flashlight]
     
     inline def flask: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.flask = "flask".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.flask]
+    
+    inline def `flask-gear`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`flask-gear` = "flask-gear".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`flask-gear`]
     
     inline def `flask-poison`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`flask-poison` = "flask-poison".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`flask-poison`]
     
@@ -8563,6 +8670,12 @@ object mod {
     
     inline def gear: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.gear = "gear".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.gear]
     
+    inline def `gear-code`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`gear-code` = "gear-code".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`gear-code`]
+    
+    inline def `gear-complex`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`gear-complex` = "gear-complex".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`gear-complex`]
+    
+    inline def `gear-complex-code`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`gear-complex-code` = "gear-complex-code".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`gear-complex-code`]
+    
     inline def gears: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.gears = "gears".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.gears]
     
     inline def gem: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.gem = "gem".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.gem]
@@ -8730,6 +8843,16 @@ object mod {
     inline def `grid-dividers`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`grid-dividers` = "grid-dividers".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`grid-dividers`]
     
     inline def `grid-horizontal`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`grid-horizontal` = "grid-horizontal".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`grid-horizontal`]
+    
+    inline def `grid-round`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`grid-round` = "grid-round".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`grid-round`]
+    
+    inline def `grid-round-2`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`grid-round-2` = "grid-round-2".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`grid-round-2`]
+    
+    inline def `grid-round-2-plus`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`grid-round-2-plus` = "grid-round-2-plus".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`grid-round-2-plus`]
+    
+    inline def `grid-round-4`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`grid-round-4` = "grid-round-4".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`grid-round-4`]
+    
+    inline def `grid-round-5`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`grid-round-5` = "grid-round-5".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`grid-round-5`]
     
     inline def grid3: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.grid3 = "grid3".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.grid3]
     
@@ -8982,6 +9105,8 @@ object mod {
     inline def hashtag: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.hashtag = "hashtag".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.hashtag]
     
     inline def `hashtag-lock`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hashtag-lock` = "hashtag-lock".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hashtag-lock`]
+    
+    inline def `hat-beach`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hat-beach` = "hat-beach".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hat-beach`]
     
     inline def `hat-chef`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hat-chef` = "hat-chef".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`hat-chef`]
     
@@ -9487,6 +9612,8 @@ object mod {
     
     inline def jug: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.jug = "jug".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.jug]
     
+    inline def `jug-bottle`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`jug-bottle` = "jug-bottle".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`jug-bottle`]
+    
     inline def `jug-detergent`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`jug-detergent` = "jug-detergent".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`jug-detergent`]
     
     inline def k: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.k = "k".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.k]
@@ -9590,6 +9717,8 @@ object mod {
     inline def laptop: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.laptop = "laptop".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.laptop]
     
     inline def `laptop-arrow-down`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`laptop-arrow-down` = "laptop-arrow-down".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`laptop-arrow-down`]
+    
+    inline def `laptop-binary`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`laptop-binary` = "laptop-binary".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`laptop-binary`]
     
     inline def `laptop-code`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`laptop-code` = "laptop-code".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`laptop-code`]
     
@@ -9700,6 +9829,8 @@ object mod {
     inline def `lightbulb-exclamation`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`lightbulb-exclamation` = "lightbulb-exclamation".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`lightbulb-exclamation`]
     
     inline def `lightbulb-exclamation-on`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`lightbulb-exclamation-on` = "lightbulb-exclamation-on".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`lightbulb-exclamation-on`]
+    
+    inline def `lightbulb-gear`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`lightbulb-gear` = "lightbulb-gear".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`lightbulb-gear`]
     
     inline def `lightbulb-on`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`lightbulb-on` = "lightbulb-on".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`lightbulb-on`]
     
@@ -10701,6 +10832,8 @@ object mod {
     
     inline def `pencil-alt`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`pencil-alt` = "pencil-alt".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`pencil-alt`]
     
+    inline def `pencil-mechanical`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`pencil-mechanical` = "pencil-mechanical".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`pencil-mechanical`]
+    
     inline def `pencil-paintbrush`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`pencil-paintbrush` = "pencil-paintbrush".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`pencil-paintbrush`]
     
     inline def `pencil-ruler`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`pencil-ruler` = "pencil-ruler".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`pencil-ruler`]
@@ -10836,6 +10969,8 @@ object mod {
     inline def `person-rifle`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`person-rifle` = "person-rifle".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`person-rifle`]
     
     inline def `person-running`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`person-running` = "person-running".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`person-running`]
+    
+    inline def `person-running-fast`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`person-running-fast` = "person-running-fast".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`person-running-fast`]
     
     inline def `person-seat`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`person-seat` = "person-seat".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`person-seat`]
     
@@ -11399,6 +11534,8 @@ object mod {
     
     inline def `right-left`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`right-left` = "right-left".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`right-left`]
     
+    inline def `right-left-large`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`right-left-large` = "right-left-large".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`right-left-large`]
+    
     inline def `right-long`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`right-long` = "right-long".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`right-long`]
     
     inline def `right-long-to-line`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`right-long-to-line` = "right-long-to-line".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`right-long-to-line`]
@@ -11925,6 +12062,8 @@ object mod {
     
     inline def skeleton: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.skeleton = "skeleton".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.skeleton]
     
+    inline def `skeleton-ribs`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`skeleton-ribs` = "skeleton-ribs".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`skeleton-ribs`]
+    
     inline def sketch: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.sketch = "sketch".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.sketch]
     
     inline def `ski-boot`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`ski-boot` = "ski-boot".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`ski-boot`]
@@ -12134,6 +12273,8 @@ object mod {
     inline def spade: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.spade = "spade".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.spade]
     
     inline def `spaghetti-monster-flying`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`spaghetti-monster-flying` = "spaghetti-monster-flying".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`spaghetti-monster-flying`]
+    
+    inline def sparkle: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.sparkle = "sparkle".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.sparkle]
     
     inline def sparkles: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.sparkles = "sparkles".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.sparkles]
     
@@ -13459,6 +13600,8 @@ object mod {
     
     inline def `user-group-crown`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`user-group-crown` = "user-group-crown".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`user-group-crown`]
     
+    inline def `user-group-simple`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`user-group-simple` = "user-group-simple".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`user-group-simple`]
+    
     inline def `user-hair`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`user-hair` = "user-hair".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`user-hair`]
     
     inline def `user-hair-buns`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`user-hair-buns` = "user-hair-buns".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`user-hair-buns`]
@@ -13807,6 +13950,8 @@ object mod {
     
     inline def `webcam-slash`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`webcam-slash` = "webcam-slash".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`webcam-slash`]
     
+    inline def webhook: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.webhook = "webhook".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.webhook]
+    
     inline def weebly: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.weebly = "weebly".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.weebly]
     
     inline def weibo: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.weibo = "weibo".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.weibo]
@@ -13941,6 +14086,8 @@ object mod {
     
     inline def wreath: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.wreath = "wreath".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.wreath]
     
+    inline def `wreath-laurel`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`wreath-laurel` = "wreath-laurel".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`wreath-laurel`]
+    
     inline def wrench: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.wrench = "wrench".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.wrench]
     
     inline def `wrench-simple`: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`wrench-simple` = "wrench-simple".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.`wrench-simple`]
@@ -14023,6 +14170,8 @@ object mod {
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.fab
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.fak
     - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.fass
+    - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.fasr
+    - typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.fasl
   */
   trait IconPrefix extends StObject
   object IconPrefix {
@@ -14038,6 +14187,10 @@ object mod {
     inline def far: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.far = "far".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.far]
     
     inline def fas: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.fas = "fas".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.fas]
+    
+    inline def fasl: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.fasl = "fasl".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.fasl]
+    
+    inline def fasr: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.fasr = "fasr".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.fasr]
     
     inline def fass: typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.fass = "fass".asInstanceOf[typings.fortawesomeFontawesomeCommonTypes.fortawesomeFontawesomeCommonTypesStrings.fass]
     

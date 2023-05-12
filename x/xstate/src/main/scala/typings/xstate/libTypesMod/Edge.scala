@@ -1,7 +1,7 @@
 package typings.xstate.libTypesMod
 
 import typings.xstate.anon.Context
-import typings.xstate.anon.`3`
+import typings.xstate.anon.`4`
 import typings.xstate.libStateNodeMod.StateNode
 import typings.xstate.libTypegenTypesMod.TypegenDisabled
 import org.scalablytyped.runtime.StObject
@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Edge[TContext, TEvent /* <: EventObject */, TEventType /* <: /* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any */] extends StObject {
   
-  var actions: js.Array[Action[TContext, TEvent]]
+  var actions: js.Array[Action[TContext, TEvent, TEvent]]
   
-  var cond: js.UndefOr[Condition[TContext, TEvent & (`3`[TEventType, TEvent])]] = js.undefined
+  var cond: js.UndefOr[Condition[TContext, TEvent & (`4`[TEventType, TEvent])]] = js.undefined
   
   var event: TEventType
   
@@ -27,7 +27,7 @@ trait Edge[TContext, TEvent /* <: EventObject */, TEventType /* <: /* import war
 object Edge {
   
   inline def apply[TContext, TEvent /* <: EventObject */, TEventType /* <: /* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any */](
-    actions: js.Array[Action[TContext, TEvent]],
+    actions: js.Array[Action[TContext, TEvent, TEvent]],
     event: TEventType,
     source: StateNode[TContext, Any, TEvent, Context[TContext], ServiceMap, TypegenDisabled],
     target: StateNode[TContext, Any, TEvent, Context[TContext], ServiceMap, TypegenDisabled],
@@ -40,14 +40,14 @@ object Edge {
   @scala.inline
   implicit open class MutableBuilder[Self <: Edge[?, ?, ?], TContext, TEvent /* <: EventObject */, TEventType /* <: /* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any */] (val x: Self & (Edge[TContext, TEvent, TEventType])) extends AnyVal {
     
-    inline def setActions(value: js.Array[Action[TContext, TEvent]]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+    inline def setActions(value: js.Array[Action[TContext, TEvent, TEvent]]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
-    inline def setActionsVarargs(value: (Action[TContext, TEvent])*): Self = StObject.set(x, "actions", js.Array(value*))
+    inline def setActionsVarargs(value: (Action[TContext, TEvent, TEvent])*): Self = StObject.set(x, "actions", js.Array(value*))
     
-    inline def setCond(value: Condition[TContext, TEvent & (`3`[TEventType, TEvent])]): Self = StObject.set(x, "cond", value.asInstanceOf[js.Any])
+    inline def setCond(value: Condition[TContext, TEvent & (`4`[TEventType, TEvent])]): Self = StObject.set(x, "cond", value.asInstanceOf[js.Any])
     
     inline def setCondFunction3(
-      value: (TContext, TEvent & (`3`[TEventType, TEvent]), /* meta */ GuardMeta[TContext, TEvent & (`3`[TEventType, TEvent])]) => Boolean
+      value: (TContext, TEvent & (`4`[TEventType, TEvent]), /* meta */ GuardMeta[TContext, TEvent & (`4`[TEventType, TEvent])]) => Boolean
     ): Self = StObject.set(x, "cond", js.Any.fromFunction3(value))
     
     inline def setCondUndefined: Self = StObject.set(x, "cond", js.undefined)

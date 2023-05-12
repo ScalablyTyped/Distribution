@@ -12,7 +12,7 @@ open class BingMapsImageryProvider protected () extends StObject {
   
   /**
     * Gets the credit to display when this imagery provider is active.  Typically this is used to credit
-    * the source of the imagery.  This function should not be called before {@link BingMapsImageryProvider#ready} returns true.
+    * the source of the imagery.
     */
   val credit: Credit = js.native
   
@@ -115,14 +115,12 @@ open class BingMapsImageryProvider protected () extends StObject {
   val mapStyle: BingMapsStyle = js.native
   
   /**
-    * Gets the maximum level-of-detail that can be requested.  This function should
-    * not be called before {@link BingMapsImageryProvider#ready} returns true.
+    * Gets the maximum level-of-detail that can be requested.
     */
   val maximumLevel: js.UndefOr[Double] = js.native
   
   /**
-    * Gets the minimum level-of-detail that can be requested.  This function should
-    * not be called before {@link BingMapsImageryProvider#ready} returns true.
+    * Gets the minimum level-of-detail that can be requested.
     */
   val minimumLevel: Double = js.native
   
@@ -154,14 +152,12 @@ open class BingMapsImageryProvider protected () extends StObject {
   val readyPromise: js.Promise[Boolean] = js.native
   
   /**
-    * Gets the rectangle, in radians, of the imagery provided by this instance.  This function should
-    * not be called before {@link BingMapsImageryProvider#ready} returns true.
+    * Gets the rectangle, in radians, of the imagery provided by this instance.
     */
   val rectangle: Rectangle = js.native
   
   /**
-    * Requests the image for a given tile.  This function should
-    * not be called before {@link BingMapsImageryProvider#ready} returns true.
+    * Requests the image for a given tile.
     * @param x - The tile X coordinate.
     * @param y - The tile Y coordinate.
     * @param level - The tile level.
@@ -175,26 +171,22 @@ open class BingMapsImageryProvider protected () extends StObject {
   /**
     * Gets the tile discard policy.  If not undefined, the discard policy is responsible
     * for filtering out "missing" tiles via its shouldDiscardImage function.  If this function
-    * returns undefined, no tiles are filtered.  This function should
-    * not be called before {@link BingMapsImageryProvider#ready} returns true.
+    * returns undefined, no tiles are filtered.
     */
   val tileDiscardPolicy: TileDiscardPolicy = js.native
   
   /**
-    * Gets the height of each tile, in pixels.  This function should
-    * not be called before {@link BingMapsImageryProvider#ready} returns true.
+    * Gets the height of each tile, in pixels.
     */
   val tileHeight: Double = js.native
   
   /**
-    * Gets the width of each tile, in pixels. This function should
-    * not be called before {@link BingMapsImageryProvider#ready} returns true.
+    * Gets the width of each tile, in pixels.
     */
   val tileWidth: Double = js.native
   
   /**
-    * Gets the tiling scheme used by this provider.  This function should
-    * not be called before {@link BingMapsImageryProvider#ready} returns true.
+    * Gets the tiling scheme used by this provider.
     */
   val tilingScheme: TilingScheme = js.native
   
@@ -209,6 +201,21 @@ object BingMapsImageryProvider {
   @JSImport("cesium", "BingMapsImageryProvider")
   @js.native
   val ^ : js.Any = js.native
+  
+  inline def fromUrl(url: String, options: ConstructorOptions): js.Promise[BingMapsImageryProvider] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromUrl")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BingMapsImageryProvider]]
+  /**
+    * Creates an {@link ImageryProvider} which provides tiled imagery using the Bing Maps Imagery REST API.
+    * @example
+    * const bing = await Cesium.BingMapsImageryProvider.fromUrl(
+    *   "https://dev.virtualearth.net", {
+    *     key: "get-yours-at-https://www.bingmapsportal.com/",
+    *     mapStyle: Cesium.BingMapsStyle.AERIAL
+    * });
+    * @param url - The url of the Bing Maps server hosting the imagery.
+    * @param options - Object describing initialization options
+    * @returns A promise that resolves to the created BingMapsImageryProvider
+    */
+  inline def fromUrl(url: Resource, options: ConstructorOptions): js.Promise[BingMapsImageryProvider] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromUrl")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BingMapsImageryProvider]]
   
   /**
     * Gets or sets the URL to the Bing logo for display in the credit.
@@ -236,8 +243,8 @@ object BingMapsImageryProvider {
   
   /**
     * Initialization options for the BingMapsImageryProvider constructor
-    * @property url - The url of the Bing Maps server hosting the imagery.
-    * @property key - The Bing Maps key for your application, which can be
+    * @property [url] - The url of the Bing Maps server hosting the imagery. Deprecated.
+    * @property [key] - The Bing Maps key for your application, which can be
     *        created at {@link https://www.bingmapsportal.com/}.
     * @property [tileProtocol] - The protocol to use when loading tiles, e.g. 'http' or 'https'.
     *        By default, tiles are loaded using the same protocol as the page.
@@ -257,7 +264,7 @@ object BingMapsImageryProvider {
     
     var ellipsoid: js.UndefOr[Ellipsoid] = js.undefined
     
-    var key: String
+    var key: js.UndefOr[String] = js.undefined
     
     var mapStyle: js.UndefOr[BingMapsStyle] = js.undefined
     
@@ -265,12 +272,12 @@ object BingMapsImageryProvider {
     
     var tileProtocol: js.UndefOr[String] = js.undefined
     
-    var url: Resource | String
+    var url: js.UndefOr[Resource | String] = js.undefined
   }
   object ConstructorOptions {
     
-    inline def apply(key: String, url: Resource | String): ConstructorOptions = {
-      val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    inline def apply(): ConstructorOptions = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConstructorOptions]
     }
     
@@ -287,6 +294,8 @@ object BingMapsImageryProvider {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      
       inline def setMapStyle(value: BingMapsStyle): Self = StObject.set(x, "mapStyle", value.asInstanceOf[js.Any])
       
       inline def setMapStyleUndefined: Self = StObject.set(x, "mapStyle", js.undefined)
@@ -300,6 +309,8 @@ object BingMapsImageryProvider {
       inline def setTileProtocolUndefined: Self = StObject.set(x, "tileProtocol", js.undefined)
       
       inline def setUrl(value: Resource | String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
 }

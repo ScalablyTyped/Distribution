@@ -1,7 +1,7 @@
 
 # Scala.js typings for editorconfig
 
-Typings are for version 0.15.3
+Typings are for version 1.0.2
 
 ## Library description:
 EditorConfig File Locator and Interpreter for Node.js

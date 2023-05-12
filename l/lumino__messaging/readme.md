@@ -1,7 +1,7 @@
 
 # Scala.js typings for lumino__messaging
 
-Typings are for version 1.10.3
+Typings are for version 2.0.0
 
 ## Library description:
 Lumino Message Passing

@@ -6,16 +6,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `200ContentApplicationjsonBodyHtmlurl` extends StObject {
   
-  /** Response */
+  /** @description Response */
   var `200`: ContentApplicationjsonBodyHtmlurl
   
-  var `304`: Any
+  var `304`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.anon.Actionsrunnerlabelsreadonly['not_modified'] */ js.Any
   
-  var `404`: Content48
+  var `404`: Content36
 }
 object `200ContentApplicationjsonBodyHtmlurl` {
   
-  inline def apply(`200`: ContentApplicationjsonBodyHtmlurl, `304`: Any, `404`: Content48): `200ContentApplicationjsonBodyHtmlurl` = {
+  inline def apply(
+    `200`: ContentApplicationjsonBodyHtmlurl,
+    `304`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.anon.Actionsrunnerlabelsreadonly['not_modified'] */ js.Any,
+    `404`: Content36
+  ): `200ContentApplicationjsonBodyHtmlurl` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("200")(`200`.asInstanceOf[js.Any])
     __obj.updateDynamic("304")(`304`.asInstanceOf[js.Any])
@@ -28,8 +32,10 @@ object `200ContentApplicationjsonBodyHtmlurl` {
     
     inline def set200(value: ContentApplicationjsonBodyHtmlurl): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
     
-    inline def set304(value: Any): Self = StObject.set(x, "304", value.asInstanceOf[js.Any])
+    inline def set304(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.anon.Actionsrunnerlabelsreadonly['not_modified'] */ js.Any
+    ): Self = StObject.set(x, "304", value.asInstanceOf[js.Any])
     
-    inline def set404(value: Content48): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
+    inline def set404(value: Content36): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
   }
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait BodytextCommitid extends StObject {
   
-  var _links: Pullrequest
+  var _links: HtmlPullrequest
   
   var author_association: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['author-association'] */ js.Any
   
@@ -21,10 +21,10 @@ trait BodytextCommitid extends StObject {
   var body_text: js.UndefOr[String] = js.undefined
   
   /**
-    * @description A commit SHA for the review.
+    * @description A commit SHA for the review. If the commit object was garbage collected or forcibly deleted, then it no longer exists in Git and this value will be `null`.
     * @example 54bb654c9e6025347f57900a4a5c2313a96b8035
     */
-  var commit_id: String
+  var commit_id: String | Null
   
   /**
     * Format: uri
@@ -58,10 +58,9 @@ trait BodytextCommitid extends StObject {
 object BodytextCommitid {
   
   inline def apply(
-    _links: Pullrequest,
+    _links: HtmlPullrequest,
     author_association: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['author-association'] */ js.Any,
     body: String,
-    commit_id: String,
     html_url: String,
     id: Double,
     node_id: String,
@@ -69,7 +68,7 @@ object BodytextCommitid {
     state: String,
     user: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-simple-user'] */ js.Any
   ): BodytextCommitid = {
-    val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], author_association = author_association.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], commit_id = commit_id.asInstanceOf[js.Any], html_url = html_url.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], node_id = node_id.asInstanceOf[js.Any], pull_request_url = pull_request_url.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], author_association = author_association.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], html_url = html_url.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], node_id = node_id.asInstanceOf[js.Any], pull_request_url = pull_request_url.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any], commit_id = null)
     __obj.asInstanceOf[BodytextCommitid]
   }
   
@@ -92,6 +91,8 @@ object BodytextCommitid {
     
     inline def setCommit_id(value: String): Self = StObject.set(x, "commit_id", value.asInstanceOf[js.Any])
     
+    inline def setCommit_idNull: Self = StObject.set(x, "commit_id", null)
+    
     inline def setHtml_url(value: String): Self = StObject.set(x, "html_url", value.asInstanceOf[js.Any])
     
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
@@ -110,6 +111,6 @@ object BodytextCommitid {
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-simple-user'] */ js.Any
     ): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
-    inline def set_links(value: Pullrequest): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+    inline def set_links(value: HtmlPullrequest): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

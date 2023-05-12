@@ -30,7 +30,7 @@ object TextDocument {
   ): typings.vscodeLanguageserverTypes.mod.TextDocument = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(uri.asInstanceOf[js.Any], languageId.asInstanceOf[js.Any], version.asInstanceOf[js.Any], content.asInstanceOf[js.Any])).asInstanceOf[typings.vscodeLanguageserverTypes.mod.TextDocument]
   
   /**
-    * Checks whether the given literal conforms to the [ITextDocument](#ITextDocument) interface.
+    * Checks whether the given literal conforms to the {@link ITextDocument} interface.
     */
   inline def is(value: Any): /* is vscode-languageserver-types.vscode-languageserver-types.TextDocument */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.TextDocument */ Boolean]
 }

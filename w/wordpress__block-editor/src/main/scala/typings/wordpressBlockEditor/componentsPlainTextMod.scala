@@ -41,9 +41,11 @@ import typings.react.mod.WheelEvent
 import typings.react.mod.WheelEventHandler
 import typings.std.Element
 import typings.std.Event
+import typings.std.FormData
 import typings.std.HTMLTextAreaElement
 import typings.wordpressBlockEditor.anon.TypeofTextareaAutosize
 import typings.wordpressBlockEditor.componentsPlainTextMod.PlainText.Props
+import typings.wordpressBlockEditor.wordpressBlockEditorStrings._empty
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.`additions removals`
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.`additions text`
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.`inline`
@@ -51,8 +53,10 @@ import typings.wordpressBlockEditor.wordpressBlockEditorStrings.`removals additi
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.`removals text`
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.`text additions`
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.`text removals`
+import typings.wordpressBlockEditor.wordpressBlockEditorStrings.`use-credentials`
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.additions
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.all
+import typings.wordpressBlockEditor.wordpressBlockEditorStrings.anonymous
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.ascending
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.assertive
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.both
@@ -129,7 +133,7 @@ object componentsPlainTextMod {
       
       var accessKey: js.UndefOr[String] = js.undefined
       
-      var action: js.UndefOr[String] = js.undefined
+      var action: js.UndefOr[String | (js.Function1[/* formData */ FormData, Unit])] = js.undefined
       
       var allowFullScreen: js.UndefOr[Boolean] = js.undefined
       
@@ -287,7 +291,7 @@ object componentsPlainTextMod {
       
       var coords: js.UndefOr[String] = js.undefined
       
-      var crossOrigin: js.UndefOr[String] = js.undefined
+      var crossOrigin: js.UndefOr[anonymous | `use-credentials` | _empty] = js.undefined
       
       var dangerouslySetInnerHTML: js.UndefOr[Html] = js.undefined
       
@@ -315,7 +319,7 @@ object componentsPlainTextMod {
       
       var form: js.UndefOr[String] = js.undefined
       
-      var formAction: js.UndefOr[String] = js.undefined
+      var formAction: js.UndefOr[String | (js.Function1[/* formData */ FormData, Unit])] = js.undefined
       
       var formEncType: js.UndefOr[String] = js.undefined
       
@@ -611,6 +615,8 @@ object componentsPlainTextMod {
       
       var results: js.UndefOr[Double] = js.undefined
       
+      var rev: js.UndefOr[String] = js.undefined
+      
       var reversed: js.UndefOr[Boolean] = js.undefined
       
       var role: js.UndefOr[AriaRole] = js.undefined
@@ -720,7 +726,9 @@ object componentsPlainTextMod {
         
         inline def setAccessKeyUndefined: Self = StObject.set(x, "accessKey", js.undefined)
         
-        inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+        inline def setAction(value: String | (js.Function1[/* formData */ FormData, Unit])): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+        
+        inline def setActionFunction1(value: /* formData */ FormData => Unit): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
         
         inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
         
@@ -1034,7 +1042,7 @@ object componentsPlainTextMod {
         
         inline def setCoordsUndefined: Self = StObject.set(x, "coords", js.undefined)
         
-        inline def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+        inline def setCrossOrigin(value: anonymous | `use-credentials` | _empty): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
         
         inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
         
@@ -1094,7 +1102,9 @@ object componentsPlainTextMod {
         
         inline def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
         
-        inline def setFormAction(value: String): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+        inline def setFormAction(value: String | (js.Function1[/* formData */ FormData, Unit])): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+        
+        inline def setFormActionFunction1(value: /* formData */ FormData => Unit): Self = StObject.set(x, "formAction", js.Any.fromFunction1(value))
         
         inline def setFormActionUndefined: Self = StObject.set(x, "formAction", js.undefined)
         
@@ -1679,6 +1689,10 @@ object componentsPlainTextMod {
         inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
         
         inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+        
+        inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+        
+        inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
         
         inline def setReversed(value: Boolean): Self = StObject.set(x, "reversed", value.asInstanceOf[js.Any])
         

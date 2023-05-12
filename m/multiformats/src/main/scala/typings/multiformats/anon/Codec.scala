@@ -1,10 +1,11 @@
 package typings.multiformats.anon
 
+import typings.multiformats.distTypesSrcLinkInterfaceMod.Version
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Codec[V_1 /* <: typings.multiformats.distTypesSrcLinkInterfaceMod.Version */, C_1 /* <: Double */, A_1 /* <: Double */] extends StObject {
+trait Codec[V_1 /* <: Version */, C_1 /* <: Double */, A_1 /* <: Double */] extends StObject {
   
   var codec: C_1
   
@@ -20,7 +21,7 @@ trait Codec[V_1 /* <: typings.multiformats.distTypesSrcLinkInterfaceMod.Version 
 }
 object Codec {
   
-  inline def apply[V_1 /* <: typings.multiformats.distTypesSrcLinkInterfaceMod.Version */, C_1 /* <: Double */, A_1 /* <: Double */](
+  inline def apply[V_1 /* <: Version */, C_1 /* <: Double */, A_1 /* <: Double */](
     codec: C_1,
     digestSize: Double,
     multihashCode: A_1,
@@ -33,7 +34,7 @@ object Codec {
   }
   
   @scala.inline
-  implicit open class MutableBuilder[Self <: Codec[?, ?, ?], V_1 /* <: typings.multiformats.distTypesSrcLinkInterfaceMod.Version */, C_1 /* <: Double */, A_1 /* <: Double */] (val x: Self & (Codec[V_1, C_1, A_1])) extends AnyVal {
+  implicit open class MutableBuilder[Self <: Codec[?, ?, ?], V_1 /* <: Version */, C_1 /* <: Double */, A_1 /* <: Double */] (val x: Self & (Codec[V_1, C_1, A_1])) extends AnyVal {
     
     inline def setCodec(value: C_1): Self = StObject.set(x, "codec", value.asInstanceOf[js.Any])
     

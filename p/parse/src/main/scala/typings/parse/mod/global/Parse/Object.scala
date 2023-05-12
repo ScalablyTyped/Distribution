@@ -8,6 +8,7 @@ import typings.parse.mod.global.Parse.Object.SetOptions
 import typings.parse.mod.global.Parse.Object.ToJSON
 import typings.parse.parseBooleans.`false`
 import typings.std.Extract
+import typings.std.NonNullable
 import typings.std.Pick
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
@@ -41,14 +42,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Object[T /* <: Attributes */] extends StObject {
   
-  def add[K /* <: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: T[K] extends std.Array<any>? K : never}[keyof T] */ js.Any */](
+  def add[K /* <: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: std.NonNullable<T[K]> extends std.Array<any>? K : never}[keyof T] */ js.Any */](
     attr: K,
-    item: /* import warning: importer.ImportType#apply Failed type conversion: T[K][number] */ js.Any
+    item: /* import warning: importer.ImportType#apply Failed type conversion: std.NonNullable<T[K]>[number] */ js.Any
   ): this.type | `false` = js.native
   
-  def addAll[K /* <: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: T[K] extends std.Array<any>? K : never}[keyof T] */ js.Any */](
+  def addAll[K /* <: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: std.NonNullable<T[K]> extends std.Array<any>? K : never}[keyof T] */ js.Any */](
     attr: K,
-    items: /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+    items: NonNullable[
+      /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+    ]
   ): this.type | `false` = js.native
   
   var addAllUnique: /* import warning: importer.ImportType#apply Failed type conversion: this['addAll'] */ js.Any = js.native

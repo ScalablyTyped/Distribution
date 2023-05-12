@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@wordpress/private-apis" : "0.15.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@wordpress/private-apis" : "0.15.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

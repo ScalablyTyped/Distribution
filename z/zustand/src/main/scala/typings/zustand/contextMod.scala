@@ -12,6 +12,9 @@ object contextMod {
   @js.native
   val ^ : js.Any = js.native
   
+  /**
+    * @deprecated Use `createStore` and `useStore` for context usage
+    */
   inline def default[S /* <: StoreApi[Any] */](): Provider[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Provider[S]]
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.

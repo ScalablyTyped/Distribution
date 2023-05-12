@@ -1,7 +1,7 @@
 package typings.aframe.anon
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.std.Record
+import typings.three.anon.Aliceblue
 import typings.three.mod.Color
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,5 +15,5 @@ trait TypeofColor
   /**
     * List of X11 color names.
     */
-  var NAMES: Record[String, Double] = js.native
+  var NAMES: Aliceblue = js.native
 }

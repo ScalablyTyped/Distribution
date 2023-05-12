@@ -12,7 +12,7 @@ trait User extends StObject {
   var Addresses: js.UndefOr[typings.awsSdk.clientsIdentitystoreMod.Addresses] = js.undefined
   
   /**
-    * A string containing the user's name that's formatted for display when the user is referenced. For example, "John Doe."
+    * A string containing the name of the user that is formatted for display when the user is referenced. For example, "John Doe."
     */
   var DisplayName: js.UndefOr[SensitiveStringType] = js.undefined
   
@@ -32,12 +32,12 @@ trait User extends StObject {
   var IdentityStoreId: typings.awsSdk.clientsIdentitystoreMod.IdentityStoreId
   
   /**
-    * A string containing the user's geographical region or location.
+    * A string containing the geographical region or location of the user.
     */
   var Locale: js.UndefOr[SensitiveStringType] = js.undefined
   
   /**
-    * An object containing the user's name.
+    * An object containing the name of the user.
     */
   var Name: js.UndefOr[typings.awsSdk.clientsIdentitystoreMod.Name] = js.undefined
   
@@ -57,17 +57,17 @@ trait User extends StObject {
   var PreferredLanguage: js.UndefOr[SensitiveStringType] = js.undefined
   
   /**
-    * A string containing a URL that may be associated with the user.
+    * A string containing a URL that might be associated with the user.
     */
   var ProfileUrl: js.UndefOr[SensitiveStringType] = js.undefined
   
   /**
-    * A string containing the user's time zone.
+    * A string containing the time zone of the user.
     */
   var Timezone: js.UndefOr[SensitiveStringType] = js.undefined
   
   /**
-    * A string containing the user's title. Possible values depend on each customer's specific needs, so they are left unspecified.
+    * A string containing the title of the user. Possible values are left unspecified. The value can vary based on your specific use case.
     */
   var Title: js.UndefOr[SensitiveStringType] = js.undefined
   
@@ -82,7 +82,7 @@ trait User extends StObject {
   var UserName: js.UndefOr[typings.awsSdk.clientsIdentitystoreMod.UserName] = js.undefined
   
   /**
-    * A string indicating the user's type. Possible values depend on each customer's specific needs, so they are left unspecified.
+    * A string indicating the type of user. Possible values are left unspecified. The value can vary based on your specific use case.
     */
   var UserType: js.UndefOr[SensitiveStringType] = js.undefined
 }

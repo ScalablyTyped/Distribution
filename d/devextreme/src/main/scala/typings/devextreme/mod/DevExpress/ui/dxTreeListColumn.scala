@@ -1,8 +1,8 @@
 package typings.devextreme.mod.DevExpress.ui
 
+import typings.devextreme.mod.DevExpress.common.grids.ColumnBase
 import typings.devextreme.mod.DevExpress.core.DxElement_
 import typings.devextreme.mod.DevExpress.core.template
-import typings.devextreme.mod.DevExpress.ui.dxDataGrid.ColumnBase
 import typings.devextreme.mod.DevExpress.ui.dxTreeList.Column
 import typings.devextreme.mod.DevExpress.ui.dxTreeList.ColumnButton
 import typings.devextreme.mod.DevExpress.ui.dxTreeList.ColumnCellTemplateData

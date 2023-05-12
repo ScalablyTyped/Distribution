@@ -1,7 +1,7 @@
 
 # Scala.js typings for p5
 
-Typings are for version 1.4
+Typings are for version 1.6
 
 ## Library description:
 [![npm version](https://badge.fury.io/js/p5.svg)](https://www.npmjs.com/package/p5)

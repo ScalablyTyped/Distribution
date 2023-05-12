@@ -1,7 +1,7 @@
 
 # Scala.js typings for wix-design-systems-locale-utils
 
-Typings are for version 1.73.0
+Typings are for version 1.106.0
 
 ## Library description:
 > A common utils used within the `wix-design-systems` packages

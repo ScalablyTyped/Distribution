@@ -2,6 +2,7 @@ package typings.wdioTypes.buildCapabilitiesMod
 
 import typings.wdioTypes.anon.AllowAllCookies
 import typings.wdioTypes.anon.Arch
+import typings.wdioTypes.anon.CaptureContent
 import typings.wdioTypes.anon.Driver
 import typings.wdioTypes.anon.EnablePopups
 import typings.wdioTypes.wdioTypesInts.`0`
@@ -55,6 +56,12 @@ trait BrowserStackCapabilities extends StObject {
   
   var browser_version: js.UndefOr[String] = js.undefined
   
+  @JSName("browserstack.buildIdentifier")
+  var browserstackDotbuildIdentifier: js.UndefOr[String] = js.undefined
+  
+  @JSName("browserstack.localIdentifier")
+  var browserstackDotlocalIdentifier: js.UndefOr[String] = js.undefined
+  
   /**
     * Mask the data sent or retrieved by certain commands.
     *
@@ -65,6 +72,11 @@ trait BrowserStackCapabilities extends StObject {
   
   @JSName("browserstack.sendKeys")
   var browserstackDotsendKeys: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Specify an identifier for a build consists group of tests.
+    */
+  var buildIdentifier: js.UndefOr[String] = js.undefined
   
   /**
     * Specify a name for a logical group of tests.
@@ -147,6 +159,12 @@ trait BrowserStackCapabilities extends StObject {
   var ie: js.UndefOr[Arch] = js.undefined
   
   /**
+    * https://www.browserstack.com/docs/app-automate/appium/debug-failed-tests/interactive-session
+    * Enable an interactive debugging session while your test session is running
+    */
+  var interactiveDebugging: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * Test locally hosted websites on BrowserStack.
     * To enable access to the local machine you need to setup the
     * [BrowserStack Local Binary](https://www.browserstack.com/local-testing/automate).
@@ -161,6 +179,12 @@ trait BrowserStackCapabilities extends StObject {
   var maskBasicAuth: js.UndefOr[Boolean] = js.undefined
   
   var networkLogs: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * https://www.browserstack.com/docs/app-automate/appium/debug-failed-tests/network-logs
+    * Enable viewing the response data in the Network Logs tab on your session
+    */
+  var networkLogsOptions: js.UndefOr[CaptureContent] = js.undefined
   
   var networkProfile: js.UndefOr[String] = js.undefined
   
@@ -188,6 +212,8 @@ trait BrowserStackCapabilities extends StObject {
   var resolution: js.UndefOr[String] = js.undefined
   
   var safari: js.UndefOr[AllowAllCookies] = js.undefined
+  
+  var seleniumCdp: js.UndefOr[Boolean] = js.undefined
   
   var seleniumLogs: js.UndefOr[Boolean] = js.undefined
   
@@ -269,6 +295,14 @@ object BrowserStackCapabilities {
     
     inline def setBrowser_versionUndefined: Self = StObject.set(x, "browser_version", js.undefined)
     
+    inline def setBrowserstackDotbuildIdentifier(value: String): Self = StObject.set(x, "browserstack.buildIdentifier", value.asInstanceOf[js.Any])
+    
+    inline def setBrowserstackDotbuildIdentifierUndefined: Self = StObject.set(x, "browserstack.buildIdentifier", js.undefined)
+    
+    inline def setBrowserstackDotlocalIdentifier(value: String): Self = StObject.set(x, "browserstack.localIdentifier", value.asInstanceOf[js.Any])
+    
+    inline def setBrowserstackDotlocalIdentifierUndefined: Self = StObject.set(x, "browserstack.localIdentifier", js.undefined)
+    
     inline def setBrowserstackDotmaskCommands(value: js.Array[String]): Self = StObject.set(x, "browserstack.maskCommands", value.asInstanceOf[js.Any])
     
     inline def setBrowserstackDotmaskCommandsUndefined: Self = StObject.set(x, "browserstack.maskCommands", js.undefined)
@@ -278,6 +312,10 @@ object BrowserStackCapabilities {
     inline def setBrowserstackDotsendKeys(value: Boolean): Self = StObject.set(x, "browserstack.sendKeys", value.asInstanceOf[js.Any])
     
     inline def setBrowserstackDotsendKeysUndefined: Self = StObject.set(x, "browserstack.sendKeys", js.undefined)
+    
+    inline def setBuildIdentifier(value: String): Self = StObject.set(x, "buildIdentifier", value.asInstanceOf[js.Any])
+    
+    inline def setBuildIdentifierUndefined: Self = StObject.set(x, "buildIdentifier", js.undefined)
     
     inline def setBuildName(value: String): Self = StObject.set(x, "buildName", value.asInstanceOf[js.Any])
     
@@ -347,6 +385,10 @@ object BrowserStackCapabilities {
     
     inline def setIeUndefined: Self = StObject.set(x, "ie", js.undefined)
     
+    inline def setInteractiveDebugging(value: Boolean): Self = StObject.set(x, "interactiveDebugging", value.asInstanceOf[js.Any])
+    
+    inline def setInteractiveDebuggingUndefined: Self = StObject.set(x, "interactiveDebugging", js.undefined)
+    
     inline def setLocal(value: Boolean): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
     
     inline def setLocalIdentifier(value: String): Self = StObject.set(x, "localIdentifier", value.asInstanceOf[js.Any])
@@ -360,6 +402,10 @@ object BrowserStackCapabilities {
     inline def setMaskBasicAuthUndefined: Self = StObject.set(x, "maskBasicAuth", js.undefined)
     
     inline def setNetworkLogs(value: Boolean): Self = StObject.set(x, "networkLogs", value.asInstanceOf[js.Any])
+    
+    inline def setNetworkLogsOptions(value: CaptureContent): Self = StObject.set(x, "networkLogsOptions", value.asInstanceOf[js.Any])
+    
+    inline def setNetworkLogsOptionsUndefined: Self = StObject.set(x, "networkLogsOptions", js.undefined)
     
     inline def setNetworkLogsUndefined: Self = StObject.set(x, "networkLogs", js.undefined)
     
@@ -394,6 +440,10 @@ object BrowserStackCapabilities {
     inline def setSafari(value: AllowAllCookies): Self = StObject.set(x, "safari", value.asInstanceOf[js.Any])
     
     inline def setSafariUndefined: Self = StObject.set(x, "safari", js.undefined)
+    
+    inline def setSeleniumCdp(value: Boolean): Self = StObject.set(x, "seleniumCdp", value.asInstanceOf[js.Any])
+    
+    inline def setSeleniumCdpUndefined: Self = StObject.set(x, "seleniumCdp", js.undefined)
     
     inline def setSeleniumLogs(value: Boolean): Self = StObject.set(x, "seleniumLogs", value.asInstanceOf[js.Any])
     

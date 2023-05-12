@@ -111,6 +111,28 @@ object browserAction {
     inline def Shift: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.Shift = "Shift".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.Shift]
   }
   
+  /** An object with information about the popup to open. */
+  trait OpenPopupOptions extends StObject {
+    
+    /** Defaults to the current window. */
+    var windowId: js.UndefOr[Double] = js.undefined
+  }
+  object OpenPopupOptions {
+    
+    inline def apply(): OpenPopupOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[OpenPopupOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OpenPopupOptions] (val x: Self) extends AnyVal {
+      
+      inline def setWindowId(value: Double): Self = StObject.set(x, "windowId", value.asInstanceOf[js.Any])
+      
+      inline def setWindowIdUndefined: Self = StObject.set(x, "windowId", js.undefined)
+    }
+  }
+  
   /**
     * Specifies to which tab or window the value should be set, or from which one it should be retrieved. If no tab nor window is specified, the global value is set or retrieved.
     */

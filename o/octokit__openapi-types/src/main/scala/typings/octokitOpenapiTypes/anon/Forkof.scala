@@ -17,7 +17,7 @@ trait Forkof extends StObject {
   
   var description: js.UndefOr[String | Null] = js.undefined
   
-  var files: js.UndefOr[StringDictionary[Rawurl | Null]] = js.undefined
+  var files: js.UndefOr[StringDictionary[js.UndefOr[Size | Null]]] = js.undefined
   
   /**
     * Gist
@@ -87,7 +87,7 @@ object Forkof {
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    inline def setFiles(value: StringDictionary[Rawurl | Null]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+    inline def setFiles(value: StringDictionary[js.UndefOr[Size | Null]]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
     inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
     

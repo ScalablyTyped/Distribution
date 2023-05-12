@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@libp2p/kad-dht" : "5.0.1"
+      "@libp2p/kad-dht" : "9.3.3"
     }
   ],
   "test-dependencies" : [
     {
-      "@libp2p/kad-dht" : "5.0.1"
+      "@libp2p/kad-dht" : "9.3.3"
     }
   ],
   "compile-devDependencies" : [

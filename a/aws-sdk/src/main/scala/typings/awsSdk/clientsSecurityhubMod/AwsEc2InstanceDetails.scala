@@ -32,7 +32,7 @@ trait AwsEc2InstanceDetails extends StObject {
   var KeyName: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * Indicates when the instance was launched. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces. For example, 2020-03-22T13:22:13.933Z.
+    * Indicates when the instance was launched. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces, and date and time should be separated by T. For example, 2020-03-22T13:22:13.933Z.
     */
   var LaunchedAt: js.UndefOr[NonEmptyString] = js.undefined
   
@@ -40,6 +40,11 @@ trait AwsEc2InstanceDetails extends StObject {
     * Details about the metadata options for the Amazon EC2 instance. 
     */
   var MetadataOptions: js.UndefOr[AwsEc2InstanceMetadataOptions] = js.undefined
+  
+  /**
+    *  Describes the type of monitoring that’s turned on for an instance. 
+    */
+  var Monitoring: js.UndefOr[AwsEc2InstanceMonitoringDetails] = js.undefined
   
   /**
     * The identifiers of the network interfaces for the EC2 instance. The details for each network interface are in a corresponding AwsEc2NetworkInterfacesDetails object.
@@ -107,6 +112,10 @@ object AwsEc2InstanceDetails {
     inline def setMetadataOptions(value: AwsEc2InstanceMetadataOptions): Self = StObject.set(x, "MetadataOptions", value.asInstanceOf[js.Any])
     
     inline def setMetadataOptionsUndefined: Self = StObject.set(x, "MetadataOptions", js.undefined)
+    
+    inline def setMonitoring(value: AwsEc2InstanceMonitoringDetails): Self = StObject.set(x, "Monitoring", value.asInstanceOf[js.Any])
+    
+    inline def setMonitoringUndefined: Self = StObject.set(x, "Monitoring", js.undefined)
     
     inline def setNetworkInterfaces(value: AwsEc2InstanceNetworkInterfacesList): Self = StObject.set(x, "NetworkInterfaces", value.asInstanceOf[js.Any])
     

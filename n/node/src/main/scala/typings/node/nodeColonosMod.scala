@@ -34,6 +34,15 @@ object nodeColonosMod {
     */
   inline def arch(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("arch")().asInstanceOf[String]
   
+  /**
+    * Returns an estimate of the default amount of parallelism a program should use.
+    * Always returns a value greater than zero.
+    *
+    * This function is a small wrapper about libuv's [`uv_available_parallelism()`](https://docs.libuv.org/en/v1.x/misc.html#c.uv_available_parallelism).
+    * @since v19.4.0, v18.14.0
+    */
+  inline def availableParallelism(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("availableParallelism")().asInstanceOf[Double]
+  
   object constants {
     
     @JSImport("node:os", "constants.UV_UDP_REUSEADDR")
@@ -625,6 +634,7 @@ object nodeColonosMod {
   
   /**
     * Returns an array of objects containing information about each logical CPU core.
+    * The array will be empty if no CPU information is available, such as if the`/proc` file system is unavailable.
     *
     * The properties included on each object include:
     *
@@ -638,8 +648,8 @@ object nodeColonosMod {
     *       nice: 0,
     *       sys: 30340,
     *       idle: 1070356870,
-    *       irq: 0
-    *     }
+    *       irq: 0,
+    *     },
     *   },
     *   {
     *     model: 'Intel(R) Core(TM) i7 CPU         860  @ 2.80GHz',
@@ -649,8 +659,8 @@ object nodeColonosMod {
     *       nice: 0,
     *       sys: 26980,
     *       idle: 1071569080,
-    *       irq: 0
-    *     }
+    *       irq: 0,
+    *     },
     *   },
     *   {
     *     model: 'Intel(R) Core(TM) i7 CPU         860  @ 2.80GHz',
@@ -660,8 +670,8 @@ object nodeColonosMod {
     *       nice: 0,
     *       sys: 21750,
     *       idle: 1070919370,
-    *       irq: 0
-    *     }
+    *       irq: 0,
+    *     },
     *   },
     *   {
     *     model: 'Intel(R) Core(TM) i7 CPU         860  @ 2.80GHz',
@@ -671,14 +681,17 @@ object nodeColonosMod {
     *       nice: 0,
     *       sys: 19430,
     *       idle: 1070905480,
-    *       irq: 20
-    *     }
+    *       irq: 20,
+    *     },
     *   },
     * ]
     * ```
     *
     * `nice` values are POSIX-only. On Windows, the `nice` values of all processors
     * are always 0.
+    *
+    * `os.cpus().length` should not be used to calculate the amount of parallelism
+    * available to an application. Use {@link availableParallelism} for this purpose.
     * @since v0.3.3
     */
   inline def cpus(): js.Array[CpuInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("cpus")().asInstanceOf[js.Array[CpuInfo]]
@@ -742,12 +755,11 @@ object nodeColonosMod {
   inline def loadavg(): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadavg")().asInstanceOf[js.Array[Double]]
   
   /**
-    * Returns the machine type as a string, such as arm, aarch64, mips, mips64, ppc64, ppc64le, s390, s390x, i386, i686, x86_64.
+    * Returns the machine type as a string, such as `arm`, `arm64`, `aarch64`,`mips`, `mips64`, `ppc64`, `ppc64le`, `s390`, `s390x`, `i386`, `i686`, `x86_64`.
     *
-    * On POSIX systems, the machine type is determined by calling [`uname(3)`](https://linux.die.net/man/3/uname).
-    * On Windows, `RtlGetVersion()` is used, and if it is not available, `GetVersionExW()` will be used.
-    * See [https://en.wikipedia.org/wiki/Uname#Examples](https://en.wikipedia.org/wiki/Uname#Examples) for more information.
-    * @since v18.9.0
+    * On POSIX systems, the machine type is determined by calling [`uname(3)`](https://linux.die.net/man/3/uname). On Windows, `RtlGetVersion()` is used, and if it is not
+    * available, `GetVersionExW()` will be used. See [https://en.wikipedia.org/wiki/Uname#Examples](https://en.wikipedia.org/wiki/Uname#Examples) for more information.
+    * @since v18.9.0, v16.18.0
     */
   inline def machine(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("machine")().asInstanceOf[String]
   

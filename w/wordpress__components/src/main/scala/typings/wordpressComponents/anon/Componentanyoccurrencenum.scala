@@ -23,8 +23,8 @@ trait Componentanyoccurrencenum extends StObject {
     * prevents this from being invoked.
     *
     * @deprecated 16.3, use componentDidMount or the constructor instead
-    * @see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#initializing-state
-    * @see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path
+    * @see https://legacy.reactjs.org/blog/2018/03/27/update-on-async-rendering.html#initializing-state
+    * @see https://legacy.reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path
     */
   var UNSAFE_componentWillMount: js.UndefOr[js.Function0[Unit]] = js.native
   
@@ -41,8 +41,8 @@ trait Componentanyoccurrencenum extends StObject {
     * prevents this from being invoked.
     *
     * @deprecated 16.3, use static getDerivedStateFromProps instead
-    * @see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#updating-state-based-on-props
-    * @see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path
+    * @see https://legacy.reactjs.org/blog/2018/03/27/update-on-async-rendering.html#updating-state-based-on-props
+    * @see https://legacy.reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path
     */
   var UNSAFE_componentWillReceiveProps: js.UndefOr[js.Function2[/* nextProps */ js.Object, /* nextContext */ Any, Unit]] = js.native
   
@@ -57,8 +57,8 @@ trait Componentanyoccurrencenum extends StObject {
     * prevents this from being invoked.
     *
     * @deprecated 16.3, use getSnapshotBeforeUpdate instead
-    * @see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#reading-dom-properties-before-an-update
-    * @see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path
+    * @see https://legacy.reactjs.org/blog/2018/03/27/update-on-async-rendering.html#reading-dom-properties-before-an-update
+    * @see https://legacy.reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path
     */
   var UNSAFE_componentWillUpdate: js.UndefOr[
     js.Function3[/* nextProps */ js.Object, /* nextState */ js.Object, /* nextContext */ Any, Unit]
@@ -97,8 +97,8 @@ trait Componentanyoccurrencenum extends StObject {
     * prevents this from being invoked.
     *
     * @deprecated 16.3, use componentDidMount or the constructor instead; will stop working in React 17
-    * @see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#initializing-state
-    * @see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path
+    * @see https://legacy.reactjs.org/blog/2018/03/27/update-on-async-rendering.html#initializing-state
+    * @see https://legacy.reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path
     */
   var componentWillMount: js.UndefOr[js.Function0[Unit]] = js.native
   
@@ -113,8 +113,8 @@ trait Componentanyoccurrencenum extends StObject {
     * prevents this from being invoked.
     *
     * @deprecated 16.3, use static getDerivedStateFromProps instead; will stop working in React 17
-    * @see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#updating-state-based-on-props
-    * @see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path
+    * @see https://legacy.reactjs.org/blog/2018/03/27/update-on-async-rendering.html#updating-state-based-on-props
+    * @see https://legacy.reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path
     */
   var componentWillReceiveProps: js.UndefOr[js.Function2[/* nextProps */ js.Object, /* nextContext */ Any, Unit]] = js.native
   
@@ -133,8 +133,8 @@ trait Componentanyoccurrencenum extends StObject {
     * prevents this from being invoked.
     *
     * @deprecated 16.3, use getSnapshotBeforeUpdate instead; will stop working in React 17
-    * @see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#reading-dom-properties-before-an-update
-    * @see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path
+    * @see https://legacy.reactjs.org/blog/2018/03/27/update-on-async-rendering.html#reading-dom-properties-before-an-update
+    * @see https://legacy.reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path
     */
   var componentWillUpdate: js.UndefOr[
     js.Function3[/* nextProps */ js.Object, /* nextState */ js.Object, /* nextContext */ Any, Unit]
@@ -153,7 +153,7 @@ trait Componentanyoccurrencenum extends StObject {
     * declare context: React.ContextType<typeof MyContext>
     * ```
     *
-    * @see https://reactjs.org/docs/context.html
+    * @see https://react.dev/reference/react/Component#context
     */
   var context: Any = js.native
   
@@ -174,7 +174,7 @@ trait Componentanyoccurrencenum extends StObject {
   
   /**
     * @deprecated
-    * https://reactjs.org/docs/refs-and-the-dom.html#legacy-api-string-refs
+    * https://legacy.reactjs.org/docs/refs-and-the-dom.html#legacy-api-string-refs
     */
   var refs: StringDictionary[ReactInstance] = js.native
   

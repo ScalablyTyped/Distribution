@@ -6,13 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Checksuiteid extends StObject {
   
-  /** The unique identifier of the check suite. */
   var check_suite_id: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['check-suite-id'] */ js.Any
   
-  /** The account owner of the repository. The name is not case sensitive. */
   var owner: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['owner'] */ js.Any
   
-  /** The name of the repository. The name is not case sensitive. */
   var repo: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['repo'] */ js.Any
 }
 object Checksuiteid {

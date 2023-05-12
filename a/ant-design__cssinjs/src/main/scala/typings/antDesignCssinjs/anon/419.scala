@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.MsScrollSnapPointsY
+import typings.csstype.mod.Property.ScrollSnapTypeY
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,11 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `419` extends StObject {
   
   var value: js.UndefOr[
-    MsScrollSnapPointsY | (js.Array[
+    ScrollSnapTypeY | (js.Array[
       (Extract[
-        js.UndefOr[MsScrollSnapPointsY | js.Array[NonNullable[js.UndefOr[MsScrollSnapPointsY]]]], 
+        js.UndefOr[ScrollSnapTypeY | js.Array[NonNullable[js.UndefOr[ScrollSnapTypeY]]]], 
         String
-      ]) | NonNullable[js.UndefOr[MsScrollSnapPointsY]]
+      ]) | NonNullable[js.UndefOr[ScrollSnapTypeY]]
     ])
   ] = js.native
 }

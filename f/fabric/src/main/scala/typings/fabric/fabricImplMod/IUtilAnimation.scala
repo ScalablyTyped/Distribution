@@ -14,10 +14,12 @@ trait IUtilAnimation extends StObject {
   def animate(): Unit = js.native
   def animate(options: IUtilAnimationOptions): Unit = js.native
   
+  def cancelAnimFrame(id: Double): Unit = js.native
+  
   /**
     * requestAnimationFrame polyfill based on http://paulirish.com/2011/requestanimationframe-for-smart-animating/
     * In order to get a precise start time, `requestAnimFrame` should be called as an entry into the method
     * @param callback Callback to invoke
     */
-  def requestAnimFrame(callback: js.Function): Unit = js.native
+  def requestAnimFrame(callback: js.Function): Double = js.native
 }

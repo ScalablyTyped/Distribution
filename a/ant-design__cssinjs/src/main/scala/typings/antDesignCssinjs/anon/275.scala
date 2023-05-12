@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.BorderBlockStartWidth
+import typings.csstype.mod.Property.InsetInlineStart
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,13 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `275` extends StObject {
   
   var value: js.UndefOr[
-    (BorderBlockStartWidth[Double | String]) | (js.Array[
+    (InsetInlineStart[Double | String]) | (js.Array[
       (Extract[
         js.UndefOr[
-          (BorderBlockStartWidth[Double | String]) | (js.Array[NonNullable[js.UndefOr[BorderBlockStartWidth[Double | String]]]])
+          (InsetInlineStart[Double | String]) | (js.Array[NonNullable[js.UndefOr[InsetInlineStart[Double | String]]]])
         ], 
         String
-      ]) | (NonNullable[js.UndefOr[BorderBlockStartWidth[Double | String]]])
+      ]) | (NonNullable[js.UndefOr[InsetInlineStart[Double | String]]])
     ])
   ] = js.native
 }

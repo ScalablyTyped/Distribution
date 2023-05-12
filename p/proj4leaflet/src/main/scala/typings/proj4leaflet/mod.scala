@@ -76,10 +76,10 @@ object mod {
       
       @JSImport("leaflet", "Proj.GeoJSON")
       @js.native
-      open class GeoJSON_ () extends GeoJSON__[Any] {
+      open class GeoJSON_ () extends GeoJSON__[Any, GeometryObject] {
         def this(geojson: GeoJsonObject) = this()
-        def this(geojson: Unit, options: GeoJSONOptions[Any]) = this()
-        def this(geojson: GeoJsonObject, options: GeoJSONOptions[Any]) = this()
+        def this(geojson: Unit, options: GeoJSONOptions[Any, GeometryObject]) = this()
+        def this(geojson: GeoJsonObject, options: GeoJSONOptions[Any, GeometryObject]) = this()
       }
       
       @JSImport("leaflet", "Proj.ImageOverlay")
@@ -91,9 +91,9 @@ object mod {
       }
       
       inline def geoJson(): GeoJSON_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geoJson")().asInstanceOf[GeoJSON_]
-      inline def geoJson(geojson: Unit, options: GeoJSONOptions[Any]): GeoJSON_ = (^.asInstanceOf[js.Dynamic].applyDynamic("geoJson")(geojson.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[GeoJSON_]
+      inline def geoJson(geojson: Unit, options: GeoJSONOptions[Any, GeometryObject]): GeoJSON_ = (^.asInstanceOf[js.Dynamic].applyDynamic("geoJson")(geojson.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[GeoJSON_]
       inline def geoJson(geojson: Proj4GeoJSONFeature): GeoJSON_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geoJson")(geojson.asInstanceOf[js.Any]).asInstanceOf[GeoJSON_]
-      inline def geoJson(geojson: Proj4GeoJSONFeature, options: GeoJSONOptions[Any]): GeoJSON_ = (^.asInstanceOf[js.Dynamic].applyDynamic("geoJson")(geojson.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[GeoJSON_]
+      inline def geoJson(geojson: Proj4GeoJSONFeature, options: GeoJSONOptions[Any, GeometryObject]): GeoJSON_ = (^.asInstanceOf[js.Dynamic].applyDynamic("geoJson")(geojson.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[GeoJSON_]
       
       inline def imageOverlay(imageUrl: String, bounds: LatLngBoundsExpression): ImageOverlay_ = (^.asInstanceOf[js.Dynamic].applyDynamic("imageOverlay")(imageUrl.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any])).asInstanceOf[ImageOverlay_]
       inline def imageOverlay(imageUrl: String, bounds: LatLngBoundsExpression, options: ImageOverlayOptions): ImageOverlay_ = (^.asInstanceOf[js.Dynamic].applyDynamic("imageOverlay")(imageUrl.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ImageOverlay_]

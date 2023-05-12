@@ -6,10 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @js.native
 sealed trait StreetViewSource extends StObject
-/**
-  * Identifiers to limit Street View searches to selected sources. These values
-  * are specified as strings. For example, <code>'outdoor'</code>.
-  */
 @JSGlobal("google.maps.StreetViewSource")
 @js.native
 object StreetViewSource extends StObject {

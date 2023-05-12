@@ -9,7 +9,7 @@ trait LoaderCallbacks[T /* <: LoaderContext */] extends StObject {
   
   var onAbort: js.UndefOr[LoaderOnAbort[T]] = js.undefined
   
-  def onError(error: Code, context: T, networkDetails: Any): Unit
+  def onError(error: Code, context: T, networkDetails: Any, stats: LoaderStats): Unit
   @JSName("onError")
   var onError_Original: LoaderOnError[T]
   
@@ -26,11 +26,11 @@ trait LoaderCallbacks[T /* <: LoaderContext */] extends StObject {
 object LoaderCallbacks {
   
   inline def apply[T /* <: LoaderContext */](
-    onError: (/* error */ Code, T, /* networkDetails */ Any) => Unit,
+    onError: (/* error */ Code, T, /* networkDetails */ Any, /* stats */ LoaderStats) => Unit,
     onSuccess: (/* response */ LoaderResponse, /* stats */ LoaderStats, T, /* networkDetails */ Any) => Unit,
     onTimeout: (/* stats */ LoaderStats, T, /* networkDetails */ Any) => Unit
   ): LoaderCallbacks[T] = {
-    val __obj = js.Dynamic.literal(onError = js.Any.fromFunction3(onError), onSuccess = js.Any.fromFunction4(onSuccess), onTimeout = js.Any.fromFunction3(onTimeout))
+    val __obj = js.Dynamic.literal(onError = js.Any.fromFunction4(onError), onSuccess = js.Any.fromFunction4(onSuccess), onTimeout = js.Any.fromFunction3(onTimeout))
     __obj.asInstanceOf[LoaderCallbacks[T]]
   }
   
@@ -41,7 +41,7 @@ object LoaderCallbacks {
     
     inline def setOnAbortUndefined: Self = StObject.set(x, "onAbort", js.undefined)
     
-    inline def setOnError(value: (/* error */ Code, T, /* networkDetails */ Any) => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction3(value))
+    inline def setOnError(value: (/* error */ Code, T, /* networkDetails */ Any, /* stats */ LoaderStats) => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction4(value))
     
     inline def setOnProgress(
       value: (/* stats */ LoaderStats, T, /* data */ String | js.typedarray.ArrayBuffer, /* networkDetails */ Any) => Unit

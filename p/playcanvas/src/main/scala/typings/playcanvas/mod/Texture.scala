@@ -24,9 +24,10 @@ open class Texture protected () extends StObject {
   /**
     * Create a new Texture instance.
     *
-    * @param {GraphicsDevice} graphicsDevice - The graphics device used to manage this texture.
+    * @param {import('./graphics-device.js').GraphicsDevice} graphicsDevice - The graphics device
+    * used to manage this texture.
     * @param {object} [options] - Object for passing optional arguments.
-    * @param {string} [options.name] - The name of the texture.
+    * @param {string} [options.name] - The name of the texture. Defaults to null.
     * @param {number} [options.width] - The width of the texture in pixels. Defaults to 4.
     * @param {number} [options.height] - The height of the texture in pixels. Defaults to 4.
     * @param {number} [options.depth] - The number of depth slices in a 3D texture (WebGL2 only).
@@ -35,12 +36,12 @@ open class Texture protected () extends StObject {
     *
     * - {@link PIXELFORMAT_A8}
     * - {@link PIXELFORMAT_L8}
-    * - {@link PIXELFORMAT_L8_A8}
-    * - {@link PIXELFORMAT_R5_G6_B5}
-    * - {@link PIXELFORMAT_R5_G5_B5_A1}
-    * - {@link PIXELFORMAT_R4_G4_B4_A4}
-    * - {@link PIXELFORMAT_R8_G8_B8}
-    * - {@link PIXELFORMAT_R8_G8_B8_A8}
+    * - {@link PIXELFORMAT_LA8}
+    * - {@link PIXELFORMAT_RGB565}
+    * - {@link PIXELFORMAT_RGBA5551}
+    * - {@link PIXELFORMAT_RGBA4}
+    * - {@link PIXELFORMAT_RGB8}
+    * - {@link PIXELFORMAT_RGBA8}
     * - {@link PIXELFORMAT_DXT1}
     * - {@link PIXELFORMAT_DXT3}
     * - {@link PIXELFORMAT_DXT5}
@@ -54,11 +55,11 @@ open class Texture protected () extends StObject {
     * - {@link PIXELFORMAT_PVRTC_4BPP_RGB_1}
     * - {@link PIXELFORMAT_PVRTC_4BPP_RGBA_1}
     * - {@link PIXELFORMAT_111110F}
-    * - {@link PIXELFORMAT_ASTC_4x4}>/li>
+    * - {@link PIXELFORMAT_ASTC_4x4}
     * - {@link PIXELFORMAT_ATC_RGB}
     * - {@link PIXELFORMAT_ATC_RGBA}
     *
-    * Defaults to {@link PIXELFORMAT_R8_G8_B8_A8}.
+    * Defaults to {@link PIXELFORMAT_RGBA8}.
     * @param {string} [options.projection] - The projection type of the texture, used when the
     * texture represents an environment. Can be:
     *
@@ -67,7 +68,7 @@ open class Texture protected () extends StObject {
     * - {@link TEXTUREPROJECTION_EQUIRECT}
     * - {@link TEXTUREPROJECTION_OCTAHEDRAL}
     *
-    * Defaults to {@link TEXTUREPROJECTION_CUBE} if options.cubemap is specified, otherwise
+    * Defaults to {@link TEXTUREPROJECTION_CUBE} if options.cubemap is true, otherwise
     * {@link TEXTUREPROJECTION_NONE}.
     * @param {number} [options.minFilter] - The minification filter type to use. Defaults to
     * {@link FILTER_LINEAR_MIPMAP_LINEAR}.
@@ -87,7 +88,15 @@ open class Texture protected () extends StObject {
     * Defaults to false.
     * @param {boolean} [options.volume] - Specifies whether the texture is to be a 3D volume
     * (WebGL2 only). Defaults to false.
-    * @param {string} [options.type] - Specifies the image type, see {@link TEXTURETYPE_DEFAULT}.
+    * @param {string} [options.type] - Specifies the texture type.  Can be:
+    *
+    * - {@link TEXTURETYPE_DEFAULT}
+    * - {@link TEXTURETYPE_RGBM}
+    * - {@link TEXTURETYPE_RGBE}
+    * - {@link TEXTURETYPE_RGBP}
+    * - {@link TEXTURETYPE_SWIZZLEGGGR}
+    *
+    * Defaults to {@link TEXTURETYPE_DEFAULT}.
     * @param {boolean} [options.fixCubemapSeams] - Specifies whether this cubemap texture requires
     * special seam fixing shader code to look right. Defaults to false.
     * @param {boolean} [options.flipY] - Specifies whether the texture should be flipped in the
@@ -114,17 +123,17 @@ open class Texture protected () extends StObject {
     * @param {Uint8Array[]} [options.levels] - Array of Uint8Array.
     * @example
     * // Create a 8x8x24-bit texture
-    * var texture = new pc.Texture(graphicsDevice, {
+    * const texture = new pc.Texture(graphicsDevice, {
     *     width: 8,
     *     height: 8,
-    *     format: pc.PIXELFORMAT_R8_G8_B8
+    *     format: pc.PIXELFORMAT_RGB8
     * });
     *
     * // Fill the texture with a gradient
-    * var pixels = texture.lock();
-    * var count = 0;
-    * for (var i = 0; i < 8; i++) {
-    *     for (var j = 0; j < 8; j++) {
+    * const pixels = texture.lock();
+    * const count = 0;
+    * for (let i = 0; i < 8; i++) {
+    *     for (let j = 0; j < 8; j++) {
     *         pixels[count++] = i * 32;
     *         pixels[count++] = j * 32;
     *         pixels[count++] = 255;
@@ -143,7 +152,7 @@ open class Texture protected () extends StObject {
   
   var _anisotropy: Double = js.native
   
-  var _compareFunc: Any = js.native
+  var _compareFunc: Double = js.native
   
   var _compareOnRead: Boolean = js.native
   
@@ -157,19 +166,23 @@ open class Texture protected () extends StObject {
   
   var _format: Double = js.native
   
-  var _gpuSize: Double = js.native
+  /** @protected */
+  /* protected */ var _gpuSize: Double = js.native
   
   var _height: Double = js.native
   
-  var _invalid: Boolean = js.native
+  /** @protected */
+  /* protected */ var _invalid: Boolean = js.native
   
-  var _isRenderTarget: Boolean = js.native
+  /** @protected */
+  /* protected */ var _isRenderTarget: Boolean = js.native
   
   var _levels: js.Array[js.Array[Any] | js.typedarray.Uint8Array] = js.native
   
   var _levelsUpdated: js.Array[js.Array[Boolean] | Boolean] = js.native
   
-  var _lockedLevel: Double = js.native
+  /** @protected */
+  /* protected */ var _lockedLevel: Double = js.native
   
   var _magFilter: Double = js.native
   
@@ -243,17 +256,7 @@ open class Texture protected () extends StObject {
     */
   def anisotropy_=(arg: Double): Unit = js.native
   
-  def autoMipmap: Any = js.native
-  /**
-    * Toggles automatic mipmap generation. Can't be used on non power of two textures.
-    *
-    * @type {boolean}
-    * @ignore
-    * @deprecated
-    */
-  def autoMipmap_=(arg: Any): Unit = js.native
-  
-  def compareFunc: Any = js.native
+  def compareFunc: Double = js.native
   /**
     * Comparison function when compareOnRead is enabled (WebGL2 only). Possible values:
     *
@@ -266,7 +269,7 @@ open class Texture protected () extends StObject {
     *
     * @type {number}
     */
-  def compareFunc_=(arg: Any): Unit = js.native
+  def compareFunc_=(arg: Double): Unit = js.native
   
   def compareOnRead: Boolean = js.native
   /**
@@ -320,12 +323,12 @@ open class Texture protected () extends StObject {
     *
     * - {@link PIXELFORMAT_A8}
     * - {@link PIXELFORMAT_L8}
-    * - {@link PIXELFORMAT_L8_A8}
-    * - {@link PIXELFORMAT_R5_G6_B5}
-    * - {@link PIXELFORMAT_R5_G5_B5_A1}
-    * - {@link PIXELFORMAT_R4_G4_B4_A4}
-    * - {@link PIXELFORMAT_R8_G8_B8}
-    * - {@link PIXELFORMAT_R8_G8_B8_A8}
+    * - {@link PIXELFORMAT_LA8}
+    * - {@link PIXELFORMAT_RGB565}
+    * - {@link PIXELFORMAT_RGBA5551}
+    * - {@link PIXELFORMAT_RGBA4}
+    * - {@link PIXELFORMAT_RGB8}
+    * - {@link PIXELFORMAT_RGBA8}
     * - {@link PIXELFORMAT_DXT1}
     * - {@link PIXELFORMAT_DXT3}
     * - {@link PIXELFORMAT_DXT5}
@@ -378,7 +381,8 @@ open class Texture protected () extends StObject {
     */
   def height: Double = js.native
   
-  var id: Double = js.native
+  /** @protected */
+  /* protected */ var id: Double = js.native
   
   var impl: Any = js.native
   
@@ -442,7 +446,7 @@ open class Texture protected () extends StObject {
   def mipmaps_=(arg: Any): Unit = js.native
   
   /**
-    * The name of the texture. Defaults to null.
+    * The name of the texture.
     *
     * @type {string}
     */
@@ -461,6 +465,14 @@ open class Texture protected () extends StObject {
   var profilerHint: Any = js.native
   
   var projection: String = js.native
+  
+  /**
+    * Returns number of required mip levels for the texture based on its dimensions and parameters.
+    *
+    * @ignore
+    * @type {number}
+    */
+  def requiredMipLevels: Double = js.native
   
   def setSource(source: js.Array[HTMLCanvasElement | HTMLImageElement | HTMLVideoElement]): Unit = js.native
   def setSource(source: js.Array[HTMLCanvasElement | HTMLImageElement | HTMLVideoElement], mipLevel: Double): Unit = js.native

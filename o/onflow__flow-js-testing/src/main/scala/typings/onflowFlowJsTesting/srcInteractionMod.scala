@@ -40,7 +40,7 @@ object srcInteractionMod {
     }
   }
   
-  type ScriptResponse = js.Tuple2[Any, js.Error | Null]
+  type ScriptResponse = js.Tuple2[Any, String | js.Error | Null]
   
   trait TransactionEvent extends StObject {
     
@@ -95,7 +95,7 @@ object srcInteractionMod {
     }
   }
   
-  type TransactionResponse = js.Tuple2[TransactionStatus | Null, js.Error | Null]
+  type TransactionResponse = js.Tuple2[TransactionStatus | Null, String | js.Error | Null]
   
   trait TransactionStatus extends StObject {
     

@@ -118,6 +118,10 @@ object webgpuTypesStrings {
   inline def GPUOutOfMemoryError: GPUOutOfMemoryError = "GPUOutOfMemoryError".asInstanceOf[GPUOutOfMemoryError]
   
   @js.native
+  sealed trait GPUPipelineError extends StObject
+  inline def GPUPipelineError: GPUPipelineError = "GPUPipelineError".asInstanceOf[GPUPipelineError]
+  
+  @js.native
   sealed trait GPUPipelineLayout extends StObject
   inline def GPUPipelineLayout: GPUPipelineLayout = "GPUPipelineLayout".asInstanceOf[GPUPipelineLayout]
   
@@ -462,13 +466,6 @@ object webgpuTypesStrings {
   inline def `bc7-rgba-unorm-srgb`: `bc7-rgba-unorm-srgb` = "bc7-rgba-unorm-srgb".asInstanceOf[`bc7-rgba-unorm-srgb`]
   
   @js.native
-  sealed trait beginning
-    extends StObject
-       with GPUComputePassTimestampLocation
-       with GPURenderPassTimestampLocation
-  inline def beginning: beginning = "beginning".asInstanceOf[beginning]
-  
-  @js.native
   sealed trait bgra8unorm
     extends StObject
        with GPUTextureFormat
@@ -596,7 +593,9 @@ object webgpuTypesStrings {
   inline def `depth32float-stencil8`: `depth32float-stencil8` = "depth32float-stencil8".asInstanceOf[`depth32float-stencil8`]
   
   @js.native
-  sealed trait destroyed extends StObject
+  sealed trait destroyed
+    extends StObject
+       with GPUDeviceLostReason
   inline def destroyed: destroyed = "destroyed".asInstanceOf[destroyed]
   
   @js.native
@@ -640,13 +639,6 @@ object webgpuTypesStrings {
     extends StObject
        with GPUTextureFormat
   inline def `eac-rg11unorm`: `eac-rg11unorm` = "eac-rg11unorm".asInstanceOf[`eac-rg11unorm`]
-  
-  @js.native
-  sealed trait end
-    extends StObject
-       with GPUComputePassTimestampLocation
-       with GPURenderPassTimestampLocation
-  inline def end: end = "end".asInstanceOf[end]
   
   @js.native
   sealed trait equal
@@ -727,6 +719,12 @@ object webgpuTypesStrings {
   inline def float32: float32 = "float32".asInstanceOf[float32]
   
   @js.native
+  sealed trait `float32-filterable`
+    extends StObject
+       with GPUFeatureName
+  inline def `float32-filterable`: `float32-filterable` = "float32-filterable".asInstanceOf[`float32-filterable`]
+  
+  @js.native
   sealed trait float32x2
     extends StObject
        with GPUVertexFormat
@@ -802,6 +800,7 @@ object webgpuTypesStrings {
   sealed trait internal
     extends StObject
        with GPUErrorFilter
+       with GPUPipelineErrorReason
   inline def internal: internal = "internal".asInstanceOf[internal]
   
   @js.native
@@ -1468,6 +1467,12 @@ object webgpuTypesStrings {
   inline def uniform: uniform = "uniform".asInstanceOf[uniform]
   
   @js.native
+  sealed trait unknown
+    extends StObject
+       with GPUDeviceLostReason
+  inline def unknown: unknown = "unknown".asInstanceOf[unknown]
+  
+  @js.native
   sealed trait unmapped
     extends StObject
        with GPUBufferMapState
@@ -1501,6 +1506,7 @@ object webgpuTypesStrings {
   sealed trait validation
     extends StObject
        with GPUErrorFilter
+       with GPUPipelineErrorReason
   inline def validation: validation = "validation".asInstanceOf[validation]
   
   @js.native

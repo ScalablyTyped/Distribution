@@ -1,7 +1,6 @@
 package typings.lib0
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.lib0.lib0Booleans.`true`
 import typings.lib0.prngMod.PRNG
 import typings.std.HTMLCanvasElement
 import typings.std.Node
@@ -53,8 +52,8 @@ object testingMod {
     var testName: String = js.native
   }
   
-  inline def assert(condition: Boolean): `true` = ^.asInstanceOf[js.Dynamic].applyDynamic("assert")(condition.asInstanceOf[js.Any]).asInstanceOf[`true`]
-  inline def assert(condition: Boolean, message: String): `true` = (^.asInstanceOf[js.Dynamic].applyDynamic("assert")(condition.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[`true`]
+  inline def assert[T](property: T): /* asserts property is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentLibrarySimple(std), TsIdentSimple(NonNullable))),IArray(TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(T))),IArray())))*/ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("assert")(property.asInstanceOf[js.Any]).asInstanceOf[/* asserts property is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentLibrarySimple(std), TsIdentSimple(NonNullable))),IArray(TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(T))),IArray())))*/ Boolean]
+  inline def assert[T](property: T, message: String): /* asserts property is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentLibrarySimple(std), TsIdentSimple(NonNullable))),IArray(TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(T))),IArray())))*/ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("assert")(property.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[/* asserts property is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentLibrarySimple(std), TsIdentSimple(NonNullable))),IArray(TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(T))),IArray())))*/ Boolean]
   
   inline def compare[T](a: T, b: T): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   inline def compare[T](a: T, b: T, message: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Boolean]
@@ -101,6 +100,8 @@ object testingMod {
   
   inline def fails(f: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fails")(f.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
+  inline def failsAsync(f: js.Function0[js.Promise[Any]]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("failsAsync")(f.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  
   inline def group(description: String, f: js.Function1[/* arg0 */ Unit, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("group")(description.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def groupAsync(description: String, f: js.Function1[/* arg0 */ Unit, js.Promise[Any]]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("groupAsync")(description.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
@@ -113,11 +114,13 @@ object testingMod {
   
   inline def printCanvas(canvas: HTMLCanvasElement, height: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("printCanvas")(canvas.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def printDom(createNode: js.Function0[Node]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("printDom")(createNode.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def printDom(_createNode: js.Function0[Node]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("printDom")(_createNode.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("lib0/testing", "production")
   @js.native
   val production: Boolean = js.native
+  
+  inline def promiseRejected(f: js.Function0[js.Promise[Any]]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("promiseRejected")(f.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
   @JSImport("lib0/testing", "repetitionTime")
   @js.native

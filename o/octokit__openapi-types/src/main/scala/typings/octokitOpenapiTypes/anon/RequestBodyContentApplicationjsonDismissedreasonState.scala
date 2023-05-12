@@ -10,14 +10,14 @@ trait RequestBodyContentApplicationjsonDismissedreasonState extends StObject {
   
   var requestBody: ContentApplicationjsonDismissedreasonState
   
-  var responses: `200304400`
+  var responses: `503ContentApplicationjsonCodeDocumentationurlMessage`
 }
 object RequestBodyContentApplicationjsonDismissedreasonState {
   
   inline def apply(
     parameters: PathAlertnumberOwnerRepo,
     requestBody: ContentApplicationjsonDismissedreasonState,
-    responses: `200304400`
+    responses: `503ContentApplicationjsonCodeDocumentationurlMessage`
   ): RequestBodyContentApplicationjsonDismissedreasonState = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], requestBody = requestBody.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestBodyContentApplicationjsonDismissedreasonState]
@@ -30,6 +30,6 @@ object RequestBodyContentApplicationjsonDismissedreasonState {
     
     inline def setRequestBody(value: ContentApplicationjsonDismissedreasonState): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `200304400`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `503ContentApplicationjsonCodeDocumentationurlMessage`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

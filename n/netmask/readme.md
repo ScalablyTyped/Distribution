@@ -1,7 +1,7 @@
 
 # Scala.js typings for netmask
 
-Typings are for version 1.0.5
+Typings are for version 2.0
 
 ## Library description:
 Parse and lookup IP network blocks

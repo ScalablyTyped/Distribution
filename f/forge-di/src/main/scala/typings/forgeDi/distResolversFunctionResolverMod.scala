@@ -11,7 +11,7 @@ object distResolversFunctionResolverMod {
   open class default protected () extends FunctionResolver {
     def this(
       forge: typings.forgeDi.distForgeMod.default,
-      binding: typings.forgeDi.distFrameworkBindingMod.default,
+      binding: typings.forgeDi.distFrameworkBindingMod.default[Any],
       func: js.Function
     ) = this()
   }

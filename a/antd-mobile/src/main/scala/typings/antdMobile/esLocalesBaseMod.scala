@@ -11,6 +11,7 @@ import typings.antdMobile.anon.MarkItems
 import typings.antdMobile.anon.Name
 import typings.antdMobile.anon.Ok
 import typings.antdMobile.anon.Placeholder
+import typings.antdMobile.anon.TillNow
 import typings.antdMobile.anon.Upload
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -33,6 +34,11 @@ object esLocalesBaseMod {
     @js.native
     def Cascader: Placeholder = js.native
     inline def Cascader_=(x: Placeholder): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Cascader")(x.asInstanceOf[js.Any])
+    
+    @JSImport("antd-mobile/es/locales/base", "base.DatePicker")
+    @js.native
+    def DatePicker: TillNow = js.native
+    inline def DatePicker_=(x: TillNow): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DatePicker")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile/es/locales/base", "base.Dialog")
     @js.native
@@ -89,6 +95,11 @@ object esLocalesBaseMod {
     def SearchBar: Name = js.native
     inline def SearchBar_=(x: Name): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SearchBar")(x.asInstanceOf[js.Any])
     
+    @JSImport("antd-mobile/es/locales/base", "base.Selector")
+    @js.native
+    def Selector: Name = js.native
+    inline def Selector_=(x: Name): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Selector")(x.asInstanceOf[js.Any])
+    
     @JSImport("antd-mobile/es/locales/base", "base.Slider")
     @js.native
     def Slider: Name = js.native
@@ -121,6 +132,8 @@ object esLocalesBaseMod {
     
     var Cascader: Placeholder
     
+    var DatePicker: TillNow
+    
     var Dialog: Ok
     
     var ErrorBlock: Busy
@@ -143,6 +156,8 @@ object esLocalesBaseMod {
     
     var SearchBar: Name
     
+    var Selector: Name
+    
     var Slider: Name
     
     var Stepper: Decrease
@@ -158,6 +173,7 @@ object esLocalesBaseMod {
     inline def apply(
       Calendar: MarkItems,
       Cascader: Placeholder,
+      DatePicker: TillNow,
       Dialog: Ok,
       ErrorBlock: Busy,
       Form: DefaultValidateMessages,
@@ -169,13 +185,14 @@ object esLocalesBaseMod {
       PasscodeInput: Name,
       PullToRefresh: CanRelease,
       SearchBar: Name,
+      Selector: Name,
       Slider: Name,
       Stepper: Decrease,
       Switch: Name,
       common: Cancel,
       locale: String
     ): Locale = {
-      val __obj = js.Dynamic.literal(Calendar = Calendar.asInstanceOf[js.Any], Cascader = Cascader.asInstanceOf[js.Any], Dialog = Dialog.asInstanceOf[js.Any], ErrorBlock = ErrorBlock.asInstanceOf[js.Any], Form = Form.asInstanceOf[js.Any], ImageUploader = ImageUploader.asInstanceOf[js.Any], InfiniteScroll = InfiniteScroll.asInstanceOf[js.Any], Input = Input.asInstanceOf[js.Any], Mask = Mask.asInstanceOf[js.Any], Modal = Modal.asInstanceOf[js.Any], PasscodeInput = PasscodeInput.asInstanceOf[js.Any], PullToRefresh = PullToRefresh.asInstanceOf[js.Any], SearchBar = SearchBar.asInstanceOf[js.Any], Slider = Slider.asInstanceOf[js.Any], Stepper = Stepper.asInstanceOf[js.Any], Switch = Switch.asInstanceOf[js.Any], common = common.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(Calendar = Calendar.asInstanceOf[js.Any], Cascader = Cascader.asInstanceOf[js.Any], DatePicker = DatePicker.asInstanceOf[js.Any], Dialog = Dialog.asInstanceOf[js.Any], ErrorBlock = ErrorBlock.asInstanceOf[js.Any], Form = Form.asInstanceOf[js.Any], ImageUploader = ImageUploader.asInstanceOf[js.Any], InfiniteScroll = InfiniteScroll.asInstanceOf[js.Any], Input = Input.asInstanceOf[js.Any], Mask = Mask.asInstanceOf[js.Any], Modal = Modal.asInstanceOf[js.Any], PasscodeInput = PasscodeInput.asInstanceOf[js.Any], PullToRefresh = PullToRefresh.asInstanceOf[js.Any], SearchBar = SearchBar.asInstanceOf[js.Any], Selector = Selector.asInstanceOf[js.Any], Slider = Slider.asInstanceOf[js.Any], Stepper = Stepper.asInstanceOf[js.Any], Switch = Switch.asInstanceOf[js.Any], common = common.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any])
       __obj.asInstanceOf[Locale]
     }
     
@@ -187,6 +204,8 @@ object esLocalesBaseMod {
       inline def setCascader(value: Placeholder): Self = StObject.set(x, "Cascader", value.asInstanceOf[js.Any])
       
       inline def setCommon(value: Cancel): Self = StObject.set(x, "common", value.asInstanceOf[js.Any])
+      
+      inline def setDatePicker(value: TillNow): Self = StObject.set(x, "DatePicker", value.asInstanceOf[js.Any])
       
       inline def setDialog(value: Ok): Self = StObject.set(x, "Dialog", value.asInstanceOf[js.Any])
       
@@ -211,6 +230,8 @@ object esLocalesBaseMod {
       inline def setPullToRefresh(value: CanRelease): Self = StObject.set(x, "PullToRefresh", value.asInstanceOf[js.Any])
       
       inline def setSearchBar(value: Name): Self = StObject.set(x, "SearchBar", value.asInstanceOf[js.Any])
+      
+      inline def setSelector(value: Name): Self = StObject.set(x, "Selector", value.asInstanceOf[js.Any])
       
       inline def setSlider(value: Name): Self = StObject.set(x, "Slider", value.asInstanceOf[js.Any])
       

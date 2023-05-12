@@ -54,7 +54,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[UsageOptions]
     }
     
-    extension [Self <: UsageOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UsageOptions] (val x: Self) extends AnyVal {
       
       inline def setGulpfile(value: String): Self = StObject.set(x, "gulpfile", value.asInstanceOf[js.Any])
       

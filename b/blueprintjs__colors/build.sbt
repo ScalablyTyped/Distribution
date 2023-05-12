@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "blueprintjs__colors"
-version := "4.1.9-c144ca"
+version := "4.1.22-0678ba"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

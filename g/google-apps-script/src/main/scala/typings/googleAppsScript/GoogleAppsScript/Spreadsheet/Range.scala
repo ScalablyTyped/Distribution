@@ -293,6 +293,11 @@ trait Range extends StObject {
   def setFontColor(): Range = js.native
   def setFontColor(color: String): Range = js.native
   
+  def setFontColorObject(): Range = js.native
+  def setFontColorObject(color: Color): Range = js.native
+  
+  def setFontColorObjects(colors: js.Array[js.Array[Color | Null]]): Range = js.native
+  
   def setFontColors(colors: js.Array[js.Array[Any]]): Range = js.native
   
   def setFontFamilies(fontFamilies: js.Array[js.Array[String | Null]]): Range = js.native

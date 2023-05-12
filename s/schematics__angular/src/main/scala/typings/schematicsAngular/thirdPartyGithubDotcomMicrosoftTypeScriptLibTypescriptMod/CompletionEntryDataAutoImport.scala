@@ -10,6 +10,8 @@ trait CompletionEntryDataAutoImport extends StObject {
   /** The module name (with quotes stripped) of the export's module symbol, if it was an ambient module */
   var ambientModuleName: js.UndefOr[java.lang.String] = js.undefined
   
+  var exportMapKey: js.UndefOr[java.lang.String] = js.undefined
+  
   /**
     * The name of the property or export in the module's symbol table. Differs from the completion name
     * in the case of InternalSymbolName.ExportEquals and InternalSymbolName.Default.
@@ -37,6 +39,10 @@ object CompletionEntryDataAutoImport {
     inline def setAmbientModuleName(value: java.lang.String): Self = StObject.set(x, "ambientModuleName", value.asInstanceOf[js.Any])
     
     inline def setAmbientModuleNameUndefined: Self = StObject.set(x, "ambientModuleName", js.undefined)
+    
+    inline def setExportMapKey(value: java.lang.String): Self = StObject.set(x, "exportMapKey", value.asInstanceOf[js.Any])
+    
+    inline def setExportMapKeyUndefined: Self = StObject.set(x, "exportMapKey", js.undefined)
     
     inline def setExportName(value: java.lang.String): Self = StObject.set(x, "exportName", value.asInstanceOf[js.Any])
     

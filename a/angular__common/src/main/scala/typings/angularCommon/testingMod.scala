@@ -5,6 +5,7 @@ import typings.angularCommon.mod.Location
 import typings.angularCommon.mod.LocationStrategy
 import typings.angularCommon.mod.PlatformLocation
 import typings.angularCore.mod.InjectionToken
+import typings.angularCore.mod.Provider
 import typings.angularCore.mod.ɵɵFactoryDeclaration
 import typings.angularCore.mod.ɵɵInjectableDeclaration
 import org.scalablytyped.runtime.StObject
@@ -12,6 +13,10 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object testingMod {
+  
+  @JSImport("@angular/common/testing", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@angular/common/testing", "MOCK_PLATFORM_LOCATION_CONFIG")
   @js.native
@@ -58,6 +63,18 @@ object testingMod {
     
     /* private */ var baseHref: Any = js.native
     
+    /**
+      * Browsers are inconsistent in when they fire events and perform the state updates
+      * The most easiest thing to do in our mock is synchronous and that happens to match
+      * Firefox and Chrome, at least somewhat closely
+      *
+      * https://github.com/WICG/navigation-api#watching-for-navigations
+      * https://docs.google.com/document/d/1Pdve-DJ1JCGilj9Yqf5HxRJyBKSel5owgOvUJqTauwU/edit#heading=h.3ye4v71wsz94
+      * popstate is always sent before hashchange:
+      * https://developer.mozilla.org/en-US/docs/Web/API/Window/popstate_event#when_popstate_is_sent
+      */
+    /* private */ var emitEvents: Any = js.native
+    
     /* private */ var hashUpdate: Any = js.native
     
     @JSName("historyGo")
@@ -67,7 +84,7 @@ object testingMod {
     
     /* private */ var parseChanges: Any = js.native
     
-    /* private */ var scheduleHashUpdate: Any = js.native
+    /* private */ var popStateSubject: Any = js.native
     
     def state: Any = js.native
     
@@ -133,6 +150,8 @@ object testingMod {
     def ɵprov: ɵɵInjectableDeclaration[SpyLocation] = js.native
     inline def ɵprov_=(x: ɵɵInjectableDeclaration[SpyLocation]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275prov")(x.asInstanceOf[js.Any])
   }
+  
+  inline def provideLocationMocks(): js.Array[Provider] = ^.asInstanceOf[js.Dynamic].applyDynamic("provideLocationMocks")().asInstanceOf[js.Array[Provider]]
   
   trait MockPlatformLocationConfig extends StObject {
     

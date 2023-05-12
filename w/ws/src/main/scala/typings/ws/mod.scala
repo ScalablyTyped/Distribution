@@ -19,6 +19,7 @@ import typings.node.tlsMod.SecureContextOptions
 import typings.node.urlMod.URL_
 import typings.node.zlibMod.ZlibOptions
 import typings.std.Set
+import typings.std.SharedArrayBuffer
 import typings.ws.anon.Binary
 import typings.ws.anon.ChunkSize
 import typings.ws.anon.Origin
@@ -421,10 +422,11 @@ object mod extends Shortcut {
       */
     def resume(): Unit = js.native
     
-    def send(data: Any): Unit = js.native
-    def send(data: Any, cb: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Unit = js.native
-    def send(data: Any, options: Binary): Unit = js.native
-    def send(data: Any, options: Binary, cb: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Unit = js.native
+    // https://github.com/websockets/ws/issues/2076#issuecomment-1250354722
+    def send(data: BufferLike): Unit = js.native
+    def send(data: BufferLike, cb: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Unit = js.native
+    def send(data: BufferLike, options: Binary): Unit = js.native
+    def send(data: BufferLike, options: Binary, cb: js.Function1[/* err */ js.UndefOr[js.Error], Unit]): Unit = js.native
     
     def terminate(): Unit = js.native
   }
@@ -481,6 +483,27 @@ object mod extends Shortcut {
       inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     }
   }
+  
+  // can not get all overload of BufferConstructor['from'], need to copy all it's first arguments here
+  // https://github.com/microsoft/TypeScript/issues/32164
+  /* Rewritten from type alias, can be one of: 
+    - java.lang.String
+    - typings.node.bufferMod.global.Buffer
+    - js.typedarray.DataView
+    - scala.Double
+    - js.typedarray.ArrayBufferView
+    - js.typedarray.Uint8Array
+    - js.typedarray.ArrayBuffer
+    - typings.std.SharedArrayBuffer
+    - js.Array[scala.Any | scala.Double]
+    - typings.ws.anon.ValueOf
+    - typings.ws.anon.`0`
+    - typings.ws.anon.`1`
+    - typings.ws.anon.`2`
+    - typings.ws.anon.`3`
+    - typings.ws.anon.ToPrimitive
+  */
+  type BufferLike = _BufferLike | (js.Array[Any | Double]) | String | Buffer | js.typedarray.DataView | Double | js.typedarray.ArrayBufferView | js.typedarray.Uint8Array | js.typedarray.ArrayBuffer | SharedArrayBuffer
   
   /**
     * CertMeta represents the accepted types for certificate & key data.
@@ -974,6 +997,8 @@ object mod extends Shortcut {
   type VerifyClientCallbackSync = js.Function1[/* info */ Origin, Boolean]
   
   type WebSocketAlias = typings.std.WebSocket
+  
+  trait _BufferLike extends StObject
   
   type _To = /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof WebSocketAlias */ Any
   

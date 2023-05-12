@@ -6,7 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait FilePathIsSource extends StObject {
   
-  var attributes: Deprecated
+  var attributes: Description
+  
+  var cleanName: String
   
   var filePath: String
   
@@ -14,31 +16,34 @@ trait FilePathIsSource extends StObject {
   
   var name: String
   
-  var original: ValueArray
+  var original: AttributesDescriptionValueArray
   
   var path: js.Array[String]
   
-  var value: js.Array[Color | Inset]
+  var value: js.Array[Offset]
 }
 object FilePathIsSource {
   
   inline def apply(
-    attributes: Deprecated,
+    attributes: Description,
+    cleanName: String,
     filePath: String,
     isSource: Boolean,
     name: String,
-    original: ValueArray,
+    original: AttributesDescriptionValueArray,
     path: js.Array[String],
-    value: js.Array[Color | Inset]
+    value: js.Array[Offset]
   ): FilePathIsSource = {
-    val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], filePath = filePath.asInstanceOf[js.Any], isSource = isSource.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], original = original.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], cleanName = cleanName.asInstanceOf[js.Any], filePath = filePath.asInstanceOf[js.Any], isSource = isSource.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], original = original.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilePathIsSource]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: FilePathIsSource] (val x: Self) extends AnyVal {
     
-    inline def setAttributes(value: Deprecated): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: Description): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    
+    inline def setCleanName(value: String): Self = StObject.set(x, "cleanName", value.asInstanceOf[js.Any])
     
     inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
     
@@ -46,14 +51,14 @@ object FilePathIsSource {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setOriginal(value: ValueArray): Self = StObject.set(x, "original", value.asInstanceOf[js.Any])
+    inline def setOriginal(value: AttributesDescriptionValueArray): Self = StObject.set(x, "original", value.asInstanceOf[js.Any])
     
     inline def setPath(value: js.Array[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     inline def setPathVarargs(value: String*): Self = StObject.set(x, "path", js.Array(value*))
     
-    inline def setValue(value: js.Array[Color | Inset]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Array[Offset]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    inline def setValueVarargs(value: (Color | Inset)*): Self = StObject.set(x, "value", js.Array(value*))
+    inline def setValueVarargs(value: Offset*): Self = StObject.set(x, "value", js.Array(value*))
   }
 }

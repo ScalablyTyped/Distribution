@@ -1,13 +1,12 @@
 package typings.angularCompilerCli
 
 import typings.angularCompiler.mod.SchemaMetadata
+import typings.angularCompilerCli.anon.ClassDeclarationDeclarati
 import typings.angularCompilerCli.srcNgtscImportsMod.Reference
 import typings.angularCompilerCli.srcNgtscImportsSrcReexportMod.Reexport
 import typings.angularCompilerCli.srcNgtscMetadataSrcApiMod.DirectiveMeta
 import typings.angularCompilerCli.srcNgtscMetadataSrcApiMod.NgModuleMeta
 import typings.angularCompilerCli.srcNgtscMetadataSrcApiMod.PipeMeta
-import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.ClassDeclaration
-import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.DeclarationNode
 import typings.angularCompilerCli.srcNgtscScopeSrcApiMod.ComponentScopeKind.NgModule
 import typings.angularCompilerCli.srcNgtscScopeSrcApiMod.ComponentScopeKind.Standalone
 import typings.typescript.mod.Node
@@ -50,7 +49,7 @@ object srcNgtscScopeSrcApiMod {
       compilation: ScopeData,
       exported: ScopeData,
       kind: NgModule,
-      ngModule: ClassDeclaration[DeclarationNode],
+      ngModule: ClassDeclarationDeclarati,
       schemas: js.Array[SchemaMetadata]
     ): typings.angularCompilerCli.srcNgtscScopeSrcApiMod.LocalModuleScope = {
       val __obj = js.Dynamic.literal(compilation = compilation.asInstanceOf[js.Any], exported = exported.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], ngModule = ngModule.asInstanceOf[js.Any], schemas = schemas.asInstanceOf[js.Any], reexports = null)
@@ -58,7 +57,7 @@ object srcNgtscScopeSrcApiMod {
     }
     
     inline def StandaloneScope(
-      component: ClassDeclaration[DeclarationNode],
+      component: ClassDeclarationDeclarati,
       dependencies: js.Array[DirectiveMeta | PipeMeta | NgModuleMeta],
       isPoisoned: Boolean,
       kind: Standalone,
@@ -77,15 +76,15 @@ object srcNgtscScopeSrcApiMod {
       * If the component requires remote scoping, then retrieve the directives/pipes registered for
       * that component. If remote scoping is not required (the common case), returns `null`.
       */
-    def getRemoteScope(clazz: ClassDeclaration[DeclarationNode]): RemoteScope | Null
+    def getRemoteScope(clazz: ClassDeclarationDeclarati): RemoteScope | Null
     
-    def getScopeForComponent(clazz: ClassDeclaration[DeclarationNode]): ComponentScope | Null
+    def getScopeForComponent(clazz: ClassDeclarationDeclarati): ComponentScope | Null
   }
   object ComponentScopeReader {
     
     inline def apply(
-      getRemoteScope: ClassDeclaration[DeclarationNode] => RemoteScope | Null,
-      getScopeForComponent: ClassDeclaration[DeclarationNode] => ComponentScope | Null
+      getRemoteScope: ClassDeclarationDeclarati => RemoteScope | Null,
+      getScopeForComponent: ClassDeclarationDeclarati => ComponentScope | Null
     ): ComponentScopeReader = {
       val __obj = js.Dynamic.literal(getRemoteScope = js.Any.fromFunction1(getRemoteScope), getScopeForComponent = js.Any.fromFunction1(getScopeForComponent))
       __obj.asInstanceOf[ComponentScopeReader]
@@ -94,9 +93,9 @@ object srcNgtscScopeSrcApiMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: ComponentScopeReader] (val x: Self) extends AnyVal {
       
-      inline def setGetRemoteScope(value: ClassDeclaration[DeclarationNode] => RemoteScope | Null): Self = StObject.set(x, "getRemoteScope", js.Any.fromFunction1(value))
+      inline def setGetRemoteScope(value: ClassDeclarationDeclarati => RemoteScope | Null): Self = StObject.set(x, "getRemoteScope", js.Any.fromFunction1(value))
       
-      inline def setGetScopeForComponent(value: ClassDeclaration[DeclarationNode] => ComponentScope | Null): Self = StObject.set(x, "getScopeForComponent", js.Any.fromFunction1(value))
+      inline def setGetScopeForComponent(value: ClassDeclarationDeclarati => ComponentScope | Null): Self = StObject.set(x, "getScopeForComponent", js.Any.fromFunction1(value))
     }
   }
   
@@ -130,7 +129,7 @@ object srcNgtscScopeSrcApiMod {
     
     var kind: NgModule
     
-    var ngModule: ClassDeclaration[DeclarationNode]
+    var ngModule: ClassDeclarationDeclarati
     
     var reexports: js.Array[Reexport] | Null
     
@@ -142,7 +141,7 @@ object srcNgtscScopeSrcApiMod {
       compilation: ScopeData,
       exported: ScopeData,
       kind: NgModule,
-      ngModule: ClassDeclaration[DeclarationNode],
+      ngModule: ClassDeclarationDeclarati,
       schemas: js.Array[SchemaMetadata]
     ): LocalModuleScope = {
       val __obj = js.Dynamic.literal(compilation = compilation.asInstanceOf[js.Any], exported = exported.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], ngModule = ngModule.asInstanceOf[js.Any], schemas = schemas.asInstanceOf[js.Any], reexports = null)
@@ -156,7 +155,7 @@ object srcNgtscScopeSrcApiMod {
       
       inline def setKind(value: NgModule): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
-      inline def setNgModule(value: ClassDeclaration[DeclarationNode]): Self = StObject.set(x, "ngModule", value.asInstanceOf[js.Any])
+      inline def setNgModule(value: ClassDeclarationDeclarati): Self = StObject.set(x, "ngModule", value.asInstanceOf[js.Any])
       
       inline def setReexports(value: js.Array[Reexport]): Self = StObject.set(x, "reexports", value.asInstanceOf[js.Any])
       
@@ -234,7 +233,7 @@ object srcNgtscScopeSrcApiMod {
     extends StObject
        with ComponentScope {
     
-    var component: ClassDeclaration[DeclarationNode]
+    var component: ClassDeclarationDeclarati
     
     var dependencies: js.Array[DirectiveMeta | PipeMeta | NgModuleMeta]
     
@@ -247,7 +246,7 @@ object srcNgtscScopeSrcApiMod {
   object StandaloneScope {
     
     inline def apply(
-      component: ClassDeclaration[DeclarationNode],
+      component: ClassDeclarationDeclarati,
       dependencies: js.Array[DirectiveMeta | PipeMeta | NgModuleMeta],
       isPoisoned: Boolean,
       kind: Standalone,
@@ -260,7 +259,7 @@ object srcNgtscScopeSrcApiMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: StandaloneScope] (val x: Self) extends AnyVal {
       
-      inline def setComponent(value: ClassDeclaration[DeclarationNode]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: ClassDeclarationDeclarati): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
       inline def setDependencies(value: js.Array[DirectiveMeta | PipeMeta | NgModuleMeta]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
       

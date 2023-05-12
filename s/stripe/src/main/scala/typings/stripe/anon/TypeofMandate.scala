@@ -6,22 +6,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TypeofMandate extends StObject {
   
-  val CustomerAcceptance: Any
-  
-  val PaymentMethodDetails: TypeofPaymentMethodDetailAcssDebit
+  val Acceptance: Any
 }
 object TypeofMandate {
   
-  inline def apply(CustomerAcceptance: Any, PaymentMethodDetails: TypeofPaymentMethodDetailAcssDebit): TypeofMandate = {
-    val __obj = js.Dynamic.literal(CustomerAcceptance = CustomerAcceptance.asInstanceOf[js.Any], PaymentMethodDetails = PaymentMethodDetails.asInstanceOf[js.Any])
+  inline def apply(Acceptance: Any): TypeofMandate = {
+    val __obj = js.Dynamic.literal(Acceptance = Acceptance.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofMandate]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: TypeofMandate] (val x: Self) extends AnyVal {
     
-    inline def setCustomerAcceptance(value: Any): Self = StObject.set(x, "CustomerAcceptance", value.asInstanceOf[js.Any])
-    
-    inline def setPaymentMethodDetails(value: TypeofPaymentMethodDetailAcssDebit): Self = StObject.set(x, "PaymentMethodDetails", value.asInstanceOf[js.Any])
+    inline def setAcceptance(value: Any): Self = StObject.set(x, "Acceptance", value.asInstanceOf[js.Any])
   }
 }

@@ -25,11 +25,11 @@ object resourcesWorkersMod {
        with Worker
   
   /**
-    * @prop name - The worker’s complete name.
-    * @prop phone - A valid phone number as per the worker’s organization’s country.
-    * @prop teams - One or more team IDs of which the worker is a member.
-    * @prop vehicle - Optional. The worker’s vehicle; providing no vehicle details is equivalent to the worker being on foot.
-    * @prop capacity - Optional. The maximum number of units this worker can carry, for route optimization purposes.
+    * name - The worker’s complete name.
+    * phone - A valid phone number as per the worker’s organization’s country.
+    * teams - One or more team IDs of which the worker is a member.
+    * vehicle - Optional. The worker’s vehicle; providing no vehicle details is equivalent to the worker being on foot.
+    * capacity - Optional. The maximum number of units this worker can carry, for route optimization purposes.
     * @prop displayName - Optional. This value is used in place of the worker's actual name within sms notifications,
     * delivery tracking pages, and across organization boundaries (connections).
     */
@@ -43,13 +43,13 @@ object resourcesWorkersMod {
     
     var phone: String
     
-    var teams: String
+    var teams: String | js.Array[String]
     
     var vehicle: js.UndefOr[Vehicle] = js.undefined
   }
   object CreateWorkerProps {
     
-    inline def apply(name: String, phone: String, teams: String): CreateWorkerProps = {
+    inline def apply(name: String, phone: String, teams: String | js.Array[String]): CreateWorkerProps = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], phone = phone.asInstanceOf[js.Any], teams = teams.asInstanceOf[js.Any])
       __obj.asInstanceOf[CreateWorkerProps]
     }
@@ -69,7 +69,9 @@ object resourcesWorkersMod {
       
       inline def setPhone(value: String): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
       
-      inline def setTeams(value: String): Self = StObject.set(x, "teams", value.asInstanceOf[js.Any])
+      inline def setTeams(value: String | js.Array[String]): Self = StObject.set(x, "teams", value.asInstanceOf[js.Any])
+      
+      inline def setTeamsVarargs(value: String*): Self = StObject.set(x, "teams", js.Array(value*))
       
       inline def setVehicle(value: Vehicle): Self = StObject.set(x, "vehicle", value.asInstanceOf[js.Any])
       
@@ -99,11 +101,11 @@ object resourcesWorkersMod {
   }
   
   /**
-    * @prop filter - Optional. A comma-separated list of fields to return, if all are not desired. For example, name, location
-    * @prop phones - Optional. A comma-separated list of workers' phone numbers.
-    * @prop states - Optional. A comma-separated list of worker states, where 0 is off-duty,
+    * filter - Optional. A comma-separated list of fields to return, if all are not desired. For example, name, location
+    * phones - Optional. A comma-separated list of workers' phone numbers.
+    * states - Optional. A comma-separated list of worker states, where 0 is off-duty,
     * 1 is idle (on-duty, no active task) and 2 is active (on-duty, active task).
-    * @prop teams - Optional. A comma-separated list of the team IDs that workers must be part of.
+    * teams - Optional. A comma-separated list of the team IDs that workers must be part of.
     */
   trait GetWorkerQueryProps extends StObject {
     
@@ -278,7 +280,7 @@ object resourcesWorkersMod {
     
     var name: js.UndefOr[String] = js.undefined
     
-    var teams: js.UndefOr[String] = js.undefined
+    var teams: js.UndefOr[String | js.Array[String]] = js.undefined
     
     var vehicle: js.UndefOr[Vehicle] = js.undefined
   }
@@ -308,9 +310,11 @@ object resourcesWorkersMod {
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      inline def setTeams(value: String): Self = StObject.set(x, "teams", value.asInstanceOf[js.Any])
+      inline def setTeams(value: String | js.Array[String]): Self = StObject.set(x, "teams", value.asInstanceOf[js.Any])
       
       inline def setTeamsUndefined: Self = StObject.set(x, "teams", js.undefined)
+      
+      inline def setTeamsVarargs(value: String*): Self = StObject.set(x, "teams", js.Array(value*))
       
       inline def setVehicle(value: Vehicle): Self = StObject.set(x, "vehicle", value.asInstanceOf[js.Any])
       

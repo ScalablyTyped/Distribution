@@ -1,5 +1,9 @@
 package typings.vite.anon
 
+import typings.vite.viteInts.`0`
+import typings.vite.viteInts.`1`
+import typings.vite.viteInts.`2`
+import typings.vite.viteInts.`3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,33 +11,33 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TypeofWebSocket extends StObject {
   
   /* standard dom */
-  val CLOSED: Double
+  val CLOSED: `3`
   
   /* standard dom */
-  val CLOSING: Double
+  val CLOSING: `2`
   
   /* standard dom */
-  val CONNECTING: Double
+  val CONNECTING: `0`
   
   /* standard dom */
-  val OPEN: Double
+  val OPEN: `1`
 }
 object TypeofWebSocket {
   
-  inline def apply(CLOSED: Double, CLOSING: Double, CONNECTING: Double, OPEN: Double): TypeofWebSocket = {
-    val __obj = js.Dynamic.literal(CLOSED = CLOSED.asInstanceOf[js.Any], CLOSING = CLOSING.asInstanceOf[js.Any], CONNECTING = CONNECTING.asInstanceOf[js.Any], OPEN = OPEN.asInstanceOf[js.Any])
+  inline def apply(): TypeofWebSocket = {
+    val __obj = js.Dynamic.literal(CLOSED = 3, CLOSING = 2, CONNECTING = 0, OPEN = 1)
     __obj.asInstanceOf[TypeofWebSocket]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: TypeofWebSocket] (val x: Self) extends AnyVal {
     
-    inline def setCLOSED(value: Double): Self = StObject.set(x, "CLOSED", value.asInstanceOf[js.Any])
+    inline def setCLOSED(value: `3`): Self = StObject.set(x, "CLOSED", value.asInstanceOf[js.Any])
     
-    inline def setCLOSING(value: Double): Self = StObject.set(x, "CLOSING", value.asInstanceOf[js.Any])
+    inline def setCLOSING(value: `2`): Self = StObject.set(x, "CLOSING", value.asInstanceOf[js.Any])
     
-    inline def setCONNECTING(value: Double): Self = StObject.set(x, "CONNECTING", value.asInstanceOf[js.Any])
+    inline def setCONNECTING(value: `0`): Self = StObject.set(x, "CONNECTING", value.asInstanceOf[js.Any])
     
-    inline def setOPEN(value: Double): Self = StObject.set(x, "OPEN", value.asInstanceOf[js.Any])
+    inline def setOPEN(value: `1`): Self = StObject.set(x, "OPEN", value.asInstanceOf[js.Any])
   }
 }

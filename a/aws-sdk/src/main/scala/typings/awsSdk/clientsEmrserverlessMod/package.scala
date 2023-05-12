@@ -28,6 +28,13 @@ type ApplicationState = _ApplicationState | String
 
 type ApplicationStateSet = js.Array[ApplicationState]
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ARM64
+  - typings.awsSdk.awsSdkStrings.X86_64
+  - java.lang.String
+*/
+type Architecture = _Architecture | String
+
 type AutoStopConfigIdleTimeoutMinutesInteger = scala.Double
 
 type Boolean = scala.Boolean
@@ -59,6 +66,10 @@ type EntryPointPath = String
 type HiveCliParameters = String
 
 type IAMRoleArn = String
+
+type ImageDigest = String
+
+type ImageUri = String
 
 type InitScriptPath = String
 
@@ -134,6 +145,10 @@ type UriString = String
 type Url = String
 
 type WorkerCounts = scala.Double
+
+type WorkerTypeSpecificationInputMap = StringDictionary[WorkerTypeSpecificationInput]
+
+type WorkerTypeSpecificationMap = StringDictionary[WorkerTypeSpecification]
 
 type WorkerTypeString = String
 

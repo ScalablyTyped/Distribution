@@ -1,7 +1,7 @@
 package typings.inferno
 
 import typings.inferno.anon.ReadonlychildrenInfernoNo
-import typings.inferno.distCoreTypesMod.Inferno.InfernoNode
+import typings.inferno.distCoreTypesMod.InfernoNode
 import typings.inferno.distCoreTypesMod.RefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

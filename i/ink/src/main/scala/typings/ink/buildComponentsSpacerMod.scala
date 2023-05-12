@@ -1,23 +1,15 @@
 package typings.ink
 
-import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.FC
+import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object buildComponentsSpacerMod extends Shortcut {
+object buildComponentsSpacerMod {
   
-  /**
-    * A flexible space that expands along the major axis of its containing layout.
-    * It's useful as a shortcut for filling all the available spaces between elements.
-    */
-  @JSImport("ink/build/components/Spacer", JSImport.Default)
+  @JSImport("ink/build/components/Spacer", JSImport.Namespace)
   @js.native
-  val default: FC[js.Object] = js.native
+  val ^ : js.Any = js.native
   
-  type _To = FC[js.Object]
-  
-  /* This means you don't have to write `default`, but can instead just say `buildComponentsSpacerMod.foo` */
-  override def _to: FC[js.Object] = default
+  inline def default(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Element]
 }

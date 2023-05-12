@@ -23,7 +23,7 @@ object distCommandsProfileSEARCHMod {
   inline def transformArguments(index: String, query: String): RedisCommandArguments = (^.asInstanceOf[js.Dynamic].applyDynamic("transformArguments")(index.asInstanceOf[js.Any], query.asInstanceOf[js.Any])).asInstanceOf[RedisCommandArguments]
   inline def transformArguments(index: String, query: String, options: ProfileOptions & SearchOptions): RedisCommandArguments = (^.asInstanceOf[js.Dynamic].applyDynamic("transformArguments")(index.asInstanceOf[js.Any], query.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RedisCommandArguments]
   
-  inline def transformReply(reply: ProfileSearchRawReply): ProfileReply = ^.asInstanceOf[js.Dynamic].applyDynamic("transformReply")(reply.asInstanceOf[js.Any]).asInstanceOf[ProfileReply]
+  inline def transformReply(reply: ProfileSearchRawReply, withoutDocuments: Boolean): ProfileReply = (^.asInstanceOf[js.Dynamic].applyDynamic("transformReply")(reply.asInstanceOf[js.Any], withoutDocuments.asInstanceOf[js.Any])).asInstanceOf[ProfileReply]
   
   type ProfileSearchRawReply = ProfileRawReply[SearchRawReply]
 }

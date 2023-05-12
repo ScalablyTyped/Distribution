@@ -7,7 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CopyDBSnapshotMessage extends StObject {
   
   /**
-    * A value that indicates whether to copy all tags from the source DB snapshot to the target DB snapshot. By default, tags are not copied.
+    * A value that indicates whether to copy the DB option group associated with the source DB snapshot to the target Amazon Web Services account and associate with the target DB snapshot. The associated option group can be copied only with cross-account snapshot copy calls.
+    */
+  var CopyOptionGroup: js.UndefOr[BooleanOptional] = js.undefined
+  
+  /**
+    * A value that indicates whether to copy all tags from the source DB snapshot to the target DB snapshot. By default, tags aren't copied.
     */
   var CopyTags: js.UndefOr[BooleanOptional] = js.undefined
   
@@ -57,6 +62,10 @@ object CopyDBSnapshotMessage {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: CopyDBSnapshotMessage] (val x: Self) extends AnyVal {
+    
+    inline def setCopyOptionGroup(value: BooleanOptional): Self = StObject.set(x, "CopyOptionGroup", value.asInstanceOf[js.Any])
+    
+    inline def setCopyOptionGroupUndefined: Self = StObject.set(x, "CopyOptionGroup", js.undefined)
     
     inline def setCopyTags(value: BooleanOptional): Self = StObject.set(x, "CopyTags", value.asInstanceOf[js.Any])
     

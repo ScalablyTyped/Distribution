@@ -1,9 +1,9 @@
 package typings.devextreme.mod.DevExpress.ui
 
+import typings.devextreme.mod.DevExpress.common.grids.ColumnBase
 import typings.devextreme.mod.DevExpress.core.DxElement_
 import typings.devextreme.mod.DevExpress.core.template
 import typings.devextreme.mod.DevExpress.ui.dxDataGrid.Column
-import typings.devextreme.mod.DevExpress.ui.dxDataGrid.ColumnBase
 import typings.devextreme.mod.DevExpress.ui.dxDataGrid.ColumnButton
 import typings.devextreme.mod.DevExpress.ui.dxDataGrid.ColumnCellTemplateData
 import typings.devextreme.mod.DevExpress.ui.dxDataGrid.ColumnEditCellTemplateData
@@ -43,7 +43,9 @@ trait dxDataGridColumn[TRowData, TKey]
   /**
     * Sets custom column values used to group grid records.
     */
-  var calculateGroupValue: js.UndefOr[String | (js.Function1[/* rowData */ TRowData, Any])] = js.undefined
+  var calculateGroupValue: js.UndefOr[
+    String | (js.ThisFunction1[/* this */ ColumnBase[Any], /* rowData */ TRowData, Any])
+  ] = js.undefined
   
   /**
     * Specifies a custom template for data cells.
@@ -137,9 +139,7 @@ object dxDataGridColumn {
     
     inline def setButtonsVarargs(value: (DataGridPredefinedColumnButton | (ColumnButton[TRowData, TKey]))*): Self = StObject.set(x, "buttons", js.Array(value*))
     
-    inline def setCalculateGroupValue(value: String | (js.Function1[/* rowData */ TRowData, Any])): Self = StObject.set(x, "calculateGroupValue", value.asInstanceOf[js.Any])
-    
-    inline def setCalculateGroupValueFunction1(value: /* rowData */ TRowData => Any): Self = StObject.set(x, "calculateGroupValue", js.Any.fromFunction1(value))
+    inline def setCalculateGroupValue(value: String | (js.ThisFunction1[/* this */ ColumnBase[Any], /* rowData */ TRowData, Any])): Self = StObject.set(x, "calculateGroupValue", value.asInstanceOf[js.Any])
     
     inline def setCalculateGroupValueUndefined: Self = StObject.set(x, "calculateGroupValue", js.undefined)
     

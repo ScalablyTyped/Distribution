@@ -5,18 +5,16 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object ImageHelper {
-  
-  @JSImport("sap/m/library", "ImageHelper")
-  @js.native
-  val ^ : js.Any = js.native
+trait ImageHelper extends StObject {
   
   /**
+    * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+    *
     * Creates or updates an image control.
     *
     * @returns The new or updated image control or icon
     */
-  inline def getImageControl(
+  def getImageControl(
     /**
     * UD of the image to be dealt with.
     */
@@ -43,5 +41,19 @@ object ImageHelper {
     * the CSS classes listed in aCssClassesToAdd.
     */
   aCssClassesToRemove: js.Array[String]
-  ): default | typings.openui5.sapUiCoreIconMod.default = (^.asInstanceOf[js.Dynamic].applyDynamic("getImageControl")(sImgId.asInstanceOf[js.Any], oImage.asInstanceOf[js.Any], oParent.asInstanceOf[js.Any], mProperties.asInstanceOf[js.Any], aCssClassesToAdd.asInstanceOf[js.Any], aCssClassesToRemove.asInstanceOf[js.Any])).asInstanceOf[default | typings.openui5.sapUiCoreIconMod.default]
+  ): default | typings.openui5.sapUiCoreIconMod.default
+}
+object ImageHelper {
+  
+  @JSImport("sap/m/library", "ImageHelper")
+  @js.native
+  val ^ : ImageHelper = js.native
+  
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageHelper] (val x: Self) extends AnyVal {
+    
+    inline def setGetImageControl(
+      value: (String, default, typings.openui5.sapUiCoreControlMod.default, js.Object, js.Array[String], js.Array[String]) => default | typings.openui5.sapUiCoreIconMod.default
+    ): Self = StObject.set(x, "getImageControl", js.Any.fromFunction6(value))
+  }
 }

@@ -9,7 +9,7 @@ trait UpdateTaskExecutionRequest extends StObject {
   var Options: typings.awsSdk.clientsDatasyncMod.Options
   
   /**
-    * The Amazon Resource Name (ARN) of the specific task execution that is being updated. 
+    * Specifies the Amazon Resource Name (ARN) of the task execution that you're updating.
     */
   var TaskExecutionArn: typings.awsSdk.clientsDatasyncMod.TaskExecutionArn
 }

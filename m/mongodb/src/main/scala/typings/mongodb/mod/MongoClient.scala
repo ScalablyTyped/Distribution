@@ -10,6 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class MongoClient protected () extends TypedEventEmitter[MongoClientEvents] {
   /* Excluded from this release type: s */
   /* Excluded from this release type: topology */
+  /* Excluded from this release type: mongoLogger */
+  /* Excluded from this release type: connectionLock */
   /* Excluded from this release type: [kOptions] */
   def this(url: String) = this()
   def this(url: String, options: MongoClientOptions) = this()
@@ -20,18 +22,14 @@ open class MongoClient protected () extends TypedEventEmitter[MongoClientEvents]
   
   def bsonOptions: BSONSerializeOptions = js.native
   
+  /* Excluded from this release type: _connect */
   /**
-    * Close the db and its underlying connections
+    * Close the client and its underlying connections
     *
     * @param force - Force close, emitting no events
-    * @param callback - An optional callback, a Promise will be returned if none is provided
     */
   def close(): js.Promise[Unit] = js.native
-  /** @deprecated Callbacks are deprecated and will be removed in the next major version. See [mongodb-legacy](https://github.com/mongodb-js/nodejs-mongodb-legacy) for migration assistance */
-  def close(callback: Callback[Unit]): Unit = js.native
   def close(force: Boolean): js.Promise[Unit] = js.native
-  /** @deprecated Callbacks are deprecated and will be removed in the next major version. See [mongodb-legacy](https://github.com/mongodb-js/nodejs-mongodb-legacy) for migration assistance */
-  def close(force: Boolean, callback: Callback[Unit]): Unit = js.native
   
   /**
     * Connect to MongoDB using a url
@@ -39,8 +37,6 @@ open class MongoClient protected () extends TypedEventEmitter[MongoClientEvents]
     * @see docs.mongodb.org/manual/reference/connection-string/
     */
   def connect(): js.Promise[this.type] = js.native
-  /** @deprecated Callbacks are deprecated and will be removed in the next major version. See [mongodb-legacy](https://github.com/mongodb-js/nodejs-mongodb-legacy) for migration assistance */
-  def connect(callback: Callback[this.type]): Unit = js.native
   
   /**
     * Create a new Db instance sharing the current socket connections.
@@ -53,11 +49,7 @@ open class MongoClient protected () extends TypedEventEmitter[MongoClientEvents]
   def db(dbName: String, options: DbOptions): Db = js.native
   def db(dbName: Unit, options: DbOptions): Db = js.native
   
-  /** Return the mongo client logger */
-  def getLogger(): Logger = js.native
-  
-  def logger: Logger = js.native
-  
+  /** @see MongoOptions */
   def options: MongoOptions = js.native
   
   def readConcern: js.UndefOr[ReadConcern] = js.native
@@ -80,7 +72,7 @@ open class MongoClient protected () extends TypedEventEmitter[MongoClientEvents]
     * - The first is to provide the schema that may be defined for all the data within the current cluster
     * - The second is to override the shape of the change stream document entirely, if it is not provided the type will default to ChangeStreamDocument of the first argument
     *
-    * @param pipeline - An array of {@link https://docs.mongodb.com/manual/reference/operator/aggregation-pipeline/|aggregation pipeline stages} through which to pass change stream documents. This allows for filtering (using $match) and manipulating the change stream documents.
+    * @param pipeline - An array of {@link https://www.mongodb.com/docs/manual/reference/operator/aggregation-pipeline/|aggregation pipeline stages} through which to pass change stream documents. This allows for filtering (using $match) and manipulating the change stream documents.
     * @param options - Optional settings for the command
     * @typeParam TSchema - Type of the data being detected by the change stream
     * @typeParam TChange - Type of the whole change stream document emitted
@@ -117,12 +109,8 @@ object MongoClient {
     * @remarks
     * The programmatically provided options take precedence over the URI options.
     *
-    * @see https://docs.mongodb.org/manual/reference/connection-string/
+    * @see https://www.mongodb.com/docs/manual/reference/connection-string/
     */
   inline def connect(url: String): js.Promise[MongoClient] = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[MongoClient]]
-  /** @deprecated Callbacks are deprecated and will be removed in the next major version. See [mongodb-legacy](https://github.com/mongodb-js/nodejs-mongodb-legacy) for migration assistance */
-  inline def connect(url: String, callback: Callback[MongoClient]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def connect(url: String, options: MongoClientOptions): js.Promise[MongoClient] = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[MongoClient]]
-  /** @deprecated Callbacks are deprecated and will be removed in the next major version. See [mongodb-legacy](https://github.com/mongodb-js/nodejs-mongodb-legacy) for migration assistance */
-  inline def connect(url: String, options: MongoClientOptions, callback: Callback[MongoClient]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

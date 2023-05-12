@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TextEditorViewColumnChangeEvent extends StObject {
   
   /**
-    * The {@link TextEditor text editor} for which the view column has changed.
-    */
+  		 * The {@link TextEditor text editor} for which the view column has changed.
+  		 */
   val textEditor: TextEditor
   
   /**
-    * The new value for the {@link TextEditor.viewColumn text editor's view column}.
-    */
+  		 * The new value for the {@link TextEditor.viewColumn text editor's view column}.
+  		 */
   val viewColumn: ViewColumn
 }
 object TextEditorViewColumnChangeEvent {

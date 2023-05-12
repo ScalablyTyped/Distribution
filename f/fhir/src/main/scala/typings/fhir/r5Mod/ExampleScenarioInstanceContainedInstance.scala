@@ -8,42 +8,42 @@ trait ExampleScenarioInstanceContainedInstance
   extends StObject
      with BackboneElement {
   
-  var _resourceId: js.UndefOr[Element] = js.undefined
+  var _instanceReference: js.UndefOr[Element] = js.undefined
   
-  var _versionId: js.UndefOr[Element] = js.undefined
-  
-  /**
-    * Each resource contained in the instance.
-    */
-  var resourceId: String
+  var _versionReference: js.UndefOr[Element] = js.undefined
   
   /**
-    * A specific version of a resource contained in the instance.
+    * A reference to the key of an instance found within this one.
     */
-  var versionId: js.UndefOr[String] = js.undefined
+  var instanceReference: String
+  
+  /**
+    * Required if the referenced instance has versions
+    */
+  var versionReference: js.UndefOr[String] = js.undefined
 }
 object ExampleScenarioInstanceContainedInstance {
   
-  inline def apply(resourceId: String): ExampleScenarioInstanceContainedInstance = {
-    val __obj = js.Dynamic.literal(resourceId = resourceId.asInstanceOf[js.Any])
+  inline def apply(instanceReference: String): ExampleScenarioInstanceContainedInstance = {
+    val __obj = js.Dynamic.literal(instanceReference = instanceReference.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExampleScenarioInstanceContainedInstance]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: ExampleScenarioInstanceContainedInstance] (val x: Self) extends AnyVal {
     
-    inline def setResourceId(value: String): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
+    inline def setInstanceReference(value: String): Self = StObject.set(x, "instanceReference", value.asInstanceOf[js.Any])
     
-    inline def setVersionId(value: String): Self = StObject.set(x, "versionId", value.asInstanceOf[js.Any])
+    inline def setVersionReference(value: String): Self = StObject.set(x, "versionReference", value.asInstanceOf[js.Any])
     
-    inline def setVersionIdUndefined: Self = StObject.set(x, "versionId", js.undefined)
+    inline def setVersionReferenceUndefined: Self = StObject.set(x, "versionReference", js.undefined)
     
-    inline def set_resourceId(value: Element): Self = StObject.set(x, "_resourceId", value.asInstanceOf[js.Any])
+    inline def set_instanceReference(value: Element): Self = StObject.set(x, "_instanceReference", value.asInstanceOf[js.Any])
     
-    inline def set_resourceIdUndefined: Self = StObject.set(x, "_resourceId", js.undefined)
+    inline def set_instanceReferenceUndefined: Self = StObject.set(x, "_instanceReference", js.undefined)
     
-    inline def set_versionId(value: Element): Self = StObject.set(x, "_versionId", value.asInstanceOf[js.Any])
+    inline def set_versionReference(value: Element): Self = StObject.set(x, "_versionReference", value.asInstanceOf[js.Any])
     
-    inline def set_versionIdUndefined: Self = StObject.set(x, "_versionId", js.undefined)
+    inline def set_versionReferenceUndefined: Self = StObject.set(x, "_versionReference", js.undefined)
   }
 }

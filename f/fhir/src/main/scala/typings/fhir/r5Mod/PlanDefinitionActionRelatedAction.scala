@@ -17,9 +17,18 @@ trait PlanDefinitionActionRelatedAction
   extends StObject
      with BackboneElement {
   
+  var _endRelationship: js.UndefOr[Element] = js.undefined
+  
   var _relationship: js.UndefOr[Element] = js.undefined
   
   var _targetId: js.UndefOr[Element] = js.undefined
+  
+  /**
+    * The relationship of the end of this action to the related action.
+    */
+  var endRelationship: js.UndefOr[
+    before | `before-start` | `before-end` | concurrent | `concurrent-with-start` | `concurrent-with-end` | after | `after-start` | `after-end`
+  ] = js.undefined
   
   /**
     * A duration or range of durations to apply to the relationship. For example, 30-60 minutes before.
@@ -32,9 +41,9 @@ trait PlanDefinitionActionRelatedAction
   var offsetRange: js.UndefOr[Range] = js.undefined
   
   /**
-    * The relationship of this action to the related action.
+    * The relationship of the start of this action to the related action.
     */
-  var relationship: `before-start` | before | `before-end` | `concurrent-with-start` | concurrent | `concurrent-with-end` | `after-start` | after | `after-end`
+  var relationship: before | `before-start` | `before-end` | concurrent | `concurrent-with-start` | `concurrent-with-end` | after | `after-start` | `after-end`
   
   /**
     * The element id of the target related action.
@@ -44,7 +53,7 @@ trait PlanDefinitionActionRelatedAction
 object PlanDefinitionActionRelatedAction {
   
   inline def apply(
-    relationship: `before-start` | before | `before-end` | `concurrent-with-start` | concurrent | `concurrent-with-end` | `after-start` | after | `after-end`,
+    relationship: before | `before-start` | `before-end` | concurrent | `concurrent-with-start` | `concurrent-with-end` | after | `after-start` | `after-end`,
     targetId: String
   ): PlanDefinitionActionRelatedAction = {
     val __obj = js.Dynamic.literal(relationship = relationship.asInstanceOf[js.Any], targetId = targetId.asInstanceOf[js.Any])
@@ -53,6 +62,12 @@ object PlanDefinitionActionRelatedAction {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: PlanDefinitionActionRelatedAction] (val x: Self) extends AnyVal {
+    
+    inline def setEndRelationship(
+      value: before | `before-start` | `before-end` | concurrent | `concurrent-with-start` | `concurrent-with-end` | after | `after-start` | `after-end`
+    ): Self = StObject.set(x, "endRelationship", value.asInstanceOf[js.Any])
+    
+    inline def setEndRelationshipUndefined: Self = StObject.set(x, "endRelationship", js.undefined)
     
     inline def setOffsetDuration(value: Duration): Self = StObject.set(x, "offsetDuration", value.asInstanceOf[js.Any])
     
@@ -63,10 +78,14 @@ object PlanDefinitionActionRelatedAction {
     inline def setOffsetRangeUndefined: Self = StObject.set(x, "offsetRange", js.undefined)
     
     inline def setRelationship(
-      value: `before-start` | before | `before-end` | `concurrent-with-start` | concurrent | `concurrent-with-end` | `after-start` | after | `after-end`
+      value: before | `before-start` | `before-end` | concurrent | `concurrent-with-start` | `concurrent-with-end` | after | `after-start` | `after-end`
     ): Self = StObject.set(x, "relationship", value.asInstanceOf[js.Any])
     
     inline def setTargetId(value: String): Self = StObject.set(x, "targetId", value.asInstanceOf[js.Any])
+    
+    inline def set_endRelationship(value: Element): Self = StObject.set(x, "_endRelationship", value.asInstanceOf[js.Any])
+    
+    inline def set_endRelationshipUndefined: Self = StObject.set(x, "_endRelationship", js.undefined)
     
     inline def set_relationship(value: Element): Self = StObject.set(x, "_relationship", value.asInstanceOf[js.Any])
     

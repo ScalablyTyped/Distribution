@@ -6,7 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CallOptions extends StObject {
   
+  // Indicates whether to hide the app after the call is escalated.
   var hideBotAfterEscalation: js.UndefOr[NullableOption[Boolean]] = js.undefined
+  
+  // Indicates whether content sharing notifications should be enabled for the call.
+  var isContentSharingNotificationEnabled: js.UndefOr[NullableOption[Boolean]] = js.undefined
 }
 object CallOptions {
   
@@ -23,5 +27,11 @@ object CallOptions {
     inline def setHideBotAfterEscalationNull: Self = StObject.set(x, "hideBotAfterEscalation", null)
     
     inline def setHideBotAfterEscalationUndefined: Self = StObject.set(x, "hideBotAfterEscalation", js.undefined)
+    
+    inline def setIsContentSharingNotificationEnabled(value: NullableOption[Boolean]): Self = StObject.set(x, "isContentSharingNotificationEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setIsContentSharingNotificationEnabledNull: Self = StObject.set(x, "isContentSharingNotificationEnabled", null)
+    
+    inline def setIsContentSharingNotificationEnabledUndefined: Self = StObject.set(x, "isContentSharingNotificationEnabled", js.undefined)
   }
 }

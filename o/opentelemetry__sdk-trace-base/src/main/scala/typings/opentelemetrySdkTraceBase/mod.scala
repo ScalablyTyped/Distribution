@@ -5,7 +5,6 @@ import typings.opentelemetryApi.buildSrcContextTypesMod.Context
 import typings.opentelemetryApi.buildSrcTraceLinkMod.Link
 import typings.opentelemetryApi.buildSrcTraceSpanContextMod.SpanContext
 import typings.opentelemetryApi.buildSrcTraceSpanKindMod.SpanKind
-import typings.opentelemetryCore.buildSrcCommonAnchoredClockMod.Clock
 import typings.opentelemetryCore.buildSrcCommonTypesMod.InstrumentationLibrary
 import typings.opentelemetrySdkTraceBase.buildSrcBasicTracerProviderMod.EXPORTER_FACTORY
 import typings.opentelemetrySdkTraceBase.buildSrcBasicTracerProviderMod.PROPAGATOR_FACTORY
@@ -213,7 +212,7 @@ object mod {
       parentSpanId: String,
       links: js.Array[Link],
       startTime: Unit,
-      clock: Clock
+      _deprecatedClock: Any
     ) = this()
     def this(
       parentTracer: typings.opentelemetrySdkTraceBase.buildSrcTracerMod.Tracer,
@@ -224,7 +223,7 @@ object mod {
       parentSpanId: String,
       links: js.Array[Link],
       startTime: TimeInput,
-      clock: Clock
+      _deprecatedClock: Any
     ) = this()
     def this(
       parentTracer: typings.opentelemetrySdkTraceBase.buildSrcTracerMod.Tracer,
@@ -235,7 +234,7 @@ object mod {
       parentSpanId: String,
       links: Unit,
       startTime: Unit,
-      clock: Clock
+      _deprecatedClock: Any
     ) = this()
     def this(
       parentTracer: typings.opentelemetrySdkTraceBase.buildSrcTracerMod.Tracer,
@@ -246,7 +245,7 @@ object mod {
       parentSpanId: String,
       links: Unit,
       startTime: TimeInput,
-      clock: Clock
+      _deprecatedClock: Any
     ) = this()
     def this(
       parentTracer: typings.opentelemetrySdkTraceBase.buildSrcTracerMod.Tracer,
@@ -257,7 +256,7 @@ object mod {
       parentSpanId: Unit,
       links: js.Array[Link],
       startTime: Unit,
-      clock: Clock
+      _deprecatedClock: Any
     ) = this()
     def this(
       parentTracer: typings.opentelemetrySdkTraceBase.buildSrcTracerMod.Tracer,
@@ -268,7 +267,7 @@ object mod {
       parentSpanId: Unit,
       links: js.Array[Link],
       startTime: TimeInput,
-      clock: Clock
+      _deprecatedClock: Any
     ) = this()
     def this(
       parentTracer: typings.opentelemetrySdkTraceBase.buildSrcTracerMod.Tracer,
@@ -279,7 +278,7 @@ object mod {
       parentSpanId: Unit,
       links: Unit,
       startTime: Unit,
-      clock: Clock
+      _deprecatedClock: Any
     ) = this()
     def this(
       parentTracer: typings.opentelemetrySdkTraceBase.buildSrcTracerMod.Tracer,
@@ -290,7 +289,7 @@ object mod {
       parentSpanId: Unit,
       links: Unit,
       startTime: TimeInput,
-      clock: Clock
+      _deprecatedClock: Any
     ) = this()
   }
   

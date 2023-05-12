@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ImageFailure extends StObject {
   
   /**
-    * The code associated with the failure.
+    * The code that's associated with the failure.
     */
   var failureCode: js.UndefOr[ImageFailureCode] = js.undefined
   
@@ -17,7 +17,7 @@ trait ImageFailure extends StObject {
   var failureReason: js.UndefOr[ImageFailureReason] = js.undefined
   
   /**
-    * The image ID associated with the failure.
+    * The image ID that's associated with the failure.
     */
   var imageId: js.UndefOr[ImageIdentifier] = js.undefined
 }

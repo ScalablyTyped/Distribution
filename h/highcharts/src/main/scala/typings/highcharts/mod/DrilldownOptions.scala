@@ -59,6 +59,14 @@ trait DrilldownOptions extends StObject {
   var breadcrumbs: js.UndefOr[DrilldownBreadcrumbsOptions] = js.undefined
   
   /**
+    * (Highmaps) Enable or disable zooming into a region of clicked map point
+    * you want to drill into. If mapZooming is set to false the
+    * drilldown/drillup animations only fade in/fade out without zooming to a
+    * specific map point.
+    */
+  var mapZooming: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * (Highcharts, Highmaps) An array of series configurations for the drill
     * down. Each series configuration uses the same syntax as the series option
     * set. These drilldown series are hidden by default. The drilldown series
@@ -95,6 +103,10 @@ object DrilldownOptions {
     inline def setBreadcrumbs(value: DrilldownBreadcrumbsOptions): Self = StObject.set(x, "breadcrumbs", value.asInstanceOf[js.Any])
     
     inline def setBreadcrumbsUndefined: Self = StObject.set(x, "breadcrumbs", js.undefined)
+    
+    inline def setMapZooming(value: Boolean): Self = StObject.set(x, "mapZooming", value.asInstanceOf[js.Any])
+    
+    inline def setMapZoomingUndefined: Self = StObject.set(x, "mapZooming", js.undefined)
     
     inline def setSeries(value: js.Array[SeriesOptionsType]): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
     

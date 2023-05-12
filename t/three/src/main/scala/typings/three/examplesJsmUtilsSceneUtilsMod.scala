@@ -1,6 +1,7 @@
 package typings.three
 
 import typings.three.srcCoreBufferGeometryMod.BufferGeometry
+import typings.three.srcCoreBufferGeometryMod.NormalBufferAttributes
 import typings.three.srcCoreEventDispatcherMod.Event
 import typings.three.srcMaterialsMaterialMod.Material
 import typings.three.srcThreeMod.Group
@@ -21,12 +22,14 @@ object examplesJsmUtilsSceneUtilsMod {
   
   inline def attach(child: Object3D[Event], scene: Scene, parent: Object3D[Event]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("attach")(child.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def createMeshesFromInstancedMesh(instancedMesh: InstancedMesh[BufferGeometry, Material | js.Array[Material]]): Group = ^.asInstanceOf[js.Dynamic].applyDynamic("createMeshesFromInstancedMesh")(instancedMesh.asInstanceOf[js.Any]).asInstanceOf[Group]
+  inline def createMeshesFromInstancedMesh(
+    instancedMesh: InstancedMesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]]
+  ): Group = ^.asInstanceOf[js.Dynamic].applyDynamic("createMeshesFromInstancedMesh")(instancedMesh.asInstanceOf[js.Any]).asInstanceOf[Group]
   
-  inline def createMeshesFromMultiMaterialMesh(mesh: Mesh[BufferGeometry, Material | js.Array[Material]]): Group = ^.asInstanceOf[js.Dynamic].applyDynamic("createMeshesFromMultiMaterialMesh")(mesh.asInstanceOf[js.Any]).asInstanceOf[Group]
+  inline def createMeshesFromMultiMaterialMesh(mesh: Mesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]]): Group = ^.asInstanceOf[js.Dynamic].applyDynamic("createMeshesFromMultiMaterialMesh")(mesh.asInstanceOf[js.Any]).asInstanceOf[Group]
   
   inline def createMultiMaterialObject(
-    geometry: typings.three.srcThreeMod.BufferGeometry,
+    geometry: typings.three.srcThreeMod.BufferGeometry[NormalBufferAttributes],
     materials: js.Array[typings.three.srcThreeMod.Material]
   ): Group = (^.asInstanceOf[js.Dynamic].applyDynamic("createMultiMaterialObject")(geometry.asInstanceOf[js.Any], materials.asInstanceOf[js.Any])).asInstanceOf[Group]
   
@@ -39,7 +42,7 @@ object examplesJsmUtilsSceneUtilsMod {
   ): TValue = (^.asInstanceOf[js.Dynamic].applyDynamic("reduceVertices")(`object`.asInstanceOf[js.Any], func.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any])).asInstanceOf[TValue]
   
   inline def sortInstancedMesh(
-    mesh: InstancedMesh[BufferGeometry, Material | js.Array[Material]],
+    mesh: InstancedMesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]],
     compareFn: js.Function2[/* a */ Double, /* b */ Double, Double]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sortInstancedMesh")(mesh.asInstanceOf[js.Any], compareFn.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

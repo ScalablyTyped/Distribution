@@ -1,7 +1,7 @@
 
 # Scala.js typings for azure__identity
 
-Typings are for version 3.0.0
+Typings are for version 3.2.0
 
 
 

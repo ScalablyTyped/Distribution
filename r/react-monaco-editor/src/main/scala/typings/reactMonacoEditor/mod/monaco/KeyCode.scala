@@ -11,41 +11,41 @@ object KeyCode extends StObject {
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[typings.monacoEditor.mod.KeyCode & Double] = js.native
   
-  /* 110 */ val ABNT_C1: typings.monacoEditor.mod.KeyCode.ABNT_C1 & Double = js.native
+  /* 115 */ val ABNT_C1: typings.monacoEditor.mod.KeyCode.ABNT_C1 & Double = js.native
   
-  /* 111 */ val ABNT_C2: typings.monacoEditor.mod.KeyCode.ABNT_C2 & Double = js.native
+  /* 116 */ val ABNT_C2: typings.monacoEditor.mod.KeyCode.ABNT_C2 & Double = js.native
   
   /* 6 */ val Alt: typings.monacoEditor.mod.KeyCode.Alt & Double = js.native
   
-  /* 114 */ val AudioVolumeDown: typings.monacoEditor.mod.KeyCode.AudioVolumeDown & Double = js.native
+  /* 119 */ val AudioVolumeDown: typings.monacoEditor.mod.KeyCode.AudioVolumeDown & Double = js.native
   
-  /* 112 */ val AudioVolumeMute: typings.monacoEditor.mod.KeyCode.AudioVolumeMute & Double = js.native
+  /* 117 */ val AudioVolumeMute: typings.monacoEditor.mod.KeyCode.AudioVolumeMute & Double = js.native
   
-  /* 113 */ val AudioVolumeUp: typings.monacoEditor.mod.KeyCode.AudioVolumeUp & Double = js.native
+  /* 118 */ val AudioVolumeUp: typings.monacoEditor.mod.KeyCode.AudioVolumeUp & Double = js.native
   
-  /* 86 */ val Backquote: typings.monacoEditor.mod.KeyCode.Backquote & Double = js.native
+  /* 91 */ val Backquote: typings.monacoEditor.mod.KeyCode.Backquote & Double = js.native
   
-  /* 88 */ val Backslash: typings.monacoEditor.mod.KeyCode.Backslash & Double = js.native
+  /* 93 */ val Backslash: typings.monacoEditor.mod.KeyCode.Backslash & Double = js.native
   
   /* 1 */ val Backspace: typings.monacoEditor.mod.KeyCode.Backspace & Double = js.native
   
-  /* 87 */ val BracketLeft: typings.monacoEditor.mod.KeyCode.BracketLeft & Double = js.native
+  /* 92 */ val BracketLeft: typings.monacoEditor.mod.KeyCode.BracketLeft & Double = js.native
   
-  /* 89 */ val BracketRight: typings.monacoEditor.mod.KeyCode.BracketRight & Double = js.native
+  /* 94 */ val BracketRight: typings.monacoEditor.mod.KeyCode.BracketRight & Double = js.native
   
-  /* 117 */ val BrowserBack: typings.monacoEditor.mod.KeyCode.BrowserBack & Double = js.native
+  /* 122 */ val BrowserBack: typings.monacoEditor.mod.KeyCode.BrowserBack & Double = js.native
   
-  /* 118 */ val BrowserForward: typings.monacoEditor.mod.KeyCode.BrowserForward & Double = js.native
+  /* 123 */ val BrowserForward: typings.monacoEditor.mod.KeyCode.BrowserForward & Double = js.native
   
-  /* 116 */ val BrowserHome: typings.monacoEditor.mod.KeyCode.BrowserHome & Double = js.native
+  /* 121 */ val BrowserHome: typings.monacoEditor.mod.KeyCode.BrowserHome & Double = js.native
   
-  /* 115 */ val BrowserSearch: typings.monacoEditor.mod.KeyCode.BrowserSearch & Double = js.native
+  /* 120 */ val BrowserSearch: typings.monacoEditor.mod.KeyCode.BrowserSearch & Double = js.native
   
   /* 8 */ val CapsLock: typings.monacoEditor.mod.KeyCode.CapsLock & Double = js.native
   
-  /* 126 */ val Clear: typings.monacoEditor.mod.KeyCode.Clear & Double = js.native
+  /* 131 */ val Clear: typings.monacoEditor.mod.KeyCode.Clear & Double = js.native
   
-  /* 82 */ val Comma: typings.monacoEditor.mod.KeyCode.Comma & Double = js.native
+  /* 87 */ val Comma: typings.monacoEditor.mod.KeyCode.Comma & Double = js.native
   
   /* 58 */ val ContextMenu: typings.monacoEditor.mod.KeyCode.ContextMenu & Double = js.native
   
@@ -81,7 +81,7 @@ object KeyCode extends StObject {
   
   /* 3 */ val Enter: typings.monacoEditor.mod.KeyCode.Enter & Double = js.native
   
-  /* 81 */ val Equal: typings.monacoEditor.mod.KeyCode.Equal & Double = js.native
+  /* 86 */ val Equal: typings.monacoEditor.mod.KeyCode.Equal & Double = js.native
   
   /* 9 */ val Escape: typings.monacoEditor.mod.KeyCode.Escape & Double = js.native
   
@@ -109,6 +109,16 @@ object KeyCode extends StObject {
   
   /* 60 */ val F2: typings.monacoEditor.mod.KeyCode.F2 & Double = js.native
   
+  /* 78 */ val F20: typings.monacoEditor.mod.KeyCode.F20 & Double = js.native
+  
+  /* 79 */ val F21: typings.monacoEditor.mod.KeyCode.F21 & Double = js.native
+  
+  /* 80 */ val F22: typings.monacoEditor.mod.KeyCode.F22 & Double = js.native
+  
+  /* 81 */ val F23: typings.monacoEditor.mod.KeyCode.F23 & Double = js.native
+  
+  /* 82 */ val F24: typings.monacoEditor.mod.KeyCode.F24 & Double = js.native
+  
   /* 61 */ val F3: typings.monacoEditor.mod.KeyCode.F3 & Double = js.native
   
   /* 62 */ val F4: typings.monacoEditor.mod.KeyCode.F4 & Double = js.native
@@ -127,9 +137,9 @@ object KeyCode extends StObject {
   
   /* 19 */ val Insert: typings.monacoEditor.mod.KeyCode.Insert & Double = js.native
   
-  /* 92 */ val IntlBackslash: typings.monacoEditor.mod.KeyCode.IntlBackslash & Double = js.native
+  /* 97 */ val IntlBackslash: typings.monacoEditor.mod.KeyCode.IntlBackslash & Double = js.native
   
-  /* 109 */ val KEY_IN_COMPOSITION: typings.monacoEditor.mod.KeyCode.KEY_IN_COMPOSITION & Double = js.native
+  /* 114 */ val KEY_IN_COMPOSITION: typings.monacoEditor.mod.KeyCode.KEY_IN_COMPOSITION & Double = js.native
   
   /* 31 */ val KeyA: typings.monacoEditor.mod.KeyCode.KeyA & Double = js.native
   
@@ -183,63 +193,63 @@ object KeyCode extends StObject {
   
   /* 56 */ val KeyZ: typings.monacoEditor.mod.KeyCode.KeyZ & Double = js.native
   
-  /* 125 */ val LaunchApp2: typings.monacoEditor.mod.KeyCode.LaunchApp2 & Double = js.native
+  /* 130 */ val LaunchApp2: typings.monacoEditor.mod.KeyCode.LaunchApp2 & Double = js.native
   
-  /* 124 */ val LaunchMail: typings.monacoEditor.mod.KeyCode.LaunchMail & Double = js.native
+  /* 129 */ val LaunchMail: typings.monacoEditor.mod.KeyCode.LaunchMail & Double = js.native
   
-  /* 123 */ val LaunchMediaPlayer: typings.monacoEditor.mod.KeyCode.LaunchMediaPlayer & Double = js.native
+  /* 128 */ val LaunchMediaPlayer: typings.monacoEditor.mod.KeyCode.LaunchMediaPlayer & Double = js.native
   
   /* 15 */ val LeftArrow: typings.monacoEditor.mod.KeyCode.LeftArrow & Double = js.native
   
-  /* 127 */ val MAX_VALUE: typings.monacoEditor.mod.KeyCode.MAX_VALUE & Double = js.native
+  /* 132 */ val MAX_VALUE: typings.monacoEditor.mod.KeyCode.MAX_VALUE & Double = js.native
   
-  /* 122 */ val MediaPlayPause: typings.monacoEditor.mod.KeyCode.MediaPlayPause & Double = js.native
+  /* 127 */ val MediaPlayPause: typings.monacoEditor.mod.KeyCode.MediaPlayPause & Double = js.native
   
-  /* 121 */ val MediaStop: typings.monacoEditor.mod.KeyCode.MediaStop & Double = js.native
+  /* 126 */ val MediaStop: typings.monacoEditor.mod.KeyCode.MediaStop & Double = js.native
   
-  /* 119 */ val MediaTrackNext: typings.monacoEditor.mod.KeyCode.MediaTrackNext & Double = js.native
+  /* 124 */ val MediaTrackNext: typings.monacoEditor.mod.KeyCode.MediaTrackNext & Double = js.native
   
-  /* 120 */ val MediaTrackPrevious: typings.monacoEditor.mod.KeyCode.MediaTrackPrevious & Double = js.native
+  /* 125 */ val MediaTrackPrevious: typings.monacoEditor.mod.KeyCode.MediaTrackPrevious & Double = js.native
   
   /* 57 */ val Meta: typings.monacoEditor.mod.KeyCode.Meta & Double = js.native
   
-  /* 83 */ val Minus: typings.monacoEditor.mod.KeyCode.Minus & Double = js.native
+  /* 88 */ val Minus: typings.monacoEditor.mod.KeyCode.Minus & Double = js.native
   
-  /* 105 */ val NUMPAD_SEPARATOR: typings.monacoEditor.mod.KeyCode.NUMPAD_SEPARATOR & Double = js.native
+  /* 110 */ val NUMPAD_SEPARATOR: typings.monacoEditor.mod.KeyCode.NUMPAD_SEPARATOR & Double = js.native
   
-  /* 78 */ val NumLock: typings.monacoEditor.mod.KeyCode.NumLock & Double = js.native
+  /* 83 */ val NumLock: typings.monacoEditor.mod.KeyCode.NumLock & Double = js.native
   
-  /* 93 */ val Numpad0: typings.monacoEditor.mod.KeyCode.Numpad0 & Double = js.native
+  /* 98 */ val Numpad0: typings.monacoEditor.mod.KeyCode.Numpad0 & Double = js.native
   
-  /* 94 */ val Numpad1: typings.monacoEditor.mod.KeyCode.Numpad1 & Double = js.native
+  /* 99 */ val Numpad1: typings.monacoEditor.mod.KeyCode.Numpad1 & Double = js.native
   
-  /* 95 */ val Numpad2: typings.monacoEditor.mod.KeyCode.Numpad2 & Double = js.native
+  /* 100 */ val Numpad2: typings.monacoEditor.mod.KeyCode.Numpad2 & Double = js.native
   
-  /* 96 */ val Numpad3: typings.monacoEditor.mod.KeyCode.Numpad3 & Double = js.native
+  /* 101 */ val Numpad3: typings.monacoEditor.mod.KeyCode.Numpad3 & Double = js.native
   
-  /* 97 */ val Numpad4: typings.monacoEditor.mod.KeyCode.Numpad4 & Double = js.native
+  /* 102 */ val Numpad4: typings.monacoEditor.mod.KeyCode.Numpad4 & Double = js.native
   
-  /* 98 */ val Numpad5: typings.monacoEditor.mod.KeyCode.Numpad5 & Double = js.native
+  /* 103 */ val Numpad5: typings.monacoEditor.mod.KeyCode.Numpad5 & Double = js.native
   
-  /* 99 */ val Numpad6: typings.monacoEditor.mod.KeyCode.Numpad6 & Double = js.native
+  /* 104 */ val Numpad6: typings.monacoEditor.mod.KeyCode.Numpad6 & Double = js.native
   
-  /* 100 */ val Numpad7: typings.monacoEditor.mod.KeyCode.Numpad7 & Double = js.native
+  /* 105 */ val Numpad7: typings.monacoEditor.mod.KeyCode.Numpad7 & Double = js.native
   
-  /* 101 */ val Numpad8: typings.monacoEditor.mod.KeyCode.Numpad8 & Double = js.native
+  /* 106 */ val Numpad8: typings.monacoEditor.mod.KeyCode.Numpad8 & Double = js.native
   
-  /* 102 */ val Numpad9: typings.monacoEditor.mod.KeyCode.Numpad9 & Double = js.native
+  /* 107 */ val Numpad9: typings.monacoEditor.mod.KeyCode.Numpad9 & Double = js.native
   
-  /* 104 */ val NumpadAdd: typings.monacoEditor.mod.KeyCode.NumpadAdd & Double = js.native
+  /* 109 */ val NumpadAdd: typings.monacoEditor.mod.KeyCode.NumpadAdd & Double = js.native
   
-  /* 107 */ val NumpadDecimal: typings.monacoEditor.mod.KeyCode.NumpadDecimal & Double = js.native
+  /* 112 */ val NumpadDecimal: typings.monacoEditor.mod.KeyCode.NumpadDecimal & Double = js.native
   
-  /* 108 */ val NumpadDivide: typings.monacoEditor.mod.KeyCode.NumpadDivide & Double = js.native
+  /* 113 */ val NumpadDivide: typings.monacoEditor.mod.KeyCode.NumpadDivide & Double = js.native
   
-  /* 103 */ val NumpadMultiply: typings.monacoEditor.mod.KeyCode.NumpadMultiply & Double = js.native
+  /* 108 */ val NumpadMultiply: typings.monacoEditor.mod.KeyCode.NumpadMultiply & Double = js.native
   
-  /* 106 */ val NumpadSubtract: typings.monacoEditor.mod.KeyCode.NumpadSubtract & Double = js.native
+  /* 111 */ val NumpadSubtract: typings.monacoEditor.mod.KeyCode.NumpadSubtract & Double = js.native
   
-  /* 91 */ val OEM_8: typings.monacoEditor.mod.KeyCode.OEM_8 & Double = js.native
+  /* 96 */ val OEM_8: typings.monacoEditor.mod.KeyCode.OEM_8 & Double = js.native
   
   /* 12 */ val PageDown: typings.monacoEditor.mod.KeyCode.PageDown & Double = js.native
   
@@ -247,19 +257,19 @@ object KeyCode extends StObject {
   
   /* 7 */ val PauseBreak: typings.monacoEditor.mod.KeyCode.PauseBreak & Double = js.native
   
-  /* 84 */ val Period: typings.monacoEditor.mod.KeyCode.Period & Double = js.native
+  /* 89 */ val Period: typings.monacoEditor.mod.KeyCode.Period & Double = js.native
   
-  /* 90 */ val Quote: typings.monacoEditor.mod.KeyCode.Quote & Double = js.native
+  /* 95 */ val Quote: typings.monacoEditor.mod.KeyCode.Quote & Double = js.native
   
   /* 17 */ val RightArrow: typings.monacoEditor.mod.KeyCode.RightArrow & Double = js.native
   
-  /* 79 */ val ScrollLock: typings.monacoEditor.mod.KeyCode.ScrollLock & Double = js.native
+  /* 84 */ val ScrollLock: typings.monacoEditor.mod.KeyCode.ScrollLock & Double = js.native
   
-  /* 80 */ val Semicolon: typings.monacoEditor.mod.KeyCode.Semicolon & Double = js.native
+  /* 85 */ val Semicolon: typings.monacoEditor.mod.KeyCode.Semicolon & Double = js.native
   
   /* 4 */ val Shift: typings.monacoEditor.mod.KeyCode.Shift & Double = js.native
   
-  /* 85 */ val Slash: typings.monacoEditor.mod.KeyCode.Slash & Double = js.native
+  /* 90 */ val Slash: typings.monacoEditor.mod.KeyCode.Slash & Double = js.native
   
   /* 10 */ val Space: typings.monacoEditor.mod.KeyCode.Space & Double = js.native
   

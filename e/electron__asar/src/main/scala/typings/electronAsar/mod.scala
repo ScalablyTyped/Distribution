@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.electronAsar.anon.Algorithm
 import typings.electronAsar.anon.Stat
 import typings.electronAsar.electronAsarBooleans.`true`
-import typings.glob.mod.IOptions
 import typings.node.NodeJS.ReadWriteStream
 import typings.node.bufferMod.global.Buffer
 import typings.std.Record
@@ -80,7 +79,9 @@ object mod {
     
     var dot: js.UndefOr[Boolean] = js.undefined
     
-    var globOptions: js.UndefOr[IOptions] = js.undefined
+    var globOptions: js.UndefOr[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify GlobOptions */ Any
+      ] = js.undefined
     
     var ordering: js.UndefOr[String] = js.undefined
     
@@ -106,7 +107,9 @@ object mod {
       
       inline def setDotUndefined: Self = StObject.set(x, "dot", js.undefined)
       
-      inline def setGlobOptions(value: IOptions): Self = StObject.set(x, "globOptions", value.asInstanceOf[js.Any])
+      inline def setGlobOptions(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify GlobOptions */ Any
+      ): Self = StObject.set(x, "globOptions", value.asInstanceOf[js.Any])
       
       inline def setGlobOptionsUndefined: Self = StObject.set(x, "globOptions", js.undefined)
       

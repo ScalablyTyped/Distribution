@@ -1,7 +1,7 @@
 package typings.tensorflowTfjsBackendWebgl
 
 import typings.tensorflowTfjsBackendWebgl.distBackendWebglMod.MathBackendWebGL
-import typings.tensorflowTfjsCore.distKernelRegistryMod.TensorInfo
+import typings.tensorflowTfjsCore.distTensorInfoMod.TensorInfo
 import typings.tensorflowTfjsCore.distTypesMod.DataType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

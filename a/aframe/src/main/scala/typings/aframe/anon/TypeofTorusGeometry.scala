@@ -11,5 +11,6 @@ trait TypeofTorusGeometry
   extends StObject
      with Instantiable0[TorusGeometry] {
   
+  /** @internal */
   def fromJSON(data: Any): typings.three.srcGeometriesTorusGeometryMod.TorusGeometry = js.native
 }

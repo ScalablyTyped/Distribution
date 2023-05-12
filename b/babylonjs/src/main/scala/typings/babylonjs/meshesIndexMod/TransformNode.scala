@@ -6,6 +6,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+  *
+  */
+/** @internal */
 @JSImport("babylonjs/Meshes/index", "TransformNode")
 @js.native
 open class TransformNode protected ()

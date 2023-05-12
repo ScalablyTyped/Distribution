@@ -5,6 +5,7 @@ import typings.tensorflowTfjsCore.distTypesMod.DataType
 import typings.tensorflowTfjsCore.distTypesMod.Rank
 import typings.tensorflowTfjsCore.distTypesMod.TensorLike
 import typings.tensorflowTfjsCore.distTypesMod.WebGLData
+import typings.tensorflowTfjsCore.distTypesMod.WebGPUData
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.numeric
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.string_or_numeric
 import org.scalablytyped.runtime.StObject
@@ -39,4 +40,6 @@ object distTensorUtilEnvMod {
   inline def inferShape(`val`: TensorLike, dtype: DataType): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("inferShape")(`val`.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   inline def inferShape(`val`: WebGLData): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("inferShape")(`val`.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
   inline def inferShape(`val`: WebGLData, dtype: DataType): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("inferShape")(`val`.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  inline def inferShape(`val`: WebGPUData): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("inferShape")(`val`.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+  inline def inferShape(`val`: WebGPUData, dtype: DataType): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("inferShape")(`val`.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
 }

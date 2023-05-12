@@ -3,6 +3,7 @@ package typings.babylonjs
 import typings.babylonjs.materialsEffectMod.Effect
 import typings.babylonjs.materialsNodeNodeMaterialBlockConnectionPointMod.NodeMaterialConnectionPoint
 import typings.babylonjs.materialsNodeNodeMaterialBlockMod.NodeMaterialBlock
+import typings.babylonjs.materialsNodeNodeMaterialMod.NodeMaterialTextureBlocks
 import typings.babylonjs.materialsTexturesTextureMod.Texture
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
@@ -13,7 +14,9 @@ object materialsNodeBlocksDualImageSourceBlockMod {
   
   @JSImport("babylonjs/Materials/Node/Blocks/Dual/imageSourceBlock", "ImageSourceBlock")
   @js.native
-  open class ImageSourceBlock protected () extends NodeMaterialBlock {
+  open class ImageSourceBlock protected ()
+    extends NodeMaterialBlock
+       with NodeMaterialTextureBlocks {
     /**
       * Creates a new ImageSourceBlock
       * @param name defines the block name

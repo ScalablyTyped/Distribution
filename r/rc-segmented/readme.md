@@ -1,7 +1,7 @@
 
 # Scala.js typings for rc-segmented
 
-Typings are for version 2.1.0
+Typings are for version 2.2.0
 
 ## Library description:
 React segmented controls used in ant.design

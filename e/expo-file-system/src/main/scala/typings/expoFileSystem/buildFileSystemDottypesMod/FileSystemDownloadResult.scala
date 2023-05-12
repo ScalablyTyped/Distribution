@@ -9,8 +9,14 @@ trait FileSystemDownloadResult
   extends StObject
      with FileSystemHttpResult {
   
+  /**
+    * Present if the `md5` option was truthy. Contains the MD5 hash of the file.
+    */
   var md5: js.UndefOr[String] = js.undefined
   
+  /**
+    * A `file://` URI pointing to the file. This is the same as the `fileUri` input parameter.
+    */
   var uri: String
 }
 object FileSystemDownloadResult {

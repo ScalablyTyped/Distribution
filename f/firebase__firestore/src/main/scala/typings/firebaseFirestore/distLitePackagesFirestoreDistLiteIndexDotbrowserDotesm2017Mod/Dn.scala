@@ -21,22 +21,35 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * limitations under the License.
   */
 /**
-  * Sentinel values that can be used when writing document fields with `set()`
-  * or `update()`.
-  */ trait Dn extends StObject {
+  * A `DocumentReference` refers to a document location in a Firestore database
+  * and can be used to write, read, or listen to the location. The document at
+  * the referenced location may or may not exist.
+  */ @js.native
+trait Dn extends StObject {
   
-  var _methodName: Any
-}
-object Dn {
+  var _key: Any = js.native
   
-  inline def apply(_methodName: Any): Dn = {
-    val __obj = js.Dynamic.literal(_methodName = _methodName.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Dn]
-  }
+  def _path: Any = js.native
   
-  @scala.inline
-  implicit open class MutableBuilder[Self <: Dn] (val x: Self) extends AnyVal {
-    
-    inline def set_methodName(value: Any): Self = StObject.set(x, "_methodName", value.asInstanceOf[js.Any])
-  }
+  var converter: Any = js.native
+  
+  var firestore: Any = js.native
+  
+  /**
+    * The document's identifier within its collection.
+    */ def id: Any = js.native
+  
+  /**
+    * The collection this `DocumentReference` belongs to.
+    */ def parent: Fn = js.native
+  
+  /**
+    * A string representing the path of the referenced document (relative
+    * to the root of the database).
+    */ def path: Any = js.native
+  
+  /** The type of this Firestore reference. */
+  var `type`: String = js.native
+  
+  def withConverter(t: Any): Dn = js.native
 }

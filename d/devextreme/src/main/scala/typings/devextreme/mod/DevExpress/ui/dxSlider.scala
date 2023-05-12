@@ -39,6 +39,18 @@ object dxSlider {
   
   type Properties = dxSliderOptions
   
+  /* Rewritten from type alias, can be one of: 
+    - typings.devextreme.devextremeStrings.onHandleMove
+    - typings.devextreme.devextremeStrings.onHandleRelease
+  */
+  trait ValueChangeMode extends StObject
+  object ValueChangeMode {
+    
+    inline def onHandleMove: typings.devextreme.devextremeStrings.onHandleMove = "onHandleMove".asInstanceOf[typings.devextreme.devextremeStrings.onHandleMove]
+    
+    inline def onHandleRelease: typings.devextreme.devextremeStrings.onHandleRelease = "onHandleRelease".asInstanceOf[typings.devextreme.devextremeStrings.onHandleRelease]
+  }
+  
   trait ValueChangedEvent
     extends StObject
        with NativeEventInfo[dxSlider, KeyboardEvent | MouseEvent | PointerEvent | TouchEvent | UIEvent | Event]

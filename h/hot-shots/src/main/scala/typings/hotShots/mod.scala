@@ -999,7 +999,7 @@ object mod {
     }
   }
   
-  type StatsCb = js.Function2[/* error */ js.UndefOr[js.Error], /* bytes */ Any, Unit]
+  type StatsCb = js.Function2[/* error */ js.UndefOr[js.Error], /* bytes */ js.UndefOr[Double], Unit]
   
   type Tags = StringDictionary[String] | js.Array[String]
   

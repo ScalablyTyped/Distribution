@@ -406,6 +406,18 @@ object testingLibraryDomStrings {
   inline def mouseUp: mouseUp = "mouseUp".asInstanceOf[mouseUp]
   
   @js.native
+  sealed trait offline
+    extends StObject
+       with EventType
+  inline def offline: offline = "offline".asInstanceOf[offline]
+  
+  @js.native
+  sealed trait online
+    extends StObject
+       with EventType
+  inline def online: online = "online".asInstanceOf[online]
+  
+  @js.native
   sealed trait paste
     extends StObject
        with EventType

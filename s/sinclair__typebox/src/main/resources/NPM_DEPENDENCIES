@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@sinclair/typebox" : "0.24.42"
+      "@sinclair/typebox" : "0.28.9"
     }
   ],
   "test-dependencies" : [
     {
-      "@sinclair/typebox" : "0.24.42"
+      "@sinclair/typebox" : "0.28.9"
     }
   ],
   "compile-devDependencies" : [

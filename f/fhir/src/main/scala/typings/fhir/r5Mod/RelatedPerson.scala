@@ -45,7 +45,7 @@ trait RelatedPerson
   var gender: js.UndefOr[male | female | other | unknown] = js.undefined
   
   /**
-    * Identifier for a person within a particular scope.
+    * RelatedPerson identifiers might not be unique across instances within a system, as a single human individual may be represented as many different RelatedPerson resources with different roles, periods, or relationships.
     */
   var identifier: js.UndefOr[js.Array[Identifier]] = js.undefined
   
@@ -60,7 +60,7 @@ trait RelatedPerson
   var patient: Reference
   
   /**
-    * The period of time during which this relationship is or was active. If there are no dates defined, then the interval is unknown.
+    * If an individual has a relationship with a patient over multiple, non-adjacent periods, there should be a distinct RelatedPerson instance for each period.  For example, if a person is a roommate for a period of time, moves out, and is later a roommate with the same person again, you would have two RelatedPerson instances.
     */
   var period: js.UndefOr[Period] = js.undefined
   
@@ -70,7 +70,7 @@ trait RelatedPerson
   var photo: js.UndefOr[js.Array[Attachment]] = js.undefined
   
   /**
-    * The nature of the relationship between a patient and the related person.
+    * The directionality of the relationship is from the RelatedPerson to the Patient. For example, if the Patient is a child, and the RelatedPerson is the mother, the relationship would be PRN (parent) or MTH (mother).
     */
   var relationship: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   

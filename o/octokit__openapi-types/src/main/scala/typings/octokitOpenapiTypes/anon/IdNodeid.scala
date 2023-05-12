@@ -6,80 +6,39 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IdNodeid extends StObject {
   
-  var actor: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['simple-user'] */ js.Any
-  
-  var assignee: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['simple-user'] */ js.Any
-  
-  var assigner: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['simple-user'] */ js.Any
-  
-  var commit_id: String | Null
-  
-  var commit_url: String | Null
-  
-  var created_at: String
-  
-  var event: String
-  
+  /** @example 3755 */
   var id: Double
   
+  /** @example MDQ6R2F0ZTM3NTU= */
   var node_id: String
   
-  var performed_via_github_app: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-integration'] */ js.Any
+  /** @description The people or teams that may approve jobs that reference the environment. You can list up to six users or teams as reviewers. The reviewers must have at least read access to the repository. Only one of the required reviewers needs to approve the job for it to proceed. */
+  var reviewers: js.UndefOr[js.Array[Reviewer]] = js.undefined
   
-  var url: String
+  /** @example required_reviewers */
+  var `type`: String
 }
 object IdNodeid {
   
-  inline def apply(
-    actor: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['simple-user'] */ js.Any,
-    assignee: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['simple-user'] */ js.Any,
-    assigner: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['simple-user'] */ js.Any,
-    created_at: String,
-    event: String,
-    id: Double,
-    node_id: String,
-    performed_via_github_app: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-integration'] */ js.Any,
-    url: String
-  ): IdNodeid = {
-    val __obj = js.Dynamic.literal(actor = actor.asInstanceOf[js.Any], assignee = assignee.asInstanceOf[js.Any], assigner = assigner.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], node_id = node_id.asInstanceOf[js.Any], performed_via_github_app = performed_via_github_app.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], commit_id = null, commit_url = null)
+  inline def apply(id: Double, node_id: String, `type`: String): IdNodeid = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], node_id = node_id.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdNodeid]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: IdNodeid] (val x: Self) extends AnyVal {
     
-    inline def setActor(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['simple-user'] */ js.Any
-    ): Self = StObject.set(x, "actor", value.asInstanceOf[js.Any])
-    
-    inline def setAssignee(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['simple-user'] */ js.Any
-    ): Self = StObject.set(x, "assignee", value.asInstanceOf[js.Any])
-    
-    inline def setAssigner(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['simple-user'] */ js.Any
-    ): Self = StObject.set(x, "assigner", value.asInstanceOf[js.Any])
-    
-    inline def setCommit_id(value: String): Self = StObject.set(x, "commit_id", value.asInstanceOf[js.Any])
-    
-    inline def setCommit_idNull: Self = StObject.set(x, "commit_id", null)
-    
-    inline def setCommit_url(value: String): Self = StObject.set(x, "commit_url", value.asInstanceOf[js.Any])
-    
-    inline def setCommit_urlNull: Self = StObject.set(x, "commit_url", null)
-    
-    inline def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
-    
-    inline def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
-    
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     inline def setNode_id(value: String): Self = StObject.set(x, "node_id", value.asInstanceOf[js.Any])
     
-    inline def setPerformed_via_github_app(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-integration'] */ js.Any
-    ): Self = StObject.set(x, "performed_via_github_app", value.asInstanceOf[js.Any])
+    inline def setReviewers(value: js.Array[Reviewer]): Self = StObject.set(x, "reviewers", value.asInstanceOf[js.Any])
     
-    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setReviewersUndefined: Self = StObject.set(x, "reviewers", js.undefined)
+    
+    inline def setReviewersVarargs(value: Reviewer*): Self = StObject.set(x, "reviewers", js.Array(value*))
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

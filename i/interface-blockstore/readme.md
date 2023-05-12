@@ -1,7 +1,7 @@
 
 # Scala.js typings for interface-blockstore
 
-Typings are for version 3.0.1
+Typings are for version 5.2.0
 
 ## Library description:
 An interface for storing and retrieving blocks

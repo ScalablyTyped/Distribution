@@ -12,7 +12,7 @@ trait CreateMedicalVocabularyRequest extends StObject {
   var LanguageCode: typings.awsSdk.clientsTranscribeserviceMod.LanguageCode
   
   /**
-    * Adds one or more custom tags, each in the form of a key:value pair, to a new medical vocabulary at the time you create this new vocabulary. To learn more about using tags with Amazon Transcribe, refer to Tagging resources.
+    * Adds one or more custom tags, each in the form of a key:value pair, to a new custom medical vocabulary at the time you create this new custom vocabulary. To learn more about using tags with Amazon Transcribe, refer to Tagging resources.
     */
   var Tags: js.UndefOr[TagList] = js.undefined
   
@@ -22,7 +22,7 @@ trait CreateMedicalVocabularyRequest extends StObject {
   var VocabularyFileUri: Uri
   
   /**
-    * A unique name, chosen by you, for your new custom medical vocabulary. This name is case sensitive, cannot contain spaces, and must be unique within an Amazon Web Services account. If you try to create a new medical vocabulary with the same name as an existing medical vocabulary, you get a ConflictException error.
+    * A unique name, chosen by you, for your new custom medical vocabulary. This name is case sensitive, cannot contain spaces, and must be unique within an Amazon Web Services account. If you try to create a new custom medical vocabulary with the same name as an existing custom medical vocabulary, you get a ConflictException error.
     */
   var VocabularyName: typings.awsSdk.clientsTranscribeserviceMod.VocabularyName
 }

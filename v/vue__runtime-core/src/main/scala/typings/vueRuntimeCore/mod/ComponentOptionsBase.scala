@@ -2,13 +2,14 @@ package typings.vueRuntimeCore.mod
 
 import typings.std.Record
 import typings.std.ThisType
+import typings.vueRuntimeCore.vueRuntimeCoreStrings.P
 import typings.vueShared.mod.LooseRequired
-import typings.vueShared.mod.UnionToIntersection
+import typings.vueShared.mod.Prettify
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ComponentOptionsBase[Props, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */, Defaults, I /* <: ComponentInjectOptions */, II /* <: String */]
+trait ComponentOptionsBase[Props, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */, Defaults, I /* <: ComponentInjectOptions */, II /* <: String */, S /* <: SlotsType[Record[String, Any]] */]
   extends StObject
      with LegacyOptions[Props, D, C, M, Mixin, Extends, I, II]
      with ComponentInternalOptions
@@ -22,10 +23,10 @@ trait ComponentOptionsBase[Props, RawBindings, D, C /* <: ComputedOptions */, M 
   
   var __isTeleport: js.UndefOr[scala.Nothing] = js.undefined
   
-  /* Excluded from this release type: ssrRender */
-  /* Excluded from this release type: __ssrInlineRender */
-  /* Excluded from this release type: __asyncLoader */
-  /* Excluded from this release type: __asyncResolved */
+  /* removed internal: ssrRender */
+  /* removed internal: __ssrInlineRender */
+  /* removed internal: __asyncLoader */
+  /* removed internal: __asyncResolved */
   var call: js.UndefOr[js.ThisFunction1[/* this */ Any, /* repeated */ Any, scala.Nothing]] = js.undefined
   
   var compilerOptions: js.UndefOr[RuntimeCompilerOptions] = js.undefined
@@ -44,30 +45,32 @@ trait ComponentOptionsBase[Props, RawBindings, D, C /* <: ComputedOptions */, M 
   
   var render: js.UndefOr[js.Function] = js.undefined
   
-  var serverPrefetch: js.UndefOr[js.Function0[js.Promise[Any]]] = js.undefined
+  var serverPrefetch: js.UndefOr[js.Function0[Unit | js.Promise[Any]]] = js.undefined
   
   var setup: js.UndefOr[
     js.ThisFunction2[
       /* this */ Unit, 
       /* props */ LooseRequired[
-        Props & UnionToIntersection[ExtractOptionProp[Mixin]] & UnionToIntersection[ExtractOptionProp[Extends]]
+        Props & (Prettify[UnwrapMixinsType[IntersectionMixin[Mixin] & IntersectionMixin[Extends], P]])
       ], 
-      /* ctx */ SetupContext[E], 
+      /* ctx */ SetupContext[E, S], 
       js.Promise[RawBindings] | RawBindings | RenderFunction | Unit
     ]
   ] = js.undefined
+  
+  var slots: js.UndefOr[S] = js.undefined
   
   var template: js.UndefOr[String | js.Object] = js.undefined
 }
 object ComponentOptionsBase {
   
-  inline def apply[Props, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */, Defaults, I /* <: ComponentInjectOptions */, II /* <: String */](): ComponentOptionsBase[Props, RawBindings, D, C, M, Mixin, Extends, E, EE, Defaults, I, II] = {
+  inline def apply[Props, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */, Defaults, I /* <: ComponentInjectOptions */, II /* <: String */, S /* <: SlotsType[Record[String, Any]] */](): ComponentOptionsBase[Props, RawBindings, D, C, M, Mixin, Extends, E, EE, Defaults, I, II, S] = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[ComponentOptionsBase[Props, RawBindings, D, C, M, Mixin, Extends, E, EE, Defaults, I, II]]
+    __obj.asInstanceOf[ComponentOptionsBase[Props, RawBindings, D, C, M, Mixin, Extends, E, EE, Defaults, I, II, S]]
   }
   
   @scala.inline
-  implicit open class MutableBuilder[Self <: ComponentOptionsBase[?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?], Props, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */, Defaults, I /* <: ComponentInjectOptions */, II /* <: String */] (val x: Self & (ComponentOptionsBase[Props, RawBindings, D, C, M, Mixin, Extends, E, EE, Defaults, I, II])) extends AnyVal {
+  implicit open class MutableBuilder[Self <: ComponentOptionsBase[?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?], Props, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */, Defaults, I /* <: ComponentInjectOptions */, II /* <: String */, S /* <: SlotsType[Record[String, Any]] */] (val x: Self & (ComponentOptionsBase[Props, RawBindings, D, C, M, Mixin, Extends, E, EE, Defaults, I, II, S])) extends AnyVal {
     
     inline def setCall(value: js.ThisFunction1[/* this */ Any, /* repeated */ Any, scala.Nothing]): Self = StObject.set(x, "call", value.asInstanceOf[js.Any])
     
@@ -107,7 +110,7 @@ object ComponentOptionsBase {
     
     inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
     
-    inline def setServerPrefetch(value: () => js.Promise[Any]): Self = StObject.set(x, "serverPrefetch", js.Any.fromFunction0(value))
+    inline def setServerPrefetch(value: () => Unit | js.Promise[Any]): Self = StObject.set(x, "serverPrefetch", js.Any.fromFunction0(value))
     
     inline def setServerPrefetchUndefined: Self = StObject.set(x, "serverPrefetch", js.undefined)
     
@@ -115,14 +118,18 @@ object ComponentOptionsBase {
       value: js.ThisFunction2[
           /* this */ Unit, 
           /* props */ LooseRequired[
-            Props & UnionToIntersection[ExtractOptionProp[Mixin]] & UnionToIntersection[ExtractOptionProp[Extends]]
+            Props & (Prettify[UnwrapMixinsType[IntersectionMixin[Mixin] & IntersectionMixin[Extends], P]])
           ], 
-          /* ctx */ SetupContext[E], 
+          /* ctx */ SetupContext[E, S], 
           js.Promise[RawBindings] | RawBindings | RenderFunction | Unit
         ]
     ): Self = StObject.set(x, "setup", value.asInstanceOf[js.Any])
     
     inline def setSetupUndefined: Self = StObject.set(x, "setup", js.undefined)
+    
+    inline def setSlots(value: S): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
+    
+    inline def setSlotsUndefined: Self = StObject.set(x, "slots", js.undefined)
     
     inline def setTemplate(value: String | js.Object): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     

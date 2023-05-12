@@ -11,6 +11,9 @@ trait InputParams
   
   /** Changes input type to 'search' and shows an 'X' clear button to clear the cell value easily. */
   var search: js.UndefOr[Boolean] = js.undefined
+  
+  /** When the editor is loaded select its text content */
+  var selectContents: js.UndefOr[Boolean] = js.undefined
 }
 object InputParams {
   
@@ -25,5 +28,9 @@ object InputParams {
     inline def setSearch(value: Boolean): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
     
     inline def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
+    
+    inline def setSelectContents(value: Boolean): Self = StObject.set(x, "selectContents", value.asInstanceOf[js.Any])
+    
+    inline def setSelectContentsUndefined: Self = StObject.set(x, "selectContents", js.undefined)
   }
 }

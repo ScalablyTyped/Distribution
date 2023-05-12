@@ -62,6 +62,8 @@ trait InitialProjectOptions extends StObject {
   
   var modulePaths: js.UndefOr[js.Array[String]] = js.undefined
   
+  var openHandlesTimeout: js.UndefOr[Double] = js.undefined
+  
   var preset: js.UndefOr[String | Null] = js.undefined
   
   var prettierPath: js.UndefOr[String | Null] = js.undefined
@@ -255,6 +257,10 @@ object InitialProjectOptions {
     inline def setModulePathsUndefined: Self = StObject.set(x, "modulePaths", js.undefined)
     
     inline def setModulePathsVarargs(value: String*): Self = StObject.set(x, "modulePaths", js.Array(value*))
+    
+    inline def setOpenHandlesTimeout(value: Double): Self = StObject.set(x, "openHandlesTimeout", value.asInstanceOf[js.Any])
+    
+    inline def setOpenHandlesTimeoutUndefined: Self = StObject.set(x, "openHandlesTimeout", js.undefined)
     
     inline def setPreset(value: String): Self = StObject.set(x, "preset", value.asInstanceOf[js.Any])
     

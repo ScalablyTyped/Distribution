@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cnpj"
-version := "4.0.1-10c693"
+version := "4.0.3-f0d147"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

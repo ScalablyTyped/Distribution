@@ -6,9 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `6` extends StObject {
   
-  var value: js.UndefOr[js.Date | Double] = js.undefined
-  
-  var valueText: js.UndefOr[String] = js.undefined
+  /**
+    * Indicates whether to display the LinearGauge UI component vertically or horizontally.
+    */
+  var orientation: js.UndefOr[typings.devextreme.mod.DevExpress.common.Orientation] = js.undefined
 }
 object `6` {
   
@@ -20,12 +21,8 @@ object `6` {
   @scala.inline
   implicit open class MutableBuilder[Self <: `6`] (val x: Self) extends AnyVal {
     
-    inline def setValue(value: js.Date | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setOrientation(value: typings.devextreme.mod.DevExpress.common.Orientation): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
-    inline def setValueText(value: String): Self = StObject.set(x, "valueText", value.asInstanceOf[js.Any])
-    
-    inline def setValueTextUndefined: Self = StObject.set(x, "valueText", js.undefined)
-    
-    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
   }
 }

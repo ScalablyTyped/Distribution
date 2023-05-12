@@ -111,6 +111,11 @@ object distCoreGlobalstateMod {
       */
     var spyListeners: js.Array[js.Function1[/* change */ Any, Unit]] = js.native
     
+    /**
+      * Changes with each state update, used by useSyncExternalStore
+      */
+    var stateVersion: Double = js.native
+    
     var suppressReactionErrors: Boolean = js.native
     
     /**

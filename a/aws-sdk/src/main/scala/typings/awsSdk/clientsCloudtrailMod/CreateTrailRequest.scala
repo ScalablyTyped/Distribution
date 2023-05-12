@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateTrailRequest extends StObject {
   
   /**
-    * Specifies a log group name using an Amazon Resource Name (ARN), a unique identifier that represents the log group to which CloudTrail logs will be delivered. Not required unless you specify CloudWatchLogsRoleArn.
+    * Specifies a log group name using an Amazon Resource Name (ARN), a unique identifier that represents the log group to which CloudTrail logs will be delivered. You must use a log group that exists in your account. Not required unless you specify CloudWatchLogsRoleArn.
     */
   var CloudWatchLogsLogGroupArn: js.UndefOr[String] = js.undefined
   
   /**
-    * Specifies the role for the CloudWatch Logs endpoint to assume to write to a user's log group.
+    * Specifies the role for the CloudWatch Logs endpoint to assume to write to a user's log group. You must use a role that exists in your account.
     */
   var CloudWatchLogsRoleArn: js.UndefOr[String] = js.undefined
   
@@ -32,7 +32,7 @@ trait CreateTrailRequest extends StObject {
   var IsMultiRegionTrail: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Specifies whether the trail is created for all accounts in an organization in Organizations, or only for the current Amazon Web Services account. The default is false, and cannot be true unless the call is made on behalf of an Amazon Web Services account that is the management account for an organization in Organizations.
+    * Specifies whether the trail is created for all accounts in an organization in Organizations, or only for the current Amazon Web Services account. The default is false, and cannot be true unless the call is made on behalf of an Amazon Web Services account that is the management account or delegated administrator account for an organization in Organizations.
     */
   var IsOrganizationTrail: js.UndefOr[Boolean] = js.undefined
   

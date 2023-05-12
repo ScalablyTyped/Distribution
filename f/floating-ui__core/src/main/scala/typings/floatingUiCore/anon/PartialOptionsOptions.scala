@@ -21,6 +21,8 @@ trait PartialOptionsOptions extends StObject {
   
   var boundary: js.UndefOr[typings.floatingUiCore.srcTypesMod.Boundary] = js.undefined
   
+  var crossAxis: js.UndefOr[Boolean] = js.undefined
+  
   var elementContext: js.UndefOr[ElementContext] = js.undefined
   
   var padding: js.UndefOr[Padding] = js.undefined
@@ -60,6 +62,10 @@ object PartialOptionsOptions {
     inline def setBoundary(value: typings.floatingUiCore.srcTypesMod.Boundary): Self = StObject.set(x, "boundary", value.asInstanceOf[js.Any])
     
     inline def setBoundaryUndefined: Self = StObject.set(x, "boundary", js.undefined)
+    
+    inline def setCrossAxis(value: Boolean): Self = StObject.set(x, "crossAxis", value.asInstanceOf[js.Any])
+    
+    inline def setCrossAxisUndefined: Self = StObject.set(x, "crossAxis", js.undefined)
     
     inline def setElementContext(value: ElementContext): Self = StObject.set(x, "elementContext", value.asInstanceOf[js.Any])
     

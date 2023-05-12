@@ -12,7 +12,7 @@ trait DeleteBackupRequest extends StObject {
   var BackupId: typings.awsSdk.clientsFsxMod.BackupId
   
   /**
-    * A string of up to 64 ASCII characters that Amazon FSx uses to ensure idempotent deletion. This parameter is automatically filled on your behalf when using the CLI or SDK.
+    * A string of up to 63 ASCII characters that Amazon FSx uses to ensure idempotent deletion. This parameter is automatically filled on your behalf when using the CLI or SDK.
     */
   var ClientRequestToken: js.UndefOr[typings.awsSdk.clientsFsxMod.ClientRequestToken] = js.undefined
 }

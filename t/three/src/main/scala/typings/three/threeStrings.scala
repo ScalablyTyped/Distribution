@@ -5,11 +5,14 @@ import typings.three.examplesJsmLoadersGltfloaderMod.GLTFReferenceType
 import typings.three.examplesJsmNodesCoreConstantsMod.NodeShaderStageOption
 import typings.three.examplesJsmNodesCoreConstantsMod.NodeTypeOption
 import typings.three.examplesJsmNodesCoreConstantsMod.NodeUpdateTypeOption
+import typings.three.examplesJsmNodesCoreInputNodeMod.Precision
 import typings.three.examplesJsmNodesCoreNodeBuilderMod.BuildStageOption
 import typings.three.examplesJsmNodesMathOperatorNodeMod.OperatorNodeOp
 import typings.three.examplesJsmWebxrXrhandmodelfactoryMod.XRHandModelHandedness
-import typings.three.srcConstantsMod.BuiltinShaderAttributeName
+import typings.three.srcConstantsMod.GLSLVersion
 import typings.three.srcConstantsMod.PixelFormatGPU
+import typings.three.srcConstantsMod._ColorSpace
+import typings.three.srcExtrasCurvesCatmullRomCurve3Mod.CurveType
 import typings.three.srcMathEulerMod.EulerOrder
 import typings.three.srcRenderersWebxrWebXRControllerMod._XRControllerEventType
 import org.scalablytyped.runtime.StObject
@@ -31,10 +34,26 @@ object threeStrings {
   inline def `-_`: `-_` = "-".asInstanceOf[`-_`]
   
   @js.native
+  sealed trait `100`
+    extends StObject
+       with GLSLVersion
+  inline def `100`: `100` = "100".asInstanceOf[`100`]
+  
+  @js.native
+  sealed trait `300 es`
+    extends StObject
+       with GLSLVersion
+  inline def `300 es`: `300 es` = ("300 es").asInstanceOf[`300 es`]
+  
+  @js.native
   sealed trait ALPHA
     extends StObject
        with PixelFormatGPU
   inline def ALPHA: ALPHA = "ALPHA".asInstanceOf[ALPHA]
+  
+  @js.native
+  sealed trait AmbientLight extends StObject
+  inline def AmbientLight: AmbientLight = "AmbientLight".asInstanceOf[AmbientLight]
   
   @js.native
   sealed trait Ampersand
@@ -47,6 +66,14 @@ object threeStrings {
     extends StObject
        with OperatorNodeOp
   inline def AmpersandAmpersand: AmpersandAmpersand = "&&".asInstanceOf[AmpersandAmpersand]
+  
+  @js.native
+  sealed trait ArcCurve extends StObject
+  inline def ArcCurve: ArcCurve = "ArcCurve".asInstanceOf[ArcCurve]
+  
+  @js.native
+  sealed trait ArrowHelper extends StObject
+  inline def ArrowHelper: ArrowHelper = "ArrowHelper".asInstanceOf[ArrowHelper]
   
   @js.native
   sealed trait Asterisk
@@ -63,12 +90,76 @@ object threeStrings {
   inline def AudioListener: AudioListener = "AudioListener".asInstanceOf[AudioListener]
   
   @js.native
+  sealed trait AxesHelper extends StObject
+  inline def AxesHelper: AxesHelper = "AxesHelper".asInstanceOf[AxesHelper]
+  
+  @js.native
   sealed trait Bone extends StObject
   inline def Bone: Bone = "Bone".asInstanceOf[Bone]
   
   @js.native
+  sealed trait Box3Helper extends StObject
+  inline def Box3Helper: Box3Helper = "Box3Helper".asInstanceOf[Box3Helper]
+  
+  @js.native
+  sealed trait BoxGeometry extends StObject
+  inline def BoxGeometry: BoxGeometry = "BoxGeometry".asInstanceOf[BoxGeometry]
+  
+  @js.native
+  sealed trait BoxHelper extends StObject
+  inline def BoxHelper: BoxHelper = "BoxHelper".asInstanceOf[BoxHelper]
+  
+  @js.native
+  sealed trait BufferGeometry extends StObject
+  inline def BufferGeometry: BufferGeometry = "BufferGeometry".asInstanceOf[BufferGeometry]
+  
+  @js.native
+  sealed trait Camera extends StObject
+  inline def Camera: Camera = "Camera".asInstanceOf[Camera]
+  
+  @js.native
+  sealed trait CameraHelper extends StObject
+  inline def CameraHelper: CameraHelper = "CameraHelper".asInstanceOf[CameraHelper]
+  
+  @js.native
+  sealed trait CapsuleGeometry extends StObject
+  inline def CapsuleGeometry: CapsuleGeometry = "CapsuleGeometry".asInstanceOf[CapsuleGeometry]
+  
+  @js.native
+  sealed trait CatmullRomCurve3 extends StObject
+  inline def CatmullRomCurve3: CatmullRomCurve3 = "CatmullRomCurve3".asInstanceOf[CatmullRomCurve3]
+  
+  @js.native
+  sealed trait CircleGeometry extends StObject
+  inline def CircleGeometry: CircleGeometry = "CircleGeometry".asInstanceOf[CircleGeometry]
+  
+  @js.native
+  sealed trait ConeGeometry extends StObject
+  inline def ConeGeometry: ConeGeometry = "ConeGeometry".asInstanceOf[ConeGeometry]
+  
+  @js.native
   sealed trait CubeCamera extends StObject
   inline def CubeCamera: CubeCamera = "CubeCamera".asInstanceOf[CubeCamera]
+  
+  @js.native
+  sealed trait CubicBezierCurve extends StObject
+  inline def CubicBezierCurve: CubicBezierCurve = "CubicBezierCurve".asInstanceOf[CubicBezierCurve]
+  
+  @js.native
+  sealed trait CubicBezierCurve3 extends StObject
+  inline def CubicBezierCurve3: CubicBezierCurve3 = "CubicBezierCurve3".asInstanceOf[CubicBezierCurve3]
+  
+  @js.native
+  sealed trait Curve extends StObject
+  inline def Curve: Curve = "Curve".asInstanceOf[Curve]
+  
+  @js.native
+  sealed trait CurvePath extends StObject
+  inline def CurvePath: CurvePath = "CurvePath".asInstanceOf[CurvePath]
+  
+  @js.native
+  sealed trait CylinderGeometry extends StObject
+  inline def CylinderGeometry: CylinderGeometry = "CylinderGeometry".asInstanceOf[CylinderGeometry]
   
   @js.native
   sealed trait DEPTH24_STENCIL8
@@ -101,8 +192,28 @@ object threeStrings {
   inline def DEPTH_COMPONENT32F: DEPTH_COMPONENT32F = "DEPTH_COMPONENT32F".asInstanceOf[DEPTH_COMPONENT32F]
   
   @js.native
+  sealed trait DirectionalLight extends StObject
+  inline def DirectionalLight: DirectionalLight = "DirectionalLight".asInstanceOf[DirectionalLight]
+  
+  @js.native
+  sealed trait DirectionalLightHelper extends StObject
+  inline def DirectionalLightHelper: DirectionalLightHelper = "DirectionalLightHelper".asInstanceOf[DirectionalLightHelper]
+  
+  @js.native
+  sealed trait DodecahedronGeometry extends StObject
+  inline def DodecahedronGeometry: DodecahedronGeometry = "DodecahedronGeometry".asInstanceOf[DodecahedronGeometry]
+  
+  @js.native
   sealed trait E extends StObject
   inline def E: E = "E".asInstanceOf[E]
+  
+  @js.native
+  sealed trait EdgesGeometry extends StObject
+  inline def EdgesGeometry: EdgesGeometry = "EdgesGeometry".asInstanceOf[EdgesGeometry]
+  
+  @js.native
+  sealed trait EllipseCurve extends StObject
+  inline def EllipseCurve: EllipseCurve = "EllipseCurve".asInstanceOf[EllipseCurve]
   
   @js.native
   sealed trait Equalssign
@@ -115,6 +226,10 @@ object threeStrings {
     extends StObject
        with OperatorNodeOp
   inline def EqualssignEqualssign: EqualssignEqualssign = "==".asInstanceOf[EqualssignEqualssign]
+  
+  @js.native
+  sealed trait ExtrudeGeometry extends StObject
+  inline def ExtrudeGeometry: ExtrudeGeometry = "ExtrudeGeometry".asInstanceOf[ExtrudeGeometry]
   
   @js.native
   sealed trait Greaterthansign
@@ -135,8 +250,24 @@ object threeStrings {
   inline def GreaterthansignGreaterthansign: GreaterthansignGreaterthansign = ">>".asInstanceOf[GreaterthansignGreaterthansign]
   
   @js.native
+  sealed trait GridHelper extends StObject
+  inline def GridHelper: GridHelper = "GridHelper".asInstanceOf[GridHelper]
+  
+  @js.native
   sealed trait Group extends StObject
   inline def Group: Group = "Group".asInstanceOf[Group]
+  
+  @js.native
+  sealed trait HemisphereLight extends StObject
+  inline def HemisphereLight: HemisphereLight = "HemisphereLight".asInstanceOf[HemisphereLight]
+  
+  @js.native
+  sealed trait HemisphereLightHelper extends StObject
+  inline def HemisphereLightHelper: HemisphereLightHelper = "HemisphereLightHelper".asInstanceOf[HemisphereLightHelper]
+  
+  @js.native
+  sealed trait IcosahedronGeometry extends StObject
+  inline def IcosahedronGeometry: IcosahedronGeometry = "IcosahedronGeometry".asInstanceOf[IcosahedronGeometry]
   
   @js.native
   sealed trait LOD extends StObject
@@ -153,6 +284,10 @@ object threeStrings {
     extends StObject
        with PixelFormatGPU
   inline def LUMINANCE_ALPHA: LUMINANCE_ALPHA = "LUMINANCE_ALPHA".asInstanceOf[LUMINANCE_ALPHA]
+  
+  @js.native
+  sealed trait LatheGeometry extends StObject
+  inline def LatheGeometry: LatheGeometry = "LatheGeometry".asInstanceOf[LatheGeometry]
   
   @js.native
   sealed trait Lessthansign
@@ -173,8 +308,20 @@ object threeStrings {
   inline def LessthansignLessthansign: LessthansignLessthansign = "<<".asInstanceOf[LessthansignLessthansign]
   
   @js.native
+  sealed trait Light extends StObject
+  inline def Light: Light = "Light".asInstanceOf[Light]
+  
+  @js.native
   sealed trait Line extends StObject
   inline def Line: Line = "Line".asInstanceOf[Line]
+  
+  @js.native
+  sealed trait LineCurve extends StObject
+  inline def LineCurve: LineCurve = "LineCurve".asInstanceOf[LineCurve]
+  
+  @js.native
+  sealed trait LineCurve3 extends StObject
+  inline def LineCurve3: LineCurve3 = "LineCurve3".asInstanceOf[LineCurve3]
   
   @js.native
   sealed trait LineLoop extends StObject
@@ -193,8 +340,20 @@ object threeStrings {
   inline def LinearTosRGB: LinearTosRGB = "LinearTosRGB".asInstanceOf[LinearTosRGB]
   
   @js.native
+  sealed trait Mesh extends StObject
+  inline def Mesh: Mesh = "Mesh".asInstanceOf[Mesh]
+  
+  @js.native
   sealed trait MeshGouraudMaterial extends StObject
   inline def MeshGouraudMaterial: MeshGouraudMaterial = "MeshGouraudMaterial".asInstanceOf[MeshGouraudMaterial]
+  
+  @js.native
+  sealed trait Object3D extends StObject
+  inline def Object3D: Object3D = "Object3D".asInstanceOf[Object3D]
+  
+  @js.native
+  sealed trait OctahedronGeometry extends StObject
+  inline def OctahedronGeometry: OctahedronGeometry = "OctahedronGeometry".asInstanceOf[OctahedronGeometry]
   
   @js.native
   sealed trait OctreeHelper extends StObject
@@ -203,6 +362,10 @@ object threeStrings {
   @js.native
   sealed trait OrthographicCamera extends StObject
   inline def OrthographicCamera: OrthographicCamera = "OrthographicCamera".asInstanceOf[OrthographicCamera]
+  
+  @js.native
+  sealed trait Path extends StObject
+  inline def Path: Path = "Path".asInstanceOf[Path]
   
   @js.native
   sealed trait Percentsign
@@ -215,14 +378,42 @@ object threeStrings {
   inline def PerspectiveCamera: PerspectiveCamera = "PerspectiveCamera".asInstanceOf[PerspectiveCamera]
   
   @js.native
+  sealed trait PlaneGeometry extends StObject
+  inline def PlaneGeometry: PlaneGeometry = "PlaneGeometry".asInstanceOf[PlaneGeometry]
+  
+  @js.native
+  sealed trait PlaneHelper extends StObject
+  inline def PlaneHelper: PlaneHelper = "PlaneHelper".asInstanceOf[PlaneHelper]
+  
+  @js.native
   sealed trait Plussign
     extends StObject
        with OperatorNodeOp
   inline def Plussign: Plussign = "+".asInstanceOf[Plussign]
   
   @js.native
+  sealed trait PointLightHelper extends StObject
+  inline def PointLightHelper: PointLightHelper = "PointLightHelper".asInstanceOf[PointLightHelper]
+  
+  @js.native
   sealed trait Points extends StObject
   inline def Points: Points = "Points".asInstanceOf[Points]
+  
+  @js.native
+  sealed trait PolarGridHelper extends StObject
+  inline def PolarGridHelper: PolarGridHelper = "PolarGridHelper".asInstanceOf[PolarGridHelper]
+  
+  @js.native
+  sealed trait PolyhedronGeometry extends StObject
+  inline def PolyhedronGeometry: PolyhedronGeometry = "PolyhedronGeometry".asInstanceOf[PolyhedronGeometry]
+  
+  @js.native
+  sealed trait QuadraticBezierCurve extends StObject
+  inline def QuadraticBezierCurve: QuadraticBezierCurve = "QuadraticBezierCurve".asInstanceOf[QuadraticBezierCurve]
+  
+  @js.native
+  sealed trait QuadraticBezierCurve3 extends StObject
+  inline def QuadraticBezierCurve3: QuadraticBezierCurve3 = "QuadraticBezierCurve3".asInstanceOf[QuadraticBezierCurve3]
   
   @js.native
   sealed trait R11F_G11F_B10F
@@ -525,6 +716,10 @@ object threeStrings {
   inline def RGBA8_SNORM: RGBA8_SNORM = "RGBA8_SNORM".asInstanceOf[RGBA8_SNORM]
   
   @js.native
+  sealed trait RectAreaLight extends StObject
+  inline def RectAreaLight: RectAreaLight = "RectAreaLight".asInstanceOf[RectAreaLight]
+  
+  @js.native
   sealed trait Reflector extends StObject
   inline def Reflector: Reflector = "Reflector".asInstanceOf[Reflector]
   
@@ -535,6 +730,10 @@ object threeStrings {
   @js.native
   sealed trait Refractor extends StObject
   inline def Refractor: Refractor = "Refractor".asInstanceOf[Refractor]
+  
+  @js.native
+  sealed trait RingGeometry extends StObject
+  inline def RingGeometry: RingGeometry = "RingGeometry".asInstanceOf[RingGeometry]
   
   @js.native
   sealed trait SRGB8
@@ -553,10 +752,46 @@ object threeStrings {
   inline def Scene: Scene = "Scene".asInstanceOf[Scene]
   
   @js.native
+  sealed trait Shape extends StObject
+  inline def Shape: Shape = "Shape".asInstanceOf[Shape]
+  
+  @js.native
+  sealed trait ShapeGeometry extends StObject
+  inline def ShapeGeometry: ShapeGeometry = "ShapeGeometry".asInstanceOf[ShapeGeometry]
+  
+  @js.native
+  sealed trait ShapePath extends StObject
+  inline def ShapePath: ShapePath = "ShapePath".asInstanceOf[ShapePath]
+  
+  @js.native
+  sealed trait SkeletonHelper extends StObject
+  inline def SkeletonHelper: SkeletonHelper = "SkeletonHelper".asInstanceOf[SkeletonHelper]
+  
+  @js.native
+  sealed trait SkinnedMesh extends StObject
+  inline def SkinnedMesh: SkinnedMesh = "SkinnedMesh".asInstanceOf[SkinnedMesh]
+  
+  @js.native
   sealed trait Slash
     extends StObject
        with OperatorNodeOp
   inline def Slash: Slash = "/".asInstanceOf[Slash]
+  
+  @js.native
+  sealed trait SphereGeometry extends StObject
+  inline def SphereGeometry: SphereGeometry = "SphereGeometry".asInstanceOf[SphereGeometry]
+  
+  @js.native
+  sealed trait SplineCurve extends StObject
+  inline def SplineCurve: SplineCurve = "SplineCurve".asInstanceOf[SplineCurve]
+  
+  @js.native
+  sealed trait SpotLight extends StObject
+  inline def SpotLight: SpotLight = "SpotLight".asInstanceOf[SpotLight]
+  
+  @js.native
+  sealed trait SpotLightHelper extends StObject
+  inline def SpotLightHelper: SpotLightHelper = "SpotLightHelper".asInstanceOf[SpotLightHelper]
   
   @js.native
   sealed trait Sprite extends StObject
@@ -567,12 +802,32 @@ object threeStrings {
   inline def StereoCamera: StereoCamera = "StereoCamera".asInstanceOf[StereoCamera]
   
   @js.native
+  sealed trait TetrahedronGeometry extends StObject
+  inline def TetrahedronGeometry: TetrahedronGeometry = "TetrahedronGeometry".asInstanceOf[TetrahedronGeometry]
+  
+  @js.native
+  sealed trait TextGeometry extends StObject
+  inline def TextGeometry: TextGeometry = "TextGeometry".asInstanceOf[TextGeometry]
+  
+  @js.native
+  sealed trait TorusGeometry extends StObject
+  inline def TorusGeometry: TorusGeometry = "TorusGeometry".asInstanceOf[TorusGeometry]
+  
+  @js.native
+  sealed trait TorusKnotGeometry extends StObject
+  inline def TorusKnotGeometry: TorusKnotGeometry = "TorusKnotGeometry".asInstanceOf[TorusKnotGeometry]
+  
+  @js.native
   sealed trait TransformControlsGizmo extends StObject
   inline def TransformControlsGizmo: TransformControlsGizmo = "TransformControlsGizmo".asInstanceOf[TransformControlsGizmo]
   
   @js.native
   sealed trait TransformControlsPlane extends StObject
   inline def TransformControlsPlane: TransformControlsPlane = "TransformControlsPlane".asInstanceOf[TransformControlsPlane]
+  
+  @js.native
+  sealed trait TubeGeometry extends StObject
+  inline def TubeGeometry: TubeGeometry = "TubeGeometry".asInstanceOf[TubeGeometry]
   
   @js.native
   sealed trait Verticalline
@@ -591,6 +846,10 @@ object threeStrings {
     extends StObject
        with ArcballControlsMouseActionMouse
   inline def WHEEL: WHEEL = "WHEEL".asInstanceOf[WHEEL]
+  
+  @js.native
+  sealed trait WireframeGeometry extends StObject
+  inline def WireframeGeometry: WireframeGeometry = "WireframeGeometry".asInstanceOf[WireframeGeometry]
   
   @js.native
   sealed trait X extends StObject
@@ -663,7 +922,9 @@ object threeStrings {
   inline def `^^`: `^^` = "^^".asInstanceOf[`^^`]
   
   @js.native
-  sealed trait _empty extends StObject
+  sealed trait _empty
+    extends StObject
+       with _ColorSpace
   inline def _empty: _empty = "".asInstanceOf[_empty]
   
   @js.native
@@ -697,6 +958,10 @@ object threeStrings {
   inline def atan2: atan2 = "atan2".asInstanceOf[atan2]
   
   @js.native
+  sealed trait attached extends StObject
+  inline def attached: attached = "attached".asInstanceOf[attached]
+  
+  @js.native
   sealed trait bmat3
     extends StObject
        with NodeTypeOption
@@ -713,6 +978,14 @@ object threeStrings {
     extends StObject
        with NodeTypeOption
   inline def bool: bool = "bool".asInstanceOf[bool]
+  
+  @js.native
+  sealed trait bottomLeft extends StObject
+  inline def bottomLeft: bottomLeft = "bottomLeft".asInstanceOf[bottomLeft]
+  
+  @js.native
+  sealed trait bottomRight extends StObject
+  inline def bottomRight: bottomRight = "bottomRight".asInstanceOf[bottomRight]
   
   @js.native
   sealed trait box extends StObject
@@ -745,8 +1018,26 @@ object threeStrings {
   inline def bvec4: bvec4 = "bvec4".asInstanceOf[bvec4]
   
   @js.native
+  sealed trait catmullrom
+    extends StObject
+       with CurveType
+  inline def catmullrom: catmullrom = "catmullrom".asInstanceOf[catmullrom]
+  
+  @js.native
   sealed trait ceil extends StObject
   inline def ceil: ceil = "ceil".asInstanceOf[ceil]
+  
+  @js.native
+  sealed trait centripetal
+    extends StObject
+       with CurveType
+  inline def centripetal: centripetal = "centripetal".asInstanceOf[centripetal]
+  
+  @js.native
+  sealed trait chordal
+    extends StObject
+       with CurveType
+  inline def chordal: chordal = "chordal".asInstanceOf[chordal]
   
   @js.native
   sealed trait clamp extends StObject
@@ -761,7 +1052,6 @@ object threeStrings {
   @js.native
   sealed trait color
     extends StObject
-       with BuiltinShaderAttributeName
        with NodeTypeOption
   inline def color: color = "color".asInstanceOf[color]
   
@@ -782,6 +1072,10 @@ object threeStrings {
     extends StObject
        with BuildStageOption
   inline def construct: construct = "construct".asInstanceOf[construct]
+  
+  @js.native
+  sealed trait coordinate extends StObject
+  inline def coordinate: coordinate = "coordinate".asInstanceOf[coordinate]
   
   @js.native
   sealed trait cos extends StObject
@@ -812,6 +1106,10 @@ object threeStrings {
   @js.native
   sealed trait delta extends StObject
   inline def delta: delta = "delta".asInstanceOf[delta]
+  
+  @js.native
+  sealed trait detached extends StObject
+  inline def detached: detached = "detached".asInstanceOf[detached]
   
   @js.native
   sealed trait disconnected
@@ -884,8 +1182,18 @@ object threeStrings {
   inline def geometry: geometry = "geometry".asInstanceOf[geometry]
   
   @js.native
+  sealed trait gl_FragCoord extends StObject
+  inline def gl_FragCoord: gl_FragCoord = "gl_FragCoord".asInstanceOf[gl_FragCoord]
+  
+  @js.native
   sealed trait global extends StObject
   inline def global: global = "global".asInstanceOf[global]
+  
+  @js.native
+  sealed trait high
+    extends StObject
+       with Precision
+  inline def high: high = "high".asInstanceOf[high]
   
   @js.native
   sealed trait highp extends StObject
@@ -908,12 +1216,6 @@ object threeStrings {
   inline def imat4: imat4 = "imat4".asInstanceOf[imat4]
   
   @js.native
-  sealed trait instanceMatrix
-    extends StObject
-       with BuiltinShaderAttributeName
-  inline def instanceMatrix: instanceMatrix = "instanceMatrix".asInstanceOf[instanceMatrix]
-  
-  @js.native
   sealed trait int
     extends StObject
        with NodeTypeOption
@@ -922,10 +1224,6 @@ object threeStrings {
   @js.native
   sealed trait inversesqrt extends StObject
   inline def inversesqrt: inversesqrt = "inversesqrt".asInstanceOf[inversesqrt]
-  
-  @js.native
-  sealed trait invert extends StObject
-  inline def invert: invert = "invert".asInstanceOf[invert]
   
   @js.native
   sealed trait ivec2
@@ -968,6 +1266,12 @@ object threeStrings {
   inline def log2: log2 = "log2".asInstanceOf[log2]
   
   @js.native
+  sealed trait low
+    extends StObject
+       with Precision
+  inline def low: low = "low".asInstanceOf[low]
+  
+  @js.native
   sealed trait lowp extends StObject
   inline def lowp: lowp = "lowp".asInstanceOf[lowp]
   
@@ -994,12 +1298,18 @@ object threeStrings {
   inline def max: max = "max".asInstanceOf[max]
   
   @js.native
+  sealed trait medium
+    extends StObject
+       with Precision
+  inline def medium: medium = "medium".asInstanceOf[medium]
+  
+  @js.native
   sealed trait mediump extends StObject
   inline def mediump: mediump = "mediump".asInstanceOf[mediump]
   
   @js.native
-  sealed trait mesh extends StObject
-  inline def mesh: mesh = "mesh".asInstanceOf[mesh]
+  sealed trait mesh_ extends StObject
+  inline def mesh_ : mesh_ = "mesh".asInstanceOf[mesh_]
   
   @js.native
   sealed trait meshes
@@ -1024,78 +1334,6 @@ object threeStrings {
   inline def mod: mod = "mod".asInstanceOf[mod]
   
   @js.native
-  sealed trait morphNormal0
-    extends StObject
-       with BuiltinShaderAttributeName
-  inline def morphNormal0: morphNormal0 = "morphNormal0".asInstanceOf[morphNormal0]
-  
-  @js.native
-  sealed trait morphNormal1
-    extends StObject
-       with BuiltinShaderAttributeName
-  inline def morphNormal1: morphNormal1 = "morphNormal1".asInstanceOf[morphNormal1]
-  
-  @js.native
-  sealed trait morphNormal2
-    extends StObject
-       with BuiltinShaderAttributeName
-  inline def morphNormal2: morphNormal2 = "morphNormal2".asInstanceOf[morphNormal2]
-  
-  @js.native
-  sealed trait morphNormal3
-    extends StObject
-       with BuiltinShaderAttributeName
-  inline def morphNormal3: morphNormal3 = "morphNormal3".asInstanceOf[morphNormal3]
-  
-  @js.native
-  sealed trait morphTarget0
-    extends StObject
-       with BuiltinShaderAttributeName
-  inline def morphTarget0: morphTarget0 = "morphTarget0".asInstanceOf[morphTarget0]
-  
-  @js.native
-  sealed trait morphTarget1
-    extends StObject
-       with BuiltinShaderAttributeName
-  inline def morphTarget1: morphTarget1 = "morphTarget1".asInstanceOf[morphTarget1]
-  
-  @js.native
-  sealed trait morphTarget2
-    extends StObject
-       with BuiltinShaderAttributeName
-  inline def morphTarget2: morphTarget2 = "morphTarget2".asInstanceOf[morphTarget2]
-  
-  @js.native
-  sealed trait morphTarget3
-    extends StObject
-       with BuiltinShaderAttributeName
-  inline def morphTarget3: morphTarget3 = "morphTarget3".asInstanceOf[morphTarget3]
-  
-  @js.native
-  sealed trait morphTarget4
-    extends StObject
-       with BuiltinShaderAttributeName
-  inline def morphTarget4: morphTarget4 = "morphTarget4".asInstanceOf[morphTarget4]
-  
-  @js.native
-  sealed trait morphTarget5
-    extends StObject
-       with BuiltinShaderAttributeName
-  inline def morphTarget5: morphTarget5 = "morphTarget5".asInstanceOf[morphTarget5]
-  
-  @js.native
-  sealed trait morphTarget6
-    extends StObject
-       with BuiltinShaderAttributeName
-  inline def morphTarget6: morphTarget6 = "morphTarget6".asInstanceOf[morphTarget6]
-  
-  @js.native
-  sealed trait morphTarget7
-    extends StObject
-       with BuiltinShaderAttributeName
-  inline def morphTarget7: morphTarget7 = "morphTarget7".asInstanceOf[morphTarget7]
-  
-  @js.native
   sealed trait negate extends StObject
   inline def negate: negate = "negate".asInstanceOf[negate]
   
@@ -1112,12 +1350,6 @@ object threeStrings {
   inline def none: none = "none".asInstanceOf[none]
   
   @js.native
-  sealed trait normal
-    extends StObject
-       with BuiltinShaderAttributeName
-  inline def normal: normal = "normal".asInstanceOf[normal]
-  
-  @js.native
   sealed trait normalMatrix extends StObject
   inline def normalMatrix: normalMatrix = "normalMatrix".asInstanceOf[normalMatrix]
   
@@ -1132,6 +1364,10 @@ object threeStrings {
   inline def `object`: `object` = "object".asInstanceOf[`object`]
   
   @js.native
+  sealed trait oneMinus extends StObject
+  inline def oneMinus: oneMinus = "oneMinus".asInstanceOf[oneMinus]
+  
+  @js.native
   sealed trait opacity extends StObject
   inline def opacity: opacity = "opacity".asInstanceOf[opacity]
   
@@ -1140,9 +1376,7 @@ object threeStrings {
   inline def overlay: overlay = "overlay".asInstanceOf[overlay]
   
   @js.native
-  sealed trait position
-    extends StObject
-       with BuiltinShaderAttributeName
+  sealed trait position extends StObject
   inline def position: position = "position".asInstanceOf[position]
   
   @js.native
@@ -1180,8 +1414,16 @@ object threeStrings {
   inline def refract: refract = "refract".asInstanceOf[refract]
   
   @js.native
+  sealed trait render extends StObject
+  inline def render: render = "render".asInstanceOf[render]
+  
+  @js.native
   sealed trait replace extends StObject
   inline def replace: replace = "replace".asInstanceOf[replace]
+  
+  @js.native
+  sealed trait resolution extends StObject
+  inline def resolution: resolution = "resolution".asInstanceOf[resolution]
   
   @js.native
   sealed trait right
@@ -1240,18 +1482,6 @@ object threeStrings {
   inline def sine: sine = "sine".asInstanceOf[sine]
   
   @js.native
-  sealed trait skinIndex
-    extends StObject
-       with BuiltinShaderAttributeName
-  inline def skinIndex: skinIndex = "skinIndex".asInstanceOf[skinIndex]
-  
-  @js.native
-  sealed trait skinWeight
-    extends StObject
-       with BuiltinShaderAttributeName
-  inline def skinWeight: skinWeight = "skinWeight".asInstanceOf[skinWeight]
-  
-  @js.native
   sealed trait smoothstep extends StObject
   inline def smoothstep: smoothstep = "smoothstep".asInstanceOf[smoothstep]
   
@@ -1272,11 +1502,15 @@ object threeStrings {
   inline def square: square = "square".asInstanceOf[square]
   
   @js.native
-  sealed trait srgb extends StObject
+  sealed trait srgb
+    extends StObject
+       with _ColorSpace
   inline def srgb: srgb = "srgb".asInstanceOf[srgb]
   
   @js.native
-  sealed trait `srgb-linear` extends StObject
+  sealed trait `srgb-linear`
+    extends StObject
+       with _ColorSpace
   inline def `srgb-linear`: `srgb-linear` = "srgb-linear".asInstanceOf[`srgb-linear`]
   
   @js.native
@@ -1298,6 +1532,14 @@ object threeStrings {
     extends StObject
        with GLTFReferenceType
   inline def textures: textures = "textures".asInstanceOf[textures]
+  
+  @js.native
+  sealed trait topLeft extends StObject
+  inline def topLeft: topLeft = "topLeft".asInstanceOf[topLeft]
+  
+  @js.native
+  sealed trait topRight extends StObject
+  inline def topRight: topRight = "topRight".asInstanceOf[topRight]
   
   @js.native
   sealed trait transformDirection extends StObject
@@ -1328,12 +1570,6 @@ object threeStrings {
     extends StObject
        with NodeTypeOption
   inline def umat4: umat4 = "umat4".asInstanceOf[umat4]
-  
-  @js.native
-  sealed trait uv
-    extends StObject
-       with BuiltinShaderAttributeName
-  inline def uv: uv = "uv".asInstanceOf[uv]
   
   @js.native
   sealed trait uvec2

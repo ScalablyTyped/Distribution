@@ -8,6 +8,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MessageSender extends StObject {
   
   /**
+    * A UUID of the document that opened the connection.
+    * @since Chrome 106.
+    */
+  var documentId: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The lifecycle the document that opened the connection is in at the time the port was created. Note that the lifecycle state of the document may have changed since port creation.
+    * @since Chrome 106.
+    */
+  var documentLifecycle: js.UndefOr[String] = js.undefined
+  
+  /**
     * The frame that opened the connection. 0 for top-level frames, positive for child frames. This will only be set when tab is set.
     * @since Chrome 41.
     */
@@ -51,6 +63,14 @@ object MessageSender {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: MessageSender] (val x: Self) extends AnyVal {
+    
+    inline def setDocumentId(value: String): Self = StObject.set(x, "documentId", value.asInstanceOf[js.Any])
+    
+    inline def setDocumentIdUndefined: Self = StObject.set(x, "documentId", js.undefined)
+    
+    inline def setDocumentLifecycle(value: String): Self = StObject.set(x, "documentLifecycle", value.asInstanceOf[js.Any])
+    
+    inline def setDocumentLifecycleUndefined: Self = StObject.set(x, "documentLifecycle", js.undefined)
     
     inline def setFrameId(value: Double): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
     

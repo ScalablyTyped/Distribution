@@ -10,7 +10,7 @@ sealed trait CommentChangeType extends StObject
   * Represents how the comments in the event were changed.
   *
   * @remarks
-  * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+  * [Api set: WordApi BETA (PREVIEW ONLY)]
   * @beta
   */
 @JSGlobal("Word.CommentChangeType")
@@ -20,7 +20,7 @@ object CommentChangeType extends StObject {
   /**
     * A comment was edited.
     * @remarks
-    * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+    * [Api set: WordApi BETA (PREVIEW ONLY)]
     * @beta
     */
   @js.native
@@ -31,7 +31,7 @@ object CommentChangeType extends StObject {
   /**
     * No comment changed event is triggered.
     * @remarks
-    * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+    * [Api set: WordApi BETA (PREVIEW ONLY)]
     * @beta
     */
   @js.native
@@ -42,7 +42,7 @@ object CommentChangeType extends StObject {
   /**
     * A comment was reopened.
     * @remarks
-    * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+    * [Api set: WordApi BETA (PREVIEW ONLY)]
     * @beta
     */
   @js.native
@@ -53,7 +53,7 @@ object CommentChangeType extends StObject {
   /**
     * A reply was added.
     * @remarks
-    * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+    * [Api set: WordApi BETA (PREVIEW ONLY)]
     * @beta
     */
   @js.native
@@ -64,7 +64,7 @@ object CommentChangeType extends StObject {
   /**
     * A reply was deleted.
     * @remarks
-    * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+    * [Api set: WordApi BETA (PREVIEW ONLY)]
     * @beta
     */
   @js.native
@@ -75,7 +75,7 @@ object CommentChangeType extends StObject {
   /**
     * A reply was edited.
     * @remarks
-    * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+    * [Api set: WordApi BETA (PREVIEW ONLY)]
     * @beta
     */
   @js.native
@@ -86,7 +86,7 @@ object CommentChangeType extends StObject {
   /**
     * A comment was resolved.
     * @remarks
-    * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+    * [Api set: WordApi BETA (PREVIEW ONLY)]
     * @beta
     */
   @js.native

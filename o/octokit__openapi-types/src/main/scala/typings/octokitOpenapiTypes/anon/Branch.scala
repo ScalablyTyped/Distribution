@@ -6,13 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Branch extends StObject {
   
-  /** The name of the branch. */
   var branch: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['branch'] */ js.Any
   
-  /** The account owner of the repository. The name is not case sensitive. */
   var owner: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['owner'] */ js.Any
   
-  /** The name of the repository. The name is not case sensitive. */
   var repo: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['repo'] */ js.Any
 }
 object Branch {

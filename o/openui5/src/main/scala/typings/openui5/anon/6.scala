@@ -1,6 +1,5 @@
 package typings.openui5.anon
 
-import typings.openui5.sapUiUnifiedMenuItemBaseMod.MenuItemBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,9 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `6` extends StObject {
   
   /**
-    * The current item
+    * 2D array of strings with data from the clipboard. The first dimension represents the rows, and the second
+    * dimension represents the cells of the tabular data.
     */
-  var item: js.UndefOr[MenuItemBase] = js.undefined
+  var data: js.UndefOr[js.Array[js.Array[String]]] = js.undefined
 }
 object `6` {
   
@@ -22,8 +22,10 @@ object `6` {
   @scala.inline
   implicit open class MutableBuilder[Self <: `6`] (val x: Self) extends AnyVal {
     
-    inline def setItem(value: MenuItemBase): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Array[js.Array[String]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    
+    inline def setDataVarargs(value: js.Array[String]*): Self = StObject.set(x, "data", js.Array(value*))
   }
 }

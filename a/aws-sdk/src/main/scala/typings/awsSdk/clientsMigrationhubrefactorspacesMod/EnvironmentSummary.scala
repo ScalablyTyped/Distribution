@@ -62,7 +62,7 @@ trait EnvironmentSummary extends StObject {
   var Tags: js.UndefOr[TagMap] = js.undefined
   
   /**
-    * The ID of the transit gateway set up by the environment. 
+    * The ID of the Transit Gateway set up by the environment. 
     */
   var TransitGatewayId: js.UndefOr[typings.awsSdk.clientsMigrationhubrefactorspacesMod.TransitGatewayId] = js.undefined
 }

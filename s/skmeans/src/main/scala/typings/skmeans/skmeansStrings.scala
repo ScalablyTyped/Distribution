@@ -10,12 +10,12 @@ object skmeansStrings {
   @js.native
   sealed trait kmpp
     extends StObject
-       with _CentroidValues
+       with _CentroidValues[Any]
   inline def kmpp: kmpp = "kmpp".asInstanceOf[kmpp]
   
   @js.native
   sealed trait kmrand
     extends StObject
-       with _CentroidValues
+       with _CentroidValues[Any]
   inline def kmrand: kmrand = "kmrand".asInstanceOf[kmrand]
 }

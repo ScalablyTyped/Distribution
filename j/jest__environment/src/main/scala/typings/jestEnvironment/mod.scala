@@ -21,6 +21,7 @@ import typings.jestMock.mod.MockedShallow
 import typings.jestMock.mod.Mocked_
 import typings.jestMock.mod.ModuleMocker
 import typings.jestMock.mod.PropertyLikeKeys
+import typings.jestMock.mod.Replaced
 import typings.jestTypes.mod.EventHandler
 import typings.jestTypes.mod.FakeTimersConfig
 import typings.jestTypes.mod.GlobalConfig
@@ -99,12 +100,31 @@ object mod {
     def advanceTimersByTime(msToRun: Double): Unit = js.native
     
     /**
+      * Advances all timers by `msToRun` milliseconds, firing callbacks if necessary.
+      *
+      * @remarks
+      * Not available when using legacy fake timers implementation.
+      */
+    def advanceTimersByTimeAsync(msToRun: Double): js.Promise[Unit] = js.native
+    
+    /**
       * Advances all timers by the needed milliseconds so that only the next
       * timeouts/intervals will run. Optionally, you can provide steps, so it will
       * run steps amount of next timeouts/intervals.
       */
     def advanceTimersToNextTimer(): Unit = js.native
     def advanceTimersToNextTimer(steps: Double): Unit = js.native
+    
+    /**
+      * Advances the clock to the the moment of the first scheduled timer, firing it.
+      * Optionally, you can provide steps, so it will run steps amount of
+      * next timeouts/intervals.
+      *
+      * @remarks
+      * Not available when using legacy fake timers implementation.
+      */
+    def advanceTimersToNextTimerAsync(): js.Promise[Unit] = js.native
+    def advanceTimersToNextTimerAsync(steps: Double): js.Promise[Unit] = js.native
     
     /**
       * Disables automatic mocking in the module loader.
@@ -220,6 +240,19 @@ object mod {
     def getTimerCount(): Double = js.native
     
     /**
+      * Returns `true` if test environment has been torn down.
+      *
+      * @example
+      * ```js
+      * if (jest.isEnvironmentTornDown()) {
+      *   // The Jest environment has been torn down, so stop doing work
+      *   return;
+      * }
+      * ```
+      */
+    def isEnvironmentTornDown(): Boolean = js.native
+    
+    /**
       * Determines if the given function is a mocked function.
       */
     def isMockFunction(fn: Any): /* is jest-mock.jest-mock.Mock<jest-mock.jest-mock.UnknownFunction> */ Boolean = js.native
@@ -244,6 +277,13 @@ object mod {
       * local module state doesn't conflict between tests.
       */
     def isolateModules(fn: js.Function0[Unit]): Jest = js.native
+    
+    /**
+      * `jest.isolateModulesAsync()` is the equivalent of `jest.isolateModules()`, but for
+      * async functions to be wrapped. The caller is expected to `await` the completion of
+      * `isolateModulesAsync`.
+      */
+    def isolateModulesAsync(fn: js.Function0[js.Promise[Unit]]): js.Promise[Unit] = js.native
     
     /**
       * Mocks a module with an auto-mocked version when it is being required.
@@ -283,6 +323,31 @@ object mod {
       * Returns the current time in ms of the fake timer clock.
       */
     def now(): Double = js.native
+    
+    /**
+      * Replaces property on an object with another value.
+      *
+      * @remarks
+      * For mocking functions or 'get' or 'set' accessors, use `jest.spyOn()` instead.
+      */
+    def replaceProperty[T /* <: js.Object */, K /* <: PropertyLikeKeys[T] */, V /* <: /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any */](`object`: T, propertyKey: K, value: V): Replaced[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+      ] = js.native
+    /**
+      * Replaces property on an object with another value.
+      *
+      * @remarks
+      * For mocking functions or 'get' or 'set' accessors, use `jest.spyOn()` instead.
+      */
+    @JSName("replaceProperty")
+    var replaceProperty_Original: js.Function3[
+        /* object */ js.Object, 
+        /* propertyKey */ PropertyLikeKeys[js.Object], 
+        /* import warning: importer.ImportType#apply Failed type conversion: object[jest-mock.jest-mock.PropertyLikeKeys<T>] */ /* value */ js.Any, 
+        Replaced[
+          /* import warning: importer.ImportType#apply Failed type conversion: object[jest-mock.jest-mock.PropertyLikeKeys<object>] */ js.Any
+        ]
+      ] = js.native
     
     /**
       * Returns the actual module instead of a mock, bypassing all checks on
@@ -327,8 +392,9 @@ object mod {
     def resetModules(): Jest = js.native
     
     /**
-      * Restores all mocks back to their original value. Equivalent to calling
-      * `.mockRestore()` on every mocked function.
+      * Restores all mocks and replaced properties back to their original value.
+      * Equivalent to calling `.mockRestore()` on every mocked function
+      * and `.restore()` on every replaced property.
       *
       * Beware that `jest.restoreAllMocks()` only works when the mock was created
       * with `jest.spyOn()`; other mocks will require you to manually restore them.
@@ -370,12 +436,34 @@ object mod {
     def runAllTimers(): Unit = js.native
     
     /**
+      * Exhausts the macro-task queue (i.e., all tasks queued by `setTimeout()`
+      * and `setInterval()`).
+      *
+      * @remarks
+      * If new timers are added while it is executing they will be run as well.
+      * @remarks
+      * Not available when using legacy fake timers implementation.
+      */
+    def runAllTimersAsync(): js.Promise[Unit] = js.native
+    
+    /**
       * Executes only the macro-tasks that are currently pending (i.e., only the
       * tasks that have been queued by `setTimeout()` or `setInterval()` up to this
       * point). If any of the currently pending macro-tasks schedule new
       * macro-tasks, those new tasks will not be executed by this call.
       */
     def runOnlyPendingTimers(): Unit = js.native
+    
+    /**
+      * Executes only the macro-tasks that are currently pending (i.e., only the
+      * tasks that have been queued by `setTimeout()` or `setInterval()` up to this
+      * point). If any of the currently pending macro-tasks schedule new
+      * macro-tasks, those new tasks will not be executed by this call.
+      *
+      * @remarks
+      * Not available when using legacy fake timers implementation.
+      */
+    def runOnlyPendingTimersAsync(): js.Promise[Unit] = js.native
     
     /**
       * Explicitly supplies the mock object that the module system should return

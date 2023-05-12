@@ -1,6 +1,7 @@
 package typings.listr2
 
 import typings.listr2.mod.PromptTypes
+import typings.listr2.mod.TestRendererSerializerTaskKeys
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,10 +29,6 @@ object listr2Strings {
     extends StObject
        with PromptTypes
   inline def Confirm: Confirm = "Confirm".asInstanceOf[Confirm]
-  
-  @js.native
-  sealed trait DATA extends StObject
-  inline def DATA: DATA = "DATA".asInstanceOf[DATA]
   
   @js.native
   sealed trait Editable
@@ -62,10 +59,6 @@ object listr2Strings {
     extends StObject
        with PromptTypes
   inline def List: List = "List".asInstanceOf[List]
-  
-  @js.native
-  sealed trait MESSAGE extends StObject
-  inline def MESSAGE: MESSAGE = "MESSAGE".asInstanceOf[MESSAGE]
   
   @js.native
   sealed trait MultiSelect
@@ -134,12 +127,110 @@ object listr2Strings {
   inline def Toggle: Toggle = "Toggle".asInstanceOf[Toggle]
   
   @js.native
+  sealed trait duration extends StObject
+  inline def duration: duration = "duration".asInstanceOf[duration]
+  
+  @js.native
   sealed trait enabled extends StObject
   inline def enabled: enabled = "enabled".asInstanceOf[enabled]
   
   @js.native
+  sealed trait error extends StObject
+  inline def error: error = "error".asInstanceOf[error]
+  
+  @js.native
   sealed trait full extends StObject
   inline def full: full = "full".asInstanceOf[full]
+  
+  @js.native
+  sealed trait hasFailed
+    extends StObject
+       with TestRendererSerializerTaskKeys
+  inline def hasFailed: hasFailed = "hasFailed".asInstanceOf[hasFailed]
+  
+  @js.native
+  sealed trait hasFinalized
+    extends StObject
+       with TestRendererSerializerTaskKeys
+  inline def hasFinalized: hasFinalized = "hasFinalized".asInstanceOf[hasFinalized]
+  
+  @js.native
+  sealed trait hasReset
+    extends StObject
+       with TestRendererSerializerTaskKeys
+  inline def hasReset: hasReset = "hasReset".asInstanceOf[hasReset]
+  
+  @js.native
+  sealed trait hasRolledBack
+    extends StObject
+       with TestRendererSerializerTaskKeys
+  inline def hasRolledBack: hasRolledBack = "hasRolledBack".asInstanceOf[hasRolledBack]
+  
+  @js.native
+  sealed trait hasSubtasks
+    extends StObject
+       with TestRendererSerializerTaskKeys
+  inline def hasSubtasks: hasSubtasks = "hasSubtasks".asInstanceOf[hasSubtasks]
+  
+  @js.native
+  sealed trait hasTitle
+    extends StObject
+       with TestRendererSerializerTaskKeys
+  inline def hasTitle: hasTitle = "hasTitle".asInstanceOf[hasTitle]
+  
+  @js.native
+  sealed trait isCompleted
+    extends StObject
+       with TestRendererSerializerTaskKeys
+  inline def isCompleted: isCompleted = "isCompleted".asInstanceOf[isCompleted]
+  
+  @js.native
+  sealed trait isEnabled
+    extends StObject
+       with TestRendererSerializerTaskKeys
+  inline def isEnabled: isEnabled = "isEnabled".asInstanceOf[isEnabled]
+  
+  @js.native
+  sealed trait isPaused
+    extends StObject
+       with TestRendererSerializerTaskKeys
+  inline def isPaused: isPaused = "isPaused".asInstanceOf[isPaused]
+  
+  @js.native
+  sealed trait isPending
+    extends StObject
+       with TestRendererSerializerTaskKeys
+  inline def isPending: isPending = "isPending".asInstanceOf[isPending]
+  
+  @js.native
+  sealed trait isPrompt
+    extends StObject
+       with TestRendererSerializerTaskKeys
+  inline def isPrompt: isPrompt = "isPrompt".asInstanceOf[isPrompt]
+  
+  @js.native
+  sealed trait isRetrying
+    extends StObject
+       with TestRendererSerializerTaskKeys
+  inline def isRetrying: isRetrying = "isRetrying".asInstanceOf[isRetrying]
+  
+  @js.native
+  sealed trait isRollingBack
+    extends StObject
+       with TestRendererSerializerTaskKeys
+  inline def isRollingBack: isRollingBack = "isRollingBack".asInstanceOf[isRollingBack]
+  
+  @js.native
+  sealed trait isSkipped
+    extends StObject
+       with TestRendererSerializerTaskKeys
+  inline def isSkipped: isSkipped = "isSkipped".asInstanceOf[isSkipped]
+  
+  @js.native
+  sealed trait isStarted
+    extends StObject
+       with TestRendererSerializerTaskKeys
+  inline def isStarted: isStarted = "isStarted".asInstanceOf[isStarted]
   
   @js.native
   sealed trait left extends StObject
@@ -150,8 +241,26 @@ object listr2Strings {
   inline def minimal: minimal = "minimal".asInstanceOf[minimal]
   
   @js.native
+  sealed trait path
+    extends StObject
+       with TestRendererSerializerTaskKeys
+  inline def path: path = "path".asInstanceOf[path]
+  
+  @js.native
+  sealed trait paused extends StObject
+  inline def paused: paused = "paused".asInstanceOf[paused]
+  
+  @js.native
+  sealed trait retry extends StObject
+  inline def retry: retry = "retry".asInstanceOf[retry]
+  
+  @js.native
   sealed trait right extends StObject
   inline def right: right = "right".asInstanceOf[right]
+  
+  @js.native
+  sealed trait rollback extends StObject
+  inline def rollback: rollback = "rollback".asInstanceOf[rollback]
   
   @js.native
   sealed trait silent extends StObject
@@ -176,6 +285,16 @@ object listr2Strings {
   @js.native
   sealed trait task extends StObject
   inline def task: task = "task".asInstanceOf[task]
+  
+  @js.native
+  sealed trait test extends StObject
+  inline def test: test = "test".asInstanceOf[test]
+  
+  @js.native
+  sealed trait title
+    extends StObject
+       with TestRendererSerializerTaskKeys
+  inline def title: title = "title".asInstanceOf[title]
   
   @js.native
   sealed trait truncate extends StObject

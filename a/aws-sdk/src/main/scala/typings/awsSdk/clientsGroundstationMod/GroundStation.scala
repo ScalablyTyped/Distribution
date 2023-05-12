@@ -1,5 +1,7 @@
 package typings.awsSdk.clientsGroundstationMod
 
+import typings.awsSdk.anon.DescribeContactRequestwai
+import typings.awsSdk.awsSdkStrings.contactScheduled
 import typings.awsSdk.libConfigBaseMod.ConfigBase
 import typings.awsSdk.libErrorMod.AWSError
 import typings.awsSdk.libRequestMod.Request
@@ -167,6 +169,20 @@ trait GroundStation extends Service {
     params: DescribeEphemerisRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeEphemerisResponse, Unit]
   ): Request[DescribeEphemerisResponse, AWSError] = js.native
+  
+  /**
+    *   For use by AWS Ground Station Agent and shouldn't be called directly.  Gets the latest configuration information for a registered agent.
+    */
+  def getAgentConfiguration(): Request[GetAgentConfigurationResponse, AWSError] = js.native
+  def getAgentConfiguration(callback: js.Function2[/* err */ AWSError, /* data */ GetAgentConfigurationResponse, Unit]): Request[GetAgentConfigurationResponse, AWSError] = js.native
+  /**
+    *   For use by AWS Ground Station Agent and shouldn't be called directly.  Gets the latest configuration information for a registered agent.
+    */
+  def getAgentConfiguration(params: GetAgentConfigurationRequest): Request[GetAgentConfigurationResponse, AWSError] = js.native
+  def getAgentConfiguration(
+    params: GetAgentConfigurationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetAgentConfigurationResponse, Unit]
+  ): Request[GetAgentConfigurationResponse, AWSError] = js.native
   
   /**
     * Returns Config information. Only one Config response can be returned.
@@ -351,6 +367,20 @@ trait GroundStation extends Service {
   ): Request[ListTagsForResourceResponse, AWSError] = js.native
   
   /**
+    *   For use by AWS Ground Station Agent and shouldn't be called directly.   Registers a new agent with AWS Ground Station. 
+    */
+  def registerAgent(): Request[RegisterAgentResponse, AWSError] = js.native
+  def registerAgent(callback: js.Function2[/* err */ AWSError, /* data */ RegisterAgentResponse, Unit]): Request[RegisterAgentResponse, AWSError] = js.native
+  /**
+    *   For use by AWS Ground Station Agent and shouldn't be called directly.   Registers a new agent with AWS Ground Station. 
+    */
+  def registerAgent(params: RegisterAgentRequest): Request[RegisterAgentResponse, AWSError] = js.native
+  def registerAgent(
+    params: RegisterAgentRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ RegisterAgentResponse, Unit]
+  ): Request[RegisterAgentResponse, AWSError] = js.native
+  
+  /**
     * Reserves a contact using specified parameters.
     */
   def reserveContact(): Request[ContactIdResponse, AWSError] = js.native
@@ -393,6 +423,20 @@ trait GroundStation extends Service {
   ): Request[UntagResourceResponse, AWSError] = js.native
   
   /**
+    *   For use by AWS Ground Station Agent and shouldn't be called directly.  Update the status of the agent.
+    */
+  def updateAgentStatus(): Request[UpdateAgentStatusResponse, AWSError] = js.native
+  def updateAgentStatus(callback: js.Function2[/* err */ AWSError, /* data */ UpdateAgentStatusResponse, Unit]): Request[UpdateAgentStatusResponse, AWSError] = js.native
+  /**
+    *   For use by AWS Ground Station Agent and shouldn't be called directly.  Update the status of the agent.
+    */
+  def updateAgentStatus(params: UpdateAgentStatusRequest): Request[UpdateAgentStatusResponse, AWSError] = js.native
+  def updateAgentStatus(
+    params: UpdateAgentStatusRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateAgentStatusResponse, Unit]
+  ): Request[UpdateAgentStatusResponse, AWSError] = js.native
+  
+  /**
     * Updates the Config used when scheduling contacts. Updating a Config will not update the execution parameters for existing future contacts scheduled with this Config.
     */
   def updateConfig(): Request[ConfigIdResponse, AWSError] = js.native
@@ -433,4 +477,26 @@ trait GroundStation extends Service {
     params: UpdateMissionProfileRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ MissionProfileIdResponse, Unit]
   ): Request[MissionProfileIdResponse, AWSError] = js.native
+  
+  /**
+    * Waits for the contactScheduled state by periodically calling the underlying GroundStation.describeContactoperation every 5 seconds (at most 180 times). Waits until a contact has been scheduled
+    */
+  @JSName("waitFor")
+  def waitFor_contactScheduled(state: contactScheduled): Request[DescribeContactResponse, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_contactScheduled(
+    state: contactScheduled,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeContactResponse, Unit]
+  ): Request[DescribeContactResponse, AWSError] = js.native
+  /**
+    * Waits for the contactScheduled state by periodically calling the underlying GroundStation.describeContactoperation every 5 seconds (at most 180 times). Waits until a contact has been scheduled
+    */
+  @JSName("waitFor")
+  def waitFor_contactScheduled(state: contactScheduled, params: DescribeContactRequestwai): Request[DescribeContactResponse, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_contactScheduled(
+    state: contactScheduled,
+    params: DescribeContactRequestwai,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeContactResponse, Unit]
+  ): Request[DescribeContactResponse, AWSError] = js.native
 }

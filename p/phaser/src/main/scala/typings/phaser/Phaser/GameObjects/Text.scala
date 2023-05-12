@@ -10,6 +10,7 @@ import typings.phaser.Phaser.GameObjects.Components.GetBounds
 import typings.phaser.Phaser.GameObjects.Components.Mask
 import typings.phaser.Phaser.GameObjects.Components.Origin
 import typings.phaser.Phaser.GameObjects.Components.Pipeline
+import typings.phaser.Phaser.GameObjects.Components.PostPipeline
 import typings.phaser.Phaser.GameObjects.Components.ScrollFactor
 import typings.phaser.Phaser.GameObjects.Components.Tint
 import typings.phaser.Phaser.GameObjects.Components.Transform
@@ -49,7 +50,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * ```
   * 
   * You can only display fonts that are currently loaded and available to the browser: therefore fonts must
-  * be pre-loaded. Phaser does not do ths for you, so you will require the use of a 3rd party font loader,
+  * be pre-loaded. Phaser does not do this for you, so you will require the use of a 3rd party font loader,
   * or have the fonts ready available in the CSS on the page in which your Phaser game resides.
   * 
   * See {@link http://www.jordanm.co.uk/tinytype this compatibility table} for the available default fonts
@@ -75,6 +76,7 @@ trait Text
      with Mask
      with Origin
      with Pipeline
+     with PostPipeline
      with ScrollFactor
      with Tint
      with Transform
@@ -90,6 +92,18 @@ trait Text
     * @param wordWrapWidth The word wrap width.
     */
   def advancedWordWrap(text: String, context: CanvasRenderingContext2D, wordWrapWidth: Double): String = js.native
+  
+  /**
+    * Appends the given text to the content already being displayed by this Text object.
+    * 
+    * An array of strings will be joined with `\n` line breaks.
+    * @param value The string, or array of strings, to be appended to the existing content of this Text object.
+    * @param addCR Insert a carriage-return before the string value. Default true.
+    */
+  def appendText(value: String): this.type = js.native
+  def appendText(value: String, addCR: Boolean): this.type = js.native
+  def appendText(value: js.Array[String]): this.type = js.native
+  def appendText(value: js.Array[String], addCR: Boolean): this.type = js.native
   
   /**
     * Whether to automatically round line positions.
@@ -130,6 +144,7 @@ trait Text
     * array, where each element of the array corresponds to a wrapped line of text.
     * @param text The text for which the wrapping will be calculated. If unspecified, the Text objects current text will be used.
     */
+  def getWrappedText(): js.Array[String] = js.native
   def getWrappedText(text: String): js.Array[String] = js.native
   
   /**
@@ -260,9 +275,10 @@ trait Text
   def setFontFamily(family: String): this.type = js.native
   
   /**
-    * Set the font size.
+    * Set the font size. Can be a string with a valid CSS unit, i.e. `16px`, or a number.
     * @param size The font size.
     */
+  def setFontSize(size: String): this.type = js.native
   def setFontSize(size: Double): this.type = js.native
   
   /**
@@ -418,8 +434,10 @@ trait Text
     * algorithm. If true, spaces are collapsed and whitespace is trimmed from lines. If false,
     * spaces and whitespace are left as is. Default false.
     */
+  def setWordWrapWidth(): this.type = js.native
   def setWordWrapWidth(width: Double): this.type = js.native
   def setWordWrapWidth(width: Double, useAdvancedWrap: Boolean): this.type = js.native
+  def setWordWrapWidth(width: Unit, useAdvancedWrap: Boolean): this.type = js.native
   
   /**
     * The Regular Expression that is used to split the text up into lines, in

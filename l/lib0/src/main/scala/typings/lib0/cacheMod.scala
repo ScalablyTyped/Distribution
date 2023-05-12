@@ -2,6 +2,7 @@ package typings.lib0
 
 import typings.lib0.listMod.ListNode
 import typings.std.Map
+import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -41,7 +42,7 @@ object cacheMod {
   
   inline def refreshTimeout[K, V](cache: Cache[K, V], key: K): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("refreshTimeout")(cache.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def remove[K, V](cache: Cache[K, V], key: K): js.UndefOr[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(cache.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[V]]
+  inline def remove[K, V](cache: Cache[K, V], key: K): js.UndefOr[NonNullable[V]] = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(cache.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[NonNullable[V]]]
   
   inline def removeStale[K, V](cache: Cache[K, V]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("removeStale")(cache.asInstanceOf[js.Any]).asInstanceOf[Double]
   

@@ -9,7 +9,12 @@ trait DeleteLocalGatewayRouteRequest extends StObject {
   /**
     * The CIDR range for the route. This must match the CIDR for the route exactly.
     */
-  var DestinationCidrBlock: String
+  var DestinationCidrBlock: js.UndefOr[String] = js.undefined
+  
+  /**
+    *  Use a prefix list in place of DestinationCidrBlock. You cannot use DestinationPrefixListId and DestinationCidrBlock in the same request. 
+    */
+  var DestinationPrefixListId: js.UndefOr[PrefixListResourceId] = js.undefined
   
   /**
     * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
@@ -23,8 +28,8 @@ trait DeleteLocalGatewayRouteRequest extends StObject {
 }
 object DeleteLocalGatewayRouteRequest {
   
-  inline def apply(DestinationCidrBlock: String, LocalGatewayRouteTableId: LocalGatewayRoutetableId): DeleteLocalGatewayRouteRequest = {
-    val __obj = js.Dynamic.literal(DestinationCidrBlock = DestinationCidrBlock.asInstanceOf[js.Any], LocalGatewayRouteTableId = LocalGatewayRouteTableId.asInstanceOf[js.Any])
+  inline def apply(LocalGatewayRouteTableId: LocalGatewayRoutetableId): DeleteLocalGatewayRouteRequest = {
+    val __obj = js.Dynamic.literal(LocalGatewayRouteTableId = LocalGatewayRouteTableId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteLocalGatewayRouteRequest]
   }
   
@@ -32,6 +37,12 @@ object DeleteLocalGatewayRouteRequest {
   implicit open class MutableBuilder[Self <: DeleteLocalGatewayRouteRequest] (val x: Self) extends AnyVal {
     
     inline def setDestinationCidrBlock(value: String): Self = StObject.set(x, "DestinationCidrBlock", value.asInstanceOf[js.Any])
+    
+    inline def setDestinationCidrBlockUndefined: Self = StObject.set(x, "DestinationCidrBlock", js.undefined)
+    
+    inline def setDestinationPrefixListId(value: PrefixListResourceId): Self = StObject.set(x, "DestinationPrefixListId", value.asInstanceOf[js.Any])
+    
+    inline def setDestinationPrefixListIdUndefined: Self = StObject.set(x, "DestinationPrefixListId", js.undefined)
     
     inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     

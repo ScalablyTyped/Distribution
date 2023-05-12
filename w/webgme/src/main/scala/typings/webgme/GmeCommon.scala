@@ -24,15 +24,13 @@ object GmeCommon {
   
   type AttrMeta = Any
   
-  type Buffer = js.Array[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify GLbyte */ Any
-  ]
+  type Buffer = js.typedarray.Int8Array
   
   type CatchCallback = ErrorOnlyCallback
   
   type Constraint = String
   
-  type Content = DataObject | Buffer | js.Array[Buffer]
+  type Content = DataObject | js.typedarray.Int8Array | js.Array[js.typedarray.Int8Array]
   
   type ContentString = String
   
@@ -395,7 +393,7 @@ object GmeCommon {
   
   type Path = String
   
-  type Payload = String | Buffer | js.Array[Buffer]
+  type Payload = String | js.typedarray.Int8Array | js.Array[js.typedarray.Int8Array]
   
   trait Pointer extends StObject {
     

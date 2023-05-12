@@ -4,10 +4,9 @@ import typings.angularDevkitArchitect.srcApiMod.BuilderInfo
 import typings.angularDevkitArchitect.srcApiMod.BuilderRun
 import typings.angularDevkitArchitect.srcApiMod.Target
 import typings.angularDevkitArchitect.srcInternalMod.ArchitectHost
+import typings.angularDevkitArchitect.srcJobsApiMod.JobName
+import typings.angularDevkitArchitect.srcJobsApiMod.Registry
 import typings.angularDevkitCore.mod.logging.Logger
-import typings.angularDevkitCore.srcAnalyticsApiMod.Analytics
-import typings.angularDevkitCore.srcExperimentalJobsApiMod.JobName
-import typings.angularDevkitCore.srcExperimentalJobsApiMod.Registry
 import typings.angularDevkitCore.srcJsonSchemaInterfaceMod.SchemaRegistry
 import typings.angularDevkitCore.srcJsonUtilsMod.JsonObject
 import typings.angularDevkitCore.srcJsonUtilsMod.JsonValue
@@ -55,8 +54,6 @@ object srcArchitectMod {
   
   trait ScheduleOptions extends StObject {
     
-    var analytics: js.UndefOr[Analytics] = js.undefined
-    
     var logger: js.UndefOr[Logger] = js.undefined
   }
   object ScheduleOptions {
@@ -68,10 +65,6 @@ object srcArchitectMod {
     
     @scala.inline
     implicit open class MutableBuilder[Self <: ScheduleOptions] (val x: Self) extends AnyVal {
-      
-      inline def setAnalytics(value: Analytics): Self = StObject.set(x, "analytics", value.asInstanceOf[js.Any])
-      
-      inline def setAnalyticsUndefined: Self = StObject.set(x, "analytics", js.undefined)
       
       inline def setLogger(value: Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
       

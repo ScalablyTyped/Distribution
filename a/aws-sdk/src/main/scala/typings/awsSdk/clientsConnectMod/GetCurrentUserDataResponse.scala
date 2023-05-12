@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetCurrentUserDataResponse extends StObject {
   
   /**
+    * The total count of the result, regardless of the current page size.
+    */
+  var ApproximateTotalCount: js.UndefOr[typings.awsSdk.clientsConnectMod.ApproximateTotalCount] = js.undefined
+  
+  /**
     * If there are additional results, this is the token for the next set of results.
     */
   var NextToken: js.UndefOr[typings.awsSdk.clientsConnectMod.NextToken] = js.undefined
@@ -25,6 +30,10 @@ object GetCurrentUserDataResponse {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: GetCurrentUserDataResponse] (val x: Self) extends AnyVal {
+    
+    inline def setApproximateTotalCount(value: ApproximateTotalCount): Self = StObject.set(x, "ApproximateTotalCount", value.asInstanceOf[js.Any])
+    
+    inline def setApproximateTotalCountUndefined: Self = StObject.set(x, "ApproximateTotalCount", js.undefined)
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

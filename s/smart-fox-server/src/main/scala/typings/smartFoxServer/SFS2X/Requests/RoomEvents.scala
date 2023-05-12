@@ -6,16 +6,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RoomEvents extends StObject {
   
-  /** @type {boolean} Sets whether or not the userCountChange event should be dispatched whenever the users (or players+spectators) count changes in the Room. */
+  /** Sets whether or not the userCountChange event should be dispatched whenever the users (or players+spectators) count changes in the Room. */
   var allowUserCountChance: Boolean
   
-  /** @type {boolean} Sets whether the userEnterRoom event should be dispatched whenever a user joins the Room or not. */
+  /** Sets whether the userEnterRoom event should be dispatched whenever a user joins the Room or not. */
   var allowUserEnter: Boolean
   
-  /** @type {boolean} Sets whether the userExitRoom event should be dispatched whenever a user leaves the Room or not. */
+  /** Sets whether the userExitRoom event should be dispatched whenever a user leaves the Room or not. */
   var allowUserExit: Boolean
   
-  /** @type {boolean} Sets whether or not the userVariablesUpdate event should be dispatched whenever a user in the Room updates their User Variables */
+  /** Sets whether or not the userVariablesUpdate event should be dispatched whenever a user in the Room updates their User Variables */
   var allowUserVariablesUpdate: Boolean
 }
 object RoomEvents {

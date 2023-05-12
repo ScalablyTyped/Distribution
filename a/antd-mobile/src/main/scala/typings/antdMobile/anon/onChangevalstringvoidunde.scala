@@ -58,7 +58,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined {  onChange :(val : string): void | undefined,   value :string | undefined,   defaultValue :string | undefined,   placeholder :string | undefined,   rows :number | undefined,   maxLength :number | undefined,   showCount :boolean | (length : number, maxLength : number | undefined): react.react.ReactNode | undefined,   autoSize :boolean | {  minRows :number | undefined,   maxRows :number | undefined} | undefined,   id :string | undefined,   className :string | undefined,   style :react.react.CSSProperties & std.Partial<std.Record<'--color' | '--font-size' | '--placeholder-color' | '--text-align' | '--disabled-color' | '--count-text-align', string>> | undefined,   tabIndex :number | undefined} & std.Pick<react.react.DetailedHTMLProps<react.react.TextareaHTMLAttributes<std.HTMLTextAreaElement>, std.HTMLTextAreaElement>, 'onClick' | 'disabled' | 'name' | 'onCompositionEnd' | 'onCompositionStart' | 'onFocus' | 'onBlur' | 'autoComplete' | 'autoFocus' | 'readOnly'> & react.react.AriaAttributes & react.react.RefAttributes<antd-mobile.antd-mobile/es/components/text-area/text-area.TextAreaRef> */
+/* Inlined {  onChange :(val : string): void | undefined,   value :string | undefined,   defaultValue :string | undefined,   placeholder :string | undefined,   rows :number | undefined,   maxLength :number | undefined,   showCount :boolean | (length : number, maxLength : number | undefined): react.react.ReactNode | undefined,   autoSize :boolean | {  minRows :number | undefined,   maxRows :number | undefined} | undefined,   id :string | undefined,   className :string | undefined,   style :react.react.CSSProperties & std.Partial<std.Record<'--color' | '--font-size' | '--placeholder-color' | '--text-align' | '--disabled-color' | '--count-text-align', string>> | undefined,   tabIndex :number | undefined} & std.Pick<react.react.DetailedHTMLProps<react.react.TextareaHTMLAttributes<std.HTMLTextAreaElement>, std.HTMLTextAreaElement>, 'onClick' | 'disabled' | 'name' | 'onCompositionEnd' | 'onCompositionStart' | 'onFocus' | 'onBlur' | 'autoFocus' | 'autoComplete' | 'readOnly'> & react.react.AriaAttributes & react.react.RefAttributes<antd-mobile.antd-mobile/es/components/text-area/text-area.TextAreaRef> */
 trait onChangevalstringvoidunde extends StObject {
   
   /** Identifies the currently active element when DOM focus is on a composite widget, textbox, group, or application. */
@@ -331,6 +331,11 @@ trait onChangevalstringvoidunde extends StObject {
   
   var readOnly: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Allows getting a ref to the component instance.
+    * Once the component unmounts, React will set `ref.current` to `null` (or call the ref with `null` if you passed a callback ref).
+    * @see https://react.dev/learn/referencing-values-with-refs#refs-and-the-dom
+    */
   var ref: js.UndefOr[Ref[TextAreaRef]] = js.undefined
   
   var rows: js.UndefOr[Double] = js.undefined

@@ -12,7 +12,7 @@ trait PutMetricStreamInput extends StObject {
   var ExcludeFilters: js.UndefOr[MetricStreamFilters] = js.undefined
   
   /**
-    * The ARN of the Amazon Kinesis Firehose delivery stream to use for this metric stream. This Amazon Kinesis Firehose delivery stream must already exist and must be in the same account as the metric stream.
+    * The ARN of the Amazon Kinesis Data Firehose delivery stream to use for this metric stream. This Amazon Kinesis Data Firehose delivery stream must already exist and must be in the same account as the metric stream.
     */
   var FirehoseArn: AmazonResourceName
   
@@ -20,6 +20,11 @@ trait PutMetricStreamInput extends StObject {
     * If you specify this parameter, the stream sends only the metrics from the metric namespaces that you specify here. You cannot include IncludeFilters and ExcludeFilters in the same operation.
     */
   var IncludeFilters: js.UndefOr[MetricStreamFilters] = js.undefined
+  
+  /**
+    * If you are creating a metric stream in a monitoring account, specify true to include metrics from source accounts in the metric stream.
+    */
+  var IncludeLinkedAccountsMetrics: js.UndefOr[typings.awsSdk.clientsCloudwatchMod.IncludeLinkedAccountsMetrics] = js.undefined
   
   /**
     * If you are creating a new metric stream, this is the name for the new stream. The name must be different than the names of other metric streams in this account and Region. If you are updating a metric stream, specify the name of that stream here. Valid characters are A-Z, a-z, 0-9, "-" and "_".
@@ -32,12 +37,12 @@ trait PutMetricStreamInput extends StObject {
   var OutputFormat: MetricStreamOutputFormat
   
   /**
-    * The ARN of an IAM role that this metric stream will use to access Amazon Kinesis Firehose resources. This IAM role must already exist and must be in the same account as the metric stream. This IAM role must include the following permissions:   firehose:PutRecord   firehose:PutRecordBatch  
+    * The ARN of an IAM role that this metric stream will use to access Amazon Kinesis Data Firehose resources. This IAM role must already exist and must be in the same account as the metric stream. This IAM role must include the following permissions:   firehose:PutRecord   firehose:PutRecordBatch  
     */
   var RoleArn: AmazonResourceName
   
   /**
-    * By default, a metric stream always sends the MAX, MIN, SUM, and SAMPLECOUNT statistics for each metric that is streamed. You can use this parameter to have the metric stream also send additional statistics in the stream. This array can have up to 100 members. For each entry in this array, you specify one or more metrics and the list of additional statistics to stream for those metrics. The additional statistics that you can stream depend on the stream's OutputFormat. If the OutputFormat is json, you can stream any additional statistic that is supported by CloudWatch, listed in  CloudWatch statistics definitions. If the OutputFormat is opentelemetry0.7, you can stream percentile statistics such as p95, p99.9 and so on.
+    * By default, a metric stream always sends the MAX, MIN, SUM, and SAMPLECOUNT statistics for each metric that is streamed. You can use this parameter to have the metric stream also send additional statistics in the stream. This array can have up to 100 members. For each entry in this array, you specify one or more metrics and the list of additional statistics to stream for those metrics. The additional statistics that you can stream depend on the stream's OutputFormat. If the OutputFormat is json, you can stream any additional statistic that is supported by CloudWatch, listed in  CloudWatch statistics definitions. If the OutputFormat is opentelemetry0.7, you can stream percentile statistics such as p95, p99.9, and so on.
     */
   var StatisticsConfigurations: js.UndefOr[MetricStreamStatisticsConfigurations] = js.undefined
   
@@ -74,6 +79,10 @@ object PutMetricStreamInput {
     inline def setIncludeFiltersUndefined: Self = StObject.set(x, "IncludeFilters", js.undefined)
     
     inline def setIncludeFiltersVarargs(value: MetricStreamFilter*): Self = StObject.set(x, "IncludeFilters", js.Array(value*))
+    
+    inline def setIncludeLinkedAccountsMetrics(value: IncludeLinkedAccountsMetrics): Self = StObject.set(x, "IncludeLinkedAccountsMetrics", value.asInstanceOf[js.Any])
+    
+    inline def setIncludeLinkedAccountsMetricsUndefined: Self = StObject.set(x, "IncludeLinkedAccountsMetrics", js.undefined)
     
     inline def setName(value: MetricStreamName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

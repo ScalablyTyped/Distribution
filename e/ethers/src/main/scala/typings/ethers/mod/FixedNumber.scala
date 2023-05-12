@@ -1,8 +1,8 @@
 package typings.ethers.mod
 
-import typings.ethersprojectBignumber.libBignumberMod.BigNumberish
-import typings.ethersprojectBignumber.libFixednumberMod.FixedFormat
-import typings.ethersprojectBytes.mod.BytesLike
+import typings.ethers.typesUtilsDataMod.BytesLike
+import typings.ethers.typesUtilsFixednumberMod.FixedFormat
+import typings.ethers.typesUtilsMathsMod.BigNumberish
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,9 +10,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("ethers", "FixedNumber")
 @js.native
 open class FixedNumber protected ()
-  extends typings.ethersprojectBignumber.mod.FixedNumber {
-  def this(constructorGuard: Any, hex: String, value: String) = this()
-  def this(constructorGuard: Any, hex: String, value: String, format: FixedFormat) = this()
+  extends typings.ethers.typesEthersMod.FixedNumber {
+  /**
+    *  @private
+    */
+  def this(guard: Any, value: js.BigInt, format: Any) = this()
 }
 /* static members */
 object FixedNumber {
@@ -21,45 +23,35 @@ object FixedNumber {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def from(value: Any): typings.ethersprojectBignumber.libFixednumberMod.FixedNumber = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(value.asInstanceOf[js.Any]).asInstanceOf[typings.ethersprojectBignumber.libFixednumberMod.FixedNumber]
-  inline def from(value: Any, format: String): typings.ethersprojectBignumber.libFixednumberMod.FixedNumber = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(value.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[typings.ethersprojectBignumber.libFixednumberMod.FixedNumber]
-  inline def from(value: Any, format: Double): typings.ethersprojectBignumber.libFixednumberMod.FixedNumber = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(value.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[typings.ethersprojectBignumber.libFixednumberMod.FixedNumber]
-  inline def from(value: Any, format: FixedFormat): typings.ethersprojectBignumber.libFixednumberMod.FixedNumber = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(value.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[typings.ethersprojectBignumber.libFixednumberMod.FixedNumber]
+  /**
+    *  Creates a new [[FixedNumber]] with the big-endian representation
+    *  %%value%% with %%format%%.
+    *
+    *  This will throw a [[NumericFaultError]] if %%value%% cannot fit
+    *  in %%format%% due to overflow.
+    */
+  inline def fromBytes(_value: BytesLike): typings.ethers.typesUtilsFixednumberMod.FixedNumber = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBytes")(_value.asInstanceOf[js.Any]).asInstanceOf[typings.ethers.typesUtilsFixednumberMod.FixedNumber]
+  inline def fromBytes(_value: BytesLike, _format: FixedFormat): typings.ethers.typesUtilsFixednumberMod.FixedNumber = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBytes")(_value.asInstanceOf[js.Any], _format.asInstanceOf[js.Any])).asInstanceOf[typings.ethers.typesUtilsFixednumberMod.FixedNumber]
   
-  inline def fromBytes(value: BytesLike): typings.ethersprojectBignumber.libFixednumberMod.FixedNumber = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBytes")(value.asInstanceOf[js.Any]).asInstanceOf[typings.ethersprojectBignumber.libFixednumberMod.FixedNumber]
-  inline def fromBytes(value: BytesLike, format: String): typings.ethersprojectBignumber.libFixednumberMod.FixedNumber = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBytes")(value.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[typings.ethersprojectBignumber.libFixednumberMod.FixedNumber]
-  inline def fromBytes(value: BytesLike, format: Double): typings.ethersprojectBignumber.libFixednumberMod.FixedNumber = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBytes")(value.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[typings.ethersprojectBignumber.libFixednumberMod.FixedNumber]
-  inline def fromBytes(value: BytesLike, format: FixedFormat): typings.ethersprojectBignumber.libFixednumberMod.FixedNumber = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBytes")(value.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[typings.ethersprojectBignumber.libFixednumberMod.FixedNumber]
+  /**
+    *  Creates a new [[FixedNumber]] for %%value%% with %%format%%.
+    *
+    *  This will throw a [[NumericFaultError]] if %%value%% cannot fit
+    *  in %%format%%, either due to overflow or underflow (precision loss).
+    */
+  inline def fromString(_value: String): typings.ethers.typesUtilsFixednumberMod.FixedNumber = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(_value.asInstanceOf[js.Any]).asInstanceOf[typings.ethers.typesUtilsFixednumberMod.FixedNumber]
+  inline def fromString(_value: String, _format: FixedFormat): typings.ethers.typesUtilsFixednumberMod.FixedNumber = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(_value.asInstanceOf[js.Any], _format.asInstanceOf[js.Any])).asInstanceOf[typings.ethers.typesUtilsFixednumberMod.FixedNumber]
   
-  inline def fromString(value: String): typings.ethersprojectBignumber.libFixednumberMod.FixedNumber = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(value.asInstanceOf[js.Any]).asInstanceOf[typings.ethersprojectBignumber.libFixednumberMod.FixedNumber]
-  inline def fromString(value: String, format: String): typings.ethersprojectBignumber.libFixednumberMod.FixedNumber = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(value.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[typings.ethersprojectBignumber.libFixednumberMod.FixedNumber]
-  inline def fromString(value: String, format: Double): typings.ethersprojectBignumber.libFixednumberMod.FixedNumber = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(value.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[typings.ethersprojectBignumber.libFixednumberMod.FixedNumber]
-  inline def fromString(value: String, format: FixedFormat): typings.ethersprojectBignumber.libFixednumberMod.FixedNumber = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(value.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[typings.ethersprojectBignumber.libFixednumberMod.FixedNumber]
-  
-  inline def fromValue(value: typings.ethersprojectBignumber.libBignumberMod.BigNumber): typings.ethersprojectBignumber.libFixednumberMod.FixedNumber = ^.asInstanceOf[js.Dynamic].applyDynamic("fromValue")(value.asInstanceOf[js.Any]).asInstanceOf[typings.ethersprojectBignumber.libFixednumberMod.FixedNumber]
-  inline def fromValue(value: typings.ethersprojectBignumber.libBignumberMod.BigNumber, decimals: Unit, format: String): typings.ethersprojectBignumber.libFixednumberMod.FixedNumber = (^.asInstanceOf[js.Dynamic].applyDynamic("fromValue")(value.asInstanceOf[js.Any], decimals.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[typings.ethersprojectBignumber.libFixednumberMod.FixedNumber]
-  inline def fromValue(value: typings.ethersprojectBignumber.libBignumberMod.BigNumber, decimals: Unit, format: Double): typings.ethersprojectBignumber.libFixednumberMod.FixedNumber = (^.asInstanceOf[js.Dynamic].applyDynamic("fromValue")(value.asInstanceOf[js.Any], decimals.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[typings.ethersprojectBignumber.libFixednumberMod.FixedNumber]
-  inline def fromValue(
-    value: typings.ethersprojectBignumber.libBignumberMod.BigNumber,
-    decimals: Unit,
-    format: FixedFormat
-  ): typings.ethersprojectBignumber.libFixednumberMod.FixedNumber = (^.asInstanceOf[js.Dynamic].applyDynamic("fromValue")(value.asInstanceOf[js.Any], decimals.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[typings.ethersprojectBignumber.libFixednumberMod.FixedNumber]
-  inline def fromValue(value: typings.ethersprojectBignumber.libBignumberMod.BigNumber, decimals: BigNumberish): typings.ethersprojectBignumber.libFixednumberMod.FixedNumber = (^.asInstanceOf[js.Dynamic].applyDynamic("fromValue")(value.asInstanceOf[js.Any], decimals.asInstanceOf[js.Any])).asInstanceOf[typings.ethersprojectBignumber.libFixednumberMod.FixedNumber]
-  inline def fromValue(
-    value: typings.ethersprojectBignumber.libBignumberMod.BigNumber,
-    decimals: BigNumberish,
-    format: String
-  ): typings.ethersprojectBignumber.libFixednumberMod.FixedNumber = (^.asInstanceOf[js.Dynamic].applyDynamic("fromValue")(value.asInstanceOf[js.Any], decimals.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[typings.ethersprojectBignumber.libFixednumberMod.FixedNumber]
-  inline def fromValue(
-    value: typings.ethersprojectBignumber.libBignumberMod.BigNumber,
-    decimals: BigNumberish,
-    format: Double
-  ): typings.ethersprojectBignumber.libFixednumberMod.FixedNumber = (^.asInstanceOf[js.Dynamic].applyDynamic("fromValue")(value.asInstanceOf[js.Any], decimals.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[typings.ethersprojectBignumber.libFixednumberMod.FixedNumber]
-  inline def fromValue(
-    value: typings.ethersprojectBignumber.libBignumberMod.BigNumber,
-    decimals: BigNumberish,
-    format: FixedFormat
-  ): typings.ethersprojectBignumber.libFixednumberMod.FixedNumber = (^.asInstanceOf[js.Dynamic].applyDynamic("fromValue")(value.asInstanceOf[js.Any], decimals.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[typings.ethersprojectBignumber.libFixednumberMod.FixedNumber]
-  
-  inline def isFixedNumber(value: Any): /* is @ethersproject/bignumber.@ethersproject/bignumber/lib/fixednumber.FixedNumber */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFixedNumber")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @ethersproject/bignumber.@ethersproject/bignumber/lib/fixednumber.FixedNumber */ Boolean]
+  /**
+    *  Creates a new [[FixedNumber]] for %%value%% divided by
+    *  %%decimal%% places with %%format%%.
+    *
+    *  This will throw a [[NumericFaultError]] if %%value%% (once adjusted
+    *  for %%decimals%%) cannot fit in %%format%%, either due to overflow
+    *  or underflow (precision loss).
+    */
+  inline def fromValue(_value: BigNumberish): typings.ethers.typesUtilsFixednumberMod.FixedNumber = ^.asInstanceOf[js.Dynamic].applyDynamic("fromValue")(_value.asInstanceOf[js.Any]).asInstanceOf[typings.ethers.typesUtilsFixednumberMod.FixedNumber]
+  inline def fromValue(_value: BigNumberish, decimals: Double): typings.ethers.typesUtilsFixednumberMod.FixedNumber = (^.asInstanceOf[js.Dynamic].applyDynamic("fromValue")(_value.asInstanceOf[js.Any], decimals.asInstanceOf[js.Any])).asInstanceOf[typings.ethers.typesUtilsFixednumberMod.FixedNumber]
+  inline def fromValue(_value: BigNumberish, decimals: Double, _format: FixedFormat): typings.ethers.typesUtilsFixednumberMod.FixedNumber = (^.asInstanceOf[js.Dynamic].applyDynamic("fromValue")(_value.asInstanceOf[js.Any], decimals.asInstanceOf[js.Any], _format.asInstanceOf[js.Any])).asInstanceOf[typings.ethers.typesUtilsFixednumberMod.FixedNumber]
+  inline def fromValue(_value: BigNumberish, decimals: Unit, _format: FixedFormat): typings.ethers.typesUtilsFixednumberMod.FixedNumber = (^.asInstanceOf[js.Dynamic].applyDynamic("fromValue")(_value.asInstanceOf[js.Any], decimals.asInstanceOf[js.Any], _format.asInstanceOf[js.Any])).asInstanceOf[typings.ethers.typesUtilsFixednumberMod.FixedNumber]
 }

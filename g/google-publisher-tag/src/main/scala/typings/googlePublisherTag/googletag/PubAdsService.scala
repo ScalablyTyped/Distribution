@@ -26,6 +26,12 @@ trait PubAdsService
     * involving this ad.
     *
     * @example
+    *   const slot1 =
+    *       googletag.defineSlot('/1234567/sports', [728, 90], 'div-1')!;
+    *   googletag.display('div-1');
+    *   const slot2 =
+    *       googletag.defineSlot('/1234567/news', [160, 600], 'div-2')!;
+    *   googletag.display('div-2');
     *
     *   // This call to clear only slot1.
     *   googletag.pubads().clear([slot1]);
@@ -157,9 +163,12 @@ trait PubAdsService
     *
     * @example
     *   googletag.pubads().enableLazyLoad({
-    *     fetchMarginPercent: 500,  // Fetch slots within 5 viewports.
-    *     renderMarginPercent: 200,  // Render slots within 2 viewports.
-    *     mobileScaling: 2.0  // Double the above values on mobile.
+    *     // Fetch slots within 5 viewports.
+    *     fetchMarginPercent: 500,
+    *     // Render slots within 2 viewports.
+    *     renderMarginPercent: 200,
+    *     // Double the above values on mobile.
+    *     mobileScaling: 2.0
     *   });
     *
     * @see [Ads best practices: Prioritize &quot;important&quot; ad slots](https://developers.google.com/publisher-tag/guides/ad-best-practices#prioritize_important_ad_slots)
@@ -221,8 +230,8 @@ trait PubAdsService
     *
     * @example
     *   googletag.pubads().set('adsense_background_color', '#FFFFFF');
-    *   var color = googletag.pubads().get('adsense_background_color');
-    *   // color == '#FFFFFF'.
+    *   googletag.pubads().get('adsense_background_color');
+    *   // Returns '#FFFFFF'.
     *
     * @see [AdSense Attributes](https://developers.google.com/publisher-tag/adsense_attributes)
     * @param key Name of the attribute to look for.
@@ -237,8 +246,8 @@ trait PubAdsService
     * @example
     *   googletag.pubads().set('adsense_background_color', '#FFFFFF');
     *   googletag.pubads().set('adsense_border_color', '#AABBCC');
-    *   var keys = googletag.pubads().getAttributeKeys();
-    *   // Keys are ['adsense_background_color', 'adsense_border_color'].
+    *   googletag.pubads().getAttributeKeys();
+    *   // Returns ['adsense_background_color', 'adsense_border_color'].
     *
     * @return Array of attribute keys set on this service. Ordering is
     *     undefined.
@@ -252,11 +261,11 @@ trait PubAdsService
     * @example
     *   googletag.pubads().setTargeting('interests', 'sports');
     *
-    *   var param = googletag.pubads().getTargeting('interests');
-    *   // param is ['sports']
+    *   googletag.pubads().getTargeting('interests');
+    *   // Returns ['sports'].
     *
-    *   var param = googletag.pubads().getTargeting('age');
-    *   // param is [] (empty array)
+    *   googletag.pubads().getTargeting('age');
+    *   // Returns [] (empty array).
     *
     * @param key The targeting key to look for.
     * @return The values associated with this key, or an empty array if there
@@ -272,8 +281,8 @@ trait PubAdsService
     *   googletag.pubads().setTargeting('interests', 'sports');
     *   googletag.pubads().setTargeting('colors', 'blue');
     *
-    *   var keys = googletag.pubads().getTargetingKeys();
-    *   // keys are ['interests', 'colors'].
+    *   googletag.pubads().getTargetingKeys();
+    *   // Returns ['interests', 'colors'].
     *
     * @return Array of targeting keys. Ordering is undefined.
     */
@@ -305,6 +314,12 @@ trait PubAdsService
     * exclusions involving that ad.
     *
     * @example
+    *   const slot1 =
+    *       googletag.defineSlot('/1234567/sports', [728, 90], 'div-1')!;
+    *   googletag.display('div-1');
+    *   const slot2 =
+    *       googletag.defineSlot('/1234567/news', [160, 600], 'div-2')!;
+    *   googletag.display('div-2');
     *
     *   // This call to refresh fetches a new ad for slot1 only.
     *   googletag.pubads().refresh([slot1]);
@@ -423,12 +438,12 @@ trait PubAdsService
     *
     *   // The following slot will be opted-out of the page-level force
     *   // SafeFrame instruction.
-    *   googletag.defineSlot('/1234567/sports', [160, 600], 'div-1')
+    *   googletag.defineSlot('/1234567/sports', [160, 600], 'div-1')!
     *            .setForceSafeFrame(false)
     *            .addService(googletag.pubads());
     *
     *   // The following slot will have SafeFrame forced.
-    *   googletag.defineSlot('/1234567/news', [160, 600], 'div-2')
+    *   googletag.defineSlot('/1234567/news', [160, 600], 'div-2')!
     *            .addService(googletag.pubads());
     *
     *   googletag.display('div-1');
@@ -508,25 +523,24 @@ trait PubAdsService
     * @example
     *   googletag.pubads().setForceSafeFrame(true);
     *
-    *   var pageConfig = {
+    *   const pageConfig = {
     *     allowOverlayExpansion: true,
     *     allowPushExpansion: true,
-    *     sandbox: true,
-    *     useUniqueDomain: true
+    *     sandbox: true
     *   };
     *
-    *   var slotConfig = {allowOverlayExpansion: false};
+    *   const slotConfig = {allowOverlayExpansion: false};
     *
     *   googletag.pubads().setSafeFrameConfig(pageConfig);
     *
     *   // The following slot will not allow for expansion by overlay.
-    *   googletag.defineSlot('/1234567/sports', [160, 600], 'div-1')
+    *   googletag.defineSlot('/1234567/sports', [160, 600], 'div-1')!
     *            .setSafeFrameConfig(slotConfig)
     *            .addService(googletag.pubads());
     *
     *   // The following slot will inherit the page level settings, and hence
     *   // would allow for expansion by overlay.
-    *   googletag.defineSlot('/1234567/news', [160, 600], 'div-2')
+    *   googletag.defineSlot('/1234567/news', [160, 600], 'div-2')!
     *            .addService(googletag.pubads());
     *
     *   googletag.display('div-1');

@@ -12,12 +12,12 @@ trait CreateAutoMLJobRequest extends StObject {
   var AutoMLJobConfig: js.UndefOr[typings.awsSdk.clientsSagemakerMod.AutoMLJobConfig] = js.undefined
   
   /**
-    * Identifies an Autopilot job. The name must be unique to your account and is case-insensitive.
+    * Identifies an Autopilot job. The name must be unique to your account and is case insensitive.
     */
   var AutoMLJobName: typings.awsSdk.clientsSagemakerMod.AutoMLJobName
   
   /**
-    * Defines the objective metric used to measure the predictive quality of an AutoML job. You provide an AutoMLJobObjective$MetricName and Autopilot infers whether to minimize or maximize it.
+    * Defines the objective metric used to measure the predictive quality of an AutoML job. You provide an AutoMLJobObjective$MetricName and Autopilot infers whether to minimize or maximize it. For CreateAutoMLJobV2, only Accuracy is supported.
     */
   var AutoMLJobObjective: js.UndefOr[typings.awsSdk.clientsSagemakerMod.AutoMLJobObjective] = js.undefined
   
@@ -27,7 +27,7 @@ trait CreateAutoMLJobRequest extends StObject {
   var GenerateCandidateDefinitionsOnly: js.UndefOr[typings.awsSdk.clientsSagemakerMod.GenerateCandidateDefinitionsOnly] = js.undefined
   
   /**
-    * An array of channel objects that describes the input data and its location. Each channel is a named input source. Similar to InputDataConfig supported by . Format(s) supported: CSV, Parquet. A minimum of 500 rows is required for the training dataset. There is not a minimum number of rows required for the validation dataset.
+    * An array of channel objects that describes the input data and its location. Each channel is a named input source. Similar to InputDataConfig supported by HyperParameterTrainingJobDefinition. Format(s) supported: CSV, Parquet. A minimum of 500 rows is required for the training dataset. There is not a minimum number of rows required for the validation dataset.
     */
   var InputDataConfig: AutoMLInputDataConfig
   
@@ -42,7 +42,7 @@ trait CreateAutoMLJobRequest extends StObject {
   var OutputDataConfig: AutoMLOutputDataConfig
   
   /**
-    * Defines the type of supervised learning available for the candidates. For more information, see  Amazon SageMaker Autopilot problem types and algorithm support.
+    * Defines the type of supervised learning problem available for the candidates. For more information, see  Amazon SageMaker Autopilot problem types.
     */
   var ProblemType: js.UndefOr[typings.awsSdk.clientsSagemakerMod.ProblemType] = js.undefined
   
@@ -52,7 +52,7 @@ trait CreateAutoMLJobRequest extends StObject {
   var RoleArn: typings.awsSdk.clientsSagemakerMod.RoleArn
   
   /**
-    * Each tag consists of a key and an optional value. Tag keys must be unique per resource.
+    * An array of key-value pairs. You can use tags to categorize your Amazon Web Services resources in different ways, for example, by purpose, owner, or environment. For more information, see Tagging Amazon Web ServicesResources. Tag keys must be unique per resource.
     */
   var Tags: js.UndefOr[TagList] = js.undefined
 }

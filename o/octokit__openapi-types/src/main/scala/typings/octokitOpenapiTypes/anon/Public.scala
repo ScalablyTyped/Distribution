@@ -20,13 +20,13 @@ trait Public extends StObject {
   
   var public: Boolean
   
-  var repo: NameUrl
+  var repo: IdName
   
   var `type`: String | Null
 }
 object Public {
   
-  inline def apply(actor: Displaylogin, id: String, payload: Issue, public: Boolean, repo: NameUrl): Public = {
+  inline def apply(actor: Displaylogin, id: String, payload: Issue, public: Boolean, repo: IdName): Public = {
     val __obj = js.Dynamic.literal(actor = actor.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any], public = public.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any], created_at = null)
     __obj.updateDynamic("type")(null)
     __obj.asInstanceOf[Public]
@@ -51,7 +51,7 @@ object Public {
     
     inline def setPublic(value: Boolean): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
     
-    inline def setRepo(value: NameUrl): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(value: IdName): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

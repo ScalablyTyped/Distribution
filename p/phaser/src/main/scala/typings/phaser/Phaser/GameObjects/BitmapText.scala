@@ -4,9 +4,11 @@ import typings.phaser.Phaser.Cameras.Scene2D.Camera
 import typings.phaser.Phaser.GameObjects.Components.Alpha
 import typings.phaser.Phaser.GameObjects.Components.BlendMode
 import typings.phaser.Phaser.GameObjects.Components.Depth
+import typings.phaser.Phaser.GameObjects.Components.GetBounds
 import typings.phaser.Phaser.GameObjects.Components.Mask
 import typings.phaser.Phaser.GameObjects.Components.Origin
 import typings.phaser.Phaser.GameObjects.Components.Pipeline
+import typings.phaser.Phaser.GameObjects.Components.PostPipeline
 import typings.phaser.Phaser.GameObjects.Components.ScrollFactor
 import typings.phaser.Phaser.GameObjects.Components.Texture
 import typings.phaser.Phaser.GameObjects.Components.Tint
@@ -35,7 +37,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * BMFont (Windows, free): {@link http://www.angelcode.com/products/bmfont/|http://www.angelcode.com/products/bmfont/}
   * Glyph Designer (OS X, commercial): {@link http://www.71squared.com/en/glyphdesigner|http://www.71squared.com/en/glyphdesigner}
-  * Littera (Web-based, free): {@link http://kvazars.com/littera/|http://kvazars.com/littera/}
+  * Snow BMF (Web-based, free): {@link https://snowb.org//|https://snowb.org/}
+  * Littera (Flash-based, free): {@link http://kvazars.com/littera/|http://kvazars.com/littera/}
   * 
   * For most use cases it is recommended to use XML. If you wish to use JSON, the formatting should be equal to the result of
   * converting a valid XML file through the popular X2JS library. An online tool for conversion can be found here: {@link http://codebeautify.org/xmltojson|http://codebeautify.org/xmltojson}
@@ -47,9 +50,11 @@ trait BitmapText
      with Alpha
      with BlendMode
      with Depth
+     with GetBounds
      with Mask
      with Origin
      with Pipeline
+     with PostPipeline
      with ScrollFactor
      with Texture
      with Tint
@@ -71,6 +76,24 @@ trait BitmapText
     * The alignment position is based on the longest line of text.
     */
   var align: Double = js.native
+  
+  /**
+    * The displayed height of this Bitmap Text.
+    * 
+    * This value takes into account the scale factor.
+    * 
+    * This property is read-only.
+    */
+  val displayHeight: Double = js.native
+  
+  /**
+    * The displayed width of this Bitmap Text.
+    * 
+    * This value takes into account the scale factor.
+    * 
+    * This property is read-only.
+    */
+  val displayWidth: Double = js.native
   
   /**
     * The alpha value of the drop shadow.
@@ -161,7 +184,9 @@ trait BitmapText
   def getTextBounds(round: Boolean): BitmapTextSize = js.native
   
   /**
-    * The height of this bitmap text.
+    * The height of this Bitmap text.
+    * 
+    * This property is read-only.
     */
   val height: Double = js.native
   
@@ -173,6 +198,15 @@ trait BitmapText
     * You can also use the method `setLetterSpacing` if you want a chainable way to change the letter spacing.
     */
   var letterSpacing: Double = js.native
+  
+  /**
+    * Adds / Removes spacing between lines.
+    * 
+    * Can be a negative or positive number.
+    * 
+    * You can also use the method `setLineSpacing` if you want a chainable way to change the line spacing.
+    */
+  var lineSpacing: Double = js.native
   
   /**
     * The maximum display width of this BitmapText in pixels.
@@ -309,6 +343,18 @@ trait BitmapText
   def setLetterSpacing(spacing: Double): this.type = js.native
   
   /**
+    * Sets the line spacing value. This value is added to the font height to
+    * calculate the overall line height.
+    * 
+    * Spacing can be a negative or positive number.
+    * 
+    * Only has an effect if this BitmapText object contains multiple lines of text.
+    * @param spacing The amount of space to add between each line in multi-line text. Default 0.
+    */
+  def setLineSpacing(): this.type = js.native
+  def setLineSpacing(spacing: Double): this.type = js.native
+  
+  /**
     * Sets the maximum display width of this BitmapText in pixels.
     * 
     * If `BitmapText.text` is longer than `maxWidth` then the lines will be automatically wrapped
@@ -393,6 +439,8 @@ trait BitmapText
   
   /**
     * The width of this Bitmap Text.
+    * 
+    * This property is read-only.
     */
   val width: Double = js.native
   

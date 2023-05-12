@@ -27,7 +27,7 @@ trait meshUtilsUngeoreferenceOptions extends StObject {
   /**
     * Indicates the unit of the resulting data.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-meshUtils.html#ungeoreference)
+    * [Read more...](global.html#unit)
     */
   var unit: js.UndefOr[
     millimeters | centimeters | decimeters | meters_ | kilometers_ | inches | feet_ | yards | miles_ | `nautical-miles` | `us-feet`

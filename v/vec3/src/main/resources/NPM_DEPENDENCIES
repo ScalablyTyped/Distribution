@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "vec3" : "0.1.7"
+      "vec3" : "0.1.8"
     }
   ],
   "test-dependencies" : [
     {
-      "vec3" : "0.1.7"
+      "vec3" : "0.1.8"
     }
   ],
   "compile-devDependencies" : [

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "svelte" : "3.52.0"
+      "svelte" : "3.59.1"
     }
   ],
   "test-dependencies" : [
     {
-      "svelte" : "3.52.0"
+      "svelte" : "3.59.1"
     }
   ],
   "compile-devDependencies" : [

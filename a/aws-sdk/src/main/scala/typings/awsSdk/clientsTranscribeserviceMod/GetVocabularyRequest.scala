@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetVocabularyRequest extends StObject {
   
   /**
-    * The name of the custom vocabulary you want information about. Vocabulary names are case sensitive.
+    * The name of the custom vocabulary you want information about. Custom vocabulary names are case sensitive.
     */
   var VocabularyName: typings.awsSdk.clientsTranscribeserviceMod.VocabularyName
 }

@@ -59,7 +59,6 @@ import typings.csstype.mod.Property.Marker
 import typings.csstype.mod.Property.MarkerEnd
 import typings.csstype.mod.Property.MarkerMid
 import typings.csstype.mod.Property.MarkerStart
-import typings.csstype.mod.Property.MozBinding
 import typings.csstype.mod.Property.MozFloatEdge
 import typings.csstype.mod.Property.MozForceBrokenImageIcon
 import typings.csstype.mod.Property.MozOutlineRadius
@@ -131,7 +130,7 @@ object libTypesMod {
   type CSSClasses[K /* <: String */] = Record[K, NestedCSSProperties]
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.csstype.mod.ObsoletePropertiesFallback because var conflicts: clip. Inlined msImeMode, MozOutlineStyle, KhtmlBoxLines, MozBackgroundInlinePolicy, MozForceBrokenImageIcon, MozOutlineRadiusBottomleft, WebkitScrollSnapPointsX, MozOutline, MozTextDecorationLine, MozBoxFlex, MozUserInput, WebkitBoxOrdinalGroup, OAnimationDuration, KhtmlBoxOrient, boxLines, WebkitBoxFlexGroup, MozFloatEdge, WebkitBoxDirection, MozOutlineRadiusTopright, MozBoxDirection, offsetInlineStart, scrollSnapCoordinate, KhtmlBoxAlign, imeMode, MozBackgroundSize, MozOutlineRadius, gridGap, OObjectPosition, MozBoxAlign, scrollSnapTypeY, offsetInline, offsetBlock, WebkitBoxLines, gridRowGap, MozBoxOrient, boxOrient, KhtmlLineBreak, OAnimationDelay, MozBinding, OTransform, OTextOverflow, MozBoxPack, WebkitBoxAlign, scrollSnapDestination, OTransitionDuration, MozTextDecorationColor, OTabSize, offsetBlockStart, MozBorderRadiusTopright, MozBorderRadiusBottomleft, MozOpacity, boxOrdinalGroup, WebkitBoxOrient, OAnimation, OBackgroundSize, OAnimationFillMode, offsetBlockEnd, scrollSnapPointsY, WebkitBoxFlex, MozBoxShadow, KhtmlUserSelect, OObjectFit, gridColumnGap, scrollSnapTypeX, MozTextAlignLast, MozTextDecorationStyle, OTransitionTimingFunction, OTransformOrigin, boxPack, MozBorderRadius, KhtmlBoxOrdinalGroup, OBorderImage, azimuth, MozBorderRadiusTopleft, OAnimationName, MozOutlineWidth, MozBorderRadiusBottomright, MozOutlineColor, OTransition, OTransitionProperty, KhtmlBoxFlex, KhtmlBoxDirection, MozBoxOrdinalGroup, boxAlign, KhtmlBoxFlexGroup, MozBackgroundOrigin, MozOutlineRadiusTopleft, MozOutlineRadiusBottomright, boxFlex, WebkitBoxPack, boxFlexGroup, OAnimationDirection, OTransitionDelay, MozBackgroundClip, OAnimationPlayState, boxDirection, OAnimationTimingFunction, KhtmlBoxPack, scrollSnapPointsX, KhtmlOpacity, offsetInlineEnd, WebkitScrollSnapPointsY, OAnimationIterationCount
+  - typings.csstype.mod.ObsoletePropertiesFallback because var conflicts: clip. Inlined msImeMode, MozOutlineStyle, KhtmlBoxLines, MozBackgroundInlinePolicy, MozForceBrokenImageIcon, MozOutlineRadiusBottomleft, WebkitScrollSnapPointsX, MozOutline, MozTextDecorationLine, MozBoxFlex, MozUserInput, WebkitBoxOrdinalGroup, OAnimationDuration, KhtmlBoxOrient, boxLines, WebkitBoxFlexGroup, MozFloatEdge, WebkitBoxDirection, MozOutlineRadiusTopright, MozBoxDirection, offsetInlineStart, scrollSnapCoordinate, KhtmlBoxAlign, imeMode, MozBackgroundSize, MozOutlineRadius, gridGap, OObjectPosition, MozBoxAlign, scrollSnapTypeY, offsetInline, offsetBlock, WebkitBoxLines, gridRowGap, MozBoxOrient, boxOrient, KhtmlLineBreak, OAnimationDelay, OTransform, OTextOverflow, MozBoxPack, WebkitBoxAlign, scrollSnapDestination, OTransitionDuration, MozTextDecorationColor, OTabSize, offsetBlockStart, MozBorderRadiusTopright, MozBorderRadiusBottomleft, MozOpacity, boxOrdinalGroup, WebkitBoxOrient, OAnimation, OBackgroundSize, OAnimationFillMode, offsetBlockEnd, scrollSnapPointsY, WebkitBoxFlex, MozBoxShadow, KhtmlUserSelect, OObjectFit, gridColumnGap, scrollSnapTypeX, MozTextAlignLast, MozTextDecorationStyle, OTransitionTimingFunction, OTransformOrigin, boxPack, MozBorderRadius, KhtmlBoxOrdinalGroup, OBorderImage, azimuth, MozBorderRadiusTopleft, OAnimationName, MozOutlineWidth, MozBorderRadiusBottomright, MozOutlineColor, OTransition, OTransitionProperty, KhtmlBoxFlex, KhtmlBoxDirection, MozBoxOrdinalGroup, boxAlign, KhtmlBoxFlexGroup, MozBackgroundOrigin, MozOutlineRadiusTopleft, MozOutlineRadiusBottomright, boxFlex, WebkitBoxPack, boxFlexGroup, OAnimationDirection, OTransitionDelay, MozBackgroundClip, OAnimationPlayState, boxDirection, OAnimationTimingFunction, KhtmlBoxPack, scrollSnapPointsX, KhtmlOpacity, offsetInlineEnd, WebkitScrollSnapPointsY, OAnimationIterationCount
   - typings.csstype.mod.SvgPropertiesFallback because var conflicts: clipPath, color, cursor, direction, display, filter, font, fontFamily, fontSize, fontSizeAdjust, fontStretch, fontStyle, fontVariant, fontWeight, imageRendering, letterSpacing, lineHeight, mask, opacity, overflow, paintOrder, pointerEvents, textDecoration, textRendering, unicodeBidi, visibility, whiteSpace, wordSpacing, writingMode. Inlined textAnchor, shapeRendering, markerStart, strokeLinecap, strokeDashoffset, lightingColor, fillOpacity, colorRendering, floodColor, strokeWidth, strokeOpacity, strokeLinejoin, stroke, markerEnd, stopColor, clip, dominantBaseline, baselineShift, stopOpacity, fillRule, clipRule, colorInterpolation, marker, fill, glyphOrientationVertical, alignmentBaseline, vectorEffect, strokeDasharray, markerMid, strokeMiterlimit, floodOpacity */ trait CSSProperties
     extends StObject
        with StandardPropertiesFallback[TLength, String]
@@ -179,10 +178,6 @@ object libTypesMod {
     
     var MozBackgroundSize: js.UndefOr[
         BackgroundSize[TLength] | js.Array[NonNullable[js.UndefOr[BackgroundSize[TLength]]]]
-      ] = js.undefined
-    
-    var MozBinding: js.UndefOr[
-        typings.csstype.mod.Property.MozBinding | js.Array[NonNullable[js.UndefOr[typings.csstype.mod.Property.MozBinding]]]
       ] = js.undefined
     
     var MozBorderRadius: js.UndefOr[BorderRadius[TLength] | js.Array[NonNullable[js.UndefOr[BorderRadius[TLength]]]]] = js.undefined
@@ -784,12 +779,6 @@ object libTypesMod {
       inline def setMozBackgroundSizeUndefined: Self = StObject.set(x, "MozBackgroundSize", js.undefined)
       
       inline def setMozBackgroundSizeVarargs(value: NonNullable[js.UndefOr[BackgroundSize[TLength]]]*): Self = StObject.set(x, "MozBackgroundSize", js.Array(value*))
-      
-      inline def setMozBinding(value: MozBinding | js.Array[NonNullable[js.UndefOr[MozBinding]]]): Self = StObject.set(x, "MozBinding", value.asInstanceOf[js.Any])
-      
-      inline def setMozBindingUndefined: Self = StObject.set(x, "MozBinding", js.undefined)
-      
-      inline def setMozBindingVarargs(value: NonNullable[js.UndefOr[MozBinding]]*): Self = StObject.set(x, "MozBinding", js.Array(value*))
       
       inline def setMozBorderRadius(value: BorderRadius[TLength] | js.Array[NonNullable[js.UndefOr[BorderRadius[TLength]]]]): Self = StObject.set(x, "MozBorderRadius", value.asInstanceOf[js.Any])
       

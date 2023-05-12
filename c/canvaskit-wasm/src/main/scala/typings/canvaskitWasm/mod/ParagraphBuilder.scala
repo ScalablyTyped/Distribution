@@ -82,51 +82,6 @@ trait ParagraphBuilder
   def build(): Paragraph = js.native
   
   /**
-    * Returns a Paragraph object that can be used to be layout and
-    * paint the text to an Canvas.
-    * @param bidiRegions is an array of unsigned integers that should be
-    * treated as triples (starting index, ending index, direction).
-    * Direction == 1 means left-to-right, direction == 0 is right-to-left. It's
-    * recommended to use `CanvasKit.TextDirection.RTL.value` or
-    * `CanvasKit.TextDirection.LTR.value` instead of hardcoding 0 or 1.
-    *
-    * The indices are expected to be relative to the UTF-16 representation of
-    * the text.
-    * @param words is an array of word edges (starting or ending). You can
-    * pass 2 elements (0 as a start of the entire text and text.size as the
-    * end). This information only needed for a specific API method getWords.
-    *
-    * The indices are expected to be relative to the UTF-16 representation of
-    * the text.
-    *
-    * The `Intl.Segmenter` API can be used as a source for this data.
-    *
-    * @param graphemes is an array of indexes in the input text that point
-    * to the start of each grapheme.
-    *
-    * The indices are expected to be relative to the UTF-16 representation of
-    * the text.
-    *
-    * The `Intl.Segmenter` API can be used as a source for this data.
-    *
-    * @param lineBreaks is an array of unsigned integers that should be
-    * treated as pairs (index, break type) that point to the places of possible
-    * line breaking if needed. It should include 0 as the first element.
-    * Break type == 0 means soft break, break type == 1 is a hard break.
-    *
-    * The indices are expected to be relative to the UTF-16 representation of
-    * the text.
-    *
-    * Chrome's `v8BreakIterator` API can be used as a source for this data.
-    */
-  def buildWithClientInfo(
-    bidiRegions: js.UndefOr[InputBidiRegions | Null],
-    words: js.UndefOr[InputWords | Null],
-    graphemes: js.UndefOr[InputGraphemes | Null],
-    lineBreaks: js.UndefOr[InputLineBreaks | Null]
-  ): Paragraph = js.native
-  
-  /**
     * Returns the entire Paragraph text (which is useful in case that text
     * was produced as a set of addText calls).
     */
@@ -158,4 +113,70 @@ trait ParagraphBuilder
     * been added, but keeping the initial ParagraphStyle.
     */
   def reset(): Unit = js.native
+  
+  /**
+    * @param graphemes is an array of indexes in the input text that point
+    * to the start of each grapheme.
+    *
+    * The indices are expected to be relative to the UTF-16 representation of
+    * the text.
+    *
+    * The `Intl.Segmenter` API can be used as a source for this data.
+    */
+  def setGraphemeBreaksUtf16(graphemes: InputGraphemes): Unit = js.native
+  
+  /**
+    * @param graphemes is an array of indexes in the input text that point
+    * to the start of each grapheme.
+    *
+    * The indices are expected to be relative to the UTF-8 representation of
+    * the text.
+    */
+  def setGraphemeBreaksUtf8(graphemes: InputGraphemes): Unit = js.native
+  
+  /**
+    * @param lineBreaks is an array of unsigned integers that should be
+    * treated as pairs (index, break type) that point to the places of possible
+    * line breaking if needed. It should include 0 as the first element.
+    * Break type == 0 means soft break, break type == 1 is a hard break.
+    *
+    * The indices are expected to be relative to the UTF-16 representation of
+    * the text.
+    *
+    * Chrome's `v8BreakIterator` API can be used as a source for this data.
+    */
+  def setLineBreaksUtf16(lineBreaks: InputLineBreaks): Unit = js.native
+  
+  /**
+    * @param lineBreaks is an array of unsigned integers that should be
+    * treated as pairs (index, break type) that point to the places of possible
+    * line breaking if needed. It should include 0 as the first element.
+    * Break type == 0 means soft break, break type == 1 is a hard break.
+    *
+    * The indices are expected to be relative to the UTF-8 representation of
+    * the text.
+    */
+  def setLineBreaksUtf8(lineBreaks: InputLineBreaks): Unit = js.native
+  
+  /**
+    * @param words is an array of word edges (starting or ending). You can
+    * pass 2 elements (0 as a start of the entire text and text.size as the
+    * end). This information is only needed for a specific API method getWords.
+    *
+    * The indices are expected to be relative to the UTF-16 representation of
+    * the text.
+    *
+    * The `Intl.Segmenter` API can be used as a source for this data.
+    */
+  def setWordsUtf16(words: InputWords): Unit = js.native
+  
+  /**
+    * @param words is an array of word edges (starting or ending). You can
+    * pass 2 elements (0 as a start of the entire text and text.size as the
+    * end). This information is only needed for a specific API method getWords.
+    *
+    * The indices are expected to be relative to the UTF-8 representation of
+    * the text.
+    */
+  def setWordsUtf8(words: InputWords): Unit = js.native
 }

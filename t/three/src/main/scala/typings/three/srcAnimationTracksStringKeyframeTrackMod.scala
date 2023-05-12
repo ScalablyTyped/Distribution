@@ -1,5 +1,6 @@
 package typings.three
 
+import typings.std.ArrayLike
 import typings.three.srcAnimationKeyframeTrackMod.KeyframeTrack
 import typings.three.srcConstantsMod.InterpolationModes
 import org.scalablytyped.runtime.StObject
@@ -11,7 +12,7 @@ object srcAnimationTracksStringKeyframeTrackMod {
   @JSImport("three/src/animation/tracks/StringKeyframeTrack", "StringKeyframeTrack")
   @js.native
   open class StringKeyframeTrack protected () extends KeyframeTrack {
-    def this(name: String, times: js.Array[Any], values: js.Array[Any]) = this()
-    def this(name: String, times: js.Array[Any], values: js.Array[Any], interpolation: InterpolationModes) = this()
+    def this(name: String, times: ArrayLike[Double], values: ArrayLike[Any]) = this()
+    def this(name: String, times: ArrayLike[Double], values: ArrayLike[Any], interpolation: InterpolationModes) = this()
   }
 }

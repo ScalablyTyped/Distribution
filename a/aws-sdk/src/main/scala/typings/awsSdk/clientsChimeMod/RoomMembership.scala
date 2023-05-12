@@ -11,6 +11,9 @@ trait RoomMembership extends StObject {
     */
   var InvitedBy: js.UndefOr[NonEmptyString] = js.undefined
   
+  /**
+    * The member details, such as email address, name, member ID, and member type.
+    */
   var Member: js.UndefOr[typings.awsSdk.clientsChimeMod.Member] = js.undefined
   
   /**

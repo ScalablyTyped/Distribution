@@ -7,10 +7,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FontFaceDescriptors extends StObject {
   
   /* standard dom */
-  var display: js.UndefOr[java.lang.String] = js.undefined
+  var ascentOverride: js.UndefOr[java.lang.String] = js.undefined
+  
+  /* standard dom */
+  var descentOverride: js.UndefOr[java.lang.String] = js.undefined
+  
+  /* standard dom */
+  var display: js.UndefOr[FontDisplay] = js.undefined
   
   /* standard dom */
   var featureSettings: js.UndefOr[java.lang.String] = js.undefined
+  
+  /* standard dom */
+  var lineGapOverride: js.UndefOr[java.lang.String] = js.undefined
   
   /* standard dom */
   var stretch: js.UndefOr[java.lang.String] = js.undefined
@@ -37,13 +46,25 @@ object FontFaceDescriptors {
   @scala.inline
   implicit open class MutableBuilder[Self <: FontFaceDescriptors] (val x: Self) extends AnyVal {
     
-    inline def setDisplay(value: java.lang.String): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+    inline def setAscentOverride(value: java.lang.String): Self = StObject.set(x, "ascentOverride", value.asInstanceOf[js.Any])
+    
+    inline def setAscentOverrideUndefined: Self = StObject.set(x, "ascentOverride", js.undefined)
+    
+    inline def setDescentOverride(value: java.lang.String): Self = StObject.set(x, "descentOverride", value.asInstanceOf[js.Any])
+    
+    inline def setDescentOverrideUndefined: Self = StObject.set(x, "descentOverride", js.undefined)
+    
+    inline def setDisplay(value: FontDisplay): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     
     inline def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
     
     inline def setFeatureSettings(value: java.lang.String): Self = StObject.set(x, "featureSettings", value.asInstanceOf[js.Any])
     
     inline def setFeatureSettingsUndefined: Self = StObject.set(x, "featureSettings", js.undefined)
+    
+    inline def setLineGapOverride(value: java.lang.String): Self = StObject.set(x, "lineGapOverride", value.asInstanceOf[js.Any])
+    
+    inline def setLineGapOverrideUndefined: Self = StObject.set(x, "lineGapOverride", js.undefined)
     
     inline def setStretch(value: java.lang.String): Self = StObject.set(x, "stretch", value.asInstanceOf[js.Any])
     

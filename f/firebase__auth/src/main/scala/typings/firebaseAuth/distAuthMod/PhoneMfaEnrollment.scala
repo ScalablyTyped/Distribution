@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * An MFA provided by SMS verification
+  * An MFA provided by SMS verification.
   */
 trait PhoneMfaEnrollment
   extends StObject

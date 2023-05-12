@@ -90,12 +90,12 @@ trait Chime extends Service {
   ): Request[AssociateSigninDelegateGroupsWithAccountResponse, AWSError] = js.native
   
   /**
-    *  Creates up to 100 new attendees for an active Amazon Chime SDK meeting. For more information about the Amazon Chime SDK, see Using the Amazon Chime SDK in the Amazon Chime Developer Guide. 
+    *  Creates up to 100 new attendees for an active Amazon Chime SDK meeting. For more information about the Amazon Chime SDK, see Using the Amazon Chime SDK in the Amazon Chime SDK Developer Guide. 
     */
   def batchCreateAttendee(): Request[BatchCreateAttendeeResponse, AWSError] = js.native
   def batchCreateAttendee(callback: js.Function2[/* err */ AWSError, /* data */ BatchCreateAttendeeResponse, Unit]): Request[BatchCreateAttendeeResponse, AWSError] = js.native
   /**
-    *  Creates up to 100 new attendees for an active Amazon Chime SDK meeting. For more information about the Amazon Chime SDK, see Using the Amazon Chime SDK in the Amazon Chime Developer Guide. 
+    *  Creates up to 100 new attendees for an active Amazon Chime SDK meeting. For more information about the Amazon Chime SDK, see Using the Amazon Chime SDK in the Amazon Chime SDK Developer Guide. 
     */
   def batchCreateAttendee(params: BatchCreateAttendeeRequest): Request[BatchCreateAttendeeResponse, AWSError] = js.native
   def batchCreateAttendee(
@@ -261,12 +261,12 @@ trait Chime extends Service {
   ): Request[CreateAppInstanceUserResponse, AWSError] = js.native
   
   /**
-    *  Creates a new attendee for an active Amazon Chime SDK meeting. For more information about the Amazon Chime SDK, see Using the Amazon Chime SDK in the Amazon Chime Developer Guide. 
+    *  Creates a new attendee for an active Amazon Chime SDK meeting. For more information about the Amazon Chime SDK, see Using the Amazon Chime SDK in the Amazon Chime SDK Developer Guide. 
     */
   def createAttendee(): Request[CreateAttendeeResponse, AWSError] = js.native
   def createAttendee(callback: js.Function2[/* err */ AWSError, /* data */ CreateAttendeeResponse, Unit]): Request[CreateAttendeeResponse, AWSError] = js.native
   /**
-    *  Creates a new attendee for an active Amazon Chime SDK meeting. For more information about the Amazon Chime SDK, see Using the Amazon Chime SDK in the Amazon Chime Developer Guide. 
+    *  Creates a new attendee for an active Amazon Chime SDK meeting. For more information about the Amazon Chime SDK, see Using the Amazon Chime SDK in the Amazon Chime SDK Developer Guide. 
     */
   def createAttendee(params: CreateAttendeeRequest): Request[CreateAttendeeResponse, AWSError] = js.native
   def createAttendee(
@@ -359,12 +359,12 @@ trait Chime extends Service {
   ): Request[CreateMediaCapturePipelineResponse, AWSError] = js.native
   
   /**
-    *  Creates a new Amazon Chime SDK meeting in the specified media Region with no initial attendees. For more information about specifying media Regions, see Amazon Chime SDK Media Regions in the Amazon Chime Developer Guide . For more information about the Amazon Chime SDK, see Using the Amazon Chime SDK in the Amazon Chime Developer Guide . 
+    *  Creates a new Amazon Chime SDK meeting in the specified media Region with no initial attendees. For more information about specifying media Regions, see Amazon Chime SDK Media Regions in the Amazon Chime SDK Developer Guide . For more information about the Amazon Chime SDK, see Using the Amazon Chime SDK in the Amazon Chime SDK Developer Guide . 
     */
   def createMeeting(): Request[CreateMeetingResponse, AWSError] = js.native
   def createMeeting(callback: js.Function2[/* err */ AWSError, /* data */ CreateMeetingResponse, Unit]): Request[CreateMeetingResponse, AWSError] = js.native
   /**
-    *  Creates a new Amazon Chime SDK meeting in the specified media Region with no initial attendees. For more information about specifying media Regions, see Amazon Chime SDK Media Regions in the Amazon Chime Developer Guide . For more information about the Amazon Chime SDK, see Using the Amazon Chime SDK in the Amazon Chime Developer Guide . 
+    *  Creates a new Amazon Chime SDK meeting in the specified media Region with no initial attendees. For more information about specifying media Regions, see Amazon Chime SDK Media Regions in the Amazon Chime SDK Developer Guide . For more information about the Amazon Chime SDK, see Using the Amazon Chime SDK in the Amazon Chime SDK Developer Guide . 
     */
   def createMeeting(params: CreateMeetingRequest): Request[CreateMeetingResponse, AWSError] = js.native
   def createMeeting(
@@ -387,12 +387,12 @@ trait Chime extends Service {
   ): Request[CreateMeetingDialOutResponse, AWSError] = js.native
   
   /**
-    *  Creates a new Amazon Chime SDK meeting in the specified media Region, with attendees. For more information about specifying media Regions, see Amazon Chime SDK Media Regions in the Amazon Chime Developer Guide . For more information about the Amazon Chime SDK, see Using the Amazon Chime SDK in the Amazon Chime Developer Guide . 
+    *  Creates a new Amazon Chime SDK meeting in the specified media Region, with attendees. For more information about specifying media Regions, see Amazon Chime SDK Media Regions in the Amazon Chime SDK Developer Guide . For more information about the Amazon Chime SDK, see Using the Amazon Chime SDK in the Amazon Chime SDK Developer Guide . 
     */
   def createMeetingWithAttendees(): Request[CreateMeetingWithAttendeesResponse, AWSError] = js.native
   def createMeetingWithAttendees(callback: js.Function2[/* err */ AWSError, /* data */ CreateMeetingWithAttendeesResponse, Unit]): Request[CreateMeetingWithAttendeesResponse, AWSError] = js.native
   /**
-    *  Creates a new Amazon Chime SDK meeting in the specified media Region, with attendees. For more information about specifying media Regions, see Amazon Chime SDK Media Regions in the Amazon Chime Developer Guide . For more information about the Amazon Chime SDK, see Using the Amazon Chime SDK in the Amazon Chime Developer Guide . 
+    *  Creates a new Amazon Chime SDK meeting in the specified media Region, with attendees. For more information about specifying media Regions, see Amazon Chime SDK Media Regions in the Amazon Chime SDK Developer Guide . For more information about the Amazon Chime SDK, see Using the Amazon Chime SDK in the Amazon Chime SDK Developer Guide . 
     */
   def createMeetingWithAttendees(params: CreateMeetingWithAttendeesRequest): Request[CreateMeetingWithAttendeesResponse, AWSError] = js.native
   def createMeetingWithAttendees(
@@ -611,12 +611,12 @@ trait Chime extends Service {
   ): Request[js.Object, AWSError] = js.native
   
   /**
-    * Deletes an attendee from the specified Amazon Chime SDK meeting and deletes their JoinToken. Attendees are automatically deleted when a Amazon Chime SDK meeting is deleted. For more information about the Amazon Chime SDK, see Using the Amazon Chime SDK in the Amazon Chime Developer Guide.
+    * Deletes an attendee from the specified Amazon Chime SDK meeting and deletes their JoinToken. Attendees are automatically deleted when a Amazon Chime SDK meeting is deleted. For more information about the Amazon Chime SDK, see Using the Amazon Chime SDK in the Amazon Chime SDK Developer Guide.
     */
   def deleteAttendee(): Request[js.Object, AWSError] = js.native
   def deleteAttendee(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Deletes an attendee from the specified Amazon Chime SDK meeting and deletes their JoinToken. Attendees are automatically deleted when a Amazon Chime SDK meeting is deleted. For more information about the Amazon Chime SDK, see Using the Amazon Chime SDK in the Amazon Chime Developer Guide.
+    * Deletes an attendee from the specified Amazon Chime SDK meeting and deletes their JoinToken. Attendees are automatically deleted when a Amazon Chime SDK meeting is deleted. For more information about the Amazon Chime SDK, see Using the Amazon Chime SDK in the Amazon Chime SDK Developer Guide.
     */
   def deleteAttendee(params: DeleteAttendeeRequest): Request[js.Object, AWSError] = js.native
   def deleteAttendee(
@@ -723,12 +723,12 @@ trait Chime extends Service {
   ): Request[js.Object, AWSError] = js.native
   
   /**
-    * Deletes the specified Amazon Chime SDK meeting. The operation deletes all attendees, disconnects all clients, and prevents new clients from joining the meeting. For more information about the Amazon Chime SDK, see Using the Amazon Chime SDK in the Amazon Chime Developer Guide.
+    * Deletes the specified Amazon Chime SDK meeting. The operation deletes all attendees, disconnects all clients, and prevents new clients from joining the meeting. For more information about the Amazon Chime SDK, see Using the Amazon Chime SDK in the Amazon Chime SDK Developer Guide.
     */
   def deleteMeeting(): Request[js.Object, AWSError] = js.native
   def deleteMeeting(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Deletes the specified Amazon Chime SDK meeting. The operation deletes all attendees, disconnects all clients, and prevents new clients from joining the meeting. For more information about the Amazon Chime SDK, see Using the Amazon Chime SDK in the Amazon Chime Developer Guide.
+    * Deletes the specified Amazon Chime SDK meeting. The operation deletes all attendees, disconnects all clients, and prevents new clients from joining the meeting. For more information about the Amazon Chime SDK, see Using the Amazon Chime SDK in the Amazon Chime SDK Developer Guide.
     */
   def deleteMeeting(params: DeleteMeetingRequest): Request[js.Object, AWSError] = js.native
   def deleteMeeting(
@@ -1224,12 +1224,12 @@ trait Chime extends Service {
   ): Request[GetAppInstanceStreamingConfigurationsResponse, AWSError] = js.native
   
   /**
-    *  Gets the Amazon Chime SDK attendee details for a specified meeting ID and attendee ID. For more information about the Amazon Chime SDK, see Using the Amazon Chime SDK in the Amazon Chime Developer Guide . 
+    *  Gets the Amazon Chime SDK attendee details for a specified meeting ID and attendee ID. For more information about the Amazon Chime SDK, see Using the Amazon Chime SDK in the Amazon Chime SDK Developer Guide . 
     */
   def getAttendee(): Request[GetAttendeeResponse, AWSError] = js.native
   def getAttendee(callback: js.Function2[/* err */ AWSError, /* data */ GetAttendeeResponse, Unit]): Request[GetAttendeeResponse, AWSError] = js.native
   /**
-    *  Gets the Amazon Chime SDK attendee details for a specified meeting ID and attendee ID. For more information about the Amazon Chime SDK, see Using the Amazon Chime SDK in the Amazon Chime Developer Guide . 
+    *  Gets the Amazon Chime SDK attendee details for a specified meeting ID and attendee ID. For more information about the Amazon Chime SDK, see Using the Amazon Chime SDK in the Amazon Chime SDK Developer Guide . 
     */
   def getAttendee(params: GetAttendeeRequest): Request[GetAttendeeResponse, AWSError] = js.native
   def getAttendee(
@@ -1297,12 +1297,12 @@ trait Chime extends Service {
   ): Request[GetMediaCapturePipelineResponse, AWSError] = js.native
   
   /**
-    *  Gets the Amazon Chime SDK meeting details for the specified meeting ID. For more information about the Amazon Chime SDK, see Using the Amazon Chime SDK in the Amazon Chime Developer Guide . 
+    *  Gets the Amazon Chime SDK meeting details for the specified meeting ID. For more information about the Amazon Chime SDK, see Using the Amazon Chime SDK in the Amazon Chime SDK Developer Guide . 
     */
   def getMeeting(): Request[GetMeetingResponse, AWSError] = js.native
   def getMeeting(callback: js.Function2[/* err */ AWSError, /* data */ GetMeetingResponse, Unit]): Request[GetMeetingResponse, AWSError] = js.native
   /**
-    *  Gets the Amazon Chime SDK meeting details for the specified meeting ID. For more information about the Amazon Chime SDK, see Using the Amazon Chime SDK in the Amazon Chime Developer Guide . 
+    *  Gets the Amazon Chime SDK meeting details for the specified meeting ID. For more information about the Amazon Chime SDK, see Using the Amazon Chime SDK in the Amazon Chime SDK Developer Guide . 
     */
   def getMeeting(params: GetMeetingRequest): Request[GetMeetingResponse, AWSError] = js.native
   def getMeeting(
@@ -1707,12 +1707,12 @@ trait Chime extends Service {
   ): Request[ListAttendeeTagsResponse, AWSError] = js.native
   
   /**
-    *  Lists the attendees for the specified Amazon Chime SDK meeting. For more information about the Amazon Chime SDK, see Using the Amazon Chime SDK in the Amazon Chime Developer Guide. 
+    *  Lists the attendees for the specified Amazon Chime SDK meeting. For more information about the Amazon Chime SDK, see Using the Amazon Chime SDK in the Amazon Chime SDK Developer Guide. 
     */
   def listAttendees(): Request[ListAttendeesResponse, AWSError] = js.native
   def listAttendees(callback: js.Function2[/* err */ AWSError, /* data */ ListAttendeesResponse, Unit]): Request[ListAttendeesResponse, AWSError] = js.native
   /**
-    *  Lists the attendees for the specified Amazon Chime SDK meeting. For more information about the Amazon Chime SDK, see Using the Amazon Chime SDK in the Amazon Chime Developer Guide. 
+    *  Lists the attendees for the specified Amazon Chime SDK meeting. For more information about the Amazon Chime SDK, see Using the Amazon Chime SDK in the Amazon Chime SDK Developer Guide. 
     */
   def listAttendees(params: ListAttendeesRequest): Request[ListAttendeesResponse, AWSError] = js.native
   def listAttendees(
@@ -1873,12 +1873,12 @@ trait Chime extends Service {
   ): Request[ListMeetingTagsResponse, AWSError] = js.native
   
   /**
-    *  Lists up to 100 active Amazon Chime SDK meetings. For more information about the Amazon Chime SDK, see Using the Amazon Chime SDK in the Amazon Chime Developer Guide.
+    *  Lists up to 100 active Amazon Chime SDK meetings. For more information about the Amazon Chime SDK, see Using the Amazon Chime SDK in the Amazon Chime SDK Developer Guide.
     */
   def listMeetings(): Request[ListMeetingsResponse, AWSError] = js.native
   def listMeetings(callback: js.Function2[/* err */ AWSError, /* data */ ListMeetingsResponse, Unit]): Request[ListMeetingsResponse, AWSError] = js.native
   /**
-    *  Lists up to 100 active Amazon Chime SDK meetings. For more information about the Amazon Chime SDK, see Using the Amazon Chime SDK in the Amazon Chime Developer Guide.
+    *  Lists up to 100 active Amazon Chime SDK meetings. For more information about the Amazon Chime SDK, see Using the Amazon Chime SDK in the Amazon Chime SDK Developer Guide.
     */
   def listMeetings(params: ListMeetingsRequest): Request[ListMeetingsResponse, AWSError] = js.native
   def listMeetings(
@@ -2403,12 +2403,12 @@ trait Chime extends Service {
   ): Request[SendChannelMessageResponse, AWSError] = js.native
   
   /**
-    * Starts transcription for the specified meetingId. 
+    * Starts transcription for the specified meetingId. For more information, refer to  Using Amazon Chime SDK live transcription  in the Amazon Chime SDK Developer Guide. If you specify an invalid configuration, a TranscriptFailed event will be sent with the contents of the BadRequestException generated by Amazon Transcribe. For more information on each parameter and which combinations are valid, refer to the StartStreamTranscription API in the Amazon Transcribe Developer Guide.  Amazon Chime SDK live transcription is powered by Amazon Transcribe. Use of Amazon Transcribe is subject to the AWS Service Terms, including the terms specific to the AWS Machine Learning and Artificial Intelligence Services. 
     */
   def startMeetingTranscription(): Request[StartMeetingTranscriptionResponse, AWSError] = js.native
   def startMeetingTranscription(callback: js.Function2[/* err */ AWSError, /* data */ StartMeetingTranscriptionResponse, Unit]): Request[StartMeetingTranscriptionResponse, AWSError] = js.native
   /**
-    * Starts transcription for the specified meetingId. 
+    * Starts transcription for the specified meetingId. For more information, refer to  Using Amazon Chime SDK live transcription  in the Amazon Chime SDK Developer Guide. If you specify an invalid configuration, a TranscriptFailed event will be sent with the contents of the BadRequestException generated by Amazon Transcribe. For more information on each parameter and which combinations are valid, refer to the StartStreamTranscription API in the Amazon Transcribe Developer Guide.  Amazon Chime SDK live transcription is powered by Amazon Transcribe. Use of Amazon Transcribe is subject to the AWS Service Terms, including the terms specific to the AWS Machine Learning and Artificial Intelligence Services. 
     */
   def startMeetingTranscription(params: StartMeetingTranscriptionRequest): Request[StartMeetingTranscriptionResponse, AWSError] = js.native
   def startMeetingTranscription(

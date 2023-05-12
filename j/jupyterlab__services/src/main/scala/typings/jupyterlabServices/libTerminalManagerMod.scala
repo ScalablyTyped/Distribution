@@ -6,7 +6,6 @@ import typings.jupyterlabServices.libTerminalManagerMod.TerminalManager.IOptions
 import typings.jupyterlabServices.libTerminalRestapiMod.IModel
 import typings.jupyterlabServices.libTerminalTerminalMod.IManager
 import typings.jupyterlabServices.libTerminalTerminalMod.ITerminalConnection
-import typings.luminoAlgorithm.typesIterMod.IIterator
 import typings.luminoPolling.typesPollMod.Poll.Standby
 import typings.luminoSignaling.mod.ISignal
 import org.scalablytyped.runtime.StObject
@@ -113,7 +112,7 @@ object libTerminalManagerMod {
       *
       * @returns A new iterator over the running terminals.
       */
-    def running(): IIterator[IModel] = js.native
+    def running(): Any = js.native
     
     /**
       * A signal emitted when the running terminals change.

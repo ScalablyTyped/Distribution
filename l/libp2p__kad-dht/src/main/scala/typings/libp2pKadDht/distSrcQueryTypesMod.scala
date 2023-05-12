@@ -1,7 +1,7 @@
 package typings.libp2pKadDht
 
-import typings.libp2pInterfaceDht.mod.QueryEvent
 import typings.libp2pInterfacePeerId.mod.PeerId
+import typings.libp2pKadDht.mod.QueryEvent
 import typings.std.AbortSignal
 import typings.std.AsyncIterable
 import org.scalablytyped.runtime.StObject

@@ -10,12 +10,16 @@ import typings.reactRouter.anon.PartialLocation
 import typings.reactRouter.anon.Relative
 import typings.reactRouter.anon.Revalidate
 import typings.reactRouter.distLibContextMod.NavigateOptions
+import typings.reactRouter.distLibContextMod.RouteContextObject
 import typings.reactRouter.distLibContextMod.RouteMatch
 import typings.reactRouter.distLibContextMod.RouteObject
 import typings.remixRunRouter.distHistoryMod.Action
 import typings.remixRunRouter.distHistoryMod.Path
 import typings.remixRunRouter.distHistoryMod.To
+import typings.remixRunRouter.distRouterMod.Blocker
+import typings.remixRunRouter.distRouterMod.BlockerFunction
 import typings.remixRunRouter.distRouterMod.Navigation
+import typings.remixRunRouter.distRouterMod.RevalidationState
 import typings.remixRunRouter.distUtilsMod.ParamParseKey
 import typings.remixRunRouter.distUtilsMod.PathMatch
 import typings.remixRunRouter.distUtilsMod.PathPattern
@@ -85,6 +89,9 @@ object distLibHooksMod {
   
   inline def useAsyncValue(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("useAsyncValue")().asInstanceOf[Any]
   
+  inline def useBlocker(shouldBlock: Boolean): Blocker = ^.asInstanceOf[js.Dynamic].applyDynamic("useBlocker")(shouldBlock.asInstanceOf[js.Any]).asInstanceOf[Blocker]
+  inline def useBlocker(shouldBlock: BlockerFunction): Blocker = ^.asInstanceOf[js.Dynamic].applyDynamic("useBlocker")(shouldBlock.asInstanceOf[js.Any]).asInstanceOf[Blocker]
+  
   inline def useHref(to: To): String = ^.asInstanceOf[js.Dynamic].applyDynamic("useHref")(to.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def useHref(to: To, param1: Relative): String = (^.asInstanceOf[js.Dynamic].applyDynamic("useHref")(to.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[String]
   
@@ -119,11 +126,33 @@ object distLibHooksMod {
   
   inline def useRouteError(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("useRouteError")().asInstanceOf[Any]
   
+  inline def useRouteId(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("useRouteId")().asInstanceOf[String]
+  
   inline def useRouteLoaderData(routeId: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("useRouteLoaderData")(routeId.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   inline def useRoutes(routes: js.Array[RouteObject]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("useRoutes")(routes.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
   inline def useRoutes(routes: js.Array[RouteObject], locationArg: String): ReactElement | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("useRoutes")(routes.asInstanceOf[js.Any], locationArg.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
   inline def useRoutes(routes: js.Array[RouteObject], locationArg: PartialLocation): ReactElement | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("useRoutes")(routes.asInstanceOf[js.Any], locationArg.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
+  
+  inline def useRoutesImpl(routes: js.Array[RouteObject]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("useRoutesImpl")(routes.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+  inline def useRoutesImpl(routes: js.Array[RouteObject], locationArg: String): ReactElement | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("useRoutesImpl")(routes.asInstanceOf[js.Any], locationArg.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
+  inline def useRoutesImpl(routes: js.Array[RouteObject], locationArg: PartialLocation): ReactElement | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("useRoutesImpl")(routes.asInstanceOf[js.Any], locationArg.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
+  
+  inline def useRoutesImpl_state(
+    routes: js.Array[RouteObject],
+    locationArg: String,
+    dataRouterState: /* import warning: importer.ImportType#apply Failed type conversion: @remix-run/router.@remix-run/router/dist/router.Router['state'] */ js.Any
+  ): ReactElement | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("useRoutesImpl")(routes.asInstanceOf[js.Any], locationArg.asInstanceOf[js.Any], dataRouterState.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
+  inline def useRoutesImpl_state(
+    routes: js.Array[RouteObject],
+    locationArg: Unit,
+    dataRouterState: /* import warning: importer.ImportType#apply Failed type conversion: @remix-run/router.@remix-run/router/dist/router.Router['state'] */ js.Any
+  ): ReactElement | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("useRoutesImpl")(routes.asInstanceOf[js.Any], locationArg.asInstanceOf[js.Any], dataRouterState.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
+  inline def useRoutesImpl_state(
+    routes: js.Array[RouteObject],
+    locationArg: PartialLocation,
+    dataRouterState: /* import warning: importer.ImportType#apply Failed type conversion: @remix-run/router.@remix-run/router/dist/router.Router['state'] */ js.Any
+  ): ReactElement | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("useRoutesImpl")(routes.asInstanceOf[js.Any], locationArg.asInstanceOf[js.Any], dataRouterState.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
   
   @js.native
   trait NavigateFunction extends StObject {
@@ -133,7 +162,7 @@ object distLibHooksMod {
     def apply(to: To, options: NavigateOptions): Unit = js.native
   }
   
-  /* Inlined react.react.PropsWithChildren<{  location :@remix-run/router.@remix-run/router.Location,   error :any,   component :react.react.ReactNode}> */
+  /* Inlined react.react.PropsWithChildren<{  location :@remix-run/router.@remix-run/router.Location,   revalidation :@remix-run/router.@remix-run/router.RevalidationState,   error :any,   component :react.react.ReactNode,   routeContext :react-router.react-router/dist/lib/context.RouteContextObject}> */
   trait RenderErrorBoundaryProps extends StObject {
     
     var children: js.UndefOr[ReactNode] = js.undefined
@@ -143,11 +172,20 @@ object distLibHooksMod {
     var error: Any
     
     var location: typings.remixRunRouter.distHistoryMod.Location
+    
+    var revalidation: RevalidationState
+    
+    var routeContext: RouteContextObject
   }
   object RenderErrorBoundaryProps {
     
-    inline def apply(error: Any, location: typings.remixRunRouter.distHistoryMod.Location): RenderErrorBoundaryProps = {
-      val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any])
+    inline def apply(
+      error: Any,
+      location: typings.remixRunRouter.distHistoryMod.Location,
+      revalidation: RevalidationState,
+      routeContext: RouteContextObject
+    ): RenderErrorBoundaryProps = {
+      val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], revalidation = revalidation.asInstanceOf[js.Any], routeContext = routeContext.asInstanceOf[js.Any])
       __obj.asInstanceOf[RenderErrorBoundaryProps]
     }
     
@@ -165,6 +203,10 @@ object distLibHooksMod {
       inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
       inline def setLocation(value: typings.remixRunRouter.distHistoryMod.Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      
+      inline def setRevalidation(value: RevalidationState): Self = StObject.set(x, "revalidation", value.asInstanceOf[js.Any])
+      
+      inline def setRouteContext(value: RouteContextObject): Self = StObject.set(x, "routeContext", value.asInstanceOf[js.Any])
     }
   }
   
@@ -173,11 +215,17 @@ object distLibHooksMod {
     var error: Any
     
     var location: typings.remixRunRouter.distHistoryMod.Location
+    
+    var revalidation: RevalidationState
   }
   object RenderErrorBoundaryState {
     
-    inline def apply(error: Any, location: typings.remixRunRouter.distHistoryMod.Location): RenderErrorBoundaryState = {
-      val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any])
+    inline def apply(
+      error: Any,
+      location: typings.remixRunRouter.distHistoryMod.Location,
+      revalidation: RevalidationState
+    ): RenderErrorBoundaryState = {
+      val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], revalidation = revalidation.asInstanceOf[js.Any])
       __obj.asInstanceOf[RenderErrorBoundaryState]
     }
     
@@ -187,6 +235,8 @@ object distLibHooksMod {
       inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
       inline def setLocation(value: typings.remixRunRouter.distHistoryMod.Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      
+      inline def setRevalidation(value: RevalidationState): Self = StObject.set(x, "revalidation", value.asInstanceOf[js.Any])
     }
   }
 }

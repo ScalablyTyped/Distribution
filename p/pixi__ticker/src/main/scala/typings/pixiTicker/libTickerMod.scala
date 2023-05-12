@@ -192,7 +192,7 @@ object libTickerMod {
       * This value is used to cap {@link PIXI.Ticker#deltaTime},
       * but does not effect the measured value of {@link PIXI.Ticker#FPS}.
       * When setting this property it is clamped to a value between
-      * `0` and `PIXI.settings.TARGET_FPMS * 1000`.
+      * `0` and `Ticker.targetFPMS * 1000`.
       * @member {number}
       * @default 10
       */
@@ -267,6 +267,15 @@ object libTickerMod {
     @js.native
     def _system: Any = js.native
     inline def _system_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_system")(x.asInstanceOf[js.Any])
+    
+    /**
+      * Target frames per millisecond.
+      * @static
+      */
+    @JSImport("@pixi/ticker/lib/Ticker", "Ticker.targetFPMS")
+    @js.native
+    def targetFPMS: Double = js.native
+    inline def targetFPMS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("targetFPMS")(x.asInstanceOf[js.Any])
   }
   
   type TickerCallback[T] = js.ThisFunction1[/* this */ T, /* dt */ Double, Any]

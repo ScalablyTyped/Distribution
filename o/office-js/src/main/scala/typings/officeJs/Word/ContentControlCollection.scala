@@ -65,12 +65,12 @@ trait ContentControlCollection
   def getByTitle(title: String): ContentControlCollection = js.native
   
   /**
-    * Gets the content controls that have the specified types and/or subtypes.
+    * Gets the content controls that have the specified types.
     *
     * @remarks
     * [Api set: WordApi 1.3]
     *
-    * @param types Required. An array of content control types and/or subtypes.
+    * @param types Required. An array of content control types.
     */
   def getByTypes(types: js.Array[ContentControlType]): ContentControlCollection = js.native
   

@@ -15,6 +15,15 @@ trait IScaleGizmo
     */
   def addToAxisCache(mesh: Mesh, cache: GizmoAxisCache): Unit
   
+  /** Default material used to render when gizmo is not disabled or hovered */
+  var coloredMaterial: StandardMaterial
+  
+  /** Material used to render when gizmo is disabled. typically grey.*/
+  var disableMaterial: StandardMaterial
+  
+  /** Material used to render when gizmo is hovered with mouse*/
+  var hoverMaterial: StandardMaterial
+  
   /** Fires an event when any of it's sub gizmos are released from dragging */
   var onDragEndObservable: Observable[Any]
   
@@ -44,8 +53,11 @@ object IScaleGizmo {
   inline def apply(
     _rootMesh: Mesh,
     addToAxisCache: (Mesh, GizmoAxisCache) => Unit,
+    coloredMaterial: StandardMaterial,
+    disableMaterial: StandardMaterial,
     dispose: () => Unit,
     gizmoLayer: UtilityLayerRenderer,
+    hoverMaterial: StandardMaterial,
     isHovered: Boolean,
     onDragEndObservable: Observable[Any],
     onDragStartObservable: Observable[Any],
@@ -61,7 +73,7 @@ object IScaleGizmo {
     yGizmo: IAxisScaleGizmo,
     zGizmo: IAxisScaleGizmo
   ): IScaleGizmo = {
-    val __obj = js.Dynamic.literal(_rootMesh = _rootMesh.asInstanceOf[js.Any], addToAxisCache = js.Any.fromFunction2(addToAxisCache), dispose = js.Any.fromFunction0(dispose), gizmoLayer = gizmoLayer.asInstanceOf[js.Any], isHovered = isHovered.asInstanceOf[js.Any], onDragEndObservable = onDragEndObservable.asInstanceOf[js.Any], onDragStartObservable = onDragStartObservable.asInstanceOf[js.Any], scaleRatio = scaleRatio.asInstanceOf[js.Any], sensitivity = sensitivity.asInstanceOf[js.Any], setCustomMesh = js.Any.fromFunction1(setCustomMesh), snapDistance = snapDistance.asInstanceOf[js.Any], uniformScaleGizmo = uniformScaleGizmo.asInstanceOf[js.Any], updateGizmoPositionToMatchAttachedMesh = updateGizmoPositionToMatchAttachedMesh.asInstanceOf[js.Any], updateGizmoRotationToMatchAttachedMesh = updateGizmoRotationToMatchAttachedMesh.asInstanceOf[js.Any], updateScale = updateScale.asInstanceOf[js.Any], xGizmo = xGizmo.asInstanceOf[js.Any], yGizmo = yGizmo.asInstanceOf[js.Any], zGizmo = zGizmo.asInstanceOf[js.Any], attachedMesh = null, attachedNode = null, customRotationQuaternion = null)
+    val __obj = js.Dynamic.literal(_rootMesh = _rootMesh.asInstanceOf[js.Any], addToAxisCache = js.Any.fromFunction2(addToAxisCache), coloredMaterial = coloredMaterial.asInstanceOf[js.Any], disableMaterial = disableMaterial.asInstanceOf[js.Any], dispose = js.Any.fromFunction0(dispose), gizmoLayer = gizmoLayer.asInstanceOf[js.Any], hoverMaterial = hoverMaterial.asInstanceOf[js.Any], isHovered = isHovered.asInstanceOf[js.Any], onDragEndObservable = onDragEndObservable.asInstanceOf[js.Any], onDragStartObservable = onDragStartObservable.asInstanceOf[js.Any], scaleRatio = scaleRatio.asInstanceOf[js.Any], sensitivity = sensitivity.asInstanceOf[js.Any], setCustomMesh = js.Any.fromFunction1(setCustomMesh), snapDistance = snapDistance.asInstanceOf[js.Any], uniformScaleGizmo = uniformScaleGizmo.asInstanceOf[js.Any], updateGizmoPositionToMatchAttachedMesh = updateGizmoPositionToMatchAttachedMesh.asInstanceOf[js.Any], updateGizmoRotationToMatchAttachedMesh = updateGizmoRotationToMatchAttachedMesh.asInstanceOf[js.Any], updateScale = updateScale.asInstanceOf[js.Any], xGizmo = xGizmo.asInstanceOf[js.Any], yGizmo = yGizmo.asInstanceOf[js.Any], zGizmo = zGizmo.asInstanceOf[js.Any], attachedMesh = null, attachedNode = null, customRotationQuaternion = null)
     __obj.asInstanceOf[IScaleGizmo]
   }
   
@@ -69,6 +81,12 @@ object IScaleGizmo {
   implicit open class MutableBuilder[Self <: IScaleGizmo] (val x: Self) extends AnyVal {
     
     inline def setAddToAxisCache(value: (Mesh, GizmoAxisCache) => Unit): Self = StObject.set(x, "addToAxisCache", js.Any.fromFunction2(value))
+    
+    inline def setColoredMaterial(value: StandardMaterial): Self = StObject.set(x, "coloredMaterial", value.asInstanceOf[js.Any])
+    
+    inline def setDisableMaterial(value: StandardMaterial): Self = StObject.set(x, "disableMaterial", value.asInstanceOf[js.Any])
+    
+    inline def setHoverMaterial(value: StandardMaterial): Self = StObject.set(x, "hoverMaterial", value.asInstanceOf[js.Any])
     
     inline def setOnDragEndObservable(value: Observable[Any]): Self = StObject.set(x, "onDragEndObservable", value.asInstanceOf[js.Any])
     

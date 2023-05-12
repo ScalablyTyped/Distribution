@@ -36,7 +36,7 @@ trait ClientInstance extends StObject {
   @JSName("create")
   def create_WebRtcEndpoint(`type`: typings.kurentoClient.kurentoClientStrings.WebRtcEndpoint, options: UseDataChannels): js.Promise[WebRtcEndpoint] = js.native
   
-  // tslint:disable-next-line
+  // eslint-disable-next-line no-unnecessary-generics
   def getMediaobjectById[T /* <: MediaObject */](objectId: String): js.Promise[T] = js.native
   
   def getServerManager(): js.Promise[ServerManager] = js.native

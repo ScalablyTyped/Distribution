@@ -15,6 +15,8 @@ trait ProducerConfig extends StObject {
   
   var blockIfQueueFull: js.UndefOr[Boolean] = js.undefined
   
+  var chunkingEnabled: js.UndefOr[Boolean] = js.undefined
+  
   var compressionType: js.UndefOr[CompressionType] = js.undefined
   
   var cryptoFailureAction: js.UndefOr[ProducerCryptoFailureAction] = js.undefined
@@ -66,6 +68,10 @@ object ProducerConfig {
     inline def setBlockIfQueueFull(value: Boolean): Self = StObject.set(x, "blockIfQueueFull", value.asInstanceOf[js.Any])
     
     inline def setBlockIfQueueFullUndefined: Self = StObject.set(x, "blockIfQueueFull", js.undefined)
+    
+    inline def setChunkingEnabled(value: Boolean): Self = StObject.set(x, "chunkingEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setChunkingEnabledUndefined: Self = StObject.set(x, "chunkingEnabled", js.undefined)
     
     inline def setCompressionType(value: CompressionType): Self = StObject.set(x, "compressionType", value.asInstanceOf[js.Any])
     

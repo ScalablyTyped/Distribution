@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.MozImageRegion
+import typings.csstype.mod.Property.TextOverflow
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,11 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `112` extends StObject {
   
   var value: js.UndefOr[
-    MozImageRegion | (js.Array[
-      (Extract[
-        js.UndefOr[MozImageRegion | js.Array[NonNullable[js.UndefOr[MozImageRegion]]]], 
-        String
-      ]) | NonNullable[js.UndefOr[MozImageRegion]]
+    TextOverflow | (js.Array[
+      (Extract[js.UndefOr[TextOverflow | js.Array[NonNullable[js.UndefOr[TextOverflow]]]], String]) | NonNullable[js.UndefOr[TextOverflow]]
     ])
   ] = js.native
 }

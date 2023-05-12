@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "country-code-lookup" : "0.0.20"
+      "country-code-lookup" : "0.0.23"
     }
   ],
   "test-dependencies" : [
     {
-      "country-code-lookup" : "0.0.20"
+      "country-code-lookup" : "0.0.23"
     }
   ],
   "compile-devDependencies" : [

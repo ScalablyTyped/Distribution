@@ -2,7 +2,7 @@ package typings.openui5
 
 import typings.openui5.anon.IdItem
 import typings.openui5.anon.ItemKey
-import typings.openui5.anon.`8`
+import typings.openui5.anon.`10`
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -804,6 +804,8 @@ object sapUiUx3ShellMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:feedSubmit feedSubmit} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -815,6 +817,8 @@ object sapUiUx3ShellMod {
     mParameters: js.Object): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:logout logout} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -826,6 +830,8 @@ object sapUiUx3ShellMod {
     mParameters: js.Object): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:paneBarItemSelected paneBarItemSelected} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -838,6 +844,7 @@ object sapUiUx3ShellMod {
     
     /**
       * @SINCE 1.12.0
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:paneClosed paneClosed} to attached listeners.
       *
@@ -847,9 +854,11 @@ object sapUiUx3ShellMod {
     def firePaneClosed(/**
       * Parameters to pass along with the event
       */
-    mParameters: `8`): this.type = js.native
+    mParameters: `10`): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:search search} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -861,6 +870,8 @@ object sapUiUx3ShellMod {
     mParameters: js.Object): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:worksetItemSelected worksetItemSelected} to attached listeners.
       *
       * Listeners may prevent the default action of this event by calling the `preventDefault` method on the
@@ -1727,6 +1738,7 @@ object sapUiUx3ShellMod {
     
     /**
       * @SINCE 1.7.0
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Moves the complete Shell away from the right window border by the given number of pixels (left border
       * in RTL case).

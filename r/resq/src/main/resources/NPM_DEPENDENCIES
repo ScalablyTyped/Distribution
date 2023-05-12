@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "resq" : "1.10.2"
+      "resq" : "1.11.0"
     }
   ],
   "test-dependencies" : [
     {
-      "resq" : "1.10.2"
+      "resq" : "1.11.0"
     }
   ],
   "compile-devDependencies" : [

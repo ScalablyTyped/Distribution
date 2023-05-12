@@ -11,5 +11,6 @@ trait TypeofTetrahedronGeometry
   extends StObject
      with Instantiable0[TetrahedronGeometry] {
   
-  def fromJSON(data: Any): typings.three.srcGeometriesTetrahedronGeometryMod.TetrahedronGeometry = js.native
+  /** @internal */
+  def fromJSON(data: js.Object): typings.three.srcGeometriesTetrahedronGeometryMod.TetrahedronGeometry = js.native
 }

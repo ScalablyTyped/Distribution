@@ -14,8 +14,8 @@ object DiagnosticSeverity extends StObject {
   def apply(value: Double): js.UndefOr[DiagnosticSeverity & Double] = js.native
   
   /**
-    * Something not allowed by the rules of a language or other means.
-    */
+  		 * Something not allowed by the rules of a language or other means.
+  		 */
   @js.native
   sealed trait Error
     extends StObject
@@ -23,9 +23,9 @@ object DiagnosticSeverity extends StObject {
   /* 0 */ val Error: typings.vscode.mod.DiagnosticSeverity.Error & Double = js.native
   
   /**
-    * Something to hint to a better way of doing it, like proposing
-    * a refactoring.
-    */
+  		 * Something to hint to a better way of doing it, like proposing
+  		 * a refactoring.
+  		 */
   @js.native
   sealed trait Hint
     extends StObject
@@ -33,8 +33,8 @@ object DiagnosticSeverity extends StObject {
   /* 3 */ val Hint: typings.vscode.mod.DiagnosticSeverity.Hint & Double = js.native
   
   /**
-    * Something to inform about but not a problem.
-    */
+  		 * Something to inform about but not a problem.
+  		 */
   @js.native
   sealed trait Information
     extends StObject
@@ -42,8 +42,8 @@ object DiagnosticSeverity extends StObject {
   /* 2 */ val Information: typings.vscode.mod.DiagnosticSeverity.Information & Double = js.native
   
   /**
-    * Something suspicious but allowed.
-    */
+  		 * Something suspicious but allowed.
+  		 */
   @js.native
   sealed trait Warning
     extends StObject

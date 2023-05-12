@@ -1,154 +1,293 @@
 package typings.twilio
 
+import typings.std.Record
+import typings.twilio.anon.AddressSid
 import typings.twilio.libBasePageMod.TwilioResponsePayload
-import typings.twilio.libInterfacesMod.SerializableClass
 import typings.twilio.libRestPreviewHostedNumbersAuthorizationDocumentDependentHostedNumberOrderMod.DependentHostedNumberOrderListInstance
+import typings.twilio.libRestPreviewHostedNumbersMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libRestPreviewHostedNumbersAuthorizationDocumentMod {
   
-  @JSImport("twilio/lib/rest/preview/hosted_numbers/authorizationDocument", JSImport.Namespace)
+  @JSImport("twilio/lib/rest/preview/hosted_numbers/authorizationDocument", "AuthorizationDocumentContextImpl")
   @js.native
-  val ^ : js.Any = js.native
-  
-  @JSImport("twilio/lib/rest/preview/hosted_numbers/authorizationDocument", "AuthorizationDocumentContext")
-  @js.native
-  open class AuthorizationDocumentContext protected () extends StObject {
-    /**
-      * Initialize the AuthorizationDocumentContext
-      *
-      * PLEASE NOTE that this class contains preview products that are subject to
-      * change. Use them with caution. If you currently do not have developer preview
-      * access, please contact help@twilio.com.
-      *
-      * @param version - Version of the resource
-      * @param sid - AuthorizationDocument sid.
-      */
-    def this(version: typings.twilio.libRestPreviewHostedNumbersMod.^, sid: String) = this()
+  open class AuthorizationDocumentContextImpl protected ()
+    extends StObject
+       with AuthorizationDocumentContext {
+    def this(_version: default, sid: String) = this()
     
-    var dependentHostedNumberOrders: DependentHostedNumberOrderListInstance = js.native
+    /* protected */ var _dependentHostedNumberOrders: js.UndefOr[DependentHostedNumberOrderListInstance] = js.native
     
-    /**
-      * fetch a AuthorizationDocumentInstance
-      *
-      * @param callback - Callback to handle processed record
-      */
-    def fetch(): js.Promise[AuthorizationDocumentInstance] = js.native
-    def fetch(
-      callback: js.Function2[/* error */ js.Error | Null, /* items */ AuthorizationDocumentInstance, Any]
-    ): js.Promise[AuthorizationDocumentInstance] = js.native
+    /* protected */ var _solution: AuthorizationDocumentContextSolution = js.native
     
-    /**
-      * Provide a user-friendly representation
-      */
-    def toJSON(): Any = js.native
+    /* protected */ var _uri: String = js.native
     
-    /**
-      * update a AuthorizationDocumentInstance
-      *
-      * @param callback - Callback to handle processed record
-      */
-    def update(): js.Promise[AuthorizationDocumentInstance] = js.native
+    /* protected */ var _version: default = js.native
+    
+    @JSName("dependentHostedNumberOrders")
+    def dependentHostedNumberOrders_MAuthorizationDocumentContextImpl: DependentHostedNumberOrderListInstance = js.native
+    
     def update(
-      callback: js.Function2[/* error */ js.Error | Null, /* items */ AuthorizationDocumentInstance, Any]
+      params: js.Function2[
+          /* error */ js.Error | Null, 
+          /* item */ js.UndefOr[AuthorizationDocumentInstance], 
+          Any
+        ],
+      callback: js.Function2[
+          /* error */ js.Error | Null, 
+          /* item */ js.UndefOr[AuthorizationDocumentInstance], 
+          Any
+        ]
     ): js.Promise[AuthorizationDocumentInstance] = js.native
     def update(
-      opts: Unit,
-      callback: js.Function2[/* error */ js.Error | Null, /* items */ AuthorizationDocumentInstance, Any]
-    ): js.Promise[AuthorizationDocumentInstance] = js.native
-    def update(opts: AuthorizationDocumentInstanceUpdateOptions): js.Promise[AuthorizationDocumentInstance] = js.native
-    def update(
-      opts: AuthorizationDocumentInstanceUpdateOptions,
-      callback: js.Function2[/* error */ js.Error | Null, /* items */ AuthorizationDocumentInstance, Any]
+      params: Unit,
+      callback: js.Function2[
+          /* error */ js.Error | Null, 
+          /* item */ js.UndefOr[AuthorizationDocumentInstance], 
+          Any
+        ]
     ): js.Promise[AuthorizationDocumentInstance] = js.native
   }
   
   @JSImport("twilio/lib/rest/preview/hosted_numbers/authorizationDocument", "AuthorizationDocumentInstance")
   @js.native
-  open class AuthorizationDocumentInstance protected () extends SerializableClass {
+  open class AuthorizationDocumentInstance protected () extends StObject {
+    def this(_version: default, payload: AuthorizationDocumentResource) = this()
+    def this(_version: default, payload: AuthorizationDocumentResource, sid: String) = this()
+    
+    /* protected */ var _context: js.UndefOr[AuthorizationDocumentContext] = js.native
+    
+    /* private */ def _proxy: Any = js.native
+    
+    /* protected */ var _solution: AuthorizationDocumentContextSolution = js.native
+    
+    /* protected */ var _version: default = js.native
+    
     /**
-      * Initialize the AuthorizationDocumentContext
-      *
-      * PLEASE NOTE that this class contains preview products that are subject to
-      * change. Use them with caution. If you currently do not have developer preview
-      * access, please contact help@twilio.com.
-      *
-      * @param version - Version of the resource
-      * @param payload - The instance payload
-      * @param sid - AuthorizationDocument sid.
+      * A 34 character string that uniquely identifies the Address resource that is associated with this AuthorizationDocument.
       */
-    def this(
-      version: typings.twilio.libRestPreviewHostedNumbersMod.^,
-      payload: AuthorizationDocumentPayload,
-      sid: String
-    ) = this()
-    
-    /* private */ var _proxy: AuthorizationDocumentContext = js.native
-    
     var addressSid: String = js.native
     
+    /**
+      * Email recipients who will be informed when an Authorization Document has been sent and signed.
+      */
     var ccEmails: js.Array[String] = js.native
     
+    /**
+      * The date this resource was created, given as [GMT RFC 2822](http://www.ietf.org/rfc/rfc2822.txt) format.
+      */
     var dateCreated: js.Date = js.native
     
+    /**
+      * The date that this resource was updated, given as [GMT RFC 2822](http://www.ietf.org/rfc/rfc2822.txt) format.
+      */
     var dateUpdated: js.Date = js.native
     
     /**
-      * Access the dependentHostedNumberOrders
+      * Access the dependentHostedNumberOrders.
       */
     def dependentHostedNumberOrders(): DependentHostedNumberOrderListInstance = js.native
     
+    /**
+      * Email that this AuthorizationDocument will be sent to for signing.
+      */
     var email: String = js.native
     
     /**
-      * fetch a AuthorizationDocumentInstance
+      * Fetch a AuthorizationDocumentInstance
       *
       * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed AuthorizationDocumentInstance
       */
     def fetch(): js.Promise[AuthorizationDocumentInstance] = js.native
-    def fetch(callback: js.Function2[/* error */ js.Error | Null, /* items */ this.type, Any]): js.Promise[AuthorizationDocumentInstance] = js.native
+    def fetch(callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[this.type], Any]): js.Promise[AuthorizationDocumentInstance] = js.native
     
-    var links: String = js.native
+    var links: Record[String, String] = js.native
     
+    /**
+      * A 34 character string that uniquely identifies this AuthorizationDocument.
+      */
     var sid: String = js.native
     
     var status: AuthorizationDocumentStatus = js.native
     
     /**
-      * update a AuthorizationDocumentInstance
+      * Provide a user-friendly representation
+      *
+      * @returns Object
+      */
+    def toJSON(): AddressSid = js.native
+    
+    /**
+      * Update a AuthorizationDocumentInstance
       *
       * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed AuthorizationDocumentInstance
       */
     def update(): js.Promise[AuthorizationDocumentInstance] = js.native
-    def update(callback: js.Function2[/* error */ js.Error | Null, /* items */ this.type, Any]): js.Promise[AuthorizationDocumentInstance] = js.native
-    def update(opts: Unit, callback: js.Function2[/* error */ js.Error | Null, /* items */ this.type, Any]): js.Promise[AuthorizationDocumentInstance] = js.native
-    def update(opts: AuthorizationDocumentInstanceUpdateOptions): js.Promise[AuthorizationDocumentInstance] = js.native
+    def update(callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[this.type], Any]): js.Promise[AuthorizationDocumentInstance] = js.native
+    /**
+      * Update a AuthorizationDocumentInstance
+      *
+      * @param params - Parameter for request
+      * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed AuthorizationDocumentInstance
+      */
+    def update(params: AuthorizationDocumentContextUpdateOptions): js.Promise[AuthorizationDocumentInstance] = js.native
     def update(
-      opts: AuthorizationDocumentInstanceUpdateOptions,
-      callback: js.Function2[/* error */ js.Error | Null, /* items */ this.type, Any]
+      params: AuthorizationDocumentContextUpdateOptions,
+      callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[this.type], Any]
     ): js.Promise[AuthorizationDocumentInstance] = js.native
     
     var url: String = js.native
   }
   
-  /**
-    * Initialize the AuthorizationDocumentList
-    *
-    * PLEASE NOTE that this class contains preview products that are subject to
-    * change. Use them with caution. If you currently do not have developer preview
-    * access, please contact help@twilio.com.
-    *
-    * @param version - Version of the resource
-    */
-  inline def AuthorizationDocumentList(version: typings.twilio.libRestPreviewHostedNumbersMod.^): AuthorizationDocumentListInstance = ^.asInstanceOf[js.Dynamic].applyDynamic("AuthorizationDocumentList")(version.asInstanceOf[js.Any]).asInstanceOf[AuthorizationDocumentListInstance]
+  @js.native
+  trait AuthorizationDocumentListInstance extends StObject {
+    
+    def apply(sid: String): AuthorizationDocumentContext = js.native
+    
+    var _solution: AuthorizationDocumentSolution = js.native
+    
+    var _uri: String = js.native
+    
+    var _version: default = js.native
+    
+    /**
+      * Create a AuthorizationDocumentInstance
+      *
+      * @param params - Parameter for request
+      * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed AuthorizationDocumentInstance
+      */
+    def create(params: AuthorizationDocumentListInstanceCreateOptions): js.Promise[AuthorizationDocumentInstance] = js.native
+    def create(
+      params: AuthorizationDocumentListInstanceCreateOptions,
+      callback: js.Function2[
+          /* error */ js.Error | Null, 
+          /* item */ js.UndefOr[AuthorizationDocumentInstance], 
+          Any
+        ]
+    ): js.Promise[AuthorizationDocumentInstance] = js.native
+    
+    /**
+      * Streams AuthorizationDocumentInstance records from the API.
+      *
+      * This operation lazily loads records as efficiently as possible until the limit
+      * is reached.
+      *
+      * The results are passed into the callback function, so this operation is memory
+      * efficient.
+      *
+      * If a function is passed as the first argument, it will be used as the callback
+      * function.
+      *
+      * @param { AuthorizationDocumentListInstanceEachOptions } [params] - Options for request
+      * @param { function } [callback] - Function to process each record
+      */
+    def each(): Unit = js.native
+    def each(
+      callback: js.Function2[
+          /* item */ AuthorizationDocumentInstance, 
+          /* done */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
+          Unit
+        ]
+    ): Unit = js.native
+    def each(params: AuthorizationDocumentListInstanceEachOptions): Unit = js.native
+    def each(
+      params: AuthorizationDocumentListInstanceEachOptions,
+      callback: js.Function2[
+          /* item */ AuthorizationDocumentInstance, 
+          /* done */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
+          Unit
+        ]
+    ): Unit = js.native
+    
+    def get(sid: String): AuthorizationDocumentContext = js.native
+    
+    /**
+      * Retrieve a single target page of AuthorizationDocumentInstance records from the API.
+      *
+      * The request is executed immediately.
+      *
+      * @param { string } [targetUrl] - API-generated URL for the requested results page
+      * @param { function } [callback] - Callback to handle list of records
+      */
+    def getPage(targetUrl: String): js.Promise[AuthorizationDocumentPage] = js.native
+    def getPage(
+      targetUrl: String,
+      callback: js.Function2[/* error */ js.Error | Null, /* items */ AuthorizationDocumentPage, Any]
+    ): js.Promise[AuthorizationDocumentPage] = js.native
+    
+    /**
+      * Lists AuthorizationDocumentInstance records from the API as a list.
+      *
+      * If a function is passed as the first argument, it will be used as the callback
+      * function.
+      *
+      * @param { AuthorizationDocumentListInstanceOptions } [params] - Options for request
+      * @param { function } [callback] - Callback to handle list of records
+      */
+    def list(): js.Promise[js.Array[AuthorizationDocumentInstance]] = js.native
+    def list(
+      callback: js.Function2[
+          /* error */ js.Error | Null, 
+          /* items */ js.Array[AuthorizationDocumentInstance], 
+          Any
+        ]
+    ): js.Promise[js.Array[AuthorizationDocumentInstance]] = js.native
+    def list(params: AuthorizationDocumentListInstanceOptions): js.Promise[js.Array[AuthorizationDocumentInstance]] = js.native
+    def list(
+      params: AuthorizationDocumentListInstanceOptions,
+      callback: js.Function2[
+          /* error */ js.Error | Null, 
+          /* items */ js.Array[AuthorizationDocumentInstance], 
+          Any
+        ]
+    ): js.Promise[js.Array[AuthorizationDocumentInstance]] = js.native
+    
+    /**
+      * Retrieve a single page of AuthorizationDocumentInstance records from the API.
+      *
+      * The request is executed immediately.
+      *
+      * If a function is passed as the first argument, it will be used as the callback
+      * function.
+      *
+      * @param { AuthorizationDocumentListInstancePageOptions } [params] - Options for request
+      * @param { function } [callback] - Callback to handle list of records
+      */
+    def page(): js.Promise[AuthorizationDocumentPage] = js.native
+    def page(callback: js.Function2[/* error */ js.Error | Null, /* items */ AuthorizationDocumentPage, Any]): js.Promise[AuthorizationDocumentPage] = js.native
+    def page(params: AuthorizationDocumentListInstancePageOptions): js.Promise[AuthorizationDocumentPage] = js.native
+    def page(
+      params: AuthorizationDocumentListInstancePageOptions,
+      callback: js.Function2[/* error */ js.Error | Null, /* items */ AuthorizationDocumentPage, Any]
+    ): js.Promise[AuthorizationDocumentPage] = js.native
+    
+    /**
+      * Provide a user-friendly representation
+      */
+    def toJSON(): Any = js.native
+  }
+  object AuthorizationDocumentListInstance {
+    
+    @JSImport("twilio/lib/rest/preview/hosted_numbers/authorizationDocument", "AuthorizationDocumentListInstance")
+    @js.native
+    def apply(version: default): AuthorizationDocumentListInstance = js.native
+  }
   
   @JSImport("twilio/lib/rest/preview/hosted_numbers/authorizationDocument", "AuthorizationDocumentPage")
   @js.native
   open class AuthorizationDocumentPage protected ()
-    extends typings.twilio.libBasePageMod.^[
-          typings.twilio.libRestPreviewHostedNumbersMod.^, 
+    extends typings.twilio.libBasePageMod.default[
+          default, 
           AuthorizationDocumentPayload, 
           AuthorizationDocumentResource, 
           AuthorizationDocumentInstance
@@ -156,17 +295,13 @@ object libRestPreviewHostedNumbersAuthorizationDocumentMod {
     /**
       * Initialize the AuthorizationDocumentPage
       *
-      * PLEASE NOTE that this class contains preview products that are subject to
-      * change. Use them with caution. If you currently do not have developer preview
-      * access, please contact help@twilio.com.
-      *
       * @param version - Version of the resource
       * @param response - Response from the API
       * @param solution - Path solution
       */
     def this(
-      version: typings.twilio.libRestPreviewHostedNumbersMod.^,
-      response: typings.twilio.libHttpResponseMod.^[String],
+      version: default,
+      response: typings.twilio.libHttpResponseMod.default[String],
       solution: AuthorizationDocumentSolution
     ) = this()
     
@@ -175,56 +310,125 @@ object libRestPreviewHostedNumbersAuthorizationDocumentMod {
       *
       * @param payload - Payload response from the API
       */
-    def getInstance(payload: AuthorizationDocumentPayload): AuthorizationDocumentInstance = js.native
+    def getInstance(payload: AuthorizationDocumentResource): AuthorizationDocumentInstance = js.native
+  }
+  
+  @js.native
+  trait AuthorizationDocumentContext extends StObject {
+    
+    var dependentHostedNumberOrders: DependentHostedNumberOrderListInstance = js.native
+    
+    /**
+      * Fetch a AuthorizationDocumentInstance
+      *
+      * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed AuthorizationDocumentInstance
+      */
+    def fetch(): js.Promise[AuthorizationDocumentInstance] = js.native
+    def fetch(
+      callback: js.Function2[
+          /* error */ js.Error | Null, 
+          /* item */ js.UndefOr[AuthorizationDocumentInstance], 
+          Any
+        ]
+    ): js.Promise[AuthorizationDocumentInstance] = js.native
     
     /**
       * Provide a user-friendly representation
       */
     def toJSON(): Any = js.native
+    
+    /**
+      * Update a AuthorizationDocumentInstance
+      *
+      * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed AuthorizationDocumentInstance
+      */
+    def update(): js.Promise[AuthorizationDocumentInstance] = js.native
+    def update(
+      callback: js.Function2[
+          /* error */ js.Error | Null, 
+          /* item */ js.UndefOr[AuthorizationDocumentInstance], 
+          Any
+        ]
+    ): js.Promise[AuthorizationDocumentInstance] = js.native
+    /**
+      * Update a AuthorizationDocumentInstance
+      *
+      * @param params - Parameter for request
+      * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed AuthorizationDocumentInstance
+      */
+    def update(params: AuthorizationDocumentContextUpdateOptions): js.Promise[AuthorizationDocumentInstance] = js.native
+    def update(
+      params: AuthorizationDocumentContextUpdateOptions,
+      callback: js.Function2[
+          /* error */ js.Error | Null, 
+          /* item */ js.UndefOr[AuthorizationDocumentInstance], 
+          Any
+        ]
+    ): js.Promise[AuthorizationDocumentInstance] = js.native
   }
   
-  /**
-    * Options to pass to update
-    *
-    * @property addressSid - Address sid.
-    * @property ccEmails - A list of emails.
-    * @property contactPhoneNumber - Authorization Document's signee's phone number.
-    * @property contactTitle - Title of signee of this Authorization Document.
-    * @property email - Email.
-    * @property hostedNumberOrderSids - A list of HostedNumberOrder sids.
-    * @property status - The Status of this AuthorizationDocument.
-    */
-  trait AuthorizationDocumentInstanceUpdateOptions extends StObject {
+  trait AuthorizationDocumentContextSolution extends StObject {
     
-    var addressSid: js.UndefOr[String] = js.undefined
-    
-    var ccEmails: js.UndefOr[String | js.Array[String]] = js.undefined
-    
-    var contactPhoneNumber: js.UndefOr[String] = js.undefined
-    
-    var contactTitle: js.UndefOr[String] = js.undefined
-    
-    var email: js.UndefOr[String] = js.undefined
-    
-    var hostedNumberOrderSids: js.UndefOr[String | js.Array[String]] = js.undefined
-    
-    var status: js.UndefOr[AuthorizationDocumentStatus] = js.undefined
+    var sid: String
   }
-  object AuthorizationDocumentInstanceUpdateOptions {
+  object AuthorizationDocumentContextSolution {
     
-    inline def apply(): AuthorizationDocumentInstanceUpdateOptions = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[AuthorizationDocumentInstanceUpdateOptions]
+    inline def apply(sid: String): AuthorizationDocumentContextSolution = {
+      val __obj = js.Dynamic.literal(sid = sid.asInstanceOf[js.Any])
+      __obj.asInstanceOf[AuthorizationDocumentContextSolution]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: AuthorizationDocumentInstanceUpdateOptions] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: AuthorizationDocumentContextSolution] (val x: Self) extends AnyVal {
+      
+      inline def setSid(value: String): Self = StObject.set(x, "sid", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait AuthorizationDocumentContextUpdateOptions extends StObject {
+    
+    /** A 34 character string that uniquely identifies the Address resource that is associated with this AuthorizationDocument. */
+    var addressSid: js.UndefOr[String] = js.undefined
+    
+    /** Email recipients who will be informed when an Authorization Document has been sent and signed */
+    var ccEmails: js.UndefOr[js.Array[String]] = js.undefined
+    
+    /** The contact phone number of the person authorized to sign the Authorization Document. */
+    var contactPhoneNumber: js.UndefOr[String] = js.undefined
+    
+    /** The title of the person authorized to sign the Authorization Document for this phone number. */
+    var contactTitle: js.UndefOr[String] = js.undefined
+    
+    /** Email that this AuthorizationDocument will be sent to for signing. */
+    var email: js.UndefOr[String] = js.undefined
+    
+    /** A list of HostedNumberOrder sids that this AuthorizationDocument will authorize for hosting phone number capabilities on Twilio\\\'s platform. */
+    var hostedNumberOrderSids: js.UndefOr[js.Array[String]] = js.undefined
+    
+    /**  */
+    var status: js.UndefOr[AuthorizationDocumentStatus] = js.undefined
+  }
+  object AuthorizationDocumentContextUpdateOptions {
+    
+    inline def apply(): AuthorizationDocumentContextUpdateOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[AuthorizationDocumentContextUpdateOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthorizationDocumentContextUpdateOptions] (val x: Self) extends AnyVal {
       
       inline def setAddressSid(value: String): Self = StObject.set(x, "addressSid", value.asInstanceOf[js.Any])
       
       inline def setAddressSidUndefined: Self = StObject.set(x, "addressSid", js.undefined)
       
-      inline def setCcEmails(value: String | js.Array[String]): Self = StObject.set(x, "ccEmails", value.asInstanceOf[js.Any])
+      inline def setCcEmails(value: js.Array[String]): Self = StObject.set(x, "ccEmails", value.asInstanceOf[js.Any])
       
       inline def setCcEmailsUndefined: Self = StObject.set(x, "ccEmails", js.undefined)
       
@@ -242,7 +446,7 @@ object libRestPreviewHostedNumbersAuthorizationDocumentMod {
       
       inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
       
-      inline def setHostedNumberOrderSids(value: String | js.Array[String]): Self = StObject.set(x, "hostedNumberOrderSids", value.asInstanceOf[js.Any])
+      inline def setHostedNumberOrderSids(value: js.Array[String]): Self = StObject.set(x, "hostedNumberOrderSids", value.asInstanceOf[js.Any])
       
       inline def setHostedNumberOrderSidsUndefined: Self = StObject.set(x, "hostedNumberOrderSids", js.undefined)
       
@@ -254,181 +458,25 @@ object libRestPreviewHostedNumbersAuthorizationDocumentMod {
     }
   }
   
-  @js.native
-  trait AuthorizationDocumentListInstance extends StObject {
-    
-    /**
-      * @param sid - sid of instance
-      */
-    def apply(sid: String): AuthorizationDocumentContext = js.native
-    
-    /**
-      * create a AuthorizationDocumentInstance
-      *
-      * @param opts - Options for request
-      * @param callback - Callback to handle processed record
-      */
-    def create(opts: AuthorizationDocumentListInstanceCreateOptions): js.Promise[AuthorizationDocumentInstance] = js.native
-    def create(
-      opts: AuthorizationDocumentListInstanceCreateOptions,
-      callback: js.Function2[/* error */ js.Error | Null, /* item */ AuthorizationDocumentInstance, Any]
-    ): js.Promise[AuthorizationDocumentInstance] = js.native
-    
-    /**
-      * Streams AuthorizationDocumentInstance records from the API.
-      *
-      * This operation lazily loads records as efficiently as possible until the limit
-      * is reached.
-      *
-      * The results are passed into the callback function, so this operation is memory
-      * efficient.
-      *
-      * If a function is passed as the first argument, it will be used as the callback
-      * function.
-      *
-      * @param callback - Function to process each record
-      */
-    def each(): Unit = js.native
-    def each(
-      callback: js.Function2[
-          /* item */ AuthorizationDocumentInstance, 
-          /* done */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
-          Unit
-        ]
-    ): Unit = js.native
-    def each(
-      opts: Unit,
-      callback: js.Function2[
-          /* item */ AuthorizationDocumentInstance, 
-          /* done */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
-          Unit
-        ]
-    ): Unit = js.native
-    def each(opts: AuthorizationDocumentListInstanceEachOptions): Unit = js.native
-    def each(
-      opts: AuthorizationDocumentListInstanceEachOptions,
-      callback: js.Function2[
-          /* item */ AuthorizationDocumentInstance, 
-          /* done */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
-          Unit
-        ]
-    ): Unit = js.native
-    
-    /**
-      * Constructs a authorization_document
-      *
-      * @param sid - AuthorizationDocument sid.
-      */
-    def get(sid: String): AuthorizationDocumentContext = js.native
-    
-    /**
-      * Retrieve a single target page of AuthorizationDocumentInstance records from the
-      * API.
-      *
-      * The request is executed immediately.
-      *
-      * If a function is passed as the first argument, it will be used as the callback
-      * function.
-      *
-      * @param callback - Callback to handle list of records
-      */
-    def getPage(): js.Promise[AuthorizationDocumentPage] = js.native
-    def getPage(callback: js.Function2[/* error */ js.Error | Null, /* items */ AuthorizationDocumentPage, Any]): js.Promise[AuthorizationDocumentPage] = js.native
-    def getPage(targetUrl: String): js.Promise[AuthorizationDocumentPage] = js.native
-    def getPage(
-      targetUrl: String,
-      callback: js.Function2[/* error */ js.Error | Null, /* items */ AuthorizationDocumentPage, Any]
-    ): js.Promise[AuthorizationDocumentPage] = js.native
-    def getPage(
-      targetUrl: Unit,
-      callback: js.Function2[/* error */ js.Error | Null, /* items */ AuthorizationDocumentPage, Any]
-    ): js.Promise[AuthorizationDocumentPage] = js.native
-    
-    /**
-      * Lists AuthorizationDocumentInstance records from the API as a list.
-      *
-      * If a function is passed as the first argument, it will be used as the callback
-      * function.
-      *
-      * @param callback - Callback to handle list of records
-      */
-    def list(): js.Promise[js.Array[AuthorizationDocumentInstance]] = js.native
-    def list(
-      callback: js.Function2[
-          /* error */ js.Error | Null, 
-          /* items */ js.Array[AuthorizationDocumentInstance], 
-          Any
-        ]
-    ): js.Promise[js.Array[AuthorizationDocumentInstance]] = js.native
-    def list(
-      opts: Unit,
-      callback: js.Function2[
-          /* error */ js.Error | Null, 
-          /* items */ js.Array[AuthorizationDocumentInstance], 
-          Any
-        ]
-    ): js.Promise[js.Array[AuthorizationDocumentInstance]] = js.native
-    def list(opts: AuthorizationDocumentListInstanceOptions): js.Promise[js.Array[AuthorizationDocumentInstance]] = js.native
-    def list(
-      opts: AuthorizationDocumentListInstanceOptions,
-      callback: js.Function2[
-          /* error */ js.Error | Null, 
-          /* items */ js.Array[AuthorizationDocumentInstance], 
-          Any
-        ]
-    ): js.Promise[js.Array[AuthorizationDocumentInstance]] = js.native
-    
-    /**
-      * Retrieve a single page of AuthorizationDocumentInstance records from the API.
-      *
-      * The request is executed immediately.
-      *
-      * If a function is passed as the first argument, it will be used as the callback
-      * function.
-      *
-      * @param callback - Callback to handle list of records
-      */
-    def page(): js.Promise[AuthorizationDocumentPage] = js.native
-    def page(callback: js.Function2[/* error */ js.Error | Null, /* items */ AuthorizationDocumentPage, Any]): js.Promise[AuthorizationDocumentPage] = js.native
-    def page(
-      opts: Unit,
-      callback: js.Function2[/* error */ js.Error | Null, /* items */ AuthorizationDocumentPage, Any]
-    ): js.Promise[AuthorizationDocumentPage] = js.native
-    def page(opts: AuthorizationDocumentListInstancePageOptions): js.Promise[AuthorizationDocumentPage] = js.native
-    def page(
-      opts: AuthorizationDocumentListInstancePageOptions,
-      callback: js.Function2[/* error */ js.Error | Null, /* items */ AuthorizationDocumentPage, Any]
-    ): js.Promise[AuthorizationDocumentPage] = js.native
-    
-    /**
-      * Provide a user-friendly representation
-      */
-    def toJSON(): Any = js.native
-  }
-  
-  /**
-    * Options to pass to create
-    *
-    * @property addressSid - Address sid.
-    * @property ccEmails - A list of emails.
-    * @property contactPhoneNumber - Authorization Document's signee's phone number.
-    * @property contactTitle - Title of signee of this Authorization Document.
-    * @property email - Email.
-    * @property hostedNumberOrderSids - A list of HostedNumberOrder sids.
-    */
   trait AuthorizationDocumentListInstanceCreateOptions extends StObject {
     
+    /** A 34 character string that uniquely identifies the Address resource that is associated with this AuthorizationDocument. */
     var addressSid: String
     
-    var ccEmails: js.UndefOr[String | js.Array[String]] = js.undefined
+    /** Email recipients who will be informed when an Authorization Document has been sent and signed. */
+    var ccEmails: js.UndefOr[js.Array[String]] = js.undefined
     
+    /** The contact phone number of the person authorized to sign the Authorization Document. */
     var contactPhoneNumber: String
     
+    /** The title of the person authorized to sign the Authorization Document for this phone number. */
     var contactTitle: String
     
+    /** Email that this AuthorizationDocument will be sent to for signing. */
     var email: String
     
-    var hostedNumberOrderSids: String | js.Array[String]
+    /** A list of HostedNumberOrder sids that this AuthorizationDocument will authorize for hosting phone number capabilities on Twilio\\\'s platform. */
+    var hostedNumberOrderSids: js.Array[String]
   }
   object AuthorizationDocumentListInstanceCreateOptions {
     
@@ -437,7 +485,7 @@ object libRestPreviewHostedNumbersAuthorizationDocumentMod {
       contactPhoneNumber: String,
       contactTitle: String,
       email: String,
-      hostedNumberOrderSids: String | js.Array[String]
+      hostedNumberOrderSids: js.Array[String]
     ): AuthorizationDocumentListInstanceCreateOptions = {
       val __obj = js.Dynamic.literal(addressSid = addressSid.asInstanceOf[js.Any], contactPhoneNumber = contactPhoneNumber.asInstanceOf[js.Any], contactTitle = contactTitle.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], hostedNumberOrderSids = hostedNumberOrderSids.asInstanceOf[js.Any])
       __obj.asInstanceOf[AuthorizationDocumentListInstanceCreateOptions]
@@ -448,7 +496,7 @@ object libRestPreviewHostedNumbersAuthorizationDocumentMod {
       
       inline def setAddressSid(value: String): Self = StObject.set(x, "addressSid", value.asInstanceOf[js.Any])
       
-      inline def setCcEmails(value: String | js.Array[String]): Self = StObject.set(x, "ccEmails", value.asInstanceOf[js.Any])
+      inline def setCcEmails(value: js.Array[String]): Self = StObject.set(x, "ccEmails", value.asInstanceOf[js.Any])
       
       inline def setCcEmailsUndefined: Self = StObject.set(x, "ccEmails", js.undefined)
       
@@ -460,34 +508,15 @@ object libRestPreviewHostedNumbersAuthorizationDocumentMod {
       
       inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
-      inline def setHostedNumberOrderSids(value: String | js.Array[String]): Self = StObject.set(x, "hostedNumberOrderSids", value.asInstanceOf[js.Any])
+      inline def setHostedNumberOrderSids(value: js.Array[String]): Self = StObject.set(x, "hostedNumberOrderSids", value.asInstanceOf[js.Any])
       
       inline def setHostedNumberOrderSidsVarargs(value: String*): Self = StObject.set(x, "hostedNumberOrderSids", js.Array(value*))
     }
   }
   
-  /**
-    * Options to pass to each
-    *
-    * @property callback -
-    *                         Function to process each record. If this and a positional
-    *                         callback are passed, this one will be used
-    * @property done - Function to be called upon completion of streaming
-    * @property email - Email.
-    * @property limit -
-    *                         Upper limit for the number of records to return.
-    *                         each() guarantees never to return more than limit.
-    *                         Default is no limit
-    * @property pageSize -
-    *                         Number of records to fetch per request,
-    *                         when not set will use the default value of 50 records.
-    *                         If no pageSize is defined but a limit is defined,
-    *                         each() will attempt to read the limit with the most efficient
-    *                         page size, i.e. min(limit, 1000)
-    * @property status - The Status of this AuthorizationDocument.
-    */
   trait AuthorizationDocumentListInstanceEachOptions extends StObject {
     
+    /** Function to process each record. If this and a positional callback are passed, this one will be used */
     var callback: js.UndefOr[
         js.Function2[
           /* item */ AuthorizationDocumentInstance, 
@@ -496,14 +525,19 @@ object libRestPreviewHostedNumbersAuthorizationDocumentMod {
         ]
       ] = js.undefined
     
+    /** Function to be called upon completion of streaming */
     var done: js.UndefOr[js.Function] = js.undefined
     
+    /** Email that this AuthorizationDocument will be sent to for signing. */
     var email: js.UndefOr[String] = js.undefined
     
+    /** Upper limit for the number of records to return. each() guarantees never to return more than limit. Default is no limit */
     var limit: js.UndefOr[Double] = js.undefined
     
+    /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
     var pageSize: js.UndefOr[Double] = js.undefined
     
+    /** Status of an instance resource. It can hold one of the values: 1. opened 2. signing, 3. signed LOA, 4. canceled, 5. failed. See the section entitled [Status Values](https://www.twilio.com/docs/api/phone-numbers/hosted-number-authorization-documents#status-values) for more information on each of these statuses. */
     var status: js.UndefOr[AuthorizationDocumentStatus] = js.undefined
   }
   object AuthorizationDocumentListInstanceEachOptions {
@@ -544,30 +578,18 @@ object libRestPreviewHostedNumbersAuthorizationDocumentMod {
     }
   }
   
-  /**
-    * Options to pass to list
-    *
-    * @property email - Email.
-    * @property limit -
-    *                         Upper limit for the number of records to return.
-    *                         list() guarantees never to return more than limit.
-    *                         Default is no limit
-    * @property pageSize -
-    *                         Number of records to fetch per request,
-    *                         when not set will use the default value of 50 records.
-    *                         If no page_size is defined but a limit is defined,
-    *                         list() will attempt to read the limit with the most
-    *                         efficient page size, i.e. min(limit, 1000)
-    * @property status - The Status of this AuthorizationDocument.
-    */
   trait AuthorizationDocumentListInstanceOptions extends StObject {
     
+    /** Email that this AuthorizationDocument will be sent to for signing. */
     var email: js.UndefOr[String] = js.undefined
     
+    /** Upper limit for the number of records to return. list() guarantees never to return more than limit. Default is no limit */
     var limit: js.UndefOr[Double] = js.undefined
     
+    /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
     var pageSize: js.UndefOr[Double] = js.undefined
     
+    /** Status of an instance resource. It can hold one of the values: 1. opened 2. signing, 3. signed LOA, 4. canceled, 5. failed. See the section entitled [Status Values](https://www.twilio.com/docs/api/phone-numbers/hosted-number-authorization-documents#status-values) for more information on each of these statuses. */
     var status: js.UndefOr[AuthorizationDocumentStatus] = js.undefined
   }
   object AuthorizationDocumentListInstanceOptions {
@@ -598,25 +620,21 @@ object libRestPreviewHostedNumbersAuthorizationDocumentMod {
     }
   }
   
-  /**
-    * Options to pass to page
-    *
-    * @property email - Email.
-    * @property pageNumber - Page Number, this value is simply for client state
-    * @property pageSize - Number of records to return, defaults to 50
-    * @property pageToken - PageToken provided by the API
-    * @property status - The Status of this AuthorizationDocument.
-    */
   trait AuthorizationDocumentListInstancePageOptions extends StObject {
     
+    /** Email that this AuthorizationDocument will be sent to for signing. */
     var email: js.UndefOr[String] = js.undefined
     
+    /** Page Number, this value is simply for client state */
     var pageNumber: js.UndefOr[Double] = js.undefined
     
+    /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
     var pageSize: js.UndefOr[Double] = js.undefined
     
+    /** PageToken provided by the API */
     var pageToken: js.UndefOr[String] = js.undefined
     
+    /** Status of an instance resource. It can hold one of the values: 1. opened 2. signing, 3. signed LOA, 4. canceled, 5. failed. See the section entitled [Status Values](https://www.twilio.com/docs/api/phone-numbers/hosted-number-authorization-documents#status-values) for more information on each of these statuses. */
     var status: js.UndefOr[AuthorizationDocumentStatus] = js.undefined
   }
   object AuthorizationDocumentListInstancePageOptions {
@@ -653,29 +671,31 @@ object libRestPreviewHostedNumbersAuthorizationDocumentMod {
   
   trait AuthorizationDocumentPayload
     extends StObject
-       with AuthorizationDocumentResource
-       with TwilioResponsePayload
+       with TwilioResponsePayload {
+    
+    var items: js.Array[AuthorizationDocumentResource]
+  }
   object AuthorizationDocumentPayload {
     
     inline def apply(
-      address_sid: String,
-      cc_emails: js.Array[String],
-      date_created: js.Date,
-      date_updated: js.Date,
-      email: String,
       first_page_uri: String,
-      links: String,
+      items: js.Array[AuthorizationDocumentResource],
       next_page_uri: String,
       page: Double,
       page_size: Double,
       previous_page_uri: String,
-      sid: String,
-      status: AuthorizationDocumentStatus,
-      uri: String,
-      url: String
+      uri: String
     ): AuthorizationDocumentPayload = {
-      val __obj = js.Dynamic.literal(address_sid = address_sid.asInstanceOf[js.Any], cc_emails = cc_emails.asInstanceOf[js.Any], date_created = date_created.asInstanceOf[js.Any], date_updated = date_updated.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], first_page_uri = first_page_uri.asInstanceOf[js.Any], links = links.asInstanceOf[js.Any], next_page_uri = next_page_uri.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any], page_size = page_size.asInstanceOf[js.Any], previous_page_uri = previous_page_uri.asInstanceOf[js.Any], sid = sid.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(first_page_uri = first_page_uri.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], next_page_uri = next_page_uri.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any], page_size = page_size.asInstanceOf[js.Any], previous_page_uri = previous_page_uri.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
       __obj.asInstanceOf[AuthorizationDocumentPayload]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthorizationDocumentPayload] (val x: Self) extends AnyVal {
+      
+      inline def setItems(value: js.Array[AuthorizationDocumentResource]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      
+      inline def setItemsVarargs(value: AuthorizationDocumentResource*): Self = StObject.set(x, "items", js.Array(value*))
     }
   }
   
@@ -691,7 +711,7 @@ object libRestPreviewHostedNumbersAuthorizationDocumentMod {
     
     var email: String
     
-    var links: String
+    var links: Record[String, String]
     
     var sid: String
     
@@ -707,7 +727,7 @@ object libRestPreviewHostedNumbersAuthorizationDocumentMod {
       date_created: js.Date,
       date_updated: js.Date,
       email: String,
-      links: String,
+      links: Record[String, String],
       sid: String,
       status: AuthorizationDocumentStatus,
       url: String
@@ -731,7 +751,7 @@ object libRestPreviewHostedNumbersAuthorizationDocumentMod {
       
       inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
-      inline def setLinks(value: String): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
+      inline def setLinks(value: Record[String, String]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
       
       inline def setSid(value: String): Self = StObject.set(x, "sid", value.asInstanceOf[js.Any])
       

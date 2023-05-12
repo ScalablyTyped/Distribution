@@ -17,11 +17,13 @@ trait SecureScoreControlProfile
   // GUID string for tenant ID.
   var azureTenantId: js.UndefOr[String] = js.undefined
   
+  // The collection of compliance information associated with secure score control
   var complianceInformation: js.UndefOr[NullableOption[js.Array[ComplianceInformation]]] = js.undefined
   
   // Control action category (Identity, Data, Device, Apps, Infrastructure).
   var controlCategory: js.UndefOr[NullableOption[String]] = js.undefined
   
+  // Flag to indicate where the tenant has marked a control (ignored, thirdParty, reviewed) (supports update).
   var controlStateUpdates: js.UndefOr[NullableOption[js.Array[SecureScoreControlStateUpdate]]] = js.undefined
   
   // Flag to indicate if a control is depreciated.
@@ -53,7 +55,6 @@ trait SecureScoreControlProfile
   
   var tier: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // Title of the control.
   var title: js.UndefOr[NullableOption[String]] = js.undefined
   
   var userImpact: js.UndefOr[NullableOption[String]] = js.undefined

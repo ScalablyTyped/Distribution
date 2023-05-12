@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "hast-util-whitespace"
-version := "2.0.0-5418a5"
+version := "2.0.1-f16d5a"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

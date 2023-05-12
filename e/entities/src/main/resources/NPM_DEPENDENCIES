@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "entities" : "4.4.0"
+      "entities" : "4.5.0"
     }
   ],
   "test-dependencies" : [
     {
-      "entities" : "4.4.0"
+      "entities" : "4.5.0"
     }
   ],
   "compile-devDependencies" : [

@@ -12,7 +12,7 @@ trait DescribeNetworkInsightsPathsRequest extends StObject {
   var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The filters. The following are the possible values:   destination - The ID of the resource.   destination-port - The destination port.   protocol - The protocol.   source - The ID of the resource.  
+    * The filters. The following are the possible values:   destination - The ID of the resource.   filter-at-source.source-address - The source IPv4 address at the source.   filter-at-source.source-port-range - The source port range at the source.   filter-at-source.destination-address - The destination IPv4 address at the source.   filter-at-source.destination-port-range - The destination port range at the source.   filter-at-destination.source-address - The source IPv4 address at the destination.   filter-at-destination.source-port-range - The source port range at the destination.   filter-at-destination.destination-address - The destination IPv4 address at the destination.   filter-at-destination.destination-port-range - The destination port range at the destination.   protocol - The protocol.   source - The ID of the resource.  
     */
   var Filters: js.UndefOr[FilterList] = js.undefined
   

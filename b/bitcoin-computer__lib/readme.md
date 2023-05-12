@@ -1,7 +1,7 @@
 
 # Scala.js typings for bitcoin-computer__lib
 
-Typings are for version 0.10
+Typings are for version 0.15
 
 
 

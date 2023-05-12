@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /**
   * Interface for the xRM application context.
-  * GetGlobalContext()
+  * @see {@link GetGlobalContext GetGlobalContext()}
   */
 trait GlobalContext extends StObject {
   
@@ -30,9 +30,9 @@ trait GlobalContext extends StObject {
     * Gets client's base URL for Dynamics CRM
     * @returns The client's base URL
     * @example
-    * * For Dynamics CRM On-Premises:               http(s)://server/org
-    * * For Dynamics CRM Online:                    https://org.crm.dynamics.com
-    * * For Dynamics CRM for Outlook (Offline):     http://localhost:2525
+    * // For Dynamics CRM On-Premises:               http(s)://server/org
+    * // For Dynamics CRM Online:                    https://org.crm.dynamics.com
+    * // For Dynamics CRM for Outlook (Offline):     http://localhost:2525
     */
   def getClientUrl(): String
   
@@ -56,8 +56,8 @@ trait GlobalContext extends StObject {
   /**
     * Returns the URL of the current business app in Customer Engagement.
     * @example
-    * * Online        https:// **org**.crm.dynamics.com/main.aspx?appid=**GUID**
-    * * OnPrem        https:// **server**\/ **org**\/main.aspx?appid=**GUID**
+    * // Online        https:// **org**.crm.dynamics.com/main.aspx?appid=**GUID**
+    * // OnPrem        https:// **server**\/ **org**\/main.aspx?appid=**GUID**
     * @returns A string containing the url of the current business app.
     */
   def getCurrentAppUrl(): String
@@ -72,7 +72,7 @@ trait GlobalContext extends StObject {
   /**
     * Gets whether automatic save is enabled.
     * @deprecated Deprecated in v9. Use {@link Xrm.OrganizationSettings.isAutoSaveEnabled globalContext.organizationSettings.isAutoSaveEnabled} instead.
-    * @see {@link https://docs.microsoft.com/en-us/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#some-client-apis-are-deprecated External Link: Deprecated Client APIs}
+    * @see {@link https://learn.microsoft.com/en-us/power-platform/important-changes-coming#some-client-apis-are-deprecated External Link: Deprecated Client APIs}
     * @returns true if automatic saving is enabled, otherwise false.
     */
   def getIsAutoSaveEnabled(): Boolean
@@ -80,9 +80,9 @@ trait GlobalContext extends StObject {
   /**
     * Gets organization's LCID (language code).
     * @deprecated Deprecated in v9. Use {@link Xrm.OrganizationSettings.languageId globalContext.organizationSettings.languageId} instead.
-    * @see {@link https://docs.microsoft.com/en-us/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#some-client-apis-are-deprecated External Link: Deprecated Client APIs}
+    * @see {@link https://learn.microsoft.com/en-us/power-platform/important-changes-coming#some-client-apis-are-deprecated External Link: Deprecated Client APIs}
     * @returns The organization language code.
-    * @see {@link http://msdn.microsoft.com/en-us/library/ms912047(WinEmbedded.10).aspx External Link: Microsoft Locale ID Values}
+    * @see {@link https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/available-language-packs-for-windows External Link: Microsoft Locale ID Values}
     */
   def getOrgLcid(): Double
   
@@ -90,7 +90,7 @@ trait GlobalContext extends StObject {
     * Gets organization's unique name.
     * @remarks This value can be found on the Developer Resources page within Dynamics CRM.
     * @deprecated Deprecated in v9. Use {@link Xrm.OrganizationSettings.uniqueName} globalContext.organizationSettings.uniqueName instead.
-    * @see {@link https://docs.microsoft.com/en-us/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#some-client-apis-are-deprecated External Link: Deprecated Client APIs}
+    * @see {@link https://learn.microsoft.com/en-us/power-platform/important-changes-coming#some-client-apis-are-deprecated External Link: Deprecated Client APIs}
     * @returns The organization's unique name.
     */
   def getOrgUniqueName(): String
@@ -99,7 +99,7 @@ trait GlobalContext extends StObject {
     * Gets query string parameters.
     * @returns The query string parameters, in a dictionary object representing name and value pairs.
     * @deprecated Deprecated in v9 (Still applicable in Web Client).
-    * @see {@link https://docs.microsoft.com/en-us/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#some-client-apis-are-deprecated External Link: Deprecated Client APIs}
+    * @see {@link https://learn.microsoft.com/en-us/power-platform/important-changes-coming#some-client-apis-are-deprecated External Link: Deprecated Client APIs}
     */
   def getQueryStringParameters(): StringDictionary[Any]
   
@@ -112,7 +112,7 @@ trait GlobalContext extends StObject {
   /**
     * Gets user's unique identifier.
     * @deprecated Deprecated in v9.  Use {@link Xrm.UserSettings.userId globalContext.userSettings.userId} instead.
-    * @see {@link https://docs.microsoft.com/en-us/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#some-client-apis-are-deprecated External Link: Deprecated Client APIs}
+    * @see {@link https://learn.microsoft.com/en-us/power-platform/important-changes-coming#some-client-apis-are-deprecated External Link: Deprecated Client APIs}
     * @returns The user's identifier in Guid format.
     * @example Example: "{B05EC7CE-5D51-DF11-97E0-00155DB232D0}"
     */
@@ -121,16 +121,16 @@ trait GlobalContext extends StObject {
   /**
     * Gets user's LCID (language code).
     * @deprecated Deprecated in v9. Use {@link Xrm.UserSettings.languageId globalContext.userSetings.languageId} instead.
-    * @see {@link https://docs.microsoft.com/en-us/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#some-client-apis-are-deprecated External Link: Deprecated Client APIs}
+    * @see {@link https://learn.microsoft.com/en-us/power-platform/important-changes-coming#some-client-apis-are-deprecated External Link: Deprecated Client APIs}
     * @returns The user's language code.
-    * @see {@link http://msdn.microsoft.com/en-us/library/ms912047(WinEmbedded.10).aspx External Link: Microsoft Locale ID Values}
+    * @see {@link https://learn.microsoft.com/en-us/previous-versions/windows/embedded/ms912047(v=winembedded.10) External Link: Microsoft Locale ID Values}
     */
   def getUserLcid(): Double
   
   /**
     * Gets the name of the current user.
     * @deprecated Deprecated in v9. Use {@link Xrm.UserSettings.userName globalContext.userSettings.userName} instead.
-    * @see {@link https://docs.microsoft.com/en-us/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#some-client-apis-are-deprecated External Link: Deprecated Client APIs}
+    * @see {@link https://learn.microsoft.com/en-us/power-platform/important-changes-coming#some-client-apis-are-deprecated External Link: Deprecated Client APIs}
     * @returns The user's name.
     */
   def getUserName(): String
@@ -138,7 +138,7 @@ trait GlobalContext extends StObject {
   /**
     * Gets all user security roles.
     * @deprecated Deprecated in v9.  Use {@link Xrm.UserSettings.roles globalContext.userSettings.roles} instead.
-    * @see {@link https://docs.microsoft.com/en-us/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#some-client-apis-are-deprecated External Link: Deprecated Client APIs}
+    * @see {@link https://learn.microsoft.com/en-us/power-platform/important-changes-coming#some-client-apis-are-deprecated External Link: Deprecated Client APIs}
     * @returns An array of user role identifiers, in Guid format.
     * @example Example: ["cf4cc7ce-5d51-df11-97e0-00155db232d0"]
     */

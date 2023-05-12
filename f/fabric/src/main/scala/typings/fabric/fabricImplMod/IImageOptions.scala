@@ -11,21 +11,18 @@ trait IImageOptions
   /**
     * key used to retrieve the texture representing this image
     * @since 2.0.0
-    * @type String
     */
   var cacheKey: js.UndefOr[String] = js.undefined
   
   /**
     * Image crop in pixels from original image size.
     * @since 2.0.0
-    * @type Number
     */
   var cropX: js.UndefOr[Double] = js.undefined
   
   /**
     * Image crop in pixels from original image size.
     * @since 2.0.0
-    * @type Number
     */
   var cropY: js.UndefOr[Double] = js.undefined
   
@@ -43,7 +40,6 @@ trait IImageOptions
     * minimum scale factor under which any resizeFilter is triggered to resize the image
     * 0 will disable the automatic resize. 1 will trigger automatically always.
     * number bigger than 1 are not implemented yet.
-    * @type Number
     */
   var minimumScaleTrigger: js.UndefOr[Double] = js.undefined
   
@@ -51,7 +47,6 @@ trait IImageOptions
     * When calling {@link fabric.Image.getSrc}, return value from element src with `element.getAttribute('src')`.
     * This allows for relative urls as image src.
     * @since 2.7.0
-    * @type Boolean
     */
   var srcFromAttribute: js.UndefOr[Boolean] = js.undefined
 }

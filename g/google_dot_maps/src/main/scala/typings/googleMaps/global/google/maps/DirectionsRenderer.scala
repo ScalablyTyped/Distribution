@@ -5,15 +5,15 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Renders directions obtained from the <code><a
-  * href="#DirectionsService">DirectionsService</a></code>.
-  */
 @JSGlobal("google.maps.DirectionsRenderer")
 @js.native
 /**
   * Renders directions obtained from the <code><a
   * href="#DirectionsService">DirectionsService</a></code>.
+  *
+  * Access by calling `const {DirectionsRenderer} = await
+  * google.maps.importLibrary("routes")`. See
+  * https://developers.google.com/maps/documentation/javascript/libraries.
   */
 open class DirectionsRenderer ()
   extends StObject

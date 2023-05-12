@@ -158,8 +158,8 @@ object Long {
   inline def fromBytesLE(bytes: js.Array[scala.Double]): typings.bson.mod.Long = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBytesLE")(bytes.asInstanceOf[js.Any]).asInstanceOf[typings.bson.mod.Long]
   inline def fromBytesLE(bytes: js.Array[scala.Double], unsigned: Boolean): typings.bson.mod.Long = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBytesLE")(bytes.asInstanceOf[js.Any], unsigned.asInstanceOf[js.Any])).asInstanceOf[typings.bson.mod.Long]
   
-  inline def fromExtendedJSON(doc: NumberLong): scala.Double | typings.bson.mod.Long = ^.asInstanceOf[js.Dynamic].applyDynamic("fromExtendedJSON")(doc.asInstanceOf[js.Any]).asInstanceOf[scala.Double | typings.bson.mod.Long]
-  inline def fromExtendedJSON(doc: NumberLong, options: EJSONOptions): scala.Double | typings.bson.mod.Long = (^.asInstanceOf[js.Dynamic].applyDynamic("fromExtendedJSON")(doc.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[scala.Double | typings.bson.mod.Long]
+  inline def fromExtendedJSON(doc: NumberLong): scala.Double | typings.bson.mod.Long | js.BigInt = ^.asInstanceOf[js.Dynamic].applyDynamic("fromExtendedJSON")(doc.asInstanceOf[js.Any]).asInstanceOf[scala.Double | typings.bson.mod.Long | js.BigInt]
+  inline def fromExtendedJSON(doc: NumberLong, options: EJSONOptions): scala.Double | typings.bson.mod.Long | js.BigInt = (^.asInstanceOf[js.Dynamic].applyDynamic("fromExtendedJSON")(doc.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[scala.Double | typings.bson.mod.Long | js.BigInt]
   
   /**
     * Returns a Long representing the given 32 bit integer value.

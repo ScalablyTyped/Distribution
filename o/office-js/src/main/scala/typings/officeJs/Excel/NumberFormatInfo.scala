@@ -24,6 +24,14 @@ trait NumberFormatInfo
   var context_NumberFormatInfo: RequestContext = js.native
   
   /**
+    * Gets the currency symbol for currency values. This is based on current system settings.
+    *
+    * @remarks
+    * [Api set: ExcelApi 1.17]
+    */
+  val currencySymbol: String = js.native
+  
+  /**
     * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     *
     * @param options Provides options for which properties of the object to load.

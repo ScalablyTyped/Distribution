@@ -10,20 +10,20 @@ open class InlineValueText protected ()
   extends StObject
      with InlineValue {
   /**
-    * Creates a new InlineValueText object.
-    *
-    * @param range The document line where to show the inline value.
-    * @param text The value to be shown for the line.
-    */
+  		 * Creates a new InlineValueText object.
+  		 *
+  		 * @param range The document line where to show the inline value.
+  		 * @param text The value to be shown for the line.
+  		 */
   def this(range: Range, text: String) = this()
   
   /**
-    * The document range for which the inline value applies.
-    */
+  		 * The document range for which the inline value applies.
+  		 */
   val range: Range = js.native
   
   /**
-    * The text of the inline value.
-    */
+  		 * The text of the inline value.
+  		 */
   val text: String = js.native
 }

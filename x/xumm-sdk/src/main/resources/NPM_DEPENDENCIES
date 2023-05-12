@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "xumm-sdk" : "1.4.0"
+      "xumm-sdk" : "1.8.4"
     }
   ],
   "test-dependencies" : [
     {
-      "xumm-sdk" : "1.4.0"
+      "xumm-sdk" : "1.8.4"
     }
   ],
   "compile-devDependencies" : [

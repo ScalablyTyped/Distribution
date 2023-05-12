@@ -8,11 +8,11 @@ trait ParametersPathGpgkeyid extends StObject {
   
   var parameters: PathGpgkeyid
   
-  var responses: `200Content361`
+  var responses: `200Content384`
 }
 object ParametersPathGpgkeyid {
   
-  inline def apply(parameters: PathGpgkeyid, responses: `200Content361`): ParametersPathGpgkeyid = {
+  inline def apply(parameters: PathGpgkeyid, responses: `200Content384`): ParametersPathGpgkeyid = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersPathGpgkeyid]
   }
@@ -22,6 +22,6 @@ object ParametersPathGpgkeyid {
     
     inline def setParameters(value: PathGpgkeyid): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `200Content361`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `200Content384`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

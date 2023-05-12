@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListCloudFrontOriginAccessIdentitiesResult extends StObject {
   
   /**
-    * The CloudFrontOriginAccessIdentityList type. 
+    * The CloudFrontOriginAccessIdentityList type.
     */
   var CloudFrontOriginAccessIdentityList: js.UndefOr[typings.awsSdk.clientsCloudfrontMod.CloudFrontOriginAccessIdentityList] = js.undefined
 }

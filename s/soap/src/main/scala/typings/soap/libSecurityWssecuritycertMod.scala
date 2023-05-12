@@ -2,6 +2,7 @@ package typings.soap
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.soap.libTypesMod.ISecurity
+import typings.soap.soapStrings.wssecurity
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -92,6 +93,8 @@ object libSecurityWssecuritycertMod {
     
     var existingPrefixes: js.UndefOr[StringDictionary[String]] = js.undefined
     
+    var idMode: js.UndefOr[wssecurity] = js.undefined
+    
     var prefix: js.UndefOr[String] = js.undefined
   }
   object IXmlSignerOptions {
@@ -111,6 +114,10 @@ object libSecurityWssecuritycertMod {
       inline def setExistingPrefixes(value: StringDictionary[String]): Self = StObject.set(x, "existingPrefixes", value.asInstanceOf[js.Any])
       
       inline def setExistingPrefixesUndefined: Self = StObject.set(x, "existingPrefixes", js.undefined)
+      
+      inline def setIdMode(value: wssecurity): Self = StObject.set(x, "idMode", value.asInstanceOf[js.Any])
+      
+      inline def setIdModeUndefined: Self = StObject.set(x, "idMode", js.undefined)
       
       inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       

@@ -37,6 +37,11 @@ trait DataCollectionDetails extends StObject {
   var status: js.UndefOr[AssessmentStatus] = js.undefined
   
   /**
+    * The status message of the assessment.
+    */
+  var statusMessage: js.UndefOr[AssessmentStatusMessage] = js.undefined
+  
+  /**
     *  The number of successful servers in the assessment. 
     */
   var success: js.UndefOr[Integer] = js.undefined
@@ -72,6 +77,10 @@ object DataCollectionDetails {
     inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     
     inline def setStatus(value: AssessmentStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    
+    inline def setStatusMessage(value: AssessmentStatusMessage): Self = StObject.set(x, "statusMessage", value.asInstanceOf[js.Any])
+    
+    inline def setStatusMessageUndefined: Self = StObject.set(x, "statusMessage", js.undefined)
     
     inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     

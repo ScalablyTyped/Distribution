@@ -5,292 +5,124 @@ import typings.rollupTypescript.rollupTypescriptBooleans.`false`
 import typings.rollupTypescript.rollupTypescriptStrings.dts
 import typings.rollupTypescript.rollupTypescriptStrings.js_
 import typings.rollupTypescript.rollupTypescriptStrings.quit
+import typings.std.Map
+import typings.std.NonNullable
 import typings.typescript.anon.Config
 import typings.typescript.anon.Errors
-import typings.typescript.anon.ExpressionWithTypeArgumen
 import typings.typescript.anon.FileExists
 import typings.typescript.anon.FnCall
 import typings.typescript.anon.ImpliedNodeFormat
 import typings.typescript.anon.Options
 import typings.typescript.mod.AccessExpression
 import typings.typescript.mod.ArrayBindingElement
-import typings.typescript.mod.ArrayBindingPattern
-import typings.typescript.mod.ArrayLiteralExpression
-import typings.typescript.mod.ArrayTypeNode
-import typings.typescript.mod.ArrowFunction
-import typings.typescript.mod.AsExpression
-import typings.typescript.mod.AssertClause
-import typings.typescript.mod.AssertsKeyword
-import typings.typescript.mod.AsteriskToken
-import typings.typescript.mod.AwaitExpression
-import typings.typescript.mod.AwaitKeyword
-import typings.typescript.mod.BigIntLiteral
-import typings.typescript.mod.BinaryExpression
-import typings.typescript.mod.BinaryOperator
-import typings.typescript.mod.BinaryOperatorToken
 import typings.typescript.mod.BindingElement
 import typings.typescript.mod.BindingName
-import typings.typescript.mod.Block
-import typings.typescript.mod.BooleanLiteral
-import typings.typescript.mod.BreakStatement
 import typings.typescript.mod.BuildOptions
 import typings.typescript.mod.BuilderProgram
 import typings.typescript.mod.BuilderProgramHost
-import typings.typescript.mod.Bundle
-import typings.typescript.mod.CallChain
-import typings.typescript.mod.CallExpression
-import typings.typescript.mod.CallSignatureDeclaration
 import typings.typescript.mod.CancellationToken
-import typings.typescript.mod.CaseBlock
-import typings.typescript.mod.CaseClause
-import typings.typescript.mod.CaseOrDefaultClause
-import typings.typescript.mod.CatchClause
-import typings.typescript.mod.ClassDeclaration
-import typings.typescript.mod.ClassElement
-import typings.typescript.mod.ClassExpression
 import typings.typescript.mod.Classifier
-import typings.typescript.mod.ColonToken
-import typings.typescript.mod.CommaListExpression
 import typings.typescript.mod.CommentKind
 import typings.typescript.mod.CommentRange
 import typings.typescript.mod.CompilerHost
 import typings.typescript.mod.CompilerOptions
-import typings.typescript.mod.ComputedPropertyName
 import typings.typescript.mod.ConciseBody
-import typings.typescript.mod.ConditionalExpression
-import typings.typescript.mod.ConditionalTypeNode
-import typings.typescript.mod.ConstructSignatureDeclaration
-import typings.typescript.mod.ConstructorDeclaration
-import typings.typescript.mod.ConstructorTypeNode
-import typings.typescript.mod.ContinueStatement
 import typings.typescript.mod.CreateProgramOptions
 import typings.typescript.mod.CreateProgram_
 import typings.typescript.mod.CreateSourceFileOptions
-import typings.typescript.mod.DebuggerStatement
 import typings.typescript.mod.Declaration
 import typings.typescript.mod.DeclarationName
 import typings.typescript.mod.DeclarationWithTypeParameters
 import typings.typescript.mod.Decorator
-import typings.typescript.mod.DefaultClause
-import typings.typescript.mod.DeleteExpression
 import typings.typescript.mod.Diagnostic
 import typings.typescript.mod.DiagnosticMessageChain
 import typings.typescript.mod.DiagnosticReporter
-import typings.typescript.mod.DoStatement
 import typings.typescript.mod.DocumentRegistry
-import typings.typescript.mod.DotDotDotToken
 import typings.typescript.mod.EditorOptions
 import typings.typescript.mod.EditorSettings
-import typings.typescript.mod.ElementAccessChain
-import typings.typescript.mod.ElementAccessExpression
 import typings.typescript.mod.EmitAndSemanticDiagnosticsBuilderProgram
 import typings.typescript.mod.EmitFlags
 import typings.typescript.mod.EmitHelper
-import typings.typescript.mod.EmptyStatement
 import typings.typescript.mod.EntityName
-import typings.typescript.mod.EnumDeclaration
-import typings.typescript.mod.EnumMember
-import typings.typescript.mod.EqualsGreaterThanToken
 import typings.typescript.mod.ErrorCallback
-import typings.typescript.mod.ExclamationToken
-import typings.typescript.mod.ExportAssignment
-import typings.typescript.mod.ExportDeclaration
-import typings.typescript.mod.ExportSpecifier
 import typings.typescript.mod.Expression
-import typings.typescript.mod.ExpressionStatement
-import typings.typescript.mod.ExpressionWithTypeArguments
 import typings.typescript.mod.ExtendedConfigCacheEntry
-import typings.typescript.mod.ExternalModuleReference
-import typings.typescript.mod.FalseLiteral
 import typings.typescript.mod.FileExtensionInfo
 import typings.typescript.mod.FileReference
-import typings.typescript.mod.ForInStatement
-import typings.typescript.mod.ForInitializer
-import typings.typescript.mod.ForOfStatement
-import typings.typescript.mod.ForStatement
 import typings.typescript.mod.FormatCodeSettings
 import typings.typescript.mod.FormatDiagnosticsHost
 import typings.typescript.mod.FunctionBody
-import typings.typescript.mod.FunctionDeclaration
-import typings.typescript.mod.FunctionExpression
 import typings.typescript.mod.FunctionLikeDeclaration
-import typings.typescript.mod.FunctionTypeNode
-import typings.typescript.mod.GeneratedIdentifierFlags
-import typings.typescript.mod.GetAccessorDeclaration
 import typings.typescript.mod.GetEffectiveTypeRootsHost
 import typings.typescript.mod.HasDecorators
 import typings.typescript.mod.HasModifiers
-import typings.typescript.mod.HeritageClause
 import typings.typescript.mod.IScriptSnapshot
 import typings.typescript.mod.Identifier
-import typings.typescript.mod.IfStatement
-import typings.typescript.mod.ImportClause
-import typings.typescript.mod.ImportDeclaration
-import typings.typescript.mod.ImportEqualsDeclaration
-import typings.typescript.mod.ImportSpecifier
-import typings.typescript.mod.ImportTypeAssertionContainer
-import typings.typescript.mod.ImportTypeNode
 import typings.typescript.mod.IncrementalProgramOptions
-import typings.typescript.mod.IndexSignatureDeclaration
-import typings.typescript.mod.IndexedAccessTypeNode
-import typings.typescript.mod.InferTypeNode
 import typings.typescript.mod.InputFiles
-import typings.typescript.mod.InterfaceDeclaration
-import typings.typescript.mod.IntersectionTypeNode
-import typings.typescript.mod.JSDoc
 import typings.typescript.mod.JSDocAugmentsTag
-import typings.typescript.mod.JSDocAuthorTag
-import typings.typescript.mod.JSDocCallbackTag
 import typings.typescript.mod.JSDocClassTag
 import typings.typescript.mod.JSDocComment
 import typings.typescript.mod.JSDocDeprecatedTag
 import typings.typescript.mod.JSDocEnumTag
 import typings.typescript.mod.JSDocImplementsTag
-import typings.typescript.mod.JSDocNamespaceDeclaration
 import typings.typescript.mod.JSDocOverrideTag
 import typings.typescript.mod.JSDocParameterTag
 import typings.typescript.mod.JSDocPrivateTag
-import typings.typescript.mod.JSDocPropertyLikeTag
-import typings.typescript.mod.JSDocPropertyTag
 import typings.typescript.mod.JSDocProtectedTag
 import typings.typescript.mod.JSDocPublicTag
 import typings.typescript.mod.JSDocReadonlyTag
 import typings.typescript.mod.JSDocReturnTag
+import typings.typescript.mod.JSDocSatisfiesTag
 import typings.typescript.mod.JSDocSignature
 import typings.typescript.mod.JSDocTag
 import typings.typescript.mod.JSDocTemplateTag
 import typings.typescript.mod.JSDocThisTag
-import typings.typescript.mod.JSDocTypeExpression
-import typings.typescript.mod.JSDocTypeLiteral
 import typings.typescript.mod.JSDocTypeTag
 import typings.typescript.mod.JSDocTypedefTag
-import typings.typescript.mod.JSDocUnknownTag
 import typings.typescript.mod.JsonSourceFile
-import typings.typescript.mod.JsxAttribute
-import typings.typescript.mod.JsxAttributeLike
-import typings.typescript.mod.JsxAttributeValue
-import typings.typescript.mod.JsxAttributes
-import typings.typescript.mod.JsxChild
-import typings.typescript.mod.JsxClosingElement
-import typings.typescript.mod.JsxClosingFragment
-import typings.typescript.mod.JsxElement
-import typings.typescript.mod.JsxExpression
-import typings.typescript.mod.JsxFragment
-import typings.typescript.mod.JsxOpeningElement
-import typings.typescript.mod.JsxOpeningFragment
-import typings.typescript.mod.JsxSelfClosingElement
-import typings.typescript.mod.JsxSpreadAttribute
-import typings.typescript.mod.JsxTagNameExpression
-import typings.typescript.mod.JsxText
-import typings.typescript.mod.KeywordTypeNode
-import typings.typescript.mod.KeywordTypeSyntaxKind
-import typings.typescript.mod.LabeledStatement
+import typings.typescript.mod.KeywordSyntaxKind
 import typings.typescript.mod.LanguageService
 import typings.typescript.mod.LanguageServiceHost
 import typings.typescript.mod.LanguageServiceMode
 import typings.typescript.mod.LanguageVariant
 import typings.typescript.mod.LineAndCharacter
-import typings.typescript.mod.LiteralExpression
-import typings.typescript.mod.LiteralTypeNode
-import typings.typescript.mod.Map
-import typings.typescript.mod.MappedTypeNode
-import typings.typescript.mod.MemberName
-import typings.typescript.mod.MetaProperty
-import typings.typescript.mod.MethodDeclaration
-import typings.typescript.mod.MethodSignature
-import typings.typescript.mod.MinusToken
 import typings.typescript.mod.Modifier
 import typings.typescript.mod.ModifierFlags
-import typings.typescript.mod.ModifierLike
-import typings.typescript.mod.ModifierSyntaxKind
-import typings.typescript.mod.ModifierToken
-import typings.typescript.mod.ModuleBlock
-import typings.typescript.mod.ModuleBody
-import typings.typescript.mod.ModuleDeclaration
 import typings.typescript.mod.ModuleKind.CommonJS
 import typings.typescript.mod.ModuleKind.ESNext
-import typings.typescript.mod.ModuleName
-import typings.typescript.mod.ModuleReference
 import typings.typescript.mod.ModuleResolutionCache
 import typings.typescript.mod.ModuleResolutionHost
-import typings.typescript.mod.NamedExportBindings
-import typings.typescript.mod.NamedExports
-import typings.typescript.mod.NamedImportBindings
-import typings.typescript.mod.NamedImports
-import typings.typescript.mod.NamedTupleMember
-import typings.typescript.mod.NamespaceExport
-import typings.typescript.mod.NamespaceExportDeclaration
-import typings.typescript.mod.NamespaceImport
-import typings.typescript.mod.NewExpression
-import typings.typescript.mod.NoSubstitutionTemplateLiteral
 import typings.typescript.mod.Node
 import typings.typescript.mod.NodeArray
 import typings.typescript.mod.NodeFactory
 import typings.typescript.mod.NodeFlags
 import typings.typescript.mod.NodesVisitor
-import typings.typescript.mod.NonNullChain
-import typings.typescript.mod.NonNullExpression
 import typings.typescript.mod.NonRelativeModuleNameResolutionCache
-import typings.typescript.mod.NotEmittedStatement
-import typings.typescript.mod.NullLiteral
-import typings.typescript.mod.NumericLiteral
-import typings.typescript.mod.ObjectBindingPattern
-import typings.typescript.mod.ObjectLiteralElementLike
-import typings.typescript.mod.ObjectLiteralExpression
-import typings.typescript.mod.OmittedExpression
-import typings.typescript.mod.OptionalTypeNode
 import typings.typescript.mod.PackageJsonInfoCache
 import typings.typescript.mod.ParameterDeclaration
-import typings.typescript.mod.ParenthesizedExpression
-import typings.typescript.mod.ParenthesizedTypeNode
 import typings.typescript.mod.ParseConfigFileHost
 import typings.typescript.mod.ParseConfigHost
 import typings.typescript.mod.ParsedCommandLine
-import typings.typescript.mod.PartiallyEmittedExpression
 import typings.typescript.mod.Path
-import typings.typescript.mod.PlusToken
-import typings.typescript.mod.PostfixUnaryExpression
-import typings.typescript.mod.PostfixUnaryOperator
 import typings.typescript.mod.PreProcessedFileInfo
-import typings.typescript.mod.PrefixUnaryExpression
-import typings.typescript.mod.PrefixUnaryOperator
-import typings.typescript.mod.PrimaryExpression
 import typings.typescript.mod.PrintHandlers
 import typings.typescript.mod.Printer
 import typings.typescript.mod.PrinterOptions
 import typings.typescript.mod.PrivateIdentifier
 import typings.typescript.mod.Program
 import typings.typescript.mod.ProjectReference
-import typings.typescript.mod.PropertyAccessChain
-import typings.typescript.mod.PropertyAccessExpression
-import typings.typescript.mod.PropertyAssignment
-import typings.typescript.mod.PropertyDeclaration
-import typings.typescript.mod.PropertyName
-import typings.typescript.mod.PropertyNameLiteral
-import typings.typescript.mod.PropertySignature
-import typings.typescript.mod.PseudoBigInt
-import typings.typescript.mod.Push
-import typings.typescript.mod.QualifiedName
-import typings.typescript.mod.QuestionDotToken
-import typings.typescript.mod.QuestionToken
 import typings.typescript.mod.ReadBuildProgramHost
-import typings.typescript.mod.ReadonlyKeyword
-import typings.typescript.mod.RegularExpressionLiteral
 import typings.typescript.mod.ReportEmitErrorSummary
-import typings.typescript.mod.ResolveProjectReferencePathHost
+import typings.typescript.mod.ResolutionMode
 import typings.typescript.mod.ResolvedConfigFileName
 import typings.typescript.mod.ResolvedModuleWithFailedLookupLocations
 import typings.typescript.mod.ResolvedProjectReference
 import typings.typescript.mod.ResolvedTypeReferenceDirectiveWithFailedLookupLocations
-import typings.typescript.mod.RestTypeNode
-import typings.typescript.mod.ReturnStatement
 import typings.typescript.mod.Scanner
 import typings.typescript.mod.ScriptKind
 import typings.typescript.mod.ScriptTarget
 import typings.typescript.mod.SemanticDiagnosticsBuilderProgram
-import typings.typescript.mod.SemicolonClassElement
-import typings.typescript.mod.SetAccessorDeclaration
-import typings.typescript.mod.ShorthandPropertyAssignment
 import typings.typescript.mod.SignatureDeclaration
 import typings.typescript.mod.SolutionBuilder
 import typings.typescript.mod.SolutionBuilderHost
@@ -300,78 +132,36 @@ import typings.typescript.mod.SourceFile
 import typings.typescript.mod.SourceFileLike
 import typings.typescript.mod.SourceMapRange
 import typings.typescript.mod.SourceMapSource
-import typings.typescript.mod.SpreadAssignment
-import typings.typescript.mod.SpreadElement
 import typings.typescript.mod.Statement
-import typings.typescript.mod.StringLiteral
 import typings.typescript.mod.StringLiteralLike
-import typings.typescript.mod.SuperExpression
-import typings.typescript.mod.SwitchStatement
 import typings.typescript.mod.Symbol
 import typings.typescript.mod.SymbolDisplayPart
 import typings.typescript.mod.SyntaxKind
-import typings.typescript.mod.SyntaxKind.ExtendsKeyword
-import typings.typescript.mod.SyntaxKind.ImplementsKeyword
-import typings.typescript.mod.SyntaxKind.ImportKeyword
-import typings.typescript.mod.SyntaxKind.KeyOfKeyword
 import typings.typescript.mod.SyntaxKind.MultiLineCommentTrivia
-import typings.typescript.mod.SyntaxKind.NewKeyword
 import typings.typescript.mod.SyntaxKind.SingleLineCommentTrivia
-import typings.typescript.mod.SyntaxKind.UniqueKeyword
 import typings.typescript.mod.SynthesizedComment
 import typings.typescript.mod.System
-import typings.typescript.mod.TaggedTemplateExpression
-import typings.typescript.mod.TemplateExpression
-import typings.typescript.mod.TemplateHead
-import typings.typescript.mod.TemplateLiteral
-import typings.typescript.mod.TemplateMiddle
-import typings.typescript.mod.TemplateSpan
-import typings.typescript.mod.TemplateTail
 import typings.typescript.mod.TextChangeRange
 import typings.typescript.mod.TextRange
 import typings.typescript.mod.TextSpan
-import typings.typescript.mod.ThisExpression
-import typings.typescript.mod.ThisTypeNode
-import typings.typescript.mod.ThrowStatement
-import typings.typescript.mod.Token
-import typings.typescript.mod.TokenFlags
 import typings.typescript.mod.TransformationContext
 import typings.typescript.mod.TransformationResult
 import typings.typescript.mod.TransformerFactory
 import typings.typescript.mod.TranspileOptions
 import typings.typescript.mod.TranspileOutput
-import typings.typescript.mod.TrueLiteral
-import typings.typescript.mod.TryStatement
 import typings.typescript.mod.TsConfigSourceFile
-import typings.typescript.mod.TupleTypeNode
-import typings.typescript.mod.TypeAliasDeclaration
-import typings.typescript.mod.TypeAssertion
-import typings.typescript.mod.TypeElement
-import typings.typescript.mod.TypeLiteralNode
 import typings.typescript.mod.TypeNode
-import typings.typescript.mod.TypeOfExpression
-import typings.typescript.mod.TypeOperatorNode
 import typings.typescript.mod.TypeParameterDeclaration
-import typings.typescript.mod.TypePredicateNode
-import typings.typescript.mod.TypeQueryNode
 import typings.typescript.mod.TypeReferenceDirectiveResolutionCache
-import typings.typescript.mod.TypeReferenceNode
-import typings.typescript.mod.UnionTypeNode
 import typings.typescript.mod.UnparsedSource
 import typings.typescript.mod.VariableDeclaration
-import typings.typescript.mod.VariableDeclarationList
-import typings.typescript.mod.VariableStatement
 import typings.typescript.mod.Visitor
-import typings.typescript.mod.VoidExpression
 import typings.typescript.mod.WatchCompilerHostOfConfigFile
 import typings.typescript.mod.WatchCompilerHostOfFilesAndCompilerOptions
 import typings.typescript.mod.WatchOfConfigFile
 import typings.typescript.mod.WatchOfFilesAndCompilerOptions
 import typings.typescript.mod.WatchOptions
 import typings.typescript.mod.WatchStatusReporter
-import typings.typescript.mod.WhileStatement
-import typings.typescript.mod.WithStatement
-import typings.typescript.mod.YieldExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -446,6 +236,36 @@ object anon {
     def addSyntheticTrailingComment[T /* <: Node */](node: T, kind: SingleLineCommentTrivia, text: String): T = js.native
     def addSyntheticTrailingComment[T /* <: Node */](node: T, kind: SingleLineCommentTrivia, text: String, hasTrailingNewLine: Boolean): T = js.native
     
+    def bundlerModuleNameResolver(
+      moduleName: String,
+      containingFile: String,
+      compilerOptions: CompilerOptions,
+      host: ModuleResolutionHost
+    ): ResolvedModuleWithFailedLookupLocations = js.native
+    def bundlerModuleNameResolver(
+      moduleName: String,
+      containingFile: String,
+      compilerOptions: CompilerOptions,
+      host: ModuleResolutionHost,
+      cache: Unit,
+      redirectedReference: ResolvedProjectReference
+    ): ResolvedModuleWithFailedLookupLocations = js.native
+    def bundlerModuleNameResolver(
+      moduleName: String,
+      containingFile: String,
+      compilerOptions: CompilerOptions,
+      host: ModuleResolutionHost,
+      cache: ModuleResolutionCache
+    ): ResolvedModuleWithFailedLookupLocations = js.native
+    def bundlerModuleNameResolver(
+      moduleName: String,
+      containingFile: String,
+      compilerOptions: CompilerOptions,
+      host: ModuleResolutionHost,
+      cache: ModuleResolutionCache,
+      redirectedReference: ResolvedProjectReference
+    ): ResolvedModuleWithFailedLookupLocations = js.native
+    
     def canHaveDecorators(node: Node): /* is typescript.typescript.HasDecorators */ Boolean = js.native
     
     def canHaveModifiers(node: Node): /* is typescript.typescript.HasModifiers */ Boolean = js.native
@@ -493,7 +313,10 @@ object anon {
     def convertCompilerOptionsFromJson(jsonOptions: Any, basePath: String): Errors = js.native
     def convertCompilerOptionsFromJson(jsonOptions: Any, basePath: String, configFileName: String): Errors = js.native
     
-    def convertToObject(sourceFile: JsonSourceFile, errors: Push[Diagnostic]): Any = js.native
+    /**
+      * Convert the json syntax tree into the json value
+      */
+    def convertToObject(sourceFile: JsonSourceFile, errors: js.Array[Diagnostic]): Any = js.native
     
     def convertTypeAcquisitionFromJson(jsonOptions: Any, basePath: String): Options = js.native
     def convertTypeAcquisitionFromJson(jsonOptions: Any, basePath: String, configFileName: String): Options = js.native
@@ -526,1173 +349,22 @@ object anon {
       projectReferences: js.UndefOr[js.Array[ProjectReference]]
     ): BuilderProgram = js.native
     
-    /** @deprecated Use `factory.createAdd` or the factory supplied by your transformation context instead. */
-    def createAdd(left: Expression, right: Expression): BinaryExpression = js.native
-    
-    /** @deprecated Use `factory.createArrayBindingPattern` or the factory supplied by your transformation context instead. */
-    def createArrayBindingPattern(elements: js.Array[ArrayBindingElement]): ArrayBindingPattern = js.native
-    
-    /** @deprecated Use `factory.createArrayLiteralExpression` or the factory supplied by your transformation context instead. */
-    def createArrayLiteral(): ArrayLiteralExpression = js.native
-    def createArrayLiteral(elements: js.Array[Expression]): ArrayLiteralExpression = js.native
-    def createArrayLiteral(elements: js.Array[Expression], multiLine: Boolean): ArrayLiteralExpression = js.native
-    def createArrayLiteral(elements: Unit, multiLine: Boolean): ArrayLiteralExpression = js.native
-    
-    /** @deprecated Use `factory.createArrayTypeNode` or the factory supplied by your transformation context instead. */
-    def createArrayTypeNode(elementType: TypeNode): ArrayTypeNode = js.native
-    
-    def createArrowFunction(
-      modifiers: js.Array[Modifier],
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      body: ConciseBody
-    ): ArrowFunction = js.native
-    def createArrowFunction(
-      modifiers: js.Array[Modifier],
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      equalsGreaterThanToken: Unit,
-      body: ConciseBody
-    ): ArrowFunction = js.native
-    def createArrowFunction(
-      modifiers: js.Array[Modifier],
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      equalsGreaterThanToken: EqualsGreaterThanToken,
-      body: ConciseBody
-    ): ArrowFunction = js.native
-    /** @deprecated Use `factory.createArrowFunction` or the factory supplied by your transformation context instead. */
-    def createArrowFunction(
-      modifiers: js.Array[Modifier],
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      body: ConciseBody
-    ): ArrowFunction = js.native
-    def createArrowFunction(
-      modifiers: js.Array[Modifier],
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      equalsGreaterThanToken: Unit,
-      body: ConciseBody
-    ): ArrowFunction = js.native
-    /** @deprecated Use `factory.createArrowFunction` or the factory supplied by your transformation context instead. */
-    def createArrowFunction(
-      modifiers: js.Array[Modifier],
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      equalsGreaterThanToken: EqualsGreaterThanToken,
-      body: ConciseBody
-    ): ArrowFunction = js.native
-    def createArrowFunction(
-      modifiers: js.Array[Modifier],
-      typeParameters: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      body: ConciseBody
-    ): ArrowFunction = js.native
-    def createArrowFunction(
-      modifiers: js.Array[Modifier],
-      typeParameters: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      equalsGreaterThanToken: Unit,
-      body: ConciseBody
-    ): ArrowFunction = js.native
-    def createArrowFunction(
-      modifiers: js.Array[Modifier],
-      typeParameters: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      equalsGreaterThanToken: EqualsGreaterThanToken,
-      body: ConciseBody
-    ): ArrowFunction = js.native
-    def createArrowFunction(
-      modifiers: js.Array[Modifier],
-      typeParameters: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      body: ConciseBody
-    ): ArrowFunction = js.native
-    def createArrowFunction(
-      modifiers: js.Array[Modifier],
-      typeParameters: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      equalsGreaterThanToken: Unit,
-      body: ConciseBody
-    ): ArrowFunction = js.native
-    def createArrowFunction(
-      modifiers: js.Array[Modifier],
-      typeParameters: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      equalsGreaterThanToken: EqualsGreaterThanToken,
-      body: ConciseBody
-    ): ArrowFunction = js.native
-    def createArrowFunction(
-      modifiers: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      body: ConciseBody
-    ): ArrowFunction = js.native
-    def createArrowFunction(
-      modifiers: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      equalsGreaterThanToken: Unit,
-      body: ConciseBody
-    ): ArrowFunction = js.native
-    def createArrowFunction(
-      modifiers: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      equalsGreaterThanToken: EqualsGreaterThanToken,
-      body: ConciseBody
-    ): ArrowFunction = js.native
-    def createArrowFunction(
-      modifiers: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      body: ConciseBody
-    ): ArrowFunction = js.native
-    def createArrowFunction(
-      modifiers: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      equalsGreaterThanToken: Unit,
-      body: ConciseBody
-    ): ArrowFunction = js.native
-    def createArrowFunction(
-      modifiers: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      equalsGreaterThanToken: EqualsGreaterThanToken,
-      body: ConciseBody
-    ): ArrowFunction = js.native
-    def createArrowFunction(
-      modifiers: Unit,
-      typeParameters: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      body: ConciseBody
-    ): ArrowFunction = js.native
-    def createArrowFunction(
-      modifiers: Unit,
-      typeParameters: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      equalsGreaterThanToken: Unit,
-      body: ConciseBody
-    ): ArrowFunction = js.native
-    def createArrowFunction(
-      modifiers: Unit,
-      typeParameters: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      equalsGreaterThanToken: EqualsGreaterThanToken,
-      body: ConciseBody
-    ): ArrowFunction = js.native
-    def createArrowFunction(
-      modifiers: Unit,
-      typeParameters: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      body: ConciseBody
-    ): ArrowFunction = js.native
-    def createArrowFunction(
-      modifiers: Unit,
-      typeParameters: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      equalsGreaterThanToken: Unit,
-      body: ConciseBody
-    ): ArrowFunction = js.native
-    def createArrowFunction(
-      modifiers: Unit,
-      typeParameters: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      equalsGreaterThanToken: EqualsGreaterThanToken,
-      body: ConciseBody
-    ): ArrowFunction = js.native
-    
-    /** @deprecated Use `factory.createAsExpression` or the factory supplied by your transformation context instead. */
-    def createAsExpression(expression: Expression, `type`: TypeNode): AsExpression = js.native
-    
-    /** @deprecated Use `factory.createAssignment` or the factory supplied by your transformation context instead. */
-    def createAssignment(left: Expression, right: Expression): BinaryExpression = js.native
-    
-    /** @deprecated Use `factory.createAwaitExpression` or the factory supplied by your transformation context instead. */
-    def createAwait(expression: Expression): AwaitExpression = js.native
-    
-    /** @deprecated Use `factory.createBigIntLiteral` or the factory supplied by your transformation context instead. */
-    def createBigIntLiteral(value: String): BigIntLiteral = js.native
-    def createBigIntLiteral(value: PseudoBigInt): BigIntLiteral = js.native
-    
-    def createBinary(left: Expression, operator: BinaryOperatorToken, right: Expression): BinaryExpression = js.native
-    /** @deprecated Use `factory.createBinaryExpression` or the factory supplied by your transformation context instead. */
-    def createBinary(left: Expression, operator: BinaryOperator, right: Expression): BinaryExpression = js.native
-    
-    def createBindingElement(dotDotDotToken: Unit, propertyName: String, name: String): BindingElement = js.native
-    def createBindingElement(dotDotDotToken: Unit, propertyName: String, name: String, initializer: Expression): BindingElement = js.native
-    def createBindingElement(dotDotDotToken: Unit, propertyName: String, name: BindingName): BindingElement = js.native
-    def createBindingElement(dotDotDotToken: Unit, propertyName: String, name: BindingName, initializer: Expression): BindingElement = js.native
-    def createBindingElement(dotDotDotToken: Unit, propertyName: Unit, name: String): BindingElement = js.native
-    def createBindingElement(dotDotDotToken: Unit, propertyName: Unit, name: String, initializer: Expression): BindingElement = js.native
-    def createBindingElement(dotDotDotToken: Unit, propertyName: Unit, name: BindingName): BindingElement = js.native
-    def createBindingElement(dotDotDotToken: Unit, propertyName: Unit, name: BindingName, initializer: Expression): BindingElement = js.native
-    def createBindingElement(dotDotDotToken: Unit, propertyName: PropertyName, name: String): BindingElement = js.native
-    def createBindingElement(dotDotDotToken: Unit, propertyName: PropertyName, name: String, initializer: Expression): BindingElement = js.native
-    def createBindingElement(dotDotDotToken: Unit, propertyName: PropertyName, name: BindingName): BindingElement = js.native
-    def createBindingElement(dotDotDotToken: Unit, propertyName: PropertyName, name: BindingName, initializer: Expression): BindingElement = js.native
-    /** @deprecated Use `factory.createBindingElement` or the factory supplied by your transformation context instead. */
-    def createBindingElement(dotDotDotToken: DotDotDotToken, propertyName: String, name: String): BindingElement = js.native
-    def createBindingElement(dotDotDotToken: DotDotDotToken, propertyName: String, name: String, initializer: Expression): BindingElement = js.native
-    def createBindingElement(dotDotDotToken: DotDotDotToken, propertyName: String, name: BindingName): BindingElement = js.native
-    def createBindingElement(dotDotDotToken: DotDotDotToken, propertyName: String, name: BindingName, initializer: Expression): BindingElement = js.native
-    def createBindingElement(dotDotDotToken: DotDotDotToken, propertyName: Unit, name: String): BindingElement = js.native
-    def createBindingElement(dotDotDotToken: DotDotDotToken, propertyName: Unit, name: String, initializer: Expression): BindingElement = js.native
-    def createBindingElement(dotDotDotToken: DotDotDotToken, propertyName: Unit, name: BindingName): BindingElement = js.native
-    def createBindingElement(dotDotDotToken: DotDotDotToken, propertyName: Unit, name: BindingName, initializer: Expression): BindingElement = js.native
-    def createBindingElement(dotDotDotToken: DotDotDotToken, propertyName: PropertyName, name: String): BindingElement = js.native
-    def createBindingElement(dotDotDotToken: DotDotDotToken, propertyName: PropertyName, name: String, initializer: Expression): BindingElement = js.native
-    def createBindingElement(dotDotDotToken: DotDotDotToken, propertyName: PropertyName, name: BindingName): BindingElement = js.native
-    def createBindingElement(
-      dotDotDotToken: DotDotDotToken,
-      propertyName: PropertyName,
-      name: BindingName,
-      initializer: Expression
-    ): BindingElement = js.native
-    
-    /** @deprecated Use `factory.createBlock` or the factory supplied by your transformation context instead. */
-    def createBlock(statements: js.Array[Statement]): Block = js.native
-    def createBlock(statements: js.Array[Statement], multiLine: Boolean): Block = js.native
-    
-    /** @deprecated Use `factory.createBreakStatement` or the factory supplied by your transformation context instead. */
-    def createBreak(): BreakStatement = js.native
-    def createBreak(label: String): BreakStatement = js.native
-    def createBreak(label: Identifier): BreakStatement = js.native
-    
     /**
       * Create a function that reports watch status by writing to the system and handles the formating of the diagnostic
       */
     def createBuilderStatusReporter(system: System): DiagnosticReporter = js.native
     def createBuilderStatusReporter(system: System, pretty: Boolean): DiagnosticReporter = js.native
     
-    /** @deprecated Use `factory.createBundle` or the factory supplied by your transformation context instead. */
-    def createBundle(sourceFiles: js.Array[SourceFile]): Bundle = js.native
-    def createBundle(sourceFiles: js.Array[SourceFile], prepends: js.Array[UnparsedSource | InputFiles]): Bundle = js.native
-    
-    /** @deprecated Use `factory.createCallExpression` or the factory supplied by your transformation context instead. */
-    def createCall(expression: Expression): CallExpression = js.native
-    def createCall(expression: Expression, typeArguments: js.Array[TypeNode]): CallExpression = js.native
-    def createCall(expression: Expression, typeArguments: js.Array[TypeNode], argumentsArray: js.Array[Expression]): CallExpression = js.native
-    def createCall(expression: Expression, typeArguments: Unit, argumentsArray: js.Array[Expression]): CallExpression = js.native
-    
-    /** @deprecated Use `factory.createCallChain` or the factory supplied by your transformation context instead. */
-    def createCallChain(expression: Expression): CallChain = js.native
-    def createCallChain(expression: Expression, questionDotToken: Unit, typeArguments: js.Array[TypeNode]): CallChain = js.native
-    def createCallChain(
-      expression: Expression,
-      questionDotToken: Unit,
-      typeArguments: js.Array[TypeNode],
-      argumentsArray: js.Array[Expression]
-    ): CallChain = js.native
-    def createCallChain(
-      expression: Expression,
-      questionDotToken: Unit,
-      typeArguments: Unit,
-      argumentsArray: js.Array[Expression]
-    ): CallChain = js.native
-    def createCallChain(expression: Expression, questionDotToken: QuestionDotToken): CallChain = js.native
-    def createCallChain(expression: Expression, questionDotToken: QuestionDotToken, typeArguments: js.Array[TypeNode]): CallChain = js.native
-    def createCallChain(
-      expression: Expression,
-      questionDotToken: QuestionDotToken,
-      typeArguments: js.Array[TypeNode],
-      argumentsArray: js.Array[Expression]
-    ): CallChain = js.native
-    def createCallChain(
-      expression: Expression,
-      questionDotToken: QuestionDotToken,
-      typeArguments: Unit,
-      argumentsArray: js.Array[Expression]
-    ): CallChain = js.native
-    
-    /** @deprecated Use `factory.createCallSignature` or the factory supplied by your transformation context instead. */
-    def createCallSignature(typeParameters: js.Array[TypeParameterDeclaration], parameters: js.Array[ParameterDeclaration]): CallSignatureDeclaration = js.native
-    def createCallSignature(
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode
-    ): CallSignatureDeclaration = js.native
-    def createCallSignature(typeParameters: Unit, parameters: js.Array[ParameterDeclaration]): CallSignatureDeclaration = js.native
-    def createCallSignature(typeParameters: Unit, parameters: js.Array[ParameterDeclaration], `type`: TypeNode): CallSignatureDeclaration = js.native
-    
-    /** @deprecated Use `factory.createCaseBlock` or the factory supplied by your transformation context instead. */
-    def createCaseBlock(clauses: js.Array[CaseOrDefaultClause]): CaseBlock = js.native
-    
-    /** @deprecated Use `factory.createCaseClause` or the factory supplied by your transformation context instead. */
-    def createCaseClause(expression: Expression, statements: js.Array[Statement]): CaseClause = js.native
-    
-    /** @deprecated Use `factory.createCatchClause` or the factory supplied by your transformation context instead. */
-    def createCatchClause(variableDeclaration: String, block: Block): CatchClause = js.native
-    def createCatchClause(variableDeclaration: Unit, block: Block): CatchClause = js.native
-    def createCatchClause(variableDeclaration: BindingName, block: Block): CatchClause = js.native
-    def createCatchClause(variableDeclaration: VariableDeclaration, block: Block): CatchClause = js.native
-    
-    /** @deprecated Use `factory.createClassDeclaration` or the factory supplied by your transformation context instead. */
-    def createClassDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: String,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def createClassDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: String,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def createClassDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: String,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def createClassDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: String,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def createClassDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def createClassDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def createClassDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: Unit,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def createClassDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: Unit,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def createClassDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def createClassDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def createClassDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def createClassDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def createClassDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: String,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def createClassDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: String,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def createClassDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: String,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def createClassDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: String,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def createClassDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def createClassDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def createClassDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: Unit,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def createClassDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: Unit,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def createClassDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def createClassDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def createClassDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def createClassDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def createClassDeclaration(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: String,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def createClassDeclaration(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: String,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def createClassDeclaration(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: String,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def createClassDeclaration(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: String,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def createClassDeclaration(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def createClassDeclaration(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def createClassDeclaration(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: Unit,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def createClassDeclaration(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: Unit,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def createClassDeclaration(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def createClassDeclaration(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def createClassDeclaration(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def createClassDeclaration(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def createClassDeclaration(
-      decorators: Unit,
-      modifiers: Unit,
-      name: String,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def createClassDeclaration(
-      decorators: Unit,
-      modifiers: Unit,
-      name: String,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def createClassDeclaration(
-      decorators: Unit,
-      modifiers: Unit,
-      name: String,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def createClassDeclaration(
-      decorators: Unit,
-      modifiers: Unit,
-      name: String,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def createClassDeclaration(
-      decorators: Unit,
-      modifiers: Unit,
-      name: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def createClassDeclaration(
-      decorators: Unit,
-      modifiers: Unit,
-      name: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def createClassDeclaration(
-      decorators: Unit,
-      modifiers: Unit,
-      name: Unit,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def createClassDeclaration(
-      decorators: Unit,
-      modifiers: Unit,
-      name: Unit,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def createClassDeclaration(
-      decorators: Unit,
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def createClassDeclaration(
-      decorators: Unit,
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def createClassDeclaration(
-      decorators: Unit,
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def createClassDeclaration(
-      decorators: Unit,
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    /** @deprecated Use `factory.createClassDeclaration` or the factory supplied by your transformation context instead. */
-    def createClassDeclaration(
-      modifiers: js.Array[ModifierLike],
-      name: String,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def createClassDeclaration(
-      modifiers: js.Array[ModifierLike],
-      name: String,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def createClassDeclaration(
-      modifiers: js.Array[ModifierLike],
-      name: String,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def createClassDeclaration(
-      modifiers: js.Array[ModifierLike],
-      name: String,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def createClassDeclaration(
-      modifiers: js.Array[ModifierLike],
-      name: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def createClassDeclaration(
-      modifiers: js.Array[ModifierLike],
-      name: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def createClassDeclaration(
-      modifiers: js.Array[ModifierLike],
-      name: Unit,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def createClassDeclaration(
-      modifiers: js.Array[ModifierLike],
-      name: Unit,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def createClassDeclaration(
-      modifiers: js.Array[ModifierLike],
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def createClassDeclaration(
-      modifiers: js.Array[ModifierLike],
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def createClassDeclaration(
-      modifiers: js.Array[ModifierLike],
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def createClassDeclaration(
-      modifiers: js.Array[ModifierLike],
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def createClassDeclaration(
-      modifiers: Unit,
-      name: String,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def createClassDeclaration(
-      modifiers: Unit,
-      name: String,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def createClassDeclaration(
-      modifiers: Unit,
-      name: String,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def createClassDeclaration(
-      modifiers: Unit,
-      name: String,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def createClassDeclaration(
-      modifiers: Unit,
-      name: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def createClassDeclaration(
-      modifiers: Unit,
-      name: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def createClassDeclaration(
-      modifiers: Unit,
-      name: Unit,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def createClassDeclaration(
-      modifiers: Unit,
-      name: Unit,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def createClassDeclaration(
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def createClassDeclaration(
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def createClassDeclaration(
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def createClassDeclaration(
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    
-    /** @deprecated Use `factory.createClassExpression` or the factory supplied by your transformation context instead. */
-    def createClassExpression(
-      modifiers: js.Array[Modifier],
-      name: String,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassExpression = js.native
-    def createClassExpression(
-      modifiers: js.Array[Modifier],
-      name: String,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassExpression = js.native
-    def createClassExpression(
-      modifiers: js.Array[Modifier],
-      name: String,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassExpression = js.native
-    def createClassExpression(
-      modifiers: js.Array[Modifier],
-      name: String,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassExpression = js.native
-    def createClassExpression(
-      modifiers: js.Array[Modifier],
-      name: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassExpression = js.native
-    def createClassExpression(
-      modifiers: js.Array[Modifier],
-      name: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassExpression = js.native
-    def createClassExpression(
-      modifiers: js.Array[Modifier],
-      name: Unit,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassExpression = js.native
-    def createClassExpression(
-      modifiers: js.Array[Modifier],
-      name: Unit,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassExpression = js.native
-    def createClassExpression(
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassExpression = js.native
-    def createClassExpression(
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassExpression = js.native
-    def createClassExpression(
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassExpression = js.native
-    def createClassExpression(
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassExpression = js.native
-    def createClassExpression(
-      modifiers: Unit,
-      name: String,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassExpression = js.native
-    def createClassExpression(
-      modifiers: Unit,
-      name: String,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassExpression = js.native
-    def createClassExpression(
-      modifiers: Unit,
-      name: String,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassExpression = js.native
-    def createClassExpression(
-      modifiers: Unit,
-      name: String,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassExpression = js.native
-    def createClassExpression(
-      modifiers: Unit,
-      name: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassExpression = js.native
-    def createClassExpression(
-      modifiers: Unit,
-      name: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassExpression = js.native
-    def createClassExpression(
-      modifiers: Unit,
-      name: Unit,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassExpression = js.native
-    def createClassExpression(
-      modifiers: Unit,
-      name: Unit,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassExpression = js.native
-    def createClassExpression(
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassExpression = js.native
-    def createClassExpression(
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassExpression = js.native
-    def createClassExpression(
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassExpression = js.native
-    def createClassExpression(
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassExpression = js.native
-    
     /** The classifier is used for syntactic highlighting in editors via the TSServer */
     def createClassifier(): Classifier = js.native
     
-    /** @deprecated Use `factory.createComma` or the factory supplied by your transformation context instead. */
-    def createComma(left: Expression, right: Expression): Expression = js.native
-    
-    /** @deprecated Use `factory.createCommaListExpression` or the factory supplied by your transformation context instead. */
-    def createCommaList(elements: js.Array[Expression]): CommaListExpression = js.native
-    
     def createCompilerHost(options: CompilerOptions): CompilerHost = js.native
     def createCompilerHost(options: CompilerOptions, setParentNodes: Boolean): CompilerHost = js.native
-    
-    /** @deprecated Use `factory.createComputedPropertyName` or the factory supplied by your transformation context instead. */
-    def createComputedPropertyName(expression: Expression): ComputedPropertyName = js.native
-    
-    /** @deprecated Use `factory.createConditional` or the factory supplied by your transformation context instead. */
-    def createConditional(
-      condition: Expression,
-      questionToken: QuestionToken,
-      whenTrue: Expression,
-      colonToken: ColonToken,
-      whenFalse: Expression
-    ): ConditionalExpression = js.native
-    /** @deprecated Use `factory.createConditional` or the factory supplied by your transformation context instead. */
-    def createConditional(condition: Expression, whenTrue: Expression, whenFalse: Expression): ConditionalExpression = js.native
-    
-    /** @deprecated Use `factory.createConditionalTypeNode` or the factory supplied by your transformation context instead. */
-    def createConditionalTypeNode(checkType: TypeNode, extendsType: TypeNode, trueType: TypeNode, falseType: TypeNode): ConditionalTypeNode = js.native
-    
-    /** @deprecated Use `factory.createConstructSignature` or the factory supplied by your transformation context instead. */
-    def createConstructSignature(typeParameters: js.Array[TypeParameterDeclaration], parameters: js.Array[ParameterDeclaration]): ConstructSignatureDeclaration = js.native
-    def createConstructSignature(
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode
-    ): ConstructSignatureDeclaration = js.native
-    def createConstructSignature(typeParameters: Unit, parameters: js.Array[ParameterDeclaration]): ConstructSignatureDeclaration = js.native
-    def createConstructSignature(typeParameters: Unit, parameters: js.Array[ParameterDeclaration], `type`: TypeNode): ConstructSignatureDeclaration = js.native
-    
-    /** @deprecated Use `factory.createConstructorDeclaration` or the factory supplied by your transformation context instead. */
-    def createConstructor(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      parameters: js.Array[ParameterDeclaration]
-    ): ConstructorDeclaration = js.native
-    def createConstructor(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      parameters: js.Array[ParameterDeclaration],
-      body: Block
-    ): ConstructorDeclaration = js.native
-    def createConstructor(decorators: js.Array[Decorator], modifiers: Unit, parameters: js.Array[ParameterDeclaration]): ConstructorDeclaration = js.native
-    def createConstructor(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      body: Block
-    ): ConstructorDeclaration = js.native
-    def createConstructor(decorators: Unit, modifiers: js.Array[Modifier], parameters: js.Array[ParameterDeclaration]): ConstructorDeclaration = js.native
-    def createConstructor(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      parameters: js.Array[ParameterDeclaration],
-      body: Block
-    ): ConstructorDeclaration = js.native
-    def createConstructor(decorators: Unit, modifiers: Unit, parameters: js.Array[ParameterDeclaration]): ConstructorDeclaration = js.native
-    def createConstructor(decorators: Unit, modifiers: Unit, parameters: js.Array[ParameterDeclaration], body: Block): ConstructorDeclaration = js.native
-    /** @deprecated Use `factory.createConstructorDeclaration` or the factory supplied by your transformation context instead. */
-    def createConstructor(modifiers: js.Array[Modifier], parameters: js.Array[ParameterDeclaration]): ConstructorDeclaration = js.native
-    def createConstructor(modifiers: js.Array[Modifier], parameters: js.Array[ParameterDeclaration], body: Block): ConstructorDeclaration = js.native
-    def createConstructor(modifiers: Unit, parameters: js.Array[ParameterDeclaration]): ConstructorDeclaration = js.native
-    def createConstructor(modifiers: Unit, parameters: js.Array[ParameterDeclaration], body: Block): ConstructorDeclaration = js.native
-    
-    /** @deprecated Use `factory.createConstructorTypeNode` or the factory supplied by your transformation context instead. */
-    def createConstructorTypeNode(
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode
-    ): ConstructorTypeNode = js.native
-    def createConstructorTypeNode(typeParameters: Unit, parameters: js.Array[ParameterDeclaration], `type`: TypeNode): ConstructorTypeNode = js.native
-    
-    /** @deprecated Use `factory.createContinueStatement` or the factory supplied by your transformation context instead. */
-    def createContinue(): ContinueStatement = js.native
-    def createContinue(label: String): ContinueStatement = js.native
-    def createContinue(label: Identifier): ContinueStatement = js.native
-    
-    /** @deprecated Use `factory.createDebuggerStatement` or the factory supplied by your transformation context instead. */
-    def createDebuggerStatement(): DebuggerStatement = js.native
-    
-    /** @deprecated Use `factory.createDecorator` or the factory supplied by your transformation context instead. */
-    def createDecorator(expression: Expression): Decorator = js.native
-    
-    /** @deprecated Use `factory.createDefaultClause` or the factory supplied by your transformation context instead. */
-    def createDefaultClause(statements: js.Array[Statement]): DefaultClause = js.native
-    
-    /** @deprecated Use `factory.createDeleteExpression` or the factory supplied by your transformation context instead. */
-    def createDelete(expression: Expression): DeleteExpression = js.native
-    
-    /** @deprecated Use `factory.createDoStatement` or the factory supplied by your transformation context instead. */
-    def createDo(statement: Statement, expression: Expression): DoStatement = js.native
     
     def createDocumentRegistry(): DocumentRegistry = js.native
     def createDocumentRegistry(useCaseSensitiveFileNames: Boolean): DocumentRegistry = js.native
     def createDocumentRegistry(useCaseSensitiveFileNames: Boolean, currentDirectory: String): DocumentRegistry = js.native
     def createDocumentRegistry(useCaseSensitiveFileNames: Unit, currentDirectory: String): DocumentRegistry = js.native
-    
-    /** @deprecated Use `factory.createElementAccessExpression` or the factory supplied by your transformation context instead. */
-    def createElementAccess(expression: Expression, index: Double): ElementAccessExpression = js.native
-    def createElementAccess(expression: Expression, index: Expression): ElementAccessExpression = js.native
-    
-    def createElementAccessChain(expression: Expression, questionDotToken: Unit, index: Double): ElementAccessChain = js.native
-    def createElementAccessChain(expression: Expression, questionDotToken: Unit, index: Expression): ElementAccessChain = js.native
-    /** @deprecated Use `factory.createElementAccessChain` or the factory supplied by your transformation context instead. */
-    def createElementAccessChain(expression: Expression, questionDotToken: QuestionDotToken, index: Double): ElementAccessChain = js.native
-    def createElementAccessChain(expression: Expression, questionDotToken: QuestionDotToken, index: Expression): ElementAccessChain = js.native
     
     /**
       * Create the builder that can handle the changes in program and iterate through changed files
@@ -1725,923 +397,12 @@ object anon {
       projectReferences: js.UndefOr[js.Array[ProjectReference]]
     ): EmitAndSemanticDiagnosticsBuilderProgram = js.native
     
-    /** @deprecated Use `factory.createEmptyStatement` or the factory supplied by your transformation context instead. */
-    def createEmptyStatement(): EmptyStatement = js.native
-    
-    /** @deprecated Use `factory.createEnumDeclaration` or the factory supplied by your transformation context instead. */
-    def createEnumDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: String,
-      members: js.Array[EnumMember]
-    ): EnumDeclaration = js.native
-    def createEnumDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      members: js.Array[EnumMember]
-    ): EnumDeclaration = js.native
-    def createEnumDeclaration(decorators: js.Array[Decorator], modifiers: Unit, name: String, members: js.Array[EnumMember]): EnumDeclaration = js.native
-    def createEnumDeclaration(decorators: js.Array[Decorator], modifiers: Unit, name: Identifier, members: js.Array[EnumMember]): EnumDeclaration = js.native
-    def createEnumDeclaration(decorators: Unit, modifiers: js.Array[Modifier], name: String, members: js.Array[EnumMember]): EnumDeclaration = js.native
-    def createEnumDeclaration(decorators: Unit, modifiers: js.Array[Modifier], name: Identifier, members: js.Array[EnumMember]): EnumDeclaration = js.native
-    def createEnumDeclaration(decorators: Unit, modifiers: Unit, name: String, members: js.Array[EnumMember]): EnumDeclaration = js.native
-    def createEnumDeclaration(decorators: Unit, modifiers: Unit, name: Identifier, members: js.Array[EnumMember]): EnumDeclaration = js.native
-    /** @deprecated Use `factory.createEnumDeclaration` or the factory supplied by your transformation context instead. */
-    def createEnumDeclaration(modifiers: js.Array[Modifier], name: String, members: js.Array[EnumMember]): EnumDeclaration = js.native
-    def createEnumDeclaration(modifiers: js.Array[Modifier], name: Identifier, members: js.Array[EnumMember]): EnumDeclaration = js.native
-    def createEnumDeclaration(modifiers: Unit, name: String, members: js.Array[EnumMember]): EnumDeclaration = js.native
-    def createEnumDeclaration(modifiers: Unit, name: Identifier, members: js.Array[EnumMember]): EnumDeclaration = js.native
-    
-    /** @deprecated Use `factory.createEnumMember` or the factory supplied by your transformation context instead. */
-    def createEnumMember(name: String): EnumMember = js.native
-    def createEnumMember(name: String, initializer: Expression): EnumMember = js.native
-    def createEnumMember(name: PropertyName): EnumMember = js.native
-    def createEnumMember(name: PropertyName, initializer: Expression): EnumMember = js.native
-    
-    /** @deprecated Use `factory.createExportAssignment` or the factory supplied by your transformation context instead. */
-    def createExportAssignment(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      isExportEquals: Boolean,
-      expression: Expression
-    ): ExportAssignment = js.native
-    def createExportAssignment(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      isExportEquals: Unit,
-      expression: Expression
-    ): ExportAssignment = js.native
-    def createExportAssignment(decorators: js.Array[Decorator], modifiers: Unit, isExportEquals: Boolean, expression: Expression): ExportAssignment = js.native
-    def createExportAssignment(decorators: js.Array[Decorator], modifiers: Unit, isExportEquals: Unit, expression: Expression): ExportAssignment = js.native
-    def createExportAssignment(decorators: Unit, modifiers: js.Array[Modifier], isExportEquals: Boolean, expression: Expression): ExportAssignment = js.native
-    def createExportAssignment(decorators: Unit, modifiers: js.Array[Modifier], isExportEquals: Unit, expression: Expression): ExportAssignment = js.native
-    def createExportAssignment(decorators: Unit, modifiers: Unit, isExportEquals: Boolean, expression: Expression): ExportAssignment = js.native
-    def createExportAssignment(decorators: Unit, modifiers: Unit, isExportEquals: Unit, expression: Expression): ExportAssignment = js.native
-    /** @deprecated Use `factory.createExportAssignment` or the factory supplied by your transformation context instead. */
-    def createExportAssignment(modifiers: js.Array[Modifier], isExportEquals: Boolean, expression: Expression): ExportAssignment = js.native
-    def createExportAssignment(modifiers: js.Array[Modifier], isExportEquals: Unit, expression: Expression): ExportAssignment = js.native
-    def createExportAssignment(modifiers: Unit, isExportEquals: Boolean, expression: Expression): ExportAssignment = js.native
-    def createExportAssignment(modifiers: Unit, isExportEquals: Unit, expression: Expression): ExportAssignment = js.native
-    
-    /** @deprecated Use `factory.createExportDeclaration` or the factory supplied by your transformation context instead. */
-    def createExportDeclaration(): ExportDeclaration = js.native
-    def createExportDeclaration(decorators: js.Array[Decorator]): ExportDeclaration = js.native
-    def createExportDeclaration(decorators: js.Array[Decorator], modifiers: js.Array[Modifier]): ExportDeclaration = js.native
-    def createExportDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      exportClause: Unit,
-      moduleSpecifier: Unit,
-      isTypeOnly: Any
-    ): ExportDeclaration = js.native
-    def createExportDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      exportClause: Unit,
-      moduleSpecifier: Expression
-    ): ExportDeclaration = js.native
-    def createExportDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      exportClause: Unit,
-      moduleSpecifier: Expression,
-      isTypeOnly: Any
-    ): ExportDeclaration = js.native
-    def createExportDeclaration(decorators: js.Array[Decorator], modifiers: js.Array[Modifier], exportClause: NamedExportBindings): ExportDeclaration = js.native
-    def createExportDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      exportClause: NamedExportBindings,
-      moduleSpecifier: Unit,
-      isTypeOnly: Any
-    ): ExportDeclaration = js.native
-    def createExportDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      exportClause: NamedExportBindings,
-      moduleSpecifier: Expression
-    ): ExportDeclaration = js.native
-    def createExportDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      exportClause: NamedExportBindings,
-      moduleSpecifier: Expression,
-      isTypeOnly: Any
-    ): ExportDeclaration = js.native
-    def createExportDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      exportClause: Unit,
-      moduleSpecifier: Unit,
-      isTypeOnly: Any
-    ): ExportDeclaration = js.native
-    def createExportDeclaration(decorators: js.Array[Decorator], modifiers: Unit, exportClause: Unit, moduleSpecifier: Expression): ExportDeclaration = js.native
-    def createExportDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      exportClause: Unit,
-      moduleSpecifier: Expression,
-      isTypeOnly: Any
-    ): ExportDeclaration = js.native
-    def createExportDeclaration(decorators: js.Array[Decorator], modifiers: Unit, exportClause: NamedExportBindings): ExportDeclaration = js.native
-    def createExportDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      exportClause: NamedExportBindings,
-      moduleSpecifier: Unit,
-      isTypeOnly: Any
-    ): ExportDeclaration = js.native
-    def createExportDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      exportClause: NamedExportBindings,
-      moduleSpecifier: Expression
-    ): ExportDeclaration = js.native
-    def createExportDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      exportClause: NamedExportBindings,
-      moduleSpecifier: Expression,
-      isTypeOnly: Any
-    ): ExportDeclaration = js.native
-    def createExportDeclaration(decorators: Unit, modifiers: js.Array[Modifier]): ExportDeclaration = js.native
-    def createExportDeclaration(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      exportClause: Unit,
-      moduleSpecifier: Unit,
-      isTypeOnly: Any
-    ): ExportDeclaration = js.native
-    def createExportDeclaration(decorators: Unit, modifiers: js.Array[Modifier], exportClause: Unit, moduleSpecifier: Expression): ExportDeclaration = js.native
-    def createExportDeclaration(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      exportClause: Unit,
-      moduleSpecifier: Expression,
-      isTypeOnly: Any
-    ): ExportDeclaration = js.native
-    def createExportDeclaration(decorators: Unit, modifiers: js.Array[Modifier], exportClause: NamedExportBindings): ExportDeclaration = js.native
-    def createExportDeclaration(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      exportClause: NamedExportBindings,
-      moduleSpecifier: Unit,
-      isTypeOnly: Any
-    ): ExportDeclaration = js.native
-    def createExportDeclaration(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      exportClause: NamedExportBindings,
-      moduleSpecifier: Expression
-    ): ExportDeclaration = js.native
-    def createExportDeclaration(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      exportClause: NamedExportBindings,
-      moduleSpecifier: Expression,
-      isTypeOnly: Any
-    ): ExportDeclaration = js.native
-    def createExportDeclaration(decorators: Unit, modifiers: Unit, exportClause: Unit, moduleSpecifier: Unit, isTypeOnly: Any): ExportDeclaration = js.native
-    def createExportDeclaration(decorators: Unit, modifiers: Unit, exportClause: Unit, moduleSpecifier: Expression): ExportDeclaration = js.native
-    def createExportDeclaration(
-      decorators: Unit,
-      modifiers: Unit,
-      exportClause: Unit,
-      moduleSpecifier: Expression,
-      isTypeOnly: Any
-    ): ExportDeclaration = js.native
-    def createExportDeclaration(decorators: Unit, modifiers: Unit, exportClause: NamedExportBindings): ExportDeclaration = js.native
-    def createExportDeclaration(
-      decorators: Unit,
-      modifiers: Unit,
-      exportClause: NamedExportBindings,
-      moduleSpecifier: Unit,
-      isTypeOnly: Any
-    ): ExportDeclaration = js.native
-    def createExportDeclaration(decorators: Unit, modifiers: Unit, exportClause: NamedExportBindings, moduleSpecifier: Expression): ExportDeclaration = js.native
-    def createExportDeclaration(
-      decorators: Unit,
-      modifiers: Unit,
-      exportClause: NamedExportBindings,
-      moduleSpecifier: Expression,
-      isTypeOnly: Any
-    ): ExportDeclaration = js.native
-    
-    /** @deprecated Use `factory.createExportDefault` or the factory supplied by your transformation context instead. */
-    def createExportDefault(expression: Expression): ExportAssignment = js.native
-    
-    /** @deprecated Use `factory.createExportSpecifier` or the factory supplied by your transformation context instead. */
-    def createExportSpecifier(isTypeOnly: Boolean, propertyName: String, name: String): ExportSpecifier = js.native
-    def createExportSpecifier(isTypeOnly: Boolean, propertyName: String, name: Identifier): ExportSpecifier = js.native
-    def createExportSpecifier(isTypeOnly: Boolean, propertyName: Unit, name: String): ExportSpecifier = js.native
-    def createExportSpecifier(isTypeOnly: Boolean, propertyName: Unit, name: Identifier): ExportSpecifier = js.native
-    def createExportSpecifier(isTypeOnly: Boolean, propertyName: Identifier, name: String): ExportSpecifier = js.native
-    def createExportSpecifier(isTypeOnly: Boolean, propertyName: Identifier, name: Identifier): ExportSpecifier = js.native
-    
-    /** @deprecated Use `factory.createExpressionStatement` or the factory supplied by your transformation context instead. */
-    def createExpressionStatement(expression: Expression): ExpressionStatement = js.native
-    
-    /** @deprecated Use `factory.createExpressionWithTypeArguments` or the factory supplied by your transformation context instead. */
-    def createExpressionWithTypeArguments(typeArguments: js.Array[TypeNode], expression: Expression): ExpressionWithTypeArguments = js.native
-    def createExpressionWithTypeArguments(typeArguments: Unit, expression: Expression): ExpressionWithTypeArguments = js.native
-    
-    /** @deprecated Use `factory.createExternalModuleExport` or the factory supplied by your transformation context instead. */
-    def createExternalModuleExport(exportName: Identifier): ExportDeclaration = js.native
-    
-    /** @deprecated Use `factory.createExternalModuleReference` or the factory supplied by your transformation context instead. */
-    def createExternalModuleReference(expression: Expression): ExternalModuleReference = js.native
-    
-    /** @deprecated Use `factory.createFalse` or the factory supplied by your transformation context instead. */
-    def createFalse(): FalseLiteral = js.native
-    
-    /** @deprecated Use `factory.createUniqueName(text, GeneratedIdentifierFlags.Optimistic | GeneratedIdentifierFlags.FileLevel)` or the factory supplied by your transformation context instead. */
-    def createFileLevelUniqueName(text: String): Identifier = js.native
-    
-    def createFor(initializer: Unit, condition: Unit, incrementor: Unit, statement: Statement): ForStatement = js.native
-    def createFor(initializer: Unit, condition: Unit, incrementor: Expression, statement: Statement): ForStatement = js.native
-    def createFor(initializer: Unit, condition: Expression, incrementor: Unit, statement: Statement): ForStatement = js.native
-    def createFor(initializer: Unit, condition: Expression, incrementor: Expression, statement: Statement): ForStatement = js.native
-    def createFor(initializer: ForInitializer, condition: Unit, incrementor: Unit, statement: Statement): ForStatement = js.native
-    def createFor(initializer: ForInitializer, condition: Unit, incrementor: Expression, statement: Statement): ForStatement = js.native
-    def createFor(initializer: ForInitializer, condition: Expression, incrementor: Unit, statement: Statement): ForStatement = js.native
-    /** @deprecated Use `factory.createForStatement` or the factory supplied by your transformation context instead. */
-    def createFor(initializer: ForInitializer, condition: Expression, incrementor: Expression, statement: Statement): ForStatement = js.native
-    
-    /** @deprecated Use `factory.createForInStatement` or the factory supplied by your transformation context instead. */
-    def createForIn(initializer: ForInitializer, expression: Expression, statement: Statement): ForInStatement = js.native
-    
-    def createForOf(awaitModifier: Unit, initializer: ForInitializer, expression: Expression, statement: Statement): ForOfStatement = js.native
-    /** @deprecated Use `factory.createForOfStatement` or the factory supplied by your transformation context instead. */
-    def createForOf(
-      awaitModifier: AwaitKeyword,
-      initializer: ForInitializer,
-      expression: Expression,
-      statement: Statement
-    ): ForOfStatement = js.native
-    
-    /** @deprecated Use `factory.createFunctionDeclaration` or the factory supplied by your transformation context instead. */
-    def createFunctionDeclaration(
-      decorators: js.UndefOr[js.Array[Decorator]],
-      modifiers: js.UndefOr[js.Array[Modifier]],
-      asteriskToken: js.UndefOr[AsteriskToken],
-      name: js.UndefOr[String | Identifier],
-      typeParameters: js.UndefOr[js.Array[TypeParameterDeclaration]],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: js.UndefOr[TypeNode],
-      body: js.UndefOr[Block]
-    ): FunctionDeclaration = js.native
-    /** @deprecated Use `factory.createFunctionDeclaration` or the factory supplied by your transformation context instead. */
-    def createFunctionDeclaration(
-      modifiers: js.UndefOr[js.Array[ModifierLike]],
-      asteriskToken: js.UndefOr[AsteriskToken],
-      name: js.UndefOr[String | Identifier],
-      typeParameters: js.UndefOr[js.Array[TypeParameterDeclaration]],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: js.UndefOr[TypeNode],
-      body: js.UndefOr[Block]
-    ): FunctionDeclaration = js.native
-    
-    /** @deprecated Use `factory.createFunctionExpression` or the factory supplied by your transformation context instead. */
-    def createFunctionExpression(
-      modifiers: js.UndefOr[js.Array[Modifier]],
-      asteriskToken: js.UndefOr[AsteriskToken],
-      name: js.UndefOr[String | Identifier],
-      typeParameters: js.UndefOr[js.Array[TypeParameterDeclaration]],
-      parameters: js.UndefOr[js.Array[ParameterDeclaration]],
-      `type`: js.UndefOr[TypeNode],
-      body: Block
-    ): FunctionExpression = js.native
-    
-    /** @deprecated Use `factory.createFunctionTypeNode` or the factory supplied by your transformation context instead. */
-    def createFunctionTypeNode(
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode
-    ): FunctionTypeNode = js.native
-    def createFunctionTypeNode(typeParameters: Unit, parameters: js.Array[ParameterDeclaration], `type`: TypeNode): FunctionTypeNode = js.native
-    
-    /** @deprecated Use `factory.createGetAccessorDeclaration` or the factory supplied by your transformation context instead. */
-    def createGetAccessor(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: String,
-      parameters: js.Array[ParameterDeclaration]
-    ): GetAccessorDeclaration = js.native
-    def createGetAccessor(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: String,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      body: Block
-    ): GetAccessorDeclaration = js.native
-    def createGetAccessor(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: String,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode
-    ): GetAccessorDeclaration = js.native
-    def createGetAccessor(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: String,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      body: Block
-    ): GetAccessorDeclaration = js.native
-    def createGetAccessor(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration]
-    ): GetAccessorDeclaration = js.native
-    def createGetAccessor(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      body: Block
-    ): GetAccessorDeclaration = js.native
-    def createGetAccessor(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode
-    ): GetAccessorDeclaration = js.native
-    def createGetAccessor(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      body: Block
-    ): GetAccessorDeclaration = js.native
-    def createGetAccessor(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: String,
-      parameters: js.Array[ParameterDeclaration]
-    ): GetAccessorDeclaration = js.native
-    def createGetAccessor(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: String,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      body: Block
-    ): GetAccessorDeclaration = js.native
-    def createGetAccessor(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: String,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode
-    ): GetAccessorDeclaration = js.native
-    def createGetAccessor(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: String,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      body: Block
-    ): GetAccessorDeclaration = js.native
-    def createGetAccessor(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration]
-    ): GetAccessorDeclaration = js.native
-    def createGetAccessor(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      body: Block
-    ): GetAccessorDeclaration = js.native
-    def createGetAccessor(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode
-    ): GetAccessorDeclaration = js.native
-    def createGetAccessor(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      body: Block
-    ): GetAccessorDeclaration = js.native
-    def createGetAccessor(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: String,
-      parameters: js.Array[ParameterDeclaration]
-    ): GetAccessorDeclaration = js.native
-    def createGetAccessor(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: String,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      body: Block
-    ): GetAccessorDeclaration = js.native
-    def createGetAccessor(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: String,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode
-    ): GetAccessorDeclaration = js.native
-    def createGetAccessor(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: String,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      body: Block
-    ): GetAccessorDeclaration = js.native
-    def createGetAccessor(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration]
-    ): GetAccessorDeclaration = js.native
-    def createGetAccessor(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      body: Block
-    ): GetAccessorDeclaration = js.native
-    def createGetAccessor(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode
-    ): GetAccessorDeclaration = js.native
-    def createGetAccessor(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      body: Block
-    ): GetAccessorDeclaration = js.native
-    def createGetAccessor(decorators: Unit, modifiers: Unit, name: String, parameters: js.Array[ParameterDeclaration]): GetAccessorDeclaration = js.native
-    def createGetAccessor(
-      decorators: Unit,
-      modifiers: Unit,
-      name: String,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      body: Block
-    ): GetAccessorDeclaration = js.native
-    def createGetAccessor(
-      decorators: Unit,
-      modifiers: Unit,
-      name: String,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode
-    ): GetAccessorDeclaration = js.native
-    def createGetAccessor(
-      decorators: Unit,
-      modifiers: Unit,
-      name: String,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      body: Block
-    ): GetAccessorDeclaration = js.native
-    def createGetAccessor(decorators: Unit, modifiers: Unit, name: PropertyName, parameters: js.Array[ParameterDeclaration]): GetAccessorDeclaration = js.native
-    def createGetAccessor(
-      decorators: Unit,
-      modifiers: Unit,
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      body: Block
-    ): GetAccessorDeclaration = js.native
-    def createGetAccessor(
-      decorators: Unit,
-      modifiers: Unit,
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode
-    ): GetAccessorDeclaration = js.native
-    def createGetAccessor(
-      decorators: Unit,
-      modifiers: Unit,
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      body: Block
-    ): GetAccessorDeclaration = js.native
-    /** @deprecated Use `factory.createGetAccessorDeclaration` or the factory supplied by your transformation context instead. */
-    def createGetAccessor(modifiers: js.Array[ModifierLike], name: String, parameters: js.Array[ParameterDeclaration]): GetAccessorDeclaration = js.native
-    def createGetAccessor(
-      modifiers: js.Array[ModifierLike],
-      name: String,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      body: Block
-    ): GetAccessorDeclaration = js.native
-    def createGetAccessor(
-      modifiers: js.Array[ModifierLike],
-      name: String,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode
-    ): GetAccessorDeclaration = js.native
-    def createGetAccessor(
-      modifiers: js.Array[ModifierLike],
-      name: String,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      body: Block
-    ): GetAccessorDeclaration = js.native
-    def createGetAccessor(modifiers: js.Array[ModifierLike], name: PropertyName, parameters: js.Array[ParameterDeclaration]): GetAccessorDeclaration = js.native
-    def createGetAccessor(
-      modifiers: js.Array[ModifierLike],
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      body: Block
-    ): GetAccessorDeclaration = js.native
-    def createGetAccessor(
-      modifiers: js.Array[ModifierLike],
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode
-    ): GetAccessorDeclaration = js.native
-    def createGetAccessor(
-      modifiers: js.Array[ModifierLike],
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      body: Block
-    ): GetAccessorDeclaration = js.native
-    def createGetAccessor(modifiers: Unit, name: String, parameters: js.Array[ParameterDeclaration]): GetAccessorDeclaration = js.native
-    def createGetAccessor(
-      modifiers: Unit,
-      name: String,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      body: Block
-    ): GetAccessorDeclaration = js.native
-    def createGetAccessor(modifiers: Unit, name: String, parameters: js.Array[ParameterDeclaration], `type`: TypeNode): GetAccessorDeclaration = js.native
-    def createGetAccessor(
-      modifiers: Unit,
-      name: String,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      body: Block
-    ): GetAccessorDeclaration = js.native
-    def createGetAccessor(modifiers: Unit, name: PropertyName, parameters: js.Array[ParameterDeclaration]): GetAccessorDeclaration = js.native
-    def createGetAccessor(
-      modifiers: Unit,
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      body: Block
-    ): GetAccessorDeclaration = js.native
-    def createGetAccessor(modifiers: Unit, name: PropertyName, parameters: js.Array[ParameterDeclaration], `type`: TypeNode): GetAccessorDeclaration = js.native
-    def createGetAccessor(
-      modifiers: Unit,
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      body: Block
-    ): GetAccessorDeclaration = js.native
-    
-    /** @deprecated Use `factory.createHeritageClause` or the factory supplied by your transformation context instead. */
-    def createHeritageClause(token: ExtendsKeyword, types: js.Array[ExpressionWithTypeArguments]): HeritageClause = js.native
-    def createHeritageClause(token: ImplementsKeyword, types: js.Array[ExpressionWithTypeArguments]): HeritageClause = js.native
-    
-    /** @deprecated Use `factory.createIdentifier` or the factory supplied by your transformation context instead. */
-    def createIdentifier(text: String): Identifier = js.native
-    
-    /** @deprecated Use `factory.createIfStatement` or the factory supplied by your transformation context instead. */
-    def createIf(expression: Expression, thenStatement: Statement): IfStatement = js.native
-    def createIf(expression: Expression, thenStatement: Statement, elseStatement: Statement): IfStatement = js.native
-    
-    /** @deprecated Use `factory.createImmediatelyInvokedArrowFunction` or the factory supplied by your transformation context instead. */
-    def createImmediatelyInvokedArrowFunction(statements: js.Array[Statement]): CallExpression = js.native
-    /** @deprecated Use `factory.createImmediatelyInvokedArrowFunction` or the factory supplied by your transformation context instead. */
-    def createImmediatelyInvokedArrowFunction(statements: js.Array[Statement], param: ParameterDeclaration, paramValue: Expression): CallExpression = js.native
-    
-    /** @deprecated Use `factory.createImmediatelyInvokedFunctionExpression` or the factory supplied by your transformation context instead. */
-    def createImmediatelyInvokedFunctionExpression(statements: js.Array[Statement]): CallExpression = js.native
-    /** @deprecated Use `factory.createImmediatelyInvokedFunctionExpression` or the factory supplied by your transformation context instead. */
-    def createImmediatelyInvokedFunctionExpression(statements: js.Array[Statement], param: ParameterDeclaration, paramValue: Expression): CallExpression = js.native
-    
-    /** @deprecated Use `factory.createImportClause` or the factory supplied by your transformation context instead. */
-    def createImportClause(): ImportClause = js.native
-    def createImportClause(name: Unit, namedBindings: Unit, isTypeOnly: Any): ImportClause = js.native
-    def createImportClause(name: Unit, namedBindings: NamedImportBindings): ImportClause = js.native
-    def createImportClause(name: Unit, namedBindings: NamedImportBindings, isTypeOnly: Any): ImportClause = js.native
-    def createImportClause(name: Identifier): ImportClause = js.native
-    def createImportClause(name: Identifier, namedBindings: Unit, isTypeOnly: Any): ImportClause = js.native
-    def createImportClause(name: Identifier, namedBindings: NamedImportBindings): ImportClause = js.native
-    def createImportClause(name: Identifier, namedBindings: NamedImportBindings, isTypeOnly: Any): ImportClause = js.native
-    
-    def createImportDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      importClause: Unit,
-      moduleSpecifier: Expression
-    ): ImportDeclaration = js.native
-    def createImportDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      importClause: Unit,
-      moduleSpecifier: Expression,
-      assertClause: AssertClause
-    ): ImportDeclaration = js.native
-    /** @deprecated Use `factory.createImportDeclaration` or the factory supplied by your transformation context instead. */
-    def createImportDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      importClause: ImportClause,
-      moduleSpecifier: Expression
-    ): ImportDeclaration = js.native
-    def createImportDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      importClause: ImportClause,
-      moduleSpecifier: Expression,
-      assertClause: AssertClause
-    ): ImportDeclaration = js.native
-    def createImportDeclaration(decorators: js.Array[Decorator], modifiers: Unit, importClause: Unit, moduleSpecifier: Expression): ImportDeclaration = js.native
-    def createImportDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      importClause: Unit,
-      moduleSpecifier: Expression,
-      assertClause: AssertClause
-    ): ImportDeclaration = js.native
-    def createImportDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      importClause: ImportClause,
-      moduleSpecifier: Expression
-    ): ImportDeclaration = js.native
-    def createImportDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      importClause: ImportClause,
-      moduleSpecifier: Expression,
-      assertClause: AssertClause
-    ): ImportDeclaration = js.native
-    def createImportDeclaration(decorators: Unit, modifiers: js.Array[Modifier], importClause: Unit, moduleSpecifier: Expression): ImportDeclaration = js.native
-    def createImportDeclaration(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      importClause: Unit,
-      moduleSpecifier: Expression,
-      assertClause: AssertClause
-    ): ImportDeclaration = js.native
-    def createImportDeclaration(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      importClause: ImportClause,
-      moduleSpecifier: Expression
-    ): ImportDeclaration = js.native
-    def createImportDeclaration(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      importClause: ImportClause,
-      moduleSpecifier: Expression,
-      assertClause: AssertClause
-    ): ImportDeclaration = js.native
-    def createImportDeclaration(decorators: Unit, modifiers: Unit, importClause: Unit, moduleSpecifier: Expression): ImportDeclaration = js.native
-    def createImportDeclaration(
-      decorators: Unit,
-      modifiers: Unit,
-      importClause: Unit,
-      moduleSpecifier: Expression,
-      assertClause: AssertClause
-    ): ImportDeclaration = js.native
-    def createImportDeclaration(decorators: Unit, modifiers: Unit, importClause: ImportClause, moduleSpecifier: Expression): ImportDeclaration = js.native
-    def createImportDeclaration(
-      decorators: Unit,
-      modifiers: Unit,
-      importClause: ImportClause,
-      moduleSpecifier: Expression,
-      assertClause: AssertClause
-    ): ImportDeclaration = js.native
-    def createImportDeclaration(modifiers: js.Array[Modifier], importClause: Unit, moduleSpecifier: Expression): ImportDeclaration = js.native
-    def createImportDeclaration(
-      modifiers: js.Array[Modifier],
-      importClause: Unit,
-      moduleSpecifier: Expression,
-      assertClause: AssertClause
-    ): ImportDeclaration = js.native
-    /** @deprecated Use `factory.createImportDeclaration` or the factory supplied by your transformation context instead. */
-    def createImportDeclaration(modifiers: js.Array[Modifier], importClause: ImportClause, moduleSpecifier: Expression): ImportDeclaration = js.native
-    def createImportDeclaration(
-      modifiers: js.Array[Modifier],
-      importClause: ImportClause,
-      moduleSpecifier: Expression,
-      assertClause: AssertClause
-    ): ImportDeclaration = js.native
-    def createImportDeclaration(modifiers: Unit, importClause: Unit, moduleSpecifier: Expression): ImportDeclaration = js.native
-    def createImportDeclaration(modifiers: Unit, importClause: Unit, moduleSpecifier: Expression, assertClause: AssertClause): ImportDeclaration = js.native
-    def createImportDeclaration(modifiers: Unit, importClause: ImportClause, moduleSpecifier: Expression): ImportDeclaration = js.native
-    def createImportDeclaration(
-      modifiers: Unit,
-      importClause: ImportClause,
-      moduleSpecifier: Expression,
-      assertClause: AssertClause
-    ): ImportDeclaration = js.native
-    
-    /** @deprecated Use `factory.createImportEqualsDeclaration` or the factory supplied by your transformation context instead. */
-    def createImportEqualsDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      isTypeOnly: Boolean,
-      name: String,
-      moduleReference: ModuleReference
-    ): ImportEqualsDeclaration = js.native
-    def createImportEqualsDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      isTypeOnly: Boolean,
-      name: Identifier,
-      moduleReference: ModuleReference
-    ): ImportEqualsDeclaration = js.native
-    def createImportEqualsDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      isTypeOnly: Boolean,
-      name: String,
-      moduleReference: ModuleReference
-    ): ImportEqualsDeclaration = js.native
-    def createImportEqualsDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      isTypeOnly: Boolean,
-      name: Identifier,
-      moduleReference: ModuleReference
-    ): ImportEqualsDeclaration = js.native
-    def createImportEqualsDeclaration(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      isTypeOnly: Boolean,
-      name: String,
-      moduleReference: ModuleReference
-    ): ImportEqualsDeclaration = js.native
-    def createImportEqualsDeclaration(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      isTypeOnly: Boolean,
-      name: Identifier,
-      moduleReference: ModuleReference
-    ): ImportEqualsDeclaration = js.native
-    def createImportEqualsDeclaration(
-      decorators: Unit,
-      modifiers: Unit,
-      isTypeOnly: Boolean,
-      name: String,
-      moduleReference: ModuleReference
-    ): ImportEqualsDeclaration = js.native
-    def createImportEqualsDeclaration(
-      decorators: Unit,
-      modifiers: Unit,
-      isTypeOnly: Boolean,
-      name: Identifier,
-      moduleReference: ModuleReference
-    ): ImportEqualsDeclaration = js.native
-    /** @deprecated Use `factory.createImportEqualsDeclaration` or the factory supplied by your transformation context instead. */
-    def createImportEqualsDeclaration(modifiers: js.Array[Modifier], isTypeOnly: Boolean, name: String, moduleReference: ModuleReference): ImportEqualsDeclaration = js.native
-    def createImportEqualsDeclaration(
-      modifiers: js.Array[Modifier],
-      isTypeOnly: Boolean,
-      name: Identifier,
-      moduleReference: ModuleReference
-    ): ImportEqualsDeclaration = js.native
-    def createImportEqualsDeclaration(modifiers: Unit, isTypeOnly: Boolean, name: String, moduleReference: ModuleReference): ImportEqualsDeclaration = js.native
-    def createImportEqualsDeclaration(modifiers: Unit, isTypeOnly: Boolean, name: Identifier, moduleReference: ModuleReference): ImportEqualsDeclaration = js.native
-    
-    def createImportSpecifier(isTypeOnly: Boolean, propertyName: Unit, name: Identifier): ImportSpecifier = js.native
-    /** @deprecated Use `factory.createImportSpecifier` or the factory supplied by your transformation context instead. */
-    def createImportSpecifier(isTypeOnly: Boolean, propertyName: Identifier, name: Identifier): ImportSpecifier = js.native
-    
-    /** @deprecated Use `factory.createImportTypeNode` or the factory supplied by your transformation context instead. */
-    def createImportTypeNode(argument: TypeNode): ImportTypeNode = js.native
-    def createImportTypeNode(argument: TypeNode, assertions: Unit, qualifier: Unit, typeArguments: js.Array[TypeNode]): ImportTypeNode = js.native
-    def createImportTypeNode(
-      argument: TypeNode,
-      assertions: Unit,
-      qualifier: Unit,
-      typeArguments: js.Array[TypeNode],
-      isTypeOf: Boolean
-    ): ImportTypeNode = js.native
-    def createImportTypeNode(argument: TypeNode, assertions: Unit, qualifier: Unit, typeArguments: Unit, isTypeOf: Boolean): ImportTypeNode = js.native
-    def createImportTypeNode(argument: TypeNode, assertions: Unit, qualifier: EntityName): ImportTypeNode = js.native
-    def createImportTypeNode(argument: TypeNode, assertions: Unit, qualifier: EntityName, typeArguments: js.Array[TypeNode]): ImportTypeNode = js.native
-    def createImportTypeNode(
-      argument: TypeNode,
-      assertions: Unit,
-      qualifier: EntityName,
-      typeArguments: js.Array[TypeNode],
-      isTypeOf: Boolean
-    ): ImportTypeNode = js.native
-    def createImportTypeNode(
-      argument: TypeNode,
-      assertions: Unit,
-      qualifier: EntityName,
-      typeArguments: Unit,
-      isTypeOf: Boolean
-    ): ImportTypeNode = js.native
-    def createImportTypeNode(argument: TypeNode, assertions: ImportTypeAssertionContainer): ImportTypeNode = js.native
-    def createImportTypeNode(
-      argument: TypeNode,
-      assertions: ImportTypeAssertionContainer,
-      qualifier: Unit,
-      typeArguments: js.Array[TypeNode]
-    ): ImportTypeNode = js.native
-    def createImportTypeNode(
-      argument: TypeNode,
-      assertions: ImportTypeAssertionContainer,
-      qualifier: Unit,
-      typeArguments: js.Array[TypeNode],
-      isTypeOf: Boolean
-    ): ImportTypeNode = js.native
-    def createImportTypeNode(
-      argument: TypeNode,
-      assertions: ImportTypeAssertionContainer,
-      qualifier: Unit,
-      typeArguments: Unit,
-      isTypeOf: Boolean
-    ): ImportTypeNode = js.native
-    def createImportTypeNode(argument: TypeNode, assertions: ImportTypeAssertionContainer, qualifier: EntityName): ImportTypeNode = js.native
-    def createImportTypeNode(
-      argument: TypeNode,
-      assertions: ImportTypeAssertionContainer,
-      qualifier: EntityName,
-      typeArguments: js.Array[TypeNode]
-    ): ImportTypeNode = js.native
-    def createImportTypeNode(
-      argument: TypeNode,
-      assertions: ImportTypeAssertionContainer,
-      qualifier: EntityName,
-      typeArguments: js.Array[TypeNode],
-      isTypeOf: Boolean
-    ): ImportTypeNode = js.native
-    def createImportTypeNode(
-      argument: TypeNode,
-      assertions: ImportTypeAssertionContainer,
-      qualifier: EntityName,
-      typeArguments: Unit,
-      isTypeOf: Boolean
-    ): ImportTypeNode = js.native
-    def createImportTypeNode(argument: TypeNode, qualifier: Unit, typeArguments: js.Array[TypeNode]): ImportTypeNode = js.native
-    def createImportTypeNode(argument: TypeNode, qualifier: Unit, typeArguments: js.Array[TypeNode], isTypeOf: Boolean): ImportTypeNode = js.native
-    def createImportTypeNode(argument: TypeNode, qualifier: Unit, typeArguments: Unit, isTypeOf: Boolean): ImportTypeNode = js.native
-    def createImportTypeNode(argument: TypeNode, qualifier: EntityName): ImportTypeNode = js.native
-    def createImportTypeNode(argument: TypeNode, qualifier: EntityName, typeArguments: js.Array[TypeNode]): ImportTypeNode = js.native
-    def createImportTypeNode(argument: TypeNode, qualifier: EntityName, typeArguments: js.Array[TypeNode], isTypeOf: Boolean): ImportTypeNode = js.native
-    def createImportTypeNode(argument: TypeNode, qualifier: EntityName, typeArguments: Unit, isTypeOf: Boolean): ImportTypeNode = js.native
-    
     def createIncrementalCompilerHost(options: CompilerOptions): CompilerHost = js.native
     def createIncrementalCompilerHost(options: CompilerOptions, system: System): CompilerHost = js.native
     
     def createIncrementalProgram[T /* <: BuilderProgram */](param0: IncrementalProgramOptions[T]): T = js.native
     
-    /** @deprecated Use `factory.createIndexSignature` or the factory supplied by your transformation context instead. */
-    def createIndexSignature(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode
-    ): IndexSignatureDeclaration = js.native
-    def createIndexSignature(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode
-    ): IndexSignatureDeclaration = js.native
-    def createIndexSignature(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode
-    ): IndexSignatureDeclaration = js.native
-    def createIndexSignature(decorators: Unit, modifiers: Unit, parameters: js.Array[ParameterDeclaration], `type`: TypeNode): IndexSignatureDeclaration = js.native
-    
-    /** @deprecated Use `factory.createIndexedAccessTypeNode` or the factory supplied by your transformation context instead. */
-    def createIndexedAccessTypeNode(objectType: TypeNode, indexType: TypeNode): IndexedAccessTypeNode = js.native
-    
-    /** @deprecated Use `factory.createInferTypeNode` or the factory supplied by your transformation context instead. */
-    def createInferTypeNode(typeParameter: TypeParameterDeclaration): InferTypeNode = js.native
-    
+    /** @deprecated */
     def createInputFiles(javascriptText: String, declarationText: String): InputFiles = js.native
     def createInputFiles(javascriptText: String, declarationText: String, javascriptMapPath: String): InputFiles = js.native
     def createInputFiles(
@@ -2748,6 +509,7 @@ object anon {
       declarationMapPath: Unit,
       declarationMapText: String
     ): InputFiles = js.native
+    /** @deprecated */
     def createInputFiles(
       readFileText: js.Function1[/* path */ String, js.UndefOr[String]],
       javascriptPath: String,
@@ -2806,1007 +568,6 @@ object anon {
       declarationMapPath: Unit,
       buildInfoPath: String
     ): InputFiles = js.native
-    
-    /** @deprecated Use `factory.createInterfaceDeclaration` or the factory supplied by your transformation context instead. */
-    def createInterfaceDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: String,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = js.native
-    def createInterfaceDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: String,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = js.native
-    def createInterfaceDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: String,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = js.native
-    def createInterfaceDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: String,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = js.native
-    def createInterfaceDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = js.native
-    def createInterfaceDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = js.native
-    def createInterfaceDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = js.native
-    def createInterfaceDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = js.native
-    def createInterfaceDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: String,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = js.native
-    def createInterfaceDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: String,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = js.native
-    def createInterfaceDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: String,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = js.native
-    def createInterfaceDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: String,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = js.native
-    def createInterfaceDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = js.native
-    def createInterfaceDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = js.native
-    def createInterfaceDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = js.native
-    def createInterfaceDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = js.native
-    def createInterfaceDeclaration(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: String,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = js.native
-    def createInterfaceDeclaration(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: String,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = js.native
-    def createInterfaceDeclaration(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: String,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = js.native
-    def createInterfaceDeclaration(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: String,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = js.native
-    def createInterfaceDeclaration(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = js.native
-    def createInterfaceDeclaration(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = js.native
-    def createInterfaceDeclaration(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = js.native
-    def createInterfaceDeclaration(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = js.native
-    def createInterfaceDeclaration(
-      decorators: Unit,
-      modifiers: Unit,
-      name: String,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = js.native
-    def createInterfaceDeclaration(
-      decorators: Unit,
-      modifiers: Unit,
-      name: String,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = js.native
-    def createInterfaceDeclaration(
-      decorators: Unit,
-      modifiers: Unit,
-      name: String,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = js.native
-    def createInterfaceDeclaration(
-      decorators: Unit,
-      modifiers: Unit,
-      name: String,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = js.native
-    def createInterfaceDeclaration(
-      decorators: Unit,
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = js.native
-    def createInterfaceDeclaration(
-      decorators: Unit,
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = js.native
-    def createInterfaceDeclaration(
-      decorators: Unit,
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = js.native
-    def createInterfaceDeclaration(
-      decorators: Unit,
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = js.native
-    /** @deprecated Use `factory.createInterfaceDeclaration` or the factory supplied by your transformation context instead. */
-    def createInterfaceDeclaration(
-      modifiers: js.Array[Modifier],
-      name: String,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = js.native
-    def createInterfaceDeclaration(
-      modifiers: js.Array[Modifier],
-      name: String,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = js.native
-    def createInterfaceDeclaration(
-      modifiers: js.Array[Modifier],
-      name: String,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = js.native
-    def createInterfaceDeclaration(
-      modifiers: js.Array[Modifier],
-      name: String,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = js.native
-    def createInterfaceDeclaration(
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = js.native
-    def createInterfaceDeclaration(
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = js.native
-    def createInterfaceDeclaration(
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = js.native
-    def createInterfaceDeclaration(
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = js.native
-    def createInterfaceDeclaration(
-      modifiers: Unit,
-      name: String,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = js.native
-    def createInterfaceDeclaration(
-      modifiers: Unit,
-      name: String,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = js.native
-    def createInterfaceDeclaration(
-      modifiers: Unit,
-      name: String,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = js.native
-    def createInterfaceDeclaration(
-      modifiers: Unit,
-      name: String,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = js.native
-    def createInterfaceDeclaration(
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = js.native
-    def createInterfaceDeclaration(
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = js.native
-    def createInterfaceDeclaration(
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = js.native
-    def createInterfaceDeclaration(
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = js.native
-    
-    /** @deprecated Use `factory.createIntersectionTypeNode` or the factory supplied by your transformation context instead. */
-    def createIntersectionTypeNode(types: js.Array[TypeNode]): IntersectionTypeNode = js.native
-    
-    def createJSDocAugmentsTag(tagName: Unit, className: ExpressionWithTypeArgumen): JSDocAugmentsTag = js.native
-    def createJSDocAugmentsTag(tagName: Unit, className: ExpressionWithTypeArgumen, comment: String): JSDocAugmentsTag = js.native
-    def createJSDocAugmentsTag(tagName: Unit, className: ExpressionWithTypeArgumen, comment: NodeArray[JSDocComment]): JSDocAugmentsTag = js.native
-    /** @deprecated Use `factory.createJSDocAugmentsTag` or the factory supplied by your transformation context instead. */
-    def createJSDocAugmentsTag(tagName: Identifier, className: ExpressionWithTypeArgumen): JSDocAugmentsTag = js.native
-    def createJSDocAugmentsTag(tagName: Identifier, className: ExpressionWithTypeArgumen, comment: String): JSDocAugmentsTag = js.native
-    def createJSDocAugmentsTag(tagName: Identifier, className: ExpressionWithTypeArgumen, comment: NodeArray[JSDocComment]): JSDocAugmentsTag = js.native
-    
-    /** @deprecated Use `factory.createJSDocAuthorTag` or the factory supplied by your transformation context instead. */
-    def createJSDocAuthorTag(): JSDocAuthorTag = js.native
-    def createJSDocAuthorTag(tagName: Unit, comment: String): JSDocAuthorTag = js.native
-    def createJSDocAuthorTag(tagName: Unit, comment: NodeArray[JSDocComment]): JSDocAuthorTag = js.native
-    def createJSDocAuthorTag(tagName: Identifier): JSDocAuthorTag = js.native
-    def createJSDocAuthorTag(tagName: Identifier, comment: String): JSDocAuthorTag = js.native
-    def createJSDocAuthorTag(tagName: Identifier, comment: NodeArray[JSDocComment]): JSDocAuthorTag = js.native
-    
-    def createJSDocCallbackTag(tagName: Unit, typeExpression: JSDocSignature): JSDocCallbackTag = js.native
-    def createJSDocCallbackTag(tagName: Unit, typeExpression: JSDocSignature, fullName: Unit, comment: String): JSDocCallbackTag = js.native
-    def createJSDocCallbackTag(tagName: Unit, typeExpression: JSDocSignature, fullName: Unit, comment: NodeArray[JSDocComment]): JSDocCallbackTag = js.native
-    def createJSDocCallbackTag(tagName: Unit, typeExpression: JSDocSignature, fullName: Identifier): JSDocCallbackTag = js.native
-    def createJSDocCallbackTag(tagName: Unit, typeExpression: JSDocSignature, fullName: Identifier, comment: String): JSDocCallbackTag = js.native
-    def createJSDocCallbackTag(
-      tagName: Unit,
-      typeExpression: JSDocSignature,
-      fullName: Identifier,
-      comment: NodeArray[JSDocComment]
-    ): JSDocCallbackTag = js.native
-    def createJSDocCallbackTag(tagName: Unit, typeExpression: JSDocSignature, fullName: JSDocNamespaceDeclaration): JSDocCallbackTag = js.native
-    def createJSDocCallbackTag(
-      tagName: Unit,
-      typeExpression: JSDocSignature,
-      fullName: JSDocNamespaceDeclaration,
-      comment: String
-    ): JSDocCallbackTag = js.native
-    def createJSDocCallbackTag(
-      tagName: Unit,
-      typeExpression: JSDocSignature,
-      fullName: JSDocNamespaceDeclaration,
-      comment: NodeArray[JSDocComment]
-    ): JSDocCallbackTag = js.native
-    /** @deprecated Use `factory.createJSDocCallbackTag` or the factory supplied by your transformation context instead. */
-    def createJSDocCallbackTag(tagName: Identifier, typeExpression: JSDocSignature): JSDocCallbackTag = js.native
-    def createJSDocCallbackTag(tagName: Identifier, typeExpression: JSDocSignature, fullName: Unit, comment: String): JSDocCallbackTag = js.native
-    def createJSDocCallbackTag(
-      tagName: Identifier,
-      typeExpression: JSDocSignature,
-      fullName: Unit,
-      comment: NodeArray[JSDocComment]
-    ): JSDocCallbackTag = js.native
-    def createJSDocCallbackTag(tagName: Identifier, typeExpression: JSDocSignature, fullName: Identifier): JSDocCallbackTag = js.native
-    def createJSDocCallbackTag(tagName: Identifier, typeExpression: JSDocSignature, fullName: Identifier, comment: String): JSDocCallbackTag = js.native
-    def createJSDocCallbackTag(
-      tagName: Identifier,
-      typeExpression: JSDocSignature,
-      fullName: Identifier,
-      comment: NodeArray[JSDocComment]
-    ): JSDocCallbackTag = js.native
-    def createJSDocCallbackTag(tagName: Identifier, typeExpression: JSDocSignature, fullName: JSDocNamespaceDeclaration): JSDocCallbackTag = js.native
-    def createJSDocCallbackTag(
-      tagName: Identifier,
-      typeExpression: JSDocSignature,
-      fullName: JSDocNamespaceDeclaration,
-      comment: String
-    ): JSDocCallbackTag = js.native
-    def createJSDocCallbackTag(
-      tagName: Identifier,
-      typeExpression: JSDocSignature,
-      fullName: JSDocNamespaceDeclaration,
-      comment: NodeArray[JSDocComment]
-    ): JSDocCallbackTag = js.native
-    
-    /** @deprecated Use `factory.createJSDocClassTag` or the factory supplied by your transformation context instead. */
-    def createJSDocClassTag(): JSDocClassTag = js.native
-    def createJSDocClassTag(tagName: Unit, comment: String): JSDocClassTag = js.native
-    def createJSDocClassTag(tagName: Unit, comment: NodeArray[JSDocComment]): JSDocClassTag = js.native
-    def createJSDocClassTag(tagName: Identifier): JSDocClassTag = js.native
-    def createJSDocClassTag(tagName: Identifier, comment: String): JSDocClassTag = js.native
-    def createJSDocClassTag(tagName: Identifier, comment: NodeArray[JSDocComment]): JSDocClassTag = js.native
-    
-    /** @deprecated Use `factory.createJSDocComment` or the factory supplied by your transformation context instead. */
-    def createJSDocComment(): JSDoc = js.native
-    def createJSDocComment(comment: String): JSDoc = js.native
-    def createJSDocComment(comment: String, tags: js.Array[JSDocTag]): JSDoc = js.native
-    def createJSDocComment(comment: Unit, tags: js.Array[JSDocTag]): JSDoc = js.native
-    def createJSDocComment(comment: NodeArray[JSDocComment]): JSDoc = js.native
-    def createJSDocComment(comment: NodeArray[JSDocComment], tags: js.Array[JSDocTag]): JSDoc = js.native
-    
-    def createJSDocEnumTag(tagName: Unit, typeExpression: JSDocTypeExpression): JSDocEnumTag = js.native
-    def createJSDocEnumTag(tagName: Unit, typeExpression: JSDocTypeExpression, comment: String): JSDocEnumTag = js.native
-    def createJSDocEnumTag(tagName: Unit, typeExpression: JSDocTypeExpression, comment: NodeArray[JSDocComment]): JSDocEnumTag = js.native
-    /** @deprecated Use `factory.createJSDocEnumTag` or the factory supplied by your transformation context instead. */
-    def createJSDocEnumTag(tagName: Identifier, typeExpression: JSDocTypeExpression): JSDocEnumTag = js.native
-    def createJSDocEnumTag(tagName: Identifier, typeExpression: JSDocTypeExpression, comment: String): JSDocEnumTag = js.native
-    def createJSDocEnumTag(tagName: Identifier, typeExpression: JSDocTypeExpression, comment: NodeArray[JSDocComment]): JSDocEnumTag = js.native
-    
-    def createJSDocImplementsTag(tagName: Unit, className: ExpressionWithTypeArgumen): JSDocImplementsTag = js.native
-    def createJSDocImplementsTag(tagName: Unit, className: ExpressionWithTypeArgumen, comment: String): JSDocImplementsTag = js.native
-    def createJSDocImplementsTag(tagName: Unit, className: ExpressionWithTypeArgumen, comment: NodeArray[JSDocComment]): JSDocImplementsTag = js.native
-    /** @deprecated Use `factory.createJSDocImplementsTag` or the factory supplied by your transformation context instead. */
-    def createJSDocImplementsTag(tagName: Identifier, className: ExpressionWithTypeArgumen): JSDocImplementsTag = js.native
-    def createJSDocImplementsTag(tagName: Identifier, className: ExpressionWithTypeArgumen, comment: String): JSDocImplementsTag = js.native
-    def createJSDocImplementsTag(tagName: Identifier, className: ExpressionWithTypeArgumen, comment: NodeArray[JSDocComment]): JSDocImplementsTag = js.native
-    
-    /** @deprecated Use `factory.createJSDocParameterTag` or the factory supplied by your transformation context instead. */
-    def createJSDocParamTag(name: EntityName, isBracketed: Boolean): JSDocParameterTag = js.native
-    def createJSDocParamTag(name: EntityName, isBracketed: Boolean, typeExpression: Unit, comment: String): JSDocParameterTag = js.native
-    def createJSDocParamTag(name: EntityName, isBracketed: Boolean, typeExpression: JSDocTypeExpression): JSDocParameterTag = js.native
-    def createJSDocParamTag(name: EntityName, isBracketed: Boolean, typeExpression: JSDocTypeExpression, comment: String): JSDocParameterTag = js.native
-    
-    def createJSDocParameterTag(tagName: Unit, name: EntityName, isBracketed: Boolean): JSDocParameterTag = js.native
-    def createJSDocParameterTag(tagName: Unit, name: EntityName, isBracketed: Boolean, typeExpression: Unit, isNameFirst: Boolean): JSDocParameterTag = js.native
-    def createJSDocParameterTag(
-      tagName: Unit,
-      name: EntityName,
-      isBracketed: Boolean,
-      typeExpression: Unit,
-      isNameFirst: Boolean,
-      comment: String
-    ): JSDocParameterTag = js.native
-    def createJSDocParameterTag(
-      tagName: Unit,
-      name: EntityName,
-      isBracketed: Boolean,
-      typeExpression: Unit,
-      isNameFirst: Boolean,
-      comment: NodeArray[JSDocComment]
-    ): JSDocParameterTag = js.native
-    def createJSDocParameterTag(
-      tagName: Unit,
-      name: EntityName,
-      isBracketed: Boolean,
-      typeExpression: Unit,
-      isNameFirst: Unit,
-      comment: String
-    ): JSDocParameterTag = js.native
-    def createJSDocParameterTag(
-      tagName: Unit,
-      name: EntityName,
-      isBracketed: Boolean,
-      typeExpression: Unit,
-      isNameFirst: Unit,
-      comment: NodeArray[JSDocComment]
-    ): JSDocParameterTag = js.native
-    def createJSDocParameterTag(tagName: Unit, name: EntityName, isBracketed: Boolean, typeExpression: JSDocTypeExpression): JSDocParameterTag = js.native
-    def createJSDocParameterTag(
-      tagName: Unit,
-      name: EntityName,
-      isBracketed: Boolean,
-      typeExpression: JSDocTypeExpression,
-      isNameFirst: Boolean
-    ): JSDocParameterTag = js.native
-    def createJSDocParameterTag(
-      tagName: Unit,
-      name: EntityName,
-      isBracketed: Boolean,
-      typeExpression: JSDocTypeExpression,
-      isNameFirst: Boolean,
-      comment: String
-    ): JSDocParameterTag = js.native
-    def createJSDocParameterTag(
-      tagName: Unit,
-      name: EntityName,
-      isBracketed: Boolean,
-      typeExpression: JSDocTypeExpression,
-      isNameFirst: Boolean,
-      comment: NodeArray[JSDocComment]
-    ): JSDocParameterTag = js.native
-    def createJSDocParameterTag(
-      tagName: Unit,
-      name: EntityName,
-      isBracketed: Boolean,
-      typeExpression: JSDocTypeExpression,
-      isNameFirst: Unit,
-      comment: String
-    ): JSDocParameterTag = js.native
-    def createJSDocParameterTag(
-      tagName: Unit,
-      name: EntityName,
-      isBracketed: Boolean,
-      typeExpression: JSDocTypeExpression,
-      isNameFirst: Unit,
-      comment: NodeArray[JSDocComment]
-    ): JSDocParameterTag = js.native
-    /** @deprecated Use `factory.createJSDocParameterTag` or the factory supplied by your transformation context instead. */
-    def createJSDocParameterTag(tagName: Identifier, name: EntityName, isBracketed: Boolean): JSDocParameterTag = js.native
-    def createJSDocParameterTag(
-      tagName: Identifier,
-      name: EntityName,
-      isBracketed: Boolean,
-      typeExpression: Unit,
-      isNameFirst: Boolean
-    ): JSDocParameterTag = js.native
-    def createJSDocParameterTag(
-      tagName: Identifier,
-      name: EntityName,
-      isBracketed: Boolean,
-      typeExpression: Unit,
-      isNameFirst: Boolean,
-      comment: String
-    ): JSDocParameterTag = js.native
-    def createJSDocParameterTag(
-      tagName: Identifier,
-      name: EntityName,
-      isBracketed: Boolean,
-      typeExpression: Unit,
-      isNameFirst: Boolean,
-      comment: NodeArray[JSDocComment]
-    ): JSDocParameterTag = js.native
-    def createJSDocParameterTag(
-      tagName: Identifier,
-      name: EntityName,
-      isBracketed: Boolean,
-      typeExpression: Unit,
-      isNameFirst: Unit,
-      comment: String
-    ): JSDocParameterTag = js.native
-    def createJSDocParameterTag(
-      tagName: Identifier,
-      name: EntityName,
-      isBracketed: Boolean,
-      typeExpression: Unit,
-      isNameFirst: Unit,
-      comment: NodeArray[JSDocComment]
-    ): JSDocParameterTag = js.native
-    def createJSDocParameterTag(tagName: Identifier, name: EntityName, isBracketed: Boolean, typeExpression: JSDocTypeExpression): JSDocParameterTag = js.native
-    def createJSDocParameterTag(
-      tagName: Identifier,
-      name: EntityName,
-      isBracketed: Boolean,
-      typeExpression: JSDocTypeExpression,
-      isNameFirst: Boolean
-    ): JSDocParameterTag = js.native
-    def createJSDocParameterTag(
-      tagName: Identifier,
-      name: EntityName,
-      isBracketed: Boolean,
-      typeExpression: JSDocTypeExpression,
-      isNameFirst: Boolean,
-      comment: String
-    ): JSDocParameterTag = js.native
-    def createJSDocParameterTag(
-      tagName: Identifier,
-      name: EntityName,
-      isBracketed: Boolean,
-      typeExpression: JSDocTypeExpression,
-      isNameFirst: Boolean,
-      comment: NodeArray[JSDocComment]
-    ): JSDocParameterTag = js.native
-    def createJSDocParameterTag(
-      tagName: Identifier,
-      name: EntityName,
-      isBracketed: Boolean,
-      typeExpression: JSDocTypeExpression,
-      isNameFirst: Unit,
-      comment: String
-    ): JSDocParameterTag = js.native
-    def createJSDocParameterTag(
-      tagName: Identifier,
-      name: EntityName,
-      isBracketed: Boolean,
-      typeExpression: JSDocTypeExpression,
-      isNameFirst: Unit,
-      comment: NodeArray[JSDocComment]
-    ): JSDocParameterTag = js.native
-    
-    /** @deprecated Use `factory.createJSDocPrivateTag` or the factory supplied by your transformation context instead. */
-    def createJSDocPrivateTag(): JSDocPrivateTag = js.native
-    def createJSDocPrivateTag(tagName: Unit, comment: String): JSDocPrivateTag = js.native
-    def createJSDocPrivateTag(tagName: Unit, comment: NodeArray[JSDocComment]): JSDocPrivateTag = js.native
-    def createJSDocPrivateTag(tagName: Identifier): JSDocPrivateTag = js.native
-    def createJSDocPrivateTag(tagName: Identifier, comment: String): JSDocPrivateTag = js.native
-    def createJSDocPrivateTag(tagName: Identifier, comment: NodeArray[JSDocComment]): JSDocPrivateTag = js.native
-    
-    def createJSDocPropertyTag(tagName: Unit, name: EntityName, isBracketed: Boolean): JSDocPropertyTag = js.native
-    def createJSDocPropertyTag(tagName: Unit, name: EntityName, isBracketed: Boolean, typeExpression: Unit, isNameFirst: Boolean): JSDocPropertyTag = js.native
-    def createJSDocPropertyTag(
-      tagName: Unit,
-      name: EntityName,
-      isBracketed: Boolean,
-      typeExpression: Unit,
-      isNameFirst: Boolean,
-      comment: String
-    ): JSDocPropertyTag = js.native
-    def createJSDocPropertyTag(
-      tagName: Unit,
-      name: EntityName,
-      isBracketed: Boolean,
-      typeExpression: Unit,
-      isNameFirst: Boolean,
-      comment: NodeArray[JSDocComment]
-    ): JSDocPropertyTag = js.native
-    def createJSDocPropertyTag(
-      tagName: Unit,
-      name: EntityName,
-      isBracketed: Boolean,
-      typeExpression: Unit,
-      isNameFirst: Unit,
-      comment: String
-    ): JSDocPropertyTag = js.native
-    def createJSDocPropertyTag(
-      tagName: Unit,
-      name: EntityName,
-      isBracketed: Boolean,
-      typeExpression: Unit,
-      isNameFirst: Unit,
-      comment: NodeArray[JSDocComment]
-    ): JSDocPropertyTag = js.native
-    def createJSDocPropertyTag(tagName: Unit, name: EntityName, isBracketed: Boolean, typeExpression: JSDocTypeExpression): JSDocPropertyTag = js.native
-    def createJSDocPropertyTag(
-      tagName: Unit,
-      name: EntityName,
-      isBracketed: Boolean,
-      typeExpression: JSDocTypeExpression,
-      isNameFirst: Boolean
-    ): JSDocPropertyTag = js.native
-    def createJSDocPropertyTag(
-      tagName: Unit,
-      name: EntityName,
-      isBracketed: Boolean,
-      typeExpression: JSDocTypeExpression,
-      isNameFirst: Boolean,
-      comment: String
-    ): JSDocPropertyTag = js.native
-    def createJSDocPropertyTag(
-      tagName: Unit,
-      name: EntityName,
-      isBracketed: Boolean,
-      typeExpression: JSDocTypeExpression,
-      isNameFirst: Boolean,
-      comment: NodeArray[JSDocComment]
-    ): JSDocPropertyTag = js.native
-    def createJSDocPropertyTag(
-      tagName: Unit,
-      name: EntityName,
-      isBracketed: Boolean,
-      typeExpression: JSDocTypeExpression,
-      isNameFirst: Unit,
-      comment: String
-    ): JSDocPropertyTag = js.native
-    def createJSDocPropertyTag(
-      tagName: Unit,
-      name: EntityName,
-      isBracketed: Boolean,
-      typeExpression: JSDocTypeExpression,
-      isNameFirst: Unit,
-      comment: NodeArray[JSDocComment]
-    ): JSDocPropertyTag = js.native
-    /** @deprecated Use `factory.createJSDocPropertyTag` or the factory supplied by your transformation context instead. */
-    def createJSDocPropertyTag(tagName: Identifier, name: EntityName, isBracketed: Boolean): JSDocPropertyTag = js.native
-    def createJSDocPropertyTag(
-      tagName: Identifier,
-      name: EntityName,
-      isBracketed: Boolean,
-      typeExpression: Unit,
-      isNameFirst: Boolean
-    ): JSDocPropertyTag = js.native
-    def createJSDocPropertyTag(
-      tagName: Identifier,
-      name: EntityName,
-      isBracketed: Boolean,
-      typeExpression: Unit,
-      isNameFirst: Boolean,
-      comment: String
-    ): JSDocPropertyTag = js.native
-    def createJSDocPropertyTag(
-      tagName: Identifier,
-      name: EntityName,
-      isBracketed: Boolean,
-      typeExpression: Unit,
-      isNameFirst: Boolean,
-      comment: NodeArray[JSDocComment]
-    ): JSDocPropertyTag = js.native
-    def createJSDocPropertyTag(
-      tagName: Identifier,
-      name: EntityName,
-      isBracketed: Boolean,
-      typeExpression: Unit,
-      isNameFirst: Unit,
-      comment: String
-    ): JSDocPropertyTag = js.native
-    def createJSDocPropertyTag(
-      tagName: Identifier,
-      name: EntityName,
-      isBracketed: Boolean,
-      typeExpression: Unit,
-      isNameFirst: Unit,
-      comment: NodeArray[JSDocComment]
-    ): JSDocPropertyTag = js.native
-    def createJSDocPropertyTag(tagName: Identifier, name: EntityName, isBracketed: Boolean, typeExpression: JSDocTypeExpression): JSDocPropertyTag = js.native
-    def createJSDocPropertyTag(
-      tagName: Identifier,
-      name: EntityName,
-      isBracketed: Boolean,
-      typeExpression: JSDocTypeExpression,
-      isNameFirst: Boolean
-    ): JSDocPropertyTag = js.native
-    def createJSDocPropertyTag(
-      tagName: Identifier,
-      name: EntityName,
-      isBracketed: Boolean,
-      typeExpression: JSDocTypeExpression,
-      isNameFirst: Boolean,
-      comment: String
-    ): JSDocPropertyTag = js.native
-    def createJSDocPropertyTag(
-      tagName: Identifier,
-      name: EntityName,
-      isBracketed: Boolean,
-      typeExpression: JSDocTypeExpression,
-      isNameFirst: Boolean,
-      comment: NodeArray[JSDocComment]
-    ): JSDocPropertyTag = js.native
-    def createJSDocPropertyTag(
-      tagName: Identifier,
-      name: EntityName,
-      isBracketed: Boolean,
-      typeExpression: JSDocTypeExpression,
-      isNameFirst: Unit,
-      comment: String
-    ): JSDocPropertyTag = js.native
-    def createJSDocPropertyTag(
-      tagName: Identifier,
-      name: EntityName,
-      isBracketed: Boolean,
-      typeExpression: JSDocTypeExpression,
-      isNameFirst: Unit,
-      comment: NodeArray[JSDocComment]
-    ): JSDocPropertyTag = js.native
-    
-    /** @deprecated Use `factory.createJSDocProtectedTag` or the factory supplied by your transformation context instead. */
-    def createJSDocProtectedTag(): JSDocProtectedTag = js.native
-    def createJSDocProtectedTag(tagName: Unit, comment: String): JSDocProtectedTag = js.native
-    def createJSDocProtectedTag(tagName: Unit, comment: NodeArray[JSDocComment]): JSDocProtectedTag = js.native
-    def createJSDocProtectedTag(tagName: Identifier): JSDocProtectedTag = js.native
-    def createJSDocProtectedTag(tagName: Identifier, comment: String): JSDocProtectedTag = js.native
-    def createJSDocProtectedTag(tagName: Identifier, comment: NodeArray[JSDocComment]): JSDocProtectedTag = js.native
-    
-    /** @deprecated Use `factory.createJSDocPublicTag` or the factory supplied by your transformation context instead. */
-    def createJSDocPublicTag(): JSDocPublicTag = js.native
-    def createJSDocPublicTag(tagName: Unit, comment: String): JSDocPublicTag = js.native
-    def createJSDocPublicTag(tagName: Unit, comment: NodeArray[JSDocComment]): JSDocPublicTag = js.native
-    def createJSDocPublicTag(tagName: Identifier): JSDocPublicTag = js.native
-    def createJSDocPublicTag(tagName: Identifier, comment: String): JSDocPublicTag = js.native
-    def createJSDocPublicTag(tagName: Identifier, comment: NodeArray[JSDocComment]): JSDocPublicTag = js.native
-    
-    /** @deprecated Use `factory.createJSDocReadonlyTag` or the factory supplied by your transformation context instead. */
-    def createJSDocReadonlyTag(): JSDocReadonlyTag = js.native
-    def createJSDocReadonlyTag(tagName: Unit, comment: String): JSDocReadonlyTag = js.native
-    def createJSDocReadonlyTag(tagName: Unit, comment: NodeArray[JSDocComment]): JSDocReadonlyTag = js.native
-    def createJSDocReadonlyTag(tagName: Identifier): JSDocReadonlyTag = js.native
-    def createJSDocReadonlyTag(tagName: Identifier, comment: String): JSDocReadonlyTag = js.native
-    def createJSDocReadonlyTag(tagName: Identifier, comment: NodeArray[JSDocComment]): JSDocReadonlyTag = js.native
-    
-    /** @deprecated Use `factory.createJSDocReturnTag` or the factory supplied by your transformation context instead. */
-    def createJSDocReturnTag(): JSDocReturnTag = js.native
-    def createJSDocReturnTag(tagName: Unit, typeExpression: Unit, comment: String): JSDocReturnTag = js.native
-    def createJSDocReturnTag(tagName: Unit, typeExpression: Unit, comment: NodeArray[JSDocComment]): JSDocReturnTag = js.native
-    def createJSDocReturnTag(tagName: Unit, typeExpression: JSDocTypeExpression): JSDocReturnTag = js.native
-    def createJSDocReturnTag(tagName: Unit, typeExpression: JSDocTypeExpression, comment: String): JSDocReturnTag = js.native
-    def createJSDocReturnTag(tagName: Unit, typeExpression: JSDocTypeExpression, comment: NodeArray[JSDocComment]): JSDocReturnTag = js.native
-    def createJSDocReturnTag(tagName: Identifier): JSDocReturnTag = js.native
-    def createJSDocReturnTag(tagName: Identifier, typeExpression: Unit, comment: String): JSDocReturnTag = js.native
-    def createJSDocReturnTag(tagName: Identifier, typeExpression: Unit, comment: NodeArray[JSDocComment]): JSDocReturnTag = js.native
-    def createJSDocReturnTag(tagName: Identifier, typeExpression: JSDocTypeExpression): JSDocReturnTag = js.native
-    def createJSDocReturnTag(tagName: Identifier, typeExpression: JSDocTypeExpression, comment: String): JSDocReturnTag = js.native
-    def createJSDocReturnTag(tagName: Identifier, typeExpression: JSDocTypeExpression, comment: NodeArray[JSDocComment]): JSDocReturnTag = js.native
-    
-    /** @deprecated Use `factory.createJSDocSignature` or the factory supplied by your transformation context instead. */
-    def createJSDocSignature(typeParameters: js.Array[JSDocTemplateTag], parameters: js.Array[JSDocParameterTag]): JSDocSignature = js.native
-    def createJSDocSignature(
-      typeParameters: js.Array[JSDocTemplateTag],
-      parameters: js.Array[JSDocParameterTag],
-      `type`: JSDocReturnTag
-    ): JSDocSignature = js.native
-    def createJSDocSignature(typeParameters: Unit, parameters: js.Array[JSDocParameterTag]): JSDocSignature = js.native
-    def createJSDocSignature(typeParameters: Unit, parameters: js.Array[JSDocParameterTag], `type`: JSDocReturnTag): JSDocSignature = js.native
-    
-    /** @deprecated Use `factory.createJSDocUnknownTag` or the factory supplied by your transformation context instead. */
-    def createJSDocTag(tagName: Identifier): JSDocUnknownTag = js.native
-    def createJSDocTag(tagName: Identifier, comment: String): JSDocUnknownTag = js.native
-    def createJSDocTag(tagName: Identifier, comment: NodeArray[JSDocComment]): JSDocUnknownTag = js.native
-    
-    def createJSDocTemplateTag(tagName: Unit, constraint: Unit, typeParameters: js.Array[TypeParameterDeclaration]): JSDocTemplateTag = js.native
-    def createJSDocTemplateTag(
-      tagName: Unit,
-      constraint: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      comment: String
-    ): JSDocTemplateTag = js.native
-    def createJSDocTemplateTag(
-      tagName: Unit,
-      constraint: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      comment: NodeArray[JSDocComment]
-    ): JSDocTemplateTag = js.native
-    def createJSDocTemplateTag(tagName: Unit, constraint: JSDocTypeExpression, typeParameters: js.Array[TypeParameterDeclaration]): JSDocTemplateTag = js.native
-    def createJSDocTemplateTag(
-      tagName: Unit,
-      constraint: JSDocTypeExpression,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      comment: String
-    ): JSDocTemplateTag = js.native
-    def createJSDocTemplateTag(
-      tagName: Unit,
-      constraint: JSDocTypeExpression,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      comment: NodeArray[JSDocComment]
-    ): JSDocTemplateTag = js.native
-    def createJSDocTemplateTag(tagName: Identifier, constraint: Unit, typeParameters: js.Array[TypeParameterDeclaration]): JSDocTemplateTag = js.native
-    def createJSDocTemplateTag(
-      tagName: Identifier,
-      constraint: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      comment: String
-    ): JSDocTemplateTag = js.native
-    def createJSDocTemplateTag(
-      tagName: Identifier,
-      constraint: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      comment: NodeArray[JSDocComment]
-    ): JSDocTemplateTag = js.native
-    /** @deprecated Use `factory.createJSDocTemplateTag` or the factory supplied by your transformation context instead. */
-    def createJSDocTemplateTag(
-      tagName: Identifier,
-      constraint: JSDocTypeExpression,
-      typeParameters: js.Array[TypeParameterDeclaration]
-    ): JSDocTemplateTag = js.native
-    def createJSDocTemplateTag(
-      tagName: Identifier,
-      constraint: JSDocTypeExpression,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      comment: String
-    ): JSDocTemplateTag = js.native
-    def createJSDocTemplateTag(
-      tagName: Identifier,
-      constraint: JSDocTypeExpression,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      comment: NodeArray[JSDocComment]
-    ): JSDocTemplateTag = js.native
-    
-    def createJSDocThisTag(tagName: Unit, typeExpression: JSDocTypeExpression): JSDocThisTag = js.native
-    def createJSDocThisTag(tagName: Unit, typeExpression: JSDocTypeExpression, comment: String): JSDocThisTag = js.native
-    def createJSDocThisTag(tagName: Unit, typeExpression: JSDocTypeExpression, comment: NodeArray[JSDocComment]): JSDocThisTag = js.native
-    /** @deprecated Use `factory.createJSDocThisTag` or the factory supplied by your transformation context instead. */
-    def createJSDocThisTag(tagName: Identifier, typeExpression: JSDocTypeExpression): JSDocThisTag = js.native
-    def createJSDocThisTag(tagName: Identifier, typeExpression: JSDocTypeExpression, comment: String): JSDocThisTag = js.native
-    def createJSDocThisTag(tagName: Identifier, typeExpression: JSDocTypeExpression, comment: NodeArray[JSDocComment]): JSDocThisTag = js.native
-    
-    /** @deprecated Use `factory.createJSDocTypeExpression` or the factory supplied by your transformation context instead. */
-    def createJSDocTypeExpression(`type`: TypeNode): JSDocTypeExpression = js.native
-    
-    /** @deprecated Use `factory.createJSDocTypeLiteral` or the factory supplied by your transformation context instead. */
-    def createJSDocTypeLiteral(): JSDocTypeLiteral = js.native
-    def createJSDocTypeLiteral(jsDocPropertyTags: js.Array[JSDocPropertyLikeTag]): JSDocTypeLiteral = js.native
-    def createJSDocTypeLiteral(jsDocPropertyTags: js.Array[JSDocPropertyLikeTag], isArrayType: Boolean): JSDocTypeLiteral = js.native
-    def createJSDocTypeLiteral(jsDocPropertyTags: Unit, isArrayType: Boolean): JSDocTypeLiteral = js.native
-    
-    def createJSDocTypeTag(tagName: Unit, typeExpression: JSDocTypeExpression): JSDocTypeTag = js.native
-    def createJSDocTypeTag(tagName: Unit, typeExpression: JSDocTypeExpression, comment: String): JSDocTypeTag = js.native
-    def createJSDocTypeTag(tagName: Unit, typeExpression: JSDocTypeExpression, comment: NodeArray[JSDocComment]): JSDocTypeTag = js.native
-    /** @deprecated Use `factory.createJSDocTypeTag` or the factory supplied by your transformation context instead. */
-    def createJSDocTypeTag(tagName: Identifier, typeExpression: JSDocTypeExpression): JSDocTypeTag = js.native
-    def createJSDocTypeTag(tagName: Identifier, typeExpression: JSDocTypeExpression, comment: String): JSDocTypeTag = js.native
-    def createJSDocTypeTag(tagName: Identifier, typeExpression: JSDocTypeExpression, comment: NodeArray[JSDocComment]): JSDocTypeTag = js.native
-    
-    /** @deprecated Use `factory.createJSDocTypedefTag` or the factory supplied by your transformation context instead. */
-    def createJSDocTypedefTag(
-      tagName: js.UndefOr[Identifier],
-      typeExpression: js.UndefOr[JSDocTypeLiteral | JSDocTypeExpression],
-      fullName: js.UndefOr[Identifier | JSDocNamespaceDeclaration],
-      comment: js.UndefOr[String | NodeArray[JSDocComment]]
-    ): JSDocTypedefTag = js.native
-    
-    /** @deprecated Use `factory.createJsxAttribute` or the factory supplied by your transformation context instead. */
-    def createJsxAttribute(name: Identifier): JsxAttribute = js.native
-    def createJsxAttribute(name: Identifier, initializer: JsxAttributeValue): JsxAttribute = js.native
-    
-    /** @deprecated Use `factory.createJsxAttributes` or the factory supplied by your transformation context instead. */
-    def createJsxAttributes(properties: js.Array[JsxAttributeLike]): JsxAttributes = js.native
-    
-    /** @deprecated Use `factory.createJsxClosingElement` or the factory supplied by your transformation context instead. */
-    def createJsxClosingElement(tagName: JsxTagNameExpression): JsxClosingElement = js.native
-    
-    /** @deprecated Use `factory.createJsxElement` or the factory supplied by your transformation context instead. */
-    def createJsxElement(openingElement: JsxOpeningElement, children: js.Array[JsxChild], closingElement: JsxClosingElement): JsxElement = js.native
-    
-    /** @deprecated Use `factory.createJsxExpression` or the factory supplied by your transformation context instead. */
-    def createJsxExpression(): JsxExpression = js.native
-    def createJsxExpression(dotDotDotToken: Unit, expression: Expression): JsxExpression = js.native
-    def createJsxExpression(dotDotDotToken: DotDotDotToken): JsxExpression = js.native
-    def createJsxExpression(dotDotDotToken: DotDotDotToken, expression: Expression): JsxExpression = js.native
-    
-    /** @deprecated Use `factory.createJsxFragment` or the factory supplied by your transformation context instead. */
-    def createJsxFragment(
-      openingFragment: JsxOpeningFragment,
-      children: js.Array[JsxChild],
-      closingFragment: JsxClosingFragment
-    ): JsxFragment = js.native
-    
-    /** @deprecated Use `factory.createJsxJsxClosingFragment` or the factory supplied by your transformation context instead. */
-    def createJsxJsxClosingFragment(): JsxClosingFragment = js.native
-    
-    /** @deprecated Use `factory.createJsxOpeningElement` or the factory supplied by your transformation context instead. */
-    def createJsxOpeningElement(tagName: JsxTagNameExpression, typeArguments: js.Array[TypeNode], attributes: JsxAttributes): JsxOpeningElement = js.native
-    def createJsxOpeningElement(tagName: JsxTagNameExpression, typeArguments: Unit, attributes: JsxAttributes): JsxOpeningElement = js.native
-    
-    /** @deprecated Use `factory.createJsxOpeningFragment` or the factory supplied by your transformation context instead. */
-    def createJsxOpeningFragment(): JsxOpeningFragment = js.native
-    
-    /** @deprecated Use `factory.createJsxSelfClosingElement` or the factory supplied by your transformation context instead. */
-    def createJsxSelfClosingElement(tagName: JsxTagNameExpression, typeArguments: js.Array[TypeNode], attributes: JsxAttributes): JsxSelfClosingElement = js.native
-    def createJsxSelfClosingElement(tagName: JsxTagNameExpression, typeArguments: Unit, attributes: JsxAttributes): JsxSelfClosingElement = js.native
-    
-    /** @deprecated Use `factory.createJsxSpreadAttribute` or the factory supplied by your transformation context instead. */
-    def createJsxSpreadAttribute(expression: Expression): JsxSpreadAttribute = js.native
-    
-    /** @deprecated Use `factory.createJsxText` or the factory supplied by your transformation context instead. */
-    def createJsxText(text: String): JsxText = js.native
-    def createJsxText(text: String, containsOnlyTriviaWhiteSpaces: Boolean): JsxText = js.native
-    
-    /** @deprecated Use `factory.createKeywordTypeNode` or the factory supplied by your transformation context instead. */
-    def createKeywordTypeNode[TKind /* <: KeywordTypeSyntaxKind */](kind: TKind): KeywordTypeNode[TKind] = js.native
-    
-    /** @deprecated Use `factory.createLabelStatement` or the factory supplied by your transformation context instead. */
-    def createLabel(label: String, statement: Statement): LabeledStatement = js.native
-    def createLabel(label: Identifier, statement: Statement): LabeledStatement = js.native
     
     def createLanguageService(host: LanguageServiceHost): LanguageService = js.native
     def createLanguageService(host: LanguageServiceHost, documentRegistry: Unit, syntaxOnlyOrLanguageServiceMode: Boolean): LanguageService = js.native
@@ -3858,239 +619,6 @@ object anon {
       scriptKind: ScriptKind
     ): SourceFile = js.native
     
-    /** @deprecated Use `factory.createLessThan` or the factory supplied by your transformation context instead. */
-    def createLessThan(left: Expression, right: Expression): Expression = js.native
-    
-    /** @deprecated Use `factory.createStringLiteral`, `factory.createStringLiteralFromNode`, `factory.createNumericLiteral`, `factory.createBigIntLiteral`, `factory.createTrue`, `factory.createFalse`, or the factory supplied by your transformation context instead. */
-    def createLiteral(value: String): StringLiteral = js.native
-    /** @deprecated Use `factory.createStringLiteral`, `factory.createStringLiteralFromNode`, `factory.createNumericLiteral`, `factory.createBigIntLiteral`, `factory.createTrue`, `factory.createFalse`, or the factory supplied by your transformation context instead. */
-    def createLiteral(value: Boolean): BooleanLiteral = js.native
-    /** @deprecated Use `factory.createStringLiteral`, `factory.createStringLiteralFromNode`, `factory.createNumericLiteral`, `factory.createBigIntLiteral`, `factory.createTrue`, `factory.createFalse`, or the factory supplied by your transformation context instead. */
-    def createLiteral(value: Double): NumericLiteral = js.native
-    def createLiteral(value: Identifier): StringLiteral = js.native
-    def createLiteral(value: NoSubstitutionTemplateLiteral): StringLiteral = js.native
-    def createLiteral(value: NumericLiteral): StringLiteral = js.native
-    def createLiteral(value: PseudoBigInt): NumericLiteral = js.native
-    def createLiteral(value: StringLiteral): StringLiteral = js.native
-    
-    def createLiteralTypeNode(literal: BooleanLiteral): LiteralTypeNode = js.native
-    /** @deprecated Use `factory.createLiteralTypeNode` or the factory supplied by your transformation context instead. */
-    def createLiteralTypeNode(literal: LiteralExpression): LiteralTypeNode = js.native
-    def createLiteralTypeNode(literal: NullLiteral): LiteralTypeNode = js.native
-    def createLiteralTypeNode(literal: PrefixUnaryExpression): LiteralTypeNode = js.native
-    
-    /** @deprecated Use `factory.createStringLiteral`, `factory.createStringLiteralFromNode`, `factory.createNumericLiteral`, `factory.createBigIntLiteral`, `factory.createTrue`, `factory.createFalse`, or the factory supplied by your transformation context instead. */
-    @JSName("createLiteral")
-    def createLiteral_PrimaryExpression(value: String): PrimaryExpression = js.native
-    @JSName("createLiteral")
-    def createLiteral_PrimaryExpression(value: Boolean): PrimaryExpression = js.native
-    @JSName("createLiteral")
-    def createLiteral_PrimaryExpression(value: Double): PrimaryExpression = js.native
-    @JSName("createLiteral")
-    def createLiteral_PrimaryExpression(value: PseudoBigInt): PrimaryExpression = js.native
-    
-    /** @deprecated Use `factory.createLogicalAnd` or the factory supplied by your transformation context instead. */
-    def createLogicalAnd(left: Expression, right: Expression): BinaryExpression = js.native
-    
-    /** @deprecated Use `factory.createLogicalNot` or the factory supplied by your transformation context instead. */
-    def createLogicalNot(operand: Expression): PrefixUnaryExpression = js.native
-    
-    /** @deprecated Use `factory.createLogicalOr` or the factory supplied by your transformation context instead. */
-    def createLogicalOr(left: Expression, right: Expression): BinaryExpression = js.native
-    
-    /** @deprecated Use `factory.createLoopVariable` or the factory supplied by your transformation context instead. */
-    def createLoopVariable(): Identifier = js.native
-    def createLoopVariable(reservedInNestedScopes: Boolean): Identifier = js.native
-    
-    /** @deprecated Use `factory.createMappedTypeNode` or the factory supplied by your transformation context instead. */
-    def createMappedTypeNode(
-      readonlyToken: js.UndefOr[ReadonlyKeyword | PlusToken | MinusToken],
-      typeParameter: TypeParameterDeclaration,
-      nameType: js.UndefOr[TypeNode],
-      questionToken: js.UndefOr[QuestionToken | PlusToken | MinusToken],
-      `type`: js.UndefOr[TypeNode],
-      members: js.UndefOr[NodeArray[TypeElement]]
-    ): MappedTypeNode = js.native
-    
-    /** @deprecated Use `factory.createMetaProperty` or the factory supplied by your transformation context instead. */
-    def createMetaProperty(keywordToken: ImportKeyword, name: Identifier): MetaProperty = js.native
-    def createMetaProperty(keywordToken: NewKeyword, name: Identifier): MetaProperty = js.native
-    
-    /** @deprecated Use `factory.createMethodDeclaration` or the factory supplied by your transformation context instead. */
-    def createMethod(
-      decorators: js.UndefOr[js.Array[Decorator]],
-      modifiers: js.UndefOr[js.Array[Modifier]],
-      asteriskToken: js.UndefOr[AsteriskToken],
-      name: String | PropertyName,
-      questionToken: js.UndefOr[QuestionToken],
-      typeParameters: js.UndefOr[js.Array[TypeParameterDeclaration]],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: js.UndefOr[TypeNode],
-      body: js.UndefOr[Block]
-    ): MethodDeclaration = js.native
-    /** @deprecated Use `factory.createMethodDeclaration` or the factory supplied by your transformation context instead. */
-    def createMethod(
-      modifiers: js.UndefOr[js.Array[ModifierLike]],
-      asteriskToken: js.UndefOr[AsteriskToken],
-      name: String | PropertyName,
-      questionToken: js.UndefOr[QuestionToken],
-      typeParameters: js.UndefOr[js.Array[TypeParameterDeclaration]],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: js.UndefOr[TypeNode],
-      body: js.UndefOr[Block]
-    ): MethodDeclaration = js.native
-    
-    def createMethodSignature(
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      name: String
-    ): MethodSignature = js.native
-    def createMethodSignature(
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      name: String,
-      questionToken: QuestionToken
-    ): MethodSignature = js.native
-    def createMethodSignature(
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      name: PropertyName
-    ): MethodSignature = js.native
-    def createMethodSignature(
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      name: PropertyName,
-      questionToken: QuestionToken
-    ): MethodSignature = js.native
-    /** @deprecated Use `factory.createMethodSignature` or the factory supplied by your transformation context instead. */
-    def createMethodSignature(
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      name: String
-    ): MethodSignature = js.native
-    def createMethodSignature(
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      name: String,
-      questionToken: QuestionToken
-    ): MethodSignature = js.native
-    def createMethodSignature(
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      name: PropertyName
-    ): MethodSignature = js.native
-    def createMethodSignature(
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      name: PropertyName,
-      questionToken: QuestionToken
-    ): MethodSignature = js.native
-    def createMethodSignature(typeParameters: Unit, parameters: js.Array[ParameterDeclaration], `type`: Unit, name: String): MethodSignature = js.native
-    def createMethodSignature(
-      typeParameters: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      name: String,
-      questionToken: QuestionToken
-    ): MethodSignature = js.native
-    def createMethodSignature(typeParameters: Unit, parameters: js.Array[ParameterDeclaration], `type`: Unit, name: PropertyName): MethodSignature = js.native
-    def createMethodSignature(
-      typeParameters: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      name: PropertyName,
-      questionToken: QuestionToken
-    ): MethodSignature = js.native
-    def createMethodSignature(typeParameters: Unit, parameters: js.Array[ParameterDeclaration], `type`: TypeNode, name: String): MethodSignature = js.native
-    def createMethodSignature(
-      typeParameters: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      name: String,
-      questionToken: QuestionToken
-    ): MethodSignature = js.native
-    def createMethodSignature(
-      typeParameters: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      name: PropertyName
-    ): MethodSignature = js.native
-    def createMethodSignature(
-      typeParameters: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      name: PropertyName,
-      questionToken: QuestionToken
-    ): MethodSignature = js.native
-    
-    /** @deprecated Use `factory.createModifier` or the factory supplied by your transformation context instead. */
-    def createModifier[T /* <: ModifierSyntaxKind */](kind: T): ModifierToken[T] = js.native
-    
-    /** @deprecated Use `factory.createModifiersFromModifierFlags` or the factory supplied by your transformation context instead. */
-    def createModifiersFromModifierFlags(flags: ModifierFlags): js.UndefOr[js.Array[Modifier]] = js.native
-    
-    /** @deprecated Use `factory.createModuleBlock` or the factory supplied by your transformation context instead. */
-    def createModuleBlock(statements: js.Array[Statement]): ModuleBlock = js.native
-    
-    /** @deprecated Use `factory.createModuleDeclaration` or the factory supplied by your transformation context instead. */
-    def createModuleDeclaration(decorators: js.Array[Decorator], modifiers: js.Array[Modifier], name: ModuleName): ModuleDeclaration = js.native
-    def createModuleDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: ModuleName,
-      body: Unit,
-      flags: NodeFlags
-    ): ModuleDeclaration = js.native
-    def createModuleDeclaration(decorators: js.Array[Decorator], modifiers: js.Array[Modifier], name: ModuleName, body: ModuleBody): ModuleDeclaration = js.native
-    def createModuleDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: ModuleName,
-      body: ModuleBody,
-      flags: NodeFlags
-    ): ModuleDeclaration = js.native
-    def createModuleDeclaration(decorators: js.Array[Decorator], modifiers: Unit, name: ModuleName): ModuleDeclaration = js.native
-    def createModuleDeclaration(decorators: js.Array[Decorator], modifiers: Unit, name: ModuleName, body: Unit, flags: NodeFlags): ModuleDeclaration = js.native
-    def createModuleDeclaration(decorators: js.Array[Decorator], modifiers: Unit, name: ModuleName, body: ModuleBody): ModuleDeclaration = js.native
-    def createModuleDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: ModuleName,
-      body: ModuleBody,
-      flags: NodeFlags
-    ): ModuleDeclaration = js.native
-    def createModuleDeclaration(decorators: Unit, modifiers: js.Array[Modifier], name: ModuleName): ModuleDeclaration = js.native
-    def createModuleDeclaration(decorators: Unit, modifiers: js.Array[Modifier], name: ModuleName, body: Unit, flags: NodeFlags): ModuleDeclaration = js.native
-    def createModuleDeclaration(decorators: Unit, modifiers: js.Array[Modifier], name: ModuleName, body: ModuleBody): ModuleDeclaration = js.native
-    def createModuleDeclaration(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: ModuleName,
-      body: ModuleBody,
-      flags: NodeFlags
-    ): ModuleDeclaration = js.native
-    def createModuleDeclaration(decorators: Unit, modifiers: Unit, name: ModuleName): ModuleDeclaration = js.native
-    def createModuleDeclaration(decorators: Unit, modifiers: Unit, name: ModuleName, body: Unit, flags: NodeFlags): ModuleDeclaration = js.native
-    def createModuleDeclaration(decorators: Unit, modifiers: Unit, name: ModuleName, body: ModuleBody): ModuleDeclaration = js.native
-    def createModuleDeclaration(decorators: Unit, modifiers: Unit, name: ModuleName, body: ModuleBody, flags: NodeFlags): ModuleDeclaration = js.native
-    /** @deprecated Use `factory.createModuleDeclaration` or the factory supplied by your transformation context instead. */
-    def createModuleDeclaration(modifiers: js.Array[Modifier], name: ModuleName): ModuleDeclaration = js.native
-    def createModuleDeclaration(modifiers: js.Array[Modifier], name: ModuleName, body: Unit, flags: NodeFlags): ModuleDeclaration = js.native
-    def createModuleDeclaration(modifiers: js.Array[Modifier], name: ModuleName, body: ModuleBody): ModuleDeclaration = js.native
-    def createModuleDeclaration(modifiers: js.Array[Modifier], name: ModuleName, body: ModuleBody, flags: NodeFlags): ModuleDeclaration = js.native
-    def createModuleDeclaration(modifiers: Unit, name: ModuleName): ModuleDeclaration = js.native
-    def createModuleDeclaration(modifiers: Unit, name: ModuleName, body: Unit, flags: NodeFlags): ModuleDeclaration = js.native
-    def createModuleDeclaration(modifiers: Unit, name: ModuleName, body: ModuleBody): ModuleDeclaration = js.native
-    def createModuleDeclaration(modifiers: Unit, name: ModuleName, body: ModuleBody, flags: NodeFlags): ModuleDeclaration = js.native
-    
     def createModuleResolutionCache(currentDirectory: String, getCanonicalFileName: js.Function1[/* s */ String, String]): ModuleResolutionCache = js.native
     def createModuleResolutionCache(
       currentDirectory: String,
@@ -4098,129 +626,36 @@ object anon {
       options: CompilerOptions
     ): ModuleResolutionCache = js.native
     
-    /** @deprecated Use `factory.createNamedExports` or the factory supplied by your transformation context instead. */
-    def createNamedExports(elements: js.Array[ExportSpecifier]): NamedExports = js.native
-    
-    /** @deprecated Use `factory.createNamedImports` or the factory supplied by your transformation context instead. */
-    def createNamedImports(elements: js.Array[ImportSpecifier]): NamedImports = js.native
-    
-    /** @deprecated Use `factory.createNamespaceExport` or the factory supplied by your transformation context instead. */
-    def createNamespaceExport(name: Identifier): NamespaceExport = js.native
-    
-    /** @deprecated Use `factory.createNamespaceExportDeclaration` or the factory supplied by your transformation context instead. */
-    def createNamespaceExportDeclaration(name: String): NamespaceExportDeclaration = js.native
-    def createNamespaceExportDeclaration(name: Identifier): NamespaceExportDeclaration = js.native
-    
-    /** @deprecated Use `factory.createNamespaceImport` or the factory supplied by your transformation context instead. */
-    def createNamespaceImport(name: Identifier): NamespaceImport = js.native
-    
-    /** @deprecated Use `factory.createNewExpression` or the factory supplied by your transformation context instead. */
-    def createNew(expression: Expression): NewExpression = js.native
-    def createNew(expression: Expression, typeArguments: js.Array[TypeNode]): NewExpression = js.native
-    def createNew(expression: Expression, typeArguments: js.Array[TypeNode], argumentsArray: js.Array[Expression]): NewExpression = js.native
-    def createNew(expression: Expression, typeArguments: Unit, argumentsArray: js.Array[Expression]): NewExpression = js.native
-    
-    /** @deprecated Use `factory.createNoSubstitutionTemplateLiteral` or the factory supplied by your transformation context instead. */
-    def createNoSubstitutionTemplateLiteral(text: String): NoSubstitutionTemplateLiteral = js.native
-    def createNoSubstitutionTemplateLiteral(text: String, rawText: String): NoSubstitutionTemplateLiteral = js.native
-    def createNoSubstitutionTemplateLiteral(text: Unit, rawText: String): NoSubstitutionTemplateLiteral = js.native
-    
-    /** @deprecated Use an appropriate `factory` method instead. */
-    def createNode(kind: SyntaxKind): Node = js.native
-    def createNode(kind: SyntaxKind, pos: Any): Node = js.native
-    def createNode(kind: SyntaxKind, pos: Any, end: Any): Node = js.native
-    def createNode(kind: SyntaxKind, pos: Unit, end: Any): Node = js.native
-    
-    /** @deprecated Use `factory.createNodeArray` or the factory supplied by your transformation context instead. */
-    def createNodeArray[T /* <: Node */](): NodeArray[T] = js.native
-    def createNodeArray[T /* <: Node */](elements: js.Array[T]): NodeArray[T] = js.native
-    def createNodeArray[T /* <: Node */](elements: js.Array[T], hasTrailingComma: Boolean): NodeArray[T] = js.native
-    def createNodeArray[T /* <: Node */](elements: Unit, hasTrailingComma: Boolean): NodeArray[T] = js.native
-    
-    /** @deprecated Use `factory.createNonNullChain` or the factory supplied by your transformation context instead. */
-    def createNonNullChain(expression: Expression): NonNullChain = js.native
-    
-    /** @deprecated Use `factory.createNonNullExpression` or the factory supplied by your transformation context instead. */
-    def createNonNullExpression(expression: Expression): NonNullExpression = js.native
-    
-    /** @deprecated Use `factory.createNotEmittedStatement` or the factory supplied by your transformation context instead. */
-    def createNotEmittedStatement(original: Node): NotEmittedStatement = js.native
-    
-    /** @deprecated Use `factory.createNull` or the factory supplied by your transformation context instead. */
-    def createNull(): NullLiteral = js.native
-    
-    /** @deprecated Use `factory.createNumericLiteral` or the factory supplied by your transformation context instead. */
-    def createNumericLiteral(value: String): NumericLiteral = js.native
-    def createNumericLiteral(value: String, numericLiteralFlags: TokenFlags): NumericLiteral = js.native
-    def createNumericLiteral(value: Double): NumericLiteral = js.native
-    def createNumericLiteral(value: Double, numericLiteralFlags: TokenFlags): NumericLiteral = js.native
-    
-    /** @deprecated Use `factory.createObjectBindingPattern` or the factory supplied by your transformation context instead. */
-    def createObjectBindingPattern(elements: js.Array[BindingElement]): ObjectBindingPattern = js.native
-    
-    /** @deprecated Use `factory.createObjectLiteralExpression` or the factory supplied by your transformation context instead. */
-    def createObjectLiteral(): ObjectLiteralExpression = js.native
-    def createObjectLiteral(properties: js.Array[ObjectLiteralElementLike]): ObjectLiteralExpression = js.native
-    def createObjectLiteral(properties: js.Array[ObjectLiteralElementLike], multiLine: Boolean): ObjectLiteralExpression = js.native
-    def createObjectLiteral(properties: Unit, multiLine: Boolean): ObjectLiteralExpression = js.native
-    
-    /** @deprecated Use `factory.createOmittedExpression` or the factory supplied by your transformation context instead. */
-    def createOmittedExpression(): OmittedExpression = js.native
-    
-    /** @deprecated Use `factory.createUniqueName(text, GeneratedIdentifierFlags.Optimistic)` or the factory supplied by your transformation context instead. */
-    def createOptimisticUniqueName(text: String): Identifier = js.native
-    
-    /** @deprecated Use `factory.createOptionalTypeNode` or the factory supplied by your transformation context instead. */
-    def createOptionalTypeNode(`type`: TypeNode): OptionalTypeNode = js.native
-    
-    /** @deprecated Use `factory.createParameterDeclaration` or the factory supplied by your transformation context instead. */
-    def createParameter(
-      decorators: js.UndefOr[js.Array[Decorator]],
-      modifiers: js.UndefOr[js.Array[Modifier]],
-      dotDotDotToken: js.UndefOr[DotDotDotToken],
-      name: String | BindingName,
-      questionToken: js.UndefOr[QuestionToken],
-      `type`: js.UndefOr[TypeNode],
-      initializer: js.UndefOr[Expression]
-    ): ParameterDeclaration = js.native
-    /** @deprecated Use `factory.createParameterDeclaration` or the factory supplied by your transformation context instead. */
-    def createParameter(
-      modifiers: js.UndefOr[js.Array[ModifierLike]],
-      dotDotDotToken: js.UndefOr[DotDotDotToken],
-      name: String | BindingName,
-      questionToken: js.UndefOr[QuestionToken],
-      `type`: js.UndefOr[TypeNode],
-      initializer: js.UndefOr[Expression]
-    ): ParameterDeclaration = js.native
-    
-    /** @deprecated Use `factory.createParenthesizedExpression` or the factory supplied by your transformation context instead. */
-    def createParen(expression: Expression): ParenthesizedExpression = js.native
-    
-    /** @deprecated Use `factory.createParenthesizedType` or the factory supplied by your transformation context instead. */
-    def createParenthesizedType(`type`: TypeNode): ParenthesizedTypeNode = js.native
-    
-    /** @deprecated Use `factory.createPartiallyEmittedExpression` or the factory supplied by your transformation context instead. */
-    def createPartiallyEmittedExpression(expression: Expression): PartiallyEmittedExpression = js.native
-    def createPartiallyEmittedExpression(expression: Expression, original: Node): PartiallyEmittedExpression = js.native
-    
-    /** @deprecated Use `factory.createPostfixUnaryExpression` or the factory supplied by your transformation context instead. */
-    def createPostfix(operand: Expression, operator: PostfixUnaryOperator): PostfixUnaryExpression = js.native
-    
-    /** @deprecated Use `factory.createPostfixIncrement` or the factory supplied by your transformation context instead. */
-    def createPostfixIncrement(operand: Expression): PostfixUnaryExpression = js.native
-    
-    /** @deprecated Use `factory.createPrefixExpression` or the factory supplied by your transformation context instead. */
-    def createPrefix(operator: PrefixUnaryOperator, operand: Expression): PrefixUnaryExpression = js.native
-    
     def createPrinter(): Printer = js.native
     def createPrinter(printerOptions: Unit, handlers: PrintHandlers): Printer = js.native
     def createPrinter(printerOptions: PrinterOptions): Printer = js.native
     def createPrinter(printerOptions: PrinterOptions, handlers: PrintHandlers): Printer = js.native
     
-    /** @deprecated Use `factory.createPrivateIdentifier` or the factory supplied by your transformation context instead. */
-    def createPrivateIdentifier(text: String): PrivateIdentifier = js.native
-    
+    /**
+      * Create a new 'Program' instance. A Program is an immutable collection of 'SourceFile's and a 'CompilerOptions'
+      * that represent a compilation unit.
+      *
+      * Creating a program proceeds from a set of root files, expanding the set of inputs by following imports and
+      * triple-slash-reference-path directives transitively. '@types' and triple-slash-reference-types are also pulled in.
+      *
+      * @param createProgramOptions - The options for creating a program.
+      * @returns A 'Program' object.
+      */
     def createProgram(createProgramOptions: CreateProgramOptions): Program = js.native
+    /**
+      * Create a new 'Program' instance. A Program is an immutable collection of 'SourceFile's and a 'CompilerOptions'
+      * that represent a compilation unit.
+      *
+      * Creating a program proceeds from a set of root files, expanding the set of inputs by following imports and
+      * triple-slash-reference-path directives transitively. '@types' and triple-slash-reference-types are also pulled in.
+      *
+      * @param rootNames - A set of root files.
+      * @param options - The compiler options which should be used.
+      * @param host - The host interacts with the underlying file system.
+      * @param oldProgram - Reuses an old program structure.
+      * @param configFileParsingDiagnostics - error during config file parsing
+      * @returns A 'Program' object.
+      */
     def createProgram(rootNames: js.Array[String], options: CompilerOptions): Program = js.native
     def createProgram(
       rootNames: js.Array[String],
@@ -4253,317 +688,6 @@ object anon {
       oldProgram: Program,
       configFileParsingDiagnostics: js.Array[Diagnostic]
     ): Program = js.native
-    
-    /** @deprecated Use `factory.createPropertyDeclaration` or the factory supplied by your transformation context instead. */
-    def createProperty(
-      decorators: js.UndefOr[js.Array[Decorator]],
-      modifiers: js.UndefOr[js.Array[Modifier]],
-      name: String | PropertyName,
-      questionOrExclamationToken: js.UndefOr[QuestionToken | ExclamationToken],
-      `type`: js.UndefOr[TypeNode],
-      initializer: js.UndefOr[Expression]
-    ): PropertyDeclaration = js.native
-    /** @deprecated Use `factory.createPropertyDeclaration` or the factory supplied by your transformation context instead. */
-    def createProperty(modifiers: js.Array[ModifierLike], name: String): PropertyDeclaration = js.native
-    def createProperty(
-      modifiers: js.Array[ModifierLike],
-      name: String,
-      questionOrExclamationToken: ExclamationToken | QuestionToken
-    ): PropertyDeclaration = js.native
-    def createProperty(
-      modifiers: js.Array[ModifierLike],
-      name: String,
-      questionOrExclamationToken: ExclamationToken | QuestionToken,
-      `type`: Unit,
-      initializer: Expression
-    ): PropertyDeclaration = js.native
-    def createProperty(
-      modifiers: js.Array[ModifierLike],
-      name: String,
-      questionOrExclamationToken: ExclamationToken | QuestionToken,
-      `type`: TypeNode
-    ): PropertyDeclaration = js.native
-    def createProperty(
-      modifiers: js.Array[ModifierLike],
-      name: String,
-      questionOrExclamationToken: ExclamationToken | QuestionToken,
-      `type`: TypeNode,
-      initializer: Expression
-    ): PropertyDeclaration = js.native
-    def createProperty(
-      modifiers: js.Array[ModifierLike],
-      name: String,
-      questionOrExclamationToken: Unit,
-      `type`: Unit,
-      initializer: Expression
-    ): PropertyDeclaration = js.native
-    def createProperty(
-      modifiers: js.Array[ModifierLike],
-      name: String,
-      questionOrExclamationToken: Unit,
-      `type`: TypeNode
-    ): PropertyDeclaration = js.native
-    def createProperty(
-      modifiers: js.Array[ModifierLike],
-      name: String,
-      questionOrExclamationToken: Unit,
-      `type`: TypeNode,
-      initializer: Expression
-    ): PropertyDeclaration = js.native
-    def createProperty(modifiers: js.Array[ModifierLike], name: PropertyName): PropertyDeclaration = js.native
-    def createProperty(
-      modifiers: js.Array[ModifierLike],
-      name: PropertyName,
-      questionOrExclamationToken: ExclamationToken | QuestionToken
-    ): PropertyDeclaration = js.native
-    def createProperty(
-      modifiers: js.Array[ModifierLike],
-      name: PropertyName,
-      questionOrExclamationToken: ExclamationToken | QuestionToken,
-      `type`: Unit,
-      initializer: Expression
-    ): PropertyDeclaration = js.native
-    def createProperty(
-      modifiers: js.Array[ModifierLike],
-      name: PropertyName,
-      questionOrExclamationToken: ExclamationToken | QuestionToken,
-      `type`: TypeNode
-    ): PropertyDeclaration = js.native
-    def createProperty(
-      modifiers: js.Array[ModifierLike],
-      name: PropertyName,
-      questionOrExclamationToken: ExclamationToken | QuestionToken,
-      `type`: TypeNode,
-      initializer: Expression
-    ): PropertyDeclaration = js.native
-    def createProperty(
-      modifiers: js.Array[ModifierLike],
-      name: PropertyName,
-      questionOrExclamationToken: Unit,
-      `type`: Unit,
-      initializer: Expression
-    ): PropertyDeclaration = js.native
-    def createProperty(
-      modifiers: js.Array[ModifierLike],
-      name: PropertyName,
-      questionOrExclamationToken: Unit,
-      `type`: TypeNode
-    ): PropertyDeclaration = js.native
-    def createProperty(
-      modifiers: js.Array[ModifierLike],
-      name: PropertyName,
-      questionOrExclamationToken: Unit,
-      `type`: TypeNode,
-      initializer: Expression
-    ): PropertyDeclaration = js.native
-    def createProperty(modifiers: Unit, name: String): PropertyDeclaration = js.native
-    def createProperty(modifiers: Unit, name: String, questionOrExclamationToken: ExclamationToken | QuestionToken): PropertyDeclaration = js.native
-    def createProperty(
-      modifiers: Unit,
-      name: String,
-      questionOrExclamationToken: ExclamationToken | QuestionToken,
-      `type`: Unit,
-      initializer: Expression
-    ): PropertyDeclaration = js.native
-    def createProperty(
-      modifiers: Unit,
-      name: String,
-      questionOrExclamationToken: ExclamationToken | QuestionToken,
-      `type`: TypeNode
-    ): PropertyDeclaration = js.native
-    def createProperty(
-      modifiers: Unit,
-      name: String,
-      questionOrExclamationToken: ExclamationToken | QuestionToken,
-      `type`: TypeNode,
-      initializer: Expression
-    ): PropertyDeclaration = js.native
-    def createProperty(
-      modifiers: Unit,
-      name: String,
-      questionOrExclamationToken: Unit,
-      `type`: Unit,
-      initializer: Expression
-    ): PropertyDeclaration = js.native
-    def createProperty(modifiers: Unit, name: String, questionOrExclamationToken: Unit, `type`: TypeNode): PropertyDeclaration = js.native
-    def createProperty(
-      modifiers: Unit,
-      name: String,
-      questionOrExclamationToken: Unit,
-      `type`: TypeNode,
-      initializer: Expression
-    ): PropertyDeclaration = js.native
-    def createProperty(modifiers: Unit, name: PropertyName): PropertyDeclaration = js.native
-    def createProperty(modifiers: Unit, name: PropertyName, questionOrExclamationToken: ExclamationToken | QuestionToken): PropertyDeclaration = js.native
-    def createProperty(
-      modifiers: Unit,
-      name: PropertyName,
-      questionOrExclamationToken: ExclamationToken | QuestionToken,
-      `type`: Unit,
-      initializer: Expression
-    ): PropertyDeclaration = js.native
-    def createProperty(
-      modifiers: Unit,
-      name: PropertyName,
-      questionOrExclamationToken: ExclamationToken | QuestionToken,
-      `type`: TypeNode
-    ): PropertyDeclaration = js.native
-    def createProperty(
-      modifiers: Unit,
-      name: PropertyName,
-      questionOrExclamationToken: ExclamationToken | QuestionToken,
-      `type`: TypeNode,
-      initializer: Expression
-    ): PropertyDeclaration = js.native
-    def createProperty(
-      modifiers: Unit,
-      name: PropertyName,
-      questionOrExclamationToken: Unit,
-      `type`: Unit,
-      initializer: Expression
-    ): PropertyDeclaration = js.native
-    def createProperty(modifiers: Unit, name: PropertyName, questionOrExclamationToken: Unit, `type`: TypeNode): PropertyDeclaration = js.native
-    def createProperty(
-      modifiers: Unit,
-      name: PropertyName,
-      questionOrExclamationToken: Unit,
-      `type`: TypeNode,
-      initializer: Expression
-    ): PropertyDeclaration = js.native
-    
-    /** @deprecated Use `factory.createPropertyAccessExpression` or the factory supplied by your transformation context instead. */
-    def createPropertyAccess(expression: Expression, name: String): PropertyAccessExpression = js.native
-    def createPropertyAccess(expression: Expression, name: MemberName): PropertyAccessExpression = js.native
-    
-    def createPropertyAccessChain(expression: Expression, questionDotToken: Unit, name: String): PropertyAccessChain = js.native
-    def createPropertyAccessChain(expression: Expression, questionDotToken: Unit, name: MemberName): PropertyAccessChain = js.native
-    /** @deprecated Use `factory.createPropertyAccessChain` or the factory supplied by your transformation context instead. */
-    def createPropertyAccessChain(expression: Expression, questionDotToken: QuestionDotToken, name: String): PropertyAccessChain = js.native
-    def createPropertyAccessChain(expression: Expression, questionDotToken: QuestionDotToken, name: MemberName): PropertyAccessChain = js.native
-    
-    /** @deprecated Use `factory.createPropertyAssignment` or the factory supplied by your transformation context instead. */
-    def createPropertyAssignment(name: String, initializer: Expression): PropertyAssignment = js.native
-    def createPropertyAssignment(name: PropertyName, initializer: Expression): PropertyAssignment = js.native
-    
-    def createPropertySignature(modifiers: js.Array[Modifier], name: String): PropertySignature = js.native
-    def createPropertySignature(
-      modifiers: js.Array[Modifier],
-      name: String,
-      questionToken: Unit,
-      `type`: Unit,
-      initializer: Expression
-    ): PropertySignature = js.native
-    def createPropertySignature(modifiers: js.Array[Modifier], name: String, questionToken: Unit, `type`: TypeNode): PropertySignature = js.native
-    def createPropertySignature(
-      modifiers: js.Array[Modifier],
-      name: String,
-      questionToken: Unit,
-      `type`: TypeNode,
-      initializer: Expression
-    ): PropertySignature = js.native
-    def createPropertySignature(modifiers: js.Array[Modifier], name: String, questionToken: QuestionToken): PropertySignature = js.native
-    def createPropertySignature(
-      modifiers: js.Array[Modifier],
-      name: String,
-      questionToken: QuestionToken,
-      `type`: Unit,
-      initializer: Expression
-    ): PropertySignature = js.native
-    def createPropertySignature(modifiers: js.Array[Modifier], name: String, questionToken: QuestionToken, `type`: TypeNode): PropertySignature = js.native
-    def createPropertySignature(
-      modifiers: js.Array[Modifier],
-      name: String,
-      questionToken: QuestionToken,
-      `type`: TypeNode,
-      initializer: Expression
-    ): PropertySignature = js.native
-    /** @deprecated Use `factory.createPropertySignature` or the factory supplied by your transformation context instead. */
-    def createPropertySignature(modifiers: js.Array[Modifier], name: PropertyName): PropertySignature = js.native
-    def createPropertySignature(
-      modifiers: js.Array[Modifier],
-      name: PropertyName,
-      questionToken: Unit,
-      `type`: Unit,
-      initializer: Expression
-    ): PropertySignature = js.native
-    def createPropertySignature(modifiers: js.Array[Modifier], name: PropertyName, questionToken: Unit, `type`: TypeNode): PropertySignature = js.native
-    def createPropertySignature(
-      modifiers: js.Array[Modifier],
-      name: PropertyName,
-      questionToken: Unit,
-      `type`: TypeNode,
-      initializer: Expression
-    ): PropertySignature = js.native
-    def createPropertySignature(modifiers: js.Array[Modifier], name: PropertyName, questionToken: QuestionToken): PropertySignature = js.native
-    def createPropertySignature(
-      modifiers: js.Array[Modifier],
-      name: PropertyName,
-      questionToken: QuestionToken,
-      `type`: Unit,
-      initializer: Expression
-    ): PropertySignature = js.native
-    def createPropertySignature(modifiers: js.Array[Modifier], name: PropertyName, questionToken: QuestionToken, `type`: TypeNode): PropertySignature = js.native
-    def createPropertySignature(
-      modifiers: js.Array[Modifier],
-      name: PropertyName,
-      questionToken: QuestionToken,
-      `type`: TypeNode,
-      initializer: Expression
-    ): PropertySignature = js.native
-    def createPropertySignature(modifiers: Unit, name: String): PropertySignature = js.native
-    def createPropertySignature(modifiers: Unit, name: String, questionToken: Unit, `type`: Unit, initializer: Expression): PropertySignature = js.native
-    def createPropertySignature(modifiers: Unit, name: String, questionToken: Unit, `type`: TypeNode): PropertySignature = js.native
-    def createPropertySignature(modifiers: Unit, name: String, questionToken: Unit, `type`: TypeNode, initializer: Expression): PropertySignature = js.native
-    def createPropertySignature(modifiers: Unit, name: String, questionToken: QuestionToken): PropertySignature = js.native
-    def createPropertySignature(modifiers: Unit, name: String, questionToken: QuestionToken, `type`: Unit, initializer: Expression): PropertySignature = js.native
-    def createPropertySignature(modifiers: Unit, name: String, questionToken: QuestionToken, `type`: TypeNode): PropertySignature = js.native
-    def createPropertySignature(
-      modifiers: Unit,
-      name: String,
-      questionToken: QuestionToken,
-      `type`: TypeNode,
-      initializer: Expression
-    ): PropertySignature = js.native
-    def createPropertySignature(modifiers: Unit, name: PropertyName): PropertySignature = js.native
-    def createPropertySignature(modifiers: Unit, name: PropertyName, questionToken: Unit, `type`: Unit, initializer: Expression): PropertySignature = js.native
-    def createPropertySignature(modifiers: Unit, name: PropertyName, questionToken: Unit, `type`: TypeNode): PropertySignature = js.native
-    def createPropertySignature(
-      modifiers: Unit,
-      name: PropertyName,
-      questionToken: Unit,
-      `type`: TypeNode,
-      initializer: Expression
-    ): PropertySignature = js.native
-    def createPropertySignature(modifiers: Unit, name: PropertyName, questionToken: QuestionToken): PropertySignature = js.native
-    def createPropertySignature(
-      modifiers: Unit,
-      name: PropertyName,
-      questionToken: QuestionToken,
-      `type`: Unit,
-      initializer: Expression
-    ): PropertySignature = js.native
-    def createPropertySignature(modifiers: Unit, name: PropertyName, questionToken: QuestionToken, `type`: TypeNode): PropertySignature = js.native
-    def createPropertySignature(
-      modifiers: Unit,
-      name: PropertyName,
-      questionToken: QuestionToken,
-      `type`: TypeNode,
-      initializer: Expression
-    ): PropertySignature = js.native
-    
-    /** @deprecated Use `factory.createQualifiedName` or the factory supplied by your transformation context instead. */
-    def createQualifiedName(left: EntityName, right: String): QualifiedName = js.native
-    def createQualifiedName(left: EntityName, right: Identifier): QualifiedName = js.native
-    
-    /** @deprecated Use `factory.createRegularExpressionLiteral` or the factory supplied by your transformation context instead. */
-    def createRegularExpressionLiteral(text: String): RegularExpressionLiteral = js.native
-    
-    /** @deprecated Use `factory.createRestTypeNode` or the factory supplied by your transformation context instead. */
-    def createRestTypeNode(`type`: TypeNode): RestTypeNode = js.native
-    
-    /** @deprecated Use `factory.createReturnStatement` or the factory supplied by your transformation context instead. */
-    def createReturn(): ReturnStatement = js.native
-    def createReturn(expression: Expression): ReturnStatement = js.native
     
     def createScanner(languageVersion: ScriptTarget, skipTrivia: Boolean): Scanner = js.native
     def createScanner(languageVersion: ScriptTarget, skipTrivia: Boolean, languageVariant: Unit, textInitial: String): Scanner = js.native
@@ -4836,130 +960,6 @@ object anon {
       configFileParsingDiagnostics: js.UndefOr[js.Array[Diagnostic]],
       projectReferences: js.UndefOr[js.Array[ProjectReference]]
     ): SemanticDiagnosticsBuilderProgram = js.native
-    
-    /** @deprecated Use `factory.createSemicolonClassElement` or the factory supplied by your transformation context instead. */
-    def createSemicolonClassElement(): SemicolonClassElement = js.native
-    
-    /** @deprecated Use `factory.createSetAccessorDeclaration` or the factory supplied by your transformation context instead. */
-    def createSetAccessor(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: String,
-      parameters: js.Array[ParameterDeclaration]
-    ): SetAccessorDeclaration = js.native
-    def createSetAccessor(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: String,
-      parameters: js.Array[ParameterDeclaration],
-      body: Block
-    ): SetAccessorDeclaration = js.native
-    def createSetAccessor(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration]
-    ): SetAccessorDeclaration = js.native
-    def createSetAccessor(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration],
-      body: Block
-    ): SetAccessorDeclaration = js.native
-    def createSetAccessor(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: String,
-      parameters: js.Array[ParameterDeclaration]
-    ): SetAccessorDeclaration = js.native
-    def createSetAccessor(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: String,
-      parameters: js.Array[ParameterDeclaration],
-      body: Block
-    ): SetAccessorDeclaration = js.native
-    def createSetAccessor(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration]
-    ): SetAccessorDeclaration = js.native
-    def createSetAccessor(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration],
-      body: Block
-    ): SetAccessorDeclaration = js.native
-    def createSetAccessor(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: String,
-      parameters: js.Array[ParameterDeclaration]
-    ): SetAccessorDeclaration = js.native
-    def createSetAccessor(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: String,
-      parameters: js.Array[ParameterDeclaration],
-      body: Block
-    ): SetAccessorDeclaration = js.native
-    def createSetAccessor(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration]
-    ): SetAccessorDeclaration = js.native
-    def createSetAccessor(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration],
-      body: Block
-    ): SetAccessorDeclaration = js.native
-    def createSetAccessor(decorators: Unit, modifiers: Unit, name: String, parameters: js.Array[ParameterDeclaration]): SetAccessorDeclaration = js.native
-    def createSetAccessor(
-      decorators: Unit,
-      modifiers: Unit,
-      name: String,
-      parameters: js.Array[ParameterDeclaration],
-      body: Block
-    ): SetAccessorDeclaration = js.native
-    def createSetAccessor(decorators: Unit, modifiers: Unit, name: PropertyName, parameters: js.Array[ParameterDeclaration]): SetAccessorDeclaration = js.native
-    def createSetAccessor(
-      decorators: Unit,
-      modifiers: Unit,
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration],
-      body: Block
-    ): SetAccessorDeclaration = js.native
-    /** @deprecated Use `factory.createSetAccessorDeclaration` or the factory supplied by your transformation context instead. */
-    def createSetAccessor(modifiers: js.Array[ModifierLike], name: String, parameters: js.Array[ParameterDeclaration]): SetAccessorDeclaration = js.native
-    def createSetAccessor(
-      modifiers: js.Array[ModifierLike],
-      name: String,
-      parameters: js.Array[ParameterDeclaration],
-      body: Block
-    ): SetAccessorDeclaration = js.native
-    def createSetAccessor(modifiers: js.Array[ModifierLike], name: PropertyName, parameters: js.Array[ParameterDeclaration]): SetAccessorDeclaration = js.native
-    def createSetAccessor(
-      modifiers: js.Array[ModifierLike],
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration],
-      body: Block
-    ): SetAccessorDeclaration = js.native
-    def createSetAccessor(modifiers: Unit, name: String, parameters: js.Array[ParameterDeclaration]): SetAccessorDeclaration = js.native
-    def createSetAccessor(modifiers: Unit, name: String, parameters: js.Array[ParameterDeclaration], body: Block): SetAccessorDeclaration = js.native
-    def createSetAccessor(modifiers: Unit, name: PropertyName, parameters: js.Array[ParameterDeclaration]): SetAccessorDeclaration = js.native
-    def createSetAccessor(modifiers: Unit, name: PropertyName, parameters: js.Array[ParameterDeclaration], body: Block): SetAccessorDeclaration = js.native
-    
-    /** @deprecated Use `factory.createShorthandPropertyAssignment` or the factory supplied by your transformation context instead. */
-    def createShorthandPropertyAssignment(name: String): ShorthandPropertyAssignment = js.native
-    def createShorthandPropertyAssignment(name: String, objectAssignmentInitializer: Expression): ShorthandPropertyAssignment = js.native
-    def createShorthandPropertyAssignment(name: Identifier): ShorthandPropertyAssignment = js.native
-    def createShorthandPropertyAssignment(name: Identifier, objectAssignmentInitializer: Expression): ShorthandPropertyAssignment = js.native
     
     def createSolutionBuilder[T /* <: BuilderProgram */](host: SolutionBuilderHost[T], rootNames: js.Array[String], defaultOptions: BuildOptions): SolutionBuilder[T] = js.native
     
@@ -5358,310 +1358,11 @@ object anon {
     def createSourceMapSource(fileName: String, text: String): SourceMapSource = js.native
     def createSourceMapSource(fileName: String, text: String, skipTrivia: js.Function1[/* pos */ Double, Double]): SourceMapSource = js.native
     
-    /** @deprecated Use `factory.createSpreadExpression` or the factory supplied by your transformation context instead. */
-    def createSpread(expression: Expression): SpreadElement = js.native
-    
-    /** @deprecated Use `factory.createSpreadAssignment` or the factory supplied by your transformation context instead. */
-    def createSpreadAssignment(expression: Expression): SpreadAssignment = js.native
-    
-    /** @deprecated Use `factory.createExpressionStatement` or the factory supplied by your transformation context instead. */
-    def createStatement(expression: Expression): ExpressionStatement = js.native
-    
-    /** @deprecated Use `factory.createStrictEquality` or the factory supplied by your transformation context instead. */
-    def createStrictEquality(left: Expression, right: Expression): BinaryExpression = js.native
-    
-    /** @deprecated Use `factory.createStrictInequality` or the factory supplied by your transformation context instead. */
-    def createStrictInequality(left: Expression, right: Expression): BinaryExpression = js.native
-    
-    /** @deprecated Use `factory.createStringLiteral` or the factory supplied by your transformation context instead. */
-    def createStringLiteral(text: String): StringLiteral = js.native
-    def createStringLiteral(text: String, isSingleQuote: Boolean): StringLiteral = js.native
-    def createStringLiteral(text: String, isSingleQuote: Boolean, hasExtendedUnicodeEscape: Boolean): StringLiteral = js.native
-    def createStringLiteral(text: String, isSingleQuote: Unit, hasExtendedUnicodeEscape: Boolean): StringLiteral = js.native
-    
-    /** @deprecated Use `factory.createStringLiteralFromNode` or the factory supplied by your transformation context instead. */
-    def createStringLiteralFromNode(sourceNode: PrivateIdentifier): StringLiteral = js.native
-    def createStringLiteralFromNode(sourceNode: PrivateIdentifier, isSingleQuote: Boolean): StringLiteral = js.native
-    def createStringLiteralFromNode(sourceNode: PropertyNameLiteral): StringLiteral = js.native
-    def createStringLiteralFromNode(sourceNode: PropertyNameLiteral, isSingleQuote: Boolean): StringLiteral = js.native
-    
-    /** @deprecated Use `factory.createSubtract` or the factory supplied by your transformation context instead. */
-    def createSubtract(left: Expression, right: Expression): BinaryExpression = js.native
-    
-    /** @deprecated Use `factory.createSuper` or the factory supplied by your transformation context instead. */
-    def createSuper(): SuperExpression = js.native
-    
-    /** @deprecated Use `factory.createSwitchStatement` or the factory supplied by your transformation context instead. */
-    def createSwitch(expression: Expression, caseBlock: CaseBlock): SwitchStatement = js.native
-    
-    /** @deprecated Use `factory.createTaggedTemplate` or the factory supplied by your transformation context instead. */
-    def createTaggedTemplate(tag: Expression, template: TemplateLiteral): TaggedTemplateExpression = js.native
-    /** @deprecated Use `factory.createTaggedTemplate` or the factory supplied by your transformation context instead. */
-    def createTaggedTemplate(tag: Expression, typeArguments: js.Array[TypeNode], template: TemplateLiteral): TaggedTemplateExpression = js.native
-    def createTaggedTemplate(tag: Expression, typeArguments: Unit, template: TemplateLiteral): TaggedTemplateExpression = js.native
-    
-    /** @deprecated Use `factory.createTempVariable` or the factory supplied by your transformation context instead. */
-    def createTempVariable(): Identifier = js.native
-    def createTempVariable(recordTempVariable: js.Function1[/* node */ Identifier, Unit]): Identifier = js.native
-    
-    /** @deprecated Use `factory.createTemplateExpression` or the factory supplied by your transformation context instead. */
-    def createTemplateExpression(head: TemplateHead, templateSpans: js.Array[TemplateSpan]): TemplateExpression = js.native
-    
-    /** @deprecated Use `factory.createTemplateHead` or the factory supplied by your transformation context instead. */
-    def createTemplateHead(text: String): TemplateHead = js.native
-    def createTemplateHead(text: String, rawText: String): TemplateHead = js.native
-    def createTemplateHead(text: String, rawText: String, templateFlags: TokenFlags): TemplateHead = js.native
-    def createTemplateHead(text: String, rawText: Unit, templateFlags: TokenFlags): TemplateHead = js.native
-    def createTemplateHead(text: Unit, rawText: String): TemplateHead = js.native
-    def createTemplateHead(text: Unit, rawText: String, templateFlags: TokenFlags): TemplateHead = js.native
-    
-    /** @deprecated Use `factory.createTemplateMiddle` or the factory supplied by your transformation context instead. */
-    def createTemplateMiddle(text: String): TemplateMiddle = js.native
-    def createTemplateMiddle(text: String, rawText: String): TemplateMiddle = js.native
-    def createTemplateMiddle(text: String, rawText: String, templateFlags: TokenFlags): TemplateMiddle = js.native
-    def createTemplateMiddle(text: String, rawText: Unit, templateFlags: TokenFlags): TemplateMiddle = js.native
-    def createTemplateMiddle(text: Unit, rawText: String): TemplateMiddle = js.native
-    def createTemplateMiddle(text: Unit, rawText: String, templateFlags: TokenFlags): TemplateMiddle = js.native
-    
-    /** @deprecated Use `factory.createTemplateSpan` or the factory supplied by your transformation context instead. */
-    def createTemplateSpan(expression: Expression, literal: TemplateMiddle): TemplateSpan = js.native
-    def createTemplateSpan(expression: Expression, literal: TemplateTail): TemplateSpan = js.native
-    
-    /** @deprecated Use `factory.createTemplateTail` or the factory supplied by your transformation context instead. */
-    def createTemplateTail(text: String): TemplateTail = js.native
-    def createTemplateTail(text: String, rawText: String): TemplateTail = js.native
-    def createTemplateTail(text: String, rawText: String, templateFlags: TokenFlags): TemplateTail = js.native
-    def createTemplateTail(text: String, rawText: Unit, templateFlags: TokenFlags): TemplateTail = js.native
-    def createTemplateTail(text: Unit, rawText: String): TemplateTail = js.native
-    def createTemplateTail(text: Unit, rawText: String, templateFlags: TokenFlags): TemplateTail = js.native
-    
     def createTextChangeRange(span: TextSpan, newLength: Double): TextChangeRange = js.native
     
     def createTextSpan(start: Double, length: Double): TextSpan = js.native
     
     def createTextSpanFromBounds(start: Double, end: Double): TextSpan = js.native
-    
-    /** @deprecated Use `factory.createThis` or the factory supplied by your transformation context instead. */
-    def createThis(): ThisExpression = js.native
-    
-    /** @deprecated Use `factory.createThisTypeNode` or the factory supplied by your transformation context instead. */
-    def createThisTypeNode(): ThisTypeNode = js.native
-    
-    /** @deprecated Use `factory.createThrowStatement` or the factory supplied by your transformation context instead. */
-    def createThrow(expression: Expression): ThrowStatement = js.native
-    
-    /** @deprecated Use `factory.createToken` or the factory supplied by your transformation context instead. */
-    def createToken[TKind /* <: SyntaxKind */](kind: TKind): Token[TKind] = js.native
-    
-    /** @deprecated Use `factory.createTrue` or the factory supplied by your transformation context instead. */
-    def createTrue(): TrueLiteral = js.native
-    
-    /** @deprecated Use `factory.createTryStatement` or the factory supplied by your transformation context instead. */
-    def createTry(tryBlock: Block): TryStatement = js.native
-    def createTry(tryBlock: Block, catchClause: Unit, finallyBlock: Block): TryStatement = js.native
-    def createTry(tryBlock: Block, catchClause: CatchClause): TryStatement = js.native
-    def createTry(tryBlock: Block, catchClause: CatchClause, finallyBlock: Block): TryStatement = js.native
-    
-    /** @deprecated Use `factory.createTupleTypeNode` or the factory supplied by your transformation context instead. */
-    def createTupleTypeNode(elements: js.Array[TypeNode | NamedTupleMember]): TupleTypeNode = js.native
-    
-    /** @deprecated Use `factory.createTypeAliasDeclaration` or the factory supplied by your transformation context instead. */
-    def createTypeAliasDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: String,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      `type`: TypeNode
-    ): TypeAliasDeclaration = js.native
-    def createTypeAliasDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: String,
-      typeParameters: Unit,
-      `type`: TypeNode
-    ): TypeAliasDeclaration = js.native
-    def createTypeAliasDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      `type`: TypeNode
-    ): TypeAliasDeclaration = js.native
-    def createTypeAliasDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: Unit,
-      `type`: TypeNode
-    ): TypeAliasDeclaration = js.native
-    def createTypeAliasDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: String,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      `type`: TypeNode
-    ): TypeAliasDeclaration = js.native
-    def createTypeAliasDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: String,
-      typeParameters: Unit,
-      `type`: TypeNode
-    ): TypeAliasDeclaration = js.native
-    def createTypeAliasDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      `type`: TypeNode
-    ): TypeAliasDeclaration = js.native
-    def createTypeAliasDeclaration(
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: Unit,
-      `type`: TypeNode
-    ): TypeAliasDeclaration = js.native
-    def createTypeAliasDeclaration(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: String,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      `type`: TypeNode
-    ): TypeAliasDeclaration = js.native
-    def createTypeAliasDeclaration(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: String,
-      typeParameters: Unit,
-      `type`: TypeNode
-    ): TypeAliasDeclaration = js.native
-    def createTypeAliasDeclaration(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      `type`: TypeNode
-    ): TypeAliasDeclaration = js.native
-    def createTypeAliasDeclaration(
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: Unit,
-      `type`: TypeNode
-    ): TypeAliasDeclaration = js.native
-    def createTypeAliasDeclaration(
-      decorators: Unit,
-      modifiers: Unit,
-      name: String,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      `type`: TypeNode
-    ): TypeAliasDeclaration = js.native
-    def createTypeAliasDeclaration(decorators: Unit, modifiers: Unit, name: String, typeParameters: Unit, `type`: TypeNode): TypeAliasDeclaration = js.native
-    def createTypeAliasDeclaration(
-      decorators: Unit,
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      `type`: TypeNode
-    ): TypeAliasDeclaration = js.native
-    def createTypeAliasDeclaration(decorators: Unit, modifiers: Unit, name: Identifier, typeParameters: Unit, `type`: TypeNode): TypeAliasDeclaration = js.native
-    /** @deprecated Use `factory.createTypeAliasDeclaration` or the factory supplied by your transformation context instead. */
-    def createTypeAliasDeclaration(
-      modifiers: js.Array[Modifier],
-      name: String,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      `type`: TypeNode
-    ): TypeAliasDeclaration = js.native
-    def createTypeAliasDeclaration(modifiers: js.Array[Modifier], name: String, typeParameters: Unit, `type`: TypeNode): TypeAliasDeclaration = js.native
-    def createTypeAliasDeclaration(
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      `type`: TypeNode
-    ): TypeAliasDeclaration = js.native
-    def createTypeAliasDeclaration(modifiers: js.Array[Modifier], name: Identifier, typeParameters: Unit, `type`: TypeNode): TypeAliasDeclaration = js.native
-    def createTypeAliasDeclaration(
-      modifiers: Unit,
-      name: String,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      `type`: TypeNode
-    ): TypeAliasDeclaration = js.native
-    def createTypeAliasDeclaration(modifiers: Unit, name: String, typeParameters: Unit, `type`: TypeNode): TypeAliasDeclaration = js.native
-    def createTypeAliasDeclaration(
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      `type`: TypeNode
-    ): TypeAliasDeclaration = js.native
-    def createTypeAliasDeclaration(modifiers: Unit, name: Identifier, typeParameters: Unit, `type`: TypeNode): TypeAliasDeclaration = js.native
-    
-    /** @deprecated Use `factory.createTypeAssertion` or the factory supplied by your transformation context instead. */
-    def createTypeAssertion(`type`: TypeNode, expression: Expression): TypeAssertion = js.native
-    
-    /** @deprecated Use `factory.createTypeLiteralNode` or the factory supplied by your transformation context instead. */
-    def createTypeLiteralNode(): TypeLiteralNode = js.native
-    def createTypeLiteralNode(members: js.Array[TypeElement]): TypeLiteralNode = js.native
-    
-    /** @deprecated Use `factory.createTypeOfExpression` or the factory supplied by your transformation context instead. */
-    def createTypeOf(expression: Expression): TypeOfExpression = js.native
-    
-    /** @deprecated Use `factory.createTypeOperatorNode` or the factory supplied by your transformation context instead. */
-    def createTypeOperatorNode(operator: KeyOfKeyword, `type`: TypeNode): TypeOperatorNode = js.native
-    def createTypeOperatorNode(operator: typings.typescript.mod.SyntaxKind.ReadonlyKeyword, `type`: TypeNode): TypeOperatorNode = js.native
-    def createTypeOperatorNode(operator: UniqueKeyword, `type`: TypeNode): TypeOperatorNode = js.native
-    /** @deprecated Use `factory.createTypeOperatorNode` or the factory supplied by your transformation context instead. */
-    def createTypeOperatorNode(`type`: TypeNode): TypeOperatorNode = js.native
-    
-    /** @deprecated Use `factory.createTypeParameterDeclaration` or the factory supplied by your transformation context instead. */
-    def createTypeParameterDeclaration(modifiers: js.Array[Modifier], name: String): TypeParameterDeclaration = js.native
-    def createTypeParameterDeclaration(modifiers: js.Array[Modifier], name: String, constraint: Unit, defaultType: TypeNode): TypeParameterDeclaration = js.native
-    def createTypeParameterDeclaration(modifiers: js.Array[Modifier], name: String, constraint: TypeNode): TypeParameterDeclaration = js.native
-    def createTypeParameterDeclaration(modifiers: js.Array[Modifier], name: String, constraint: TypeNode, defaultType: TypeNode): TypeParameterDeclaration = js.native
-    def createTypeParameterDeclaration(modifiers: js.Array[Modifier], name: Identifier): TypeParameterDeclaration = js.native
-    def createTypeParameterDeclaration(modifiers: js.Array[Modifier], name: Identifier, constraint: Unit, defaultType: TypeNode): TypeParameterDeclaration = js.native
-    def createTypeParameterDeclaration(modifiers: js.Array[Modifier], name: Identifier, constraint: TypeNode): TypeParameterDeclaration = js.native
-    def createTypeParameterDeclaration(modifiers: js.Array[Modifier], name: Identifier, constraint: TypeNode, defaultType: TypeNode): TypeParameterDeclaration = js.native
-    def createTypeParameterDeclaration(modifiers: Unit, name: String): TypeParameterDeclaration = js.native
-    def createTypeParameterDeclaration(modifiers: Unit, name: String, constraint: Unit, defaultType: TypeNode): TypeParameterDeclaration = js.native
-    def createTypeParameterDeclaration(modifiers: Unit, name: String, constraint: TypeNode): TypeParameterDeclaration = js.native
-    def createTypeParameterDeclaration(modifiers: Unit, name: String, constraint: TypeNode, defaultType: TypeNode): TypeParameterDeclaration = js.native
-    def createTypeParameterDeclaration(modifiers: Unit, name: Identifier): TypeParameterDeclaration = js.native
-    def createTypeParameterDeclaration(modifiers: Unit, name: Identifier, constraint: Unit, defaultType: TypeNode): TypeParameterDeclaration = js.native
-    def createTypeParameterDeclaration(modifiers: Unit, name: Identifier, constraint: TypeNode): TypeParameterDeclaration = js.native
-    def createTypeParameterDeclaration(modifiers: Unit, name: Identifier, constraint: TypeNode, defaultType: TypeNode): TypeParameterDeclaration = js.native
-    /** @deprecated Use `factory.createTypeParameterDeclaration` or the factory supplied by your transformation context instead. */
-    def createTypeParameterDeclaration(name: String): TypeParameterDeclaration = js.native
-    def createTypeParameterDeclaration(name: String, constraint: Unit, defaultType: TypeNode): TypeParameterDeclaration = js.native
-    def createTypeParameterDeclaration(name: String, constraint: TypeNode): TypeParameterDeclaration = js.native
-    def createTypeParameterDeclaration(name: String, constraint: TypeNode, defaultType: TypeNode): TypeParameterDeclaration = js.native
-    def createTypeParameterDeclaration(name: Identifier): TypeParameterDeclaration = js.native
-    def createTypeParameterDeclaration(name: Identifier, constraint: Unit, defaultType: TypeNode): TypeParameterDeclaration = js.native
-    def createTypeParameterDeclaration(name: Identifier, constraint: TypeNode): TypeParameterDeclaration = js.native
-    def createTypeParameterDeclaration(name: Identifier, constraint: TypeNode, defaultType: TypeNode): TypeParameterDeclaration = js.native
-    
-    def createTypePredicateNode(parameterName: String, `type`: TypeNode): TypePredicateNode = js.native
-    /** @deprecated Use `factory.createTypePredicateNode` or the factory supplied by your transformation context instead. */
-    def createTypePredicateNode(parameterName: Identifier, `type`: TypeNode): TypePredicateNode = js.native
-    def createTypePredicateNode(parameterName: ThisTypeNode, `type`: TypeNode): TypePredicateNode = js.native
-    
-    def createTypePredicateNodeWithModifier(assertsModifier: Unit, parameterName: String): TypePredicateNode = js.native
-    def createTypePredicateNodeWithModifier(assertsModifier: Unit, parameterName: String, `type`: TypeNode): TypePredicateNode = js.native
-    def createTypePredicateNodeWithModifier(assertsModifier: Unit, parameterName: Identifier): TypePredicateNode = js.native
-    def createTypePredicateNodeWithModifier(assertsModifier: Unit, parameterName: Identifier, `type`: TypeNode): TypePredicateNode = js.native
-    def createTypePredicateNodeWithModifier(assertsModifier: Unit, parameterName: ThisTypeNode): TypePredicateNode = js.native
-    def createTypePredicateNodeWithModifier(assertsModifier: Unit, parameterName: ThisTypeNode, `type`: TypeNode): TypePredicateNode = js.native
-    /** @deprecated Use `factory.createTypePredicateNode` or the factory supplied by your transformation context instead. */
-    def createTypePredicateNodeWithModifier(assertsModifier: AssertsKeyword, parameterName: String): TypePredicateNode = js.native
-    def createTypePredicateNodeWithModifier(assertsModifier: AssertsKeyword, parameterName: String, `type`: TypeNode): TypePredicateNode = js.native
-    def createTypePredicateNodeWithModifier(assertsModifier: AssertsKeyword, parameterName: Identifier): TypePredicateNode = js.native
-    def createTypePredicateNodeWithModifier(assertsModifier: AssertsKeyword, parameterName: Identifier, `type`: TypeNode): TypePredicateNode = js.native
-    def createTypePredicateNodeWithModifier(assertsModifier: AssertsKeyword, parameterName: ThisTypeNode): TypePredicateNode = js.native
-    def createTypePredicateNodeWithModifier(assertsModifier: AssertsKeyword, parameterName: ThisTypeNode, `type`: TypeNode): TypePredicateNode = js.native
-    
-    /** @deprecated Use `factory.createTypeQueryNode` or the factory supplied by your transformation context instead. */
-    def createTypeQueryNode(exprName: EntityName): TypeQueryNode = js.native
-    def createTypeQueryNode(exprName: EntityName, typeArguments: js.Array[TypeNode]): TypeQueryNode = js.native
     
     def createTypeReferenceDirectiveResolutionCache(currentDirectory: String, getCanonicalFileName: js.Function1[/* s */ String, String]): TypeReferenceDirectiveResolutionCache = js.native
     def createTypeReferenceDirectiveResolutionCache(
@@ -5682,65 +1383,14 @@ object anon {
       packageJsonInfoCache: PackageJsonInfoCache
     ): TypeReferenceDirectiveResolutionCache = js.native
     
-    /** @deprecated Use `factory.createTypeReferenceNode` or the factory supplied by your transformation context instead. */
-    def createTypeReferenceNode(typeName: String): TypeReferenceNode = js.native
-    def createTypeReferenceNode(typeName: String, typeArguments: js.Array[TypeNode]): TypeReferenceNode = js.native
-    def createTypeReferenceNode(typeName: EntityName): TypeReferenceNode = js.native
-    def createTypeReferenceNode(typeName: EntityName, typeArguments: js.Array[TypeNode]): TypeReferenceNode = js.native
-    
-    /** @deprecated Use `factory.createUnionTypeNode` or the factory supplied by your transformation context instead. */
-    def createUnionTypeNode(types: js.Array[TypeNode]): UnionTypeNode = js.native
-    
-    /** @deprecated Use `factory.createUniqueName` or the factory supplied by your transformation context instead. */
-    def createUniqueName(text: String): Identifier = js.native
-    def createUniqueName(text: String, flags: GeneratedIdentifierFlags): Identifier = js.native
-    
+    /** @deprecated */
     def createUnparsedSourceFile(inputFile: InputFiles, `type`: js_ | dts): UnparsedSource = js.native
     def createUnparsedSourceFile(inputFile: InputFiles, `type`: js_ | dts, stripInternal: Boolean): UnparsedSource = js.native
+    /** @deprecated */
     def createUnparsedSourceFile(text: String): UnparsedSource = js.native
     def createUnparsedSourceFile(text: String, mapPath: String): UnparsedSource = js.native
     def createUnparsedSourceFile(text: String, mapPath: String, map: String): UnparsedSource = js.native
     def createUnparsedSourceFile(text: String, mapPath: Unit, map: String): UnparsedSource = js.native
-    
-    /** @deprecated Use `factory.createVariableDeclaration` or the factory supplied by your transformation context instead. */
-    def createVariableDeclaration(name: String): VariableDeclaration = js.native
-    def createVariableDeclaration(name: String, exclamationToken: Unit, `type`: Unit, initializer: Expression): VariableDeclaration = js.native
-    def createVariableDeclaration(name: String, exclamationToken: Unit, `type`: TypeNode): VariableDeclaration = js.native
-    def createVariableDeclaration(name: String, exclamationToken: Unit, `type`: TypeNode, initializer: Expression): VariableDeclaration = js.native
-    def createVariableDeclaration(name: String, exclamationToken: ExclamationToken): VariableDeclaration = js.native
-    def createVariableDeclaration(name: String, exclamationToken: ExclamationToken, `type`: Unit, initializer: Expression): VariableDeclaration = js.native
-    def createVariableDeclaration(name: String, exclamationToken: ExclamationToken, `type`: TypeNode): VariableDeclaration = js.native
-    def createVariableDeclaration(name: String, exclamationToken: ExclamationToken, `type`: TypeNode, initializer: Expression): VariableDeclaration = js.native
-    def createVariableDeclaration(name: String, `type`: Unit, initializer: Expression): VariableDeclaration = js.native
-    def createVariableDeclaration(name: String, `type`: TypeNode): VariableDeclaration = js.native
-    def createVariableDeclaration(name: String, `type`: TypeNode, initializer: Expression): VariableDeclaration = js.native
-    def createVariableDeclaration(name: BindingName): VariableDeclaration = js.native
-    def createVariableDeclaration(name: BindingName, exclamationToken: Unit, `type`: Unit, initializer: Expression): VariableDeclaration = js.native
-    def createVariableDeclaration(name: BindingName, exclamationToken: Unit, `type`: TypeNode): VariableDeclaration = js.native
-    def createVariableDeclaration(name: BindingName, exclamationToken: Unit, `type`: TypeNode, initializer: Expression): VariableDeclaration = js.native
-    def createVariableDeclaration(name: BindingName, exclamationToken: ExclamationToken): VariableDeclaration = js.native
-    def createVariableDeclaration(name: BindingName, exclamationToken: ExclamationToken, `type`: Unit, initializer: Expression): VariableDeclaration = js.native
-    def createVariableDeclaration(name: BindingName, exclamationToken: ExclamationToken, `type`: TypeNode): VariableDeclaration = js.native
-    def createVariableDeclaration(name: BindingName, exclamationToken: ExclamationToken, `type`: TypeNode, initializer: Expression): VariableDeclaration = js.native
-    def createVariableDeclaration(name: BindingName, `type`: Unit, initializer: Expression): VariableDeclaration = js.native
-    def createVariableDeclaration(name: BindingName, `type`: TypeNode): VariableDeclaration = js.native
-    def createVariableDeclaration(name: BindingName, `type`: TypeNode, initializer: Expression): VariableDeclaration = js.native
-    
-    /** @deprecated Use `factory.createVariableDeclarationList` or the factory supplied by your transformation context instead. */
-    def createVariableDeclarationList(declarations: js.Array[VariableDeclaration]): VariableDeclarationList = js.native
-    def createVariableDeclarationList(declarations: js.Array[VariableDeclaration], flags: NodeFlags): VariableDeclarationList = js.native
-    
-    def createVariableStatement(modifiers: js.Array[Modifier], declarationList: js.Array[VariableDeclaration]): VariableStatement = js.native
-    /** @deprecated Use `factory.createVariableStatement` or the factory supplied by your transformation context instead. */
-    def createVariableStatement(modifiers: js.Array[Modifier], declarationList: VariableDeclarationList): VariableStatement = js.native
-    def createVariableStatement(modifiers: Unit, declarationList: js.Array[VariableDeclaration]): VariableStatement = js.native
-    def createVariableStatement(modifiers: Unit, declarationList: VariableDeclarationList): VariableStatement = js.native
-    
-    /** @deprecated Use `factory.createVoidExpression` or the factory supplied by your transformation context instead. */
-    def createVoid(expression: Expression): VoidExpression = js.native
-    
-    /** @deprecated Use `factory.createVoidZero` or the factory supplied by your transformation context instead. */
-    def createVoidZero(): VoidExpression = js.native
     
     /**
       * Create the watch compiler host for either configFile or fileNames and its options
@@ -6050,19 +1700,6 @@ object anon {
       */
     def createWatchProgram[T /* <: BuilderProgram */](host: WatchCompilerHostOfFilesAndCompilerOptions[T]): WatchOfFilesAndCompilerOptions[T] = js.native
     
-    /** @deprecated Use `factory.createWhileStatement` or the factory supplied by your transformation context instead. */
-    def createWhile(expression: Expression, statement: Statement): WhileStatement = js.native
-    
-    /** @deprecated Use `factory.createWithStatement` or the factory supplied by your transformation context instead. */
-    def createWith(expression: Expression, statement: Statement): WithStatement = js.native
-    
-    /** @deprecated Use `factory.createYield` or the factory supplied by your transformation context instead. */
-    def createYield(): YieldExpression = js.native
-    def createYield(asteriskToken: Unit, expression: Expression): YieldExpression = js.native
-    /** @deprecated Use `factory.createYield` or the factory supplied by your transformation context instead. */
-    def createYield(asteriskToken: AsteriskToken, expression: Expression): YieldExpression = js.native
-    def createYield(expression: Expression): YieldExpression = js.native
-    
     def decodedTextSpanIntersectsWith(start1: Double, length1: Double, start2: Double, length2: Double): Boolean = js.native
     
     def displayPartsToString(): String = js.native
@@ -6103,6 +1740,19 @@ object anon {
     def flattenDiagnosticMessageText(diag: DiagnosticMessageChain, newLine: String): String = js.native
     def flattenDiagnosticMessageText(diag: DiagnosticMessageChain, newLine: String, indent: Double): String = js.native
     
+    /**
+      * Invokes a callback for each child of the given node. The 'cbNode' callback is invoked for all child nodes
+      * stored in properties. If a 'cbNodes' callback is specified, it is invoked for embedded arrays; otherwise,
+      * embedded arrays are flattened and the 'cbNode' callback is invoked for each element. If a callback returns
+      * a truthy value, iteration stops and that value is returned. Otherwise, undefined is returned.
+      *
+      * @param node a given node to visit its children
+      * @param cbNode a callback to be invoked for all child nodes
+      * @param cbNodes a callback to be invoked for embedded array
+      *
+      * @remarks `forEachChild` must visit the children of a node in the order
+      * that they appear in the source code. The language service depends on this property to locate nodes by position.
+      */
     def forEachChild[T](node: Node, cbNode: js.Function1[/* node */ Node, js.UndefOr[T]]): js.UndefOr[T] = js.native
     def forEachChild[T](
       node: Node,
@@ -6172,6 +1822,14 @@ object anon {
     /** Gets all JSDoc tags of a specified kind */
     def getAllJSDocTagsOfKind(node: Node, kind: SyntaxKind): js.Array[JSDocTag] = js.native
     
+    /**
+      * Given a set of options, returns the set of type directive names
+      *   that should be included for this program automatically.
+      * This list could either come from the config file,
+      *   or from enumerating the types root + initial secondary types lookup location.
+      * More type directives might appear in the program later as a result of loading actual source files;
+      *   this list is only the set of defaults that are implicitly included.
+      */
     def getAutomaticTypeDirectiveNames(options: CompilerOptions, host: ModuleResolutionHost): js.Array[String] = js.native
     
     def getCombinedModifierFlags(node: Declaration): ModifierFlags = js.native
@@ -6227,17 +1885,23 @@ object anon {
       */
     def getEmitHelpers(node: Node): js.UndefOr[js.Array[EmitHelper]] = js.native
     
-    /** @deprecated Use `factory.getGeneratedNameForNode` or the factory supplied by your transformation context instead. */
-    def getGeneratedNameForNode(): Identifier = js.native
-    def getGeneratedNameForNode(node: Node): Identifier = js.native
-    
-    def getImpliedNodeFormatForFile(fileName: Path, packageJsonInfoCache: Unit, host: ModuleResolutionHost, options: CompilerOptions): js.UndefOr[ESNext | CommonJS] = js.native
+    def getImpliedNodeFormatForFile(fileName: Path, packageJsonInfoCache: Unit, host: ModuleResolutionHost, options: CompilerOptions): ResolutionMode = js.native
+    /**
+      * A function for determining if a given file is esm or cjs format, assuming modern node module resolution rules, as configured by the
+      * `options` parameter.
+      *
+      * @param fileName The normalized absolute path to check the format of (it need not exist on disk)
+      * @param [packageJsonInfoCache] A cache for package file lookups - it's best to have a cache when this function is called often
+      * @param host The ModuleResolutionHost which can perform the filesystem lookups for package json data
+      * @param options The compiler options to perform the analysis under - relevant options are `moduleResolution` and `traceResolution`
+      * @returns `undefined` if the path has no relevant implied format, `ModuleKind.ESNext` for esm format, and `ModuleKind.CommonJS` for cjs format
+      */
     def getImpliedNodeFormatForFile(
       fileName: Path,
       packageJsonInfoCache: PackageJsonInfoCache,
       host: ModuleResolutionHost,
       options: CompilerOptions
-    ): js.UndefOr[ESNext | CommonJS] = js.native
+    ): ResolutionMode = js.native
     
     /** Gets the JSDoc augments tag for the node if present */
     def getJSDocAugmentsTag(node: Node): js.UndefOr[JSDocAugmentsTag] = js.native
@@ -6293,6 +1957,8 @@ object anon {
       */
     def getJSDocReturnType(node: Node): js.UndefOr[TypeNode] = js.native
     
+    def getJSDocSatisfiesTag(node: Node): js.UndefOr[JSDocSatisfiesTag] = js.native
+    
     /** Get all JSDoc tags related to a node, including those on parent nodes. */
     def getJSDocTags(node: Node): js.Array[JSDocTag] = js.native
     
@@ -6334,28 +2000,34 @@ object anon {
     
     def getLineAndCharacterOfPosition(sourceFile: SourceFileLike, position: Double): LineAndCharacter = js.native
     
-    def getModeForFileReference(ref: String): js.UndefOr[CommonJS | ESNext] = js.native
-    def getModeForFileReference(ref: String, containingFileMode: CommonJS): js.UndefOr[CommonJS | ESNext] = js.native
-    def getModeForFileReference(ref: String, containingFileMode: ESNext): js.UndefOr[CommonJS | ESNext] = js.native
-    def getModeForFileReference(ref: FileReference): js.UndefOr[CommonJS | ESNext] = js.native
-    def getModeForFileReference(ref: FileReference, containingFileMode: CommonJS): js.UndefOr[CommonJS | ESNext] = js.native
-    def getModeForFileReference(ref: FileReference, containingFileMode: ESNext): js.UndefOr[CommonJS | ESNext] = js.native
+    def getModeForFileReference(ref: String, containingFileMode: ResolutionMode): ResolutionMode = js.native
+    /**
+      * Calculates the resulting resolution mode for some reference in some file - this is generally the explicitly
+      * provided resolution mode in the reference, unless one is not present, in which case it is the mode of the containing file.
+      */
+    def getModeForFileReference(ref: FileReference, containingFileMode: ResolutionMode): ResolutionMode = js.native
     
-    def getModeForResolutionAtIndex(file: SourceFile, index: Double): js.UndefOr[CommonJS | ESNext] = js.native
+    /**
+      * Calculates the final resolution mode for an import at some index within a file's imports list. This is generally the explicitly
+      * defined mode of the import if provided, or, if not, the mode of the containing file (with some exceptions: import=require is always commonjs, dynamic import is always esm).
+      * If you have an actual import node, prefer using getModeForUsageLocation on the reference string node.
+      * @param file File to fetch the resolution mode within
+      * @param index Index into the file's complete resolution list to get the resolution of - this is a concatenation of the file's imports and module augmentations
+      */
+    def getModeForResolutionAtIndex(file: SourceFile, index: Double): ResolutionMode = js.native
     
+    /**
+      * Calculates the final resolution mode for a given module reference node. This is generally the explicitly provided resolution mode, if
+      * one exists, or the mode of the containing source file. (Excepting import=require, which is always commonjs, and dynamic import, which is always esm).
+      * Notably, this function always returns `undefined` if the containing file has an `undefined` `impliedNodeFormat` - this field is only set when
+      * `moduleResolution` is `node16`+.
+      * @param file The file the import or import-like reference is contained within
+      * @param usage The module reference string
+      * @returns The final resolution mode of the import
+      */
     def getModeForUsageLocation(file: ImpliedNodeFormat, usage: StringLiteralLike): js.UndefOr[CommonJS | ESNext] = js.native
     
     def getModifiers(node: HasModifiers): js.UndefOr[js.Array[Modifier]] = js.native
-    
-    /**
-      * Creates a shallow, memberwise clone of a node ~for mutation~ with its `pos`, `end`, and `parent` set.
-      *
-      * NOTE: It is unsafe to change any properties of a `Node` that relate to its AST children, as those changes won't be
-      * captured with respect to transformations.
-      *
-      * @deprecated Use an appropriate `factory.update...` method instead, use `setCommentRange` or `setSourceMapRange`, and avoid setting `parent`.
-      */
-    def getMutableClone[T /* <: Node */](node: T): T = js.native
     
     def getNameOfDeclaration(): js.UndefOr[DeclarationName] = js.native
     def getNameOfDeclaration(declaration: Declaration): js.UndefOr[DeclarationName] = js.native
@@ -6363,12 +2035,10 @@ object anon {
     
     def getNameOfJSDocTypedef(declaration: JSDocTypedefTag): js.UndefOr[Identifier | PrivateIdentifier] = js.native
     
-    def getNodeMajorVersion(): js.UndefOr[Double] = js.native
-    
     def getOriginalNode(): js.UndefOr[Node] = js.native
     def getOriginalNode(node: Node): js.UndefOr[Node] = js.native
-    def getOriginalNode[T /* <: Node */](node: Unit, nodeTest: js.Function1[/* node */ js.UndefOr[Node], /* is T */ Boolean]): js.UndefOr[T] = js.native
-    def getOriginalNode[T /* <: Node */](node: Node, nodeTest: js.Function1[/* node */ js.UndefOr[Node], /* is T */ Boolean]): js.UndefOr[T] = js.native
+    def getOriginalNode[T /* <: Node */](node: Unit, nodeTest: js.Function1[/* node */ Node, /* is T */ Boolean]): js.UndefOr[T] = js.native
+    def getOriginalNode[T /* <: Node */](node: Node, nodeTest: js.Function1[/* node */ Node, /* is T */ Boolean]): js.UndefOr[T] = js.native
     @JSName("getOriginalNode")
     def getOriginalNode_Node(node: Node): Node = js.native
     @JSName("getOriginalNode")
@@ -6425,13 +2095,13 @@ object anon {
       configFileName: String,
       optionsToExtend: Unit,
       host: ParseConfigFileHost,
-      extendedConfigCache: Map[ExtendedConfigCacheEntry]
+      extendedConfigCache: Map[String, ExtendedConfigCacheEntry]
     ): js.UndefOr[ParsedCommandLine] = js.native
     def getParsedCommandLineOfConfigFile(
       configFileName: String,
       optionsToExtend: Unit,
       host: ParseConfigFileHost,
-      extendedConfigCache: Map[ExtendedConfigCacheEntry],
+      extendedConfigCache: Map[String, ExtendedConfigCacheEntry],
       watchOptionsToExtend: Unit,
       extraFileExtensions: js.Array[FileExtensionInfo]
     ): js.UndefOr[ParsedCommandLine] = js.native
@@ -6439,17 +2109,20 @@ object anon {
       configFileName: String,
       optionsToExtend: Unit,
       host: ParseConfigFileHost,
-      extendedConfigCache: Map[ExtendedConfigCacheEntry],
+      extendedConfigCache: Map[String, ExtendedConfigCacheEntry],
       watchOptionsToExtend: WatchOptions
     ): js.UndefOr[ParsedCommandLine] = js.native
     def getParsedCommandLineOfConfigFile(
       configFileName: String,
       optionsToExtend: Unit,
       host: ParseConfigFileHost,
-      extendedConfigCache: Map[ExtendedConfigCacheEntry],
+      extendedConfigCache: Map[String, ExtendedConfigCacheEntry],
       watchOptionsToExtend: WatchOptions,
       extraFileExtensions: js.Array[FileExtensionInfo]
     ): js.UndefOr[ParsedCommandLine] = js.native
+    /**
+      * Reads the config file, reports errors if any and exits if the config file cannot be found
+      */
     def getParsedCommandLineOfConfigFile(configFileName: String, optionsToExtend: CompilerOptions, host: ParseConfigFileHost): js.UndefOr[ParsedCommandLine] = js.native
     def getParsedCommandLineOfConfigFile(
       configFileName: String,
@@ -6478,13 +2151,13 @@ object anon {
       configFileName: String,
       optionsToExtend: CompilerOptions,
       host: ParseConfigFileHost,
-      extendedConfigCache: Map[ExtendedConfigCacheEntry]
+      extendedConfigCache: Map[String, ExtendedConfigCacheEntry]
     ): js.UndefOr[ParsedCommandLine] = js.native
     def getParsedCommandLineOfConfigFile(
       configFileName: String,
       optionsToExtend: CompilerOptions,
       host: ParseConfigFileHost,
-      extendedConfigCache: Map[ExtendedConfigCacheEntry],
+      extendedConfigCache: Map[String, ExtendedConfigCacheEntry],
       watchOptionsToExtend: Unit,
       extraFileExtensions: js.Array[FileExtensionInfo]
     ): js.UndefOr[ParsedCommandLine] = js.native
@@ -6492,14 +2165,14 @@ object anon {
       configFileName: String,
       optionsToExtend: CompilerOptions,
       host: ParseConfigFileHost,
-      extendedConfigCache: Map[ExtendedConfigCacheEntry],
+      extendedConfigCache: Map[String, ExtendedConfigCacheEntry],
       watchOptionsToExtend: WatchOptions
     ): js.UndefOr[ParsedCommandLine] = js.native
     def getParsedCommandLineOfConfigFile(
       configFileName: String,
       optionsToExtend: CompilerOptions,
       host: ParseConfigFileHost,
-      extendedConfigCache: Map[ExtendedConfigCacheEntry],
+      extendedConfigCache: Map[String, ExtendedConfigCacheEntry],
       watchOptionsToExtend: WatchOptions,
       extraFileExtensions: js.Array[FileExtensionInfo]
     ): js.UndefOr[ParsedCommandLine] = js.native
@@ -6559,7 +2232,15 @@ object anon {
     def idText(identifierOrPrivateName: Identifier): String = js.native
     def idText(identifierOrPrivateName: PrivateIdentifier): String = js.native
     
+    /**
+      * If the text of an Identifier matches a keyword (including contextual and TypeScript-specific keywords), returns the
+      * SyntaxKind for the matching keyword.
+      */
+    def identifierToKeywordKind(node: Identifier): js.UndefOr[KeywordSyntaxKind] = js.native
+    
     def isAccessor(node: Node): /* is typescript.typescript.AccessorDeclaration */ Boolean = js.native
+    
+    def isArrayBindingElement(node: Node): /* is typescript.typescript.ArrayBindingElement */ Boolean = js.native
     
     def isArrayBindingPattern(node: Node): /* is typescript.typescript.ArrayBindingPattern */ Boolean = js.native
     
@@ -6579,15 +2260,21 @@ object anon {
     
     def isAssertionKey(node: Node): /* is typescript.typescript.AssertionKey */ Boolean = js.native
     
+    def isAssertsKeyword(node: Node): /* is typescript.typescript.AssertsKeyword */ Boolean = js.native
+    
     def isAsteriskToken(node: Node): /* is typescript.typescript.AsteriskToken */ Boolean = js.native
     
     def isAutoAccessorPropertyDeclaration(node: Node): /* is typescript.typescript.AutoAccessorPropertyDeclaration */ Boolean = js.native
     
     def isAwaitExpression(node: Node): /* is typescript.typescript.AwaitExpression */ Boolean = js.native
     
+    def isAwaitKeyword(node: Node): /* is typescript.typescript.AwaitKeyword */ Boolean = js.native
+    
     def isBigIntLiteral(node: Node): /* is typescript.typescript.BigIntLiteral */ Boolean = js.native
     
     def isBinaryExpression(node: Node): /* is typescript.typescript.BinaryExpression */ Boolean = js.native
+    
+    def isBinaryOperatorToken(node: Node): /* is typescript.typescript.BinaryOperatorToken */ Boolean = js.native
     
     def isBindingElement(node: Node): /* is typescript.typescript.BindingElement */ Boolean = js.native
     
@@ -6631,9 +2318,13 @@ object anon {
     
     def isClassStaticBlockDeclaration(node: Node): /* is typescript.typescript.ClassStaticBlockDeclaration */ Boolean = js.native
     
+    def isColonToken(node: Node): /* is typescript.typescript.ColonToken */ Boolean = js.native
+    
     def isCommaListExpression(node: Node): /* is typescript.typescript.CommaListExpression */ Boolean = js.native
     
     def isComputedPropertyName(node: Node): /* is typescript.typescript.ComputedPropertyName */ Boolean = js.native
+    
+    def isConciseBody(node: Node): /* is typescript.typescript.ConciseBody */ Boolean = js.native
     
     def isConditionalExpression(node: Node): /* is typescript.typescript.ConditionalExpression */ Boolean = js.native
     
@@ -6665,6 +2356,7 @@ object anon {
     
     def isElementAccessExpression(node: Node): /* is typescript.typescript.ElementAccessExpression */ Boolean = js.native
     
+    def isEmptyBindingElement(node: ArrayBindingElement): Boolean = js.native
     def isEmptyBindingElement(node: BindingElement): Boolean = js.native
     
     def isEmptyBindingPattern(node: BindingName): /* is typescript.typescript.BindingPattern */ Boolean = js.native
@@ -6677,11 +2369,20 @@ object anon {
     
     def isEnumMember(node: Node): /* is typescript.typescript.EnumMember */ Boolean = js.native
     
+    def isEqualsGreaterThanToken(node: Node): /* is typescript.typescript.EqualsGreaterThanToken */ Boolean = js.native
+    
+    def isExclamationToken(node: Node): /* is typescript.typescript.ExclamationToken */ Boolean = js.native
+    
     def isExportAssignment(node: Node): /* is typescript.typescript.ExportAssignment */ Boolean = js.native
     
     def isExportDeclaration(node: Node): /* is typescript.typescript.ExportDeclaration */ Boolean = js.native
     
     def isExportSpecifier(node: Node): /* is typescript.typescript.ExportSpecifier */ Boolean = js.native
+    
+    /**
+      * Determines whether a node is an expression based only on its kind.
+      */
+    def isExpression(node: Node): /* is typescript.typescript.Expression */ Boolean = js.native
     
     def isExpressionStatement(node: Node): /* is typescript.typescript.ExpressionStatement */ Boolean = js.native
     
@@ -6694,6 +2395,8 @@ object anon {
     def isExternalModuleReference(node: Node): /* is typescript.typescript.ExternalModuleReference */ Boolean = js.native
     
     def isForInStatement(node: Node): /* is typescript.typescript.ForInStatement */ Boolean = js.native
+    
+    def isForInitializer(node: Node): /* is typescript.typescript.ForInitializer */ Boolean = js.native
     
     def isForOfStatement(node: Node): /* is typescript.typescript.ForOfStatement */ Boolean = js.native
     
@@ -6718,10 +2421,7 @@ object anon {
     
     def isIdentifier(node: Node): /* is typescript.typescript.Identifier */ Boolean = js.native
     
-    /**
-      * @deprecated Use `isMemberName` instead.
-      */
-    def isIdentifierOrPrivateIdentifier(node: Node): /* is typescript.typescript.MemberName */ Boolean = js.native
+    def isIdentifierOrThisTypeNode(node: Node): Boolean = js.native
     
     def isIdentifierPart(ch: Double): Boolean = js.native
     def isIdentifierPart(ch: Double, languageVersion: Unit, identifierVariant: LanguageVariant): Boolean = js.native
@@ -6804,6 +2504,8 @@ object anon {
     
     def isJSDocOptionalType(node: Node): /* is typescript.typescript.JSDocOptionalType */ Boolean = js.native
     
+    def isJSDocOverloadTag(node: Node): /* is typescript.typescript.JSDocOverloadTag */ Boolean = js.native
+    
     def isJSDocOverrideTag(node: Node): /* is typescript.typescript.JSDocOverrideTag */ Boolean = js.native
     
     def isJSDocParameterTag(node: Node): /* is typescript.typescript.JSDocParameterTag */ Boolean = js.native
@@ -6822,6 +2524,8 @@ object anon {
     
     def isJSDocReturnTag(node: Node): /* is typescript.typescript.JSDocReturnTag */ Boolean = js.native
     
+    def isJSDocSatisfiesTag(node: Node): /* is typescript.typescript.JSDocSatisfiesTag */ Boolean = js.native
+    
     def isJSDocSeeTag(node: Node): /* is typescript.typescript.JSDocSeeTag */ Boolean = js.native
     
     def isJSDocSignature(node: Node): /* is typescript.typescript.JSDocSignature */ Boolean = js.native
@@ -6829,6 +2533,8 @@ object anon {
     def isJSDocTemplateTag(node: Node): /* is typescript.typescript.JSDocTemplateTag */ Boolean = js.native
     
     def isJSDocThisTag(node: Node): /* is typescript.typescript.JSDocThisTag */ Boolean = js.native
+    
+    def isJSDocThrowsTag(node: Node): /* is typescript.typescript.JSDocThrowsTag */ Boolean = js.native
     
     def isJSDocTypeExpression(node: Node): /* is typescript.typescript.JSDocTypeExpression */ Boolean = js.native
     
@@ -6846,7 +2552,11 @@ object anon {
     
     def isJsxAttribute(node: Node): /* is typescript.typescript.JsxAttribute */ Boolean = js.native
     
+    def isJsxAttributeLike(node: Node): /* is typescript.typescript.JsxAttributeLike */ Boolean = js.native
+    
     def isJsxAttributes(node: Node): /* is typescript.typescript.JsxAttributes */ Boolean = js.native
+    
+    def isJsxChild(node: Node): /* is typescript.typescript.JsxChild */ Boolean = js.native
     
     def isJsxClosingElement(node: Node): /* is typescript.typescript.JsxClosingElement */ Boolean = js.native
     
@@ -6868,13 +2578,19 @@ object anon {
     
     def isJsxSpreadAttribute(node: Node): /* is typescript.typescript.JsxSpreadAttribute */ Boolean = js.native
     
+    def isJsxTagNameExpression(node: Node): /* is typescript.typescript.JsxTagNameExpression */ Boolean = js.native
+    
     def isJsxText(node: Node): /* is typescript.typescript.JsxText */ Boolean = js.native
     
     def isLabeledStatement(node: Node): /* is typescript.typescript.LabeledStatement */ Boolean = js.native
     
+    def isLeftHandSideExpression(node: Node): /* is typescript.typescript.LeftHandSideExpression */ Boolean = js.native
+    
     def isLineBreak(ch: Double): Boolean = js.native
     
     def isLiteralExpression(node: Node): /* is typescript.typescript.LiteralExpression */ Boolean = js.native
+    
+    def isLiteralTypeLiteral(node: Node): Boolean = js.native
     
     def isLiteralTypeNode(node: Node): /* is typescript.typescript.LiteralTypeNode */ Boolean = js.native
     
@@ -6898,11 +2614,19 @@ object anon {
     
     def isModuleBlock(node: Node): /* is typescript.typescript.ModuleBlock */ Boolean = js.native
     
+    def isModuleBody(node: Node): /* is typescript.typescript.ModuleBody */ Boolean = js.native
+    
     def isModuleDeclaration(node: Node): /* is typescript.typescript.ModuleDeclaration */ Boolean = js.native
+    
+    def isModuleName(node: Node): /* is typescript.typescript.ModuleName */ Boolean = js.native
+    
+    def isModuleReference(node: Node): /* is typescript.typescript.ModuleReference */ Boolean = js.native
     
     def isNamedExportBindings(node: Node): /* is typescript.typescript.NamedExportBindings */ Boolean = js.native
     
     def isNamedExports(node: Node): /* is typescript.typescript.NamedExports */ Boolean = js.native
+    
+    def isNamedImportBindings(node: Node): /* is typescript.typescript.NamedImportBindings */ Boolean = js.native
     
     def isNamedImports(node: Node): /* is typescript.typescript.NamedImports */ Boolean = js.native
     
@@ -6983,6 +2707,16 @@ object anon {
     
     def isQualifiedName(node: Node): /* is typescript.typescript.QualifiedName */ Boolean = js.native
     
+    def isQuestionDotToken(node: Node): /* is typescript.typescript.QuestionDotToken */ Boolean = js.native
+    
+    def isQuestionOrExclamationToken(node: Node): Boolean = js.native
+    
+    def isQuestionOrPlusOrMinusToken(node: Node): Boolean = js.native
+    
+    def isQuestionToken(node: Node): /* is typescript.typescript.QuestionToken */ Boolean = js.native
+    
+    def isReadonlyKeywordOrPlusOrMinusToken(node: Node): Boolean = js.native
+    
     def isRegularExpressionLiteral(node: Node): /* is typescript.typescript.RegularExpressionLiteral */ Boolean = js.native
     
     def isRestParameter(node: JSDocParameterTag): Boolean = js.native
@@ -7008,9 +2742,14 @@ object anon {
     
     def isSpreadElement(node: Node): /* is typescript.typescript.SpreadElement */ Boolean = js.native
     
+    def isStatement(node: Node): /* is typescript.typescript.Statement */ Boolean = js.native
+    
     def isStringLiteral(node: Node): /* is typescript.typescript.StringLiteral */ Boolean = js.native
     
+    def isStringLiteralLike(node: FileReference): /* is typescript.typescript.StringLiteralLike */ Boolean = js.native
     def isStringLiteralLike(node: Node): /* is typescript.typescript.StringLiteralLike */ Boolean = js.native
+    
+    def isStringLiteralOrJsxExpression(node: Node): Boolean = js.native
     
     def isStringTextContainingNode(node: Node): Boolean = js.native
     
@@ -7064,9 +2803,6 @@ object anon {
     
     def isTypeAliasDeclaration(node: Node): /* is typescript.typescript.TypeAliasDeclaration */ Boolean = js.native
     
-    /** @deprecated Use `isTypeAssertionExpression` instead. */
-    def isTypeAssertion(node: Node): /* is typescript.typescript.TypeAssertion */ Boolean = js.native
-    
     def isTypeAssertionExpression(node: Node): /* is typescript.typescript.TypeAssertion */ Boolean = js.native
     
     def isTypeElement(node: Node): /* is typescript.typescript.TypeElement */ Boolean = js.native
@@ -7082,6 +2818,10 @@ object anon {
     
     def isTypeOfExpression(node: Node): /* is typescript.typescript.TypeOfExpression */ Boolean = js.native
     
+    def isTypeOnlyExportDeclaration(node: Node): /* is typescript.typescript.TypeOnlyExportDeclaration */ Boolean = js.native
+    
+    def isTypeOnlyImportDeclaration(node: Node): /* is typescript.typescript.TypeOnlyImportDeclaration */ Boolean = js.native
+    
     def isTypeOnlyImportOrExportDeclaration(node: Node): /* is typescript.typescript.TypeOnlyAliasDeclaration */ Boolean = js.native
     
     def isTypeOperatorNode(node: Node): /* is typescript.typescript.TypeOperatorNode */ Boolean = js.native
@@ -7096,12 +2836,16 @@ object anon {
     
     def isUnionTypeNode(node: Node): /* is typescript.typescript.UnionTypeNode */ Boolean = js.native
     
+    /** @deprecated */
     def isUnparsedNode(node: Node): /* is typescript.typescript.UnparsedNode */ Boolean = js.native
     
+    /** @deprecated */
     def isUnparsedPrepend(node: Node): /* is typescript.typescript.UnparsedPrepend */ Boolean = js.native
     
+    /** @deprecated */
     def isUnparsedSource(node: Node): /* is typescript.typescript.UnparsedSource */ Boolean = js.native
     
+    /** @deprecated */
     def isUnparsedTextLike(node: Node): /* is typescript.typescript.UnparsedTextLike */ Boolean = js.native
     
     def isVariableDeclaration(node: Node): /* is typescript.typescript.VariableDeclaration */ Boolean = js.native
@@ -7163,10 +2907,22 @@ object anon {
     def parseCommandLine(commandLine: js.Array[String]): ParsedCommandLine = js.native
     def parseCommandLine(commandLine: js.Array[String], readFile: js.Function1[/* path */ String, js.UndefOr[String]]): ParsedCommandLine = js.native
     
+    /**
+      * Parse the text of the tsconfig.json file
+      * @param fileName The path to the config file
+      * @param jsonText The text of the config file
+      */
     def parseConfigFileTextToJson(fileName: String, jsonText: String): Config = js.native
     
     def parseIsolatedEntityName(text: String, languageVersion: ScriptTarget): js.UndefOr[EntityName] = js.native
     
+    /**
+      * Parse the contents of a config file (tsconfig.json).
+      * @param json The contents of the config file to parse
+      * @param host Instance of ParseConfigHost used to enumerate files in folder.
+      * @param basePath A root directory to resolve relative path entries in the config
+      *    file to. e.g. outDir
+      */
     def parseJsonConfigFileContent(
       json: Any,
       host: ParseConfigHost,
@@ -7175,10 +2931,17 @@ object anon {
       configFileName: js.UndefOr[String],
       resolutionStack: js.UndefOr[js.Array[Path]],
       extraFileExtensions: js.UndefOr[js.Array[FileExtensionInfo]],
-      extendedConfigCache: js.UndefOr[Map[ExtendedConfigCacheEntry]],
+      extendedConfigCache: js.UndefOr[Map[String, ExtendedConfigCacheEntry]],
       existingWatchOptions: js.UndefOr[WatchOptions]
     ): ParsedCommandLine = js.native
     
+    /**
+      * Parse the contents of a config file (tsconfig.json).
+      * @param jsonNode The contents of the config file to parse
+      * @param host Instance of ParseConfigHost used to enumerate files in folder.
+      * @param basePath A root directory to resolve relative path entries in the config
+      *    file to. e.g. outDir
+      */
     def parseJsonSourceFileConfigFileContent(
       sourceFile: TsConfigSourceFile,
       host: ParseConfigHost,
@@ -7187,10 +2950,15 @@ object anon {
       configFileName: js.UndefOr[String],
       resolutionStack: js.UndefOr[js.Array[Path]],
       extraFileExtensions: js.UndefOr[js.Array[FileExtensionInfo]],
-      extendedConfigCache: js.UndefOr[Map[ExtendedConfigCacheEntry]],
+      extendedConfigCache: js.UndefOr[Map[String, ExtendedConfigCacheEntry]],
       existingWatchOptions: js.UndefOr[WatchOptions]
     ): ParsedCommandLine = js.native
     
+    /**
+      * Parse json text into SyntaxTree and return node and parse errors if any
+      * @param fileName
+      * @param sourceText
+      */
     def parseJsonText(fileName: String, sourceText: String): JsonSourceFile = js.native
     
     def preProcessFile(sourceText: String): PreProcessedFileInfo = js.native
@@ -7200,20 +2968,27 @@ object anon {
     
     def readBuilderProgram(compilerOptions: CompilerOptions, host: ReadBuildProgramHost): js.UndefOr[EmitAndSemanticDiagnosticsBuilderProgram] = js.native
     
+    /**
+      * Read tsconfig.json file
+      * @param fileName The path to the config file
+      */
     def readConfigFile(fileName: String, readFile: js.Function1[/* path */ String, js.UndefOr[String]]): Config = js.native
     
+    /**
+      * Read tsconfig.json file
+      * @param fileName The path to the config file
+      */
     def readJsonConfigFile(fileName: String, readFile: js.Function1[/* path */ String, js.UndefOr[String]]): TsConfigSourceFile = js.native
     
     def reduceEachLeadingCommentRange[T, U](
       text: String,
       pos: Double,
-      cb: js.Function6[
+      cb: js.Function5[
           /* pos */ Double, 
           /* end */ Double, 
           /* kind */ CommentKind, 
           /* hasTrailingNewLine */ Boolean, 
           /* state */ T, 
-          /* memo */ U, 
           U
         ],
       state: T,
@@ -7223,13 +2998,12 @@ object anon {
     def reduceEachTrailingCommentRange[T, U](
       text: String,
       pos: Double,
-      cb: js.Function6[
+      cb: js.Function5[
           /* pos */ Double, 
           /* end */ Double, 
           /* kind */ CommentKind, 
           /* hasTrailingNewLine */ Boolean, 
           /* state */ T, 
-          /* memo */ U, 
           U
         ],
       state: T,
@@ -7254,16 +3028,7 @@ object anon {
       host: ModuleResolutionHost,
       cache: Unit,
       redirectedReference: Unit,
-      resolutionMode: CommonJS
-    ): ResolvedModuleWithFailedLookupLocations = js.native
-    def resolveModuleName(
-      moduleName: String,
-      containingFile: String,
-      compilerOptions: CompilerOptions,
-      host: ModuleResolutionHost,
-      cache: Unit,
-      redirectedReference: Unit,
-      resolutionMode: ESNext
+      resolutionMode: ResolutionMode
     ): ResolvedModuleWithFailedLookupLocations = js.native
     def resolveModuleName(
       moduleName: String,
@@ -7280,16 +3045,7 @@ object anon {
       host: ModuleResolutionHost,
       cache: Unit,
       redirectedReference: ResolvedProjectReference,
-      resolutionMode: CommonJS
-    ): ResolvedModuleWithFailedLookupLocations = js.native
-    def resolveModuleName(
-      moduleName: String,
-      containingFile: String,
-      compilerOptions: CompilerOptions,
-      host: ModuleResolutionHost,
-      cache: Unit,
-      redirectedReference: ResolvedProjectReference,
-      resolutionMode: ESNext
+      resolutionMode: ResolutionMode
     ): ResolvedModuleWithFailedLookupLocations = js.native
     def resolveModuleName(
       moduleName: String,
@@ -7305,16 +3061,7 @@ object anon {
       host: ModuleResolutionHost,
       cache: ModuleResolutionCache,
       redirectedReference: Unit,
-      resolutionMode: CommonJS
-    ): ResolvedModuleWithFailedLookupLocations = js.native
-    def resolveModuleName(
-      moduleName: String,
-      containingFile: String,
-      compilerOptions: CompilerOptions,
-      host: ModuleResolutionHost,
-      cache: ModuleResolutionCache,
-      redirectedReference: Unit,
-      resolutionMode: ESNext
+      resolutionMode: ResolutionMode
     ): ResolvedModuleWithFailedLookupLocations = js.native
     def resolveModuleName(
       moduleName: String,
@@ -7331,27 +3078,25 @@ object anon {
       host: ModuleResolutionHost,
       cache: ModuleResolutionCache,
       redirectedReference: ResolvedProjectReference,
-      resolutionMode: CommonJS
-    ): ResolvedModuleWithFailedLookupLocations = js.native
-    def resolveModuleName(
-      moduleName: String,
-      containingFile: String,
-      compilerOptions: CompilerOptions,
-      host: ModuleResolutionHost,
-      cache: ModuleResolutionCache,
-      redirectedReference: ResolvedProjectReference,
-      resolutionMode: ESNext
+      resolutionMode: ResolutionMode
     ): ResolvedModuleWithFailedLookupLocations = js.native
     
     def resolveModuleNameFromCache(moduleName: String, containingFile: String, cache: ModuleResolutionCache): js.UndefOr[ResolvedModuleWithFailedLookupLocations] = js.native
-    def resolveModuleNameFromCache(moduleName: String, containingFile: String, cache: ModuleResolutionCache, mode: CommonJS): js.UndefOr[ResolvedModuleWithFailedLookupLocations] = js.native
-    def resolveModuleNameFromCache(moduleName: String, containingFile: String, cache: ModuleResolutionCache, mode: ESNext): js.UndefOr[ResolvedModuleWithFailedLookupLocations] = js.native
+    def resolveModuleNameFromCache(moduleName: String, containingFile: String, cache: ModuleResolutionCache, mode: ResolutionMode): js.UndefOr[ResolvedModuleWithFailedLookupLocations] = js.native
     
-    def resolveProjectReferencePath(host: ResolveProjectReferencePathHost, ref: ProjectReference): ResolvedConfigFileName = js.native
+    /**
+      * Returns the target config filename of a project reference.
+      * Note: The file might not exist.
+      */
     def resolveProjectReferencePath(ref: ProjectReference): ResolvedConfigFileName = js.native
     
     def resolveTripleslashReference(moduleName: String, containingFile: String): String = js.native
     
+    /**
+      * @param {string | undefined} containingFile - file that contains type reference directive, can be undefined if containing file is unknown.
+      * This is possible in case if resolution is performed for directives specified via 'types' parameter. In this case initial path for secondary lookups
+      * is assumed to be the same as root directory of the project.
+      */
     def resolveTypeReferenceDirective(
       typeReferenceDirectiveName: String,
       containingFile: String,
@@ -7365,16 +3110,7 @@ object anon {
       host: ModuleResolutionHost,
       redirectedReference: Unit,
       cache: Unit,
-      resolutionMode: CommonJS
-    ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = js.native
-    def resolveTypeReferenceDirective(
-      typeReferenceDirectiveName: String,
-      containingFile: String,
-      options: CompilerOptions,
-      host: ModuleResolutionHost,
-      redirectedReference: Unit,
-      cache: Unit,
-      resolutionMode: ESNext
+      resolutionMode: ResolutionMode
     ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = js.native
     def resolveTypeReferenceDirective(
       typeReferenceDirectiveName: String,
@@ -7391,16 +3127,7 @@ object anon {
       host: ModuleResolutionHost,
       redirectedReference: Unit,
       cache: TypeReferenceDirectiveResolutionCache,
-      resolutionMode: CommonJS
-    ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = js.native
-    def resolveTypeReferenceDirective(
-      typeReferenceDirectiveName: String,
-      containingFile: String,
-      options: CompilerOptions,
-      host: ModuleResolutionHost,
-      redirectedReference: Unit,
-      cache: TypeReferenceDirectiveResolutionCache,
-      resolutionMode: ESNext
+      resolutionMode: ResolutionMode
     ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = js.native
     def resolveTypeReferenceDirective(
       typeReferenceDirectiveName: String,
@@ -7416,16 +3143,7 @@ object anon {
       host: ModuleResolutionHost,
       redirectedReference: ResolvedProjectReference,
       cache: Unit,
-      resolutionMode: CommonJS
-    ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = js.native
-    def resolveTypeReferenceDirective(
-      typeReferenceDirectiveName: String,
-      containingFile: String,
-      options: CompilerOptions,
-      host: ModuleResolutionHost,
-      redirectedReference: ResolvedProjectReference,
-      cache: Unit,
-      resolutionMode: ESNext
+      resolutionMode: ResolutionMode
     ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = js.native
     def resolveTypeReferenceDirective(
       typeReferenceDirectiveName: String,
@@ -7442,16 +3160,7 @@ object anon {
       host: ModuleResolutionHost,
       redirectedReference: ResolvedProjectReference,
       cache: TypeReferenceDirectiveResolutionCache,
-      resolutionMode: CommonJS
-    ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = js.native
-    def resolveTypeReferenceDirective(
-      typeReferenceDirectiveName: String,
-      containingFile: String,
-      options: CompilerOptions,
-      host: ModuleResolutionHost,
-      redirectedReference: ResolvedProjectReference,
-      cache: TypeReferenceDirectiveResolutionCache,
-      resolutionMode: ESNext
+      resolutionMode: ResolutionMode
     ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = js.native
     def resolveTypeReferenceDirective(
       typeReferenceDirectiveName: String,
@@ -7466,16 +3175,7 @@ object anon {
       host: ModuleResolutionHost,
       redirectedReference: Unit,
       cache: Unit,
-      resolutionMode: CommonJS
-    ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = js.native
-    def resolveTypeReferenceDirective(
-      typeReferenceDirectiveName: String,
-      containingFile: Unit,
-      options: CompilerOptions,
-      host: ModuleResolutionHost,
-      redirectedReference: Unit,
-      cache: Unit,
-      resolutionMode: ESNext
+      resolutionMode: ResolutionMode
     ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = js.native
     def resolveTypeReferenceDirective(
       typeReferenceDirectiveName: String,
@@ -7492,16 +3192,7 @@ object anon {
       host: ModuleResolutionHost,
       redirectedReference: Unit,
       cache: TypeReferenceDirectiveResolutionCache,
-      resolutionMode: CommonJS
-    ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = js.native
-    def resolveTypeReferenceDirective(
-      typeReferenceDirectiveName: String,
-      containingFile: Unit,
-      options: CompilerOptions,
-      host: ModuleResolutionHost,
-      redirectedReference: Unit,
-      cache: TypeReferenceDirectiveResolutionCache,
-      resolutionMode: ESNext
+      resolutionMode: ResolutionMode
     ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = js.native
     def resolveTypeReferenceDirective(
       typeReferenceDirectiveName: String,
@@ -7517,16 +3208,7 @@ object anon {
       host: ModuleResolutionHost,
       redirectedReference: ResolvedProjectReference,
       cache: Unit,
-      resolutionMode: CommonJS
-    ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = js.native
-    def resolveTypeReferenceDirective(
-      typeReferenceDirectiveName: String,
-      containingFile: Unit,
-      options: CompilerOptions,
-      host: ModuleResolutionHost,
-      redirectedReference: ResolvedProjectReference,
-      cache: Unit,
-      resolutionMode: ESNext
+      resolutionMode: ResolutionMode
     ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = js.native
     def resolveTypeReferenceDirective(
       typeReferenceDirectiveName: String,
@@ -7543,16 +3225,7 @@ object anon {
       host: ModuleResolutionHost,
       redirectedReference: ResolvedProjectReference,
       cache: TypeReferenceDirectiveResolutionCache,
-      resolutionMode: CommonJS
-    ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = js.native
-    def resolveTypeReferenceDirective(
-      typeReferenceDirectiveName: String,
-      containingFile: Unit,
-      options: CompilerOptions,
-      host: ModuleResolutionHost,
-      redirectedReference: ResolvedProjectReference,
-      cache: TypeReferenceDirectiveResolutionCache,
-      resolutionMode: ESNext
+      resolutionMode: ResolutionMode
     ): ResolvedTypeReferenceDirectiveWithFailedLookupLocations = js.native
     
     val server: Any = js.native
@@ -7723,2521 +3396,6 @@ object anon {
       */
     def unescapeLeadingUnderscores(identifier: typings.typescript.mod.String): String = js.native
     
-    /** @deprecated Use `factory.updateArrayBindingPattern` or the factory supplied by your transformation context instead. */
-    def updateArrayBindingPattern(node: ArrayBindingPattern, elements: js.Array[ArrayBindingElement]): ArrayBindingPattern = js.native
-    
-    /** @deprecated Use `factory.updateArrayLiteralExpression` or the factory supplied by your transformation context instead. */
-    def updateArrayLiteral(node: ArrayLiteralExpression, elements: js.Array[Expression]): ArrayLiteralExpression = js.native
-    
-    /** @deprecated Use `factory.updateArrayTypeNode` or the factory supplied by your transformation context instead. */
-    def updateArrayTypeNode(node: ArrayTypeNode, elementType: TypeNode): ArrayTypeNode = js.native
-    
-    def updateArrowFunction(
-      node: ArrowFunction,
-      modifiers: js.Array[Modifier],
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      body: ConciseBody
-    ): ArrowFunction = js.native
-    def updateArrowFunction(
-      node: ArrowFunction,
-      modifiers: js.Array[Modifier],
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      equalsGreaterThanToken: EqualsGreaterThanToken,
-      body: ConciseBody
-    ): ArrowFunction = js.native
-    /** @deprecated Use `factory.updateArrowFunction` or the factory supplied by your transformation context instead. */
-    def updateArrowFunction(
-      node: ArrowFunction,
-      modifiers: js.Array[Modifier],
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      body: ConciseBody
-    ): ArrowFunction = js.native
-    /** @deprecated Use `factory.updateArrowFunction` or the factory supplied by your transformation context instead. */
-    def updateArrowFunction(
-      node: ArrowFunction,
-      modifiers: js.Array[Modifier],
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      equalsGreaterThanToken: EqualsGreaterThanToken,
-      body: ConciseBody
-    ): ArrowFunction = js.native
-    def updateArrowFunction(
-      node: ArrowFunction,
-      modifiers: js.Array[Modifier],
-      typeParameters: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      body: ConciseBody
-    ): ArrowFunction = js.native
-    def updateArrowFunction(
-      node: ArrowFunction,
-      modifiers: js.Array[Modifier],
-      typeParameters: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      equalsGreaterThanToken: EqualsGreaterThanToken,
-      body: ConciseBody
-    ): ArrowFunction = js.native
-    def updateArrowFunction(
-      node: ArrowFunction,
-      modifiers: js.Array[Modifier],
-      typeParameters: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      body: ConciseBody
-    ): ArrowFunction = js.native
-    def updateArrowFunction(
-      node: ArrowFunction,
-      modifiers: js.Array[Modifier],
-      typeParameters: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      equalsGreaterThanToken: EqualsGreaterThanToken,
-      body: ConciseBody
-    ): ArrowFunction = js.native
-    def updateArrowFunction(
-      node: ArrowFunction,
-      modifiers: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      body: ConciseBody
-    ): ArrowFunction = js.native
-    def updateArrowFunction(
-      node: ArrowFunction,
-      modifiers: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      equalsGreaterThanToken: EqualsGreaterThanToken,
-      body: ConciseBody
-    ): ArrowFunction = js.native
-    def updateArrowFunction(
-      node: ArrowFunction,
-      modifiers: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      body: ConciseBody
-    ): ArrowFunction = js.native
-    def updateArrowFunction(
-      node: ArrowFunction,
-      modifiers: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      equalsGreaterThanToken: EqualsGreaterThanToken,
-      body: ConciseBody
-    ): ArrowFunction = js.native
-    def updateArrowFunction(
-      node: ArrowFunction,
-      modifiers: Unit,
-      typeParameters: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      body: ConciseBody
-    ): ArrowFunction = js.native
-    def updateArrowFunction(
-      node: ArrowFunction,
-      modifiers: Unit,
-      typeParameters: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      equalsGreaterThanToken: EqualsGreaterThanToken,
-      body: ConciseBody
-    ): ArrowFunction = js.native
-    def updateArrowFunction(
-      node: ArrowFunction,
-      modifiers: Unit,
-      typeParameters: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      body: ConciseBody
-    ): ArrowFunction = js.native
-    def updateArrowFunction(
-      node: ArrowFunction,
-      modifiers: Unit,
-      typeParameters: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      equalsGreaterThanToken: EqualsGreaterThanToken,
-      body: ConciseBody
-    ): ArrowFunction = js.native
-    
-    /** @deprecated Use `factory.updateAsExpression` or the factory supplied by your transformation context instead. */
-    def updateAsExpression(node: AsExpression, expression: Expression, `type`: TypeNode): AsExpression = js.native
-    
-    /** @deprecated Use `factory.updateAwaitExpression` or the factory supplied by your transformation context instead. */
-    def updateAwait(node: AwaitExpression, expression: Expression): AwaitExpression = js.native
-    
-    /** @deprecated Use `factory.updateBinary` or the factory supplied by your transformation context instead. */
-    def updateBinary(node: BinaryExpression, left: Expression, right: Expression): BinaryExpression = js.native
-    def updateBinary(node: BinaryExpression, left: Expression, right: Expression, operator: BinaryOperator): BinaryExpression = js.native
-    def updateBinary(node: BinaryExpression, left: Expression, right: Expression, operator: BinaryOperatorToken): BinaryExpression = js.native
-    
-    def updateBindingElement(node: BindingElement, dotDotDotToken: Unit, propertyName: Unit, name: BindingName): BindingElement = js.native
-    def updateBindingElement(
-      node: BindingElement,
-      dotDotDotToken: Unit,
-      propertyName: Unit,
-      name: BindingName,
-      initializer: Expression
-    ): BindingElement = js.native
-    def updateBindingElement(node: BindingElement, dotDotDotToken: Unit, propertyName: PropertyName, name: BindingName): BindingElement = js.native
-    def updateBindingElement(
-      node: BindingElement,
-      dotDotDotToken: Unit,
-      propertyName: PropertyName,
-      name: BindingName,
-      initializer: Expression
-    ): BindingElement = js.native
-    def updateBindingElement(node: BindingElement, dotDotDotToken: DotDotDotToken, propertyName: Unit, name: BindingName): BindingElement = js.native
-    def updateBindingElement(
-      node: BindingElement,
-      dotDotDotToken: DotDotDotToken,
-      propertyName: Unit,
-      name: BindingName,
-      initializer: Expression
-    ): BindingElement = js.native
-    /** @deprecated Use `factory.updateBindingElement` or the factory supplied by your transformation context instead. */
-    def updateBindingElement(
-      node: BindingElement,
-      dotDotDotToken: DotDotDotToken,
-      propertyName: PropertyName,
-      name: BindingName
-    ): BindingElement = js.native
-    def updateBindingElement(
-      node: BindingElement,
-      dotDotDotToken: DotDotDotToken,
-      propertyName: PropertyName,
-      name: BindingName,
-      initializer: Expression
-    ): BindingElement = js.native
-    
-    /** @deprecated Use `factory.updateBlock` or the factory supplied by your transformation context instead. */
-    def updateBlock(node: Block, statements: js.Array[Statement]): Block = js.native
-    
-    /** @deprecated Use `factory.updateBreakStatement` or the factory supplied by your transformation context instead. */
-    def updateBreak(node: BreakStatement): BreakStatement = js.native
-    def updateBreak(node: BreakStatement, label: Identifier): BreakStatement = js.native
-    
-    /** @deprecated Use `factory.updateBundle` or the factory supplied by your transformation context instead. */
-    def updateBundle(node: Bundle, sourceFiles: js.Array[SourceFile]): Bundle = js.native
-    def updateBundle(node: Bundle, sourceFiles: js.Array[SourceFile], prepends: js.Array[UnparsedSource | InputFiles]): Bundle = js.native
-    
-    /** @deprecated Use `factory.updateCallExpression` or the factory supplied by your transformation context instead. */
-    def updateCall(
-      node: CallExpression,
-      expression: Expression,
-      typeArguments: js.Array[TypeNode],
-      argumentsArray: js.Array[Expression]
-    ): CallExpression = js.native
-    def updateCall(
-      node: CallExpression,
-      expression: Expression,
-      typeArguments: Unit,
-      argumentsArray: js.Array[Expression]
-    ): CallExpression = js.native
-    
-    def updateCallChain(
-      node: CallChain,
-      expression: Expression,
-      questionDotToken: Unit,
-      typeArguments: js.Array[TypeNode],
-      argumentsArray: js.Array[Expression]
-    ): CallChain = js.native
-    def updateCallChain(
-      node: CallChain,
-      expression: Expression,
-      questionDotToken: Unit,
-      typeArguments: Unit,
-      argumentsArray: js.Array[Expression]
-    ): CallChain = js.native
-    /** @deprecated Use `factory.updateCallChain` or the factory supplied by your transformation context instead. */
-    def updateCallChain(
-      node: CallChain,
-      expression: Expression,
-      questionDotToken: QuestionDotToken,
-      typeArguments: js.Array[TypeNode],
-      argumentsArray: js.Array[Expression]
-    ): CallChain = js.native
-    def updateCallChain(
-      node: CallChain,
-      expression: Expression,
-      questionDotToken: QuestionDotToken,
-      typeArguments: Unit,
-      argumentsArray: js.Array[Expression]
-    ): CallChain = js.native
-    
-    def updateCallSignature(node: CallSignatureDeclaration, typeParameters: Unit, parameters: NodeArray[ParameterDeclaration]): CallSignatureDeclaration = js.native
-    def updateCallSignature(
-      node: CallSignatureDeclaration,
-      typeParameters: Unit,
-      parameters: NodeArray[ParameterDeclaration],
-      `type`: TypeNode
-    ): CallSignatureDeclaration = js.native
-    /** @deprecated Use `factory.updateCallSignature` or the factory supplied by your transformation context instead. */
-    def updateCallSignature(
-      node: CallSignatureDeclaration,
-      typeParameters: NodeArray[TypeParameterDeclaration],
-      parameters: NodeArray[ParameterDeclaration]
-    ): CallSignatureDeclaration = js.native
-    def updateCallSignature(
-      node: CallSignatureDeclaration,
-      typeParameters: NodeArray[TypeParameterDeclaration],
-      parameters: NodeArray[ParameterDeclaration],
-      `type`: TypeNode
-    ): CallSignatureDeclaration = js.native
-    
-    /** @deprecated Use `factory.updateCaseBlock` or the factory supplied by your transformation context instead. */
-    def updateCaseBlock(node: CaseBlock, clauses: js.Array[CaseOrDefaultClause]): CaseBlock = js.native
-    
-    /** @deprecated Use `factory.updateCaseClause` or the factory supplied by your transformation context instead. */
-    def updateCaseClause(node: CaseClause, expression: Expression, statements: js.Array[Statement]): CaseClause = js.native
-    
-    def updateCatchClause(node: CatchClause, variableDeclaration: Unit, block: Block): CatchClause = js.native
-    /** @deprecated Use `factory.updateCatchClause` or the factory supplied by your transformation context instead. */
-    def updateCatchClause(node: CatchClause, variableDeclaration: VariableDeclaration, block: Block): CatchClause = js.native
-    
-    def updateClassDeclaration(
-      node: ClassDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def updateClassDeclaration(
-      node: ClassDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def updateClassDeclaration(
-      node: ClassDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: Unit,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def updateClassDeclaration(
-      node: ClassDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: Unit,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    /** @deprecated Use `factory.updateClassDeclaration` or the factory supplied by your transformation context instead. */
-    def updateClassDeclaration(
-      node: ClassDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def updateClassDeclaration(
-      node: ClassDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def updateClassDeclaration(
-      node: ClassDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def updateClassDeclaration(
-      node: ClassDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def updateClassDeclaration(
-      node: ClassDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def updateClassDeclaration(
-      node: ClassDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def updateClassDeclaration(
-      node: ClassDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: Unit,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def updateClassDeclaration(
-      node: ClassDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: Unit,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def updateClassDeclaration(
-      node: ClassDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def updateClassDeclaration(
-      node: ClassDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def updateClassDeclaration(
-      node: ClassDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def updateClassDeclaration(
-      node: ClassDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def updateClassDeclaration(
-      node: ClassDeclaration,
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def updateClassDeclaration(
-      node: ClassDeclaration,
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def updateClassDeclaration(
-      node: ClassDeclaration,
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: Unit,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def updateClassDeclaration(
-      node: ClassDeclaration,
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: Unit,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def updateClassDeclaration(
-      node: ClassDeclaration,
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def updateClassDeclaration(
-      node: ClassDeclaration,
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def updateClassDeclaration(
-      node: ClassDeclaration,
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def updateClassDeclaration(
-      node: ClassDeclaration,
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def updateClassDeclaration(
-      node: ClassDeclaration,
-      decorators: Unit,
-      modifiers: Unit,
-      name: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def updateClassDeclaration(
-      node: ClassDeclaration,
-      decorators: Unit,
-      modifiers: Unit,
-      name: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def updateClassDeclaration(
-      node: ClassDeclaration,
-      decorators: Unit,
-      modifiers: Unit,
-      name: Unit,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def updateClassDeclaration(
-      node: ClassDeclaration,
-      decorators: Unit,
-      modifiers: Unit,
-      name: Unit,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def updateClassDeclaration(
-      node: ClassDeclaration,
-      decorators: Unit,
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def updateClassDeclaration(
-      node: ClassDeclaration,
-      decorators: Unit,
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def updateClassDeclaration(
-      node: ClassDeclaration,
-      decorators: Unit,
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def updateClassDeclaration(
-      node: ClassDeclaration,
-      decorators: Unit,
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def updateClassDeclaration(
-      node: ClassDeclaration,
-      modifiers: js.Array[ModifierLike],
-      name: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def updateClassDeclaration(
-      node: ClassDeclaration,
-      modifiers: js.Array[ModifierLike],
-      name: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def updateClassDeclaration(
-      node: ClassDeclaration,
-      modifiers: js.Array[ModifierLike],
-      name: Unit,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def updateClassDeclaration(
-      node: ClassDeclaration,
-      modifiers: js.Array[ModifierLike],
-      name: Unit,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    /** @deprecated Use `factory.updateClassDeclaration` or the factory supplied by your transformation context instead. */
-    def updateClassDeclaration(
-      node: ClassDeclaration,
-      modifiers: js.Array[ModifierLike],
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def updateClassDeclaration(
-      node: ClassDeclaration,
-      modifiers: js.Array[ModifierLike],
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def updateClassDeclaration(
-      node: ClassDeclaration,
-      modifiers: js.Array[ModifierLike],
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def updateClassDeclaration(
-      node: ClassDeclaration,
-      modifiers: js.Array[ModifierLike],
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def updateClassDeclaration(
-      node: ClassDeclaration,
-      modifiers: Unit,
-      name: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def updateClassDeclaration(
-      node: ClassDeclaration,
-      modifiers: Unit,
-      name: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def updateClassDeclaration(
-      node: ClassDeclaration,
-      modifiers: Unit,
-      name: Unit,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def updateClassDeclaration(
-      node: ClassDeclaration,
-      modifiers: Unit,
-      name: Unit,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def updateClassDeclaration(
-      node: ClassDeclaration,
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def updateClassDeclaration(
-      node: ClassDeclaration,
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def updateClassDeclaration(
-      node: ClassDeclaration,
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    def updateClassDeclaration(
-      node: ClassDeclaration,
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassDeclaration = js.native
-    
-    def updateClassExpression(
-      node: ClassExpression,
-      modifiers: js.Array[Modifier],
-      name: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassExpression = js.native
-    def updateClassExpression(
-      node: ClassExpression,
-      modifiers: js.Array[Modifier],
-      name: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassExpression = js.native
-    def updateClassExpression(
-      node: ClassExpression,
-      modifiers: js.Array[Modifier],
-      name: Unit,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassExpression = js.native
-    def updateClassExpression(
-      node: ClassExpression,
-      modifiers: js.Array[Modifier],
-      name: Unit,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassExpression = js.native
-    /** @deprecated Use `factory.updateClassExpression` or the factory supplied by your transformation context instead. */
-    def updateClassExpression(
-      node: ClassExpression,
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassExpression = js.native
-    def updateClassExpression(
-      node: ClassExpression,
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassExpression = js.native
-    def updateClassExpression(
-      node: ClassExpression,
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassExpression = js.native
-    def updateClassExpression(
-      node: ClassExpression,
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassExpression = js.native
-    def updateClassExpression(
-      node: ClassExpression,
-      modifiers: Unit,
-      name: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassExpression = js.native
-    def updateClassExpression(
-      node: ClassExpression,
-      modifiers: Unit,
-      name: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassExpression = js.native
-    def updateClassExpression(
-      node: ClassExpression,
-      modifiers: Unit,
-      name: Unit,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassExpression = js.native
-    def updateClassExpression(
-      node: ClassExpression,
-      modifiers: Unit,
-      name: Unit,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassExpression = js.native
-    def updateClassExpression(
-      node: ClassExpression,
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassExpression = js.native
-    def updateClassExpression(
-      node: ClassExpression,
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassExpression = js.native
-    def updateClassExpression(
-      node: ClassExpression,
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[ClassElement]
-    ): ClassExpression = js.native
-    def updateClassExpression(
-      node: ClassExpression,
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[ClassElement]
-    ): ClassExpression = js.native
-    
-    /** @deprecated Use `factory.updateCommaListExpression` or the factory supplied by your transformation context instead. */
-    def updateCommaList(node: CommaListExpression, elements: js.Array[Expression]): CommaListExpression = js.native
-    
-    /** @deprecated Use `factory.updateComputedPropertyName` or the factory supplied by your transformation context instead. */
-    def updateComputedPropertyName(node: ComputedPropertyName, expression: Expression): ComputedPropertyName = js.native
-    
-    /** @deprecated Use `factory.updateConditionalExpression` or the factory supplied by your transformation context instead. */
-    def updateConditional(
-      node: ConditionalExpression,
-      condition: Expression,
-      questionToken: QuestionToken,
-      whenTrue: Expression,
-      colonToken: ColonToken,
-      whenFalse: Expression
-    ): ConditionalExpression = js.native
-    
-    /** @deprecated Use `factory.updateConditionalTypeNode` or the factory supplied by your transformation context instead. */
-    def updateConditionalTypeNode(
-      node: ConditionalTypeNode,
-      checkType: TypeNode,
-      extendsType: TypeNode,
-      trueType: TypeNode,
-      falseType: TypeNode
-    ): ConditionalTypeNode = js.native
-    
-    def updateConstructSignature(
-      node: ConstructSignatureDeclaration,
-      typeParameters: Unit,
-      parameters: NodeArray[ParameterDeclaration]
-    ): ConstructSignatureDeclaration = js.native
-    def updateConstructSignature(
-      node: ConstructSignatureDeclaration,
-      typeParameters: Unit,
-      parameters: NodeArray[ParameterDeclaration],
-      `type`: TypeNode
-    ): ConstructSignatureDeclaration = js.native
-    /** @deprecated Use `factory.updateConstructSignature` or the factory supplied by your transformation context instead. */
-    def updateConstructSignature(
-      node: ConstructSignatureDeclaration,
-      typeParameters: NodeArray[TypeParameterDeclaration],
-      parameters: NodeArray[ParameterDeclaration]
-    ): ConstructSignatureDeclaration = js.native
-    def updateConstructSignature(
-      node: ConstructSignatureDeclaration,
-      typeParameters: NodeArray[TypeParameterDeclaration],
-      parameters: NodeArray[ParameterDeclaration],
-      `type`: TypeNode
-    ): ConstructSignatureDeclaration = js.native
-    
-    /** @deprecated Use `factory.updateConstructorDeclaration` or the factory supplied by your transformation context instead. */
-    def updateConstructor(
-      node: ConstructorDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      parameters: js.Array[ParameterDeclaration]
-    ): ConstructorDeclaration = js.native
-    def updateConstructor(
-      node: ConstructorDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      parameters: js.Array[ParameterDeclaration],
-      body: Block
-    ): ConstructorDeclaration = js.native
-    def updateConstructor(
-      node: ConstructorDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      parameters: js.Array[ParameterDeclaration]
-    ): ConstructorDeclaration = js.native
-    def updateConstructor(
-      node: ConstructorDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      body: Block
-    ): ConstructorDeclaration = js.native
-    def updateConstructor(
-      node: ConstructorDeclaration,
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      parameters: js.Array[ParameterDeclaration]
-    ): ConstructorDeclaration = js.native
-    def updateConstructor(
-      node: ConstructorDeclaration,
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      parameters: js.Array[ParameterDeclaration],
-      body: Block
-    ): ConstructorDeclaration = js.native
-    def updateConstructor(
-      node: ConstructorDeclaration,
-      decorators: Unit,
-      modifiers: Unit,
-      parameters: js.Array[ParameterDeclaration]
-    ): ConstructorDeclaration = js.native
-    def updateConstructor(
-      node: ConstructorDeclaration,
-      decorators: Unit,
-      modifiers: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      body: Block
-    ): ConstructorDeclaration = js.native
-    /** @deprecated Use `factory.updateConstructorDeclaration` or the factory supplied by your transformation context instead. */
-    def updateConstructor(
-      node: ConstructorDeclaration,
-      modifiers: js.Array[Modifier],
-      parameters: js.Array[ParameterDeclaration]
-    ): ConstructorDeclaration = js.native
-    def updateConstructor(
-      node: ConstructorDeclaration,
-      modifiers: js.Array[Modifier],
-      parameters: js.Array[ParameterDeclaration],
-      body: Block
-    ): ConstructorDeclaration = js.native
-    def updateConstructor(node: ConstructorDeclaration, modifiers: Unit, parameters: js.Array[ParameterDeclaration]): ConstructorDeclaration = js.native
-    def updateConstructor(
-      node: ConstructorDeclaration,
-      modifiers: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      body: Block
-    ): ConstructorDeclaration = js.native
-    
-    def updateConstructorTypeNode(
-      node: ConstructorTypeNode,
-      typeParameters: Unit,
-      parameters: NodeArray[ParameterDeclaration],
-      `type`: TypeNode
-    ): ConstructorTypeNode = js.native
-    /** @deprecated Use `factory.updateConstructorTypeNode` or the factory supplied by your transformation context instead. */
-    def updateConstructorTypeNode(
-      node: ConstructorTypeNode,
-      typeParameters: NodeArray[TypeParameterDeclaration],
-      parameters: NodeArray[ParameterDeclaration],
-      `type`: TypeNode
-    ): ConstructorTypeNode = js.native
-    
-    /** @deprecated Use `factory.updateContinueStatement` or the factory supplied by your transformation context instead. */
-    def updateContinue(node: ContinueStatement): ContinueStatement = js.native
-    def updateContinue(node: ContinueStatement, label: Identifier): ContinueStatement = js.native
-    
-    /** @deprecated Use `factory.updateDecorator` or the factory supplied by your transformation context instead. */
-    def updateDecorator(node: Decorator, expression: Expression): Decorator = js.native
-    
-    /** @deprecated Use `factory.updateDefaultClause` or the factory supplied by your transformation context instead. */
-    def updateDefaultClause(node: DefaultClause, statements: js.Array[Statement]): DefaultClause = js.native
-    
-    /** @deprecated Use `factory.updateDeleteExpression` or the factory supplied by your transformation context instead. */
-    def updateDelete(node: DeleteExpression, expression: Expression): DeleteExpression = js.native
-    
-    /** @deprecated Use `factory.updateDoStatement` or the factory supplied by your transformation context instead. */
-    def updateDo(node: DoStatement, statement: Statement, expression: Expression): DoStatement = js.native
-    
-    /** @deprecated Use `factory.updateElementAccessExpression` or the factory supplied by your transformation context instead. */
-    def updateElementAccess(node: ElementAccessExpression, expression: Expression, argumentExpression: Expression): ElementAccessExpression = js.native
-    
-    def updateElementAccessChain(
-      node: ElementAccessChain,
-      expression: Expression,
-      questionDotToken: Unit,
-      argumentExpression: Expression
-    ): ElementAccessChain = js.native
-    /** @deprecated Use `factory.updateElementAccessChain` or the factory supplied by your transformation context instead. */
-    def updateElementAccessChain(
-      node: ElementAccessChain,
-      expression: Expression,
-      questionDotToken: QuestionDotToken,
-      argumentExpression: Expression
-    ): ElementAccessChain = js.native
-    
-    /** @deprecated Use `factory.updateEnumDeclaration` or the factory supplied by your transformation context instead. */
-    def updateEnumDeclaration(
-      node: EnumDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      members: js.Array[EnumMember]
-    ): EnumDeclaration = js.native
-    def updateEnumDeclaration(
-      node: EnumDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: Identifier,
-      members: js.Array[EnumMember]
-    ): EnumDeclaration = js.native
-    def updateEnumDeclaration(
-      node: EnumDeclaration,
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      members: js.Array[EnumMember]
-    ): EnumDeclaration = js.native
-    def updateEnumDeclaration(
-      node: EnumDeclaration,
-      decorators: Unit,
-      modifiers: Unit,
-      name: Identifier,
-      members: js.Array[EnumMember]
-    ): EnumDeclaration = js.native
-    /** @deprecated Use `factory.updateEnumDeclaration` or the factory supplied by your transformation context instead. */
-    def updateEnumDeclaration(
-      node: EnumDeclaration,
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      members: js.Array[EnumMember]
-    ): EnumDeclaration = js.native
-    def updateEnumDeclaration(node: EnumDeclaration, modifiers: Unit, name: Identifier, members: js.Array[EnumMember]): EnumDeclaration = js.native
-    
-    /** @deprecated Use `factory.updateEnumMember` or the factory supplied by your transformation context instead. */
-    def updateEnumMember(node: EnumMember, name: PropertyName): EnumMember = js.native
-    def updateEnumMember(node: EnumMember, name: PropertyName, initializer: Expression): EnumMember = js.native
-    
-    /** @deprecated Use `factory.updateExportAssignment` or the factory supplied by your transformation context instead. */
-    def updateExportAssignment(
-      node: ExportAssignment,
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      expression: Expression
-    ): ExportAssignment = js.native
-    def updateExportAssignment(node: ExportAssignment, decorators: js.Array[Decorator], modifiers: Unit, expression: Expression): ExportAssignment = js.native
-    def updateExportAssignment(node: ExportAssignment, decorators: Unit, modifiers: js.Array[Modifier], expression: Expression): ExportAssignment = js.native
-    def updateExportAssignment(node: ExportAssignment, decorators: Unit, modifiers: Unit, expression: Expression): ExportAssignment = js.native
-    /** @deprecated Use `factory.updateExportAssignment` or the factory supplied by your transformation context instead. */
-    def updateExportAssignment(node: ExportAssignment, modifiers: js.Array[Modifier], expression: Expression): ExportAssignment = js.native
-    def updateExportAssignment(node: ExportAssignment, modifiers: Unit, expression: Expression): ExportAssignment = js.native
-    
-    def updateExportDeclaration(
-      node: ExportDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      exportClause: Unit,
-      moduleSpecifier: Unit,
-      isTypeOnly: Boolean
-    ): ExportDeclaration = js.native
-    def updateExportDeclaration(
-      node: ExportDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      exportClause: Unit,
-      moduleSpecifier: Expression,
-      isTypeOnly: Boolean
-    ): ExportDeclaration = js.native
-    def updateExportDeclaration(
-      node: ExportDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      exportClause: NamedExportBindings,
-      moduleSpecifier: Unit,
-      isTypeOnly: Boolean
-    ): ExportDeclaration = js.native
-    /** @deprecated Use `factory.updateExportDeclaration` or the factory supplied by your transformation context instead. */
-    def updateExportDeclaration(
-      node: ExportDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      exportClause: NamedExportBindings,
-      moduleSpecifier: Expression,
-      isTypeOnly: Boolean
-    ): ExportDeclaration = js.native
-    def updateExportDeclaration(
-      node: ExportDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      exportClause: Unit,
-      moduleSpecifier: Unit,
-      isTypeOnly: Boolean
-    ): ExportDeclaration = js.native
-    def updateExportDeclaration(
-      node: ExportDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      exportClause: Unit,
-      moduleSpecifier: Expression,
-      isTypeOnly: Boolean
-    ): ExportDeclaration = js.native
-    def updateExportDeclaration(
-      node: ExportDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      exportClause: NamedExportBindings,
-      moduleSpecifier: Unit,
-      isTypeOnly: Boolean
-    ): ExportDeclaration = js.native
-    def updateExportDeclaration(
-      node: ExportDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      exportClause: NamedExportBindings,
-      moduleSpecifier: Expression,
-      isTypeOnly: Boolean
-    ): ExportDeclaration = js.native
-    def updateExportDeclaration(
-      node: ExportDeclaration,
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      exportClause: Unit,
-      moduleSpecifier: Unit,
-      isTypeOnly: Boolean
-    ): ExportDeclaration = js.native
-    def updateExportDeclaration(
-      node: ExportDeclaration,
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      exportClause: Unit,
-      moduleSpecifier: Expression,
-      isTypeOnly: Boolean
-    ): ExportDeclaration = js.native
-    def updateExportDeclaration(
-      node: ExportDeclaration,
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      exportClause: NamedExportBindings,
-      moduleSpecifier: Unit,
-      isTypeOnly: Boolean
-    ): ExportDeclaration = js.native
-    def updateExportDeclaration(
-      node: ExportDeclaration,
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      exportClause: NamedExportBindings,
-      moduleSpecifier: Expression,
-      isTypeOnly: Boolean
-    ): ExportDeclaration = js.native
-    def updateExportDeclaration(
-      node: ExportDeclaration,
-      decorators: Unit,
-      modifiers: Unit,
-      exportClause: Unit,
-      moduleSpecifier: Unit,
-      isTypeOnly: Boolean
-    ): ExportDeclaration = js.native
-    def updateExportDeclaration(
-      node: ExportDeclaration,
-      decorators: Unit,
-      modifiers: Unit,
-      exportClause: Unit,
-      moduleSpecifier: Expression,
-      isTypeOnly: Boolean
-    ): ExportDeclaration = js.native
-    def updateExportDeclaration(
-      node: ExportDeclaration,
-      decorators: Unit,
-      modifiers: Unit,
-      exportClause: NamedExportBindings,
-      moduleSpecifier: Unit,
-      isTypeOnly: Boolean
-    ): ExportDeclaration = js.native
-    def updateExportDeclaration(
-      node: ExportDeclaration,
-      decorators: Unit,
-      modifiers: Unit,
-      exportClause: NamedExportBindings,
-      moduleSpecifier: Expression,
-      isTypeOnly: Boolean
-    ): ExportDeclaration = js.native
-    
-    def updateExportSpecifier(node: ExportSpecifier, isTypeOnly: Boolean, propertyName: Unit, name: Identifier): ExportSpecifier = js.native
-    /** @deprecated Use `factory.updateExportSpecifier` or the factory supplied by your transformation context instead. */
-    def updateExportSpecifier(node: ExportSpecifier, isTypeOnly: Boolean, propertyName: Identifier, name: Identifier): ExportSpecifier = js.native
-    
-    /** @deprecated Use `factory.updateExpressionStatement` or the factory supplied by your transformation context instead. */
-    def updateExpressionStatement(node: ExpressionStatement, expression: Expression): ExpressionStatement = js.native
-    
-    /** @deprecated Use `factory.updateExpressionWithTypeArguments` or the factory supplied by your transformation context instead. */
-    def updateExpressionWithTypeArguments(node: ExpressionWithTypeArguments, typeArguments: js.Array[TypeNode], expression: Expression): ExpressionWithTypeArguments = js.native
-    def updateExpressionWithTypeArguments(node: ExpressionWithTypeArguments, typeArguments: Unit, expression: Expression): ExpressionWithTypeArguments = js.native
-    
-    /** @deprecated Use `factory.updateExternalModuleReference` or the factory supplied by your transformation context instead. */
-    def updateExternalModuleReference(node: ExternalModuleReference, expression: Expression): ExternalModuleReference = js.native
-    
-    def updateFor(node: ForStatement, initializer: Unit, condition: Unit, incrementor: Unit, statement: Statement): ForStatement = js.native
-    def updateFor(
-      node: ForStatement,
-      initializer: Unit,
-      condition: Unit,
-      incrementor: Expression,
-      statement: Statement
-    ): ForStatement = js.native
-    def updateFor(
-      node: ForStatement,
-      initializer: Unit,
-      condition: Expression,
-      incrementor: Unit,
-      statement: Statement
-    ): ForStatement = js.native
-    def updateFor(
-      node: ForStatement,
-      initializer: Unit,
-      condition: Expression,
-      incrementor: Expression,
-      statement: Statement
-    ): ForStatement = js.native
-    def updateFor(
-      node: ForStatement,
-      initializer: ForInitializer,
-      condition: Unit,
-      incrementor: Unit,
-      statement: Statement
-    ): ForStatement = js.native
-    def updateFor(
-      node: ForStatement,
-      initializer: ForInitializer,
-      condition: Unit,
-      incrementor: Expression,
-      statement: Statement
-    ): ForStatement = js.native
-    def updateFor(
-      node: ForStatement,
-      initializer: ForInitializer,
-      condition: Expression,
-      incrementor: Unit,
-      statement: Statement
-    ): ForStatement = js.native
-    /** @deprecated Use `factory.updateForStatement` or the factory supplied by your transformation context instead. */
-    def updateFor(
-      node: ForStatement,
-      initializer: ForInitializer,
-      condition: Expression,
-      incrementor: Expression,
-      statement: Statement
-    ): ForStatement = js.native
-    
-    /** @deprecated Use `factory.updateForInStatement` or the factory supplied by your transformation context instead. */
-    def updateForIn(node: ForInStatement, initializer: ForInitializer, expression: Expression, statement: Statement): ForInStatement = js.native
-    
-    def updateForOf(
-      node: ForOfStatement,
-      awaitModifier: Unit,
-      initializer: ForInitializer,
-      expression: Expression,
-      statement: Statement
-    ): ForOfStatement = js.native
-    /** @deprecated Use `factory.updateForOfStatement` or the factory supplied by your transformation context instead. */
-    def updateForOf(
-      node: ForOfStatement,
-      awaitModifier: AwaitKeyword,
-      initializer: ForInitializer,
-      expression: Expression,
-      statement: Statement
-    ): ForOfStatement = js.native
-    
-    /** @deprecated Use `factory.updateFunctionDeclaration` or the factory supplied by your transformation context instead. */
-    def updateFunctionDeclaration(
-      node: FunctionDeclaration,
-      decorators: js.UndefOr[js.Array[Decorator]],
-      modifiers: js.UndefOr[js.Array[Modifier]],
-      asteriskToken: js.UndefOr[AsteriskToken],
-      name: js.UndefOr[Identifier],
-      typeParameters: js.UndefOr[js.Array[TypeParameterDeclaration]],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: js.UndefOr[TypeNode],
-      body: js.UndefOr[Block]
-    ): FunctionDeclaration = js.native
-    /** @deprecated Use `factory.updateFunctionDeclaration` or the factory supplied by your transformation context instead. */
-    def updateFunctionDeclaration(
-      node: FunctionDeclaration,
-      modifiers: js.UndefOr[js.Array[ModifierLike]],
-      asteriskToken: js.UndefOr[AsteriskToken],
-      name: js.UndefOr[Identifier],
-      typeParameters: js.UndefOr[js.Array[TypeParameterDeclaration]],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: js.UndefOr[TypeNode],
-      body: js.UndefOr[Block]
-    ): FunctionDeclaration = js.native
-    
-    def updateFunctionExpression(
-      node: FunctionExpression,
-      modifiers: js.Array[Modifier],
-      asteriskToken: Unit,
-      name: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      body: Block
-    ): FunctionExpression = js.native
-    def updateFunctionExpression(
-      node: FunctionExpression,
-      modifiers: js.Array[Modifier],
-      asteriskToken: Unit,
-      name: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      body: Block
-    ): FunctionExpression = js.native
-    def updateFunctionExpression(
-      node: FunctionExpression,
-      modifiers: js.Array[Modifier],
-      asteriskToken: Unit,
-      name: Unit,
-      typeParameters: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      body: Block
-    ): FunctionExpression = js.native
-    def updateFunctionExpression(
-      node: FunctionExpression,
-      modifiers: js.Array[Modifier],
-      asteriskToken: Unit,
-      name: Unit,
-      typeParameters: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      body: Block
-    ): FunctionExpression = js.native
-    def updateFunctionExpression(
-      node: FunctionExpression,
-      modifiers: js.Array[Modifier],
-      asteriskToken: Unit,
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      body: Block
-    ): FunctionExpression = js.native
-    def updateFunctionExpression(
-      node: FunctionExpression,
-      modifiers: js.Array[Modifier],
-      asteriskToken: Unit,
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      body: Block
-    ): FunctionExpression = js.native
-    def updateFunctionExpression(
-      node: FunctionExpression,
-      modifiers: js.Array[Modifier],
-      asteriskToken: Unit,
-      name: Identifier,
-      typeParameters: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      body: Block
-    ): FunctionExpression = js.native
-    def updateFunctionExpression(
-      node: FunctionExpression,
-      modifiers: js.Array[Modifier],
-      asteriskToken: Unit,
-      name: Identifier,
-      typeParameters: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      body: Block
-    ): FunctionExpression = js.native
-    def updateFunctionExpression(
-      node: FunctionExpression,
-      modifiers: js.Array[Modifier],
-      asteriskToken: AsteriskToken,
-      name: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      body: Block
-    ): FunctionExpression = js.native
-    def updateFunctionExpression(
-      node: FunctionExpression,
-      modifiers: js.Array[Modifier],
-      asteriskToken: AsteriskToken,
-      name: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      body: Block
-    ): FunctionExpression = js.native
-    def updateFunctionExpression(
-      node: FunctionExpression,
-      modifiers: js.Array[Modifier],
-      asteriskToken: AsteriskToken,
-      name: Unit,
-      typeParameters: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      body: Block
-    ): FunctionExpression = js.native
-    def updateFunctionExpression(
-      node: FunctionExpression,
-      modifiers: js.Array[Modifier],
-      asteriskToken: AsteriskToken,
-      name: Unit,
-      typeParameters: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      body: Block
-    ): FunctionExpression = js.native
-    def updateFunctionExpression(
-      node: FunctionExpression,
-      modifiers: js.Array[Modifier],
-      asteriskToken: AsteriskToken,
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      body: Block
-    ): FunctionExpression = js.native
-    /** @deprecated Use `factory.updateFunctionExpression` or the factory supplied by your transformation context instead. */
-    def updateFunctionExpression(
-      node: FunctionExpression,
-      modifiers: js.Array[Modifier],
-      asteriskToken: AsteriskToken,
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      body: Block
-    ): FunctionExpression = js.native
-    def updateFunctionExpression(
-      node: FunctionExpression,
-      modifiers: js.Array[Modifier],
-      asteriskToken: AsteriskToken,
-      name: Identifier,
-      typeParameters: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      body: Block
-    ): FunctionExpression = js.native
-    def updateFunctionExpression(
-      node: FunctionExpression,
-      modifiers: js.Array[Modifier],
-      asteriskToken: AsteriskToken,
-      name: Identifier,
-      typeParameters: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      body: Block
-    ): FunctionExpression = js.native
-    def updateFunctionExpression(
-      node: FunctionExpression,
-      modifiers: Unit,
-      asteriskToken: Unit,
-      name: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      body: Block
-    ): FunctionExpression = js.native
-    def updateFunctionExpression(
-      node: FunctionExpression,
-      modifiers: Unit,
-      asteriskToken: Unit,
-      name: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      body: Block
-    ): FunctionExpression = js.native
-    def updateFunctionExpression(
-      node: FunctionExpression,
-      modifiers: Unit,
-      asteriskToken: Unit,
-      name: Unit,
-      typeParameters: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      body: Block
-    ): FunctionExpression = js.native
-    def updateFunctionExpression(
-      node: FunctionExpression,
-      modifiers: Unit,
-      asteriskToken: Unit,
-      name: Unit,
-      typeParameters: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      body: Block
-    ): FunctionExpression = js.native
-    def updateFunctionExpression(
-      node: FunctionExpression,
-      modifiers: Unit,
-      asteriskToken: Unit,
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      body: Block
-    ): FunctionExpression = js.native
-    def updateFunctionExpression(
-      node: FunctionExpression,
-      modifiers: Unit,
-      asteriskToken: Unit,
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      body: Block
-    ): FunctionExpression = js.native
-    def updateFunctionExpression(
-      node: FunctionExpression,
-      modifiers: Unit,
-      asteriskToken: Unit,
-      name: Identifier,
-      typeParameters: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      body: Block
-    ): FunctionExpression = js.native
-    def updateFunctionExpression(
-      node: FunctionExpression,
-      modifiers: Unit,
-      asteriskToken: Unit,
-      name: Identifier,
-      typeParameters: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      body: Block
-    ): FunctionExpression = js.native
-    def updateFunctionExpression(
-      node: FunctionExpression,
-      modifiers: Unit,
-      asteriskToken: AsteriskToken,
-      name: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      body: Block
-    ): FunctionExpression = js.native
-    def updateFunctionExpression(
-      node: FunctionExpression,
-      modifiers: Unit,
-      asteriskToken: AsteriskToken,
-      name: Unit,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      body: Block
-    ): FunctionExpression = js.native
-    def updateFunctionExpression(
-      node: FunctionExpression,
-      modifiers: Unit,
-      asteriskToken: AsteriskToken,
-      name: Unit,
-      typeParameters: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      body: Block
-    ): FunctionExpression = js.native
-    def updateFunctionExpression(
-      node: FunctionExpression,
-      modifiers: Unit,
-      asteriskToken: AsteriskToken,
-      name: Unit,
-      typeParameters: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      body: Block
-    ): FunctionExpression = js.native
-    def updateFunctionExpression(
-      node: FunctionExpression,
-      modifiers: Unit,
-      asteriskToken: AsteriskToken,
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      body: Block
-    ): FunctionExpression = js.native
-    def updateFunctionExpression(
-      node: FunctionExpression,
-      modifiers: Unit,
-      asteriskToken: AsteriskToken,
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      body: Block
-    ): FunctionExpression = js.native
-    def updateFunctionExpression(
-      node: FunctionExpression,
-      modifiers: Unit,
-      asteriskToken: AsteriskToken,
-      name: Identifier,
-      typeParameters: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      body: Block
-    ): FunctionExpression = js.native
-    def updateFunctionExpression(
-      node: FunctionExpression,
-      modifiers: Unit,
-      asteriskToken: AsteriskToken,
-      name: Identifier,
-      typeParameters: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      body: Block
-    ): FunctionExpression = js.native
-    
-    def updateFunctionTypeNode(
-      node: FunctionTypeNode,
-      typeParameters: Unit,
-      parameters: NodeArray[ParameterDeclaration],
-      `type`: TypeNode
-    ): FunctionTypeNode = js.native
-    /** @deprecated Use `factory.updateFunctionTypeNode` or the factory supplied by your transformation context instead. */
-    def updateFunctionTypeNode(
-      node: FunctionTypeNode,
-      typeParameters: NodeArray[TypeParameterDeclaration],
-      parameters: NodeArray[ParameterDeclaration],
-      `type`: TypeNode
-    ): FunctionTypeNode = js.native
-    
-    /** @deprecated Use `factory.updateGetAccessorDeclaration` or the factory supplied by your transformation context instead. */
-    def updateGetAccessor(
-      node: GetAccessorDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration]
-    ): GetAccessorDeclaration = js.native
-    def updateGetAccessor(
-      node: GetAccessorDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      body: Block
-    ): GetAccessorDeclaration = js.native
-    def updateGetAccessor(
-      node: GetAccessorDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode
-    ): GetAccessorDeclaration = js.native
-    def updateGetAccessor(
-      node: GetAccessorDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      body: Block
-    ): GetAccessorDeclaration = js.native
-    def updateGetAccessor(
-      node: GetAccessorDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration]
-    ): GetAccessorDeclaration = js.native
-    def updateGetAccessor(
-      node: GetAccessorDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      body: Block
-    ): GetAccessorDeclaration = js.native
-    def updateGetAccessor(
-      node: GetAccessorDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode
-    ): GetAccessorDeclaration = js.native
-    def updateGetAccessor(
-      node: GetAccessorDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      body: Block
-    ): GetAccessorDeclaration = js.native
-    def updateGetAccessor(
-      node: GetAccessorDeclaration,
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration]
-    ): GetAccessorDeclaration = js.native
-    def updateGetAccessor(
-      node: GetAccessorDeclaration,
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      body: Block
-    ): GetAccessorDeclaration = js.native
-    def updateGetAccessor(
-      node: GetAccessorDeclaration,
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode
-    ): GetAccessorDeclaration = js.native
-    def updateGetAccessor(
-      node: GetAccessorDeclaration,
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      body: Block
-    ): GetAccessorDeclaration = js.native
-    def updateGetAccessor(
-      node: GetAccessorDeclaration,
-      decorators: Unit,
-      modifiers: Unit,
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration]
-    ): GetAccessorDeclaration = js.native
-    def updateGetAccessor(
-      node: GetAccessorDeclaration,
-      decorators: Unit,
-      modifiers: Unit,
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      body: Block
-    ): GetAccessorDeclaration = js.native
-    def updateGetAccessor(
-      node: GetAccessorDeclaration,
-      decorators: Unit,
-      modifiers: Unit,
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode
-    ): GetAccessorDeclaration = js.native
-    def updateGetAccessor(
-      node: GetAccessorDeclaration,
-      decorators: Unit,
-      modifiers: Unit,
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      body: Block
-    ): GetAccessorDeclaration = js.native
-    /** @deprecated Use `factory.updateGetAccessorDeclaration` or the factory supplied by your transformation context instead. */
-    def updateGetAccessor(
-      node: GetAccessorDeclaration,
-      modifiers: js.Array[ModifierLike],
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration]
-    ): GetAccessorDeclaration = js.native
-    def updateGetAccessor(
-      node: GetAccessorDeclaration,
-      modifiers: js.Array[ModifierLike],
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      body: Block
-    ): GetAccessorDeclaration = js.native
-    def updateGetAccessor(
-      node: GetAccessorDeclaration,
-      modifiers: js.Array[ModifierLike],
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode
-    ): GetAccessorDeclaration = js.native
-    def updateGetAccessor(
-      node: GetAccessorDeclaration,
-      modifiers: js.Array[ModifierLike],
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      body: Block
-    ): GetAccessorDeclaration = js.native
-    def updateGetAccessor(
-      node: GetAccessorDeclaration,
-      modifiers: Unit,
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration]
-    ): GetAccessorDeclaration = js.native
-    def updateGetAccessor(
-      node: GetAccessorDeclaration,
-      modifiers: Unit,
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: Unit,
-      body: Block
-    ): GetAccessorDeclaration = js.native
-    def updateGetAccessor(
-      node: GetAccessorDeclaration,
-      modifiers: Unit,
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode
-    ): GetAccessorDeclaration = js.native
-    def updateGetAccessor(
-      node: GetAccessorDeclaration,
-      modifiers: Unit,
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode,
-      body: Block
-    ): GetAccessorDeclaration = js.native
-    
-    /** @deprecated Use `factory.updateHeritageClause` or the factory supplied by your transformation context instead. */
-    def updateHeritageClause(node: HeritageClause, types: js.Array[ExpressionWithTypeArguments]): HeritageClause = js.native
-    
-    /** @deprecated Use `factory.updateIfStatement` or the factory supplied by your transformation context instead. */
-    def updateIf(node: IfStatement, expression: Expression, thenStatement: Statement): IfStatement = js.native
-    def updateIf(node: IfStatement, expression: Expression, thenStatement: Statement, elseStatement: Statement): IfStatement = js.native
-    
-    def updateImportClause(node: ImportClause, name: Unit, namedBindings: Unit, isTypeOnly: Boolean): ImportClause = js.native
-    def updateImportClause(node: ImportClause, name: Unit, namedBindings: NamedImportBindings, isTypeOnly: Boolean): ImportClause = js.native
-    def updateImportClause(node: ImportClause, name: Identifier, namedBindings: Unit, isTypeOnly: Boolean): ImportClause = js.native
-    /** @deprecated Use `factory.updateImportClause` or the factory supplied by your transformation context instead. */
-    def updateImportClause(node: ImportClause, name: Identifier, namedBindings: NamedImportBindings, isTypeOnly: Boolean): ImportClause = js.native
-    
-    def updateImportDeclaration(
-      node: ImportDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      importClause: Unit,
-      moduleSpecifier: Expression
-    ): ImportDeclaration = js.native
-    def updateImportDeclaration(
-      node: ImportDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      importClause: Unit,
-      moduleSpecifier: Expression,
-      assertClause: AssertClause
-    ): ImportDeclaration = js.native
-    /** @deprecated Use `factory.updateImportDeclaration` or the factory supplied by your transformation context instead. */
-    def updateImportDeclaration(
-      node: ImportDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      importClause: ImportClause,
-      moduleSpecifier: Expression
-    ): ImportDeclaration = js.native
-    def updateImportDeclaration(
-      node: ImportDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      importClause: ImportClause,
-      moduleSpecifier: Expression,
-      assertClause: AssertClause
-    ): ImportDeclaration = js.native
-    def updateImportDeclaration(
-      node: ImportDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      importClause: Unit,
-      moduleSpecifier: Expression
-    ): ImportDeclaration = js.native
-    def updateImportDeclaration(
-      node: ImportDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      importClause: Unit,
-      moduleSpecifier: Expression,
-      assertClause: AssertClause
-    ): ImportDeclaration = js.native
-    def updateImportDeclaration(
-      node: ImportDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      importClause: ImportClause,
-      moduleSpecifier: Expression
-    ): ImportDeclaration = js.native
-    def updateImportDeclaration(
-      node: ImportDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      importClause: ImportClause,
-      moduleSpecifier: Expression,
-      assertClause: AssertClause
-    ): ImportDeclaration = js.native
-    def updateImportDeclaration(
-      node: ImportDeclaration,
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      importClause: Unit,
-      moduleSpecifier: Expression
-    ): ImportDeclaration = js.native
-    def updateImportDeclaration(
-      node: ImportDeclaration,
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      importClause: Unit,
-      moduleSpecifier: Expression,
-      assertClause: AssertClause
-    ): ImportDeclaration = js.native
-    def updateImportDeclaration(
-      node: ImportDeclaration,
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      importClause: ImportClause,
-      moduleSpecifier: Expression
-    ): ImportDeclaration = js.native
-    def updateImportDeclaration(
-      node: ImportDeclaration,
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      importClause: ImportClause,
-      moduleSpecifier: Expression,
-      assertClause: AssertClause
-    ): ImportDeclaration = js.native
-    def updateImportDeclaration(
-      node: ImportDeclaration,
-      decorators: Unit,
-      modifiers: Unit,
-      importClause: Unit,
-      moduleSpecifier: Expression
-    ): ImportDeclaration = js.native
-    def updateImportDeclaration(
-      node: ImportDeclaration,
-      decorators: Unit,
-      modifiers: Unit,
-      importClause: Unit,
-      moduleSpecifier: Expression,
-      assertClause: AssertClause
-    ): ImportDeclaration = js.native
-    def updateImportDeclaration(
-      node: ImportDeclaration,
-      decorators: Unit,
-      modifiers: Unit,
-      importClause: ImportClause,
-      moduleSpecifier: Expression
-    ): ImportDeclaration = js.native
-    def updateImportDeclaration(
-      node: ImportDeclaration,
-      decorators: Unit,
-      modifiers: Unit,
-      importClause: ImportClause,
-      moduleSpecifier: Expression,
-      assertClause: AssertClause
-    ): ImportDeclaration = js.native
-    def updateImportDeclaration(
-      node: ImportDeclaration,
-      modifiers: js.Array[Modifier],
-      importClause: Unit,
-      moduleSpecifier: Expression
-    ): ImportDeclaration = js.native
-    def updateImportDeclaration(
-      node: ImportDeclaration,
-      modifiers: js.Array[Modifier],
-      importClause: Unit,
-      moduleSpecifier: Expression,
-      assertClause: AssertClause
-    ): ImportDeclaration = js.native
-    /** @deprecated Use `factory.updateImportDeclaration` or the factory supplied by your transformation context instead. */
-    def updateImportDeclaration(
-      node: ImportDeclaration,
-      modifiers: js.Array[Modifier],
-      importClause: ImportClause,
-      moduleSpecifier: Expression
-    ): ImportDeclaration = js.native
-    def updateImportDeclaration(
-      node: ImportDeclaration,
-      modifiers: js.Array[Modifier],
-      importClause: ImportClause,
-      moduleSpecifier: Expression,
-      assertClause: AssertClause
-    ): ImportDeclaration = js.native
-    def updateImportDeclaration(node: ImportDeclaration, modifiers: Unit, importClause: Unit, moduleSpecifier: Expression): ImportDeclaration = js.native
-    def updateImportDeclaration(
-      node: ImportDeclaration,
-      modifiers: Unit,
-      importClause: Unit,
-      moduleSpecifier: Expression,
-      assertClause: AssertClause
-    ): ImportDeclaration = js.native
-    def updateImportDeclaration(node: ImportDeclaration, modifiers: Unit, importClause: ImportClause, moduleSpecifier: Expression): ImportDeclaration = js.native
-    def updateImportDeclaration(
-      node: ImportDeclaration,
-      modifiers: Unit,
-      importClause: ImportClause,
-      moduleSpecifier: Expression,
-      assertClause: AssertClause
-    ): ImportDeclaration = js.native
-    
-    /** @deprecated Use `factory.updateImportEqualsDeclaration` or the factory supplied by your transformation context instead. */
-    def updateImportEqualsDeclaration(
-      node: ImportEqualsDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      isTypeOnly: Boolean,
-      name: Identifier,
-      moduleReference: ModuleReference
-    ): ImportEqualsDeclaration = js.native
-    def updateImportEqualsDeclaration(
-      node: ImportEqualsDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      isTypeOnly: Boolean,
-      name: Identifier,
-      moduleReference: ModuleReference
-    ): ImportEqualsDeclaration = js.native
-    def updateImportEqualsDeclaration(
-      node: ImportEqualsDeclaration,
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      isTypeOnly: Boolean,
-      name: Identifier,
-      moduleReference: ModuleReference
-    ): ImportEqualsDeclaration = js.native
-    def updateImportEqualsDeclaration(
-      node: ImportEqualsDeclaration,
-      decorators: Unit,
-      modifiers: Unit,
-      isTypeOnly: Boolean,
-      name: Identifier,
-      moduleReference: ModuleReference
-    ): ImportEqualsDeclaration = js.native
-    /** @deprecated Use `factory.updateImportEqualsDeclaration` or the factory supplied by your transformation context instead. */
-    def updateImportEqualsDeclaration(
-      node: ImportEqualsDeclaration,
-      modifiers: js.Array[Modifier],
-      isTypeOnly: Boolean,
-      name: Identifier,
-      moduleReference: ModuleReference
-    ): ImportEqualsDeclaration = js.native
-    def updateImportEqualsDeclaration(
-      node: ImportEqualsDeclaration,
-      modifiers: Unit,
-      isTypeOnly: Boolean,
-      name: Identifier,
-      moduleReference: ModuleReference
-    ): ImportEqualsDeclaration = js.native
-    
-    def updateImportSpecifier(node: ImportSpecifier, isTypeOnly: Boolean, propertyName: Unit, name: Identifier): ImportSpecifier = js.native
-    /** @deprecated Use `factory.updateImportSpecifier` or the factory supplied by your transformation context instead. */
-    def updateImportSpecifier(node: ImportSpecifier, isTypeOnly: Boolean, propertyName: Identifier, name: Identifier): ImportSpecifier = js.native
-    
-    /** @deprecated Use `factory.updateImportTypeNode` or the factory supplied by your transformation context instead. */
-    def updateImportTypeNode(node: ImportTypeNode, argument: TypeNode): ImportTypeNode = js.native
-    def updateImportTypeNode(
-      node: ImportTypeNode,
-      argument: TypeNode,
-      assertions: Unit,
-      qualifier: Unit,
-      typeArguments: js.Array[TypeNode]
-    ): ImportTypeNode = js.native
-    def updateImportTypeNode(
-      node: ImportTypeNode,
-      argument: TypeNode,
-      assertions: Unit,
-      qualifier: Unit,
-      typeArguments: js.Array[TypeNode],
-      isTypeOf: Boolean
-    ): ImportTypeNode = js.native
-    def updateImportTypeNode(
-      node: ImportTypeNode,
-      argument: TypeNode,
-      assertions: Unit,
-      qualifier: Unit,
-      typeArguments: Unit,
-      isTypeOf: Boolean
-    ): ImportTypeNode = js.native
-    def updateImportTypeNode(node: ImportTypeNode, argument: TypeNode, assertions: Unit, qualifier: EntityName): ImportTypeNode = js.native
-    def updateImportTypeNode(
-      node: ImportTypeNode,
-      argument: TypeNode,
-      assertions: Unit,
-      qualifier: EntityName,
-      typeArguments: js.Array[TypeNode]
-    ): ImportTypeNode = js.native
-    def updateImportTypeNode(
-      node: ImportTypeNode,
-      argument: TypeNode,
-      assertions: Unit,
-      qualifier: EntityName,
-      typeArguments: js.Array[TypeNode],
-      isTypeOf: Boolean
-    ): ImportTypeNode = js.native
-    def updateImportTypeNode(
-      node: ImportTypeNode,
-      argument: TypeNode,
-      assertions: Unit,
-      qualifier: EntityName,
-      typeArguments: Unit,
-      isTypeOf: Boolean
-    ): ImportTypeNode = js.native
-    def updateImportTypeNode(node: ImportTypeNode, argument: TypeNode, assertions: ImportTypeAssertionContainer): ImportTypeNode = js.native
-    def updateImportTypeNode(
-      node: ImportTypeNode,
-      argument: TypeNode,
-      assertions: ImportTypeAssertionContainer,
-      qualifier: Unit,
-      typeArguments: js.Array[TypeNode]
-    ): ImportTypeNode = js.native
-    def updateImportTypeNode(
-      node: ImportTypeNode,
-      argument: TypeNode,
-      assertions: ImportTypeAssertionContainer,
-      qualifier: Unit,
-      typeArguments: js.Array[TypeNode],
-      isTypeOf: Boolean
-    ): ImportTypeNode = js.native
-    def updateImportTypeNode(
-      node: ImportTypeNode,
-      argument: TypeNode,
-      assertions: ImportTypeAssertionContainer,
-      qualifier: Unit,
-      typeArguments: Unit,
-      isTypeOf: Boolean
-    ): ImportTypeNode = js.native
-    def updateImportTypeNode(
-      node: ImportTypeNode,
-      argument: TypeNode,
-      assertions: ImportTypeAssertionContainer,
-      qualifier: EntityName
-    ): ImportTypeNode = js.native
-    def updateImportTypeNode(
-      node: ImportTypeNode,
-      argument: TypeNode,
-      assertions: ImportTypeAssertionContainer,
-      qualifier: EntityName,
-      typeArguments: js.Array[TypeNode]
-    ): ImportTypeNode = js.native
-    def updateImportTypeNode(
-      node: ImportTypeNode,
-      argument: TypeNode,
-      assertions: ImportTypeAssertionContainer,
-      qualifier: EntityName,
-      typeArguments: js.Array[TypeNode],
-      isTypeOf: Boolean
-    ): ImportTypeNode = js.native
-    def updateImportTypeNode(
-      node: ImportTypeNode,
-      argument: TypeNode,
-      assertions: ImportTypeAssertionContainer,
-      qualifier: EntityName,
-      typeArguments: Unit,
-      isTypeOf: Boolean
-    ): ImportTypeNode = js.native
-    def updateImportTypeNode(node: ImportTypeNode, argument: TypeNode, qualifier: Unit, typeArguments: js.Array[TypeNode]): ImportTypeNode = js.native
-    def updateImportTypeNode(
-      node: ImportTypeNode,
-      argument: TypeNode,
-      qualifier: Unit,
-      typeArguments: js.Array[TypeNode],
-      isTypeOf: Boolean
-    ): ImportTypeNode = js.native
-    def updateImportTypeNode(node: ImportTypeNode, argument: TypeNode, qualifier: Unit, typeArguments: Unit, isTypeOf: Boolean): ImportTypeNode = js.native
-    def updateImportTypeNode(node: ImportTypeNode, argument: TypeNode, qualifier: EntityName): ImportTypeNode = js.native
-    def updateImportTypeNode(node: ImportTypeNode, argument: TypeNode, qualifier: EntityName, typeArguments: js.Array[TypeNode]): ImportTypeNode = js.native
-    def updateImportTypeNode(
-      node: ImportTypeNode,
-      argument: TypeNode,
-      qualifier: EntityName,
-      typeArguments: js.Array[TypeNode],
-      isTypeOf: Boolean
-    ): ImportTypeNode = js.native
-    def updateImportTypeNode(
-      node: ImportTypeNode,
-      argument: TypeNode,
-      qualifier: EntityName,
-      typeArguments: Unit,
-      isTypeOf: Boolean
-    ): ImportTypeNode = js.native
-    
-    /** @deprecated Use `factory.updateIndexSignature` or the factory supplied by your transformation context instead. */
-    def updateIndexSignature(
-      node: IndexSignatureDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode
-    ): IndexSignatureDeclaration = js.native
-    def updateIndexSignature(
-      node: IndexSignatureDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode
-    ): IndexSignatureDeclaration = js.native
-    def updateIndexSignature(
-      node: IndexSignatureDeclaration,
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode
-    ): IndexSignatureDeclaration = js.native
-    def updateIndexSignature(
-      node: IndexSignatureDeclaration,
-      decorators: Unit,
-      modifiers: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode
-    ): IndexSignatureDeclaration = js.native
-    /** @deprecated Use `factory.updateIndexSignature` or the factory supplied by your transformation context instead. */
-    def updateIndexSignature(
-      node: IndexSignatureDeclaration,
-      modifiers: js.Array[Modifier],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode
-    ): IndexSignatureDeclaration = js.native
-    def updateIndexSignature(
-      node: IndexSignatureDeclaration,
-      modifiers: Unit,
-      parameters: js.Array[ParameterDeclaration],
-      `type`: TypeNode
-    ): IndexSignatureDeclaration = js.native
-    
-    /** @deprecated Use `factory.updateIndexedAccessTypeNode` or the factory supplied by your transformation context instead. */
-    def updateIndexedAccessTypeNode(node: IndexedAccessTypeNode, objectType: TypeNode, indexType: TypeNode): IndexedAccessTypeNode = js.native
-    
-    /** @deprecated Use `factory.updateInferTypeNode` or the factory supplied by your transformation context instead. */
-    def updateInferTypeNode(node: InferTypeNode, typeParameter: TypeParameterDeclaration): InferTypeNode = js.native
-    
-    /** @deprecated Use `factory.updateInterfaceDeclaration` or the factory supplied by your transformation context instead. */
-    def updateInterfaceDeclaration(
-      node: InterfaceDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = js.native
-    def updateInterfaceDeclaration(
-      node: InterfaceDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = js.native
-    def updateInterfaceDeclaration(
-      node: InterfaceDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = js.native
-    def updateInterfaceDeclaration(
-      node: InterfaceDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = js.native
-    def updateInterfaceDeclaration(
-      node: InterfaceDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = js.native
-    def updateInterfaceDeclaration(
-      node: InterfaceDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = js.native
-    def updateInterfaceDeclaration(
-      node: InterfaceDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = js.native
-    def updateInterfaceDeclaration(
-      node: InterfaceDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = js.native
-    def updateInterfaceDeclaration(
-      node: InterfaceDeclaration,
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = js.native
-    def updateInterfaceDeclaration(
-      node: InterfaceDeclaration,
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = js.native
-    def updateInterfaceDeclaration(
-      node: InterfaceDeclaration,
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = js.native
-    def updateInterfaceDeclaration(
-      node: InterfaceDeclaration,
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = js.native
-    def updateInterfaceDeclaration(
-      node: InterfaceDeclaration,
-      decorators: Unit,
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = js.native
-    def updateInterfaceDeclaration(
-      node: InterfaceDeclaration,
-      decorators: Unit,
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = js.native
-    def updateInterfaceDeclaration(
-      node: InterfaceDeclaration,
-      decorators: Unit,
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = js.native
-    def updateInterfaceDeclaration(
-      node: InterfaceDeclaration,
-      decorators: Unit,
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = js.native
-    /** @deprecated Use `factory.updateInterfaceDeclaration` or the factory supplied by your transformation context instead. */
-    def updateInterfaceDeclaration(
-      node: InterfaceDeclaration,
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = js.native
-    def updateInterfaceDeclaration(
-      node: InterfaceDeclaration,
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = js.native
-    def updateInterfaceDeclaration(
-      node: InterfaceDeclaration,
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = js.native
-    def updateInterfaceDeclaration(
-      node: InterfaceDeclaration,
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = js.native
-    def updateInterfaceDeclaration(
-      node: InterfaceDeclaration,
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = js.native
-    def updateInterfaceDeclaration(
-      node: InterfaceDeclaration,
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      heritageClauses: Unit,
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = js.native
-    def updateInterfaceDeclaration(
-      node: InterfaceDeclaration,
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: js.Array[HeritageClause],
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = js.native
-    def updateInterfaceDeclaration(
-      node: InterfaceDeclaration,
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: Unit,
-      heritageClauses: Unit,
-      members: js.Array[TypeElement]
-    ): InterfaceDeclaration = js.native
-    
-    /** @deprecated Use `factory.updateIntersectionTypeNode` or the factory supplied by your transformation context instead. */
-    def updateIntersectionTypeNode(node: IntersectionTypeNode, types: NodeArray[TypeNode]): IntersectionTypeNode = js.native
-    
-    /** @deprecated Use `factory.updateJsxAttribute` or the factory supplied by your transformation context instead. */
-    def updateJsxAttribute(node: JsxAttribute, name: Identifier): JsxAttribute = js.native
-    def updateJsxAttribute(node: JsxAttribute, name: Identifier, initializer: JsxAttributeValue): JsxAttribute = js.native
-    
-    /** @deprecated Use `factory.updateJsxAttributes` or the factory supplied by your transformation context instead. */
-    def updateJsxAttributes(node: JsxAttributes, properties: js.Array[JsxAttributeLike]): JsxAttributes = js.native
-    
-    /** @deprecated Use `factory.updateJsxClosingElement` or the factory supplied by your transformation context instead. */
-    def updateJsxClosingElement(node: JsxClosingElement, tagName: JsxTagNameExpression): JsxClosingElement = js.native
-    
-    /** @deprecated Use `factory.updateJsxElement` or the factory supplied by your transformation context instead. */
-    def updateJsxElement(
-      node: JsxElement,
-      openingElement: JsxOpeningElement,
-      children: js.Array[JsxChild],
-      closingElement: JsxClosingElement
-    ): JsxElement = js.native
-    
-    /** @deprecated Use `factory.updateJsxExpression` or the factory supplied by your transformation context instead. */
-    def updateJsxExpression(node: JsxExpression): JsxExpression = js.native
-    def updateJsxExpression(node: JsxExpression, expression: Expression): JsxExpression = js.native
-    
-    /** @deprecated Use `factory.updateJsxFragment` or the factory supplied by your transformation context instead. */
-    def updateJsxFragment(
-      node: JsxFragment,
-      openingFragment: JsxOpeningFragment,
-      children: js.Array[JsxChild],
-      closingFragment: JsxClosingFragment
-    ): JsxFragment = js.native
-    
-    /** @deprecated Use `factory.updateJsxOpeningElement` or the factory supplied by your transformation context instead. */
-    def updateJsxOpeningElement(
-      node: JsxOpeningElement,
-      tagName: JsxTagNameExpression,
-      typeArguments: js.Array[TypeNode],
-      attributes: JsxAttributes
-    ): JsxOpeningElement = js.native
-    def updateJsxOpeningElement(
-      node: JsxOpeningElement,
-      tagName: JsxTagNameExpression,
-      typeArguments: Unit,
-      attributes: JsxAttributes
-    ): JsxOpeningElement = js.native
-    
-    /** @deprecated Use `factory.updateJsxSelfClosingElement` or the factory supplied by your transformation context instead. */
-    def updateJsxSelfClosingElement(
-      node: JsxSelfClosingElement,
-      tagName: JsxTagNameExpression,
-      typeArguments: js.Array[TypeNode],
-      attributes: JsxAttributes
-    ): JsxSelfClosingElement = js.native
-    def updateJsxSelfClosingElement(
-      node: JsxSelfClosingElement,
-      tagName: JsxTagNameExpression,
-      typeArguments: Unit,
-      attributes: JsxAttributes
-    ): JsxSelfClosingElement = js.native
-    
-    /** @deprecated Use `factory.updateJsxSpreadAttribute` or the factory supplied by your transformation context instead. */
-    def updateJsxSpreadAttribute(node: JsxSpreadAttribute, expression: Expression): JsxSpreadAttribute = js.native
-    
-    /** @deprecated Use `factory.updateJsxText` or the factory supplied by your transformation context instead. */
-    def updateJsxText(node: JsxText, text: String): JsxText = js.native
-    def updateJsxText(node: JsxText, text: String, containsOnlyTriviaWhiteSpaces: Boolean): JsxText = js.native
-    
-    /** @deprecated Use `factory.updateLabelStatement` or the factory supplied by your transformation context instead. */
-    def updateLabel(node: LabeledStatement, label: Identifier, statement: Statement): LabeledStatement = js.native
-    
     def updateLanguageServiceSourceFile(sourceFile: SourceFile, scriptSnapshot: IScriptSnapshot, version: String): SourceFile = js.native
     def updateLanguageServiceSourceFile(
       sourceFile: SourceFile,
@@ -10260,683 +3418,6 @@ object anon {
       aggressiveChecks: Boolean
     ): SourceFile = js.native
     
-    def updateLiteralTypeNode(node: LiteralTypeNode, literal: BooleanLiteral): LiteralTypeNode = js.native
-    /** @deprecated Use `factory.updateLiteralTypeNode` or the factory supplied by your transformation context instead. */
-    def updateLiteralTypeNode(node: LiteralTypeNode, literal: LiteralExpression): LiteralTypeNode = js.native
-    def updateLiteralTypeNode(node: LiteralTypeNode, literal: NullLiteral): LiteralTypeNode = js.native
-    def updateLiteralTypeNode(node: LiteralTypeNode, literal: PrefixUnaryExpression): LiteralTypeNode = js.native
-    
-    /** @deprecated Use `factory.updateMappedTypeNode` or the factory supplied by your transformation context instead. */
-    def updateMappedTypeNode(
-      node: MappedTypeNode,
-      readonlyToken: js.UndefOr[ReadonlyKeyword | PlusToken | MinusToken],
-      typeParameter: TypeParameterDeclaration,
-      nameType: js.UndefOr[TypeNode],
-      questionToken: js.UndefOr[QuestionToken | PlusToken | MinusToken],
-      `type`: js.UndefOr[TypeNode],
-      members: js.UndefOr[NodeArray[TypeElement]]
-    ): MappedTypeNode = js.native
-    
-    /** @deprecated Use `factory.updateMetaProperty` or the factory supplied by your transformation context instead. */
-    def updateMetaProperty(node: MetaProperty, name: Identifier): MetaProperty = js.native
-    
-    /** @deprecated Use `factory.updateMethodDeclaration` or the factory supplied by your transformation context instead. */
-    def updateMethod(
-      node: MethodDeclaration,
-      decorators: js.UndefOr[js.Array[Decorator]],
-      modifiers: js.UndefOr[js.Array[Modifier]],
-      asteriskToken: js.UndefOr[AsteriskToken],
-      name: PropertyName,
-      questionToken: js.UndefOr[QuestionToken],
-      typeParameters: js.UndefOr[js.Array[TypeParameterDeclaration]],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: js.UndefOr[TypeNode],
-      body: js.UndefOr[Block]
-    ): MethodDeclaration = js.native
-    /** @deprecated Use `factory.updateMethodDeclaration` or the factory supplied by your transformation context instead. */
-    def updateMethod(
-      node: MethodDeclaration,
-      modifiers: js.UndefOr[js.Array[ModifierLike]],
-      asteriskToken: js.UndefOr[AsteriskToken],
-      name: PropertyName,
-      questionToken: js.UndefOr[QuestionToken],
-      typeParameters: js.UndefOr[js.Array[TypeParameterDeclaration]],
-      parameters: js.Array[ParameterDeclaration],
-      `type`: js.UndefOr[TypeNode],
-      body: js.UndefOr[Block]
-    ): MethodDeclaration = js.native
-    
-    def updateMethodSignature(
-      node: MethodSignature,
-      typeParameters: Unit,
-      parameters: NodeArray[ParameterDeclaration],
-      `type`: Unit,
-      name: PropertyName
-    ): MethodSignature = js.native
-    def updateMethodSignature(
-      node: MethodSignature,
-      typeParameters: Unit,
-      parameters: NodeArray[ParameterDeclaration],
-      `type`: Unit,
-      name: PropertyName,
-      questionToken: QuestionToken
-    ): MethodSignature = js.native
-    def updateMethodSignature(
-      node: MethodSignature,
-      typeParameters: Unit,
-      parameters: NodeArray[ParameterDeclaration],
-      `type`: TypeNode,
-      name: PropertyName
-    ): MethodSignature = js.native
-    def updateMethodSignature(
-      node: MethodSignature,
-      typeParameters: Unit,
-      parameters: NodeArray[ParameterDeclaration],
-      `type`: TypeNode,
-      name: PropertyName,
-      questionToken: QuestionToken
-    ): MethodSignature = js.native
-    def updateMethodSignature(
-      node: MethodSignature,
-      typeParameters: NodeArray[TypeParameterDeclaration],
-      parameters: NodeArray[ParameterDeclaration],
-      `type`: Unit,
-      name: PropertyName
-    ): MethodSignature = js.native
-    def updateMethodSignature(
-      node: MethodSignature,
-      typeParameters: NodeArray[TypeParameterDeclaration],
-      parameters: NodeArray[ParameterDeclaration],
-      `type`: Unit,
-      name: PropertyName,
-      questionToken: QuestionToken
-    ): MethodSignature = js.native
-    /** @deprecated Use `factory.updateMethodSignature` or the factory supplied by your transformation context instead. */
-    def updateMethodSignature(
-      node: MethodSignature,
-      typeParameters: NodeArray[TypeParameterDeclaration],
-      parameters: NodeArray[ParameterDeclaration],
-      `type`: TypeNode,
-      name: PropertyName
-    ): MethodSignature = js.native
-    def updateMethodSignature(
-      node: MethodSignature,
-      typeParameters: NodeArray[TypeParameterDeclaration],
-      parameters: NodeArray[ParameterDeclaration],
-      `type`: TypeNode,
-      name: PropertyName,
-      questionToken: QuestionToken
-    ): MethodSignature = js.native
-    
-    /** @deprecated Use `factory.updateModuleBlock` or the factory supplied by your transformation context instead. */
-    def updateModuleBlock(node: ModuleBlock, statements: js.Array[Statement]): ModuleBlock = js.native
-    
-    /** @deprecated Use `factory.updateModuleDeclaration` or the factory supplied by your transformation context instead. */
-    def updateModuleDeclaration(
-      node: ModuleDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: ModuleName
-    ): ModuleDeclaration = js.native
-    def updateModuleDeclaration(
-      node: ModuleDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: ModuleName,
-      body: ModuleBody
-    ): ModuleDeclaration = js.native
-    def updateModuleDeclaration(node: ModuleDeclaration, decorators: js.Array[Decorator], modifiers: Unit, name: ModuleName): ModuleDeclaration = js.native
-    def updateModuleDeclaration(
-      node: ModuleDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: ModuleName,
-      body: ModuleBody
-    ): ModuleDeclaration = js.native
-    def updateModuleDeclaration(node: ModuleDeclaration, decorators: Unit, modifiers: js.Array[Modifier], name: ModuleName): ModuleDeclaration = js.native
-    def updateModuleDeclaration(
-      node: ModuleDeclaration,
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: ModuleName,
-      body: ModuleBody
-    ): ModuleDeclaration = js.native
-    def updateModuleDeclaration(node: ModuleDeclaration, decorators: Unit, modifiers: Unit, name: ModuleName): ModuleDeclaration = js.native
-    def updateModuleDeclaration(node: ModuleDeclaration, decorators: Unit, modifiers: Unit, name: ModuleName, body: ModuleBody): ModuleDeclaration = js.native
-    /** @deprecated Use `factory.updateModuleDeclaration` or the factory supplied by your transformation context instead. */
-    def updateModuleDeclaration(node: ModuleDeclaration, modifiers: js.Array[Modifier], name: ModuleName): ModuleDeclaration = js.native
-    def updateModuleDeclaration(node: ModuleDeclaration, modifiers: js.Array[Modifier], name: ModuleName, body: ModuleBody): ModuleDeclaration = js.native
-    def updateModuleDeclaration(node: ModuleDeclaration, modifiers: Unit, name: ModuleName): ModuleDeclaration = js.native
-    def updateModuleDeclaration(node: ModuleDeclaration, modifiers: Unit, name: ModuleName, body: ModuleBody): ModuleDeclaration = js.native
-    
-    /** @deprecated Use `factory.updateNamedExports` or the factory supplied by your transformation context instead. */
-    def updateNamedExports(node: NamedExports, elements: js.Array[ExportSpecifier]): NamedExports = js.native
-    
-    /** @deprecated Use `factory.updateNamedImports` or the factory supplied by your transformation context instead. */
-    def updateNamedImports(node: NamedImports, elements: js.Array[ImportSpecifier]): NamedImports = js.native
-    
-    /** @deprecated Use `factory.updateNamespaceExport` or the factory supplied by your transformation context instead. */
-    def updateNamespaceExport(node: NamespaceExport, name: Identifier): NamespaceExport = js.native
-    
-    /** @deprecated Use `factory.updateNamespaceExportDeclaration` or the factory supplied by your transformation context instead. */
-    def updateNamespaceExportDeclaration(node: NamespaceExportDeclaration, name: Identifier): NamespaceExportDeclaration = js.native
-    
-    /** @deprecated Use `factory.updateNamespaceImport` or the factory supplied by your transformation context instead. */
-    def updateNamespaceImport(node: NamespaceImport, name: Identifier): NamespaceImport = js.native
-    
-    /** @deprecated Use `factory.updateNewExpression` or the factory supplied by your transformation context instead. */
-    def updateNew(node: NewExpression, expression: Expression): NewExpression = js.native
-    def updateNew(node: NewExpression, expression: Expression, typeArguments: js.Array[TypeNode]): NewExpression = js.native
-    def updateNew(
-      node: NewExpression,
-      expression: Expression,
-      typeArguments: js.Array[TypeNode],
-      argumentsArray: js.Array[Expression]
-    ): NewExpression = js.native
-    def updateNew(
-      node: NewExpression,
-      expression: Expression,
-      typeArguments: Unit,
-      argumentsArray: js.Array[Expression]
-    ): NewExpression = js.native
-    
-    /** @deprecated Use `factory.updateNonNullChain` or the factory supplied by your transformation context instead. */
-    def updateNonNullChain(node: NonNullChain, expression: Expression): NonNullChain = js.native
-    
-    /** @deprecated Use `factory.updateNonNullExpression` or the factory supplied by your transformation context instead. */
-    def updateNonNullExpression(node: NonNullExpression, expression: Expression): NonNullExpression = js.native
-    
-    /** @deprecated Use `factory.updateObjectBindingPattern` or the factory supplied by your transformation context instead. */
-    def updateObjectBindingPattern(node: ObjectBindingPattern, elements: js.Array[BindingElement]): ObjectBindingPattern = js.native
-    
-    /** @deprecated Use `factory.updateObjectLiteralExpression` or the factory supplied by your transformation context instead. */
-    def updateObjectLiteral(node: ObjectLiteralExpression, properties: js.Array[ObjectLiteralElementLike]): ObjectLiteralExpression = js.native
-    
-    /** @deprecated Use `factory.updateOptionalTypeNode` or the factory supplied by your transformation context instead. */
-    def updateOptionalTypeNode(node: OptionalTypeNode, `type`: TypeNode): OptionalTypeNode = js.native
-    
-    /** @deprecated Use `factory.updateParameterDeclaration` or the factory supplied by your transformation context instead. */
-    def updateParameter(
-      node: ParameterDeclaration,
-      decorators: js.UndefOr[js.Array[Decorator]],
-      modifiers: js.UndefOr[js.Array[Modifier]],
-      dotDotDotToken: js.UndefOr[DotDotDotToken],
-      name: String | BindingName,
-      questionToken: js.UndefOr[QuestionToken],
-      `type`: js.UndefOr[TypeNode],
-      initializer: js.UndefOr[Expression]
-    ): ParameterDeclaration = js.native
-    /** @deprecated Use `factory.updateParameterDeclaration` or the factory supplied by your transformation context instead. */
-    def updateParameter(
-      node: ParameterDeclaration,
-      modifiers: js.UndefOr[js.Array[ModifierLike]],
-      dotDotDotToken: js.UndefOr[DotDotDotToken],
-      name: String | BindingName,
-      questionToken: js.UndefOr[QuestionToken],
-      `type`: js.UndefOr[TypeNode],
-      initializer: js.UndefOr[Expression]
-    ): ParameterDeclaration = js.native
-    
-    /** @deprecated Use `factory.updateParenthesizedExpression` or the factory supplied by your transformation context instead. */
-    def updateParen(node: ParenthesizedExpression, expression: Expression): ParenthesizedExpression = js.native
-    
-    /** @deprecated Use `factory.updateParenthesizedType` or the factory supplied by your transformation context instead. */
-    def updateParenthesizedType(node: ParenthesizedTypeNode, `type`: TypeNode): ParenthesizedTypeNode = js.native
-    
-    /** @deprecated Use `factory.updatePartiallyEmittedExpression` or the factory supplied by your transformation context instead. */
-    def updatePartiallyEmittedExpression(node: PartiallyEmittedExpression, expression: Expression): PartiallyEmittedExpression = js.native
-    
-    /** @deprecated Use `factory.updatePostfixUnaryExpression` or the factory supplied by your transformation context instead. */
-    def updatePostfix(node: PostfixUnaryExpression, operand: Expression): PostfixUnaryExpression = js.native
-    
-    /** @deprecated Use `factory.updatePrefixExpression` or the factory supplied by your transformation context instead. */
-    def updatePrefix(node: PrefixUnaryExpression, operand: Expression): PrefixUnaryExpression = js.native
-    
-    /** @deprecated Use `factory.updatePropertyDeclaration` or the factory supplied by your transformation context instead. */
-    def updateProperty(
-      node: PropertyDeclaration,
-      decorators: js.UndefOr[js.Array[Decorator]],
-      modifiers: js.UndefOr[js.Array[Modifier]],
-      name: String | PropertyName,
-      questionOrExclamationToken: js.UndefOr[QuestionToken | ExclamationToken],
-      `type`: js.UndefOr[TypeNode],
-      initializer: js.UndefOr[Expression]
-    ): PropertyDeclaration = js.native
-    /** @deprecated Use `factory.updatePropertyDeclaration` or the factory supplied by your transformation context instead. */
-    def updateProperty(node: PropertyDeclaration, modifiers: js.Array[ModifierLike], name: String): PropertyDeclaration = js.native
-    def updateProperty(
-      node: PropertyDeclaration,
-      modifiers: js.Array[ModifierLike],
-      name: String,
-      questionOrExclamationToken: ExclamationToken | QuestionToken
-    ): PropertyDeclaration = js.native
-    def updateProperty(
-      node: PropertyDeclaration,
-      modifiers: js.Array[ModifierLike],
-      name: String,
-      questionOrExclamationToken: ExclamationToken | QuestionToken,
-      `type`: Unit,
-      initializer: Expression
-    ): PropertyDeclaration = js.native
-    def updateProperty(
-      node: PropertyDeclaration,
-      modifiers: js.Array[ModifierLike],
-      name: String,
-      questionOrExclamationToken: ExclamationToken | QuestionToken,
-      `type`: TypeNode
-    ): PropertyDeclaration = js.native
-    def updateProperty(
-      node: PropertyDeclaration,
-      modifiers: js.Array[ModifierLike],
-      name: String,
-      questionOrExclamationToken: ExclamationToken | QuestionToken,
-      `type`: TypeNode,
-      initializer: Expression
-    ): PropertyDeclaration = js.native
-    def updateProperty(
-      node: PropertyDeclaration,
-      modifiers: js.Array[ModifierLike],
-      name: String,
-      questionOrExclamationToken: Unit,
-      `type`: Unit,
-      initializer: Expression
-    ): PropertyDeclaration = js.native
-    def updateProperty(
-      node: PropertyDeclaration,
-      modifiers: js.Array[ModifierLike],
-      name: String,
-      questionOrExclamationToken: Unit,
-      `type`: TypeNode
-    ): PropertyDeclaration = js.native
-    def updateProperty(
-      node: PropertyDeclaration,
-      modifiers: js.Array[ModifierLike],
-      name: String,
-      questionOrExclamationToken: Unit,
-      `type`: TypeNode,
-      initializer: Expression
-    ): PropertyDeclaration = js.native
-    def updateProperty(node: PropertyDeclaration, modifiers: js.Array[ModifierLike], name: PropertyName): PropertyDeclaration = js.native
-    def updateProperty(
-      node: PropertyDeclaration,
-      modifiers: js.Array[ModifierLike],
-      name: PropertyName,
-      questionOrExclamationToken: ExclamationToken | QuestionToken
-    ): PropertyDeclaration = js.native
-    def updateProperty(
-      node: PropertyDeclaration,
-      modifiers: js.Array[ModifierLike],
-      name: PropertyName,
-      questionOrExclamationToken: ExclamationToken | QuestionToken,
-      `type`: Unit,
-      initializer: Expression
-    ): PropertyDeclaration = js.native
-    def updateProperty(
-      node: PropertyDeclaration,
-      modifiers: js.Array[ModifierLike],
-      name: PropertyName,
-      questionOrExclamationToken: ExclamationToken | QuestionToken,
-      `type`: TypeNode
-    ): PropertyDeclaration = js.native
-    def updateProperty(
-      node: PropertyDeclaration,
-      modifiers: js.Array[ModifierLike],
-      name: PropertyName,
-      questionOrExclamationToken: ExclamationToken | QuestionToken,
-      `type`: TypeNode,
-      initializer: Expression
-    ): PropertyDeclaration = js.native
-    def updateProperty(
-      node: PropertyDeclaration,
-      modifiers: js.Array[ModifierLike],
-      name: PropertyName,
-      questionOrExclamationToken: Unit,
-      `type`: Unit,
-      initializer: Expression
-    ): PropertyDeclaration = js.native
-    def updateProperty(
-      node: PropertyDeclaration,
-      modifiers: js.Array[ModifierLike],
-      name: PropertyName,
-      questionOrExclamationToken: Unit,
-      `type`: TypeNode
-    ): PropertyDeclaration = js.native
-    def updateProperty(
-      node: PropertyDeclaration,
-      modifiers: js.Array[ModifierLike],
-      name: PropertyName,
-      questionOrExclamationToken: Unit,
-      `type`: TypeNode,
-      initializer: Expression
-    ): PropertyDeclaration = js.native
-    def updateProperty(node: PropertyDeclaration, modifiers: Unit, name: String): PropertyDeclaration = js.native
-    def updateProperty(
-      node: PropertyDeclaration,
-      modifiers: Unit,
-      name: String,
-      questionOrExclamationToken: ExclamationToken | QuestionToken
-    ): PropertyDeclaration = js.native
-    def updateProperty(
-      node: PropertyDeclaration,
-      modifiers: Unit,
-      name: String,
-      questionOrExclamationToken: ExclamationToken | QuestionToken,
-      `type`: Unit,
-      initializer: Expression
-    ): PropertyDeclaration = js.native
-    def updateProperty(
-      node: PropertyDeclaration,
-      modifiers: Unit,
-      name: String,
-      questionOrExclamationToken: ExclamationToken | QuestionToken,
-      `type`: TypeNode
-    ): PropertyDeclaration = js.native
-    def updateProperty(
-      node: PropertyDeclaration,
-      modifiers: Unit,
-      name: String,
-      questionOrExclamationToken: ExclamationToken | QuestionToken,
-      `type`: TypeNode,
-      initializer: Expression
-    ): PropertyDeclaration = js.native
-    def updateProperty(
-      node: PropertyDeclaration,
-      modifiers: Unit,
-      name: String,
-      questionOrExclamationToken: Unit,
-      `type`: Unit,
-      initializer: Expression
-    ): PropertyDeclaration = js.native
-    def updateProperty(
-      node: PropertyDeclaration,
-      modifiers: Unit,
-      name: String,
-      questionOrExclamationToken: Unit,
-      `type`: TypeNode
-    ): PropertyDeclaration = js.native
-    def updateProperty(
-      node: PropertyDeclaration,
-      modifiers: Unit,
-      name: String,
-      questionOrExclamationToken: Unit,
-      `type`: TypeNode,
-      initializer: Expression
-    ): PropertyDeclaration = js.native
-    def updateProperty(node: PropertyDeclaration, modifiers: Unit, name: PropertyName): PropertyDeclaration = js.native
-    def updateProperty(
-      node: PropertyDeclaration,
-      modifiers: Unit,
-      name: PropertyName,
-      questionOrExclamationToken: ExclamationToken | QuestionToken
-    ): PropertyDeclaration = js.native
-    def updateProperty(
-      node: PropertyDeclaration,
-      modifiers: Unit,
-      name: PropertyName,
-      questionOrExclamationToken: ExclamationToken | QuestionToken,
-      `type`: Unit,
-      initializer: Expression
-    ): PropertyDeclaration = js.native
-    def updateProperty(
-      node: PropertyDeclaration,
-      modifiers: Unit,
-      name: PropertyName,
-      questionOrExclamationToken: ExclamationToken | QuestionToken,
-      `type`: TypeNode
-    ): PropertyDeclaration = js.native
-    def updateProperty(
-      node: PropertyDeclaration,
-      modifiers: Unit,
-      name: PropertyName,
-      questionOrExclamationToken: ExclamationToken | QuestionToken,
-      `type`: TypeNode,
-      initializer: Expression
-    ): PropertyDeclaration = js.native
-    def updateProperty(
-      node: PropertyDeclaration,
-      modifiers: Unit,
-      name: PropertyName,
-      questionOrExclamationToken: Unit,
-      `type`: Unit,
-      initializer: Expression
-    ): PropertyDeclaration = js.native
-    def updateProperty(
-      node: PropertyDeclaration,
-      modifiers: Unit,
-      name: PropertyName,
-      questionOrExclamationToken: Unit,
-      `type`: TypeNode
-    ): PropertyDeclaration = js.native
-    def updateProperty(
-      node: PropertyDeclaration,
-      modifiers: Unit,
-      name: PropertyName,
-      questionOrExclamationToken: Unit,
-      `type`: TypeNode,
-      initializer: Expression
-    ): PropertyDeclaration = js.native
-    
-    /** @deprecated Use `factory.updatePropertyAccessExpression` or the factory supplied by your transformation context instead. */
-    def updatePropertyAccess(node: PropertyAccessExpression, expression: Expression, name: MemberName): PropertyAccessExpression = js.native
-    
-    def updatePropertyAccessChain(node: PropertyAccessChain, expression: Expression, questionDotToken: Unit, name: MemberName): PropertyAccessChain = js.native
-    /** @deprecated Use `factory.updatePropertyAccessChain` or the factory supplied by your transformation context instead. */
-    def updatePropertyAccessChain(
-      node: PropertyAccessChain,
-      expression: Expression,
-      questionDotToken: QuestionDotToken,
-      name: MemberName
-    ): PropertyAccessChain = js.native
-    
-    /** @deprecated Use `factory.updatePropertyAssignment` or the factory supplied by your transformation context instead. */
-    def updatePropertyAssignment(node: PropertyAssignment, name: PropertyName, initializer: Expression): PropertyAssignment = js.native
-    
-    /** @deprecated Use `factory.updatePropertySignature` or the factory supplied by your transformation context instead. */
-    def updatePropertySignature(node: PropertySignature, modifiers: js.Array[Modifier], name: PropertyName): PropertySignature = js.native
-    def updatePropertySignature(
-      node: PropertySignature,
-      modifiers: js.Array[Modifier],
-      name: PropertyName,
-      questionToken: Unit,
-      `type`: Unit,
-      initializer: Expression
-    ): PropertySignature = js.native
-    def updatePropertySignature(
-      node: PropertySignature,
-      modifiers: js.Array[Modifier],
-      name: PropertyName,
-      questionToken: Unit,
-      `type`: TypeNode
-    ): PropertySignature = js.native
-    def updatePropertySignature(
-      node: PropertySignature,
-      modifiers: js.Array[Modifier],
-      name: PropertyName,
-      questionToken: Unit,
-      `type`: TypeNode,
-      initializer: Expression
-    ): PropertySignature = js.native
-    def updatePropertySignature(
-      node: PropertySignature,
-      modifiers: js.Array[Modifier],
-      name: PropertyName,
-      questionToken: QuestionToken
-    ): PropertySignature = js.native
-    def updatePropertySignature(
-      node: PropertySignature,
-      modifiers: js.Array[Modifier],
-      name: PropertyName,
-      questionToken: QuestionToken,
-      `type`: Unit,
-      initializer: Expression
-    ): PropertySignature = js.native
-    def updatePropertySignature(
-      node: PropertySignature,
-      modifiers: js.Array[Modifier],
-      name: PropertyName,
-      questionToken: QuestionToken,
-      `type`: TypeNode
-    ): PropertySignature = js.native
-    def updatePropertySignature(
-      node: PropertySignature,
-      modifiers: js.Array[Modifier],
-      name: PropertyName,
-      questionToken: QuestionToken,
-      `type`: TypeNode,
-      initializer: Expression
-    ): PropertySignature = js.native
-    def updatePropertySignature(node: PropertySignature, modifiers: Unit, name: PropertyName): PropertySignature = js.native
-    def updatePropertySignature(
-      node: PropertySignature,
-      modifiers: Unit,
-      name: PropertyName,
-      questionToken: Unit,
-      `type`: Unit,
-      initializer: Expression
-    ): PropertySignature = js.native
-    def updatePropertySignature(
-      node: PropertySignature,
-      modifiers: Unit,
-      name: PropertyName,
-      questionToken: Unit,
-      `type`: TypeNode
-    ): PropertySignature = js.native
-    def updatePropertySignature(
-      node: PropertySignature,
-      modifiers: Unit,
-      name: PropertyName,
-      questionToken: Unit,
-      `type`: TypeNode,
-      initializer: Expression
-    ): PropertySignature = js.native
-    def updatePropertySignature(node: PropertySignature, modifiers: Unit, name: PropertyName, questionToken: QuestionToken): PropertySignature = js.native
-    def updatePropertySignature(
-      node: PropertySignature,
-      modifiers: Unit,
-      name: PropertyName,
-      questionToken: QuestionToken,
-      `type`: Unit,
-      initializer: Expression
-    ): PropertySignature = js.native
-    def updatePropertySignature(
-      node: PropertySignature,
-      modifiers: Unit,
-      name: PropertyName,
-      questionToken: QuestionToken,
-      `type`: TypeNode
-    ): PropertySignature = js.native
-    def updatePropertySignature(
-      node: PropertySignature,
-      modifiers: Unit,
-      name: PropertyName,
-      questionToken: QuestionToken,
-      `type`: TypeNode,
-      initializer: Expression
-    ): PropertySignature = js.native
-    
-    /** @deprecated Use `factory.updateQualifiedName` or the factory supplied by your transformation context instead. */
-    def updateQualifiedName(node: QualifiedName, left: EntityName, right: Identifier): QualifiedName = js.native
-    
-    /** @deprecated Use `factory.updateRestTypeNode` or the factory supplied by your transformation context instead. */
-    def updateRestTypeNode(node: RestTypeNode, `type`: TypeNode): RestTypeNode = js.native
-    
-    /** @deprecated Use `factory.updateReturnStatement` or the factory supplied by your transformation context instead. */
-    def updateReturn(node: ReturnStatement): ReturnStatement = js.native
-    def updateReturn(node: ReturnStatement, expression: Expression): ReturnStatement = js.native
-    
-    /** @deprecated Use `factory.updateSetAccessorDeclaration` or the factory supplied by your transformation context instead. */
-    def updateSetAccessor(
-      node: SetAccessorDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration]
-    ): SetAccessorDeclaration = js.native
-    def updateSetAccessor(
-      node: SetAccessorDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration],
-      body: Block
-    ): SetAccessorDeclaration = js.native
-    def updateSetAccessor(
-      node: SetAccessorDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration]
-    ): SetAccessorDeclaration = js.native
-    def updateSetAccessor(
-      node: SetAccessorDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration],
-      body: Block
-    ): SetAccessorDeclaration = js.native
-    def updateSetAccessor(
-      node: SetAccessorDeclaration,
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration]
-    ): SetAccessorDeclaration = js.native
-    def updateSetAccessor(
-      node: SetAccessorDeclaration,
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration],
-      body: Block
-    ): SetAccessorDeclaration = js.native
-    def updateSetAccessor(
-      node: SetAccessorDeclaration,
-      decorators: Unit,
-      modifiers: Unit,
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration]
-    ): SetAccessorDeclaration = js.native
-    def updateSetAccessor(
-      node: SetAccessorDeclaration,
-      decorators: Unit,
-      modifiers: Unit,
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration],
-      body: Block
-    ): SetAccessorDeclaration = js.native
-    /** @deprecated Use `factory.updateSetAccessorDeclaration` or the factory supplied by your transformation context instead. */
-    def updateSetAccessor(
-      node: SetAccessorDeclaration,
-      modifiers: js.Array[ModifierLike],
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration]
-    ): SetAccessorDeclaration = js.native
-    def updateSetAccessor(
-      node: SetAccessorDeclaration,
-      modifiers: js.Array[ModifierLike],
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration],
-      body: Block
-    ): SetAccessorDeclaration = js.native
-    def updateSetAccessor(
-      node: SetAccessorDeclaration,
-      modifiers: Unit,
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration]
-    ): SetAccessorDeclaration = js.native
-    def updateSetAccessor(
-      node: SetAccessorDeclaration,
-      modifiers: Unit,
-      name: PropertyName,
-      parameters: js.Array[ParameterDeclaration],
-      body: Block
-    ): SetAccessorDeclaration = js.native
-    
-    /** @deprecated Use `factory.updateShorthandPropertyAssignment` or the factory supplied by your transformation context instead. */
-    def updateShorthandPropertyAssignment(node: ShorthandPropertyAssignment, name: Identifier): ShorthandPropertyAssignment = js.native
-    def updateShorthandPropertyAssignment(node: ShorthandPropertyAssignment, name: Identifier, objectAssignmentInitializer: Expression): ShorthandPropertyAssignment = js.native
-    
     def updateSourceFile(sourceFile: SourceFile, newText: String, textChangeRange: TextChangeRange): SourceFile = js.native
     def updateSourceFile(
       sourceFile: SourceFile,
@@ -10945,556 +3426,29 @@ object anon {
       aggressiveChecks: Boolean
     ): SourceFile = js.native
     
-    /** @deprecated Use `factory.updateSourceFile` or the factory supplied by your transformation context instead. */
-    def updateSourceFileNode(node: SourceFile, statements: js.Array[Statement]): SourceFile = js.native
-    def updateSourceFileNode(node: SourceFile, statements: js.Array[Statement], isDeclarationFile: Boolean): SourceFile = js.native
-    def updateSourceFileNode(
-      node: SourceFile,
-      statements: js.Array[Statement],
-      isDeclarationFile: Boolean,
-      referencedFiles: js.Array[FileReference]
-    ): SourceFile = js.native
-    def updateSourceFileNode(
-      node: SourceFile,
-      statements: js.Array[Statement],
-      isDeclarationFile: Boolean,
-      referencedFiles: js.Array[FileReference],
-      typeReferences: js.Array[FileReference]
-    ): SourceFile = js.native
-    def updateSourceFileNode(
-      node: SourceFile,
-      statements: js.Array[Statement],
-      isDeclarationFile: Boolean,
-      referencedFiles: js.Array[FileReference],
-      typeReferences: js.Array[FileReference],
-      hasNoDefaultLib: Boolean
-    ): SourceFile = js.native
-    def updateSourceFileNode(
-      node: SourceFile,
-      statements: js.Array[Statement],
-      isDeclarationFile: Boolean,
-      referencedFiles: js.Array[FileReference],
-      typeReferences: js.Array[FileReference],
-      hasNoDefaultLib: Boolean,
-      libReferences: js.Array[FileReference]
-    ): SourceFile = js.native
-    def updateSourceFileNode(
-      node: SourceFile,
-      statements: js.Array[Statement],
-      isDeclarationFile: Boolean,
-      referencedFiles: js.Array[FileReference],
-      typeReferences: js.Array[FileReference],
-      hasNoDefaultLib: Unit,
-      libReferences: js.Array[FileReference]
-    ): SourceFile = js.native
-    def updateSourceFileNode(
-      node: SourceFile,
-      statements: js.Array[Statement],
-      isDeclarationFile: Boolean,
-      referencedFiles: js.Array[FileReference],
-      typeReferences: Unit,
-      hasNoDefaultLib: Boolean
-    ): SourceFile = js.native
-    def updateSourceFileNode(
-      node: SourceFile,
-      statements: js.Array[Statement],
-      isDeclarationFile: Boolean,
-      referencedFiles: js.Array[FileReference],
-      typeReferences: Unit,
-      hasNoDefaultLib: Boolean,
-      libReferences: js.Array[FileReference]
-    ): SourceFile = js.native
-    def updateSourceFileNode(
-      node: SourceFile,
-      statements: js.Array[Statement],
-      isDeclarationFile: Boolean,
-      referencedFiles: js.Array[FileReference],
-      typeReferences: Unit,
-      hasNoDefaultLib: Unit,
-      libReferences: js.Array[FileReference]
-    ): SourceFile = js.native
-    def updateSourceFileNode(
-      node: SourceFile,
-      statements: js.Array[Statement],
-      isDeclarationFile: Boolean,
-      referencedFiles: Unit,
-      typeReferences: js.Array[FileReference]
-    ): SourceFile = js.native
-    def updateSourceFileNode(
-      node: SourceFile,
-      statements: js.Array[Statement],
-      isDeclarationFile: Boolean,
-      referencedFiles: Unit,
-      typeReferences: js.Array[FileReference],
-      hasNoDefaultLib: Boolean
-    ): SourceFile = js.native
-    def updateSourceFileNode(
-      node: SourceFile,
-      statements: js.Array[Statement],
-      isDeclarationFile: Boolean,
-      referencedFiles: Unit,
-      typeReferences: js.Array[FileReference],
-      hasNoDefaultLib: Boolean,
-      libReferences: js.Array[FileReference]
-    ): SourceFile = js.native
-    def updateSourceFileNode(
-      node: SourceFile,
-      statements: js.Array[Statement],
-      isDeclarationFile: Boolean,
-      referencedFiles: Unit,
-      typeReferences: js.Array[FileReference],
-      hasNoDefaultLib: Unit,
-      libReferences: js.Array[FileReference]
-    ): SourceFile = js.native
-    def updateSourceFileNode(
-      node: SourceFile,
-      statements: js.Array[Statement],
-      isDeclarationFile: Boolean,
-      referencedFiles: Unit,
-      typeReferences: Unit,
-      hasNoDefaultLib: Boolean
-    ): SourceFile = js.native
-    def updateSourceFileNode(
-      node: SourceFile,
-      statements: js.Array[Statement],
-      isDeclarationFile: Boolean,
-      referencedFiles: Unit,
-      typeReferences: Unit,
-      hasNoDefaultLib: Boolean,
-      libReferences: js.Array[FileReference]
-    ): SourceFile = js.native
-    def updateSourceFileNode(
-      node: SourceFile,
-      statements: js.Array[Statement],
-      isDeclarationFile: Boolean,
-      referencedFiles: Unit,
-      typeReferences: Unit,
-      hasNoDefaultLib: Unit,
-      libReferences: js.Array[FileReference]
-    ): SourceFile = js.native
-    def updateSourceFileNode(
-      node: SourceFile,
-      statements: js.Array[Statement],
-      isDeclarationFile: Unit,
-      referencedFiles: js.Array[FileReference]
-    ): SourceFile = js.native
-    def updateSourceFileNode(
-      node: SourceFile,
-      statements: js.Array[Statement],
-      isDeclarationFile: Unit,
-      referencedFiles: js.Array[FileReference],
-      typeReferences: js.Array[FileReference]
-    ): SourceFile = js.native
-    def updateSourceFileNode(
-      node: SourceFile,
-      statements: js.Array[Statement],
-      isDeclarationFile: Unit,
-      referencedFiles: js.Array[FileReference],
-      typeReferences: js.Array[FileReference],
-      hasNoDefaultLib: Boolean
-    ): SourceFile = js.native
-    def updateSourceFileNode(
-      node: SourceFile,
-      statements: js.Array[Statement],
-      isDeclarationFile: Unit,
-      referencedFiles: js.Array[FileReference],
-      typeReferences: js.Array[FileReference],
-      hasNoDefaultLib: Boolean,
-      libReferences: js.Array[FileReference]
-    ): SourceFile = js.native
-    def updateSourceFileNode(
-      node: SourceFile,
-      statements: js.Array[Statement],
-      isDeclarationFile: Unit,
-      referencedFiles: js.Array[FileReference],
-      typeReferences: js.Array[FileReference],
-      hasNoDefaultLib: Unit,
-      libReferences: js.Array[FileReference]
-    ): SourceFile = js.native
-    def updateSourceFileNode(
-      node: SourceFile,
-      statements: js.Array[Statement],
-      isDeclarationFile: Unit,
-      referencedFiles: js.Array[FileReference],
-      typeReferences: Unit,
-      hasNoDefaultLib: Boolean
-    ): SourceFile = js.native
-    def updateSourceFileNode(
-      node: SourceFile,
-      statements: js.Array[Statement],
-      isDeclarationFile: Unit,
-      referencedFiles: js.Array[FileReference],
-      typeReferences: Unit,
-      hasNoDefaultLib: Boolean,
-      libReferences: js.Array[FileReference]
-    ): SourceFile = js.native
-    def updateSourceFileNode(
-      node: SourceFile,
-      statements: js.Array[Statement],
-      isDeclarationFile: Unit,
-      referencedFiles: js.Array[FileReference],
-      typeReferences: Unit,
-      hasNoDefaultLib: Unit,
-      libReferences: js.Array[FileReference]
-    ): SourceFile = js.native
-    def updateSourceFileNode(
-      node: SourceFile,
-      statements: js.Array[Statement],
-      isDeclarationFile: Unit,
-      referencedFiles: Unit,
-      typeReferences: js.Array[FileReference]
-    ): SourceFile = js.native
-    def updateSourceFileNode(
-      node: SourceFile,
-      statements: js.Array[Statement],
-      isDeclarationFile: Unit,
-      referencedFiles: Unit,
-      typeReferences: js.Array[FileReference],
-      hasNoDefaultLib: Boolean
-    ): SourceFile = js.native
-    def updateSourceFileNode(
-      node: SourceFile,
-      statements: js.Array[Statement],
-      isDeclarationFile: Unit,
-      referencedFiles: Unit,
-      typeReferences: js.Array[FileReference],
-      hasNoDefaultLib: Boolean,
-      libReferences: js.Array[FileReference]
-    ): SourceFile = js.native
-    def updateSourceFileNode(
-      node: SourceFile,
-      statements: js.Array[Statement],
-      isDeclarationFile: Unit,
-      referencedFiles: Unit,
-      typeReferences: js.Array[FileReference],
-      hasNoDefaultLib: Unit,
-      libReferences: js.Array[FileReference]
-    ): SourceFile = js.native
-    def updateSourceFileNode(
-      node: SourceFile,
-      statements: js.Array[Statement],
-      isDeclarationFile: Unit,
-      referencedFiles: Unit,
-      typeReferences: Unit,
-      hasNoDefaultLib: Boolean
-    ): SourceFile = js.native
-    def updateSourceFileNode(
-      node: SourceFile,
-      statements: js.Array[Statement],
-      isDeclarationFile: Unit,
-      referencedFiles: Unit,
-      typeReferences: Unit,
-      hasNoDefaultLib: Boolean,
-      libReferences: js.Array[FileReference]
-    ): SourceFile = js.native
-    def updateSourceFileNode(
-      node: SourceFile,
-      statements: js.Array[Statement],
-      isDeclarationFile: Unit,
-      referencedFiles: Unit,
-      typeReferences: Unit,
-      hasNoDefaultLib: Unit,
-      libReferences: js.Array[FileReference]
-    ): SourceFile = js.native
-    
-    /** @deprecated Use `factory.updateSpreadExpression` or the factory supplied by your transformation context instead. */
-    def updateSpread(node: SpreadElement, expression: Expression): SpreadElement = js.native
-    
-    /** @deprecated Use `factory.updateSpreadAssignment` or the factory supplied by your transformation context instead. */
-    def updateSpreadAssignment(node: SpreadAssignment, expression: Expression): SpreadAssignment = js.native
-    
-    /** @deprecated Use `factory.updateExpressionStatement` or the factory supplied by your transformation context instead. */
-    def updateStatement(node: ExpressionStatement, expression: Expression): ExpressionStatement = js.native
-    
-    /** @deprecated Use `factory.updateSwitchStatement` or the factory supplied by your transformation context instead. */
-    def updateSwitch(node: SwitchStatement, expression: Expression, caseBlock: CaseBlock): SwitchStatement = js.native
-    
-    /** @deprecated Use `factory.updateTaggedTemplate` or the factory supplied by your transformation context instead. */
-    def updateTaggedTemplate(node: TaggedTemplateExpression, tag: Expression, template: TemplateLiteral): TaggedTemplateExpression = js.native
-    /** @deprecated Use `factory.updateTaggedTemplate` or the factory supplied by your transformation context instead. */
-    def updateTaggedTemplate(
-      node: TaggedTemplateExpression,
-      tag: Expression,
-      typeArguments: js.Array[TypeNode],
-      template: TemplateLiteral
-    ): TaggedTemplateExpression = js.native
-    def updateTaggedTemplate(node: TaggedTemplateExpression, tag: Expression, typeArguments: Unit, template: TemplateLiteral): TaggedTemplateExpression = js.native
-    
-    /** @deprecated Use `factory.updateTemplateExpression` or the factory supplied by your transformation context instead. */
-    def updateTemplateExpression(node: TemplateExpression, head: TemplateHead, templateSpans: js.Array[TemplateSpan]): TemplateExpression = js.native
-    
-    /** @deprecated Use `factory.updateTemplateSpan` or the factory supplied by your transformation context instead. */
-    def updateTemplateSpan(node: TemplateSpan, expression: Expression, literal: TemplateMiddle): TemplateSpan = js.native
-    def updateTemplateSpan(node: TemplateSpan, expression: Expression, literal: TemplateTail): TemplateSpan = js.native
-    
-    /** @deprecated Use `factory.updateThrowStatement` or the factory supplied by your transformation context instead. */
-    def updateThrow(node: ThrowStatement, expression: Expression): ThrowStatement = js.native
-    
-    /** @deprecated Use `factory.updateTryStatement` or the factory supplied by your transformation context instead. */
-    def updateTry(node: TryStatement, tryBlock: Block): TryStatement = js.native
-    def updateTry(node: TryStatement, tryBlock: Block, catchClause: Unit, finallyBlock: Block): TryStatement = js.native
-    def updateTry(node: TryStatement, tryBlock: Block, catchClause: CatchClause): TryStatement = js.native
-    def updateTry(node: TryStatement, tryBlock: Block, catchClause: CatchClause, finallyBlock: Block): TryStatement = js.native
-    
-    /** @deprecated Use `factory.updateTupleTypeNode` or the factory supplied by your transformation context instead. */
-    def updateTupleTypeNode(node: TupleTypeNode, elements: js.Array[TypeNode | NamedTupleMember]): TupleTypeNode = js.native
-    
-    /** @deprecated Use `factory.updateTypeAliasDeclaration` or the factory supplied by your transformation context instead. */
-    def updateTypeAliasDeclaration(
-      node: TypeAliasDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      `type`: TypeNode
-    ): TypeAliasDeclaration = js.native
-    def updateTypeAliasDeclaration(
-      node: TypeAliasDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: Unit,
-      `type`: TypeNode
-    ): TypeAliasDeclaration = js.native
-    def updateTypeAliasDeclaration(
-      node: TypeAliasDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      `type`: TypeNode
-    ): TypeAliasDeclaration = js.native
-    def updateTypeAliasDeclaration(
-      node: TypeAliasDeclaration,
-      decorators: js.Array[Decorator],
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: Unit,
-      `type`: TypeNode
-    ): TypeAliasDeclaration = js.native
-    def updateTypeAliasDeclaration(
-      node: TypeAliasDeclaration,
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      `type`: TypeNode
-    ): TypeAliasDeclaration = js.native
-    def updateTypeAliasDeclaration(
-      node: TypeAliasDeclaration,
-      decorators: Unit,
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: Unit,
-      `type`: TypeNode
-    ): TypeAliasDeclaration = js.native
-    def updateTypeAliasDeclaration(
-      node: TypeAliasDeclaration,
-      decorators: Unit,
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      `type`: TypeNode
-    ): TypeAliasDeclaration = js.native
-    def updateTypeAliasDeclaration(
-      node: TypeAliasDeclaration,
-      decorators: Unit,
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: Unit,
-      `type`: TypeNode
-    ): TypeAliasDeclaration = js.native
-    /** @deprecated Use `factory.updateTypeAliasDeclaration` or the factory supplied by your transformation context instead. */
-    def updateTypeAliasDeclaration(
-      node: TypeAliasDeclaration,
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      `type`: TypeNode
-    ): TypeAliasDeclaration = js.native
-    def updateTypeAliasDeclaration(
-      node: TypeAliasDeclaration,
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      typeParameters: Unit,
-      `type`: TypeNode
-    ): TypeAliasDeclaration = js.native
-    def updateTypeAliasDeclaration(
-      node: TypeAliasDeclaration,
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: js.Array[TypeParameterDeclaration],
-      `type`: TypeNode
-    ): TypeAliasDeclaration = js.native
-    def updateTypeAliasDeclaration(
-      node: TypeAliasDeclaration,
-      modifiers: Unit,
-      name: Identifier,
-      typeParameters: Unit,
-      `type`: TypeNode
-    ): TypeAliasDeclaration = js.native
-    
-    /** @deprecated Use `factory.updateTypeAssertion` or the factory supplied by your transformation context instead. */
-    def updateTypeAssertion(node: TypeAssertion, `type`: TypeNode, expression: Expression): TypeAssertion = js.native
-    
-    /** @deprecated Use `factory.updateTypeLiteralNode` or the factory supplied by your transformation context instead. */
-    def updateTypeLiteralNode(node: TypeLiteralNode, members: NodeArray[TypeElement]): TypeLiteralNode = js.native
-    
-    /** @deprecated Use `factory.updateTypeOfExpression` or the factory supplied by your transformation context instead. */
-    def updateTypeOf(node: TypeOfExpression, expression: Expression): TypeOfExpression = js.native
-    
-    /** @deprecated Use `factory.updateTypeOperatorNode` or the factory supplied by your transformation context instead. */
-    def updateTypeOperatorNode(node: TypeOperatorNode, `type`: TypeNode): TypeOperatorNode = js.native
-    
-    /** @deprecated Use `factory.updateTypeParameterDeclaration` or the factory supplied by your transformation context instead. */
-    def updateTypeParameterDeclaration(node: TypeParameterDeclaration, modifiers: js.Array[Modifier], name: Identifier): TypeParameterDeclaration = js.native
-    def updateTypeParameterDeclaration(
-      node: TypeParameterDeclaration,
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      constraint: Unit,
-      defaultType: TypeNode
-    ): TypeParameterDeclaration = js.native
-    def updateTypeParameterDeclaration(
-      node: TypeParameterDeclaration,
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      constraint: TypeNode
-    ): TypeParameterDeclaration = js.native
-    def updateTypeParameterDeclaration(
-      node: TypeParameterDeclaration,
-      modifiers: js.Array[Modifier],
-      name: Identifier,
-      constraint: TypeNode,
-      defaultType: TypeNode
-    ): TypeParameterDeclaration = js.native
-    def updateTypeParameterDeclaration(node: TypeParameterDeclaration, modifiers: Unit, name: Identifier): TypeParameterDeclaration = js.native
-    def updateTypeParameterDeclaration(
-      node: TypeParameterDeclaration,
-      modifiers: Unit,
-      name: Identifier,
-      constraint: Unit,
-      defaultType: TypeNode
-    ): TypeParameterDeclaration = js.native
-    def updateTypeParameterDeclaration(node: TypeParameterDeclaration, modifiers: Unit, name: Identifier, constraint: TypeNode): TypeParameterDeclaration = js.native
-    def updateTypeParameterDeclaration(
-      node: TypeParameterDeclaration,
-      modifiers: Unit,
-      name: Identifier,
-      constraint: TypeNode,
-      defaultType: TypeNode
-    ): TypeParameterDeclaration = js.native
-    /** @deprecated Use `factory.updateTypeParameterDeclaration` or the factory supplied by your transformation context instead. */
-    def updateTypeParameterDeclaration(node: TypeParameterDeclaration, name: Identifier): TypeParameterDeclaration = js.native
-    def updateTypeParameterDeclaration(node: TypeParameterDeclaration, name: Identifier, constraint: Unit, defaultType: TypeNode): TypeParameterDeclaration = js.native
-    def updateTypeParameterDeclaration(node: TypeParameterDeclaration, name: Identifier, constraint: TypeNode): TypeParameterDeclaration = js.native
-    def updateTypeParameterDeclaration(node: TypeParameterDeclaration, name: Identifier, constraint: TypeNode, defaultType: TypeNode): TypeParameterDeclaration = js.native
-    
-    /** @deprecated Use `factory.updateTypePredicateNode` or the factory supplied by your transformation context instead. */
-    def updateTypePredicateNode(node: TypePredicateNode, parameterName: Identifier, `type`: TypeNode): TypePredicateNode = js.native
-    def updateTypePredicateNode(node: TypePredicateNode, parameterName: ThisTypeNode, `type`: TypeNode): TypePredicateNode = js.native
-    
-    def updateTypePredicateNodeWithModifier(node: TypePredicateNode, assertsModifier: Unit, parameterName: Identifier): TypePredicateNode = js.native
-    def updateTypePredicateNodeWithModifier(node: TypePredicateNode, assertsModifier: Unit, parameterName: Identifier, `type`: TypeNode): TypePredicateNode = js.native
-    def updateTypePredicateNodeWithModifier(node: TypePredicateNode, assertsModifier: Unit, parameterName: ThisTypeNode): TypePredicateNode = js.native
-    def updateTypePredicateNodeWithModifier(node: TypePredicateNode, assertsModifier: Unit, parameterName: ThisTypeNode, `type`: TypeNode): TypePredicateNode = js.native
-    /** @deprecated Use `factory.updateTypePredicateNode` or the factory supplied by your transformation context instead. */
-    def updateTypePredicateNodeWithModifier(node: TypePredicateNode, assertsModifier: AssertsKeyword, parameterName: Identifier): TypePredicateNode = js.native
-    def updateTypePredicateNodeWithModifier(
-      node: TypePredicateNode,
-      assertsModifier: AssertsKeyword,
-      parameterName: Identifier,
-      `type`: TypeNode
-    ): TypePredicateNode = js.native
-    def updateTypePredicateNodeWithModifier(node: TypePredicateNode, assertsModifier: AssertsKeyword, parameterName: ThisTypeNode): TypePredicateNode = js.native
-    def updateTypePredicateNodeWithModifier(
-      node: TypePredicateNode,
-      assertsModifier: AssertsKeyword,
-      parameterName: ThisTypeNode,
-      `type`: TypeNode
-    ): TypePredicateNode = js.native
-    
-    /** @deprecated Use `factory.updateTypeQueryNode` or the factory supplied by your transformation context instead. */
-    def updateTypeQueryNode(node: TypeQueryNode, exprName: EntityName): TypeQueryNode = js.native
-    def updateTypeQueryNode(node: TypeQueryNode, exprName: EntityName, typeArguments: js.Array[TypeNode]): TypeQueryNode = js.native
-    
-    /** @deprecated Use `factory.updateTypeReferenceNode` or the factory supplied by your transformation context instead. */
-    def updateTypeReferenceNode(node: TypeReferenceNode, typeName: EntityName): TypeReferenceNode = js.native
-    def updateTypeReferenceNode(node: TypeReferenceNode, typeName: EntityName, typeArguments: NodeArray[TypeNode]): TypeReferenceNode = js.native
-    
-    /** @deprecated Use `factory.updateUnionTypeNode` or the factory supplied by your transformation context instead. */
-    def updateUnionTypeNode(node: UnionTypeNode, types: NodeArray[TypeNode]): UnionTypeNode = js.native
-    
-    /** @deprecated Use `factory.updateVariableDeclaration` or the factory supplied by your transformation context instead. */
-    def updateVariableDeclaration(node: VariableDeclaration, name: BindingName): VariableDeclaration = js.native
-    def updateVariableDeclaration(
-      node: VariableDeclaration,
-      name: BindingName,
-      exclamationToken: Unit,
-      `type`: Unit,
-      initializer: Expression
-    ): VariableDeclaration = js.native
-    def updateVariableDeclaration(node: VariableDeclaration, name: BindingName, exclamationToken: Unit, `type`: TypeNode): VariableDeclaration = js.native
-    def updateVariableDeclaration(
-      node: VariableDeclaration,
-      name: BindingName,
-      exclamationToken: Unit,
-      `type`: TypeNode,
-      initializer: Expression
-    ): VariableDeclaration = js.native
-    def updateVariableDeclaration(node: VariableDeclaration, name: BindingName, exclamationToken: ExclamationToken): VariableDeclaration = js.native
-    def updateVariableDeclaration(
-      node: VariableDeclaration,
-      name: BindingName,
-      exclamationToken: ExclamationToken,
-      `type`: Unit,
-      initializer: Expression
-    ): VariableDeclaration = js.native
-    def updateVariableDeclaration(node: VariableDeclaration, name: BindingName, exclamationToken: ExclamationToken, `type`: TypeNode): VariableDeclaration = js.native
-    def updateVariableDeclaration(
-      node: VariableDeclaration,
-      name: BindingName,
-      exclamationToken: ExclamationToken,
-      `type`: TypeNode,
-      initializer: Expression
-    ): VariableDeclaration = js.native
-    def updateVariableDeclaration(node: VariableDeclaration, name: BindingName, `type`: Unit, initializer: Expression): VariableDeclaration = js.native
-    def updateVariableDeclaration(node: VariableDeclaration, name: BindingName, `type`: TypeNode): VariableDeclaration = js.native
-    def updateVariableDeclaration(node: VariableDeclaration, name: BindingName, `type`: TypeNode, initializer: Expression): VariableDeclaration = js.native
-    
-    /** @deprecated Use `factory.updateVariableDeclarationList` or the factory supplied by your transformation context instead. */
-    def updateVariableDeclarationList(node: VariableDeclarationList, declarations: js.Array[VariableDeclaration]): VariableDeclarationList = js.native
-    
-    /** @deprecated Use `factory.updateVariableStatement` or the factory supplied by your transformation context instead. */
-    def updateVariableStatement(node: VariableStatement, modifiers: js.Array[Modifier], declarationList: VariableDeclarationList): VariableStatement = js.native
-    def updateVariableStatement(node: VariableStatement, modifiers: Unit, declarationList: VariableDeclarationList): VariableStatement = js.native
-    
-    /** @deprecated Use `factory.updateVoidExpression` or the factory supplied by your transformation context instead. */
-    def updateVoid(node: VoidExpression, expression: Expression): VoidExpression = js.native
-    
-    /** @deprecated Use `factory.updateWhileStatement` or the factory supplied by your transformation context instead. */
-    def updateWhile(node: WhileStatement, expression: Expression, statement: Statement): WhileStatement = js.native
-    
-    /** @deprecated Use `factory.updateWithStatement` or the factory supplied by your transformation context instead. */
-    def updateWith(node: WithStatement, expression: Expression, statement: Statement): WithStatement = js.native
-    
-    /** @deprecated Use `factory.updateYieldExpression` or the factory supplied by your transformation context instead. */
-    def updateYield(node: YieldExpression): YieldExpression = js.native
-    def updateYield(node: YieldExpression, asteriskToken: Unit, expression: Expression): YieldExpression = js.native
-    def updateYield(node: YieldExpression, asteriskToken: AsteriskToken): YieldExpression = js.native
-    def updateYield(node: YieldExpression, asteriskToken: AsteriskToken, expression: Expression): YieldExpression = js.native
-    
     /**
       * Checks to see if the locale is in the appropriate format,
       * and if it is, attempts to set the appropriate language.
       */
     def validateLocaleAndSetLanguage(locale: String, sys: FileExists): Unit = js.native
-    def validateLocaleAndSetLanguage(locale: String, sys: FileExists, errors: Push[Diagnostic]): Unit = js.native
+    def validateLocaleAndSetLanguage(locale: String, sys: FileExists, errors: js.Array[Diagnostic]): Unit = js.native
     
     /** The version of the TypeScript compiler release */
     val version: String = js.native
     
-    val versionMajorMinor: /* "4.9" */ String = js.native
+    val versionMajorMinor: /* "5.0" */ String = js.native
+    
+    /**
+      * Visits the elements of a {@link CommaListExpression}.
+      * @param visitor The visitor to use when visiting expressions whose result will not be discarded at runtime.
+      * @param discardVisitor The visitor to use when visiting expressions whose result will be discarded at runtime. Defaults to {@link visitor}.
+      */
+    def visitCommaListElements(elements: NodeArray[Expression], visitor: Visitor[Node, js.UndefOr[Node]]): NodeArray[Expression] = js.native
+    def visitCommaListElements(
+      elements: NodeArray[Expression],
+      visitor: Visitor[Node, js.UndefOr[Node]],
+      discardVisitor: Visitor[Node, js.UndefOr[Node]]
+    ): NodeArray[Expression] = js.native
     
     /**
       * Visits each child of a Node using the supplied visitor, possibly returning a new Node of the same kind in its place.
@@ -11503,37 +3457,47 @@ object anon {
       * @param visitor The callback used to visit each child.
       * @param context A lexical environment context for the visitor.
       */
-    def visitEachChild[T /* <: Node */](node: T, visitor: Visitor, context: TransformationContext): js.UndefOr[T] = js.native
+    def visitEachChild[T /* <: Node */](node: T, visitor: Visitor[Node, js.UndefOr[Node]], context: TransformationContext): js.UndefOr[T] = js.native
     def visitEachChild[T /* <: Node */](
       node: T,
-      visitor: Visitor,
+      visitor: Visitor[Node, js.UndefOr[Node]],
       context: TransformationContext,
       nodesVisitor: Unit,
-      tokenVisitor: Visitor
+      tokenVisitor: Visitor[Node, js.UndefOr[Node]]
     ): js.UndefOr[T] = js.native
-    def visitEachChild[T /* <: Node */](node: T, visitor: Visitor, context: TransformationContext, nodesVisitor: FnCall): js.UndefOr[T] = js.native
     def visitEachChild[T /* <: Node */](
       node: T,
-      visitor: Visitor,
+      visitor: Visitor[Node, js.UndefOr[Node]],
+      context: TransformationContext,
+      nodesVisitor: FnCall
+    ): js.UndefOr[T] = js.native
+    def visitEachChild[T /* <: Node */](
+      node: T,
+      visitor: Visitor[Node, js.UndefOr[Node]],
       context: TransformationContext,
       nodesVisitor: FnCall,
-      tokenVisitor: Visitor
+      tokenVisitor: Visitor[Node, js.UndefOr[Node]]
     ): js.UndefOr[T] = js.native
-    def visitEachChild[T /* <: Node */](node: Unit, visitor: Visitor, context: TransformationContext): js.UndefOr[T] = js.native
+    def visitEachChild[T /* <: Node */](node: Unit, visitor: Visitor[Node, js.UndefOr[Node]], context: TransformationContext): js.UndefOr[T] = js.native
     def visitEachChild[T /* <: Node */](
       node: Unit,
-      visitor: Visitor,
+      visitor: Visitor[Node, js.UndefOr[Node]],
       context: TransformationContext,
       nodesVisitor: Unit,
-      tokenVisitor: Visitor
+      tokenVisitor: Visitor[Node, js.UndefOr[Node]]
     ): js.UndefOr[T] = js.native
-    def visitEachChild[T /* <: Node */](node: Unit, visitor: Visitor, context: TransformationContext, nodesVisitor: FnCall): js.UndefOr[T] = js.native
     def visitEachChild[T /* <: Node */](
       node: Unit,
-      visitor: Visitor,
+      visitor: Visitor[Node, js.UndefOr[Node]],
+      context: TransformationContext,
+      nodesVisitor: FnCall
+    ): js.UndefOr[T] = js.native
+    def visitEachChild[T /* <: Node */](
+      node: Unit,
+      visitor: Visitor[Node, js.UndefOr[Node]],
       context: TransformationContext,
       nodesVisitor: FnCall,
-      tokenVisitor: Visitor
+      tokenVisitor: Visitor[Node, js.UndefOr[Node]]
     ): js.UndefOr[T] = js.native
     /**
       * Visits each child of a Node using the supplied visitor, possibly returning a new Node of the same kind in its place.
@@ -11543,47 +3507,56 @@ object anon {
       * @param context A lexical environment context for the visitor.
       */
     @JSName("visitEachChild")
-    def visitEachChild_T_T[T /* <: Node */](node: T, visitor: Visitor, context: TransformationContext): T = js.native
+    def visitEachChild_T_T[T /* <: Node */](node: T, visitor: Visitor[Node, js.UndefOr[Node]], context: TransformationContext): T = js.native
     
-    def visitFunctionBody(node: Unit, visitor: Visitor, context: TransformationContext): js.UndefOr[FunctionBody] = js.native
+    def visitFunctionBody(node: Unit, visitor: Visitor[Node, js.UndefOr[Node]], context: TransformationContext): js.UndefOr[FunctionBody] = js.native
     /**
       * Resumes a suspended lexical environment and visits a concise body, ending the lexical
       * environment and merging hoisted declarations upon completion.
       */
-    def visitFunctionBody(node: ConciseBody, visitor: Visitor, context: TransformationContext): ConciseBody = js.native
+    def visitFunctionBody(node: ConciseBody, visitor: Visitor[Node, js.UndefOr[Node]], context: TransformationContext): ConciseBody = js.native
     /**
       * Resumes a suspended lexical environment and visits a function body, ending the lexical
       * environment and merging hoisted declarations upon completion.
       */
-    def visitFunctionBody(node: FunctionBody, visitor: Visitor, context: TransformationContext): js.UndefOr[FunctionBody] = js.native
+    def visitFunctionBody(node: FunctionBody, visitor: Visitor[Node, js.UndefOr[Node]], context: TransformationContext): js.UndefOr[FunctionBody] = js.native
     /**
       * Resumes a suspended lexical environment and visits a function body, ending the lexical
       * environment and merging hoisted declarations upon completion.
       */
     @JSName("visitFunctionBody")
-    def visitFunctionBody_FunctionBody(node: FunctionBody, visitor: Visitor, context: TransformationContext): FunctionBody = js.native
+    def visitFunctionBody_FunctionBody(node: FunctionBody, visitor: Visitor[Node, js.UndefOr[Node]], context: TransformationContext): FunctionBody = js.native
     
     /**
       * Visits an iteration body, adding any block-scoped variables required by the transformation.
       */
-    def visitIterationBody(body: Statement, visitor: Visitor, context: TransformationContext): Statement = js.native
+    def visitIterationBody(body: Statement, visitor: Visitor[Node, js.UndefOr[Node]], context: TransformationContext): Statement = js.native
     
     /**
       * Starts a new lexical environment and visits a statement list, ending the lexical environment
       * and merging hoisted declarations upon completion.
       */
-    def visitLexicalEnvironment(statements: NodeArray[Statement], visitor: Visitor, context: TransformationContext): NodeArray[Statement] = js.native
-    def visitLexicalEnvironment(statements: NodeArray[Statement], visitor: Visitor, context: TransformationContext, start: Double): NodeArray[Statement] = js.native
     def visitLexicalEnvironment(
       statements: NodeArray[Statement],
-      visitor: Visitor,
+      visitor: Visitor[Node, js.UndefOr[Node]],
+      context: TransformationContext
+    ): NodeArray[Statement] = js.native
+    def visitLexicalEnvironment(
+      statements: NodeArray[Statement],
+      visitor: Visitor[Node, js.UndefOr[Node]],
+      context: TransformationContext,
+      start: Double
+    ): NodeArray[Statement] = js.native
+    def visitLexicalEnvironment(
+      statements: NodeArray[Statement],
+      visitor: Visitor[Node, js.UndefOr[Node]],
       context: TransformationContext,
       start: Double,
       ensureUseStrict: Boolean
     ): NodeArray[Statement] = js.native
     def visitLexicalEnvironment(
       statements: NodeArray[Statement],
-      visitor: Visitor,
+      visitor: Visitor[Node, js.UndefOr[Node]],
       context: TransformationContext,
       start: Double,
       ensureUseStrict: Boolean,
@@ -11591,7 +3564,7 @@ object anon {
     ): NodeArray[Statement] = js.native
     def visitLexicalEnvironment(
       statements: NodeArray[Statement],
-      visitor: Visitor,
+      visitor: Visitor[Node, js.UndefOr[Node]],
       context: TransformationContext,
       start: Double,
       ensureUseStrict: Unit,
@@ -11599,14 +3572,14 @@ object anon {
     ): NodeArray[Statement] = js.native
     def visitLexicalEnvironment(
       statements: NodeArray[Statement],
-      visitor: Visitor,
+      visitor: Visitor[Node, js.UndefOr[Node]],
       context: TransformationContext,
       start: Unit,
       ensureUseStrict: Boolean
     ): NodeArray[Statement] = js.native
     def visitLexicalEnvironment(
       statements: NodeArray[Statement],
-      visitor: Visitor,
+      visitor: Visitor[Node, js.UndefOr[Node]],
       context: TransformationContext,
       start: Unit,
       ensureUseStrict: Boolean,
@@ -11614,7 +3587,7 @@ object anon {
     ): NodeArray[Statement] = js.native
     def visitLexicalEnvironment(
       statements: NodeArray[Statement],
-      visitor: Visitor,
+      visitor: Visitor[Node, js.UndefOr[Node]],
       context: TransformationContext,
       start: Unit,
       ensureUseStrict: Unit,
@@ -11624,84 +3597,71 @@ object anon {
     /**
       * Visits a Node using the supplied visitor, possibly returning a new Node in its place.
       *
+      * - If the input node is undefined, then the output is undefined.
+      * - If the visitor returns undefined, then the output is undefined.
+      * - If the output node is not undefined, then it will satisfy the test function.
+      * - In order to obtain a return type that is more specific than `Node`, a test
+      *   function _must_ be provided, and that function must be a type predicate.
+      *
       * @param node The Node to visit.
       * @param visitor The callback used to visit the Node.
       * @param test A callback to execute to verify the Node is valid.
       * @param lift An optional callback to execute to lift a NodeArray into a valid Node.
       */
-    def visitNode[T /* <: Node */](): js.UndefOr[T] = js.native
-    def visitNode[T /* <: Node */](node: T): js.UndefOr[T] = js.native
-    def visitNode[T /* <: Node */](node: T, visitor: Unit, test: js.Function1[/* node */ Node, Boolean]): js.UndefOr[T] = js.native
-    def visitNode[T /* <: Node */](
-      node: T,
-      visitor: Unit,
+    def visitNode[TIn /* <: js.UndefOr[Node] */, TVisited /* <: js.UndefOr[Node] */](node: TIn, visitor: Visitor[NonNullable[TIn], TVisited]): Node | (TIn & Unit) | (TVisited & Unit) = js.native
+    def visitNode[TIn /* <: js.UndefOr[Node] */, TVisited /* <: js.UndefOr[Node] */](
+      node: TIn,
+      visitor: Visitor[NonNullable[TIn], TVisited],
+      test: js.Function1[/* node */ Node, Boolean]
+    ): Node | (TIn & Unit) | (TVisited & Unit) = js.native
+    def visitNode[TIn /* <: js.UndefOr[Node] */, TVisited /* <: js.UndefOr[Node] */](
+      node: TIn,
+      visitor: Visitor[NonNullable[TIn], TVisited],
       test: js.Function1[/* node */ Node, Boolean],
-      lift: js.Function1[/* node */ js.Array[Node], T]
-    ): js.UndefOr[T] = js.native
-    def visitNode[T /* <: Node */](node: T, visitor: Unit, test: Unit, lift: js.Function1[/* node */ js.Array[Node], T]): js.UndefOr[T] = js.native
-    def visitNode[T /* <: Node */](node: T, visitor: Visitor): js.UndefOr[T] = js.native
-    def visitNode[T /* <: Node */](node: T, visitor: Visitor, test: js.Function1[/* node */ Node, Boolean]): js.UndefOr[T] = js.native
-    def visitNode[T /* <: Node */](
-      node: T,
-      visitor: Visitor,
-      test: js.Function1[/* node */ Node, Boolean],
-      lift: js.Function1[/* node */ js.Array[Node], T]
-    ): js.UndefOr[T] = js.native
-    def visitNode[T /* <: Node */](node: T, visitor: Visitor, test: Unit, lift: js.Function1[/* node */ js.Array[Node], T]): js.UndefOr[T] = js.native
-    def visitNode[T /* <: Node */](node: Unit, visitor: Unit, test: js.Function1[/* node */ Node, Boolean]): js.UndefOr[T] = js.native
-    def visitNode[T /* <: Node */](
-      node: Unit,
-      visitor: Unit,
-      test: js.Function1[/* node */ Node, Boolean],
-      lift: js.Function1[/* node */ js.Array[Node], T]
-    ): js.UndefOr[T] = js.native
-    def visitNode[T /* <: Node */](node: Unit, visitor: Unit, test: Unit, lift: js.Function1[/* node */ js.Array[Node], T]): js.UndefOr[T] = js.native
-    def visitNode[T /* <: Node */](node: Unit, visitor: Visitor): js.UndefOr[T] = js.native
-    def visitNode[T /* <: Node */](node: Unit, visitor: Visitor, test: js.Function1[/* node */ Node, Boolean]): js.UndefOr[T] = js.native
-    def visitNode[T /* <: Node */](
-      node: Unit,
-      visitor: Visitor,
-      test: js.Function1[/* node */ Node, Boolean],
-      lift: js.Function1[/* node */ js.Array[Node], T]
-    ): js.UndefOr[T] = js.native
-    def visitNode[T /* <: Node */](node: Unit, visitor: Visitor, test: Unit, lift: js.Function1[/* node */ js.Array[Node], T]): js.UndefOr[T] = js.native
+      lift: js.Function1[/* node */ js.Array[Node], Node]
+    ): Node | (TIn & Unit) | (TVisited & Unit) = js.native
+    def visitNode[TIn /* <: js.UndefOr[Node] */, TVisited /* <: js.UndefOr[Node] */](
+      node: TIn,
+      visitor: Visitor[NonNullable[TIn], TVisited],
+      test: Unit,
+      lift: js.Function1[/* node */ js.Array[Node], Node]
+    ): Node | (TIn & Unit) | (TVisited & Unit) = js.native
     /**
       * Visits a Node using the supplied visitor, possibly returning a new Node in its place.
       *
+      * - If the input node is undefined, then the output is undefined.
+      * - If the visitor returns undefined, then the output is undefined.
+      * - If the output node is not undefined, then it will satisfy the test function.
+      * - In order to obtain a return type that is more specific than `Node`, a test
+      *   function _must_ be provided, and that function must be a type predicate.
+      *
       * @param node The Node to visit.
       * @param visitor The callback used to visit the Node.
       * @param test A callback to execute to verify the Node is valid.
       * @param lift An optional callback to execute to lift a NodeArray into a valid Node.
       */
     @JSName("visitNode")
-    def visitNode_T_T[T /* <: Node */](node: T): T = js.native
+    def visitNode_TInTVisitedTOut[TIn /* <: js.UndefOr[Node] */, TVisited /* <: js.UndefOr[Node] */, TOut /* <: Node */](
+      node: TIn,
+      visitor: Visitor[NonNullable[TIn], TVisited],
+      test: js.Function1[/* node */ Node, /* is TOut */ Boolean]
+    ): TOut | (TIn & Unit) | (TVisited & Unit) = js.native
     @JSName("visitNode")
-    def visitNode_T_T[T /* <: Node */](node: T, visitor: Unit, test: js.Function1[/* node */ Node, Boolean]): T = js.native
-    @JSName("visitNode")
-    def visitNode_T_T[T /* <: Node */](
-      node: T,
-      visitor: Unit,
-      test: js.Function1[/* node */ Node, Boolean],
-      lift: js.Function1[/* node */ js.Array[Node], T]
-    ): T = js.native
-    @JSName("visitNode")
-    def visitNode_T_T[T /* <: Node */](node: T, visitor: Unit, test: Unit, lift: js.Function1[/* node */ js.Array[Node], T]): T = js.native
-    @JSName("visitNode")
-    def visitNode_T_T[T /* <: Node */](node: T, visitor: Visitor): T = js.native
-    @JSName("visitNode")
-    def visitNode_T_T[T /* <: Node */](node: T, visitor: Visitor, test: js.Function1[/* node */ Node, Boolean]): T = js.native
-    @JSName("visitNode")
-    def visitNode_T_T[T /* <: Node */](
-      node: T,
-      visitor: Visitor,
-      test: js.Function1[/* node */ Node, Boolean],
-      lift: js.Function1[/* node */ js.Array[Node], T]
-    ): T = js.native
-    @JSName("visitNode")
-    def visitNode_T_T[T /* <: Node */](node: T, visitor: Visitor, test: Unit, lift: js.Function1[/* node */ js.Array[Node], T]): T = js.native
+    def visitNode_TInTVisitedTOut[TIn /* <: js.UndefOr[Node] */, TVisited /* <: js.UndefOr[Node] */, TOut /* <: Node */](
+      node: TIn,
+      visitor: Visitor[NonNullable[TIn], TVisited],
+      test: js.Function1[/* node */ Node, /* is TOut */ Boolean],
+      lift: js.Function1[/* node */ js.Array[Node], Node]
+    ): TOut | (TIn & Unit) | (TVisited & Unit) = js.native
     
     /**
       * Visits a NodeArray using the supplied visitor, possibly returning a new NodeArray in its place.
+      *
+      * - If the input node array is undefined, the output is undefined.
+      * - If the visitor can return undefined, the node it visits in the array will be reused.
+      * - If the output node array is not undefined, then its contents will satisfy the test.
+      * - In order to obtain a return type that is more specific than `NodeArray<Node>`, a test
+      *   function _must_ be provided, and that function must be a type predicate.
       *
       * @param nodes The NodeArray to visit.
       * @param visitor The callback used to visit a Node.
@@ -11709,88 +3669,43 @@ object anon {
       * @param start An optional value indicating the starting offset at which to start visiting.
       * @param count An optional value indicating the maximum number of nodes to visit.
       */
-    def visitNodes[T /* <: Node */](): js.UndefOr[NodeArray[T]] = js.native
-    def visitNodes[T /* <: Node */](nodes: Unit, visitor: Unit, test: js.Function1[/* node */ Node, Boolean]): js.UndefOr[NodeArray[T]] = js.native
-    def visitNodes[T /* <: Node */](nodes: Unit, visitor: Unit, test: js.Function1[/* node */ Node, Boolean], start: Double): js.UndefOr[NodeArray[T]] = js.native
-    def visitNodes[T /* <: Node */](
-      nodes: Unit,
-      visitor: Unit,
+    def visitNodes[TIn /* <: Node */, TInArray /* <: js.UndefOr[NodeArray[TIn]] */](nodes: TInArray, visitor: Visitor[TIn, js.UndefOr[Node]]): NodeArray[Node] | (TInArray & Unit) = js.native
+    def visitNodes[TIn /* <: Node */, TInArray /* <: js.UndefOr[NodeArray[TIn]] */](
+      nodes: TInArray,
+      visitor: Visitor[TIn, js.UndefOr[Node]],
+      test: js.Function1[/* node */ Node, Boolean]
+    ): NodeArray[Node] | (TInArray & Unit) = js.native
+    def visitNodes[TIn /* <: Node */, TInArray /* <: js.UndefOr[NodeArray[TIn]] */](
+      nodes: TInArray,
+      visitor: Visitor[TIn, js.UndefOr[Node]],
+      test: js.Function1[/* node */ Node, Boolean],
+      start: Double
+    ): NodeArray[Node] | (TInArray & Unit) = js.native
+    def visitNodes[TIn /* <: Node */, TInArray /* <: js.UndefOr[NodeArray[TIn]] */](
+      nodes: TInArray,
+      visitor: Visitor[TIn, js.UndefOr[Node]],
       test: js.Function1[/* node */ Node, Boolean],
       start: Double,
       count: Double
-    ): js.UndefOr[NodeArray[T]] = js.native
-    def visitNodes[T /* <: Node */](
-      nodes: Unit,
-      visitor: Unit,
+    ): NodeArray[Node] | (TInArray & Unit) = js.native
+    def visitNodes[TIn /* <: Node */, TInArray /* <: js.UndefOr[NodeArray[TIn]] */](
+      nodes: TInArray,
+      visitor: Visitor[TIn, js.UndefOr[Node]],
       test: js.Function1[/* node */ Node, Boolean],
       start: Unit,
       count: Double
-    ): js.UndefOr[NodeArray[T]] = js.native
-    def visitNodes[T /* <: Node */](nodes: Unit, visitor: Unit, test: Unit, start: Double): js.UndefOr[NodeArray[T]] = js.native
-    def visitNodes[T /* <: Node */](nodes: Unit, visitor: Unit, test: Unit, start: Double, count: Double): js.UndefOr[NodeArray[T]] = js.native
-    def visitNodes[T /* <: Node */](nodes: Unit, visitor: Unit, test: Unit, start: Unit, count: Double): js.UndefOr[NodeArray[T]] = js.native
-    def visitNodes[T /* <: Node */](nodes: Unit, visitor: Visitor): js.UndefOr[NodeArray[T]] = js.native
-    def visitNodes[T /* <: Node */](nodes: Unit, visitor: Visitor, test: js.Function1[/* node */ Node, Boolean]): js.UndefOr[NodeArray[T]] = js.native
-    def visitNodes[T /* <: Node */](nodes: Unit, visitor: Visitor, test: js.Function1[/* node */ Node, Boolean], start: Double): js.UndefOr[NodeArray[T]] = js.native
-    def visitNodes[T /* <: Node */](
-      nodes: Unit,
-      visitor: Visitor,
-      test: js.Function1[/* node */ Node, Boolean],
-      start: Double,
-      count: Double
-    ): js.UndefOr[NodeArray[T]] = js.native
-    def visitNodes[T /* <: Node */](
-      nodes: Unit,
-      visitor: Visitor,
-      test: js.Function1[/* node */ Node, Boolean],
-      start: Unit,
-      count: Double
-    ): js.UndefOr[NodeArray[T]] = js.native
-    def visitNodes[T /* <: Node */](nodes: Unit, visitor: Visitor, test: Unit, start: Double): js.UndefOr[NodeArray[T]] = js.native
-    def visitNodes[T /* <: Node */](nodes: Unit, visitor: Visitor, test: Unit, start: Double, count: Double): js.UndefOr[NodeArray[T]] = js.native
-    def visitNodes[T /* <: Node */](nodes: Unit, visitor: Visitor, test: Unit, start: Unit, count: Double): js.UndefOr[NodeArray[T]] = js.native
-    def visitNodes[T /* <: Node */](nodes: NodeArray[T]): js.UndefOr[NodeArray[T]] = js.native
-    def visitNodes[T /* <: Node */](nodes: NodeArray[T], visitor: Unit, test: js.Function1[/* node */ Node, Boolean]): js.UndefOr[NodeArray[T]] = js.native
-    def visitNodes[T /* <: Node */](nodes: NodeArray[T], visitor: Unit, test: js.Function1[/* node */ Node, Boolean], start: Double): js.UndefOr[NodeArray[T]] = js.native
-    def visitNodes[T /* <: Node */](
-      nodes: NodeArray[T],
-      visitor: Unit,
-      test: js.Function1[/* node */ Node, Boolean],
-      start: Double,
-      count: Double
-    ): js.UndefOr[NodeArray[T]] = js.native
-    def visitNodes[T /* <: Node */](
-      nodes: NodeArray[T],
-      visitor: Unit,
-      test: js.Function1[/* node */ Node, Boolean],
-      start: Unit,
-      count: Double
-    ): js.UndefOr[NodeArray[T]] = js.native
-    def visitNodes[T /* <: Node */](nodes: NodeArray[T], visitor: Unit, test: Unit, start: Double): js.UndefOr[NodeArray[T]] = js.native
-    def visitNodes[T /* <: Node */](nodes: NodeArray[T], visitor: Unit, test: Unit, start: Double, count: Double): js.UndefOr[NodeArray[T]] = js.native
-    def visitNodes[T /* <: Node */](nodes: NodeArray[T], visitor: Unit, test: Unit, start: Unit, count: Double): js.UndefOr[NodeArray[T]] = js.native
-    def visitNodes[T /* <: Node */](nodes: NodeArray[T], visitor: Visitor): js.UndefOr[NodeArray[T]] = js.native
-    def visitNodes[T /* <: Node */](nodes: NodeArray[T], visitor: Visitor, test: js.Function1[/* node */ Node, Boolean]): js.UndefOr[NodeArray[T]] = js.native
-    def visitNodes[T /* <: Node */](nodes: NodeArray[T], visitor: Visitor, test: js.Function1[/* node */ Node, Boolean], start: Double): js.UndefOr[NodeArray[T]] = js.native
-    def visitNodes[T /* <: Node */](
-      nodes: NodeArray[T],
-      visitor: Visitor,
-      test: js.Function1[/* node */ Node, Boolean],
-      start: Double,
-      count: Double
-    ): js.UndefOr[NodeArray[T]] = js.native
-    def visitNodes[T /* <: Node */](
-      nodes: NodeArray[T],
-      visitor: Visitor,
-      test: js.Function1[/* node */ Node, Boolean],
-      start: Unit,
-      count: Double
-    ): js.UndefOr[NodeArray[T]] = js.native
-    def visitNodes[T /* <: Node */](nodes: NodeArray[T], visitor: Visitor, test: Unit, start: Double): js.UndefOr[NodeArray[T]] = js.native
-    def visitNodes[T /* <: Node */](nodes: NodeArray[T], visitor: Visitor, test: Unit, start: Double, count: Double): js.UndefOr[NodeArray[T]] = js.native
-    def visitNodes[T /* <: Node */](nodes: NodeArray[T], visitor: Visitor, test: Unit, start: Unit, count: Double): js.UndefOr[NodeArray[T]] = js.native
+    ): NodeArray[Node] | (TInArray & Unit) = js.native
+    def visitNodes[TIn /* <: Node */, TInArray /* <: js.UndefOr[NodeArray[TIn]] */](nodes: TInArray, visitor: Visitor[TIn, js.UndefOr[Node]], test: Unit, start: Double): NodeArray[Node] | (TInArray & Unit) = js.native
+    def visitNodes[TIn /* <: Node */, TInArray /* <: js.UndefOr[NodeArray[TIn]] */](nodes: TInArray, visitor: Visitor[TIn, js.UndefOr[Node]], test: Unit, start: Double, count: Double): NodeArray[Node] | (TInArray & Unit) = js.native
+    def visitNodes[TIn /* <: Node */, TInArray /* <: js.UndefOr[NodeArray[TIn]] */](nodes: TInArray, visitor: Visitor[TIn, js.UndefOr[Node]], test: Unit, start: Unit, count: Double): NodeArray[Node] | (TInArray & Unit) = js.native
     /**
       * Visits a NodeArray using the supplied visitor, possibly returning a new NodeArray in its place.
+      *
+      * - If the input node array is undefined, the output is undefined.
+      * - If the visitor can return undefined, the node it visits in the array will be reused.
+      * - If the output node array is not undefined, then its contents will satisfy the test.
+      * - In order to obtain a return type that is more specific than `NodeArray<Node>`, a test
+      *   function _must_ be provided, and that function must be a type predicate.
       *
       * @param nodes The NodeArray to visit.
       * @param visitor The callback used to visit a Node.
@@ -11799,68 +3714,50 @@ object anon {
       * @param count An optional value indicating the maximum number of nodes to visit.
       */
     @JSName("visitNodes")
-    def visitNodes_T_NodeArray[T /* <: Node */](nodes: NodeArray[T]): NodeArray[T] = js.native
+    def visitNodes_TInTInArrayTOut[TIn /* <: Node */, TInArray /* <: js.UndefOr[NodeArray[TIn]] */, TOut /* <: Node */](
+      nodes: TInArray,
+      visitor: Visitor[TIn, js.UndefOr[Node]],
+      test: js.Function1[/* node */ Node, /* is TOut */ Boolean]
+    ): NodeArray[TOut] | (TInArray & Unit) = js.native
     @JSName("visitNodes")
-    def visitNodes_T_NodeArray[T /* <: Node */](nodes: NodeArray[T], visitor: Unit, test: js.Function1[/* node */ Node, Boolean]): NodeArray[T] = js.native
+    def visitNodes_TInTInArrayTOut[TIn /* <: Node */, TInArray /* <: js.UndefOr[NodeArray[TIn]] */, TOut /* <: Node */](
+      nodes: TInArray,
+      visitor: Visitor[TIn, js.UndefOr[Node]],
+      test: js.Function1[/* node */ Node, /* is TOut */ Boolean],
+      start: Double
+    ): NodeArray[TOut] | (TInArray & Unit) = js.native
     @JSName("visitNodes")
-    def visitNodes_T_NodeArray[T /* <: Node */](nodes: NodeArray[T], visitor: Unit, test: js.Function1[/* node */ Node, Boolean], start: Double): NodeArray[T] = js.native
-    @JSName("visitNodes")
-    def visitNodes_T_NodeArray[T /* <: Node */](
-      nodes: NodeArray[T],
-      visitor: Unit,
-      test: js.Function1[/* node */ Node, Boolean],
+    def visitNodes_TInTInArrayTOut[TIn /* <: Node */, TInArray /* <: js.UndefOr[NodeArray[TIn]] */, TOut /* <: Node */](
+      nodes: TInArray,
+      visitor: Visitor[TIn, js.UndefOr[Node]],
+      test: js.Function1[/* node */ Node, /* is TOut */ Boolean],
       start: Double,
       count: Double
-    ): NodeArray[T] = js.native
+    ): NodeArray[TOut] | (TInArray & Unit) = js.native
     @JSName("visitNodes")
-    def visitNodes_T_NodeArray[T /* <: Node */](
-      nodes: NodeArray[T],
-      visitor: Unit,
-      test: js.Function1[/* node */ Node, Boolean],
+    def visitNodes_TInTInArrayTOut[TIn /* <: Node */, TInArray /* <: js.UndefOr[NodeArray[TIn]] */, TOut /* <: Node */](
+      nodes: TInArray,
+      visitor: Visitor[TIn, js.UndefOr[Node]],
+      test: js.Function1[/* node */ Node, /* is TOut */ Boolean],
       start: Unit,
       count: Double
-    ): NodeArray[T] = js.native
-    @JSName("visitNodes")
-    def visitNodes_T_NodeArray[T /* <: Node */](nodes: NodeArray[T], visitor: Unit, test: Unit, start: Double): NodeArray[T] = js.native
-    @JSName("visitNodes")
-    def visitNodes_T_NodeArray[T /* <: Node */](nodes: NodeArray[T], visitor: Unit, test: Unit, start: Double, count: Double): NodeArray[T] = js.native
-    @JSName("visitNodes")
-    def visitNodes_T_NodeArray[T /* <: Node */](nodes: NodeArray[T], visitor: Unit, test: Unit, start: Unit, count: Double): NodeArray[T] = js.native
-    @JSName("visitNodes")
-    def visitNodes_T_NodeArray[T /* <: Node */](nodes: NodeArray[T], visitor: Visitor): NodeArray[T] = js.native
-    @JSName("visitNodes")
-    def visitNodes_T_NodeArray[T /* <: Node */](nodes: NodeArray[T], visitor: Visitor, test: js.Function1[/* node */ Node, Boolean]): NodeArray[T] = js.native
-    @JSName("visitNodes")
-    def visitNodes_T_NodeArray[T /* <: Node */](nodes: NodeArray[T], visitor: Visitor, test: js.Function1[/* node */ Node, Boolean], start: Double): NodeArray[T] = js.native
-    @JSName("visitNodes")
-    def visitNodes_T_NodeArray[T /* <: Node */](
-      nodes: NodeArray[T],
-      visitor: Visitor,
-      test: js.Function1[/* node */ Node, Boolean],
-      start: Double,
-      count: Double
-    ): NodeArray[T] = js.native
-    @JSName("visitNodes")
-    def visitNodes_T_NodeArray[T /* <: Node */](
-      nodes: NodeArray[T],
-      visitor: Visitor,
-      test: js.Function1[/* node */ Node, Boolean],
-      start: Unit,
-      count: Double
-    ): NodeArray[T] = js.native
-    @JSName("visitNodes")
-    def visitNodes_T_NodeArray[T /* <: Node */](nodes: NodeArray[T], visitor: Visitor, test: Unit, start: Double): NodeArray[T] = js.native
-    @JSName("visitNodes")
-    def visitNodes_T_NodeArray[T /* <: Node */](nodes: NodeArray[T], visitor: Visitor, test: Unit, start: Double, count: Double): NodeArray[T] = js.native
-    @JSName("visitNodes")
-    def visitNodes_T_NodeArray[T /* <: Node */](nodes: NodeArray[T], visitor: Visitor, test: Unit, start: Unit, count: Double): NodeArray[T] = js.native
+    ): NodeArray[TOut] | (TInArray & Unit) = js.native
     
-    def visitParameterList(nodes: Unit, visitor: Visitor, context: TransformationContext): js.UndefOr[NodeArray[ParameterDeclaration]] = js.native
-    def visitParameterList(nodes: Unit, visitor: Visitor, context: TransformationContext, nodesVisitor: NodesVisitor): js.UndefOr[NodeArray[ParameterDeclaration]] = js.native
-    def visitParameterList(nodes: NodeArray[ParameterDeclaration], visitor: Visitor, context: TransformationContext): js.UndefOr[NodeArray[ParameterDeclaration]] = js.native
+    def visitParameterList(nodes: Unit, visitor: Visitor[Node, js.UndefOr[Node]], context: TransformationContext): js.UndefOr[NodeArray[ParameterDeclaration]] = js.native
+    def visitParameterList(
+      nodes: Unit,
+      visitor: Visitor[Node, js.UndefOr[Node]],
+      context: TransformationContext,
+      nodesVisitor: NodesVisitor
+    ): js.UndefOr[NodeArray[ParameterDeclaration]] = js.native
     def visitParameterList(
       nodes: NodeArray[ParameterDeclaration],
-      visitor: Visitor,
+      visitor: Visitor[Node, js.UndefOr[Node]],
+      context: TransformationContext
+    ): js.UndefOr[NodeArray[ParameterDeclaration]] = js.native
+    def visitParameterList(
+      nodes: NodeArray[ParameterDeclaration],
+      visitor: Visitor[Node, js.UndefOr[Node]],
       context: TransformationContext,
       nodesVisitor: NodesVisitor
     ): js.UndefOr[NodeArray[ParameterDeclaration]] = js.native
@@ -11869,11 +3766,15 @@ object anon {
       * environment upon completion.
       */
     @JSName("visitParameterList")
-    def visitParameterList_NodeArray(nodes: NodeArray[ParameterDeclaration], visitor: Visitor, context: TransformationContext): NodeArray[ParameterDeclaration] = js.native
+    def visitParameterList_NodeArray(
+      nodes: NodeArray[ParameterDeclaration],
+      visitor: Visitor[Node, js.UndefOr[Node]],
+      context: TransformationContext
+    ): NodeArray[ParameterDeclaration] = js.native
     @JSName("visitParameterList")
     def visitParameterList_NodeArray(
       nodes: NodeArray[ParameterDeclaration],
-      visitor: Visitor,
+      visitor: Visitor[Node, js.UndefOr[Node]],
       context: TransformationContext,
       nodesVisitor: NodesVisitor
     ): NodeArray[ParameterDeclaration] = js.native

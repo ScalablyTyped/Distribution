@@ -13,12 +13,13 @@ open class Skeleton protected () extends StObject {
   /**
     * Create a new Skeleton instance.
     *
-    * @param {GraphNode} graph - The root {@link GraphNode} of the skeleton.
+    * @param {import('../graph-node.js').GraphNode} graph - The root {@link GraphNode} of the
+    * skeleton.
     */
   def this(graph: GraphNode) = this()
   
   /**
-    * @type {Animation}
+    * @type {import('./animation.js').Animation}
     * @private
     */
   /* private */ var _animation: Any = js.native
@@ -41,7 +42,7 @@ open class Skeleton protected () extends StObject {
   /**
     * Animation currently assigned to skeleton.
     *
-    * @type {Animation}
+    * @type {import('./animation.js').Animation}
     */
   def animation_=(arg: Animation): Unit = js.native
   
@@ -85,7 +86,8 @@ open class Skeleton protected () extends StObject {
     * Links a skeleton to a node hierarchy. The nodes animated skeleton are then subsequently used
     * to drive the local transformation matrices of the node hierarchy.
     *
-    * @param {GraphNode} graph - The root node of the graph that the skeleton is to drive.
+    * @param {import('../graph-node.js').GraphNode} graph - The root node of the graph that the
+    * skeleton is to drive.
     */
   def setGraph(graph: GraphNode): Unit = js.native
   

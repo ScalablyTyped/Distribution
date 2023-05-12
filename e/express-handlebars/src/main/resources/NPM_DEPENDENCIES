@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "express-handlebars" : "6.0.6"
+      "express-handlebars" : "7.0.7"
     }
   ],
   "test-dependencies" : [
     {
-      "express-handlebars" : "6.0.6"
+      "express-handlebars" : "7.0.7"
     }
   ],
   "compile-devDependencies" : [

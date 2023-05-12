@@ -1,5 +1,6 @@
 package typings.vueRuntimeCore.mod
 
+import typings.std.Record
 import typings.vueRuntimeCore.vueRuntimeCoreStrings.at
 import typings.vueRuntimeCore.vueRuntimeCoreStrings.concat
 import typings.vueRuntimeCore.vueRuntimeCoreStrings.copyWithin
@@ -9,6 +10,8 @@ import typings.vueRuntimeCore.vueRuntimeCoreStrings.fill
 import typings.vueRuntimeCore.vueRuntimeCoreStrings.filter
 import typings.vueRuntimeCore.vueRuntimeCoreStrings.find
 import typings.vueRuntimeCore.vueRuntimeCoreStrings.findIndex
+import typings.vueRuntimeCore.vueRuntimeCoreStrings.findLast
+import typings.vueRuntimeCore.vueRuntimeCoreStrings.findLastIndex
 import typings.vueRuntimeCore.vueRuntimeCoreStrings.flat
 import typings.vueRuntimeCore.vueRuntimeCoreStrings.flatMap
 import typings.vueRuntimeCore.vueRuntimeCoreStrings.forEach
@@ -40,10 +43,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait _defineEmits extends StObject {
   
-  def apply[TypeEmit](): TypeEmit = js.native
+  def apply[T /* <: (js.Function1[/* repeated */ Any, Any]) | (Record[String, js.Array[Any]]) */](): /* import warning: importer.ImportType#apply Failed type conversion: T extends (args : ...any): any ? T : @vue/runtime-core.@vue/runtime-core.ShortEmits<T> */ js.Any = js.native
   def apply[E /* <: EmitsOptions */](emitOptions: E): EmitFn[E, /* keyof E */ String] = js.native
   def apply[EE /* <: String */](emitOptions: js.Array[EE]): EmitFn[
     js.Array[EE], 
-    /* keyof std.Array<EE> */ length | toString | toLocaleString | pop | push | concat | join | reverse | shift | slice | sort | splice | unshift | indexOf | lastIndexOf | every | some | forEach | map | filter | reduce | reduceRight | find | findIndex | fill | copyWithin | entries | keys | values | includes | flatMap | flat | at
+    /* keyof std.Array<EE> */ length | toString | toLocaleString | pop | push | concat | join | reverse | shift | slice | sort | splice | unshift | indexOf | lastIndexOf | every | some | forEach | map | filter | reduce | reduceRight | find | findIndex | fill | copyWithin | entries | keys | values | includes | flatMap | flat | at | findLast | findLastIndex
   ] = js.native
 }

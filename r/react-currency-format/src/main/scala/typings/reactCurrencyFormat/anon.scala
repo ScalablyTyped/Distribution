@@ -43,6 +43,7 @@ import typings.react.mod.global.JSX.Element
 import typings.reactCurrencyFormat.mod.InputType
 import typings.reactCurrencyFormat.mod.StrictProps
 import typings.reactCurrencyFormat.mod.Values
+import typings.reactCurrencyFormat.reactCurrencyFormatStrings._empty
 import typings.reactCurrencyFormat.reactCurrencyFormatStrings.`2`
 import typings.reactCurrencyFormat.reactCurrencyFormatStrings.`2s`
 import typings.reactCurrencyFormat.reactCurrencyFormatStrings.`3`
@@ -54,8 +55,10 @@ import typings.reactCurrencyFormat.reactCurrencyFormatStrings.`removals addition
 import typings.reactCurrencyFormat.reactCurrencyFormatStrings.`removals text`
 import typings.reactCurrencyFormat.reactCurrencyFormatStrings.`text additions`
 import typings.reactCurrencyFormat.reactCurrencyFormatStrings.`text removals`
+import typings.reactCurrencyFormat.reactCurrencyFormatStrings.`use-credentials`
 import typings.reactCurrencyFormat.reactCurrencyFormatStrings.additions
 import typings.reactCurrencyFormat.reactCurrencyFormatStrings.all
+import typings.reactCurrencyFormat.reactCurrencyFormatStrings.anonymous
 import typings.reactCurrencyFormat.reactCurrencyFormatStrings.ascending
 import typings.reactCurrencyFormat.reactCurrencyFormatStrings.assertive
 import typings.reactCurrencyFormat.reactCurrencyFormatStrings.both
@@ -107,6 +110,7 @@ import typings.reactCurrencyFormat.reactCurrencyFormatStrings.user
 import typings.reactCurrencyFormat.reactCurrencyFormatStrings.vertical
 import typings.reactCurrencyFormat.reactCurrencyFormatStrings.yes
 import typings.std.Event
+import typings.std.FormData
 import typings.std.HTMLInputElement
 import typings.std.HTMLSpanElement
 import org.scalablytyped.runtime.StObject
@@ -388,11 +392,13 @@ object anon {
     
     var color: js.UndefOr[String] = js.undefined
     
+    var content: js.UndefOr[String] = js.undefined
+    
     var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
     var contextMenu: js.UndefOr[String] = js.undefined
     
-    var crossOrigin: js.UndefOr[String] = js.undefined
+    var crossOrigin: js.UndefOr[anonymous | `use-credentials` | _empty] = js.undefined
     
     var customInput: js.UndefOr[ComponentType[Any]] = js.undefined
     
@@ -423,7 +429,7 @@ object anon {
     
     var form: js.UndefOr[String] = js.undefined
     
-    var formAction: js.UndefOr[String] = js.undefined
+    var formAction: js.UndefOr[String | (js.Function1[/* formData */ FormData, Unit])] = js.undefined
     
     var formEncType: js.UndefOr[String] = js.undefined
     
@@ -681,6 +687,8 @@ object anon {
     
     var readOnly: js.UndefOr[Boolean] = js.undefined
     
+    var rel: js.UndefOr[String] = js.undefined
+    
     var removeFormatting: js.UndefOr[js.Function1[/* formattedValue */ String, String]] = js.undefined
     
     var renderText: js.UndefOr[js.Function1[/* formattedValue */ String, Element]] = js.undefined
@@ -690,6 +698,8 @@ object anon {
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
+    
+    var rev: js.UndefOr[String] = js.undefined
     
     // <command>, <menuitem>
     // WAI-ARIA
@@ -1001,15 +1011,19 @@ object anon {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
       inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
       inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
       inline def setContextMenuUndefined: Self = StObject.set(x, "contextMenu", js.undefined)
       
-      inline def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+      inline def setCrossOrigin(value: anonymous | `use-credentials` | _empty): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
       
       inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
       
@@ -1069,7 +1083,9 @@ object anon {
       
       inline def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
       
-      inline def setFormAction(value: String): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+      inline def setFormAction(value: String | (js.Function1[/* formData */ FormData, Unit])): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+      
+      inline def setFormActionFunction1(value: /* formData */ FormData => Unit): Self = StObject.set(x, "formAction", js.Any.fromFunction1(value))
       
       inline def setFormActionUndefined: Self = StObject.set(x, "formAction", js.undefined)
       
@@ -1539,6 +1555,10 @@ object anon {
       
       inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
       
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      
+      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+      
       inline def setRemoveFormatting(value: /* formattedValue */ String => String): Self = StObject.set(x, "removeFormatting", js.Any.fromFunction1(value))
       
       inline def setRemoveFormattingUndefined: Self = StObject.set(x, "removeFormatting", js.undefined)
@@ -1558,6 +1578,10 @@ object anon {
       inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+      
+      inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+      
+      inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
       
       inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
@@ -1903,6 +1927,8 @@ object anon {
     
     var autoCorrect: js.UndefOr[String] = js.undefined
     
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
+    
     var autoSave: js.UndefOr[String] = js.undefined
     
     var children: js.UndefOr[ReactNode] = js.undefined
@@ -1910,6 +1936,8 @@ object anon {
     var className: js.UndefOr[String] = js.undefined
     
     var color: js.UndefOr[String] = js.undefined
+    
+    var content: js.UndefOr[String] = js.undefined
     
     var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
@@ -2167,6 +2195,8 @@ object anon {
     // Unknown
     var radioGroup: js.UndefOr[String] = js.undefined
     
+    var rel: js.UndefOr[String] = js.undefined
+    
     var removeFormatting: js.UndefOr[js.Function1[/* formattedValue */ String, String]] = js.undefined
     
     var renderText: js.UndefOr[js.Function1[/* formattedValue */ String, Element]] = js.undefined
@@ -2174,6 +2204,8 @@ object anon {
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
+    
+    var rev: js.UndefOr[String] = js.undefined
     
     // <command>, <menuitem>
     // WAI-ARIA
@@ -2437,6 +2469,10 @@ object anon {
       
       inline def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
       
+      inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+      
+      inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+      
       inline def setAutoSave(value: String): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
       
       inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
@@ -2453,9 +2489,13 @@ object anon {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
       inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
       inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
@@ -2911,6 +2951,10 @@ object anon {
       
       inline def setRadioGroupUndefined: Self = StObject.set(x, "radioGroup", js.undefined)
       
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      
+      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+      
       inline def setRemoveFormatting(value: /* formattedValue */ String => String): Self = StObject.set(x, "removeFormatting", js.Any.fromFunction1(value))
       
       inline def setRemoveFormattingUndefined: Self = StObject.set(x, "removeFormatting", js.undefined)
@@ -2926,6 +2970,10 @@ object anon {
       inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+      
+      inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+      
+      inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
       
       inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       

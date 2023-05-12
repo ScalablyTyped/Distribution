@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@storybook/react-dom-shim" : "7.0.10"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@storybook/react-dom-shim" : "7.0.10"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

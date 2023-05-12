@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ScheduleConfiguration extends StObject {
   
   /**
-    * The start date for objects to import in the first flow run.
+    * The start date for objects to import in the first flow run as an Unix/epoch timestamp in milliseconds or in ISO-8601 format.
     */
   var FirstExecutionFrom: js.UndefOr[NonBlankString] = js.undefined
   
@@ -19,12 +19,12 @@ trait ScheduleConfiguration extends StObject {
   /**
     * How often the data should be pulled from data source.
     */
-  var ScheduleExpression: js.UndefOr[Schedule] = js.undefined
+  var ScheduleExpression: NonBlankString
 }
 object ScheduleConfiguration {
   
-  inline def apply(): ScheduleConfiguration = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(ScheduleExpression: NonBlankString): ScheduleConfiguration = {
+    val __obj = js.Dynamic.literal(ScheduleExpression = ScheduleExpression.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScheduleConfiguration]
   }
   
@@ -39,8 +39,6 @@ object ScheduleConfiguration {
     
     inline def setObjectUndefined: Self = StObject.set(x, "Object", js.undefined)
     
-    inline def setScheduleExpression(value: Schedule): Self = StObject.set(x, "ScheduleExpression", value.asInstanceOf[js.Any])
-    
-    inline def setScheduleExpressionUndefined: Self = StObject.set(x, "ScheduleExpression", js.undefined)
+    inline def setScheduleExpression(value: NonBlankString): Self = StObject.set(x, "ScheduleExpression", value.asInstanceOf[js.Any])
   }
 }

@@ -95,6 +95,22 @@ trait ComputeOptimizer extends Service {
   ): Request[ExportEC2InstanceRecommendationsResponse, AWSError] = js.native
   
   /**
+    *  Exports optimization recommendations for Amazon ECS services on Fargate.  Recommendations are exported in a CSV file, and its metadata in a JSON file, to an existing Amazon Simple Storage Service (Amazon S3) bucket that you specify. For more information, see Exporting Recommendations in the Compute Optimizer User Guide. You can only have one Amazon ECS service export job in progress per Amazon Web Services Region.
+    */
+  def exportECSServiceRecommendations(): Request[ExportECSServiceRecommendationsResponse, AWSError] = js.native
+  def exportECSServiceRecommendations(
+    callback: js.Function2[/* err */ AWSError, /* data */ ExportECSServiceRecommendationsResponse, Unit]
+  ): Request[ExportECSServiceRecommendationsResponse, AWSError] = js.native
+  /**
+    *  Exports optimization recommendations for Amazon ECS services on Fargate.  Recommendations are exported in a CSV file, and its metadata in a JSON file, to an existing Amazon Simple Storage Service (Amazon S3) bucket that you specify. For more information, see Exporting Recommendations in the Compute Optimizer User Guide. You can only have one Amazon ECS service export job in progress per Amazon Web Services Region.
+    */
+  def exportECSServiceRecommendations(params: ExportECSServiceRecommendationsRequest): Request[ExportECSServiceRecommendationsResponse, AWSError] = js.native
+  def exportECSServiceRecommendations(
+    params: ExportECSServiceRecommendationsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ExportECSServiceRecommendationsResponse, Unit]
+  ): Request[ExportECSServiceRecommendationsResponse, AWSError] = js.native
+  
+  /**
     * Exports optimization recommendations for Lambda functions. Recommendations are exported in a comma-separated values (.csv) file, and its metadata in a JavaScript Object Notation (JSON) (.json) file, to an existing Amazon Simple Storage Service (Amazon S3) bucket that you specify. For more information, see Exporting Recommendations in the Compute Optimizer User Guide. You can have only one Lambda function export job in progress per Amazon Web Services Region.
     */
   def exportLambdaFunctionRecommendations(): Request[ExportLambdaFunctionRecommendationsResponse, AWSError] = js.native
@@ -169,6 +185,44 @@ trait ComputeOptimizer extends Service {
     params: GetEC2RecommendationProjectedMetricsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetEC2RecommendationProjectedMetricsResponse, Unit]
   ): Request[GetEC2RecommendationProjectedMetricsResponse, AWSError] = js.native
+  
+  /**
+    *  Returns the projected metrics of Amazon ECS service recommendations. 
+    */
+  def getECSServiceRecommendationProjectedMetrics(): Request[GetECSServiceRecommendationProjectedMetricsResponse, AWSError] = js.native
+  def getECSServiceRecommendationProjectedMetrics(
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ GetECSServiceRecommendationProjectedMetricsResponse, 
+      Unit
+    ]
+  ): Request[GetECSServiceRecommendationProjectedMetricsResponse, AWSError] = js.native
+  /**
+    *  Returns the projected metrics of Amazon ECS service recommendations. 
+    */
+  def getECSServiceRecommendationProjectedMetrics(params: GetECSServiceRecommendationProjectedMetricsRequest): Request[GetECSServiceRecommendationProjectedMetricsResponse, AWSError] = js.native
+  def getECSServiceRecommendationProjectedMetrics(
+    params: GetECSServiceRecommendationProjectedMetricsRequest,
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ GetECSServiceRecommendationProjectedMetricsResponse, 
+      Unit
+    ]
+  ): Request[GetECSServiceRecommendationProjectedMetricsResponse, AWSError] = js.native
+  
+  /**
+    *  Returns Amazon ECS service recommendations.   Compute Optimizer generates recommendations for Amazon ECS services on Fargate that meet a specific set of requirements. For more information, see the Supported resources and requirements in the Compute Optimizer User Guide. 
+    */
+  def getECSServiceRecommendations(): Request[GetECSServiceRecommendationsResponse, AWSError] = js.native
+  def getECSServiceRecommendations(callback: js.Function2[/* err */ AWSError, /* data */ GetECSServiceRecommendationsResponse, Unit]): Request[GetECSServiceRecommendationsResponse, AWSError] = js.native
+  /**
+    *  Returns Amazon ECS service recommendations.   Compute Optimizer generates recommendations for Amazon ECS services on Fargate that meet a specific set of requirements. For more information, see the Supported resources and requirements in the Compute Optimizer User Guide. 
+    */
+  def getECSServiceRecommendations(params: GetECSServiceRecommendationsRequest): Request[GetECSServiceRecommendationsResponse, AWSError] = js.native
+  def getECSServiceRecommendations(
+    params: GetECSServiceRecommendationsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetECSServiceRecommendationsResponse, Unit]
+  ): Request[GetECSServiceRecommendationsResponse, AWSError] = js.native
   
   /**
     * Returns the recommendation preferences that are in effect for a given resource, such as enhanced infrastructure metrics. Considers all applicable preferences that you might have set at the resource, account, and organization level. When you create a recommendation preference, you can set its status to Active or Inactive. Use this action to view the recommendation preferences that are in effect, or Active.
@@ -247,12 +301,12 @@ trait ComputeOptimizer extends Service {
   ): Request[GetRecommendationPreferencesResponse, AWSError] = js.native
   
   /**
-    * Returns the optimization findings for an account. It returns the number of:   Amazon EC2 instances in an account that are Underprovisioned, Overprovisioned, or Optimized.   Auto Scaling groups in an account that are NotOptimized, or Optimized.   Amazon EBS volumes in an account that are NotOptimized, or Optimized.   Lambda functions in an account that are NotOptimized, or Optimized.  
+    * Returns the optimization findings for an account. It returns the number of:   Amazon EC2 instances in an account that are Underprovisioned, Overprovisioned, or Optimized.   Auto Scaling groups in an account that are NotOptimized, or Optimized.   Amazon EBS volumes in an account that are NotOptimized, or Optimized.   Lambda functions in an account that are NotOptimized, or Optimized.   Amazon ECS services in an account that are Underprovisioned, Overprovisioned, or Optimized.  
     */
   def getRecommendationSummaries(): Request[GetRecommendationSummariesResponse, AWSError] = js.native
   def getRecommendationSummaries(callback: js.Function2[/* err */ AWSError, /* data */ GetRecommendationSummariesResponse, Unit]): Request[GetRecommendationSummariesResponse, AWSError] = js.native
   /**
-    * Returns the optimization findings for an account. It returns the number of:   Amazon EC2 instances in an account that are Underprovisioned, Overprovisioned, or Optimized.   Auto Scaling groups in an account that are NotOptimized, or Optimized.   Amazon EBS volumes in an account that are NotOptimized, or Optimized.   Lambda functions in an account that are NotOptimized, or Optimized.  
+    * Returns the optimization findings for an account. It returns the number of:   Amazon EC2 instances in an account that are Underprovisioned, Overprovisioned, or Optimized.   Auto Scaling groups in an account that are NotOptimized, or Optimized.   Amazon EBS volumes in an account that are NotOptimized, or Optimized.   Lambda functions in an account that are NotOptimized, or Optimized.   Amazon ECS services in an account that are Underprovisioned, Overprovisioned, or Optimized.  
     */
   def getRecommendationSummaries(params: GetRecommendationSummariesRequest): Request[GetRecommendationSummariesResponse, AWSError] = js.native
   def getRecommendationSummaries(

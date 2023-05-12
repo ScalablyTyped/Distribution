@@ -1,10 +1,10 @@
 package typings.nblas
 
-import typings.nblas.builtTypesMod.FloatArray
-import typings.nblas.builtTypesMod.MatrixLeftRight
-import typings.nblas.builtTypesMod.MatrixTrans
-import typings.nblas.builtTypesMod.MatrixUnit
-import typings.nblas.builtTypesMod.MatrixUpperLower
+import typings.nblas.distTypesMod.FloatArray
+import typings.nblas.distTypesMod.MatrixLeftRight
+import typings.nblas.distTypesMod.MatrixTrans
+import typings.nblas.distTypesMod.MatrixUnit
+import typings.nblas.distTypesMod.MatrixUpperLower
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

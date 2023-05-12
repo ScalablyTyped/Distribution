@@ -1,6 +1,7 @@
 package typings.mnemonist
 
 import typings.mnemonist.utilsTypesMod.IArrayLikeConstructor
+import typings.mnemonist.utilsTypesMod.TypedArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,7 +26,7 @@ object fixedReverseHeapMod {
     override def clear(): Unit = js.native
     
     /* CompleteClass */
-    override def consume(): js.Iterable[T] = js.native
+    override def consume(): js.Array[T] | TypedArray = js.native
     
     /* CompleteClass */
     override def inspect(): Any = js.native
@@ -37,7 +38,7 @@ object fixedReverseHeapMod {
     var size: Double = js.native
     
     /* CompleteClass */
-    override def toArray(): js.Iterable[T] = js.native
+    override def toArray(): js.Array[T] | TypedArray = js.native
   }
   
   trait FixedReverseHeap[T] extends StObject {
@@ -48,7 +49,7 @@ object fixedReverseHeapMod {
     // Methods
     def clear(): Unit
     
-    def consume(): js.Iterable[T]
+    def consume(): js.Array[T] | TypedArray
     
     def inspect(): Any
     
@@ -56,18 +57,18 @@ object fixedReverseHeapMod {
     
     var size: Double
     
-    def toArray(): js.Iterable[T]
+    def toArray(): js.Array[T] | TypedArray
   }
   object FixedReverseHeap {
     
     inline def apply[T](
       capacity: Double,
       clear: () => Unit,
-      consume: () => js.Iterable[T],
+      consume: () => js.Array[T] | TypedArray,
       inspect: () => Any,
       push: T => Double,
       size: Double,
-      toArray: () => js.Iterable[T]
+      toArray: () => js.Array[T] | TypedArray
     ): FixedReverseHeap[T] = {
       val __obj = js.Dynamic.literal(capacity = capacity.asInstanceOf[js.Any], clear = js.Any.fromFunction0(clear), consume = js.Any.fromFunction0(consume), inspect = js.Any.fromFunction0(inspect), push = js.Any.fromFunction1(push), size = size.asInstanceOf[js.Any], toArray = js.Any.fromFunction0(toArray))
       __obj.asInstanceOf[FixedReverseHeap[T]]
@@ -80,7 +81,7 @@ object fixedReverseHeapMod {
       
       inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
       
-      inline def setConsume(value: () => js.Iterable[T]): Self = StObject.set(x, "consume", js.Any.fromFunction0(value))
+      inline def setConsume(value: () => js.Array[T] | TypedArray): Self = StObject.set(x, "consume", js.Any.fromFunction0(value))
       
       inline def setInspect(value: () => Any): Self = StObject.set(x, "inspect", js.Any.fromFunction0(value))
       
@@ -88,7 +89,7 @@ object fixedReverseHeapMod {
       
       inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      inline def setToArray(value: () => js.Iterable[T]): Self = StObject.set(x, "toArray", js.Any.fromFunction0(value))
+      inline def setToArray(value: () => js.Array[T] | TypedArray): Self = StObject.set(x, "toArray", js.Any.fromFunction0(value))
     }
   }
   

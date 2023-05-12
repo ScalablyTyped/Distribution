@@ -1,7 +1,7 @@
 
 # Scala.js typings for postcss-selector-not
 
-Typings are for version 6.0.1
+Typings are for version 7.0.1
 
 ## Library description:
 PostCSS plugin to transform :not() W3C CSS level 4 pseudo class to :not() CSS level 3 selectors

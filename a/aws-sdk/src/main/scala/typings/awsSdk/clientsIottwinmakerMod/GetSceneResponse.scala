@@ -32,9 +32,24 @@ trait GetSceneResponse extends StObject {
   var description: js.UndefOr[Description] = js.undefined
   
   /**
+    * The SceneResponse error.
+    */
+  var error: js.UndefOr[SceneError] = js.undefined
+  
+  /**
+    * The generated scene metadata.
+    */
+  var generatedSceneMetadata: js.UndefOr[GeneratedSceneMetadataMap] = js.undefined
+  
+  /**
     * The ID of the scene.
     */
   var sceneId: Id
+  
+  /**
+    * The response metadata.
+    */
+  var sceneMetadata: js.UndefOr[SceneMetadataMap] = js.undefined
   
   /**
     * The date and time when the scene was last updated.
@@ -79,7 +94,19 @@ object GetSceneResponse {
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
+    inline def setError(value: SceneError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    
+    inline def setGeneratedSceneMetadata(value: GeneratedSceneMetadataMap): Self = StObject.set(x, "generatedSceneMetadata", value.asInstanceOf[js.Any])
+    
+    inline def setGeneratedSceneMetadataUndefined: Self = StObject.set(x, "generatedSceneMetadata", js.undefined)
+    
     inline def setSceneId(value: Id): Self = StObject.set(x, "sceneId", value.asInstanceOf[js.Any])
+    
+    inline def setSceneMetadata(value: SceneMetadataMap): Self = StObject.set(x, "sceneMetadata", value.asInstanceOf[js.Any])
+    
+    inline def setSceneMetadataUndefined: Self = StObject.set(x, "sceneMetadata", js.undefined)
     
     inline def setUpdateDateTime(value: js.Date): Self = StObject.set(x, "updateDateTime", value.asInstanceOf[js.Any])
     

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ExportTasksMessage extends StObject {
   
   /**
-    * Information about an export of a snapshot to Amazon S3.
+    * Information about an export of a snapshot or cluster to Amazon S3.
     */
   var ExportTasks: js.UndefOr[ExportTasksList] = js.undefined
   

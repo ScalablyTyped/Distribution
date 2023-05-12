@@ -15,19 +15,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PagePerpageSortType extends StObject {
   
-  /** The order to sort by. Default: `asc` when using `full_name`, otherwise `desc`. */
+  /** @description The order to sort by. Default: `asc` when using `full_name`, otherwise `desc`. */
   var direction: js.UndefOr[asc | desc] = js.undefined
   
-  /** Page number of the results to fetch. */
   var page: js.UndefOr[Double] = js.undefined
   
-  /** The number of results per page (max 100). */
   var per_page: js.UndefOr[Double] = js.undefined
   
-  /** The property to sort the results by. */
+  /** @description The property to sort the results by. */
   var sort: js.UndefOr[created_ | updated | pushed | full_name] = js.undefined
   
-  /** Limit results to repositories of the specified type. */
+  /** @description Limit results to repositories of the specified type. */
   var `type`: js.UndefOr[all | owner_ | member_] = js.undefined
 }
 object PagePerpageSortType {

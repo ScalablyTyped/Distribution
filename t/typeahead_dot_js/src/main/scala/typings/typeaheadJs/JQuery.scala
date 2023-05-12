@@ -1027,14 +1027,12 @@ trait JQuery extends StObject {
   /**
     * Accommodates the val overload.
     *
-    * @constructor
     * @param methodName Method 'val'
     */
   def typeahead(methodName: String): String = js.native
   /**
     * Accommodates the set val overload.
     *
-    * @constructor
     * @param methodName Method 'val'
     * @param val The value to be set
     */
@@ -1042,7 +1040,6 @@ trait JQuery extends StObject {
   /**
     * For a given input[type="text"], enables typeahead functionality.
     *
-    * @constructor
     * @param options Options hash that's used for configuration
     * @param datasets Array of datasets
     */
@@ -1050,7 +1047,6 @@ trait JQuery extends StObject {
   /**
     * For a given input[type="text"], enables typeahead functionality.
     *
-    * @constructor
     * @param options Options hash that's used for configuration
     * @param dataset At least one dataset is required
     * @param datasets Rest of the datasets.
@@ -1059,7 +1055,6 @@ trait JQuery extends StObject {
   /**
     * Closes the suggestion menu.
     *
-    * @constructor
     * @param methodName Method 'close'
     */
   @JSName("typeahead")
@@ -1067,7 +1062,6 @@ trait JQuery extends StObject {
   /**
     * Removes typeahead functionality and reverts the input element back to its original state.
     *
-    * @constructor
     * @param methodName Method 'destroy'
     */
   @JSName("typeahead")
@@ -1075,7 +1069,6 @@ trait JQuery extends StObject {
   /**
     * Opens the suggestion menu.
     *
-    * @constructor
     * @param methodName Method 'open'
     */
   @JSName("typeahead")
@@ -1084,7 +1077,6 @@ trait JQuery extends StObject {
     * Returns the current value of the typeahead.
     * The value is the text the user has entered into the input element.
     *
-    * @constructor
     * @param methodName Method 'val'
     */
   @JSName("typeahead")
@@ -1092,7 +1084,6 @@ trait JQuery extends StObject {
   /**
     * Sets the value of the typeahead. This should be used in place of jQuery#val.
     *
-    * @constructor
     * @param methodName Method 'val'
     * @param val The value to be set
     */

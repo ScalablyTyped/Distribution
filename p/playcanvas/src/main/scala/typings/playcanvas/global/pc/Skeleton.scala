@@ -14,7 +14,8 @@ open class Skeleton protected ()
   /**
     * Create a new Skeleton instance.
     *
-    * @param {GraphNode} graph - The root {@link GraphNode} of the skeleton.
+    * @param {import('../graph-node.js').GraphNode} graph - The root {@link GraphNode} of the
+    * skeleton.
     */
   def this(graph: typings.playcanvas.mod.GraphNode) = this()
 }

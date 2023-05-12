@@ -27,7 +27,6 @@ import typings.grpcGrpcJs.buildSrcChannelCredentialsMod.VerifyOptions
 import typings.grpcGrpcJs.buildSrcChannelMod.Channel
 import typings.grpcGrpcJs.buildSrcChannelOptionsMod.ChannelOptions
 import typings.grpcGrpcJs.buildSrcClientInterceptorsMod.InterceptingCallInterface
-import typings.grpcGrpcJs.buildSrcClientMod.Client
 import typings.grpcGrpcJs.buildSrcConstantsMod.LogVerbosity
 import typings.grpcGrpcJs.buildSrcDurationMod.Duration
 import typings.grpcGrpcJs.buildSrcFilterMod.Filter
@@ -53,6 +52,7 @@ import typings.grpcGrpcJs.mod.experimental.OutlierDetectionLoadBalancingConfig
 import typings.node.bufferMod.global.Buffer
 import typings.node.http2Mod.IncomingHttpHeaders
 import typings.node.tlsMod.SecureContext
+import typings.opentelemetryApi.buildSrcTraceSpanMod.Span
 import typings.opentelemetryInstrumentationGrpc.buildSrcGrpcTypesMod.GrpcStatus
 import typings.opentelemetryInstrumentationGrpc.opentelemetryInstrumentationGrpcBooleans.`true`
 import typings.opentelemetryInstrumentationGrpc.opentelemetryInstrumentationGrpcStrings.json
@@ -63,6 +63,42 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
+  
+  @js.native
+  trait CaptureRequestMetadata extends StObject {
+    
+    def captureRequestMetadata(span: Span, metadata: typings.grpc.mod.Metadata): Unit = js.native
+    def captureRequestMetadata(span: Span, metadata: typings.grpcGrpcJs.mod.Metadata): Unit = js.native
+    
+    def captureResponseMetadata(span: Span, metadata: typings.grpc.mod.Metadata): Unit = js.native
+    def captureResponseMetadata(span: Span, metadata: typings.grpcGrpcJs.mod.Metadata): Unit = js.native
+  }
+  
+  trait Client extends StObject {
+    
+    var client: js.UndefOr[RequestMetadata] = js.undefined
+    
+    var server: js.UndefOr[RequestMetadata] = js.undefined
+  }
+  object Client {
+    
+    inline def apply(): Client = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Client]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Client] (val x: Self) extends AnyVal {
+      
+      inline def setClient(value: RequestMetadata): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+      
+      inline def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
+      
+      inline def setServer(value: RequestMetadata): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
+      
+      inline def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
+    }
+  }
   
   trait Metadata extends StObject {
     
@@ -175,6 +211,36 @@ object anon {
       inline def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
       
       inline def setStatus(value: GrpcStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait RequestMetadata extends StObject {
+    
+    var requestMetadata: js.UndefOr[js.Array[String]] = js.undefined
+    
+    var responseMetadata: js.UndefOr[js.Array[String]] = js.undefined
+  }
+  object RequestMetadata {
+    
+    inline def apply(): RequestMetadata = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[RequestMetadata]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestMetadata] (val x: Self) extends AnyVal {
+      
+      inline def setRequestMetadata(value: js.Array[String]): Self = StObject.set(x, "requestMetadata", value.asInstanceOf[js.Any])
+      
+      inline def setRequestMetadataUndefined: Self = StObject.set(x, "requestMetadata", js.undefined)
+      
+      inline def setRequestMetadataVarargs(value: String*): Self = StObject.set(x, "requestMetadata", js.Array(value*))
+      
+      inline def setResponseMetadata(value: js.Array[String]): Self = StObject.set(x, "responseMetadata", value.asInstanceOf[js.Any])
+      
+      inline def setResponseMetadataUndefined: Self = StObject.set(x, "responseMetadata", js.undefined)
+      
+      inline def setResponseMetadataVarargs(value: String*): Self = StObject.set(x, "responseMetadata", js.Array(value*))
     }
   }
   
@@ -617,7 +683,7 @@ object anon {
     
     def addAdminServicesToServer(server: Server): Unit = js.native
     
-    def closeClient(client: Client): Unit = js.native
+    def closeClient(client: typings.grpcGrpcJs.buildSrcClientMod.Client): Unit = js.native
     
     val credentials: Typeofcredentials = js.native
     
@@ -627,7 +693,7 @@ object anon {
     
     def getChannelzServiceDefinition(): Any = js.native
     
-    def getClientChannel(client: Client): Channel = js.native
+    def getClientChannel(client: typings.grpcGrpcJs.buildSrcClientMod.Client): Channel = js.native
     
     def load(filename: Any, format: Any, options: Any): scala.Nothing = js.native
     
@@ -645,8 +711,16 @@ object anon {
     
     def setLogger(logger: PartialConsole): Unit = js.native
     
-    def waitForClientReady(client: Client, deadline: js.Date, callback: js.Function1[/* error */ js.UndefOr[js.Error], Unit]): Unit = js.native
-    def waitForClientReady(client: Client, deadline: Double, callback: js.Function1[/* error */ js.UndefOr[js.Error], Unit]): Unit = js.native
+    def waitForClientReady(
+      client: typings.grpcGrpcJs.buildSrcClientMod.Client,
+      deadline: js.Date,
+      callback: js.Function1[/* error */ js.UndefOr[js.Error], Unit]
+    ): Unit = js.native
+    def waitForClientReady(
+      client: typings.grpcGrpcJs.buildSrcClientMod.Client,
+      deadline: Double,
+      callback: js.Function1[/* error */ js.UndefOr[js.Error], Unit]
+    ): Unit = js.native
   }
   
   @js.native

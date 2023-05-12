@@ -1,7 +1,7 @@
 
 # Scala.js typings for stream-to-string
 
-Typings are for version 1.2.0
+Typings are for version 1.2.1
 
 ## Library description:
 Pipe a stream into a string, collect value with callback or promise

@@ -1,7 +1,7 @@
 
 # Scala.js typings for swiper
 
-Typings are for version 8.4.4
+Typings are for version 9.3.1
 
 ## Library description:
 Most modern mobile touch slider and framework with hardware accelerated transitions

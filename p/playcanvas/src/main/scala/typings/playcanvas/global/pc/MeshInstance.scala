@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @callback CalculateSortDistanceCallback
   * @param {MeshInstance} meshInstance - The mesh instance.
-  * @param {Vec3} cameraPosition - The position of the camera.
-  * @param {Vec3} cameraForward - The forward vector of the camera.
+  * @param {import('../core/math/vec3.js').Vec3} cameraPosition - The position of the camera.
+  * @param {import('../core/math/vec3.js').Vec3} cameraForward - The forward vector of the camera.
   */
 /**
   * An instance of a {@link Mesh}. A single mesh can be referenced by many mesh instances that can
@@ -24,19 +24,20 @@ open class MeshInstance protected ()
   /**
     * Create a new MeshInstance instance.
     *
-    * @param {Mesh} mesh - The graphics mesh to instance.
-    * @param {Material} material - The material to use for this mesh instance.
+    * @param {import('./mesh.js').Mesh} mesh - The graphics mesh to instance.
+    * @param {import('./materials/material.js').Material} material - The material to use for this
+    * mesh instance.
     * @param {GraphNode} [node] - The graph node defining the transform for this instance. This
     * parameter is optional when used with {@link RenderComponent} and will use the node the
     * component is attached to.
     * @example
     * // Create a mesh instance pointing to a 1x1x1 'cube' mesh
-    * var mesh = pc.createBox(graphicsDevice);
-    * var material = new pc.StandardMaterial();
+    * const mesh = pc.createBox(graphicsDevice);
+    * const material = new pc.StandardMaterial();
     *
-    * var meshInstance = new pc.MeshInstance(mesh, material);
+    * const meshInstance = new pc.MeshInstance(mesh, material);
     *
-    * var entity = new pc.Entity();
+    * const entity = new pc.Entity();
     * entity.addComponent('render', {
     *     meshInstances: [meshInstance]
     * });

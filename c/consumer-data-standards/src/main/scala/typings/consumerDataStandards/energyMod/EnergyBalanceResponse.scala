@@ -14,12 +14,12 @@ trait EnergyBalanceResponse
   
   var links: Links
   
-  var meta: Meta
+  var meta: js.UndefOr[Meta] = js.undefined
 }
 object EnergyBalanceResponse {
   
-  inline def apply(data: DictkBalance, links: Links, meta: Meta): EnergyBalanceResponse = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], links = links.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any])
+  inline def apply(data: DictkBalance, links: Links): EnergyBalanceResponse = {
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], links = links.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnergyBalanceResponse]
   }
   
@@ -31,5 +31,7 @@ object EnergyBalanceResponse {
     inline def setLinks(value: Links): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
     
     inline def setMeta(value: Meta): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+    
+    inline def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
   }
 }

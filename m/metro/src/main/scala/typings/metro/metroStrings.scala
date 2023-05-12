@@ -1,9 +1,10 @@
 package typings.metro
 
-import typings.metro.deltaBundlerTypesMod.AsyncDependencyType
-import typings.metro.libReportingMod.GlobalCacheDisabledReason
-import typings.metro.moduleGraphWorkerCollectDependenciesMod.DynamicRequiresBehavior
-import typings.metro.sharedTypesMod.BundleType
+import typings.metro.srcDeltaBundlerTypesMod.AsyncDependencyType
+import typings.metro.srcLibReportingMod.GlobalCacheDisabledReason
+import typings.metro.srcModuleGraphWorkerCollectDependenciesMod.ContextMode
+import typings.metro.srcModuleGraphWorkerCollectDependenciesMod.DynamicRequiresBehavior
+import typings.metro.srcSharedTypesMod.BundleType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -61,10 +62,6 @@ object metroStrings {
   inline def client_log: client_log = "client_log".asInstanceOf[client_log]
   
   @js.native
-  sealed trait concrete extends StObject
-  inline def concrete: concrete = "concrete".asInstanceOf[concrete]
-  
-  @js.native
   sealed trait debug extends StObject
   inline def debug: debug = "debug".asInstanceOf[debug]
   
@@ -81,6 +78,12 @@ object metroStrings {
   @js.native
   sealed trait dep_graph_loading extends StObject
   inline def dep_graph_loading: dep_graph_loading = "dep_graph_loading".asInstanceOf[dep_graph_loading]
+  
+  @js.native
+  sealed trait eager
+    extends StObject
+       with ContextMode
+  inline def eager: eager = "eager".asInstanceOf[eager]
   
   @js.native
   sealed trait global_cache_disabled extends StObject
@@ -131,8 +134,24 @@ object metroStrings {
   inline def initialize_started: initialize_started = "initialize_started".asInstanceOf[initialize_started]
   
   @js.native
-  sealed trait linked extends StObject
-  inline def linked: linked = "linked".asInstanceOf[linked]
+  sealed trait inlinePlatform extends StObject
+  inline def inlinePlatform: inlinePlatform = "inlinePlatform".asInstanceOf[inlinePlatform]
+  
+  @js.native
+  sealed trait inlineRequires extends StObject
+  inline def inlineRequires: inlineRequires = "inlineRequires".asInstanceOf[inlineRequires]
+  
+  @js.native
+  sealed trait `lazy`
+    extends StObject
+       with ContextMode
+  inline def `lazy`: `lazy` = "lazy".asInstanceOf[`lazy`]
+  
+  @js.native
+  sealed trait `lazy-once`
+    extends StObject
+       with ContextMode
+  inline def `lazy-once`: `lazy-once` = "lazy-once".asInstanceOf[`lazy-once`]
   
   @js.native
   sealed trait log extends StObject
@@ -151,6 +170,10 @@ object metroStrings {
   inline def meta: meta = "meta".asInstanceOf[meta]
   
   @js.native
+  sealed trait module extends StObject
+  inline def module: module = "module".asInstanceOf[module]
+  
+  @js.native
   sealed trait prefetch
     extends StObject
        with AsyncDependencyType
@@ -167,6 +190,20 @@ object metroStrings {
     extends StObject
        with DynamicRequiresBehavior
   inline def reject: reject = "reject".asInstanceOf[reject]
+  
+  @js.native
+  sealed trait script extends StObject
+  inline def script: script = "script".asInstanceOf[script]
+  
+  @js.native
+  sealed trait sourceFile extends StObject
+  inline def sourceFile: sourceFile = "sourceFile".asInstanceOf[sourceFile]
+  
+  @js.native
+  sealed trait sync
+    extends StObject
+       with ContextMode
+  inline def sync: sync = "sync".asInstanceOf[sync]
   
   @js.native
   sealed trait throwAtRuntime
@@ -201,6 +238,18 @@ object metroStrings {
   inline def transform_cache_reset: transform_cache_reset = "transform_cache_reset".asInstanceOf[transform_cache_reset]
   
   @js.native
+  sealed trait transformer_load_done extends StObject
+  inline def transformer_load_done: transformer_load_done = "transformer_load_done".asInstanceOf[transformer_load_done]
+  
+  @js.native
+  sealed trait transformer_load_failed extends StObject
+  inline def transformer_load_failed: transformer_load_failed = "transformer_load_failed".asInstanceOf[transformer_load_failed]
+  
+  @js.native
+  sealed trait transformer_load_started extends StObject
+  inline def transformer_load_started: transformer_load_started = "transformer_load_started".asInstanceOf[transformer_load_started]
+  
+  @js.native
   sealed trait utf16le extends StObject
   inline def utf16le: utf16le = "utf16le".asInstanceOf[utf16le]
   
@@ -211,6 +260,14 @@ object metroStrings {
   @js.native
   sealed trait warn extends StObject
   inline def warn: warn = "warn".asInstanceOf[warn]
+  
+  @js.native
+  sealed trait watcher_health_check_result extends StObject
+  inline def watcher_health_check_result: watcher_health_check_result = "watcher_health_check_result".asInstanceOf[watcher_health_check_result]
+  
+  @js.native
+  sealed trait watcher_status extends StObject
+  inline def watcher_status: watcher_status = "watcher_status".asInstanceOf[watcher_status]
   
   @js.native
   sealed trait worker_stderr_chunk extends StObject

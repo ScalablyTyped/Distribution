@@ -8,6 +8,8 @@ import typings.pixiTextBitmap.anon.PartialIBitmapTextStyle
 import typings.pixiTextBitmap.anon.PartialITextStyle
 import typings.pixiTextBitmap.libBitmapFontMod.IBitmapFontOptions
 import typings.pixiUtils.libTypesMod.Dict
+import typings.std.Document
+import typings.std.Record
 import typings.std.XMLDocument
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -225,7 +227,7 @@ object mod {
       *.     this will default to the BitmapFont size.
       * @param {string} [style.align='left'] - Alignment for multiline text ('left', 'center', 'right' or 'justify'),
       *      does not affect single line text.
-      * @param {number} [style.tint=0xFFFFFF] - The tint color.
+      * @param {PIXI.ColorSource} [style.tint=0xFFFFFF] - The tint color.
       * @param {number} [style.letterSpacing=0] - The amount of spacing between letters.
       * @param {number} [style.maxWidth=0] - The max width of the text before line wrapping.
       */
@@ -287,7 +289,7 @@ object mod {
       * @param xml
       * @returns - Data to use for BitmapFont
       */
-    inline def parse(xml: XMLDocument): typings.pixiTextBitmap.libBitmapFontDataMod.BitmapFontData = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(xml.asInstanceOf[js.Any]).asInstanceOf[typings.pixiTextBitmap.libBitmapFontDataMod.BitmapFontData]
+    inline def parse(xml: Document): typings.pixiTextBitmap.libBitmapFontDataMod.BitmapFontData = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(xml.asInstanceOf[js.Any]).asInstanceOf[typings.pixiTextBitmap.libBitmapFontDataMod.BitmapFontData]
     
     /**
       * Check if resource refers to xml font data.
@@ -327,5 +329,9 @@ object mod {
   
   @JSImport("@pixi/text-bitmap", "loadBitmapFont")
   @js.native
-  val loadBitmapFont: LoaderParser[String | typings.pixiTextBitmap.libBitmapFontMod.BitmapFont, Any] = js.native
+  val loadBitmapFont: LoaderParser[
+    String | typings.pixiTextBitmap.libBitmapFontMod.BitmapFont, 
+    Any, 
+    Record[String, Any]
+  ] = js.native
 }

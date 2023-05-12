@@ -8,6 +8,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object reactRteStrings {
   
   @js.native
+  sealed trait BLOCK_ALIGNMENT_BUTTONS
+    extends StObject
+       with GroupName
+  inline def BLOCK_ALIGNMENT_BUTTONS: BLOCK_ALIGNMENT_BUTTONS = "BLOCK_ALIGNMENT_BUTTONS".asInstanceOf[BLOCK_ALIGNMENT_BUTTONS]
+  
+  @js.native
   sealed trait BLOCK_TYPE_BUTTONS
     extends StObject
        with GroupName

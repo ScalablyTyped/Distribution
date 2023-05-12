@@ -6,8 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CreateFirewallRuleResponse extends StObject {
   
+  /**
+    * Contains error message, if request could not be handled.
+    */
   var errorMessage: String
   
+  /**
+    * Whether or not request can be handled.
+    */
   var result: Boolean
 }
 object CreateFirewallRuleResponse {

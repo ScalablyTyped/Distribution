@@ -22,38 +22,73 @@ object confirmpopupConfirmpopupMod {
     def this(props: ConfirmPopupProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: ConfirmPopupProps, context: Any) = this()
     
+    /**
+      * Used to call/update the component manually
+      * @param {ConfirmPopupProps} props - All component props
+      */
     def confirm(): Unit = js.native
     def confirm(props: ConfirmPopupProps): Unit = js.native
   }
   
   inline def confirmPopup(props: ConfirmPopupProps): ConfirmPopupReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("confirmPopup")(props.asInstanceOf[js.Any]).asInstanceOf[ConfirmPopupReturn]
   
-  type ConfirmPopupAppendToType = js.UndefOr[self | HTMLElement | Null]
-  
+  /**
+    * Custom confirm popup options
+    */
   trait ConfirmPopupOptions
     extends StObject
        with /* key */ StringDictionary[Any] {
     
+    /**
+      * Callback to execute when action is confirmed.
+      */
     def accept(): Unit
     
+    /**
+      * Style class of the accept button.
+      */
     var acceptClassName: String
     
+    /**
+      * Label of the accept button.
+      * @defaultValue Yes
+      */
     var acceptLabel: String
     
+    /**
+      * Style class of the component.
+      */
     var className: String
     
+    /**
+      * Default element created by the component.
+      */
     var element: ReactNode
     
+    /**
+      * All component props
+      * @type {ConfirmPopupProps}
+      */
     var props: ConfirmPopupProps
     
+    /**
+      * Callback to execute when action is rejected.
+      */
     def reject(): Unit
     
+    /**
+      * Style class of the reject button.
+      */
     var rejectClassName: String
     
+    /**
+      * Label of the reject button.
+      * @defaultValue No
+      */
     var rejectLabel: String
   }
   object ConfirmPopupOptions {
@@ -99,56 +134,128 @@ object confirmpopupConfirmpopupMod {
   
   trait ConfirmPopupProps extends StObject {
     
+    /**
+      * Callback to execute when action is confirmed.
+      */
     var accept: js.UndefOr[js.Function0[Unit]] = js.undefined
     
+    /**
+      * Style class of the accept button.
+      */
     var acceptClassName: js.UndefOr[String] = js.undefined
     
+    /**
+      * Icon of the accept button.
+      */
     var acceptIcon: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconType<ConfirmPopupProps> */ Any
       ] = js.undefined
     
+    /**
+      * Label of the accept button.
+      * @defaultValue Yes
+      */
     var acceptLabel: js.UndefOr[String] = js.undefined
     
-    var appendTo: js.UndefOr[ConfirmPopupAppendToType] = js.undefined
+    /**
+      * DOM element instance where the overlay panel should be mounted. Valid values are any DOM Element and 'self'. The self value is used to render a component where it is located.
+      * @defaultValue document.body
+      */
+    var appendTo: js.UndefOr[self | HTMLElement | Null] = js.undefined
     
+    /**
+      * Used to get the child elements of the component.
+      * @readonly
+      */
     var children: js.UndefOr[ReactNode] = js.undefined
     
+    /**
+      * Style class of the element.
+      */
     var className: js.UndefOr[String] = js.undefined
     
+    /**
+      * Enables to hide the popup when outside is clicked.
+      * @defaultValue true
+      */
     var dismissable: js.UndefOr[Boolean] = js.undefined
     
-    var footer: js.UndefOr[ConfirmPopupTemplateType] = js.undefined
+    /**
+      * Footer content of the confirm popup.
+      */
+    var footer: js.UndefOr[ReactNode | (js.Function1[/* options */ ConfirmPopupOptions, ReactNode])] = js.undefined
     
+    /**
+      * Icon to display next to the message.
+      */
     var icon: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconType<ConfirmPopupProps> */ Any
       ] = js.undefined
     
-    var message: js.UndefOr[ConfirmPopupTemplateType] = js.undefined
+    /**
+      * Message of the confirmation.
+      */
+    var message: js.UndefOr[ReactNode | (js.Function1[/* options */ ConfirmPopupOptions, ReactNode])] = js.undefined
     
+    /**
+      * Callback to invoke when confirm popup is hidden.
+      */
     var onHide: js.UndefOr[js.Function1[/* result */ String, Unit]] = js.undefined
     
+    /**
+      * Callback to invoke when overlay panel becomes visible.
+      */
     var onShow: js.UndefOr[js.Function0[Unit]] = js.undefined
     
+    /**
+      * Callback to execute when action is rejected.
+      */
     var reject: js.UndefOr[js.Function0[Unit]] = js.undefined
     
+    /**
+      * Style class of the reject button.
+      */
     var rejectClassName: js.UndefOr[String] = js.undefined
     
+    /**
+      * Icon of the reject button.
+      */
     var rejectIcon: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconType<ConfirmPopupProps> */ Any
       ] = js.undefined
     
+    /**
+      * Label of the reject button.
+      * @defaultValue No
+      */
     var rejectLabel: js.UndefOr[String] = js.undefined
     
+    /**
+      * Inline style of the element.
+      */
     var style: js.UndefOr[CSSProperties] = js.undefined
     
+    /**
+      * Unique tag key used to separate the confirmPopup components in the page.
+      */
     var tagKey: js.UndefOr[String] = js.undefined
     
+    /**
+      * Target element to align the popup.
+      */
     var target: js.UndefOr[HTMLElement] = js.undefined
     
+    /**
+      * The properties of CSSTransition can be customized, except for "nodeRef" and "in" properties.
+      */
     var transitionOptions: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSSTransitionProps */ Any
       ] = js.undefined
     
+    /**
+      * Specifies the visibility of the confirm popup.
+      * @defaultValue false
+      */
     var visible: js.UndefOr[Boolean] = js.undefined
   }
   object ConfirmPopupProps {
@@ -179,7 +286,7 @@ object confirmpopupConfirmpopupMod {
       
       inline def setAcceptUndefined: Self = StObject.set(x, "accept", js.undefined)
       
-      inline def setAppendTo(value: ConfirmPopupAppendToType): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
+      inline def setAppendTo(value: self | HTMLElement): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
       
       inline def setAppendToNull: Self = StObject.set(x, "appendTo", null)
       
@@ -197,7 +304,7 @@ object confirmpopupConfirmpopupMod {
       
       inline def setDismissableUndefined: Self = StObject.set(x, "dismissable", js.undefined)
       
-      inline def setFooter(value: ConfirmPopupTemplateType): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
+      inline def setFooter(value: ReactNode | (js.Function1[/* options */ ConfirmPopupOptions, ReactNode])): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
       
       inline def setFooterFunction1(value: /* options */ ConfirmPopupOptions => ReactNode): Self = StObject.set(x, "footer", js.Any.fromFunction1(value))
       
@@ -209,7 +316,7 @@ object confirmpopupConfirmpopupMod {
       
       inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
-      inline def setMessage(value: ConfirmPopupTemplateType): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: ReactNode | (js.Function1[/* options */ ConfirmPopupOptions, ReactNode])): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
       inline def setMessageFunction1(value: /* options */ ConfirmPopupOptions => ReactNode): Self = StObject.set(x, "message", js.Any.fromFunction1(value))
       
@@ -265,10 +372,19 @@ object confirmpopupConfirmpopupMod {
     }
   }
   
+  /**
+    * Object returned by the {@link confirmPopup} method.
+    */
   trait ConfirmPopupReturn extends StObject {
     
+    /**
+      * Used to hide the popup.
+      */
     def hide(): Unit
     
+    /**
+      * Used to show the popup.
+      */
     def show(): Unit
   }
   object ConfirmPopupReturn {
@@ -286,6 +402,4 @@ object confirmpopupConfirmpopupMod {
       inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
     }
   }
-  
-  type ConfirmPopupTemplateType = ReactNode | (js.Function1[/* options */ ConfirmPopupOptions, ReactNode])
 }

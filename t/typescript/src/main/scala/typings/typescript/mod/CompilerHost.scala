@@ -1,7 +1,5 @@
 package typings.typescript.mod
 
-import typings.typescript.mod.ModuleKind.CommonJS
-import typings.typescript.mod.ModuleKind.ESNext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -97,6 +95,19 @@ trait CompilerHost
     ]
   ] = js.native
   
+  var resolveModuleNameLiterals: js.UndefOr[
+    js.Function6[
+      /* moduleLiterals */ js.Array[StringLiteralLike], 
+      /* containingFile */ java.lang.String, 
+      /* redirectedReference */ js.UndefOr[ResolvedProjectReference], 
+      /* options */ CompilerOptions, 
+      /* containingSourceFile */ SourceFile, 
+      /* reusedNames */ js.UndefOr[js.Array[StringLiteralLike]], 
+      js.Array[ResolvedModuleWithFailedLookupLocations]
+    ]
+  ] = js.native
+  
+  /** @deprecated supply resolveModuleNameLiterals instead for resolution that can handle newer resolution modes like nodenext */
   var resolveModuleNames: js.UndefOr[
     js.Function6[
       /* moduleNames */ js.Array[java.lang.String], 
@@ -109,7 +120,21 @@ trait CompilerHost
     ]
   ] = js.native
   
+  var resolveTypeReferenceDirectiveReferences: js.UndefOr[
+    js.Function6[
+      /* typeDirectiveReferences */ js.Array[FileReference | java.lang.String], 
+      /* containingFile */ java.lang.String, 
+      /* redirectedReference */ js.UndefOr[ResolvedProjectReference], 
+      /* options */ CompilerOptions, 
+      /* containingSourceFile */ js.UndefOr[SourceFile], 
+      /* reusedNames */ js.UndefOr[js.Array[FileReference | java.lang.String]], 
+      js.Array[ResolvedTypeReferenceDirectiveWithFailedLookupLocations]
+    ]
+  ] = js.native
+  
   /**
+    * @deprecated supply resolveTypeReferenceDirectiveReferences instead for resolution that can handle newer resolution modes like nodenext
+    *
     * This method is a companion for 'resolveModuleNames' and is used to resolve 'types' references to actual type declaration files
     */
   var resolveTypeReferenceDirectives: js.UndefOr[
@@ -118,7 +143,7 @@ trait CompilerHost
       /* containingFile */ java.lang.String, 
       /* redirectedReference */ js.UndefOr[ResolvedProjectReference], 
       /* options */ CompilerOptions, 
-      /* containingFileMode */ js.UndefOr[ESNext | CommonJS], 
+      /* containingFileMode */ js.UndefOr[ResolutionMode], 
       js.Array[js.UndefOr[ResolvedTypeReferenceDirective]]
     ]
   ] = js.native

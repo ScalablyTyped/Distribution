@@ -1,7 +1,7 @@
 
 # Scala.js typings for googlemaps__js-api-loader
 
-Typings are for version 1.14.3
+Typings are for version 1.15.1
 
 ## Library description:
 Wrapper for the loading of Google Maps JavaScript API script in the browser

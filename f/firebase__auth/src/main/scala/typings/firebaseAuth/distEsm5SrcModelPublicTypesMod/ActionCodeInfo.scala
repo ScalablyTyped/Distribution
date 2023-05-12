@@ -1,6 +1,6 @@
 package typings.firebaseAuth.distEsm5SrcModelPublicTypesMod
 
-import typings.firebaseAuth.anon.MultiFactorInfoPreviousEmail
+import typings.firebaseAuth.anon.EmailMultiFactorInfoPreviousEmail
 import typings.firebaseAuth.firebaseAuthStrings.EMAIL_SIGNIN
 import typings.firebaseAuth.firebaseAuthStrings.PASSWORD_RESET
 import typings.firebaseAuth.firebaseAuthStrings.RECOVER_EMAIL
@@ -36,7 +36,7 @@ trait ActionCodeInfo extends StObject {
     * the information about the second factor. For phone second factor, the `multiFactorInfo`
     * is a {@link MultiFactorInfo} object, which contains the phone number.
     */
-  var data: MultiFactorInfoPreviousEmail
+  var data: EmailMultiFactorInfoPreviousEmail
   
   /**
     * The type of operation that generated the action code.
@@ -46,7 +46,7 @@ trait ActionCodeInfo extends StObject {
 object ActionCodeInfo {
   
   inline def apply(
-    data: MultiFactorInfoPreviousEmail,
+    data: EmailMultiFactorInfoPreviousEmail,
     operation: RECOVER_EMAIL | VERIFY_EMAIL | REVERT_SECOND_FACTOR_ADDITION | EMAIL_SIGNIN | VERIFY_AND_CHANGE_EMAIL | PASSWORD_RESET
   ): ActionCodeInfo = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], operation = operation.asInstanceOf[js.Any])
@@ -56,7 +56,7 @@ object ActionCodeInfo {
   @scala.inline
   implicit open class MutableBuilder[Self <: ActionCodeInfo] (val x: Self) extends AnyVal {
     
-    inline def setData(value: MultiFactorInfoPreviousEmail): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: EmailMultiFactorInfoPreviousEmail): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setOperation(
       value: RECOVER_EMAIL | VERIFY_EMAIL | REVERT_SECOND_FACTOR_ADDITION | EMAIL_SIGNIN | VERIFY_AND_CHANGE_EMAIL | PASSWORD_RESET

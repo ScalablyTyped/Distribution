@@ -13,6 +13,8 @@ trait ESCOption extends StObject {
   
   var address: js.UndefOr[String] = js.undefined
   
+  var board: js.UndefOr[Board] = js.undefined
+  
   var controller: js.UndefOr[PCA9685 | DEFAULT] = js.undefined
   
   var device: js.UndefOr[FORWARD | FORWARD_REVERSE | FORWARD_REVERSE_BRAKE] = js.undefined
@@ -36,6 +38,10 @@ object ESCOption {
     inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
     inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
+    
+    inline def setBoard(value: Board): Self = StObject.set(x, "board", value.asInstanceOf[js.Any])
+    
+    inline def setBoardUndefined: Self = StObject.set(x, "board", js.undefined)
     
     inline def setController(value: PCA9685 | DEFAULT): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
     

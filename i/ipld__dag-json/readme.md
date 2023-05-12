@@ -1,7 +1,7 @@
 
 # Scala.js typings for ipld__dag-json
 
-Typings are for version 9.0.1
+Typings are for version 10.0.1
 
 ## Library description:
 JS implementation of DAG-JSON

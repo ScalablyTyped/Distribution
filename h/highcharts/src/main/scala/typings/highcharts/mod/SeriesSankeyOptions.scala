@@ -11,6 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
      with PlotSankeyOptions {
   
   /**
+    * Not available
+    */
+  var borderRadius: Unit
+  
+  /**
     * (Highcharts) An array of data points for the series. For the `sankey`
     * series type, points can be given in the following way:
     *
@@ -23,6 +28,46 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * well. (see online documentation for example)
     */
   var data: js.UndefOr[js.Array[(js.Array[String | Double]) | SeriesSankeyPointOptionsObject]] = js.undefined
+  
+  /**
+    * Not available
+    */
+  var dataParser: Unit
+  
+  /**
+    * Not available
+    */
+  var dataURL: Unit
+  
+  /**
+    * Not available
+    */
+  var depth: Unit
+  
+  /**
+    * Not available
+    */
+  var edgeColor: Unit
+  
+  /**
+    * Not available
+    */
+  var edgeWidth: Unit
+  
+  /**
+    * Not available
+    */
+  var groupPadding: Unit
+  
+  /**
+    * Not available
+    */
+  var groupZPadding: Unit
+  
+  /**
+    * Not available
+    */
+  var grouping: Unit
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) An id for the series. This can
@@ -53,6 +98,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var mapData: js.UndefOr[GeoJSON | TopoJSON | js.Array[SeriesMapDataOptions]] = js.undefined
   
   /**
+    * Not available
+    */
+  var maxPointWidth: Unit
+  
+  /**
     * (Highcharts, Highstock, Highmaps, Gantt) The name of the series as shown
     * in the legend, tooltip etc.
     */
@@ -64,6 +114,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * but options can be applied here and linked by the `id`.
     */
   var nodes: js.UndefOr[js.Array[SeriesSankeyNodesOptionsObject]] = js.undefined
+  
+  /**
+    * Not available
+    */
+  var pointPadding: Unit
+  
+  /**
+    * Not available
+    */
+  var pointWidth: Unit
   
   /**
     * (Highcharts, Highstock) This option allows grouping series in a stacked
@@ -98,8 +158,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object SeriesSankeyOptions {
   
-  inline def apply(`type`: String | sankey): SeriesSankeyOptions = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(
+    borderRadius: Unit,
+    dataParser: Unit,
+    dataURL: Unit,
+    depth: Unit,
+    edgeColor: Unit,
+    edgeWidth: Unit,
+    groupPadding: Unit,
+    groupZPadding: Unit,
+    grouping: Unit,
+    maxPointWidth: Unit,
+    pointPadding: Unit,
+    pointWidth: Unit,
+    `type`: String | sankey
+  ): SeriesSankeyOptions = {
+    val __obj = js.Dynamic.literal(borderRadius = borderRadius.asInstanceOf[js.Any], dataParser = dataParser.asInstanceOf[js.Any], dataURL = dataURL.asInstanceOf[js.Any], depth = depth.asInstanceOf[js.Any], edgeColor = edgeColor.asInstanceOf[js.Any], edgeWidth = edgeWidth.asInstanceOf[js.Any], groupPadding = groupPadding.asInstanceOf[js.Any], groupZPadding = groupZPadding.asInstanceOf[js.Any], grouping = grouping.asInstanceOf[js.Any], maxPointWidth = maxPointWidth.asInstanceOf[js.Any], pointPadding = pointPadding.asInstanceOf[js.Any], pointWidth = pointWidth.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeriesSankeyOptions]
   }
@@ -107,11 +181,29 @@ object SeriesSankeyOptions {
   @scala.inline
   implicit open class MutableBuilder[Self <: SeriesSankeyOptions] (val x: Self) extends AnyVal {
     
+    inline def setBorderRadius(value: Unit): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
+    
     inline def setData(value: js.Array[(js.Array[String | Double]) | SeriesSankeyPointOptionsObject]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataParser(value: Unit): Self = StObject.set(x, "dataParser", value.asInstanceOf[js.Any])
+    
+    inline def setDataURL(value: Unit): Self = StObject.set(x, "dataURL", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     inline def setDataVarargs(value: ((js.Array[String | Double]) | SeriesSankeyPointOptionsObject)*): Self = StObject.set(x, "data", js.Array(value*))
+    
+    inline def setDepth(value: Unit): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
+    
+    inline def setEdgeColor(value: Unit): Self = StObject.set(x, "edgeColor", value.asInstanceOf[js.Any])
+    
+    inline def setEdgeWidth(value: Unit): Self = StObject.set(x, "edgeWidth", value.asInstanceOf[js.Any])
+    
+    inline def setGroupPadding(value: Unit): Self = StObject.set(x, "groupPadding", value.asInstanceOf[js.Any])
+    
+    inline def setGroupZPadding(value: Unit): Self = StObject.set(x, "groupZPadding", value.asInstanceOf[js.Any])
+    
+    inline def setGrouping(value: Unit): Self = StObject.set(x, "grouping", value.asInstanceOf[js.Any])
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
@@ -131,6 +223,8 @@ object SeriesSankeyOptions {
     
     inline def setMapDataVarargs(value: SeriesMapDataOptions*): Self = StObject.set(x, "mapData", js.Array(value*))
     
+    inline def setMaxPointWidth(value: Unit): Self = StObject.set(x, "maxPointWidth", value.asInstanceOf[js.Any])
+    
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
@@ -140,6 +234,10 @@ object SeriesSankeyOptions {
     inline def setNodesUndefined: Self = StObject.set(x, "nodes", js.undefined)
     
     inline def setNodesVarargs(value: SeriesSankeyNodesOptionsObject*): Self = StObject.set(x, "nodes", js.Array(value*))
+    
+    inline def setPointPadding(value: Unit): Self = StObject.set(x, "pointPadding", value.asInstanceOf[js.Any])
+    
+    inline def setPointWidth(value: Unit): Self = StObject.set(x, "pointWidth", value.asInstanceOf[js.Any])
     
     inline def setStack(value: Double | String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
     

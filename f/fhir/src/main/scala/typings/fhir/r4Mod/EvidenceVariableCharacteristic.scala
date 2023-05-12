@@ -22,6 +22,8 @@ trait EvidenceVariableCharacteristic
   
   var _groupMeasure: js.UndefOr[Element] = js.undefined
   
+  var _participantEffectiveDateTime: js.UndefOr[Element] = js.undefined
+  
   /**
     * Define members of the evidence element using Codes (such as condition, medication, or observation), Expressions ( using an expression language such as FHIRPath or CQL) or DataRequirements (such as Diabetes diagnosis onset in the last year).
     */
@@ -35,6 +37,11 @@ trait EvidenceVariableCharacteristic
   /**
     * Define members of the evidence element using Codes (such as condition, medication, or observation), Expressions ( using an expression language such as FHIRPath or CQL) or DataRequirements (such as Diabetes diagnosis onset in the last year).
     */
+  var definitionDataRequirement: js.UndefOr[DataRequirement] = js.undefined
+  
+  /**
+    * Define members of the evidence element using Codes (such as condition, medication, or observation), Expressions ( using an expression language such as FHIRPath or CQL) or DataRequirements (such as Diabetes diagnosis onset in the last year).
+    */
   var definitionExpression: js.UndefOr[Expression] = js.undefined
   
   /**
@@ -43,14 +50,14 @@ trait EvidenceVariableCharacteristic
   var definitionReference: js.UndefOr[Reference] = js.undefined
   
   /**
+    * Define members of the evidence element using Codes (such as condition, medication, or observation), Expressions ( using an expression language such as FHIRPath or CQL) or DataRequirements (such as Diabetes diagnosis onset in the last year).
+    */
+  var definitionTriggerDefinition: js.UndefOr[TriggerDefinition] = js.undefined
+  
+  /**
     * A short, natural language description of the characteristic that could be used to communicate the criteria to an end-user.
     */
   var description: js.UndefOr[String] = js.undefined
-  
-  /**
-    * Device used for determining characteristic.
-    */
-  var device: js.UndefOr[Reference] = js.undefined
   
   /**
     * When true, members with this characteristic are excluded from the element.
@@ -65,14 +72,34 @@ trait EvidenceVariableCharacteristic
   ] = js.undefined
   
   /**
-    * Method used for describing characteristic.
+    * Indicates what effective period the study covers.
     */
-  var method: js.UndefOr[CodeableConcept] = js.undefined
+  var participantEffectiveDateTime: js.UndefOr[String] = js.undefined
   
   /**
-    * Indicates duration, period, or point of observation from the participant's study entry.
+    * Indicates what effective period the study covers.
     */
-  var timeFromStart: js.UndefOr[EvidenceVariableCharacteristicTimeFromStart] = js.undefined
+  var participantEffectiveDuration: js.UndefOr[Duration] = js.undefined
+  
+  /**
+    * Indicates what effective period the study covers.
+    */
+  var participantEffectivePeriod: js.UndefOr[Period] = js.undefined
+  
+  /**
+    * Indicates what effective period the study covers.
+    */
+  var participantEffectiveTiming: js.UndefOr[Timing] = js.undefined
+  
+  /**
+    * Indicates duration from the participant's study entry.
+    */
+  var timeFromStart: js.UndefOr[Duration] = js.undefined
+  
+  /**
+    * Use UsageContext to define the members of the population, such as Age Ranges, Genders, Settings.
+    */
+  var usageContext: js.UndefOr[js.Array[UsageContext]] = js.undefined
 }
 object EvidenceVariableCharacteristic {
   
@@ -92,6 +119,10 @@ object EvidenceVariableCharacteristic {
     
     inline def setDefinitionCodeableConceptUndefined: Self = StObject.set(x, "definitionCodeableConcept", js.undefined)
     
+    inline def setDefinitionDataRequirement(value: DataRequirement): Self = StObject.set(x, "definitionDataRequirement", value.asInstanceOf[js.Any])
+    
+    inline def setDefinitionDataRequirementUndefined: Self = StObject.set(x, "definitionDataRequirement", js.undefined)
+    
     inline def setDefinitionExpression(value: Expression): Self = StObject.set(x, "definitionExpression", value.asInstanceOf[js.Any])
     
     inline def setDefinitionExpressionUndefined: Self = StObject.set(x, "definitionExpression", js.undefined)
@@ -100,13 +131,13 @@ object EvidenceVariableCharacteristic {
     
     inline def setDefinitionReferenceUndefined: Self = StObject.set(x, "definitionReference", js.undefined)
     
+    inline def setDefinitionTriggerDefinition(value: TriggerDefinition): Self = StObject.set(x, "definitionTriggerDefinition", value.asInstanceOf[js.Any])
+    
+    inline def setDefinitionTriggerDefinitionUndefined: Self = StObject.set(x, "definitionTriggerDefinition", js.undefined)
+    
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
-    
-    inline def setDevice(value: Reference): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
-    
-    inline def setDeviceUndefined: Self = StObject.set(x, "device", js.undefined)
     
     inline def setExclude(value: Boolean): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
     
@@ -116,13 +147,31 @@ object EvidenceVariableCharacteristic {
     
     inline def setGroupMeasureUndefined: Self = StObject.set(x, "groupMeasure", js.undefined)
     
-    inline def setMethod(value: CodeableConcept): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setParticipantEffectiveDateTime(value: String): Self = StObject.set(x, "participantEffectiveDateTime", value.asInstanceOf[js.Any])
     
-    inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+    inline def setParticipantEffectiveDateTimeUndefined: Self = StObject.set(x, "participantEffectiveDateTime", js.undefined)
     
-    inline def setTimeFromStart(value: EvidenceVariableCharacteristicTimeFromStart): Self = StObject.set(x, "timeFromStart", value.asInstanceOf[js.Any])
+    inline def setParticipantEffectiveDuration(value: Duration): Self = StObject.set(x, "participantEffectiveDuration", value.asInstanceOf[js.Any])
+    
+    inline def setParticipantEffectiveDurationUndefined: Self = StObject.set(x, "participantEffectiveDuration", js.undefined)
+    
+    inline def setParticipantEffectivePeriod(value: Period): Self = StObject.set(x, "participantEffectivePeriod", value.asInstanceOf[js.Any])
+    
+    inline def setParticipantEffectivePeriodUndefined: Self = StObject.set(x, "participantEffectivePeriod", js.undefined)
+    
+    inline def setParticipantEffectiveTiming(value: Timing): Self = StObject.set(x, "participantEffectiveTiming", value.asInstanceOf[js.Any])
+    
+    inline def setParticipantEffectiveTimingUndefined: Self = StObject.set(x, "participantEffectiveTiming", js.undefined)
+    
+    inline def setTimeFromStart(value: Duration): Self = StObject.set(x, "timeFromStart", value.asInstanceOf[js.Any])
     
     inline def setTimeFromStartUndefined: Self = StObject.set(x, "timeFromStart", js.undefined)
+    
+    inline def setUsageContext(value: js.Array[UsageContext]): Self = StObject.set(x, "usageContext", value.asInstanceOf[js.Any])
+    
+    inline def setUsageContextUndefined: Self = StObject.set(x, "usageContext", js.undefined)
+    
+    inline def setUsageContextVarargs(value: UsageContext*): Self = StObject.set(x, "usageContext", js.Array(value*))
     
     inline def set_definitionCanonical(value: Element): Self = StObject.set(x, "_definitionCanonical", value.asInstanceOf[js.Any])
     
@@ -139,5 +188,9 @@ object EvidenceVariableCharacteristic {
     inline def set_groupMeasure(value: Element): Self = StObject.set(x, "_groupMeasure", value.asInstanceOf[js.Any])
     
     inline def set_groupMeasureUndefined: Self = StObject.set(x, "_groupMeasure", js.undefined)
+    
+    inline def set_participantEffectiveDateTime(value: Element): Self = StObject.set(x, "_participantEffectiveDateTime", value.asInstanceOf[js.Any])
+    
+    inline def set_participantEffectiveDateTimeUndefined: Self = StObject.set(x, "_participantEffectiveDateTime", js.undefined)
   }
 }

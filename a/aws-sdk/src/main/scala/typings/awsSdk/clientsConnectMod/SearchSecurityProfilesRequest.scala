@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SearchSecurityProfilesRequest extends StObject {
   
   /**
-    * The identifier of the Amazon Connect instance. You can find the instanceId in the ARN of the instance.
+    * The identifier of the Amazon Connect instance. You can find the instance ID in the Amazon Resource Name (ARN) of the instance.
     */
   var InstanceId: typings.awsSdk.clientsConnectMod.InstanceId
   
@@ -22,7 +22,7 @@ trait SearchSecurityProfilesRequest extends StObject {
   var NextToken: js.UndefOr[NextToken2500] = js.undefined
   
   /**
-    * The search criteria to be used to return security profiles.   The currently supported value for FieldName: name  
+    * The search criteria to be used to return security profiles.   The name field support "contains" queries with a minimum of 2 characters and maximum of 25 characters. Any queries with character lengths outside of this range will throw invalid results.   The currently supported value for FieldName: name  
     */
   var SearchCriteria: js.UndefOr[SecurityProfileSearchCriteria] = js.undefined
   

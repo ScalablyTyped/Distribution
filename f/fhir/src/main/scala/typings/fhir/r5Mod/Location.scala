@@ -16,8 +16,6 @@ trait Location
   
   var _alias: js.UndefOr[js.Array[Element]] = js.undefined
   
-  var _availabilityExceptions: js.UndefOr[Element] = js.undefined
-  
   var _description: js.UndefOr[Element] = js.undefined
   
   var _mode: js.UndefOr[Element] = js.undefined
@@ -37,9 +35,15 @@ trait Location
   var alias: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
-    * A description of when the locations opening ours are different to normal, e.g. public holiday availability. Succinctly describing all possible exceptions to normal site availability as detailed in the opening hours Times.
+    * These could be such things as is wheelchair accessible.
     */
-  var availabilityExceptions: js.UndefOr[String] = js.undefined
+  var characteristic: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
+  
+  /**
+    * The address/telecom use code 'home' are not to be used. Note that these contacts are not the contact details of people who provide the service (that would be through PractitionerRole), these are official contacts for the Healthcare itself for specific purposes. E.g. Mailing Addresses, Billing Addresses, Contact numbers for Booking or Billing Enquiries, general web address, web address for online bookings etc.
+    * If this is empty (or the type of interest is empty), refer to the organization's contacts.
+    */
+  var contact: js.UndefOr[js.Array[ExtendedContactDetail]] = js.undefined
   
   /**
     * Description of the Location, which helps in finding or referencing the place.
@@ -52,10 +56,17 @@ trait Location
   var endpoint: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
+    * Physical form of the location, e.g. building, room, vehicle, road, virtual.
+    */
+  var form: js.UndefOr[CodeableConcept] = js.undefined
+  
+  /**
     * This type of information is commonly found published in directories and on websites informing customers when the facility is available.
     * Specific services within the location may have their own hours which could be shorter (or longer) than the locations hours.
+    * Systems may choose to render availability differently than it is exchanged on the interface. For example, rather than "Mon, Tue, Wed, Thur, Fri from 9am-12am; Mon, Tue, Wed, Thur, Fri from 1pm-5pm" as would be implied by two availableTime repetitions, an application could render this information as "Mon-Fri 9-12am and 1-5pm".
+    * The availableStartTime is the opening time, and the availableEndTime is the closing time.
     */
-  var hoursOfOperation: js.UndefOr[js.Array[LocationHoursOfOperation]] = js.undefined
+  var hoursOfOperation: js.UndefOr[js.Array[Availability]] = js.undefined
   
   /**
     * Unique code or number identifying the location to its users.
@@ -88,12 +99,7 @@ trait Location
   var partOf: js.UndefOr[Reference] = js.undefined
   
   /**
-    * Physical form of the location, e.g. building, room, vehicle, road.
-    */
-  var physicalType: js.UndefOr[CodeableConcept] = js.undefined
-  
-  /**
-    * The absolute geographic location of the Location, expressed using the WGS84 datum (This is the same co-ordinate system used in KML).
+    * To define a boundary shape for this location use the standard extension `[http://hl7.org/fhir/StructureDefinition/location-boundary-geojson](http://hl7.org/fhir/extensions/StructureDefinition-location-boundary-geojson.html)`, and search using the `contains` special search parameter.
     */
   var position: js.UndefOr[LocationPosition] = js.undefined
   
@@ -107,14 +113,17 @@ trait Location
   var status: js.UndefOr[active | suspended | inactive] = js.undefined
   
   /**
-    * The contact details of communication devices available at the location. This can include phone numbers, fax numbers, mobile numbers, email addresses and web sites.
-    */
-  var telecom: js.UndefOr[js.Array[ContactPoint]] = js.undefined
-  
-  /**
     * Indicates the type of function performed at the location.
     */
   var `type`: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
+  
+  /**
+    * There are two types of virtual meetings that often exist:
+    * * a persistent, virtual meeting room that can only be used for a single purpose at a time,
+    *  * and a dynamic virtual meeting room that is generated on demand for a specific purpose.
+    *  Implementers may consider using Appointment.virtualService for virtual meeting rooms that are generated on-demand.
+    */
+  var virtualService: js.UndefOr[js.Array[VirtualServiceDetail]] = js.undefined
 }
 object Location {
   
@@ -136,9 +145,17 @@ object Location {
     
     inline def setAliasVarargs(value: String*): Self = StObject.set(x, "alias", js.Array(value*))
     
-    inline def setAvailabilityExceptions(value: String): Self = StObject.set(x, "availabilityExceptions", value.asInstanceOf[js.Any])
+    inline def setCharacteristic(value: js.Array[CodeableConcept]): Self = StObject.set(x, "characteristic", value.asInstanceOf[js.Any])
     
-    inline def setAvailabilityExceptionsUndefined: Self = StObject.set(x, "availabilityExceptions", js.undefined)
+    inline def setCharacteristicUndefined: Self = StObject.set(x, "characteristic", js.undefined)
+    
+    inline def setCharacteristicVarargs(value: CodeableConcept*): Self = StObject.set(x, "characteristic", js.Array(value*))
+    
+    inline def setContact(value: js.Array[ExtendedContactDetail]): Self = StObject.set(x, "contact", value.asInstanceOf[js.Any])
+    
+    inline def setContactUndefined: Self = StObject.set(x, "contact", js.undefined)
+    
+    inline def setContactVarargs(value: ExtendedContactDetail*): Self = StObject.set(x, "contact", js.Array(value*))
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
@@ -150,11 +167,15 @@ object Location {
     
     inline def setEndpointVarargs(value: Reference*): Self = StObject.set(x, "endpoint", js.Array(value*))
     
-    inline def setHoursOfOperation(value: js.Array[LocationHoursOfOperation]): Self = StObject.set(x, "hoursOfOperation", value.asInstanceOf[js.Any])
+    inline def setForm(value: CodeableConcept): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
+    
+    inline def setFormUndefined: Self = StObject.set(x, "form", js.undefined)
+    
+    inline def setHoursOfOperation(value: js.Array[Availability]): Self = StObject.set(x, "hoursOfOperation", value.asInstanceOf[js.Any])
     
     inline def setHoursOfOperationUndefined: Self = StObject.set(x, "hoursOfOperation", js.undefined)
     
-    inline def setHoursOfOperationVarargs(value: LocationHoursOfOperation*): Self = StObject.set(x, "hoursOfOperation", js.Array(value*))
+    inline def setHoursOfOperationVarargs(value: Availability*): Self = StObject.set(x, "hoursOfOperation", js.Array(value*))
     
     inline def setIdentifier(value: js.Array[Identifier]): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
@@ -182,10 +203,6 @@ object Location {
     
     inline def setPartOfUndefined: Self = StObject.set(x, "partOf", js.undefined)
     
-    inline def setPhysicalType(value: CodeableConcept): Self = StObject.set(x, "physicalType", value.asInstanceOf[js.Any])
-    
-    inline def setPhysicalTypeUndefined: Self = StObject.set(x, "physicalType", js.undefined)
-    
     inline def setPosition(value: LocationPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
@@ -196,27 +213,23 @@ object Location {
     
     inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    inline def setTelecom(value: js.Array[ContactPoint]): Self = StObject.set(x, "telecom", value.asInstanceOf[js.Any])
-    
-    inline def setTelecomUndefined: Self = StObject.set(x, "telecom", js.undefined)
-    
-    inline def setTelecomVarargs(value: ContactPoint*): Self = StObject.set(x, "telecom", js.Array(value*))
-    
     inline def setType(value: js.Array[CodeableConcept]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     inline def setTypeVarargs(value: CodeableConcept*): Self = StObject.set(x, "type", js.Array(value*))
     
+    inline def setVirtualService(value: js.Array[VirtualServiceDetail]): Self = StObject.set(x, "virtualService", value.asInstanceOf[js.Any])
+    
+    inline def setVirtualServiceUndefined: Self = StObject.set(x, "virtualService", js.undefined)
+    
+    inline def setVirtualServiceVarargs(value: VirtualServiceDetail*): Self = StObject.set(x, "virtualService", js.Array(value*))
+    
     inline def set_alias(value: js.Array[Element]): Self = StObject.set(x, "_alias", value.asInstanceOf[js.Any])
     
     inline def set_aliasUndefined: Self = StObject.set(x, "_alias", js.undefined)
     
     inline def set_aliasVarargs(value: Element*): Self = StObject.set(x, "_alias", js.Array(value*))
-    
-    inline def set_availabilityExceptions(value: Element): Self = StObject.set(x, "_availabilityExceptions", value.asInstanceOf[js.Any])
-    
-    inline def set_availabilityExceptionsUndefined: Self = StObject.set(x, "_availabilityExceptions", js.undefined)
     
     inline def set_description(value: Element): Self = StObject.set(x, "_description", value.asInstanceOf[js.Any])
     

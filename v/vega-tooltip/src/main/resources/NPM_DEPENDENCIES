@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "vega-tooltip" : "0.28.0"
+      "vega-tooltip" : "0.32.0"
     }
   ],
   "test-dependencies" : [
     {
-      "vega-tooltip" : "0.28.0"
+      "vega-tooltip" : "0.32.0"
     }
   ],
   "compile-devDependencies" : [

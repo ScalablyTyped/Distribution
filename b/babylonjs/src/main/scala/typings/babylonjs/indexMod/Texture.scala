@@ -16,7 +16,7 @@ open class Texture protected ()
   /**
     * Instantiates a new texture.
     * This represents a texture in babylon. It can be easily loaded from a network, base64 or html input.
-    * @see https://doc.babylonjs.com/babylon101/materials#texture
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/materials/using/materials_introduction#texture
     * @param url defines the url of the picture to load as a texture
     * @param sceneOrEngine defines the scene or engine the texture will belong to
     * @param noMipmapOrOptions defines if the texture will require mip maps or not or set of all options to create the texture
@@ -68,7 +68,7 @@ object Texture {
   @js.native
   val ^ : js.Any = js.native
   
-  /** Bilinear is mag = linear and min = linear and mip = nearest */
+  /** Bilinear is mag = linear and min = linear and no mip */
   @JSImport("babylonjs/index", "Texture.BILINEAR_SAMPLINGMODE")
   @js.native
   val BILINEAR_SAMPLINGMODE: Double = js.native
@@ -242,7 +242,7 @@ object Texture {
   @js.native
   val NEAREST_NEAREST_MIPNEAREST: Double = js.native
   
-  /** nearest is mag = nearest and min = nearest and mip = linear */
+  /** nearest is mag = nearest and min = nearest and no mip */
   @JSImport("babylonjs/index", "Texture.NEAREST_SAMPLINGMODE")
   @js.native
   val NEAREST_SAMPLINGMODE: Double = js.native
@@ -343,4 +343,10 @@ object Texture {
     * @internal
     */
   inline def _CubeTextureParser(jsonTexture: Any, scene: typings.babylonjs.sceneMod.Scene, rootUrl: String): typings.babylonjs.materialsTexturesCubeTextureMod.CubeTexture = (^.asInstanceOf[js.Dynamic].applyDynamic("_CubeTextureParser")(jsonTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.materialsTexturesCubeTextureMod.CubeTexture]
+  
+  /** @internal */
+  @JSImport("babylonjs/index", "Texture._SerializeInternalTextureUniqueId")
+  @js.native
+  def _SerializeInternalTextureUniqueId: Boolean = js.native
+  inline def _SerializeInternalTextureUniqueId_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_SerializeInternalTextureUniqueId")(x.asInstanceOf[js.Any])
 }

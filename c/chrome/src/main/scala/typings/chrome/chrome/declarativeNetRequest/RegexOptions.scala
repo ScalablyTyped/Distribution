@@ -11,11 +11,11 @@ trait RegexOptions extends StObject {
     */
   var isCaseSensitive: js.UndefOr[Boolean] = js.undefined
   
-  /** The regular expresson to check. */
+  /** The regular expression to check. */
   var regex: String
   
   /** Whether the regex specified requires capturing.
-    * Capturing is only required for redirect rules which specify a regexSubstition action.
+    * Capturing is only required for redirect rules which specify a regexSubstitution action.
     * The default is false.
     */
   var requireCapturing: js.UndefOr[Boolean] = js.undefined

@@ -67,7 +67,7 @@ trait ImmunizationRecommendationRecommendation
   var supportingPatientInformation: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
-    * A given instance of the .recommendation backbone element should correspond to a single recommended administration but sometimes that administration (eg. MMR) will encompass multiple diseases, thus the targetDisease element is allowed to repeat.
+    * A given instance of the .recommendation backbone element should correspond to a single recommended administration but sometimes that administration (e.g. MMR) will encompass multiple diseases, thus the targetDisease element is allowed to repeat.
     */
   var targetDisease: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   

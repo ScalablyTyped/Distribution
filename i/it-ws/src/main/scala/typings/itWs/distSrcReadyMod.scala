@@ -11,5 +11,5 @@ object distSrcReadyMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(socket: WebSocket): js.UndefOr[js.Promise[Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(socket.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Promise[Unit]]]
+  inline def default(socket: WebSocket): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(socket.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
 }

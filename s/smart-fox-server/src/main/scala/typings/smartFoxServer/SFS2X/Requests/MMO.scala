@@ -12,19 +12,19 @@ object MMO {
   
   trait MMORoomSettings extends StObject {
     
-    /** @type {Entities.Data.Vec3D} Defines the Area of Interest (AoI) for the MMORoom. */
+    /** Defines the Area of Interest (AoI) for the MMORoom. */
     var defaultAOI: Vec3D
     
-    /** @type {MapLimits} Defines the limits of the virtual environment represented by the MMORoom. */
+    /** Defines the limits of the virtual environment represented by the MMORoom. */
     var mapLimits: MapLimits
     
-    /** @type {number} Configures the speed at which the SFSEvent.PROXIMITY_LIST_UPDATE event is sent by the server. */
+    /** Configures the speed at which the SFSEvent.PROXIMITY_LIST_UPDATE event is sent by the server. */
     var proximityListUpdateMillis: Double
     
-    /** @type {boolean} Sets if the users entry points in the current user's Area of Interest should be transmitted in the SFSEvent.PROXIMITY_LIST_UPDATE event. */
+    /** Sets if the users entry points in the current user's Area of Interest should be transmitted in the SFSEvent.PROXIMITY_LIST_UPDATE event. */
     var sendAOIEntryPoint: Boolean
     
-    /** @type {number} Defines the time limit before a user without a physical position set inside the MMORoom is kicked from the Room. */
+    /** Defines the time limit before a user without a physical position set inside the MMORoom is kicked from the Room. */
     var userMaxLimboSeconds: Double
   }
   object MMORoomSettings {
@@ -57,10 +57,10 @@ object MMO {
   
   trait MapLimits extends StObject {
     
-    /** @type {Entities.Data.Vec3D} Returns the higher coordinates limit of the virtual environment along the X,Y,Z axes. */
+    /** Returns the higher coordinates limit of the virtual environment along the X,Y,Z axes. */
     var higherLimit: Vec3D
     
-    /** @type {Entities.Data.Vec3D} Returns the lower coordinates limit of the virtual environment along the X,Y,Z axes. */
+    /** Returns the lower coordinates limit of the virtual environment along the X,Y,Z axes. */
     var lowerLimit: Vec3D
   }
   object MapLimits {

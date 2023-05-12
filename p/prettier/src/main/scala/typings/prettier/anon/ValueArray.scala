@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ValueArray extends StObject {
   
-  var value: js.Array[Boolean]
+  var value: js.Array[String]
 }
 object ValueArray {
   
-  inline def apply(value: js.Array[Boolean]): ValueArray = {
+  inline def apply(value: js.Array[String]): ValueArray = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValueArray]
   }
@@ -18,8 +18,8 @@ object ValueArray {
   @scala.inline
   implicit open class MutableBuilder[Self <: ValueArray] (val x: Self) extends AnyVal {
     
-    inline def setValue(value: js.Array[Boolean]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Array[String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    inline def setValueVarargs(value: Boolean*): Self = StObject.set(x, "value", js.Array(value*))
+    inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value*))
   }
 }

@@ -12,10 +12,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Class_HttpClient")
 @js.native
 /**
-  * 
+  *
   * @brief HttpClient 构造函数，创建一个新的HttpClient对象
-  * 
-  * 
+  *
+  *
   */
 open class ClassHttpClient ()
   extends StObject

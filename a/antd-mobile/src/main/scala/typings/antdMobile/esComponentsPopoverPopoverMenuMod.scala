@@ -1,6 +1,6 @@
 package typings.antdMobile
 
-import typings.antdMobile.anon.CSSPropertiesPartialRecorAlignmentBaseline
+import typings.antdMobile.anon.CSSPropertiesPartialRecorArrowsize
 import typings.antdMobile.anon.OmitPopoverPropscontentac
 import typings.antdMobile.antdMobileStrings.`additions removals`
 import typings.antdMobile.antdMobileStrings.`additions text`
@@ -231,7 +231,7 @@ object esComponentsPopoverPopoverMenuMod {
     
     var stopPropagation: js.UndefOr[js.Array[PropagationEvent]] = js.undefined
     
-    var style: js.UndefOr[CSSPropertiesPartialRecorAlignmentBaseline] = js.undefined
+    var style: js.UndefOr[CSSPropertiesPartialRecorArrowsize] = js.undefined
     
     var tabIndex: js.UndefOr[Double] = js.undefined
     
@@ -491,7 +491,7 @@ object esComponentsPopoverPopoverMenuMod {
       
       inline def setStopPropagationVarargs(value: PropagationEvent*): Self = StObject.set(x, "stopPropagation", js.Array(value*))
       
-      inline def setStyle(value: CSSPropertiesPartialRecorAlignmentBaseline): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSPropertiesPartialRecorArrowsize): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       

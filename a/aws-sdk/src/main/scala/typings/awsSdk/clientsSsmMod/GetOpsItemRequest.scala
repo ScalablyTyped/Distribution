@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetOpsItemRequest extends StObject {
   
   /**
+    * The OpsItem Amazon Resource Name (ARN).
+    */
+  var OpsItemArn: js.UndefOr[typings.awsSdk.clientsSsmMod.OpsItemArn] = js.undefined
+  
+  /**
     * The ID of the OpsItem that you want to get.
     */
   var OpsItemId: typings.awsSdk.clientsSsmMod.OpsItemId
@@ -20,6 +25,10 @@ object GetOpsItemRequest {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: GetOpsItemRequest] (val x: Self) extends AnyVal {
+    
+    inline def setOpsItemArn(value: OpsItemArn): Self = StObject.set(x, "OpsItemArn", value.asInstanceOf[js.Any])
+    
+    inline def setOpsItemArnUndefined: Self = StObject.set(x, "OpsItemArn", js.undefined)
     
     inline def setOpsItemId(value: OpsItemId): Self = StObject.set(x, "OpsItemId", value.asInstanceOf[js.Any])
   }

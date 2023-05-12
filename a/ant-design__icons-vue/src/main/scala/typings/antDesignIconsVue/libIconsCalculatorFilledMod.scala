@@ -16,7 +16,7 @@ object libIconsCalculatorFilledMod extends Shortcut {
   @js.native
   trait CalculatorFilledIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_CalculatorFilledIconType: String = js.native

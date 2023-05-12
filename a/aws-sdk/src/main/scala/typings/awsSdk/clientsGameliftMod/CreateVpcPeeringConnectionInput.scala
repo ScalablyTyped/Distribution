@@ -17,7 +17,7 @@ trait CreateVpcPeeringConnectionInput extends StObject {
   var PeerVpcAwsAccountId: NonZeroAndMaxString
   
   /**
-    * A unique identifier for a VPC with resources to be accessed by your GameLift fleet. The VPC must be in the same Region as your fleet. To look up a VPC ID, use the VPC Dashboard in the Amazon Web Services Management Console. Learn more about VPC peering in VPC Peering with GameLift Fleets.
+    * A unique identifier for a VPC with resources to be accessed by your Amazon GameLift fleet. The VPC must be in the same Region as your fleet. To look up a VPC ID, use the VPC Dashboard in the Amazon Web Services Management Console. Learn more about VPC peering in VPC Peering with Amazon GameLift Fleets.
     */
   var PeerVpcId: NonZeroAndMaxString
 }

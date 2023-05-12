@@ -28,6 +28,10 @@ object ecmarkdownStrings {
   inline def contents: contents = "contents".asInstanceOf[contents]
   
   @js.native
+  sealed trait `double-brackets` extends StObject
+  inline def `double-brackets`: `double-brackets` = "double-brackets".asInstanceOf[`double-brackets`]
+  
+  @js.native
   sealed trait linebreak extends StObject
   inline def linebreak: linebreak = "linebreak".asInstanceOf[linebreak]
   

@@ -16,7 +16,7 @@ object mod {
     def this(props: LazyLogProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: LazyLogProps, context: Any) = this()
   }
@@ -40,7 +40,7 @@ object mod {
     def this(props: ScrollFollowProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: ScrollFollowProps, context: Any) = this()
   }

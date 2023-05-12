@@ -1,12 +1,12 @@
 package typings.wordpressBlocks.anon
 
-import typings.wordpressBlocks.mod.AxialDirection
-import typings.wordpressBlocks.mod.CSSDirection
+import typings.wordpressBlocks.AxialDirection
+import typings.wordpressBlocks.CSSDirection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Partial<@wordpress/blocks.@wordpress/blocks.SpacingProps> */
+/* Inlined std.Partial<@wordpress/blocks.SpacingProps> */
 trait PartialSpacingProps extends StObject {
   
   var blockGap: js.UndefOr[Boolean | js.Array[AxialDirection]] = js.undefined

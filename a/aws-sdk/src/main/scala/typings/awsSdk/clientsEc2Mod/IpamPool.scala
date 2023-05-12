@@ -52,7 +52,7 @@ trait IpamPool extends StObject {
   var IpamArn: js.UndefOr[ResourceArn] = js.undefined
   
   /**
-    * The ARN of the IPAM pool.
+    * The Amazon Resource Name (ARN) of the IPAM pool.
     */
   var IpamPoolArn: js.UndefOr[ResourceArn] = js.undefined
   
@@ -90,6 +90,11 @@ trait IpamPool extends StObject {
     * The depth of pools in your IPAM pool. The pool depth quota is 10. For more information, see Quotas in IPAM in the Amazon VPC IPAM User Guide. 
     */
   var PoolDepth: js.UndefOr[Integer] = js.undefined
+  
+  /**
+    * The IP address source for pools in the public scope. Only used for provisioning IP address CIDRs to pools in the public scope. Default is BYOIP. For more information, see Create IPv6 pools in the Amazon VPC IPAM User Guide. By default, you can add only one Amazon-provided IPv6 CIDR block to a top-level IPv6 pool. For information on increasing the default limit, see  Quotas for your IPAM in the Amazon VPC IPAM User Guide.
+    */
+  var PublicIpSource: js.UndefOr[IpamPoolPublicIpSource] = js.undefined
   
   /**
     * Determines if a pool is publicly advertisable. This option is not available for pools with AddressFamily set to ipv4.
@@ -195,6 +200,10 @@ object IpamPool {
     inline def setPoolDepth(value: Integer): Self = StObject.set(x, "PoolDepth", value.asInstanceOf[js.Any])
     
     inline def setPoolDepthUndefined: Self = StObject.set(x, "PoolDepth", js.undefined)
+    
+    inline def setPublicIpSource(value: IpamPoolPublicIpSource): Self = StObject.set(x, "PublicIpSource", value.asInstanceOf[js.Any])
+    
+    inline def setPublicIpSourceUndefined: Self = StObject.set(x, "PublicIpSource", js.undefined)
     
     inline def setPubliclyAdvertisable(value: Boolean): Self = StObject.set(x, "PubliclyAdvertisable", value.asInstanceOf[js.Any])
     

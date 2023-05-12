@@ -6,22 +6,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Bottom extends StObject {
   
-  var bottom: js.UndefOr[Double] = js.undefined
+  var bottom: Double
   
-  var left: js.UndefOr[Double] = js.undefined
+  var left: Double
   
-  var right: js.UndefOr[Double] = js.undefined
+  var right: Double
   
-  var top: js.UndefOr[Double] = js.undefined
-  
-  var x: js.UndefOr[Double] = js.undefined
-  
-  var y: js.UndefOr[Double] = js.undefined
+  var top: Double
 }
 object Bottom {
   
-  inline def apply(): Bottom = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(bottom: Double, left: Double, right: Double, top: Double): Bottom = {
+    val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
     __obj.asInstanceOf[Bottom]
   }
   
@@ -30,26 +26,10 @@ object Bottom {
     
     inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     
-    inline def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
-    
     inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
-    
-    inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
     
     inline def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
-    inline def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
-    
     inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
-    
-    inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
-    
-    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
-    
-    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
-    
-    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
-    
-    inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
   }
 }

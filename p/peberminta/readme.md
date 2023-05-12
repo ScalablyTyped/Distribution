@@ -1,7 +1,7 @@
 
 # Scala.js typings for peberminta
 
-Typings are for version 0.8.0
+Typings are for version 0.9.0
 
 ## Library description:
 Simple, transparent parser combinators toolkit that supports any tokens

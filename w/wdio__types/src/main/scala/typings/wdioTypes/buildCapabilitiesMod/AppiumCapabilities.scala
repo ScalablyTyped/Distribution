@@ -6,43 +6,135 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AppiumCapabilities extends StObject {
   
-  var app: js.UndefOr[String] = js.undefined
+  /**
+    * The absolute local path or remote http URL to a .ipa file (IOS), .app folder (IOS Simulator), .apk file (Android)
+    * or [.apks file (Android App Bundle)](https://appium.github.io/appium.io/docs/en/writing-running-appium/android/android-appbundle/index.html),
+    * or a .zip file containing one of these.
+    *
+    * Appium will attempt to install this app binary on the appropriate device first.
+    * Note that this capability is not required for Android if you specify appPackage and appActivity capabilities.
+    * UiAutomator2 and XCUITest allow to start the session without app or appPackage.
+    */
+  @JSName("appium:app")
+  var appiumColonapp: js.UndefOr[String] = js.undefined
   
-  var autoWebview: js.UndefOr[Boolean] = js.undefined
+  /**
+    * The id of the app to be tested. eg: 'com.android.chrome'.
+    */
+  @JSName("appium:appPackage")
+  var appiumColonappPackage: js.UndefOr[String] = js.undefined
   
-  var automationName: js.UndefOr[String] = js.undefined
+  /**
+    * Windows-specific capability: Please see https://github.com/appium/appium-windows-driver#usage
+    * This is a hexadecimal handle of an existing application top level window to attach to. Either this
+    * capability or 'appium:app' must be provided on session startup.
+    */
+  @JSName("appium:appTopLevelWindow")
+  var appiumColonappTopLevelWindow: js.UndefOr[String] = js.undefined
   
-  var deviceName: js.UndefOr[String] = js.undefined
+  @JSName("appium:appWaitActivity")
+  var appiumColonappWaitActivity: js.UndefOr[String] = js.undefined
   
-  var directConnectHost: js.UndefOr[String] = js.undefined
+  @JSName("appium:autoWebview")
+  var appiumColonautoWebview: js.UndefOr[Boolean] = js.undefined
   
-  var directConnectPath: js.UndefOr[String] = js.undefined
+  /**
+    * Which automation engine to use.
+    *
+    * Acceptable values:
+    * + 'Appium' (default)
+    * + 'UiAutomator2' for Android
+    * + 'Espresso' for Android
+    * + 'UiAutomator1' for Android
+    * + 'XCUITest' or 'Instruments' for iOS
+    * + 'YouiEngine' for application built with You.i Engine
+    */
+  @JSName("appium:automationName")
+  var appiumColonautomationName: js.UndefOr[String] = js.undefined
   
-  var directConnectPort: js.UndefOr[Double] = js.undefined
+  /**
+    * The kind of mobile device or emulator to use, for each platform, it accept different kind of values.
+    *
+    * ### For iOS, it could be:
+    *
+    * + Simulator name, eg: 'iPhone Simulator', 'iPad Simulator', 'iPhone Retina 4-inch'.
+    * + Instruments name, which comes from 'instruments -s devices' command.
+    * + xctrace device name, which comes from 'xcrun xctrace list devices' command. (since Xcode 12)
+    *
+    * ### For Android, this capability is currently ignored, though it remains required.
+    * Note: This document is written with appium 1.22.1 release, this behavior may changed later.
+    */
+  @JSName("appium:deviceName")
+  var appiumColondeviceName: js.UndefOr[String] = js.undefined
   
-  var directConnectProtocol: js.UndefOr[String] = js.undefined
+  @JSName("appium:directConnectHost")
+  var appiumColondirectConnectHost: js.UndefOr[String] = js.undefined
   
-  var enablePerformanceLogging: js.UndefOr[Boolean] = js.undefined
+  @JSName("appium:directConnectPath")
+  var appiumColondirectConnectPath: js.UndefOr[String] = js.undefined
   
-  var eventTimings: js.UndefOr[Boolean] = js.undefined
+  @JSName("appium:directConnectPort")
+  var appiumColondirectConnectPort: js.UndefOr[Double] = js.undefined
   
-  var fullReset: js.UndefOr[Boolean] = js.undefined
+  /**
+    * Users as directConnect feature by the server
+    * https://appiumpro.com/editions/86-connecting-directly-to-appium-hosts-in-distributed-environments
+    */
+  @JSName("appium:directConnectProtocol")
+  var appiumColondirectConnectProtocol: js.UndefOr[String] = js.undefined
   
-  var language: js.UndefOr[String] = js.undefined
+  @JSName("appium:enablePerformanceLogging")
+  var appiumColonenablePerformanceLogging: js.UndefOr[Boolean] = js.undefined
   
-  var locale: js.UndefOr[String] = js.undefined
+  @JSName("appium:eventTimings")
+  var appiumColoneventTimings: js.UndefOr[Boolean] = js.undefined
   
-  var newCommandTimeout: js.UndefOr[Double] = js.undefined
+  @JSName("appium:fullReset")
+  var appiumColonfullReset: js.UndefOr[Boolean] = js.undefined
   
-  var noReset: js.UndefOr[Boolean] = js.undefined
+  @JSName("appium:language")
+  var appiumColonlanguage: js.UndefOr[String] = js.undefined
   
-  var orientation: js.UndefOr[String] = js.undefined
+  @JSName("appium:locale")
+  var appiumColonlocale: js.UndefOr[String] = js.undefined
   
-  var platformVersion: js.UndefOr[String] = js.undefined
+  @JSName("appium:nativeWebTap")
+  var appiumColonnativeWebTap: js.UndefOr[Boolean] = js.undefined
   
-  var printPageSourceOnFindFailure: js.UndefOr[Boolean] = js.undefined
+  @JSName("appium:newCommandTimeout")
+  var appiumColonnewCommandTimeout: js.UndefOr[Double] = js.undefined
   
-  var udid: js.UndefOr[String] = js.undefined
+  @JSName("appium:noReset")
+  var appiumColonnoReset: js.UndefOr[Boolean] = js.undefined
+  
+  @JSName("appium:orientation")
+  var appiumColonorientation: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Which mobile OS platform to use.
+    *
+    * Acceptable values:
+    * + 'iOS'
+    * + 'Android'
+    * + 'FirefoxOS'
+    */
+  @JSName("appium:platformName")
+  var appiumColonplatformName: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Expected mobile OS version, eg: '7.1', '4.4' etc.
+    */
+  @JSName("appium:platformVersion")
+  var appiumColonplatformVersion: js.UndefOr[String] = js.undefined
+  
+  @JSName("appium:printPageSourceOnFindFailure")
+  var appiumColonprintPageSourceOnFindFailure: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * iOS Unique Device Identifier
+    */
+  @JSName("appium:udid")
+  var appiumColonudid: js.UndefOr[String] = js.undefined
 }
 object AppiumCapabilities {
   
@@ -54,80 +146,100 @@ object AppiumCapabilities {
   @scala.inline
   implicit open class MutableBuilder[Self <: AppiumCapabilities] (val x: Self) extends AnyVal {
     
-    inline def setApp(value: String): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
+    inline def setAppiumColonapp(value: String): Self = StObject.set(x, "appium:app", value.asInstanceOf[js.Any])
     
-    inline def setAppUndefined: Self = StObject.set(x, "app", js.undefined)
+    inline def setAppiumColonappPackage(value: String): Self = StObject.set(x, "appium:appPackage", value.asInstanceOf[js.Any])
     
-    inline def setAutoWebview(value: Boolean): Self = StObject.set(x, "autoWebview", value.asInstanceOf[js.Any])
+    inline def setAppiumColonappPackageUndefined: Self = StObject.set(x, "appium:appPackage", js.undefined)
     
-    inline def setAutoWebviewUndefined: Self = StObject.set(x, "autoWebview", js.undefined)
+    inline def setAppiumColonappTopLevelWindow(value: String): Self = StObject.set(x, "appium:appTopLevelWindow", value.asInstanceOf[js.Any])
     
-    inline def setAutomationName(value: String): Self = StObject.set(x, "automationName", value.asInstanceOf[js.Any])
+    inline def setAppiumColonappTopLevelWindowUndefined: Self = StObject.set(x, "appium:appTopLevelWindow", js.undefined)
     
-    inline def setAutomationNameUndefined: Self = StObject.set(x, "automationName", js.undefined)
+    inline def setAppiumColonappUndefined: Self = StObject.set(x, "appium:app", js.undefined)
     
-    inline def setDeviceName(value: String): Self = StObject.set(x, "deviceName", value.asInstanceOf[js.Any])
+    inline def setAppiumColonappWaitActivity(value: String): Self = StObject.set(x, "appium:appWaitActivity", value.asInstanceOf[js.Any])
     
-    inline def setDeviceNameUndefined: Self = StObject.set(x, "deviceName", js.undefined)
+    inline def setAppiumColonappWaitActivityUndefined: Self = StObject.set(x, "appium:appWaitActivity", js.undefined)
     
-    inline def setDirectConnectHost(value: String): Self = StObject.set(x, "directConnectHost", value.asInstanceOf[js.Any])
+    inline def setAppiumColonautoWebview(value: Boolean): Self = StObject.set(x, "appium:autoWebview", value.asInstanceOf[js.Any])
     
-    inline def setDirectConnectHostUndefined: Self = StObject.set(x, "directConnectHost", js.undefined)
+    inline def setAppiumColonautoWebviewUndefined: Self = StObject.set(x, "appium:autoWebview", js.undefined)
     
-    inline def setDirectConnectPath(value: String): Self = StObject.set(x, "directConnectPath", value.asInstanceOf[js.Any])
+    inline def setAppiumColonautomationName(value: String): Self = StObject.set(x, "appium:automationName", value.asInstanceOf[js.Any])
     
-    inline def setDirectConnectPathUndefined: Self = StObject.set(x, "directConnectPath", js.undefined)
+    inline def setAppiumColonautomationNameUndefined: Self = StObject.set(x, "appium:automationName", js.undefined)
     
-    inline def setDirectConnectPort(value: Double): Self = StObject.set(x, "directConnectPort", value.asInstanceOf[js.Any])
+    inline def setAppiumColondeviceName(value: String): Self = StObject.set(x, "appium:deviceName", value.asInstanceOf[js.Any])
     
-    inline def setDirectConnectPortUndefined: Self = StObject.set(x, "directConnectPort", js.undefined)
+    inline def setAppiumColondeviceNameUndefined: Self = StObject.set(x, "appium:deviceName", js.undefined)
     
-    inline def setDirectConnectProtocol(value: String): Self = StObject.set(x, "directConnectProtocol", value.asInstanceOf[js.Any])
+    inline def setAppiumColondirectConnectHost(value: String): Self = StObject.set(x, "appium:directConnectHost", value.asInstanceOf[js.Any])
     
-    inline def setDirectConnectProtocolUndefined: Self = StObject.set(x, "directConnectProtocol", js.undefined)
+    inline def setAppiumColondirectConnectHostUndefined: Self = StObject.set(x, "appium:directConnectHost", js.undefined)
     
-    inline def setEnablePerformanceLogging(value: Boolean): Self = StObject.set(x, "enablePerformanceLogging", value.asInstanceOf[js.Any])
+    inline def setAppiumColondirectConnectPath(value: String): Self = StObject.set(x, "appium:directConnectPath", value.asInstanceOf[js.Any])
     
-    inline def setEnablePerformanceLoggingUndefined: Self = StObject.set(x, "enablePerformanceLogging", js.undefined)
+    inline def setAppiumColondirectConnectPathUndefined: Self = StObject.set(x, "appium:directConnectPath", js.undefined)
     
-    inline def setEventTimings(value: Boolean): Self = StObject.set(x, "eventTimings", value.asInstanceOf[js.Any])
+    inline def setAppiumColondirectConnectPort(value: Double): Self = StObject.set(x, "appium:directConnectPort", value.asInstanceOf[js.Any])
     
-    inline def setEventTimingsUndefined: Self = StObject.set(x, "eventTimings", js.undefined)
+    inline def setAppiumColondirectConnectPortUndefined: Self = StObject.set(x, "appium:directConnectPort", js.undefined)
     
-    inline def setFullReset(value: Boolean): Self = StObject.set(x, "fullReset", value.asInstanceOf[js.Any])
+    inline def setAppiumColondirectConnectProtocol(value: String): Self = StObject.set(x, "appium:directConnectProtocol", value.asInstanceOf[js.Any])
     
-    inline def setFullResetUndefined: Self = StObject.set(x, "fullReset", js.undefined)
+    inline def setAppiumColondirectConnectProtocolUndefined: Self = StObject.set(x, "appium:directConnectProtocol", js.undefined)
     
-    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setAppiumColonenablePerformanceLogging(value: Boolean): Self = StObject.set(x, "appium:enablePerformanceLogging", value.asInstanceOf[js.Any])
     
-    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    inline def setAppiumColonenablePerformanceLoggingUndefined: Self = StObject.set(x, "appium:enablePerformanceLogging", js.undefined)
     
-    inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setAppiumColoneventTimings(value: Boolean): Self = StObject.set(x, "appium:eventTimings", value.asInstanceOf[js.Any])
     
-    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    inline def setAppiumColoneventTimingsUndefined: Self = StObject.set(x, "appium:eventTimings", js.undefined)
     
-    inline def setNewCommandTimeout(value: Double): Self = StObject.set(x, "newCommandTimeout", value.asInstanceOf[js.Any])
+    inline def setAppiumColonfullReset(value: Boolean): Self = StObject.set(x, "appium:fullReset", value.asInstanceOf[js.Any])
     
-    inline def setNewCommandTimeoutUndefined: Self = StObject.set(x, "newCommandTimeout", js.undefined)
+    inline def setAppiumColonfullResetUndefined: Self = StObject.set(x, "appium:fullReset", js.undefined)
     
-    inline def setNoReset(value: Boolean): Self = StObject.set(x, "noReset", value.asInstanceOf[js.Any])
+    inline def setAppiumColonlanguage(value: String): Self = StObject.set(x, "appium:language", value.asInstanceOf[js.Any])
     
-    inline def setNoResetUndefined: Self = StObject.set(x, "noReset", js.undefined)
+    inline def setAppiumColonlanguageUndefined: Self = StObject.set(x, "appium:language", js.undefined)
     
-    inline def setOrientation(value: String): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    inline def setAppiumColonlocale(value: String): Self = StObject.set(x, "appium:locale", value.asInstanceOf[js.Any])
     
-    inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
+    inline def setAppiumColonlocaleUndefined: Self = StObject.set(x, "appium:locale", js.undefined)
     
-    inline def setPlatformVersion(value: String): Self = StObject.set(x, "platformVersion", value.asInstanceOf[js.Any])
+    inline def setAppiumColonnativeWebTap(value: Boolean): Self = StObject.set(x, "appium:nativeWebTap", value.asInstanceOf[js.Any])
     
-    inline def setPlatformVersionUndefined: Self = StObject.set(x, "platformVersion", js.undefined)
+    inline def setAppiumColonnativeWebTapUndefined: Self = StObject.set(x, "appium:nativeWebTap", js.undefined)
     
-    inline def setPrintPageSourceOnFindFailure(value: Boolean): Self = StObject.set(x, "printPageSourceOnFindFailure", value.asInstanceOf[js.Any])
+    inline def setAppiumColonnewCommandTimeout(value: Double): Self = StObject.set(x, "appium:newCommandTimeout", value.asInstanceOf[js.Any])
     
-    inline def setPrintPageSourceOnFindFailureUndefined: Self = StObject.set(x, "printPageSourceOnFindFailure", js.undefined)
+    inline def setAppiumColonnewCommandTimeoutUndefined: Self = StObject.set(x, "appium:newCommandTimeout", js.undefined)
     
-    inline def setUdid(value: String): Self = StObject.set(x, "udid", value.asInstanceOf[js.Any])
+    inline def setAppiumColonnoReset(value: Boolean): Self = StObject.set(x, "appium:noReset", value.asInstanceOf[js.Any])
     
-    inline def setUdidUndefined: Self = StObject.set(x, "udid", js.undefined)
+    inline def setAppiumColonnoResetUndefined: Self = StObject.set(x, "appium:noReset", js.undefined)
+    
+    inline def setAppiumColonorientation(value: String): Self = StObject.set(x, "appium:orientation", value.asInstanceOf[js.Any])
+    
+    inline def setAppiumColonorientationUndefined: Self = StObject.set(x, "appium:orientation", js.undefined)
+    
+    inline def setAppiumColonplatformName(value: String): Self = StObject.set(x, "appium:platformName", value.asInstanceOf[js.Any])
+    
+    inline def setAppiumColonplatformNameUndefined: Self = StObject.set(x, "appium:platformName", js.undefined)
+    
+    inline def setAppiumColonplatformVersion(value: String): Self = StObject.set(x, "appium:platformVersion", value.asInstanceOf[js.Any])
+    
+    inline def setAppiumColonplatformVersionUndefined: Self = StObject.set(x, "appium:platformVersion", js.undefined)
+    
+    inline def setAppiumColonprintPageSourceOnFindFailure(value: Boolean): Self = StObject.set(x, "appium:printPageSourceOnFindFailure", value.asInstanceOf[js.Any])
+    
+    inline def setAppiumColonprintPageSourceOnFindFailureUndefined: Self = StObject.set(x, "appium:printPageSourceOnFindFailure", js.undefined)
+    
+    inline def setAppiumColonudid(value: String): Self = StObject.set(x, "appium:udid", value.asInstanceOf[js.Any])
+    
+    inline def setAppiumColonudidUndefined: Self = StObject.set(x, "appium:udid", js.undefined)
   }
 }

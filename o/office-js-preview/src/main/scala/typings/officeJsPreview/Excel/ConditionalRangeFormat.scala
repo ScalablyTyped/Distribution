@@ -33,8 +33,7 @@ trait ConditionalRangeFormat
     * Remove the format properties from a conditional format rule. This creates a rule with no format settings.
     *
     * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
+    * [Api set: ExcelApi 1.17]
     */
   def clearFormat(): Unit = js.native
   

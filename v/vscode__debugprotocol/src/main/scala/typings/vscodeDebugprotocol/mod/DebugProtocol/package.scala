@@ -21,7 +21,7 @@ type DisconnectResponse = Response
 type GotoResponse = Response
 
 /** Event message for 'initialized' event type.
-		This event indicates that the debug adapter is ready to accept configuration requests (e.g. SetBreakpointsRequest, SetExceptionBreakpointsRequest).
+		This event indicates that the debug adapter is ready to accept configuration requests (e.g. `setBreakpoints`, `setExceptionBreakpoints`).
 		A debug adapter is expected to send this event when it is ready to accept configuration requests (but not before the `initialize` request has finished).
 		The sequence of events/requests is as follows:
 		- adapters sends `initialized` event (after the `initialize` request has returned)
@@ -68,6 +68,9 @@ type RestartResponse = Response
 /** Response to `reverseContinue` request. This is just an acknowledgement, so no body field is required. */
 type ReverseContinueResponse = Response
 
+/** Response to `startDebugging` request. This is just an acknowledgement, so no body field is required. */
+type StartDebuggingResponse = Response
+
 /** Response to `stepBack` request. This is just an acknowledgement, so no body field is required. */
 type StepBackResponse = Response
 
@@ -80,7 +83,7 @@ type StepOutResponse = Response
 /** Response to `terminate` request. This is just an acknowledgement, so no body field is required. */
 type TerminateResponse = Response
 
-/** Response to `terminateThreads` request. This is just an acknowledgement, so no body field is required. */
+/** Response to `terminateThreads` request. This is just an acknowledgement, no body field is required. */
 type TerminateThreadsResponse = Response
 
 /** Threads request; value of command field is 'threads'.

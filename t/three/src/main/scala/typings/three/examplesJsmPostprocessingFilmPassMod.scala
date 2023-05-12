@@ -1,5 +1,6 @@
 package typings.three
 
+import typings.three.examplesJsmPostprocessingPassMod.FullScreenQuad
 import typings.three.examplesJsmPostprocessingPassMod.Pass
 import typings.three.srcThreeMod.ShaderMaterial
 import org.scalablytyped.runtime.StObject
@@ -27,7 +28,7 @@ object examplesJsmPostprocessingFilmPassMod {
     def this(noiseIntensity: Unit, scanlinesIntensity: Unit, scanlinesCount: Double, grayscale: Double) = this()
     def this(noiseIntensity: Unit, scanlinesIntensity: Unit, scanlinesCount: Unit, grayscale: Double) = this()
     
-    var fsQuad: js.Object = js.native
+    var fsQuad: FullScreenQuad = js.native
     
     var material: ShaderMaterial = js.native
     

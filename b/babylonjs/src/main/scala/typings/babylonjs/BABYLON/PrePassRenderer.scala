@@ -39,6 +39,10 @@ trait PrePassRenderer extends StObject {
   
   /* private */ val _clearColor: Any = js.native
   
+  /* private */ var _clearDepthAttachments: Any = js.native
+  
+  /* private */ val _clearDepthColor: Any = js.native
+  
   /**
     * Creates a new PrePassRenderTarget
     * This should be the only way to instantiate a `PrePassRenderTarget`
@@ -97,6 +101,8 @@ trait PrePassRenderer extends StObject {
   
   /* private */ var _mrtNames: Any = js.native
   
+  /* private */ var _mrtTypes: Any = js.native
+  
   /* private */ var _multiRenderAttachments: Any = js.native
   
   /* private */ var _needsCompositionForThisPass: Any = js.native
@@ -140,6 +146,8 @@ trait PrePassRenderer extends StObject {
   /* private */ var _update: Any = js.native
   
   /* private */ var _updateGeometryBufferLayout: Any = js.native
+  
+  /* private */ var _useSpecificClearForDepthTexture: Any = js.native
   
   /**
     * Adds an effect configuration to the prepass render target.
@@ -255,4 +263,11 @@ trait PrePassRenderer extends StObject {
     * false if there is no postprocesses - and the function has no effect
     */
   def setCustomOutput(rt: RenderTargetTexture): Boolean = js.native
+  
+  /**
+    * If set to true (default: false), the depth texture will be cleared with the depth value corresponding to the far plane (1 in normal mode, 0 in reverse depth buffer mode)
+    * If set to false, the depth texture is always cleared with 0.
+    */
+  def useSpecificClearForDepthTexture: Boolean = js.native
+  def useSpecificClearForDepthTexture_=(value: Boolean): Unit = js.native
 }

@@ -1,7 +1,9 @@
 package typings.rdfValidateShacl
 
 import typings.clownface.mod.GraphPointer
+import typings.rdfjsTypes.dataModelMod.BlankNode
 import typings.rdfjsTypes.dataModelMod.DataFactory
+import typings.rdfjsTypes.dataModelMod.NamedNode
 import typings.rdfjsTypes.dataModelMod.Quad
 import typings.rdfjsTypes.datasetMod.DatasetCore
 import typings.rdfjsTypes.datasetMod.DatasetCoreFactory
@@ -12,12 +14,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object srcValidationReportMod {
   
+  // tslint:disable-next-line:no-unnecessary-class
   @JSImport("rdf-validate-shacl/src/validation-report", JSImport.Namespace)
   @js.native
   open class ^[F /* <: Factory[Quad, Quad, DatasetCore[Quad, Quad]] */] protected ()
     extends StObject
        with ValidationReport[F] {
-    def this(resultQuads: js.Array[Quad], options: Options[F]) = this()
+    def this(
+      resultQuads: GraphPointer[BlankNode | NamedNode[String], DatasetCore[Quad, Quad]],
+      options: Options[F]
+    ) = this()
     
     /* CompleteClass */
     var conforms: Boolean = js.native
@@ -75,6 +81,7 @@ object srcValidationReportMod {
     }
   }
   
+  // tslint:disable-next-line:no-unnecessary-class
   trait ValidationReport[F /* <: Factory[Quad, Quad, DatasetCore[Quad, Quad]] */] extends StObject {
     
     var conforms: Boolean

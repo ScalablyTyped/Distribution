@@ -8,33 +8,45 @@ object libRestFlexApiMod {
   
   @JSImport("twilio/lib/rest/FlexApi", JSImport.Namespace)
   @js.native
-  open class ^ protected () extends FlexApi {
-    /**
-      * Initialize flex_api domain
-      *
-      * @param twilio - The twilio client
-      */
-    def this(twilio: typings.twilio.libRestTwilioMod.^) = this()
-  }
+  open class ^ () extends FlexApi
   
   @js.native
   trait FlexApi
-    extends typings.twilio.libBaseDomainMod.^ {
+    extends typings.twilio.libRestFlexApiBaseMod.^ {
     
-    val channel: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ChannelListInstance */ Any = js.native
+    /**
+      * @deprecated - Use v1.assessments instead
+      */
+    def assessments: Any = js.native
     
-    val configuration: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ConfigurationListInstance */ Any = js.native
+    /**
+      * @deprecated - Use v1.channel instead
+      */
+    def channel: Any = js.native
     
-    val flexFlow: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FlexFlowListInstance */ Any = js.native
+    /**
+      * @deprecated - Use v1.configuration instead
+      */
+    def configuration: Any = js.native
     
-    val goodData: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify GoodDataListInstance */ Any = js.native
+    /**
+      * @deprecated - Use v1.flexFlow instead
+      */
+    def flexFlow: Any = js.native
     
-    val interaction: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify InteractionListInstance */ Any = js.native
+    /**
+      * @deprecated - Use v1.interaction instead
+      */
+    def interaction: Any = js.native
     
-    val userRoles: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify UserRolesListInstance */ Any = js.native
+    /**
+      * @deprecated - Use v1.webChannel instead
+      */
+    def webChannel: Any = js.native
     
-    val v1: typings.twilio.libRestFlexApiV1Mod.^ = js.native
-    
-    val webChannel: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebChannelListInstance */ Any = js.native
+    /**
+      * @deprecated - Use v2.webChannels instead
+      */
+    def webChannels: Any = js.native
   }
 }

@@ -175,7 +175,7 @@ object typingsOperationsMod {
       * @param sheet - sheet id from which rows will be removed
       * @param rowStart - number of the first row to be deleted
       * @param rowEnd - number of the last row to be deleted
-      * */
+      */
     /* private */ var doRemoveRows: Any = js.native
     
     def ensureItIsPossibleToMoveCells(

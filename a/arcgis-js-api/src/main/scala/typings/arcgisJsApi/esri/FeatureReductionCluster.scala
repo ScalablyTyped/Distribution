@@ -62,6 +62,15 @@ trait FeatureReductionCluster
   var labelsVisible: Boolean = js.native
   
   /**
+    * Defines the maximum [view scale](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#scale) at which clustering is enabled.
+    *
+    * @default 0
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureReductionCluster.html#maxScale)
+    */
+  var maxScale: Double = js.native
+  
+  /**
     * Indicates whether to display the cluster popup.
     *
     * @default true

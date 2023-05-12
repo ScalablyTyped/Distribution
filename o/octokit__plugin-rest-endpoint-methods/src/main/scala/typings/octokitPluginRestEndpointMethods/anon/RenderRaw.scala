@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RenderRaw extends StObject {
   
-  var render: `1140`
+  var render: `1181`
   
-  var renderRaw: `1141`
+  var renderRaw: `1182`
 }
 object RenderRaw {
   
-  inline def apply(render: `1140`, renderRaw: `1141`): RenderRaw = {
+  inline def apply(render: `1181`, renderRaw: `1182`): RenderRaw = {
     val __obj = js.Dynamic.literal(render = render.asInstanceOf[js.Any], renderRaw = renderRaw.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenderRaw]
   }
@@ -20,8 +20,8 @@ object RenderRaw {
   @scala.inline
   implicit open class MutableBuilder[Self <: RenderRaw] (val x: Self) extends AnyVal {
     
-    inline def setRender(value: `1140`): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
+    inline def setRender(value: `1181`): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
     
-    inline def setRenderRaw(value: `1141`): Self = StObject.set(x, "renderRaw", value.asInstanceOf[js.Any])
+    inline def setRenderRaw(value: `1182`): Self = StObject.set(x, "renderRaw", value.asInstanceOf[js.Any])
   }
 }

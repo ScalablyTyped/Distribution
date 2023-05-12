@@ -16,7 +16,7 @@ object libIconsCloudSyncOutlinedMod extends Shortcut {
   @js.native
   trait CloudSyncOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_CloudSyncOutlinedIconType: String = js.native

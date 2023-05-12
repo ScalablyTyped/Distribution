@@ -10,6 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class GetOpenIdTokenForDeveloperIdentityCommand protected ()
   extends typings.awsSdkClientCognitoIdentity.distTypesCommandsGetOpenIdTokenForDeveloperIdentityCommandMod.GetOpenIdTokenForDeveloperIdentityCommand {
+  /**
+    * @public
+    */
   def this(input: GetOpenIdTokenForDeveloperIdentityCommandInput) = this()
 }
 /* static members */

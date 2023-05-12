@@ -1,6 +1,7 @@
 package typings.engineIo
 
 import typings.engineIo.buildTransportMod.Transport
+import typings.engineIoParser.buildEsmCommonsMod.RawData
 import typings.node.eventsMod.EventEmitter
 import typings.node.httpMod.IncomingMessage
 import org.scalablytyped.runtime.StObject
@@ -64,6 +65,12 @@ object buildSocketMod {
       */
     /* private */ var getAvailableUpgrades: Any = js.native
     
+    /**
+      * This is the session identifier that the client will use in the subsequent HTTP requests. It must not be shared with
+      * others parties, as it might lead to session hijacking.
+      *
+      * @private
+      */
     /* private */ val id: Any = js.native
     
     /**
@@ -143,8 +150,10 @@ object buildSocketMod {
       * @return {Socket} for chaining
       * @api public
       */
-    def send(data: Any, options: Any): this.type = js.native
-    def send(data: Any, options: Any, callback: Any): this.type = js.native
+    def send(data: RawData): this.type = js.native
+    def send(data: RawData, options: Unit, callback: js.Function0[Unit]): this.type = js.native
+    def send(data: RawData, options: SendOptions): this.type = js.native
+    def send(data: RawData, options: SendOptions, callback: js.Function0[Unit]): this.type = js.native
     
     /**
       * Sends a packet.
@@ -185,9 +194,38 @@ object buildSocketMod {
     
     /* private */ var upgrading: Any = js.native
     
-    def write(data: Any, options: Any): this.type = js.native
-    def write(data: Any, options: Any, callback: Any): this.type = js.native
+    /**
+      * Alias of {@link send}.
+      *
+      * @param data
+      * @param options
+      * @param callback
+      */
+    def write(data: RawData): this.type = js.native
+    def write(data: RawData, options: Unit, callback: js.Function0[Unit]): this.type = js.native
+    def write(data: RawData, options: SendOptions): this.type = js.native
+    def write(data: RawData, options: SendOptions, callback: js.Function0[Unit]): this.type = js.native
     
     /* private */ var writeBuffer: Any = js.native
+  }
+  
+  trait SendOptions extends StObject {
+    
+    var compress: js.UndefOr[Boolean] = js.undefined
+  }
+  object SendOptions {
+    
+    inline def apply(): SendOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[SendOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SendOptions] (val x: Self) extends AnyVal {
+      
+      inline def setCompress(value: Boolean): Self = StObject.set(x, "compress", value.asInstanceOf[js.Any])
+      
+      inline def setCompressUndefined: Self = StObject.set(x, "compress", js.undefined)
+    }
   }
 }

@@ -63,7 +63,7 @@ trait MapViewProperties
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#highlightOptions)
     */
-  var highlightOptions: js.UndefOr[MapViewHighlightOptionsProperties] = js.undefined
+  var highlightOptions: js.UndefOr[HighlightOptions] = js.undefined
   
   /**
     * Defines which anchor stays still while resizing the browser window.
@@ -149,7 +149,7 @@ object MapViewProperties {
     
     inline def setFloorsVarargs(value: String*): Self = StObject.set(x, "floors", js.Array(value*))
     
-    inline def setHighlightOptions(value: MapViewHighlightOptionsProperties): Self = StObject.set(x, "highlightOptions", value.asInstanceOf[js.Any])
+    inline def setHighlightOptions(value: HighlightOptions): Self = StObject.set(x, "highlightOptions", value.asInstanceOf[js.Any])
     
     inline def setHighlightOptionsUndefined: Self = StObject.set(x, "highlightOptions", js.undefined)
     

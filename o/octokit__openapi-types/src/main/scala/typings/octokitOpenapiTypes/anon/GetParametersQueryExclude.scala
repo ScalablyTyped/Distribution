@@ -6,10 +6,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GetParametersQueryExclude extends StObject {
   
-  /** Lists the most recent migrations. */
+  /**
+    * List organization migrations
+    * @description Lists the most recent migrations, including both exports (which can be started through the REST API) and imports (which cannot be started using the REST API).
+    *
+    * A list of `repositories` is only returned for export migrations.
+    */
   var get: ParametersQueryExclude
   
-  /** Initiates the generation of a migration archive. */
+  /**
+    * Start an organization migration
+    * @description Initiates the generation of a migration archive.
+    */
   var post: RequestBodyContentApplicationjsonExcludeattachments
 }
 object GetParametersQueryExclude {

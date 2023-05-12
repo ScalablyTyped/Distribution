@@ -22,6 +22,11 @@ trait AllocateHostsRequest extends StObject {
   var ClientToken: js.UndefOr[String] = js.undefined
   
   /**
+    * Indicates whether to enable or disable host maintenance for the Dedicated Host. For more information, see Host maintenance in the Amazon EC2 User Guide.
+    */
+  var HostMaintenance: js.UndefOr[typings.awsSdk.clientsEc2Mod.HostMaintenance] = js.undefined
+  
+  /**
     * Indicates whether to enable or disable host recovery for the Dedicated Host. Host recovery is disabled by default. For more information, see  Host recovery in the Amazon EC2 User Guide. Default: off 
     */
   var HostRecovery: js.UndefOr[typings.awsSdk.clientsEc2Mod.HostRecovery] = js.undefined
@@ -70,6 +75,10 @@ object AllocateHostsRequest {
     inline def setClientToken(value: String): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     
     inline def setClientTokenUndefined: Self = StObject.set(x, "ClientToken", js.undefined)
+    
+    inline def setHostMaintenance(value: HostMaintenance): Self = StObject.set(x, "HostMaintenance", value.asInstanceOf[js.Any])
+    
+    inline def setHostMaintenanceUndefined: Self = StObject.set(x, "HostMaintenance", js.undefined)
     
     inline def setHostRecovery(value: HostRecovery): Self = StObject.set(x, "HostRecovery", value.asInstanceOf[js.Any])
     

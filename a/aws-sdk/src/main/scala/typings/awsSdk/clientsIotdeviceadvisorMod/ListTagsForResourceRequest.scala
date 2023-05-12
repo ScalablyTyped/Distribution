@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListTagsForResourceRequest extends StObject {
   
   /**
-    * The ARN of the IoT Device Advisor resource.
+    * The resource ARN of the IoT Device Advisor resource. This can be SuiteDefinition ARN or SuiteRun ARN.
     */
   var resourceArn: AmazonResourceName
 }

@@ -154,6 +154,10 @@ object workspace {
   @js.native
   val onWillRenameFiles: Event[FileWillRenameEvent] = js.native
   
+  @JSImport("vscode", "workspace.onWillSaveNotebookDocument")
+  @js.native
+  val onWillSaveNotebookDocument: Event[NotebookDocumentWillSaveEvent] = js.native
+  
   @JSImport("vscode", "workspace.onWillSaveTextDocument")
   @js.native
   val onWillSaveTextDocument: Event[TextDocumentWillSaveEvent] = js.native

@@ -83,6 +83,8 @@ trait OutputPlugin extends StObject {
     ]
   ] = js.undefined
   
+  var version: js.UndefOr[String] = js.undefined
+  
   var writeBundle: js.UndefOr[
     ObjectHook[
       /* import warning: importer.ImportType#apply Failed type conversion: 'writeBundle' extends rollup.rollup.AsyncPluginHooks ? rollup.rollup.MakeAsync<(this : rollup.rollup.PluginContext, options : rollup.rollup.NormalizedOutputOptions, bundle : rollup.rollup.OutputBundle): void> : (this : rollup.rollup.PluginContext, options : rollup.rollup.NormalizedOutputOptions, bundle : rollup.rollup.OutputBundle): void */ js.Any, 
@@ -202,6 +204,10 @@ object OutputPlugin {
     ): Self = StObject.set(x, "resolveImportMeta", value.asInstanceOf[js.Any])
     
     inline def setResolveImportMetaUndefined: Self = StObject.set(x, "resolveImportMeta", js.undefined)
+    
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     
     inline def setWriteBundle(
       value: ObjectHook[

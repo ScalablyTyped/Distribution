@@ -27,6 +27,8 @@ trait StructureDefinition
   
   var _copyright: js.UndefOr[Element] = js.undefined
   
+  var _copyrightLabel: js.UndefOr[Element] = js.undefined
+  
   var _date: js.UndefOr[Element] = js.undefined
   
   var _derivation: js.UndefOr[Element] = js.undefined
@@ -55,23 +57,26 @@ trait StructureDefinition
   
   var _version: js.UndefOr[Element] = js.undefined
   
+  var _versionAlgorithmString: js.UndefOr[Element] = js.undefined
+  
   /**
     * Abstract Resources cannot be instantiated - a concrete sub-type must be used. Abstract datatypes and extensions cannot be used in an instance. For logical models, the exact implication of "abstract" will rest with the author, depending how the logical model is used. Flagging a constraint structure as abstract conveys design intent but makes no difference to how the structure definition is handled. Note that inline declared elements that are given the type "Element" in the StructureDefinition, but have children described, are anonymous concrete types that specialize Element.
     */
   var `abstract`: Boolean
   
   /**
-    * If differential constraints are specified in this structure, they are applied to the base in a "differential" fashion. If there is no base, then the differential constraints cannot be provided (snapshot only). Differential structures are useful for the editing perspective, and snapshot structures are suitable for operational use. The FHIR Project provides a number of tools/services to populate snapshots from differential constraints. Logical Models have a base of "Element" or another logical model.
+    * If differential constraints are specified in this structure, they are applied to the base in a "differential" fashion. If there is no base, then the differential constraints cannot be provided (snapshot only). Differential structures are useful for the editing perspective, and snapshot structures are suitable for operational use. The FHIR Project provides a number of tools/services to populate snapshots from differential constraints. Logical Models have a base of "Base", "Element" or another logical model.
     */
   var baseDefinition: js.UndefOr[String] = js.undefined
   
   /**
     * May be a web site, an email address, a telephone number, etc.
+    * See guidance around (not) making local changes to elements [here](canonicalresource.html#localization).
     */
   var contact: js.UndefOr[js.Array[ContactDetail]] = js.undefined
   
   /**
-    * Identifies the types of resource or data type elements to which the extension can be applied.
+    * Identifies the types of resource or data type elements to which the extension can be applied. For more guidance on using the 'context' element, see the [defining extensions page](defining-extensions.html#context).
     */
   var context: js.UndefOr[js.Array[StructureDefinitionContext]] = js.undefined
   
@@ -81,22 +86,28 @@ trait StructureDefinition
   var contextInvariant: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
-    * A copyright statement relating to the structure definition and/or its contents. Copyright statements are generally legal restrictions on the use and publishing of the structure definition.
+    * ...
     */
   var copyright: js.UndefOr[String] = js.undefined
   
   /**
-    * Note that this is not the same as the resource last-modified-date, since the resource may be a secondary representation of the structure definition. Additional specific dates may be added as extensions or be found by consulting Provenances associated with past versions of the resource.
+    * The (c) symbol should NOT be included in this string. It will be added by software when rendering the notation. Full details about licensing, restrictions, warrantees, etc. goes in the more general 'copyright' element.
+    */
+  var copyrightLabel: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The date is often not tracked until the resource is published, but may be present on draft content. Note that this is not the same as the resource last-modified-date, since the resource may be a secondary representation of the structure definition. Additional specific dates may be added as extensions or be found by consulting Provenances associated with past versions of the resource.
+    * See guidance around (not) making local changes to elements [here](canonicalresource.html#localization).
     */
   var date: js.UndefOr[String] = js.undefined
   
   /**
-    * If the definition is a specialization, then it adds new elements in the differential, and the snapshot includes the inherited elements.  If the definition is a constraint, then it cannot define new elements, it can only make new rules about existing content (see [Profiling Resources](profiling.html#resources)).
+    * If the definition is a specialization, then it adds to the differential new elements and optionally additional rules to an existing concrete type, and the snapshot includes the inherited elements and rules.  If the definition is a constraint, then it cannot define new elements, it can only make new rules about existing content (see [Profiling Resources](profiling.html#resources)).
     */
   var derivation: js.UndefOr[specialization | constraint] = js.undefined
   
   /**
-    * This description can be used to capture details such as why the structure definition was built, comments about misuse, instructions for clinical use and interpretation, literature references, examples from the paper world, etc. It is not a rendering of the structure definition as conveyed in the 'text' field of the resource itself. This item SHOULD be populated unless the information is available from context (e.g. the language of the structure definition is presumed to be the predominant language in the place the structure definition was created).
+    * This description can be used to capture details such as comments about misuse, instructions for clinical use and interpretation, literature references, examples from the paper world, etc. It is not a rendering of the structure definition as conveyed in the 'text' field of the resource itself. This item SHOULD be populated unless the information is available from context (e.g. the language of the structure definition is presumed to be the predominant language in the place the structure definition was created).
     */
   var description: js.UndefOr[String] = js.undefined
   
@@ -122,11 +133,12 @@ trait StructureDefinition
   
   /**
     * It may be possible for the structure definition to be used in jurisdictions other than those for which it was originally designed or intended.
+    * DEPRECATION NOTE: For consistency, implementations are encouraged to migrate to using the new 'jurisdiction' code in the useContext element.  (I.e. useContext.code indicating http://terminology.hl7.org/CodeSystem/usage-context-type#jurisdiction and useContext.valueCodeableConcept indicating the jurisdiction.)
     */
   var jurisdiction: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
   /**
-    * A set of key words or terms from external terminologies that may be used to assist with indexing and searching of templates nby describing the use of this structure definition, or the content it describes.
+    * Note that this element is deprecated. Use the [http://hl7.org/fhir/StructureDefinition/artifact-topic](http://hl7.org/fhir/extensions/StructureDefinition-artifact-topic.html) extension instead.
     */
   var keyword: js.UndefOr[js.Array[Coding]] = js.undefined
   
@@ -170,6 +182,7 @@ trait StructureDefinition
   
   /**
     * Allows filtering of structure definitions that are appropriate for use versus not.
+    * See guidance around (not) making local changes to elements [here](canonicalresource.html#localization).
     */
   var status: draft | active | retired | unknown
   
@@ -179,8 +192,8 @@ trait StructureDefinition
   var title: js.UndefOr[String] = js.undefined
   
   /**
-    * Note that in the case of constraints, the type could be determined by chasing through the baseDefinition references until a concrete structure (derivation = specialization) is reached, or by looking at the path of the first element in the snapshot - if present - but providing the type directly makes for simpler tooling and indexing.
-    * The type must match the elements defined in the differential and the snapshot. For all FHIR defined types, the path name of the element will start with the type name. For logical models, where the type is a URL, the type name SHOULD start with the tail of the type URL where required.
+    * Note that in the case of constraints, the type could be determined by chasing through the baseDefinition references until a type defining structure (derivation = specialization) is reached, or by looking at the path of the first element in the snapshot - if present - but providing the type directly makes for simpler tooling and indexing.
+    * The type must match the elements defined in the differential and the snapshot. For all FHIR defined types, the path name of the element will start with the type name. For logical models, where the type SHALL be a fully specified URL, the type name SHOULD start with the final path segment of the type URL where required. E.g. If the type was "http://example.org/fhir/MyLogicalModelType", the type name should start with 'MyLogicalModelType'.
     */
   var `type`: String
   
@@ -197,9 +210,19 @@ trait StructureDefinition
   var useContext: js.UndefOr[js.Array[UsageContext]] = js.undefined
   
   /**
-    * There may be different structure definition instances that have the same identifier but different versions.  The version can be appended to the url in a reference to allow a reference to a particular business version of the structure definition with the format [url]|[version].
+    * There may be different structure definition instances that have the same identifier but different versions.  The version can be appended to the url in a reference to allow a reference to a particular business version of the structure definition with the format [url]|[version]. The version SHOULD NOT contain a '#' - see [Business Version](resource.html#bv-format).
     */
   var version: js.UndefOr[String] = js.undefined
+  
+  /**
+    * If set as a string, this is a FHIRPath expression that has two additional context variables passed in - %version1 and %version2 and will return a negative number if version1 is newer, a positive number if version2 and a 0 if the version ordering can't be successfully be determined.
+    */
+  var versionAlgorithmCoding: js.UndefOr[Coding] = js.undefined
+  
+  /**
+    * If set as a string, this is a FHIRPath expression that has two additional context variables passed in - %version1 and %version2 and will return a negative number if version1 is newer, a positive number if version2 and a 0 if the version ordering can't be successfully be determined.
+    */
+  var versionAlgorithmString: js.UndefOr[String] = js.undefined
 }
 object StructureDefinition {
   
@@ -245,6 +268,10 @@ object StructureDefinition {
     inline def setContextVarargs(value: StructureDefinitionContext*): Self = StObject.set(x, "context", js.Array(value*))
     
     inline def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
+    
+    inline def setCopyrightLabel(value: String): Self = StObject.set(x, "copyrightLabel", value.asInstanceOf[js.Any])
+    
+    inline def setCopyrightLabelUndefined: Self = StObject.set(x, "copyrightLabel", js.undefined)
     
     inline def setCopyrightUndefined: Self = StObject.set(x, "copyright", js.undefined)
     
@@ -332,6 +359,14 @@ object StructureDefinition {
     
     inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
+    inline def setVersionAlgorithmCoding(value: Coding): Self = StObject.set(x, "versionAlgorithmCoding", value.asInstanceOf[js.Any])
+    
+    inline def setVersionAlgorithmCodingUndefined: Self = StObject.set(x, "versionAlgorithmCoding", js.undefined)
+    
+    inline def setVersionAlgorithmString(value: String): Self = StObject.set(x, "versionAlgorithmString", value.asInstanceOf[js.Any])
+    
+    inline def setVersionAlgorithmStringUndefined: Self = StObject.set(x, "versionAlgorithmString", js.undefined)
+    
     inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     
     inline def set_abstract(value: Element): Self = StObject.set(x, "_abstract", value.asInstanceOf[js.Any])
@@ -349,6 +384,10 @@ object StructureDefinition {
     inline def set_contextInvariantVarargs(value: Element*): Self = StObject.set(x, "_contextInvariant", js.Array(value*))
     
     inline def set_copyright(value: Element): Self = StObject.set(x, "_copyright", value.asInstanceOf[js.Any])
+    
+    inline def set_copyrightLabel(value: Element): Self = StObject.set(x, "_copyrightLabel", value.asInstanceOf[js.Any])
+    
+    inline def set_copyrightLabelUndefined: Self = StObject.set(x, "_copyrightLabel", js.undefined)
     
     inline def set_copyrightUndefined: Self = StObject.set(x, "_copyright", js.undefined)
     
@@ -405,6 +444,10 @@ object StructureDefinition {
     inline def set_urlUndefined: Self = StObject.set(x, "_url", js.undefined)
     
     inline def set_version(value: Element): Self = StObject.set(x, "_version", value.asInstanceOf[js.Any])
+    
+    inline def set_versionAlgorithmString(value: Element): Self = StObject.set(x, "_versionAlgorithmString", value.asInstanceOf[js.Any])
+    
+    inline def set_versionAlgorithmStringUndefined: Self = StObject.set(x, "_versionAlgorithmString", js.undefined)
     
     inline def set_versionUndefined: Self = StObject.set(x, "_version", js.undefined)
   }

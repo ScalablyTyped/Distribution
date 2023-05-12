@@ -40,7 +40,8 @@ trait UniformBuffer extends StObject {
     * Assign a value to the uniform specified by its format. This is the fast version of assigning
     * a value to a uniform, avoiding any lookups.
     *
-    * @param {UniformFormat} uniformFormat - The format of the uniform.
+    * @param {import('./uniform-buffer-format.js').UniformFormat} uniformFormat - The format of
+    * the uniform.
     */
   def setUniform(uniformFormat: UniformFormat): Unit
   

@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TaskStartedEventDetails extends StObject {
   
   /**
-    * The service name of the resource in a task state.
+    * The action of the resource called by a task state.
     */
   var resource: Name
   
   /**
-    * The action of the resource called by a task state.
+    * The service name of the resource in a task state.
     */
   var resourceType: Name
 }

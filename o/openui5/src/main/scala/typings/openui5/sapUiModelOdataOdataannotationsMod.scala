@@ -270,6 +270,8 @@ object sapUiModelOdataOdataannotationsMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:failed failed} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -281,6 +283,8 @@ object sapUiModelOdataOdataannotationsMod {
     oParameters: ResponseText): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:loaded loaded} to attached listeners.
       *
       * @returns `this` to allow method chaining
@@ -295,10 +299,8 @@ object sapUiModelOdataOdataannotationsMod {
     
     /**
       * returns the raw annotation data
-      *
-      * @returns returns annotations data
       */
-    def getAnnotationsData(): js.Object = js.native
+    var getAnnotationsData: Unit = js.native
     
     /**
       * Checks whether annotations loading of at least one of the given URLs has already failed. Note: For asynchronous

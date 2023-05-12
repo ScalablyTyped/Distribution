@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@emotion/memoize" : "0.8.0"
+      "@emotion/memoize" : "0.8.1"
     }
   ],
   "test-dependencies" : [
     {
-      "@emotion/memoize" : "0.8.0"
+      "@emotion/memoize" : "0.8.1"
     }
   ],
   "compile-devDependencies" : [

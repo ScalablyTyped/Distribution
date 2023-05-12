@@ -26,7 +26,7 @@ object typesStackedpanelMod {
     /**
       * A signal emitted when a widget is removed from a stacked panel.
       */
-    val widgetRemoved: ISignal[this.type, Widget] = js.native
+    def widgetRemoved: ISignal[this.type, Widget] = js.native
   }
   object StackedPanel {
     

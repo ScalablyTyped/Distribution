@@ -219,6 +219,8 @@ object sapMShellMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:logout logout} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -321,8 +323,7 @@ object sapMShellMod {
     /**
       * Gets current value of property {@link #getHomeIcon homeIcon}.
       *
-      * Sets the icon used for the mobile device home screen and the icon to be used for bookmarks by desktop
-      * browsers.
+      * The icon used for the mobile device home screen and the icon to be used for bookmarks by desktop browsers.
       *
       * This property should be only set once, and as early as possible. Subsequent calls replace the previous
       * icon settings and may lead to different behavior depending on the browser.
@@ -517,34 +518,6 @@ object sapMShellMod {
     sHeaderRightText: String): this.type = js.native
     
     /**
-      * Sets a new value for property {@link #getHomeIcon homeIcon}.
-      *
-      * Sets the icon used for the mobile device home screen and the icon to be used for bookmarks by desktop
-      * browsers.
-      *
-      * This property should be only set once, and as early as possible. Subsequent calls replace the previous
-      * icon settings and may lead to different behavior depending on the browser.
-      *
-      * Different image sizes for device home screen need to be given as PNG images, an ICO file needs to be
-      * given as desktop browser bookmark icon (other file formats may not work in all browsers). The `precomposed`
-      * flag defines whether there is already a glow effect contained in the home screen images (or whether iOS
-      * should add such an effect). The given structure could look like this: { 'phone':'phone-icon_57x57.png',
-      * 'phone@2':'phone-retina_114x114.png', 'tablet':'tablet-icon_72x72.png', 'tablet@2':'tablet-retina_144x144.png',
-      * 'precomposed':true, 'favicon':'favicon.ico' }
-      *
-      * See {@link module:sap/ui/util/Mobile.setIcons} for full documentation.
-      *
-      * When called with a value of `null` or `undefined`, the default value of the property will be restored.
-      *
-      * @returns Reference to `this` in order to allow method chaining
-      */
-    def setHomeIcon(): this.type = js.native
-    def setHomeIcon(/**
-      * New value for property `homeIcon`
-      */
-    oHomeIcon: js.Object): this.type = js.native
-    
-    /**
       * Sets a new value for property {@link #getLogo logo}.
       *
       * Defines the logo to be displayed next to the App when the screen is sufficiently large.
@@ -693,8 +666,7 @@ object sapMShellMod {
     var headerRightText: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
-      * Sets the icon used for the mobile device home screen and the icon to be used for bookmarks by desktop
-      * browsers.
+      * The icon used for the mobile device home screen and the icon to be used for bookmarks by desktop browsers.
       *
       * This property should be only set once, and as early as possible. Subsequent calls replace the previous
       * icon settings and may lead to different behavior depending on the browser.

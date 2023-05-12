@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.WritingMode
+import typings.csstype.mod.Property.TouchAction
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `177` extends StObject {
   
   var value: js.UndefOr[
-    WritingMode | (js.Array[
-      (Extract[js.UndefOr[WritingMode | js.Array[NonNullable[js.UndefOr[WritingMode]]]], String]) | NonNullable[js.UndefOr[WritingMode]]
+    TouchAction | (js.Array[
+      (Extract[js.UndefOr[TouchAction | js.Array[NonNullable[js.UndefOr[TouchAction]]]], String]) | NonNullable[js.UndefOr[TouchAction]]
     ])
   ] = js.native
 }

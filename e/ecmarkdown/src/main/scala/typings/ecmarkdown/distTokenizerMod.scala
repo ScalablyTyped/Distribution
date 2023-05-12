@@ -2,6 +2,7 @@ package typings.ecmarkdown
 
 import typings.ecmarkdown.distNodeTypesMod.AttrToken
 import typings.ecmarkdown.distNodeTypesMod.CommentToken
+import typings.ecmarkdown.distNodeTypesMod.DoubleBracketsToken
 import typings.ecmarkdown.distNodeTypesMod.EOFToken
 import typings.ecmarkdown.distNodeTypesMod.Format
 import typings.ecmarkdown.distNodeTypesMod.FormatToken
@@ -17,6 +18,7 @@ import typings.ecmarkdown.distNodeTypesMod.Unlocated
 import typings.ecmarkdown.distNodeTypesMod.UnorderedListToken
 import typings.ecmarkdown.distNodeTypesMod.WhitespaceToken
 import typings.ecmarkdown.ecmarkdownStrings.EOF
+import typings.ecmarkdown.ecmarkdownStrings.`double-brackets`
 import typings.ecmarkdown.ecmarkdownStrings.comment
 import typings.ecmarkdown.ecmarkdownStrings.linebreak
 import typings.ecmarkdown.ecmarkdownStrings.ol
@@ -47,12 +49,14 @@ object distTokenizerMod {
     var column: Double = js.native
     
     def dequeue(): js.UndefOr[
-        EOFToken | FormatToken | ParabreakToken | LinebreakToken | WhitespaceToken | TextToken | CommentToken | OpaqueTagToken | TagToken | UnorderedListToken | OrderedListToken
+        EOFToken | FormatToken | ParabreakToken | LinebreakToken | WhitespaceToken | DoubleBracketsToken | TextToken | CommentToken | OpaqueTagToken | TagToken | UnorderedListToken | OrderedListToken
       ] = js.native
     
     def enqueue(tok: Unlocated[Token], pos: Position): Unit = js.native
     
-    def expect(name: EOF | parabreak | linebreak | whitespace | text | comment | tag | ul | ol | opaqueTag): Unit = js.native
+    def expect(
+      name: EOF | parabreak | linebreak | whitespace | `double-brackets` | text | comment | tag | ul | ol | opaqueTag
+    ): Unit = js.native
     def expect(name: Format): Unit = js.native
     
     def getLocation(): Position = js.native
@@ -90,6 +94,8 @@ object distTokenizerMod {
     var str: String = js.native
     
     def tryScanComment(): js.UndefOr[String] = js.native
+    
+    def tryScanFieldOrSlot(): js.UndefOr[String] = js.native
     
     def tryScanListItemAttributes(): js.Array[AttrToken] = js.native
     

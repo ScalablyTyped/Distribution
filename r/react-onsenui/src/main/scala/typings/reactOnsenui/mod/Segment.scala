@@ -12,7 +12,7 @@ open class Segment protected () extends Component[Index, Any] {
   def this(props: HTMLAttributesidclassName & Index) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: HTMLAttributesidclassName & Index, context: Any) = this()
 }

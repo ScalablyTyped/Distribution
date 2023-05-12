@@ -17,7 +17,7 @@ trait TransferDomainRequest extends StObject {
   var AuthCode: js.UndefOr[DomainAuthCode] = js.undefined
   
   /**
-    * Indicates whether the domain will be automatically renewed (true) or not (false). Autorenewal only takes effect after the account is charged. Default: true
+    * Indicates whether the domain will be automatically renewed (true) or not (false). Auto renewal only takes effect after the account is charged. Default: true
     */
   var AutoRenew: js.UndefOr[Boolean] = js.undefined
   

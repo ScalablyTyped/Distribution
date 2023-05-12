@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "css-blank-pseudo" : "4.1.1"
+      "css-blank-pseudo" : "5.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "css-blank-pseudo" : "4.1.1"
+      "css-blank-pseudo" : "5.0.2"
     }
   ],
   "compile-devDependencies" : [

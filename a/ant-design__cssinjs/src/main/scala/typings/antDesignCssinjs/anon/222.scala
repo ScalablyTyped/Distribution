@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.TransitionProperty
+import typings.csstype.mod.Property.OutlineColor
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,11 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `222` extends StObject {
   
   var value: js.UndefOr[
-    TransitionProperty | (js.Array[
-      (Extract[
-        js.UndefOr[TransitionProperty | js.Array[NonNullable[js.UndefOr[TransitionProperty]]]], 
-        String
-      ]) | NonNullable[js.UndefOr[TransitionProperty]]
+    OutlineColor | (js.Array[
+      (Extract[js.UndefOr[OutlineColor | js.Array[NonNullable[js.UndefOr[OutlineColor]]]], String]) | NonNullable[js.UndefOr[OutlineColor]]
     ])
   ] = js.native
 }

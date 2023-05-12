@@ -1,6 +1,5 @@
 package typings.libp2pPubsub
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.libp2pInterfaceConnection.mod.Connection
 import typings.libp2pInterfacePeerId.mod.PeerId
 import typings.libp2pInterfacePubsub.mod.Message
@@ -17,11 +16,11 @@ import typings.libp2pPeerCollections.mod.PeerMap
 import typings.libp2pPeerCollections.mod.PeerSet
 import typings.libp2pPubsub.anon.Data
 import typings.libp2pPubsub.anon.Messages
-import typings.multiformats.distTypesSrcHashesHasherMod.Await
 import typings.pQueue.distOptionsMod.QueueAddOptions
 import typings.pQueue.distPriorityQueueMod.default
 import typings.std.AsyncIterable
 import typings.std.Map
+import typings.std.Record
 import typings.std.Set
 import typings.uint8arraylist.mod.Uint8ArrayList
 import org.scalablytyped.runtime.StObject
@@ -32,7 +31,7 @@ object mod {
   
   /* note: abstract class */ @JSImport("@libp2p/pubsub", "PubSubBaseProtocol")
   @js.native
-  open class PubSubBaseProtocol[Events /* <: StringDictionary[Any] */] protected () extends PubSub[Events] {
+  open class PubSubBaseProtocol[Events /* <: Record[String, Any] */] protected () extends PubSub[Events] {
     def this(components: PubSubComponents, props: PubSubInit) = this()
     
     /**
@@ -112,7 +111,7 @@ object mod {
       * The default msgID implementation
       * Child class can override this.
       */
-    def getMsgId(msg: Message): Await[js.typedarray.Uint8Array] = js.native
+    def getMsgId(msg: Message): js.Promise[js.typedarray.Uint8Array] | js.typedarray.Uint8Array = js.native
     
     def isStarted(): Boolean = js.native
     
@@ -173,8 +172,6 @@ object mod {
     
     /**
       * Register the pubsub protocol onto the libp2p node.
-      *
-      * @returns {void}
       */
     def start(): js.Promise[Unit] = js.native
     

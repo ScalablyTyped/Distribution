@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "postcss-gap-properties" : "4.0.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "postcss-gap-properties" : "4.0.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

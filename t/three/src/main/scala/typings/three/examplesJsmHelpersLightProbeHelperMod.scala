@@ -1,6 +1,7 @@
 package typings.three
 
 import typings.three.srcCoreBufferGeometryMod.BufferGeometry
+import typings.three.srcCoreBufferGeometryMod.NormalBufferAttributes
 import typings.three.srcMaterialsMaterialMod.Material
 import typings.three.srcThreeMod.LightProbe
 import typings.three.srcThreeMod.Mesh
@@ -13,7 +14,7 @@ object examplesJsmHelpersLightProbeHelperMod {
   @JSImport("three/examples/jsm/helpers/LightProbeHelper", "LightProbeHelper")
   @js.native
   open class LightProbeHelper protected ()
-    extends Mesh[BufferGeometry, Material | js.Array[Material]] {
+    extends Mesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]] {
     def this(lightProbe: LightProbe, size: Double) = this()
     
     def dispose(): Unit = js.native

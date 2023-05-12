@@ -1,6 +1,7 @@
 package typings.bindEventListener
 
 import typings.bindEventListener.distTypesMod.Binding
+import typings.bindEventListener.distTypesMod.InferEventType
 import typings.bindEventListener.distTypesMod.UnbindFn
 import typings.std.EventTarget
 import org.scalablytyped.runtime.StObject
@@ -13,5 +14,5 @@ object distBindMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def bind[Target /* <: EventTarget */, Type /* <: String */](target: Target, param1: Binding[Target, Type]): UnbindFn = (^.asInstanceOf[js.Dynamic].applyDynamic("bind")(target.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[UnbindFn]
+  inline def bind[TTarget /* <: EventTarget */, TType /* <: InferEventType[TTarget] | String */](target: TTarget, param1: Binding[TTarget, TType]): UnbindFn = (^.asInstanceOf[js.Dynamic].applyDynamic("bind")(target.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[UnbindFn]
 }

@@ -19,5 +19,5 @@ object distKernelsExpMod {
   
   @JSImport("@tensorflow/tfjs-backend-cpu/dist/kernels/Exp", "expImpl")
   @js.native
-  val expImpl: SimpleUnaryImpl = js.native
+  val expImpl: SimpleUnaryImpl[Double, Double] = js.native
 }

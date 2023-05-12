@@ -145,7 +145,7 @@ object outSrcV8TypesMod {
     
     var hitCount: Double
     
-    var labelSets: js.Array[LabelSet]
+    var labelSets: js.Array[LabelsCpu]
   }
   object CpuProfileNode {
     
@@ -153,7 +153,7 @@ object outSrcV8TypesMod {
       children: js.Array[ProfileNode],
       cpuTime: Double,
       hitCount: Double,
-      labelSets: js.Array[LabelSet],
+      labelSets: js.Array[LabelsCpu],
       scriptName: String
     ): CpuProfileNode = {
       val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], cpuTime = cpuTime.asInstanceOf[js.Any], hitCount = hitCount.asInstanceOf[js.Any], labelSets = labelSets.asInstanceOf[js.Any], scriptName = scriptName.asInstanceOf[js.Any])
@@ -167,9 +167,9 @@ object outSrcV8TypesMod {
       
       inline def setHitCount(value: Double): Self = StObject.set(x, "hitCount", value.asInstanceOf[js.Any])
       
-      inline def setLabelSets(value: js.Array[LabelSet]): Self = StObject.set(x, "labelSets", value.asInstanceOf[js.Any])
+      inline def setLabelSets(value: js.Array[LabelsCpu]): Self = StObject.set(x, "labelSets", value.asInstanceOf[js.Any])
       
-      inline def setLabelSetsVarargs(value: LabelSet*): Self = StObject.set(x, "labelSets", js.Array(value*))
+      inline def setLabelSetsVarargs(value: LabelsCpu*): Self = StObject.set(x, "labelSets", js.Array(value*))
     }
   }
   
@@ -232,6 +232,28 @@ object outSrcV8TypesMod {
   }
   
   type LabelSet = StringDictionary[String | Double]
+  
+  trait LabelsCpu extends StObject {
+    
+    var cpuTime: Double
+    
+    var labels: LabelSet
+  }
+  object LabelsCpu {
+    
+    inline def apply(cpuTime: Double, labels: LabelSet): LabelsCpu = {
+      val __obj = js.Dynamic.literal(cpuTime = cpuTime.asInstanceOf[js.Any], labels = labels.asInstanceOf[js.Any])
+      __obj.asInstanceOf[LabelsCpu]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LabelsCpu] (val x: Self) extends AnyVal {
+      
+      inline def setCpuTime(value: Double): Self = StObject.set(x, "cpuTime", value.asInstanceOf[js.Any])
+      
+      inline def setLabels(value: LabelSet): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    }
+  }
   
   trait ProfileNode extends StObject {
     

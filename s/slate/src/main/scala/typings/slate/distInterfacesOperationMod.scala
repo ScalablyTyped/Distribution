@@ -1,9 +1,9 @@
 package typings.slate
 
-import typings.slate.distInterfacesCustomTypesMod.ExtendedType
 import typings.slate.distInterfacesNodeMod.Node
 import typings.slate.distInterfacesPathMod.Path
 import typings.slate.distInterfacesRangeMod.Range
+import typings.slate.distTypesCustomTypesMod.ExtendedType
 import typings.slate.slateStrings.insert_node
 import typings.slate.slateStrings.insert_text
 import typings.slate.slateStrings.merge_node
@@ -319,16 +319,35 @@ object distInterfacesOperationMod {
   
   trait OperationInterface extends StObject {
     
+    /**
+      * Invert an operation, returning a new operation that will exactly undo the
+      * original when applied.
+      */
     def inverse(op: typings.slate.distInterfacesOperationMod.Operation): typings.slate.distInterfacesOperationMod.Operation
     
+    /**
+      * Check if a value is a `NodeOperation` object.
+      */
     def isNodeOperation(value: Any): /* is slate.slate/dist/interfaces/operation.NodeOperation */ Boolean
     
+    /**
+      * Check if a value is an `Operation` object.
+      */
     def isOperation(value: Any): /* is slate.slate/dist/interfaces/operation.Operation */ Boolean
     
+    /**
+      * Check if a value is a list of `Operation` objects.
+      */
     def isOperationList(value: Any): /* is std.Array<slate.slate/dist/interfaces/operation.Operation> */ Boolean
     
+    /**
+      * Check if a value is a `SelectionOperation` object.
+      */
     def isSelectionOperation(value: Any): /* is slate.slate/dist/interfaces/operation.SelectionOperation */ Boolean
     
+    /**
+      * Check if a value is a `TextOperation` object.
+      */
     def isTextOperation(value: Any): /* is slate.slate/dist/interfaces/operation.TextOperation */ Boolean
   }
   object OperationInterface {

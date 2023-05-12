@@ -38,7 +38,7 @@ object NodeJS {
     /**
       * Name of the script [if this function was defined in a script]
       */
-    def getFileName(): String | Null
+    def getFileName(): js.UndefOr[String]
     
     /**
       * Current function
@@ -101,7 +101,7 @@ object NodeJS {
     inline def apply(
       getColumnNumber: () => Double | Null,
       getEvalOrigin: () => js.UndefOr[String],
-      getFileName: () => String | Null,
+      getFileName: () => js.UndefOr[String],
       getFunction: () => js.UndefOr[js.Function],
       getFunctionName: () => String | Null,
       getLineNumber: () => Double | Null,
@@ -124,7 +124,7 @@ object NodeJS {
       
       inline def setGetEvalOrigin(value: () => js.UndefOr[String]): Self = StObject.set(x, "getEvalOrigin", js.Any.fromFunction0(value))
       
-      inline def setGetFileName(value: () => String | Null): Self = StObject.set(x, "getFileName", js.Any.fromFunction0(value))
+      inline def setGetFileName(value: () => js.UndefOr[String]): Self = StObject.set(x, "getFileName", js.Any.fromFunction0(value))
       
       inline def setGetFunction(value: () => js.UndefOr[js.Function]): Self = StObject.set(x, "getFunction", js.Any.fromFunction0(value))
       

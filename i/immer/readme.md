@@ -1,7 +1,7 @@
 
 # Scala.js typings for immer
 
-Typings are for version 9.0.15
+Typings are for version 10.0.2
 
 ## Library description:
 Create your next immutable state by mutating the current one

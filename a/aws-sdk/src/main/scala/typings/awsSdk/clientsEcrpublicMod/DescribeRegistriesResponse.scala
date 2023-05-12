@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeRegistriesResponse extends StObject {
   
   /**
-    * The nextToken value to include in a future DescribeRepositories request. When the results of a DescribeRepositories request exceed maxResults, this value can be used to retrieve the next page of results. This value is null when there are no more results to return.
+    * The nextToken value to include in a future DescribeRepositories request. If the results of a DescribeRepositories request exceed maxResults, you can use this value to retrieve the next page of results. If there are no more results, this value is null.
     */
   var nextToken: js.UndefOr[NextToken] = js.undefined
   
   /**
-    * An object containing the details for a public registry.
+    * An object that contains the details for a public registry.
     */
   var registries: RegistryList
 }

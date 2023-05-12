@@ -1,7 +1,7 @@
 
 # Scala.js typings for opentelemetry__sdk-trace-node
 
-Typings are for version 1.7.0
+Typings are for version 1.13.0
 
 ## Library description:
 OpenTelemetry Node SDK provides automatic telemetry (tracing, metrics, etc) for Node.js applications

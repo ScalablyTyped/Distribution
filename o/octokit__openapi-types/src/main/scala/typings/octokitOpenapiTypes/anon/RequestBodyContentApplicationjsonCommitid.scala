@@ -10,14 +10,14 @@ trait RequestBodyContentApplicationjsonCommitid extends StObject {
   
   var requestBody: ContentApplicationjsonCommitid
   
-  var responses: `201Content296HeadersLocation`
+  var responses: `201Content315HeadersLocation`
 }
 object RequestBodyContentApplicationjsonCommitid {
   
   inline def apply(
     parameters: PathPullnumber,
     requestBody: ContentApplicationjsonCommitid,
-    responses: `201Content296HeadersLocation`
+    responses: `201Content315HeadersLocation`
   ): RequestBodyContentApplicationjsonCommitid = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], requestBody = requestBody.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestBodyContentApplicationjsonCommitid]
@@ -30,6 +30,6 @@ object RequestBodyContentApplicationjsonCommitid {
     
     inline def setRequestBody(value: ContentApplicationjsonCommitid): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `201Content296HeadersLocation`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `201Content315HeadersLocation`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

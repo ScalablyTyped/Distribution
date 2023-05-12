@@ -13,6 +13,8 @@ trait GridColumn extends StObject {
   
   var attributes: js.UndefOr[Any] = js.undefined
   
+  var columnMenu: js.UndefOr[Boolean] = js.undefined
+  
   var columns: js.UndefOr[Any] = js.undefined
   
   var command: js.UndefOr[String | (js.Array[GridColumnCommandItem | String]) | GridColumnCommandItem] = js.undefined
@@ -56,6 +58,8 @@ trait GridColumn extends StObject {
   var headerTemplate: js.UndefOr[String | js.Function] = js.undefined
   
   var hidden: js.UndefOr[Boolean] = js.undefined
+  
+  var hideOnGroup: js.UndefOr[Boolean] = js.undefined
   
   var lockable: js.UndefOr[Boolean] = js.undefined
   
@@ -102,6 +106,10 @@ object GridColumn {
     inline def setAttributes(value: Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+    
+    inline def setColumnMenu(value: Boolean): Self = StObject.set(x, "columnMenu", value.asInstanceOf[js.Any])
+    
+    inline def setColumnMenuUndefined: Self = StObject.set(x, "columnMenu", js.undefined)
     
     inline def setColumns(value: Any): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
@@ -188,6 +196,10 @@ object GridColumn {
     inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     
     inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
+    
+    inline def setHideOnGroup(value: Boolean): Self = StObject.set(x, "hideOnGroup", value.asInstanceOf[js.Any])
+    
+    inline def setHideOnGroupUndefined: Self = StObject.set(x, "hideOnGroup", js.undefined)
     
     inline def setLockable(value: Boolean): Self = StObject.set(x, "lockable", value.asInstanceOf[js.Any])
     

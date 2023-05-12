@@ -1,7 +1,7 @@
 package typings.openui5
 
 import typings.openui5.anon.Code
-import typings.openui5.anon.`31`
+import typings.openui5.anon.`39`
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiCoreWsReadyStateMod.ReadyState
 import typings.std.Record
@@ -364,6 +364,10 @@ object sapUiCoreWsWebSocketMod {
       */
     sReason: String
     ): this.type = js.native
+    def close(/**
+      * Closing reason as a string
+      */
+    sReason: String): this.type = js.native
     
     /**
       * Detaches event handler `fnFunction` from the {@link #event:close close} event of this `sap.ui.core.ws.WebSocket`.
@@ -454,6 +458,8 @@ object sapUiCoreWsWebSocketMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:close close} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -465,6 +471,8 @@ object sapUiCoreWsWebSocketMod {
     oParameters: Code): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:error error} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -476,6 +484,8 @@ object sapUiCoreWsWebSocketMod {
     oParameters: js.Object): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:message message} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -484,9 +494,11 @@ object sapUiCoreWsWebSocketMod {
     def fireMessage(/**
       * Parameters to pass along with the event
       */
-    oParameters: `31`): this.type = js.native
+    oParameters: `39`): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:open open} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining

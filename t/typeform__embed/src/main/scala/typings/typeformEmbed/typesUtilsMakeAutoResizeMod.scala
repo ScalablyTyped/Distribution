@@ -12,4 +12,5 @@ object typesUtilsMakeAutoResizeMod {
   val ^ : js.Any = js.native
   
   inline def makeAutoResize(wrapperElm: HTMLElement): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeAutoResize")(wrapperElm.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
+  inline def makeAutoResize(wrapperElm: HTMLElement, onAllDevices: Boolean): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("makeAutoResize")(wrapperElm.asInstanceOf[js.Any], onAllDevices.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
 }

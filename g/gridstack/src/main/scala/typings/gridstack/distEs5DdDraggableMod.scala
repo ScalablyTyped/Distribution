@@ -3,6 +3,7 @@ package typings.gridstack
 import typings.gridstack.distEs5DdBaseImplMod.DDBaseImplement
 import typings.gridstack.distEs5DdBaseImplMod.HTMLElementExtendOpt
 import typings.gridstack.distEs5TypesMod.DDUIData
+import typings.gridstack.gridstackStrings.clone
 import typings.std.DragEvent
 import typings.std.Event
 import typings.std.HTMLElement
@@ -58,11 +59,13 @@ object distEs5DdDraggableMod {
     
     var appendTo: js.UndefOr[String | HTMLElement] = js.undefined
     
+    var cancel: js.UndefOr[String] = js.undefined
+    
     var drag: js.UndefOr[js.Function2[/* event */ Event, /* ui */ DDUIData, Unit]] = js.undefined
     
     var handle: js.UndefOr[String] = js.undefined
     
-    var helper: js.UndefOr[String | HTMLElement | (js.Function1[/* event */ Event, HTMLElement])] = js.undefined
+    var helper: js.UndefOr[clone | HTMLElement | (js.Function1[/* event */ Event, HTMLElement])] = js.undefined
     
     var start: js.UndefOr[js.Function2[/* event */ Event, /* ui */ DDUIData, Unit]] = js.undefined
     
@@ -82,6 +85,10 @@ object distEs5DdDraggableMod {
       
       inline def setAppendToUndefined: Self = StObject.set(x, "appendTo", js.undefined)
       
+      inline def setCancel(value: String): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+      
+      inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+      
       inline def setDrag(value: (/* event */ Event, /* ui */ DDUIData) => Unit): Self = StObject.set(x, "drag", js.Any.fromFunction2(value))
       
       inline def setDragUndefined: Self = StObject.set(x, "drag", js.undefined)
@@ -90,7 +97,7 @@ object distEs5DdDraggableMod {
       
       inline def setHandleUndefined: Self = StObject.set(x, "handle", js.undefined)
       
-      inline def setHelper(value: String | HTMLElement | (js.Function1[/* event */ Event, HTMLElement])): Self = StObject.set(x, "helper", value.asInstanceOf[js.Any])
+      inline def setHelper(value: clone | HTMLElement | (js.Function1[/* event */ Event, HTMLElement])): Self = StObject.set(x, "helper", value.asInstanceOf[js.Any])
       
       inline def setHelperFunction1(value: /* event */ Event => HTMLElement): Self = StObject.set(x, "helper", js.Any.fromFunction1(value))
       

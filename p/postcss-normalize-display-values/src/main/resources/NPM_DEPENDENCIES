@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "postcss-normalize-display-values" : "5.1.0"
+      "postcss-normalize-display-values" : "6.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "postcss-normalize-display-values" : "5.1.0"
+      "postcss-normalize-display-values" : "6.0.0"
     }
   ],
   "compile-devDependencies" : [

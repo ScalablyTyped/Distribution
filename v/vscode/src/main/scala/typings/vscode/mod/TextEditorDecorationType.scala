@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TextEditorDecorationType extends StObject {
   
   /**
-    * Remove this decoration type and all decorations on all text editors using it.
-    */
+  		 * Remove this decoration type and all decorations on all text editors using it.
+  		 */
   def dispose(): Unit
   
   /**
-    * Internal representation of the handle.
-    */
+  		 * Internal representation of the handle.
+  		 */
   val key: String
 }
 object TextEditorDecorationType {

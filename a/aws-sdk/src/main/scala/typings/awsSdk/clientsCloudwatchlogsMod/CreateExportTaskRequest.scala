@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateExportTaskRequest extends StObject {
   
   /**
-    * The name of S3 bucket for the exported log data. The bucket must be in the same Amazon Web Services region.
+    * The name of S3 bucket for the exported log data. The bucket must be in the same Amazon Web Services Region.
     */
   var destination: ExportDestinationBucket
   

@@ -19,27 +19,6 @@ import typings.awsSdkClientSts.distTypesCommandsGetSessionTokenCommandMod.GetSes
 import typings.awsSdkClientSts.distTypesDefaultStsRoleAssumersMod.DefaultCredentialProvider
 import typings.awsSdkClientSts.distTypesDefaultStsRoleAssumersMod.RoleAssumer
 import typings.awsSdkClientSts.distTypesDefaultStsRoleAssumersMod.RoleAssumerWithWebIdentity
-import typings.awsSdkClientSts.distTypesModelsModels0Mod.AssumeRoleRequest
-import typings.awsSdkClientSts.distTypesModelsModels0Mod.AssumeRoleResponse
-import typings.awsSdkClientSts.distTypesModelsModels0Mod.AssumeRoleWithSAMLRequest
-import typings.awsSdkClientSts.distTypesModelsModels0Mod.AssumeRoleWithSAMLResponse
-import typings.awsSdkClientSts.distTypesModelsModels0Mod.AssumeRoleWithWebIdentityRequest
-import typings.awsSdkClientSts.distTypesModelsModels0Mod.AssumeRoleWithWebIdentityResponse
-import typings.awsSdkClientSts.distTypesModelsModels0Mod.AssumedRoleUser
-import typings.awsSdkClientSts.distTypesModelsModels0Mod.Credentials
-import typings.awsSdkClientSts.distTypesModelsModels0Mod.DecodeAuthorizationMessageRequest
-import typings.awsSdkClientSts.distTypesModelsModels0Mod.DecodeAuthorizationMessageResponse
-import typings.awsSdkClientSts.distTypesModelsModels0Mod.FederatedUser
-import typings.awsSdkClientSts.distTypesModelsModels0Mod.GetAccessKeyInfoRequest
-import typings.awsSdkClientSts.distTypesModelsModels0Mod.GetAccessKeyInfoResponse
-import typings.awsSdkClientSts.distTypesModelsModels0Mod.GetCallerIdentityRequest
-import typings.awsSdkClientSts.distTypesModelsModels0Mod.GetCallerIdentityResponse
-import typings.awsSdkClientSts.distTypesModelsModels0Mod.GetFederationTokenRequest
-import typings.awsSdkClientSts.distTypesModelsModels0Mod.GetFederationTokenResponse
-import typings.awsSdkClientSts.distTypesModelsModels0Mod.GetSessionTokenRequest
-import typings.awsSdkClientSts.distTypesModelsModels0Mod.GetSessionTokenResponse
-import typings.awsSdkClientSts.distTypesModelsModels0Mod.PolicyDescriptorType
-import typings.awsSdkClientSts.distTypesModelsModels0Mod.Tag
 import typings.awsSdkClientSts.distTypesStsclientMod.STSClientConfig
 import typings.awsSdkClientSts.distTypesStsclientMod.ServiceInputTypes
 import typings.awsSdkClientSts.distTypesStsclientMod.ServiceOutputTypes
@@ -60,6 +39,9 @@ object mod {
   @js.native
   open class AssumeRoleCommand protected ()
     extends typings.awsSdkClientSts.distTypesCommandsMod.AssumeRoleCommand {
+    /**
+      * @public
+      */
     def this(input: AssumeRoleCommandInput) = this()
   }
   /* static members */
@@ -72,14 +54,13 @@ object mod {
     inline def getEndpointParameterInstructions(): EndpointParameterInstructions = ^.asInstanceOf[js.Dynamic].applyDynamic("getEndpointParameterInstructions")().asInstanceOf[EndpointParameterInstructions]
   }
   
-  inline def AssumeRoleRequestFilterSensitiveLog(obj: AssumeRoleRequest): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("AssumeRoleRequestFilterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[Any]
-  
-  inline def AssumeRoleResponseFilterSensitiveLog(obj: AssumeRoleResponse): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("AssumeRoleResponseFilterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[Any]
-  
   @JSImport("@aws-sdk/client-sts", "AssumeRoleWithSAMLCommand")
   @js.native
   open class AssumeRoleWithSAMLCommand protected ()
     extends typings.awsSdkClientSts.distTypesCommandsMod.AssumeRoleWithSAMLCommand {
+    /**
+      * @public
+      */
     def this(input: AssumeRoleWithSAMLCommandInput) = this()
   }
   /* static members */
@@ -92,14 +73,13 @@ object mod {
     inline def getEndpointParameterInstructions(): EndpointParameterInstructions = ^.asInstanceOf[js.Dynamic].applyDynamic("getEndpointParameterInstructions")().asInstanceOf[EndpointParameterInstructions]
   }
   
-  inline def AssumeRoleWithSAMLRequestFilterSensitiveLog(obj: AssumeRoleWithSAMLRequest): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("AssumeRoleWithSAMLRequestFilterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[Any]
-  
-  inline def AssumeRoleWithSAMLResponseFilterSensitiveLog(obj: AssumeRoleWithSAMLResponse): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("AssumeRoleWithSAMLResponseFilterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[Any]
-  
   @JSImport("@aws-sdk/client-sts", "AssumeRoleWithWebIdentityCommand")
   @js.native
   open class AssumeRoleWithWebIdentityCommand protected ()
     extends typings.awsSdkClientSts.distTypesCommandsMod.AssumeRoleWithWebIdentityCommand {
+    /**
+      * @public
+      */
     def this(input: AssumeRoleWithWebIdentityCommandInput) = this()
   }
   /* static members */
@@ -112,18 +92,13 @@ object mod {
     inline def getEndpointParameterInstructions(): EndpointParameterInstructions = ^.asInstanceOf[js.Dynamic].applyDynamic("getEndpointParameterInstructions")().asInstanceOf[EndpointParameterInstructions]
   }
   
-  inline def AssumeRoleWithWebIdentityRequestFilterSensitiveLog(obj: AssumeRoleWithWebIdentityRequest): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("AssumeRoleWithWebIdentityRequestFilterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[Any]
-  
-  inline def AssumeRoleWithWebIdentityResponseFilterSensitiveLog(obj: AssumeRoleWithWebIdentityResponse): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("AssumeRoleWithWebIdentityResponseFilterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[Any]
-  
-  inline def AssumedRoleUserFilterSensitiveLog(obj: AssumedRoleUser): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("AssumedRoleUserFilterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[Any]
-  
-  inline def CredentialsFilterSensitiveLog(obj: Credentials): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("CredentialsFilterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[Any]
-  
   @JSImport("@aws-sdk/client-sts", "DecodeAuthorizationMessageCommand")
   @js.native
   open class DecodeAuthorizationMessageCommand protected ()
     extends typings.awsSdkClientSts.distTypesCommandsMod.DecodeAuthorizationMessageCommand {
+    /**
+      * @public
+      */
     def this(input: DecodeAuthorizationMessageCommandInput) = this()
   }
   /* static members */
@@ -136,10 +111,6 @@ object mod {
     inline def getEndpointParameterInstructions(): EndpointParameterInstructions = ^.asInstanceOf[js.Dynamic].applyDynamic("getEndpointParameterInstructions")().asInstanceOf[EndpointParameterInstructions]
   }
   
-  inline def DecodeAuthorizationMessageRequestFilterSensitiveLog(obj: DecodeAuthorizationMessageRequest): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("DecodeAuthorizationMessageRequestFilterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[Any]
-  
-  inline def DecodeAuthorizationMessageResponseFilterSensitiveLog(obj: DecodeAuthorizationMessageResponse): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("DecodeAuthorizationMessageResponseFilterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[Any]
-  
   @JSImport("@aws-sdk/client-sts", "ExpiredTokenException")
   @js.native
   open class ExpiredTokenException protected ()
@@ -150,12 +121,13 @@ object mod {
     def this(opts: ExceptionOptionTypeExpire) = this()
   }
   
-  inline def FederatedUserFilterSensitiveLog(obj: FederatedUser): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("FederatedUserFilterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[Any]
-  
   @JSImport("@aws-sdk/client-sts", "GetAccessKeyInfoCommand")
   @js.native
   open class GetAccessKeyInfoCommand protected ()
     extends typings.awsSdkClientSts.distTypesCommandsMod.GetAccessKeyInfoCommand {
+    /**
+      * @public
+      */
     def this(input: GetAccessKeyInfoCommandInput) = this()
   }
   /* static members */
@@ -168,14 +140,13 @@ object mod {
     inline def getEndpointParameterInstructions(): EndpointParameterInstructions = ^.asInstanceOf[js.Dynamic].applyDynamic("getEndpointParameterInstructions")().asInstanceOf[EndpointParameterInstructions]
   }
   
-  inline def GetAccessKeyInfoRequestFilterSensitiveLog(obj: GetAccessKeyInfoRequest): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("GetAccessKeyInfoRequestFilterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[Any]
-  
-  inline def GetAccessKeyInfoResponseFilterSensitiveLog(obj: GetAccessKeyInfoResponse): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("GetAccessKeyInfoResponseFilterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[Any]
-  
   @JSImport("@aws-sdk/client-sts", "GetCallerIdentityCommand")
   @js.native
   open class GetCallerIdentityCommand protected ()
     extends typings.awsSdkClientSts.distTypesCommandsMod.GetCallerIdentityCommand {
+    /**
+      * @public
+      */
     def this(input: GetCallerIdentityCommandInput) = this()
   }
   /* static members */
@@ -188,14 +159,13 @@ object mod {
     inline def getEndpointParameterInstructions(): EndpointParameterInstructions = ^.asInstanceOf[js.Dynamic].applyDynamic("getEndpointParameterInstructions")().asInstanceOf[EndpointParameterInstructions]
   }
   
-  inline def GetCallerIdentityRequestFilterSensitiveLog(obj: GetCallerIdentityRequest): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("GetCallerIdentityRequestFilterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[Any]
-  
-  inline def GetCallerIdentityResponseFilterSensitiveLog(obj: GetCallerIdentityResponse): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("GetCallerIdentityResponseFilterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[Any]
-  
   @JSImport("@aws-sdk/client-sts", "GetFederationTokenCommand")
   @js.native
   open class GetFederationTokenCommand protected ()
     extends typings.awsSdkClientSts.distTypesCommandsMod.GetFederationTokenCommand {
+    /**
+      * @public
+      */
     def this(input: GetFederationTokenCommandInput) = this()
   }
   /* static members */
@@ -208,14 +178,13 @@ object mod {
     inline def getEndpointParameterInstructions(): EndpointParameterInstructions = ^.asInstanceOf[js.Dynamic].applyDynamic("getEndpointParameterInstructions")().asInstanceOf[EndpointParameterInstructions]
   }
   
-  inline def GetFederationTokenRequestFilterSensitiveLog(obj: GetFederationTokenRequest): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("GetFederationTokenRequestFilterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[Any]
-  
-  inline def GetFederationTokenResponseFilterSensitiveLog(obj: GetFederationTokenResponse): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("GetFederationTokenResponseFilterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[Any]
-  
   @JSImport("@aws-sdk/client-sts", "GetSessionTokenCommand")
   @js.native
   open class GetSessionTokenCommand protected ()
     extends typings.awsSdkClientSts.distTypesCommandsMod.GetSessionTokenCommand {
+    /**
+      * @public
+      */
     def this(input: GetSessionTokenCommandInput) = this()
   }
   /* static members */
@@ -227,10 +196,6 @@ object mod {
     
     inline def getEndpointParameterInstructions(): EndpointParameterInstructions = ^.asInstanceOf[js.Dynamic].applyDynamic("getEndpointParameterInstructions")().asInstanceOf[EndpointParameterInstructions]
   }
-  
-  inline def GetSessionTokenRequestFilterSensitiveLog(obj: GetSessionTokenRequest): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("GetSessionTokenRequestFilterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[Any]
-  
-  inline def GetSessionTokenResponseFilterSensitiveLog(obj: GetSessionTokenResponse): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("GetSessionTokenResponseFilterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   @JSImport("@aws-sdk/client-sts", "IDPCommunicationErrorException")
   @js.native
@@ -292,8 +257,6 @@ object mod {
     def this(opts: ExceptionOptionTypePacked) = this()
   }
   
-  inline def PolicyDescriptorTypeFilterSensitiveLog(obj: PolicyDescriptorType): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("PolicyDescriptorTypeFilterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[Any]
-  
   @JSImport("@aws-sdk/client-sts", "RegionDisabledException")
   @js.native
   open class RegionDisabledException protected ()
@@ -327,8 +290,6 @@ object mod {
       */
     def this(options: ServiceExceptionOptions) = this()
   }
-  
-  inline def TagFilterSensitiveLog(obj: Tag): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("TagFilterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   inline def decorateDefaultCredentialProvider(provider: DefaultCredentialProvider): DefaultCredentialProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("decorateDefaultCredentialProvider")(provider.asInstanceOf[js.Any]).asInstanceOf[DefaultCredentialProvider]
   

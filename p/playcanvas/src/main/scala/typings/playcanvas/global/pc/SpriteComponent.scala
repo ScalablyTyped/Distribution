@@ -16,8 +16,10 @@ open class SpriteComponent protected ()
   /**
     * Create a new SpriteComponent instance.
     *
-    * @param {SpriteComponentSystem} system - The ComponentSystem that created this Component.
-    * @param {Entity} entity - The Entity that this Component is attached to.
+    * @param {import('./system.js').SpriteComponentSystem} system - The ComponentSystem that
+    * created this Component.
+    * @param {import('../../entity.js').Entity} entity - The Entity that this Component is
+    * attached to.
     */
   def this(system: typings.playcanvas.mod.SpriteComponentSystem, entity: typings.playcanvas.mod.Entity) = this()
 }

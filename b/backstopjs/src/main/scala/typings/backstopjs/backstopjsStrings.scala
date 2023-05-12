@@ -19,12 +19,16 @@ object backstopjsStrings {
   inline def browser: browser = "browser".asInstanceOf[browser]
   
   @js.native
-  sealed trait chromy extends StObject
-  inline def chromy: chromy = "chromy".asInstanceOf[chromy]
+  sealed trait chromium extends StObject
+  inline def chromium: chromium = "chromium".asInstanceOf[chromium]
   
   @js.native
   sealed trait desktop extends StObject
   inline def desktop: desktop = "desktop".asInstanceOf[desktop]
+  
+  @js.native
+  sealed trait firefox extends StObject
+  inline def firefox: firefox = "firefox".asInstanceOf[firefox]
   
   @js.native
   sealed trait init extends StObject
@@ -37,6 +41,10 @@ object backstopjsStrings {
   @js.native
   sealed trait phone extends StObject
   inline def phone: phone = "phone".asInstanceOf[phone]
+  
+  @js.native
+  sealed trait playwright extends StObject
+  inline def playwright: playwright = "playwright".asInstanceOf[playwright]
   
   @js.native
   sealed trait puppeteer extends StObject
@@ -53,4 +61,8 @@ object backstopjsStrings {
   @js.native
   sealed trait test extends StObject
   inline def test: test = "test".asInstanceOf[test]
+  
+  @js.native
+  sealed trait webkit extends StObject
+  inline def webkit: webkit = "webkit".asInstanceOf[webkit]
 }

@@ -1,5 +1,6 @@
 package typings.octokitOpenapiTypes.anon
 
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings._empty
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.`false positive`
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.`used in tests`
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.closed
@@ -20,7 +21,7 @@ trait Dismissedby extends StObject {
   
   var dismissed_comment: js.UndefOr[String | Null] = js.undefined
   
-  var dismissed_reason: Null | (`false positive`) | (/* won't fix */ String) | (`used in tests`)
+  var dismissed_reason: _empty | (`false positive`) | (/* won't fix */ String) | (`used in tests`) | Null
   
   var fixed_at: js.UndefOr[String | Null] = js.undefined
   
@@ -32,11 +33,11 @@ trait Dismissedby extends StObject {
   
   var number: Double
   
-  var rule: Severity
+  var rule: DescriptionId
   
   var state: open | closed | dismissed | fixed
   
-  var tool: Version
+  var tool: GuidName
   
   var updated_at: js.UndefOr[String] = js.undefined
   
@@ -50,9 +51,9 @@ object Dismissedby {
     instances_url: String,
     most_recent_instance: Category,
     number: Double,
-    rule: Severity,
+    rule: DescriptionId,
     state: open | closed | dismissed | fixed,
-    tool: Version,
+    tool: GuidName,
     url: String
   ): Dismissedby = {
     val __obj = js.Dynamic.literal(created_at = created_at.asInstanceOf[js.Any], html_url = html_url.asInstanceOf[js.Any], instances_url = instances_url.asInstanceOf[js.Any], most_recent_instance = most_recent_instance.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], rule = rule.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], tool = tool.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], dismissed_at = null, dismissed_by = null, dismissed_reason = null)
@@ -78,7 +79,7 @@ object Dismissedby {
     
     inline def setDismissed_commentUndefined: Self = StObject.set(x, "dismissed_comment", js.undefined)
     
-    inline def setDismissed_reason(value: (`false positive`) | (/* won't fix */ String) | (`used in tests`)): Self = StObject.set(x, "dismissed_reason", value.asInstanceOf[js.Any])
+    inline def setDismissed_reason(value: _empty | (`false positive`) | (/* won't fix */ String) | (`used in tests`)): Self = StObject.set(x, "dismissed_reason", value.asInstanceOf[js.Any])
     
     inline def setDismissed_reasonNull: Self = StObject.set(x, "dismissed_reason", null)
     
@@ -96,11 +97,11 @@ object Dismissedby {
     
     inline def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     
-    inline def setRule(value: Severity): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
+    inline def setRule(value: DescriptionId): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
     
     inline def setState(value: open | closed | dismissed | fixed): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    inline def setTool(value: Version): Self = StObject.set(x, "tool", value.asInstanceOf[js.Any])
+    inline def setTool(value: GuidName): Self = StObject.set(x, "tool", value.asInstanceOf[js.Any])
     
     inline def setUpdated_at(value: String): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])
     

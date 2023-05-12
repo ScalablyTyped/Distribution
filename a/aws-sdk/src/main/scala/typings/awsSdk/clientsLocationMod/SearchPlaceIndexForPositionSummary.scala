@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SearchPlaceIndexForPositionSummary extends StObject {
   
   /**
-    * The geospatial data provider attached to the place index resource specified in the request. Values can be one of the following:   Esri   Here   For more information about data providers, see Amazon Location Service data providers.
+    * The geospatial data provider attached to the place index resource specified in the request. Values can be one of the following:   Esri   Grab   Here   For more information about data providers, see Amazon Location Service data providers.
     */
   var DataSource: String
   

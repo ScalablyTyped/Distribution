@@ -34,7 +34,7 @@ object RecipientType extends StObject {
   /**
     * Specifies the recipient is an SMTP email address that isn't on the Exchange server. It also refers to a recipient added from a personal Outlook address book.
     * 
-    * **Note**: In Outlook on Windows starting with Version 2210 (Build 15813.20002), Global Address Book (GAL) recipients saved to a personal address book return
+    * **Important**: In Outlook on Windows (starting with Version 2210 (Build 15813.20002)), on Mac, and on the web, Global Address Book (GAL) recipients saved to a personal address book return
     * the `ExternalUser` value, even if their SMTP email address appears on the Exchange server. Recipients return a `User` value only if they're directly
     * added or resolved against the GAL.
     */
@@ -46,6 +46,10 @@ object RecipientType extends StObject {
   /**
     * Specifies the recipient isn't one of the other recipient types. It also refers to a recipient that isn't resolved against the Exchange address book,
     * and is therefore treated as an external SMTP address.
+    *
+    * **Important**: In Outlook on Android and on iOS, Global Address Book (GAL) recipients saved to a personal address book return
+    * the `Other` value, even if their SMTP email address appears on the Exchange server. Recipients return a `User` value only if they're directly
+    * added or resolved against the GAL.
     */
   @js.native
   sealed trait Other

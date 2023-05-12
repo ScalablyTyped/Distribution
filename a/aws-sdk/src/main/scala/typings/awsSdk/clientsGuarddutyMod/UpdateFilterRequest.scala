@@ -12,7 +12,7 @@ trait UpdateFilterRequest extends StObject {
   var Action: js.UndefOr[FilterAction] = js.undefined
   
   /**
-    * The description of the filter.
+    * The description of the filter. Valid characters include alphanumeric characters, and special characters such as hyphen, period, colon, underscore, parentheses ({ }, [ ], and ( )), forward slash, horizontal tab, vertical tab, newline, form feed, return, and whitespace.
     */
   var Description: js.UndefOr[FilterDescription] = js.undefined
   

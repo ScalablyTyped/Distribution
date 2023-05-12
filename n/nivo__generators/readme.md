@@ -1,7 +1,7 @@
 
 # Scala.js typings for nivo__generators
 
-Typings are for version 0.80.0
+Typings are for version 0.83.0
 
 ## Library description:
 Data generators used for nivo-website and http API samples

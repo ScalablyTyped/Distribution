@@ -2,10 +2,12 @@ package typings.firebaseFirestore
 
 import typings.firebaseFirestore.distLitePackagesFirestoreSrcApiCredentialsMod.CredentialsProvider
 import typings.firebaseFirestore.distLitePackagesFirestoreSrcAuthUserMod.User
+import typings.firebaseFirestore.distLitePackagesFirestoreSrcCoreAggregateMod.Aggregate
 import typings.firebaseFirestore.distLitePackagesFirestoreSrcCoreQueryMod.Query
 import typings.firebaseFirestore.distLitePackagesFirestoreSrcModelDocumentKeyMod.DocumentKey
 import typings.firebaseFirestore.distLitePackagesFirestoreSrcModelDocumentMod.Document
 import typings.firebaseFirestore.distLitePackagesFirestoreSrcModelMutationMod.Mutation
+import typings.firebaseFirestore.distLitePackagesFirestoreSrcProtosFirestoreProtoApiMod.ApiClientObjectMap
 import typings.firebaseFirestore.distLitePackagesFirestoreSrcProtosFirestoreProtoApiMod.Value
 import typings.firebaseFirestore.distLitePackagesFirestoreSrcRemoteConnectionMod.Connection
 import typings.firebaseFirestore.distLitePackagesFirestoreSrcRemotePersistentStreamMod.PersistentListenStream
@@ -28,6 +30,8 @@ object distLitePackagesFirestoreSrcRemoteDatastoreMod {
   @js.native
   open class Datastore () extends StObject {
     
+    var serializer: JsonProtoSerializer = js.native
+    
     def terminate(): Unit = js.native
   }
   
@@ -35,7 +39,7 @@ object distLitePackagesFirestoreSrcRemoteDatastoreMod {
   
   inline def invokeCommitRpc(datastore: Datastore, mutations: js.Array[Mutation]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("invokeCommitRpc")(datastore.asInstanceOf[js.Any], mutations.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  inline def invokeRunAggregationQueryRpc(datastore: Datastore, query: Query): js.Promise[js.Array[Value]] = (^.asInstanceOf[js.Dynamic].applyDynamic("invokeRunAggregationQueryRpc")(datastore.asInstanceOf[js.Any], query.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Value]]]
+  inline def invokeRunAggregationQueryRpc(datastore: Datastore, query: Query, aggregates: js.Array[Aggregate]): js.Promise[ApiClientObjectMap[Value]] = (^.asInstanceOf[js.Dynamic].applyDynamic("invokeRunAggregationQueryRpc")(datastore.asInstanceOf[js.Any], query.asInstanceOf[js.Any], aggregates.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ApiClientObjectMap[Value]]]
   
   inline def invokeRunQueryRpc(datastore: Datastore, query: Query): js.Promise[js.Array[Document]] = (^.asInstanceOf[js.Dynamic].applyDynamic("invokeRunQueryRpc")(datastore.asInstanceOf[js.Any], query.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Document]]]
   

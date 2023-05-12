@@ -2,7 +2,8 @@ package typings.blueprintjsSelect.anon
 
 import typings.blueprintjsCore.libEsmCommonIntentMod.Intent
 import typings.blueprintjsCore.libEsmCommonPropsMod.MaybeElement
-import typings.blueprintjsIcons.libEsmGenerated16pxBlueprintIcons16Mod.BlueprintIcons16Id
+import typings.blueprintjsIcons.libEsmGeneratedIcons16pxBlueprintIcons16Mod.BlueprintIcons16Id
+import typings.blueprintjsSelect.blueprintjsSelectStrings._empty
 import typings.blueprintjsSelect.blueprintjsSelectStrings.`additions removals`
 import typings.blueprintjsSelect.blueprintjsSelectStrings.`additions text`
 import typings.blueprintjsSelect.blueprintjsSelectStrings.`inline`
@@ -10,8 +11,10 @@ import typings.blueprintjsSelect.blueprintjsSelectStrings.`removals additions`
 import typings.blueprintjsSelect.blueprintjsSelectStrings.`removals text`
 import typings.blueprintjsSelect.blueprintjsSelectStrings.`text additions`
 import typings.blueprintjsSelect.blueprintjsSelectStrings.`text removals`
+import typings.blueprintjsSelect.blueprintjsSelectStrings.`use-credentials`
 import typings.blueprintjsSelect.blueprintjsSelectStrings.additions
 import typings.blueprintjsSelect.blueprintjsSelectStrings.all
+import typings.blueprintjsSelect.blueprintjsSelectStrings.anonymous
 import typings.blueprintjsSelect.blueprintjsSelectStrings.ascending
 import typings.blueprintjsSelect.blueprintjsSelectStrings.assertive
 import typings.blueprintjsSelect.blueprintjsSelectStrings.both
@@ -99,6 +102,7 @@ import typings.react.mod.WheelEvent
 import typings.react.mod.WheelEventHandler
 import typings.react.mod.global.JSX.Element
 import typings.std.Event
+import typings.std.FormData
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -235,11 +239,13 @@ trait PartialOmitInputGroupPropAbout extends StObject {
   
   var color: js.UndefOr[String] = js.undefined
   
+  var content: js.UndefOr[String] = js.undefined
+  
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
   
   var contextMenu: js.UndefOr[String] = js.undefined
   
-  var crossOrigin: js.UndefOr[String] = js.undefined
+  var crossOrigin: js.UndefOr[anonymous | `use-credentials` | _empty] = js.undefined
   
   var dangerouslySetInnerHTML: js.UndefOr[Html] = js.undefined
   
@@ -257,7 +263,7 @@ trait PartialOmitInputGroupPropAbout extends StObject {
   
   var form: js.UndefOr[String] = js.undefined
   
-  var formAction: js.UndefOr[String] = js.undefined
+  var formAction: js.UndefOr[String | (js.Function1[/* formData */ FormData, Unit])] = js.undefined
   
   var formEncType: js.UndefOr[String] = js.undefined
   
@@ -274,6 +280,8 @@ trait PartialOmitInputGroupPropAbout extends StObject {
   var id: js.UndefOr[String] = js.undefined
   
   var inlist: js.UndefOr[Any] = js.undefined
+  
+  var inputClassName: js.UndefOr[String] = js.undefined
   
   var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
   
@@ -487,11 +495,15 @@ trait PartialOmitInputGroupPropAbout extends StObject {
   
   var readOnly: js.UndefOr[Boolean] = js.undefined
   
+  var rel: js.UndefOr[String] = js.undefined
+  
   var required: js.UndefOr[Boolean] = js.undefined
   
   var resource: js.UndefOr[String] = js.undefined
   
   var results: js.UndefOr[Double] = js.undefined
+  
+  var rev: js.UndefOr[String] = js.undefined
   
   var rightElement: js.UndefOr[Element] = js.undefined
   
@@ -522,7 +534,7 @@ trait PartialOmitInputGroupPropAbout extends StObject {
   var tabIndex: js.UndefOr[Double] = js.undefined
   
   var tagName: js.UndefOr[
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.blueprintjsSelect.blueprintjsSelectStrings.a, typings.blueprintjsSelect.blueprintjsSelectStrings.abbr, typings.blueprintjsSelect.blueprintjsSelectStrings.address */ Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177, starting with typings.blueprintjsSelect.blueprintjsSelectStrings.a, typings.blueprintjsSelect.blueprintjsSelectStrings.abbr, typings.blueprintjsSelect.blueprintjsSelectStrings.address */ Any
   ] = js.undefined
   
   var title: js.UndefOr[String] = js.undefined
@@ -803,15 +815,19 @@ object PartialOmitInputGroupPropAbout {
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    
     inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
     
     inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+    
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
     inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
     
     inline def setContextMenuUndefined: Self = StObject.set(x, "contextMenu", js.undefined)
     
-    inline def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+    inline def setCrossOrigin(value: anonymous | `use-credentials` | _empty): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
     
     inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
     
@@ -845,7 +861,9 @@ object PartialOmitInputGroupPropAbout {
     
     inline def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
     
-    inline def setFormAction(value: String): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+    inline def setFormAction(value: String | (js.Function1[/* formData */ FormData, Unit])): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+    
+    inline def setFormActionFunction1(value: /* formData */ FormData => Unit): Self = StObject.set(x, "formAction", js.Any.fromFunction1(value))
     
     inline def setFormActionUndefined: Self = StObject.set(x, "formAction", js.undefined)
     
@@ -882,6 +900,10 @@ object PartialOmitInputGroupPropAbout {
     inline def setInlist(value: Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
     
     inline def setInlistUndefined: Self = StObject.set(x, "inlist", js.undefined)
+    
+    inline def setInputClassName(value: String): Self = StObject.set(x, "inputClassName", value.asInstanceOf[js.Any])
+    
+    inline def setInputClassNameUndefined: Self = StObject.set(x, "inputClassName", js.undefined)
     
     inline def setInputMode(value: none | text | tel | url | email | numeric | decimal | search): Self = StObject.set(x, "inputMode", value.asInstanceOf[js.Any])
     
@@ -1313,6 +1335,10 @@ object PartialOmitInputGroupPropAbout {
     
     inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
     
+    inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+    
+    inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+    
     inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     
     inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
@@ -1324,6 +1350,10 @@ object PartialOmitInputGroupPropAbout {
     inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
     inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+    
+    inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+    
+    inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
     
     inline def setRightElement(value: Element): Self = StObject.set(x, "rightElement", value.asInstanceOf[js.Any])
     
@@ -1382,7 +1412,7 @@ object PartialOmitInputGroupPropAbout {
     inline def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
     
     inline def setTagName(
-      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.blueprintjsSelect.blueprintjsSelectStrings.a, typings.blueprintjsSelect.blueprintjsSelectStrings.abbr, typings.blueprintjsSelect.blueprintjsSelectStrings.address */ Any
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177, starting with typings.blueprintjsSelect.blueprintjsSelectStrings.a, typings.blueprintjsSelect.blueprintjsSelectStrings.abbr, typings.blueprintjsSelect.blueprintjsSelectStrings.address */ Any
     ): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
     
     inline def setTagNameUndefined: Self = StObject.set(x, "tagName", js.undefined)

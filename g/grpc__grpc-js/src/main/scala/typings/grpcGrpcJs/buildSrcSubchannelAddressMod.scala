@@ -15,6 +15,9 @@ object buildSrcSubchannelAddressMod {
   inline def stringToSubchannelAddress(addressString: String): SubchannelAddress = ^.asInstanceOf[js.Dynamic].applyDynamic("stringToSubchannelAddress")(addressString.asInstanceOf[js.Any]).asInstanceOf[SubchannelAddress]
   inline def stringToSubchannelAddress(addressString: String, port: Double): SubchannelAddress = (^.asInstanceOf[js.Dynamic].applyDynamic("stringToSubchannelAddress")(addressString.asInstanceOf[js.Any], port.asInstanceOf[js.Any])).asInstanceOf[SubchannelAddress]
   
+  inline def subchannelAddressEqual(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("subchannelAddressEqual")().asInstanceOf[Boolean]
+  inline def subchannelAddressEqual(address1: Unit, address2: SubchannelAddress): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("subchannelAddressEqual")(address1.asInstanceOf[js.Any], address2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def subchannelAddressEqual(address1: SubchannelAddress): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("subchannelAddressEqual")(address1.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   inline def subchannelAddressEqual(address1: SubchannelAddress, address2: SubchannelAddress): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("subchannelAddressEqual")(address1.asInstanceOf[js.Any], address2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   inline def subchannelAddressToString(address: SubchannelAddress): String = ^.asInstanceOf[js.Dynamic].applyDynamic("subchannelAddressToString")(address.asInstanceOf[js.Any]).asInstanceOf[String]

@@ -1,27 +1,18 @@
 package typings.xstate.libTypesMod
 
+import typings.xstate.libTypesMod.ActionTypes.Cancel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CancelAction
+@js.native
+trait CancelAction[TContext, TExpressionEvent /* <: EventObject */, TEvent /* <: EventObject */]
   extends StObject
-     with ActionObject[Any, Any]
-     with _BaseAction[Any, Any, Any] {
+     with ActionObject[TContext, TExpressionEvent, TEvent, BaseActionObject]
+     with _BaseAction[TContext, TExpressionEvent, Any, TEvent] {
   
-  var sendId: String | Double
-}
-object CancelAction {
+  var sendId: String | Double = js.native
   
-  inline def apply(sendId: String | Double, `type`: String): CancelAction = {
-    val __obj = js.Dynamic.literal(sendId = sendId.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[CancelAction]
-  }
-  
-  @scala.inline
-  implicit open class MutableBuilder[Self <: CancelAction] (val x: Self) extends AnyVal {
-    
-    inline def setSendId(value: String | Double): Self = StObject.set(x, "sendId", value.asInstanceOf[js.Any])
-  }
+  @JSName("type")
+  var type_CancelAction: Cancel = js.native
 }

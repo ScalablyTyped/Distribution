@@ -123,12 +123,20 @@ object angularCommonStrings {
   inline def date: date = "date".asInstanceOf[date]
   
   @js.native
+  sealed trait disableOptimizedSrcset extends StObject
+  inline def disableOptimizedSrcset: disableOptimizedSrcset = "disableOptimizedSrcset".asInstanceOf[disableOptimizedSrcset]
+  
+  @js.native
   sealed trait eager extends StObject
   inline def eager: eager = "eager".asInstanceOf[eager]
   
   @js.native
   sealed trait events extends StObject
   inline def events: events = "events".asInstanceOf[events]
+  
+  @js.native
+  sealed trait fill extends StObject
+  inline def fill: fill = "fill".asInstanceOf[fill]
   
   @js.native
   sealed trait height extends StObject
@@ -143,8 +151,8 @@ object angularCommonStrings {
   inline def i18nSelect: i18nSelect = "i18nSelect".asInstanceOf[i18nSelect]
   
   @js.native
-  sealed trait `img[ngSrc]Commaimg[rawSrc]` extends StObject
-  inline def `img[ngSrc]Commaimg[rawSrc]`: `img[ngSrc]Commaimg[rawSrc]` = "img[ngSrc],img[rawSrc]".asInstanceOf[`img[ngSrc]Commaimg[rawSrc]`]
+  sealed trait `img[ngSrc]` extends StObject
+  inline def `img[ngSrc]`: `img[ngSrc]` = "img[ngSrc]".asInstanceOf[`img[ngSrc]`]
   
   @js.native
   sealed trait json extends StObject
@@ -157,6 +165,10 @@ object angularCommonStrings {
   @js.native
   sealed trait `lazy` extends StObject
   inline def `lazy`: `lazy` = "lazy".asInstanceOf[`lazy`]
+  
+  @js.native
+  sealed trait loaderParams extends StObject
+  inline def loaderParams: loaderParams = "loaderParams".asInstanceOf[loaderParams]
   
   @js.native
   sealed trait loading extends StObject
@@ -279,16 +291,16 @@ object angularCommonStrings {
   inline def priority: priority = "priority".asInstanceOf[priority]
   
   @js.native
-  sealed trait rawSrc extends StObject
-  inline def rawSrc: rawSrc = "rawSrc".asInstanceOf[rawSrc]
-  
-  @js.native
   sealed trait response extends StObject
   inline def response: response = "response".asInstanceOf[response]
   
   @js.native
   sealed trait rtl extends StObject
   inline def rtl: rtl = "rtl".asInstanceOf[rtl]
+  
+  @js.native
+  sealed trait sizes extends StObject
+  inline def sizes: sizes = "sizes".asInstanceOf[sizes]
   
   @js.native
   sealed trait slice extends StObject

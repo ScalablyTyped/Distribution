@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "fast-copy" : "3.0.0"
+      "fast-copy" : "3.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "fast-copy" : "3.0.0"
+      "fast-copy" : "3.0.1"
     }
   ],
   "compile-devDependencies" : [

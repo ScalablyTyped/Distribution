@@ -1,5 +1,6 @@
 package typings.babylonjs.global.BABYLON
 
+import typings.babylonjs.BABYLON.PhysicsAffectedBodyWithData
 import typings.babylonjs.BABYLON.PhysicsAffectedImpostorWithData
 import typings.babylonjs.anon.DiameterSegments
 import org.scalablytyped.runtime.StObject
@@ -11,6 +12,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class PhysicsRadialExplosionEventOptions ()
   extends StObject
      with typings.babylonjs.BABYLON.PhysicsRadialExplosionEventOptions {
+  
+  /**
+    * Sphere options for the radial explosion.
+    */
+  /* CompleteClass */
+  override def affectedBodiesCallback(affectedBodiesWithData: js.Array[PhysicsAffectedBodyWithData]): Unit = js.native
   
   /**
     * Sphere options for the radial explosion.

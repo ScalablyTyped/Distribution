@@ -12,6 +12,9 @@ trait SnackbarProps
   extends StObject
      with HTMLProps[Any] {
   
+  @JSName("action")
+  var action_SnackbarProps: js.UndefOr[String] = js.undefined
+  
   var active: Boolean
   
   var onActionClick: js.UndefOr[MouseEventHandler[Snackbar]] = js.undefined
@@ -29,6 +32,10 @@ object SnackbarProps {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: SnackbarProps] (val x: Self) extends AnyVal {
+    
+    inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    
+    inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
     inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

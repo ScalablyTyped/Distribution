@@ -3,7 +3,7 @@ package typings.expressValidator
 import typings.expressValidator.srcContextBuilderMod.ContextBuilder
 import typings.expressValidator.srcContextMod.Context
 import typings.expressValidator.srcContextMod.ReadonlyContext
-import typings.expressValidator.srcSelectFieldsMod.SelectFields_
+import typings.expressValidator.srcFieldSelectionMod.SelectFields_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,10 +27,10 @@ object srcChainMod {
     def this(builderOrContext: Context, selectFields: SelectFields_) = this()
   }
   
-  @JSImport("express-validator/src/chain", "ResultWithContext")
+  @JSImport("express-validator/src/chain", "ResultWithContextImpl")
   @js.native
-  open class ResultWithContext protected ()
-    extends typings.expressValidator.srcChainContextRunnerImplMod.ResultWithContext {
+  open class ResultWithContextImpl protected ()
+    extends typings.expressValidator.srcChainContextRunnerImplMod.ResultWithContextImpl {
     def this(context: ReadonlyContext) = this()
   }
   

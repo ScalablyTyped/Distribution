@@ -1,8 +1,7 @@
 package typings.sinon.mod
 
-import typings.sinon.anon.DeepPartialOrMatcherArray
-import typings.sinon.anon.MatchArgumentsArrayany
-import typings.sinon.anon.PartialMatchArgumentsArra
+import typings.sinon.anon.MatchExactArgumentsArraya
+import typings.sinon.anon.MatchPartialArgumentsArra
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +25,7 @@ trait SinonExpectation extends StObject {
     * Returns true if spy was always called with the provided arguments (and possibly others).
     */
   def alwaysCalledWith(
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type MatchArguments<TArgs> is not an array type */ args: MatchArgumentsArrayany
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type MatchExactArguments<TArgs> is not an array type */ args: MatchExactArgumentsArraya
   ): Boolean = js.native
   
   /**
@@ -34,7 +33,7 @@ trait SinonExpectation extends StObject {
     * @param args
     */
   def alwaysCalledWithExactly(
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type MatchArguments<TArgs> is not an array type */ args: MatchArgumentsArrayany
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type MatchExactArguments<TArgs> is not an array type */ args: MatchExactArgumentsArraya
   ): Boolean = js.native
   
   /**
@@ -149,17 +148,17 @@ trait SinonExpectation extends StObject {
   var calledOnce: Boolean = js.native
   
   def calledOnceWith(
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type MatchArguments<TArgs> is not an array type */ args: MatchArgumentsArrayany
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type MatchPartialArguments<TArgs> is not an array type */ args: MatchPartialArgumentsArra
   ): Boolean = js.native
   
   def calledOnceWithExactly(
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type MatchArguments<TArgs> is not an array type */ args: MatchArgumentsArrayany
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type MatchExactArguments<TArgs> is not an array type */ args: MatchExactArgumentsArraya
   ): Boolean = js.native
   @JSName("calledOnceWithExactly")
-  var calledOnceWithExactly_Original: js.Function1[/* args */ MatchArgumentsArrayany, Boolean] = js.native
+  var calledOnceWithExactly_Original: js.Function1[/* args */ MatchExactArgumentsArraya, Boolean] = js.native
   
   @JSName("calledOnceWith")
-  var calledOnceWith_Original: js.Function1[/* args */ MatchArgumentsArrayany, Boolean] = js.native
+  var calledOnceWith_Original: js.Function1[/* args */ MatchPartialArgumentsArra, Boolean] = js.native
   
   /**
     * true if the spy was called exactly thrice
@@ -172,27 +171,27 @@ trait SinonExpectation extends StObject {
   var calledTwice: Boolean = js.native
   
   def calledWith(
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Partial<MatchArguments<TArgs>> is not an array type */ args: PartialMatchArgumentsArra
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type MatchPartialArguments<TArgs> is not an array type */ args: MatchPartialArgumentsArra
   ): Boolean = js.native
   
   def calledWithExactly(
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type MatchArguments<TArgs> is not an array type */ args: MatchArgumentsArrayany
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type MatchExactArguments<TArgs> is not an array type */ args: MatchExactArgumentsArraya
   ): Boolean = js.native
   @JSName("calledWithExactly")
-  var calledWithExactly_Original: js.Function1[/* args */ MatchArgumentsArrayany, Boolean] = js.native
+  var calledWithExactly_Original: js.Function1[/* args */ MatchExactArgumentsArraya, Boolean] = js.native
   
   def calledWithMatch(
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type DeepPartialOrMatcher<TArgs> is not an array type */ args: DeepPartialOrMatcherArray
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type MatchPartialArguments<TArgs> is not an array type */ args: MatchPartialArgumentsArra
   ): Boolean = js.native
   @JSName("calledWithMatch")
-  var calledWithMatch_Original: js.Function1[/* args */ DeepPartialOrMatcherArray, Boolean] = js.native
+  var calledWithMatch_Original: js.Function1[/* args */ MatchPartialArgumentsArra, Boolean] = js.native
   
   def calledWithNew(): Boolean = js.native
   @JSName("calledWithNew")
   var calledWithNew_Original: js.Function0[Boolean] = js.native
   
   @JSName("calledWith")
-  var calledWith_Original: js.Function1[/* args */ PartialMatchArgumentsArra, Boolean] = js.native
+  var calledWith_Original: js.Function1[/* args */ MatchPartialArgumentsArra, Boolean] = js.native
   
   /**
     * Causes the stub to call the argument at the provided index as a callback function.
@@ -329,7 +328,7 @@ trait SinonExpectation extends StObject {
     * @param args
     */
   def neverCalledWith(
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type MatchArguments<TArgs> is not an array type */ args: MatchArgumentsArrayany
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type MatchExactArguments<TArgs> is not an array type */ args: MatchExactArgumentsArraya
   ): Boolean = js.native
   
   /**
@@ -347,17 +346,17 @@ trait SinonExpectation extends StObject {
   var notCalled: Boolean = js.native
   
   def notCalledWith(
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type MatchArguments<TArgs> is not an array type */ args: MatchArgumentsArrayany
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type MatchExactArguments<TArgs> is not an array type */ args: MatchExactArgumentsArraya
   ): Boolean = js.native
   
   def notCalledWithMatch(
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type DeepPartialOrMatcher<TArgs> is not an array type */ args: DeepPartialOrMatcherArray
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type MatchPartialArguments<TArgs> is not an array type */ args: MatchPartialArgumentsArra
   ): Boolean = js.native
   @JSName("notCalledWithMatch")
-  var notCalledWithMatch_Original: js.Function1[/* args */ DeepPartialOrMatcherArray, Boolean] = js.native
+  var notCalledWithMatch_Original: js.Function1[/* args */ MatchPartialArgumentsArra, Boolean] = js.native
   
   @JSName("notCalledWith")
-  var notCalledWith_Original: js.Function1[/* args */ MatchArgumentsArrayany, Boolean] = js.native
+  var notCalledWith_Original: js.Function1[/* args */ MatchExactArgumentsArraya, Boolean] = js.native
   
   def on(obj: Any): SinonExpectation = js.native
   
@@ -595,7 +594,7 @@ trait SinonExpectation extends StObject {
     * @param args Expected args
     */
   def withArgs(
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type MatchArguments<TArgs> is not an array type */ args: MatchArgumentsArrayany
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type MatchPartialArguments<TArgs> is not an array type */ args: MatchPartialArgumentsArra
   ): SinonSpy[js.Array[Any], Any] = js.native
   /**
     * Stubs the method only for the provided arguments.
@@ -605,7 +604,7 @@ trait SinonExpectation extends StObject {
     */
   @JSName("withArgs")
   def withArgs_SinonStub(
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type MatchArguments<TArgs> is not an array type */ args: MatchArgumentsArrayany
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type MatchPartialArguments<TArgs> is not an array type */ args: MatchPartialArgumentsArra
   ): SinonStub[js.Array[Any], Any] = js.native
   
   /**

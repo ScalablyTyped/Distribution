@@ -35,6 +35,12 @@ object MorphTargetManager {
   def EnableTextureStorage: Boolean = js.native
   inline def EnableTextureStorage_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EnableTextureStorage")(x.asInstanceOf[js.Any])
   
+  /** Maximum number of active morph targets supported in the "vertex attribute" mode (i.e., not the "texture" mode) */
+  @JSGlobal("BABYLON.MorphTargetManager.MaxActiveMorphTargetsInVertexAttributeMode")
+  @js.native
+  def MaxActiveMorphTargetsInVertexAttributeMode: Double = js.native
+  inline def MaxActiveMorphTargetsInVertexAttributeMode_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MaxActiveMorphTargetsInVertexAttributeMode")(x.asInstanceOf[js.Any])
+  
   /**
     * Creates a new MorphTargetManager from serialized data
     * @param serializationObject defines the serialized data

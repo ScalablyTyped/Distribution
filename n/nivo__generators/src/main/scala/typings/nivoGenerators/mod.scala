@@ -7,6 +7,7 @@ import typings.nivoGenerators.anon.Data
 import typings.nivoGenerators.anon.DataId
 import typings.nivoGenerators.anon.DataKeys
 import typings.nivoGenerators.anon.Day
+import typings.nivoGenerators.anon.Group
 import typings.nivoGenerators.anon.Groups
 import typings.nivoGenerators.anon.Id
 import typings.nivoGenerators.anon.Keys
@@ -19,9 +20,13 @@ import typings.nivoGenerators.anon.MaxIterations
 import typings.nivoGenerators.anon.Nodes
 import typings.nivoGenerators.anon.RandMax
 import typings.nivoGenerators.anon.SerieIds
+import typings.nivoGenerators.anon.Total
+import typings.nivoGenerators.anon.Value
 import typings.nivoGenerators.anon.XNumber
 import typings.nivoGenerators.anon.Y
+import typings.nivoGenerators.distTypesBoxplotMod.BoxPlotConfig
 import typings.nivoGenerators.distTypesBulletMod.Options
+import typings.nivoGenerators.distTypesWaffleMod.WaffleDatumSpec
 import typings.std.Record
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
@@ -33,6 +38,8 @@ object mod {
   @JSImport("@nivo/generators", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
+  
+  inline def generateBoxPlotData(config: js.Array[BoxPlotConfig]): js.Array[Group] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateBoxPlotData")(config.asInstanceOf[js.Any]).asInstanceOf[js.Array[Group]]
   
   inline def generateBulletData(id: String, max: Double): Id = (^.asInstanceOf[js.Dynamic].applyDynamic("generateBulletData")(id.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Id]
   inline def generateBulletData(id: String, max: Double, param2: Options): Id = (^.asInstanceOf[js.Dynamic].applyDynamic("generateBulletData")(id.asInstanceOf[js.Any], max.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[Id]
@@ -142,10 +149,10 @@ object mod {
   inline def generateParallelCoordinatesData(): js.Array[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateParallelCoordinatesData")().asInstanceOf[js.Array[js.Object]]
   inline def generateParallelCoordinatesData(param0: typings.nivoGenerators.distTypesParallelCoordinatesMod.Options): js.Array[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateParallelCoordinatesData")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Object]]
   
-  inline def generateProgrammingLanguageStats(): js.Array[Label] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateProgrammingLanguageStats")().asInstanceOf[js.Array[Label]]
-  inline def generateProgrammingLanguageStats(shouldShuffle: Boolean): js.Array[Label] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateProgrammingLanguageStats")(shouldShuffle.asInstanceOf[js.Any]).asInstanceOf[js.Array[Label]]
-  inline def generateProgrammingLanguageStats(shouldShuffle: Boolean, limit: Double): js.Array[Label] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateProgrammingLanguageStats")(shouldShuffle.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[js.Array[Label]]
-  inline def generateProgrammingLanguageStats(shouldShuffle: Unit, limit: Double): js.Array[Label] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateProgrammingLanguageStats")(shouldShuffle.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[js.Array[Label]]
+  inline def generateProgrammingLanguageStats(): js.Array[Value] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateProgrammingLanguageStats")().asInstanceOf[js.Array[Value]]
+  inline def generateProgrammingLanguageStats(shouldShuffle: Boolean): js.Array[Value] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateProgrammingLanguageStats")(shouldShuffle.asInstanceOf[js.Any]).asInstanceOf[js.Array[Value]]
+  inline def generateProgrammingLanguageStats(shouldShuffle: Boolean, limit: Double): js.Array[Value] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateProgrammingLanguageStats")(shouldShuffle.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[js.Array[Value]]
+  inline def generateProgrammingLanguageStats(shouldShuffle: Unit, limit: Double): js.Array[Value] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateProgrammingLanguageStats")(shouldShuffle.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[js.Array[Value]]
   
   inline def generateSankeyData(): Nodes = ^.asInstanceOf[js.Dynamic].applyDynamic("generateSankeyData")().asInstanceOf[Nodes]
   inline def generateSankeyData(param0: MaxIterations): Nodes = ^.asInstanceOf[js.Dynamic].applyDynamic("generateSankeyData")(param0.asInstanceOf[js.Any]).asInstanceOf[Nodes]
@@ -159,6 +166,8 @@ object mod {
   inline def generateStackData(size: Double): js.Array[js.Array[XNumber]] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateStackData")(size.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Array[XNumber]]]
   
   inline def generateSwarmPlotData(groups: js.Array[String], param1: CategoryCount): Data = (^.asInstanceOf[js.Dynamic].applyDynamic("generateSwarmPlotData")(groups.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Data]
+  
+  inline def generateWaffleData[D /* <: WaffleDatumSpec */](param0: Total[D]): js.Array[D & Label] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateWaffleData")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Array[D & Label]]
   
   inline def generateWinesTastes(): DataKeys = ^.asInstanceOf[js.Dynamic].applyDynamic("generateWinesTastes")().asInstanceOf[DataKeys]
   inline def generateWinesTastes(param0: RandMax): DataKeys = ^.asInstanceOf[js.Dynamic].applyDynamic("generateWinesTastes")(param0.asInstanceOf[js.Any]).asInstanceOf[DataKeys]

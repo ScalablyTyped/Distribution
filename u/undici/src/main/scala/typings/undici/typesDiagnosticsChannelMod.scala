@@ -2,12 +2,11 @@ package typings.undici
 
 import typings.node.bufferMod.global.Buffer
 import typings.node.netMod.Socket
-import typings.node.tlsMod.TLSSocket
 import typings.node.urlMod.URL_
-import typings.undici.typesConnectorMod.Callback
-import typings.undici.typesConnectorMod.Options
-import typings.undici.typesConnectorMod.connector
-import typings.undici.typesDispatcherMod.HttpMethod
+import typings.undici.typesConnectorMod.buildConnector.Callback
+import typings.undici.typesConnectorMod.buildConnector.Options
+import typings.undici.typesConnectorMod.buildConnector.connector
+import typings.undici.typesDispatcherMod.Dispatcher.HttpMethod
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,12 +19,14 @@ object typesDiagnosticsChannelMod {
       
       var connectParams: ConnectParams
       
-      var connector: Connector
+      def connector(options: Options, callback: Callback): Unit
+      @JSName("connector")
+      var connector_Original: Connector
     }
     object ClientBeforeConnectMessage {
       
-      inline def apply(connectParams: ConnectParams, connector: Connector): ClientBeforeConnectMessage = {
-        val __obj = js.Dynamic.literal(connectParams = connectParams.asInstanceOf[js.Any], connector = connector.asInstanceOf[js.Any])
+      inline def apply(connectParams: ConnectParams, connector: (/* options */ Options, /* callback */ Callback) => Unit): ClientBeforeConnectMessage = {
+        val __obj = js.Dynamic.literal(connectParams = connectParams.asInstanceOf[js.Any], connector = js.Any.fromFunction2(connector))
         __obj.asInstanceOf[ClientBeforeConnectMessage]
       }
       
@@ -34,11 +35,7 @@ object typesDiagnosticsChannelMod {
         
         inline def setConnectParams(value: ConnectParams): Self = StObject.set(x, "connectParams", value.asInstanceOf[js.Any])
         
-        inline def setConnector(value: Connector): Self = StObject.set(x, "connector", value.asInstanceOf[js.Any])
-        
-        inline def setConnectorFunction1(value: /* options */ Options => Socket | TLSSocket): Self = StObject.set(x, "connector", js.Any.fromFunction1(value))
-        
-        inline def setConnectorFunction2(value: (/* options */ Options, /* callback */ Callback) => Unit): Self = StObject.set(x, "connector", js.Any.fromFunction2(value))
+        inline def setConnector(value: (/* options */ Options, /* callback */ Callback) => Unit): Self = StObject.set(x, "connector", js.Any.fromFunction2(value))
       }
     }
     
@@ -46,7 +43,9 @@ object typesDiagnosticsChannelMod {
       
       var connectParams: ConnectParams
       
-      var connector: Connector
+      def connector(options: Options, callback: Callback): Unit
+      @JSName("connector")
+      var connector_Original: Connector
       
       var error: Error
       
@@ -54,8 +53,13 @@ object typesDiagnosticsChannelMod {
     }
     object ClientConnectErrorMessage {
       
-      inline def apply(connectParams: ConnectParams, connector: Connector, error: Error, socket: Socket): ClientConnectErrorMessage = {
-        val __obj = js.Dynamic.literal(connectParams = connectParams.asInstanceOf[js.Any], connector = connector.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], socket = socket.asInstanceOf[js.Any])
+      inline def apply(
+        connectParams: ConnectParams,
+        connector: (/* options */ Options, /* callback */ Callback) => Unit,
+        error: Error,
+        socket: Socket
+      ): ClientConnectErrorMessage = {
+        val __obj = js.Dynamic.literal(connectParams = connectParams.asInstanceOf[js.Any], connector = js.Any.fromFunction2(connector), error = error.asInstanceOf[js.Any], socket = socket.asInstanceOf[js.Any])
         __obj.asInstanceOf[ClientConnectErrorMessage]
       }
       
@@ -64,11 +68,7 @@ object typesDiagnosticsChannelMod {
         
         inline def setConnectParams(value: ConnectParams): Self = StObject.set(x, "connectParams", value.asInstanceOf[js.Any])
         
-        inline def setConnector(value: Connector): Self = StObject.set(x, "connector", value.asInstanceOf[js.Any])
-        
-        inline def setConnectorFunction1(value: /* options */ Options => Socket | TLSSocket): Self = StObject.set(x, "connector", js.Any.fromFunction1(value))
-        
-        inline def setConnectorFunction2(value: (/* options */ Options, /* callback */ Callback) => Unit): Self = StObject.set(x, "connector", js.Any.fromFunction2(value))
+        inline def setConnector(value: (/* options */ Options, /* callback */ Callback) => Unit): Self = StObject.set(x, "connector", js.Any.fromFunction2(value))
         
         inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
         
@@ -80,14 +80,20 @@ object typesDiagnosticsChannelMod {
       
       var connectParams: ConnectParams
       
-      var connector: Connector
+      def connector(options: Options, callback: Callback): Unit
+      @JSName("connector")
+      var connector_Original: Connector
       
       var socket: Socket
     }
     object ClientConnectedMessage {
       
-      inline def apply(connectParams: ConnectParams, connector: Connector, socket: Socket): ClientConnectedMessage = {
-        val __obj = js.Dynamic.literal(connectParams = connectParams.asInstanceOf[js.Any], connector = connector.asInstanceOf[js.Any], socket = socket.asInstanceOf[js.Any])
+      inline def apply(
+        connectParams: ConnectParams,
+        connector: (/* options */ Options, /* callback */ Callback) => Unit,
+        socket: Socket
+      ): ClientConnectedMessage = {
+        val __obj = js.Dynamic.literal(connectParams = connectParams.asInstanceOf[js.Any], connector = js.Any.fromFunction2(connector), socket = socket.asInstanceOf[js.Any])
         __obj.asInstanceOf[ClientConnectedMessage]
       }
       
@@ -96,11 +102,7 @@ object typesDiagnosticsChannelMod {
         
         inline def setConnectParams(value: ConnectParams): Self = StObject.set(x, "connectParams", value.asInstanceOf[js.Any])
         
-        inline def setConnector(value: Connector): Self = StObject.set(x, "connector", value.asInstanceOf[js.Any])
-        
-        inline def setConnectorFunction1(value: /* options */ Options => Socket | TLSSocket): Self = StObject.set(x, "connector", js.Any.fromFunction1(value))
-        
-        inline def setConnectorFunction2(value: (/* options */ Options, /* callback */ Callback) => Unit): Self = StObject.set(x, "connector", js.Any.fromFunction2(value))
+        inline def setConnector(value: (/* options */ Options, /* callback */ Callback) => Unit): Self = StObject.set(x, "connector", js.Any.fromFunction2(value))
         
         inline def setSocket(value: Socket): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
       }

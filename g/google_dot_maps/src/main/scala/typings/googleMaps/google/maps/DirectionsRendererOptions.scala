@@ -5,10 +5,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * This object defines the properties that can be set on a
-  * <code>DirectionsRenderer</code> object.
-  */
 trait DirectionsRendererOptions extends StObject {
   
   /**

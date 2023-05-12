@@ -24,7 +24,11 @@ object mod {
     def this(services: Unit, options: i18nextNodeFsBackEndOptions) = this()
     
     /* CompleteClass */
-    override def init(services: Services, backendOptions: i18nextNodeFsBackEndOptions, i18nextOptions: InitOptions): Unit = js.native
+    override def init(
+      services: Services,
+      backendOptions: i18nextNodeFsBackEndOptions,
+      i18nextOptions: InitOptions[js.Object]
+    ): Unit = js.native
     
     /* CompleteClass */
     override def read(language: String, namespace: String, callback: ReadCallback): Unit = js.native
@@ -45,7 +49,7 @@ object mod {
     def create_MBackend(languages: js.Array[String], namespace: String, key: String, fallbackValue: String): Unit = js.native
     
     def init(services: Services): Unit = js.native
-    def init(services: Services, backendOptions: Unit, i18nextOptions: InitOptions): Unit = js.native
+    def init(services: Services, backendOptions: Unit, i18nextOptions: InitOptions[js.Object]): Unit = js.native
     def init(services: Services, backendOptions: i18nextNodeFsBackEndOptions): Unit = js.native
     
     @JSName("type")

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "css-declaration-sorter" : "6.3.1"
+      "css-declaration-sorter" : "6.4.0"
     }
   ],
   "test-dependencies" : [
     {
-      "css-declaration-sorter" : "6.3.1"
+      "css-declaration-sorter" : "6.4.0"
     }
   ],
   "compile-devDependencies" : [

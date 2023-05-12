@@ -22,7 +22,7 @@ object distSrcUtilsDocMod {
   @JSImport("yjs/dist/src/utils/Doc", "Doc")
   @js.native
   /**
-    * @param {DocOpts} [opts] configuration
+    * @param {DocOpts} opts configuration
     */
   open class Doc () extends Observable[String] {
     def this(param0: DocOpts) = this()
@@ -89,8 +89,8 @@ object distSrcUtilsDocMod {
       *
       * @public
       */
-    def getArray[T](): YArray[T] = js.native
-    def getArray[T](name: String): YArray[T] = js.native
+    def getArray[T_1](): YArray[T_1] = js.native
+    def getArray[T_1](name: String): YArray[T_1] = js.native
     
     /**
       * @template T
@@ -99,8 +99,8 @@ object distSrcUtilsDocMod {
       *
       * @public
       */
-    def getMap[T_1](): YMap[T_1] = js.native
-    def getMap[T_1](name: String): YMap[T_1] = js.native
+    def getMap[T_2](): YMap[T_2] = js.native
+    def getMap[T_2](name: String): YMap[T_2] = js.native
     
     def getSubdocGuids(): Set[String] = js.native
     
@@ -126,7 +126,22 @@ object distSrcUtilsDocMod {
     
     var guid: String = js.native
     
+    /**
+      * This is set to true when the persistence provider loaded the document from the database or when the `sync` event fires.
+      * Note that not all providers implement this feature. Provider authors are encouraged to fire the `load` event when the doc content is loaded from the database.
+      *
+      * @type {boolean}
+      */
     var isLoaded: Boolean = js.native
+    
+    /**
+      * This is set to true when the connection provider has successfully synced with a backend.
+      * Note that when using peer-to-peer providers this event may not provide very useful.
+      * Also note that not all providers implement this feature. Provider authors are encouraged to fire
+      * the `sync` event when the doc has been synced (with `true` as a parameter) or if connection is
+      * lost (with false as a parameter).
+      */
+    var isSynced: Boolean = js.native
     
     /**
       * Notify the parent document that you request to load data into this subdocument (if it is a subdocument).
@@ -175,15 +190,22 @@ object distSrcUtilsDocMod {
       * that happened inside of the transaction are sent as one message to the
       * other peers.
       *
-      * @param {function(Transaction):void} f The function that should be executed as a transaction
+      * @template T
+      * @param {function(Transaction):T} f The function that should be executed as a transaction
       * @param {any} [origin] Origin of who started the transaction. Will be stored on transaction.origin
+      * @return T
       *
       * @public
       */
-    def transact(f: js.Function1[/* arg0 */ Transaction, Unit]): Unit = js.native
-    def transact(f: js.Function1[/* arg0 */ Transaction, Unit], origin: Any): Unit = js.native
+    def transact[T](f: js.Function1[/* arg0 */ Transaction, T]): T = js.native
+    def transact[T](f: js.Function1[/* arg0 */ Transaction, T], origin: Any): T = js.native
     
+    /**
+      * Promise that resolves once the document has been loaded from a presistence provider.
+      */
     var whenLoaded: js.Promise[Any] = js.native
+    
+    var whenSynced: js.Promise[Any] = js.native
   }
   
   @JSImport("yjs/dist/src/utils/Doc", "generateNewClientId")

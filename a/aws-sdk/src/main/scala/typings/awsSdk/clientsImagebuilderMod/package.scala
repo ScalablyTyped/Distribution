@@ -81,7 +81,13 @@ type ContainerRepositoryService = ECR | String
 
 type ContainerType = DOCKER | String
 
+type CvssScoreAdjustmentList = js.Array[CvssScoreAdjustment]
+
+type CvssScoreList = js.Array[CvssScore]
+
 type DateTime = String
+
+type DateTimeTimestamp = js.Date
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.VMDK
@@ -135,6 +141,8 @@ type HttpPutResponseHopLimit = Double
 
 type HttpTokens = String
 
+type ImageBuildMessage = String
+
 type ImageBuildVersionArn = String
 
 type ImageBuilderArn = String
@@ -148,6 +156,35 @@ type ImagePipelineList = js.Array[ImagePipeline]
 type ImageRecipeArn = String
 
 type ImageRecipeSummaryList = js.Array[ImageRecipeSummary]
+
+type ImageScanFindingAggregationsList = js.Array[ImageScanFindingAggregation]
+
+type ImageScanFindingsFilterList = js.Array[ImageScanFindingsFilter]
+
+type ImageScanFindingsFilterValues = js.Array[FilterValue]
+
+type ImageScanFindingsList = js.Array[ImageScanFinding]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.PENDING
+  - typings.awsSdk.awsSdkStrings.SCANNING
+  - typings.awsSdk.awsSdkStrings.COLLECTING
+  - typings.awsSdk.awsSdkStrings.COMPLETED
+  - typings.awsSdk.awsSdkStrings.ABANDONED
+  - typings.awsSdk.awsSdkStrings.FAILED
+  - typings.awsSdk.awsSdkStrings.TIMED_OUT
+  - java.lang.String
+*/
+type ImageScanStatus = _ImageScanStatus | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.AMAZON_MANAGED
+  - typings.awsSdk.awsSdkStrings.AWS_MARKETPLACE
+  - typings.awsSdk.awsSdkStrings.IMPORTED
+  - typings.awsSdk.awsSdkStrings.CUSTOM
+  - java.lang.String
+*/
+type ImageSource = _ImageSource | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.PENDING
@@ -210,6 +247,10 @@ type MaxParallelLaunches = Double
 
 type NonEmptyString = String
 
+type NonEmptyStringList = js.Array[NonEmptyString]
+
+type NonNegativeDouble = Double
+
 type NullableBoolean = scala.Boolean
 
 type OrganizationArn = String
@@ -228,9 +269,14 @@ type OsVersionList = js.Array[OsVersion]
   - typings.awsSdk.awsSdkStrings.Self_
   - typings.awsSdk.awsSdkStrings.Shared_
   - typings.awsSdk.awsSdkStrings.Amazon_
+  - typings.awsSdk.awsSdkStrings.ThirdParty
   - java.lang.String
 */
 type Ownership = _Ownership | String
+
+type PackageArchitecture = String
+
+type PackageEpoch = Double
 
 type PaginationToken = String
 
@@ -267,7 +313,11 @@ type RestrictedInteger = Double
 
 type SecurityGroupIds = js.Array[NonEmptyString]
 
+type SeverityCountNumber = Double
+
 type SnsTopicArn = String
+
+type SourceLayerHash = String
 
 type StringList = js.Array[NonEmptyString]
 
@@ -288,6 +338,79 @@ type Uri = String
 type UserDataOverride = String
 
 type VersionNumber = String
+
+type VulnerabilityId = String
+
+type VulnerabilityIdList = js.Array[VulnerabilityId]
+
+type VulnerablePackageList = js.Array[VulnerablePackage]
+
+type WorkflowBuildVersionArn = String
+
+type WorkflowExecutionId = String
+
+type WorkflowExecutionMessage = String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.PENDING
+  - typings.awsSdk.awsSdkStrings.SKIPPED
+  - typings.awsSdk.awsSdkStrings.RUNNING
+  - typings.awsSdk.awsSdkStrings.COMPLETED
+  - typings.awsSdk.awsSdkStrings.FAILED
+  - typings.awsSdk.awsSdkStrings.ROLLBACK_IN_PROGRESS
+  - typings.awsSdk.awsSdkStrings.ROLLBACK_COMPLETED
+  - java.lang.String
+*/
+type WorkflowExecutionStatus = _WorkflowExecutionStatus | String
+
+type WorkflowExecutionsList = js.Array[WorkflowExecutionMetadata]
+
+type WorkflowStepAction = String
+
+type WorkflowStepCount = Double
+
+type WorkflowStepDescription = String
+
+type WorkflowStepExecutionId = String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.RUNNING
+  - typings.awsSdk.awsSdkStrings.COMPLETED
+  - typings.awsSdk.awsSdkStrings.SKIPPED
+  - typings.awsSdk.awsSdkStrings.FAILED
+  - java.lang.String
+*/
+type WorkflowStepExecutionRollbackStatus = _WorkflowStepExecutionRollbackStatus | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.PENDING
+  - typings.awsSdk.awsSdkStrings.SKIPPED
+  - typings.awsSdk.awsSdkStrings.RUNNING
+  - typings.awsSdk.awsSdkStrings.COMPLETED
+  - typings.awsSdk.awsSdkStrings.FAILED
+  - java.lang.String
+*/
+type WorkflowStepExecutionStatus = _WorkflowStepExecutionStatus | String
+
+type WorkflowStepExecutionsList = js.Array[WorkflowStepMetadata]
+
+type WorkflowStepInputs = String
+
+type WorkflowStepMessage = String
+
+type WorkflowStepName = String
+
+type WorkflowStepOutputs = String
+
+type WorkflowStepTimeoutSecondsInteger = Double
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.BUILD
+  - typings.awsSdk.awsSdkStrings.TEST
+  - typings.awsSdk.awsSdkStrings.DISTRIBUTION
+  - java.lang.String
+*/
+type WorkflowType = _WorkflowType | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2019-12-02`

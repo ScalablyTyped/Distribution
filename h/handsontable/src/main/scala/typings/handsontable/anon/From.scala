@@ -1,19 +1,18 @@
 package typings.handsontable.anon
 
-import typings.handsontable.commonMod.SimpleCellCoords
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait From extends StObject {
   
-  var from: SimpleCellCoords
+  var from: Col
   
-  var to: SimpleCellCoords
+  var to: Col
 }
 object From {
   
-  inline def apply(from: SimpleCellCoords, to: SimpleCellCoords): From = {
+  inline def apply(from: Col, to: Col): From = {
     val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
     __obj.asInstanceOf[From]
   }
@@ -21,8 +20,8 @@ object From {
   @scala.inline
   implicit open class MutableBuilder[Self <: From] (val x: Self) extends AnyVal {
     
-    inline def setFrom(value: SimpleCellCoords): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    inline def setFrom(value: Col): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
-    inline def setTo(value: SimpleCellCoords): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+    inline def setTo(value: Col): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
   }
 }

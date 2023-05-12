@@ -20,7 +20,7 @@ trait HorizontalAlignment extends StObject {
   /**
     * Generates space around the legend title.
     */
-  var margin: js.UndefOr[BottomLeft] = js.undefined
+  var margin: js.UndefOr[Bottom] = js.undefined
   
   /**
     * Reserves a pixel-measured space for the legend title.
@@ -60,7 +60,7 @@ object HorizontalAlignment {
     
     inline def setHorizontalAlignmentUndefined: Self = StObject.set(x, "horizontalAlignment", js.undefined)
     
-    inline def setMargin(value: BottomLeft): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+    inline def setMargin(value: Bottom): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
     inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     

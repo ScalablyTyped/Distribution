@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "schema-utils" : "4.0.0"
+      "schema-utils" : "4.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "schema-utils" : "4.0.0"
+      "schema-utils" : "4.0.1"
     }
   ],
   "compile-devDependencies" : [

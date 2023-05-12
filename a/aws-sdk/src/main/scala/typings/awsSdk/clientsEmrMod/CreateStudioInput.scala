@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateStudioInput extends StObject {
   
   /**
-    * Specifies whether the Studio authenticates users using IAM or Amazon Web Services SSO.
+    * Specifies whether the Studio authenticates users using IAM or IAM Identity Center.
     */
   var AuthMode: typings.awsSdk.clientsEmrMod.AuthMode
   
@@ -57,7 +57,7 @@ trait CreateStudioInput extends StObject {
   var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
-    * The IAM user role that users and groups assume when logged in to an Amazon EMR Studio. Only specify a UserRole when you use Amazon Web Services SSO authentication. The permissions attached to the UserRole can be scoped down for each user or group using session policies.
+    * The IAM user role that users and groups assume when logged in to an Amazon EMR Studio. Only specify a UserRole when you use IAM Identity Center authentication. The permissions attached to the UserRole can be scoped down for each user or group using session policies.
     */
   var UserRole: js.UndefOr[XmlString] = js.undefined
   

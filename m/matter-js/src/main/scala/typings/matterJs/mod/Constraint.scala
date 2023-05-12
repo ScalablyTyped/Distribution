@@ -15,7 +15,7 @@ open class Constraint () extends StObject {
     * @type body
     * @default null
     */
-  var bodyA: Body = js.native
+  var bodyA: Body | Null = js.native
   
   /**
     * The second possible `Body` that this constraint is attached to.
@@ -24,7 +24,7 @@ open class Constraint () extends StObject {
     * @type body
     * @default null
     */
-  var bodyB: Body = js.native
+  var bodyB: Body | Null = js.native
   
   /**
     * A `Number` that specifies the damping of the constraint,

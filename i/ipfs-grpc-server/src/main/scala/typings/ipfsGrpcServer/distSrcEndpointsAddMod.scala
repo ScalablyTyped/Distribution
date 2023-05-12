@@ -16,23 +16,23 @@ object distSrcEndpointsAddMod {
   
   inline def grpcAdd(ipfs: IPFS[js.Object]): js.Function3[
     /* source */ AsyncIterable[Any], 
-    /* sink */ Pushable_[Any], 
+    /* sink */ Pushable_[Any, Unit, Any], 
     /* metadata */ Any, 
     js.Promise[Unit]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("grpcAdd")(ipfs.asInstanceOf[js.Any]).asInstanceOf[js.Function3[
     /* source */ AsyncIterable[Any], 
-    /* sink */ Pushable_[Any], 
+    /* sink */ Pushable_[Any, Unit, Any], 
     /* metadata */ Any, 
     js.Promise[Unit]
   ]]
   inline def grpcAdd(ipfs: IPFS[js.Object], options: Options): js.Function3[
     /* source */ AsyncIterable[Any], 
-    /* sink */ Pushable_[Any], 
+    /* sink */ Pushable_[Any, Unit, Any], 
     /* metadata */ Any, 
     js.Promise[Unit]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("grpcAdd")(ipfs.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function3[
     /* source */ AsyncIterable[Any], 
-    /* sink */ Pushable_[Any], 
+    /* sink */ Pushable_[Any, Unit, Any], 
     /* metadata */ Any, 
     js.Promise[Unit]
   ]]

@@ -1,6 +1,7 @@
 package typings.babelCore.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.babelCore.anon.Android
 import typings.babelCore.babelCoreStrings.`inline`
 import typings.babelCore.babelCoreStrings.`upward-optional`
 import typings.babelCore.babelCoreStrings.auto
@@ -339,6 +340,14 @@ trait TransformOptions extends StObject {
   var sourceType: js.UndefOr[script | module | unambiguous | Null] = js.undefined
   
   /**
+    * Describes the environments you support/target for your project.
+    * This can either be a [browserslist-compatible](https://github.com/ai/browserslist) query (with [caveats](https://babeljs.io/docs/en/babel-preset-env#ineffective-browserslist-queries))
+    *
+    * Default: `{}`
+    */
+  var targets: js.UndefOr[String | js.Array[String] | Android] = js.undefined
+  
+  /**
     * If all patterns fail to match, the current configuration object is considered inactive and is ignored during config processing.
     */
   var test: js.UndefOr[MatchPattern | js.Array[MatchPattern]] = js.undefined
@@ -647,6 +656,12 @@ object TransformOptions {
     inline def setSourceTypeNull: Self = StObject.set(x, "sourceType", null)
     
     inline def setSourceTypeUndefined: Self = StObject.set(x, "sourceType", js.undefined)
+    
+    inline def setTargets(value: String | js.Array[String] | Android): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
+    
+    inline def setTargetsUndefined: Self = StObject.set(x, "targets", js.undefined)
+    
+    inline def setTargetsVarargs(value: String*): Self = StObject.set(x, "targets", js.Array(value*))
     
     inline def setTest(value: MatchPattern | js.Array[MatchPattern]): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
     

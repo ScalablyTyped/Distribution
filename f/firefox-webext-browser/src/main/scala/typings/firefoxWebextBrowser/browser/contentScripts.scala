@@ -7,7 +7,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** Not allowed in: Content scripts, Devtools pages */
+/**
+  * Not supported on manifest versions above 2.
+  *
+  * Not allowed in: Content scripts, Devtools pages
+  */
 object contentScripts {
   
   /** An object that represents a content script registered programmatically */
@@ -38,6 +42,9 @@ object contentScripts {
       * If allFrames is `true`, implies that the JavaScript or CSS should be injected into all frames of current page. By default, it's `false` and is only injected into the top frame.
       */
     var allFrames: js.UndefOr[Boolean] = js.undefined
+    
+    /** limit the set of matched tabs to those that belong to the given cookie store id */
+    var cookieStoreId: js.UndefOr[js.Array[String] | String] = js.undefined
     
     /** The list of CSS files to inject */
     var css: js.UndefOr[js.Array[ExtensionFileOrCode]] = js.undefined
@@ -75,6 +82,12 @@ object contentScripts {
       inline def setAllFrames(value: Boolean): Self = StObject.set(x, "allFrames", value.asInstanceOf[js.Any])
       
       inline def setAllFramesUndefined: Self = StObject.set(x, "allFrames", js.undefined)
+      
+      inline def setCookieStoreId(value: js.Array[String] | String): Self = StObject.set(x, "cookieStoreId", value.asInstanceOf[js.Any])
+      
+      inline def setCookieStoreIdUndefined: Self = StObject.set(x, "cookieStoreId", js.undefined)
+      
+      inline def setCookieStoreIdVarargs(value: String*): Self = StObject.set(x, "cookieStoreId", js.Array(value*))
       
       inline def setCss(value: js.Array[ExtensionFileOrCode]): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
       

@@ -31,6 +31,7 @@ import typings.std.HTMLImageElement
 import typings.std.HTMLStyleElement
 import typings.std.HTMLVideoElement
 import typings.std.MouseEvent
+import typings.std.ResizeObserver
 import typings.std.Touch
 import typings.std.TouchEvent
 import typings.std.UIEvent
@@ -158,9 +159,9 @@ object cropperMod {
     
     var containerRef: HTMLDivElement | Null = js.native
     
-    var currentDoc: Document = js.native
+    var currentDoc: Document | Null = js.native
     
-    var currentWindow: Window = js.native
+    var currentWindow: Window | Null = js.native
     
     var dragStartCrop: Point = js.native
     
@@ -183,6 +184,8 @@ object cropperMod {
     def getPointOnMedia(param0: Point): X = js.native
     
     var imageRef: RefObject[HTMLImageElement] = js.native
+    
+    def initResizeObserver(): Unit = js.native
     
     var isTouching: Boolean = js.native
     
@@ -227,6 +230,8 @@ object cropperMod {
     var rafPinchTimeout: Double | Null = js.native
     
     def recomputeCropPosition(): Unit = js.native
+    
+    var resizeObserver: ResizeObserver | Null = js.native
     
     def setInitialCrop(cropSize: Size): Unit = js.native
     

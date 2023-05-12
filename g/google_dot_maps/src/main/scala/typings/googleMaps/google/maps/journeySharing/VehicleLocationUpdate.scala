@@ -1,14 +1,11 @@
 package typings.googleMaps.google.maps.journeySharing
 
+import typings.googleMaps.google.maps.LatLng
 import typings.googleMaps.google.maps.LatLngLiteral
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Available only in the v=beta channel: https://goo.gle/3oAthT3.
-  * VehicleLocationUpdate type
-  */
 trait VehicleLocationUpdate extends StObject {
   
   /**
@@ -19,7 +16,7 @@ trait VehicleLocationUpdate extends StObject {
   /**
     * The location of the update.
     */
-  var location: LatLngLiteral | Null
+  var location: LatLngLiteral | Null | LatLng
   
   /**
     * The speed in kilometers per hour.
@@ -45,7 +42,7 @@ object VehicleLocationUpdate {
     
     inline def setHeadingNull: Self = StObject.set(x, "heading", null)
     
-    inline def setLocation(value: LatLngLiteral): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: LatLngLiteral | LatLng): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
     inline def setLocationNull: Self = StObject.set(x, "location", null)
     

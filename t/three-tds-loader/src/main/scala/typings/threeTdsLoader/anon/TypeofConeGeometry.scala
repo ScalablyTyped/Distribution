@@ -20,5 +20,6 @@ trait TypeofConeGeometry
       ConeGeometry
     ] {
   
-  def fromJSON(data: Any): typings.three.srcGeometriesConeGeometryMod.ConeGeometry = js.native
+  /** @internal */
+  def fromJSON(data: js.Object): typings.three.srcGeometriesConeGeometryMod.ConeGeometry = js.native
 }

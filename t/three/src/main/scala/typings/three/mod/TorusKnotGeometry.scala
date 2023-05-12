@@ -9,12 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class TorusKnotGeometry protected ()
   extends typings.three.srcThreeMod.TorusKnotGeometry {
   /**
-    * @param [radius=1]
-    * @param [tube=0.4]
-    * @param [radialSegments=64]
-    * @param [tubularSegments=8]
-    * @param [p=2]
-    * @param [q=3]
+    * Create a new instance of {@link TorusKnotGeometry}
+    * @param radius Radius of the torus.. Default `1`.
+    * @param tube Expects a `Float`. Default `0.4`.
+    * @param tubularSegments Expects a `Integer`. Default `64`.
+    * @param radialSegments Expects a `Integer`. Default `8`.
+    * @param p This value determines, how many times the geometry winds around its axis of rotational symmetry. Expects a `Integer`. Default `2`.
+    * @param q This value determines, how many times the geometry winds around a circle in the interior of the torus. Expects a `Integer`. Default `3`.
     */
   def this(
     radius: js.UndefOr[Double],
@@ -32,5 +33,6 @@ object TorusKnotGeometry {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def fromJSON(data: Any): typings.three.srcGeometriesTorusKnotGeometryMod.TorusKnotGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(data.asInstanceOf[js.Any]).asInstanceOf[typings.three.srcGeometriesTorusKnotGeometryMod.TorusKnotGeometry]
+  /** @internal */
+  inline def fromJSON(data: js.Object): typings.three.srcGeometriesTorusKnotGeometryMod.TorusKnotGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(data.asInstanceOf[js.Any]).asInstanceOf[typings.three.srcGeometriesTorusKnotGeometryMod.TorusKnotGeometry]
 }

@@ -14,7 +14,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TNumber
   extends StObject
      with TSchema
-     with TNumeric {
+     with _RecordKey
+     with _TTemplateLiteralKind {
   
   var exclusiveMaximum: js.UndefOr[Double] = js.native
   

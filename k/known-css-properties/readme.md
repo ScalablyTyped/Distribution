@@ -1,7 +1,7 @@
 
 # Scala.js typings for known-css-properties
 
-Typings are for version 0.26.0
+Typings are for version 0.27.0
 
 ## Library description:
 List of known CSS properties

@@ -16,7 +16,7 @@ object libIconsYoutubeFilledMod extends Shortcut {
   @js.native
   trait YoutubeFilledIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_YoutubeFilledIconType: String = js.native

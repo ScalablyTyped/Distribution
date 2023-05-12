@@ -16,38 +16,38 @@ object buildCommandsAppiumMod {
       * Appium Protocol Command
       *
       * Activate the given app onto the device
-      * @ref http://appium.io/docs/en/commands/device/app/activate-app/
+      * @ref https://appium.github.io/appium.io/docs/en/commands/device/app/activate-app/
       *
       */
-    def activateApp(appId: String): Unit = js.native
+    def activateApp(appId: String): js.Promise[Unit] = js.native
     
     /**
       * Appium Protocol Command
       *
-      * Send the currently running app for this session to the background. iOS tests with XCUITest can also use the `mobile: terminateApp` method to terminate the current app (see detailed [documentation](http://appium.io/docs/en/writing-running-appium/ios/ios-xctest-mobile-apps-management/index.html#mobile-terminateapp)), and the `mobile: activateApp` to activate an existing application on the device under test and moves it to the foreground (see detailed [documentation](http://appium.io/docs/en/writing-running-appium/ios/ios-xctest-mobile-apps-management/index.html#mobile-activateapp)).
-      * @ref http://appium.io/docs/en/commands/device/app/background-app/
+      * Send the currently running app for this session to the background. iOS tests with XCUITest can also use the `mobile: terminateApp` method to terminate the current app (see detailed [documentation](https://appium.github.io/appium.io/docs/en/writing-running-appium/ios/ios-xctest-mobile-apps-management/index.html#mobile-terminateapp)), and the `mobile: activateApp` to activate an existing application on the device under test and moves it to the foreground (see detailed [documentation](https://appium.github.io/appium.io/docs/en/writing-running-appium/ios/ios-xctest-mobile-apps-management/index.html#mobile-activateapp)).
+      * @ref https://appium.github.io/appium.io/docs/en/commands/device/app/background-app/
       *
       */
-    def background(): Unit = js.native
-    def background(seconds: Double): Unit = js.native
+    def background(): js.Promise[Unit] = js.native
+    def background(seconds: Double): js.Promise[Unit] = js.native
     
     /**
       * Appium Protocol Command
       *
       * Close an app on device.
-      * @ref http://appium.io/docs/en/commands/device/app/close-app/
+      * @ref https://appium.github.io/appium.io/docs/en/commands/device/app/close-app/
       *
       */
-    def closeApp(): Unit = js.native
+    def closeApp(): js.Promise[Unit] = js.native
     
     /**
       * Appium Protocol Command
       *
       * Performs images comparison using OpenCV framework features. It is expected that both OpenCV framework and opencv4nodejs module are installed on the machine where Appium server is running.
-      * @ref http://appium.io/docs/en/writing-running-appium/image-comparison/
+      * @ref https://appium.github.io/appium.io/docs/en/writing-running-appium/image-comparison/
       *
       */
-    def compareImages(mode: String, firstImage: String, secondImage: String, options: js.Object): ProtocolCommandResponse = js.native
+    def compareImages(mode: String, firstImage: String, secondImage: String, options: js.Object): js.Promise[ProtocolCommandResponse] = js.native
     
     /**
       * Appium Protocol Command
@@ -56,65 +56,65 @@ object buildCommandsAppiumMod {
       * @ref https://github.com/appium/appium/blob/master/docs/en/commands/session/execute-driver.md
       *
       */
-    def driverScript(script: String): ProtocolCommandResponse = js.native
-    def driverScript(script: String, `type`: String): ProtocolCommandResponse = js.native
-    def driverScript(script: String, `type`: String, timeout: Double): ProtocolCommandResponse = js.native
-    def driverScript(script: String, `type`: Unit, timeout: Double): ProtocolCommandResponse = js.native
+    def driverScript(script: String): js.Promise[ProtocolCommandResponse] = js.native
+    def driverScript(script: String, `type`: String): js.Promise[ProtocolCommandResponse] = js.native
+    def driverScript(script: String, `type`: String, timeout: Double): js.Promise[ProtocolCommandResponse] = js.native
+    def driverScript(script: String, `type`: Unit, timeout: Double): js.Promise[ProtocolCommandResponse] = js.native
     
     /**
       * Appium Protocol Command
       *
       * Get test coverage data.
-      * @ref http://appium.io/docs/en/commands/device/app/end-test-coverage/
+      * @ref https://appium.github.io/appium.io/docs/en/commands/device/app/end-test-coverage/
       *
       */
-    def endCoverage(intent: String, path: String): Unit = js.native
+    def endCoverage(intent: String, path: String): js.Promise[Unit] = js.native
     
     /**
       * Appium Protocol Command
       *
       * Authenticate users by using their finger print scans on supported emulators.
-      * @ref http://appium.io/docs/en/commands/device/authentication/finger-print/
+      * @ref https://appium.github.io/appium.io/docs/en/commands/device/authentication/finger-print/
       *
       */
-    def fingerPrint(fingerprintId: Double): Unit = js.native
+    def fingerPrint(fingerprintId: Double): js.Promise[Unit] = js.native
     
     /**
       * Appium Protocol Command
       *
       * Get the content of the system clipboard
-      * @ref http://appium.io/docs/en/commands/device/clipboard/get-clipboard/
+      * @ref https://appium.github.io/appium.io/docs/en/commands/device/clipboard/get-clipboard/
       *
       */
-    def getClipboard(): String = js.native
-    def getClipboard(contentType: String): String = js.native
+    def getClipboard(): js.Promise[String] = js.native
+    def getClipboard(contentType: String): js.Promise[String] = js.native
     
     /**
       * Appium Protocol Command
       *
       * Get the name of the current Android activity.
-      * @ref http://appium.io/docs/en/commands/device/activity/current-activity/
+      * @ref https://appium.github.io/appium.io/docs/en/commands/device/activity/current-activity/
       *
       */
-    def getCurrentActivity(): String = js.native
+    def getCurrentActivity(): js.Promise[String] = js.native
     
     /**
       * Appium Protocol Command
       *
       * Get the name of the current Android package.
-      * @ref http://appium.io/docs/en/commands/device/activity/current-package/
+      * @ref https://appium.github.io/appium.io/docs/en/commands/device/activity/current-package/
       *
       */
-    def getCurrentPackage(): String = js.native
+    def getCurrentPackage(): js.Promise[String] = js.native
     
     /**
       * Appium Protocol Command
       *
       * Get the time on the device.
-      * @ref http://appium.io/docs/en/commands/device/system/system-time/
+      * @ref https://appium.github.io/appium.io/docs/en/commands/device/system/system-time/
       *
       */
-    def getDeviceTime(): String = js.native
+    def getDeviceTime(): js.Promise[String] = js.native
     
     /**
       * Appium Protocol Command
@@ -123,7 +123,7 @@ object buildCommandsAppiumMod {
       * @ref https://github.com/appium/appium-base-driver/blob/master/docs/mjsonwp/protocol-methods.md#appium-extension-endpoints
       *
       */
-    def getDisplayDensity(): Any = js.native
+    def getDisplayDensity(): js.Promise[Any] = js.native
     
     /**
       * Appium Protocol Command
@@ -132,163 +132,163 @@ object buildCommandsAppiumMod {
       * @ref https://github.com/appium/appium/blob/master/docs/en/commands/session/events/get-events.md
       *
       */
-    def getEvents(`type`: js.Array[String]): ProtocolCommandResponse = js.native
+    def getEvents(`type`: js.Array[String]): js.Promise[ProtocolCommandResponse] = js.native
     
     /**
       * Appium Protocol Command
       *
       * Returns the information of the system state which is supported to read as like cpu, memory, network traffic, and battery.
-      * @ref http://appium.io/docs/en/commands/device/performance-data/get-performance-data/
+      * @ref https://appium.github.io/appium.io/docs/en/commands/device/performance-data/get-performance-data/
       *
       */
-    def getPerformanceData(packageName: String, dataType: String): js.Array[String] = js.native
-    def getPerformanceData(packageName: String, dataType: String, dataReadTimeout: Double): js.Array[String] = js.native
+    def getPerformanceData(packageName: String, dataType: String): js.Promise[js.Array[String]] = js.native
+    def getPerformanceData(packageName: String, dataType: String, dataReadTimeout: Double): js.Promise[js.Array[String]] = js.native
     
     /**
       * Appium Protocol Command
       *
       * Returns the information types of the system state which is supported to read as like cpu, memory, network traffic, and battery.
-      * @ref http://appium.io/docs/en/commands/device/performance-data/performance-data-types/
+      * @ref https://appium.github.io/appium.io/docs/en/commands/device/performance-data/performance-data-types/
       *
       */
-    def getPerformanceDataTypes(): js.Array[String] = js.native
+    def getPerformanceDataTypes(): js.Promise[js.Array[String]] = js.native
     
     /**
       * Appium Protocol Command
       *
       * Retrieve the current settings on the device.
-      * @ref http://appium.io/docs/en/commands/session/settings/get-settings/
+      * @ref https://appium.github.io/appium.io/docs/en/commands/session/settings/get-settings/
       *
       */
-    def getSettings(): SettingsReturn = js.native
+    def getSettings(): js.Promise[SettingsReturn] = js.native
     
     /**
       * Appium Protocol Command
       *
       * Get app strings.
-      * @ref http://appium.io/docs/en/commands/device/app/get-app-strings/
+      * @ref https://appium.github.io/appium.io/docs/en/commands/device/app/get-app-strings/
       *
       */
-    def getStrings(): StringsReturn = js.native
-    def getStrings(language: String): StringsReturn = js.native
-    def getStrings(language: String, stringFile: String): StringsReturn = js.native
-    def getStrings(language: Unit, stringFile: String): StringsReturn = js.native
+    def getStrings(): js.Promise[StringsReturn] = js.native
+    def getStrings(language: String): js.Promise[StringsReturn] = js.native
+    def getStrings(language: String, stringFile: String): js.Promise[StringsReturn] = js.native
+    def getStrings(language: Unit, stringFile: String): js.Promise[StringsReturn] = js.native
     
     /**
       * Appium Protocol Command
       *
       * Retrieve visibility and bounds information of the status and navigation bars.
-      * @ref http://appium.io/docs/en/commands/device/system/system-bars/
+      * @ref https://appium.github.io/appium.io/docs/en/commands/device/system/system-bars/
       *
       */
-    def getSystemBars(): js.Array[js.Object] = js.native
+    def getSystemBars(): js.Promise[js.Array[js.Object]] = js.native
     
     /**
       * Appium Protocol Command
       *
       * Make GSM call (Emulator only).
-      * @ref http://appium.io/docs/en/commands/device/network/gsm-call/
+      * @ref https://appium.github.io/appium.io/docs/en/commands/device/network/gsm-call/
       *
       */
-    def gsmCall(phoneNumber: String, action: String): Unit = js.native
+    def gsmCall(phoneNumber: String, action: String): js.Promise[Unit] = js.native
     
     /**
       * Appium Protocol Command
       *
       * Set GSM signal strength (Emulator only).
-      * @ref http://appium.io/docs/en/commands/device/network/gsm-signal/
+      * @ref https://appium.github.io/appium.io/docs/en/commands/device/network/gsm-signal/
       *
       */
-    def gsmSignal(signalStrength: String): Unit = js.native
-    def gsmSignal(signalStrength: String, signalStrengh: String): Unit = js.native
+    def gsmSignal(signalStrength: String): js.Promise[Unit] = js.native
+    def gsmSignal(signalStrength: String, signalStrengh: String): js.Promise[Unit] = js.native
     
     /**
       * Appium Protocol Command
       *
       * Set GSM voice state (Emulator only).
-      * @ref http://appium.io/docs/en/commands/device/network/gsm-voice/
+      * @ref https://appium.github.io/appium.io/docs/en/commands/device/network/gsm-voice/
       *
       */
-    def gsmVoice(state: String): Unit = js.native
+    def gsmVoice(state: String): js.Promise[Unit] = js.native
     
     /**
       * Appium Protocol Command
       *
       * Hide soft keyboard.
-      * @ref http://appium.io/docs/en/commands/device/keys/hide-keyboard/
+      * @ref https://appium.github.io/appium.io/docs/en/commands/device/keys/hide-keyboard/
       *
       */
-    def hideKeyboard(): Unit = js.native
-    def hideKeyboard(strategy: String): Unit = js.native
-    def hideKeyboard(strategy: String, key: String): Unit = js.native
-    def hideKeyboard(strategy: String, key: String, keyCode: String): Unit = js.native
-    def hideKeyboard(strategy: String, key: String, keyCode: String, keyName: String): Unit = js.native
-    def hideKeyboard(strategy: String, key: String, keyCode: Unit, keyName: String): Unit = js.native
-    def hideKeyboard(strategy: String, key: Unit, keyCode: String): Unit = js.native
-    def hideKeyboard(strategy: String, key: Unit, keyCode: String, keyName: String): Unit = js.native
-    def hideKeyboard(strategy: String, key: Unit, keyCode: Unit, keyName: String): Unit = js.native
-    def hideKeyboard(strategy: Unit, key: String): Unit = js.native
-    def hideKeyboard(strategy: Unit, key: String, keyCode: String): Unit = js.native
-    def hideKeyboard(strategy: Unit, key: String, keyCode: String, keyName: String): Unit = js.native
-    def hideKeyboard(strategy: Unit, key: String, keyCode: Unit, keyName: String): Unit = js.native
-    def hideKeyboard(strategy: Unit, key: Unit, keyCode: String): Unit = js.native
-    def hideKeyboard(strategy: Unit, key: Unit, keyCode: String, keyName: String): Unit = js.native
-    def hideKeyboard(strategy: Unit, key: Unit, keyCode: Unit, keyName: String): Unit = js.native
+    def hideKeyboard(): js.Promise[Unit] = js.native
+    def hideKeyboard(strategy: String): js.Promise[Unit] = js.native
+    def hideKeyboard(strategy: String, key: String): js.Promise[Unit] = js.native
+    def hideKeyboard(strategy: String, key: String, keyCode: String): js.Promise[Unit] = js.native
+    def hideKeyboard(strategy: String, key: String, keyCode: String, keyName: String): js.Promise[Unit] = js.native
+    def hideKeyboard(strategy: String, key: String, keyCode: Unit, keyName: String): js.Promise[Unit] = js.native
+    def hideKeyboard(strategy: String, key: Unit, keyCode: String): js.Promise[Unit] = js.native
+    def hideKeyboard(strategy: String, key: Unit, keyCode: String, keyName: String): js.Promise[Unit] = js.native
+    def hideKeyboard(strategy: String, key: Unit, keyCode: Unit, keyName: String): js.Promise[Unit] = js.native
+    def hideKeyboard(strategy: Unit, key: String): js.Promise[Unit] = js.native
+    def hideKeyboard(strategy: Unit, key: String, keyCode: String): js.Promise[Unit] = js.native
+    def hideKeyboard(strategy: Unit, key: String, keyCode: String, keyName: String): js.Promise[Unit] = js.native
+    def hideKeyboard(strategy: Unit, key: String, keyCode: Unit, keyName: String): js.Promise[Unit] = js.native
+    def hideKeyboard(strategy: Unit, key: Unit, keyCode: String): js.Promise[Unit] = js.native
+    def hideKeyboard(strategy: Unit, key: Unit, keyCode: String, keyName: String): js.Promise[Unit] = js.native
+    def hideKeyboard(strategy: Unit, key: Unit, keyCode: Unit, keyName: String): js.Promise[Unit] = js.native
     
     /**
       * Appium Protocol Command
       *
       * Install the given app onto the device.
-      * @ref http://appium.io/docs/en/commands/device/app/install-app/
+      * @ref https://appium.github.io/appium.io/docs/en/commands/device/app/install-app/
       *
       */
-    def installApp(appPath: String): Unit = js.native
+    def installApp(appPath: String): js.Promise[Unit] = js.native
     
     /**
       * Appium Protocol Command
       *
       * Check whether the specified app is installed on the device.
-      * @ref http://appium.io/docs/en/commands/device/app/is-app-installed/
+      * @ref https://appium.github.io/appium.io/docs/en/commands/device/app/is-app-installed/
       *
       */
-    def isAppInstalled(appId: String): Boolean = js.native
+    def isAppInstalled(appId: String): js.Promise[Boolean] = js.native
     
     /**
       * Appium Protocol Command
       *
       * Whether or not the soft keyboard is shown.
-      * @ref http://appium.io/docs/en/commands/device/keys/is-keyboard-shown/
+      * @ref https://appium.github.io/appium.io/docs/en/commands/device/keys/is-keyboard-shown/
       *
       */
-    def isKeyboardShown(): Boolean = js.native
+    def isKeyboardShown(): js.Promise[Boolean] = js.native
     
     /**
       * Appium Protocol Command
       *
       * Check whether the device is locked or not.
-      * @ref http://appium.io/docs/en/commands/device/interactions/is-locked/
+      * @ref https://appium.github.io/appium.io/docs/en/commands/device/interactions/is-locked/
       *
       */
-    def isLocked(): Boolean = js.native
+    def isLocked(): js.Promise[Boolean] = js.native
     
     /**
       * Appium Protocol Command
       *
-      * Launch an app on device. iOS tests with XCUITest can also use the `mobile: launchApp` method. See detailed [documentation](http://appium.io/docs/en/writing-running-appium/ios/ios-xctest-mobile-apps-management/index.html#mobile-launchapp).
-      * @ref http://appium.io/docs/en/commands/device/app/launch-app/
+      * Launch an app on device. iOS tests with XCUITest can also use the `mobile: launchApp` method. See detailed [documentation](https://appium.github.io/appium.io/docs/en/writing-running-appium/ios/ios-xctest-mobile-apps-management/index.html#mobile-launchapp).
+      * @ref https://appium.github.io/appium.io/docs/en/commands/device/app/launch-app/
       *
       */
-    def launchApp(): Unit = js.native
+    def launchApp(): js.Promise[Unit] = js.native
     
     /**
       * Appium Protocol Command
       *
       * Lock the device.
-      * @ref http://appium.io/docs/en/commands/device/interactions/lock/
+      * @ref https://appium.github.io/appium.io/docs/en/commands/device/interactions/lock/
       *
       */
-    def lock(): Unit = js.native
-    def lock(seconds: Double): Unit = js.native
+    def lock(): js.Promise[Unit] = js.native
+    def lock(seconds: Double): js.Promise[Unit] = js.native
     
     /**
       * Appium Protocol Command
@@ -297,103 +297,103 @@ object buildCommandsAppiumMod {
       * @ref https://github.com/appium/appium/blob/master/docs/en/commands/session/events/log-event.md
       *
       */
-    def logEvent(vendor: String, event: String): Unit = js.native
+    def logEvent(vendor: String, event: String): js.Promise[Unit] = js.native
     
     /**
       * Appium Protocol Command
       *
       * Press and hold a particular key code on the device.
-      * @ref http://appium.io/docs/en/commands/device/keys/long-press-keycode/
+      * @ref https://appium.github.io/appium.io/docs/en/commands/device/keys/long-press-keycode/
       *
       */
-    def longPressKeyCode(keycode: Double): Unit = js.native
-    def longPressKeyCode(keycode: Double, metastate: Double): Unit = js.native
-    def longPressKeyCode(keycode: Double, metastate: Double, flags: Double): Unit = js.native
-    def longPressKeyCode(keycode: Double, metastate: Unit, flags: Double): Unit = js.native
+    def longPressKeyCode(keycode: Double): js.Promise[Unit] = js.native
+    def longPressKeyCode(keycode: Double, metastate: Double): js.Promise[Unit] = js.native
+    def longPressKeyCode(keycode: Double, metastate: Double, flags: Double): js.Promise[Unit] = js.native
+    def longPressKeyCode(keycode: Double, metastate: Unit, flags: Double): js.Promise[Unit] = js.native
     
     /**
       * Appium Protocol Command
       *
       * This functionality is only available from within a native context. Perform a multi touch action sequence.
-      * @ref http://appium.io/docs/en/commands/interactions/touch/multi-touch-perform/
+      * @ref https://appium.github.io/appium.io/docs/en/commands/interactions/touch/multi-touch-perform/
       *
       */
-    def multiTouchPerform(actions: js.Array[js.Object]): Unit = js.native
+    def multiTouchPerform(actions: js.Array[js.Object]): js.Promise[Unit] = js.native
     
     /**
       * Appium Protocol Command
       *
       * Open Android notifications (Emulator only).
-      * @ref http://appium.io/docs/en/commands/device/system/open-notifications/
+      * @ref https://appium.github.io/appium.io/docs/en/commands/device/system/open-notifications/
       *
       */
-    def openNotifications(): Unit = js.native
+    def openNotifications(): js.Promise[Unit] = js.native
     
     /**
       * Appium Protocol Command
       *
       * Set the state of the battery charger to connected or not (Emulator only).
-      * @ref http://appium.io/docs/en/commands/device/emulator/power_ac/
+      * @ref https://appium.github.io/appium.io/docs/en/commands/device/emulator/power_ac/
       *
       */
-    def powerAC(state: String): Unit = js.native
+    def powerAC(state: String): js.Promise[Unit] = js.native
     
     /**
       * Appium Protocol Command
       *
       * Set the battery percentage (Emulator only).
-      * @ref http://appium.io/docs/en/commands/device/emulator/power_capacity/
+      * @ref https://appium.github.io/appium.io/docs/en/commands/device/emulator/power_capacity/
       *
       */
-    def powerCapacity(percent: Double): Unit = js.native
+    def powerCapacity(percent: Double): js.Promise[Unit] = js.native
     
     /**
       * Appium Protocol Command
       *
       * Press a particular key on the device.
-      * @ref http://appium.io/docs/en/commands/device/keys/press-keycode/
+      * @ref https://appium.github.io/appium.io/docs/en/commands/device/keys/press-keycode/
       *
       */
-    def pressKeyCode(keycode: Double): Unit = js.native
-    def pressKeyCode(keycode: Double, metastate: Double): Unit = js.native
-    def pressKeyCode(keycode: Double, metastate: Double, flags: Double): Unit = js.native
-    def pressKeyCode(keycode: Double, metastate: Unit, flags: Double): Unit = js.native
+    def pressKeyCode(keycode: Double): js.Promise[Unit] = js.native
+    def pressKeyCode(keycode: Double, metastate: Double): js.Promise[Unit] = js.native
+    def pressKeyCode(keycode: Double, metastate: Double, flags: Double): js.Promise[Unit] = js.native
+    def pressKeyCode(keycode: Double, metastate: Unit, flags: Double): js.Promise[Unit] = js.native
     
     /**
       * Appium Protocol Command
       *
       * Retrieve a file from the device's file system.
-      * @ref http://appium.io/docs/en/commands/device/files/pull-file/
+      * @ref https://appium.github.io/appium.io/docs/en/commands/device/files/pull-file/
       *
       */
-    def pullFile(path: String): String = js.native
+    def pullFile(path: String): js.Promise[String] = js.native
     
     /**
       * Appium Protocol Command
       *
       * Retrieve a folder from the device's file system.
-      * @ref http://appium.io/docs/en/commands/device/files/pull-folder/
+      * @ref https://appium.github.io/appium.io/docs/en/commands/device/files/pull-folder/
       *
       */
-    def pullFolder(path: String): Unit = js.native
+    def pullFolder(path: String): js.Promise[Unit] = js.native
     
     /**
       * Appium Protocol Command
       *
       * Place a file onto the device in a particular place.
-      * @ref http://appium.io/docs/en/commands/device/files/push-file/
+      * @ref https://appium.github.io/appium.io/docs/en/commands/device/files/push-file/
       *
       */
-    def pushFile(path: String, data: String): Unit = js.native
+    def pushFile(path: String, data: String): js.Promise[Unit] = js.native
     
     /**
       * Appium Protocol Command
       *
       * Get the given app status on the device
-      * @ref http://appium.io/docs/en/commands/device/app/app-state/
+      * @ref https://appium.github.io/appium.io/docs/en/commands/device/app/app-state/
       *
       */
-    def queryAppState(appId: String): Double = js.native
+    def queryAppState(appId: String): js.Promise[Double] = js.native
     
     /**
       * Appium Protocol Command
@@ -402,16 +402,16 @@ object buildCommandsAppiumMod {
       * @ref https://github.com/appium/appium-base-driver/blob/master/docs/mjsonwp/protocol-methods.md#appium-extension-endpoints
       *
       */
-    def receiveAsyncResponse(response: js.Object): Unit = js.native
+    def receiveAsyncResponse(response: js.Object): js.Promise[Unit] = js.native
     
     /**
       * Appium Protocol Command
       *
       * Remove an app from the device.
-      * @ref http://appium.io/docs/en/commands/device/app/remove-app/
+      * @ref https://appium.github.io/appium.io/docs/en/commands/device/app/remove-app/
       *
       */
-    def removeApp(appId: String): Unit = js.native
+    def removeApp(appId: String): js.Promise[Unit] = js.native
     
     /**
       * Appium Protocol Command
@@ -420,25 +420,16 @@ object buildCommandsAppiumMod {
       * @ref https://github.com/appium/appium-base-driver/blob/master/docs/mjsonwp/protocol-methods.md#appium-extension-endpoints
       *
       */
-    def replaceValue(elementId: String, value: String): Unit = js.native
-    
-    /**
-      * Appium Protocol Command
-      *
-      * <b>Deprecated</b> This command will be removed with the upcoming major version release.
-      * @ref http://appium.io/docs/en/commands/device/app/reset-app/
-      *
-      */
-    def reset(): Unit = js.native
+    def replaceValue(elementId: String, value: String): js.Promise[Unit] = js.native
     
     /**
       * Appium Protocol Command
       *
       * Rotate the device in three dimensions.
-      * @ref http://appium.io/docs/en/commands/device/interactions/rotate/
+      * @ref https://appium.github.io/appium.io/docs/en/commands/device/interactions/rotate/
       *
       */
-    def rotateDevice(x: Double, y: Double, radius: Double, rotation: Double, touchCount: Double, duration: Double): Unit = js.native
+    def rotateDevice(x: Double, y: Double, radius: Double, rotation: Double, touchCount: Double, duration: Double): js.Promise[Unit] = js.native
     def rotateDevice(
       x: Double,
       y: Double,
@@ -447,7 +438,7 @@ object buildCommandsAppiumMod {
       touchCount: Double,
       duration: Double,
       element: String
-    ): Unit = js.native
+    ): js.Promise[Unit] = js.native
     
     /**
       * Appium Protocol Command
@@ -456,29 +447,29 @@ object buildCommandsAppiumMod {
       * @ref https://github.com/appium/appium-base-driver/blob/master/docs/mjsonwp/protocol-methods.md#appium-extension-endpoints
       *
       */
-    def sendKeyEvent(keycode: String): Unit = js.native
-    def sendKeyEvent(keycode: String, metastate: String): Unit = js.native
+    def sendKeyEvent(keycode: String): js.Promise[Unit] = js.native
+    def sendKeyEvent(keycode: String, metastate: String): js.Promise[Unit] = js.native
     
     /**
       * Appium Protocol Command
       *
       * Simulate an SMS message (Emulator only).
-      * @ref http://appium.io/docs/en/commands/device/network/send-sms/
+      * @ref https://appium.github.io/appium.io/docs/en/commands/device/network/send-sms/
       *
       */
-    def sendSms(phoneNumber: String, message: String): Unit = js.native
+    def sendSms(phoneNumber: String, message: String): js.Promise[Unit] = js.native
     
     /**
       * Appium Protocol Command
       *
       * Set the content of the system clipboard
-      * @ref http://appium.io/docs/en/commands/device/clipboard/set-clipboard/
+      * @ref https://appium.github.io/appium.io/docs/en/commands/device/clipboard/set-clipboard/
       *
       */
-    def setClipboard(content: String): String = js.native
-    def setClipboard(content: String, contentType: String): String = js.native
-    def setClipboard(content: String, contentType: String, label: String): String = js.native
-    def setClipboard(content: String, contentType: Unit, label: String): String = js.native
+    def setClipboard(content: String): js.Promise[String] = js.native
+    def setClipboard(content: String, contentType: String): js.Promise[String] = js.native
+    def setClipboard(content: String, contentType: String, label: String): js.Promise[String] = js.native
+    def setClipboard(content: String, contentType: Unit, label: String): js.Promise[String] = js.native
     
     /**
       * Appium Protocol Command
@@ -487,22 +478,22 @@ object buildCommandsAppiumMod {
       * @ref https://github.com/appium/appium-base-driver/blob/master/docs/mjsonwp/protocol-methods.md#appium-extension-endpoints
       *
       */
-    def setValueImmediate(elementId: String, value: String): Unit = js.native
+    def setValueImmediate(elementId: String, value: String): js.Promise[Unit] = js.native
     
     /**
       * Appium Protocol Command
       *
       * Perform a shake action on the device.
-      * @ref http://appium.io/docs/en/commands/device/interactions/shake/
+      * @ref https://appium.github.io/appium.io/docs/en/commands/device/interactions/shake/
       *
       */
-    def shake(): Unit = js.native
+    def shake(): js.Promise[Unit] = js.native
     
     /**
       * Appium Protocol Command
       *
       * Start an Android activity by providing package name and activity name.
-      * @ref http://appium.io/docs/en/commands/device/activity/start-activity/
+      * @ref https://appium.github.io/appium.io/docs/en/commands/device/activity/start-activity/
       *
       */
     def startActivity(
@@ -515,120 +506,120 @@ object buildCommandsAppiumMod {
       intentFlags: js.UndefOr[String],
       optionalIntentArguments: js.UndefOr[String],
       dontStopAppOnReset: js.UndefOr[String]
-    ): Unit = js.native
+    ): js.Promise[Unit] = js.native
     
     /**
       * Appium Protocol Command
       *
       * Start recording the screen.
-      * @ref http://appium.io/docs/en/commands/device/recording-screen/start-recording-screen/
+      * @ref https://appium.github.io/appium.io/docs/en/commands/device/recording-screen/start-recording-screen/
       *
       */
-    def startRecordingScreen(): Unit = js.native
-    def startRecordingScreen(options: js.Object): Unit = js.native
+    def startRecordingScreen(): js.Promise[Unit] = js.native
+    def startRecordingScreen(options: js.Object): js.Promise[Unit] = js.native
     
     /**
       * Appium Protocol Command
       *
       * Stop recording screen
-      * @ref http://appium.io/docs/en/commands/device/recording-screen/stop-recording-screen/
+      * @ref https://appium.github.io/appium.io/docs/en/commands/device/recording-screen/stop-recording-screen/
       *
       */
-    def stopRecordingScreen(): String = js.native
-    def stopRecordingScreen(remotePath: String): String = js.native
-    def stopRecordingScreen(remotePath: String, username: String): String = js.native
-    def stopRecordingScreen(remotePath: String, username: String, password: String): String = js.native
-    def stopRecordingScreen(remotePath: String, username: String, password: String, method: String): String = js.native
-    def stopRecordingScreen(remotePath: String, username: String, password: Unit, method: String): String = js.native
-    def stopRecordingScreen(remotePath: String, username: Unit, password: String): String = js.native
-    def stopRecordingScreen(remotePath: String, username: Unit, password: String, method: String): String = js.native
-    def stopRecordingScreen(remotePath: String, username: Unit, password: Unit, method: String): String = js.native
-    def stopRecordingScreen(remotePath: Unit, username: String): String = js.native
-    def stopRecordingScreen(remotePath: Unit, username: String, password: String): String = js.native
-    def stopRecordingScreen(remotePath: Unit, username: String, password: String, method: String): String = js.native
-    def stopRecordingScreen(remotePath: Unit, username: String, password: Unit, method: String): String = js.native
-    def stopRecordingScreen(remotePath: Unit, username: Unit, password: String): String = js.native
-    def stopRecordingScreen(remotePath: Unit, username: Unit, password: String, method: String): String = js.native
-    def stopRecordingScreen(remotePath: Unit, username: Unit, password: Unit, method: String): String = js.native
+    def stopRecordingScreen(): js.Promise[String] = js.native
+    def stopRecordingScreen(remotePath: String): js.Promise[String] = js.native
+    def stopRecordingScreen(remotePath: String, username: String): js.Promise[String] = js.native
+    def stopRecordingScreen(remotePath: String, username: String, password: String): js.Promise[String] = js.native
+    def stopRecordingScreen(remotePath: String, username: String, password: String, method: String): js.Promise[String] = js.native
+    def stopRecordingScreen(remotePath: String, username: String, password: Unit, method: String): js.Promise[String] = js.native
+    def stopRecordingScreen(remotePath: String, username: Unit, password: String): js.Promise[String] = js.native
+    def stopRecordingScreen(remotePath: String, username: Unit, password: String, method: String): js.Promise[String] = js.native
+    def stopRecordingScreen(remotePath: String, username: Unit, password: Unit, method: String): js.Promise[String] = js.native
+    def stopRecordingScreen(remotePath: Unit, username: String): js.Promise[String] = js.native
+    def stopRecordingScreen(remotePath: Unit, username: String, password: String): js.Promise[String] = js.native
+    def stopRecordingScreen(remotePath: Unit, username: String, password: String, method: String): js.Promise[String] = js.native
+    def stopRecordingScreen(remotePath: Unit, username: String, password: Unit, method: String): js.Promise[String] = js.native
+    def stopRecordingScreen(remotePath: Unit, username: Unit, password: String): js.Promise[String] = js.native
+    def stopRecordingScreen(remotePath: Unit, username: Unit, password: String, method: String): js.Promise[String] = js.native
+    def stopRecordingScreen(remotePath: Unit, username: Unit, password: Unit, method: String): js.Promise[String] = js.native
     
     /**
       * Appium Protocol Command
       *
       * Terminate the given app on the device
-      * @ref http://appium.io/docs/en/commands/device/app/terminate-app/
+      * @ref https://appium.github.io/appium.io/docs/en/commands/device/app/terminate-app/
       *
       */
-    def terminateApp(appId: String): Unit = js.native
+    def terminateApp(appId: String): js.Promise[Unit] = js.native
     
     /**
       * Appium Protocol Command
       *
       * Toggle airplane mode on device.
-      * @ref http://appium.io/docs/en/commands/device/network/toggle-airplane-mode/
+      * @ref https://appium.github.io/appium.io/docs/en/commands/device/network/toggle-airplane-mode/
       *
       */
-    def toggleAirplaneMode(): Unit = js.native
+    def toggleAirplaneMode(): js.Promise[Unit] = js.native
     
     /**
       * Appium Protocol Command
       *
       * Switch the state of data service.
-      * @ref http://appium.io/docs/en/commands/device/network/toggle-data/
+      * @ref https://appium.github.io/appium.io/docs/en/commands/device/network/toggle-data/
       *
       */
-    def toggleData(): Unit = js.native
+    def toggleData(): js.Promise[Unit] = js.native
     
     /**
       * Appium Protocol Command
       *
       * Toggle the simulator being [enrolled](https://support.apple.com/en-ca/ht201371) to accept touchId (iOS Simulator only). To enable this feature, the `allowTouchIdEnroll` desired capability must be set to true. When `allowTouchIdEnroll` is set to true the Simulator will be enrolled by default, and the 'Toggle Touch ID Enrollment' changes the enrollment state. This call will only work if the Appium process or its parent application (e.g., Terminal.app or Appium.app) has access to Mac OS accessibility in System Preferences > Security & Privacy > Privacy > Accessibility list.
-      * @ref http://appium.io/docs/en/commands/device/simulator/toggle-touch-id-enrollment/
+      * @ref https://appium.github.io/appium.io/docs/en/commands/device/simulator/toggle-touch-id-enrollment/
       *
       */
-    def toggleEnrollTouchId(): Unit = js.native
-    def toggleEnrollTouchId(enabled: Boolean): Unit = js.native
+    def toggleEnrollTouchId(): js.Promise[Unit] = js.native
+    def toggleEnrollTouchId(enabled: Boolean): js.Promise[Unit] = js.native
     
     /**
       * Appium Protocol Command
       *
       * Switch the state of the location service.
-      * @ref http://appium.io/docs/en/commands/device/network/toggle-location-services/
+      * @ref https://appium.github.io/appium.io/docs/en/commands/device/network/toggle-location-services/
       *
       */
-    def toggleLocationServices(): Unit = js.native
+    def toggleLocationServices(): js.Promise[Unit] = js.native
     
     /**
       * Appium Protocol Command
       *
       * Set network speed (Emulator only)
-      * @ref http://appium.io/docs/en/commands/device/network/network-speed/
+      * @ref https://appium.github.io/appium.io/docs/en/commands/device/network/network-speed/
       *
       */
-    def toggleNetworkSpeed(netspeed: String): Unit = js.native
+    def toggleNetworkSpeed(netspeed: String): js.Promise[Unit] = js.native
     
     /**
       * Appium Protocol Command
       *
       * Switch the state of the wifi service.
-      * @ref http://appium.io/docs/en/commands/device/network/toggle-wifi/
+      * @ref https://appium.github.io/appium.io/docs/en/commands/device/network/toggle-wifi/
       *
       */
-    def toggleWiFi(): Unit = js.native
+    def toggleWiFi(): js.Promise[Unit] = js.native
     
     /**
       * Appium Protocol Command
       *
-      * Simulate a [touch id](https://support.apple.com/en-ca/ht201371) event (iOS Simulator only). To enable this feature, the `allowTouchIdEnroll` desired capability must be set to true and the Simulator must be [enrolled](https://support.apple.com/en-ca/ht201371). When you set allowTouchIdEnroll to true, it will set the Simulator to be enrolled by default. The enrollment state can be [toggled](http://appium.io/docs/en/commands/device/simulator/toggle-touch-id-enrollment/index.html). This call will only work if Appium process or its parent application (e.g. Terminal.app or Appium.app) has access to Mac OS accessibility in System Preferences > Security & Privacy > Privacy > Accessibility list.
-      * @ref http://appium.io/docs/en/commands/device/simulator/touch-id/
+      * Simulate a [touch id](https://support.apple.com/en-ca/ht201371) event (iOS Simulator only). To enable this feature, the `allowTouchIdEnroll` desired capability must be set to true and the Simulator must be [enrolled](https://support.apple.com/en-ca/ht201371). When you set allowTouchIdEnroll to true, it will set the Simulator to be enrolled by default. The enrollment state can be [toggled](https://appium.github.io/appium.io/docs/en/commands/device/simulator/toggle-touch-id-enrollment/index.html). This call will only work if Appium process or its parent application (e.g. Terminal.app or Appium.app) has access to Mac OS accessibility in System Preferences > Security & Privacy > Privacy > Accessibility list.
+      * @ref https://appium.github.io/appium.io/docs/en/commands/device/simulator/touch-id/
       *
       */
-    def touchId(`match`: Boolean): Unit = js.native
+    def touchId(`match`: Boolean): js.Promise[Unit] = js.native
     
     /**
       * Appium Protocol Command
       *
       * This functionality is only available from within a native context. 'Touch Perform' works similarly to the other singular touch interactions, except that this allows you to chain together more than one touch action as one command. This is useful because Appium commands are sent over the network and there's latency between commands. This latency can make certain touch interactions impossible because some interactions need to be performed in one sequence. Vertical, for example, requires pressing down, moving to a different y coordinate, and then releasing. For it to work, there can't be a delay between the interactions.
-      * @ref http://appium.io/docs/en/commands/interactions/touch/touch-perform/
+      * @ref https://appium.github.io/appium.io/docs/en/commands/interactions/touch/touch-perform/
       *
       * @example
       * ```js
@@ -669,24 +660,24 @@ object buildCommandsAppiumMod {
       * ]);
       * ```
       */
-    def touchPerform(actions: js.Array[js.Object]): Unit = js.native
+    def touchPerform(actions: js.Array[js.Object]): js.Promise[Unit] = js.native
     
     /**
       * Appium Protocol Command
       *
       * Unlock the device.
-      * @ref http://appium.io/docs/en/commands/device/interactions/unlock/
+      * @ref https://appium.github.io/appium.io/docs/en/commands/device/interactions/unlock/
       *
       */
-    def unlock(): Unit = js.native
+    def unlock(): js.Promise[Unit] = js.native
     
     /**
       * Appium Protocol Command
       *
       * Update the current setting on the device.
-      * @ref http://appium.io/docs/en/commands/session/settings/update-settings/
+      * @ref https://appium.github.io/appium.io/docs/en/commands/session/settings/update-settings/
       *
       */
-    def updateSettings(settings: js.Object): Unit = js.native
+    def updateSettings(settings: js.Object): js.Promise[Unit] = js.native
   }
 }

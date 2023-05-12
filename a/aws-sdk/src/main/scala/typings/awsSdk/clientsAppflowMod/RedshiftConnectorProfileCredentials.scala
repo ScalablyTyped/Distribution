@@ -9,17 +9,17 @@ trait RedshiftConnectorProfileCredentials extends StObject {
   /**
     *  The password that corresponds to the user name. 
     */
-  var password: Password
+  var password: js.UndefOr[Password] = js.undefined
   
   /**
     *  The name of the user. 
     */
-  var username: Username
+  var username: js.UndefOr[String] = js.undefined
 }
 object RedshiftConnectorProfileCredentials {
   
-  inline def apply(password: Password, username: Username): RedshiftConnectorProfileCredentials = {
-    val __obj = js.Dynamic.literal(password = password.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
+  inline def apply(): RedshiftConnectorProfileCredentials = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RedshiftConnectorProfileCredentials]
   }
   
@@ -28,6 +28,10 @@ object RedshiftConnectorProfileCredentials {
     
     inline def setPassword(value: Password): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
-    inline def setUsername(value: Username): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+    
+    inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    
+    inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
   }
 }

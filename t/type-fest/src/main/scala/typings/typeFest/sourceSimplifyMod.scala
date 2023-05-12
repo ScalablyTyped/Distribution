@@ -6,12 +6,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object sourceSimplifyMod {
   
-  /** NOTE: Mapped type definitions are impossible to translate to Scala.
-    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
-    * This translation is imprecise and ignores the effect of the type mapping. 
-    * TS definition: {{{
-    {[ KeyType in keyof T ]: T[KeyType]}
-    }}}
-    */
-  type Simplify[T] = T
+  type Simplify[T] = /* import warning: importer.ImportType#apply Failed type conversion: {[ KeyType in keyof T ]: T[KeyType]} */ js.Any
 }

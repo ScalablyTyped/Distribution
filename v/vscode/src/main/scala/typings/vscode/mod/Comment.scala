@@ -7,55 +7,55 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Comment extends StObject {
   
   /**
-    * The {@link CommentAuthorInformation author information} of the comment
-    */
+  		 * The {@link CommentAuthorInformation author information} of the comment
+  		 */
   var author: CommentAuthorInformation
   
   /**
-    * The human-readable comment body
-    */
+  		 * The human-readable comment body
+  		 */
   var body: String | MarkdownString
   
   /**
-    * Context value of the comment. This can be used to contribute comment specific actions.
-    * For example, a comment is given a context value as `editable`. When contributing actions to `comments/comment/title`
-    * using `menus` extension point, you can specify context value for key `comment` in `when` expression like `comment == editable`.
-    * ```json
-    *	"contributes": {
-    *		"menus": {
-    *			"comments/comment/title": [
-    *				{
-    *					"command": "extension.deleteComment",
-    *					"when": "comment == editable"
-    *				}
-    *			]
-    *		}
-    *	}
-    * ```
-    * This will show action `extension.deleteComment` only for comments with `contextValue` is `editable`.
-    */
+  		 * Context value of the comment. This can be used to contribute comment specific actions.
+  		 * For example, a comment is given a context value as `editable`. When contributing actions to `comments/comment/title`
+  		 * using `menus` extension point, you can specify context value for key `comment` in `when` expression like `comment == editable`.
+  		 * ```json
+  		 *	"contributes": {
+  		 *		"menus": {
+  		 *			"comments/comment/title": [
+  		 *				{
+  		 *					"command": "extension.deleteComment",
+  		 *					"when": "comment == editable"
+  		 *				}
+  		 *			]
+  		 *		}
+  		 *	}
+  		 * ```
+  		 * This will show action `extension.deleteComment` only for comments with `contextValue` is `editable`.
+  		 */
   var contextValue: js.UndefOr[String] = js.undefined
   
   /**
-    * Optional label describing the {@link Comment}
-    * Label will be rendered next to authorName if exists.
-    */
+  		 * Optional label describing the {@link Comment}
+  		 * Label will be rendered next to authorName if exists.
+  		 */
   var label: js.UndefOr[String] = js.undefined
   
   /**
-    * {@link CommentMode Comment mode} of the comment
-    */
+  		 * {@link CommentMode Comment mode} of the comment
+  		 */
   var mode: CommentMode
   
   /**
-    * Optional reactions of the {@link Comment}
-    */
+  		 * Optional reactions of the {@link Comment}
+  		 */
   var reactions: js.UndefOr[js.Array[CommentReaction]] = js.undefined
   
   /**
-    * Optional timestamp that will be displayed in comments.
-    * The date will be formatted according to the user's locale and settings.
-    */
+  		 * Optional timestamp that will be displayed in comments.
+  		 * The date will be formatted according to the user's locale and settings.
+  		 */
   var timestamp: js.UndefOr[js.Date] = js.undefined
 }
 object Comment {

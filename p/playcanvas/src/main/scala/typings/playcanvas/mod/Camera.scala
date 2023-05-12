@@ -1,5 +1,7 @@
 package typings.playcanvas.mod
 
+import typings.playcanvas.anon.AspectRatio
+import typings.playcanvas.anon.FarClip
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -91,6 +93,10 @@ open class Camera () extends StObject {
   var _viewProjMat: Mat4 = js.native
   
   var _viewProjMatDirty: Boolean = js.native
+  
+  var _xr: Any = js.native
+  
+  var _xrProperties: AspectRatio = js.native
   
   def aperture: Double = js.native
   def aperture_=(arg: Double): Unit = js.native
@@ -230,6 +236,24 @@ open class Camera () extends StObject {
   def sensitivity: Double = js.native
   def sensitivity_=(arg: Double): Unit = js.native
   
+  /**
+    * Sets XR camera properties that should be derived physical camera in {@link XrManager}.
+    *
+    * @param {object} [properties] - Properties object.
+    * @param {number} [properties.aspectRatio] - Aspect ratio.
+    * @param {number} [properties.farClip] - Far clip.
+    * @param {number} [properties.fov] - Field of view.
+    * @param {boolean} [properties.horizontalFov] - Enable horizontal field of view.
+    * @param {number} [properties.nearClip] - Near clip.
+    */
+  def setXrProperties(): Unit = js.native
+  def setXrProperties(properties: FarClip): Unit = js.native
+  
+  /**
+    * @type {import('./shader-pass.js').ShaderPassInfo|null}
+    */
+  var shaderPassInfo: ShaderPassInfo | Null = js.native
+  
   def shutter: Double = js.native
   def shutter_=(arg: Double): Unit = js.native
   
@@ -246,4 +270,7 @@ open class Camera () extends StObject {
     */
   def worldToScreen(worldCoord: Vec3, cw: Double, ch: Double): Vec3 = js.native
   def worldToScreen(worldCoord: Vec3, cw: Double, ch: Double, screenCoord: Vec3): Vec3 = js.native
+  
+  def xr: Any = js.native
+  def xr_=(arg: Any): Unit = js.native
 }

@@ -1,6 +1,6 @@
 package typings.webdriver
 
-import typings.node.urlMod.URL_
+import typings.node.nodeColonurlMod.URL
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -20,10 +20,10 @@ object buildRequestFactoryMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def getInstance(method: String, endpoint: String): typings.webdriver.buildRequestMod.default = (^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(method.asInstanceOf[js.Any], endpoint.asInstanceOf[js.Any])).asInstanceOf[typings.webdriver.buildRequestMod.default]
-    inline def getInstance(method: String, endpoint: String, body: Unit, isHubCommand: Boolean): typings.webdriver.buildRequestMod.default = (^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(method.asInstanceOf[js.Any], endpoint.asInstanceOf[js.Any], body.asInstanceOf[js.Any], isHubCommand.asInstanceOf[js.Any])).asInstanceOf[typings.webdriver.buildRequestMod.default]
-    inline def getInstance(method: String, endpoint: String, body: Record[String, Any]): typings.webdriver.buildRequestMod.default = (^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(method.asInstanceOf[js.Any], endpoint.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[typings.webdriver.buildRequestMod.default]
-    inline def getInstance(method: String, endpoint: String, body: Record[String, Any], isHubCommand: Boolean): typings.webdriver.buildRequestMod.default = (^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(method.asInstanceOf[js.Any], endpoint.asInstanceOf[js.Any], body.asInstanceOf[js.Any], isHubCommand.asInstanceOf[js.Any])).asInstanceOf[typings.webdriver.buildRequestMod.default]
+    inline def getInstance(method: String, endpoint: String): js.Promise[typings.webdriver.buildRequestMod.default] = (^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(method.asInstanceOf[js.Any], endpoint.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.webdriver.buildRequestMod.default]]
+    inline def getInstance(method: String, endpoint: String, body: Unit, isHubCommand: Boolean): js.Promise[typings.webdriver.buildRequestMod.default] = (^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(method.asInstanceOf[js.Any], endpoint.asInstanceOf[js.Any], body.asInstanceOf[js.Any], isHubCommand.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.webdriver.buildRequestMod.default]]
+    inline def getInstance(method: String, endpoint: String, body: Record[String, Any]): js.Promise[typings.webdriver.buildRequestMod.default] = (^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(method.asInstanceOf[js.Any], endpoint.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.webdriver.buildRequestMod.default]]
+    inline def getInstance(method: String, endpoint: String, body: Record[String, Any], isHubCommand: Boolean): js.Promise[typings.webdriver.buildRequestMod.default] = (^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(method.asInstanceOf[js.Any], endpoint.asInstanceOf[js.Any], body.asInstanceOf[js.Any], isHubCommand.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.webdriver.buildRequestMod.default]]
   }
   
   @JSImport("webdriver/build/request/factory", "URLFactory")
@@ -36,7 +36,7 @@ object buildRequestFactoryMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def getInstance(uri: String): URL_ = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(uri.asInstanceOf[js.Any]).asInstanceOf[URL_]
+    inline def getInstance(uri: String): js.Promise[URL] = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(uri.asInstanceOf[js.Any]).asInstanceOf[js.Promise[URL]]
   }
   
   trait RequestFactory extends StObject

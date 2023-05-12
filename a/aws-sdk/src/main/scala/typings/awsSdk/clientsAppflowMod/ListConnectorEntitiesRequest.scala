@@ -25,6 +25,16 @@ trait ListConnectorEntitiesRequest extends StObject {
     *  This optional parameter is specific to connector implementation. Some connectors support multiple levels or categories of entities. You can find out the list of roots for such providers by sending a request without the entitiesPath parameter. If the connector supports entities at different roots, this initial request returns the list of roots. Otherwise, this request returns all entities supported by the provider. 
     */
   var entitiesPath: js.UndefOr[EntitiesPath] = js.undefined
+  
+  /**
+    * The maximum number of items that the operation returns in the response.
+    */
+  var maxResults: js.UndefOr[ListEntitiesMaxResults] = js.undefined
+  
+  /**
+    * A token that was provided by your prior ListConnectorEntities operation if the response was too big for the page size. You specify this token to get the next page of results in paginated response.
+    */
+  var nextToken: js.UndefOr[NextToken] = js.undefined
 }
 object ListConnectorEntitiesRequest {
   
@@ -51,5 +61,13 @@ object ListConnectorEntitiesRequest {
     inline def setEntitiesPath(value: EntitiesPath): Self = StObject.set(x, "entitiesPath", value.asInstanceOf[js.Any])
     
     inline def setEntitiesPathUndefined: Self = StObject.set(x, "entitiesPath", js.undefined)
+    
+    inline def setMaxResults(value: ListEntitiesMaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

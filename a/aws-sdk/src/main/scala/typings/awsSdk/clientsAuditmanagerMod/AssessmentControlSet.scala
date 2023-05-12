@@ -37,7 +37,7 @@ trait AssessmentControlSet extends StObject {
   var roles: js.UndefOr[Roles] = js.undefined
   
   /**
-    *  Specifies the current status of the control set. 
+    *  The current status of the control set. 
     */
   var status: js.UndefOr[ControlSetStatus] = js.undefined
   

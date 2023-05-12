@@ -17,6 +17,8 @@ trait PrivateSettings
   
   var experimentalForceLongPolling: js.UndefOr[Boolean] = js.undefined
   
+  var localCache: js.UndefOr[FirestoreLocalCache] = js.undefined
+  
   var useFetchStreams: js.UndefOr[Boolean] = js.undefined
 }
 object PrivateSettings {
@@ -44,6 +46,10 @@ object PrivateSettings {
     inline def setExperimentalForceLongPolling(value: Boolean): Self = StObject.set(x, "experimentalForceLongPolling", value.asInstanceOf[js.Any])
     
     inline def setExperimentalForceLongPollingUndefined: Self = StObject.set(x, "experimentalForceLongPolling", js.undefined)
+    
+    inline def setLocalCache(value: FirestoreLocalCache): Self = StObject.set(x, "localCache", value.asInstanceOf[js.Any])
+    
+    inline def setLocalCacheUndefined: Self = StObject.set(x, "localCache", js.undefined)
     
     inline def setUseFetchStreams(value: Boolean): Self = StObject.set(x, "useFetchStreams", value.asInstanceOf[js.Any])
     

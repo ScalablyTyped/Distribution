@@ -23,8 +23,6 @@ object srcCommandBuilderSchematicsCommandModuleMod {
     
     /* protected */ val allowPrivateSchematics: Boolean = js.native
     
-    /* private */ var defaultProjectDeprecationWarningShown: Any = js.native
-    
     /* protected */ def getOrCreateWorkflowForBuilder(collectionName: String): Any = js.native
     
     /* protected */ def getOrCreateWorkflowForExecution(collectionName: String, options: SchematicsExecutionOptions): js.Promise[

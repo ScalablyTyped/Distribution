@@ -1,7 +1,6 @@
 package typings.libp2pCrypto
 
 import typings.libp2pCrypto.distSrcKeysInterfaceMod.JWKKeyPair
-import typings.node.bufferMod.global.Buffer
 import typings.std.JsonWebKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,15 +12,15 @@ object distSrcKeysRsaMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def decrypt(key: JsonWebKey, bytes: js.typedarray.Uint8Array): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(key.asInstanceOf[js.Any], bytes.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  inline def decrypt(key: JsonWebKey, bytes: js.typedarray.Uint8Array): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(key.asInstanceOf[js.Any], bytes.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   
-  inline def encrypt(key: JsonWebKey, bytes: js.typedarray.Uint8Array): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(key.asInstanceOf[js.Any], bytes.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  inline def encrypt(key: JsonWebKey, bytes: js.typedarray.Uint8Array): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(key.asInstanceOf[js.Any], bytes.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   
   inline def generateKey(bits: Double): js.Promise[JWKKeyPair] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateKey")(bits.asInstanceOf[js.Any]).asInstanceOf[js.Promise[JWKKeyPair]]
   
   inline def getRandomValues(length: Double): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("getRandomValues")(length.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
   
-  inline def hashAndSign(key: JsonWebKey, msg: js.typedarray.Uint8Array): js.Promise[Buffer & String] = (^.asInstanceOf[js.Dynamic].applyDynamic("hashAndSign")(key.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer & String]]
+  inline def hashAndSign(key: JsonWebKey, msg: js.typedarray.Uint8Array): js.Promise[js.typedarray.Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("hashAndSign")(key.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.typedarray.Uint8Array]]
   
   inline def hashAndVerify(key: JsonWebKey, sig: js.typedarray.Uint8Array, msg: js.typedarray.Uint8Array): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("hashAndVerify")(key.asInstanceOf[js.Any], sig.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
   

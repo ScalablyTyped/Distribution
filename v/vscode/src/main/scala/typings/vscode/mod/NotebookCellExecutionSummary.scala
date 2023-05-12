@@ -8,18 +8,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NotebookCellExecutionSummary extends StObject {
   
   /**
-    * The order in which the execution happened.
-    */
+  		 * The order in which the execution happened.
+  		 */
   val executionOrder: js.UndefOr[Double] = js.undefined
   
   /**
-    * If the execution finished successfully.
-    */
+  		 * If the execution finished successfully.
+  		 */
   val success: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The times at which execution started and ended, as unix timestamps
-    */
+  		 * The times at which execution started and ended, as unix timestamps
+  		 */
   val timing: js.UndefOr[EndTime] = js.undefined
 }
 object NotebookCellExecutionSummary {

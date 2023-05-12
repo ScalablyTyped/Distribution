@@ -18,7 +18,7 @@ open class I18n protected ()
   /**
     * Create a new I18n instance.
     *
-    * @param {AppBase} app - The application.
+    * @param {import('../app-base.js').AppBase} app - The application.
     */
   def this(app: typings.playcanvas.mod.AppBase) = this()
 }
@@ -38,8 +38,8 @@ object I18n {
     * locale.
     * @example
     * // With a defined dictionary of locales
-    * var availableLocales = { en: 'en-US', fr: 'fr-FR' };
-    * var locale = pc.I18n.getText('en-US', availableLocales);
+    * const availableLocales = { en: 'en-US', fr: 'fr-FR' };
+    * const locale = pc.I18n.getText('en-US', availableLocales);
     * // returns 'en'
     * @ignore
     */

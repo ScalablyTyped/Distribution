@@ -1,7 +1,7 @@
 
 # Scala.js typings for angular__core
 
-Typings are for version 14.2.10
+Typings are for version 16.0.1
 
 ## Library description:
 Angular - the core framework

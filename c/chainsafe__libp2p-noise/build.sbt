@@ -1,22 +1,27 @@
 organization := "org.scalablytyped"
 name := "chainsafe__libp2p-noise"
-version := "10.0.0-965678"
+version := "12.0.0-52ea60"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "it-length-prefixed" % "8.0.3-e7923c",
-  "org.scalablytyped" %%% "it-pb-stream" % "2.0.2-c357a3",
-  "org.scalablytyped" %%% "it-reader" % "6.0.1-f530a3",
-  "org.scalablytyped" %%% "it-stream-types" % "1.0.4-f6f2e3",
-  "org.scalablytyped" %%% "libp2p__interface-connection-encrypter" % "3.0.1-08588b",
-  "org.scalablytyped" %%% "libp2p__interface-peer-id" % "1.0.5-b7cd64",
-  "org.scalablytyped" %%% "libp2p__logger" % "2.0.2-f3e9e0",
-  "org.scalablytyped" %%% "multiformats" % "10.0.2-dbe0b0",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-874609",
-  "org.scalablytyped" %%% "protons-runtime" % "4.0.1-b69761",
-  "org.scalablytyped" %%% "std" % "4.9-ecb5eb",
-  "org.scalablytyped" %%% "uint8arraylist" % "2.3.3-f85bcb")
+  "org.scalablytyped" %%% "dns-over-http-resolver" % "2.1.1-33129a",
+  "org.scalablytyped" %%% "it-length-prefixed" % "9.0.1-11184e",
+  "org.scalablytyped" %%% "it-pb-stream" % "4.0.1-2af80f",
+  "org.scalablytyped" %%% "it-reader" % "6.0.4-11b9dd",
+  "org.scalablytyped" %%% "it-stream-types" % "2.0.1-0d2408",
+  "org.scalablytyped" %%% "libp2p__interface-connection" % "5.0.2-780089",
+  "org.scalablytyped" %%% "libp2p__interface-connection-encrypter" % "4.0.1-c8d6d5",
+  "org.scalablytyped" %%% "libp2p__interface-metrics" % "4.0.8-876663",
+  "org.scalablytyped" %%% "libp2p__interface-peer-id" % "2.0.2-3b3a0e",
+  "org.scalablytyped" %%% "libp2p__interfaces" % "3.3.2-e477a0",
+  "org.scalablytyped" %%% "libp2p__logger" % "2.0.7-a82d2a",
+  "org.scalablytyped" %%% "multiformats" % "11.0.2-8d8a57",
+  "org.scalablytyped" %%% "multiformats__multiaddr" % "12.1.2-8f78ef",
+  "org.scalablytyped" %%% "node" % "20.1-dt-20230511Z-0320fc",
+  "org.scalablytyped" %%% "protons-runtime" % "5.0.0-2c8611",
+  "org.scalablytyped" %%% "std" % "5.0-e63739",
+  "org.scalablytyped" %%% "uint8arraylist" % "2.4.3-95c018")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

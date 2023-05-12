@@ -7,11 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object libListMod extends Shortcut {
   
-  @JSImport("postcss/lib/list", JSImport.Default)
+  @JSImport("postcss/lib/list", JSImport.Namespace)
   @js.native
-  val default: typings.postcss.libListMod.List = js.native
+  val ^ : typings.postcss.libListMod.List = js.native
   
   trait List extends StObject {
+    
+    var default: typings.postcss.libListMod.List
     
     /**
       * Safely splits comma-separated values (such as those for `transition-*`
@@ -64,10 +66,11 @@ object libListMod extends Shortcut {
     
     inline def apply(
       comma: String => js.Array[String],
+      default: typings.postcss.libListMod.List,
       space: String => js.Array[String],
       split: (String, js.Array[String], Boolean) => js.Array[String]
     ): typings.postcss.libListMod.List = {
-      val __obj = js.Dynamic.literal(comma = js.Any.fromFunction1(comma), space = js.Any.fromFunction1(space), split = js.Any.fromFunction3(split))
+      val __obj = js.Dynamic.literal(comma = js.Any.fromFunction1(comma), default = default.asInstanceOf[js.Any], space = js.Any.fromFunction1(space), split = js.Any.fromFunction3(split))
       __obj.asInstanceOf[typings.postcss.libListMod.List]
     }
     
@@ -75,6 +78,8 @@ object libListMod extends Shortcut {
     implicit open class MutableBuilder[Self <: typings.postcss.libListMod.List] (val x: Self) extends AnyVal {
       
       inline def setComma(value: String => js.Array[String]): Self = StObject.set(x, "comma", js.Any.fromFunction1(value))
+      
+      inline def setDefault(value: typings.postcss.libListMod.List): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
       inline def setSpace(value: String => js.Array[String]): Self = StObject.set(x, "space", js.Any.fromFunction1(value))
       
@@ -84,6 +89,6 @@ object libListMod extends Shortcut {
   
   type _To = typings.postcss.libListMod.List
   
-  /* This means you don't have to write `default`, but can instead just say `libListMod.foo` */
-  override def _to: typings.postcss.libListMod.List = default
+  /* This means you don't have to write `^`, but can instead just say `libListMod.foo` */
+  override def _to: typings.postcss.libListMod.List = ^
 }

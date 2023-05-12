@@ -1,87 +1,50 @@
 package typings.octokitOpenapiTypes.anon
 
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.admin
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.none_
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.read
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.write
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.closed
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.open
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Ownerurl extends StObject {
   
-  /**
-    * @description Body of the project
-    * @example This project represents the sprint of the first week in January
-    */
+  /** @description Body of the project */
   var body: String | Null
   
-  /**
-    * Format: uri
-    * @example https://api.github.com/projects/1002604/columns
-    */
+  /** Format: uri */
   var columns_url: String
   
-  /**
-    * Format: date-time
-    * @example 2011-04-10T20:09:31Z
-    */
+  /** Format: date-time */
   var created_at: String
   
-  var creator: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-simple-user'] */ js.Any
+  /** User */
+  var creator: Deleted | Null
   
-  /**
-    * Format: uri
-    * @example https://github.com/api-playground/projects-test/projects/12
-    */
+  /** Format: uri */
   var html_url: String
   
-  /** @example 1002604 */
   var id: Double
   
-  /**
-    * @description Name of the project
-    * @example Week One Sprint
-    */
+  /** @description Name of the project */
   var name: String
   
-  /** @example MDc6UHJvamVjdDEwMDI2MDQ= */
   var node_id: String
   
-  /** @example 1 */
   var number: Double
   
-  /**
-    * @description The baseline permission that all organization members have on this project. Only present if owner is an organization.
-    * @enum {string}
-    */
-  var organization_permission: js.UndefOr[read | write | admin | none_] = js.undefined
-  
-  /**
-    * Format: uri
-    * @example https://api.github.com/repos/api-playground/projects-test
-    */
+  /** Format: uri */
   var owner_url: String
-  
-  /** @description Whether or not this project can be seen by everyone. Only present if owner is an organization. */
-  var `private`: js.UndefOr[Boolean] = js.undefined
   
   /**
     * @description State of the project; either 'open' or 'closed'
-    * @example open
+    * @enum {string}
     */
-  var state: String
+  var state: open | closed
   
-  /**
-    * Format: date-time
-    * @example 2014-03-03T18:58:10Z
-    */
+  /** Format: date-time */
   var updated_at: String
   
-  /**
-    * Format: uri
-    * @example https://api.github.com/projects/1002604
-    */
+  /** Format: uri */
   var url: String
 }
 object Ownerurl {
@@ -89,18 +52,17 @@ object Ownerurl {
   inline def apply(
     columns_url: String,
     created_at: String,
-    creator: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-simple-user'] */ js.Any,
     html_url: String,
     id: Double,
     name: String,
     node_id: String,
     number: Double,
     owner_url: String,
-    state: String,
+    state: open | closed,
     updated_at: String,
     url: String
   ): Ownerurl = {
-    val __obj = js.Dynamic.literal(columns_url = columns_url.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], creator = creator.asInstanceOf[js.Any], html_url = html_url.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], node_id = node_id.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], owner_url = owner_url.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], body = null)
+    val __obj = js.Dynamic.literal(columns_url = columns_url.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], html_url = html_url.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], node_id = node_id.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], owner_url = owner_url.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], body = null, creator = null)
     __obj.asInstanceOf[Ownerurl]
   }
   
@@ -115,9 +77,9 @@ object Ownerurl {
     
     inline def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
     
-    inline def setCreator(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-simple-user'] */ js.Any
-    ): Self = StObject.set(x, "creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Deleted): Self = StObject.set(x, "creator", value.asInstanceOf[js.Any])
+    
+    inline def setCreatorNull: Self = StObject.set(x, "creator", null)
     
     inline def setHtml_url(value: String): Self = StObject.set(x, "html_url", value.asInstanceOf[js.Any])
     
@@ -129,17 +91,9 @@ object Ownerurl {
     
     inline def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     
-    inline def setOrganization_permission(value: read | write | admin | none_): Self = StObject.set(x, "organization_permission", value.asInstanceOf[js.Any])
-    
-    inline def setOrganization_permissionUndefined: Self = StObject.set(x, "organization_permission", js.undefined)
-    
     inline def setOwner_url(value: String): Self = StObject.set(x, "owner_url", value.asInstanceOf[js.Any])
     
-    inline def setPrivate(value: Boolean): Self = StObject.set(x, "private", value.asInstanceOf[js.Any])
-    
-    inline def setPrivateUndefined: Self = StObject.set(x, "private", js.undefined)
-    
-    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: open | closed): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     inline def setUpdated_at(value: String): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])
     

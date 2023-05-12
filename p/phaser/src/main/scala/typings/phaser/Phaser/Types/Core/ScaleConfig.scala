@@ -28,7 +28,7 @@ trait ScaleConfig extends StObject {
   /**
     * The DOM element that will be sent into full screen mode, or its `id`. If undefined Phaser will create its own div and insert the canvas into it when entering fullscreen mode.
     */
-  var fullscreenTarget: js.UndefOr[HTMLElement | String] = js.undefined
+  var fullscreenTarget: js.UndefOr[HTMLElement | String | Null] = js.undefined
   
   /**
     * The base height of your game. Can be an integer or a string: '100%'. If a string it will only work if you have set a parent element that has a size.
@@ -53,7 +53,7 @@ trait ScaleConfig extends StObject {
   /**
     * The DOM element that will contain the game canvas, or its `id`. If undefined, or if the named element doesn't exist, the game canvas is inserted directly into the document body. If `null` no parent will be used and you are responsible for adding the canvas to your environment.
     */
-  var parent: js.UndefOr[HTMLElement | String] = js.undefined
+  var parent: js.UndefOr[HTMLElement | String | Null] = js.undefined
   
   /**
     * How many ms should elapse before checking if the browser size has changed?
@@ -94,6 +94,8 @@ object ScaleConfig {
     
     inline def setFullscreenTarget(value: HTMLElement | String): Self = StObject.set(x, "fullscreenTarget", value.asInstanceOf[js.Any])
     
+    inline def setFullscreenTargetNull: Self = StObject.set(x, "fullscreenTarget", null)
+    
     inline def setFullscreenTargetUndefined: Self = StObject.set(x, "fullscreenTarget", js.undefined)
     
     inline def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
@@ -113,6 +115,8 @@ object ScaleConfig {
     inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
     inline def setParent(value: HTMLElement | String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    
+    inline def setParentNull: Self = StObject.set(x, "parent", null)
     
     inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
     

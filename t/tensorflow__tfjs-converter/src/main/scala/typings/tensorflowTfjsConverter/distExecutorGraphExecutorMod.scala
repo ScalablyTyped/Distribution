@@ -34,7 +34,7 @@ object distExecutorGraphExecutorMod {
     def this(graph: Graph) = this()
     def this(graph: Graph, parent: GraphExecutor) = this()
     
-    /* private */ var SEPERATOR: Any = js.native
+    /* private */ var SEPARATOR: Any = js.native
     
     /**
       * Executes the inference for given input tensors in Async fashion.
@@ -42,8 +42,8 @@ object distExecutorGraphExecutorMod {
       * names.
       * @param outputs Optional. output node name from the Tensorflow model,
       * if no outputs are specified, the default outputs of the model would be
-      * used. You can inspect intermediate nodes of the model by adding them to the
-      * outputs array.
+      * used. You can inspect intermediate nodes of the model by adding them to
+      * the outputs array.
       * @param isFunctionExecution Optional. Flag for executing a function.
       * @param tensorArrayMap Optional, global TensorArray map by id. Used for
       * function execution.
@@ -78,9 +78,26 @@ object distExecutorGraphExecutorMod {
     
     /* private */ var checkTensorForDisposal: Any = js.native
     
+    /* private */ var checkTensorForDisposalWithNodeLiveUntilInfo: Any = js.native
+    
+    /* private */ var cloneAndKeepTensor: Any = js.native
+    
+    /* private */ var cloneTensorList: Any = js.native
+    
+    /* private */ var cloneTensorMap: Any = js.native
+    
+    /* private */ var clonedTensorsMap: Any = js.native
+    
     /**
       * Compiles the inference graph and returns the minimal set of nodes that are
       * required for execution, in the correct execution order.
+      * @returns {Object} compilation The compile result.
+      * @returns {Node[]} compilation.orderedNodes Nodes in the correct execution
+      *     order.
+      * @returns {Map<string, Node[]>} compilation.nodeLiveUntilMap A map from node
+      *     to disposable nodes after its execution. That is, for a node `x`,
+      *     `nodeLiveUntilMap[x]` indicates all nodes whose intermediate
+      *     tensors should be disposed after `x` is executed.
       */
     /* private */ var compile: Any = js.native
     
@@ -92,8 +109,6 @@ object distExecutorGraphExecutorMod {
     def dispose(): Unit = js.native
     
     def disposeIntermediateTensors(): Unit = js.native
-    
-    /* private */ var disposeTensorsMap: Any = js.native
     
     /**
       * Executes the inference for given input tensors.
@@ -129,8 +144,8 @@ object distExecutorGraphExecutorMod {
       * @param context the execution context object for current execution.
       * @param outputNames Optional. output node name from the Tensorflow model,
       * if no outputs are specified, the default outputs of the model would be
-      * used. You can inspect intermediate nodes of the model by adding them to the
-      * outputs array.
+      * used. You can inspect intermediate nodes of the model by adding them to
+      * the outputs array.
       * @param isFunctionExecution Flag for executing a function.
       */
     /* private */ var executeWithControlFlow: Any = js.native
@@ -151,11 +166,7 @@ object distExecutorGraphExecutorMod {
     
     def inputs: js.Array[TensorInfo] = js.native
     
-    /* private */ var intermediateTensors: Any = js.native
-    
-    /* private */ var keepIds: Any = js.native
-    
-    /* private */ var keepTensorForDebug: Any = js.native
+    /* private */ var keepIntermediateTensors: Any = js.native
     
     /* private */ var mapInputs: Any = js.native
     
@@ -167,19 +178,17 @@ object distExecutorGraphExecutorMod {
     
     /* private */ var parent: Any = js.native
     
+    /* private */ var parseNodeNameCache: Any = js.native
+    
     /* private */ var processChildNodes: Any = js.native
     
     /* private */ var processStack: Any = js.native
-    
-    /* private */ var resetIntermediateTensors: Any = js.native
     
     /**
       * Set `ResourceManager` shared by executors of a model.
       * @param resourceManager: `ResourceManager` of the `GraphModel`.
       */
     def resourceManager_=(resourceManager: ResourceManager): Unit = js.native
-    
-    /* private */ var tensorsMap: Any = js.native
     
     def weightIds: js.Array[Double] = js.native
     

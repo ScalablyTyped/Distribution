@@ -1,7 +1,7 @@
 
 # Scala.js typings for convert-source-map
 
-Typings are for version 1.5
+Typings are for version 2.0
 
 ## Library description:
 Converts a source-map from/to  different formats and allows adding/changing properties.

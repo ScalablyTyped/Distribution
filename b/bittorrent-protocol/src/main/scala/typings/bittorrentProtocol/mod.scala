@@ -182,7 +182,6 @@ object mod extends Shortcut {
       listener: js.Function0[Unit]
     ): this.type = js.native
     def on(event: upload | have | download | port, listener: js.Function1[/* length */ Double, Unit]): this.type = js.native
-    def on(event: String, listener: js.Function1[/* repeated */ Any, Unit]): this.type = js.native
     def on(event: extended, listener: js.Function2[/* ext */ handshake | String, /* buf */ Any, Unit]): Unit = js.native
     // TODO: bitfield is a bitfield instance
     @JSName("on")

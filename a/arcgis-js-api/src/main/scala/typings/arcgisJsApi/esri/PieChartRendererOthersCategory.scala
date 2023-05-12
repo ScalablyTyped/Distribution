@@ -16,7 +16,7 @@ trait PieChartRendererOthersCategory extends StObject {
   /**
     * Describes the `color` grouping categories smaller than the `threshold` in the [Legend](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html).
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PieChartRenderer.html#othersCategory)
+    * [Read more...](global.html)
     */
   var label: js.UndefOr[String] = js.undefined
   

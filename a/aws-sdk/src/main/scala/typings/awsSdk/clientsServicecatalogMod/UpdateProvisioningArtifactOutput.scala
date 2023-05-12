@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateProvisioningArtifactOutput extends StObject {
   
   /**
-    * The URL of the CloudFormation template in Amazon S3, Amazon Web Services CodeCommit, or GitHub in JSON format.
+    * The URL of the CloudFormation template in Amazon S3 or GitHub in JSON format.
     */
   var Info: js.UndefOr[ProvisioningArtifactInfo] = js.undefined
   

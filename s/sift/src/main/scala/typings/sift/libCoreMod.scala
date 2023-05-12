@@ -74,15 +74,6 @@ object libCoreMod {
     val keyPath: js.Array[Key] = js.native
   }
   
-  @JSImport("sift/lib/core", "NopeOperation")
-  @js.native
-  open class NopeOperation[TParam] protected () extends BaseOperation[TParam, Any] {
-    def this(params: TParam, owneryQuery: Any, options: Options) = this()
-    def this(params: TParam, owneryQuery: Any, options: Options, name: String) = this()
-    
-    def next(): Unit = js.native
-  }
-  
   @JSImport("sift/lib/core", "QueryOperation")
   @js.native
   open class QueryOperation[TItem] () extends GroupOperation

@@ -23,9 +23,12 @@ import typings.prosemirrorView.anon.Inside
 import typings.prosemirrorView.anon.Left
 import typings.prosemirrorView.anon.Mount
 import typings.prosemirrorView.anon.Move
+import typings.prosemirrorView.anon.Offset
 import typings.prosemirrorView.anon.OnRemove
 import typings.prosemirrorView.anon.PartialDirectEditorProps
+import typings.prosemirrorView.anon.Pos
 import typings.prosemirrorView.anon.Right
+import typings.prosemirrorView.prosemirrorViewBooleans.`true`
 import typings.prosemirrorView.prosemirrorViewStrings.attributes
 import typings.prosemirrorView.prosemirrorViewStrings.backward
 import typings.prosemirrorView.prosemirrorViewStrings.clipboardParser
@@ -376,6 +379,20 @@ object mod {
       immediately overriden by the editor as it redraws the node.
       */
     def nodeDOM(pos: Double): DOMNode | Null = js.native
+    
+    /**
+      Run the editor's paste logic with the given HTML string. The
+      `event`, if given, will be passed to the
+      [`handlePaste`](https://prosemirror.net/docs/ref/#view.EditorProps.handlePaste) hook.
+      */
+    def pasteHTML(html: String): Boolean = js.native
+    def pasteHTML(html: String, event: ClipboardEvent): Boolean = js.native
+    
+    /**
+      Run the editor's paste logic with the given plain-text input.
+      */
+    def pasteText(text: String): Boolean = js.native
+    def pasteText(text: String, event: ClipboardEvent): Boolean = js.native
     
     /* private */ var pluginViews: Any = js.native
     
@@ -1656,6 +1673,8 @@ object mod {
       node's display behavior. The third argument `getPos` is a
       function that can be called to get the node's current position,
       which can be useful when creating transactions to update it.
+      Note that if the node is not in the document, the position
+      returned by this function will be `undefined`.
       
       `decorations` is an array of node or inline decorations that are
       active around the node. They are automatically drawn in the
@@ -1671,7 +1690,7 @@ object mod {
       inner decorations.
       
       (For backwards compatibility reasons, [mark
-      views](https://prosemirror.net/docs/ref/#view.ViewProps.markViews) can also be included in this
+      views](https://prosemirror.net/docs/ref/#view.EditorProps.markViews) can also be included in this
       object.)
       */
     var nodeViews: js.UndefOr[StringDictionary[NodeViewConstructor]] = js.undefined
@@ -1962,7 +1981,7 @@ object mod {
   }
   
   /**
-  The function types [used](https://prosemirror.net/docs/ref/#view.ViewProps.markViews) to create
+  The function types [used](https://prosemirror.net/docs/ref/#view.EditorProps.markViews) to create
   mark views.
   */
   type MarkViewConstructor = js.Function3[/* mark */ Mark, /* view */ EditorView, /* inline */ Boolean, ContentDOM]
@@ -2115,17 +2134,60 @@ object mod {
   }
   
   /**
-  The type of function [provided](https://prosemirror.net/docs/ref/#view.ViewProps.nodeViews) to
+  The type of function [provided](https://prosemirror.net/docs/ref/#view.EditorProps.nodeViews) to
   create [node views](https://prosemirror.net/docs/ref/#view.NodeView).
   */
   type NodeViewConstructor = js.Function5[
     /* node */ Node, 
     /* view */ EditorView, 
-    /* getPos */ js.Function0[Double], 
+    /* getPos */ js.Function0[js.UndefOr[Double]], 
     /* decorations */ js.Array[Decoration], 
     /* innerDecorations */ DecorationSource, 
     NodeView
   ]
+  
+  @js.native
+  trait NodeViewDesc
+    extends StObject
+       with ViewDesc {
+    
+    def deselectNode(): Unit = js.native
+    
+    var innerDeco: DecorationSource = js.native
+    
+    def localCompositionInfo(view: EditorView, pos: Double): Pos | Null = js.native
+    
+    val nodeDOM: DOMNode = js.native
+    
+    @JSName("node")
+    var node_NodeViewDesc: Node = js.native
+    
+    var outerDeco: js.Array[Decoration] = js.native
+    
+    def protectLocalComposition(view: EditorView, param1: Pos): Unit = js.native
+    
+    def selectNode(): Unit = js.native
+    
+    def update(node: Node, outerDeco: js.Array[Decoration], innerDeco: DecorationSource, view: EditorView): Boolean = js.native
+    
+    def updateChildren(view: EditorView, pos: Double): Unit = js.native
+    
+    def updateInner(node: Node, outerDeco: js.Array[Decoration], innerDeco: DecorationSource, view: EditorView): Unit = js.native
+    
+    def updateOuterDeco(outerDeco: js.Array[Decoration]): Unit = js.native
+  }
+  
+  @js.native
+  trait TextViewDesc
+    extends StObject
+       with NodeViewDesc {
+    
+    def domFromPos(pos: Double): Offset = js.native
+    
+    def inParent(): Boolean = js.native
+    
+    def slice(from: Double, to: Double, view: EditorView): TextViewDesc = js.native
+  }
   
   @js.native
   trait ViewDesc extends StObject {
@@ -2175,7 +2237,8 @@ object mod {
     def matchesWidget(widget: Decoration): Boolean = js.native
     
     def nearestDesc(dom: DOMNode): js.UndefOr[ViewDesc] = js.native
-    def nearestDesc(dom: DOMNode, onlyNodes: Boolean): js.UndefOr[ViewDesc] = js.native
+    @JSName("nearestDesc")
+    def nearestDesc_true(dom: DOMNode, onlyNodes: `true`): js.UndefOr[NodeViewDesc] = js.native
     
     var node: Node | Null = js.native
     

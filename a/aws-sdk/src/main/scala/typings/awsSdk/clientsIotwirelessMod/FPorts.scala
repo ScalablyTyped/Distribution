@@ -6,6 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait FPorts extends StObject {
   
+  /**
+    * Optional LoRaWAN application information, which can be used for geolocation.
+    */
+  var Applications: js.UndefOr[typings.awsSdk.clientsIotwirelessMod.Applications] = js.undefined
+  
   var ClockSync: js.UndefOr[FPort] = js.undefined
   
   var Fuota: js.UndefOr[FPort] = js.undefined
@@ -26,6 +31,12 @@ object FPorts {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: FPorts] (val x: Self) extends AnyVal {
+    
+    inline def setApplications(value: Applications): Self = StObject.set(x, "Applications", value.asInstanceOf[js.Any])
+    
+    inline def setApplicationsUndefined: Self = StObject.set(x, "Applications", js.undefined)
+    
+    inline def setApplicationsVarargs(value: ApplicationConfig*): Self = StObject.set(x, "Applications", js.Array(value*))
     
     inline def setClockSync(value: FPort): Self = StObject.set(x, "ClockSync", value.asInstanceOf[js.Any])
     

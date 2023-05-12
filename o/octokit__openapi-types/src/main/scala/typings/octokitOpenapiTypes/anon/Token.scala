@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Token extends StObject {
   
-  /** package token */
+  /** @description package token */
   var token: js.UndefOr[String] = js.undefined
 }
 object Token {

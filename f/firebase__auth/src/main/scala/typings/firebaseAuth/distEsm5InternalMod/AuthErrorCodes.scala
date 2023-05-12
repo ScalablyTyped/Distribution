@@ -42,7 +42,11 @@ import typings.firebaseAuth.firebaseAuthStrings.`authSlashinvalid-oauth-provider
 import typings.firebaseAuth.firebaseAuthStrings.`authSlashinvalid-persistence-type`
 import typings.firebaseAuth.firebaseAuthStrings.`authSlashinvalid-phone-number`
 import typings.firebaseAuth.firebaseAuthStrings.`authSlashinvalid-provider-id`
+import typings.firebaseAuth.firebaseAuthStrings.`authSlashinvalid-recaptcha-action`
+import typings.firebaseAuth.firebaseAuthStrings.`authSlashinvalid-recaptcha-token`
+import typings.firebaseAuth.firebaseAuthStrings.`authSlashinvalid-recaptcha-version`
 import typings.firebaseAuth.firebaseAuthStrings.`authSlashinvalid-recipient-email`
+import typings.firebaseAuth.firebaseAuthStrings.`authSlashinvalid-req-type`
 import typings.firebaseAuth.firebaseAuthStrings.`authSlashinvalid-sender`
 import typings.firebaseAuth.firebaseAuthStrings.`authSlashinvalid-tenant-id`
 import typings.firebaseAuth.firebaseAuthStrings.`authSlashinvalid-user-token`
@@ -51,6 +55,7 @@ import typings.firebaseAuth.firebaseAuthStrings.`authSlashinvalid-verification-i
 import typings.firebaseAuth.firebaseAuthStrings.`authSlashmaximum-second-factor-count-exceeded`
 import typings.firebaseAuth.firebaseAuthStrings.`authSlashmissing-android-pkg-name`
 import typings.firebaseAuth.firebaseAuthStrings.`authSlashmissing-app-credential`
+import typings.firebaseAuth.firebaseAuthStrings.`authSlashmissing-client-type`
 import typings.firebaseAuth.firebaseAuthStrings.`authSlashmissing-continue-uri`
 import typings.firebaseAuth.firebaseAuthStrings.`authSlashmissing-iframe-start`
 import typings.firebaseAuth.firebaseAuthStrings.`authSlashmissing-ios-bundle-id`
@@ -58,6 +63,8 @@ import typings.firebaseAuth.firebaseAuthStrings.`authSlashmissing-multi-factor-i
 import typings.firebaseAuth.firebaseAuthStrings.`authSlashmissing-multi-factor-session`
 import typings.firebaseAuth.firebaseAuthStrings.`authSlashmissing-or-invalid-nonce`
 import typings.firebaseAuth.firebaseAuthStrings.`authSlashmissing-phone-number`
+import typings.firebaseAuth.firebaseAuthStrings.`authSlashmissing-recaptcha-token`
+import typings.firebaseAuth.firebaseAuthStrings.`authSlashmissing-recaptcha-version`
 import typings.firebaseAuth.firebaseAuthStrings.`authSlashmissing-verification-code`
 import typings.firebaseAuth.firebaseAuthStrings.`authSlashmissing-verification-id`
 import typings.firebaseAuth.firebaseAuthStrings.`authSlashmulti-factor-auth-required`
@@ -72,6 +79,7 @@ import typings.firebaseAuth.firebaseAuthStrings.`authSlashpopup-blocked`
 import typings.firebaseAuth.firebaseAuthStrings.`authSlashpopup-closed-by-user`
 import typings.firebaseAuth.firebaseAuthStrings.`authSlashprovider-already-linked`
 import typings.firebaseAuth.firebaseAuthStrings.`authSlashquota-exceeded`
+import typings.firebaseAuth.firebaseAuthStrings.`authSlashrecaptcha-not-enabled`
 import typings.firebaseAuth.firebaseAuthStrings.`authSlashredirect-cancelled-by-user`
 import typings.firebaseAuth.firebaseAuthStrings.`authSlashredirect-operation-pending`
 import typings.firebaseAuth.firebaseAuthStrings.`authSlashrejected-credential`
@@ -277,9 +285,25 @@ object AuthErrorCodes {
   @js.native
   val INVALID_PROVIDER_ID: `authSlashinvalid-provider-id` = js.native
   
+  @JSImport("@firebase/auth/dist/esm5/internal", "AuthErrorCodes.INVALID_RECAPTCHA_ACTION")
+  @js.native
+  val INVALID_RECAPTCHA_ACTION: `authSlashinvalid-recaptcha-action` = js.native
+  
+  @JSImport("@firebase/auth/dist/esm5/internal", "AuthErrorCodes.INVALID_RECAPTCHA_TOKEN")
+  @js.native
+  val INVALID_RECAPTCHA_TOKEN: `authSlashinvalid-recaptcha-token` = js.native
+  
+  @JSImport("@firebase/auth/dist/esm5/internal", "AuthErrorCodes.INVALID_RECAPTCHA_VERSION")
+  @js.native
+  val INVALID_RECAPTCHA_VERSION: `authSlashinvalid-recaptcha-version` = js.native
+  
   @JSImport("@firebase/auth/dist/esm5/internal", "AuthErrorCodes.INVALID_RECIPIENT_EMAIL")
   @js.native
   val INVALID_RECIPIENT_EMAIL: `authSlashinvalid-recipient-email` = js.native
+  
+  @JSImport("@firebase/auth/dist/esm5/internal", "AuthErrorCodes.INVALID_REQ_TYPE")
+  @js.native
+  val INVALID_REQ_TYPE: `authSlashinvalid-req-type` = js.native
   
   @JSImport("@firebase/auth/dist/esm5/internal", "AuthErrorCodes.INVALID_SENDER")
   @js.native
@@ -313,6 +337,10 @@ object AuthErrorCodes {
   @js.native
   val MISSING_AUTH_DOMAIN: `authSlashauth-domain-config-required` = js.native
   
+  @JSImport("@firebase/auth/dist/esm5/internal", "AuthErrorCodes.MISSING_CLIENT_TYPE")
+  @js.native
+  val MISSING_CLIENT_TYPE: `authSlashmissing-client-type` = js.native
+  
   @JSImport("@firebase/auth/dist/esm5/internal", "AuthErrorCodes.MISSING_CODE")
   @js.native
   val MISSING_CODE: `authSlashmissing-verification-code` = js.native
@@ -344,6 +372,14 @@ object AuthErrorCodes {
   @JSImport("@firebase/auth/dist/esm5/internal", "AuthErrorCodes.MISSING_PHONE_NUMBER")
   @js.native
   val MISSING_PHONE_NUMBER: `authSlashmissing-phone-number` = js.native
+  
+  @JSImport("@firebase/auth/dist/esm5/internal", "AuthErrorCodes.MISSING_RECAPTCHA_TOKEN")
+  @js.native
+  val MISSING_RECAPTCHA_TOKEN: `authSlashmissing-recaptcha-token` = js.native
+  
+  @JSImport("@firebase/auth/dist/esm5/internal", "AuthErrorCodes.MISSING_RECAPTCHA_VERSION")
+  @js.native
+  val MISSING_RECAPTCHA_VERSION: `authSlashmissing-recaptcha-version` = js.native
   
   @JSImport("@firebase/auth/dist/esm5/internal", "AuthErrorCodes.MISSING_SESSION_INFO")
   @js.native
@@ -396,6 +432,10 @@ object AuthErrorCodes {
   @JSImport("@firebase/auth/dist/esm5/internal", "AuthErrorCodes.QUOTA_EXCEEDED")
   @js.native
   val QUOTA_EXCEEDED: `authSlashquota-exceeded` = js.native
+  
+  @JSImport("@firebase/auth/dist/esm5/internal", "AuthErrorCodes.RECAPTCHA_NOT_ENABLED")
+  @js.native
+  val RECAPTCHA_NOT_ENABLED: `authSlashrecaptcha-not-enabled` = js.native
   
   @JSImport("@firebase/auth/dist/esm5/internal", "AuthErrorCodes.REDIRECT_CANCELLED_BY_USER")
   @js.native

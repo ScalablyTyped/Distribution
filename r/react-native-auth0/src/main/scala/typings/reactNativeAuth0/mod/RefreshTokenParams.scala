@@ -1,10 +1,13 @@
 package typings.reactNativeAuth0.mod
 
+import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RefreshTokenParams extends StObject {
+trait RefreshTokenParams
+  extends StObject
+     with /* key */ StringDictionary[js.UndefOr[String]] {
   
   var refreshToken: String
   

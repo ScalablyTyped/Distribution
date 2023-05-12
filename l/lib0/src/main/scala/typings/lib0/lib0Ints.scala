@@ -39,6 +39,10 @@ object lib0Ints {
   inline def `1024`: `1024` = 1024.asInstanceOf[`1024`]
   
   @js.native
+  sealed trait `11` extends StObject
+  inline def `11`: `11` = 11.asInstanceOf[`11`]
+  
+  @js.native
   sealed trait `127` extends StObject
   inline def `127`: `127` = 127.asInstanceOf[`127`]
   
@@ -153,4 +157,8 @@ object lib0Ints {
   @js.native
   sealed trait `8192` extends StObject
   inline def `8192`: `8192` = 8192.asInstanceOf[`8192`]
+  
+  @js.native
+  sealed trait `9` extends StObject
+  inline def `9`: `9` = 9.asInstanceOf[`9`]
 }

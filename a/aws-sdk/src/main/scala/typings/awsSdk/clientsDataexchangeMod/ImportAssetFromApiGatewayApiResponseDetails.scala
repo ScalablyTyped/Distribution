@@ -14,17 +14,17 @@ trait ImportAssetFromApiGatewayApiResponseDetails extends StObject {
   /**
     * The API ID.
     */
-  var ApiId: string
+  var ApiId: _String
   
   /**
     * The API key.
     */
-  var ApiKey: js.UndefOr[string] = js.undefined
+  var ApiKey: js.UndefOr[_String] = js.undefined
   
   /**
     * The API name.
     */
-  var ApiName: string
+  var ApiName: _String
   
   /**
     * The Base64-encoded Md5 hash for the API asset, used to ensure the integrity of the API at that location.
@@ -34,7 +34,7 @@ trait ImportAssetFromApiGatewayApiResponseDetails extends StObject {
   /**
     * The upload URL of the API specification.
     */
-  var ApiSpecificationUploadUrl: string
+  var ApiSpecificationUploadUrl: _String
   
   /**
     * The date and time that the upload URL expires, in ISO 8601 format.
@@ -59,20 +59,20 @@ trait ImportAssetFromApiGatewayApiResponseDetails extends StObject {
   /**
     * The API stage.
     */
-  var Stage: string
+  var Stage: _String
 }
 object ImportAssetFromApiGatewayApiResponseDetails {
   
   inline def apply(
-    ApiId: string,
-    ApiName: string,
+    ApiId: _String,
+    ApiName: _String,
     ApiSpecificationMd5Hash: stringMin24Max24PatternAZaZ094AZaZ092AZaZ093,
-    ApiSpecificationUploadUrl: string,
+    ApiSpecificationUploadUrl: _String,
     ApiSpecificationUploadUrlExpiresAt: js.Date,
     DataSetId: Id,
     ProtocolType: ProtocolType,
     RevisionId: Id,
-    Stage: string
+    Stage: _String
   ): ImportAssetFromApiGatewayApiResponseDetails = {
     val __obj = js.Dynamic.literal(ApiId = ApiId.asInstanceOf[js.Any], ApiName = ApiName.asInstanceOf[js.Any], ApiSpecificationMd5Hash = ApiSpecificationMd5Hash.asInstanceOf[js.Any], ApiSpecificationUploadUrl = ApiSpecificationUploadUrl.asInstanceOf[js.Any], ApiSpecificationUploadUrlExpiresAt = ApiSpecificationUploadUrlExpiresAt.asInstanceOf[js.Any], DataSetId = DataSetId.asInstanceOf[js.Any], ProtocolType = ProtocolType.asInstanceOf[js.Any], RevisionId = RevisionId.asInstanceOf[js.Any], Stage = Stage.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImportAssetFromApiGatewayApiResponseDetails]
@@ -85,17 +85,17 @@ object ImportAssetFromApiGatewayApiResponseDetails {
     
     inline def setApiDescriptionUndefined: Self = StObject.set(x, "ApiDescription", js.undefined)
     
-    inline def setApiId(value: string): Self = StObject.set(x, "ApiId", value.asInstanceOf[js.Any])
+    inline def setApiId(value: _String): Self = StObject.set(x, "ApiId", value.asInstanceOf[js.Any])
     
-    inline def setApiKey(value: string): Self = StObject.set(x, "ApiKey", value.asInstanceOf[js.Any])
+    inline def setApiKey(value: _String): Self = StObject.set(x, "ApiKey", value.asInstanceOf[js.Any])
     
     inline def setApiKeyUndefined: Self = StObject.set(x, "ApiKey", js.undefined)
     
-    inline def setApiName(value: string): Self = StObject.set(x, "ApiName", value.asInstanceOf[js.Any])
+    inline def setApiName(value: _String): Self = StObject.set(x, "ApiName", value.asInstanceOf[js.Any])
     
     inline def setApiSpecificationMd5Hash(value: stringMin24Max24PatternAZaZ094AZaZ092AZaZ093): Self = StObject.set(x, "ApiSpecificationMd5Hash", value.asInstanceOf[js.Any])
     
-    inline def setApiSpecificationUploadUrl(value: string): Self = StObject.set(x, "ApiSpecificationUploadUrl", value.asInstanceOf[js.Any])
+    inline def setApiSpecificationUploadUrl(value: _String): Self = StObject.set(x, "ApiSpecificationUploadUrl", value.asInstanceOf[js.Any])
     
     inline def setApiSpecificationUploadUrlExpiresAt(value: js.Date): Self = StObject.set(x, "ApiSpecificationUploadUrlExpiresAt", value.asInstanceOf[js.Any])
     
@@ -105,6 +105,6 @@ object ImportAssetFromApiGatewayApiResponseDetails {
     
     inline def setRevisionId(value: Id): Self = StObject.set(x, "RevisionId", value.asInstanceOf[js.Any])
     
-    inline def setStage(value: string): Self = StObject.set(x, "Stage", value.asInstanceOf[js.Any])
+    inline def setStage(value: _String): Self = StObject.set(x, "Stage", value.asInstanceOf[js.Any])
   }
 }

@@ -1,5 +1,6 @@
 package typings.pixiCore.libSystemsMod
 
+import typings.pixiCore.anon.AutoDensity
 import typings.pixiCore.libIrendererMod.IRenderer
 import typings.pixiExtensions.mod.ExtensionMetadata
 import typings.pixiSettings.libIcanvasMod.ICanvas
@@ -15,6 +16,16 @@ open class ViewSystem protected ()
 }
 /* static members */
 object ViewSystem {
+  
+  @JSImport("@pixi/core/lib/systems", "ViewSystem")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /** @ignore */
+  @JSImport("@pixi/core/lib/systems", "ViewSystem.defaultOptions")
+  @js.native
+  def defaultOptions: AutoDensity = js.native
+  inline def defaultOptions_=(x: AutoDensity): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultOptions")(x.asInstanceOf[js.Any])
   
   /** @ignore */
   @JSImport("@pixi/core/lib/systems", "ViewSystem.extension")

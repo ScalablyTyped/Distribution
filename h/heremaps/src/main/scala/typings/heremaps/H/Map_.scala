@@ -385,8 +385,8 @@ object Map_ {
   /**
     * It defines the number of lower and higher zoom levels, where cached content of the base map is rendered while content of the current zoom level is still loading.
     * Example: if range was set to {lower: 3, higher: 2} and current level is 10 then rendering engine will try to display cached tiles from lower zoom levels 7, 8, 9 and higher levels 11 and 12.
-    * @property lower {number} - The number of lower zoom levels to take into account, default is 0
-    * @property higher {number} - The number of higher zoom levels to take into account, default is 0
+    * lower {number} - The number of lower zoom levels to take into account, default is 0
+    * higher {number} - The number of higher zoom levels to take into account, default is 0
     */
   trait BackgroundRange extends StObject {
     
@@ -412,18 +412,18 @@ object Map_ {
   
   /**
     * This type defines options which can be used to initialize the map.
-    * @property center {H.geo.IPoint=} - The initial center of the map, default is {lat:0, lng: 0}
-    * @property zoom {number=} - The initial zoom level of the map, default is 0 respectively the minimal zoom level of the base map
-    * @property bounds {H.geo.Rect=} - The view bounds to be displayed on the map. If provided, it takes precedence over center and zoom. and zoom if provided)
-    * @property layers {Array<H.map.layer.Layer>=} - A list of layers to render on top of the base map
-    * @property engineType: {H.Map.EngineType=} - The initial engine type to use, default is P2D
-    * @property pixelRatio {number} - The pixelRatio to use for over-sampling in cases of high-resolution displays, default is 1
-    * @property imprint {H.map.Imprint.Options=} - The imprint options or null to suppress the imprint
-    * @property renderBaseBackground {H.Map.BackgroundRange=} - Object describes how many cached zoom levels should be used as a base map background while base map tiles are loading.
+    * center {H.geo.IPoint=} - The initial center of the map, default is {lat:0, lng: 0}
+    * zoom {number=} - The initial zoom level of the map, default is 0 respectively the minimal zoom level of the base map
+    * bounds {H.geo.Rect=} - The view bounds to be displayed on the map. If provided, it takes precedence over center and zoom. and zoom if provided)
+    * layers {Array<H.map.layer.Layer>=} - A list of layers to render on top of the base map
+    * engineType: {H.Map.EngineType=} - The initial engine type to use, default is P2D
+    * pixelRatio {number} - The pixelRatio to use for over-sampling in cases of high-resolution displays, default is 1
+    * imprint {H.map.Imprint.Options=} - The imprint options or null to suppress the imprint
+    * renderBaseBackground {H.Map.BackgroundRange=} - Object describes how many cached zoom levels should be used as a base map background while base map tiles are loading.
     * Example: {lower: 3, higher: 2}
-    * @property autoColor {boolean=} - Indicates whether the UI's colors should automatically adjusted to the base layer, default is true. Up to now only the copyright style will be adjusted.
+    * autoColor {boolean=} - Indicates whether the UI's colors should automatically adjusted to the base layer, default is true. Up to now only the copyright style will be adjusted.
     * See H.map.layer.Layer.Options#dark
-    * @property margin {number=} - The size in pixel of the supplemental area to render for each side of the map
+    * margin {number=} - The size in pixel of the supplemental area to render for each side of the map
     * @property padding {H.map.ViewPort.Padding=} - The padding in pixels for each side of the map
     * @property fixedCenter {boolean=} - Indicates whether the center of the map should remain unchanged if the viewport's size or padding has been changed, default is true
     * @property noWrap {boolean=} - Indicates whether to wrap the world on longitude axes. When set to true, only one world will be rendered. Default is false, multiple worlds are rendered.

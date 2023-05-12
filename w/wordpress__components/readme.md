@@ -1,7 +1,7 @@
 
 # Scala.js typings for wordpress__components
 
-Typings are for version 19.10
+Typings are for version 23.0
 
 ## Library description:
 UI components for WordPress.

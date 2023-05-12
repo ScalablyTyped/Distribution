@@ -1,7 +1,6 @@
 
 # Scala.js typings for bmapgl
 
-Typings are for version v1.0
 
 
 

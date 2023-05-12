@@ -32,7 +32,7 @@ trait GetApplicationResponse extends StObject {
   var id: js.UndefOr[ApplicationId] = js.undefined
   
   /**
-    * The information about the integration of the application with other services, such as Resource Groups.
+    *  The information about the integration of the application with other services, such as Resource Groups. 
     */
   var integrations: js.UndefOr[Integrations] = js.undefined
   

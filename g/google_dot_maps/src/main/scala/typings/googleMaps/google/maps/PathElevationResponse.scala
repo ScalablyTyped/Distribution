@@ -4,11 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * An elevation response returned by the {@link google.maps.ElevationService}
-  * containing the list of {@link google.maps.ElevationResult}s evenly-spaced
-  * along the path of the {@link google.maps.PathElevationRequest}.
-  */
 trait PathElevationResponse extends StObject {
   
   /**

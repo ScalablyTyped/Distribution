@@ -43,7 +43,7 @@ object libMod {
     def this(props: VictorySelectionContainerProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: VictorySelectionContainerProps, context: Any) = this()
   }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TypeofCardholder extends StObject {
   
-  val Individual: TypeofIndividual
+  val Individual: TypeofIndividualCardIssuing
   
   val Requirements: Any
   
@@ -14,7 +14,11 @@ trait TypeofCardholder extends StObject {
 }
 object TypeofCardholder {
   
-  inline def apply(Individual: TypeofIndividual, Requirements: Any, SpendingControls: TypeofSpendingControls): TypeofCardholder = {
+  inline def apply(
+    Individual: TypeofIndividualCardIssuing,
+    Requirements: Any,
+    SpendingControls: TypeofSpendingControls
+  ): TypeofCardholder = {
     val __obj = js.Dynamic.literal(Individual = Individual.asInstanceOf[js.Any], Requirements = Requirements.asInstanceOf[js.Any], SpendingControls = SpendingControls.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofCardholder]
   }
@@ -22,7 +26,7 @@ object TypeofCardholder {
   @scala.inline
   implicit open class MutableBuilder[Self <: TypeofCardholder] (val x: Self) extends AnyVal {
     
-    inline def setIndividual(value: TypeofIndividual): Self = StObject.set(x, "Individual", value.asInstanceOf[js.Any])
+    inline def setIndividual(value: TypeofIndividualCardIssuing): Self = StObject.set(x, "Individual", value.asInstanceOf[js.Any])
     
     inline def setRequirements(value: Any): Self = StObject.set(x, "Requirements", value.asInstanceOf[js.Any])
     

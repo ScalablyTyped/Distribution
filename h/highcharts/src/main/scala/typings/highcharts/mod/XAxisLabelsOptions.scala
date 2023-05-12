@@ -42,8 +42,13 @@ trait XAxisLabelsOptions extends StObject {
   var autoRotationLimit: js.UndefOr[Double] = js.undefined
   
   /**
-    * (Highcharts, Gantt) Polar charts only. The label's pixel distance from
-    * the perimeter of the plot area.
+    * (Highcharts, Gantt) The label's pixel distance from the perimeter of the
+    * plot area. On cartesian charts, this is overridden if the `labels.y`
+    * setting is set.
+    *
+    * * On polar charts, if it's a percentage string, it is interpreted the
+    * same as series.radius, so the label can be aligned under the gauge's
+    * shape.
     */
   var distance: js.UndefOr[Double] = js.undefined
   
@@ -93,7 +98,7 @@ trait XAxisLabelsOptions extends StObject {
     * By default it `"justify"` labels inside the chart area. If there is room
     * to move it, it will be aligned to the edge, else it will be removed.
     */
-  var overflow: js.UndefOr[String] = js.undefined
+  var overflow: js.UndefOr[OptionsOverflowValue] = js.undefined
   
   /**
     * (Highcharts, Gantt) The pixel padding for axis labels, to ensure white
@@ -120,11 +125,11 @@ trait XAxisLabelsOptions extends StObject {
     * orthogonal to the axis. This is very similar to `'flap'`, but prevents
     * skewing the labels (X and Y scaling are still present).
     */
-  var position3d: js.UndefOr[String] = js.undefined
+  var position3d: js.UndefOr[OptionsPosition3dValue] = js.undefined
   
   /**
-    * (Highcharts, Gantt) Whether to reserve space for the labels. By default,
-    * space is reserved for the labels in these cases:
+    * (Highcharts, Highstock, Gantt) Whether to reserve space for the labels.
+    * By default, space is reserved for the labels in these cases:
     *
     * * On all horizontal axes.
     *
@@ -194,14 +199,15 @@ trait XAxisLabelsOptions extends StObject {
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The x position offset of all
-    * labels relative to the tick positions on the axis.
+    * labels relative to the tick positions on the axis. Overrides the
+    * `labels.distance` option.
     */
   var x: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The y position offset of all
-    * labels relative to the tick positions on the axis. The default makes it
-    * adapt to the font size of the bottom axis.
+    * labels relative to the tick positions on the axis. Overrides the
+    * `labels.distance` option.
     */
   var y: js.UndefOr[Double] = js.undefined
   
@@ -258,7 +264,7 @@ object XAxisLabelsOptions {
     
     inline def setIndentationUndefined: Self = StObject.set(x, "indentation", js.undefined)
     
-    inline def setOverflow(value: String): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
+    inline def setOverflow(value: OptionsOverflowValue): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
     
     inline def setOverflowUndefined: Self = StObject.set(x, "overflow", js.undefined)
     
@@ -266,7 +272,7 @@ object XAxisLabelsOptions {
     
     inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
-    inline def setPosition3d(value: String): Self = StObject.set(x, "position3d", value.asInstanceOf[js.Any])
+    inline def setPosition3d(value: OptionsPosition3dValue): Self = StObject.set(x, "position3d", value.asInstanceOf[js.Any])
     
     inline def setPosition3dUndefined: Self = StObject.set(x, "position3d", js.undefined)
     

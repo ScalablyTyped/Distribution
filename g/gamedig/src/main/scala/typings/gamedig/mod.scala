@@ -1,6 +1,9 @@
 package typings.gamedig
 
 import typings.gamedig.anon.ListenUdpPort
+import typings.gamedig.gamedigInts.`0`
+import typings.gamedig.gamedigInts.`4`
+import typings.gamedig.gamedigInts.`6`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -93,6 +96,8 @@ object mod {
     
     var host: String
     
+    var ipFamily: js.UndefOr[`0` | `4` | `6`] = js.undefined
+    
     var maxAttempts: js.UndefOr[Double] = js.undefined
     
     var port: js.UndefOr[Double] = js.undefined
@@ -127,6 +132,10 @@ object mod {
       inline def setGivenPortOnlyUndefined: Self = StObject.set(x, "givenPortOnly", js.undefined)
       
       inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      
+      inline def setIpFamily(value: `0` | `4` | `6`): Self = StObject.set(x, "ipFamily", value.asInstanceOf[js.Any])
+      
+      inline def setIpFamilyUndefined: Self = StObject.set(x, "ipFamily", js.undefined)
       
       inline def setMaxAttempts(value: Double): Self = StObject.set(x, "maxAttempts", value.asInstanceOf[js.Any])
       

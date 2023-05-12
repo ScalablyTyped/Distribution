@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.OverflowAnchor
+import typings.csstype.mod.Property.Border
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,11 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `128` extends StObject {
   
   var value: js.UndefOr[
-    OverflowAnchor | (js.Array[
+    (Border[Double | String]) | (js.Array[
       (Extract[
-        js.UndefOr[OverflowAnchor | js.Array[NonNullable[js.UndefOr[OverflowAnchor]]]], 
+        js.UndefOr[
+          (Border[Double | String]) | (js.Array[NonNullable[js.UndefOr[Border[Double | String]]]])
+        ], 
         String
-      ]) | NonNullable[js.UndefOr[OverflowAnchor]]
+      ]) | (NonNullable[js.UndefOr[Border[Double | String]]])
     ])
   ] = js.native
 }

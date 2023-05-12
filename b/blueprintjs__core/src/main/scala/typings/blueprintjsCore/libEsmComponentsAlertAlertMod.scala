@@ -5,7 +5,7 @@ import typings.blueprintjsCore.libEsmCommonMod.AbstractPureComponent2
 import typings.blueprintjsCore.libEsmCommonPropsMod.IProps
 import typings.blueprintjsCore.libEsmCommonPropsMod.MaybeElement
 import typings.blueprintjsCore.libEsmComponentsOverlayOverlayMod.IOverlayLifecycleProps
-import typings.blueprintjsIcons.libEsmGenerated16pxBlueprintIcons16Mod.BlueprintIcons16Id
+import typings.blueprintjsIcons.libEsmGeneratedIcons16pxBlueprintIcons16Mod.BlueprintIcons16Id
 import typings.react.mod.CSSProperties
 import typings.react.mod.ReactNode
 import typings.react.mod.SyntheticEvent

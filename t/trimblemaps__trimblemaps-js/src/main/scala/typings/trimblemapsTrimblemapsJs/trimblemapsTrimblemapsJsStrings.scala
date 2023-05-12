@@ -1354,8 +1354,24 @@ object trimblemapsTrimblemapsJsStrings {
   inline def string: string = "string".asInstanceOf[string]
   
   @js.native
+  sealed trait styleChange extends StObject
+  inline def styleChange: styleChange = "styleChange".asInstanceOf[styleChange]
+  
+  @js.native
+  sealed trait styleChanging extends StObject
+  inline def styleChanging: styleChanging = "styleChanging".asInstanceOf[styleChanging]
+  
+  @js.native
   sealed trait style_ extends StObject
   inline def style_ : style_ = "style".asInstanceOf[style_]
+  
+  @js.native
+  sealed trait stylechange_ extends StObject
+  inline def stylechange_ : stylechange_ = "stylechange".asInstanceOf[stylechange_]
+  
+  @js.native
+  sealed trait stylechanging_ extends StObject
+  inline def stylechanging_ : stylechanging_ = "stylechanging".asInstanceOf[stylechanging_]
   
   @js.native
   sealed trait styledata extends StObject

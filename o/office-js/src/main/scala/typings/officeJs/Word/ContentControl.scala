@@ -271,23 +271,18 @@ trait ContentControl
   def insertBreak(breakType: BreakType, insertLocation: start): Unit = js.native
   
   def insertFileFromBase64(base64File: String, insertLocation: Replace | Start | End): Range = js.native
-  def insertFileFromBase64(base64File: String, insertLocation: Replace | Start | End, asNewParagraph: Boolean): Range = js.native
   def insertFileFromBase64(base64File: String, insertLocation: end): Range = js.native
-  def insertFileFromBase64(base64File: String, insertLocation: end, asNewParagraph: Boolean): Range = js.native
   /**
     * Inserts a document into the content control at the specified location.
     *
     * @remarks
     * [Api set: WordApi 1.1]
     *
-    * @param base64File Required. The base64 encoded content of a .docx file.
+    * @param base64File Required. The Base64-encoded content of a .docx file.
     * @param insertLocation Required. The value must be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
-    * @param asNewParagraph Optional. Indicates whether to insert the content as new paragraphs. Default is false which indicates that the base64 content is merged as inline text into the existing paragraph.
     */
   def insertFileFromBase64(base64File: String, insertLocation: replace): Range = js.native
-  def insertFileFromBase64(base64File: String, insertLocation: replace, asNewParagraph: Boolean): Range = js.native
   def insertFileFromBase64(base64File: String, insertLocation: start): Range = js.native
-  def insertFileFromBase64(base64File: String, insertLocation: start, asNewParagraph: Boolean): Range = js.native
   
   def insertHtml(html: String, insertLocation: Replace | Start | End): Range = js.native
   def insertHtml(html: String, insertLocation: end): Range = js.native
@@ -311,16 +306,14 @@ trait ContentControl
     * @remarks
     * [Api set: WordApi 1.2]
     *
-    * @param base64EncodedImage Required. The base64 encoded image to be inserted in the content control.
+    * @param base64EncodedImage Required. The Base64-encoded image to be inserted in the content control.
     * @param insertLocation Required. The value must be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
     */
   def insertInlinePictureFromBase64(base64EncodedImage: String, insertLocation: replace): InlinePicture = js.native
   def insertInlinePictureFromBase64(base64EncodedImage: String, insertLocation: start): InlinePicture = js.native
   
   def insertOoxml(ooxml: String, insertLocation: Replace | Start | End): Range = js.native
-  def insertOoxml(ooxml: String, insertLocation: Replace | Start | End, asNewParagraph: Boolean): Range = js.native
   def insertOoxml(ooxml: String, insertLocation: end): Range = js.native
-  def insertOoxml(ooxml: String, insertLocation: end, asNewParagraph: Boolean): Range = js.native
   /**
     * Inserts OOXML into the content control at the specified location.
     *
@@ -329,12 +322,9 @@ trait ContentControl
     *
     * @param ooxml Required. The OOXML to be inserted in to the content control.
     * @param insertLocation Required. The value must be 'Replace', 'Start', or 'End'. 'Replace' cannot be used with 'RichTextTable' and 'RichTextTableRow' content controls.
-    * @param asNewParagraph Optional. Indicates whether to insert the OOXML as new paragraphs. Default is false which indicates that the OOXML is merged as inline text into the existing paragraph.
     */
   def insertOoxml(ooxml: String, insertLocation: replace): Range = js.native
-  def insertOoxml(ooxml: String, insertLocation: replace, asNewParagraph: Boolean): Range = js.native
   def insertOoxml(ooxml: String, insertLocation: start): Range = js.native
-  def insertOoxml(ooxml: String, insertLocation: start, asNewParagraph: Boolean): Range = js.native
   
   def insertParagraph(paragraphText: String, insertLocation: Start | End | Before | After): Paragraph = js.native
   def insertParagraph(paragraphText: String, insertLocation: after): Paragraph = js.native

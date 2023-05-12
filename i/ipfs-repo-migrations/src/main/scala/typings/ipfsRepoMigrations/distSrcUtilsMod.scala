@@ -27,5 +27,16 @@ object distSrcUtilsMod {
   
   inline def wrapBackends(backends: Backends): Blocks = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapBackends")(backends.asInstanceOf[js.Any]).asInstanceOf[Blocks]
   
-  type Datastore = typings.interfaceDatastore.mod.Datastore
+  type Datastore = typings.interfaceDatastore.mod.Datastore[
+    js.Object, 
+    js.Object, 
+    js.Object, 
+    js.Object, 
+    js.Object, 
+    js.Object, 
+    js.Object, 
+    js.Object, 
+    js.Object, 
+    js.Object
+  ]
 }

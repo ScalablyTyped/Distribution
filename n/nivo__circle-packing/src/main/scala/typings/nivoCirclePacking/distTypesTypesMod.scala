@@ -17,6 +17,7 @@ import typings.react.mod.FC
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.global.JSX.Element
+import typings.reactSpringCore.mod.SpringConfig
 import typings.std.Omit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -71,9 +72,7 @@ object distTypesTypesMod {
     
     var margin: js.UndefOr[Box] = js.undefined
     
-    var motionConfig: js.UndefOr[
-        String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringConfig */ Any)
-      ] = js.undefined
+    var motionConfig: js.UndefOr[String | SpringConfig] = js.undefined
     
     var onClick: js.UndefOr[MouseHandler[RawDatum]] = js.undefined
     
@@ -191,9 +190,7 @@ object distTypesTypesMod {
       
       inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
       
-      inline def setMotionConfig(
-        value: String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringConfig */ Any)
-      ): Self = StObject.set(x, "motionConfig", value.asInstanceOf[js.Any])
+      inline def setMotionConfig(value: String | SpringConfig): Self = StObject.set(x, "motionConfig", value.asInstanceOf[js.Any])
       
       inline def setMotionConfigUndefined: Self = StObject.set(x, "motionConfig", js.undefined)
       
@@ -287,9 +284,7 @@ object distTypesTypesMod {
     
     var margin: js.UndefOr[Box] = js.undefined
     
-    var motionConfig: js.UndefOr[
-        String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringConfig */ Any)
-      ] = js.undefined
+    var motionConfig: js.UndefOr[String | SpringConfig] = js.undefined
     
     var padding: Double
     
@@ -400,9 +395,7 @@ object distTypesTypesMod {
       
       inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
       
-      inline def setMotionConfig(
-        value: String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringConfig */ Any)
-      ): Self = StObject.set(x, "motionConfig", value.asInstanceOf[js.Any])
+      inline def setMotionConfig(value: String | SpringConfig): Self = StObject.set(x, "motionConfig", value.asInstanceOf[js.Any])
       
       inline def setMotionConfigUndefined: Self = StObject.set(x, "motionConfig", js.undefined)
       

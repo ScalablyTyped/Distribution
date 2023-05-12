@@ -6,28 +6,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `574` extends StObject {
   
-  var incomplete_results: Boolean
-  
-  var items: js.Array[Following]
-  
-  var total_count: Double
+  @JSName("application/json")
+  var applicationSlashjson: js.Array[Securityadvisory]
 }
 object `574` {
   
-  inline def apply(incomplete_results: Boolean, items: js.Array[Following], total_count: Double): `574` = {
-    val __obj = js.Dynamic.literal(incomplete_results = incomplete_results.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], total_count = total_count.asInstanceOf[js.Any])
+  inline def apply(applicationSlashjson: js.Array[Securityadvisory]): `574` = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("application/json")(applicationSlashjson.asInstanceOf[js.Any])
     __obj.asInstanceOf[`574`]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: `574`] (val x: Self) extends AnyVal {
     
-    inline def setIncomplete_results(value: Boolean): Self = StObject.set(x, "incomplete_results", value.asInstanceOf[js.Any])
+    inline def setApplicationSlashjson(value: js.Array[Securityadvisory]): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
     
-    inline def setItems(value: js.Array[Following]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
-    
-    inline def setItemsVarargs(value: Following*): Self = StObject.set(x, "items", js.Array(value*))
-    
-    inline def setTotal_count(value: Double): Self = StObject.set(x, "total_count", value.asInstanceOf[js.Any])
+    inline def setApplicationSlashjsonVarargs(value: Securityadvisory*): Self = StObject.set(x, "application/json", js.Array(value*))
   }
 }

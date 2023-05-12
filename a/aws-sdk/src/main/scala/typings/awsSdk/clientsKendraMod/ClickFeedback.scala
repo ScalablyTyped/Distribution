@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ClickFeedback extends StObject {
   
   /**
-    * The Unix timestamp of the date and time that the result was clicked.
+    * The Unix timestamp when the result was clicked.
     */
   var ClickTime: js.Date
   
   /**
-    * The unique identifier of the search result that was clicked.
+    * The identifier of the search result that was clicked.
     */
   var ResultId: typings.awsSdk.clientsKendraMod.ResultId
 }

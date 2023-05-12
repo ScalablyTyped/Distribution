@@ -1,7 +1,7 @@
 
 # Scala.js typings for seq-logging
 
-Typings are for version 1.1.2
+Typings are for version 2.0.0
 
 ## Library description:
 Sends structured log events to the Seq HTTP ingestion API

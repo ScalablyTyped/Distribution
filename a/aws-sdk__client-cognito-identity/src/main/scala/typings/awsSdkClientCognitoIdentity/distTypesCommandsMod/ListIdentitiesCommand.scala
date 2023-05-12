@@ -10,6 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class ListIdentitiesCommand protected ()
   extends typings.awsSdkClientCognitoIdentity.distTypesCommandsListIdentitiesCommandMod.ListIdentitiesCommand {
+  /**
+    * @public
+    */
   def this(input: ListIdentitiesCommandInput) = this()
 }
 /* static members */

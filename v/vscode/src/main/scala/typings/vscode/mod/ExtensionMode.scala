@@ -14,9 +14,9 @@ object ExtensionMode extends StObject {
   def apply(value: Double): js.UndefOr[ExtensionMode & Double] = js.native
   
   /**
-    * The extension is running from an `--extensionDevelopmentPath` provided
-    * when launching the editor.
-    */
+  		 * The extension is running from an `--extensionDevelopmentPath` provided
+  		 * when launching the editor.
+  		 */
   @js.native
   sealed trait Development
     extends StObject
@@ -24,9 +24,9 @@ object ExtensionMode extends StObject {
   /* 2 */ val Development: typings.vscode.mod.ExtensionMode.Development & Double = js.native
   
   /**
-    * The extension is installed normally (for example, from the marketplace
-    * or VSIX) in the editor.
-    */
+  		 * The extension is installed normally (for example, from the marketplace
+  		 * or VSIX) in the editor.
+  		 */
   @js.native
   sealed trait Production
     extends StObject
@@ -34,9 +34,9 @@ object ExtensionMode extends StObject {
   /* 1 */ val Production: typings.vscode.mod.ExtensionMode.Production & Double = js.native
   
   /**
-    * The extension is running from an `--extensionTestsPath` and
-    * the extension host is running unit tests.
-    */
+  		 * The extension is running from an `--extensionTestsPath` and
+  		 * the extension host is running unit tests.
+  		 */
   @js.native
   sealed trait Test
     extends StObject

@@ -44,15 +44,15 @@ object Entities {
       /* CompleteClass */
       override def isFloat(): Boolean = js.native
       
-      /** @type {number} Returns the position along the X axis. */
+      /** Returns the position along the X axis. */
       /* CompleteClass */
       var px: Double = js.native
       
-      /** @type {number} Returns the position along the Y axis. */
+      /** Returns the position along the Y axis. */
       /* CompleteClass */
       var py: Double = js.native
       
-      /** @type {number} Returns the position along the Z axis. */
+      /** Returns the position along the Z axis. */
       /* CompleteClass */
       var pz: Double = js.native
     }
@@ -75,13 +75,13 @@ object Entities {
       @js.native
       val ^ : js.Any = js.native
       
-      /** @type {number} Invitation is accepted. */
+      /** Invitation is accepted. */
       @JSGlobal("SFS2X.Entities.Invitation.InvitationReply.ACCEPT")
       @js.native
       def ACCEPT: Double = js.native
       inline def ACCEPT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ACCEPT")(x.asInstanceOf[js.Any])
       
-      /** @type {number} Invitation is refused. */
+      /** Invitation is refused. */
       @JSGlobal("SFS2X.Entities.Invitation.InvitationReply.REFUSE")
       @js.native
       def REFUSE: Double = js.native
@@ -107,23 +107,23 @@ object Entities {
         params: js.Object
       ) = this()
       
-      /** @type {number} Indicates the id of the invitation. */
+      /** Indicates the id of the invitation. */
       /* CompleteClass */
       var id: Double = js.native
       
-      /** @type {SFSUser} Returns the SFSUser object corresponding to the user who received the invitation. */
+      /** Returns the SFSUser object corresponding to the user who received the invitation. */
       /* CompleteClass */
       var invitee: typings.smartFoxServer.SFS2X.Entities.SFSUser = js.native
       
-      /** @type {SFSUser} Returns the SFSUser object corresponding to the user who sent the invitation. */
+      /** Returns the SFSUser object corresponding to the user who sent the invitation. */
       /* CompleteClass */
       var inviter: typings.smartFoxServer.SFS2X.Entities.SFSUser = js.native
       
-      /** @type {Object} Returns an object containing a custom set of parameters. */
+      /** Returns an object containing a custom set of parameters. */
       /* CompleteClass */
       var params: js.Object = js.native
       
-      /** @type {number} Returns the number of seconds available to the invitee to reply to the invitation, after which the invitation expires. */
+      /** Returns the number of seconds available to the invitee to reply to the invitation, after which the invitation expires. */
       /* CompleteClass */
       var secondsForAnswer: Double = js.native
     }
@@ -140,7 +140,7 @@ object Entities {
       */
     def this(id: Double) = this()
     
-    /** @type {Data.Vec3D} Returns the entry point of this item in the current user's AoI. */
+    /** Returns the entry point of this item in the current user's AoI. */
     /* CompleteClass */
     var aoiEnteryPoint: Vec3D = js.native
     
@@ -167,7 +167,7 @@ object Entities {
     /* CompleteClass */
     override def getVariables(): js.Array[MMOItemVariable] = js.native
     
-    /** @type {number} Indicates the id of this item. */
+    /** Indicates the id of this item. */
     /* CompleteClass */
     var id: Double = js.native
   }
@@ -202,7 +202,7 @@ object Entities {
     /* CompleteClass */
     override def containsVariable(varName: String): Boolean = js.native
     
-    /** @type {Data.Vec3D} Returns the default Area of Interest (AoI) of this MMORoom. */
+    /** Returns the default Area of Interest (AoI) of this MMORoom. */
     /* CompleteClass */
     var defaultAOI: Vec3D = js.native
     
@@ -301,51 +301,51 @@ object Entities {
     /* CompleteClass */
     override def getVariables(): js.Array[SFSRoomVariable] = js.native
     
-    /** @type {string} Returns the Room Group name. */
+    /** Returns the Room Group name. */
     /* CompleteClass */
     var groupId: String = js.native
     
-    /** @type {Requests.MMO.MapLimits} Returns the higher coordinates limit of the virtual environment represented by the MMORoom along the X,Y,Z axes. If null is returned, no limits were set at Room creation time. */
+    /** Returns the higher coordinates limit of the virtual environment represented by the MMORoom along the X,Y,Z axes. If null is returned, no limits were set at Room creation time. */
     /* CompleteClass */
     var higherMapLimit: MapLimits = js.native
     
-    /** @type {number} Indicates the id of this Room. */
+    /** Indicates the id of this Room. */
     /* CompleteClass */
     var id: Double = js.native
     
-    /** @type {boolean} Indicates whether this is a Game Room or not. */
+    /** Indicates whether this is a Game Room or not. */
     /* CompleteClass */
     var isGame: Boolean = js.native
     
-    /** @type {boolean} Indicates whether this Room is hidden or not. */
+    /** Indicates whether this Room is hidden or not. */
     /* CompleteClass */
     var isHidden: Boolean = js.native
     
-    /** @type {boolean} Indicates whether the client joined this Room or not. */
+    /** Indicates whether the client joined this Room or not. */
     /* CompleteClass */
     var isJoined: Boolean = js.native
     
-    /** @type {boolean} Indicates whether this Room requires a password to be joined or not. */
+    /** Indicates whether this Room requires a password to be joined or not. */
     /* CompleteClass */
     var isPasswordProtected: Boolean = js.native
     
-    /** @type {Requests.MMO.MapLimits} Returns the lower coordinates limit of the virtual environment represented by the MMORoom along the X,Y,Z axes. If null is returned, no limits were set at Room creation time. */
+    /** Returns the lower coordinates limit of the virtual environment represented by the MMORoom along the X,Y,Z axes. If null is returned, no limits were set at Room creation time. */
     /* CompleteClass */
     var lowerMapLimit: MapLimits = js.native
     
-    /** @type {number} Returns the maximum number of spectators allowed in this Room (Game Rooms only). */
+    /** Returns the maximum number of spectators allowed in this Room (Game Rooms only). */
     /* CompleteClass */
     var maxSpectators: Double = js.native
     
-    /** @type {number} Returns the maximum number of users allowed in this Room. */
+    /** Returns the maximum number of users allowed in this Room. */
     /* CompleteClass */
     var maxUsers: Double = js.native
     
-    /** @type {string} Indicates the name of this Room. */
+    /** Indicates the name of this Room. */
     /* CompleteClass */
     var name: String = js.native
     
-    /** @type {Object} Defines a generic utility object that can be used to store custom Room data. */
+    /** Defines a generic utility object that can be used to store custom Room data. */
     /* CompleteClass */
     var properties: js.Object = js.native
   }
@@ -367,13 +367,13 @@ object Entities {
       @js.native
       val ^ : js.Any = js.native
       
-      /** @type {BoolMatch} An instance of BoolMatch representing the following condition: bool1 == bool2. */
+      /** An instance of BoolMatch representing the following condition: bool1 == bool2. */
       @JSGlobal("SFS2X.Entities.Match.BoolMatch.EQUALS")
       @js.native
       def EQUALS: typings.smartFoxServer.SFS2X.Entities.Match.BoolMatch = js.native
       inline def EQUALS_=(x: typings.smartFoxServer.SFS2X.Entities.Match.BoolMatch): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EQUALS")(x.asInstanceOf[js.Any])
       
-      /** @type {BoolMatch} An instance of BoolMatch representing the following condition: bool1 != bool2. */
+      /** An instance of BoolMatch representing the following condition: bool1 != bool2. */
       @JSGlobal("SFS2X.Entities.Match.BoolMatch.NOT_EQUALS")
       @js.native
       def NOT_EQUALS: typings.smartFoxServer.SFS2X.Entities.Match.BoolMatch = js.native
@@ -392,13 +392,13 @@ object Entities {
       @js.native
       val ^ : js.Any = js.native
       
-      /** @type {LogicOperator} An instance of LogicOperator representing the AND logical operator. */
+      /** An instance of LogicOperator representing the AND logical operator. */
       @JSGlobal("SFS2X.Entities.Match.LogicOperator.AND")
       @js.native
       def AND: typings.smartFoxServer.SFS2X.Entities.Match.LogicOperator = js.native
       inline def AND_=(x: typings.smartFoxServer.SFS2X.Entities.Match.LogicOperator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AND")(x.asInstanceOf[js.Any])
       
-      /** @type {LogicOperator} An instance of LogicOperator representing the OR logical operator. */
+      /** An instance of LogicOperator representing the OR logical operator. */
       @JSGlobal("SFS2X.Entities.Match.LogicOperator.OR")
       @js.native
       def OR: typings.smartFoxServer.SFS2X.Entities.Match.LogicOperator = js.native
@@ -438,37 +438,37 @@ object Entities {
       @js.native
       val ^ : js.Any = js.native
       
-      /** @type {NumberMatch} An instance of NumberMatch representing the following condition: number1 == number2. */
+      /** An instance of NumberMatch representing the following condition: number1 == number2. */
       @JSGlobal("SFS2X.Entities.Match.NumberMatch.EQUALS")
       @js.native
       def EQUALS: typings.smartFoxServer.SFS2X.Entities.Match.NumberMatch = js.native
       inline def EQUALS_=(x: typings.smartFoxServer.SFS2X.Entities.Match.NumberMatch): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EQUALS")(x.asInstanceOf[js.Any])
       
-      /** @type {NumberMatch} An instance of NumberMatch representing the following condition: number1 > number2. */
+      /** An instance of NumberMatch representing the following condition: number1 > number2. */
       @JSGlobal("SFS2X.Entities.Match.NumberMatch.GREATER_THAN")
       @js.native
       def GREATER_THAN: typings.smartFoxServer.SFS2X.Entities.Match.NumberMatch = js.native
       inline def GREATER_THAN_=(x: typings.smartFoxServer.SFS2X.Entities.Match.NumberMatch): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GREATER_THAN")(x.asInstanceOf[js.Any])
       
-      /** @type {NumberMatch} An instance of NumberMatch representing the following condition: number1 >= number2. */
+      /** An instance of NumberMatch representing the following condition: number1 >= number2. */
       @JSGlobal("SFS2X.Entities.Match.NumberMatch.GREATER_THAN_OR_EQUAL_TO")
       @js.native
       def GREATER_THAN_OR_EQUAL_TO: typings.smartFoxServer.SFS2X.Entities.Match.NumberMatch = js.native
       inline def GREATER_THAN_OR_EQUAL_TO_=(x: typings.smartFoxServer.SFS2X.Entities.Match.NumberMatch): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GREATER_THAN_OR_EQUAL_TO")(x.asInstanceOf[js.Any])
       
-      /** @type {NumberMatch} An instance of NumberMatch representing the following condition: number1 < number2. */
+      /** An instance of NumberMatch representing the following condition: number1 < number2. */
       @JSGlobal("SFS2X.Entities.Match.NumberMatch.LESS_THAN")
       @js.native
       def LESS_THAN: typings.smartFoxServer.SFS2X.Entities.Match.NumberMatch = js.native
       inline def LESS_THAN_=(x: typings.smartFoxServer.SFS2X.Entities.Match.NumberMatch): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LESS_THAN")(x.asInstanceOf[js.Any])
       
-      /** @type {NumberMatch} An instance of NumberMatch representing the following condition: number1 <= number2. */
+      /** An instance of NumberMatch representing the following condition: number1 <= number2. */
       @JSGlobal("SFS2X.Entities.Match.NumberMatch.LESS_THAN_OR_EQUAL_TO")
       @js.native
       def LESS_THAN_OR_EQUAL_TO: typings.smartFoxServer.SFS2X.Entities.Match.NumberMatch = js.native
       inline def LESS_THAN_OR_EQUAL_TO_=(x: typings.smartFoxServer.SFS2X.Entities.Match.NumberMatch): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LESS_THAN_OR_EQUAL_TO")(x.asInstanceOf[js.Any])
       
-      /** @type {NumberMatch} An instance of NumberMatch representing the following condition: number1 != number2. */
+      /** An instance of NumberMatch representing the following condition: number1 != number2. */
       @JSGlobal("SFS2X.Entities.Match.NumberMatch.NOT_EQUALS")
       @js.native
       def NOT_EQUALS: typings.smartFoxServer.SFS2X.Entities.Match.NumberMatch = js.native
@@ -487,61 +487,61 @@ object Entities {
       @js.native
       val ^ : js.Any = js.native
       
-      /** @type {string} The name of the Group to which the Room belongs. */
+      /** The name of the Group to which the Room belongs. */
       @JSGlobal("SFS2X.Entities.Match.RoomProperties.GROUP_ID")
       @js.native
       def GROUP_ID: String = js.native
       inline def GROUP_ID_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GROUP_ID")(x.asInstanceOf[js.Any])
       
-      /** @type {string} The Room has at least one free player slot. */
+      /** The Room has at least one free player slot. */
       @JSGlobal("SFS2X.Entities.Match.RoomProperties.HAS_FREE_PLAYER_SLOTS")
       @js.native
       def HAS_FREE_PLAYER_SLOTS: String = js.native
       inline def HAS_FREE_PLAYER_SLOTS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HAS_FREE_PLAYER_SLOTS")(x.asInstanceOf[js.Any])
       
-      /** @type {string} The Room is a Game Room. */
+      /** The Room is a Game Room. */
       @JSGlobal("SFS2X.Entities.Match.RoomProperties.IS_GAME")
       @js.native
       def IS_GAME: String = js.native
       inline def IS_GAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IS_GAME")(x.asInstanceOf[js.Any])
       
-      /** @type {string} The Room is private. */
+      /** The Room is private. */
       @JSGlobal("SFS2X.Entities.Match.RoomProperties.IS_PRIVATE")
       @js.native
       def IS_PRIVATE: String = js.native
       inline def IS_PRIVATE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IS_PRIVATE")(x.asInstanceOf[js.Any])
       
-      /** @type {string} The Room is an SFSGame on the server-side. */
+      /** The Room is an SFSGame on the server-side. */
       @JSGlobal("SFS2X.Entities.Match.RoomProperties.IS_TYPE_SFSGAME")
       @js.native
       def IS_TYPE_SFSGAME: String = js.native
       inline def IS_TYPE_SFSGAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IS_TYPE_SFSGAME")(x.asInstanceOf[js.Any])
       
-      /** @type {string} The maximum number of spectators allowed in the Room (Game Rooms only). */
+      /** The maximum number of spectators allowed in the Room (Game Rooms only). */
       @JSGlobal("SFS2X.Entities.Match.RoomProperties.MAX_SPECTATORS")
       @js.native
       def MAX_SPECTATORS: String = js.native
       inline def MAX_SPECTATORS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MAX_SPECTATORS")(x.asInstanceOf[js.Any])
       
-      /** @type {string} The maximum number of users allowed in the Room (players in Game Rooms). */
+      /** The maximum number of users allowed in the Room (players in Game Rooms). */
       @JSGlobal("SFS2X.Entities.Match.RoomProperties.MAX_USERS")
       @js.native
       def MAX_USERS: String = js.native
       inline def MAX_USERS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MAX_USERS")(x.asInstanceOf[js.Any])
       
-      /** @type {string} The Room name. */
+      /** The Room name. */
       @JSGlobal("SFS2X.Entities.Match.RoomProperties.NAME")
       @js.native
       def NAME: String = js.native
       inline def NAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NAME")(x.asInstanceOf[js.Any])
       
-      /** @type {string} The Room spectators count (Game Rooms only). */
+      /** The Room spectators count (Game Rooms only). */
       @JSGlobal("SFS2X.Entities.Match.RoomProperties.SPECTATOR_COUNT")
       @js.native
       def SPECTATOR_COUNT: String = js.native
       inline def SPECTATOR_COUNT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SPECTATOR_COUNT")(x.asInstanceOf[js.Any])
       
-      /** @type {string} The Room users count (players in Game Rooms). */
+      /** The Room users count (players in Game Rooms). */
       @JSGlobal("SFS2X.Entities.Match.RoomProperties.USER_COUNT")
       @js.native
       def USER_COUNT: String = js.native
@@ -560,31 +560,31 @@ object Entities {
       @js.native
       val ^ : js.Any = js.native
       
-      /** @type {StringMatch} An instance of StringMatch representing the following condition: string1.indexOf(string2) != -1 */
+      /** An instance of StringMatch representing the following condition: string1.indexOf(string2) != -1 */
       @JSGlobal("SFS2X.Entities.Match.StringMatch.CONTAINS")
       @js.native
       def CONTAINS: typings.smartFoxServer.SFS2X.Entities.Match.StringMatch = js.native
       inline def CONTAINS_=(x: typings.smartFoxServer.SFS2X.Entities.Match.StringMatch): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CONTAINS")(x.asInstanceOf[js.Any])
       
-      /** @type {StringMatch} An instance of StringMatch representing the following condition: string1 ends with characters contained in string2. */
+      /** An instance of StringMatch representing the following condition: string1 ends with characters contained in string2. */
       @JSGlobal("SFS2X.Entities.Match.StringMatch.ENDS_WITH")
       @js.native
       def ENDS_WITH: typings.smartFoxServer.SFS2X.Entities.Match.StringMatch = js.native
       inline def ENDS_WITH_=(x: typings.smartFoxServer.SFS2X.Entities.Match.StringMatch): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ENDS_WITH")(x.asInstanceOf[js.Any])
       
-      /** @type {StringMatch} An instance of StringMatch representing the following condition: string1 == string2. */
+      /** An instance of StringMatch representing the following condition: string1 == string2. */
       @JSGlobal("SFS2X.Entities.Match.StringMatch.EQUALS")
       @js.native
       def EQUALS: typings.smartFoxServer.SFS2X.Entities.Match.StringMatch = js.native
       inline def EQUALS_=(x: typings.smartFoxServer.SFS2X.Entities.Match.StringMatch): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EQUALS")(x.asInstanceOf[js.Any])
       
-      /** @type {StringMatch} An instance of StringMatch representing the following condition: string1 != string2. */
+      /** An instance of StringMatch representing the following condition: string1 != string2. */
       @JSGlobal("SFS2X.Entities.Match.StringMatch.NOT_EQUALS")
       @js.native
       def NOT_EQUALS: typings.smartFoxServer.SFS2X.Entities.Match.StringMatch = js.native
       inline def NOT_EQUALS_=(x: typings.smartFoxServer.SFS2X.Entities.Match.StringMatch): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NOT_EQUALS")(x.asInstanceOf[js.Any])
       
-      /** @type {StringMatch} An instance of StringMatch representing the following condition: string1 starts with characters contained in string2. */
+      /** An instance of StringMatch representing the following condition: string1 starts with characters contained in string2. */
       @JSGlobal("SFS2X.Entities.Match.StringMatch.STARTS_WITH")
       @js.native
       def STARTS_WITH: typings.smartFoxServer.SFS2X.Entities.Match.StringMatch = js.native
@@ -603,37 +603,37 @@ object Entities {
       @js.native
       val ^ : js.Any = js.native
       
-      /** @type {string} The user joined at least one Room. */
+      /** The user joined at least one Room. */
       @JSGlobal("SFS2X.Entities.Match.UserProperties.IS_IN_ANY_ROOM")
       @js.native
       def IS_IN_ANY_ROOM: String = js.native
       inline def IS_IN_ANY_ROOM_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IS_IN_ANY_ROOM")(x.asInstanceOf[js.Any])
       
-      /** @type {string} The user is a Non-Player Character (NPC). */
+      /** The user is a Non-Player Character (NPC). */
       @JSGlobal("SFS2X.Entities.Match.UserProperties.IS_NPC")
       @js.native
       def IS_NPC: String = js.native
       inline def IS_NPC_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IS_NPC")(x.asInstanceOf[js.Any])
       
-      /** @type {string} The user is a player in a Game Room. */
+      /** The user is a player in a Game Room. */
       @JSGlobal("SFS2X.Entities.Match.UserProperties.IS_PLAYER")
       @js.native
       def IS_PLAYER: String = js.native
       inline def IS_PLAYER_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IS_PLAYER")(x.asInstanceOf[js.Any])
       
-      /** @type {string} The user is a spectator in a Game Room. */
+      /** The user is a spectator in a Game Room. */
       @JSGlobal("SFS2X.Entities.Match.UserProperties.IS_SPECTATOR")
       @js.native
       def IS_SPECTATOR: String = js.native
       inline def IS_SPECTATOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IS_SPECTATOR")(x.asInstanceOf[js.Any])
       
-      /** @type {string} The user name. */
+      /** The user name. */
       @JSGlobal("SFS2X.Entities.Match.UserProperties.NAME")
       @js.native
       def NAME: String = js.native
       inline def NAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NAME")(x.asInstanceOf[js.Any])
       
-      /** @type {string} The user privilege id. */
+      /** The user privilege id. */
       @JSGlobal("SFS2X.Entities.Match.UserProperties.PRIVILEGE_ID")
       @js.native
       def PRIVILEGE_ID: String = js.native
@@ -709,7 +709,7 @@ object Entities {
     /* CompleteClass */
     override def getVariables(): js.Array[SFSBuddyVariable] = js.native
     
-    /** @type {number} Indicates the id of this buddy. */
+    /** Indicates the id of this buddy. */
     /* CompleteClass */
     var id: Double = js.native
     
@@ -734,7 +734,7 @@ object Entities {
     /* CompleteClass */
     override def isTemp(): Boolean = js.native
     
-    /** @type {string} Indicates the name of this buddy. */
+    /** Indicates the name of this buddy. */
     /* CompleteClass */
     var name: String = js.native
   }
@@ -849,43 +849,43 @@ object Entities {
     /* CompleteClass */
     override def getVariables(): js.Array[SFSRoomVariable] = js.native
     
-    /** @type {string} Returns the Room Group name. */
+    /** Returns the Room Group name. */
     /* CompleteClass */
     var groupId: String = js.native
     
-    /** @type {number} Indicates the id of this Room. */
+    /** Indicates the id of this Room. */
     /* CompleteClass */
     var id: Double = js.native
     
-    /** @type {boolean} Indicates whether this is a Game Room or not. */
+    /** Indicates whether this is a Game Room or not. */
     /* CompleteClass */
     var isGame: Boolean = js.native
     
-    /** @type {boolean} Indicates whether this Room is hidden or not. */
+    /** Indicates whether this Room is hidden or not. */
     /* CompleteClass */
     var isHidden: Boolean = js.native
     
-    /** @type {boolean} Indicates whether the client joined this Room or not. */
+    /** Indicates whether the client joined this Room or not. */
     /* CompleteClass */
     var isJoined: Boolean = js.native
     
-    /** @type {boolean} Indicates whether this Room requires a password to be joined or not. */
+    /** Indicates whether this Room requires a password to be joined or not. */
     /* CompleteClass */
     var isPasswordProtected: Boolean = js.native
     
-    /** @type {number} Returns the maximum number of spectators allowed in this Room (Game Rooms only). */
+    /** Returns the maximum number of spectators allowed in this Room (Game Rooms only). */
     /* CompleteClass */
     var maxSpectators: Double = js.native
     
-    /** @type {number} Returns the maximum number of users allowed in this Room. */
+    /** Returns the maximum number of users allowed in this Room. */
     /* CompleteClass */
     var maxUsers: Double = js.native
     
-    /** @type {string} Indicates the name of this Room. */
+    /** Indicates the name of this Room. */
     /* CompleteClass */
     var name: String = js.native
     
-    /** @type {Object} Defines a generic utility object that can be used to store custom Room data. */
+    /** Defines a generic utility object that can be used to store custom Room data. */
     /* CompleteClass */
     var properties: js.Object = js.native
   }
@@ -904,7 +904,7 @@ object Entities {
     def this(id: Double, name: String) = this()
     def this(id: Double, name: String, isItMe: Boolean) = this()
     
-    /** @type {Data.Vec3D} Returns the entry point of this user in the current user's AoI. */
+    /** Returns the entry point of this user in the current user's AoI. */
     /* CompleteClass */
     var aoiEntryPoint: Vec3D = js.native
     
@@ -946,7 +946,7 @@ object Entities {
     /* CompleteClass */
     override def getVariables(): js.Array[SFSUserVariable] = js.native
     
-    /** @type {number} Indicates the id of this user. It is unique and it is generated by the server when the user is created. */
+    /** Indicates the id of this user. It is unique and it is generated by the server when the user is created. */
     /* CompleteClass */
     var id: Double = js.native
     
@@ -964,7 +964,7 @@ object Entities {
     /* CompleteClass */
     override def isGuest(): Boolean = js.native
     
-    /** @type {boolean} Indicates if this SFSUser object represents the current client. */
+    /** Indicates if this SFSUser object represents the current client. */
     /* CompleteClass */
     var isItMe: Boolean = js.native
     
@@ -1020,15 +1020,15 @@ object Entities {
     /* CompleteClass */
     override def isStandardUser(): Boolean = js.native
     
-    /** @type {string} Indicates the name of this user. Two users in the same Zone can't have the same name. */
+    /** Indicates the name of this user. Two users in the same Zone can't have the same name. */
     /* CompleteClass */
     var name: String = js.native
     
-    /** @type {number} Returns the id which identifies the privilege level of this user. */
+    /** Returns the id which identifies the privilege level of this user. */
     /* CompleteClass */
     var privilegeId: Double = js.native
     
-    /** @type {Object} Defines a generic utility object that can be used to store custom user data. The values added to this object are for client-side use only and are never transmitted to the server or to the other clients. */
+    /** Defines a generic utility object that can be used to store custom user data. The values added to this object are for client-side use only and are never transmitted to the server or to the other clients. */
     /* CompleteClass */
     var properties: js.Object = js.native
   }
@@ -1045,25 +1045,25 @@ object Entities {
     @js.native
     val ^ : js.Any = js.native
     
-    /** @type {number} The administrator user can send dedicated "administrator messages", kick and ban users. */
+    /** The administrator user can send dedicated "administrator messages", kick and ban users. */
     @JSGlobal("SFS2X.Entities.UserPrivileges.ADMINISTRATOR")
     @js.native
     def ADMINISTRATOR: Double = js.native
     inline def ADMINISTRATOR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ADMINISTRATOR")(x.asInstanceOf[js.Any])
     
-    /** @type {number} The Guest user is usually the lowest level in the privilege profiles scale. */
+    /** The Guest user is usually the lowest level in the privilege profiles scale. */
     @JSGlobal("SFS2X.Entities.UserPrivileges.GUEST")
     @js.native
     def GUEST: Double = js.native
     inline def GUEST_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GUEST")(x.asInstanceOf[js.Any])
     
-    /** @type {number} The moderator user can send dedicated "moderator messages", kick and ban users. */
+    /** The moderator user can send dedicated "moderator messages", kick and ban users. */
     @JSGlobal("SFS2X.Entities.UserPrivileges.MODERATOR")
     @js.native
     def MODERATOR: Double = js.native
     inline def MODERATOR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MODERATOR")(x.asInstanceOf[js.Any])
     
-    /** @type {number} The standard user is usually registered in the application custom login system; uses a unique name and password to login. */
+    /** The standard user is usually registered in the application custom login system; uses a unique name and password to login. */
     @JSGlobal("SFS2X.Entities.UserPrivileges.STANDARD")
     @js.native
     def STANDARD: Double = js.native
@@ -1104,11 +1104,11 @@ object Entities {
       /* CompleteClass */
       override def isNull(): Boolean = js.native
       
-      /** @type {string} Indicates the name of this variable. */
+      /** Indicates the name of this variable. */
       /* CompleteClass */
       var name: String = js.native
       
-      /** @type {number} Returns the value of this variable. */
+      /** Returns the value of this variable. */
       /* CompleteClass */
       var value: Double = js.native
     }
@@ -1125,19 +1125,19 @@ object Entities {
       @js.native
       val ^ : js.Any = js.native
       
-      /** @type {string} The Buddy Variable with this name stores the optional nickname of the user in a buddy list. This variable is persistent, which means that the nickname is preserved upon disconnection. */
+      /** The Buddy Variable with this name stores the optional nickname of the user in a buddy list. This variable is persistent, which means that the nickname is preserved upon disconnection. */
       @JSGlobal("SFS2X.Entities.Variables.ReservedBuddyVariables.BV_NICKNAME")
       @js.native
       def BV_NICKNAME: String = js.native
       inline def BV_NICKNAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BV_NICKNAME")(x.asInstanceOf[js.Any])
       
-      /** @type {string} The Buddy Variable with this name keeps track of the online/offline state of the user in a buddy list. This variable is persistent, which means that the online/offline state is preserved upon disconnection. */
+      /** The Buddy Variable with this name keeps track of the online/offline state of the user in a buddy list. This variable is persistent, which means that the online/offline state is preserved upon disconnection. */
       @JSGlobal("SFS2X.Entities.Variables.ReservedBuddyVariables.BV_ONLINE")
       @js.native
       def BV_ONLINE: String = js.native
       inline def BV_ONLINE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BV_ONLINE")(x.asInstanceOf[js.Any])
       
-      /** @type {string} The Buddy Variable with this name stores the custom state of the user in a buddy list. This variable is persistent, which means that the custom state is preserved upon disconnection. */
+      /** The Buddy Variable with this name stores the custom state of the user in a buddy list. This variable is persistent, which means that the custom state is preserved upon disconnection. */
       @JSGlobal("SFS2X.Entities.Variables.ReservedBuddyVariables.BV_STATE")
       @js.native
       def BV_STATE: String = js.native
@@ -1156,7 +1156,7 @@ object Entities {
       @js.native
       val ^ : js.Any = js.native
       
-      /** @type {string} The Room Variable with this name keeps track of the state (started or stopped) of a game created with the CreateSFSGameRequest request. */
+      /** The Room Variable with this name keeps track of the state (started or stopped) of a game created with the CreateSFSGameRequest request. */
       @JSGlobal("SFS2X.Entities.Variables.ReservedRoomVariables.RV_GAME_STARTED")
       @js.native
       def RV_GAME_STARTED: String = js.native
@@ -1199,11 +1199,11 @@ object Entities {
       /* CompleteClass */
       override def isOffline(): Boolean = js.native
       
-      /** @type {string} Indicates the name of this variable. */
+      /** Indicates the name of this variable. */
       /* CompleteClass */
       var name: String = js.native
       
-      /** @type {number} Returns the value of this variable. */
+      /** Returns the value of this variable. */
       /* CompleteClass */
       var value: Double = js.native
     }
@@ -1214,7 +1214,7 @@ object Entities {
       @js.native
       val ^ : js.Any = js.native
       
-      /** @type {string} The prefix to be added to a Buddy Variable name to make it persistent. */
+      /** The prefix to be added to a Buddy Variable name to make it persistent. */
       @JSGlobal("SFS2X.Entities.Variables.SFSBuddyVariable.OFFLINE_PREFIX")
       @js.native
       def OFFLINE_PREFIX: String = js.native
@@ -1250,19 +1250,19 @@ object Entities {
       /* CompleteClass */
       override def isNull(): Boolean = js.native
       
-      /** @type {boolean} Indicates whether this Room Variable is persistent or not. */
+      /** Indicates whether this Room Variable is persistent or not. */
       /* CompleteClass */
       var isPersistent: Boolean = js.native
       
-      /** @type {boolean} Indicates whether this Room Variable is private or not. */
+      /** Indicates whether this Room Variable is private or not. */
       /* CompleteClass */
       var isPrivate: Boolean = js.native
       
-      /** @type {string} Indicates the name of this variable. */
+      /** Indicates the name of this variable. */
       /* CompleteClass */
       var name: String = js.native
       
-      /** @type {number} Returns the value of this variable. */
+      /** Returns the value of this variable. */
       /* CompleteClass */
       var value: Double = js.native
     }
@@ -1296,11 +1296,11 @@ object Entities {
       /* CompleteClass */
       override def isNull(): Boolean = js.native
       
-      /** @type {string} Indicates the name of this variable. */
+      /** Indicates the name of this variable. */
       /* CompleteClass */
       var name: String = js.native
       
-      /** @type {number} Returns the value of this variable. */
+      /** Returns the value of this variable. */
       /* CompleteClass */
       var value: Double = js.native
     }
@@ -1317,43 +1317,43 @@ object Entities {
       @js.native
       val ^ : js.Any = js.native
       
-      /** @type {number} The type of the User/Room Variable is array. */
+      /** The type of the User/Room Variable is array. */
       @JSGlobal("SFS2X.Entities.Variables.VariableType.ARRAY")
       @js.native
       def ARRAY: Double = js.native
       inline def ARRAY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ARRAY")(x.asInstanceOf[js.Any])
       
-      /** @type {number} The type of the User/Room Variable is boolean. */
+      /** The type of the User/Room Variable is boolean. */
       @JSGlobal("SFS2X.Entities.Variables.VariableType.BOOL")
       @js.native
       def BOOL: Double = js.native
       inline def BOOL_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BOOL")(x.asInstanceOf[js.Any])
       
-      /** @type {number} The type of the User/Room Variable is number (specifically a double). */
+      /** The type of the User/Room Variable is number (specifically a double). */
       @JSGlobal("SFS2X.Entities.Variables.VariableType.DOUBLE")
       @js.native
       def DOUBLE: Double = js.native
       inline def DOUBLE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DOUBLE")(x.asInstanceOf[js.Any])
       
-      /** @type {number} The type of the User/Room Variable is number (specifically an integer). */
+      /** The type of the User/Room Variable is number (specifically an integer). */
       @JSGlobal("SFS2X.Entities.Variables.VariableType.INT")
       @js.native
       def INT: Double = js.native
       inline def INT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INT")(x.asInstanceOf[js.Any])
       
-      /** @type {number} The User/Room Variable is null. */
+      /** The User/Room Variable is null. */
       @JSGlobal("SFS2X.Entities.Variables.VariableType.NULL")
       @js.native
       def NULL: Double = js.native
       inline def NULL_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NULL")(x.asInstanceOf[js.Any])
       
-      /** @type {number} The type of the User/Room Variable is object. */
+      /** The type of the User/Room Variable is object. */
       @JSGlobal("SFS2X.Entities.Variables.VariableType.OBJECT")
       @js.native
       def OBJECT: Double = js.native
       inline def OBJECT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OBJECT")(x.asInstanceOf[js.Any])
       
-      /** @type {number} The type of the User/Room Variable is string. */
+      /** The type of the User/Room Variable is string. */
       @JSGlobal("SFS2X.Entities.Variables.VariableType.STRING")
       @js.native
       def STRING: Double = js.native

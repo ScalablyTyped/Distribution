@@ -126,6 +126,8 @@ object sapUxapAnchorBarMod {
     extends typings.openui5.sapMToolbarMod.default {
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * This method is a hook for the RenderManager that gets called during the rendering of child Controls.
       * It allows to add, remove and update existing accessibility attributes (ARIA) of those controls.
       */

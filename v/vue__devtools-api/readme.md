@@ -1,7 +1,7 @@
 
 # Scala.js typings for vue__devtools-api
 
-Typings are for version 6.4.5
+Typings are for version 6.5.0
 
 ## Library description:
 Interact with the Vue devtools from the page

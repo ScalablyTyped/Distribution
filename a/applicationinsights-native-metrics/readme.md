@@ -1,7 +1,7 @@
 
 # Scala.js typings for applicationinsights-native-metrics
 
-Typings are for version 0.0.8
+Typings are for version 0.0.9
 
 ## Library description:
 Native APM agent for the Application Insights Node.js SDK

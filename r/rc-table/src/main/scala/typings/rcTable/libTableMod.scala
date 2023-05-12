@@ -1,14 +1,16 @@
 package typings.rcTable
 
+import typings.rcComponentContext.esImmutableMod.CompareProps
 import typings.rcTable.anon.Body
+import typings.rcTable.anon.Fn0
+import typings.rcTable.anon.FnCallTableProps
+import typings.rcTable.anon.FnCall_
 import typings.rcTable.anon.X
-import typings.rcTable.libFooterCellMod.SummaryCellProps
-import typings.rcTable.libFooterRowMod.FooterRowProps
-import typings.rcTable.libFooterSummaryMod.SummaryProps
 import typings.rcTable.libInterfaceMod.ColumnGroupType
 import typings.rcTable.libInterfaceMod.ColumnType
 import typings.rcTable.libInterfaceMod.ColumnsType
 import typings.rcTable.libInterfaceMod.DefaultRecordType
+import typings.rcTable.libInterfaceMod.Direction
 import typings.rcTable.libInterfaceMod.ExpandableConfig
 import typings.rcTable.libInterfaceMod.ExpandedRowRender
 import typings.rcTable.libInterfaceMod.GetComponentProps
@@ -21,13 +23,8 @@ import typings.rcTable.libInterfaceMod.RowClassName
 import typings.rcTable.libInterfaceMod.TableComponents
 import typings.rcTable.libInterfaceMod.TableLayout
 import typings.rcTable.libInterfaceMod.TableSticky
-import typings.rcTable.libSugarColumnGroupMod.ColumnGroupProps
-import typings.rcTable.libSugarColumnMod.ColumnProps
-import typings.rcTable.rcTableStrings.ltr
-import typings.rcTable.rcTableStrings.rtl
 import typings.react.mod.CSSProperties
 import typings.react.mod.HTMLAttributes
-import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import typings.react.mod.TdHTMLAttributes
 import typings.react.mod.global.JSX.Element
@@ -37,75 +34,33 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object libTableMod {
   
-  object default {
-    
-    inline def apply[RecordType /* <: DefaultRecordType */](props: TableProps[RecordType]): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
-    
-    @JSImport("rc-table/lib/Table", JSImport.Default)
-    @js.native
-    val ^ : js.Any = js.native
-    
-    /**
-      * This is a syntactic sugar for `columns` prop.
-      * So HOC will not work on this.
-      */
-    /* was `typeof imported_Column.default` */
-    inline def Column[RecordType](_underscore: ColumnProps[RecordType]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("Column")(_underscore.asInstanceOf[js.Any]).asInstanceOf[Any]
-    
-    /**
-      * This is a syntactic sugar for `columns` prop.
-      * So HOC will not work on this.
-      */
-    /* was `typeof imported_ColumnGroup.default` */
-    inline def ColumnGroup[RecordType](_underscore: ColumnGroupProps[RecordType]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("ColumnGroup")(_underscore.asInstanceOf[js.Any]).asInstanceOf[Any]
-    
-    /* was `typeof imported_Summary.default` */
-    object Summary {
-      
-      /**
-        * Syntactic sugar. Do not support HOC.
-        */
-      inline def apply(param0: SummaryProps): ReactElement = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
-      
-      @JSImport("rc-table/lib/Table", "default.Summary")
-      @js.native
-      val ^ : js.Any = js.native
-      
-      /* was `typeof imported_Cell.default` */
-      inline def Cell(param0: SummaryCellProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Cell")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
-      
-      /* was `typeof imported_Row.default` */
-      inline def Row(param0: FooterRowProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Row")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
-    }
-    
-    object defaultProps {
-      
-      @JSImport("rc-table/lib/Table", "default.defaultProps")
-      @js.native
-      val ^ : js.Any = js.native
-      
-      inline def emptyText(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("emptyText")().asInstanceOf[String]
-      
-      @JSImport("rc-table/lib/Table", "default.defaultProps.prefixCls")
-      @js.native
-      def prefixCls: String = js.native
-      inline def prefixCls_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("prefixCls")(x.asInstanceOf[js.Any])
-      
-      @JSImport("rc-table/lib/Table", "default.defaultProps.rowKey")
-      @js.native
-      def rowKey: String = js.native
-      inline def rowKey_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rowKey")(x.asInstanceOf[js.Any])
-    }
-  }
-  
-  @JSImport("rc-table/lib/Table", "INTERNAL_HOOKS")
+  @JSImport("rc-table/lib/Table", JSImport.Namespace)
   @js.native
-  val INTERNAL_HOOKS: /* "rc-table-internal-hook" */ String = js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("rc-table/lib/Table", JSImport.Default)
+  @js.native
+  val default: ImmutableTableType = js.native
+  
+  inline def genTable(): FnCallTableProps = ^.asInstanceOf[js.Dynamic].applyDynamic("genTable")().asInstanceOf[FnCallTableProps]
+  inline def genTable(shouldTriggerRender: CompareProps[FnCallTableProps]): FnCallTableProps = ^.asInstanceOf[js.Dynamic].applyDynamic("genTable")(shouldTriggerRender.asInstanceOf[js.Any]).asInstanceOf[FnCallTableProps]
+  
+  @js.native
+  trait ImmutableTableType extends StObject {
+    
+    def apply[RecordType /* <: DefaultRecordType */](tableProps: TableProps[RecordType]): Element = js.native
+    
+    var Column: FnCall_ = js.native
+    
+    var ColumnGroup: Fn0 = js.native
+    
+    var Summary: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Summary */ Any = js.native
+  }
   
   /* Inlined parent std.Omit<rc-table.rc-table/lib/interface.LegacyExpandableProps<RecordType>, 'showExpandColumn'> */
   trait TableProps[RecordType] extends StObject {
     
-    var caption: js.UndefOr[String | ReactNode] = js.undefined
+    var caption: js.UndefOr[ReactNode] = js.undefined
     
     var children: js.UndefOr[ReactNode] = js.undefined
     
@@ -123,7 +78,7 @@ object libTableMod {
     
     var defaultExpandedRowKeys: js.UndefOr[js.Array[Key]] = js.undefined
     
-    var direction: js.UndefOr[ltr | rtl] = js.undefined
+    var direction: js.UndefOr[Direction] = js.undefined
     
     var emptyText: js.UndefOr[ReactNode | js.Function0[ReactNode]] = js.undefined
     
@@ -207,7 +162,7 @@ object libTableMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: TableProps[?], RecordType] (val x: Self & TableProps[RecordType]) extends AnyVal {
       
-      inline def setCaption(value: String | ReactNode): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
+      inline def setCaption(value: ReactNode): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
       
       inline def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
       
@@ -249,7 +204,7 @@ object libTableMod {
       
       inline def setDefaultExpandedRowKeysVarargs(value: Key*): Self = StObject.set(x, "defaultExpandedRowKeys", js.Array(value*))
       
-      inline def setDirection(value: ltr | rtl): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: Direction): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
       inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       

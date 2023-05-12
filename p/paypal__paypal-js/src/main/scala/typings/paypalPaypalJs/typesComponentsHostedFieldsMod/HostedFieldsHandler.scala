@@ -41,7 +41,7 @@ trait HostedFieldsHandler extends StObject {
   /**
     * Get the state of all the rendered fields.
     */
-  def getState(): HostedFieldsFieldDataFields = js.native
+  def getState(): HostedFieldsState = js.native
   
   @JSName("off")
   def off_blur(event: blur, handler: js.Function1[/* event */ HostedFieldsEvent, Unit]): Unit = js.native

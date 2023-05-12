@@ -9,7 +9,6 @@ import typings.grpcGrpcJs.buildSrcFilterStackMod.FilterStackFactory
 import typings.grpcGrpcJs.buildSrcMetadataMod.Metadata
 import typings.grpcGrpcJs.buildSrcServerCallMod.ServerSurfaceCall
 import typings.grpcGrpcJs.buildSrcSubchannelMod.Subchannel
-import typings.grpcGrpcJs.buildSrcSubchannelMod.SubchannelCallStatsTracker
 import typings.grpcGrpcJs.grpcGrpcJsInts.`1`
 import typings.grpcGrpcJs.grpcGrpcJsInts.`2`
 import typings.grpcGrpcJs.grpcGrpcJsInts.`4`
@@ -49,7 +48,7 @@ object buildSrcCallStreamMod {
       stream: ClientHttp2Stream,
       subchannel: Subchannel,
       extraFilters: js.Array[Filter],
-      callStatsTracker: SubchannelCallStatsTracker
+      callStatsTracker: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SubchannelCallStatsTracker */ Any
     ): Unit = js.native
     
     /* private */ val callNumber: Any = js.native
@@ -504,35 +503,6 @@ object buildSrcCallStreamMod {
       inline def setParentCallNull: Self = StObject.set(x, "parentCall", null)
       
       inline def setParentCallUndefined: Self = StObject.set(x, "parentCall", js.undefined)
-    }
-  }
-  
-  /* Inlined std.Pick<@grpc/grpc-js.@grpc/grpc-js/build/src/call-stream.StatusObject, 'code' | 'details'> & {  metadata :@grpc/grpc-js.@grpc/grpc-js/build/src/metadata.Metadata | null} */
-  trait PartialStatusObject extends StObject {
-    
-    var code: Status
-    
-    var details: String
-    
-    var metadata: Metadata | Null
-  }
-  object PartialStatusObject {
-    
-    inline def apply(code: Status, details: String): PartialStatusObject = {
-      val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], metadata = null)
-      __obj.asInstanceOf[PartialStatusObject]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: PartialStatusObject] (val x: Self) extends AnyVal {
-      
-      inline def setCode(value: Status): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
-      
-      inline def setDetails(value: String): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
-      
-      inline def setMetadata(value: Metadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
-      
-      inline def setMetadataNull: Self = StObject.set(x, "metadata", null)
     }
   }
   

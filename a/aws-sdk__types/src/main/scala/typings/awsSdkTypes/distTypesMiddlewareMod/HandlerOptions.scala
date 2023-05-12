@@ -45,7 +45,7 @@ trait HandlerOptions extends StObject {
     *      per operation execution, finalization and deserialize handlers will be
     *      executed foreach HTTP request sent.
     *
-    * @default 'initialize'
+    * @defaultValue 'initialize'
     */
   var step: js.UndefOr[Step] = js.undefined
   

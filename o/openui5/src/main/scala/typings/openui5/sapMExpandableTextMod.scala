@@ -226,6 +226,8 @@ object sapMExpandableTextMod {
     def getTextDirection(): TextDirection | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TextDirection * / any */ String) = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Returns the text node container's DOM reference. This can be different from `getDomRef` when inner wrapper
       * is needed.
       *

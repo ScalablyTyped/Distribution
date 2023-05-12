@@ -1,6 +1,7 @@
 package typings.three
 
 import typings.three.srcCoreBufferGeometryMod.BufferGeometry
+import typings.three.srcCoreBufferGeometryMod.NormalBufferAttributes
 import typings.three.srcCoreEventDispatcherMod.Event
 import typings.three.srcMaterialsMaterialMod.Material
 import typings.three.srcThreeMod.AnimationMixer
@@ -25,9 +26,9 @@ object examplesJsmMiscMd2characterMod {
     
     def loadParts(config: MD2PartsConfig): Unit = js.native
     
-    var meshBody: (Mesh[BufferGeometry, Material | js.Array[Material]]) | Null = js.native
+    var meshBody: (Mesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]]) | Null = js.native
     
-    var meshWeapon: (Mesh[BufferGeometry, Material | js.Array[Material]]) | Null = js.native
+    var meshWeapon: (Mesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]]) | Null = js.native
     
     var mixer: AnimationMixer | Null = js.native
     
@@ -55,7 +56,7 @@ object examplesJsmMiscMd2characterMod {
     
     def update(delta: Double): Unit = js.native
     
-    var weapons: js.Array[Mesh[BufferGeometry, Material | js.Array[Material]]] = js.native
+    var weapons: js.Array[Mesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]]] = js.native
   }
   
   trait MD2PartsConfig extends StObject {

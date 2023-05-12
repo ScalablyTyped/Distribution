@@ -34,7 +34,11 @@ object InputManager {
   def DragMovementThreshold: Double = js.native
   inline def DragMovementThreshold_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DragMovementThreshold")(x.asInstanceOf[js.Any])
   
-  /** If you need to check double click without raising a single click at first click, enable this flag */
+  /**
+    * This flag will modify the behavior so that, when true, a click will happen if and only if
+    * another click DOES NOT happen within the DoubleClickDelay time frame.  If another click does
+    * happen within that time frame, the first click will not fire an event and and a double click will occur.
+    */
   @JSGlobal("BABYLON.InputManager.ExclusiveDoubleClickMode")
   @js.native
   def ExclusiveDoubleClickMode: Boolean = js.native

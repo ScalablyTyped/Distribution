@@ -1,7 +1,7 @@
 
 # Scala.js typings for libp2p__interfaces
 
-Typings are for version 3.0.3
+Typings are for version 3.3.2
 
 ## Library description:
 Common code shared by the various libp2p interfaces

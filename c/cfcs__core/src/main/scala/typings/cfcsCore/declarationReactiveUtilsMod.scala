@@ -20,11 +20,11 @@ object declarationReactiveUtilsMod {
   inline def getObserver(instance: Any, name: String, defaultValue: Any): Observer[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getObserver")(instance.asInstanceOf[js.Any], name.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[Observer[Any]]
   
   inline def getObservers(instance: Any): Record[String, Observer[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getObservers")(instance.asInstanceOf[js.Any]).asInstanceOf[Record[String, Observer[Any]]]
+  inline def getObservers(instance: Any, isComputed: Boolean): Record[String, Observer[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getObservers")(instance.asInstanceOf[js.Any], isComputed.asInstanceOf[js.Any])).asInstanceOf[Record[String, Observer[Any]]]
   
   inline def isObserver(`val`: Any): /* is @cfcs/core.@cfcs/core/declaration/reactive/Observer.Observer<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObserver")(`val`.asInstanceOf[js.Any]).asInstanceOf[/* is @cfcs/core.@cfcs/core/declaration/reactive/Observer.Observer<any> */ Boolean]
   
-  inline def observe[Type](): Observer[Type] = ^.asInstanceOf[js.Dynamic].applyDynamic("observe")().asInstanceOf[Observer[Type]]
-  inline def observe[Type](defaultValue: Type): Observer[Type] = ^.asInstanceOf[js.Dynamic].applyDynamic("observe")(defaultValue.asInstanceOf[js.Any]).asInstanceOf[Observer[Type]]
+  inline def isReactive(`val`: Any): /* is @cfcs/core.@cfcs/core/declaration/reactive/decorators/ReactiveSubscribe.ReactiveSubscribe<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isReactive")(`val`.asInstanceOf[js.Any]).asInstanceOf[/* is @cfcs/core.@cfcs/core/declaration/reactive/decorators/ReactiveSubscribe.ReactiveSubscribe<any> */ Boolean]
   
   inline def setObserver(instance: Any, name: String, observer: Observer[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setObserver")(instance.asInstanceOf[js.Any], name.asInstanceOf[js.Any], observer.asInstanceOf[js.Any])).asInstanceOf[Unit]
   

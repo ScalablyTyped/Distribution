@@ -6,6 +6,7 @@ import typings.react.mod.ReactNode
 import typings.react.mod.Ref
 import typings.reactTransitionGroup.anon.Appear
 import typings.std.HTMLElement
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -174,7 +175,9 @@ object transitionMod {
       
       inline def setChildren(value: TransitionChildren): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      inline def setChildrenFunction1(value: /* status */ TransitionStatus => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      inline def setChildrenFunction2(
+        value: (/* status */ TransitionStatus, /* childProps */ js.UndefOr[Record[String, Any]]) => ReactNode
+      ): Self = StObject.set(x, "children", js.Any.fromFunction2(value))
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
@@ -430,7 +433,11 @@ object transitionMod {
     }
   }
   
-  type TransitionChildren = ReactNode | (js.Function1[/* status */ TransitionStatus, ReactNode])
+  type TransitionChildren = ReactNode | (js.Function2[
+    /* status */ TransitionStatus, 
+    /* childProps */ js.UndefOr[Record[String, Any]], 
+    ReactNode
+  ])
   
   /* Rewritten from type alias, can be one of: 
     - typings.reactTransitionGroup.transitionMod.TimeoutProps[RefElement]

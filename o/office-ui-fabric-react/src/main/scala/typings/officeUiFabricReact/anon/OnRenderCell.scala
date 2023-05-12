@@ -9,6 +9,8 @@ trait OnRenderCell extends StObject {
   
   def onRenderCell(item: Any, index: Double, containsFocus: Boolean): Element
   
+  var onRenderCellConditional: scala.Unit
+  
   var renderedWindowsAhead: Double
   
   var renderedWindowsBehind: Double
@@ -19,11 +21,12 @@ object OnRenderCell {
   
   inline def apply(
     onRenderCell: (Any, Double, Boolean) => Element,
+    onRenderCellConditional: scala.Unit,
     renderedWindowsAhead: Double,
     renderedWindowsBehind: Double,
     startIndex: Double
   ): OnRenderCell = {
-    val __obj = js.Dynamic.literal(onRenderCell = js.Any.fromFunction3(onRenderCell), renderedWindowsAhead = renderedWindowsAhead.asInstanceOf[js.Any], renderedWindowsBehind = renderedWindowsBehind.asInstanceOf[js.Any], startIndex = startIndex.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(onRenderCell = js.Any.fromFunction3(onRenderCell), onRenderCellConditional = onRenderCellConditional.asInstanceOf[js.Any], renderedWindowsAhead = renderedWindowsAhead.asInstanceOf[js.Any], renderedWindowsBehind = renderedWindowsBehind.asInstanceOf[js.Any], startIndex = startIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnRenderCell]
   }
   
@@ -31,6 +34,8 @@ object OnRenderCell {
   implicit open class MutableBuilder[Self <: OnRenderCell] (val x: Self) extends AnyVal {
     
     inline def setOnRenderCell(value: (Any, Double, Boolean) => Element): Self = StObject.set(x, "onRenderCell", js.Any.fromFunction3(value))
+    
+    inline def setOnRenderCellConditional(value: scala.Unit): Self = StObject.set(x, "onRenderCellConditional", value.asInstanceOf[js.Any])
     
     inline def setRenderedWindowsAhead(value: Double): Self = StObject.set(x, "renderedWindowsAhead", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,7 @@ object mod {
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
     * You'll have to cast your way around this structure, unfortunately.
     * TS definition: {{{
-    {readonly bind <Func extends (this : ThisArg, args : ...any): any, ThisArg>(fn : Func): Func & node.anon.AsyncResource, readonly bind <Func extends (this : ThisArg, args : ...any): any, ThisArg>(fn : Func, type : string): Func & node.anon.AsyncResource, readonly bind <Func extends (this : ThisArg, args : ...any): any, ThisArg>(fn : Func, type : string, thisArg : ThisArg): Func & node.anon.AsyncResource, readonly bind <Func extends (this : ThisArg, args : ...any): any, ThisArg>(fn : Func, type : undefined, thisArg : ThisArg): Func & node.anon.AsyncResource} & new (type : string): node.async_hooks.AsyncResource extends {new (name : string): node.async_hooks.AsyncResource, new (name : string, options : infer T): node.async_hooks.AsyncResource} ? T : never
+    {readonly bind <Func extends (this : ThisArg, args : ...any): any, ThisArg>(fn : Func): Func, readonly bind <Func extends (this : ThisArg, args : ...any): any, ThisArg>(fn : Func, type : string): Func, readonly bind <Func extends (this : ThisArg, args : ...any): any, ThisArg>(fn : Func, type : string, thisArg : ThisArg): Func, readonly bind <Func extends (this : ThisArg, args : ...any): any, ThisArg>(fn : Func, type : undefined, thisArg : ThisArg): Func} & new (type : string): node.async_hooks.AsyncResource extends {new (name : string): node.async_hooks.AsyncResource, new (name : string, options : infer T): node.async_hooks.AsyncResource} ? T : never
     }}}
     */
   @js.native

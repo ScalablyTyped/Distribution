@@ -50,12 +50,7 @@ trait Condition
   var abatementString: js.UndefOr[String] = js.undefined
   
   /**
-    * Individual or device that is making the condition statement.
-    */
-  var asserter: js.UndefOr[Reference] = js.undefined
-  
-  /**
-    * Only used if not implicit in code found in Condition.code. If the use case requires attributes from the BodyStructure resource (e.g. to identify and track separately) then use the standard extension [bodyStructure](extension-bodysite.html).  May be a summary code, or a reference to a very precise definition of the location, or both.
+    * Only used if not implicit in code found in Condition.code. If the use case requires attributes from the BodyStructure resource (e.g. to identify and track separately) then use the standard extension [http://hl7.org/fhir/StructureDefinition/bodySite](http://hl7.org/fhir/extensions/StructureDefinition-bodySite.html).  May be a summary code, or a reference to a very precise definition of the location, or both.
     */
   var bodySite: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
@@ -80,9 +75,9 @@ trait Condition
   var encounter: js.UndefOr[Reference] = js.undefined
   
   /**
-    * If the condition was confirmed, but subsequently refuted, then the evidence can be cumulative including all evidence over time.  The evidence may be a simple list of coded symptoms/manifestations, or references to observations or formal assessments, or both.
+    * If the condition was confirmed, but subsequently refuted, then the evidence can be cumulative including all evidence over time.  The evidence may be a simple list of coded symptoms/manifestations, or references to observations or formal assessments, or both.  For example, if the Condition.code is pneumonia, then there could be an evidence list where Condition.evidence.concept = fever (CodeableConcept), Condition.evidence.concept = cough (CodeableConcept), and Condition.evidence.reference = bronchitis (reference to Condition).
     */
-  var evidence: js.UndefOr[js.Array[ConditionEvidence]] = js.undefined
+  var evidence: js.UndefOr[js.Array[CodeableReference]] = js.undefined
   
   /**
     * This is a business identifier, not a resource identifier (see [discussion](resource.html#identifiers)).  It is best practice for the identifier to only appear on a single resource instance, however business practices may occasionally dictate that multiple resource instances with the same identifier can exist - possibly even with different resource types.  For example, multiple Patient and a Person resource instance might share the same social insurance number.
@@ -95,44 +90,39 @@ trait Condition
   var note: js.UndefOr[js.Array[Annotation]] = js.undefined
   
   /**
-    * Age is generally used when the patient reports an age at which the Condition began to occur.  Period is generally used to convey an imprecise onset that occurred within the time period.  For example, Period is not intended to convey the transition period before the chronic bronchitis or COPD condition was diagnosed, but Period can be used to convey an imprecise diagnosis date.
-    * Because a Condition.code can represent multiple levels of granularity and can be modified over time, the onset and abatement dates can have ambiguity whether those dates apply to the current Condition.code or an earlier representation of that Condition.code.   For example, if the Condition.code was initially documented as severe asthma, then it is ambiguous whether the onset and abatement dates apply to asthma (overall in that subject's lifetime) or when asthma transitioned to become severe.
+    * Age is generally used when the patient reports an age at which the Condition began to occur.  Period is generally used to convey an imprecise onset that occurred within the time period.  For example, Period is not intended to convey the transition period before the chronic bronchitis or COPD condition was diagnosed, but Period can be used to convey an imprecise diagnosis date.  Range is generally used to convey an imprecise age range (e.g. 4 to 6 years old).  Because a Condition.code can represent multiple levels of granularity and can be modified over time, the onset and abatement dates can have ambiguity whether those dates apply to the current Condition.code or an earlier representation of that Condition.code.   For example, if the Condition.code was initially documented as severe asthma, then it is ambiguous whether the onset and abatement dates apply to asthma (overall in that subject's lifetime) or when asthma transitioned to become severe.
     */
   var onsetAge: js.UndefOr[Age] = js.undefined
   
   /**
-    * Age is generally used when the patient reports an age at which the Condition began to occur.  Period is generally used to convey an imprecise onset that occurred within the time period.  For example, Period is not intended to convey the transition period before the chronic bronchitis or COPD condition was diagnosed, but Period can be used to convey an imprecise diagnosis date.
-    * Because a Condition.code can represent multiple levels of granularity and can be modified over time, the onset and abatement dates can have ambiguity whether those dates apply to the current Condition.code or an earlier representation of that Condition.code.   For example, if the Condition.code was initially documented as severe asthma, then it is ambiguous whether the onset and abatement dates apply to asthma (overall in that subject's lifetime) or when asthma transitioned to become severe.
+    * Age is generally used when the patient reports an age at which the Condition began to occur.  Period is generally used to convey an imprecise onset that occurred within the time period.  For example, Period is not intended to convey the transition period before the chronic bronchitis or COPD condition was diagnosed, but Period can be used to convey an imprecise diagnosis date.  Range is generally used to convey an imprecise age range (e.g. 4 to 6 years old).  Because a Condition.code can represent multiple levels of granularity and can be modified over time, the onset and abatement dates can have ambiguity whether those dates apply to the current Condition.code or an earlier representation of that Condition.code.   For example, if the Condition.code was initially documented as severe asthma, then it is ambiguous whether the onset and abatement dates apply to asthma (overall in that subject's lifetime) or when asthma transitioned to become severe.
     */
   var onsetDateTime: js.UndefOr[String] = js.undefined
   
   /**
-    * Age is generally used when the patient reports an age at which the Condition began to occur.  Period is generally used to convey an imprecise onset that occurred within the time period.  For example, Period is not intended to convey the transition period before the chronic bronchitis or COPD condition was diagnosed, but Period can be used to convey an imprecise diagnosis date.
-    * Because a Condition.code can represent multiple levels of granularity and can be modified over time, the onset and abatement dates can have ambiguity whether those dates apply to the current Condition.code or an earlier representation of that Condition.code.   For example, if the Condition.code was initially documented as severe asthma, then it is ambiguous whether the onset and abatement dates apply to asthma (overall in that subject's lifetime) or when asthma transitioned to become severe.
+    * Age is generally used when the patient reports an age at which the Condition began to occur.  Period is generally used to convey an imprecise onset that occurred within the time period.  For example, Period is not intended to convey the transition period before the chronic bronchitis or COPD condition was diagnosed, but Period can be used to convey an imprecise diagnosis date.  Range is generally used to convey an imprecise age range (e.g. 4 to 6 years old).  Because a Condition.code can represent multiple levels of granularity and can be modified over time, the onset and abatement dates can have ambiguity whether those dates apply to the current Condition.code or an earlier representation of that Condition.code.   For example, if the Condition.code was initially documented as severe asthma, then it is ambiguous whether the onset and abatement dates apply to asthma (overall in that subject's lifetime) or when asthma transitioned to become severe.
     */
   var onsetPeriod: js.UndefOr[Period] = js.undefined
   
   /**
-    * Age is generally used when the patient reports an age at which the Condition began to occur.  Period is generally used to convey an imprecise onset that occurred within the time period.  For example, Period is not intended to convey the transition period before the chronic bronchitis or COPD condition was diagnosed, but Period can be used to convey an imprecise diagnosis date.
-    * Because a Condition.code can represent multiple levels of granularity and can be modified over time, the onset and abatement dates can have ambiguity whether those dates apply to the current Condition.code or an earlier representation of that Condition.code.   For example, if the Condition.code was initially documented as severe asthma, then it is ambiguous whether the onset and abatement dates apply to asthma (overall in that subject's lifetime) or when asthma transitioned to become severe.
+    * Age is generally used when the patient reports an age at which the Condition began to occur.  Period is generally used to convey an imprecise onset that occurred within the time period.  For example, Period is not intended to convey the transition period before the chronic bronchitis or COPD condition was diagnosed, but Period can be used to convey an imprecise diagnosis date.  Range is generally used to convey an imprecise age range (e.g. 4 to 6 years old).  Because a Condition.code can represent multiple levels of granularity and can be modified over time, the onset and abatement dates can have ambiguity whether those dates apply to the current Condition.code or an earlier representation of that Condition.code.   For example, if the Condition.code was initially documented as severe asthma, then it is ambiguous whether the onset and abatement dates apply to asthma (overall in that subject's lifetime) or when asthma transitioned to become severe.
     */
   var onsetRange: js.UndefOr[Range] = js.undefined
   
   /**
-    * Age is generally used when the patient reports an age at which the Condition began to occur.  Period is generally used to convey an imprecise onset that occurred within the time period.  For example, Period is not intended to convey the transition period before the chronic bronchitis or COPD condition was diagnosed, but Period can be used to convey an imprecise diagnosis date.
-    * Because a Condition.code can represent multiple levels of granularity and can be modified over time, the onset and abatement dates can have ambiguity whether those dates apply to the current Condition.code or an earlier representation of that Condition.code.   For example, if the Condition.code was initially documented as severe asthma, then it is ambiguous whether the onset and abatement dates apply to asthma (overall in that subject's lifetime) or when asthma transitioned to become severe.
+    * Age is generally used when the patient reports an age at which the Condition began to occur.  Period is generally used to convey an imprecise onset that occurred within the time period.  For example, Period is not intended to convey the transition period before the chronic bronchitis or COPD condition was diagnosed, but Period can be used to convey an imprecise diagnosis date.  Range is generally used to convey an imprecise age range (e.g. 4 to 6 years old).  Because a Condition.code can represent multiple levels of granularity and can be modified over time, the onset and abatement dates can have ambiguity whether those dates apply to the current Condition.code or an earlier representation of that Condition.code.   For example, if the Condition.code was initially documented as severe asthma, then it is ambiguous whether the onset and abatement dates apply to asthma (overall in that subject's lifetime) or when asthma transitioned to become severe.
     */
   var onsetString: js.UndefOr[String] = js.undefined
   
   /**
-    * If the recordedDate is known via a sending system, it is preferred that the receiving system preserve the date.  If the recorded date is not provided by the sending system, it is acceptable for the receiving system to assert their system-generated date.
+    * Indicates who or what participated in the activities related to the condition and how they were involved.
     */
-  var recordedDate: js.UndefOr[String] = js.undefined
+  var participant: js.UndefOr[js.Array[ConditionParticipant]] = js.undefined
   
   /**
-    * Individual who recorded the record and takes responsibility for its content.
+    * When onset date is unknown, recordedDate can be used to establish if the condition was present on or before a given date.  If the recordedDate is known and provided by a sending system, it is preferred that the receiving system preserve that recordedDate value. If the recordedDate is not provided by the sending system, the receipt timestamp is sometimes used as the recordedDate.
     */
-  var recorder: js.UndefOr[Reference] = js.undefined
+  var recordedDate: js.UndefOr[String] = js.undefined
   
   /** Resource Type Name (for serialization) */
   @JSName("resourceType")
@@ -189,10 +179,6 @@ object Condition {
     
     inline def setAbatementStringUndefined: Self = StObject.set(x, "abatementString", js.undefined)
     
-    inline def setAsserter(value: Reference): Self = StObject.set(x, "asserter", value.asInstanceOf[js.Any])
-    
-    inline def setAsserterUndefined: Self = StObject.set(x, "asserter", js.undefined)
-    
     inline def setBodySite(value: js.Array[CodeableConcept]): Self = StObject.set(x, "bodySite", value.asInstanceOf[js.Any])
     
     inline def setBodySiteUndefined: Self = StObject.set(x, "bodySite", js.undefined)
@@ -215,11 +201,11 @@ object Condition {
     
     inline def setEncounterUndefined: Self = StObject.set(x, "encounter", js.undefined)
     
-    inline def setEvidence(value: js.Array[ConditionEvidence]): Self = StObject.set(x, "evidence", value.asInstanceOf[js.Any])
+    inline def setEvidence(value: js.Array[CodeableReference]): Self = StObject.set(x, "evidence", value.asInstanceOf[js.Any])
     
     inline def setEvidenceUndefined: Self = StObject.set(x, "evidence", js.undefined)
     
-    inline def setEvidenceVarargs(value: ConditionEvidence*): Self = StObject.set(x, "evidence", js.Array(value*))
+    inline def setEvidenceVarargs(value: CodeableReference*): Self = StObject.set(x, "evidence", js.Array(value*))
     
     inline def setIdentifier(value: js.Array[Identifier]): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
@@ -253,13 +239,15 @@ object Condition {
     
     inline def setOnsetStringUndefined: Self = StObject.set(x, "onsetString", js.undefined)
     
+    inline def setParticipant(value: js.Array[ConditionParticipant]): Self = StObject.set(x, "participant", value.asInstanceOf[js.Any])
+    
+    inline def setParticipantUndefined: Self = StObject.set(x, "participant", js.undefined)
+    
+    inline def setParticipantVarargs(value: ConditionParticipant*): Self = StObject.set(x, "participant", js.Array(value*))
+    
     inline def setRecordedDate(value: String): Self = StObject.set(x, "recordedDate", value.asInstanceOf[js.Any])
     
     inline def setRecordedDateUndefined: Self = StObject.set(x, "recordedDate", js.undefined)
-    
-    inline def setRecorder(value: Reference): Self = StObject.set(x, "recorder", value.asInstanceOf[js.Any])
-    
-    inline def setRecorderUndefined: Self = StObject.set(x, "recorder", js.undefined)
     
     inline def setResourceType(value: typings.fhir.fhirStrings.Condition): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     

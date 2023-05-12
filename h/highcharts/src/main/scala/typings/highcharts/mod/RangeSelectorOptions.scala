@@ -60,7 +60,7 @@ trait RangeSelectorOptions extends StObject {
     *
     * - `never`: Never collapse
     */
-  var dropdown: js.UndefOr[String] = js.undefined
+  var dropdown: js.UndefOr[OptionsDropdownValue] = js.undefined
   
   /**
     * (Highstock, Gantt) Enable or disable the range selector. Default to
@@ -93,7 +93,7 @@ trait RangeSelectorOptions extends StObject {
   
   /**
     * (Highstock, Gantt) The date format in the input boxes when not selected
-    * for editing. Defaults to `%b %e, %Y`.
+    * for editing. Defaults to `%e %b %Y`.
     *
     * This is used to determine which type of input to show, `datetime-local`,
     * `date` or `time` and falling back to `text` when the browser does not
@@ -214,7 +214,7 @@ object RangeSelectorOptions {
     
     inline def setButtonsVarargs(value: RangeSelectorButtonsOptions*): Self = StObject.set(x, "buttons", js.Array(value*))
     
-    inline def setDropdown(value: String): Self = StObject.set(x, "dropdown", value.asInstanceOf[js.Any])
+    inline def setDropdown(value: OptionsDropdownValue): Self = StObject.set(x, "dropdown", value.asInstanceOf[js.Any])
     
     inline def setDropdownUndefined: Self = StObject.set(x, "dropdown", js.undefined)
     

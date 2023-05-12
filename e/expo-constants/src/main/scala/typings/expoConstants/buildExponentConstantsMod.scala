@@ -1,19 +1,17 @@
 package typings.expoConstants
 
-import org.scalablytyped.runtime.Shortcut
-import typings.expoModulesCore.buildNativeModulesProxyDottypesMod.ProxyNativeModule
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object buildExponentConstantsMod extends Shortcut {
+object buildExponentConstantsMod {
+  
+  @JSImport("expo-constants/build/ExponentConstants", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("expo-constants/build/ExponentConstants", JSImport.Default)
   @js.native
-  val default: ProxyNativeModule = js.native
-  
-  type _To = ProxyNativeModule
-  
-  /* This means you don't have to write `default`, but can instead just say `buildExponentConstantsMod.foo` */
-  override def _to: ProxyNativeModule = default
+  def default: Any = js.native
+  inline def default_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
 }

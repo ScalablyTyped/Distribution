@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "geotiff" : "2.0.7"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "geotiff" : "2.0.7"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

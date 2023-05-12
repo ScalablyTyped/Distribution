@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "it-pb-stream" : "2.0.2"
+      "it-pb-stream" : "4.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "it-pb-stream" : "2.0.2"
+      "it-pb-stream" : "4.0.1"
     }
   ],
   "compile-devDependencies" : [

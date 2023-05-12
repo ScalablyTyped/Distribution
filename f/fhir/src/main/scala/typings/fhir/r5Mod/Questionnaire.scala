@@ -17,6 +17,8 @@ trait Questionnaire
   
   var _copyright: js.UndefOr[Element] = js.undefined
   
+  var _copyrightLabel: js.UndefOr[Element] = js.undefined
+  
   var _date: js.UndefOr[Element] = js.undefined
   
   var _derivedFrom: js.UndefOr[js.Array[Element]] = js.undefined
@@ -43,18 +45,22 @@ trait Questionnaire
   
   var _version: js.UndefOr[Element] = js.undefined
   
+  var _versionAlgorithmString: js.UndefOr[Element] = js.undefined
+  
   /**
     * The 'date' element may be more recent than the approval date because of minor changes or editorial corrections.
+    * See guidance around (not) making local changes to elements [here](canonicalresource.html#localization).
     */
   var approvalDate: js.UndefOr[String] = js.undefined
   
   /**
-    * An identifier for this question or group of questions in a particular terminology such as LOINC.
+    * An identifier for this collection of questions in a particular terminology such as LOINC.
     */
   var code: js.UndefOr[js.Array[Coding]] = js.undefined
   
   /**
     * May be a web site, an email address, a telephone number, etc.
+    * See guidance around (not) making local changes to elements [here](canonicalresource.html#localization).
     */
   var contact: js.UndefOr[js.Array[ContactDetail]] = js.undefined
   
@@ -64,22 +70,29 @@ trait Questionnaire
   var copyright: js.UndefOr[String] = js.undefined
   
   /**
-    * Note that this is not the same as the resource last-modified-date, since the resource may be a secondary representation of the questionnaire. Additional specific dates may be added as extensions or be found by consulting Provenances associated with past versions of the resource.
+    * The (c) symbol should NOT be included in this string. It will be added by software when rendering the notation. Full details about licensing, restrictions, warrantees, etc. goes in the more general 'copyright' element.
+    */
+  var copyrightLabel: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The date is often not tracked until the resource is published, but may be present on draft content. Note that this is not the same as the resource last-modified-date, since the resource may be a secondary representation of the questionnaire. Additional specific dates may be added as extensions or be found by consulting Provenances associated with past versions of the resource.
+    * See guidance around (not) making local changes to elements [here](canonicalresource.html#localization).
     */
   var date: js.UndefOr[String] = js.undefined
   
   /**
-    * The URL of a Questionnaire that this Questionnaire is based on.
+    * This element covers a broad range of relationships, from 'somewhat inspired by' to 'fully compliant with'.         There is a standard extensionthat allows clearer differentiation between the specifics of the derivation relationship where          this is needed - e.g. to determine substitutability and validation expectations -          [http://hl7.org/fhir/StructureDefinition/questionnaire-derivationType](http://hl7.org/fhir/extensions/StructureDefinition-questionnaire-derivationType.html).
     */
   var derivedFrom: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
-    * This description can be used to capture details such as why the questionnaire was built, comments about misuse, instructions for clinical use and interpretation, literature references, examples from the paper world, etc. It is not a rendering of the questionnaire as conveyed in the 'text' field of the resource itself. This item SHOULD be populated unless the information is available from context (e.g. the language of the questionnaire is presumed to be the predominant language in the place the questionnaire was created).
+    * This description can be used to capture details such as comments about misuse, instructions for clinical use and interpretation, literature references, examples from the paper world, etc. It is not a rendering of the questionnaire as conveyed in the 'text' field of the resource itself. This item SHOULD be populated unless the information is available from context. (E.g. the language of the questionnaire is presumed to be the predominant language in the place the questionnaire was created).
     */
   var description: js.UndefOr[String] = js.undefined
   
   /**
-    * The effective period for a questionnaire  determines when the content is applicable for usage and is independent of publication and review dates. For example, a measure intended to be used for the year 2016 might be published in 2015.
+    * The effective period for a questionnaire  determines when the content is applicable for usage and is independent of publication and review dates. For example, a questionnaire intended to be used for the year 2016 might be published in 2015.
+    * See guidance around (not) making local changes to elements [here](canonicalresource.html#localization).
     */
   var effectivePeriod: js.UndefOr[Period] = js.undefined
   
@@ -100,16 +113,18 @@ trait Questionnaire
   
   /**
     * It may be possible for the questionnaire to be used in jurisdictions other than those for which it was originally designed or intended.
+    * DEPRECATION NOTE: For consistency, implementations are encouraged to migrate to using the new 'jurisdiction' code in the useContext element.  (I.e. useContext.code indicating http://terminology.hl7.org/CodeSystem/usage-context-type#jurisdiction and useContext.valueCodeableConcept indicating the jurisdiction.)
     */
   var jurisdiction: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
   /**
     * If specified, this date follows the original approval date.
+    * See guidance around (not) making local changes to elements [here](canonicalresource.html#localization).
     */
   var lastReviewDate: js.UndefOr[String] = js.undefined
   
   /**
-    * The name is not expected to be globally unique. The name should be a simple alphanumeric type name to ensure that it is machine-processing friendly.
+    * The name is not expected to be globally unique. The name should be a simple alphanumeric type no-whitespace name to ensure that it is machine-processing friendly.
     */
   var name: js.UndefOr[String] = js.undefined
   
@@ -128,7 +143,9 @@ trait Questionnaire
   val resourceType_Questionnaire: typings.fhir.fhirStrings.Questionnaire
   
   /**
-    * Allows filtering of questionnaires that are appropriate for use versus not.
+    * A nominal state-transition diagram can be found in the] documentation
+    * Unknown does not represent 'other' - one of the defined statuses must apply.  Unknown is used when the authoring system is not sure what the current status is.
+    * See guidance around (not) making local changes to elements [here](canonicalresource.html#localization).
     */
   var status: draft | active | retired | unknown
   
@@ -143,19 +160,32 @@ trait Questionnaire
   var title: js.UndefOr[String] = js.undefined
   
   /**
+    * Can be a urn:uuid: or a urn:oid: but real http: addresses are preferred.  Multiple instances may share the same URL if they have a distinct version.
+    * The determination of when to create a new version of a resource (same url, new version) vs. defining a new artifact is up to the author.  Considerations for making this decision are found in [Technical and Business Versions](resource.html#versions).
+    * In some cases, the resource can no longer be found at the stated url, but the url itself cannot change. Implementations can use the [meta.source](resource.html#meta) element to indicate where the current master source of the resource can be found.
     * The name of the referenced questionnaire can be conveyed using the http://hl7.org/fhir/StructureDefinition/display extension.
     */
   var url: js.UndefOr[String] = js.undefined
   
   /**
-    * When multiple useContexts are specified, there is no expectation that all or any of the contexts apply.
+    * When multiple useContexts are specified, there is no expectation that all or even any of the contexts apply.
     */
   var useContext: js.UndefOr[js.Array[UsageContext]] = js.undefined
   
   /**
-    * There may be different questionnaire instances that have the same identifier but different versions.  The version can be appended to the url in a reference to allow a reference to a particular business version of the questionnaire with the format [url]|[version].
+    * There may be different questionnaires that have the same url but different versions.  The version can be appended to the url in a reference to allow a reference to a particular business version of the questionnaire with the format. The version SHOULD NOT contain a '#' - see [Business Version](resource.html#bv-format).
     */
   var version: js.UndefOr[String] = js.undefined
+  
+  /**
+    * If set as a string, this is a FHIRPath expression that has two additional context variables passed in - %version1 and %version2 and will return a negative number if version1 is newer, a positive number if version2 and a 0 if the version ordering can't be successfully be determined.
+    */
+  var versionAlgorithmCoding: js.UndefOr[Coding] = js.undefined
+  
+  /**
+    * If set as a string, this is a FHIRPath expression that has two additional context variables passed in - %version1 and %version2 and will return a negative number if version1 is newer, a positive number if version2 and a 0 if the version ordering can't be successfully be determined.
+    */
+  var versionAlgorithmString: js.UndefOr[String] = js.undefined
 }
 object Questionnaire {
   
@@ -184,6 +214,10 @@ object Questionnaire {
     inline def setContactVarargs(value: ContactDetail*): Self = StObject.set(x, "contact", js.Array(value*))
     
     inline def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
+    
+    inline def setCopyrightLabel(value: String): Self = StObject.set(x, "copyrightLabel", value.asInstanceOf[js.Any])
+    
+    inline def setCopyrightLabelUndefined: Self = StObject.set(x, "copyrightLabel", js.undefined)
     
     inline def setCopyrightUndefined: Self = StObject.set(x, "copyright", js.undefined)
     
@@ -269,6 +303,14 @@ object Questionnaire {
     
     inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
+    inline def setVersionAlgorithmCoding(value: Coding): Self = StObject.set(x, "versionAlgorithmCoding", value.asInstanceOf[js.Any])
+    
+    inline def setVersionAlgorithmCodingUndefined: Self = StObject.set(x, "versionAlgorithmCoding", js.undefined)
+    
+    inline def setVersionAlgorithmString(value: String): Self = StObject.set(x, "versionAlgorithmString", value.asInstanceOf[js.Any])
+    
+    inline def setVersionAlgorithmStringUndefined: Self = StObject.set(x, "versionAlgorithmString", js.undefined)
+    
     inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     
     inline def set_approvalDate(value: Element): Self = StObject.set(x, "_approvalDate", value.asInstanceOf[js.Any])
@@ -276,6 +318,10 @@ object Questionnaire {
     inline def set_approvalDateUndefined: Self = StObject.set(x, "_approvalDate", js.undefined)
     
     inline def set_copyright(value: Element): Self = StObject.set(x, "_copyright", value.asInstanceOf[js.Any])
+    
+    inline def set_copyrightLabel(value: Element): Self = StObject.set(x, "_copyrightLabel", value.asInstanceOf[js.Any])
+    
+    inline def set_copyrightLabelUndefined: Self = StObject.set(x, "_copyrightLabel", js.undefined)
     
     inline def set_copyrightUndefined: Self = StObject.set(x, "_copyright", js.undefined)
     
@@ -332,6 +378,10 @@ object Questionnaire {
     inline def set_urlUndefined: Self = StObject.set(x, "_url", js.undefined)
     
     inline def set_version(value: Element): Self = StObject.set(x, "_version", value.asInstanceOf[js.Any])
+    
+    inline def set_versionAlgorithmString(value: Element): Self = StObject.set(x, "_versionAlgorithmString", value.asInstanceOf[js.Any])
+    
+    inline def set_versionAlgorithmStringUndefined: Self = StObject.set(x, "_versionAlgorithmString", js.undefined)
     
     inline def set_versionUndefined: Self = StObject.set(x, "_version", js.undefined)
   }

@@ -13,7 +13,7 @@ object meshesTrailMeshMod {
   @js.native
   open class TrailMesh protected () extends Mesh {
     /**
-      * @constructor
+      * Creates a new TrailMesh.
       * @param name The value used by scene.getMeshByName() to do a lookup.
       * @param generator The mesh or transform node to generate a trail.
       * @param scene The scene to add this mesh to.
@@ -100,8 +100,6 @@ object meshesTrailMeshMod {
     
     /* private */ var _createMesh: Any = js.native
     
-    /* private */ var _diameter: Any = js.native
-    
     /* private */ var _generator: Any = js.native
     
     /* private */ var _length: Any = js.native
@@ -122,6 +120,11 @@ object meshesTrailMeshMod {
       */
     def clone(name: String, newGenerator: TransformNode): TrailMesh = js.native
     def clone(name: Unit, newGenerator: TransformNode): TrailMesh = js.native
+    
+    /**
+      * The diameter of the trail, i.e. the width of the ribbon.
+      */
+    var diameter: Double = js.native
     
     /**
       * Start trailing mesh.

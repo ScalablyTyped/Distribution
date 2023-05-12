@@ -12,7 +12,7 @@ trait OfflineStoreConfig extends StObject {
   var DataCatalogConfig: js.UndefOr[typings.awsSdk.clientsSagemakerMod.DataCatalogConfig] = js.undefined
   
   /**
-    * Set to True to disable the automatic creation of an Amazon Web Services Glue table when configuring an OfflineStore.
+    * Set to True to disable the automatic creation of an Amazon Web Services Glue table when configuring an OfflineStore. If set to False, Feature Store will name the OfflineStore Glue table following Athena's naming recommendations. The default value is False.
     */
   var DisableGlueTableCreation: js.UndefOr[Boolean] = js.undefined
   
@@ -20,6 +20,11 @@ trait OfflineStoreConfig extends StObject {
     * The Amazon Simple Storage (Amazon S3) location of OfflineStore.
     */
   var S3StorageConfig: typings.awsSdk.clientsSagemakerMod.S3StorageConfig
+  
+  /**
+    * Format for the offline store table. Supported formats are Glue (Default) and Apache Iceberg.
+    */
+  var TableFormat: js.UndefOr[typings.awsSdk.clientsSagemakerMod.TableFormat] = js.undefined
 }
 object OfflineStoreConfig {
   
@@ -40,5 +45,9 @@ object OfflineStoreConfig {
     inline def setDisableGlueTableCreationUndefined: Self = StObject.set(x, "DisableGlueTableCreation", js.undefined)
     
     inline def setS3StorageConfig(value: S3StorageConfig): Self = StObject.set(x, "S3StorageConfig", value.asInstanceOf[js.Any])
+    
+    inline def setTableFormat(value: TableFormat): Self = StObject.set(x, "TableFormat", value.asInstanceOf[js.Any])
+    
+    inline def setTableFormatUndefined: Self = StObject.set(x, "TableFormat", js.undefined)
   }
 }

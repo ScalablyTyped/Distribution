@@ -7,9 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetParametersPathOrgQueryPage extends StObject {
   
   /**
-    * Lists the codespaces associated to a specified organization.
-    *
-    * You must authenticate using an access token with the `admin:org` scope to use this endpoint.
+    * List repositories with GitHub Actions cache usage for an organization
+    * @description Lists repositories and their GitHub Actions cache usage for an organization.
+    * The data fetched using this API is refreshed approximately every 5 minutes, so values returned from this endpoint may take at least 5 minutes to get updated.
+    * You must authenticate using an access token with the `read:org` scope to use this endpoint. GitHub Apps must have the `organization_admistration:read` permission to use this endpoint.
     */
   var get: ParametersPathOrgQueryPage
 }

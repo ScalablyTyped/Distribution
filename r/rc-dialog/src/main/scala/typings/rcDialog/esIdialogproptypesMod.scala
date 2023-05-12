@@ -2,7 +2,7 @@ package typings.rcDialog
 
 import typings.rcDialog.anon.X
 import typings.rcDialog.rcDialogBooleans.`false`
-import typings.rcUtil.libPortalWrapperMod.GetContainer
+import typings.rcUtil.esPortalWrapperMod.GetContainer
 import typings.react.mod.CSSProperties
 import typings.react.mod.ReactNode
 import typings.react.mod.SyntheticEvent
@@ -19,6 +19,8 @@ object esIdialogproptypesMod {
   trait IDialogPropTypes extends StObject {
     
     var afterClose: js.UndefOr[js.Function0[Any]] = js.undefined
+    
+    var afterOpenChange: js.UndefOr[js.Function1[/* open */ Boolean, Unit]] = js.undefined
     
     var animation: js.UndefOr[Any] = js.undefined
     
@@ -101,6 +103,10 @@ object esIdialogproptypesMod {
       inline def setAfterClose(value: () => Any): Self = StObject.set(x, "afterClose", js.Any.fromFunction0(value))
       
       inline def setAfterCloseUndefined: Self = StObject.set(x, "afterClose", js.undefined)
+      
+      inline def setAfterOpenChange(value: /* open */ Boolean => Unit): Self = StObject.set(x, "afterOpenChange", js.Any.fromFunction1(value))
+      
+      inline def setAfterOpenChangeUndefined: Self = StObject.set(x, "afterOpenChange", js.undefined)
       
       inline def setAnimation(value: Any): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       

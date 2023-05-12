@@ -42,9 +42,9 @@ inline def getStorage(app: FirebaseApp, bucketUrl: String): FirebaseStorage = (^
 inline def getStream(ref: StorageReference): ReadableStream = ^.asInstanceOf[js.Dynamic].applyDynamic("getStream")(ref.asInstanceOf[js.Any]).asInstanceOf[ReadableStream]
 inline def getStream(ref: StorageReference, maxDownloadSizeBytes: Double): ReadableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("getStream")(ref.asInstanceOf[js.Any], maxDownloadSizeBytes.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
 
-inline def invalidArgument(message: String): StorageError2 = ^.asInstanceOf[js.Dynamic].applyDynamic("_invalidArgument")(message.asInstanceOf[js.Any]).asInstanceOf[StorageError2]
+inline def invalidArgument(message: String): StorageError = ^.asInstanceOf[js.Dynamic].applyDynamic("_invalidArgument")(message.asInstanceOf[js.Any]).asInstanceOf[StorageError]
 
-inline def invalidRootOperation(name: String): StorageError2 = ^.asInstanceOf[js.Dynamic].applyDynamic("_invalidRootOperation")(name.asInstanceOf[js.Any]).asInstanceOf[StorageError2]
+inline def invalidRootOperation(name: String): StorageError = ^.asInstanceOf[js.Dynamic].applyDynamic("_invalidRootOperation")(name.asInstanceOf[js.Any]).asInstanceOf[StorageError]
 
 inline def list(ref: StorageReference): js.Promise[ListResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(ref.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ListResult]]
 inline def list(ref: StorageReference, options: ListOptions): js.Promise[ListResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(ref.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ListResult]]
@@ -89,13 +89,13 @@ type ConnectionType = String | js.typedarray.ArrayBuffer | Blob | ReadableStream
   * A function that is called with a `StorageError`
   * if the event stream ends due to an error.
   */
-type ErrorFn = js.Function1[/* error */ StorageError2, Unit]
+type ErrorFn = js.Function1[/* error */ StorageError, Unit]
 
 /** A function to handle an error. */
 type ErrorHandler = js.Function2[
 /* connection */ Connection[ConnectionType], 
-/* response */ StorageError2, 
-StorageError2]
+/* response */ StorageError, 
+StorageError]
 
 /** Network headers */
 type Headers2 = Record[String, String]

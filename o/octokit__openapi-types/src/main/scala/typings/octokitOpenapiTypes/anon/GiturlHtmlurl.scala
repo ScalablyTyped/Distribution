@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GiturlHtmlurl extends StObject {
   
-  var _links: js.UndefOr[Self] = js.undefined
+  var _links: js.UndefOr[GitHtml] = js.undefined
   
   var download_url: js.UndefOr[String] = js.undefined
   
@@ -72,7 +72,7 @@ object GiturlHtmlurl {
     
     inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
-    inline def set_links(value: typings.octokitOpenapiTypes.anon.Self): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+    inline def set_links(value: GitHtml): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
     
     inline def set_linksUndefined: Self = StObject.set(x, "_links", js.undefined)
   }

@@ -8,7 +8,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** A ColumnDescriptor specifies what module attribute to show in a column of the ModulesView, how to format it,
+/** A `ColumnDescriptor` specifies what module attribute to show in a column of the modules view, how to format it,
 		and what the column's label should be.
 		It is only used if the underlying UI actually supports this level of customization.
 	*/

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "canvas-color-tracker"
-version := "1.1.6-20815a"
+version := "1.2.1-df0e78"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

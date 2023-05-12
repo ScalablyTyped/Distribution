@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait HTMLElementEventMap
   extends StObject
      with ElementEventMap
-     with DocumentAndElementEventHandlersEventMap
      with GlobalEventHandlersEventMap
 object HTMLElementEventMap {
   

@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.twilio.twilioStrings.character
+  - typings.twilio.twilioStrings.characters
   - typings.twilio.twilioStrings.`spell-out`
   - typings.twilio.twilioStrings.cardinal
   - typings.twilio.twilioStrings.number
@@ -26,7 +26,7 @@ object SsmlSayAsInterpretAs {
   
   inline def cardinal: typings.twilio.twilioStrings.cardinal = "cardinal".asInstanceOf[typings.twilio.twilioStrings.cardinal]
   
-  inline def character: typings.twilio.twilioStrings.character = "character".asInstanceOf[typings.twilio.twilioStrings.character]
+  inline def characters: typings.twilio.twilioStrings.characters = "characters".asInstanceOf[typings.twilio.twilioStrings.characters]
   
   inline def date: typings.twilio.twilioStrings.date = "date".asInstanceOf[typings.twilio.twilioStrings.date]
   

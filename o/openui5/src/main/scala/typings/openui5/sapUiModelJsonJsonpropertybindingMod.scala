@@ -11,6 +11,8 @@ object sapUiModelJsonJsonpropertybindingMod {
   open class default protected ()
     extends typings.openui5.sapUiModelClientPropertyBindingMod.default {
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Creates a new JSONListBinding.
       *
       * This constructor should only be called by subclasses or model implementations, not by application or

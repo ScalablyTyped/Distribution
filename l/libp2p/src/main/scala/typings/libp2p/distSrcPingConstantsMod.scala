@@ -6,6 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distSrcPingConstantsMod {
   
+  @JSImport("libp2p/dist/src/ping/constants", "MAX_INBOUND_STREAMS")
+  @js.native
+  val MAX_INBOUND_STREAMS: /* 2 */ Double = js.native
+  
+  @JSImport("libp2p/dist/src/ping/constants", "MAX_OUTBOUND_STREAMS")
+  @js.native
+  val MAX_OUTBOUND_STREAMS: /* 1 */ Double = js.native
+  
   @JSImport("libp2p/dist/src/ping/constants", "PING_LENGTH")
   @js.native
   val PING_LENGTH: /* 32 */ Double = js.native
@@ -18,7 +26,15 @@ object distSrcPingConstantsMod {
   @js.native
   val PROTOCOL_NAME: /* "ping" */ String = js.native
   
+  @JSImport("libp2p/dist/src/ping/constants", "PROTOCOL_PREFIX")
+  @js.native
+  val PROTOCOL_PREFIX: /* "ipfs" */ String = js.native
+  
   @JSImport("libp2p/dist/src/ping/constants", "PROTOCOL_VERSION")
   @js.native
   val PROTOCOL_VERSION: /* "1.0.0" */ String = js.native
+  
+  @JSImport("libp2p/dist/src/ping/constants", "TIMEOUT")
+  @js.native
+  val TIMEOUT: /* 10000 */ Double = js.native
 }

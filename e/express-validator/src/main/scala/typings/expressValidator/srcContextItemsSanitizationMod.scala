@@ -20,6 +20,30 @@ object srcContextItemsSanitizationMod {
     def this(sanitizer: StandardSanitizer, custom: Boolean) = this()
     def this(sanitizer: CustomSanitizer, custom: Boolean, options: js.Array[Any]) = this()
     def this(sanitizer: StandardSanitizer, custom: Boolean, options: js.Array[Any]) = this()
+    def this(
+      sanitizer: CustomSanitizer,
+      custom: Boolean,
+      options: js.Array[Any],
+      stringify: js.Function1[/* value */ Any, String]
+    ) = this()
+    def this(
+      sanitizer: CustomSanitizer,
+      custom: Boolean,
+      options: Unit,
+      stringify: js.Function1[/* value */ Any, String]
+    ) = this()
+    def this(
+      sanitizer: StandardSanitizer,
+      custom: Boolean,
+      options: js.Array[Any],
+      stringify: js.Function1[/* value */ Any, String]
+    ) = this()
+    def this(
+      sanitizer: StandardSanitizer,
+      custom: Boolean,
+      options: Unit,
+      stringify: js.Function1[/* value */ Any, String]
+    ) = this()
     
     /* private */ val custom: Any = js.native
     
@@ -29,5 +53,7 @@ object srcContextItemsSanitizationMod {
     override def run(context: Context, value: Any, meta: Meta): js.Promise[Unit] = js.native
     
     /* private */ val sanitizer: Any = js.native
+    
+    /* private */ val stringify: Any = js.native
   }
 }

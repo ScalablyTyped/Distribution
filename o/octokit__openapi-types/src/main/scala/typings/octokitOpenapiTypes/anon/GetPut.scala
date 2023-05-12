@@ -6,32 +6,32 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GetPut extends StObject {
   
-  /**
-    * Gets the GitHub Actions permissions policy for organizations and allowed actions and reusable workflows in an enterprise.
-    *
-    * You must authenticate using an access token with the `admin:enterprise` scope to use this endpoint.
-    */
-  var get: Responses200Content15
+  /** Unstar a gist */
+  var delete: Responses304403404
+  
+  /** Check if a gist is starred */
+  var get: Responses404ContentApplicationjsonRecord
   
   /**
-    * Sets the GitHub Actions permissions policy for organizations and allowed actions and reusable workflows in an enterprise.
-    *
-    * You must authenticate using an access token with the `admin:enterprise` scope to use this endpoint.
+    * Star a gist
+    * @description Note that you'll need to set `Content-Length` to zero when calling out to this endpoint. For more information, see "[HTTP verbs](https://docs.github.com/rest/overview/resources-in-the-rest-api#http-verbs)."
     */
-  var put: RequestBodyContentApplicationjsonAllowedactions
+  var put: Responses304403404
 }
 object GetPut {
   
-  inline def apply(get: Responses200Content15, put: RequestBodyContentApplicationjsonAllowedactions): GetPut = {
-    val __obj = js.Dynamic.literal(get = get.asInstanceOf[js.Any], put = put.asInstanceOf[js.Any])
+  inline def apply(delete: Responses304403404, get: Responses404ContentApplicationjsonRecord, put: Responses304403404): GetPut = {
+    val __obj = js.Dynamic.literal(delete = delete.asInstanceOf[js.Any], get = get.asInstanceOf[js.Any], put = put.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetPut]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: GetPut] (val x: Self) extends AnyVal {
     
-    inline def setGet(value: Responses200Content15): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
+    inline def setDelete(value: Responses304403404): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
     
-    inline def setPut(value: RequestBodyContentApplicationjsonAllowedactions): Self = StObject.set(x, "put", value.asInstanceOf[js.Any])
+    inline def setGet(value: Responses404ContentApplicationjsonRecord): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
+    
+    inline def setPut(value: Responses304403404): Self = StObject.set(x, "put", value.asInstanceOf[js.Any])
   }
 }

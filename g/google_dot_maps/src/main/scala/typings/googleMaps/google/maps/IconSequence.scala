@@ -4,12 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Describes how icons are to be rendered on a line. <br><br> If your polyline
-  * is geodesic, then the distances specified for both offset and repeat are
-  * calculated in meters by default. Setting either offset or repeat to a pixel
-  * value will cause the distances to be calculated in pixels on the screen.
-  */
 trait IconSequence extends StObject {
   
   /**
@@ -24,7 +18,7 @@ trait IconSequence extends StObject {
   /**
     * The icon to render on the line.
     */
-  var icon: js.UndefOr[Symbol | Null] = js.undefined
+  var icon: js.UndefOr[Null | Symbol] = js.undefined
   
   /**
     * The distance from the start of the line at which an icon is to be

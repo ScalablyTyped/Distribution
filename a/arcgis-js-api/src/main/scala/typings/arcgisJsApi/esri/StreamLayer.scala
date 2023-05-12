@@ -206,6 +206,20 @@ trait StreamLayer
   var screenSizePerspectiveEnabled: Boolean = js.native
   
   /**
+    * Sends client-side only messages.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#sendMessageToClient)
+    */
+  def sendMessageToClient(message: Any): scala.Unit = js.native
+  
+  /**
+    * Sends a message over the websocket to the server.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#sendMessageToSocket)
+    */
+  def sendMessageToSocket(message: Any): scala.Unit = js.native
+  
+  /**
     * The [stream service's metadata JSON](https://developers.arcgis.com/rest/services-reference/stream-service.htm) exposed by the ArcGIS REST API.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#sourceJSON)

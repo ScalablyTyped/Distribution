@@ -2,6 +2,7 @@ package typings.three
 
 import typings.three.anon.Enabled
 import typings.three.srcCoreBufferGeometryMod.BufferGeometry
+import typings.three.srcCoreBufferGeometryMod.NormalBufferAttributes
 import typings.three.srcCoreEventDispatcherMod.Event
 import typings.three.srcMaterialsMaterialMod.Material
 import typings.three.srcThreeMod.Object3D
@@ -15,14 +16,21 @@ object examplesJsmAnimationCcdiksolverMod {
   @JSImport("three/examples/jsm/animation/CCDIKSolver", "CCDIKHelper")
   @js.native
   open class CCDIKHelper protected () extends Object3D[Event] {
-    def this(mesh: SkinnedMesh[BufferGeometry, Material | js.Array[Material]]) = this()
-    def this(mesh: SkinnedMesh[BufferGeometry, Material | js.Array[Material]], iks: js.Array[IKS]) = this()
+    def this(mesh: SkinnedMesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]]) = this()
     def this(
-      mesh: SkinnedMesh[BufferGeometry, Material | js.Array[Material]],
+      mesh: SkinnedMesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]],
+      iks: js.Array[IKS]
+    ) = this()
+    def this(
+      mesh: SkinnedMesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]],
       iks: js.Array[IKS],
       sphereSize: Double
     ) = this()
-    def this(mesh: SkinnedMesh[BufferGeometry, Material | js.Array[Material]], iks: Unit, sphereSize: Double) = this()
+    def this(
+      mesh: SkinnedMesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]],
+      iks: Unit,
+      sphereSize: Double
+    ) = this()
     
     def dispose(): Unit = js.native
   }
@@ -30,7 +38,10 @@ object examplesJsmAnimationCcdiksolverMod {
   @JSImport("three/examples/jsm/animation/CCDIKSolver", "CCDIKSolver")
   @js.native
   open class CCDIKSolver protected () extends StObject {
-    def this(mesh: SkinnedMesh[BufferGeometry, Material | js.Array[Material]], iks: js.Array[IKS]) = this()
+    def this(
+      mesh: SkinnedMesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]],
+      iks: js.Array[IKS]
+    ) = this()
     
     def createHelper(): CCDIKHelper = js.native
     
@@ -45,16 +56,25 @@ object examplesJsmAnimationCcdiksolverMod {
     
     var iteration: Double
     
-    var links: Enabled
+    var links: js.Array[Enabled]
     
     var maxAngle: Double
+    
+    var minAngle: Double
     
     var target: Double
   }
   object IKS {
     
-    inline def apply(effector: Double, iteration: Double, links: Enabled, maxAngle: Double, target: Double): IKS = {
-      val __obj = js.Dynamic.literal(effector = effector.asInstanceOf[js.Any], iteration = iteration.asInstanceOf[js.Any], links = links.asInstanceOf[js.Any], maxAngle = maxAngle.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
+    inline def apply(
+      effector: Double,
+      iteration: Double,
+      links: js.Array[Enabled],
+      maxAngle: Double,
+      minAngle: Double,
+      target: Double
+    ): IKS = {
+      val __obj = js.Dynamic.literal(effector = effector.asInstanceOf[js.Any], iteration = iteration.asInstanceOf[js.Any], links = links.asInstanceOf[js.Any], maxAngle = maxAngle.asInstanceOf[js.Any], minAngle = minAngle.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
       __obj.asInstanceOf[IKS]
     }
     
@@ -65,9 +85,13 @@ object examplesJsmAnimationCcdiksolverMod {
       
       inline def setIteration(value: Double): Self = StObject.set(x, "iteration", value.asInstanceOf[js.Any])
       
-      inline def setLinks(value: Enabled): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
+      inline def setLinks(value: js.Array[Enabled]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
+      
+      inline def setLinksVarargs(value: Enabled*): Self = StObject.set(x, "links", js.Array(value*))
       
       inline def setMaxAngle(value: Double): Self = StObject.set(x, "maxAngle", value.asInstanceOf[js.Any])
+      
+      inline def setMinAngle(value: Double): Self = StObject.set(x, "minAngle", value.asInstanceOf[js.Any])
       
       inline def setTarget(value: Double): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     }

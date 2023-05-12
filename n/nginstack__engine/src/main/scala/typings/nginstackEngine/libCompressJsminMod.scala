@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object libCompressJsminMod {
   
-  inline def apply(input: String): String = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def apply(input: String, opt_options: Comment): String = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], opt_options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(input: String): Any = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def apply(input: String, opt_options: Comment): Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], opt_options.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   @JSImport("@nginstack/engine/lib/compress/jsmin", JSImport.Namespace)
   @js.native

@@ -1,5 +1,7 @@
 package typings.pixiSettings
 
+import typings.pixiSettings.anon.FnCall
+import typings.pixiSettings.anon.FnCallTypeListenerOptions
 import typings.pixiSettings.anon.Quality
 import typings.pixiSettings.libIcanvasrenderingcontext2dMod.ICanvasRenderingContext2D
 import typings.pixiSettings.pixiSettingsStrings.`2d`
@@ -8,11 +10,8 @@ import typings.pixiSettings.pixiSettingsStrings.`experimental-webgl`
 import typings.pixiSettings.pixiSettingsStrings.bitmaprenderer
 import typings.pixiSettings.pixiSettingsStrings.webgl
 import typings.pixiSettings.pixiSettingsStrings.webgl2
-import typings.std.AddEventListenerOptions
 import typings.std.Blob
 import typings.std.Event
-import typings.std.EventListenerOptions
-import typings.std.EventListenerOrEventListenerObject
 import typings.std.HTMLElement
 import typings.std.ImageBitmapRenderingContext
 import typings.std.ImageBitmapRenderingContextSettings
@@ -59,27 +58,24 @@ object libIcanvasMod {
     
     /**
       * Adds the listener for the specified event.
+      * @method
       * @param {string} type - The type of event to listen for.
       * @param {EventListenerOrEventListenerObject} listener - The callback to invoke when the event is fired.
       * @param {boolean | AddEventListenerOptions} options - The options for adding event listener.
+      * @returns {void}
       */
-    var addEventListener: js.UndefOr[
-        js.Function3[
-          /* type */ String, 
-          /* listener */ EventListenerOrEventListenerObject, 
-          /* options */ js.UndefOr[Boolean | AddEventListenerOptions], 
-          Unit
-        ]
-      ] = js.native
+    var addEventListener: js.UndefOr[FnCall] = js.native
     
     /**
       * Get the content of the canvas as Blob.
-      * @param {object} options - The options for creating Blob.
-      * @param {string} options.type
-      *     - The MIME type for the image format to return. If not specify, the default value is image/png.
-      * @param {string} options.quality
-      *     - The image quality to be used when creating images using file formats that support lossy compression.
-      * @returns {Promise<Blob>} The content of the canvas as Blob.
+      * @param {object} [options] - The options for creating Blob.
+      * @param {string} [options.type] - A string indicating the image format. The default type is `image/png`;
+      *      that type is also used if the given type isn't supported.
+      * @param {string} [options.quality] - A number between 0 and 1 indicating the image quality to be used when
+      *      creating images using file formats that support lossy compression (such as `image/jpeg` or `image/webp`).
+      *      A user agent will use its default quality value if this option is not specified, or if the number
+      *      is outside the allowed range.
+      * @returns {Promise<Blob>} A `Promise` returning a Blob object representing the image contained in the canvas.
       */
     var convertToBlob: js.UndefOr[js.Function1[/* options */ js.UndefOr[Quality], js.Promise[Blob]]] = js.native
     
@@ -126,30 +122,50 @@ object libIcanvasMod {
     
     /**
       * Removes the listener for the specified event.
+      * @method
       * @param {string} type - The type of event to listen for.
       * @param {EventListenerOrEventListenerObject} listener - The callback to invoke when the event is fired.
       * @param {boolean | EventListenerOptions} options - The options for removing event listener.
+      * @returns {void}
       */
-    var removeEventListener: js.UndefOr[
-        js.Function3[
-          /* type */ String, 
-          /* listener */ EventListenerOrEventListenerObject, 
-          /* options */ js.UndefOr[Boolean | EventListenerOptions], 
-          Unit
-        ]
-      ] = js.native
+    var removeEventListener: js.UndefOr[FnCallTypeListenerOptions] = js.native
     
     /** Style of the canvas. */
     val style: js.UndefOr[ICanvasStyle] = js.native
     
     /**
+      * Creates a Blob from the content of the canvas.
+      * @param {(blob: Blob | null) => void} callback - A callback function with the resulting `Blob` object
+      *      as a single argument. `null` may be passed if the image cannot be created for any reason.
+      * @param {string} [type] - A string indicating the image format. The default type is `image/png`;
+      *      that type is also used if the given type isn't supported.
+      * @param {string} [quality] - A number between 0 and 1 indicating the image quality to be used when
+      *      creating images using file formats that support lossy compression (such as `image/jpeg` or `image/webp`).
+      *      A user agent will use its default quality value if this option is not specified, or if the number
+      *      is outside the allowed range.
+      * @returns {void}
+      */
+    var toBlob: js.UndefOr[
+        js.Function3[
+          /* callback */ js.Function1[/* blob */ Blob | Null, Unit], 
+          /* type */ js.UndefOr[String], 
+          /* quality */ js.UndefOr[Double], 
+          Unit
+        ]
+      ] = js.native
+    
+    /**
       * Get the content of the canvas as data URL.
-      * @param {string} type - The MIME type for the image format to return. If not specify, the default value is image/png.
-      * @param {any} options - The options for creating data URL.
-      * @returns {string} The content of the canvas as data URL.
+      * @param {string} [type] - A string indicating the image format. The default type is `image/png`;
+      *      that type is also used if the given type isn't supported.
+      * @param {string} [quality] - A number between 0 and 1 indicating the image quality to be used when
+      *      creating images using file formats that support lossy compression (such as `image/jpeg` or `image/webp`).
+      *      A user agent will use its default quality value if this option is not specified, or if the number
+      *      is outside the allowed range.
+      * @returns {string} A string containing the requested data URL.
       */
     var toDataURL: js.UndefOr[
-        js.Function2[/* type */ js.UndefOr[String], /* options */ js.UndefOr[Any], String]
+        js.Function2[/* type */ js.UndefOr[String], /* quality */ js.UndefOr[Double], String]
       ] = js.native
     
     /** Width of the canvas. */

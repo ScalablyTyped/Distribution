@@ -1,5 +1,7 @@
 package typings.three
 
+import typings.three.srcCamerasCameraMod.Camera
+import typings.three.srcLightsLightShadowMod.LightShadow
 import typings.three.srcRenderersWebGLRendererMod.Renderer
 import typings.three.srcThreeMod.Light
 import org.scalablytyped.runtime.StObject
@@ -11,7 +13,7 @@ object examplesJsmUtilsShadowMapViewerMod {
   @JSImport("three/examples/jsm/utils/ShadowMapViewer", "ShadowMapViewer")
   @js.native
   open class ShadowMapViewer protected () extends StObject {
-    def this(light: Light) = this()
+    def this(light: Light[js.UndefOr[LightShadow[Camera]]]) = this()
     
     var enabled: Boolean = js.native
     

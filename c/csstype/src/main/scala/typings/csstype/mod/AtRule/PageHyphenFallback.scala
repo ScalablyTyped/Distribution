@@ -12,6 +12,8 @@ trait PageHyphenFallback[TLength, TTime] extends StObject {
   
   var marks: js.UndefOr[Marks | js.Array[NonNullable[js.UndefOr[Marks]]]] = js.undefined
   
+  var `page-orientation`: js.UndefOr[PageOrientation | js.Array[NonNullable[js.UndefOr[PageOrientation]]]] = js.undefined
+  
   var size: js.UndefOr[Size[TLength] | js.Array[NonNullable[js.UndefOr[Size[TLength]]]]] = js.undefined
 }
 object PageHyphenFallback {
@@ -35,6 +37,12 @@ object PageHyphenFallback {
     inline def setMarksUndefined: Self = StObject.set(x, "marks", js.undefined)
     
     inline def setMarksVarargs(value: NonNullable[js.UndefOr[Marks]]*): Self = StObject.set(x, "marks", js.Array(value*))
+    
+    inline def `setPage-orientation`(value: PageOrientation | js.Array[NonNullable[js.UndefOr[PageOrientation]]]): Self = StObject.set(x, "page-orientation", value.asInstanceOf[js.Any])
+    
+    inline def `setPage-orientationUndefined`: Self = StObject.set(x, "page-orientation", js.undefined)
+    
+    inline def `setPage-orientationVarargs`(value: NonNullable[js.UndefOr[PageOrientation]]*): Self = StObject.set(x, "page-orientation", js.Array(value*))
     
     inline def setSize(value: Size[TLength] | js.Array[NonNullable[js.UndefOr[Size[TLength]]]]): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     

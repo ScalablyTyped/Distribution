@@ -4,6 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+	 * Linter options.
+	 */
 trait LinterOptions extends StObject {
   
   var allowEmptyInput: js.UndefOr[Boolean] = js.undefined
@@ -27,9 +30,9 @@ trait LinterOptions extends StObject {
   var customSyntax: js.UndefOr[CustomSyntax] = js.undefined
   
   /**
-  			 * The working directory to resolve files from. Defaults to the
-  			 * current working directory.
-  			 */
+  		 * The working directory to resolve files from. Defaults to the
+  		 * current working directory.
+  		 */
   var cwd: js.UndefOr[String] = js.undefined
   
   var disableDefaultIgnores: js.UndefOr[Boolean] = js.undefined
@@ -54,14 +57,13 @@ trait LinterOptions extends StObject {
   
   var quiet: js.UndefOr[Boolean] = js.undefined
   
+  var quietDeprecationWarnings: js.UndefOr[Boolean] = js.undefined
+  
   var reportDescriptionlessDisables: js.UndefOr[Boolean] = js.undefined
   
   var reportInvalidScopeDisables: js.UndefOr[Boolean] = js.undefined
   
   var reportNeedlessDisables: js.UndefOr[Boolean] = js.undefined
-  
-  /** @deprecated Use `customSyntax` instead. Using this option will result in an error. */
-  var syntax: js.UndefOr[String] = js.undefined
 }
 object LinterOptions {
   
@@ -165,6 +167,10 @@ object LinterOptions {
     
     inline def setQuiet(value: Boolean): Self = StObject.set(x, "quiet", value.asInstanceOf[js.Any])
     
+    inline def setQuietDeprecationWarnings(value: Boolean): Self = StObject.set(x, "quietDeprecationWarnings", value.asInstanceOf[js.Any])
+    
+    inline def setQuietDeprecationWarningsUndefined: Self = StObject.set(x, "quietDeprecationWarnings", js.undefined)
+    
     inline def setQuietUndefined: Self = StObject.set(x, "quiet", js.undefined)
     
     inline def setReportDescriptionlessDisables(value: Boolean): Self = StObject.set(x, "reportDescriptionlessDisables", value.asInstanceOf[js.Any])
@@ -178,9 +184,5 @@ object LinterOptions {
     inline def setReportNeedlessDisables(value: Boolean): Self = StObject.set(x, "reportNeedlessDisables", value.asInstanceOf[js.Any])
     
     inline def setReportNeedlessDisablesUndefined: Self = StObject.set(x, "reportNeedlessDisables", js.undefined)
-    
-    inline def setSyntax(value: String): Self = StObject.set(x, "syntax", value.asInstanceOf[js.Any])
-    
-    inline def setSyntaxUndefined: Self = StObject.set(x, "syntax", js.undefined)
   }
 }

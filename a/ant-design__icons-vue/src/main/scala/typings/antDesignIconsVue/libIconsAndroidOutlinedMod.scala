@@ -16,7 +16,7 @@ object libIconsAndroidOutlinedMod extends Shortcut {
   @js.native
   trait AndroidOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_AndroidOutlinedIconType: String = js.native

@@ -11,28 +11,24 @@ object chromeLauncherStrings {
   sealed trait ERR_LAUNCHER_INVALID_USER_DATA_DIRECTORY
     extends StObject
        with LaunchErrorCodes
-       with typings.chromeLauncher.distSrcUtilsMod.LaunchErrorCodes
   inline def ERR_LAUNCHER_INVALID_USER_DATA_DIRECTORY: ERR_LAUNCHER_INVALID_USER_DATA_DIRECTORY = "ERR_LAUNCHER_INVALID_USER_DATA_DIRECTORY".asInstanceOf[ERR_LAUNCHER_INVALID_USER_DATA_DIRECTORY]
   
   @js.native
   sealed trait ERR_LAUNCHER_NOT_INSTALLED
     extends StObject
        with LaunchErrorCodes
-       with typings.chromeLauncher.distSrcUtilsMod.LaunchErrorCodes
   inline def ERR_LAUNCHER_NOT_INSTALLED: ERR_LAUNCHER_NOT_INSTALLED = "ERR_LAUNCHER_NOT_INSTALLED".asInstanceOf[ERR_LAUNCHER_NOT_INSTALLED]
   
   @js.native
   sealed trait ERR_LAUNCHER_PATH_NOT_SET
     extends StObject
        with LaunchErrorCodes
-       with typings.chromeLauncher.distSrcUtilsMod.LaunchErrorCodes
   inline def ERR_LAUNCHER_PATH_NOT_SET: ERR_LAUNCHER_PATH_NOT_SET = "ERR_LAUNCHER_PATH_NOT_SET".asInstanceOf[ERR_LAUNCHER_PATH_NOT_SET]
   
   @js.native
   sealed trait ERR_LAUNCHER_UNSUPPORTED_PLATFORM
     extends StObject
        with LaunchErrorCodes
-       with typings.chromeLauncher.distSrcUtilsMod.LaunchErrorCodes
   inline def ERR_LAUNCHER_UNSUPPORTED_PLATFORM: ERR_LAUNCHER_UNSUPPORTED_PLATFORM = "ERR_LAUNCHER_UNSUPPORTED_PLATFORM".asInstanceOf[ERR_LAUNCHER_UNSUPPORTED_PLATFORM]
   
   @js.native
@@ -90,6 +86,10 @@ object chromeLauncherStrings {
   @js.native
   sealed trait verbose extends StObject
   inline def verbose: verbose = "verbose".asInstanceOf[verbose]
+  
+  @js.native
+  sealed trait warn extends StObject
+  inline def warn: warn = "warn".asInstanceOf[warn]
   
   @js.native
   sealed trait win32 extends StObject

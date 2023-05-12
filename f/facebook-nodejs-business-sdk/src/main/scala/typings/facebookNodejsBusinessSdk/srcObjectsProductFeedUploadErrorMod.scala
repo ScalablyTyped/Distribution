@@ -1,5 +1,6 @@
 package typings.facebookNodejsBusinessSdk
 
+import typings.facebookNodejsBusinessSdk.facebookNodejsBusinessSdkBooleans.`false`
 import typings.facebookNodejsBusinessSdk.srcAbstractCrudObjectMod.AbstractCrudObject
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -18,14 +19,30 @@ object srcObjectsProductFeedUploadErrorMod {
     def get(fields: js.Array[String]): js.Promise[ProductFeedUploadError] = js.native
     def get(fields: js.Array[String], params: Record[String, Any]): js.Promise[ProductFeedUploadError] = js.native
     
-    def getSamples(fields: js.Array[String]): typings.facebookNodejsBusinessSdk.srcCursorMod.default = js.native
-    def getSamples(fields: js.Array[String], params: Unit, fetchFirstPage: Boolean): typings.facebookNodejsBusinessSdk.srcCursorMod.default = js.native
-    def getSamples(fields: js.Array[String], params: Record[String, Any]): typings.facebookNodejsBusinessSdk.srcCursorMod.default = js.native
-    def getSamples(fields: js.Array[String], params: Record[String, Any], fetchFirstPage: Boolean): typings.facebookNodejsBusinessSdk.srcCursorMod.default = js.native
+    def getSamples(fields: js.Array[String]): typings.facebookNodejsBusinessSdk.srcCursorMod.default | js.Promise[typings.facebookNodejsBusinessSdk.srcCursorMod.default] = js.native
+    def getSamples(fields: js.Array[String], params: Unit, fetchFirstPage: Boolean): typings.facebookNodejsBusinessSdk.srcCursorMod.default | js.Promise[typings.facebookNodejsBusinessSdk.srcCursorMod.default] = js.native
+    def getSamples(fields: js.Array[String], params: Record[String, Any]): typings.facebookNodejsBusinessSdk.srcCursorMod.default | js.Promise[typings.facebookNodejsBusinessSdk.srcCursorMod.default] = js.native
+    def getSamples(fields: js.Array[String], params: Record[String, Any], fetchFirstPage: Boolean): typings.facebookNodejsBusinessSdk.srcCursorMod.default | js.Promise[typings.facebookNodejsBusinessSdk.srcCursorMod.default] = js.native
+    @JSName("getSamples")
+    def getSamples_Promise(fields: js.Array[String]): js.Promise[typings.facebookNodejsBusinessSdk.srcCursorMod.default] = js.native
+    @JSName("getSamples")
+    def getSamples_Promise(fields: js.Array[String], params: Record[String, Any]): js.Promise[typings.facebookNodejsBusinessSdk.srcCursorMod.default] = js.native
+    @JSName("getSamples")
+    def getSamples_false(fields: js.Array[String], params: Unit, fetchFirstPage: `false`): typings.facebookNodejsBusinessSdk.srcCursorMod.default = js.native
+    @JSName("getSamples")
+    def getSamples_false(fields: js.Array[String], params: Record[String, Any], fetchFirstPage: `false`): typings.facebookNodejsBusinessSdk.srcCursorMod.default = js.native
     
-    def getSuggestedRules(fields: js.Array[String]): typings.facebookNodejsBusinessSdk.srcCursorMod.default = js.native
-    def getSuggestedRules(fields: js.Array[String], params: Unit, fetchFirstPage: Boolean): typings.facebookNodejsBusinessSdk.srcCursorMod.default = js.native
-    def getSuggestedRules(fields: js.Array[String], params: Record[String, Any]): typings.facebookNodejsBusinessSdk.srcCursorMod.default = js.native
-    def getSuggestedRules(fields: js.Array[String], params: Record[String, Any], fetchFirstPage: Boolean): typings.facebookNodejsBusinessSdk.srcCursorMod.default = js.native
+    def getSuggestedRules(fields: js.Array[String]): typings.facebookNodejsBusinessSdk.srcCursorMod.default | js.Promise[typings.facebookNodejsBusinessSdk.srcCursorMod.default] = js.native
+    def getSuggestedRules(fields: js.Array[String], params: Unit, fetchFirstPage: Boolean): typings.facebookNodejsBusinessSdk.srcCursorMod.default | js.Promise[typings.facebookNodejsBusinessSdk.srcCursorMod.default] = js.native
+    def getSuggestedRules(fields: js.Array[String], params: Record[String, Any]): typings.facebookNodejsBusinessSdk.srcCursorMod.default | js.Promise[typings.facebookNodejsBusinessSdk.srcCursorMod.default] = js.native
+    def getSuggestedRules(fields: js.Array[String], params: Record[String, Any], fetchFirstPage: Boolean): typings.facebookNodejsBusinessSdk.srcCursorMod.default | js.Promise[typings.facebookNodejsBusinessSdk.srcCursorMod.default] = js.native
+    @JSName("getSuggestedRules")
+    def getSuggestedRules_Promise(fields: js.Array[String]): js.Promise[typings.facebookNodejsBusinessSdk.srcCursorMod.default] = js.native
+    @JSName("getSuggestedRules")
+    def getSuggestedRules_Promise(fields: js.Array[String], params: Record[String, Any]): js.Promise[typings.facebookNodejsBusinessSdk.srcCursorMod.default] = js.native
+    @JSName("getSuggestedRules")
+    def getSuggestedRules_false(fields: js.Array[String], params: Unit, fetchFirstPage: `false`): typings.facebookNodejsBusinessSdk.srcCursorMod.default = js.native
+    @JSName("getSuggestedRules")
+    def getSuggestedRules_false(fields: js.Array[String], params: Record[String, Any], fetchFirstPage: `false`): typings.facebookNodejsBusinessSdk.srcCursorMod.default = js.native
   }
 }

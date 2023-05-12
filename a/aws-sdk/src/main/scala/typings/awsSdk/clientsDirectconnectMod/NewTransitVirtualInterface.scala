@@ -42,7 +42,7 @@ trait NewTransitVirtualInterface extends StObject {
   var enableSiteLink: js.UndefOr[EnableSiteLink] = js.undefined
   
   /**
-    * The maximum transmission unit (MTU), in bytes. The supported values are 1500 and 9001. The default value is 1500.
+    * The maximum transmission unit (MTU), in bytes. The supported values are 1500 and 8500. The default value is 1500.
     */
   var mtu: js.UndefOr[MTU] = js.undefined
   

@@ -37,7 +37,7 @@ trait VideoDescription extends StObject {
   var DropFrameTimecode: js.UndefOr[typings.awsSdk.clientsMediaconvertMod.DropFrameTimecode] = js.undefined
   
   /**
-    * Applies only if you set AFD Signaling(AfdSignaling) to Fixed (FIXED). Use Fixed (FixedAfd) to specify a four-bit AFD value which the service will write on all  frames of this video output.
+    * Applies only if you set AFD Signaling(AfdSignaling) to Fixed (FIXED). Use Fixed (FixedAfd) to specify a four-bit AFD value which the service will write on all frames of this video output.
     */
   var FixedAfd: js.UndefOr[integerMin0Max15] = js.undefined
   

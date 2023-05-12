@@ -16,12 +16,14 @@ import typings.primereact.primereactStrings.copy
 import typings.primereact.primereactStrings.date
 import typings.primereact.primereactStrings.decimal
 import typings.primereact.primereactStrings.descending
+import typings.primereact.primereactStrings.determinate
 import typings.primereact.primereactStrings.dialog
 import typings.primereact.primereactStrings.email
 import typings.primereact.primereactStrings.execute
 import typings.primereact.primereactStrings.grammar
 import typings.primereact.primereactStrings.grid
 import typings.primereact.primereactStrings.horizontal
+import typings.primereact.primereactStrings.indeterminate
 import typings.primereact.primereactStrings.inherit
 import typings.primereact.primereactStrings.link
 import typings.primereact.primereactStrings.list
@@ -102,23 +104,15 @@ object progressbarProgressbarMod {
     def this(props: ProgressBarProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: ProgressBarProps, context: Any) = this()
     
+    /**
+      * Used to get container element.
+      * @return {HTMLDivElement} Container element
+      */
     def getElement(): HTMLDivElement = js.native
-  }
-  
-  /* Rewritten from type alias, can be one of: 
-    - typings.primereact.primereactStrings.determinate
-    - typings.primereact.primereactStrings.indeterminate
-  */
-  trait ProgressBarModeType extends StObject
-  object ProgressBarModeType {
-    
-    inline def determinate: typings.primereact.primereactStrings.determinate = "determinate".asInstanceOf[typings.primereact.primereactStrings.determinate]
-    
-    inline def indeterminate: typings.primereact.primereactStrings.indeterminate = "indeterminate".asInstanceOf[typings.primereact.primereactStrings.indeterminate]
   }
   
   /* Inlined parent std.Omit<react.react.DetailedHTMLProps<react.react.HTMLAttributes<std.HTMLDivElement>, std.HTMLDivElement>, 'ref'> */
@@ -230,13 +224,24 @@ object progressbarProgressbarMod {
     
     var autoCorrect: js.UndefOr[String] = js.undefined
     
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
+    
     var autoSave: js.UndefOr[String] = js.undefined
     
+    /**
+      * Used to get the child elements of the component.
+      * @readonly
+      */
     var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
+    /**
+      * Color for the background of the progress.
+      */
     var color: js.UndefOr[String] = js.undefined
+    
+    var content: js.UndefOr[String] = js.undefined
     
     var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
@@ -252,7 +257,10 @@ object progressbarProgressbarMod {
     
     var dir: js.UndefOr[String] = js.undefined
     
-    var displayValueTemplate: js.UndefOr[js.Function1[/* value */ ProgressBarValueType, ReactNode]] = js.undefined
+    /**
+      * Custom display value template
+      */
+    var displayValueTemplate: js.UndefOr[js.Function1[/* value */ js.UndefOr[String | Double | Null], ReactNode]] = js.undefined
     
     var draggable: js.UndefOr[Booleanish] = js.undefined
     
@@ -280,7 +288,11 @@ object progressbarProgressbarMod {
     
     var lang: js.UndefOr[String] = js.undefined
     
-    var mode: js.UndefOr[ProgressBarModeType] = js.undefined
+    /**
+      * Defines the mode of the progress, valid values are "determinate" and "indeterminate".
+      * @defaultValue determinate
+      */
+    var mode: js.UndefOr[determinate | indeterminate] = js.undefined
     
     var nonce: js.UndefOr[String] = js.undefined
     
@@ -452,14 +464,22 @@ object progressbarProgressbarMod {
     
     var radioGroup: js.UndefOr[String] = js.undefined
     
+    var rel: js.UndefOr[String] = js.undefined
+    
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
+    
+    var rev: js.UndefOr[String] = js.undefined
     
     var role: js.UndefOr[AriaRole] = js.undefined
     
     var security: js.UndefOr[String] = js.undefined
     
+    /**
+      * Show or hide progress bar value.
+      * @defaultValue true
+      */
     var showValue: js.UndefOr[Boolean] = js.undefined
     
     var slot: js.UndefOr[String] = js.undefined
@@ -480,11 +500,18 @@ object progressbarProgressbarMod {
     
     var typeof: js.UndefOr[String] = js.undefined
     
+    /**
+      * Unit sign appended to the value.
+      * @defaultValue %
+      */
     var unit: js.UndefOr[String] = js.undefined
     
     var unselectable: js.UndefOr[on | off] = js.undefined
     
-    var value: js.UndefOr[ProgressBarValueType] = js.undefined
+    /**
+      * Current value of the progress.
+      */
+    var value: js.UndefOr[String | Double | Null] = js.undefined
     
     var vocab: js.UndefOr[String] = js.undefined
   }
@@ -708,6 +735,10 @@ object progressbarProgressbarMod {
       
       inline def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
       
+      inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+      
+      inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+      
       inline def setAutoSave(value: String): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
       
       inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
@@ -724,9 +755,13 @@ object progressbarProgressbarMod {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
       inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
       inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
@@ -754,7 +789,7 @@ object progressbarProgressbarMod {
       
       inline def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
       
-      inline def setDisplayValueTemplate(value: /* value */ ProgressBarValueType => ReactNode): Self = StObject.set(x, "displayValueTemplate", js.Any.fromFunction1(value))
+      inline def setDisplayValueTemplate(value: /* value */ js.UndefOr[String | Double | Null] => ReactNode): Self = StObject.set(x, "displayValueTemplate", js.Any.fromFunction1(value))
       
       inline def setDisplayValueTemplateUndefined: Self = StObject.set(x, "displayValueTemplate", js.undefined)
       
@@ -812,7 +847,7 @@ object progressbarProgressbarMod {
       
       inline def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
       
-      inline def setMode(value: ProgressBarModeType): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: determinate | indeterminate): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
       inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
@@ -1156,6 +1191,10 @@ object progressbarProgressbarMod {
       
       inline def setRadioGroupUndefined: Self = StObject.set(x, "radioGroup", js.undefined)
       
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      
+      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+      
       inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
       inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
@@ -1163,6 +1202,10 @@ object progressbarProgressbarMod {
       inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+      
+      inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+      
+      inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
       
       inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
@@ -1220,7 +1263,7 @@ object progressbarProgressbarMod {
       
       inline def setUnselectableUndefined: Self = StObject.set(x, "unselectable", js.undefined)
       
-      inline def setValue(value: ProgressBarValueType): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       inline def setValueNull: Self = StObject.set(x, "value", null)
       
@@ -1231,6 +1274,4 @@ object progressbarProgressbarMod {
       inline def setVocabUndefined: Self = StObject.set(x, "vocab", js.undefined)
     }
   }
-  
-  type ProgressBarValueType = js.UndefOr[String | Double | Null]
 }

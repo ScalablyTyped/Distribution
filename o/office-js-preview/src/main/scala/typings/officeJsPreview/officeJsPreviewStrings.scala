@@ -155,8 +155,20 @@ object officeJsPreviewStrings {
   inline def ActionButtonSound: ActionButtonSound = "ActionButtonSound".asInstanceOf[ActionButtonSound]
   
   @js.native
+  sealed trait Addin extends StObject
+  inline def Addin: Addin = "Addin".asInstanceOf[Addin]
+  
+  @js.native
   sealed trait Address extends StObject
   inline def Address: Address = "Address".asInstanceOf[Address]
+  
+  @js.native
+  sealed trait AddressBlock extends StObject
+  inline def AddressBlock: AddressBlock = "AddressBlock".asInstanceOf[AddressBlock]
+  
+  @js.native
+  sealed trait Advance extends StObject
+  inline def Advance: Advance = "Advance".asInstanceOf[Advance]
   
   @js.native
   sealed trait After extends StObject
@@ -169,6 +181,10 @@ object officeJsPreviewStrings {
   @js.native
   sealed trait Aiueo extends StObject
   inline def Aiueo: Aiueo = "Aiueo".asInstanceOf[Aiueo]
+  
+  @js.native
+  sealed trait AiueoHalfWidth extends StObject
+  inline def AiueoHalfWidth: AiueoHalfWidth = "AiueoHalfWidth".asInstanceOf[AiueoHalfWidth]
   
   @js.native
   sealed trait Albers extends StObject
@@ -263,8 +279,24 @@ object officeJsPreviewStrings {
   inline def Arabic2: Arabic2 = "Arabic2".asInstanceOf[Arabic2]
   
   @js.native
+  sealed trait ArabicFullWidth extends StObject
+  inline def ArabicFullWidth: ArabicFullWidth = "ArabicFullWidth".asInstanceOf[ArabicFullWidth]
+  
+  @js.native
   sealed trait ArabicLZ extends StObject
   inline def ArabicLZ: ArabicLZ = "ArabicLZ".asInstanceOf[ArabicLZ]
+  
+  @js.native
+  sealed trait ArabicLZ2 extends StObject
+  inline def ArabicLZ2: ArabicLZ2 = "ArabicLZ2".asInstanceOf[ArabicLZ2]
+  
+  @js.native
+  sealed trait ArabicLZ3 extends StObject
+  inline def ArabicLZ3: ArabicLZ3 = "ArabicLZ3".asInstanceOf[ArabicLZ3]
+  
+  @js.native
+  sealed trait ArabicLZ4 extends StObject
+  inline def ArabicLZ4: ArabicLZ4 = "ArabicLZ4".asInstanceOf[ArabicLZ4]
   
   @js.native
   sealed trait Arc extends StObject
@@ -311,12 +343,20 @@ object officeJsPreviewStrings {
   inline def Ascending: Ascending = "Ascending".asInstanceOf[Ascending]
   
   @js.native
+  sealed trait Ask extends StObject
+  inline def Ask: Ask = "Ask".asInstanceOf[Ask]
+  
+  @js.native
   sealed trait AtBottom extends StObject
   inline def AtBottom: AtBottom = "AtBottom".asInstanceOf[AtBottom]
   
   @js.native
   sealed trait AtTop extends StObject
   inline def AtTop: AtTop = "AtTop".asInstanceOf[AtTop]
+  
+  @js.native
+  sealed trait Author extends StObject
+  inline def Author: Author = "Author".asInstanceOf[Author]
   
   @js.native
   sealed trait Auto extends StObject
@@ -337,6 +377,14 @@ object officeJsPreviewStrings {
   @js.native
   sealed trait AutoSizeTextToFitShape extends StObject
   inline def AutoSizeTextToFitShape: AutoSizeTextToFitShape = "AutoSizeTextToFitShape".asInstanceOf[AutoSizeTextToFitShape]
+  
+  @js.native
+  sealed trait AutoText extends StObject
+  inline def AutoText: AutoText = "AutoText".asInstanceOf[AutoText]
+  
+  @js.native
+  sealed trait AutoTextList extends StObject
+  inline def AutoTextList: AutoTextList = "AutoTextList".asInstanceOf[AutoTextList]
   
   @js.native
   sealed trait Automatic extends StObject
@@ -373,6 +421,10 @@ object officeJsPreviewStrings {
   @js.native
   sealed trait BarClustered extends StObject
   inline def BarClustered: BarClustered = "BarClustered".asInstanceOf[BarClustered]
+  
+  @js.native
+  sealed trait BarCode extends StObject
+  inline def BarCode: BarCode = "BarCode".asInstanceOf[BarCode]
   
   @js.native
   sealed trait BarOfPie extends StObject
@@ -429,6 +481,10 @@ object officeJsPreviewStrings {
   @js.native
   sealed trait Bibliography extends StObject
   inline def Bibliography: Bibliography = "Bibliography".asInstanceOf[Bibliography]
+  
+  @js.native
+  sealed trait BidiOutline extends StObject
+  inline def BidiOutline: BidiOutline = "BidiOutline".asInstanceOf[BidiOutline]
   
   @js.native
   sealed trait Billions extends StObject
@@ -595,6 +651,10 @@ object officeJsPreviewStrings {
   inline def Caption: Caption = "Caption".asInstanceOf[Caption]
   
   @js.native
+  sealed trait CardinalText extends StObject
+  inline def CardinalText: CardinalText = "CardinalText".asInstanceOf[CardinalText]
+  
+  @js.native
   sealed trait Cardtext extends StObject
   inline def Cardtext: Cardtext = "Cardtext".asInstanceOf[Cardtext]
   
@@ -641,6 +701,10 @@ object officeJsPreviewStrings {
   @js.native
   sealed trait Centimeters extends StObject
   inline def Centimeters: Centimeters = "Centimeters".asInstanceOf[Centimeters]
+  
+  @js.native
+  sealed trait Character extends StObject
+  inline def Character: Character = "Character".asInstanceOf[Character]
   
   @js.native
   sealed trait ChartActivated extends StObject
@@ -727,6 +791,10 @@ object officeJsPreviewStrings {
   inline def CircularArrow: CircularArrow = "CircularArrow".asInstanceOf[CircularArrow]
   
   @js.native
+  sealed trait Citation extends StObject
+  inline def Citation: Citation = "Citation".asInstanceOf[Citation]
+  
+  @js.native
   sealed trait City extends StObject
   inline def City: City = "City".asInstanceOf[City]
   
@@ -753,6 +821,10 @@ object officeJsPreviewStrings {
   @js.native
   sealed trait CoerceStringToNumberInvalid extends StObject
   inline def CoerceStringToNumberInvalid: CoerceStringToNumberInvalid = "CoerceStringToNumberInvalid".asInstanceOf[CoerceStringToNumberInvalid]
+  
+  @js.native
+  sealed trait Cold extends StObject
+  inline def Cold: Cold = "Cold".asInstanceOf[Cold]
   
   @js.native
   sealed trait Collision extends StObject
@@ -847,8 +919,16 @@ object officeJsPreviewStrings {
   inline def CommentSelected: CommentSelected = "CommentSelected".asInstanceOf[CommentSelected]
   
   @js.native
+  sealed trait Comments extends StObject
+  inline def Comments: Comments = "Comments".asInstanceOf[Comments]
+  
+  @js.native
   sealed trait Compact extends StObject
   inline def Compact: Compact = "Compact".asInstanceOf[Compact]
+  
+  @js.native
+  sealed trait Compare extends StObject
+  inline def Compare: Compare = "Compare".asInstanceOf[Compare]
   
   @js.native
   sealed trait Completed extends StObject
@@ -927,6 +1007,14 @@ object officeJsPreviewStrings {
   inline def ContentControlDeleted: ContentControlDeleted = "ContentControlDeleted".asInstanceOf[ContentControlDeleted]
   
   @js.native
+  sealed trait ContentControlEntered extends StObject
+  inline def ContentControlEntered: ContentControlEntered = "ContentControlEntered".asInstanceOf[ContentControlEntered]
+  
+  @js.native
+  sealed trait ContentControlExited extends StObject
+  inline def ContentControlExited: ContentControlExited = "ContentControlExited".asInstanceOf[ContentControlExited]
+  
+  @js.native
   sealed trait ContentControlSelectionChanged extends StObject
   inline def ContentControlSelectionChanged: ContentControlSelectionChanged = "ContentControlSelectionChanged".asInstanceOf[ContentControlSelectionChanged]
   
@@ -969,6 +1057,10 @@ object officeJsPreviewStrings {
   @js.native
   sealed trait County extends StObject
   inline def County: County = "County".asInstanceOf[County]
+  
+  @js.native
+  sealed trait CreateDate extends StObject
+  inline def CreateDate: CreateDate = "CreateDate".asInstanceOf[CreateDate]
   
   @js.native
   sealed trait CrissCross extends StObject
@@ -1171,6 +1263,10 @@ object officeJsPreviewStrings {
   inline def DataVisualizerProcessMappings: DataVisualizerProcessMappings = "DataVisualizerProcessMappings".asInstanceOf[DataVisualizerProcessMappings]
   
   @js.native
+  sealed trait Database extends StObject
+  inline def Database: Database = "Database".asInstanceOf[Database]
+  
+  @js.native
   sealed trait Date extends StObject
   inline def Date: Date = "Date".asInstanceOf[Date]
   
@@ -1255,12 +1351,24 @@ object officeJsPreviewStrings {
   inline def Disabled: Disabled = "Disabled".asInstanceOf[Disabled]
   
   @js.native
+  sealed trait DisplayBarcode extends StObject
+  inline def DisplayBarcode: DisplayBarcode = "DisplayBarcode".asInstanceOf[DisplayBarcode]
+  
+  @js.native
   sealed trait Distributed extends StObject
   inline def Distributed: Distributed = "Distributed".asInstanceOf[Distributed]
   
   @js.native
   sealed trait Div0 extends StObject
   inline def Div0: Div0 = "Div0".asInstanceOf[Div0]
+  
+  @js.native
+  sealed trait DocProperty extends StObject
+  inline def DocProperty: DocProperty = "DocProperty".asInstanceOf[DocProperty]
+  
+  @js.native
+  sealed trait DocVariable extends StObject
+  inline def DocVariable: DocVariable = "DocVariable".asInstanceOf[DocVariable]
   
   @js.native
   sealed trait Dodecagon extends StObject
@@ -1375,6 +1483,10 @@ object officeJsPreviewStrings {
   inline def Dynamic: Dynamic = "Dynamic".asInstanceOf[Dynamic]
   
   @js.native
+  sealed trait EQ extends StObject
+  inline def EQ: EQ = "EQ".asInstanceOf[EQ]
+  
+  @js.native
   sealed trait EastAsianVertical extends StObject
   inline def EastAsianVertical: EastAsianVertical = "EastAsianVertical".asInstanceOf[EastAsianVertical]
   
@@ -1395,6 +1507,10 @@ object officeJsPreviewStrings {
   inline def EdgeTop: EdgeTop = "EdgeTop".asInstanceOf[EdgeTop]
   
   @js.native
+  sealed trait EditTime extends StObject
+  inline def EditTime: EditTime = "EditTime".asInstanceOf[EditTime]
+  
+  @js.native
   sealed trait Elbow extends StObject
   inline def Elbow: Elbow = "Elbow".asInstanceOf[Elbow]
   
@@ -1413,6 +1529,10 @@ object officeJsPreviewStrings {
   @js.native
   sealed trait Ellipsis extends StObject
   inline def Ellipsis: Ellipsis = "Ellipsis".asInstanceOf[Ellipsis]
+  
+  @js.native
+  sealed trait Embedded extends StObject
+  inline def Embedded: Embedded = "Embedded".asInstanceOf[Embedded]
   
   @js.native
   sealed trait Emf extends StObject
@@ -1599,6 +1719,10 @@ object officeJsPreviewStrings {
   inline def Exponential: Exponential = "Exponential".asInstanceOf[Exponential]
   
   @js.native
+  sealed trait Expression extends StObject
+  inline def Expression: Expression = "Expression".asInstanceOf[Expression]
+  
+  @js.native
   sealed trait External extends StObject
   inline def External: External = "External".asInstanceOf[External]
   
@@ -1687,6 +1811,14 @@ object officeJsPreviewStrings {
   inline def Field: Field = "Field".asInstanceOf[Field]
   
   @js.native
+  sealed trait FileName extends StObject
+  inline def FileName: FileName = "FileName".asInstanceOf[FileName]
+  
+  @js.native
+  sealed trait FileSize extends StObject
+  inline def FileSize: FileSize = "FileSize".asInstanceOf[FileSize]
+  
+  @js.native
   sealed trait Fill extends StObject
   inline def Fill: Fill = "Fill".asInstanceOf[Fill]
   
@@ -1705,6 +1837,10 @@ object officeJsPreviewStrings {
   @js.native
   sealed trait FillFormats extends StObject
   inline def FillFormats: FillFormats = "FillFormats".asInstanceOf[FillFormats]
+  
+  @js.native
+  sealed trait FillIn extends StObject
+  inline def FillIn: FillIn = "FillIn".asInstanceOf[FillIn]
   
   @js.native
   sealed trait FillMonths extends StObject
@@ -1927,6 +2063,18 @@ object officeJsPreviewStrings {
   inline def FootnoteText: FootnoteText = "FootnoteText".asInstanceOf[FootnoteText]
   
   @js.native
+  sealed trait FormCheckbox extends StObject
+  inline def FormCheckbox: FormCheckbox = "FormCheckbox".asInstanceOf[FormCheckbox]
+  
+  @js.native
+  sealed trait FormDropdown extends StObject
+  inline def FormDropdown: FormDropdown = "FormDropdown".asInstanceOf[FormDropdown]
+  
+  @js.native
+  sealed trait FormText extends StObject
+  inline def FormText: FormText = "FormText".asInstanceOf[FormText]
+  
+  @js.native
   sealed trait Formats extends StObject
   inline def Formats: Formats = "Formats".asInstanceOf[Formats]
   
@@ -2003,6 +2151,22 @@ object officeJsPreviewStrings {
   inline def GB4: GB4 = "GB4".asInstanceOf[GB4]
   
   @js.native
+  sealed trait GBNum1 extends StObject
+  inline def GBNum1: GBNum1 = "GBNum1".asInstanceOf[GBNum1]
+  
+  @js.native
+  sealed trait GBNum2 extends StObject
+  inline def GBNum2: GBNum2 = "GBNum2".asInstanceOf[GBNum2]
+  
+  @js.native
+  sealed trait GBNum3 extends StObject
+  inline def GBNum3: GBNum3 = "GBNum3".asInstanceOf[GBNum3]
+  
+  @js.native
+  sealed trait GBNum4 extends StObject
+  inline def GBNum4: GBNum4 = "GBNum4".asInstanceOf[GBNum4]
+  
+  @js.native
   sealed trait GIF extends StObject
   inline def GIF: GIF = "GIF".asInstanceOf[GIF]
   
@@ -2039,6 +2203,10 @@ object officeJsPreviewStrings {
   inline def Gif_ : Gif_ = "Gif".asInstanceOf[Gif_]
   
   @js.native
+  sealed trait GotoButton extends StObject
+  inline def GotoButton: GotoButton = "GotoButton".asInstanceOf[GotoButton]
+  
+  @js.native
   sealed trait Gradient extends StObject
   inline def Gradient: Gradient = "Gradient".asInstanceOf[Gradient]
   
@@ -2073,6 +2241,10 @@ object officeJsPreviewStrings {
   @js.native
   sealed trait GreaterThanOrEqualTo extends StObject
   inline def GreaterThanOrEqualTo: GreaterThanOrEqualTo = "GreaterThanOrEqualTo".asInstanceOf[GreaterThanOrEqualTo]
+  
+  @js.native
+  sealed trait GreetingLine extends StObject
+  inline def GreetingLine: GreetingLine = "GreetingLine".asInstanceOf[GreetingLine]
   
   @js.native
   sealed trait Grey25 extends StObject
@@ -2303,6 +2475,22 @@ object officeJsPreviewStrings {
   inline def HalfFrame: HalfFrame = "HalfFrame".asInstanceOf[HalfFrame]
   
   @js.native
+  sealed trait Hangul extends StObject
+  inline def Hangul: Hangul = "Hangul".asInstanceOf[Hangul]
+  
+  @js.native
+  sealed trait Hanja extends StObject
+  inline def Hanja: Hanja = "Hanja".asInstanceOf[Hanja]
+  
+  @js.native
+  sealed trait HanjaRead extends StObject
+  inline def HanjaRead: HanjaRead = "HanjaRead".asInstanceOf[HanjaRead]
+  
+  @js.native
+  sealed trait HanjaReadDigit extends StObject
+  inline def HanjaReadDigit: HanjaReadDigit = "HanjaReadDigit".asInstanceOf[HanjaReadDigit]
+  
+  @js.native
   sealed trait Header extends StObject
   inline def Header: Header = "Header".asInstanceOf[Header]
   
@@ -2395,6 +2583,22 @@ object officeJsPreviewStrings {
   inline def Hindi3: Hindi3 = "Hindi3".asInstanceOf[Hindi3]
   
   @js.native
+  sealed trait HindiArabic extends StObject
+  inline def HindiArabic: HindiArabic = "HindiArabic".asInstanceOf[HindiArabic]
+  
+  @js.native
+  sealed trait HindiCardinalText extends StObject
+  inline def HindiCardinalText: HindiCardinalText = "HindiCardinalText".asInstanceOf[HindiCardinalText]
+  
+  @js.native
+  sealed trait HindiLetter1 extends StObject
+  inline def HindiLetter1: HindiLetter1 = "HindiLetter1".asInstanceOf[HindiLetter1]
+  
+  @js.native
+  sealed trait HindiLetter2 extends StObject
+  inline def HindiLetter2: HindiLetter2 = "HindiLetter2".asInstanceOf[HindiLetter2]
+  
+  @js.native
   sealed trait Histogram extends StObject
   inline def Histogram: Histogram = "Histogram".asInstanceOf[Histogram]
   
@@ -2421,6 +2625,10 @@ object officeJsPreviewStrings {
   @js.native
   sealed trait HorizontalScroll extends StObject
   inline def HorizontalScroll: HorizontalScroll = "HorizontalScroll".asInstanceOf[HorizontalScroll]
+  
+  @js.native
+  sealed trait Hot extends StObject
+  inline def Hot: Hot = "Hot".asInstanceOf[Hot]
   
   @js.native
   sealed trait Hour extends StObject
@@ -2463,8 +2671,16 @@ object officeJsPreviewStrings {
   inline def Idea: Idea = "Idea".asInstanceOf[Idea]
   
   @js.native
+  sealed trait If extends StObject
+  inline def If: If = "If".asInstanceOf[If]
+  
+  @js.native
   sealed trait Image extends StObject
   inline def Image: Image = "Image".asInstanceOf[Image]
+  
+  @js.native
+  sealed trait Import extends StObject
+  inline def Import: Import = "Import".asInstanceOf[Import]
   
   @js.native
   sealed trait Important extends StObject
@@ -2477,6 +2693,18 @@ object officeJsPreviewStrings {
   @js.native
   sealed trait Inches extends StObject
   inline def Inches: Inches = "Inches".asInstanceOf[Inches]
+  
+  @js.native
+  sealed trait Include extends StObject
+  inline def Include: Include = "Include".asInstanceOf[Include]
+  
+  @js.native
+  sealed trait IncludePicture extends StObject
+  inline def IncludePicture: IncludePicture = "IncludePicture".asInstanceOf[IncludePicture]
+  
+  @js.native
+  sealed trait IncludeText extends StObject
+  inline def IncludeText: IncludeText = "IncludeText".asInstanceOf[IncludeText]
   
   @js.native
   sealed trait Inclusive extends StObject
@@ -2493,6 +2721,10 @@ object officeJsPreviewStrings {
   @js.native
   sealed trait Index extends StObject
   inline def Index: Index = "Index".asInstanceOf[Index]
+  
+  @js.native
+  sealed trait Info extends StObject
+  inline def Info: Info = "Info".asInstanceOf[Info]
   
   @js.native
   sealed trait Information extends StObject
@@ -2555,6 +2787,10 @@ object officeJsPreviewStrings {
   inline def Iroha: Iroha = "Iroha".asInstanceOf[Iroha]
   
   @js.native
+  sealed trait IrohaHalfWidth extends StObject
+  inline def IrohaHalfWidth: IrohaHalfWidth = "IrohaHalfWidth".asInstanceOf[IrohaHalfWidth]
+  
+  @js.native
   sealed trait IrregularSeal1 extends StObject
   inline def IrregularSeal1: IrregularSeal1 = "IrregularSeal1".asInstanceOf[IrregularSeal1]
   
@@ -2569,6 +2805,10 @@ object officeJsPreviewStrings {
   @js.native
   sealed trait JPEG extends StObject
   inline def JPEG: JPEG = "JPEG".asInstanceOf[JPEG]
+  
+  @js.native
+  sealed trait JPG extends StObject
+  inline def JPG: JPG = "JPG".asInstanceOf[JPG]
   
   @js.native
   sealed trait Jpeg_ extends StObject
@@ -2587,8 +2827,28 @@ object officeJsPreviewStrings {
   inline def JustifyLow: JustifyLow = "JustifyLow".asInstanceOf[JustifyLow]
   
   @js.native
+  sealed trait Kanji extends StObject
+  inline def Kanji: Kanji = "Kanji".asInstanceOf[Kanji]
+  
+  @js.native
+  sealed trait KanjiDigit extends StObject
+  inline def KanjiDigit: KanjiDigit = "KanjiDigit".asInstanceOf[KanjiDigit]
+  
+  @js.native
+  sealed trait KanjiTraditional extends StObject
+  inline def KanjiTraditional: KanjiTraditional = "KanjiTraditional".asInstanceOf[KanjiTraditional]
+  
+  @js.native
+  sealed trait KanjiTraditional2 extends StObject
+  inline def KanjiTraditional2: KanjiTraditional2 = "KanjiTraditional2".asInstanceOf[KanjiTraditional2]
+  
+  @js.native
   sealed trait KeepSourceFormatting extends StObject
   inline def KeepSourceFormatting: KeepSourceFormatting = "KeepSourceFormatting".asInstanceOf[KeepSourceFormatting]
+  
+  @js.native
+  sealed trait Keywords extends StObject
+  inline def Keywords: Keywords = "Keywords".asInstanceOf[Keywords]
   
   @js.native
   sealed trait KorDbNum1 extends StObject
@@ -2645,6 +2905,10 @@ object officeJsPreviewStrings {
   @js.native
   sealed trait LastQuarter extends StObject
   inline def LastQuarter: LastQuarter = "LastQuarter".asInstanceOf[LastQuarter]
+  
+  @js.native
+  sealed trait LastSavedBy extends StObject
+  inline def LastSavedBy: LastSavedBy = "LastSavedBy".asInstanceOf[LastSavedBy]
   
   @js.native
   sealed trait LastSevenDays extends StObject
@@ -2717,6 +2981,10 @@ object officeJsPreviewStrings {
   @js.native
   sealed trait Legal extends StObject
   inline def Legal: Legal = "Legal".asInstanceOf[Legal]
+  
+  @js.native
+  sealed trait LegalLZ extends StObject
+  inline def LegalLZ: LegalLZ = "LegalLZ".asInstanceOf[LegalLZ]
   
   @js.native
   sealed trait LessThan extends StObject
@@ -2803,6 +3071,10 @@ object officeJsPreviewStrings {
   inline def LinearTrend: LinearTrend = "LinearTrend".asInstanceOf[LinearTrend]
   
   @js.native
+  sealed trait Link extends StObject
+  inline def Link: Link = "Link".asInstanceOf[Link]
+  
+  @js.native
   sealed trait LinkedDataTypeLinkedDataTypeAdded extends StObject
   inline def LinkedDataTypeLinkedDataTypeAdded: LinkedDataTypeLinkedDataTypeAdded = "LinkedDataTypeLinkedDataTypeAdded".asInstanceOf[LinkedDataTypeLinkedDataTypeAdded]
   
@@ -2821,6 +3093,10 @@ object officeJsPreviewStrings {
   @js.native
   sealed trait List extends StObject
   inline def List: List = "List".asInstanceOf[List]
+  
+  @js.native
+  sealed trait ListNum extends StObject
+  inline def ListNum: ListNum = "ListNum".asInstanceOf[ListNum]
   
   @js.native
   sealed trait ListParagraph extends StObject
@@ -3031,6 +3307,10 @@ object officeJsPreviewStrings {
   inline def Local: Local = "Local".asInstanceOf[Local]
   
   @js.native
+  sealed trait LocalImage extends StObject
+  inline def LocalImage: LocalImage = "LocalImage".asInstanceOf[LocalImage]
+  
+  @js.native
   sealed trait Logarithmic extends StObject
   inline def Logarithmic: Logarithmic = "Logarithmic".asInstanceOf[Logarithmic]
   
@@ -3079,8 +3359,28 @@ object officeJsPreviewStrings {
   inline def LowerRoman: LowerRoman = "LowerRoman".asInstanceOf[LowerRoman]
   
   @js.native
+  sealed trait LowercaseBulgarian extends StObject
+  inline def LowercaseBulgarian: LowercaseBulgarian = "LowercaseBulgarian".asInstanceOf[LowercaseBulgarian]
+  
+  @js.native
+  sealed trait LowercaseGreek extends StObject
+  inline def LowercaseGreek: LowercaseGreek = "LowercaseGreek".asInstanceOf[LowercaseGreek]
+  
+  @js.native
+  sealed trait LowercaseRussian extends StObject
+  inline def LowercaseRussian: LowercaseRussian = "LowercaseRussian".asInstanceOf[LowercaseRussian]
+  
+  @js.native
+  sealed trait LowercaseTurkish extends StObject
+  inline def LowercaseTurkish: LowercaseTurkish = "LowercaseTurkish".asInstanceOf[LowercaseTurkish]
+  
+  @js.native
   sealed trait LowestValue extends StObject
   inline def LowestValue: LowestValue = "LowestValue".asInstanceOf[LowestValue]
+  
+  @js.native
+  sealed trait MacroButton extends StObject
+  inline def MacroButton: MacroButton = "MacroButton".asInstanceOf[MacroButton]
   
   @js.native
   sealed trait MainDoc extends StObject
@@ -3133,6 +3433,22 @@ object officeJsPreviewStrings {
   @js.native
   sealed trait Mercator extends StObject
   inline def Mercator: Mercator = "Mercator".asInstanceOf[Mercator]
+  
+  @js.native
+  sealed trait MergeBarcode extends StObject
+  inline def MergeBarcode: MergeBarcode = "MergeBarcode".asInstanceOf[MergeBarcode]
+  
+  @js.native
+  sealed trait MergeField extends StObject
+  inline def MergeField: MergeField = "MergeField".asInstanceOf[MergeField]
+  
+  @js.native
+  sealed trait MergeRec extends StObject
+  inline def MergeRec: MergeRec = "MergeRec".asInstanceOf[MergeRec]
+  
+  @js.native
+  sealed trait MergeSeq extends StObject
+  inline def MergeSeq: MergeSeq = "MergeSeq".asInstanceOf[MergeSeq]
   
   @js.native
   sealed trait MergedCell extends StObject
@@ -3267,6 +3583,10 @@ object officeJsPreviewStrings {
   inline def Next: Next = "Next".asInstanceOf[Next]
   
   @js.native
+  sealed trait NextIf extends StObject
+  inline def NextIf: NextIf = "NextIf".asInstanceOf[NextIf]
+  
+  @js.native
   sealed trait NextMonth extends StObject
   inline def NextMonth: NextMonth = "NextMonth".asInstanceOf[NextMonth]
   
@@ -3359,6 +3679,10 @@ object officeJsPreviewStrings {
   inline def NoteItem: NoteItem = "NoteItem".asInstanceOf[NoteItem]
   
   @js.native
+  sealed trait NoteRef extends StObject
+  inline def NoteRef: NoteRef = "NoteRef".asInstanceOf[NoteRef]
+  
+  @js.native
   sealed trait Null extends StObject
   inline def Null: Null = "Null".asInstanceOf[Null]
   
@@ -3367,12 +3691,28 @@ object officeJsPreviewStrings {
   inline def Num: Num = "Num".asInstanceOf[Num]
   
   @js.native
+  sealed trait NumChars extends StObject
+  inline def NumChars: NumChars = "NumChars".asInstanceOf[NumChars]
+  
+  @js.native
   sealed trait NumInDash extends StObject
   inline def NumInDash: NumInDash = "NumInDash".asInstanceOf[NumInDash]
   
   @js.native
+  sealed trait NumPages extends StObject
+  inline def NumPages: NumPages = "NumPages".asInstanceOf[NumPages]
+  
+  @js.native
+  sealed trait NumWords extends StObject
+  inline def NumWords: NumWords = "NumWords".asInstanceOf[NumWords]
+  
+  @js.native
   sealed trait Number extends StObject
   inline def Number: Number = "Number".asInstanceOf[Number]
+  
+  @js.native
+  sealed trait NumberInCircle extends StObject
+  inline def NumberInCircle: NumberInCircle = "NumberInCircle".asInstanceOf[NumberInCircle]
   
   @js.native
   sealed trait Numbers extends StObject
@@ -3443,6 +3783,10 @@ object officeJsPreviewStrings {
   inline def NumbersignVALUEExclamationmark: NumbersignVALUEExclamationmark = "#VALUE!".asInstanceOf[NumbersignVALUEExclamationmark]
   
   @js.native
+  sealed trait OCX extends StObject
+  inline def OCX: OCX = "OCX".asInstanceOf[OCX]
+  
+  @js.native
   sealed trait Octagon extends StObject
   inline def Octagon: Octagon = "Octagon".asInstanceOf[Octagon]
   
@@ -3487,6 +3831,10 @@ object officeJsPreviewStrings {
   inline def Ordinal: Ordinal = "Ordinal".asInstanceOf[Ordinal]
   
   @js.native
+  sealed trait OrdinalText extends StObject
+  inline def OrdinalText: OrdinalText = "OrdinalText".asInstanceOf[OrdinalText]
+  
+  @js.native
   sealed trait Ordtext extends StObject
   inline def Ordtext: Ordtext = "Ordtext".asInstanceOf[Ordtext]
   
@@ -3503,6 +3851,10 @@ object officeJsPreviewStrings {
   inline def Other: Other = "Other".asInstanceOf[Other]
   
   @js.native
+  sealed trait Others extends StObject
+  inline def Others: Others = "Others".asInstanceOf[Others]
+  
+  @js.native
   sealed trait OutOfMemoryWhileCalc extends StObject
   inline def OutOfMemoryWhileCalc: OutOfMemoryWhileCalc = "OutOfMemoryWhileCalc".asInstanceOf[OutOfMemoryWhileCalc]
   
@@ -3513,6 +3865,46 @@ object officeJsPreviewStrings {
   @js.native
   sealed trait Outline extends StObject
   inline def Outline: Outline = "Outline".asInstanceOf[Outline]
+  
+  @js.native
+  sealed trait OutlineLevel1 extends StObject
+  inline def OutlineLevel1: OutlineLevel1 = "OutlineLevel1".asInstanceOf[OutlineLevel1]
+  
+  @js.native
+  sealed trait OutlineLevel2 extends StObject
+  inline def OutlineLevel2: OutlineLevel2 = "OutlineLevel2".asInstanceOf[OutlineLevel2]
+  
+  @js.native
+  sealed trait OutlineLevel3 extends StObject
+  inline def OutlineLevel3: OutlineLevel3 = "OutlineLevel3".asInstanceOf[OutlineLevel3]
+  
+  @js.native
+  sealed trait OutlineLevel4 extends StObject
+  inline def OutlineLevel4: OutlineLevel4 = "OutlineLevel4".asInstanceOf[OutlineLevel4]
+  
+  @js.native
+  sealed trait OutlineLevel5 extends StObject
+  inline def OutlineLevel5: OutlineLevel5 = "OutlineLevel5".asInstanceOf[OutlineLevel5]
+  
+  @js.native
+  sealed trait OutlineLevel6 extends StObject
+  inline def OutlineLevel6: OutlineLevel6 = "OutlineLevel6".asInstanceOf[OutlineLevel6]
+  
+  @js.native
+  sealed trait OutlineLevel7 extends StObject
+  inline def OutlineLevel7: OutlineLevel7 = "OutlineLevel7".asInstanceOf[OutlineLevel7]
+  
+  @js.native
+  sealed trait OutlineLevel8 extends StObject
+  inline def OutlineLevel8: OutlineLevel8 = "OutlineLevel8".asInstanceOf[OutlineLevel8]
+  
+  @js.native
+  sealed trait OutlineLevel9 extends StObject
+  inline def OutlineLevel9: OutlineLevel9 = "OutlineLevel9".asInstanceOf[OutlineLevel9]
+  
+  @js.native
+  sealed trait OutlineLevelBodyText extends StObject
+  inline def OutlineLevelBodyText: OutlineLevelBodyText = "OutlineLevelBodyText".asInstanceOf[OutlineLevelBodyText]
   
   @js.native
   sealed trait OutlookTask extends StObject
@@ -3555,12 +3947,20 @@ object officeJsPreviewStrings {
   inline def PageNavigationBar: PageNavigationBar = "PageNavigationBar".asInstanceOf[PageNavigationBar]
   
   @js.native
+  sealed trait PageRef extends StObject
+  inline def PageRef: PageRef = "PageRef".asInstanceOf[PageRef]
+  
+  @js.native
   sealed trait Paper10x14 extends StObject
   inline def Paper10x14: Paper10x14 = "Paper10x14".asInstanceOf[Paper10x14]
   
   @js.native
   sealed trait Paper11x17 extends StObject
   inline def Paper11x17: Paper11x17 = "Paper11x17".asInstanceOf[Paper11x17]
+  
+  @js.native
+  sealed trait Paragraph extends StObject
+  inline def Paragraph: Paragraph = "Paragraph".asInstanceOf[Paragraph]
   
   @js.native
   sealed trait Parallelogram extends StObject
@@ -3649,6 +4049,10 @@ object officeJsPreviewStrings {
   @js.native
   sealed trait PictureAndTexture extends StObject
   inline def PictureAndTexture: PictureAndTexture = "PictureAndTexture".asInstanceOf[PictureAndTexture]
+  
+  @js.native
+  sealed trait PictureBullet extends StObject
+  inline def PictureBullet: PictureBullet = "PictureBullet".asInstanceOf[PictureBullet]
   
   @js.native
   sealed trait Pie extends StObject
@@ -3763,6 +4167,18 @@ object officeJsPreviewStrings {
   inline def Primary: Primary = "Primary".asInstanceOf[Primary]
   
   @js.native
+  sealed trait Print extends StObject
+  inline def Print: Print = "Print".asInstanceOf[Print]
+  
+  @js.native
+  sealed trait PrintDate extends StObject
+  inline def PrintDate: PrintDate = "PrintDate".asInstanceOf[PrintDate]
+  
+  @js.native
+  sealed trait Private extends StObject
+  inline def Private: Private = "Private".asInstanceOf[Private]
+  
+  @js.native
   sealed trait Product extends StObject
   inline def Product: Product = "Product".asInstanceOf[Product]
   
@@ -3817,6 +4233,10 @@ object officeJsPreviewStrings {
   @js.native
   sealed trait Quote extends StObject
   inline def Quote: Quote = "Quote".asInstanceOf[Quote]
+  
+  @js.native
+  sealed trait RD extends StObject
+  inline def RD: RD = "RD".asInstanceOf[RD]
   
   @js.native
   sealed trait Radar extends StObject
@@ -3903,6 +4323,10 @@ object officeJsPreviewStrings {
   inline def RequestThrottle: RequestThrottle = "RequestThrottle".asInstanceOf[RequestThrottle]
   
   @js.native
+  sealed trait RevNum extends StObject
+  inline def RevNum: RevNum = "RevNum".asInstanceOf[RevNum]
+  
+  @js.native
   sealed trait Ribbon extends StObject
   inline def Ribbon: Ribbon = "Ribbon".asInstanceOf[Ribbon]
   
@@ -3941,6 +4365,10 @@ object officeJsPreviewStrings {
   @js.native
   sealed trait RichValue extends StObject
   inline def RichValue: RichValue = "RichValue".asInstanceOf[RichValue]
+  
+  @js.native
+  sealed trait RichValueRelMissingFilePart extends StObject
+  inline def RichValueRelMissingFilePart: RichValueRelMissingFilePart = "RichValueRelMissingFilePart".asInstanceOf[RichValueRelMissingFilePart]
   
   @js.native
   sealed trait Right extends StObject
@@ -4035,6 +4463,10 @@ object officeJsPreviewStrings {
   inline def Save: Save = "Save".asInstanceOf[Save]
   
   @js.native
+  sealed trait SaveDate extends StObject
+  inline def SaveDate: SaveDate = "SaveDate".asInstanceOf[SaveDate]
+  
+  @js.native
   sealed trait SbChar extends StObject
   inline def SbChar: SbChar = "SbChar".asInstanceOf[SbChar]
   
@@ -4079,6 +4511,10 @@ object officeJsPreviewStrings {
   inline def SectionOdd: SectionOdd = "SectionOdd".asInstanceOf[SectionOdd]
   
   @js.native
+  sealed trait SectionPages extends StObject
+  inline def SectionPages: SectionPages = "SectionPages".asInstanceOf[SectionPages]
+  
+  @js.native
   sealed trait Select extends StObject
   inline def Select: Select = "Select".asInstanceOf[Select]
   
@@ -4095,12 +4531,24 @@ object officeJsPreviewStrings {
   inline def SendToBack: SendToBack = "SendToBack".asInstanceOf[SendToBack]
   
   @js.native
+  sealed trait Seq extends StObject
+  inline def Seq: Seq = "Seq".asInstanceOf[Seq]
+  
+  @js.native
   sealed trait Series extends StObject
   inline def Series: Series = "Series".asInstanceOf[Series]
   
   @js.native
   sealed trait ServiceError extends StObject
   inline def ServiceError: ServiceError = "ServiceError".asInstanceOf[ServiceError]
+  
+  @js.native
+  sealed trait Set extends StObject
+  inline def Set: Set = "Set".asInstanceOf[Set]
+  
+  @js.native
+  sealed trait Shape extends StObject
+  inline def Shape: Shape = "Shape".asInstanceOf[Shape]
   
   @js.native
   sealed trait ShapeActivated extends StObject
@@ -4123,12 +4571,32 @@ object officeJsPreviewStrings {
   inline def SignInError: SignInError = "SignInError".asInstanceOf[SignInError]
   
   @js.native
+  sealed trait SimpChinNum1 extends StObject
+  inline def SimpChinNum1: SimpChinNum1 = "SimpChinNum1".asInstanceOf[SimpChinNum1]
+  
+  @js.native
+  sealed trait SimpChinNum2 extends StObject
+  inline def SimpChinNum2: SimpChinNum2 = "SimpChinNum2".asInstanceOf[SimpChinNum2]
+  
+  @js.native
+  sealed trait SimpChinNum3 extends StObject
+  inline def SimpChinNum3: SimpChinNum3 = "SimpChinNum3".asInstanceOf[SimpChinNum3]
+  
+  @js.native
+  sealed trait SimpChinNum4 extends StObject
+  inline def SimpChinNum4: SimpChinNum4 = "SimpChinNum4".asInstanceOf[SimpChinNum4]
+  
+  @js.native
   sealed trait Single extends StObject
   inline def Single: Single = "Single".asInstanceOf[Single]
   
   @js.native
   sealed trait SingleAccountant extends StObject
   inline def SingleAccountant: SingleAccountant = "SingleAccountant".asInstanceOf[SingleAccountant]
+  
+  @js.native
+  sealed trait SkipIf extends StObject
+  inline def SkipIf: SkipIf = "SkipIf".asInstanceOf[SkipIf]
   
   @js.native
   sealed trait SkipSave extends StObject
@@ -4351,12 +4819,24 @@ object officeJsPreviewStrings {
   inline def Strong: Strong = "Strong".asInstanceOf[Strong]
   
   @js.native
+  sealed trait StyleRef extends StObject
+  inline def StyleRef: StyleRef = "StyleRef".asInstanceOf[StyleRef]
+  
+  @js.native
   sealed trait SubArrayStartColumnMissingEndColumnNot extends StObject
   inline def SubArrayStartColumnMissingEndColumnNot: SubArrayStartColumnMissingEndColumnNot = "SubArrayStartColumnMissingEndColumnNot".asInstanceOf[SubArrayStartColumnMissingEndColumnNot]
   
   @js.native
   sealed trait SubArrayStartRowMissingEndRowNot extends StObject
   inline def SubArrayStartRowMissingEndRowNot: SubArrayStartRowMissingEndRowNot = "SubArrayStartRowMissingEndRowNot".asInstanceOf[SubArrayStartRowMissingEndRowNot]
+  
+  @js.native
+  sealed trait Subject extends StObject
+  inline def Subject: Subject = "Subject".asInstanceOf[Subject]
+  
+  @js.native
+  sealed trait Subscriber extends StObject
+  inline def Subscriber: Subscriber = "Subscriber".asInstanceOf[Subscriber]
   
   @js.native
   sealed trait Subtitle extends StObject
@@ -4407,6 +4887,10 @@ object officeJsPreviewStrings {
   inline def SwooshArrow: SwooshArrow = "SwooshArrow".asInstanceOf[SwooshArrow]
   
   @js.native
+  sealed trait Symbol extends StObject
+  inline def Symbol: Symbol = "Symbol".asInstanceOf[Symbol]
+  
+  @js.native
   sealed trait SystemDash extends StObject
   inline def SystemDash: SystemDash = "SystemDash".asInstanceOf[SystemDash]
   
@@ -4417,6 +4901,22 @@ object officeJsPreviewStrings {
   @js.native
   sealed trait SystemDot extends StObject
   inline def SystemDot: SystemDot = "SystemDot".asInstanceOf[SystemDot]
+  
+  @js.native
+  sealed trait TA extends StObject
+  inline def TA: TA = "TA".asInstanceOf[TA]
+  
+  @js.native
+  sealed trait TC extends StObject
+  inline def TC: TC = "TC".asInstanceOf[TC]
+  
+  @js.native
+  sealed trait TOA extends StObject
+  inline def TOA: TOA = "TOA".asInstanceOf[TOA]
+  
+  @js.native
+  sealed trait TOC extends StObject
+  inline def TOC: TOC = "TOC".asInstanceOf[TOC]
   
   @js.native
   sealed trait Table extends StObject
@@ -4479,6 +4979,10 @@ object officeJsPreviewStrings {
   inline def Teardrop: Teardrop = "Teardrop".asInstanceOf[Teardrop]
   
   @js.native
+  sealed trait Template extends StObject
+  inline def Template: Template = "Template".asInstanceOf[Template]
+  
+  @js.native
   sealed trait TenMillions extends StObject
   inline def TenMillions: TenMillions = "TenMillions".asInstanceOf[TenMillions]
   
@@ -4515,8 +5019,20 @@ object officeJsPreviewStrings {
   inline def Thai2: Thai2 = "Thai2".asInstanceOf[Thai2]
   
   @js.native
+  sealed trait ThaiArabic extends StObject
+  inline def ThaiArabic: ThaiArabic = "ThaiArabic".asInstanceOf[ThaiArabic]
+  
+  @js.native
+  sealed trait ThaiCardinalText extends StObject
+  inline def ThaiCardinalText: ThaiCardinalText = "ThaiCardinalText".asInstanceOf[ThaiCardinalText]
+  
+  @js.native
   sealed trait ThaiDistributed extends StObject
   inline def ThaiDistributed: ThaiDistributed = "ThaiDistributed".asInstanceOf[ThaiDistributed]
+  
+  @js.native
+  sealed trait ThaiLetter extends StObject
+  inline def ThaiLetter: ThaiLetter = "ThaiLetter".asInstanceOf[ThaiLetter]
   
   @js.native
   sealed trait Thick extends StObject
@@ -4799,6 +5315,34 @@ object officeJsPreviewStrings {
   inline def TrackMineOnly: TrackMineOnly = "TrackMineOnly".asInstanceOf[TrackMineOnly]
   
   @js.native
+  sealed trait TradChinNum1 extends StObject
+  inline def TradChinNum1: TradChinNum1 = "TradChinNum1".asInstanceOf[TradChinNum1]
+  
+  @js.native
+  sealed trait TradChinNum2 extends StObject
+  inline def TradChinNum2: TradChinNum2 = "TradChinNum2".asInstanceOf[TradChinNum2]
+  
+  @js.native
+  sealed trait TradChinNum3 extends StObject
+  inline def TradChinNum3: TradChinNum3 = "TradChinNum3".asInstanceOf[TradChinNum3]
+  
+  @js.native
+  sealed trait TradChinNum4 extends StObject
+  inline def TradChinNum4: TradChinNum4 = "TradChinNum4".asInstanceOf[TradChinNum4]
+  
+  @js.native
+  sealed trait TrailingNone extends StObject
+  inline def TrailingNone: TrailingNone = "TrailingNone".asInstanceOf[TrailingNone]
+  
+  @js.native
+  sealed trait TrailingSpace extends StObject
+  inline def TrailingSpace: TrailingSpace = "TrailingSpace".asInstanceOf[TrailingSpace]
+  
+  @js.native
+  sealed trait TrailingTab extends StObject
+  inline def TrailingTab: TrailingTab = "TrailingTab".asInstanceOf[TrailingTab]
+  
+  @js.native
   sealed trait Trapezoid extends StObject
   inline def Trapezoid: Trapezoid = "Trapezoid".asInstanceOf[Trapezoid]
   
@@ -4923,8 +5467,36 @@ object officeJsPreviewStrings {
   inline def UpperRoman: UpperRoman = "UpperRoman".asInstanceOf[UpperRoman]
   
   @js.native
+  sealed trait UppercaseBulgarian extends StObject
+  inline def UppercaseBulgarian: UppercaseBulgarian = "UppercaseBulgarian".asInstanceOf[UppercaseBulgarian]
+  
+  @js.native
+  sealed trait UppercaseGreek extends StObject
+  inline def UppercaseGreek: UppercaseGreek = "UppercaseGreek".asInstanceOf[UppercaseGreek]
+  
+  @js.native
+  sealed trait UppercaseRussian extends StObject
+  inline def UppercaseRussian: UppercaseRussian = "UppercaseRussian".asInstanceOf[UppercaseRussian]
+  
+  @js.native
+  sealed trait UppercaseTurkish extends StObject
+  inline def UppercaseTurkish: UppercaseTurkish = "UppercaseTurkish".asInstanceOf[UppercaseTurkish]
+  
+  @js.native
   sealed trait UseDestinationTheme extends StObject
   inline def UseDestinationTheme: UseDestinationTheme = "UseDestinationTheme".asInstanceOf[UseDestinationTheme]
+  
+  @js.native
+  sealed trait UserAddress extends StObject
+  inline def UserAddress: UserAddress = "UserAddress".asInstanceOf[UserAddress]
+  
+  @js.native
+  sealed trait UserInitials extends StObject
+  inline def UserInitials: UserInitials = "UserInitials".asInstanceOf[UserInitials]
+  
+  @js.native
+  sealed trait UserName extends StObject
+  inline def UserName: UserName = "UserName".asInstanceOf[UserName]
   
   @js.native
   sealed trait UturnArrow extends StObject
@@ -4963,6 +5535,10 @@ object officeJsPreviewStrings {
   inline def VeryHidden: VeryHidden = "VeryHidden".asInstanceOf[VeryHidden]
   
   @js.native
+  sealed trait VietCardinalText extends StObject
+  inline def VietCardinalText: VietCardinalText = "VietCardinalText".asInstanceOf[VietCardinalText]
+  
+  @js.native
   sealed trait Visible extends StObject
   inline def Visible: Visible = "Visible".asInstanceOf[Visible]
   
@@ -4973,6 +5549,10 @@ object officeJsPreviewStrings {
   @js.native
   sealed trait VlookupResultNotFound extends StObject
   inline def VlookupResultNotFound: VlookupResultNotFound = "VlookupResultNotFound".asInstanceOf[VlookupResultNotFound]
+  
+  @js.native
+  sealed trait Warm extends StObject
+  inline def Warm: Warm = "Warm".asInstanceOf[Warm]
   
   @js.native
   sealed trait Warning extends StObject
@@ -5147,6 +5727,10 @@ object officeJsPreviewStrings {
   inline def X: X = "X".asInstanceOf[X]
   
   @js.native
+  sealed trait XE extends StObject
+  inline def XE: XE = "XE".asInstanceOf[XE]
+  
+  @js.native
   sealed trait XValues extends StObject
   inline def XValues: XValues = "XValues".asInstanceOf[XValues]
   
@@ -5257,6 +5841,10 @@ object officeJsPreviewStrings {
   @js.native
   sealed trait olkRecurrenceChanged extends StObject
   inline def olkRecurrenceChanged: olkRecurrenceChanged = "olkRecurrenceChanged".asInstanceOf[olkRecurrenceChanged]
+  
+  @js.native
+  sealed trait olkSensitivityLabelChanged extends StObject
+  inline def olkSensitivityLabelChanged: olkSensitivityLabelChanged = "olkSensitivityLabelChanged".asInstanceOf[olkSensitivityLabelChanged]
   
   @js.native
   sealed trait read extends StObject

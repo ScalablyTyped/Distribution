@@ -14,14 +14,23 @@ trait PolicyRoot
   // The policy by which consent requests are created and managed for the entire tenant.
   var adminConsentRequestPolicy: js.UndefOr[NullableOption[AdminConsentRequestPolicy]] = js.undefined
   
+  /**
+    * The policies that enforce app management restrictions for specific applications and service principals, overriding the
+    * defaultAppManagementPolicy.
+    */
+  var appManagementPolicies: js.UndefOr[NullableOption[js.Array[AppManagementPolicy]]] = js.undefined
+  
   // The policy configuration of the self-service sign-up experience of external users.
   var authenticationFlowsPolicy: js.UndefOr[NullableOption[AuthenticationFlowsPolicy]] = js.undefined
   
   /**
-    * The authentication methods and the users that are allowed to use them to sign in and perform multi-factor
-    * authentication (MFA) in Azure Active Directory (Azure AD).
+    * The authentication methods and the users that are allowed to use them to sign in and perform multifactor authentication
+    * (MFA) in Azure Active Directory (Azure AD).
     */
   var authenticationMethodsPolicy: js.UndefOr[NullableOption[AuthenticationMethodsPolicy]] = js.undefined
+  
+  // The authentication method combinations that are to be used in scenarios defined by Azure AD Conditional Access.
+  var authenticationStrengthPolicies: js.UndefOr[NullableOption[js.Array[AuthenticationStrengthPolicy]]] = js.undefined
   
   // The policy that controls Azure AD authorization settings.
   var authorizationPolicy: js.UndefOr[NullableOption[AuthorizationPolicy]] = js.undefined
@@ -37,6 +46,9 @@ trait PolicyRoot
   
   // The custom rules that define an access scenario when interacting with external Azure AD tenants.
   var crossTenantAccessPolicy: js.UndefOr[NullableOption[CrossTenantAccessPolicy]] = js.undefined
+  
+  // The tenant-wide policy that enforces app management restrictions for all applications and service principals.
+  var defaultAppManagementPolicy: js.UndefOr[NullableOption[TenantAppManagementPolicy]] = js.undefined
   
   // The feature rollout policy associated with a directory object.
   var featureRolloutPolicies: js.UndefOr[NullableOption[js.Array[FeatureRolloutPolicy]]] = js.undefined
@@ -86,6 +98,14 @@ object PolicyRoot {
     
     inline def setAdminConsentRequestPolicyUndefined: Self = StObject.set(x, "adminConsentRequestPolicy", js.undefined)
     
+    inline def setAppManagementPolicies(value: NullableOption[js.Array[AppManagementPolicy]]): Self = StObject.set(x, "appManagementPolicies", value.asInstanceOf[js.Any])
+    
+    inline def setAppManagementPoliciesNull: Self = StObject.set(x, "appManagementPolicies", null)
+    
+    inline def setAppManagementPoliciesUndefined: Self = StObject.set(x, "appManagementPolicies", js.undefined)
+    
+    inline def setAppManagementPoliciesVarargs(value: AppManagementPolicy*): Self = StObject.set(x, "appManagementPolicies", js.Array(value*))
+    
     inline def setAuthenticationFlowsPolicy(value: NullableOption[AuthenticationFlowsPolicy]): Self = StObject.set(x, "authenticationFlowsPolicy", value.asInstanceOf[js.Any])
     
     inline def setAuthenticationFlowsPolicyNull: Self = StObject.set(x, "authenticationFlowsPolicy", null)
@@ -97,6 +117,14 @@ object PolicyRoot {
     inline def setAuthenticationMethodsPolicyNull: Self = StObject.set(x, "authenticationMethodsPolicy", null)
     
     inline def setAuthenticationMethodsPolicyUndefined: Self = StObject.set(x, "authenticationMethodsPolicy", js.undefined)
+    
+    inline def setAuthenticationStrengthPolicies(value: NullableOption[js.Array[AuthenticationStrengthPolicy]]): Self = StObject.set(x, "authenticationStrengthPolicies", value.asInstanceOf[js.Any])
+    
+    inline def setAuthenticationStrengthPoliciesNull: Self = StObject.set(x, "authenticationStrengthPolicies", null)
+    
+    inline def setAuthenticationStrengthPoliciesUndefined: Self = StObject.set(x, "authenticationStrengthPolicies", js.undefined)
+    
+    inline def setAuthenticationStrengthPoliciesVarargs(value: AuthenticationStrengthPolicy*): Self = StObject.set(x, "authenticationStrengthPolicies", js.Array(value*))
     
     inline def setAuthorizationPolicy(value: NullableOption[AuthorizationPolicy]): Self = StObject.set(x, "authorizationPolicy", value.asInstanceOf[js.Any])
     
@@ -125,6 +153,12 @@ object PolicyRoot {
     inline def setCrossTenantAccessPolicyNull: Self = StObject.set(x, "crossTenantAccessPolicy", null)
     
     inline def setCrossTenantAccessPolicyUndefined: Self = StObject.set(x, "crossTenantAccessPolicy", js.undefined)
+    
+    inline def setDefaultAppManagementPolicy(value: NullableOption[TenantAppManagementPolicy]): Self = StObject.set(x, "defaultAppManagementPolicy", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultAppManagementPolicyNull: Self = StObject.set(x, "defaultAppManagementPolicy", null)
+    
+    inline def setDefaultAppManagementPolicyUndefined: Self = StObject.set(x, "defaultAppManagementPolicy", js.undefined)
     
     inline def setFeatureRolloutPolicies(value: NullableOption[js.Array[FeatureRolloutPolicy]]): Self = StObject.set(x, "featureRolloutPolicies", value.asInstanceOf[js.Any])
     

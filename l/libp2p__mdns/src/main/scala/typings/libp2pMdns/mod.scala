@@ -1,8 +1,7 @@
 package typings.libp2pMdns
 
 import typings.libp2pInterfaceAddressManager.mod.AddressManager
-import typings.libp2pInterfacePeerDiscovery.mod.PeerDiscovery
-import typings.libp2pInterfacePeerId.mod.PeerId
+import typings.libp2pInterfacePeerDiscovery.mod.PeerDiscovery_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,19 +12,17 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def mdns(): js.Function1[/* components */ MulticastDNSComponents, PeerDiscovery] = ^.asInstanceOf[js.Dynamic].applyDynamic("mdns")().asInstanceOf[js.Function1[/* components */ MulticastDNSComponents, PeerDiscovery]]
-  inline def mdns(init: MulticastDNSInit): js.Function1[/* components */ MulticastDNSComponents, PeerDiscovery] = ^.asInstanceOf[js.Dynamic].applyDynamic("mdns")(init.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* components */ MulticastDNSComponents, PeerDiscovery]]
+  inline def mdns(): js.Function1[/* components */ MulticastDNSComponents, PeerDiscovery_] = ^.asInstanceOf[js.Dynamic].applyDynamic("mdns")().asInstanceOf[js.Function1[/* components */ MulticastDNSComponents, PeerDiscovery_]]
+  inline def mdns(init: MulticastDNSInit): js.Function1[/* components */ MulticastDNSComponents, PeerDiscovery_] = ^.asInstanceOf[js.Dynamic].applyDynamic("mdns")(init.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* components */ MulticastDNSComponents, PeerDiscovery_]]
   
   trait MulticastDNSComponents extends StObject {
     
     var addressManager: AddressManager
-    
-    var peerId: PeerId
   }
   object MulticastDNSComponents {
     
-    inline def apply(addressManager: AddressManager, peerId: PeerId): MulticastDNSComponents = {
-      val __obj = js.Dynamic.literal(addressManager = addressManager.asInstanceOf[js.Any], peerId = peerId.asInstanceOf[js.Any])
+    inline def apply(addressManager: AddressManager): MulticastDNSComponents = {
+      val __obj = js.Dynamic.literal(addressManager = addressManager.asInstanceOf[js.Any])
       __obj.asInstanceOf[MulticastDNSComponents]
     }
     
@@ -33,8 +30,6 @@ object mod {
     implicit open class MutableBuilder[Self <: MulticastDNSComponents] (val x: Self) extends AnyVal {
       
       inline def setAddressManager(value: AddressManager): Self = StObject.set(x, "addressManager", value.asInstanceOf[js.Any])
-      
-      inline def setPeerId(value: PeerId): Self = StObject.set(x, "peerId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -42,13 +37,11 @@ object mod {
     
     var broadcast: js.UndefOr[Boolean] = js.undefined
     
-    var compat: js.UndefOr[Boolean] = js.undefined
-    
-    var compatQueryInterval: js.UndefOr[Double] = js.undefined
-    
-    var compatQueryPeriod: js.UndefOr[Double] = js.undefined
-    
     var interval: js.UndefOr[Double] = js.undefined
+    
+    var ip: js.UndefOr[String] = js.undefined
+    
+    var peerName: js.UndefOr[String] = js.undefined
     
     var port: js.UndefOr[Double] = js.undefined
     
@@ -68,21 +61,17 @@ object mod {
       
       inline def setBroadcastUndefined: Self = StObject.set(x, "broadcast", js.undefined)
       
-      inline def setCompat(value: Boolean): Self = StObject.set(x, "compat", value.asInstanceOf[js.Any])
-      
-      inline def setCompatQueryInterval(value: Double): Self = StObject.set(x, "compatQueryInterval", value.asInstanceOf[js.Any])
-      
-      inline def setCompatQueryIntervalUndefined: Self = StObject.set(x, "compatQueryInterval", js.undefined)
-      
-      inline def setCompatQueryPeriod(value: Double): Self = StObject.set(x, "compatQueryPeriod", value.asInstanceOf[js.Any])
-      
-      inline def setCompatQueryPeriodUndefined: Self = StObject.set(x, "compatQueryPeriod", js.undefined)
-      
-      inline def setCompatUndefined: Self = StObject.set(x, "compat", js.undefined)
-      
       inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
       
       inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
+      
+      inline def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
+      
+      inline def setIpUndefined: Self = StObject.set(x, "ip", js.undefined)
+      
+      inline def setPeerName(value: String): Self = StObject.set(x, "peerName", value.asInstanceOf[js.Any])
+      
+      inline def setPeerNameUndefined: Self = StObject.set(x, "peerName", js.undefined)
       
       inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       

@@ -3,6 +3,10 @@ package typings.std.global
 import typings.std.AddEventListenerOptions
 import typings.std.EventListenerOptions
 import typings.std.EventListenerOrEventListenerObject
+import typings.std.stdInts.`0`
+import typings.std.stdInts.`1`
+import typings.std.stdInts.`2`
+import typings.std.stdInts.`3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -49,10 +53,6 @@ open class SVGFEConvolveMatrixElement ()
   /* standard dom */
   /* CompleteClass */
   var ariaColIndex: java.lang.String | Null = js.native
-  
-  /* standard dom */
-  /* CompleteClass */
-  var ariaColIndexText: java.lang.String | Null = js.native
   
   /* standard dom */
   /* CompleteClass */
@@ -148,10 +148,6 @@ open class SVGFEConvolveMatrixElement ()
   
   /* standard dom */
   /* CompleteClass */
-  var ariaRowIndexText: java.lang.String | Null = js.native
-  
-  /* standard dom */
-  /* CompleteClass */
   var ariaRowSpan: java.lang.String | Null = js.native
   
   /* standard dom */
@@ -244,20 +240,20 @@ object SVGFEConvolveMatrixElement {
   /* standard dom */
   @JSGlobal("SVGFEConvolveMatrixElement.SVG_EDGEMODE_DUPLICATE")
   @js.native
-  val SVG_EDGEMODE_DUPLICATE: Double = js.native
+  val SVG_EDGEMODE_DUPLICATE: `1` = js.native
   
   /* standard dom */
   @JSGlobal("SVGFEConvolveMatrixElement.SVG_EDGEMODE_NONE")
   @js.native
-  val SVG_EDGEMODE_NONE: Double = js.native
+  val SVG_EDGEMODE_NONE: `3` = js.native
   
   /* standard dom */
   @JSGlobal("SVGFEConvolveMatrixElement.SVG_EDGEMODE_UNKNOWN")
   @js.native
-  val SVG_EDGEMODE_UNKNOWN: Double = js.native
+  val SVG_EDGEMODE_UNKNOWN: `0` = js.native
   
   /* standard dom */
   @JSGlobal("SVGFEConvolveMatrixElement.SVG_EDGEMODE_WRAP")
   @js.native
-  val SVG_EDGEMODE_WRAP: Double = js.native
+  val SVG_EDGEMODE_WRAP: `2` = js.native
 }

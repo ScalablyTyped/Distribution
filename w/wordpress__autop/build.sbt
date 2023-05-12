@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "wordpress__autop"
-version := "3.21.0-d90e5a"
+version := "3.33.0-dc6502"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

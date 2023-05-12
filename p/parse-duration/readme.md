@@ -1,7 +1,7 @@
 
 # Scala.js typings for parse-duration
 
-Typings are for version 1.0.2
+Typings are for version 1.0.3
 
 ## Library description:
 convert a human readable duration string to a duration format

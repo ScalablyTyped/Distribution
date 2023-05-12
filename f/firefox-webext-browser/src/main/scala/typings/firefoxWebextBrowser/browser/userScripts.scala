@@ -11,6 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Manifest keys: `user_scripts`, `user_scripts`
   *
+  * Not supported on manifest versions above 2.
+  *
   * Not allowed in: Devtools pages
   */
 object userScripts {
@@ -85,6 +87,9 @@ object userScripts {
       */
     var allFrames: js.UndefOr[Boolean] = js.undefined
     
+    /** limit the set of matched tabs to those that belong to the given cookie store id */
+    var cookieStoreId: js.UndefOr[js.Array[String] | String] = js.undefined
+    
     var excludeGlobs: js.UndefOr[js.Array[String]] = js.undefined
     
     var excludeMatches: js.UndefOr[js.Array[MatchPattern]] = js.undefined
@@ -122,6 +127,12 @@ object userScripts {
       inline def setAllFrames(value: Boolean): Self = StObject.set(x, "allFrames", value.asInstanceOf[js.Any])
       
       inline def setAllFramesUndefined: Self = StObject.set(x, "allFrames", js.undefined)
+      
+      inline def setCookieStoreId(value: js.Array[String] | String): Self = StObject.set(x, "cookieStoreId", value.asInstanceOf[js.Any])
+      
+      inline def setCookieStoreIdUndefined: Self = StObject.set(x, "cookieStoreId", js.undefined)
+      
+      inline def setCookieStoreIdVarargs(value: String*): Self = StObject.set(x, "cookieStoreId", js.Array(value*))
       
       inline def setExcludeGlobs(value: js.Array[String]): Self = StObject.set(x, "excludeGlobs", value.asInstanceOf[js.Any])
       

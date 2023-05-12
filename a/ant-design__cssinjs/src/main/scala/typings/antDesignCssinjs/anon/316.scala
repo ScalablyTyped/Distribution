@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.MaskComposite
+import typings.csstype.mod.Property.MsScrollSnapX
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,11 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `316` extends StObject {
   
   var value: js.UndefOr[
-    MaskComposite | (js.Array[
+    MsScrollSnapX | (js.Array[
       (Extract[
-        js.UndefOr[MaskComposite | js.Array[NonNullable[js.UndefOr[MaskComposite]]]], 
+        js.UndefOr[MsScrollSnapX | js.Array[NonNullable[js.UndefOr[MsScrollSnapX]]]], 
         String
-      ]) | NonNullable[js.UndefOr[MaskComposite]]
+      ]) | NonNullable[js.UndefOr[MsScrollSnapX]]
     ])
   ] = js.native
 }

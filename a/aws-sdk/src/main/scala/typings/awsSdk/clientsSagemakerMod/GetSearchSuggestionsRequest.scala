@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetSearchSuggestionsRequest extends StObject {
   
   /**
-    * The name of the Amazon SageMaker resource to search for.
+    * The name of the SageMaker resource to search for.
     */
   var Resource: ResourceType
   

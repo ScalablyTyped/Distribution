@@ -31,7 +31,6 @@ trait Client extends StObject {
   
   /**
     * An instance of the Attachments resource.
-    * @type {Attachments}
     */
   var attachments: Attachments = js.native
   
@@ -46,7 +45,6 @@ trait Client extends StObject {
   
   /**
     * An instance of the CustomFields resource.
-    * @type {CustomFields}
     */
   var customFields: CustomFields = js.native
   
@@ -54,55 +52,46 @@ trait Client extends StObject {
     * The internal dispatcher. This is mostly used by the resources but provided
     * for custom requests to the API or API features that have not yet been added
     * to the client.
-    * @type {Dispatcher}
     */
   var dispatcher: Dispatcher = js.native
   
   /**
     * An instance of the Events resource.
-    * @type {Events}
     */
   var events: Events = js.native
   
   /**
     * An instance of the Projects resource.
-    * @type {Projects}
     */
   var projects: Projects = js.native
   
   /**
     * An instance of the Sections resource.
-    * @type {Sections}
     */
   var sections: Sections = js.native
   
   /**
     * An instance of the Stories resource.
-    * @type {Stories}
     */
   var stories: Stories = js.native
   
   /**
     * An instance of the Tags resource.
-    * @type {Tags}
     */
   var tags: Tags = js.native
   
   /**
     * An instance of the Tasks resource.
-    * @type {Tasks}
     */
   var tasks: Tasks = js.native
   
   /**
     * An instance of the Teams resource.
-    * @type {Teams}
     */
   var teams: Teams = js.native
   
   /**
     * An instance of the Typeahead resource.
-    * @type {Typeahead}
     */
   var typeahead: Typeahead = js.native
   
@@ -147,25 +136,21 @@ trait Client extends StObject {
   
   /**
     * An instance of the UserTaskLists resource.
-    * @type {UserTaskLists}
     */
   var userTaskLists: UserTaskLists = js.native
   
   /**
     * An instance of the Users resource.
-    * @type {Users}
     */
   var users: Users = js.native
   
   /**
     * An instance of the Webhooks resource.
-    * @type {Webhooks}
     */
   var webhooks: Webhooks = js.native
   
   /**
     * An instance of the Workspaces resource.
-    * @type {Workspaces}
     */
   var workspaces: Workspaces = js.native
 }

@@ -11,9 +11,6 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Interfaces and instance classes for types from the Mendix sub meta model `Pages`.
-  */
-/**
   * See: {@link https://docs.mendix.com/refguide/pages relevant section in reference guide}
   */
 /* note: abstract class */ @JSImport("mendixmodelsdk", "pages.Widget")

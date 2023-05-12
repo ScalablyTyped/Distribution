@@ -19,6 +19,7 @@ import typings.vite.viteStrings.close
 import typings.vite.viteStrings.connect
 import typings.vite.viteStrings.connection
 import typings.vite.viteStrings.drop
+import typings.vite.viteStrings.dropRequest
 import typings.vite.viteStrings.error
 import typings.vite.viteStrings.listening
 import typings.vite.viteStrings.request
@@ -39,6 +40,11 @@ trait WebSocketServer extends StObject {
     * Disconnect all clients and terminate the server.
     */
   def close(): js.Promise[Unit] = js.native
+  
+  /**
+    * Listen on port and host
+    */
+  def listen(): Unit = js.native
   
   /**
     * Unregister event listener.
@@ -150,6 +156,18 @@ trait WebSocketServer extends StObject {
     */
   @JSName("on")
   def on_drop(event: drop, listener: js.Function1[/* data */ js.UndefOr[DropArgument], Unit]): this.type = js.native
+  /**
+    * Handle custom event emitted by `import.meta.hot.send`
+    */
+  @JSName("on")
+  def on_dropRequest(
+    event: dropRequest,
+    listener: js.Function2[
+      /* req */ InstanceType[Instantiable1[/* socket */ Socket, IncomingMessage]], 
+      /* socket */ Duplex, 
+      Unit
+    ]
+  ): this.type = js.native
   /**
     * Handle custom event emitted by `import.meta.hot.send`
     */

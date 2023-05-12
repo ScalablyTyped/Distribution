@@ -22,6 +22,11 @@ trait CreateDeviceProfileRequest extends StObject {
   var Name: js.UndefOr[DeviceProfileName] = js.undefined
   
   /**
+    * The Sidewalk-related information for creating the Sidewalk device profile.
+    */
+  var Sidewalk: js.UndefOr[SidewalkCreateDeviceProfile] = js.undefined
+  
+  /**
     * The tags to attach to the new device profile. Tags are metadata that you can use to manage a resource.
     */
   var Tags: js.UndefOr[TagList] = js.undefined
@@ -47,6 +52,10 @@ object CreateDeviceProfileRequest {
     inline def setName(value: DeviceProfileName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    
+    inline def setSidewalk(value: SidewalkCreateDeviceProfile): Self = StObject.set(x, "Sidewalk", value.asInstanceOf[js.Any])
+    
+    inline def setSidewalkUndefined: Self = StObject.set(x, "Sidewalk", js.undefined)
     
     inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     

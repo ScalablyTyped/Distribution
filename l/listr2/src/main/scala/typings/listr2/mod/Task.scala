@@ -1,29 +1,36 @@
 package typings.listr2.mod
 
-import typings.listr2.anon.Count
-import typings.listr2.anon.Duration
-import typings.rxjs.mod.Subject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Create a task from the given set of variables and make it runnable.
+  * Creates and handles a runnable instance of the Task.
   */
 @js.native
-trait Task[Ctx, Renderer /* <: ListrRendererFactory */] extends Subject[ListrEvent] {
+trait Task[Ctx, Renderer /* <: ListrRendererFactory */] extends ListrTaskEventManager {
   
   /**
-    * A function to check whether this task should run at all via enable.
+    * Checks whether the current task with the given context should be set as enabled.
     */
-  def check(ctx: Ctx): js.Promise[Unit] = js.native
+  def check(ctx: Ctx): js.Promise[Boolean] = js.native
   
+  /* private */ var close: Any = js.native
+  
+  /** Marks the task as closed. This is different from finalized since this is not really related to task itself. */
+  /* private */ var closed: Any = js.native
+  
+  /** Enable flag of this task. */
   /* private */ var enabled: Any = js.native
-  
-  /* private */ var enabledFn: Any = js.native
   
   /** Returns whether this task has been failed. */
   def hasFailed(): Boolean = js.native
+  
+  /** Returns whether this task is finalized in someform. */
+  def hasFinalized(): Boolean = js.native
+  
+  /** Returns whether this task has some kind of reset like retry and rollback going on. */
+  def hasReset(): Boolean = js.native
   
   /** Returns whether the rollback action was successful. */
   def hasRolledBack(): Boolean = js.native
@@ -34,17 +41,23 @@ trait Task[Ctx, Renderer /* <: ListrRendererFactory */] extends Subject[ListrEve
   /** Returns whether this task actually has a title. */
   def hasTitle(): Boolean = js.native
   
-  /** Unique id per task, randomly generated in the uuid v4 format */
+  /** Unique id per task, can be used for identifying a Task. */
   var id: String = js.native
   
-  /** Untouched unchanged title of the task */
-  var initialTitle: js.UndefOr[String] = js.native
+  /** Initial/Untouched version of the title for using whenever task has a reset. */
+  val initialTitle: js.UndefOr[String] = js.native
+  
+  /** Returns whether this task is closed. */
+  def isClosed(): Boolean = js.native
   
   /** Returns whether this task has been completed. */
   def isCompleted(): Boolean = js.native
   
   /** Returns whether enabled function resolves to true. */
   def isEnabled(): Boolean = js.native
+  
+  /** Returns whether this task is currently paused. */
+  def isPaused(): Boolean = js.native
   
   /** Returns whether this task is in progress. */
   def isPending(): Boolean = js.native
@@ -61,6 +74,9 @@ trait Task[Ctx, Renderer /* <: ListrRendererFactory */] extends Subject[ListrEve
   /** Returns whether this task is skipped. */
   def isSkipped(): Boolean = js.native
   
+  /** Returns whether this task has started. */
+  def isStarted(): Boolean = js.native
+  
   var listr: Listr[Ctx, Any, Any] = js.native
   
   /**
@@ -68,56 +84,79 @@ trait Task[Ctx, Renderer /* <: ListrRendererFactory */] extends Subject[ListrEve
     *
     * This requires a separate channel for messages like error, skip or runtime messages to further utilize in the renderers.
     */
-  var message: Duration = js.native
+  var message: ListrTaskMessage = js.native
   
+  /**
+    * Update or extend the current message of the Task and emit the neccassary events.
+    */
   @JSName("message$")
-  def message$_=(data: Duration): Unit = js.native
+  def message$_=(data: ListrTaskMessage): Unit = js.native
   
   var options: ListrOptions[ListrContext] = js.native
   
-  /** Output data from the task. */
+  /** Output channel for the task. */
   var output: js.UndefOr[String] = js.native
   
+  /**
+    * Update the current output of the Task and emit the neccassary events.
+    */
   @JSName("output$")
   def output$_=(data: String): Unit = js.native
   
-  var prompt: js.UndefOr[PromptInstance | PromptError] = js.native
+  /** Parent task of the current task. */
+  var parent: js.UndefOr[Task[Ctx, Renderer]] = js.native
   
-  /** This will be triggered each time a new render should happen. */
-  @JSName("renderHook$")
-  var renderHook$: Subject[Unit] = js.native
+  /**
+    * Current task path in the hierarchy.
+    */
+  def path: js.Array[String] = js.native
+  
+  /** Pause the given task for certain time. */
+  def pause(time: Double): js.Promise[Unit] = js.native
+  
+  /** Current prompt instance or prompt error whenever the task is prompting. */
+  var prompt: ListrTaskPrompt = js.native
+  
+  /**
+    * Update the current prompt output of the Task and emit the neccassary events.
+    */
+  @JSName("promptOutput$")
+  def promptOutput$_=(data: String): Unit = js.native
   
   var rendererOptions: ListrGetRendererOptions[Renderer] = js.native
   
-  /** Per task options for the current renderer of the task. */
+  /** Per-task options for the current renderer of the task. */
   var rendererTaskOptions: ListrGetRendererTaskOptions[Renderer] = js.native
   
-  /** Current retry number of the task if retrying */
-  var retry: js.UndefOr[Count] = js.native
+  /** Current state of the retry process whenever the task is retrying. */
+  var retry: js.UndefOr[ListrTaskRetry] = js.native
   
   /** Run the current task. */
   def run(context: Ctx, wrapper: TaskWrapper[Ctx, Renderer]): js.Promise[Unit] = js.native
   
-  /** Skip current task. */
-  var skip: Boolean | String | (js.Function1[/* ctx */ Ctx, Boolean | String | (js.Promise[Boolean | String])]) = js.native
-  
   /** The current state of the task. */
-  var state: String = js.native
+  var state: ListrTaskState = js.native
   
+  /**
+    * Update the current state of the Task and emit the neccassary events.
+    */
   @JSName("state$")
   def state$_=(state: ListrTaskState): Unit = js.native
   
-  /** Extend current task with multiple subtasks. */
-  var subtasks: js.Array[Task[Ctx, Any]] = js.native
+  /** Subtasks of the current task. */
+  var subtasks: js.Array[Task[Ctx, Renderer]] = js.native
   
-  /** The task object itself, to further utilize it. */
-  def task(ctx: Ctx, task: TaskWrapper[Ctx, Renderer]): Unit | ListrTaskResult[Ctx] = js.native
+  var task: ListrTask[Ctx, Any] = js.native
   
-  var tasks: ListrTask[Ctx, Any] = js.native
+  /** User provided Task callback function to run. */
+  /* private */ var taskFn: Any = js.native
   
-  /** Title of the task */
+  /** Title of the task. */
   var title: js.UndefOr[String] = js.native
   
+  /**
+    * Update the current title of the Task and emit the neccassary events.
+    */
   @JSName("title$")
   def title$_=(title: String): Unit = js.native
 }

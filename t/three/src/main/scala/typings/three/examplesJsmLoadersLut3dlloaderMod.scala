@@ -36,6 +36,9 @@ object examplesJsmLoadersLut3dlloaderMod {
       onError: js.Function1[/* event */ js.Error, Unit]
     ): Any = js.native
     
+    def loadAsync(url: String): js.Promise[LUT3dlResult] = js.native
+    def loadAsync(url: String, onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit]): js.Promise[LUT3dlResult] = js.native
+    
     def parse(data: String): LUT3dlResult = js.native
   }
   

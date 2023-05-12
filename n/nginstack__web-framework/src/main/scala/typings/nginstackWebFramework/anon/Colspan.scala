@@ -1,6 +1,6 @@
 package typings.nginstackWebFramework.anon
 
-import typings.nginstackWebFramework.libSimpleLayoutFooterMod.Mail
+import typings.nginstackWebFramework.libSimpleLayoutFooterMod.Email
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +11,7 @@ trait Colspan extends StObject {
   
   var css: js.UndefOr[String] = js.undefined
   
-  var mailObject: js.UndefOr[Mail] = js.undefined
+  var mailObject: js.UndefOr[Email] = js.undefined
   
   var path: js.UndefOr[String] = js.undefined
 }
@@ -33,7 +33,7 @@ object Colspan {
     
     inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
     
-    inline def setMailObject(value: Mail): Self = StObject.set(x, "mailObject", value.asInstanceOf[js.Any])
+    inline def setMailObject(value: Email): Self = StObject.set(x, "mailObject", value.asInstanceOf[js.Any])
     
     inline def setMailObjectUndefined: Self = StObject.set(x, "mailObject", js.undefined)
     

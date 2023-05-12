@@ -38,6 +38,8 @@ trait ImageBuildOptions extends StObject {
   
   var networkmode: js.UndefOr[String] = js.undefined
   
+  var nocache: js.UndefOr[Boolean] = js.undefined
+  
   var outputs: js.UndefOr[String] = js.undefined
   
   var platform: js.UndefOr[String] = js.undefined
@@ -129,6 +131,10 @@ object ImageBuildOptions {
     inline def setNetworkmode(value: String): Self = StObject.set(x, "networkmode", value.asInstanceOf[js.Any])
     
     inline def setNetworkmodeUndefined: Self = StObject.set(x, "networkmode", js.undefined)
+    
+    inline def setNocache(value: Boolean): Self = StObject.set(x, "nocache", value.asInstanceOf[js.Any])
+    
+    inline def setNocacheUndefined: Self = StObject.set(x, "nocache", js.undefined)
     
     inline def setOutputs(value: String): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
     

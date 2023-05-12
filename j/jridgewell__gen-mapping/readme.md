@@ -1,7 +1,7 @@
 
 # Scala.js typings for jridgewell__gen-mapping
 
-Typings are for version 0.3.2
+Typings are for version 0.3.3
 
 ## Library description:
 Generate source maps

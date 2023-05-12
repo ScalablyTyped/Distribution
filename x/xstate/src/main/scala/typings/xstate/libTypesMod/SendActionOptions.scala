@@ -4,11 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SendActionOptions[TContext, TEvent /* <: EventObject */] extends StObject {
-  
-  var delay: js.UndefOr[Double | String | (DelayExpr[TContext, TEvent])] = js.undefined
-  
-  var id: js.UndefOr[String | Double] = js.undefined
+trait SendActionOptions[TContext, TEvent /* <: EventObject */]
+  extends StObject
+     with RaiseActionOptions[TContext, TEvent] {
   
   var to: js.UndefOr[
     String | (ActorRef[Any, Any]) | (ExprWithMeta[TContext, TEvent, String | (ActorRef[Any, Any])])
@@ -23,16 +21,6 @@ object SendActionOptions {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: SendActionOptions[?, ?], TContext, TEvent /* <: EventObject */] (val x: Self & (SendActionOptions[TContext, TEvent])) extends AnyVal {
-    
-    inline def setDelay(value: Double | String | (DelayExpr[TContext, TEvent])): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
-    
-    inline def setDelayFunction3(value: (TContext, TEvent, /* meta */ SCXMLEventMeta[TEvent]) => Double): Self = StObject.set(x, "delay", js.Any.fromFunction3(value))
-    
-    inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
-    
-    inline def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
-    
-    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     inline def setTo(
       value: String | (ActorRef[Any, Any]) | (ExprWithMeta[TContext, TEvent, String | (ActorRef[Any, Any])])

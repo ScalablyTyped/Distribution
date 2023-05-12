@@ -137,10 +137,6 @@ object relayRuntimeStrings {
   inline def Operation: Operation = "Operation".asInstanceOf[Operation]
   
   @js.native
-  sealed trait PageInfo extends StObject
-  inline def PageInfo: PageInfo = "PageInfo".asInstanceOf[PageInfo]
-  
-  @js.native
   sealed trait RANGE_ADD
     extends StObject
        with MutationTypes
@@ -237,28 +233,12 @@ object relayRuntimeStrings {
   inline def backward: backward = "backward".asInstanceOf[backward]
   
   @js.native
-  sealed trait clientMutationId extends StObject
-  inline def clientMutationId: clientMutationId = "clientMutationId".asInstanceOf[clientMutationId]
-  
-  @js.native
   sealed trait complete extends StObject
   inline def complete: complete = "complete".asInstanceOf[complete]
   
   @js.native
-  sealed trait cursor extends StObject
-  inline def cursor: cursor = "cursor".asInstanceOf[cursor]
-  
-  @js.native
   sealed trait defer_ extends StObject
   inline def defer_ : defer_ = "defer".asInstanceOf[defer_]
-  
-  @js.native
-  sealed trait edges extends StObject
-  inline def edges: edges = "edges".asInstanceOf[edges]
-  
-  @js.native
-  sealed trait endCursor extends StObject
-  inline def endCursor: endCursor = "endCursor".asInstanceOf[endCursor]
   
   @js.native
   sealed trait entrypointDotrootDotconsume extends StObject
@@ -303,14 +283,6 @@ object relayRuntimeStrings {
     extends StObject
        with RenderPolicy
   inline def full: full = "full".asInstanceOf[full]
-  
-  @js.native
-  sealed trait hasNextPage extends StObject
-  inline def hasNextPage: hasNextPage = "hasNextPage".asInstanceOf[hasNextPage]
-  
-  @js.native
-  sealed trait hasPreviousPage extends StObject
-  inline def hasPreviousPage: hasPreviousPage = "hasPreviousPage".asInstanceOf[hasPreviousPage]
   
   @js.native
   sealed trait inactive
@@ -370,14 +342,6 @@ object relayRuntimeStrings {
   inline def next: next = "next".asInstanceOf[next]
   
   @js.native
-  sealed trait node extends StObject
-  inline def node: node = "node".asInstanceOf[node]
-  
-  @js.native
-  sealed trait pageInfo_ extends StObject
-  inline def pageInfo_ : pageInfo_ = "pageInfo".asInstanceOf[pageInfo_]
-  
-  @js.native
   sealed trait partial
     extends StObject
        with RenderPolicy
@@ -412,10 +376,6 @@ object relayRuntimeStrings {
   @js.native
   sealed trait stale extends StObject
   inline def stale: stale = "stale".asInstanceOf[stale]
-  
-  @js.native
-  sealed trait startCursor extends StObject
-  inline def startCursor: startCursor = "startCursor".asInstanceOf[startCursor]
   
   @js.native
   sealed trait `store-and-network`

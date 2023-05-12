@@ -351,7 +351,7 @@ object libStoreMod {
     def remove(st: Quad[QuadSubject, QuadPredicate, QuadObject, QuadGraph]): IndexedFormula = js.native
     
     /**
-      * Removes all statements in a doc
+      * Removes all statements in a doc, along with the related metadata including request/response
       * @param doc - The document / graph
       */
     def removeDocument(doc: QuadGraph): IndexedFormula = js.native

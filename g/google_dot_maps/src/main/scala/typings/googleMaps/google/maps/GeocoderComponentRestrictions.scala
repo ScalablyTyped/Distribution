@@ -4,12 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * <code>GeocoderComponentRestrictions</code> represents a set of filters that
-  * resolve to a specific area. For details on how this works, see <a
-  * href="https://developers.google.com/maps/documentation/javascript/geocoding#ComponentFiltering">
-  * Geocoding Component Filtering</a>.
-  */
 trait GeocoderComponentRestrictions extends StObject {
   
   /**

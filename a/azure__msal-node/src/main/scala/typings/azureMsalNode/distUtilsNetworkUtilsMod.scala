@@ -1,6 +1,9 @@
 package typings.azureMsalNode
 
-import typings.azureMsalCommon.distNetworkInetworkmoduleMod.INetworkModule
+import typings.azureMsalCommon.distNetworkNetworkManagerMod.NetworkResponse
+import typings.azureMsalCommon.distNetworkNetworkManagerMod.UrlToHttpRequestOptions
+import typings.std.Record
+import typings.std.URL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,9 +20,8 @@ object distUtilsNetworkUtilsMod {
     @js.native
     val ^ : js.Any = js.native
     
-    /**
-      * Returns best compatible network client object.
-      */
-    inline def getNetworkClient(): INetworkModule = ^.asInstanceOf[js.Dynamic].applyDynamic("getNetworkClient")().asInstanceOf[INetworkModule]
+    inline def getNetworkResponse[T](headers: Record[String, String], body: T, statusCode: Double): NetworkResponse[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("getNetworkResponse")(headers.asInstanceOf[js.Any], body.asInstanceOf[js.Any], statusCode.asInstanceOf[js.Any])).asInstanceOf[NetworkResponse[T]]
+    
+    inline def urlToHttpOptions(url: URL): UrlToHttpRequestOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("urlToHttpOptions")(url.asInstanceOf[js.Any]).asInstanceOf[UrlToHttpRequestOptions]
   }
 }

@@ -31,6 +31,11 @@ trait ObservationReferenceRange
   var low: js.UndefOr[Quantity] = js.undefined
   
   /**
+    * The value of the normal value of the reference range.
+    */
+  var normalValue: js.UndefOr[CodeableConcept] = js.undefined
+  
+  /**
     * Text based reference range in an observation which may be used when a quantitative range is not appropriate for an observation.  An example would be a reference value of "Negative" or a list or table of "normals".
     */
   var text: js.UndefOr[String] = js.undefined
@@ -67,6 +72,10 @@ object ObservationReferenceRange {
     inline def setLow(value: Quantity): Self = StObject.set(x, "low", value.asInstanceOf[js.Any])
     
     inline def setLowUndefined: Self = StObject.set(x, "low", js.undefined)
+    
+    inline def setNormalValue(value: CodeableConcept): Self = StObject.set(x, "normalValue", value.asInstanceOf[js.Any])
+    
+    inline def setNormalValueUndefined: Self = StObject.set(x, "normalValue", js.undefined)
     
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     

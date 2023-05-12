@@ -1,7 +1,7 @@
 
 # Scala.js typings for mdast-util-to-string
 
-Typings are for version 3.1.0
+Typings are for version 3.2.0
 
 ## Library description:
 mdast utility to get the plain text content of a node

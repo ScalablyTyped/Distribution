@@ -37,7 +37,7 @@ trait Locationsurl extends StObject {
   
   var repository: js.UndefOr[Assigneesurl] = js.undefined
   
-  var resolution: js.UndefOr[Null | false_positive | wont_fix | revoked | used_in_tests] = js.undefined
+  var resolution: js.UndefOr[false_positive | wont_fix | revoked | used_in_tests | Null] = js.undefined
   
   /** @description The comment that was optionally added when this alert was closed */
   var resolution_comment: js.UndefOr[String | Null] = js.undefined

@@ -1,0 +1,281 @@
+package typings.cesiumEngine.mod
+
+import typings.cesiumEngine.mod.MapboxStyleImageryProvider.ConstructorOptions
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+@JSImport("@cesium/engine", "MapboxStyleImageryProvider")
+@js.native
+open class MapboxStyleImageryProvider protected () extends StObject {
+  def this(options: ConstructorOptions) = this()
+  
+  /**
+    * Gets the credit to display when this imagery provider is active.  Typically this is used to credit
+    * the source of the imagery.
+    */
+  val credit: Credit = js.native
+  
+  /**
+    * The default alpha blending value of this provider, with 0.0 representing fully transparent and
+    * 1.0 representing fully opaque.
+    */
+  var defaultAlpha: js.UndefOr[Double] = js.native
+  
+  /**
+    * The default brightness of this provider.  1.0 uses the unmodified imagery color.  Less than 1.0
+    * makes the imagery darker while greater than 1.0 makes it brighter.
+    */
+  var defaultBrightness: js.UndefOr[Double] = js.native
+  
+  /**
+    * The default contrast of this provider.  1.0 uses the unmodified imagery color.  Less than 1.0 reduces
+    * the contrast while greater than 1.0 increases it.
+    */
+  var defaultContrast: js.UndefOr[Double] = js.native
+  
+  /**
+    * The default alpha blending value on the day side of the globe of this provider, with 0.0 representing fully transparent and
+    * 1.0 representing fully opaque.
+    */
+  var defaultDayAlpha: js.UndefOr[Double] = js.native
+  
+  /**
+    * The default gamma correction to apply to this provider.  1.0 uses the unmodified imagery color.
+    */
+  var defaultGamma: js.UndefOr[Double] = js.native
+  
+  /**
+    * The default hue of this provider in radians. 0.0 uses the unmodified imagery color.
+    */
+  var defaultHue: js.UndefOr[Double] = js.native
+  
+  /**
+    * The default texture magnification filter to apply to this provider.
+    */
+  var defaultMagnificationFilter: TextureMagnificationFilter = js.native
+  
+  /**
+    * The default texture minification filter to apply to this provider.
+    */
+  var defaultMinificationFilter: TextureMinificationFilter = js.native
+  
+  /**
+    * The default alpha blending value on the night side of the globe of this provider, with 0.0 representing fully transparent and
+    * 1.0 representing fully opaque.
+    */
+  var defaultNightAlpha: js.UndefOr[Double] = js.native
+  
+  /**
+    * The default saturation of this provider. 1.0 uses the unmodified imagery color. Less than 1.0 reduces the
+    * saturation while greater than 1.0 increases it.
+    */
+  var defaultSaturation: js.UndefOr[Double] = js.native
+  
+  /**
+    * Gets an event that is raised when the imagery provider encounters an asynchronous error..  By subscribing
+    * to the event, you will be notified of the error and can potentially recover from it.  Event listeners
+    * are passed an instance of {@link TileProviderError}.
+    */
+  val errorEvent: Event[js.Function1[/* repeated */ Any, Unit]] = js.native
+  
+  /**
+    * Gets the credits to be displayed when a given tile is displayed.
+    * @param x - The tile X coordinate.
+    * @param y - The tile Y coordinate.
+    * @param level - The tile level;
+    * @returns The credits to be displayed when the tile is displayed.
+    */
+  def getTileCredits(x: Double, y: Double, level: Double): js.Array[Credit] = js.native
+  
+  /**
+    * Gets a value indicating whether or not the images provided by this imagery provider
+    * include an alpha channel.  If this property is false, an alpha channel, if present, will
+    * be ignored.  If this property is true, any images without an alpha channel will be treated
+    * as if their alpha is 1.0 everywhere.  When this property is false, memory usage
+    * and texture upload time are reduced.
+    */
+  val hasAlphaChannel: Boolean = js.native
+  
+  /**
+    * Gets the maximum level-of-detail that can be requested.
+    */
+  val maximumLevel: js.UndefOr[Double] = js.native
+  
+  /**
+    * Gets the minimum level-of-detail that can be requested. Generally,
+    * a minimum level should only be used when the rectangle of the imagery is small
+    * enough that the number of tiles at the minimum level is small.  An imagery
+    * provider with more than a few tiles at the minimum level will lead to
+    * rendering problems.
+    */
+  val minimumLevel: Double = js.native
+  
+  /**
+    * Asynchronously determines what features, if any, are located at a given longitude and latitude within
+    * a tile. This function is optional, so it may not exist on all ImageryProviders.
+    * @param x - The tile X coordinate.
+    * @param y - The tile Y coordinate.
+    * @param level - The tile level.
+    * @param longitude - The longitude at which to pick features.
+    * @param latitude - The latitude at which to pick features.
+    * @returns A promise for the picked features that will resolve when the asynchronous
+    *                   picking completes.  The resolved value is an array of {@link ImageryLayerFeatureInfo}
+    *                   instances.  The array may be empty if no features are found at the given location.
+    *                   It may also be undefined if picking is not supported.
+    */
+  def pickFeatures(x: Double, y: Double, level: Double, longitude: Double, latitude: Double): js.UndefOr[js.Promise[js.Array[ImageryLayerFeatureInfo]]] = js.native
+  
+  /**
+    * Gets the proxy used by this provider.
+    */
+  val proxy: Proxy = js.native
+  
+  /**
+    * Gets a value indicating whether or not the provider is ready for use.
+    */
+  val ready: Boolean = js.native
+  
+  /**
+    * Gets a promise that resolves to true when the provider is ready for use.
+    */
+  val readyPromise: js.Promise[Boolean] = js.native
+  
+  /**
+    * Gets the rectangle, in radians, of the imagery provided by the instance.
+    */
+  val rectangle: Rectangle = js.native
+  
+  /**
+    * Requests the image for a given tile.
+    * @param x - The tile X coordinate.
+    * @param y - The tile Y coordinate.
+    * @param level - The tile level.
+    * @param [request] - The request object. Intended for internal use only.
+    * @returns A promise for the image that will resolve when the image is available, or
+    *          undefined if there are too many active requests to the server, and the request should be retried later.
+    */
+  def requestImage(x: Double, y: Double, level: Double): js.UndefOr[js.Promise[ImageryTypes]] = js.native
+  def requestImage(x: Double, y: Double, level: Double, request: Request): js.UndefOr[js.Promise[ImageryTypes]] = js.native
+  
+  /**
+    * Gets the tile discard policy.  If not undefined, the discard policy is responsible
+    * for filtering out "missing" tiles via its shouldDiscardImage function.  If this function
+    * returns undefined, no tiles are filtered.
+    */
+  val tileDiscardPolicy: TileDiscardPolicy = js.native
+  
+  /**
+    * Gets the height of each tile, in pixels.
+    */
+  val tileHeight: Double = js.native
+  
+  /**
+    * Gets the width of each tile, in pixels.
+    */
+  val tileWidth: Double = js.native
+  
+  /**
+    * Gets the tiling scheme used by the provider.
+    */
+  val tilingScheme: TilingScheme = js.native
+  
+  /**
+    * Gets the URL of the Mapbox server.
+    */
+  val url: String = js.native
+}
+object MapboxStyleImageryProvider {
+  
+  /**
+    * Initialization options for the MapboxStyleImageryProvider constructor
+    * @property [url = 'https://api.mapbox.com/styles/v1/'] - The Mapbox server url.
+    * @property [username = 'mapbox'] - The username of the map account.
+    * @property styleId - The Mapbox Style ID.
+    * @property accessToken - The public access token for the imagery.
+    * @property [tilesize = 512] - The size of the image tiles.
+    * @property [scaleFactor] - Determines if tiles are rendered at a @2x scale factor.
+    * @property [ellipsoid] - The ellipsoid.  If not specified, the WGS84 ellipsoid is used.
+    * @property [minimumLevel = 0] - The minimum level-of-detail supported by the imagery provider.  Take care when specifying
+    *                 this that the number of tiles at the minimum level is small, such as four or less.  A larger number is likely
+    *                 to result in rendering problems.
+    * @property [maximumLevel] - The maximum level-of-detail supported by the imagery provider, or undefined if there is no limit.
+    * @property [rectangle = Rectangle.MAX_VALUE] - The rectangle, in radians, covered by the image.
+    * @property [credit] - A credit for the data source, which is displayed on the canvas.
+    */
+  trait ConstructorOptions extends StObject {
+    
+    var accessToken: String
+    
+    var credit: js.UndefOr[Credit | String] = js.undefined
+    
+    var ellipsoid: js.UndefOr[Ellipsoid] = js.undefined
+    
+    var maximumLevel: js.UndefOr[Double] = js.undefined
+    
+    var minimumLevel: js.UndefOr[Double] = js.undefined
+    
+    var rectangle: js.UndefOr[Rectangle] = js.undefined
+    
+    var scaleFactor: js.UndefOr[Boolean] = js.undefined
+    
+    var styleId: String
+    
+    var tilesize: js.UndefOr[Double] = js.undefined
+    
+    var url: js.UndefOr[Resource | String] = js.undefined
+    
+    var username: js.UndefOr[String] = js.undefined
+  }
+  object ConstructorOptions {
+    
+    inline def apply(accessToken: String, styleId: String): ConstructorOptions = {
+      val __obj = js.Dynamic.literal(accessToken = accessToken.asInstanceOf[js.Any], styleId = styleId.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ConstructorOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConstructorOptions] (val x: Self) extends AnyVal {
+      
+      inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
+      
+      inline def setCredit(value: Credit | String): Self = StObject.set(x, "credit", value.asInstanceOf[js.Any])
+      
+      inline def setCreditUndefined: Self = StObject.set(x, "credit", js.undefined)
+      
+      inline def setEllipsoid(value: Ellipsoid): Self = StObject.set(x, "ellipsoid", value.asInstanceOf[js.Any])
+      
+      inline def setEllipsoidUndefined: Self = StObject.set(x, "ellipsoid", js.undefined)
+      
+      inline def setMaximumLevel(value: Double): Self = StObject.set(x, "maximumLevel", value.asInstanceOf[js.Any])
+      
+      inline def setMaximumLevelUndefined: Self = StObject.set(x, "maximumLevel", js.undefined)
+      
+      inline def setMinimumLevel(value: Double): Self = StObject.set(x, "minimumLevel", value.asInstanceOf[js.Any])
+      
+      inline def setMinimumLevelUndefined: Self = StObject.set(x, "minimumLevel", js.undefined)
+      
+      inline def setRectangle(value: Rectangle): Self = StObject.set(x, "rectangle", value.asInstanceOf[js.Any])
+      
+      inline def setRectangleUndefined: Self = StObject.set(x, "rectangle", js.undefined)
+      
+      inline def setScaleFactor(value: Boolean): Self = StObject.set(x, "scaleFactor", value.asInstanceOf[js.Any])
+      
+      inline def setScaleFactorUndefined: Self = StObject.set(x, "scaleFactor", js.undefined)
+      
+      inline def setStyleId(value: String): Self = StObject.set(x, "styleId", value.asInstanceOf[js.Any])
+      
+      inline def setTilesize(value: Double): Self = StObject.set(x, "tilesize", value.asInstanceOf[js.Any])
+      
+      inline def setTilesizeUndefined: Self = StObject.set(x, "tilesize", js.undefined)
+      
+      inline def setUrl(value: Resource | String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      
+      inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
+    }
+  }
+}

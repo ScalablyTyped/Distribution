@@ -26,18 +26,15 @@ open class IText protected () extends Text {
   def this(text: String, options: ITextOptions) = this()
   
   /**
-    * @private
     * @return {Object} style contains style for hiddenTextarea
     */
   def _calcTextareaPosition(): CharHeight = js.native
   
   /**
-    * @private
     */
   var _currentCursorOpacity: Double = js.native
   
   /**
-    * @private
     */
   def _getNewSelectionStartFromOffset(mouseOffset: X, prevWidth: Double, width: Double, index: Double, jlen: Double): Double = js.native
   
@@ -46,18 +43,15 @@ open class IText protected () extends Text {
     * can be overridden to do something different.
     * Scope of this implementation is: find the click position, set selectionStart
     * find selectionEnd, initialize the drawing of either cursor or selection area
-    * @private
     * @param {Object} Options (seems to have an event `e` parameter
     */
   def _mouseDownHandler(options: Any): Unit = js.native
   
   /**
-    * @private
     */
   var _reSpace: js.RegExp = js.native
   
   /**
-    * @private
     */
   def _updateTextarea(): Unit = js.native
   
@@ -68,7 +62,6 @@ open class IText protected () extends Text {
   
   /**
     * Indicates whether internal text char widths can be cached
-    * @type Boolean
     */
   var caching: js.UndefOr[Boolean] = js.native
   
@@ -95,37 +88,31 @@ open class IText protected () extends Text {
   
   /**
     * Color of default cursor (when not overwritten by character style)
-    * @type String
     */
   var cursorColor: js.UndefOr[String] = js.native
   
   /**
     * Delay between cursor blink (in ms)
-    * @type Number
     */
   var cursorDelay: js.UndefOr[Double] = js.native
   
   /**
     * Duration of cursor fadein (in ms)
-    * @type Number
     */
   var cursorDuration: js.UndefOr[Double] = js.native
   
   /**
     * Width of cursor (in px)
-    * @type Number
     */
   var cursorWidth: js.UndefOr[Double] = js.native
   
   /**
     * Indicates whether a text can be edited
-    * @type Boolean
     */
   var editable: js.UndefOr[Boolean] = js.native
   
   /**
     * Border color of text object while it's in editing mode
-    * @type String
     */
   var editingBorderColor: js.UndefOr[String] = js.native
   
@@ -334,7 +321,6 @@ open class IText protected () extends Text {
   
   /**
     * Indicates whether text is in editing mode
-    * @type Boolean
     */
   var isEditing: js.UndefOr[Boolean] = js.native
   
@@ -514,25 +500,21 @@ open class IText protected () extends Text {
   
   /**
     * Indicates whether text is selected
-    * @type Boolean
     */
   var selected: js.UndefOr[Boolean] = js.native
   
   /**
     * Color of text selection
-    * @type String
     */
   var selectionColor: js.UndefOr[String] = js.native
   
   /**
     * Index where text selection ends
-    * @type Number
     */
   var selectionEnd: js.UndefOr[Double] = js.native
   
   /**
     * Index where text selection starts (or where cursor is when there is no selection)
-    * @type Number
     */
   var selectionStart: js.UndefOr[Double] = js.native
   
@@ -568,7 +550,6 @@ open class IText protected () extends Text {
   def shiftLineStyles(lineIndex: Double, offset: Double): Unit = js.native
   
   /**
-    * @private
     */
   def updateFromTextArea(): Unit = js.native
   

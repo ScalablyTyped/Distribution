@@ -12,7 +12,7 @@ open class Form[T /* <: js.Object */] protected ()
   def this(props: FormProps[T]) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: FormProps[T], context: Any) = this()
 }

@@ -7,23 +7,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CommentReaction extends StObject {
   
   /**
-    * Whether the {@link CommentAuthorInformation author} of the comment has reacted to this reaction
-    */
+  		 * Whether the {@link CommentAuthorInformation author} of the comment has reacted to this reaction
+  		 */
   val authorHasReacted: Boolean
   
   /**
-    * The number of users who have reacted to this reaction
-    */
+  		 * The number of users who have reacted to this reaction
+  		 */
   val count: Double
   
   /**
-    * Icon for the reaction shown in UI.
-    */
+  		 * Icon for the reaction shown in UI.
+  		 */
   val iconPath: String | Uri
   
   /**
-    * The human-readable label for the reaction
-    */
+  		 * The human-readable label for the reaction
+  		 */
   val label: String
 }
 object CommentReaction {

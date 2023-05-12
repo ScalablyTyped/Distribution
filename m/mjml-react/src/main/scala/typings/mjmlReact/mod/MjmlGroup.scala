@@ -12,7 +12,7 @@ open class MjmlGroup protected ()
   def this(props: MjmlGroupProps & ClassNameProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: MjmlGroupProps & ClassNameProps, context: Any) = this()
 }

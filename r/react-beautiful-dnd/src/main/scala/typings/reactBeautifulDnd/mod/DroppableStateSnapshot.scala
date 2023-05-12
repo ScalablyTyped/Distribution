@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DroppableStateSnapshot extends StObject {
   
-  var draggingFromThisWith: js.UndefOr[DraggableId] = js.undefined
+  var draggingFromThisWith: js.UndefOr[DraggableId | Null] = js.undefined
   
-  var draggingOverWith: js.UndefOr[DraggableId] = js.undefined
+  var draggingOverWith: js.UndefOr[DraggableId | Null] = js.undefined
   
   var isDraggingOver: Boolean
   
@@ -26,9 +26,13 @@ object DroppableStateSnapshot {
     
     inline def setDraggingFromThisWith(value: DraggableId): Self = StObject.set(x, "draggingFromThisWith", value.asInstanceOf[js.Any])
     
+    inline def setDraggingFromThisWithNull: Self = StObject.set(x, "draggingFromThisWith", null)
+    
     inline def setDraggingFromThisWithUndefined: Self = StObject.set(x, "draggingFromThisWith", js.undefined)
     
     inline def setDraggingOverWith(value: DraggableId): Self = StObject.set(x, "draggingOverWith", value.asInstanceOf[js.Any])
+    
+    inline def setDraggingOverWithNull: Self = StObject.set(x, "draggingOverWith", null)
     
     inline def setDraggingOverWithUndefined: Self = StObject.set(x, "draggingOverWith", js.undefined)
     

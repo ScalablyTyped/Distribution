@@ -38,6 +38,30 @@ open class NgModel protected ()
     valueAccessors: js.Array[ControlValueAccessor],
     _changeDetectorRef: ChangeDetectorRef
   ) = this()
+  def this(
+    parent: ControlContainer,
+    validators: js.Array[Validator | ValidatorFn],
+    asyncValidators: js.Array[AsyncValidator | AsyncValidatorFn],
+    valueAccessors: js.Array[ControlValueAccessor],
+    _changeDetectorRef: Null,
+    callSetDisabledState: SetDisabledStateOption
+  ) = this()
+  def this(
+    parent: ControlContainer,
+    validators: js.Array[Validator | ValidatorFn],
+    asyncValidators: js.Array[AsyncValidator | AsyncValidatorFn],
+    valueAccessors: js.Array[ControlValueAccessor],
+    _changeDetectorRef: Unit,
+    callSetDisabledState: SetDisabledStateOption
+  ) = this()
+  def this(
+    parent: ControlContainer,
+    validators: js.Array[Validator | ValidatorFn],
+    asyncValidators: js.Array[AsyncValidator | AsyncValidatorFn],
+    valueAccessors: js.Array[ControlValueAccessor],
+    _changeDetectorRef: ChangeDetectorRef,
+    callSetDisabledState: SetDisabledStateOption
+  ) = this()
   
   /* private */ var _changeDetectorRef: Any = js.native
   
@@ -60,6 +84,8 @@ open class NgModel protected ()
   /* private */ var _updateDisabled: Any = js.native
   
   /* private */ var _updateValue: Any = js.native
+  
+  /* private */ var callSetDisabledState: Any = js.native
   
   @JSName("control")
   val control_FNgModel: FormControl[Any] = js.native
@@ -161,7 +187,8 @@ object NgModel {
     Update, 
     scala.Nothing, 
     scala.Nothing, 
-    `false`
+    `false`, 
+    scala.Nothing
   ] = js.native
   inline def ɵdir_=(
     x: ɵɵDirectiveDeclaration[
@@ -172,12 +199,13 @@ object NgModel {
       Update, 
       scala.Nothing, 
       scala.Nothing, 
-      `false`
+      `false`, 
+      scala.Nothing
     ]
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275dir")(x.asInstanceOf[js.Any])
   
   @JSImport("@angular/forms", "NgModel.\u0275fac")
   @js.native
-  def ɵfac: ɵɵFactoryDeclaration[NgModel, js.Tuple5[HostOptional, Self, Self, Self, Optional]] = js.native
-  inline def ɵfac_=(x: ɵɵFactoryDeclaration[NgModel, js.Tuple5[HostOptional, Self, Self, Self, Optional]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275fac")(x.asInstanceOf[js.Any])
+  def ɵfac: ɵɵFactoryDeclaration[NgModel, js.Tuple6[HostOptional, Self, Self, Self, Optional, Optional]] = js.native
+  inline def ɵfac_=(x: ɵɵFactoryDeclaration[NgModel, js.Tuple6[HostOptional, Self, Self, Self, Optional, Optional]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275fac")(x.asInstanceOf[js.Any])
 }

@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListRoomsRequest extends StObject {
   
   /**
+    * Logging-configuration identifier.
+    */
+  var loggingConfigurationIdentifier: js.UndefOr[LoggingConfigurationIdentifier] = js.undefined
+  
+  /**
     * Maximum number of rooms to return. Default: 50.
     */
   var maxResults: js.UndefOr[MaxRoomResults] = js.undefined
@@ -35,6 +40,10 @@ object ListRoomsRequest {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: ListRoomsRequest] (val x: Self) extends AnyVal {
+    
+    inline def setLoggingConfigurationIdentifier(value: LoggingConfigurationIdentifier): Self = StObject.set(x, "loggingConfigurationIdentifier", value.asInstanceOf[js.Any])
+    
+    inline def setLoggingConfigurationIdentifierUndefined: Self = StObject.set(x, "loggingConfigurationIdentifier", js.undefined)
     
     inline def setMaxResults(value: MaxRoomResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     

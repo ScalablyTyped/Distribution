@@ -1,7 +1,6 @@
 package typings.awsSdkClientCognitoIdentity
 
 import typings.awsSdkClientCognitoIdentity.distTypesCognitoIdentityClientMod.CognitoIdentityClient
-import typings.awsSdkClientCognitoIdentity.distTypesCognitoIdentityMod.CognitoIdentity
 import typings.awsSdkTypes.distTypesPaginationMod.PaginationConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,11 +13,11 @@ object distTypesPaginationInterfacesMod {
        with PaginationConfiguration {
     
     @JSName("client")
-    var client_CognitoIdentityPaginationConfiguration: CognitoIdentity | CognitoIdentityClient
+    var client_CognitoIdentityPaginationConfiguration: CognitoIdentityClient
   }
   object CognitoIdentityPaginationConfiguration {
     
-    inline def apply(client: CognitoIdentity | CognitoIdentityClient): CognitoIdentityPaginationConfiguration = {
+    inline def apply(client: CognitoIdentityClient): CognitoIdentityPaginationConfiguration = {
       val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any])
       __obj.asInstanceOf[CognitoIdentityPaginationConfiguration]
     }
@@ -26,7 +25,7 @@ object distTypesPaginationInterfacesMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: CognitoIdentityPaginationConfiguration] (val x: Self) extends AnyVal {
       
-      inline def setClient(value: CognitoIdentity | CognitoIdentityClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+      inline def setClient(value: CognitoIdentityClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     }
   }
 }

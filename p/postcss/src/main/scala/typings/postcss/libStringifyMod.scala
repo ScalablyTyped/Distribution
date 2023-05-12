@@ -8,12 +8,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object libStringifyMod extends Shortcut {
   
-  @JSImport("postcss/lib/stringify", JSImport.Default)
+  @JSImport("postcss/lib/stringify", JSImport.Namespace)
   @js.native
-  val default: Stringifier = js.native
+  val ^ : Stringify = js.native
   
-  type _To = Stringifier
+  @js.native
+  trait Stringify extends Stringifier {
+    
+    var default: Stringify = js.native
+  }
   
-  /* This means you don't have to write `default`, but can instead just say `libStringifyMod.foo` */
-  override def _to: Stringifier = default
+  type _To = Stringify
+  
+  /* This means you don't have to write `^`, but can instead just say `libStringifyMod.foo` */
+  override def _to: Stringify = ^
 }

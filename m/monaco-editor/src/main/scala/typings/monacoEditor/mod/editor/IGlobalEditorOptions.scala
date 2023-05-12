@@ -51,7 +51,7 @@ trait IGlobalEditorOptions extends StObject {
   var semanticHighlightingDotenabled: js.UndefOr[`true` | `false` | configuredByTheme] = js.undefined
   
   /**
-    * Keep peek editors open even when double clicking their content or when hitting `Escape`.
+    * Keep peek editors open even when double-clicking their content or when hitting `Escape`.
     * Defaults to false.
     */
   var stablePeek: js.UndefOr[Boolean] = js.undefined

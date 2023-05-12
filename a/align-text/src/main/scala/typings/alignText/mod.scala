@@ -17,11 +17,12 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  type Callback = js.Function4[
+  type Callback = js.Function5[
     /* len */ Double, 
     /* longest */ Double, 
     /* line */ String, 
     /* lines */ js.Array[String], 
+    /* idx */ Double, 
     Double | TransformResult
   ]
   

@@ -12,13 +12,6 @@ trait PlotCylinderOptions extends StObject {
   var accessibility: js.UndefOr[SeriesAccessibilityOptionsObject] = js.undefined
   
   /**
-    * (Highmaps) Whether all areas of the map defined in `mapData` should be
-    * rendered. If `true`, areas which don't correspond to a data point, are
-    * rendered as `null` points. If `false`, those areas are skipped.
-    */
-  var allAreas: js.UndefOr[Boolean] = js.undefined
-  
-  /**
     * (Highcharts) Allow this series' points to be selected by clicking on the
     * graphic (columns, point markers, pie slices, map areas etc).
     *
@@ -63,28 +56,6 @@ trait PlotCylinderOptions extends StObject {
   var animationLimit: js.UndefOr[Double] = js.undefined
   
   /**
-    * (Highcharts) Sets the color blending in the boost module.
-    */
-  var boostBlending: js.UndefOr[String] = js.undefined
-  
-  /**
-    * (Highcharts) Set the point threshold for when a series should enter boost
-    * mode.
-    *
-    * Setting it to e.g. 2000 will cause the series to enter boost mode when
-    * there are 2000 or more points in the series.
-    *
-    * To disable boosting on the series, set the `boostThreshold` to 0. Setting
-    * it to 1 will force boosting.
-    *
-    * Note that the cropThreshold also affects this setting. When zooming in on
-    * a series that has fewer points than the `cropThreshold`, all points are
-    * rendered although outside the visible plot area, and the `boostThreshold`
-    * won't take effect.
-    */
-  var boostThreshold: js.UndefOr[Double] = js.undefined
-  
-  /**
     * (Highcharts, Highstock, Gantt) The color of the border surrounding each
     * column or bar.
     *
@@ -95,9 +66,12 @@ trait PlotCylinderOptions extends StObject {
   
   /**
     * (Highcharts, Highstock, Gantt) The corner radius of the border
-    * surrounding each column or bar.
+    * surrounding each column or bar. A number signifies pixels. A percentage
+    * string, like for example `50%`, signifies a relative size. For columns
+    * this is relative to the column width, for pies it is relative to the
+    * radius and the inner radius.
     */
-  var borderRadius: js.UndefOr[Double] = js.undefined
+  var borderRadius: js.UndefOr[Double | String | BorderRadiusOptionsObject] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) The width of the border surrounding each
@@ -120,7 +94,8 @@ trait PlotCylinderOptions extends StObject {
   /**
     * (Highcharts) An additional class name to apply to the series' graphical
     * elements. This option does not replace default class names of the
-    * graphical element.
+    * graphical element. Changes to the series' color will also be reflected in
+    * a chart's legend and tooltip.
     */
   var className: js.UndefOr[String] = js.undefined
   
@@ -147,18 +122,6 @@ trait PlotCylinderOptions extends StObject {
   var color: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
   /**
-    * (Highcharts, Highstock, Highmaps) When using dual or multiple color axes,
-    * this number defines which colorAxis the particular series is connected
-    * to. It refers to either the axis id or the index of the axis in the
-    * colorAxis array, with 0 being the first. Set this option to false to
-    * prevent a series from connecting to the default color axis.
-    *
-    * Since v7.2.0 the option can also be an axis id or an axis index instead
-    * of a boolean flag.
-    */
-  var colorAxis: js.UndefOr[Boolean | Double | String] = js.undefined
-  
-  /**
     * (Highcharts, Highstock, Gantt) When using automatic point colors pulled
     * from the global colors or series-specific plotOptions.column.colors
     * collections, this option determines whether the chart should receive one
@@ -174,6 +137,9 @@ trait PlotCylinderOptions extends StObject {
     * (Highcharts) Styled mode only. A specific color index to use for the
     * series, so its graphic representations are given the class name
     * `highcharts-color-{n}`.
+    *
+    * Since v11, CSS variables on the form `--highcharts-color-{n}` make
+    * changing the color scheme very convenient.
     */
   var colorIndex: js.UndefOr[Double] = js.undefined
   
@@ -193,22 +159,6 @@ trait PlotCylinderOptions extends StObject {
   var colors: js.UndefOr[js.Array[ColorString | GradientColorObject | PatternObject]] = js.undefined
   
   /**
-    * (Highstock) Compare the values of the series against the first non-null,
-    * non- zero value in the visible range. The y axis will show percentage or
-    * absolute change depending on whether `compare` is set to `"percent"` or
-    * `"value"`. When this is applied to multiple series, it allows comparing
-    * the development of the series against each other. Adds a `change` field
-    * to every point object.
-    */
-  var compare: js.UndefOr[String] = js.undefined
-  
-  /**
-    * (Highstock) When compare is `percent`, this option dictates whether to
-    * use 0 or 100 as the base of comparison.
-    */
-  var compareBase: js.UndefOr[Double] = js.undefined
-  
-  /**
     * (Highstock) Defines if comparison should start from the first point
     * within the visible range or should start from the first point **before**
     * the range.
@@ -218,19 +168,6 @@ trait PlotCylinderOptions extends StObject {
     * calculated according to the previous point (`compareStart=false`).
     */
   var compareStart: js.UndefOr[Boolean] = js.undefined
-  
-  /**
-    * (Highcharts) Polar charts only. Whether to connect the ends of a line
-    * series plot across the extremes.
-    */
-  var connectEnds: js.UndefOr[Boolean] = js.undefined
-  
-  /**
-    * (Highcharts, Highstock) Whether to connect a graph line across null
-    * points, or render a gap between the two points on either side of the
-    * null.
-    */
-  var connectNulls: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Gantt) Override Pathfinder connector options for a series. Requires
@@ -296,11 +233,6 @@ trait PlotCylinderOptions extends StObject {
   var dashStyle: js.UndefOr[DashStyleValue] = js.undefined
   
   /**
-    * (Highcharts) Indicates data is structured as columns instead of rows.
-    */
-  var dataAsColumns: js.UndefOr[Boolean] = js.undefined
-  
-  /**
     * (Highstock) Data grouping is the concept of sampling the data values into
     * larger blocks in order to ease readability and increase performance of
     * the JavaScript charts. Highcharts Stock by default applies data grouping
@@ -346,14 +278,6 @@ trait PlotCylinderOptions extends StObject {
   var description: js.UndefOr[String] = js.undefined
   
   /**
-    * (Highcharts) The draggable-points module allows points to be moved around
-    * or modified in the chart. In addition to the options mentioned under the
-    * `dragDrop` API structure, the module fires three events, point.dragStart,
-    * point.drag and point.drop.
-    */
-  var dragDrop: js.UndefOr[SeriesDragDropOptionsObject] = js.undefined
-  
-  /**
     * (Highcharts) 3D columns only. The color of the edges. Similar to
     * `borderColor`, except it defaults to the same color as the column.
     */
@@ -388,38 +312,7 @@ trait PlotCylinderOptions extends StObject {
     * Applies only to series types using nearest neighbor search (not direct
     * hover) for tooltip.
     */
-  var findNearestPointBy: js.UndefOr[String] = js.undefined
-  
-  /**
-    * (Highstock) Defines when to display a gap in the graph, together with the
-    * gapUnit option.
-    *
-    * In case when `dataGrouping` is enabled, points can be grouped into a
-    * larger time span. This can make the grouped points to have a greater
-    * distance than the absolute value of `gapSize` property, which will result
-    * in disappearing graph completely. To prevent this situation the mentioned
-    * distance between grouped points is used instead of previously defined
-    * `gapSize`.
-    *
-    * In practice, this option is most often used to visualize gaps in time
-    * series. In a stock chart, intraday data is available for daytime hours,
-    * while gaps will appear in nights and weekends.
-    */
-  var gapSize: js.UndefOr[Double] = js.undefined
-  
-  /**
-    * (Highstock) Together with gapSize, this option defines where to draw gaps
-    * in the graph.
-    *
-    * When the `gapUnit` is `"relative"` (default), a gap size of 5 means that
-    * if the distance between two points is greater than 5 times that of the
-    * two closest points, the graph will be broken.
-    *
-    * When the `gapUnit` is `"value"`, the gap is based on absolute axis
-    * values, which on a datetime axis is milliseconds. This also applies to
-    * the navigator series that inherits gap options from the base series.
-    */
-  var gapUnit: js.UndefOr[String] = js.undefined
+  var findNearestPointBy: js.UndefOr[OptionsFindNearestPointByValue] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) Whether to use the Y extremes of the total
@@ -502,17 +395,7 @@ trait PlotCylinderOptions extends StObject {
     */
   var lastVisiblePrice: js.UndefOr[SeriesLastVisiblePriceOptionsObject] = js.undefined
   
-  /**
-    * (Highcharts, Highstock) Pixel width of the graph line.
-    */
-  var lineWidth: js.UndefOr[Double] = js.undefined
-  
-  /**
-    * (Highcharts, Highstock) The SVG value used for the `stroke-linecap` and
-    * `stroke-linejoin` of a line graph. Round means that lines are rounded in
-    * the ends and bends.
-    */
-  var linecap: js.UndefOr[SeriesLinecapValue] = js.undefined
+  var legendSymbol: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) The id of another series to link to.
@@ -525,17 +408,6 @@ trait PlotCylinderOptions extends StObject {
     * order as the master one.
     */
   var linkedTo: js.UndefOr[String] = js.undefined
-  
-  /**
-    * (Highcharts) Options for the point markers of line-like series.
-    * Properties like `fillColor`, `lineColor` and `lineWidth` define the
-    * visual appearance of the markers. Other series types, like column series,
-    * don't have markers, but have visual options on the series level instead.
-    *
-    * In styled mode, the markers can be styled with the `.highcharts-point`,
-    * `.highcharts-point-hover` and `.highcharts-point-select` class names.
-    */
-  var marker: js.UndefOr[PointMarkerOptionsObject] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) The maximum allowed pixel width for a
@@ -624,7 +496,7 @@ trait PlotCylinderOptions extends StObject {
     * Please note that this options applies to the _series data_, not the
     * interval of the axis ticks, which is independent.
     */
-  var pointIntervalUnit: js.UndefOr[String] = js.undefined
+  var pointIntervalUnit: js.UndefOr[OptionsPointIntervalUnitValue] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) Padding between each column or bar, in x
@@ -717,6 +589,11 @@ trait PlotCylinderOptions extends StObject {
     * (Highcharts) Whether to apply a drop shadow to the graph line. Since 2.3
     * the shadow can be an object configuration containing `color`, `offsetX`,
     * `offsetY`, `opacity` and `width`.
+    *
+    * Note that in some cases, like stacked columns or other dense layouts, the
+    * series may cast shadows on each other. In that case, the
+    * `chart.seriesGroupShadow` allows applying a common drop shadow to the
+    * whole series group.
     */
   var shadow: js.UndefOr[Boolean | ShadowOptionsObject] = js.undefined
   
@@ -759,6 +636,11 @@ trait PlotCylinderOptions extends StObject {
   var softThreshold: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * (Highcharts) Sonification/audio chart options for a series.
+    */
+  var sonification: js.UndefOr[PlotCylinderSonificationOptions] = js.undefined
+  
+  /**
     * (Highcharts, Highstock) Whether to stack the values of each series on top
     * of each other. Possible values are `undefined` to disable, `"normal"` to
     * stack by value or `"percent"`.
@@ -769,15 +651,9 @@ trait PlotCylinderOptions extends StObject {
     * streamgraph series type, the stacking option is set to `"stream"`. The
     * second one is `"overlap"`, which only applies to waterfall series.
     */
-  var stacking: js.UndefOr[String] = js.undefined
+  var stacking: js.UndefOr[OptionsStackingValue] = js.undefined
   
   var states: js.UndefOr[SeriesStatesOptionsObject] = js.undefined
-  
-  /**
-    * (Highcharts, Highstock) Whether to apply steps to the line. Possible
-    * values are `left`, `center` and `right`.
-    */
-  var step: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts) Sticky tracking of mouse events. When true, the `mouseOut`
@@ -822,12 +698,6 @@ trait PlotCylinderOptions extends StObject {
   var turboThreshold: js.UndefOr[Double] = js.undefined
   
   /**
-    * (Highstock) The parameter allows setting line series type and use OHLC
-    * indicators. Data in OHLC format is required.
-    */
-  var useOhlcData: js.UndefOr[Boolean] = js.undefined
-  
-  /**
     * (Highcharts) Set the initial visibility of the series.
     */
   var visible: js.UndefOr[Boolean] = js.undefined
@@ -868,10 +738,6 @@ object PlotCylinderOptions {
     
     inline def setAccessibilityUndefined: Self = StObject.set(x, "accessibility", js.undefined)
     
-    inline def setAllAreas(value: Boolean): Self = StObject.set(x, "allAreas", value.asInstanceOf[js.Any])
-    
-    inline def setAllAreasUndefined: Self = StObject.set(x, "allAreas", js.undefined)
-    
     inline def setAllowPointSelect(value: Boolean): Self = StObject.set(x, "allowPointSelect", value.asInstanceOf[js.Any])
     
     inline def setAllowPointSelectUndefined: Self = StObject.set(x, "allowPointSelect", js.undefined)
@@ -884,19 +750,11 @@ object PlotCylinderOptions {
     
     inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     
-    inline def setBoostBlending(value: String): Self = StObject.set(x, "boostBlending", value.asInstanceOf[js.Any])
-    
-    inline def setBoostBlendingUndefined: Self = StObject.set(x, "boostBlending", js.undefined)
-    
-    inline def setBoostThreshold(value: Double): Self = StObject.set(x, "boostThreshold", value.asInstanceOf[js.Any])
-    
-    inline def setBoostThresholdUndefined: Self = StObject.set(x, "boostThreshold", js.undefined)
-    
     inline def setBorderColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     
     inline def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
     
-    inline def setBorderRadius(value: Double): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
+    inline def setBorderRadius(value: Double | String | BorderRadiusOptionsObject): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
     
     inline def setBorderRadiusUndefined: Self = StObject.set(x, "borderRadius", js.undefined)
     
@@ -918,10 +776,6 @@ object PlotCylinderOptions {
     
     inline def setColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    inline def setColorAxis(value: Boolean | Double | String): Self = StObject.set(x, "colorAxis", value.asInstanceOf[js.Any])
-    
-    inline def setColorAxisUndefined: Self = StObject.set(x, "colorAxis", js.undefined)
-    
     inline def setColorByPoint(value: Boolean): Self = StObject.set(x, "colorByPoint", value.asInstanceOf[js.Any])
     
     inline def setColorByPointUndefined: Self = StObject.set(x, "colorByPoint", js.undefined)
@@ -942,25 +796,9 @@ object PlotCylinderOptions {
     
     inline def setColorsVarargs(value: (ColorString | GradientColorObject | PatternObject)*): Self = StObject.set(x, "colors", js.Array(value*))
     
-    inline def setCompare(value: String): Self = StObject.set(x, "compare", value.asInstanceOf[js.Any])
-    
-    inline def setCompareBase(value: Double): Self = StObject.set(x, "compareBase", value.asInstanceOf[js.Any])
-    
-    inline def setCompareBaseUndefined: Self = StObject.set(x, "compareBase", js.undefined)
-    
     inline def setCompareStart(value: Boolean): Self = StObject.set(x, "compareStart", value.asInstanceOf[js.Any])
     
     inline def setCompareStartUndefined: Self = StObject.set(x, "compareStart", js.undefined)
-    
-    inline def setCompareUndefined: Self = StObject.set(x, "compare", js.undefined)
-    
-    inline def setConnectEnds(value: Boolean): Self = StObject.set(x, "connectEnds", value.asInstanceOf[js.Any])
-    
-    inline def setConnectEndsUndefined: Self = StObject.set(x, "connectEnds", js.undefined)
-    
-    inline def setConnectNulls(value: Boolean): Self = StObject.set(x, "connectNulls", value.asInstanceOf[js.Any])
-    
-    inline def setConnectNullsUndefined: Self = StObject.set(x, "connectNulls", js.undefined)
     
     inline def setConnectors(value: SeriesConnectorsOptionsObject): Self = StObject.set(x, "connectors", value.asInstanceOf[js.Any])
     
@@ -990,10 +828,6 @@ object PlotCylinderOptions {
     
     inline def setDashStyleUndefined: Self = StObject.set(x, "dashStyle", js.undefined)
     
-    inline def setDataAsColumns(value: Boolean): Self = StObject.set(x, "dataAsColumns", value.asInstanceOf[js.Any])
-    
-    inline def setDataAsColumnsUndefined: Self = StObject.set(x, "dataAsColumns", js.undefined)
-    
     inline def setDataGrouping(value: DataGroupingOptionsObject): Self = StObject.set(x, "dataGrouping", value.asInstanceOf[js.Any])
     
     inline def setDataGroupingUndefined: Self = StObject.set(x, "dataGrouping", js.undefined)
@@ -1016,10 +850,6 @@ object PlotCylinderOptions {
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    inline def setDragDrop(value: SeriesDragDropOptionsObject): Self = StObject.set(x, "dragDrop", value.asInstanceOf[js.Any])
-    
-    inline def setDragDropUndefined: Self = StObject.set(x, "dragDrop", js.undefined)
-    
     inline def setEdgeColor(value: ColorString): Self = StObject.set(x, "edgeColor", value.asInstanceOf[js.Any])
     
     inline def setEdgeColorUndefined: Self = StObject.set(x, "edgeColor", js.undefined)
@@ -1036,17 +866,9 @@ object PlotCylinderOptions {
     
     inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
-    inline def setFindNearestPointBy(value: String): Self = StObject.set(x, "findNearestPointBy", value.asInstanceOf[js.Any])
+    inline def setFindNearestPointBy(value: OptionsFindNearestPointByValue): Self = StObject.set(x, "findNearestPointBy", value.asInstanceOf[js.Any])
     
     inline def setFindNearestPointByUndefined: Self = StObject.set(x, "findNearestPointBy", js.undefined)
-    
-    inline def setGapSize(value: Double): Self = StObject.set(x, "gapSize", value.asInstanceOf[js.Any])
-    
-    inline def setGapSizeUndefined: Self = StObject.set(x, "gapSize", js.undefined)
-    
-    inline def setGapUnit(value: String): Self = StObject.set(x, "gapUnit", value.asInstanceOf[js.Any])
-    
-    inline def setGapUnitUndefined: Self = StObject.set(x, "gapUnit", js.undefined)
     
     inline def setGetExtremesFromAll(value: Boolean): Self = StObject.set(x, "getExtremesFromAll", value.asInstanceOf[js.Any])
     
@@ -1092,21 +914,13 @@ object PlotCylinderOptions {
     
     inline def setLastVisiblePriceUndefined: Self = StObject.set(x, "lastVisiblePrice", js.undefined)
     
-    inline def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
+    inline def setLegendSymbol(value: String): Self = StObject.set(x, "legendSymbol", value.asInstanceOf[js.Any])
     
-    inline def setLineWidthUndefined: Self = StObject.set(x, "lineWidth", js.undefined)
-    
-    inline def setLinecap(value: SeriesLinecapValue): Self = StObject.set(x, "linecap", value.asInstanceOf[js.Any])
-    
-    inline def setLinecapUndefined: Self = StObject.set(x, "linecap", js.undefined)
+    inline def setLegendSymbolUndefined: Self = StObject.set(x, "legendSymbol", js.undefined)
     
     inline def setLinkedTo(value: String): Self = StObject.set(x, "linkedTo", value.asInstanceOf[js.Any])
     
     inline def setLinkedToUndefined: Self = StObject.set(x, "linkedTo", js.undefined)
-    
-    inline def setMarker(value: PointMarkerOptionsObject): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
-    
-    inline def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
     
     inline def setMaxPointWidth(value: Double): Self = StObject.set(x, "maxPointWidth", value.asInstanceOf[js.Any])
     
@@ -1142,7 +956,7 @@ object PlotCylinderOptions {
     
     inline def setPointIntervalUndefined: Self = StObject.set(x, "pointInterval", js.undefined)
     
-    inline def setPointIntervalUnit(value: String): Self = StObject.set(x, "pointIntervalUnit", value.asInstanceOf[js.Any])
+    inline def setPointIntervalUnit(value: OptionsPointIntervalUnitValue): Self = StObject.set(x, "pointIntervalUnit", value.asInstanceOf[js.Any])
     
     inline def setPointIntervalUnitUndefined: Self = StObject.set(x, "pointIntervalUnit", js.undefined)
     
@@ -1202,17 +1016,17 @@ object PlotCylinderOptions {
     
     inline def setSoftThresholdUndefined: Self = StObject.set(x, "softThreshold", js.undefined)
     
-    inline def setStacking(value: String): Self = StObject.set(x, "stacking", value.asInstanceOf[js.Any])
+    inline def setSonification(value: PlotCylinderSonificationOptions): Self = StObject.set(x, "sonification", value.asInstanceOf[js.Any])
+    
+    inline def setSonificationUndefined: Self = StObject.set(x, "sonification", js.undefined)
+    
+    inline def setStacking(value: OptionsStackingValue): Self = StObject.set(x, "stacking", value.asInstanceOf[js.Any])
     
     inline def setStackingUndefined: Self = StObject.set(x, "stacking", js.undefined)
     
     inline def setStates(value: SeriesStatesOptionsObject): Self = StObject.set(x, "states", value.asInstanceOf[js.Any])
     
     inline def setStatesUndefined: Self = StObject.set(x, "states", js.undefined)
-    
-    inline def setStep(value: String): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
-    
-    inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
     
     inline def setStickyTracking(value: Boolean): Self = StObject.set(x, "stickyTracking", value.asInstanceOf[js.Any])
     
@@ -1231,10 +1045,6 @@ object PlotCylinderOptions {
     inline def setTurboThreshold(value: Double): Self = StObject.set(x, "turboThreshold", value.asInstanceOf[js.Any])
     
     inline def setTurboThresholdUndefined: Self = StObject.set(x, "turboThreshold", js.undefined)
-    
-    inline def setUseOhlcData(value: Boolean): Self = StObject.set(x, "useOhlcData", value.asInstanceOf[js.Any])
-    
-    inline def setUseOhlcDataUndefined: Self = StObject.set(x, "useOhlcData", js.undefined)
     
     inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     

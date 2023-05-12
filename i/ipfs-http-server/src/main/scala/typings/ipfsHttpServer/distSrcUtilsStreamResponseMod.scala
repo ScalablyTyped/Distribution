@@ -1,9 +1,9 @@
 package typings.ipfsHttpServer
 
-import typings.hapiHapi.mod.ReqRefDefaults
-import typings.hapiHapi.mod.Request
-import typings.hapiHapi.mod.ResponseObject
-import typings.hapiHapi.mod.ResponseToolkit
+import typings.hapiHapi.libTypesRequestMod.ReqRefDefaults
+import typings.hapiHapi.libTypesRequestMod.Request
+import typings.hapiHapi.libTypesResponseMod.ResponseObject
+import typings.hapiHapi.libTypesResponseMod.ResponseToolkit
 import typings.ipfsHttpServer.anon.OnEnd
 import typings.std.AsyncIterable
 import org.scalablytyped.runtime.StObject

@@ -1,6 +1,7 @@
 package typings.octokitOpenapiTypes.anon
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.octokitOpenapiTypes.mod.OneOf
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,7 +37,7 @@ trait Originalenvironment extends StObject {
   /** @example staging */
   var original_environment: js.UndefOr[String] = js.undefined
   
-  var payload: StringDictionary[Any] | String
+  var payload: OneOf[js.Tuple2[StringDictionary[Any], String]]
   
   var performed_via_github_app: js.UndefOr[Externalurl | Null] = js.undefined
   
@@ -98,7 +99,7 @@ object Originalenvironment {
     environment: String,
     id: Double,
     node_id: String,
-    payload: StringDictionary[Any] | String,
+    payload: OneOf[js.Tuple2[StringDictionary[Any], String]],
     ref: String,
     repository_url: String,
     sha: String,
@@ -134,7 +135,7 @@ object Originalenvironment {
     
     inline def setOriginal_environmentUndefined: Self = StObject.set(x, "original_environment", js.undefined)
     
-    inline def setPayload(value: StringDictionary[Any] | String): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    inline def setPayload(value: OneOf[js.Tuple2[StringDictionary[Any], String]]): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
     inline def setPerformed_via_github_app(value: Externalurl): Self = StObject.set(x, "performed_via_github_app", value.asInstanceOf[js.Any])
     

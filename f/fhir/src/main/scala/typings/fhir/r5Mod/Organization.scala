@@ -13,6 +13,8 @@ trait Organization
   
   var _alias: js.UndefOr[js.Array[Element]] = js.undefined
   
+  var _description: js.UndefOr[Element] = js.undefined
+  
   var _name: js.UndefOr[Element] = js.undefined
   
   /**
@@ -22,19 +24,19 @@ trait Organization
   var active: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Organization may have multiple addresses with different uses or applicable periods. The use code 'home' is not to be used.
-    */
-  var address: js.UndefOr[js.Array[Address]] = js.undefined
-  
-  /**
     * There are no dates associated with the alias/historic names, as this is not intended to track when names were used, but to assist in searching so that older names can still result in identifying the organization.
     */
   var alias: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
-    * Where multiple contacts for the same purpose are provided there is a standard extension that can be used to determine which one is the preferred contact to use.
+    * The address/telecom use code 'home' are not to be used. Note that these contacts are not the contact details of people who provide the service (that would be through PractitionerRole), these are official contacts for the Organization itself for specific purposes. E.g. Mailing Addresses, Billing Addresses, Contact numbers for Booking or Billing Enquiries, general web address, web address for online bookings etc.
     */
-  var contact: js.UndefOr[js.Array[OrganizationContact]] = js.undefined
+  var contact: js.UndefOr[js.Array[ExtendedContactDetail]] = js.undefined
+  
+  /**
+    * Description of the organization, which helps provide additional general context on the organization to ensure that the correct organization is selected.
+    */
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Technical endpoints providing access to services operated for the organization.
@@ -56,14 +58,15 @@ trait Organization
     */
   var partOf: js.UndefOr[Reference] = js.undefined
   
+  /**
+    * The official certifications, accreditations, training, designations and licenses that authorize and/or otherwise endorse the provision of care by the organization.
+    * For example, an approval to provide a type of services issued by a certifying body (such as the US Joint Commission) to an organization.
+    */
+  var qualification: js.UndefOr[js.Array[OrganizationQualification]] = js.undefined
+  
   /** Resource Type Name (for serialization) */
   @JSName("resourceType")
   val resourceType_Organization: typings.fhir.fhirStrings.Organization
-  
-  /**
-    * The use code 'home' is not to be used. Note that these contacts are not the contact details of people who are employed by or represent the organization, but official contacts for the organization itself.
-    */
-  var telecom: js.UndefOr[js.Array[ContactPoint]] = js.undefined
   
   /**
     * Organizations can be corporations, wards, sections, clinical teams, government departments, etc. Note that code is generally a classifier of the type of organization; in many applications, codes are used to identity a particular organization (say, ward) as opposed to another of the same type - these are identifiers, not codes
@@ -86,23 +89,21 @@ object Organization {
     
     inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
-    inline def setAddress(value: js.Array[Address]): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
-    
-    inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
-    
-    inline def setAddressVarargs(value: Address*): Self = StObject.set(x, "address", js.Array(value*))
-    
     inline def setAlias(value: js.Array[String]): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     
     inline def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
     
     inline def setAliasVarargs(value: String*): Self = StObject.set(x, "alias", js.Array(value*))
     
-    inline def setContact(value: js.Array[OrganizationContact]): Self = StObject.set(x, "contact", value.asInstanceOf[js.Any])
+    inline def setContact(value: js.Array[ExtendedContactDetail]): Self = StObject.set(x, "contact", value.asInstanceOf[js.Any])
     
     inline def setContactUndefined: Self = StObject.set(x, "contact", js.undefined)
     
-    inline def setContactVarargs(value: OrganizationContact*): Self = StObject.set(x, "contact", js.Array(value*))
+    inline def setContactVarargs(value: ExtendedContactDetail*): Self = StObject.set(x, "contact", js.Array(value*))
+    
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     inline def setEndpoint(value: js.Array[Reference]): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
     
@@ -124,13 +125,13 @@ object Organization {
     
     inline def setPartOfUndefined: Self = StObject.set(x, "partOf", js.undefined)
     
+    inline def setQualification(value: js.Array[OrganizationQualification]): Self = StObject.set(x, "qualification", value.asInstanceOf[js.Any])
+    
+    inline def setQualificationUndefined: Self = StObject.set(x, "qualification", js.undefined)
+    
+    inline def setQualificationVarargs(value: OrganizationQualification*): Self = StObject.set(x, "qualification", js.Array(value*))
+    
     inline def setResourceType(value: typings.fhir.fhirStrings.Organization): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
-    
-    inline def setTelecom(value: js.Array[ContactPoint]): Self = StObject.set(x, "telecom", value.asInstanceOf[js.Any])
-    
-    inline def setTelecomUndefined: Self = StObject.set(x, "telecom", js.undefined)
-    
-    inline def setTelecomVarargs(value: ContactPoint*): Self = StObject.set(x, "telecom", js.Array(value*))
     
     inline def setType(value: js.Array[CodeableConcept]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
@@ -147,6 +148,10 @@ object Organization {
     inline def set_aliasUndefined: Self = StObject.set(x, "_alias", js.undefined)
     
     inline def set_aliasVarargs(value: Element*): Self = StObject.set(x, "_alias", js.Array(value*))
+    
+    inline def set_description(value: Element): Self = StObject.set(x, "_description", value.asInstanceOf[js.Any])
+    
+    inline def set_descriptionUndefined: Self = StObject.set(x, "_description", js.undefined)
     
     inline def set_name(value: Element): Self = StObject.set(x, "_name", value.asInstanceOf[js.Any])
     

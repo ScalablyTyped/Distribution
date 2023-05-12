@@ -120,6 +120,7 @@ object sapUiCoreRoutingTargetMod {
     
     /**
       * @SINCE 1.46.1
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * This function is called between the target view is loaded and the view is added to the container.
       *
@@ -226,6 +227,8 @@ object sapUiCoreRoutingTargetMod {
     ): js.Promise[Any] = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:created created} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining

@@ -22,7 +22,7 @@ trait ReservedInstancesConfiguration extends StObject {
   var InstanceType: js.UndefOr[typings.awsSdk.clientsEc2Mod.InstanceType] = js.undefined
   
   /**
-    * The network platform of the modified Reserved Instances, which is either EC2-Classic or EC2-VPC.
+    * The network platform of the modified Reserved Instances.
     */
   var Platform: js.UndefOr[String] = js.undefined
   

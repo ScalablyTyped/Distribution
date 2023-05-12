@@ -21,13 +21,12 @@ object R3DelegatedFnOrClassMetadata {
     delegate: Expression,
     delegateDeps: js.Array[R3DependencyMetadata],
     delegateType: R3FactoryDelegateType,
-    internalType: Expression,
     name: String,
     target: FactoryTarget,
     `type`: R3Reference,
     typeArgumentCount: Double
   ): R3DelegatedFnOrClassMetadata = {
-    val __obj = js.Dynamic.literal(delegate = delegate.asInstanceOf[js.Any], delegateDeps = delegateDeps.asInstanceOf[js.Any], delegateType = delegateType.asInstanceOf[js.Any], internalType = internalType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], typeArgumentCount = typeArgumentCount.asInstanceOf[js.Any], deps = null)
+    val __obj = js.Dynamic.literal(delegate = delegate.asInstanceOf[js.Any], delegateDeps = delegateDeps.asInstanceOf[js.Any], delegateType = delegateType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], typeArgumentCount = typeArgumentCount.asInstanceOf[js.Any], deps = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[R3DelegatedFnOrClassMetadata]
   }

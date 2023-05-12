@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@hapi/mimos" : "7.0.0"
+      "@hapi/mimos" : "7.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "@hapi/mimos" : "7.0.0"
+      "@hapi/mimos" : "7.0.1"
     }
   ],
   "compile-devDependencies" : [

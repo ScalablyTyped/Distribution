@@ -6,7 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PlanidNumber extends StObject {
   
-  /** The unique identifier of the plan. */
   var plan_id: Double
 }
 object PlanidNumber {

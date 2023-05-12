@@ -20,7 +20,6 @@ trait OrgChartOptions extends StObject {
   
   /**
     * Chart size
-    * @type {('small'|'medium'|'large')}
     * @default 'medium'
     */
   var size: js.UndefOr[String] = js.undefined

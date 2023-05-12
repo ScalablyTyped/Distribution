@@ -59,6 +59,7 @@ object distOperationsTypesMod {
     - typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.logical
     - typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.matrices
     - typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.normalization
+    - typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.ragged
     - typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.reduction
     - typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.slice_join
     - typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.sparse
@@ -96,6 +97,8 @@ object distOperationsTypesMod {
     inline def matrices: typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.matrices = "matrices".asInstanceOf[typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.matrices]
     
     inline def normalization: typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.normalization = "normalization".asInstanceOf[typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.normalization]
+    
+    inline def ragged: typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.ragged = "ragged".asInstanceOf[typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.ragged]
     
     inline def reduction: typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.reduction = "reduction".asInstanceOf[typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.reduction]
     

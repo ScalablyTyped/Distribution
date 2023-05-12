@@ -24,6 +24,7 @@ import typings.openui5.openui5Strings.minusSign
 import typings.openui5.openui5Strings.plusSign
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiCoreCalendarTypeMod.CalendarType
+import typings.openui5.sapUiCoreDateCalendarWeekNumberingMod.CalendarWeekNumbering
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -37,74 +38,7 @@ object sapUiCoreConfigurationMod {
   
   @JSImport("sap/ui/core/Configuration", JSImport.Default)
   @js.native
-  open class default () extends Configuration
-  /* static members */
-  object default {
-    
-    @JSImport("sap/ui/core/Configuration", JSImport.Default)
-    @js.native
-    val ^ : js.Any = js.native
-    
-    /**
-      * Creates a new subclass of class sap.ui.core.Configuration with name `sClassName` and enriches it with
-      * the information contained in `oClassInfo`.
-      *
-      * `oClassInfo` might contain the same kind of information as described in {@link sap.ui.base.Object.extend}.
-      *
-      * @returns Created class / constructor function
-      */
-    inline def extend[T /* <: Record[String, Any] */](/**
-      * Name of the class being created
-      */
-    sClassName: String): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(sClassName.asInstanceOf[js.Any]).asInstanceOf[js.Function]
-    inline def extend[T /* <: Record[String, Any] */](
-      /**
-      * Name of the class being created
-      */
-    sClassName: String,
-      /**
-      * Object literal with information about the class
-      */
-    oClassInfo: Unit,
-      /**
-      * Constructor function for the metadata object; if not given, it defaults to the metadata implementation
-      * used by this class
-      */
-    FNMetaImpl: js.Function
-    ): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(sClassName.asInstanceOf[js.Any], oClassInfo.asInstanceOf[js.Any], FNMetaImpl.asInstanceOf[js.Any])).asInstanceOf[js.Function]
-    inline def extend[T /* <: Record[String, Any] */](
-      /**
-      * Name of the class being created
-      */
-    sClassName: String,
-      /**
-      * Object literal with information about the class
-      */
-    oClassInfo: ClassInfo[T, Configuration]
-    ): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(sClassName.asInstanceOf[js.Any], oClassInfo.asInstanceOf[js.Any])).asInstanceOf[js.Function]
-    inline def extend[T /* <: Record[String, Any] */](
-      /**
-      * Name of the class being created
-      */
-    sClassName: String,
-      /**
-      * Object literal with information about the class
-      */
-    oClassInfo: ClassInfo[T, Configuration],
-      /**
-      * Constructor function for the metadata object; if not given, it defaults to the metadata implementation
-      * used by this class
-      */
-    FNMetaImpl: js.Function
-    ): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(sClassName.asInstanceOf[js.Any], oClassInfo.asInstanceOf[js.Any], FNMetaImpl.asInstanceOf[js.Any])).asInstanceOf[js.Function]
-    
-    /**
-      * Returns a metadata object for class sap.ui.core.Configuration.
-      *
-      * @returns Metadata object describing this class
-      */
-    inline def getMetadata(): typings.openui5.sapUiBaseMetadataMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("getMetadata")().asInstanceOf[typings.openui5.sapUiBaseMetadataMod.default]
-  }
+  val default: Configuration = js.native
   
   @js.native
   sealed trait AnimationMode extends StObject
@@ -265,6 +199,8 @@ object sapUiCoreConfigurationMod {
     ): this.type = js.native
     
     /**
+      * @deprecated (since 1.113.0) - Use {@link sap.ui.core.Configuration#setCalendarWeekNumbering} instead.
+      *
       * Defines the day used as the first day of the week.
       *
       * The day is set as an integer value between 0 (Sunday) and 6 (Saturday). Calling this method with a null
@@ -499,9 +435,32 @@ object sapUiCoreConfigurationMod {
     inline def getMetadata(): typings.openui5.sapUiBaseMetadataMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("getMetadata")().asInstanceOf[typings.openui5.sapUiBaseMetadataMod.default]
   }
   
+  /**
+    * Collects and stores the configuration of the current environment.
+    *
+    * The Configuration is initialized once when the {@link sap.ui.core.Core} is created. There are different
+    * ways to set the environment configuration (in ascending priority):
+    * 	 - System defined defaults
+    * 	 - Server wide defaults, read from /sap-ui-config.json
+    * 	 - Properties of the global configuration object window["sap-ui-config"]
+    * 	 - A configuration string in the data-sap-ui-config attribute of the bootstrap tag.
+    * 	 - Individual data-sap-ui-xyz attributes of the bootstrap tag
+    * 	 - Using URL parameters
+    * 	 - Setters in this Configuration object (only for some parameters)
+    *
+    * That is, attributes of the DOM reference override the system defaults, URL parameters override the DOM
+    * attributes (where empty URL parameters set the parameter back to its system default). Calling setters
+    * at runtime will override any previous settings calculated during object creation.
+    *
+    * The naming convention for parameters is:
+    * 	 - in the URL : sap-ui-PARAMETER-NAME="value"
+    * 	 - in the DOM : data-sap-ui-PARAMETER-NAME="value"  where PARAMETER-NAME is the name
+    * 			of the parameter in lower case.
+    *
+    * Values of boolean parameters are case insensitive where "true" and "x" are interpreted as true.
+    */
   @js.native
-  trait Configuration
-    extends typings.openui5.sapUiBaseObjectMod.default {
+  trait Configuration extends StObject {
     
     /**
       * @SINCE 1.38.6
@@ -523,6 +482,59 @@ object sapUiCoreConfigurationMod {
       * Configuration options to apply
       */
     mSettings: js.Object): this.type = js.native
+    
+    /**
+      * Creates a new subclass of class sap.ui.core.Configuration with name `sClassName` and enriches it with
+      * the information contained in `oClassInfo`.
+      *
+      * `oClassInfo` might contain the same kind of information as described in {@link sap.ui.base.Object.extend}.
+      *
+      * @returns Created class / constructor function
+      */
+    def extend(/**
+      * Name of the class being created
+      */
+    sClassName: String): js.Function = js.native
+    def extend(
+      /**
+      * Name of the class being created
+      */
+    sClassName: String,
+      /**
+      * Object literal with information about the class
+      */
+    oClassInfo: js.Object
+    ): js.Function = js.native
+    def extend(
+      /**
+      * Name of the class being created
+      */
+    sClassName: String,
+      /**
+      * Object literal with information about the class
+      */
+    oClassInfo: js.Object,
+      /**
+      * Constructor function for the metadata object; if not given, it defaults to the metadata implementation
+      * used by this class
+      */
+    FNMetaImpl: js.Function
+    ): js.Function = js.native
+    def extend(
+      /**
+      * Name of the class being created
+      */
+    sClassName: String,
+      /**
+      * Object literal with information about the class
+      */
+    oClassInfo: Unit,
+      /**
+      * Constructor function for the metadata object; if not given, it defaults to the metadata implementation
+      * used by this class
+      */
+    FNMetaImpl: js.Function
+    ): js.Function = js.native
     
     /**
       * Returns whether the accessibility mode is used or not.
@@ -595,6 +607,16 @@ object sapUiCoreConfigurationMod {
       * Returns whether the framework automatically adds the ARIA role 'application' to the HTML body or not.
       */
     def getAutoAriaBodyRole(): Boolean = js.native
+    
+    /**
+      * @SINCE 1.113.0
+      *
+      * Returns the calendar week numbering algorithm used to determine the first day of the week and the first
+      * calendar week of the year, see {@link sap.ui.core.date.CalendarWeekNumbering}.
+      *
+      * @returns The calendar week numbering algorithm
+      */
+    def getCalendarWeekNumbering(): CalendarWeekNumbering | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CalendarWeekNumbering * / any */ String) = js.native
     
     /**
       * Returns the used compatibility version for the given feature.
@@ -738,6 +760,13 @@ object sapUiCoreConfigurationMod {
     def getManifestFirst(): Boolean = js.native
     
     /**
+      * Returns a metadata object for class sap.ui.core.Configuration.
+      *
+      * @returns Metadata object describing this class
+      */
+    def getMetadata(): typings.openui5.sapUiBaseMetadataMod.default = js.native
+    
+    /**
       * Returns whether there should be an exception on any duplicate element IDs.
       *
       * @returns whether there should be an exception on any duplicate element IDs
@@ -813,8 +842,9 @@ object sapUiCoreConfigurationMod {
     /**
       * @SINCE 1.99.0
       *
-      * **Note: Due to compatibility considerations, this function will always return the timezone of the browser/host
-      * system in this release**
+      * **Note: Due to compatibility considerations, the time zone can only be changed for test purposes via
+      * the `sap-timezone` URL parameter. If this parameter is not set, the time zone of the browser/host system
+      * is returned.**
       *
       * Retrieves the configured IANA timezone ID.
       *
@@ -887,6 +917,25 @@ object sapUiCoreConfigurationMod {
       */
     sCalendarType: CalendarType
     ): this.type = js.native
+    
+    def setCalendarWeekNumbering(
+      /**
+      * The calendar week numbering algorithm
+      */
+    sCalendarWeekNumbering: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CalendarWeekNumbering * / any */ String
+    ): this.type = js.native
+    /**
+      * @SINCE 1.113.0
+      *
+      * Sets the calendar week numbering algorithm which is used to determine the first day of the week and the
+      * first calendar week of the year, see {@link sap.ui.core.date.CalendarWeekNumbering}.
+      *
+      * @returns `this` to allow method chaining
+      */
+    def setCalendarWeekNumbering(/**
+      * The calendar week numbering algorithm
+      */
+    sCalendarWeekNumbering: CalendarWeekNumbering): this.type = js.native
     
     /**
       * Sets a new format locale to be used from now on for retrieving locale specific formatters. Modifying

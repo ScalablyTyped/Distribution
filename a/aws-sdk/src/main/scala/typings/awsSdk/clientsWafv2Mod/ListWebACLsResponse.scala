@@ -12,7 +12,7 @@ trait ListWebACLsResponse extends StObject {
   var NextMarker: js.UndefOr[typings.awsSdk.clientsWafv2Mod.NextMarker] = js.undefined
   
   /**
-    * 
+    * Array of web ACLs. If you specified a Limit in your request, this might not be the full list. 
     */
   var WebACLs: js.UndefOr[WebACLSummaries] = js.undefined
 }

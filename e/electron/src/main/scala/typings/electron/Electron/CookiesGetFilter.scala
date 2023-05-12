@@ -12,6 +12,11 @@ trait CookiesGetFilter extends StObject {
   var domain: js.UndefOr[String] = js.undefined
   
   /**
+    * Filters cookies by httpOnly.
+    */
+  var httpOnly: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * Filters cookies by name.
     */
   var name: js.UndefOr[String] = js.undefined
@@ -50,6 +55,10 @@ object CookiesGetFilter {
     inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
     inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+    
+    inline def setHttpOnly(value: Boolean): Self = StObject.set(x, "httpOnly", value.asInstanceOf[js.Any])
+    
+    inline def setHttpOnlyUndefined: Self = StObject.set(x, "httpOnly", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

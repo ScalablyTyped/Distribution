@@ -11,7 +11,11 @@ open class Transform ()
 /* static members */
 object Transform {
   
-  /** A default (identity) transform. */
+  /**
+    * A default (identity) transform.
+    * @static
+    * @type {PIXI.Transform}
+    */
   @JSImport("@pixi/core", "Transform.IDENTITY")
   @js.native
   val IDENTITY: typings.pixiMath.libTransformMod.Transform = js.native

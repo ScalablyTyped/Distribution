@@ -24,11 +24,11 @@ trait UpdateThemePermissionsRequest extends StObject {
   /**
     * The ID for the theme.
     */
-  var ThemeId: RestrictiveResourceId
+  var ThemeId: ShortRestrictiveResourceId
 }
 object UpdateThemePermissionsRequest {
   
-  inline def apply(AwsAccountId: AwsAccountId, ThemeId: RestrictiveResourceId): UpdateThemePermissionsRequest = {
+  inline def apply(AwsAccountId: AwsAccountId, ThemeId: ShortRestrictiveResourceId): UpdateThemePermissionsRequest = {
     val __obj = js.Dynamic.literal(AwsAccountId = AwsAccountId.asInstanceOf[js.Any], ThemeId = ThemeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateThemePermissionsRequest]
   }
@@ -50,6 +50,6 @@ object UpdateThemePermissionsRequest {
     
     inline def setRevokePermissionsVarargs(value: ResourcePermission*): Self = StObject.set(x, "RevokePermissions", js.Array(value*))
     
-    inline def setThemeId(value: RestrictiveResourceId): Self = StObject.set(x, "ThemeId", value.asInstanceOf[js.Any])
+    inline def setThemeId(value: ShortRestrictiveResourceId): Self = StObject.set(x, "ThemeId", value.asInstanceOf[js.Any])
   }
 }

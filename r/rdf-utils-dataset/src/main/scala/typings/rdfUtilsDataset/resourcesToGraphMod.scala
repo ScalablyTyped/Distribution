@@ -1,6 +1,5 @@
 package typings.rdfUtilsDataset
 
-import typings.rdfDatasetIndexed.datasetMod.DatasetIndexed
 import typings.rdfjsTypes.dataModelMod.BaseQuad
 import typings.rdfjsTypes.dataModelMod.DataFactory
 import typings.rdfjsTypes.datasetMod.DatasetCore
@@ -11,12 +10,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object resourcesToGraphMod {
   
-  inline def apply[F /* <: Factory[BaseQuad, BaseQuad, DatasetCore[BaseQuad, BaseQuad]] */](_input: DatasetIndexed[BaseQuad, BaseQuad]): DatasetOf[F] = ^.asInstanceOf[js.Dynamic].apply(_input.asInstanceOf[js.Any]).asInstanceOf[DatasetOf[F]]
-  inline def apply[F /* <: Factory[BaseQuad, BaseQuad, DatasetCore[BaseQuad, BaseQuad]] */](_input: DatasetIndexed[BaseQuad, BaseQuad], options: Options[F]): DatasetOf[F] = (^.asInstanceOf[js.Dynamic].apply(_input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DatasetOf[F]]
-  
   @JSImport("rdf-utils-dataset/resourcesToGraph", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
+  
+  inline def default[F /* <: Factory[BaseQuad, BaseQuad, DatasetCore[BaseQuad, BaseQuad]] */](_input: DatasetCore[BaseQuad, BaseQuad]): DatasetOf[F] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(_input.asInstanceOf[js.Any]).asInstanceOf[DatasetOf[F]]
+  inline def default[F /* <: Factory[BaseQuad, BaseQuad, DatasetCore[BaseQuad, BaseQuad]] */](_input: DatasetCore[BaseQuad, BaseQuad], options: Options[F]): DatasetOf[F] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(_input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DatasetOf[F]]
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.

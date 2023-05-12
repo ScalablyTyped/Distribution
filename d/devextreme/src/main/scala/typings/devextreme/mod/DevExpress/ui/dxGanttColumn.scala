@@ -3,23 +3,22 @@ package typings.devextreme.mod.DevExpress.ui
 import typings.devextreme.mod.DevExpress.common.DataType
 import typings.devextreme.mod.DevExpress.common.HorizontalAlignment
 import typings.devextreme.mod.DevExpress.common.SortOrder
-import typings.devextreme.mod.DevExpress.common.charts.FilterOperation
-import typings.devextreme.mod.DevExpress.common.charts.FilterType
-import typings.devextreme.mod.DevExpress.common.charts.SelectedFilterOperation
+import typings.devextreme.mod.DevExpress.common.grids.ColumnBase
 import typings.devextreme.mod.DevExpress.common.grids.ColumnCustomizeTextArg
 import typings.devextreme.mod.DevExpress.common.grids.ColumnHeaderFilter
-import typings.devextreme.mod.DevExpress.core.DeepPartial
+import typings.devextreme.mod.DevExpress.common.grids.FilterOperation
+import typings.devextreme.mod.DevExpress.common.grids.FilterType
+import typings.devextreme.mod.DevExpress.common.grids.SelectedFilterOperation
 import typings.devextreme.mod.DevExpress.core.DxElement_
 import typings.devextreme.mod.DevExpress.core.template
 import typings.devextreme.mod.DevExpress.ui.dxTreeList.ColumnCellTemplateData
 import typings.devextreme.mod.DevExpress.ui.dxTreeList.ColumnHeaderCellTemplateData
 import typings.std.HTMLElement
-import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined devextreme.devextreme.DevExpress.core.Skip<devextreme.devextreme.DevExpress.ui.dxGanttColumnBlank<TRowData, TKey>, 'allowEditing' | 'allowFixing' | 'allowHiding' | 'allowReordering' | 'allowResizing' | 'allowSearch' | 'buttons' | 'columns' | 'editCellTemplate' | 'editorOptions' | 'fixed' | 'fixedPosition' | 'formItem' | 'hidingPriority' | 'isBand' | 'lookup' | 'name' | 'ownerBand' | 'renderAsync' | 'setCellValue' | 'showEditorAlways' | 'showInColumnChooser' | 'type' | 'validationRules'> */
+/* Inlined std.Omit<devextreme.devextreme.DevExpress.ui.dxGanttColumnBlank<TRowData, TKey>, 'allowEditing' | 'allowFixing' | 'allowHiding' | 'allowReordering' | 'allowResizing' | 'allowSearch' | 'buttons' | 'columns' | 'editCellTemplate' | 'editorOptions' | 'fixed' | 'fixedPosition' | 'formItem' | 'hidingPriority' | 'isBand' | 'lookup' | 'name' | 'ownerBand' | 'renderAsync' | 'setCellValue' | 'showEditorAlways' | 'showInColumnChooser' | 'type' | 'validationRules'> */
 trait dxGanttColumn[TRowData, TKey] extends StObject {
   
   var alignment: js.UndefOr[HorizontalAlignment] = js.undefined
@@ -30,20 +29,25 @@ trait dxGanttColumn[TRowData, TKey] extends StObject {
   
   var allowSorting: js.UndefOr[Boolean] = js.undefined
   
-  var calculateCellValue: js.UndefOr[js.Function1[/* rowData */ TRowData, Any]] = js.undefined
+  var calculateCellValue: js.UndefOr[js.ThisFunction1[/* this */ ColumnBase[Any], /* rowData */ TRowData, Any]] = js.undefined
   
-  var calculateDisplayValue: js.UndefOr[String | (js.Function1[/* rowData */ TRowData, Any])] = js.undefined
+  var calculateDisplayValue: js.UndefOr[
+    String | (js.ThisFunction1[/* this */ ColumnBase[Any], /* rowData */ TRowData, Any])
+  ] = js.undefined
   
   var calculateFilterExpression: js.UndefOr[
-    js.Function3[
+    js.ThisFunction3[
+      /* this */ ColumnBase[Any], 
       /* filterValue */ Any, 
-      /* selectedFilterOperation */ String, 
+      /* selectedFilterOperation */ String | Null, 
       /* target */ String, 
       String | js.Array[Any] | js.Function
     ]
   ] = js.undefined
   
-  var calculateSortValue: js.UndefOr[String | (js.Function1[/* rowData */ TRowData, Any])] = js.undefined
+  var calculateSortValue: js.UndefOr[
+    String | (js.ThisFunction1[/* this */ ColumnBase[Any], /* rowData */ TRowData, Any])
+  ] = js.undefined
   
   var caption: js.UndefOr[String] = js.undefined
   
@@ -57,30 +61,24 @@ trait dxGanttColumn[TRowData, TKey] extends StObject {
   
   var cssClass: js.UndefOr[String] = js.undefined
   
-  var customizeText: js.UndefOr[js.Function1[/* cellInfo */ ColumnCustomizeTextArg, String]] = js.undefined
+  var customizeText: js.UndefOr[
+    js.ThisFunction1[/* this */ ColumnBase[Any], /* cellInfo */ ColumnCustomizeTextArg, String]
+  ] = js.undefined
   
   var dataField: js.UndefOr[String] = js.undefined
   
   var dataType: js.UndefOr[DataType] = js.undefined
   
-  var defaultCalculateCellValue: js.UndefOr[js.Function1[/* rowData */ Any, Any]] = js.undefined
+  var defaultCalculateCellValue: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: this['calculateCellValue'] */ js.Any
+  ] = js.undefined
   
   var defaultCalculateFilterExpression: js.UndefOr[
-    js.Function3[
-      /* filterValue */ Any, 
-      /* selectedFilterOperation */ String, 
-      /* target */ String, 
-      String | js.Array[Any] | js.Function
-    ]
+    /* import warning: importer.ImportType#apply Failed type conversion: this['calculateFilterExpression'] */ js.Any
   ] = js.undefined
   
   var defaultSetCellValue: js.UndefOr[
-    js.Function3[
-      /* newData */ DeepPartial[Any], 
-      /* value */ Any, 
-      /* currentRowData */ Any, 
-      Unit | PromiseLike[Unit]
-    ]
+    /* import warning: importer.ImportType#apply Failed type conversion: this['setCellValue'] */ js.Any
   ] = js.undefined
   
   var encodeHtml: js.UndefOr[Boolean] = js.undefined
@@ -115,7 +113,9 @@ trait dxGanttColumn[TRowData, TKey] extends StObject {
   
   var sortOrder: js.UndefOr[SortOrder] = js.undefined
   
-  var sortingMethod: js.UndefOr[js.Function2[/* value1 */ Any, /* value2 */ Any, Double]] = js.undefined
+  var sortingMethod: js.UndefOr[
+    js.ThisFunction2[/* this */ ColumnBase[Any], /* value1 */ Any, /* value2 */ Any, Double]
+  ] = js.undefined
   
   var trueText: js.UndefOr[String] = js.undefined
   
@@ -151,25 +151,27 @@ object dxGanttColumn {
     
     inline def setAllowSortingUndefined: Self = StObject.set(x, "allowSorting", js.undefined)
     
-    inline def setCalculateCellValue(value: /* rowData */ TRowData => Any): Self = StObject.set(x, "calculateCellValue", js.Any.fromFunction1(value))
+    inline def setCalculateCellValue(value: js.ThisFunction1[/* this */ ColumnBase[Any], /* rowData */ TRowData, Any]): Self = StObject.set(x, "calculateCellValue", value.asInstanceOf[js.Any])
     
     inline def setCalculateCellValueUndefined: Self = StObject.set(x, "calculateCellValue", js.undefined)
     
-    inline def setCalculateDisplayValue(value: String | (js.Function1[/* rowData */ TRowData, Any])): Self = StObject.set(x, "calculateDisplayValue", value.asInstanceOf[js.Any])
-    
-    inline def setCalculateDisplayValueFunction1(value: /* rowData */ TRowData => Any): Self = StObject.set(x, "calculateDisplayValue", js.Any.fromFunction1(value))
+    inline def setCalculateDisplayValue(value: String | (js.ThisFunction1[/* this */ ColumnBase[Any], /* rowData */ TRowData, Any])): Self = StObject.set(x, "calculateDisplayValue", value.asInstanceOf[js.Any])
     
     inline def setCalculateDisplayValueUndefined: Self = StObject.set(x, "calculateDisplayValue", js.undefined)
     
     inline def setCalculateFilterExpression(
-      value: (/* filterValue */ Any, /* selectedFilterOperation */ String, /* target */ String) => String | js.Array[Any] | js.Function
-    ): Self = StObject.set(x, "calculateFilterExpression", js.Any.fromFunction3(value))
+      value: js.ThisFunction3[
+          /* this */ ColumnBase[Any], 
+          /* filterValue */ Any, 
+          /* selectedFilterOperation */ String | Null, 
+          /* target */ String, 
+          String | js.Array[Any] | js.Function
+        ]
+    ): Self = StObject.set(x, "calculateFilterExpression", value.asInstanceOf[js.Any])
     
     inline def setCalculateFilterExpressionUndefined: Self = StObject.set(x, "calculateFilterExpression", js.undefined)
     
-    inline def setCalculateSortValue(value: String | (js.Function1[/* rowData */ TRowData, Any])): Self = StObject.set(x, "calculateSortValue", value.asInstanceOf[js.Any])
-    
-    inline def setCalculateSortValueFunction1(value: /* rowData */ TRowData => Any): Self = StObject.set(x, "calculateSortValue", js.Any.fromFunction1(value))
+    inline def setCalculateSortValue(value: String | (js.ThisFunction1[/* this */ ColumnBase[Any], /* rowData */ TRowData, Any])): Self = StObject.set(x, "calculateSortValue", value.asInstanceOf[js.Any])
     
     inline def setCalculateSortValueUndefined: Self = StObject.set(x, "calculateSortValue", js.undefined)
     
@@ -195,7 +197,7 @@ object dxGanttColumn {
     
     inline def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
     
-    inline def setCustomizeText(value: /* cellInfo */ ColumnCustomizeTextArg => String): Self = StObject.set(x, "customizeText", js.Any.fromFunction1(value))
+    inline def setCustomizeText(value: js.ThisFunction1[/* this */ ColumnBase[Any], /* cellInfo */ ColumnCustomizeTextArg, String]): Self = StObject.set(x, "customizeText", value.asInstanceOf[js.Any])
     
     inline def setCustomizeTextUndefined: Self = StObject.set(x, "customizeText", js.undefined)
     
@@ -207,19 +209,21 @@ object dxGanttColumn {
     
     inline def setDataTypeUndefined: Self = StObject.set(x, "dataType", js.undefined)
     
-    inline def setDefaultCalculateCellValue(value: /* rowData */ Any => Any): Self = StObject.set(x, "defaultCalculateCellValue", js.Any.fromFunction1(value))
+    inline def setDefaultCalculateCellValue(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: this['calculateCellValue'] */ js.Any
+    ): Self = StObject.set(x, "defaultCalculateCellValue", value.asInstanceOf[js.Any])
     
     inline def setDefaultCalculateCellValueUndefined: Self = StObject.set(x, "defaultCalculateCellValue", js.undefined)
     
     inline def setDefaultCalculateFilterExpression(
-      value: (/* filterValue */ Any, /* selectedFilterOperation */ String, /* target */ String) => String | js.Array[Any] | js.Function
-    ): Self = StObject.set(x, "defaultCalculateFilterExpression", js.Any.fromFunction3(value))
+      value: /* import warning: importer.ImportType#apply Failed type conversion: this['calculateFilterExpression'] */ js.Any
+    ): Self = StObject.set(x, "defaultCalculateFilterExpression", value.asInstanceOf[js.Any])
     
     inline def setDefaultCalculateFilterExpressionUndefined: Self = StObject.set(x, "defaultCalculateFilterExpression", js.undefined)
     
     inline def setDefaultSetCellValue(
-      value: (/* newData */ DeepPartial[Any], /* value */ Any, /* currentRowData */ Any) => Unit | PromiseLike[Unit]
-    ): Self = StObject.set(x, "defaultSetCellValue", js.Any.fromFunction3(value))
+      value: /* import warning: importer.ImportType#apply Failed type conversion: this['setCellValue'] */ js.Any
+    ): Self = StObject.set(x, "defaultSetCellValue", value.asInstanceOf[js.Any])
     
     inline def setDefaultSetCellValueUndefined: Self = StObject.set(x, "defaultSetCellValue", js.undefined)
     
@@ -291,7 +295,7 @@ object dxGanttColumn {
     
     inline def setSortOrderUndefined: Self = StObject.set(x, "sortOrder", js.undefined)
     
-    inline def setSortingMethod(value: (/* value1 */ Any, /* value2 */ Any) => Double): Self = StObject.set(x, "sortingMethod", js.Any.fromFunction2(value))
+    inline def setSortingMethod(value: js.ThisFunction2[/* this */ ColumnBase[Any], /* value1 */ Any, /* value2 */ Any, Double]): Self = StObject.set(x, "sortingMethod", value.asInstanceOf[js.Any])
     
     inline def setSortingMethodUndefined: Self = StObject.set(x, "sortingMethod", js.undefined)
     

@@ -26,7 +26,7 @@ trait AltManifestUrl extends StObject {
     * and compatibility cannot be guaranteed. The parameter must not be used in productive code, except in
     * code delivered by the UI5 teams.
     */
-  var asyncHints: js.UndefOr[Libs] = js.undefined
+  var asyncHints: js.UndefOr[Components] = js.undefined
   
   /**
     * Initial data of the Component, see {@link sap.ui.core.Component#getComponentData}.
@@ -93,7 +93,7 @@ object AltManifestUrl {
     
     inline def setAltManifestUrlUndefined: Self = StObject.set(x, "altManifestUrl", js.undefined)
     
-    inline def setAsyncHints(value: Libs): Self = StObject.set(x, "asyncHints", value.asInstanceOf[js.Any])
+    inline def setAsyncHints(value: Components): Self = StObject.set(x, "asyncHints", value.asInstanceOf[js.Any])
     
     inline def setAsyncHintsUndefined: Self = StObject.set(x, "asyncHints", js.undefined)
     

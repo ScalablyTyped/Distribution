@@ -1,5 +1,6 @@
 package typings.konva
 
+import typings.konva.libContextMod.Context
 import typings.konva.libShapeMod.Shape
 import typings.konva.libShapeMod.ShapeConfig
 import typings.konva.libTypesMod.GetSet
@@ -16,7 +17,7 @@ object libShapesRegularPolygonMod {
     
     def _getPoints(): js.Array[Any] = js.native
     
-    def _sceneFunc(context: Any): Unit = js.native
+    def _sceneFunc(context: Context): Unit = js.native
     
     def getHeight(): Double = js.native
     
@@ -27,9 +28,9 @@ object libShapesRegularPolygonMod {
     @JSName("radius")
     var radius_Original: GetSet[Double, this.type] = js.native
     
-    def setHeight(height: Any): Unit = js.native
+    def setHeight(height: Double): Unit = js.native
     
-    def setWidth(width: Any): Unit = js.native
+    def setWidth(width: Double): Unit = js.native
     
     def sides(): Double = js.native
     def sides(v: Double): this.type = js.native

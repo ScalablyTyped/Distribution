@@ -1,7 +1,7 @@
 
 # Scala.js typings for forge-di
 
-Typings are for version 12.0.6
+Typings are for version 12.1.2
 
 ## Library description:
 a dependency injector for node.js

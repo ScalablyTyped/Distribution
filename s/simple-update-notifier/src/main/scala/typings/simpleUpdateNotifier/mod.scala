@@ -17,6 +17,8 @@ object mod {
     
     var alwaysRun: js.UndefOr[Boolean] = js.undefined
     
+    var debug: js.UndefOr[Boolean] = js.undefined
+    
     var distTag: js.UndefOr[String] = js.undefined
     
     var pkg: Name
@@ -38,6 +40,10 @@ object mod {
       inline def setAlwaysRun(value: Boolean): Self = StObject.set(x, "alwaysRun", value.asInstanceOf[js.Any])
       
       inline def setAlwaysRunUndefined: Self = StObject.set(x, "alwaysRun", js.undefined)
+      
+      inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      
+      inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       
       inline def setDistTag(value: String): Self = StObject.set(x, "distTag", value.asInstanceOf[js.Any])
       

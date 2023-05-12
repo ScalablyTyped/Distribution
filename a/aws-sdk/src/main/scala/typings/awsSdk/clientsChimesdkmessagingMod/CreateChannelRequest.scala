@@ -17,7 +17,7 @@ trait CreateChannelRequest extends StObject {
   var ChannelId: js.UndefOr[typings.awsSdk.clientsChimesdkmessagingMod.ChannelId] = js.undefined
   
   /**
-    * The AppInstanceUserArn of the user that makes the API call.
+    * The ARN of the AppInstanceUser or AppInstanceBot that makes the API call.
     */
   var ChimeBearer: ChimeArn
   
@@ -30,6 +30,11 @@ trait CreateChannelRequest extends StObject {
     * The attributes required to configure and create an elastic channel. An elastic channel can support a maximum of 1-million users, excluding moderators.
     */
   var ElasticChannelConfiguration: js.UndefOr[typings.awsSdk.clientsChimesdkmessagingMod.ElasticChannelConfiguration] = js.undefined
+  
+  /**
+    * Settings that control the interval after which the channel is automatically deleted.
+    */
+  var ExpirationSettings: js.UndefOr[typings.awsSdk.clientsChimesdkmessagingMod.ExpirationSettings] = js.undefined
   
   /**
     * The ARNs of the channel members in the request.
@@ -94,6 +99,10 @@ object CreateChannelRequest {
     inline def setElasticChannelConfiguration(value: ElasticChannelConfiguration): Self = StObject.set(x, "ElasticChannelConfiguration", value.asInstanceOf[js.Any])
     
     inline def setElasticChannelConfigurationUndefined: Self = StObject.set(x, "ElasticChannelConfiguration", js.undefined)
+    
+    inline def setExpirationSettings(value: ExpirationSettings): Self = StObject.set(x, "ExpirationSettings", value.asInstanceOf[js.Any])
+    
+    inline def setExpirationSettingsUndefined: Self = StObject.set(x, "ExpirationSettings", js.undefined)
     
     inline def setMemberArns(value: ChannelMemberArns): Self = StObject.set(x, "MemberArns", value.asInstanceOf[js.Any])
     

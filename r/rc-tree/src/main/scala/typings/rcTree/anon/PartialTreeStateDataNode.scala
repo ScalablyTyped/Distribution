@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Partial<rc-tree.rc-tree/es/Tree.TreeState<rc-tree.rc-tree/es/interface.DataNode>> */
 trait PartialTreeStateDataNode extends StObject {
   
-  var activeKey: js.UndefOr[typings.rcTree.esInterfaceMod.Key] = js.undefined
+  var activeKey: js.UndefOr[typings.rcTree.esInterfaceMod.Key | Null] = js.undefined
   
   var checkedKeys: js.UndefOr[js.Array[typings.rcTree.esInterfaceMod.Key]] = js.undefined
   
@@ -75,6 +75,8 @@ object PartialTreeStateDataNode {
   implicit open class MutableBuilder[Self <: PartialTreeStateDataNode] (val x: Self) extends AnyVal {
     
     inline def setActiveKey(value: typings.rcTree.esInterfaceMod.Key): Self = StObject.set(x, "activeKey", value.asInstanceOf[js.Any])
+    
+    inline def setActiveKeyNull: Self = StObject.set(x, "activeKey", null)
     
     inline def setActiveKeyUndefined: Self = StObject.set(x, "activeKey", js.undefined)
     

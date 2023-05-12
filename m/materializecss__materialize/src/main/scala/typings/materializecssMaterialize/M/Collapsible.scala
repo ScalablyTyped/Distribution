@@ -10,14 +10,14 @@ trait Collapsible
      with Component[CollapsibleOptions] {
   
   /**
-    * Close collapsible section
-    * @param n Nth section to close
+    * Close collapsible section.
+    * @param n Nth section to close.
     */
   def close(n: Double): Unit
   
   /**
-    * Open collapsible section
-    * @param n Nth section to open
+    * Open collapsible section.
+    * @param n Nth section to open.
     */
   def open(n: Double): Unit
 }

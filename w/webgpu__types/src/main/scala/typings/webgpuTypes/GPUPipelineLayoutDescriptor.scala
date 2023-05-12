@@ -9,7 +9,7 @@ trait GPUPipelineLayoutDescriptor
      with GPUObjectDescriptorBase {
   
   /**
-    * A list of {@link GPUBindGroupLayout}s the pipline will use. Each element corresponds to a
+    * A list of {@link GPUBindGroupLayout}s the pipeline will use. Each element corresponds to a
     * @group attribute in the {@link GPUShaderModule}, with the `N`th element corresponding with
     * `@group(N)`.
     */

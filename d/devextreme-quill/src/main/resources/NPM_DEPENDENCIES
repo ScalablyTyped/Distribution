@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "devextreme-quill" : "1.5.18"
+      "devextreme-quill" : "1.6.2"
     }
   ],
   "test-dependencies" : [
     {
-      "devextreme-quill" : "1.5.18"
+      "devextreme-quill" : "1.6.2"
     }
   ],
   "compile-devDependencies" : [

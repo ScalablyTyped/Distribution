@@ -1,7 +1,7 @@
 
 # Scala.js typings for jridgewell__resolve-uri
 
-Typings are for version 3.1.0
+Typings are for version 3.1.1
 
 ## Library description:
 Resolve a URI relative to an optional base URI

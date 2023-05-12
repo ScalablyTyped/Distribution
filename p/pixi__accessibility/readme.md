@@ -1,7 +1,7 @@
 
 # Scala.js typings for pixi__accessibility
 
-Typings are for version 7.0.4
+Typings are for version 7.2.4
 
 ## Library description:
 Accessibility Plugin for visually impaired users

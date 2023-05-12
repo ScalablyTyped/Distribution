@@ -18,11 +18,12 @@ trait TypeofRequiredValidator
     RequiredValidator, 
     /* :not([type=checkbox])[required][formControlName],:not([type=checkbox])[required][formControl],:not([type=checkbox])[required][ngModel] */ String, 
     scala.Nothing, 
-    Required, 
+    Required18, 
     js.Object, 
     scala.Nothing, 
     scala.Nothing, 
-    `false`
+    `false`, 
+    scala.Nothing
   ] = js.native
   
   var ɵfac: ɵɵFactoryDeclaration[RequiredValidator, scala.Nothing] = js.native

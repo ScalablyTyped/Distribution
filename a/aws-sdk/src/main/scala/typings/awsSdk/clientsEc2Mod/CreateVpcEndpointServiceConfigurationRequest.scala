@@ -22,12 +22,12 @@ trait CreateVpcEndpointServiceConfigurationRequest extends StObject {
   var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The Amazon Resource Names (ARNs) of one or more Gateway Load Balancers.
+    * The Amazon Resource Names (ARNs) of the Gateway Load Balancers.
     */
   var GatewayLoadBalancerArns: js.UndefOr[ValueStringList] = js.undefined
   
   /**
-    * The Amazon Resource Names (ARNs) of one or more Network Load Balancers for your service.
+    * The Amazon Resource Names (ARNs) of the Network Load Balancers.
     */
   var NetworkLoadBalancerArns: js.UndefOr[ValueStringList] = js.undefined
   

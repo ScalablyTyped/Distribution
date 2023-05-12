@@ -11,8 +11,6 @@ trait EventManagerPlugin extends StObject {
   
   def addEventListener(element: HTMLElement, eventName: String, handler: js.Function): js.Function
   
-  def addGlobalEventListener(element: String, eventName: String, handler: js.Function): js.Function
-  
   var manager: EventManager
   
   def supports(eventName: String): Boolean
@@ -22,11 +20,10 @@ object EventManagerPlugin {
   inline def apply(
     _doc: Any,
     addEventListener: (HTMLElement, String, js.Function) => js.Function,
-    addGlobalEventListener: (String, String, js.Function) => js.Function,
     manager: EventManager,
     supports: String => Boolean
   ): EventManagerPlugin = {
-    val __obj = js.Dynamic.literal(_doc = _doc.asInstanceOf[js.Any], addEventListener = js.Any.fromFunction3(addEventListener), addGlobalEventListener = js.Any.fromFunction3(addGlobalEventListener), manager = manager.asInstanceOf[js.Any], supports = js.Any.fromFunction1(supports))
+    val __obj = js.Dynamic.literal(_doc = _doc.asInstanceOf[js.Any], addEventListener = js.Any.fromFunction3(addEventListener), manager = manager.asInstanceOf[js.Any], supports = js.Any.fromFunction1(supports))
     __obj.asInstanceOf[EventManagerPlugin]
   }
   
@@ -34,8 +31,6 @@ object EventManagerPlugin {
   implicit open class MutableBuilder[Self <: EventManagerPlugin] (val x: Self) extends AnyVal {
     
     inline def setAddEventListener(value: (HTMLElement, String, js.Function) => js.Function): Self = StObject.set(x, "addEventListener", js.Any.fromFunction3(value))
-    
-    inline def setAddGlobalEventListener(value: (String, String, js.Function) => js.Function): Self = StObject.set(x, "addGlobalEventListener", js.Any.fromFunction3(value))
     
     inline def setManager(value: EventManager): Self = StObject.set(x, "manager", value.asInstanceOf[js.Any])
     

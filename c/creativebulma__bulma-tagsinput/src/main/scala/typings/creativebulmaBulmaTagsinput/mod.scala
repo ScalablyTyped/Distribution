@@ -20,9 +20,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @JSImport("@creativebulma/bulma-tagsinput", JSImport.Default)
+  @JSImport("@creativebulma/bulma-tagsinput", JSImport.Namespace)
   @js.native
-  open class default protected ()
+  open class ^ protected ()
     extends StObject
        with BulmaTagsInput {
     /**
@@ -33,25 +33,22 @@ object mod {
     def this(selector: String, options: BulmaTagsInputOptions) = this()
     def this(selector: HTMLInputElement, options: BulmaTagsInputOptions) = this()
   }
-  /* static members */
-  object default {
-    
-    @JSImport("@creativebulma/bulma-tagsinput", JSImport.Default)
-    @js.native
-    val ^ : js.Any = js.native
-    
-    /**
-      * DOM modifications will be observed to detect any new element responding to the given selector
-      * to automatically instantiate BulmaTagsInput on them with the given option.
-      *
-      * @param selector selector can be a query string returning a single Node or a NodeList, directly
-      * a Node or a NodeList
-      */
-    inline def attach(selector: String): BulmaTagsInput = ^.asInstanceOf[js.Dynamic].applyDynamic("attach")(selector.asInstanceOf[js.Any]).asInstanceOf[BulmaTagsInput]
-    inline def attach(selector: String, options: BulmaTagsInputOptions): BulmaTagsInput = (^.asInstanceOf[js.Dynamic].applyDynamic("attach")(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[BulmaTagsInput]
-    inline def attach(selector: HTMLInputElement): BulmaTagsInput = ^.asInstanceOf[js.Dynamic].applyDynamic("attach")(selector.asInstanceOf[js.Any]).asInstanceOf[BulmaTagsInput]
-    inline def attach(selector: HTMLInputElement, options: BulmaTagsInputOptions): BulmaTagsInput = (^.asInstanceOf[js.Dynamic].applyDynamic("attach")(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[BulmaTagsInput]
-  }
+  @JSImport("@creativebulma/bulma-tagsinput", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /**
+    * DOM modifications will be observed to detect any new element responding to the given selector
+    * to automatically instantiate BulmaTagsInput on them with the given option.
+    *
+    * @param selector selector can be a query string returning a single Node or a NodeList, directly
+    * a Node or a NodeList
+    */
+  /* static member */
+  inline def attach(selector: String): BulmaTagsInput = ^.asInstanceOf[js.Dynamic].applyDynamic("attach")(selector.asInstanceOf[js.Any]).asInstanceOf[BulmaTagsInput]
+  inline def attach(selector: String, options: BulmaTagsInputOptions): BulmaTagsInput = (^.asInstanceOf[js.Dynamic].applyDynamic("attach")(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[BulmaTagsInput]
+  inline def attach(selector: HTMLInputElement): BulmaTagsInput = ^.asInstanceOf[js.Dynamic].applyDynamic("attach")(selector.asInstanceOf[js.Any]).asInstanceOf[BulmaTagsInput]
+  inline def attach(selector: HTMLInputElement, options: BulmaTagsInputOptions): BulmaTagsInput = (^.asInstanceOf[js.Dynamic].applyDynamic("attach")(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[BulmaTagsInput]
   
   @js.native
   trait BulmaTagsInput extends StObject {

@@ -24,6 +24,8 @@ trait CreateReportOptions extends StObject {
   
   var processLineBreaks: Boolean
   
+  var processLineBreaksAsNewText: Boolean
+  
   var rejectNullish: Boolean
   
   var runJs: js.UndefOr[RunJSFunc] = js.undefined
@@ -38,9 +40,10 @@ object CreateReportOptions {
     literalXmlDelimiter: String,
     noSandbox: Boolean,
     processLineBreaks: Boolean,
+    processLineBreaksAsNewText: Boolean,
     rejectNullish: Boolean
   ): CreateReportOptions = {
-    val __obj = js.Dynamic.literal(additionalJsContext = additionalJsContext.asInstanceOf[js.Any], cmdDelimiter = cmdDelimiter.asInstanceOf[js.Any], failFast = failFast.asInstanceOf[js.Any], fixSmartQuotes = fixSmartQuotes.asInstanceOf[js.Any], literalXmlDelimiter = literalXmlDelimiter.asInstanceOf[js.Any], noSandbox = noSandbox.asInstanceOf[js.Any], processLineBreaks = processLineBreaks.asInstanceOf[js.Any], rejectNullish = rejectNullish.asInstanceOf[js.Any], errorHandler = null)
+    val __obj = js.Dynamic.literal(additionalJsContext = additionalJsContext.asInstanceOf[js.Any], cmdDelimiter = cmdDelimiter.asInstanceOf[js.Any], failFast = failFast.asInstanceOf[js.Any], fixSmartQuotes = fixSmartQuotes.asInstanceOf[js.Any], literalXmlDelimiter = literalXmlDelimiter.asInstanceOf[js.Any], noSandbox = noSandbox.asInstanceOf[js.Any], processLineBreaks = processLineBreaks.asInstanceOf[js.Any], processLineBreaksAsNewText = processLineBreaksAsNewText.asInstanceOf[js.Any], rejectNullish = rejectNullish.asInstanceOf[js.Any], errorHandler = null)
     __obj.asInstanceOf[CreateReportOptions]
   }
   
@@ -64,6 +67,8 @@ object CreateReportOptions {
     inline def setNoSandbox(value: Boolean): Self = StObject.set(x, "noSandbox", value.asInstanceOf[js.Any])
     
     inline def setProcessLineBreaks(value: Boolean): Self = StObject.set(x, "processLineBreaks", value.asInstanceOf[js.Any])
+    
+    inline def setProcessLineBreaksAsNewText(value: Boolean): Self = StObject.set(x, "processLineBreaksAsNewText", value.asInstanceOf[js.Any])
     
     inline def setRejectNullish(value: Boolean): Self = StObject.set(x, "rejectNullish", value.asInstanceOf[js.Any])
     

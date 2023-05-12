@@ -9,7 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Omit<stylelint.stylelint.Config, 'overrides'> & {  files :string | std.Array<string>} */
 trait ConfigOverride extends StObject {
   
-  var codeProcessors: js.UndefOr[js.Array[CodeProcessor]] = js.undefined
+  var allowEmptyInput: js.UndefOr[Boolean] = js.undefined
+  
+  var cache: js.UndefOr[Boolean] = js.undefined
+  
+  var configurationComment: js.UndefOr[String] = js.undefined
   
   var customSyntax: js.UndefOr[CustomSyntax] = js.undefined
   
@@ -18,6 +22,8 @@ trait ConfigOverride extends StObject {
   var `extends`: js.UndefOr[ConfigExtends] = js.undefined
   
   var files: String | js.Array[String]
+  
+  var fix: js.UndefOr[Boolean] = js.undefined
   
   var ignoreDisables: js.UndefOr[DisableSettings] = js.undefined
   
@@ -29,10 +35,6 @@ trait ConfigOverride extends StObject {
   
   var plugins: js.UndefOr[ConfigPlugins] = js.undefined
   
-  var processorFunctions: js.UndefOr[js.Array[js.Function]] = js.undefined
-  
-  var processors: js.UndefOr[ConfigProcessors] = js.undefined
-  
   var quiet: js.UndefOr[Boolean] = js.undefined
   
   var reportDescriptionlessDisables: js.UndefOr[DisableSettings] = js.undefined
@@ -40,8 +42,6 @@ trait ConfigOverride extends StObject {
   var reportInvalidScopeDisables: js.UndefOr[DisableSettings] = js.undefined
   
   var reportNeedlessDisables: js.UndefOr[DisableSettings] = js.undefined
-  
-  var resultProcessors: js.UndefOr[js.Array[ResultProcessor]] = js.undefined
   
   var rules: js.UndefOr[ConfigRules] = js.undefined
 }
@@ -55,11 +55,17 @@ object ConfigOverride {
   @scala.inline
   implicit open class MutableBuilder[Self <: ConfigOverride] (val x: Self) extends AnyVal {
     
-    inline def setCodeProcessors(value: js.Array[CodeProcessor]): Self = StObject.set(x, "codeProcessors", value.asInstanceOf[js.Any])
+    inline def setAllowEmptyInput(value: Boolean): Self = StObject.set(x, "allowEmptyInput", value.asInstanceOf[js.Any])
     
-    inline def setCodeProcessorsUndefined: Self = StObject.set(x, "codeProcessors", js.undefined)
+    inline def setAllowEmptyInputUndefined: Self = StObject.set(x, "allowEmptyInput", js.undefined)
     
-    inline def setCodeProcessorsVarargs(value: CodeProcessor*): Self = StObject.set(x, "codeProcessors", js.Array(value*))
+    inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+    
+    inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
+    
+    inline def setConfigurationComment(value: String): Self = StObject.set(x, "configurationComment", value.asInstanceOf[js.Any])
+    
+    inline def setConfigurationCommentUndefined: Self = StObject.set(x, "configurationComment", js.undefined)
     
     inline def setCustomSyntax(value: CustomSyntax): Self = StObject.set(x, "customSyntax", value.asInstanceOf[js.Any])
     
@@ -78,6 +84,10 @@ object ConfigOverride {
     inline def setFiles(value: String | js.Array[String]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
     inline def setFilesVarargs(value: String*): Self = StObject.set(x, "files", js.Array(value*))
+    
+    inline def setFix(value: Boolean): Self = StObject.set(x, "fix", value.asInstanceOf[js.Any])
+    
+    inline def setFixUndefined: Self = StObject.set(x, "fix", js.undefined)
     
     inline def setIgnoreDisables(value: DisableSettings): Self = StObject.set(x, "ignoreDisables", value.asInstanceOf[js.Any])
     
@@ -105,19 +115,7 @@ object ConfigOverride {
     
     inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
     
-    inline def setPluginsVarargs(value: String*): Self = StObject.set(x, "plugins", js.Array(value*))
-    
-    inline def setProcessorFunctions(value: js.Array[js.Function]): Self = StObject.set(x, "processorFunctions", value.asInstanceOf[js.Any])
-    
-    inline def setProcessorFunctionsUndefined: Self = StObject.set(x, "processorFunctions", js.undefined)
-    
-    inline def setProcessorFunctionsVarargs(value: js.Function*): Self = StObject.set(x, "processorFunctions", js.Array(value*))
-    
-    inline def setProcessors(value: ConfigProcessors): Self = StObject.set(x, "processors", value.asInstanceOf[js.Any])
-    
-    inline def setProcessorsUndefined: Self = StObject.set(x, "processors", js.undefined)
-    
-    inline def setProcessorsVarargs(value: ConfigProcessor*): Self = StObject.set(x, "processors", js.Array(value*))
+    inline def setPluginsVarargs(value: (String | Plugin)*): Self = StObject.set(x, "plugins", js.Array(value*))
     
     inline def setQuiet(value: Boolean): Self = StObject.set(x, "quiet", value.asInstanceOf[js.Any])
     
@@ -146,12 +144,6 @@ object ConfigOverride {
     inline def setReportNeedlessDisablesUndefined: Self = StObject.set(x, "reportNeedlessDisables", js.undefined)
     
     inline def setReportNeedlessDisablesVarargs(value: NonNullable[Boolean]*): Self = StObject.set(x, "reportNeedlessDisables", js.Array(value*))
-    
-    inline def setResultProcessors(value: js.Array[ResultProcessor]): Self = StObject.set(x, "resultProcessors", value.asInstanceOf[js.Any])
-    
-    inline def setResultProcessorsUndefined: Self = StObject.set(x, "resultProcessors", js.undefined)
-    
-    inline def setResultProcessorsVarargs(value: ResultProcessor*): Self = StObject.set(x, "resultProcessors", js.Array(value*))
     
     inline def setRules(value: ConfigRules): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     

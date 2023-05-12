@@ -62,6 +62,15 @@ object modulesConfigurationMod {
       extends StObject
          with ButtonColorOption
     /* "silver" */ val Silver: typings.paypalCheckoutComponents.modulesConfigurationMod.ButtonColorOption.Silver & String = js.native
+    
+    /**
+      * Fourth alternate
+      */
+    @js.native
+    sealed trait White
+      extends StObject
+         with ButtonColorOption
+    /* "white" */ val White: typings.paypalCheckoutComponents.modulesConfigurationMod.ButtonColorOption.White & String = js.native
   }
   
   @js.native
@@ -224,28 +233,22 @@ object modulesConfigurationMod {
   
   trait ButtonStyle extends StObject {
     
-    var color: ButtonColorOption
+    var color: js.UndefOr[ButtonColorOption] = js.undefined
     
     var height: js.UndefOr[Double] = js.undefined
     
-    var label: ButtonLabelOption
+    var label: js.UndefOr[ButtonLabelOption] = js.undefined
     
-    var shape: ButtonShapeOption
+    var shape: js.UndefOr[ButtonShapeOption] = js.undefined
     
-    var size: ButtonSizeOption
+    var size: js.UndefOr[ButtonSizeOption] = js.undefined
     
-    var tagline: Boolean
+    var tagline: js.UndefOr[Boolean] = js.undefined
   }
   object ButtonStyle {
     
-    inline def apply(
-      color: ButtonColorOption,
-      label: ButtonLabelOption,
-      shape: ButtonShapeOption,
-      size: ButtonSizeOption,
-      tagline: Boolean
-    ): ButtonStyle = {
-      val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], shape = shape.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], tagline = tagline.asInstanceOf[js.Any])
+    inline def apply(): ButtonStyle = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ButtonStyle]
     }
     
@@ -254,17 +257,27 @@ object modulesConfigurationMod {
       
       inline def setColor(value: ButtonColorOption): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
       inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
       inline def setLabel(value: ButtonLabelOption): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
+      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+      
       inline def setShape(value: ButtonShapeOption): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
+      
+      inline def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
       
       inline def setSize(value: ButtonSizeOption): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      
       inline def setTagline(value: Boolean): Self = StObject.set(x, "tagline", value.asInstanceOf[js.Any])
+      
+      inline def setTaglineUndefined: Self = StObject.set(x, "tagline", js.undefined)
     }
   }
 }

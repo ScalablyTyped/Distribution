@@ -1,7 +1,7 @@
 package typings.blueprintjsTable
 
 import typings.blueprintjsCore.mod.AbstractPureComponent2
-import typings.blueprintjsIcons.libEsmGenerated16pxBlueprintIcons16Mod.BlueprintIcons16Id
+import typings.blueprintjsIcons.libEsmGeneratedIcons16pxBlueprintIcons16Mod.BlueprintIcons16Id
 import typings.blueprintjsTable.anon.IsActive
 import typings.blueprintjsTable.anon.ValidationMapColumnIntera
 import typings.blueprintjsTable.libEsmCommonContextMod.ColumnInteractionBarContextTypes_

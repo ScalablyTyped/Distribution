@@ -1,6 +1,6 @@
 package typings.openui5
 
-import typings.openui5.anon.`11`
+import typings.openui5.anon.`13`
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -268,6 +268,8 @@ object sapUiWebcFioriSideNavigationMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:selectionChange selectionChange} to attached listeners.
       *
       * Listeners may prevent the default action of this event by calling the `preventDefault` method on the
@@ -279,7 +281,7 @@ object sapUiWebcFioriSideNavigationMod {
     def fireSelectionChange(/**
       * Parameters to pass along with the event
       */
-    mParameters: `11`): Boolean = js.native
+    mParameters: `13`): Boolean = js.native
     
     /**
       * Gets current value of property {@link #getCollapsed collapsed}.

@@ -1,6 +1,6 @@
 package typings.sqsProducer
 
-import typings.sqsProducer.distProducerMod.ProducerOptions
+import typings.sqsProducer.distTypesMod.ProducerOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

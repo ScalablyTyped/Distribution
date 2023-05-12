@@ -15,9 +15,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.microsoftGraph.microsoftGraphStrings.listItem
   - typings.microsoftGraph.microsoftGraphStrings.drive
   - typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue_
+  - typings.microsoftGraph.microsoftGraphStrings.chatMessage
+  - typings.microsoftGraph.microsoftGraphStrings.person
 */
 trait EntityType extends StObject
 object EntityType {
+  
+  inline def chatMessage: typings.microsoftGraph.microsoftGraphStrings.chatMessage = "chatMessage".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.chatMessage]
   
   inline def drive: typings.microsoftGraph.microsoftGraphStrings.drive = "drive".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.drive]
   
@@ -32,6 +36,8 @@ object EntityType {
   inline def listItem: typings.microsoftGraph.microsoftGraphStrings.listItem = "listItem".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.listItem]
   
   inline def message: typings.microsoftGraph.microsoftGraphStrings.message = "message".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.message]
+  
+  inline def person: typings.microsoftGraph.microsoftGraphStrings.person = "person".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.person]
   
   inline def site: typings.microsoftGraph.microsoftGraphStrings.site = "site".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.site]
   

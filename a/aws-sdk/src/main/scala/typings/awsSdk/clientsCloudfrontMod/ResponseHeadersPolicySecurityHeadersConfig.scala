@@ -17,22 +17,22 @@ trait ResponseHeadersPolicySecurityHeadersConfig extends StObject {
   var ContentTypeOptions: js.UndefOr[ResponseHeadersPolicyContentTypeOptions] = js.undefined
   
   /**
-    * Determines whether CloudFront includes the X-Frame-Options HTTP response header and the header’s value. For more information about the X-Frame-Options HTTP response header, see X-Frame-Options in the MDN Web Docs.
+    * Determines whether CloudFront includes the X-Frame-Options HTTP response header and the header's value. For more information about the X-Frame-Options HTTP response header, see X-Frame-Options in the MDN Web Docs.
     */
   var FrameOptions: js.UndefOr[ResponseHeadersPolicyFrameOptions] = js.undefined
   
   /**
-    * Determines whether CloudFront includes the Referrer-Policy HTTP response header and the header’s value. For more information about the Referrer-Policy HTTP response header, see Referrer-Policy in the MDN Web Docs.
+    * Determines whether CloudFront includes the Referrer-Policy HTTP response header and the header's value. For more information about the Referrer-Policy HTTP response header, see Referrer-Policy in the MDN Web Docs.
     */
   var ReferrerPolicy: js.UndefOr[ResponseHeadersPolicyReferrerPolicy] = js.undefined
   
   /**
-    * Determines whether CloudFront includes the Strict-Transport-Security HTTP response header and the header’s value. For more information about the Strict-Transport-Security HTTP response header, see Strict-Transport-Security in the MDN Web Docs.
+    * Determines whether CloudFront includes the Strict-Transport-Security HTTP response header and the header's value. For more information about the Strict-Transport-Security HTTP response header, see Strict-Transport-Security in the MDN Web Docs.
     */
   var StrictTransportSecurity: js.UndefOr[ResponseHeadersPolicyStrictTransportSecurity] = js.undefined
   
   /**
-    * Determines whether CloudFront includes the X-XSS-Protection HTTP response header and the header’s value. For more information about the X-XSS-Protection HTTP response header, see X-XSS-Protection in the MDN Web Docs.
+    * Determines whether CloudFront includes the X-XSS-Protection HTTP response header and the header's value. For more information about the X-XSS-Protection HTTP response header, see X-XSS-Protection in the MDN Web Docs.
     */
   var XSSProtection: js.UndefOr[ResponseHeadersPolicyXSSProtection] = js.undefined
 }

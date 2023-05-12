@@ -27,11 +27,6 @@ trait Branch extends StObject {
   var googleMobileAdsAutoInit: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * @deprecated Use `ios.googleServicesFile` instead.
-    */
-  var googleSignIn: js.UndefOr[ReservedClientId] = js.undefined
-  
-  /**
     * Sets `ITSAppUsesNonExemptEncryption` in the standalone ipa's Info.plist to the given boolean value.
     */
   var usesNonExemptEncryption: js.UndefOr[Boolean] = js.undefined
@@ -61,10 +56,6 @@ object Branch {
     inline def setGoogleMobileAdsAutoInit(value: Boolean): Self = StObject.set(x, "googleMobileAdsAutoInit", value.asInstanceOf[js.Any])
     
     inline def setGoogleMobileAdsAutoInitUndefined: Self = StObject.set(x, "googleMobileAdsAutoInit", js.undefined)
-    
-    inline def setGoogleSignIn(value: ReservedClientId): Self = StObject.set(x, "googleSignIn", value.asInstanceOf[js.Any])
-    
-    inline def setGoogleSignInUndefined: Self = StObject.set(x, "googleSignIn", js.undefined)
     
     inline def setUsesNonExemptEncryption(value: Boolean): Self = StObject.set(x, "usesNonExemptEncryption", value.asInstanceOf[js.Any])
     

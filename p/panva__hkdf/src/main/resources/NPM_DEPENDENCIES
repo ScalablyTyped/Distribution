@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@panva/hkdf" : "1.0.2"
+      "@panva/hkdf" : "1.1.1"
     }
   ],
   "test-dependencies" : [
     {
-      "@panva/hkdf" : "1.0.2"
+      "@panva/hkdf" : "1.1.1"
     }
   ],
   "compile-devDependencies" : [

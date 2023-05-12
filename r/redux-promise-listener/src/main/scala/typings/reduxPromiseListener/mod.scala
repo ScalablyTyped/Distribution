@@ -81,7 +81,7 @@ object mod {
     trait PromiseListener extends StObject {
       
       def createAsyncFunction[StartAction /* <: AnyAction */, ResolveAction /* <: AnyAction */, RejectAction /* <: AnyAction */, TReturn](
-        // tslint:disable-next-line no-unnecessary-generics
+        // eslint-disable-next-line no-unnecessary-generics
       config: Config[StartAction, ResolveAction, RejectAction, TReturn]
       ): AsyncFunction[TReturn]
       

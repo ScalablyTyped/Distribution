@@ -96,7 +96,7 @@ object basicsMod {
       * a `CID` otherwise returns `null`. If `value` is instanceof `CID`
       * it will return value back. If `value` is not instance of this CID
       * class, but is compatible CID it will return new instance of this
-      * `CID` class. Otherwise returs null.
+      * `CID` class. Otherwise returns null.
       *
       * This allows two different incompatible versions of CID library to
       * co-exist and interop as long as binary interface is compatible.

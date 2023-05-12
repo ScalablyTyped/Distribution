@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.TextDecoration
+import typings.csstype.mod.Property.ImageRendering
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,13 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `482` extends StObject {
   
   var value: js.UndefOr[
-    (TextDecoration[Double | String]) | (js.Array[
+    ImageRendering | (js.Array[
       (Extract[
-        js.UndefOr[
-          (TextDecoration[Double | String]) | (js.Array[NonNullable[js.UndefOr[TextDecoration[Double | String]]]])
-        ], 
+        js.UndefOr[ImageRendering | js.Array[NonNullable[js.UndefOr[ImageRendering]]]], 
         String
-      ]) | (NonNullable[js.UndefOr[TextDecoration[Double | String]]])
+      ]) | NonNullable[js.UndefOr[ImageRendering]]
     ])
   ] = js.native
 }

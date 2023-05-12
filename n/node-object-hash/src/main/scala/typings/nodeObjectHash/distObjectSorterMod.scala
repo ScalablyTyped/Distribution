@@ -7,21 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distObjectSorterMod {
   
-  /**
-    * Object sorter consturctor
-    * @param options object transformation options
-    * @return function that transforms object to strings
-    */
-  inline def apply(): StringifyFn = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[StringifyFn]
-  inline def apply(options: SorterOptions): StringifyFn = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[StringifyFn]
-  
   @JSImport("node-object-hash/dist/objectSorter", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  /**
-    * Advanced coerce options
-    */
+  inline def objectSorter(): StringifyFn = ^.asInstanceOf[js.Dynamic].applyDynamic("objectSorter")().asInstanceOf[StringifyFn]
+  inline def objectSorter(options: SorterOptions): StringifyFn = ^.asInstanceOf[js.Dynamic].applyDynamic("objectSorter")(options.asInstanceOf[js.Any]).asInstanceOf[StringifyFn]
+  
   trait CoerceOptions extends StObject {
     
     /**
@@ -192,9 +184,6 @@ object distObjectSorterMod {
     }
   }
   
-  /**
-    * Advanced sort options
-    */
   trait SortOptions extends StObject {
     
     /**
@@ -263,9 +252,6 @@ object distObjectSorterMod {
     }
   }
   
-  /**
-    * Object sorter options
-    */
   trait SorterOptions extends StObject {
     
     /**
@@ -315,9 +301,6 @@ object distObjectSorterMod {
   
   type StringifyFn = js.Function1[/* obj */ Hashable | Any, String]
   
-  /**
-    * Advanced trim options
-    */
   trait TrimOptions extends StObject {
     
     /**

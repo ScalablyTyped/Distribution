@@ -1,6 +1,7 @@
 package typings.uswdsUswds
 
 import org.scalablytyped.runtime.Shortcut
+import typings.std.Document
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,26 +13,15 @@ object jsUsaValidationMod extends Shortcut {
   @js.native
   val default: Validator = js.native
   
+  @js.native
   trait Validator extends StObject {
     
-    def off(el: HTMLElement): Unit
+    def init(root: Document): Unit = js.native
+    def init(root: HTMLElement): Unit = js.native
     
-    def on(el: HTMLElement): Unit
-  }
-  object Validator {
+    def off(el: HTMLElement): Unit = js.native
     
-    inline def apply(off: HTMLElement => Unit, on: HTMLElement => Unit): Validator = {
-      val __obj = js.Dynamic.literal(off = js.Any.fromFunction1(off), on = js.Any.fromFunction1(on))
-      __obj.asInstanceOf[Validator]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: Validator] (val x: Self) extends AnyVal {
-      
-      inline def setOff(value: HTMLElement => Unit): Self = StObject.set(x, "off", js.Any.fromFunction1(value))
-      
-      inline def setOn(value: HTMLElement => Unit): Self = StObject.set(x, "on", js.Any.fromFunction1(value))
-    }
+    def on(el: HTMLElement): Unit = js.native
   }
   
   type _To = Validator

@@ -21,6 +21,7 @@ trait Mesh
     * @internal
     */
   def _bind(subMesh: SubMesh, effect: Effect, fillMode: Double): Mesh = js.native
+  def _bind(subMesh: SubMesh, effect: Effect, fillMode: Double, allowInstancedRendering: Boolean): Mesh = js.native
   
   /** @internal */
   def _checkDelayState(): Mesh = js.native
@@ -59,6 +60,9 @@ trait Mesh
     */
   def _getInstancesRenderList(subMeshId: Double): InstancesBatch = js.native
   def _getInstancesRenderList(subMeshId: Double, isReplacementMode: Boolean): InstancesBatch = js.native
+  
+  /** @internal */
+  def _getRenderingFillMode(fillMode: Double): Double = js.native
   
   /** @internal */
   var _instanceDataStorage: InstanceDataStorage = js.native
@@ -173,7 +177,7 @@ trait Mesh
   
   /**
     * Add a mesh as LOD level triggered at the given distance.
-    * @see https://doc.babylonjs.com/how_to/how_to_use_lod
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/mesh/LOD
     * @param distanceOrScreenCoverage Either distance from the center of the object to show this level or the screen coverage if `useScreenCoverage` is set to `true`.
     * If screen coverage, value is a fraction of the screen's total surface, between 0 and 1.
     * Example Playground for distance https://playground.babylonjs.com/#QE7KM#197
@@ -421,7 +425,7 @@ trait Mesh
     * The mesh World Matrix is then reset.
     * This method returns nothing but really modifies the mesh even if it's originally not set as updatable.
     * Note that, under the hood, this method sets a new VertexBuffer each call.
-    * @see https://doc.babylonjs.com/resources/baking_transformations
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/mesh/transforms/center_origin/bakingTransforms
     * @param bakeIndependentlyOfChildren indicates whether to preserve all child nodes' World Matrix during baking
     * @returns the current mesh
     */
@@ -491,7 +495,7 @@ trait Mesh
   
   /**
     * Creates a new InstancedMesh object from the mesh model.
-    * @see https://doc.babylonjs.com/how_to/how_to_use_instances
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/mesh/copies/instances
     * @param name defines the name of the new instance
     * @returns a new InstancedMesh
     */
@@ -535,6 +539,10 @@ trait Mesh
     */
   def forceSharedVertices(): Unit = js.native
   
+  /** Gets or sets a boolean indicating that the update of the instance buffer of the world matrices must be performed in all cases (and notably even in frozen mode) */
+  def forceWorldMatrixInstancedBufferUpdate: Boolean = js.native
+  def forceWorldMatrixInstancedBufferUpdate_=(value: Boolean): Unit = js.native
+  
   /**
     * Gets or sets the forced number of instances to display.
     * If 0 (default value), the number of instances is not forced and depends on the draw type
@@ -576,7 +584,7 @@ trait Mesh
   
   /**
     * Returns the LOD level mesh at the passed distance or null if not found.
-    * @see https://doc.babylonjs.com/how_to/how_to_use_lod
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/mesh/LOD
     * @param distance The distance from the center of the object to show this level
     * @returns a Mesh or `null`
     */
@@ -604,15 +612,24 @@ trait Mesh
     * - VertexBuffer.MatricesIndicesExtraKind
     * - VertexBuffer.MatricesWeightsKind
     * - VertexBuffer.MatricesWeightsExtraKind
+    * @param bypassInstanceData defines a boolean indicating that the function should not take into account the instance data (applies only if the mesh has instances). Default: false
     * @returns a FloatArray or null if the mesh has no vertex buffer for this kind.
     */
   def getVertexBuffer(kind: String): Nullable[VertexBuffer] = js.native
+  def getVertexBuffer(kind: String, bypassInstanceData: Boolean): Nullable[VertexBuffer] = js.native
+  
+  def getVerticesData(kind: String, copyWhenShared: Boolean, forceCopy: Boolean, bypassInstanceData: Boolean): Nullable[FloatArray] = js.native
+  def getVerticesData(kind: String, copyWhenShared: Boolean, forceCopy: Unit, bypassInstanceData: Boolean): Nullable[FloatArray] = js.native
+  def getVerticesData(kind: String, copyWhenShared: Unit, forceCopy: Boolean, bypassInstanceData: Boolean): Nullable[FloatArray] = js.native
+  def getVerticesData(kind: String, copyWhenShared: Unit, forceCopy: Unit, bypassInstanceData: Boolean): Nullable[FloatArray] = js.native
   
   /**
     * Returns a string which contains the list of existing `kinds` of Vertex Data associated with this mesh.
+    * @param bypassInstanceData defines a boolean indicating that the function should not take into account the instance data (applies only if the mesh has instances). Default: false
     * @returns an array of strings
     */
   def getVerticesDataKinds(): js.Array[String] = js.native
+  def getVerticesDataKinds(bypassInstanceData: Boolean): js.Array[String] = js.native
   
   /**
     * Gets a boolean indicating if this mesh has LOD
@@ -638,7 +655,7 @@ trait Mesh
     * Gets the list of instances created from this mesh
     * it is not supposed to be modified manually.
     * Note also that the order of the InstancedMesh wihin the array is not significant and might change.
-    * @see https://doc.babylonjs.com/how_to/how_to_use_instances
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/mesh/copies/instances
     */
   var instances: js.Array[InstancedMesh] = js.native
   
@@ -679,9 +696,13 @@ trait Mesh
     * - VertexBuffer.MatricesIndicesExtraKind
     * - VertexBuffer.MatricesWeightsKind
     * - VertexBuffer.MatricesWeightsExtraKind
+    * @param bypassInstanceData defines a boolean indicating that the function should not take into account the instance data (applies only if the mesh has instances). Default: false
     * @returns a boolean
     */
   def isVertexBufferUpdatable(kind: String): Boolean = js.native
+  def isVertexBufferUpdatable(kind: String, bypassInstanceData: Boolean): Boolean = js.native
+  
+  def isVerticesDataPresent(kind: String, bypassInstanceData: Boolean): Boolean = js.native
   
   /**
     * Creates a un-shared specific occurence of the geometry for the mesh.
@@ -749,7 +770,7 @@ trait Mesh
   
   /**
     * User defined function used to change how LOD level selection is done
-    * @see https://doc.babylonjs.com/how_to/how_to_use_lod
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/mesh/LOD
     */
   def onLODLevelSelection(distance: Double, mesh: Mesh, selectedLevel: Nullable[Mesh]): Unit = js.native
   
@@ -775,6 +796,12 @@ trait Mesh
   var overrideMaterialSideOrientation: Nullable[Double] = js.native
   
   /**
+    * Use this property to override the Material's fillMode value
+    */
+  def overrideRenderingFillMode: Nullable[Double] = js.native
+  def overrideRenderingFillMode_=(fillMode: Nullable[Double]): Unit = js.native
+  
+  /**
     * Sets a value overriding the instance count. Only applicable when custom instanced InterleavedVertexBuffer are used rather than InstancedMeshs
     */
   def overridenInstanceCount_=(count: Double): Unit = js.native
@@ -798,7 +825,7 @@ trait Mesh
   
   /**
     * Register a custom buffer that will be instanced
-    * @see https://doc.babylonjs.com/how_to/how_to_use_instances#custom-buffers
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/mesh/copies/instances#custom-buffers
     * @param kind defines the buffer kind
     * @param stride defines the stride in floats
     */
@@ -811,11 +838,11 @@ trait Mesh
   
   /**
     * Remove a mesh from the LOD array
-    * @see https://doc.babylonjs.com/how_to/how_to_use_lod
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/mesh/LOD
     * @param mesh defines the mesh to be removed
     * @returns This mesh (for chaining)
     */
-  def removeLODLevel(mesh: Mesh): Mesh = js.native
+  def removeLODLevel(mesh: Nullable[Mesh]): Mesh = js.native
   
   /**
     * Delete a vertex buffer associated with this mesh
@@ -1086,7 +1113,7 @@ trait Mesh
   
   /**
     * This method updates the vertex positions of an updatable mesh according to the `positionFunction` returned values.
-    * @see https://doc.babylonjs.com/how_to/how_to_dynamically_morph_a_mesh#other-shapes-updatemeshpositions
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/mesh/dynamicMeshMorph#other-shapes-updatemeshpositions
     * @param positionFunction is a simple JS function what is passed the mesh `positions` array. It doesn't need to return anything
     * @param computeNormals is a boolean (default true) to enable/disable the mesh normal recomputation after the vertex position update
     * @returns the current mesh

@@ -172,6 +172,11 @@ trait DragStateeventEventTypesdActive extends StObject {
   var target: EventTarget
   
   /**
+    * Time delta (ms) with the previous event.
+    */
+  var timeDelta: Double
+  
+  /**
     * The timestamp (ms) of the current event.
     */
   var timeStamp: Double
@@ -237,13 +242,14 @@ object DragStateeventEventTypesdActive {
     swipe: Vector2,
     tap: Boolean,
     target: EventTarget,
+    timeDelta: Double,
     timeStamp: Double,
     `type`: String,
     values: Vector2,
     velocity: Vector2,
     xy: Vector2
   ): DragStateeventEventTypesdActive = {
-    val __obj = js.Dynamic.literal(_active = _active.asInstanceOf[js.Any], _blocked = _blocked.asInstanceOf[js.Any], _bounds = _bounds.asInstanceOf[js.Any], _delayed = _delayed.asInstanceOf[js.Any], _delta = _delta.asInstanceOf[js.Any], _direction = _direction.asInstanceOf[js.Any], _distance = _distance.asInstanceOf[js.Any], _force = _force.asInstanceOf[js.Any], _initial = _initial.asInstanceOf[js.Any], _keyboardActive = _keyboardActive.asInstanceOf[js.Any], _movement = _movement.asInstanceOf[js.Any], _movementBound = _movementBound.asInstanceOf[js.Any], _pointerActive = _pointerActive.asInstanceOf[js.Any], _preventScroll = _preventScroll.asInstanceOf[js.Any], _step = _step.asInstanceOf[js.Any], _values = _values.asInstanceOf[js.Any], active = active.asInstanceOf[js.Any], cancel = js.Any.fromFunction0(cancel), canceled = canceled.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], delta = delta.asInstanceOf[js.Any], direction = direction.asInstanceOf[js.Any], distance = distance.asInstanceOf[js.Any], elapsedTime = elapsedTime.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], first = first.asInstanceOf[js.Any], initial = initial.asInstanceOf[js.Any], intentional = intentional.asInstanceOf[js.Any], last = last.asInstanceOf[js.Any], lastOffset = lastOffset.asInstanceOf[js.Any], movement = movement.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], overflow = overflow.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any], swipe = swipe.asInstanceOf[js.Any], tap = tap.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any], velocity = velocity.asInstanceOf[js.Any], xy = xy.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(_active = _active.asInstanceOf[js.Any], _blocked = _blocked.asInstanceOf[js.Any], _bounds = _bounds.asInstanceOf[js.Any], _delayed = _delayed.asInstanceOf[js.Any], _delta = _delta.asInstanceOf[js.Any], _direction = _direction.asInstanceOf[js.Any], _distance = _distance.asInstanceOf[js.Any], _force = _force.asInstanceOf[js.Any], _initial = _initial.asInstanceOf[js.Any], _keyboardActive = _keyboardActive.asInstanceOf[js.Any], _movement = _movement.asInstanceOf[js.Any], _movementBound = _movementBound.asInstanceOf[js.Any], _pointerActive = _pointerActive.asInstanceOf[js.Any], _preventScroll = _preventScroll.asInstanceOf[js.Any], _step = _step.asInstanceOf[js.Any], _values = _values.asInstanceOf[js.Any], active = active.asInstanceOf[js.Any], cancel = js.Any.fromFunction0(cancel), canceled = canceled.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], delta = delta.asInstanceOf[js.Any], direction = direction.asInstanceOf[js.Any], distance = distance.asInstanceOf[js.Any], elapsedTime = elapsedTime.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], first = first.asInstanceOf[js.Any], initial = initial.asInstanceOf[js.Any], intentional = intentional.asInstanceOf[js.Any], last = last.asInstanceOf[js.Any], lastOffset = lastOffset.asInstanceOf[js.Any], movement = movement.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], overflow = overflow.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any], swipe = swipe.asInstanceOf[js.Any], tap = tap.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], timeDelta = timeDelta.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any], velocity = velocity.asInstanceOf[js.Any], xy = xy.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DragStateeventEventTypesdActive]
   }
@@ -304,6 +310,8 @@ object DragStateeventEventTypesdActive {
     inline def setTap(value: Boolean): Self = StObject.set(x, "tap", value.asInstanceOf[js.Any])
     
     inline def setTarget(value: EventTarget): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    
+    inline def setTimeDelta(value: Double): Self = StObject.set(x, "timeDelta", value.asInstanceOf[js.Any])
     
     inline def setTimeStamp(value: Double): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
     

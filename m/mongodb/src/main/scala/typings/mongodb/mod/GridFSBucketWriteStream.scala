@@ -17,12 +17,8 @@ open class GridFSBucketWriteStream () extends Writable {
   /**
     * Places this write stream into an aborted state (all future writes fail)
     * and deletes all chunks that have already been written.
-    *
-    * @param callback - called when chunks are successfully removed or error occurred
     */
   def abort(): js.Promise[Unit] = js.native
-  /** @deprecated Callbacks are deprecated and will be removed in the next major version. See [mongodb-legacy](https://github.com/mongodb-js/nodejs-mongodb-legacy) for migration assistance */
-  def abort(callback: Callback[Unit]): Unit = js.native
   
   var bucket: GridFSBucket = js.native
   

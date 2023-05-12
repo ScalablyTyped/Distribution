@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WorkspaceEditMetadata extends StObject {
   
   /**
-    * Signal to the editor that this edit is a refactoring.
-    */
+  		 * Signal to the editor that this edit is a refactoring.
+  		 */
   var isRefactoring: js.UndefOr[Boolean] = js.undefined
 }
 object WorkspaceEditMetadata {

@@ -12,6 +12,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait IPool extends EventEmitter {
   
+  def connect(): js.Promise[IClient] = js.native
+  
   def end(): js.Promise[Unit] = js.native
   def end(cb: js.Function1[/* err */ js.Error, Any]): Any = js.native
   
@@ -20,7 +22,12 @@ trait IPool extends EventEmitter {
   
   val ending: Boolean = js.native
   
+  val expiredCount: Double = js.native
+  
   val idleCount: Double = js.native
+  
+  def log(msg: String): Unit = js.native
+  def log(msg: String, err: Any): Unit = js.native
   
   val options: StringDictionary[Any] = js.native
   

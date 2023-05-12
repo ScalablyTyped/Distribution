@@ -46,7 +46,8 @@ object distUtilsMod {
       js.Object, 
       js.Object, 
       `false`, 
-      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String, js.Object], 
+      js.Object, 
       js.Object
     ]
   ): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasSetupState")(vm.asInstanceOf[js.Any]).asInstanceOf[Boolean]
@@ -55,17 +56,34 @@ object distUtilsMod {
   
   inline def isComponent(component: Any): /* is @vue/runtime-core.@vue/runtime-core.ConcreteComponent<{}, any, any, @vue/runtime-core.@vue/runtime-core.ComputedOptions, @vue/runtime-core.@vue/runtime-core.MethodOptions> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isComponent")(component.asInstanceOf[js.Any]).asInstanceOf[/* is @vue/runtime-core.@vue/runtime-core.ConcreteComponent<{}, any, any, @vue/runtime-core.@vue/runtime-core.ComputedOptions, @vue/runtime-core.@vue/runtime-core.MethodOptions> */ Boolean]
   
-  inline def isFunctionalComponent(component: Any): /* is @vue/runtime-core.@vue/runtime-core.FunctionalComponent<{}, {}> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFunctionalComponent")(component.asInstanceOf[js.Any]).asInstanceOf[/* is @vue/runtime-core.@vue/runtime-core.FunctionalComponent<{}, {}> */ Boolean]
+  inline def isFunctionalComponent(component: Any): /* is @vue/runtime-core.@vue/runtime-core.FunctionalComponent<{}, {}, any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFunctionalComponent")(component.asInstanceOf[js.Any]).asInstanceOf[/* is @vue/runtime-core.@vue/runtime-core.FunctionalComponent<{}, {}, any> */ Boolean]
   
   inline def isNotNullOrUndefined[T /* <: js.Object */](): /* is T */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNotNullOrUndefined")().asInstanceOf[/* is T */ Boolean]
   inline def isNotNullOrUndefined[T /* <: js.Object */](obj: T): /* is T */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNotNullOrUndefined")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is T */ Boolean]
   
   inline def isObject(obj: Any): /* is std.Record<string, any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObject")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is std.Record<string, any> */ Boolean]
   
-  inline def isObjectComponent(component: Any): /* is @vue/runtime-core.@vue/runtime-core.ComponentOptions<{}, any, any, any, any, any, any, any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObjectComponent")(component.asInstanceOf[js.Any]).asInstanceOf[/* is @vue/runtime-core.@vue/runtime-core.ComponentOptions<{}, any, any, any, any, any, any, any> */ Boolean]
+  inline def isObjectComponent(component: Any): /* is @vue/runtime-core.@vue/runtime-core.ComponentOptions<{}, any, any, any, any, any, any, any, any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObjectComponent")(component.asInstanceOf[js.Any]).asInstanceOf[/* is @vue/runtime-core.@vue/runtime-core.ComponentOptions<{}, any, any, any, any, any, any, any, any> */ Boolean]
   
   inline def isRefSelector(selector: String): /* is @vue/test-utils.@vue/test-utils/dist/types.RefSelector */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRefSelector")(selector.asInstanceOf[js.Any]).asInstanceOf[/* is @vue/test-utils.@vue/test-utils/dist/types.RefSelector */ Boolean]
   inline def isRefSelector(selector: RefSelector): /* is @vue/test-utils.@vue/test-utils/dist/types.RefSelector */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRefSelector")(selector.asInstanceOf[js.Any]).asInstanceOf[/* is @vue/test-utils.@vue/test-utils/dist/types.RefSelector */ Boolean]
+  
+  inline def isScriptSetup_false(
+    vm: ComponentPublicInstance[
+      js.Object, 
+      js.Object, 
+      js.Object, 
+      js.Object, 
+      js.Object, 
+      js.Object, 
+      js.Object, 
+      js.Object, 
+      `false`, 
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String, js.Object], 
+      js.Object, 
+      js.Object
+    ]
+  ): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isScriptSetup")(vm.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def mergeDeep(target: Record[String, Any], source: Record[String, Any]): Record[String, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeDeep")(target.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[Record[String, Any]]
   

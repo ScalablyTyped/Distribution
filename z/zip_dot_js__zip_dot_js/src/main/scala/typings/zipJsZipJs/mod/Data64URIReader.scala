@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class Data64URIReader protected () extends Reader[String] {
   /**
     * Creates the {@link Reader} instance
-    * 
+    *
     * @param value The data to read.
     */
   def this(value: String) = this()

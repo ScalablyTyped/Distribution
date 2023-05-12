@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "devextreme-quill"
-version := "1.5.18-f7d27e"
+version := "1.6.2-a62c4f"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

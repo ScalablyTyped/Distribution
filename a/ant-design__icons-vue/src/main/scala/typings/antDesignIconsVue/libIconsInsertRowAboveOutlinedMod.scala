@@ -16,7 +16,7 @@ object libIconsInsertRowAboveOutlinedMod extends Shortcut {
   @js.native
   trait InsertRowAboveOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_InsertRowAboveOutlinedIconType: String = js.native

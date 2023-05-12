@@ -12,7 +12,7 @@ trait ManagedScaling extends StObject {
   var instanceWarmupPeriod: js.UndefOr[ManagedScalingInstanceWarmupPeriod] = js.undefined
   
   /**
-    * The maximum number of Amazon EC2 instances that Amazon ECS will scale out at one time. The scale in process is not affected by this parameter. If this parameter is omitted, the default value of 10000 is used.
+    * The maximum number of Amazon EC2 instances that Amazon ECS will scale out at one time. The scale in process is not affected by this parameter. If this parameter is omitted, the default value of 1 is used.
     */
   var maximumScalingStepSize: js.UndefOr[ManagedScalingStepSize] = js.undefined
   
@@ -27,7 +27,7 @@ trait ManagedScaling extends StObject {
   var status: js.UndefOr[ManagedScalingStatus] = js.undefined
   
   /**
-    * The target capacity value for the capacity provider. The specified value must be greater than 0 and less than or equal to 100. A value of 100 results in the Amazon EC2 instances in your Auto Scaling group being completely used.
+    * The target capacity utilization as a percentage for the capacity provider. The specified value must be greater than 0 and less than or equal to 100. For example, if you want the capacity provider to maintain 10% spare capacity, then that means the utilization is 90%, so use a targetCapacity of 90. The default value of 100 percent results in the Amazon EC2 instances in your Auto Scaling group being completely used.
     */
   var targetCapacity: js.UndefOr[ManagedScalingTargetCapacity] = js.undefined
 }

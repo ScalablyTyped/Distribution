@@ -12,7 +12,7 @@ trait Details extends StObject {
   var ImportAssetFromSignedUrlJobErrorDetails: js.UndefOr[typings.awsSdk.clientsDataexchangeMod.ImportAssetFromSignedUrlJobErrorDetails] = js.undefined
   
   /**
-    * Information about the job error.
+    * Details about the job error.
     */
   var ImportAssetsFromS3JobErrorDetails: js.UndefOr[ListOfAssetSourceEntry] = js.undefined
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdatePortfolioShareInput extends StObject {
   
   /**
-    * The language code.    en - English (default)    jp - Japanese    zh - Chinese  
+    * The language code.    jp - Japanese    zh - Chinese  
     */
   var AcceptLanguage: js.UndefOr[typings.awsSdk.clientsServicecatalogMod.AcceptLanguage] = js.undefined
   
@@ -24,7 +24,12 @@ trait UpdatePortfolioShareInput extends StObject {
   var PortfolioId: Id
   
   /**
-    * A flag to enable or disable TagOptions sharing for the portfolio share. If this field is not provided, the current state of TagOptions sharing on the portfolio share will not be modified.
+    * A flag to enables or disables Principals sharing in the portfolio. If this field is not provided, the current state of the Principals sharing on the portfolio share will not be modified. 
+    */
+  var SharePrincipals: js.UndefOr[NullableBoolean] = js.undefined
+  
+  /**
+    * Enables or disables TagOptions sharing for the portfolio share. If this field is not provided, the current state of TagOptions sharing on the portfolio share will not be modified.
     */
   var ShareTagOptions: js.UndefOr[NullableBoolean] = js.undefined
 }
@@ -51,6 +56,10 @@ object UpdatePortfolioShareInput {
     inline def setOrganizationNodeUndefined: Self = StObject.set(x, "OrganizationNode", js.undefined)
     
     inline def setPortfolioId(value: Id): Self = StObject.set(x, "PortfolioId", value.asInstanceOf[js.Any])
+    
+    inline def setSharePrincipals(value: NullableBoolean): Self = StObject.set(x, "SharePrincipals", value.asInstanceOf[js.Any])
+    
+    inline def setSharePrincipalsUndefined: Self = StObject.set(x, "SharePrincipals", js.undefined)
     
     inline def setShareTagOptions(value: NullableBoolean): Self = StObject.set(x, "ShareTagOptions", value.asInstanceOf[js.Any])
     

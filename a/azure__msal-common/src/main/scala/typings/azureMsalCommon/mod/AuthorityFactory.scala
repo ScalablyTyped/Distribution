@@ -3,6 +3,7 @@ package typings.azureMsalCommon.mod
 import typings.azureMsalCommon.distAuthorityAuthorityOptionsMod.AuthorityOptions
 import typings.azureMsalCommon.distCacheInterfaceIcachemanagerMod.ICacheManager
 import typings.azureMsalCommon.distNetworkInetworkmoduleMod.INetworkModule
+import typings.azureMsalCommon.distTelemetryPerformanceIperformanceclientMod.IPerformanceClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,15 +33,35 @@ object AuthorityFactory {
     authorityUri: String,
     networkClient: INetworkModule,
     cacheManager: ICacheManager,
-    authorityOptions: AuthorityOptions
-  ): js.Promise[typings.azureMsalCommon.distAuthorityAuthorityMod.Authority] = (^.asInstanceOf[js.Dynamic].applyDynamic("createDiscoveredInstance")(authorityUri.asInstanceOf[js.Any], networkClient.asInstanceOf[js.Any], cacheManager.asInstanceOf[js.Any], authorityOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.azureMsalCommon.distAuthorityAuthorityMod.Authority]]
+    authorityOptions: AuthorityOptions,
+    logger: typings.azureMsalCommon.distLoggerLoggerMod.Logger
+  ): js.Promise[typings.azureMsalCommon.distAuthorityAuthorityMod.Authority] = (^.asInstanceOf[js.Dynamic].applyDynamic("createDiscoveredInstance")(authorityUri.asInstanceOf[js.Any], networkClient.asInstanceOf[js.Any], cacheManager.asInstanceOf[js.Any], authorityOptions.asInstanceOf[js.Any], logger.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.azureMsalCommon.distAuthorityAuthorityMod.Authority]]
   inline def createDiscoveredInstance(
     authorityUri: String,
     networkClient: INetworkModule,
     cacheManager: ICacheManager,
     authorityOptions: AuthorityOptions,
-    proxyUrl: String
-  ): js.Promise[typings.azureMsalCommon.distAuthorityAuthorityMod.Authority] = (^.asInstanceOf[js.Dynamic].applyDynamic("createDiscoveredInstance")(authorityUri.asInstanceOf[js.Any], networkClient.asInstanceOf[js.Any], cacheManager.asInstanceOf[js.Any], authorityOptions.asInstanceOf[js.Any], proxyUrl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.azureMsalCommon.distAuthorityAuthorityMod.Authority]]
+    logger: typings.azureMsalCommon.distLoggerLoggerMod.Logger,
+    performanceClient: Unit,
+    correlationId: String
+  ): js.Promise[typings.azureMsalCommon.distAuthorityAuthorityMod.Authority] = (^.asInstanceOf[js.Dynamic].applyDynamic("createDiscoveredInstance")(authorityUri.asInstanceOf[js.Any], networkClient.asInstanceOf[js.Any], cacheManager.asInstanceOf[js.Any], authorityOptions.asInstanceOf[js.Any], logger.asInstanceOf[js.Any], performanceClient.asInstanceOf[js.Any], correlationId.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.azureMsalCommon.distAuthorityAuthorityMod.Authority]]
+  inline def createDiscoveredInstance(
+    authorityUri: String,
+    networkClient: INetworkModule,
+    cacheManager: ICacheManager,
+    authorityOptions: AuthorityOptions,
+    logger: typings.azureMsalCommon.distLoggerLoggerMod.Logger,
+    performanceClient: IPerformanceClient
+  ): js.Promise[typings.azureMsalCommon.distAuthorityAuthorityMod.Authority] = (^.asInstanceOf[js.Dynamic].applyDynamic("createDiscoveredInstance")(authorityUri.asInstanceOf[js.Any], networkClient.asInstanceOf[js.Any], cacheManager.asInstanceOf[js.Any], authorityOptions.asInstanceOf[js.Any], logger.asInstanceOf[js.Any], performanceClient.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.azureMsalCommon.distAuthorityAuthorityMod.Authority]]
+  inline def createDiscoveredInstance(
+    authorityUri: String,
+    networkClient: INetworkModule,
+    cacheManager: ICacheManager,
+    authorityOptions: AuthorityOptions,
+    logger: typings.azureMsalCommon.distLoggerLoggerMod.Logger,
+    performanceClient: IPerformanceClient,
+    correlationId: String
+  ): js.Promise[typings.azureMsalCommon.distAuthorityAuthorityMod.Authority] = (^.asInstanceOf[js.Dynamic].applyDynamic("createDiscoveredInstance")(authorityUri.asInstanceOf[js.Any], networkClient.asInstanceOf[js.Any], cacheManager.asInstanceOf[js.Any], authorityOptions.asInstanceOf[js.Any], logger.asInstanceOf[js.Any], performanceClient.asInstanceOf[js.Any], correlationId.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.azureMsalCommon.distAuthorityAuthorityMod.Authority]]
   
   /**
     * Create an authority object of the correct type based on the url
@@ -56,13 +77,33 @@ object AuthorityFactory {
     authorityUrl: String,
     networkInterface: INetworkModule,
     cacheManager: ICacheManager,
-    authorityOptions: AuthorityOptions
-  ): typings.azureMsalCommon.distAuthorityAuthorityMod.Authority = (^.asInstanceOf[js.Dynamic].applyDynamic("createInstance")(authorityUrl.asInstanceOf[js.Any], networkInterface.asInstanceOf[js.Any], cacheManager.asInstanceOf[js.Any], authorityOptions.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.distAuthorityAuthorityMod.Authority]
+    authorityOptions: AuthorityOptions,
+    logger: typings.azureMsalCommon.distLoggerLoggerMod.Logger
+  ): typings.azureMsalCommon.distAuthorityAuthorityMod.Authority = (^.asInstanceOf[js.Dynamic].applyDynamic("createInstance")(authorityUrl.asInstanceOf[js.Any], networkInterface.asInstanceOf[js.Any], cacheManager.asInstanceOf[js.Any], authorityOptions.asInstanceOf[js.Any], logger.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.distAuthorityAuthorityMod.Authority]
   inline def createInstance(
     authorityUrl: String,
     networkInterface: INetworkModule,
     cacheManager: ICacheManager,
     authorityOptions: AuthorityOptions,
-    proxyUrl: String
-  ): typings.azureMsalCommon.distAuthorityAuthorityMod.Authority = (^.asInstanceOf[js.Dynamic].applyDynamic("createInstance")(authorityUrl.asInstanceOf[js.Any], networkInterface.asInstanceOf[js.Any], cacheManager.asInstanceOf[js.Any], authorityOptions.asInstanceOf[js.Any], proxyUrl.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.distAuthorityAuthorityMod.Authority]
+    logger: typings.azureMsalCommon.distLoggerLoggerMod.Logger,
+    performanceClient: Unit,
+    correlationId: String
+  ): typings.azureMsalCommon.distAuthorityAuthorityMod.Authority = (^.asInstanceOf[js.Dynamic].applyDynamic("createInstance")(authorityUrl.asInstanceOf[js.Any], networkInterface.asInstanceOf[js.Any], cacheManager.asInstanceOf[js.Any], authorityOptions.asInstanceOf[js.Any], logger.asInstanceOf[js.Any], performanceClient.asInstanceOf[js.Any], correlationId.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.distAuthorityAuthorityMod.Authority]
+  inline def createInstance(
+    authorityUrl: String,
+    networkInterface: INetworkModule,
+    cacheManager: ICacheManager,
+    authorityOptions: AuthorityOptions,
+    logger: typings.azureMsalCommon.distLoggerLoggerMod.Logger,
+    performanceClient: IPerformanceClient
+  ): typings.azureMsalCommon.distAuthorityAuthorityMod.Authority = (^.asInstanceOf[js.Dynamic].applyDynamic("createInstance")(authorityUrl.asInstanceOf[js.Any], networkInterface.asInstanceOf[js.Any], cacheManager.asInstanceOf[js.Any], authorityOptions.asInstanceOf[js.Any], logger.asInstanceOf[js.Any], performanceClient.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.distAuthorityAuthorityMod.Authority]
+  inline def createInstance(
+    authorityUrl: String,
+    networkInterface: INetworkModule,
+    cacheManager: ICacheManager,
+    authorityOptions: AuthorityOptions,
+    logger: typings.azureMsalCommon.distLoggerLoggerMod.Logger,
+    performanceClient: IPerformanceClient,
+    correlationId: String
+  ): typings.azureMsalCommon.distAuthorityAuthorityMod.Authority = (^.asInstanceOf[js.Dynamic].applyDynamic("createInstance")(authorityUrl.asInstanceOf[js.Any], networkInterface.asInstanceOf[js.Any], cacheManager.asInstanceOf[js.Any], authorityOptions.asInstanceOf[js.Any], logger.asInstanceOf[js.Any], performanceClient.asInstanceOf[js.Any], correlationId.asInstanceOf[js.Any])).asInstanceOf[typings.azureMsalCommon.distAuthorityAuthorityMod.Authority]
 }

@@ -12,7 +12,7 @@ trait TriggerDetails extends StObject {
   var Description: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * The ID of the GuardDuty finding that triggered the BirdDog scan.
+    * The ID of the GuardDuty finding that triggered the malware scan.
     */
   var GuardDutyFindingId: js.UndefOr[NonEmptyString] = js.undefined
 }

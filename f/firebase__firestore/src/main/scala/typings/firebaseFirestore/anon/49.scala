@@ -1,15 +1,14 @@
 package typings.firebaseFirestore.anon
 
-import typings.firebaseFirestore.distPackagesFirestoreTestUtilHelpersMod.TestSnapshotVersion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `49` extends StObject {
   
-  var readTime: js.UndefOr[TestSnapshotVersion] = js.undefined
+  var affects: js.UndefOr[js.Array[typings.firebaseFirestore.distPackagesFirestoreSrcCoreQueryMod.Query]] = js.undefined
   
-  var resumeToken: js.UndefOr[String] = js.undefined
+  var removed: js.UndefOr[js.Array[typings.firebaseFirestore.distPackagesFirestoreSrcCoreQueryMod.Query]] = js.undefined
 }
 object `49` {
   
@@ -21,12 +20,16 @@ object `49` {
   @scala.inline
   implicit open class MutableBuilder[Self <: `49`] (val x: Self) extends AnyVal {
     
-    inline def setReadTime(value: TestSnapshotVersion): Self = StObject.set(x, "readTime", value.asInstanceOf[js.Any])
+    inline def setAffects(value: js.Array[typings.firebaseFirestore.distPackagesFirestoreSrcCoreQueryMod.Query]): Self = StObject.set(x, "affects", value.asInstanceOf[js.Any])
     
-    inline def setReadTimeUndefined: Self = StObject.set(x, "readTime", js.undefined)
+    inline def setAffectsUndefined: Self = StObject.set(x, "affects", js.undefined)
     
-    inline def setResumeToken(value: String): Self = StObject.set(x, "resumeToken", value.asInstanceOf[js.Any])
+    inline def setAffectsVarargs(value: typings.firebaseFirestore.distPackagesFirestoreSrcCoreQueryMod.Query*): Self = StObject.set(x, "affects", js.Array(value*))
     
-    inline def setResumeTokenUndefined: Self = StObject.set(x, "resumeToken", js.undefined)
+    inline def setRemoved(value: js.Array[typings.firebaseFirestore.distPackagesFirestoreSrcCoreQueryMod.Query]): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
+    
+    inline def setRemovedUndefined: Self = StObject.set(x, "removed", js.undefined)
+    
+    inline def setRemovedVarargs(value: typings.firebaseFirestore.distPackagesFirestoreSrcCoreQueryMod.Query*): Self = StObject.set(x, "removed", js.Array(value*))
   }
 }

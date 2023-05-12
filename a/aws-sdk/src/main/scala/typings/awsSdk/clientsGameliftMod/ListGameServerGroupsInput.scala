@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListGameServerGroupsInput extends StObject {
   
   /**
-    * The maximum number of results to return. Use this parameter with NextToken to get results as a set of sequential pages.
+    * The game server groups' limit.
     */
   var Limit: js.UndefOr[PositiveInteger] = js.undefined
   
   /**
-    * A token that indicates the start of the next sequential page of results. Use the token that is returned with a previous call to this operation. To start at the beginning of the result set, do not specify a value.
+    * Specify the pagination token from a previous request to retrieve the next page of results.
     */
   var NextToken: js.UndefOr[NonZeroAndMaxString] = js.undefined
 }

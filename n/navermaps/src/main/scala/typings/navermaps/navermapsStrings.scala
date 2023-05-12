@@ -54,6 +54,10 @@ object navermapsStrings {
   inline def SIGUGUN: SIGUGUN = "SIGUGUN".asInstanceOf[SIGUGUN]
   
   @js.native
+  sealed trait arrowlineOptions extends StObject
+  inline def arrowlineOptions: arrowlineOptions = "arrowlineOptions".asInstanceOf[arrowlineOptions]
+  
+  @js.native
   sealed trait bevel
     extends StObject
        with StrokeLineJoinType
@@ -64,6 +68,14 @@ object navermapsStrings {
     extends StObject
        with StrokeLineCapType
   inline def butt: butt = "butt".asInstanceOf[butt]
+  
+  @js.native
+  sealed trait clickable extends StObject
+  inline def clickable: clickable = "clickable".asInstanceOf[clickable]
+  
+  @js.native
+  sealed trait controlPointOptions extends StObject
+  inline def controlPointOptions: controlPointOptions = "controlPointOptions".asInstanceOf[controlPointOptions]
   
   @js.native
   sealed trait dash
@@ -84,6 +96,30 @@ object navermapsStrings {
   inline def dot: dot = "dot".asInstanceOf[dot]
   
   @js.native
+  sealed trait drawingControl extends StObject
+  inline def drawingControl: drawingControl = "drawingControl".asInstanceOf[drawingControl]
+  
+  @js.native
+  sealed trait drawingControlOptions extends StObject
+  inline def drawingControlOptions: drawingControlOptions = "drawingControlOptions".asInstanceOf[drawingControlOptions]
+  
+  @js.native
+  sealed trait drawingMode extends StObject
+  inline def drawingMode: drawingMode = "drawingMode".asInstanceOf[drawingMode]
+  
+  @js.native
+  sealed trait ellipseOptions extends StObject
+  inline def ellipseOptions: ellipseOptions = "ellipseOptions".asInstanceOf[ellipseOptions]
+  
+  @js.native
+  sealed trait fillColor extends StObject
+  inline def fillColor: fillColor = "fillColor".asInstanceOf[fillColor]
+  
+  @js.native
+  sealed trait fillOpacity extends StObject
+  inline def fillOpacity: fillOpacity = "fillOpacity".asInstanceOf[fillOpacity]
+  
+  @js.native
   sealed trait longdash
     extends StObject
        with StrokeStyleType
@@ -102,10 +138,34 @@ object navermapsStrings {
   inline def longdashdotdot: longdashdotdot = "longdashdotdot".asInstanceOf[longdashdotdot]
   
   @js.native
+  sealed trait map extends StObject
+  inline def map: map = "map".asInstanceOf[map]
+  
+  @js.native
+  sealed trait markerOptions extends StObject
+  inline def markerOptions: markerOptions = "markerOptions".asInstanceOf[markerOptions]
+  
+  @js.native
   sealed trait miter
     extends StObject
        with StrokeLineJoinType
   inline def miter: miter = "miter".asInstanceOf[miter]
+  
+  @js.native
+  sealed trait paths extends StObject
+  inline def paths: paths = "paths".asInstanceOf[paths]
+  
+  @js.native
+  sealed trait polygonOptions extends StObject
+  inline def polygonOptions: polygonOptions = "polygonOptions".asInstanceOf[polygonOptions]
+  
+  @js.native
+  sealed trait polylineOptions extends StObject
+  inline def polylineOptions: polylineOptions = "polylineOptions".asInstanceOf[polylineOptions]
+  
+  @js.native
+  sealed trait rectangleOptions extends StObject
+  inline def rectangleOptions: rectangleOptions = "rectangleOptions".asInstanceOf[rectangleOptions]
   
   @js.native
   sealed trait round
@@ -149,4 +209,36 @@ object navermapsStrings {
     extends StObject
        with StrokeLineCapType
   inline def square: square = "square".asInstanceOf[square]
+  
+  @js.native
+  sealed trait strokeColor extends StObject
+  inline def strokeColor: strokeColor = "strokeColor".asInstanceOf[strokeColor]
+  
+  @js.native
+  sealed trait strokeLineCap extends StObject
+  inline def strokeLineCap: strokeLineCap = "strokeLineCap".asInstanceOf[strokeLineCap]
+  
+  @js.native
+  sealed trait strokeLineJoin extends StObject
+  inline def strokeLineJoin: strokeLineJoin = "strokeLineJoin".asInstanceOf[strokeLineJoin]
+  
+  @js.native
+  sealed trait strokeOpacity extends StObject
+  inline def strokeOpacity: strokeOpacity = "strokeOpacity".asInstanceOf[strokeOpacity]
+  
+  @js.native
+  sealed trait strokeStyle extends StObject
+  inline def strokeStyle: strokeStyle = "strokeStyle".asInstanceOf[strokeStyle]
+  
+  @js.native
+  sealed trait strokeWeight extends StObject
+  inline def strokeWeight: strokeWeight = "strokeWeight".asInstanceOf[strokeWeight]
+  
+  @js.native
+  sealed trait visible extends StObject
+  inline def visible: visible = "visible".asInstanceOf[visible]
+  
+  @js.native
+  sealed trait zIndex extends StObject
+  inline def zIndex: zIndex = "zIndex".asInstanceOf[zIndex]
 }

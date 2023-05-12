@@ -28,12 +28,12 @@ object distSrcTypesYxmltextMod {
     /**
       * @type {YXmlElement|YXmlText|null}
       */
-    def nextSibling: YXmlElement | YXmlText | Null = js.native
+    def nextSibling: YXmlElement[StringDictionary[String]] | YXmlText | Null = js.native
     
     /**
       * @type {YXmlElement|YXmlText|null}
       */
-    def prevSibling: YXmlElement | YXmlText | Null = js.native
+    def prevSibling: YXmlElement[StringDictionary[String]] | YXmlText | Null = js.native
     
     /**
       * Creates a Dom Element that mirrors this YXmlText.

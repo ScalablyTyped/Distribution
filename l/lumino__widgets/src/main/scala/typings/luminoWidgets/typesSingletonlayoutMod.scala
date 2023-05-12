@@ -62,6 +62,7 @@ object typesSingletonlayoutMod {
     /**
       * Get the child widget for the layout.
       */
+    def widget: Widget | Null = js.native
     /**
       * Set the child widget for the layout.
       *
@@ -70,6 +71,6 @@ object typesSingletonlayoutMod {
       * automatically disposed. If that is not desired, set the parent
       * of the old child to `null` before assigning a new child.
       */
-    var widget: Widget | Null = js.native
+    def widget_=(widget: Widget | Null): Unit = js.native
   }
 }

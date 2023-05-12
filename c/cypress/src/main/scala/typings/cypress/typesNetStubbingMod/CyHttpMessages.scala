@@ -192,6 +192,11 @@ object CyHttpMessages {
     var query: Record[String, String | Double]
     
     /**
+      * The resource type that is being requested, according to the browser.
+      */
+    var resourceType: ResourceType
+    
+    /**
       * If provided, the number of milliseconds before an upstream response to this request
       * will time out and cause an error. By default, `responseTimeout` from config is used.
       */
@@ -210,9 +215,10 @@ object CyHttpMessages {
       httpVersion: String,
       method: String,
       query: Record[String, String | Double],
+      resourceType: ResourceType,
       url: String
     ): IncomingRequest = {
-      val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], httpVersion = httpVersion.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], httpVersion = httpVersion.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[IncomingRequest]
     }
     
@@ -232,6 +238,8 @@ object CyHttpMessages {
       inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
       inline def setQuery(value: Record[String, String | Double]): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      
+      inline def setResourceType(value: ResourceType): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
       
       inline def setResponseTimeout(value: Double): Self = StObject.set(x, "responseTimeout", value.asInstanceOf[js.Any])
       

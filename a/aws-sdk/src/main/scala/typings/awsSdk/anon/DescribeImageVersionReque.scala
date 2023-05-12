@@ -2,6 +2,7 @@ package typings.awsSdk.anon
 
 import typings.awsSdk.clientsSagemakerMod.ImageName
 import typings.awsSdk.clientsSagemakerMod.ImageVersionNumber
+import typings.awsSdk.clientsSagemakerMod.SageMakerImageVersionAlias
 import typings.awsSdk.libServiceMod.WaiterConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,6 +13,11 @@ trait DescribeImageVersionReque extends StObject {
   
   @JSName("$waiter")
   var $waiter: js.UndefOr[WaiterConfiguration] = js.undefined
+  
+  /**
+    * The alias of the image version.
+    */
+  var Alias: js.UndefOr[SageMakerImageVersionAlias] = js.undefined
   
   /**
     * The name of the image.
@@ -36,6 +42,10 @@ object DescribeImageVersionReque {
     inline def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     
     inline def set$waiterUndefined: Self = StObject.set(x, "$waiter", js.undefined)
+    
+    inline def setAlias(value: SageMakerImageVersionAlias): Self = StObject.set(x, "Alias", value.asInstanceOf[js.Any])
+    
+    inline def setAliasUndefined: Self = StObject.set(x, "Alias", js.undefined)
     
     inline def setImageName(value: ImageName): Self = StObject.set(x, "ImageName", value.asInstanceOf[js.Any])
     

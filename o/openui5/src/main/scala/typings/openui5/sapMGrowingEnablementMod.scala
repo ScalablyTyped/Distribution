@@ -13,6 +13,8 @@ object sapMGrowingEnablementMod {
   open class default protected ()
     extends typings.openui5.sapUiBaseObjectMod.default {
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Creates a GrowingEnablement delegate that can be attached to ListBase Controls requiring capabilities
       * for growing
       */
@@ -29,6 +31,8 @@ object sapMGrowingEnablementMod {
     val ^ : js.Any = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Creates a new subclass of class sap.m.GrowingEnablement with name `sClassName` and enriches it with the
       * information contained in `oClassInfo`.
       *
@@ -82,6 +86,8 @@ object sapMGrowingEnablementMod {
     ): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(sClassName.asInstanceOf[js.Any], oClassInfo.asInstanceOf[js.Any], FNMetaImpl.asInstanceOf[js.Any])).asInstanceOf[js.Function]
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Returns a metadata object for class sap.m.GrowingEnablement.
       *
       * @returns Metadata object describing this class

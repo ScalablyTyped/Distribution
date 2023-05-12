@@ -24,7 +24,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined parent devextreme.devextreme.DevExpress.core.Skip<devextreme.devextreme.DevExpress.ui.HierarchicalCollectionWidgetOptions<TComponent, TItem, TKey>, 'dataSource'> */
+/* Inlined parent std.Omit<devextreme.devextreme.DevExpress.ui.HierarchicalCollectionWidgetOptions<TComponent, TItem, TKey>, 'dataSource'> */
 trait dxMenuBaseOptions[TComponent /* <: dxMenuBase[Any, TItem, TKey] */, TItem /* <: dxMenuBaseItem */, TKey] extends StObject {
   
   var accessKey: js.UndefOr[String] = js.undefined

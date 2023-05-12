@@ -10,7 +10,7 @@ trait Component[TOptions]
      with ComponentBase[TOptions] {
   
   /**
-    * Destroy plugin instance and teardown
+    * Destroy plugin instance and teardown.
     */
   def destroy(): Unit
 }

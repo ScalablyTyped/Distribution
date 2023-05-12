@@ -1,6 +1,5 @@
 package typings.ipfsCoreUtils
 
-import typings.ipfsUnixfsImporter.distSrcTypesMod.ImportCandidate
 import typings.std.AsyncGenerator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,7 +11,15 @@ object distSrcFilesNormaliseInputMultipleMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def normaliseInput(input: ImportCandidateStream): AsyncGenerator[ImportCandidate, Unit, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("normaliseInput")(input.asInstanceOf[js.Any]).asInstanceOf[AsyncGenerator[ImportCandidate, Unit, Unit]]
+  inline def normaliseInput(input: ImportCandidateStream): AsyncGenerator[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_types.ImportCandidate */ Any, 
+    Unit, 
+    Unit
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("normaliseInput")(input.asInstanceOf[js.Any]).asInstanceOf[AsyncGenerator[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_types.ImportCandidate */ Any, 
+    Unit, 
+    Unit
+  ]]
   
   type ImportCandidateStream = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_utils.ImportCandidateStream */ Any
 }

@@ -1,6 +1,7 @@
 package typings.openui5
 
 import typings.openui5.anon.EdmType
+import typings.openui5.anon.Ms
 import typings.openui5.anon.Nullable
 import typings.openui5.sap.ClassInfo
 import typings.std.Record
@@ -17,12 +18,12 @@ object sapUiModelOdataTypeTimeMod {
     */
   open class default () extends Time {
     def this(/**
-      * format options as defined in {@link sap.ui.core.format.DateFormat}
+      * Format options as defined in {@link sap.ui.core.format.DateFormat.getTimeInstance}
       */
     oFormatOptions: js.Object) = this()
     def this(
       /**
-      * format options as defined in {@link sap.ui.core.format.DateFormat}
+      * Format options as defined in {@link sap.ui.core.format.DateFormat.getTimeInstance}
       */
     oFormatOptions: js.Object,
       /**
@@ -32,7 +33,7 @@ object sapUiModelOdataTypeTimeMod {
     ) = this()
     def this(
       /**
-      * format options as defined in {@link sap.ui.core.format.DateFormat}
+      * Format options as defined in {@link sap.ui.core.format.DateFormat.getTimeInstance}
       */
     oFormatOptions: Unit,
       /**
@@ -129,6 +130,28 @@ object sapUiModelOdataTypeTimeMod {
       */
     sTargetType: String
     ): String = js.native
+    
+    /**
+      * @SINCE 1.111.0
+      *
+      * Gets the model value according to this type's constraints and format options for the given date object
+      * representing a time. Validates the resulting value against the constraints of this type instance.
+      *
+      * @returns The model representation of the time
+      */
+    def getModelValue(): Ms | Null = js.native
+    def getModelValue(
+      /**
+      * The date object considering the configured time zone. Must be created via {@link module:sap/ui/core/date/UI5Date.getInstance}
+      */
+    oDate: js.Date
+    ): Ms | Null = js.native
+    def getModelValue(
+      /**
+      * The date object considering the configured time zone. Must be created via {@link module:sap/ui/core/date/UI5Date.getInstance}
+      */
+    oDate: typings.openui5.sapUiCoreDateUi5dateMod.default
+    ): Ms | Null = js.native
     
     /**
       * Parses the given value, which is expected to be of the given type, to a time object.

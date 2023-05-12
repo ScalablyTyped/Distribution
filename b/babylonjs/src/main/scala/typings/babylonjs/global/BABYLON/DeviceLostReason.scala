@@ -12,4 +12,6 @@ object DeviceLostReason extends StObject {
   def apply(value: String): js.UndefOr[typings.babylonjs.BABYLON.DeviceLostReason & String] = js.native
   
   /* "destroyed" */ val Destroyed: typings.babylonjs.BABYLON.DeviceLostReason.Destroyed & String = js.native
+  
+  /* "unknown" */ val Unknown: typings.babylonjs.BABYLON.DeviceLostReason.Unknown & String = js.native
 }

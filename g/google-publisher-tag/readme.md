@@ -1,7 +1,7 @@
 
 # Scala.js typings for google-publisher-tag
 
-Typings are for version 1.20220926
+Typings are for version 1.20230410
 
 
 

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EffectiveDeployment extends StObject {
   
   /**
-    * The status of the deployment job on the Greengrass core device.
+    * The status of the deployment job on the Greengrass core device.    IN_PROGRESS – The deployment job is running.    QUEUED – The deployment job is in the job queue and waiting to run.    FAILED – The deployment failed. For more information, see the statusDetails field.    COMPLETED – The deployment to an IoT thing was completed successfully.    TIMED_OUT – The deployment didn't complete in the allotted time.     CANCELED – The deployment was canceled by the user.    REJECTED – The deployment was rejected. For more information, see the statusDetails field.    SUCCEEDED – The deployment to an IoT thing group was completed successfully.  
     */
   var coreDeviceExecutionStatus: EffectiveDeploymentExecutionStatus
   

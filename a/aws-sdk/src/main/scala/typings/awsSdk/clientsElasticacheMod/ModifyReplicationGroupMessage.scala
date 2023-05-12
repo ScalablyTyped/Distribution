@@ -47,6 +47,11 @@ trait ModifyReplicationGroupMessage extends StObject {
   var CacheSecurityGroupNames: js.UndefOr[CacheSecurityGroupNameList] = js.undefined
   
   /**
+    * Enabled or Disabled. To modify cluster mode from Disabled to Enabled, you must first set the cluster mode to Compatible. Compatible mode allows your Redis clients to connect using both cluster mode enabled and cluster mode disabled. After you migrate all Redis clients to use cluster mode enabled, you can then complete cluster mode configuration and set the cluster mode to Enabled.
+    */
+  var ClusterMode: js.UndefOr[typings.awsSdk.clientsElasticacheMod.ClusterMode] = js.undefined
+  
+  /**
     * The upgraded version of the cache engine to be run on the clusters in the replication group.  Important: You can upgrade to a newer engine version (see Selecting a Cache Engine and Version), but you cannot downgrade to an earlier engine version. If you want to use an earlier engine version, you must delete the existing replication group and create it anew with the earlier engine version. 
     */
   var EngineVersion: js.UndefOr[String] = js.undefined
@@ -127,6 +132,16 @@ trait ModifyReplicationGroupMessage extends StObject {
   var SnapshottingClusterId: js.UndefOr[String] = js.undefined
   
   /**
+    * A flag that enables in-transit encryption when set to true. If you are enabling in-transit encryption for an existing cluster, you must also set TransitEncryptionMode to preferred.
+    */
+  var TransitEncryptionEnabled: js.UndefOr[BooleanOptional] = js.undefined
+  
+  /**
+    * A setting that allows you to migrate your clients to use in-transit encryption, with no downtime. You must set TransitEncryptionEnabled to true, for your existing cluster, and set TransitEncryptionMode to preferred in the same request to allow both encrypted and unencrypted connections at the same time. Once you migrate all your Redis clients to use encrypted connections you can set the value to required to allow encrypted connections only. Setting TransitEncryptionMode to required is a two-step process that requires you to first set the TransitEncryptionMode to preferred, after that you can set TransitEncryptionMode to required. 
+    */
+  var TransitEncryptionMode: js.UndefOr[typings.awsSdk.clientsElasticacheMod.TransitEncryptionMode] = js.undefined
+  
+  /**
     * The ID of the user group you are associating with the replication group.
     */
   var UserGroupIdsToAdd: js.UndefOr[UserGroupIdList] = js.undefined
@@ -179,6 +194,10 @@ object ModifyReplicationGroupMessage {
     inline def setCacheSecurityGroupNamesUndefined: Self = StObject.set(x, "CacheSecurityGroupNames", js.undefined)
     
     inline def setCacheSecurityGroupNamesVarargs(value: String*): Self = StObject.set(x, "CacheSecurityGroupNames", js.Array(value*))
+    
+    inline def setClusterMode(value: ClusterMode): Self = StObject.set(x, "ClusterMode", value.asInstanceOf[js.Any])
+    
+    inline def setClusterModeUndefined: Self = StObject.set(x, "ClusterMode", js.undefined)
     
     inline def setEngineVersion(value: String): Self = StObject.set(x, "EngineVersion", value.asInstanceOf[js.Any])
     
@@ -245,6 +264,14 @@ object ModifyReplicationGroupMessage {
     inline def setSnapshottingClusterId(value: String): Self = StObject.set(x, "SnapshottingClusterId", value.asInstanceOf[js.Any])
     
     inline def setSnapshottingClusterIdUndefined: Self = StObject.set(x, "SnapshottingClusterId", js.undefined)
+    
+    inline def setTransitEncryptionEnabled(value: BooleanOptional): Self = StObject.set(x, "TransitEncryptionEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setTransitEncryptionEnabledUndefined: Self = StObject.set(x, "TransitEncryptionEnabled", js.undefined)
+    
+    inline def setTransitEncryptionMode(value: TransitEncryptionMode): Self = StObject.set(x, "TransitEncryptionMode", value.asInstanceOf[js.Any])
+    
+    inline def setTransitEncryptionModeUndefined: Self = StObject.set(x, "TransitEncryptionMode", js.undefined)
     
     inline def setUserGroupIdsToAdd(value: UserGroupIdList): Self = StObject.set(x, "UserGroupIdsToAdd", value.asInstanceOf[js.Any])
     

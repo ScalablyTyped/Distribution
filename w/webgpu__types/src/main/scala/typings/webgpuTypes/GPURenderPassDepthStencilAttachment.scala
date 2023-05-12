@@ -10,7 +10,7 @@ trait GPURenderPassDepthStencilAttachment extends StObject {
     * Indicates the value to clear {@link GPURenderPassDepthStencilAttachment#view}'s depth component
     * to prior to executing the render pass. Ignored if {@link GPURenderPassDepthStencilAttachment#depthLoadOp}
     * is not {@link GPULoadOp#"clear"}. Must be between 0.0 and 1.0, inclusive.
-    * <!-- unless unrestricted depth is enabled -->
+    * <!-- POSTV1(unrestricted-depth): unless unrestricted depth is enabled -->
     */
   var depthClearValue: js.UndefOr[Double] = js.undefined
   
@@ -30,7 +30,6 @@ trait GPURenderPassDepthStencilAttachment extends StObject {
   /**
     * The store operation to perform on {@link GPURenderPassDepthStencilAttachment#view}'s
     * depth component after executing the render pass.
-    * Note: It is recommended to prefer a clear-value; see {@link GPULoadOp#"load"}.
     */
   var depthStoreOp: js.UndefOr[GPUStoreOp] = js.undefined
   

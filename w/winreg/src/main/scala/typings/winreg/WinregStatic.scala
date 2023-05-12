@@ -14,9 +14,6 @@ trait WinregStatic
   * Creates a registry object, which provides access to a single registry key.
   * Note: This class is returned by a call to ```require('winreg')```.
   *
-  * @public
-  * @class
-  *
   * @param {@link Options} options - the options
   *
   * @example

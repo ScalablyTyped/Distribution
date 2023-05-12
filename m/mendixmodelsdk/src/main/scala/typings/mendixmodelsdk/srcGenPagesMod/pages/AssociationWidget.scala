@@ -39,6 +39,12 @@ open class AssociationWidget protected () extends MemberWidget {
   
   def selectorSource: SelectorSource = js.native
   def selectorSource_=(newValue: SelectorSource): Unit = js.native
+  
+  /**
+    * In version 9.24.0: introduced
+    */
+  def sourceVariable: PageVariable | Null = js.native
+  def sourceVariable_=(newValue: PageVariable | Null): Unit = js.native
 }
 object AssociationWidget {
   

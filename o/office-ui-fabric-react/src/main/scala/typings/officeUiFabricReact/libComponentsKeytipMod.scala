@@ -14,7 +14,7 @@ object libComponentsKeytipMod {
     def this(props: IKeytipProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: IKeytipProps, context: Any) = this()
   }

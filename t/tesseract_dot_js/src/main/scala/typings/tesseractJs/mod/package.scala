@@ -17,8 +17,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 inline def createScheduler(): Scheduler = ^.asInstanceOf[js.Dynamic].applyDynamic("createScheduler")().asInstanceOf[Scheduler]
 
-inline def createWorker(): Worker = ^.asInstanceOf[js.Dynamic].applyDynamic("createWorker")().asInstanceOf[Worker]
-inline def createWorker(options: PartialWorkerOptions): Worker = ^.asInstanceOf[js.Dynamic].applyDynamic("createWorker")(options.asInstanceOf[js.Any]).asInstanceOf[Worker]
+inline def createWorker(): js.Promise[Worker] = ^.asInstanceOf[js.Dynamic].applyDynamic("createWorker")().asInstanceOf[js.Promise[Worker]]
+inline def createWorker(options: PartialWorkerOptions): js.Promise[Worker] = ^.asInstanceOf[js.Dynamic].applyDynamic("createWorker")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Worker]]
 
 inline def detect(image: ImageLike): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("detect")(image.asInstanceOf[js.Any]).asInstanceOf[Any]
 inline def detect(image: ImageLike, options: PartialWorkerOptions): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("detect")(image.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]

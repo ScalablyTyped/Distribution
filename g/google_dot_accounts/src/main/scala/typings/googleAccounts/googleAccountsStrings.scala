@@ -111,6 +111,14 @@ object googleAccountsStrings {
   inline def popup: popup = "popup".asInstanceOf[popup]
   
   @js.native
+  sealed trait popup_closed extends StObject
+  inline def popup_closed: popup_closed = "popup_closed".asInstanceOf[popup_closed]
+  
+  @js.native
+  sealed trait popup_failed_to_open extends StObject
+  inline def popup_failed_to_open: popup_failed_to_open = "popup_failed_to_open".asInstanceOf[popup_failed_to_open]
+  
+  @js.native
   sealed trait rectangular extends StObject
   inline def rectangular: rectangular = "rectangular".asInstanceOf[rectangular]
   
@@ -165,6 +173,10 @@ object googleAccountsStrings {
   @js.native
   sealed trait tap_outside extends StObject
   inline def tap_outside: tap_outside = "tap_outside".asInstanceOf[tap_outside]
+  
+  @js.native
+  sealed trait unknown extends StObject
+  inline def unknown: unknown = "unknown".asInstanceOf[unknown]
   
   @js.native
   sealed trait unknown_reason extends StObject

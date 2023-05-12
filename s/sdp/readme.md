@@ -1,7 +1,7 @@
 
 # Scala.js typings for sdp
 
-Typings are for version 3.0.3
+Typings are for version 3.2.0
 
 ## Library description:
 SDP parsing and serialization utilities

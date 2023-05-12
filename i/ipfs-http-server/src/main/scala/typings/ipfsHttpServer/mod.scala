@@ -1,7 +1,8 @@
 package typings.ipfsHttpServer
 
+import typings.hapiHapi.libTypesServerServerMod.ServerApplicationState
 import typings.hapiHapi.mod.Server_
-import typings.libp2p.mod.Libp2p
+import typings.libp2pInterfaceLibp2p.mod.Libp2p
 import typings.libp2pLogger.mod.Logger_
 import typings.multiformatsMultiaddr.mod.Multiaddr_
 import typings.std.Record
@@ -28,7 +29,7 @@ object mod {
       * @param {IPFS} ipfs
       * @param {Record<string, any>} cors
       */
-    def _createApiServer(host: String, port: String, ipfs: IPFS, cors: Record[String, Any]): js.Promise[Server_] = js.native
+    def _createApiServer(host: String, port: String, ipfs: IPFS, cors: Record[String, Any]): js.Promise[Server_[ServerApplicationState]] = js.native
     
     var _ipfs: typings.ipfsCoreTypes.mod.IPFS[Any] = js.native
     
@@ -48,7 +49,7 @@ object mod {
   
   type IPFS = typings.ipfsCoreTypes.mod.IPFS[js.Object]
   
-  type Server = typings.ipfsHttpServer.distSrcTypesMod.Server
+  type Server = typings.ipfsHttpServer.distSrcTypesMod.Server[ServerApplicationState]
   
-  type libp2p = Libp2p
+  type libp2p = Libp2p[Record[String, Any]]
 }

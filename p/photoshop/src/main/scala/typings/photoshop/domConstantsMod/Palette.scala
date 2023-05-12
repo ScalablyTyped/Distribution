@@ -1,59 +1,87 @@
 package typings.photoshop.domConstantsMod
 
-import typings.photoshop.photoshopStrings.adaptive
-import typings.photoshop.photoshopStrings.exact
-import typings.photoshop.photoshopStrings.macintoshSystem
-import typings.photoshop.photoshopStrings.masterAdaptive
-import typings.photoshop.photoshopStrings.masterPerceptual
-import typings.photoshop.photoshopStrings.masterSelective
-import typings.photoshop.photoshopStrings.perceptual
-import typings.photoshop.photoshopStrings.previous
-import typings.photoshop.photoshopStrings.selective
-import typings.photoshop.photoshopStrings.uniform
-import typings.photoshop.photoshopStrings.web
-import typings.photoshop.photoshopStrings.windowsSystem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Rewritten from type alias, can be one of: 
-  - typings.photoshop.photoshopStrings.exact
-  - typings.photoshop.photoshopStrings.macintoshSystem
-  - typings.photoshop.photoshopStrings.windowsSystem
-  - typings.photoshop.photoshopStrings.web
-  - typings.photoshop.photoshopStrings.uniform
-  - typings.photoshop.photoshopStrings.perceptual
-  - typings.photoshop.photoshopStrings.selective
-  - typings.photoshop.photoshopStrings.adaptive
-  - typings.photoshop.photoshopStrings.masterPerceptual
-  - typings.photoshop.photoshopStrings.masterSelective
-  - typings.photoshop.photoshopStrings.masterAdaptive
-  - typings.photoshop.photoshopStrings.previous
-*/
-trait Palette extends StObject
-object Palette {
+@js.native
+sealed trait Palette extends StObject
+@JSImport("photoshop/dom/Constants", "Palette")
+@js.native
+object Palette extends StObject {
   
-  inline def EXACT: exact = "exact".asInstanceOf[exact]
+  @JSBracketAccess
+  def apply(value: String): js.UndefOr[Palette & String] = js.native
   
-  inline def LOCALADAPTIVE: adaptive = "adaptive".asInstanceOf[adaptive]
+  @js.native
+  sealed trait EXACT
+    extends StObject
+       with Palette
+  /* "exact" */ val EXACT: typings.photoshop.domConstantsMod.Palette.EXACT & String = js.native
   
-  inline def LOCALPERCEPTUAL: perceptual = "perceptual".asInstanceOf[perceptual]
+  @js.native
+  sealed trait LOCALADAPTIVE
+    extends StObject
+       with Palette
+  /* "adaptive" */ val LOCALADAPTIVE: typings.photoshop.domConstantsMod.Palette.LOCALADAPTIVE & String = js.native
   
-  inline def LOCALSELECTIVE: selective = "selective".asInstanceOf[selective]
+  @js.native
+  sealed trait LOCALPERCEPTUAL
+    extends StObject
+       with Palette
+  /* "perceptual" */ val LOCALPERCEPTUAL: typings.photoshop.domConstantsMod.Palette.LOCALPERCEPTUAL & String = js.native
   
-  inline def MACOSPALETTE: macintoshSystem = "macintoshSystem".asInstanceOf[macintoshSystem]
+  @js.native
+  sealed trait LOCALSELECTIVE
+    extends StObject
+       with Palette
+  /* "selective" */ val LOCALSELECTIVE: typings.photoshop.domConstantsMod.Palette.LOCALSELECTIVE & String = js.native
   
-  inline def MASTERADAPTIVE: masterAdaptive = "masterAdaptive".asInstanceOf[masterAdaptive]
+  @js.native
+  sealed trait MACOSPALETTE
+    extends StObject
+       with Palette
+  /* "macintoshSystem" */ val MACOSPALETTE: typings.photoshop.domConstantsMod.Palette.MACOSPALETTE & String = js.native
   
-  inline def MASTERPERCEPTUAL: masterPerceptual = "masterPerceptual".asInstanceOf[masterPerceptual]
+  @js.native
+  sealed trait MASTERADAPTIVE
+    extends StObject
+       with Palette
+  /* "masterAdaptive" */ val MASTERADAPTIVE: typings.photoshop.domConstantsMod.Palette.MASTERADAPTIVE & String = js.native
   
-  inline def MASTERSELECTIVE: masterSelective = "masterSelective".asInstanceOf[masterSelective]
+  @js.native
+  sealed trait MASTERPERCEPTUAL
+    extends StObject
+       with Palette
+  /* "masterPerceptual" */ val MASTERPERCEPTUAL: typings.photoshop.domConstantsMod.Palette.MASTERPERCEPTUAL & String = js.native
   
-  inline def PREVIOUSPALETTE: previous = "previous".asInstanceOf[previous]
+  @js.native
+  sealed trait MASTERSELECTIVE
+    extends StObject
+       with Palette
+  /* "masterSelective" */ val MASTERSELECTIVE: typings.photoshop.domConstantsMod.Palette.MASTERSELECTIVE & String = js.native
   
-  inline def UNIFORM: uniform = "uniform".asInstanceOf[uniform]
+  @js.native
+  sealed trait PREVIOUSPALETTE
+    extends StObject
+       with Palette
+  /* "previous" */ val PREVIOUSPALETTE: typings.photoshop.domConstantsMod.Palette.PREVIOUSPALETTE & String = js.native
   
-  inline def WEBPALETTE: web = "web".asInstanceOf[web]
+  @js.native
+  sealed trait UNIFORM
+    extends StObject
+       with Palette
+  /* "uniform" */ val UNIFORM: typings.photoshop.domConstantsMod.Palette.UNIFORM & String = js.native
   
-  inline def WINDOWSPALETTE: windowsSystem = "windowsSystem".asInstanceOf[windowsSystem]
+  @js.native
+  sealed trait WEBPALETTE
+    extends StObject
+       with Palette
+  /* "web" */ val WEBPALETTE: typings.photoshop.domConstantsMod.Palette.WEBPALETTE & String = js.native
+  
+  @js.native
+  sealed trait WINDOWSPALETTE
+    extends StObject
+       with Palette
+  /* "windowsSystem" */ val WINDOWSPALETTE: typings.photoshop.domConstantsMod.Palette.WINDOWSPALETTE & String = js.native
 }

@@ -18,7 +18,7 @@ type HttpResponseInterceptor = js.Function1[/* res */ IncomingHttpResponse, Unit
 
 type NumberMatcher = Double | js.Array[Double]
 
-type RouteHandler = String | StaticResponse | RouteHandlerController | js.Object
+type RouteHandler = String | StaticResponseWithOptions | RouteHandlerController | js.Object
 
 type RouteHandlerController = HttpRequestInterceptor
 
@@ -27,5 +27,7 @@ type RouteMap = StringDictionary[Route]
 type RouteMatcher = StringMatcher | RouteMatcherOptions
 
 type RouteMatcherOptions = RouteMatcherOptionsGeneric[StringMatcher]
+
+type StaticResponseWithOptions = StaticResponse & InterceptOptions
 
 type StringMatcher = GlobPattern | js.RegExp

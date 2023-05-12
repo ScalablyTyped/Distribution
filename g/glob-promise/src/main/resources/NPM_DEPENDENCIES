@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "glob-promise" : "5.0.0"
+      "glob-promise" : "6.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "glob-promise" : "5.0.0"
+      "glob-promise" : "6.0.2"
     }
   ],
   "compile-devDependencies" : [

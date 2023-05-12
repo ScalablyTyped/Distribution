@@ -11,7 +11,7 @@ open class ArcFollowCamera protected ()
   extends typings.babylonjs.indexMod.ArcFollowCamera {
   /**
     * Instantiates a new ArcFollowCamera
-    * @see https://doc.babylonjs.com/features/cameras#follow-camera
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/cameras/camera_introduction#followcamera
     * @param name Define the name of the camera
     * @param alpha Define the rotation angle of the camera around the longitudinal axis
     * @param beta Define the rotation angle of the camera around the elevation axis

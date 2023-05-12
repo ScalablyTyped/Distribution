@@ -4,15 +4,15 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Journeys extends StObject {
+trait Journeys
+  extends StObject
+     with RealtimeDataUpdatedAt {
   
   var earlierRef: js.UndefOr[String] = js.undefined
   
   var journeys: js.UndefOr[js.Array[Journey]] = js.undefined
   
   var laterRef: js.UndefOr[String] = js.undefined
-  
-  var realtimeDataFrom: js.UndefOr[Double] = js.undefined
 }
 object Journeys {
   
@@ -37,9 +37,5 @@ object Journeys {
     inline def setLaterRef(value: String): Self = StObject.set(x, "laterRef", value.asInstanceOf[js.Any])
     
     inline def setLaterRefUndefined: Self = StObject.set(x, "laterRef", js.undefined)
-    
-    inline def setRealtimeDataFrom(value: Double): Self = StObject.set(x, "realtimeDataFrom", value.asInstanceOf[js.Any])
-    
-    inline def setRealtimeDataFromUndefined: Self = StObject.set(x, "realtimeDataFrom", js.undefined)
   }
 }

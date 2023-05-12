@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateGameServerInput extends StObject {
   
   /**
-    * A set of custom game server properties, formatted as a single string value. This data is passed to a game client or service when it requests information on game servers using ListGameServers or ClaimGameServer. 
+    * A set of custom game server properties, formatted as a single string value. This data is passed to a game client or service when it requests information on game servers. 
     */
   var GameServerData: js.UndefOr[typings.awsSdk.clientsGameliftMod.GameServerData] = js.undefined
   
   /**
-    * A unique identifier for the game server group where the game server is running. Use either the GameServerGroup name or ARN value.
+    * A unique identifier for the game server group where the game server is running.
     */
   var GameServerGroupName: GameServerGroupNameOrArn
   

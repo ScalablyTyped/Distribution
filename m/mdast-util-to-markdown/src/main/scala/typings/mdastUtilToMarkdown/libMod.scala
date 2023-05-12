@@ -1,5 +1,6 @@
 package typings.mdastUtilToMarkdown
 
+import typings.mdastUtilToMarkdown.mdastUtilToMarkdownStrings.children
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,9 +14,11 @@ object libMod {
   inline def toMarkdown(tree: Node): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toMarkdown")(tree.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def toMarkdown(tree: Node, options: typings.mdastUtilToMarkdown.libTypesMod.Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toMarkdown")(tree.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  type Context = typings.mdastUtilToMarkdown.libTypesMod.Context
+  type Enter = typings.mdastUtilToMarkdown.libTypesMod.Enter
   
-  type Handle = typings.mdastUtilToMarkdown.libTypesMod.Handle
+  type FlowContent = typings.mdastUtilToMarkdown.libTypesMod.FlowContent
+  
+  type Info = typings.mdastUtilToMarkdown.libTypesMod.Info
   
   type Join = typings.mdastUtilToMarkdown.libTypesMod.Join
   
@@ -23,5 +26,14 @@ object libMod {
   
   type Options = typings.mdastUtilToMarkdown.libTypesMod.Options
   
-  type Unsafe = typings.mdastUtilToMarkdown.libTypesMod.Unsafe
+  /* Inlined mdast-util-to-markdown.mdast-util-to-markdown/lib/types.Parent */
+  type Parent = children
+  
+  type PhrasingContent = typings.mdastUtilToMarkdown.libTypesMod.PhrasingContent
+  
+  type SafeConfig = typings.mdastUtilToMarkdown.libTypesMod.SafeConfig
+  
+  type State = typings.mdastUtilToMarkdown.libTypesMod.State
+  
+  type TrackFields = typings.mdastUtilToMarkdown.libTypesMod.TrackFields
 }

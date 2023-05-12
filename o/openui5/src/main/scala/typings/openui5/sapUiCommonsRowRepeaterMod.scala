@@ -569,6 +569,8 @@ object sapUiCommonsRowRepeaterMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:filter filter} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -580,6 +582,8 @@ object sapUiCommonsRowRepeaterMod {
     mParameters: FilterId): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:page page} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -591,6 +595,8 @@ object sapUiCommonsRowRepeaterMod {
     mParameters: CurrentPage): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:resize resize} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -602,6 +608,8 @@ object sapUiCommonsRowRepeaterMod {
     mParameters: NumberOfRows): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:sort sort} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining

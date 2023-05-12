@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class _FieldPath ()
   extends StObject
-     with ut
+     with at
 object _FieldPath {
   
   @JSImport("@firebase/firestore/dist/packages/firestore/dist/index.esm2017", "_FieldPath")
@@ -19,7 +19,7 @@ object _FieldPath {
   val ^ : js.Any = js.native
   
   /* static member */
-  inline def emptyPath(): ut = ^.asInstanceOf[js.Dynamic].applyDynamic("emptyPath")().asInstanceOf[ut]
+  inline def emptyPath(): at = ^.asInstanceOf[js.Dynamic].applyDynamic("emptyPath")().asInstanceOf[at]
   
   /**
     * Parses a field string from the given server-formatted string.
@@ -31,7 +31,7 @@ object _FieldPath {
     * TODO(b/37244157): we should make this more strict. Right now, it allows
     * non-identifier path components, even if they aren't escaped.
     */ /* static member */
-  inline def fromServerFormat(t: Any): ut = ^.asInstanceOf[js.Dynamic].applyDynamic("fromServerFormat")(t.asInstanceOf[js.Any]).asInstanceOf[ut]
+  inline def fromServerFormat(t: Any): at = ^.asInstanceOf[js.Dynamic].applyDynamic("fromServerFormat")(t.asInstanceOf[js.Any]).asInstanceOf[at]
   
   /**
     * Returns true if the string could be used as a segment in a field path
@@ -42,5 +42,5 @@ object _FieldPath {
   /**
     * The field designating the key of a document.
     */ /* static member */
-  inline def keyField(): ut = ^.asInstanceOf[js.Dynamic].applyDynamic("keyField")().asInstanceOf[ut]
+  inline def keyField(): at = ^.asInstanceOf[js.Dynamic].applyDynamic("keyField")().asInstanceOf[at]
 }

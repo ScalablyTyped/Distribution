@@ -4,9 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Opacity extends StObject {
+trait Opacity[BaseToken] extends StObject {
   
-  var color: String
+  var color: BaseToken
   
   var inset: js.UndefOr[Boolean] = js.undefined
   
@@ -20,15 +20,15 @@ trait Opacity extends StObject {
 }
 object Opacity {
   
-  inline def apply(color: String, offset: X, opacity: Double, radius: Double): Opacity = {
+  inline def apply[BaseToken](color: BaseToken, offset: X, opacity: Double, radius: Double): Opacity[BaseToken] = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], opacity = opacity.asInstanceOf[js.Any], radius = radius.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Opacity]
+    __obj.asInstanceOf[Opacity[BaseToken]]
   }
   
   @scala.inline
-  implicit open class MutableBuilder[Self <: Opacity] (val x: Self) extends AnyVal {
+  implicit open class MutableBuilder[Self <: Opacity[?], BaseToken] (val x: Self & Opacity[BaseToken]) extends AnyVal {
     
-    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: BaseToken): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     inline def setInset(value: Boolean): Self = StObject.set(x, "inset", value.asInstanceOf[js.Any])
     

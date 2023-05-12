@@ -2,10 +2,15 @@ package typings.wordpressBlockEditor
 
 import typings.react.mod.ComponentType
 import typings.react.mod.global.JSX.Element
+import typings.std.Omit
+import typings.std.Record
 import typings.wordpressBlockEditor.anon.Children
+import typings.wordpressBlockEditor.anon.Ref
 import typings.wordpressBlockEditor.componentsInnerBlocksMod.InnerBlocks.Props
+import typings.wordpressBlockEditor.componentsUseBlockPropsMod.Merged
+import typings.wordpressBlockEditor.componentsUseBlockPropsMod.Reserved
 import typings.wordpressBlockEditor.mod.EditorTemplateLock
-import typings.wordpressBlocks.apiTemplatesMod.TemplateArray
+import typings.wordpressBlockEditor.wordpressBlockEditorStrings.ref
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,6 +49,10 @@ object componentsInnerBlocksMod {
     inline def DefaultBlockAppender_=(x: ComponentType[Children]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultBlockAppender")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("@wordpress/block-editor/components/inner-blocks", "useInnerBlocksProps")
+  @js.native
+  val useInnerBlocksProps: UseInnerBlocksProps_ = js.native
+  
   object InnerBlocks {
     
     trait Props extends StObject {
@@ -62,7 +71,9 @@ object componentsInnerBlocksMod {
         *
         * See {@link https://github.com/WordPress/gutenberg/blob/master/docs/designers-developers/developers/block-api/block-templates.md }
         */
-      var template: js.UndefOr[TemplateArray] = js.undefined
+      var template: js.UndefOr[
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TemplateArray */ Any
+          ] = js.undefined
       
       /**
         * If `true` when child blocks in the template are inserted the selection is updated.
@@ -104,7 +115,9 @@ object componentsInnerBlocksMod {
         
         inline def setRenderAppenderUndefined: Self = StObject.set(x, "renderAppender", js.undefined)
         
-        inline def setTemplate(value: TemplateArray): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+        inline def setTemplate(
+          value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TemplateArray */ Any
+        ): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
         
         inline def setTemplateInsertUpdatesSelection(value: Boolean): Self = StObject.set(x, "templateInsertUpdatesSelection", value.asInstanceOf[js.Any])
         
@@ -117,5 +130,20 @@ object componentsInnerBlocksMod {
         inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
       }
     }
+  }
+  
+  @js.native
+  trait UseInnerBlocksProps_ extends StObject {
+    
+    def apply[Props /* <: Record[String, Any] */](): (Omit[Props, ref]) & Merged & Reserved = js.native
+    def apply[Props /* <: Record[String, Any] */](props: Props & Ref): (Omit[Props, ref]) & Merged & Reserved = js.native
+    def apply[Props /* <: Record[String, Any] */](
+      props: Props & Ref,
+      options: typings.wordpressBlockEditor.componentsInnerBlocksMod.InnerBlocks.Props
+    ): (Omit[Props, ref]) & Merged & Reserved = js.native
+    def apply[Props /* <: Record[String, Any] */](props: Unit, options: typings.wordpressBlockEditor.componentsInnerBlocksMod.InnerBlocks.Props): (Omit[Props, ref]) & Merged & Reserved = js.native
+    
+    def save(): Record[String, Any] = js.native
+    def save(props: Record[String, Any]): Record[String, Any] = js.native
   }
 }

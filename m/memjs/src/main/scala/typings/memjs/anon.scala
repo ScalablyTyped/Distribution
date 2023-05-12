@@ -7,89 +7,110 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
-  trait Expires extends StObject {
+  trait Extras extends StObject {
     
-    var expires: js.UndefOr[Double] = js.undefined
+    var extras: Buffer
+    
+    var value: String | Buffer
   }
-  object Expires {
+  object Extras {
     
-    inline def apply(): Expires = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Expires]
+    inline def apply(extras: Buffer, value: String | Buffer): Extras = {
+      val __obj = js.Dynamic.literal(extras = extras.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Extras]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: Expires] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: Extras] (val x: Self) extends AnyVal {
       
-      inline def setExpires(value: Double): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+      inline def setExtras(value: Buffer): Self = StObject.set(x, "extras", value.asInstanceOf[js.Any])
       
-      inline def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
+      inline def setValue(value: String | Buffer): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
-  trait Flags extends StObject {
+  trait Flags[TOut] extends StObject {
     
-    var flags: Buffer
+    var flags: Buffer | Null
     
-    var value: Buffer
+    var value: TOut
   }
   object Flags {
     
-    inline def apply(flags: Buffer, value: Buffer): Flags = {
-      val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Flags]
+    inline def apply[TOut](value: TOut): Flags[TOut] = {
+      val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any], flags = null)
+      __obj.asInstanceOf[Flags[TOut]]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: Flags] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: Flags[?], TOut] (val x: Self & Flags[TOut]) extends AnyVal {
       
       inline def setFlags(value: Buffer): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
       
-      inline def setValue(value: Buffer): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setFlagsNull: Self = StObject.set(x, "flags", null)
+      
+      inline def setValue(value: TOut): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
-  trait Initial extends StObject {
+  /* Inlined std.Required<memjs.memjs.Header> */
+  trait RequiredHeader extends StObject {
     
-    var expires: js.UndefOr[Double] = js.undefined
+    var cas: Buffer
     
-    var initial: js.UndefOr[Double] = js.undefined
+    var dataType: Double
+    
+    var extrasLength: Double
+    
+    var keyLength: Double
+    
+    var magic: Double
+    
+    var opaque: Double
+    
+    var opcode: Double
+    
+    var status: Double
+    
+    var totalBodyLength: Double
   }
-  object Initial {
+  object RequiredHeader {
     
-    inline def apply(): Initial = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Initial]
+    inline def apply(
+      cas: Buffer,
+      dataType: Double,
+      extrasLength: Double,
+      keyLength: Double,
+      magic: Double,
+      opaque: Double,
+      opcode: Double,
+      status: Double,
+      totalBodyLength: Double
+    ): RequiredHeader = {
+      val __obj = js.Dynamic.literal(cas = cas.asInstanceOf[js.Any], dataType = dataType.asInstanceOf[js.Any], extrasLength = extrasLength.asInstanceOf[js.Any], keyLength = keyLength.asInstanceOf[js.Any], magic = magic.asInstanceOf[js.Any], opaque = opaque.asInstanceOf[js.Any], opcode = opcode.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], totalBodyLength = totalBodyLength.asInstanceOf[js.Any])
+      __obj.asInstanceOf[RequiredHeader]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: Initial] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: RequiredHeader] (val x: Self) extends AnyVal {
       
-      inline def setExpires(value: Double): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+      inline def setCas(value: Buffer): Self = StObject.set(x, "cas", value.asInstanceOf[js.Any])
       
-      inline def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
+      inline def setDataType(value: Double): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
       
-      inline def setInitial(value: Double): Self = StObject.set(x, "initial", value.asInstanceOf[js.Any])
+      inline def setExtrasLength(value: Double): Self = StObject.set(x, "extrasLength", value.asInstanceOf[js.Any])
       
-      inline def setInitialUndefined: Self = StObject.set(x, "initial", js.undefined)
-    }
-  }
-  
-  trait Log extends StObject {
-    
-    def log(args: Any*): Unit
-  }
-  object Log {
-    
-    inline def apply(log: /* repeated */ Any => Unit): Log = {
-      val __obj = js.Dynamic.literal(log = js.Any.fromFunction1(log))
-      __obj.asInstanceOf[Log]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: Log] (val x: Self) extends AnyVal {
+      inline def setKeyLength(value: Double): Self = StObject.set(x, "keyLength", value.asInstanceOf[js.Any])
       
-      inline def setLog(value: /* repeated */ Any => Unit): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
+      inline def setMagic(value: Double): Self = StObject.set(x, "magic", value.asInstanceOf[js.Any])
+      
+      inline def setOpaque(value: Double): Self = StObject.set(x, "opaque", value.asInstanceOf[js.Any])
+      
+      inline def setOpcode(value: Double): Self = StObject.set(x, "opcode", value.asInstanceOf[js.Any])
+      
+      inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      
+      inline def setTotalBodyLength(value: Double): Self = StObject.set(x, "totalBodyLength", value.asInstanceOf[js.Any])
     }
   }
   
@@ -116,6 +137,28 @@ object anon {
       inline def setValueNull: Self = StObject.set(x, "value", null)
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    }
+  }
+  
+  trait Value[TOut] extends StObject {
+    
+    var extras: Buffer
+    
+    var value: TOut
+  }
+  object Value {
+    
+    inline def apply[TOut](extras: Buffer, value: TOut): Value[TOut] = {
+      val __obj = js.Dynamic.literal(extras = extras.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Value[TOut]]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Value[?], TOut] (val x: Self & Value[TOut]) extends AnyVal {
+      
+      inline def setExtras(value: Buffer): Self = StObject.set(x, "extras", value.asInstanceOf[js.Any])
+      
+      inline def setValue(value: TOut): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

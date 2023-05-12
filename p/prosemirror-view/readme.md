@@ -1,7 +1,7 @@
 
 # Scala.js typings for prosemirror-view
 
-Typings are for version 1.29.1
+Typings are for version 1.31.2
 
 ## Library description:
 ProseMirror's view component

@@ -1,5 +1,6 @@
 package typings.cesium.anon
 
+import typings.cesium.mod.RequestErrorEvent
 import typings.cesium.mod.Resource
 import typings.cesium.mod.Resource.RetryCallback
 import org.scalablytyped.runtime.StObject
@@ -55,7 +56,7 @@ object Proxy {
     inline def setRetryAttemptsUndefined: Self = StObject.set(x, "retryAttempts", js.undefined)
     
     inline def setRetryCallback(
-      value: (/* resource */ js.UndefOr[Resource], /* error */ js.UndefOr[js.Error]) => Boolean | js.Promise[Boolean]
+      value: (/* resource */ js.UndefOr[Resource], /* error */ js.UndefOr[RequestErrorEvent]) => Boolean | js.Promise[Boolean]
     ): Self = StObject.set(x, "retryCallback", js.Any.fromFunction2(value))
     
     inline def setRetryCallbackUndefined: Self = StObject.set(x, "retryCallback", js.undefined)

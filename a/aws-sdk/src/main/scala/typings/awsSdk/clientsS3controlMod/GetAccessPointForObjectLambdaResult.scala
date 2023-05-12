@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetAccessPointForObjectLambdaResult extends StObject {
   
   /**
+    * The alias of the Object Lambda Access Point.
+    */
+  var Alias: js.UndefOr[ObjectLambdaAccessPointAlias] = js.undefined
+  
+  /**
     * The date and time when the specified Object Lambda Access Point was created.
     */
   var CreationDate: js.UndefOr[js.Date] = js.undefined
@@ -30,6 +35,10 @@ object GetAccessPointForObjectLambdaResult {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: GetAccessPointForObjectLambdaResult] (val x: Self) extends AnyVal {
+    
+    inline def setAlias(value: ObjectLambdaAccessPointAlias): Self = StObject.set(x, "Alias", value.asInstanceOf[js.Any])
+    
+    inline def setAliasUndefined: Self = StObject.set(x, "Alias", js.undefined)
     
     inline def setCreationDate(value: js.Date): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     

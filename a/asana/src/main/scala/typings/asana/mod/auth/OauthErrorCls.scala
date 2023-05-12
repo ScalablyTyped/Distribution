@@ -17,7 +17,6 @@ open class OauthErrorCls protected ()
     * @option {String} error The string code identifying the error.
     * @option {String} [error_uri] A link to help and information about the error.
     * @option {String} [error_description] A description of the error.
-    * @constructor
     */
   def this(options: OauthErrorOptions) = this()
   

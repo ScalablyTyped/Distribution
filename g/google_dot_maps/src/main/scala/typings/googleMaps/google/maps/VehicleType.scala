@@ -6,9 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @js.native
 sealed trait VehicleType extends StObject
-/**
-  * Possible values for vehicle types.
-  */
 @JSGlobal("google.maps.VehicleType")
 @js.native
 object VehicleType extends StObject {

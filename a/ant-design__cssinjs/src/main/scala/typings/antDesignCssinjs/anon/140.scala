@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.PageBreakInside
+import typings.csstype.mod.Property.BoxFlex
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,11 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `140` extends StObject {
   
   var value: js.UndefOr[
-    PageBreakInside | (js.Array[
-      (Extract[
-        js.UndefOr[PageBreakInside | js.Array[NonNullable[js.UndefOr[PageBreakInside]]]], 
-        String
-      ]) | NonNullable[js.UndefOr[PageBreakInside]]
+    BoxFlex | (js.Array[
+      (Extract[js.UndefOr[BoxFlex | js.Array[NonNullable[js.UndefOr[BoxFlex]]]], String]) | NonNullable[js.UndefOr[BoxFlex]]
     ])
   ] = js.native
 }

@@ -836,6 +836,13 @@ object babelTypesStrings {
   inline def ImportNamespaceSpecifier: ImportNamespaceSpecifier = "ImportNamespaceSpecifier".asInstanceOf[ImportNamespaceSpecifier]
   
   @js.native
+  sealed trait ImportOrExportDeclaration
+    extends StObject
+       with NodeTypes
+       with NodeTypesWithoutComment
+  inline def ImportOrExportDeclaration: ImportOrExportDeclaration = "ImportOrExportDeclaration".asInstanceOf[ImportOrExportDeclaration]
+  
+  @js.native
   sealed trait ImportSpecifier
     extends StObject
        with NodeTypes

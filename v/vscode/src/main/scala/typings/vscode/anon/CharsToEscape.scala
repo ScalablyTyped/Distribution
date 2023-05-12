@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CharsToEscape extends StObject {
   
   /**
-    * The characters to escape.
-    */
+  			 * The characters to escape.
+  			 */
   var charsToEscape: String
   
   /**
-    * The escape character.
-    */
+  			 * The escape character.
+  			 */
   var escapeChar: String
 }
 object CharsToEscape {

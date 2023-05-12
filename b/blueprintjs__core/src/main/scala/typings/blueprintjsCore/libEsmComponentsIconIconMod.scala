@@ -6,8 +6,10 @@ import typings.blueprintjsCore.libEsmCommonMod.AbstractPureComponent2
 import typings.blueprintjsCore.libEsmCommonPropsMod.IIntentProps
 import typings.blueprintjsCore.libEsmCommonPropsMod.IProps
 import typings.blueprintjsCore.libEsmCommonPropsMod.MaybeElement
-import typings.blueprintjsIcons.libEsmGenerated16pxBlueprintIcons16Mod.BlueprintIcons16Id
+import typings.blueprintjsIcons.libEsmGeneratedIcons16pxBlueprintIcons16Mod.BlueprintIcons16Id
 import typings.react.mod.CSSProperties
+import typings.react.mod.HTMLAttributes
+import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -114,13 +116,16 @@ object libEsmComponentsIconIconMod {
     /** CSS style properties. */
     var style: js.UndefOr[CSSProperties] = js.undefined
     
+    /** Props to apply to the `SVG` element */
+    var svgProps: js.UndefOr[HTMLAttributes[SVGElement]] = js.undefined
+    
     /**
       * HTML tag to use for the rendered element.
       *
       * @default "span"
       */
     var tagName: js.UndefOr[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.blueprintjsCore.blueprintjsCoreStrings.a, typings.blueprintjsCore.blueprintjsCoreStrings.abbr, typings.blueprintjsCore.blueprintjsCoreStrings.address */ Any
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177, starting with typings.blueprintjsCore.blueprintjsCoreStrings.a, typings.blueprintjsCore.blueprintjsCoreStrings.abbr, typings.blueprintjsCore.blueprintjsCoreStrings.address */ Any
       ] = js.undefined
     
     /**
@@ -129,7 +134,8 @@ object libEsmComponentsIconIconMod {
       * aural feedback.
       *
       * If this value is nullish, `false`, or an empty string, the component will assume
-      * that the icon is decorative and `aria-hidden="true"` will be applied.
+      * that the icon is decorative and `aria-hidden="true"` will be applied (can be overridden
+      * by manually passing `aria-hidden` prop).
       *
       * @see https://www.w3.org/WAI/tutorials/images/decorative/
       */
@@ -171,8 +177,12 @@ object libEsmComponentsIconIconMod {
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
+      inline def setSvgProps(value: HTMLAttributes[SVGElement]): Self = StObject.set(x, "svgProps", value.asInstanceOf[js.Any])
+      
+      inline def setSvgPropsUndefined: Self = StObject.set(x, "svgProps", js.undefined)
+      
       inline def setTagName(
-        value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.blueprintjsCore.blueprintjsCoreStrings.a, typings.blueprintjsCore.blueprintjsCoreStrings.abbr, typings.blueprintjsCore.blueprintjsCoreStrings.address */ Any
+        value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177, starting with typings.blueprintjsCore.blueprintjsCoreStrings.a, typings.blueprintjsCore.blueprintjsCoreStrings.abbr, typings.blueprintjsCore.blueprintjsCoreStrings.address */ Any
       ): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
       
       inline def setTagNameUndefined: Self = StObject.set(x, "tagName", js.undefined)

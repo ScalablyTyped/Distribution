@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait RefractionBlock
   extends StObject
-     with NodeMaterialBlock {
+     with NodeMaterialBlock
+     with NodeMaterialTextureBlocks {
   
   /** @internal */
   var _2DSamplerName: String = js.native

@@ -50,8 +50,7 @@ object httpsMod {
     */
   @JSImport("https", "Agent")
   @js.native
-  open class Agent ()
-    extends typings.node.nodeColonhttpMod.Agent {
+  open class Agent () extends StObject {
     def this(options: AgentOptions) = this()
     
     var options: AgentOptions = js.native
@@ -458,12 +457,12 @@ object httpsMod {
   /**
     * ```js
     * // curl -k https://localhost:8000/
-    * const https = require('https');
-    * const fs = require('fs');
+    * const https = require('node:https');
+    * const fs = require('node:fs');
     *
     * const options = {
     *   key: fs.readFileSync('test/fixtures/keys/agent2-key.pem'),
-    *   cert: fs.readFileSync('test/fixtures/keys/agent2-cert.pem')
+    *   cert: fs.readFileSync('test/fixtures/keys/agent2-cert.pem'),
     * };
     *
     * https.createServer(options, (req, res) => {
@@ -475,12 +474,12 @@ object httpsMod {
     * Or
     *
     * ```js
-    * const https = require('https');
-    * const fs = require('fs');
+    * const https = require('node:https');
+    * const fs = require('node:fs');
     *
     * const options = {
     *   pfx: fs.readFileSync('test/fixtures/test_cert.pfx'),
-    *   passphrase: 'sample'
+    *   passphrase: 'sample',
     * };
     *
     * https.createServer(options, (req, res) => {
@@ -518,7 +517,7 @@ object httpsMod {
     * string, it is automatically parsed with `new URL()`. If it is a `URL` object, it will be automatically converted to an ordinary `options` object.
     *
     * ```js
-    * const https = require('https');
+    * const https = require('node:https');
     *
     * https.get('https://encrypted.google.com/', (res) => {
     *   console.log('statusCode:', res.statusCode);
@@ -564,13 +563,13 @@ object httpsMod {
     * upload a file with a POST request, then write to the `ClientRequest` object.
     *
     * ```js
-    * const https = require('https');
+    * const https = require('node:https');
     *
     * const options = {
     *   hostname: 'encrypted.google.com',
     *   port: 443,
     *   path: '/',
-    *   method: 'GET'
+    *   method: 'GET',
     * };
     *
     * const req = https.request(options, (res) => {
@@ -597,7 +596,7 @@ object httpsMod {
     *   path: '/',
     *   method: 'GET',
     *   key: fs.readFileSync('test/fixtures/keys/agent2-key.pem'),
-    *   cert: fs.readFileSync('test/fixtures/keys/agent2-cert.pem')
+    *   cert: fs.readFileSync('test/fixtures/keys/agent2-cert.pem'),
     * };
     * options.agent = new https.Agent(options);
     *
@@ -616,7 +615,7 @@ object httpsMod {
     *   method: 'GET',
     *   key: fs.readFileSync('test/fixtures/keys/agent2-key.pem'),
     *   cert: fs.readFileSync('test/fixtures/keys/agent2-cert.pem'),
-    *   agent: false
+    *   agent: false,
     * };
     *
     * const req = https.request(options, (res) => {
@@ -637,9 +636,9 @@ object httpsMod {
     * Example pinning on certificate fingerprint, or the public key (similar to`pin-sha256`):
     *
     * ```js
-    * const tls = require('tls');
-    * const https = require('https');
-    * const crypto = require('crypto');
+    * const tls = require('node:tls');
+    * const https = require('node:https');
+    * const crypto = require('node:crypto');
     *
     * function sha256(s) {
     *   return crypto.createHash('sha256').update(s).digest('base64');
@@ -656,7 +655,7 @@ object httpsMod {
     *       return err;
     *     }
     *
-    *     // Pin the public key, similar to HPKP pin-sha25 pinning
+    *     // Pin the public key, similar to HPKP pin-sha256 pinning
     *     const pubkey256 = 'pL1+qb9HTMRZJmuC/bB/ZI9d302BYrrqiVuRyW+DGrU=';
     *     if (sha256(cert.pubkey) !== pubkey256) {
     *       const msg = 'Certificate verification error: ' +
@@ -834,6 +833,10 @@ object httpsMod {
        with ClientRequestArgs
        with SecureContextOptions {
     
+    var checkServerIdentity: js.UndefOr[
+        js.Function2[/* hostname */ String, /* cert */ PeerCertificate, js.UndefOr[js.Error]]
+      ] = js.undefined
+    
     var rejectUnauthorized: js.UndefOr[Boolean] = js.undefined
     
     // Defaults to true
@@ -849,6 +852,10 @@ object httpsMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: RequestOptions] (val x: Self) extends AnyVal {
       
+      inline def setCheckServerIdentity(value: (/* hostname */ String, /* cert */ PeerCertificate) => js.UndefOr[js.Error]): Self = StObject.set(x, "checkServerIdentity", js.Any.fromFunction2(value))
+      
+      inline def setCheckServerIdentityUndefined: Self = StObject.set(x, "checkServerIdentity", js.undefined)
+      
       inline def setRejectUnauthorized(value: Boolean): Self = StObject.set(x, "rejectUnauthorized", value.asInstanceOf[js.Any])
       
       inline def setRejectUnauthorizedUndefined: Self = StObject.set(x, "rejectUnauthorized", js.undefined)
@@ -860,19 +867,39 @@ object httpsMod {
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.node.httpMod.ServerOptions because var conflicts: keepAlive, keepAliveInitialDelay, noDelay. Inlined IncomingMessage, ServerResponse, maxHeaderSize, insecureHTTPParser */ trait ServerOptions[Request /* <: Instantiable1[/* socket */ Socket, IncomingMessage] */, Response /* <: Instantiable1[
+  - typings.node.httpMod.ServerOptions because var conflicts: keepAlive, keepAliveInitialDelay, noDelay. Inlined IncomingMessage, ServerResponse, requestTimeout, joinDuplicateHeaders, keepAliveTimeout, connectionsCheckingInterval, highWaterMark, insecureHTTPParser, maxHeaderSize, uniqueHeaders */ trait ServerOptions[Request /* <: Instantiable1[/* socket */ Socket, IncomingMessage] */, Response /* <: Instantiable1[
     /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
     ServerResponse[typings.node.httpMod.IncomingMessage]
   ] */]
     extends StObject
        with TlsOptions {
     
+    /**
+      * Specifies the `IncomingMessage` class to be used. Useful for extending the original `IncomingMessage`.
+      */
     var IncomingMessage: js.UndefOr[Request] = js.undefined
     
+    /**
+      * Specifies the `ServerResponse` class to be used. Useful for extending the original `ServerResponse`.
+      */
     var ServerResponse: js.UndefOr[Response] = js.undefined
     
     /**
-      * Use an insecure HTTP parser that accepts invalid HTTP headers when true.
+      * Sets the interval value in milliseconds to check for request and headers timeout in incomplete requests.
+      * @default 30000
+      */
+    var connectionsCheckingInterval: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * Optionally overrides all `socket`s' `readableHighWaterMark` and `writableHighWaterMark`.
+      * This affects `highWaterMark` property of both `IncomingMessage` and `ServerResponse`.
+      * Default: @see stream.getDefaultHighWaterMark().
+      * @since v20.1.0
+      */
+    var highWaterMark: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * Use an insecure HTTP parser that accepts invalid HTTP headers when `true`.
       * Using the insecure parser should be avoided.
       * See --insecure-http-parser for more information.
       * @default false
@@ -880,12 +907,43 @@ object httpsMod {
     var insecureHTTPParser: js.UndefOr[Boolean] = js.undefined
     
     /**
+      * It joins the field line values of multiple headers in a request with `, ` instead of discarding the duplicates.
+      * @default false
+      * @since v18.14.0
+      */
+    var joinDuplicateHeaders: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * The number of milliseconds of inactivity a server needs to wait for additional incoming data,
+      * after it has finished writing the last response, before a socket will be destroyed.
+      * @see Server.keepAliveTimeout for more information.
+      * @default 5000
+      * @since v18.0.0
+      */
+    var keepAliveTimeout: js.UndefOr[Double] = js.undefined
+    
+    /**
       * Optionally overrides the value of
       * `--max-http-header-size` for requests received by this server, i.e.
       * the maximum length of request headers in bytes.
-      * @default 8192
+      * @default 16384
+      * @since v13.3.0
       */
     var maxHeaderSize: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * Sets the timeout value in milliseconds for receiving the entire request from the client.
+      * @see Server.requestTimeout for more information.
+      * @default 300000
+      * @since v18.0.0
+      */
+    var requestTimeout: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * A list of response headers that should be sent only once.
+      * If the header's value is an array, the items will be joined using `; `.
+      */
+    var uniqueHeaders: js.UndefOr[js.Array[String | js.Array[String]]] = js.undefined
   }
   object ServerOptions {
     
@@ -903,6 +961,14 @@ object httpsMod {
         ServerResponse[typings.node.httpMod.IncomingMessage]
       ] */] (val x: Self & (ServerOptions[Request, Response])) extends AnyVal {
       
+      inline def setConnectionsCheckingInterval(value: Double): Self = StObject.set(x, "connectionsCheckingInterval", value.asInstanceOf[js.Any])
+      
+      inline def setConnectionsCheckingIntervalUndefined: Self = StObject.set(x, "connectionsCheckingInterval", js.undefined)
+      
+      inline def setHighWaterMark(value: Double): Self = StObject.set(x, "highWaterMark", value.asInstanceOf[js.Any])
+      
+      inline def setHighWaterMarkUndefined: Self = StObject.set(x, "highWaterMark", js.undefined)
+      
       inline def setIncomingMessage(value: Request): Self = StObject.set(x, "IncomingMessage", value.asInstanceOf[js.Any])
       
       inline def setIncomingMessageUndefined: Self = StObject.set(x, "IncomingMessage", js.undefined)
@@ -911,13 +977,31 @@ object httpsMod {
       
       inline def setInsecureHTTPParserUndefined: Self = StObject.set(x, "insecureHTTPParser", js.undefined)
       
+      inline def setJoinDuplicateHeaders(value: Boolean): Self = StObject.set(x, "joinDuplicateHeaders", value.asInstanceOf[js.Any])
+      
+      inline def setJoinDuplicateHeadersUndefined: Self = StObject.set(x, "joinDuplicateHeaders", js.undefined)
+      
+      inline def setKeepAliveTimeout(value: Double): Self = StObject.set(x, "keepAliveTimeout", value.asInstanceOf[js.Any])
+      
+      inline def setKeepAliveTimeoutUndefined: Self = StObject.set(x, "keepAliveTimeout", js.undefined)
+      
       inline def setMaxHeaderSize(value: Double): Self = StObject.set(x, "maxHeaderSize", value.asInstanceOf[js.Any])
       
       inline def setMaxHeaderSizeUndefined: Self = StObject.set(x, "maxHeaderSize", js.undefined)
       
+      inline def setRequestTimeout(value: Double): Self = StObject.set(x, "requestTimeout", value.asInstanceOf[js.Any])
+      
+      inline def setRequestTimeoutUndefined: Self = StObject.set(x, "requestTimeout", js.undefined)
+      
       inline def setServerResponse(value: Response): Self = StObject.set(x, "ServerResponse", value.asInstanceOf[js.Any])
       
       inline def setServerResponseUndefined: Self = StObject.set(x, "ServerResponse", js.undefined)
+      
+      inline def setUniqueHeaders(value: js.Array[String | js.Array[String]]): Self = StObject.set(x, "uniqueHeaders", value.asInstanceOf[js.Any])
+      
+      inline def setUniqueHeadersUndefined: Self = StObject.set(x, "uniqueHeaders", js.undefined)
+      
+      inline def setUniqueHeadersVarargs(value: (String | js.Array[String])*): Self = StObject.set(x, "uniqueHeaders", js.Array(value*))
     }
   }
 }

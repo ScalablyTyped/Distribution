@@ -1,19 +1,18 @@
 package typings.angularCompilerCli
 
 import typings.angularCompiler.mod.ConstantPool
+import typings.angularCompilerCli.anon.ClassDeclarationDeclarati
 import typings.angularCompilerCli.srcNgtscCoreApiSrcAdapterMod.SourceFileTypeIdentifier
 import typings.angularCompilerCli.srcNgtscIncrementalApiMod.IncrementalBuild
 import typings.angularCompilerCli.srcNgtscIncrementalSemanticGraphMod.SemanticDepGraphUpdater
 import typings.angularCompilerCli.srcNgtscIncrementalSemanticGraphMod.SemanticSymbol
 import typings.angularCompilerCli.srcNgtscIndexerMod.IndexingContext
 import typings.angularCompilerCli.srcNgtscPerfSrcApiMod.PerfRecorder
-import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.ClassDeclaration
 import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.DeclarationNode
 import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.ReflectionHost
 import typings.angularCompilerCli.srcNgtscTransformSrcApiMod.CompilationMode
 import typings.angularCompilerCli.srcNgtscTransformSrcApiMod.CompileResult
 import typings.angularCompilerCli.srcNgtscTransformSrcApiMod.DecoratorHandler
-import typings.angularCompilerCli.srcNgtscTransformSrcApiMod.HandlerFlags
 import typings.angularCompilerCli.srcNgtscTransformSrcDeclarationMod.DtsTransformRegistry
 import typings.angularCompilerCli.srcNgtscTransformSrcTraitMod.PendingTrait
 import typings.angularCompilerCli.srcNgtscTransformSrcTraitMod.Trait
@@ -22,7 +21,6 @@ import typings.angularCompilerCli.srcNgtscTypecheckApiContextMod.TypeCheckContex
 import typings.angularCompilerCli.srcNgtscTypecheckExtendedApiExtendedTemplateCheckerMod.ExtendedTemplateChecker
 import typings.angularCompilerCli.srcNgtscXi18nSrcContextMod.Xi18nContext
 import typings.std.Map
-import typings.std.Set
 import typings.typescript.mod.Declaration
 import typings.typescript.mod.Decorator
 import typings.typescript.mod.Diagnostic
@@ -75,17 +73,11 @@ object srcNgtscTransformSrcCompilationMod {
     
     def analyzeAsync(sf: SourceFile): js.UndefOr[js.Promise[Unit]] = js.native
     
-    /* protected */ def analyzeClass(clazz: ClassDeclaration[DeclarationNode]): Unit = js.native
-    /* protected */ def analyzeClass(clazz: ClassDeclaration[DeclarationNode], preanalyzeQueue: js.Array[js.Promise[Unit]]): Unit = js.native
+    /* private */ var analyzeClass: Any = js.native
     
     def analyzeSync(sf: SourceFile): Unit = js.native
     
-    /* protected */ def analyzeTrait(clazz: ClassDeclaration[DeclarationNode], `trait`: Trait[Any, Any, SemanticSymbol | Null, Any]): Unit = js.native
-    /* protected */ def analyzeTrait(
-      clazz: ClassDeclaration[DeclarationNode],
-      `trait`: Trait[Any, Any, SemanticSymbol | Null, Any],
-      flags: HandlerFlags
-    ): Unit = js.native
+    /* private */ var analyzeTrait: Any = js.native
     
     /**
       * Maps class declarations to their `ClassRecord`, which tracks the Ivy traits being applied to
@@ -101,9 +93,9 @@ object srcNgtscTransformSrcCompilationMod {
     
     def decoratorsFor(node: Declaration): js.Array[Decorator] = js.native
     
-    /* protected */ def detectTraits(clazz: ClassDeclaration[DeclarationNode]): (js.Array[PendingTrait[Any, Any, SemanticSymbol | Null, Any]]) | Null = js.native
+    /* protected */ def detectTraits(clazz: ClassDeclarationDeclarati): (js.Array[PendingTrait[Any, Any, SemanticSymbol | Null, Any]]) | Null = js.native
     /* protected */ def detectTraits(
-      clazz: ClassDeclaration[DeclarationNode],
+      clazz: ClassDeclarationDeclarati,
       decorators: js.Array[typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.Decorator]
     ): (js.Array[PendingTrait[Any, Any, SemanticSymbol | Null, Any]]) | Null = js.native
     
@@ -119,13 +111,13 @@ object srcNgtscTransformSrcCompilationMod {
       * Maps source files to any class declaration(s) within them which have been discovered to contain
       * Ivy traits.
       */
-    /* protected */ var fileToClasses: Map[SourceFile, Set[ClassDeclaration[DeclarationNode]]] = js.native
+    /* private */ var fileToClasses: Any = js.native
     
     /**
       * Tracks which source files have been analyzed but did not contain any traits. This set allows
       * the compiler to skip analyzing these files in an incremental rebuild.
       */
-    /* protected */ var filesWithoutTraits: Set[SourceFile] = js.native
+    /* private */ var filesWithoutTraits: Any = js.native
     
     def getAnalyzedRecords(): Map[SourceFile, js.Array[ClassRecord]] = js.native
     
@@ -141,9 +133,7 @@ object srcNgtscTransformSrcCompilationMod {
     
     /* private */ var perf: Any = js.native
     
-    def recordFor(clazz: ClassDeclaration[DeclarationNode]): ClassRecord | Null = js.native
-    
-    def recordsFor(sf: SourceFile): js.Array[ClassRecord] | Null = js.native
+    def recordFor(clazz: ClassDeclarationDeclarati): ClassRecord | Null = js.native
     
     /* private */ var reexportMap: Any = js.native
     
@@ -186,7 +176,7 @@ object srcNgtscTransformSrcCompilationMod {
     /**
       * The `ClassDeclaration` of the class which has Angular traits applied.
       */
-    var node: ClassDeclaration[DeclarationNode]
+    var node: ClassDeclarationDeclarati
     
     /**
       * All traits which matched on the class.
@@ -198,7 +188,7 @@ object srcNgtscTransformSrcCompilationMod {
     inline def apply(
       hasPrimaryHandler: Boolean,
       hasWeakHandlers: Boolean,
-      node: ClassDeclaration[DeclarationNode],
+      node: ClassDeclarationDeclarati,
       traits: js.Array[Trait[Any, Any, SemanticSymbol | Null, Any]]
     ): ClassRecord = {
       val __obj = js.Dynamic.literal(hasPrimaryHandler = hasPrimaryHandler.asInstanceOf[js.Any], hasWeakHandlers = hasWeakHandlers.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], traits = traits.asInstanceOf[js.Any], metaDiagnostics = null)
@@ -218,7 +208,7 @@ object srcNgtscTransformSrcCompilationMod {
       
       inline def setMetaDiagnosticsVarargs(value: Diagnostic*): Self = StObject.set(x, "metaDiagnostics", js.Array(value*))
       
-      inline def setNode(value: ClassDeclaration[DeclarationNode]): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      inline def setNode(value: ClassDeclarationDeclarati): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       
       inline def setTraits(value: js.Array[Trait[Any, Any, SemanticSymbol | Null, Any]]): Self = StObject.set(x, "traits", value.asInstanceOf[js.Any])
       

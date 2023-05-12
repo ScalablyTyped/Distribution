@@ -34,4 +34,24 @@ object Filter {
   @js.native
   def SOURCE_KEY_MAP: Dict[String] = js.native
   inline def SOURCE_KEY_MAP_=(x: Dict[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SOURCE_KEY_MAP")(x.asInstanceOf[js.Any])
+  
+  /**
+    * Default filter samples for any filter.
+    * @static
+    * @type {PIXI.MSAA_QUALITY}
+    * @default PIXI.MSAA_QUALITY.NONE
+    */
+  @JSImport("@pixi/core", "Filter.defaultMultisample")
+  @js.native
+  def defaultMultisample: typings.pixiConstants.mod.MSAA_QUALITY = js.native
+  inline def defaultMultisample_=(x: typings.pixiConstants.mod.MSAA_QUALITY): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultMultisample")(x.asInstanceOf[js.Any])
+  
+  /**
+    * Default filter resolution for any filter.
+    * @static
+    */
+  @JSImport("@pixi/core", "Filter.defaultResolution")
+  @js.native
+  def defaultResolution: Double = js.native
+  inline def defaultResolution_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultResolution")(x.asInstanceOf[js.Any])
 }

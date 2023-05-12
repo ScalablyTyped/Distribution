@@ -30,11 +30,12 @@ trait TypeofNgModelGroup
     NgModelGroup, 
     `[ngModelGroup]`, 
     js.Array[ngModelGroup], 
-    `3`, 
+    Name8, 
     js.Object, 
     scala.Nothing, 
     scala.Nothing, 
-    `false`
+    `false`, 
+    scala.Nothing
   ] = js.native
   
   var ɵfac: ɵɵFactoryDeclaration[NgModelGroup, js.Tuple3[SkipSelf, Self, Self]] = js.native

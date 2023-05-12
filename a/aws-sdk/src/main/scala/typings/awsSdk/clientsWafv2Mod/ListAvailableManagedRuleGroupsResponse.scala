@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListAvailableManagedRuleGroupsResponse extends StObject {
   
   /**
-    * 
+    * Array of managed rule groups that you can use. If you specified a Limit in your request, this might not be the full list. 
     */
   var ManagedRuleGroups: js.UndefOr[ManagedRuleGroupSummaries] = js.undefined
   

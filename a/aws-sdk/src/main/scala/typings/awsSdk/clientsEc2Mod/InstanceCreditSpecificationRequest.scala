@@ -14,12 +14,12 @@ trait InstanceCreditSpecificationRequest extends StObject {
   /**
     * The ID of the instance.
     */
-  var InstanceId: js.UndefOr[typings.awsSdk.clientsEc2Mod.InstanceId] = js.undefined
+  var InstanceId: typings.awsSdk.clientsEc2Mod.InstanceId
 }
 object InstanceCreditSpecificationRequest {
   
-  inline def apply(): InstanceCreditSpecificationRequest = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(InstanceId: InstanceId): InstanceCreditSpecificationRequest = {
+    val __obj = js.Dynamic.literal(InstanceId = InstanceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceCreditSpecificationRequest]
   }
   
@@ -31,7 +31,5 @@ object InstanceCreditSpecificationRequest {
     inline def setCpuCreditsUndefined: Self = StObject.set(x, "CpuCredits", js.undefined)
     
     inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
-    
-    inline def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
   }
 }

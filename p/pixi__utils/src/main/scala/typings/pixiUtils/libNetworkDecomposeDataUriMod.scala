@@ -10,24 +10,24 @@ object libNetworkDecomposeDataUriMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def decomposeDataUri(dataUri: String): DecomposedDataUri = ^.asInstanceOf[js.Dynamic].applyDynamic("decomposeDataUri")(dataUri.asInstanceOf[js.Any]).asInstanceOf[DecomposedDataUri]
+  inline def decomposeDataUri(dataUri: String): js.UndefOr[DecomposedDataUri] = ^.asInstanceOf[js.Dynamic].applyDynamic("decomposeDataUri")(dataUri.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[DecomposedDataUri]]
   
   trait DecomposedDataUri extends StObject {
     
-    var charset: String
+    var charset: js.UndefOr[String] = js.undefined
     
-    var data: String
+    var data: js.UndefOr[String] = js.undefined
     
-    var encoding: String
+    var encoding: js.UndefOr[String] = js.undefined
     
-    var mediaType: String
+    var mediaType: js.UndefOr[String] = js.undefined
     
-    var subType: String
+    var subType: js.UndefOr[String] = js.undefined
   }
   object DecomposedDataUri {
     
-    inline def apply(charset: String, data: String, encoding: String, mediaType: String, subType: String): DecomposedDataUri = {
-      val __obj = js.Dynamic.literal(charset = charset.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], encoding = encoding.asInstanceOf[js.Any], mediaType = mediaType.asInstanceOf[js.Any], subType = subType.asInstanceOf[js.Any])
+    inline def apply(): DecomposedDataUri = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DecomposedDataUri]
     }
     
@@ -36,13 +36,23 @@ object libNetworkDecomposeDataUriMod {
       
       inline def setCharset(value: String): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
       
+      inline def setCharsetUndefined: Self = StObject.set(x, "charset", js.undefined)
+      
       inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
       inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
+      inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+      
       inline def setMediaType(value: String): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
       
+      inline def setMediaTypeUndefined: Self = StObject.set(x, "mediaType", js.undefined)
+      
       inline def setSubType(value: String): Self = StObject.set(x, "subType", value.asInstanceOf[js.Any])
+      
+      inline def setSubTypeUndefined: Self = StObject.set(x, "subType", js.undefined)
     }
   }
 }

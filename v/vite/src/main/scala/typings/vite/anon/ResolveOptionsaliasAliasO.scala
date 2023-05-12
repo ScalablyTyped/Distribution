@@ -21,10 +21,19 @@ trait ResolveOptionsaliasAliasO extends StObject {
   
   var dedupe: js.UndefOr[js.Array[String]] = js.undefined
   
+  /**
+    * @default ['.mjs', '.js', '.mts', '.ts', '.jsx', '.tsx', '.json']
+    */
   var extensions: js.UndefOr[js.Array[String]] = js.undefined
   
+  /**
+    * @default ['module', 'jsnext:main', 'jsnext']
+    */
   var mainFields: js.UndefOr[js.Array[String]] = js.undefined
   
+  /**
+    * @default false
+    */
   var preserveSymlinks: js.UndefOr[Boolean] = js.undefined
 }
 object ResolveOptionsaliasAliasO {

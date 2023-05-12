@@ -12,12 +12,12 @@ trait SessionMappingSummary extends StObject {
   var CreationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The globally unique identifier (GUID) of the user or group from the Amazon Web Services SSO Identity Store.
+    * The globally unique identifier (GUID) of the user or group from the IAM Identity Center Identity Store.
     */
   var IdentityId: js.UndefOr[XmlStringMaxLen256] = js.undefined
   
   /**
-    * The name of the user or group. For more information, see UserName and DisplayName in the Amazon Web Services SSO Identity Store API Reference.
+    * The name of the user or group. For more information, see UserName and DisplayName in the IAM Identity Center Identity Store API Reference.
     */
   var IdentityName: js.UndefOr[XmlStringMaxLen256] = js.undefined
   

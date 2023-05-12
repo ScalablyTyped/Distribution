@@ -27,7 +27,7 @@ trait Delegation extends StObject {
   var controlSetId: js.UndefOr[ControlSetId] = js.undefined
   
   /**
-    *  The IAM user or role that created the delegation. 
+    *  The user or role that created the delegation. 
     */
   var createdBy: js.UndefOr[CreatedBy] = js.undefined
   

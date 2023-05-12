@@ -16,7 +16,6 @@ open class VirtualizedDataSource[T] protected ()
   //#region Constructors
   /**
     * Initializes the VirtualizedDataSource base class of a custom data source.
-    * @constructor
     * @param listDataAdapter The object that supplies data to the VirtualizedDataSource.
     * @param options An object that can contain properties that specify additional options for the VirtualizedDataSource. It supports these properties: cacheSize.
     **/

@@ -2,7 +2,9 @@ package typings.rcTable
 
 import typings.rcTable.anon.Scrollbar
 import typings.rcTable.libFooterSummaryMod.SummaryProps
+import typings.rcTable.libInterfaceMod.ColumnGroupType
 import typings.rcTable.libInterfaceMod.ColumnType
+import typings.rcTable.libInterfaceMod.ColumnsType
 import typings.rcTable.libInterfaceMod.StickyOffsets
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
@@ -17,7 +19,8 @@ object libFooterMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[RecordType](param0: FooterProps[RecordType]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
+  /* was `typeof Footer` */
+  inline def default[RecordType](props: FooterProps[RecordType]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   object FooterComponents {
     
@@ -51,14 +54,20 @@ object libFooterMod {
     
     var children: ReactNode
     
+    var columns: ColumnsType[RecordType]
+    
     var flattenColumns: FlattenColumns[RecordType]
     
     var stickyOffsets: StickyOffsets
   }
   object FooterProps {
     
-    inline def apply[RecordType](flattenColumns: FlattenColumns[RecordType], stickyOffsets: StickyOffsets): FooterProps[RecordType] = {
-      val __obj = js.Dynamic.literal(flattenColumns = flattenColumns.asInstanceOf[js.Any], stickyOffsets = stickyOffsets.asInstanceOf[js.Any])
+    inline def apply[RecordType](
+      columns: ColumnsType[RecordType],
+      flattenColumns: FlattenColumns[RecordType],
+      stickyOffsets: StickyOffsets
+    ): FooterProps[RecordType] = {
+      val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], flattenColumns = flattenColumns.asInstanceOf[js.Any], stickyOffsets = stickyOffsets.asInstanceOf[js.Any])
       __obj.asInstanceOf[FooterProps[RecordType]]
     }
     
@@ -68,6 +77,10 @@ object libFooterMod {
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
+      inline def setColumns(value: ColumnsType[RecordType]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+      
+      inline def setColumnsVarargs(value: (ColumnGroupType[RecordType] | ColumnType[RecordType])*): Self = StObject.set(x, "columns", js.Array(value*))
       
       inline def setFlattenColumns(value: FlattenColumns[RecordType]): Self = StObject.set(x, "flattenColumns", value.asInstanceOf[js.Any])
       

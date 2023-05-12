@@ -8,9 +8,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 type AccessPolicy = String
 
+type AccountId = String
+
+type AccountIds = js.Array[AccountId]
+
 type AmazonResourceName = String
 
 type Arn = String
+
+type DataProtectionPolicyDocument = String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ACTIVATED
+  - typings.awsSdk.awsSdkStrings.DELETED
+  - typings.awsSdk.awsSdkStrings.ARCHIVED
+  - typings.awsSdk.awsSdkStrings.DISABLED
+  - java.lang.String
+*/
+type DataProtectionStatus = _DataProtectionStatus | String
 
 type Days = Double
 
@@ -86,6 +101,8 @@ type FilteredLogEvents = js.Array[FilteredLogEvent]
 
 type ForceUpdate = Boolean
 
+type IncludeLinkedAccounts = Boolean
+
 type InputLogEvents = js.Array[InputLogEvent]
 
 type InputLogStreamNames = js.Array[LogStreamName]
@@ -98,7 +115,13 @@ type LogEventIndex = Double
 
 type LogGroupFieldList = js.Array[LogGroupField]
 
+type LogGroupIdentifier = String
+
+type LogGroupIdentifiers = js.Array[LogGroupIdentifier]
+
 type LogGroupName = String
+
+type LogGroupNamePattern = String
 
 type LogGroupNames = js.Array[LogGroupName]
 
@@ -240,6 +263,8 @@ type TestEventMessages = js.Array[EventMessage]
 type Timestamp = Double
 
 type Token = String
+
+type Unmask = Boolean
 
 type Value = String
 

@@ -64,7 +64,7 @@ object anon {
   @js.native
   trait FnCall extends StObject {
     
-    def apply(callback: js.Function0[VoidOrUndefinedOnly]): js.Promise[Unit] = js.native
+    def apply(callback: js.Function0[VoidOrUndefinedOnly]): Unit = js.native
   }
   
   @js.native

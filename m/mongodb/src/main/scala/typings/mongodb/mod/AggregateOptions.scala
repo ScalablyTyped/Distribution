@@ -12,7 +12,7 @@ trait AggregateOptions
   /** allowDiskUse lets the server know if it can use disk to store temporary results for the aggregation (requires mongodb 2.6 \>). */
   var allowDiskUse: js.UndefOr[Boolean] = js.undefined
   
-  /** The number of documents to return per batch. See [aggregation documentation](https://docs.mongodb.com/manual/reference/command/aggregate). */
+  /** The number of documents to return per batch. See [aggregation documentation](https://www.mongodb.com/docs/manual/reference/command/aggregate). */
   var batchSize: js.UndefOr[scala.Double] = js.undefined
   
   /** Allow driver to bypass schema validation in MongoDB 3.2 or higher. */

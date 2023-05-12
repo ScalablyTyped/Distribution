@@ -38,7 +38,7 @@ object ActionManager {
   
   /**
     * Nothing
-    * @see https://doc.babylonjs.com/how_to/how_to_use_actions#triggers
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/events/actions#triggers
     */
   @JSGlobal("BABYLON.ActionManager.NothingTrigger")
   @js.native
@@ -46,7 +46,7 @@ object ActionManager {
   
   /**
     * On center pick
-    * @see https://doc.babylonjs.com/how_to/how_to_use_actions#triggers
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/events/actions#triggers
     */
   @JSGlobal("BABYLON.ActionManager.OnCenterPickTrigger")
   @js.native
@@ -54,7 +54,7 @@ object ActionManager {
   
   /**
     * On double pick
-    * @see https://doc.babylonjs.com/how_to/how_to_use_actions#triggers
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/events/actions#triggers
     */
   @JSGlobal("BABYLON.ActionManager.OnDoublePickTrigger")
   @js.native
@@ -62,7 +62,7 @@ object ActionManager {
   
   /**
     * On every frame
-    * @see https://doc.babylonjs.com/how_to/how_to_use_actions#triggers
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/events/actions#triggers
     */
   @JSGlobal("BABYLON.ActionManager.OnEveryFrameTrigger")
   @js.native
@@ -70,7 +70,7 @@ object ActionManager {
   
   /**
     * On intersection enter
-    * @see https://doc.babylonjs.com/how_to/how_to_use_actions#triggers
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/events/actions#triggers
     */
   @JSGlobal("BABYLON.ActionManager.OnIntersectionEnterTrigger")
   @js.native
@@ -78,7 +78,7 @@ object ActionManager {
   
   /**
     * On intersection exit
-    * @see https://doc.babylonjs.com/how_to/how_to_use_actions#triggers
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/events/actions#triggers
     */
   @JSGlobal("BABYLON.ActionManager.OnIntersectionExitTrigger")
   @js.native
@@ -86,7 +86,7 @@ object ActionManager {
   
   /**
     * On key down
-    * @see https://doc.babylonjs.com/how_to/how_to_use_actions#triggers
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/events/actions#triggers
     */
   @JSGlobal("BABYLON.ActionManager.OnKeyDownTrigger")
   @js.native
@@ -94,7 +94,7 @@ object ActionManager {
   
   /**
     * On key up
-    * @see https://doc.babylonjs.com/how_to/how_to_use_actions#triggers
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/events/actions#triggers
     */
   @JSGlobal("BABYLON.ActionManager.OnKeyUpTrigger")
   @js.native
@@ -102,7 +102,7 @@ object ActionManager {
   
   /**
     * On left pick
-    * @see https://doc.babylonjs.com/how_to/how_to_use_actions#triggers
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/events/actions#triggers
     */
   @JSGlobal("BABYLON.ActionManager.OnLeftPickTrigger")
   @js.native
@@ -110,7 +110,7 @@ object ActionManager {
   
   /**
     * On long press
-    * @see https://doc.babylonjs.com/how_to/how_to_use_actions#triggers
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/events/actions#triggers
     */
   @JSGlobal("BABYLON.ActionManager.OnLongPressTrigger")
   @js.native
@@ -118,7 +118,7 @@ object ActionManager {
   
   /**
     * On pick down
-    * @see https://doc.babylonjs.com/how_to/how_to_use_actions#triggers
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/events/actions#triggers
     */
   @JSGlobal("BABYLON.ActionManager.OnPickDownTrigger")
   @js.native
@@ -127,7 +127,7 @@ object ActionManager {
   /**
     * On pick out.
     * This trigger will only be raised if you also declared a OnPickDown
-    * @see https://doc.babylonjs.com/how_to/how_to_use_actions#triggers
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/events/actions#triggers
     */
   @JSGlobal("BABYLON.ActionManager.OnPickOutTrigger")
   @js.native
@@ -135,7 +135,7 @@ object ActionManager {
   
   /**
     * On pick
-    * @see https://doc.babylonjs.com/how_to/how_to_use_actions#triggers
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/events/actions#triggers
     */
   @JSGlobal("BABYLON.ActionManager.OnPickTrigger")
   @js.native
@@ -143,7 +143,7 @@ object ActionManager {
   
   /**
     * On pick up
-    * @see https://doc.babylonjs.com/how_to/how_to_use_actions#triggers
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/events/actions#triggers
     */
   @JSGlobal("BABYLON.ActionManager.OnPickUpTrigger")
   @js.native
@@ -151,7 +151,7 @@ object ActionManager {
   
   /**
     * On pointer out
-    * @see https://doc.babylonjs.com/how_to/how_to_use_actions#triggers
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/events/actions#triggers
     */
   @JSGlobal("BABYLON.ActionManager.OnPointerOutTrigger")
   @js.native
@@ -159,7 +159,7 @@ object ActionManager {
   
   /**
     * On pointer over
-    * @see https://doc.babylonjs.com/how_to/how_to_use_actions#triggers
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/events/actions#triggers
     */
   @JSGlobal("BABYLON.ActionManager.OnPointerOverTrigger")
   @js.native
@@ -167,7 +167,7 @@ object ActionManager {
   
   /**
     * On right pick
-    * @see https://doc.babylonjs.com/how_to/how_to_use_actions#triggers
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/events/actions#triggers
     */
   @JSGlobal("BABYLON.ActionManager.OnRightPickTrigger")
   @js.native

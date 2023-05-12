@@ -46,12 +46,7 @@ trait CarePlan
   var addresses: js.UndefOr[js.Array[CodeableReference]] = js.undefined
   
   /**
-    * The author may also be a contributor.  For example, an organization can be an author, but not listed as a contributor.
-    */
-  var author: js.UndefOr[Reference] = js.undefined
-  
-  /**
-    * A care plan that is fulfilled in whole or in part by this care plan.
+    * A higher-level request resource (i.e. a plan, proposal or order) that is fulfilled in whole or in part by this care plan.
     */
   var basedOn: js.UndefOr[js.Array[Reference]] = js.undefined
   
@@ -61,7 +56,7 @@ trait CarePlan
   var careTeam: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
-    * There may be multiple axes of categorization and one plan may serve multiple purposes.  In some cases, this may be redundant with references to CarePlan.concern.
+    * There may be multiple axes of categorization and one plan may serve multiple purposes.  In some cases, this may be redundant with references to CarePlan.addresses.
     */
   var category: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
@@ -74,6 +69,11 @@ trait CarePlan
     * Represents when this particular CarePlan record was created in the system, which is often a system-generated date.
     */
   var created: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The custodian might or might not be a contributor.
+    */
+  var custodian: js.UndefOr[Reference] = js.undefined
   
   /**
     * A description of the scope and nature of the plan.
@@ -182,10 +182,6 @@ object CarePlan {
     
     inline def setAddressesVarargs(value: CodeableReference*): Self = StObject.set(x, "addresses", js.Array(value*))
     
-    inline def setAuthor(value: Reference): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
-    
-    inline def setAuthorUndefined: Self = StObject.set(x, "author", js.undefined)
-    
     inline def setBasedOn(value: js.Array[Reference]): Self = StObject.set(x, "basedOn", value.asInstanceOf[js.Any])
     
     inline def setBasedOnUndefined: Self = StObject.set(x, "basedOn", js.undefined)
@@ -213,6 +209,10 @@ object CarePlan {
     inline def setCreated(value: String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
     inline def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
+    
+    inline def setCustodian(value: Reference): Self = StObject.set(x, "custodian", value.asInstanceOf[js.Any])
+    
+    inline def setCustodianUndefined: Self = StObject.set(x, "custodian", js.undefined)
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

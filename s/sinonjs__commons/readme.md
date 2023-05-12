@@ -1,7 +1,7 @@
 
 # Scala.js typings for sinonjs__commons
 
-Typings are for version 2.0.0
+Typings are for version 3.0.0
 
 ## Library description:
 Simple functions shared among the sinon end user libraries

@@ -67,6 +67,12 @@ object BLECentralPlugin {
     extends StObject
        with BLECentralPluginCommon {
     
+    /* Start the bonding (pairing) process with the remote device. 
+      [iOS] bond is not supported on iOS.
+      */
+    def bond(device_id: String): js.Promise[Unit] = js.native
+    def bond(device_id: String, options: CreateBondOptions): js.Promise[Unit] = js.native
+    
     /* Find the bonded devices.
       [iOS] bondedDevices is not supported on iOS. */
     def bondedDevices(): js.Promise[PeripheralData] = js.native
@@ -88,6 +94,11 @@ object BLECentralPlugin {
     def list(): js.Promise[PeripheralData] = js.native
     
     def read(device_id: String, service_uuid: String, characteristic_uuid: String): js.Promise[js.typedarray.ArrayBuffer] = js.native
+    
+    /* Read the bond state of the remote device.
+      [iOS] readBondState is not supported on iOS.
+      */
+    def readBondState(device_id: String): js.Promise[BondState] = js.native
     
     def readRSSI(device_id: String): js.Promise[Double] = js.native
     
@@ -134,6 +145,11 @@ object BLECentralPlugin {
     
     def stopStateNotifications(): js.Promise[Unit] = js.native
     
+    /* unbonds a remote device. Note: this uses an unlisted API on Android.
+      [iOS] bond is not supported on iOS.
+      */
+    def unbond(device_id: String): js.Promise[Unit] = js.native
+    
     def write(
       device_id: String,
       service_uuid: String,
@@ -162,6 +178,19 @@ object BLECentralPlugin {
       connectCallback: js.Function1[/* data */ PeripheralDataExtended, Any],
       disconnectCallback: js.Function1[/* error */ String | BLEError, Any]
     ): Unit = js.native
+    
+    /* Start the bonding (pairing) process with the remote device. 
+      [iOS] bond is not supported on iOS.
+      */
+    def bond(device_id: String, success: js.Function0[Any]): Unit = js.native
+    def bond(device_id: String, success: js.Function0[Any], failure: js.Function1[/* error */ String, Any]): Unit = js.native
+    def bond(
+      device_id: String,
+      success: js.Function0[Any],
+      failure: js.Function1[/* error */ String, Any],
+      options: CreateBondOptions
+    ): Unit = js.native
+    def bond(device_id: String, success: js.Function0[Any], failure: Unit, options: CreateBondOptions): Unit = js.native
     
     /* Find the bonded devices.
       [iOS] bondedDevices is not supported on iOS. */
@@ -248,6 +277,16 @@ object BLECentralPlugin {
       characteristic_uuid: String,
       success: Unit,
       failure: js.Function1[/* error */ String | BLEError, Any]
+    ): Unit = js.native
+    
+    /* Read the bond state of the remote device.
+      [iOS] readBondState is not supported on iOS.
+      */
+    def readBondState(device_id: String, success: js.Function1[/* state */ BondState, Any]): Unit = js.native
+    def readBondState(
+      device_id: String,
+      success: js.Function1[/* state */ BondState, Any],
+      failure: js.Function1[/* error */ String, Any]
     ): Unit = js.native
     
     def readRSSI(device_id: String, success: js.Function1[/* rssi */ Double, Any]): Unit = js.native
@@ -392,6 +431,12 @@ object BLECentralPlugin {
     def stopStateNotifications(success: js.Function0[Any], failure: js.Function0[Any]): Unit = js.native
     def stopStateNotifications(success: Unit, failure: js.Function0[Any]): Unit = js.native
     
+    /* unbonds a remote device. Note: this uses an unlisted API on Android.
+      [iOS] bond is not supported on iOS.
+      */
+    def unbond(device_id: String, success: js.Function0[Any]): Unit = js.native
+    def unbond(device_id: String, success: js.Function0[Any], failure: js.Function1[/* error */ String, Any]): Unit = js.native
+    
     var withPromises: BLECentralPluginPromises = js.native
     
     def write(
@@ -481,6 +526,40 @@ object BLECentralPlugin {
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.cordovaPluginBleCentral.cordovaPluginBleCentralStrings.none
+    - typings.cordovaPluginBleCentral.cordovaPluginBleCentralStrings.bonding
+    - typings.cordovaPluginBleCentral.cordovaPluginBleCentralStrings.bonded
+  */
+  trait BondState extends StObject
+  object BondState {
+    
+    inline def bonded: typings.cordovaPluginBleCentral.cordovaPluginBleCentralStrings.bonded = "bonded".asInstanceOf[typings.cordovaPluginBleCentral.cordovaPluginBleCentralStrings.bonded]
+    
+    inline def bonding: typings.cordovaPluginBleCentral.cordovaPluginBleCentralStrings.bonding = "bonding".asInstanceOf[typings.cordovaPluginBleCentral.cordovaPluginBleCentralStrings.bonding]
+    
+    inline def none: typings.cordovaPluginBleCentral.cordovaPluginBleCentralStrings.none = "none".asInstanceOf[typings.cordovaPluginBleCentral.cordovaPluginBleCentralStrings.none]
+  }
+  
+  trait CreateBondOptions extends StObject {
+    
+    /* Show pairing request as a dialog rather than a notification */
+    var usePairingDialog: Boolean
+  }
+  object CreateBondOptions {
+    
+    inline def apply(usePairingDialog: Boolean): CreateBondOptions = {
+      val __obj = js.Dynamic.literal(usePairingDialog = usePairingDialog.asInstanceOf[js.Any])
+      __obj.asInstanceOf[CreateBondOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateBondOptions] (val x: Self) extends AnyVal {
+      
+      inline def setUsePairingDialog(value: Boolean): Self = StObject.set(x, "usePairingDialog", value.asInstanceOf[js.Any])
     }
   }
   

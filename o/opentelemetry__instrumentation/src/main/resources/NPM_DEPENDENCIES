@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@opentelemetry/instrumentation" : "0.33.0"
+      "@opentelemetry/instrumentation" : "0.39.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@opentelemetry/instrumentation" : "0.33.0"
+      "@opentelemetry/instrumentation" : "0.39.0"
     }
   ],
   "compile-devDependencies" : [

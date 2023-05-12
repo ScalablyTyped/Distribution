@@ -17,7 +17,7 @@ trait DescribeFleetInstancesResult extends StObject {
   var FleetId: js.UndefOr[typings.awsSdk.clientsEc2Mod.FleetId] = js.undefined
   
   /**
-    * The token for the next set of results.
+    * The token to include in another request to get the next page of items. This value is null when there are no more items to return.
     */
   var NextToken: js.UndefOr[String] = js.undefined
 }

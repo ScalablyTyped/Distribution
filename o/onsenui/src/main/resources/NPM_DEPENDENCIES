@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "onsenui" : "2.12.6"
+      "onsenui" : "2.12.8"
     }
   ],
   "test-dependencies" : [
     {
-      "onsenui" : "2.12.6"
+      "onsenui" : "2.12.8"
     }
   ],
   "compile-devDependencies" : [

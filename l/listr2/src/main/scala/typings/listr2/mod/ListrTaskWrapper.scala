@@ -5,16 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Extend the task to have more functionality while accessing from the outside.
+  * The original Task that is defined by the user is wrapped with the TaskWrapper to provide additional functionality.
+  *
+  * @see {@link https://listr2.kilic.dev/task/task.html}
   */
 @JSImport("listr2", "ListrTaskWrapper")
 @js.native
 open class ListrTaskWrapper[Ctx, Renderer /* <: ListrRendererFactory */] protected ()
   extends StObject
      with TaskWrapper[Ctx, Renderer] {
-  def this(
-    task: Task[Ctx, ListrRendererFactory],
-    errors: js.Array[ListrError[Ctx]],
-    options: ListrBaseClassOptions[Ctx, Any, Any]
-  ) = this()
+  def this(task: Task[Ctx, ListrRendererFactory], options: ListrBaseClassOptions[Ctx, Any, Any]) = this()
 }

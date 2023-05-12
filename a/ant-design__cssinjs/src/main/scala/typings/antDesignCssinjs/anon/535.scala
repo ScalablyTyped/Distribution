@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.MozStackSizing
+import typings.csstype.mod.Property.MsTouchSelect
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,11 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `535` extends StObject {
   
   var value: js.UndefOr[
-    MozStackSizing | (js.Array[
+    MsTouchSelect | (js.Array[
       (Extract[
-        js.UndefOr[MozStackSizing | js.Array[NonNullable[js.UndefOr[MozStackSizing]]]], 
+        js.UndefOr[MsTouchSelect | js.Array[NonNullable[js.UndefOr[MsTouchSelect]]]], 
         String
-      ]) | NonNullable[js.UndefOr[MozStackSizing]]
+      ]) | NonNullable[js.UndefOr[MsTouchSelect]]
     ])
   ] = js.native
 }

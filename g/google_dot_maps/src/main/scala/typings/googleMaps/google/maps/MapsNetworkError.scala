@@ -6,9 +6,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Base class for managing network errors in Maps.
-  */
 trait MapsNetworkError
   extends StObject
      with Error {

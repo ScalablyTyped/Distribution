@@ -108,6 +108,10 @@ object mod {
     
     var coord: js.Tuple2[Double, Double]
     
+    var drawHeight: js.UndefOr[Double] = js.undefined
+    
+    var drawWidth: js.UndefOr[Double] = js.undefined
+    
     var height: Double
     
     var img: String
@@ -115,6 +119,8 @@ object mod {
     var offsetX: js.UndefOr[Double] = js.undefined
     
     var offsetY: js.UndefOr[Double] = js.undefined
+    
+    var resizeMode: js.UndefOr[ResizeMode] = js.undefined
     
     var width: Double
   }
@@ -130,6 +136,14 @@ object mod {
       
       inline def setCoord(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "coord", value.asInstanceOf[js.Any])
       
+      inline def setDrawHeight(value: Double): Self = StObject.set(x, "drawHeight", value.asInstanceOf[js.Any])
+      
+      inline def setDrawHeightUndefined: Self = StObject.set(x, "drawHeight", js.undefined)
+      
+      inline def setDrawWidth(value: Double): Self = StObject.set(x, "drawWidth", value.asInstanceOf[js.Any])
+      
+      inline def setDrawWidthUndefined: Self = StObject.set(x, "drawWidth", js.undefined)
+      
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
       inline def setImg(value: String): Self = StObject.set(x, "img", value.asInstanceOf[js.Any])
@@ -141,6 +155,10 @@ object mod {
       inline def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
       
       inline def setOffsetYUndefined: Self = StObject.set(x, "offsetY", js.undefined)
+      
+      inline def setResizeMode(value: ResizeMode): Self = StObject.set(x, "resizeMode", value.asInstanceOf[js.Any])
+      
+      inline def setResizeModeUndefined: Self = StObject.set(x, "resizeMode", js.undefined)
       
       inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
@@ -280,6 +298,41 @@ object mod {
     }
   }
   
+  trait LayerConfig extends StObject {
+    
+    var tileSubdomains: js.UndefOr[js.Array[String]] = js.undefined
+    
+    var tileUrl: String
+  }
+  object LayerConfig {
+    
+    inline def apply(tileUrl: String): LayerConfig = {
+      val __obj = js.Dynamic.literal(tileUrl = tileUrl.asInstanceOf[js.Any])
+      __obj.asInstanceOf[LayerConfig]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LayerConfig] (val x: Self) extends AnyVal {
+      
+      inline def setTileSubdomains(value: js.Array[String]): Self = StObject.set(x, "tileSubdomains", value.asInstanceOf[js.Any])
+      
+      inline def setTileSubdomainsUndefined: Self = StObject.set(x, "tileSubdomains", js.undefined)
+      
+      inline def setTileSubdomainsVarargs(value: String*): Self = StObject.set(x, "tileSubdomains", js.Array(value*))
+      
+      inline def setTileUrl(value: String): Self = StObject.set(x, "tileUrl", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.staticmaps.staticmapsStrings.contain
+    - typings.staticmaps.staticmapsStrings.cover
+    - typings.staticmaps.staticmapsStrings.fill
+    - typings.staticmaps.staticmapsStrings.inside
+    - typings.staticmaps.staticmapsStrings.outside
+  */
+  trait ResizeMode extends StObject
+  
   @js.native
   trait StaticMaps extends StObject {
     
@@ -344,6 +397,8 @@ object mod {
     
     var reverseY: js.UndefOr[Boolean] = js.undefined
     
+    var tileLayers: js.UndefOr[js.Array[LayerConfig]] = js.undefined
+    
     var tileRequestHeader: js.UndefOr[js.Object] = js.undefined
     
     /**
@@ -398,6 +453,12 @@ object mod {
       inline def setReverseY(value: Boolean): Self = StObject.set(x, "reverseY", value.asInstanceOf[js.Any])
       
       inline def setReverseYUndefined: Self = StObject.set(x, "reverseY", js.undefined)
+      
+      inline def setTileLayers(value: js.Array[LayerConfig]): Self = StObject.set(x, "tileLayers", value.asInstanceOf[js.Any])
+      
+      inline def setTileLayersUndefined: Self = StObject.set(x, "tileLayers", js.undefined)
+      
+      inline def setTileLayersVarargs(value: LayerConfig*): Self = StObject.set(x, "tileLayers", js.Array(value*))
       
       inline def setTileRequestHeader(value: js.Object): Self = StObject.set(x, "tileRequestHeader", value.asInstanceOf[js.Any])
       

@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.StrokeLinejoin
+import typings.csstype.mod.Property.BorderTopColor
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,11 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `337` extends StObject {
   
   var value: js.UndefOr[
-    StrokeLinejoin | (js.Array[
+    BorderTopColor | (js.Array[
       (Extract[
-        js.UndefOr[StrokeLinejoin | js.Array[NonNullable[js.UndefOr[StrokeLinejoin]]]], 
+        js.UndefOr[BorderTopColor | js.Array[NonNullable[js.UndefOr[BorderTopColor]]]], 
         String
-      ]) | NonNullable[js.UndefOr[StrokeLinejoin]]
+      ]) | NonNullable[js.UndefOr[BorderTopColor]]
     ])
   ] = js.native
 }

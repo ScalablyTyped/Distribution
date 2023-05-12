@@ -11,7 +11,7 @@ open class ChildListTag protected () extends Component[ChildListTagProps, Any, A
   def this(props: ChildListTagProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: ChildListTagProps, context: Any) = this()
 }

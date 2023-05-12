@@ -2,6 +2,7 @@ package typings.three
 
 import typings.three.examplesJsmWebxrXrhandmeshmodelMod.XRHandMeshModel
 import typings.three.srcCoreBufferGeometryMod.BufferGeometry
+import typings.three.srcCoreBufferGeometryMod.NormalBufferAttributes
 import typings.three.srcCoreEventDispatcherMod.Event
 import typings.three.srcMaterialsMaterialMod.Material
 import typings.three.srcThreeMod.Mesh
@@ -29,7 +30,7 @@ object examplesJsmWebxrOculusHandModelMod {
     
     def intersectBoxObject(boxObject: Object3D[Event]): Boolean = js.native
     
-    var mesh: (Mesh[BufferGeometry, Material | js.Array[Material]]) | Null = js.native
+    var mesh: (Mesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]]) | Null = js.native
     
     var motionController: XRHandMeshModel | Null = js.native
   }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for wordpress__blocks
 
-Typings are for version 11.0
+Typings are for version 12.5
 
 ## Library description:
 Block API for WordPress.

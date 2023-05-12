@@ -16,7 +16,7 @@ object libIconsVerticalAlignTopOutlinedMod extends Shortcut {
   @js.native
   trait VerticalAlignTopOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_VerticalAlignTopOutlinedIconType: String = js.native

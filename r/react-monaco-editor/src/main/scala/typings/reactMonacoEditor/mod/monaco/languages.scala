@@ -1,10 +1,12 @@
 package typings.reactMonacoEditor.mod.monaco
 
 import typings.monacoEditor.mod.IDisposable
+import typings.monacoEditor.mod.IRange
 import typings.monacoEditor.mod.Thenable
 import typings.monacoEditor.mod.languages.CodeActionProvider
 import typings.monacoEditor.mod.languages.CodeActionProviderMetadata
 import typings.monacoEditor.mod.languages.CodeLensProvider
+import typings.monacoEditor.mod.languages.CompletionItemKind
 import typings.monacoEditor.mod.languages.CompletionItemProvider
 import typings.monacoEditor.mod.languages.DeclarationProvider
 import typings.monacoEditor.mod.languages.DefinitionProvider
@@ -74,6 +76,8 @@ object languages {
     /* 4 */ val InsertAsSnippet: typings.monacoEditor.mod.languages.CompletionItemInsertTextRule.InsertAsSnippet & Double = js.native
     
     /* 1 */ val KeepWhitespace: typings.monacoEditor.mod.languages.CompletionItemInsertTextRule.KeepWhitespace & Double = js.native
+    
+    /* 0 */ val None: typings.monacoEditor.mod.languages.CompletionItemInsertTextRule.None & Double = js.native
   }
   
   @JSImport("react-monaco-editor", "monaco.languages.CompletionItemKind")
@@ -192,6 +196,10 @@ object languages {
   /* static members */
   object FoldingRangeKind {
     
+    @JSImport("react-monaco-editor", "monaco.languages.FoldingRangeKind")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Kind for folding range representing a comment. The value of the kind is 'comment'.
       */
@@ -213,6 +221,13 @@ object languages {
     @JSImport("react-monaco-editor", "monaco.languages.FoldingRangeKind.Region")
     @js.native
     val Region: typings.monacoEditor.mod.languages.FoldingRangeKind = js.native
+    
+    /**
+      * Returns a {@link FoldingRangeKind} for the given value.
+      *
+      * @param value of the kind.
+      */
+    inline def fromValue(value: String): typings.monacoEditor.mod.languages.FoldingRangeKind = ^.asInstanceOf[js.Dynamic].applyDynamic("fromValue")(value.asInstanceOf[js.Any]).asInstanceOf[typings.monacoEditor.mod.languages.FoldingRangeKind]
   }
   
   @JSImport("react-monaco-editor", "monaco.languages.IndentAction")
@@ -253,6 +268,13 @@ object languages {
     /* 0 */ val Automatic: typings.monacoEditor.mod.languages.InlineCompletionTriggerKind.Automatic & Double = js.native
     
     /* 1 */ val Explicit: typings.monacoEditor.mod.languages.InlineCompletionTriggerKind.Explicit & Double = js.native
+  }
+  
+  @JSImport("react-monaco-editor", "monaco.languages.SelectedSuggestionInfo")
+  @js.native
+  open class SelectedSuggestionInfo protected ()
+    extends typings.monacoEditor.mod.languages.SelectedSuggestionInfo {
+    def this(range: IRange, text: String, completionKind: CompletionItemKind, isSnippetText: Boolean) = this()
   }
   
   @JSImport("react-monaco-editor", "monaco.languages.SignatureHelpTriggerKind")
@@ -402,6 +424,8 @@ object languages {
   }
   
   inline def onLanguage(languageId: String, callback: js.Function0[Unit]): IDisposable = (^.asInstanceOf[js.Dynamic].applyDynamic("onLanguage")(languageId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[IDisposable]
+  
+  inline def onLanguageEncountered(languageId: String, callback: js.Function0[Unit]): IDisposable = (^.asInstanceOf[js.Dynamic].applyDynamic("onLanguageEncountered")(languageId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[IDisposable]
   
   inline def register(language: ILanguageExtensionPoint): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register")(language.asInstanceOf[js.Any]).asInstanceOf[Unit]
   

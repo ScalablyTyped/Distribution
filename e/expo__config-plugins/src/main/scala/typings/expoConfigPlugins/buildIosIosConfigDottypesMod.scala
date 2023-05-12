@@ -22,7 +22,7 @@ object buildIosIosConfigDottypesMod {
     
     var EXUpdatesReleaseChannel: js.UndefOr[String] = js.undefined
     
-    var EXUpdatesRequestHeaders: Record[String, String]
+    var EXUpdatesRequestHeaders: js.UndefOr[Record[String, String]] = js.undefined
     
     var EXUpdatesRuntimeVersion: js.UndefOr[String] = js.undefined
     
@@ -32,8 +32,8 @@ object buildIosIosConfigDottypesMod {
   }
   object ExpoPlist {
     
-    inline def apply(EXUpdatesRequestHeaders: Record[String, String]): ExpoPlist = {
-      val __obj = js.Dynamic.literal(EXUpdatesRequestHeaders = EXUpdatesRequestHeaders.asInstanceOf[js.Any])
+    inline def apply(): ExpoPlist = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ExpoPlist]
     }
     
@@ -65,6 +65,8 @@ object buildIosIosConfigDottypesMod {
       inline def setEXUpdatesReleaseChannelUndefined: Self = StObject.set(x, "EXUpdatesReleaseChannel", js.undefined)
       
       inline def setEXUpdatesRequestHeaders(value: Record[String, String]): Self = StObject.set(x, "EXUpdatesRequestHeaders", value.asInstanceOf[js.Any])
+      
+      inline def setEXUpdatesRequestHeadersUndefined: Self = StObject.set(x, "EXUpdatesRequestHeaders", js.undefined)
       
       inline def setEXUpdatesRuntimeVersion(value: String): Self = StObject.set(x, "EXUpdatesRuntimeVersion", value.asInstanceOf[js.Any])
       

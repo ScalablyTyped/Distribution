@@ -32,7 +32,7 @@ object uIUIMod {
     def this(props: AutoFocusProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: AutoFocusProps, context: Any) = this()
   }
@@ -44,7 +44,7 @@ object uIUIMod {
     def this(props: FreeFocusProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: FreeFocusProps, context: Any) = this()
   }
@@ -56,7 +56,7 @@ object uIUIMod {
     def this(props: InFocusGuardProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: InFocusGuardProps, context: Any) = this()
   }
@@ -68,7 +68,7 @@ object uIUIMod {
     def this(props: AutoFocusProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: AutoFocusProps, context: Any) = this()
   }

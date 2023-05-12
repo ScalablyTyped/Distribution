@@ -128,6 +128,8 @@ object miscVirtualJoystickMod {
     
     /* private */ var _puckImage: Any = js.native
     
+    /* private */ var _released: Any = js.native
+    
     /* private */ var _touches: Any = js.native
     
     def alwaysVisible: Boolean = js.native

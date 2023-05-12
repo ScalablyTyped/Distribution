@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "find-java-home" : "1.2.2"
+      "find-java-home" : "2.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "find-java-home" : "1.2.2"
+      "find-java-home" : "2.0.0"
     }
   ],
   "compile-devDependencies" : [

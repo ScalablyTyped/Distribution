@@ -5,12 +5,12 @@ import typings.three.examplesJsmNodesCoreConstantsMod.AnyObject
 import typings.three.examplesJsmNodesCoreConstantsMod.NodeShaderStageOption
 import typings.three.examplesJsmNodesCoreConstantsMod.NodeTypeOption
 import typings.three.srcConstantsMod.TextureEncoding
+import typings.three.srcCoreBufferGeometryMod.NormalBufferAttributes
 import typings.three.srcCoreEventDispatcherMod.Event
 import typings.three.srcRenderersWebGLRendererMod.Renderer
 import typings.three.srcThreeMod.BufferGeometry
 import typings.three.srcThreeMod.Material
 import typings.three.srcThreeMod.Object3D
-import typings.three.srcThreeMod.Scene
 import typings.three.srcThreeMod.Texture
 import typings.three.srcThreeMod.WebGLRenderTarget
 import org.scalablytyped.runtime.StObject
@@ -67,15 +67,17 @@ object examplesJsmNodesCoreNodeBuilderMod {
     
     def addNode(node: typings.three.examplesJsmNodesCoreNodeMod.default): Unit = js.native
     
-    def addStack(node: typings.three.examplesJsmNodesCoreNodeMod.default): Unit = js.native
-    
     def build(): this.type = js.native
     
     def buildCode(): Unit = js.native
     
     var buildStage: BuildStageOption | Null = js.native
     
+    var cache: typings.three.examplesJsmNodesCoreNodeCacheMod.default = js.native
+    
     var computeShader: String = js.native
+    
+    def currentNode: typings.three.examplesJsmNodesCoreNodeMod.default = js.native
     
     def flowChildNode(node: typings.three.examplesJsmNodesCoreNodeMod.default): FlowData = js.native
     def flowChildNode(node: typings.three.examplesJsmNodesCoreNodeMod.default, output: String): FlowData = js.native
@@ -107,6 +109,11 @@ object examplesJsmNodesCoreNodeBuilderMod {
       propertyName: String
     ): FlowData = js.native
     
+    /**
+      * @TODO used to be missing. check the actual type later
+      */
+    var flowsData: Any = js.native
+    
     var fogNode: typings.three.examplesJsmNodesFogFogNodeMod.default = js.native
     
     def format(snippet: String, fromType: NodeTypeOption, toType: NodeTypeOption): String = js.native
@@ -115,7 +122,7 @@ object examplesJsmNodesCoreNodeBuilderMod {
     
     def generateMethod(method: String): String = js.native
     
-    var geometry: BufferGeometry = js.native
+    var geometry: BufferGeometry[NormalBufferAttributes] = js.native
     
     def getAttribute(name: String, `type`: NodeTypeOption): typings.three.examplesJsmNodesCoreNodeAttributeMod.default = js.native
     
@@ -140,14 +147,12 @@ object examplesJsmNodesCoreNodeBuilderMod {
     
     def getContext(): NodeBuilderContext = js.native
     
-    def getCubeTexture(textureProperty: String, uvSnippet: String): String = js.native
-    
-    def getCubeTextureLevel(textureProperty: String, uvSnippet: String, levelSnippet: String): String = js.native
-    
     def getDataFromNode(node: typings.three.examplesJsmNodesCoreNodeMod.default): NodeData = js.native
     def getDataFromNode(node: typings.three.examplesJsmNodesCoreNodeMod.default, shaderStage: NodeShaderStageOption): NodeData = js.native
     
     def getFlowData(node: typings.three.examplesJsmNodesCoreNodeMod.default, shaderStage: NodeShaderStageOption): FlowData = js.native
+    
+    def getFragCoord(): String = js.native
     
     def getFrontFacing(): String = js.native
     
@@ -168,13 +173,9 @@ object examplesJsmNodesCoreNodeBuilderMod {
     
     def getSignature(): String = js.native
     
-    def getTexture(textureProperty: String, uvSnippet: String): String = js.native
-    
     def getTextureEncodingFromMap(map: Any): TextureEncoding = js.native
     def getTextureEncodingFromMap(map: Texture): TextureEncoding = js.native
     def getTextureEncodingFromMap(map: WebGLRenderTarget): TextureEncoding = js.native
-    
-    def getTextureLevel(textureProperty: String, uvSnippet: String, levelSnippet: String): String = js.native
     
     def getType(`type`: NodeTypeOption): NodeTypeOption = js.native
     
@@ -207,11 +208,15 @@ object examplesJsmNodesCoreNodeBuilderMod {
     
     def getVectorType(`type`: NodeTypeOption): NodeTypeOption = js.native
     
+    var globalCache: typings.three.examplesJsmNodesCoreNodeCacheMod.default = js.native
+    
     def hasGeometryAttribute(name: String): Boolean = js.native
     
     var hashNodes: StringDictionary[typings.three.examplesJsmNodesCoreNodeMod.default] = js.native
     
     def isAvailable(name: String): Boolean = js.native
+    
+    def isFlipY(): Boolean = js.native
     
     def isMatrix(`type`: NodeTypeOption): Boolean = js.native
     
@@ -225,19 +230,13 @@ object examplesJsmNodesCoreNodeBuilderMod {
     
     var material: Material = js.native
     
-    def node: typings.three.examplesJsmNodesCoreNodeMod.default = js.native
-    
     var nodes: js.Array[typings.three.examplesJsmNodesCoreNodeMod.default] = js.native
     
     var `object`: Object3D[Event] = js.native
     
     var parser: typings.three.examplesJsmNodesCoreNodeParserMod.default = js.native
     
-    def removeStack(node: typings.three.examplesJsmNodesCoreNodeMod.default): Unit = js.native
-    
     var renderer: Renderer = js.native
-    
-    var scene: Scene = js.native
     
     def setBuildStage(buildStage: BuildStageOption): Unit = js.native
     

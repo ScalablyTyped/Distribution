@@ -1,5 +1,6 @@
 package typings.awsSdkTypes
 
+import typings.awsSdkTypes.distTypesChecksumMod.ChecksumConstructor
 import typings.awsSdkTypes.distTypesCryptoMod.HashConstructor
 import typings.awsSdkTypes.distTypesCryptoMod.StreamHasher
 import typings.awsSdkTypes.distTypesUtilMod.BodyLengthCalculator
@@ -24,7 +25,7 @@ object distTypesStreamMod {
     @JSName("bodyLengthChecker")
     var bodyLengthChecker_Original: BodyLengthCalculator
     
-    var checksumAlgorithmFn: js.UndefOr[HashConstructor] = js.undefined
+    var checksumAlgorithmFn: js.UndefOr[ChecksumConstructor | HashConstructor] = js.undefined
     
     var checksumLocationName: js.UndefOr[String] = js.undefined
     
@@ -46,7 +47,7 @@ object distTypesStreamMod {
       
       inline def setBodyLengthChecker(value: /* body */ Any => js.UndefOr[Double]): Self = StObject.set(x, "bodyLengthChecker", js.Any.fromFunction1(value))
       
-      inline def setChecksumAlgorithmFn(value: HashConstructor): Self = StObject.set(x, "checksumAlgorithmFn", value.asInstanceOf[js.Any])
+      inline def setChecksumAlgorithmFn(value: ChecksumConstructor | HashConstructor): Self = StObject.set(x, "checksumAlgorithmFn", value.asInstanceOf[js.Any])
       
       inline def setChecksumAlgorithmFnUndefined: Self = StObject.set(x, "checksumAlgorithmFn", js.undefined)
       

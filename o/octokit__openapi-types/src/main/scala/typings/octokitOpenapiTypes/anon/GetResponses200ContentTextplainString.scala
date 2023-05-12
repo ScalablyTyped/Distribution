@@ -6,7 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GetResponses200ContentTextplainString extends StObject {
   
-  /** Get a random sentence from the Zen of GitHub */
+  /**
+    * Get the Zen of GitHub
+    * @description Get a random sentence from the Zen of GitHub
+    */
   var get: Responses200ContentTextplainString
 }
 object GetResponses200ContentTextplainString {

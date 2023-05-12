@@ -10,7 +10,7 @@ open class DebugAdapterInlineImplementation protected ()
   extends StObject
      with DebugAdapterDescriptor {
   /**
-    * Create a descriptor for an inline implementation of a debug adapter.
-    */
+  		 * Create a descriptor for an inline implementation of a debug adapter.
+  		 */
   def this(implementation: DebugAdapter) = this()
 }

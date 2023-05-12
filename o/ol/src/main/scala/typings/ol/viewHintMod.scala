@@ -6,32 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object viewHintMod {
   
-  @JSImport("ol/ViewHint", JSImport.Default)
-  @js.native
-  object default extends StObject {
+  object default {
     
-    @JSBracketAccess
-    def apply(value: Double): js.UndefOr[ViewHint & Double] = js.native
-    
-    /* 0 */ val ANIMATING: typings.ol.viewHintMod.ViewHint.ANIMATING & Double = js.native
-    
-    /* 1 */ val INTERACTING: typings.ol.viewHintMod.ViewHint.INTERACTING & Double = js.native
-  }
-  
-  @js.native
-  sealed trait ViewHint extends StObject
-  @JSImport("ol/ViewHint", "ViewHint")
-  @js.native
-  object ViewHint extends StObject {
-    
+    @JSImport("ol/ViewHint", "default.ANIMATING")
     @js.native
-    sealed trait ANIMATING
-      extends StObject
-         with ViewHint
+    val ANIMATING: Double = js.native
     
+    @JSImport("ol/ViewHint", "default.INTERACTING")
     @js.native
-    sealed trait INTERACTING
-      extends StObject
-         with ViewHint
+    val INTERACTING: Double = js.native
   }
 }

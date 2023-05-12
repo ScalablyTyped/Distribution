@@ -14,7 +14,7 @@ object global {
     * See: {@link https://developers.deezer.com/sdk/javascript/init | DZ.init}
     */
   // The client may want to set this, so we have to disable a rule:
-  // tslint:disable-next-line:prefer-declare-function
+  // eslint-disable-next-line prefer-declare-function
   @JSGlobal("dzAsyncInit")
   @js.native
   def dzAsyncInit: js.Function0[Unit] = js.native

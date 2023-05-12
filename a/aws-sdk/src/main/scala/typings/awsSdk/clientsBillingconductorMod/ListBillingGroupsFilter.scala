@@ -15,6 +15,11 @@ trait ListBillingGroupsFilter extends StObject {
     * The pricing plan Amazon Resource Names (ARNs) to retrieve information. 
     */
   var PricingPlan: js.UndefOr[PricingPlanFullArn] = js.undefined
+  
+  /**
+    *  A list of billing groups to retrieve their current status for a specific time range 
+    */
+  var Statuses: js.UndefOr[BillingGroupStatusList] = js.undefined
 }
 object ListBillingGroupsFilter {
   
@@ -35,5 +40,11 @@ object ListBillingGroupsFilter {
     inline def setPricingPlan(value: PricingPlanFullArn): Self = StObject.set(x, "PricingPlan", value.asInstanceOf[js.Any])
     
     inline def setPricingPlanUndefined: Self = StObject.set(x, "PricingPlan", js.undefined)
+    
+    inline def setStatuses(value: BillingGroupStatusList): Self = StObject.set(x, "Statuses", value.asInstanceOf[js.Any])
+    
+    inline def setStatusesUndefined: Self = StObject.set(x, "Statuses", js.undefined)
+    
+    inline def setStatusesVarargs(value: BillingGroupStatus*): Self = StObject.set(x, "Statuses", js.Array(value*))
   }
 }

@@ -1,5 +1,6 @@
 package typings.std
 
+import typings.std.stdInts.`0x88FE`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ANGLEInstancedArrays extends StObject {
   
   /* standard dom */
-  val VERTEX_ATTRIB_ARRAY_DIVISOR_ANGLE: GLenum
+  val VERTEX_ATTRIB_ARRAY_DIVISOR_ANGLE: `0x88FE`
   
   /* standard dom */
   def drawArraysInstancedANGLE(mode: GLenum, first: GLint, count: GLsizei, primcount: GLsizei): Unit
@@ -22,12 +23,11 @@ trait ANGLEInstancedArrays extends StObject {
 object ANGLEInstancedArrays {
   
   inline def apply(
-    VERTEX_ATTRIB_ARRAY_DIVISOR_ANGLE: GLenum,
     drawArraysInstancedANGLE: (GLenum, GLint, GLsizei, GLsizei) => Unit,
     drawElementsInstancedANGLE: (GLenum, GLsizei, GLenum, GLintptr, GLsizei) => Unit,
     vertexAttribDivisorANGLE: (GLuint, GLuint) => Unit
   ): ANGLEInstancedArrays = {
-    val __obj = js.Dynamic.literal(VERTEX_ATTRIB_ARRAY_DIVISOR_ANGLE = VERTEX_ATTRIB_ARRAY_DIVISOR_ANGLE.asInstanceOf[js.Any], drawArraysInstancedANGLE = js.Any.fromFunction4(drawArraysInstancedANGLE), drawElementsInstancedANGLE = js.Any.fromFunction5(drawElementsInstancedANGLE), vertexAttribDivisorANGLE = js.Any.fromFunction2(vertexAttribDivisorANGLE))
+    val __obj = js.Dynamic.literal(VERTEX_ATTRIB_ARRAY_DIVISOR_ANGLE = 0x88FE, drawArraysInstancedANGLE = js.Any.fromFunction4(drawArraysInstancedANGLE), drawElementsInstancedANGLE = js.Any.fromFunction5(drawElementsInstancedANGLE), vertexAttribDivisorANGLE = js.Any.fromFunction2(vertexAttribDivisorANGLE))
     __obj.asInstanceOf[ANGLEInstancedArrays]
   }
   
@@ -38,7 +38,7 @@ object ANGLEInstancedArrays {
     
     inline def setDrawElementsInstancedANGLE(value: (GLenum, GLsizei, GLenum, GLintptr, GLsizei) => Unit): Self = StObject.set(x, "drawElementsInstancedANGLE", js.Any.fromFunction5(value))
     
-    inline def setVERTEX_ATTRIB_ARRAY_DIVISOR_ANGLE(value: GLenum): Self = StObject.set(x, "VERTEX_ATTRIB_ARRAY_DIVISOR_ANGLE", value.asInstanceOf[js.Any])
+    inline def setVERTEX_ATTRIB_ARRAY_DIVISOR_ANGLE(value: `0x88FE`): Self = StObject.set(x, "VERTEX_ATTRIB_ARRAY_DIVISOR_ANGLE", value.asInstanceOf[js.Any])
     
     inline def setVertexAttribDivisorANGLE(value: (GLuint, GLuint) => Unit): Self = StObject.set(x, "vertexAttribDivisorANGLE", js.Any.fromFunction2(value))
   }

@@ -10,5 +10,11 @@ object clientsClaimMod {
   @js.native
   val ^ : js.Any = js.native
   
+  /**
+    * Claim any currently available clients once the service worker
+    * becomes active. This is normally used in conjunction with `skipWaiting()`.
+    *
+    * @memberof workbox-core
+    */
   inline def clientsClaim(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clientsClaim")().asInstanceOf[Unit]
 }

@@ -1,5 +1,6 @@
 package typings.chainsafeLibp2pGossipsub
 
+import typings.std.Map
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,6 +11,18 @@ object distSrcUtilsSetMod {
   @JSImport("@chainsafe/libp2p-gossipsub/dist/src/utils/set", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
+  
+  @JSImport("@chainsafe/libp2p-gossipsub/dist/src/utils/set", "MapDef")
+  @js.native
+  open class MapDef[K, V] protected ()
+    extends StObject
+       with Map[K, V] {
+    def this(getDefault: js.Function0[V]) = this()
+    
+    /* private */ val getDefault: Any = js.native
+    
+    def getOrDefault(key: K): V = js.native
+  }
   
   inline def removeFirstNItemsFromSet[T](superSet: Set[T], ineed: Double): Set[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("removeFirstNItemsFromSet")(superSet.asInstanceOf[js.Any], ineed.asInstanceOf[js.Any])).asInstanceOf[Set[T]]
   

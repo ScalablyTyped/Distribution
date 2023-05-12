@@ -5,8 +5,8 @@ import typings.devextreme.anon.Children
 import typings.devextreme.anon.SummaryProcess
 import typings.devextreme.anon.Value
 import typings.devextreme.mod.DevExpress.common.SortOrder
-import typings.devextreme.mod.DevExpress.common.charts.FilterType
-import typings.devextreme.mod.DevExpress.common.charts.SummaryType
+import typings.devextreme.mod.DevExpress.common.grids.FilterType
+import typings.devextreme.mod.DevExpress.common.grids.SummaryType
 import typings.devextreme.mod.DevExpress.data.PivotGridDataSource.PivotGridArea
 import typings.devextreme.mod.DevExpress.data.PivotGridDataSource.PivotGridDataType
 import typings.devextreme.mod.DevExpress.data.PivotGridDataSource.PivotGridGroupInterval
@@ -64,7 +64,7 @@ trait PivotGridDataSourceField extends StObject {
   /**
     * Specifies a custom post-processing function for summary values.
     */
-  var calculateSummaryValue: js.UndefOr[js.Function1[/* e */ dxPivotGridSummaryCell, Double]] = js.undefined
+  var calculateSummaryValue: js.UndefOr[js.Function1[/* e */ dxPivotGridSummaryCell, Double | Null]] = js.undefined
   
   /**
     * Specifies the field&apos;s caption to be displayed in the field chooser and on the field panel.
@@ -258,7 +258,7 @@ object PivotGridDataSourceField {
     
     inline def setCalculateCustomSummaryUndefined: Self = StObject.set(x, "calculateCustomSummary", js.undefined)
     
-    inline def setCalculateSummaryValue(value: /* e */ dxPivotGridSummaryCell => Double): Self = StObject.set(x, "calculateSummaryValue", js.Any.fromFunction1(value))
+    inline def setCalculateSummaryValue(value: /* e */ dxPivotGridSummaryCell => Double | Null): Self = StObject.set(x, "calculateSummaryValue", js.Any.fromFunction1(value))
     
     inline def setCalculateSummaryValueUndefined: Self = StObject.set(x, "calculateSummaryValue", js.undefined)
     

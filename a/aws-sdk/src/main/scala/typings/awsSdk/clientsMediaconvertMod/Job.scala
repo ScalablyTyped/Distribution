@@ -27,6 +27,11 @@ trait Job extends StObject {
   var BillingTagsSource: js.UndefOr[typings.awsSdk.clientsMediaconvertMod.BillingTagsSource] = js.undefined
   
   /**
+    * Prevent duplicate jobs from being created and ensure idempotency for your requests. A client request token can be any string that includes up to 64 ASCII characters. If you reuse a client request token within one minute of a successful request, the API returns the job details of the original request instead. For more information see https://docs.aws.amazon.com/mediaconvert/latest/apireference/idempotency.html.
+    */
+  var ClientRequestToken: js.UndefOr[string] = js.undefined
+  
+  /**
     * The time, in Unix epoch format in seconds, when the job got created.
     */
   var CreatedAt: js.UndefOr[js.Date] = js.undefined
@@ -130,6 +135,11 @@ trait Job extends StObject {
     * User-defined metadata that you want to associate with an MediaConvert job. You specify metadata in key/value pairs.
     */
   var UserMetadata: js.UndefOr[mapOfString] = js.undefined
+  
+  /**
+    * Contains any warning messages for the job. Use to help identify potential issues with your input, output, or job. For more information, see https://docs.aws.amazon.com/mediaconvert/latest/ug/warning_codes.html
+    */
+  var Warnings: js.UndefOr[listOfWarningGroup] = js.undefined
 }
 object Job {
   
@@ -156,6 +166,10 @@ object Job {
     inline def setBillingTagsSource(value: BillingTagsSource): Self = StObject.set(x, "BillingTagsSource", value.asInstanceOf[js.Any])
     
     inline def setBillingTagsSourceUndefined: Self = StObject.set(x, "BillingTagsSource", js.undefined)
+    
+    inline def setClientRequestToken(value: string): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
+    
+    inline def setClientRequestTokenUndefined: Self = StObject.set(x, "ClientRequestToken", js.undefined)
     
     inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     
@@ -242,5 +256,11 @@ object Job {
     inline def setUserMetadata(value: mapOfString): Self = StObject.set(x, "UserMetadata", value.asInstanceOf[js.Any])
     
     inline def setUserMetadataUndefined: Self = StObject.set(x, "UserMetadata", js.undefined)
+    
+    inline def setWarnings(value: listOfWarningGroup): Self = StObject.set(x, "Warnings", value.asInstanceOf[js.Any])
+    
+    inline def setWarningsUndefined: Self = StObject.set(x, "Warnings", js.undefined)
+    
+    inline def setWarningsVarargs(value: WarningGroup*): Self = StObject.set(x, "Warnings", js.Array(value*))
   }
 }

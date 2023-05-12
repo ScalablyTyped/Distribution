@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "csv-parse" : "5.3.2"
+      "csv-parse" : "5.3.10"
     }
   ],
   "test-dependencies" : [
     {
-      "csv-parse" : "5.3.2"
+      "csv-parse" : "5.3.10"
     }
   ],
   "compile-devDependencies" : [

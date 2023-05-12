@@ -17,7 +17,7 @@ trait DescribeWhatIfForecastResponse extends StObject {
   var EstimatedTimeRemainingInMinutes: js.UndefOr[Long] = js.undefined
   
   /**
-    * The quantiles at which probabilistic forecasts are generated. You can specify up to 5 quantiles per what-if forecast in the CreateWhatIfForecast operation. If you didn't specify quantiles, the default values are ["0.1", "0.5", "0.9"]. 
+    * The quantiles at which probabilistic forecasts are generated. You can specify up to five quantiles per what-if forecast in the CreateWhatIfForecast operation. If you didn't specify quantiles, the default values are ["0.1", "0.5", "0.9"]. 
     */
   var ForecastTypes: js.UndefOr[typings.awsSdk.clientsForecastserviceMod.ForecastTypes] = js.undefined
   

@@ -2,6 +2,7 @@ package typings.three
 
 import typings.three.anon.WidthSegments
 import typings.three.srcCoreBufferGeometryMod.BufferGeometry
+import typings.three.srcCoreBufferGeometryMod.NormalBufferAttributes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,12 +12,13 @@ object srcGeometriesPlaneGeometryMod {
   @JSImport("three/src/geometries/PlaneGeometry", "PlaneGeometry")
   @js.native
   /**
-    * @param [width=1] — Width of the sides on the X axis.
-    * @param [height=1] — Height of the sides on the Y axis.
-    * @param [widthSegments=1] — Number of segmented faces along the width of the sides.
-    * @param [heightSegments=1] — Number of segmented faces along the height of the sides.
+    * Create a new instance of {@link PlaneGeometry}
+    * @param width Width along the X axis. Expects a `Float`. Default `1`
+    * @param height Height along the Y axis. Expects a `Float`. Default `1`
+    * @param widthSegments Number of segmented faces along the width of the sides. Expects a `Integer`. Default `1`
+    * @param heightSegments Number of segmented faces along the height of the sides. Expects a `Integer`. Default `1`
     */
-  open class PlaneGeometry () extends BufferGeometry {
+  open class PlaneGeometry () extends BufferGeometry[NormalBufferAttributes] {
     def this(width: Double) = this()
     def this(width: Double, height: Double) = this()
     def this(width: Unit, height: Double) = this()
@@ -33,7 +35,19 @@ object srcGeometriesPlaneGeometryMod {
     def this(width: Unit, height: Unit, widthSegments: Double, heightSegments: Double) = this()
     def this(width: Unit, height: Unit, widthSegments: Unit, heightSegments: Double) = this()
     
-    var parameters: WidthSegments = js.native
+    /**
+      * An object with a property for each of the constructor parameters.
+      * @remarks Any modification after instantiation does not change the geometry.
+      */
+    val parameters: WidthSegments = js.native
+    
+    /**
+      * A Read-only _string_ to check if `this` object type.
+      * @remarks Sub-classes will update this value.
+      * @defaultValue `PlaneGeometry`
+      */
+    @JSName("type")
+    val type_PlaneGeometry: String | typings.three.threeStrings.PlaneGeometry = js.native
   }
   /* static members */
   object PlaneGeometry {
@@ -42,6 +56,7 @@ object srcGeometriesPlaneGeometryMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def fromJSON(data: Any): PlaneGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(data.asInstanceOf[js.Any]).asInstanceOf[PlaneGeometry]
+    /** @internal */
+    inline def fromJSON(data: js.Object): PlaneGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(data.asInstanceOf[js.Any]).asInstanceOf[PlaneGeometry]
   }
 }

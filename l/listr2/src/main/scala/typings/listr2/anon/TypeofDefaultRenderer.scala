@@ -1,26 +1,29 @@
 package typings.listr2.anon
 
+import typings.listr2.mod.ListrDefaultRendererOptions
+import typings.listr2.mod.ListrDefaultRendererTaskOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait TypeofDefaultRenderer extends StObject {
   
-  /** designates whether this renderer can output to a non-tty console */
   /* static member */
   var nonTTY: Boolean
   
-  /** renderer options for the defauult renderer */
   /* static member */
-  var rendererOptions: ClearOutput
+  var rendererOptions: ListrDefaultRendererOptions
   
-  /** per task options for the default renderer */
   /* static member */
-  var rendererTaskOptions: BottomBar
+  var rendererTaskOptions: ListrDefaultRendererTaskOptions
 }
 object TypeofDefaultRenderer {
   
-  inline def apply(nonTTY: Boolean, rendererOptions: ClearOutput, rendererTaskOptions: BottomBar): TypeofDefaultRenderer = {
+  inline def apply(
+    nonTTY: Boolean,
+    rendererOptions: ListrDefaultRendererOptions,
+    rendererTaskOptions: ListrDefaultRendererTaskOptions
+  ): TypeofDefaultRenderer = {
     val __obj = js.Dynamic.literal(nonTTY = nonTTY.asInstanceOf[js.Any], rendererOptions = rendererOptions.asInstanceOf[js.Any], rendererTaskOptions = rendererTaskOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofDefaultRenderer]
   }
@@ -30,8 +33,8 @@ object TypeofDefaultRenderer {
     
     inline def setNonTTY(value: Boolean): Self = StObject.set(x, "nonTTY", value.asInstanceOf[js.Any])
     
-    inline def setRendererOptions(value: ClearOutput): Self = StObject.set(x, "rendererOptions", value.asInstanceOf[js.Any])
+    inline def setRendererOptions(value: ListrDefaultRendererOptions): Self = StObject.set(x, "rendererOptions", value.asInstanceOf[js.Any])
     
-    inline def setRendererTaskOptions(value: BottomBar): Self = StObject.set(x, "rendererTaskOptions", value.asInstanceOf[js.Any])
+    inline def setRendererTaskOptions(value: ListrDefaultRendererTaskOptions): Self = StObject.set(x, "rendererTaskOptions", value.asInstanceOf[js.Any])
   }
 }

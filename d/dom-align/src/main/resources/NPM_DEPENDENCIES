@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "dom-align" : "1.12.3"
+      "dom-align" : "1.12.4"
     }
   ],
   "test-dependencies" : [
     {
-      "dom-align" : "1.12.3"
+      "dom-align" : "1.12.4"
     }
   ],
   "compile-devDependencies" : [

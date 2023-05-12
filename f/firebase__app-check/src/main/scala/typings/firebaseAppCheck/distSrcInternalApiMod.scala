@@ -39,6 +39,8 @@ object distSrcInternalApiMod {
   
   inline def formatDummyToken(tokenErrorData: Record[String, String]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatDummyToken")(tokenErrorData.asInstanceOf[js.Any]).asInstanceOf[String]
   
+  inline def getLimitedUseToken(appCheck: AppCheckService): js.Promise[AppCheckTokenResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLimitedUseToken")(appCheck.asInstanceOf[js.Any]).asInstanceOf[js.Promise[AppCheckTokenResult]]
+  
   inline def getToken(appCheck: AppCheckService): js.Promise[AppCheckTokenResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getToken")(appCheck.asInstanceOf[js.Any]).asInstanceOf[js.Promise[AppCheckTokenResult]]
   inline def getToken(appCheck: AppCheckService, forceRefresh: Boolean): js.Promise[AppCheckTokenResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getToken")(appCheck.asInstanceOf[js.Any], forceRefresh.asInstanceOf[js.Any])).asInstanceOf[js.Promise[AppCheckTokenResult]]
   

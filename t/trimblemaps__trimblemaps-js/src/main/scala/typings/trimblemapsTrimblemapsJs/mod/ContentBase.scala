@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class ContentBase ()
   extends StObject
      with ContentInterface {
+  def this(options: ContentOptions) = this()
   
   /**
     * Add the layer to a map.

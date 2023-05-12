@@ -34,7 +34,7 @@ trait KantarWatermarkSettings extends StObject {
   /**
     * Provide the HTTPS endpoint to the Kantar server. You should get this endpoint from Kantar.
     */
-  var KantarServerUrl: js.UndefOr[stringPatternHttpsKantarmediaCom] = js.undefined
+  var KantarServerUrl: js.UndefOr[stringPatternHttpsKantarmediaComFr] = js.undefined
   
   /**
     * Optional. Specify the Amazon S3 bucket where you want MediaConvert to store your Kantar watermark XML logs. When you don't specify a bucket, MediaConvert doesn't save these logs. Note that your MediaConvert service role must provide access to this location. For more information, see https://docs.aws.amazon.com/mediaconvert/latest/ug/iam-role.html
@@ -101,7 +101,7 @@ object KantarWatermarkSettings {
     
     inline def setKantarLicenseIdUndefined: Self = StObject.set(x, "KantarLicenseId", js.undefined)
     
-    inline def setKantarServerUrl(value: stringPatternHttpsKantarmediaCom): Self = StObject.set(x, "KantarServerUrl", value.asInstanceOf[js.Any])
+    inline def setKantarServerUrl(value: stringPatternHttpsKantarmediaComFr): Self = StObject.set(x, "KantarServerUrl", value.asInstanceOf[js.Any])
     
     inline def setKantarServerUrlUndefined: Self = StObject.set(x, "KantarServerUrl", js.undefined)
     

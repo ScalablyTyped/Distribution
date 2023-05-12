@@ -64,7 +64,7 @@ object typesModulesVirtualMod {
     /**
       * Append slide. `slides` can be a single slide item or array with such slides.
       *
-      * @note Only for Core version (in React, Svelte, Vue & Angular it should be done by modifying slides array/data/source)
+      * @note Only for Core version (in React & Vue it should be done by modifying slides array/data/source)
       */
     def appendSlide(slide: HTMLElement): Unit = js.native
     
@@ -83,21 +83,21 @@ object typesModulesVirtualMod {
     /**
       * Prepend slide. `slides` can be a single slide item or array with such slides.
       *
-      * @note Only for Core version (in React, Svelte, Vue & Angular it should be done by modifying slides array/data/source)
+      * @note Only for Core version (in React & Vue it should be done by modifying slides array/data/source)
       */
     def prependSlide(slide: HTMLElement): Unit = js.native
     
     /**
       * Remove all slides
       *
-      * @note Only for Core version (in React, Svelte, Vue & Angular it should be done by modifying slides array/data/source)
+      * @note Only for Core version (in React & Vue it should be done by modifying slides array/data/source)
       */
     def removeAllSlides(): Unit = js.native
     
     /**
       * Remove specific slide or slides. `slideIndexes` can be a number with slide index to remove or array with indexes.
       *
-      * @note Only for Core version (in React, Svelte, Vue & Angular it should be done by modifying slides array/data/source)
+      * @note Only for Core version (in React & Vue it should be done by modifying slides array/data/source)
       */
     def removeSlide(slideIndexes: js.Array[Double]): Unit = js.native
     
@@ -167,7 +167,7 @@ object typesModulesVirtualMod {
     var renderExternalUpdate: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * Function to render slide. As an argument it accepts current slide item for `slides` array and index number of the current slide. Function must return an outter HTML of the swiper slide.
+      * Function to render slide. As an argument it accepts current slide item for `slides` array and index number of the current slide. Function must return an outer HTML of the swiper slide or slide HTML element.
       *
       * @default null
       */

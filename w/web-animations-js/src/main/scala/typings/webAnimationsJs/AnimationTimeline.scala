@@ -1,5 +1,6 @@
 package typings.webAnimationsJs
 
+import typings.std.CSSNumberish
 import typings.std.KeyframeEffect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AnimationTimeline extends StObject {
   
-  val currentTime: Double | Null
+  val currentTime: CSSNumberish | Null
   
   def getAnimations(): js.Array[Animation]
   
@@ -23,7 +24,7 @@ object AnimationTimeline {
   @scala.inline
   implicit open class MutableBuilder[Self <: AnimationTimeline] (val x: Self) extends AnyVal {
     
-    inline def setCurrentTime(value: Double): Self = StObject.set(x, "currentTime", value.asInstanceOf[js.Any])
+    inline def setCurrentTime(value: CSSNumberish): Self = StObject.set(x, "currentTime", value.asInstanceOf[js.Any])
     
     inline def setCurrentTimeNull: Self = StObject.set(x, "currentTime", null)
     

@@ -348,20 +348,20 @@ object distEsmTypesMod {
   
   trait QueryMethods extends StObject {
     
-    def after(date: js.Date, inc: Boolean): js.Date
+    def after(date: js.Date, inc: Boolean): js.Date | Null
     
     def all(): js.Array[js.Date]
     
-    def before(date: js.Date, inc: Boolean): js.Date
+    def before(date: js.Date, inc: Boolean): js.Date | Null
     
     def between(after: js.Date, before: js.Date, inc: Boolean): js.Array[js.Date]
   }
   object QueryMethods {
     
     inline def apply(
-      after: (js.Date, Boolean) => js.Date,
+      after: (js.Date, Boolean) => js.Date | Null,
       all: () => js.Array[js.Date],
-      before: (js.Date, Boolean) => js.Date,
+      before: (js.Date, Boolean) => js.Date | Null,
       between: (js.Date, js.Date, Boolean) => js.Array[js.Date]
     ): QueryMethods = {
       val __obj = js.Dynamic.literal(after = js.Any.fromFunction2(after), all = js.Any.fromFunction0(all), before = js.Any.fromFunction2(before), between = js.Any.fromFunction3(between))
@@ -371,11 +371,11 @@ object distEsmTypesMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: QueryMethods] (val x: Self) extends AnyVal {
       
-      inline def setAfter(value: (js.Date, Boolean) => js.Date): Self = StObject.set(x, "after", js.Any.fromFunction2(value))
+      inline def setAfter(value: (js.Date, Boolean) => js.Date | Null): Self = StObject.set(x, "after", js.Any.fromFunction2(value))
       
       inline def setAll(value: () => js.Array[js.Date]): Self = StObject.set(x, "all", js.Any.fromFunction0(value))
       
-      inline def setBefore(value: (js.Date, Boolean) => js.Date): Self = StObject.set(x, "before", js.Any.fromFunction2(value))
+      inline def setBefore(value: (js.Date, Boolean) => js.Date | Null): Self = StObject.set(x, "before", js.Any.fromFunction2(value))
       
       inline def setBetween(value: (js.Date, js.Date, Boolean) => js.Array[js.Date]): Self = StObject.set(x, "between", js.Any.fromFunction3(value))
     }

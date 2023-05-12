@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GetParametersQueryProtected extends StObject {
   
+  /** List branches */
   var get: ParametersQueryProtected
 }
 object GetParametersQueryProtected {

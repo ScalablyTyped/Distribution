@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class SplitZipReader protected () extends SplitDataReader {
   /**
     * Creates the {@link Reader} instance
-    * 
+    *
     * @param value The data to read.
     */
   def this(value: js.Array[ReadableReader | ReadableStream[Any] | Reader[Any]]) = this()

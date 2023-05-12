@@ -8,11 +8,11 @@ trait ParametersQueryExclude extends StObject {
   
   var parameters: QueryExclude
   
-  var responses: `200Content89`
+  var responses: `200Content93`
 }
 object ParametersQueryExclude {
   
-  inline def apply(parameters: QueryExclude, responses: `200Content89`): ParametersQueryExclude = {
+  inline def apply(parameters: QueryExclude, responses: `200Content93`): ParametersQueryExclude = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersQueryExclude]
   }
@@ -22,6 +22,6 @@ object ParametersQueryExclude {
     
     inline def setParameters(value: QueryExclude): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `200Content89`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `200Content93`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

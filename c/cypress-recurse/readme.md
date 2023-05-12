@@ -1,7 +1,7 @@
 
 # Scala.js typings for cypress-recurse
 
-Typings are for version 1.23.0
+Typings are for version 1.35.0
 
 ## Library description:
 A way to re-run Cypress commands until a predicate function returns true

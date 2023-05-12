@@ -26,7 +26,7 @@ trait GPUSamplerDescriptor
   
   var minFilter: js.UndefOr[GPUFilterMode] = js.undefined
   
-  var mipmapFilter: js.UndefOr[GPUFilterMode] = js.undefined
+  var mipmapFilter: js.UndefOr[GPUMipmapFilterMode] = js.undefined
 }
 object GPUSamplerDescriptor {
   
@@ -74,7 +74,7 @@ object GPUSamplerDescriptor {
     
     inline def setMinFilterUndefined: Self = StObject.set(x, "minFilter", js.undefined)
     
-    inline def setMipmapFilter(value: GPUFilterMode): Self = StObject.set(x, "mipmapFilter", value.asInstanceOf[js.Any])
+    inline def setMipmapFilter(value: GPUMipmapFilterMode): Self = StObject.set(x, "mipmapFilter", value.asInstanceOf[js.Any])
     
     inline def setMipmapFilterUndefined: Self = StObject.set(x, "mipmapFilter", js.undefined)
   }

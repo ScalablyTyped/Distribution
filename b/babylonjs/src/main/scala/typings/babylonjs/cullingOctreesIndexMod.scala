@@ -17,7 +17,7 @@ object cullingOctreesIndexMod {
     extends typings.babylonjs.cullingOctreesOctreeMod.Octree[T] {
     /**
       * Creates a octree
-      * @see https://doc.babylonjs.com/how_to/optimizing_your_scene_with_octrees
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/scene/optimizeOctrees
       * @param creationFunc function to be used to instantiate the octree
       * @param maxBlockCapacity defines the maximum number of meshes you want on your octree's leaves (default: 64)
       * @param maxDepth defines the maximum depth (sub-levels) for your octree. Default value is 2, which means 8 8 8 = 512 blocks :) (This parameter takes precedence over capacity.)
@@ -163,7 +163,7 @@ object cullingOctreesIndexMod {
         * @param maxDepth defines the maximum depth to use (no more than 2 levels by default)
         * @returns the new octree
         * @see https://www.babylonjs-playground.com/#NA4OQ#12
-        * @see https://doc.babylonjs.com/how_to/optimizing_your_scene_with_octrees
+        * @see https://doc.babylonjs.com/features/featuresDeepDive/scene/optimizeOctrees
         */
       def createOrUpdateSubmeshesOctree(): typings.babylonjs.cullingOctreesOctreeMod.Octree[SubMesh] = js.native
       def createOrUpdateSubmeshesOctree(maxCapacity: Double): typings.babylonjs.cullingOctreesOctreeMod.Octree[SubMesh] = js.native
@@ -186,7 +186,7 @@ object cullingOctreesIndexMod {
       
       /**
         * Creates or updates the octree used to boost selection (picking)
-        * @see https://doc.babylonjs.com/how_to/optimizing_your_scene_with_octrees
+        * @see https://doc.babylonjs.com/features/featuresDeepDive/scene/optimizeOctrees
         * @param maxCapacity defines the maximum capacity per leaf
         * @param maxDepth defines the maximum depth of the octree
         * @returns an octree of AbstractMesh
@@ -198,7 +198,7 @@ object cullingOctreesIndexMod {
       
       /**
         * Gets the octree used to boost mesh selection (picking)
-        * @see https://doc.babylonjs.com/how_to/optimizing_your_scene_with_octrees
+        * @see https://doc.babylonjs.com/features/featuresDeepDive/scene/optimizeOctrees
         */
       var selectionOctree: typings.babylonjs.cullingOctreesOctreeMod.Octree[AbstractMesh] = js.native
     }

@@ -7,6 +7,7 @@ import typings.chromeLauncher.chromeLauncherStrings.error
 import typings.chromeLauncher.chromeLauncherStrings.info
 import typings.chromeLauncher.chromeLauncherStrings.silent
 import typings.chromeLauncher.chromeLauncherStrings.verbose
+import typings.chromeLauncher.chromeLauncherStrings.warn
 import typings.node.childProcessMod.ChildProcess
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -153,7 +154,7 @@ object distChromeLauncherMod {
   
   trait LaunchedChrome extends StObject {
     
-    def kill(): js.Promise[Unit]
+    def kill(): Unit
     
     var pid: Double
     
@@ -163,7 +164,7 @@ object distChromeLauncherMod {
   }
   object LaunchedChrome {
     
-    inline def apply(kill: () => js.Promise[Unit], pid: Double, port: Double, process: ChildProcess): LaunchedChrome = {
+    inline def apply(kill: () => Unit, pid: Double, port: Double, process: ChildProcess): LaunchedChrome = {
       val __obj = js.Dynamic.literal(kill = js.Any.fromFunction0(kill), pid = pid.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], process = process.asInstanceOf[js.Any])
       __obj.asInstanceOf[LaunchedChrome]
     }
@@ -171,7 +172,7 @@ object distChromeLauncherMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: LaunchedChrome] (val x: Self) extends AnyVal {
       
-      inline def setKill(value: () => js.Promise[Unit]): Self = StObject.set(x, "kill", js.Any.fromFunction0(value))
+      inline def setKill(value: () => Unit): Self = StObject.set(x, "kill", js.Any.fromFunction0(value))
       
       inline def setPid(value: Double): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
       
@@ -221,7 +222,7 @@ object distChromeLauncherMod {
     
     var ignoreDefaultFlags: js.UndefOr[Boolean] = js.undefined
     
-    var logLevel: js.UndefOr[verbose | info | error | silent] = js.undefined
+    var logLevel: js.UndefOr[verbose | info | error | warn | silent] = js.undefined
     
     var maxConnectionRetries: js.UndefOr[Double] = js.undefined
     
@@ -269,7 +270,7 @@ object distChromeLauncherMod {
       
       inline def setIgnoreDefaultFlagsUndefined: Self = StObject.set(x, "ignoreDefaultFlags", js.undefined)
       
-      inline def setLogLevel(value: verbose | info | error | silent): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
+      inline def setLogLevel(value: verbose | info | error | warn | silent): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
       
       inline def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
       

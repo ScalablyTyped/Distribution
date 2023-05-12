@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class Scene protected () extends StObject {
   def this(options: Canvas) = this()
-  def this(options: Canvas, depthPlaneEllipsoidOffset: Double) = this()
   
   /**
     * The background color, which is only visible if there is no sky box, i.e., {@link Scene#skyBox} is undefined.
@@ -584,7 +583,7 @@ open class Scene protected () extends StObject {
   
   /**
     * Update and render the scene. It is usually not necessary to call this function
-    * directly because {@link CesiumWidget} or {@link Viewer} do it automatically.
+    * directly because {@link CesiumWidget} will do it automatically.
     * @param [time] - The simulation time at which to render.
     */
   def render(): Unit = js.native
@@ -682,6 +681,24 @@ open class Scene protected () extends StObject {
     * Gets the controller for camera input handling.
     */
   val screenSpaceCameraController: ScreenSpaceCameraController = js.native
+  
+  /**
+    * Update the terrain providing surface geometry for the globe.
+    * @example
+    * // Use Cesium World Terrain
+    * scene.setTerrain(Cesium.Terrain.fromWorldTerrain());
+    * @example
+    * // Use a custom terrain provider
+    * const terrain = new Cesium.Terrain(Cesium.CesiumTerrainProvider.fromUrl("https://myTestTerrain.com"));
+    * scene.setTerrain(terrain);
+    *
+    * terrain.errorEvent.addEventListener(error => {
+    *   alert(`Encountered an error while creating terrain! ${error}`);
+    * });
+    * @param terrain - The terrain provider async helper
+    * @returns terrain The terrain provider async helper
+    */
+  def setTerrain(terrain: Terrain): Terrain = js.native
   
   /**
     * The shadow map for the scene's light source. When enabled, models, primitives, and the globe may cast and receive shadows.

@@ -1,6 +1,6 @@
 package typings.vueCompilerSfc.mod
 
-import typings.sourceMap.mod.RawSourceMap
+import typings.sourceMapJs.mod.RawSourceMap
 import typings.vueCompilerCore.mod.CompilerError
 import typings.vueCompilerCore.mod.RootNode
 import org.scalablytyped.runtime.StObject

@@ -2,11 +2,20 @@ package typings.luminoDragdrop
 
 import typings.luminoCoreutils.mod.MimeData
 import typings.luminoDisposable.mod.IDisposable
+import typings.luminoDragdrop.luminoDragdropStrings.`lm-dragenter`
+import typings.luminoDragdrop.luminoDragdropStrings.`lm-dragexit`
+import typings.luminoDragdrop.luminoDragdropStrings.`lm-dragleave`
+import typings.luminoDragdrop.luminoDragdropStrings.`lm-dragover`
+import typings.luminoDragdrop.luminoDragdropStrings.`lm-drop`
+import typings.luminoDragdrop.mod.Drag.DropAction
 import typings.luminoDragdrop.mod.Drag.IOptions
+import typings.luminoDragdrop.mod.Drag.SupportedActions
 import typings.std.Document
+import typings.std.DragEvent
+import typings.std.Element
 import typings.std.Event
 import typings.std.HTMLElement
-import typings.std.MouseEvent
+import typings.std.PointerEvent
 import typings.std.ShadowRoot
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -59,14 +68,14 @@ object mod {
     /* private */ var _evtKeyDown: Any = js.native
     
     /**
-      * Handle the `'mousemove'` event for the drag object.
+      * Handle the `'pointermove'` event for the drag object.
       */
-    /* private */ var _evtMouseMove: Any = js.native
+    /* private */ var _evtPointerMove: Any = js.native
     
     /**
-      * Handle the `'mouseup'` event for the drag object.
+      * Handle the `'pointerup'` event for the drag object.
       */
-    /* private */ var _evtMouseUp: Any = js.native
+    /* private */ var _evtPointerUp: Any = js.native
     
     /**
       * Finalize the drag operation and resolve the drag promise.
@@ -150,6 +159,11 @@ object mod {
       */
     /* CompleteClass */
     override val isDisposed: Boolean = js.native
+    /**
+      * Test whether the drag object is disposed.
+      */
+    @JSName("isDisposed")
+    def isDisposed_MDrag: Boolean = js.native
     
     /**
       * The mime data for the drag object.
@@ -208,6 +222,120 @@ object mod {
     val ^ : js.Any = js.native
     
     /**
+      * A custom event used for drag-drop operations.
+      *
+      * #### Notes
+      * In order to receive `'lm-dragover'`, `'lm-dragleave'`, or `'lm-drop'`
+      * events, a drop target must cancel the `'lm-dragenter'` event by
+      * calling the event's `preventDefault()` method.
+      */
+    @JSImport("@lumino/dragdrop", "Drag.Event")
+    @js.native
+    open class Event protected ()
+      extends StObject
+         with DragEvent {
+      def this(event: PointerEvent, options: typings.luminoDragdrop.mod.Drag.Event.IOptions) = this()
+      
+      /**
+        * The drop action supported or taken by the drop target.
+        *
+        * #### Notes
+        * At the start of each event, this value will be `'none'`. During a
+        * `'lm-dragover'` event, the drop target must set this value to one
+        * of the supported actions, or the drop event will not occur.
+        *
+        * When handling the drop event, the drop target should set this
+        * to the action which was *actually* taken. This value will be
+        * reported back to the drag initiator.
+        */
+      var dropAction: DropAction = js.native
+      
+      /**
+        * The mime data associated with the event.
+        *
+        * #### Notes
+        * This is mime data provided by the drag initiator. Drop targets
+        * should use this data to determine if they can handle the drop.
+        */
+      val mimeData: MimeData = js.native
+      
+      /**
+        * The drop action proposed by the drag initiator.
+        *
+        * #### Notes
+        * This is the action which is *preferred* by the drag initiator. The
+        * drop target is not required to perform this action, but should if
+        * it all possible.
+        */
+      val proposedAction: DropAction = js.native
+      
+      /**
+        * The source object of the drag, as provided by the drag initiator.
+        *
+        * #### Notes
+        * For advanced applications, the drag initiator may wish to expose
+        * a source object to the drop targets. That will be provided here
+        * if given by the drag initiator, otherwise it will be `null`.
+        */
+      val source: Any = js.native
+      
+      /**
+        * The drop actions supported by the drag initiator.
+        *
+        * #### Notes
+        * If the `dropAction` is not set to one of the supported actions
+        * during the `'lm-dragover'` event, the drop event will not occur.
+        */
+      val supportedActions: SupportedActions = js.native
+    }
+    /**
+      * The namespace for the `Event` class statics.
+      */
+    object Event {
+      
+      /**
+        * An options object for initializing a `Drag` object.
+        */
+      trait IOptions extends StObject {
+        
+        /**
+          * The drag object to use for seeding the drag data.
+          */
+        var drag: Drag
+        
+        /**
+          * The related target for the event, or `null`.
+          */
+        var related: Element | Null
+        
+        /**
+          * The drag event type.
+          */
+        var `type`: `lm-dragenter` | `lm-dragexit` | `lm-dragleave` | `lm-dragover` | `lm-drop`
+      }
+      object IOptions {
+        
+        inline def apply(drag: Drag, `type`: `lm-dragenter` | `lm-dragexit` | `lm-dragleave` | `lm-dragover` | `lm-drop`): typings.luminoDragdrop.mod.Drag.Event.IOptions = {
+          val __obj = js.Dynamic.literal(drag = drag.asInstanceOf[js.Any], related = null)
+          __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+          __obj.asInstanceOf[typings.luminoDragdrop.mod.Drag.Event.IOptions]
+        }
+        
+        @scala.inline
+        implicit open class MutableBuilder[Self <: typings.luminoDragdrop.mod.Drag.Event.IOptions] (val x: Self) extends AnyVal {
+          
+          inline def setDrag(value: Drag): Self = StObject.set(x, "drag", value.asInstanceOf[js.Any])
+          
+          inline def setRelated(value: Element): Self = StObject.set(x, "related", value.asInstanceOf[js.Any])
+          
+          inline def setRelatedNull: Self = StObject.set(x, "related", null)
+          
+          inline def setType(value: `lm-dragenter` | `lm-dragexit` | `lm-dragleave` | `lm-dragover` | `lm-drop`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        }
+      }
+    }
+    
+    /**
       * Override the cursor icon for the entire document.
       *
       * @param cursor - The string representing the cursor style.
@@ -236,6 +364,27 @@ object mod {
     inline def overrideCursor(cursor: String): IDisposable = ^.asInstanceOf[js.Dynamic].applyDynamic("overrideCursor")(cursor.asInstanceOf[js.Any]).asInstanceOf[IDisposable]
     inline def overrideCursor(cursor: String, doc: Document): IDisposable = (^.asInstanceOf[js.Dynamic].applyDynamic("overrideCursor")(cursor.asInstanceOf[js.Any], doc.asInstanceOf[js.Any])).asInstanceOf[IDisposable]
     inline def overrideCursor(cursor: String, doc: ShadowRoot): IDisposable = (^.asInstanceOf[js.Dynamic].applyDynamic("overrideCursor")(cursor.asInstanceOf[js.Any], doc.asInstanceOf[js.Any])).asInstanceOf[IDisposable]
+    
+    /**
+      * A type alias which defines the possible independent drop actions.
+      */
+    /* Rewritten from type alias, can be one of: 
+      - typings.luminoDragdrop.luminoDragdropStrings.none
+      - typings.luminoDragdrop.luminoDragdropStrings.copy
+      - typings.luminoDragdrop.luminoDragdropStrings.link
+      - typings.luminoDragdrop.luminoDragdropStrings.move
+    */
+    trait DropAction extends StObject
+    object DropAction {
+      
+      inline def copy: typings.luminoDragdrop.luminoDragdropStrings.copy = "copy".asInstanceOf[typings.luminoDragdrop.luminoDragdropStrings.copy]
+      
+      inline def link: typings.luminoDragdrop.luminoDragdropStrings.link = "link".asInstanceOf[typings.luminoDragdrop.luminoDragdropStrings.link]
+      
+      inline def move: typings.luminoDragdrop.luminoDragdropStrings.move = "move".asInstanceOf[typings.luminoDragdrop.luminoDragdropStrings.move]
+      
+      inline def none: typings.luminoDragdrop.luminoDragdropStrings.none = "none".asInstanceOf[typings.luminoDragdrop.luminoDragdropStrings.none]
+    }
     
     /**
       * An options object for initializing a `Drag` object.
@@ -340,111 +489,40 @@ object mod {
         inline def setSupportedActionsUndefined: Self = StObject.set(x, "supportedActions", js.undefined)
       }
     }
+    
+    /**
+      * A type alias which defines the possible supported drop actions.
+      */
+    /* Rewritten from type alias, can be one of: 
+      - typings.luminoDragdrop.luminoDragdropStrings.`copy-link`
+      - typings.luminoDragdrop.luminoDragdropStrings.`copy-move`
+      - typings.luminoDragdrop.luminoDragdropStrings.`link-move`
+      - typings.luminoDragdrop.luminoDragdropStrings.all
+      - typings.luminoDragdrop.luminoDragdropStrings.none
+      - typings.luminoDragdrop.luminoDragdropStrings.copy
+      - typings.luminoDragdrop.luminoDragdropStrings.link
+      - typings.luminoDragdrop.luminoDragdropStrings.move
+    */
+    trait SupportedActions extends StObject
+    object SupportedActions {
+      
+      inline def all: typings.luminoDragdrop.luminoDragdropStrings.all = "all".asInstanceOf[typings.luminoDragdrop.luminoDragdropStrings.all]
+      
+      inline def copy: typings.luminoDragdrop.luminoDragdropStrings.copy = "copy".asInstanceOf[typings.luminoDragdrop.luminoDragdropStrings.copy]
+      
+      inline def `copy-link`: typings.luminoDragdrop.luminoDragdropStrings.`copy-link` = "copy-link".asInstanceOf[typings.luminoDragdrop.luminoDragdropStrings.`copy-link`]
+      
+      inline def `copy-move`: typings.luminoDragdrop.luminoDragdropStrings.`copy-move` = "copy-move".asInstanceOf[typings.luminoDragdrop.luminoDragdropStrings.`copy-move`]
+      
+      inline def link: typings.luminoDragdrop.luminoDragdropStrings.link = "link".asInstanceOf[typings.luminoDragdrop.luminoDragdropStrings.link]
+      
+      inline def `link-move`: typings.luminoDragdrop.luminoDragdropStrings.`link-move` = "link-move".asInstanceOf[typings.luminoDragdrop.luminoDragdropStrings.`link-move`]
+      
+      inline def move: typings.luminoDragdrop.luminoDragdropStrings.move = "move".asInstanceOf[typings.luminoDragdrop.luminoDragdropStrings.move]
+      
+      inline def none: typings.luminoDragdrop.luminoDragdropStrings.none = "none".asInstanceOf[typings.luminoDragdrop.luminoDragdropStrings.none]
+    }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.luminoDragdrop.luminoDragdropStrings.none
-    - typings.luminoDragdrop.luminoDragdropStrings.copy
-    - typings.luminoDragdrop.luminoDragdropStrings.link
-    - typings.luminoDragdrop.luminoDragdropStrings.move
-  */
-  trait DropAction extends StObject
-  object DropAction {
-    
-    inline def copy: typings.luminoDragdrop.luminoDragdropStrings.copy = "copy".asInstanceOf[typings.luminoDragdrop.luminoDragdropStrings.copy]
-    
-    inline def link: typings.luminoDragdrop.luminoDragdropStrings.link = "link".asInstanceOf[typings.luminoDragdrop.luminoDragdropStrings.link]
-    
-    inline def move: typings.luminoDragdrop.luminoDragdropStrings.move = "move".asInstanceOf[typings.luminoDragdrop.luminoDragdropStrings.move]
-    
-    inline def none: typings.luminoDragdrop.luminoDragdropStrings.none = "none".asInstanceOf[typings.luminoDragdrop.luminoDragdropStrings.none]
-  }
-  
-  @js.native
-  trait IDragEvent
-    extends StObject
-       with MouseEvent {
-    
-    /**
-      * The drop action supported or taken by the drop target.
-      *
-      * #### Notes
-      * At the start of each event, this value will be `'none'`. During a
-      * `'lm-dragover'` event, the drop target must set this value to one
-      * of the supported actions, or the drop event will not occur.
-      *
-      * When handling the drop event, the drop target should set this
-      * to the action which was *actually* taken. This value will be
-      * reported back to the drag initiator.
-      */
-    var dropAction: DropAction = js.native
-    
-    /**
-      * The mime data associated with the event.
-      *
-      * #### Notes
-      * This is mime data provided by the drag initiator. Drop targets
-      * should use this data to determine if they can handle the drop.
-      */
-    val mimeData: MimeData = js.native
-    
-    /**
-      * The drop action proposed by the drag initiator.
-      *
-      * #### Notes
-      * This is the action which is *preferred* by the drag initiator. The
-      * drop target is not required to perform this action, but should if
-      * it all possible.
-      */
-    val proposedAction: DropAction = js.native
-    
-    /**
-      * The source object of the drag, as provided by the drag initiator.
-      *
-      * #### Notes
-      * For advanced applications, the drag initiator may wish to expose
-      * a source object to the drop targets. That will be provided here
-      * if given by the drag initiator, otherwise it will be `null`.
-      */
-    val source: Any = js.native
-    
-    /**
-      * The drop actions supported by the drag initiator.
-      *
-      * #### Notes
-      * If the `dropAction` is not set to one of the supported actions
-      * during the `'lm-dragover'` event, the drop event will not occur.
-      */
-    val supportedActions: SupportedActions = js.native
-  }
-  
-  /* Rewritten from type alias, can be one of: 
-    - typings.luminoDragdrop.luminoDragdropStrings.`copy-link`
-    - typings.luminoDragdrop.luminoDragdropStrings.`copy-move`
-    - typings.luminoDragdrop.luminoDragdropStrings.`link-move`
-    - typings.luminoDragdrop.luminoDragdropStrings.all
-    - typings.luminoDragdrop.luminoDragdropStrings.none
-    - typings.luminoDragdrop.luminoDragdropStrings.copy
-    - typings.luminoDragdrop.luminoDragdropStrings.link
-    - typings.luminoDragdrop.luminoDragdropStrings.move
-  */
-  trait SupportedActions extends StObject
-  object SupportedActions {
-    
-    inline def all: typings.luminoDragdrop.luminoDragdropStrings.all = "all".asInstanceOf[typings.luminoDragdrop.luminoDragdropStrings.all]
-    
-    inline def copy: typings.luminoDragdrop.luminoDragdropStrings.copy = "copy".asInstanceOf[typings.luminoDragdrop.luminoDragdropStrings.copy]
-    
-    inline def `copy-link`: typings.luminoDragdrop.luminoDragdropStrings.`copy-link` = "copy-link".asInstanceOf[typings.luminoDragdrop.luminoDragdropStrings.`copy-link`]
-    
-    inline def `copy-move`: typings.luminoDragdrop.luminoDragdropStrings.`copy-move` = "copy-move".asInstanceOf[typings.luminoDragdrop.luminoDragdropStrings.`copy-move`]
-    
-    inline def link: typings.luminoDragdrop.luminoDragdropStrings.link = "link".asInstanceOf[typings.luminoDragdrop.luminoDragdropStrings.link]
-    
-    inline def `link-move`: typings.luminoDragdrop.luminoDragdropStrings.`link-move` = "link-move".asInstanceOf[typings.luminoDragdrop.luminoDragdropStrings.`link-move`]
-    
-    inline def move: typings.luminoDragdrop.luminoDragdropStrings.move = "move".asInstanceOf[typings.luminoDragdrop.luminoDragdropStrings.move]
-    
-    inline def none: typings.luminoDragdrop.luminoDragdropStrings.none = "none".asInstanceOf[typings.luminoDragdrop.luminoDragdropStrings.none]
-  }
+  type IDragEvent = typings.luminoDragdrop.mod.Drag.Event
 }

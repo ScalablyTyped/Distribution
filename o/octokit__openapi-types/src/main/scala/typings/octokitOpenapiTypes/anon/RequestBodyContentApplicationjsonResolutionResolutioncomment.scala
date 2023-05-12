@@ -10,14 +10,14 @@ trait RequestBodyContentApplicationjsonResolutionResolutioncomment extends StObj
   
   var requestBody: ContentApplicationjsonResolutionResolutioncomment
   
-  var responses: `404422503`
+  var responses: `200ContentApplicationjsonPushprotectionbypassedat`
 }
 object RequestBodyContentApplicationjsonResolutionResolutioncomment {
   
   inline def apply(
     parameters: PathAlertnumberOwnerRepo,
     requestBody: ContentApplicationjsonResolutionResolutioncomment,
-    responses: `404422503`
+    responses: `200ContentApplicationjsonPushprotectionbypassedat`
   ): RequestBodyContentApplicationjsonResolutionResolutioncomment = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], requestBody = requestBody.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestBodyContentApplicationjsonResolutionResolutioncomment]
@@ -30,6 +30,6 @@ object RequestBodyContentApplicationjsonResolutionResolutioncomment {
     
     inline def setRequestBody(value: ContentApplicationjsonResolutionResolutioncomment): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `404422503`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `200ContentApplicationjsonPushprotectionbypassedat`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

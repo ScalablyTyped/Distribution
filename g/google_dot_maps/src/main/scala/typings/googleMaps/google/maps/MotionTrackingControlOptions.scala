@@ -4,16 +4,13 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Options for the rendering of the motion tracking control.
-  */
 trait MotionTrackingControlOptions extends StObject {
   
   /**
     * Position id. This is used to specify the position of this control on the
     * panorama. The default position is <code>RIGHT_BOTTOM</code>.
     */
-  var position: js.UndefOr[ControlPosition | Null] = js.undefined
+  var position: js.UndefOr[Null | ControlPosition] = js.undefined
 }
 object MotionTrackingControlOptions {
   

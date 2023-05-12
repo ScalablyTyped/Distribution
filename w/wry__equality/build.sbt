@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "wry__equality"
-version := "0.5.3-18e14a"
+version := "0.5.5-0cdc31"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

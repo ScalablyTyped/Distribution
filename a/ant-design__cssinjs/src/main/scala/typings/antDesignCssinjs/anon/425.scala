@@ -1,6 +1,7 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.MsScrollbarHighlightColor
+import typings.antDesignCssinjs.esKeyframesMod.default
+import typings.csstype.mod.Property.AnimationName
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,13 +12,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `425` extends StObject {
   
   var value: js.UndefOr[
-    MsScrollbarHighlightColor | (js.Array[
+    AnimationName | (js.Array[
       (Extract[
-        js.UndefOr[
-          MsScrollbarHighlightColor | js.Array[NonNullable[js.UndefOr[MsScrollbarHighlightColor]]]
-        ], 
+        js.UndefOr[AnimationName | js.Array[NonNullable[js.UndefOr[AnimationName]]] | default], 
         String
-      ]) | NonNullable[js.UndefOr[MsScrollbarHighlightColor]]
-    ])
+      ]) | NonNullable[js.UndefOr[AnimationName]]
+    ]) | default
   ] = js.native
 }

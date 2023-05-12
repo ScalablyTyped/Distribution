@@ -8,13 +8,13 @@ import typings.std.Record
 import typings.xstate.anon.Activities
 import typings.xstate.anon.Context
 import typings.xstate.anon.DataAny
-import typings.xstate.anon.Delays
 import typings.xstate.anon.Guards
 import typings.xstate.anon.Services
 import typings.xstate.anon.TypeString
 import typings.xstate.anon.`0`
 import typings.xstate.anon.`1`
 import typings.xstate.anon.`2`
+import typings.xstate.anon.`3`
 import typings.xstate.libInterpreterMod.Interpreter
 import typings.xstate.libStateMod.State
 import typings.xstate.libStateNodeMod.StateNode
@@ -36,17 +36,17 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type Action[TContext, TEvent /* <: EventObject */] = ActionType | (ActionObject[TContext, TEvent]) | (ActionFunction[TContext, TEvent, BaseActionObject])
+type Action[TContext, TExpressionEvent /* <: EventObject */, TEvent /* <: EventObject */] = ActionType | BaseActionObject | (ActionObject[TContext, TExpressionEvent, TEvent, BaseActionObject]) | (ActionFunction[TContext, TExpressionEvent, BaseActionObject, TEvent])
 
-type ActionFunction[TContext, TEvent /* <: EventObject */, TAction /* <: BaseActionObject */] = js.Function3[
+type ActionFunction[TContext, TExpressionEvent /* <: EventObject */, TAction /* <: BaseActionObject */, TEvent /* <: EventObject */] = js.Function3[
 /* context */ TContext, 
-/* event */ TEvent, 
+/* event */ TExpressionEvent, 
 /* meta */ ActionMeta[TContext, TEvent, TAction], 
 Unit]
 
 type ActionType = String
 
-type Actions[TContext, TEvent /* <: EventObject */] = SingleOrArray[Action[TContext, TEvent]]
+type Actions[TContext, TExpressionEvent /* <: EventObject */, TEvent /* <: EventObject */] = SingleOrArray[Action[TContext, TExpressionEvent, TEvent]]
 
 type Activity[TContext, TEvent /* <: EventObject */] = String | (ActivityDefinition[TContext, TEvent])
 
@@ -80,18 +80,19 @@ Partial[TContext]]
 /* Rewritten from type alias, can be one of: 
   - / * import warning: importer.ImportType#apply Failed type conversion: xstate.xstate/lib/types.SimpleActionsOf<TAction>['type'] * / js.Any
   - TAction
-  - typings.xstate.libTypesMod.RaiseAction[scala.Any]
-  - typings.xstate.libTypesMod.SendAction[TContext, TEvent, scala.Any]
-  - typings.xstate.libTypesMod.AssignAction[TContext, TEvent]
-  - typings.xstate.libTypesMod.LogAction[TContext, TEvent]
-  - typings.xstate.libTypesMod.CancelAction
-  - typings.xstate.libTypesMod.StopAction[TContext, TEvent]
-  - typings.xstate.libTypesMod.ChooseAction[TContext, TEvent]
-  - typings.xstate.libTypesMod.ActionFunction[TContext, TEvent, typings.xstate.libTypesMod.BaseActionObject]
+  - typings.xstate.libTypesMod.RaiseAction[TContext, TExpressionEvent, TEvent]
+  - typings.xstate.libTypesMod.SendAction[TContext, TExpressionEvent, TEvent]
+  - typings.xstate.libTypesMod.AssignAction[TContext, TExpressionEvent, TEvent]
+  - typings.xstate.libTypesMod.LogAction[TContext, TExpressionEvent, TEvent]
+  - typings.xstate.libTypesMod.CancelAction[TContext, TExpressionEvent, TEvent]
+  - typings.xstate.libTypesMod.StopAction[TContext, TExpressionEvent, TEvent]
+  - typings.xstate.libTypesMod.ChooseAction[TContext, TExpressionEvent, TEvent]
+  - typings.xstate.libTypesMod.PureAction[TContext, TExpressionEvent, TEvent]
+  - typings.xstate.libTypesMod.ActionFunction[TContext, TExpressionEvent, TAction, TEvent]
 */
-type BaseAction[TContext, TEvent /* <: EventObject */, TAction /* <: BaseActionObject */] = (_BaseAction[TContext, TEvent, TAction]) | RaiseAction[Any] | (SendAction[TContext, TEvent, Any]) | (ActionFunction[TContext, TEvent, BaseActionObject]) | (/* import warning: importer.ImportType#apply Failed type conversion: xstate.xstate/lib/types.SimpleActionsOf<TAction>['type'] */ js.Any) | TAction
+type BaseAction[TContext, TExpressionEvent /* <: EventObject */, TAction /* <: BaseActionObject */, TEvent /* <: EventObject */] = (_BaseAction[TContext, TExpressionEvent, TAction, TEvent]) | (/* import warning: importer.ImportType#apply Failed type conversion: xstate.xstate/lib/types.SimpleActionsOf<TAction>['type'] */ js.Any) | TAction | (ActionFunction[TContext, TExpressionEvent, TAction, TEvent])
 
-type BaseActions[TContext, TEvent /* <: EventObject */, TAction /* <: BaseActionObject */] = SingleOrArray[BaseAction[TContext, TEvent, TAction]]
+type BaseActions[TContext, TExpressionEvent /* <: EventObject */, TEvent /* <: EventObject */, TAction /* <: BaseActionObject */] = SingleOrArray[BaseAction[TContext, TExpressionEvent, TAction, TEvent]]
 
 /** NOTE: Conditional type definitions are impossible to translate to Scala.
   * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
@@ -112,7 +113,7 @@ type ConditionPredicate[TContext, TEvent /* <: EventObject */] = js.Function3[
 /* meta */ GuardMeta[TContext, TEvent], 
 Boolean]
 
-type ConditionalTransitionConfig[TContext, TEvent /* <: EventObject */] = js.Array[TransitionConfig[TContext, TEvent]]
+type ConditionalTransitionConfig[TContext, TEvent /* <: EventObject */] = js.Array[TransitionConfig[TContext, TEvent, TEvent]]
 
 type DefaultContext = js.UndefOr[Record[String, Any]]
 
@@ -124,8 +125,10 @@ type DelayExpr[TContext, TEvent /* <: EventObject */] = ExprWithMeta[TContext, T
 
 type DelayFunctionMap[TContext, TEvent /* <: EventObject */] = Record[String, DelayConfig[TContext, TEvent]]
 
-type DelayedTransitions[TContext, TEvent /* <: EventObject */] = (Record[String | Double, String | (SingleOrArray[TransitionConfig[TContext, TEvent]])]) | (js.Array[
-(TransitionConfig[TContext, TEvent]) & (typings.xstate.anon.Delay[TContext, TEvent])])
+type DelayedTransitions[TContext, TEvent /* <: EventObject */] = (Record[
+String | Double, 
+String | (SingleOrArray[TransitionConfig[TContext, TEvent, TEvent]])]) | (js.Array[
+(TransitionConfig[TContext, TEvent, TEvent]) & (typings.xstate.anon.Delay[TContext, TEvent])])
 
 type DisposeActivityFunction = js.Function0[Unit]
 
@@ -140,7 +143,7 @@ type Equals[A1 /* <: Any */, A2 /* <: Any */] = `true`
 
 type Event[TEvent /* <: EventObject */] = (/* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any) | TEvent
 
-type EventData = (Record[String, Any]) & `2`
+type EventData = (Record[String, Any]) & `3`
 
 /** NOTE: Conditional type definitions are impossible to translate to Scala.
   * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
@@ -195,7 +198,7 @@ type ExtractWithSimpleSupport[T /* <: TypeString */] = T
 
 type GenerateActionsConfigPart[TContext, TResolvedTypesMeta, TRequireMissingImplementations, TMissingImplementations] = (MaybeMakeMissingImplementationsRequired[actions, Prop[TMissingImplementations, actions], TRequireMissingImplementations]) & (`1`[TContext, TResolvedTypesMeta])
 
-type GenerateDelaysConfigPart[TContext, TResolvedTypesMeta, TRequireMissingImplementations, TMissingImplementations] = (MaybeMakeMissingImplementationsRequired[delays, Prop[TMissingImplementations, delays], TRequireMissingImplementations]) & (Delays[TContext, TResolvedTypesMeta])
+type GenerateDelaysConfigPart[TContext, TResolvedTypesMeta, TRequireMissingImplementations, TMissingImplementations] = (MaybeMakeMissingImplementationsRequired[delays, Prop[TMissingImplementations, delays], TRequireMissingImplementations]) & (`2`[TContext, TResolvedTypesMeta])
 
 type GenerateGuardsConfigPart[TContext, TResolvedTypesMeta, TRequireMissingImplementations, TMissingImplementations] = (MaybeMakeMissingImplementationsRequired[guards, Prop[TMissingImplementations, guards], TRequireMissingImplementations]) & (Guards[TContext, TResolvedTypesMeta])
 
@@ -270,7 +273,7 @@ type PathMap[TContext, TEvent /* <: EventObject */] = StringDictionary[PathItem[
 type PathsMap[TContext, TEvent /* <: EventObject */] = StringDictionary[PathsItem[TContext, TEvent]]
 
 type PredictableActionArgumentsExec = js.Function3[
-/* action */ ActionObject[Any, EventObject], 
+/* action */ ActionObject[Any, EventObject, EventObject, BaseActionObject], 
 /* context */ Any, 
 /* _event */ typings.xstate.libTypesMod.SCXML.Event[EventObject], 
 Unit]
@@ -301,7 +304,7 @@ type ServiceMap = Record[String, DataAny]
   * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
   * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
   * TS definition: {{{
-  xstate.xstate/lib/types.ActionObject<any, any> extends T ? T : xstate.xstate/lib/types.ExtractWithSimpleSupport<T>
+  xstate.xstate/lib/types.ActionObject<any, any, any, xstate.xstate/lib/types.BaseActionObject> extends T ? T : xstate.xstate/lib/types.ExtractWithSimpleSupport<T>
   }}}
   */
 type SimpleActionsOf[T /* <: BaseActionObject */] = T
@@ -332,10 +335,12 @@ type StateTypes = _StateTypes | String
 
 type StateValue = String | StateValueMap
 
-type Transition[TContext, TEvent /* <: EventObject */] = String | (TransitionConfig[TContext, TEvent]) | (ConditionalTransitionConfig[TContext, TEvent])
+type TagsFrom[TMachine /* <: AnyStateMachine */] = /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<xstate.xstate/lib/types.StateFrom<TMachine>['hasTag']>[0] */ js.Any
 
-type TransitionConfigOrTarget[TContext, TEvent /* <: EventObject */] = SingleOrArray[
-(TransitionConfigTarget[TContext, TEvent]) | (TransitionConfig[TContext, TEvent])]
+type Transition[TContext, TEvent /* <: EventObject */] = String | (TransitionConfig[TContext, TEvent, TEvent]) | (ConditionalTransitionConfig[TContext, TEvent])
+
+type TransitionConfigOrTarget[TContext, TExpressionEvent /* <: EventObject */, TEvent /* <: EventObject */] = SingleOrArray[
+(TransitionConfigTarget[TContext, TEvent]) | (TransitionConfig[TContext, TExpressionEvent, TEvent])]
 
 type TransitionConfigTarget[TContext, TEvent /* <: EventObject */] = js.UndefOr[
 String | (StateNode[TContext, Any, TEvent, Context[TContext], ServiceMap, TypegenDisabled])]
@@ -349,7 +354,7 @@ String | (StateNode[TContext, Any, EventObject, Context[TContext], ServiceMap, T
 type TransitionsConfig[TContext, TEvent /* <: EventObject */] = (TransitionsConfigMap[TContext, TEvent]) | (TransitionsConfigArray[TContext, TEvent])
 
 type TransitionsConfigArray[TContext, TEvent /* <: EventObject */] = js.Array[
-(/* import warning: importer.ImportType#apply Failed type conversion: TEvent extends xstate.xstate/lib/types.EventObject ? xstate.xstate/lib/types.TransitionConfig<TContext, TEvent> & {  event :TEvent['type']} : never */ js.Any) | ((TransitionConfig[TContext, TEvent]) & typings.xstate.anon.Event) | ((TransitionConfig[TContext, TEvent]) & `0`)]
+(/* import warning: importer.ImportType#apply Failed type conversion: TEvent extends xstate.xstate/lib/types.EventObject ? xstate.xstate/lib/types.TransitionConfig<TContext, TEvent, TEvent> & {  event :TEvent['type']} : never */ js.Any) | ((TransitionConfig[TContext, TEvent, TEvent]) & typings.xstate.anon.Event) | ((TransitionConfig[TContext, TEvent, TEvent]) & `0`)]
 
 type ValueAdjacencyMap[TContext, TEvent /* <: EventObject */] = StringDictionary[Record[String, State[TContext, TEvent, Any, Context[TContext], TypegenDisabled]]]
 

@@ -5,43 +5,46 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Lighting parameters, allow configuration of the global lighting parameters.
-  * For details see [Clustered Lighting](https://developer.playcanvas.com/en/user-manual/graphics/lighting/clustered-lighting/)
-  *
-  * @property {number} debugLayer Layer ID of a layer to contain the debug rendering
-  * of clustered lighting. Defaults to undefined, which disables the debug rendering.
-  * Debug rendering is only included in the debug version of the engine.
-  *
-  * @property {Array<number>|null} atlasSplit Atlas textures split description, which applies
-  * to both the shadow and cookie texture atlas. Defaults to null, which enables to automatic
-  * split mode. For details see [Configuring Atlas Split](https://developer.playcanvas.com/en/user-manual/graphics/lighting/clustered-lighting/#configuring-atlas)
-  *
-  * @hideconstructor
+  * Lighting parameters, allow configuration of the global lighting parameters. For details see
+  * [Clustered Lighting](https://developer.playcanvas.com/en/user-manual/graphics/lighting/clustered-lighting/).
   */
 @JSImport("playcanvas", "LightingParams")
 @js.native
 open class LightingParams protected () extends StObject {
+  /**
+    * Creates a new LightingParams object.
+    *
+    * @ignore
+    */
   def this(supportsAreaLights: Any, maxTextureSize: Any, dirtyLightsFnc: Any) = this()
   
-  var _areaLightsEnabled: Boolean = js.native
+  /** @private */
+  /* private */ var _areaLightsEnabled: Any = js.native
   
-  var _cells: Vec3 = js.native
+  /** @private */
+  /* private */ var _cells: Any = js.native
   
-  var _cookieAtlasResolution: Double = js.native
+  /** @private */
+  /* private */ var _cookieAtlasResolution: Any = js.native
   
-  var _cookiesEnabled: Boolean = js.native
+  /** @private */
+  /* private */ var _cookiesEnabled: Any = js.native
   
   var _dirtyLightsFnc: Any = js.native
   
-  var _maxLightsPerCell: Double = js.native
+  /** @private */
+  /* private */ var _maxLightsPerCell: Any = js.native
   
   var _maxTextureSize: Any = js.native
   
-  var _shadowAtlasResolution: Double = js.native
+  /** @private */
+  /* private */ var _shadowAtlasResolution: Any = js.native
   
-  var _shadowType: Double = js.native
+  /** @private */
+  /* private */ var _shadowType: Any = js.native
   
-  var _shadowsEnabled: Boolean = js.native
+  /** @private */
+  /* private */ var _shadowsEnabled: Any = js.native
   
   var _supportsAreaLights: Any = js.native
   
@@ -56,7 +59,14 @@ open class LightingParams protected () extends StObject {
     */
   def areaLightsEnabled_=(arg: Boolean): Unit = js.native
   
-  var atlasSplit: Any = js.native
+  /**
+    * Atlas textures split description, which applies to both the shadow and cookie texture atlas.
+    * Defaults to null, which enables to automatic split mode. For details see [Configuring Atlas
+    * Split](https://developer.playcanvas.com/en/user-manual/graphics/lighting/clustered-lighting/#configuring-atlas).
+    *
+    * @type {number[]|null}
+    */
+  var atlasSplit: js.Array[Double] | Null = js.native
   
   var cell: Vec3 = js.native
   
@@ -87,7 +97,14 @@ open class LightingParams protected () extends StObject {
     */
   def cookiesEnabled_=(arg: Boolean): Unit = js.native
   
-  var debugLayer: Any = js.native
+  /**
+    * Layer ID of a layer to contain the debug rendering of clustered lighting. Defaults to
+    * undefined, which disables the debug rendering. Debug rendering is only included in the debug
+    * version of the engine.
+    *
+    * @type {number}
+    */
+  var debugLayer: Double = js.native
   
   def maxLightsPerCell: Double = js.native
   /**

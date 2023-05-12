@@ -18,11 +18,15 @@ object driver {
     def this(url: String) = this()
     def this(url: String, options: Any) = this()
     
+    def addListener(event: String, handler: js.Function1[/* repeated */ Any, Unit]): Unit = js.native
+    
     def close(): js.Promise[Unit] = js.native
     
-    var isOpen: js.Promise[Boolean] = js.native
+    var isOpen: Boolean = js.native
     
     def open(): js.Promise[Unit] = js.native
+    
+    def removeListener(event: String, handler: js.Function1[/* repeated */ Any, Unit]): Unit = js.native
     
     def stream(message: String): Any = js.native
     def stream(message: String, bindings: Any): Any = js.native
@@ -56,7 +60,7 @@ object driver {
     
     def createSession(): this.type = js.native
     
-    var isOpen: js.Promise[Boolean] = js.native
+    var isOpen: Boolean = js.native
     
     var isSessionBound: Boolean = js.native
     

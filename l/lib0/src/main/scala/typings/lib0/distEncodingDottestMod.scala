@@ -14,27 +14,31 @@ object distEncodingDottestMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def testAnyEncodeDate(tc: TestCase): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testAnyEncodeDate")(tc.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def testAnyEncodeDate(_tc: TestCase): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testAnyEncodeDate")(_tc.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def testAnyEncodeUnknowns(tc: TestCase): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testAnyEncodeUnknowns")(tc.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def testAnyEncodeUnknowns(_tc: TestCase): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testAnyEncodeUnknowns")(_tc.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def testAnyVsJsonEncoding(tc: TestCase): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testAnyVsJsonEncoding")(tc.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def testCloneDecoder(tc: TestCase): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testCloneDecoder")(tc.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def testCloneDecoder(_tc: TestCase): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testCloneDecoder")(_tc.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def testDecodingPerformanceNativeVsPolyfill(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testDecodingPerformanceNativeVsPolyfill")().asInstanceOf[Unit]
   
-  inline def testEncodeMax32bitUint(tc: TestCase): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testEncodeMax32bitUint")(tc.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def testEncodeMax32bitUint(_tc: TestCase): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testEncodeMax32bitUint")(_tc.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def testGolangBinaryEncodingCompatibility(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testGolangBinaryEncodingCompatibility")().asInstanceOf[Unit]
   
-  inline def testIntDiffEncoder(tc: TestCase): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testIntDiffEncoder")(tc.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def testIncUintOptRleEncoder(_tc: TestCase): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testIncUintOptRleEncoder")(_tc.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def testIntDiffRleEncoder(tc: TestCase): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testIntDiffRleEncoder")(tc.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def testIntDiffEncoder(_tc: TestCase): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testIntDiffEncoder")(_tc.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  inline def testIntDiffRleEncoder(_tc: TestCase): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testIntDiffRleEncoder")(_tc.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def testIntEncoders(tc: TestCase): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testIntEncoders")(tc.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def testLargeNumberAnyEncoding(tc: TestCase): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testLargeNumberAnyEncoding")(tc.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def testInvalidVarIntEncoding(_tc: TestCase): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testInvalidVarIntEncoding")(_tc.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  inline def testLargeNumberEncoding(tc: TestCase): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testLargeNumberEncoding")(tc.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def testOverflowStringDecoding(tc: TestCase): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testOverflowStringDecoding")(tc.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
@@ -56,33 +60,33 @@ object distEncodingDottestMod {
   
   inline def testRepeatVarUintEncoding53bit(tc: TestCase): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testRepeatVarUintEncoding53bit")(tc.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def testRleEncoder(tc: TestCase): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testRleEncoder")(tc.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def testRleEncoder(_tc: TestCase): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testRleEncoder")(_tc.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def testRleIntDiffEncoder(tc: TestCase): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testRleIntDiffEncoder")(tc.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def testRleIntDiffEncoder(_tc: TestCase): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testRleIntDiffEncoder")(_tc.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def testSetMethods(tc: TestCase): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testSetMethods")(tc.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def testSetMethods(_tc: TestCase): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testSetMethods")(_tc.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def testSetOnOverflow(tc: TestCase): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testSetOnOverflow")(tc.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def testSetOnOverflow(_tc: TestCase): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testSetOnOverflow")(_tc.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def testStringDecoder(tc: TestCase): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testStringDecoder")(tc.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def testStringDecodingPerformance(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testStringDecodingPerformance")().asInstanceOf[Unit]
   
-  inline def testStringEncoding(tc: TestCase): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testStringEncoding")(tc.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def testStringEncoding(_tc: TestCase): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testStringEncoding")(_tc.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def testStringEncodingPerformanceNativeVsPolyfill(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testStringEncodingPerformanceNativeVsPolyfill")().asInstanceOf[Unit]
   
-  inline def testUintOptRleEncoder(tc: TestCase): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testUintOptRleEncoder")(tc.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def testUintOptRleEncoder(_tc: TestCase): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testUintOptRleEncoder")(_tc.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def testVarIntEncoding(tc: TestCase): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testVarIntEncoding")(tc.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def testVarIntEncoding(_tc: TestCase): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testVarIntEncoding")(_tc.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def testVarUintEncoding(tc: TestCase): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testVarUintEncoding")(tc.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def testVarUintEncoding(_tc: TestCase): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testVarUintEncoding")(_tc.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def testVerifyLen(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testVerifyLen")().asInstanceOf[Unit]
   
-  inline def testWriteBinaryEncoder(tc: TestCase): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testWriteBinaryEncoder")(tc.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def testWriteBinaryEncoder(_tc: TestCase): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testWriteBinaryEncoder")(_tc.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def testWriteUint8ArrayOverflow(tc: TestCase): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testWriteUint8ArrayOverflow")(tc.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def testWriteUint8ArrayOverflow(_tc: TestCase): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testWriteUint8ArrayOverflow")(_tc.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait EncodingPair extends StObject {
     

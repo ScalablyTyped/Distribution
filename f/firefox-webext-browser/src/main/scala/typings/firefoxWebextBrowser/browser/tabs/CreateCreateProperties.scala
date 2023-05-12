@@ -22,6 +22,9 @@ trait CreateCreateProperties extends StObject {
     */
   var index: js.UndefOr[Double] = js.undefined
   
+  /** Whether the tab should be muted when created. */
+  var muted: js.UndefOr[Boolean] = js.undefined
+  
   /** Whether the document in the tab should be opened in reader mode. */
   var openInReaderMode: js.UndefOr[Boolean] = js.undefined
   
@@ -32,12 +35,6 @@ trait CreateCreateProperties extends StObject {
   
   /** Whether the tab should be pinned. Defaults to `false` */
   var pinned: js.UndefOr[Boolean] = js.undefined
-  
-  /**
-    * Whether the tab should become the selected tab in the window. Defaults to `true`
-    * @deprecated Please use _active_.
-    */
-  var selected: js.UndefOr[Boolean] = js.undefined
   
   /** The title used for display if the tab is created in discarded mode. */
   var title: js.UndefOr[String] = js.undefined
@@ -76,6 +73,10 @@ object CreateCreateProperties {
     
     inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
+    inline def setMuted(value: Boolean): Self = StObject.set(x, "muted", value.asInstanceOf[js.Any])
+    
+    inline def setMutedUndefined: Self = StObject.set(x, "muted", js.undefined)
+    
     inline def setOpenInReaderMode(value: Boolean): Self = StObject.set(x, "openInReaderMode", value.asInstanceOf[js.Any])
     
     inline def setOpenInReaderModeUndefined: Self = StObject.set(x, "openInReaderMode", js.undefined)
@@ -87,10 +88,6 @@ object CreateCreateProperties {
     inline def setPinned(value: Boolean): Self = StObject.set(x, "pinned", value.asInstanceOf[js.Any])
     
     inline def setPinnedUndefined: Self = StObject.set(x, "pinned", js.undefined)
-    
-    inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
-    
-    inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     

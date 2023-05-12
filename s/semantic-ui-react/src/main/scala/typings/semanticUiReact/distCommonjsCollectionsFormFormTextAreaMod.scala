@@ -85,9 +85,9 @@ object distCommonjsCollectionsFormFormTextAreaMod extends Shortcut {
   - scala.AnyRef because Inheritance from two classes. Inlined 
   - typings.react.mod.DOMAttributes because var conflicts: children, onChange, onInput. Inlined onKeyDown, onPlaying, onMouseOver, onMouseMove, onPointerCancel, onDragStart, onMouseEnter, onDragEnter, onPointerOver, onDragLeave, onMouseOut, onVolumeChange, onSelect, onAnimationStart, onLoadedData, onTouchStart, onCompositionStart, onScroll, onDragEnd, onLoadStart, dangerouslySetInnerHTML, onFocus, onContextMenu, onError, onTouchMove, onTouchEnd, onDrag, onEnded, onAnimationIteration, onWaiting, onCompositionEnd, onDoubleClick, onEmptied, onStalled, onKeyPress, onMouseUp, onPointerLeave, onAuxClick, onWheel, onPointerUp, onProgress, onBlur, onPointerMove, onPause, onDrop, onReset, onPointerDown, onDragOver, onTimeUpdate, onMouseDown, onDurationChange, onSubmit, onSuspend, onTransitionEnd, onCanPlay, onDragExit, onEncrypted, onPlay, onPointerOut, onCopy, onAbort, onInvalid, onCompositionUpdate, onTouchCancel, onResize, onCanPlayThrough, onClick, onLoad, onLoadedMetadata, onSeeked, onPointerEnter, onBeforeInput, onAnimationEnd, onCut, onSeeking, onPaste, onMouseLeave, onRateChange, onKeyUp
   - js.Any because Inheritance from two classes. Inlined 
-  - typings.react.mod.HTMLAttributes because var conflicts: children, className, id, onChange, onInput. Inlined contextMenu, vocab, typeof, inputMode, is, about, accessKey, nonce, itemScope, style, security, defaultValue, autoSave, prefix, resource, suppressHydrationWarning, itemType, spellCheck, tabIndex, slot, autoCapitalize, placeholder, radioGroup, lang, color, suppressContentEditableWarning, translate, itemID, dir, draggable, contentEditable, itemRef, hidden, inlist, property, defaultChecked, unselectable, role, datatype, itemProp, title, autoCorrect, results
+  - typings.react.mod.HTMLAttributes because var conflicts: children, className, content, id, onChange, onInput. Inlined contextMenu, vocab, typeof, inputMode, is, about, accessKey, nonce, itemScope, style, security, defaultValue, autoSave, prefix, resource, suppressHydrationWarning, itemType, spellCheck, tabIndex, slot, autoCapitalize, rev, placeholder, rel, radioGroup, lang, color, suppressContentEditableWarning, translate, itemID, dir, draggable, contentEditable, itemRef, hidden, inlist, property, defaultChecked, autoFocus, unselectable, role, datatype, itemProp, title, autoCorrect, results
   - js.Object because Inheritance from two classes. Inlined hasOwnProperty, propertyIsEnumerable, valueOf, toLocaleString, isPrototypeOf
-  - typings.react.mod.TextareaHTMLAttributes because Inheritance from two classes. Inlined cols, wrap, maxLength, form, minLength, readOnly, name, dirName, autoFocus, onChange_TextareaHTMLAttributes, autoComplete
+  - typings.react.mod.TextareaHTMLAttributes because Inheritance from two classes. Inlined cols, wrap, maxLength, form, minLength, readOnly, name, dirName, onChange_TextareaHTMLAttributes, autoComplete
   - typings.semanticUiReact.distCommonjsAddonsTextAreaTextAreaMod.StrictTextAreaProps because Inheritance from two classes. Inlined onChange, onInput, rows, value */ trait StrictFormTextAreaProps
     extends StObject
        with StrictFormFieldProps
@@ -377,9 +377,13 @@ object distCommonjsCollectionsFormFormTextAreaMod extends Shortcut {
     
     var readOnly: js.UndefOr[Boolean] = js.undefined
     
+    var rel: js.UndefOr[String] = js.undefined
+    
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
+    
+    var rev: js.UndefOr[String] = js.undefined
     
     // <command>, <menuitem>
     // WAI-ARIA
@@ -907,6 +911,10 @@ object distCommonjsCollectionsFormFormTextAreaMod extends Shortcut {
       
       inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
       
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      
+      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+      
       inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
       inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
@@ -914,6 +922,10 @@ object distCommonjsCollectionsFormFormTextAreaMod extends Shortcut {
       inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+      
+      inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+      
+      inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
       
       inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       

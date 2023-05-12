@@ -10,13 +10,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class Level protected () extends StObject {
   def this(data: LevelParsed) = this()
   
+  val _attrs: js.Array[LevelAttributes] = js.native
+  
   /* private */ var _urlId: Any = js.native
   
-  val attrs: LevelAttributes = js.native
+  def addFallback(data: LevelParsed): Unit = js.native
+  
+  def attrs: LevelAttributes = js.native
   
   val audioCodec: js.UndefOr[String] = js.native
   
-  var audioGroupIds: js.UndefOr[js.Array[String]] = js.native
+  def audioGroupId: js.UndefOr[String] = js.native
+  
+  var audioGroupIds: js.UndefOr[js.Array[js.UndefOr[String]]] = js.native
   
   val bitrate: Double = js.native
   
@@ -38,9 +44,13 @@ open class Level protected () extends StObject {
   
   val name: js.UndefOr[String] = js.native
   
+  def pathwayId: String = js.native
+  
   var realBitrate: Double = js.native
   
-  var textGroupIds: js.UndefOr[js.Array[String]] = js.native
+  def textGroupId: js.UndefOr[String] = js.native
+  
+  var textGroupIds: js.UndefOr[js.Array[js.UndefOr[String]]] = js.native
   
   val unknownCodecs: js.UndefOr[js.Array[String]] = js.native
   

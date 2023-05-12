@@ -12,7 +12,7 @@ trait ListVirtualClustersRequest extends StObject {
   var containerProviderId: js.UndefOr[String1024] = js.undefined
   
   /**
-    * The container provider type of the virtual cluster. EKS is the only supported type as of now.
+    * The container provider type of the virtual cluster. Amazon EKS is the only supported type as of now.
     */
   var containerProviderType: js.UndefOr[ContainerProviderType] = js.undefined
   

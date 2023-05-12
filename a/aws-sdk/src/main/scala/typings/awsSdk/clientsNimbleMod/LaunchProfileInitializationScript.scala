@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LaunchProfileInitializationScript extends StObject {
   
   /**
-    * An IAM role attached to a Studio Component that gives the studio component access to AWS resources at anytime while the instance is running. 
+    * An IAM role attached to a Studio Component that gives the studio component access to Amazon Web Services resources at anytime while the instance is running. 
     */
   var runtimeRoleArn: js.UndefOr[RoleArn] = js.undefined
   
@@ -17,7 +17,7 @@ trait LaunchProfileInitializationScript extends StObject {
   var script: js.UndefOr[StudioComponentInitializationScriptContent] = js.undefined
   
   /**
-    * An IAM role attached to Studio Component when the system initialization script runs which give the studio component access to AWS resources when the system initialization script runs.
+    * An IAM role attached to Studio Component when the system initialization script runs which give the studio component access to Amazon Web Services resources when the system initialization script runs.
     */
   var secureInitializationRoleArn: js.UndefOr[RoleArn] = js.undefined
   

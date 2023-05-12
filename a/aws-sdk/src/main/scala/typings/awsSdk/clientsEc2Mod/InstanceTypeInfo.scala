@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait InstanceTypeInfo extends StObject {
   
   /**
-    * Indicates whether auto recovery is supported.
+    * Indicates whether Amazon CloudWatch action based recovery is supported.
     */
   var AutoRecoverySupported: js.UndefOr[AutoRecoveryFlag] = js.undefined
   

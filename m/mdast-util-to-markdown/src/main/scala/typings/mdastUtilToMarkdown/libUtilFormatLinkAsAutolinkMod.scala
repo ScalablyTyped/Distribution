@@ -10,9 +10,9 @@ object libUtilFormatLinkAsAutolinkMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def formatLinkAsAutolink(node: Link, context: Context): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("formatLinkAsAutolink")(node.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  
-  type Context = typings.mdastUtilToMarkdown.libTypesMod.Context
+  inline def formatLinkAsAutolink(node: Link, state: State): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("formatLinkAsAutolink")(node.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   type Link = typings.mdast.mod.Link
+  
+  type State = typings.mdastUtilToMarkdown.libTypesMod.State
 }

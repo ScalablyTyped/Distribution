@@ -16,7 +16,7 @@ object libIconsFileExcelOutlinedMod extends Shortcut {
   @js.native
   trait FileExcelOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_FileExcelOutlinedIconType: String = js.native

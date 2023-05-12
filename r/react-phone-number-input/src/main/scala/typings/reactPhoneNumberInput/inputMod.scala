@@ -4,6 +4,8 @@ import typings.libphonenumberJs.anon.DefaultCountry
 import typings.libphonenumberJs.typesMod.CountryCallingCode
 import typings.libphonenumberJs.typesMod.CountryCode
 import typings.react.mod.ComponentClass
+import typings.react.mod.ForwardRefExoticComponent
+import typings.react.mod.RefAttributes
 import typings.react.mod.global.JSX.Element
 import typings.reactPhoneNumberInput.anon.Country
 import typings.reactPhoneNumberInput.anon.OnChange
@@ -12,6 +14,7 @@ import typings.reactPhoneNumberInput.mod.DefaultInputComponentProps
 import typings.reactPhoneNumberInput.mod.Value
 import typings.reactPhoneNumberInput.reactPhoneNumberInputStrings.onChange
 import typings.reactPhoneNumberInput.reactPhoneNumberInputStrings.value
+import typings.std.HTMLInputElement
 import typings.std.Omit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -49,12 +52,12 @@ object inputMod {
   
   type FeaturePropsWithoutSmartCaret[InputComponentProps] = (Omit[InputComponentProps, value | onChange]) & Country[InputComponentProps]
   
-  type InputComponent[InputComponentProps] = js.Function1[
+  type InputComponent[InputComponentProps] = (js.Function1[
     /* props */ InputComponentProps, 
     Element | (ComponentClass[InputComponentProps, Any])
-  ]
+  ]) | (ForwardRefExoticComponent[InputComponentProps & RefAttributes[HTMLInputElement]])
   
-  type PhoneInputComponentType[InputComponentProps] = js.Function1[/* props */ Props[InputComponentProps], Element]
+  type PhoneInputComponentType[InputComponentProps] = ForwardRefExoticComponent[Props[InputComponentProps] & RefAttributes[Any]]
   
   type Props[InputComponentProps] = PropsWithoutSmartCaret[InputComponentProps] & SmartCaret
   

@@ -49,6 +49,8 @@ trait TypeScriptWorker extends StObject {
     */
   def getDefinitionAtPosition(fileName: String, position: Double): js.Promise[js.UndefOr[js.Array[Any]]]
   
+  def getDocumentHighlights(fileName: String, position: Double, filesToSearch: js.Array[String]): js.Promise[js.UndefOr[js.Array[Any]]]
+  
   /**
     * Get transpiled output for the given file.
     * @returns `typescript.EmitOutput`
@@ -78,15 +80,9 @@ trait TypeScriptWorker extends StObject {
   
   /**
     * Get outline entries for the item at the given position in the file.
-    * @returns `Promise<typescript.NavigationBarItem[]>`
+    * @returns `Promise<typescript.NavigationTree | undefined>`
     */
-  def getNavigationBarItems(fileName: String): js.Promise[js.Array[Any]]
-  
-  /**
-    * Get other ranges which are related to the item at the given position in the file (often used for highlighting).
-    * @returns `Promise<ReadonlyArray<typescript.ReferenceEntry> | undefined>`
-    */
-  def getOccurrencesAtPosition(fileName: String, position: Double): js.Promise[js.UndefOr[js.Array[Any]]]
+  def getNavigationTree(fileName: String): js.Promise[js.UndefOr[Any]]
   
   /**
     * Get quick info for the item at the given position in the file.
@@ -149,12 +145,12 @@ object TypeScriptWorker {
     getCompletionEntryDetails: (String, Double, String) => js.Promise[js.UndefOr[Any]],
     getCompletionsAtPosition: (String, Double) => js.Promise[js.UndefOr[Any]],
     getDefinitionAtPosition: (String, Double) => js.Promise[js.UndefOr[js.Array[Any]]],
+    getDocumentHighlights: (String, Double, js.Array[String]) => js.Promise[js.UndefOr[js.Array[Any]]],
     getEmitOutput: String => js.Promise[EmitOutput],
     getFormattingEditsAfterKeystroke: (String, Double, String, Any) => js.Promise[js.Array[Any]],
     getFormattingEditsForDocument: (String, Any) => js.Promise[js.Array[Any]],
     getFormattingEditsForRange: (String, Double, Double, Any) => js.Promise[js.Array[Any]],
-    getNavigationBarItems: String => js.Promise[js.Array[Any]],
-    getOccurrencesAtPosition: (String, Double) => js.Promise[js.UndefOr[js.Array[Any]]],
+    getNavigationTree: String => js.Promise[js.UndefOr[Any]],
     getQuickInfoAtPosition: (String, Double) => js.Promise[js.UndefOr[Any]],
     getReferencesAtPosition: (String, Double) => js.Promise[js.UndefOr[js.Array[Any]]],
     getRenameInfo: (String, Double, Any) => js.Promise[Any],
@@ -165,7 +161,7 @@ object TypeScriptWorker {
     getSyntacticDiagnostics: String => js.Promise[js.Array[Diagnostic]],
     provideInlayHints: (String, Double, Double) => js.Promise[js.Array[Any]]
   ): TypeScriptWorker = {
-    val __obj = js.Dynamic.literal(findRenameLocations = js.Any.fromFunction5(findRenameLocations), getCodeFixesAtPosition = js.Any.fromFunction5(getCodeFixesAtPosition), getCompilerOptionsDiagnostics = js.Any.fromFunction1(getCompilerOptionsDiagnostics), getCompletionEntryDetails = js.Any.fromFunction3(getCompletionEntryDetails), getCompletionsAtPosition = js.Any.fromFunction2(getCompletionsAtPosition), getDefinitionAtPosition = js.Any.fromFunction2(getDefinitionAtPosition), getEmitOutput = js.Any.fromFunction1(getEmitOutput), getFormattingEditsAfterKeystroke = js.Any.fromFunction4(getFormattingEditsAfterKeystroke), getFormattingEditsForDocument = js.Any.fromFunction2(getFormattingEditsForDocument), getFormattingEditsForRange = js.Any.fromFunction4(getFormattingEditsForRange), getNavigationBarItems = js.Any.fromFunction1(getNavigationBarItems), getOccurrencesAtPosition = js.Any.fromFunction2(getOccurrencesAtPosition), getQuickInfoAtPosition = js.Any.fromFunction2(getQuickInfoAtPosition), getReferencesAtPosition = js.Any.fromFunction2(getReferencesAtPosition), getRenameInfo = js.Any.fromFunction3(getRenameInfo), getScriptText = js.Any.fromFunction1(getScriptText), getSemanticDiagnostics = js.Any.fromFunction1(getSemanticDiagnostics), getSignatureHelpItems = js.Any.fromFunction3(getSignatureHelpItems), getSuggestionDiagnostics = js.Any.fromFunction1(getSuggestionDiagnostics), getSyntacticDiagnostics = js.Any.fromFunction1(getSyntacticDiagnostics), provideInlayHints = js.Any.fromFunction3(provideInlayHints))
+    val __obj = js.Dynamic.literal(findRenameLocations = js.Any.fromFunction5(findRenameLocations), getCodeFixesAtPosition = js.Any.fromFunction5(getCodeFixesAtPosition), getCompilerOptionsDiagnostics = js.Any.fromFunction1(getCompilerOptionsDiagnostics), getCompletionEntryDetails = js.Any.fromFunction3(getCompletionEntryDetails), getCompletionsAtPosition = js.Any.fromFunction2(getCompletionsAtPosition), getDefinitionAtPosition = js.Any.fromFunction2(getDefinitionAtPosition), getDocumentHighlights = js.Any.fromFunction3(getDocumentHighlights), getEmitOutput = js.Any.fromFunction1(getEmitOutput), getFormattingEditsAfterKeystroke = js.Any.fromFunction4(getFormattingEditsAfterKeystroke), getFormattingEditsForDocument = js.Any.fromFunction2(getFormattingEditsForDocument), getFormattingEditsForRange = js.Any.fromFunction4(getFormattingEditsForRange), getNavigationTree = js.Any.fromFunction1(getNavigationTree), getQuickInfoAtPosition = js.Any.fromFunction2(getQuickInfoAtPosition), getReferencesAtPosition = js.Any.fromFunction2(getReferencesAtPosition), getRenameInfo = js.Any.fromFunction3(getRenameInfo), getScriptText = js.Any.fromFunction1(getScriptText), getSemanticDiagnostics = js.Any.fromFunction1(getSemanticDiagnostics), getSignatureHelpItems = js.Any.fromFunction3(getSignatureHelpItems), getSuggestionDiagnostics = js.Any.fromFunction1(getSuggestionDiagnostics), getSyntacticDiagnostics = js.Any.fromFunction1(getSyntacticDiagnostics), provideInlayHints = js.Any.fromFunction3(provideInlayHints))
     __obj.asInstanceOf[TypeScriptWorker]
   }
   
@@ -184,6 +180,8 @@ object TypeScriptWorker {
     
     inline def setGetDefinitionAtPosition(value: (String, Double) => js.Promise[js.UndefOr[js.Array[Any]]]): Self = StObject.set(x, "getDefinitionAtPosition", js.Any.fromFunction2(value))
     
+    inline def setGetDocumentHighlights(value: (String, Double, js.Array[String]) => js.Promise[js.UndefOr[js.Array[Any]]]): Self = StObject.set(x, "getDocumentHighlights", js.Any.fromFunction3(value))
+    
     inline def setGetEmitOutput(value: String => js.Promise[EmitOutput]): Self = StObject.set(x, "getEmitOutput", js.Any.fromFunction1(value))
     
     inline def setGetFormattingEditsAfterKeystroke(value: (String, Double, String, Any) => js.Promise[js.Array[Any]]): Self = StObject.set(x, "getFormattingEditsAfterKeystroke", js.Any.fromFunction4(value))
@@ -192,9 +190,7 @@ object TypeScriptWorker {
     
     inline def setGetFormattingEditsForRange(value: (String, Double, Double, Any) => js.Promise[js.Array[Any]]): Self = StObject.set(x, "getFormattingEditsForRange", js.Any.fromFunction4(value))
     
-    inline def setGetNavigationBarItems(value: String => js.Promise[js.Array[Any]]): Self = StObject.set(x, "getNavigationBarItems", js.Any.fromFunction1(value))
-    
-    inline def setGetOccurrencesAtPosition(value: (String, Double) => js.Promise[js.UndefOr[js.Array[Any]]]): Self = StObject.set(x, "getOccurrencesAtPosition", js.Any.fromFunction2(value))
+    inline def setGetNavigationTree(value: String => js.Promise[js.UndefOr[Any]]): Self = StObject.set(x, "getNavigationTree", js.Any.fromFunction1(value))
     
     inline def setGetQuickInfoAtPosition(value: (String, Double) => js.Promise[js.UndefOr[Any]]): Self = StObject.set(x, "getQuickInfoAtPosition", js.Any.fromFunction2(value))
     

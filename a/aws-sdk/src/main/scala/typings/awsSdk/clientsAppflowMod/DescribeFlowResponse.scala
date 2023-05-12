@@ -57,6 +57,11 @@ trait DescribeFlowResponse extends StObject {
   var lastRunExecutionDetails: js.UndefOr[ExecutionDetails] = js.undefined
   
   /**
+    * Describes the metadata catalog, metadata table, and data partitions that Amazon AppFlow used for the associated flow run.
+    */
+  var lastRunMetadataCatalogDetails: js.UndefOr[MetadataCatalogDetails] = js.undefined
+  
+  /**
     *  Specifies when the flow was last updated. 
     */
   var lastUpdatedAt: js.UndefOr[js.Date] = js.undefined
@@ -65,6 +70,16 @@ trait DescribeFlowResponse extends StObject {
     *  Specifies the user name of the account that performed the most recent update. 
     */
   var lastUpdatedBy: js.UndefOr[UpdatedBy] = js.undefined
+  
+  /**
+    * Specifies the configuration that Amazon AppFlow uses when it catalogs the data that's transferred by the associated flow. When Amazon AppFlow catalogs the data from a flow, it stores metadata in a data catalog.
+    */
+  var metadataCatalogConfig: js.UndefOr[MetadataCatalogConfig] = js.undefined
+  
+  /**
+    * The version number of your data schema. Amazon AppFlow assigns this version number. The version number increases by one when you change any of the following settings in your flow configuration:   Source-to-destination field mappings   Field data types   Partition keys  
+    */
+  var schemaVersion: js.UndefOr[Long] = js.undefined
   
   /**
     *  The configuration that controls how Amazon AppFlow retrieves data from the source connector. 
@@ -138,6 +153,12 @@ object DescribeFlowResponse {
     
     inline def setLastRunExecutionDetailsUndefined: Self = StObject.set(x, "lastRunExecutionDetails", js.undefined)
     
+    inline def setLastRunMetadataCatalogDetails(value: MetadataCatalogDetails): Self = StObject.set(x, "lastRunMetadataCatalogDetails", value.asInstanceOf[js.Any])
+    
+    inline def setLastRunMetadataCatalogDetailsUndefined: Self = StObject.set(x, "lastRunMetadataCatalogDetails", js.undefined)
+    
+    inline def setLastRunMetadataCatalogDetailsVarargs(value: MetadataCatalogDetail*): Self = StObject.set(x, "lastRunMetadataCatalogDetails", js.Array(value*))
+    
     inline def setLastUpdatedAt(value: js.Date): Self = StObject.set(x, "lastUpdatedAt", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedAtUndefined: Self = StObject.set(x, "lastUpdatedAt", js.undefined)
@@ -145,6 +166,14 @@ object DescribeFlowResponse {
     inline def setLastUpdatedBy(value: UpdatedBy): Self = StObject.set(x, "lastUpdatedBy", value.asInstanceOf[js.Any])
     
     inline def setLastUpdatedByUndefined: Self = StObject.set(x, "lastUpdatedBy", js.undefined)
+    
+    inline def setMetadataCatalogConfig(value: MetadataCatalogConfig): Self = StObject.set(x, "metadataCatalogConfig", value.asInstanceOf[js.Any])
+    
+    inline def setMetadataCatalogConfigUndefined: Self = StObject.set(x, "metadataCatalogConfig", js.undefined)
+    
+    inline def setSchemaVersion(value: Long): Self = StObject.set(x, "schemaVersion", value.asInstanceOf[js.Any])
+    
+    inline def setSchemaVersionUndefined: Self = StObject.set(x, "schemaVersion", js.undefined)
     
     inline def setSourceFlowConfig(value: SourceFlowConfig): Self = StObject.set(x, "sourceFlowConfig", value.asInstanceOf[js.Any])
     

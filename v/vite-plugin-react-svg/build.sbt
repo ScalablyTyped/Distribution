@@ -1,21 +1,21 @@
 organization := "org.scalablytyped"
 name := "vite-plugin-react-svg"
-version := "0.2-dt-20221025Z-338829"
+version := "0.2-dt-20221025Z-1f02d1"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "csstype" % "3.1.1-9b270c",
-  "org.scalablytyped" %%% "esbuild" % "0.15.12-e86294",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-874609",
-  "org.scalablytyped" %%% "postcss" % "8.4.19-776ef6",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-9c1d48",
-  "org.scalablytyped" %%% "react" % "18.0-dt-20221104Z-c1aa2f",
-  "org.scalablytyped" %%% "rollup" % "3.3.0-76f060",
-  "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-fd69ea",
-  "org.scalablytyped" %%% "source-map-js" % "1.0.2-2f6cde",
-  "org.scalablytyped" %%% "std" % "4.9-ecb5eb",
-  "org.scalablytyped" %%% "vite" % "3.2.0-20ab33")
+  "org.scalablytyped" %%% "csstype" % "3.1.2-5927f3",
+  "org.scalablytyped" %%% "esbuild" % "0.17.18-fcd351",
+  "org.scalablytyped" %%% "node" % "20.1-dt-20230511Z-0320fc",
+  "org.scalablytyped" %%% "postcss" % "8.4.23-a62f41",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-4446ee",
+  "org.scalablytyped" %%% "react" % "18.2-dt-20230506Z-14ab9d",
+  "org.scalablytyped" %%% "rollup" % "3.21.6-dbf5a5",
+  "org.scalablytyped" %%% "scheduler" % "0.16-dt-20230322Z-da1b40",
+  "org.scalablytyped" %%% "source-map-js" % "1.0.2-781ad1",
+  "org.scalablytyped" %%% "std" % "5.0-e63739",
+  "org.scalablytyped" %%% "vite" % "4.3.5-3ba12d")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

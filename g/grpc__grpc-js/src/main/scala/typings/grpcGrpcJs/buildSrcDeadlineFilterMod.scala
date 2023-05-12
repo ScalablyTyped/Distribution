@@ -1,6 +1,7 @@
 package typings.grpcGrpcJs
 
 import typings.grpcGrpcJs.buildSrcCallStreamMod.Call
+import typings.grpcGrpcJs.buildSrcCallStreamMod.StatusObject
 import typings.grpcGrpcJs.buildSrcChannelMod.Channel
 import typings.grpcGrpcJs.buildSrcFilterMod.BaseFilter
 import typings.grpcGrpcJs.buildSrcFilterMod.FilterFactory
@@ -21,6 +22,10 @@ object buildSrcDeadlineFilterMod {
     
     /* private */ var deadline: Any = js.native
     
+    def receiveTrailers(status: StatusObject): StatusObject = js.native
+    
+    def refresh(): Unit = js.native
+    
     /* private */ var retreiveDeadline: Any = js.native
     
     /* private */ var runTimer: Any = js.native
@@ -38,6 +43,7 @@ object buildSrcDeadlineFilterMod {
     /* private */ val channel: Any = js.native
     
     /* CompleteClass */
-    override def createFilter(callStream: Call): DeadlineFilter = js.native
+    override def createFilter(): DeadlineFilter = js.native
+    def createFilter(callStream: Call): DeadlineFilter = js.native
   }
 }

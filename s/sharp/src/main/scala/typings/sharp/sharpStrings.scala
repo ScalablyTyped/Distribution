@@ -1,7 +1,11 @@
 package typings.sharp
 
 import typings.sharp.mod.Blend
+import typings.sharp.mod.ExtendWith
 import typings.sharp.mod.FailOnOptions
+import typings.sharp.mod.TextAlign
+import typings.sharp.mod.TextWrap
+import typings.sharp.mod.TileContainer
 import typings.sharp.mod.TileLayout
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -22,6 +26,10 @@ object sharpStrings {
     extends StObject
        with Blend
   inline def add: add = "add".asInstanceOf[add]
+  
+  @js.native
+  sealed trait alpha extends StObject
+  inline def alpha: alpha = "alpha".asInstanceOf[alpha]
   
   @js.native
   sealed trait and extends StObject
@@ -46,6 +54,12 @@ object sharpStrings {
   inline def `b-w`: `b-w` = "b-w".asInstanceOf[`b-w`]
   
   @js.native
+  sealed trait background
+    extends StObject
+       with ExtendWith
+  inline def background: background = "background".asInstanceOf[background]
+  
+  @js.native
   sealed trait bicubic extends StObject
   inline def bicubic: bicubic = "bicubic".asInstanceOf[bicubic]
   
@@ -54,12 +68,36 @@ object sharpStrings {
   inline def bilinear: bilinear = "bilinear".asInstanceOf[bilinear]
   
   @js.native
+  sealed trait blue extends StObject
+  inline def blue: blue = "blue".asInstanceOf[blue]
+  
+  @js.native
   sealed trait bw extends StObject
   inline def bw: bw = "bw".asInstanceOf[bw]
   
   @js.native
-  sealed trait char extends StObject
+  sealed trait center
+    extends StObject
+       with TextAlign
+  inline def center: center = "center".asInstanceOf[center]
+  
+  @js.native
+  sealed trait centre
+    extends StObject
+       with TextAlign
+  inline def centre: centre = "centre".asInstanceOf[centre]
+  
+  @js.native
+  sealed trait char
+    extends StObject
+       with TextWrap
   inline def char: char = "char".asInstanceOf[char]
+  
+  @js.native
+  sealed trait charWord
+    extends StObject
+       with TextWrap
+  inline def charWord: charWord = "charWord".asInstanceOf[charWord]
   
   @js.native
   sealed trait clear
@@ -106,6 +144,12 @@ object sharpStrings {
   @js.native
   sealed trait contain extends StObject
   inline def contain: contain = "contain".asInstanceOf[contain]
+  
+  @js.native
+  sealed trait copy
+    extends StObject
+       with ExtendWith
+  inline def copy: copy = "copy".asInstanceOf[copy]
   
   @js.native
   sealed trait cover extends StObject
@@ -200,6 +244,12 @@ object sharpStrings {
   inline def float: float = "float".asInstanceOf[float]
   
   @js.native
+  sealed trait fs
+    extends StObject
+       with TileContainer
+  inline def fs: fs = "fs".asInstanceOf[fs]
+  
+  @js.native
   sealed trait gaussian extends StObject
   inline def gaussian: gaussian = "gaussian".asInstanceOf[gaussian]
   
@@ -212,6 +262,10 @@ object sharpStrings {
     extends StObject
        with TileLayout
   inline def google: google = "google".asInstanceOf[google]
+  
+  @js.native
+  sealed trait green extends StObject
+  inline def green: green = "green".asInstanceOf[green]
   
   @js.native
   sealed trait `hard-light`
@@ -262,12 +316,20 @@ object sharpStrings {
   inline def int: int = "int".asInstanceOf[int]
   
   @js.native
+  sealed trait jp2 extends StObject
+  inline def jp2: jp2 = "jp2".asInstanceOf[jp2]
+  
+  @js.native
   sealed trait jpeg extends StObject
   inline def jpeg: jpeg = "jpeg".asInstanceOf[jpeg]
   
   @js.native
   sealed trait jpg extends StObject
   inline def jpg: jpg = "jpg".asInstanceOf[jpg]
+  
+  @js.native
+  sealed trait jxl extends StObject
+  inline def jxl: jxl = "jxl".asInstanceOf[jxl]
   
   @js.native
   sealed trait lanczos2 extends StObject
@@ -282,6 +344,12 @@ object sharpStrings {
   inline def lbb: lbb = "lbb".asInstanceOf[lbb]
   
   @js.native
+  sealed trait left
+    extends StObject
+       with TextAlign
+  inline def left: left = "left".asInstanceOf[left]
+  
+  @js.native
   sealed trait lighten
     extends StObject
        with Blend
@@ -290,6 +358,12 @@ object sharpStrings {
   @js.native
   sealed trait magick extends StObject
   inline def magick: magick = "magick".asInstanceOf[magick]
+  
+  @js.native
+  sealed trait mirror
+    extends StObject
+       with ExtendWith
+  inline def mirror: mirror = "mirror".asInstanceOf[mirror]
   
   @js.native
   sealed trait mitchell extends StObject
@@ -317,6 +391,7 @@ object sharpStrings {
   sealed trait none
     extends StObject
        with FailOnOptions
+       with TextWrap
   inline def none: none = "none".asInstanceOf[none]
   
   @js.native
@@ -364,6 +439,22 @@ object sharpStrings {
   @js.native
   sealed trait raw extends StObject
   inline def raw: raw = "raw".asInstanceOf[raw]
+  
+  @js.native
+  sealed trait red extends StObject
+  inline def red: red = "red".asInstanceOf[red]
+  
+  @js.native
+  sealed trait repeat
+    extends StObject
+       with ExtendWith
+  inline def repeat: repeat = "repeat".asInstanceOf[repeat]
+  
+  @js.native
+  sealed trait right
+    extends StObject
+       with TextAlign
+  inline def right: right = "right".asInstanceOf[right]
   
   @js.native
   sealed trait saturate
@@ -446,10 +537,22 @@ object sharpStrings {
   inline def webp: webp = "webp".asInstanceOf[webp]
   
   @js.native
+  sealed trait word
+    extends StObject
+       with TextWrap
+  inline def word: word = "word".asInstanceOf[word]
+  
+  @js.native
   sealed trait xor
     extends StObject
        with Blend
   inline def xor: xor = "xor".asInstanceOf[xor]
+  
+  @js.native
+  sealed trait zip
+    extends StObject
+       with TileContainer
+  inline def zip: zip = "zip".asInstanceOf[zip]
   
   @js.native
   sealed trait zoomify

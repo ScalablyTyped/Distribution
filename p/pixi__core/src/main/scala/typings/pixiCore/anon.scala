@@ -10,6 +10,57 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
+  trait AutoDensity extends StObject {
+    
+    /**
+      * {@link PIXI.IRendererOptions.autoDensity}
+      * @default false
+      * @memberof PIXI.settings.RENDER_OPTIONS
+      */
+    var autoDensity: Boolean
+    
+    /**
+      * {@link PIXI.IRendererOptions.height}
+      * @default 600
+      * @memberof PIXI.settings.RENDER_OPTIONS
+      */
+    var height: Double
+    
+    /**
+      * {@link PIXI.IRendererOptions.resolution}
+      * @type {number}
+      * @default PIXI.settings.RESOLUTION
+      * @memberof PIXI.settings.RENDER_OPTIONS
+      */
+    var resolution: Double
+    
+    /**
+      * {@link PIXI.IRendererOptions.width}
+      * @default 800
+      * @memberof PIXI.settings.RENDER_OPTIONS
+      */
+    var width: Double
+  }
+  object AutoDensity {
+    
+    inline def apply(autoDensity: Boolean, height: Double, resolution: Double, width: Double): AutoDensity = {
+      val __obj = js.Dynamic.literal(autoDensity = autoDensity.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], resolution = resolution.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+      __obj.asInstanceOf[AutoDensity]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoDensity] (val x: Self) extends AnyVal {
+      
+      inline def setAutoDensity(value: Boolean): Self = StObject.set(x, "autoDensity", value.asInstanceOf[js.Any])
+      
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      
+      inline def setResolution(value: Double): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
+      
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    }
+  }
+  
   trait BufferMode extends StObject {
     
     var bufferMode: separate | interleaved

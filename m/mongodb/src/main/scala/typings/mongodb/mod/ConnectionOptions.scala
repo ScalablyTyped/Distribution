@@ -28,8 +28,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   
   var id: scala.Double | LessthansignmonitorGreaterthansign
   
+  /** @deprecated - Will not be able to turn off in the future. */
   var keepAlive: js.UndefOr[Boolean] = js.undefined
   
+  /** @deprecated - Will not be configurable in the future. */
   var keepAliveInitialDelay: js.UndefOr[scala.Double] = js.undefined
   
   var metadata: ClientMetadata

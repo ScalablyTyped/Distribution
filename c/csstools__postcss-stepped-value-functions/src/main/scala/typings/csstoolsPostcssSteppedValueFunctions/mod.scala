@@ -19,8 +19,7 @@ object mod extends Shortcut {
   
   trait pluginOptions extends StObject {
     
-    var onInvalid: js.UndefOr[String] = js.undefined
-    
+    /** Preserve the original notation. default: false */
     var preserve: js.UndefOr[Boolean] = js.undefined
   }
   object pluginOptions {
@@ -32,10 +31,6 @@ object mod extends Shortcut {
     
     @scala.inline
     implicit open class MutableBuilder[Self <: pluginOptions] (val x: Self) extends AnyVal {
-      
-      inline def setOnInvalid(value: String): Self = StObject.set(x, "onInvalid", value.asInstanceOf[js.Any])
-      
-      inline def setOnInvalidUndefined: Self = StObject.set(x, "onInvalid", js.undefined)
       
       inline def setPreserve(value: Boolean): Self = StObject.set(x, "preserve", value.asInstanceOf[js.Any])
       

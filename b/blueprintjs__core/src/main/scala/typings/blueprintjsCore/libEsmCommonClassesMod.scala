@@ -115,6 +115,10 @@ object libEsmCommonClassesMod {
   @js.native
   val COLLAPSIBLE_LIST: String = js.native
   
+  @JSImport("@blueprintjs/core/lib/esm/common/classes", "COMPACT")
+  @js.native
+  val COMPACT: String = js.native
+  
   @JSImport("@blueprintjs/core/lib/esm/common/classes", "CONTEXT_MENU")
   @js.native
   val CONTEXT_MENU: String = js.native
@@ -151,6 +155,10 @@ object libEsmCommonClassesMod {
   @js.native
   val DIALOG_BODY: String = js.native
   
+  @JSImport("@blueprintjs/core/lib/esm/common/classes", "DIALOG_BODY_SCROLL_CONTAINER")
+  @js.native
+  val DIALOG_BODY_SCROLL_CONTAINER: String = js.native
+  
   @JSImport("@blueprintjs/core/lib/esm/common/classes", "DIALOG_CLOSE_BUTTON")
   @js.native
   val DIALOG_CLOSE_BUTTON: String = js.native
@@ -166,6 +174,14 @@ object libEsmCommonClassesMod {
   @JSImport("@blueprintjs/core/lib/esm/common/classes", "DIALOG_FOOTER_ACTIONS")
   @js.native
   val DIALOG_FOOTER_ACTIONS: String = js.native
+  
+  @JSImport("@blueprintjs/core/lib/esm/common/classes", "DIALOG_FOOTER_FIXED")
+  @js.native
+  val DIALOG_FOOTER_FIXED: String = js.native
+  
+  @JSImport("@blueprintjs/core/lib/esm/common/classes", "DIALOG_FOOTER_MAIN_SECTION")
+  @js.native
+  val DIALOG_FOOTER_MAIN_SECTION: String = js.native
   
   @JSImport("@blueprintjs/core/lib/esm/common/classes", "DIALOG_HEADER")
   @js.native
@@ -715,6 +731,14 @@ object libEsmCommonClassesMod {
   @js.native
   val RADIO: String = js.native
   
+  @JSImport("@blueprintjs/core/lib/esm/common/classes", "READ_ONLY")
+  @js.native
+  val READ_ONLY: String = js.native
+  
+  @JSImport("@blueprintjs/core/lib/esm/common/classes", "RESIZABLE_INPUT_SPAN")
+  @js.native
+  val RESIZABLE_INPUT_SPAN: String = js.native
+  
   @JSImport("@blueprintjs/core/lib/esm/common/classes", "ROUND")
   @js.native
   val ROUND: String = js.native
@@ -807,6 +831,10 @@ object libEsmCommonClassesMod {
   @js.native
   val TABS: String = js.native
   
+  @JSImport("@blueprintjs/core/lib/esm/common/classes", "TAB_ICON")
+  @js.native
+  val TAB_ICON: String = js.native
+  
   @JSImport("@blueprintjs/core/lib/esm/common/classes", "TAB_INDICATOR")
   @js.native
   val TAB_INDICATOR: String = js.native
@@ -822,6 +850,10 @@ object libEsmCommonClassesMod {
   @JSImport("@blueprintjs/core/lib/esm/common/classes", "TAB_PANEL")
   @js.native
   val TAB_PANEL: String = js.native
+  
+  @JSImport("@blueprintjs/core/lib/esm/common/classes", "TAB_TAG")
+  @js.native
+  val TAB_TAG: String = js.native
   
   @JSImport("@blueprintjs/core/lib/esm/common/classes", "TAG")
   @js.native

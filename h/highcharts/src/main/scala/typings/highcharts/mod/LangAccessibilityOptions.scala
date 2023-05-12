@@ -22,6 +22,10 @@ trait LangAccessibilityOptions extends StObject {
     */
   var axis: js.UndefOr[LangAccessibilityAxisOptions] = js.undefined
   
+  /**
+    * (Highcharts, Highstock, Highmaps, Gantt) Accessible label for the chart
+    * container HTML element. `{title}` refers to the chart title.
+    */
   var chartContainerLabel: js.UndefOr[String] = js.undefined
   
   /**
@@ -35,10 +39,22 @@ trait LangAccessibilityOptions extends StObject {
     */
   var chartTypes: js.UndefOr[LangAccessibilityChartTypesOptions] = js.undefined
   
+  /**
+    * (Highcharts, Highstock, Highmaps, Gantt) Accessible label for the chart
+    * credits. `{creditsStr}` refers to the visual text in the credits.
+    */
   var credits: js.UndefOr[String] = js.undefined
   
+  /**
+    * (Highcharts, Highstock, Highmaps, Gantt) Default title of the chart for
+    * assistive technology, for charts without a chart title.
+    */
   var defaultChartTitle: js.UndefOr[String] = js.undefined
   
+  /**
+    * (Highcharts, Highstock, Highmaps, Gantt) Accessible label for the
+    * drill-up button. `{buttonText}` refers to the visual text on the button.
+    */
   var drillUpButton: js.UndefOr[String] = js.undefined
   
   /**
@@ -65,7 +81,7 @@ trait LangAccessibilityOptions extends StObject {
     */
   var rangeSelector: js.UndefOr[LangAccessibilityRangeSelectorOptions] = js.undefined
   
-  var resetZoomButton: js.UndefOr[js.Object] = js.undefined
+  var resetZoomButton: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Language options for the screen
@@ -93,6 +109,10 @@ trait LangAccessibilityOptions extends StObject {
     */
   var sonification: js.UndefOr[LangAccessibilitySonificationOptions] = js.undefined
   
+  /**
+    * (Highcharts, Highstock, Highmaps, Gantt) Accessible label for the chart
+    * SVG element. `{chartTitle}` refers to the chart title.
+    */
   var svgContainerLabel: js.UndefOr[String] = js.undefined
   
   /**
@@ -179,7 +199,7 @@ object LangAccessibilityOptions {
     
     inline def setRangeSelectorUndefined: Self = StObject.set(x, "rangeSelector", js.undefined)
     
-    inline def setResetZoomButton(value: js.Object): Self = StObject.set(x, "resetZoomButton", value.asInstanceOf[js.Any])
+    inline def setResetZoomButton(value: String): Self = StObject.set(x, "resetZoomButton", value.asInstanceOf[js.Any])
     
     inline def setResetZoomButtonUndefined: Self = StObject.set(x, "resetZoomButton", js.undefined)
     

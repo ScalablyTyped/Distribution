@@ -1,5 +1,7 @@
 package typings.webpack.anon
 
+import typings.webpack.webpackStrings.commonjs
+import typings.webpack.webpackStrings.module
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -29,6 +31,8 @@ trait Data extends StObject {
   var raw: js.UndefOr[Boolean] = js.undefined
   
   var request: String
+  
+  var `type`: js.UndefOr[module | commonjs] = js.undefined
 }
 object Data {
   
@@ -81,5 +85,9 @@ object Data {
     inline def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
     
     inline def setRequest(value: String): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: module | commonjs): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

@@ -20,7 +20,6 @@ import typings.jupyterlabServices.libKernelMessagesMod.MessageType
 import typings.jupyterlabServices.libKernelMessagesMod.Status
 import typings.jupyterlabServices.libServerconnectionMod.ServerConnection.ISettings
 import typings.jupyterlabServices.mod.ServerConnection.NetworkError
-import typings.luminoAlgorithm.typesIterMod.IIterator
 import typings.luminoDisposable.mod.IDisposable
 import typings.luminoDisposable.mod.IObservableDisposable
 import typings.luminoSignaling.mod.ISignal
@@ -95,7 +94,7 @@ object libSessionSessionMod {
       *
       * @returns A new iterator over the running sessions.
       */
-    def running(): IIterator[IModel] = js.native
+    def running(): Any = js.native
     
     /**
       * A signal emitted when the running sessions change.

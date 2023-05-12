@@ -1,6 +1,8 @@
 package typings.chartJs.mod
 
-import typings.chartJs.typesBasicMod.AnyObject
+import typings.chartJs.distTypesBasicMod.AnyObject
+import typings.chartJs.distTypesIndexMod.BarOptions
+import typings.chartJs.distTypesIndexMod.BarProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("chart.js", "BarElement")
 @js.native
 open class BarElementCls protected ()
-  extends StObject
-     with BarElement[BarProps, BarOptions] {
+  extends typings.chartJs.distTypesIndexMod.BarElement[BarProps, BarOptions] {
   def this(cfg: AnyObject) = this()
 }

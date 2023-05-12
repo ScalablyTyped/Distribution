@@ -26,6 +26,9 @@ trait DownloadEvents extends StObject {
   @JSName("progress.throttled")
   def progressDotthrottled(stats: Stats): Any = js.native
   
+  /** Emitted when an url redirect happened `callback(newUrl, oldUrl)` NOTE: this will be triggered during getTotalSize() as well */
+  def redirected(newUrl: String, oldUrl: String): Any = js.native
+  
   /** Emitted when '(number)' is appended to the end of file, this requires override:false opt, callback(filePaths) */
   def renamed(stats: FileRenamedStats): Any = js.native
   

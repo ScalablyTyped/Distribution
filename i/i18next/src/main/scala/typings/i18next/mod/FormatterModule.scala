@@ -23,7 +23,7 @@ object FormatterModule {
       js.Function1[/* value */ Any, String]
     ]) => Unit,
     format: (/* value */ Any, /* format */ js.UndefOr[String], /* lng */ js.UndefOr[String], /* options */ js.UndefOr[InterpolationOptions & StringMap]) => String,
-    init: (Services, InitOptions) => Unit
+    init: (Services, InitOptions[js.Object]) => Unit
   ): FormatterModule = {
     val __obj = js.Dynamic.literal(add = js.Any.fromFunction2(add), addCached = js.Any.fromFunction2(addCached), format = js.Any.fromFunction4(format), init = js.Any.fromFunction2(init))
     __obj.updateDynamic("type")("formatter")

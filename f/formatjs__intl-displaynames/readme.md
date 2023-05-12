@@ -1,7 +1,7 @@
 
 # Scala.js typings for formatjs__intl-displaynames
 
-Typings are for version 6.1.4
+Typings are for version 6.3.2
 
 ## Library description:
 Polyfill for: https://tc39.es/proposal-intl-displaynames

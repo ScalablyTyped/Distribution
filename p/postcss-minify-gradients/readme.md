@@ -1,7 +1,7 @@
 
 # Scala.js typings for postcss-minify-gradients
 
-Typings are for version 5.1.1
+Typings are for version 6.0.0
 
 ## Library description:
 Minify gradient parameters with PostCSS.

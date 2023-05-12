@@ -41,7 +41,7 @@ open class I3SLayer () extends StObject {
   /**
     * Gets the Cesium3DTileset for this layer.
     */
-  val tileset: Cesium3DTileset = js.native
+  val tileset: js.UndefOr[Cesium3DTileset] = js.native
   
   /**
     * The version string of the loaded I3S dataset

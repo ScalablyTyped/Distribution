@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ImportResourcesToDraftAppVersionResponse extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) of the application. The format for this ARN is: arn:partition:resiliencehub:region:account:app/app-id. For more information about ARNs, see  Amazon Resource Names (ARNs) in the AWS General Reference.
+    * The Amazon Resource Name (ARN) of the Resilience Hub application. The format for this ARN is: arn:partition:resiliencehub:region:account:app/app-id. For more information about ARNs, see  Amazon Resource Names (ARNs) in the AWS General Reference guide.
     */
   var appArn: Arn
   
@@ -17,7 +17,12 @@ trait ImportResourcesToDraftAppVersionResponse extends StObject {
   var appVersion: EntityVersion
   
   /**
-    * The Amazon Resource Names (ARNs) for the resources that you imported.
+    * The input sources of the Amazon Elastic Kubernetes Service resources you have imported.
+    */
+  var eksSources: js.UndefOr[EksSourceList] = js.undefined
+  
+  /**
+    * The Amazon Resource Names (ARNs) for the resources you have imported.
     */
   var sourceArns: js.UndefOr[ArnList] = js.undefined
   
@@ -27,7 +32,7 @@ trait ImportResourcesToDraftAppVersionResponse extends StObject {
   var status: ResourceImportStatusType
   
   /**
-    *  A list of terraform file s3 URLs you need to import. 
+    *  A list of terraform file s3 URLs you have imported. 
     */
   var terraformSources: js.UndefOr[TerraformSourceList] = js.undefined
 }
@@ -44,6 +49,12 @@ object ImportResourcesToDraftAppVersionResponse {
     inline def setAppArn(value: Arn): Self = StObject.set(x, "appArn", value.asInstanceOf[js.Any])
     
     inline def setAppVersion(value: EntityVersion): Self = StObject.set(x, "appVersion", value.asInstanceOf[js.Any])
+    
+    inline def setEksSources(value: EksSourceList): Self = StObject.set(x, "eksSources", value.asInstanceOf[js.Any])
+    
+    inline def setEksSourcesUndefined: Self = StObject.set(x, "eksSources", js.undefined)
+    
+    inline def setEksSourcesVarargs(value: EksSource*): Self = StObject.set(x, "eksSources", js.Array(value*))
     
     inline def setSourceArns(value: ArnList): Self = StObject.set(x, "sourceArns", value.asInstanceOf[js.Any])
     

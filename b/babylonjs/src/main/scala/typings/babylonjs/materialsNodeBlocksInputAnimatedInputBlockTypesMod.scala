@@ -22,7 +22,14 @@ object materialsNodeBlocksInputAnimatedInputBlockTypesMod {
          with AnimatedInputBlockTypes
     /* 0 */ val None: typings.babylonjs.materialsNodeBlocksInputAnimatedInputBlockTypesMod.AnimatedInputBlockTypes.None & Double = js.native
     
-    /** Time based animation. Will only work for floats */
+    /** Time elapsed (in seconds) since the engine was initialized. Will only work for floats */
+    @js.native
+    sealed trait RealTime
+      extends StObject
+         with AnimatedInputBlockTypes
+    /* 2 */ val RealTime: typings.babylonjs.materialsNodeBlocksInputAnimatedInputBlockTypesMod.AnimatedInputBlockTypes.RealTime & Double = js.native
+    
+    /** Time based animation (is incremented by 0.6 each second). Will only work for floats */
     @js.native
     sealed trait Time
       extends StObject

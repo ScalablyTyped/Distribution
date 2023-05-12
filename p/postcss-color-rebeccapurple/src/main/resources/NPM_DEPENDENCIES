@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "postcss-color-rebeccapurple" : "7.1.1"
+      "postcss-color-rebeccapurple" : "8.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "postcss-color-rebeccapurple" : "7.1.1"
+      "postcss-color-rebeccapurple" : "8.0.2"
     }
   ],
   "compile-devDependencies" : [

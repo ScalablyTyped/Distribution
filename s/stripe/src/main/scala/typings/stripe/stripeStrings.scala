@@ -13,11 +13,13 @@ import typings.stripe.mod.Stripe.Account.Capabilities.BoletoPayments
 import typings.stripe.mod.Stripe.Account.Capabilities.CardIssuing
 import typings.stripe.mod.Stripe.Account.Capabilities.CardPayments
 import typings.stripe.mod.Stripe.Account.Capabilities.CartesBancairesPayments
+import typings.stripe.mod.Stripe.Account.Capabilities.CashappPayments
 import typings.stripe.mod.Stripe.Account.Capabilities.EpsPayments
 import typings.stripe.mod.Stripe.Account.Capabilities.FpxPayments
 import typings.stripe.mod.Stripe.Account.Capabilities.GiropayPayments
 import typings.stripe.mod.Stripe.Account.Capabilities.GrabpayPayments
 import typings.stripe.mod.Stripe.Account.Capabilities.IdealPayments
+import typings.stripe.mod.Stripe.Account.Capabilities.IndiaInternationalPayments
 import typings.stripe.mod.Stripe.Account.Capabilities.JcbPayments
 import typings.stripe.mod.Stripe.Account.Capabilities.KlarnaPayments
 import typings.stripe.mod.Stripe.Account.Capabilities.KonbiniPayments
@@ -44,8 +46,8 @@ import typings.stripe.mod.Stripe.BillingPortal.ConfigurationUpdateParams.Feature
 import typings.stripe.mod.Stripe.BillingPortal.ConfigurationUpdateParams.Features.SubscriptionCancel.CancellationReason.Option
 import typings.stripe.mod.Stripe.BillingPortal.ConfigurationUpdateParams.Features.SubscriptionCancel.Mode
 import typings.stripe.mod.Stripe.BillingPortal.ConfigurationUpdateParams.Features.SubscriptionUpdate.DefaultAllowedUpdate
-import typings.stripe.mod.Stripe.Charge.PaymentMethodDetails.InteracPresent.ReadMethod
 import typings.stripe.mod.Stripe.Charge.PaymentMethodDetails.Konbini.Store.Chain
+import typings.stripe.mod.Stripe.Charge.PaymentMethodDetails.Paypal.SellerProtection.DisputeCategory
 import typings.stripe.mod.Stripe.ChargeUpdateParams.FraudDetails.UserReport
 import typings.stripe.mod.Stripe.Checkout.Session.PaymentStatus
 import typings.stripe.mod.Stripe.Checkout.SessionCreateParams.BillingAddressCollection
@@ -58,7 +60,9 @@ import typings.stripe.mod.Stripe.Checkout.SessionCreateParams.CustomerUpdate.Shi
 import typings.stripe.mod.Stripe.Checkout.SessionCreateParams.Locale
 import typings.stripe.mod.Stripe.Checkout.SessionCreateParams.PaymentMethodCollection
 import typings.stripe.mod.Stripe.Checkout.SessionCreateParams.ShippingAddressCollection.AllowedCountry
+import typings.stripe.mod.Stripe.Checkout.SessionCreateParams.ShippingOption.ShippingRateData.DeliveryEstimate.Minimum.Unit
 import typings.stripe.mod.Stripe.Checkout.SessionCreateParams.SubmitType
+import typings.stripe.mod.Stripe.Checkout.SessionCreateParams.SubscriptionData.TrialSettings.EndBehavior.MissingPaymentMethod
 import typings.stripe.mod.Stripe.Coupon.Duration
 import typings.stripe.mod.Stripe.Customer.Tax.AutomaticTax
 import typings.stripe.mod.Stripe.Customer.Tax.Location.Source
@@ -72,11 +76,13 @@ import typings.stripe.mod.Stripe.FinancialConnections.Account.Category
 import typings.stripe.mod.Stripe.FinancialConnections.Account.Subcategory
 import typings.stripe.mod.Stripe.FinancialConnections.Account.SupportedPaymentMethodType
 import typings.stripe.mod.Stripe.FinancialConnections.AccountRefreshParams.Feature
+import typings.stripe.mod.Stripe.HttpProtocol
 import typings.stripe.mod.Stripe.Identity.VerificationReport.IdNumber.IdNumberType
 import typings.stripe.mod.Stripe.Identity.VerificationReport.Options.Document.AllowedType
 import typings.stripe.mod.Stripe.Identity.VerificationSession.LastError.Code
 import typings.stripe.mod.Stripe.Invoice.BillingReason
 import typings.stripe.mod.Stripe.Invoice.CustomerTaxExempt
+import typings.stripe.mod.Stripe.Invoice.PaymentSettings.PaymentMethodOptions.Bancontact.PreferredLanguage
 import typings.stripe.mod.Stripe.Invoice.PaymentSettings.PaymentMethodType
 import typings.stripe.mod.Stripe.InvoiceCreateParams.PendingInvoiceItemsBehavior
 import typings.stripe.mod.Stripe.InvoiceRetrieveUpcomingParams.SubscriptionBillingCycleAnchor
@@ -101,18 +107,19 @@ import typings.stripe.mod.Stripe.Issuing.Dispute.Evidence.MerchandiseNotAsDescri
 import typings.stripe.mod.Stripe.Issuing.Dispute.Evidence.NotReceived.ProductType
 import typings.stripe.mod.Stripe.Issuing.Transaction.Wallet
 import typings.stripe.mod.Stripe.Mandate.PaymentMethodDetails.BacsDebit.NetworkStatus
-import typings.stripe.mod.Stripe.OrderCreateParams.Payment.Settings.PaymentMethodOptions.Bancontact.PreferredLanguage
-import typings.stripe.mod.Stripe.OrderCreateParams.Payment.Settings.PaymentMethodOptions.Card.CaptureMethod
-import typings.stripe.mod.Stripe.OrderCreateParams.Payment.Settings.PaymentMethodOptions.Ideal.SetupFutureUsage
-import typings.stripe.mod.Stripe.OrderCreateParams.Payment.Settings.PaymentMethodOptions.Klarna.PreferredLocale
-import typings.stripe.mod.Stripe.OrderCreateParams.Payment.Settings.PaymentMethodOptions.WechatPay.Client
-import typings.stripe.mod.Stripe.OrderCreateParams.ShippingCost.ShippingRateData.DeliveryEstimate.Minimum.Unit
 import typings.stripe.mod.Stripe.PaymentIntent.NextAction.VerifyWithMicrodeposits.MicrodepositType
 import typings.stripe.mod.Stripe.PaymentIntentCancelParams.CancellationReason
 import typings.stripe.mod.Stripe.PaymentIntentCreateParams.ConfirmationMethod
 import typings.stripe.mod.Stripe.PaymentIntentCreateParams.OffSession
+import typings.stripe.mod.Stripe.PaymentIntentUpdateParams.CaptureMethod
+import typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.AuBecsDebit.SetupFutureUsage
+import typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.Klarna.PreferredLocale
+import typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.WechatPay.Client
 import typings.stripe.mod.Stripe.PaymentMethod.Ideal.Bic
+import typings.stripe.mod.Stripe.PaymentMethod.InteracPresent.ReadMethod
 import typings.stripe.mod.Stripe.PaymentMethod.UsBankAccount.Networks.Supported
+import typings.stripe.mod.Stripe.PaymentMethod.UsBankAccount.StatusDetails.Blocked.NetworkCode
+import typings.stripe.mod.Stripe.Payout.ReconciliationStatus
 import typings.stripe.mod.Stripe.PayoutCreateParams.Method
 import typings.stripe.mod.Stripe.PlanCreateParams.AggregateUsage
 import typings.stripe.mod.Stripe.PlanCreateParams.BillingScheme
@@ -121,8 +128,10 @@ import typings.stripe.mod.Stripe.PlanCreateParams.TransformUsage.Round
 import typings.stripe.mod.Stripe.PlanCreateParams.UsageType
 import typings.stripe.mod.Stripe.ProductCreateParams.DefaultPriceData.TaxBehavior
 import typings.stripe.mod.Stripe.Quote.CollectionMethod
+import typings.stripe.mod.Stripe.Quote.Computed.Upfront.TotalDetails.Breakdown.Tax.TaxabilityReason
 import typings.stripe.mod.Stripe.Quote.Status
 import typings.stripe.mod.Stripe.Radar.ValueList.ItemType
+import typings.stripe.mod.Stripe.RawErrorType
 import typings.stripe.mod.Stripe.Reporting.ReportRunCreateParams.Parameters.ReportingCategory
 import typings.stripe.mod.Stripe.Reporting.ReportRunCreateParams.Parameters.Timezone
 import typings.stripe.mod.Stripe.Review.ClosedReason
@@ -146,17 +155,21 @@ import typings.stripe.mod.Stripe.SetupIntentUpdateParams.PaymentMethodOptions.Ca
 import typings.stripe.mod.Stripe.SetupIntentUpdateParams.PaymentMethodOptions.UsBankAccount.FinancialConnections.Permission
 import typings.stripe.mod.Stripe.SetupIntentUpdateParams.PaymentMethodOptions.UsBankAccount.Networks.Requested
 import typings.stripe.mod.Stripe.SetupIntentUpdateParams.PaymentMethodOptions.UsBankAccount.VerificationMethod
-import typings.stripe.mod.Stripe.SkuCreateParams.Inventory.Value
 import typings.stripe.mod.Stripe.SourceCreateParams.Flow
 import typings.stripe.mod.Stripe.SourceCreateParams.Receiver.RefundAttributesMethod
 import typings.stripe.mod.Stripe.SourceUpdateParams.Mandate.NotificationMethod
+import typings.stripe.mod.Stripe.Subscription.CancellationDetails.Feedback
 import typings.stripe.mod.Stripe.Subscription.PauseCollection.Behavior
 import typings.stripe.mod.Stripe.Subscription.PaymentSettings.SaveDefaultPaymentMethod
 import typings.stripe.mod.Stripe.SubscriptionItemDeleteParams.ProrationBehavior
 import typings.stripe.mod.Stripe.SubscriptionItemUpdateParams.PaymentBehavior
 import typings.stripe.mod.Stripe.SubscriptionScheduleUpdateParams.DefaultSettings.BillingCycleAnchor
 import typings.stripe.mod.Stripe.SubscriptionScheduleUpdateParams.EndBehavior
-import typings.stripe.mod.Stripe.TaxRate.TaxType
+import typings.stripe.mod.Stripe.Tax.Transaction.CustomerDetails.AddressSource
+import typings.stripe.mod.Stripe.Tax.Transaction.CustomerDetails.TaxabilityOverride
+import typings.stripe.mod.Stripe.Tax.Transaction.ShippingCost.TaxBreakdown.Jurisdiction.Level
+import typings.stripe.mod.Stripe.Tax.Transaction.ShippingCost.TaxBreakdown.Sourcing
+import typings.stripe.mod.Stripe.Tax.Transaction.ShippingCost.TaxBreakdown.TaxRateDetails.TaxType
 import typings.stripe.mod.Stripe.Terminal.ReaderListParams.DeviceType
 import typings.stripe.mod.Stripe.TestHelpers.Treasury.ReceivedCreditCreateParams.Network
 import typings.stripe.mod.Stripe.TransferCreateParams.SourceType
@@ -770,6 +783,12 @@ object stripeStrings {
     extends StObject
        with ApiVersion
   inline def `2022-08-01`: `2022-08-01` = "2022-08-01".asInstanceOf[`2022-08-01`]
+  
+  @js.native
+  sealed trait `2022-11-15`
+    extends StObject
+       with ApiVersion
+  inline def `2022-11-15`: `2022-11-15` = "2022-11-15".asInstanceOf[`2022-11-15`]
   
   @js.native
   sealed trait `2Dot1Dot0`
@@ -1537,6 +1556,12 @@ object stripeStrings {
     extends StObject
        with Timezone
   inline def AmericaSlashChihuahua: AmericaSlashChihuahua = "America/Chihuahua".asInstanceOf[AmericaSlashChihuahua]
+  
+  @js.native
+  sealed trait AmericaSlashCiudad_Juarez
+    extends StObject
+       with Timezone
+  inline def AmericaSlashCiudad_Juarez: AmericaSlashCiudad_Juarez = "America/Ciudad_Juarez".asInstanceOf[AmericaSlashCiudad_Juarez]
   
   @js.native
   sealed trait AmericaSlashCoral_Harbour
@@ -3222,10 +3247,14 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.PaymentLinkUpdateParams.ShippingAddressCollection.AllowedCountry
        with typings.stripe.mod.Stripe.PaymentLink.ShippingAddressCollection.AllowedCountry
        with Country
+       with typings.stripe.mod.Stripe.Invoice.PaymentSettings.PaymentMethodOptions.CustomerBalance.BankTransfer.EuBankTransfer.Country
        with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodData.Sofort.Country
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodData.Sofort.Country
        with typings.stripe.mod.Stripe.PaymentMethodCreateParams.Sofort.Country
+       with typings.stripe.mod.Stripe.Checkout.Session.PaymentMethodOptions.CustomerBalance.BankTransfer.EuBankTransfer.Country
        with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodData.Sofort.Country
+       with typings.stripe.mod.Stripe.Subscription.PaymentSettings.PaymentMethodOptions.CustomerBalance.BankTransfer.EuBankTransfer.Country
+       with typings.stripe.mod.Stripe.PaymentIntent.PaymentMethodOptions.CustomerBalance.BankTransfer.EuBankTransfer.Country
        with typings.stripe.mod.Stripe.SetupIntentConfirmParams.PaymentMethodData.Sofort.Country
        with typings.stripe.mod.Stripe.SetupIntentCreateParams.PaymentMethodData.Sofort.Country
   inline def BE: BE = "BE".asInstanceOf[BE]
@@ -3269,6 +3298,14 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.PaymentLinkUpdateParams.ShippingAddressCollection.AllowedCountry
        with typings.stripe.mod.Stripe.PaymentLink.ShippingAddressCollection.AllowedCountry
   inline def BI: BI = "BI".asInstanceOf[BI]
+  
+  @js.native
+  sealed trait BITSNL2A
+    extends StObject
+       with Bic
+       with typings.stripe.mod.Stripe.SetupAttempt.PaymentMethodDetails.Ideal.Bic
+       with typings.stripe.mod.Stripe.Charge.PaymentMethodDetails.Ideal.Bic
+  inline def BITSNL2A: BITSNL2A = "BITSNL2A".asInstanceOf[BITSNL2A]
   
   @js.native
   sealed trait BJ
@@ -3687,10 +3724,13 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodData.Sofort.Country
        with typings.stripe.mod.Stripe.Subscription.PaymentSettings.PaymentMethodOptions.CustomerBalance.BankTransfer.EuBankTransfer.Country
        with typings.stripe.mod.Stripe.PaymentIntent.PaymentMethodOptions.CustomerBalance.BankTransfer.EuBankTransfer.Country
-       with typings.stripe.mod.Stripe.Order.Payment.Settings.PaymentMethodOptions.CustomerBalance.BankTransfer.EuBankTransfer.Country
        with typings.stripe.mod.Stripe.SetupIntentConfirmParams.PaymentMethodData.Sofort.Country
        with typings.stripe.mod.Stripe.SetupIntentCreateParams.PaymentMethodData.Sofort.Country
   inline def DE: DE = "DE".asInstanceOf[DE]
+  
+  @js.native
+  sealed trait DELETE extends StObject
+  inline def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
   
   @js.native
   sealed trait DJ
@@ -3815,7 +3855,6 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodData.Sofort.Country
        with typings.stripe.mod.Stripe.Subscription.PaymentSettings.PaymentMethodOptions.CustomerBalance.BankTransfer.EuBankTransfer.Country
        with typings.stripe.mod.Stripe.PaymentIntent.PaymentMethodOptions.CustomerBalance.BankTransfer.EuBankTransfer.Country
-       with typings.stripe.mod.Stripe.Order.Payment.Settings.PaymentMethodOptions.CustomerBalance.BankTransfer.EuBankTransfer.Country
        with typings.stripe.mod.Stripe.SetupIntentConfirmParams.PaymentMethodData.Sofort.Country
        with typings.stripe.mod.Stripe.SetupIntentCreateParams.PaymentMethodData.Sofort.Country
   inline def ES: ES = "ES".asInstanceOf[ES]
@@ -4500,7 +4539,6 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.Checkout.Session.PaymentMethodOptions.CustomerBalance.BankTransfer.EuBankTransfer.Country
        with typings.stripe.mod.Stripe.Subscription.PaymentSettings.PaymentMethodOptions.CustomerBalance.BankTransfer.EuBankTransfer.Country
        with typings.stripe.mod.Stripe.PaymentIntent.PaymentMethodOptions.CustomerBalance.BankTransfer.EuBankTransfer.Country
-       with typings.stripe.mod.Stripe.Order.Payment.Settings.PaymentMethodOptions.CustomerBalance.BankTransfer.EuBankTransfer.Country
   inline def FR: FR = "FR".asInstanceOf[FR]
   
   @js.native
@@ -4563,6 +4601,10 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.PaymentLinkUpdateParams.ShippingAddressCollection.AllowedCountry
        with typings.stripe.mod.Stripe.PaymentLink.ShippingAddressCollection.AllowedCountry
   inline def GE: GE = "GE".asInstanceOf[GE]
+  
+  @js.native
+  sealed trait GET extends StObject
+  inline def GET: GET = "GET".asInstanceOf[GET]
   
   @js.native
   sealed trait GF
@@ -4836,7 +4878,6 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.Checkout.Session.PaymentMethodOptions.CustomerBalance.BankTransfer.EuBankTransfer.Country
        with typings.stripe.mod.Stripe.Subscription.PaymentSettings.PaymentMethodOptions.CustomerBalance.BankTransfer.EuBankTransfer.Country
        with typings.stripe.mod.Stripe.PaymentIntent.PaymentMethodOptions.CustomerBalance.BankTransfer.EuBankTransfer.Country
-       with typings.stripe.mod.Stripe.Order.Payment.Settings.PaymentMethodOptions.CustomerBalance.BankTransfer.EuBankTransfer.Country
   inline def IE: IE = "IE".asInstanceOf[IE]
   
   @js.native
@@ -5611,7 +5652,6 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodData.Sofort.Country
        with typings.stripe.mod.Stripe.Subscription.PaymentSettings.PaymentMethodOptions.CustomerBalance.BankTransfer.EuBankTransfer.Country
        with typings.stripe.mod.Stripe.PaymentIntent.PaymentMethodOptions.CustomerBalance.BankTransfer.EuBankTransfer.Country
-       with typings.stripe.mod.Stripe.Order.Payment.Settings.PaymentMethodOptions.CustomerBalance.BankTransfer.EuBankTransfer.Country
        with typings.stripe.mod.Stripe.SetupIntentConfirmParams.PaymentMethodData.Sofort.Country
        with typings.stripe.mod.Stripe.SetupIntentCreateParams.PaymentMethodData.Sofort.Country
   inline def NL: NL = "NL".asInstanceOf[NL]
@@ -5780,6 +5820,10 @@ object stripeStrings {
   inline def PN: PN = "PN".asInstanceOf[PN]
   
   @js.native
+  sealed trait POST extends StObject
+  inline def POST: POST = "POST".asInstanceOf[POST]
+  
+  @js.native
   sealed trait PR
     extends StObject
        with AllowedCountry
@@ -5820,6 +5864,10 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.PaymentLinkUpdateParams.ShippingAddressCollection.AllowedCountry
        with typings.stripe.mod.Stripe.PaymentLink.ShippingAddressCollection.AllowedCountry
   inline def PT: PT = "PT".asInstanceOf[PT]
+  
+  @js.native
+  sealed trait PUT extends StObject
+  inline def PUT: PUT = "PUT".asInstanceOf[PUT]
   
   @js.native
   sealed trait PY
@@ -6118,6 +6166,78 @@ object stripeStrings {
   inline def QA: QA = "QA".asInstanceOf[QA]
   
   @js.native
+  sealed trait R02
+    extends StObject
+       with NetworkCode
+  inline def R02: R02 = "R02".asInstanceOf[R02]
+  
+  @js.native
+  sealed trait R03
+    extends StObject
+       with NetworkCode
+  inline def R03: R03 = "R03".asInstanceOf[R03]
+  
+  @js.native
+  sealed trait R04
+    extends StObject
+       with NetworkCode
+  inline def R04: R04 = "R04".asInstanceOf[R04]
+  
+  @js.native
+  sealed trait R05
+    extends StObject
+       with NetworkCode
+  inline def R05: R05 = "R05".asInstanceOf[R05]
+  
+  @js.native
+  sealed trait R07
+    extends StObject
+       with NetworkCode
+  inline def R07: R07 = "R07".asInstanceOf[R07]
+  
+  @js.native
+  sealed trait R08
+    extends StObject
+       with NetworkCode
+  inline def R08: R08 = "R08".asInstanceOf[R08]
+  
+  @js.native
+  sealed trait R10
+    extends StObject
+       with NetworkCode
+  inline def R10: R10 = "R10".asInstanceOf[R10]
+  
+  @js.native
+  sealed trait R11
+    extends StObject
+       with NetworkCode
+  inline def R11: R11 = "R11".asInstanceOf[R11]
+  
+  @js.native
+  sealed trait R16
+    extends StObject
+       with NetworkCode
+  inline def R16: R16 = "R16".asInstanceOf[R16]
+  
+  @js.native
+  sealed trait R20
+    extends StObject
+       with NetworkCode
+  inline def R20: R20 = "R20".asInstanceOf[R20]
+  
+  @js.native
+  sealed trait R29
+    extends StObject
+       with NetworkCode
+  inline def R29: R29 = "R29".asInstanceOf[R29]
+  
+  @js.native
+  sealed trait R31
+    extends StObject
+       with NetworkCode
+  inline def R31: R31 = "R31".asInstanceOf[R31]
+  
+  @js.native
   sealed trait RABONL2U
     extends StObject
        with Bic
@@ -6142,6 +6262,14 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.PaymentLinkUpdateParams.ShippingAddressCollection.AllowedCountry
        with typings.stripe.mod.Stripe.PaymentLink.ShippingAddressCollection.AllowedCountry
   inline def RE: RE = "RE".asInstanceOf[RE]
+  
+  @js.native
+  sealed trait REVOIE23
+    extends StObject
+       with Bic
+       with typings.stripe.mod.Stripe.SetupAttempt.PaymentMethodDetails.Ideal.Bic
+       with typings.stripe.mod.Stripe.Charge.PaymentMethodDetails.Ideal.Bic
+  inline def REVOIE23: REVOIE23 = "REVOIE23".asInstanceOf[REVOIE23]
   
   @js.native
   sealed trait REVOLT21
@@ -6406,6 +6534,50 @@ object stripeStrings {
     extends StObject
        with Timezone
   inline def Singapore: Singapore = "Singapore".asInstanceOf[Singapore]
+  
+  @js.native
+  sealed trait StripeAPIError extends StObject
+  inline def StripeAPIError: StripeAPIError = "StripeAPIError".asInstanceOf[StripeAPIError]
+  
+  @js.native
+  sealed trait StripeAuthenticationError extends StObject
+  inline def StripeAuthenticationError: StripeAuthenticationError = "StripeAuthenticationError".asInstanceOf[StripeAuthenticationError]
+  
+  @js.native
+  sealed trait StripeCardError extends StObject
+  inline def StripeCardError: StripeCardError = "StripeCardError".asInstanceOf[StripeCardError]
+  
+  @js.native
+  sealed trait StripeConnectionError extends StObject
+  inline def StripeConnectionError: StripeConnectionError = "StripeConnectionError".asInstanceOf[StripeConnectionError]
+  
+  @js.native
+  sealed trait StripeError extends StObject
+  inline def StripeError: StripeError = "StripeError".asInstanceOf[StripeError]
+  
+  @js.native
+  sealed trait StripeIdempotencyError extends StObject
+  inline def StripeIdempotencyError: StripeIdempotencyError = "StripeIdempotencyError".asInstanceOf[StripeIdempotencyError]
+  
+  @js.native
+  sealed trait StripeInvalidGrantError extends StObject
+  inline def StripeInvalidGrantError: StripeInvalidGrantError = "StripeInvalidGrantError".asInstanceOf[StripeInvalidGrantError]
+  
+  @js.native
+  sealed trait StripeInvalidRequestError extends StObject
+  inline def StripeInvalidRequestError: StripeInvalidRequestError = "StripeInvalidRequestError".asInstanceOf[StripeInvalidRequestError]
+  
+  @js.native
+  sealed trait StripePermissionError extends StObject
+  inline def StripePermissionError: StripePermissionError = "StripePermissionError".asInstanceOf[StripePermissionError]
+  
+  @js.native
+  sealed trait StripeRateLimitError extends StObject
+  inline def StripeRateLimitError: StripeRateLimitError = "StripeRateLimitError".asInstanceOf[StripeRateLimitError]
+  
+  @js.native
+  sealed trait StripeSignatureVerificationError extends StObject
+  inline def StripeSignatureVerificationError: StripeSignatureVerificationError = "StripeSignatureVerificationError".asInstanceOf[StripeSignatureVerificationError]
   
   @js.native
   sealed trait TA
@@ -6906,6 +7078,10 @@ object stripeStrings {
   inline def Zulu: Zulu = "Zulu".asInstanceOf[Zulu]
   
   @js.native
+  sealed trait _empty extends StObject
+  inline def _empty: _empty = "".asInstanceOf[_empty]
+  
+  @js.native
   sealed trait aba extends StObject
   inline def aba: aba = "aba".asInstanceOf[aba]
   
@@ -7160,15 +7336,12 @@ object stripeStrings {
   @js.native
   sealed trait acss_debit
     extends StObject
-       with typings.stripe.mod.Stripe.OrderCreateParams.Payment.Settings.PaymentMethodType
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodType
        with PaymentMethodType
        with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.PaymentMethodType
        with typings.stripe.mod.Stripe.Subscription.PaymentSettings.PaymentMethodType
        with typings.stripe.mod.Stripe.SubscriptionUpdateParams.PaymentSettings.PaymentMethodType
        with typings.stripe.mod.Stripe.InvoiceCreateParams.PaymentSettings.PaymentMethodType
        with typings.stripe.mod.Stripe.SubscriptionCreateParams.PaymentSettings.PaymentMethodType
-       with typings.stripe.mod.Stripe.Order.Payment.Settings.PaymentMethodType
        with typings.stripe.mod.Stripe.InvoiceUpdateParams.PaymentSettings.PaymentMethodType
        with typings.stripe.mod.Stripe.Source.Type
        with typings.stripe.mod.Stripe.SetupIntentUpdateParams.PaymentMethodData.Type
@@ -7212,11 +7385,13 @@ object stripeStrings {
        with CardIssuing
        with CardPayments
        with CartesBancairesPayments
+       with CashappPayments
        with EpsPayments
        with FpxPayments
        with GiropayPayments
        with GrabpayPayments
        with IdealPayments
+       with IndiaInternationalPayments
        with JcbPayments
        with KlarnaPayments
        with KonbiniPayments
@@ -7327,13 +7502,13 @@ object stripeStrings {
   sealed trait ae_trn
     extends StObject
        with typings.stripe.mod.Stripe.CustomerCreateParams.TaxIdDatum.Type
-       with typings.stripe.mod.Stripe.OrderCreateParams.TaxDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.OrderUpdateParams.TaxDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Invoice.CustomerTaxId.Type
        with typings.stripe.mod.Stripe.InvoiceRetrieveUpcomingParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.InvoiceListUpcomingLinesParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Checkout.Session.CustomerDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.Order.TaxDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Transaction.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Calculation.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.CalculationCreateParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.TaxIdCreateParams.Type
        with typings.stripe.mod.Stripe.TaxId.Type
   inline def ae_trn: ae_trn = "ae_trn".asInstanceOf[ae_trn]
@@ -7374,11 +7549,8 @@ object stripeStrings {
   @js.native
   sealed trait afterpay_clearpay
     extends StObject
-       with typings.stripe.mod.Stripe.OrderCreateParams.Payment.Settings.PaymentMethodType
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodType
        with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.PaymentMethodType
        with typings.stripe.mod.Stripe.PaymentLinkCreateParams.PaymentMethodType
-       with typings.stripe.mod.Stripe.Order.Payment.Settings.PaymentMethodType
        with typings.stripe.mod.Stripe.PaymentLinkUpdateParams.PaymentMethodType
        with typings.stripe.mod.Stripe.PaymentLink.PaymentMethodType
        with typings.stripe.mod.Stripe.SetupIntentUpdateParams.PaymentMethodData.Type
@@ -7493,11 +7665,8 @@ object stripeStrings {
   @js.native
   sealed trait alipay
     extends StObject
-       with typings.stripe.mod.Stripe.OrderCreateParams.Payment.Settings.PaymentMethodType
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodType
        with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.PaymentMethodType
        with typings.stripe.mod.Stripe.PaymentLinkCreateParams.PaymentMethodType
-       with typings.stripe.mod.Stripe.Order.Payment.Settings.PaymentMethodType
        with typings.stripe.mod.Stripe.PaymentLinkUpdateParams.PaymentMethodType
        with typings.stripe.mod.Stripe.PaymentLink.PaymentMethodType
        with typings.stripe.mod.Stripe.Source.Type
@@ -7594,6 +7763,7 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.SubscriptionCreateParams.ProrationBehavior
        with typings.stripe.mod.Stripe.SubscriptionScheduleCreateParams.Phase.ProrationBehavior
        with typings.stripe.mod.Stripe.SubscriptionSchedule.Phase.ProrationBehavior
+       with typings.stripe.mod.Stripe.SubscriptionResumeParams.ProrationBehavior
        with SubscriptionProrationBehavior
        with typings.stripe.mod.Stripe.InvoiceListUpcomingLinesParams.SubscriptionProrationBehavior
   inline def always_invoice: always_invoice = "always_invoice".asInstanceOf[always_invoice]
@@ -7692,13 +7862,10 @@ object stripeStrings {
   sealed trait android
     extends StObject
        with Client
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.WechatPay.Client
-       with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.WechatPay.Client
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.WechatPay.Client
        with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.PaymentMethodOptions.WechatPay.Client
        with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.WechatPay.Client
        with typings.stripe.mod.Stripe.PaymentIntent.PaymentMethodOptions.WechatPay.Client
-       with typings.stripe.mod.Stripe.Order.Payment.Settings.PaymentMethodOptions.WechatPay.Client
   inline def android: android = "android".asInstanceOf[android]
   
   @js.native
@@ -7776,6 +7943,7 @@ object stripeStrings {
   @js.native
   sealed trait api_error
     extends StObject
+       with RawErrorType
        with typings.stripe.mod.Stripe.Invoice.LastFinalizationError.Type
        with typings.stripe.mod.Stripe.SetupAttempt.SetupError.Type
        with typings.stripe.mod.Stripe.PaymentIntent.LastPaymentError.Type
@@ -7786,6 +7954,7 @@ object stripeStrings {
   sealed trait apple_pay
     extends StObject
        with typings.stripe.mod.Stripe.PaymentMethod.Card.Wallet.Type
+       with typings.stripe.mod.Stripe.SetupAttempt.PaymentMethodDetails.Card.Wallet.Type
        with typings.stripe.mod.Stripe.Charge.PaymentMethodDetails.Card.Wallet.Type
        with Wallet
   inline def apple_pay: apple_pay = "apple_pay".asInstanceOf[apple_pay]
@@ -7995,13 +8164,13 @@ object stripeStrings {
   sealed trait au_abn
     extends StObject
        with typings.stripe.mod.Stripe.CustomerCreateParams.TaxIdDatum.Type
-       with typings.stripe.mod.Stripe.OrderCreateParams.TaxDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.OrderUpdateParams.TaxDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Invoice.CustomerTaxId.Type
        with typings.stripe.mod.Stripe.InvoiceRetrieveUpcomingParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.InvoiceListUpcomingLinesParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Checkout.Session.CustomerDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.Order.TaxDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Transaction.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Calculation.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.CalculationCreateParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.TaxIdCreateParams.Type
        with typings.stripe.mod.Stripe.TaxId.Type
   inline def au_abn: au_abn = "au_abn".asInstanceOf[au_abn]
@@ -8010,13 +8179,13 @@ object stripeStrings {
   sealed trait au_arn
     extends StObject
        with typings.stripe.mod.Stripe.CustomerCreateParams.TaxIdDatum.Type
-       with typings.stripe.mod.Stripe.OrderCreateParams.TaxDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.OrderUpdateParams.TaxDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Invoice.CustomerTaxId.Type
        with typings.stripe.mod.Stripe.InvoiceRetrieveUpcomingParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.InvoiceListUpcomingLinesParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Checkout.Session.CustomerDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.Order.TaxDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Transaction.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Calculation.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.CalculationCreateParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.TaxIdCreateParams.Type
        with typings.stripe.mod.Stripe.TaxId.Type
   inline def au_arn: au_arn = "au_arn".asInstanceOf[au_arn]
@@ -8024,8 +8193,6 @@ object stripeStrings {
   @js.native
   sealed trait au_becs_debit
     extends StObject
-       with typings.stripe.mod.Stripe.OrderCreateParams.Payment.Settings.PaymentMethodType
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodType
        with PaymentMethodType
        with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.PaymentMethodType
        with typings.stripe.mod.Stripe.Subscription.PaymentSettings.PaymentMethodType
@@ -8033,7 +8200,6 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.SubscriptionUpdateParams.PaymentSettings.PaymentMethodType
        with typings.stripe.mod.Stripe.InvoiceCreateParams.PaymentSettings.PaymentMethodType
        with typings.stripe.mod.Stripe.SubscriptionCreateParams.PaymentSettings.PaymentMethodType
-       with typings.stripe.mod.Stripe.Order.Payment.Settings.PaymentMethodType
        with typings.stripe.mod.Stripe.PaymentLinkUpdateParams.PaymentMethodType
        with typings.stripe.mod.Stripe.InvoiceUpdateParams.PaymentSettings.PaymentMethodType
        with typings.stripe.mod.Stripe.PaymentLink.PaymentMethodType
@@ -8070,6 +8236,16 @@ object stripeStrings {
        with Result
        with typings.stripe.mod.Stripe.Charge.PaymentMethodDetails.Card.ThreeDSecure.Result
   inline def authenticated: authenticated = "authenticated".asInstanceOf[authenticated]
+  
+  @js.native
+  sealed trait authentication_error
+    extends StObject
+       with RawErrorType
+  inline def authentication_error: authentication_error = "authentication_error".asInstanceOf[authentication_error]
+  
+  @js.native
+  sealed trait authorization_code extends StObject
+  inline def authorization_code: authorization_code = "authorization_code".asInstanceOf[authorization_code]
   
   @js.native
   sealed trait auto
@@ -8245,17 +8421,11 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.SubscriptionSchedule.Phase.BillingCycleAnchor
        with typings.stripe.mod.Stripe.PaymentIntent.CancellationReason
        with CaptureMethod
-       with typings.stripe.mod.Stripe.OrderCreateParams.Payment.Settings.PaymentMethodOptions.AfterpayClearpay.CaptureMethod
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.Card.CaptureMethod
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.AfterpayClearpay.CaptureMethod
-       with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.CaptureMethod
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.CaptureMethod
        with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.PaymentIntentData.CaptureMethod
        with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.CaptureMethod
        with typings.stripe.mod.Stripe.PaymentLinkCreateParams.PaymentIntentData.CaptureMethod
        with typings.stripe.mod.Stripe.PaymentIntent.CaptureMethod
-       with typings.stripe.mod.Stripe.Order.Payment.Settings.PaymentMethodOptions.Card.CaptureMethod
-       with typings.stripe.mod.Stripe.Order.Payment.Settings.PaymentMethodOptions.AfterpayClearpay.CaptureMethod
        with typings.stripe.mod.Stripe.PaymentLink.PaymentIntentData.CaptureMethod
        with ConfirmationMethod
        with typings.stripe.mod.Stripe.PaymentIntent.ConfirmationMethod
@@ -8279,8 +8449,6 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.SetupIntent.PaymentMethodOptions.Card.RequestThreeDSecure
        with VerificationMethod
        with typings.stripe.mod.Stripe.SetupIntentUpdateParams.PaymentMethodOptions.AcssDebit.VerificationMethod
-       with typings.stripe.mod.Stripe.OrderCreateParams.Payment.Settings.PaymentMethodOptions.AcssDebit.VerificationMethod
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.AcssDebit.VerificationMethod
        with typings.stripe.mod.Stripe.Invoice.PaymentSettings.PaymentMethodOptions.UsBankAccount.VerificationMethod
        with typings.stripe.mod.Stripe.Invoice.PaymentSettings.PaymentMethodOptions.AcssDebit.VerificationMethod
        with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.UsBankAccount.VerificationMethod
@@ -8303,7 +8471,6 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.InvoiceCreateParams.PaymentSettings.PaymentMethodOptions.AcssDebit.VerificationMethod
        with typings.stripe.mod.Stripe.SubscriptionCreateParams.PaymentSettings.PaymentMethodOptions.UsBankAccount.VerificationMethod
        with typings.stripe.mod.Stripe.SubscriptionCreateParams.PaymentSettings.PaymentMethodOptions.AcssDebit.VerificationMethod
-       with typings.stripe.mod.Stripe.Order.Payment.Settings.PaymentMethodOptions.AcssDebit.VerificationMethod
        with typings.stripe.mod.Stripe.SetupIntentConfirmParams.PaymentMethodOptions.UsBankAccount.VerificationMethod
        with typings.stripe.mod.Stripe.SetupIntentConfirmParams.PaymentMethodOptions.AcssDebit.VerificationMethod
        with typings.stripe.mod.Stripe.InvoiceUpdateParams.PaymentSettings.PaymentMethodOptions.UsBankAccount.VerificationMethod
@@ -8313,6 +8480,18 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.SetupIntent.PaymentMethodOptions.UsBankAccount.VerificationMethod
        with typings.stripe.mod.Stripe.SetupIntent.PaymentMethodOptions.AcssDebit.VerificationMethod
   inline def automatic: automatic = "automatic".asInstanceOf[automatic]
+  
+  @js.native
+  sealed trait automatic_async
+    extends StObject
+       with CaptureMethod
+       with typings.stripe.mod.Stripe.PaymentIntentCreateParams.CaptureMethod
+       with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.PaymentIntentData.CaptureMethod
+       with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.CaptureMethod
+       with typings.stripe.mod.Stripe.PaymentLinkCreateParams.PaymentIntentData.CaptureMethod
+       with typings.stripe.mod.Stripe.PaymentIntent.CaptureMethod
+       with typings.stripe.mod.Stripe.PaymentLink.PaymentIntentData.CaptureMethod
+  inline def automatic_async: automatic_async = "automatic_async".asInstanceOf[automatic_async]
   
   @js.native
   sealed trait automatic_pending_invoice_item_invoice
@@ -8399,8 +8578,6 @@ object stripeStrings {
   @js.native
   sealed trait bacs_debit
     extends StObject
-       with typings.stripe.mod.Stripe.OrderCreateParams.Payment.Settings.PaymentMethodType
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodType
        with PaymentMethodType
        with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.PaymentMethodType
        with typings.stripe.mod.Stripe.Subscription.PaymentSettings.PaymentMethodType
@@ -8408,7 +8585,6 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.SubscriptionUpdateParams.PaymentSettings.PaymentMethodType
        with typings.stripe.mod.Stripe.InvoiceCreateParams.PaymentSettings.PaymentMethodType
        with typings.stripe.mod.Stripe.SubscriptionCreateParams.PaymentSettings.PaymentMethodType
-       with typings.stripe.mod.Stripe.Order.Payment.Settings.PaymentMethodType
        with typings.stripe.mod.Stripe.PaymentLinkUpdateParams.PaymentMethodType
        with typings.stripe.mod.Stripe.InvoiceUpdateParams.PaymentSettings.PaymentMethodType
        with typings.stripe.mod.Stripe.PaymentLink.PaymentMethodType
@@ -8516,8 +8692,6 @@ object stripeStrings {
   @js.native
   sealed trait bancontact
     extends StObject
-       with typings.stripe.mod.Stripe.OrderCreateParams.Payment.Settings.PaymentMethodType
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodType
        with PaymentMethodType
        with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.PaymentMethodType
        with typings.stripe.mod.Stripe.Subscription.PaymentSettings.PaymentMethodType
@@ -8525,7 +8699,6 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.SubscriptionUpdateParams.PaymentSettings.PaymentMethodType
        with typings.stripe.mod.Stripe.InvoiceCreateParams.PaymentSettings.PaymentMethodType
        with typings.stripe.mod.Stripe.SubscriptionCreateParams.PaymentSettings.PaymentMethodType
-       with typings.stripe.mod.Stripe.Order.Payment.Settings.PaymentMethodType
        with typings.stripe.mod.Stripe.PaymentLinkUpdateParams.PaymentMethodType
        with typings.stripe.mod.Stripe.InvoiceUpdateParams.PaymentSettings.PaymentMethodType
        with typings.stripe.mod.Stripe.PaymentLink.PaymentMethodType
@@ -8576,6 +8749,24 @@ object stripeStrings {
   inline def bank_account: bank_account = "bank_account".asInstanceOf[bank_account]
   
   @js.native
+  sealed trait bank_account_closed
+    extends StObject
+       with typings.stripe.mod.Stripe.PaymentMethod.UsBankAccount.StatusDetails.Blocked.Reason
+  inline def bank_account_closed: bank_account_closed = "bank_account_closed".asInstanceOf[bank_account_closed]
+  
+  @js.native
+  sealed trait bank_account_frozen
+    extends StObject
+       with typings.stripe.mod.Stripe.PaymentMethod.UsBankAccount.StatusDetails.Blocked.Reason
+  inline def bank_account_frozen: bank_account_frozen = "bank_account_frozen".asInstanceOf[bank_account_frozen]
+  
+  @js.native
+  sealed trait bank_account_invalid_details
+    extends StObject
+       with typings.stripe.mod.Stripe.PaymentMethod.UsBankAccount.StatusDetails.Blocked.Reason
+  inline def bank_account_invalid_details: bank_account_invalid_details = "bank_account_invalid_details".asInstanceOf[bank_account_invalid_details]
+  
+  @js.native
   sealed trait bank_account_restricted
     extends StObject
        with typings.stripe.mod.Stripe.TestHelpers.Treasury.InboundTransferFailParams.FailureDetails.Code
@@ -8584,7 +8775,14 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.Treasury.InboundTransfer.FailureDetails.Code
        with typings.stripe.mod.Stripe.Treasury.OutboundPayment.ReturnedDetails.Code
        with typings.stripe.mod.Stripe.Treasury.OutboundTransfer.ReturnedDetails.Code
+       with typings.stripe.mod.Stripe.PaymentMethod.UsBankAccount.StatusDetails.Blocked.Reason
   inline def bank_account_restricted: bank_account_restricted = "bank_account_restricted".asInstanceOf[bank_account_restricted]
+  
+  @js.native
+  sealed trait bank_account_unusable
+    extends StObject
+       with typings.stripe.mod.Stripe.PaymentMethod.UsBankAccount.StatusDetails.Blocked.Reason
+  inline def bank_account_unusable: bank_account_unusable = "bank_account_unusable".asInstanceOf[bank_account_unusable]
   
   @js.native
   sealed trait bank_austria
@@ -8814,6 +9012,10 @@ object stripeStrings {
   inline def bbpos_wisepos_e: bbpos_wisepos_e = "bbpos_wisepos_e".asInstanceOf[bbpos_wisepos_e]
   
   @js.native
+  sealed trait bearer extends StObject
+  inline def bearer: bearer = "bearer".asInstanceOf[bearer]
+  
+  @js.native
   sealed trait betting_casino_gambling
     extends StObject
        with _AllowedCategory
@@ -8849,13 +9051,13 @@ object stripeStrings {
   sealed trait bg_uic
     extends StObject
        with typings.stripe.mod.Stripe.CustomerCreateParams.TaxIdDatum.Type
-       with typings.stripe.mod.Stripe.OrderCreateParams.TaxDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.OrderUpdateParams.TaxDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Invoice.CustomerTaxId.Type
        with typings.stripe.mod.Stripe.InvoiceRetrieveUpcomingParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.InvoiceListUpcomingLinesParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Checkout.Session.CustomerDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.Order.TaxDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Transaction.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Calculation.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.CalculationCreateParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.TaxIdCreateParams.Type
        with typings.stripe.mod.Stripe.TaxId.Type
   inline def bg_uic: bg_uic = "bg_uic".asInstanceOf[bg_uic]
@@ -8905,6 +9107,14 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
        with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def billiard_pool_establishments: billiard_pool_establishments = "billiard_pool_establishments".asInstanceOf[billiard_pool_establishments]
+  
+  @js.native
+  sealed trait billing
+    extends StObject
+       with AddressSource
+       with typings.stripe.mod.Stripe.Tax.Calculation.CustomerDetails.AddressSource
+       with typings.stripe.mod.Stripe.Tax.CalculationCreateParams.CustomerDetails.AddressSource
+  inline def billing: billing = "billing".asInstanceOf[billing]
   
   @js.native
   sealed trait billing_address
@@ -9171,13 +9381,13 @@ object stripeStrings {
   sealed trait br_cnpj
     extends StObject
        with typings.stripe.mod.Stripe.CustomerCreateParams.TaxIdDatum.Type
-       with typings.stripe.mod.Stripe.OrderCreateParams.TaxDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.OrderUpdateParams.TaxDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Invoice.CustomerTaxId.Type
        with typings.stripe.mod.Stripe.InvoiceRetrieveUpcomingParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.InvoiceListUpcomingLinesParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Checkout.Session.CustomerDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.Order.TaxDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Transaction.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Calculation.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.CalculationCreateParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.TaxIdCreateParams.Type
        with typings.stripe.mod.Stripe.TaxId.Type
   inline def br_cnpj: br_cnpj = "br_cnpj".asInstanceOf[br_cnpj]
@@ -9188,13 +9398,13 @@ object stripeStrings {
        with IdNumberType
        with typings.stripe.mod.Stripe.Identity.VerificationSession.VerifiedOutputs.IdNumberType
        with typings.stripe.mod.Stripe.CustomerCreateParams.TaxIdDatum.Type
-       with typings.stripe.mod.Stripe.OrderCreateParams.TaxDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.OrderUpdateParams.TaxDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Invoice.CustomerTaxId.Type
        with typings.stripe.mod.Stripe.InvoiceRetrieveUpcomingParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.InvoiceListUpcomingLinesParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Checkout.Session.CustomerDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.Order.TaxDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Transaction.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Calculation.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.CalculationCreateParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.TaxIdCreateParams.Type
        with typings.stripe.mod.Stripe.TaxId.Type
   inline def br_cpf: br_cpf = "br_cpf".asInstanceOf[br_cpf]
@@ -9240,13 +9450,6 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.SetupIntentConfirmParams.PaymentMethodData.Eps.Bank
        with typings.stripe.mod.Stripe.SetupIntentCreateParams.PaymentMethodData.Eps.Bank
   inline def btv_vier_lander_bank: btv_vier_lander_bank = "btv_vier_lander_bank".asInstanceOf[btv_vier_lander_bank]
-  
-  @js.native
-  sealed trait bucket
-    extends StObject
-       with typings.stripe.mod.Stripe.SkuCreateParams.Inventory.Type
-       with typings.stripe.mod.Stripe.SkuUpdateParams.Inventory.Type
-  inline def bucket: bucket = "bucket".asInstanceOf[bucket]
   
   @js.native
   sealed trait bulk
@@ -9297,8 +9500,6 @@ object stripeStrings {
   sealed trait business
     extends StObject
        with TransactionType
-       with typings.stripe.mod.Stripe.OrderCreateParams.Payment.Settings.PaymentMethodOptions.AcssDebit.MandateOptions.TransactionType
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.AcssDebit.MandateOptions.TransactionType
        with typings.stripe.mod.Stripe.Invoice.PaymentSettings.PaymentMethodOptions.AcssDebit.MandateOptions.TransactionType
        with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.AcssDebit.MandateOptions.TransactionType
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.AcssDebit.MandateOptions.TransactionType
@@ -9311,7 +9512,6 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.InvoiceCreateParams.PaymentSettings.PaymentMethodOptions.AcssDebit.MandateOptions.TransactionType
        with typings.stripe.mod.Stripe.SubscriptionCreateParams.PaymentSettings.PaymentMethodOptions.AcssDebit.MandateOptions.TransactionType
        with typings.stripe.mod.Stripe.Mandate.PaymentMethodDetails.AcssDebit.TransactionType
-       with typings.stripe.mod.Stripe.Order.Payment.Settings.PaymentMethodOptions.AcssDebit.MandateOptions.TransactionType
        with typings.stripe.mod.Stripe.SetupIntentConfirmParams.PaymentMethodOptions.AcssDebit.MandateOptions.TransactionType
        with typings.stripe.mod.Stripe.InvoiceUpdateParams.PaymentSettings.PaymentMethodOptions.AcssDebit.MandateOptions.TransactionType
        with typings.stripe.mod.Stripe.SetupIntentCreateParams.PaymentMethodOptions.AcssDebit.MandateOptions.TransactionType
@@ -9322,11 +9522,11 @@ object stripeStrings {
   sealed trait business_day
     extends StObject
        with Unit
-       with typings.stripe.mod.Stripe.OrderCreateParams.ShippingCost.ShippingRateData.DeliveryEstimate.Maximum.Unit
-       with typings.stripe.mod.Stripe.OrderUpdateParams.ShippingCost.ShippingRateData.DeliveryEstimate.Minimum.Unit
-       with typings.stripe.mod.Stripe.OrderUpdateParams.ShippingCost.ShippingRateData.DeliveryEstimate.Maximum.Unit
-       with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.ShippingOption.ShippingRateData.DeliveryEstimate.Minimum.Unit
        with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.ShippingOption.ShippingRateData.DeliveryEstimate.Maximum.Unit
+       with typings.stripe.mod.Stripe.InvoiceCreateParams.ShippingCost.ShippingRateData.DeliveryEstimate.Minimum.Unit
+       with typings.stripe.mod.Stripe.InvoiceCreateParams.ShippingCost.ShippingRateData.DeliveryEstimate.Maximum.Unit
+       with typings.stripe.mod.Stripe.InvoiceUpdateParams.ShippingCost.ShippingRateData.DeliveryEstimate.Minimum.Unit
+       with typings.stripe.mod.Stripe.InvoiceUpdateParams.ShippingCost.ShippingRateData.DeliveryEstimate.Maximum.Unit
        with typings.stripe.mod.Stripe.ShippingRateCreateParams.DeliveryEstimate.Minimum.Unit
        with typings.stripe.mod.Stripe.ShippingRateCreateParams.DeliveryEstimate.Maximum.Unit
        with typings.stripe.mod.Stripe.ShippingRate.DeliveryEstimate.Minimum.Unit
@@ -9404,13 +9604,13 @@ object stripeStrings {
   sealed trait ca_bn
     extends StObject
        with typings.stripe.mod.Stripe.CustomerCreateParams.TaxIdDatum.Type
-       with typings.stripe.mod.Stripe.OrderCreateParams.TaxDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.OrderUpdateParams.TaxDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Invoice.CustomerTaxId.Type
        with typings.stripe.mod.Stripe.InvoiceRetrieveUpcomingParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.InvoiceListUpcomingLinesParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Checkout.Session.CustomerDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.Order.TaxDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Transaction.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Calculation.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.CalculationCreateParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.TaxIdCreateParams.Type
        with typings.stripe.mod.Stripe.TaxId.Type
   inline def ca_bn: ca_bn = "ca_bn".asInstanceOf[ca_bn]
@@ -9419,13 +9619,13 @@ object stripeStrings {
   sealed trait ca_gst_hst
     extends StObject
        with typings.stripe.mod.Stripe.CustomerCreateParams.TaxIdDatum.Type
-       with typings.stripe.mod.Stripe.OrderCreateParams.TaxDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.OrderUpdateParams.TaxDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Invoice.CustomerTaxId.Type
        with typings.stripe.mod.Stripe.InvoiceRetrieveUpcomingParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.InvoiceListUpcomingLinesParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Checkout.Session.CustomerDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.Order.TaxDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Transaction.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Calculation.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.CalculationCreateParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.TaxIdCreateParams.Type
        with typings.stripe.mod.Stripe.TaxId.Type
   inline def ca_gst_hst: ca_gst_hst = "ca_gst_hst".asInstanceOf[ca_gst_hst]
@@ -9434,13 +9634,13 @@ object stripeStrings {
   sealed trait ca_pst_bc
     extends StObject
        with typings.stripe.mod.Stripe.CustomerCreateParams.TaxIdDatum.Type
-       with typings.stripe.mod.Stripe.OrderCreateParams.TaxDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.OrderUpdateParams.TaxDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Invoice.CustomerTaxId.Type
        with typings.stripe.mod.Stripe.InvoiceRetrieveUpcomingParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.InvoiceListUpcomingLinesParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Checkout.Session.CustomerDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.Order.TaxDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Transaction.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Calculation.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.CalculationCreateParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.TaxIdCreateParams.Type
        with typings.stripe.mod.Stripe.TaxId.Type
   inline def ca_pst_bc: ca_pst_bc = "ca_pst_bc".asInstanceOf[ca_pst_bc]
@@ -9449,13 +9649,13 @@ object stripeStrings {
   sealed trait ca_pst_mb
     extends StObject
        with typings.stripe.mod.Stripe.CustomerCreateParams.TaxIdDatum.Type
-       with typings.stripe.mod.Stripe.OrderCreateParams.TaxDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.OrderUpdateParams.TaxDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Invoice.CustomerTaxId.Type
        with typings.stripe.mod.Stripe.InvoiceRetrieveUpcomingParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.InvoiceListUpcomingLinesParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Checkout.Session.CustomerDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.Order.TaxDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Transaction.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Calculation.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.CalculationCreateParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.TaxIdCreateParams.Type
        with typings.stripe.mod.Stripe.TaxId.Type
   inline def ca_pst_mb: ca_pst_mb = "ca_pst_mb".asInstanceOf[ca_pst_mb]
@@ -9464,13 +9664,13 @@ object stripeStrings {
   sealed trait ca_pst_sk
     extends StObject
        with typings.stripe.mod.Stripe.CustomerCreateParams.TaxIdDatum.Type
-       with typings.stripe.mod.Stripe.OrderCreateParams.TaxDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.OrderUpdateParams.TaxDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Invoice.CustomerTaxId.Type
        with typings.stripe.mod.Stripe.InvoiceRetrieveUpcomingParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.InvoiceListUpcomingLinesParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Checkout.Session.CustomerDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.Order.TaxDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Transaction.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Calculation.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.CalculationCreateParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.TaxIdCreateParams.Type
        with typings.stripe.mod.Stripe.TaxId.Type
   inline def ca_pst_sk: ca_pst_sk = "ca_pst_sk".asInstanceOf[ca_pst_sk]
@@ -9479,13 +9679,13 @@ object stripeStrings {
   sealed trait ca_qst
     extends StObject
        with typings.stripe.mod.Stripe.CustomerCreateParams.TaxIdDatum.Type
-       with typings.stripe.mod.Stripe.OrderCreateParams.TaxDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.OrderUpdateParams.TaxDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Invoice.CustomerTaxId.Type
        with typings.stripe.mod.Stripe.InvoiceRetrieveUpcomingParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.InvoiceListUpcomingLinesParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Checkout.Session.CustomerDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.Order.TaxDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Transaction.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Calculation.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.CalculationCreateParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.TaxIdCreateParams.Type
        with typings.stripe.mod.Stripe.TaxId.Type
   inline def ca_qst: ca_qst = "ca_qst".asInstanceOf[ca_qst]
@@ -9553,6 +9753,10 @@ object stripeStrings {
        with EndBehavior
        with typings.stripe.mod.Stripe.SubscriptionScheduleCreateParams.EndBehavior
        with typings.stripe.mod.Stripe.SubscriptionSchedule.EndBehavior
+       with MissingPaymentMethod
+       with typings.stripe.mod.Stripe.Subscription.TrialSettings.EndBehavior.MissingPaymentMethod
+       with typings.stripe.mod.Stripe.SubscriptionUpdateParams.TrialSettings.EndBehavior.MissingPaymentMethod
+       with typings.stripe.mod.Stripe.SubscriptionCreateParams.TrialSettings.EndBehavior.MissingPaymentMethod
   inline def cancel: cancel = "cancel".asInstanceOf[cancel]
   
   @js.native
@@ -9575,8 +9779,6 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.Topup.Status
        with typings.stripe.mod.Stripe.Subscription.Status
        with typings.stripe.mod.Stripe.PaymentIntent.Status
-       with typings.stripe.mod.Stripe.Order.Status
-       with typings.stripe.mod.Stripe.Order.Payment.Status
        with typings.stripe.mod.Stripe.SubscriptionSchedule.Status
        with typings.stripe.mod.Stripe.SubscriptionListParams.Status
        with typings.stripe.mod.Stripe.Treasury.InboundTransfer.Status
@@ -9590,6 +9792,12 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.Treasury.OutboundPaymentListParams.Status
        with typings.stripe.mod.Stripe.SetupIntent.Status
   inline def canceled: canceled = "canceled".asInstanceOf[canceled]
+  
+  @js.native
+  sealed trait cancellation_requested
+    extends StObject
+       with typings.stripe.mod.Stripe.Subscription.CancellationDetails.Reason
+  inline def cancellation_requested: cancellation_requested = "cancellation_requested".asInstanceOf[cancellation_requested]
   
   @js.native
   sealed trait candy_nut_and_confectionery_stores
@@ -9759,8 +9967,6 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.Treasury.ReceivedCredit.Network
        with typings.stripe.mod.Stripe.Treasury.ReceivedDebit.Network
        with Object
-       with typings.stripe.mod.Stripe.OrderCreateParams.Payment.Settings.PaymentMethodType
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodType
        with PaymentMethodType
        with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.PaymentMethodType
        with typings.stripe.mod.Stripe.Subscription.PaymentSettings.PaymentMethodType
@@ -9768,7 +9974,6 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.SubscriptionUpdateParams.PaymentSettings.PaymentMethodType
        with typings.stripe.mod.Stripe.InvoiceCreateParams.PaymentSettings.PaymentMethodType
        with typings.stripe.mod.Stripe.SubscriptionCreateParams.PaymentSettings.PaymentMethodType
-       with typings.stripe.mod.Stripe.Order.Payment.Settings.PaymentMethodType
        with typings.stripe.mod.Stripe.PaymentLinkUpdateParams.PaymentMethodType
        with typings.stripe.mod.Stripe.InvoiceUpdateParams.PaymentSettings.PaymentMethodType
        with typings.stripe.mod.Stripe.PaymentLink.PaymentMethodType
@@ -9799,6 +10004,7 @@ object stripeStrings {
   @js.native
   sealed trait card_error
     extends StObject
+       with RawErrorType
        with typings.stripe.mod.Stripe.Invoice.LastFinalizationError.Type
        with typings.stripe.mod.Stripe.SetupAttempt.SetupError.Type
        with typings.stripe.mod.Stripe.PaymentIntent.LastPaymentError.Type
@@ -9839,6 +10045,7 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.Source.Type
        with typings.stripe.mod.Stripe.SourceTransaction.Type
        with typings.stripe.mod.Stripe.PaymentMethod.Type
+       with typings.stripe.mod.Stripe.TestHelpers.Terminal.ReaderPresentPaymentMethodParams.Type
        with typings.stripe.mod.Stripe.CustomerListPaymentMethodsParams.Type
        with typings.stripe.mod.Stripe.PaymentMethodListParams.Type
   inline def card_present: card_present = "card_present".asInstanceOf[card_present]
@@ -9947,6 +10154,31 @@ object stripeStrings {
   inline def cash_balanceDotfunds_available: cash_balanceDotfunds_available = "cash_balance.funds_available".asInstanceOf[cash_balanceDotfunds_available]
   
   @js.native
+  sealed trait cashapp
+    extends StObject
+       with PaymentMethodType
+       with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.PaymentMethodType
+       with typings.stripe.mod.Stripe.Subscription.PaymentSettings.PaymentMethodType
+       with typings.stripe.mod.Stripe.PaymentLinkCreateParams.PaymentMethodType
+       with typings.stripe.mod.Stripe.SubscriptionUpdateParams.PaymentSettings.PaymentMethodType
+       with typings.stripe.mod.Stripe.InvoiceCreateParams.PaymentSettings.PaymentMethodType
+       with typings.stripe.mod.Stripe.SubscriptionCreateParams.PaymentSettings.PaymentMethodType
+       with typings.stripe.mod.Stripe.PaymentLinkUpdateParams.PaymentMethodType
+       with typings.stripe.mod.Stripe.InvoiceUpdateParams.PaymentSettings.PaymentMethodType
+       with typings.stripe.mod.Stripe.PaymentLink.PaymentMethodType
+       with typings.stripe.mod.Stripe.SetupIntentUpdateParams.PaymentMethodData.Type
+       with typings.stripe.mod.Stripe.PaymentMethod.Type
+       with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodData.Type
+       with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodData.Type
+       with typings.stripe.mod.Stripe.PaymentMethodCreateParams.Type
+       with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodData.Type
+       with typings.stripe.mod.Stripe.SetupIntentConfirmParams.PaymentMethodData.Type
+       with typings.stripe.mod.Stripe.SetupIntentCreateParams.PaymentMethodData.Type
+       with typings.stripe.mod.Stripe.CustomerListPaymentMethodsParams.Type
+       with typings.stripe.mod.Stripe.PaymentMethodListParams.Type
+  inline def cashapp: cashapp = "cashapp".asInstanceOf[cashapp]
+  
+  @js.native
   sealed trait caterers
     extends StObject
        with _AllowedCategory
@@ -9973,13 +10205,13 @@ object stripeStrings {
   sealed trait ch_vat
     extends StObject
        with typings.stripe.mod.Stripe.CustomerCreateParams.TaxIdDatum.Type
-       with typings.stripe.mod.Stripe.OrderCreateParams.TaxDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.OrderUpdateParams.TaxDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Invoice.CustomerTaxId.Type
        with typings.stripe.mod.Stripe.InvoiceRetrieveUpcomingParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.InvoiceListUpcomingLinesParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Checkout.Session.CustomerDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.Order.TaxDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Transaction.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Calculation.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.CalculationCreateParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.TaxIdCreateParams.Type
        with typings.stripe.mod.Stripe.TaxId.Type
   inline def ch_vat: ch_vat = "ch_vat".asInstanceOf[ch_vat]
@@ -10381,6 +10613,14 @@ object stripeStrings {
   inline def citi_handlowy: citi_handlowy = "citi_handlowy".asInstanceOf[citi_handlowy]
   
   @js.native
+  sealed trait city
+    extends StObject
+       with Level
+       with typings.stripe.mod.Stripe.Tax.Calculation.ShippingCost.TaxBreakdown.Jurisdiction.Level
+       with typings.stripe.mod.Stripe.Tax.CalculationLineItem.TaxBreakdown.Jurisdiction.Level
+  inline def city: city = "city".asInstanceOf[city]
+  
+  @js.native
   sealed trait civic_social_fraternal_associations
     extends StObject
        with _AllowedCategory
@@ -10407,13 +10647,13 @@ object stripeStrings {
   sealed trait cl_tin
     extends StObject
        with typings.stripe.mod.Stripe.CustomerCreateParams.TaxIdDatum.Type
-       with typings.stripe.mod.Stripe.OrderCreateParams.TaxDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.OrderUpdateParams.TaxDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Invoice.CustomerTaxId.Type
        with typings.stripe.mod.Stripe.InvoiceRetrieveUpcomingParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.InvoiceListUpcomingLinesParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Checkout.Session.CustomerDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.Order.TaxDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Transaction.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Calculation.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.CalculationCreateParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.TaxIdCreateParams.Type
        with typings.stripe.mod.Stripe.TaxId.Type
   inline def cl_tin: cl_tin = "cl_tin".asInstanceOf[cl_tin]
@@ -10479,6 +10719,10 @@ object stripeStrings {
   inline def clothing_rental: clothing_rental = "clothing_rental".asInstanceOf[clothing_rental]
   
   @js.native
+  sealed trait code extends StObject
+  inline def code: code = "code".asInstanceOf[code]
+  
+  @js.native
   sealed trait code_verification
     extends StObject
        with Flow
@@ -10511,8 +10755,6 @@ object stripeStrings {
   sealed trait combined
     extends StObject
        with PaymentSchedule
-       with typings.stripe.mod.Stripe.OrderCreateParams.Payment.Settings.PaymentMethodOptions.AcssDebit.MandateOptions.PaymentSchedule
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.AcssDebit.MandateOptions.PaymentSchedule
        with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.AcssDebit.MandateOptions.PaymentSchedule
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.AcssDebit.MandateOptions.PaymentSchedule
        with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.PaymentMethodOptions.AcssDebit.MandateOptions.PaymentSchedule
@@ -10520,7 +10762,6 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.AcssDebit.MandateOptions.PaymentSchedule
        with typings.stripe.mod.Stripe.PaymentIntent.PaymentMethodOptions.AcssDebit.MandateOptions.PaymentSchedule
        with typings.stripe.mod.Stripe.Mandate.PaymentMethodDetails.AcssDebit.PaymentSchedule
-       with typings.stripe.mod.Stripe.Order.Payment.Settings.PaymentMethodOptions.AcssDebit.MandateOptions.PaymentSchedule
        with typings.stripe.mod.Stripe.SetupIntentConfirmParams.PaymentMethodOptions.AcssDebit.MandateOptions.PaymentSchedule
        with typings.stripe.mod.Stripe.SetupIntentCreateParams.PaymentMethodOptions.AcssDebit.MandateOptions.PaymentSchedule
        with typings.stripe.mod.Stripe.SetupIntent.PaymentMethodOptions.AcssDebit.MandateOptions.PaymentSchedule
@@ -10670,14 +10911,12 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.Invoice.AutomaticTax.Status
        with typings.stripe.mod.Stripe.Checkout.Session.AutomaticTax.Status
        with typings.stripe.mod.Stripe.Checkout.Session.Status
-       with typings.stripe.mod.Stripe.Order.AutomaticTax.Status
-       with typings.stripe.mod.Stripe.Order.Status
-       with typings.stripe.mod.Stripe.Order.Payment.Status
   inline def complete: complete = "complete".asInstanceOf[complete]
   
   @js.native
   sealed trait completed
     extends StObject
+       with ReconciliationStatus
        with typings.stripe.mod.Stripe.SubscriptionSchedule.Status
        with typings.stripe.mod.Stripe.Treasury.DebitReversalListParams.Status
   inline def completed: completed = "completed".asInstanceOf[completed]
@@ -10889,6 +11128,8 @@ object stripeStrings {
   sealed trait contact_emv
     extends StObject
        with ReadMethod
+       with typings.stripe.mod.Stripe.PaymentMethod.CardPresent.ReadMethod
+       with typings.stripe.mod.Stripe.Charge.PaymentMethodDetails.InteracPresent.ReadMethod
        with typings.stripe.mod.Stripe.Charge.PaymentMethodDetails.CardPresent.ReadMethod
   inline def contact_emv: contact_emv = "contact_emv".asInstanceOf[contact_emv]
   
@@ -10916,6 +11157,8 @@ object stripeStrings {
   sealed trait contactless_emv
     extends StObject
        with ReadMethod
+       with typings.stripe.mod.Stripe.PaymentMethod.CardPresent.ReadMethod
+       with typings.stripe.mod.Stripe.Charge.PaymentMethodDetails.InteracPresent.ReadMethod
        with typings.stripe.mod.Stripe.Charge.PaymentMethodDetails.CardPresent.ReadMethod
   inline def contactless_emv: contactless_emv = "contactless_emv".asInstanceOf[contactless_emv]
   
@@ -10923,6 +11166,8 @@ object stripeStrings {
   sealed trait contactless_magstripe_mode
     extends StObject
        with ReadMethod
+       with typings.stripe.mod.Stripe.PaymentMethod.CardPresent.ReadMethod
+       with typings.stripe.mod.Stripe.Charge.PaymentMethodDetails.InteracPresent.ReadMethod
        with typings.stripe.mod.Stripe.Charge.PaymentMethodDetails.CardPresent.ReadMethod
   inline def contactless_magstripe_mode: contactless_magstripe_mode = "contactless_magstripe_mode".asInstanceOf[contactless_magstripe_mode]
   
@@ -11007,6 +11252,9 @@ object stripeStrings {
     extends StObject
        with ItemType
        with typings.stripe.mod.Stripe.Radar.ValueListCreateParams.ItemType
+       with Level
+       with typings.stripe.mod.Stripe.Tax.Calculation.ShippingCost.TaxBreakdown.Jurisdiction.Level
+       with typings.stripe.mod.Stripe.Tax.CalculationLineItem.TaxBreakdown.Jurisdiction.Level
   inline def country: country = "country".asInstanceOf[country]
   
   @js.native
@@ -11041,6 +11289,14 @@ object stripeStrings {
   @js.native
   sealed trait country_spec extends StObject
   inline def country_spec: country_spec = "country_spec".asInstanceOf[country_spec]
+  
+  @js.native
+  sealed trait county
+    extends StObject
+       with Level
+       with typings.stripe.mod.Stripe.Tax.Calculation.ShippingCost.TaxBreakdown.Jurisdiction.Level
+       with typings.stripe.mod.Stripe.Tax.CalculationLineItem.TaxBreakdown.Jurisdiction.Level
+  inline def county: county = "county".asInstanceOf[county]
   
   @js.native
   sealed trait coupon extends StObject
@@ -11114,11 +11370,21 @@ object stripeStrings {
   inline def court_costs: court_costs = "court_costs".asInstanceOf[court_costs]
   
   @js.native
+  sealed trait create_invoice
+    extends StObject
+       with MissingPaymentMethod
+       with typings.stripe.mod.Stripe.Subscription.TrialSettings.EndBehavior.MissingPaymentMethod
+       with typings.stripe.mod.Stripe.SubscriptionUpdateParams.TrialSettings.EndBehavior.MissingPaymentMethod
+       with typings.stripe.mod.Stripe.SubscriptionCreateParams.TrialSettings.EndBehavior.MissingPaymentMethod
+  inline def create_invoice: create_invoice = "create_invoice".asInstanceOf[create_invoice]
+  
+  @js.native
   sealed trait create_prorations
     extends StObject
        with ProrationBehavior
        with typings.stripe.mod.Stripe.SubscriptionScheduleUpdateParams.ProrationBehavior
        with typings.stripe.mod.Stripe.SubscriptionScheduleUpdateParams.Phase.ProrationBehavior
+       with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.SubscriptionData.ProrationBehavior
        with typings.stripe.mod.Stripe.SubscriptionItemUpdateParams.ProrationBehavior
        with typings.stripe.mod.Stripe.SubscriptionItemCreateParams.ProrationBehavior
        with typings.stripe.mod.Stripe.SubscriptionUpdateParams.ProrationBehavior
@@ -11131,6 +11397,7 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.SubscriptionCreateParams.ProrationBehavior
        with typings.stripe.mod.Stripe.SubscriptionScheduleCreateParams.Phase.ProrationBehavior
        with typings.stripe.mod.Stripe.SubscriptionSchedule.Phase.ProrationBehavior
+       with typings.stripe.mod.Stripe.SubscriptionResumeParams.ProrationBehavior
        with SubscriptionProrationBehavior
        with typings.stripe.mod.Stripe.InvoiceListUpcomingLinesParams.SubscriptionProrationBehavior
   inline def create_prorations: create_prorations = "create_prorations".asInstanceOf[create_prorations]
@@ -11275,6 +11542,22 @@ object stripeStrings {
   inline def cs: cs = "cs".asInstanceOf[cs]
   
   @js.native
+  sealed trait `cs-CZ`
+    extends StObject
+       with PreferredLocale
+       with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.Paypal.PreferredLocale
+       with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.Klarna.PreferredLocale
+       with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.Paypal.PreferredLocale
+       with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.PaymentMethodOptions.Paypal.PreferredLocale
+       with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.Klarna.PreferredLocale
+       with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.Paypal.PreferredLocale
+  inline def `cs-CZ`: `cs-CZ` = "cs-CZ".asInstanceOf[`cs-CZ`]
+  
+  @js.native
+  sealed trait current_period_end extends StObject
+  inline def current_period_end: current_period_end = "current_period_end".asInstanceOf[current_period_end]
+  
+  @js.native
   sealed trait currently_due
     extends StObject
        with Collect
@@ -11394,6 +11677,13 @@ object stripeStrings {
   inline def customerDotsubscriptionDotdeleted: customerDotsubscriptionDotdeleted = "customer.subscription.deleted".asInstanceOf[customerDotsubscriptionDotdeleted]
   
   @js.native
+  sealed trait customerDotsubscriptionDotpaused
+    extends StObject
+       with EnabledEvent
+       with typings.stripe.mod.Stripe.WebhookEndpointCreateParams.EnabledEvent
+  inline def customerDotsubscriptionDotpaused: customerDotsubscriptionDotpaused = "customer.subscription.paused".asInstanceOf[customerDotsubscriptionDotpaused]
+  
+  @js.native
   sealed trait customerDotsubscriptionDotpending_update_applied
     extends StObject
        with EnabledEvent
@@ -11406,6 +11696,13 @@ object stripeStrings {
        with EnabledEvent
        with typings.stripe.mod.Stripe.WebhookEndpointCreateParams.EnabledEvent
   inline def customerDotsubscriptionDotpending_update_expired: customerDotsubscriptionDotpending_update_expired = "customer.subscription.pending_update_expired".asInstanceOf[customerDotsubscriptionDotpending_update_expired]
+  
+  @js.native
+  sealed trait customerDotsubscriptionDotresumed
+    extends StObject
+       with EnabledEvent
+       with typings.stripe.mod.Stripe.WebhookEndpointCreateParams.EnabledEvent
+  inline def customerDotsubscriptionDotresumed: customerDotsubscriptionDotresumed = "customer.subscription.resumed".asInstanceOf[customerDotsubscriptionDotresumed]
   
   @js.native
   sealed trait customerDotsubscriptionDottrial_will_end
@@ -11452,15 +11749,12 @@ object stripeStrings {
   @js.native
   sealed trait customer_balance
     extends StObject
-       with typings.stripe.mod.Stripe.OrderCreateParams.Payment.Settings.PaymentMethodType
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodType
        with PaymentMethodType
        with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.PaymentMethodType
        with typings.stripe.mod.Stripe.Subscription.PaymentSettings.PaymentMethodType
        with typings.stripe.mod.Stripe.SubscriptionUpdateParams.PaymentSettings.PaymentMethodType
        with typings.stripe.mod.Stripe.InvoiceCreateParams.PaymentSettings.PaymentMethodType
        with typings.stripe.mod.Stripe.SubscriptionCreateParams.PaymentSettings.PaymentMethodType
-       with typings.stripe.mod.Stripe.Order.Payment.Settings.PaymentMethodType
        with typings.stripe.mod.Stripe.InvoiceUpdateParams.PaymentSettings.PaymentMethodType
        with typings.stripe.mod.Stripe.SetupIntentUpdateParams.PaymentMethodData.Type
        with typings.stripe.mod.Stripe.PaymentMethod.Type
@@ -11490,6 +11784,29 @@ object stripeStrings {
   inline def customer_cash_balance_transactionDotcreated: customer_cash_balance_transactionDotcreated = "customer_cash_balance_transaction.created".asInstanceOf[customer_cash_balance_transactionDotcreated]
   
   @js.native
+  sealed trait customer_exempt
+    extends StObject
+       with TaxabilityOverride
+       with typings.stripe.mod.Stripe.Tax.Calculation.CustomerDetails.TaxabilityOverride
+       with typings.stripe.mod.Stripe.Tax.CalculationCreateParams.CustomerDetails.TaxabilityOverride
+       with TaxabilityReason
+       with typings.stripe.mod.Stripe.Quote.Computed.Recurring.TotalDetails.Breakdown.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.Quote.TotalDetails.Breakdown.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.LineItem.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.Invoice.TotalTaxAmount.TaxabilityReason
+       with typings.stripe.mod.Stripe.Invoice.ShippingCost.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.Checkout.Session.TotalDetails.Breakdown.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.Checkout.Session.ShippingCost.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.Tax.Transaction.ShippingCost.TaxBreakdown.TaxabilityReason
+       with typings.stripe.mod.Stripe.Tax.Calculation.ShippingCost.TaxBreakdown.TaxabilityReason
+       with typings.stripe.mod.Stripe.Tax.CalculationLineItem.TaxBreakdown.TaxabilityReason
+       with typings.stripe.mod.Stripe.CreditNote.TaxAmount.TaxabilityReason
+       with typings.stripe.mod.Stripe.CreditNote.ShippingCost.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.CreditNoteLineItem.TaxAmount.TaxabilityReason
+       with typings.stripe.mod.Stripe.InvoiceLineItem.TaxAmount.TaxabilityReason
+  inline def customer_exempt: customer_exempt = "customer_exempt".asInstanceOf[customer_exempt]
+  
+  @js.native
   sealed trait customer_id
     extends StObject
        with ItemType
@@ -11499,6 +11816,10 @@ object stripeStrings {
   @js.native
   sealed trait customer_service
     extends StObject
+       with Feedback
+       with typings.stripe.mod.Stripe.SubscriptionUpdateParams.CancellationDetails.Feedback
+       with typings.stripe.mod.Stripe.SubscriptionDeleteParams.CancellationDetails.Feedback
+       with typings.stripe.mod.Stripe.SubscriptionCancelParams.CancellationDetails.Feedback
        with Option
        with typings.stripe.mod.Stripe.BillingPortal.ConfigurationCreateParams.Features.SubscriptionCancel.CancellationReason.Option
        with typings.stripe.mod.Stripe.BillingPortal.Configuration.Features.SubscriptionCancel.CancellationReason.Option
@@ -11524,10 +11845,12 @@ object stripeStrings {
   sealed trait `da-DK`
     extends StObject
        with PreferredLocale
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.Klarna.PreferredLocale
-       with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.Klarna.PreferredLocale
+       with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.Paypal.PreferredLocale
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.Klarna.PreferredLocale
+       with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.Paypal.PreferredLocale
+       with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.PaymentMethodOptions.Paypal.PreferredLocale
        with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.Klarna.PreferredLocale
+       with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.Paypal.PreferredLocale
   inline def `da-DK`: `da-DK` = "da-DK".asInstanceOf[`da-DK`]
   
   @js.native
@@ -11654,11 +11977,11 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.SetupIntent.PaymentMethodOptions.Blik.MandateOptions.OffSession.Interval
        with typings.stripe.mod.Stripe.SetupIntent.PaymentMethodOptions.Card.MandateOptions.Interval
        with Unit
-       with typings.stripe.mod.Stripe.OrderCreateParams.ShippingCost.ShippingRateData.DeliveryEstimate.Maximum.Unit
-       with typings.stripe.mod.Stripe.OrderUpdateParams.ShippingCost.ShippingRateData.DeliveryEstimate.Minimum.Unit
-       with typings.stripe.mod.Stripe.OrderUpdateParams.ShippingCost.ShippingRateData.DeliveryEstimate.Maximum.Unit
-       with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.ShippingOption.ShippingRateData.DeliveryEstimate.Minimum.Unit
        with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.ShippingOption.ShippingRateData.DeliveryEstimate.Maximum.Unit
+       with typings.stripe.mod.Stripe.InvoiceCreateParams.ShippingCost.ShippingRateData.DeliveryEstimate.Minimum.Unit
+       with typings.stripe.mod.Stripe.InvoiceCreateParams.ShippingCost.ShippingRateData.DeliveryEstimate.Maximum.Unit
+       with typings.stripe.mod.Stripe.InvoiceUpdateParams.ShippingCost.ShippingRateData.DeliveryEstimate.Minimum.Unit
+       with typings.stripe.mod.Stripe.InvoiceUpdateParams.ShippingCost.ShippingRateData.DeliveryEstimate.Maximum.Unit
        with typings.stripe.mod.Stripe.ShippingRateCreateParams.DeliveryEstimate.Minimum.Unit
        with typings.stripe.mod.Stripe.ShippingRateCreateParams.DeliveryEstimate.Maximum.Unit
        with typings.stripe.mod.Stripe.ShippingRate.DeliveryEstimate.Minimum.Unit
@@ -11669,18 +11992,18 @@ object stripeStrings {
   sealed trait `de-AT`
     extends StObject
        with PreferredLocale
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.Klarna.PreferredLocale
-       with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.Klarna.PreferredLocale
+       with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.Paypal.PreferredLocale
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.Klarna.PreferredLocale
+       with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.Paypal.PreferredLocale
+       with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.PaymentMethodOptions.Paypal.PreferredLocale
        with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.Klarna.PreferredLocale
+       with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.Paypal.PreferredLocale
   inline def `de-AT`: `de-AT` = "de-AT".asInstanceOf[`de-AT`]
   
   @js.native
   sealed trait `de-CH`
     extends StObject
        with PreferredLocale
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.Klarna.PreferredLocale
-       with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.Klarna.PreferredLocale
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.Klarna.PreferredLocale
        with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.Klarna.PreferredLocale
   inline def `de-CH`: `de-CH` = "de-CH".asInstanceOf[`de-CH`]
@@ -11689,11 +12012,22 @@ object stripeStrings {
   sealed trait `de-DE`
     extends StObject
        with PreferredLocale
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.Klarna.PreferredLocale
-       with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.Klarna.PreferredLocale
+       with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.Paypal.PreferredLocale
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.Klarna.PreferredLocale
+       with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.Paypal.PreferredLocale
+       with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.PaymentMethodOptions.Paypal.PreferredLocale
        with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.Klarna.PreferredLocale
+       with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.Paypal.PreferredLocale
   inline def `de-DE`: `de-DE` = "de-DE".asInstanceOf[`de-DE`]
+  
+  @js.native
+  sealed trait `de-LU`
+    extends StObject
+       with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.Paypal.PreferredLocale
+       with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.Paypal.PreferredLocale
+       with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.PaymentMethodOptions.Paypal.PreferredLocale
+       with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.Paypal.PreferredLocale
+  inline def `de-LU`: `de-LU` = "de-LU".asInstanceOf[`de-LU`]
   
   @js.native
   sealed trait de_
@@ -11703,10 +12037,6 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.BillingPortal.SessionCreateParams.Locale
        with typings.stripe.mod.Stripe.BillingPortal.Session.Locale
        with PreferredLanguage
-       with typings.stripe.mod.Stripe.OrderCreateParams.Payment.Settings.PaymentMethodOptions.Sofort.PreferredLanguage
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.Bancontact.PreferredLanguage
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.Sofort.PreferredLanguage
-       with typings.stripe.mod.Stripe.Invoice.PaymentSettings.PaymentMethodOptions.Bancontact.PreferredLanguage
        with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.Bancontact.PreferredLanguage
        with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.Sofort.PreferredLanguage
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.Bancontact.PreferredLanguage
@@ -11721,8 +12051,6 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.SubscriptionUpdateParams.PaymentSettings.PaymentMethodOptions.Bancontact.PreferredLanguage
        with typings.stripe.mod.Stripe.InvoiceCreateParams.PaymentSettings.PaymentMethodOptions.Bancontact.PreferredLanguage
        with typings.stripe.mod.Stripe.SubscriptionCreateParams.PaymentSettings.PaymentMethodOptions.Bancontact.PreferredLanguage
-       with typings.stripe.mod.Stripe.Order.Payment.Settings.PaymentMethodOptions.Bancontact.PreferredLanguage
-       with typings.stripe.mod.Stripe.Order.Payment.Settings.PaymentMethodOptions.Sofort.PreferredLanguage
        with typings.stripe.mod.Stripe.Charge.PaymentMethodDetails.Bancontact.PreferredLanguage
        with typings.stripe.mod.Stripe.Charge.PaymentMethodDetails.Sofort.PreferredLanguage
        with typings.stripe.mod.Stripe.InvoiceUpdateParams.PaymentSettings.PaymentMethodOptions.Bancontact.PreferredLanguage
@@ -11740,6 +12068,7 @@ object stripeStrings {
     extends StObject
        with typings.stripe.mod.Stripe.TestHelpers.Treasury.InboundTransferFailParams.FailureDetails.Code
        with typings.stripe.mod.Stripe.Treasury.InboundTransfer.FailureDetails.Code
+       with typings.stripe.mod.Stripe.PaymentMethod.UsBankAccount.StatusDetails.Blocked.Reason
   inline def debit_not_authorized: debit_not_authorized = "debit_not_authorized".asInstanceOf[debit_not_authorized]
   
   @js.native
@@ -11769,12 +12098,6 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.SubscriptionUpdateParams.PaymentBehavior
        with typings.stripe.mod.Stripe.SubscriptionCreateParams.PaymentBehavior
   inline def default_incomplete: default_incomplete = "default_incomplete".asInstanceOf[default_incomplete]
-  
-  @js.native
-  sealed trait deleted
-    extends StObject
-       with typings.stripe.mod.Stripe.Invoice.Status
-  inline def deleted: deleted = "deleted".asInstanceOf[deleted]
   
   @js.native
   sealed trait delivered
@@ -11855,6 +12178,14 @@ object stripeStrings {
     extends StObject
        with typings.stripe.mod.Stripe.Issuing.Card.CancellationReason
   inline def design_rejected: design_rejected = "design_rejected".asInstanceOf[design_rejected]
+  
+  @js.native
+  sealed trait destination
+    extends StObject
+       with Sourcing
+       with typings.stripe.mod.Stripe.Tax.Calculation.ShippingCost.TaxBreakdown.Sourcing
+       with typings.stripe.mod.Stripe.Tax.CalculationLineItem.TaxBreakdown.Sourcing
+  inline def destination: destination = "destination".asInstanceOf[destination]
   
   @js.native
   sealed trait detective_agencies
@@ -12295,6 +12626,14 @@ object stripeStrings {
   inline def disputed: disputed = "disputed".asInstanceOf[disputed]
   
   @js.native
+  sealed trait district
+    extends StObject
+       with Level
+       with typings.stripe.mod.Stripe.Tax.Calculation.ShippingCost.TaxBreakdown.Jurisdiction.Level
+       with typings.stripe.mod.Stripe.Tax.CalculationLineItem.TaxBreakdown.Jurisdiction.Level
+  inline def district: district = "district".asInstanceOf[district]
+  
+  @js.native
   sealed trait doctors
     extends StObject
        with _AllowedCategory
@@ -12476,6 +12815,16 @@ object stripeStrings {
   inline def driving_license: driving_license = "driving_license".asInstanceOf[driving_license]
   
   @js.native
+  sealed trait dropdown
+    extends StObject
+       with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.CustomField.Type
+       with typings.stripe.mod.Stripe.Checkout.Session.CustomField.Type
+       with typings.stripe.mod.Stripe.PaymentLinkCreateParams.CustomField.Type
+       with typings.stripe.mod.Stripe.PaymentLinkUpdateParams.CustomField.Type
+       with typings.stripe.mod.Stripe.PaymentLink.CustomField.Type
+  inline def dropdown: dropdown = "dropdown".asInstanceOf[dropdown]
+  
+  @js.native
   sealed trait drug_stores_and_pharmacies
     extends StObject
        with _AllowedCategory
@@ -12551,6 +12900,7 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.SetupIntentCancelParams.CancellationReason
        with typings.stripe.mod.Stripe.PaymentIntent.CancellationReason
        with typings.stripe.mod.Stripe.SetupIntent.CancellationReason
+       with typings.stripe.mod.Stripe.Terminal.Reader.Action.RefundPayment.Reason
        with typings.stripe.mod.Stripe.Issuing.Dispute.Evidence.Reason
        with typings.stripe.mod.Stripe.Issuing.DisputeCreateParams.Evidence.Reason
        with typings.stripe.mod.Stripe.Issuing.DisputeUpdateParams.Evidence.Reason
@@ -12675,16 +13025,32 @@ object stripeStrings {
   inline def effective_at: effective_at = "effective_at".asInstanceOf[effective_at]
   
   @js.native
+  sealed trait eftpos_au
+    extends StObject
+       with typings.stripe.mod.Stripe.SetupIntentUpdateParams.PaymentMethodOptions.Card.Network
+       with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.Card.Network
+       with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.Card.Network
+       with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.Card.Network
+       with typings.stripe.mod.Stripe.Subscription.PaymentSettings.PaymentMethodOptions.Card.Network
+       with typings.stripe.mod.Stripe.PaymentIntent.PaymentMethodOptions.Card.Network
+       with typings.stripe.mod.Stripe.SubscriptionUpdateParams.PaymentSettings.PaymentMethodOptions.Card.Network
+       with typings.stripe.mod.Stripe.SubscriptionCreateParams.PaymentSettings.PaymentMethodOptions.Card.Network
+       with typings.stripe.mod.Stripe.SetupIntentConfirmParams.PaymentMethodOptions.Card.Network
+       with typings.stripe.mod.Stripe.SetupIntentCreateParams.PaymentMethodOptions.Card.Network
+       with typings.stripe.mod.Stripe.SetupIntent.PaymentMethodOptions.Card.Network
+  inline def eftpos_au: eftpos_au = "eftpos_au".asInstanceOf[eftpos_au]
+  
+  @js.native
   sealed trait eg_tin
     extends StObject
        with typings.stripe.mod.Stripe.CustomerCreateParams.TaxIdDatum.Type
-       with typings.stripe.mod.Stripe.OrderCreateParams.TaxDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.OrderUpdateParams.TaxDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Invoice.CustomerTaxId.Type
        with typings.stripe.mod.Stripe.InvoiceRetrieveUpcomingParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.InvoiceListUpcomingLinesParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Checkout.Session.CustomerDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.Order.TaxDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Transaction.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Calculation.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.CalculationCreateParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.TaxIdCreateParams.Type
        with typings.stripe.mod.Stripe.TaxId.Type
   inline def eg_tin: eg_tin = "eg_tin".asInstanceOf[eg_tin]
@@ -12697,6 +13063,18 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.BillingPortal.SessionCreateParams.Locale
        with typings.stripe.mod.Stripe.BillingPortal.Session.Locale
   inline def el: el = "el".asInstanceOf[el]
+  
+  @js.native
+  sealed trait `el-GR`
+    extends StObject
+       with PreferredLocale
+       with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.Paypal.PreferredLocale
+       with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.Klarna.PreferredLocale
+       with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.Paypal.PreferredLocale
+       with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.PaymentMethodOptions.Paypal.PreferredLocale
+       with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.Klarna.PreferredLocale
+       with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.Paypal.PreferredLocale
+  inline def `el-GR`: `el-GR` = "el-GR".asInstanceOf[`el-GR`]
   
   @js.native
   sealed trait electric_razor_stores
@@ -12720,6 +13098,29 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
        with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def electric_razor_stores: electric_razor_stores = "electric_razor_stores".asInstanceOf[electric_razor_stores]
+  
+  @js.native
+  sealed trait electric_vehicle_charging
+    extends StObject
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
+  inline def electric_vehicle_charging: electric_vehicle_charging = "electric_vehicle_charging".asInstanceOf[electric_vehicle_charging]
   
   @js.native
   sealed trait electrical_parts_and_equipment
@@ -12837,6 +13238,12 @@ object stripeStrings {
   inline def elementary_secondary_schools: elementary_secondary_schools = "elementary_secondary_schools".asInstanceOf[elementary_secondary_schools]
   
   @js.native
+  sealed trait eligible
+    extends StObject
+       with typings.stripe.mod.Stripe.Charge.PaymentMethodDetails.Paypal.SellerProtection.Status
+  inline def eligible: eligible = "eligible".asInstanceOf[eligible]
+  
+  @js.native
   sealed trait email
     extends StObject
        with AllowedUpdate
@@ -12848,6 +13255,29 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.SourceCreateParams.Mandate.NotificationMethod
        with RefundAttributesMethod
   inline def email: email = "email".asInstanceOf[email]
+  
+  @js.native
+  sealed trait emergency_services_gcas_visa_use_only
+    extends StObject
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
+  inline def emergency_services_gcas_visa_use_only: emergency_services_gcas_visa_use_only = "emergency_services_gcas_visa_use_only".asInstanceOf[emergency_services_gcas_visa_use_only]
   
   @js.native
   sealed trait employment_temp_agencies
@@ -12880,10 +13310,6 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.BillingPortal.SessionCreateParams.Locale
        with typings.stripe.mod.Stripe.BillingPortal.Session.Locale
        with PreferredLanguage
-       with typings.stripe.mod.Stripe.OrderCreateParams.Payment.Settings.PaymentMethodOptions.Sofort.PreferredLanguage
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.Bancontact.PreferredLanguage
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.Sofort.PreferredLanguage
-       with typings.stripe.mod.Stripe.Invoice.PaymentSettings.PaymentMethodOptions.Bancontact.PreferredLanguage
        with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.Bancontact.PreferredLanguage
        with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.Sofort.PreferredLanguage
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.Bancontact.PreferredLanguage
@@ -12898,8 +13324,6 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.SubscriptionUpdateParams.PaymentSettings.PaymentMethodOptions.Bancontact.PreferredLanguage
        with typings.stripe.mod.Stripe.InvoiceCreateParams.PaymentSettings.PaymentMethodOptions.Bancontact.PreferredLanguage
        with typings.stripe.mod.Stripe.SubscriptionCreateParams.PaymentSettings.PaymentMethodOptions.Bancontact.PreferredLanguage
-       with typings.stripe.mod.Stripe.Order.Payment.Settings.PaymentMethodOptions.Bancontact.PreferredLanguage
-       with typings.stripe.mod.Stripe.Order.Payment.Settings.PaymentMethodOptions.Sofort.PreferredLanguage
        with typings.stripe.mod.Stripe.Charge.PaymentMethodDetails.Bancontact.PreferredLanguage
        with typings.stripe.mod.Stripe.Charge.PaymentMethodDetails.Sofort.PreferredLanguage
        with typings.stripe.mod.Stripe.InvoiceUpdateParams.PaymentSettings.PaymentMethodOptions.Bancontact.PreferredLanguage
@@ -12909,8 +13333,6 @@ object stripeStrings {
   sealed trait `en-AT`
     extends StObject
        with PreferredLocale
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.Klarna.PreferredLocale
-       with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.Klarna.PreferredLocale
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.Klarna.PreferredLocale
        with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.Klarna.PreferredLocale
   inline def `en-AT`: `en-AT` = "en-AT".asInstanceOf[`en-AT`]
@@ -12921,8 +13343,6 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.BillingPortal.SessionCreateParams.Locale
        with typings.stripe.mod.Stripe.BillingPortal.Session.Locale
        with PreferredLocale
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.Klarna.PreferredLocale
-       with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.Klarna.PreferredLocale
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.Klarna.PreferredLocale
        with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.Klarna.PreferredLocale
   inline def `en-AU`: `en-AU` = "en-AU".asInstanceOf[`en-AU`]
@@ -12931,8 +13351,6 @@ object stripeStrings {
   sealed trait `en-BE`
     extends StObject
        with PreferredLocale
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.Klarna.PreferredLocale
-       with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.Klarna.PreferredLocale
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.Klarna.PreferredLocale
        with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.Klarna.PreferredLocale
   inline def `en-BE`: `en-BE` = "en-BE".asInstanceOf[`en-BE`]
@@ -12943,8 +13361,6 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.BillingPortal.SessionCreateParams.Locale
        with typings.stripe.mod.Stripe.BillingPortal.Session.Locale
        with PreferredLocale
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.Klarna.PreferredLocale
-       with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.Klarna.PreferredLocale
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.Klarna.PreferredLocale
        with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.Klarna.PreferredLocale
   inline def `en-CA`: `en-CA` = "en-CA".asInstanceOf[`en-CA`]
@@ -12953,18 +13369,22 @@ object stripeStrings {
   sealed trait `en-CH`
     extends StObject
        with PreferredLocale
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.Klarna.PreferredLocale
-       with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.Klarna.PreferredLocale
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.Klarna.PreferredLocale
        with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.Klarna.PreferredLocale
   inline def `en-CH`: `en-CH` = "en-CH".asInstanceOf[`en-CH`]
   
   @js.native
+  sealed trait `en-CZ`
+    extends StObject
+       with PreferredLocale
+       with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.Klarna.PreferredLocale
+       with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.Klarna.PreferredLocale
+  inline def `en-CZ`: `en-CZ` = "en-CZ".asInstanceOf[`en-CZ`]
+  
+  @js.native
   sealed trait `en-DE`
     extends StObject
        with PreferredLocale
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.Klarna.PreferredLocale
-       with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.Klarna.PreferredLocale
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.Klarna.PreferredLocale
        with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.Klarna.PreferredLocale
   inline def `en-DE`: `en-DE` = "en-DE".asInstanceOf[`en-DE`]
@@ -12973,8 +13393,6 @@ object stripeStrings {
   sealed trait `en-DK`
     extends StObject
        with PreferredLocale
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.Klarna.PreferredLocale
-       with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.Klarna.PreferredLocale
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.Klarna.PreferredLocale
        with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.Klarna.PreferredLocale
   inline def `en-DK`: `en-DK` = "en-DK".asInstanceOf[`en-DK`]
@@ -12983,8 +13401,6 @@ object stripeStrings {
   sealed trait `en-ES`
     extends StObject
        with PreferredLocale
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.Klarna.PreferredLocale
-       with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.Klarna.PreferredLocale
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.Klarna.PreferredLocale
        with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.Klarna.PreferredLocale
   inline def `en-ES`: `en-ES` = "en-ES".asInstanceOf[`en-ES`]
@@ -12993,8 +13409,6 @@ object stripeStrings {
   sealed trait `en-FI`
     extends StObject
        with PreferredLocale
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.Klarna.PreferredLocale
-       with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.Klarna.PreferredLocale
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.Klarna.PreferredLocale
        with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.Klarna.PreferredLocale
   inline def `en-FI`: `en-FI` = "en-FI".asInstanceOf[`en-FI`]
@@ -13003,8 +13417,6 @@ object stripeStrings {
   sealed trait `en-FR`
     extends StObject
        with PreferredLocale
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.Klarna.PreferredLocale
-       with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.Klarna.PreferredLocale
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.Klarna.PreferredLocale
        with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.Klarna.PreferredLocale
   inline def `en-FR`: `en-FR` = "en-FR".asInstanceOf[`en-FR`]
@@ -13017,11 +13429,21 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.BillingPortal.SessionCreateParams.Locale
        with typings.stripe.mod.Stripe.BillingPortal.Session.Locale
        with PreferredLocale
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.Klarna.PreferredLocale
-       with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.Klarna.PreferredLocale
+       with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.Paypal.PreferredLocale
+       with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.Klarna.PreferredLocale
+       with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.Paypal.PreferredLocale
+       with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.PaymentMethodOptions.Paypal.PreferredLocale
+       with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.Klarna.PreferredLocale
+       with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.Paypal.PreferredLocale
+  inline def `en-GB`: `en-GB` = "en-GB".asInstanceOf[`en-GB`]
+  
+  @js.native
+  sealed trait `en-GR`
+    extends StObject
+       with PreferredLocale
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.Klarna.PreferredLocale
        with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.Klarna.PreferredLocale
-  inline def `en-GB`: `en-GB` = "en-GB".asInstanceOf[`en-GB`]
+  inline def `en-GR`: `en-GR` = "en-GR".asInstanceOf[`en-GR`]
   
   @js.native
   sealed trait `en-IE`
@@ -13029,8 +13451,6 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.BillingPortal.SessionCreateParams.Locale
        with typings.stripe.mod.Stripe.BillingPortal.Session.Locale
        with PreferredLocale
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.Klarna.PreferredLocale
-       with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.Klarna.PreferredLocale
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.Klarna.PreferredLocale
        with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.Klarna.PreferredLocale
   inline def `en-IE`: `en-IE` = "en-IE".asInstanceOf[`en-IE`]
@@ -13046,8 +13466,6 @@ object stripeStrings {
   sealed trait `en-IT`
     extends StObject
        with PreferredLocale
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.Klarna.PreferredLocale
-       with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.Klarna.PreferredLocale
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.Klarna.PreferredLocale
        with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.Klarna.PreferredLocale
   inline def `en-IT`: `en-IT` = "en-IT".asInstanceOf[`en-IT`]
@@ -13056,8 +13474,6 @@ object stripeStrings {
   sealed trait `en-NL`
     extends StObject
        with PreferredLocale
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.Klarna.PreferredLocale
-       with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.Klarna.PreferredLocale
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.Klarna.PreferredLocale
        with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.Klarna.PreferredLocale
   inline def `en-NL`: `en-NL` = "en-NL".asInstanceOf[`en-NL`]
@@ -13066,8 +13482,6 @@ object stripeStrings {
   sealed trait `en-NO`
     extends StObject
        with PreferredLocale
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.Klarna.PreferredLocale
-       with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.Klarna.PreferredLocale
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.Klarna.PreferredLocale
        with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.Klarna.PreferredLocale
   inline def `en-NO`: `en-NO` = "en-NO".asInstanceOf[`en-NO`]
@@ -13078,8 +13492,6 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.BillingPortal.SessionCreateParams.Locale
        with typings.stripe.mod.Stripe.BillingPortal.Session.Locale
        with PreferredLocale
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.Klarna.PreferredLocale
-       with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.Klarna.PreferredLocale
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.Klarna.PreferredLocale
        with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.Klarna.PreferredLocale
   inline def `en-NZ`: `en-NZ` = "en-NZ".asInstanceOf[`en-NZ`]
@@ -13088,8 +13500,6 @@ object stripeStrings {
   sealed trait `en-PL`
     extends StObject
        with PreferredLocale
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.Klarna.PreferredLocale
-       with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.Klarna.PreferredLocale
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.Klarna.PreferredLocale
        with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.Klarna.PreferredLocale
   inline def `en-PL`: `en-PL` = "en-PL".asInstanceOf[`en-PL`]
@@ -13098,8 +13508,6 @@ object stripeStrings {
   sealed trait `en-PT`
     extends StObject
        with PreferredLocale
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.Klarna.PreferredLocale
-       with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.Klarna.PreferredLocale
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.Klarna.PreferredLocale
        with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.Klarna.PreferredLocale
   inline def `en-PT`: `en-PT` = "en-PT".asInstanceOf[`en-PT`]
@@ -13108,8 +13516,6 @@ object stripeStrings {
   sealed trait `en-SE`
     extends StObject
        with PreferredLocale
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.Klarna.PreferredLocale
-       with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.Klarna.PreferredLocale
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.Klarna.PreferredLocale
        with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.Klarna.PreferredLocale
   inline def `en-SE`: `en-SE` = "en-SE".asInstanceOf[`en-SE`]
@@ -13125,10 +13531,12 @@ object stripeStrings {
   sealed trait `en-US`
     extends StObject
        with PreferredLocale
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.Klarna.PreferredLocale
-       with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.Klarna.PreferredLocale
+       with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.Paypal.PreferredLocale
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.Klarna.PreferredLocale
+       with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.Paypal.PreferredLocale
+       with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.PaymentMethodOptions.Paypal.PreferredLocale
        with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.Klarna.PreferredLocale
+       with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.Paypal.PreferredLocale
   inline def `en-US`: `en-US` = "en-US".asInstanceOf[`en-US`]
   
   @js.native
@@ -13158,11 +13566,8 @@ object stripeStrings {
   @js.native
   sealed trait eps
     extends StObject
-       with typings.stripe.mod.Stripe.OrderCreateParams.Payment.Settings.PaymentMethodType
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodType
        with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.PaymentMethodType
        with typings.stripe.mod.Stripe.PaymentLinkCreateParams.PaymentMethodType
-       with typings.stripe.mod.Stripe.Order.Payment.Settings.PaymentMethodType
        with typings.stripe.mod.Stripe.PaymentLinkUpdateParams.PaymentMethodType
        with typings.stripe.mod.Stripe.PaymentLink.PaymentMethodType
        with typings.stripe.mod.Stripe.Source.Type
@@ -13238,18 +13643,18 @@ object stripeStrings {
   sealed trait `es-ES`
     extends StObject
        with PreferredLocale
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.Klarna.PreferredLocale
-       with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.Klarna.PreferredLocale
+       with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.Paypal.PreferredLocale
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.Klarna.PreferredLocale
+       with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.Paypal.PreferredLocale
+       with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.PaymentMethodOptions.Paypal.PreferredLocale
        with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.Klarna.PreferredLocale
+       with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.Paypal.PreferredLocale
   inline def `es-ES`: `es-ES` = "es-ES".asInstanceOf[`es-ES`]
   
   @js.native
   sealed trait `es-US`
     extends StObject
        with PreferredLocale
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.Klarna.PreferredLocale
-       with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.Klarna.PreferredLocale
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.Klarna.PreferredLocale
        with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.Klarna.PreferredLocale
   inline def `es-US`: `es-US` = "es-US".asInstanceOf[`es-US`]
@@ -13261,13 +13666,10 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.Checkout.Session.Locale
        with typings.stripe.mod.Stripe.BillingPortal.SessionCreateParams.Locale
        with typings.stripe.mod.Stripe.BillingPortal.Session.Locale
-       with typings.stripe.mod.Stripe.OrderCreateParams.Payment.Settings.PaymentMethodOptions.Sofort.PreferredLanguage
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.Sofort.PreferredLanguage
        with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.Sofort.PreferredLanguage
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.Sofort.PreferredLanguage
        with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.Sofort.PreferredLanguage
        with typings.stripe.mod.Stripe.PaymentIntent.PaymentMethodOptions.Sofort.PreferredLanguage
-       with typings.stripe.mod.Stripe.Order.Payment.Settings.PaymentMethodOptions.Sofort.PreferredLanguage
        with typings.stripe.mod.Stripe.Charge.PaymentMethodDetails.Sofort.PreferredLanguage
   inline def es_ : es_ = "es".asInstanceOf[es_]
   
@@ -13275,13 +13677,13 @@ object stripeStrings {
   sealed trait es_cif
     extends StObject
        with typings.stripe.mod.Stripe.CustomerCreateParams.TaxIdDatum.Type
-       with typings.stripe.mod.Stripe.OrderCreateParams.TaxDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.OrderUpdateParams.TaxDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Invoice.CustomerTaxId.Type
        with typings.stripe.mod.Stripe.InvoiceRetrieveUpcomingParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.InvoiceListUpcomingLinesParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Checkout.Session.CustomerDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.Order.TaxDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Transaction.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Calculation.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.CalculationCreateParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.TaxIdCreateParams.Type
        with typings.stripe.mod.Stripe.TaxId.Type
   inline def es_cif: es_cif = "es_cif".asInstanceOf[es_cif]
@@ -13313,8 +13715,6 @@ object stripeStrings {
   sealed trait eu_bank_transfer
     extends StObject
        with typings.stripe.mod.Stripe.CustomerCreateFundingInstructionsParams.BankTransfer.Type
-       with typings.stripe.mod.Stripe.OrderCreateParams.Payment.Settings.PaymentMethodOptions.CustomerBalance.BankTransfer.Type
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.CustomerBalance.BankTransfer.Type
        with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.CustomerBalance.BankTransfer.Type
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.CustomerBalance.BankTransfer.Type
        with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.PaymentMethodOptions.CustomerBalance.BankTransfer.Type
@@ -13322,7 +13722,6 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.CustomerBalance.BankTransfer.Type
        with typings.stripe.mod.Stripe.PaymentIntent.PaymentMethodOptions.CustomerBalance.BankTransfer.Type
        with typings.stripe.mod.Stripe.PaymentIntent.NextAction.DisplayBankTransferInstructions.Type
-       with typings.stripe.mod.Stripe.Order.Payment.Settings.PaymentMethodOptions.CustomerBalance.BankTransfer.Type
        with typings.stripe.mod.Stripe.FundingInstructions.BankTransfer.Type
        with typings.stripe.mod.Stripe.CustomerCashBalanceTransaction.Funded.BankTransfer.Type
   inline def eu_bank_transfer: eu_bank_transfer = "eu_bank_transfer".asInstanceOf[eu_bank_transfer]
@@ -13331,13 +13730,13 @@ object stripeStrings {
   sealed trait eu_oss_vat
     extends StObject
        with typings.stripe.mod.Stripe.CustomerCreateParams.TaxIdDatum.Type
-       with typings.stripe.mod.Stripe.OrderCreateParams.TaxDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.OrderUpdateParams.TaxDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Invoice.CustomerTaxId.Type
        with typings.stripe.mod.Stripe.InvoiceRetrieveUpcomingParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.InvoiceListUpcomingLinesParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Checkout.Session.CustomerDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.Order.TaxDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Transaction.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Calculation.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.CalculationCreateParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.TaxIdCreateParams.Type
        with typings.stripe.mod.Stripe.TaxId.Type
   inline def eu_oss_vat: eu_oss_vat = "eu_oss_vat".asInstanceOf[eu_oss_vat]
@@ -13346,13 +13745,13 @@ object stripeStrings {
   sealed trait eu_vat
     extends StObject
        with typings.stripe.mod.Stripe.CustomerCreateParams.TaxIdDatum.Type
-       with typings.stripe.mod.Stripe.OrderCreateParams.TaxDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.OrderUpdateParams.TaxDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Invoice.CustomerTaxId.Type
        with typings.stripe.mod.Stripe.InvoiceRetrieveUpcomingParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.InvoiceListUpcomingLinesParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Checkout.Session.CustomerDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.Order.TaxDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Transaction.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Calculation.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.CalculationCreateParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.TaxIdCreateParams.Type
        with typings.stripe.mod.Stripe.TaxId.Type
   inline def eu_vat: eu_vat = "eu_vat".asInstanceOf[eu_vat]
@@ -13381,24 +13780,34 @@ object stripeStrings {
   sealed trait exclude_tax
     extends StObject
        with AmountTaxDisplay
+       with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.InvoiceCreation.InvoiceData.RenderingOptions.AmountTaxDisplay
        with typings.stripe.mod.Stripe.CustomerUpdateParams.InvoiceSettings.RenderingOptions.AmountTaxDisplay
+       with typings.stripe.mod.Stripe.PaymentLinkCreateParams.InvoiceCreation.InvoiceData.RenderingOptions.AmountTaxDisplay
        with typings.stripe.mod.Stripe.InvoiceCreateParams.RenderingOptions.AmountTaxDisplay
+       with typings.stripe.mod.Stripe.PaymentLinkUpdateParams.InvoiceCreation.InvoiceData.RenderingOptions.AmountTaxDisplay
        with typings.stripe.mod.Stripe.InvoiceUpdateParams.RenderingOptions.AmountTaxDisplay
   inline def exclude_tax: exclude_tax = "exclude_tax".asInstanceOf[exclude_tax]
+  
+  @js.native
+  sealed trait excluded_territory
+    extends StObject
+       with TaxabilityReason
+       with typings.stripe.mod.Stripe.Quote.Computed.Recurring.TotalDetails.Breakdown.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.Quote.TotalDetails.Breakdown.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.LineItem.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.Invoice.ShippingCost.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.Checkout.Session.TotalDetails.Breakdown.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.Checkout.Session.ShippingCost.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.CreditNote.ShippingCost.Tax.TaxabilityReason
+  inline def excluded_territory: excluded_territory = "excluded_territory".asInstanceOf[excluded_territory]
   
   @js.native
   sealed trait exclusive
     extends StObject
        with TaxBehavior
        with typings.stripe.mod.Stripe.ProductCreateParams.DefaultPriceData.CurrencyOptions.TaxBehavior
-       with typings.stripe.mod.Stripe.OrderCreateParams.LineItem.PriceData.TaxBehavior
-       with typings.stripe.mod.Stripe.OrderCreateParams.ShippingCost.ShippingRateData.TaxBehavior
-       with typings.stripe.mod.Stripe.OrderCreateParams.ShippingCost.ShippingRateData.FixedAmount.CurrencyOptions.TaxBehavior
        with typings.stripe.mod.Stripe.SubscriptionScheduleUpdateParams.Phase.Item.PriceData.TaxBehavior
        with typings.stripe.mod.Stripe.SubscriptionScheduleUpdateParams.Phase.AddInvoiceItem.PriceData.TaxBehavior
-       with typings.stripe.mod.Stripe.OrderUpdateParams.LineItem.PriceData.TaxBehavior
-       with typings.stripe.mod.Stripe.OrderUpdateParams.ShippingCost.ShippingRateData.TaxBehavior
-       with typings.stripe.mod.Stripe.OrderUpdateParams.ShippingCost.ShippingRateData.FixedAmount.CurrencyOptions.TaxBehavior
        with typings.stripe.mod.Stripe.InvoiceRetrieveUpcomingParams.SubscriptionItem.PriceData.TaxBehavior
        with typings.stripe.mod.Stripe.InvoiceRetrieveUpcomingParams.InvoiceItem.TaxBehavior
        with typings.stripe.mod.Stripe.InvoiceRetrieveUpcomingParams.InvoiceItem.PriceData.TaxBehavior
@@ -13410,6 +13819,12 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.ShippingOption.ShippingRateData.FixedAmount.CurrencyOptions.TaxBehavior
        with typings.stripe.mod.Stripe.PriceUpdateParams.TaxBehavior
        with typings.stripe.mod.Stripe.PriceUpdateParams.CurrencyOptions.TaxBehavior
+       with typings.stripe.mod.Stripe.Tax.Transaction.ShippingCost.TaxBehavior
+       with typings.stripe.mod.Stripe.Tax.Calculation.ShippingCost.TaxBehavior
+       with typings.stripe.mod.Stripe.Tax.CalculationCreateParams.LineItem.TaxBehavior
+       with typings.stripe.mod.Stripe.Tax.CalculationCreateParams.ShippingCost.TaxBehavior
+       with typings.stripe.mod.Stripe.Tax.TransactionLineItem.TaxBehavior
+       with typings.stripe.mod.Stripe.Tax.CalculationLineItem.TaxBehavior
        with typings.stripe.mod.Stripe.SubscriptionItemUpdateParams.PriceData.TaxBehavior
        with typings.stripe.mod.Stripe.SubscriptionItemCreateParams.PriceData.TaxBehavior
        with typings.stripe.mod.Stripe.ShippingRateUpdateParams.TaxBehavior
@@ -13418,6 +13833,8 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.SubscriptionUpdateParams.AddInvoiceItem.PriceData.TaxBehavior
        with typings.stripe.mod.Stripe.PriceCreateParams.TaxBehavior
        with typings.stripe.mod.Stripe.PriceCreateParams.CurrencyOptions.TaxBehavior
+       with typings.stripe.mod.Stripe.InvoiceCreateParams.ShippingCost.ShippingRateData.TaxBehavior
+       with typings.stripe.mod.Stripe.InvoiceCreateParams.ShippingCost.ShippingRateData.FixedAmount.CurrencyOptions.TaxBehavior
        with typings.stripe.mod.Stripe.SubscriptionCreateParams.Item.PriceData.TaxBehavior
        with typings.stripe.mod.Stripe.SubscriptionCreateParams.AddInvoiceItem.PriceData.TaxBehavior
        with typings.stripe.mod.Stripe.QuoteUpdateParams.LineItem.PriceData.TaxBehavior
@@ -13425,6 +13842,8 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.Price.CurrencyOptions.TaxBehavior
        with typings.stripe.mod.Stripe.SubscriptionScheduleCreateParams.Phase.Item.PriceData.TaxBehavior
        with typings.stripe.mod.Stripe.SubscriptionScheduleCreateParams.Phase.AddInvoiceItem.PriceData.TaxBehavior
+       with typings.stripe.mod.Stripe.InvoiceUpdateParams.ShippingCost.ShippingRateData.TaxBehavior
+       with typings.stripe.mod.Stripe.InvoiceUpdateParams.ShippingCost.ShippingRateData.FixedAmount.CurrencyOptions.TaxBehavior
        with typings.stripe.mod.Stripe.InvoiceItemUpdateParams.TaxBehavior
        with typings.stripe.mod.Stripe.InvoiceItemUpdateParams.PriceData.TaxBehavior
        with typings.stripe.mod.Stripe.InvoiceItemCreateParams.TaxBehavior
@@ -13441,14 +13860,11 @@ object stripeStrings {
     extends StObject
        with CustomerTaxExempt
        with TaxExempt
-       with typings.stripe.mod.Stripe.OrderCreateParams.TaxDetails.TaxExempt
-       with typings.stripe.mod.Stripe.OrderUpdateParams.TaxDetails.TaxExempt
        with typings.stripe.mod.Stripe.InvoiceRetrieveUpcomingParams.CustomerDetails.TaxExempt
        with typings.stripe.mod.Stripe.InvoiceListUpcomingLinesParams.CustomerDetails.TaxExempt
        with typings.stripe.mod.Stripe.Checkout.Session.CustomerDetails.TaxExempt
        with typings.stripe.mod.Stripe.CustomerUpdateParams.TaxExempt
        with typings.stripe.mod.Stripe.Customer.TaxExempt
-       with typings.stripe.mod.Stripe.Order.TaxDetails.TaxExempt
   inline def exempt: exempt = "exempt".asInstanceOf[exempt]
   
   @js.native
@@ -13529,7 +13945,6 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.Topup.Status
        with typings.stripe.mod.Stripe.FinancialConnections.Account.OwnershipRefresh.Status
        with typings.stripe.mod.Stripe.FinancialConnections.Account.BalanceRefresh.Status
-       with typings.stripe.mod.Stripe.Order.AutomaticTax.Status
        with typings.stripe.mod.Stripe.Charge.Status
        with typings.stripe.mod.Stripe.Treasury.InboundTransfer.Status
        with typings.stripe.mod.Stripe.Treasury.OutboundPayment.Status
@@ -13628,10 +14043,12 @@ object stripeStrings {
   sealed trait `fi-FI`
     extends StObject
        with PreferredLocale
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.Klarna.PreferredLocale
-       with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.Klarna.PreferredLocale
+       with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.Paypal.PreferredLocale
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.Klarna.PreferredLocale
+       with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.Paypal.PreferredLocale
+       with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.PaymentMethodOptions.Paypal.PreferredLocale
        with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.Klarna.PreferredLocale
+       with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.Paypal.PreferredLocale
   inline def `fi-FI`: `fi-FI` = "fi-FI".asInstanceOf[`fi-FI`]
   
   @js.native
@@ -13827,13 +14244,6 @@ object stripeStrings {
   inline def fines_government_administrative_entities: fines_government_administrative_entities = "fines_government_administrative_entities".asInstanceOf[fines_government_administrative_entities]
   
   @js.native
-  sealed trait finite
-    extends StObject
-       with typings.stripe.mod.Stripe.SkuCreateParams.Inventory.Type
-       with typings.stripe.mod.Stripe.SkuUpdateParams.Inventory.Type
-  inline def finite: finite = "finite".asInstanceOf[finite]
-  
-  @js.native
   sealed trait fireplace_fireplace_screens_and_accessories_stores
     extends StObject
        with _AllowedCategory
@@ -13966,8 +14376,6 @@ object stripeStrings {
   @js.native
   sealed trait fpx
     extends StObject
-       with typings.stripe.mod.Stripe.OrderCreateParams.Payment.Settings.PaymentMethodType
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodType
        with PaymentMethodType
        with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.PaymentMethodType
        with typings.stripe.mod.Stripe.Subscription.PaymentSettings.PaymentMethodType
@@ -13975,7 +14383,6 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.SubscriptionUpdateParams.PaymentSettings.PaymentMethodType
        with typings.stripe.mod.Stripe.InvoiceCreateParams.PaymentSettings.PaymentMethodType
        with typings.stripe.mod.Stripe.SubscriptionCreateParams.PaymentSettings.PaymentMethodType
-       with typings.stripe.mod.Stripe.Order.Payment.Settings.PaymentMethodType
        with typings.stripe.mod.Stripe.PaymentLinkUpdateParams.PaymentMethodType
        with typings.stripe.mod.Stripe.InvoiceUpdateParams.PaymentSettings.PaymentMethodType
        with typings.stripe.mod.Stripe.PaymentLink.PaymentMethodType
@@ -13997,10 +14404,12 @@ object stripeStrings {
   sealed trait `fr-BE`
     extends StObject
        with PreferredLocale
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.Klarna.PreferredLocale
-       with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.Klarna.PreferredLocale
+       with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.Paypal.PreferredLocale
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.Klarna.PreferredLocale
+       with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.Paypal.PreferredLocale
+       with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.PaymentMethodOptions.Paypal.PreferredLocale
        with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.Klarna.PreferredLocale
+       with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.Paypal.PreferredLocale
   inline def `fr-BE`: `fr-BE` = "fr-BE".asInstanceOf[`fr-BE`]
   
   @js.native
@@ -14011,8 +14420,6 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.BillingPortal.SessionCreateParams.Locale
        with typings.stripe.mod.Stripe.BillingPortal.Session.Locale
        with PreferredLocale
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.Klarna.PreferredLocale
-       with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.Klarna.PreferredLocale
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.Klarna.PreferredLocale
        with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.Klarna.PreferredLocale
   inline def `fr-CA`: `fr-CA` = "fr-CA".asInstanceOf[`fr-CA`]
@@ -14021,8 +14428,6 @@ object stripeStrings {
   sealed trait `fr-CH`
     extends StObject
        with PreferredLocale
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.Klarna.PreferredLocale
-       with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.Klarna.PreferredLocale
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.Klarna.PreferredLocale
        with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.Klarna.PreferredLocale
   inline def `fr-CH`: `fr-CH` = "fr-CH".asInstanceOf[`fr-CH`]
@@ -14031,11 +14436,22 @@ object stripeStrings {
   sealed trait `fr-FR`
     extends StObject
        with PreferredLocale
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.Klarna.PreferredLocale
-       with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.Klarna.PreferredLocale
+       with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.Paypal.PreferredLocale
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.Klarna.PreferredLocale
+       with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.Paypal.PreferredLocale
+       with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.PaymentMethodOptions.Paypal.PreferredLocale
        with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.Klarna.PreferredLocale
+       with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.Paypal.PreferredLocale
   inline def `fr-FR`: `fr-FR` = "fr-FR".asInstanceOf[`fr-FR`]
+  
+  @js.native
+  sealed trait `fr-LU`
+    extends StObject
+       with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.Paypal.PreferredLocale
+       with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.Paypal.PreferredLocale
+       with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.PaymentMethodOptions.Paypal.PreferredLocale
+       with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.Paypal.PreferredLocale
+  inline def `fr-LU`: `fr-LU` = "fr-LU".asInstanceOf[`fr-LU`]
   
   @js.native
   sealed trait fr_
@@ -14045,10 +14461,6 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.BillingPortal.SessionCreateParams.Locale
        with typings.stripe.mod.Stripe.BillingPortal.Session.Locale
        with PreferredLanguage
-       with typings.stripe.mod.Stripe.OrderCreateParams.Payment.Settings.PaymentMethodOptions.Sofort.PreferredLanguage
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.Bancontact.PreferredLanguage
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.Sofort.PreferredLanguage
-       with typings.stripe.mod.Stripe.Invoice.PaymentSettings.PaymentMethodOptions.Bancontact.PreferredLanguage
        with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.Bancontact.PreferredLanguage
        with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.Sofort.PreferredLanguage
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.Bancontact.PreferredLanguage
@@ -14063,8 +14475,6 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.SubscriptionUpdateParams.PaymentSettings.PaymentMethodOptions.Bancontact.PreferredLanguage
        with typings.stripe.mod.Stripe.InvoiceCreateParams.PaymentSettings.PaymentMethodOptions.Bancontact.PreferredLanguage
        with typings.stripe.mod.Stripe.SubscriptionCreateParams.PaymentSettings.PaymentMethodOptions.Bancontact.PreferredLanguage
-       with typings.stripe.mod.Stripe.Order.Payment.Settings.PaymentMethodOptions.Bancontact.PreferredLanguage
-       with typings.stripe.mod.Stripe.Order.Payment.Settings.PaymentMethodOptions.Sofort.PreferredLanguage
        with typings.stripe.mod.Stripe.Charge.PaymentMethodDetails.Bancontact.PreferredLanguage
        with typings.stripe.mod.Stripe.Charge.PaymentMethodDetails.Sofort.PreferredLanguage
        with typings.stripe.mod.Stripe.InvoiceUpdateParams.PaymentSettings.PaymentMethodOptions.Bancontact.PreferredLanguage
@@ -14075,6 +14485,8 @@ object stripeStrings {
     extends StObject
        with CancellationReason
        with typings.stripe.mod.Stripe.PaymentIntent.CancellationReason
+       with DisputeCategory
+       with typings.stripe.mod.Stripe.Terminal.Reader.Action.RefundPayment.Reason
        with typings.stripe.mod.Stripe.Issuing.Dispute.Evidence.Reason
        with typings.stripe.mod.Stripe.Issuing.DisputeCreateParams.Evidence.Reason
        with typings.stripe.mod.Stripe.Issuing.DisputeUpdateParams.Evidence.Reason
@@ -14166,6 +14578,12 @@ object stripeStrings {
   inline def fuel_dealers_non_automotive: fuel_dealers_non_automotive = "fuel_dealers_non_automotive".asInstanceOf[fuel_dealers_non_automotive]
   
   @js.native
+  sealed trait full
+    extends StObject
+       with typings.stripe.mod.Stripe.Tax.TransactionCreateReversalParams.Mode
+  inline def full: full = "full".asInstanceOf[full]
+  
+  @js.native
   sealed trait funded
     extends StObject
        with typings.stripe.mod.Stripe.CustomerCashBalanceTransaction.Type
@@ -14174,6 +14592,12 @@ object stripeStrings {
   @js.native
   sealed trait funding_instructions extends StObject
   inline def funding_instructions: funding_instructions = "funding_instructions".asInstanceOf[funding_instructions]
+  
+  @js.native
+  sealed trait funding_reversed
+    extends StObject
+       with typings.stripe.mod.Stripe.CustomerCashBalanceTransaction.Type
+  inline def funding_reversed: funding_reversed = "funding_reversed".asInstanceOf[funding_reversed]
   
   @js.native
   sealed trait funeral_services_crematories
@@ -14255,8 +14679,6 @@ object stripeStrings {
   sealed trait gb_bank_transfer
     extends StObject
        with typings.stripe.mod.Stripe.CustomerCreateFundingInstructionsParams.BankTransfer.Type
-       with typings.stripe.mod.Stripe.OrderCreateParams.Payment.Settings.PaymentMethodOptions.CustomerBalance.BankTransfer.Type
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.CustomerBalance.BankTransfer.Type
        with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.CustomerBalance.BankTransfer.Type
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.CustomerBalance.BankTransfer.Type
        with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.PaymentMethodOptions.CustomerBalance.BankTransfer.Type
@@ -14264,7 +14686,6 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.CustomerBalance.BankTransfer.Type
        with typings.stripe.mod.Stripe.PaymentIntent.PaymentMethodOptions.CustomerBalance.BankTransfer.Type
        with typings.stripe.mod.Stripe.PaymentIntent.NextAction.DisplayBankTransferInstructions.Type
-       with typings.stripe.mod.Stripe.Order.Payment.Settings.PaymentMethodOptions.CustomerBalance.BankTransfer.Type
        with typings.stripe.mod.Stripe.CustomerCashBalanceTransaction.Funded.BankTransfer.Type
   inline def gb_bank_transfer: gb_bank_transfer = "gb_bank_transfer".asInstanceOf[gb_bank_transfer]
   
@@ -14272,13 +14693,13 @@ object stripeStrings {
   sealed trait gb_vat
     extends StObject
        with typings.stripe.mod.Stripe.CustomerCreateParams.TaxIdDatum.Type
-       with typings.stripe.mod.Stripe.OrderCreateParams.TaxDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.OrderUpdateParams.TaxDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Invoice.CustomerTaxId.Type
        with typings.stripe.mod.Stripe.InvoiceRetrieveUpcomingParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.InvoiceListUpcomingLinesParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Checkout.Session.CustomerDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.Order.TaxDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Transaction.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Calculation.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.CalculationCreateParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.TaxIdCreateParams.Type
        with typings.stripe.mod.Stripe.TaxId.Type
   inline def gb_vat: gb_vat = "gb_vat".asInstanceOf[gb_vat]
@@ -14287,13 +14708,13 @@ object stripeStrings {
   sealed trait ge_vat
     extends StObject
        with typings.stripe.mod.Stripe.CustomerCreateParams.TaxIdDatum.Type
-       with typings.stripe.mod.Stripe.OrderCreateParams.TaxDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.OrderUpdateParams.TaxDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Invoice.CustomerTaxId.Type
        with typings.stripe.mod.Stripe.InvoiceRetrieveUpcomingParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.InvoiceListUpcomingLinesParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Checkout.Session.CustomerDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.Order.TaxDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Transaction.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Calculation.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.CalculationCreateParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.TaxIdCreateParams.Type
        with typings.stripe.mod.Stripe.TaxId.Type
   inline def ge_vat: ge_vat = "ge_vat".asInstanceOf[ge_vat]
@@ -14361,8 +14782,6 @@ object stripeStrings {
   @js.native
   sealed trait giropay
     extends StObject
-       with typings.stripe.mod.Stripe.OrderCreateParams.Payment.Settings.PaymentMethodType
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodType
        with PaymentMethodType
        with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.PaymentMethodType
        with typings.stripe.mod.Stripe.Subscription.PaymentSettings.PaymentMethodType
@@ -14370,7 +14789,6 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.SubscriptionUpdateParams.PaymentSettings.PaymentMethodType
        with typings.stripe.mod.Stripe.InvoiceCreateParams.PaymentSettings.PaymentMethodType
        with typings.stripe.mod.Stripe.SubscriptionCreateParams.PaymentSettings.PaymentMethodType
-       with typings.stripe.mod.Stripe.Order.Payment.Settings.PaymentMethodType
        with typings.stripe.mod.Stripe.PaymentLinkUpdateParams.PaymentMethodType
        with typings.stripe.mod.Stripe.InvoiceUpdateParams.PaymentSettings.PaymentMethodType
        with typings.stripe.mod.Stripe.PaymentLink.PaymentMethodType
@@ -14469,6 +14887,7 @@ object stripeStrings {
   sealed trait google_pay
     extends StObject
        with typings.stripe.mod.Stripe.PaymentMethod.Card.Wallet.Type
+       with typings.stripe.mod.Stripe.SetupAttempt.PaymentMethodDetails.Card.Wallet.Type
        with typings.stripe.mod.Stripe.Charge.PaymentMethodDetails.Card.Wallet.Type
        with Wallet
   inline def google_pay: google_pay = "google_pay".asInstanceOf[google_pay]
@@ -14490,6 +14909,75 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.AccountUpdateParams.Company.Structure
        with typings.stripe.mod.Stripe.TokenCreateParams.Account.Company.Structure
   inline def government_instrumentality: government_instrumentality = "government_instrumentality".asInstanceOf[government_instrumentality]
+  
+  @js.native
+  sealed trait government_licensed_horse_dog_racing_us_region_only
+    extends StObject
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
+  inline def government_licensed_horse_dog_racing_us_region_only: government_licensed_horse_dog_racing_us_region_only = "government_licensed_horse_dog_racing_us_region_only".asInstanceOf[government_licensed_horse_dog_racing_us_region_only]
+  
+  @js.native
+  sealed trait government_owned_lotteries_non_us_region
+    extends StObject
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
+  inline def government_owned_lotteries_non_us_region: government_owned_lotteries_non_us_region = "government_owned_lotteries_non_us_region".asInstanceOf[government_owned_lotteries_non_us_region]
+  
+  @js.native
+  sealed trait government_owned_lotteries_us_region_only
+    extends StObject
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
+  inline def government_owned_lotteries_us_region_only: government_owned_lotteries_us_region_only = "government_owned_lotteries_us_region_only".asInstanceOf[government_owned_lotteries_us_region_only]
   
   @js.native
   sealed trait government_services
@@ -14526,8 +15014,6 @@ object stripeStrings {
   @js.native
   sealed trait grabpay
     extends StObject
-       with typings.stripe.mod.Stripe.OrderCreateParams.Payment.Settings.PaymentMethodType
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodType
        with PaymentMethodType
        with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.PaymentMethodType
        with typings.stripe.mod.Stripe.Subscription.PaymentSettings.PaymentMethodType
@@ -14535,7 +15021,6 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.SubscriptionUpdateParams.PaymentSettings.PaymentMethodType
        with typings.stripe.mod.Stripe.InvoiceCreateParams.PaymentSettings.PaymentMethodType
        with typings.stripe.mod.Stripe.SubscriptionCreateParams.PaymentSettings.PaymentMethodType
-       with typings.stripe.mod.Stripe.Order.Payment.Settings.PaymentMethodType
        with typings.stripe.mod.Stripe.PaymentLinkUpdateParams.PaymentMethodType
        with typings.stripe.mod.Stripe.InvoiceUpdateParams.PaymentSettings.PaymentMethodType
        with typings.stripe.mod.Stripe.PaymentLink.PaymentMethodType
@@ -14587,6 +15072,10 @@ object stripeStrings {
   sealed trait gst
     extends StObject
        with TaxType
+       with typings.stripe.mod.Stripe.Tax.Calculation.TaxBreakdown.TaxRateDetails.TaxType
+       with typings.stripe.mod.Stripe.Tax.Calculation.ShippingCost.TaxBreakdown.TaxRateDetails.TaxType
+       with typings.stripe.mod.Stripe.Tax.CalculationLineItem.TaxBreakdown.TaxRateDetails.TaxType
+       with typings.stripe.mod.Stripe.TaxRate.TaxType
        with typings.stripe.mod.Stripe.TaxRateUpdateParams.TaxType
        with typings.stripe.mod.Stripe.TaxRateCreateParams.TaxType
   inline def gst: gst = "gst".asInstanceOf[gst]
@@ -14725,13 +15214,13 @@ object stripeStrings {
   sealed trait hk_br
     extends StObject
        with typings.stripe.mod.Stripe.CustomerCreateParams.TaxIdDatum.Type
-       with typings.stripe.mod.Stripe.OrderCreateParams.TaxDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.OrderUpdateParams.TaxDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Invoice.CustomerTaxId.Type
        with typings.stripe.mod.Stripe.InvoiceRetrieveUpcomingParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.InvoiceListUpcomingLinesParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Checkout.Session.CustomerDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.Order.TaxDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Transaction.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Calculation.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.CalculationCreateParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.TaxIdCreateParams.Type
        with typings.stripe.mod.Stripe.TaxId.Type
   inline def hk_br: hk_br = "hk_br".asInstanceOf[hk_br]
@@ -14823,6 +15312,8 @@ object stripeStrings {
   sealed trait hosted_confirmation
     extends StObject
        with typings.stripe.mod.Stripe.PaymentLinkCreateParams.AfterCompletion.Type
+       with typings.stripe.mod.Stripe.BillingPortal.SessionCreateParams.FlowData.AfterCompletion.Type
+       with typings.stripe.mod.Stripe.BillingPortal.Session.Flow.AfterCompletion.Type
        with typings.stripe.mod.Stripe.PaymentLinkUpdateParams.AfterCompletion.Type
        with typings.stripe.mod.Stripe.PaymentLink.AfterCompletion.Type
   inline def hosted_confirmation: hosted_confirmation = "hosted_confirmation".asInstanceOf[hosted_confirmation]
@@ -14854,11 +15345,11 @@ object stripeStrings {
   sealed trait hour
     extends StObject
        with Unit
-       with typings.stripe.mod.Stripe.OrderCreateParams.ShippingCost.ShippingRateData.DeliveryEstimate.Maximum.Unit
-       with typings.stripe.mod.Stripe.OrderUpdateParams.ShippingCost.ShippingRateData.DeliveryEstimate.Minimum.Unit
-       with typings.stripe.mod.Stripe.OrderUpdateParams.ShippingCost.ShippingRateData.DeliveryEstimate.Maximum.Unit
-       with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.ShippingOption.ShippingRateData.DeliveryEstimate.Minimum.Unit
        with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.ShippingOption.ShippingRateData.DeliveryEstimate.Maximum.Unit
+       with typings.stripe.mod.Stripe.InvoiceCreateParams.ShippingCost.ShippingRateData.DeliveryEstimate.Minimum.Unit
+       with typings.stripe.mod.Stripe.InvoiceCreateParams.ShippingCost.ShippingRateData.DeliveryEstimate.Maximum.Unit
+       with typings.stripe.mod.Stripe.InvoiceUpdateParams.ShippingCost.ShippingRateData.DeliveryEstimate.Minimum.Unit
+       with typings.stripe.mod.Stripe.InvoiceUpdateParams.ShippingCost.ShippingRateData.DeliveryEstimate.Maximum.Unit
        with typings.stripe.mod.Stripe.ShippingRateCreateParams.DeliveryEstimate.Minimum.Unit
        with typings.stripe.mod.Stripe.ShippingRateCreateParams.DeliveryEstimate.Maximum.Unit
        with typings.stripe.mod.Stripe.ShippingRate.DeliveryEstimate.Minimum.Unit
@@ -14915,9 +15406,34 @@ object stripeStrings {
   sealed trait hst_
     extends StObject
        with TaxType
+       with typings.stripe.mod.Stripe.Tax.Calculation.TaxBreakdown.TaxRateDetails.TaxType
+       with typings.stripe.mod.Stripe.Tax.Calculation.ShippingCost.TaxBreakdown.TaxRateDetails.TaxType
+       with typings.stripe.mod.Stripe.Tax.CalculationLineItem.TaxBreakdown.TaxRateDetails.TaxType
+       with typings.stripe.mod.Stripe.TaxRate.TaxType
        with typings.stripe.mod.Stripe.TaxRateUpdateParams.TaxType
        with typings.stripe.mod.Stripe.TaxRateCreateParams.TaxType
   inline def hst_ : hst_ = "hst".asInstanceOf[hst_]
+  
+  @js.native
+  sealed trait http
+    extends StObject
+       with HttpProtocol
+  inline def http: http = "http".asInstanceOf[http]
+  
+  @js.native
+  sealed trait https
+    extends StObject
+       with HttpProtocol
+  inline def https: https = "https".asInstanceOf[https]
+  
+  @js.native
+  sealed trait `hu-HU`
+    extends StObject
+       with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.Paypal.PreferredLocale
+       with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.Paypal.PreferredLocale
+       with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.PaymentMethodOptions.Paypal.PreferredLocale
+       with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.Paypal.PreferredLocale
+  inline def `hu-HU`: `hu-HU` = "hu-HU".asInstanceOf[`hu-HU`]
   
   @js.native
   sealed trait hu_
@@ -14932,13 +15448,13 @@ object stripeStrings {
   sealed trait hu_tin
     extends StObject
        with typings.stripe.mod.Stripe.CustomerCreateParams.TaxIdDatum.Type
-       with typings.stripe.mod.Stripe.OrderCreateParams.TaxDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.OrderUpdateParams.TaxDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Invoice.CustomerTaxId.Type
        with typings.stripe.mod.Stripe.InvoiceRetrieveUpcomingParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.InvoiceListUpcomingLinesParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Checkout.Session.CustomerDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.Order.TaxDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Transaction.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Calculation.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.CalculationCreateParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.TaxIdCreateParams.Type
        with typings.stripe.mod.Stripe.TaxId.Type
   inline def hu_tin: hu_tin = "hu_tin".asInstanceOf[hu_tin]
@@ -15031,15 +15547,12 @@ object stripeStrings {
   sealed trait iban
     extends StObject
        with RequestedAddressType
-       with typings.stripe.mod.Stripe.OrderCreateParams.Payment.Settings.PaymentMethodOptions.CustomerBalance.BankTransfer.RequestedAddressType
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.CustomerBalance.BankTransfer.RequestedAddressType
        with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.CustomerBalance.BankTransfer.RequestedAddressType
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.CustomerBalance.BankTransfer.RequestedAddressType
        with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.PaymentMethodOptions.CustomerBalance.BankTransfer.RequestedAddressType
        with typings.stripe.mod.Stripe.Checkout.Session.PaymentMethodOptions.CustomerBalance.BankTransfer.RequestedAddressType
        with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.CustomerBalance.BankTransfer.RequestedAddressType
        with typings.stripe.mod.Stripe.PaymentIntent.PaymentMethodOptions.CustomerBalance.BankTransfer.RequestedAddressType
-       with typings.stripe.mod.Stripe.Order.Payment.Settings.PaymentMethodOptions.CustomerBalance.BankTransfer.RequestedAddressType
        with typings.stripe.mod.Stripe.PaymentIntent.NextAction.DisplayBankTransferInstructions.FinancialAddress.Type
        with typings.stripe.mod.Stripe.FundingInstructions.BankTransfer.FinancialAddress.Type
   inline def iban: iban = "iban".asInstanceOf[iban]
@@ -15067,13 +15580,13 @@ object stripeStrings {
   sealed trait id_npwp
     extends StObject
        with typings.stripe.mod.Stripe.CustomerCreateParams.TaxIdDatum.Type
-       with typings.stripe.mod.Stripe.OrderCreateParams.TaxDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.OrderUpdateParams.TaxDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Invoice.CustomerTaxId.Type
        with typings.stripe.mod.Stripe.InvoiceRetrieveUpcomingParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.InvoiceListUpcomingLinesParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Checkout.Session.CustomerDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.Order.TaxDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Transaction.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Calculation.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.CalculationCreateParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.TaxIdCreateParams.Type
        with typings.stripe.mod.Stripe.TaxId.Type
   inline def id_npwp: id_npwp = "id_npwp".asInstanceOf[id_npwp]
@@ -15126,8 +15639,6 @@ object stripeStrings {
   @js.native
   sealed trait ideal
     extends StObject
-       with typings.stripe.mod.Stripe.OrderCreateParams.Payment.Settings.PaymentMethodType
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodType
        with PaymentMethodType
        with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.PaymentMethodType
        with typings.stripe.mod.Stripe.Subscription.PaymentSettings.PaymentMethodType
@@ -15135,7 +15646,6 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.SubscriptionUpdateParams.PaymentSettings.PaymentMethodType
        with typings.stripe.mod.Stripe.InvoiceCreateParams.PaymentSettings.PaymentMethodType
        with typings.stripe.mod.Stripe.SubscriptionCreateParams.PaymentSettings.PaymentMethodType
-       with typings.stripe.mod.Stripe.Order.Payment.Settings.PaymentMethodType
        with typings.stripe.mod.Stripe.PaymentLinkUpdateParams.PaymentMethodType
        with typings.stripe.mod.Stripe.InvoiceUpdateParams.PaymentSettings.PaymentMethodType
        with typings.stripe.mod.Stripe.PaymentLink.PaymentMethodType
@@ -15156,6 +15666,7 @@ object stripeStrings {
   @js.native
   sealed trait idempotency_error
     extends StObject
+       with RawErrorType
        with typings.stripe.mod.Stripe.Invoice.LastFinalizationError.Type
        with typings.stripe.mod.Stripe.SetupAttempt.SetupError.Type
        with typings.stripe.mod.Stripe.PaymentIntent.LastPaymentError.Type
@@ -15242,16 +15753,28 @@ object stripeStrings {
   inline def if_required: if_required = "if_required".asInstanceOf[if_required]
   
   @js.native
+  sealed trait igst
+    extends StObject
+       with TaxType
+       with typings.stripe.mod.Stripe.Tax.Calculation.TaxBreakdown.TaxRateDetails.TaxType
+       with typings.stripe.mod.Stripe.Tax.Calculation.ShippingCost.TaxBreakdown.TaxRateDetails.TaxType
+       with typings.stripe.mod.Stripe.Tax.CalculationLineItem.TaxBreakdown.TaxRateDetails.TaxType
+       with typings.stripe.mod.Stripe.TaxRate.TaxType
+       with typings.stripe.mod.Stripe.TaxRateUpdateParams.TaxType
+       with typings.stripe.mod.Stripe.TaxRateCreateParams.TaxType
+  inline def igst: igst = "igst".asInstanceOf[igst]
+  
+  @js.native
   sealed trait il_vat
     extends StObject
        with typings.stripe.mod.Stripe.CustomerCreateParams.TaxIdDatum.Type
-       with typings.stripe.mod.Stripe.OrderCreateParams.TaxDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.OrderUpdateParams.TaxDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Invoice.CustomerTaxId.Type
        with typings.stripe.mod.Stripe.InvoiceRetrieveUpcomingParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.InvoiceListUpcomingLinesParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Checkout.Session.CustomerDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.Order.TaxDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Transaction.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Calculation.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.CalculationCreateParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.TaxIdCreateParams.Type
        with typings.stripe.mod.Stripe.TaxId.Type
   inline def il_vat: il_vat = "il_vat".asInstanceOf[il_vat]
@@ -15268,13 +15791,13 @@ object stripeStrings {
   sealed trait in_gst
     extends StObject
        with typings.stripe.mod.Stripe.CustomerCreateParams.TaxIdDatum.Type
-       with typings.stripe.mod.Stripe.OrderCreateParams.TaxDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.OrderUpdateParams.TaxDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Invoice.CustomerTaxId.Type
        with typings.stripe.mod.Stripe.InvoiceRetrieveUpcomingParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.InvoiceListUpcomingLinesParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Checkout.Session.CustomerDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.Order.TaxDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Transaction.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Calculation.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.CalculationCreateParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.TaxIdCreateParams.Type
        with typings.stripe.mod.Stripe.TaxId.Type
   inline def in_gst: in_gst = "in_gst".asInstanceOf[in_gst]
@@ -15282,15 +15805,9 @@ object stripeStrings {
   @js.native
   sealed trait in_progress
     extends StObject
+       with ReconciliationStatus
        with typings.stripe.mod.Stripe.Terminal.Reader.Action.Status
   inline def in_progress: in_progress = "in_progress".asInstanceOf[in_progress]
-  
-  @js.native
-  sealed trait in_stock
-    extends StObject
-       with Value
-       with typings.stripe.mod.Stripe.SkuUpdateParams.Inventory.Value
-  inline def in_stock: in_stock = "in_stock".asInstanceOf[in_stock]
   
   @js.native
   sealed trait inactive
@@ -15307,11 +15824,13 @@ object stripeStrings {
        with CardIssuing
        with CardPayments
        with CartesBancairesPayments
+       with CashappPayments
        with EpsPayments
        with FpxPayments
        with GiropayPayments
        with GrabpayPayments
        with IdealPayments
+       with IndiaInternationalPayments
        with JcbPayments
        with KlarnaPayments
        with KonbiniPayments
@@ -15404,8 +15923,11 @@ object stripeStrings {
   sealed trait include_inclusive_tax
     extends StObject
        with AmountTaxDisplay
+       with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.InvoiceCreation.InvoiceData.RenderingOptions.AmountTaxDisplay
        with typings.stripe.mod.Stripe.CustomerUpdateParams.InvoiceSettings.RenderingOptions.AmountTaxDisplay
+       with typings.stripe.mod.Stripe.PaymentLinkCreateParams.InvoiceCreation.InvoiceData.RenderingOptions.AmountTaxDisplay
        with typings.stripe.mod.Stripe.InvoiceCreateParams.RenderingOptions.AmountTaxDisplay
+       with typings.stripe.mod.Stripe.PaymentLinkUpdateParams.InvoiceCreation.InvoiceData.RenderingOptions.AmountTaxDisplay
        with typings.stripe.mod.Stripe.InvoiceUpdateParams.RenderingOptions.AmountTaxDisplay
   inline def include_inclusive_tax: include_inclusive_tax = "include_inclusive_tax".asInstanceOf[include_inclusive_tax]
   
@@ -15414,14 +15936,8 @@ object stripeStrings {
     extends StObject
        with TaxBehavior
        with typings.stripe.mod.Stripe.ProductCreateParams.DefaultPriceData.CurrencyOptions.TaxBehavior
-       with typings.stripe.mod.Stripe.OrderCreateParams.LineItem.PriceData.TaxBehavior
-       with typings.stripe.mod.Stripe.OrderCreateParams.ShippingCost.ShippingRateData.TaxBehavior
-       with typings.stripe.mod.Stripe.OrderCreateParams.ShippingCost.ShippingRateData.FixedAmount.CurrencyOptions.TaxBehavior
        with typings.stripe.mod.Stripe.SubscriptionScheduleUpdateParams.Phase.Item.PriceData.TaxBehavior
        with typings.stripe.mod.Stripe.SubscriptionScheduleUpdateParams.Phase.AddInvoiceItem.PriceData.TaxBehavior
-       with typings.stripe.mod.Stripe.OrderUpdateParams.LineItem.PriceData.TaxBehavior
-       with typings.stripe.mod.Stripe.OrderUpdateParams.ShippingCost.ShippingRateData.TaxBehavior
-       with typings.stripe.mod.Stripe.OrderUpdateParams.ShippingCost.ShippingRateData.FixedAmount.CurrencyOptions.TaxBehavior
        with typings.stripe.mod.Stripe.InvoiceRetrieveUpcomingParams.SubscriptionItem.PriceData.TaxBehavior
        with typings.stripe.mod.Stripe.InvoiceRetrieveUpcomingParams.InvoiceItem.TaxBehavior
        with typings.stripe.mod.Stripe.InvoiceRetrieveUpcomingParams.InvoiceItem.PriceData.TaxBehavior
@@ -15433,6 +15949,12 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.ShippingOption.ShippingRateData.FixedAmount.CurrencyOptions.TaxBehavior
        with typings.stripe.mod.Stripe.PriceUpdateParams.TaxBehavior
        with typings.stripe.mod.Stripe.PriceUpdateParams.CurrencyOptions.TaxBehavior
+       with typings.stripe.mod.Stripe.Tax.Transaction.ShippingCost.TaxBehavior
+       with typings.stripe.mod.Stripe.Tax.Calculation.ShippingCost.TaxBehavior
+       with typings.stripe.mod.Stripe.Tax.CalculationCreateParams.LineItem.TaxBehavior
+       with typings.stripe.mod.Stripe.Tax.CalculationCreateParams.ShippingCost.TaxBehavior
+       with typings.stripe.mod.Stripe.Tax.TransactionLineItem.TaxBehavior
+       with typings.stripe.mod.Stripe.Tax.CalculationLineItem.TaxBehavior
        with typings.stripe.mod.Stripe.SubscriptionItemUpdateParams.PriceData.TaxBehavior
        with typings.stripe.mod.Stripe.SubscriptionItemCreateParams.PriceData.TaxBehavior
        with typings.stripe.mod.Stripe.ShippingRateUpdateParams.TaxBehavior
@@ -15441,6 +15963,8 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.SubscriptionUpdateParams.AddInvoiceItem.PriceData.TaxBehavior
        with typings.stripe.mod.Stripe.PriceCreateParams.TaxBehavior
        with typings.stripe.mod.Stripe.PriceCreateParams.CurrencyOptions.TaxBehavior
+       with typings.stripe.mod.Stripe.InvoiceCreateParams.ShippingCost.ShippingRateData.TaxBehavior
+       with typings.stripe.mod.Stripe.InvoiceCreateParams.ShippingCost.ShippingRateData.FixedAmount.CurrencyOptions.TaxBehavior
        with typings.stripe.mod.Stripe.SubscriptionCreateParams.Item.PriceData.TaxBehavior
        with typings.stripe.mod.Stripe.SubscriptionCreateParams.AddInvoiceItem.PriceData.TaxBehavior
        with typings.stripe.mod.Stripe.QuoteUpdateParams.LineItem.PriceData.TaxBehavior
@@ -15448,6 +15972,8 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.Price.CurrencyOptions.TaxBehavior
        with typings.stripe.mod.Stripe.SubscriptionScheduleCreateParams.Phase.Item.PriceData.TaxBehavior
        with typings.stripe.mod.Stripe.SubscriptionScheduleCreateParams.Phase.AddInvoiceItem.PriceData.TaxBehavior
+       with typings.stripe.mod.Stripe.InvoiceUpdateParams.ShippingCost.ShippingRateData.TaxBehavior
+       with typings.stripe.mod.Stripe.InvoiceUpdateParams.ShippingCost.ShippingRateData.FixedAmount.CurrencyOptions.TaxBehavior
        with typings.stripe.mod.Stripe.InvoiceItemUpdateParams.TaxBehavior
        with typings.stripe.mod.Stripe.InvoiceItemUpdateParams.PriceData.TaxBehavior
        with typings.stripe.mod.Stripe.InvoiceItemCreateParams.TaxBehavior
@@ -15559,6 +16085,18 @@ object stripeStrings {
   inline def individual: individual = "individual".asInstanceOf[individual]
   
   @js.native
+  sealed trait individualDotcard_issuingDotuser_terms_acceptanceDotdate
+    extends StObject
+       with PastDue
+  inline def individualDotcard_issuingDotuser_terms_acceptanceDotdate: individualDotcard_issuingDotuser_terms_acceptanceDotdate = "individual.card_issuing.user_terms_acceptance.date".asInstanceOf[individualDotcard_issuingDotuser_terms_acceptanceDotdate]
+  
+  @js.native
+  sealed trait individualDotcard_issuingDotuser_terms_acceptanceDotip
+    extends StObject
+       with PastDue
+  inline def individualDotcard_issuingDotuser_terms_acceptanceDotip: individualDotcard_issuingDotuser_terms_acceptanceDotip = "individual.card_issuing.user_terms_acceptance.ip".asInstanceOf[individualDotcard_issuingDotuser_terms_acceptanceDotip]
+  
+  @js.native
   sealed trait individualDotdobDotday
     extends StObject
        with PastDue
@@ -15622,13 +16160,6 @@ object stripeStrings {
   inline def inf: inf = "inf".asInstanceOf[inf]
   
   @js.native
-  sealed trait infinite
-    extends StObject
-       with typings.stripe.mod.Stripe.SkuCreateParams.Inventory.Type
-       with typings.stripe.mod.Stripe.SkuUpdateParams.Inventory.Type
-  inline def infinite: infinite = "infinite".asInstanceOf[infinite]
-  
-  @js.native
   sealed trait information_retrieval_services
     extends StObject
        with _AllowedCategory
@@ -15689,8 +16220,6 @@ object stripeStrings {
        with Method
        with VerificationMethod
        with typings.stripe.mod.Stripe.SetupIntentUpdateParams.PaymentMethodOptions.AcssDebit.VerificationMethod
-       with typings.stripe.mod.Stripe.OrderCreateParams.Payment.Settings.PaymentMethodOptions.AcssDebit.VerificationMethod
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.AcssDebit.VerificationMethod
        with typings.stripe.mod.Stripe.Invoice.PaymentSettings.PaymentMethodOptions.UsBankAccount.VerificationMethod
        with typings.stripe.mod.Stripe.Invoice.PaymentSettings.PaymentMethodOptions.AcssDebit.VerificationMethod
        with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.UsBankAccount.VerificationMethod
@@ -15713,7 +16242,6 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.InvoiceCreateParams.PaymentSettings.PaymentMethodOptions.AcssDebit.VerificationMethod
        with typings.stripe.mod.Stripe.SubscriptionCreateParams.PaymentSettings.PaymentMethodOptions.UsBankAccount.VerificationMethod
        with typings.stripe.mod.Stripe.SubscriptionCreateParams.PaymentSettings.PaymentMethodOptions.AcssDebit.VerificationMethod
-       with typings.stripe.mod.Stripe.Order.Payment.Settings.PaymentMethodOptions.AcssDebit.VerificationMethod
        with typings.stripe.mod.Stripe.SetupIntentConfirmParams.PaymentMethodOptions.UsBankAccount.VerificationMethod
        with typings.stripe.mod.Stripe.SetupIntentConfirmParams.PaymentMethodOptions.AcssDebit.VerificationMethod
        with typings.stripe.mod.Stripe.InvoiceUpdateParams.PaymentSettings.PaymentMethodOptions.UsBankAccount.VerificationMethod
@@ -15813,6 +16341,7 @@ object stripeStrings {
   sealed trait interac_present
     extends StObject
        with typings.stripe.mod.Stripe.PaymentMethod.Type
+       with typings.stripe.mod.Stripe.TestHelpers.Terminal.ReaderPresentPaymentMethodParams.Type
   inline def interac_present: interac_present = "interac_present".asInstanceOf[interac_present]
   
   @js.native
@@ -15825,8 +16354,6 @@ object stripeStrings {
   sealed trait interval
     extends StObject
        with PaymentSchedule
-       with typings.stripe.mod.Stripe.OrderCreateParams.Payment.Settings.PaymentMethodOptions.AcssDebit.MandateOptions.PaymentSchedule
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.AcssDebit.MandateOptions.PaymentSchedule
        with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.AcssDebit.MandateOptions.PaymentSchedule
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.AcssDebit.MandateOptions.PaymentSchedule
        with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.PaymentMethodOptions.AcssDebit.MandateOptions.PaymentSchedule
@@ -15834,7 +16361,6 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.AcssDebit.MandateOptions.PaymentSchedule
        with typings.stripe.mod.Stripe.PaymentIntent.PaymentMethodOptions.AcssDebit.MandateOptions.PaymentSchedule
        with typings.stripe.mod.Stripe.Mandate.PaymentMethodDetails.AcssDebit.PaymentSchedule
-       with typings.stripe.mod.Stripe.Order.Payment.Settings.PaymentMethodOptions.AcssDebit.MandateOptions.PaymentSchedule
        with typings.stripe.mod.Stripe.SetupIntentConfirmParams.PaymentMethodOptions.AcssDebit.MandateOptions.PaymentSchedule
        with typings.stripe.mod.Stripe.SetupIntentCreateParams.PaymentMethodOptions.AcssDebit.MandateOptions.PaymentSchedule
        with typings.stripe.mod.Stripe.SetupIntent.PaymentMethodOptions.AcssDebit.MandateOptions.PaymentSchedule
@@ -15885,6 +16411,8 @@ object stripeStrings {
   @js.native
   sealed trait invalid_address_city_state_postal_code
     extends StObject
+       with typings.stripe.mod.Stripe.BankAccount.Requirements.Error.Code
+       with typings.stripe.mod.Stripe.BankAccount.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.Requirements.Error.Code
        with typings.stripe.mod.Stripe.Person.FutureRequirements.Error.Code
@@ -15907,6 +16435,8 @@ object stripeStrings {
   @js.native
   sealed trait invalid_dob_age_under_18
     extends StObject
+       with typings.stripe.mod.Stripe.BankAccount.Requirements.Error.Code
+       with typings.stripe.mod.Stripe.BankAccount.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.Requirements.Error.Code
        with typings.stripe.mod.Stripe.Person.FutureRequirements.Error.Code
@@ -15916,8 +16446,16 @@ object stripeStrings {
   inline def invalid_dob_age_under_18: invalid_dob_age_under_18 = "invalid_dob_age_under_18".asInstanceOf[invalid_dob_age_under_18]
   
   @js.native
+  sealed trait invalid_grant
+    extends StObject
+       with RawErrorType
+  inline def invalid_grant: invalid_grant = "invalid_grant".asInstanceOf[invalid_grant]
+  
+  @js.native
   sealed trait invalid_representative_country
     extends StObject
+       with typings.stripe.mod.Stripe.BankAccount.Requirements.Error.Code
+       with typings.stripe.mod.Stripe.BankAccount.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.Requirements.Error.Code
        with typings.stripe.mod.Stripe.Person.FutureRequirements.Error.Code
@@ -15929,6 +16467,7 @@ object stripeStrings {
   @js.native
   sealed trait invalid_request_error
     extends StObject
+       with RawErrorType
        with typings.stripe.mod.Stripe.Invoice.LastFinalizationError.Type
        with typings.stripe.mod.Stripe.SetupAttempt.SetupError.Type
        with typings.stripe.mod.Stripe.PaymentIntent.LastPaymentError.Type
@@ -15938,6 +16477,8 @@ object stripeStrings {
   @js.native
   sealed trait invalid_street_address
     extends StObject
+       with typings.stripe.mod.Stripe.BankAccount.Requirements.Error.Code
+       with typings.stripe.mod.Stripe.BankAccount.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.Requirements.Error.Code
        with typings.stripe.mod.Stripe.Person.FutureRequirements.Error.Code
@@ -15949,6 +16490,8 @@ object stripeStrings {
   @js.native
   sealed trait invalid_tos_acceptance
     extends StObject
+       with typings.stripe.mod.Stripe.BankAccount.Requirements.Error.Code
+       with typings.stripe.mod.Stripe.BankAccount.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.Requirements.Error.Code
        with typings.stripe.mod.Stripe.Person.FutureRequirements.Error.Code
@@ -15960,6 +16503,8 @@ object stripeStrings {
   @js.native
   sealed trait invalid_value_other
     extends StObject
+       with typings.stripe.mod.Stripe.BankAccount.Requirements.Error.Code
+       with typings.stripe.mod.Stripe.BankAccount.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.Requirements.Error.Code
        with typings.stripe.mod.Stripe.Person.FutureRequirements.Error.Code
@@ -16087,6 +16632,12 @@ object stripeStrings {
   inline def invoice_line_item: invoice_line_item = "invoice_line_item".asInstanceOf[invoice_line_item]
   
   @js.native
+  sealed trait invoice_overpaid
+    extends StObject
+       with typings.stripe.mod.Stripe.CustomerBalanceTransaction.Type
+  inline def invoice_overpaid: invoice_overpaid = "invoice_overpaid".asInstanceOf[invoice_overpaid]
+  
+  @js.native
   sealed trait invoice_too_large
     extends StObject
        with typings.stripe.mod.Stripe.CustomerBalanceTransaction.Type
@@ -16129,13 +16680,10 @@ object stripeStrings {
   sealed trait ios
     extends StObject
        with Client
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.WechatPay.Client
-       with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.WechatPay.Client
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.WechatPay.Client
        with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.PaymentMethodOptions.WechatPay.Client
        with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.WechatPay.Client
        with typings.stripe.mod.Stripe.PaymentIntent.PaymentMethodOptions.WechatPay.Client
-       with typings.stripe.mod.Stripe.Order.Payment.Settings.PaymentMethodOptions.WechatPay.Client
   inline def ios: ios = "ios".asInstanceOf[ios]
   
   @js.native
@@ -16150,13 +16698,13 @@ object stripeStrings {
   sealed trait is_vat
     extends StObject
        with typings.stripe.mod.Stripe.CustomerCreateParams.TaxIdDatum.Type
-       with typings.stripe.mod.Stripe.OrderCreateParams.TaxDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.OrderUpdateParams.TaxDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Invoice.CustomerTaxId.Type
        with typings.stripe.mod.Stripe.InvoiceRetrieveUpcomingParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.InvoiceListUpcomingLinesParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Checkout.Session.CustomerDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.Order.TaxDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Transaction.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Calculation.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.CalculationCreateParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.TaxIdCreateParams.Type
        with typings.stripe.mod.Stripe.TaxId.Type
   inline def is_vat: is_vat = "is_vat".asInstanceOf[is_vat]
@@ -16335,8 +16883,6 @@ object stripeStrings {
   sealed trait `it-CH`
     extends StObject
        with PreferredLocale
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.Klarna.PreferredLocale
-       with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.Klarna.PreferredLocale
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.Klarna.PreferredLocale
        with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.Klarna.PreferredLocale
   inline def `it-CH`: `it-CH` = "it-CH".asInstanceOf[`it-CH`]
@@ -16345,10 +16891,12 @@ object stripeStrings {
   sealed trait `it-IT`
     extends StObject
        with PreferredLocale
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.Klarna.PreferredLocale
-       with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.Klarna.PreferredLocale
+       with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.Paypal.PreferredLocale
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.Klarna.PreferredLocale
+       with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.Paypal.PreferredLocale
+       with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.PaymentMethodOptions.Paypal.PreferredLocale
        with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.Klarna.PreferredLocale
+       with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.Paypal.PreferredLocale
   inline def `it-IT`: `it-IT` = "it-IT".asInstanceOf[`it-IT`]
   
   @js.native
@@ -16358,13 +16906,10 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.Checkout.Session.Locale
        with typings.stripe.mod.Stripe.BillingPortal.SessionCreateParams.Locale
        with typings.stripe.mod.Stripe.BillingPortal.Session.Locale
-       with typings.stripe.mod.Stripe.OrderCreateParams.Payment.Settings.PaymentMethodOptions.Sofort.PreferredLanguage
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.Sofort.PreferredLanguage
        with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.Sofort.PreferredLanguage
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.Sofort.PreferredLanguage
        with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.Sofort.PreferredLanguage
        with typings.stripe.mod.Stripe.PaymentIntent.PaymentMethodOptions.Sofort.PreferredLanguage
-       with typings.stripe.mod.Stripe.Order.Payment.Settings.PaymentMethodOptions.Sofort.PreferredLanguage
        with typings.stripe.mod.Stripe.Charge.PaymentMethodDetails.Sofort.PreferredLanguage
   inline def it_ : it_ = "it".asInstanceOf[it_]
   
@@ -16401,6 +16946,10 @@ object stripeStrings {
   sealed trait jct
     extends StObject
        with TaxType
+       with typings.stripe.mod.Stripe.Tax.Calculation.TaxBreakdown.TaxRateDetails.TaxType
+       with typings.stripe.mod.Stripe.Tax.Calculation.ShippingCost.TaxBreakdown.TaxRateDetails.TaxType
+       with typings.stripe.mod.Stripe.Tax.CalculationLineItem.TaxBreakdown.TaxRateDetails.TaxType
+       with typings.stripe.mod.Stripe.TaxRate.TaxType
        with typings.stripe.mod.Stripe.TaxRateUpdateParams.TaxType
        with typings.stripe.mod.Stripe.TaxRateCreateParams.TaxType
   inline def jct: jct = "jct".asInstanceOf[jct]
@@ -16432,8 +16981,6 @@ object stripeStrings {
   sealed trait jp_bank_transfer
     extends StObject
        with typings.stripe.mod.Stripe.CustomerCreateFundingInstructionsParams.BankTransfer.Type
-       with typings.stripe.mod.Stripe.OrderCreateParams.Payment.Settings.PaymentMethodOptions.CustomerBalance.BankTransfer.Type
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.CustomerBalance.BankTransfer.Type
        with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.CustomerBalance.BankTransfer.Type
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.CustomerBalance.BankTransfer.Type
        with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.PaymentMethodOptions.CustomerBalance.BankTransfer.Type
@@ -16441,7 +16988,6 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.CustomerBalance.BankTransfer.Type
        with typings.stripe.mod.Stripe.PaymentIntent.PaymentMethodOptions.CustomerBalance.BankTransfer.Type
        with typings.stripe.mod.Stripe.PaymentIntent.NextAction.DisplayBankTransferInstructions.Type
-       with typings.stripe.mod.Stripe.Order.Payment.Settings.PaymentMethodOptions.CustomerBalance.BankTransfer.Type
        with typings.stripe.mod.Stripe.FundingInstructions.BankTransfer.Type
        with typings.stripe.mod.Stripe.CustomerCashBalanceTransaction.Funded.BankTransfer.Type
   inline def jp_bank_transfer: jp_bank_transfer = "jp_bank_transfer".asInstanceOf[jp_bank_transfer]
@@ -16450,13 +16996,13 @@ object stripeStrings {
   sealed trait jp_cn
     extends StObject
        with typings.stripe.mod.Stripe.CustomerCreateParams.TaxIdDatum.Type
-       with typings.stripe.mod.Stripe.OrderCreateParams.TaxDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.OrderUpdateParams.TaxDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Invoice.CustomerTaxId.Type
        with typings.stripe.mod.Stripe.InvoiceRetrieveUpcomingParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.InvoiceListUpcomingLinesParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Checkout.Session.CustomerDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.Order.TaxDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Transaction.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Calculation.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.CalculationCreateParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.TaxIdCreateParams.Type
        with typings.stripe.mod.Stripe.TaxId.Type
   inline def jp_cn: jp_cn = "jp_cn".asInstanceOf[jp_cn]
@@ -16465,13 +17011,13 @@ object stripeStrings {
   sealed trait jp_rn
     extends StObject
        with typings.stripe.mod.Stripe.CustomerCreateParams.TaxIdDatum.Type
-       with typings.stripe.mod.Stripe.OrderCreateParams.TaxDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.OrderUpdateParams.TaxDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Invoice.CustomerTaxId.Type
        with typings.stripe.mod.Stripe.InvoiceRetrieveUpcomingParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.InvoiceListUpcomingLinesParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Checkout.Session.CustomerDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.Order.TaxDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Transaction.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Calculation.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.CalculationCreateParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.TaxIdCreateParams.Type
        with typings.stripe.mod.Stripe.TaxId.Type
   inline def jp_rn: jp_rn = "jp_rn".asInstanceOf[jp_rn]
@@ -16480,28 +17026,41 @@ object stripeStrings {
   sealed trait jp_trn
     extends StObject
        with typings.stripe.mod.Stripe.CustomerCreateParams.TaxIdDatum.Type
-       with typings.stripe.mod.Stripe.OrderCreateParams.TaxDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.OrderUpdateParams.TaxDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Invoice.CustomerTaxId.Type
        with typings.stripe.mod.Stripe.InvoiceRetrieveUpcomingParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.InvoiceListUpcomingLinesParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Checkout.Session.CustomerDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.Order.TaxDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Transaction.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Calculation.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.CalculationCreateParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.TaxIdCreateParams.Type
        with typings.stripe.mod.Stripe.TaxId.Type
   inline def jp_trn: jp_trn = "jp_trn".asInstanceOf[jp_trn]
   
   @js.native
+  sealed trait jurisdiction_unsupported
+    extends StObject
+       with TaxabilityReason
+       with typings.stripe.mod.Stripe.Quote.Computed.Recurring.TotalDetails.Breakdown.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.Quote.TotalDetails.Breakdown.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.LineItem.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.Invoice.ShippingCost.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.Checkout.Session.TotalDetails.Breakdown.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.Checkout.Session.ShippingCost.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.CreditNote.ShippingCost.Tax.TaxabilityReason
+  inline def jurisdiction_unsupported: jurisdiction_unsupported = "jurisdiction_unsupported".asInstanceOf[jurisdiction_unsupported]
+  
+  @js.native
   sealed trait ke_pin
     extends StObject
        with typings.stripe.mod.Stripe.CustomerCreateParams.TaxIdDatum.Type
-       with typings.stripe.mod.Stripe.OrderCreateParams.TaxDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.OrderUpdateParams.TaxDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Invoice.CustomerTaxId.Type
        with typings.stripe.mod.Stripe.InvoiceRetrieveUpcomingParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.InvoiceListUpcomingLinesParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Checkout.Session.CustomerDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.Order.TaxDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Transaction.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Calculation.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.CalculationCreateParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.TaxIdCreateParams.Type
        with typings.stripe.mod.Stripe.TaxId.Type
   inline def ke_pin: ke_pin = "ke_pin".asInstanceOf[ke_pin]
@@ -16536,11 +17095,8 @@ object stripeStrings {
   @js.native
   sealed trait klarna
     extends StObject
-       with typings.stripe.mod.Stripe.OrderCreateParams.Payment.Settings.PaymentMethodType
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodType
        with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.PaymentMethodType
        with typings.stripe.mod.Stripe.PaymentLinkCreateParams.PaymentMethodType
-       with typings.stripe.mod.Stripe.Order.Payment.Settings.PaymentMethodType
        with typings.stripe.mod.Stripe.PaymentLinkUpdateParams.PaymentMethodType
        with typings.stripe.mod.Stripe.PaymentLink.PaymentMethodType
        with typings.stripe.mod.Stripe.Source.Type
@@ -16610,13 +17166,13 @@ object stripeStrings {
   sealed trait kr_brn
     extends StObject
        with typings.stripe.mod.Stripe.CustomerCreateParams.TaxIdDatum.Type
-       with typings.stripe.mod.Stripe.OrderCreateParams.TaxDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.OrderUpdateParams.TaxDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Invoice.CustomerTaxId.Type
        with typings.stripe.mod.Stripe.InvoiceRetrieveUpcomingParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.InvoiceListUpcomingLinesParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Checkout.Session.CustomerDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.Order.TaxDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Transaction.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Calculation.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.CalculationCreateParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.TaxIdCreateParams.Type
        with typings.stripe.mod.Stripe.TaxId.Type
   inline def kr_brn: kr_brn = "kr_brn".asInstanceOf[kr_brn]
@@ -16715,6 +17271,18 @@ object stripeStrings {
   inline def lawson: lawson = "lawson".asInstanceOf[lawson]
   
   @js.native
+  sealed trait lease_tax
+    extends StObject
+       with TaxType
+       with typings.stripe.mod.Stripe.Tax.Calculation.TaxBreakdown.TaxRateDetails.TaxType
+       with typings.stripe.mod.Stripe.Tax.Calculation.ShippingCost.TaxBreakdown.TaxRateDetails.TaxType
+       with typings.stripe.mod.Stripe.Tax.CalculationLineItem.TaxBreakdown.TaxRateDetails.TaxType
+       with typings.stripe.mod.Stripe.TaxRate.TaxType
+       with typings.stripe.mod.Stripe.TaxRateUpdateParams.TaxType
+       with typings.stripe.mod.Stripe.TaxRateCreateParams.TaxType
+  inline def lease_tax: lease_tax = "lease_tax".asInstanceOf[lease_tax]
+  
+  @js.native
   sealed trait legal_services_attorneys
     extends StObject
        with _AllowedCategory
@@ -16741,13 +17309,13 @@ object stripeStrings {
   sealed trait li_uid
     extends StObject
        with typings.stripe.mod.Stripe.CustomerCreateParams.TaxIdDatum.Type
-       with typings.stripe.mod.Stripe.OrderCreateParams.TaxDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.OrderUpdateParams.TaxDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Invoice.CustomerTaxId.Type
        with typings.stripe.mod.Stripe.InvoiceRetrieveUpcomingParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.InvoiceListUpcomingLinesParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Checkout.Session.CustomerDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.Order.TaxDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Transaction.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Calculation.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.CalculationCreateParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.TaxIdCreateParams.Type
        with typings.stripe.mod.Stripe.TaxId.Type
   inline def li_uid: li_uid = "li_uid".asInstanceOf[li_uid]
@@ -16761,13 +17329,6 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.Price.Recurring.UsageType
        with typings.stripe.mod.Stripe.Plan.UsageType
   inline def licensed: licensed = "licensed".asInstanceOf[licensed]
-  
-  @js.native
-  sealed trait limited
-    extends StObject
-       with Value
-       with typings.stripe.mod.Stripe.SkuUpdateParams.Inventory.Value
-  inline def limited: limited = "limited".asInstanceOf[limited]
   
   @js.native
   sealed trait limited_liability_partnership
@@ -16791,27 +17352,35 @@ object stripeStrings {
   @js.native
   sealed trait link
     extends StObject
-       with typings.stripe.mod.Stripe.OrderCreateParams.Payment.Settings.PaymentMethodType
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodType
        with PaymentMethodType
+       with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.PaymentMethodType
        with typings.stripe.mod.Stripe.Subscription.PaymentSettings.PaymentMethodType
+       with typings.stripe.mod.Stripe.PaymentLinkCreateParams.PaymentMethodType
        with typings.stripe.mod.Stripe.SubscriptionUpdateParams.PaymentSettings.PaymentMethodType
        with typings.stripe.mod.Stripe.InvoiceCreateParams.PaymentSettings.PaymentMethodType
        with typings.stripe.mod.Stripe.SubscriptionCreateParams.PaymentSettings.PaymentMethodType
-       with typings.stripe.mod.Stripe.Order.Payment.Settings.PaymentMethodType
+       with typings.stripe.mod.Stripe.PaymentLinkUpdateParams.PaymentMethodType
        with typings.stripe.mod.Stripe.InvoiceUpdateParams.PaymentSettings.PaymentMethodType
+       with typings.stripe.mod.Stripe.PaymentLink.PaymentMethodType
        with SupportedPaymentMethodType
        with typings.stripe.mod.Stripe.SetupIntentUpdateParams.PaymentMethodData.Type
+       with typings.stripe.mod.Stripe.PaymentMethod.Card.Wallet.Type
        with typings.stripe.mod.Stripe.PaymentMethod.Type
        with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodData.Type
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodData.Type
        with typings.stripe.mod.Stripe.PaymentMethodCreateParams.Type
        with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodData.Type
+       with typings.stripe.mod.Stripe.SetupAttempt.PaymentMethodDetails.Card.Wallet.Type
+       with typings.stripe.mod.Stripe.Charge.PaymentMethodDetails.Card.Wallet.Type
        with typings.stripe.mod.Stripe.SetupIntentConfirmParams.PaymentMethodData.Type
        with typings.stripe.mod.Stripe.SetupIntentCreateParams.PaymentMethodData.Type
        with typings.stripe.mod.Stripe.CustomerListPaymentMethodsParams.Type
        with typings.stripe.mod.Stripe.PaymentMethodListParams.Type
   inline def link: link = "link".asInstanceOf[link]
+  
+  @js.native
+  sealed trait list extends StObject
+  inline def list: list = "list".asInstanceOf[list]
   
   @js.native
   sealed trait listed
@@ -16848,6 +17417,10 @@ object stripeStrings {
   @js.native
   sealed trait low_quality
     extends StObject
+       with Feedback
+       with typings.stripe.mod.Stripe.SubscriptionUpdateParams.CancellationDetails.Feedback
+       with typings.stripe.mod.Stripe.SubscriptionDeleteParams.CancellationDetails.Feedback
+       with typings.stripe.mod.Stripe.SubscriptionCancelParams.CancellationDetails.Feedback
        with Option
        with typings.stripe.mod.Stripe.BillingPortal.ConfigurationCreateParams.Features.SubscriptionCancel.CancellationReason.Option
        with typings.stripe.mod.Stripe.BillingPortal.Configuration.Features.SubscriptionCancel.CancellationReason.Option
@@ -16921,6 +17494,8 @@ object stripeStrings {
   sealed trait magnetic_stripe_fallback
     extends StObject
        with ReadMethod
+       with typings.stripe.mod.Stripe.PaymentMethod.CardPresent.ReadMethod
+       with typings.stripe.mod.Stripe.Charge.PaymentMethodDetails.InteracPresent.ReadMethod
        with typings.stripe.mod.Stripe.Charge.PaymentMethodDetails.CardPresent.ReadMethod
   inline def magnetic_stripe_fallback: magnetic_stripe_fallback = "magnetic_stripe_fallback".asInstanceOf[magnetic_stripe_fallback]
   
@@ -16928,6 +17503,8 @@ object stripeStrings {
   sealed trait magnetic_stripe_track2
     extends StObject
        with ReadMethod
+       with typings.stripe.mod.Stripe.PaymentMethod.CardPresent.ReadMethod
+       with typings.stripe.mod.Stripe.Charge.PaymentMethodDetails.InteracPresent.ReadMethod
        with typings.stripe.mod.Stripe.Charge.PaymentMethodDetails.CardPresent.ReadMethod
   inline def magnetic_stripe_track2: magnetic_stripe_track2 = "magnetic_stripe_track2".asInstanceOf[magnetic_stripe_track2]
   
@@ -16947,17 +17524,11 @@ object stripeStrings {
     extends StObject
        with BillingReason
        with CaptureMethod
-       with typings.stripe.mod.Stripe.OrderCreateParams.Payment.Settings.PaymentMethodOptions.AfterpayClearpay.CaptureMethod
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.Card.CaptureMethod
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.AfterpayClearpay.CaptureMethod
-       with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.CaptureMethod
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.CaptureMethod
        with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.PaymentIntentData.CaptureMethod
        with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.CaptureMethod
        with typings.stripe.mod.Stripe.PaymentLinkCreateParams.PaymentIntentData.CaptureMethod
        with typings.stripe.mod.Stripe.PaymentIntent.CaptureMethod
-       with typings.stripe.mod.Stripe.Order.Payment.Settings.PaymentMethodOptions.Card.CaptureMethod
-       with typings.stripe.mod.Stripe.Order.Payment.Settings.PaymentMethodOptions.AfterpayClearpay.CaptureMethod
        with typings.stripe.mod.Stripe.PaymentLink.PaymentIntentData.CaptureMethod
        with ConfirmationMethod
        with typings.stripe.mod.Stripe.PaymentIntent.ConfirmationMethod
@@ -17039,6 +17610,29 @@ object stripeStrings {
        with Behavior
        with typings.stripe.mod.Stripe.SubscriptionUpdateParams.PauseCollection.Behavior
   inline def mark_uncollectible: mark_uncollectible = "mark_uncollectible".asInstanceOf[mark_uncollectible]
+  
+  @js.native
+  sealed trait marketplaces
+    extends StObject
+       with _AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._AllowedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._AllowedCategory
+       with _BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls._BlockedCategory
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls._BlockedCategory
+       with _Category
+       with typings.stripe.mod.Stripe.Issuing.CardUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderUpdateParams.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Cardholder.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
+       with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
+  inline def marketplaces: marketplaces = "marketplaces".asInstanceOf[marketplaces]
   
   @js.native
   sealed trait masonry_stonework_and_plaster
@@ -17323,6 +17917,14 @@ object stripeStrings {
   inline def merchandise_not_as_described: merchandise_not_as_described = "merchandise_not_as_described".asInstanceOf[merchandise_not_as_described]
   
   @js.native
+  sealed trait merchant_default
+    extends StObject
+       with ReconciliationMode
+       with typings.stripe.mod.Stripe.CustomerUpdateParams.CashBalance.Settings.ReconciliationMode
+       with typings.stripe.mod.Stripe.CashBalanceUpdateParams.Settings.ReconciliationMode
+  inline def merchant_default: merchant_default = "merchant_default".asInstanceOf[merchant_default]
+  
+  @js.native
   sealed trait merchant_rejected
     extends StObject
        with ReturnStatus
@@ -17371,8 +17973,6 @@ object stripeStrings {
     extends StObject
        with VerificationMethod
        with typings.stripe.mod.Stripe.SetupIntentUpdateParams.PaymentMethodOptions.AcssDebit.VerificationMethod
-       with typings.stripe.mod.Stripe.OrderCreateParams.Payment.Settings.PaymentMethodOptions.AcssDebit.VerificationMethod
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.AcssDebit.VerificationMethod
        with typings.stripe.mod.Stripe.Invoice.PaymentSettings.PaymentMethodOptions.UsBankAccount.VerificationMethod
        with typings.stripe.mod.Stripe.Invoice.PaymentSettings.PaymentMethodOptions.AcssDebit.VerificationMethod
        with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.UsBankAccount.VerificationMethod
@@ -17393,7 +17993,6 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.InvoiceCreateParams.PaymentSettings.PaymentMethodOptions.AcssDebit.VerificationMethod
        with typings.stripe.mod.Stripe.SubscriptionCreateParams.PaymentSettings.PaymentMethodOptions.UsBankAccount.VerificationMethod
        with typings.stripe.mod.Stripe.SubscriptionCreateParams.PaymentSettings.PaymentMethodOptions.AcssDebit.VerificationMethod
-       with typings.stripe.mod.Stripe.Order.Payment.Settings.PaymentMethodOptions.AcssDebit.VerificationMethod
        with typings.stripe.mod.Stripe.SetupIntentConfirmParams.PaymentMethodOptions.UsBankAccount.VerificationMethod
        with typings.stripe.mod.Stripe.SetupIntentConfirmParams.PaymentMethodOptions.AcssDebit.VerificationMethod
        with typings.stripe.mod.Stripe.InvoiceUpdateParams.PaymentSettings.PaymentMethodOptions.UsBankAccount.VerificationMethod
@@ -17722,6 +18321,10 @@ object stripeStrings {
   @js.native
   sealed trait missing_features
     extends StObject
+       with Feedback
+       with typings.stripe.mod.Stripe.SubscriptionUpdateParams.CancellationDetails.Feedback
+       with typings.stripe.mod.Stripe.SubscriptionDeleteParams.CancellationDetails.Feedback
+       with typings.stripe.mod.Stripe.SubscriptionCancelParams.CancellationDetails.Feedback
        with Option
        with typings.stripe.mod.Stripe.BillingPortal.ConfigurationCreateParams.Features.SubscriptionCancel.CancellationReason.Option
        with typings.stripe.mod.Stripe.BillingPortal.Configuration.Features.SubscriptionCancel.CancellationReason.Option
@@ -17807,11 +18410,11 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.SetupIntent.PaymentMethodOptions.Blik.MandateOptions.OffSession.Interval
        with typings.stripe.mod.Stripe.SetupIntent.PaymentMethodOptions.Card.MandateOptions.Interval
        with Unit
-       with typings.stripe.mod.Stripe.OrderCreateParams.ShippingCost.ShippingRateData.DeliveryEstimate.Maximum.Unit
-       with typings.stripe.mod.Stripe.OrderUpdateParams.ShippingCost.ShippingRateData.DeliveryEstimate.Minimum.Unit
-       with typings.stripe.mod.Stripe.OrderUpdateParams.ShippingCost.ShippingRateData.DeliveryEstimate.Maximum.Unit
-       with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.ShippingOption.ShippingRateData.DeliveryEstimate.Minimum.Unit
        with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.ShippingOption.ShippingRateData.DeliveryEstimate.Maximum.Unit
+       with typings.stripe.mod.Stripe.InvoiceCreateParams.ShippingCost.ShippingRateData.DeliveryEstimate.Minimum.Unit
+       with typings.stripe.mod.Stripe.InvoiceCreateParams.ShippingCost.ShippingRateData.DeliveryEstimate.Maximum.Unit
+       with typings.stripe.mod.Stripe.InvoiceUpdateParams.ShippingCost.ShippingRateData.DeliveryEstimate.Minimum.Unit
+       with typings.stripe.mod.Stripe.InvoiceUpdateParams.ShippingCost.ShippingRateData.DeliveryEstimate.Maximum.Unit
        with typings.stripe.mod.Stripe.ShippingRateCreateParams.DeliveryEstimate.Minimum.Unit
        with typings.stripe.mod.Stripe.ShippingRateCreateParams.DeliveryEstimate.Maximum.Unit
        with typings.stripe.mod.Stripe.ShippingRate.DeliveryEstimate.Minimum.Unit
@@ -18042,8 +18645,6 @@ object stripeStrings {
   sealed trait mx_bank_transfer
     extends StObject
        with typings.stripe.mod.Stripe.CustomerCreateFundingInstructionsParams.BankTransfer.Type
-       with typings.stripe.mod.Stripe.OrderCreateParams.Payment.Settings.PaymentMethodOptions.CustomerBalance.BankTransfer.Type
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.CustomerBalance.BankTransfer.Type
        with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.CustomerBalance.BankTransfer.Type
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.CustomerBalance.BankTransfer.Type
        with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.PaymentMethodOptions.CustomerBalance.BankTransfer.Type
@@ -18051,7 +18652,6 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.CustomerBalance.BankTransfer.Type
        with typings.stripe.mod.Stripe.PaymentIntent.PaymentMethodOptions.CustomerBalance.BankTransfer.Type
        with typings.stripe.mod.Stripe.PaymentIntent.NextAction.DisplayBankTransferInstructions.Type
-       with typings.stripe.mod.Stripe.Order.Payment.Settings.PaymentMethodOptions.CustomerBalance.BankTransfer.Type
        with typings.stripe.mod.Stripe.CustomerCashBalanceTransaction.Funded.BankTransfer.Type
   inline def mx_bank_transfer: mx_bank_transfer = "mx_bank_transfer".asInstanceOf[mx_bank_transfer]
   
@@ -18059,13 +18659,13 @@ object stripeStrings {
   sealed trait mx_rfc
     extends StObject
        with typings.stripe.mod.Stripe.CustomerCreateParams.TaxIdDatum.Type
-       with typings.stripe.mod.Stripe.OrderCreateParams.TaxDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.OrderUpdateParams.TaxDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Invoice.CustomerTaxId.Type
        with typings.stripe.mod.Stripe.InvoiceRetrieveUpcomingParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.InvoiceListUpcomingLinesParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Checkout.Session.CustomerDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.Order.TaxDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Transaction.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Calculation.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.CalculationCreateParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.TaxIdCreateParams.Type
        with typings.stripe.mod.Stripe.TaxId.Type
   inline def mx_rfc: mx_rfc = "mx_rfc".asInstanceOf[mx_rfc]
@@ -18074,13 +18674,13 @@ object stripeStrings {
   sealed trait my_frp
     extends StObject
        with typings.stripe.mod.Stripe.CustomerCreateParams.TaxIdDatum.Type
-       with typings.stripe.mod.Stripe.OrderCreateParams.TaxDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.OrderUpdateParams.TaxDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Invoice.CustomerTaxId.Type
        with typings.stripe.mod.Stripe.InvoiceRetrieveUpcomingParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.InvoiceListUpcomingLinesParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Checkout.Session.CustomerDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.Order.TaxDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Transaction.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Calculation.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.CalculationCreateParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.TaxIdCreateParams.Type
        with typings.stripe.mod.Stripe.TaxId.Type
   inline def my_frp: my_frp = "my_frp".asInstanceOf[my_frp]
@@ -18089,13 +18689,13 @@ object stripeStrings {
   sealed trait my_itn
     extends StObject
        with typings.stripe.mod.Stripe.CustomerCreateParams.TaxIdDatum.Type
-       with typings.stripe.mod.Stripe.OrderCreateParams.TaxDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.OrderUpdateParams.TaxDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Invoice.CustomerTaxId.Type
        with typings.stripe.mod.Stripe.InvoiceRetrieveUpcomingParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.InvoiceListUpcomingLinesParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Checkout.Session.CustomerDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.Order.TaxDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Transaction.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Calculation.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.CalculationCreateParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.TaxIdCreateParams.Type
        with typings.stripe.mod.Stripe.TaxId.Type
   inline def my_itn: my_itn = "my_itn".asInstanceOf[my_itn]
@@ -18104,16 +18704,24 @@ object stripeStrings {
   sealed trait my_sst
     extends StObject
        with typings.stripe.mod.Stripe.CustomerCreateParams.TaxIdDatum.Type
-       with typings.stripe.mod.Stripe.OrderCreateParams.TaxDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.OrderUpdateParams.TaxDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Invoice.CustomerTaxId.Type
        with typings.stripe.mod.Stripe.InvoiceRetrieveUpcomingParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.InvoiceListUpcomingLinesParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Checkout.Session.CustomerDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.Order.TaxDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Transaction.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Calculation.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.CalculationCreateParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.TaxIdCreateParams.Type
        with typings.stripe.mod.Stripe.TaxId.Type
   inline def my_sst: my_sst = "my_sst".asInstanceOf[my_sst]
+  
+  @js.native
+  sealed trait name
+    extends StObject
+       with AllowedUpdate
+       with typings.stripe.mod.Stripe.BillingPortal.ConfigurationCreateParams.Features.CustomerUpdate.AllowedUpdate
+       with typings.stripe.mod.Stripe.BillingPortal.Configuration.Features.CustomerUpdate.AllowedUpdate
+  inline def name: name = "name".asInstanceOf[name]
   
   @js.native
   sealed trait nb
@@ -18128,8 +18736,6 @@ object stripeStrings {
   sealed trait `nb-NO`
     extends StObject
        with PreferredLocale
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.Klarna.PreferredLocale
-       with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.Klarna.PreferredLocale
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.Klarna.PreferredLocale
        with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.Klarna.PreferredLocale
   inline def `nb-NO`: `nb-NO` = "nb-NO".asInstanceOf[`nb-NO`]
@@ -18209,20 +18815,24 @@ object stripeStrings {
   sealed trait `nl-BE`
     extends StObject
        with PreferredLocale
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.Klarna.PreferredLocale
-       with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.Klarna.PreferredLocale
+       with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.Paypal.PreferredLocale
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.Klarna.PreferredLocale
+       with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.Paypal.PreferredLocale
+       with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.PaymentMethodOptions.Paypal.PreferredLocale
        with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.Klarna.PreferredLocale
+       with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.Paypal.PreferredLocale
   inline def `nl-BE`: `nl-BE` = "nl-BE".asInstanceOf[`nl-BE`]
   
   @js.native
   sealed trait `nl-NL`
     extends StObject
        with PreferredLocale
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.Klarna.PreferredLocale
-       with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.Klarna.PreferredLocale
+       with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.Paypal.PreferredLocale
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.Klarna.PreferredLocale
+       with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.Paypal.PreferredLocale
+       with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.PaymentMethodOptions.Paypal.PreferredLocale
        with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.Klarna.PreferredLocale
+       with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.Paypal.PreferredLocale
   inline def `nl-NL`: `nl-NL` = "nl-NL".asInstanceOf[`nl-NL`]
   
   @js.native
@@ -18233,10 +18843,6 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.BillingPortal.SessionCreateParams.Locale
        with typings.stripe.mod.Stripe.BillingPortal.Session.Locale
        with PreferredLanguage
-       with typings.stripe.mod.Stripe.OrderCreateParams.Payment.Settings.PaymentMethodOptions.Sofort.PreferredLanguage
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.Bancontact.PreferredLanguage
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.Sofort.PreferredLanguage
-       with typings.stripe.mod.Stripe.Invoice.PaymentSettings.PaymentMethodOptions.Bancontact.PreferredLanguage
        with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.Bancontact.PreferredLanguage
        with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.Sofort.PreferredLanguage
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.Bancontact.PreferredLanguage
@@ -18251,8 +18857,6 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.SubscriptionUpdateParams.PaymentSettings.PaymentMethodOptions.Bancontact.PreferredLanguage
        with typings.stripe.mod.Stripe.InvoiceCreateParams.PaymentSettings.PaymentMethodOptions.Bancontact.PreferredLanguage
        with typings.stripe.mod.Stripe.SubscriptionCreateParams.PaymentSettings.PaymentMethodOptions.Bancontact.PreferredLanguage
-       with typings.stripe.mod.Stripe.Order.Payment.Settings.PaymentMethodOptions.Bancontact.PreferredLanguage
-       with typings.stripe.mod.Stripe.Order.Payment.Settings.PaymentMethodOptions.Sofort.PreferredLanguage
        with typings.stripe.mod.Stripe.Charge.PaymentMethodDetails.Bancontact.PreferredLanguage
        with typings.stripe.mod.Stripe.Charge.PaymentMethodDetails.Sofort.PreferredLanguage
        with typings.stripe.mod.Stripe.InvoiceUpdateParams.PaymentSettings.PaymentMethodOptions.Bancontact.PreferredLanguage
@@ -18279,13 +18883,13 @@ object stripeStrings {
   sealed trait no_vat
     extends StObject
        with typings.stripe.mod.Stripe.CustomerCreateParams.TaxIdDatum.Type
-       with typings.stripe.mod.Stripe.OrderCreateParams.TaxDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.OrderUpdateParams.TaxDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Invoice.CustomerTaxId.Type
        with typings.stripe.mod.Stripe.InvoiceRetrieveUpcomingParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.InvoiceListUpcomingLinesParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Checkout.Session.CustomerDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.Order.TaxDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Transaction.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Calculation.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.CalculationCreateParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.TaxIdCreateParams.Type
        with typings.stripe.mod.Stripe.TaxId.Type
   inline def no_vat: no_vat = "no_vat".asInstanceOf[no_vat]
@@ -18403,6 +19007,7 @@ object stripeStrings {
        with ProrationBehavior
        with typings.stripe.mod.Stripe.SubscriptionScheduleUpdateParams.ProrationBehavior
        with typings.stripe.mod.Stripe.SubscriptionScheduleUpdateParams.Phase.ProrationBehavior
+       with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.SubscriptionData.ProrationBehavior
        with typings.stripe.mod.Stripe.SubscriptionItemUpdateParams.ProrationBehavior
        with typings.stripe.mod.Stripe.SubscriptionItemCreateParams.ProrationBehavior
        with typings.stripe.mod.Stripe.SubscriptionUpdateParams.ProrationBehavior
@@ -18415,27 +19020,13 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.SubscriptionCreateParams.ProrationBehavior
        with typings.stripe.mod.Stripe.SubscriptionScheduleCreateParams.Phase.ProrationBehavior
        with typings.stripe.mod.Stripe.SubscriptionSchedule.Phase.ProrationBehavior
+       with typings.stripe.mod.Stripe.SubscriptionResumeParams.ProrationBehavior
        with RefundAttributesMethod
        with SetupFutureUsage
-       with typings.stripe.mod.Stripe.OrderCreateParams.Payment.Settings.PaymentMethodOptions.SepaDebit.SetupFutureUsage
-       with typings.stripe.mod.Stripe.OrderCreateParams.Payment.Settings.PaymentMethodOptions.Bancontact.SetupFutureUsage
-       with typings.stripe.mod.Stripe.OrderCreateParams.Payment.Settings.PaymentMethodOptions.Card.SetupFutureUsage
-       with typings.stripe.mod.Stripe.OrderCreateParams.Payment.Settings.PaymentMethodOptions.Link.SetupFutureUsage
-       with typings.stripe.mod.Stripe.OrderCreateParams.Payment.Settings.PaymentMethodOptions.Alipay.SetupFutureUsage
-       with typings.stripe.mod.Stripe.OrderCreateParams.Payment.Settings.PaymentMethodOptions.AcssDebit.SetupFutureUsage
-       with typings.stripe.mod.Stripe.OrderCreateParams.Payment.Settings.PaymentMethodOptions.Sofort.SetupFutureUsage
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.Ideal.SetupFutureUsage
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.SepaDebit.SetupFutureUsage
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.Bancontact.SetupFutureUsage
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.Card.SetupFutureUsage
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.Link.SetupFutureUsage
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.Alipay.SetupFutureUsage
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.AcssDebit.SetupFutureUsage
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.Sofort.SetupFutureUsage
-       with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.AuBecsDebit.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.Ideal.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.Boleto.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.BacsDebit.SetupFutureUsage
+       with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.Cashapp.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.SepaDebit.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.Bancontact.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.Card.SetupFutureUsage
@@ -18444,10 +19035,12 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.UsBankAccount.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.AcssDebit.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.Sofort.SetupFutureUsage
+       with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.Paypal.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.AuBecsDebit.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.Ideal.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.Boleto.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.BacsDebit.SetupFutureUsage
+       with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.Cashapp.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.SepaDebit.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.Bancontact.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.Card.SetupFutureUsage
@@ -18456,22 +19049,28 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.UsBankAccount.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.AcssDebit.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.Sofort.SetupFutureUsage
+       with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.Paypal.SetupFutureUsage
        with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.PaymentMethodOptions.Boleto.SetupFutureUsage
        with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.PaymentMethodOptions.BacsDebit.SetupFutureUsage
+       with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.PaymentMethodOptions.Cashapp.SetupFutureUsage
        with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.PaymentMethodOptions.SepaDebit.SetupFutureUsage
+       with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.PaymentMethodOptions.Link.SetupFutureUsage
        with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.PaymentMethodOptions.UsBankAccount.SetupFutureUsage
        with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.PaymentMethodOptions.AcssDebit.SetupFutureUsage
+       with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.PaymentMethodOptions.Paypal.SetupFutureUsage
        with typings.stripe.mod.Stripe.Checkout.Session.PaymentMethodOptions.Boleto.SetupFutureUsage
        with typings.stripe.mod.Stripe.Checkout.Session.PaymentMethodOptions.BacsDebit.SetupFutureUsage
        with typings.stripe.mod.Stripe.Checkout.Session.PaymentMethodOptions.Klarna.SetupFutureUsage
        with typings.stripe.mod.Stripe.Checkout.Session.PaymentMethodOptions.SepaDebit.SetupFutureUsage
        with typings.stripe.mod.Stripe.Checkout.Session.PaymentMethodOptions.Card.SetupFutureUsage
+       with typings.stripe.mod.Stripe.Checkout.Session.PaymentMethodOptions.Link.SetupFutureUsage
        with typings.stripe.mod.Stripe.Checkout.Session.PaymentMethodOptions.UsBankAccount.SetupFutureUsage
        with typings.stripe.mod.Stripe.Checkout.Session.PaymentMethodOptions.AcssDebit.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.AuBecsDebit.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.Ideal.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.Boleto.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.BacsDebit.SetupFutureUsage
+       with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.Cashapp.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.SepaDebit.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.Bancontact.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.Card.SetupFutureUsage
@@ -18480,10 +19079,12 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.UsBankAccount.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.AcssDebit.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.Sofort.SetupFutureUsage
+       with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.Paypal.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntent.PaymentMethodOptions.AuBecsDebit.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntent.PaymentMethodOptions.Ideal.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntent.PaymentMethodOptions.Boleto.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntent.PaymentMethodOptions.BacsDebit.SetupFutureUsage
+       with typings.stripe.mod.Stripe.PaymentIntent.PaymentMethodOptions.Cashapp.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntent.PaymentMethodOptions.SepaDebit.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntent.PaymentMethodOptions.Bancontact.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntent.PaymentMethodOptions.Card.SetupFutureUsage
@@ -18492,25 +19093,18 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.PaymentIntent.PaymentMethodOptions.UsBankAccount.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntent.PaymentMethodOptions.AcssDebit.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntent.PaymentMethodOptions.Sofort.SetupFutureUsage
-       with typings.stripe.mod.Stripe.Order.Payment.Settings.PaymentMethodOptions.Ideal.SetupFutureUsage
-       with typings.stripe.mod.Stripe.Order.Payment.Settings.PaymentMethodOptions.SepaDebit.SetupFutureUsage
-       with typings.stripe.mod.Stripe.Order.Payment.Settings.PaymentMethodOptions.Bancontact.SetupFutureUsage
-       with typings.stripe.mod.Stripe.Order.Payment.Settings.PaymentMethodOptions.Card.SetupFutureUsage
-       with typings.stripe.mod.Stripe.Order.Payment.Settings.PaymentMethodOptions.Link.SetupFutureUsage
-       with typings.stripe.mod.Stripe.Order.Payment.Settings.PaymentMethodOptions.Alipay.SetupFutureUsage
-       with typings.stripe.mod.Stripe.Order.Payment.Settings.PaymentMethodOptions.AcssDebit.SetupFutureUsage
-       with typings.stripe.mod.Stripe.Order.Payment.Settings.PaymentMethodOptions.Sofort.SetupFutureUsage
+       with typings.stripe.mod.Stripe.PaymentIntent.PaymentMethodOptions.Paypal.SetupFutureUsage
        with SubscriptionProrationBehavior
        with typings.stripe.mod.Stripe.InvoiceListUpcomingLinesParams.SubscriptionProrationBehavior
        with TaxExempt
-       with typings.stripe.mod.Stripe.OrderCreateParams.TaxDetails.TaxExempt
-       with typings.stripe.mod.Stripe.OrderUpdateParams.TaxDetails.TaxExempt
        with typings.stripe.mod.Stripe.InvoiceRetrieveUpcomingParams.CustomerDetails.TaxExempt
        with typings.stripe.mod.Stripe.InvoiceListUpcomingLinesParams.CustomerDetails.TaxExempt
        with typings.stripe.mod.Stripe.Checkout.Session.CustomerDetails.TaxExempt
        with typings.stripe.mod.Stripe.CustomerUpdateParams.TaxExempt
        with typings.stripe.mod.Stripe.Customer.TaxExempt
-       with typings.stripe.mod.Stripe.Order.TaxDetails.TaxExempt
+       with TaxabilityOverride
+       with typings.stripe.mod.Stripe.Tax.Calculation.CustomerDetails.TaxabilityOverride
+       with typings.stripe.mod.Stripe.Tax.CalculationCreateParams.CustomerDetails.TaxabilityOverride
        with TermsOfService
        with typings.stripe.mod.Stripe.Checkout.Session.ConsentCollection.TermsOfService
        with typings.stripe.mod.Stripe.PaymentLinkCreateParams.ConsentCollection.TermsOfService
@@ -18524,10 +19118,37 @@ object stripeStrings {
   inline def not_allowed: not_allowed = "not_allowed".asInstanceOf[not_allowed]
   
   @js.native
+  sealed trait not_applicable
+    extends StObject
+       with ReconciliationStatus
+  inline def not_applicable: not_applicable = "not_applicable".asInstanceOf[not_applicable]
+  
+  @js.native
   sealed trait not_collecting
     extends StObject
        with AutomaticTax
+       with TaxabilityReason
+       with typings.stripe.mod.Stripe.Quote.Computed.Recurring.TotalDetails.Breakdown.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.Quote.TotalDetails.Breakdown.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.LineItem.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.Invoice.TotalTaxAmount.TaxabilityReason
+       with typings.stripe.mod.Stripe.Invoice.ShippingCost.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.Checkout.Session.TotalDetails.Breakdown.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.Checkout.Session.ShippingCost.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.Tax.Transaction.ShippingCost.TaxBreakdown.TaxabilityReason
+       with typings.stripe.mod.Stripe.Tax.Calculation.ShippingCost.TaxBreakdown.TaxabilityReason
+       with typings.stripe.mod.Stripe.Tax.CalculationLineItem.TaxBreakdown.TaxabilityReason
+       with typings.stripe.mod.Stripe.CreditNote.TaxAmount.TaxabilityReason
+       with typings.stripe.mod.Stripe.CreditNote.ShippingCost.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.CreditNoteLineItem.TaxAmount.TaxabilityReason
+       with typings.stripe.mod.Stripe.InvoiceLineItem.TaxAmount.TaxabilityReason
   inline def not_collecting: not_collecting = "not_collecting".asInstanceOf[not_collecting]
+  
+  @js.native
+  sealed trait not_eligible
+    extends StObject
+       with typings.stripe.mod.Stripe.Charge.PaymentMethodDetails.Paypal.SellerProtection.Status
+  inline def not_eligible: not_eligible = "not_eligible".asInstanceOf[not_eligible]
   
   @js.native
   sealed trait not_provided
@@ -18547,31 +19168,71 @@ object stripeStrings {
   inline def not_received: not_received = "not_received".asInstanceOf[not_received]
   
   @js.native
-  sealed trait not_required
-    extends StObject
-       with typings.stripe.mod.Stripe.Order.Payment.Status
-  inline def not_required: not_required = "not_required".asInstanceOf[not_required]
-  
-  @js.native
   sealed trait not_started
     extends StObject
        with typings.stripe.mod.Stripe.SubscriptionSchedule.Status
   inline def not_started: not_started = "not_started".asInstanceOf[not_started]
   
   @js.native
+  sealed trait not_subject_to_tax
+    extends StObject
+       with TaxabilityReason
+       with typings.stripe.mod.Stripe.Quote.Computed.Recurring.TotalDetails.Breakdown.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.Quote.TotalDetails.Breakdown.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.LineItem.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.Invoice.TotalTaxAmount.TaxabilityReason
+       with typings.stripe.mod.Stripe.Invoice.ShippingCost.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.Checkout.Session.TotalDetails.Breakdown.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.Checkout.Session.ShippingCost.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.Tax.Transaction.ShippingCost.TaxBreakdown.TaxabilityReason
+       with typings.stripe.mod.Stripe.Tax.Calculation.ShippingCost.TaxBreakdown.TaxabilityReason
+       with typings.stripe.mod.Stripe.Tax.CalculationLineItem.TaxBreakdown.TaxabilityReason
+       with typings.stripe.mod.Stripe.CreditNote.TaxAmount.TaxabilityReason
+       with typings.stripe.mod.Stripe.CreditNote.ShippingCost.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.CreditNoteLineItem.TaxAmount.TaxabilityReason
+       with typings.stripe.mod.Stripe.InvoiceLineItem.TaxAmount.TaxabilityReason
+  inline def not_subject_to_tax: not_subject_to_tax = "not_subject_to_tax".asInstanceOf[not_subject_to_tax]
+  
+  @js.native
   sealed trait not_supported
     extends StObject
        with Result
        with typings.stripe.mod.Stripe.Charge.PaymentMethodDetails.Card.ThreeDSecure.Result
+       with TaxabilityReason
+       with typings.stripe.mod.Stripe.Quote.Computed.Recurring.TotalDetails.Breakdown.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.Quote.TotalDetails.Breakdown.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.LineItem.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.Invoice.TotalTaxAmount.TaxabilityReason
+       with typings.stripe.mod.Stripe.Invoice.ShippingCost.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.Checkout.Session.TotalDetails.Breakdown.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.Checkout.Session.ShippingCost.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.Tax.Transaction.ShippingCost.TaxBreakdown.TaxabilityReason
+       with typings.stripe.mod.Stripe.Tax.Calculation.ShippingCost.TaxBreakdown.TaxabilityReason
+       with typings.stripe.mod.Stripe.Tax.CalculationLineItem.TaxBreakdown.TaxabilityReason
+       with typings.stripe.mod.Stripe.CreditNote.TaxAmount.TaxabilityReason
+       with typings.stripe.mod.Stripe.CreditNote.ShippingCost.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.CreditNoteLineItem.TaxAmount.TaxabilityReason
+       with typings.stripe.mod.Stripe.InvoiceLineItem.TaxAmount.TaxabilityReason
   inline def not_supported: not_supported = "not_supported".asInstanceOf[not_supported]
   
   @js.native
   sealed trait now
     extends StObject
        with typings.stripe.mod.Stripe.SubscriptionUpdateParams.BillingCycleAnchor
+       with typings.stripe.mod.Stripe.SubscriptionResumeParams.BillingCycleAnchor
        with SubscriptionBillingCycleAnchor
        with typings.stripe.mod.Stripe.InvoiceListUpcomingLinesParams.SubscriptionBillingCycleAnchor
   inline def now: now = "now".asInstanceOf[now]
+  
+  @js.native
+  sealed trait numeric
+    extends StObject
+       with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.CustomField.Type
+       with typings.stripe.mod.Stripe.Checkout.Session.CustomField.Type
+       with typings.stripe.mod.Stripe.PaymentLinkCreateParams.CustomField.Type
+       with typings.stripe.mod.Stripe.PaymentLinkUpdateParams.CustomField.Type
+       with typings.stripe.mod.Stripe.PaymentLink.CustomField.Type
+  inline def numeric: numeric = "numeric".asInstanceOf[numeric]
   
   @js.native
   sealed trait nurseries_lawn_and_garden_supply_stores
@@ -18623,13 +19284,13 @@ object stripeStrings {
   sealed trait nz_gst
     extends StObject
        with typings.stripe.mod.Stripe.CustomerCreateParams.TaxIdDatum.Type
-       with typings.stripe.mod.Stripe.OrderCreateParams.TaxDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.OrderUpdateParams.TaxDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Invoice.CustomerTaxId.Type
        with typings.stripe.mod.Stripe.InvoiceRetrieveUpcomingParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.InvoiceListUpcomingLinesParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Checkout.Session.CustomerDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.Order.TaxDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Transaction.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Calculation.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.CalculationCreateParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.TaxIdCreateParams.Type
        with typings.stripe.mod.Stripe.TaxId.Type
   inline def nz_gst: nz_gst = "nz_gst".asInstanceOf[nz_gst]
@@ -18674,25 +19335,10 @@ object stripeStrings {
   sealed trait off_session
     extends StObject
        with SetupFutureUsage
-       with typings.stripe.mod.Stripe.OrderCreateParams.Payment.Settings.PaymentMethodOptions.SepaDebit.SetupFutureUsage
-       with typings.stripe.mod.Stripe.OrderCreateParams.Payment.Settings.PaymentMethodOptions.Bancontact.SetupFutureUsage
-       with typings.stripe.mod.Stripe.OrderCreateParams.Payment.Settings.PaymentMethodOptions.Card.SetupFutureUsage
-       with typings.stripe.mod.Stripe.OrderCreateParams.Payment.Settings.PaymentMethodOptions.Link.SetupFutureUsage
-       with typings.stripe.mod.Stripe.OrderCreateParams.Payment.Settings.PaymentMethodOptions.Alipay.SetupFutureUsage
-       with typings.stripe.mod.Stripe.OrderCreateParams.Payment.Settings.PaymentMethodOptions.AcssDebit.SetupFutureUsage
-       with typings.stripe.mod.Stripe.OrderCreateParams.Payment.Settings.PaymentMethodOptions.Sofort.SetupFutureUsage
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.Ideal.SetupFutureUsage
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.SepaDebit.SetupFutureUsage
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.Bancontact.SetupFutureUsage
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.Card.SetupFutureUsage
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.Link.SetupFutureUsage
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.Alipay.SetupFutureUsage
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.AcssDebit.SetupFutureUsage
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.Sofort.SetupFutureUsage
-       with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.AuBecsDebit.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.Ideal.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.Boleto.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.BacsDebit.SetupFutureUsage
+       with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.Cashapp.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.SepaDebit.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.Bancontact.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.Card.SetupFutureUsage
@@ -18701,11 +19347,13 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.UsBankAccount.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.AcssDebit.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.Sofort.SetupFutureUsage
+       with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.Paypal.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.AuBecsDebit.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.Ideal.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.Boleto.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.BacsDebit.SetupFutureUsage
+       with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.Cashapp.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.SepaDebit.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.Bancontact.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.Card.SetupFutureUsage
@@ -18714,25 +19362,31 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.UsBankAccount.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.AcssDebit.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.Sofort.SetupFutureUsage
+       with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.Paypal.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.SetupFutureUsage
        with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.PaymentMethodOptions.Boleto.SetupFutureUsage
        with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.PaymentMethodOptions.BacsDebit.SetupFutureUsage
+       with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.PaymentMethodOptions.Cashapp.SetupFutureUsage
        with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.PaymentMethodOptions.SepaDebit.SetupFutureUsage
        with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.PaymentMethodOptions.Card.SetupFutureUsage
+       with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.PaymentMethodOptions.Link.SetupFutureUsage
        with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.PaymentMethodOptions.UsBankAccount.SetupFutureUsage
        with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.PaymentMethodOptions.AcssDebit.SetupFutureUsage
+       with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.PaymentMethodOptions.Paypal.SetupFutureUsage
        with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.PaymentIntentData.SetupFutureUsage
        with typings.stripe.mod.Stripe.Checkout.Session.PaymentMethodOptions.Boleto.SetupFutureUsage
        with typings.stripe.mod.Stripe.Checkout.Session.PaymentMethodOptions.BacsDebit.SetupFutureUsage
        with typings.stripe.mod.Stripe.Checkout.Session.PaymentMethodOptions.Klarna.SetupFutureUsage
        with typings.stripe.mod.Stripe.Checkout.Session.PaymentMethodOptions.SepaDebit.SetupFutureUsage
        with typings.stripe.mod.Stripe.Checkout.Session.PaymentMethodOptions.Card.SetupFutureUsage
+       with typings.stripe.mod.Stripe.Checkout.Session.PaymentMethodOptions.Link.SetupFutureUsage
        with typings.stripe.mod.Stripe.Checkout.Session.PaymentMethodOptions.UsBankAccount.SetupFutureUsage
        with typings.stripe.mod.Stripe.Checkout.Session.PaymentMethodOptions.AcssDebit.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.AuBecsDebit.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.Ideal.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.Boleto.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.BacsDebit.SetupFutureUsage
+       with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.Cashapp.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.SepaDebit.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.Bancontact.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.Card.SetupFutureUsage
@@ -18741,12 +19395,14 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.UsBankAccount.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.AcssDebit.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.Sofort.SetupFutureUsage
+       with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.Paypal.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentLinkCreateParams.PaymentIntentData.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntent.PaymentMethodOptions.AuBecsDebit.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntent.PaymentMethodOptions.Ideal.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntent.PaymentMethodOptions.Boleto.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntent.PaymentMethodOptions.BacsDebit.SetupFutureUsage
+       with typings.stripe.mod.Stripe.PaymentIntent.PaymentMethodOptions.Cashapp.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntent.PaymentMethodOptions.SepaDebit.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntent.PaymentMethodOptions.Bancontact.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntent.PaymentMethodOptions.Card.SetupFutureUsage
@@ -18755,15 +19411,8 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.PaymentIntent.PaymentMethodOptions.UsBankAccount.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntent.PaymentMethodOptions.AcssDebit.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntent.PaymentMethodOptions.Sofort.SetupFutureUsage
+       with typings.stripe.mod.Stripe.PaymentIntent.PaymentMethodOptions.Paypal.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntent.SetupFutureUsage
-       with typings.stripe.mod.Stripe.Order.Payment.Settings.PaymentMethodOptions.Ideal.SetupFutureUsage
-       with typings.stripe.mod.Stripe.Order.Payment.Settings.PaymentMethodOptions.SepaDebit.SetupFutureUsage
-       with typings.stripe.mod.Stripe.Order.Payment.Settings.PaymentMethodOptions.Bancontact.SetupFutureUsage
-       with typings.stripe.mod.Stripe.Order.Payment.Settings.PaymentMethodOptions.Card.SetupFutureUsage
-       with typings.stripe.mod.Stripe.Order.Payment.Settings.PaymentMethodOptions.Link.SetupFutureUsage
-       with typings.stripe.mod.Stripe.Order.Payment.Settings.PaymentMethodOptions.Alipay.SetupFutureUsage
-       with typings.stripe.mod.Stripe.Order.Payment.Settings.PaymentMethodOptions.AcssDebit.SetupFutureUsage
-       with typings.stripe.mod.Stripe.Order.Payment.Settings.PaymentMethodOptions.Sofort.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentLink.PaymentIntentData.SetupFutureUsage
        with typings.stripe.mod.Stripe.Mandate.PaymentMethodDetails.Blik.Type
        with typings.stripe.mod.Stripe.SetupIntent.PaymentMethodOptions.Blik.MandateOptions.Type
@@ -18809,15 +19458,10 @@ object stripeStrings {
   @js.native
   sealed trait on_session
     extends StObject
-       with typings.stripe.mod.Stripe.OrderCreateParams.Payment.Settings.PaymentMethodOptions.SepaDebit.SetupFutureUsage
-       with typings.stripe.mod.Stripe.OrderCreateParams.Payment.Settings.PaymentMethodOptions.Card.SetupFutureUsage
-       with typings.stripe.mod.Stripe.OrderCreateParams.Payment.Settings.PaymentMethodOptions.AcssDebit.SetupFutureUsage
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.SepaDebit.SetupFutureUsage
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.Card.SetupFutureUsage
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.AcssDebit.SetupFutureUsage
-       with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.AuBecsDebit.SetupFutureUsage
+       with SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.Boleto.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.BacsDebit.SetupFutureUsage
+       with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.Cashapp.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.SepaDebit.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.Card.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.UsBankAccount.SetupFutureUsage
@@ -18826,6 +19470,7 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.AuBecsDebit.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.Boleto.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.BacsDebit.SetupFutureUsage
+       with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.Cashapp.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.SepaDebit.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.Card.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.UsBankAccount.SetupFutureUsage
@@ -18833,6 +19478,7 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.SetupFutureUsage
        with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.PaymentMethodOptions.Boleto.SetupFutureUsage
        with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.PaymentMethodOptions.BacsDebit.SetupFutureUsage
+       with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.PaymentMethodOptions.Cashapp.SetupFutureUsage
        with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.PaymentMethodOptions.SepaDebit.SetupFutureUsage
        with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.PaymentMethodOptions.Card.SetupFutureUsage
        with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.PaymentMethodOptions.UsBankAccount.SetupFutureUsage
@@ -18848,6 +19494,7 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.AuBecsDebit.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.Boleto.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.BacsDebit.SetupFutureUsage
+       with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.Cashapp.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.SepaDebit.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.Card.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.UsBankAccount.SetupFutureUsage
@@ -18857,14 +19504,12 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.PaymentIntent.PaymentMethodOptions.AuBecsDebit.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntent.PaymentMethodOptions.Boleto.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntent.PaymentMethodOptions.BacsDebit.SetupFutureUsage
+       with typings.stripe.mod.Stripe.PaymentIntent.PaymentMethodOptions.Cashapp.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntent.PaymentMethodOptions.SepaDebit.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntent.PaymentMethodOptions.Card.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntent.PaymentMethodOptions.UsBankAccount.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntent.PaymentMethodOptions.AcssDebit.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentIntent.SetupFutureUsage
-       with typings.stripe.mod.Stripe.Order.Payment.Settings.PaymentMethodOptions.SepaDebit.SetupFutureUsage
-       with typings.stripe.mod.Stripe.Order.Payment.Settings.PaymentMethodOptions.Card.SetupFutureUsage
-       with typings.stripe.mod.Stripe.Order.Payment.Settings.PaymentMethodOptions.AcssDebit.SetupFutureUsage
        with typings.stripe.mod.Stripe.PaymentLink.PaymentIntentData.SetupFutureUsage
        with typings.stripe.mod.Stripe.Mandate.PaymentMethodDetails.Blik.Type
        with typings.stripe.mod.Stripe.SetupIntent.PaymentMethodOptions.Blik.MandateOptions.Type
@@ -18923,7 +19568,6 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.QuoteListParams.Status
        with typings.stripe.mod.Stripe.Invoice.Status
        with typings.stripe.mod.Stripe.Checkout.Session.Status
-       with typings.stripe.mod.Stripe.Order.Status
        with typings.stripe.mod.Stripe.InvoiceListParams.Status
        with typings.stripe.mod.Stripe.Treasury.FinancialAccount.Status
        with typings.stripe.mod.Stripe.Treasury.Transaction.Status
@@ -18989,10 +19633,6 @@ object stripeStrings {
   inline def optometrists_ophthalmologist: optometrists_ophthalmologist = "optometrists_ophthalmologist".asInstanceOf[optometrists_ophthalmologist]
   
   @js.native
-  sealed trait order extends StObject
-  inline def order: order = "order".asInstanceOf[order]
-  
-  @js.native
   sealed trait orderDotcreated
     extends StObject
        with EnabledEvent
@@ -19007,6 +19647,14 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.CreditNote.Reason
        with typings.stripe.mod.Stripe.CreditNoteListPreviewLineItemsParams.Reason
   inline def order_change: order_change = "order_change".asInstanceOf[order_change]
+  
+  @js.native
+  sealed trait origin
+    extends StObject
+       with Sourcing
+       with typings.stripe.mod.Stripe.Tax.Calculation.ShippingCost.TaxBreakdown.Sourcing
+       with typings.stripe.mod.Stripe.Tax.CalculationLineItem.TaxBreakdown.Sourcing
+  inline def origin: origin = "origin".asInstanceOf[origin]
   
   @js.native
   sealed trait orthopedic_goods_prosthetic_devices
@@ -19066,6 +19714,10 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.Treasury.OutboundTransfer.ReturnedDetails.Code
        with FailureCode
        with typings.stripe.mod.Stripe.Treasury.ReceivedDebit.FailureCode
+       with Feedback
+       with typings.stripe.mod.Stripe.SubscriptionUpdateParams.CancellationDetails.Feedback
+       with typings.stripe.mod.Stripe.SubscriptionDeleteParams.CancellationDetails.Feedback
+       with typings.stripe.mod.Stripe.SubscriptionCancelParams.CancellationDetails.Feedback
        with FlowType
        with typings.stripe.mod.Stripe.Treasury.Transaction.FlowType
        with Option
@@ -19090,13 +19742,6 @@ object stripeStrings {
     extends StObject
        with ReportingCategory
   inline def other_adjustment: other_adjustment = "other_adjustment".asInstanceOf[other_adjustment]
-  
-  @js.native
-  sealed trait out_of_stock
-    extends StObject
-       with Value
-       with typings.stripe.mod.Stripe.SkuUpdateParams.Inventory.Value
-  inline def out_of_stock: out_of_stock = "out_of_stock".asInstanceOf[out_of_stock]
   
   @js.native
   sealed trait outbound
@@ -19249,11 +19894,8 @@ object stripeStrings {
   @js.native
   sealed trait oxxo
     extends StObject
-       with typings.stripe.mod.Stripe.OrderCreateParams.Payment.Settings.PaymentMethodType
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodType
        with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.PaymentMethodType
        with typings.stripe.mod.Stripe.PaymentLinkCreateParams.PaymentMethodType
-       with typings.stripe.mod.Stripe.Order.Payment.Settings.PaymentMethodType
        with typings.stripe.mod.Stripe.PaymentLinkUpdateParams.PaymentMethodType
        with typings.stripe.mod.Stripe.PaymentLink.PaymentMethodType
        with typings.stripe.mod.Stripe.SetupIntentUpdateParams.PaymentMethodData.Type
@@ -19271,11 +19913,8 @@ object stripeStrings {
   @js.native
   sealed trait p24
     extends StObject
-       with typings.stripe.mod.Stripe.OrderCreateParams.Payment.Settings.PaymentMethodType
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodType
        with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.PaymentMethodType
        with typings.stripe.mod.Stripe.PaymentLinkCreateParams.PaymentMethodType
-       with typings.stripe.mod.Stripe.Order.Payment.Settings.PaymentMethodType
        with typings.stripe.mod.Stripe.PaymentLinkUpdateParams.PaymentMethodType
        with typings.stripe.mod.Stripe.PaymentLink.PaymentMethodType
        with typings.stripe.mod.Stripe.Source.Type
@@ -19370,10 +20009,22 @@ object stripeStrings {
   inline def parking_lots_garages: parking_lots_garages = "parking_lots_garages".asInstanceOf[parking_lots_garages]
   
   @js.native
+  sealed trait partial
+    extends StObject
+       with typings.stripe.mod.Stripe.Tax.TransactionCreateReversalParams.Mode
+  inline def partial: partial = "partial".asInstanceOf[partial]
+  
+  @js.native
   sealed trait partial_capture_reversal
     extends StObject
        with ReportingCategory
   inline def partial_capture_reversal: partial_capture_reversal = "partial_capture_reversal".asInstanceOf[partial_capture_reversal]
+  
+  @js.native
+  sealed trait partially_eligible
+    extends StObject
+       with typings.stripe.mod.Stripe.Charge.PaymentMethodDetails.Paypal.SellerProtection.Status
+  inline def partially_eligible: partially_eligible = "partially_eligible".asInstanceOf[partially_eligible]
   
   @js.native
   sealed trait passenger_railways
@@ -19416,6 +20067,22 @@ object stripeStrings {
   inline def past_due: past_due = "past_due".asInstanceOf[past_due]
   
   @js.native
+  sealed trait pause
+    extends StObject
+       with MissingPaymentMethod
+       with typings.stripe.mod.Stripe.Subscription.TrialSettings.EndBehavior.MissingPaymentMethod
+       with typings.stripe.mod.Stripe.SubscriptionUpdateParams.TrialSettings.EndBehavior.MissingPaymentMethod
+       with typings.stripe.mod.Stripe.SubscriptionCreateParams.TrialSettings.EndBehavior.MissingPaymentMethod
+  inline def pause: pause = "pause".asInstanceOf[pause]
+  
+  @js.native
+  sealed trait paused
+    extends StObject
+       with typings.stripe.mod.Stripe.Subscription.Status
+       with typings.stripe.mod.Stripe.SubscriptionListParams.Status
+  inline def paused: paused = "paused".asInstanceOf[paused]
+  
+  @js.native
   sealed trait pawn_shops
     extends StObject
        with _AllowedCategory
@@ -19454,6 +20121,18 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.Checkout.Session.Mode
        with typings.stripe.mod.Stripe.BalanceTransaction.Type
   inline def payment: payment = "payment".asInstanceOf[payment]
+  
+  @js.native
+  sealed trait payment_disputed
+    extends StObject
+       with typings.stripe.mod.Stripe.Subscription.CancellationDetails.Reason
+  inline def payment_disputed: payment_disputed = "payment_disputed".asInstanceOf[payment_disputed]
+  
+  @js.native
+  sealed trait payment_failed
+    extends StObject
+       with typings.stripe.mod.Stripe.Subscription.CancellationDetails.Reason
+  inline def payment_failed: payment_failed = "payment_failed".asInstanceOf[payment_failed]
   
   @js.native
   sealed trait payment_failure_refund
@@ -19593,6 +20272,13 @@ object stripeStrings {
   inline def payment_methodDotupdated: payment_methodDotupdated = "payment_method.updated".asInstanceOf[payment_methodDotupdated]
   
   @js.native
+  sealed trait payment_method_update
+    extends StObject
+       with typings.stripe.mod.Stripe.BillingPortal.SessionCreateParams.FlowData.Type
+       with typings.stripe.mod.Stripe.BillingPortal.Session.Flow.Type
+  inline def payment_method_update: payment_method_update = "payment_method_update".asInstanceOf[payment_method_update]
+  
+  @js.native
   sealed trait payment_refund
     extends StObject
        with typings.stripe.mod.Stripe.BalanceTransaction.Type
@@ -19665,6 +20351,13 @@ object stripeStrings {
   inline def payoutDotpaid: payoutDotpaid = "payout.paid".asInstanceOf[payoutDotpaid]
   
   @js.native
+  sealed trait payoutDotreconciliation_completed
+    extends StObject
+       with EnabledEvent
+       with typings.stripe.mod.Stripe.WebhookEndpointCreateParams.EnabledEvent
+  inline def payoutDotreconciliation_completed: payoutDotreconciliation_completed = "payout.reconciliation_completed".asInstanceOf[payoutDotreconciliation_completed]
+  
+  @js.native
   sealed trait payoutDotupdated
     extends StObject
        with EnabledEvent
@@ -19688,6 +20381,31 @@ object stripeStrings {
     extends StObject
        with ReportingCategory
   inline def payout_reversal: payout_reversal = "payout_reversal".asInstanceOf[payout_reversal]
+  
+  @js.native
+  sealed trait paypal
+    extends StObject
+       with PaymentMethodType
+       with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.PaymentMethodType
+       with typings.stripe.mod.Stripe.Subscription.PaymentSettings.PaymentMethodType
+       with typings.stripe.mod.Stripe.PaymentLinkCreateParams.PaymentMethodType
+       with typings.stripe.mod.Stripe.SubscriptionUpdateParams.PaymentSettings.PaymentMethodType
+       with typings.stripe.mod.Stripe.InvoiceCreateParams.PaymentSettings.PaymentMethodType
+       with typings.stripe.mod.Stripe.SubscriptionCreateParams.PaymentSettings.PaymentMethodType
+       with typings.stripe.mod.Stripe.PaymentLinkUpdateParams.PaymentMethodType
+       with typings.stripe.mod.Stripe.InvoiceUpdateParams.PaymentSettings.PaymentMethodType
+       with typings.stripe.mod.Stripe.PaymentLink.PaymentMethodType
+       with typings.stripe.mod.Stripe.SetupIntentUpdateParams.PaymentMethodData.Type
+       with typings.stripe.mod.Stripe.PaymentMethod.Type
+       with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodData.Type
+       with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodData.Type
+       with typings.stripe.mod.Stripe.PaymentMethodCreateParams.Type
+       with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodData.Type
+       with typings.stripe.mod.Stripe.SetupIntentConfirmParams.PaymentMethodData.Type
+       with typings.stripe.mod.Stripe.SetupIntentCreateParams.PaymentMethodData.Type
+       with typings.stripe.mod.Stripe.CustomerListPaymentMethodsParams.Type
+       with typings.stripe.mod.Stripe.PaymentMethodListParams.Type
+  inline def paypal: paypal = "paypal".asInstanceOf[paypal]
   
   @js.native
   sealed trait pb_enterprise
@@ -19739,11 +20457,13 @@ object stripeStrings {
        with CardIssuing
        with CardPayments
        with CartesBancairesPayments
+       with CashappPayments
        with EpsPayments
        with FpxPayments
        with GiropayPayments
        with GrabpayPayments
        with IdealPayments
+       with IndiaInternationalPayments
        with JcbPayments
        with KlarnaPayments
        with KonbiniPayments
@@ -19843,8 +20563,6 @@ object stripeStrings {
   sealed trait personal
     extends StObject
        with TransactionType
-       with typings.stripe.mod.Stripe.OrderCreateParams.Payment.Settings.PaymentMethodOptions.AcssDebit.MandateOptions.TransactionType
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.AcssDebit.MandateOptions.TransactionType
        with typings.stripe.mod.Stripe.Invoice.PaymentSettings.PaymentMethodOptions.AcssDebit.MandateOptions.TransactionType
        with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.AcssDebit.MandateOptions.TransactionType
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.AcssDebit.MandateOptions.TransactionType
@@ -19857,7 +20575,6 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.InvoiceCreateParams.PaymentSettings.PaymentMethodOptions.AcssDebit.MandateOptions.TransactionType
        with typings.stripe.mod.Stripe.SubscriptionCreateParams.PaymentSettings.PaymentMethodOptions.AcssDebit.MandateOptions.TransactionType
        with typings.stripe.mod.Stripe.Mandate.PaymentMethodDetails.AcssDebit.TransactionType
-       with typings.stripe.mod.Stripe.Order.Payment.Settings.PaymentMethodOptions.AcssDebit.MandateOptions.TransactionType
        with typings.stripe.mod.Stripe.SetupIntentConfirmParams.PaymentMethodOptions.AcssDebit.MandateOptions.TransactionType
        with typings.stripe.mod.Stripe.InvoiceUpdateParams.PaymentSettings.PaymentMethodOptions.AcssDebit.MandateOptions.TransactionType
        with typings.stripe.mod.Stripe.SetupIntentCreateParams.PaymentMethodOptions.AcssDebit.MandateOptions.TransactionType
@@ -19914,13 +20631,13 @@ object stripeStrings {
   sealed trait ph_tin
     extends StObject
        with typings.stripe.mod.Stripe.CustomerCreateParams.TaxIdDatum.Type
-       with typings.stripe.mod.Stripe.OrderCreateParams.TaxDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.OrderUpdateParams.TaxDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Invoice.CustomerTaxId.Type
        with typings.stripe.mod.Stripe.InvoiceRetrieveUpcomingParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.InvoiceListUpcomingLinesParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Checkout.Session.CustomerDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.Order.TaxDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Transaction.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Calculation.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.CalculationCreateParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.TaxIdCreateParams.Type
        with typings.stripe.mod.Stripe.TaxId.Type
   inline def ph_tin: ph_tin = "ph_tin".asInstanceOf[ph_tin]
@@ -20090,10 +20807,12 @@ object stripeStrings {
   sealed trait `pl-PL`
     extends StObject
        with PreferredLocale
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.Klarna.PreferredLocale
-       with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.Klarna.PreferredLocale
+       with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.Paypal.PreferredLocale
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.Klarna.PreferredLocale
+       with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.Paypal.PreferredLocale
+       with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.PaymentMethodOptions.Paypal.PreferredLocale
        with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.Klarna.PreferredLocale
+       with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.Paypal.PreferredLocale
   inline def `pl-PL`: `pl-PL` = "pl-PL".asInstanceOf[`pl-PL`]
   
   @js.native
@@ -20103,13 +20822,10 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.Checkout.Session.Locale
        with typings.stripe.mod.Stripe.BillingPortal.SessionCreateParams.Locale
        with typings.stripe.mod.Stripe.BillingPortal.Session.Locale
-       with typings.stripe.mod.Stripe.OrderCreateParams.Payment.Settings.PaymentMethodOptions.Sofort.PreferredLanguage
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.Sofort.PreferredLanguage
        with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.Sofort.PreferredLanguage
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.Sofort.PreferredLanguage
        with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.Sofort.PreferredLanguage
        with typings.stripe.mod.Stripe.PaymentIntent.PaymentMethodOptions.Sofort.PreferredLanguage
-       with typings.stripe.mod.Stripe.Order.Payment.Settings.PaymentMethodOptions.Sofort.PreferredLanguage
        with typings.stripe.mod.Stripe.Charge.PaymentMethodDetails.Sofort.PreferredLanguage
   inline def pl_ : pl_ = "pl".asInstanceOf[pl_]
   
@@ -20213,6 +20929,73 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
        with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def political_organizations: political_organizations = "political_organizations".asInstanceOf[political_organizations]
+  
+  @js.native
+  sealed trait portal_homepage
+    extends StObject
+       with typings.stripe.mod.Stripe.BillingPortal.SessionCreateParams.FlowData.AfterCompletion.Type
+       with typings.stripe.mod.Stripe.BillingPortal.Session.Flow.AfterCompletion.Type
+  inline def portal_homepage: portal_homepage = "portal_homepage".asInstanceOf[portal_homepage]
+  
+  @js.native
+  sealed trait portion_product_exempt
+    extends StObject
+       with TaxabilityReason
+       with typings.stripe.mod.Stripe.Quote.Computed.Recurring.TotalDetails.Breakdown.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.Quote.TotalDetails.Breakdown.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.LineItem.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.Invoice.TotalTaxAmount.TaxabilityReason
+       with typings.stripe.mod.Stripe.Invoice.ShippingCost.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.Checkout.Session.TotalDetails.Breakdown.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.Checkout.Session.ShippingCost.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.Tax.Transaction.ShippingCost.TaxBreakdown.TaxabilityReason
+       with typings.stripe.mod.Stripe.Tax.Calculation.ShippingCost.TaxBreakdown.TaxabilityReason
+       with typings.stripe.mod.Stripe.Tax.CalculationLineItem.TaxBreakdown.TaxabilityReason
+       with typings.stripe.mod.Stripe.CreditNote.TaxAmount.TaxabilityReason
+       with typings.stripe.mod.Stripe.CreditNote.ShippingCost.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.CreditNoteLineItem.TaxAmount.TaxabilityReason
+       with typings.stripe.mod.Stripe.InvoiceLineItem.TaxAmount.TaxabilityReason
+  inline def portion_product_exempt: portion_product_exempt = "portion_product_exempt".asInstanceOf[portion_product_exempt]
+  
+  @js.native
+  sealed trait portion_reduced_rated
+    extends StObject
+       with TaxabilityReason
+       with typings.stripe.mod.Stripe.Quote.Computed.Recurring.TotalDetails.Breakdown.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.Quote.TotalDetails.Breakdown.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.LineItem.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.Invoice.TotalTaxAmount.TaxabilityReason
+       with typings.stripe.mod.Stripe.Invoice.ShippingCost.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.Checkout.Session.TotalDetails.Breakdown.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.Checkout.Session.ShippingCost.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.Tax.Transaction.ShippingCost.TaxBreakdown.TaxabilityReason
+       with typings.stripe.mod.Stripe.Tax.Calculation.ShippingCost.TaxBreakdown.TaxabilityReason
+       with typings.stripe.mod.Stripe.Tax.CalculationLineItem.TaxBreakdown.TaxabilityReason
+       with typings.stripe.mod.Stripe.CreditNote.TaxAmount.TaxabilityReason
+       with typings.stripe.mod.Stripe.CreditNote.ShippingCost.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.CreditNoteLineItem.TaxAmount.TaxabilityReason
+       with typings.stripe.mod.Stripe.InvoiceLineItem.TaxAmount.TaxabilityReason
+  inline def portion_reduced_rated: portion_reduced_rated = "portion_reduced_rated".asInstanceOf[portion_reduced_rated]
+  
+  @js.native
+  sealed trait portion_standard_rated
+    extends StObject
+       with TaxabilityReason
+       with typings.stripe.mod.Stripe.Quote.Computed.Recurring.TotalDetails.Breakdown.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.Quote.TotalDetails.Breakdown.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.LineItem.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.Invoice.TotalTaxAmount.TaxabilityReason
+       with typings.stripe.mod.Stripe.Invoice.ShippingCost.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.Checkout.Session.TotalDetails.Breakdown.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.Checkout.Session.ShippingCost.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.Tax.Transaction.ShippingCost.TaxBreakdown.TaxabilityReason
+       with typings.stripe.mod.Stripe.Tax.Calculation.ShippingCost.TaxBreakdown.TaxabilityReason
+       with typings.stripe.mod.Stripe.Tax.CalculationLineItem.TaxBreakdown.TaxabilityReason
+       with typings.stripe.mod.Stripe.CreditNote.TaxAmount.TaxabilityReason
+       with typings.stripe.mod.Stripe.CreditNote.ShippingCost.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.CreditNoteLineItem.TaxAmount.TaxabilityReason
+       with typings.stripe.mod.Stripe.InvoiceLineItem.TaxAmount.TaxabilityReason
+  inline def portion_standard_rated: portion_standard_rated = "portion_standard_rated".asInstanceOf[portion_standard_rated]
   
   @js.native
   sealed trait post_payment
@@ -20379,8 +21162,6 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.Identity.VerificationSession.Status
        with typings.stripe.mod.Stripe.Identity.VerificationSession.Redaction.Status
        with typings.stripe.mod.Stripe.PaymentIntent.Status
-       with typings.stripe.mod.Stripe.Order.Status
-       with typings.stripe.mod.Stripe.Order.Payment.Status
        with typings.stripe.mod.Stripe.Treasury.InboundTransfer.Status
        with typings.stripe.mod.Stripe.Treasury.OutboundPayment.Status
        with typings.stripe.mod.Stripe.Treasury.DebitReversal.Status
@@ -20425,6 +21206,52 @@ object stripeStrings {
        with EnabledEvent
        with typings.stripe.mod.Stripe.WebhookEndpointCreateParams.EnabledEvent
   inline def productDotupdated: productDotupdated = "product.updated".asInstanceOf[productDotupdated]
+  
+  @js.native
+  sealed trait product_exempt
+    extends StObject
+       with TaxabilityReason
+       with typings.stripe.mod.Stripe.Quote.Computed.Recurring.TotalDetails.Breakdown.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.Quote.TotalDetails.Breakdown.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.LineItem.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.Invoice.TotalTaxAmount.TaxabilityReason
+       with typings.stripe.mod.Stripe.Invoice.ShippingCost.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.Checkout.Session.TotalDetails.Breakdown.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.Checkout.Session.ShippingCost.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.Tax.Transaction.ShippingCost.TaxBreakdown.TaxabilityReason
+       with typings.stripe.mod.Stripe.Tax.Calculation.ShippingCost.TaxBreakdown.TaxabilityReason
+       with typings.stripe.mod.Stripe.Tax.CalculationLineItem.TaxBreakdown.TaxabilityReason
+       with typings.stripe.mod.Stripe.CreditNote.TaxAmount.TaxabilityReason
+       with typings.stripe.mod.Stripe.CreditNote.ShippingCost.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.CreditNoteLineItem.TaxAmount.TaxabilityReason
+       with typings.stripe.mod.Stripe.InvoiceLineItem.TaxAmount.TaxabilityReason
+  inline def product_exempt: product_exempt = "product_exempt".asInstanceOf[product_exempt]
+  
+  @js.native
+  sealed trait product_exempt_holiday
+    extends StObject
+       with TaxabilityReason
+       with typings.stripe.mod.Stripe.Quote.Computed.Recurring.TotalDetails.Breakdown.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.Quote.TotalDetails.Breakdown.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.LineItem.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.Invoice.TotalTaxAmount.TaxabilityReason
+       with typings.stripe.mod.Stripe.Invoice.ShippingCost.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.Checkout.Session.TotalDetails.Breakdown.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.Checkout.Session.ShippingCost.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.Tax.Transaction.ShippingCost.TaxBreakdown.TaxabilityReason
+       with typings.stripe.mod.Stripe.Tax.Calculation.ShippingCost.TaxBreakdown.TaxabilityReason
+       with typings.stripe.mod.Stripe.Tax.CalculationLineItem.TaxBreakdown.TaxabilityReason
+       with typings.stripe.mod.Stripe.CreditNote.TaxAmount.TaxabilityReason
+       with typings.stripe.mod.Stripe.CreditNote.ShippingCost.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.CreditNoteLineItem.TaxAmount.TaxabilityReason
+       with typings.stripe.mod.Stripe.InvoiceLineItem.TaxAmount.TaxabilityReason
+  inline def product_exempt_holiday: product_exempt_holiday = "product_exempt_holiday".asInstanceOf[product_exempt_holiday]
+  
+  @js.native
+  sealed trait product_not_received
+    extends StObject
+       with DisputeCategory
+  inline def product_not_received: product_not_received = "product_not_received".asInstanceOf[product_not_received]
   
   @js.native
   sealed trait product_unsatisfactory
@@ -20506,6 +21333,26 @@ object stripeStrings {
   inline def promptpay: promptpay = "promptpay".asInstanceOf[promptpay]
   
   @js.native
+  sealed trait proportionally_rated
+    extends StObject
+       with TaxabilityReason
+       with typings.stripe.mod.Stripe.Quote.Computed.Recurring.TotalDetails.Breakdown.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.Quote.TotalDetails.Breakdown.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.LineItem.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.Invoice.TotalTaxAmount.TaxabilityReason
+       with typings.stripe.mod.Stripe.Invoice.ShippingCost.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.Checkout.Session.TotalDetails.Breakdown.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.Checkout.Session.ShippingCost.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.Tax.Transaction.ShippingCost.TaxBreakdown.TaxabilityReason
+       with typings.stripe.mod.Stripe.Tax.Calculation.ShippingCost.TaxBreakdown.TaxabilityReason
+       with typings.stripe.mod.Stripe.Tax.CalculationLineItem.TaxBreakdown.TaxabilityReason
+       with typings.stripe.mod.Stripe.CreditNote.TaxAmount.TaxabilityReason
+       with typings.stripe.mod.Stripe.CreditNote.ShippingCost.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.CreditNoteLineItem.TaxAmount.TaxabilityReason
+       with typings.stripe.mod.Stripe.InvoiceLineItem.TaxAmount.TaxabilityReason
+  inline def proportionally_rated: proportionally_rated = "proportionally_rated".asInstanceOf[proportionally_rated]
+  
+  @js.native
   sealed trait protocol_error
     extends StObject
        with ResultReason
@@ -20530,6 +21377,10 @@ object stripeStrings {
   sealed trait pst
     extends StObject
        with TaxType
+       with typings.stripe.mod.Stripe.Tax.Calculation.TaxBreakdown.TaxRateDetails.TaxType
+       with typings.stripe.mod.Stripe.Tax.Calculation.ShippingCost.TaxBreakdown.TaxRateDetails.TaxType
+       with typings.stripe.mod.Stripe.Tax.CalculationLineItem.TaxBreakdown.TaxRateDetails.TaxType
+       with typings.stripe.mod.Stripe.TaxRate.TaxType
        with typings.stripe.mod.Stripe.TaxRateUpdateParams.TaxType
        with typings.stripe.mod.Stripe.TaxRateCreateParams.TaxType
   inline def pst: pst = "pst".asInstanceOf[pst]
@@ -20547,10 +21398,12 @@ object stripeStrings {
   sealed trait `pt-PT`
     extends StObject
        with PreferredLocale
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.Klarna.PreferredLocale
-       with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.Klarna.PreferredLocale
+       with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.Paypal.PreferredLocale
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.Klarna.PreferredLocale
+       with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.Paypal.PreferredLocale
+       with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.PaymentMethodOptions.Paypal.PreferredLocale
        with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.Klarna.PreferredLocale
+       with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.Paypal.PreferredLocale
   inline def `pt-PT`: `pt-PT` = "pt-PT".asInstanceOf[`pt-PT`]
   
   @js.native
@@ -20630,6 +21483,10 @@ object stripeStrings {
   sealed trait qst
     extends StObject
        with TaxType
+       with typings.stripe.mod.Stripe.Tax.Calculation.TaxBreakdown.TaxRateDetails.TaxType
+       with typings.stripe.mod.Stripe.Tax.Calculation.ShippingCost.TaxBreakdown.TaxRateDetails.TaxType
+       with typings.stripe.mod.Stripe.Tax.CalculationLineItem.TaxBreakdown.TaxRateDetails.TaxType
+       with typings.stripe.mod.Stripe.TaxRate.TaxType
        with typings.stripe.mod.Stripe.TaxRateUpdateParams.TaxType
        with typings.stripe.mod.Stripe.TaxRateCreateParams.TaxType
   inline def qst: qst = "qst".asInstanceOf[qst]
@@ -20782,6 +21639,12 @@ object stripeStrings {
   inline def railroads: railroads = "railroads".asInstanceOf[railroads]
   
   @js.native
+  sealed trait rate_limit_error
+    extends StObject
+       with RawErrorType
+  inline def rate_limit_error: rate_limit_error = "rate_limit_error".asInstanceOf[rate_limit_error]
+  
+  @js.native
   sealed trait ready
     extends StObject
        with typings.stripe.mod.Stripe.TestHelpers.TestClock.Status
@@ -20924,9 +21787,35 @@ object stripeStrings {
     extends StObject
        with Flow
        with typings.stripe.mod.Stripe.PaymentLinkCreateParams.AfterCompletion.Type
+       with typings.stripe.mod.Stripe.BillingPortal.SessionCreateParams.FlowData.AfterCompletion.Type
+       with typings.stripe.mod.Stripe.BillingPortal.Session.Flow.AfterCompletion.Type
        with typings.stripe.mod.Stripe.PaymentLinkUpdateParams.AfterCompletion.Type
        with typings.stripe.mod.Stripe.PaymentLink.AfterCompletion.Type
   inline def redirect: redirect = "redirect".asInstanceOf[redirect]
+  
+  @js.native
+  sealed trait reduced_rated
+    extends StObject
+       with TaxabilityReason
+       with typings.stripe.mod.Stripe.Quote.Computed.Recurring.TotalDetails.Breakdown.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.Quote.TotalDetails.Breakdown.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.LineItem.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.Invoice.TotalTaxAmount.TaxabilityReason
+       with typings.stripe.mod.Stripe.Invoice.ShippingCost.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.Checkout.Session.TotalDetails.Breakdown.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.Checkout.Session.ShippingCost.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.Tax.Transaction.ShippingCost.TaxBreakdown.TaxabilityReason
+       with typings.stripe.mod.Stripe.Tax.Calculation.ShippingCost.TaxBreakdown.TaxabilityReason
+       with typings.stripe.mod.Stripe.Tax.CalculationLineItem.TaxBreakdown.TaxabilityReason
+       with typings.stripe.mod.Stripe.CreditNote.TaxAmount.TaxabilityReason
+       with typings.stripe.mod.Stripe.CreditNote.ShippingCost.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.CreditNoteLineItem.TaxAmount.TaxabilityReason
+       with typings.stripe.mod.Stripe.InvoiceLineItem.TaxAmount.TaxabilityReason
+  inline def reduced_rated: reduced_rated = "reduced_rated".asInstanceOf[reduced_rated]
+  
+  @js.native
+  sealed trait refresh_token extends StObject
+  inline def refresh_token: refresh_token = "refresh_token".asInstanceOf[refresh_token]
   
   @js.native
   sealed trait refund
@@ -20938,11 +21827,31 @@ object stripeStrings {
   inline def refund: refund = "refund".asInstanceOf[refund]
   
   @js.native
+  sealed trait refundDotcreated
+    extends StObject
+       with EnabledEvent
+       with typings.stripe.mod.Stripe.WebhookEndpointCreateParams.EnabledEvent
+  inline def refundDotcreated: refundDotcreated = "refund.created".asInstanceOf[refundDotcreated]
+  
+  @js.native
+  sealed trait refundDotupdated
+    extends StObject
+       with EnabledEvent
+       with typings.stripe.mod.Stripe.WebhookEndpointCreateParams.EnabledEvent
+  inline def refundDotupdated: refundDotupdated = "refund.updated".asInstanceOf[refundDotupdated]
+  
+  @js.native
   sealed trait refund_failure
     extends StObject
        with ReportingCategory
        with typings.stripe.mod.Stripe.BalanceTransaction.Type
   inline def refund_failure: refund_failure = "refund_failure".asInstanceOf[refund_failure]
+  
+  @js.native
+  sealed trait refund_payment
+    extends StObject
+       with typings.stripe.mod.Stripe.Terminal.Reader.Action.Type
+  inline def refund_payment: refund_payment = "refund_payment".asInstanceOf[refund_payment]
   
   @js.native
   sealed trait refunded
@@ -21163,6 +22072,7 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.SetupIntentCancelParams.CancellationReason
        with typings.stripe.mod.Stripe.PaymentIntent.CancellationReason
        with typings.stripe.mod.Stripe.SetupIntent.CancellationReason
+       with typings.stripe.mod.Stripe.Terminal.Reader.Action.RefundPayment.Reason
        with typings.stripe.mod.Stripe.Refund.Reason
        with typings.stripe.mod.Stripe.RefundCreateParams.Reason
   inline def requested_by_customer: requested_by_customer = "requested_by_customer".asInstanceOf[requested_by_customer]
@@ -21180,6 +22090,12 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.PaymentLinkCreateParams.ConsentCollection.TermsOfService
        with typings.stripe.mod.Stripe.PaymentLink.ConsentCollection.TermsOfService
   inline def required: required = "required".asInstanceOf[required]
+  
+  @js.native
+  sealed trait requirementsDotpast_due
+    extends StObject
+       with DisabledReason
+  inline def requirementsDotpast_due: requirementsDotpast_due = "requirements.past_due".asInstanceOf[requirementsDotpast_due]
   
   @js.native
   sealed trait requirements_past_due
@@ -21213,7 +22129,6 @@ object stripeStrings {
   sealed trait requires_action
     extends StObject
        with typings.stripe.mod.Stripe.PaymentIntent.Status
-       with typings.stripe.mod.Stripe.Order.Payment.Status
        with typings.stripe.mod.Stripe.SetupIntent.Status
   inline def requires_action: requires_action = "requires_action".asInstanceOf[requires_action]
   
@@ -21221,14 +22136,12 @@ object stripeStrings {
   sealed trait requires_capture
     extends StObject
        with typings.stripe.mod.Stripe.PaymentIntent.Status
-       with typings.stripe.mod.Stripe.Order.Payment.Status
   inline def requires_capture: requires_capture = "requires_capture".asInstanceOf[requires_capture]
   
   @js.native
   sealed trait requires_confirmation
     extends StObject
        with typings.stripe.mod.Stripe.PaymentIntent.Status
-       with typings.stripe.mod.Stripe.Order.Payment.Status
        with typings.stripe.mod.Stripe.SetupIntent.Status
   inline def requires_confirmation: requires_confirmation = "requires_confirmation".asInstanceOf[requires_confirmation]
   
@@ -21245,14 +22158,12 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.Quote.AutomaticTax.Status
        with typings.stripe.mod.Stripe.Invoice.AutomaticTax.Status
        with typings.stripe.mod.Stripe.Checkout.Session.AutomaticTax.Status
-       with typings.stripe.mod.Stripe.Order.AutomaticTax.Status
   inline def requires_location_inputs: requires_location_inputs = "requires_location_inputs".asInstanceOf[requires_location_inputs]
   
   @js.native
   sealed trait requires_payment_method
     extends StObject
        with typings.stripe.mod.Stripe.PaymentIntent.Status
-       with typings.stripe.mod.Stripe.Order.Payment.Status
        with typings.stripe.mod.Stripe.SetupIntent.Status
   inline def requires_payment_method: requires_payment_method = "requires_payment_method".asInstanceOf[requires_payment_method]
   
@@ -21349,19 +22260,46 @@ object stripeStrings {
   inline def reusable: reusable = "reusable".asInstanceOf[reusable]
   
   @js.native
+  sealed trait reversal
+    extends StObject
+       with typings.stripe.mod.Stripe.Tax.Transaction.Type
+       with typings.stripe.mod.Stripe.Tax.TransactionLineItem.Type
+  inline def reversal: reversal = "reversal".asInstanceOf[reversal]
+  
+  @js.native
   sealed trait reverse
     extends StObject
        with CustomerTaxExempt
        with TaxExempt
-       with typings.stripe.mod.Stripe.OrderCreateParams.TaxDetails.TaxExempt
-       with typings.stripe.mod.Stripe.OrderUpdateParams.TaxDetails.TaxExempt
        with typings.stripe.mod.Stripe.InvoiceRetrieveUpcomingParams.CustomerDetails.TaxExempt
        with typings.stripe.mod.Stripe.InvoiceListUpcomingLinesParams.CustomerDetails.TaxExempt
        with typings.stripe.mod.Stripe.Checkout.Session.CustomerDetails.TaxExempt
        with typings.stripe.mod.Stripe.CustomerUpdateParams.TaxExempt
        with typings.stripe.mod.Stripe.Customer.TaxExempt
-       with typings.stripe.mod.Stripe.Order.TaxDetails.TaxExempt
   inline def reverse: reverse = "reverse".asInstanceOf[reverse]
+  
+  @js.native
+  sealed trait reverse_charge
+    extends StObject
+       with TaxabilityOverride
+       with typings.stripe.mod.Stripe.Tax.Calculation.CustomerDetails.TaxabilityOverride
+       with typings.stripe.mod.Stripe.Tax.CalculationCreateParams.CustomerDetails.TaxabilityOverride
+       with TaxabilityReason
+       with typings.stripe.mod.Stripe.Quote.Computed.Recurring.TotalDetails.Breakdown.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.Quote.TotalDetails.Breakdown.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.LineItem.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.Invoice.TotalTaxAmount.TaxabilityReason
+       with typings.stripe.mod.Stripe.Invoice.ShippingCost.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.Checkout.Session.TotalDetails.Breakdown.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.Checkout.Session.ShippingCost.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.Tax.Transaction.ShippingCost.TaxBreakdown.TaxabilityReason
+       with typings.stripe.mod.Stripe.Tax.Calculation.ShippingCost.TaxBreakdown.TaxabilityReason
+       with typings.stripe.mod.Stripe.Tax.CalculationLineItem.TaxBreakdown.TaxabilityReason
+       with typings.stripe.mod.Stripe.CreditNote.TaxAmount.TaxabilityReason
+       with typings.stripe.mod.Stripe.CreditNote.ShippingCost.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.CreditNoteLineItem.TaxAmount.TaxabilityReason
+       with typings.stripe.mod.Stripe.InvoiceLineItem.TaxAmount.TaxabilityReason
+  inline def reverse_charge: reverse_charge = "reverse_charge".asInstanceOf[reverse_charge]
   
   @js.native
   sealed trait reversed
@@ -21478,6 +22416,10 @@ object stripeStrings {
   sealed trait rst
     extends StObject
        with TaxType
+       with typings.stripe.mod.Stripe.Tax.Calculation.TaxBreakdown.TaxRateDetails.TaxType
+       with typings.stripe.mod.Stripe.Tax.Calculation.ShippingCost.TaxBreakdown.TaxRateDetails.TaxType
+       with typings.stripe.mod.Stripe.Tax.CalculationLineItem.TaxBreakdown.TaxRateDetails.TaxType
+       with typings.stripe.mod.Stripe.TaxRate.TaxType
        with typings.stripe.mod.Stripe.TaxRateUpdateParams.TaxType
        with typings.stripe.mod.Stripe.TaxRateCreateParams.TaxType
   inline def rst: rst = "rst".asInstanceOf[rst]
@@ -21495,13 +22437,13 @@ object stripeStrings {
   sealed trait ru_inn
     extends StObject
        with typings.stripe.mod.Stripe.CustomerCreateParams.TaxIdDatum.Type
-       with typings.stripe.mod.Stripe.OrderCreateParams.TaxDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.OrderUpdateParams.TaxDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Invoice.CustomerTaxId.Type
        with typings.stripe.mod.Stripe.InvoiceRetrieveUpcomingParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.InvoiceListUpcomingLinesParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Checkout.Session.CustomerDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.Order.TaxDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Transaction.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Calculation.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.CalculationCreateParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.TaxIdCreateParams.Type
        with typings.stripe.mod.Stripe.TaxId.Type
   inline def ru_inn: ru_inn = "ru_inn".asInstanceOf[ru_inn]
@@ -21510,13 +22452,13 @@ object stripeStrings {
   sealed trait ru_kpp
     extends StObject
        with typings.stripe.mod.Stripe.CustomerCreateParams.TaxIdDatum.Type
-       with typings.stripe.mod.Stripe.OrderCreateParams.TaxDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.OrderUpdateParams.TaxDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Invoice.CustomerTaxId.Type
        with typings.stripe.mod.Stripe.InvoiceRetrieveUpcomingParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.InvoiceListUpcomingLinesParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Checkout.Session.CustomerDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.Order.TaxDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Transaction.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Calculation.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.CalculationCreateParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.TaxIdCreateParams.Type
        with typings.stripe.mod.Stripe.TaxId.Type
   inline def ru_kpp: ru_kpp = "ru_kpp".asInstanceOf[ru_kpp]
@@ -21531,13 +22473,13 @@ object stripeStrings {
   sealed trait sa_vat
     extends StObject
        with typings.stripe.mod.Stripe.CustomerCreateParams.TaxIdDatum.Type
-       with typings.stripe.mod.Stripe.OrderCreateParams.TaxDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.OrderUpdateParams.TaxDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Invoice.CustomerTaxId.Type
        with typings.stripe.mod.Stripe.InvoiceRetrieveUpcomingParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.InvoiceListUpcomingLinesParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Checkout.Session.CustomerDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.Order.TaxDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Transaction.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Calculation.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.CalculationCreateParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.TaxIdCreateParams.Type
        with typings.stripe.mod.Stripe.TaxId.Type
   inline def sa_vat: sa_vat = "sa_vat".asInstanceOf[sa_vat]
@@ -21552,6 +22494,10 @@ object stripeStrings {
   sealed trait sales_tax
     extends StObject
        with TaxType
+       with typings.stripe.mod.Stripe.Tax.Calculation.TaxBreakdown.TaxRateDetails.TaxType
+       with typings.stripe.mod.Stripe.Tax.Calculation.ShippingCost.TaxBreakdown.TaxRateDetails.TaxType
+       with typings.stripe.mod.Stripe.Tax.CalculationLineItem.TaxBreakdown.TaxRateDetails.TaxType
+       with typings.stripe.mod.Stripe.TaxRate.TaxType
        with typings.stripe.mod.Stripe.TaxRateUpdateParams.TaxType
        with typings.stripe.mod.Stripe.TaxRateCreateParams.TaxType
   inline def sales_tax: sales_tax = "sales_tax".asInstanceOf[sales_tax]
@@ -21631,6 +22577,14 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.SetupIntentConfirmParams.PaymentMethodData.Eps.Bank
        with typings.stripe.mod.Stripe.SetupIntentCreateParams.PaymentMethodData.Eps.Bank
   inline def schoellerbank_ag: schoellerbank_ag = "schoellerbank_ag".asInstanceOf[schoellerbank_ag]
+  
+  @js.native
+  sealed trait search extends StObject
+  inline def search: search = "search".asInstanceOf[search]
+  
+  @js.native
+  sealed trait search_result extends StObject
+  inline def search_result: search_result = "search_result".asInstanceOf[search_result]
   
   @js.native
   sealed trait secretarial_support_services
@@ -21744,15 +22698,12 @@ object stripeStrings {
   @js.native
   sealed trait sepa
     extends StObject
-       with typings.stripe.mod.Stripe.OrderCreateParams.Payment.Settings.PaymentMethodOptions.CustomerBalance.BankTransfer.RequestedAddressType
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.CustomerBalance.BankTransfer.RequestedAddressType
        with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.CustomerBalance.BankTransfer.RequestedAddressType
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.CustomerBalance.BankTransfer.RequestedAddressType
        with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.PaymentMethodOptions.CustomerBalance.BankTransfer.RequestedAddressType
        with typings.stripe.mod.Stripe.Checkout.Session.PaymentMethodOptions.CustomerBalance.BankTransfer.RequestedAddressType
        with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.CustomerBalance.BankTransfer.RequestedAddressType
        with typings.stripe.mod.Stripe.PaymentIntent.PaymentMethodOptions.CustomerBalance.BankTransfer.RequestedAddressType
-       with typings.stripe.mod.Stripe.Order.Payment.Settings.PaymentMethodOptions.CustomerBalance.BankTransfer.RequestedAddressType
        with typings.stripe.mod.Stripe.PaymentIntent.NextAction.DisplayBankTransferInstructions.FinancialAddress.SupportedNetwork
        with typings.stripe.mod.Stripe.FundingInstructions.BankTransfer.FinancialAddress.SupportedNetwork
   inline def sepa: sepa = "sepa".asInstanceOf[sepa]
@@ -21772,8 +22723,6 @@ object stripeStrings {
   @js.native
   sealed trait sepa_debit
     extends StObject
-       with typings.stripe.mod.Stripe.OrderCreateParams.Payment.Settings.PaymentMethodType
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodType
        with PaymentMethodType
        with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.PaymentMethodType
        with typings.stripe.mod.Stripe.Subscription.PaymentSettings.PaymentMethodType
@@ -21781,7 +22730,6 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.SubscriptionUpdateParams.PaymentSettings.PaymentMethodType
        with typings.stripe.mod.Stripe.InvoiceCreateParams.PaymentSettings.PaymentMethodType
        with typings.stripe.mod.Stripe.SubscriptionCreateParams.PaymentSettings.PaymentMethodType
-       with typings.stripe.mod.Stripe.Order.Payment.Settings.PaymentMethodType
        with typings.stripe.mod.Stripe.PaymentLinkUpdateParams.PaymentMethodType
        with typings.stripe.mod.Stripe.InvoiceUpdateParams.PaymentSettings.PaymentMethodType
        with typings.stripe.mod.Stripe.PaymentLink.PaymentMethodType
@@ -21936,13 +22884,13 @@ object stripeStrings {
   sealed trait sg_gst
     extends StObject
        with typings.stripe.mod.Stripe.CustomerCreateParams.TaxIdDatum.Type
-       with typings.stripe.mod.Stripe.OrderCreateParams.TaxDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.OrderUpdateParams.TaxDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Invoice.CustomerTaxId.Type
        with typings.stripe.mod.Stripe.InvoiceRetrieveUpcomingParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.InvoiceListUpcomingLinesParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Checkout.Session.CustomerDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.Order.TaxDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Transaction.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Calculation.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.CalculationCreateParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.TaxIdCreateParams.Type
        with typings.stripe.mod.Stripe.TaxId.Type
   inline def sg_gst: sg_gst = "sg_gst".asInstanceOf[sg_gst]
@@ -21958,13 +22906,13 @@ object stripeStrings {
   sealed trait sg_uen
     extends StObject
        with typings.stripe.mod.Stripe.CustomerCreateParams.TaxIdDatum.Type
-       with typings.stripe.mod.Stripe.OrderCreateParams.TaxDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.OrderUpdateParams.TaxDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Invoice.CustomerTaxId.Type
        with typings.stripe.mod.Stripe.InvoiceRetrieveUpcomingParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.InvoiceListUpcomingLinesParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Checkout.Session.CustomerDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.Order.TaxDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Transaction.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Calculation.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.CalculationCreateParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.TaxIdCreateParams.Type
        with typings.stripe.mod.Stripe.TaxId.Type
   inline def sg_uen: sg_uen = "sg_uen".asInstanceOf[sg_uen]
@@ -21978,6 +22926,9 @@ object stripeStrings {
   @js.native
   sealed trait shipping
     extends StObject
+       with AddressSource
+       with typings.stripe.mod.Stripe.Tax.Calculation.CustomerDetails.AddressSource
+       with typings.stripe.mod.Stripe.Tax.CalculationCreateParams.CustomerDetails.AddressSource
        with AllowedUpdate
        with typings.stripe.mod.Stripe.BillingPortal.ConfigurationCreateParams.Features.CustomerUpdate.AllowedUpdate
        with typings.stripe.mod.Stripe.BillingPortal.Configuration.Features.CustomerUpdate.AllowedUpdate
@@ -22045,13 +22996,13 @@ object stripeStrings {
   sealed trait si_tin
     extends StObject
        with typings.stripe.mod.Stripe.CustomerCreateParams.TaxIdDatum.Type
-       with typings.stripe.mod.Stripe.OrderCreateParams.TaxDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.OrderUpdateParams.TaxDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Invoice.CustomerTaxId.Type
        with typings.stripe.mod.Stripe.InvoiceRetrieveUpcomingParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.InvoiceListUpcomingLinesParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Checkout.Session.CustomerDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.Order.TaxDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Transaction.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Calculation.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.CalculationCreateParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.TaxIdCreateParams.Type
        with typings.stripe.mod.Stripe.TaxId.Type
   inline def si_tin: si_tin = "si_tin".asInstanceOf[si_tin]
@@ -22092,6 +23043,15 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.Mandate.Type
        with typings.stripe.mod.Stripe.SourceCreateParams.Usage
   inline def single_use: single_use = "single_use".asInstanceOf[single_use]
+  
+  @js.native
+  sealed trait `sk-SK`
+    extends StObject
+       with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.Paypal.PreferredLocale
+       with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.Paypal.PreferredLocale
+       with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.PaymentMethodOptions.Paypal.PreferredLocale
+       with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.Paypal.PreferredLocale
+  inline def `sk-SK`: `sk-SK` = "sk-SK".asInstanceOf[`sk-SK`]
   
   @js.native
   sealed trait sk_
@@ -22203,8 +23163,6 @@ object stripeStrings {
   @js.native
   sealed trait sofort
     extends StObject
-       with typings.stripe.mod.Stripe.OrderCreateParams.Payment.Settings.PaymentMethodType
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodType
        with PaymentMethodType
        with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.PaymentMethodType
        with typings.stripe.mod.Stripe.Subscription.PaymentSettings.PaymentMethodType
@@ -22212,7 +23170,6 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.SubscriptionUpdateParams.PaymentSettings.PaymentMethodType
        with typings.stripe.mod.Stripe.InvoiceCreateParams.PaymentSettings.PaymentMethodType
        with typings.stripe.mod.Stripe.SubscriptionCreateParams.PaymentSettings.PaymentMethodType
-       with typings.stripe.mod.Stripe.Order.Payment.Settings.PaymentMethodType
        with typings.stripe.mod.Stripe.PaymentLinkUpdateParams.PaymentMethodType
        with typings.stripe.mod.Stripe.InvoiceUpdateParams.PaymentSettings.PaymentMethodType
        with typings.stripe.mod.Stripe.PaymentLink.PaymentMethodType
@@ -22252,15 +23209,12 @@ object stripeStrings {
   sealed trait sort_code
     extends StObject
        with RequestedAddressType
-       with typings.stripe.mod.Stripe.OrderCreateParams.Payment.Settings.PaymentMethodOptions.CustomerBalance.BankTransfer.RequestedAddressType
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.CustomerBalance.BankTransfer.RequestedAddressType
        with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.CustomerBalance.BankTransfer.RequestedAddressType
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.CustomerBalance.BankTransfer.RequestedAddressType
        with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.PaymentMethodOptions.CustomerBalance.BankTransfer.RequestedAddressType
        with typings.stripe.mod.Stripe.Checkout.Session.PaymentMethodOptions.CustomerBalance.BankTransfer.RequestedAddressType
        with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.CustomerBalance.BankTransfer.RequestedAddressType
        with typings.stripe.mod.Stripe.PaymentIntent.PaymentMethodOptions.CustomerBalance.BankTransfer.RequestedAddressType
-       with typings.stripe.mod.Stripe.Order.Payment.Settings.PaymentMethodOptions.CustomerBalance.BankTransfer.RequestedAddressType
        with typings.stripe.mod.Stripe.PaymentIntent.NextAction.DisplayBankTransferInstructions.FinancialAddress.Type
        with typings.stripe.mod.Stripe.FundingInstructions.BankTransfer.FinancialAddress.Type
   inline def sort_code: sort_code = "sort_code".asInstanceOf[sort_code]
@@ -22397,15 +23351,12 @@ object stripeStrings {
   sealed trait spei
     extends StObject
        with RequestedAddressType
-       with typings.stripe.mod.Stripe.OrderCreateParams.Payment.Settings.PaymentMethodOptions.CustomerBalance.BankTransfer.RequestedAddressType
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.CustomerBalance.BankTransfer.RequestedAddressType
        with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.CustomerBalance.BankTransfer.RequestedAddressType
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.CustomerBalance.BankTransfer.RequestedAddressType
        with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.PaymentMethodOptions.CustomerBalance.BankTransfer.RequestedAddressType
        with typings.stripe.mod.Stripe.Checkout.Session.PaymentMethodOptions.CustomerBalance.BankTransfer.RequestedAddressType
        with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.CustomerBalance.BankTransfer.RequestedAddressType
        with typings.stripe.mod.Stripe.PaymentIntent.PaymentMethodOptions.CustomerBalance.BankTransfer.RequestedAddressType
-       with typings.stripe.mod.Stripe.Order.Payment.Settings.PaymentMethodOptions.CustomerBalance.BankTransfer.RequestedAddressType
        with typings.stripe.mod.Stripe.PaymentIntent.NextAction.DisplayBankTransferInstructions.FinancialAddress.SupportedNetwork
        with typings.stripe.mod.Stripe.FundingInstructions.BankTransfer.FinancialAddress.SupportedNetwork
        with typings.stripe.mod.Stripe.PaymentIntent.NextAction.DisplayBankTransferInstructions.FinancialAddress.Type
@@ -22430,8 +23381,6 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.SetupIntentCreateParams.PaymentMethodOptions.Card.MandateOptions.Interval
        with typings.stripe.mod.Stripe.SetupIntent.PaymentMethodOptions.Card.MandateOptions.Interval
        with PaymentSchedule
-       with typings.stripe.mod.Stripe.OrderCreateParams.Payment.Settings.PaymentMethodOptions.AcssDebit.MandateOptions.PaymentSchedule
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.AcssDebit.MandateOptions.PaymentSchedule
        with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.AcssDebit.MandateOptions.PaymentSchedule
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.AcssDebit.MandateOptions.PaymentSchedule
        with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.PaymentMethodOptions.AcssDebit.MandateOptions.PaymentSchedule
@@ -22439,7 +23388,6 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.AcssDebit.MandateOptions.PaymentSchedule
        with typings.stripe.mod.Stripe.PaymentIntent.PaymentMethodOptions.AcssDebit.MandateOptions.PaymentSchedule
        with typings.stripe.mod.Stripe.Mandate.PaymentMethodDetails.AcssDebit.PaymentSchedule
-       with typings.stripe.mod.Stripe.Order.Payment.Settings.PaymentMethodOptions.AcssDebit.MandateOptions.PaymentSchedule
        with typings.stripe.mod.Stripe.SetupIntentConfirmParams.PaymentMethodOptions.AcssDebit.MandateOptions.PaymentSchedule
        with typings.stripe.mod.Stripe.SetupIntentCreateParams.PaymentMethodOptions.AcssDebit.MandateOptions.PaymentSchedule
        with typings.stripe.mod.Stripe.SetupIntent.PaymentMethodOptions.AcssDebit.MandateOptions.PaymentSchedule
@@ -22587,6 +23535,34 @@ object stripeStrings {
   inline def standard_chartered: standard_chartered = "standard_chartered".asInstanceOf[standard_chartered]
   
   @js.native
+  sealed trait standard_rated
+    extends StObject
+       with TaxabilityReason
+       with typings.stripe.mod.Stripe.Quote.Computed.Recurring.TotalDetails.Breakdown.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.Quote.TotalDetails.Breakdown.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.LineItem.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.Invoice.TotalTaxAmount.TaxabilityReason
+       with typings.stripe.mod.Stripe.Invoice.ShippingCost.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.Checkout.Session.TotalDetails.Breakdown.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.Checkout.Session.ShippingCost.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.Tax.Transaction.ShippingCost.TaxBreakdown.TaxabilityReason
+       with typings.stripe.mod.Stripe.Tax.Calculation.ShippingCost.TaxBreakdown.TaxabilityReason
+       with typings.stripe.mod.Stripe.Tax.CalculationLineItem.TaxBreakdown.TaxabilityReason
+       with typings.stripe.mod.Stripe.CreditNote.TaxAmount.TaxabilityReason
+       with typings.stripe.mod.Stripe.CreditNote.ShippingCost.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.CreditNoteLineItem.TaxAmount.TaxabilityReason
+       with typings.stripe.mod.Stripe.InvoiceLineItem.TaxAmount.TaxabilityReason
+  inline def standard_rated: standard_rated = "standard_rated".asInstanceOf[standard_rated]
+  
+  @js.native
+  sealed trait state
+    extends StObject
+       with Level
+       with typings.stripe.mod.Stripe.Tax.Calculation.ShippingCost.TaxBreakdown.Jurisdiction.Level
+       with typings.stripe.mod.Stripe.Tax.CalculationLineItem.TaxBreakdown.Jurisdiction.Level
+  inline def state: state = "state".asInstanceOf[state]
+  
+  @js.native
   sealed trait stationary_office_supplies_printing_and_writing_paper
     extends StObject
        with _AllowedCategory
@@ -22689,7 +23665,6 @@ object stripeStrings {
     extends StObject
        with typings.stripe.mod.Stripe.Issuing.DisputeListParams.Status
        with typings.stripe.mod.Stripe.Issuing.Dispute.Status
-       with typings.stripe.mod.Stripe.Order.Status
   inline def submitted: submitted = "submitted".asInstanceOf[submitted]
   
   @js.native
@@ -22707,6 +23682,13 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.Checkout.Session.Mode
        with typings.stripe.mod.Stripe.InvoiceLineItem.Type
   inline def subscription: subscription = "subscription".asInstanceOf[subscription]
+  
+  @js.native
+  sealed trait subscription_cancel
+    extends StObject
+       with typings.stripe.mod.Stripe.BillingPortal.SessionCreateParams.FlowData.Type
+       with typings.stripe.mod.Stripe.BillingPortal.Session.Flow.Type
+  inline def subscription_cancel: subscription_cancel = "subscription_cancel".asInstanceOf[subscription_cancel]
   
   @js.native
   sealed trait subscription_create
@@ -22852,8 +23834,6 @@ object stripeStrings {
   sealed trait `sv-FI`
     extends StObject
        with PreferredLocale
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.Klarna.PreferredLocale
-       with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.Klarna.PreferredLocale
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.Klarna.PreferredLocale
        with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.Klarna.PreferredLocale
   inline def `sv-FI`: `sv-FI` = "sv-FI".asInstanceOf[`sv-FI`]
@@ -22862,10 +23842,12 @@ object stripeStrings {
   sealed trait `sv-SE`
     extends StObject
        with PreferredLocale
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.Klarna.PreferredLocale
-       with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.Klarna.PreferredLocale
+       with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.Paypal.PreferredLocale
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.Klarna.PreferredLocale
+       with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.Paypal.PreferredLocale
+       with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.PaymentMethodOptions.Paypal.PreferredLocale
        with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.Klarna.PreferredLocale
+       with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.Paypal.PreferredLocale
   inline def `sv-SE`: `sv-SE` = "sv-SE".asInstanceOf[`sv-SE`]
   
   @js.native
@@ -22909,6 +23891,10 @@ object stripeStrings {
   @js.native
   sealed trait switched_service
     extends StObject
+       with Feedback
+       with typings.stripe.mod.Stripe.SubscriptionUpdateParams.CancellationDetails.Feedback
+       with typings.stripe.mod.Stripe.SubscriptionDeleteParams.CancellationDetails.Feedback
+       with typings.stripe.mod.Stripe.SubscriptionCancelParams.CancellationDetails.Feedback
        with Option
        with typings.stripe.mod.Stripe.BillingPortal.ConfigurationCreateParams.Features.SubscriptionCancel.CancellationReason.Option
        with typings.stripe.mod.Stripe.BillingPortal.Configuration.Features.SubscriptionCancel.CancellationReason.Option
@@ -22967,6 +23953,22 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.SourceUpdateParams.SourceOrder.Item.Type
        with typings.stripe.mod.Stripe.SourceCreateParams.SourceOrder.Item.Type
   inline def tax: tax = "tax".asInstanceOf[tax]
+  
+  @js.native
+  sealed trait taxDotcalculation extends StObject
+  inline def taxDotcalculation: taxDotcalculation = "tax.calculation".asInstanceOf[taxDotcalculation]
+  
+  @js.native
+  sealed trait taxDotcalculation_line_item extends StObject
+  inline def taxDotcalculation_line_item: taxDotcalculation_line_item = "tax.calculation_line_item".asInstanceOf[taxDotcalculation_line_item]
+  
+  @js.native
+  sealed trait taxDottransaction extends StObject
+  inline def taxDottransaction: taxDottransaction = "tax.transaction".asInstanceOf[taxDottransaction]
+  
+  @js.native
+  sealed trait taxDottransaction_line_item extends StObject
+  inline def taxDottransaction_line_item: taxDottransaction_line_item = "tax.transaction_line_item".asInstanceOf[taxDottransaction_line_item]
   
   @js.native
   sealed trait tax_code extends StObject
@@ -23069,6 +24071,26 @@ object stripeStrings {
        with EnabledEvent
        with typings.stripe.mod.Stripe.WebhookEndpointCreateParams.EnabledEvent
   inline def tax_rateDotupdated: tax_rateDotupdated = "tax_rate.updated".asInstanceOf[tax_rateDotupdated]
+  
+  @js.native
+  sealed trait taxable_basis_reduced
+    extends StObject
+       with TaxabilityReason
+       with typings.stripe.mod.Stripe.Quote.Computed.Recurring.TotalDetails.Breakdown.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.Quote.TotalDetails.Breakdown.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.LineItem.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.Invoice.TotalTaxAmount.TaxabilityReason
+       with typings.stripe.mod.Stripe.Invoice.ShippingCost.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.Checkout.Session.TotalDetails.Breakdown.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.Checkout.Session.ShippingCost.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.Tax.Transaction.ShippingCost.TaxBreakdown.TaxabilityReason
+       with typings.stripe.mod.Stripe.Tax.Calculation.ShippingCost.TaxBreakdown.TaxabilityReason
+       with typings.stripe.mod.Stripe.Tax.CalculationLineItem.TaxBreakdown.TaxabilityReason
+       with typings.stripe.mod.Stripe.CreditNote.TaxAmount.TaxabilityReason
+       with typings.stripe.mod.Stripe.CreditNote.ShippingCost.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.CreditNoteLineItem.TaxAmount.TaxabilityReason
+       with typings.stripe.mod.Stripe.InvoiceLineItem.TaxAmount.TaxabilityReason
+  inline def taxable_basis_reduced: taxable_basis_reduced = "taxable_basis_reduced".asInstanceOf[taxable_basis_reduced]
   
   @js.native
   sealed trait taxicabs_limousines
@@ -23285,6 +24307,16 @@ object stripeStrings {
   inline def testing_laboratories: testing_laboratories = "testing_laboratories".asInstanceOf[testing_laboratories]
   
   @js.native
+  sealed trait text
+    extends StObject
+       with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.CustomField.Type
+       with typings.stripe.mod.Stripe.Checkout.Session.CustomField.Type
+       with typings.stripe.mod.Stripe.PaymentLinkCreateParams.CustomField.Type
+       with typings.stripe.mod.Stripe.PaymentLinkUpdateParams.CustomField.Type
+       with typings.stripe.mod.Stripe.PaymentLink.CustomField.Type
+  inline def text: text = "text".asInstanceOf[text]
+  
+  @js.native
   sealed trait th_
     extends StObject
        with Locale
@@ -23297,13 +24329,13 @@ object stripeStrings {
   sealed trait th_vat
     extends StObject
        with typings.stripe.mod.Stripe.CustomerCreateParams.TaxIdDatum.Type
-       with typings.stripe.mod.Stripe.OrderCreateParams.TaxDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.OrderUpdateParams.TaxDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Invoice.CustomerTaxId.Type
        with typings.stripe.mod.Stripe.InvoiceRetrieveUpcomingParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.InvoiceListUpcomingLinesParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Checkout.Session.CustomerDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.Order.TaxDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Transaction.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Calculation.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.CalculationCreateParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.TaxIdCreateParams.Type
        with typings.stripe.mod.Stripe.TaxId.Type
   inline def th_vat: th_vat = "th_vat".asInstanceOf[th_vat]
@@ -23444,6 +24476,10 @@ object stripeStrings {
   @js.native
   sealed trait too_complex
     extends StObject
+       with Feedback
+       with typings.stripe.mod.Stripe.SubscriptionUpdateParams.CancellationDetails.Feedback
+       with typings.stripe.mod.Stripe.SubscriptionDeleteParams.CancellationDetails.Feedback
+       with typings.stripe.mod.Stripe.SubscriptionCancelParams.CancellationDetails.Feedback
        with Option
        with typings.stripe.mod.Stripe.BillingPortal.ConfigurationCreateParams.Features.SubscriptionCancel.CancellationReason.Option
        with typings.stripe.mod.Stripe.BillingPortal.Configuration.Features.SubscriptionCancel.CancellationReason.Option
@@ -23452,6 +24488,10 @@ object stripeStrings {
   @js.native
   sealed trait too_expensive
     extends StObject
+       with Feedback
+       with typings.stripe.mod.Stripe.SubscriptionUpdateParams.CancellationDetails.Feedback
+       with typings.stripe.mod.Stripe.SubscriptionDeleteParams.CancellationDetails.Feedback
+       with typings.stripe.mod.Stripe.SubscriptionCancelParams.CancellationDetails.Feedback
        with Option
        with typings.stripe.mod.Stripe.BillingPortal.ConfigurationCreateParams.Features.SubscriptionCancel.CancellationReason.Option
        with typings.stripe.mod.Stripe.BillingPortal.Configuration.Features.SubscriptionCancel.CancellationReason.Option
@@ -23586,13 +24626,13 @@ object stripeStrings {
   sealed trait tr_tin
     extends StObject
        with typings.stripe.mod.Stripe.CustomerCreateParams.TaxIdDatum.Type
-       with typings.stripe.mod.Stripe.OrderCreateParams.TaxDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.OrderUpdateParams.TaxDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Invoice.CustomerTaxId.Type
        with typings.stripe.mod.Stripe.InvoiceRetrieveUpcomingParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.InvoiceListUpcomingLinesParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Checkout.Session.CustomerDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.Order.TaxDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Transaction.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Calculation.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.CalculationCreateParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.TaxIdCreateParams.Type
        with typings.stripe.mod.Stripe.TaxId.Type
   inline def tr_tin: tr_tin = "tr_tin".asInstanceOf[tr_tin]
@@ -23619,6 +24659,13 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.Issuing.Card.SpendingControls.SpendingLimit._Category
        with typings.stripe.mod.Stripe.Issuing.CardholderCreateParams.SpendingControls.SpendingLimit._Category
   inline def trailer_parks_campgrounds: trailer_parks_campgrounds = "trailer_parks_campgrounds".asInstanceOf[trailer_parks_campgrounds]
+  
+  @js.native
+  sealed trait transaction
+    extends StObject
+       with typings.stripe.mod.Stripe.Tax.Transaction.Type
+       with typings.stripe.mod.Stripe.Tax.TransactionLineItem.Type
+  inline def transaction: transaction = "transaction".asInstanceOf[transaction]
   
   @js.native
   sealed trait transactions
@@ -24061,13 +25108,13 @@ object stripeStrings {
   sealed trait tw_vat
     extends StObject
        with typings.stripe.mod.Stripe.CustomerCreateParams.TaxIdDatum.Type
-       with typings.stripe.mod.Stripe.OrderCreateParams.TaxDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.OrderUpdateParams.TaxDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Invoice.CustomerTaxId.Type
        with typings.stripe.mod.Stripe.InvoiceRetrieveUpcomingParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.InvoiceListUpcomingLinesParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Checkout.Session.CustomerDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.Order.TaxDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Transaction.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Calculation.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.CalculationCreateParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.TaxIdCreateParams.Type
        with typings.stripe.mod.Stripe.TaxId.Type
   inline def tw_vat: tw_vat = "tw_vat".asInstanceOf[tw_vat]
@@ -24145,13 +25192,13 @@ object stripeStrings {
   sealed trait ua_vat
     extends StObject
        with typings.stripe.mod.Stripe.CustomerCreateParams.TaxIdDatum.Type
-       with typings.stripe.mod.Stripe.OrderCreateParams.TaxDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.OrderUpdateParams.TaxDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Invoice.CustomerTaxId.Type
        with typings.stripe.mod.Stripe.InvoiceRetrieveUpcomingParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.InvoiceListUpcomingLinesParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Checkout.Session.CustomerDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.Order.TaxDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Transaction.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Calculation.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.CalculationCreateParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.TaxIdCreateParams.Type
        with typings.stripe.mod.Stripe.TaxId.Type
   inline def ua_vat: ua_vat = "ua_vat".asInstanceOf[ua_vat]
@@ -24178,6 +25225,7 @@ object stripeStrings {
   sealed trait unchanged
     extends StObject
        with typings.stripe.mod.Stripe.SubscriptionUpdateParams.BillingCycleAnchor
+       with typings.stripe.mod.Stripe.SubscriptionResumeParams.BillingCycleAnchor
        with SubscriptionBillingCycleAnchor
        with typings.stripe.mod.Stripe.InvoiceListUpcomingLinesParams.SubscriptionBillingCycleAnchor
   inline def unchanged: unchanged = "unchanged".asInstanceOf[unchanged]
@@ -24277,7 +25325,8 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.SetupIntent.PaymentMethodOptions.Card.Network
        with typings.stripe.mod.Stripe.Invoice.CustomerTaxId.Type
        with typings.stripe.mod.Stripe.Checkout.Session.CustomerDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.Order.TaxDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Transaction.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Calculation.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.TaxId.Type
   inline def unknown: unknown = "unknown".asInstanceOf[unknown]
   
@@ -24317,14 +25366,8 @@ object stripeStrings {
     extends StObject
        with TaxBehavior
        with typings.stripe.mod.Stripe.ProductCreateParams.DefaultPriceData.CurrencyOptions.TaxBehavior
-       with typings.stripe.mod.Stripe.OrderCreateParams.LineItem.PriceData.TaxBehavior
-       with typings.stripe.mod.Stripe.OrderCreateParams.ShippingCost.ShippingRateData.TaxBehavior
-       with typings.stripe.mod.Stripe.OrderCreateParams.ShippingCost.ShippingRateData.FixedAmount.CurrencyOptions.TaxBehavior
        with typings.stripe.mod.Stripe.SubscriptionScheduleUpdateParams.Phase.Item.PriceData.TaxBehavior
        with typings.stripe.mod.Stripe.SubscriptionScheduleUpdateParams.Phase.AddInvoiceItem.PriceData.TaxBehavior
-       with typings.stripe.mod.Stripe.OrderUpdateParams.LineItem.PriceData.TaxBehavior
-       with typings.stripe.mod.Stripe.OrderUpdateParams.ShippingCost.ShippingRateData.TaxBehavior
-       with typings.stripe.mod.Stripe.OrderUpdateParams.ShippingCost.ShippingRateData.FixedAmount.CurrencyOptions.TaxBehavior
        with typings.stripe.mod.Stripe.InvoiceRetrieveUpcomingParams.SubscriptionItem.PriceData.TaxBehavior
        with typings.stripe.mod.Stripe.InvoiceRetrieveUpcomingParams.InvoiceItem.TaxBehavior
        with typings.stripe.mod.Stripe.InvoiceRetrieveUpcomingParams.InvoiceItem.PriceData.TaxBehavior
@@ -24344,6 +25387,8 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.SubscriptionUpdateParams.AddInvoiceItem.PriceData.TaxBehavior
        with typings.stripe.mod.Stripe.PriceCreateParams.TaxBehavior
        with typings.stripe.mod.Stripe.PriceCreateParams.CurrencyOptions.TaxBehavior
+       with typings.stripe.mod.Stripe.InvoiceCreateParams.ShippingCost.ShippingRateData.TaxBehavior
+       with typings.stripe.mod.Stripe.InvoiceCreateParams.ShippingCost.ShippingRateData.FixedAmount.CurrencyOptions.TaxBehavior
        with typings.stripe.mod.Stripe.SubscriptionCreateParams.Item.PriceData.TaxBehavior
        with typings.stripe.mod.Stripe.SubscriptionCreateParams.AddInvoiceItem.PriceData.TaxBehavior
        with typings.stripe.mod.Stripe.QuoteUpdateParams.LineItem.PriceData.TaxBehavior
@@ -24351,6 +25396,8 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.Price.CurrencyOptions.TaxBehavior
        with typings.stripe.mod.Stripe.SubscriptionScheduleCreateParams.Phase.Item.PriceData.TaxBehavior
        with typings.stripe.mod.Stripe.SubscriptionScheduleCreateParams.Phase.AddInvoiceItem.PriceData.TaxBehavior
+       with typings.stripe.mod.Stripe.InvoiceUpdateParams.ShippingCost.ShippingRateData.TaxBehavior
+       with typings.stripe.mod.Stripe.InvoiceUpdateParams.ShippingCost.ShippingRateData.FixedAmount.CurrencyOptions.TaxBehavior
        with typings.stripe.mod.Stripe.InvoiceItemUpdateParams.TaxBehavior
        with typings.stripe.mod.Stripe.InvoiceItemUpdateParams.PriceData.TaxBehavior
        with typings.stripe.mod.Stripe.InvoiceItemCreateParams.TaxBehavior
@@ -24385,6 +25432,10 @@ object stripeStrings {
   @js.native
   sealed trait unused
     extends StObject
+       with Feedback
+       with typings.stripe.mod.Stripe.SubscriptionUpdateParams.CancellationDetails.Feedback
+       with typings.stripe.mod.Stripe.SubscriptionDeleteParams.CancellationDetails.Feedback
+       with typings.stripe.mod.Stripe.SubscriptionCancelParams.CancellationDetails.Feedback
        with Option
        with typings.stripe.mod.Stripe.BillingPortal.ConfigurationCreateParams.Features.SubscriptionCancel.CancellationReason.Option
        with typings.stripe.mod.Stripe.BillingPortal.Configuration.Features.SubscriptionCancel.CancellationReason.Option
@@ -24481,13 +25532,13 @@ object stripeStrings {
   sealed trait us_ein
     extends StObject
        with typings.stripe.mod.Stripe.CustomerCreateParams.TaxIdDatum.Type
-       with typings.stripe.mod.Stripe.OrderCreateParams.TaxDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.OrderUpdateParams.TaxDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Invoice.CustomerTaxId.Type
        with typings.stripe.mod.Stripe.InvoiceRetrieveUpcomingParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.InvoiceListUpcomingLinesParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Checkout.Session.CustomerDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.Order.TaxDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Transaction.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Calculation.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.CalculationCreateParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.TaxIdCreateParams.Type
        with typings.stripe.mod.Stripe.TaxId.Type
   inline def us_ein: us_ein = "us_ein".asInstanceOf[us_ein]
@@ -24581,6 +25632,10 @@ object stripeStrings {
   inline def utilities: utilities = "utilities".asInstanceOf[utilities]
   
   @js.native
+  sealed trait v1 extends StObject
+  inline def v1: v1 = "v1".asInstanceOf[v1]
+  
+  @js.native
   sealed trait van_lanschot
     extends StObject
        with Bank
@@ -24629,13 +25684,32 @@ object stripeStrings {
   sealed trait vat
     extends StObject
        with TaxType
+       with typings.stripe.mod.Stripe.Tax.Calculation.TaxBreakdown.TaxRateDetails.TaxType
+       with typings.stripe.mod.Stripe.Tax.Calculation.ShippingCost.TaxBreakdown.TaxRateDetails.TaxType
+       with typings.stripe.mod.Stripe.Tax.CalculationLineItem.TaxBreakdown.TaxRateDetails.TaxType
+       with typings.stripe.mod.Stripe.TaxRate.TaxType
        with typings.stripe.mod.Stripe.TaxRateUpdateParams.TaxType
        with typings.stripe.mod.Stripe.TaxRateCreateParams.TaxType
   inline def vat: vat = "vat".asInstanceOf[vat]
   
   @js.native
+  sealed trait vat_exempt
+    extends StObject
+       with TaxabilityReason
+       with typings.stripe.mod.Stripe.Quote.Computed.Recurring.TotalDetails.Breakdown.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.Quote.TotalDetails.Breakdown.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.LineItem.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.Invoice.ShippingCost.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.Checkout.Session.TotalDetails.Breakdown.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.Checkout.Session.ShippingCost.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.CreditNote.ShippingCost.Tax.TaxabilityReason
+  inline def vat_exempt: vat_exempt = "vat_exempt".asInstanceOf[vat_exempt]
+  
+  @js.native
   sealed trait verification_document_address_mismatch
     extends StObject
+       with typings.stripe.mod.Stripe.BankAccount.Requirements.Error.Code
+       with typings.stripe.mod.Stripe.BankAccount.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.Requirements.Error.Code
        with typings.stripe.mod.Stripe.Person.FutureRequirements.Error.Code
@@ -24647,6 +25721,8 @@ object stripeStrings {
   @js.native
   sealed trait verification_document_address_missing
     extends StObject
+       with typings.stripe.mod.Stripe.BankAccount.Requirements.Error.Code
+       with typings.stripe.mod.Stripe.BankAccount.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.Requirements.Error.Code
        with typings.stripe.mod.Stripe.Person.FutureRequirements.Error.Code
@@ -24658,6 +25734,8 @@ object stripeStrings {
   @js.native
   sealed trait verification_document_corrupt
     extends StObject
+       with typings.stripe.mod.Stripe.BankAccount.Requirements.Error.Code
+       with typings.stripe.mod.Stripe.BankAccount.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.Requirements.Error.Code
        with typings.stripe.mod.Stripe.Person.FutureRequirements.Error.Code
@@ -24669,6 +25747,8 @@ object stripeStrings {
   @js.native
   sealed trait verification_document_country_not_supported
     extends StObject
+       with typings.stripe.mod.Stripe.BankAccount.Requirements.Error.Code
+       with typings.stripe.mod.Stripe.BankAccount.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.Requirements.Error.Code
        with typings.stripe.mod.Stripe.Person.FutureRequirements.Error.Code
@@ -24680,6 +25760,8 @@ object stripeStrings {
   @js.native
   sealed trait verification_document_dob_mismatch
     extends StObject
+       with typings.stripe.mod.Stripe.BankAccount.Requirements.Error.Code
+       with typings.stripe.mod.Stripe.BankAccount.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.Requirements.Error.Code
        with typings.stripe.mod.Stripe.Person.FutureRequirements.Error.Code
@@ -24691,6 +25773,8 @@ object stripeStrings {
   @js.native
   sealed trait verification_document_duplicate_type
     extends StObject
+       with typings.stripe.mod.Stripe.BankAccount.Requirements.Error.Code
+       with typings.stripe.mod.Stripe.BankAccount.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.Requirements.Error.Code
        with typings.stripe.mod.Stripe.Person.FutureRequirements.Error.Code
@@ -24702,6 +25786,8 @@ object stripeStrings {
   @js.native
   sealed trait verification_document_expired
     extends StObject
+       with typings.stripe.mod.Stripe.BankAccount.Requirements.Error.Code
+       with typings.stripe.mod.Stripe.BankAccount.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.Requirements.Error.Code
        with typings.stripe.mod.Stripe.Person.FutureRequirements.Error.Code
@@ -24713,6 +25799,8 @@ object stripeStrings {
   @js.native
   sealed trait verification_document_failed_copy
     extends StObject
+       with typings.stripe.mod.Stripe.BankAccount.Requirements.Error.Code
+       with typings.stripe.mod.Stripe.BankAccount.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.Requirements.Error.Code
        with typings.stripe.mod.Stripe.Person.FutureRequirements.Error.Code
@@ -24724,6 +25812,8 @@ object stripeStrings {
   @js.native
   sealed trait verification_document_failed_greyscale
     extends StObject
+       with typings.stripe.mod.Stripe.BankAccount.Requirements.Error.Code
+       with typings.stripe.mod.Stripe.BankAccount.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.Requirements.Error.Code
        with typings.stripe.mod.Stripe.Person.FutureRequirements.Error.Code
@@ -24735,6 +25825,8 @@ object stripeStrings {
   @js.native
   sealed trait verification_document_failed_other
     extends StObject
+       with typings.stripe.mod.Stripe.BankAccount.Requirements.Error.Code
+       with typings.stripe.mod.Stripe.BankAccount.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.Requirements.Error.Code
        with typings.stripe.mod.Stripe.Person.FutureRequirements.Error.Code
@@ -24746,6 +25838,8 @@ object stripeStrings {
   @js.native
   sealed trait verification_document_failed_test_mode
     extends StObject
+       with typings.stripe.mod.Stripe.BankAccount.Requirements.Error.Code
+       with typings.stripe.mod.Stripe.BankAccount.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.Requirements.Error.Code
        with typings.stripe.mod.Stripe.Person.FutureRequirements.Error.Code
@@ -24757,6 +25851,8 @@ object stripeStrings {
   @js.native
   sealed trait verification_document_fraudulent
     extends StObject
+       with typings.stripe.mod.Stripe.BankAccount.Requirements.Error.Code
+       with typings.stripe.mod.Stripe.BankAccount.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.Requirements.Error.Code
        with typings.stripe.mod.Stripe.Person.FutureRequirements.Error.Code
@@ -24768,6 +25864,8 @@ object stripeStrings {
   @js.native
   sealed trait verification_document_id_number_mismatch
     extends StObject
+       with typings.stripe.mod.Stripe.BankAccount.Requirements.Error.Code
+       with typings.stripe.mod.Stripe.BankAccount.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.Requirements.Error.Code
        with typings.stripe.mod.Stripe.Person.FutureRequirements.Error.Code
@@ -24779,6 +25877,8 @@ object stripeStrings {
   @js.native
   sealed trait verification_document_id_number_missing
     extends StObject
+       with typings.stripe.mod.Stripe.BankAccount.Requirements.Error.Code
+       with typings.stripe.mod.Stripe.BankAccount.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.Requirements.Error.Code
        with typings.stripe.mod.Stripe.Person.FutureRequirements.Error.Code
@@ -24790,6 +25890,8 @@ object stripeStrings {
   @js.native
   sealed trait verification_document_incomplete
     extends StObject
+       with typings.stripe.mod.Stripe.BankAccount.Requirements.Error.Code
+       with typings.stripe.mod.Stripe.BankAccount.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.Requirements.Error.Code
        with typings.stripe.mod.Stripe.Person.FutureRequirements.Error.Code
@@ -24801,6 +25903,8 @@ object stripeStrings {
   @js.native
   sealed trait verification_document_invalid
     extends StObject
+       with typings.stripe.mod.Stripe.BankAccount.Requirements.Error.Code
+       with typings.stripe.mod.Stripe.BankAccount.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.Requirements.Error.Code
        with typings.stripe.mod.Stripe.Person.FutureRequirements.Error.Code
@@ -24812,6 +25916,8 @@ object stripeStrings {
   @js.native
   sealed trait verification_document_issue_or_expiry_date_missing
     extends StObject
+       with typings.stripe.mod.Stripe.BankAccount.Requirements.Error.Code
+       with typings.stripe.mod.Stripe.BankAccount.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.Requirements.Error.Code
        with typings.stripe.mod.Stripe.Person.FutureRequirements.Error.Code
@@ -24823,6 +25929,8 @@ object stripeStrings {
   @js.native
   sealed trait verification_document_manipulated
     extends StObject
+       with typings.stripe.mod.Stripe.BankAccount.Requirements.Error.Code
+       with typings.stripe.mod.Stripe.BankAccount.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.Requirements.Error.Code
        with typings.stripe.mod.Stripe.Person.FutureRequirements.Error.Code
@@ -24834,6 +25942,8 @@ object stripeStrings {
   @js.native
   sealed trait verification_document_missing_back
     extends StObject
+       with typings.stripe.mod.Stripe.BankAccount.Requirements.Error.Code
+       with typings.stripe.mod.Stripe.BankAccount.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.Requirements.Error.Code
        with typings.stripe.mod.Stripe.Person.FutureRequirements.Error.Code
@@ -24845,6 +25955,8 @@ object stripeStrings {
   @js.native
   sealed trait verification_document_missing_front
     extends StObject
+       with typings.stripe.mod.Stripe.BankAccount.Requirements.Error.Code
+       with typings.stripe.mod.Stripe.BankAccount.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.Requirements.Error.Code
        with typings.stripe.mod.Stripe.Person.FutureRequirements.Error.Code
@@ -24856,6 +25968,8 @@ object stripeStrings {
   @js.native
   sealed trait verification_document_name_mismatch
     extends StObject
+       with typings.stripe.mod.Stripe.BankAccount.Requirements.Error.Code
+       with typings.stripe.mod.Stripe.BankAccount.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.Requirements.Error.Code
        with typings.stripe.mod.Stripe.Person.FutureRequirements.Error.Code
@@ -24867,6 +25981,8 @@ object stripeStrings {
   @js.native
   sealed trait verification_document_name_missing
     extends StObject
+       with typings.stripe.mod.Stripe.BankAccount.Requirements.Error.Code
+       with typings.stripe.mod.Stripe.BankAccount.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.Requirements.Error.Code
        with typings.stripe.mod.Stripe.Person.FutureRequirements.Error.Code
@@ -24878,6 +25994,8 @@ object stripeStrings {
   @js.native
   sealed trait verification_document_nationality_mismatch
     extends StObject
+       with typings.stripe.mod.Stripe.BankAccount.Requirements.Error.Code
+       with typings.stripe.mod.Stripe.BankAccount.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.Requirements.Error.Code
        with typings.stripe.mod.Stripe.Person.FutureRequirements.Error.Code
@@ -24889,6 +26007,8 @@ object stripeStrings {
   @js.native
   sealed trait verification_document_not_readable
     extends StObject
+       with typings.stripe.mod.Stripe.BankAccount.Requirements.Error.Code
+       with typings.stripe.mod.Stripe.BankAccount.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.Requirements.Error.Code
        with typings.stripe.mod.Stripe.Person.FutureRequirements.Error.Code
@@ -24900,6 +26020,8 @@ object stripeStrings {
   @js.native
   sealed trait verification_document_not_signed
     extends StObject
+       with typings.stripe.mod.Stripe.BankAccount.Requirements.Error.Code
+       with typings.stripe.mod.Stripe.BankAccount.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.Requirements.Error.Code
        with typings.stripe.mod.Stripe.Person.FutureRequirements.Error.Code
@@ -24911,6 +26033,8 @@ object stripeStrings {
   @js.native
   sealed trait verification_document_not_uploaded
     extends StObject
+       with typings.stripe.mod.Stripe.BankAccount.Requirements.Error.Code
+       with typings.stripe.mod.Stripe.BankAccount.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.Requirements.Error.Code
        with typings.stripe.mod.Stripe.Person.FutureRequirements.Error.Code
@@ -24922,6 +26046,8 @@ object stripeStrings {
   @js.native
   sealed trait verification_document_photo_mismatch
     extends StObject
+       with typings.stripe.mod.Stripe.BankAccount.Requirements.Error.Code
+       with typings.stripe.mod.Stripe.BankAccount.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.Requirements.Error.Code
        with typings.stripe.mod.Stripe.Person.FutureRequirements.Error.Code
@@ -24933,6 +26059,8 @@ object stripeStrings {
   @js.native
   sealed trait verification_document_too_large
     extends StObject
+       with typings.stripe.mod.Stripe.BankAccount.Requirements.Error.Code
+       with typings.stripe.mod.Stripe.BankAccount.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.Requirements.Error.Code
        with typings.stripe.mod.Stripe.Person.FutureRequirements.Error.Code
@@ -24944,6 +26072,8 @@ object stripeStrings {
   @js.native
   sealed trait verification_document_type_not_supported
     extends StObject
+       with typings.stripe.mod.Stripe.BankAccount.Requirements.Error.Code
+       with typings.stripe.mod.Stripe.BankAccount.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.Requirements.Error.Code
        with typings.stripe.mod.Stripe.Person.FutureRequirements.Error.Code
@@ -24961,6 +26091,8 @@ object stripeStrings {
   @js.native
   sealed trait verification_failed_address_match
     extends StObject
+       with typings.stripe.mod.Stripe.BankAccount.Requirements.Error.Code
+       with typings.stripe.mod.Stripe.BankAccount.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.Requirements.Error.Code
        with typings.stripe.mod.Stripe.Person.FutureRequirements.Error.Code
@@ -24972,6 +26104,8 @@ object stripeStrings {
   @js.native
   sealed trait verification_failed_business_iec_number
     extends StObject
+       with typings.stripe.mod.Stripe.BankAccount.Requirements.Error.Code
+       with typings.stripe.mod.Stripe.BankAccount.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.Requirements.Error.Code
        with typings.stripe.mod.Stripe.Person.FutureRequirements.Error.Code
@@ -24983,6 +26117,8 @@ object stripeStrings {
   @js.native
   sealed trait verification_failed_document_match
     extends StObject
+       with typings.stripe.mod.Stripe.BankAccount.Requirements.Error.Code
+       with typings.stripe.mod.Stripe.BankAccount.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.Requirements.Error.Code
        with typings.stripe.mod.Stripe.Person.FutureRequirements.Error.Code
@@ -24994,6 +26130,8 @@ object stripeStrings {
   @js.native
   sealed trait verification_failed_id_number_match
     extends StObject
+       with typings.stripe.mod.Stripe.BankAccount.Requirements.Error.Code
+       with typings.stripe.mod.Stripe.BankAccount.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.Requirements.Error.Code
        with typings.stripe.mod.Stripe.Person.FutureRequirements.Error.Code
@@ -25005,6 +26143,8 @@ object stripeStrings {
   @js.native
   sealed trait verification_failed_keyed_identity
     extends StObject
+       with typings.stripe.mod.Stripe.BankAccount.Requirements.Error.Code
+       with typings.stripe.mod.Stripe.BankAccount.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.Requirements.Error.Code
        with typings.stripe.mod.Stripe.Person.FutureRequirements.Error.Code
@@ -25016,6 +26156,8 @@ object stripeStrings {
   @js.native
   sealed trait verification_failed_keyed_match
     extends StObject
+       with typings.stripe.mod.Stripe.BankAccount.Requirements.Error.Code
+       with typings.stripe.mod.Stripe.BankAccount.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.Requirements.Error.Code
        with typings.stripe.mod.Stripe.Person.FutureRequirements.Error.Code
@@ -25027,6 +26169,8 @@ object stripeStrings {
   @js.native
   sealed trait verification_failed_name_match
     extends StObject
+       with typings.stripe.mod.Stripe.BankAccount.Requirements.Error.Code
+       with typings.stripe.mod.Stripe.BankAccount.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.Requirements.Error.Code
        with typings.stripe.mod.Stripe.Person.FutureRequirements.Error.Code
@@ -25038,6 +26182,8 @@ object stripeStrings {
   @js.native
   sealed trait verification_failed_other
     extends StObject
+       with typings.stripe.mod.Stripe.BankAccount.Requirements.Error.Code
+       with typings.stripe.mod.Stripe.BankAccount.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.Requirements.Error.Code
        with typings.stripe.mod.Stripe.Person.FutureRequirements.Error.Code
@@ -25049,6 +26195,8 @@ object stripeStrings {
   @js.native
   sealed trait verification_failed_residential_address
     extends StObject
+       with typings.stripe.mod.Stripe.BankAccount.Requirements.Error.Code
+       with typings.stripe.mod.Stripe.BankAccount.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.Requirements.Error.Code
        with typings.stripe.mod.Stripe.Person.FutureRequirements.Error.Code
@@ -25060,6 +26208,8 @@ object stripeStrings {
   @js.native
   sealed trait verification_failed_tax_id_match
     extends StObject
+       with typings.stripe.mod.Stripe.BankAccount.Requirements.Error.Code
+       with typings.stripe.mod.Stripe.BankAccount.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.Requirements.Error.Code
        with typings.stripe.mod.Stripe.Person.FutureRequirements.Error.Code
@@ -25071,6 +26221,8 @@ object stripeStrings {
   @js.native
   sealed trait verification_failed_tax_id_not_issued
     extends StObject
+       with typings.stripe.mod.Stripe.BankAccount.Requirements.Error.Code
+       with typings.stripe.mod.Stripe.BankAccount.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.Requirements.Error.Code
        with typings.stripe.mod.Stripe.Person.FutureRequirements.Error.Code
@@ -25082,6 +26234,8 @@ object stripeStrings {
   @js.native
   sealed trait verification_missing_executives
     extends StObject
+       with typings.stripe.mod.Stripe.BankAccount.Requirements.Error.Code
+       with typings.stripe.mod.Stripe.BankAccount.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.Requirements.Error.Code
        with typings.stripe.mod.Stripe.Person.FutureRequirements.Error.Code
@@ -25093,6 +26247,8 @@ object stripeStrings {
   @js.native
   sealed trait verification_missing_owners
     extends StObject
+       with typings.stripe.mod.Stripe.BankAccount.Requirements.Error.Code
+       with typings.stripe.mod.Stripe.BankAccount.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.Requirements.Error.Code
        with typings.stripe.mod.Stripe.Person.FutureRequirements.Error.Code
@@ -25104,6 +26260,8 @@ object stripeStrings {
   @js.native
   sealed trait verification_requires_additional_memorandum_of_associations
     extends StObject
+       with typings.stripe.mod.Stripe.BankAccount.Requirements.Error.Code
+       with typings.stripe.mod.Stripe.BankAccount.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.FutureRequirements.Error.Code
        with typings.stripe.mod.Stripe.Account.Requirements.Error.Code
        with typings.stripe.mod.Stripe.Person.FutureRequirements.Error.Code
@@ -25413,13 +26571,10 @@ object stripeStrings {
   sealed trait web
     extends StObject
        with Client
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.WechatPay.Client
-       with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.WechatPay.Client
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.WechatPay.Client
        with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.PaymentMethodOptions.WechatPay.Client
        with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.WechatPay.Client
        with typings.stripe.mod.Stripe.PaymentIntent.PaymentMethodOptions.WechatPay.Client
-       with typings.stripe.mod.Stripe.Order.Payment.Settings.PaymentMethodOptions.WechatPay.Client
   inline def web: web = "web".asInstanceOf[web]
   
   @js.native
@@ -25460,8 +26615,6 @@ object stripeStrings {
   @js.native
   sealed trait wechat_pay
     extends StObject
-       with typings.stripe.mod.Stripe.OrderCreateParams.Payment.Settings.PaymentMethodType
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodType
        with PaymentMethodType
        with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.PaymentMethodType
        with typings.stripe.mod.Stripe.Subscription.PaymentSettings.PaymentMethodType
@@ -25469,7 +26622,6 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.SubscriptionUpdateParams.PaymentSettings.PaymentMethodType
        with typings.stripe.mod.Stripe.InvoiceCreateParams.PaymentSettings.PaymentMethodType
        with typings.stripe.mod.Stripe.SubscriptionCreateParams.PaymentSettings.PaymentMethodType
-       with typings.stripe.mod.Stripe.Order.Payment.Settings.PaymentMethodType
        with typings.stripe.mod.Stripe.PaymentLinkUpdateParams.PaymentMethodType
        with typings.stripe.mod.Stripe.InvoiceUpdateParams.PaymentSettings.PaymentMethodType
        with typings.stripe.mod.Stripe.PaymentLink.PaymentMethodType
@@ -25527,11 +26679,11 @@ object stripeStrings {
        with typings.stripe.mod.Stripe.SetupIntent.PaymentMethodOptions.Blik.MandateOptions.OffSession.Interval
        with typings.stripe.mod.Stripe.SetupIntent.PaymentMethodOptions.Card.MandateOptions.Interval
        with Unit
-       with typings.stripe.mod.Stripe.OrderCreateParams.ShippingCost.ShippingRateData.DeliveryEstimate.Maximum.Unit
-       with typings.stripe.mod.Stripe.OrderUpdateParams.ShippingCost.ShippingRateData.DeliveryEstimate.Minimum.Unit
-       with typings.stripe.mod.Stripe.OrderUpdateParams.ShippingCost.ShippingRateData.DeliveryEstimate.Maximum.Unit
-       with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.ShippingOption.ShippingRateData.DeliveryEstimate.Minimum.Unit
        with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.ShippingOption.ShippingRateData.DeliveryEstimate.Maximum.Unit
+       with typings.stripe.mod.Stripe.InvoiceCreateParams.ShippingCost.ShippingRateData.DeliveryEstimate.Minimum.Unit
+       with typings.stripe.mod.Stripe.InvoiceCreateParams.ShippingCost.ShippingRateData.DeliveryEstimate.Maximum.Unit
+       with typings.stripe.mod.Stripe.InvoiceUpdateParams.ShippingCost.ShippingRateData.DeliveryEstimate.Minimum.Unit
+       with typings.stripe.mod.Stripe.InvoiceUpdateParams.ShippingCost.ShippingRateData.DeliveryEstimate.Maximum.Unit
        with typings.stripe.mod.Stripe.ShippingRateCreateParams.DeliveryEstimate.Minimum.Unit
        with typings.stripe.mod.Stripe.ShippingRateCreateParams.DeliveryEstimate.Maximum.Unit
        with typings.stripe.mod.Stripe.ShippingRate.DeliveryEstimate.Minimum.Unit
@@ -25769,16 +26921,31 @@ object stripeStrings {
   inline def yearly: yearly = "yearly".asInstanceOf[yearly]
   
   @js.native
+  sealed trait yoursafe
+    extends StObject
+       with Bank
+       with typings.stripe.mod.Stripe.PaymentMethod.Ideal.Bank
+       with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodData.Ideal.Bank
+       with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodData.Ideal.Bank
+       with typings.stripe.mod.Stripe.PaymentMethodCreateParams.Ideal.Bank
+       with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodData.Ideal.Bank
+       with typings.stripe.mod.Stripe.SetupAttempt.PaymentMethodDetails.Ideal.Bank
+       with typings.stripe.mod.Stripe.Charge.PaymentMethodDetails.Ideal.Bank
+       with typings.stripe.mod.Stripe.SetupIntentConfirmParams.PaymentMethodData.Ideal.Bank
+       with typings.stripe.mod.Stripe.SetupIntentCreateParams.PaymentMethodData.Ideal.Bank
+  inline def yoursafe: yoursafe = "yoursafe".asInstanceOf[yoursafe]
+  
+  @js.native
   sealed trait za_vat
     extends StObject
        with typings.stripe.mod.Stripe.CustomerCreateParams.TaxIdDatum.Type
-       with typings.stripe.mod.Stripe.OrderCreateParams.TaxDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.OrderUpdateParams.TaxDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Invoice.CustomerTaxId.Type
        with typings.stripe.mod.Stripe.InvoiceRetrieveUpcomingParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.InvoiceListUpcomingLinesParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.Checkout.Session.CustomerDetails.TaxId.Type
-       with typings.stripe.mod.Stripe.Order.TaxDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Transaction.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.Calculation.CustomerDetails.TaxId.Type
+       with typings.stripe.mod.Stripe.Tax.CalculationCreateParams.CustomerDetails.TaxId.Type
        with typings.stripe.mod.Stripe.TaxIdCreateParams.Type
        with typings.stripe.mod.Stripe.TaxId.Type
   inline def za_vat: za_vat = "za_vat".asInstanceOf[za_vat]
@@ -25787,20 +26954,37 @@ object stripeStrings {
   sealed trait zengin
     extends StObject
        with RequestedAddressType
-       with typings.stripe.mod.Stripe.OrderCreateParams.Payment.Settings.PaymentMethodOptions.CustomerBalance.BankTransfer.RequestedAddressType
-       with typings.stripe.mod.Stripe.OrderUpdateParams.Payment.Settings.PaymentMethodOptions.CustomerBalance.BankTransfer.RequestedAddressType
        with typings.stripe.mod.Stripe.PaymentIntentUpdateParams.PaymentMethodOptions.CustomerBalance.BankTransfer.RequestedAddressType
        with typings.stripe.mod.Stripe.PaymentIntentCreateParams.PaymentMethodOptions.CustomerBalance.BankTransfer.RequestedAddressType
        with typings.stripe.mod.Stripe.Checkout.SessionCreateParams.PaymentMethodOptions.CustomerBalance.BankTransfer.RequestedAddressType
        with typings.stripe.mod.Stripe.Checkout.Session.PaymentMethodOptions.CustomerBalance.BankTransfer.RequestedAddressType
        with typings.stripe.mod.Stripe.PaymentIntentConfirmParams.PaymentMethodOptions.CustomerBalance.BankTransfer.RequestedAddressType
        with typings.stripe.mod.Stripe.PaymentIntent.PaymentMethodOptions.CustomerBalance.BankTransfer.RequestedAddressType
-       with typings.stripe.mod.Stripe.Order.Payment.Settings.PaymentMethodOptions.CustomerBalance.BankTransfer.RequestedAddressType
        with typings.stripe.mod.Stripe.PaymentIntent.NextAction.DisplayBankTransferInstructions.FinancialAddress.SupportedNetwork
        with typings.stripe.mod.Stripe.FundingInstructions.BankTransfer.FinancialAddress.SupportedNetwork
        with typings.stripe.mod.Stripe.PaymentIntent.NextAction.DisplayBankTransferInstructions.FinancialAddress.Type
        with typings.stripe.mod.Stripe.FundingInstructions.BankTransfer.FinancialAddress.Type
   inline def zengin: zengin = "zengin".asInstanceOf[zengin]
+  
+  @js.native
+  sealed trait zero_rated
+    extends StObject
+       with TaxabilityReason
+       with typings.stripe.mod.Stripe.Quote.Computed.Recurring.TotalDetails.Breakdown.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.Quote.TotalDetails.Breakdown.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.LineItem.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.Invoice.TotalTaxAmount.TaxabilityReason
+       with typings.stripe.mod.Stripe.Invoice.ShippingCost.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.Checkout.Session.TotalDetails.Breakdown.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.Checkout.Session.ShippingCost.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.Tax.Transaction.ShippingCost.TaxBreakdown.TaxabilityReason
+       with typings.stripe.mod.Stripe.Tax.Calculation.ShippingCost.TaxBreakdown.TaxabilityReason
+       with typings.stripe.mod.Stripe.Tax.CalculationLineItem.TaxBreakdown.TaxabilityReason
+       with typings.stripe.mod.Stripe.CreditNote.TaxAmount.TaxabilityReason
+       with typings.stripe.mod.Stripe.CreditNote.ShippingCost.Tax.TaxabilityReason
+       with typings.stripe.mod.Stripe.CreditNoteLineItem.TaxAmount.TaxabilityReason
+       with typings.stripe.mod.Stripe.InvoiceLineItem.TaxAmount.TaxabilityReason
+  inline def zero_rated: zero_rated = "zero_rated".asInstanceOf[zero_rated]
   
   @js.native
   sealed trait zh

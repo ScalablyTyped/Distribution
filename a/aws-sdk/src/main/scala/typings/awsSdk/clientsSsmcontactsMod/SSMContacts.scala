@@ -43,12 +43,12 @@ trait SSMContacts extends Service {
   var config_SSMContacts: ConfigBase & ClientConfiguration = js.native
   
   /**
-    * Contacts are either the contacts that Incident Manager engages during an incident or the escalation plans that Incident Manager uses to engage contacts in phases during an incident. 
+    * Contacts are either the contacts that Incident Manager engages during an incident or the escalation plans that Incident Manager uses to engage contacts in phases during an incident.
     */
   def createContact(): Request[CreateContactResult, AWSError] = js.native
   def createContact(callback: js.Function2[/* err */ AWSError, /* data */ CreateContactResult, Unit]): Request[CreateContactResult, AWSError] = js.native
   /**
-    * Contacts are either the contacts that Incident Manager engages during an incident or the escalation plans that Incident Manager uses to engage contacts in phases during an incident. 
+    * Contacts are either the contacts that Incident Manager engages during an incident or the escalation plans that Incident Manager uses to engage contacts in phases during an incident.
     */
   def createContact(params: CreateContactRequest): Request[CreateContactResult, AWSError] = js.native
   def createContact(
@@ -69,6 +69,34 @@ trait SSMContacts extends Service {
     params: CreateContactChannelRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateContactChannelResult, Unit]
   ): Request[CreateContactChannelResult, AWSError] = js.native
+  
+  /**
+    * Creates a rotation in an on-call schedule.
+    */
+  def createRotation(): Request[CreateRotationResult, AWSError] = js.native
+  def createRotation(callback: js.Function2[/* err */ AWSError, /* data */ CreateRotationResult, Unit]): Request[CreateRotationResult, AWSError] = js.native
+  /**
+    * Creates a rotation in an on-call schedule.
+    */
+  def createRotation(params: CreateRotationRequest): Request[CreateRotationResult, AWSError] = js.native
+  def createRotation(
+    params: CreateRotationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateRotationResult, Unit]
+  ): Request[CreateRotationResult, AWSError] = js.native
+  
+  /**
+    * Creates an override for a rotation in an on-call schedule.
+    */
+  def createRotationOverride(): Request[CreateRotationOverrideResult, AWSError] = js.native
+  def createRotationOverride(callback: js.Function2[/* err */ AWSError, /* data */ CreateRotationOverrideResult, Unit]): Request[CreateRotationOverrideResult, AWSError] = js.native
+  /**
+    * Creates an override for a rotation in an on-call schedule.
+    */
+  def createRotationOverride(params: CreateRotationOverrideRequest): Request[CreateRotationOverrideResult, AWSError] = js.native
+  def createRotationOverride(
+    params: CreateRotationOverrideRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateRotationOverrideResult, Unit]
+  ): Request[CreateRotationOverrideResult, AWSError] = js.native
   
   /**
     * To no longer receive Incident Manager engagements to a contact channel, you can deactivate the channel.
@@ -111,6 +139,34 @@ trait SSMContacts extends Service {
     params: DeleteContactChannelRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteContactChannelResult, Unit]
   ): Request[DeleteContactChannelResult, AWSError] = js.native
+  
+  /**
+    * Deletes a rotation from the system. If a rotation belongs to more than one on-call schedule, this operation deletes it from all of them.
+    */
+  def deleteRotation(): Request[DeleteRotationResult, AWSError] = js.native
+  def deleteRotation(callback: js.Function2[/* err */ AWSError, /* data */ DeleteRotationResult, Unit]): Request[DeleteRotationResult, AWSError] = js.native
+  /**
+    * Deletes a rotation from the system. If a rotation belongs to more than one on-call schedule, this operation deletes it from all of them.
+    */
+  def deleteRotation(params: DeleteRotationRequest): Request[DeleteRotationResult, AWSError] = js.native
+  def deleteRotation(
+    params: DeleteRotationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteRotationResult, Unit]
+  ): Request[DeleteRotationResult, AWSError] = js.native
+  
+  /**
+    * Deletes an existing override for an on-call rotation.
+    */
+  def deleteRotationOverride(): Request[DeleteRotationOverrideResult, AWSError] = js.native
+  def deleteRotationOverride(callback: js.Function2[/* err */ AWSError, /* data */ DeleteRotationOverrideResult, Unit]): Request[DeleteRotationOverrideResult, AWSError] = js.native
+  /**
+    * Deletes an existing override for an on-call rotation.
+    */
+  def deleteRotationOverride(params: DeleteRotationOverrideRequest): Request[DeleteRotationOverrideResult, AWSError] = js.native
+  def deleteRotationOverride(
+    params: DeleteRotationOverrideRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteRotationOverrideResult, Unit]
+  ): Request[DeleteRotationOverrideResult, AWSError] = js.native
   
   /**
     * Incident Manager uses engagements to engage contacts and escalation plans during an incident. Use this command to describe the engagement that occurred during an incident.
@@ -183,6 +239,34 @@ trait SSMContacts extends Service {
   ): Request[GetContactPolicyResult, AWSError] = js.native
   
   /**
+    * Retrieves information about an on-call rotation.
+    */
+  def getRotation(): Request[GetRotationResult, AWSError] = js.native
+  def getRotation(callback: js.Function2[/* err */ AWSError, /* data */ GetRotationResult, Unit]): Request[GetRotationResult, AWSError] = js.native
+  /**
+    * Retrieves information about an on-call rotation.
+    */
+  def getRotation(params: GetRotationRequest): Request[GetRotationResult, AWSError] = js.native
+  def getRotation(
+    params: GetRotationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetRotationResult, Unit]
+  ): Request[GetRotationResult, AWSError] = js.native
+  
+  /**
+    * Retrieves information about an override to an on-call rotation.
+    */
+  def getRotationOverride(): Request[GetRotationOverrideResult, AWSError] = js.native
+  def getRotationOverride(callback: js.Function2[/* err */ AWSError, /* data */ GetRotationOverrideResult, Unit]): Request[GetRotationOverrideResult, AWSError] = js.native
+  /**
+    * Retrieves information about an override to an on-call rotation.
+    */
+  def getRotationOverride(params: GetRotationOverrideRequest): Request[GetRotationOverrideResult, AWSError] = js.native
+  def getRotationOverride(
+    params: GetRotationOverrideRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetRotationOverrideResult, Unit]
+  ): Request[GetRotationOverrideResult, AWSError] = js.native
+  
+  /**
     * Lists all contact channels for the specified contact.
     */
   def listContactChannels(): Request[ListContactChannelsResult, AWSError] = js.native
@@ -225,18 +309,32 @@ trait SSMContacts extends Service {
   ): Request[ListEngagementsResult, AWSError] = js.native
   
   /**
-    * Lists all of the engagements to contact channels that have been acknowledged. 
+    * Lists all of the engagements to contact channels that have been acknowledged.
     */
   def listPageReceipts(): Request[ListPageReceiptsResult, AWSError] = js.native
   def listPageReceipts(callback: js.Function2[/* err */ AWSError, /* data */ ListPageReceiptsResult, Unit]): Request[ListPageReceiptsResult, AWSError] = js.native
   /**
-    * Lists all of the engagements to contact channels that have been acknowledged. 
+    * Lists all of the engagements to contact channels that have been acknowledged.
     */
   def listPageReceipts(params: ListPageReceiptsRequest): Request[ListPageReceiptsResult, AWSError] = js.native
   def listPageReceipts(
     params: ListPageReceiptsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListPageReceiptsResult, Unit]
   ): Request[ListPageReceiptsResult, AWSError] = js.native
+  
+  /**
+    * Returns the resolution path of an engagement. For example, the escalation plan engaged in an incident might target an on-call schedule that includes several contacts in a rotation, but just one contact on-call when the incident starts. The resolution path indicates the hierarchy of escalation plan &gt; on-call schedule &gt; contact.
+    */
+  def listPageResolutions(): Request[ListPageResolutionsResult, AWSError] = js.native
+  def listPageResolutions(callback: js.Function2[/* err */ AWSError, /* data */ ListPageResolutionsResult, Unit]): Request[ListPageResolutionsResult, AWSError] = js.native
+  /**
+    * Returns the resolution path of an engagement. For example, the escalation plan engaged in an incident might target an on-call schedule that includes several contacts in a rotation, but just one contact on-call when the incident starts. The resolution path indicates the hierarchy of escalation plan &gt; on-call schedule &gt; contact.
+    */
+  def listPageResolutions(params: ListPageResolutionsRequest): Request[ListPageResolutionsResult, AWSError] = js.native
+  def listPageResolutions(
+    params: ListPageResolutionsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListPageResolutionsResult, Unit]
+  ): Request[ListPageResolutionsResult, AWSError] = js.native
   
   /**
     * Lists the engagements to a contact's contact channels.
@@ -265,6 +363,62 @@ trait SSMContacts extends Service {
     params: ListPagesByEngagementRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListPagesByEngagementResult, Unit]
   ): Request[ListPagesByEngagementResult, AWSError] = js.native
+  
+  /**
+    * Returns a list of shifts based on rotation configuration parameters.  The Incident Manager primarily uses this operation to populate the Preview calendar. It is not typically run by end users. 
+    */
+  def listPreviewRotationShifts(): Request[ListPreviewRotationShiftsResult, AWSError] = js.native
+  def listPreviewRotationShifts(callback: js.Function2[/* err */ AWSError, /* data */ ListPreviewRotationShiftsResult, Unit]): Request[ListPreviewRotationShiftsResult, AWSError] = js.native
+  /**
+    * Returns a list of shifts based on rotation configuration parameters.  The Incident Manager primarily uses this operation to populate the Preview calendar. It is not typically run by end users. 
+    */
+  def listPreviewRotationShifts(params: ListPreviewRotationShiftsRequest): Request[ListPreviewRotationShiftsResult, AWSError] = js.native
+  def listPreviewRotationShifts(
+    params: ListPreviewRotationShiftsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListPreviewRotationShiftsResult, Unit]
+  ): Request[ListPreviewRotationShiftsResult, AWSError] = js.native
+  
+  /**
+    * Retrieves a list of overrides currently specified for an on-call rotation.
+    */
+  def listRotationOverrides(): Request[ListRotationOverridesResult, AWSError] = js.native
+  def listRotationOverrides(callback: js.Function2[/* err */ AWSError, /* data */ ListRotationOverridesResult, Unit]): Request[ListRotationOverridesResult, AWSError] = js.native
+  /**
+    * Retrieves a list of overrides currently specified for an on-call rotation.
+    */
+  def listRotationOverrides(params: ListRotationOverridesRequest): Request[ListRotationOverridesResult, AWSError] = js.native
+  def listRotationOverrides(
+    params: ListRotationOverridesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListRotationOverridesResult, Unit]
+  ): Request[ListRotationOverridesResult, AWSError] = js.native
+  
+  /**
+    * Returns a list of shifts generated by an existing rotation in the system.
+    */
+  def listRotationShifts(): Request[ListRotationShiftsResult, AWSError] = js.native
+  def listRotationShifts(callback: js.Function2[/* err */ AWSError, /* data */ ListRotationShiftsResult, Unit]): Request[ListRotationShiftsResult, AWSError] = js.native
+  /**
+    * Returns a list of shifts generated by an existing rotation in the system.
+    */
+  def listRotationShifts(params: ListRotationShiftsRequest): Request[ListRotationShiftsResult, AWSError] = js.native
+  def listRotationShifts(
+    params: ListRotationShiftsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListRotationShiftsResult, Unit]
+  ): Request[ListRotationShiftsResult, AWSError] = js.native
+  
+  /**
+    * Retrieves a list of on-call rotations.
+    */
+  def listRotations(): Request[ListRotationsResult, AWSError] = js.native
+  def listRotations(callback: js.Function2[/* err */ AWSError, /* data */ ListRotationsResult, Unit]): Request[ListRotationsResult, AWSError] = js.native
+  /**
+    * Retrieves a list of on-call rotations.
+    */
+  def listRotations(params: ListRotationsRequest): Request[ListRotationsResult, AWSError] = js.native
+  def listRotations(
+    params: ListRotationsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListRotationsResult, Unit]
+  ): Request[ListRotationsResult, AWSError] = js.native
   
   /**
     * Lists the tags of an escalation plan or contact.
@@ -337,12 +491,12 @@ trait SSMContacts extends Service {
   ): Request[StopEngagementResult, AWSError] = js.native
   
   /**
-    * Tags a contact or escalation plan. You can tag only contacts and escalation plans in the first region of your replication set. 
+    * Tags a contact or escalation plan. You can tag only contacts and escalation plans in the first region of your replication set.
     */
   def tagResource(): Request[TagResourceResult, AWSError] = js.native
   def tagResource(callback: js.Function2[/* err */ AWSError, /* data */ TagResourceResult, Unit]): Request[TagResourceResult, AWSError] = js.native
   /**
-    * Tags a contact or escalation plan. You can tag only contacts and escalation plans in the first region of your replication set. 
+    * Tags a contact or escalation plan. You can tag only contacts and escalation plans in the first region of your replication set.
     */
   def tagResource(params: TagResourceRequest): Request[TagResourceResult, AWSError] = js.native
   def tagResource(
@@ -351,12 +505,12 @@ trait SSMContacts extends Service {
   ): Request[TagResourceResult, AWSError] = js.native
   
   /**
-    * Removes tags from the specified resource. 
+    * Removes tags from the specified resource.
     */
   def untagResource(): Request[UntagResourceResult, AWSError] = js.native
   def untagResource(callback: js.Function2[/* err */ AWSError, /* data */ UntagResourceResult, Unit]): Request[UntagResourceResult, AWSError] = js.native
   /**
-    * Removes tags from the specified resource. 
+    * Removes tags from the specified resource.
     */
   def untagResource(params: UntagResourceRequest): Request[UntagResourceResult, AWSError] = js.native
   def untagResource(
@@ -365,12 +519,12 @@ trait SSMContacts extends Service {
   ): Request[UntagResourceResult, AWSError] = js.native
   
   /**
-    * Updates the contact or escalation plan specified. 
+    * Updates the contact or escalation plan specified.
     */
   def updateContact(): Request[UpdateContactResult, AWSError] = js.native
   def updateContact(callback: js.Function2[/* err */ AWSError, /* data */ UpdateContactResult, Unit]): Request[UpdateContactResult, AWSError] = js.native
   /**
-    * Updates the contact or escalation plan specified. 
+    * Updates the contact or escalation plan specified.
     */
   def updateContact(params: UpdateContactRequest): Request[UpdateContactResult, AWSError] = js.native
   def updateContact(
@@ -391,4 +545,18 @@ trait SSMContacts extends Service {
     params: UpdateContactChannelRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateContactChannelResult, Unit]
   ): Request[UpdateContactChannelResult, AWSError] = js.native
+  
+  /**
+    * Updates the information specified for an on-call rotation.
+    */
+  def updateRotation(): Request[UpdateRotationResult, AWSError] = js.native
+  def updateRotation(callback: js.Function2[/* err */ AWSError, /* data */ UpdateRotationResult, Unit]): Request[UpdateRotationResult, AWSError] = js.native
+  /**
+    * Updates the information specified for an on-call rotation.
+    */
+  def updateRotation(params: UpdateRotationRequest): Request[UpdateRotationResult, AWSError] = js.native
+  def updateRotation(
+    params: UpdateRotationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateRotationResult, Unit]
+  ): Request[UpdateRotationResult, AWSError] = js.native
 }

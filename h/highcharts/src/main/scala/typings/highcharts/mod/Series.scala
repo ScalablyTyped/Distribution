@@ -675,15 +675,14 @@ open class Series protected () extends StObject {
   def show(): Unit = js.native
   
   /**
-    * Sonify a series.
+    * Play a sonification of a series.
     *
-    * @param options
-    *        The options for sonifying this series. If not provided, uses
-    *        options set on chart and series.
+    * @param onEnd
+    *        Callback to call after play completed
     */
   def sonify(): Unit = js.native
   def sonify(
-    options: typings.highcharts.modulesSonificationMod.highchartsAugmentingMod.SonifySeriesOptionsObject
+    onEnd: typings.highcharts.modulesSonificationMod.highchartsAugmentingMod.SonificationChartEventCallback
   ): Unit = js.native
   
   /**

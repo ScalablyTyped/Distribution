@@ -1,5 +1,6 @@
 package typings.primereact
 
+import typings.primereact.primereactStrings._empty
 import typings.primereact.primereactStrings.`additions removals`
 import typings.primereact.primereactStrings.`additions text`
 import typings.primereact.primereactStrings.`inline`
@@ -7,11 +8,15 @@ import typings.primereact.primereactStrings.`removals additions`
 import typings.primereact.primereactStrings.`removals text`
 import typings.primereact.primereactStrings.`text additions`
 import typings.primereact.primereactStrings.`text removals`
+import typings.primereact.primereactStrings.`use-credentials`
 import typings.primereact.primereactStrings.additions
 import typings.primereact.primereactStrings.all
+import typings.primereact.primereactStrings.anonymous
 import typings.primereact.primereactStrings.ascending
 import typings.primereact.primereactStrings.assertive
 import typings.primereact.primereactStrings.both
+import typings.primereact.primereactStrings.chip
+import typings.primereact.primereactStrings.comma
 import typings.primereact.primereactStrings.copy
 import typings.primereact.primereactStrings.date
 import typings.primereact.primereactStrings.decimal
@@ -101,6 +106,7 @@ import typings.react.mod.WheelEvent
 import typings.react.mod.WheelEventHandler
 import typings.std.Element
 import typings.std.Event
+import typings.std.FormData
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import typings.std.HTMLInputElement
@@ -118,36 +124,70 @@ object multiselectMultiselectMod {
     def this(props: MultiSelectProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: MultiSelectProps, context: Any) = this()
     
+    /**
+      * Used to focus the component.
+      */
+    def focus(): Unit = js.native
+    
+    /**
+      * Used to get container element.
+      * @return {HTMLDivElement} Container element
+      */
     def getElement(): HTMLDivElement = js.native
     
+    /**
+      * Used to get input element.
+      * @return {HTMLInputElement} Input element
+      */
     def getInput(): HTMLInputElement = js.native
     
+    /**
+      * Used to get overlay element.
+      * @return {HTMLElement} Overlay element
+      */
     def getOverlay(): HTMLElement = js.native
     
+    /**
+      * Used to hide the overlay.
+      */
     def hide(): Unit = js.native
     
+    /**
+      * Used to show the overlay.
+      */
     def show(): Unit = js.native
   }
   
-  trait MultiSelectAllParams extends StObject {
+  /**
+    * Custom select event.
+    * @see {@link MultiSelectProps.onSelectAll}
+    * @event
+    */
+  trait MultiSelectAllEvent extends StObject {
     
+    /**
+      * Whether all data is selected.
+      */
     var checked: Boolean
     
+    /**
+      * Browser event.
+      */
     var originalEvent: SyntheticEvent[Element, Event]
   }
-  object MultiSelectAllParams {
+  object MultiSelectAllEvent {
     
-    inline def apply(checked: Boolean, originalEvent: SyntheticEvent[Element, Event]): MultiSelectAllParams = {
+    inline def apply(checked: Boolean, originalEvent: SyntheticEvent[Element, Event]): MultiSelectAllEvent = {
       val __obj = js.Dynamic.literal(checked = checked.asInstanceOf[js.Any], originalEvent = originalEvent.asInstanceOf[js.Any])
-      __obj.asInstanceOf[MultiSelectAllParams]
+      __obj.asInstanceOf[MultiSelectAllEvent]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: MultiSelectAllParams] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: MultiSelectAllEvent] (val x: Self) extends AnyVal {
       
       inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
       
@@ -155,21 +195,39 @@ object multiselectMultiselectMod {
     }
   }
   
-  type MultiSelectAppendToType = js.UndefOr[self | HTMLElement | Null]
-  
-  trait MultiSelectChangeParams extends StObject {
+  /**
+    * Custom change event.
+    * @see {@link MultiSelectProps.onChange}
+    * @event
+    */
+  trait MultiSelectChangeEvent extends StObject {
     
+    /**
+      * Browser event
+      */
     var originalEvent: SyntheticEvent[Element, Event]
     
+    /**
+      * Prevents the default action of the event.
+      */
     def preventDefault(): Unit
     
+    /**
+      * Stops the event from propagating.
+      */
     def stopPropagation(): Unit
     
+    /**
+      * Additional information about the event.
+      */
     var target: MultiSelectChangeTargetOptions
     
+    /**
+      * Current selected values
+      */
     var value: Any
   }
-  object MultiSelectChangeParams {
+  object MultiSelectChangeEvent {
     
     inline def apply(
       originalEvent: SyntheticEvent[Element, Event],
@@ -177,13 +235,13 @@ object multiselectMultiselectMod {
       stopPropagation: () => Unit,
       target: MultiSelectChangeTargetOptions,
       value: Any
-    ): MultiSelectChangeParams = {
+    ): MultiSelectChangeEvent = {
       val __obj = js.Dynamic.literal(originalEvent = originalEvent.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.asInstanceOf[MultiSelectChangeParams]
+      __obj.asInstanceOf[MultiSelectChangeEvent]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: MultiSelectChangeParams] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: MultiSelectChangeEvent] (val x: Self) extends AnyVal {
       
       inline def setOriginalEvent(value: SyntheticEvent[Element, Event]): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
@@ -197,12 +255,24 @@ object multiselectMultiselectMod {
     }
   }
   
+  /**
+    * Custom multiselect change target options
+    */
   trait MultiSelectChangeTargetOptions extends StObject {
     
+    /**
+      * Unique identifier of the element.
+      */
     var id: String
     
+    /**
+      * The name of the element.
+      */
     var name: String
     
+    /**
+      * The value of the element.
+      */
     var value: Any
   }
   object MultiSelectChangeTargetOptions {
@@ -223,24 +293,53 @@ object multiselectMultiselectMod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.primereact.primereactStrings.comma
-    - typings.primereact.primereactStrings.chip
-  */
-  trait MultiSelectDisplayType extends StObject
-  object MultiSelectDisplayType {
+  /**
+    * Custom filter event.
+    * @see {@link MultiSelectProps.onFilter}
+    * @event
+    */
+  trait MultiSelectFilterEvent extends StObject {
     
-    inline def chip: typings.primereact.primereactStrings.chip = "chip".asInstanceOf[typings.primereact.primereactStrings.chip]
+    /**
+      * Filter value.
+      */
+    var filter: String
     
-    inline def comma: typings.primereact.primereactStrings.comma = "comma".asInstanceOf[typings.primereact.primereactStrings.comma]
+    /**
+      * Browser event.
+      */
+    var originalEvent: SyntheticEvent[Element, Event]
+  }
+  object MultiSelectFilterEvent {
+    
+    inline def apply(filter: String, originalEvent: SyntheticEvent[Element, Event]): MultiSelectFilterEvent = {
+      val __obj = js.Dynamic.literal(filter = filter.asInstanceOf[js.Any], originalEvent = originalEvent.asInstanceOf[js.Any])
+      __obj.asInstanceOf[MultiSelectFilterEvent]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiSelectFilterEvent] (val x: Self) extends AnyVal {
+      
+      inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+      
+      inline def setOriginalEvent(value: SyntheticEvent[Element, Event]): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+    }
   }
   
-  type MultiSelectEmptyFilterMessageType = ReactNode | (js.Function1[/* props */ MultiSelectProps, ReactNode])
-  
+  /**
+    * Multiselect filter options
+    */
   trait MultiSelectFilterOptions extends StObject {
     
+    /**
+      * Used to filter options
+      * @param {KeyboardEvent} event - Browser event
+      */
     var filter: js.UndefOr[js.Function1[/* event */ js.UndefOr[KeyboardEvent], Unit]] = js.undefined
     
+    /**
+      * Used to reset the filtered options
+      */
     var reset: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object MultiSelectFilterOptions {
@@ -263,45 +362,26 @@ object multiselectMultiselectMod {
     }
   }
   
-  trait MultiSelectFilterParams extends StObject {
-    
-    var filter: String
-    
-    var originalEvent: SyntheticEvent[Element, Event]
-  }
-  object MultiSelectFilterParams {
-    
-    inline def apply(filter: String, originalEvent: SyntheticEvent[Element, Event]): MultiSelectFilterParams = {
-      val __obj = js.Dynamic.literal(filter = filter.asInstanceOf[js.Any], originalEvent = originalEvent.asInstanceOf[js.Any])
-      __obj.asInstanceOf[MultiSelectFilterParams]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: MultiSelectFilterParams] (val x: Self) extends AnyVal {
-      
-      inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
-      
-      inline def setOriginalEvent(value: SyntheticEvent[Element, Event]): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  type MultiSelectFilterTemplateType = ReactNode | (js.Function1[/* options */ MultiSelectFilterOptions, ReactNode])
-  
-  trait MultiSelectHeaderCheckboxChangeParams extends StObject {
+  /**
+    * Custom checkbox change event
+    * @see {@link MultiSelectPanelHeaderTemplateEvent.onChange}
+    * @event
+    */
+  trait MultiSelectHeaderCheckboxChangeEvent extends StObject {
     
     var checked: Boolean
     
     var originalEvent: FormEvent[HTMLInputElement]
   }
-  object MultiSelectHeaderCheckboxChangeParams {
+  object MultiSelectHeaderCheckboxChangeEvent {
     
-    inline def apply(checked: Boolean, originalEvent: FormEvent[HTMLInputElement]): MultiSelectHeaderCheckboxChangeParams = {
+    inline def apply(checked: Boolean, originalEvent: FormEvent[HTMLInputElement]): MultiSelectHeaderCheckboxChangeEvent = {
       val __obj = js.Dynamic.literal(checked = checked.asInstanceOf[js.Any], originalEvent = originalEvent.asInstanceOf[js.Any])
-      __obj.asInstanceOf[MultiSelectHeaderCheckboxChangeParams]
+      __obj.asInstanceOf[MultiSelectHeaderCheckboxChangeEvent]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: MultiSelectHeaderCheckboxChangeParams] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: MultiSelectHeaderCheckboxChangeEvent] (val x: Self) extends AnyVal {
       
       inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
       
@@ -309,39 +389,69 @@ object multiselectMultiselectMod {
     }
   }
   
-  type MultiSelectItemTemplateType = ReactNode | (js.Function1[/* option */ Any, ReactNode])
-  
-  type MultiSelectOptionDisabledType = String | (js.Function1[/* option */ Any, Boolean])
-  
-  type MultiSelectOptionGroupTemplateType = ReactNode | (js.Function2[/* option */ Any, /* index */ Double, ReactNode])
-  
-  type MultiSelectPanelFooterTemplateType = ReactNode | (js.Function2[/* props */ MultiSelectProps, /* hide */ js.Function0[Unit], ReactNode])
-  
-  trait MultiSelectPanelHeaderTemplateParams extends StObject {
+  /**
+    * Custom multiselect panel header template event.
+    */
+  trait MultiSelectPanelHeaderTemplateEvent extends StObject {
     
+    /**
+      * The checkbox element for selecting items.
+      */
     var checkboxElement: HTMLElement
     
+    /**
+      * Whether the checkbox is checked.
+      */
     var checked: Boolean
     
+    /**
+      * The class name for the header element.
+      */
     var className: String
     
+    /**
+      * The close element.
+      */
     var closeElement: typings.react.mod.global.JSX.Element
     
+    /**
+      * The classname for the close element.
+      */
     var closeElementClassName: String
     
+    /**
+      * The classname for the close icon element.
+      */
     var closeIconClassName: String
     
+    /**
+      * The default element created by the component.
+      */
     var element: typings.react.mod.global.JSX.Element
     
+    /**
+      * The element for filtering the items.
+      */
     var filterElement: typings.react.mod.global.JSX.Element
     
-    def onChange(e: MultiSelectHeaderCheckboxChangeParams): Unit
+    /**
+      * Callback function when the checkbox state is changed.
+      * @param {MultiSelectHeaderCheckboxChangeEvent} event - Custom checkbox change event
+      */
+    def onChange(event: MultiSelectHeaderCheckboxChangeEvent): Unit
     
+    /**
+      * Callback function when the close button is clicked.
+      * @param {React.MouseEvent<HTMLElement>} event - Current param
+      */
     def onCloseClick(event: MouseEvent[HTMLElement, NativeMouseEvent]): Unit
     
+    /**
+      * The props of Multiselect component
+      */
     var props: MultiSelectProps
   }
-  object MultiSelectPanelHeaderTemplateParams {
+  object MultiSelectPanelHeaderTemplateEvent {
     
     inline def apply(
       checkboxElement: HTMLElement,
@@ -352,16 +462,16 @@ object multiselectMultiselectMod {
       closeIconClassName: String,
       element: typings.react.mod.global.JSX.Element,
       filterElement: typings.react.mod.global.JSX.Element,
-      onChange: MultiSelectHeaderCheckboxChangeParams => Unit,
+      onChange: MultiSelectHeaderCheckboxChangeEvent => Unit,
       onCloseClick: MouseEvent[HTMLElement, NativeMouseEvent] => Unit,
       props: MultiSelectProps
-    ): MultiSelectPanelHeaderTemplateParams = {
+    ): MultiSelectPanelHeaderTemplateEvent = {
       val __obj = js.Dynamic.literal(checkboxElement = checkboxElement.asInstanceOf[js.Any], checked = checked.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], closeElement = closeElement.asInstanceOf[js.Any], closeElementClassName = closeElementClassName.asInstanceOf[js.Any], closeIconClassName = closeIconClassName.asInstanceOf[js.Any], element = element.asInstanceOf[js.Any], filterElement = filterElement.asInstanceOf[js.Any], onChange = js.Any.fromFunction1(onChange), onCloseClick = js.Any.fromFunction1(onCloseClick), props = props.asInstanceOf[js.Any])
-      __obj.asInstanceOf[MultiSelectPanelHeaderTemplateParams]
+      __obj.asInstanceOf[MultiSelectPanelHeaderTemplateEvent]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: MultiSelectPanelHeaderTemplateParams] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: MultiSelectPanelHeaderTemplateEvent] (val x: Self) extends AnyVal {
       
       inline def setCheckboxElement(value: HTMLElement): Self = StObject.set(x, "checkboxElement", value.asInstanceOf[js.Any])
       
@@ -379,15 +489,13 @@ object multiselectMultiselectMod {
       
       inline def setFilterElement(value: typings.react.mod.global.JSX.Element): Self = StObject.set(x, "filterElement", value.asInstanceOf[js.Any])
       
-      inline def setOnChange(value: MultiSelectHeaderCheckboxChangeParams => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: MultiSelectHeaderCheckboxChangeEvent => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
       inline def setOnCloseClick(value: MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onCloseClick", js.Any.fromFunction1(value))
       
       inline def setProps(value: MultiSelectProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     }
   }
-  
-  type MultiSelectPanelHeaderTemplateType = ReactNode | (js.Function1[/* e */ MultiSelectPanelHeaderTemplateParams, ReactNode])
   
   /* Inlined parent std.Omit<react.react.DetailedHTMLProps<react.react.InputHTMLAttributes<std.HTMLDivElement>, std.HTMLDivElement>, 'onChange' | 'ref'> */
   trait MultiSelectProps extends StObject {
@@ -400,7 +508,11 @@ object multiselectMultiselectMod {
     
     var alt: js.UndefOr[String] = js.undefined
     
-    var appendTo: js.UndefOr[MultiSelectAppendToType] = js.undefined
+    /**
+      * DOM element instance where the overlay panel should be mounted. Valid values are any DOM Element and 'self'. The self value is used to render a component where it is located.
+      * @defaultValue document.body
+      */
+    var appendTo: js.UndefOr[self | HTMLElement | Null] = js.undefined
     
     var `aria-activedescendant`: js.UndefOr[String] = js.undefined
     
@@ -500,6 +612,9 @@ object multiselectMultiselectMod {
     
     var `aria-valuetext`: js.UndefOr[String] = js.undefined
     
+    /**
+      * Establishes relationships between the component and label(s) where its value should be one or more element IDs.
+      */
     var ariaLabelledBy: js.UndefOr[String] = js.undefined
     
     var autoCapitalize: js.UndefOr[String] = js.undefined
@@ -514,22 +629,48 @@ object multiselectMultiselectMod {
     
     var capture: js.UndefOr[Boolean | user | environment] = js.undefined
     
+    /**
+      * Icon of the checkbox when checked.
+      */
+    var checkboxIcon: js.UndefOr[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconType<MultiSelectProps> */ Any
+      ] = js.undefined
+    
     var checked: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Used to get the child elements of the component.
+      * @readonly
+      */
     var children: js.UndefOr[ReactNode] = js.undefined
     
+    /**
+      * Style class of the element.
+      */
     var className: js.UndefOr[String] = js.undefined
     
+    /**
+      * Close icon of the multiselect panel header.
+      */
+    var closeIcon: js.UndefOr[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconType<MultiSelectProps> */ Any
+      ] = js.undefined
+    
     var color: js.UndefOr[String] = js.undefined
+    
+    var content: js.UndefOr[String] = js.undefined
     
     var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
     var contextMenu: js.UndefOr[String] = js.undefined
     
-    var crossOrigin: js.UndefOr[String] = js.undefined
+    var crossOrigin: js.UndefOr[anonymous | `use-credentials` | _empty] = js.undefined
     
     var dangerouslySetInnerHTML: js.UndefOr[Html] = js.undefined
     
+    /**
+      * A property to uniquely match the value in options for better performance.
+      */
     var dataKey: js.UndefOr[String] = js.undefined
     
     var datatype: js.UndefOr[String] = js.undefined
@@ -540,37 +681,91 @@ object multiselectMultiselectMod {
     
     var dir: js.UndefOr[String] = js.undefined
     
+    /**
+      * When present, it specifies that the component should be disabled.
+      * @defaultValue false
+      */
     var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var display: js.UndefOr[MultiSelectDisplayType] = js.undefined
+    /**
+      * Used mode to display the selected item. Valid values are 'comma' and 'chip'.
+      * @defaultValue comma
+      */
+    var display: js.UndefOr[comma | chip] = js.undefined
     
     var draggable: js.UndefOr[Booleanish] = js.undefined
     
+    /**
+      * Icon class of the dropdown icon.
+      */
     var dropdownIcon: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconType<MultiSelectProps> */ Any
       ] = js.undefined
     
-    var emptyFilterMessage: js.UndefOr[MultiSelectEmptyFilterMessageType] = js.undefined
+    /**
+      * Template to display when filtering does not return any results.
+      * @defaultValue No records found
+      */
+    var emptyFilterMessage: js.UndefOr[ReactNode | (js.Function1[/* props */ this.type, ReactNode])] = js.undefined
     
     var enterKeyHint: js.UndefOr[enter | done | go | next | previous | search | send] = js.undefined
     
+    /**
+      * When specified, displays an input field to filter the items on keyup.
+      * @defaultValue true
+      */
     var filter: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * When filtering is enabled, filterBy decides which field or fields (comma separated) to search against.
+      * @defaultValue label
+      */
     var filterBy: js.UndefOr[String] = js.undefined
     
+    /**
+      * Icon of the filter icon.
+      */
+    var filterIcon: js.UndefOr[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconType<MultiSelect> */ Any
+      ] = js.undefined
+    
+    /**
+      * Locale to use in filtering. The default locale is the host environment's current locale.
+      * @defaultValue undefined
+      */
     var filterLocale: js.UndefOr[String] = js.undefined
     
+    /**
+      * Defines how the items are filtered, valid values are "contains", (default) "startsWith", "endsWith", "equals" and "notEquals".
+      * @defaultValue contains
+      */
     var filterMatchMode: js.UndefOr[String] = js.undefined
     
+    /**
+      * Placeholder text to show when filter input is empty.
+      */
     var filterPlaceholder: js.UndefOr[String] = js.undefined
     
-    var filterTemplate: js.UndefOr[MultiSelectFilterTemplateType] = js.undefined
+    /**
+      * The template of filter element.
+      */
+    var filterTemplate: js.UndefOr[ReactNode | (js.Function1[/* options */ MultiSelectTemplateOptions, ReactNode])] = js.undefined
     
+    /**
+      * Whether to display selected items in the label section or always display the placeholder as the default label.
+      * @defaultValue false
+      */
     var fixedPlaceholder: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Use flex layout for the items panel.
+      * @defaultValue false
+      */
+    var flex: js.UndefOr[Boolean] = js.undefined
     
     var form: js.UndefOr[String] = js.undefined
     
-    var formAction: js.UndefOr[String] = js.undefined
+    var formAction: js.UndefOr[String | (js.Function1[/* formData */ FormData, Unit])] = js.undefined
     
     var formEncType: js.UndefOr[String] = js.undefined
     
@@ -584,17 +779,44 @@ object multiselectMultiselectMod {
     
     var hidden: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Unique identifier of the element.
+      */
     var id: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Render the items panel inline.
+      * @defaultValue false
+      */
+    var `inline`: js.UndefOr[Boolean] = js.undefined
     
     var inlist: js.UndefOr[Any] = js.undefined
     
+    /**
+      * Identifier of the focusable input.
+      */
     var inputId: js.UndefOr[String] = js.undefined
     
     var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
     
+    /**
+      * Reference of the input element.
+      */
     var inputRef: js.UndefOr[Ref[HTMLSelectElement]] = js.undefined
     
     var is: js.UndefOr[String] = js.undefined
+    
+    /**
+      * The icon displayed in the header when all checkboxes are checked.
+      */
+    var itemCheckboxIcon: js.UndefOr[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconType<MultiSelect> */ Any
+      ] = js.undefined
+    
+    /**
+      * Style class of the items.
+      */
+    var itemClassName: js.UndefOr[String] = js.undefined
     
     var itemID: js.UndefOr[String] = js.undefined
     
@@ -604,7 +826,10 @@ object multiselectMultiselectMod {
     
     var itemScope: js.UndefOr[Boolean] = js.undefined
     
-    var itemTemplate: js.UndefOr[MultiSelectItemTemplateType] = js.undefined
+    /**
+      * Function that gets the option and returns the content for it.
+      */
+    var itemTemplate: js.UndefOr[ReactNode | (js.Function1[/* option */ Any, ReactNode])] = js.undefined
     
     var itemType: js.UndefOr[String] = js.undefined
     
@@ -618,6 +843,9 @@ object multiselectMultiselectMod {
     
     var maxLength: js.UndefOr[Double] = js.undefined
     
+    /**
+      * Decides how many selected item labels to show at most.
+      */
     var maxSelectedLabels: js.UndefOr[Double] = js.undefined
     
     var min: js.UndefOr[Double | String] = js.undefined
@@ -626,6 +854,9 @@ object multiselectMultiselectMod {
     
     var multiple: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Name of the input element.
+      */
     var name: js.UndefOr[String] = js.undefined
     
     var nonce: js.UndefOr[String] = js.undefined
@@ -642,13 +873,21 @@ object multiselectMultiselectMod {
     
     var onBeforeInput: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
     
+    /**
+      * Callback to invoke when the element loses focus.
+      * @param {React.FocusEvent<HTMLInputElement>} event - Browser event.
+      */
     var onBlur: js.UndefOr[js.Function1[/* event */ FocusEvent[HTMLInputElement, Element], Unit]] = js.undefined
     
     var onCanPlay: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
     var onCanPlayThrough: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* e */ MultiSelectChangeParams, Unit]] = js.undefined
+    /**
+      * Callback to invoke when value changes.
+      * @param {MultiSelectChangeEvent} event - Custom change event.
+      */
+    var onChange: js.UndefOr[js.Function1[/* event */ MultiSelectChangeEvent, Unit]] = js.undefined
     
     var onClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
@@ -692,10 +931,21 @@ object multiselectMultiselectMod {
     
     var onError: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
-    var onFilter: js.UndefOr[js.Function1[/* e */ MultiSelectFilterParams, Unit]] = js.undefined
+    /**
+      * Callback to invoke on filtering.
+      * @param {MultiSelectFilterEvent} event - Custom filter event.
+      */
+    var onFilter: js.UndefOr[js.Function1[/* event */ MultiSelectFilterEvent, Unit]] = js.undefined
     
+    /**
+      * Callback to invoke when the element receives focus.
+      * @param {React.FocusEvent<HTMLInputElement>} event - Browser event.
+      */
     var onFocus: js.UndefOr[js.Function1[/* event */ FocusEvent[HTMLInputElement, Element], Unit]] = js.undefined
     
+    /**
+      * Callback to invoke when overlay panel becomes hidden.
+      */
     var onHide: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     var onInput: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
@@ -770,8 +1020,15 @@ object multiselectMultiselectMod {
     
     var onSelect: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
-    var onSelectAll: js.UndefOr[js.Function1[/* e */ MultiSelectAllParams, Unit]] = js.undefined
+    /**
+      * Callback to invoke when all data is selected.
+      * @param {MultiSelectAllEvent} event - Custom select event.
+      */
+    var onSelectAll: js.UndefOr[js.Function1[/* event */ MultiSelectAllEvent, Unit]] = js.undefined
     
+    /**
+      * Callback to invoke when overlay panel becomes visible.
+      */
     var onShow: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     var onStalled: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
@@ -798,30 +1055,76 @@ object multiselectMultiselectMod {
     
     var onWheel: js.UndefOr[WheelEventHandler[HTMLDivElement]] = js.undefined
     
-    var optionDisabled: js.UndefOr[MultiSelectOptionDisabledType] = js.undefined
+    /**
+      * Property name or getter function to use as the disabled flag of an option, defaults to false when not defined.
+      */
+    var optionDisabled: js.UndefOr[String | (js.Function1[/* option */ Any, Boolean])] = js.undefined
     
+    /**
+      * Property name or getter function that refers to the children options of option group.
+      */
     var optionGroupChildren: js.UndefOr[String] = js.undefined
     
+    /**
+      * Property name or getter function to use as the label of an option group.
+      */
     var optionGroupLabel: js.UndefOr[String] = js.undefined
     
-    var optionGroupTemplate: js.UndefOr[MultiSelectOptionGroupTemplateType] = js.undefined
+    /**
+      * Template of an option group item.
+      */
+    var optionGroupTemplate: js.UndefOr[ReactNode | (js.Function2[/* option */ Any, /* index */ Double, ReactNode])] = js.undefined
     
+    /**
+      * Name of the label field of an option when an arbitrary objects instead of SelectItems are used as options.
+      */
     var optionLabel: js.UndefOr[String] = js.undefined
     
+    /**
+      * Property name or getter function to use as the value of an option, defaults to the option itself when not defined.
+      */
     var optionValue: js.UndefOr[String] = js.undefined
     
+    /**
+      * An array of selectitems to display as the available options.
+      */
     var options: js.UndefOr[SelectItemOptionsType] = js.undefined
     
+    /**
+      * Specifies the visibility of the overlay panel.
+      * @defaultValue false
+      */
+    var overlayVisible: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Style class of the overlay panel element.
+      */
     var panelClassName: js.UndefOr[String] = js.undefined
     
-    var panelFooterTemplate: js.UndefOr[MultiSelectPanelFooterTemplateType] = js.undefined
+    /**
+      * Template of the panel footer.
+      */
+    var panelFooterTemplate: js.UndefOr[
+        ReactNode | (js.Function2[/* props */ this.type, /* hide */ js.Function0[Unit], ReactNode])
+      ] = js.undefined
     
-    var panelHeaderTemplate: js.UndefOr[MultiSelectPanelHeaderTemplateType] = js.undefined
+    /**
+      * Template of the panel header.
+      */
+    var panelHeaderTemplate: js.UndefOr[
+        ReactNode | (js.Function1[/* event */ MultiSelectPanelHeaderTemplateEvent, ReactNode])
+      ] = js.undefined
     
+    /**
+      * Inline style of the overlay panel element.
+      */
     var panelStyle: js.UndefOr[CSSProperties] = js.undefined
     
     var pattern: js.UndefOr[String] = js.undefined
     
+    /**
+      * Label to display when there are no selections.
+      */
     var placeholder: js.UndefOr[String] = js.undefined
     
     var prefix: js.UndefOr[String] = js.undefined
@@ -832,34 +1135,71 @@ object multiselectMultiselectMod {
     
     var readOnly: js.UndefOr[Boolean] = js.undefined
     
+    var rel: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Icon of the remove chip element.
+      */
     var removeIcon: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconType<MultiSelectProps> */ Any
       ] = js.undefined
     
     var required: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Clears the filter value when hiding the dropdown.
+      * @defaultValue false
+      */
     var resetFilterOnHide: js.UndefOr[Boolean] = js.undefined
     
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
     
+    var rev: js.UndefOr[String] = js.undefined
+    
     var role: js.UndefOr[AriaRole] = js.undefined
     
+    /**
+      * Height of the viewport in pixels, a scrollbar is defined if height of list exceeds this value.
+      * @defaultValue 200px
+      */
     var scrollHeight: js.UndefOr[String] = js.undefined
     
     var security: js.UndefOr[String] = js.undefined
     
+    /**
+      * Whether all data is selected.
+      * @defaultValue false
+      */
     var selectAll: js.UndefOr[Boolean] = js.undefined
     
-    var selectedItemTemplate: js.UndefOr[MultiSelectSelectedItemTemplateType] = js.undefined
+    /**
+      * Function that gets an item in the value and returns the content for it.
+      */
+    var selectedItemTemplate: js.UndefOr[ReactNode | (js.Function1[/* value */ Any, ReactNode])] = js.undefined
     
+    /**
+      * Label to display after exceeding max selected labels.
+      * @defaultValue {0} items selected
+      */
     var selectedItemsLabel: js.UndefOr[String] = js.undefined
     
+    /**
+      * Number of maximum options that can be selected.
+      */
     var selectionLimit: js.UndefOr[Double] = js.undefined
     
+    /**
+      * When enabled, a clear icon is displayed to clear the value.
+      * @defaultValue false
+      */
     var showClear: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Whether to show the select all checkbox inside the panel's header.
+      * @defaultValue true
+      */
     var showSelectAll: js.UndefOr[Boolean] = js.undefined
     
     var size: js.UndefOr[Double] = js.undefined
@@ -872,20 +1212,35 @@ object multiselectMultiselectMod {
     
     var step: js.UndefOr[Double | String] = js.undefined
     
+    /**
+      * Inline style of the element.
+      */
     var style: js.UndefOr[CSSProperties] = js.undefined
     
     var suppressContentEditableWarning: js.UndefOr[Boolean] = js.undefined
     
     var suppressHydrationWarning: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Index of the element in tabbing order.
+      */
     var tabIndex: js.UndefOr[Double] = js.undefined
     
     var title: js.UndefOr[String] = js.undefined
     
+    /**
+      * Content of the tooltip.
+      */
     var tooltip: js.UndefOr[String] = js.undefined
     
+    /**
+      * Configuration of the tooltip, refer to the tooltip documentation for more information.
+      */
     var tooltipOptions: js.UndefOr[TooltipOptions] = js.undefined
     
+    /**
+      * The properties of CSSTransition can be customized, except for "nodeRef" and "in" properties.
+      */
     var transitionOptions: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSSTransitionProps */ Any
       ] = js.undefined
@@ -898,8 +1253,19 @@ object multiselectMultiselectMod {
     
     var unselectable: js.UndefOr[on | off] = js.undefined
     
+    /**
+      * Whether the option should be used as the value for the select element.
+      */
+    var useOptionAsValue: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Value of the component.
+      */
     var value: js.UndefOr[Any] = js.undefined
     
+    /**
+      * Whether to use the virtualScroller feature. The properties of VirtualScroller component can be used like an object in it.
+      */
     var virtualScrollerOptions: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VirtualScrollerProps */ Any
       ] = js.undefined
@@ -934,7 +1300,7 @@ object multiselectMultiselectMod {
       
       inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
       
-      inline def setAppendTo(value: MultiSelectAppendToType): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
+      inline def setAppendTo(value: self | HTMLElement): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
       
       inline def setAppendToNull: Self = StObject.set(x, "appendTo", null)
       
@@ -1162,6 +1528,12 @@ object multiselectMultiselectMod {
       
       inline def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
       
+      inline def setCheckboxIcon(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconType<MultiSelectProps> */ Any
+      ): Self = StObject.set(x, "checkboxIcon", value.asInstanceOf[js.Any])
+      
+      inline def setCheckboxIconUndefined: Self = StObject.set(x, "checkboxIcon", js.undefined)
+      
       inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
       
       inline def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
@@ -1174,19 +1546,29 @@ object multiselectMultiselectMod {
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
+      inline def setCloseIcon(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconType<MultiSelectProps> */ Any
+      ): Self = StObject.set(x, "closeIcon", value.asInstanceOf[js.Any])
+      
+      inline def setCloseIconUndefined: Self = StObject.set(x, "closeIcon", js.undefined)
+      
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
       inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
       
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      
       inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
       inline def setContextMenuUndefined: Self = StObject.set(x, "contextMenu", js.undefined)
       
-      inline def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+      inline def setCrossOrigin(value: anonymous | `use-credentials` | _empty): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
       
       inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
       
@@ -1220,7 +1602,7 @@ object multiselectMultiselectMod {
       
       inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      inline def setDisplay(value: MultiSelectDisplayType): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+      inline def setDisplay(value: comma | chip): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
       
       inline def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
       
@@ -1234,9 +1616,9 @@ object multiselectMultiselectMod {
       
       inline def setDropdownIconUndefined: Self = StObject.set(x, "dropdownIcon", js.undefined)
       
-      inline def setEmptyFilterMessage(value: MultiSelectEmptyFilterMessageType): Self = StObject.set(x, "emptyFilterMessage", value.asInstanceOf[js.Any])
+      inline def setEmptyFilterMessage(value: ReactNode | (js.Function1[MultiSelectProps, ReactNode])): Self = StObject.set(x, "emptyFilterMessage", value.asInstanceOf[js.Any])
       
-      inline def setEmptyFilterMessageFunction1(value: /* props */ MultiSelectProps => ReactNode): Self = StObject.set(x, "emptyFilterMessage", js.Any.fromFunction1(value))
+      inline def setEmptyFilterMessageFunction1(value: MultiSelectProps => ReactNode): Self = StObject.set(x, "emptyFilterMessage", js.Any.fromFunction1(value))
       
       inline def setEmptyFilterMessageUndefined: Self = StObject.set(x, "emptyFilterMessage", js.undefined)
       
@@ -1250,6 +1632,12 @@ object multiselectMultiselectMod {
       
       inline def setFilterByUndefined: Self = StObject.set(x, "filterBy", js.undefined)
       
+      inline def setFilterIcon(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconType<MultiSelect> */ Any
+      ): Self = StObject.set(x, "filterIcon", value.asInstanceOf[js.Any])
+      
+      inline def setFilterIconUndefined: Self = StObject.set(x, "filterIcon", js.undefined)
+      
       inline def setFilterLocale(value: String): Self = StObject.set(x, "filterLocale", value.asInstanceOf[js.Any])
       
       inline def setFilterLocaleUndefined: Self = StObject.set(x, "filterLocale", js.undefined)
@@ -1262,9 +1650,9 @@ object multiselectMultiselectMod {
       
       inline def setFilterPlaceholderUndefined: Self = StObject.set(x, "filterPlaceholder", js.undefined)
       
-      inline def setFilterTemplate(value: MultiSelectFilterTemplateType): Self = StObject.set(x, "filterTemplate", value.asInstanceOf[js.Any])
+      inline def setFilterTemplate(value: ReactNode | (js.Function1[/* options */ MultiSelectTemplateOptions, ReactNode])): Self = StObject.set(x, "filterTemplate", value.asInstanceOf[js.Any])
       
-      inline def setFilterTemplateFunction1(value: /* options */ MultiSelectFilterOptions => ReactNode): Self = StObject.set(x, "filterTemplate", js.Any.fromFunction1(value))
+      inline def setFilterTemplateFunction1(value: /* options */ MultiSelectTemplateOptions => ReactNode): Self = StObject.set(x, "filterTemplate", js.Any.fromFunction1(value))
       
       inline def setFilterTemplateUndefined: Self = StObject.set(x, "filterTemplate", js.undefined)
       
@@ -1274,9 +1662,15 @@ object multiselectMultiselectMod {
       
       inline def setFixedPlaceholderUndefined: Self = StObject.set(x, "fixedPlaceholder", js.undefined)
       
+      inline def setFlex(value: Boolean): Self = StObject.set(x, "flex", value.asInstanceOf[js.Any])
+      
+      inline def setFlexUndefined: Self = StObject.set(x, "flex", js.undefined)
+      
       inline def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
       
-      inline def setFormAction(value: String): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+      inline def setFormAction(value: String | (js.Function1[/* formData */ FormData, Unit])): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+      
+      inline def setFormActionFunction1(value: /* formData */ FormData => Unit): Self = StObject.set(x, "formAction", js.Any.fromFunction1(value))
       
       inline def setFormActionUndefined: Self = StObject.set(x, "formAction", js.undefined)
       
@@ -1310,6 +1704,10 @@ object multiselectMultiselectMod {
       
       inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
+      inline def setInline(value: Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
+      
+      inline def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
+      
       inline def setInlist(value: Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
       
       inline def setInlistUndefined: Self = StObject.set(x, "inlist", js.undefined)
@@ -1334,6 +1732,16 @@ object multiselectMultiselectMod {
       
       inline def setIsUndefined: Self = StObject.set(x, "is", js.undefined)
       
+      inline def setItemCheckboxIcon(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconType<MultiSelect> */ Any
+      ): Self = StObject.set(x, "itemCheckboxIcon", value.asInstanceOf[js.Any])
+      
+      inline def setItemCheckboxIconUndefined: Self = StObject.set(x, "itemCheckboxIcon", js.undefined)
+      
+      inline def setItemClassName(value: String): Self = StObject.set(x, "itemClassName", value.asInstanceOf[js.Any])
+      
+      inline def setItemClassNameUndefined: Self = StObject.set(x, "itemClassName", js.undefined)
+      
       inline def setItemID(value: String): Self = StObject.set(x, "itemID", value.asInstanceOf[js.Any])
       
       inline def setItemIDUndefined: Self = StObject.set(x, "itemID", js.undefined)
@@ -1350,7 +1758,7 @@ object multiselectMultiselectMod {
       
       inline def setItemScopeUndefined: Self = StObject.set(x, "itemScope", js.undefined)
       
-      inline def setItemTemplate(value: MultiSelectItemTemplateType): Self = StObject.set(x, "itemTemplate", value.asInstanceOf[js.Any])
+      inline def setItemTemplate(value: ReactNode | (js.Function1[/* option */ Any, ReactNode])): Self = StObject.set(x, "itemTemplate", value.asInstanceOf[js.Any])
       
       inline def setItemTemplateFunction1(value: /* option */ Any => ReactNode): Self = StObject.set(x, "itemTemplate", js.Any.fromFunction1(value))
       
@@ -1442,7 +1850,7 @@ object multiselectMultiselectMod {
       
       inline def setOnCanPlayUndefined: Self = StObject.set(x, "onCanPlay", js.undefined)
       
-      inline def setOnChange(value: /* e */ MultiSelectChangeParams => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* event */ MultiSelectChangeEvent => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
@@ -1530,7 +1938,7 @@ object multiselectMultiselectMod {
       
       inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
-      inline def setOnFilter(value: /* e */ MultiSelectFilterParams => Unit): Self = StObject.set(x, "onFilter", js.Any.fromFunction1(value))
+      inline def setOnFilter(value: /* event */ MultiSelectFilterEvent => Unit): Self = StObject.set(x, "onFilter", js.Any.fromFunction1(value))
       
       inline def setOnFilterUndefined: Self = StObject.set(x, "onFilter", js.undefined)
       
@@ -1684,7 +2092,7 @@ object multiselectMultiselectMod {
       
       inline def setOnSelect(value: SyntheticEvent[HTMLDivElement, Event] => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
       
-      inline def setOnSelectAll(value: /* e */ MultiSelectAllParams => Unit): Self = StObject.set(x, "onSelectAll", js.Any.fromFunction1(value))
+      inline def setOnSelectAll(value: /* event */ MultiSelectAllEvent => Unit): Self = StObject.set(x, "onSelectAll", js.Any.fromFunction1(value))
       
       inline def setOnSelectAllUndefined: Self = StObject.set(x, "onSelectAll", js.undefined)
       
@@ -1742,7 +2150,7 @@ object multiselectMultiselectMod {
       
       inline def setOnWheelUndefined: Self = StObject.set(x, "onWheel", js.undefined)
       
-      inline def setOptionDisabled(value: MultiSelectOptionDisabledType): Self = StObject.set(x, "optionDisabled", value.asInstanceOf[js.Any])
+      inline def setOptionDisabled(value: String | (js.Function1[/* option */ Any, Boolean])): Self = StObject.set(x, "optionDisabled", value.asInstanceOf[js.Any])
       
       inline def setOptionDisabledFunction1(value: /* option */ Any => Boolean): Self = StObject.set(x, "optionDisabled", js.Any.fromFunction1(value))
       
@@ -1756,7 +2164,7 @@ object multiselectMultiselectMod {
       
       inline def setOptionGroupLabelUndefined: Self = StObject.set(x, "optionGroupLabel", js.undefined)
       
-      inline def setOptionGroupTemplate(value: MultiSelectOptionGroupTemplateType): Self = StObject.set(x, "optionGroupTemplate", value.asInstanceOf[js.Any])
+      inline def setOptionGroupTemplate(value: ReactNode | (js.Function2[/* option */ Any, /* index */ Double, ReactNode])): Self = StObject.set(x, "optionGroupTemplate", value.asInstanceOf[js.Any])
       
       inline def setOptionGroupTemplateFunction2(value: (/* option */ Any, /* index */ Double) => ReactNode): Self = StObject.set(x, "optionGroupTemplate", js.Any.fromFunction2(value))
       
@@ -1776,19 +2184,23 @@ object multiselectMultiselectMod {
       
       inline def setOptionsVarargs(value: (Any | SelectItem)*): Self = StObject.set(x, "options", js.Array(value*))
       
+      inline def setOverlayVisible(value: Boolean): Self = StObject.set(x, "overlayVisible", value.asInstanceOf[js.Any])
+      
+      inline def setOverlayVisibleUndefined: Self = StObject.set(x, "overlayVisible", js.undefined)
+      
       inline def setPanelClassName(value: String): Self = StObject.set(x, "panelClassName", value.asInstanceOf[js.Any])
       
       inline def setPanelClassNameUndefined: Self = StObject.set(x, "panelClassName", js.undefined)
       
-      inline def setPanelFooterTemplate(value: MultiSelectPanelFooterTemplateType): Self = StObject.set(x, "panelFooterTemplate", value.asInstanceOf[js.Any])
+      inline def setPanelFooterTemplate(value: ReactNode | (js.Function2[MultiSelectProps, /* hide */ js.Function0[Unit], ReactNode])): Self = StObject.set(x, "panelFooterTemplate", value.asInstanceOf[js.Any])
       
-      inline def setPanelFooterTemplateFunction2(value: (/* props */ MultiSelectProps, /* hide */ js.Function0[Unit]) => ReactNode): Self = StObject.set(x, "panelFooterTemplate", js.Any.fromFunction2(value))
+      inline def setPanelFooterTemplateFunction2(value: (MultiSelectProps, /* hide */ js.Function0[Unit]) => ReactNode): Self = StObject.set(x, "panelFooterTemplate", js.Any.fromFunction2(value))
       
       inline def setPanelFooterTemplateUndefined: Self = StObject.set(x, "panelFooterTemplate", js.undefined)
       
-      inline def setPanelHeaderTemplate(value: MultiSelectPanelHeaderTemplateType): Self = StObject.set(x, "panelHeaderTemplate", value.asInstanceOf[js.Any])
+      inline def setPanelHeaderTemplate(value: ReactNode | (js.Function1[/* event */ MultiSelectPanelHeaderTemplateEvent, ReactNode])): Self = StObject.set(x, "panelHeaderTemplate", value.asInstanceOf[js.Any])
       
-      inline def setPanelHeaderTemplateFunction1(value: /* e */ MultiSelectPanelHeaderTemplateParams => ReactNode): Self = StObject.set(x, "panelHeaderTemplate", js.Any.fromFunction1(value))
+      inline def setPanelHeaderTemplateFunction1(value: /* event */ MultiSelectPanelHeaderTemplateEvent => ReactNode): Self = StObject.set(x, "panelHeaderTemplate", js.Any.fromFunction1(value))
       
       inline def setPanelHeaderTemplateUndefined: Self = StObject.set(x, "panelHeaderTemplate", js.undefined)
       
@@ -1820,6 +2232,10 @@ object multiselectMultiselectMod {
       
       inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
       
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      
+      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+      
       inline def setRemoveIcon(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconType<MultiSelectProps> */ Any
       ): Self = StObject.set(x, "removeIcon", value.asInstanceOf[js.Any])
@@ -1842,6 +2258,10 @@ object multiselectMultiselectMod {
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
       
+      inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+      
+      inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
+      
       inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
       inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
@@ -1858,7 +2278,7 @@ object multiselectMultiselectMod {
       
       inline def setSelectAllUndefined: Self = StObject.set(x, "selectAll", js.undefined)
       
-      inline def setSelectedItemTemplate(value: MultiSelectSelectedItemTemplateType): Self = StObject.set(x, "selectedItemTemplate", value.asInstanceOf[js.Any])
+      inline def setSelectedItemTemplate(value: ReactNode | (js.Function1[/* value */ Any, ReactNode])): Self = StObject.set(x, "selectedItemTemplate", value.asInstanceOf[js.Any])
       
       inline def setSelectedItemTemplateFunction1(value: /* value */ Any => ReactNode): Self = StObject.set(x, "selectedItemTemplate", js.Any.fromFunction1(value))
       
@@ -1950,6 +2370,10 @@ object multiselectMultiselectMod {
       
       inline def setUnselectableUndefined: Self = StObject.set(x, "unselectable", js.undefined)
       
+      inline def setUseOptionAsValue(value: Boolean): Self = StObject.set(x, "useOptionAsValue", value.asInstanceOf[js.Any])
+      
+      inline def setUseOptionAsValueUndefined: Self = StObject.set(x, "useOptionAsValue", js.undefined)
+      
       inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
@@ -1970,5 +2394,59 @@ object multiselectMultiselectMod {
     }
   }
   
-  type MultiSelectSelectedItemTemplateType = ReactNode | (js.Function1[/* value */ Any, ReactNode])
+  /**
+    * Custom filter template options.
+    */
+  trait MultiSelectTemplateOptions extends StObject {
+    
+    /**
+      * Style class of the filter.
+      */
+    var className: String
+    
+    /**
+      * The filter element.
+      */
+    var element: HTMLDivElement
+    
+    /**
+      * Style class of the filter icon.
+      */
+    var filterIconClassName: String
+    
+    /**
+      * The filter input options.
+      */
+    var filterOptions: js.UndefOr[MultiSelectFilterOptions] = js.undefined
+    
+    /**
+      * The props of multiselect header.
+      */
+    var props: js.UndefOr[Any] = js.undefined
+  }
+  object MultiSelectTemplateOptions {
+    
+    inline def apply(className: String, element: HTMLDivElement, filterIconClassName: String): MultiSelectTemplateOptions = {
+      val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], element = element.asInstanceOf[js.Any], filterIconClassName = filterIconClassName.asInstanceOf[js.Any])
+      __obj.asInstanceOf[MultiSelectTemplateOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiSelectTemplateOptions] (val x: Self) extends AnyVal {
+      
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      
+      inline def setElement(value: HTMLDivElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      
+      inline def setFilterIconClassName(value: String): Self = StObject.set(x, "filterIconClassName", value.asInstanceOf[js.Any])
+      
+      inline def setFilterOptions(value: MultiSelectFilterOptions): Self = StObject.set(x, "filterOptions", value.asInstanceOf[js.Any])
+      
+      inline def setFilterOptionsUndefined: Self = StObject.set(x, "filterOptions", js.undefined)
+      
+      inline def setProps(value: Any): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      
+      inline def setPropsUndefined: Self = StObject.set(x, "props", js.undefined)
+    }
+  }
 }

@@ -147,6 +147,8 @@ object mod {
     
     def hasFocus(): Boolean = js.native
     
+    var history: History = js.native
+    
     def insertEmbed(index: Double, `type`: String, value: Any): Any = js.native
     def insertEmbed(index: Double, `type`: String, value: Any, source: Sources): Any = js.native
     
@@ -373,6 +375,36 @@ object mod {
     def once_selectionchange(eventName: `selection-change`, handler: SelectionChangeHandler): EventEmitter = js.native
     @JSName("once")
     def once_textchange(eventName: `text-change`, handler: TextChangeHandler): EventEmitter = js.native
+  }
+  
+  trait History extends StObject {
+    
+    def clear(): Unit
+    
+    def cutoff(): Unit
+    
+    def redo(): Unit
+    
+    def undo(): Unit
+  }
+  object History {
+    
+    inline def apply(clear: () => Unit, cutoff: () => Unit, redo: () => Unit, undo: () => Unit): History = {
+      val __obj = js.Dynamic.literal(clear = js.Any.fromFunction0(clear), cutoff = js.Any.fromFunction0(cutoff), redo = js.Any.fromFunction0(redo), undo = js.Any.fromFunction0(undo))
+      __obj.asInstanceOf[History]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: History] (val x: Self) extends AnyVal {
+      
+      inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+      
+      inline def setCutoff(value: () => Unit): Self = StObject.set(x, "cutoff", js.Any.fromFunction0(value))
+      
+      inline def setRedo(value: () => Unit): Self = StObject.set(x, "redo", js.Any.fromFunction0(value))
+      
+      inline def setUndo(value: () => Unit): Self = StObject.set(x, "undo", js.Any.fromFunction0(value))
+    }
   }
   
   trait Key extends StObject {

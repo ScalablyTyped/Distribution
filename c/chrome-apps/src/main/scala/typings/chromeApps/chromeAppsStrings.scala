@@ -8,7 +8,6 @@ import typings.chromeApps.WebView.Events.RequestedPermission
 import typings.chromeApps.WebView.Events.WindowOpenDisposition
 import typings.chromeApps.WebView.ZoomMode
 import typings.chromeApps.chrome.accessibilityFeatures.LevelOfControl
-import typings.chromeApps.chrome.accessibilityFeatures.Scope
 import typings.chromeApps.chrome.audio.DeviceType
 import typings.chromeApps.chrome.audio.StreamType
 import typings.chromeApps.chrome.bluetooth.DeviceFilterType
@@ -21,6 +20,8 @@ import typings.chromeApps.chrome.bluetoothSocket.OnReceiveErrorCode
 import typings.chromeApps.chrome.certificateProvider.Hash
 import typings.chromeApps.chrome.clipboard.ImageType
 import typings.chromeApps.chrome.contextMenus.MediaType
+import typings.chromeApps.chrome.enterprise.platformKeys.Algorithm
+import typings.chromeApps.chrome.enterprise.platformKeys.Scope
 import typings.chromeApps.chrome.extensionTypes.CSSOrigin
 import typings.chromeApps.chrome.extensionTypes.RunAt
 import typings.chromeApps.chrome.fileBrowserHandler.FileBrowserHandleExecuteId
@@ -345,6 +346,12 @@ object chromeAppsStrings {
   @js.native
   sealed trait Disconnected_ extends StObject
   inline def Disconnected_ : Disconnected_ = "Disconnected".asInstanceOf[Disconnected_]
+  
+  @js.native
+  sealed trait ECDSA
+    extends StObject
+       with Algorithm
+  inline def ECDSA: ECDSA = "ECDSA".asInstanceOf[ECDSA]
   
   @js.native
   sealed trait ECDSA_SIGN extends StObject
@@ -696,6 +703,12 @@ object chromeAppsStrings {
   inline def MAC: MAC = "MAC".asInstanceOf[MAC]
   
   @js.native
+  sealed trait MACHINE
+    extends StObject
+       with Scope
+  inline def MACHINE: MACHINE = "MACHINE".asInstanceOf[MACHINE]
+  
+  @js.native
   sealed trait MANAGEMENT_API extends StObject
   inline def MANAGEMENT_API: MANAGEMENT_API = "MANAGEMENT_API".asInstanceOf[MANAGEMENT_API]
   
@@ -1006,6 +1019,12 @@ object chromeAppsStrings {
   inline def RIGHT: RIGHT = "RIGHT".asInstanceOf[RIGHT]
   
   @js.native
+  sealed trait RSA
+    extends StObject
+       with Algorithm
+  inline def RSA: RSA = "RSA".asInstanceOf[RSA]
+  
+  @js.native
   sealed trait RSA_SIGN extends StObject
   inline def RSA_SIGN: RSA_SIGN = "RSA_SIGN".asInstanceOf[RSA_SIGN]
   
@@ -1258,6 +1277,12 @@ object chromeAppsStrings {
   inline def USB: USB = "USB".asInstanceOf[USB]
   
   @js.native
+  sealed trait USER
+    extends StObject
+       with Scope
+  inline def USER: USER = "USER".asInstanceOf[USER]
+  
+  @js.native
   sealed trait Uninitialized
     extends StObject
        with DeviceState
@@ -1270,12 +1295,12 @@ object chromeAppsStrings {
   inline def Unknown_ : Unknown_ = "Unknown".asInstanceOf[Unknown_]
   
   @js.native
-  sealed trait User extends StObject
-  inline def User: User = "User".asInstanceOf[User]
-  
-  @js.native
   sealed trait UserPolicy extends StObject
   inline def UserPolicy: UserPolicy = "UserPolicy".asInstanceOf[UserPolicy]
+  
+  @js.native
+  sealed trait User_ extends StObject
+  inline def User_ : User_ = "User".asInstanceOf[User_]
   
   @js.native
   sealed trait VENDOR extends StObject
@@ -3102,14 +3127,14 @@ object chromeAppsStrings {
   sealed trait incognito_persistent
     extends StObject
        with ChromeSettingScope
-       with Scope
+       with typings.chromeApps.chrome.accessibilityFeatures.Scope
   inline def incognito_persistent: incognito_persistent = "incognito_persistent".asInstanceOf[incognito_persistent]
   
   @js.native
   sealed trait incognito_session_only
     extends StObject
        with ChromeSettingScope
-       with Scope
+       with typings.chromeApps.chrome.accessibilityFeatures.Scope
   inline def incognito_session_only: incognito_session_only = "incognito_session_only".asInstanceOf[incognito_session_only]
   
   @js.native
@@ -4156,14 +4181,14 @@ object chromeAppsStrings {
   sealed trait regular
     extends StObject
        with ChromeSettingScope
-       with Scope
+       with typings.chromeApps.chrome.accessibilityFeatures.Scope
   inline def regular: regular = "regular".asInstanceOf[regular]
   
   @js.native
   sealed trait regular_only
     extends StObject
        with ChromeSettingScope
-       with Scope
+       with typings.chromeApps.chrome.accessibilityFeatures.Scope
   inline def regular_only: regular_only = "regular_only".asInstanceOf[regular_only]
   
   @js.native
@@ -4914,10 +4939,10 @@ object chromeAppsStrings {
   inline def usb_ : usb_ = "usb".asInstanceOf[usb_]
   
   @js.native
-  sealed trait user_
+  sealed trait user__
     extends StObject
        with CSSOrigin
-  inline def user_ : user_ = "user".asInstanceOf[user_]
+  inline def user__ : user__ = "user".asInstanceOf[user__]
   
   @js.native
   sealed trait uz

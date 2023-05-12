@@ -1,7 +1,7 @@
 package typings.three.examplesJsmNodesNodesMod
 
-import typings.three.examplesJsmNodesCoreCodeNodeMod.CodeNodeInclude
-import typings.three.examplesJsmNodesCoreCodeNodeMod.default
+import typings.three.examplesJsmNodesCodeCodeNodeMod.CodeNodeInclude
+import typings.three.examplesJsmNodesCodeCodeNodeMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

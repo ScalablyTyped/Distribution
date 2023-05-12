@@ -30,7 +30,11 @@ object distHighchartsReactMod {
     override def _to: ForwardRefExoticComponent[PropsWithoutRef[Props] & RefAttributes[RefObject]] = ^
   }
   
-  object HighchartsReact {
+  object HighchartsReact extends Shortcut {
+    
+    @JSImport("highcharts-react-official/dist/highcharts-react", "HighchartsReact")
+    @js.native
+    val ^ : ForwardRefExoticComponent[PropsWithoutRef[Props] & RefAttributes[RefObject]] = js.native
     
     trait Props
       extends StObject
@@ -63,7 +67,7 @@ object distHighchartsReactMod {
         * Reference to the chart factory (Default: chart)
         */
       var constructorType: js.UndefOr[
-            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 86, starting with typings.highchartsReactOfficial.highchartsReactOfficialStrings.getMagnitude, typings.highchartsReactOfficial.highchartsReactOfficialStrings.attr, typings.highchartsReactOfficial.highchartsReactOfficialStrings.discardElement */ Any
+            /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 87, starting with typings.highchartsReactOfficial.highchartsReactOfficialStrings.getMagnitude, typings.highchartsReactOfficial.highchartsReactOfficialStrings.attr, typings.highchartsReactOfficial.highchartsReactOfficialStrings.discardElement */ Any
           ] = js.undefined
       
       /**
@@ -113,7 +117,7 @@ object distHighchartsReactMod {
         inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
         
         inline def setConstructorType(
-          value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 86, starting with typings.highchartsReactOfficial.highchartsReactOfficialStrings.getMagnitude, typings.highchartsReactOfficial.highchartsReactOfficialStrings.attr, typings.highchartsReactOfficial.highchartsReactOfficialStrings.discardElement */ Any
+          value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 87, starting with typings.highchartsReactOfficial.highchartsReactOfficialStrings.getMagnitude, typings.highchartsReactOfficial.highchartsReactOfficialStrings.attr, typings.highchartsReactOfficial.highchartsReactOfficialStrings.discardElement */ Any
         ): Self = StObject.set(x, "constructorType", value.asInstanceOf[js.Any])
         
         inline def setConstructorTypeUndefined: Self = StObject.set(x, "constructorType", js.undefined)
@@ -169,5 +173,10 @@ object distHighchartsReactMod {
         inline def setContainer(value: typings.react.mod.RefObject[HTMLDivElement]): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       }
     }
+    
+    type _To = ForwardRefExoticComponent[PropsWithoutRef[Props] & RefAttributes[RefObject]]
+    
+    /* This means you don't have to write `^`, but can instead just say `HighchartsReact.foo` */
+    override def _to: ForwardRefExoticComponent[PropsWithoutRef[Props] & RefAttributes[RefObject]] = ^
   }
 }

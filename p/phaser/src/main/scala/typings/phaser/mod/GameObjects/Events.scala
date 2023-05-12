@@ -15,7 +15,7 @@ object Events {
     */
   @JSImport("phaser", "GameObjects.Events.ADDED_TO_SCENE")
   @js.native
-  val ADDED_TO_SCENE: Any = js.native
+  val ADDED_TO_SCENE: String = js.native
   
   /**
     * The Game Object Destroy Event.
@@ -26,7 +26,7 @@ object Events {
     */
   @JSImport("phaser", "GameObjects.Events.DESTROY")
   @js.native
-  val DESTROY: Any = js.native
+  val DESTROY: String = js.native
   
   /**
     * The Game Object Removed from Scene Event.
@@ -37,7 +37,7 @@ object Events {
     */
   @JSImport("phaser", "GameObjects.Events.REMOVED_FROM_SCENE")
   @js.native
-  val REMOVED_FROM_SCENE: Any = js.native
+  val REMOVED_FROM_SCENE: String = js.native
   
   /**
     * The Video Game Object Complete Event.
@@ -55,7 +55,7 @@ object Events {
     */
   @JSImport("phaser", "GameObjects.Events.VIDEO_COMPLETE")
   @js.native
-  val VIDEO_COMPLETE: Any = js.native
+  val VIDEO_COMPLETE: String = js.native
   
   /**
     * The Video Game Object Created Event.
@@ -68,7 +68,7 @@ object Events {
     */
   @JSImport("phaser", "GameObjects.Events.VIDEO_CREATED")
   @js.native
-  val VIDEO_CREATED: Any = js.native
+  val VIDEO_CREATED: String = js.native
   
   /**
     * The Video Game Object Error Event.
@@ -79,7 +79,23 @@ object Events {
     */
   @JSImport("phaser", "GameObjects.Events.VIDEO_ERROR")
   @js.native
-  val VIDEO_ERROR: Any = js.native
+  val VIDEO_ERROR: String = js.native
+  
+  /**
+    * The Video Game Object Locked Event.
+    * 
+    * This event is dispatched when a Video was attempted to be played, but the browser prevented it
+    * from doing so due to the Media Engagement Interaction policy.
+    * 
+    * If you get this event you will need to wait for the user to interact with the browser before
+    * the video will play. This is a browser security measure to prevent autoplaying videos with
+    * audio. An interaction includes a mouse click, a touch, or a key press.
+    * 
+    * Listen for it from a Video Game Object instance using `Video.on('locked', listener)`.
+    */
+  @JSImport("phaser", "GameObjects.Events.VIDEO_LOCKED")
+  @js.native
+  val VIDEO_LOCKED: String = js.native
   
   /**
     * The Video Game Object Loop Event.
@@ -97,7 +113,7 @@ object Events {
     */
   @JSImport("phaser", "GameObjects.Events.VIDEO_LOOP")
   @js.native
-  val VIDEO_LOOP: Any = js.native
+  val VIDEO_LOOP: String = js.native
   
   /**
     * The Video Game Object Play Event.
@@ -111,7 +127,20 @@ object Events {
     */
   @JSImport("phaser", "GameObjects.Events.VIDEO_PLAY")
   @js.native
-  val VIDEO_PLAY: Any = js.native
+  val VIDEO_PLAY: String = js.native
+  
+  /**
+    * The Video Game Object Playing Event.
+    * 
+    * The playing event is fired after playback is first started,
+    * and whenever it is restarted. For example it is fired when playback
+    * resumes after having been paused or delayed due to lack of data.
+    * 
+    * Listen for it from a Video Game Object instance using `Video.on('playing', listener)`.
+    */
+  @JSImport("phaser", "GameObjects.Events.VIDEO_PLAYING")
+  @js.native
+  val VIDEO_PLAYING: String = js.native
   
   /**
     * The Video Game Object Seeked Event.
@@ -122,7 +151,7 @@ object Events {
     */
   @JSImport("phaser", "GameObjects.Events.VIDEO_SEEKED")
   @js.native
-  val VIDEO_SEEKED: Any = js.native
+  val VIDEO_SEEKED: String = js.native
   
   /**
     * The Video Game Object Seeking Event.
@@ -134,7 +163,30 @@ object Events {
     */
   @JSImport("phaser", "GameObjects.Events.VIDEO_SEEKING")
   @js.native
-  val VIDEO_SEEKING: Any = js.native
+  val VIDEO_SEEKING: String = js.native
+  
+  /**
+    * The Video Game Object Stalled Event.
+    * 
+    * This event is dispatched by a Video Game Object when the video playback stalls.
+    * 
+    * This can happen if the video is buffering.
+    * 
+    * If will fire for any of the following native DOM events:
+    * 
+    * `stalled`
+    * `suspend`
+    * `waiting`
+    * 
+    * Listen for it from a Video Game Object instance using `Video.on('stalled', listener)`.
+    * 
+    * Note that being stalled isn't always a negative thing. A video can be stalled if it
+    * has downloaded enough data in to its buffer to not need to download any more until
+    * the current batch of frames have rendered.
+    */
+  @JSImport("phaser", "GameObjects.Events.VIDEO_STALLED")
+  @js.native
+  val VIDEO_STALLED: String = js.native
   
   /**
     * The Video Game Object Stopped Event.
@@ -146,19 +198,23 @@ object Events {
     */
   @JSImport("phaser", "GameObjects.Events.VIDEO_STOP")
   @js.native
-  val VIDEO_STOP: Any = js.native
+  val VIDEO_STOP: String = js.native
   
   /**
-    * The Video Game Object Timeout Event.
+    * The Video Game Object Texture Ready Event.
     * 
-    * This event is dispatched when a Video has exhausted its allocated time while trying to connect to a video
-    * source to start playback.
+    * This event is dispatched by a Video Game Object when it has finished creating its texture.
     * 
-    * Listen for it from a Video Game Object instance using `Video.on('timeout', listener)`.
+    * This happens when the video has finished loading enough data for its first frame.
+    * 
+    * If you wish to use the Video texture elsewhere in your game, such as as a Sprite texture,
+    * then you should listen for this event first, before creating the Sprites that use it.
+    * 
+    * Listen for it from a Video Game Object instance using `Video.on('textureready', listener)`.
     */
-  @JSImport("phaser", "GameObjects.Events.VIDEO_TIMEOUT")
+  @JSImport("phaser", "GameObjects.Events.VIDEO_TEXTURE")
   @js.native
-  val VIDEO_TIMEOUT: Any = js.native
+  val VIDEO_TEXTURE: String = js.native
   
   /**
     * The Video Game Object Unlocked Event.
@@ -170,5 +226,18 @@ object Events {
     */
   @JSImport("phaser", "GameObjects.Events.VIDEO_UNLOCKED")
   @js.native
-  val VIDEO_UNLOCKED: Any = js.native
+  val VIDEO_UNLOCKED: String = js.native
+  
+  /**
+    * The Video Game Object Unsupported Event.
+    * 
+    * This event is dispatched by a Video Game Object if the media source
+    * (which may be specified as a MediaStream, MediaSource, Blob, or File,
+    * for example) doesn't represent a supported media format.
+    * 
+    * Listen for it from a Video Game Object instance using `Video.on('unsupported', listener)`.
+    */
+  @JSImport("phaser", "GameObjects.Events.VIDEO_UNSUPPORTED")
+  @js.native
+  val VIDEO_UNSUPPORTED: String = js.native
 }

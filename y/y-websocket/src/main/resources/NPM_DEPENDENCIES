@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "y-websocket" : "1.4.5"
+      "y-websocket" : "1.5.0"
     }
   ],
   "test-dependencies" : [
     {
-      "y-websocket" : "1.4.5"
+      "y-websocket" : "1.5.0"
     }
   ],
   "compile-devDependencies" : [

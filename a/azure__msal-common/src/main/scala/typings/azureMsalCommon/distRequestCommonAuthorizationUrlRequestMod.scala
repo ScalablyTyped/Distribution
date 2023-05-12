@@ -41,8 +41,6 @@ object distRequestCommonAuthorizationUrlRequestMod {
     var sid: js.UndefOr[String] = js.undefined
     
     var state: js.UndefOr[String] = js.undefined
-    
-    var tokenQueryParameters: js.UndefOr[StringDict] = js.undefined
   }
   object CommonAuthorizationUrlRequest {
     
@@ -113,10 +111,6 @@ object distRequestCommonAuthorizationUrlRequestMod {
       inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
       inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
-      
-      inline def setTokenQueryParameters(value: StringDict): Self = StObject.set(x, "tokenQueryParameters", value.asInstanceOf[js.Any])
-      
-      inline def setTokenQueryParametersUndefined: Self = StObject.set(x, "tokenQueryParameters", js.undefined)
     }
   }
 }

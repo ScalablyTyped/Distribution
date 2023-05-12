@@ -12,16 +12,36 @@ import typings.gridstack.distEs5UtilsMod.Utils
 import typings.gridstack.gridstackInts.`-1`
 import typings.gridstack.gridstackInts.`1`
 import typings.std.CSSStyleSheet
+import typings.std.Document
 import typings.std.DragEvent
 import typings.std.EventTarget
 import typings.std.HTMLElement
 import typings.std.MouseEvent
-import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
+  
+  trait Nonce extends StObject {
+    
+    var nonce: js.UndefOr[String] = js.undefined
+  }
+  object Nonce {
+    
+    inline def apply(): Nonce = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Nonce]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Nonce] (val x: Self) extends AnyVal {
+      
+      inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+      
+      inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
+    }
+  }
   
   trait Target extends StObject {
     
@@ -60,7 +80,6 @@ object anon {
     
     def appendTo(el: HTMLElement, parent: String): Unit = js.native
     def appendTo(el: HTMLElement, parent: HTMLElement): Unit = js.native
-    def appendTo(el: HTMLElement, parent: Node): Unit = js.native
     
     /** returns the area */
     def area(a: GridStackPosition): Double = js.native
@@ -94,16 +113,22 @@ object anon {
       * if none supplied it will be appended to the document head instead.
       */
     def createStylesheet(id: String): CSSStyleSheet = js.native
+    def createStylesheet(id: String, parent: Unit, options: Nonce): CSSStyleSheet = js.native
     def createStylesheet(id: String, parent: HTMLElement): CSSStyleSheet = js.native
+    def createStylesheet(id: String, parent: HTMLElement, options: Nonce): CSSStyleSheet = js.native
     
     /** copies unset fields in target to use the given default sources values */
     def defaults(target: Any, sources: Any*): js.Object = js.native
     
-    /** convert a potential selector into actual single element */
+    /** convert a potential selector into actual single element. optional root which defaults to document (for shadow dom) */
     def getElement(els: GridStackElement): HTMLElement = js.native
+    def getElement(els: GridStackElement, root: Document): HTMLElement = js.native
+    def getElement(els: GridStackElement, root: HTMLElement): HTMLElement = js.native
     
-    /** convert a potential selector into actual list of html elements */
+    /** convert a potential selector into actual list of html elements. optional root which defaults to document (for shadow dom) */
     def getElements(els: GridStackElement): js.Array[HTMLElement] = js.native
+    def getElements(els: GridStackElement, root: Document): js.Array[HTMLElement] = js.native
+    def getElements(els: GridStackElement, root: HTMLElement): js.Array[HTMLElement] = js.native
     
     def initEvent[T](e: DragEvent, info: Target): T = js.native
     def initEvent[T](e: MouseEvent, info: Target): T = js.native
@@ -133,6 +158,9 @@ object anon {
     
     /** true if a and b has same size & position */
     def samePos(a: GridStackPosition, b: GridStackPosition): Boolean = js.native
+    
+    /** given a node, makes sure it's min/max are valid */
+    def sanitizeMinMax(node: GridStackNode): Unit = js.native
     
     /** copies the MouseEvent properties and sends it as another event to the given target */
     def simulateMouseEvent(e: MouseEvent, simulatedType: String): Unit = js.native
@@ -170,7 +198,6 @@ object anon {
     
     def appendTo(el: HTMLElement, parent: String): Unit = js.native
     def appendTo(el: HTMLElement, parent: HTMLElement): Unit = js.native
-    def appendTo(el: HTMLElement, parent: Node): Unit = js.native
     
     /** returns the area */
     def area(a: typings.gridstack.distTypesMod.GridStackPosition): Double = js.native
@@ -214,16 +241,22 @@ object anon {
       * if none supplied it will be appended to the document head instead.
       */
     def createStylesheet(id: String): CSSStyleSheet = js.native
+    def createStylesheet(id: String, parent: Unit, options: Nonce): CSSStyleSheet = js.native
     def createStylesheet(id: String, parent: HTMLElement): CSSStyleSheet = js.native
+    def createStylesheet(id: String, parent: HTMLElement, options: Nonce): CSSStyleSheet = js.native
     
     /** copies unset fields in target to use the given default sources values */
     def defaults(target: Any, sources: Any*): js.Object = js.native
     
-    /** convert a potential selector into actual single element */
+    /** convert a potential selector into actual single element. optional root which defaults to document (for shadow dom) */
     def getElement(els: typings.gridstack.distTypesMod.GridStackElement): HTMLElement = js.native
+    def getElement(els: typings.gridstack.distTypesMod.GridStackElement, root: Document): HTMLElement = js.native
+    def getElement(els: typings.gridstack.distTypesMod.GridStackElement, root: HTMLElement): HTMLElement = js.native
     
-    /** convert a potential selector into actual list of html elements */
+    /** convert a potential selector into actual list of html elements. optional root which defaults to document (for shadow dom) */
     def getElements(els: typings.gridstack.distTypesMod.GridStackElement): js.Array[HTMLElement] = js.native
+    def getElements(els: typings.gridstack.distTypesMod.GridStackElement, root: Document): js.Array[HTMLElement] = js.native
+    def getElements(els: typings.gridstack.distTypesMod.GridStackElement, root: HTMLElement): js.Array[HTMLElement] = js.native
     
     def initEvent[T](e: DragEvent, info: Target): T = js.native
     def initEvent[T](e: MouseEvent, info: Target): T = js.native
@@ -262,6 +295,9 @@ object anon {
       a: typings.gridstack.distTypesMod.GridStackPosition,
       b: typings.gridstack.distTypesMod.GridStackPosition
     ): Boolean = js.native
+    
+    /** given a node, makes sure it's min/max are valid */
+    def sanitizeMinMax(node: typings.gridstack.distTypesMod.GridStackNode): Unit = js.native
     
     /** copies the MouseEvent properties and sends it as another event to the given target */
     def simulateMouseEvent(e: MouseEvent, simulatedType: String): Unit = js.native

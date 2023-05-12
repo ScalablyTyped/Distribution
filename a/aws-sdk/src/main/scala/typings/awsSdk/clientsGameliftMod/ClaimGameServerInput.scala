@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ClaimGameServerInput extends StObject {
   
   /**
-    * A set of custom game server properties, formatted as a single string value. This data is passed to a game client or service when it requests information on game servers using ListGameServers or ClaimGameServer. 
+    * A set of custom game server properties, formatted as a single string value. This data is passed to a game client or service when it requests information on game servers. 
     */
   var GameServerData: js.UndefOr[typings.awsSdk.clientsGameliftMod.GameServerData] = js.undefined
   
   /**
-    * A unique identifier for the game server group where the game server is running. Use either the GameServerGroup name or ARN value. If you are not specifying a game server to claim, this value identifies where you want GameLift FleetIQ to look for an available game server to claim. 
+    * A unique identifier for the game server group where the game server is running. If you are not specifying a game server to claim, this value identifies where you want Amazon GameLift FleetIQ to look for an available game server to claim. 
     */
   var GameServerGroupName: GameServerGroupNameOrArn
   
   /**
-    * A custom string that uniquely identifies the game server to claim. If this parameter is left empty, GameLift FleetIQ searches for an available game server in the specified game server group.
+    * A custom string that uniquely identifies the game server to claim. If this parameter is left empty, Amazon GameLift FleetIQ searches for an available game server in the specified game server group.
     */
   var GameServerId: js.UndefOr[typings.awsSdk.clientsGameliftMod.GameServerId] = js.undefined
 }

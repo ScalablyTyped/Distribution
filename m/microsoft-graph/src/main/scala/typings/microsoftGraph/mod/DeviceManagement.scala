@@ -11,6 +11,9 @@ trait DeviceManagement
   // Apple push notification certificate.
   var applePushNotificationCertificate: js.UndefOr[NullableOption[ApplePushNotificationCertificate]] = js.undefined
   
+  // The Audit Events
+  var auditEvents: js.UndefOr[NullableOption[js.Array[AuditEvent]]] = js.undefined
+  
   // The list of Compliance Management Partners configured by the tenant.
   var complianceManagementPartners: js.UndefOr[NullableOption[js.Array[ComplianceManagementPartner]]] = js.undefined
   
@@ -137,6 +140,14 @@ object DeviceManagement {
     inline def setApplePushNotificationCertificateNull: Self = StObject.set(x, "applePushNotificationCertificate", null)
     
     inline def setApplePushNotificationCertificateUndefined: Self = StObject.set(x, "applePushNotificationCertificate", js.undefined)
+    
+    inline def setAuditEvents(value: NullableOption[js.Array[AuditEvent]]): Self = StObject.set(x, "auditEvents", value.asInstanceOf[js.Any])
+    
+    inline def setAuditEventsNull: Self = StObject.set(x, "auditEvents", null)
+    
+    inline def setAuditEventsUndefined: Self = StObject.set(x, "auditEvents", js.undefined)
+    
+    inline def setAuditEventsVarargs(value: AuditEvent*): Self = StObject.set(x, "auditEvents", js.Array(value*))
     
     inline def setComplianceManagementPartners(value: NullableOption[js.Array[ComplianceManagementPartner]]): Self = StObject.set(x, "complianceManagementPartners", value.asInstanceOf[js.Any])
     

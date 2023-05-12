@@ -1,6 +1,6 @@
 package typings.cesium.mod
 
-import typings.cesium.anon.Metadata
+import typings.cesium.mod.GoogleEarthEnterpriseTerrainProvider.ConstructorOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,19 +8,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("cesium", "GoogleEarthEnterpriseTerrainProvider")
 @js.native
 open class GoogleEarthEnterpriseTerrainProvider protected () extends StObject {
-  def this(options: Metadata) = this()
+  def this(options: ConstructorOptions) = this()
   
   /**
     * Gets an object that can be used to determine availability of terrain from this provider, such as
-    * at points and in rectangles.  This function should not be called before
-    * {@link GoogleEarthEnterpriseTerrainProvider#ready} returns true.  This property may be undefined if availability
+    * at points and in rectangles. This property may be undefined if availability
     * information is not available.
     */
   val availability: TileAvailability = js.native
   
   /**
     * Gets the credit to display when this terrain provider is active.  Typically this is used to credit
-    * the source of the terrain.  This function should not be called before {@link GoogleEarthEnterpriseTerrainProvider#ready} returns true.
+    * the source of the terrain.
     */
   val credit: Credit = js.native
   
@@ -49,15 +48,13 @@ open class GoogleEarthEnterpriseTerrainProvider protected () extends StObject {
   
   /**
     * Gets a value indicating whether or not the requested tiles include vertex normals.
-    * This function should not be called before {@link GoogleEarthEnterpriseTerrainProvider#ready} returns true.
     */
   val hasVertexNormals: Boolean = js.native
   
   /**
     * Gets a value indicating whether or not the provider includes a water mask.  The water mask
     * indicates which areas of the globe are water rather than land, so they can be rendered
-    * as a reflective surface with animated waves.  This function should not be
-    * called before {@link GoogleEarthEnterpriseTerrainProvider#ready} returns true.
+    * as a reflective surface with animated waves.
     */
   val hasWaterMask: Boolean = js.native
   
@@ -85,8 +82,7 @@ open class GoogleEarthEnterpriseTerrainProvider protected () extends StObject {
   val readyPromise: js.Promise[Boolean] = js.native
   
   /**
-    * Requests the geometry for a given tile.  This function should not be called before
-    * {@link GoogleEarthEnterpriseTerrainProvider#ready} returns true.  The result must include terrain data and
+    * Requests the geometry for a given tile.   The result must include terrain data and
     * may optionally include a water mask and an indication of which child tiles are available.
     * @param x - The X coordinate of the tile for which to request geometry.
     * @param y - The Y coordinate of the tile for which to request geometry.
@@ -100,8 +96,7 @@ open class GoogleEarthEnterpriseTerrainProvider protected () extends StObject {
   def requestTileGeometry(x: Double, y: Double, level: Double, request: Request): js.UndefOr[js.Promise[TerrainData]] = js.native
   
   /**
-    * Gets the tiling scheme used by this provider.  This function should
-    * not be called before {@link GoogleEarthEnterpriseTerrainProvider#ready} returns true.
+    * Gets the tiling scheme used by this provider.
     */
   val tilingScheme: TilingScheme = js.native
   
@@ -109,4 +104,66 @@ open class GoogleEarthEnterpriseTerrainProvider protected () extends StObject {
     * Gets the name of the Google Earth Enterprise server url hosting the imagery.
     */
   val url: String = js.native
+}
+/* static members */
+object GoogleEarthEnterpriseTerrainProvider {
+  
+  @JSImport("cesium", "GoogleEarthEnterpriseTerrainProvider")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /**
+    * Creates a GoogleEarthTerrainProvider from GoogleEarthEnterpriseMetadata
+    * @example
+    * const geeMetadata = await GoogleEarthEnterpriseMetadata.fromUrl("http://www.example.com");
+    * const gee = Cesium.GoogleEarthEnterpriseTerrainProvider.fromMetadata(geeMetadata);
+    * @param metadata - A metadata object that can be used to share metadata requests with a GoogleEarthEnterpriseImageryProvider.
+    * @param options - An object describing initialization options
+    */
+  inline def fromMetadata(metadata: GoogleEarthEnterpriseMetadata, options: ConstructorOptions): GoogleEarthEnterpriseTerrainProvider = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMetadata")(metadata.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[GoogleEarthEnterpriseTerrainProvider]
+  
+  /**
+    * Initialization options for GoogleEarthEnterpriseTerrainProvider constructor
+    * @property [ellipsoid] - The ellipsoid.  If not specified, the WGS84 ellipsoid is used.
+    * @property [credit] - A credit for the data source, which is displayed on the canvas.
+    * @property [url] - The url of the Google Earth Enterprise server hosting the imagery. Deprecated.
+    * @property [metadata] - A metadata object that can be used to share metadata requests with a GoogleEarthEnterpriseImageryProvider. Deprecated.
+    */
+  trait ConstructorOptions extends StObject {
+    
+    var credit: js.UndefOr[Credit | String] = js.undefined
+    
+    var ellipsoid: js.UndefOr[Ellipsoid] = js.undefined
+    
+    var metadata: js.UndefOr[GoogleEarthEnterpriseMetadata] = js.undefined
+    
+    var url: js.UndefOr[Resource | String] = js.undefined
+  }
+  object ConstructorOptions {
+    
+    inline def apply(): ConstructorOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ConstructorOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConstructorOptions] (val x: Self) extends AnyVal {
+      
+      inline def setCredit(value: Credit | String): Self = StObject.set(x, "credit", value.asInstanceOf[js.Any])
+      
+      inline def setCreditUndefined: Self = StObject.set(x, "credit", js.undefined)
+      
+      inline def setEllipsoid(value: Ellipsoid): Self = StObject.set(x, "ellipsoid", value.asInstanceOf[js.Any])
+      
+      inline def setEllipsoidUndefined: Self = StObject.set(x, "ellipsoid", js.undefined)
+      
+      inline def setMetadata(value: GoogleEarthEnterpriseMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      
+      inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+      
+      inline def setUrl(value: Resource | String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    }
+  }
 }

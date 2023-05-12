@@ -1,7 +1,7 @@
 
 # Scala.js typings for io-ts
 
-Typings are for version 2.2.19
+Typings are for version 2.2.20
 
 ## Library description:
 TypeScript runtime type system for IO decoding/encoding

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "urllib-next" : "3.5.0"
+      "urllib-next" : "3.14.0"
     }
   ],
   "test-dependencies" : [
     {
-      "urllib-next" : "3.5.0"
+      "urllib-next" : "3.14.0"
     }
   ],
   "compile-devDependencies" : [

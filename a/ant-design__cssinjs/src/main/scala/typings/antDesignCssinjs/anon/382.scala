@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.PlaceItems
+import typings.csstype.mod.Property.ShapeOutside
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `382` extends StObject {
   
   var value: js.UndefOr[
-    PlaceItems | (js.Array[
-      (Extract[js.UndefOr[PlaceItems | js.Array[NonNullable[js.UndefOr[PlaceItems]]]], String]) | NonNullable[js.UndefOr[PlaceItems]]
+    ShapeOutside | (js.Array[
+      (Extract[js.UndefOr[ShapeOutside | js.Array[NonNullable[js.UndefOr[ShapeOutside]]]], String]) | NonNullable[js.UndefOr[ShapeOutside]]
     ])
   ] = js.native
 }

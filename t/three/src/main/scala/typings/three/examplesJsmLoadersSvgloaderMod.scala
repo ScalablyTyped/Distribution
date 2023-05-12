@@ -5,12 +5,13 @@ import typings.std.ErrorEvent
 import typings.std.EventTarget
 import typings.std.ProgressEvent
 import typings.std.XMLDocument
+import typings.three.srcCoreBufferGeometryMod.NormalBufferAttributes
 import typings.three.srcThreeMod.BufferGeometry
 import typings.three.srcThreeMod.Loader
 import typings.three.srcThreeMod.LoadingManager
 import typings.three.srcThreeMod.Shape
 import typings.three.srcThreeMod.ShapePath
-import typings.three.srcThreeMod.Vector3
+import typings.three.srcThreeMod.Vector2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -44,6 +45,9 @@ object examplesJsmLoadersSvgloaderMod {
       onProgress: Unit,
       onError: js.Function1[/* event */ ErrorEvent, Unit]
     ): Unit = js.native
+    
+    def loadAsync(url: String): js.Promise[SVGResult] = js.native
+    def loadAsync(url: String, onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit]): js.Promise[SVGResult] = js.native
     
     def parse(text: String): SVGResult = js.native
   }
@@ -89,13 +93,22 @@ object examplesJsmLoadersSvgloaderMod {
     inline def getStrokeStyle(width: Unit, color: Unit, lineJoin: Unit, lineCap: String, miterLimit: Double): StrokeStyle = (^.asInstanceOf[js.Dynamic].applyDynamic("getStrokeStyle")(width.asInstanceOf[js.Any], color.asInstanceOf[js.Any], lineJoin.asInstanceOf[js.Any], lineCap.asInstanceOf[js.Any], miterLimit.asInstanceOf[js.Any])).asInstanceOf[StrokeStyle]
     inline def getStrokeStyle(width: Unit, color: Unit, lineJoin: Unit, lineCap: Unit, miterLimit: Double): StrokeStyle = (^.asInstanceOf[js.Dynamic].applyDynamic("getStrokeStyle")(width.asInstanceOf[js.Any], color.asInstanceOf[js.Any], lineJoin.asInstanceOf[js.Any], lineCap.asInstanceOf[js.Any], miterLimit.asInstanceOf[js.Any])).asInstanceOf[StrokeStyle]
     
-    inline def pointsToStroke(points: js.Array[Vector3], style: StrokeStyle): BufferGeometry = (^.asInstanceOf[js.Dynamic].applyDynamic("pointsToStroke")(points.asInstanceOf[js.Any], style.asInstanceOf[js.Any])).asInstanceOf[BufferGeometry]
-    inline def pointsToStroke(points: js.Array[Vector3], style: StrokeStyle, arcDivisions: Double): BufferGeometry = (^.asInstanceOf[js.Dynamic].applyDynamic("pointsToStroke")(points.asInstanceOf[js.Any], style.asInstanceOf[js.Any], arcDivisions.asInstanceOf[js.Any])).asInstanceOf[BufferGeometry]
-    inline def pointsToStroke(points: js.Array[Vector3], style: StrokeStyle, arcDivisions: Double, minDistance: Double): BufferGeometry = (^.asInstanceOf[js.Dynamic].applyDynamic("pointsToStroke")(points.asInstanceOf[js.Any], style.asInstanceOf[js.Any], arcDivisions.asInstanceOf[js.Any], minDistance.asInstanceOf[js.Any])).asInstanceOf[BufferGeometry]
-    inline def pointsToStroke(points: js.Array[Vector3], style: StrokeStyle, arcDivisions: Unit, minDistance: Double): BufferGeometry = (^.asInstanceOf[js.Dynamic].applyDynamic("pointsToStroke")(points.asInstanceOf[js.Any], style.asInstanceOf[js.Any], arcDivisions.asInstanceOf[js.Any], minDistance.asInstanceOf[js.Any])).asInstanceOf[BufferGeometry]
+    /**
+      * Generates a stroke with some witdh around the given path.
+      * @remarks The path can be open or closed (last point equals to first point)
+      * @param points  Array of Vector2D (the path). Minimum 2 points.
+      * @param style  Object with SVG properties as returned by SVGLoader.getStrokeStyle(), or SVGLoader.parse() in the path.userData.style object
+      * @param arcDivisions Arc divisions for round joins and endcaps. (Optional)
+      * @param minDistance Points closer to this distance will be merged. (Optional)
+      * @returns BufferGeometry with stroke triangles (In plane z = 0). UV coordinates are generated ('u' along path. 'v' across it, from left to right)
+      */
+    inline def pointsToStroke(points: js.Array[Vector2], style: StrokeStyle): BufferGeometry[NormalBufferAttributes] = (^.asInstanceOf[js.Dynamic].applyDynamic("pointsToStroke")(points.asInstanceOf[js.Any], style.asInstanceOf[js.Any])).asInstanceOf[BufferGeometry[NormalBufferAttributes]]
+    inline def pointsToStroke(points: js.Array[Vector2], style: StrokeStyle, arcDivisions: Double): BufferGeometry[NormalBufferAttributes] = (^.asInstanceOf[js.Dynamic].applyDynamic("pointsToStroke")(points.asInstanceOf[js.Any], style.asInstanceOf[js.Any], arcDivisions.asInstanceOf[js.Any])).asInstanceOf[BufferGeometry[NormalBufferAttributes]]
+    inline def pointsToStroke(points: js.Array[Vector2], style: StrokeStyle, arcDivisions: Double, minDistance: Double): BufferGeometry[NormalBufferAttributes] = (^.asInstanceOf[js.Dynamic].applyDynamic("pointsToStroke")(points.asInstanceOf[js.Any], style.asInstanceOf[js.Any], arcDivisions.asInstanceOf[js.Any], minDistance.asInstanceOf[js.Any])).asInstanceOf[BufferGeometry[NormalBufferAttributes]]
+    inline def pointsToStroke(points: js.Array[Vector2], style: StrokeStyle, arcDivisions: Unit, minDistance: Double): BufferGeometry[NormalBufferAttributes] = (^.asInstanceOf[js.Dynamic].applyDynamic("pointsToStroke")(points.asInstanceOf[js.Any], style.asInstanceOf[js.Any], arcDivisions.asInstanceOf[js.Any], minDistance.asInstanceOf[js.Any])).asInstanceOf[BufferGeometry[NormalBufferAttributes]]
     
     inline def pointsToStrokeWithBuffers(
-      points: js.Array[Vector3],
+      points: js.Array[Vector2],
       style: StrokeStyle,
       arcDivisions: js.UndefOr[Double],
       minDistance: js.UndefOr[Double],

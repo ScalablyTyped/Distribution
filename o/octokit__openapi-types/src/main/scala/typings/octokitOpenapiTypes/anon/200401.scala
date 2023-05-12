@@ -6,20 +6,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `200401` extends StObject {
   
-  /** Response */
-  var `200`: Content47
+  /** @description Response */
+  var `200`: Content35
   
   var `401`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['requires_authentication'] */ js.Any
   
-  /** Not Found when the account has not purchased the listing */
-  var `404`: Content48
+  /** @description Not Found when the account has not purchased the listing */
+  var `404`: Content36
 }
 object `200401` {
   
   inline def apply(
-    `200`: Content47,
+    `200`: Content35,
     `401`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['requires_authentication'] */ js.Any,
-    `404`: Content48
+    `404`: Content36
   ): `200401` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("200")(`200`.asInstanceOf[js.Any])
@@ -31,12 +31,12 @@ object `200401` {
   @scala.inline
   implicit open class MutableBuilder[Self <: `200401`] (val x: Self) extends AnyVal {
     
-    inline def set200(value: Content47): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
+    inline def set200(value: Content35): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
     
     inline def set401(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['requires_authentication'] */ js.Any
     ): Self = StObject.set(x, "401", value.asInstanceOf[js.Any])
     
-    inline def set404(value: Content48): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
+    inline def set404(value: Content36): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
   }
 }

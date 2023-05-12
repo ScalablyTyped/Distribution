@@ -3,6 +3,7 @@ package typings.facebookInstantGames
 import typings.facebookInstantGames.FBInstant.ContextFilter
 import typings.facebookInstantGames.FBInstant.ErrorCodeType
 import typings.facebookInstantGames.FBInstant.Intent
+import typings.facebookInstantGames.FBInstant.LiveMatchStatusType
 import typings.facebookInstantGames.FBInstant.Platform
 import typings.facebookInstantGames.FBInstant.TournamentScoreFormat
 import typings.facebookInstantGames.FBInstant.TournamentSortOrder
@@ -13,6 +14,12 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object facebookInstantGamesStrings {
+  
+  @js.native
+  sealed trait ABANDONED
+    extends StObject
+       with LiveMatchStatusType
+  inline def ABANDONED: ABANDONED = "ABANDONED".asInstanceOf[ABANDONED]
   
   @js.native
   sealed trait ADS_FREQUENT_LOAD
@@ -67,6 +74,12 @@ object facebookInstantGamesStrings {
     extends StObject
        with ErrorCodeType
   inline def CLIENT_UNSUPPORTED_OPERATION: CLIENT_UNSUPPORTED_OPERATION = "CLIENT_UNSUPPORTED_OPERATION".asInstanceOf[CLIENT_UNSUPPORTED_OPERATION]
+  
+  @js.native
+  sealed trait CONCLUDED
+    extends StObject
+       with LiveMatchStatusType
+  inline def CONCLUDED: CONCLUDED = "CONCLUDED".asInstanceOf[CONCLUDED]
   
   @js.native
   sealed trait CUSTOM
@@ -171,6 +184,12 @@ object facebookInstantGamesStrings {
   inline def NUMERIC: NUMERIC = "NUMERIC".asInstanceOf[NUMERIC]
   
   @js.native
+  sealed trait PENDING
+    extends StObject
+       with LiveMatchStatusType
+  inline def PENDING: PENDING = "PENDING".asInstanceOf[PENDING]
+  
+  @js.native
   sealed trait PENDING_REQUEST
     extends StObject
        with ErrorCodeType
@@ -193,6 +212,12 @@ object facebookInstantGamesStrings {
     extends StObject
        with Intent
   inline def REQUEST: REQUEST = "REQUEST".asInstanceOf[REQUEST]
+  
+  @js.native
+  sealed trait RUNNING
+    extends StObject
+       with LiveMatchStatusType
+  inline def RUNNING: RUNNING = "RUNNING".asInstanceOf[RUNNING]
   
   @js.native
   sealed trait SAME_CONTEXT

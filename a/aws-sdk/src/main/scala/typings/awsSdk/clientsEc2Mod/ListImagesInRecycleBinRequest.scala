@@ -17,12 +17,12 @@ trait ListImagesInRecycleBinRequest extends StObject {
   var ImageIds: js.UndefOr[ImageIdStringList] = js.undefined
   
   /**
-    * The maximum number of results to return with a single call. To retrieve the remaining results, make another call with the returned nextToken value. If you do not specify a value for MaxResults, the request returns 1,000 items per page by default. For more information, see  Pagination.
+    * The maximum number of items to return for this request. To get the next page of items, make another request with the token returned in the output. For more information, see Pagination.
     */
   var MaxResults: js.UndefOr[ListImagesInRecycleBinMaxResults] = js.undefined
   
   /**
-    * The token for the next page of results.
+    * The token returned from a previous paginated request. Pagination continues from the end of the items returned by the previous request.
     */
   var NextToken: js.UndefOr[String] = js.undefined
 }

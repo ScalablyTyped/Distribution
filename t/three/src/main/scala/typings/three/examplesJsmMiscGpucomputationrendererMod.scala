@@ -1,8 +1,9 @@
 package typings.three
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.three.srcConstantsMod.MagnificationTextureFilter
+import typings.three.srcConstantsMod.MinificationTextureFilter
 import typings.three.srcConstantsMod.TextureDataType
-import typings.three.srcConstantsMod.TextureFilter
 import typings.three.srcConstantsMod.Wrapping
 import typings.three.srcRenderersShadersUniformsLibMod.IUniform
 import typings.three.srcThreeMod.DataTexture
@@ -33,8 +34,8 @@ object examplesJsmMiscGpucomputationrendererMod {
       sizeYTexture: Double,
       wrapS: Wrapping,
       wrapT: Double,
-      minFilter: TextureFilter,
-      magFilter: TextureFilter
+      minFilter: MinificationTextureFilter,
+      magFilter: MagnificationTextureFilter
     ): WebGLRenderTarget = js.native
     
     def createShaderMaterial(computeFragmentShader: String): ShaderMaterial = js.native

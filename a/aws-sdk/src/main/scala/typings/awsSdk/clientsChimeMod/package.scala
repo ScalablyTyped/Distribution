@@ -255,7 +255,7 @@ type JoinTokenString = java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Basic_
-  - typings.awsSdk.awsSdkStrings.Plus
+  - typings.awsSdk.awsSdkStrings.Plus_
   - typings.awsSdk.awsSdkStrings.Pro
   - typings.awsSdk.awsSdkStrings.ProTrial
   - java.lang.String
@@ -467,7 +467,7 @@ type RoomMembershipList = js.Array[RoomMembership]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Administrator_
-  - typings.awsSdk.awsSdkStrings.Member
+  - typings.awsSdk.awsSdkStrings.Member_
   - java.lang.String
 */
 type RoomMembershipRole = _RoomMembershipRole | java.lang.String
@@ -549,11 +549,15 @@ type TranscribeContentRedactionType = PII | java.lang.String
   - typings.awsSdk.awsSdkStrings.`ja-JP`
   - typings.awsSdk.awsSdkStrings.`ko-KR`
   - typings.awsSdk.awsSdkStrings.`zh-CN`
+  - typings.awsSdk.awsSdkStrings.`th-TH`
+  - typings.awsSdk.awsSdkStrings.`hi-IN`
   - java.lang.String
 */
 type TranscribeLanguageCode = _TranscribeLanguageCode | java.lang.String
 
 type TranscribeLanguageModelName = java.lang.String
+
+type TranscribeLanguageOptions = java.lang.String
 
 type TranscribeMedicalContentIdentificationType = PHI | java.lang.String
 
@@ -623,6 +627,8 @@ type TranscribeRegion = _TranscribeRegion | java.lang.String
   - java.lang.String
 */
 type TranscribeVocabularyFilterMethod = _TranscribeVocabularyFilterMethod | java.lang.String
+
+type TranscribeVocabularyNamesOrFilterNamesString = java.lang.String
 
 type UpdatePhoneNumberRequestItemList = js.Array[UpdatePhoneNumberRequestItem]
 

@@ -90,7 +90,7 @@ object lensFlaresLensFlareSystemSceneComponentMod {
       
       /**
         * The list of lens flare system added to the scene
-        * @see https://doc.babylonjs.com/how_to/how_to_use_lens_flares
+        * @see https://doc.babylonjs.com/features/featuresDeepDive/environment/lenseFlare
         */
       var lensFlareSystems: js.Array[LensFlareSystem]
       

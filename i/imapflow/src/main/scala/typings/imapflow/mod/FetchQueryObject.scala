@@ -24,7 +24,7 @@ trait FetchQueryObject extends StObject {
   
   var source: js.UndefOr[Boolean | js.Object] = js.undefined
   
-  var threadId: js.UndefOr[String] = js.undefined
+  var threadId: js.UndefOr[Boolean] = js.undefined
   
   var uid: js.UndefOr[Boolean] = js.undefined
 }
@@ -78,7 +78,7 @@ object FetchQueryObject {
     
     inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
-    inline def setThreadId(value: String): Self = StObject.set(x, "threadId", value.asInstanceOf[js.Any])
+    inline def setThreadId(value: Boolean): Self = StObject.set(x, "threadId", value.asInstanceOf[js.Any])
     
     inline def setThreadIdUndefined: Self = StObject.set(x, "threadId", js.undefined)
     

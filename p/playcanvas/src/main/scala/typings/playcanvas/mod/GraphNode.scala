@@ -81,8 +81,8 @@ open class GraphNode () extends EventHandler {
   /* private */ var _dirtyWorld: Any = js.native
   
   /**
-    * Represents enabled state of the entity. If the entity is disabled, the entity including
-    * all children are excluded from updates.
+    * Represents enabled state of the entity. If the entity is disabled, the entity including all
+    * children are excluded from updates.
     *
     * @type {boolean}
     * @private
@@ -90,8 +90,8 @@ open class GraphNode () extends EventHandler {
   /* private */ var _enabled: Any = js.native
   
   /**
-    * Represents enabled state of the entity in the hierarchy. It's true only if this entity
-    * and all parent entities all the way to the scene's root are enabled.
+    * Represents enabled state of the entity in the hierarchy. It's true only if this entity and
+    * all parent entities all the way to the scene's root are enabled.
     *
     * @type {boolean}
     * @private
@@ -116,9 +116,9 @@ open class GraphNode () extends EventHandler {
   /* private */ var _forward: Any = js.native
   
   /**
-    * Marks the node to ignore hierarchy sync entirely (including children nodes). The engine
-    * code automatically freezes and unfreezes objects whenever required. Segregating dynamic
-    * and stationary nodes into subhierarchies allows to reduce sync time significantly.
+    * Marks the node to ignore hierarchy sync entirely (including children nodes). The engine code
+    * automatically freezes and unfreezes objects whenever required. Segregating dynamic and
+    * stationary nodes into subhierarchies allows to reduce sync time significantly.
     *
     * @type {boolean}
     * @private
@@ -208,12 +208,23 @@ open class GraphNode () extends EventHandler {
   /* private */ var _updateGraphDepth: Any = js.native
   
   /**
+    * Cached value representing the negatively scaled world transform. If the value is 0, this
+    * marks this value as dirty and it needs to be recalculated. If the value is 1, the world
+    * transform is not negatively scaled. If the value is -1, the world transform is negatively
+    * scaled.
+    *
+    * @type {number}
+    * @private
+    */
+  /* private */ var _worldScaleSign: Any = js.native
+  
+  /**
     * Add a new child to the child list and update the parent value of the child node.
     * If the node already had a parent, it is removed from its child list.
     *
     * @param {GraphNode} node - The new child to add.
     * @example
-    * var e = new pc.Entity(app);
+    * const e = new pc.Entity(app);
     * this.entity.addChild(e);
     */
   def addChild(node: GraphNode): Unit = js.native
@@ -224,7 +235,7 @@ open class GraphNode () extends EventHandler {
     *
     * @param {GraphNode} node - The child to add.
     * @example
-    * var e = new pc.Entity(app);
+    * const e = new pc.Entity(app);
     * this.entity.addChildAndSaveTransform(e);
     * @ignore
     */
@@ -279,13 +290,13 @@ open class GraphNode () extends EventHandler {
     * will be checked against the value of the property.
     * @returns {GraphNode[]} The array of graph nodes that match the search criteria.
     * @example
-    * // Finds all nodes that have a model component and have `door` in their lower-cased name
-    * var doors = house.find(function (node) {
+    * // Finds all nodes that have a model component and have 'door' in their lower-cased name
+    * const doors = house.find(function (node) {
     *     return node.model && node.name.toLowerCase().indexOf('door') !== -1;
     * });
     * @example
     * // Finds all nodes that have the name property set to 'Test'
-    * var entities = parent.find('name', 'Test');
+    * const entities = parent.find('name', 'Test');
     */
   def find(attr: FindNodeCallback): js.Array[GraphNode] = js.native
   def find(attr: FindNodeCallback, value: js.Object): js.Array[GraphNode] = js.native
@@ -309,10 +320,10 @@ open class GraphNode () extends EventHandler {
     * null if no node is found.
     * @example
     * // String form
-    * var grandchild = this.entity.findByPath('child/grandchild');
+    * const grandchild = this.entity.findByPath('child/grandchild');
     * @example
     * // Array form
-    * var grandchild = this.entity.findByPath(['child', 'grandchild']);
+    * const grandchild = this.entity.findByPath(['child', 'grandchild']);
     */
   def findByPath(path: String): GraphNode | Null = js.native
   def findByPath(path: js.Array[String]): GraphNode | Null = js.native
@@ -327,16 +338,16 @@ open class GraphNode () extends EventHandler {
     * @returns {GraphNode[]} A list of all graph nodes that match the query.
     * @example
     * // Return all graph nodes that tagged by `animal`
-    * var animals = node.findByTag("animal");
+    * const animals = node.findByTag("animal");
     * @example
     * // Return all graph nodes that tagged by `bird` OR `mammal`
-    * var birdsAndMammals = node.findByTag("bird", "mammal");
+    * const birdsAndMammals = node.findByTag("bird", "mammal");
     * @example
     * // Return all assets that tagged by `carnivore` AND `mammal`
-    * var meatEatingMammals = node.findByTag(["carnivore", "mammal"]);
+    * const meatEatingMammals = node.findByTag(["carnivore", "mammal"]);
     * @example
     * // Return all assets that tagged by (`carnivore` AND `mammal`) OR (`carnivore` AND `reptile`)
-    * var meatEatingMammalsAndReptiles = node.findByTag(["carnivore", "mammal"], ["carnivore", "reptile"]);
+    * const meatEatingMammalsAndReptiles = node.findByTag(["carnivore", "mammal"], ["carnivore", "reptile"]);
     */
   def findByTag(args: Any*): js.Array[GraphNode] = js.native
   
@@ -358,13 +369,13 @@ open class GraphNode () extends EventHandler {
     * @returns {GraphNode|null} A graph node that match the search criteria. Returns null if no
     * node is found.
     * @example
-    * // Find the first node that is called `head` and has a model component
-    * var head = player.findOne(function (node) {
+    * // Find the first node that is called 'head' and has a model component
+    * const head = player.findOne(function (node) {
     *     return node.model && node.name === 'head';
     * });
     * @example
     * // Finds the first node that has the name property set to 'Test'
-    * var node = parent.findOne('name', 'Test');
+    * const node = parent.findOne('name', 'Test');
     */
   def findOne(attr: FindNodeCallback): GraphNode | Null = js.native
   def findOne(attr: FindNodeCallback, value: js.Object): GraphNode | Null = js.native
@@ -399,7 +410,7 @@ open class GraphNode () extends EventHandler {
     *
     * @returns {Vec3} The world space rotation of the graph node in Euler angle form.
     * @example
-    * var angles = this.entity.getEulerAngles();
+    * const angles = this.entity.getEulerAngles();
     * angles.y = 180; // rotate the entity around Y by 180 degrees
     * this.entity.setEulerAngles(angles);
     */
@@ -412,7 +423,7 @@ open class GraphNode () extends EventHandler {
     *
     * @returns {Vec3} The local space rotation of the graph node as euler angles in XYZ order.
     * @example
-    * var angles = this.entity.getLocalEulerAngles();
+    * const angles = this.entity.getLocalEulerAngles();
     * angles.y = 180;
     * this.entity.setLocalEulerAngles(angles);
     */
@@ -425,7 +436,7 @@ open class GraphNode () extends EventHandler {
     *
     * @returns {Vec3} The local space position of the graph node.
     * @example
-    * var position = this.entity.getLocalPosition();
+    * const position = this.entity.getLocalPosition();
     * position.x += 1; // move the entity 1 unit along x.
     * this.entity.setLocalPosition(position);
     */
@@ -438,7 +449,7 @@ open class GraphNode () extends EventHandler {
     *
     * @returns {Quat} The local space rotation of the graph node as a quaternion.
     * @example
-    * var rotation = this.entity.getLocalRotation();
+    * const rotation = this.entity.getLocalRotation();
     */
   def getLocalRotation(): Quat = js.native
   
@@ -449,7 +460,7 @@ open class GraphNode () extends EventHandler {
     *
     * @returns {Vec3} The local space scale of the graph node.
     * @example
-    * var scale = this.entity.getLocalScale();
+    * const scale = this.entity.getLocalScale();
     * scale.x = 100;
     * this.entity.setLocalScale(scale);
     */
@@ -461,7 +472,7 @@ open class GraphNode () extends EventHandler {
     *
     * @returns {Mat4} The node's local transformation matrix.
     * @example
-    * var transform = this.entity.getLocalTransform();
+    * const transform = this.entity.getLocalTransform();
     */
   def getLocalTransform(): Mat4 = js.native
   
@@ -472,7 +483,7 @@ open class GraphNode () extends EventHandler {
     *
     * @returns {Vec3} The world space position of the graph node.
     * @example
-    * var position = this.entity.getPosition();
+    * const position = this.entity.getPosition();
     * position.x = 10;
     * this.entity.setPosition(position);
     */
@@ -485,7 +496,7 @@ open class GraphNode () extends EventHandler {
     *
     * @returns {Quat} The world space rotation of the graph node as a quaternion.
     * @example
-    * var rotation = this.entity.getRotation();
+    * const rotation = this.entity.getRotation();
     */
   def getRotation(): Quat = js.native
   
@@ -499,7 +510,7 @@ open class GraphNode () extends EventHandler {
     *
     * @returns {Vec3} The world space scale of the graph node.
     * @example
-    * var scale = this.entity.getScale();
+    * const scale = this.entity.getScale();
     * @ignore
     */
   def getScale(): Vec3 = js.native
@@ -509,7 +520,7 @@ open class GraphNode () extends EventHandler {
     *
     * @returns {Mat4} The node's world transformation matrix.
     * @example
-    * var transform = this.entity.getWorldTransform();
+    * const transform = this.entity.getWorldTransform();
     */
   def getWorldTransform(): Mat4 = js.native
   
@@ -530,7 +541,7 @@ open class GraphNode () extends EventHandler {
     * @param {number} index - The index in the child list of the parent where the new node will be
     * inserted.
     * @example
-    * var e = new pc.Entity(app);
+    * const e = new pc.Entity(app);
     * this.entity.insertChild(e, 1);
     */
   def insertChild(node: GraphNode, index: Double): Unit = js.native
@@ -604,11 +615,11 @@ open class GraphNode () extends EventHandler {
     * @param {number} [uz=0] - Z-component of the up vector for the look at transform.
     * @example
     * // Look at another entity, using the (default) positive y-axis for up
-    * var position = otherEntity.getPosition();
+    * const position = otherEntity.getPosition();
     * this.entity.lookAt(position);
     * @example
     * // Look at another entity, using the negative world y-axis for up
-    * var position = otherEntity.getPosition();
+    * const position = otherEntity.getPosition();
     * this.entity.lookAt(position, pc.Vec3.DOWN);
     * @example
     * // Look at the world space origin, using the (default) positive y-axis for up
@@ -666,7 +677,7 @@ open class GraphNode () extends EventHandler {
     *
     * @param {GraphNode} child - The node to remove.
     * @example
-    * var child = this.entity.children[0];
+    * const child = this.entity.children[0];
     * this.entity.removeChild(child);
     */
   def removeChild(child: GraphNode): Unit = js.native
@@ -712,7 +723,7 @@ open class GraphNode () extends EventHandler {
     * this.entity.rotate(0, 90, 0);
     * @example
     * // Rotate via vector
-    * var r = new pc.Vec3(0, 90, 0);
+    * const r = new pc.Vec3(0, 90, 0);
     * this.entity.rotate(r);
     */
   def rotate(x: Vec3): Unit = js.native
@@ -738,7 +749,7 @@ open class GraphNode () extends EventHandler {
     * this.entity.rotateLocal(0, 90, 0);
     * @example
     * // Rotate via vector
-    * var r = new pc.Vec3(0, 90, 0);
+    * const r = new pc.Vec3(0, 90, 0);
     * this.entity.rotateLocal(r);
     */
   def rotateLocal(x: Vec3): Unit = js.native
@@ -777,7 +788,7 @@ open class GraphNode () extends EventHandler {
     * this.entity.setEulerAngles(0, 90, 0);
     * @example
     * // Set rotation of 90 degrees around world-space y-axis via a vector
-    * var angles = new pc.Vec3(0, 90, 0);
+    * const angles = new pc.Vec3(0, 90, 0);
     * this.entity.setEulerAngles(angles);
     */
   def setEulerAngles(x: Vec3): Unit = js.native
@@ -804,7 +815,7 @@ open class GraphNode () extends EventHandler {
     * this.entity.setLocalEulerAngles(0, 90, 0);
     * @example
     * // Set rotation of 90 degrees around y-axis via a vector
-    * var angles = new pc.Vec3(0, 90, 0);
+    * const angles = new pc.Vec3(0, 90, 0);
     * this.entity.setLocalEulerAngles(angles);
     */
   def setLocalEulerAngles(x: Vec3): Unit = js.native
@@ -830,7 +841,7 @@ open class GraphNode () extends EventHandler {
     * this.entity.setLocalPosition(0, 10, 0);
     * @example
     * // Set via vector
-    * var pos = new pc.Vec3(0, 10, 0);
+    * const pos = new pc.Vec3(0, 10, 0);
     * this.entity.setLocalPosition(pos);
     */
   def setLocalPosition(x: Vec3): Unit = js.native
@@ -861,7 +872,7 @@ open class GraphNode () extends EventHandler {
     * this.entity.setLocalRotation(0, 0, 0, 1);
     * @example
     * // Set via quaternion
-    * var q = pc.Quat();
+    * const q = pc.Quat();
     * this.entity.setLocalRotation(q);
     */
   def setLocalRotation(x: Quat): Unit = js.native
@@ -890,7 +901,7 @@ open class GraphNode () extends EventHandler {
     * this.entity.setLocalScale(10, 10, 10);
     * @example
     * // Set via vector
-    * var scale = new pc.Vec3(10, 10, 10);
+    * const scale = new pc.Vec3(10, 10, 10);
     * this.entity.setLocalScale(scale);
     */
   def setLocalScale(x: Vec3): Unit = js.native
@@ -916,7 +927,7 @@ open class GraphNode () extends EventHandler {
     * this.entity.setPosition(0, 10, 0);
     * @example
     * // Set via vector
-    * var position = new pc.Vec3(0, 10, 0);
+    * const position = new pc.Vec3(0, 10, 0);
     * this.entity.setPosition(position);
     */
   def setPosition(x: Vec3): Unit = js.native
@@ -947,7 +958,7 @@ open class GraphNode () extends EventHandler {
     * this.entity.setRotation(0, 0, 0, 1);
     * @example
     * // Set via quaternion
-    * var q = pc.Quat();
+    * const q = pc.Quat();
     * this.entity.setRotation(q);
     */
   def setRotation(x: Quat): Unit = js.native
@@ -992,7 +1003,7 @@ open class GraphNode () extends EventHandler {
     * this.entity.translate(10, 0, 0);
     * @example
     * // Translate via vector
-    * var t = new pc.Vec3(10, 0, 0);
+    * const t = new pc.Vec3(10, 0, 0);
     * this.entity.translate(t);
     */
   def translate(x: Vec3): Unit = js.native
@@ -1018,7 +1029,7 @@ open class GraphNode () extends EventHandler {
     * this.entity.translateLocal(10, 0, 0);
     * @example
     * // Translate via vector
-    * var t = new pc.Vec3(10, 0, 0);
+    * const t = new pc.Vec3(10, 0, 0);
     * this.entity.translateLocal(t);
     */
   def translateLocal(x: Vec3): Unit = js.native
@@ -1032,6 +1043,14 @@ open class GraphNode () extends EventHandler {
     * @type {Vec3}
     */
   def up: Vec3 = js.native
+  
+  /**
+    * Returns cached value of negative scale of the world transform.
+    *
+    * @returns {number} -1 if world transform has negative scale, 1 otherwise.
+    * @ignore
+    */
+  def worldScaleSign: Double = js.native
   
   /**
     * @type {Mat4}

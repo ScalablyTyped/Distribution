@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.OverflowClipBox
+import typings.csstype.mod.Property.InlineSize
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,11 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `504` extends StObject {
   
   var value: js.UndefOr[
-    OverflowClipBox | (js.Array[
+    (InlineSize[Double | String]) | (js.Array[
       (Extract[
-        js.UndefOr[OverflowClipBox | js.Array[NonNullable[js.UndefOr[OverflowClipBox]]]], 
+        js.UndefOr[
+          (InlineSize[Double | String]) | (js.Array[NonNullable[js.UndefOr[InlineSize[Double | String]]]])
+        ], 
         String
-      ]) | NonNullable[js.UndefOr[OverflowClipBox]]
+      ]) | (NonNullable[js.UndefOr[InlineSize[Double | String]]])
     ])
   ] = js.native
 }

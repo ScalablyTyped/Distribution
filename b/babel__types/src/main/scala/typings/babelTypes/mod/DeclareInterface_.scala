@@ -20,10 +20,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   
   var id: Identifier_
   
-  var implements: js.Array[ClassImplements_] | Null
-  
-  var mixins: js.Array[InterfaceExtends_] | Null
-  
   var typeParameters: TypeParameterDeclaration_ | Null
   
   @JSName("type")
@@ -32,7 +28,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object DeclareInterface_ {
   
   inline def apply(body: ObjectTypeAnnotation_, id: Identifier_): DeclareInterface_ = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], end = null, implements = null, innerComments = null, leadingComments = null, loc = null, mixins = null, start = null, trailingComments = null, typeParameters = null)
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null, typeParameters = null)
     __obj.updateDynamic("type")("DeclareInterface")
     __obj.updateDynamic("extends")(null)
     __obj.asInstanceOf[DeclareInterface_]
@@ -50,18 +46,6 @@ object DeclareInterface_ {
     inline def setExtendsVarargs(value: InterfaceExtends_ *): Self = StObject.set(x, "extends", js.Array(value*))
     
     inline def setId(value: Identifier_): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
-    
-    inline def setImplements(value: js.Array[ClassImplements_]): Self = StObject.set(x, "implements", value.asInstanceOf[js.Any])
-    
-    inline def setImplementsNull: Self = StObject.set(x, "implements", null)
-    
-    inline def setImplementsVarargs(value: ClassImplements_ *): Self = StObject.set(x, "implements", js.Array(value*))
-    
-    inline def setMixins(value: js.Array[InterfaceExtends_]): Self = StObject.set(x, "mixins", value.asInstanceOf[js.Any])
-    
-    inline def setMixinsNull: Self = StObject.set(x, "mixins", null)
-    
-    inline def setMixinsVarargs(value: InterfaceExtends_ *): Self = StObject.set(x, "mixins", js.Array(value*))
     
     inline def setType(value: DeclareInterface): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

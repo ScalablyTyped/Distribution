@@ -52,6 +52,11 @@ trait PostgreSQLSettings extends StObject {
   var HeartbeatSchema: js.UndefOr[String] = js.undefined
   
   /**
+    * When true, lets PostgreSQL migrate the boolean type as boolean. By default, PostgreSQL migrates booleans as varchar(5).
+    */
+  var MapBooleanAsBoolean: js.UndefOr[BooleanOptional] = js.undefined
+  
+  /**
     * Specifies the maximum size (in KB) of any .csv file used to transfer data to PostgreSQL. Example: maxFileSize=512 
     */
   var MaxFileSize: js.UndefOr[IntegerOptional] = js.undefined
@@ -82,7 +87,7 @@ trait PostgreSQLSettings extends StObject {
   var SecretsManagerSecretId: js.UndefOr[String] = js.undefined
   
   /**
-    * Fully qualified domain name of the endpoint.
+    * The host name of the endpoint database.  For an Amazon RDS PostgreSQL instance, this is the output of DescribeDBInstances, in the  Endpoint.Address field. For an Aurora PostgreSQL instance, this is the output of DescribeDBClusters, in the Endpoint field.
     */
   var ServerName: js.UndefOr[String] = js.undefined
   
@@ -146,6 +151,10 @@ object PostgreSQLSettings {
     inline def setHeartbeatSchema(value: String): Self = StObject.set(x, "HeartbeatSchema", value.asInstanceOf[js.Any])
     
     inline def setHeartbeatSchemaUndefined: Self = StObject.set(x, "HeartbeatSchema", js.undefined)
+    
+    inline def setMapBooleanAsBoolean(value: BooleanOptional): Self = StObject.set(x, "MapBooleanAsBoolean", value.asInstanceOf[js.Any])
+    
+    inline def setMapBooleanAsBooleanUndefined: Self = StObject.set(x, "MapBooleanAsBoolean", js.undefined)
     
     inline def setMaxFileSize(value: IntegerOptional): Self = StObject.set(x, "MaxFileSize", value.asInstanceOf[js.Any])
     

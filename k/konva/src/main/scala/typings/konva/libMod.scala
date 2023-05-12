@@ -16,8 +16,10 @@ import typings.konva.libLayerMod.LayerConfig
 import typings.konva.libNodeMod.NodeConfig
 import typings.konva.libShapeMod.ShapeConfig
 import typings.konva.libShapesImageMod.ImageConfig
+import typings.konva.libShapesLabelMod.LabelConfig
 import typings.konva.libShapesLineMod.LineConfig
 import typings.konva.libShapesPathMod.PathConfig
+import typings.konva.libShapesSpriteMod.SpriteConfig
 import typings.konva.libShapesTextMod.TextConfig
 import typings.konva.libShapesTextPathMod.TextPathConfig
 import typings.konva.libShapesTransformerMod.TransformerConfig
@@ -191,12 +193,12 @@ object libMod {
     @js.native
     open class Label ()
       extends typings.konva.libShapesLabelMod.Label {
-      def this(config: Any) = this()
+      def this(config: LabelConfig) = this()
     }
     @JSImport("konva/lib", "default.Label")
     @js.native
-    def Label: Instantiable1[/* config */ js.UndefOr[Any], typings.konva.libShapesLabelMod.Label] = js.native
-    inline def Label_=(x: Instantiable1[/* config */ js.UndefOr[Any], typings.konva.libShapesLabelMod.Label]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Label")(x.asInstanceOf[js.Any])
+    def Label: Instantiable1[/* config */ js.UndefOr[LabelConfig], typings.konva.libShapesLabelMod.Label] = js.native
+    inline def Label_=(x: Instantiable1[/* config */ js.UndefOr[LabelConfig], typings.konva.libShapesLabelMod.Label]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Label")(x.asInstanceOf[js.Any])
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("konva/lib", "default.Layer")
@@ -309,12 +311,12 @@ object libMod {
     @js.native
     open class Sprite protected ()
       extends typings.konva.libShapesSpriteMod.Sprite {
-      def this(config: Any) = this()
+      def this(config: SpriteConfig) = this()
     }
     @JSImport("konva/lib", "default.Sprite")
     @js.native
-    def Sprite: Instantiable1[/* config */ Any, typings.konva.libShapesSpriteMod.Sprite] = js.native
-    inline def Sprite_=(x: Instantiable1[/* config */ Any, typings.konva.libShapesSpriteMod.Sprite]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Sprite")(x.asInstanceOf[js.Any])
+    def Sprite: Instantiable1[/* config */ SpriteConfig, typings.konva.libShapesSpriteMod.Sprite] = js.native
+    inline def Sprite_=(x: Instantiable1[/* config */ SpriteConfig, typings.konva.libShapesSpriteMod.Sprite]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Sprite")(x.asInstanceOf[js.Any])
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("konva/lib", "default.Stage")

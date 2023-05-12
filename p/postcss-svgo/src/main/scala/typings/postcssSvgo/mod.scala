@@ -2,13 +2,14 @@ package typings.postcssSvgo
 
 import typings.postcss.mod.Plugin
 import typings.postcssSvgo.postcssSvgoBooleans.`true`
+import typings.svgo.mod.Config
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  /** @typedef {{encode?: boolean, plugins?: object[]} & import('svgo').OptimizeOptions} Options */
+  /** @typedef {{encode?: boolean, plugins?: object[]} & import('svgo').Config} Options */
   /**
     * @type {import('postcss').PluginCreator<Options>}
     * @param {Options} opts
@@ -26,12 +27,14 @@ object mod {
   def postcss: `true` = js.native
   inline def postcss_=(x: `true`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("postcss")(x.asInstanceOf[js.Any])
   
-  /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_svgo.OptimizeOptions * / any */ trait Options extends StObject {
+  trait Options
+    extends StObject
+       with Config {
     
     var encode: js.UndefOr[Boolean] = js.undefined
     
-    var plugins: js.UndefOr[js.Array[js.Object]] = js.undefined
+    @JSName("plugins")
+    var plugins_Options: js.UndefOr[js.Array[js.Object]] = js.undefined
   }
   object Options {
     

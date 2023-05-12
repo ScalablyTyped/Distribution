@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PropertyNameSuggestion extends StObject {
   
   /**
-    * A suggested property name based on what you entered in the search textbox in the Amazon SageMaker console.
+    * A suggested property name based on what you entered in the search textbox in the SageMaker console.
     */
   var PropertyName: js.UndefOr[ResourcePropertyName] = js.undefined
 }

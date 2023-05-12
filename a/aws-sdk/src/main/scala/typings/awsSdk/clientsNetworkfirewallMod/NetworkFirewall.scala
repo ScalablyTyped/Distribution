@@ -85,6 +85,22 @@ trait NetworkFirewall extends Service {
   ): Request[CreateRuleGroupResponse, AWSError] = js.native
   
   /**
+    * Creates an Network Firewall TLS inspection configuration. A TLS inspection configuration contains the Certificate Manager certificate references that Network Firewall uses to decrypt and re-encrypt inbound traffic. After you create a TLS inspection configuration, you associate it with a firewall policy. To update the settings for a TLS inspection configuration, use UpdateTLSInspectionConfiguration. To manage a TLS inspection configuration's tags, use the standard Amazon Web Services resource tagging operations, ListTagsForResource, TagResource, and UntagResource. To retrieve information about TLS inspection configurations, use ListTLSInspectionConfigurations and DescribeTLSInspectionConfiguration.  For more information about TLS inspection configurations, see Decrypting SSL/TLS traffic with TLS inspection configurations in the Network Firewall Developer Guide. 
+    */
+  def createTLSInspectionConfiguration(): Request[CreateTLSInspectionConfigurationResponse, AWSError] = js.native
+  def createTLSInspectionConfiguration(
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateTLSInspectionConfigurationResponse, Unit]
+  ): Request[CreateTLSInspectionConfigurationResponse, AWSError] = js.native
+  /**
+    * Creates an Network Firewall TLS inspection configuration. A TLS inspection configuration contains the Certificate Manager certificate references that Network Firewall uses to decrypt and re-encrypt inbound traffic. After you create a TLS inspection configuration, you associate it with a firewall policy. To update the settings for a TLS inspection configuration, use UpdateTLSInspectionConfiguration. To manage a TLS inspection configuration's tags, use the standard Amazon Web Services resource tagging operations, ListTagsForResource, TagResource, and UntagResource. To retrieve information about TLS inspection configurations, use ListTLSInspectionConfigurations and DescribeTLSInspectionConfiguration.  For more information about TLS inspection configurations, see Decrypting SSL/TLS traffic with TLS inspection configurations in the Network Firewall Developer Guide. 
+    */
+  def createTLSInspectionConfiguration(params: CreateTLSInspectionConfigurationRequest): Request[CreateTLSInspectionConfigurationResponse, AWSError] = js.native
+  def createTLSInspectionConfiguration(
+    params: CreateTLSInspectionConfigurationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateTLSInspectionConfigurationResponse, Unit]
+  ): Request[CreateTLSInspectionConfigurationResponse, AWSError] = js.native
+  
+  /**
     * Deletes the specified Firewall and its FirewallStatus. This operation requires the firewall's DeleteProtection flag to be FALSE. You can't revert this operation.  You can check whether a firewall is in use by reviewing the route tables for the Availability Zones where you have firewall subnet mappings. Retrieve the subnet mappings by calling DescribeFirewall. You define and update the route tables through Amazon VPC. As needed, update the route tables for the zones to remove the firewall endpoints. When the route tables no longer use the firewall endpoints, you can remove the firewall safely. To delete a firewall, remove the delete protection if you need to using UpdateFirewallDeleteProtection, then delete the firewall by calling DeleteFirewall. 
     */
   def deleteFirewall(): Request[DeleteFirewallResponse, AWSError] = js.native
@@ -139,6 +155,22 @@ trait NetworkFirewall extends Service {
     params: DeleteRuleGroupRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteRuleGroupResponse, Unit]
   ): Request[DeleteRuleGroupResponse, AWSError] = js.native
+  
+  /**
+    * Deletes the specified TLSInspectionConfiguration.
+    */
+  def deleteTLSInspectionConfiguration(): Request[DeleteTLSInspectionConfigurationResponse, AWSError] = js.native
+  def deleteTLSInspectionConfiguration(
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteTLSInspectionConfigurationResponse, Unit]
+  ): Request[DeleteTLSInspectionConfigurationResponse, AWSError] = js.native
+  /**
+    * Deletes the specified TLSInspectionConfiguration.
+    */
+  def deleteTLSInspectionConfiguration(params: DeleteTLSInspectionConfigurationRequest): Request[DeleteTLSInspectionConfigurationResponse, AWSError] = js.native
+  def deleteTLSInspectionConfiguration(
+    params: DeleteTLSInspectionConfigurationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteTLSInspectionConfigurationResponse, Unit]
+  ): Request[DeleteTLSInspectionConfigurationResponse, AWSError] = js.native
   
   /**
     * Returns the data objects for the specified firewall. 
@@ -225,6 +257,22 @@ trait NetworkFirewall extends Service {
   ): Request[DescribeRuleGroupMetadataResponse, AWSError] = js.native
   
   /**
+    * Returns the data objects for the specified TLS inspection configuration.
+    */
+  def describeTLSInspectionConfiguration(): Request[DescribeTLSInspectionConfigurationResponse, AWSError] = js.native
+  def describeTLSInspectionConfiguration(
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeTLSInspectionConfigurationResponse, Unit]
+  ): Request[DescribeTLSInspectionConfigurationResponse, AWSError] = js.native
+  /**
+    * Returns the data objects for the specified TLS inspection configuration.
+    */
+  def describeTLSInspectionConfiguration(params: DescribeTLSInspectionConfigurationRequest): Request[DescribeTLSInspectionConfigurationResponse, AWSError] = js.native
+  def describeTLSInspectionConfiguration(
+    params: DescribeTLSInspectionConfigurationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeTLSInspectionConfigurationResponse, Unit]
+  ): Request[DescribeTLSInspectionConfigurationResponse, AWSError] = js.native
+  
+  /**
     * Removes the specified subnet associations from the firewall. This removes the firewall endpoints from the subnets and removes any network filtering protections that the endpoints were providing. 
     */
   def disassociateSubnets(): Request[DisassociateSubnetsResponse, AWSError] = js.native
@@ -279,6 +327,22 @@ trait NetworkFirewall extends Service {
     params: ListRuleGroupsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListRuleGroupsResponse, Unit]
   ): Request[ListRuleGroupsResponse, AWSError] = js.native
+  
+  /**
+    * Retrieves the metadata for the TLS inspection configurations that you have defined. Depending on your setting for max results and the number of TLS inspection configurations, a single call might not return the full list.
+    */
+  def listTLSInspectionConfigurations(): Request[ListTLSInspectionConfigurationsResponse, AWSError] = js.native
+  def listTLSInspectionConfigurations(
+    callback: js.Function2[/* err */ AWSError, /* data */ ListTLSInspectionConfigurationsResponse, Unit]
+  ): Request[ListTLSInspectionConfigurationsResponse, AWSError] = js.native
+  /**
+    * Retrieves the metadata for the TLS inspection configurations that you have defined. Depending on your setting for max results and the number of TLS inspection configurations, a single call might not return the full list.
+    */
+  def listTLSInspectionConfigurations(params: ListTLSInspectionConfigurationsRequest): Request[ListTLSInspectionConfigurationsResponse, AWSError] = js.native
+  def listTLSInspectionConfigurations(
+    params: ListTLSInspectionConfigurationsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListTLSInspectionConfigurationsResponse, Unit]
+  ): Request[ListTLSInspectionConfigurationsResponse, AWSError] = js.native
   
   /**
     * Retrieves the tags associated with the specified resource. Tags are key:value pairs that you can use to categorize and manage your resources, for purposes like billing. For example, you might set the tag key to "customer" and the value to the customer name or ID. You can specify one or more tags to add to each Amazon Web Services resource, up to 50 tags for a resource. You can tag the Amazon Web Services resources that you manage through Network Firewall: firewalls, firewall policies, and rule groups. 
@@ -453,4 +517,20 @@ trait NetworkFirewall extends Service {
     params: UpdateSubnetChangeProtectionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateSubnetChangeProtectionResponse, Unit]
   ): Request[UpdateSubnetChangeProtectionResponse, AWSError] = js.native
+  
+  /**
+    * Updates the TLS inspection configuration settings for the specified TLS inspection configuration. You use a TLS inspection configuration by reference in one or more firewall policies. When you modify a TLS inspection configuration, you modify all firewall policies that use the TLS inspection configuration.  To update a TLS inspection configuration, first call DescribeTLSInspectionConfiguration to retrieve the current TLSInspectionConfiguration object, update the object as needed, and then provide the updated object to this call. 
+    */
+  def updateTLSInspectionConfiguration(): Request[UpdateTLSInspectionConfigurationResponse, AWSError] = js.native
+  def updateTLSInspectionConfiguration(
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateTLSInspectionConfigurationResponse, Unit]
+  ): Request[UpdateTLSInspectionConfigurationResponse, AWSError] = js.native
+  /**
+    * Updates the TLS inspection configuration settings for the specified TLS inspection configuration. You use a TLS inspection configuration by reference in one or more firewall policies. When you modify a TLS inspection configuration, you modify all firewall policies that use the TLS inspection configuration.  To update a TLS inspection configuration, first call DescribeTLSInspectionConfiguration to retrieve the current TLSInspectionConfiguration object, update the object as needed, and then provide the updated object to this call. 
+    */
+  def updateTLSInspectionConfiguration(params: UpdateTLSInspectionConfigurationRequest): Request[UpdateTLSInspectionConfigurationResponse, AWSError] = js.native
+  def updateTLSInspectionConfiguration(
+    params: UpdateTLSInspectionConfigurationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateTLSInspectionConfigurationResponse, Unit]
+  ): Request[UpdateTLSInspectionConfigurationResponse, AWSError] = js.native
 }

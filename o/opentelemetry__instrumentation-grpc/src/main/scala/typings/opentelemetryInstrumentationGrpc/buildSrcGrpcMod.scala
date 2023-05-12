@@ -15,14 +15,20 @@ object buildSrcGrpcMod {
     def this(name: String, version: String) = this()
     def this(name: String, version: String, config: GrpcInstrumentationConfig) = this()
     
+    /* private */ var _createMetadataCapture: Any = js.native
+    
     /* private */ var _getInternalPatchs: Any = js.native
     
     /* private */ var _getMethodsToWrap: Any = js.native
     
     /* private */ var _getPatchedClientMethods: Any = js.native
     
+    /* private */ var _metadataCapture: Any = js.native
+    
     /* private */ var _patchClient: Any = js.native
     
     /* private */ var _patchServer: Any = js.native
+    
+    def setConfig(config: GrpcInstrumentationConfig): Unit = js.native
   }
 }

@@ -6,8 +6,8 @@ import typings.adobeAioLibAnalytics.anon.Dimension
 import typings.adobeAioLibAnalytics.anon.Expansion
 import typings.adobeAioLibAnalytics.anon.ExpansionAny
 import typings.adobeAioLibAnalytics.anon.FilterByIds
+import typings.adobeAioLibAnalytics.anon.FirstPage
 import typings.adobeAioLibAnalytics.anon.IncludeType
-import typings.adobeAioLibAnalytics.anon.LastPage
 import typings.adobeAioLibAnalytics.anon.Locale
 import typings.adobeAioLibAnalytics.anon.Page
 import org.scalablytyped.runtime.StObject
@@ -82,11 +82,11 @@ object mod {
   
   trait Report extends StObject {
     
-    var body: LastPage
+    var body: FirstPage
   }
   object Report {
     
-    inline def apply(body: LastPage): Report = {
+    inline def apply(body: FirstPage): Report = {
       val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
       __obj.asInstanceOf[Report]
     }
@@ -94,7 +94,7 @@ object mod {
     @scala.inline
     implicit open class MutableBuilder[Self <: Report] (val x: Self) extends AnyVal {
       
-      inline def setBody(value: LastPage): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: FirstPage): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     }
   }
 }

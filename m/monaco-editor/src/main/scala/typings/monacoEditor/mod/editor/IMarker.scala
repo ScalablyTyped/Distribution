@@ -18,6 +18,8 @@ trait IMarker extends StObject {
   
   var message: String
   
+  var modelVersionId: js.UndefOr[Double] = js.undefined
+  
   var owner: String
   
   var relatedInformation: js.UndefOr[js.Array[IRelatedInformation]] = js.undefined
@@ -62,6 +64,10 @@ object IMarker {
     inline def setEndLineNumber(value: Double): Self = StObject.set(x, "endLineNumber", value.asInstanceOf[js.Any])
     
     inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    
+    inline def setModelVersionId(value: Double): Self = StObject.set(x, "modelVersionId", value.asInstanceOf[js.Any])
+    
+    inline def setModelVersionIdUndefined: Self = StObject.set(x, "modelVersionId", js.undefined)
     
     inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     

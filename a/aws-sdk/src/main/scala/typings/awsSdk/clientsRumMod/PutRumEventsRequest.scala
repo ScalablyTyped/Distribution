@@ -14,12 +14,12 @@ trait PutRumEventsRequest extends StObject {
   /**
     * A unique identifier for this batch of RUM event data.
     */
-  var BatchId: String
+  var BatchId: PutRumEventsRequestBatchIdString
   
   /**
     * The ID of the app monitor that is sending this data.
     */
-  var Id: AppMonitorId
+  var Id: PutRumEventsRequestIdString
   
   /**
     * An array of structures that contain the telemetry event data.
@@ -35,8 +35,8 @@ object PutRumEventsRequest {
   
   inline def apply(
     AppMonitorDetails: AppMonitorDetails,
-    BatchId: String,
-    Id: AppMonitorId,
+    BatchId: PutRumEventsRequestBatchIdString,
+    Id: PutRumEventsRequestIdString,
     RumEvents: RumEventList,
     UserDetails: UserDetails
   ): PutRumEventsRequest = {
@@ -49,9 +49,9 @@ object PutRumEventsRequest {
     
     inline def setAppMonitorDetails(value: AppMonitorDetails): Self = StObject.set(x, "AppMonitorDetails", value.asInstanceOf[js.Any])
     
-    inline def setBatchId(value: String): Self = StObject.set(x, "BatchId", value.asInstanceOf[js.Any])
+    inline def setBatchId(value: PutRumEventsRequestBatchIdString): Self = StObject.set(x, "BatchId", value.asInstanceOf[js.Any])
     
-    inline def setId(value: AppMonitorId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: PutRumEventsRequestIdString): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     inline def setRumEvents(value: RumEventList): Self = StObject.set(x, "RumEvents", value.asInstanceOf[js.Any])
     

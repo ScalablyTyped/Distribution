@@ -3,6 +3,8 @@ package typings.awsSdk.clientsGuarddutyMod
 import org.scalablytyped.runtime.StringDictionary
 import typings.awsSdk.awsSdkStrings.COUNT_BY_SEVERITY
 import typings.awsSdk.awsSdkStrings.EC2_INSTANCE_TAG
+import typings.awsSdk.awsSdkStrings.EKS
+import typings.awsSdk.awsSdkStrings.EKS_ADDON_MANAGEMENT
 import typings.awsSdk.awsSdkStrings.S3
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -28,13 +30,66 @@ type AdminStatus = _AdminStatus | java.lang.String
 
 type AffectedResources = StringDictionary[String]
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.NEW
+  - typings.awsSdk.awsSdkStrings.ALL
+  - typings.awsSdk.awsSdkStrings.NONE
+  - java.lang.String
+*/
+type AutoEnableMembers = _AutoEnableMembers | java.lang.String
+
 type Boolean = scala.Boolean
 
 type ClientToken = java.lang.String
 
 type Containers = js.Array[Container]
 
+type CountByCoverageStatus = StringDictionary[Long]
+
+type CountByResourceType = StringDictionary[Long]
+
 type CountBySeverity = StringDictionary[Integer]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ACCOUNT_ID
+  - typings.awsSdk.awsSdkStrings.CLUSTER_NAME
+  - typings.awsSdk.awsSdkStrings.RESOURCE_TYPE
+  - typings.awsSdk.awsSdkStrings.COVERAGE_STATUS
+  - typings.awsSdk.awsSdkStrings.ADDON_VERSION
+  - java.lang.String
+*/
+type CoverageFilterCriterionKey = _CoverageFilterCriterionKey | java.lang.String
+
+type CoverageFilterCriterionList = js.Array[CoverageFilterCriterion]
+
+type CoverageResources = js.Array[CoverageResource]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ACCOUNT_ID
+  - typings.awsSdk.awsSdkStrings.CLUSTER_NAME
+  - typings.awsSdk.awsSdkStrings.COVERAGE_STATUS
+  - typings.awsSdk.awsSdkStrings.ISSUE
+  - typings.awsSdk.awsSdkStrings.ADDON_VERSION
+  - typings.awsSdk.awsSdkStrings.UPDATED_AT
+  - java.lang.String
+*/
+type CoverageSortKey = _CoverageSortKey | java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.COUNT_BY_RESOURCE_TYPE
+  - typings.awsSdk.awsSdkStrings.COUNT_BY_COVERAGE_STATUS
+  - java.lang.String
+*/
+type CoverageStatisticsType = _CoverageStatisticsType | java.lang.String
+
+type CoverageStatisticsTypeList = js.Array[CoverageStatisticsType]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.HEALTHY
+  - typings.awsSdk.awsSdkStrings.UNHEALTHY
+  - java.lang.String
+*/
+type CoverageStatus = _CoverageStatus | java.lang.String
 
 type Criterion = StringDictionary[Condition]
 
@@ -45,6 +100,7 @@ type Criterion = StringDictionary[Condition]
   - typings.awsSdk.awsSdkStrings.GUARDDUTY_FINDING_ID
   - typings.awsSdk.awsSdkStrings.SCAN_START_TIME
   - typings.awsSdk.awsSdkStrings.SCAN_STATUS
+  - typings.awsSdk.awsSdkStrings.SCAN_TYPE
   - java.lang.String
 */
 type CriterionKey = _CriterionKey | java.lang.String
@@ -73,6 +129,39 @@ type DestinationType = S3 | java.lang.String
 
 type Destinations = js.Array[Destination]
 
+type DetectorAdditionalConfigurationResults = js.Array[DetectorAdditionalConfigurationResult]
+
+type DetectorAdditionalConfigurations = js.Array[DetectorAdditionalConfiguration]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.S3_DATA_EVENTS
+  - typings.awsSdk.awsSdkStrings.EKS_AUDIT_LOGS
+  - typings.awsSdk.awsSdkStrings.EBS_MALWARE_PROTECTION
+  - typings.awsSdk.awsSdkStrings.RDS_LOGIN_EVENTS
+  - typings.awsSdk.awsSdkStrings.EKS_RUNTIME_MONITORING
+  - typings.awsSdk.awsSdkStrings.LAMBDA_NETWORK_LOGS
+  - java.lang.String
+*/
+type DetectorFeature = _DetectorFeature | java.lang.String
+
+type DetectorFeatureConfigurations = js.Array[DetectorFeatureConfiguration]
+
+type DetectorFeatureConfigurationsResults = js.Array[DetectorFeatureConfigurationResult]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.FLOW_LOGS
+  - typings.awsSdk.awsSdkStrings.CLOUD_TRAIL
+  - typings.awsSdk.awsSdkStrings.DNS_LOGS
+  - typings.awsSdk.awsSdkStrings.S3_DATA_EVENTS
+  - typings.awsSdk.awsSdkStrings.EKS_AUDIT_LOGS
+  - typings.awsSdk.awsSdkStrings.EBS_MALWARE_PROTECTION
+  - typings.awsSdk.awsSdkStrings.RDS_LOGIN_EVENTS
+  - typings.awsSdk.awsSdkStrings.EKS_RUNTIME_MONITORING
+  - typings.awsSdk.awsSdkStrings.LAMBDA_NETWORK_LOGS
+  - java.lang.String
+*/
+type DetectorFeatureResult = _DetectorFeatureResult | java.lang.String
+
 type DetectorId = java.lang.String
 
 type DetectorIds = js.Array[DetectorId]
@@ -98,6 +187,15 @@ type Email = java.lang.String
 type Eq = js.Array[String]
 
 type Equals = js.Array[String]
+
+type FeatureAdditionalConfiguration = EKS_ADDON_MANAGEMENT | java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ENABLED
+  - typings.awsSdk.awsSdkStrings.DISABLED
+  - java.lang.String
+*/
+type FeatureStatus = _FeatureStatus | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.USEFUL
@@ -147,6 +245,24 @@ type FindingTypes = js.Array[FindingType]
 
 type Findings = js.Array[Finding]
 
+type FlagsList = js.Array[String]
+
+type FreeTrialFeatureConfigurationsResults = js.Array[FreeTrialFeatureConfigurationResult]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.FLOW_LOGS
+  - typings.awsSdk.awsSdkStrings.CLOUD_TRAIL
+  - typings.awsSdk.awsSdkStrings.DNS_LOGS
+  - typings.awsSdk.awsSdkStrings.S3_DATA_EVENTS
+  - typings.awsSdk.awsSdkStrings.EKS_AUDIT_LOGS
+  - typings.awsSdk.awsSdkStrings.EBS_MALWARE_PROTECTION
+  - typings.awsSdk.awsSdkStrings.RDS_LOGIN_EVENTS
+  - typings.awsSdk.awsSdkStrings.EKS_RUNTIME_MONITORING
+  - typings.awsSdk.awsSdkStrings.LAMBDA_NETWORK_LOGS
+  - java.lang.String
+*/
+type FreeTrialFeatureResult = _FreeTrialFeatureResult | java.lang.String
+
 type Groups = js.Array[String]
 
 type GuardDutyArn = java.lang.String
@@ -186,7 +302,11 @@ type IpSetStatus = _IpSetStatus | java.lang.String
 
 type Ipv6Addresses = js.Array[String]
 
+type Lineage = js.Array[LineageObject]
+
 type Location = java.lang.String
+
+type LoginAttributes = js.Array[LoginAttribute]
 
 type Long = scala.Double
 
@@ -196,9 +316,19 @@ type MapEquals = js.Array[ScanConditionPair]
 
 type MaxResults = scala.Double
 
+type MemberAdditionalConfigurationResults = js.Array[MemberAdditionalConfigurationResult]
+
+type MemberAdditionalConfigurations = js.Array[MemberAdditionalConfiguration]
+
 type MemberDataSourceConfigurations = js.Array[MemberDataSourceConfiguration]
 
+type MemberFeaturesConfigurations = js.Array[MemberFeaturesConfiguration]
+
+type MemberFeaturesConfigurationsResults = js.Array[MemberFeaturesConfigurationResult]
+
 type Members = js.Array[Member]
+
+type MemoryRegionsList = js.Array[String]
 
 type Name = java.lang.String
 
@@ -217,6 +347,34 @@ type NotEquals = js.Array[String]
 */
 type OrderBy = _OrderBy | java.lang.String
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.S3_DATA_EVENTS
+  - typings.awsSdk.awsSdkStrings.EKS_AUDIT_LOGS
+  - typings.awsSdk.awsSdkStrings.EBS_MALWARE_PROTECTION
+  - typings.awsSdk.awsSdkStrings.RDS_LOGIN_EVENTS
+  - typings.awsSdk.awsSdkStrings.EKS_RUNTIME_MONITORING
+  - typings.awsSdk.awsSdkStrings.LAMBDA_NETWORK_LOGS
+  - java.lang.String
+*/
+type OrgFeature = _OrgFeature | java.lang.String
+
+type OrgFeatureAdditionalConfiguration = EKS_ADDON_MANAGEMENT | java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.NEW
+  - typings.awsSdk.awsSdkStrings.NONE
+  - java.lang.String
+*/
+type OrgFeatureStatus = _OrgFeatureStatus | java.lang.String
+
+type OrganizationAdditionalConfigurationResults = js.Array[OrganizationAdditionalConfigurationResult]
+
+type OrganizationAdditionalConfigurations = js.Array[OrganizationAdditionalConfiguration]
+
+type OrganizationFeaturesConfigurations = js.Array[OrganizationFeatureConfiguration]
+
+type OrganizationFeaturesConfigurationsResults = js.Array[OrganizationFeatureConfigurationResult]
+
 type PortProbeDetails = js.Array[PortProbeDetail]
 
 type PositiveLong = scala.Double
@@ -234,7 +392,11 @@ type ProductCodes = js.Array[ProductCode]
 */
 type PublishingStatus = _PublishingStatus | java.lang.String
 
+type ResourceArn = java.lang.String
+
 type ResourceList = js.Array[String]
+
+type ResourceType = EKS | java.lang.String
 
 type S3BucketDetails = js.Array[S3BucketDetail]
 
@@ -253,11 +415,19 @@ type ScanResult = _ScanResult | java.lang.String
   - typings.awsSdk.awsSdkStrings.RUNNING
   - typings.awsSdk.awsSdkStrings.COMPLETED
   - typings.awsSdk.awsSdkStrings.FAILED
+  - typings.awsSdk.awsSdkStrings.SKIPPED
   - java.lang.String
 */
 type ScanStatus = _ScanStatus | java.lang.String
 
 type ScanThreatNames = js.Array[ScanThreatName]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.GUARDDUTY_INITIATED
+  - typings.awsSdk.awsSdkStrings.ON_DEMAND
+  - java.lang.String
+*/
+type ScanType = _ScanType | java.lang.String
 
 type Scans = js.Array[Scan]
 
@@ -268,6 +438,8 @@ type SourceIps = js.Array[String]
 type Sources = js.Array[String]
 
 type String = java.lang.String
+
+type SubnetIds = js.Array[String]
 
 type TagKey = java.lang.String
 
@@ -316,6 +488,24 @@ type UsageAccountResultList = js.Array[UsageAccountResult]
 
 type UsageDataSourceResultList = js.Array[UsageDataSourceResult]
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.FLOW_LOGS
+  - typings.awsSdk.awsSdkStrings.CLOUD_TRAIL
+  - typings.awsSdk.awsSdkStrings.DNS_LOGS
+  - typings.awsSdk.awsSdkStrings.S3_DATA_EVENTS
+  - typings.awsSdk.awsSdkStrings.EKS_AUDIT_LOGS
+  - typings.awsSdk.awsSdkStrings.EBS_MALWARE_PROTECTION
+  - typings.awsSdk.awsSdkStrings.RDS_LOGIN_EVENTS
+  - typings.awsSdk.awsSdkStrings.LAMBDA_NETWORK_LOGS
+  - typings.awsSdk.awsSdkStrings.EKS_RUNTIME_MONITORING
+  - java.lang.String
+*/
+type UsageFeature = _UsageFeature | java.lang.String
+
+type UsageFeatureList = js.Array[UsageFeature]
+
+type UsageFeatureResultList = js.Array[UsageFeatureResult]
+
 type UsageResourceResultList = js.Array[UsageResourceResult]
 
 /* Rewritten from type alias, can be one of: 
@@ -323,6 +513,7 @@ type UsageResourceResultList = js.Array[UsageResourceResult]
   - typings.awsSdk.awsSdkStrings.SUM_BY_DATA_SOURCE
   - typings.awsSdk.awsSdkStrings.SUM_BY_RESOURCE
   - typings.awsSdk.awsSdkStrings.TOP_RESOURCES
+  - typings.awsSdk.awsSdkStrings.SUM_BY_FEATURES
   - java.lang.String
 */
 type UsageStatisticType = _UsageStatisticType | java.lang.String

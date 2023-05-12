@@ -15,6 +15,7 @@ import typings.electron.Electron.IpcRenderer
 import typings.electron.Electron.NativeTheme
 import typings.electron.Electron.Net
 import typings.electron.Electron.NetLog
+import typings.electron.Electron.ParentPort
 import typings.electron.Electron.PowerMonitor
 import typings.electron.Electron.PowerSaveBlocker
 import typings.electron.Electron.Protocol
@@ -59,6 +60,8 @@ inline def nativeTheme: NativeTheme = ^.asInstanceOf[js.Dynamic].selectDynamic("
 inline def net: Net = ^.asInstanceOf[js.Dynamic].selectDynamic("net").asInstanceOf[Net]
 
 inline def netLog: NetLog = ^.asInstanceOf[js.Dynamic].selectDynamic("netLog").asInstanceOf[NetLog]
+
+inline def parentPort: ParentPort = ^.asInstanceOf[js.Dynamic].selectDynamic("parentPort").asInstanceOf[ParentPort]
 
 inline def powerMonitor: PowerMonitor = ^.asInstanceOf[js.Dynamic].selectDynamic("powerMonitor").asInstanceOf[PowerMonitor]
 

@@ -7,6 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DrilldownBreadcrumbsSeparatorStyleOptions extends StObject {
   
   var color: js.UndefOr[String] = js.undefined
+  
+  var fontSize: js.UndefOr[Double] = js.undefined
 }
 object DrilldownBreadcrumbsSeparatorStyleOptions {
   
@@ -21,5 +23,9 @@ object DrilldownBreadcrumbsSeparatorStyleOptions {
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+    
+    inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
   }
 }

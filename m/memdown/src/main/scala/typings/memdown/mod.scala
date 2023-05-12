@@ -21,7 +21,7 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("memdown", "MemDown")
   @js.native
-  // tslint:disable-next-line no-unnecessary-generics
+  // eslint-disable-next-line no-unnecessary-generics
   open class MemDownCls[K, V] ()
     extends StObject
        with AbstractLevelDOWN[K, V]
@@ -29,7 +29,7 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("memdown", JSImport.Default)
   @js.native
-  // tslint:disable-next-line no-unnecessary-generics
+  // eslint-disable-next-line no-unnecessary-generics
   open class defaultCls[K, V] ()
     extends StObject
        with AbstractLevelDOWN[K, V]
@@ -37,10 +37,10 @@ object mod extends Shortcut {
   @js.native
   trait MemDownConstructor
     extends StObject
-       with // tslint:disable-next-line no-unnecessary-generics
+       with // eslint-disable-next-line no-unnecessary-generics
   Instantiable0[typings.memdown.mod.MemDown[js.Object, js.Object]] {
     
-    // tslint:disable-next-line no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
     def apply[K, V](): typings.memdown.mod.MemDown[K, V] = js.native
   }
   

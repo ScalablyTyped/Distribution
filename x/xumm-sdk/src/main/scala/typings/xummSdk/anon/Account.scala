@@ -31,6 +31,8 @@ trait Account extends StObject {
   
   var signer: String | Null
   
+  var signer_pubkey: js.UndefOr[String] = js.undefined
+  
   var txid: String | Null
   
   var user: String | Null
@@ -92,6 +94,10 @@ object Account {
     inline def setSigner(value: String): Self = StObject.set(x, "signer", value.asInstanceOf[js.Any])
     
     inline def setSignerNull: Self = StObject.set(x, "signer", null)
+    
+    inline def setSigner_pubkey(value: String): Self = StObject.set(x, "signer_pubkey", value.asInstanceOf[js.Any])
+    
+    inline def setSigner_pubkeyUndefined: Self = StObject.set(x, "signer_pubkey", js.undefined)
     
     inline def setTxid(value: String): Self = StObject.set(x, "txid", value.asInstanceOf[js.Any])
     

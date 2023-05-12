@@ -13,6 +13,8 @@ trait TSTypeParameter__
   
   var default: js.UndefOr[TSType | Null] = js.undefined
   
+  var const: js.UndefOr[Boolean | Null] = js.undefined
+  
   var constraint: js.UndefOr[TSType | Null] = js.undefined
   
   var in: js.UndefOr[Boolean | Null] = js.undefined
@@ -34,6 +36,12 @@ object TSTypeParameter__ {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: TSTypeParameter__] (val x: Self) extends AnyVal {
+    
+    inline def setConst(value: Boolean): Self = StObject.set(x, "const", value.asInstanceOf[js.Any])
+    
+    inline def setConstNull: Self = StObject.set(x, "const", null)
+    
+    inline def setConstUndefined: Self = StObject.set(x, "const", js.undefined)
     
     inline def setConstraint(value: TSType): Self = StObject.set(x, "constraint", value.asInstanceOf[js.Any])
     

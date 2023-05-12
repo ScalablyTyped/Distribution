@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("THREE.Object3D")
 @js.native
+/**
+  * This creates a new {@link Object3D} object.
+  */
 open class Object3D[E /* <: BaseEvent */] ()
   extends typings.three.mod.Object3D[E]
 /* static members */
@@ -16,18 +19,31 @@ object Object3D {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSGlobal("THREE.Object3D.DefaultMatrixAutoUpdate")
+  /**
+    * The default setting for {@link matrixAutoUpdate} for newly created Object3Ds.
+    * @defaultValue `true`
+    */
+  @JSGlobal("THREE.Object3D.DEFAULT_MATRIX_AUTO_UPDATE")
   @js.native
-  def DefaultMatrixAutoUpdate: Boolean = js.native
-  inline def DefaultMatrixAutoUpdate_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultMatrixAutoUpdate")(x.asInstanceOf[js.Any])
+  def DEFAULT_MATRIX_AUTO_UPDATE: Boolean = js.native
+  inline def DEFAULT_MATRIX_AUTO_UPDATE_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_MATRIX_AUTO_UPDATE")(x.asInstanceOf[js.Any])
   
-  @JSGlobal("THREE.Object3D.DefaultMatrixWorldAutoUpdate")
+  /**
+    * The default setting for {@link matrixWorldAutoUpdate} for newly created Object3Ds.
+    * @defaultValue `true`
+    */
+  @JSGlobal("THREE.Object3D.DEFAULT_MATRIX_WORLD_AUTO_UPDATE")
   @js.native
-  def DefaultMatrixWorldAutoUpdate: Boolean = js.native
-  inline def DefaultMatrixWorldAutoUpdate_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultMatrixWorldAutoUpdate")(x.asInstanceOf[js.Any])
+  def DEFAULT_MATRIX_WORLD_AUTO_UPDATE: Boolean = js.native
+  inline def DEFAULT_MATRIX_WORLD_AUTO_UPDATE_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_MATRIX_WORLD_AUTO_UPDATE")(x.asInstanceOf[js.Any])
   
-  @JSGlobal("THREE.Object3D.DefaultUp")
+  /**
+    * The default {@link up} direction for objects, also used as the default position for {@link THREE.DirectionalLight | DirectionalLight},
+    * {@link THREE.HemisphereLight | HemisphereLight} and {@link THREE.Spotlight | Spotlight} (which creates lights shining from the top down).
+    * @defaultValue `new THREE.Vector3( 0, 1, 0)`
+    */
+  @JSGlobal("THREE.Object3D.DEFAULT_UP")
   @js.native
-  def DefaultUp: typings.three.srcMathVector3Mod.Vector3 = js.native
-  inline def DefaultUp_=(x: typings.three.srcMathVector3Mod.Vector3): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultUp")(x.asInstanceOf[js.Any])
+  def DEFAULT_UP: typings.three.srcMathVector3Mod.Vector3 = js.native
+  inline def DEFAULT_UP_=(x: typings.three.srcMathVector3Mod.Vector3): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_UP")(x.asInstanceOf[js.Any])
 }

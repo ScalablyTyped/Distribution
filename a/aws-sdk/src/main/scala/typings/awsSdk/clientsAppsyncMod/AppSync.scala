@@ -267,6 +267,20 @@ trait AppSync extends Service {
   ): Request[DisassociateApiResponse, AWSError] = js.native
   
   /**
+    * Evaluates the given code and returns the response. The code definition requirements depend on the specified runtime. For APPSYNC_JS runtimes, the code defines the request and response functions. The request function takes the incoming request after a GraphQL operation is parsed and converts it into a request configuration for the selected data source operation. The response function interprets responses from the data source and maps it to the shape of the GraphQL field output type. 
+    */
+  def evaluateCode(): Request[EvaluateCodeResponse, AWSError] = js.native
+  def evaluateCode(callback: js.Function2[/* err */ AWSError, /* data */ EvaluateCodeResponse, Unit]): Request[EvaluateCodeResponse, AWSError] = js.native
+  /**
+    * Evaluates the given code and returns the response. The code definition requirements depend on the specified runtime. For APPSYNC_JS runtimes, the code defines the request and response functions. The request function takes the incoming request after a GraphQL operation is parsed and converts it into a request configuration for the selected data source operation. The response function interprets responses from the data source and maps it to the shape of the GraphQL field output type. 
+    */
+  def evaluateCode(params: EvaluateCodeRequest): Request[EvaluateCodeResponse, AWSError] = js.native
+  def evaluateCode(
+    params: EvaluateCodeRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ EvaluateCodeResponse, Unit]
+  ): Request[EvaluateCodeResponse, AWSError] = js.native
+  
+  /**
     * Evaluates a given template and returns the response. The mapping template can be a request or response template. Request templates take the incoming request after a GraphQL operation is parsed and convert it into a request configuration for the selected data source operation. Response templates interpret responses from the data source and map it to the shape of the GraphQL field output type. Mapping templates are written in the Apache Velocity Template Language (VTL).
     */
   def evaluateMappingTemplate(): Request[EvaluateMappingTemplateResponse, AWSError] = js.native

@@ -1,8 +1,6 @@
 package typings.nivoScales
 
 import typings.nivoScales.distTypesTimeHelpersMod.TIME_PRECISION
-import typings.nivoScales.distTypesTypesMod.AnyScale
-import typings.nivoScales.distTypesTypesMod.Scale
 import typings.nivoScales.distTypesTypesMod.ScaleAxis
 import typings.nivoScales.distTypesTypesMod.ScaleSpec
 import typings.nivoScales.distTypesTypesMod.ScaleType
@@ -143,8 +141,6 @@ object nivoScalesStrings {
   @js.native
   sealed trait stacked
     extends StObject
-       with AnyScale
-       with Scale[Any, Any]
        with ScaleSpec
   inline def stacked: stacked = "stacked".asInstanceOf[stacked]
   
@@ -163,16 +159,12 @@ object nivoScalesStrings {
   @js.native
   sealed trait `type`
     extends StObject
-       with AnyScale
-       with Scale[Any, Any]
        with ScaleSpec
   inline def `type`: `type` = "type".asInstanceOf[`type`]
   
   @js.native
   sealed trait useUTC
     extends StObject
-       with AnyScale
-       with Scale[Any, Any]
        with ScaleSpec
   inline def useUTC: useUTC = "useUTC".asInstanceOf[useUTC]
   

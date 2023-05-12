@@ -10,12 +10,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait VendorExtensions
   extends StObject
      with EdgeCapabilities
-     with AppiumW3CCapabilities
+     with AppiumCapabilities
      with WDIODevtoolsOptions
      with WDIOVSCodeServiceOptions {
   
+  @JSName("LT:Options")
+  var LTColonOptions: js.UndefOr[LambdaTestCapabilities] = js.undefined
+  
+  @JSName("browserstack.buildIdentifier")
+  var browserstackDotbuildIdentifier: js.UndefOr[String] = js.undefined
+  
   @JSName("browserstack.local")
   var browserstackDotlocal: js.UndefOr[Boolean] = js.undefined
+  
+  @JSName("browserstack.localIdentifier")
+  var browserstackDotlocalIdentifier: js.UndefOr[String] = js.undefined
   
   /**
     * @private
@@ -38,7 +47,7 @@ trait VendorExtensions
   var moonColonoptions: js.UndefOr[MoonOptions] = js.undefined
   
   @JSName("moz:debuggerAddress")
-  var mozColondebuggerAddress: js.UndefOr[Boolean] = js.undefined
+  var mozColondebuggerAddress: js.UndefOr[String | Double] = js.undefined
   
   @JSName("moz:firefoxOptions")
   var mozColonfirefoxOptions: js.UndefOr[FirefoxOptions] = js.undefined
@@ -91,7 +100,15 @@ object VendorExtensions {
   @scala.inline
   implicit open class MutableBuilder[Self <: VendorExtensions] (val x: Self) extends AnyVal {
     
+    inline def setBrowserstackDotbuildIdentifier(value: String): Self = StObject.set(x, "browserstack.buildIdentifier", value.asInstanceOf[js.Any])
+    
+    inline def setBrowserstackDotbuildIdentifierUndefined: Self = StObject.set(x, "browserstack.buildIdentifier", js.undefined)
+    
     inline def setBrowserstackDotlocal(value: Boolean): Self = StObject.set(x, "browserstack.local", value.asInstanceOf[js.Any])
+    
+    inline def setBrowserstackDotlocalIdentifier(value: String): Self = StObject.set(x, "browserstack.localIdentifier", value.asInstanceOf[js.Any])
+    
+    inline def setBrowserstackDotlocalIdentifierUndefined: Self = StObject.set(x, "browserstack.localIdentifier", js.undefined)
     
     inline def setBrowserstackDotlocalUndefined: Self = StObject.set(x, "browserstack.local", js.undefined)
     
@@ -115,11 +132,15 @@ object VendorExtensions {
     
     inline def setGoogColonchromeOptionsUndefined: Self = StObject.set(x, "goog:chromeOptions", js.undefined)
     
+    inline def setLTColonOptions(value: LambdaTestCapabilities): Self = StObject.set(x, "LT:Options", value.asInstanceOf[js.Any])
+    
+    inline def setLTColonOptionsUndefined: Self = StObject.set(x, "LT:Options", js.undefined)
+    
     inline def setMoonColonoptions(value: MoonOptions): Self = StObject.set(x, "moon:options", value.asInstanceOf[js.Any])
     
     inline def setMoonColonoptionsUndefined: Self = StObject.set(x, "moon:options", js.undefined)
     
-    inline def setMozColondebuggerAddress(value: Boolean): Self = StObject.set(x, "moz:debuggerAddress", value.asInstanceOf[js.Any])
+    inline def setMozColondebuggerAddress(value: String | Double): Self = StObject.set(x, "moz:debuggerAddress", value.asInstanceOf[js.Any])
     
     inline def setMozColondebuggerAddressUndefined: Self = StObject.set(x, "moz:debuggerAddress", js.undefined)
     

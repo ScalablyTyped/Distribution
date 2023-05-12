@@ -27,7 +27,7 @@ trait GetContactResult extends StObject {
   var Plan: typings.awsSdk.clientsSsmcontactsMod.Plan
   
   /**
-    * The type of contact, either PERSONAL or ESCALATION. 
+    * The type of contact, either PERSONAL or ESCALATION.
     */
   var Type: ContactType
 }

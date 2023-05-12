@@ -14,9 +14,6 @@ open class WriteConcernError protected () extends StObject {
   /** Write concern error code. */
   def code: js.UndefOr[scala.Double] = js.native
   
-  /** @deprecated The `err` prop that contained a MongoServerError has been deprecated. */
-  def err: WriteConcernErrorData = js.native
-  
   /** Write concern error info. */
   def errInfo: js.UndefOr[Document] = js.native
   

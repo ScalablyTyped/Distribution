@@ -8,13 +8,13 @@ trait UserExperienceAnalyticsDevicePerformance
   extends StObject
      with Entity {
   
-  // Average (mean) number of Blue Screens per device in the last 14 days. Valid values 0 to 9999999
+  // Average (mean) number of Blue Screens per device in the last 30 days. Valid values 0 to 9999999
   var averageBlueScreens: js.UndefOr[Double] = js.undefined
   
-  // Average (mean) number of Restarts per device in the last 14 days. Valid values 0 to 9999999
+  // Average (mean) number of Restarts per device in the last 30 days. Valid values 0 to 9999999
   var averageRestarts: js.UndefOr[Double] = js.undefined
   
-  // Number of Blue Screens in the last 14 days. Valid values 0 to 9999999
+  // Number of Blue Screens in the last 30 days. Valid values 0 to 9999999
   var blueScreenCount: js.UndefOr[Double] = js.undefined
   
   // The user experience analytics device boot score.
@@ -65,7 +65,7 @@ trait UserExperienceAnalyticsDevicePerformance
   // The user experience analytics responsive desktop time in milliseconds.
   var responsiveDesktopTimeInMs: js.UndefOr[Double] = js.undefined
   
-  // Number of Restarts in the last 14 days. Valid values 0 to 9999999
+  // Number of Restarts in the last 30 days. Valid values 0 to 9999999
   var restartCount: js.UndefOr[Double] = js.undefined
   
   /**

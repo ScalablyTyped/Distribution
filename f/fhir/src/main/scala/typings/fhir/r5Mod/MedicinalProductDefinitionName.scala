@@ -11,14 +11,9 @@ trait MedicinalProductDefinitionName
   var _productName: js.UndefOr[Element] = js.undefined
   
   /**
-    * Country where the name applies.
-    */
-  var countryLanguage: js.UndefOr[js.Array[MedicinalProductDefinitionNameCountryLanguage]] = js.undefined
-  
-  /**
     * Coding words or phrases of the name.
     */
-  var namePart: js.UndefOr[js.Array[MedicinalProductDefinitionNameNamePart]] = js.undefined
+  var part: js.UndefOr[js.Array[MedicinalProductDefinitionNamePart]] = js.undefined
   
   /**
     * The full product name.
@@ -29,6 +24,11 @@ trait MedicinalProductDefinitionName
     * Type of product name, such as rINN, BAN, Proprietary, Non-Proprietary.
     */
   var `type`: js.UndefOr[CodeableConcept] = js.undefined
+  
+  /**
+    * Country and jurisdiction where the name applies, and associated language.
+    */
+  var usage: js.UndefOr[js.Array[MedicinalProductDefinitionNameUsage]] = js.undefined
 }
 object MedicinalProductDefinitionName {
   
@@ -40,23 +40,23 @@ object MedicinalProductDefinitionName {
   @scala.inline
   implicit open class MutableBuilder[Self <: MedicinalProductDefinitionName] (val x: Self) extends AnyVal {
     
-    inline def setCountryLanguage(value: js.Array[MedicinalProductDefinitionNameCountryLanguage]): Self = StObject.set(x, "countryLanguage", value.asInstanceOf[js.Any])
+    inline def setPart(value: js.Array[MedicinalProductDefinitionNamePart]): Self = StObject.set(x, "part", value.asInstanceOf[js.Any])
     
-    inline def setCountryLanguageUndefined: Self = StObject.set(x, "countryLanguage", js.undefined)
+    inline def setPartUndefined: Self = StObject.set(x, "part", js.undefined)
     
-    inline def setCountryLanguageVarargs(value: MedicinalProductDefinitionNameCountryLanguage*): Self = StObject.set(x, "countryLanguage", js.Array(value*))
-    
-    inline def setNamePart(value: js.Array[MedicinalProductDefinitionNameNamePart]): Self = StObject.set(x, "namePart", value.asInstanceOf[js.Any])
-    
-    inline def setNamePartUndefined: Self = StObject.set(x, "namePart", js.undefined)
-    
-    inline def setNamePartVarargs(value: MedicinalProductDefinitionNameNamePart*): Self = StObject.set(x, "namePart", js.Array(value*))
+    inline def setPartVarargs(value: MedicinalProductDefinitionNamePart*): Self = StObject.set(x, "part", js.Array(value*))
     
     inline def setProductName(value: String): Self = StObject.set(x, "productName", value.asInstanceOf[js.Any])
     
     inline def setType(value: CodeableConcept): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    
+    inline def setUsage(value: js.Array[MedicinalProductDefinitionNameUsage]): Self = StObject.set(x, "usage", value.asInstanceOf[js.Any])
+    
+    inline def setUsageUndefined: Self = StObject.set(x, "usage", js.undefined)
+    
+    inline def setUsageVarargs(value: MedicinalProductDefinitionNameUsage*): Self = StObject.set(x, "usage", js.Array(value*))
     
     inline def set_productName(value: Element): Self = StObject.set(x, "_productName", value.asInstanceOf[js.Any])
     

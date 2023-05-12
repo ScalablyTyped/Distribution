@@ -1,7 +1,7 @@
 
 # Scala.js typings for vscode-oniguruma
 
-Typings are for version 1.6.2
+Typings are for version 1.7.0
 
 ## Library description:
 VSCode oniguruma bindings

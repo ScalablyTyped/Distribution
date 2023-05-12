@@ -12,7 +12,7 @@ trait BackgroundImage extends StObject {
   var backgroundColor: js.UndefOr[String] = js.undefined
   
   /**
-    * Local path or remote URL to a background image for your app's Adaptive Icon on Android. If specified, this overrides the `backgroundColor` key. Must have the same dimensions as  foregroundImage`, and has no effect if `foregroundImage` is not specified. Should follow the [specified guidelines](https://developer.android.com/guide/practices/ui_guidelines/icon_design_adaptive).
+    * Local path or remote URL to a background image for your app's Adaptive Icon on Android. If specified, this overrides the `backgroundColor` key. Must have the same dimensions as `foregroundImage`, and has no effect if `foregroundImage` is not specified. Should follow the [specified guidelines](https://developer.android.com/guide/practices/ui_guidelines/icon_design_adaptive).
     */
   var backgroundImage: js.UndefOr[String] = js.undefined
   
@@ -20,6 +20,11 @@ trait BackgroundImage extends StObject {
     * Local path or remote URL to an image to use for your app's icon on Android. If specified, this overrides the top-level `icon` and the `android.icon` keys. Should follow the [specified guidelines](https://developer.android.com/guide/practices/ui_guidelines/icon_design_adaptive). This icon will appear on the home screen.
     */
   var foregroundImage: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Local path or remote URL to an image representing the Android 13+ monochromatic icon. Should follow the [specified guidelines](https://developer.android.com/guide/practices/ui_guidelines/icon_design_adaptive). This icon will appear on the home screen when the user enables 'Themed icons' in system settings on a device running Android 13+.
+    */
+  var monochromeImage: js.UndefOr[String] = js.undefined
 }
 object BackgroundImage {
   
@@ -42,5 +47,9 @@ object BackgroundImage {
     inline def setForegroundImage(value: String): Self = StObject.set(x, "foregroundImage", value.asInstanceOf[js.Any])
     
     inline def setForegroundImageUndefined: Self = StObject.set(x, "foregroundImage", js.undefined)
+    
+    inline def setMonochromeImage(value: String): Self = StObject.set(x, "monochromeImage", value.asInstanceOf[js.Any])
+    
+    inline def setMonochromeImageUndefined: Self = StObject.set(x, "monochromeImage", js.undefined)
   }
 }

@@ -10,7 +10,7 @@ trait RepoShaUser extends StObject {
   
   var ref: String
   
-  var repo: Deploymentsurl
+  var repo: Defaultbranch
   
   var sha: String
   
@@ -18,7 +18,7 @@ trait RepoShaUser extends StObject {
 }
 object RepoShaUser {
   
-  inline def apply(label: String, ref: String, repo: Deploymentsurl, sha: String, user: Gistsurl): RepoShaUser = {
+  inline def apply(label: String, ref: String, repo: Defaultbranch, sha: String, user: Gistsurl): RepoShaUser = {
     val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any], sha = sha.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
     __obj.asInstanceOf[RepoShaUser]
   }
@@ -30,7 +30,7 @@ object RepoShaUser {
     
     inline def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
-    inline def setRepo(value: Deploymentsurl): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(value: Defaultbranch): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
     
     inline def setSha(value: String): Self = StObject.set(x, "sha", value.asInstanceOf[js.Any])
     

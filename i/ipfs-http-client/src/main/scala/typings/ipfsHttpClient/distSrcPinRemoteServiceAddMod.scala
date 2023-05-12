@@ -14,11 +14,11 @@ object distSrcPinRemoteServiceAddMod {
   
   inline def createAdd(client: Client): js.Function2[
     /* name */ String, 
-    /* options */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_service.Credentials */ Any) & AbortOptions & typings.ipfsHttpClient.distSrcTypesMod.HTTPClientExtraOptions, 
+    /* credentials */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_service.Credentials */ Any) & AbortOptions & typings.ipfsHttpClient.distSrcTypesMod.HTTPClientExtraOptions, 
     js.Promise[Unit]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAdd")(client.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
     /* name */ String, 
-    /* options */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_service.Credentials */ Any) & AbortOptions & typings.ipfsHttpClient.distSrcTypesMod.HTTPClientExtraOptions, 
+    /* credentials */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_service.Credentials */ Any) & AbortOptions & typings.ipfsHttpClient.distSrcTypesMod.HTTPClientExtraOptions, 
     js.Promise[Unit]
   ]]
   

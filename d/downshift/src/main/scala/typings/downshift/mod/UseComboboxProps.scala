@@ -64,6 +64,8 @@ trait UseComboboxProps[Item] extends StObject {
   
   var selectedItem: js.UndefOr[Item | Null] = js.undefined
   
+  var selectedItemChanged: js.UndefOr[js.Function2[/* prevItem */ Item, /* item */ Item, Boolean]] = js.undefined
+  
   var stateReducer: js.UndefOr[
     js.Function2[
       /* state */ UseComboboxState[Item], 
@@ -197,6 +199,10 @@ object UseComboboxProps {
     inline def setScrollIntoViewUndefined: Self = StObject.set(x, "scrollIntoView", js.undefined)
     
     inline def setSelectedItem(value: Item): Self = StObject.set(x, "selectedItem", value.asInstanceOf[js.Any])
+    
+    inline def setSelectedItemChanged(value: (/* prevItem */ Item, /* item */ Item) => Boolean): Self = StObject.set(x, "selectedItemChanged", js.Any.fromFunction2(value))
+    
+    inline def setSelectedItemChangedUndefined: Self = StObject.set(x, "selectedItemChanged", js.undefined)
     
     inline def setSelectedItemNull: Self = StObject.set(x, "selectedItem", null)
     

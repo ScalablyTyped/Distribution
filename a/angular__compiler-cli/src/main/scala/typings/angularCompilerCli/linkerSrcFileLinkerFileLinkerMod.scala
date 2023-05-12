@@ -85,16 +85,16 @@ object linkerSrcFileLinkerFileLinkerMod {
     ): js.Array[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Array[S]]
     
     inline def find[S /* <: Any */](
-      predicate: js.ThisFunction3[
-          /* this */ Unit, 
-          /* value */ Any, 
-          /* index */ Double, 
-          /* obj */ js.Array[Any], 
-          /* is S */ Boolean
-        ]
+      predicate: js.Function3[/* value */ Any, /* index */ Double, /* obj */ js.Array[Any], /* is S */ Boolean]
     ): js.UndefOr[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("find")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[S]]
     
     inline def findIndex(predicate: js.Function3[/* value */ Any, /* index */ Double, /* obj */ js.Array[Any], Any]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("findIndex")(predicate.asInstanceOf[js.Any]).asInstanceOf[Double]
+    
+    inline def findLast[S /* <: Any */](
+      predicate: js.Function3[/* value */ Any, /* index */ Double, /* array */ js.Array[Any], /* is S */ Boolean]
+    ): js.UndefOr[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("findLast")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[S]]
+    
+    inline def findLastIndex(predicate: js.Function3[/* value */ Any, /* index */ Double, /* array */ js.Array[Any], Any]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("findLastIndex")(predicate.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     inline def flat[A, D /* <: Double */](): js.Array[FlatArray[A, D]] = ^.asInstanceOf[js.Dynamic].applyDynamic("flat")().asInstanceOf[js.Array[FlatArray[A, D]]]
     

@@ -1,12 +1,14 @@
 package typings.nivoChord
 
 import typings.nivoChord.distTypesTypesMod.ChordRibbonMouseHandler
+import typings.nivoChord.distTypesTypesMod.RibbonAnimatedProps
 import typings.nivoChord.distTypesTypesMod.RibbonDatum
 import typings.nivoChord.distTypesTypesMod.RibbonGenerator
 import typings.nivoChord.distTypesTypesMod.RibbonTooltipComponent
 import typings.nivoCore.mod.CssMixBlendMode
 import typings.react.mod.MemoExoticComponent
 import typings.react.mod.global.JSX.Element
+import typings.reactSpringCore.mod.SpringValues
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -21,7 +23,7 @@ object distTypesChordRibbonMod {
   @js.native
   trait ChordRibbonProps extends StObject {
     
-    var animatedProps: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValues<RibbonAnimatedProps> */ Any = js.native
+    var animatedProps: SpringValues[RibbonAnimatedProps] = js.native
     
     var blendMode: NonNullable[js.UndefOr[CssMixBlendMode]] = js.native
     

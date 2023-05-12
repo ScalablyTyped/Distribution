@@ -15,17 +15,17 @@ object reactHookFormInputCoreMod extends Shortcut {
   // but seems like it would also introduce some inconvenience when using `typeof PhoneInput`
   // for defining the type of the `props`.
   // https://github.com/catamphetamine/react-phone-number-input/issues/414#issuecomment-1220679025
-  // type PhoneInputComponentType = <InputComponentProps = DefaultInputComponentProps, FormValues = DefaultFormValues>(props: Props<InputComponentProps, FormValues>) => JSX.Element;
+  // type PhoneInputType = <InputComponentProps = DefaultInputComponentProps, FormValues = DefaultFormValues>(props: Props<InputComponentProps, FormValues>) => JSX.Element;
   @JSImport("react-phone-number-input/react-hook-form-input-core", JSImport.Default)
   @js.native
-  val default: PhoneInputComponentType[DefaultInputComponentProps, DefaultFormValues] = js.native
+  val default: PhoneInputType = js.native
   
-  type PhoneInputComponentType[InputComponentProps, FormValues] = js.Function1[/* props */ Props[InputComponentProps, FormValues], Element]
+  type PhoneInputType = js.Function1[/* props */ Props[DefaultInputComponentProps, DefaultFormValues], Element]
   
   type Props[InputComponentProps, FormValues] = (typings.reactPhoneNumberInput.reactHookFormInputMod.Props[InputComponentProps, FormValues]) & Metadata
   
-  type _To = PhoneInputComponentType[DefaultInputComponentProps, DefaultFormValues]
+  type _To = PhoneInputType
   
   /* This means you don't have to write `default`, but can instead just say `reactHookFormInputCoreMod.foo` */
-  override def _to: PhoneInputComponentType[DefaultInputComponentProps, DefaultFormValues] = default
+  override def _to: PhoneInputType = default
 }

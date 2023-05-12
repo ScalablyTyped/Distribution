@@ -1,15 +1,20 @@
 package typings.blueprintjsPopover2
 
-import typings.blueprintjsCore.libEsmCommonPropsMod.IActionProps
+import typings.blueprintjsCore.libEsmCommonPropsMod.ActionProps
+import typings.blueprintjsCore.libEsmCommonPropsMod.IElementRefProps
 import typings.blueprintjsCore.libEsmCommonPropsMod.ILinkProps
 import typings.blueprintjsCore.mod.AbstractPureComponent2
 import typings.blueprintjsPopover2.anon.PartialMenuProps
 import typings.blueprintjsPopover2.anon.PartialOmitPopover2PropsDAutoFocus
+import typings.blueprintjsPopover2.blueprintjsPopover2Strings.listitem
 import typings.blueprintjsPopover2.blueprintjsPopover2Strings.listoption
 import typings.blueprintjsPopover2.blueprintjsPopover2Strings.menuitem
+import typings.blueprintjsPopover2.blueprintjsPopover2Strings.none
 import typings.react.mod.AnchorHTMLAttributes
 import typings.react.mod.ReactNode
 import typings.std.HTMLAnchorElement
+import typings.std.HTMLElement
+import typings.std.HTMLLIElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -47,8 +52,9 @@ object libEsmMenuItem2Mod {
   
   trait MenuItem2Props
     extends StObject
-       with IActionProps
-       with ILinkProps {
+       with ActionProps[HTMLElement]
+       with ILinkProps
+       with IElementRefProps[HTMLLIElement] {
     
     /**
       * Whether this item should appear _active_, often useful to
@@ -119,11 +125,25 @@ object libEsmMenuItem2Mod {
       * `<li role="option"`
       *     `<a role=undefined`
       *
-      *  which is proper role structure for a `<ul role="listbox"` parent, or a `<select>` parent.
+      * which is proper role structure for a `<ul role="listbox"` parent, or a `<select>` parent.
+      *
+      * If `listitem`, role structure becomes:
+      *
+      * `<li role=undefined`
+      *     `<a role=undefined`
+      *
+      * which can be used if this item is within a basic `<ul/>` (or `role="list"`) parent.
+      *
+      * If `none`, role structure becomes:
+      *
+      * `<li role="none"`
+      *     `<a role=undefined`
+      *
+      * which can be used if wrapping this item in a custom `<li>` parent.
       *
       * @default "menuitem"
       */
-    var roleStructure: js.UndefOr[menuitem | listoption] = js.undefined
+    var roleStructure: js.UndefOr[menuitem | listoption | listitem | none] = js.undefined
     
     /**
       * Whether this item should appear selected.
@@ -153,7 +173,7 @@ object libEsmMenuItem2Mod {
       * @default "a"
       */
     var tagName: js.UndefOr[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.blueprintjsPopover2.blueprintjsPopover2Strings.a, typings.blueprintjsPopover2.blueprintjsPopover2Strings.abbr, typings.blueprintjsPopover2.blueprintjsPopover2Strings.address */ Any
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177, starting with typings.blueprintjsPopover2.blueprintjsPopover2Strings.a, typings.blueprintjsPopover2.blueprintjsPopover2Strings.abbr, typings.blueprintjsPopover2.blueprintjsPopover2Strings.address */ Any
       ] = js.undefined
     
     /**
@@ -207,7 +227,7 @@ object libEsmMenuItem2Mod {
       
       inline def setPopoverPropsUndefined: Self = StObject.set(x, "popoverProps", js.undefined)
       
-      inline def setRoleStructure(value: menuitem | listoption): Self = StObject.set(x, "roleStructure", value.asInstanceOf[js.Any])
+      inline def setRoleStructure(value: menuitem | listoption | listitem | none): Self = StObject.set(x, "roleStructure", value.asInstanceOf[js.Any])
       
       inline def setRoleStructureUndefined: Self = StObject.set(x, "roleStructure", js.undefined)
       
@@ -224,7 +244,7 @@ object libEsmMenuItem2Mod {
       inline def setSubmenuPropsUndefined: Self = StObject.set(x, "submenuProps", js.undefined)
       
       inline def setTagName(
-        value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.blueprintjsPopover2.blueprintjsPopover2Strings.a, typings.blueprintjsPopover2.blueprintjsPopover2Strings.abbr, typings.blueprintjsPopover2.blueprintjsPopover2Strings.address */ Any
+        value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177, starting with typings.blueprintjsPopover2.blueprintjsPopover2Strings.a, typings.blueprintjsPopover2.blueprintjsPopover2Strings.abbr, typings.blueprintjsPopover2.blueprintjsPopover2Strings.address */ Any
       ): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
       
       inline def setTagNameUndefined: Self = StObject.set(x, "tagName", js.undefined)

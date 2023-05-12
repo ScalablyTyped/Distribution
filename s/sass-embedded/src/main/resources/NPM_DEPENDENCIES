@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "sass-embedded" : "1.55.0"
+      "sass-embedded" : "1.62.0"
     }
   ],
   "test-dependencies" : [
     {
-      "sass-embedded" : "1.55.0"
+      "sass-embedded" : "1.62.0"
     }
   ],
   "compile-devDependencies" : [

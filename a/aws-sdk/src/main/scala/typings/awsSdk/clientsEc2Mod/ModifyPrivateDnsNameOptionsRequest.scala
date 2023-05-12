@@ -24,7 +24,7 @@ trait ModifyPrivateDnsNameOptionsRequest extends StObject {
   /**
     * The ID of the instance.
     */
-  var InstanceId: js.UndefOr[typings.awsSdk.clientsEc2Mod.InstanceId] = js.undefined
+  var InstanceId: typings.awsSdk.clientsEc2Mod.InstanceId
   
   /**
     * The type of hostname for EC2 instances. For IPv4 only subnets, an instance DNS name must be based on the instance IPv4 address. For IPv6 only subnets, an instance DNS name must be based on the instance ID. For dual-stack subnets, you can specify whether DNS names use the instance IPv4 address or the instance ID.
@@ -33,8 +33,8 @@ trait ModifyPrivateDnsNameOptionsRequest extends StObject {
 }
 object ModifyPrivateDnsNameOptionsRequest {
   
-  inline def apply(): ModifyPrivateDnsNameOptionsRequest = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(InstanceId: InstanceId): ModifyPrivateDnsNameOptionsRequest = {
+    val __obj = js.Dynamic.literal(InstanceId = InstanceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyPrivateDnsNameOptionsRequest]
   }
   
@@ -54,8 +54,6 @@ object ModifyPrivateDnsNameOptionsRequest {
     inline def setEnableResourceNameDnsARecordUndefined: Self = StObject.set(x, "EnableResourceNameDnsARecord", js.undefined)
     
     inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
-    
-    inline def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
     
     inline def setPrivateDnsHostnameType(value: HostnameType): Self = StObject.set(x, "PrivateDnsHostnameType", value.asInstanceOf[js.Any])
     

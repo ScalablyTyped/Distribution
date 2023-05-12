@@ -141,6 +141,20 @@ trait Personalize extends Service {
   ): Request[CreateFilterResponse, AWSError] = js.native
   
   /**
+    * Creates a metric attribution. A metric attribution creates reports on the data that you import into Amazon Personalize. Depending on how you imported the data, you can view reports in Amazon CloudWatch or Amazon S3. For more information, see Measuring impact of recommendations.
+    */
+  def createMetricAttribution(): Request[CreateMetricAttributionResponse, AWSError] = js.native
+  def createMetricAttribution(callback: js.Function2[/* err */ AWSError, /* data */ CreateMetricAttributionResponse, Unit]): Request[CreateMetricAttributionResponse, AWSError] = js.native
+  /**
+    * Creates a metric attribution. A metric attribution creates reports on the data that you import into Amazon Personalize. Depending on how you imported the data, you can view reports in Amazon CloudWatch or Amazon S3. For more information, see Measuring impact of recommendations.
+    */
+  def createMetricAttribution(params: CreateMetricAttributionRequest): Request[CreateMetricAttributionResponse, AWSError] = js.native
+  def createMetricAttribution(
+    params: CreateMetricAttributionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateMetricAttributionResponse, Unit]
+  ): Request[CreateMetricAttributionResponse, AWSError] = js.native
+  
+  /**
     * Creates a recommender with the recipe (a Domain dataset group use case) you specify. You create recommenders for a Domain dataset group and specify the recommender's Amazon Resource Name (ARN) when you make a GetRecommendations request.   Minimum recommendation requests per second  When you create a recommender, you can configure the recommender's minimum recommendation requests per second. The minimum recommendation requests per second (minRecommendationRequestsPerSecond) specifies the baseline recommendation request throughput provisioned by Amazon Personalize. The default minRecommendationRequestsPerSecond is 1. A recommendation request is a single GetRecommendations operation. Request throughput is measured in requests per second and Amazon Personalize uses your requests per second to derive your requests per hour and the price of your recommender usage.   If your requests per second increases beyond minRecommendationRequestsPerSecond, Amazon Personalize auto-scales the provisioned capacity up and down, but never below minRecommendationRequestsPerSecond. There's a short time delay while the capacity is increased that might cause loss of requests.  Your bill is the greater of either the minimum requests per hour (based on minRecommendationRequestsPerSecond) or the actual number of requests. The actual request throughput used is calculated as the average requests/second within a one-hour window. We recommend starting with the default minRecommendationRequestsPerSecond, track your usage using Amazon CloudWatch metrics, and then increase the minRecommendationRequestsPerSecond as necessary.   Status  A recommender can be in one of the following states:   CREATE PENDING &gt; CREATE IN_PROGRESS &gt; ACTIVE -or- CREATE FAILED   STOP PENDING &gt; STOP IN_PROGRESS &gt; INACTIVE &gt; START PENDING &gt; START IN_PROGRESS &gt; ACTIVE   DELETE PENDING &gt; DELETE IN_PROGRESS   To get the recommender status, call DescribeRecommender.  Wait until the status of the recommender is ACTIVE before asking the recommender for recommendations.   Related APIs     ListRecommenders     DescribeRecommender     UpdateRecommender     DeleteRecommender   
     */
   def createRecommender(): Request[CreateRecommenderResponse, AWSError] = js.native
@@ -263,6 +277,20 @@ trait Personalize extends Service {
   def deleteFilter(params: DeleteFilterRequest): Request[js.Object, AWSError] = js.native
   def deleteFilter(
     params: DeleteFilterRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Deletes a metric attribution.
+    */
+  def deleteMetricAttribution(): Request[js.Object, AWSError] = js.native
+  def deleteMetricAttribution(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Deletes a metric attribution.
+    */
+  def deleteMetricAttribution(params: DeleteMetricAttributionRequest): Request[js.Object, AWSError] = js.native
+  def deleteMetricAttribution(
+    params: DeleteMetricAttributionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
   
@@ -461,6 +489,20 @@ trait Personalize extends Service {
     params: DescribeFilterRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeFilterResponse, Unit]
   ): Request[DescribeFilterResponse, AWSError] = js.native
+  
+  /**
+    * Describes a metric attribution.
+    */
+  def describeMetricAttribution(): Request[DescribeMetricAttributionResponse, AWSError] = js.native
+  def describeMetricAttribution(callback: js.Function2[/* err */ AWSError, /* data */ DescribeMetricAttributionResponse, Unit]): Request[DescribeMetricAttributionResponse, AWSError] = js.native
+  /**
+    * Describes a metric attribution.
+    */
+  def describeMetricAttribution(params: DescribeMetricAttributionRequest): Request[DescribeMetricAttributionResponse, AWSError] = js.native
+  def describeMetricAttribution(
+    params: DescribeMetricAttributionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeMetricAttributionResponse, Unit]
+  ): Request[DescribeMetricAttributionResponse, AWSError] = js.native
   
   /**
     * Describes a recipe. A recipe contains three items:   An algorithm that trains a model.   Hyperparameters that govern the training.   Feature transformation information for modifying the input data before training.   Amazon Personalize provides a set of predefined recipes. You specify a recipe when you create a solution with the CreateSolution API. CreateSolution trains a model by using the algorithm in the specified recipe and a training dataset. The solution, when deployed as a campaign, can provide recommendations using the GetRecommendations API.
@@ -673,6 +715,34 @@ trait Personalize extends Service {
   ): Request[ListFiltersResponse, AWSError] = js.native
   
   /**
+    * Lists the metrics for the metric attribution.
+    */
+  def listMetricAttributionMetrics(): Request[ListMetricAttributionMetricsResponse, AWSError] = js.native
+  def listMetricAttributionMetrics(callback: js.Function2[/* err */ AWSError, /* data */ ListMetricAttributionMetricsResponse, Unit]): Request[ListMetricAttributionMetricsResponse, AWSError] = js.native
+  /**
+    * Lists the metrics for the metric attribution.
+    */
+  def listMetricAttributionMetrics(params: ListMetricAttributionMetricsRequest): Request[ListMetricAttributionMetricsResponse, AWSError] = js.native
+  def listMetricAttributionMetrics(
+    params: ListMetricAttributionMetricsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListMetricAttributionMetricsResponse, Unit]
+  ): Request[ListMetricAttributionMetricsResponse, AWSError] = js.native
+  
+  /**
+    * Lists metric attributions.
+    */
+  def listMetricAttributions(): Request[ListMetricAttributionsResponse, AWSError] = js.native
+  def listMetricAttributions(callback: js.Function2[/* err */ AWSError, /* data */ ListMetricAttributionsResponse, Unit]): Request[ListMetricAttributionsResponse, AWSError] = js.native
+  /**
+    * Lists metric attributions.
+    */
+  def listMetricAttributions(params: ListMetricAttributionsRequest): Request[ListMetricAttributionsResponse, AWSError] = js.native
+  def listMetricAttributions(
+    params: ListMetricAttributionsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListMetricAttributionsResponse, Unit]
+  ): Request[ListMetricAttributionsResponse, AWSError] = js.native
+  
+  /**
     * Returns a list of available recipes. The response provides the properties for each recipe, including the recipe's Amazon Resource Name (ARN).
     */
   def listRecipes(): Request[ListRecipesResponse, AWSError] = js.native
@@ -839,6 +909,20 @@ trait Personalize extends Service {
     params: UpdateCampaignRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateCampaignResponse, Unit]
   ): Request[UpdateCampaignResponse, AWSError] = js.native
+  
+  /**
+    * Updates a metric attribution.
+    */
+  def updateMetricAttribution(): Request[UpdateMetricAttributionResponse, AWSError] = js.native
+  def updateMetricAttribution(callback: js.Function2[/* err */ AWSError, /* data */ UpdateMetricAttributionResponse, Unit]): Request[UpdateMetricAttributionResponse, AWSError] = js.native
+  /**
+    * Updates a metric attribution.
+    */
+  def updateMetricAttribution(params: UpdateMetricAttributionRequest): Request[UpdateMetricAttributionResponse, AWSError] = js.native
+  def updateMetricAttribution(
+    params: UpdateMetricAttributionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateMetricAttributionResponse, Unit]
+  ): Request[UpdateMetricAttributionResponse, AWSError] = js.native
   
   /**
     * Updates the recommender to modify the recommender configuration.

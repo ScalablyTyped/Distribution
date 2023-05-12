@@ -1,7 +1,7 @@
 
 # Scala.js typings for feather-route-matcher
 
-Typings are for version 3.1
+Typings are for version 4.0
 
 ## Library description:
 featherweight url to handler matching

@@ -16,6 +16,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SetAccessorDeclaration
   extends StObject
      with FunctionLikeDeclarationBase
+     with LocalsContainer
+     with FlowContainer
      with AccessorDeclaration
      with FunctionLikeDeclaration
      with HasDecorators
@@ -32,6 +34,8 @@ trait SetAccessorDeclaration
   
   @JSName("kind")
   val kind_SetAccessorDeclaration: SetAccessor = js.native
+  
+  val modifiers: js.UndefOr[NodeArray[ModifierLike]] = js.native
   
   @JSName("name")
   val name_SetAccessorDeclaration: PropertyName = js.native

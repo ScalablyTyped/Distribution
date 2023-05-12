@@ -16,6 +16,8 @@ type Addresses = js.Array[Address]
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CREATING
   - typings.awsSdk.awsSdkStrings.DELETING
+  - typings.awsSdk.awsSdkStrings.FAILED
+  - typings.awsSdk.awsSdkStrings.ERROR
   - typings.awsSdk.awsSdkStrings.SCALING
   - typings.awsSdk.awsSdkStrings.READY
   - java.lang.String
@@ -31,6 +33,8 @@ type AzSubnets = js.Array[AzSubnet]
 type Boolean = scala.Boolean
 
 type CIDRCount = Double
+
+type Certificates = js.Array[TlsCertificateData]
 
 type CollectionMemberString = String
 
@@ -85,6 +89,14 @@ type GeneratedRulesType = _GeneratedRulesType | String
 type HashMapKey = String
 
 type HashMapValue = String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.DUALSTACK
+  - typings.awsSdk.awsSdkStrings.IPV4
+  - typings.awsSdk.awsSdkStrings.IPV6
+  - java.lang.String
+*/
+type IPAddressType = _IPAddressType | String
 
 type IPSetArn = String
 
@@ -206,6 +218,12 @@ type RuleVariableName = String
 
 type RulesString = String
 
+type ServerCertificateConfigurations = js.Array[ServerCertificateConfiguration]
+
+type ServerCertificateScopes = js.Array[ServerCertificateScope]
+
+type ServerCertificates = js.Array[ServerCertificate]
+
 type Setting = String
 
 type Settings = js.Array[Setting]
@@ -216,6 +234,7 @@ type Source = String
   - typings.awsSdk.awsSdkStrings.PASS
   - typings.awsSdk.awsSdkStrings.DROP
   - typings.awsSdk.awsSdkStrings.ALERT
+  - typings.awsSdk.awsSdkStrings.REJECT
   - java.lang.String
 */
 type StatefulAction = _StatefulAction | String
@@ -263,9 +282,14 @@ type StatelessRuleGroupReferences = js.Array[StatelessRuleGroupReference]
 
 type StatelessRules = js.Array[StatelessRule]
 
+type StatusMessage = String
+
+type StatusReason = String
+
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DROP
   - typings.awsSdk.awsSdkStrings.CONTINUE
+  - typings.awsSdk.awsSdkStrings.REJECT
   - java.lang.String
 */
 type StreamExceptionPolicy = _StreamExceptionPolicy | String
@@ -290,6 +314,8 @@ type SyncStates = StringDictionary[SyncState]
 type TCPFlag = _TCPFlag | String
 
 type TCPFlags = js.Array[TCPFlagField]
+
+type TLSInspectionConfigurations = js.Array[TLSInspectionConfigurationMetadata]
 
 type TagKey = String
 

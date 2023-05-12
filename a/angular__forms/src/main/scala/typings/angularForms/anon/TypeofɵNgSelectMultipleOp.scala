@@ -31,7 +31,8 @@ trait TypeofɵNgSelectMultipleOp
     js.Object, 
     scala.Nothing, 
     scala.Nothing, 
-    `false`
+    `false`, 
+    scala.Nothing
   ] = js.native
   
   var ɵfac: ɵɵFactoryDeclaration[ɵNgSelectMultipleOption, js.Tuple3[Null, Null, HostOptional]] = js.native

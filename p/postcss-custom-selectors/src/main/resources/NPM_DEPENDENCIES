@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "postcss-custom-selectors" : "7.1.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "postcss-custom-selectors" : "7.1.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

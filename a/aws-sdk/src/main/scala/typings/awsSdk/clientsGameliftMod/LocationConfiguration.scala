@@ -9,12 +9,12 @@ trait LocationConfiguration extends StObject {
   /**
     * An Amazon Web Services Region code, such as us-west-2. 
     */
-  var Location: js.UndefOr[LocationStringModel] = js.undefined
+  var Location: LocationStringModel
 }
 object LocationConfiguration {
   
-  inline def apply(): LocationConfiguration = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(Location: LocationStringModel): LocationConfiguration = {
+    val __obj = js.Dynamic.literal(Location = Location.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocationConfiguration]
   }
   
@@ -22,7 +22,5 @@ object LocationConfiguration {
   implicit open class MutableBuilder[Self <: LocationConfiguration] (val x: Self) extends AnyVal {
     
     inline def setLocation(value: LocationStringModel): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
-    
-    inline def setLocationUndefined: Self = StObject.set(x, "Location", js.undefined)
   }
 }

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "hpq" : "1.4.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "hpq" : "1.4.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -1,7 +1,7 @@
 
 # Scala.js typings for browserslist
 
-Typings are for version 4.21.4
+Typings are for version 4.21.5
 
 ## Library description:
 Share target browsers between different front-end tools, like Autoprefixer, Stylelint and babel-env-preset

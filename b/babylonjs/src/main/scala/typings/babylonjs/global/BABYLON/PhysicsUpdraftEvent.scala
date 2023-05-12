@@ -24,3 +24,16 @@ open class PhysicsUpdraftEvent protected ()
     _options: typings.babylonjs.BABYLON.PhysicsUpdraftEventOptions
   ) = this()
 }
+object PhysicsUpdraftEvent {
+  
+  @JSGlobal("BABYLON.PhysicsUpdraftEvent")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @JSGlobal("BABYLON.PhysicsUpdraftEvent._HitData")
+  @js.native
+  def HitData: Any = js.native
+  
+  inline def HitData_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_HitData")(x.asInstanceOf[js.Any])
+}

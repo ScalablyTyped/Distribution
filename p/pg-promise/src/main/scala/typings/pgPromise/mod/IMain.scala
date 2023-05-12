@@ -3,6 +3,7 @@ package typings.pgPromise.mod
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import typings.pgMinify.mod.IMinifyOptions
+import typings.pgPromise.anon.TypeofTxMode
 import typings.pgPromise.anon.Typeoferrors
 import typings.pgPromise.anon.Typeofpg
 import typings.pgPromise.typescriptPgSubsetMod.IClient
@@ -57,7 +58,7 @@ trait IMain[Ext, C /* <: IClient */] extends StObject {
   
   val spex: ISpex = js.native
   
-  val txMode: ITXMode = js.native
+  val txMode: TypeofTxMode = js.native
   
   val utils: IUtils = js.native
 }

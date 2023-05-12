@@ -7,20 +7,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CodeActionContext extends StObject {
   
   /**
-    * An array of diagnostics.
-    */
+  		 * An array of diagnostics.
+  		 */
   val diagnostics: js.Array[Diagnostic]
   
   /**
-    * Requested kind of actions to return.
-    *
-    * Actions not of this kind are filtered out before being shown by the [lightbulb](https://code.visualstudio.com/docs/editor/editingevolved#_code-action).
-    */
+  		 * Requested kind of actions to return.
+  		 *
+  		 * Actions not of this kind are filtered out before being shown by the [lightbulb](https://code.visualstudio.com/docs/editor/editingevolved#_code-action).
+  		 */
   val only: js.UndefOr[CodeActionKind] = js.undefined
   
   /**
-    * The reason why code actions were requested.
-    */
+  		 * The reason why code actions were requested.
+  		 */
   val triggerKind: CodeActionTriggerKind
 }
 object CodeActionContext {

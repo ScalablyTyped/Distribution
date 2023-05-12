@@ -3,7 +3,7 @@ package typings.chromeApps.chrome
 import typings.chromeApps.chrome.extensionTypes.internal.InjectDetailsBase
 import typings.chromeApps.chromeAppsStrings.jpeg
 import typings.chromeApps.chromeAppsStrings.png
-import typings.chromeApps.chromeAppsStrings.user_
+import typings.chromeApps.chromeAppsStrings.user__
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,14 +26,14 @@ object extensionTypes {
     **/
   /* Rewritten from type alias, can be one of: 
     - typings.chromeApps.chromeAppsStrings.author
-    - typings.chromeApps.chromeAppsStrings.user_
+    - typings.chromeApps.chromeAppsStrings.user__
   */
   trait CSSOrigin extends StObject
   object CSSOrigin {
     
     inline def author: typings.chromeApps.chromeAppsStrings.author = "author".asInstanceOf[typings.chromeApps.chromeAppsStrings.author]
     
-    inline def user: user_ = "user".asInstanceOf[user_]
+    inline def user: user__ = "user".asInstanceOf[user__]
   }
   
   /**
@@ -189,7 +189,6 @@ object extensionTypes {
   
   /**
     * Internal interfaces, not to be used directly
-    * @private
     * @internal
     */
   object internal {

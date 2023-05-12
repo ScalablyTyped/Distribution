@@ -10,79 +10,79 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DropdownOptions extends StObject {
   
   /**
-    * Defines the edge the menu is aligned to
+    * Defines the edge the menu is aligned to.
     * @default 'left'
     */
   var alignment: left | right
   
   /**
-    * If true, automatically focus dropdown el for keyboard
+    * If true, automatically focus dropdown el for keyboard.
     * @default true
     */
   var autoTrigger: Boolean
   
   /**
-    * If true, close dropdown on item click
+    * If true, close dropdown on item click.
     * @default true
     */
   var closeOnClick: Boolean
   
   /**
-    * If true, constrainWidth to the size of the dropdown activator
+    * If true, constrainWidth to the size of the dropdown activator.
     * @default true
     */
   var constrainWidth: Boolean
   
   /**
-    * Provide an element that will be the bounding container of the dropdown
+    * Provide an element that will be the bounding container of the dropdown.
     * @default null
     */
   var container: Element
   
   /**
-    * If false, the dropdown will show below the trigger
+    * If false, the dropdown will show below the trigger.
     * @default true
     */
   var coverTrigger: Boolean
   
   /**
-    * If true, the dropdown will open on hover
+    * If true, the dropdown will open on hover.
     * @default false
     */
   var hover: Boolean
   
   /**
-    * The duration of the transition enter in milliseconds
+    * The duration of the transition enter in milliseconds.
     * @default 150
     */
   var inDuration: Double
   
   /**
-    * Function called when dropdown finishes exiting
+    * Function called when dropdown finishes exiting.
     * @default null
     */
   def onCloseEnd(el: Element): Unit
   
   /**
-    * Function called when dropdown starts exiting
+    * Function called when dropdown starts exiting.
     * @default null
     */
   def onCloseStart(el: Element): Unit
   
   /**
-    * Function called when dropdown finishes entering
+    * Function called when dropdown finishes entering.
     * @default null
     */
   def onOpenEnd(el: Element): Unit
   
   /**
-    * Function called when dropdown starts entering
+    * Function called when dropdown starts entering.
     * @default null
     */
   def onOpenStart(el: Element): Unit
   
   /**
-    * The duration of the transition out in milliseconds
+    * The duration of the transition out in milliseconds.
     * @default 250
     */
   var outDuration: Double

@@ -1,6 +1,7 @@
 package typings.firebaseAuth.distNodeSrcModelPublicTypesMod
 
 import typings.firebaseAuth.firebaseAuthStrings.phone
+import typings.firebaseAuth.firebaseAuthStrings.totp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,15 +15,15 @@ trait MultiFactorInfo extends StObject {
   val enrollmentTime: String
   
   /** The identifier of the second factor. */
-  val factorId: phone
+  val factorId: phone | totp
   
   /** The multi-factor enrollment ID. */
   val uid: String
 }
 object MultiFactorInfo {
   
-  inline def apply(enrollmentTime: String, uid: String): MultiFactorInfo = {
-    val __obj = js.Dynamic.literal(enrollmentTime = enrollmentTime.asInstanceOf[js.Any], factorId = "phone", uid = uid.asInstanceOf[js.Any])
+  inline def apply(enrollmentTime: String, factorId: phone | totp, uid: String): MultiFactorInfo = {
+    val __obj = js.Dynamic.literal(enrollmentTime = enrollmentTime.asInstanceOf[js.Any], factorId = factorId.asInstanceOf[js.Any], uid = uid.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultiFactorInfo]
   }
   
@@ -37,7 +38,7 @@ object MultiFactorInfo {
     
     inline def setEnrollmentTime(value: String): Self = StObject.set(x, "enrollmentTime", value.asInstanceOf[js.Any])
     
-    inline def setFactorId(value: phone): Self = StObject.set(x, "factorId", value.asInstanceOf[js.Any])
+    inline def setFactorId(value: phone | totp): Self = StObject.set(x, "factorId", value.asInstanceOf[js.Any])
     
     inline def setUid(value: String): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
   }

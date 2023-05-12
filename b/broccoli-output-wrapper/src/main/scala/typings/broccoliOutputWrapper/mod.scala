@@ -6,7 +6,6 @@ import typings.broccoliOutputWrapper.anon.FnCallFileDataOptions
 import typings.broccoliOutputWrapper.anon.FnCallPathDataOptions
 import typings.broccoliOutputWrapper.anon.FnCallPathOptions
 import typings.broccoliOutputWrapper.anon.FnCallTargetPathType
-import typings.broccoliOutputWrapper.anon.Recursive
 import typings.broccoliOutputWrapper.broccoliOutputWrapperStrings.buffer
 import typings.node.NodeJS.ArrayBufferView
 import typings.node.anon.Encoding
@@ -17,12 +16,12 @@ import typings.node.anon.MakeDirectoryOptionsrecurMode
 import typings.node.anon.ObjectEncodingOptionsflagEncoding
 import typings.node.anon.ObjectEncodingOptionswith
 import typings.node.anon.ObjectEncodingOptionswithEncoding
+import typings.node.anon.Recursive
 import typings.node.anon.StatSyncOptionsbigintbool
 import typings.node.anon.StatSyncOptionsbigintfals
 import typings.node.anon.StatSyncOptionsbigintfalsBigint
 import typings.node.anon.StatSyncOptionsbiginttrue
 import typings.node.anon.StatSyncOptionsbiginttrueBigint
-import typings.node.anon.WithFileTypes
 import typings.node.bufferMod.global.Buffer
 import typings.node.bufferMod.global.BufferEncoding
 import typings.node.fsMod.BigIntStats
@@ -104,7 +103,7 @@ object mod {
     def readdirSync(path: PathLike, options: Encoding): js.Array[Buffer] = js.native
     def readdirSync(path: PathLike, options: ObjectEncodingOptionswith): js.Array[Buffer | String] = js.native
     def readdirSync(path: PathLike, options: ObjectEncodingOptionswithEncoding): js.Array[Dirent] = js.native
-    def readdirSync(path: PathLike, options: WithFileTypes): js.Array[String] = js.native
+    def readdirSync(path: PathLike, options: Recursive): js.Array[String] = js.native
     def readdirSync(path: PathLike, options: BufferEncoding): js.Array[Buffer | String] = js.native
     @JSName("readdirSync")
     var readdirSync_Original: FnCallPathOptions = js.native
@@ -112,7 +111,7 @@ object mod {
     def readdirSync_buffer(path: PathLike, options: buffer): js.Array[Buffer] = js.native
     
     def rmdirSync(path: String): Unit = js.native
-    def rmdirSync(path: String, options: Recursive): Unit = js.native
+    def rmdirSync(path: String, options: typings.broccoliOutputWrapper.anon.Recursive): Unit = js.native
     
     def statSync(path: PathLike): js.UndefOr[Stats] = js.native
     def statSync(path: PathLike, options: Unit): Stats = js.native

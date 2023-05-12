@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UntagResourceRequest extends StObject {
   
   /**
-    * The keys in the key-value pair in the tag to remove.
+    * Specifies the keys in the tags that you want to remove.
     */
   var Keys: TagKeyList
   
   /**
-    * The Amazon Resource Name (ARN) of the resource to remove the tag from.
+    * Specifies the Amazon Resource Name (ARN) of the resource to remove the tags from.
     */
   var ResourceArn: TaggableResourceArn
 }

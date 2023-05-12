@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FormSelectOptions extends StObject {
   
   /**
-    * Classes to be added to the select wrapper element
-    * @default ''
+    * Classes to be added to the select wrapper element.
+    * @default ""
     */
   var classes: String
   
   /**
-    * Pass options object to select dropdown initialization
+    * Pass options object to select dropdown initialization.
     * @default {}
     */
   var dropdownOptions: PartialDropdownOptions

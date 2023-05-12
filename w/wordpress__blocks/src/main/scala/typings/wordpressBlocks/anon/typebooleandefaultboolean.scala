@@ -1,6 +1,6 @@
 package typings.wordpressBlocks.anon
 
-import typings.wordpressBlocks.mod.AttributeSource.Attribute
+import typings.wordpressBlocks.AttributeSource.Attribute
 import typings.wordpressBlocks.wordpressBlocksStrings.attribute
 import typings.wordpressBlocks.wordpressBlocksStrings.boolean
 import org.scalablytyped.runtime.StObject

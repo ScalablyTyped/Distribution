@@ -30,6 +30,11 @@ object Range {
   inline def areIntersectingOrTouching(a: IRange, b: IRange): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("areIntersectingOrTouching")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
+    * Create a new empty range using this range's end position.
+    */
+  inline def collapseToEnd(range: IRange): typings.monacoEditor.mod.Range = ^.asInstanceOf[js.Dynamic].applyDynamic("collapseToEnd")(range.asInstanceOf[js.Any]).asInstanceOf[typings.monacoEditor.mod.Range]
+  
+  /**
     * Create a new empty range using this range's start position.
     */
   inline def collapseToStart(range: IRange): typings.monacoEditor.mod.Range = ^.asInstanceOf[js.Dynamic].applyDynamic("collapseToStart")(range.asInstanceOf[js.Any]).asInstanceOf[typings.monacoEditor.mod.Range]
@@ -65,6 +70,7 @@ object Range {
     */
   inline def equalsRange(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("equalsRange")().asInstanceOf[Boolean]
   inline def equalsRange(a: Null, b: IRange): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equalsRange")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def equalsRange(a: Unit, b: IRange): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equalsRange")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   inline def equalsRange(a: IRange): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("equalsRange")(a.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   inline def equalsRange(a: IRange, b: IRange): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equalsRange")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   

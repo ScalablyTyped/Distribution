@@ -8,11 +8,11 @@ import typings.devextreme.anon.Commands
 import typings.devextreme.anon.ConnectorLineEnd
 import typings.devextreme.anon.CustomDataExpr
 import typings.devextreme.anon.Items
-import typings.devextreme.anon.ProxyUrl
 import typings.devextreme.anon.ShapeIconsPerRow
 import typings.devextreme.anon.Tabs
 import typings.devextreme.anon.Visible
 import typings.devextreme.anon.Width
+import typings.devextreme.anon.`4`
 import typings.devextreme.mod.DevExpress.common.PageOrientation
 import typings.devextreme.mod.DevExpress.core.DxElement_
 import typings.devextreme.mod.DevExpress.core.template
@@ -91,7 +91,7 @@ trait dxDiagramOptions
   /**
     * Configures export settings.
     */
-  var `export`: js.UndefOr[ProxyUrl] = js.undefined
+  var `export`: js.UndefOr[`4`] = js.undefined
   
   /**
     * Specifies whether or not to display the UI component in full-screen mode.
@@ -283,7 +283,7 @@ object dxDiagramOptions {
     
     inline def setEditingUndefined: Self = StObject.set(x, "editing", js.undefined)
     
-    inline def setExport(value: ProxyUrl): Self = StObject.set(x, "export", value.asInstanceOf[js.Any])
+    inline def setExport(value: `4`): Self = StObject.set(x, "export", value.asInstanceOf[js.Any])
     
     inline def setExportUndefined: Self = StObject.set(x, "export", js.undefined)
     

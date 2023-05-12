@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListDataSetsResponse extends StObject {
   
   /**
-    * The list of data sets, containing ionformation including the creating time, the data set name, the data set organization, the data set format, and the last time the data set was referenced or updated.
+    * The list of data sets, containing information including the creation time, the data set name, the data set organization, the data set format, and the last time the data set was referenced or updated.
     */
   var dataSets: DataSetsSummaryList
   

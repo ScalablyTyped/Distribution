@@ -3,6 +3,7 @@ package typings.remixRunRouter
 import typings.remixRunRouter.anon.PartialLocation
 import typings.remixRunRouter.anon.PartialPath
 import typings.remixRunRouter.anon.ReadonlyLocation
+import typings.std.URL
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -78,7 +79,17 @@ object distHistoryMod {
   
   inline def createPath(param0: PartialPath): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createPath")(param0.asInstanceOf[js.Any]).asInstanceOf[String]
   
+  inline def invariant(value: Boolean): /* asserts value */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("invariant")(value.asInstanceOf[js.Any]).asInstanceOf[/* asserts value */ Boolean]
+  inline def invariant(value: Boolean, message: String): /* asserts value */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("invariant")(value.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[/* asserts value */ Boolean]
+  inline def invariant[T](): /* asserts value is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(T))),IArray())*/ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("invariant")().asInstanceOf[/* asserts value is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(T))),IArray())*/ Boolean]
+  inline def invariant[T](value: T): /* asserts value is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(T))),IArray())*/ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("invariant")(value.asInstanceOf[js.Any]).asInstanceOf[/* asserts value is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(T))),IArray())*/ Boolean]
+  inline def invariant[T](value: T, message: String): /* asserts value is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(T))),IArray())*/ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("invariant")(value.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[/* asserts value is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(T))),IArray())*/ Boolean]
+  inline def invariant[T](value: Null, message: String): /* asserts value is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(T))),IArray())*/ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("invariant")(value.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[/* asserts value is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(T))),IArray())*/ Boolean]
+  inline def invariant[T](value: Unit, message: String): /* asserts value is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(T))),IArray())*/ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("invariant")(value.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[/* asserts value is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentSimple(T))),IArray())*/ Boolean]
+  
   inline def parsePath(path: String): PartialPath = ^.asInstanceOf[js.Dynamic].applyDynamic("parsePath")(path.asInstanceOf[js.Any]).asInstanceOf[PartialPath]
+  
+  inline def warning(cond: Any, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("warning")(cond.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   type BrowserHistory = UrlHistory
   
@@ -104,6 +115,22 @@ object distHistoryMod {
       * @param to - The destination URL
       */
     def createHref(to: To): String = js.native
+    
+    /**
+      * Returns a URL for the given `to` value
+      *
+      * @param to - The destination URL
+      */
+    def createURL(to: To): URL = js.native
+    
+    /**
+      * Encode a location the same way window.history would do (no-op for memory
+      * history) so we ensure our PUSH/REPLACE navigations for data routers
+      * behave the same as POP
+      *
+      * @param to Unencoded path
+      */
+    def encodeLocation(to: To): Path = js.native
     
     /**
       * Navigates `n` entries backward/forward in the history stack relative to the
@@ -276,6 +303,11 @@ object distHistoryMod {
     var action: Action
     
     /**
+      * The delta between this location and the former location in the history stack
+      */
+    var delta: Double | Null
+    
+    /**
       * The new location.
       */
     var location: Location
@@ -283,7 +315,7 @@ object distHistoryMod {
   object Update {
     
     inline def apply(action: Action, location: Location): Update = {
-      val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], delta = null)
       __obj.asInstanceOf[Update]
     }
     
@@ -291,6 +323,10 @@ object distHistoryMod {
     implicit open class MutableBuilder[Self <: Update] (val x: Self) extends AnyVal {
       
       inline def setAction(value: Action): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      
+      inline def setDelta(value: Double): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
+      
+      inline def setDeltaNull: Self = StObject.set(x, "delta", null)
       
       inline def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     }

@@ -12,7 +12,7 @@ open class FixedSizeList[T] protected ()
   def this(props: FixedSizeListProps[T]) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: FixedSizeListProps[T], context: Any) = this()
   

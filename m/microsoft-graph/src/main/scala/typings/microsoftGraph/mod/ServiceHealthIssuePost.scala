@@ -9,7 +9,7 @@ trait ServiceHealthIssuePost extends StObject {
   // The published time of the post.
   var createdDateTime: js.UndefOr[String] = js.undefined
   
-  // The content of the service issue post.
+  // The content of the service issue post. The supported value for the contentType property is html.
   var description: js.UndefOr[NullableOption[ItemBody]] = js.undefined
   
   // The post type of the service issue historical post. Possible values are: regular, quick, strategic, unknownFutureValue.

@@ -19,10 +19,10 @@ object distDeclarationsSrcUtilsEventsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def distanceAngle(P1: PointerEvent, P2: PointerEvent): Origin = (^.asInstanceOf[js.Dynamic].applyDynamic("distanceAngle")(P1.asInstanceOf[js.Any], P2.asInstanceOf[js.Any])).asInstanceOf[Origin]
-  inline def distanceAngle(P1: PointerEvent, P2: Touch): Origin = (^.asInstanceOf[js.Dynamic].applyDynamic("distanceAngle")(P1.asInstanceOf[js.Any], P2.asInstanceOf[js.Any])).asInstanceOf[Origin]
-  inline def distanceAngle(P1: Touch, P2: PointerEvent): Origin = (^.asInstanceOf[js.Dynamic].applyDynamic("distanceAngle")(P1.asInstanceOf[js.Any], P2.asInstanceOf[js.Any])).asInstanceOf[Origin]
-  inline def distanceAngle(P1: Touch, P2: Touch): Origin = (^.asInstanceOf[js.Dynamic].applyDynamic("distanceAngle")(P1.asInstanceOf[js.Any], P2.asInstanceOf[js.Any])).asInstanceOf[Origin]
+  inline def distanceAngle(P1: PointerEvent, P2: PointerEvent): Origin | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("distanceAngle")(P1.asInstanceOf[js.Any], P2.asInstanceOf[js.Any])).asInstanceOf[Origin | Null]
+  inline def distanceAngle(P1: PointerEvent, P2: Touch): Origin | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("distanceAngle")(P1.asInstanceOf[js.Any], P2.asInstanceOf[js.Any])).asInstanceOf[Origin | Null]
+  inline def distanceAngle(P1: Touch, P2: PointerEvent): Origin | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("distanceAngle")(P1.asInstanceOf[js.Any], P2.asInstanceOf[js.Any])).asInstanceOf[Origin | Null]
+  inline def distanceAngle(P1: Touch, P2: Touch): Origin | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("distanceAngle")(P1.asInstanceOf[js.Any], P2.asInstanceOf[js.Any])).asInstanceOf[Origin | Null]
   
   inline def getEventDetails(event: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getEventDetails")(event.asInstanceOf[js.Any]).asInstanceOf[Any]
   
@@ -48,7 +48,7 @@ object distDeclarationsSrcUtilsEventsMod {
   inline def toHandlerProp(device: String, action: String, capture: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toHandlerProp")(device.asInstanceOf[js.Any], action.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def toHandlerProp(device: String, action: Unit, capture: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toHandlerProp")(device.asInstanceOf[js.Any], action.asInstanceOf[js.Any], capture.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def touchDistanceAngle(event: TouchEvent, ids: js.Array[Double]): Origin = (^.asInstanceOf[js.Dynamic].applyDynamic("touchDistanceAngle")(event.asInstanceOf[js.Any], ids.asInstanceOf[js.Any])).asInstanceOf[Origin]
+  inline def touchDistanceAngle(event: TouchEvent, ids: js.Array[Double]): Origin | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("touchDistanceAngle")(event.asInstanceOf[js.Any], ids.asInstanceOf[js.Any])).asInstanceOf[Origin | Null]
   
   inline def touchIds(event: TouchEvent): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("touchIds")(event.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
   

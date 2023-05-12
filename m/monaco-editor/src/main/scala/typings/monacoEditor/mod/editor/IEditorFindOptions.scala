@@ -23,7 +23,7 @@ trait IEditorFindOptions extends StObject {
   var cursorMoveOnType: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Controls whether the search automatically restarts from the beginning (or the end) when no further matches can be found
+    * Controls whether the search result and diff result automatically restarts from the beginning (or the end) when no further matches can be found
     */
   var loop: js.UndefOr[Boolean] = js.undefined
   

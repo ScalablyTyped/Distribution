@@ -16,7 +16,7 @@ object libIconsStarTwoToneMod extends Shortcut {
   @js.native
   trait StarTwoToneIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_StarTwoToneIconType: String = js.native

@@ -36,6 +36,11 @@ object accounts {
   trait AccountSecurityToken extends StObject {
     
     /**
+      * Access token expiry timestamp
+      */
+    var expiresOn: js.UndefOr[Double] = js.undefined
+    
+    /**
       * The token to use
       */
     var token: String
@@ -54,6 +59,10 @@ object accounts {
     
     @scala.inline
     implicit open class MutableBuilder[Self <: AccountSecurityToken] (val x: Self) extends AnyVal {
+      
+      inline def setExpiresOn(value: Double): Self = StObject.set(x, "expiresOn", value.asInstanceOf[js.Any])
+      
+      inline def setExpiresOnUndefined: Self = StObject.set(x, "expiresOn", js.undefined)
       
       inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
       

@@ -24,7 +24,7 @@ trait ExportAssetToSignedUrlResponseDetails extends StObject {
   /**
     * The signed URL for the export request.
     */
-  var SignedUrl: js.UndefOr[string] = js.undefined
+  var SignedUrl: js.UndefOr[_String] = js.undefined
   
   /**
     * The date and time that the signed URL expires, in ISO 8601 format.
@@ -47,7 +47,7 @@ object ExportAssetToSignedUrlResponseDetails {
     
     inline def setRevisionId(value: Id): Self = StObject.set(x, "RevisionId", value.asInstanceOf[js.Any])
     
-    inline def setSignedUrl(value: string): Self = StObject.set(x, "SignedUrl", value.asInstanceOf[js.Any])
+    inline def setSignedUrl(value: _String): Self = StObject.set(x, "SignedUrl", value.asInstanceOf[js.Any])
     
     inline def setSignedUrlExpiresAt(value: js.Date): Self = StObject.set(x, "SignedUrlExpiresAt", value.asInstanceOf[js.Any])
     

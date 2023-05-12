@@ -123,8 +123,8 @@ object data {
       
       /**
         * This type encapsulates configuration (initialization) properties for a H.data.geojson.Reader.
-        * @property style {Function=} - The optional URL of the data file.
-        * @property disableLegacyMode {boolean=} - An object providing additional reader configuration parameters.
+        * style {Function=} - The optional URL of the data file.
+        * disableLegacyMode {boolean=} - An object providing additional reader configuration parameters.
         */
       trait Options extends StObject {
         

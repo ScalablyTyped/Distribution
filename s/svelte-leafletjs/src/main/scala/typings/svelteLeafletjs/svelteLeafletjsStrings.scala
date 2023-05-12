@@ -7,170 +7,170 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object svelteLeafletjsStrings {
   
   @js.native
-  sealed trait onadd extends StObject
-  inline def onadd: onadd = "onadd".asInstanceOf[onadd]
+  sealed trait add extends StObject
+  inline def add: add = "add".asInstanceOf[add]
   
   @js.native
-  sealed trait onautopanstart extends StObject
-  inline def onautopanstart: onautopanstart = "onautopanstart".asInstanceOf[onautopanstart]
+  sealed trait autopanstart extends StObject
+  inline def autopanstart: autopanstart = "autopanstart".asInstanceOf[autopanstart]
   
   @js.native
-  sealed trait onbaselayerchange extends StObject
-  inline def onbaselayerchange: onbaselayerchange = "onbaselayerchange".asInstanceOf[onbaselayerchange]
+  sealed trait baselayerchange extends StObject
+  inline def baselayerchange: baselayerchange = "baselayerchange".asInstanceOf[baselayerchange]
   
   @js.native
-  sealed trait onblur extends StObject
-  inline def onblur: onblur = "onblur".asInstanceOf[onblur]
+  sealed trait blur extends StObject
+  inline def blur: blur = "blur".asInstanceOf[blur]
   
   @js.native
-  sealed trait onclick extends StObject
-  inline def onclick: onclick = "onclick".asInstanceOf[onclick]
+  sealed trait click extends StObject
+  inline def click: click = "click".asInstanceOf[click]
   
   @js.native
-  sealed trait oncontextmenu extends StObject
-  inline def oncontextmenu: oncontextmenu = "oncontextmenu".asInstanceOf[oncontextmenu]
+  sealed trait contextmenu extends StObject
+  inline def contextmenu: contextmenu = "contextmenu".asInstanceOf[contextmenu]
   
   @js.native
-  sealed trait ondblclick extends StObject
-  inline def ondblclick: ondblclick = "ondblclick".asInstanceOf[ondblclick]
+  sealed trait dblclick extends StObject
+  inline def dblclick: dblclick = "dblclick".asInstanceOf[dblclick]
   
   @js.native
-  sealed trait ondrag extends StObject
-  inline def ondrag: ondrag = "ondrag".asInstanceOf[ondrag]
+  sealed trait drag extends StObject
+  inline def drag: drag = "drag".asInstanceOf[drag]
   
   @js.native
-  sealed trait ondragend extends StObject
-  inline def ondragend: ondragend = "ondragend".asInstanceOf[ondragend]
+  sealed trait dragend extends StObject
+  inline def dragend: dragend = "dragend".asInstanceOf[dragend]
   
   @js.native
-  sealed trait ondragstart extends StObject
-  inline def ondragstart: ondragstart = "ondragstart".asInstanceOf[ondragstart]
+  sealed trait dragstart extends StObject
+  inline def dragstart: dragstart = "dragstart".asInstanceOf[dragstart]
   
   @js.native
-  sealed trait onfocus extends StObject
-  inline def onfocus: onfocus = "onfocus".asInstanceOf[onfocus]
+  sealed trait focus extends StObject
+  inline def focus: focus = "focus".asInstanceOf[focus]
   
   @js.native
-  sealed trait onlayeradd extends StObject
-  inline def onlayeradd: onlayeradd = "onlayeradd".asInstanceOf[onlayeradd]
+  sealed trait layeradd extends StObject
+  inline def layeradd: layeradd = "layeradd".asInstanceOf[layeradd]
   
   @js.native
-  sealed trait onlayerremove extends StObject
-  inline def onlayerremove: onlayerremove = "onlayerremove".asInstanceOf[onlayerremove]
+  sealed trait layerremove extends StObject
+  inline def layerremove: layerremove = "layerremove".asInstanceOf[layerremove]
   
   @js.native
-  sealed trait onload extends StObject
-  inline def onload: onload = "onload".asInstanceOf[onload]
+  sealed trait load extends StObject
+  inline def load: load = "load".asInstanceOf[load]
   
   @js.native
-  sealed trait onloading extends StObject
-  inline def onloading: onloading = "onloading".asInstanceOf[onloading]
+  sealed trait loading extends StObject
+  inline def loading: loading = "loading".asInstanceOf[loading]
   
   @js.native
-  sealed trait onlocationerror extends StObject
-  inline def onlocationerror: onlocationerror = "onlocationerror".asInstanceOf[onlocationerror]
+  sealed trait locationerror extends StObject
+  inline def locationerror: locationerror = "locationerror".asInstanceOf[locationerror]
   
   @js.native
-  sealed trait onlocationfound extends StObject
-  inline def onlocationfound: onlocationfound = "onlocationfound".asInstanceOf[onlocationfound]
+  sealed trait locationfound extends StObject
+  inline def locationfound: locationfound = "locationfound".asInstanceOf[locationfound]
   
   @js.native
-  sealed trait onmousedown extends StObject
-  inline def onmousedown: onmousedown = "onmousedown".asInstanceOf[onmousedown]
+  sealed trait mousedown extends StObject
+  inline def mousedown: mousedown = "mousedown".asInstanceOf[mousedown]
   
   @js.native
-  sealed trait onmousemove extends StObject
-  inline def onmousemove: onmousemove = "onmousemove".asInstanceOf[onmousemove]
+  sealed trait mousemove extends StObject
+  inline def mousemove: mousemove = "mousemove".asInstanceOf[mousemove]
   
   @js.native
-  sealed trait onmouseout extends StObject
-  inline def onmouseout: onmouseout = "onmouseout".asInstanceOf[onmouseout]
+  sealed trait mouseout extends StObject
+  inline def mouseout: mouseout = "mouseout".asInstanceOf[mouseout]
   
   @js.native
-  sealed trait onmouseover extends StObject
-  inline def onmouseover: onmouseover = "onmouseover".asInstanceOf[onmouseover]
+  sealed trait mouseover extends StObject
+  inline def mouseover: mouseover = "mouseover".asInstanceOf[mouseover]
   
   @js.native
-  sealed trait onmouseup extends StObject
-  inline def onmouseup: onmouseup = "onmouseup".asInstanceOf[onmouseup]
+  sealed trait mouseup extends StObject
+  inline def mouseup: mouseup = "mouseup".asInstanceOf[mouseup]
   
   @js.native
-  sealed trait onmove extends StObject
-  inline def onmove: onmove = "onmove".asInstanceOf[onmove]
+  sealed trait move extends StObject
+  inline def move: move = "move".asInstanceOf[move]
   
   @js.native
-  sealed trait onmoveend extends StObject
-  inline def onmoveend: onmoveend = "onmoveend".asInstanceOf[onmoveend]
+  sealed trait moveend extends StObject
+  inline def moveend: moveend = "moveend".asInstanceOf[moveend]
   
   @js.native
-  sealed trait onmovestart extends StObject
-  inline def onmovestart: onmovestart = "onmovestart".asInstanceOf[onmovestart]
+  sealed trait movestart extends StObject
+  inline def movestart: movestart = "movestart".asInstanceOf[movestart]
   
   @js.native
-  sealed trait onoverlayadd extends StObject
-  inline def onoverlayadd: onoverlayadd = "onoverlayadd".asInstanceOf[onoverlayadd]
+  sealed trait overlayadd extends StObject
+  inline def overlayadd: overlayadd = "overlayadd".asInstanceOf[overlayadd]
   
   @js.native
-  sealed trait onoverlayremove extends StObject
-  inline def onoverlayremove: onoverlayremove = "onoverlayremove".asInstanceOf[onoverlayremove]
+  sealed trait overlayremove extends StObject
+  inline def overlayremove: overlayremove = "overlayremove".asInstanceOf[overlayremove]
   
   @js.native
-  sealed trait onpopupclose extends StObject
-  inline def onpopupclose: onpopupclose = "onpopupclose".asInstanceOf[onpopupclose]
+  sealed trait popupclose extends StObject
+  inline def popupclose: popupclose = "popupclose".asInstanceOf[popupclose]
   
   @js.native
-  sealed trait onpopupopen extends StObject
-  inline def onpopupopen: onpopupopen = "onpopupopen".asInstanceOf[onpopupopen]
+  sealed trait popupopen extends StObject
+  inline def popupopen: popupopen = "popupopen".asInstanceOf[popupopen]
   
   @js.native
-  sealed trait onpreclick extends StObject
-  inline def onpreclick: onpreclick = "onpreclick".asInstanceOf[onpreclick]
+  sealed trait preclick extends StObject
+  inline def preclick: preclick = "preclick".asInstanceOf[preclick]
   
   @js.native
-  sealed trait onremove extends StObject
-  inline def onremove: onremove = "onremove".asInstanceOf[onremove]
+  sealed trait remove extends StObject
+  inline def remove: remove = "remove".asInstanceOf[remove]
   
   @js.native
-  sealed trait onresize extends StObject
-  inline def onresize: onresize = "onresize".asInstanceOf[onresize]
+  sealed trait resize extends StObject
+  inline def resize: resize = "resize".asInstanceOf[resize]
   
   @js.native
-  sealed trait ontileerror extends StObject
-  inline def ontileerror: ontileerror = "ontileerror".asInstanceOf[ontileerror]
+  sealed trait tileerror extends StObject
+  inline def tileerror: tileerror = "tileerror".asInstanceOf[tileerror]
   
   @js.native
-  sealed trait ontileload extends StObject
-  inline def ontileload: ontileload = "ontileload".asInstanceOf[ontileload]
+  sealed trait tileload extends StObject
+  inline def tileload: tileload = "tileload".asInstanceOf[tileload]
   
   @js.native
-  sealed trait ontileloadstart extends StObject
-  inline def ontileloadstart: ontileloadstart = "ontileloadstart".asInstanceOf[ontileloadstart]
+  sealed trait tileloadstart extends StObject
+  inline def tileloadstart: tileloadstart = "tileloadstart".asInstanceOf[tileloadstart]
   
   @js.native
-  sealed trait ontileunload extends StObject
-  inline def ontileunload: ontileunload = "ontileunload".asInstanceOf[ontileunload]
+  sealed trait tileunload extends StObject
+  inline def tileunload: tileunload = "tileunload".asInstanceOf[tileunload]
   
   @js.native
-  sealed trait onunload extends StObject
-  inline def onunload: onunload = "onunload".asInstanceOf[onunload]
+  sealed trait unload extends StObject
+  inline def unload: unload = "unload".asInstanceOf[unload]
   
   @js.native
-  sealed trait onviewreset extends StObject
-  inline def onviewreset: onviewreset = "onviewreset".asInstanceOf[onviewreset]
+  sealed trait viewreset extends StObject
+  inline def viewreset: viewreset = "viewreset".asInstanceOf[viewreset]
   
   @js.native
-  sealed trait onzoom extends StObject
-  inline def onzoom: onzoom = "onzoom".asInstanceOf[onzoom]
+  sealed trait zoom extends StObject
+  inline def zoom: zoom = "zoom".asInstanceOf[zoom]
   
   @js.native
-  sealed trait onzoomend extends StObject
-  inline def onzoomend: onzoomend = "onzoomend".asInstanceOf[onzoomend]
+  sealed trait zoomend extends StObject
+  inline def zoomend: zoomend = "zoomend".asInstanceOf[zoomend]
   
   @js.native
-  sealed trait onzoomlevelschange extends StObject
-  inline def onzoomlevelschange: onzoomlevelschange = "onzoomlevelschange".asInstanceOf[onzoomlevelschange]
+  sealed trait zoomlevelschange extends StObject
+  inline def zoomlevelschange: zoomlevelschange = "zoomlevelschange".asInstanceOf[zoomlevelschange]
   
   @js.native
-  sealed trait onzoomstart extends StObject
-  inline def onzoomstart: onzoomstart = "onzoomstart".asInstanceOf[onzoomstart]
+  sealed trait zoomstart extends StObject
+  inline def zoomstart: zoomstart = "zoomstart".asInstanceOf[zoomstart]
 }

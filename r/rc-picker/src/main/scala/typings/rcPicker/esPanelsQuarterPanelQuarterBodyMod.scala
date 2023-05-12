@@ -1,7 +1,10 @@
 package typings.rcPicker
 
 import typings.rcPicker.esGenerateMod.GenerateConfig
+import typings.rcPicker.esInterfaceMod.CellRender
+import typings.rcPicker.esInterfaceMod.CellRenderInfo
 import typings.rcPicker.esInterfaceMod.Locale
+import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -20,6 +23,8 @@ object esPanelsQuarterPanelQuarterBodyMod {
   val QUARTER_COL_COUNT: /* 4 */ Double = js.native
   
   trait QuarterBodyProps[DateType] extends StObject {
+    
+    var cellRender: js.UndefOr[CellRender[DateType, DateType]] = js.undefined
     
     var disabledDate: js.UndefOr[js.Function1[/* date */ DateType, Boolean]] = js.undefined
     
@@ -50,6 +55,10 @@ object esPanelsQuarterPanelQuarterBodyMod {
     
     @scala.inline
     implicit open class MutableBuilder[Self <: QuarterBodyProps[?], DateType] (val x: Self & QuarterBodyProps[DateType]) extends AnyVal {
+      
+      inline def setCellRender(value: (DateType, /* info */ CellRenderInfo[DateType]) => ReactNode): Self = StObject.set(x, "cellRender", js.Any.fromFunction2(value))
+      
+      inline def setCellRenderUndefined: Self = StObject.set(x, "cellRender", js.undefined)
       
       inline def setDisabledDate(value: /* date */ DateType => Boolean): Self = StObject.set(x, "disabledDate", js.Any.fromFunction1(value))
       

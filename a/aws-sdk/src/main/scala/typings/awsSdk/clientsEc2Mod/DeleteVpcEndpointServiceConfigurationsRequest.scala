@@ -12,7 +12,7 @@ trait DeleteVpcEndpointServiceConfigurationsRequest extends StObject {
   var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The IDs of one or more services.
+    * The IDs of the services.
     */
   var ServiceIds: VpcEndpointServiceIdList
 }

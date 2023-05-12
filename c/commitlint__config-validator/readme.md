@@ -1,7 +1,7 @@
 
 # Scala.js typings for commitlint__config-validator
 
-Typings are for version 17.1.0
+Typings are for version 17.4.4
 
 ## Library description:
 config validator for commitlint.config.js

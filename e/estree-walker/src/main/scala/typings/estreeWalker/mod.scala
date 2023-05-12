@@ -2,7 +2,6 @@ package typings.estreeWalker
 
 import typings.estreeWalker.anon.Enter
 import typings.estreeWalker.anon.Leave
-import typings.estreeWalker.anon.Remove
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,27 +12,13 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def asyncWalk(ast: typings.estree.mod.BaseNode, param1: Leave): js.Promise[typings.estree.mod.BaseNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("asyncWalk")(ast.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.estree.mod.BaseNode]]
+  inline def asyncWalk(ast: Node, param1: Leave): js.Promise[Node | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("asyncWalk")(ast.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Node | Null]]
   
-  inline def walk(ast: typings.estree.mod.BaseNode, param1: Enter): typings.estree.mod.BaseNode = (^.asInstanceOf[js.Dynamic].applyDynamic("walk")(ast.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[typings.estree.mod.BaseNode]
+  inline def walk(ast: Node, param1: Enter): Node | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("walk")(ast.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[Node | Null]
   
-  type AsyncHandler = js.ThisFunction4[
-    /* this */ Remove, 
-    /* node */ typings.estree.mod.BaseNode, 
-    /* parent */ typings.estree.mod.BaseNode, 
-    /* key */ String, 
-    /* index */ Double, 
-    js.Promise[Unit]
-  ]
+  type AsyncHandler = typings.estreeWalker.typesAsyncMod.AsyncHandler
   
-  type BaseNode = typings.estree.mod.BaseNode
+  type Node = typings.estree.mod.Node
   
-  type SyncHandler = js.ThisFunction4[
-    /* this */ Remove, 
-    /* node */ typings.estree.mod.BaseNode, 
-    /* parent */ typings.estree.mod.BaseNode, 
-    /* key */ String, 
-    /* index */ Double, 
-    Unit
-  ]
+  type SyncHandler = typings.estreeWalker.typesSyncMod.SyncHandler
 }

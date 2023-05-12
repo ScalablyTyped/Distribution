@@ -16,7 +16,7 @@ object libIconsBorderLeftOutlinedMod extends Shortcut {
   @js.native
   trait BorderLeftOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_BorderLeftOutlinedIconType: String = js.native

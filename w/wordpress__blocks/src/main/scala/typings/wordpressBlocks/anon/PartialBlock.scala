@@ -3,24 +3,26 @@ package typings.wordpressBlocks.anon
 import typings.react.mod.ComponentType
 import typings.std.Partial
 import typings.std.Record
-import typings.wordpressBlocks.mod.Block
-import typings.wordpressBlocks.mod.BlockDeprecation
-import typings.wordpressBlocks.mod.BlockEditProps
-import typings.wordpressBlocks.mod.BlockIconNormalized
-import typings.wordpressBlocks.mod.BlockSaveProps
-import typings.wordpressBlocks.mod.BlockStyle
-import typings.wordpressBlocks.mod.BlockSupports
+import typings.wordpressBlocks.Block
+import typings.wordpressBlocks.BlockDeprecation
+import typings.wordpressBlocks.BlockEditProps
+import typings.wordpressBlocks.BlockIconNormalized
+import typings.wordpressBlocks.BlockSaveProps
+import typings.wordpressBlocks.BlockStyle
+import typings.wordpressBlocks.BlockSupports
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Partial<@wordpress/blocks.@wordpress/blocks.Block<{}>> */
+/* Inlined std.Partial<@wordpress/blocks.Block<{}>> */
 trait PartialBlock extends StObject {
+  
+  var ancestor: js.UndefOr[js.Array[String]] = js.undefined
   
   var apiVersion: js.UndefOr[Double] = js.undefined
   
   var attributes: js.UndefOr[
-    /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ k in keyof {} ]: @wordpress/blocks.@wordpress/blocks.BlockAttribute<{}[k] extends std.Array<infer U>? U : {}[k]>} */ js.Any
+    /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ k in keyof {} ]: @wordpress/blocks.BlockAttribute<{}[k] extends std.Array<infer U>? U : {}[k]>} */ js.Any
   ] = js.undefined
   
   var category: js.UndefOr[String] = js.undefined
@@ -83,12 +85,18 @@ object PartialBlock {
   @scala.inline
   implicit open class MutableBuilder[Self <: PartialBlock] (val x: Self) extends AnyVal {
     
+    inline def setAncestor(value: js.Array[String]): Self = StObject.set(x, "ancestor", value.asInstanceOf[js.Any])
+    
+    inline def setAncestorUndefined: Self = StObject.set(x, "ancestor", js.undefined)
+    
+    inline def setAncestorVarargs(value: String*): Self = StObject.set(x, "ancestor", js.Array(value*))
+    
     inline def setApiVersion(value: Double): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
     
     inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
     
     inline def setAttributes(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ k in keyof {} ]: @wordpress/blocks.@wordpress/blocks.BlockAttribute<{}[k] extends std.Array<infer U>? U : {}[k]>} */ js.Any
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {readonly [ k in keyof {} ]: @wordpress/blocks.BlockAttribute<{}[k] extends std.Array<infer U>? U : {}[k]>} */ js.Any
     ): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
     inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)

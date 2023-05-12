@@ -16,7 +16,7 @@ object libIconsScissorOutlinedMod extends Shortcut {
   @js.native
   trait ScissorOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_ScissorOutlinedIconType: String = js.native

@@ -9,5 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class Audio[NodeType /* <: AudioNode */] protected ()
   extends typings.three.srcAudioAudioMod.Audio[NodeType] {
+  /**
+    * Create a new instance of {@link Audio}
+    * @param listener (required) {@link AudioListener | AudioListener} instance.
+    */
   def this(listener: typings.three.srcAudioAudioListenerMod.AudioListener) = this()
 }

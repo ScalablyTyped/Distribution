@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
      with BaseNode
      with Declaration
      with ExportDeclaration
+     with ImportOrExportDeclaration
      with ModuleDeclaration
      with Standardized
      with Statement {

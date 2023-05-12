@@ -22,7 +22,7 @@ trait OriginAccessControlSummary extends StObject {
   var Name: String
   
   /**
-    * The type of origin that this origin access control is for. The only valid value is s3.
+    * The type of origin that this origin access control is for.
     */
   var OriginAccessControlOriginType: OriginAccessControlOriginTypes
   

@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.RubyPosition
+import typings.csstype.mod.Property.WebkitOverflowScrolling
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,8 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `319` extends StObject {
   
   var value: js.UndefOr[
-    RubyPosition | (js.Array[
-      (Extract[js.UndefOr[RubyPosition | js.Array[NonNullable[js.UndefOr[RubyPosition]]]], String]) | NonNullable[js.UndefOr[RubyPosition]]
+    WebkitOverflowScrolling | (js.Array[
+      (Extract[
+        js.UndefOr[
+          WebkitOverflowScrolling | js.Array[NonNullable[js.UndefOr[WebkitOverflowScrolling]]]
+        ], 
+        String
+      ]) | NonNullable[js.UndefOr[WebkitOverflowScrolling]]
     ])
   ] = js.native
 }

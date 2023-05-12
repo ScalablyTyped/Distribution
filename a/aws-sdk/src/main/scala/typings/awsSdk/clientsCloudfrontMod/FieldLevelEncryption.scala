@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FieldLevelEncryption extends StObject {
   
   /**
-    * A complex data type that includes the profile configurations specified for field-level encryption. 
+    * A complex data type that includes the profile configurations specified for field-level encryption.
     */
   var FieldLevelEncryptionConfig: typings.awsSdk.clientsCloudfrontMod.FieldLevelEncryptionConfig
   
@@ -17,7 +17,7 @@ trait FieldLevelEncryption extends StObject {
   var Id: String
   
   /**
-    * The last time the field-level encryption configuration was changed. 
+    * The last time the field-level encryption configuration was changed.
     */
   var LastModifiedTime: js.Date
 }

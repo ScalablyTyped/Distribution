@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "eslint-visitor-keys" : "3.3.0"
+      "eslint-visitor-keys" : "3.4.1"
     }
   ],
   "test-dependencies" : [
     {
-      "eslint-visitor-keys" : "3.3.0"
+      "eslint-visitor-keys" : "3.4.1"
     }
   ],
   "compile-devDependencies" : [

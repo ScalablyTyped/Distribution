@@ -31,7 +31,6 @@ trait IObjectOptions extends StObject {
     * to the canvas, but clipping just a particular object.
     * WARNING this is beta, this feature may change or be renamed.
     * since 2.4.0
-    * @type boolean
     * @default false
     */
   var absolutePositioned: js.UndefOr[Boolean] = js.undefined
@@ -71,7 +70,6 @@ trait IObjectOptions extends StObject {
     * Those properties are checked by statefullCache ON ( or lazy mode if we want ) or from single
     * calls to Object.set(key, value). If the key is in this list, the object is marked as dirty
     * and refreshed at the next render
-    * @type Array
     */
   var cacheProperties: js.UndefOr[js.Array[String]] = js.undefined
   
@@ -145,7 +143,6 @@ trait IObjectOptions extends StObject {
   /**
     * When `true`, object is not exported in OBJECT/JSON
     * since 1.6.3
-    * @type Boolean
     * @default
     */
   var excludeFromExport: js.UndefOr[Boolean] = js.undefined
@@ -216,7 +213,6 @@ trait IObjectOptions extends StObject {
     * Meaningful ONLY when the object is used as clipPath.
     * if true, the clipPath will make the object clip to the outside of the clipPath
     * since 2.4.0
-    * @type boolean
     * @default false
     */
   var inverted: js.UndefOr[Boolean] = js.undefined
@@ -258,13 +254,11 @@ trait IObjectOptions extends StObject {
   
   /**
     * When `true`, object horizontal skewing is locked
-    * @type Boolean
     */
   var lockSkewingX: js.UndefOr[Boolean] = js.undefined
   
   /**
     * When `true`, object vertical skewing is locked
-    * @type Boolean
     */
   var lockSkewingY: js.UndefOr[Boolean] = js.undefined
   
@@ -299,7 +293,6 @@ trait IObjectOptions extends StObject {
     * this setting is performance and application dependant.
     * default to true
     * since 1.7.0
-    * @type Boolean
     */
   var noScaleCache: js.UndefOr[Boolean] = js.undefined
   
@@ -349,7 +342,6 @@ trait IObjectOptions extends StObject {
   
   /**
     * Determines if the fill or the stroke is drawn first (one of "fill" or "stroke")
-    * @type String
     */
   var paintFirst: js.UndefOr[String] = js.undefined
   
@@ -382,7 +374,6 @@ trait IObjectOptions extends StObject {
   /**
     * Selection Background color of an object. colored layer behind the object when it is active.
     * does not mix good with globalCompositeOperation methods.
-    * @type String
     */
   var selectionBackgroundColor: js.UndefOr[String] = js.undefined
   
@@ -415,7 +406,6 @@ trait IObjectOptions extends StObject {
     * List of properties to consider when checking if state
     * of an object is changed (fabric.Object#hasStateChanged)
     * as well as for history (undo/redo) purposes
-    * @type Array
     */
   var stateProperties: js.UndefOr[js.Array[String]] = js.undefined
   
@@ -426,7 +416,6 @@ trait IObjectOptions extends StObject {
     * to disable it for groups.
     * default to false
     * since 1.7.0
-    * @type Boolean
     * @default false
     */
   var statefullCache: js.UndefOr[Boolean] = js.undefined
@@ -443,7 +432,6 @@ trait IObjectOptions extends StObject {
   
   /**
     * Line offset of an object's stroke
-    * @type Number
     * @default
     */
   var strokeDashOffset: js.UndefOr[Double] = js.undefined
@@ -468,9 +456,7 @@ trait IObjectOptions extends StObject {
     * When `true`, the stroke will always match the exact pixel size entered for stroke width.
     * default to false
     * @since 2.6.0
-    * @type Boolean
     * @default false
-    * @type Boolean
     */
   var strokeUniform: js.UndefOr[Boolean] = js.undefined
   

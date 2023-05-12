@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.wordpressBlocks.anon.HTML
 import typings.wordpressBlocks.anon.Mode
 import typings.wordpressBlocks.anon.`0`
-import typings.wordpressBlocks.mod.BlockInstance
 import typings.wordpressBlocks.wordpressBlocksStrings.AUTO
 import typings.wordpressBlocks.wordpressBlocksStrings.BLOCKS
 import typings.wordpressBlocks.wordpressBlocksStrings.INLINE

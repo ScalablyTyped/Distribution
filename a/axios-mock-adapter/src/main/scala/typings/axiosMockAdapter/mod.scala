@@ -12,9 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @JSImport("axios-mock-adapter", JSImport.Default)
+  @JSImport("axios-mock-adapter", JSImport.Namespace)
   @js.native
-  open class default protected ()
+  open class ^ protected ()
     extends StObject
        with MockAdapter {
     def this(axiosInstance: AxiosInstance) = this()

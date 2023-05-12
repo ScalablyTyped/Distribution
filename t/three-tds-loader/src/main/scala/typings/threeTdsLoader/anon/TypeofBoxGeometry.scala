@@ -19,5 +19,6 @@ trait TypeofBoxGeometry
       BoxGeometry
     ] {
   
-  def fromJSON(data: Any): typings.three.srcGeometriesBoxGeometryMod.BoxGeometry = js.native
+  /** @internal */
+  def fromJSON(data: js.Object): typings.three.srcGeometriesBoxGeometryMod.BoxGeometry = js.native
 }

@@ -6,7 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AccountidNumber extends StObject {
   
-  /** account_id parameter */
   var account_id: Double
 }
 object AccountidNumber {

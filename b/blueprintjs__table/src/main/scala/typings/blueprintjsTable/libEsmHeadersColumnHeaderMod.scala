@@ -23,7 +23,7 @@ object libEsmHeadersColumnHeaderMod {
     def this(props: IColumnHeaderProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: IColumnHeaderProps, context: Any) = this()
     

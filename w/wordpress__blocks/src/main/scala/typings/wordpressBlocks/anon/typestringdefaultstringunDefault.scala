@@ -1,6 +1,6 @@
 package typings.wordpressBlocks.anon
 
-import typings.wordpressBlocks.mod.AttributeSource.None
+import typings.wordpressBlocks.AttributeSource.None
 import typings.wordpressBlocks.wordpressBlocksStrings.string
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

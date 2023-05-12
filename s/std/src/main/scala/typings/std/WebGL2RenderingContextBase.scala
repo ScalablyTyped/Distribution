@@ -1,5 +1,265 @@
 package typings.std
 
+import typings.std.stdInts.`-1`
+import typings.std.stdInts.`0x00000001`
+import typings.std.stdInts.`0x0C02`
+import typings.std.stdInts.`0x0CF2`
+import typings.std.stdInts.`0x0CF3`
+import typings.std.stdInts.`0x0CF4`
+import typings.std.stdInts.`0x0D02`
+import typings.std.stdInts.`0x0D03`
+import typings.std.stdInts.`0x0D04`
+import typings.std.stdInts.`0x140B`
+import typings.std.stdInts.`0x1800`
+import typings.std.stdInts.`0x1801`
+import typings.std.stdInts.`0x1802`
+import typings.std.stdInts.`0x1903`
+import typings.std.stdInts.`0x8007`
+import typings.std.stdInts.`0x8008`
+import typings.std.stdInts.`0x8051`
+import typings.std.stdInts.`0x8058`
+import typings.std.stdInts.`0x8059`
+import typings.std.stdInts.`0x806A`
+import typings.std.stdInts.`0x806D`
+import typings.std.stdInts.`0x806E`
+import typings.std.stdInts.`0x806F`
+import typings.std.stdInts.`0x8072`
+import typings.std.stdInts.`0x8073`
+import typings.std.stdInts.`0x80E8`
+import typings.std.stdInts.`0x80E9`
+import typings.std.stdInts.`0x813A`
+import typings.std.stdInts.`0x813B`
+import typings.std.stdInts.`0x813C`
+import typings.std.stdInts.`0x813D`
+import typings.std.stdInts.`0x81A6`
+import typings.std.stdInts.`0x8210`
+import typings.std.stdInts.`0x8211`
+import typings.std.stdInts.`0x8212`
+import typings.std.stdInts.`0x8213`
+import typings.std.stdInts.`0x8214`
+import typings.std.stdInts.`0x8215`
+import typings.std.stdInts.`0x8216`
+import typings.std.stdInts.`0x8217`
+import typings.std.stdInts.`0x8218`
+import typings.std.stdInts.`0x8227`
+import typings.std.stdInts.`0x8228`
+import typings.std.stdInts.`0x8229`
+import typings.std.stdInts.`0x822B`
+import typings.std.stdInts.`0x822D`
+import typings.std.stdInts.`0x822E`
+import typings.std.stdInts.`0x822F`
+import typings.std.stdInts.`0x8230`
+import typings.std.stdInts.`0x8231`
+import typings.std.stdInts.`0x8232`
+import typings.std.stdInts.`0x8233`
+import typings.std.stdInts.`0x8234`
+import typings.std.stdInts.`0x8235`
+import typings.std.stdInts.`0x8236`
+import typings.std.stdInts.`0x8237`
+import typings.std.stdInts.`0x8238`
+import typings.std.stdInts.`0x8239`
+import typings.std.stdInts.`0x823A`
+import typings.std.stdInts.`0x823B`
+import typings.std.stdInts.`0x823C`
+import typings.std.stdInts.`0x82DF`
+import typings.std.stdInts.`0x8368`
+import typings.std.stdInts.`0x84FA`
+import typings.std.stdInts.`0x84FD`
+import typings.std.stdInts.`0x85B5`
+import typings.std.stdInts.`0x8814`
+import typings.std.stdInts.`0x8815`
+import typings.std.stdInts.`0x881A`
+import typings.std.stdInts.`0x881B`
+import typings.std.stdInts.`0x8824`
+import typings.std.stdInts.`0x8825`
+import typings.std.stdInts.`0x8826`
+import typings.std.stdInts.`0x8827`
+import typings.std.stdInts.`0x8828`
+import typings.std.stdInts.`0x8829`
+import typings.std.stdInts.`0x882A`
+import typings.std.stdInts.`0x882B`
+import typings.std.stdInts.`0x882C`
+import typings.std.stdInts.`0x882D`
+import typings.std.stdInts.`0x882E`
+import typings.std.stdInts.`0x882F`
+import typings.std.stdInts.`0x8830`
+import typings.std.stdInts.`0x8831`
+import typings.std.stdInts.`0x8832`
+import typings.std.stdInts.`0x8833`
+import typings.std.stdInts.`0x8834`
+import typings.std.stdInts.`0x884C`
+import typings.std.stdInts.`0x884D`
+import typings.std.stdInts.`0x884E`
+import typings.std.stdInts.`0x8865`
+import typings.std.stdInts.`0x8866`
+import typings.std.stdInts.`0x8867`
+import typings.std.stdInts.`0x88E1`
+import typings.std.stdInts.`0x88E2`
+import typings.std.stdInts.`0x88E5`
+import typings.std.stdInts.`0x88E6`
+import typings.std.stdInts.`0x88E9`
+import typings.std.stdInts.`0x88EA`
+import typings.std.stdInts.`0x88EB`
+import typings.std.stdInts.`0x88EC`
+import typings.std.stdInts.`0x88ED`
+import typings.std.stdInts.`0x88EF`
+import typings.std.stdInts.`0x88F0`
+import typings.std.stdInts.`0x88FD`
+import typings.std.stdInts.`0x88FE`
+import typings.std.stdInts.`0x88FF`
+import typings.std.stdInts.`0x8904`
+import typings.std.stdInts.`0x8905`
+import typings.std.stdInts.`0x8919`
+import typings.std.stdInts.`0x8A11`
+import typings.std.stdInts.`0x8A28`
+import typings.std.stdInts.`0x8A29`
+import typings.std.stdInts.`0x8A2A`
+import typings.std.stdInts.`0x8A2B`
+import typings.std.stdInts.`0x8A2D`
+import typings.std.stdInts.`0x8A2E`
+import typings.std.stdInts.`0x8A2F`
+import typings.std.stdInts.`0x8A30`
+import typings.std.stdInts.`0x8A31`
+import typings.std.stdInts.`0x8A33`
+import typings.std.stdInts.`0x8A34`
+import typings.std.stdInts.`0x8A36`
+import typings.std.stdInts.`0x8A37`
+import typings.std.stdInts.`0x8A38`
+import typings.std.stdInts.`0x8A3A`
+import typings.std.stdInts.`0x8A3B`
+import typings.std.stdInts.`0x8A3C`
+import typings.std.stdInts.`0x8A3D`
+import typings.std.stdInts.`0x8A3E`
+import typings.std.stdInts.`0x8A3F`
+import typings.std.stdInts.`0x8A40`
+import typings.std.stdInts.`0x8A42`
+import typings.std.stdInts.`0x8A43`
+import typings.std.stdInts.`0x8A44`
+import typings.std.stdInts.`0x8A46`
+import typings.std.stdInts.`0x8B49`
+import typings.std.stdInts.`0x8B4A`
+import typings.std.stdInts.`0x8B4B`
+import typings.std.stdInts.`0x8B5F`
+import typings.std.stdInts.`0x8B62`
+import typings.std.stdInts.`0x8B65`
+import typings.std.stdInts.`0x8B66`
+import typings.std.stdInts.`0x8B67`
+import typings.std.stdInts.`0x8B68`
+import typings.std.stdInts.`0x8B69`
+import typings.std.stdInts.`0x8B6A`
+import typings.std.stdInts.`0x8B8B`
+import typings.std.stdInts.`0x8C17`
+import typings.std.stdInts.`0x8C1A`
+import typings.std.stdInts.`0x8C1D`
+import typings.std.stdInts.`0x8C2F`
+import typings.std.stdInts.`0x8C3A`
+import typings.std.stdInts.`0x8C3B`
+import typings.std.stdInts.`0x8C3D`
+import typings.std.stdInts.`0x8C3E`
+import typings.std.stdInts.`0x8C40`
+import typings.std.stdInts.`0x8C41`
+import typings.std.stdInts.`0x8C43`
+import typings.std.stdInts.`0x8C7F`
+import typings.std.stdInts.`0x8C80`
+import typings.std.stdInts.`0x8C83`
+import typings.std.stdInts.`0x8C84`
+import typings.std.stdInts.`0x8C85`
+import typings.std.stdInts.`0x8C88`
+import typings.std.stdInts.`0x8C89`
+import typings.std.stdInts.`0x8C8A`
+import typings.std.stdInts.`0x8C8B`
+import typings.std.stdInts.`0x8C8C`
+import typings.std.stdInts.`0x8C8D`
+import typings.std.stdInts.`0x8C8E`
+import typings.std.stdInts.`0x8C8F`
+import typings.std.stdInts.`0x8CA6`
+import typings.std.stdInts.`0x8CA8`
+import typings.std.stdInts.`0x8CA9`
+import typings.std.stdInts.`0x8CAA`
+import typings.std.stdInts.`0x8CAB`
+import typings.std.stdInts.`0x8CAC`
+import typings.std.stdInts.`0x8CAD`
+import typings.std.stdInts.`0x8CD4`
+import typings.std.stdInts.`0x8CDF`
+import typings.std.stdInts.`0x8CE1`
+import typings.std.stdInts.`0x8CE2`
+import typings.std.stdInts.`0x8CE3`
+import typings.std.stdInts.`0x8CE4`
+import typings.std.stdInts.`0x8CE5`
+import typings.std.stdInts.`0x8CE6`
+import typings.std.stdInts.`0x8CE7`
+import typings.std.stdInts.`0x8CE8`
+import typings.std.stdInts.`0x8CE9`
+import typings.std.stdInts.`0x8CEA`
+import typings.std.stdInts.`0x8CEB`
+import typings.std.stdInts.`0x8CEC`
+import typings.std.stdInts.`0x8CED`
+import typings.std.stdInts.`0x8CEE`
+import typings.std.stdInts.`0x8CEF`
+import typings.std.stdInts.`0x8D56`
+import typings.std.stdInts.`0x8D57`
+import typings.std.stdInts.`0x8D6A`
+import typings.std.stdInts.`0x8D6B`
+import typings.std.stdInts.`0x8D70`
+import typings.std.stdInts.`0x8D71`
+import typings.std.stdInts.`0x8D76`
+import typings.std.stdInts.`0x8D77`
+import typings.std.stdInts.`0x8D7C`
+import typings.std.stdInts.`0x8D7D`
+import typings.std.stdInts.`0x8D82`
+import typings.std.stdInts.`0x8D83`
+import typings.std.stdInts.`0x8D88`
+import typings.std.stdInts.`0x8D89`
+import typings.std.stdInts.`0x8D8E`
+import typings.std.stdInts.`0x8D8F`
+import typings.std.stdInts.`0x8D94`
+import typings.std.stdInts.`0x8D98`
+import typings.std.stdInts.`0x8D99`
+import typings.std.stdInts.`0x8D9F`
+import typings.std.stdInts.`0x8DAD`
+import typings.std.stdInts.`0x8DC1`
+import typings.std.stdInts.`0x8DC4`
+import typings.std.stdInts.`0x8DC5`
+import typings.std.stdInts.`0x8DC6`
+import typings.std.stdInts.`0x8DC7`
+import typings.std.stdInts.`0x8DC8`
+import typings.std.stdInts.`0x8DCA`
+import typings.std.stdInts.`0x8DCB`
+import typings.std.stdInts.`0x8DCC`
+import typings.std.stdInts.`0x8DCF`
+import typings.std.stdInts.`0x8DD2`
+import typings.std.stdInts.`0x8DD3`
+import typings.std.stdInts.`0x8DD4`
+import typings.std.stdInts.`0x8DD7`
+import typings.std.stdInts.`0x8E22`
+import typings.std.stdInts.`0x8E23`
+import typings.std.stdInts.`0x8E24`
+import typings.std.stdInts.`0x8E25`
+import typings.std.stdInts.`0x8F36`
+import typings.std.stdInts.`0x8F37`
+import typings.std.stdInts.`0x8F94`
+import typings.std.stdInts.`0x8F95`
+import typings.std.stdInts.`0x8F96`
+import typings.std.stdInts.`0x8F97`
+import typings.std.stdInts.`0x8F9C`
+import typings.std.stdInts.`0x906F`
+import typings.std.stdInts.`0x9111`
+import typings.std.stdInts.`0x9112`
+import typings.std.stdInts.`0x9113`
+import typings.std.stdInts.`0x9114`
+import typings.std.stdInts.`0x9115`
+import typings.std.stdInts.`0x9116`
+import typings.std.stdInts.`0x9117`
+import typings.std.stdInts.`0x9118`
+import typings.std.stdInts.`0x9119`
+import typings.std.stdInts.`0x911A`
+import typings.std.stdInts.`0x911B`
+import typings.std.stdInts.`0x911C`
+import typings.std.stdInts.`0x911D`
+import typings.std.stdInts.`0x9122`
+import typings.std.stdInts.`0x9125`
+import typings.std.stdInts.`0x912F`
+import typings.std.stdInts.`0x9247`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,793 +268,793 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WebGL2RenderingContextBase extends StObject {
   
   /* standard dom */
-  val ACTIVE_UNIFORM_BLOCKS: GLenum = js.native
+  val ACTIVE_UNIFORM_BLOCKS: `0x8A36` = js.native
   
   /* standard dom */
-  val ALREADY_SIGNALED: GLenum = js.native
+  val ALREADY_SIGNALED: `0x911A` = js.native
   
   /* standard dom */
-  val ANY_SAMPLES_PASSED: GLenum = js.native
+  val ANY_SAMPLES_PASSED: `0x8C2F` = js.native
   
   /* standard dom */
-  val ANY_SAMPLES_PASSED_CONSERVATIVE: GLenum = js.native
+  val ANY_SAMPLES_PASSED_CONSERVATIVE: `0x8D6A` = js.native
   
   /* standard dom */
-  val COLOR: GLenum = js.native
+  val COLOR: `0x1800` = js.native
   
   /* standard dom */
-  val COLOR_ATTACHMENT1: GLenum = js.native
+  val COLOR_ATTACHMENT1: `0x8CE1` = js.native
   
   /* standard dom */
-  val COLOR_ATTACHMENT10: GLenum = js.native
+  val COLOR_ATTACHMENT10: `0x8CEA` = js.native
   
   /* standard dom */
-  val COLOR_ATTACHMENT11: GLenum = js.native
+  val COLOR_ATTACHMENT11: `0x8CEB` = js.native
   
   /* standard dom */
-  val COLOR_ATTACHMENT12: GLenum = js.native
+  val COLOR_ATTACHMENT12: `0x8CEC` = js.native
   
   /* standard dom */
-  val COLOR_ATTACHMENT13: GLenum = js.native
+  val COLOR_ATTACHMENT13: `0x8CED` = js.native
   
   /* standard dom */
-  val COLOR_ATTACHMENT14: GLenum = js.native
+  val COLOR_ATTACHMENT14: `0x8CEE` = js.native
   
   /* standard dom */
-  val COLOR_ATTACHMENT15: GLenum = js.native
+  val COLOR_ATTACHMENT15: `0x8CEF` = js.native
   
   /* standard dom */
-  val COLOR_ATTACHMENT2: GLenum = js.native
+  val COLOR_ATTACHMENT2: `0x8CE2` = js.native
   
   /* standard dom */
-  val COLOR_ATTACHMENT3: GLenum = js.native
+  val COLOR_ATTACHMENT3: `0x8CE3` = js.native
   
   /* standard dom */
-  val COLOR_ATTACHMENT4: GLenum = js.native
+  val COLOR_ATTACHMENT4: `0x8CE4` = js.native
   
   /* standard dom */
-  val COLOR_ATTACHMENT5: GLenum = js.native
+  val COLOR_ATTACHMENT5: `0x8CE5` = js.native
   
   /* standard dom */
-  val COLOR_ATTACHMENT6: GLenum = js.native
+  val COLOR_ATTACHMENT6: `0x8CE6` = js.native
   
   /* standard dom */
-  val COLOR_ATTACHMENT7: GLenum = js.native
+  val COLOR_ATTACHMENT7: `0x8CE7` = js.native
   
   /* standard dom */
-  val COLOR_ATTACHMENT8: GLenum = js.native
+  val COLOR_ATTACHMENT8: `0x8CE8` = js.native
   
   /* standard dom */
-  val COLOR_ATTACHMENT9: GLenum = js.native
+  val COLOR_ATTACHMENT9: `0x8CE9` = js.native
   
   /* standard dom */
-  val COMPARE_REF_TO_TEXTURE: GLenum = js.native
+  val COMPARE_REF_TO_TEXTURE: `0x884E` = js.native
   
   /* standard dom */
-  val CONDITION_SATISFIED: GLenum = js.native
+  val CONDITION_SATISFIED: `0x911C` = js.native
   
   /* standard dom */
-  val COPY_READ_BUFFER: GLenum = js.native
+  val COPY_READ_BUFFER: `0x8F36` = js.native
   
   /* standard dom */
-  val COPY_READ_BUFFER_BINDING: GLenum = js.native
+  val COPY_READ_BUFFER_BINDING: `0x8F36` = js.native
   
   /* standard dom */
-  val COPY_WRITE_BUFFER: GLenum = js.native
+  val COPY_WRITE_BUFFER: `0x8F37` = js.native
   
   /* standard dom */
-  val COPY_WRITE_BUFFER_BINDING: GLenum = js.native
+  val COPY_WRITE_BUFFER_BINDING: `0x8F37` = js.native
   
   /* standard dom */
-  val CURRENT_QUERY: GLenum = js.native
+  val CURRENT_QUERY: `0x8865` = js.native
   
   /* standard dom */
-  val DEPTH: GLenum = js.native
+  val DEPTH: `0x1801` = js.native
   
   /* standard dom */
-  val DEPTH24_STENCIL8: GLenum = js.native
+  val DEPTH24_STENCIL8: `0x88F0` = js.native
   
   /* standard dom */
-  val DEPTH32F_STENCIL8: GLenum = js.native
+  val DEPTH32F_STENCIL8: `0x8CAD` = js.native
   
   /* standard dom */
-  val DEPTH_COMPONENT24: GLenum = js.native
+  val DEPTH_COMPONENT24: `0x81A6` = js.native
   
   /* standard dom */
-  val DEPTH_COMPONENT32F: GLenum = js.native
+  val DEPTH_COMPONENT32F: `0x8CAC` = js.native
   
   /* standard dom */
-  val DRAW_BUFFER0: GLenum = js.native
+  val DRAW_BUFFER0: `0x8825` = js.native
   
   /* standard dom */
-  val DRAW_BUFFER1: GLenum = js.native
+  val DRAW_BUFFER1: `0x8826` = js.native
   
   /* standard dom */
-  val DRAW_BUFFER10: GLenum = js.native
+  val DRAW_BUFFER10: `0x882F` = js.native
   
   /* standard dom */
-  val DRAW_BUFFER11: GLenum = js.native
+  val DRAW_BUFFER11: `0x8830` = js.native
   
   /* standard dom */
-  val DRAW_BUFFER12: GLenum = js.native
+  val DRAW_BUFFER12: `0x8831` = js.native
   
   /* standard dom */
-  val DRAW_BUFFER13: GLenum = js.native
+  val DRAW_BUFFER13: `0x8832` = js.native
   
   /* standard dom */
-  val DRAW_BUFFER14: GLenum = js.native
+  val DRAW_BUFFER14: `0x8833` = js.native
   
   /* standard dom */
-  val DRAW_BUFFER15: GLenum = js.native
+  val DRAW_BUFFER15: `0x8834` = js.native
   
   /* standard dom */
-  val DRAW_BUFFER2: GLenum = js.native
+  val DRAW_BUFFER2: `0x8827` = js.native
   
   /* standard dom */
-  val DRAW_BUFFER3: GLenum = js.native
+  val DRAW_BUFFER3: `0x8828` = js.native
   
   /* standard dom */
-  val DRAW_BUFFER4: GLenum = js.native
+  val DRAW_BUFFER4: `0x8829` = js.native
   
   /* standard dom */
-  val DRAW_BUFFER5: GLenum = js.native
+  val DRAW_BUFFER5: `0x882A` = js.native
   
   /* standard dom */
-  val DRAW_BUFFER6: GLenum = js.native
+  val DRAW_BUFFER6: `0x882B` = js.native
   
   /* standard dom */
-  val DRAW_BUFFER7: GLenum = js.native
+  val DRAW_BUFFER7: `0x882C` = js.native
   
   /* standard dom */
-  val DRAW_BUFFER8: GLenum = js.native
+  val DRAW_BUFFER8: `0x882D` = js.native
   
   /* standard dom */
-  val DRAW_BUFFER9: GLenum = js.native
+  val DRAW_BUFFER9: `0x882E` = js.native
   
   /* standard dom */
-  val DRAW_FRAMEBUFFER: GLenum = js.native
+  val DRAW_FRAMEBUFFER: `0x8CA9` = js.native
   
   /* standard dom */
-  val DRAW_FRAMEBUFFER_BINDING: GLenum = js.native
+  val DRAW_FRAMEBUFFER_BINDING: `0x8CA6` = js.native
   
   /* standard dom */
-  val DYNAMIC_COPY: GLenum = js.native
+  val DYNAMIC_COPY: `0x88EA` = js.native
   
   /* standard dom */
-  val DYNAMIC_READ: GLenum = js.native
+  val DYNAMIC_READ: `0x88E9` = js.native
   
   /* standard dom */
-  val FLOAT_32_UNSIGNED_INT_24_8_REV: GLenum = js.native
+  val FLOAT_32_UNSIGNED_INT_24_8_REV: `0x8DAD` = js.native
   
   /* standard dom */
-  val FLOAT_MAT2x3: GLenum = js.native
+  val FLOAT_MAT2x3: `0x8B65` = js.native
   
   /* standard dom */
-  val FLOAT_MAT2x4: GLenum = js.native
+  val FLOAT_MAT2x4: `0x8B66` = js.native
   
   /* standard dom */
-  val FLOAT_MAT3x2: GLenum = js.native
+  val FLOAT_MAT3x2: `0x8B67` = js.native
   
   /* standard dom */
-  val FLOAT_MAT3x4: GLenum = js.native
+  val FLOAT_MAT3x4: `0x8B68` = js.native
   
   /* standard dom */
-  val FLOAT_MAT4x2: GLenum = js.native
+  val FLOAT_MAT4x2: `0x8B69` = js.native
   
   /* standard dom */
-  val FLOAT_MAT4x3: GLenum = js.native
+  val FLOAT_MAT4x3: `0x8B6A` = js.native
   
   /* standard dom */
-  val FRAGMENT_SHADER_DERIVATIVE_HINT: GLenum = js.native
+  val FRAGMENT_SHADER_DERIVATIVE_HINT: `0x8B8B` = js.native
   
   /* standard dom */
-  val FRAMEBUFFER_ATTACHMENT_ALPHA_SIZE: GLenum = js.native
+  val FRAMEBUFFER_ATTACHMENT_ALPHA_SIZE: `0x8215` = js.native
   
   /* standard dom */
-  val FRAMEBUFFER_ATTACHMENT_BLUE_SIZE: GLenum = js.native
+  val FRAMEBUFFER_ATTACHMENT_BLUE_SIZE: `0x8214` = js.native
   
   /* standard dom */
-  val FRAMEBUFFER_ATTACHMENT_COLOR_ENCODING: GLenum = js.native
+  val FRAMEBUFFER_ATTACHMENT_COLOR_ENCODING: `0x8210` = js.native
   
   /* standard dom */
-  val FRAMEBUFFER_ATTACHMENT_COMPONENT_TYPE: GLenum = js.native
+  val FRAMEBUFFER_ATTACHMENT_COMPONENT_TYPE: `0x8211` = js.native
   
   /* standard dom */
-  val FRAMEBUFFER_ATTACHMENT_DEPTH_SIZE: GLenum = js.native
+  val FRAMEBUFFER_ATTACHMENT_DEPTH_SIZE: `0x8216` = js.native
   
   /* standard dom */
-  val FRAMEBUFFER_ATTACHMENT_GREEN_SIZE: GLenum = js.native
+  val FRAMEBUFFER_ATTACHMENT_GREEN_SIZE: `0x8213` = js.native
   
   /* standard dom */
-  val FRAMEBUFFER_ATTACHMENT_RED_SIZE: GLenum = js.native
+  val FRAMEBUFFER_ATTACHMENT_RED_SIZE: `0x8212` = js.native
   
   /* standard dom */
-  val FRAMEBUFFER_ATTACHMENT_STENCIL_SIZE: GLenum = js.native
+  val FRAMEBUFFER_ATTACHMENT_STENCIL_SIZE: `0x8217` = js.native
   
   /* standard dom */
-  val FRAMEBUFFER_ATTACHMENT_TEXTURE_LAYER: GLenum = js.native
+  val FRAMEBUFFER_ATTACHMENT_TEXTURE_LAYER: `0x8CD4` = js.native
   
   /* standard dom */
-  val FRAMEBUFFER_DEFAULT: GLenum = js.native
+  val FRAMEBUFFER_DEFAULT: `0x8218` = js.native
   
   /* standard dom */
-  val FRAMEBUFFER_INCOMPLETE_MULTISAMPLE: GLenum = js.native
+  val FRAMEBUFFER_INCOMPLETE_MULTISAMPLE: `0x8D56` = js.native
   
   /* standard dom */
-  val HALF_FLOAT: GLenum = js.native
+  val HALF_FLOAT: `0x140B` = js.native
   
   /* standard dom */
-  val INTERLEAVED_ATTRIBS: GLenum = js.native
+  val INTERLEAVED_ATTRIBS: `0x8C8C` = js.native
   
   /* standard dom */
-  val INT_2_10_10_10_REV: GLenum = js.native
+  val INT_2_10_10_10_REV: `0x8D9F` = js.native
   
   /* standard dom */
-  val INT_SAMPLER_2D: GLenum = js.native
+  val INT_SAMPLER_2D: `0x8DCA` = js.native
   
   /* standard dom */
-  val INT_SAMPLER_2D_ARRAY: GLenum = js.native
+  val INT_SAMPLER_2D_ARRAY: `0x8DCF` = js.native
   
   /* standard dom */
-  val INT_SAMPLER_3D: GLenum = js.native
+  val INT_SAMPLER_3D: `0x8DCB` = js.native
   
   /* standard dom */
-  val INT_SAMPLER_CUBE: GLenum = js.native
+  val INT_SAMPLER_CUBE: `0x8DCC` = js.native
   
   /* standard dom */
-  val INVALID_INDEX: GLenum = js.native
+  val INVALID_INDEX: /* 0xFFFFFFFF */ Double = js.native
   
   /* standard dom */
-  val MAX: GLenum = js.native
+  val MAX: `0x8008` = js.native
   
   /* standard dom */
-  val MAX_3D_TEXTURE_SIZE: GLenum = js.native
+  val MAX_3D_TEXTURE_SIZE: `0x8073` = js.native
   
   /* standard dom */
-  val MAX_ARRAY_TEXTURE_LAYERS: GLenum = js.native
+  val MAX_ARRAY_TEXTURE_LAYERS: `0x88FF` = js.native
   
   /* standard dom */
-  val MAX_CLIENT_WAIT_TIMEOUT_WEBGL: GLenum = js.native
+  val MAX_CLIENT_WAIT_TIMEOUT_WEBGL: `0x9247` = js.native
   
   /* standard dom */
-  val MAX_COLOR_ATTACHMENTS: GLenum = js.native
+  val MAX_COLOR_ATTACHMENTS: `0x8CDF` = js.native
   
   /* standard dom */
-  val MAX_COMBINED_FRAGMENT_UNIFORM_COMPONENTS: GLenum = js.native
+  val MAX_COMBINED_FRAGMENT_UNIFORM_COMPONENTS: `0x8A33` = js.native
   
   /* standard dom */
-  val MAX_COMBINED_UNIFORM_BLOCKS: GLenum = js.native
+  val MAX_COMBINED_UNIFORM_BLOCKS: `0x8A2E` = js.native
   
   /* standard dom */
-  val MAX_COMBINED_VERTEX_UNIFORM_COMPONENTS: GLenum = js.native
+  val MAX_COMBINED_VERTEX_UNIFORM_COMPONENTS: `0x8A31` = js.native
   
   /* standard dom */
-  val MAX_DRAW_BUFFERS: GLenum = js.native
+  val MAX_DRAW_BUFFERS: `0x8824` = js.native
   
   /* standard dom */
-  val MAX_ELEMENTS_INDICES: GLenum = js.native
+  val MAX_ELEMENTS_INDICES: `0x80E9` = js.native
   
   /* standard dom */
-  val MAX_ELEMENTS_VERTICES: GLenum = js.native
+  val MAX_ELEMENTS_VERTICES: `0x80E8` = js.native
   
   /* standard dom */
-  val MAX_ELEMENT_INDEX: GLenum = js.native
+  val MAX_ELEMENT_INDEX: `0x8D6B` = js.native
   
   /* standard dom */
-  val MAX_FRAGMENT_INPUT_COMPONENTS: GLenum = js.native
+  val MAX_FRAGMENT_INPUT_COMPONENTS: `0x9125` = js.native
   
   /* standard dom */
-  val MAX_FRAGMENT_UNIFORM_BLOCKS: GLenum = js.native
+  val MAX_FRAGMENT_UNIFORM_BLOCKS: `0x8A2D` = js.native
   
   /* standard dom */
-  val MAX_FRAGMENT_UNIFORM_COMPONENTS: GLenum = js.native
+  val MAX_FRAGMENT_UNIFORM_COMPONENTS: `0x8B49` = js.native
   
   /* standard dom */
-  val MAX_PROGRAM_TEXEL_OFFSET: GLenum = js.native
+  val MAX_PROGRAM_TEXEL_OFFSET: `0x8905` = js.native
   
   /* standard dom */
-  val MAX_SAMPLES: GLenum = js.native
+  val MAX_SAMPLES: `0x8D57` = js.native
   
   /* standard dom */
-  val MAX_SERVER_WAIT_TIMEOUT: GLenum = js.native
+  val MAX_SERVER_WAIT_TIMEOUT: `0x9111` = js.native
   
   /* standard dom */
-  val MAX_TEXTURE_LOD_BIAS: GLenum = js.native
+  val MAX_TEXTURE_LOD_BIAS: `0x84FD` = js.native
   
   /* standard dom */
-  val MAX_TRANSFORM_FEEDBACK_INTERLEAVED_COMPONENTS: GLenum = js.native
+  val MAX_TRANSFORM_FEEDBACK_INTERLEAVED_COMPONENTS: `0x8C8A` = js.native
   
   /* standard dom */
-  val MAX_TRANSFORM_FEEDBACK_SEPARATE_ATTRIBS: GLenum = js.native
+  val MAX_TRANSFORM_FEEDBACK_SEPARATE_ATTRIBS: `0x8C8B` = js.native
   
   /* standard dom */
-  val MAX_TRANSFORM_FEEDBACK_SEPARATE_COMPONENTS: GLenum = js.native
+  val MAX_TRANSFORM_FEEDBACK_SEPARATE_COMPONENTS: `0x8C80` = js.native
   
   /* standard dom */
-  val MAX_UNIFORM_BLOCK_SIZE: GLenum = js.native
+  val MAX_UNIFORM_BLOCK_SIZE: `0x8A30` = js.native
   
   /* standard dom */
-  val MAX_UNIFORM_BUFFER_BINDINGS: GLenum = js.native
+  val MAX_UNIFORM_BUFFER_BINDINGS: `0x8A2F` = js.native
   
   /* standard dom */
-  val MAX_VARYING_COMPONENTS: GLenum = js.native
+  val MAX_VARYING_COMPONENTS: `0x8B4B` = js.native
   
   /* standard dom */
-  val MAX_VERTEX_OUTPUT_COMPONENTS: GLenum = js.native
+  val MAX_VERTEX_OUTPUT_COMPONENTS: `0x9122` = js.native
   
   /* standard dom */
-  val MAX_VERTEX_UNIFORM_BLOCKS: GLenum = js.native
+  val MAX_VERTEX_UNIFORM_BLOCKS: `0x8A2B` = js.native
   
   /* standard dom */
-  val MAX_VERTEX_UNIFORM_COMPONENTS: GLenum = js.native
+  val MAX_VERTEX_UNIFORM_COMPONENTS: `0x8B4A` = js.native
   
   /* standard dom */
-  val MIN: GLenum = js.native
+  val MIN: `0x8007` = js.native
   
   /* standard dom */
-  val MIN_PROGRAM_TEXEL_OFFSET: GLenum = js.native
+  val MIN_PROGRAM_TEXEL_OFFSET: `0x8904` = js.native
   
   /* standard dom */
-  val OBJECT_TYPE: GLenum = js.native
+  val OBJECT_TYPE: `0x9112` = js.native
   
   /* standard dom */
-  val PACK_ROW_LENGTH: GLenum = js.native
+  val PACK_ROW_LENGTH: `0x0D02` = js.native
   
   /* standard dom */
-  val PACK_SKIP_PIXELS: GLenum = js.native
+  val PACK_SKIP_PIXELS: `0x0D04` = js.native
   
   /* standard dom */
-  val PACK_SKIP_ROWS: GLenum = js.native
+  val PACK_SKIP_ROWS: `0x0D03` = js.native
   
   /* standard dom */
-  val PIXEL_PACK_BUFFER: GLenum = js.native
+  val PIXEL_PACK_BUFFER: `0x88EB` = js.native
   
   /* standard dom */
-  val PIXEL_PACK_BUFFER_BINDING: GLenum = js.native
+  val PIXEL_PACK_BUFFER_BINDING: `0x88ED` = js.native
   
   /* standard dom */
-  val PIXEL_UNPACK_BUFFER: GLenum = js.native
+  val PIXEL_UNPACK_BUFFER: `0x88EC` = js.native
   
   /* standard dom */
-  val PIXEL_UNPACK_BUFFER_BINDING: GLenum = js.native
+  val PIXEL_UNPACK_BUFFER_BINDING: `0x88EF` = js.native
   
   /* standard dom */
-  val QUERY_RESULT: GLenum = js.native
+  val QUERY_RESULT: `0x8866` = js.native
   
   /* standard dom */
-  val QUERY_RESULT_AVAILABLE: GLenum = js.native
+  val QUERY_RESULT_AVAILABLE: `0x8867` = js.native
   
   /* standard dom */
-  val R11F_G11F_B10F: GLenum = js.native
+  val R11F_G11F_B10F: `0x8C3A` = js.native
   
   /* standard dom */
-  val R16F: GLenum = js.native
+  val R16F: `0x822D` = js.native
   
   /* standard dom */
-  val R16I: GLenum = js.native
+  val R16I: `0x8233` = js.native
   
   /* standard dom */
-  val R16UI: GLenum = js.native
+  val R16UI: `0x8234` = js.native
   
   /* standard dom */
-  val R32F: GLenum = js.native
+  val R32F: `0x822E` = js.native
   
   /* standard dom */
-  val R32I: GLenum = js.native
+  val R32I: `0x8235` = js.native
   
   /* standard dom */
-  val R32UI: GLenum = js.native
+  val R32UI: `0x8236` = js.native
   
   /* standard dom */
-  val R8: GLenum = js.native
+  val R8: `0x8229` = js.native
   
   /* standard dom */
-  val R8I: GLenum = js.native
+  val R8I: `0x8231` = js.native
   
   /* standard dom */
-  val R8UI: GLenum = js.native
+  val R8UI: `0x8232` = js.native
   
   /* standard dom */
-  val R8_SNORM: GLenum = js.native
+  val R8_SNORM: `0x8F94` = js.native
   
   /* standard dom */
-  val RASTERIZER_DISCARD: GLenum = js.native
+  val RASTERIZER_DISCARD: `0x8C89` = js.native
   
   /* standard dom */
-  val READ_BUFFER: GLenum = js.native
+  val READ_BUFFER: `0x0C02` = js.native
   
   /* standard dom */
-  val READ_FRAMEBUFFER: GLenum = js.native
+  val READ_FRAMEBUFFER: `0x8CA8` = js.native
   
   /* standard dom */
-  val READ_FRAMEBUFFER_BINDING: GLenum = js.native
+  val READ_FRAMEBUFFER_BINDING: `0x8CAA` = js.native
   
   /* standard dom */
-  val RED: GLenum = js.native
+  val RED: `0x1903` = js.native
   
   /* standard dom */
-  val RED_INTEGER: GLenum = js.native
+  val RED_INTEGER: `0x8D94` = js.native
   
   /* standard dom */
-  val RENDERBUFFER_SAMPLES: GLenum = js.native
+  val RENDERBUFFER_SAMPLES: `0x8CAB` = js.native
   
   /* standard dom */
-  val RG: GLenum = js.native
+  val RG: `0x8227` = js.native
   
   /* standard dom */
-  val RG16F: GLenum = js.native
+  val RG16F: `0x822F` = js.native
   
   /* standard dom */
-  val RG16I: GLenum = js.native
+  val RG16I: `0x8239` = js.native
   
   /* standard dom */
-  val RG16UI: GLenum = js.native
+  val RG16UI: `0x823A` = js.native
   
   /* standard dom */
-  val RG32F: GLenum = js.native
+  val RG32F: `0x8230` = js.native
   
   /* standard dom */
-  val RG32I: GLenum = js.native
+  val RG32I: `0x823B` = js.native
   
   /* standard dom */
-  val RG32UI: GLenum = js.native
+  val RG32UI: `0x823C` = js.native
   
   /* standard dom */
-  val RG8: GLenum = js.native
+  val RG8: `0x822B` = js.native
   
   /* standard dom */
-  val RG8I: GLenum = js.native
+  val RG8I: `0x8237` = js.native
   
   /* standard dom */
-  val RG8UI: GLenum = js.native
+  val RG8UI: `0x8238` = js.native
   
   /* standard dom */
-  val RG8_SNORM: GLenum = js.native
+  val RG8_SNORM: `0x8F95` = js.native
   
   /* standard dom */
-  val RGB10_A2: GLenum = js.native
+  val RGB10_A2: `0x8059` = js.native
   
   /* standard dom */
-  val RGB10_A2UI: GLenum = js.native
+  val RGB10_A2UI: `0x906F` = js.native
   
   /* standard dom */
-  val RGB16F: GLenum = js.native
+  val RGB16F: `0x881B` = js.native
   
   /* standard dom */
-  val RGB16I: GLenum = js.native
+  val RGB16I: `0x8D89` = js.native
   
   /* standard dom */
-  val RGB16UI: GLenum = js.native
+  val RGB16UI: `0x8D77` = js.native
   
   /* standard dom */
-  val RGB32F: GLenum = js.native
+  val RGB32F: `0x8815` = js.native
   
   /* standard dom */
-  val RGB32I: GLenum = js.native
+  val RGB32I: `0x8D83` = js.native
   
   /* standard dom */
-  val RGB32UI: GLenum = js.native
+  val RGB32UI: `0x8D71` = js.native
   
   /* standard dom */
-  val RGB8: GLenum = js.native
+  val RGB8: `0x8051` = js.native
   
   /* standard dom */
-  val RGB8I: GLenum = js.native
+  val RGB8I: `0x8D8F` = js.native
   
   /* standard dom */
-  val RGB8UI: GLenum = js.native
+  val RGB8UI: `0x8D7D` = js.native
   
   /* standard dom */
-  val RGB8_SNORM: GLenum = js.native
+  val RGB8_SNORM: `0x8F96` = js.native
   
   /* standard dom */
-  val RGB9_E5: GLenum = js.native
+  val RGB9_E5: `0x8C3D` = js.native
   
   /* standard dom */
-  val RGBA16F: GLenum = js.native
+  val RGBA16F: `0x881A` = js.native
   
   /* standard dom */
-  val RGBA16I: GLenum = js.native
+  val RGBA16I: `0x8D88` = js.native
   
   /* standard dom */
-  val RGBA16UI: GLenum = js.native
+  val RGBA16UI: `0x8D76` = js.native
   
   /* standard dom */
-  val RGBA32F: GLenum = js.native
+  val RGBA32F: `0x8814` = js.native
   
   /* standard dom */
-  val RGBA32I: GLenum = js.native
+  val RGBA32I: `0x8D82` = js.native
   
   /* standard dom */
-  val RGBA32UI: GLenum = js.native
+  val RGBA32UI: `0x8D70` = js.native
   
   /* standard dom */
-  val RGBA8: GLenum = js.native
+  val RGBA8: `0x8058` = js.native
   
   /* standard dom */
-  val RGBA8I: GLenum = js.native
+  val RGBA8I: `0x8D8E` = js.native
   
   /* standard dom */
-  val RGBA8UI: GLenum = js.native
+  val RGBA8UI: `0x8D7C` = js.native
   
   /* standard dom */
-  val RGBA8_SNORM: GLenum = js.native
+  val RGBA8_SNORM: `0x8F97` = js.native
   
   /* standard dom */
-  val RGBA_INTEGER: GLenum = js.native
+  val RGBA_INTEGER: `0x8D99` = js.native
   
   /* standard dom */
-  val RGB_INTEGER: GLenum = js.native
+  val RGB_INTEGER: `0x8D98` = js.native
   
   /* standard dom */
-  val RG_INTEGER: GLenum = js.native
+  val RG_INTEGER: `0x8228` = js.native
   
   /* standard dom */
-  val SAMPLER_2D_ARRAY: GLenum = js.native
+  val SAMPLER_2D_ARRAY: `0x8DC1` = js.native
   
   /* standard dom */
-  val SAMPLER_2D_ARRAY_SHADOW: GLenum = js.native
+  val SAMPLER_2D_ARRAY_SHADOW: `0x8DC4` = js.native
   
   /* standard dom */
-  val SAMPLER_2D_SHADOW: GLenum = js.native
+  val SAMPLER_2D_SHADOW: `0x8B62` = js.native
   
   /* standard dom */
-  val SAMPLER_3D: GLenum = js.native
+  val SAMPLER_3D: `0x8B5F` = js.native
   
   /* standard dom */
-  val SAMPLER_BINDING: GLenum = js.native
+  val SAMPLER_BINDING: `0x8919` = js.native
   
   /* standard dom */
-  val SAMPLER_CUBE_SHADOW: GLenum = js.native
+  val SAMPLER_CUBE_SHADOW: `0x8DC5` = js.native
   
   /* standard dom */
-  val SEPARATE_ATTRIBS: GLenum = js.native
+  val SEPARATE_ATTRIBS: `0x8C8D` = js.native
   
   /* standard dom */
-  val SIGNALED: GLenum = js.native
+  val SIGNALED: `0x9119` = js.native
   
   /* standard dom */
-  val SIGNED_NORMALIZED: GLenum = js.native
+  val SIGNED_NORMALIZED: `0x8F9C` = js.native
   
   /* standard dom */
-  val SRGB: GLenum = js.native
+  val SRGB: `0x8C40` = js.native
   
   /* standard dom */
-  val SRGB8: GLenum = js.native
+  val SRGB8: `0x8C41` = js.native
   
   /* standard dom */
-  val SRGB8_ALPHA8: GLenum = js.native
+  val SRGB8_ALPHA8: `0x8C43` = js.native
   
   /* standard dom */
-  val STATIC_COPY: GLenum = js.native
+  val STATIC_COPY: `0x88E6` = js.native
   
   /* standard dom */
-  val STATIC_READ: GLenum = js.native
+  val STATIC_READ: `0x88E5` = js.native
   
   /* standard dom */
-  val STENCIL: GLenum = js.native
+  val STENCIL: `0x1802` = js.native
   
   /* standard dom */
-  val STREAM_COPY: GLenum = js.native
+  val STREAM_COPY: `0x88E2` = js.native
   
   /* standard dom */
-  val STREAM_READ: GLenum = js.native
+  val STREAM_READ: `0x88E1` = js.native
   
   /* standard dom */
-  val SYNC_CONDITION: GLenum = js.native
+  val SYNC_CONDITION: `0x9113` = js.native
   
   /* standard dom */
-  val SYNC_FENCE: GLenum = js.native
+  val SYNC_FENCE: `0x9116` = js.native
   
   /* standard dom */
-  val SYNC_FLAGS: GLenum = js.native
+  val SYNC_FLAGS: `0x9115` = js.native
   
   /* standard dom */
-  val SYNC_FLUSH_COMMANDS_BIT: GLenum = js.native
+  val SYNC_FLUSH_COMMANDS_BIT: `0x00000001` = js.native
   
   /* standard dom */
-  val SYNC_GPU_COMMANDS_COMPLETE: GLenum = js.native
+  val SYNC_GPU_COMMANDS_COMPLETE: `0x9117` = js.native
   
   /* standard dom */
-  val SYNC_STATUS: GLenum = js.native
+  val SYNC_STATUS: `0x9114` = js.native
   
   /* standard dom */
-  val TEXTURE_2D_ARRAY: GLenum = js.native
+  val TEXTURE_2D_ARRAY: `0x8C1A` = js.native
   
   /* standard dom */
-  val TEXTURE_3D: GLenum = js.native
+  val TEXTURE_3D: `0x806F` = js.native
   
   /* standard dom */
-  val TEXTURE_BASE_LEVEL: GLenum = js.native
+  val TEXTURE_BASE_LEVEL: `0x813C` = js.native
   
   /* standard dom */
-  val TEXTURE_BINDING_2D_ARRAY: GLenum = js.native
+  val TEXTURE_BINDING_2D_ARRAY: `0x8C1D` = js.native
   
   /* standard dom */
-  val TEXTURE_BINDING_3D: GLenum = js.native
+  val TEXTURE_BINDING_3D: `0x806A` = js.native
   
   /* standard dom */
-  val TEXTURE_COMPARE_FUNC: GLenum = js.native
+  val TEXTURE_COMPARE_FUNC: `0x884D` = js.native
   
   /* standard dom */
-  val TEXTURE_COMPARE_MODE: GLenum = js.native
+  val TEXTURE_COMPARE_MODE: `0x884C` = js.native
   
   /* standard dom */
-  val TEXTURE_IMMUTABLE_FORMAT: GLenum = js.native
+  val TEXTURE_IMMUTABLE_FORMAT: `0x912F` = js.native
   
   /* standard dom */
-  val TEXTURE_IMMUTABLE_LEVELS: GLenum = js.native
+  val TEXTURE_IMMUTABLE_LEVELS: `0x82DF` = js.native
   
   /* standard dom */
-  val TEXTURE_MAX_LEVEL: GLenum = js.native
+  val TEXTURE_MAX_LEVEL: `0x813D` = js.native
   
   /* standard dom */
-  val TEXTURE_MAX_LOD: GLenum = js.native
+  val TEXTURE_MAX_LOD: `0x813B` = js.native
   
   /* standard dom */
-  val TEXTURE_MIN_LOD: GLenum = js.native
+  val TEXTURE_MIN_LOD: `0x813A` = js.native
   
   /* standard dom */
-  val TEXTURE_WRAP_R: GLenum = js.native
+  val TEXTURE_WRAP_R: `0x8072` = js.native
   
   /* standard dom */
-  val TIMEOUT_EXPIRED: GLenum = js.native
+  val TIMEOUT_EXPIRED: `0x911B` = js.native
   
   /* standard dom */
-  val TIMEOUT_IGNORED: GLint64 = js.native
+  val TIMEOUT_IGNORED: `-1` = js.native
   
   /* standard dom */
-  val TRANSFORM_FEEDBACK: GLenum = js.native
+  val TRANSFORM_FEEDBACK: `0x8E22` = js.native
   
   /* standard dom */
-  val TRANSFORM_FEEDBACK_ACTIVE: GLenum = js.native
+  val TRANSFORM_FEEDBACK_ACTIVE: `0x8E24` = js.native
   
   /* standard dom */
-  val TRANSFORM_FEEDBACK_BINDING: GLenum = js.native
+  val TRANSFORM_FEEDBACK_BINDING: `0x8E25` = js.native
   
   /* standard dom */
-  val TRANSFORM_FEEDBACK_BUFFER: GLenum = js.native
+  val TRANSFORM_FEEDBACK_BUFFER: `0x8C8E` = js.native
   
   /* standard dom */
-  val TRANSFORM_FEEDBACK_BUFFER_BINDING: GLenum = js.native
+  val TRANSFORM_FEEDBACK_BUFFER_BINDING: `0x8C8F` = js.native
   
   /* standard dom */
-  val TRANSFORM_FEEDBACK_BUFFER_MODE: GLenum = js.native
+  val TRANSFORM_FEEDBACK_BUFFER_MODE: `0x8C7F` = js.native
   
   /* standard dom */
-  val TRANSFORM_FEEDBACK_BUFFER_SIZE: GLenum = js.native
+  val TRANSFORM_FEEDBACK_BUFFER_SIZE: `0x8C85` = js.native
   
   /* standard dom */
-  val TRANSFORM_FEEDBACK_BUFFER_START: GLenum = js.native
+  val TRANSFORM_FEEDBACK_BUFFER_START: `0x8C84` = js.native
   
   /* standard dom */
-  val TRANSFORM_FEEDBACK_PAUSED: GLenum = js.native
+  val TRANSFORM_FEEDBACK_PAUSED: `0x8E23` = js.native
   
   /* standard dom */
-  val TRANSFORM_FEEDBACK_PRIMITIVES_WRITTEN: GLenum = js.native
+  val TRANSFORM_FEEDBACK_PRIMITIVES_WRITTEN: `0x8C88` = js.native
   
   /* standard dom */
-  val TRANSFORM_FEEDBACK_VARYINGS: GLenum = js.native
+  val TRANSFORM_FEEDBACK_VARYINGS: `0x8C83` = js.native
   
   /* standard dom */
-  val UNIFORM_ARRAY_STRIDE: GLenum = js.native
+  val UNIFORM_ARRAY_STRIDE: `0x8A3C` = js.native
   
   /* standard dom */
-  val UNIFORM_BLOCK_ACTIVE_UNIFORMS: GLenum = js.native
+  val UNIFORM_BLOCK_ACTIVE_UNIFORMS: `0x8A42` = js.native
   
   /* standard dom */
-  val UNIFORM_BLOCK_ACTIVE_UNIFORM_INDICES: GLenum = js.native
+  val UNIFORM_BLOCK_ACTIVE_UNIFORM_INDICES: `0x8A43` = js.native
   
   /* standard dom */
-  val UNIFORM_BLOCK_BINDING: GLenum = js.native
+  val UNIFORM_BLOCK_BINDING: `0x8A3F` = js.native
   
   /* standard dom */
-  val UNIFORM_BLOCK_DATA_SIZE: GLenum = js.native
+  val UNIFORM_BLOCK_DATA_SIZE: `0x8A40` = js.native
   
   /* standard dom */
-  val UNIFORM_BLOCK_INDEX: GLenum = js.native
+  val UNIFORM_BLOCK_INDEX: `0x8A3A` = js.native
   
   /* standard dom */
-  val UNIFORM_BLOCK_REFERENCED_BY_FRAGMENT_SHADER: GLenum = js.native
+  val UNIFORM_BLOCK_REFERENCED_BY_FRAGMENT_SHADER: `0x8A46` = js.native
   
   /* standard dom */
-  val UNIFORM_BLOCK_REFERENCED_BY_VERTEX_SHADER: GLenum = js.native
+  val UNIFORM_BLOCK_REFERENCED_BY_VERTEX_SHADER: `0x8A44` = js.native
   
   /* standard dom */
-  val UNIFORM_BUFFER: GLenum = js.native
+  val UNIFORM_BUFFER: `0x8A11` = js.native
   
   /* standard dom */
-  val UNIFORM_BUFFER_BINDING: GLenum = js.native
+  val UNIFORM_BUFFER_BINDING: `0x8A28` = js.native
   
   /* standard dom */
-  val UNIFORM_BUFFER_OFFSET_ALIGNMENT: GLenum = js.native
+  val UNIFORM_BUFFER_OFFSET_ALIGNMENT: `0x8A34` = js.native
   
   /* standard dom */
-  val UNIFORM_BUFFER_SIZE: GLenum = js.native
+  val UNIFORM_BUFFER_SIZE: `0x8A2A` = js.native
   
   /* standard dom */
-  val UNIFORM_BUFFER_START: GLenum = js.native
+  val UNIFORM_BUFFER_START: `0x8A29` = js.native
   
   /* standard dom */
-  val UNIFORM_IS_ROW_MAJOR: GLenum = js.native
+  val UNIFORM_IS_ROW_MAJOR: `0x8A3E` = js.native
   
   /* standard dom */
-  val UNIFORM_MATRIX_STRIDE: GLenum = js.native
+  val UNIFORM_MATRIX_STRIDE: `0x8A3D` = js.native
   
   /* standard dom */
-  val UNIFORM_OFFSET: GLenum = js.native
+  val UNIFORM_OFFSET: `0x8A3B` = js.native
   
   /* standard dom */
-  val UNIFORM_SIZE: GLenum = js.native
+  val UNIFORM_SIZE: `0x8A38` = js.native
   
   /* standard dom */
-  val UNIFORM_TYPE: GLenum = js.native
+  val UNIFORM_TYPE: `0x8A37` = js.native
   
   /* standard dom */
-  val UNPACK_IMAGE_HEIGHT: GLenum = js.native
+  val UNPACK_IMAGE_HEIGHT: `0x806E` = js.native
   
   /* standard dom */
-  val UNPACK_ROW_LENGTH: GLenum = js.native
+  val UNPACK_ROW_LENGTH: `0x0CF2` = js.native
   
   /* standard dom */
-  val UNPACK_SKIP_IMAGES: GLenum = js.native
+  val UNPACK_SKIP_IMAGES: `0x806D` = js.native
   
   /* standard dom */
-  val UNPACK_SKIP_PIXELS: GLenum = js.native
+  val UNPACK_SKIP_PIXELS: `0x0CF4` = js.native
   
   /* standard dom */
-  val UNPACK_SKIP_ROWS: GLenum = js.native
+  val UNPACK_SKIP_ROWS: `0x0CF3` = js.native
   
   /* standard dom */
-  val UNSIGNALED: GLenum = js.native
+  val UNSIGNALED: `0x9118` = js.native
   
   /* standard dom */
-  val UNSIGNED_INT_10F_11F_11F_REV: GLenum = js.native
+  val UNSIGNED_INT_10F_11F_11F_REV: `0x8C3B` = js.native
   
   /* standard dom */
-  val UNSIGNED_INT_24_8: GLenum = js.native
+  val UNSIGNED_INT_24_8: `0x84FA` = js.native
   
   /* standard dom */
-  val UNSIGNED_INT_2_10_10_10_REV: GLenum = js.native
+  val UNSIGNED_INT_2_10_10_10_REV: `0x8368` = js.native
   
   /* standard dom */
-  val UNSIGNED_INT_5_9_9_9_REV: GLenum = js.native
+  val UNSIGNED_INT_5_9_9_9_REV: `0x8C3E` = js.native
   
   /* standard dom */
-  val UNSIGNED_INT_SAMPLER_2D: GLenum = js.native
+  val UNSIGNED_INT_SAMPLER_2D: `0x8DD2` = js.native
   
   /* standard dom */
-  val UNSIGNED_INT_SAMPLER_2D_ARRAY: GLenum = js.native
+  val UNSIGNED_INT_SAMPLER_2D_ARRAY: `0x8DD7` = js.native
   
   /* standard dom */
-  val UNSIGNED_INT_SAMPLER_3D: GLenum = js.native
+  val UNSIGNED_INT_SAMPLER_3D: `0x8DD3` = js.native
   
   /* standard dom */
-  val UNSIGNED_INT_SAMPLER_CUBE: GLenum = js.native
+  val UNSIGNED_INT_SAMPLER_CUBE: `0x8DD4` = js.native
   
   /* standard dom */
-  val UNSIGNED_INT_VEC2: GLenum = js.native
+  val UNSIGNED_INT_VEC2: `0x8DC6` = js.native
   
   /* standard dom */
-  val UNSIGNED_INT_VEC3: GLenum = js.native
+  val UNSIGNED_INT_VEC3: `0x8DC7` = js.native
   
   /* standard dom */
-  val UNSIGNED_INT_VEC4: GLenum = js.native
+  val UNSIGNED_INT_VEC4: `0x8DC8` = js.native
   
   /* standard dom */
-  val UNSIGNED_NORMALIZED: GLenum = js.native
+  val UNSIGNED_NORMALIZED: `0x8C17` = js.native
   
   /* standard dom */
-  val VERTEX_ARRAY_BINDING: GLenum = js.native
+  val VERTEX_ARRAY_BINDING: `0x85B5` = js.native
   
   /* standard dom */
-  val VERTEX_ATTRIB_ARRAY_DIVISOR: GLenum = js.native
+  val VERTEX_ATTRIB_ARRAY_DIVISOR: `0x88FE` = js.native
   
   /* standard dom */
-  val VERTEX_ATTRIB_ARRAY_INTEGER: GLenum = js.native
+  val VERTEX_ATTRIB_ARRAY_INTEGER: `0x88FD` = js.native
   
   /* standard dom */
-  val WAIT_FAILED: GLenum = js.native
+  val WAIT_FAILED: `0x911D` = js.native
   
   /* standard dom */
   def beginQuery(target: GLenum, query: WebGLQuery): Unit = js.native

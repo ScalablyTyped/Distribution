@@ -1,7 +1,7 @@
 package typings.expoFileSystem
 
 import org.scalablytyped.runtime.Shortcut
-import typings.expoFileSystem.buildFileSystemDottypesMod.ExponentFileSystemModule
+import typings.expoFileSystem.buildTypesMod.ExponentFileSystemModule
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

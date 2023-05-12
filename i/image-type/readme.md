@@ -1,7 +1,7 @@
 
 # Scala.js typings for image-type
 
-Typings are for version 5.1.0
+Typings are for version 5.2.0
 
 ## Library description:
 Detect the image type of a Buffer/Uint8Array

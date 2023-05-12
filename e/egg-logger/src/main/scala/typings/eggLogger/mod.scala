@@ -6,6 +6,7 @@ import typings.eggLogger.anon.Excludes
 import typings.eggLogger.eggLoggerStrings.duplicate
 import typings.eggLogger.eggLoggerStrings.ignore
 import typings.eggLogger.eggLoggerStrings.redirect
+import typings.node.asyncHooksMod.AsyncLocalStorage
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -21,14 +22,16 @@ object mod {
   
   @JSImport("egg-logger", "EggConsoleLogger")
   @js.native
-  open class EggConsoleLogger protected () extends Logger[LoggerOptions] {
-    def this(options: LoggerOptions) = this()
+  open class EggConsoleLogger protected () extends Logger[EggLoggerOptions] {
+    def this(options: EggLoggerOptions) = this()
   }
   
   @JSImport("egg-logger", "EggContextLogger")
   @js.native
   open class EggContextLogger protected () extends StObject {
-    def this(ctx: Any, logger: Logger[LoggerOptions]) = this()
+    def this(ctx: Any, logger: Logger[EggLoggerOptions]) = this()
+    
+    var ctx: Any = js.native
     
     def debug(msg: Any, args: Any*): Unit = js.native
     
@@ -36,7 +39,7 @@ object mod {
     
     def info(msg: Any, args: Any*): Unit = js.native
     
-    val paddingMessage: String = js.native
+    def paddingMessage: String = js.native
     
     def warn(msg: Any, args: Any*): Unit = js.native
     
@@ -45,14 +48,14 @@ object mod {
   
   @JSImport("egg-logger", "EggCustomLogger")
   @js.native
-  open class EggCustomLogger protected () extends Logger[LoggerOptions] {
-    def this(options: LoggerOptions) = this()
+  open class EggCustomLogger protected () extends Logger[EggLoggerOptions] {
+    def this(options: EggLoggerOptions) = this()
   }
   
   @JSImport("egg-logger", "EggErrorLogger")
   @js.native
-  open class EggErrorLogger protected () extends Logger[LoggerOptions] {
-    def this(options: LoggerOptions) = this()
+  open class EggErrorLogger protected () extends Logger[EggLoggerOptions] {
+    def this(options: EggLoggerOptions) = this()
   }
   
   @JSImport("egg-logger", "EggLogger")
@@ -69,7 +72,7 @@ object mod {
   @js.native
   open class EggLoggers protected ()
     extends StObject
-       with Map[String, Logger[LoggerOptions]]
+       with Map[String, Logger[EggLoggerOptions]]
        with /* key */ StringDictionary[Any] {
     def this(options: CustomLogger) = this()
     
@@ -124,8 +127,8 @@ object mod {
       * @param {Logger} logger - target logger instance
       * @param {Object} [options] - { excludes: [] }
       */
-    def duplicate(level: LoggerLevel, logger: Logger[LoggerOptions]): Unit = js.native
-    def duplicate(level: LoggerLevel, logger: Logger[LoggerOptions], options: Excludes): Unit = js.native
+    def duplicate(level: LoggerLevel, logger: Logger[EggLoggerOptions]): Unit = js.native
+    def duplicate(level: LoggerLevel, logger: Logger[EggLoggerOptions], options: Excludes): Unit = js.native
     
     /**
       * enable a transport
@@ -142,16 +145,19 @@ object mod {
       * It's proxy to {@link Transport}'s log method.'
       * @param {String} level - log level
       * @param {Array} args - log arguments
-      * @param {Object} meta - log meta
+      * @param {LoggerMeta} [meta] - log meta
       */
-    def log(level: LoggerLevel, args: js.Array[Any], meta: js.Object): Unit = js.native
+    def log(level: LoggerLevel, args: js.Array[Any]): Unit = js.native
+    def log(level: LoggerLevel, args: js.Array[Any], meta: LoggerMeta): Unit = js.native
+    
+    var options: T = js.native
     
     /**
       * Redirect specify level log to the other logger
       * @param {String} level - log level
       * @param {Logger} logger - target logger instance
       */
-    def redirect(level: LoggerLevel, logger: Logger[LoggerOptions]): Unit = js.native
+    def redirect(level: LoggerLevel, logger: Logger[EggLoggerOptions]): Unit = js.native
     
     /**
       * Reload all transports
@@ -194,7 +200,8 @@ object mod {
     
     var level: LoggerLevel = js.native
     
-    def log(level: LoggerLevel, args: js.Array[Any], meta: js.Object): Unit = js.native
+    def log(level: LoggerLevel, args: js.Array[Any]): Unit = js.native
+    def log(level: LoggerLevel, args: js.Array[Any], meta: LoggerMeta): Unit = js.native
     
     def reload(): Unit = js.native
     
@@ -238,17 +245,23 @@ object mod {
     
     var concentrateError: js.UndefOr[duplicate | redirect | ignore] = js.undefined
     
-    var contextFormatter: js.UndefOr[js.Function1[/* meta */ js.UndefOr[js.Object], String]] = js.undefined
+    var contextFormatter: js.UndefOr[js.Function1[/* meta */ js.UndefOr[LoggerMeta], String]] = js.undefined
+    
+    var dateISOFormat: js.UndefOr[Boolean] = js.undefined
     
     var eol: js.UndefOr[String] = js.undefined
     
     var file: String
     
-    var formatter: js.UndefOr[js.Function1[/* meta */ js.UndefOr[js.Object], String]] = js.undefined
+    var formatter: js.UndefOr[js.Function1[/* meta */ js.UndefOr[LoggerMeta], String]] = js.undefined
     
     var jsonFile: js.UndefOr[String] = js.undefined
     
+    var localStorage: js.UndefOr[AsyncLocalStorage[Any]] = js.undefined
+    
     var outputJSON: js.UndefOr[Boolean] = js.undefined
+    
+    var paddingMessageFormatter: js.UndefOr[js.Function1[/* ctx */ js.Object, String]] = js.undefined
   }
   object EggLoggerOptions {
     
@@ -268,9 +281,13 @@ object mod {
       
       inline def setConcentrateErrorUndefined: Self = StObject.set(x, "concentrateError", js.undefined)
       
-      inline def setContextFormatter(value: /* meta */ js.UndefOr[js.Object] => String): Self = StObject.set(x, "contextFormatter", js.Any.fromFunction1(value))
+      inline def setContextFormatter(value: /* meta */ js.UndefOr[LoggerMeta] => String): Self = StObject.set(x, "contextFormatter", js.Any.fromFunction1(value))
       
       inline def setContextFormatterUndefined: Self = StObject.set(x, "contextFormatter", js.undefined)
+      
+      inline def setDateISOFormat(value: Boolean): Self = StObject.set(x, "dateISOFormat", value.asInstanceOf[js.Any])
+      
+      inline def setDateISOFormatUndefined: Self = StObject.set(x, "dateISOFormat", js.undefined)
       
       inline def setEol(value: String): Self = StObject.set(x, "eol", value.asInstanceOf[js.Any])
       
@@ -278,7 +295,7 @@ object mod {
       
       inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
-      inline def setFormatter(value: /* meta */ js.UndefOr[js.Object] => String): Self = StObject.set(x, "formatter", js.Any.fromFunction1(value))
+      inline def setFormatter(value: /* meta */ js.UndefOr[LoggerMeta] => String): Self = StObject.set(x, "formatter", js.Any.fromFunction1(value))
       
       inline def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
       
@@ -286,9 +303,17 @@ object mod {
       
       inline def setJsonFileUndefined: Self = StObject.set(x, "jsonFile", js.undefined)
       
+      inline def setLocalStorage(value: AsyncLocalStorage[Any]): Self = StObject.set(x, "localStorage", value.asInstanceOf[js.Any])
+      
+      inline def setLocalStorageUndefined: Self = StObject.set(x, "localStorage", js.undefined)
+      
       inline def setOutputJSON(value: Boolean): Self = StObject.set(x, "outputJSON", value.asInstanceOf[js.Any])
       
       inline def setOutputJSONUndefined: Self = StObject.set(x, "outputJSON", js.undefined)
+      
+      inline def setPaddingMessageFormatter(value: /* ctx */ js.Object => String): Self = StObject.set(x, "paddingMessageFormatter", js.Any.fromFunction1(value))
+      
+      inline def setPaddingMessageFormatterUndefined: Self = StObject.set(x, "paddingMessageFormatter", js.undefined)
     }
   }
   
@@ -307,6 +332,8 @@ object mod {
     
     var coreLogName: String
     
+    var dateISOFormat: js.UndefOr[Boolean] = js.undefined
+    
     var dir: String
     
     var encoding: js.UndefOr[String] = js.undefined
@@ -318,6 +345,8 @@ object mod {
     var errorLogName: String
     
     var level: js.UndefOr[LoggerLevel] = js.undefined
+    
+    var localStorage: js.UndefOr[AsyncLocalStorage[Any]] = js.undefined
     
     var outputJSON: js.UndefOr[Boolean] = js.undefined
     
@@ -359,6 +388,10 @@ object mod {
       
       inline def setCoreLogName(value: String): Self = StObject.set(x, "coreLogName", value.asInstanceOf[js.Any])
       
+      inline def setDateISOFormat(value: Boolean): Self = StObject.set(x, "dateISOFormat", value.asInstanceOf[js.Any])
+      
+      inline def setDateISOFormatUndefined: Self = StObject.set(x, "dateISOFormat", js.undefined)
+      
       inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
       inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
@@ -378,6 +411,10 @@ object mod {
       inline def setLevel(value: LoggerLevel): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
       inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+      
+      inline def setLocalStorage(value: AsyncLocalStorage[Any]): Self = StObject.set(x, "localStorage", value.asInstanceOf[js.Any])
+      
+      inline def setLocalStorageUndefined: Self = StObject.set(x, "localStorage", js.undefined)
       
       inline def setOutputJSON(value: Boolean): Self = StObject.set(x, "outputJSON", value.asInstanceOf[js.Any])
       
@@ -483,6 +520,64 @@ object mod {
   */
   trait LoggerLevel extends StObject
   
+  trait LoggerMeta
+    extends StObject
+       with /* key */ StringDictionary[Any] {
+    
+    var ctx: js.UndefOr[Any] = js.undefined
+    
+    var date: String
+    
+    var formatter: js.UndefOr[js.Function] = js.undefined
+    
+    var hostname: String
+    
+    var level: LoggerLevel
+    
+    var message: String
+    
+    var paddingMessage: js.UndefOr[String] = js.undefined
+    
+    var pid: Double
+    
+    var raw: Boolean
+  }
+  object LoggerMeta {
+    
+    inline def apply(date: String, hostname: String, level: LoggerLevel, message: String, pid: Double, raw: Boolean): LoggerMeta = {
+      val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], hostname = hostname.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], pid = pid.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any])
+      __obj.asInstanceOf[LoggerMeta]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoggerMeta] (val x: Self) extends AnyVal {
+      
+      inline def setCtx(value: Any): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
+      
+      inline def setCtxUndefined: Self = StObject.set(x, "ctx", js.undefined)
+      
+      inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      
+      inline def setFormatter(value: js.Function): Self = StObject.set(x, "formatter", value.asInstanceOf[js.Any])
+      
+      inline def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
+      
+      inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
+      
+      inline def setLevel(value: LoggerLevel): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      
+      inline def setPaddingMessage(value: String): Self = StObject.set(x, "paddingMessage", value.asInstanceOf[js.Any])
+      
+      inline def setPaddingMessageUndefined: Self = StObject.set(x, "paddingMessage", js.undefined)
+      
+      inline def setPid(value: Double): Self = StObject.set(x, "pid", value.asInstanceOf[js.Any])
+      
+      inline def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+    }
+  }
+  
   trait LoggerOptions extends StObject {
     
     var allowDebugAtProd: js.UndefOr[Boolean] = js.undefined
@@ -523,17 +618,21 @@ object mod {
   
   trait TransportOptions extends StObject {
     
-    var contextFormatter: js.UndefOr[js.Function1[/* meta */ js.UndefOr[js.Object], String]] = js.undefined
+    var contextFormatter: js.UndefOr[js.Function1[/* meta */ js.UndefOr[LoggerMeta], String]] = js.undefined
+    
+    var dateISOFormat: js.UndefOr[Boolean] = js.undefined
     
     var encoding: js.UndefOr[String] = js.undefined
     
     var eol: js.UndefOr[String] = js.undefined
     
-    var formatter: js.UndefOr[js.Function1[/* meta */ js.UndefOr[js.Object], String]] = js.undefined
+    var formatter: js.UndefOr[js.Function1[/* meta */ js.UndefOr[LoggerMeta], String]] = js.undefined
     
     var json: js.UndefOr[Boolean] = js.undefined
     
     var level: js.UndefOr[LoggerLevel] = js.undefined
+    
+    var paddingMessageFormatter: js.UndefOr[js.Function1[/* ctx */ js.Object, String]] = js.undefined
   }
   object TransportOptions {
     
@@ -545,9 +644,13 @@ object mod {
     @scala.inline
     implicit open class MutableBuilder[Self <: TransportOptions] (val x: Self) extends AnyVal {
       
-      inline def setContextFormatter(value: /* meta */ js.UndefOr[js.Object] => String): Self = StObject.set(x, "contextFormatter", js.Any.fromFunction1(value))
+      inline def setContextFormatter(value: /* meta */ js.UndefOr[LoggerMeta] => String): Self = StObject.set(x, "contextFormatter", js.Any.fromFunction1(value))
       
       inline def setContextFormatterUndefined: Self = StObject.set(x, "contextFormatter", js.undefined)
+      
+      inline def setDateISOFormat(value: Boolean): Self = StObject.set(x, "dateISOFormat", value.asInstanceOf[js.Any])
+      
+      inline def setDateISOFormatUndefined: Self = StObject.set(x, "dateISOFormat", js.undefined)
       
       inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
@@ -557,7 +660,7 @@ object mod {
       
       inline def setEolUndefined: Self = StObject.set(x, "eol", js.undefined)
       
-      inline def setFormatter(value: /* meta */ js.UndefOr[js.Object] => String): Self = StObject.set(x, "formatter", js.Any.fromFunction1(value))
+      inline def setFormatter(value: /* meta */ js.UndefOr[LoggerMeta] => String): Self = StObject.set(x, "formatter", js.Any.fromFunction1(value))
       
       inline def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
       
@@ -568,6 +671,10 @@ object mod {
       inline def setLevel(value: LoggerLevel): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
       inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+      
+      inline def setPaddingMessageFormatter(value: /* ctx */ js.Object => String): Self = StObject.set(x, "paddingMessageFormatter", js.Any.fromFunction1(value))
+      
+      inline def setPaddingMessageFormatterUndefined: Self = StObject.set(x, "paddingMessageFormatter", js.undefined)
     }
   }
 }

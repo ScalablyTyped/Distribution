@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@jupyterlab/translation" : "3.5.0"
+      "@jupyterlab/translation" : "3.6.3"
     }
   ],
   "test-dependencies" : [
     {
-      "@jupyterlab/translation" : "3.5.0"
+      "@jupyterlab/translation" : "3.6.3"
     }
   ],
   "compile-devDependencies" : [

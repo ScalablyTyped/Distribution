@@ -1,5 +1,9 @@
 package typings.std.global
 
+import typings.std.stdInts.`0`
+import typings.std.stdInts.`1`
+import typings.std.stdInts.`2`
+import typings.std.stdInts.`3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -46,22 +50,22 @@ object Range {
   /* standard dom */
   @JSGlobal("Range.END_TO_END")
   @js.native
-  val END_TO_END: Double = js.native
+  val END_TO_END: `2` = js.native
   
   /* standard dom */
   @JSGlobal("Range.END_TO_START")
   @js.native
-  val END_TO_START: Double = js.native
+  val END_TO_START: `3` = js.native
   
   /* standard dom */
   @JSGlobal("Range.START_TO_END")
   @js.native
-  val START_TO_END: Double = js.native
+  val START_TO_END: `1` = js.native
   
   /* standard dom */
   @JSGlobal("Range.START_TO_START")
   @js.native
-  val START_TO_START: Double = js.native
+  val START_TO_START: `0` = js.native
   
   /* standard dom */
   inline def toString_(): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("toString")().asInstanceOf[java.lang.String]

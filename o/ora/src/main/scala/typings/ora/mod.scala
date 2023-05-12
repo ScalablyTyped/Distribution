@@ -130,6 +130,11 @@ object mod {
     val stream: js.UndefOr[WritableStream] = js.undefined
     
     /**
+    	Text or a function that returns text to display after the spinner text. No suffix text will be displayed if set to an empty string.
+    	*/
+    val suffixText: js.UndefOr[String | SuffixTextGenerator] = js.undefined
+    
+    /**
     	Text to display after the spinner.
     	*/
     val text: js.UndefOr[String] = js.undefined
@@ -185,6 +190,12 @@ object mod {
       inline def setStream(value: WritableStream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
       
       inline def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
+      
+      inline def setSuffixText(value: String | SuffixTextGenerator): Self = StObject.set(x, "suffixText", value.asInstanceOf[js.Any])
+      
+      inline def setSuffixTextFunction0(value: () => String): Self = StObject.set(x, "suffixText", js.Any.fromFunction0(value))
+      
+      inline def setSuffixTextUndefined: Self = StObject.set(x, "suffixText", js.undefined)
       
       inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
@@ -295,6 +306,12 @@ object mod {
     def succeed(text: String): this.type = js.native
     
     /**
+    	Change the text or function that returns text after the spinner text.
+    	No suffix text will be displayed if set to an empty string.
+    	*/
+    var suffixText: String = js.native
+    
+    /**
     	Change the text after the spinner.
     	*/
     var text: String = js.native
@@ -315,6 +332,12 @@ object mod {
     	Default: Current `prefixText`.
     	*/
     val prefixText: js.UndefOr[String | PrefixTextGenerator] = js.undefined
+    
+    /**
+    	Text or a function that returns text to be persisted after the text after the symbol. No suffix text will be displayed if set to an empty string.
+    	Default: Current `suffixText`.
+    	*/
+    val suffixText: js.UndefOr[String | SuffixTextGenerator] = js.undefined
     
     /**
     	Symbol to replace the spinner with.
@@ -343,6 +366,12 @@ object mod {
       inline def setPrefixTextFunction0(value: () => String): Self = StObject.set(x, "prefixText", js.Any.fromFunction0(value))
       
       inline def setPrefixTextUndefined: Self = StObject.set(x, "prefixText", js.undefined)
+      
+      inline def setSuffixText(value: String | SuffixTextGenerator): Self = StObject.set(x, "suffixText", value.asInstanceOf[js.Any])
+      
+      inline def setSuffixTextFunction0(value: () => String): Self = StObject.set(x, "suffixText", js.Any.fromFunction0(value))
+      
+      inline def setSuffixTextUndefined: Self = StObject.set(x, "suffixText", js.undefined)
       
       inline def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
       
@@ -421,4 +450,6 @@ object mod {
       inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
     }
   }
+  
+  type SuffixTextGenerator = js.Function0[String]
 }

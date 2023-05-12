@@ -1,10 +1,11 @@
 package typings.openui5
 
 import typings.openui5.anon.PreviousSelectedItem
-import typings.openui5.anon.`13`
+import typings.openui5.anon.`16`
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapFLibraryMod.IShellBar
 import typings.openui5.sapMLibraryMod.IOverflowToolbarContent
+import typings.openui5.sapMLibraryMod.OverflowToolbarConfig
 import typings.openui5.sapMLibraryMod.SelectColumnRatio
 import typings.openui5.sapMLibraryMod.SelectType
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
@@ -18,6 +19,8 @@ import typings.openui5.sapUiCoreLibraryMod.TextAlign
 import typings.openui5.sapUiCoreLibraryMod.TextDirection
 import typings.openui5.sapUiCoreLibraryMod.URI
 import typings.openui5.sapUiCoreLibraryMod.ValueState
+import typings.std.Object
+import typings.std.PropertyKey
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -77,6 +80,27 @@ object sapMSelectMod {
     
     /* CompleteClass */
     var __implements__sap_ui_core_ISemanticFormContent: Boolean = js.native
+    
+    /** The initial value of Object.prototype.constructor is the standard built-in Object constructor. */
+    /* standard es5 */
+    /* CompleteClass */
+    var constructor: js.Function = js.native
+    
+    /**
+      * Determines whether an object has a property with the specified name.
+      * @param v A property name.
+      */
+    /* standard es5 */
+    /* CompleteClass */
+    override def hasOwnProperty(v: PropertyKey): Boolean = js.native
+    
+    /**
+      * Determines whether a specified property is enumerable.
+      * @param v A property name.
+      */
+    /* standard es5 */
+    /* CompleteClass */
+    override def propertyIsEnumerable(v: PropertyKey): Boolean = js.native
   }
   /* static members */
   object default {
@@ -152,7 +176,10 @@ object sapMSelectMod {
        with IFormContent
        with ISemanticFormContent
        with IOverflowToolbarContent
+       with /* was: sap.m.IToolbarInteractiveControl */ Object
        with IShellBar {
+    
+    var __implements__sap_m_IToolbarInteractiveControl: Boolean = js.native
     
     def addAriaLabelledBy(
       /**
@@ -355,6 +382,8 @@ object sapMSelectMod {
     def close(): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Creates a picker popup container where the selection should take place.
       *
       * @returns The `sap.m.Popover` or `sap.m.Dialog` instance
@@ -422,6 +451,8 @@ object sapMSelectMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:change change} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -434,6 +465,7 @@ object sapMSelectMod {
     
     /**
       * @SINCE 1.100
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:liveChange liveChange} to attached listeners.
       *
@@ -443,7 +475,7 @@ object sapMSelectMod {
     def fireLiveChange(/**
       * Parameters to pass along with the event
       */
-    mParameters: `13`): this.type = js.native
+    mParameters: `16`): this.type = js.native
     
     /**
       * @SINCE 1.27.0
@@ -637,7 +669,7 @@ object sapMSelectMod {
       *
       * @returns Configuration information for the `sap.m.IOverflowToolbarContent` interface.
       */
-    def getOverflowToolbarConfig(): js.Object = js.native
+    def getOverflowToolbarConfig(): OverflowToolbarConfig = js.native
     
     /**
       * @SINCE 1.74
@@ -863,6 +895,7 @@ object sapMSelectMod {
     
     /**
       * @SINCE 1.16
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Open the control's picker popup.
       *

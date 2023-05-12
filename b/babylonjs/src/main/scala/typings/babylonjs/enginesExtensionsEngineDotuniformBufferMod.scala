@@ -40,7 +40,7 @@ object enginesExtensionsEngineDotuniformBufferMod {
       
       /**
         * Create a dynamic uniform buffer
-        * @see https://doc.babylonjs.com/features/webgl2#uniform-buffer-objets
+        * @see https://doc.babylonjs.com/setup/support/webGL2#uniform-buffer-objets
         * @param elements defines the content of the uniform buffer
         * @returns the webGL uniform buffer
         */
@@ -48,7 +48,7 @@ object enginesExtensionsEngineDotuniformBufferMod {
       
       /**
         * Create an uniform buffer
-        * @see https://doc.babylonjs.com/features/webgl2#uniform-buffer-objets
+        * @see https://doc.babylonjs.com/setup/support/webGL2#uniform-buffer-objets
         * @param elements defines the content of the uniform buffer
         * @returns the webGL uniform buffer
         */
@@ -56,7 +56,7 @@ object enginesExtensionsEngineDotuniformBufferMod {
       
       /**
         * Update an existing uniform buffer
-        * @see https://doc.babylonjs.com/features/webgl2#uniform-buffer-objets
+        * @see https://doc.babylonjs.com/setup/support/webGL2#uniform-buffer-objets
         * @param uniformBuffer defines the target uniform buffer
         * @param elements defines the content to update
         * @param offset defines the offset in the uniform buffer where update should start

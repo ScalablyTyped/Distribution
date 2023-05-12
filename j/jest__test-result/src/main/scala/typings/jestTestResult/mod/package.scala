@@ -48,6 +48,6 @@ type TestFileEvent[T /* <: /* keyof @jest/test-result.@jest/test-result.TestEven
 /* import warning: importer.ImportType#apply Failed type conversion: @jest/test-result.@jest/test-result.TestEvents[T] */ /* args */ js.Any, 
 Any]
 
-type TestResultsProcessor = js.Function1[/* results */ AggregatedResult, AggregatedResult]
+type TestResultsProcessor = js.Function1[/* results */ AggregatedResult, AggregatedResult | js.Promise[AggregatedResult]]
 
 type V8CoverageResult = js.Array[CodeTransformResult]

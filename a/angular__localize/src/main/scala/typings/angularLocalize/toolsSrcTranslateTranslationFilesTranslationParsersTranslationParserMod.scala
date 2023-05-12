@@ -2,8 +2,8 @@ package typings.angularLocalize
 
 import typings.angularLocalize.angularLocalizeBooleans.`false`
 import typings.angularLocalize.angularLocalizeBooleans.`true`
-import typings.angularLocalize.mod.MessageId
-import typings.angularLocalize.mod.ɵParsedTranslation
+import typings.angularLocalize.localizeMod.MessageId
+import typings.angularLocalize.localizeMod.ɵParsedTranslation
 import typings.angularLocalize.toolsSrcDiagnosticsMod.Diagnostics
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -110,7 +110,6 @@ object toolsSrcTranslateTranslationFilesTranslationParsersTranslationParserMod {
     }
   }
   
-  @js.native
   trait TranslationParser[Hint] extends StObject {
     
     /**
@@ -120,32 +119,8 @@ object toolsSrcTranslateTranslationFilesTranslationParsersTranslationParserMod {
       * @param contents The contents of the translation file.
       * @returns Information indicating whether the file can be parsed by this parser.
       */
-    def analyze(filePath: String, contents: String): ParseAnalysis[Hint] = js.native
+    def analyze(filePath: String, contents: String): ParseAnalysis[Hint]
     
-    /**
-      * Can this parser parse the given file?
-      *
-      * @deprecated Use `analyze()` instead
-      *
-      * @param filePath The absolute path to the translation file.
-      * @param contents The contents of the translation file.
-      * @returns A hint, which can be used in doing the actual parsing, if the file can be parsed by
-      * this parser; false otherwise.
-      */
-    def canParse(filePath: String, contents: String): Hint | `false` = js.native
-    
-    /**
-      * Parses the given file, extracting the target locale and translations.
-      *
-      * @deprecated This overload is kept for backward compatibility. Going forward use the Hint
-      * returned from `canParse()` so that this method can avoid duplicating effort.
-      *
-      * @param filePath The absolute path to the translation file.
-      * @param contents The contents of the translation file.
-      * @returns The translation bundle parsed from the file.
-      * @throws An error if there was a problem parsing this file.
-      */
-    def parse(filePath: String, contents: String): ParsedTranslationBundle = js.native
     /**
       * Parses the given file, extracting the target locale and translations.
       *
@@ -155,11 +130,29 @@ object toolsSrcTranslateTranslationFilesTranslationParsersTranslationParserMod {
       * @param filePath The absolute path to the translation file.
       * @param contents The contents of the translation file.
       * @param hint A value that can be used by the parser to speed up parsing of the file. This will
-      * have been provided as the return result from calling `canParse()`.
+      * have been provided as the return result from calling `analyze()`.
       * @returns The translation bundle parsed from the file.
       * @throws No errors. If there was a problem with parsing the bundle will contain errors
       * in the `diagnostics` property.
       */
-    def parse(filePath: String, contents: String, hint: Hint): ParsedTranslationBundle = js.native
+    def parse(filePath: String, contents: String, hint: Hint): ParsedTranslationBundle
+  }
+  object TranslationParser {
+    
+    inline def apply[Hint](
+      analyze: (String, String) => ParseAnalysis[Hint],
+      parse: (String, String, Hint) => ParsedTranslationBundle
+    ): TranslationParser[Hint] = {
+      val __obj = js.Dynamic.literal(analyze = js.Any.fromFunction2(analyze), parse = js.Any.fromFunction3(parse))
+      __obj.asInstanceOf[TranslationParser[Hint]]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TranslationParser[?], Hint] (val x: Self & TranslationParser[Hint]) extends AnyVal {
+      
+      inline def setAnalyze(value: (String, String) => ParseAnalysis[Hint]): Self = StObject.set(x, "analyze", js.Any.fromFunction2(value))
+      
+      inline def setParse(value: (String, String, Hint) => ParsedTranslationBundle): Self = StObject.set(x, "parse", js.Any.fromFunction3(value))
+    }
   }
 }

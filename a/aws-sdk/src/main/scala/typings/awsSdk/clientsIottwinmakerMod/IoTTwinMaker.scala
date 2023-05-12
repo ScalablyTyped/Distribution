@@ -71,6 +71,20 @@ trait IoTTwinMaker extends Service {
   ): Request[CreateSceneResponse, AWSError] = js.native
   
   /**
+    * This action creates a SyncJob.
+    */
+  def createSyncJob(): Request[CreateSyncJobResponse, AWSError] = js.native
+  def createSyncJob(callback: js.Function2[/* err */ AWSError, /* data */ CreateSyncJobResponse, Unit]): Request[CreateSyncJobResponse, AWSError] = js.native
+  /**
+    * This action creates a SyncJob.
+    */
+  def createSyncJob(params: CreateSyncJobRequest): Request[CreateSyncJobResponse, AWSError] = js.native
+  def createSyncJob(
+    params: CreateSyncJobRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateSyncJobResponse, Unit]
+  ): Request[CreateSyncJobResponse, AWSError] = js.native
+  
+  /**
     * Creates a workplace.
     */
   def createWorkspace(): Request[CreateWorkspaceResponse, AWSError] = js.native
@@ -127,6 +141,20 @@ trait IoTTwinMaker extends Service {
   ): Request[DeleteSceneResponse, AWSError] = js.native
   
   /**
+    * Delete the SyncJob.
+    */
+  def deleteSyncJob(): Request[DeleteSyncJobResponse, AWSError] = js.native
+  def deleteSyncJob(callback: js.Function2[/* err */ AWSError, /* data */ DeleteSyncJobResponse, Unit]): Request[DeleteSyncJobResponse, AWSError] = js.native
+  /**
+    * Delete the SyncJob.
+    */
+  def deleteSyncJob(params: DeleteSyncJobRequest): Request[DeleteSyncJobResponse, AWSError] = js.native
+  def deleteSyncJob(
+    params: DeleteSyncJobRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteSyncJobResponse, Unit]
+  ): Request[DeleteSyncJobResponse, AWSError] = js.native
+  
+  /**
     * Deletes a workspace.
     */
   def deleteWorkspace(): Request[DeleteWorkspaceResponse, AWSError] = js.native
@@ -139,6 +167,20 @@ trait IoTTwinMaker extends Service {
     params: DeleteWorkspaceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteWorkspaceResponse, Unit]
   ): Request[DeleteWorkspaceResponse, AWSError] = js.native
+  
+  /**
+    * Run queries to access information from your knowledge graph of entities within individual workspaces.
+    */
+  def executeQuery(): Request[ExecuteQueryResponse, AWSError] = js.native
+  def executeQuery(callback: js.Function2[/* err */ AWSError, /* data */ ExecuteQueryResponse, Unit]): Request[ExecuteQueryResponse, AWSError] = js.native
+  /**
+    * Run queries to access information from your knowledge graph of entities within individual workspaces.
+    */
+  def executeQuery(params: ExecuteQueryRequest): Request[ExecuteQueryResponse, AWSError] = js.native
+  def executeQuery(
+    params: ExecuteQueryRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ExecuteQueryResponse, Unit]
+  ): Request[ExecuteQueryResponse, AWSError] = js.native
   
   /**
     * Retrieves information about a component type.
@@ -167,6 +209,20 @@ trait IoTTwinMaker extends Service {
     params: GetEntityRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetEntityResponse, Unit]
   ): Request[GetEntityResponse, AWSError] = js.native
+  
+  /**
+    * Gets the pricing plan.
+    */
+  def getPricingPlan(): Request[GetPricingPlanResponse, AWSError] = js.native
+  def getPricingPlan(callback: js.Function2[/* err */ AWSError, /* data */ GetPricingPlanResponse, Unit]): Request[GetPricingPlanResponse, AWSError] = js.native
+  /**
+    * Gets the pricing plan.
+    */
+  def getPricingPlan(params: GetPricingPlanRequest): Request[GetPricingPlanResponse, AWSError] = js.native
+  def getPricingPlan(
+    params: GetPricingPlanRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetPricingPlanResponse, Unit]
+  ): Request[GetPricingPlanResponse, AWSError] = js.native
   
   /**
     * Gets the property values for a component, component type, entity, or workspace. You must specify a value for either componentName, componentTypeId, entityId, or workspaceId.
@@ -209,6 +265,20 @@ trait IoTTwinMaker extends Service {
     params: GetSceneRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetSceneResponse, Unit]
   ): Request[GetSceneResponse, AWSError] = js.native
+  
+  /**
+    * Gets the SyncJob.
+    */
+  def getSyncJob(): Request[GetSyncJobResponse, AWSError] = js.native
+  def getSyncJob(callback: js.Function2[/* err */ AWSError, /* data */ GetSyncJobResponse, Unit]): Request[GetSyncJobResponse, AWSError] = js.native
+  /**
+    * Gets the SyncJob.
+    */
+  def getSyncJob(params: GetSyncJobRequest): Request[GetSyncJobResponse, AWSError] = js.native
+  def getSyncJob(
+    params: GetSyncJobRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetSyncJobResponse, Unit]
+  ): Request[GetSyncJobResponse, AWSError] = js.native
   
   /**
     * Retrieves information about a workspace.
@@ -265,6 +335,34 @@ trait IoTTwinMaker extends Service {
     params: ListScenesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListScenesResponse, Unit]
   ): Request[ListScenesResponse, AWSError] = js.native
+  
+  /**
+    * List all SyncJobs.
+    */
+  def listSyncJobs(): Request[ListSyncJobsResponse, AWSError] = js.native
+  def listSyncJobs(callback: js.Function2[/* err */ AWSError, /* data */ ListSyncJobsResponse, Unit]): Request[ListSyncJobsResponse, AWSError] = js.native
+  /**
+    * List all SyncJobs.
+    */
+  def listSyncJobs(params: ListSyncJobsRequest): Request[ListSyncJobsResponse, AWSError] = js.native
+  def listSyncJobs(
+    params: ListSyncJobsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListSyncJobsResponse, Unit]
+  ): Request[ListSyncJobsResponse, AWSError] = js.native
+  
+  /**
+    * Lists the sync resources.
+    */
+  def listSyncResources(): Request[ListSyncResourcesResponse, AWSError] = js.native
+  def listSyncResources(callback: js.Function2[/* err */ AWSError, /* data */ ListSyncResourcesResponse, Unit]): Request[ListSyncResourcesResponse, AWSError] = js.native
+  /**
+    * Lists the sync resources.
+    */
+  def listSyncResources(params: ListSyncResourcesRequest): Request[ListSyncResourcesResponse, AWSError] = js.native
+  def listSyncResources(
+    params: ListSyncResourcesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListSyncResourcesResponse, Unit]
+  ): Request[ListSyncResourcesResponse, AWSError] = js.native
   
   /**
     * Lists all tags associated with a resource.
@@ -349,6 +447,20 @@ trait IoTTwinMaker extends Service {
     params: UpdateEntityRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateEntityResponse, Unit]
   ): Request[UpdateEntityResponse, AWSError] = js.native
+  
+  /**
+    * Update the pricing plan.
+    */
+  def updatePricingPlan(): Request[UpdatePricingPlanResponse, AWSError] = js.native
+  def updatePricingPlan(callback: js.Function2[/* err */ AWSError, /* data */ UpdatePricingPlanResponse, Unit]): Request[UpdatePricingPlanResponse, AWSError] = js.native
+  /**
+    * Update the pricing plan.
+    */
+  def updatePricingPlan(params: UpdatePricingPlanRequest): Request[UpdatePricingPlanResponse, AWSError] = js.native
+  def updatePricingPlan(
+    params: UpdatePricingPlanRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdatePricingPlanResponse, Unit]
+  ): Request[UpdatePricingPlanResponse, AWSError] = js.native
   
   /**
     * Updates a scene.

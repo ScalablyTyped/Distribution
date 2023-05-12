@@ -2,6 +2,7 @@ package typings.three
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.three.anon.ValueAny
+import typings.three.examplesJsmPostprocessingPassMod.FullScreenQuad
 import typings.three.examplesJsmPostprocessingPassMod.Pass
 import typings.three.srcThreeMod.ShaderMaterial
 import org.scalablytyped.runtime.StObject
@@ -16,7 +17,7 @@ object examplesJsmPostprocessingShaderPassMod {
     def this(shader: js.Object) = this()
     def this(shader: js.Object, textureID: String) = this()
     
-    var fsQuad: js.Object = js.native
+    var fsQuad: FullScreenQuad = js.native
     
     var material: ShaderMaterial = js.native
     

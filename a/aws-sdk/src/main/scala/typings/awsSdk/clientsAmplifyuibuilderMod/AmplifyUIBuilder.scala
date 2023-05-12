@@ -247,12 +247,12 @@ trait AmplifyUIBuilder extends Service {
   ): Request[ListThemesResponse, AWSError] = js.native
   
   /**
-    * Stores the metadata information about a feature on a form or view.
+    * Stores the metadata information about a feature on a form.
     */
   def putMetadataFlag(): Request[js.Object, AWSError] = js.native
   def putMetadataFlag(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Stores the metadata information about a feature on a form or view.
+    * Stores the metadata information about a feature on a form.
     */
   def putMetadataFlag(params: PutMetadataFlagRequest): Request[js.Object, AWSError] = js.native
   def putMetadataFlag(

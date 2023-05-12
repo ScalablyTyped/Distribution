@@ -20,8 +20,11 @@ import typings.csstype.mod.Property.BorderRight
 import typings.csstype.mod.Property.BorderStyle
 import typings.csstype.mod.Property.BorderTop
 import typings.csstype.mod.Property.BorderWidth
+import typings.csstype.mod.Property.Caret
 import typings.csstype.mod.Property.ColumnRule
 import typings.csstype.mod.Property.Columns
+import typings.csstype.mod.Property.ContainIntrinsicSize
+import typings.csstype.mod.Property.Container
 import typings.csstype.mod.Property.Flex
 import typings.csstype.mod.Property.FlexFlow
 import typings.csstype.mod.Property.Font
@@ -31,9 +34,14 @@ import typings.csstype.mod.Property.GridArea
 import typings.csstype.mod.Property.GridColumn
 import typings.csstype.mod.Property.GridRow
 import typings.csstype.mod.Property.GridTemplate
+import typings.csstype.mod.Property.Inset
+import typings.csstype.mod.Property.InsetBlock
+import typings.csstype.mod.Property.InsetInline
 import typings.csstype.mod.Property.LineClamp
 import typings.csstype.mod.Property.ListStyle
 import typings.csstype.mod.Property.Margin
+import typings.csstype.mod.Property.MarginBlock
+import typings.csstype.mod.Property.MarginInline
 import typings.csstype.mod.Property.Mask
 import typings.csstype.mod.Property.MaskBorder
 import typings.csstype.mod.Property.Offset
@@ -41,8 +49,18 @@ import typings.csstype.mod.Property.Outline
 import typings.csstype.mod.Property.Overflow
 import typings.csstype.mod.Property.OverscrollBehavior
 import typings.csstype.mod.Property.Padding
+import typings.csstype.mod.Property.PaddingBlock
+import typings.csstype.mod.Property.PaddingInline
+import typings.csstype.mod.Property.PlaceContent
 import typings.csstype.mod.Property.PlaceItems
 import typings.csstype.mod.Property.PlaceSelf
+import typings.csstype.mod.Property.ScrollMargin
+import typings.csstype.mod.Property.ScrollMarginBlock
+import typings.csstype.mod.Property.ScrollMarginInline
+import typings.csstype.mod.Property.ScrollPadding
+import typings.csstype.mod.Property.ScrollPaddingBlock
+import typings.csstype.mod.Property.ScrollPaddingInline
+import typings.csstype.mod.Property.ScrollTimeline
 import typings.csstype.mod.Property.TextDecoration
 import typings.csstype.mod.Property.TextEmphasis
 import typings.csstype.mod.Property.Transition
@@ -53,7 +71,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StandardShorthandProperties[TLength, TTime] extends StObject {
   
   /**
-    * The **`all`** shorthand CSS property resets all of an element's properties except `unicode-bidi`, `direction`, and CSS Custom Properties. It can set properties to their initial or inherited values, or to the values specified in another stylesheet origin.
+    * The **`all`** shorthand CSS property resets all of an element's properties except `unicode-bidi`, `direction`, and CSS Custom Properties. It can set properties to their initial or inherited values, or to the values specified in another cascade layer or stylesheet origin.
     *
     * **Syntax**: `initial | inherit | unset | revert | revert-layer`
     *
@@ -319,6 +337,9 @@ trait StandardShorthandProperties[TLength, TTime] extends StObject {
     */
   var borderWidth: js.UndefOr[BorderWidth[TLength]] = js.undefined
   
+  /** **Syntax**: `<'caret-color'> || <'caret-shape'>` */
+  var caret: js.UndefOr[Caret] = js.undefined
+  
   /**
     * The **`column-rule`** shorthand CSS property sets the width, style, and color of the line drawn between columns in a multi-column layout.
     *
@@ -346,6 +367,32 @@ trait StandardShorthandProperties[TLength, TTime] extends StObject {
     * @see https://developer.mozilla.org/docs/Web/CSS/columns
     */
   var columns: js.UndefOr[Columns[TLength]] = js.undefined
+  
+  /**
+    * The **`contain-intrinsic-size`** CSS shorthand property sets the size of an element that a browser will use for layout when the element is subject to size containment.
+    *
+    * **Syntax**: `[ none | <length> | auto <length> ]{1,2}`
+    *
+    * | Chrome | Firefox | Safari | Edge | IE  |
+    * | :----: | :-----: | :----: | :--: | :-: |
+    * | **83** | **107** |   No   | n/a  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/contain-intrinsic-size
+    */
+  var containIntrinsicSize: js.UndefOr[ContainIntrinsicSize[TLength]] = js.undefined
+  
+  /**
+    * The **container** shorthand CSS property establishes the element as a query container and specifies the name or name for the containment context used in a container query.
+    *
+    * **Syntax**: `<'container-name'> [ / <'container-type'> ]?`
+    *
+    * | Chrome  | Firefox | Safari | Edge | IE  |
+    * | :-----: | :-----: | :----: | :--: | :-: |
+    * | **105** | **110** | **16** | n/a  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/container
+    */
+  var container: js.UndefOr[Container] = js.undefined
   
   /**
     * The **`flex`** CSS shorthand property sets how a flex _item_ will grow or shrink to fit the space available in its flex container.
@@ -441,7 +488,7 @@ trait StandardShorthandProperties[TLength, TTime] extends StObject {
   var gridColumn: js.UndefOr[GridColumn] = js.undefined
   
   /**
-    * The **`grid-row`** CSS shorthand property specifies a grid item's size and location within the grid row by contributing a line, a span, or nothing (automatic) to its grid placement, thereby specifying the inline-start and inline-end edge of its grid area.
+    * The **`grid-row`** CSS shorthand property specifies a grid item's size and location within a grid row by contributing a line, a span, or nothing (automatic) to its grid placement, thereby specifying the inline-start and inline-end edge of its grid area.
     *
     * **Syntax**: `<grid-line> [ / <grid-line> ]?`
     *
@@ -454,7 +501,7 @@ trait StandardShorthandProperties[TLength, TTime] extends StObject {
   var gridRow: js.UndefOr[GridRow] = js.undefined
   
   /**
-    * The **`grid-template`** CSS property is a shorthand property for defining grid columns, rows, and areas.
+    * The **`grid-template`** CSS property is a shorthand property for defining grid columns, grid rows, and grid areas.
     *
     * **Syntax**: `none | [ <'grid-template-rows'> / <'grid-template-columns'> ] | [ <line-names>? <string> <track-size>? <line-names>? ]+ [ / <explicit-track-list> ]?`
     *
@@ -465,6 +512,45 @@ trait StandardShorthandProperties[TLength, TTime] extends StObject {
     * @see https://developer.mozilla.org/docs/Web/CSS/grid-template
     */
   var gridTemplate: js.UndefOr[GridTemplate] = js.undefined
+  
+  /**
+    * The **`inset`** CSS property is a shorthand that corresponds to the `top`, `right`, `bottom`, and/or `left` properties. It has the same multi-value syntax of the `margin` shorthand.
+    *
+    * **Syntax**: `<'top'>{1,4}`
+    *
+    * | Chrome | Firefox |  Safari  | Edge | IE  |
+    * | :----: | :-----: | :------: | :--: | :-: |
+    * | **87** | **66**  | **14.1** | n/a  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/inset
+    */
+  var inset: js.UndefOr[Inset[TLength]] = js.undefined
+  
+  /**
+    * The **`inset-block`** CSS property defines the logical block start and end offsets of an element, which maps to physical offsets depending on the element's writing mode, directionality, and text orientation. It corresponds to the `top` and `bottom`, or `right` and `left` properties depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
+    *
+    * **Syntax**: `<'top'>{1,2}`
+    *
+    * | Chrome | Firefox |  Safari  | Edge | IE  |
+    * | :----: | :-----: | :------: | :--: | :-: |
+    * | **87** | **63**  | **14.1** | n/a  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/inset-block
+    */
+  var insetBlock: js.UndefOr[InsetBlock[TLength]] = js.undefined
+  
+  /**
+    * The **`inset-inline`** CSS property defines the logical start and end offsets of an element in the inline direction, which maps to physical offsets depending on the element's writing mode, directionality, and text orientation. It corresponds to the `top` and `bottom`, or `right` and `left` properties depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
+    *
+    * **Syntax**: `<'top'>{1,2}`
+    *
+    * | Chrome | Firefox |  Safari  | Edge | IE  |
+    * | :----: | :-----: | :------: | :--: | :-: |
+    * | **87** | **63**  | **14.1** | n/a  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/inset-inline
+    */
+  var insetInline: js.UndefOr[InsetInline[TLength]] = js.undefined
   
   /**
     * **Syntax**: `none | <integer>`
@@ -498,6 +584,32 @@ trait StandardShorthandProperties[TLength, TTime] extends StObject {
     * @see https://developer.mozilla.org/docs/Web/CSS/margin
     */
   var margin: js.UndefOr[Margin[TLength]] = js.undefined
+  
+  /**
+    * The **`margin-block`** CSS shorthand property defines the logical block start and end margins of an element, which maps to physical margins depending on the element's writing mode, directionality, and text orientation.
+    *
+    * **Syntax**: `<'margin-left'>{1,2}`
+    *
+    * | Chrome | Firefox |  Safari  | Edge | IE  |
+    * | :----: | :-----: | :------: | :--: | :-: |
+    * | **87** | **66**  | **14.1** | n/a  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/margin-block
+    */
+  var marginBlock: js.UndefOr[MarginBlock[TLength]] = js.undefined
+  
+  /**
+    * The **`margin-inline`** CSS shorthand property is a shorthand property that defines both the logical inline start and end margins of an element, which maps to physical margins depending on the element's writing mode, directionality, and text orientation.
+    *
+    * **Syntax**: `<'margin-left'>{1,2}`
+    *
+    * | Chrome | Firefox |  Safari  | Edge | IE  |
+    * | :----: | :-----: | :------: | :--: | :-: |
+    * | **87** | **66**  | **14.1** | n/a  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/margin-inline
+    */
+  var marginInline: js.UndefOr[MarginInline[TLength]] = js.undefined
   
   /**
     * The **`mask`** CSS shorthand property hides an element (partially or fully) by masking or clipping the image at specific points.
@@ -554,13 +666,13 @@ trait StandardShorthandProperties[TLength, TTime] extends StObject {
   var offset: js.UndefOr[Offset[TLength]] = js.undefined
   
   /**
-    * The **`outline`** CSS shorthand property set all the outline properties in a single declaration.
+    * The **`outline`** CSS shorthand property sets most of the outline properties in a single declaration.
     *
     * **Syntax**: `[ <'outline-color'> || <'outline-style'> || <'outline-width'> ]`
     *
     * | Chrome | Firefox | Safari  |  Edge  |  IE   |
     * | :----: | :-----: | :-----: | :----: | :---: |
-    * | **1**  | **1.5** | **1.2** | **12** | **8** |
+    * | **94** | **88**  | **1.2** | **94** | **8** |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/outline
     */
@@ -610,6 +722,45 @@ trait StandardShorthandProperties[TLength, TTime] extends StObject {
   var padding: js.UndefOr[Padding[TLength]] = js.undefined
   
   /**
+    * The **`padding-block`** CSS shorthand property defines the logical block start and end padding of an element, which maps to physical padding properties depending on the element's writing mode, directionality, and text orientation.
+    *
+    * **Syntax**: `<'padding-left'>{1,2}`
+    *
+    * | Chrome | Firefox |  Safari  | Edge | IE  |
+    * | :----: | :-----: | :------: | :--: | :-: |
+    * | **87** | **66**  | **14.1** | n/a  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/padding-block
+    */
+  var paddingBlock: js.UndefOr[PaddingBlock[TLength]] = js.undefined
+  
+  /**
+    * The **`padding-inline`** CSS shorthand property defines the logical inline start and end padding of an element, which maps to physical padding properties depending on the element's writing mode, directionality, and text orientation.
+    *
+    * **Syntax**: `<'padding-left'>{1,2}`
+    *
+    * | Chrome | Firefox |  Safari  | Edge | IE  |
+    * | :----: | :-----: | :------: | :--: | :-: |
+    * | **87** | **66**  | **14.1** | n/a  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/padding-inline
+    */
+  var paddingInline: js.UndefOr[PaddingInline[TLength]] = js.undefined
+  
+  /**
+    * The **`place-content`** CSS shorthand property allows you to align content along both the block and inline directions at once (i.e. the `align-content` and `justify-content` properties) in a relevant layout system such as Grid or Flexbox.
+    *
+    * **Syntax**: `<'align-content'> <'justify-content'>?`
+    *
+    * | Chrome | Firefox | Safari | Edge | IE  |
+    * | :----: | :-----: | :----: | :--: | :-: |
+    * | **59** | **45**  | **9**  | n/a  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/place-content
+    */
+  var placeContent: js.UndefOr[PlaceContent] = js.undefined
+  
+  /**
     * The CSS **`place-items`** shorthand property allows you to align items along both the block and inline directions at once (i.e. the `align-items` and `justify-items` properties) in a relevant layout system such as Grid or Flexbox. If the second value is not set, the first value is also used for it.
     *
     * **Syntax**: `<'align-items'> <'justify-items'>?`
@@ -634,6 +785,112 @@ trait StandardShorthandProperties[TLength, TTime] extends StObject {
     * @see https://developer.mozilla.org/docs/Web/CSS/place-self
     */
   var placeSelf: js.UndefOr[PlaceSelf] = js.undefined
+  
+  /**
+    * The **`scroll-margin`** shorthand property sets all of the scroll margins of an element at once, assigning values much like the `margin` property does for margins of an element.
+    *
+    * **Syntax**: `<length>{1,4}`
+    *
+    * | Chrome | Firefox |          Safari           | Edge | IE  |
+    * | :----: | :-----: | :-----------------------: | :--: | :-: |
+    * | **69** | **90**  |         **14.1**          | n/a  | No  |
+    * |        |         | 11 _(scroll-snap-margin)_ |      |     |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/scroll-margin
+    */
+  var scrollMargin: js.UndefOr[ScrollMargin[TLength]] = js.undefined
+  
+  /**
+    * The `scroll-margin-block` shorthand property sets the scroll margins of an element in the block dimension.
+    *
+    * **Syntax**: `<length>{1,2}`
+    *
+    * | Chrome | Firefox |  Safari  | Edge | IE  |
+    * | :----: | :-----: | :------: | :--: | :-: |
+    * | **69** | **68**  | **14.1** | n/a  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/scroll-margin-block
+    */
+  var scrollMarginBlock: js.UndefOr[ScrollMarginBlock[TLength]] = js.undefined
+  
+  /**
+    * The `scroll-margin-inline` shorthand property sets the scroll margins of an element in the inline dimension.
+    *
+    * **Syntax**: `<length>{1,2}`
+    *
+    * | Chrome | Firefox |  Safari  | Edge | IE  |
+    * | :----: | :-----: | :------: | :--: | :-: |
+    * | **69** | **68**  | **14.1** | n/a  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/scroll-margin-inline
+    */
+  var scrollMarginInline: js.UndefOr[ScrollMarginInline[TLength]] = js.undefined
+  
+  /**
+    * The **`scroll-padding`** shorthand property sets scroll padding on all sides of an element at once, much like the `padding` property does for padding on an element.
+    *
+    * **Syntax**: `[ auto | <length-percentage> ]{1,4}`
+    *
+    * | Chrome | Firefox |  Safari  | Edge | IE  |
+    * | :----: | :-----: | :------: | :--: | :-: |
+    * | **69** | **68**  | **14.1** | n/a  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/scroll-padding
+    */
+  var scrollPadding: js.UndefOr[ScrollPadding[TLength]] = js.undefined
+  
+  /**
+    * The `scroll-padding-block` shorthand property sets the scroll padding of an element in the block dimension.
+    *
+    * **Syntax**: `[ auto | <length-percentage> ]{1,2}`
+    *
+    * | Chrome | Firefox | Safari | Edge | IE  |
+    * | :----: | :-----: | :----: | :--: | :-: |
+    * | **69** | **68**  | **15** | n/a  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/scroll-padding-block
+    */
+  var scrollPaddingBlock: js.UndefOr[ScrollPaddingBlock[TLength]] = js.undefined
+  
+  /**
+    * The `scroll-padding-inline` shorthand property sets the scroll padding of an element in the inline dimension.
+    *
+    * **Syntax**: `[ auto | <length-percentage> ]{1,2}`
+    *
+    * | Chrome | Firefox | Safari | Edge | IE  |
+    * | :----: | :-----: | :----: | :--: | :-: |
+    * | **69** | **68**  | **15** | n/a  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/scroll-padding-inline
+    */
+  var scrollPaddingInline: js.UndefOr[ScrollPaddingInline[TLength]] = js.undefined
+  
+  /**
+    * The **`scroll-margin`** shorthand property sets all of the scroll margins of an element at once, assigning values much like the `margin` property does for margins of an element.
+    *
+    * **Syntax**: `<length>{1,4}`
+    *
+    * | Chrome | Firefox |          Safari           | Edge | IE  |
+    * | :----: | :-----: | :-----------------------: | :--: | :-: |
+    * | **69** |  68-90  |         **14.1**          | n/a  | No  |
+    * |        |         | 11 _(scroll-snap-margin)_ |      |     |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/scroll-margin
+    */
+  var scrollSnapMargin: js.UndefOr[ScrollMargin[TLength]] = js.undefined
+  
+  /**
+    * The **`scroll-timeline`** CSS shorthand property defines a name that can be used to identify the source element of a scroll timeline, along with the scrollbar axis that should provide the timeline.
+    *
+    * **Syntax**: `[<'scroll-timeline-name'> <'scroll-timeline-axis'>?]#`
+    *
+    * | Chrome | Firefox | Safari | Edge | IE  |
+    * | :----: | :-----: | :----: | :--: | :-: |
+    * |   No   |   n/a   |   No   | n/a  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/scroll-timeline
+    */
+  var scrollTimeline: js.UndefOr[ScrollTimeline] = js.undefined
   
   /**
     * The **`text-decoration`** shorthand CSS property sets the appearance of decorative lines on text. It is a shorthand for `text-decoration-line`, `text-decoration-color`, `text-decoration-style`, and the newer `text-decoration-thickness` property.
@@ -766,6 +1023,10 @@ object StandardShorthandProperties {
     
     inline def setBorderWidthUndefined: Self = StObject.set(x, "borderWidth", js.undefined)
     
+    inline def setCaret(value: Caret): Self = StObject.set(x, "caret", value.asInstanceOf[js.Any])
+    
+    inline def setCaretUndefined: Self = StObject.set(x, "caret", js.undefined)
+    
     inline def setColumnRule(value: ColumnRule[TLength]): Self = StObject.set(x, "columnRule", value.asInstanceOf[js.Any])
     
     inline def setColumnRuleUndefined: Self = StObject.set(x, "columnRule", js.undefined)
@@ -773,6 +1034,14 @@ object StandardShorthandProperties {
     inline def setColumns(value: Columns[TLength]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
     inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
+    
+    inline def setContainIntrinsicSize(value: ContainIntrinsicSize[TLength]): Self = StObject.set(x, "containIntrinsicSize", value.asInstanceOf[js.Any])
+    
+    inline def setContainIntrinsicSizeUndefined: Self = StObject.set(x, "containIntrinsicSize", js.undefined)
+    
+    inline def setContainer(value: Container): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    
+    inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
     inline def setFlex(value: Flex[TLength]): Self = StObject.set(x, "flex", value.asInstanceOf[js.Any])
     
@@ -810,6 +1079,18 @@ object StandardShorthandProperties {
     
     inline def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
     
+    inline def setInset(value: Inset[TLength]): Self = StObject.set(x, "inset", value.asInstanceOf[js.Any])
+    
+    inline def setInsetBlock(value: InsetBlock[TLength]): Self = StObject.set(x, "insetBlock", value.asInstanceOf[js.Any])
+    
+    inline def setInsetBlockUndefined: Self = StObject.set(x, "insetBlock", js.undefined)
+    
+    inline def setInsetInline(value: InsetInline[TLength]): Self = StObject.set(x, "insetInline", value.asInstanceOf[js.Any])
+    
+    inline def setInsetInlineUndefined: Self = StObject.set(x, "insetInline", js.undefined)
+    
+    inline def setInsetUndefined: Self = StObject.set(x, "inset", js.undefined)
+    
     inline def setLineClamp(value: LineClamp): Self = StObject.set(x, "lineClamp", value.asInstanceOf[js.Any])
     
     inline def setLineClampUndefined: Self = StObject.set(x, "lineClamp", js.undefined)
@@ -819,6 +1100,14 @@ object StandardShorthandProperties {
     inline def setListStyleUndefined: Self = StObject.set(x, "listStyle", js.undefined)
     
     inline def setMargin(value: Margin[TLength]): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+    
+    inline def setMarginBlock(value: MarginBlock[TLength]): Self = StObject.set(x, "marginBlock", value.asInstanceOf[js.Any])
+    
+    inline def setMarginBlockUndefined: Self = StObject.set(x, "marginBlock", js.undefined)
+    
+    inline def setMarginInline(value: MarginInline[TLength]): Self = StObject.set(x, "marginInline", value.asInstanceOf[js.Any])
+    
+    inline def setMarginInlineUndefined: Self = StObject.set(x, "marginInline", js.undefined)
     
     inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     
@@ -852,7 +1141,19 @@ object StandardShorthandProperties {
     
     inline def setPadding(value: Padding[TLength]): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
+    inline def setPaddingBlock(value: PaddingBlock[TLength]): Self = StObject.set(x, "paddingBlock", value.asInstanceOf[js.Any])
+    
+    inline def setPaddingBlockUndefined: Self = StObject.set(x, "paddingBlock", js.undefined)
+    
+    inline def setPaddingInline(value: PaddingInline[TLength]): Self = StObject.set(x, "paddingInline", value.asInstanceOf[js.Any])
+    
+    inline def setPaddingInlineUndefined: Self = StObject.set(x, "paddingInline", js.undefined)
+    
     inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+    
+    inline def setPlaceContent(value: PlaceContent): Self = StObject.set(x, "placeContent", value.asInstanceOf[js.Any])
+    
+    inline def setPlaceContentUndefined: Self = StObject.set(x, "placeContent", js.undefined)
     
     inline def setPlaceItems(value: PlaceItems): Self = StObject.set(x, "placeItems", value.asInstanceOf[js.Any])
     
@@ -861,6 +1162,38 @@ object StandardShorthandProperties {
     inline def setPlaceSelf(value: PlaceSelf): Self = StObject.set(x, "placeSelf", value.asInstanceOf[js.Any])
     
     inline def setPlaceSelfUndefined: Self = StObject.set(x, "placeSelf", js.undefined)
+    
+    inline def setScrollMargin(value: ScrollMargin[TLength]): Self = StObject.set(x, "scrollMargin", value.asInstanceOf[js.Any])
+    
+    inline def setScrollMarginBlock(value: ScrollMarginBlock[TLength]): Self = StObject.set(x, "scrollMarginBlock", value.asInstanceOf[js.Any])
+    
+    inline def setScrollMarginBlockUndefined: Self = StObject.set(x, "scrollMarginBlock", js.undefined)
+    
+    inline def setScrollMarginInline(value: ScrollMarginInline[TLength]): Self = StObject.set(x, "scrollMarginInline", value.asInstanceOf[js.Any])
+    
+    inline def setScrollMarginInlineUndefined: Self = StObject.set(x, "scrollMarginInline", js.undefined)
+    
+    inline def setScrollMarginUndefined: Self = StObject.set(x, "scrollMargin", js.undefined)
+    
+    inline def setScrollPadding(value: ScrollPadding[TLength]): Self = StObject.set(x, "scrollPadding", value.asInstanceOf[js.Any])
+    
+    inline def setScrollPaddingBlock(value: ScrollPaddingBlock[TLength]): Self = StObject.set(x, "scrollPaddingBlock", value.asInstanceOf[js.Any])
+    
+    inline def setScrollPaddingBlockUndefined: Self = StObject.set(x, "scrollPaddingBlock", js.undefined)
+    
+    inline def setScrollPaddingInline(value: ScrollPaddingInline[TLength]): Self = StObject.set(x, "scrollPaddingInline", value.asInstanceOf[js.Any])
+    
+    inline def setScrollPaddingInlineUndefined: Self = StObject.set(x, "scrollPaddingInline", js.undefined)
+    
+    inline def setScrollPaddingUndefined: Self = StObject.set(x, "scrollPadding", js.undefined)
+    
+    inline def setScrollSnapMargin(value: ScrollMargin[TLength]): Self = StObject.set(x, "scrollSnapMargin", value.asInstanceOf[js.Any])
+    
+    inline def setScrollSnapMarginUndefined: Self = StObject.set(x, "scrollSnapMargin", js.undefined)
+    
+    inline def setScrollTimeline(value: ScrollTimeline): Self = StObject.set(x, "scrollTimeline", value.asInstanceOf[js.Any])
+    
+    inline def setScrollTimelineUndefined: Self = StObject.set(x, "scrollTimeline", js.undefined)
     
     inline def setTextDecoration(value: TextDecoration[TLength]): Self = StObject.set(x, "textDecoration", value.asInstanceOf[js.Any])
     

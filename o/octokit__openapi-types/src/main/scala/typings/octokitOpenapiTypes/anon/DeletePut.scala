@@ -7,22 +7,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeletePut extends StObject {
   
   /**
-    * Removes an organization from the list of selected organizations that are enabled for GitHub Actions in an enterprise. To use this endpoint, the enterprise permission policy for `enabled_organizations` must be configured to `selected`. For more information, see "[Set GitHub Actions permissions for an enterprise](#set-github-actions-permissions-for-an-enterprise)."
+    * Disable a selected repository for GitHub Actions in an organization
+    * @description Removes a repository from the list of selected repositories that are enabled for GitHub Actions in an organization. To use this endpoint, the organization permission policy for `enabled_repositories` must be configured to `selected`. For more information, see "[Set GitHub Actions permissions for an organization](#set-github-actions-permissions-for-an-organization)."
     *
-    * You must authenticate using an access token with the `admin:enterprise` scope to use this endpoint.
+    * You must authenticate using an access token with the `admin:org` scope to use this endpoint. GitHub Apps must have the `administration` organization permission to use this API.
     */
-  var delete: ParametersPathOrgid
+  var delete: ParametersPathRepositoryid
   
   /**
-    * Adds an organization to the list of selected organizations that are enabled for GitHub Actions in an enterprise. To use this endpoint, the enterprise permission policy for `enabled_organizations` must be configured to `selected`. For more information, see "[Set GitHub Actions permissions for an enterprise](#set-github-actions-permissions-for-an-enterprise)."
+    * Enable a selected repository for GitHub Actions in an organization
+    * @description Adds a repository to the list of selected repositories that are enabled for GitHub Actions in an organization. To use this endpoint, the organization permission policy for `enabled_repositories` must be must be configured to `selected`. For more information, see "[Set GitHub Actions permissions for an organization](#set-github-actions-permissions-for-an-organization)."
     *
-    * You must authenticate using an access token with the `admin:enterprise` scope to use this endpoint.
+    * You must authenticate using an access token with the `admin:org` scope to use this endpoint. GitHub Apps must have the `administration` organization permission to use this API.
     */
-  var put: ParametersPathOrgid
+  var put: ParametersPathRepositoryid
 }
 object DeletePut {
   
-  inline def apply(delete: ParametersPathOrgid, put: ParametersPathOrgid): DeletePut = {
+  inline def apply(delete: ParametersPathRepositoryid, put: ParametersPathRepositoryid): DeletePut = {
     val __obj = js.Dynamic.literal(delete = delete.asInstanceOf[js.Any], put = put.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeletePut]
   }
@@ -30,8 +32,8 @@ object DeletePut {
   @scala.inline
   implicit open class MutableBuilder[Self <: DeletePut] (val x: Self) extends AnyVal {
     
-    inline def setDelete(value: ParametersPathOrgid): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
+    inline def setDelete(value: ParametersPathRepositoryid): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
     
-    inline def setPut(value: ParametersPathOrgid): Self = StObject.set(x, "put", value.asInstanceOf[js.Any])
+    inline def setPut(value: ParametersPathRepositoryid): Self = StObject.set(x, "put", value.asInstanceOf[js.Any])
   }
 }

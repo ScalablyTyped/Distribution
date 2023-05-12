@@ -9,10 +9,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * This object is returned from various mouse events on the map and overlays,
-  * and contains all the fields shown below.
-  */
 trait MapMouseEvent extends StObject {
   
   /**

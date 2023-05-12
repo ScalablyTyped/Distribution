@@ -13,59 +13,45 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object libAtRuleMod {
   
+  @JSImport("postcss/lib/at-rule", JSImport.Namespace)
+  @js.native
+  open class ^ () extends AtRule_
+  
+  /**
+    * Represents an at-rule.
+    *
+    * ```js
+    * Once (root, { AtRule }) {
+    *   let media = new AtRule({ name: 'media', params: 'print' })
+    *   media.append(…)
+    *   root.append(media)
+    * }
+    * ```
+    *
+    * If it’s followed in the CSS by a `{}` block, this node will have
+    * a nodes property representing its children.
+    *
+    * ```js
+    * const root = postcss.parse('@charset "UTF-8"; @media print {}')
+    *
+    * const charset = root.first
+    * charset.type  //=> 'atrule'
+    * charset.nodes //=> undefined
+    *
+    * const media = root.last
+    * media.nodes   //=> []
+    * ```
+    */
   @JSImport("postcss/lib/at-rule", JSImport.Default)
   @js.native
   open class default ()
-    extends AtRule
+    extends AtRule_
        with AnyNode
        with ChildNode {
     def this(defaults: AtRuleProps) = this()
   }
   
-  @js.native
-  trait AtRule
-    extends typings.postcss.libContainerMod.default[ChildNode] {
-    
-    def assign(overrides: AtRuleProps): this.type = js.native
-    
-    def clone(overrides: PartialAtRuleProps): this.type = js.native
-    
-    def cloneAfter(overrides: PartialAtRuleProps): this.type = js.native
-    
-    def cloneBefore(overrides: PartialAtRuleProps): this.type = js.native
-    
-    /**
-      * The at-rule’s name immediately follows the `@`.
-      *
-      * ```js
-      * const root  = postcss.parse('@media print {}')
-      * media.name //=> 'media'
-      * const media = root.first
-      * ```
-      */
-    var name: String = js.native
-    
-    /**
-      * The at-rule’s parameters, the values that follow the at-rule’s name
-      * but precede any {} block.
-      *
-      * ```js
-      * const root  = postcss.parse('@media print, screen {}')
-      * const media = root.first
-      * media.params //=> 'print, screen'
-      * ```
-      */
-    var params: String = js.native
-    
-    @JSName("parent")
-    var parent_AtRule: js.UndefOr[typings.postcss.libContainerMod.default[ChildNode]] = js.native
-    
-    @JSName("raws")
-    var raws_AtRule: AtRuleRaws = js.native
-    
-    @JSName("type")
-    var type_AtRule: atrule = js.native
-  }
+  type AtRule = AtRule_
   
   trait AtRuleProps
     extends StObject
@@ -171,5 +157,75 @@ object libAtRuleMod {
       
       inline def setSemicolonUndefined: Self = StObject.set(x, "semicolon", js.undefined)
     }
+  }
+  
+  /**
+    * Represents an at-rule.
+    *
+    * ```js
+    * Once (root, { AtRule }) {
+    *   let media = new AtRule({ name: 'media', params: 'print' })
+    *   media.append(…)
+    *   root.append(media)
+    * }
+    * ```
+    *
+    * If it’s followed in the CSS by a `{}` block, this node will have
+    * a nodes property representing its children.
+    *
+    * ```js
+    * const root = postcss.parse('@charset "UTF-8"; @media print {}')
+    *
+    * const charset = root.first
+    * charset.type  //=> 'atrule'
+    * charset.nodes //=> undefined
+    *
+    * const media = root.last
+    * media.nodes   //=> []
+    * ```
+    */
+  @js.native
+  trait AtRule_
+    extends typings.postcss.libContainerMod.default[typings.std.ChildNode] {
+    
+    def assign(overrides: js.Object): this.type = js.native
+    def assign(overrides: AtRuleProps): this.type = js.native
+    
+    def clone(overrides: PartialAtRuleProps): this.type = js.native
+    
+    def cloneAfter(): this.type = js.native
+    def cloneAfter(overrides: PartialAtRuleProps): this.type = js.native
+    
+    def cloneBefore(): this.type = js.native
+    def cloneBefore(overrides: PartialAtRuleProps): this.type = js.native
+    
+    /**
+      * The at-rule’s name immediately follows the `@`.
+      *
+      * ```js
+      * const root  = postcss.parse('@media print {}')
+      * media.name //=> 'media'
+      * const media = root.first
+      * ```
+      */
+    var name: String = js.native
+    
+    /**
+      * The at-rule’s parameters, the values that follow the at-rule’s name
+      * but precede any `{}` block.
+      *
+      * ```js
+      * const root  = postcss.parse('@media print, screen {}')
+      * const media = root.first
+      * media.params //=> 'print, screen'
+      * ```
+      */
+    var params: String = js.native
+    
+    var parent: js.UndefOr[typings.postcss.libContainerMod.default[typings.std.ChildNode]] = js.native
+    
+    var raws: AtRuleRaws = js.native
+    
+    var `type`: atrule = js.native
   }
 }

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@hapi/podium" : "5.0.0"
+      "@hapi/podium" : "5.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "@hapi/podium" : "5.0.0"
+      "@hapi/podium" : "5.0.1"
     }
   ],
   "compile-devDependencies" : [

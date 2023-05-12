@@ -6,12 +6,11 @@ import typings.libp2pInterfaceConnection.mod.Stream
 import typings.libp2pInterfaceConnection.mod.StreamStat
 import typings.libp2pInterfaceStreamMuxer.mod.StreamMuxer
 import typings.libp2pInterfaceStreamMuxer.mod.StreamMuxerInit
-import typings.libp2pMplex.anon.AsyncGeneratorUint8Arrayv
 import typings.libp2pMplex.anon.Id
 import typings.libp2pMplex.anon.Name
 import typings.libp2pMplex.distSrcMessageTypesMod.Message
 import typings.libp2pMplex.mod.MplexInit
-import typings.std.AsyncIterable
+import typings.std.AsyncGenerator
 import typings.std.Record
 import typings.uint8arraylist.mod.Uint8ArrayList
 import org.scalablytyped.runtime.StObject
@@ -31,13 +30,13 @@ object distSrcMplexMod {
       * Creates a sink with an abortable source. Incoming messages will
       * also have their size restricted. All messages will be varint decoded.
       */
-    def _createSink(): Sink[js.typedarray.Uint8Array, js.Promise[Unit]] = js.native
+    def _createSink(): Sink[Source[Uint8ArrayList | js.typedarray.Uint8Array], js.Promise[Unit]] = js.native
     
     /**
       * Creates a source that restricts outgoing message sizes
       * and varint encodes them
       */
-    def _createSource(): AsyncGeneratorUint8Arrayv = js.native
+    def _createSource(): Any = js.native
     
     def _handleIncoming(message: Message): js.Promise[Unit] = js.native
     
@@ -61,15 +60,13 @@ object distSrcMplexMod {
     /* private */ val rateLimiter: Any = js.native
     
     /* CompleteClass */
-    override def sink(source: Source[js.typedarray.Uint8Array]): js.Promise[Unit] = js.native
+    override def sink(source: Source[Uint8ArrayList | js.typedarray.Uint8Array]): js.Promise[Unit] = js.native
     /* CompleteClass */
     @JSName("sink")
-    var sink_Original: Sink[js.typedarray.Uint8Array, js.Promise[Unit]] = js.native
+    var sink_Original: Sink[Source[Uint8ArrayList | js.typedarray.Uint8Array], js.Promise[Unit]] = js.native
     
     /* CompleteClass */
-    var source: Source[js.typedarray.Uint8Array] = js.native
-    @JSName("source")
-    var source_MplexStreamMuxer: AsyncIterable[js.typedarray.Uint8Array] = js.native
+    var source: AsyncGenerator[js.typedarray.Uint8Array, Any, Any] = js.native
     
     /**
       * Returns a Map of streams and their ids
@@ -96,8 +93,8 @@ object distSrcMplexMod {
       id: String,
       metadata: Record[String, Any],
       reset: () => Unit,
-      sink: /* source */ Source[Uint8ArrayList | js.typedarray.Uint8Array] => js.Promise[Unit],
-      source: Source[Uint8ArrayList],
+      sink: Source[Uint8ArrayList | js.typedarray.Uint8Array] => js.Promise[Unit],
+      source: AsyncGenerator[Uint8ArrayList, Any, Any],
       sourcePush: Uint8ArrayList => Unit,
       sourceReadableLength: () => Double,
       stat: StreamStat

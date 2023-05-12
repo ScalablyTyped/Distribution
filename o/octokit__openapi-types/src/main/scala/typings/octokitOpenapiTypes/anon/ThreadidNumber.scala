@@ -6,7 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ThreadidNumber extends StObject {
   
-  /** The unique identifier of the pull request thread. */
   var thread_id: Double
 }
 object ThreadidNumber {

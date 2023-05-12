@@ -15,6 +15,8 @@ object srcEsmUtilsMod {
   
   inline def globalId(category: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("globalId")(category.asInstanceOf[js.Any]).asInstanceOf[Double]
   
+  inline def isReadable(stream: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isReadable")(stream.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
   inline def parseJSON(data: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("parseJSON")(data.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def parseJSON(data: String, fixJSONCtlChars: FixJSONCtlChars): String = (^.asInstanceOf[js.Dynamic].applyDynamic("parseJSON")(data.asInstanceOf[js.Any], fixJSONCtlChars.asInstanceOf[js.Any])).asInstanceOf[String]
   

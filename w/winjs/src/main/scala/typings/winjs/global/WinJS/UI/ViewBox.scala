@@ -13,7 +13,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 //#region Constructors
 /**
   * Initializes a new instance of the ViewBox control.
-  * @constructor
   * @param element The DOM element that functions as the scaling box. This element fills 100% of the width and height allotted to it.
   * @param options The set of options to be applied initially to the ViewBox control. There are currently no options on this control, and any options included in this parameter are ignored.
   **/

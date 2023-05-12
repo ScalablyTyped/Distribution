@@ -260,7 +260,7 @@ object Material {
     * Shorthand for: new Material({fabric : {type : type}});
     * @example
     * const material = Cesium.Material.fromType('Color', {
-    *     color : new Cesium.Color(1.0, 0.0, 0.0, 1.0)
+    *   color: new Cesium.Color(1.0, 0.0, 0.0, 1.0)
     * });
     * @param type - The base material type.
     * @param [uniforms] - Overrides for the default uniforms.

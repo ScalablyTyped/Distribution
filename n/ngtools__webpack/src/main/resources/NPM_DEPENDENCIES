@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@ngtools/webpack" : "14.2.6"
+      "@ngtools/webpack" : "16.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "@ngtools/webpack" : "14.2.6"
+      "@ngtools/webpack" : "16.0.1"
     }
   ],
   "compile-devDependencies" : [

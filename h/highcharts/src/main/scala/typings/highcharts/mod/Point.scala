@@ -12,16 +12,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class Point () extends StObject {
   
   /**
-    * Cancel sonification of a point. Calls onEnd functions.
-    *
-    * @param fadeOut
-    *        Whether or not to fade out as we stop. If false, the points
-    *        are cancelled synchronously.
-    */
-  def cancelSonify(): Unit = js.native
-  def cancelSonify(fadeOut: Boolean): Unit = js.native
-  
-  /**
     * For categorized axes this property holds the category name for the point.
     * For other axes it holds the X value.
     */
@@ -36,7 +26,7 @@ open class Point () extends StObject {
     * The point's current color index, used in styled mode instead of `color`.
     * The color index is inserted in class names used for styling.
     */
-  var colorIndex: Double = js.native
+  var colorIndex: js.UndefOr[Double] = js.native
   
   /**
     * (Highstock) Highcharts Stock only. If a point object is created by
@@ -84,6 +74,25 @@ open class Point () extends StObject {
     * @return The zone item.
     */
   def getZone(): SeriesZonesOptionsObject = js.native
+  
+  /**
+    * SVG graphic representing the point in the chart. In some cases it may be
+    * a hidden graphic to improve accessibility.
+    *
+    * Typically this is a simple shape, like a `rect` for column charts or
+    * `path` for line markers, but for some complex series types like boxplot
+    * or 3D charts, the graphic may be a `g` element containing other shapes.
+    * The graphic is generated the first time Series#drawPoints runs, and
+    * updated and moved on subsequent runs.
+    */
+  var graphic: js.UndefOr[SVGElement] = js.native
+  
+  /**
+    * Array for multiple SVG graphics representing the point in the chart.
+    * Only used in cases where the point can not be represented by a single
+    * graphic.
+    */
+  var graphics: js.UndefOr[js.Array[SVGElement]] = js.native
   
   /**
     * Get the path definition for the halo, which is usually a shadow-like
@@ -185,7 +194,7 @@ open class Point () extends StObject {
   def optionsToObject(options: PointOptionsType): Dictionary[Any] = js.native
   
   /**
-    * The percentage for points in a stacked series or pies.
+    * The percentage for points in a stacked series, pies or gauges.
     */
   var percentage: js.UndefOr[Double] = js.native
   
@@ -334,13 +343,14 @@ open class Point () extends StObject {
   var sliced: js.UndefOr[Boolean] = js.native
   
   /**
-    * Sonify a single point.
+    * Play a sonification of a point.
     *
-    * @param options
-    *        Options for the sonification of the point.
+    * @param onEnd
+    *        Callback to call after play completed
     */
+  def sonify(): Unit = js.native
   def sonify(
-    options: typings.highcharts.modulesSonificationMod.highchartsAugmentingMod.PointSonifyOptionsObject
+    onEnd: typings.highcharts.modulesSonificationMod.highchartsAugmentingMod.SonificationChartEventCallback
   ): Unit = js.native
   
   /**

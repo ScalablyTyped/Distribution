@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AuditContext extends StObject {
   
   /**
-    * The context for the audit..
+    * A string containing the additional audit context information.
     */
   var AdditionalAuditContext: js.UndefOr[AuditContextString] = js.undefined
   

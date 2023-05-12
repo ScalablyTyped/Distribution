@@ -1,6 +1,6 @@
 package typings.firebaseAuth
 
-import typings.firebaseAuth.anon.CodeErrorsMessage
+import typings.firebaseAuth.anon.CodeNumber
 import typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -170,10 +170,30 @@ object distNodeSrcApiErrorsMod {
     def INVALID_PROVIDER_ID: js.UndefOr[AuthErrorCode] = js.native
     inline def INVALID_PROVIDER_ID_=(x: js.UndefOr[AuthErrorCode]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INVALID_PROVIDER_ID")(x.asInstanceOf[js.Any])
     
+    @JSImport("@firebase/auth/dist/node/src/api/errors", "SERVER_ERROR_MAP.INVALID_RECAPTCHA_ACTION")
+    @js.native
+    def INVALID_RECAPTCHA_ACTION: js.UndefOr[AuthErrorCode] = js.native
+    inline def INVALID_RECAPTCHA_ACTION_=(x: js.UndefOr[AuthErrorCode]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INVALID_RECAPTCHA_ACTION")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@firebase/auth/dist/node/src/api/errors", "SERVER_ERROR_MAP.INVALID_RECAPTCHA_TOKEN")
+    @js.native
+    def INVALID_RECAPTCHA_TOKEN: js.UndefOr[AuthErrorCode] = js.native
+    inline def INVALID_RECAPTCHA_TOKEN_=(x: js.UndefOr[AuthErrorCode]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INVALID_RECAPTCHA_TOKEN")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@firebase/auth/dist/node/src/api/errors", "SERVER_ERROR_MAP.INVALID_RECAPTCHA_VERSION")
+    @js.native
+    def INVALID_RECAPTCHA_VERSION: js.UndefOr[AuthErrorCode] = js.native
+    inline def INVALID_RECAPTCHA_VERSION_=(x: js.UndefOr[AuthErrorCode]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INVALID_RECAPTCHA_VERSION")(x.asInstanceOf[js.Any])
+    
     @JSImport("@firebase/auth/dist/node/src/api/errors", "SERVER_ERROR_MAP.INVALID_RECIPIENT_EMAIL")
     @js.native
     def INVALID_RECIPIENT_EMAIL: js.UndefOr[AuthErrorCode] = js.native
     inline def INVALID_RECIPIENT_EMAIL_=(x: js.UndefOr[AuthErrorCode]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INVALID_RECIPIENT_EMAIL")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@firebase/auth/dist/node/src/api/errors", "SERVER_ERROR_MAP.INVALID_REQ_TYPE")
+    @js.native
+    def INVALID_REQ_TYPE: js.UndefOr[AuthErrorCode] = js.native
+    inline def INVALID_REQ_TYPE_=(x: js.UndefOr[AuthErrorCode]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INVALID_REQ_TYPE")(x.asInstanceOf[js.Any])
     
     @JSImport("@firebase/auth/dist/node/src/api/errors", "SERVER_ERROR_MAP.INVALID_SENDER")
     @js.native
@@ -209,6 +229,11 @@ object distNodeSrcApiErrorsMod {
     @js.native
     def MISSING_APP_CREDENTIAL: js.UndefOr[AuthErrorCode] = js.native
     inline def MISSING_APP_CREDENTIAL_=(x: js.UndefOr[AuthErrorCode]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MISSING_APP_CREDENTIAL")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@firebase/auth/dist/node/src/api/errors", "SERVER_ERROR_MAP.MISSING_CLIENT_TYPE")
+    @js.native
+    def MISSING_CLIENT_TYPE: js.UndefOr[AuthErrorCode] = js.native
+    inline def MISSING_CLIENT_TYPE_=(x: js.UndefOr[AuthErrorCode]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MISSING_CLIENT_TYPE")(x.asInstanceOf[js.Any])
     
     @JSImport("@firebase/auth/dist/node/src/api/errors", "SERVER_ERROR_MAP.MISSING_CODE")
     @js.native
@@ -260,6 +285,16 @@ object distNodeSrcApiErrorsMod {
     def MISSING_PHONE_NUMBER: js.UndefOr[AuthErrorCode] = js.native
     inline def MISSING_PHONE_NUMBER_=(x: js.UndefOr[AuthErrorCode]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MISSING_PHONE_NUMBER")(x.asInstanceOf[js.Any])
     
+    @JSImport("@firebase/auth/dist/node/src/api/errors", "SERVER_ERROR_MAP.MISSING_RECAPTCHA_TOKEN")
+    @js.native
+    def MISSING_RECAPTCHA_TOKEN: js.UndefOr[AuthErrorCode] = js.native
+    inline def MISSING_RECAPTCHA_TOKEN_=(x: js.UndefOr[AuthErrorCode]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MISSING_RECAPTCHA_TOKEN")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@firebase/auth/dist/node/src/api/errors", "SERVER_ERROR_MAP.MISSING_RECAPTCHA_VERSION")
+    @js.native
+    def MISSING_RECAPTCHA_VERSION: js.UndefOr[AuthErrorCode] = js.native
+    inline def MISSING_RECAPTCHA_VERSION_=(x: js.UndefOr[AuthErrorCode]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MISSING_RECAPTCHA_VERSION")(x.asInstanceOf[js.Any])
+    
     @JSImport("@firebase/auth/dist/node/src/api/errors", "SERVER_ERROR_MAP.MISSING_REQ_TYPE")
     @js.native
     def MISSING_REQ_TYPE: js.UndefOr[AuthErrorCode] = js.native
@@ -284,6 +319,11 @@ object distNodeSrcApiErrorsMod {
     @js.native
     def QUOTA_EXCEEDED: js.UndefOr[AuthErrorCode] = js.native
     inline def QUOTA_EXCEEDED_=(x: js.UndefOr[AuthErrorCode]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("QUOTA_EXCEEDED")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@firebase/auth/dist/node/src/api/errors", "SERVER_ERROR_MAP.RECAPTCHA_NOT_ENABLED")
+    @js.native
+    def RECAPTCHA_NOT_ENABLED: js.UndefOr[AuthErrorCode] = js.native
+    inline def RECAPTCHA_NOT_ENABLED_=(x: js.UndefOr[AuthErrorCode]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RECAPTCHA_NOT_ENABLED")(x.asInstanceOf[js.Any])
     
     @JSImport("@firebase/auth/dist/node/src/api/errors", "SERVER_ERROR_MAP.REJECTED_CREDENTIAL")
     @js.native
@@ -368,11 +408,11 @@ object distNodeSrcApiErrorsMod {
   
   trait JsonError extends StObject {
     
-    var error: CodeErrorsMessage
+    var error: CodeNumber
   }
   object JsonError {
     
-    inline def apply(error: CodeErrorsMessage): JsonError = {
+    inline def apply(error: CodeNumber): JsonError = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
       __obj.asInstanceOf[JsonError]
     }
@@ -380,7 +420,7 @@ object distNodeSrcApiErrorsMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: JsonError] (val x: Self) extends AnyVal {
       
-      inline def setError(value: CodeErrorsMessage): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: CodeNumber): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     }
   }
   
@@ -455,6 +495,14 @@ object distNodeSrcApiErrorsMod {
     - typings.firebaseAuth.firebaseAuthStrings.USER_DISABLED
     - typings.firebaseAuth.firebaseAuthStrings.USER_NOT_FOUND
     - typings.firebaseAuth.firebaseAuthStrings.WEAK_PASSWORD
+    - typings.firebaseAuth.firebaseAuthStrings.RECAPTCHA_NOT_ENABLED
+    - typings.firebaseAuth.firebaseAuthStrings.MISSING_RECAPTCHA_TOKEN
+    - typings.firebaseAuth.firebaseAuthStrings.INVALID_RECAPTCHA_TOKEN
+    - typings.firebaseAuth.firebaseAuthStrings.INVALID_RECAPTCHA_ACTION
+    - typings.firebaseAuth.firebaseAuthStrings.MISSING_CLIENT_TYPE
+    - typings.firebaseAuth.firebaseAuthStrings.MISSING_RECAPTCHA_VERSION
+    - typings.firebaseAuth.firebaseAuthStrings.INVALID_RECAPTCHA_VERSION
+    - typings.firebaseAuth.firebaseAuthStrings.INVALID_REQ_TYPE
   */
   trait ServerError extends StObject
   object ServerError {
@@ -521,7 +569,15 @@ object distNodeSrcApiErrorsMod {
     
     inline def INVALID_PROVIDER_ID: typings.firebaseAuth.firebaseAuthStrings.INVALID_PROVIDER_ID = "INVALID_PROVIDER_ID".asInstanceOf[typings.firebaseAuth.firebaseAuthStrings.INVALID_PROVIDER_ID]
     
+    inline def INVALID_RECAPTCHA_ACTION: typings.firebaseAuth.firebaseAuthStrings.INVALID_RECAPTCHA_ACTION = "INVALID_RECAPTCHA_ACTION".asInstanceOf[typings.firebaseAuth.firebaseAuthStrings.INVALID_RECAPTCHA_ACTION]
+    
+    inline def INVALID_RECAPTCHA_TOKEN: typings.firebaseAuth.firebaseAuthStrings.INVALID_RECAPTCHA_TOKEN = "INVALID_RECAPTCHA_TOKEN".asInstanceOf[typings.firebaseAuth.firebaseAuthStrings.INVALID_RECAPTCHA_TOKEN]
+    
+    inline def INVALID_RECAPTCHA_VERSION: typings.firebaseAuth.firebaseAuthStrings.INVALID_RECAPTCHA_VERSION = "INVALID_RECAPTCHA_VERSION".asInstanceOf[typings.firebaseAuth.firebaseAuthStrings.INVALID_RECAPTCHA_VERSION]
+    
     inline def INVALID_RECIPIENT_EMAIL: typings.firebaseAuth.firebaseAuthStrings.INVALID_RECIPIENT_EMAIL = "INVALID_RECIPIENT_EMAIL".asInstanceOf[typings.firebaseAuth.firebaseAuthStrings.INVALID_RECIPIENT_EMAIL]
+    
+    inline def INVALID_REQ_TYPE: typings.firebaseAuth.firebaseAuthStrings.INVALID_REQ_TYPE = "INVALID_REQ_TYPE".asInstanceOf[typings.firebaseAuth.firebaseAuthStrings.INVALID_REQ_TYPE]
     
     inline def INVALID_SENDER: typings.firebaseAuth.firebaseAuthStrings.INVALID_SENDER = "INVALID_SENDER".asInstanceOf[typings.firebaseAuth.firebaseAuthStrings.INVALID_SENDER]
     
@@ -536,6 +592,8 @@ object distNodeSrcApiErrorsMod {
     inline def MISSING_ANDROID_PACKAGE_NAME: typings.firebaseAuth.firebaseAuthStrings.MISSING_ANDROID_PACKAGE_NAME = "MISSING_ANDROID_PACKAGE_NAME".asInstanceOf[typings.firebaseAuth.firebaseAuthStrings.MISSING_ANDROID_PACKAGE_NAME]
     
     inline def MISSING_APP_CREDENTIAL: typings.firebaseAuth.firebaseAuthStrings.MISSING_APP_CREDENTIAL = "MISSING_APP_CREDENTIAL".asInstanceOf[typings.firebaseAuth.firebaseAuthStrings.MISSING_APP_CREDENTIAL]
+    
+    inline def MISSING_CLIENT_TYPE: typings.firebaseAuth.firebaseAuthStrings.MISSING_CLIENT_TYPE = "MISSING_CLIENT_TYPE".asInstanceOf[typings.firebaseAuth.firebaseAuthStrings.MISSING_CLIENT_TYPE]
     
     inline def MISSING_CODE: typings.firebaseAuth.firebaseAuthStrings.MISSING_CODE = "MISSING_CODE".asInstanceOf[typings.firebaseAuth.firebaseAuthStrings.MISSING_CODE]
     
@@ -557,6 +615,10 @@ object distNodeSrcApiErrorsMod {
     
     inline def MISSING_PHONE_NUMBER: typings.firebaseAuth.firebaseAuthStrings.MISSING_PHONE_NUMBER = "MISSING_PHONE_NUMBER".asInstanceOf[typings.firebaseAuth.firebaseAuthStrings.MISSING_PHONE_NUMBER]
     
+    inline def MISSING_RECAPTCHA_TOKEN: typings.firebaseAuth.firebaseAuthStrings.MISSING_RECAPTCHA_TOKEN = "MISSING_RECAPTCHA_TOKEN".asInstanceOf[typings.firebaseAuth.firebaseAuthStrings.MISSING_RECAPTCHA_TOKEN]
+    
+    inline def MISSING_RECAPTCHA_VERSION: typings.firebaseAuth.firebaseAuthStrings.MISSING_RECAPTCHA_VERSION = "MISSING_RECAPTCHA_VERSION".asInstanceOf[typings.firebaseAuth.firebaseAuthStrings.MISSING_RECAPTCHA_VERSION]
+    
     inline def MISSING_REQ_TYPE: typings.firebaseAuth.firebaseAuthStrings.MISSING_REQ_TYPE = "MISSING_REQ_TYPE".asInstanceOf[typings.firebaseAuth.firebaseAuthStrings.MISSING_REQ_TYPE]
     
     inline def MISSING_SESSION_INFO: typings.firebaseAuth.firebaseAuthStrings.MISSING_SESSION_INFO = "MISSING_SESSION_INFO".asInstanceOf[typings.firebaseAuth.firebaseAuthStrings.MISSING_SESSION_INFO]
@@ -566,6 +628,8 @@ object distNodeSrcApiErrorsMod {
     inline def PASSWORD_LOGIN_DISABLED: typings.firebaseAuth.firebaseAuthStrings.PASSWORD_LOGIN_DISABLED = "PASSWORD_LOGIN_DISABLED".asInstanceOf[typings.firebaseAuth.firebaseAuthStrings.PASSWORD_LOGIN_DISABLED]
     
     inline def QUOTA_EXCEEDED: typings.firebaseAuth.firebaseAuthStrings.QUOTA_EXCEEDED = "QUOTA_EXCEEDED".asInstanceOf[typings.firebaseAuth.firebaseAuthStrings.QUOTA_EXCEEDED]
+    
+    inline def RECAPTCHA_NOT_ENABLED: typings.firebaseAuth.firebaseAuthStrings.RECAPTCHA_NOT_ENABLED = "RECAPTCHA_NOT_ENABLED".asInstanceOf[typings.firebaseAuth.firebaseAuthStrings.RECAPTCHA_NOT_ENABLED]
     
     inline def REJECTED_CREDENTIAL: typings.firebaseAuth.firebaseAuthStrings.REJECTED_CREDENTIAL = "REJECTED_CREDENTIAL".asInstanceOf[typings.firebaseAuth.firebaseAuthStrings.REJECTED_CREDENTIAL]
     

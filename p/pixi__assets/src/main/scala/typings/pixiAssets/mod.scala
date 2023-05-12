@@ -4,6 +4,7 @@ import typings.pixiAssets.libCacheCacheMod.CacheClass
 import typings.pixiAssets.libCacheCacheParserMod.CacheParser
 import typings.pixiAssets.libDetectionsMod.FormatDetectionParser
 import typings.pixiAssets.libLoaderParsersLoaderParserMod.LoaderParser
+import typings.pixiAssets.libLoaderParsersTexturesLoadTexturesMod.LoadTextureConfig
 import typings.pixiAssets.libResolverTypesMod.ResolveURLParser
 import typings.pixiCore.libTexturesBaseTextureMod.IBaseTextureOptions
 import typings.pixiCore.libTexturesResourcesAutoDetectResourceMod.IAutoDetectOptions
@@ -12,6 +13,7 @@ import typings.pixiCore.mod.BaseTexture
 import typings.pixiCore.mod.Texture
 import typings.std.FontFace
 import typings.std.ImageBitmap
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -63,6 +65,9 @@ object mod {
   @js.native
   val cacheTextureArray: CacheParser[js.Array[Texture[Resource]]] = js.native
   
+  inline def checkDataUrl(url: String, mimes: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("checkDataUrl")(url.asInstanceOf[js.Any], mimes.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def checkDataUrl(url: String, mimes: js.Array[String]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("checkDataUrl")(url.asInstanceOf[js.Any], mimes.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
   inline def checkExtension(url: String, `extension`: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("checkExtension")(url.asInstanceOf[js.Any], `extension`.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   inline def checkExtension(url: String, `extension`: js.Array[String]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("checkExtension")(url.asInstanceOf[js.Any], `extension`.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
@@ -72,6 +77,8 @@ object mod {
   inline def convertToList[T](input: String, transform: js.Function1[/* input */ String, T]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("convertToList")(input.asInstanceOf[js.Any], transform.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   inline def convertToList[T](input: js.Array[String | T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("convertToList")(input.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
   inline def convertToList[T](input: js.Array[String | T], transform: js.Function1[/* input */ String, T]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("convertToList")(input.asInstanceOf[js.Any], transform.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  
+  inline def copySearchParams(targetUrl: String, sourceUrl: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("copySearchParams")(targetUrl.asInstanceOf[js.Any], sourceUrl.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def createStringVariations(string: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("createStringVariations")(string.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
@@ -101,23 +108,27 @@ object mod {
   
   @JSImport("@pixi/assets", "loadJson")
   @js.native
-  val loadJson: LoaderParser[Any, Any] = js.native
+  val loadJson: LoaderParser[Any, Any, Record[String, Any]] = js.native
   
   @JSImport("@pixi/assets", "loadSVG")
   @js.native
-  val loadSVG: LoaderParser[String | Texture[typings.pixiCore.mod.Resource], IBaseTextureOptions[Any]] = js.native
+  val loadSVG: LoaderParser[
+    String | Texture[typings.pixiCore.mod.Resource], 
+    IBaseTextureOptions[Any], 
+    Record[String, Any]
+  ] = js.native
   
   @JSImport("@pixi/assets", "loadTextures")
   @js.native
-  val loadTextures: LoaderParser[Texture[typings.pixiCore.mod.Resource], IBaseTextureOptions[Any]] = js.native
+  val loadTextures: LoaderParser[Texture[typings.pixiCore.mod.Resource], IBaseTextureOptions[Any], LoadTextureConfig] = js.native
   
   @JSImport("@pixi/assets", "loadTxt")
   @js.native
-  val loadTxt: LoaderParser[Any, Any] = js.native
+  val loadTxt: LoaderParser[Any, Any, Record[String, Any]] = js.native
   
   @JSImport("@pixi/assets", "loadWebFont")
   @js.native
-  val loadWebFont: LoaderParser[FontFace | js.Array[FontFace], Any] = js.native
+  val loadWebFont: LoaderParser[FontFace | js.Array[FontFace], Any, Record[String, Any]] = js.native
   
   @JSImport("@pixi/assets", "resolveTextureUrl")
   @js.native

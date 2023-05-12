@@ -54,7 +54,12 @@ object Animations {
     var repeatDelay: js.UndefOr[Double] = js.undefined
     
     /**
-      * Should sprite.visible = true when the animation starts to play?
+      * If this animation has a delay, should it show the first frame immediately (true), or only after the delay (false)
+      */
+    var showBeforeDelay: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Should sprite.visible = true when the animation starts to play? This happens _after_ any delay, if set.
       */
     var showOnStart: js.UndefOr[Boolean] = js.undefined
     
@@ -120,6 +125,10 @@ object Animations {
       inline def setRepeatDelayUndefined: Self = StObject.set(x, "repeatDelay", js.undefined)
       
       inline def setRepeatUndefined: Self = StObject.set(x, "repeat", js.undefined)
+      
+      inline def setShowBeforeDelay(value: Boolean): Self = StObject.set(x, "showBeforeDelay", value.asInstanceOf[js.Any])
+      
+      inline def setShowBeforeDelayUndefined: Self = StObject.set(x, "showBeforeDelay", js.undefined)
       
       inline def setShowOnStart(value: Boolean): Self = StObject.set(x, "showOnStart", value.asInstanceOf[js.Any])
       
@@ -376,6 +385,11 @@ object Animations {
     var repeatDelay: Double
     
     /**
+      * If this animation has a delay, should it show the first frame immediately (true), or only after the delay (false)
+      */
+    var showBeforeDelay: Boolean
+    
+    /**
       * Should sprite.visible = true when the animation starts to play?
       */
     var showOnStart: Boolean
@@ -406,12 +420,13 @@ object Animations {
       key: String,
       repeat: Double,
       repeatDelay: Double,
+      showBeforeDelay: Boolean,
       showOnStart: Boolean,
       skipMissedFrames: Boolean,
       `type`: String,
       yoyo: Boolean
     ): JSONAnimation = {
-      val __obj = js.Dynamic.literal(delay = delay.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], frameRate = frameRate.asInstanceOf[js.Any], frames = frames.asInstanceOf[js.Any], hideOnComplete = hideOnComplete.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], repeat = repeat.asInstanceOf[js.Any], repeatDelay = repeatDelay.asInstanceOf[js.Any], showOnStart = showOnStart.asInstanceOf[js.Any], skipMissedFrames = skipMissedFrames.asInstanceOf[js.Any], yoyo = yoyo.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(delay = delay.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], frameRate = frameRate.asInstanceOf[js.Any], frames = frames.asInstanceOf[js.Any], hideOnComplete = hideOnComplete.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], repeat = repeat.asInstanceOf[js.Any], repeatDelay = repeatDelay.asInstanceOf[js.Any], showBeforeDelay = showBeforeDelay.asInstanceOf[js.Any], showOnStart = showOnStart.asInstanceOf[js.Any], skipMissedFrames = skipMissedFrames.asInstanceOf[js.Any], yoyo = yoyo.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[JSONAnimation]
     }
@@ -436,6 +451,8 @@ object Animations {
       inline def setRepeat(value: Double): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
       
       inline def setRepeatDelay(value: Double): Self = StObject.set(x, "repeatDelay", value.asInstanceOf[js.Any])
+      
+      inline def setShowBeforeDelay(value: Boolean): Self = StObject.set(x, "showBeforeDelay", value.asInstanceOf[js.Any])
       
       inline def setShowOnStart(value: Boolean): Self = StObject.set(x, "showOnStart", value.asInstanceOf[js.Any])
       
@@ -550,6 +567,11 @@ object Animations {
     var repeatDelay: js.UndefOr[Double] = js.undefined
     
     /**
+      * If this animation has a delay, should it show the first frame immediately (true), or only after the delay (false)
+      */
+    var showBeforeDelay: js.UndefOr[Boolean] = js.undefined
+    
+    /**
       * Should sprite.visible = true when the animation starts to play?
       */
     var showOnStart: js.UndefOr[Boolean] = js.undefined
@@ -604,6 +626,10 @@ object Animations {
       inline def setRepeatDelayUndefined: Self = StObject.set(x, "repeatDelay", js.undefined)
       
       inline def setRepeatUndefined: Self = StObject.set(x, "repeat", js.undefined)
+      
+      inline def setShowBeforeDelay(value: Boolean): Self = StObject.set(x, "showBeforeDelay", value.asInstanceOf[js.Any])
+      
+      inline def setShowBeforeDelayUndefined: Self = StObject.set(x, "showBeforeDelay", js.undefined)
       
       inline def setShowOnStart(value: Boolean): Self = StObject.set(x, "showOnStart", value.asInstanceOf[js.Any])
       

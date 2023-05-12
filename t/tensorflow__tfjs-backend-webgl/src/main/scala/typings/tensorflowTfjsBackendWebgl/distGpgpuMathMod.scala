@@ -1,11 +1,11 @@
 package typings.tensorflowTfjsBackendWebgl
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.std.WebGLProgram
 import typings.std.WebGLShader
 import typings.std.WebGLUniformLocation
 import typings.tensorflowTfjsBackendWebgl.anon.ArrayIndex
 import typings.tensorflowTfjsBackendWebgl.distGpgpuContextMod.GPGPUContext
+import typings.tensorflowTfjsBackendWebgl.distGpgpuContextMod.GPGPUContextProgram
 import typings.tensorflowTfjsBackendWebgl.distShaderCompilerMod.ShapeInfo
 import typings.tensorflowTfjsBackendWebgl.distTexUtilMod.PackingScheme
 import typings.tensorflowTfjsBackendWebgl.distTexUtilMod.TextureData
@@ -40,37 +40,21 @@ object distGpgpuMathMod {
   
   inline def useShapeUniforms(rank: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("useShapeUniforms")(rank.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  trait GPGPUBinary extends StObject {
-    
-    var customUniformLocations: js.UndefOr[js.Array[WebGLUniformLocation]] = js.undefined
+  trait GPGPUBinary
+    extends StObject
+       with GPGPUBinaryLocations {
     
     var fragmentShader: WebGLShader
     
     var inShapeInfos: js.Array[ShapeInfo]
     
-    var inShapesLocations: js.UndefOr[StringDictionary[WebGLUniformLocation]] = js.undefined
-    
-    var inTexShapesLocations: js.UndefOr[StringDictionary[WebGLUniformLocation]] = js.undefined
-    
-    var infLoc: WebGLUniformLocation
-    
-    var nanLoc: WebGLUniformLocation
-    
     var outShapeInfo: ShapeInfo
-    
-    var outShapeLocation: js.UndefOr[WebGLUniformLocation] = js.undefined
-    
-    var outShapeStridesLocation: js.UndefOr[WebGLUniformLocation] = js.undefined
-    
-    var outTexShapeLocation: js.UndefOr[WebGLUniformLocation] = js.undefined
     
     var program: GPGPUProgram
     
     var source: String
     
-    var uniformLocations: StringDictionary[WebGLUniformLocation]
-    
-    var webGLProgram: WebGLProgram
+    var webGLProgram: GPGPUContextProgram
   }
   object GPGPUBinary {
     
@@ -82,21 +66,14 @@ object distGpgpuMathMod {
       outShapeInfo: ShapeInfo,
       program: GPGPUProgram,
       source: String,
-      uniformLocations: StringDictionary[WebGLUniformLocation],
-      webGLProgram: WebGLProgram
+      webGLProgram: GPGPUContextProgram
     ): GPGPUBinary = {
-      val __obj = js.Dynamic.literal(fragmentShader = fragmentShader.asInstanceOf[js.Any], inShapeInfos = inShapeInfos.asInstanceOf[js.Any], infLoc = infLoc.asInstanceOf[js.Any], nanLoc = nanLoc.asInstanceOf[js.Any], outShapeInfo = outShapeInfo.asInstanceOf[js.Any], program = program.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], uniformLocations = uniformLocations.asInstanceOf[js.Any], webGLProgram = webGLProgram.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(fragmentShader = fragmentShader.asInstanceOf[js.Any], inShapeInfos = inShapeInfos.asInstanceOf[js.Any], infLoc = infLoc.asInstanceOf[js.Any], nanLoc = nanLoc.asInstanceOf[js.Any], outShapeInfo = outShapeInfo.asInstanceOf[js.Any], program = program.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], webGLProgram = webGLProgram.asInstanceOf[js.Any])
       __obj.asInstanceOf[GPGPUBinary]
     }
     
     @scala.inline
     implicit open class MutableBuilder[Self <: GPGPUBinary] (val x: Self) extends AnyVal {
-      
-      inline def setCustomUniformLocations(value: js.Array[WebGLUniformLocation]): Self = StObject.set(x, "customUniformLocations", value.asInstanceOf[js.Any])
-      
-      inline def setCustomUniformLocationsUndefined: Self = StObject.set(x, "customUniformLocations", js.undefined)
-      
-      inline def setCustomUniformLocationsVarargs(value: WebGLUniformLocation*): Self = StObject.set(x, "customUniformLocations", js.Array(value*))
       
       inline def setFragmentShader(value: WebGLShader): Self = StObject.set(x, "fragmentShader", value.asInstanceOf[js.Any])
       
@@ -104,49 +81,19 @@ object distGpgpuMathMod {
       
       inline def setInShapeInfosVarargs(value: ShapeInfo*): Self = StObject.set(x, "inShapeInfos", js.Array(value*))
       
-      inline def setInShapesLocations(value: StringDictionary[WebGLUniformLocation]): Self = StObject.set(x, "inShapesLocations", value.asInstanceOf[js.Any])
-      
-      inline def setInShapesLocationsUndefined: Self = StObject.set(x, "inShapesLocations", js.undefined)
-      
-      inline def setInTexShapesLocations(value: StringDictionary[WebGLUniformLocation]): Self = StObject.set(x, "inTexShapesLocations", value.asInstanceOf[js.Any])
-      
-      inline def setInTexShapesLocationsUndefined: Self = StObject.set(x, "inTexShapesLocations", js.undefined)
-      
-      inline def setInfLoc(value: WebGLUniformLocation): Self = StObject.set(x, "infLoc", value.asInstanceOf[js.Any])
-      
-      inline def setNanLoc(value: WebGLUniformLocation): Self = StObject.set(x, "nanLoc", value.asInstanceOf[js.Any])
-      
       inline def setOutShapeInfo(value: ShapeInfo): Self = StObject.set(x, "outShapeInfo", value.asInstanceOf[js.Any])
-      
-      inline def setOutShapeLocation(value: WebGLUniformLocation): Self = StObject.set(x, "outShapeLocation", value.asInstanceOf[js.Any])
-      
-      inline def setOutShapeLocationUndefined: Self = StObject.set(x, "outShapeLocation", js.undefined)
-      
-      inline def setOutShapeStridesLocation(value: WebGLUniformLocation): Self = StObject.set(x, "outShapeStridesLocation", value.asInstanceOf[js.Any])
-      
-      inline def setOutShapeStridesLocationUndefined: Self = StObject.set(x, "outShapeStridesLocation", js.undefined)
-      
-      inline def setOutTexShapeLocation(value: WebGLUniformLocation): Self = StObject.set(x, "outTexShapeLocation", value.asInstanceOf[js.Any])
-      
-      inline def setOutTexShapeLocationUndefined: Self = StObject.set(x, "outTexShapeLocation", js.undefined)
       
       inline def setProgram(value: GPGPUProgram): Self = StObject.set(x, "program", value.asInstanceOf[js.Any])
       
       inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      inline def setUniformLocations(value: StringDictionary[WebGLUniformLocation]): Self = StObject.set(x, "uniformLocations", value.asInstanceOf[js.Any])
-      
-      inline def setWebGLProgram(value: WebGLProgram): Self = StObject.set(x, "webGLProgram", value.asInstanceOf[js.Any])
+      inline def setWebGLProgram(value: GPGPUContextProgram): Self = StObject.set(x, "webGLProgram", value.asInstanceOf[js.Any])
     }
   }
   
   trait GPGPUBinaryLocations extends StObject {
     
     var customUniformLocations: js.UndefOr[js.Array[WebGLUniformLocation]] = js.undefined
-    
-    var inShapesLocations: js.UndefOr[StringDictionary[WebGLUniformLocation]] = js.undefined
-    
-    var inTexShapesLocations: js.UndefOr[StringDictionary[WebGLUniformLocation]] = js.undefined
     
     var infLoc: WebGLUniformLocation
     
@@ -158,16 +105,12 @@ object distGpgpuMathMod {
     
     var outTexShapeLocation: js.UndefOr[WebGLUniformLocation] = js.undefined
     
-    var uniformLocations: StringDictionary[WebGLUniformLocation]
+    var variablesLocations: js.UndefOr[js.Array[GPGPUVariableLocations]] = js.undefined
   }
   object GPGPUBinaryLocations {
     
-    inline def apply(
-      infLoc: WebGLUniformLocation,
-      nanLoc: WebGLUniformLocation,
-      uniformLocations: StringDictionary[WebGLUniformLocation]
-    ): GPGPUBinaryLocations = {
-      val __obj = js.Dynamic.literal(infLoc = infLoc.asInstanceOf[js.Any], nanLoc = nanLoc.asInstanceOf[js.Any], uniformLocations = uniformLocations.asInstanceOf[js.Any])
+    inline def apply(infLoc: WebGLUniformLocation, nanLoc: WebGLUniformLocation): GPGPUBinaryLocations = {
+      val __obj = js.Dynamic.literal(infLoc = infLoc.asInstanceOf[js.Any], nanLoc = nanLoc.asInstanceOf[js.Any])
       __obj.asInstanceOf[GPGPUBinaryLocations]
     }
     
@@ -180,14 +123,6 @@ object distGpgpuMathMod {
       
       inline def setCustomUniformLocationsVarargs(value: WebGLUniformLocation*): Self = StObject.set(x, "customUniformLocations", js.Array(value*))
       
-      inline def setInShapesLocations(value: StringDictionary[WebGLUniformLocation]): Self = StObject.set(x, "inShapesLocations", value.asInstanceOf[js.Any])
-      
-      inline def setInShapesLocationsUndefined: Self = StObject.set(x, "inShapesLocations", js.undefined)
-      
-      inline def setInTexShapesLocations(value: StringDictionary[WebGLUniformLocation]): Self = StObject.set(x, "inTexShapesLocations", value.asInstanceOf[js.Any])
-      
-      inline def setInTexShapesLocationsUndefined: Self = StObject.set(x, "inTexShapesLocations", js.undefined)
-      
       inline def setInfLoc(value: WebGLUniformLocation): Self = StObject.set(x, "infLoc", value.asInstanceOf[js.Any])
       
       inline def setNanLoc(value: WebGLUniformLocation): Self = StObject.set(x, "nanLoc", value.asInstanceOf[js.Any])
@@ -204,7 +139,11 @@ object distGpgpuMathMod {
       
       inline def setOutTexShapeLocationUndefined: Self = StObject.set(x, "outTexShapeLocation", js.undefined)
       
-      inline def setUniformLocations(value: StringDictionary[WebGLUniformLocation]): Self = StObject.set(x, "uniformLocations", value.asInstanceOf[js.Any])
+      inline def setVariablesLocations(value: js.Array[GPGPUVariableLocations]): Self = StObject.set(x, "variablesLocations", value.asInstanceOf[js.Any])
+      
+      inline def setVariablesLocationsUndefined: Self = StObject.set(x, "variablesLocations", js.undefined)
+      
+      inline def setVariablesLocationsVarargs(value: GPGPUVariableLocations*): Self = StObject.set(x, "variablesLocations", js.Array(value*))
     }
   }
   
@@ -283,6 +222,44 @@ object distGpgpuMathMod {
       inline def setVariableNames(value: js.Array[String]): Self = StObject.set(x, "variableNames", value.asInstanceOf[js.Any])
       
       inline def setVariableNamesVarargs(value: String*): Self = StObject.set(x, "variableNames", js.Array(value*))
+    }
+  }
+  
+  trait GPGPUVariableLocations extends StObject {
+    
+    var name: String
+    
+    var offset: WebGLUniformLocation
+    
+    var shape: js.UndefOr[WebGLUniformLocation] = js.undefined
+    
+    var texShape: js.UndefOr[WebGLUniformLocation] = js.undefined
+    
+    var uniform: WebGLUniformLocation
+  }
+  object GPGPUVariableLocations {
+    
+    inline def apply(name: String, offset: WebGLUniformLocation, uniform: WebGLUniformLocation): GPGPUVariableLocations = {
+      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], uniform = uniform.asInstanceOf[js.Any])
+      __obj.asInstanceOf[GPGPUVariableLocations]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GPGPUVariableLocations] (val x: Self) extends AnyVal {
+      
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      inline def setOffset(value: WebGLUniformLocation): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      
+      inline def setShape(value: WebGLUniformLocation): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
+      
+      inline def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
+      
+      inline def setTexShape(value: WebGLUniformLocation): Self = StObject.set(x, "texShape", value.asInstanceOf[js.Any])
+      
+      inline def setTexShapeUndefined: Self = StObject.set(x, "texShape", js.undefined)
+      
+      inline def setUniform(value: WebGLUniformLocation): Self = StObject.set(x, "uniform", value.asInstanceOf[js.Any])
     }
   }
   

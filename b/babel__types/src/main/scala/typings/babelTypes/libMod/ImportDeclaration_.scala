@@ -12,6 +12,7 @@ trait ImportDeclaration_
   extends StObject
      with BaseNode
      with Declaration
+     with ImportOrExportDeclaration
      with ModuleDeclaration
      with Node
      with Standardized

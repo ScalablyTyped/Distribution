@@ -293,6 +293,9 @@ trait RecordTimezoneNameTimezon extends StObject {
   @JSName("America/Chihuahua")
   var AmericaSlashChihuahua: Timezone
   
+  @JSName("America/Ciudad_Juarez")
+  var AmericaSlashCiudad_Juarez: Timezone
+  
   @JSName("America/Coral_Harbour")
   var AmericaSlashCoral_Harbour: Timezone
   
@@ -1347,6 +1350,9 @@ trait RecordTimezoneNameTimezon extends StObject {
   @JSName("Europe/Kirov")
   var EuropeSlashKirov: Timezone
   
+  @JSName("Europe/Kyiv")
+  var EuropeSlashKyiv: Timezone
+  
   @JSName("Europe/Lisbon")
   var EuropeSlashLisbon: Timezone
   
@@ -1847,6 +1853,7 @@ object RecordTimezoneNameTimezon {
     AmericaSlashCayman: Timezone,
     AmericaSlashChicago: Timezone,
     AmericaSlashChihuahua: Timezone,
+    AmericaSlashCiudad_Juarez: Timezone,
     AmericaSlashCoral_Harbour: Timezone,
     AmericaSlashCordoba: Timezone,
     AmericaSlashCosta_Rica: Timezone,
@@ -2004,8 +2011,7 @@ object RecordTimezoneNameTimezon {
     AsiaSlashBishkek: Timezone,
     AsiaSlashBrunei: Timezone,
     AsiaSlashCalcutta: Timezone,
-    AsiaSlashChita: Timezone,
-    AsiaSlashChoibalsan: Timezone
+    AsiaSlashChita: Timezone
   ): RecordTimezoneNameTimezon = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("Africa/Abidjan")(AfricaSlashAbidjan.asInstanceOf[js.Any])
@@ -2103,6 +2109,7 @@ object RecordTimezoneNameTimezon {
     __obj.updateDynamic("America/Cayman")(AmericaSlashCayman.asInstanceOf[js.Any])
     __obj.updateDynamic("America/Chicago")(AmericaSlashChicago.asInstanceOf[js.Any])
     __obj.updateDynamic("America/Chihuahua")(AmericaSlashChihuahua.asInstanceOf[js.Any])
+    __obj.updateDynamic("America/Ciudad_Juarez")(AmericaSlashCiudad_Juarez.asInstanceOf[js.Any])
     __obj.updateDynamic("America/Coral_Harbour")(AmericaSlashCoral_Harbour.asInstanceOf[js.Any])
     __obj.updateDynamic("America/Cordoba")(AmericaSlashCordoba.asInstanceOf[js.Any])
     __obj.updateDynamic("America/Costa_Rica")(AmericaSlashCosta_Rica.asInstanceOf[js.Any])
@@ -2261,7 +2268,6 @@ object RecordTimezoneNameTimezon {
     __obj.updateDynamic("Asia/Brunei")(AsiaSlashBrunei.asInstanceOf[js.Any])
     __obj.updateDynamic("Asia/Calcutta")(AsiaSlashCalcutta.asInstanceOf[js.Any])
     __obj.updateDynamic("Asia/Chita")(AsiaSlashChita.asInstanceOf[js.Any])
-    __obj.updateDynamic("Asia/Choibalsan")(AsiaSlashChoibalsan.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecordTimezoneNameTimezon]
   }
   
@@ -2457,6 +2463,8 @@ object RecordTimezoneNameTimezon {
     inline def setAmericaSlashChicago(value: Timezone): Self = StObject.set(x, "America/Chicago", value.asInstanceOf[js.Any])
     
     inline def setAmericaSlashChihuahua(value: Timezone): Self = StObject.set(x, "America/Chihuahua", value.asInstanceOf[js.Any])
+    
+    inline def setAmericaSlashCiudad_Juarez(value: Timezone): Self = StObject.set(x, "America/Ciudad_Juarez", value.asInstanceOf[js.Any])
     
     inline def setAmericaSlashCoral_Harbour(value: Timezone): Self = StObject.set(x, "America/Coral_Harbour", value.asInstanceOf[js.Any])
     
@@ -3165,6 +3173,8 @@ object RecordTimezoneNameTimezon {
     inline def setEuropeSlashKiev(value: Timezone): Self = StObject.set(x, "Europe/Kiev", value.asInstanceOf[js.Any])
     
     inline def setEuropeSlashKirov(value: Timezone): Self = StObject.set(x, "Europe/Kirov", value.asInstanceOf[js.Any])
+    
+    inline def setEuropeSlashKyiv(value: Timezone): Self = StObject.set(x, "Europe/Kyiv", value.asInstanceOf[js.Any])
     
     inline def setEuropeSlashLisbon(value: Timezone): Self = StObject.set(x, "Europe/Lisbon", value.asInstanceOf[js.Any])
     

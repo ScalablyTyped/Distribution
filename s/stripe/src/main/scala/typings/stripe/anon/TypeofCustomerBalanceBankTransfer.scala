@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TypeofCustomerBalanceBankTransfer extends StObject {
   
-  val BankTransfer: Any
+  val BankTransfer: TypeofBankTransfer
 }
 object TypeofCustomerBalanceBankTransfer {
   
-  inline def apply(BankTransfer: Any): TypeofCustomerBalanceBankTransfer = {
+  inline def apply(BankTransfer: TypeofBankTransfer): TypeofCustomerBalanceBankTransfer = {
     val __obj = js.Dynamic.literal(BankTransfer = BankTransfer.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofCustomerBalanceBankTransfer]
   }
@@ -18,6 +18,6 @@ object TypeofCustomerBalanceBankTransfer {
   @scala.inline
   implicit open class MutableBuilder[Self <: TypeofCustomerBalanceBankTransfer] (val x: Self) extends AnyVal {
     
-    inline def setBankTransfer(value: Any): Self = StObject.set(x, "BankTransfer", value.asInstanceOf[js.Any])
+    inline def setBankTransfer(value: TypeofBankTransfer): Self = StObject.set(x, "BankTransfer", value.asInstanceOf[js.Any])
   }
 }

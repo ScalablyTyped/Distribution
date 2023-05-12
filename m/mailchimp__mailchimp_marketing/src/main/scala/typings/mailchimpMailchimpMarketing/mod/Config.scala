@@ -6,10 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Config extends StObject {
   
+  /**
+    * Access token for authentication.
+    */
   var accessToken: js.UndefOr[String] = js.undefined
   
+  /**
+    * API key for your Mailchimp marketing account.
+    */
   var apiKey: js.UndefOr[String] = js.undefined
   
+  /**
+    * Mailchimp server to route to. For example, `'us10'`.
+    */
   var server: js.UndefOr[String] = js.undefined
 }
 object Config {

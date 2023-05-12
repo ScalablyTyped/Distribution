@@ -11,7 +11,7 @@ trait Ls extends StObject {
   
   def add(
     name: String,
-    options: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_index.Credentials */ Any) & AbortOptions & HTTPClientExtraOptions
+    credentials: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_index.Credentials */ Any) & AbortOptions & HTTPClientExtraOptions
   ): js.Promise[Unit] = js.native
   
   def ls(): js.Promise[

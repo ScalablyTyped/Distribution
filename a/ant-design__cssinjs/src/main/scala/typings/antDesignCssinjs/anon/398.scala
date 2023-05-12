@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.ForcedColorAdjust
+import typings.csstype.mod.Property.WebkitTouchCallout
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,11 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `398` extends StObject {
   
   var value: js.UndefOr[
-    ForcedColorAdjust | (js.Array[
+    WebkitTouchCallout | (js.Array[
       (Extract[
-        js.UndefOr[ForcedColorAdjust | js.Array[NonNullable[js.UndefOr[ForcedColorAdjust]]]], 
+        js.UndefOr[WebkitTouchCallout | js.Array[NonNullable[js.UndefOr[WebkitTouchCallout]]]], 
         String
-      ]) | NonNullable[js.UndefOr[ForcedColorAdjust]]
+      ]) | NonNullable[js.UndefOr[WebkitTouchCallout]]
     ])
   ] = js.native
 }

@@ -27,6 +27,11 @@ trait FieldInputConfig extends StObject {
   var descriptiveText: js.UndefOr[String] = js.undefined
   
   /**
+    * The configuration for the file uploader field.
+    */
+  var fileUploaderConfig: js.UndefOr[FileUploaderFieldConfig] = js.undefined
+  
+  /**
     * Specifies whether to render the field as an array. This property is ignored if the dataSourceType for the form is a Data Store.
     */
   var isArray: js.UndefOr[Boolean] = js.undefined
@@ -107,6 +112,10 @@ object FieldInputConfig {
     inline def setDescriptiveText(value: String): Self = StObject.set(x, "descriptiveText", value.asInstanceOf[js.Any])
     
     inline def setDescriptiveTextUndefined: Self = StObject.set(x, "descriptiveText", js.undefined)
+    
+    inline def setFileUploaderConfig(value: FileUploaderFieldConfig): Self = StObject.set(x, "fileUploaderConfig", value.asInstanceOf[js.Any])
+    
+    inline def setFileUploaderConfigUndefined: Self = StObject.set(x, "fileUploaderConfig", js.undefined)
     
     inline def setIsArray(value: Boolean): Self = StObject.set(x, "isArray", value.asInstanceOf[js.Any])
     

@@ -1,6 +1,6 @@
 package typings.libp2pWebrtcStar
 
-import typings.libp2pInterfacePeerDiscovery.mod.PeerDiscovery
+import typings.libp2pInterfacePeerDiscovery.mod.PeerDiscovery_
 import typings.libp2pInterfaceTransport.mod.Transport
 import typings.libp2pWebrtcStar.distSrcTransportMod.WebRTCStarComponents
 import typings.libp2pWebrtcStar.distSrcTransportMod.WebRTCStarInit
@@ -20,8 +20,8 @@ object mod {
   @js.native
   trait WebRTCStarTuple extends StObject {
     
-    def discovery(): PeerDiscovery = js.native
-    def discovery(components: WebRTCStarComponents): PeerDiscovery = js.native
+    def discovery(): PeerDiscovery_ = js.native
+    def discovery(components: WebRTCStarComponents): PeerDiscovery_ = js.native
     
     def transport(components: WebRTCStarComponents): Transport = js.native
   }

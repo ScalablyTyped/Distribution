@@ -19,6 +19,10 @@ object googlemapsJsApiLoaderStrings {
   inline def localContext: localContext = "localContext".asInstanceOf[localContext]
   
   @js.native
+  sealed trait marker extends StObject
+  inline def marker: marker = "marker".asInstanceOf[marker]
+  
+  @js.native
   sealed trait origin extends StObject
   inline def origin: origin = "origin".asInstanceOf[origin]
   

@@ -1,6 +1,8 @@
 package typings.playcanvas.mod
 
 import org.scalablytyped.runtime.Instantiable1
+import org.scalablytyped.runtime.StringDictionary
+import typings.playcanvas.anon.Antialias
 import typings.playcanvas.anon.App
 import typings.playcanvas.anon.Authority
 import typings.playcanvas.anon.BaseRadius
@@ -12,7 +14,7 @@ import typings.playcanvas.anon.Distribution
 import typings.playcanvas.anon.EagerWorkers
 import typings.playcanvas.anon.HalfExtents
 import typings.playcanvas.anon.Height
-import typings.playcanvas.anon.IsGGGR
+import typings.playcanvas.anon.JsUrl
 import typings.playcanvas.anon.LatitudeBands
 import typings.playcanvas.anon.RingRadius
 import typings.playcanvas.anon.TypeofScriptType
@@ -37,6 +39,7 @@ import typings.playcanvas.playcanvasInts.`20`
 import typings.playcanvas.playcanvasInts.`21`
 import typings.playcanvas.playcanvasInts.`22`
 import typings.playcanvas.playcanvasInts.`23`
+import typings.playcanvas.playcanvasInts.`24`
 import typings.playcanvas.playcanvasInts.`256`
 import typings.playcanvas.playcanvasInts.`2`
 import typings.playcanvas.playcanvasInts.`32`
@@ -60,17 +63,16 @@ import typings.playcanvas.playcanvasStrings.`1Dot55`
 import typings.playcanvas.playcanvasStrings.`1Dot56`
 import typings.playcanvas.playcanvasStrings.`1Dot57`
 import typings.playcanvas.playcanvasStrings.`1Dot58`
+import typings.playcanvas.playcanvasStrings.`1Dot60`
+import typings.playcanvas.playcanvasStrings.`1Dot62`
 import typings.playcanvas.playcanvasStrings.`1d`
 import typings.playcanvas.playcanvasStrings.`2d-array`
 import typings.playcanvas.playcanvasStrings.`2d`
 import typings.playcanvas.playcanvasStrings.`3d`
 import typings.playcanvas.playcanvasStrings.`cube-array`
-import typings.playcanvas.playcanvasStrings.`unfilterable-float`
 import typings.playcanvas.playcanvasStrings.bitmap
 import typings.playcanvas.playcanvasStrings.cube
 import typings.playcanvas.playcanvasStrings.default
-import typings.playcanvas.playcanvasStrings.depth
-import typings.playcanvas.playcanvasStrings.float
 import typings.playcanvas.playcanvasStrings.gamepad
 import typings.playcanvas.playcanvasStrings.key
 import typings.playcanvas.playcanvasStrings.keyboard
@@ -83,13 +85,13 @@ import typings.playcanvas.playcanvasStrings.padly
 import typings.playcanvas.playcanvasStrings.padrx
 import typings.playcanvas.playcanvasStrings.padry
 import typings.playcanvas.playcanvasStrings.screen
-import typings.playcanvas.playcanvasStrings.webgl
-import typings.playcanvas.playcanvasStrings.webgpu
-import typings.std.Element
 import typings.std.Float32ArrayConstructor
+import typings.std.HTMLCanvasElement
+import typings.std.HTMLStyleElement
 import typings.std.Int16ArrayConstructor
 import typings.std.Int32ArrayConstructor
 import typings.std.Int8ArrayConstructor
+import typings.std.Set
 import typings.std.Uint16ArrayConstructor
 import typings.std.Uint32ArrayConstructor
 import typings.std.Uint8ArrayConstructor
@@ -404,6 +406,13 @@ inline def ASSET_TEXT: String = ^.asInstanceOf[js.Dynamic].selectDynamic("ASSET_
   */
 inline def ASSET_TEXTURE: String = ^.asInstanceOf[js.Dynamic].selectDynamic("ASSET_TEXTURE").asInstanceOf[String]
 
+/**
+  * Asset type name for textureatlas.
+  *
+  * @type {string}
+  */
+inline def ASSET_TEXTUREATLAS: String = ^.asInstanceOf[js.Dynamic].selectDynamic("ASSET_TEXTUREATLAS").asInstanceOf[String]
+
 inline def AXIS_KEY: key = ^.asInstanceOf[js.Dynamic].selectDynamic("AXIS_KEY").asInstanceOf[key]
 
 inline def AXIS_MOUSE_X: mousex = ^.asInstanceOf[js.Dynamic].selectDynamic("AXIS_MOUSE_X").asInstanceOf[mousex]
@@ -432,9 +441,9 @@ inline def BAKE_COLOR: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("BAKE_C
   */
 inline def BAKE_COLORDIR: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("BAKE_COLORDIR").asInstanceOf[Double]
 
-inline def BINDGROUP_MESH: `1` = ^.asInstanceOf[js.Dynamic].selectDynamic("BINDGROUP_MESH").asInstanceOf[`1`]
+inline def BINDGROUP_MESH: `0` = ^.asInstanceOf[js.Dynamic].selectDynamic("BINDGROUP_MESH").asInstanceOf[`0`]
 
-inline def BINDGROUP_VIEW: `0` = ^.asInstanceOf[js.Dynamic].selectDynamic("BINDGROUP_VIEW").asInstanceOf[`0`]
+inline def BINDGROUP_VIEW: `1` = ^.asInstanceOf[js.Dynamic].selectDynamic("BINDGROUP_VIEW").asInstanceOf[`1`]
 
 /**
   * Add the results of the source and destination fragment multiplies.
@@ -472,17 +481,14 @@ inline def BLENDEQUATION_REVERSE_SUBTRACT: Double = ^.asInstanceOf[js.Dynamic].s
 inline def BLENDEQUATION_SUBTRACT: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("BLENDEQUATION_SUBTRACT").asInstanceOf[Double]
 
 /**
-  * Multiplies all colors by a constant alpha value.
+  * Multiplies all fragment components by a constant.
   *
   * @type {number}
   */
+inline def BLENDMODE_CONSTANT: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("BLENDMODE_CONSTANT").asInstanceOf[Double]
+
 inline def BLENDMODE_CONSTANT_ALPHA: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("BLENDMODE_CONSTANT_ALPHA").asInstanceOf[Double]
 
-/**
-  * Multiplies all colors by a constant color.
-  *
-  * @type {number}
-  */
 inline def BLENDMODE_CONSTANT_COLOR: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("BLENDMODE_CONSTANT_COLOR").asInstanceOf[Double]
 
 /**
@@ -507,17 +513,14 @@ inline def BLENDMODE_DST_COLOR: Double = ^.asInstanceOf[js.Dynamic].selectDynami
 inline def BLENDMODE_ONE: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("BLENDMODE_ONE").asInstanceOf[Double]
 
 /**
-  * Multiplies all colors by 1 minus a constant alpha value.
+  * Multiplies all fragment components by 1 minus a constant.
   *
   * @type {number}
   */
+inline def BLENDMODE_ONE_MINUS_CONSTANT: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("BLENDMODE_ONE_MINUS_CONSTANT").asInstanceOf[Double]
+
 inline def BLENDMODE_ONE_MINUS_CONSTANT_ALPHA: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("BLENDMODE_ONE_MINUS_CONSTANT_ALPHA").asInstanceOf[Double]
 
-/**
-  * Multiplies all colors by 1 minus a constant color.
-  *
-  * @type {number}
-  */
 inline def BLENDMODE_ONE_MINUS_CONSTANT_COLOR: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("BLENDMODE_ONE_MINUS_CONSTANT_COLOR").asInstanceOf[Double]
 
 /**
@@ -813,6 +816,10 @@ inline def CHUNKAPI_1_57: `1Dot57` = ^.asInstanceOf[js.Dynamic].selectDynamic("C
 
 inline def CHUNKAPI_1_58: `1Dot58` = ^.asInstanceOf[js.Dynamic].selectDynamic("CHUNKAPI_1_58").asInstanceOf[`1Dot58`]
 
+inline def CHUNKAPI_1_60: `1Dot60` = ^.asInstanceOf[js.Dynamic].selectDynamic("CHUNKAPI_1_60").asInstanceOf[`1Dot60`]
+
+inline def CHUNKAPI_1_62: `1Dot62` = ^.asInstanceOf[js.Dynamic].selectDynamic("CHUNKAPI_1_62").asInstanceOf[`1Dot62`]
+
 /**
   * Clear the color buffer.
   *
@@ -917,6 +924,7 @@ inline def CULLFACE_FRONT: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("CU
   * that point or line primitives are unaffected by this render state.
   *
   * @type {number}
+  * @ignore
   */
 inline def CULLFACE_FRONTANDBACK: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("CULLFACE_FRONTANDBACK").asInstanceOf[Double]
 
@@ -1017,9 +1025,26 @@ inline def DETAILMODE_OVERLAY: String = ^.asInstanceOf[js.Dynamic].selectDynamic
   */
 inline def DETAILMODE_SCREEN: screen = ^.asInstanceOf[js.Dynamic].selectDynamic("DETAILMODE_SCREEN").asInstanceOf[screen]
 
-inline def DEVICETYPE_WEBGL: webgl = ^.asInstanceOf[js.Dynamic].selectDynamic("DEVICETYPE_WEBGL").asInstanceOf[webgl]
+/**
+  * A WebGL 1 device type.
+  *
+  * @type {string}
+  */
+inline def DEVICETYPE_WEBGL1: String = ^.asInstanceOf[js.Dynamic].selectDynamic("DEVICETYPE_WEBGL1").asInstanceOf[String]
 
-inline def DEVICETYPE_WEBGPU: webgpu = ^.asInstanceOf[js.Dynamic].selectDynamic("DEVICETYPE_WEBGPU").asInstanceOf[webgpu]
+/**
+  * A WebGL 2 device type.
+  *
+  * @type {string}
+  */
+inline def DEVICETYPE_WEBGL2: String = ^.asInstanceOf[js.Dynamic].selectDynamic("DEVICETYPE_WEBGL2").asInstanceOf[String]
+
+/**
+  * A WebGPU device type.
+  *
+  * @type {string}
+  */
+inline def DEVICETYPE_WEBGPU: String = ^.asInstanceOf[js.Dynamic].selectDynamic("DEVICETYPE_WEBGPU").asInstanceOf[String]
 
 /**
   * Exponential distance model.
@@ -1091,6 +1116,20 @@ inline def EMITTERSHAPE_BOX: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("
   * @type {number}
   */
 inline def EMITTERSHAPE_SPHERE: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("EMITTERSHAPE_SPHERE").asInstanceOf[Double]
+
+/**
+  * Name of event fired when a gamepad connects.
+  *
+  * @type {string}
+  */
+inline def EVENT_GAMEPADCONNECTED: String = ^.asInstanceOf[js.Dynamic].selectDynamic("EVENT_GAMEPADCONNECTED").asInstanceOf[String]
+
+/**
+  * Name of event fired when a gamepad disconnects.
+  *
+  * @type {string}
+  */
+inline def EVENT_GAMEPADDISCONNECTED: String = ^.asInstanceOf[js.Dynamic].selectDynamic("EVENT_GAMEPADDISCONNECTED").asInstanceOf[String]
 
 /**
   * Name of event fired when a key is pressed.
@@ -1456,7 +1495,6 @@ inline def INDEXFORMAT_UINT8: Double = ^.asInstanceOf[js.Dynamic].selectDynamic(
   * A cubic spline interpolation scheme.
   *
   * @type {number}
-  * @ignore
   */
 inline def INTERPOLATION_CUBIC: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("INTERPOLATION_CUBIC").asInstanceOf[Double]
 
@@ -1464,7 +1502,6 @@ inline def INTERPOLATION_CUBIC: Double = ^.asInstanceOf[js.Dynamic].selectDynami
   * A linear interpolation scheme.
   *
   * @type {number}
-  * @ignore
   */
 inline def INTERPOLATION_LINEAR: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("INTERPOLATION_LINEAR").asInstanceOf[Double]
 
@@ -1472,7 +1509,6 @@ inline def INTERPOLATION_LINEAR: Double = ^.asInstanceOf[js.Dynamic].selectDynam
   * A stepped interpolation scheme.
   *
   * @type {number}
-  * @ignore
   */
 inline def INTERPOLATION_STEP: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("INTERPOLATION_STEP").asInstanceOf[Double]
 
@@ -2420,6 +2456,14 @@ inline def PIXELFORMAT_ATC_RGB: Double = ^.asInstanceOf[js.Dynamic].selectDynami
 inline def PIXELFORMAT_ATC_RGBA: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("PIXELFORMAT_ATC_RGBA").asInstanceOf[Double]
 
 /**
+  * 32-bit BGRA (8-bits for blue channel, 8 for green, 8 for red with 8-bit alpha).
+  *
+  * @type {number}
+  * @ignore
+  */
+inline def PIXELFORMAT_BGRA8: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("PIXELFORMAT_BGRA8").asInstanceOf[Double]
+
+/**
   * A readable depth buffer format.
   *
   * @type {number}
@@ -2487,12 +2531,14 @@ inline def PIXELFORMAT_ETC2_RGBA: Double = ^.asInstanceOf[js.Dynamic].selectDyna
   */
 inline def PIXELFORMAT_L8: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("PIXELFORMAT_L8").asInstanceOf[Double]
 
+inline def PIXELFORMAT_L8_A8: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("PIXELFORMAT_L8_A8").asInstanceOf[Double]
+
 /**
   * 8-bit luminance with 8-bit alpha.
   *
   * @type {number}
   */
-inline def PIXELFORMAT_L8_A8: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("PIXELFORMAT_L8_A8").asInstanceOf[Double]
+inline def PIXELFORMAT_LA8: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("PIXELFORMAT_LA8").asInstanceOf[Double]
 
 /**
   * PVRTC (2BPP RGBA) compressed format.
@@ -2529,39 +2575,14 @@ inline def PIXELFORMAT_PVRTC_4BPP_RGB_1: Double = ^.asInstanceOf[js.Dynamic].sel
   */
 inline def PIXELFORMAT_R32F: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("PIXELFORMAT_R32F").asInstanceOf[Double]
 
-/**
-  * 16-bit RGBA (4-bits for red channel, 4 for green, 4 for blue with 4-bit alpha).
-  *
-  * @type {number}
-  */
 inline def PIXELFORMAT_R4_G4_B4_A4: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("PIXELFORMAT_R4_G4_B4_A4").asInstanceOf[Double]
 
-/**
-  * 16-bit RGBA (5-bits for red channel, 5 for green, 5 for blue with 1-bit alpha).
-  *
-  * @type {number}
-  */
 inline def PIXELFORMAT_R5_G5_B5_A1: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("PIXELFORMAT_R5_G5_B5_A1").asInstanceOf[Double]
 
-/**
-  * 16-bit RGB (5-bits for red channel, 6 for green and 5 for blue).
-  *
-  * @type {number}
-  */
 inline def PIXELFORMAT_R5_G6_B5: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("PIXELFORMAT_R5_G6_B5").asInstanceOf[Double]
 
-/**
-  * 24-bit RGB (8-bits for red channel, 8 for green and 8 for blue).
-  *
-  * @type {number}
-  */
 inline def PIXELFORMAT_R8_G8_B8: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("PIXELFORMAT_R8_G8_B8").asInstanceOf[Double]
 
-/**
-  * 32-bit RGBA (8-bits for red channel, 8 for green, 8 for blue with 8-bit alpha).
-  *
-  * @type {number}
-  */
 inline def PIXELFORMAT_R8_G8_B8_A8: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("PIXELFORMAT_R8_G8_B8_A8").asInstanceOf[Double]
 
 /**
@@ -2579,6 +2600,20 @@ inline def PIXELFORMAT_RGB16F: Double = ^.asInstanceOf[js.Dynamic].selectDynamic
 inline def PIXELFORMAT_RGB32F: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("PIXELFORMAT_RGB32F").asInstanceOf[Double]
 
 /**
+  * 16-bit RGB (5-bits for red channel, 6 for green and 5 for blue).
+  *
+  * @type {number}
+  */
+inline def PIXELFORMAT_RGB565: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("PIXELFORMAT_RGB565").asInstanceOf[Double]
+
+/**
+  * 24-bit RGB (8-bits for red channel, 8 for green and 8 for blue).
+  *
+  * @type {number}
+  */
+inline def PIXELFORMAT_RGB8: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("PIXELFORMAT_RGB8").asInstanceOf[Double]
+
+/**
   * 16-bit floating point RGBA (16-bit float for each red, green, blue and alpha channels).
   *
   * @type {number}
@@ -2591,6 +2626,27 @@ inline def PIXELFORMAT_RGBA16F: Double = ^.asInstanceOf[js.Dynamic].selectDynami
   * @type {number}
   */
 inline def PIXELFORMAT_RGBA32F: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("PIXELFORMAT_RGBA32F").asInstanceOf[Double]
+
+/**
+  * 16-bit RGBA (4-bits for red channel, 4 for green, 4 for blue with 4-bit alpha).
+  *
+  * @type {number}
+  */
+inline def PIXELFORMAT_RGBA4: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("PIXELFORMAT_RGBA4").asInstanceOf[Double]
+
+/**
+  * 16-bit RGBA (5-bits for red channel, 5 for green, 5 for blue with 1-bit alpha).
+  *
+  * @type {number}
+  */
+inline def PIXELFORMAT_RGBA5551: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("PIXELFORMAT_RGBA5551").asInstanceOf[Double]
+
+/**
+  * 32-bit RGBA (8-bits for red channel, 8 for green, 8 for blue with 8-bit alpha).
+  *
+  * @type {number}
+  */
+inline def PIXELFORMAT_RGBA8: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("PIXELFORMAT_RGBA8").asInstanceOf[Double]
 
 /**
   * Color-only sRGB format (WebGL2 only).
@@ -2729,11 +2785,11 @@ inline def RIGIDBODY_TYPE_STATIC: String = ^.asInstanceOf[js.Dynamic].selectDyna
 
 inline def RIGIDBODY_WANTS_DEACTIVATION: `3` = ^.asInstanceOf[js.Dynamic].selectDynamic("RIGIDBODY_WANTS_DEACTIVATION").asInstanceOf[`3`]
 
-inline def SAMPLETYPE_DEPTH: depth = ^.asInstanceOf[js.Dynamic].selectDynamic("SAMPLETYPE_DEPTH").asInstanceOf[depth]
+inline def SAMPLETYPE_DEPTH: `2` = ^.asInstanceOf[js.Dynamic].selectDynamic("SAMPLETYPE_DEPTH").asInstanceOf[`2`]
 
-inline def SAMPLETYPE_FLOAT: float = ^.asInstanceOf[js.Dynamic].selectDynamic("SAMPLETYPE_FLOAT").asInstanceOf[float]
+inline def SAMPLETYPE_FLOAT: `0` = ^.asInstanceOf[js.Dynamic].selectDynamic("SAMPLETYPE_FLOAT").asInstanceOf[`0`]
 
-inline def SAMPLETYPE_UNFILTERABLE_FLOAT: `unfilterable-float` = ^.asInstanceOf[js.Dynamic].selectDynamic("SAMPLETYPE_UNFILTERABLE_FLOAT").asInstanceOf[`unfilterable-float`]
+inline def SAMPLETYPE_UNFILTERABLE_FLOAT: `1` = ^.asInstanceOf[js.Dynamic].selectDynamic("SAMPLETYPE_UNFILTERABLE_FLOAT").asInstanceOf[`1`]
 
 /**
   * Scale the {@link ScreenComponent} when the application's resolution is different than the
@@ -3027,6 +3083,97 @@ inline def SHADERDEF_UV1: `8` = ^.asInstanceOf[js.Dynamic].selectDynamic("SHADER
 
 inline def SHADERDEF_VCOLOR: `16` = ^.asInstanceOf[js.Dynamic].selectDynamic("SHADERDEF_VCOLOR").asInstanceOf[`16`]
 
+/**
+  * Shader source code uses GLSL language.
+  *
+  * @type {string}
+  */
+inline def SHADERLANGUAGE_GLSL: String = ^.asInstanceOf[js.Dynamic].selectDynamic("SHADERLANGUAGE_GLSL").asInstanceOf[String]
+
+/**
+  * Shader source code uses WGSL language.
+  *
+  * @type {string}
+  */
+inline def SHADERLANGUAGE_WGSL: String = ^.asInstanceOf[js.Dynamic].selectDynamic("SHADERLANGUAGE_WGSL").asInstanceOf[String]
+
+/**
+  * Shader used for debug rendering of albedo.
+  *
+  * @type {string}
+  */
+inline def SHADERPASS_ALBEDO: String = ^.asInstanceOf[js.Dynamic].selectDynamic("SHADERPASS_ALBEDO").asInstanceOf[String]
+
+/**
+  * Shader used for debug rendering of ao.
+  *
+  * @type {string}
+  */
+inline def SHADERPASS_AO: String = ^.asInstanceOf[js.Dynamic].selectDynamic("SHADERPASS_AO").asInstanceOf[String]
+
+/**
+  * Shader used for debug rendering of emission.
+  *
+  * @type {string}
+  */
+inline def SHADERPASS_EMISSION: String = ^.asInstanceOf[js.Dynamic].selectDynamic("SHADERPASS_EMISSION").asInstanceOf[String]
+
+/**
+  * Shader that performs forward rendering.
+  *
+  * @type {string}
+  */
+inline def SHADERPASS_FORWARD: String = ^.asInstanceOf[js.Dynamic].selectDynamic("SHADERPASS_FORWARD").asInstanceOf[String]
+
+/**
+  * Shader used for debug rendering of gloss.
+  *
+  * @type {string}
+  */
+inline def SHADERPASS_GLOSS: String = ^.asInstanceOf[js.Dynamic].selectDynamic("SHADERPASS_GLOSS").asInstanceOf[String]
+
+/**
+  * Shader used for debug rendering of lighting.
+  *
+  * @type {string}
+  */
+inline def SHADERPASS_LIGHTING: String = ^.asInstanceOf[js.Dynamic].selectDynamic("SHADERPASS_LIGHTING").asInstanceOf[String]
+
+/**
+  * Shader used for debug rendering of metalness.
+  *
+  * @type {string}
+  */
+inline def SHADERPASS_METALNESS: String = ^.asInstanceOf[js.Dynamic].selectDynamic("SHADERPASS_METALNESS").asInstanceOf[String]
+
+/**
+  * Shader used for debug rendering of opacity.
+  *
+  * @type {string}
+  */
+inline def SHADERPASS_OPACITY: String = ^.asInstanceOf[js.Dynamic].selectDynamic("SHADERPASS_OPACITY").asInstanceOf[String]
+
+/**
+  * Shader used for debug rendering of specularity.
+  *
+  * @type {string}
+  */
+inline def SHADERPASS_SPECULARITY: String = ^.asInstanceOf[js.Dynamic].selectDynamic("SHADERPASS_SPECULARITY").asInstanceOf[String]
+
+/**
+  * Shader used for debug rendering of UV0 texture coordinates.
+  *
+  * @type {string}
+  */
+inline def SHADERPASS_UV0: String = ^.asInstanceOf[js.Dynamic].selectDynamic("SHADERPASS_UV0").asInstanceOf[String]
+
+/**
+  * Shader used for debug rendering of world normal.
+  *
+  * @type {string}
+  */
+inline def SHADERPASS_WORLDNORMAL: String = ^.asInstanceOf[js.Dynamic].selectDynamic("SHADERPASS_WORLDNORMAL").asInstanceOf[String]
+
 inline def SHADERSTAGE_COMPUTE: `4` = ^.asInstanceOf[js.Dynamic].selectDynamic("SHADERSTAGE_COMPUTE").asInstanceOf[`4`]
 
 inline def SHADERSTAGE_FRAGMENT: `2` = ^.asInstanceOf[js.Dynamic].selectDynamic("SHADERSTAGE_FRAGMENT").asInstanceOf[`2`]
@@ -3034,34 +3181,6 @@ inline def SHADERSTAGE_FRAGMENT: `2` = ^.asInstanceOf[js.Dynamic].selectDynamic(
 inline def SHADERSTAGE_VERTEX: `1` = ^.asInstanceOf[js.Dynamic].selectDynamic("SHADERSTAGE_VERTEX").asInstanceOf[`1`]
 
 inline def SHADERTAG_MATERIAL: `1` = ^.asInstanceOf[js.Dynamic].selectDynamic("SHADERTAG_MATERIAL").asInstanceOf[`1`]
-
-/**
-  * Shader that performs depth rendering.
-  *
-  * @type {string}
-  */
-inline def SHADERTYPE_DEPTH: String = ^.asInstanceOf[js.Dynamic].selectDynamic("SHADERTYPE_DEPTH").asInstanceOf[String]
-
-/**
-  * Shader that performs forward rendering.
-  *
-  * @type {string}
-  */
-inline def SHADERTYPE_FORWARD: String = ^.asInstanceOf[js.Dynamic].selectDynamic("SHADERTYPE_FORWARD").asInstanceOf[String]
-
-/**
-  * Shader used for picking.
-  *
-  * @type {string}
-  */
-inline def SHADERTYPE_PICK: String = ^.asInstanceOf[js.Dynamic].selectDynamic("SHADERTYPE_PICK").asInstanceOf[String]
-
-/**
-  * Shader used for rendering shadow textures.
-  *
-  * @type {string}
-  */
-inline def SHADERTYPE_SHADOW: String = ^.asInstanceOf[js.Dynamic].selectDynamic("SHADERTYPE_SHADOW").asInstanceOf[String]
 
 /**
   * Render RGBA-encoded depth value.
@@ -3327,7 +3446,7 @@ inline def STENCILOP_INVERT: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("
 inline def STENCILOP_KEEP: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("STENCILOP_KEEP").asInstanceOf[Double]
 
 /**
-  * Replace value with the reference value (see {@link GraphicsDevice#setStencilFunc}).
+  * Replace value with the reference value (see {@link StencilParameters}).
   *
   * @type {number}
   */
@@ -3475,6 +3594,34 @@ inline def TONEMAP_HEJL: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("TONE
 inline def TONEMAP_LINEAR: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("TONEMAP_LINEAR").asInstanceOf[Double]
 
 /**
+  * Logs the creation of bind group formats.
+  *
+  * @type {string}
+  */
+inline def TRACEID_BINDGROUPFORMAT_ALLOC: String = ^.asInstanceOf[js.Dynamic].selectDynamic("TRACEID_BINDGROUPFORMAT_ALLOC").asInstanceOf[String]
+
+/**
+  * Logs the creation of bind groups.
+  *
+  * @type {string}
+  */
+inline def TRACEID_BINDGROUP_ALLOC: String = ^.asInstanceOf[js.Dynamic].selectDynamic("TRACEID_BINDGROUP_ALLOC").asInstanceOf[String]
+
+/**
+  * Logs the creation of pipeline layouts. WebBPU only.
+  *
+  * @type {string}
+  */
+inline def TRACEID_PIPELINELAYOUT_ALLOC: String = ^.asInstanceOf[js.Dynamic].selectDynamic("TRACEID_PIPELINELAYOUT_ALLOC").asInstanceOf[String]
+
+/**
+  * Logs the creation of render pipelines. WebBPU only.
+  *
+  * @type {string}
+  */
+inline def TRACEID_RENDERPIPELINE_ALLOC: String = ^.asInstanceOf[js.Dynamic].selectDynamic("TRACEID_RENDERPIPELINE_ALLOC").asInstanceOf[String]
+
+/**
   * Logs render actions created by the layer composition. Only executes when the
   * layer composition changes.
   *
@@ -3483,6 +3630,13 @@ inline def TONEMAP_LINEAR: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("TO
 inline def TRACEID_RENDER_ACTION: String = ^.asInstanceOf[js.Dynamic].selectDynamic("TRACEID_RENDER_ACTION").asInstanceOf[String]
 
 inline def TRACEID_RENDER_FRAME: String = ^.asInstanceOf[js.Dynamic].selectDynamic("TRACEID_RENDER_FRAME").asInstanceOf[String]
+
+/**
+  * Logs a frame time.
+  *
+  * @type {string}
+  */
+inline def TRACEID_RENDER_FRAME_TIME: String = ^.asInstanceOf[js.Dynamic].selectDynamic("TRACEID_RENDER_FRAME_TIME").asInstanceOf[String]
 
 /**
   * Logs basic information about generated render passes.
@@ -3546,6 +3700,13 @@ inline def TRACEID_VRAM_TEXTURE: String = ^.asInstanceOf[js.Dynamic].selectDynam
   * @type {string}
   */
 inline def TRACEID_VRAM_VB: String = ^.asInstanceOf[js.Dynamic].selectDynamic("TRACEID_VRAM_VB").asInstanceOf[String]
+
+/**
+  * Logs the internal debug information for Elements.
+  *
+  * @type {string}
+  */
+inline def TRACE_ID_ELEMENT: String = ^.asInstanceOf[js.Dynamic].selectDynamic("TRACE_ID_ELEMENT").asInstanceOf[String]
 
 /**
   * Floating point vertex element type.
@@ -3621,6 +3782,8 @@ inline def UNIFORMTYPE_MAT2: `12` = ^.asInstanceOf[js.Dynamic].selectDynamic("UN
 inline def UNIFORMTYPE_MAT3: `13` = ^.asInstanceOf[js.Dynamic].selectDynamic("UNIFORMTYPE_MAT3").asInstanceOf[`13`]
 
 inline def UNIFORMTYPE_MAT4: `14` = ^.asInstanceOf[js.Dynamic].selectDynamic("UNIFORMTYPE_MAT4").asInstanceOf[`14`]
+
+inline def UNIFORMTYPE_MAT4ARRAY: `24` = ^.asInstanceOf[js.Dynamic].selectDynamic("UNIFORMTYPE_MAT4ARRAY").asInstanceOf[`24`]
 
 inline def UNIFORMTYPE_TEXTURE2D: `15` = ^.asInstanceOf[js.Dynamic].selectDynamic("UNIFORMTYPE_TEXTURE2D").asInstanceOf[`15`]
 
@@ -3717,6 +3880,76 @@ inline def XRHAND_NONE: String = ^.asInstanceOf[js.Dynamic].selectDynamic("XRHAN
   * @type {string}
   */
 inline def XRHAND_RIGHT: String = ^.asInstanceOf[js.Dynamic].selectDynamic("XRHAND_RIGHT").asInstanceOf[String]
+
+/**
+  * The A button from XR pad.
+  *
+  * @type {number}
+  */
+inline def XRPAD_A: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("XRPAD_A").asInstanceOf[Double]
+
+/**
+  * The B button from XR pad.
+  *
+  * @type {number}
+  */
+inline def XRPAD_B: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("XRPAD_B").asInstanceOf[Double]
+
+/**
+  * The squeeze button from XR pad.
+  *
+  * @type {number}
+  */
+inline def XRPAD_SQUEEZE: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("XRPAD_SQUEEZE").asInstanceOf[Double]
+
+/**
+  * The button when pressing the XR pad's stick.
+  *
+  * @type {number}
+  */
+inline def XRPAD_STICK_BUTTON: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("XRPAD_STICK_BUTTON").asInstanceOf[Double]
+
+/**
+  * Horizontal axis on the stick of a XR pad.
+  *
+  * @type {number}
+  */
+inline def XRPAD_STICK_X: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("XRPAD_STICK_X").asInstanceOf[Double]
+
+/**
+  * Vertical axis on the stick of a XR pad.
+  *
+  * @type {number}
+  */
+inline def XRPAD_STICK_Y: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("XRPAD_STICK_Y").asInstanceOf[Double]
+
+/**
+  * The button when pressing the XR pad's touchpad.
+  *
+  * @type {number}
+  */
+inline def XRPAD_TOUCHPAD_BUTTON: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("XRPAD_TOUCHPAD_BUTTON").asInstanceOf[Double]
+
+/**
+  * Horizontal axis on the touchpad of a XR pad.
+  *
+  * @type {number}
+  */
+inline def XRPAD_TOUCHPAD_X: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("XRPAD_TOUCHPAD_X").asInstanceOf[Double]
+
+/**
+  * Vertical axis on the thouchpad of a XR pad.
+  *
+  * @type {number}
+  */
+inline def XRPAD_TOUCHPAD_Y: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("XRPAD_TOUCHPAD_Y").asInstanceOf[Double]
+
+/**
+  * The trigger button from XR pad.
+  *
+  * @type {number}
+  */
+inline def XRPAD_TRIGGER: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("XRPAD_TRIGGER").asInstanceOf[Double]
 
 /**
   * Bounded Floor - represents a tracking space with its native origin at the floor, where the user
@@ -3893,24 +4126,6 @@ inline def basisInitialize(config: EagerWorkers): Unit = ^.asInstanceOf[js.Dynam
 
 inline def basisSetDownloadConfig(glueUrl: Any, wasmUrl: Any, fallbackUrl: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("basisSetDownloadConfig")(glueUrl.asInstanceOf[js.Any], wasmUrl.asInstanceOf[js.Any], fallbackUrl.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-/**
-  * Enqueue a blob of basis data for transcoding.
-  *
-  * @param {GraphicsDevice} device - The graphics device.
-  * @param {string} url - URL of the basis file.
-  * @param {object} data - The file data to transcode.
-  * @param {Function} callback - Callback function to receive transcode result.
-  * @param {object} [options] - Options structure
-  * @param {boolean} [options.isGGGR] - Indicates this is a GGGR swizzled texture. Under some
-  * circumstances the texture will be unswizzled during transcoding.
-  * @param {boolean} [options.isKTX2] - Indicates the image is KTX2 format. Otherwise
-  * basis format is assumed.
-  * @returns {boolean} True if the basis worker was initialized and false otherwise.
-  * @ignore
-  */
-inline def basisTranscode(device: GraphicsDevice, url: String, data: js.Object, callback: js.Function): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("basisTranscode")(device.asInstanceOf[js.Any], url.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-inline def basisTranscode(device: GraphicsDevice, url: String, data: js.Object, callback: js.Function, options: IsGGGR): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("basisTranscode")(device.asInstanceOf[js.Any], url.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-
 inline def bindGroupNames: js.Array[String] = ^.asInstanceOf[js.Dynamic].selectDynamic("bindGroupNames").asInstanceOf[js.Array[String]]
 
 /**
@@ -3921,9 +4136,12 @@ inline def bindGroupNames: js.Array[String] = ^.asInstanceOf[js.Dynamic].selectD
   * @param {number[]} indices - An array of triangle indices.
   * @returns {number[]} An array of 3-dimensional vertex normals.
   * @example
-  * var normals = pc.calculateNormals(positions, indices);
-  * var tangents = pc.calculateTangents(positions, normals, uvs, indices);
-  * var mesh = pc.createMesh(positions, normals, tangents, uvs, indices);
+  * const normals = pc.calculateNormals(positions, indices);
+  * const mesh = pc.createMesh(graphicsDevice, positions, {
+  *     normals: normals,
+  *     uvs: uvs,
+  *     indices: indices
+  * });
   */
 inline def calculateNormals(positions: js.Array[Double], indices: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateNormals")(positions.asInstanceOf[js.Any], indices.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
 
@@ -3937,8 +4155,13 @@ inline def calculateNormals(positions: js.Array[Double], indices: js.Array[Doubl
   * @param {number[]} indices - An array of triangle indices.
   * @returns {number[]} An array of 3-dimensional vertex tangents.
   * @example
-  * var tangents = pc.calculateTangents(positions, normals, uvs, indices);
-  * var mesh = pc.createMesh(positions, normals, tangents, uvs, indices);
+  * const tangents = pc.calculateTangents(positions, normals, uvs, indices);
+  * const mesh = pc.createMesh(graphicsDevice, positions, {
+  *     normals: normals,
+  *     tangents: tangents,
+  *     uvs: uvs,
+  *     indices: indices
+  * });
   */
 inline def calculateTangents(
   positions: js.Array[Double],
@@ -3957,7 +4180,8 @@ inline def calculateTangents(
   * Note that the box is created with UVs in the range of 0 to 1 on each face. Additionally, tangent
   * information is generated into the vertex buffer of the box's mesh.
   *
-  * @param {GraphicsDevice} device - The graphics device used to manage the mesh.
+  * @param {import('../platform/graphics/graphics-device.js').GraphicsDevice} device - The graphics
+  * device used to manage the mesh.
   * @param {object} [opts] - An object that specifies optional inputs for the function as follows:
   * @param {Vec3} [opts.halfExtents] - The half dimensions of the box in each axis (defaults to
   * [0.5, 0.5, 0.5]).
@@ -3983,7 +4207,8 @@ inline def createBox(device: GraphicsDevice, opts: CalculateTangents): Mesh = (^
   * Note that the capsule is created with UVs in the range of 0 to 1. Additionally, tangent
   * information is generated into the vertex buffer of the capsule's mesh.
   *
-  * @param {GraphicsDevice} device - The graphics device used to manage the mesh.
+  * @param {import('../platform/graphics/graphics-device.js').GraphicsDevice} device - The graphics
+  * device used to manage the mesh.
   * @param {object} [opts] - An object that specifies optional inputs for the function as follows:
   * @param {number} [opts.radius] - The radius of the tube forming the body of the capsule (defaults
   * to 0.3).
@@ -4009,7 +4234,8 @@ inline def createCapsule(device: GraphicsDevice, opts: Height): Mesh = (^.asInst
   * Note that the cone is created with UVs in the range of 0 to 1. Additionally, tangent information
   * is generated into the vertex buffer of the cone's mesh.
   *
-  * @param {GraphicsDevice} device - The graphics device used to manage the mesh.
+  * @param {import('../platform/graphics/graphics-device.js').GraphicsDevice} device - The graphics
+  * device used to manage the mesh.
   * @param {object} [opts] - An object that specifies optional inputs for the function as follows:
   * @param {number} [opts.baseRadius] - The base radius of the cone (defaults to 0.5).
   * @param {number} [opts.peakRadius] - The peak radius of the cone (defaults to 0.0).
@@ -4034,12 +4260,16 @@ inline def createCone(device: GraphicsDevice, opts: BaseRadius): Mesh = (^.asIns
   * Note that the cylinder is created with UVs in the range of 0 to 1. Additionally, tangent
   * information is generated into the vertex buffer of the cylinder's mesh.
   *
-  * @param {GraphicsDevice} device - The graphics device used to manage the mesh.
+  * @param {import('../platform/graphics/graphics-device.js').GraphicsDevice} device - The graphics
+  * device used to manage the mesh.
   * @param {object} [opts] - An object that specifies optional inputs for the function as follows:
-  * @param {number} [opts.radius] - The radius of the tube forming the body of the cylinder (defaults to 0.5).
+  * @param {number} [opts.radius] - The radius of the tube forming the body of the cylinder
+  * (defaults to 0.5).
   * @param {number} [opts.height] - The length of the body of the cylinder (defaults to 1.0).
-  * @param {number} [opts.heightSegments] - The number of divisions along the length of the cylinder (defaults to 5).
-  * @param {number} [opts.capSegments] - The number of divisions around the tubular body of the cylinder (defaults to 20).
+  * @param {number} [opts.heightSegments] - The number of divisions along the length of the cylinder
+  * (defaults to 5).
+  * @param {number} [opts.capSegments] - The number of divisions around the tubular body of the
+  * cylinder (defaults to 20).
   * @param {boolean} [opts.calculateTangents] - Generate tangent information (defaults to false).
   * @returns {Mesh} A new cylinder-shaped mesh.
   */
@@ -4047,9 +4277,35 @@ inline def createCylinder(device: GraphicsDevice): Mesh = ^.asInstanceOf[js.Dyna
 inline def createCylinder(device: GraphicsDevice, opts: CapSegments): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("createCylinder")(device.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Mesh]
 
 /**
+  * Creates a graphics device.
+  *
+  * @param {HTMLCanvasElement} canvas - The canvas element.
+  * @param {object} options - Graphics device options.
+  * @param {string[]} [options.deviceTypes] - An array of DEVICETYPE_*** constants, defining the
+  * order in which the devices are attempted to get created. Defaults to an empty array. If the
+  * specified array does not contain [{@link DEVICETYPE_WEBGL2} or {@link DEVICETYPE_WEBGL1}], those
+  * are internally added to its end in this order. Typically, you'd only specify
+  * {@link DEVICETYPE_WEBGPU}, or leave it empty.
+  * @param {boolean} [options.antialias] - Boolean that indicates whether or not to perform
+  * anti-aliasing if possible. Defaults to true.
+  * @param {boolean} [options.depth=true] - Boolean that indicates that the drawing buffer is
+  * requested to have a depth buffer of at least 16 bits.
+  * @param {boolean} [options.stencil=true] - Boolean that indicates that the drawing buffer is
+  * requested to have a stencil buffer of at least 8 bits.
+  * @param {string} [options.glslangUrl] - An url to glslang script, required if
+  * {@link DEVICETYPE_WEBGPU} type is added to deviceTypes array. Not used for
+  * {@link DEVICETYPE_WEBGL} device type creation.
+  * @param {string} [options.twgslUrl] - An url to twgsl script, required if glslangUrl was specified.
+  * @returns {Promise} - Promise object representing the created graphics device.
+  */
+inline def createGraphicsDevice(canvas: HTMLCanvasElement): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("createGraphicsDevice")(canvas.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
+inline def createGraphicsDevice(canvas: HTMLCanvasElement, options: Antialias): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("createGraphicsDevice")(canvas.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
+
+/**
   * Creates a new mesh object from the supplied vertex information and topology.
   *
-  * @param {GraphicsDevice} device - The graphics device used to manage the mesh.
+  * @param {import('../platform/graphics/graphics-device.js').GraphicsDevice} device - The graphics
+  * device used to manage the mesh.
   * @param {number[]} positions - An array of 3-dimensional vertex positions.
   * @param {object} [opts] - An object that specifies optional inputs for the function as follows:
   * @param {number[]} [opts.normals] - An array of 3-dimensional vertex normals.
@@ -4066,7 +4322,7 @@ inline def createCylinder(device: GraphicsDevice, opts: CapSegments): Mesh = (^.
   * @returns {Mesh} A new Mesh constructed from the supplied vertex and triangle data.
   * @example
   * // Create a simple, indexed triangle (with texture coordinates and vertex normals)
-  * var mesh = pc.createMesh(graphicsDevice, [0, 0, 0, 1, 0, 0, 0, 1, 0], {
+  * const mesh = pc.createMesh(graphicsDevice, [0, 0, 0, 1, 0, 0, 0, 1, 0], {
   *     normals: [0, 0, 1, 0, 0, 1, 0, 0, 1],
   *     uvs: [0, 0, 1, 0, 0, 1],
   *     indices: [0, 1, 2]
@@ -4086,7 +4342,8 @@ inline def createMesh(device: GraphicsDevice, positions: js.Array[Double], opts:
   * Note that the plane is created with UVs in the range of 0 to 1. Additionally, tangent
   * information is generated into the vertex buffer of the plane's mesh.
   *
-  * @param {GraphicsDevice} device - The graphics device used to manage the mesh.
+  * @param {import('../platform/graphics/graphics-device.js').GraphicsDevice} device - The graphics
+  * device used to manage the mesh.
   * @param {object} [opts] - An object that specifies optional inputs for the function as follows:
   * @param {Vec2} [opts.halfExtents] - The half dimensions of the plane in the X and Z axes
   * (defaults to [0.5, 0.5]).
@@ -4121,7 +4378,7 @@ inline def createPlane(device: GraphicsDevice, opts: HalfExtents): Mesh = (^.asI
   * @example
   * var Turning = pc.createScript('turn');
   *
-  * // define `speed` attribute that is available in Editor UI
+  * // define 'speed' attribute that is available in Editor UI
   * Turning.attributes.add('speed', {
   *     type: 'number',
   *     default: 180,
@@ -4136,11 +4393,11 @@ inline def createPlane(device: GraphicsDevice, opts: HalfExtents): Mesh = (^.asI
 inline def createScript(name: String): (TypeofScriptType & (Instantiable1[/* args */ App, ScriptType])) | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("createScript")(name.asInstanceOf[js.Any]).asInstanceOf[(TypeofScriptType & (Instantiable1[/* args */ App, ScriptType])) | Null]
 inline def createScript(name: String, app: AppBase): (TypeofScriptType & (Instantiable1[/* args */ App, ScriptType])) | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("createScript")(name.asInstanceOf[js.Any], app.asInstanceOf[js.Any])).asInstanceOf[(TypeofScriptType & (Instantiable1[/* args */ App, ScriptType])) | Null]
 
-/** @typedef {import('../../platform/graphics/graphics-device.js').GraphicsDevice} GraphicsDevice */
 /**
   * Create a shader from named shader chunks.
   *
-  * @param {GraphicsDevice} device - The graphics device.
+  * @param {import('../../platform/graphics/graphics-device.js').GraphicsDevice} device - The
+  * graphics device.
   * @param {string} vsName - The vertex shader chunk name.
   * @param {string} fsName - The fragment shader chunk name.
   * @param {boolean} [useTransformFeedback] - Whether to use transform feedback. Defaults to false.
@@ -4150,15 +4407,21 @@ inline def createShader(device: GraphicsDevice, vsName: String, fsName: String):
 inline def createShader(device: GraphicsDevice, vsName: String, fsName: String, useTransformFeedback: Boolean): Shader = (^.asInstanceOf[js.Dynamic].applyDynamic("createShader")(device.asInstanceOf[js.Any], vsName.asInstanceOf[js.Any], fsName.asInstanceOf[js.Any], useTransformFeedback.asInstanceOf[js.Any])).asInstanceOf[Shader]
 
 /**
-  * Create a shader from the supplied source code.
+  * Create a shader from the supplied source code. Note that this function adds additional shader
+  * blocks to both vertex and fragment shaders, which allow the shader to use more features and
+  * compile on both WebGL and WebGPU. Specifically, these blocks are added, and should not be
+  * part of provided vsCode and fsCode: shader version, shader precision, commonly used extensions.
   *
-  * @param {GraphicsDevice} device - The graphics device.
+  * @param {import('../../platform/graphics/graphics-device.js').GraphicsDevice} device - The
+  * graphics device.
   * @param {string} vsCode - The vertex shader code.
   * @param {string} fsCode - The fragment shader code.
-  * @param {string} uniqueName - Unique name for the shader.
+  * @param {string} uniqueName - Unique name for the shader. If a shader with this name already
+  * exists, it will be returned instead of a new shader instance.
+  * @param {Object<string, string>} [attributes] - Object detailing the mapping of vertex shader
+  * attribute names to semantics SEMANTIC_*. This enables the engine to match vertex buffer data as
+  * inputs to the shader. Defaults to undefined, which generates the default attributes.
   * @param {boolean} [useTransformFeedback] - Whether to use transform feedback. Defaults to false.
-  * @param {string} [fragmentPreamble] - An optional 'preamble' string for the fragment shader. Defaults
-  * to ''.
   * @returns {Shader} The newly created shader.
   */
 inline def createShaderFromCode(device: GraphicsDevice, vsCode: String, fsCode: String, uniqueName: String): Shader = (^.asInstanceOf[js.Dynamic].applyDynamic("createShaderFromCode")(device.asInstanceOf[js.Any], vsCode.asInstanceOf[js.Any], fsCode.asInstanceOf[js.Any], uniqueName.asInstanceOf[js.Any])).asInstanceOf[Shader]
@@ -4167,24 +4430,24 @@ inline def createShaderFromCode(
   vsCode: String,
   fsCode: String,
   uniqueName: String,
+  attributes: StringDictionary[String]
+): Shader = (^.asInstanceOf[js.Dynamic].applyDynamic("createShaderFromCode")(device.asInstanceOf[js.Any], vsCode.asInstanceOf[js.Any], fsCode.asInstanceOf[js.Any], uniqueName.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[Shader]
+inline def createShaderFromCode(
+  device: GraphicsDevice,
+  vsCode: String,
+  fsCode: String,
+  uniqueName: String,
+  attributes: StringDictionary[String],
   useTransformFeedback: Boolean
-): Shader = (^.asInstanceOf[js.Dynamic].applyDynamic("createShaderFromCode")(device.asInstanceOf[js.Any], vsCode.asInstanceOf[js.Any], fsCode.asInstanceOf[js.Any], uniqueName.asInstanceOf[js.Any], useTransformFeedback.asInstanceOf[js.Any])).asInstanceOf[Shader]
+): Shader = (^.asInstanceOf[js.Dynamic].applyDynamic("createShaderFromCode")(device.asInstanceOf[js.Any], vsCode.asInstanceOf[js.Any], fsCode.asInstanceOf[js.Any], uniqueName.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any], useTransformFeedback.asInstanceOf[js.Any])).asInstanceOf[Shader]
 inline def createShaderFromCode(
   device: GraphicsDevice,
   vsCode: String,
   fsCode: String,
   uniqueName: String,
-  useTransformFeedback: Boolean,
-  fragmentPreamble: String
-): Shader = (^.asInstanceOf[js.Dynamic].applyDynamic("createShaderFromCode")(device.asInstanceOf[js.Any], vsCode.asInstanceOf[js.Any], fsCode.asInstanceOf[js.Any], uniqueName.asInstanceOf[js.Any], useTransformFeedback.asInstanceOf[js.Any], fragmentPreamble.asInstanceOf[js.Any])).asInstanceOf[Shader]
-inline def createShaderFromCode(
-  device: GraphicsDevice,
-  vsCode: String,
-  fsCode: String,
-  uniqueName: String,
-  useTransformFeedback: Unit,
-  fragmentPreamble: String
-): Shader = (^.asInstanceOf[js.Dynamic].applyDynamic("createShaderFromCode")(device.asInstanceOf[js.Any], vsCode.asInstanceOf[js.Any], fsCode.asInstanceOf[js.Any], uniqueName.asInstanceOf[js.Any], useTransformFeedback.asInstanceOf[js.Any], fragmentPreamble.asInstanceOf[js.Any])).asInstanceOf[Shader]
+  attributes: Unit,
+  useTransformFeedback: Boolean
+): Shader = (^.asInstanceOf[js.Dynamic].applyDynamic("createShaderFromCode")(device.asInstanceOf[js.Any], vsCode.asInstanceOf[js.Any], fsCode.asInstanceOf[js.Any], uniqueName.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any], useTransformFeedback.asInstanceOf[js.Any])).asInstanceOf[Shader]
 
 /**
   * Creates a procedural sphere-shaped mesh.
@@ -4196,7 +4459,8 @@ inline def createShaderFromCode(
   * Note that the sphere is created with UVs in the range of 0 to 1. Additionally, tangent
   * information is generated into the vertex buffer of the sphere's mesh.
   *
-  * @param {GraphicsDevice} device - The graphics device used to manage the mesh.
+  * @param {import('../platform/graphics/graphics-device.js').GraphicsDevice} device - The graphics
+  * device used to manage the mesh.
   * @param {object} [opts] - An object that specifies optional inputs for the function as follows:
   * @param {number} [opts.radius] - The radius of the sphere (defaults to 0.5).
   * @param {number} [opts.latitudeBands] - The number of divisions along the latitudinal axis of the
@@ -4209,17 +4473,7 @@ inline def createShaderFromCode(
 inline def createSphere(device: GraphicsDevice): Mesh = ^.asInstanceOf[js.Dynamic].applyDynamic("createSphere")(device.asInstanceOf[js.Any]).asInstanceOf[Mesh]
 inline def createSphere(device: GraphicsDevice, opts: LatitudeBands): Mesh = (^.asInstanceOf[js.Dynamic].applyDynamic("createSphere")(device.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Mesh]
 
-/**
-  * Creates a &lt;style&gt; DOM element from a string that contains CSS.
-  *
-  * @param {string} cssString - A string that contains valid CSS.
-  * @returns {Element} The style DOM element.
-  * @example
-  * var css = 'body {height: 100;}';
-  * var style = pc.createStyle(css);
-  * document.head.appendChild(style);
-  */
-inline def createStyle(cssString: String): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("createStyle")(cssString.asInstanceOf[js.Any]).asInstanceOf[Element]
+inline def createStyle(cssString: Any): HTMLStyleElement = ^.asInstanceOf[js.Dynamic].applyDynamic("createStyle")(cssString.asInstanceOf[js.Any]).asInstanceOf[HTMLStyleElement]
 
 /**
   * Creates a procedural torus-shaped mesh.
@@ -4231,7 +4485,8 @@ inline def createStyle(cssString: String): Element = ^.asInstanceOf[js.Dynamic].
   * Note that the torus is created with UVs in the range of 0 to 1. Additionally, tangent
   * information is generated into the vertex buffer of the torus's mesh.
   *
-  * @param {GraphicsDevice} device - The graphics device used to manage the mesh.
+  * @param {import('../platform/graphics/graphics-device.js').GraphicsDevice} device - The graphics
+  * device used to manage the mesh.
   * @param {object} [opts] - An object that specifies optional inputs for the function as follows:
   * @param {number} [opts.tubeRadius] - The radius of the tube forming the body of the torus
   * (defaults to 0.2).
@@ -4264,335 +4519,222 @@ inline def createTorus(device: GraphicsDevice, opts: RingRadius): Mesh = (^.asIn
 inline def createURI(options: Authority): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createURI")(options.asInstanceOf[js.Any]).asInstanceOf[String]
 
 /**
-  * Draw a screen-space rectangle in a render target. Primarily meant to be used in custom post
-  * effects based on {@link PostEffect}.
+  * Initialize the Draco mesh decoder.
   *
-  * @param {GraphicsDevice} device - The graphics device of the application.
-  * @param {RenderTarget} target - The output render target.
-  * @param {VertexBuffer} vertexBuffer - The vertex buffer for the rectangle mesh. When calling from
-  * a custom post effect, pass the field {@link PostEffect#vertexBuffer}.
-  * @param {Shader} shader - The shader to be used for drawing the rectangle. When calling from a
-  * custom post effect, pass the field {@link PostEffect#shader}.
-  * @param {Vec4} [rect] - The normalized screen-space position (rect.x, rect.y) and size (rect.z,
-  * rect.w) of the rectangle. Default is [0, 0, 1, 1].
+  * @param {object} [config] - The Draco decoder configuration.
+  * @param {string} [config.jsUrl] - URL of glue script.
+  * @param {string} [config.wasmUrl] - URL of the wasm module.
+  * @param {number} [config.numWorkers] - Number of workers to use for decoding (default is 1).
+  * @param {boolean} [config.lazyInit] - Wait for first decode request before initializing workers
+  * (default is false). Otherwise initialize workers immediately.
   */
-inline def drawFullscreenQuad(device: GraphicsDevice, target: RenderTarget, vertexBuffer: VertexBuffer, shader: Shader): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawFullscreenQuad")(device.asInstanceOf[js.Any], target.asInstanceOf[js.Any], vertexBuffer.asInstanceOf[js.Any], shader.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def drawFullscreenQuad(
+inline def dracoInitialize(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("dracoInitialize")().asInstanceOf[Unit]
+inline def dracoInitialize(config: JsUrl): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("dracoInitialize")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
+
+inline def drawFullscreenQuad(device: Any, target: Any, vertexBuffer: Any, shader: Any, rect: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawFullscreenQuad")(device.asInstanceOf[js.Any], target.asInstanceOf[js.Any], vertexBuffer.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any])).asInstanceOf[Unit]
+
+inline def drawQuadWithShader(device: GraphicsDevice, target: Unit, shader: Shader, rect: Unit, scissorRect: Unit, args: Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawQuadWithShader")((scala.List(device.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
+inline def drawQuadWithShader(device: GraphicsDevice, target: Unit, shader: Shader, rect: Unit, scissorRect: Vec4, args: Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawQuadWithShader")((scala.List(device.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
+inline def drawQuadWithShader(device: GraphicsDevice, target: Unit, shader: Shader, rect: Vec4, scissorRect: Unit, args: Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawQuadWithShader")((scala.List(device.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
+inline def drawQuadWithShader(device: GraphicsDevice, target: Unit, shader: Shader, rect: Vec4, scissorRect: Vec4, args: Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawQuadWithShader")((scala.List(device.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
+inline def drawQuadWithShader(
   device: GraphicsDevice,
   target: RenderTarget,
-  vertexBuffer: VertexBuffer,
-  shader: Shader,
-  rect: Vec4
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawFullscreenQuad")(device.asInstanceOf[js.Any], target.asInstanceOf[js.Any], vertexBuffer.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any])).asInstanceOf[Unit]
-
-inline def drawQuadWithShader(device: GraphicsDevice, target: Unit, shader: Shader): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawQuadWithShader")(device.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def drawQuadWithShader(
-  device: GraphicsDevice,
-  target: Unit,
   shader: Shader,
   rect: Unit,
   scissorRect: Unit,
-  useBlend: Boolean
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawQuadWithShader")(device.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any], useBlend.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def drawQuadWithShader(device: GraphicsDevice, target: Unit, shader: Shader, rect: Unit, scissorRect: Vec4): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawQuadWithShader")(device.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  args: Any*
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawQuadWithShader")((scala.List(device.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
 inline def drawQuadWithShader(
   device: GraphicsDevice,
-  target: Unit,
+  target: RenderTarget,
   shader: Shader,
   rect: Unit,
   scissorRect: Vec4,
-  useBlend: Boolean
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawQuadWithShader")(device.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any], useBlend.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def drawQuadWithShader(device: GraphicsDevice, target: Unit, shader: Shader, rect: Vec4): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawQuadWithShader")(device.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  args: Any*
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawQuadWithShader")((scala.List(device.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
 inline def drawQuadWithShader(
   device: GraphicsDevice,
-  target: Unit,
+  target: RenderTarget,
   shader: Shader,
   rect: Vec4,
   scissorRect: Unit,
-  useBlend: Boolean
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawQuadWithShader")(device.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any], useBlend.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def drawQuadWithShader(device: GraphicsDevice, target: Unit, shader: Shader, rect: Vec4, scissorRect: Vec4): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawQuadWithShader")(device.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def drawQuadWithShader(
-  device: GraphicsDevice,
-  target: Unit,
-  shader: Shader,
-  rect: Vec4,
-  scissorRect: Vec4,
-  useBlend: Boolean
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawQuadWithShader")(device.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any], useBlend.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  args: Any*
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawQuadWithShader")((scala.List(device.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
 /**
-  * Draws a screen-space quad using a specific shader. Mostly used by post-effects.
+  * Draws a screen-space quad using a specific shader.
   *
-  * @param {GraphicsDevice} device - The graphics device used to draw the quad.
-  * @param {RenderTarget|undefined} target - The destination render target. If undefined, target is
-  * the frame buffer.
-  * @param {Shader} shader - The shader used for rendering the quad. Vertex shader should contain
-  * `attribute vec2 vertex_position`.
-  * @param {Vec4} [rect] - The viewport rectangle of the quad, in pixels. Defaults to fullscreen
-  * (`0, 0, target.width, target.height`).
-  * @param {Vec4} [scissorRect] - The scissor rectangle of the quad, in pixels. Defaults to
-  * fullscreen (`0, 0, target.width, target.height`).
-  * @param {boolean} [useBlend] - True to enable blending. Defaults to false, disabling blending.
+  * @param {import('../../platform/graphics/graphics-device.js').GraphicsDevice} device - The graphics device used to draw
+  * the quad.
+  * @param {import('../../platform/graphics/render-target.js').RenderTarget|undefined} target - The destination render
+  * target. If undefined, target is the frame buffer.
+  * @param {import('../../platform/graphics/shader.js').Shader} shader - The shader used for rendering the quad. Vertex
+  * shader should contain `attribute vec2 vertex_position`.
+  * @param {import('../../core/math/vec4.js').Vec4} [rect] - The viewport rectangle of the quad, in
+  * pixels. Defaults to fullscreen (`0, 0, target.width, target.height`).
+  * @param {import('../../core/math/vec4.js').Vec4} [scissorRect] - The scissor rectangle of the
+  * quad, in pixels. Defaults to fullscreen (`0, 0, target.width, target.height`).
   */
-inline def drawQuadWithShader(device: GraphicsDevice, target: RenderTarget, shader: Shader): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawQuadWithShader")(device.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def drawQuadWithShader(
-  device: GraphicsDevice,
-  target: RenderTarget,
-  shader: Shader,
-  rect: Unit,
-  scissorRect: Unit,
-  useBlend: Boolean
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawQuadWithShader")(device.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any], useBlend.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def drawQuadWithShader(device: GraphicsDevice, target: RenderTarget, shader: Shader, rect: Unit, scissorRect: Vec4): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawQuadWithShader")(device.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def drawQuadWithShader(
-  device: GraphicsDevice,
-  target: RenderTarget,
-  shader: Shader,
-  rect: Unit,
-  scissorRect: Vec4,
-  useBlend: Boolean
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawQuadWithShader")(device.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any], useBlend.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def drawQuadWithShader(device: GraphicsDevice, target: RenderTarget, shader: Shader, rect: Vec4): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawQuadWithShader")(device.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def drawQuadWithShader(
-  device: GraphicsDevice,
-  target: RenderTarget,
-  shader: Shader,
-  rect: Vec4,
-  scissorRect: Unit,
-  useBlend: Boolean
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawQuadWithShader")(device.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any], useBlend.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def drawQuadWithShader(device: GraphicsDevice, target: RenderTarget, shader: Shader, rect: Vec4, scissorRect: Vec4): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawQuadWithShader")(device.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def drawQuadWithShader(
   device: GraphicsDevice,
   target: RenderTarget,
   shader: Shader,
   rect: Vec4,
   scissorRect: Vec4,
-  useBlend: Boolean
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawQuadWithShader")(device.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any], useBlend.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  args: Any*
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawQuadWithShader")((scala.List(device.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
 
+inline def drawTexture(
+  device: GraphicsDevice,
+  texture: Texture,
+  target: Unit,
+  shader: Unit,
+  rect: Unit,
+  scissorRect: Unit,
+  args: Any*
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawTexture")((scala.List(device.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
+inline def drawTexture(
+  device: GraphicsDevice,
+  texture: Texture,
+  target: Unit,
+  shader: Unit,
+  rect: Unit,
+  scissorRect: Vec4,
+  args: Any*
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawTexture")((scala.List(device.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
+inline def drawTexture(
+  device: GraphicsDevice,
+  texture: Texture,
+  target: Unit,
+  shader: Unit,
+  rect: Vec4,
+  scissorRect: Unit,
+  args: Any*
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawTexture")((scala.List(device.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
+inline def drawTexture(
+  device: GraphicsDevice,
+  texture: Texture,
+  target: Unit,
+  shader: Unit,
+  rect: Vec4,
+  scissorRect: Vec4,
+  args: Any*
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawTexture")((scala.List(device.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
+inline def drawTexture(
+  device: GraphicsDevice,
+  texture: Texture,
+  target: Unit,
+  shader: Shader,
+  rect: Unit,
+  scissorRect: Unit,
+  args: Any*
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawTexture")((scala.List(device.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
+inline def drawTexture(
+  device: GraphicsDevice,
+  texture: Texture,
+  target: Unit,
+  shader: Shader,
+  rect: Unit,
+  scissorRect: Vec4,
+  args: Any*
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawTexture")((scala.List(device.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
+inline def drawTexture(
+  device: GraphicsDevice,
+  texture: Texture,
+  target: Unit,
+  shader: Shader,
+  rect: Vec4,
+  scissorRect: Unit,
+  args: Any*
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawTexture")((scala.List(device.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
+inline def drawTexture(
+  device: GraphicsDevice,
+  texture: Texture,
+  target: Unit,
+  shader: Shader,
+  rect: Vec4,
+  scissorRect: Vec4,
+  args: Any*
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawTexture")((scala.List(device.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
+inline def drawTexture(
+  device: GraphicsDevice,
+  texture: Texture,
+  target: RenderTarget,
+  shader: Unit,
+  rect: Unit,
+  scissorRect: Unit,
+  args: Any*
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawTexture")((scala.List(device.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
+inline def drawTexture(
+  device: GraphicsDevice,
+  texture: Texture,
+  target: RenderTarget,
+  shader: Unit,
+  rect: Unit,
+  scissorRect: Vec4,
+  args: Any*
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawTexture")((scala.List(device.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
+inline def drawTexture(
+  device: GraphicsDevice,
+  texture: Texture,
+  target: RenderTarget,
+  shader: Unit,
+  rect: Vec4,
+  scissorRect: Unit,
+  args: Any*
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawTexture")((scala.List(device.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
+inline def drawTexture(
+  device: GraphicsDevice,
+  texture: Texture,
+  target: RenderTarget,
+  shader: Unit,
+  rect: Vec4,
+  scissorRect: Vec4,
+  args: Any*
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawTexture")((scala.List(device.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
+inline def drawTexture(
+  device: GraphicsDevice,
+  texture: Texture,
+  target: RenderTarget,
+  shader: Shader,
+  rect: Unit,
+  scissorRect: Unit,
+  args: Any*
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawTexture")((scala.List(device.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
+inline def drawTexture(
+  device: GraphicsDevice,
+  texture: Texture,
+  target: RenderTarget,
+  shader: Shader,
+  rect: Unit,
+  scissorRect: Vec4,
+  args: Any*
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawTexture")((scala.List(device.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
+inline def drawTexture(
+  device: GraphicsDevice,
+  texture: Texture,
+  target: RenderTarget,
+  shader: Shader,
+  rect: Vec4,
+  scissorRect: Unit,
+  args: Any*
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawTexture")((scala.List(device.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
 /**
   * Draws a texture in screen-space. Mostly used by post-effects.
   *
-  * @param {GraphicsDevice} device - The graphics device used to draw the texture.
-  * @param {Texture} texture - The source texture to be drawn. Accessible as `uniform sampler2D
-  * source` in shader.
-  * @param {RenderTarget} [target] - The destination render target. Defaults to the frame buffer.
-  * @param {Shader} [shader] - The shader used for rendering the texture. Defaults to {@link GraphicsDevice#getCopyShader}.
-  * @param {Vec4} [rect] - The viewport rectangle to use for the texture, in pixels. Defaults to
-  * fullscreen (`0, 0, target.width, target.height`).
-  * @param {Vec4} [scissorRect] - The scissor rectangle to use for the texture, in pixels. Defaults
-  * to fullscreen (`0, 0, target.width, target.height`).
-  * @param {boolean} [useBlend] - True to enable blending. Defaults to false, disabling blending.
+  * @param {import('../../platform/graphics/graphics-device.js').GraphicsDevice} device - The graphics device used to draw
+  * the texture.
+  * @param {import('../../platform/graphics/texture.js').Texture} texture - The source texture to be drawn. Accessible as
+  * `uniform sampler2D * source` in shader.
+  * @param {import('../../platform/graphics/render-target.js').RenderTarget} [target] - The destination render target.
+  * Defaults to the frame buffer.
+  * @param {import('../../platform/graphics/shader.js').Shader} [shader] - The shader used for rendering the texture.
+  * Defaults to {@link GraphicsDevice#getCopyShader}.
+  * @param {import('../../core/math/vec4.js').Vec4} [rect] - The viewport rectangle to use for the
+  * texture, in pixels. Defaults to fullscreen (`0, 0, target.width, target.height`).
+  * @param {import('../../core/math/vec4.js').Vec4} [scissorRect] - The scissor rectangle to use for
+  * the texture, in pixels. Defaults to fullscreen (`0, 0, target.width, target.height`).
   */
-inline def drawTexture(device: GraphicsDevice, texture: Texture): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawTexture")(device.asInstanceOf[js.Any], texture.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def drawTexture(
-  device: GraphicsDevice,
-  texture: Texture,
-  target: Unit,
-  shader: Unit,
-  rect: Unit,
-  scissorRect: Unit,
-  useBlend: Boolean
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawTexture")(device.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any], useBlend.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def drawTexture(
-  device: GraphicsDevice,
-  texture: Texture,
-  target: Unit,
-  shader: Unit,
-  rect: Unit,
-  scissorRect: Vec4
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawTexture")(device.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def drawTexture(
-  device: GraphicsDevice,
-  texture: Texture,
-  target: Unit,
-  shader: Unit,
-  rect: Unit,
-  scissorRect: Vec4,
-  useBlend: Boolean
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawTexture")(device.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any], useBlend.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def drawTexture(device: GraphicsDevice, texture: Texture, target: Unit, shader: Unit, rect: Vec4): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawTexture")(device.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def drawTexture(
-  device: GraphicsDevice,
-  texture: Texture,
-  target: Unit,
-  shader: Unit,
-  rect: Vec4,
-  scissorRect: Unit,
-  useBlend: Boolean
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawTexture")(device.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any], useBlend.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def drawTexture(
-  device: GraphicsDevice,
-  texture: Texture,
-  target: Unit,
-  shader: Unit,
-  rect: Vec4,
-  scissorRect: Vec4
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawTexture")(device.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def drawTexture(
-  device: GraphicsDevice,
-  texture: Texture,
-  target: Unit,
-  shader: Unit,
-  rect: Vec4,
-  scissorRect: Vec4,
-  useBlend: Boolean
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawTexture")(device.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any], useBlend.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def drawTexture(device: GraphicsDevice, texture: Texture, target: Unit, shader: Shader): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawTexture")(device.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def drawTexture(
-  device: GraphicsDevice,
-  texture: Texture,
-  target: Unit,
-  shader: Shader,
-  rect: Unit,
-  scissorRect: Unit,
-  useBlend: Boolean
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawTexture")(device.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any], useBlend.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def drawTexture(
-  device: GraphicsDevice,
-  texture: Texture,
-  target: Unit,
-  shader: Shader,
-  rect: Unit,
-  scissorRect: Vec4
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawTexture")(device.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def drawTexture(
-  device: GraphicsDevice,
-  texture: Texture,
-  target: Unit,
-  shader: Shader,
-  rect: Unit,
-  scissorRect: Vec4,
-  useBlend: Boolean
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawTexture")(device.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any], useBlend.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def drawTexture(device: GraphicsDevice, texture: Texture, target: Unit, shader: Shader, rect: Vec4): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawTexture")(device.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def drawTexture(
-  device: GraphicsDevice,
-  texture: Texture,
-  target: Unit,
-  shader: Shader,
-  rect: Vec4,
-  scissorRect: Unit,
-  useBlend: Boolean
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawTexture")(device.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any], useBlend.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def drawTexture(
-  device: GraphicsDevice,
-  texture: Texture,
-  target: Unit,
-  shader: Shader,
-  rect: Vec4,
-  scissorRect: Vec4
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawTexture")(device.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def drawTexture(
-  device: GraphicsDevice,
-  texture: Texture,
-  target: Unit,
-  shader: Shader,
-  rect: Vec4,
-  scissorRect: Vec4,
-  useBlend: Boolean
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawTexture")(device.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any], useBlend.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def drawTexture(device: GraphicsDevice, texture: Texture, target: RenderTarget): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawTexture")(device.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def drawTexture(
-  device: GraphicsDevice,
-  texture: Texture,
-  target: RenderTarget,
-  shader: Unit,
-  rect: Unit,
-  scissorRect: Unit,
-  useBlend: Boolean
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawTexture")(device.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any], useBlend.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def drawTexture(
-  device: GraphicsDevice,
-  texture: Texture,
-  target: RenderTarget,
-  shader: Unit,
-  rect: Unit,
-  scissorRect: Vec4
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawTexture")(device.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def drawTexture(
-  device: GraphicsDevice,
-  texture: Texture,
-  target: RenderTarget,
-  shader: Unit,
-  rect: Unit,
-  scissorRect: Vec4,
-  useBlend: Boolean
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawTexture")(device.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any], useBlend.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def drawTexture(device: GraphicsDevice, texture: Texture, target: RenderTarget, shader: Unit, rect: Vec4): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawTexture")(device.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def drawTexture(
-  device: GraphicsDevice,
-  texture: Texture,
-  target: RenderTarget,
-  shader: Unit,
-  rect: Vec4,
-  scissorRect: Unit,
-  useBlend: Boolean
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawTexture")(device.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any], useBlend.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def drawTexture(
-  device: GraphicsDevice,
-  texture: Texture,
-  target: RenderTarget,
-  shader: Unit,
-  rect: Vec4,
-  scissorRect: Vec4
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawTexture")(device.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def drawTexture(
-  device: GraphicsDevice,
-  texture: Texture,
-  target: RenderTarget,
-  shader: Unit,
-  rect: Vec4,
-  scissorRect: Vec4,
-  useBlend: Boolean
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawTexture")(device.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any], useBlend.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def drawTexture(device: GraphicsDevice, texture: Texture, target: RenderTarget, shader: Shader): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawTexture")(device.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def drawTexture(
-  device: GraphicsDevice,
-  texture: Texture,
-  target: RenderTarget,
-  shader: Shader,
-  rect: Unit,
-  scissorRect: Unit,
-  useBlend: Boolean
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawTexture")(device.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any], useBlend.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def drawTexture(
-  device: GraphicsDevice,
-  texture: Texture,
-  target: RenderTarget,
-  shader: Shader,
-  rect: Unit,
-  scissorRect: Vec4
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawTexture")(device.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def drawTexture(
-  device: GraphicsDevice,
-  texture: Texture,
-  target: RenderTarget,
-  shader: Shader,
-  rect: Unit,
-  scissorRect: Vec4,
-  useBlend: Boolean
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawTexture")(device.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any], useBlend.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def drawTexture(device: GraphicsDevice, texture: Texture, target: RenderTarget, shader: Shader, rect: Vec4): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawTexture")(device.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def drawTexture(
-  device: GraphicsDevice,
-  texture: Texture,
-  target: RenderTarget,
-  shader: Shader,
-  rect: Vec4,
-  scissorRect: Unit,
-  useBlend: Boolean
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawTexture")(device.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any], useBlend.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def drawTexture(
-  device: GraphicsDevice,
-  texture: Texture,
-  target: RenderTarget,
-  shader: Shader,
-  rect: Vec4,
-  scissorRect: Vec4
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawTexture")(device.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def drawTexture(
   device: GraphicsDevice,
   texture: Texture,
@@ -4600,8 +4742,8 @@ inline def drawTexture(
   shader: Shader,
   rect: Vec4,
   scissorRect: Vec4,
-  useBlend: Boolean
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawTexture")(device.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any], useBlend.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  args: Any*
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawTexture")((scala.List(device.asInstanceOf[js.Any], texture.asInstanceOf[js.Any], target.asInstanceOf[js.Any], shader.asInstanceOf[js.Any], rect.asInstanceOf[js.Any], scissorRect.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
 
 /**
   * Merge the contents of two objects into a single object.
@@ -4610,12 +4752,12 @@ inline def drawTexture(
   * @param {object} ex - The object that is merged with target.
   * @returns {object} The target object.
   * @example
-  * var A = {
+  * const A = {
   *     a: function () {
   *         console.log(this.a);
   *     }
   * };
-  * var B = {
+  * const B = {
   *     b: function () {
   *         console.log(this.b);
   *     }
@@ -4630,14 +4772,15 @@ inline def drawTexture(
   */
 inline def extend(target: js.Object, ex: js.Object): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(target.asInstanceOf[js.Any], ex.asInstanceOf[js.Any])).asInstanceOf[js.Object]
 
-/** @typedef {import('./touch-device.js').TouchDevice} TouchDevice */
+inline def getReservedScriptNames(): Set[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getReservedScriptNames")().asInstanceOf[Set[String]]
+
 /**
-  * Similar to {@link getTargetCoords} for the MouseEvents. This function takes a browser Touch
-  * object and returns the coordinates of the touch relative to the target element.
+  * This function takes a browser Touch object and returns the coordinates of the touch relative to
+  * the target element.
   *
   * @param {globalThis.Touch} touch - The browser Touch object.
   * @returns {object} The coordinates of the touch relative to the touch.target element. In the
-  * format {x, y}.
+  * format \{x, y\}.
   */
 inline def getTouchTargetCoords(
   touch: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify globalThis.Touch */ Any
@@ -4647,14 +4790,7 @@ inline def http: Http_ = ^.asInstanceOf[js.Dynamic].selectDynamic("http").asInst
 
 inline def inherits(Self: Any, Super: Any): Call = (^.asInstanceOf[js.Dynamic].applyDynamic("inherits")(Self.asInstanceOf[js.Any], Super.asInstanceOf[js.Any])).asInstanceOf[Call]
 
-/**
-  * Return true if the Object is not undefined.
-  *
-  * @param {object} o - The Object to test.
-  * @returns {boolean} True if the Object is not undefined.
-  * @ignore
-  */
-inline def isDefined(o: js.Object): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDefined")(o.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+inline def isCompressedPixelFormat(format: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCompressedPixelFormat")(format.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 
 inline def makeArray(arr: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("makeArray")(arr.asInstanceOf[js.Any]).asInstanceOf[Any]
 
@@ -4666,6 +4802,8 @@ inline def makeArray(arr: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("m
   * @ignore
   */
 inline def now: Any = ^.asInstanceOf[js.Dynamic].selectDynamic("now").asInstanceOf[Any]
+
+inline def pixelFormatByteSizes: js.Array[Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("pixelFormatByteSizes").asInstanceOf[js.Array[Any]]
 
 inline def prefilterCubemap(options: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("prefilterCubemap")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
@@ -4728,7 +4866,7 @@ inline def reprojectTexture(source: Texture, target: Texture, options: Unit, arg
   * @param {number} [options.face] - Optional cubemap face to update (default is update all faces).
   * @param {string} [options.distribution] - Specify convolution distribution - 'none', 'lambert',
   * 'phong', 'ggx'. Default depends on specularPower.
-  * @param {Vec4} [options.rect] - Optional viewport rectangle.
+  * @param {import('../../core/math/vec4.js').Vec4} [options.rect] - Optional viewport rectangle.
   * @param {number} [options.seamPixels] - Optional number of seam pixels to render
   */
 inline def reprojectTexture(source: Texture, target: Texture, options: Distribution, args: Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("reprojectTexture")((scala.List(source.asInstanceOf[js.Any], target.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Unit]
@@ -4792,6 +4930,8 @@ inline def uniformTypeToName: js.Array[String] = ^.asInstanceOf[js.Dynamic].sele
   */
 inline def version: $_CURRENT_SDK_VERSION = ^.asInstanceOf[js.Dynamic].selectDynamic("version").asInstanceOf[$_CURRENT_SDK_VERSION]
 
+inline def vertexTypesNames: js.Array[String] = ^.asInstanceOf[js.Dynamic].selectDynamic("vertexTypesNames").asInstanceOf[js.Array[String]]
+
 type AddParserCallback = js.Function2[/* url */ String, /* data */ js.Object, Boolean]
 
 /**
@@ -4802,8 +4942,6 @@ type AddParserCallback = js.Function2[/* url */ String, /* data */ js.Object, Bo
 type AnimSetter = js.Function1[/* value */ js.Array[Double], Any]
 
 type AssetReadyCallback = js.Function1[/* asset */ Asset_, Any]
-
-type CalculateMatrixCallback = js.Function2[/* transformMatrix */ Mat4, /* view */ Double, Any]
 
 type ChangeSceneCallback = js.Function2[/* err */ String | Null, /* entity */ js.UndefOr[Entity], Any]
 
@@ -4852,7 +4990,7 @@ type ResourceHandlerCallback = js.Function2[/* err */ String | Null, /* response
 
 type ResourceLoaderCallback = js.Function2[/* err */ String | Null, /* resource */ js.UndefOr[Any], Any]
 
-type UpdateShaderCallback = js.Function1[/* options */ Any, Any]
+type UpdateShaderCallback = js.Function1[/* options */ StandardMaterialOptions, StandardMaterialOptions]
 
 type XrErrorCallback = js.Function1[/* err */ js.Error | Null, Any]
 

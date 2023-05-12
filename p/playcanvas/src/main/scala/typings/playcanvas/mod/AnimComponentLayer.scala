@@ -4,8 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** @typedef {import('./component.js').AnimComponent} AnimComponent */
-/** @typedef {import('../../asset/asset.js').Asset} Asset */
 /**
   * The Anim Component Layer allows managers a single layer of the animation state graph.
   */
@@ -17,10 +15,12 @@ open class AnimComponentLayer protected () extends StObject {
     *
     * @param {string} name - The name of the layer.
     * @param {object} controller - The controller to manage this layers animations.
-    * @param {AnimComponent} component - The component that this layer is a member of.
+    * @param {import('./component.js').AnimComponent} component - The component that this layer is
+    * a member of.
     * @param {number} [weight] - The weight of this layer. Defaults to 1.
     * @param {string} [blendType] - The blend type of this layer. Defaults to {@link ANIM_LAYER_OVERWRITE}.
-    * @param {boolean} [normalizedWeight] - Whether the weight of this layer should be normalized using the total weight of all layers.
+    * @param {boolean} [normalizedWeight] - Whether the weight of this layer should be normalized
+    * using the total weight of all layers.
     */
   def this(name: String, controller: js.Object, component: AnimComponent) = this()
   def this(name: String, controller: js.Object, component: AnimComponent, weight: Double) = this()
@@ -167,7 +167,7 @@ open class AnimComponentLayer protected () extends StObject {
     * Returns the asset that is associated with the given state.
     *
     * @param {string} stateName - The name of the state to get the asset for.
-    * @returns {Asset} The asset associated with the given state.
+    * @returns {import('../../asset/asset.js').Asset} The asset associated with the given state.
     */
   def getAnimationAsset(stateName: String): Asset_ = js.native
   

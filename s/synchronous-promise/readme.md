@@ -1,7 +1,7 @@
 
 # Scala.js typings for synchronous-promise
 
-Typings are for version 2.0.16
+Typings are for version 2.0.17
 
 ## Library description:
 Synchronous Promise-like prototype to use in testing where you would have used an ES6 Promise

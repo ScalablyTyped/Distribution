@@ -1,7 +1,7 @@
 package typings.wordpressComponents.anon
 
 import typings.react.mod.ReactNode
-import typings.wordpressNotices.mod.Status
+import typings.wordpressNotices.Status
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

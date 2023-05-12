@@ -36,7 +36,7 @@ object libTexturesResourcesBufferResourceMod {
     /**
       * Used to auto-detect the type of resource.
       * @param {*} source - The source object
-      * @returns {boolean} `true` if <canvas>
+      * @returns {boolean} `true` if \<canvas\>
       */
     inline def test(source: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("test")(source.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }

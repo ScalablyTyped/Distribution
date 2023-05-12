@@ -4,8 +4,7 @@ import typings.cssnanoPresetDefault.anon.Exclude
 import typings.cssnanoPresetDefault.anon.Optionsexcludetrueundefin
 import typings.cssnanoPresetDefault.anon.OptionsexcludetrueundefinAdd
 import typings.cssnanoPresetDefault.anon.OptionsexcludetrueundefinAngle
-import typings.cssnanoPresetDefault.anon.OptionsexcludetrueundefinDefaultProtocol
-import typings.cssnanoPresetDefault.anon.OptionsexcludetrueundefinEncode
+import typings.cssnanoPresetDefault.anon.OptionsexcludetrueundefinDatauri
 import typings.cssnanoPresetDefault.anon.OptionsexcludetrueundefinExclude
 import typings.cssnanoPresetDefault.anon.OptionsexcludetrueundefinPreferredQuote
 import typings.cssnanoPresetDefault.anon.Plugins
@@ -71,7 +70,7 @@ object mod {
     
     var normalizeUnicode: js.UndefOr[`false` | Exclude] = js.undefined
     
-    var normalizeUrl: js.UndefOr[`false` | OptionsexcludetrueundefinDefaultProtocol] = js.undefined
+    var normalizeUrl: js.UndefOr[`false` | Exclude] = js.undefined
     
     var normalizeWhitespace: js.UndefOr[`false` | Exclude] = js.undefined
     
@@ -83,7 +82,7 @@ object mod {
     
     var reduceTransforms: js.UndefOr[`false` | Exclude] = js.undefined
     
-    var svgo: js.UndefOr[`false` | OptionsexcludetrueundefinEncode] = js.undefined
+    var svgo: js.UndefOr[`false` | OptionsexcludetrueundefinDatauri] = js.undefined
     
     var uniqueSelectors: js.UndefOr[`false` | Exclude] = js.undefined
   }
@@ -177,7 +176,7 @@ object mod {
       
       inline def setNormalizeUnicodeUndefined: Self = StObject.set(x, "normalizeUnicode", js.undefined)
       
-      inline def setNormalizeUrl(value: `false` | OptionsexcludetrueundefinDefaultProtocol): Self = StObject.set(x, "normalizeUrl", value.asInstanceOf[js.Any])
+      inline def setNormalizeUrl(value: `false` | Exclude): Self = StObject.set(x, "normalizeUrl", value.asInstanceOf[js.Any])
       
       inline def setNormalizeUrlUndefined: Self = StObject.set(x, "normalizeUrl", js.undefined)
       
@@ -201,7 +200,7 @@ object mod {
       
       inline def setReduceTransformsUndefined: Self = StObject.set(x, "reduceTransforms", js.undefined)
       
-      inline def setSvgo(value: `false` | OptionsexcludetrueundefinEncode): Self = StObject.set(x, "svgo", value.asInstanceOf[js.Any])
+      inline def setSvgo(value: `false` | OptionsexcludetrueundefinDatauri): Self = StObject.set(x, "svgo", value.asInstanceOf[js.Any])
       
       inline def setSvgoUndefined: Self = StObject.set(x, "svgo", js.undefined)
       

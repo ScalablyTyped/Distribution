@@ -1,8 +1,9 @@
 package typings.openjscad
 
 import typings.openjscad.CSG.Polygon.Shared
-import typings.three.mod.Mesh
+import typings.three.buildThreeDotmoduleDotminMod.Mesh
 import typings.three.srcCoreBufferGeometryMod.BufferGeometry
+import typings.three.srcCoreBufferGeometryMod.NormalBufferAttributes
 import typings.three.srcMaterialsMaterialMod.Material
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -41,16 +42,16 @@ object anon {
     
     var boundLen: Double
     
-    var colorMesh: Mesh[BufferGeometry, Material | js.Array[Material]]
+    var colorMesh: Mesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]]
     
-    var wireframe: Mesh[BufferGeometry, Material | js.Array[Material]]
+    var wireframe: Mesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]]
   }
   object BoundLen {
     
     inline def apply(
       boundLen: Double,
-      colorMesh: Mesh[BufferGeometry, Material | js.Array[Material]],
-      wireframe: Mesh[BufferGeometry, Material | js.Array[Material]]
+      colorMesh: Mesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]],
+      wireframe: Mesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]]
     ): BoundLen = {
       val __obj = js.Dynamic.literal(boundLen = boundLen.asInstanceOf[js.Any], colorMesh = colorMesh.asInstanceOf[js.Any], wireframe = wireframe.asInstanceOf[js.Any])
       __obj.asInstanceOf[BoundLen]
@@ -61,9 +62,9 @@ object anon {
       
       inline def setBoundLen(value: Double): Self = StObject.set(x, "boundLen", value.asInstanceOf[js.Any])
       
-      inline def setColorMesh(value: Mesh[BufferGeometry, Material | js.Array[Material]]): Self = StObject.set(x, "colorMesh", value.asInstanceOf[js.Any])
+      inline def setColorMesh(value: Mesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]]): Self = StObject.set(x, "colorMesh", value.asInstanceOf[js.Any])
       
-      inline def setWireframe(value: Mesh[BufferGeometry, Material | js.Array[Material]]): Self = StObject.set(x, "wireframe", value.asInstanceOf[js.Any])
+      inline def setWireframe(value: Mesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]]): Self = StObject.set(x, "wireframe", value.asInstanceOf[js.Any])
     }
   }
   

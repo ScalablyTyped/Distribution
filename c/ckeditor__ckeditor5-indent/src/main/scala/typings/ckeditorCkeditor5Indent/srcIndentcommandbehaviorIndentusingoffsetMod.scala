@@ -1,7 +1,7 @@
 package typings.ckeditorCkeditor5Indent
 
 import typings.ckeditorCkeditor5Indent.anon.Direction
-import typings.ckeditorCkeditor5Indent.srcIndentblockcommandMod.IndentBehavior
+import typings.ckeditorCkeditor5Indent.srcIndentcommandbehaviorIndentbehaviorMod.IndentBehavior
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,20 +13,43 @@ object srcIndentcommandbehaviorIndentusingoffsetMod {
   open class default protected ()
     extends StObject
        with IndentUsingOffset {
+    /**
+      * Creates an instance of the indentation behavior.
+      *
+      * @param config.direction The direction of indentation.
+      * @param config.offset The offset of the next indentation step.
+      * @param config.unit Indentation unit.
+      */
     def this(config: Direction) = this()
     
+    /**
+      * Checks if the command should be enabled.
+      */
     /* CompleteClass */
     override def checkEnabled(indentAttributeValue: String): Boolean = js.native
     
+    /**
+      * Returns a new indent attribute value based on the current indent.
+      * This method returns `undefined` when the indentation should be removed.
+      */
     /* CompleteClass */
     override def getNextIndent(indentAttributeValue: String): js.UndefOr[String] = js.native
     
+    /**
+      * The direction of indentation.
+      */
     /* CompleteClass */
-    override val isForward: Boolean = js.native
+    var isForward: Boolean = js.native
     
+    /**
+      * The offset of the next indentation step.
+      */
     /* CompleteClass */
-    override val offset: Double = js.native
+    var offset: Double = js.native
     
+    /**
+      * Indentation unit.
+      */
     /* CompleteClass */
     var unit: String = js.native
   }
@@ -35,10 +58,19 @@ object srcIndentcommandbehaviorIndentusingoffsetMod {
     extends StObject
        with IndentBehavior {
     
-    val isForward: Boolean
+    /**
+      * The direction of indentation.
+      */
+    var isForward: Boolean
     
-    val offset: Double
+    /**
+      * The offset of the next indentation step.
+      */
+    var offset: Double
     
+    /**
+      * Indentation unit.
+      */
     var unit: String
   }
   object IndentUsingOffset {

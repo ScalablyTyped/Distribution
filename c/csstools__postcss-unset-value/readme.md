@@ -1,7 +1,7 @@
 
 # Scala.js typings for csstools__postcss-unset-value
 
-Typings are for version 1.0.2
+Typings are for version 2.0.1
 
 ## Library description:
 Use the unset keyword in CSS.

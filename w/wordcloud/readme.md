@@ -1,7 +1,7 @@
 
 # Scala.js typings for wordcloud
 
-Typings are for version 1.1
+Typings are for version 1.2
 
 ## Library description:
 Tag cloud/Wordle presentation on 2D canvas or HTML

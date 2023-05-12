@@ -68,6 +68,8 @@ object authMod {
   
   inline def initializeAuth(app: FirebaseApp, deps: js.UndefOr[Dependencies]): Auth = (^.asInstanceOf[js.Dynamic].applyDynamic("initializeAuth")(app.asInstanceOf[js.Any], deps.asInstanceOf[js.Any])).asInstanceOf[Auth]
   
+  inline def initializeRecaptchaConfig(auth: FirebaseAuth): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("initializeRecaptchaConfig")(auth.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  
   inline def isSignInWithEmailLink(auth: FirebaseAuth, emailLink: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSignInWithEmailLink")(auth.asInstanceOf[js.Any], emailLink.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   inline def linkWithCredential(user: typings.firebaseAuthTypes.mod.User, credential: AuthCredential): js.Promise[UserCredential] = (^.asInstanceOf[js.Dynamic].applyDynamic("linkWithCredential")(user.asInstanceOf[js.Any], credential.asInstanceOf[js.Any])).asInstanceOf[js.Promise[UserCredential]]

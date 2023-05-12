@@ -11,5 +11,9 @@ object distHasSupportsAtRuleAncestorMod {
   @js.native
   val ^ : js.Any = js.native
   
+  @JSImport("@csstools/postcss-hwb-function/dist/has-supports-at-rule-ancestor", "atSupportsHwbParams")
+  @js.native
+  val atSupportsHwbParams: /* "(color: hwb(0 0% 0%))" */ String = js.native
+  
   inline def hasSupportsAtRuleAncestor(node: Node): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasSupportsAtRuleAncestor")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

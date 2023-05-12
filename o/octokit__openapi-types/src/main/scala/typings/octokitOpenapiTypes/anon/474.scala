@@ -6,21 +6,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `474` extends StObject {
   
-  /** If `true` pull requests are omitted from the response (empty array). */
-  var exclude_pull_requests: js.UndefOr[Boolean] = js.undefined
+  @JSName("application/json")
+  var applicationSlashjson: js.Array[AccountCreatedat]
 }
 object `474` {
   
-  inline def apply(): `474` = {
+  inline def apply(applicationSlashjson: js.Array[AccountCreatedat]): `474` = {
     val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("application/json")(applicationSlashjson.asInstanceOf[js.Any])
     __obj.asInstanceOf[`474`]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: `474`] (val x: Self) extends AnyVal {
     
-    inline def setExclude_pull_requests(value: Boolean): Self = StObject.set(x, "exclude_pull_requests", value.asInstanceOf[js.Any])
+    inline def setApplicationSlashjson(value: js.Array[AccountCreatedat]): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
     
-    inline def setExclude_pull_requestsUndefined: Self = StObject.set(x, "exclude_pull_requests", js.undefined)
+    inline def setApplicationSlashjsonVarargs(value: AccountCreatedat*): Self = StObject.set(x, "application/json", js.Array(value*))
   }
 }

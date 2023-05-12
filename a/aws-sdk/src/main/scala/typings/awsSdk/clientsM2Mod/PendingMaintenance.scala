@@ -12,7 +12,7 @@ trait PendingMaintenance extends StObject {
   var engineVersion: js.UndefOr[String] = js.undefined
   
   /**
-    * The maintenance schedule for the engine version.
+    * The maintenance schedule for the runtime engine version.
     */
   var schedule: js.UndefOr[MaintenanceSchedule] = js.undefined
 }

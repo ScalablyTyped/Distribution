@@ -12,7 +12,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 /**
   * Creates a new ContentDialog control.
-  * @constructor
   * @param The DOM element that hosts the ContentDialog control.
   * @param options An object that contains one or more property/value pairs to apply to the new control. Each property of the options object corresponds to one of the control's properties or events.
   **/

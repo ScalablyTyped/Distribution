@@ -76,6 +76,7 @@ open class ImapFlow protected () extends StObject {
     * @see {@link https://imapflow.com/module-imapflow-ImapFlow.html#list}
     */
   def list(): js.Promise[js.Array[ListResponse]] = js.native
+  def list(options: typings.imapflow.anon.SpecialUseHints): js.Promise[js.Array[ListResponse]] = js.native
   
   def listTree(): js.Promise[ListTreeResponse] = js.native
   

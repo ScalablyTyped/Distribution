@@ -3,7 +3,7 @@ package typings.babylonjs
 import org.scalablytyped.runtime.StringDictionary
 import typings.babylonjs.animationsAnimatableDotinterfaceMod.IAnimatable
 import typings.babylonjs.anon.Default
-import typings.babylonjs.anon.Ubo
+import typings.babylonjs.anon.Vertex
 import typings.babylonjs.enginesEngineMod.Engine
 import typings.babylonjs.materialsEffectFallbacksMod.EffectFallbacks
 import typings.babylonjs.materialsMaterialDefinesMod.MaterialDefines
@@ -181,7 +181,7 @@ object materialsMaterialPluginBaseMod {
       * Gets the description of the uniforms to add to the ubo (if engine supports ubos) or to inject directly in the vertex/fragment shaders (if engine does not support ubos)
       * @returns the description of the uniforms
       */
-    def getUniforms(): Ubo = js.native
+    def getUniforms(): Vertex = js.native
     
     /**
       * Binds the material data (this function is called even if mustRebind() returns false)

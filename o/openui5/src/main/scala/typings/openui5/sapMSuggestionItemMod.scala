@@ -144,6 +144,8 @@ object sapMSuggestionItemMod {
     def getIcon(): String = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Return suggestion text. By default, it is the value of the `text` property.
       *
       * Subclasses may override this function.
@@ -153,6 +155,8 @@ object sapMSuggestionItemMod {
     def getSuggestionText(): String = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Produces the HTML of the suggestion item and writes it to render-output-buffer.
       *
       * Subclasses may override this function.

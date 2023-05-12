@@ -1,7 +1,7 @@
 
 # Scala.js typings for is-svg
 
-Typings are for version 4.3.2
+Typings are for version 5.0.0
 
 ## Library description:
 Check if a string or buffer is SVG

@@ -1,8 +1,8 @@
 package typings.ipfsHttpServer.anon
 
-import typings.hapiHapi.mod.ReqRefDefaults
-import typings.hapiHapi.mod.Request
-import typings.hapiHapi.mod.ResponseToolkit
+import typings.hapiHapi.libTypesRequestMod.ReqRefDefaults
+import typings.hapiHapi.libTypesRequestMod.Request
+import typings.hapiHapi.libTypesResponseMod.ResponseToolkit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

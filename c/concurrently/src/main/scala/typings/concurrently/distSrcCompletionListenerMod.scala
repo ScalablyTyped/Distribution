@@ -14,6 +14,8 @@ object distSrcCompletionListenerMod {
   open class CompletionListener protected () extends StObject {
     def this(param0: Scheduler) = this()
     
+    /* private */ var emitWithScheduler: Any = js.native
+    
     /* private */ var isSuccess: Any = js.native
     
     /**

@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.EmptyCells
+import typings.csstype.mod.Property.MaskImage
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `333` extends StObject {
   
   var value: js.UndefOr[
-    EmptyCells | (js.Array[
-      (Extract[js.UndefOr[EmptyCells | js.Array[NonNullable[js.UndefOr[EmptyCells]]]], String]) | NonNullable[js.UndefOr[EmptyCells]]
+    MaskImage | (js.Array[
+      (Extract[js.UndefOr[MaskImage | js.Array[NonNullable[js.UndefOr[MaskImage]]]], String]) | NonNullable[js.UndefOr[MaskImage]]
     ])
   ] = js.native
 }

@@ -13,6 +13,8 @@ trait Objectid extends StObject {
   var objectid: js.UndefOr[Double] = js.undefined
   
   var xAdsForce: js.UndefOr[Boolean] = js.undefined
+  
+  var xAdsFormat: js.UndefOr[String] = js.undefined
 }
 object Objectid {
   
@@ -39,5 +41,9 @@ object Objectid {
     inline def setXAdsForce(value: Boolean): Self = StObject.set(x, "xAdsForce", value.asInstanceOf[js.Any])
     
     inline def setXAdsForceUndefined: Self = StObject.set(x, "xAdsForce", js.undefined)
+    
+    inline def setXAdsFormat(value: String): Self = StObject.set(x, "xAdsFormat", value.asInstanceOf[js.Any])
+    
+    inline def setXAdsFormatUndefined: Self = StObject.set(x, "xAdsFormat", js.undefined)
   }
 }

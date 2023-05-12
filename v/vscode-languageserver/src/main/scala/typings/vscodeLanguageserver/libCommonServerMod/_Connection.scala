@@ -10,6 +10,7 @@ import typings.vscodeJsonrpc.libCommonConnectionMod.RequestHandler0
 import typings.vscodeJsonrpc.libCommonConnectionMod.StarNotificationHandler
 import typings.vscodeJsonrpc.libCommonConnectionMod.StarRequestHandler
 import typings.vscodeJsonrpc.libCommonDisposableMod.Disposable
+import typings.vscodeLanguageserver.anon.DefaultBehavior
 import typings.vscodeLanguageserver.anon.Placeholder
 import typings.vscodeLanguageserverProtocol.libCommonProtocolDotcolorProviderMod.ColorPresentationParams
 import typings.vscodeLanguageserverProtocol.libCommonProtocolDotcolorProviderMod.DocumentColorParams
@@ -140,7 +141,7 @@ trait _Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, P
   def onCodeActionResolve(handler: RequestHandler[CodeAction, CodeAction, Unit]): Disposable = js.native
   
   /**
-    * Compute a list of [lenses](#CodeLens). This call should return as fast as possible and if
+    * Compute a list of {@link CodeLens lenses}. This call should return as fast as possible and if
     * computing the commands is expensive implementers should only return code lens objects with the
     * range set and handle the resolve request.
     *
@@ -439,9 +440,9 @@ trait _Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, P
   def onNotification(`type`: NotificationType0, handler: NotificationHandler0): Disposable = js.native
   def onNotification[P](`type`: NotificationType[P], handler: NotificationHandler[P]): Disposable = js.native
   /**
-    * Installs a notification handler described by the given [NotificationType](#NotificationType).
+    * Installs a notification handler described by the given {@link NotificationType}.
     *
-    * @param type The [NotificationType](#NotificationType) describing the notification.
+    * @param type The {@link NotificationType} describing the notification.
     * @param handler The handler to install.
     */
   def onNotification[RO](`type`: ProtocolNotificationType0[RO], handler: NotificationHandler0): Disposable = js.native
@@ -452,7 +453,9 @@ trait _Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, P
     *
     * @param handler The corresponding handler.
     */
-  def onPrepareRename(handler: RequestHandler[PrepareRenameParams, js.UndefOr[Range | Placeholder | Null], Unit]): Disposable = js.native
+  def onPrepareRename(
+    handler: RequestHandler[PrepareRenameParams, js.UndefOr[Range | Placeholder | DefaultBehavior | Null], Unit]
+  ): Disposable = js.native
   
   /**
     * Installs a progress handler for a given token.
@@ -494,9 +497,9 @@ trait _Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, P
   def onRequest[R, E](method: String, handler: GenericRequestHandler[R, E]): Disposable = js.native
   def onRequest[P, R, E](`type`: RequestType[P, R, E], handler: RequestHandler[P, R, E]): Disposable = js.native
   /**
-    * Installs a request handler described by the given [RequestType](#RequestType).
+    * Installs a request handler described by the given {@link RequestType}.
     *
-    * @param type The [RequestType](#RequestType) describing the request.
+    * @param type The {@link RequestType} describing the request.
     * @param handler The handler to install
     */
   def onRequest[R, PR, E, RO](`type`: ProtocolRequestType0[R, PR, E, RO], handler: RequestHandler0[R, E]): Disposable = js.native
@@ -589,7 +592,7 @@ trait _Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, P
     *
     * @param handler The corresponding handler.
     */
-  def onWorkspaceSymbolResolve(handler: ServerRequestHandler[WorkspaceSymbol, WorkspaceSymbol, scala.Nothing, Unit]): Disposable = js.native
+  def onWorkspaceSymbolResolve(handler: RequestHandler[WorkspaceSymbol, WorkspaceSymbol, Unit]): Disposable = js.native
   
   /**
     * Sends diagnostics computed for a given document to VSCode to render them in the
@@ -612,7 +615,7 @@ trait _Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, P
   /**
     * Send a notification to the client.
     *
-    * @param type The [NotificationType](#NotificationType) describing the notification.
+    * @param type The {@link NotificationType} describing the notification.
     * @param params The notification's parameters.
     */
   def sendNotification[RO](`type`: ProtocolNotificationType0[RO]): js.Promise[Unit] = js.native
@@ -644,7 +647,7 @@ trait _Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, P
   /**
     * Send a request to the client.
     *
-    * @param type The [RequestType](#RequestType) describing the request.
+    * @param type The {@link RequestType} describing the request.
     * @param params The request's parameters.
     */
   def sendRequest[R, PR, E, RO](`type`: ProtocolRequestType0[R, PR, E, RO]): js.Promise[R] = js.native

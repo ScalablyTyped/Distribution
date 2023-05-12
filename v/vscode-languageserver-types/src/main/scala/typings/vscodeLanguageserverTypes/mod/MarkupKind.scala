@@ -32,7 +32,7 @@ object MarkupKind {
   val PlainText: plaintext = js.native
   
   /**
-    * Checks whether the given value is a value of the [MarkupKind](#MarkupKind) type.
+    * Checks whether the given value is a value of the {@link MarkupKind} type.
     */
   inline def is(value: Any): /* is vscode-languageserver-types.vscode-languageserver-types.MarkupKind */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.MarkupKind */ Boolean]
 }

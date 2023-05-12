@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.MaskBorderSource
+import typings.csstype.mod.Property.HyphenateCharacter
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,11 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `396` extends StObject {
   
   var value: js.UndefOr[
-    MaskBorderSource | (js.Array[
+    HyphenateCharacter | (js.Array[
       (Extract[
-        js.UndefOr[MaskBorderSource | js.Array[NonNullable[js.UndefOr[MaskBorderSource]]]], 
+        js.UndefOr[HyphenateCharacter | js.Array[NonNullable[js.UndefOr[HyphenateCharacter]]]], 
         String
-      ]) | NonNullable[js.UndefOr[MaskBorderSource]]
+      ]) | NonNullable[js.UndefOr[HyphenateCharacter]]
     ])
   ] = js.native
 }

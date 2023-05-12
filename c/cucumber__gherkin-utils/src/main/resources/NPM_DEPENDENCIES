@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@cucumber/gherkin-utils" : "8.0.1"
+      "@cucumber/gherkin-utils" : "8.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@cucumber/gherkin-utils" : "8.0.1"
+      "@cucumber/gherkin-utils" : "8.0.2"
     }
   ],
   "compile-devDependencies" : [

@@ -8,6 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object chromeRemoteInterfaceStrings {
   
   @js.native
+  sealed trait Accessibility extends StObject
+  inline def Accessibility: Accessibility = "Accessibility".asInstanceOf[Accessibility]
+  
+  @js.native
   sealed trait AccessibilityDotdisable extends StObject
   inline def AccessibilityDotdisable: AccessibilityDotdisable = "Accessibility.disable".asInstanceOf[AccessibilityDotdisable]
   
@@ -46,6 +50,10 @@ object chromeRemoteInterfaceStrings {
   @js.native
   sealed trait AccessibilityDotqueryAXTree extends StObject
   inline def AccessibilityDotqueryAXTree: AccessibilityDotqueryAXTree = "Accessibility.queryAXTree".asInstanceOf[AccessibilityDotqueryAXTree]
+  
+  @js.native
+  sealed trait Animation extends StObject
+  inline def Animation: Animation = "Animation".asInstanceOf[Animation]
   
   @js.native
   sealed trait AnimationDotanimationCanceled extends StObject
@@ -100,6 +108,14 @@ object chromeRemoteInterfaceStrings {
   inline def AnimationDotsetTiming: AnimationDotsetTiming = "Animation.setTiming".asInstanceOf[AnimationDotsetTiming]
   
   @js.native
+  sealed trait ApplicationCache extends StObject
+  inline def ApplicationCache: ApplicationCache = "ApplicationCache".asInstanceOf[ApplicationCache]
+  
+  @js.native
+  sealed trait Audits extends StObject
+  inline def Audits: Audits = "Audits".asInstanceOf[Audits]
+  
+  @js.native
   sealed trait AuditsDotcheckContrast extends StObject
   inline def AuditsDotcheckContrast: AuditsDotcheckContrast = "Audits.checkContrast".asInstanceOf[AuditsDotcheckContrast]
   
@@ -118,6 +134,14 @@ object chromeRemoteInterfaceStrings {
   @js.native
   sealed trait AuditsDotissueAdded extends StObject
   inline def AuditsDotissueAdded: AuditsDotissueAdded = "Audits.issueAdded".asInstanceOf[AuditsDotissueAdded]
+  
+  @js.native
+  sealed trait AutofillDottrigger extends StObject
+  inline def AutofillDottrigger: AutofillDottrigger = "Autofill.trigger".asInstanceOf[AutofillDottrigger]
+  
+  @js.native
+  sealed trait BackgroundService extends StObject
+  inline def BackgroundService: BackgroundService = "BackgroundService".asInstanceOf[BackgroundService]
   
   @js.native
   sealed trait BackgroundServiceDotbackgroundServiceEventReceived extends StObject
@@ -142,6 +166,10 @@ object chromeRemoteInterfaceStrings {
   @js.native
   sealed trait BackgroundServiceDotstopObserving extends StObject
   inline def BackgroundServiceDotstopObserving: BackgroundServiceDotstopObserving = "BackgroundService.stopObserving".asInstanceOf[BackgroundServiceDotstopObserving]
+  
+  @js.native
+  sealed trait Browser extends StObject
+  inline def Browser: Browser = "Browser".asInstanceOf[Browser]
   
   @js.native
   sealed trait BrowserDotcancelDownload extends StObject
@@ -218,6 +246,10 @@ object chromeRemoteInterfaceStrings {
   @js.native
   sealed trait BrowserDotsetWindowBounds extends StObject
   inline def BrowserDotsetWindowBounds: BrowserDotsetWindowBounds = "Browser.setWindowBounds".asInstanceOf[BrowserDotsetWindowBounds]
+  
+  @js.native
+  sealed trait CSS extends StObject
+  inline def CSS: CSS = "CSS".asInstanceOf[CSS]
   
   @js.native
   sealed trait CSSDotaddRule extends StObject
@@ -356,6 +388,10 @@ object chromeRemoteInterfaceStrings {
   inline def CSSDottrackComputedStyleUpdates: CSSDottrackComputedStyleUpdates = "CSS.trackComputedStyleUpdates".asInstanceOf[CSSDottrackComputedStyleUpdates]
   
   @js.native
+  sealed trait CacheStorage extends StObject
+  inline def CacheStorage: CacheStorage = "CacheStorage".asInstanceOf[CacheStorage]
+  
+  @js.native
   sealed trait CacheStorageDotdeleteCache extends StObject
   inline def CacheStorageDotdeleteCache: CacheStorageDotdeleteCache = "CacheStorage.deleteCache".asInstanceOf[CacheStorageDotdeleteCache]
   
@@ -374,6 +410,10 @@ object chromeRemoteInterfaceStrings {
   @js.native
   sealed trait CacheStorageDotrequestEntries extends StObject
   inline def CacheStorageDotrequestEntries: CacheStorageDotrequestEntries = "CacheStorage.requestEntries".asInstanceOf[CacheStorageDotrequestEntries]
+  
+  @js.native
+  sealed trait Cast extends StObject
+  inline def Cast: Cast = "Cast".asInstanceOf[Cast]
   
   @js.native
   sealed trait CastDotdisable extends StObject
@@ -408,6 +448,10 @@ object chromeRemoteInterfaceStrings {
   inline def CastDotstopCasting: CastDotstopCasting = "Cast.stopCasting".asInstanceOf[CastDotstopCasting]
   
   @js.native
+  sealed trait Console extends StObject
+  inline def Console: Console = "Console".asInstanceOf[Console]
+  
+  @js.native
   sealed trait ConsoleDotclearMessages extends StObject
   inline def ConsoleDotclearMessages: ConsoleDotclearMessages = "Console.clearMessages".asInstanceOf[ConsoleDotclearMessages]
   
@@ -422,6 +466,14 @@ object chromeRemoteInterfaceStrings {
   @js.native
   sealed trait ConsoleDotmessageAdded extends StObject
   inline def ConsoleDotmessageAdded: ConsoleDotmessageAdded = "Console.messageAdded".asInstanceOf[ConsoleDotmessageAdded]
+  
+  @js.native
+  sealed trait DOM extends StObject
+  inline def DOM: DOM = "DOM".asInstanceOf[DOM]
+  
+  @js.native
+  sealed trait DOMDebugger extends StObject
+  inline def DOMDebugger: DOMDebugger = "DOMDebugger".asInstanceOf[DOMDebugger]
   
   @js.native
   sealed trait DOMDebuggerDotgetEventListeners extends StObject
@@ -720,6 +772,10 @@ object chromeRemoteInterfaceStrings {
   inline def DOMDotundo: DOMDotundo = "DOM.undo".asInstanceOf[DOMDotundo]
   
   @js.native
+  sealed trait DOMSnapshot extends StObject
+  inline def DOMSnapshot: DOMSnapshot = "DOMSnapshot".asInstanceOf[DOMSnapshot]
+  
+  @js.native
   sealed trait DOMSnapshotDotcaptureSnapshot extends StObject
   inline def DOMSnapshotDotcaptureSnapshot: DOMSnapshotDotcaptureSnapshot = "DOMSnapshot.captureSnapshot".asInstanceOf[DOMSnapshotDotcaptureSnapshot]
   
@@ -734,6 +790,10 @@ object chromeRemoteInterfaceStrings {
   @js.native
   sealed trait DOMSnapshotDotgetSnapshot extends StObject
   inline def DOMSnapshotDotgetSnapshot: DOMSnapshotDotgetSnapshot = "DOMSnapshot.getSnapshot".asInstanceOf[DOMSnapshotDotgetSnapshot]
+  
+  @js.native
+  sealed trait DOMStorage extends StObject
+  inline def DOMStorage: DOMStorage = "DOMStorage".asInstanceOf[DOMStorage]
   
   @js.native
   sealed trait DOMStorageDotclear extends StObject
@@ -776,6 +836,10 @@ object chromeRemoteInterfaceStrings {
   inline def DOMStorageDotsetDOMStorageItem: DOMStorageDotsetDOMStorageItem = "DOMStorage.setDOMStorageItem".asInstanceOf[DOMStorageDotsetDOMStorageItem]
   
   @js.native
+  sealed trait Database extends StObject
+  inline def Database: Database = "Database".asInstanceOf[Database]
+  
+  @js.native
   sealed trait DatabaseDotaddDatabase extends StObject
   inline def DatabaseDotaddDatabase: DatabaseDotaddDatabase = "Database.addDatabase".asInstanceOf[DatabaseDotaddDatabase]
   
@@ -794,6 +858,10 @@ object chromeRemoteInterfaceStrings {
   @js.native
   sealed trait DatabaseDotgetDatabaseTableNames extends StObject
   inline def DatabaseDotgetDatabaseTableNames: DatabaseDotgetDatabaseTableNames = "Database.getDatabaseTableNames".asInstanceOf[DatabaseDotgetDatabaseTableNames]
+  
+  @js.native
+  sealed trait Debugger extends StObject
+  inline def Debugger: Debugger = "Debugger".asInstanceOf[Debugger]
   
   @js.native
   sealed trait DebuggerDotbreakpointResolved extends StObject
@@ -944,12 +1012,40 @@ object chromeRemoteInterfaceStrings {
   inline def DebuggerDotstepOver: DebuggerDotstepOver = "Debugger.stepOver".asInstanceOf[DebuggerDotstepOver]
   
   @js.native
+  sealed trait DeviceAccessDotcancelPrompt extends StObject
+  inline def DeviceAccessDotcancelPrompt: DeviceAccessDotcancelPrompt = "DeviceAccess.cancelPrompt".asInstanceOf[DeviceAccessDotcancelPrompt]
+  
+  @js.native
+  sealed trait DeviceAccessDotdeviceRequestPrompted extends StObject
+  inline def DeviceAccessDotdeviceRequestPrompted: DeviceAccessDotdeviceRequestPrompted = "DeviceAccess.deviceRequestPrompted".asInstanceOf[DeviceAccessDotdeviceRequestPrompted]
+  
+  @js.native
+  sealed trait DeviceAccessDotdisable extends StObject
+  inline def DeviceAccessDotdisable: DeviceAccessDotdisable = "DeviceAccess.disable".asInstanceOf[DeviceAccessDotdisable]
+  
+  @js.native
+  sealed trait DeviceAccessDotenable extends StObject
+  inline def DeviceAccessDotenable: DeviceAccessDotenable = "DeviceAccess.enable".asInstanceOf[DeviceAccessDotenable]
+  
+  @js.native
+  sealed trait DeviceAccessDotselectPrompt extends StObject
+  inline def DeviceAccessDotselectPrompt: DeviceAccessDotselectPrompt = "DeviceAccess.selectPrompt".asInstanceOf[DeviceAccessDotselectPrompt]
+  
+  @js.native
+  sealed trait DeviceOrientation extends StObject
+  inline def DeviceOrientation: DeviceOrientation = "DeviceOrientation".asInstanceOf[DeviceOrientation]
+  
+  @js.native
   sealed trait DeviceOrientationDotclearDeviceOrientationOverride extends StObject
   inline def DeviceOrientationDotclearDeviceOrientationOverride: DeviceOrientationDotclearDeviceOrientationOverride = "DeviceOrientation.clearDeviceOrientationOverride".asInstanceOf[DeviceOrientationDotclearDeviceOrientationOverride]
   
   @js.native
   sealed trait DeviceOrientationDotsetDeviceOrientationOverride extends StObject
   inline def DeviceOrientationDotsetDeviceOrientationOverride: DeviceOrientationDotsetDeviceOrientationOverride = "DeviceOrientation.setDeviceOrientationOverride".asInstanceOf[DeviceOrientationDotsetDeviceOrientationOverride]
+  
+  @js.native
+  sealed trait Emulation extends StObject
+  inline def Emulation: Emulation = "Emulation".asInstanceOf[Emulation]
   
   @js.native
   sealed trait EmulationDotcanEmulate extends StObject
@@ -1080,6 +1176,34 @@ object chromeRemoteInterfaceStrings {
   inline def EventBreakpointsDotsetInstrumentationBreakpoint: EventBreakpointsDotsetInstrumentationBreakpoint = "EventBreakpoints.setInstrumentationBreakpoint".asInstanceOf[EventBreakpointsDotsetInstrumentationBreakpoint]
   
   @js.native
+  sealed trait FedCmDotdialogShown extends StObject
+  inline def FedCmDotdialogShown: FedCmDotdialogShown = "FedCm.dialogShown".asInstanceOf[FedCmDotdialogShown]
+  
+  @js.native
+  sealed trait FedCmDotdisable extends StObject
+  inline def FedCmDotdisable: FedCmDotdisable = "FedCm.disable".asInstanceOf[FedCmDotdisable]
+  
+  @js.native
+  sealed trait FedCmDotdismissDialog extends StObject
+  inline def FedCmDotdismissDialog: FedCmDotdismissDialog = "FedCm.dismissDialog".asInstanceOf[FedCmDotdismissDialog]
+  
+  @js.native
+  sealed trait FedCmDotenable extends StObject
+  inline def FedCmDotenable: FedCmDotenable = "FedCm.enable".asInstanceOf[FedCmDotenable]
+  
+  @js.native
+  sealed trait FedCmDotresetCooldown extends StObject
+  inline def FedCmDotresetCooldown: FedCmDotresetCooldown = "FedCm.resetCooldown".asInstanceOf[FedCmDotresetCooldown]
+  
+  @js.native
+  sealed trait FedCmDotselectAccount extends StObject
+  inline def FedCmDotselectAccount: FedCmDotselectAccount = "FedCm.selectAccount".asInstanceOf[FedCmDotselectAccount]
+  
+  @js.native
+  sealed trait Fetch extends StObject
+  inline def Fetch: Fetch = "Fetch".asInstanceOf[Fetch]
+  
+  @js.native
   sealed trait FetchDotauthRequired extends StObject
   inline def FetchDotauthRequired: FetchDotauthRequired = "Fetch.authRequired".asInstanceOf[FetchDotauthRequired]
   
@@ -1124,6 +1248,10 @@ object chromeRemoteInterfaceStrings {
   inline def FetchDottakeResponseBodyAsStream: FetchDottakeResponseBodyAsStream = "Fetch.takeResponseBodyAsStream".asInstanceOf[FetchDottakeResponseBodyAsStream]
   
   @js.native
+  sealed trait HeadlessExperimental extends StObject
+  inline def HeadlessExperimental: HeadlessExperimental = "HeadlessExperimental".asInstanceOf[HeadlessExperimental]
+  
+  @js.native
   sealed trait HeadlessExperimentalDotbeginFrame extends StObject
   inline def HeadlessExperimentalDotbeginFrame: HeadlessExperimentalDotbeginFrame = "HeadlessExperimental.beginFrame".asInstanceOf[HeadlessExperimentalDotbeginFrame]
   
@@ -1134,6 +1262,10 @@ object chromeRemoteInterfaceStrings {
   @js.native
   sealed trait HeadlessExperimentalDotenable extends StObject
   inline def HeadlessExperimentalDotenable: HeadlessExperimentalDotenable = "HeadlessExperimental.enable".asInstanceOf[HeadlessExperimentalDotenable]
+  
+  @js.native
+  sealed trait HeapProfiler extends StObject
+  inline def HeapProfiler: HeapProfiler = "HeapProfiler".asInstanceOf[HeapProfiler]
   
   @js.native
   sealed trait HeapProfilerDotaddHeapSnapshotChunk extends StObject
@@ -1204,6 +1336,10 @@ object chromeRemoteInterfaceStrings {
   inline def HeapProfilerDottakeHeapSnapshot: HeapProfilerDottakeHeapSnapshot = "HeapProfiler.takeHeapSnapshot".asInstanceOf[HeapProfilerDottakeHeapSnapshot]
   
   @js.native
+  sealed trait IO extends StObject
+  inline def IO: IO = "IO".asInstanceOf[IO]
+  
+  @js.native
   sealed trait IODotclose extends StObject
   inline def IODotclose: IODotclose = "IO.close".asInstanceOf[IODotclose]
   
@@ -1214,6 +1350,10 @@ object chromeRemoteInterfaceStrings {
   @js.native
   sealed trait IODotresolveBlob extends StObject
   inline def IODotresolveBlob: IODotresolveBlob = "IO.resolveBlob".asInstanceOf[IODotresolveBlob]
+  
+  @js.native
+  sealed trait IndexedDB extends StObject
+  inline def IndexedDB: IndexedDB = "IndexedDB".asInstanceOf[IndexedDB]
   
   @js.native
   sealed trait IndexedDBDotclearObjectStore extends StObject
@@ -1250,6 +1390,10 @@ object chromeRemoteInterfaceStrings {
   @js.native
   sealed trait IndexedDBDotrequestDatabaseNames extends StObject
   inline def IndexedDBDotrequestDatabaseNames: IndexedDBDotrequestDatabaseNames = "IndexedDB.requestDatabaseNames".asInstanceOf[IndexedDBDotrequestDatabaseNames]
+  
+  @js.native
+  sealed trait Input extends StObject
+  inline def Input: Input = "Input".asInstanceOf[Input]
   
   @js.native
   sealed trait InputDotdispatchDragEvent extends StObject
@@ -1304,6 +1448,10 @@ object chromeRemoteInterfaceStrings {
   inline def InputDotsynthesizeTapGesture: InputDotsynthesizeTapGesture = "Input.synthesizeTapGesture".asInstanceOf[InputDotsynthesizeTapGesture]
   
   @js.native
+  sealed trait Inspector extends StObject
+  inline def Inspector: Inspector = "Inspector".asInstanceOf[Inspector]
+  
+  @js.native
   sealed trait InspectorDotdetached extends StObject
   inline def InspectorDotdetached: InspectorDotdetached = "Inspector.detached".asInstanceOf[InspectorDotdetached]
   
@@ -1322,6 +1470,10 @@ object chromeRemoteInterfaceStrings {
   @js.native
   sealed trait InspectorDottargetReloadedAfterCrash extends StObject
   inline def InspectorDottargetReloadedAfterCrash: InspectorDottargetReloadedAfterCrash = "Inspector.targetReloadedAfterCrash".asInstanceOf[InspectorDottargetReloadedAfterCrash]
+  
+  @js.native
+  sealed trait LayerTree extends StObject
+  inline def LayerTree: LayerTree = "LayerTree".asInstanceOf[LayerTree]
   
   @js.native
   sealed trait LayerTreeDotcompositingReasons extends StObject
@@ -1368,6 +1520,10 @@ object chromeRemoteInterfaceStrings {
   inline def LayerTreeDotsnapshotCommandLog: LayerTreeDotsnapshotCommandLog = "LayerTree.snapshotCommandLog".asInstanceOf[LayerTreeDotsnapshotCommandLog]
   
   @js.native
+  sealed trait Log extends StObject
+  inline def Log: Log = "Log".asInstanceOf[Log]
+  
+  @js.native
   sealed trait LogDotclear extends StObject
   inline def LogDotclear: LogDotclear = "Log.clear".asInstanceOf[LogDotclear]
   
@@ -1390,6 +1546,10 @@ object chromeRemoteInterfaceStrings {
   @js.native
   sealed trait LogDotstopViolationsReport extends StObject
   inline def LogDotstopViolationsReport: LogDotstopViolationsReport = "Log.stopViolationsReport".asInstanceOf[LogDotstopViolationsReport]
+  
+  @js.native
+  sealed trait Media extends StObject
+  inline def Media: Media = "Media".asInstanceOf[Media]
   
   @js.native
   sealed trait MediaDotdisable extends StObject
@@ -1418,6 +1578,10 @@ object chromeRemoteInterfaceStrings {
   @js.native
   sealed trait MediaDotplayersCreated extends StObject
   inline def MediaDotplayersCreated: MediaDotplayersCreated = "Media.playersCreated".asInstanceOf[MediaDotplayersCreated]
+  
+  @js.native
+  sealed trait Memory extends StObject
+  inline def Memory: Memory = "Memory".asInstanceOf[Memory]
   
   @js.native
   sealed trait MemoryDotforciblyPurgeJavaScriptMemory extends StObject
@@ -1458,6 +1622,10 @@ object chromeRemoteInterfaceStrings {
   @js.native
   sealed trait MemoryDotstopSampling extends StObject
   inline def MemoryDotstopSampling: MemoryDotstopSampling = "Memory.stopSampling".asInstanceOf[MemoryDotstopSampling]
+  
+  @js.native
+  sealed trait Network extends StObject
+  inline def Network: Network = "Network".asInstanceOf[Network]
   
   @js.native
   sealed trait NetworkDotcanClearBrowserCache extends StObject
@@ -1712,6 +1880,10 @@ object chromeRemoteInterfaceStrings {
   inline def NetworkDotwebTransportCreated: NetworkDotwebTransportCreated = "Network.webTransportCreated".asInstanceOf[NetworkDotwebTransportCreated]
   
   @js.native
+  sealed trait Overlay extends StObject
+  inline def Overlay: Overlay = "Overlay".asInstanceOf[Overlay]
+  
+  @js.native
   sealed trait OverlayDotdisable extends StObject
   inline def OverlayDotdisable: OverlayDotdisable = "Overlay.disable".asInstanceOf[OverlayDotdisable]
   
@@ -1838,6 +2010,10 @@ object chromeRemoteInterfaceStrings {
   @js.native
   sealed trait OverlayDotsetShowWebVitals extends StObject
   inline def OverlayDotsetShowWebVitals: OverlayDotsetShowWebVitals = "Overlay.setShowWebVitals".asInstanceOf[OverlayDotsetShowWebVitals]
+  
+  @js.native
+  sealed trait Page extends StObject
+  inline def Page: Page = "Page".asInstanceOf[Page]
   
   @js.native
   sealed trait PageDotaddCompilationCache extends StObject
@@ -2064,10 +2240,6 @@ object chromeRemoteInterfaceStrings {
   inline def PageDotnavigatedWithinDocument: PageDotnavigatedWithinDocument = "Page.navigatedWithinDocument".asInstanceOf[PageDotnavigatedWithinDocument]
   
   @js.native
-  sealed trait PageDotprerenderAttemptCompleted extends StObject
-  inline def PageDotprerenderAttemptCompleted: PageDotprerenderAttemptCompleted = "Page.prerenderAttemptCompleted".asInstanceOf[PageDotprerenderAttemptCompleted]
-  
-  @js.native
   sealed trait PageDotprintToPDF extends StObject
   inline def PageDotprintToPDF: PageDotprintToPDF = "Page.printToPDF".asInstanceOf[PageDotprintToPDF]
   
@@ -2152,6 +2324,10 @@ object chromeRemoteInterfaceStrings {
   inline def PageDotsetLifecycleEventsEnabled: PageDotsetLifecycleEventsEnabled = "Page.setLifecycleEventsEnabled".asInstanceOf[PageDotsetLifecycleEventsEnabled]
   
   @js.native
+  sealed trait PageDotsetRPHRegistrationMode extends StObject
+  inline def PageDotsetRPHRegistrationMode: PageDotsetRPHRegistrationMode = "Page.setRPHRegistrationMode".asInstanceOf[PageDotsetRPHRegistrationMode]
+  
+  @js.native
   sealed trait PageDotsetSPCTransactionMode extends StObject
   inline def PageDotsetSPCTransactionMode: PageDotsetSPCTransactionMode = "Page.setSPCTransactionMode".asInstanceOf[PageDotsetSPCTransactionMode]
   
@@ -2184,6 +2360,10 @@ object chromeRemoteInterfaceStrings {
   inline def PageDotwindowOpen: PageDotwindowOpen = "Page.windowOpen".asInstanceOf[PageDotwindowOpen]
   
   @js.native
+  sealed trait Performance extends StObject
+  inline def Performance: Performance = "Performance".asInstanceOf[Performance]
+  
+  @js.native
   sealed trait PerformanceDotdisable extends StObject
   inline def PerformanceDotdisable: PerformanceDotdisable = "Performance.disable".asInstanceOf[PerformanceDotdisable]
   
@@ -2210,6 +2390,46 @@ object chromeRemoteInterfaceStrings {
   @js.native
   sealed trait PerformanceTimelineDottimelineEventAdded extends StObject
   inline def PerformanceTimelineDottimelineEventAdded: PerformanceTimelineDottimelineEventAdded = "PerformanceTimeline.timelineEventAdded".asInstanceOf[PerformanceTimelineDottimelineEventAdded]
+  
+  @js.native
+  sealed trait PreloadDotdisable extends StObject
+  inline def PreloadDotdisable: PreloadDotdisable = "Preload.disable".asInstanceOf[PreloadDotdisable]
+  
+  @js.native
+  sealed trait PreloadDotenable extends StObject
+  inline def PreloadDotenable: PreloadDotenable = "Preload.enable".asInstanceOf[PreloadDotenable]
+  
+  @js.native
+  sealed trait PreloadDotprefetchStatusUpdated extends StObject
+  inline def PreloadDotprefetchStatusUpdated: PreloadDotprefetchStatusUpdated = "Preload.prefetchStatusUpdated".asInstanceOf[PreloadDotprefetchStatusUpdated]
+  
+  @js.native
+  sealed trait PreloadDotpreloadEnabledStateUpdated extends StObject
+  inline def PreloadDotpreloadEnabledStateUpdated: PreloadDotpreloadEnabledStateUpdated = "Preload.preloadEnabledStateUpdated".asInstanceOf[PreloadDotpreloadEnabledStateUpdated]
+  
+  @js.native
+  sealed trait PreloadDotpreloadingAttemptSourcesUpdated extends StObject
+  inline def PreloadDotpreloadingAttemptSourcesUpdated: PreloadDotpreloadingAttemptSourcesUpdated = "Preload.preloadingAttemptSourcesUpdated".asInstanceOf[PreloadDotpreloadingAttemptSourcesUpdated]
+  
+  @js.native
+  sealed trait PreloadDotprerenderAttemptCompleted extends StObject
+  inline def PreloadDotprerenderAttemptCompleted: PreloadDotprerenderAttemptCompleted = "Preload.prerenderAttemptCompleted".asInstanceOf[PreloadDotprerenderAttemptCompleted]
+  
+  @js.native
+  sealed trait PreloadDotprerenderStatusUpdated extends StObject
+  inline def PreloadDotprerenderStatusUpdated: PreloadDotprerenderStatusUpdated = "Preload.prerenderStatusUpdated".asInstanceOf[PreloadDotprerenderStatusUpdated]
+  
+  @js.native
+  sealed trait PreloadDotruleSetRemoved extends StObject
+  inline def PreloadDotruleSetRemoved: PreloadDotruleSetRemoved = "Preload.ruleSetRemoved".asInstanceOf[PreloadDotruleSetRemoved]
+  
+  @js.native
+  sealed trait PreloadDotruleSetUpdated extends StObject
+  inline def PreloadDotruleSetUpdated: PreloadDotruleSetUpdated = "Preload.ruleSetUpdated".asInstanceOf[PreloadDotruleSetUpdated]
+  
+  @js.native
+  sealed trait Profiler extends StObject
+  inline def Profiler: Profiler = "Profiler".asInstanceOf[Profiler]
   
   @js.native
   sealed trait ProfilerDotconsoleProfileFinished extends StObject
@@ -2258,6 +2478,10 @@ object chromeRemoteInterfaceStrings {
   @js.native
   sealed trait ProfilerDottakePreciseCoverage extends StObject
   inline def ProfilerDottakePreciseCoverage: ProfilerDottakePreciseCoverage = "Profiler.takePreciseCoverage".asInstanceOf[ProfilerDottakePreciseCoverage]
+  
+  @js.native
+  sealed trait Runtime extends StObject
+  inline def Runtime: Runtime = "Runtime".asInstanceOf[Runtime]
   
   @js.native
   sealed trait RuntimeDotaddBinding extends StObject
@@ -2384,8 +2608,16 @@ object chromeRemoteInterfaceStrings {
   inline def RuntimeDotterminateExecution: RuntimeDotterminateExecution = "Runtime.terminateExecution".asInstanceOf[RuntimeDotterminateExecution]
   
   @js.native
+  sealed trait Schema extends StObject
+  inline def Schema: Schema = "Schema".asInstanceOf[Schema]
+  
+  @js.native
   sealed trait SchemaDotgetDomains extends StObject
   inline def SchemaDotgetDomains: SchemaDotgetDomains = "Schema.getDomains".asInstanceOf[SchemaDotgetDomains]
+  
+  @js.native
+  sealed trait Security extends StObject
+  inline def Security: Security = "Security".asInstanceOf[Security]
   
   @js.native
   sealed trait SecurityDotcertificateError extends StObject
@@ -2418,6 +2650,10 @@ object chromeRemoteInterfaceStrings {
   @js.native
   sealed trait SecurityDotvisibleSecurityStateChanged extends StObject
   inline def SecurityDotvisibleSecurityStateChanged: SecurityDotvisibleSecurityStateChanged = "Security.visibleSecurityStateChanged".asInstanceOf[SecurityDotvisibleSecurityStateChanged]
+  
+  @js.native
+  sealed trait ServiceWorker extends StObject
+  inline def ServiceWorker: ServiceWorker = "ServiceWorker".asInstanceOf[ServiceWorker]
   
   @js.native
   sealed trait ServiceWorkerDotdeliverPushMessage extends StObject
@@ -2484,6 +2720,10 @@ object chromeRemoteInterfaceStrings {
   inline def ServiceWorkerDotworkerVersionUpdated: ServiceWorkerDotworkerVersionUpdated = "ServiceWorker.workerVersionUpdated".asInstanceOf[ServiceWorkerDotworkerVersionUpdated]
   
   @js.native
+  sealed trait Storage extends StObject
+  inline def Storage: Storage = "Storage".asInstanceOf[Storage]
+  
+  @js.native
   sealed trait StorageDotcacheStorageContentUpdated extends StObject
   inline def StorageDotcacheStorageContentUpdated: StorageDotcacheStorageContentUpdated = "Storage.cacheStorageContentUpdated".asInstanceOf[StorageDotcacheStorageContentUpdated]
   
@@ -2514,6 +2754,10 @@ object chromeRemoteInterfaceStrings {
   @js.native
   sealed trait StorageDotdeleteSharedStorageEntry extends StObject
   inline def StorageDotdeleteSharedStorageEntry: StorageDotdeleteSharedStorageEntry = "Storage.deleteSharedStorageEntry".asInstanceOf[StorageDotdeleteSharedStorageEntry]
+  
+  @js.native
+  sealed trait StorageDotdeleteStorageBucket extends StObject
+  inline def StorageDotdeleteStorageBucket: StorageDotdeleteStorageBucket = "Storage.deleteStorageBucket".asInstanceOf[StorageDotdeleteStorageBucket]
   
   @js.native
   sealed trait StorageDotgetCookies extends StObject
@@ -2560,6 +2804,14 @@ object chromeRemoteInterfaceStrings {
   inline def StorageDotoverrideQuotaForOrigin: StorageDotoverrideQuotaForOrigin = "Storage.overrideQuotaForOrigin".asInstanceOf[StorageDotoverrideQuotaForOrigin]
   
   @js.native
+  sealed trait StorageDotresetSharedStorageBudget extends StObject
+  inline def StorageDotresetSharedStorageBudget: StorageDotresetSharedStorageBudget = "Storage.resetSharedStorageBudget".asInstanceOf[StorageDotresetSharedStorageBudget]
+  
+  @js.native
+  sealed trait StorageDotrunBounceTrackingMitigations extends StObject
+  inline def StorageDotrunBounceTrackingMitigations: StorageDotrunBounceTrackingMitigations = "Storage.runBounceTrackingMitigations".asInstanceOf[StorageDotrunBounceTrackingMitigations]
+  
+  @js.native
   sealed trait StorageDotsetCookies extends StObject
   inline def StorageDotsetCookies: StorageDotsetCookies = "Storage.setCookies".asInstanceOf[StorageDotsetCookies]
   
@@ -2576,12 +2828,28 @@ object chromeRemoteInterfaceStrings {
   inline def StorageDotsetSharedStorageTracking: StorageDotsetSharedStorageTracking = "Storage.setSharedStorageTracking".asInstanceOf[StorageDotsetSharedStorageTracking]
   
   @js.native
+  sealed trait StorageDotsetStorageBucketTracking extends StObject
+  inline def StorageDotsetStorageBucketTracking: StorageDotsetStorageBucketTracking = "Storage.setStorageBucketTracking".asInstanceOf[StorageDotsetStorageBucketTracking]
+  
+  @js.native
   sealed trait StorageDotsharedStorageAccessed extends StObject
   inline def StorageDotsharedStorageAccessed: StorageDotsharedStorageAccessed = "Storage.sharedStorageAccessed".asInstanceOf[StorageDotsharedStorageAccessed]
   
   @js.native
+  sealed trait StorageDotstorageBucketCreatedOrUpdated extends StObject
+  inline def StorageDotstorageBucketCreatedOrUpdated: StorageDotstorageBucketCreatedOrUpdated = "Storage.storageBucketCreatedOrUpdated".asInstanceOf[StorageDotstorageBucketCreatedOrUpdated]
+  
+  @js.native
+  sealed trait StorageDotstorageBucketDeleted extends StObject
+  inline def StorageDotstorageBucketDeleted: StorageDotstorageBucketDeleted = "Storage.storageBucketDeleted".asInstanceOf[StorageDotstorageBucketDeleted]
+  
+  @js.native
   sealed trait StorageDottrackCacheStorageForOrigin extends StObject
   inline def StorageDottrackCacheStorageForOrigin: StorageDottrackCacheStorageForOrigin = "Storage.trackCacheStorageForOrigin".asInstanceOf[StorageDottrackCacheStorageForOrigin]
+  
+  @js.native
+  sealed trait StorageDottrackCacheStorageForStorageKey extends StObject
+  inline def StorageDottrackCacheStorageForStorageKey: StorageDottrackCacheStorageForStorageKey = "Storage.trackCacheStorageForStorageKey".asInstanceOf[StorageDottrackCacheStorageForStorageKey]
   
   @js.native
   sealed trait StorageDottrackIndexedDBForOrigin extends StObject
@@ -2596,6 +2864,10 @@ object chromeRemoteInterfaceStrings {
   inline def StorageDotuntrackCacheStorageForOrigin: StorageDotuntrackCacheStorageForOrigin = "Storage.untrackCacheStorageForOrigin".asInstanceOf[StorageDotuntrackCacheStorageForOrigin]
   
   @js.native
+  sealed trait StorageDotuntrackCacheStorageForStorageKey extends StObject
+  inline def StorageDotuntrackCacheStorageForStorageKey: StorageDotuntrackCacheStorageForStorageKey = "Storage.untrackCacheStorageForStorageKey".asInstanceOf[StorageDotuntrackCacheStorageForStorageKey]
+  
+  @js.native
   sealed trait StorageDotuntrackIndexedDBForOrigin extends StObject
   inline def StorageDotuntrackIndexedDBForOrigin: StorageDotuntrackIndexedDBForOrigin = "Storage.untrackIndexedDBForOrigin".asInstanceOf[StorageDotuntrackIndexedDBForOrigin]
   
@@ -2604,12 +2876,24 @@ object chromeRemoteInterfaceStrings {
   inline def StorageDotuntrackIndexedDBForStorageKey: StorageDotuntrackIndexedDBForStorageKey = "Storage.untrackIndexedDBForStorageKey".asInstanceOf[StorageDotuntrackIndexedDBForStorageKey]
   
   @js.native
+  sealed trait SystemInfo extends StObject
+  inline def SystemInfo: SystemInfo = "SystemInfo".asInstanceOf[SystemInfo]
+  
+  @js.native
+  sealed trait SystemInfoDotgetFeatureState extends StObject
+  inline def SystemInfoDotgetFeatureState: SystemInfoDotgetFeatureState = "SystemInfo.getFeatureState".asInstanceOf[SystemInfoDotgetFeatureState]
+  
+  @js.native
   sealed trait SystemInfoDotgetInfo extends StObject
   inline def SystemInfoDotgetInfo: SystemInfoDotgetInfo = "SystemInfo.getInfo".asInstanceOf[SystemInfoDotgetInfo]
   
   @js.native
   sealed trait SystemInfoDotgetProcessInfo extends StObject
   inline def SystemInfoDotgetProcessInfo: SystemInfoDotgetProcessInfo = "SystemInfo.getProcessInfo".asInstanceOf[SystemInfoDotgetProcessInfo]
+  
+  @js.native
+  sealed trait Target extends StObject
+  inline def Target: Target = "Target".asInstanceOf[Target]
   
   @js.native
   sealed trait TargetDotactivateTarget extends StObject
@@ -2708,6 +2992,10 @@ object chromeRemoteInterfaceStrings {
   inline def TargetDottargetInfoChanged: TargetDottargetInfoChanged = "Target.targetInfoChanged".asInstanceOf[TargetDottargetInfoChanged]
   
   @js.native
+  sealed trait Tethering extends StObject
+  inline def Tethering: Tethering = "Tethering".asInstanceOf[Tethering]
+  
+  @js.native
   sealed trait TetheringDotaccepted extends StObject
   inline def TetheringDotaccepted: TetheringDotaccepted = "Tethering.accepted".asInstanceOf[TetheringDotaccepted]
   
@@ -2718,6 +3006,10 @@ object chromeRemoteInterfaceStrings {
   @js.native
   sealed trait TetheringDotunbind extends StObject
   inline def TetheringDotunbind: TetheringDotunbind = "Tethering.unbind".asInstanceOf[TetheringDotunbind]
+  
+  @js.native
+  sealed trait Tracing extends StObject
+  inline def Tracing: Tracing = "Tracing".asInstanceOf[Tracing]
   
   @js.native
   sealed trait TracingDotbufferUsage extends StObject
@@ -2750,6 +3042,10 @@ object chromeRemoteInterfaceStrings {
   @js.native
   sealed trait TracingDottracingComplete extends StObject
   inline def TracingDottracingComplete: TracingDottracingComplete = "Tracing.tracingComplete".asInstanceOf[TracingDottracingComplete]
+  
+  @js.native
+  sealed trait WebAudio extends StObject
+  inline def WebAudio: WebAudio = "WebAudio".asInstanceOf[WebAudio]
   
   @js.native
   sealed trait WebAudioDotaudioListenerCreated extends StObject
@@ -2816,6 +3112,10 @@ object chromeRemoteInterfaceStrings {
   inline def WebAudioDotnodesDisconnected: WebAudioDotnodesDisconnected = "WebAudio.nodesDisconnected".asInstanceOf[WebAudioDotnodesDisconnected]
   
   @js.native
+  sealed trait WebAuthn extends StObject
+  inline def WebAuthn: WebAuthn = "WebAuthn".asInstanceOf[WebAuthn]
+  
+  @js.native
   sealed trait WebAuthnDotaddCredential extends StObject
   inline def WebAuthnDotaddCredential: WebAuthnDotaddCredential = "WebAuthn.addCredential".asInstanceOf[WebAuthnDotaddCredential]
   
@@ -2826,6 +3126,14 @@ object chromeRemoteInterfaceStrings {
   @js.native
   sealed trait WebAuthnDotclearCredentials extends StObject
   inline def WebAuthnDotclearCredentials: WebAuthnDotclearCredentials = "WebAuthn.clearCredentials".asInstanceOf[WebAuthnDotclearCredentials]
+  
+  @js.native
+  sealed trait WebAuthnDotcredentialAdded extends StObject
+  inline def WebAuthnDotcredentialAdded: WebAuthnDotcredentialAdded = "WebAuthn.credentialAdded".asInstanceOf[WebAuthnDotcredentialAdded]
+  
+  @js.native
+  sealed trait WebAuthnDotcredentialAsserted extends StObject
+  inline def WebAuthnDotcredentialAsserted: WebAuthnDotcredentialAsserted = "WebAuthn.credentialAsserted".asInstanceOf[WebAuthnDotcredentialAsserted]
   
   @js.native
   sealed trait WebAuthnDotdisable extends StObject

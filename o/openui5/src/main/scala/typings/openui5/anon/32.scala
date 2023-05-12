@@ -1,6 +1,6 @@
 package typings.openui5.anon
 
-import typings.openui5.int
+import typings.openui5.sapMUploadUploadSetItemMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `32` extends StObject {
   
   /**
-    * The aggregation level number
+    * Items whose selection status has just been changed.
     */
-  var level: js.UndefOr[int] = js.undefined
+  var items: js.UndefOr[js.Array[default]] = js.undefined
 }
 object `32` {
   
@@ -22,8 +22,10 @@ object `32` {
   @scala.inline
   implicit open class MutableBuilder[Self <: `32`] (val x: Self) extends AnyVal {
     
-    inline def setLevel(value: int): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[default]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    
+    inline def setItemsVarargs(value: default*): Self = StObject.set(x, "items", js.Array(value*))
   }
 }

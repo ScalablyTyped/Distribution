@@ -15,11 +15,16 @@ trait IModelLanguageChangedEvent extends StObject {
     * Previous language
     */
   val oldLanguage: String
+  
+  /**
+    * Source of the call that caused the event.
+    */
+  val source: String
 }
 object IModelLanguageChangedEvent {
   
-  inline def apply(newLanguage: String, oldLanguage: String): IModelLanguageChangedEvent = {
-    val __obj = js.Dynamic.literal(newLanguage = newLanguage.asInstanceOf[js.Any], oldLanguage = oldLanguage.asInstanceOf[js.Any])
+  inline def apply(newLanguage: String, oldLanguage: String, source: String): IModelLanguageChangedEvent = {
+    val __obj = js.Dynamic.literal(newLanguage = newLanguage.asInstanceOf[js.Any], oldLanguage = oldLanguage.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
     __obj.asInstanceOf[IModelLanguageChangedEvent]
   }
   
@@ -29,5 +34,7 @@ object IModelLanguageChangedEvent {
     inline def setNewLanguage(value: String): Self = StObject.set(x, "newLanguage", value.asInstanceOf[js.Any])
     
     inline def setOldLanguage(value: String): Self = StObject.set(x, "oldLanguage", value.asInstanceOf[js.Any])
+    
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
   }
 }

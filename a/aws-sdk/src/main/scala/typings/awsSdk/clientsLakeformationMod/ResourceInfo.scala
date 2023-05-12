@@ -20,6 +20,11 @@ trait ResourceInfo extends StObject {
     * The IAM role that registered a resource.
     */
   var RoleArn: js.UndefOr[IAMRoleArn] = js.undefined
+  
+  /**
+    * Whether or not the resource is a federated resource.
+    */
+  var WithFederation: js.UndefOr[NullableBoolean] = js.undefined
 }
 object ResourceInfo {
   
@@ -42,5 +47,9 @@ object ResourceInfo {
     inline def setRoleArn(value: IAMRoleArn): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
     
     inline def setRoleArnUndefined: Self = StObject.set(x, "RoleArn", js.undefined)
+    
+    inline def setWithFederation(value: NullableBoolean): Self = StObject.set(x, "WithFederation", value.asInstanceOf[js.Any])
+    
+    inline def setWithFederationUndefined: Self = StObject.set(x, "WithFederation", js.undefined)
   }
 }

@@ -10,10 +10,10 @@ import typings.std.ProgressEvent
 import typings.three.anon.Copyright
 import typings.three.anon.CrossOrigin
 import typings.three.anon.Extensions
-import typings.three.anon.InverseBindMatrices
 import typings.three.examplesJsmLoadersDracoloaderMod.DRACOLoader
 import typings.three.examplesJsmLoadersKtx2loaderMod.KTX2Loader
 import typings.three.srcCoreBufferGeometryMod.BufferGeometry
+import typings.three.srcCoreBufferGeometryMod.NormalBufferAttributes
 import typings.three.srcCoreEventDispatcherMod.Event
 import typings.three.srcMaterialsMaterialMod.Material
 import typings.three.srcMaterialsMeshStandardMaterialMod.MeshStandardMaterialParameters
@@ -29,6 +29,7 @@ import typings.three.srcThreeMod.LoadingManager
 import typings.three.srcThreeMod.Mesh
 import typings.three.srcThreeMod.MeshStandardMaterial
 import typings.three.srcThreeMod.Object3D
+import typings.three.srcThreeMod.Skeleton
 import typings.three.srcThreeMod.SkinnedMesh
 import typings.three.srcThreeMod.Texture
 import typings.three.srcThreeMod.TextureLoader
@@ -64,6 +65,9 @@ object examplesJsmLoadersGltfloaderMod {
       onError: js.Function1[/* event */ ErrorEvent, Unit]
     ): Unit = js.native
     
+    def loadAsync(url: String): js.Promise[GLTF] = js.native
+    def loadAsync(url: String, onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit]): js.Promise[GLTF] = js.native
+    
     def parse(data: String, path: String, onLoad: js.Function1[/* gltf */ GLTF, Unit]): Unit = js.native
     def parse(
       data: String,
@@ -97,14 +101,14 @@ object examplesJsmLoadersGltfloaderMod {
   @js.native
   open class GLTFParser () extends StObject {
     
-    def assignFinalMaterial(`object`: Mesh[BufferGeometry, Material | js.Array[Material]]): Unit = js.native
+    def assignFinalMaterial(`object`: Mesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]]): Unit = js.native
     
     def assignTexture(materialParams: StringDictionary[Any], mapName: String, mapDef: Extensions): js.Promise[Unit] = js.native
     
     var associations: Map[Object3D[Event] | typings.three.srcThreeMod.Material | Texture, GLTFReference] = js.native
     
     def createNodeMesh(nodeIndex: Double): js.Promise[
-        Group | (Mesh[BufferGeometry, Material | js.Array[Material]]) | (SkinnedMesh[BufferGeometry, Material | js.Array[Material]])
+        Group | (Mesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]]) | (SkinnedMesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]])
       ] = js.native
     
     def createUniqueName(originalName: String): String = js.native
@@ -137,21 +141,21 @@ object examplesJsmLoadersGltfloaderMod {
       * See: https://github.com/KhronosGroup/glTF/blob/master/specification/2.0/schema/mesh.primitive.schema.json
       */
     primitives: js.Array[StringDictionary[Any]]
-    ): js.Promise[js.Array[typings.three.srcThreeMod.BufferGeometry]] = js.native
+    ): js.Promise[js.Array[typings.three.srcThreeMod.BufferGeometry[NormalBufferAttributes]]] = js.native
     
     def loadImageSource(sourceIndex: Double, loader: Loader): js.Promise[Texture] = js.native
     
     def loadMaterial(materialIndex: Double): js.Promise[typings.three.srcThreeMod.Material] = js.native
     
     def loadMesh(meshIndex: Double): js.Promise[
-        Group | (Mesh[BufferGeometry, Material | js.Array[Material]]) | (SkinnedMesh[BufferGeometry, Material | js.Array[Material]])
+        Group | (Mesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]]) | (SkinnedMesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]])
       ] = js.native
     
     def loadNode(nodeIndex: Double): js.Promise[Object3D[Event]] = js.native
     
     def loadScene(): js.Promise[Group] = js.native
     
-    def loadSkin(skinIndex: Double): js.Promise[InverseBindMatrices] = js.native
+    def loadSkin(skinIndex: Double): js.Promise[Skeleton] = js.native
     
     def loadTexture(textureIndex: Double): js.Promise[Texture] = js.native
     
@@ -239,7 +243,7 @@ object examplesJsmLoadersGltfloaderMod {
         js.Function1[
           /* nodeIndex */ Double, 
           (js.Promise[
-            Group | (Mesh[BufferGeometry, Material | js.Array[Material]]) | (SkinnedMesh[BufferGeometry, Material | js.Array[Material]])
+            Group | (Mesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]]) | (SkinnedMesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]])
           ]) | Null
         ]
       ] = js.undefined
@@ -271,10 +275,12 @@ object examplesJsmLoadersGltfloaderMod {
         js.Function1[
           /* meshIndex */ Double, 
           (js.Promise[
-            Group | (Mesh[BufferGeometry, Material | js.Array[Material]]) | (SkinnedMesh[BufferGeometry, Material | js.Array[Material]])
+            Group | (Mesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]]) | (SkinnedMesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]])
           ]) | Null
         ]
       ] = js.undefined
+    
+    var loadNode: js.UndefOr[js.Function1[/* nodeIndex */ Double, js.Promise[Object3D[Event]] | Null]] = js.undefined
     
     var loadTexture: js.UndefOr[js.Function1[/* textureIndex */ Double, js.Promise[Texture] | Null]] = js.undefined
   }
@@ -302,7 +308,7 @@ object examplesJsmLoadersGltfloaderMod {
       
       inline def setCreateNodeMesh(
         value: /* nodeIndex */ Double => (js.Promise[
-              Group | (Mesh[BufferGeometry, Material | js.Array[Material]]) | (SkinnedMesh[BufferGeometry, Material | js.Array[Material]])
+              Group | (Mesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]]) | (SkinnedMesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]])
             ]) | Null
       ): Self = StObject.set(x, "createNodeMesh", js.Any.fromFunction1(value))
       
@@ -328,11 +334,15 @@ object examplesJsmLoadersGltfloaderMod {
       
       inline def setLoadMesh(
         value: /* meshIndex */ Double => (js.Promise[
-              Group | (Mesh[BufferGeometry, Material | js.Array[Material]]) | (SkinnedMesh[BufferGeometry, Material | js.Array[Material]])
+              Group | (Mesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]]) | (SkinnedMesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]])
             ]) | Null
       ): Self = StObject.set(x, "loadMesh", js.Any.fromFunction1(value))
       
       inline def setLoadMeshUndefined: Self = StObject.set(x, "loadMesh", js.undefined)
+      
+      inline def setLoadNode(value: /* nodeIndex */ Double => js.Promise[Object3D[Event]] | Null): Self = StObject.set(x, "loadNode", js.Any.fromFunction1(value))
+      
+      inline def setLoadNodeUndefined: Self = StObject.set(x, "loadNode", js.undefined)
       
       inline def setLoadTexture(value: /* textureIndex */ Double => js.Promise[Texture] | Null): Self = StObject.set(x, "loadTexture", js.Any.fromFunction1(value))
       

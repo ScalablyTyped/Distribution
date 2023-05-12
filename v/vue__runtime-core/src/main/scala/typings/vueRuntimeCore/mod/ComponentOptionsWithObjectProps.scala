@@ -1,5 +1,6 @@
 package typings.vueRuntimeCore.mod
 
+import typings.std.Record
 import typings.std.ThisType
 import typings.vueRuntimeCore.vueRuntimeCoreBooleans.`false`
 import typings.vueRuntimeCore.vueRuntimeCoreStrings.B
@@ -8,9 +9,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ComponentOptionsWithObjectProps[PropsOptions, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */, I /* <: ComponentInjectOptions */, II /* <: String */, Props, Defaults]
+trait ComponentOptionsWithObjectProps[PropsOptions, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */, I /* <: ComponentInjectOptions */, II /* <: String */, S /* <: SlotsType[Record[String, Any]] */, Props, Defaults]
   extends StObject
-     with ComponentOptionsBase[Props, RawBindings, D, C, M, Mixin, Extends, E, EE, Defaults, I, II]
+     with ComponentOptionsBase[Props, RawBindings, D, C, M, Mixin, Extends, E, EE, Defaults, I, II, S]
      with ThisType[
       CreateComponentPublicInstance[
         Props, 
@@ -25,6 +26,7 @@ trait ComponentOptionsWithObjectProps[PropsOptions, RawBindings, D, C /* <: Comp
         Defaults, 
         `false`, 
         I, 
+        S, 
         IntersectionMixin[Mixin] & IntersectionMixin[Extends], 
         (UnwrapMixinsType[IntersectionMixin[Mixin] & IntersectionMixin[Extends], P]) & EnsureNonVoid[Props], 
         (UnwrapMixinsType[IntersectionMixin[Mixin] & IntersectionMixin[Extends], B]) & EnsureNonVoid[RawBindings], 
@@ -51,13 +53,13 @@ trait ComponentOptionsWithObjectProps[PropsOptions, RawBindings, D, C /* <: Comp
 }
 object ComponentOptionsWithObjectProps {
   
-  inline def apply[PropsOptions, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */, I /* <: ComponentInjectOptions */, II /* <: String */, Props, Defaults](props: PropsOptions & ThisType[Unit]): ComponentOptionsWithObjectProps[PropsOptions, RawBindings, D, C, M, Mixin, Extends, E, EE, I, II, Props, Defaults] = {
+  inline def apply[PropsOptions, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */, I /* <: ComponentInjectOptions */, II /* <: String */, S /* <: SlotsType[Record[String, Any]] */, Props, Defaults](props: PropsOptions & ThisType[Unit]): ComponentOptionsWithObjectProps[PropsOptions, RawBindings, D, C, M, Mixin, Extends, E, EE, I, II, S, Props, Defaults] = {
     val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ComponentOptionsWithObjectProps[PropsOptions, RawBindings, D, C, M, Mixin, Extends, E, EE, I, II, Props, Defaults]]
+    __obj.asInstanceOf[ComponentOptionsWithObjectProps[PropsOptions, RawBindings, D, C, M, Mixin, Extends, E, EE, I, II, S, Props, Defaults]]
   }
   
   @scala.inline
-  implicit open class MutableBuilder[Self <: ComponentOptionsWithObjectProps[?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?], PropsOptions, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */, I /* <: ComponentInjectOptions */, II /* <: String */, Props, Defaults] (val x: Self & (ComponentOptionsWithObjectProps[PropsOptions, RawBindings, D, C, M, Mixin, Extends, E, EE, I, II, Props, Defaults])) extends AnyVal {
+  implicit open class MutableBuilder[Self <: ComponentOptionsWithObjectProps[?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?], PropsOptions, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */, Mixin /* <: ComponentOptionsMixin */, Extends /* <: ComponentOptionsMixin */, E /* <: EmitsOptions */, EE /* <: String */, I /* <: ComponentInjectOptions */, II /* <: String */, S /* <: SlotsType[Record[String, Any]] */, Props, Defaults] (val x: Self & (ComponentOptionsWithObjectProps[PropsOptions, RawBindings, D, C, M, Mixin, Extends, E, EE, I, II, S, Props, Defaults])) extends AnyVal {
     
     inline def setProps(value: PropsOptions & ThisType[Unit]): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
   }

@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait InstanceTypeSpecification extends StObject {
   
   /**
-    * The bid price for each EC2 Spot Instance type as defined by InstanceType. Expressed in USD.
+    * The bid price for each Amazon EC2 Spot Instance type as defined by InstanceType. Expressed in USD.
     */
   var BidPrice: js.UndefOr[XmlStringMaxLen256] = js.undefined
   
   /**
-    * The bid price, as a percentage of On-Demand price, for each EC2 Spot Instance as defined by InstanceType. Expressed as a number (for example, 20 specifies 20%).
+    * The bid price, as a percentage of On-Demand price, for each Amazon EC2 Spot Instance as defined by InstanceType. Expressed as a number (for example, 20 specifies 20%).
     */
   var BidPriceAsPercentageOfOnDemandPrice: js.UndefOr[NonNegativeDouble] = js.undefined
   
@@ -37,7 +37,7 @@ trait InstanceTypeSpecification extends StObject {
   var EbsOptimized: js.UndefOr[BooleanObject] = js.undefined
   
   /**
-    * The EC2 instance type, for example m3.xlarge.
+    * The Amazon EC2 instance type, for example m3.xlarge.
     */
   var InstanceType: js.UndefOr[typings.awsSdk.clientsEmrMod.InstanceType] = js.undefined
   

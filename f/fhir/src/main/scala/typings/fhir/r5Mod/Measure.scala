@@ -21,9 +21,9 @@ trait Measure
   
   var _copyright: js.UndefOr[Element] = js.undefined
   
-  var _date: js.UndefOr[Element] = js.undefined
+  var _copyrightLabel: js.UndefOr[Element] = js.undefined
   
-  var _definition: js.UndefOr[js.Array[Element]] = js.undefined
+  var _date: js.UndefOr[Element] = js.undefined
   
   var _description: js.UndefOr[Element] = js.undefined
   
@@ -61,8 +61,11 @@ trait Measure
   
   var _version: js.UndefOr[Element] = js.undefined
   
+  var _versionAlgorithmString: js.UndefOr[Element] = js.undefined
+  
   /**
     * The 'date' element may be more recent than the approval date because of minor changes or editorial corrections.
+    * See guidance around (not) making local changes to elements [here](canonicalresource.html#localization).
     */
   var approvalDate: js.UndefOr[String] = js.undefined
   
@@ -88,26 +91,28 @@ trait Measure
   
   /**
     * May be a web site, an email address, a telephone number, etc.
+    * See guidance around (not) making local changes to elements [here](canonicalresource.html#localization).
     */
   var contact: js.UndefOr[js.Array[ContactDetail]] = js.undefined
   
   /**
-    * A copyright statement relating to the measure and/or its contents. Copyright statements are generally legal restrictions on the use and publishing of the measure.
+    * The short copyright declaration (e.g. (c) '2015+ xyz organization' should be sent in the copyrightLabel element.
     */
   var copyright: js.UndefOr[String] = js.undefined
   
   /**
-    * Note that this is not the same as the resource last-modified-date, since the resource may be a secondary representation of the measure. Additional specific dates may be added as extensions or be found by consulting Provenances associated with past versions of the resource.
+    * The (c) symbol should NOT be included in this string. It will be added by software when rendering the notation. Full details about licensing, restrictions, warrantees, etc. goes in the more general 'copyright' element.
+    */
+  var copyrightLabel: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The date is often not tracked until the resource is published, but may be present on draft content. Note that this is not the same as the resource last-modified-date, since the resource may be a secondary representation of the measure. Additional specific dates may be added as extensions or be found by consulting Provenances associated with past versions of the resource.
+    * See guidance around (not) making local changes to elements [here](canonicalresource.html#localization).
     */
   var date: js.UndefOr[String] = js.undefined
   
   /**
-    * Provides a description of an individual term used within the measure.
-    */
-  var definition: js.UndefOr[js.Array[String]] = js.undefined
-  
-  /**
-    * This description can be used to capture details such as why the measure was built, comments about misuse, instructions for clinical use and interpretation, literature references, examples from the paper world, etc. It is not a rendering of the measure as conveyed in the 'text' field of the resource itself. This item SHOULD be populated unless the information is available from context (e.g. the language of the measure is presumed to be the predominant language in the place the measure was created).
+    * This description can be used to capture details such as comments about misuse, instructions for clinical use and interpretation, literature references, examples from the paper world, etc. It is not a rendering of the measure as conveyed in the 'text' field of the resource itself. This item SHOULD be populated unless the information is available from context (e.g. the language of the measure is presumed to be the predominant language in the place the measure was created).
     */
   var description: js.UndefOr[String] = js.undefined
   
@@ -122,12 +127,13 @@ trait Measure
   var editor: js.UndefOr[js.Array[ContactDetail]] = js.undefined
   
   /**
-    * The effective period for a measure  determines when the content is applicable for usage and is independent of publication and review dates. For example, a measure intended to be used for the year 2016 might be published in 2015.
+    * The effective period for a measure determines when the content is applicable for usage and is independent of publication and review dates. For example, a measure intended to be used for the year 2016 might be published in 2015.
+    * See guidance around (not) making local changes to elements [here](canonicalresource.html#localization).
     */
   var effectivePeriod: js.UndefOr[Period] = js.undefined
   
   /**
-    * An individual or organization responsible for officially endorsing the content for use in some setting.
+    * See guidance around (not) making local changes to elements [here](canonicalresource.html#localization).
     */
   var endorser: js.UndefOr[js.Array[ContactDetail]] = js.undefined
   
@@ -142,7 +148,7 @@ trait Measure
   var group: js.UndefOr[js.Array[MeasureGroup]] = js.undefined
   
   /**
-    * Additional guidance for the measure including how it can be used in a clinical context, and the intent of the measure.
+    * NOTE: This element is deprecated in favor of the usage element
     */
   var guidance: js.UndefOr[String] = js.undefined
   
@@ -158,11 +164,13 @@ trait Measure
   
   /**
     * It may be possible for the measure to be used in jurisdictions other than those for which it was originally designed or intended.
+    * DEPRECATION NOTE: For consistency, implementations are encouraged to migrate to using the new 'jurisdiction' code in the useContext element.  (I.e. useContext.code indicating http://terminology.hl7.org/CodeSystem/usage-context-type#jurisdiction and useContext.valueCodeableConcept indicating the jurisdiction.)
     */
   var jurisdiction: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
   /**
     * If specified, this date follows the original approval date.
+    * See guidance around (not) making local changes to elements [here](canonicalresource.html#localization).
     */
   var lastReviewDate: js.UndefOr[String] = js.undefined
   
@@ -206,7 +214,7 @@ trait Measure
   val resourceType_Measure: typings.fhir.fhirStrings.Measure
   
   /**
-    * An individual or organization primarily responsible for review of some aspect of the content.
+    * See guidance around (not) making local changes to elements [here](canonicalresource.html#localization).
     */
   var reviewer: js.UndefOr[js.Array[ContactDetail]] = js.undefined
   
@@ -227,6 +235,7 @@ trait Measure
   
   /**
     * Allows filtering of measures that are appropriate for use versus not.
+    * See guidance around (not) making local changes to elements [here](canonicalresource.html#localization).
     */
   var status: draft | active | retired | unknown
   
@@ -246,9 +255,14 @@ trait Measure
   var subtitle: js.UndefOr[String] = js.undefined
   
   /**
-    * Note that supplemental data are reported as observations for each patient and included in the evaluatedResources bundle. See the MeasureReport resource or the Quality Reporting topic for more information.
+    * Note that supplemental data are reported as resources for each patient and referenced in the supplementalData element of the MeasureReport. If the supplementalData expression results in a value other than a resource, it is reported using an Observation resource, typically contained in the resulting MeasureReport. See the MeasureReport resource and the Quality Reporting topic for more information.
     */
   var supplementalData: js.UndefOr[js.Array[MeasureSupplementalData]] = js.undefined
+  
+  /**
+    * Provides a description of an individual term used within the measure.
+    */
+  var term: js.UndefOr[js.Array[MeasureTerm]] = js.undefined
   
   /**
     * This name does not need to be machine-processing friendly and may contain punctuation, white-space, etc.
@@ -256,7 +270,7 @@ trait Measure
   var title: js.UndefOr[String] = js.undefined
   
   /**
-    * Descriptive topics related to the content of the measure. Topics provide a high-level categorization grouping types of measures that can be useful for filtering and searching.
+    * DEPRECATION NOTE: For consistency, implementations are encouraged to migrate to using the new 'topic' code in the useContext element.  (I.e. useContext.code indicating http://terminology.hl7.org/CodeSystem/usage-context-type#topic and useContext.valueCodeableConcept indicating the topic)
     */
   var topic: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
@@ -273,7 +287,7 @@ trait Measure
   var url: js.UndefOr[String] = js.undefined
   
   /**
-    * A detailed description, from a clinical perspective, of how the measure is used.
+    * This metadata element was typically referred to as Guidance in HQMF
     */
   var usage: js.UndefOr[String] = js.undefined
   
@@ -283,9 +297,19 @@ trait Measure
   var useContext: js.UndefOr[js.Array[UsageContext]] = js.undefined
   
   /**
-    * There may be different measure instances that have the same identifier but different versions.  The version can be appended to the url in a reference to allow a reference to a particular business version of the measure with the format [url]|[version].
+    * There may be different measure instances that have the same identifier but different versions.  The version can be appended to the url in a reference to allow a reference to a particular business version of the measure with the format [url]|[version]. The version SHOULD NOT contain a '#' - see [Business Version](resource.html#bv-format).
     */
   var version: js.UndefOr[String] = js.undefined
+  
+  /**
+    * If set as a string, this is a FHIRPath expression that has two additional context variables passed in - %version1 and %version2 and will return a negative number if version1 is newer, a positive number if version2 and a 0 if the version ordering can't be successfully be determined.
+    */
+  var versionAlgorithmCoding: js.UndefOr[Coding] = js.undefined
+  
+  /**
+    * If set as a string, this is a FHIRPath expression that has two additional context variables passed in - %version1 and %version2 and will return a negative number if version1 is newer, a positive number if version2 and a 0 if the version ordering can't be successfully be determined.
+    */
+  var versionAlgorithmString: js.UndefOr[String] = js.undefined
 }
 object Measure {
   
@@ -327,17 +351,15 @@ object Measure {
     
     inline def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
     
+    inline def setCopyrightLabel(value: String): Self = StObject.set(x, "copyrightLabel", value.asInstanceOf[js.Any])
+    
+    inline def setCopyrightLabelUndefined: Self = StObject.set(x, "copyrightLabel", js.undefined)
+    
     inline def setCopyrightUndefined: Self = StObject.set(x, "copyright", js.undefined)
     
     inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
-    
-    inline def setDefinition(value: js.Array[String]): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
-    
-    inline def setDefinitionUndefined: Self = StObject.set(x, "definition", js.undefined)
-    
-    inline def setDefinitionVarargs(value: String*): Self = StObject.set(x, "definition", js.Array(value*))
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
@@ -469,6 +491,12 @@ object Measure {
     
     inline def setSupplementalDataVarargs(value: MeasureSupplementalData*): Self = StObject.set(x, "supplementalData", js.Array(value*))
     
+    inline def setTerm(value: js.Array[MeasureTerm]): Self = StObject.set(x, "term", value.asInstanceOf[js.Any])
+    
+    inline def setTermUndefined: Self = StObject.set(x, "term", js.undefined)
+    
+    inline def setTermVarargs(value: MeasureTerm*): Self = StObject.set(x, "term", js.Array(value*))
+    
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
@@ -501,6 +529,14 @@ object Measure {
     
     inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
+    inline def setVersionAlgorithmCoding(value: Coding): Self = StObject.set(x, "versionAlgorithmCoding", value.asInstanceOf[js.Any])
+    
+    inline def setVersionAlgorithmCodingUndefined: Self = StObject.set(x, "versionAlgorithmCoding", js.undefined)
+    
+    inline def setVersionAlgorithmString(value: String): Self = StObject.set(x, "versionAlgorithmString", value.asInstanceOf[js.Any])
+    
+    inline def setVersionAlgorithmStringUndefined: Self = StObject.set(x, "versionAlgorithmString", js.undefined)
+    
     inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     
     inline def set_approvalDate(value: Element): Self = StObject.set(x, "_approvalDate", value.asInstanceOf[js.Any])
@@ -517,17 +553,15 @@ object Measure {
     
     inline def set_copyright(value: Element): Self = StObject.set(x, "_copyright", value.asInstanceOf[js.Any])
     
+    inline def set_copyrightLabel(value: Element): Self = StObject.set(x, "_copyrightLabel", value.asInstanceOf[js.Any])
+    
+    inline def set_copyrightLabelUndefined: Self = StObject.set(x, "_copyrightLabel", js.undefined)
+    
     inline def set_copyrightUndefined: Self = StObject.set(x, "_copyright", js.undefined)
     
     inline def set_date(value: Element): Self = StObject.set(x, "_date", value.asInstanceOf[js.Any])
     
     inline def set_dateUndefined: Self = StObject.set(x, "_date", js.undefined)
-    
-    inline def set_definition(value: js.Array[Element]): Self = StObject.set(x, "_definition", value.asInstanceOf[js.Any])
-    
-    inline def set_definitionUndefined: Self = StObject.set(x, "_definition", js.undefined)
-    
-    inline def set_definitionVarargs(value: Element*): Self = StObject.set(x, "_definition", js.Array(value*))
     
     inline def set_description(value: Element): Self = StObject.set(x, "_description", value.asInstanceOf[js.Any])
     
@@ -600,6 +634,10 @@ object Measure {
     inline def set_usageUndefined: Self = StObject.set(x, "_usage", js.undefined)
     
     inline def set_version(value: Element): Self = StObject.set(x, "_version", value.asInstanceOf[js.Any])
+    
+    inline def set_versionAlgorithmString(value: Element): Self = StObject.set(x, "_versionAlgorithmString", value.asInstanceOf[js.Any])
+    
+    inline def set_versionAlgorithmStringUndefined: Self = StObject.set(x, "_versionAlgorithmString", js.undefined)
     
     inline def set_versionUndefined: Self = StObject.set(x, "_version", js.undefined)
   }

@@ -57,6 +57,11 @@ trait ClaimSupportingInfo
   /**
     * Could be used to provide references to other resources, document. For example could contain a PDF in an Attachment of the Police Report for an Accident.
     */
+  var valueIdentifier: js.UndefOr[Identifier] = js.undefined
+  
+  /**
+    * Could be used to provide references to other resources, document. For example could contain a PDF in an Attachment of the Police Report for an Accident.
+    */
   var valueQuantity: js.UndefOr[Quantity] = js.undefined
   
   /**
@@ -106,6 +111,10 @@ object ClaimSupportingInfo {
     inline def setValueBoolean(value: Boolean): Self = StObject.set(x, "valueBoolean", value.asInstanceOf[js.Any])
     
     inline def setValueBooleanUndefined: Self = StObject.set(x, "valueBoolean", js.undefined)
+    
+    inline def setValueIdentifier(value: Identifier): Self = StObject.set(x, "valueIdentifier", value.asInstanceOf[js.Any])
+    
+    inline def setValueIdentifierUndefined: Self = StObject.set(x, "valueIdentifier", js.undefined)
     
     inline def setValueQuantity(value: Quantity): Self = StObject.set(x, "valueQuantity", value.asInstanceOf[js.Any])
     

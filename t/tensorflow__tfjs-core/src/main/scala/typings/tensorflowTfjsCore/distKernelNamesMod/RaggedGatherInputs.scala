@@ -1,11 +1,11 @@
 package typings.tensorflowTfjsCore.distKernelNamesMod
 
-import typings.tensorflowTfjsCore.distKernelRegistryMod.TensorInfo
+import typings.tensorflowTfjsCore.distTensorInfoMod.TensorInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined {  paramsNestedSplits :std.Array<@tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/kernel_registry.TensorInfo>} & std.Pick<@tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/kernel_registry.NamedTensorInfoMap, 'paramsDenseValues' | 'indices'> */
+/* Inlined {  paramsNestedSplits :std.Array<@tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/tensor_info.TensorInfo>} & std.Pick<@tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/kernel_registry.NamedTensorInfoMap, 'paramsDenseValues' | 'indices'> */
 trait RaggedGatherInputs extends StObject {
   
   var indices: js.UndefOr[scala.Any] = js.undefined

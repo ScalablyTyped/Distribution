@@ -1,5 +1,7 @@
 package typings.highcharts.mod
 
+import typings.highcharts.highchartsInts.`0`
+import typings.highcharts.highchartsInts.`100`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,19 +30,6 @@ trait PlotTreegraphOptions extends StObject {
     * And alternative way of selecting points is through dragging.
     */
   var allowPointSelect: js.UndefOr[Boolean] = js.undefined
-  
-  /**
-    * (Highcharts) When enabled the user can click on a point which is a parent
-    * and zoom in on its children.
-    */
-  var allowTraversingTree: js.UndefOr[Boolean] = js.undefined
-  
-  /**
-    * (Highcharts) Enabling this option will make the treemap alternate the
-    * drawing direction between vertical and horizontal. The next levels
-    * starting direction will always be the opposite of the previous.
-    */
-  var alternateStartingDirection: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts) Enable or disable the initial animation when a series is
@@ -78,7 +67,7 @@ trait PlotTreegraphOptions extends StObject {
   /**
     * (Highcharts) Sets the color blending in the boost module.
     */
-  var boostBlending: js.UndefOr[String] = js.undefined
+  var boostBlending: js.UndefOr[OptionsBoostBlendingValue] = js.undefined
   
   /**
     * (Highcharts) Set the point threshold for when a series should enter boost
@@ -103,25 +92,15 @@ trait PlotTreegraphOptions extends StObject {
   var borderColor: js.UndefOr[ColorString] = js.undefined
   
   /**
-    * (Highcharts) The border radius for each treemap item.
-    */
-  var borderRadius: js.UndefOr[Double] = js.undefined
-  
-  /**
     * (Highmaps) The width of the border surrounding each tree map item.
     */
   var borderWidth: js.UndefOr[Double] = js.undefined
   
   /**
-    * (Highcharts) Options for the breadcrumbs, the navigation at the top
-    * leading the way up through the traversed levels.
-    */
-  var breadcrumbs: js.UndefOr[PlotTreegraphBreadcrumbsOptions] = js.undefined
-  
-  /**
     * (Highcharts) An additional class name to apply to the series' graphical
     * elements. This option does not replace default class names of the
-    * graphical element.
+    * graphical element. Changes to the series' color will also be reflected in
+    * a chart's legend and tooltip.
     */
   var className: js.UndefOr[String] = js.undefined
   
@@ -132,20 +111,6 @@ trait PlotTreegraphOptions extends StObject {
     * **Note:** Clipping should be always enabled when chart.zoomType is set
     */
   var clip: js.UndefOr[Boolean] = js.undefined
-  
-  /**
-    * (Highcharts, Highmaps) Options for marker clusters, the concept of
-    * sampling the data values into larger blocks in order to ease readability
-    * and increase performance of the JavaScript charts.
-    *
-    * Note: marker clusters module is not working with `boost` and
-    * `draggable-points` modules.
-    *
-    * The marker clusters feature requires the marker-clusters.js file to be
-    * loaded, found in the modules directory of the download package, or online
-    * at code.highcharts.com/modules/marker-clusters.js.
-    */
-  var cluster: js.UndefOr[PlotTreegraphClusterOptions] = js.undefined
   
   /**
     * (Highcharts) Options applied to collapse Button. The collape button is
@@ -168,18 +133,6 @@ trait PlotTreegraphOptions extends StObject {
   var color: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
   /**
-    * (Highcharts, Highstock, Highmaps) When using dual or multiple color axes,
-    * this number defines which colorAxis the particular series is connected
-    * to. It refers to either the axis id or the index of the axis in the
-    * colorAxis array, with 0 being the first. Set this option to false to
-    * prevent a series from connecting to the default color axis.
-    *
-    * Since v7.2.0 the option can also be an axis id or an axis index instead
-    * of a boolean flag.
-    */
-  var colorAxis: js.UndefOr[Boolean | Double | String] = js.undefined
-  
-  /**
     * (Highcharts) When using automatic point colors pulled from the
     * `options.colors` collection, this option determines whether the chart
     * should receive one color per series or one color per point.
@@ -190,16 +143,11 @@ trait PlotTreegraphOptions extends StObject {
     * (Highcharts) Styled mode only. A specific color index to use for the
     * series, so its graphic representations are given the class name
     * `highcharts-color-{n}`.
+    *
+    * Since v11, CSS variables on the form `--highcharts-color-{n}` make
+    * changing the color scheme very convenient.
     */
   var colorIndex: js.UndefOr[Double] = js.undefined
-  
-  /**
-    * (Highcharts, Highstock, Highmaps) Determines what data value should be
-    * used to calculate point color if `colorAxis` is used. Requires to set
-    * `min` and `max` if some custom point property is used or if approximation
-    * for data grouping is set to `'sum'`.
-    */
-  var colorKey: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts) A series specific or series type specific color set to apply
@@ -208,20 +156,10 @@ trait PlotTreegraphOptions extends StObject {
   var colors: js.UndefOr[js.Array[ColorString | GradientColorObject | PatternObject]] = js.undefined
   
   /**
-    * (Highstock) Compare the values of the series against the first non-null,
-    * non- zero value in the visible range. The y axis will show percentage or
-    * absolute change depending on whether `compare` is set to `"percent"` or
-    * `"value"`. When this is applied to multiple series, it allows comparing
-    * the development of the series against each other. Adds a `change` field
-    * to every point object.
-    */
-  var compare: js.UndefOr[String] = js.undefined
-  
-  /**
     * (Highstock) When compare is `percent`, this option dictates whether to
     * use 0 or 100 as the base of comparison.
     */
-  var compareBase: js.UndefOr[Double] = js.undefined
+  var compareBase: js.UndefOr[`0` | `100`] = js.undefined
   
   /**
     * (Highstock) Defines if comparison should start from the first point
@@ -233,19 +171,6 @@ trait PlotTreegraphOptions extends StObject {
     * calculated according to the previous point (`compareStart=false`).
     */
   var compareStart: js.UndefOr[Boolean] = js.undefined
-  
-  /**
-    * (Highcharts) Polar charts only. Whether to connect the ends of a line
-    * series plot across the extremes.
-    */
-  var connectEnds: js.UndefOr[Boolean] = js.undefined
-  
-  /**
-    * (Highcharts, Highstock) Whether to connect a graph line across null
-    * points, or render a gap between the two points on either side of the
-    * null.
-    */
-  var connectNulls: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Gantt) Override Pathfinder connector options for a series. Requires
@@ -302,36 +227,6 @@ trait PlotTreegraphOptions extends StObject {
   var custom: js.UndefOr[Dictionary[Any]] = js.undefined
   
   /**
-    * (Highcharts) Name of the dash style to use for the graph, or for some
-    * series types the outline of each shape.
-    *
-    * In styled mode, the stroke dash-array can be set with the same classes as
-    * listed under series.color.
-    */
-  var dashStyle: js.UndefOr[DashStyleValue] = js.undefined
-  
-  /**
-    * (Highcharts) Indicates data is structured as columns instead of rows.
-    */
-  var dataAsColumns: js.UndefOr[Boolean] = js.undefined
-  
-  /**
-    * (Highstock) Data grouping is the concept of sampling the data values into
-    * larger blocks in order to ease readability and increase performance of
-    * the JavaScript charts. Highcharts Stock by default applies data grouping
-    * when the points become closer than a certain pixel value, determined by
-    * the `groupPixelWidth` option.
-    *
-    * If data grouping is applied, the grouping information of grouped points
-    * can be read from the Point.dataGroup. If point options other than the
-    * data itself are set, for example `name` or `color` or custom properties,
-    * the grouping logic doesn't know how to group it. In this case the options
-    * of the first point instance are copied over to the group point. This can
-    * be altered through a custom `approximation` callback function.
-    */
-  var dataGrouping: js.UndefOr[DataGroupingOptionsObject] = js.undefined
-  
-  /**
     * (Highcharts, Highstock, Highmaps, Gantt) Options for the data labels
     * appearing on top of the nodes and links. For treegraph charts, data
     * labels are visible for the nodes by default, but hidden for links. This
@@ -343,23 +238,10 @@ trait PlotTreegraphOptions extends StObject {
   ] = js.undefined
   
   /**
-    * (Highcharts, Highstock) Options for the series data sorting.
-    */
-  var dataSorting: js.UndefOr[DataSortingOptionsObject | PlotTreegraphDataSortingOptions] = js.undefined
-  
-  /**
     * (Highcharts) A description of the series to add to the screen reader
     * information about the series.
     */
   var description: js.UndefOr[String] = js.undefined
-  
-  /**
-    * (Highcharts) The draggable-points module allows points to be moved around
-    * or modified in the chart. In addition to the options mentioned under the
-    * `dragDrop` API structure, the module fires three events, point.dragStart,
-    * point.drag and point.drop.
-    */
-  var dragDrop: js.UndefOr[SeriesDragDropOptionsObject] = js.undefined
   
   /**
     * (Highcharts) Enable or disable the mouse tracking for a specific series.
@@ -385,38 +267,7 @@ trait PlotTreegraphOptions extends StObject {
     * Applies only to series types using nearest neighbor search (not direct
     * hover) for tooltip.
     */
-  var findNearestPointBy: js.UndefOr[String] = js.undefined
-  
-  /**
-    * (Highstock) Defines when to display a gap in the graph, together with the
-    * gapUnit option.
-    *
-    * In case when `dataGrouping` is enabled, points can be grouped into a
-    * larger time span. This can make the grouped points to have a greater
-    * distance than the absolute value of `gapSize` property, which will result
-    * in disappearing graph completely. To prevent this situation the mentioned
-    * distance between grouped points is used instead of previously defined
-    * `gapSize`.
-    *
-    * In practice, this option is most often used to visualize gaps in time
-    * series. In a stock chart, intraday data is available for daytime hours,
-    * while gaps will appear in nights and weekends.
-    */
-  var gapSize: js.UndefOr[Double] = js.undefined
-  
-  /**
-    * (Highstock) Together with gapSize, this option defines where to draw gaps
-    * in the graph.
-    *
-    * When the `gapUnit` is `"relative"` (default), a gap size of 5 means that
-    * if the distance between two points is greater than 5 times that of the
-    * two closest points, the graph will be broken.
-    *
-    * When the `gapUnit` is `"value"`, the gap is based on absolute axis
-    * values, which on a datetime axis is milliseconds. This also applies to
-    * the navigator series that inherits gap options from the base series.
-    */
-  var gapUnit: js.UndefOr[String] = js.undefined
+  var findNearestPointBy: js.UndefOr[OptionsFindNearestPointByValue] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) Whether to use the Y extremes of the total
@@ -427,12 +278,6 @@ trait PlotTreegraphOptions extends StObject {
   var getExtremesFromAll: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * (Highcharts) Whether to ignore hidden points when the layout algorithm
-    * runs. If `false`, hidden points will leave open spaces.
-    */
-  var ignoreHiddenPoint: js.UndefOr[Boolean] = js.undefined
-  
-  /**
     * (Highcharts) When set to `false` will prevent the series data from being
     * included in any form of data export.
     *
@@ -440,48 +285,6 @@ trait PlotTreegraphOptions extends StObject {
     * `includeInCSVExport`.
     */
   var includeInDataExport: js.UndefOr[Boolean] = js.undefined
-  
-  /**
-    * (Highcharts) This option decides if the user can interact with the parent
-    * nodes or just the leaf nodes. When this option is undefined, it will be
-    * true by default. However when allowTraversingTree is true, then it will
-    * be false by default.
-    */
-  var interactByLeaf: js.UndefOr[Boolean] = js.undefined
-  
-  /**
-    * (Highcharts, Highstock) Apply a jitter effect for the rendered markers.
-    * When plotting discrete values, a little random noise may help telling the
-    * points apart. The jitter setting applies a random displacement of up to
-    * `n` axis units in either direction. So for example on a horizontal X
-    * axis, setting the `jitter.x` to 0.24 will render the point in a random
-    * position between 0.24 units to the left and 0.24 units to the right of
-    * the true axis position. On a category axis, setting it to 0.5 will fill
-    * up the bin and make the data appear continuous.
-    *
-    * When rendered on top of a box plot or a column series, a jitter value of
-    * 0.24 will correspond to the underlying series' default groupPadding and
-    * pointPadding settings.
-    */
-  var jitter: js.UndefOr[PlotTreegraphJitterOptions] = js.undefined
-  
-  /**
-    * (Highmaps) What property to join the `mapData` to the value data. For
-    * example, if joinBy is "code", the mapData items with a specific code is
-    * merged into the data with the same code. For maps loaded from GeoJSON,
-    * the keys may be held in each point's `properties` object.
-    *
-    * The joinBy option can also be an array of two values, where the first
-    * points to a key in the `mapData`, and the second points to another key in
-    * the `data`.
-    *
-    * When joinBy is `null`, the map items are joined by their position in the
-    * array, which performs much better in maps with many data points. This is
-    * the recommended option if you are printing more than a thousand data
-    * points and have a backend that can preprocess the data into a parallel
-    * array of the mapData.
-    */
-  var joinBy: js.UndefOr[String | js.Array[String]] = js.undefined
   
   /**
     * (Highcharts) An array specifying which option maps to which key in the
@@ -511,43 +314,13 @@ trait PlotTreegraphOptions extends StObject {
     */
   var lastVisiblePrice: js.UndefOr[SeriesLastVisiblePriceOptionsObject] = js.undefined
   
-  /**
-    * (Highcharts) This option decides which algorithm is used for setting
-    * position and dimensions of the points.
-    */
-  var layoutAlgorithm: js.UndefOr[String] = js.undefined
-  
-  /**
-    * (Highcharts) Defines which direction the layout algorithm will start
-    * drawing.
-    */
-  var layoutStartingDirection: js.UndefOr[String] = js.undefined
-  
-  /**
-    * (Highcharts) Used together with the levels and allowTraversingTree
-    * options. When set to false the first level visible to be level one, which
-    * is dynamic when traversing the tree. Otherwise the level will be the same
-    * as the tree structure.
-    */
-  var levelIsConstant: js.UndefOr[Boolean] = js.undefined
+  var legendSymbol: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts) Set options on specific levels. Takes precedence over series
     * options, but not point options.
     */
   var levels: js.UndefOr[js.Array[PlotTreegraphLevelsOptions]] = js.undefined
-  
-  /**
-    * (Highcharts, Highstock) The width of the line connecting the data points.
-    */
-  var lineWidth: js.UndefOr[Double] = js.undefined
-  
-  /**
-    * (Highcharts, Highstock) The SVG value used for the `stroke-linecap` and
-    * `stroke-linejoin` of a line graph. Round means that lines are rounded in
-    * the ends and bends.
-    */
-  var linecap: js.UndefOr[SeriesLinecapValue] = js.undefined
   
   var link: js.UndefOr[PlotTreegraphLinkOptions] = js.undefined
   
@@ -564,33 +337,16 @@ trait PlotTreegraphOptions extends StObject {
   var linkedTo: js.UndefOr[String] = js.undefined
   
   /**
-    * (Highcharts) Options for the point markers of line-like series.
-    * Properties like `fillColor`, `lineColor` and `lineWidth` define the
-    * visual appearance of the markers. Other series types, like column series,
-    * don't have markers, but have visual options on the series level instead.
+    * (Highcharts) Options for the point markers of line and scatter-like
+    * series. Properties like `fillColor`, `lineColor` and `lineWidth` define
+    * the visual appearance of the markers. The `symbol` option defines the
+    * shape. Other series types, like column series, don't have markers, but
+    * have visual options on the series level instead.
     *
     * In styled mode, the markers can be styled with the `.highcharts-point`,
     * `.highcharts-point-hover` and `.highcharts-point-select` class names.
     */
   var marker: js.UndefOr[PointMarkerOptionsObject] = js.undefined
-  
-  /**
-    * (Highstock) Options for the corresponding navigator series if
-    * `showInNavigator` is `true` for this series. Available options are the
-    * same as any series, documented at plotOptions and series.
-    *
-    * These options are merged with options in navigator.series, and will take
-    * precedence if the same option is defined both places.
-    */
-  var navigatorOptions: js.UndefOr[PlotSeriesOptions] = js.undefined
-  
-  /**
-    * (Highcharts) The color for the parts of the graph or points that are
-    * below the threshold. Note that `zones` takes precedence over the negative
-    * color. Using `negativeColor` is equivalent to applying a zone with value
-    * of 0.
-    */
-  var negativeColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
   /**
     * (Highcharts) Options for the _Series on point_ feature. Only `pie` and
@@ -644,44 +400,7 @@ trait PlotTreegraphOptions extends StObject {
     * Please note that this options applies to the _series data_, not the
     * interval of the axis ticks, which is independent.
     */
-  var pointIntervalUnit: js.UndefOr[String] = js.undefined
-  
-  /**
-    * (Highcharts, Highstock, Gantt) Possible values: `"on"`, `"between"`,
-    * `number`.
-    *
-    * In a column chart, when pointPlacement is `"on"`, the point will not
-    * create any padding of the X axis. In a polar column chart this means that
-    * the first column points directly north. If the pointPlacement is
-    * `"between"`, the columns will be laid out between ticks. This is useful
-    * for example for visualising an amount between two points in time or in a
-    * certain sector of a polar chart.
-    *
-    * Since Highcharts 3.0.2, the point placement can also be numeric, where 0
-    * is on the axis value, -0.5 is between this value and the previous, and
-    * 0.5 is between this value and the next. Unlike the textual options,
-    * numeric point placement options won't affect axis padding.
-    *
-    * Note that pointPlacement needs a pointRange to work. For column series
-    * this is computed, but for line-type series it needs to be set.
-    *
-    * For the `xrange` series type and gantt charts, if the Y axis is a
-    * category axis, the `pointPlacement` applies to the Y axis rather than the
-    * (typically datetime) X axis.
-    *
-    * Defaults to `undefined` in cartesian charts, `"between"` in polar charts.
-    */
-  var pointPlacement: js.UndefOr[Double | String] = js.undefined
-  
-  /**
-    * (Highstock) The width of each point on the x axis. For example in a
-    * column chart with one value each day, the pointRange would be 1 day (= 24
-    * * 3600
-    *
-    * * 1000 milliseconds). This is normally computed automatically, but this
-    * option can be used to override the automatic value.
-    */
-  var pointRange: js.UndefOr[Double] = js.undefined
+  var pointIntervalUnit: js.UndefOr[OptionsPointIntervalUnitValue] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) If no x values are given for the points in
@@ -721,13 +440,6 @@ trait PlotTreegraphOptions extends StObject {
   var selected: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * (Highcharts) Whether to apply a drop shadow to the graph line. Since 2.3
-    * the shadow can be an object configuration containing `color`, `offsetX`,
-    * `offsetY`, `opacity` and `width`.
-    */
-  var shadow: js.UndefOr[Boolean | ShadowOptionsObject] = js.undefined
-  
-  /**
     * (Highcharts) If true, a checkbox is displayed next to the legend item to
     * allow selecting the series. The state of the checkbox is determined by
     * the `selected` option.
@@ -764,9 +476,9 @@ trait PlotTreegraphOptions extends StObject {
   var softThreshold: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * (Highcharts) The sort index of the point inside the treemap level.
+    * (Highcharts) Sonification/audio chart options for a series.
     */
-  var sortIndex: js.UndefOr[Double] = js.undefined
+  var sonification: js.UndefOr[PlotTreegraphSonificationOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock) Whether to stack the values of each series on top
@@ -779,7 +491,7 @@ trait PlotTreegraphOptions extends StObject {
     * streamgraph series type, the stacking option is set to `"stream"`. The
     * second one is `"overlap"`, which only applies to waterfall series.
     */
-  var stacking: js.UndefOr[String] = js.undefined
+  var stacking: js.UndefOr[OptionsStackingValue] = js.undefined
   
   /**
     * (Highcharts) A wrapper object for all the series options in specific
@@ -791,7 +503,7 @@ trait PlotTreegraphOptions extends StObject {
     * (Highcharts, Highstock) Whether to apply steps to the line. Possible
     * values are `left`, `center` and `right`.
     */
-  var step: js.UndefOr[String] = js.undefined
+  var step: js.UndefOr[OptionsStepValue] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps) Sticky tracking of mouse events. When
@@ -803,13 +515,6 @@ trait PlotTreegraphOptions extends StObject {
     * be hidden when moving the mouse between series.
     */
   var stickyTracking: js.UndefOr[Boolean] = js.undefined
-  
-  /**
-    * (Highcharts, Highstock) The threshold, also called zero level or base
-    * level. For line type series this is only used in conjunction with
-    * negativeColor.
-    */
-  var threshold: js.UndefOr[Double | Null] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps) A configuration object for the tooltip
@@ -835,12 +540,6 @@ trait PlotTreegraphOptions extends StObject {
   var turboThreshold: js.UndefOr[Double] = js.undefined
   
   /**
-    * (Highstock) The parameter allows setting line series type and use OHLC
-    * indicators. Data in OHLC format is required.
-    */
-  var useOhlcData: js.UndefOr[Boolean] = js.undefined
-  
-  /**
     * (Highcharts) Set the initial visibility of the series.
     */
   var visible: js.UndefOr[Boolean] = js.undefined
@@ -849,23 +548,6 @@ trait PlotTreegraphOptions extends StObject {
     * (Highmaps) Define the z index of the series.
     */
   var zIndex: js.UndefOr[Double] = js.undefined
-  
-  /**
-    * (Highcharts, Highstock) Defines the Axis on which the zones are applied.
-    */
-  var zoneAxis: js.UndefOr[String] = js.undefined
-  
-  /**
-    * (Highcharts, Highstock) An array defining zones within a series. Zones
-    * can be applied to the X axis, Y axis or Z axis for bubbles, according to
-    * the `zoneAxis` option. The zone definitions have to be in ascending order
-    * regarding to the value.
-    *
-    * In styled mode, the color zones are styled with the
-    * `.highcharts-zone-{n}` class, or custom classed from the `className`
-    * option (view live demo).
-    */
-  var zones: js.UndefOr[js.Array[SeriesZonesOptionsObject]] = js.undefined
 }
 object PlotTreegraphOptions {
   
@@ -889,14 +571,6 @@ object PlotTreegraphOptions {
     
     inline def setAllowPointSelectUndefined: Self = StObject.set(x, "allowPointSelect", js.undefined)
     
-    inline def setAllowTraversingTree(value: Boolean): Self = StObject.set(x, "allowTraversingTree", value.asInstanceOf[js.Any])
-    
-    inline def setAllowTraversingTreeUndefined: Self = StObject.set(x, "allowTraversingTree", js.undefined)
-    
-    inline def setAlternateStartingDirection(value: Boolean): Self = StObject.set(x, "alternateStartingDirection", value.asInstanceOf[js.Any])
-    
-    inline def setAlternateStartingDirectionUndefined: Self = StObject.set(x, "alternateStartingDirection", js.undefined)
-    
     inline def setAnimation(value: Boolean | AnimationOptionsObject): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
     inline def setAnimationLimit(value: Double): Self = StObject.set(x, "animationLimit", value.asInstanceOf[js.Any])
@@ -905,7 +579,7 @@ object PlotTreegraphOptions {
     
     inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     
-    inline def setBoostBlending(value: String): Self = StObject.set(x, "boostBlending", value.asInstanceOf[js.Any])
+    inline def setBoostBlending(value: OptionsBoostBlendingValue): Self = StObject.set(x, "boostBlending", value.asInstanceOf[js.Any])
     
     inline def setBoostBlendingUndefined: Self = StObject.set(x, "boostBlending", js.undefined)
     
@@ -917,17 +591,9 @@ object PlotTreegraphOptions {
     
     inline def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
     
-    inline def setBorderRadius(value: Double): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
-    
-    inline def setBorderRadiusUndefined: Self = StObject.set(x, "borderRadius", js.undefined)
-    
     inline def setBorderWidth(value: Double): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
     
     inline def setBorderWidthUndefined: Self = StObject.set(x, "borderWidth", js.undefined)
-    
-    inline def setBreadcrumbs(value: PlotTreegraphBreadcrumbsOptions): Self = StObject.set(x, "breadcrumbs", value.asInstanceOf[js.Any])
-    
-    inline def setBreadcrumbsUndefined: Self = StObject.set(x, "breadcrumbs", js.undefined)
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
@@ -937,19 +603,11 @@ object PlotTreegraphOptions {
     
     inline def setClipUndefined: Self = StObject.set(x, "clip", js.undefined)
     
-    inline def setCluster(value: PlotTreegraphClusterOptions): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
-    
-    inline def setClusterUndefined: Self = StObject.set(x, "cluster", js.undefined)
-    
     inline def setCollapseButton(value: PlotTreegraphCollapseButtonOptions): Self = StObject.set(x, "collapseButton", value.asInstanceOf[js.Any])
     
     inline def setCollapseButtonUndefined: Self = StObject.set(x, "collapseButton", js.undefined)
     
     inline def setColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
-    
-    inline def setColorAxis(value: Boolean | Double | String): Self = StObject.set(x, "colorAxis", value.asInstanceOf[js.Any])
-    
-    inline def setColorAxisUndefined: Self = StObject.set(x, "colorAxis", js.undefined)
     
     inline def setColorByPoint(value: Boolean): Self = StObject.set(x, "colorByPoint", value.asInstanceOf[js.Any])
     
@@ -959,10 +617,6 @@ object PlotTreegraphOptions {
     
     inline def setColorIndexUndefined: Self = StObject.set(x, "colorIndex", js.undefined)
     
-    inline def setColorKey(value: String): Self = StObject.set(x, "colorKey", value.asInstanceOf[js.Any])
-    
-    inline def setColorKeyUndefined: Self = StObject.set(x, "colorKey", js.undefined)
-    
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     inline def setColors(value: js.Array[ColorString | GradientColorObject | PatternObject]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
@@ -971,25 +625,13 @@ object PlotTreegraphOptions {
     
     inline def setColorsVarargs(value: (ColorString | GradientColorObject | PatternObject)*): Self = StObject.set(x, "colors", js.Array(value*))
     
-    inline def setCompare(value: String): Self = StObject.set(x, "compare", value.asInstanceOf[js.Any])
-    
-    inline def setCompareBase(value: Double): Self = StObject.set(x, "compareBase", value.asInstanceOf[js.Any])
+    inline def setCompareBase(value: `0` | `100`): Self = StObject.set(x, "compareBase", value.asInstanceOf[js.Any])
     
     inline def setCompareBaseUndefined: Self = StObject.set(x, "compareBase", js.undefined)
     
     inline def setCompareStart(value: Boolean): Self = StObject.set(x, "compareStart", value.asInstanceOf[js.Any])
     
     inline def setCompareStartUndefined: Self = StObject.set(x, "compareStart", js.undefined)
-    
-    inline def setCompareUndefined: Self = StObject.set(x, "compare", js.undefined)
-    
-    inline def setConnectEnds(value: Boolean): Self = StObject.set(x, "connectEnds", value.asInstanceOf[js.Any])
-    
-    inline def setConnectEndsUndefined: Self = StObject.set(x, "connectEnds", js.undefined)
-    
-    inline def setConnectNulls(value: Boolean): Self = StObject.set(x, "connectNulls", value.asInstanceOf[js.Any])
-    
-    inline def setConnectNullsUndefined: Self = StObject.set(x, "connectNulls", js.undefined)
     
     inline def setConnectors(value: SeriesConnectorsOptionsObject): Self = StObject.set(x, "connectors", value.asInstanceOf[js.Any])
     
@@ -1015,35 +657,15 @@ object PlotTreegraphOptions {
     
     inline def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
     
-    inline def setDashStyle(value: DashStyleValue): Self = StObject.set(x, "dashStyle", value.asInstanceOf[js.Any])
-    
-    inline def setDashStyleUndefined: Self = StObject.set(x, "dashStyle", js.undefined)
-    
-    inline def setDataAsColumns(value: Boolean): Self = StObject.set(x, "dataAsColumns", value.asInstanceOf[js.Any])
-    
-    inline def setDataAsColumnsUndefined: Self = StObject.set(x, "dataAsColumns", js.undefined)
-    
-    inline def setDataGrouping(value: DataGroupingOptionsObject): Self = StObject.set(x, "dataGrouping", value.asInstanceOf[js.Any])
-    
-    inline def setDataGroupingUndefined: Self = StObject.set(x, "dataGrouping", js.undefined)
-    
     inline def setDataLabels(value: SeriesTreegraphDataLabelsOptionsObject | js.Array[SeriesTreegraphDataLabelsOptionsObject]): Self = StObject.set(x, "dataLabels", value.asInstanceOf[js.Any])
     
     inline def setDataLabelsUndefined: Self = StObject.set(x, "dataLabels", js.undefined)
     
     inline def setDataLabelsVarargs(value: SeriesTreegraphDataLabelsOptionsObject*): Self = StObject.set(x, "dataLabels", js.Array(value*))
     
-    inline def setDataSorting(value: DataSortingOptionsObject | PlotTreegraphDataSortingOptions): Self = StObject.set(x, "dataSorting", value.asInstanceOf[js.Any])
-    
-    inline def setDataSortingUndefined: Self = StObject.set(x, "dataSorting", js.undefined)
-    
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
-    
-    inline def setDragDrop(value: SeriesDragDropOptionsObject): Self = StObject.set(x, "dragDrop", value.asInstanceOf[js.Any])
-    
-    inline def setDragDropUndefined: Self = StObject.set(x, "dragDrop", js.undefined)
     
     inline def setEnableMouseTracking(value: Boolean): Self = StObject.set(x, "enableMouseTracking", value.asInstanceOf[js.Any])
     
@@ -1053,43 +675,17 @@ object PlotTreegraphOptions {
     
     inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
-    inline def setFindNearestPointBy(value: String): Self = StObject.set(x, "findNearestPointBy", value.asInstanceOf[js.Any])
+    inline def setFindNearestPointBy(value: OptionsFindNearestPointByValue): Self = StObject.set(x, "findNearestPointBy", value.asInstanceOf[js.Any])
     
     inline def setFindNearestPointByUndefined: Self = StObject.set(x, "findNearestPointBy", js.undefined)
-    
-    inline def setGapSize(value: Double): Self = StObject.set(x, "gapSize", value.asInstanceOf[js.Any])
-    
-    inline def setGapSizeUndefined: Self = StObject.set(x, "gapSize", js.undefined)
-    
-    inline def setGapUnit(value: String): Self = StObject.set(x, "gapUnit", value.asInstanceOf[js.Any])
-    
-    inline def setGapUnitUndefined: Self = StObject.set(x, "gapUnit", js.undefined)
     
     inline def setGetExtremesFromAll(value: Boolean): Self = StObject.set(x, "getExtremesFromAll", value.asInstanceOf[js.Any])
     
     inline def setGetExtremesFromAllUndefined: Self = StObject.set(x, "getExtremesFromAll", js.undefined)
     
-    inline def setIgnoreHiddenPoint(value: Boolean): Self = StObject.set(x, "ignoreHiddenPoint", value.asInstanceOf[js.Any])
-    
-    inline def setIgnoreHiddenPointUndefined: Self = StObject.set(x, "ignoreHiddenPoint", js.undefined)
-    
     inline def setIncludeInDataExport(value: Boolean): Self = StObject.set(x, "includeInDataExport", value.asInstanceOf[js.Any])
     
     inline def setIncludeInDataExportUndefined: Self = StObject.set(x, "includeInDataExport", js.undefined)
-    
-    inline def setInteractByLeaf(value: Boolean): Self = StObject.set(x, "interactByLeaf", value.asInstanceOf[js.Any])
-    
-    inline def setInteractByLeafUndefined: Self = StObject.set(x, "interactByLeaf", js.undefined)
-    
-    inline def setJitter(value: PlotTreegraphJitterOptions): Self = StObject.set(x, "jitter", value.asInstanceOf[js.Any])
-    
-    inline def setJitterUndefined: Self = StObject.set(x, "jitter", js.undefined)
-    
-    inline def setJoinBy(value: String | js.Array[String]): Self = StObject.set(x, "joinBy", value.asInstanceOf[js.Any])
-    
-    inline def setJoinByUndefined: Self = StObject.set(x, "joinBy", js.undefined)
-    
-    inline def setJoinByVarargs(value: String*): Self = StObject.set(x, "joinBy", js.Array(value*))
     
     inline def setKeys(value: js.Array[String]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     
@@ -1109,31 +705,15 @@ object PlotTreegraphOptions {
     
     inline def setLastVisiblePriceUndefined: Self = StObject.set(x, "lastVisiblePrice", js.undefined)
     
-    inline def setLayoutAlgorithm(value: String): Self = StObject.set(x, "layoutAlgorithm", value.asInstanceOf[js.Any])
+    inline def setLegendSymbol(value: String): Self = StObject.set(x, "legendSymbol", value.asInstanceOf[js.Any])
     
-    inline def setLayoutAlgorithmUndefined: Self = StObject.set(x, "layoutAlgorithm", js.undefined)
-    
-    inline def setLayoutStartingDirection(value: String): Self = StObject.set(x, "layoutStartingDirection", value.asInstanceOf[js.Any])
-    
-    inline def setLayoutStartingDirectionUndefined: Self = StObject.set(x, "layoutStartingDirection", js.undefined)
-    
-    inline def setLevelIsConstant(value: Boolean): Self = StObject.set(x, "levelIsConstant", value.asInstanceOf[js.Any])
-    
-    inline def setLevelIsConstantUndefined: Self = StObject.set(x, "levelIsConstant", js.undefined)
+    inline def setLegendSymbolUndefined: Self = StObject.set(x, "legendSymbol", js.undefined)
     
     inline def setLevels(value: js.Array[PlotTreegraphLevelsOptions]): Self = StObject.set(x, "levels", value.asInstanceOf[js.Any])
     
     inline def setLevelsUndefined: Self = StObject.set(x, "levels", js.undefined)
     
     inline def setLevelsVarargs(value: PlotTreegraphLevelsOptions*): Self = StObject.set(x, "levels", js.Array(value*))
-    
-    inline def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
-    
-    inline def setLineWidthUndefined: Self = StObject.set(x, "lineWidth", js.undefined)
-    
-    inline def setLinecap(value: SeriesLinecapValue): Self = StObject.set(x, "linecap", value.asInstanceOf[js.Any])
-    
-    inline def setLinecapUndefined: Self = StObject.set(x, "linecap", js.undefined)
     
     inline def setLink(value: PlotTreegraphLinkOptions): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     
@@ -1146,14 +726,6 @@ object PlotTreegraphOptions {
     inline def setMarker(value: PointMarkerOptionsObject): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
     
     inline def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
-    
-    inline def setNavigatorOptions(value: PlotSeriesOptions): Self = StObject.set(x, "navigatorOptions", value.asInstanceOf[js.Any])
-    
-    inline def setNavigatorOptionsUndefined: Self = StObject.set(x, "navigatorOptions", js.undefined)
-    
-    inline def setNegativeColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "negativeColor", value.asInstanceOf[js.Any])
-    
-    inline def setNegativeColorUndefined: Self = StObject.set(x, "negativeColor", js.undefined)
     
     inline def setOnPoint(value: js.Object | PlotTreegraphOnPointOptions): Self = StObject.set(x, "onPoint", value.asInstanceOf[js.Any])
     
@@ -1173,17 +745,9 @@ object PlotTreegraphOptions {
     
     inline def setPointIntervalUndefined: Self = StObject.set(x, "pointInterval", js.undefined)
     
-    inline def setPointIntervalUnit(value: String): Self = StObject.set(x, "pointIntervalUnit", value.asInstanceOf[js.Any])
+    inline def setPointIntervalUnit(value: OptionsPointIntervalUnitValue): Self = StObject.set(x, "pointIntervalUnit", value.asInstanceOf[js.Any])
     
     inline def setPointIntervalUnitUndefined: Self = StObject.set(x, "pointIntervalUnit", js.undefined)
-    
-    inline def setPointPlacement(value: Double | String): Self = StObject.set(x, "pointPlacement", value.asInstanceOf[js.Any])
-    
-    inline def setPointPlacementUndefined: Self = StObject.set(x, "pointPlacement", js.undefined)
-    
-    inline def setPointRange(value: Double): Self = StObject.set(x, "pointRange", value.asInstanceOf[js.Any])
-    
-    inline def setPointRangeUndefined: Self = StObject.set(x, "pointRange", js.undefined)
     
     inline def setPointStart(value: Double): Self = StObject.set(x, "pointStart", value.asInstanceOf[js.Any])
     
@@ -1202,10 +766,6 @@ object PlotTreegraphOptions {
     inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     
     inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
-    
-    inline def setShadow(value: Boolean | ShadowOptionsObject): Self = StObject.set(x, "shadow", value.asInstanceOf[js.Any])
-    
-    inline def setShadowUndefined: Self = StObject.set(x, "shadow", js.undefined)
     
     inline def setShowCheckbox(value: Boolean): Self = StObject.set(x, "showCheckbox", value.asInstanceOf[js.Any])
     
@@ -1227,11 +787,11 @@ object PlotTreegraphOptions {
     
     inline def setSoftThresholdUndefined: Self = StObject.set(x, "softThreshold", js.undefined)
     
-    inline def setSortIndex(value: Double): Self = StObject.set(x, "sortIndex", value.asInstanceOf[js.Any])
+    inline def setSonification(value: PlotTreegraphSonificationOptions): Self = StObject.set(x, "sonification", value.asInstanceOf[js.Any])
     
-    inline def setSortIndexUndefined: Self = StObject.set(x, "sortIndex", js.undefined)
+    inline def setSonificationUndefined: Self = StObject.set(x, "sonification", js.undefined)
     
-    inline def setStacking(value: String): Self = StObject.set(x, "stacking", value.asInstanceOf[js.Any])
+    inline def setStacking(value: OptionsStackingValue): Self = StObject.set(x, "stacking", value.asInstanceOf[js.Any])
     
     inline def setStackingUndefined: Self = StObject.set(x, "stacking", js.undefined)
     
@@ -1239,19 +799,13 @@ object PlotTreegraphOptions {
     
     inline def setStatesUndefined: Self = StObject.set(x, "states", js.undefined)
     
-    inline def setStep(value: String): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+    inline def setStep(value: OptionsStepValue): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     
     inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
     
     inline def setStickyTracking(value: Boolean): Self = StObject.set(x, "stickyTracking", value.asInstanceOf[js.Any])
     
     inline def setStickyTrackingUndefined: Self = StObject.set(x, "stickyTracking", js.undefined)
-    
-    inline def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
-    
-    inline def setThresholdNull: Self = StObject.set(x, "threshold", null)
-    
-    inline def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
     
     inline def setTooltip(value: SeriesTooltipOptionsObject): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
     
@@ -1261,10 +815,6 @@ object PlotTreegraphOptions {
     
     inline def setTurboThresholdUndefined: Self = StObject.set(x, "turboThreshold", js.undefined)
     
-    inline def setUseOhlcData(value: Boolean): Self = StObject.set(x, "useOhlcData", value.asInstanceOf[js.Any])
-    
-    inline def setUseOhlcDataUndefined: Self = StObject.set(x, "useOhlcData", js.undefined)
-    
     inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
     inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
@@ -1272,15 +822,5 @@ object PlotTreegraphOptions {
     inline def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
     
     inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
-    
-    inline def setZoneAxis(value: String): Self = StObject.set(x, "zoneAxis", value.asInstanceOf[js.Any])
-    
-    inline def setZoneAxisUndefined: Self = StObject.set(x, "zoneAxis", js.undefined)
-    
-    inline def setZones(value: js.Array[SeriesZonesOptionsObject]): Self = StObject.set(x, "zones", value.asInstanceOf[js.Any])
-    
-    inline def setZonesUndefined: Self = StObject.set(x, "zones", js.undefined)
-    
-    inline def setZonesVarargs(value: SeriesZonesOptionsObject*): Self = StObject.set(x, "zones", js.Array(value*))
   }
 }

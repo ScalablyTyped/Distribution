@@ -32,6 +32,10 @@ object distDeclarationsSrcConfigDragConfigResolverMod {
   @js.native
   val DEFAULT_DRAG_DELAY: /* 180 */ Double = js.native
   
+  @JSImport("@use-gesture/core/dist/declarations/src/config/dragConfigResolver", "DEFAULT_KEYBOARD_DISPLACEMENT")
+  @js.native
+  val DEFAULT_KEYBOARD_DISPLACEMENT: /* 10 */ Double = js.native
+  
   @JSImport("@use-gesture/core/dist/declarations/src/config/dragConfigResolver", "DEFAULT_PREVENT_SCROLL_DELAY")
   @js.native
   val DEFAULT_PREVENT_SCROLL_DELAY: /* 250 */ Double = js.native
@@ -78,8 +82,8 @@ object distDeclarationsSrcConfigDragConfigResolverMod {
     inline def from(value: Double): js.UndefOr[(js.Tuple2[Double, Double]) | (js.Function1[/* s */ State, Vector2])] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[(js.Tuple2[Double, Double]) | (js.Function1[/* s */ State, Vector2])]]
     inline def from(value: Vector2): js.UndefOr[(js.Tuple2[Double, Double]) | (js.Function1[/* s */ State, Vector2])] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[(js.Tuple2[Double, Double]) | (js.Function1[/* s */ State, Vector2])]]
     
-    inline def keys(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("keys")().asInstanceOf[Boolean]
-    inline def keys(value: Boolean): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("keys")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def keyboardDisplacement(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("keyboardDisplacement")().asInstanceOf[Double]
+    inline def keyboardDisplacement(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("keyboardDisplacement")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     inline def pointerCapture(_v: Any, _k: String, param3: Pointer): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("pointerCapture")(_v.asInstanceOf[js.Any], _k.asInstanceOf[js.Any], param3.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     

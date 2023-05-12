@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListClassificationJobsResponse extends StObject {
   
   /**
-    * An array of objects, one for each job that meets the filter criteria specified in the request.
+    * An array of objects, one for each job that matches the filter criteria specified in the request.
     */
   var items: js.UndefOr[listOfJobSummary] = js.undefined
   

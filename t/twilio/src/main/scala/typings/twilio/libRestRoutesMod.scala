@@ -8,25 +8,25 @@ object libRestRoutesMod {
   
   @JSImport("twilio/lib/rest/Routes", JSImport.Namespace)
   @js.native
-  open class ^ protected () extends Routes {
-    /**
-      * Initialize routes domain
-      *
-      * @param twilio - The twilio client
-      */
-    def this(twilio: typings.twilio.libRestTwilioMod.^) = this()
-  }
+  open class ^ () extends Routes
   
   @js.native
   trait Routes
-    extends typings.twilio.libBaseDomainMod.^ {
+    extends typings.twilio.libRestRoutesBaseMod.^ {
     
-    val phoneNumbers: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PhoneNumberListInstance */ Any = js.native
+    /**
+      * @deprecated - Use v1.phoneNumbers instead
+      */
+    def phoneNumbers: Any = js.native
     
-    val sipDomains: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SipDomainListInstance */ Any = js.native
+    /**
+      * @deprecated - Use v1.sipDomains instead
+      */
+    def sipDomains: Any = js.native
     
-    val trunks: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TrunkListInstance */ Any = js.native
-    
-    val v2: typings.twilio.libRestRoutesV2Mod.^ = js.native
+    /**
+      * @deprecated - Use v1.trunks instead
+      */
+    def trunks: Any = js.native
   }
 }

@@ -6,6 +6,7 @@ import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
 import typings.openui5.sapUiCoreControlMod.ControlSettings
 import typings.openui5.sapUiCoreLibraryMod.ID
+import typings.openui5.sapUiCoreLibraryMod.TitleLevel
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -169,6 +170,7 @@ object sapMIllustratedMessageMod {
     
     /**
       * @SINCE 1.98.0
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Returns object with ID references of the title and description containers.
       *
@@ -191,21 +193,51 @@ object sapMIllustratedMessageMod {
     def getAdditionalContent(): js.Array[typings.openui5.sapMButtonMod.default] = js.native
     
     /**
+      * @SINCE 1.111
+      *
+      * Gets current value of property {@link #getAriaTitleLevel ariaTitleLevel}.
+      *
+      * Defines the semantic level of the title. When using `Auto`, no explicit level information is written.
+      *
+      * **Note:** Used for accessibility purposes only.
+      *
+      * Default value is `Auto`.
+      *
+      * @returns Value of property `ariaTitleLevel`
+      */
+    def getAriaTitleLevel(): TitleLevel | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TitleLevel * / any */ String) = js.native
+    
+    /**
       * @SINCE 1.98
       *
       * Gets current value of property {@link #getDescription description}.
       *
       * Defines the description displayed below the title.
       *
-      * If there is no initial input from the app developer and the default illustration set is being used, a
-      * default description for the current illustration type is going to be displayed. The default description
-      * is stored in the `sap.m` resource bundle.
+      * If there is no initial input from the app developer, `enableDefaultTitleAndDescription` is `true` and
+      * the default illustration set is being used, a default description for the current illustration type is
+      * going to be displayed. The default description is stored in the `sap.m` resource bundle.
       *
       * Default value is `empty string`.
       *
       * @returns Value of property `description`
       */
     def getDescription(): String = js.native
+    
+    /**
+      * @SINCE 1.111
+      *
+      * Gets current value of property {@link #getEnableDefaultTitleAndDescription enableDefaultTitleAndDescription}.
+      *
+      * Defines whether the default title and description should be used when the input for their respective
+      * part is empty and the default illustration set is being used. Title and description are stored in the
+      * `sap.m` resource bundle.
+      *
+      * Default value is `true`.
+      *
+      * @returns Value of property `enableDefaultTitleAndDescription`
+      */
+    def getEnableDefaultTitleAndDescription(): Boolean = js.native
     
     /**
       * @SINCE 1.98
@@ -288,8 +320,9 @@ object sapMIllustratedMessageMod {
       *
       * Defines the title that is displayed below the illustration.
       *
-      * If there is no initial input from the app developer and the default illustration set is being used, a
-      * default title is displayed corresponding to the current `illustrationType`.
+      * If there is no initial input from the app developer, `enableDefaultTitleAndDescription` is `true` and
+      * the default illustration set is being used, a default title is displayed corresponding to the current
+      * `illustrationType`. The default title is stored in the `sap.m` resource bundle.
       *
       * Default value is `empty string`.
       *
@@ -402,15 +435,42 @@ object sapMIllustratedMessageMod {
     ): ID | Null = js.native
     
     /**
+      * @SINCE 1.111
+      *
+      * Sets a new value for property {@link #getAriaTitleLevel ariaTitleLevel}.
+      *
+      * Defines the semantic level of the title. When using `Auto`, no explicit level information is written.
+      *
+      * **Note:** Used for accessibility purposes only.
+      *
+      * When called with a value of `null` or `undefined`, the default value of the property will be restored.
+      *
+      * Default value is `Auto`.
+      *
+      * @returns Reference to `this` in order to allow method chaining
+      */
+    def setAriaTitleLevel(): this.type = js.native
+    def setAriaTitleLevel(
+      /**
+      * New value for property `ariaTitleLevel`
+      */
+    sAriaTitleLevel: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TitleLevel * / any */ String
+    ): this.type = js.native
+    def setAriaTitleLevel(/**
+      * New value for property `ariaTitleLevel`
+      */
+    sAriaTitleLevel: TitleLevel): this.type = js.native
+    
+    /**
       * @SINCE 1.98
       *
       * Sets a new value for property {@link #getDescription description}.
       *
       * Defines the description displayed below the title.
       *
-      * If there is no initial input from the app developer and the default illustration set is being used, a
-      * default description for the current illustration type is going to be displayed. The default description
-      * is stored in the `sap.m` resource bundle.
+      * If there is no initial input from the app developer, `enableDefaultTitleAndDescription` is `true` and
+      * the default illustration set is being used, a default description for the current illustration type is
+      * going to be displayed. The default description is stored in the `sap.m` resource bundle.
       *
       * When called with a value of `null` or `undefined`, the default value of the property will be restored.
       *
@@ -423,6 +483,29 @@ object sapMIllustratedMessageMod {
       * New value for property `description`
       */
     sDescription: String): this.type = js.native
+    
+    /**
+      * @SINCE 1.111
+      *
+      * Sets a new value for property {@link #getEnableDefaultTitleAndDescription enableDefaultTitleAndDescription}.
+      *
+      * Defines whether the default title and description should be used when the input for their respective
+      * part is empty and the default illustration set is being used. Title and description are stored in the
+      * `sap.m` resource bundle.
+      *
+      * When called with a value of `null` or `undefined`, the default value of the property will be restored.
+      *
+      * Default value is `true`.
+      *
+      * @returns Reference to `this` in order to allow method chaining
+      */
+    def setEnableDefaultTitleAndDescription(): this.type = js.native
+    def setEnableDefaultTitleAndDescription(
+      /**
+      * New value for property `enableDefaultTitleAndDescription`
+      */
+    bEnableDefaultTitleAndDescription: Boolean
+    ): this.type = js.native
     
     /**
       * @SINCE 1.98
@@ -502,8 +585,9 @@ object sapMIllustratedMessageMod {
       *
       * Defines the title that is displayed below the illustration.
       *
-      * If there is no initial input from the app developer and the default illustration set is being used, a
-      * default title is displayed corresponding to the current `illustrationType`.
+      * If there is no initial input from the app developer, `enableDefaultTitleAndDescription` is `true` and
+      * the default illustration set is being used, a default title is displayed corresponding to the current
+      * `illustrationType`. The default title is stored in the `sap.m` resource bundle.
       *
       * When called with a value of `null` or `undefined`, the default value of the property will be restored.
       *
@@ -534,15 +618,37 @@ object sapMIllustratedMessageMod {
       ] = js.undefined
     
     /**
+      * @SINCE 1.111
+      *
+      * Defines the semantic level of the title. When using `Auto`, no explicit level information is written.
+      *
+      * **Note:** Used for accessibility purposes only.
+      */
+    var ariaTitleLevel: js.UndefOr[
+        TitleLevel | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TitleLevel * / any */ String) | PropertyBindingInfo
+      ] = js.undefined
+    
+    /**
       * @SINCE 1.98
       *
       * Defines the description displayed below the title.
       *
-      * If there is no initial input from the app developer and the default illustration set is being used, a
-      * default description for the current illustration type is going to be displayed. The default description
-      * is stored in the `sap.m` resource bundle.
+      * If there is no initial input from the app developer, `enableDefaultTitleAndDescription` is `true` and
+      * the default illustration set is being used, a default description for the current illustration type is
+      * going to be displayed. The default description is stored in the `sap.m` resource bundle.
       */
     var description: js.UndefOr[String | PropertyBindingInfo] = js.undefined
+    
+    /**
+      * @SINCE 1.111
+      *
+      * Defines whether the default title and description should be used when the input for their respective
+      * part is empty and the default illustration set is being used. Title and description are stored in the
+      * `sap.m` resource bundle.
+      */
+    var enableDefaultTitleAndDescription: js.UndefOr[
+        Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)
+      ] = js.undefined
     
     /**
       * @SINCE 1.98
@@ -604,8 +710,9 @@ object sapMIllustratedMessageMod {
       *
       * Defines the title that is displayed below the illustration.
       *
-      * If there is no initial input from the app developer and the default illustration set is being used, a
-      * default title is displayed corresponding to the current `illustrationType`.
+      * If there is no initial input from the app developer, `enableDefaultTitleAndDescription` is `true` and
+      * the default illustration set is being used, a default title is displayed corresponding to the current
+      * `illustrationType`. The default title is stored in the `sap.m` resource bundle.
       */
     var title: js.UndefOr[String | PropertyBindingInfo] = js.undefined
   }
@@ -627,9 +734,19 @@ object sapMIllustratedMessageMod {
       
       inline def setAdditionalContentVarargs(value: typings.openui5.sapMButtonMod.default*): Self = StObject.set(x, "additionalContent", js.Array(value*))
       
+      inline def setAriaTitleLevel(
+        value: TitleLevel | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TitleLevel * / any */ String) | PropertyBindingInfo
+      ): Self = StObject.set(x, "ariaTitleLevel", value.asInstanceOf[js.Any])
+      
+      inline def setAriaTitleLevelUndefined: Self = StObject.set(x, "ariaTitleLevel", js.undefined)
+      
       inline def setDescription(value: String | PropertyBindingInfo): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
       inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      
+      inline def setEnableDefaultTitleAndDescription(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "enableDefaultTitleAndDescription", value.asInstanceOf[js.Any])
+      
+      inline def setEnableDefaultTitleAndDescriptionUndefined: Self = StObject.set(x, "enableDefaultTitleAndDescription", js.undefined)
       
       inline def setEnableFormattedText(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "enableFormattedText", value.asInstanceOf[js.Any])
       

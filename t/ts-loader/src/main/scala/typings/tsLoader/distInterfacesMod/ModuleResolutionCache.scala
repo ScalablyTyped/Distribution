@@ -1,6 +1,7 @@
 package typings.tsLoader.distInterfacesMod
 
 import typings.std.Map
+import typings.typescript.mod.CompilerOptions
 import typings.typescript.mod.ResolvedModuleWithFailedLookupLocations
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -18,4 +19,12 @@ trait ModuleResolutionCache
   var directoryToModuleNameMap: CacheWithRedirects[Map[String, ResolvedModuleWithFailedLookupLocations]] = js.native
   
   var moduleNameToDirectoryMap: CacheWithRedirects[PerModuleNameCache] = js.native
+  
+  /**
+    *  Updates with the current compilerOptions the cache will operate with.
+    *  This updates the redirects map as well if needed so module resolutions are cached if they can across the projects
+    */
+  /* InferMemberOverrides */
+  /* InferMemberOverrides */
+  override def update(options: CompilerOptions): Unit = js.native
 }

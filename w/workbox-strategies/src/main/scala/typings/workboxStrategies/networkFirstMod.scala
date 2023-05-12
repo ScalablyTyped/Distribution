@@ -1,49 +1,86 @@
 package typings.workboxStrategies
 
-import typings.std.CacheQueryOptions
-import typings.std.RequestInit
 import typings.std.Response
-import typings.workboxCore.typesWorkboxPluginMod.WorkboxPlugin
-import typings.workboxRouting.typesRouteHandlerMod.RouteHandlerCallback
-import typings.workboxRouting.typesRouteHandlerMod.RouteHandlerCallbackContext
-import typings.workboxRouting.typesRouteHandlerMod.RouteHandlerObject
-import typings.workboxStrategies.typesMakeRequestCallbackMod.MakeRequestCallback
-import typings.workboxStrategies.typesMakeRequestCallbackMod.MakeRequestCallbackOptions
+import typings.workboxStrategies.anon.Handler
+import typings.workboxStrategies.strategyMod.Strategy
+import typings.workboxStrategies.strategyMod.StrategyOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object networkFirstMod {
   
+  /**
+    * An implementation of a
+    * [network first](https://developer.chrome.com/docs/workbox/caching-strategies-overview/#network-first-falling-back-to-cache)
+    * request strategy.
+    *
+    * By default, this strategy will cache responses with a 200 status code as
+    * well as [opaque responses](https://developer.chrome.com/docs/workbox/caching-resources-during-runtime/#opaque-responses).
+    * Opaque responses are are cross-origin requests where the response doesn't
+    * support [CORS](https://enable-cors.org/).
+    *
+    * If the network request fails, and there is no cache match, this will throw
+    * a `WorkboxError` exception.
+    *
+    * @extends workbox-strategies.Strategy
+    * @memberof workbox-strategies
+    */
   @JSImport("workbox-strategies/NetworkFirst", "NetworkFirst")
   @js.native
-  open class NetworkFirst ()
-    extends StObject
-       with RouteHandlerObject {
+  /**
+    * @param {Object} [options]
+    * @param {string} [options.cacheName] Cache name to store and retrieve
+    * requests. Defaults to cache names provided by
+    * {@link workbox-core.cacheNames}.
+    * @param {Array<Object>} [options.plugins] [Plugins]{@link https://developers.google.com/web/tools/workbox/guides/using-plugins}
+    * to use in conjunction with this caching strategy.
+    * @param {Object} [options.fetchOptions] Values passed along to the
+    * [`init`](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/fetch#Parameters)
+    * of [non-navigation](https://github.com/GoogleChrome/workbox/issues/1796)
+    * `fetch()` requests made by this strategy.
+    * @param {Object} [options.matchOptions] [`CacheQueryOptions`](https://w3c.github.io/ServiceWorker/#dictdef-cachequeryoptions)
+    * @param {number} [options.networkTimeoutSeconds] If set, any network requests
+    * that fail to respond within the timeout will fallback to the cache.
+    *
+    * This option can be used to combat
+    * "[lie-fi]{@link https://developers.google.com/web/fundamentals/performance/poor-connectivity/#lie-fi}"
+    * scenarios.
+    */
+  open class NetworkFirst () extends Strategy {
     def this(options: NetworkFirstOptions) = this()
     
-    /* CompleteClass */
-    override def handle(context: RouteHandlerCallbackContext): js.Promise[Response] = js.native
-    /* CompleteClass */
-    @JSName("handle")
-    var handle_Original: RouteHandlerCallback = js.native
+    /**
+      * @param {Object} options
+      * @param {number|undefined} options.timeoutId
+      * @param {Request} options.request
+      * @param {Array} options.logs A reference to the logs Array.
+      * @param {Event} options.event
+      * @return {Promise<Response>}
+      *
+      * @private
+      */
+    def _getNetworkPromise(param0: Handler): js.Promise[js.UndefOr[Response]] = js.native
     
-    def makeRequest(options: MakeRequestCallbackOptions): js.Promise[Response] = js.native
-    @JSName("makeRequest")
-    var makeRequest_Original: MakeRequestCallback = js.native
+    /**
+      * @param {Object} options
+      * @param {Request} options.request
+      * @param {Array} options.logs A reference to the logs array
+      * @param {Event} options.event
+      * @return {Promise<Response>}
+      *
+      * @private
+      */
+    /* private */ var _getTimeoutPromise: Any = js.native
+    
+    /* private */ val _networkTimeoutSeconds: Any = js.native
   }
   
-  trait NetworkFirstOptions extends StObject {
-    
-    var cacheName: js.UndefOr[String] = js.undefined
-    
-    var fetchOptions: js.UndefOr[RequestInit] = js.undefined
-    
-    var matchOptions: js.UndefOr[CacheQueryOptions] = js.undefined
+  trait NetworkFirstOptions
+    extends StObject
+       with StrategyOptions {
     
     var networkTimeoutSeconds: js.UndefOr[Double] = js.undefined
-    
-    var plugins: js.UndefOr[js.Array[WorkboxPlugin]] = js.undefined
   }
   object NetworkFirstOptions {
     
@@ -55,27 +92,9 @@ object networkFirstMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: NetworkFirstOptions] (val x: Self) extends AnyVal {
       
-      inline def setCacheName(value: String): Self = StObject.set(x, "cacheName", value.asInstanceOf[js.Any])
-      
-      inline def setCacheNameUndefined: Self = StObject.set(x, "cacheName", js.undefined)
-      
-      inline def setFetchOptions(value: RequestInit): Self = StObject.set(x, "fetchOptions", value.asInstanceOf[js.Any])
-      
-      inline def setFetchOptionsUndefined: Self = StObject.set(x, "fetchOptions", js.undefined)
-      
-      inline def setMatchOptions(value: CacheQueryOptions): Self = StObject.set(x, "matchOptions", value.asInstanceOf[js.Any])
-      
-      inline def setMatchOptionsUndefined: Self = StObject.set(x, "matchOptions", js.undefined)
-      
       inline def setNetworkTimeoutSeconds(value: Double): Self = StObject.set(x, "networkTimeoutSeconds", value.asInstanceOf[js.Any])
       
       inline def setNetworkTimeoutSecondsUndefined: Self = StObject.set(x, "networkTimeoutSeconds", js.undefined)
-      
-      inline def setPlugins(value: js.Array[WorkboxPlugin]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
-      
-      inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
-      
-      inline def setPluginsVarargs(value: WorkboxPlugin*): Self = StObject.set(x, "plugins", js.Array(value*))
     }
   }
 }

@@ -42,6 +42,11 @@ trait UpdateOpsItemRequest extends StObject {
   var OperationalDataToDelete: js.UndefOr[OpsItemOpsDataKeysList] = js.undefined
   
   /**
+    * The OpsItem Amazon Resource Name (ARN).
+    */
+  var OpsItemArn: js.UndefOr[typings.awsSdk.clientsSsmMod.OpsItemArn] = js.undefined
+  
+  /**
     * The ID of the OpsItem.
     */
   var OpsItemId: typings.awsSdk.clientsSsmMod.OpsItemId
@@ -122,6 +127,10 @@ object UpdateOpsItemRequest {
     inline def setOperationalDataToDeleteVarargs(value: String*): Self = StObject.set(x, "OperationalDataToDelete", js.Array(value*))
     
     inline def setOperationalDataUndefined: Self = StObject.set(x, "OperationalData", js.undefined)
+    
+    inline def setOpsItemArn(value: OpsItemArn): Self = StObject.set(x, "OpsItemArn", value.asInstanceOf[js.Any])
+    
+    inline def setOpsItemArnUndefined: Self = StObject.set(x, "OpsItemArn", js.undefined)
     
     inline def setOpsItemId(value: OpsItemId): Self = StObject.set(x, "OpsItemId", value.asInstanceOf[js.Any])
     

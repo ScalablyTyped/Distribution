@@ -16,5 +16,5 @@ object distSrcValidatorsMod {
   @js.native
   val validators: Validators = js.native
   
-  inline def verifyRecord(validators: Validators, record: Libp2pRecord): js.UndefOr[js.Promise[Unit]] = (^.asInstanceOf[js.Dynamic].applyDynamic("verifyRecord")(validators.asInstanceOf[js.Any], record.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Promise[Unit]]]
+  inline def verifyRecord(validators: Validators, record: Libp2pRecord): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("verifyRecord")(validators.asInstanceOf[js.Any], record.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 }

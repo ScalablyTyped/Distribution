@@ -271,6 +271,8 @@ object sapUiTableTreeTableMod {
     iLevel: int): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:toggleOpenState toggleOpenState} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -522,6 +524,8 @@ object sapUiTableTreeTableMod {
     iRootLevel: int): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Allows to hide the tree structure (tree icons, indentation) in tree mode (property `useGroupMode` is
       * set to `false`).
       *

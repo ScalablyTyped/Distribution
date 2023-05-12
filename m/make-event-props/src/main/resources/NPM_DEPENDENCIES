@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "make-event-props" : "1.5.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "make-event-props" : "1.5.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

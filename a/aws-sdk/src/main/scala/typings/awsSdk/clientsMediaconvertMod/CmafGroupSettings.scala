@@ -27,6 +27,11 @@ trait CmafGroupSettings extends StObject {
   var CodecSpecification: js.UndefOr[CmafCodecSpecification] = js.undefined
   
   /**
+    * Specify how MediaConvert writes SegmentTimeline in your output DASH manifest. To write a SegmentTimeline in each video Representation: Keep the default value, Basic. To write a common SegmentTimeline in the video AdaptationSet: Choose Compact. Note that MediaConvert will still write a SegmentTimeline in any Representation that does not share a common timeline. To write a video AdaptationSet for each different output framerate, and a common SegmentTimeline in each AdaptationSet: Choose Distinct.
+    */
+  var DashManifestStyle: js.UndefOr[typings.awsSdk.clientsMediaconvertMod.DashManifestStyle] = js.undefined
+  
+  /**
     * Use Destination (Destination) to specify the S3 output location and the output filename base. Destination accepts format identifiers. If you do not specify the base filename in the URI, the service will use the filename of the input file. If your job has multiple inputs, the service uses the filename of the first input file.
     */
   var Destination: js.UndefOr[stringPatternS3] = js.undefined
@@ -77,7 +82,12 @@ trait CmafGroupSettings extends StObject {
   var MinFinalSegmentLength: js.UndefOr[doubleMin0Max2147483647] = js.undefined
   
   /**
-    * Specify whether your DASH profile is on-demand or main. When you choose Main profile (MAIN_PROFILE), the service signals  urn:mpeg:dash:profile:isoff-main:2011 in your .mpd DASH manifest. When you choose On-demand (ON_DEMAND_PROFILE), the service signals urn:mpeg:dash:profile:isoff-on-demand:2011 in your .mpd. When you choose On-demand, you must also set the output group setting Segment control (SegmentControl) to Single file (SINGLE_FILE).
+    * Specify how the value for bandwidth is determined for each video Representation in your output MPD manifest. We recommend that you choose a MPD manifest bandwidth type that is compatible with your downstream player configuration. Max: Use the same value that you specify for Max bitrate in the video output, in bits per second. Average: Use the calculated average bitrate of the encoded video output, in bits per second.
+    */
+  var MpdManifestBandwidthType: js.UndefOr[CmafMpdManifestBandwidthType] = js.undefined
+  
+  /**
+    * Specify whether your DASH profile is on-demand or main. When you choose Main profile (MAIN_PROFILE), the service signals urn:mpeg:dash:profile:isoff-main:2011 in your .mpd DASH manifest. When you choose On-demand (ON_DEMAND_PROFILE), the service signals urn:mpeg:dash:profile:isoff-on-demand:2011 in your .mpd. When you choose On-demand, you must also set the output group setting Segment control (SegmentControl) to Single file (SINGLE_FILE).
     */
   var MpdProfile: js.UndefOr[CmafMpdProfile] = js.undefined
   
@@ -110,6 +120,11 @@ trait CmafGroupSettings extends StObject {
     * When set to LEGACY, the segment target duration is always rounded up to the nearest integer value above its current value in seconds. When set to SPEC\\_COMPLIANT, the segment target duration is rounded up to the nearest integer value if fraction seconds are greater than or equal to 0.5 (>= 0.5) and rounded down if less than 0.5 (< 0.5). You may need to use LEGACY if your client needs to ensure that the target duration is always longer than the actual duration of the segment. Some older players may experience interrupted playback when the actual duration of a track in a segment is longer than the target duration.
     */
   var TargetDurationCompatibilityMode: js.UndefOr[CmafTargetDurationCompatibilityMode] = js.undefined
+  
+  /**
+    * Specify the video sample composition time offset mode in the output fMP4 TRUN box. For wider player compatibility, set Video composition offsets to Unsigned or leave blank. The earliest presentation time may be greater than zero, and sample composition time offsets will increment using unsigned integers. For strict fMP4 video and audio timing, set Video composition offsets to Signed. The earliest presentation time will be equal to zero, and sample composition time offsets will increment using signed integers.
+    */
+  var VideoCompositionOffsets: js.UndefOr[CmafVideoCompositionOffsets] = js.undefined
   
   /**
     * When set to ENABLED, a DASH MPD manifest will be generated for this output.
@@ -154,6 +169,10 @@ object CmafGroupSettings {
     
     inline def setCodecSpecificationUndefined: Self = StObject.set(x, "CodecSpecification", js.undefined)
     
+    inline def setDashManifestStyle(value: DashManifestStyle): Self = StObject.set(x, "DashManifestStyle", value.asInstanceOf[js.Any])
+    
+    inline def setDashManifestStyleUndefined: Self = StObject.set(x, "DashManifestStyle", js.undefined)
+    
     inline def setDestination(value: stringPatternS3): Self = StObject.set(x, "Destination", value.asInstanceOf[js.Any])
     
     inline def setDestinationSettings(value: DestinationSettings): Self = StObject.set(x, "DestinationSettings", value.asInstanceOf[js.Any])
@@ -194,6 +213,10 @@ object CmafGroupSettings {
     
     inline def setMinFinalSegmentLengthUndefined: Self = StObject.set(x, "MinFinalSegmentLength", js.undefined)
     
+    inline def setMpdManifestBandwidthType(value: CmafMpdManifestBandwidthType): Self = StObject.set(x, "MpdManifestBandwidthType", value.asInstanceOf[js.Any])
+    
+    inline def setMpdManifestBandwidthTypeUndefined: Self = StObject.set(x, "MpdManifestBandwidthType", js.undefined)
+    
     inline def setMpdProfile(value: CmafMpdProfile): Self = StObject.set(x, "MpdProfile", value.asInstanceOf[js.Any])
     
     inline def setMpdProfileUndefined: Self = StObject.set(x, "MpdProfile", js.undefined)
@@ -221,6 +244,10 @@ object CmafGroupSettings {
     inline def setTargetDurationCompatibilityMode(value: CmafTargetDurationCompatibilityMode): Self = StObject.set(x, "TargetDurationCompatibilityMode", value.asInstanceOf[js.Any])
     
     inline def setTargetDurationCompatibilityModeUndefined: Self = StObject.set(x, "TargetDurationCompatibilityMode", js.undefined)
+    
+    inline def setVideoCompositionOffsets(value: CmafVideoCompositionOffsets): Self = StObject.set(x, "VideoCompositionOffsets", value.asInstanceOf[js.Any])
+    
+    inline def setVideoCompositionOffsetsUndefined: Self = StObject.set(x, "VideoCompositionOffsets", js.undefined)
     
     inline def setWriteDashManifest(value: CmafWriteDASHManifest): Self = StObject.set(x, "WriteDashManifest", value.asInstanceOf[js.Any])
     

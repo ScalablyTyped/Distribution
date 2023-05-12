@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@glimmer/util" : "0.84.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@glimmer/util" : "0.84.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

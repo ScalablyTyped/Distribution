@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.BorderBlockWidth
+import typings.csstype.mod.Property.TextAnchor
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,13 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `304` extends StObject {
   
   var value: js.UndefOr[
-    (BorderBlockWidth[Double | String]) | (js.Array[
-      (Extract[
-        js.UndefOr[
-          (BorderBlockWidth[Double | String]) | (js.Array[NonNullable[js.UndefOr[BorderBlockWidth[Double | String]]]])
-        ], 
-        String
-      ]) | (NonNullable[js.UndefOr[BorderBlockWidth[Double | String]]])
+    TextAnchor | (js.Array[
+      (Extract[js.UndefOr[TextAnchor | js.Array[NonNullable[js.UndefOr[TextAnchor]]]], String]) | NonNullable[js.UndefOr[TextAnchor]]
     ])
   ] = js.native
 }

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "pixi__mixin-get-global-position"
-version := "7.0.4-5e5538"
+version := "7.2.4-b35d21"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -2,6 +2,7 @@ package typings.awsSdk.clientsAthenaMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.awsSdk.awsSdkStrings.BUCKET_OWNER_FULL_CONTROL
+import typings.awsSdk.awsSdkStrings.IPYNB
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +10,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 type Age = Double
 
+type AllocatedDpusInteger = Double
+
 type AmazonResourceName = java.lang.String
+
+type ApplicationDPUSizesList = js.Array[ApplicationDPUSizes]
+
+type AuthToken = java.lang.String
 
 type AwsAccountId = java.lang.String
 
@@ -19,7 +26,55 @@ type BoxedBoolean = scala.Boolean
 
 type BytesScannedCutoffValue = Double
 
+type CalculationExecutionId = java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.CREATING
+  - typings.awsSdk.awsSdkStrings.CREATED
+  - typings.awsSdk.awsSdkStrings.QUEUED
+  - typings.awsSdk.awsSdkStrings.RUNNING
+  - typings.awsSdk.awsSdkStrings.CANCELING
+  - typings.awsSdk.awsSdkStrings.CANCELED
+  - typings.awsSdk.awsSdkStrings.COMPLETED
+  - typings.awsSdk.awsSdkStrings.FAILED
+  - java.lang.String
+*/
+type CalculationExecutionState = _CalculationExecutionState | java.lang.String
+
+type CalculationResultType = java.lang.String
+
+type CalculationsList = js.Array[CalculationSummary]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.PENDING
+  - typings.awsSdk.awsSdkStrings.SUCCEEDED
+  - typings.awsSdk.awsSdkStrings.FAILED
+  - java.lang.String
+*/
+type CapacityAllocationStatus = _CapacityAllocationStatus | java.lang.String
+
+type CapacityAssignmentsList = js.Array[CapacityAssignment]
+
+type CapacityReservationName = java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.PENDING
+  - typings.awsSdk.awsSdkStrings.ACTIVE
+  - typings.awsSdk.awsSdkStrings.CANCELLING
+  - typings.awsSdk.awsSdkStrings.CANCELLED
+  - typings.awsSdk.awsSdkStrings.FAILED
+  - typings.awsSdk.awsSdkStrings.UPDATE_PENDING
+  - java.lang.String
+*/
+type CapacityReservationStatus = _CapacityReservationStatus | java.lang.String
+
+type CapacityReservationsList = js.Array[CapacityReservation]
+
 type CatalogNameString = java.lang.String
+
+type ClientRequestToken = java.lang.String
+
+type CodeBlock = java.lang.String
 
 type ColumnInfoList = js.Array[ColumnInfo]
 
@@ -34,6 +89,8 @@ type ColumnList = js.Array[Column]
 type ColumnNullable = _ColumnNullable | java.lang.String
 
 type CommentString = java.lang.String
+
+type CoordinatorDpuSize = Double
 
 type DataCatalogSummaryList = js.Array[DataCatalogSummary]
 
@@ -50,6 +107,8 @@ type DatabaseList = js.Array[Database]
 type DatabaseString = java.lang.String
 
 type Date = js.Date
+
+type DefaultExecutorDpuSize = Double
 
 type DescriptionString = java.lang.String
 
@@ -75,6 +134,29 @@ type ExecutionParameter = java.lang.String
 
 type ExecutionParameters = js.Array[ExecutionParameter]
 
+type ExecutorId = java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.CREATING
+  - typings.awsSdk.awsSdkStrings.CREATED
+  - typings.awsSdk.awsSdkStrings.REGISTERED
+  - typings.awsSdk.awsSdkStrings.TERMINATING
+  - typings.awsSdk.awsSdkStrings.TERMINATED
+  - typings.awsSdk.awsSdkStrings.FAILED
+  - java.lang.String
+*/
+type ExecutorState = _ExecutorState | java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.COORDINATOR
+  - typings.awsSdk.awsSdkStrings.GATEWAY
+  - typings.awsSdk.awsSdkStrings.WORKER
+  - java.lang.String
+*/
+type ExecutorType = _ExecutorType | java.lang.String
+
+type ExecutorsSummaryList = js.Array[ExecutorsSummary]
+
 type ExpressionString = java.lang.String
 
 type IdempotencyToken = java.lang.String
@@ -83,7 +165,17 @@ type Integer = Double
 
 type KeyString = java.lang.String
 
+type KmsKey = java.lang.String
+
 type Long = Double
+
+type MaxApplicationDPUSizesCount = Double
+
+type MaxCalculationsCount = Double
+
+type MaxCapacityReservationsCount = Double
+
+type MaxConcurrentDpus = Double
 
 type MaxDataCatalogsCount = Double
 
@@ -91,13 +183,19 @@ type MaxDatabasesCount = Double
 
 type MaxEngineVersionsCount = Double
 
+type MaxListExecutorsCount = Double
+
 type MaxNamedQueriesCount = Double
+
+type MaxNotebooksCount = Double
 
 type MaxPreparedStatementsCount = Double
 
 type MaxQueryExecutionsCount = Double
 
 type MaxQueryResults = Double
+
+type MaxSessionsCount = Double
 
 type MaxTableMetadataCount = Double
 
@@ -115,9 +213,21 @@ type NamedQueryIdList = js.Array[NamedQueryId]
 
 type NamedQueryList = js.Array[NamedQuery]
 
+type NotebookId = java.lang.String
+
+type NotebookMetadataArray = js.Array[NotebookMetadata]
+
+type NotebookName = java.lang.String
+
+type NotebookSessionsList = js.Array[NotebookSessionSummary]
+
+type NotebookType = IPYNB | java.lang.String
+
 type ParametersMap = StringDictionary[ParametersMapValue]
 
 type ParametersMapValue = java.lang.String
+
+type Payload = java.lang.String
 
 type PreparedStatementDetailsList = js.Array[PreparedStatement]
 
@@ -149,9 +259,34 @@ type QueryString = java.lang.String
 
 type ResultOutputLocation = java.lang.String
 
+type RoleArn = java.lang.String
+
 type RowList = js.Array[Row]
 
 type S3AclOption = BUCKET_OWNER_FULL_CONTROL | java.lang.String
+
+type S3Uri = java.lang.String
+
+type SessionId = java.lang.String
+
+type SessionIdleTimeoutInMinutes = Double
+
+type SessionManagerToken = java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.CREATING
+  - typings.awsSdk.awsSdkStrings.CREATED
+  - typings.awsSdk.awsSdkStrings.IDLE
+  - typings.awsSdk.awsSdkStrings.BUSY
+  - typings.awsSdk.awsSdkStrings.TERMINATING
+  - typings.awsSdk.awsSdkStrings.TERMINATED
+  - typings.awsSdk.awsSdkStrings.DEGRADED
+  - typings.awsSdk.awsSdkStrings.FAILED
+  - java.lang.String
+*/
+type SessionState = _SessionState | java.lang.String
+
+type SessionsList = js.Array[SessionSummary]
 
 type StatementName = java.lang.String
 
@@ -167,6 +302,8 @@ type String = java.lang.String
 
 type StringList = js.Array[String]
 
+type SupportedDPUSizeList = js.Array[Integer]
+
 type TableMetadataList = js.Array[TableMetadata]
 
 type TableTypeString = java.lang.String
@@ -178,6 +315,8 @@ type TagKeyList = js.Array[TagKey]
 type TagList = js.Array[Tag]
 
 type TagValue = java.lang.String
+
+type TargetDpusInteger = Double
 
 type Timestamp = js.Date
 
@@ -194,6 +333,8 @@ type UnprocessedQueryExecutionIdList = js.Array[UnprocessedQueryExecutionId]
 type WorkGroupDescriptionString = java.lang.String
 
 type WorkGroupName = java.lang.String
+
+type WorkGroupNamesList = js.Array[WorkGroupName]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ENABLED

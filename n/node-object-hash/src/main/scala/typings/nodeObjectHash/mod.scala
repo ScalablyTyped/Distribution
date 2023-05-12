@@ -8,23 +8,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  /**
-    * Hasher constructor
-    * @param options hasher options
-    * @return hasher instance
-    */
-  inline def apply(): Hasher = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Hasher]
-  inline def apply(options: HasherOptions): Hasher = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Hasher]
-  
   @JSImport("node-object-hash", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  /**
-    * If object implements Hashable interface then value from toHash
-    * will be used for hash function. It means that the different objects
-    * with the function toHash that return the same value will have the same hash
-    */
+  inline def hasher(): Hasher_[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("hasher")().asInstanceOf[Hasher_[Any]]
+  inline def hasher(options: HasherOptions): Hasher_[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("hasher")(options.asInstanceOf[js.Any]).asInstanceOf[Hasher_[Any]]
+  
   trait Hashable extends StObject {
     
     def toHashableString(): String
@@ -43,38 +33,6 @@ object mod {
     }
   }
   
-  @js.native
-  trait Hasher extends StObject {
-    
-    def hash(`object`: Any): String = js.native
-    def hash(`object`: Any, opts: HasherOptions): String = js.native
-    /**
-      * Create hash of an object
-      * @param object source object
-      * @returns hash string of an object
-      */
-    def hash(`object`: Hashable): String = js.native
-    def hash(`object`: Hashable, opts: HasherOptions): String = js.native
-    
-    /**
-      * Create sorted string from an object
-      * @param object source object
-      * @returns sorted string from an object
-      */
-    def sort(`object`: Any): String = js.native
-    
-    /**
-      * Create sorted string from an object
-      * @param object source object
-      * @returns sorted string from an object
-      * @alias sort
-      */
-    def sortObject(`object`: Any): String = js.native
-  }
-  
-  /**
-    * Object hasher options
-    */
   trait HasherOptions
     extends StObject
        with SorterOptions {
@@ -109,5 +67,34 @@ object mod {
       
       inline def setEncUndefined: Self = StObject.set(x, "enc", js.undefined)
     }
+  }
+  
+  @js.native
+  trait Hasher_[T] extends StObject {
+    
+    def hash(`object`: T): String = js.native
+    def hash(`object`: T, opts: HasherOptions): String = js.native
+    /**
+      * Create hash of an object
+      * @param object source object
+      * @returns hash string of an object
+      */
+    def hash(`object`: Hashable): String = js.native
+    def hash(`object`: Hashable, opts: HasherOptions): String = js.native
+    
+    /**
+      * Create sorted string from an object
+      * @param object source object
+      * @returns sorted string from an object
+      */
+    def sort(`object`: T): String = js.native
+    
+    /**
+      * Create sorted string from an object
+      * @param object source object
+      * @returns sorted string from an object
+      * @alias sort
+      */
+    def sortObject(`object`: T): String = js.native
   }
 }

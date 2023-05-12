@@ -5,6 +5,7 @@ import typings.std.Animation
 import typings.std.AnimationEvent
 import typings.std.Attr
 import typings.std.CSSStyleDeclaration
+import typings.std.CheckVisibilityOptions
 import typings.std.ChildNode
 import typings.std.ClipboardEvent
 import typings.std.CompositionEvent
@@ -41,11 +42,15 @@ import typings.std.HTMLDataElement
 import typings.std.HTMLDataListElement
 import typings.std.HTMLDetailsElement
 import typings.std.HTMLDialogElement
+import typings.std.HTMLDirectoryElement
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import typings.std.HTMLEmbedElement
 import typings.std.HTMLFieldSetElement
+import typings.std.HTMLFontElement
 import typings.std.HTMLFormElement
+import typings.std.HTMLFrameElement
+import typings.std.HTMLFrameSetElement
 import typings.std.HTMLHRElement
 import typings.std.HTMLHeadElement
 import typings.std.HTMLHeadingElement
@@ -58,6 +63,7 @@ import typings.std.HTMLLabelElement
 import typings.std.HTMLLegendElement
 import typings.std.HTMLLinkElement
 import typings.std.HTMLMapElement
+import typings.std.HTMLMarqueeElement
 import typings.std.HTMLMenuElement
 import typings.std.HTMLMetaElement
 import typings.std.HTMLMeterElement
@@ -68,6 +74,7 @@ import typings.std.HTMLOptGroupElement
 import typings.std.HTMLOptionElement
 import typings.std.HTMLOutputElement
 import typings.std.HTMLParagraphElement
+import typings.std.HTMLParamElement
 import typings.std.HTMLPictureElement
 import typings.std.HTMLPreElement
 import typings.std.HTMLProgressElement
@@ -90,12 +97,14 @@ import typings.std.HTMLTimeElement
 import typings.std.HTMLTitleElement
 import typings.std.HTMLTrackElement
 import typings.std.HTMLUListElement
+import typings.std.HTMLUnknownElement
 import typings.std.HTMLVideoElement
 import typings.std.InputEvent
 import typings.std.InsertPosition
 import typings.std.KeyboardEvent
 import typings.std.Keyframe
 import typings.std.KeyframeAnimationOptions
+import typings.std.MathMLElement
 import typings.std.MouseEvent
 import typings.std.NamedNodeMap
 import typings.std.NodeListOf
@@ -174,12 +183,32 @@ import typings.std.TouchEvent
 import typings.std.TransitionEvent
 import typings.std.UIEvent
 import typings.std.WheelEvent
+import typings.testingLibraryUserEvent.testingLibraryUserEventInts.`0x01`
+import typings.testingLibraryUserEvent.testingLibraryUserEventInts.`0x02`
+import typings.testingLibraryUserEvent.testingLibraryUserEventInts.`0x04`
+import typings.testingLibraryUserEvent.testingLibraryUserEventInts.`0x08`
+import typings.testingLibraryUserEvent.testingLibraryUserEventInts.`0x10`
+import typings.testingLibraryUserEvent.testingLibraryUserEventInts.`0x20`
+import typings.testingLibraryUserEvent.testingLibraryUserEventInts.`10`
+import typings.testingLibraryUserEvent.testingLibraryUserEventInts.`11`
+import typings.testingLibraryUserEvent.testingLibraryUserEventInts.`12`
+import typings.testingLibraryUserEvent.testingLibraryUserEventInts.`1`
+import typings.testingLibraryUserEvent.testingLibraryUserEventInts.`2`
+import typings.testingLibraryUserEvent.testingLibraryUserEventInts.`3`
+import typings.testingLibraryUserEvent.testingLibraryUserEventInts.`4`
+import typings.testingLibraryUserEvent.testingLibraryUserEventInts.`5`
+import typings.testingLibraryUserEvent.testingLibraryUserEventInts.`6`
+import typings.testingLibraryUserEvent.testingLibraryUserEventInts.`7`
+import typings.testingLibraryUserEvent.testingLibraryUserEventInts.`8`
+import typings.testingLibraryUserEvent.testingLibraryUserEventInts.`9`
+import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.`annotation-xml`
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.`object`
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.`true`
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.`var`
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.a
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.abbr
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.abort
+import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.acronym
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.address
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.animate
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.animateMotion
@@ -188,6 +217,8 @@ import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.animationc
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.animationend_
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.animationiteration_
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.animationstart_
+import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.annotation
+import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.applet
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.area
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.article
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.aside
@@ -195,9 +226,13 @@ import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.audio
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.auxclick
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.b
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.base
+import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.basefont
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.bdi
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.bdo
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.beforeinput_
+import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.bgsound
+import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.big
+import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.blink
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.blockquote
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.blur
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.body
@@ -208,6 +243,7 @@ import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.canplay_
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.canplaythrough_
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.canvas
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.caption
+import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.center
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.change
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.circle
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.cite
@@ -234,6 +270,7 @@ import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.desc
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.details
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.dfn
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.dialog
+import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.dir
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.div
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.dl
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.drag
@@ -283,10 +320,13 @@ import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.filter
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.focus
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.focusin_
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.focusout_
+import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.font
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.footer
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.foreignObject
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.form
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.formdata
+import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.frame
+import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.frameset
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.fullscreenchange
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.fullscreenerror
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.g
@@ -302,6 +342,7 @@ import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.header
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.hgroup
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.hr
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.html
+import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.httpColonSlashSlashwwwDotw3DotorgSlash1998SlashMathSlashMathML
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.httpColonSlashSlashwwwDotw3DotorgSlash1999Slashxhtml
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.httpColonSlashSlashwwwDotw3DotorgSlash2000Slashsvg
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.i
@@ -311,8 +352,10 @@ import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.img
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.input
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.ins
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.invalid
+import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.isindex
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.kbd
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.keydown_
+import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.keygen
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.keypress_
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.keyup_
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.label
@@ -321,20 +364,31 @@ import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.li
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.line
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.linearGradient
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.link
+import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.listing
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.load
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.loadeddata_
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.loadedmetadata_
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.loadstart_
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.lostpointercapture_
+import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.maction
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.main
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.map
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.mark
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.marker
+import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.marquee
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.mask
+import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.math
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.menu
+import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.menuitem
+import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.merror
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.meta
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.metadata
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.meter
+import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.mfrac
+import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.mi
+import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.mmultiscripts
+import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.mn
+import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.mo
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.mousedown_
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.mouseenter_
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.mouseleave_
@@ -342,19 +396,45 @@ import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.mousemove_
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.mouseout_
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.mouseover_
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.mouseup_
+import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.mover
+import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.mpadded
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.mpath
+import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.mphantom
+import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.mprescripts
+import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.mroot
+import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.mrow
+import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.ms
+import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.mspace
+import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.msqrt
+import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.mstyle
+import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.msub
+import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.msubsup
+import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.msup
+import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.mtable
+import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.mtd
+import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.mtext
+import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.mtr
+import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.multicol
+import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.munder
+import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.munderover
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.nav
+import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.nextid
+import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.nobr
+import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.noembed
+import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.noframes
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.noscript
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.ol
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.optgroup
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.option
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.output
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.p
+import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.param
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.paste
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.path
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.pattern
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.pause
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.picture
+import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.plaintext
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.play
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.playing
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.pointercancel_
@@ -372,11 +452,13 @@ import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.progress
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.q
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.radialGradient
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.ratechange_
+import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.rb
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.rect
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.reset
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.resize
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.rp
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.rt
+import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.rtc
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.ruby
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.s
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.samp
@@ -389,14 +471,17 @@ import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.seeking
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.select
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.selectionchange
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.selectstart
+import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.semantics
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.set
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.slot
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.slotchange
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.small
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.source
+import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.spacer
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.span
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.stalled
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.stop
+import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.strike
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.strong
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.sub
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.submit
@@ -431,6 +516,7 @@ import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.transition
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.transitionrun_
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.transitionstart_
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.tspan
+import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.tt
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.u
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.ul
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.use
@@ -444,6 +530,7 @@ import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.webkitanim
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.webkitanimationstart
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.webkittransitionend
 import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.wheel
+import typings.testingLibraryUserEvent.testingLibraryUserEventStrings.xmp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -453,71 +540,71 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait HTMLElementcontenteditabl extends StObject {
   
   /* standard dom */
-  val ATTRIBUTE_NODE: Double = js.native
+  val ATTRIBUTE_NODE: `2` = js.native
   
   /** node is a CDATASection node. */
   /* standard dom */
-  val CDATA_SECTION_NODE: Double = js.native
+  val CDATA_SECTION_NODE: `4` = js.native
   
   /** node is a Comment node. */
   /* standard dom */
-  val COMMENT_NODE: Double = js.native
+  val COMMENT_NODE: `8` = js.native
   
   /** node is a DocumentFragment node. */
   /* standard dom */
-  val DOCUMENT_FRAGMENT_NODE: Double = js.native
+  val DOCUMENT_FRAGMENT_NODE: `11` = js.native
   
   /** node is a document. */
   /* standard dom */
-  val DOCUMENT_NODE: Double = js.native
+  val DOCUMENT_NODE: `9` = js.native
   
   /** Set when other is a descendant of node. */
   /* standard dom */
-  val DOCUMENT_POSITION_CONTAINED_BY: Double = js.native
+  val DOCUMENT_POSITION_CONTAINED_BY: `0x10` = js.native
   
   /** Set when other is an ancestor of node. */
   /* standard dom */
-  val DOCUMENT_POSITION_CONTAINS: Double = js.native
+  val DOCUMENT_POSITION_CONTAINS: `0x08` = js.native
   
   /** Set when node and other are not in the same tree. */
   /* standard dom */
-  val DOCUMENT_POSITION_DISCONNECTED: Double = js.native
+  val DOCUMENT_POSITION_DISCONNECTED: `0x01` = js.native
   
   /** Set when other is following node. */
   /* standard dom */
-  val DOCUMENT_POSITION_FOLLOWING: Double = js.native
+  val DOCUMENT_POSITION_FOLLOWING: `0x04` = js.native
   
   /* standard dom */
-  val DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC: Double = js.native
+  val DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC: `0x20` = js.native
   
   /** Set when other is preceding node. */
   /* standard dom */
-  val DOCUMENT_POSITION_PRECEDING: Double = js.native
+  val DOCUMENT_POSITION_PRECEDING: `0x02` = js.native
   
   /** node is a doctype. */
   /* standard dom */
-  val DOCUMENT_TYPE_NODE: Double = js.native
+  val DOCUMENT_TYPE_NODE: `10` = js.native
   
   /** node is an element. */
   /* standard dom */
-  val ELEMENT_NODE: Double = js.native
+  val ELEMENT_NODE: `1` = js.native
   
   /* standard dom */
-  val ENTITY_NODE: Double = js.native
+  val ENTITY_NODE: `6` = js.native
   
   /* standard dom */
-  val ENTITY_REFERENCE_NODE: Double = js.native
+  val ENTITY_REFERENCE_NODE: `5` = js.native
   
   /* standard dom */
-  val NOTATION_NODE: Double = js.native
+  val NOTATION_NODE: `12` = js.native
   
   /** node is a ProcessingInstruction node. */
   /* standard dom */
-  val PROCESSING_INSTRUCTION_NODE: Double = js.native
+  val PROCESSING_INSTRUCTION_NODE: `7` = js.native
   
   /** node is a Text node. */
   /* standard dom */
-  val TEXT_NODE: Double = js.native
+  val TEXT_NODE: `3` = js.native
   
   /* standard dom */
   var accessKey: String = js.native
@@ -2073,9 +2160,6 @@ trait HTMLElementcontenteditabl extends StObject {
   var ariaColIndex: String | Null = js.native
   
   /* standard dom */
-  var ariaColIndexText: String | Null = js.native
-  
-  /* standard dom */
   var ariaColSpan: String | Null = js.native
   
   /* standard dom */
@@ -2145,9 +2229,6 @@ trait HTMLElementcontenteditabl extends StObject {
   var ariaRowIndex: String | Null = js.native
   
   /* standard dom */
-  var ariaRowIndexText: String | Null = js.native
-  
-  /* standard dom */
   var ariaRowSpan: String | Null = js.native
   
   /* standard dom */
@@ -2206,6 +2287,10 @@ trait HTMLElementcontenteditabl extends StObject {
   def blur(): Unit = js.native
   
   /* standard dom */
+  def checkVisibility(): Boolean = js.native
+  def checkVisibility(options: CheckVisibilityOptions): Boolean = js.native
+  
+  /* standard dom */
   val childElementCount: Double = js.native
   
   /** Returns the children. */
@@ -2260,6 +2345,11 @@ trait HTMLElementcontenteditabl extends StObject {
   def closest_animateMotion(selector: animateMotion): SVGAnimateMotionElement | Null = js.native
   @JSName("closest")
   def closest_animateTransform(selector: animateTransform): SVGAnimateTransformElement | Null = js.native
+  /* standard dom */
+  @JSName("closest")
+  def closest_annotation(selector: annotation): MathMLElement | Null = js.native
+  @JSName("closest")
+  def closest_annotationxml(selector: `annotation-xml`): MathMLElement | Null = js.native
   @JSName("closest")
   def closest_area(selector: area): HTMLAreaElement | Null = js.native
   @JSName("closest")
@@ -2445,6 +2535,8 @@ trait HTMLElementcontenteditabl extends StObject {
   @JSName("closest")
   def closest_link(selector: link): HTMLLinkElement | Null = js.native
   @JSName("closest")
+  def closest_maction(selector: maction): MathMLElement | Null = js.native
+  @JSName("closest")
   def closest_main(selector: main): HTMLElement | Null = js.native
   @JSName("closest")
   def closest_map(selector: map): HTMLMapElement | Null = js.native
@@ -2455,7 +2547,11 @@ trait HTMLElementcontenteditabl extends StObject {
   @JSName("closest")
   def closest_mask(selector: mask): SVGMaskElement | Null = js.native
   @JSName("closest")
+  def closest_math(selector: math): MathMLElement | Null = js.native
+  @JSName("closest")
   def closest_menu(selector: menu): HTMLMenuElement | Null = js.native
+  @JSName("closest")
+  def closest_merror(selector: merror): MathMLElement | Null = js.native
   @JSName("closest")
   def closest_meta(selector: meta): HTMLMetaElement | Null = js.native
   @JSName("closest")
@@ -2463,7 +2559,55 @@ trait HTMLElementcontenteditabl extends StObject {
   @JSName("closest")
   def closest_meter(selector: meter): HTMLMeterElement | Null = js.native
   @JSName("closest")
+  def closest_mfrac(selector: mfrac): MathMLElement | Null = js.native
+  @JSName("closest")
+  def closest_mi(selector: mi): MathMLElement | Null = js.native
+  @JSName("closest")
+  def closest_mmultiscripts(selector: mmultiscripts): MathMLElement | Null = js.native
+  @JSName("closest")
+  def closest_mn(selector: mn): MathMLElement | Null = js.native
+  @JSName("closest")
+  def closest_mo(selector: mo): MathMLElement | Null = js.native
+  @JSName("closest")
+  def closest_mover(selector: mover): MathMLElement | Null = js.native
+  @JSName("closest")
+  def closest_mpadded(selector: mpadded): MathMLElement | Null = js.native
+  @JSName("closest")
   def closest_mpath(selector: mpath): SVGMPathElement | Null = js.native
+  @JSName("closest")
+  def closest_mphantom(selector: mphantom): MathMLElement | Null = js.native
+  @JSName("closest")
+  def closest_mprescripts(selector: mprescripts): MathMLElement | Null = js.native
+  @JSName("closest")
+  def closest_mroot(selector: mroot): MathMLElement | Null = js.native
+  @JSName("closest")
+  def closest_mrow(selector: mrow): MathMLElement | Null = js.native
+  @JSName("closest")
+  def closest_ms(selector: ms): MathMLElement | Null = js.native
+  @JSName("closest")
+  def closest_mspace(selector: mspace): MathMLElement | Null = js.native
+  @JSName("closest")
+  def closest_msqrt(selector: msqrt): MathMLElement | Null = js.native
+  @JSName("closest")
+  def closest_mstyle(selector: mstyle): MathMLElement | Null = js.native
+  @JSName("closest")
+  def closest_msub(selector: msub): MathMLElement | Null = js.native
+  @JSName("closest")
+  def closest_msubsup(selector: msubsup): MathMLElement | Null = js.native
+  @JSName("closest")
+  def closest_msup(selector: msup): MathMLElement | Null = js.native
+  @JSName("closest")
+  def closest_mtable(selector: mtable): MathMLElement | Null = js.native
+  @JSName("closest")
+  def closest_mtd(selector: mtd): MathMLElement | Null = js.native
+  @JSName("closest")
+  def closest_mtext(selector: mtext): MathMLElement | Null = js.native
+  @JSName("closest")
+  def closest_mtr(selector: mtr): MathMLElement | Null = js.native
+  @JSName("closest")
+  def closest_munder(selector: munder): MathMLElement | Null = js.native
+  @JSName("closest")
+  def closest_munderover(selector: munderover): MathMLElement | Null = js.native
   @JSName("closest")
   def closest_nav(selector: nav): HTMLElement | Null = js.native
   @JSName("closest")
@@ -2516,6 +2660,8 @@ trait HTMLElementcontenteditabl extends StObject {
   def closest_section(selector: section): HTMLElement | Null = js.native
   @JSName("closest")
   def closest_select(selector: select): HTMLSelectElement | Null = js.native
+  @JSName("closest")
+  def closest_semantics(selector: semantics): MathMLElement | Null = js.native
   @JSName("closest")
   def closest_set(selector: set): SVGSetElement | Null = js.native
   @JSName("closest")
@@ -2673,6 +2819,9 @@ trait HTMLElementcontenteditabl extends StObject {
   def getElementsByTagNameNS(namespace: Null, localName: String): HTMLCollectionOf[Element] = js.native
   /* standard dom */
   @JSName("getElementsByTagNameNS")
+  def getElementsByTagNameNS_httpwwww3org1998MathMathML(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash1998SlashMathSlashMathML, localName: String): HTMLCollectionOf[MathMLElement] = js.native
+  /* standard dom */
+  @JSName("getElementsByTagNameNS")
   def getElementsByTagNameNS_httpwwww3org1999xhtml(namespaceURI: httpColonSlashSlashwwwDotw3DotorgSlash1999Slashxhtml, localName: String): HTMLCollectionOf[HTMLElement] = js.native
   /* standard dom */
   @JSName("getElementsByTagNameNS")
@@ -2683,6 +2832,10 @@ trait HTMLElementcontenteditabl extends StObject {
   def getElementsByTagName_a(qualifiedName: a): HTMLCollectionOf[HTMLAnchorElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_abbr(qualifiedName: abbr): HTMLCollectionOf[HTMLElement] = js.native
+  /** @deprecated */
+  /* standard dom */
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_acronym(qualifiedName: acronym): HTMLCollectionOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_address(qualifiedName: address): HTMLCollectionOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
@@ -2691,6 +2844,13 @@ trait HTMLElementcontenteditabl extends StObject {
   def getElementsByTagName_animateMotion(qualifiedName: animateMotion): HTMLCollectionOf[SVGAnimateMotionElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_animateTransform(qualifiedName: animateTransform): HTMLCollectionOf[SVGAnimateTransformElement] = js.native
+  /* standard dom */
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_annotation(qualifiedName: annotation): HTMLCollectionOf[MathMLElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_annotationxml(qualifiedName: `annotation-xml`): HTMLCollectionOf[MathMLElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_applet(qualifiedName: applet): HTMLCollectionOf[HTMLUnknownElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_area(qualifiedName: area): HTMLCollectionOf[HTMLAreaElement] = js.native
   @JSName("getElementsByTagName")
@@ -2704,9 +2864,17 @@ trait HTMLElementcontenteditabl extends StObject {
   @JSName("getElementsByTagName")
   def getElementsByTagName_base(qualifiedName: base): HTMLCollectionOf[HTMLBaseElement] = js.native
   @JSName("getElementsByTagName")
+  def getElementsByTagName_basefont(qualifiedName: basefont): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
   def getElementsByTagName_bdi(qualifiedName: bdi): HTMLCollectionOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_bdo(qualifiedName: bdo): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_bgsound(qualifiedName: bgsound): HTMLCollectionOf[HTMLUnknownElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_big(qualifiedName: big): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_blink(qualifiedName: blink): HTMLCollectionOf[HTMLUnknownElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_blockquote(qualifiedName: blockquote): HTMLCollectionOf[HTMLQuoteElement] = js.native
   @JSName("getElementsByTagName")
@@ -2719,6 +2887,8 @@ trait HTMLElementcontenteditabl extends StObject {
   def getElementsByTagName_canvas(qualifiedName: canvas): HTMLCollectionOf[HTMLCanvasElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_caption(qualifiedName: caption): HTMLCollectionOf[HTMLTableCaptionElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_center(qualifiedName: center): HTMLCollectionOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_circle(qualifiedName: circle): HTMLCollectionOf[SVGCircleElement] = js.native
   @JSName("getElementsByTagName")
@@ -2749,6 +2919,8 @@ trait HTMLElementcontenteditabl extends StObject {
   def getElementsByTagName_dfn(qualifiedName: dfn): HTMLCollectionOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_dialog(qualifiedName: dialog): HTMLCollectionOf[HTMLDialogElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_dir(qualifiedName: dir): HTMLCollectionOf[HTMLDirectoryElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_div(qualifiedName: div): HTMLCollectionOf[HTMLDivElement] = js.native
   @JSName("getElementsByTagName")
@@ -2820,11 +2992,17 @@ trait HTMLElementcontenteditabl extends StObject {
   @JSName("getElementsByTagName")
   def getElementsByTagName_filter(qualifiedName: filter): HTMLCollectionOf[SVGFilterElement] = js.native
   @JSName("getElementsByTagName")
+  def getElementsByTagName_font(qualifiedName: font): HTMLCollectionOf[HTMLFontElement] = js.native
+  @JSName("getElementsByTagName")
   def getElementsByTagName_footer(qualifiedName: footer): HTMLCollectionOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_foreignObject(qualifiedName: foreignObject): HTMLCollectionOf[SVGForeignObjectElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_form(qualifiedName: form): HTMLCollectionOf[HTMLFormElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_frame(qualifiedName: frame): HTMLCollectionOf[HTMLFrameElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_frameset(qualifiedName: frameset): HTMLCollectionOf[HTMLFrameSetElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_g(qualifiedName: g): HTMLCollectionOf[SVGGElement] = js.native
   @JSName("getElementsByTagName")
@@ -2862,7 +3040,11 @@ trait HTMLElementcontenteditabl extends StObject {
   @JSName("getElementsByTagName")
   def getElementsByTagName_ins(qualifiedName: ins): HTMLCollectionOf[HTMLModElement] = js.native
   @JSName("getElementsByTagName")
+  def getElementsByTagName_isindex(qualifiedName: isindex): HTMLCollectionOf[HTMLUnknownElement] = js.native
+  @JSName("getElementsByTagName")
   def getElementsByTagName_kbd(qualifiedName: kbd): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_keygen(qualifiedName: keygen): HTMLCollectionOf[HTMLUnknownElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_label(qualifiedName: label): HTMLCollectionOf[HTMLLabelElement] = js.native
   @JSName("getElementsByTagName")
@@ -2876,6 +3058,10 @@ trait HTMLElementcontenteditabl extends StObject {
   @JSName("getElementsByTagName")
   def getElementsByTagName_link(qualifiedName: link): HTMLCollectionOf[HTMLLinkElement] = js.native
   @JSName("getElementsByTagName")
+  def getElementsByTagName_listing(qualifiedName: listing): HTMLCollectionOf[HTMLPreElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_maction(qualifiedName: maction): HTMLCollectionOf[MathMLElement] = js.native
+  @JSName("getElementsByTagName")
   def getElementsByTagName_main(qualifiedName: main): HTMLCollectionOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_map(qualifiedName: map): HTMLCollectionOf[HTMLMapElement] = js.native
@@ -2884,9 +3070,17 @@ trait HTMLElementcontenteditabl extends StObject {
   @JSName("getElementsByTagName")
   def getElementsByTagName_marker(qualifiedName: marker): HTMLCollectionOf[SVGMarkerElement] = js.native
   @JSName("getElementsByTagName")
+  def getElementsByTagName_marquee(qualifiedName: marquee): HTMLCollectionOf[HTMLMarqueeElement] = js.native
+  @JSName("getElementsByTagName")
   def getElementsByTagName_mask(qualifiedName: mask): HTMLCollectionOf[SVGMaskElement] = js.native
   @JSName("getElementsByTagName")
+  def getElementsByTagName_math(qualifiedName: math): HTMLCollectionOf[MathMLElement] = js.native
+  @JSName("getElementsByTagName")
   def getElementsByTagName_menu(qualifiedName: menu): HTMLCollectionOf[HTMLMenuElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_menuitem(qualifiedName: menuitem): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_merror(qualifiedName: merror): HTMLCollectionOf[MathMLElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_meta(qualifiedName: meta): HTMLCollectionOf[HTMLMetaElement] = js.native
   @JSName("getElementsByTagName")
@@ -2894,9 +3088,67 @@ trait HTMLElementcontenteditabl extends StObject {
   @JSName("getElementsByTagName")
   def getElementsByTagName_meter(qualifiedName: meter): HTMLCollectionOf[HTMLMeterElement] = js.native
   @JSName("getElementsByTagName")
+  def getElementsByTagName_mfrac(qualifiedName: mfrac): HTMLCollectionOf[MathMLElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_mi(qualifiedName: mi): HTMLCollectionOf[MathMLElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_mmultiscripts(qualifiedName: mmultiscripts): HTMLCollectionOf[MathMLElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_mn(qualifiedName: mn): HTMLCollectionOf[MathMLElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_mo(qualifiedName: mo): HTMLCollectionOf[MathMLElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_mover(qualifiedName: mover): HTMLCollectionOf[MathMLElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_mpadded(qualifiedName: mpadded): HTMLCollectionOf[MathMLElement] = js.native
+  @JSName("getElementsByTagName")
   def getElementsByTagName_mpath(qualifiedName: mpath): HTMLCollectionOf[SVGMPathElement] = js.native
   @JSName("getElementsByTagName")
+  def getElementsByTagName_mphantom(qualifiedName: mphantom): HTMLCollectionOf[MathMLElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_mprescripts(qualifiedName: mprescripts): HTMLCollectionOf[MathMLElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_mroot(qualifiedName: mroot): HTMLCollectionOf[MathMLElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_mrow(qualifiedName: mrow): HTMLCollectionOf[MathMLElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_ms(qualifiedName: ms): HTMLCollectionOf[MathMLElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_mspace(qualifiedName: mspace): HTMLCollectionOf[MathMLElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_msqrt(qualifiedName: msqrt): HTMLCollectionOf[MathMLElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_mstyle(qualifiedName: mstyle): HTMLCollectionOf[MathMLElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_msub(qualifiedName: msub): HTMLCollectionOf[MathMLElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_msubsup(qualifiedName: msubsup): HTMLCollectionOf[MathMLElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_msup(qualifiedName: msup): HTMLCollectionOf[MathMLElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_mtable(qualifiedName: mtable): HTMLCollectionOf[MathMLElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_mtd(qualifiedName: mtd): HTMLCollectionOf[MathMLElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_mtext(qualifiedName: mtext): HTMLCollectionOf[MathMLElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_mtr(qualifiedName: mtr): HTMLCollectionOf[MathMLElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_multicol(qualifiedName: multicol): HTMLCollectionOf[HTMLUnknownElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_munder(qualifiedName: munder): HTMLCollectionOf[MathMLElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_munderover(qualifiedName: munderover): HTMLCollectionOf[MathMLElement] = js.native
+  @JSName("getElementsByTagName")
   def getElementsByTagName_nav(qualifiedName: nav): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_nextid(qualifiedName: nextid): HTMLCollectionOf[HTMLUnknownElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_nobr(qualifiedName: nobr): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_noembed(qualifiedName: noembed): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_noframes(qualifiedName: noframes): HTMLCollectionOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_noscript(qualifiedName: noscript): HTMLCollectionOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
@@ -2912,11 +3164,15 @@ trait HTMLElementcontenteditabl extends StObject {
   @JSName("getElementsByTagName")
   def getElementsByTagName_p(qualifiedName: p): HTMLCollectionOf[HTMLParagraphElement] = js.native
   @JSName("getElementsByTagName")
+  def getElementsByTagName_param(qualifiedName: param): HTMLCollectionOf[HTMLParamElement] = js.native
+  @JSName("getElementsByTagName")
   def getElementsByTagName_path(qualifiedName: path): HTMLCollectionOf[SVGPathElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_pattern(qualifiedName: pattern): HTMLCollectionOf[SVGPatternElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_picture(qualifiedName: picture): HTMLCollectionOf[HTMLPictureElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_plaintext(qualifiedName: plaintext): HTMLCollectionOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_polygon(qualifiedName: polygon): HTMLCollectionOf[SVGPolygonElement] = js.native
   @JSName("getElementsByTagName")
@@ -2930,11 +3186,15 @@ trait HTMLElementcontenteditabl extends StObject {
   @JSName("getElementsByTagName")
   def getElementsByTagName_radialGradient(qualifiedName: radialGradient): HTMLCollectionOf[SVGRadialGradientElement] = js.native
   @JSName("getElementsByTagName")
+  def getElementsByTagName_rb(qualifiedName: rb): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
   def getElementsByTagName_rect(qualifiedName: rect): HTMLCollectionOf[SVGRectElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_rp(qualifiedName: rp): HTMLCollectionOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_rt(qualifiedName: rt): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_rtc(qualifiedName: rtc): HTMLCollectionOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_ruby(qualifiedName: ruby): HTMLCollectionOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
@@ -2948,6 +3208,8 @@ trait HTMLElementcontenteditabl extends StObject {
   @JSName("getElementsByTagName")
   def getElementsByTagName_select(qualifiedName: select): HTMLCollectionOf[HTMLSelectElement] = js.native
   @JSName("getElementsByTagName")
+  def getElementsByTagName_semantics(qualifiedName: semantics): HTMLCollectionOf[MathMLElement] = js.native
+  @JSName("getElementsByTagName")
   def getElementsByTagName_set(qualifiedName: set): HTMLCollectionOf[SVGSetElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_slot(qualifiedName: slot): HTMLCollectionOf[HTMLSlotElement] = js.native
@@ -2956,9 +3218,13 @@ trait HTMLElementcontenteditabl extends StObject {
   @JSName("getElementsByTagName")
   def getElementsByTagName_source(qualifiedName: source): HTMLCollectionOf[HTMLSourceElement] = js.native
   @JSName("getElementsByTagName")
+  def getElementsByTagName_spacer(qualifiedName: spacer): HTMLCollectionOf[HTMLUnknownElement] = js.native
+  @JSName("getElementsByTagName")
   def getElementsByTagName_span(qualifiedName: span): HTMLCollectionOf[HTMLSpanElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_stop(qualifiedName: stop): HTMLCollectionOf[SVGStopElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_strike(qualifiedName: strike): HTMLCollectionOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_strong(qualifiedName: strong): HTMLCollectionOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
@@ -3006,6 +3272,8 @@ trait HTMLElementcontenteditabl extends StObject {
   @JSName("getElementsByTagName")
   def getElementsByTagName_tspan(qualifiedName: tspan): HTMLCollectionOf[SVGTSpanElement] = js.native
   @JSName("getElementsByTagName")
+  def getElementsByTagName_tt(qualifiedName: tt): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
   def getElementsByTagName_u(qualifiedName: u): HTMLCollectionOf[HTMLElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_ul(qualifiedName: ul): HTMLCollectionOf[HTMLUListElement] = js.native
@@ -3019,6 +3287,8 @@ trait HTMLElementcontenteditabl extends StObject {
   def getElementsByTagName_view(qualifiedName: view): HTMLCollectionOf[SVGViewElement] = js.native
   @JSName("getElementsByTagName")
   def getElementsByTagName_wbr(qualifiedName: wbr): HTMLCollectionOf[HTMLElement] = js.native
+  @JSName("getElementsByTagName")
+  def getElementsByTagName_xmp(qualifiedName: xmp): HTMLCollectionOf[HTMLPreElement] = js.native
   
   /** Returns node's root. */
   /* standard dom */
@@ -3693,6 +3963,10 @@ trait HTMLElementcontenteditabl extends StObject {
   def querySelectorAll_a(selectors: a): NodeListOf[HTMLAnchorElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_abbr(selectors: abbr): NodeListOf[HTMLElement] = js.native
+  /** @deprecated */
+  /* standard dom */
+  @JSName("querySelectorAll")
+  def querySelectorAll_acronym(selectors: acronym): NodeListOf[HTMLElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_address(selectors: address): NodeListOf[HTMLElement] = js.native
   @JSName("querySelectorAll")
@@ -3701,6 +3975,13 @@ trait HTMLElementcontenteditabl extends StObject {
   def querySelectorAll_animateMotion(selectors: animateMotion): NodeListOf[SVGAnimateMotionElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_animateTransform(selectors: animateTransform): NodeListOf[SVGAnimateTransformElement] = js.native
+  /* standard dom */
+  @JSName("querySelectorAll")
+  def querySelectorAll_annotation(selectors: annotation): NodeListOf[MathMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_annotationxml(selectors: `annotation-xml`): NodeListOf[MathMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_applet(selectors: applet): NodeListOf[HTMLUnknownElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_area(selectors: area): NodeListOf[HTMLAreaElement] = js.native
   @JSName("querySelectorAll")
@@ -3714,9 +3995,17 @@ trait HTMLElementcontenteditabl extends StObject {
   @JSName("querySelectorAll")
   def querySelectorAll_base(selectors: base): NodeListOf[HTMLBaseElement] = js.native
   @JSName("querySelectorAll")
+  def querySelectorAll_basefont(selectors: basefont): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
   def querySelectorAll_bdi(selectors: bdi): NodeListOf[HTMLElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_bdo(selectors: bdo): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_bgsound(selectors: bgsound): NodeListOf[HTMLUnknownElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_big(selectors: big): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_blink(selectors: blink): NodeListOf[HTMLUnknownElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_blockquote(selectors: blockquote): NodeListOf[HTMLQuoteElement] = js.native
   @JSName("querySelectorAll")
@@ -3729,6 +4018,8 @@ trait HTMLElementcontenteditabl extends StObject {
   def querySelectorAll_canvas(selectors: canvas): NodeListOf[HTMLCanvasElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_caption(selectors: caption): NodeListOf[HTMLTableCaptionElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_center(selectors: center): NodeListOf[HTMLElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_circle(selectors: circle): NodeListOf[SVGCircleElement] = js.native
   @JSName("querySelectorAll")
@@ -3759,6 +4050,8 @@ trait HTMLElementcontenteditabl extends StObject {
   def querySelectorAll_dfn(selectors: dfn): NodeListOf[HTMLElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_dialog(selectors: dialog): NodeListOf[HTMLDialogElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_dir(selectors: dir): NodeListOf[HTMLDirectoryElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_div(selectors: div): NodeListOf[HTMLDivElement] = js.native
   @JSName("querySelectorAll")
@@ -3830,11 +4123,17 @@ trait HTMLElementcontenteditabl extends StObject {
   @JSName("querySelectorAll")
   def querySelectorAll_filter(selectors: filter): NodeListOf[SVGFilterElement] = js.native
   @JSName("querySelectorAll")
+  def querySelectorAll_font(selectors: font): NodeListOf[HTMLFontElement] = js.native
+  @JSName("querySelectorAll")
   def querySelectorAll_footer(selectors: footer): NodeListOf[HTMLElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_foreignObject(selectors: foreignObject): NodeListOf[SVGForeignObjectElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_form(selectors: form): NodeListOf[HTMLFormElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_frame(selectors: frame): NodeListOf[HTMLFrameElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_frameset(selectors: frameset): NodeListOf[HTMLFrameSetElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_g(selectors: g): NodeListOf[SVGGElement] = js.native
   @JSName("querySelectorAll")
@@ -3872,7 +4171,11 @@ trait HTMLElementcontenteditabl extends StObject {
   @JSName("querySelectorAll")
   def querySelectorAll_ins(selectors: ins): NodeListOf[HTMLModElement] = js.native
   @JSName("querySelectorAll")
+  def querySelectorAll_isindex(selectors: isindex): NodeListOf[HTMLUnknownElement] = js.native
+  @JSName("querySelectorAll")
   def querySelectorAll_kbd(selectors: kbd): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_keygen(selectors: keygen): NodeListOf[HTMLUnknownElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_label(selectors: label): NodeListOf[HTMLLabelElement] = js.native
   @JSName("querySelectorAll")
@@ -3886,6 +4189,10 @@ trait HTMLElementcontenteditabl extends StObject {
   @JSName("querySelectorAll")
   def querySelectorAll_link(selectors: link): NodeListOf[HTMLLinkElement] = js.native
   @JSName("querySelectorAll")
+  def querySelectorAll_listing(selectors: listing): NodeListOf[HTMLPreElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_maction(selectors: maction): NodeListOf[MathMLElement] = js.native
+  @JSName("querySelectorAll")
   def querySelectorAll_main(selectors: main): NodeListOf[HTMLElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_map(selectors: map): NodeListOf[HTMLMapElement] = js.native
@@ -3894,9 +4201,17 @@ trait HTMLElementcontenteditabl extends StObject {
   @JSName("querySelectorAll")
   def querySelectorAll_marker(selectors: marker): NodeListOf[SVGMarkerElement] = js.native
   @JSName("querySelectorAll")
+  def querySelectorAll_marquee(selectors: marquee): NodeListOf[HTMLMarqueeElement] = js.native
+  @JSName("querySelectorAll")
   def querySelectorAll_mask(selectors: mask): NodeListOf[SVGMaskElement] = js.native
   @JSName("querySelectorAll")
+  def querySelectorAll_math(selectors: math): NodeListOf[MathMLElement] = js.native
+  @JSName("querySelectorAll")
   def querySelectorAll_menu(selectors: menu): NodeListOf[HTMLMenuElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_menuitem(selectors: menuitem): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_merror(selectors: merror): NodeListOf[MathMLElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_meta(selectors: meta): NodeListOf[HTMLMetaElement] = js.native
   @JSName("querySelectorAll")
@@ -3904,9 +4219,67 @@ trait HTMLElementcontenteditabl extends StObject {
   @JSName("querySelectorAll")
   def querySelectorAll_meter(selectors: meter): NodeListOf[HTMLMeterElement] = js.native
   @JSName("querySelectorAll")
+  def querySelectorAll_mfrac(selectors: mfrac): NodeListOf[MathMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_mi(selectors: mi): NodeListOf[MathMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_mmultiscripts(selectors: mmultiscripts): NodeListOf[MathMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_mn(selectors: mn): NodeListOf[MathMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_mo(selectors: mo): NodeListOf[MathMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_mover(selectors: mover): NodeListOf[MathMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_mpadded(selectors: mpadded): NodeListOf[MathMLElement] = js.native
+  @JSName("querySelectorAll")
   def querySelectorAll_mpath(selectors: mpath): NodeListOf[SVGMPathElement] = js.native
   @JSName("querySelectorAll")
+  def querySelectorAll_mphantom(selectors: mphantom): NodeListOf[MathMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_mprescripts(selectors: mprescripts): NodeListOf[MathMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_mroot(selectors: mroot): NodeListOf[MathMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_mrow(selectors: mrow): NodeListOf[MathMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_ms(selectors: ms): NodeListOf[MathMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_mspace(selectors: mspace): NodeListOf[MathMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_msqrt(selectors: msqrt): NodeListOf[MathMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_mstyle(selectors: mstyle): NodeListOf[MathMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_msub(selectors: msub): NodeListOf[MathMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_msubsup(selectors: msubsup): NodeListOf[MathMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_msup(selectors: msup): NodeListOf[MathMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_mtable(selectors: mtable): NodeListOf[MathMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_mtd(selectors: mtd): NodeListOf[MathMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_mtext(selectors: mtext): NodeListOf[MathMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_mtr(selectors: mtr): NodeListOf[MathMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_multicol(selectors: multicol): NodeListOf[HTMLUnknownElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_munder(selectors: munder): NodeListOf[MathMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_munderover(selectors: munderover): NodeListOf[MathMLElement] = js.native
+  @JSName("querySelectorAll")
   def querySelectorAll_nav(selectors: nav): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_nextid(selectors: nextid): NodeListOf[HTMLUnknownElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_nobr(selectors: nobr): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_noembed(selectors: noembed): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_noframes(selectors: noframes): NodeListOf[HTMLElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_noscript(selectors: noscript): NodeListOf[HTMLElement] = js.native
   @JSName("querySelectorAll")
@@ -3922,11 +4295,15 @@ trait HTMLElementcontenteditabl extends StObject {
   @JSName("querySelectorAll")
   def querySelectorAll_p(selectors: p): NodeListOf[HTMLParagraphElement] = js.native
   @JSName("querySelectorAll")
+  def querySelectorAll_param(selectors: param): NodeListOf[HTMLParamElement] = js.native
+  @JSName("querySelectorAll")
   def querySelectorAll_path(selectors: path): NodeListOf[SVGPathElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_pattern(selectors: pattern): NodeListOf[SVGPatternElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_picture(selectors: picture): NodeListOf[HTMLPictureElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_plaintext(selectors: plaintext): NodeListOf[HTMLElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_polygon(selectors: polygon): NodeListOf[SVGPolygonElement] = js.native
   @JSName("querySelectorAll")
@@ -3940,11 +4317,15 @@ trait HTMLElementcontenteditabl extends StObject {
   @JSName("querySelectorAll")
   def querySelectorAll_radialGradient(selectors: radialGradient): NodeListOf[SVGRadialGradientElement] = js.native
   @JSName("querySelectorAll")
+  def querySelectorAll_rb(selectors: rb): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
   def querySelectorAll_rect(selectors: rect): NodeListOf[SVGRectElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_rp(selectors: rp): NodeListOf[HTMLElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_rt(selectors: rt): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_rtc(selectors: rtc): NodeListOf[HTMLElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_ruby(selectors: ruby): NodeListOf[HTMLElement] = js.native
   @JSName("querySelectorAll")
@@ -3958,6 +4339,8 @@ trait HTMLElementcontenteditabl extends StObject {
   @JSName("querySelectorAll")
   def querySelectorAll_select(selectors: select): NodeListOf[HTMLSelectElement] = js.native
   @JSName("querySelectorAll")
+  def querySelectorAll_semantics(selectors: semantics): NodeListOf[MathMLElement] = js.native
+  @JSName("querySelectorAll")
   def querySelectorAll_set(selectors: set): NodeListOf[SVGSetElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_slot(selectors: slot): NodeListOf[HTMLSlotElement] = js.native
@@ -3966,9 +4349,13 @@ trait HTMLElementcontenteditabl extends StObject {
   @JSName("querySelectorAll")
   def querySelectorAll_source(selectors: source): NodeListOf[HTMLSourceElement] = js.native
   @JSName("querySelectorAll")
+  def querySelectorAll_spacer(selectors: spacer): NodeListOf[HTMLUnknownElement] = js.native
+  @JSName("querySelectorAll")
   def querySelectorAll_span(selectors: span): NodeListOf[HTMLSpanElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_stop(selectors: stop): NodeListOf[SVGStopElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_strike(selectors: strike): NodeListOf[HTMLElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_strong(selectors: strong): NodeListOf[HTMLElement] = js.native
   @JSName("querySelectorAll")
@@ -4016,6 +4403,8 @@ trait HTMLElementcontenteditabl extends StObject {
   @JSName("querySelectorAll")
   def querySelectorAll_tspan(selectors: tspan): NodeListOf[SVGTSpanElement] = js.native
   @JSName("querySelectorAll")
+  def querySelectorAll_tt(selectors: tt): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
   def querySelectorAll_u(selectors: u): NodeListOf[HTMLElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_ul(selectors: ul): NodeListOf[HTMLUListElement] = js.native
@@ -4029,6 +4418,8 @@ trait HTMLElementcontenteditabl extends StObject {
   def querySelectorAll_view(selectors: view): NodeListOf[SVGViewElement] = js.native
   @JSName("querySelectorAll")
   def querySelectorAll_wbr(selectors: wbr): NodeListOf[HTMLElement] = js.native
+  @JSName("querySelectorAll")
+  def querySelectorAll_xmp(selectors: xmp): NodeListOf[HTMLPreElement] = js.native
   
   /** Returns the first element that is a descendant of node that matches selectors. */
   /* standard dom */
@@ -4036,6 +4427,10 @@ trait HTMLElementcontenteditabl extends StObject {
   def querySelector_a(selectors: a): HTMLAnchorElement | Null = js.native
   @JSName("querySelector")
   def querySelector_abbr(selectors: abbr): HTMLElement | Null = js.native
+  /** @deprecated */
+  /* standard dom */
+  @JSName("querySelector")
+  def querySelector_acronym(selectors: acronym): HTMLElement | Null = js.native
   @JSName("querySelector")
   def querySelector_address(selectors: address): HTMLElement | Null = js.native
   @JSName("querySelector")
@@ -4044,6 +4439,13 @@ trait HTMLElementcontenteditabl extends StObject {
   def querySelector_animateMotion(selectors: animateMotion): SVGAnimateMotionElement | Null = js.native
   @JSName("querySelector")
   def querySelector_animateTransform(selectors: animateTransform): SVGAnimateTransformElement | Null = js.native
+  /* standard dom */
+  @JSName("querySelector")
+  def querySelector_annotation(selectors: annotation): MathMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_annotationxml(selectors: `annotation-xml`): MathMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_applet(selectors: applet): HTMLUnknownElement | Null = js.native
   @JSName("querySelector")
   def querySelector_area(selectors: area): HTMLAreaElement | Null = js.native
   @JSName("querySelector")
@@ -4057,9 +4459,17 @@ trait HTMLElementcontenteditabl extends StObject {
   @JSName("querySelector")
   def querySelector_base(selectors: base): HTMLBaseElement | Null = js.native
   @JSName("querySelector")
+  def querySelector_basefont(selectors: basefont): HTMLElement | Null = js.native
+  @JSName("querySelector")
   def querySelector_bdi(selectors: bdi): HTMLElement | Null = js.native
   @JSName("querySelector")
   def querySelector_bdo(selectors: bdo): HTMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_bgsound(selectors: bgsound): HTMLUnknownElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_big(selectors: big): HTMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_blink(selectors: blink): HTMLUnknownElement | Null = js.native
   @JSName("querySelector")
   def querySelector_blockquote(selectors: blockquote): HTMLQuoteElement | Null = js.native
   @JSName("querySelector")
@@ -4072,6 +4482,8 @@ trait HTMLElementcontenteditabl extends StObject {
   def querySelector_canvas(selectors: canvas): HTMLCanvasElement | Null = js.native
   @JSName("querySelector")
   def querySelector_caption(selectors: caption): HTMLTableCaptionElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_center(selectors: center): HTMLElement | Null = js.native
   @JSName("querySelector")
   def querySelector_circle(selectors: circle): SVGCircleElement | Null = js.native
   @JSName("querySelector")
@@ -4102,6 +4514,8 @@ trait HTMLElementcontenteditabl extends StObject {
   def querySelector_dfn(selectors: dfn): HTMLElement | Null = js.native
   @JSName("querySelector")
   def querySelector_dialog(selectors: dialog): HTMLDialogElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_dir(selectors: dir): HTMLDirectoryElement | Null = js.native
   @JSName("querySelector")
   def querySelector_div(selectors: div): HTMLDivElement | Null = js.native
   @JSName("querySelector")
@@ -4173,11 +4587,17 @@ trait HTMLElementcontenteditabl extends StObject {
   @JSName("querySelector")
   def querySelector_filter(selectors: filter): SVGFilterElement | Null = js.native
   @JSName("querySelector")
+  def querySelector_font(selectors: font): HTMLFontElement | Null = js.native
+  @JSName("querySelector")
   def querySelector_footer(selectors: footer): HTMLElement | Null = js.native
   @JSName("querySelector")
   def querySelector_foreignObject(selectors: foreignObject): SVGForeignObjectElement | Null = js.native
   @JSName("querySelector")
   def querySelector_form(selectors: form): HTMLFormElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_frame(selectors: frame): HTMLFrameElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_frameset(selectors: frameset): HTMLFrameSetElement | Null = js.native
   @JSName("querySelector")
   def querySelector_g(selectors: g): SVGGElement | Null = js.native
   @JSName("querySelector")
@@ -4215,7 +4635,11 @@ trait HTMLElementcontenteditabl extends StObject {
   @JSName("querySelector")
   def querySelector_ins(selectors: ins): HTMLModElement | Null = js.native
   @JSName("querySelector")
+  def querySelector_isindex(selectors: isindex): HTMLUnknownElement | Null = js.native
+  @JSName("querySelector")
   def querySelector_kbd(selectors: kbd): HTMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_keygen(selectors: keygen): HTMLUnknownElement | Null = js.native
   @JSName("querySelector")
   def querySelector_label(selectors: label): HTMLLabelElement | Null = js.native
   @JSName("querySelector")
@@ -4229,6 +4653,10 @@ trait HTMLElementcontenteditabl extends StObject {
   @JSName("querySelector")
   def querySelector_link(selectors: link): HTMLLinkElement | Null = js.native
   @JSName("querySelector")
+  def querySelector_listing(selectors: listing): HTMLPreElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_maction(selectors: maction): MathMLElement | Null = js.native
+  @JSName("querySelector")
   def querySelector_main(selectors: main): HTMLElement | Null = js.native
   @JSName("querySelector")
   def querySelector_map(selectors: map): HTMLMapElement | Null = js.native
@@ -4237,9 +4665,17 @@ trait HTMLElementcontenteditabl extends StObject {
   @JSName("querySelector")
   def querySelector_marker(selectors: marker): SVGMarkerElement | Null = js.native
   @JSName("querySelector")
+  def querySelector_marquee(selectors: marquee): HTMLMarqueeElement | Null = js.native
+  @JSName("querySelector")
   def querySelector_mask(selectors: mask): SVGMaskElement | Null = js.native
   @JSName("querySelector")
+  def querySelector_math(selectors: math): MathMLElement | Null = js.native
+  @JSName("querySelector")
   def querySelector_menu(selectors: menu): HTMLMenuElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_menuitem(selectors: menuitem): HTMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_merror(selectors: merror): MathMLElement | Null = js.native
   @JSName("querySelector")
   def querySelector_meta(selectors: meta): HTMLMetaElement | Null = js.native
   @JSName("querySelector")
@@ -4247,9 +4683,67 @@ trait HTMLElementcontenteditabl extends StObject {
   @JSName("querySelector")
   def querySelector_meter(selectors: meter): HTMLMeterElement | Null = js.native
   @JSName("querySelector")
+  def querySelector_mfrac(selectors: mfrac): MathMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_mi(selectors: mi): MathMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_mmultiscripts(selectors: mmultiscripts): MathMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_mn(selectors: mn): MathMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_mo(selectors: mo): MathMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_mover(selectors: mover): MathMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_mpadded(selectors: mpadded): MathMLElement | Null = js.native
+  @JSName("querySelector")
   def querySelector_mpath(selectors: mpath): SVGMPathElement | Null = js.native
   @JSName("querySelector")
+  def querySelector_mphantom(selectors: mphantom): MathMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_mprescripts(selectors: mprescripts): MathMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_mroot(selectors: mroot): MathMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_mrow(selectors: mrow): MathMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_ms(selectors: ms): MathMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_mspace(selectors: mspace): MathMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_msqrt(selectors: msqrt): MathMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_mstyle(selectors: mstyle): MathMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_msub(selectors: msub): MathMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_msubsup(selectors: msubsup): MathMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_msup(selectors: msup): MathMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_mtable(selectors: mtable): MathMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_mtd(selectors: mtd): MathMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_mtext(selectors: mtext): MathMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_mtr(selectors: mtr): MathMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_multicol(selectors: multicol): HTMLUnknownElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_munder(selectors: munder): MathMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_munderover(selectors: munderover): MathMLElement | Null = js.native
+  @JSName("querySelector")
   def querySelector_nav(selectors: nav): HTMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_nextid(selectors: nextid): HTMLUnknownElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_nobr(selectors: nobr): HTMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_noembed(selectors: noembed): HTMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_noframes(selectors: noframes): HTMLElement | Null = js.native
   @JSName("querySelector")
   def querySelector_noscript(selectors: noscript): HTMLElement | Null = js.native
   @JSName("querySelector")
@@ -4265,11 +4759,15 @@ trait HTMLElementcontenteditabl extends StObject {
   @JSName("querySelector")
   def querySelector_p(selectors: p): HTMLParagraphElement | Null = js.native
   @JSName("querySelector")
+  def querySelector_param(selectors: param): HTMLParamElement | Null = js.native
+  @JSName("querySelector")
   def querySelector_path(selectors: path): SVGPathElement | Null = js.native
   @JSName("querySelector")
   def querySelector_pattern(selectors: pattern): SVGPatternElement | Null = js.native
   @JSName("querySelector")
   def querySelector_picture(selectors: picture): HTMLPictureElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_plaintext(selectors: plaintext): HTMLElement | Null = js.native
   @JSName("querySelector")
   def querySelector_polygon(selectors: polygon): SVGPolygonElement | Null = js.native
   @JSName("querySelector")
@@ -4283,11 +4781,15 @@ trait HTMLElementcontenteditabl extends StObject {
   @JSName("querySelector")
   def querySelector_radialGradient(selectors: radialGradient): SVGRadialGradientElement | Null = js.native
   @JSName("querySelector")
+  def querySelector_rb(selectors: rb): HTMLElement | Null = js.native
+  @JSName("querySelector")
   def querySelector_rect(selectors: rect): SVGRectElement | Null = js.native
   @JSName("querySelector")
   def querySelector_rp(selectors: rp): HTMLElement | Null = js.native
   @JSName("querySelector")
   def querySelector_rt(selectors: rt): HTMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_rtc(selectors: rtc): HTMLElement | Null = js.native
   @JSName("querySelector")
   def querySelector_ruby(selectors: ruby): HTMLElement | Null = js.native
   @JSName("querySelector")
@@ -4301,6 +4803,8 @@ trait HTMLElementcontenteditabl extends StObject {
   @JSName("querySelector")
   def querySelector_select(selectors: select): HTMLSelectElement | Null = js.native
   @JSName("querySelector")
+  def querySelector_semantics(selectors: semantics): MathMLElement | Null = js.native
+  @JSName("querySelector")
   def querySelector_set(selectors: set): SVGSetElement | Null = js.native
   @JSName("querySelector")
   def querySelector_slot(selectors: slot): HTMLSlotElement | Null = js.native
@@ -4309,9 +4813,13 @@ trait HTMLElementcontenteditabl extends StObject {
   @JSName("querySelector")
   def querySelector_source(selectors: source): HTMLSourceElement | Null = js.native
   @JSName("querySelector")
+  def querySelector_spacer(selectors: spacer): HTMLUnknownElement | Null = js.native
+  @JSName("querySelector")
   def querySelector_span(selectors: span): HTMLSpanElement | Null = js.native
   @JSName("querySelector")
   def querySelector_stop(selectors: stop): SVGStopElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_strike(selectors: strike): HTMLElement | Null = js.native
   @JSName("querySelector")
   def querySelector_strong(selectors: strong): HTMLElement | Null = js.native
   @JSName("querySelector")
@@ -4359,6 +4867,8 @@ trait HTMLElementcontenteditabl extends StObject {
   @JSName("querySelector")
   def querySelector_tspan(selectors: tspan): SVGTSpanElement | Null = js.native
   @JSName("querySelector")
+  def querySelector_tt(selectors: tt): HTMLElement | Null = js.native
+  @JSName("querySelector")
   def querySelector_u(selectors: u): HTMLElement | Null = js.native
   @JSName("querySelector")
   def querySelector_ul(selectors: ul): HTMLUListElement | Null = js.native
@@ -4372,6 +4882,8 @@ trait HTMLElementcontenteditabl extends StObject {
   def querySelector_view(selectors: view): SVGViewElement | Null = js.native
   @JSName("querySelector")
   def querySelector_wbr(selectors: wbr): HTMLElement | Null = js.native
+  @JSName("querySelector")
+  def querySelector_xmp(selectors: xmp): HTMLPreElement | Null = js.native
   
   /* standard dom */
   def releasePointerCapture(pointerId: Double): Unit = js.native

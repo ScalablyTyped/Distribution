@@ -8,9 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Typeofpower extends StObject {
   
   /**
-    * @enum
-    * @property SYSTEM - Prevent the system from sleeping in response to user inactivity.
-    * @property DISPLAY - Prevent the display from being turned off or dimmed or the system from sleeping in response to user inactivity.
+    * SYSTEM - Prevent the system from sleeping in response to user inactivity.
+    * DISPLAY - Prevent the display from being turned off or dimmed or the system from sleeping in response to user inactivity.
     */
   val Level: DISPLAY
   

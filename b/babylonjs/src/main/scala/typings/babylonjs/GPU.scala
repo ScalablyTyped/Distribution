@@ -9,6 +9,6 @@ trait GPU extends StObject {
   
   def getPreferredCanvasFormat(): GPUTextureFormat = js.native
   
-  def requestAdapter(): js.Promise[GPUAdapter | Null] = js.native
-  def requestAdapter(options: GPURequestAdapterOptions): js.Promise[GPUAdapter | Null] = js.native
+  def requestAdapter(): js.Promise[js.UndefOr[GPUAdapter]] = js.native
+  def requestAdapter(options: GPURequestAdapterOptions): js.Promise[js.UndefOr[GPUAdapter]] = js.native
 }

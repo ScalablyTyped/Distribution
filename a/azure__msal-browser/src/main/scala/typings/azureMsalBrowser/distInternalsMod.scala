@@ -2,12 +2,17 @@ package typings.azureMsalBrowser
 
 import typings.azureMsalBrowser.anon.RequiredCacheOptions
 import typings.azureMsalBrowser.distConfigConfigurationMod.BrowserConfiguration
+import typings.azureMsalBrowser.distConfigConfigurationMod.CryptoOptions
+import typings.azureMsalBrowser.distErrorNativeAuthErrorMod.OSError
 import typings.azureMsalBrowser.distNavigationInavigationclientMod.INavigationClient
 import typings.azureMsalBrowser.distUtilsBrowserConstantsMod.ApiId
+import typings.azureMsalCommon.distConfigClientConfigurationMod.ApplicationTelemetry
 import typings.azureMsalCommon.distCryptoIcryptoMod.ICrypto
 import typings.azureMsalCommon.distRequestCommonAuthorizationCodeRequestMod.CommonAuthorizationCodeRequest
 import typings.azureMsalCommon.distTelemetryPerformanceIperformanceclientMod.IPerformanceClient
+import typings.azureMsalCommon.distTelemetryPerformancePerformanceEventMod.SubMeasurement
 import typings.azureMsalCommon.distUtilsConstantsMod.AuthenticationScheme
+import typings.azureMsalCommon.mod.AuthError
 import typings.azureMsalCommon.mod.AuthorizationCodeClient
 import typings.azureMsalCommon.mod.Logger
 import org.scalablytyped.runtime.StObject
@@ -28,6 +33,14 @@ object distInternalsMod {
     @JSImport("@azure/msal-browser/dist/internals", "BrowserConstants")
     @js.native
     val ^ : js.Any = js.native
+    
+    /**
+      * Default popup monitor poll interval in milliseconds
+      */
+    @JSImport("@azure/msal-browser/dist/internals", "BrowserConstants.DEFAULT_POLL_INTERVAL_MS")
+    @js.native
+    def DEFAULT_POLL_INTERVAL_MS: Double = js.native
+    inline def DEFAULT_POLL_INTERVAL_MS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_POLL_INTERVAL_MS")(x.asInstanceOf[js.Any])
     
     /**
       * Interaction in progress cache value
@@ -54,14 +67,6 @@ object distInternalsMod {
     inline def MSAL_SKU_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MSAL_SKU")(x.asInstanceOf[js.Any])
     
     /**
-      * Default popup monitor poll interval in milliseconds
-      */
-    @JSImport("@azure/msal-browser/dist/internals", "BrowserConstants.POLL_INTERVAL_MS")
-    @js.native
-    def POLL_INTERVAL_MS: Double = js.native
-    inline def POLL_INTERVAL_MS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("POLL_INTERVAL_MS")(x.asInstanceOf[js.Any])
-    
-    /**
       * Default popup window height
       */
     @JSImport("@azure/msal-browser/dist/internals", "BrowserConstants.POPUP_HEIGHT")
@@ -86,6 +91,86 @@ object distInternalsMod {
     inline def POPUP_WIDTH_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("POPUP_WIDTH")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("@azure/msal-browser/dist/internals", "BrowserPerformanceClient")
+  @js.native
+  open class BrowserPerformanceClient protected ()
+    extends typings.azureMsalBrowser.distTelemetryBrowserPerformanceClientMod.BrowserPerformanceClient {
+    def this(
+      clientId: String,
+      authority: String,
+      logger: Logger,
+      libraryName: String,
+      libraryVersion: String,
+      applicationTelemetry: ApplicationTelemetry,
+      cryptoOptions: CryptoOptions
+    ) = this()
+  }
+  
+  @JSImport("@azure/msal-browser/dist/internals", "BrowserPerformanceMeasurement")
+  @js.native
+  open class BrowserPerformanceMeasurement protected ()
+    extends typings.azureMsalBrowser.distTelemetryBrowserPerformanceMeasurementMod.BrowserPerformanceMeasurement {
+    def this(name: String, correlationId: String) = this()
+  }
+  /* static members */
+  object BrowserPerformanceMeasurement {
+    
+    @JSImport("@azure/msal-browser/dist/internals", "BrowserPerformanceMeasurement")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * Flush browser marks and measurements.
+      * @param {string} correlationId
+      * @param {SubMeasurement} measurements
+      */
+    inline def flushMeasurements(correlationId: String, measurements: js.Array[SubMeasurement]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("flushMeasurements")(correlationId.asInstanceOf[js.Any], measurements.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    @JSImport("@azure/msal-browser/dist/internals", "BrowserPerformanceMeasurement.makeEndMark")
+    @js.native
+    def makeEndMark: Any = js.native
+    inline def makeEndMark_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("makeEndMark")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@azure/msal-browser/dist/internals", "BrowserPerformanceMeasurement.makeMeasureName")
+    @js.native
+    def makeMeasureName: Any = js.native
+    inline def makeMeasureName_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("makeMeasureName")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@azure/msal-browser/dist/internals", "BrowserPerformanceMeasurement.makeStartMark")
+    @js.native
+    def makeStartMark: Any = js.native
+    inline def makeStartMark_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("makeStartMark")(x.asInstanceOf[js.Any])
+    
+    inline def supportsBrowserPerformance(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("supportsBrowserPerformance")().asInstanceOf[Boolean]
+  }
+  
+  @JSImport("@azure/msal-browser/dist/internals", "CryptoOps")
+  @js.native
+  open class CryptoOps protected ()
+    extends typings.azureMsalBrowser.distCryptoCryptoOpsMod.CryptoOps {
+    def this(logger: Logger) = this()
+    def this(logger: Logger, performanceClient: IPerformanceClient) = this()
+    def this(logger: Logger, performanceClient: Unit, cryptoConfig: CryptoOptions) = this()
+    def this(logger: Logger, performanceClient: IPerformanceClient, cryptoConfig: CryptoOptions) = this()
+  }
+  /* static members */
+  object CryptoOps {
+    
+    @JSImport("@azure/msal-browser/dist/internals", "CryptoOps")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("@azure/msal-browser/dist/internals", "CryptoOps.EXTRACTABLE")
+    @js.native
+    def EXTRACTABLE: Any = js.native
+    inline def EXTRACTABLE_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EXTRACTABLE")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@azure/msal-browser/dist/internals", "CryptoOps.POP_KEY_USAGES")
+    @js.native
+    def POP_KEY_USAGES: Any = js.native
+    inline def POP_KEY_USAGES_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("POP_KEY_USAGES")(x.asInstanceOf[js.Any])
+  }
+  
   @JSImport("@azure/msal-browser/dist/internals", "EventHandler")
   @js.native
   open class EventHandler protected ()
@@ -93,12 +178,87 @@ object distInternalsMod {
     def this(logger: Logger, browserCrypto: ICrypto) = this()
   }
   
+  @JSImport("@azure/msal-browser/dist/internals", "NativeAuthError")
+  @js.native
+  open class NativeAuthError protected ()
+    extends typings.azureMsalBrowser.distErrorNativeAuthErrorMod.NativeAuthError {
+    def this(errorCode: String, description: String) = this()
+    def this(errorCode: String, description: String, ext: OSError) = this()
+  }
+  /* static members */
+  object NativeAuthError {
+    
+    @JSImport("@azure/msal-browser/dist/internals", "NativeAuthError")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * Create the appropriate error object based on the WAM status code.
+      * @param code
+      * @param description
+      * @param ext
+      * @returns
+      */
+    inline def createError(code: String, description: String): AuthError = (^.asInstanceOf[js.Dynamic].applyDynamic("createError")(code.asInstanceOf[js.Any], description.asInstanceOf[js.Any])).asInstanceOf[AuthError]
+    inline def createError(code: String, description: String, ext: OSError): AuthError = (^.asInstanceOf[js.Dynamic].applyDynamic("createError")(code.asInstanceOf[js.Any], description.asInstanceOf[js.Any], ext.asInstanceOf[js.Any])).asInstanceOf[AuthError]
+    
+    /**
+      * Creates a tokens not found error when the internal cache look up fails
+      * @returns NativeAuthError: tokensNotFoundInCache
+      */
+    inline def createTokensNotFoundInCacheError(): typings.azureMsalBrowser.distErrorNativeAuthErrorMod.NativeAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createTokensNotFoundInCacheError")().asInstanceOf[typings.azureMsalBrowser.distErrorNativeAuthErrorMod.NativeAuthError]
+    
+    /**
+      * Creates user switch error when the user chooses a different account in the native broker prompt
+      * @returns
+      */
+    inline def createUserSwitchError(): typings.azureMsalBrowser.distErrorNativeAuthErrorMod.NativeAuthError = ^.asInstanceOf[js.Dynamic].applyDynamic("createUserSwitchError")().asInstanceOf[typings.azureMsalBrowser.distErrorNativeAuthErrorMod.NativeAuthError]
+  }
+  
+  @JSImport("@azure/msal-browser/dist/internals", "NativeInteractionClient")
+  @js.native
+  open class NativeInteractionClient protected ()
+    extends typings.azureMsalBrowser.distInteractionClientNativeInteractionClientMod.NativeInteractionClient {
+    def this(
+      config: BrowserConfiguration,
+      browserStorage: typings.azureMsalBrowser.distCacheBrowserCacheManagerMod.BrowserCacheManager,
+      browserCrypto: ICrypto,
+      logger: Logger,
+      eventHandler: typings.azureMsalBrowser.distEventEventHandlerMod.EventHandler,
+      navigationClient: INavigationClient,
+      apiId: ApiId,
+      performanceClient: IPerformanceClient,
+      provider: typings.azureMsalBrowser.distBrokerNativeBrokerNativeMessageHandlerMod.NativeMessageHandler,
+      accountId: String,
+      nativeStorageImpl: typings.azureMsalBrowser.distCacheBrowserCacheManagerMod.BrowserCacheManager
+    ) = this()
+    def this(
+      config: BrowserConfiguration,
+      browserStorage: typings.azureMsalBrowser.distCacheBrowserCacheManagerMod.BrowserCacheManager,
+      browserCrypto: ICrypto,
+      logger: Logger,
+      eventHandler: typings.azureMsalBrowser.distEventEventHandlerMod.EventHandler,
+      navigationClient: INavigationClient,
+      apiId: ApiId,
+      performanceClient: IPerformanceClient,
+      provider: typings.azureMsalBrowser.distBrokerNativeBrokerNativeMessageHandlerMod.NativeMessageHandler,
+      accountId: String,
+      nativeStorageImpl: typings.azureMsalBrowser.distCacheBrowserCacheManagerMod.BrowserCacheManager,
+      correlationId: String
+    ) = this()
+  }
+  
   @JSImport("@azure/msal-browser/dist/internals", "NativeMessageHandler")
   @js.native
   open class NativeMessageHandler protected ()
     extends typings.azureMsalBrowser.distBrokerNativeBrokerNativeMessageHandlerMod.NativeMessageHandler {
-    def this(logger: Logger, handshakeTimeoutMs: Double) = this()
-    def this(logger: Logger, handshakeTimeoutMs: Double, extensionId: String) = this()
+    def this(logger: Logger, handshakeTimeoutMs: Double, performanceClient: IPerformanceClient) = this()
+    def this(
+      logger: Logger,
+      handshakeTimeoutMs: Double,
+      performanceClient: IPerformanceClient,
+      extensionId: String
+    ) = this()
   }
   /* static members */
   object NativeMessageHandler {
@@ -109,12 +269,13 @@ object distInternalsMod {
     
     /**
       * Returns an instance of the MessageHandler that has successfully established a connection with an extension
-      * @param logger
-      * @param handshakeTimeoutMs
+      * @param {Logger} logger
+      * @param {number} handshakeTimeoutMs
+      * @param {IPerformanceClient} performanceClient
       */
-    inline def createProvider(logger: Logger, handshakeTimeoutMs: Double): js.Promise[
+    inline def createProvider(logger: Logger, handshakeTimeoutMs: Double, performanceClient: IPerformanceClient): js.Promise[
         typings.azureMsalBrowser.distBrokerNativeBrokerNativeMessageHandlerMod.NativeMessageHandler
-      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("createProvider")(logger.asInstanceOf[js.Any], handshakeTimeoutMs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("createProvider")(logger.asInstanceOf[js.Any], handshakeTimeoutMs.asInstanceOf[js.Any], performanceClient.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
         typings.azureMsalBrowser.distBrokerNativeBrokerNativeMessageHandlerMod.NativeMessageHandler
       ]]
     
@@ -256,7 +417,8 @@ object distInternalsMod {
       storageImpl: typings.azureMsalBrowser.distCacheBrowserCacheManagerMod.BrowserCacheManager,
       authCodeRequest: CommonAuthorizationCodeRequest,
       logger: Logger,
-      browserCrypto: ICrypto
+      browserCrypto: ICrypto,
+      performanceClient: IPerformanceClient
     ) = this()
   }
   
@@ -480,6 +642,8 @@ object distInternalsMod {
     /* "nonce.id_token" */ val NONCE_IDTOKEN: typings.azureMsalBrowser.distUtilsBrowserConstantsMod.TemporaryCacheKeys.NONCE_IDTOKEN & String = js.native
     
     /* "request.origin" */ val ORIGIN_URI: typings.azureMsalBrowser.distUtilsBrowserConstantsMod.TemporaryCacheKeys.ORIGIN_URI & String = js.native
+    
+    /* "request.redirect.context" */ val REDIRECT_CONTEXT: typings.azureMsalBrowser.distUtilsBrowserConstantsMod.TemporaryCacheKeys.REDIRECT_CONTEXT & String = js.native
     
     /* "token.renew.status" */ val RENEW_STATUS: typings.azureMsalBrowser.distUtilsBrowserConstantsMod.TemporaryCacheKeys.RENEW_STATUS & String = js.native
     

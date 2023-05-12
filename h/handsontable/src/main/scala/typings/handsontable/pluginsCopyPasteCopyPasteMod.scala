@@ -17,6 +17,15 @@ object pluginsCopyPasteCopyPasteMod {
     var columnsLimit: Double = js.native
     
     def copy(): Unit = js.native
+    def copy(copyMode: CopyModeType): Unit = js.native
+    
+    def copyCellsOnly(): Unit = js.native
+    
+    def copyColumnHeadersOnly(): Unit = js.native
+    
+    def copyWithAllColumnHeaders(): Unit = js.native
+    
+    def copyWithColumnHeaders(): Unit = js.native
     
     def cut(): Unit = js.native
     
@@ -38,9 +47,33 @@ object pluginsCopyPasteCopyPasteMod {
     def setCopyableText(): Unit = js.native
   }
   
+  /* Rewritten from type alias, can be one of: 
+    - typings.handsontable.handsontableStrings.`cells-only`
+    - typings.handsontable.handsontableStrings.`column-headers-only`
+    - typings.handsontable.handsontableStrings.`with-all-column-headers`
+    - typings.handsontable.handsontableStrings.`with-column-headers`
+  */
+  trait CopyModeType extends StObject
+  object CopyModeType {
+    
+    inline def `cells-only`: typings.handsontable.handsontableStrings.`cells-only` = "cells-only".asInstanceOf[typings.handsontable.handsontableStrings.`cells-only`]
+    
+    inline def `column-headers-only`: typings.handsontable.handsontableStrings.`column-headers-only` = "column-headers-only".asInstanceOf[typings.handsontable.handsontableStrings.`column-headers-only`]
+    
+    inline def `with-all-column-headers`: typings.handsontable.handsontableStrings.`with-all-column-headers` = "with-all-column-headers".asInstanceOf[typings.handsontable.handsontableStrings.`with-all-column-headers`]
+    
+    inline def `with-column-headers`: typings.handsontable.handsontableStrings.`with-column-headers` = "with-column-headers".asInstanceOf[typings.handsontable.handsontableStrings.`with-column-headers`]
+  }
+  
   trait DetailedSettings extends StObject {
     
     var columnsLimit: js.UndefOr[Double] = js.undefined
+    
+    var copyColumnGroupHeaders: js.UndefOr[Boolean] = js.undefined
+    
+    var copyColumnHeaders: js.UndefOr[Boolean] = js.undefined
+    
+    var copyColumnHeadersOnly: js.UndefOr[Boolean] = js.undefined
     
     var pasteMode: js.UndefOr[PasteModeType] = js.undefined
     
@@ -59,6 +92,18 @@ object pluginsCopyPasteCopyPasteMod {
       inline def setColumnsLimit(value: Double): Self = StObject.set(x, "columnsLimit", value.asInstanceOf[js.Any])
       
       inline def setColumnsLimitUndefined: Self = StObject.set(x, "columnsLimit", js.undefined)
+      
+      inline def setCopyColumnGroupHeaders(value: Boolean): Self = StObject.set(x, "copyColumnGroupHeaders", value.asInstanceOf[js.Any])
+      
+      inline def setCopyColumnGroupHeadersUndefined: Self = StObject.set(x, "copyColumnGroupHeaders", js.undefined)
+      
+      inline def setCopyColumnHeaders(value: Boolean): Self = StObject.set(x, "copyColumnHeaders", value.asInstanceOf[js.Any])
+      
+      inline def setCopyColumnHeadersOnly(value: Boolean): Self = StObject.set(x, "copyColumnHeadersOnly", value.asInstanceOf[js.Any])
+      
+      inline def setCopyColumnHeadersOnlyUndefined: Self = StObject.set(x, "copyColumnHeadersOnly", js.undefined)
+      
+      inline def setCopyColumnHeadersUndefined: Self = StObject.set(x, "copyColumnHeaders", js.undefined)
       
       inline def setPasteMode(value: PasteModeType): Self = StObject.set(x, "pasteMode", value.asInstanceOf[js.Any])
       

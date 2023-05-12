@@ -1,7 +1,7 @@
 
 # Scala.js typings for csstools__postcss-cascade-layers
 
-Typings are for version 1.1.1
+Typings are for version 3.0.1
 
 ## Library description:
 Use cascade layers in CSS

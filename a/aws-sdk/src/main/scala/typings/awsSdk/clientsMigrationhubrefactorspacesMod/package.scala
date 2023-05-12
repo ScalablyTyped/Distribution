@@ -2,7 +2,6 @@ package typings.awsSdk.clientsMigrationhubrefactorspacesMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.awsSdk.awsSdkStrings.API_GATEWAY
-import typings.awsSdk.awsSdkStrings.TRANSIT_GATEWAY
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -131,7 +130,12 @@ type LambdaArn = java.lang.String
 
 type MaxResults = Double
 
-type NetworkFabricType = TRANSIT_GATEWAY | java.lang.String
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.TRANSIT_GATEWAY
+  - typings.awsSdk.awsSdkStrings.NONE
+  - java.lang.String
+*/
+type NetworkFabricType = _NetworkFabricType | java.lang.String
 
 type NextToken = java.lang.String
 

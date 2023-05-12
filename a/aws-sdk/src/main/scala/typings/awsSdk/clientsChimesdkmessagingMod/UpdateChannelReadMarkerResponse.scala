@@ -10,11 +10,6 @@ trait UpdateChannelReadMarkerResponse extends StObject {
     * The ARN of the channel.
     */
   var ChannelArn: js.UndefOr[ChimeArn] = js.undefined
-  
-  /**
-    * The ID of the SubChannel in the response.
-    */
-  var SubChannelId: js.UndefOr[typings.awsSdk.clientsChimesdkmessagingMod.SubChannelId] = js.undefined
 }
 object UpdateChannelReadMarkerResponse {
   
@@ -29,9 +24,5 @@ object UpdateChannelReadMarkerResponse {
     inline def setChannelArn(value: ChimeArn): Self = StObject.set(x, "ChannelArn", value.asInstanceOf[js.Any])
     
     inline def setChannelArnUndefined: Self = StObject.set(x, "ChannelArn", js.undefined)
-    
-    inline def setSubChannelId(value: SubChannelId): Self = StObject.set(x, "SubChannelId", value.asInstanceOf[js.Any])
-    
-    inline def setSubChannelIdUndefined: Self = StObject.set(x, "SubChannelId", js.undefined)
   }
 }

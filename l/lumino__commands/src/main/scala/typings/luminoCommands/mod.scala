@@ -1,11 +1,13 @@
 package typings.luminoCommands
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.luminoCommands.anon.PartialDescription
 import typings.luminoCommands.luminoCommandsStrings.`many-changed`
 import typings.luminoCommands.luminoCommandsStrings.added
 import typings.luminoCommands.luminoCommandsStrings.changed
 import typings.luminoCommands.luminoCommandsStrings.removed
 import typings.luminoCommands.mod.CommandRegistry.Dataset
+import typings.luminoCommands.mod.CommandRegistry.Description
 import typings.luminoCommands.mod.CommandRegistry.ICommandChangedArgs
 import typings.luminoCommands.mod.CommandRegistry.ICommandExecutedArgs
 import typings.luminoCommands.mod.CommandRegistry.ICommandOptions
@@ -149,7 +151,7 @@ object mod {
       * This signal is useful for visual representations of commands which
       * need to refresh when the state of a relevant command has changed.
       */
-    val commandChanged: ISignal[this.type, ICommandChangedArgs] = js.native
+    def commandChanged: ISignal[this.type, ICommandChangedArgs] = js.native
     
     /**
       * A signal emitted when a command has executed.
@@ -159,7 +161,7 @@ object mod {
       * by many components for many user actions. Handlers registered with this
       * signal must return quickly to ensure the overall application remains responsive.
       */
-    val commandExecuted: ISignal[this.type, ICommandExecutedArgs] = js.native
+    def commandExecuted: ISignal[this.type, ICommandExecutedArgs] = js.native
     
     /**
       * Get the dataset for a specific command.
@@ -173,6 +175,18 @@ object mod {
       */
     def dataset(id: String): Dataset = js.native
     def dataset(id: String, args: ReadonlyPartialJSONObject): Dataset = js.native
+    
+    /**
+      * Get the description for a specific command.
+      *
+      * @param id - The id of the command of interest.
+      *
+      * @param args - The arguments for the command.
+      *
+      * @returns The description for the command.
+      */
+    def describedBy(id: String): js.Promise[Description] = js.native
+    def describedBy(id: String, args: ReadonlyPartialJSONObject): js.Promise[Description] = js.native
     
     /**
       * Execute a specific command.
@@ -211,11 +225,10 @@ object mod {
       *
       * @param args - The arguments for the command.
       *
-      * @returns The icon renderer for the command, or
-      *   an empty string if the command is not registered.
+      * @returns The icon renderer for the command or `undefined`.
       */
-    def icon(id: String): js.UndefOr[IRenderer | String] = js.native
-    def icon(id: String, args: ReadonlyPartialJSONObject): js.UndefOr[IRenderer | String] = js.native
+    def icon(id: String): js.UndefOr[IRenderer] = js.native
+    def icon(id: String, args: ReadonlyPartialJSONObject): js.UndefOr[IRenderer] = js.native
     
     /**
       * Get the icon class for a specific command.
@@ -298,12 +311,12 @@ object mod {
     /**
       * A signal emitted when a key binding is changed.
       */
-    val keyBindingChanged: ISignal[this.type, IKeyBindingChangedArgs] = js.native
+    def keyBindingChanged: ISignal[this.type, IKeyBindingChangedArgs] = js.native
     
     /**
       * A read-only array of the key bindings in the registry.
       */
-    val keyBindings: js.Array[IKeyBinding] = js.native
+    def keyBindings: js.Array[IKeyBinding] = js.native
     
     /**
       * Get the display label for a specific command.
@@ -395,9 +408,16 @@ object mod {
     val ^ : js.Any = js.native
     
     /**
-      * Format a keystroke for display on the local system.
+      * Format keystrokes for display on the local system.
+      *
+      * If a list of keystrokes is provided, it will be displayed as
+      * a comma-separated string
+      *
+      * @param keystroke The keystrokes to format
+      * @returns The keystrokes representation
       */
     inline def formatKeystroke(keystroke: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatKeystroke")(keystroke.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def formatKeystroke(keystroke: js.Array[String]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatKeystroke")(keystroke.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Check if `'keydown'` event is caused by pressing a modifier key that should be ignored.
@@ -475,6 +495,29 @@ object mod {
       * A type alias for a simple immutable string dataset.
       */
     type Dataset = StringDictionary[String]
+    
+    /**
+      * Commands description.
+      */
+    trait Description extends StObject {
+      
+      var args: ReadonlyJSONObject | Null
+    }
+    object Description {
+      
+      inline def apply(): Description = {
+        val __obj = js.Dynamic.literal(args = null)
+        __obj.asInstanceOf[Description]
+      }
+      
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Description] (val x: Self) extends AnyVal {
+        
+        inline def setArgs(value: ReadonlyJSONObject): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+        
+        inline def setArgsNull: Self = StObject.set(x, "args", null)
+      }
+    }
     
     /**
       * An arguments object for the `commandChanged` signal.
@@ -610,6 +653,17 @@ object mod {
       var dataset: js.UndefOr[Dataset | CommandFunc[Dataset]] = js.undefined
       
       /**
+        * JSON Schemas describing the command.
+        *
+        * #### Notes
+        * For now, the command arguments are the only one that can be
+        * described.
+        */
+      var describedBy: js.UndefOr[
+            PartialDescription | (CommandFunc[PartialDescription | js.Promise[PartialDescription]])
+          ] = js.undefined
+      
+      /**
         * The function to invoke when the command is executed.
         *
         * #### Notes
@@ -642,12 +696,9 @@ object mod {
         * This can be an IRenderer object, or a function which returns the
         * renderer based on the provided command arguments.
         *
-        * The default value is undefined.
-        *
-        * DEPRECATED: if set to a string value, the .icon field will function as
-        * an alias for the .iconClass field, for backwards compatibility
+        * The default value is `undefined`.
         */
-      var icon: js.UndefOr[IRenderer | String | (CommandFunc[js.UndefOr[IRenderer | String]])] = js.undefined
+      var icon: js.UndefOr[IRenderer | CommandFunc[js.UndefOr[IRenderer]]] = js.undefined
       
       /**
         * The icon class for the command.
@@ -799,9 +850,15 @@ object mod {
         
         inline def setDatasetUndefined: Self = StObject.set(x, "dataset", js.undefined)
         
+        inline def setDescribedBy(value: PartialDescription | (CommandFunc[PartialDescription | js.Promise[PartialDescription]])): Self = StObject.set(x, "describedBy", value.asInstanceOf[js.Any])
+        
+        inline def setDescribedByFunction1(value: /* args */ ReadonlyPartialJSONObject => PartialDescription | js.Promise[PartialDescription]): Self = StObject.set(x, "describedBy", js.Any.fromFunction1(value))
+        
+        inline def setDescribedByUndefined: Self = StObject.set(x, "describedBy", js.undefined)
+        
         inline def setExecute(value: /* args */ ReadonlyPartialJSONObject => Any | js.Promise[Any]): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
         
-        inline def setIcon(value: IRenderer | String | (CommandFunc[js.UndefOr[IRenderer | String]])): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+        inline def setIcon(value: IRenderer | CommandFunc[js.UndefOr[IRenderer]]): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
         
         inline def setIconClass(value: String | CommandFunc[String]): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
         
@@ -809,7 +866,7 @@ object mod {
         
         inline def setIconClassUndefined: Self = StObject.set(x, "iconClass", js.undefined)
         
-        inline def setIconFunction1(value: /* args */ ReadonlyPartialJSONObject => js.UndefOr[IRenderer | String]): Self = StObject.set(x, "icon", js.Any.fromFunction1(value))
+        inline def setIconFunction1(value: /* args */ ReadonlyPartialJSONObject => js.UndefOr[IRenderer]): Self = StObject.set(x, "icon", js.Any.fromFunction1(value))
         
         inline def setIconLabel(value: String | CommandFunc[String]): Self = StObject.set(x, "iconLabel", value.asInstanceOf[js.Any])
         

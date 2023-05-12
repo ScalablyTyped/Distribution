@@ -7,19 +7,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TextDocumentChangeEvent extends StObject {
   
   /**
-    * An array of content changes.
-    */
+  		 * An array of content changes.
+  		 */
   val contentChanges: js.Array[TextDocumentContentChangeEvent]
   
   /**
-    * The affected document.
-    */
+  		 * The affected document.
+  		 */
   val document: TextDocument
   
   /**
-    * The reason why the document was changed.
-    * Is `undefined` if the reason is not known.
-    */
+  		 * The reason why the document was changed.
+  		 * Is `undefined` if the reason is not known.
+  		*/
   val reason: js.UndefOr[TextDocumentChangeReason] = js.undefined
 }
 object TextDocumentChangeEvent {

@@ -1,74 +1,56 @@
 package typings.ol
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.ol.pluggableMapMod.FrameState
+import typings.ol.mapMod.FrameState
 import typings.ol.webglHelperMod.UniformValue
+import typings.std.WebGLRenderingContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rendererWebglLayerMod {
   
-  @JSImport("ol/renderer/webgl/Layer", JSImport.Namespace)
-  @js.native
-  val ^ : js.Any = js.native
-  
+  /**
+    * @typedef {Object} PostProcessesOptions
+    * @property {number} [scaleRatio] Scale ratio; if < 1, the post process will render to a texture smaller than
+    * the main canvas that will then be sampled up (useful for saving resource on blur steps).
+    * @property {string} [vertexShader] Vertex shader source
+    * @property {string} [fragmentShader] Fragment shader source
+    * @property {Object<string,import("../../webgl/Helper").UniformValue>} [uniforms] Uniform definitions for the post process step
+    */
+  /**
+    * @typedef {Object} Options
+    * @property {Object<string,import("../../webgl/Helper").UniformValue>} [uniforms] Uniform definitions for the post process steps
+    * @property {Array<PostProcessesOptions>} [postProcesses] Post-processes definitions
+    */
+  /**
+    * @classdesc
+    * Base WebGL renderer class.
+    * Holds all logic related to data manipulation & some common rendering logic
+    * @template {import("../../layer/Layer.js").default} LayerType
+    * @extends {LayerRenderer<LayerType>}
+    */
   @JSImport("ol/renderer/webgl/Layer", JSImport.Default)
   @js.native
-  open class default[LayerType /* <: typings.ol.layerLayerMod.default[typings.ol.sourceSourceMod.default] */] protected () extends WebGLLayerRenderer[LayerType] {
+  open class default[LayerType /* <: typings.ol.layerLayerMod.default[typings.ol.sourceSourceMod.default, typings.ol.rendererLayerMod.default[Any]] */] protected () extends WebGLLayerRenderer[LayerType] {
+    /**
+      * @param {LayerType} layer Layer.
+      * @param {Options} [options] Options.
+      */
     def this(layer: LayerType) = this()
-    def this(layer: LayerType, opt_options: Options) = this()
-  }
-  
-  @js.native
-  sealed trait WebGLWorkerMessageType extends StObject
-  @JSImport("ol/renderer/webgl/Layer", "WebGLWorkerMessageType")
-  @js.native
-  object WebGLWorkerMessageType extends StObject {
-    
-    @JSBracketAccess
-    def apply(value: String): js.UndefOr[WebGLWorkerMessageType & String] = js.native
-    
-    @js.native
-    sealed trait GENERATE_BUFFERS
-      extends StObject
-         with WebGLWorkerMessageType
-    /* "GENERATE_BUFFERS" */ val GENERATE_BUFFERS: typings.ol.rendererWebglLayerMod.WebGLWorkerMessageType.GENERATE_BUFFERS & String = js.native
-  }
-  
-  inline def colorDecodeId(color: js.Array[Double]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("colorDecodeId")(color.asInstanceOf[js.Any]).asInstanceOf[Double]
-  
-  inline def colorEncodeId(id: Double): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("colorEncodeId")(id.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
-  inline def colorEncodeId(id: Double, opt_array: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("colorEncodeId")(id.asInstanceOf[js.Any], opt_array.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
-  
-  trait BufferPositions extends StObject {
-    
-    var indexPosition: Double
-    
-    var vertexPosition: Double
-  }
-  object BufferPositions {
-    
-    inline def apply(indexPosition: Double, vertexPosition: Double): BufferPositions = {
-      val __obj = js.Dynamic.literal(indexPosition = indexPosition.asInstanceOf[js.Any], vertexPosition = vertexPosition.asInstanceOf[js.Any])
-      __obj.asInstanceOf[BufferPositions]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: BufferPositions] (val x: Self) extends AnyVal {
-      
-      inline def setIndexPosition(value: Double): Self = StObject.set(x, "indexPosition", value.asInstanceOf[js.Any])
-      
-      inline def setVertexPosition(value: Double): Self = StObject.set(x, "vertexPosition", value.asInstanceOf[js.Any])
-    }
+    def this(layer: LayerType, options: Options) = this()
   }
   
   trait Options extends StObject {
     
-    var className: js.UndefOr[String] = js.undefined
-    
+    /**
+      * Post-processes definitions
+      */
     var postProcesses: js.UndefOr[js.Array[PostProcessesOptions]] = js.undefined
     
+    /**
+      * Uniform definitions for the post process steps
+      */
     var uniforms: js.UndefOr[StringDictionary[UniformValue]] = js.undefined
   }
   object Options {
@@ -80,10 +62,6 @@ object rendererWebglLayerMod {
     
     @scala.inline
     implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
-      
-      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
-      
-      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
       inline def setPostProcesses(value: js.Array[PostProcessesOptions]): Self = StObject.set(x, "postProcesses", value.asInstanceOf[js.Any])
       
@@ -99,12 +77,25 @@ object rendererWebglLayerMod {
   
   trait PostProcessesOptions extends StObject {
     
+    /**
+      * Fragment shader source
+      */
     var fragmentShader: js.UndefOr[String] = js.undefined
     
+    /**
+      * Scale ratio; if < 1, the post process will render to a texture smaller than
+      * the main canvas that will then be sampled up (useful for saving resource on blur steps).
+      */
     var scaleRatio: js.UndefOr[Double] = js.undefined
     
+    /**
+      * Uniform definitions for the post process step
+      */
     var uniforms: js.UndefOr[StringDictionary[UniformValue]] = js.undefined
     
+    /**
+      * Vertex shader source
+      */
     var vertexShader: js.UndefOr[String] = js.undefined
   }
   object PostProcessesOptions {
@@ -135,60 +126,118 @@ object rendererWebglLayerMod {
     }
   }
   
+  /**
+    * @typedef {Object} PostProcessesOptions
+    * @property {number} [scaleRatio] Scale ratio; if < 1, the post process will render to a texture smaller than
+    * the main canvas that will then be sampled up (useful for saving resource on blur steps).
+    * @property {string} [vertexShader] Vertex shader source
+    * @property {string} [fragmentShader] Fragment shader source
+    * @property {Object<string,import("../../webgl/Helper").UniformValue>} [uniforms] Uniform definitions for the post process step
+    */
+  /**
+    * @typedef {Object} Options
+    * @property {Object<string,import("../../webgl/Helper").UniformValue>} [uniforms] Uniform definitions for the post process steps
+    * @property {Array<PostProcessesOptions>} [postProcesses] Post-processes definitions
+    */
+  /**
+    * @classdesc
+    * Base WebGL renderer class.
+    * Holds all logic related to data manipulation & some common rendering logic
+    * @template {import("../../layer/Layer.js").default} LayerType
+    * @extends {LayerRenderer<LayerType>}
+    */
   @js.native
-  trait WebGLLayerRenderer[LayerType /* <: typings.ol.layerLayerMod.default[typings.ol.sourceSourceMod.default] */]
-    extends typings.ol.rendererLayerMod.default[typings.ol.layerLayerMod.default[typings.ol.sourceSourceMod.default]] {
+  trait WebGLLayerRenderer[LayerType /* <: typings.ol.layerLayerMod.default[typings.ol.sourceSourceMod.default, typings.ol.rendererLayerMod.default[Any]] */]
+    extends typings.ol.rendererLayerMod.default[LayerType] {
     
     /**
-      * Will return the last shader compilation errors. If no error happened, will return null;
+      * @protected
       */
-    def getShaderCompileErrors(): String | Null = js.native
+    /* protected */ def afterHelperCreated(): Unit = js.native
     
+    /**
+      * @param {WebGLRenderingContext} context The WebGL rendering context.
+      * @param {import("../../Map.js").FrameState} frameState Frame state.
+      * @protected
+      */
+    /* protected */ def dispatchPostComposeEvent(context: WebGLRenderingContext, frameState: FrameState): Unit = js.native
+    
+    /**
+      * @param {WebGLRenderingContext} context The WebGL rendering context.
+      * @param {import("../../Map.js").FrameState} frameState Frame state.
+      * @protected
+      */
+    /* protected */ def dispatchPreComposeEvent(context: WebGLRenderingContext, frameState: FrameState): Unit = js.native
+    
+    /**
+      * @param {import("../../render/EventType.js").default} type Event type.
+      * @param {WebGLRenderingContext} context The rendering context.
+      * @param {import("../../Map.js").FrameState} frameState Frame state.
+      * @private
+      */
+    /* private */ var dispatchRenderEvent_ : Any = js.native
+    
+    /**
+      * @type {WebGLHelper}
+      * @protected
+      */
     /* protected */ var helper: typings.ol.webglHelperMod.default = js.native
     
-    /* protected */ def postRender(frameState: FrameState): Unit = js.native
+    /**
+      * The transform for viewport CSS pixels to rendered pixels.  This transform is only
+      * set before dispatching rendering events.
+      * @private
+      * @type {import("../../transform.js").Transform}
+      */
+    /* private */ var inversePixelTransform_ : Any = js.native
     
-    /* protected */ def preRender(frameState: FrameState): Unit = js.native
-  }
-  
-  trait WebGLWorkerGenerateBuffersMessage extends StObject {
+    /**
+      * @private
+      * @type {CanvasRenderingContext2D}
+      */
+    /* private */ var pixelContext_ : Any = js.native
     
-    var customAttributesCount: js.UndefOr[Double] = js.undefined
+    /**
+      * @private
+      */
+    /* private */ var postProcesses_ : Any = js.native
     
-    var indexBuffer: js.UndefOr[js.typedarray.ArrayBuffer] = js.undefined
+    /**
+      * @param {WebGLRenderingContext} context The rendering context.
+      * @param {import("../../Map.js").FrameState} frameState Frame state.
+      * @protected
+      */
+    /* protected */ def postRender(context: WebGLRenderingContext, frameState: FrameState): Unit = js.native
     
-    var renderInstructions: js.typedarray.ArrayBuffer
+    /**
+      * @param {WebGLRenderingContext} context The rendering context.
+      * @param {import("../../Map.js").FrameState} frameState Frame state.
+      * @protected
+      */
+    /* protected */ def preRender(context: WebGLRenderingContext, frameState: FrameState): Unit = js.native
     
-    var `type`: WebGLWorkerMessageType
+    /**
+      * Determine whether renderFrame should be called.
+      * @param {import("../../Map.js").FrameState} frameState Frame state.
+      * @return {boolean} Layer is ready to be rendered.
+      * @protected
+      */
+    /* protected */ def prepareFrameInternal(frameState: FrameState): Boolean = js.native
     
-    var vertexBuffer: js.UndefOr[js.typedarray.ArrayBuffer] = js.undefined
-  }
-  object WebGLWorkerGenerateBuffersMessage {
+    /**
+      * @protected
+      */
+    /* protected */ def removeHelper(): Unit = js.native
     
-    inline def apply(renderInstructions: js.typedarray.ArrayBuffer, `type`: WebGLWorkerMessageType): WebGLWorkerGenerateBuffersMessage = {
-      val __obj = js.Dynamic.literal(renderInstructions = renderInstructions.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-      __obj.asInstanceOf[WebGLWorkerGenerateBuffersMessage]
-    }
+    /**
+      * Reset options (only handles uniforms).
+      * @param {Options} options Options.
+      */
+    def reset(options: Options): Unit = js.native
     
-    @scala.inline
-    implicit open class MutableBuilder[Self <: WebGLWorkerGenerateBuffersMessage] (val x: Self) extends AnyVal {
-      
-      inline def setCustomAttributesCount(value: Double): Self = StObject.set(x, "customAttributesCount", value.asInstanceOf[js.Any])
-      
-      inline def setCustomAttributesCountUndefined: Self = StObject.set(x, "customAttributesCount", js.undefined)
-      
-      inline def setIndexBuffer(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "indexBuffer", value.asInstanceOf[js.Any])
-      
-      inline def setIndexBufferUndefined: Self = StObject.set(x, "indexBuffer", js.undefined)
-      
-      inline def setRenderInstructions(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "renderInstructions", value.asInstanceOf[js.Any])
-      
-      inline def setType(value: WebGLWorkerMessageType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-      
-      inline def setVertexBuffer(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "vertexBuffer", value.asInstanceOf[js.Any])
-      
-      inline def setVertexBufferUndefined: Self = StObject.set(x, "vertexBuffer", js.undefined)
-    }
+    /**
+      * @private
+      */
+    /* private */ var uniforms_ : Any = js.native
   }
 }

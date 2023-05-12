@@ -9,8 +9,4 @@ object sourceCommonMod {
   @JSImport("ol/source/common", "DEFAULT_WMS_VERSION")
   @js.native
   val DEFAULT_WMS_VERSION: String = js.native
-  
-  @JSImport("ol/source/common", "IMAGE_SMOOTHING_DISABLED")
-  @js.native
-  val IMAGE_SMOOTHING_DISABLED: Any = js.native
 }

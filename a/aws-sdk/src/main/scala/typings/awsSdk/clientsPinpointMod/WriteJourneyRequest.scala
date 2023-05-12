@@ -62,7 +62,7 @@ trait WriteJourneyRequest extends StObject {
   var RefreshFrequency: js.UndefOr[string] = js.undefined
   
   /**
-    * Specifies whether a journey should be refreshed on segment update.
+    * Indicates whether the journey participants should be refreshed when a segment is updated.
     */
   var RefreshOnSegmentUpdate: js.UndefOr[boolean] = js.undefined
   
@@ -72,7 +72,7 @@ trait WriteJourneyRequest extends StObject {
   var Schedule: js.UndefOr[JourneySchedule] = js.undefined
   
   /**
-    * Indicates if journey have Advance Quiet Time (OpenHours and ClosedDays). This flag should be set to true in order to allow (OpenHours and ClosedDays)
+    * Indicates if journey has Advance Quiet Time enabled. This flag should be set to true in order to allow using OpenHours and ClosedDays.
     */
   var SendingSchedule: js.UndefOr[boolean] = js.undefined
   

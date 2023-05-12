@@ -12,7 +12,6 @@ open class Proximity protected () extends StObject {
   def this(option: Double) = this()
   def this(option: ProximityOption) = this()
   
-  def on(event: String, cb: js.Function0[Unit]): this.type = js.native
   @JSName("on")
   def on_change(event: change, cb: js.Function0[Unit]): this.type = js.native
   @JSName("on")

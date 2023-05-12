@@ -28,6 +28,14 @@ object anon {
     var asObject: js.UndefOr[Boolean] = js.undefined
     
     /**
+      * The disabled option will disable logging in browser if set to true, by default it is set to false.
+      *
+      * @example
+      * const pino = require('pino')({browser: {disabled: true}})
+      */
+    var disabled: js.UndefOr[Boolean] = js.undefined
+    
+    /**
       * The serializers provided to `pino` are ignored by default in the browser, including the standard
       * serializers provided with Pino. Since the default destination for log messages is the console, values
       * such as `Error` objects are enhanced for inspection, which they otherwise wouldn't be if the Error
@@ -154,6 +162,10 @@ object anon {
       inline def setAsObject(value: Boolean): Self = StObject.set(x, "asObject", value.asInstanceOf[js.Any])
       
       inline def setAsObjectUndefined: Self = StObject.set(x, "asObject", js.undefined)
+      
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
       inline def setSerialize(value: Boolean | js.Array[String]): Self = StObject.set(x, "serialize", value.asInstanceOf[js.Any])
       
@@ -423,6 +435,13 @@ object anon {
     
     var execArgv: js.UndefOr[js.Array[String]] = js.undefined
     
+    /**
+      * An optional `name` to be appended to the worker title
+      * for debuggin/identification purposes, making the final title as
+      * `[worker ${id}] ${name}`.
+      */
+    var name: js.UndefOr[String] = js.undefined
+    
     var resourceLimits: js.UndefOr[ResourceLimits_] = js.undefined
     
     var stderr: js.UndefOr[Boolean] = js.undefined
@@ -476,6 +495,10 @@ object anon {
       inline def setExecArgvUndefined: Self = StObject.set(x, "execArgv", js.undefined)
       
       inline def setExecArgvVarargs(value: String*): Self = StObject.set(x, "execArgv", js.Array(value*))
+      
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
       inline def setResourceLimits(value: ResourceLimits_): Self = StObject.set(x, "resourceLimits", value.asInstanceOf[js.Any])
       

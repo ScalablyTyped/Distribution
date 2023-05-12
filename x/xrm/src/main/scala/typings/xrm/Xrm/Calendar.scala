@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Interface for the DateFormattingInfo.calendar field
+  * Interface for the {@link DateFormattingInfo DateFormattingInfo.calendar} field
   */
 trait Calendar extends StObject {
   

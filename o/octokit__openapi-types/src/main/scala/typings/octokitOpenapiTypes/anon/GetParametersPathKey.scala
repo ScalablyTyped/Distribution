@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GetParametersPathKey extends StObject {
   
+  /** Get a code of conduct */
   var get: ParametersPathKey
 }
 object GetParametersPathKey {

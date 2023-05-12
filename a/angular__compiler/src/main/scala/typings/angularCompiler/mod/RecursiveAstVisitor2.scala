@@ -23,6 +23,8 @@ trait RecursiveAstVisitor2
   
   def visitMapType(`type`: MapType, context: Any): Any
   
+  def visitTransplantedType(`type`: TransplantedType[Any], context: Any): Any
+  
   def visitType(ast: Type, context: Any): Any
 }
 object RecursiveAstVisitor2 {
@@ -56,6 +58,7 @@ object RecursiveAstVisitor2 {
     visitReadVarExpr: (ReadVarExpr, Any) => Any,
     visitReturnStmt: (ReturnStatement, Any) => Any,
     visitTaggedTemplateExpr: (TaggedTemplateExpr, Any) => Any,
+    visitTransplantedType: (TransplantedType[Any], Any) => Any,
     visitType: (Type, Any) => Any,
     visitTypeofExpr: (TypeofExpr, Any) => Any,
     visitUnaryOperatorExpr: (UnaryOperatorExpr, Any) => Any,
@@ -64,7 +67,7 @@ object RecursiveAstVisitor2 {
     visitWritePropExpr: (WritePropExpr, Any) => Any,
     visitWriteVarExpr: (WriteVarExpr, Any) => Any
   ): RecursiveAstVisitor2 = {
-    val __obj = js.Dynamic.literal(visitAllExpressions = js.Any.fromFunction2(visitAllExpressions), visitAllStatements = js.Any.fromFunction2(visitAllStatements), visitArrayType = js.Any.fromFunction2(visitArrayType), visitBinaryOperatorExpr = js.Any.fromFunction2(visitBinaryOperatorExpr), visitBuiltinType = js.Any.fromFunction2(visitBuiltinType), visitCommaExpr = js.Any.fromFunction2(visitCommaExpr), visitConditionalExpr = js.Any.fromFunction2(visitConditionalExpr), visitDeclareFunctionStmt = js.Any.fromFunction2(visitDeclareFunctionStmt), visitDeclareVarStmt = js.Any.fromFunction2(visitDeclareVarStmt), visitExpression = js.Any.fromFunction2(visitExpression), visitExpressionStmt = js.Any.fromFunction2(visitExpressionStmt), visitExpressionType = js.Any.fromFunction2(visitExpressionType), visitExternalExpr = js.Any.fromFunction2(visitExternalExpr), visitFunctionExpr = js.Any.fromFunction2(visitFunctionExpr), visitIfStmt = js.Any.fromFunction2(visitIfStmt), visitInstantiateExpr = js.Any.fromFunction2(visitInstantiateExpr), visitInvokeFunctionExpr = js.Any.fromFunction2(visitInvokeFunctionExpr), visitLiteralArrayExpr = js.Any.fromFunction2(visitLiteralArrayExpr), visitLiteralExpr = js.Any.fromFunction2(visitLiteralExpr), visitLiteralMapExpr = js.Any.fromFunction2(visitLiteralMapExpr), visitLocalizedString = js.Any.fromFunction2(visitLocalizedString), visitMapType = js.Any.fromFunction2(visitMapType), visitNotExpr = js.Any.fromFunction2(visitNotExpr), visitReadKeyExpr = js.Any.fromFunction2(visitReadKeyExpr), visitReadPropExpr = js.Any.fromFunction2(visitReadPropExpr), visitReadVarExpr = js.Any.fromFunction2(visitReadVarExpr), visitReturnStmt = js.Any.fromFunction2(visitReturnStmt), visitTaggedTemplateExpr = js.Any.fromFunction2(visitTaggedTemplateExpr), visitType = js.Any.fromFunction2(visitType), visitTypeofExpr = js.Any.fromFunction2(visitTypeofExpr), visitUnaryOperatorExpr = js.Any.fromFunction2(visitUnaryOperatorExpr), visitWrappedNodeExpr = js.Any.fromFunction2(visitWrappedNodeExpr), visitWriteKeyExpr = js.Any.fromFunction2(visitWriteKeyExpr), visitWritePropExpr = js.Any.fromFunction2(visitWritePropExpr), visitWriteVarExpr = js.Any.fromFunction2(visitWriteVarExpr))
+    val __obj = js.Dynamic.literal(visitAllExpressions = js.Any.fromFunction2(visitAllExpressions), visitAllStatements = js.Any.fromFunction2(visitAllStatements), visitArrayType = js.Any.fromFunction2(visitArrayType), visitBinaryOperatorExpr = js.Any.fromFunction2(visitBinaryOperatorExpr), visitBuiltinType = js.Any.fromFunction2(visitBuiltinType), visitCommaExpr = js.Any.fromFunction2(visitCommaExpr), visitConditionalExpr = js.Any.fromFunction2(visitConditionalExpr), visitDeclareFunctionStmt = js.Any.fromFunction2(visitDeclareFunctionStmt), visitDeclareVarStmt = js.Any.fromFunction2(visitDeclareVarStmt), visitExpression = js.Any.fromFunction2(visitExpression), visitExpressionStmt = js.Any.fromFunction2(visitExpressionStmt), visitExpressionType = js.Any.fromFunction2(visitExpressionType), visitExternalExpr = js.Any.fromFunction2(visitExternalExpr), visitFunctionExpr = js.Any.fromFunction2(visitFunctionExpr), visitIfStmt = js.Any.fromFunction2(visitIfStmt), visitInstantiateExpr = js.Any.fromFunction2(visitInstantiateExpr), visitInvokeFunctionExpr = js.Any.fromFunction2(visitInvokeFunctionExpr), visitLiteralArrayExpr = js.Any.fromFunction2(visitLiteralArrayExpr), visitLiteralExpr = js.Any.fromFunction2(visitLiteralExpr), visitLiteralMapExpr = js.Any.fromFunction2(visitLiteralMapExpr), visitLocalizedString = js.Any.fromFunction2(visitLocalizedString), visitMapType = js.Any.fromFunction2(visitMapType), visitNotExpr = js.Any.fromFunction2(visitNotExpr), visitReadKeyExpr = js.Any.fromFunction2(visitReadKeyExpr), visitReadPropExpr = js.Any.fromFunction2(visitReadPropExpr), visitReadVarExpr = js.Any.fromFunction2(visitReadVarExpr), visitReturnStmt = js.Any.fromFunction2(visitReturnStmt), visitTaggedTemplateExpr = js.Any.fromFunction2(visitTaggedTemplateExpr), visitTransplantedType = js.Any.fromFunction2(visitTransplantedType), visitType = js.Any.fromFunction2(visitType), visitTypeofExpr = js.Any.fromFunction2(visitTypeofExpr), visitUnaryOperatorExpr = js.Any.fromFunction2(visitUnaryOperatorExpr), visitWrappedNodeExpr = js.Any.fromFunction2(visitWrappedNodeExpr), visitWriteKeyExpr = js.Any.fromFunction2(visitWriteKeyExpr), visitWritePropExpr = js.Any.fromFunction2(visitWritePropExpr), visitWriteVarExpr = js.Any.fromFunction2(visitWriteVarExpr))
     __obj.asInstanceOf[RecursiveAstVisitor2]
   }
   
@@ -84,6 +87,8 @@ object RecursiveAstVisitor2 {
     inline def setVisitExpressionType(value: (ExpressionType, Any) => Any): Self = StObject.set(x, "visitExpressionType", js.Any.fromFunction2(value))
     
     inline def setVisitMapType(value: (MapType, Any) => Any): Self = StObject.set(x, "visitMapType", js.Any.fromFunction2(value))
+    
+    inline def setVisitTransplantedType(value: (TransplantedType[Any], Any) => Any): Self = StObject.set(x, "visitTransplantedType", js.Any.fromFunction2(value))
     
     inline def setVisitType(value: (Type, Any) => Any): Self = StObject.set(x, "visitType", js.Any.fromFunction2(value))
   }

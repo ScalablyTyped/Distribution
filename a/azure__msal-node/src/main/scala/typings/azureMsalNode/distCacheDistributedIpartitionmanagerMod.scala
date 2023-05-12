@@ -18,8 +18,6 @@ object distCacheDistributedIpartitionmanagerMod {
       * this function would return the homeAccountId from
       * the provided AccountEntity
       *
-      * Visit the [RedisTestApp](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/samples/msal-node-samples/RedisTestApp) to see it in action.
-      *
       * @param accountEntity: AccountEntity
       * @returns Promise<string>
       */
@@ -33,8 +31,6 @@ object distCacheDistributedIpartitionmanagerMod {
       * information for each user using the homeAccountId and thus
       * this function would return the homeAccountId for
       * the user in question
-      *
-      * Visit the [RedisTestApp](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/samples/msal-node-samples/RedisTestApp) to see it in action.
       *
       * @returns Promise<string>
       */

@@ -2,6 +2,7 @@ package typings.babylonjs
 
 import typings.babylonjs.anon.DisableAnimation
 import typings.babylonjs.collisionsPickingInfoMod.PickingInfo
+import typings.babylonjs.mathsMathDotcolorMod.Color4
 import typings.babylonjs.mathsMathDotvectorMod.Vector3
 import typings.babylonjs.meshesAbstractMeshMod.AbstractMesh
 import typings.babylonjs.miscObservableMod.Observable
@@ -29,6 +30,10 @@ object xRFeaturesWebXRControllerTeleportationMod {
     
     /* private */ var _attachController: Any = js.native
     
+    /* private */ var _blockedRayColor: Any = js.native
+    
+    /* private */ var _cachedColor4White: Any = js.native
+    
     /* private */ var _controllers: Any = js.native
     
     /* private */ var _createDefaultTargetMesh: Any = js.native
@@ -36,6 +41,8 @@ object xRFeaturesWebXRControllerTeleportationMod {
     /* private */ var _currentTeleportationControllerId: Any = js.native
     
     /* private */ var _detachController: Any = js.native
+    
+    /* private */ var _disposeBezierCurve: Any = js.native
     
     /* private */ var _findClosestSnapPointWithRadius: Any = js.native
     
@@ -221,6 +228,12 @@ object xRFeaturesWebXRControllerTeleportationMod {
   trait IWebXRTeleportationOptions extends StObject {
     
     /**
+      * Color of the teleportation ray when it is blocked by a mesh in the pickBlockerMeshes array
+      * Defaults to red.
+      */
+    var blockedRayColor: js.UndefOr[Color4] = js.undefined
+    
+    /**
       * if provided, this scene will be used to render meshes.
       */
     var customUtilityLayerScene: js.UndefOr[Scene] = js.undefined
@@ -315,6 +328,10 @@ object xRFeaturesWebXRControllerTeleportationMod {
     
     @scala.inline
     implicit open class MutableBuilder[Self <: IWebXRTeleportationOptions] (val x: Self) extends AnyVal {
+      
+      inline def setBlockedRayColor(value: Color4): Self = StObject.set(x, "blockedRayColor", value.asInstanceOf[js.Any])
+      
+      inline def setBlockedRayColorUndefined: Self = StObject.set(x, "blockedRayColor", js.undefined)
       
       inline def setCustomUtilityLayerScene(value: Scene): Self = StObject.set(x, "customUtilityLayerScene", value.asInstanceOf[js.Any])
       

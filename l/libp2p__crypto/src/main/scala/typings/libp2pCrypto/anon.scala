@@ -4,11 +4,11 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Instantiable2
 import typings.libp2pCrypto.distSrcKeysEd25519ClassMod.Ed25519PrivateKey
 import typings.libp2pCrypto.distSrcKeysEd25519ClassMod.Ed25519PublicKey
+import typings.libp2pCrypto.distSrcKeysKeysMod.KeyType
 import typings.libp2pCrypto.distSrcKeysRsaClassMod.RsaPrivateKey
 import typings.libp2pCrypto.distSrcKeysRsaClassMod.RsaPublicKey
 import typings.libp2pCrypto.distSrcKeysSecp256k1ClassMod.Secp256k1PrivateKey
 import typings.libp2pCrypto.distSrcKeysSecp256k1ClassMod.Secp256k1PublicKey
-import typings.node.bufferMod.global.Buffer
 import typings.std.JsonWebKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -52,45 +52,15 @@ object anon {
     }
   }
   
-  trait CipherKey extends StObject {
-    
-    var cipherKey: js.typedarray.Uint8Array
-    
-    var iv: js.typedarray.Uint8Array
-    
-    var macKey: js.typedarray.Uint8Array
-  }
-  object CipherKey {
-    
-    inline def apply(
-      cipherKey: js.typedarray.Uint8Array,
-      iv: js.typedarray.Uint8Array,
-      macKey: js.typedarray.Uint8Array
-    ): CipherKey = {
-      val __obj = js.Dynamic.literal(cipherKey = cipherKey.asInstanceOf[js.Any], iv = iv.asInstanceOf[js.Any], macKey = macKey.asInstanceOf[js.Any])
-      __obj.asInstanceOf[CipherKey]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: CipherKey] (val x: Self) extends AnyVal {
-      
-      inline def setCipherKey(value: js.typedarray.Uint8Array): Self = StObject.set(x, "cipherKey", value.asInstanceOf[js.Any])
-      
-      inline def setIv(value: js.typedarray.Uint8Array): Self = StObject.set(x, "iv", value.asInstanceOf[js.Any])
-      
-      inline def setMacKey(value: js.typedarray.Uint8Array): Self = StObject.set(x, "macKey", value.asInstanceOf[js.Any])
-    }
-  }
-  
   trait Digest extends StObject {
     
-    def digest(data: js.typedarray.Uint8Array): js.Promise[Buffer]
+    def digest(data: js.typedarray.Uint8Array): js.Promise[js.typedarray.Uint8Array]
     
     var length: Double
   }
   object Digest {
     
-    inline def apply(digest: js.typedarray.Uint8Array => js.Promise[Buffer], length: Double): Digest = {
+    inline def apply(digest: js.typedarray.Uint8Array => js.Promise[js.typedarray.Uint8Array], length: Double): Digest = {
       val __obj = js.Dynamic.literal(digest = js.Any.fromFunction1(digest), length = length.asInstanceOf[js.Any])
       __obj.asInstanceOf[Digest]
     }
@@ -98,97 +68,63 @@ object anon {
     @scala.inline
     implicit open class MutableBuilder[Self <: Digest] (val x: Self) extends AnyVal {
       
-      inline def setDigest(value: js.typedarray.Uint8Array => js.Promise[Buffer]): Self = StObject.set(x, "digest", js.Any.fromFunction1(value))
-      
-      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait K1 extends StObject {
-    
-    var k1: CipherKey
-    
-    var k2: CipherKey
-  }
-  object K1 {
-    
-    inline def apply(k1: CipherKey, k2: CipherKey): K1 = {
-      val __obj = js.Dynamic.literal(k1 = k1.asInstanceOf[js.Any], k2 = k2.asInstanceOf[js.Any])
-      __obj.asInstanceOf[K1]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: K1] (val x: Self) extends AnyVal {
-      
-      inline def setK1(value: CipherKey): Self = StObject.set(x, "k1", value.asInstanceOf[js.Any])
-      
-      inline def setK2(value: CipherKey): Self = StObject.set(x, "k2", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait Length extends StObject {
-    
-    def digest(data: js.typedarray.Uint8Array): js.Promise[js.typedarray.Uint8Array]
-    
-    var length: Double
-  }
-  object Length {
-    
-    inline def apply(digest: js.typedarray.Uint8Array => js.Promise[js.typedarray.Uint8Array], length: Double): Length = {
-      val __obj = js.Dynamic.literal(digest = js.Any.fromFunction1(digest), length = length.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Length]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: Length] (val x: Self) extends AnyVal {
-      
       inline def setDigest(value: js.typedarray.Uint8Array => js.Promise[js.typedarray.Uint8Array]): Self = StObject.set(x, "digest", js.Any.fromFunction1(value))
       
       inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
   }
   
-  trait PrivateKey extends StObject {
+  /* Inlined std.Partial<@libp2p/crypto.@libp2p/crypto/dist/src/keys/keys.PrivateKey> */
+  trait PartialPrivateKey extends StObject {
     
-    var privateKey: js.typedarray.Uint8Array
+    var Data: js.UndefOr[js.typedarray.Uint8Array] = js.undefined
     
-    var publicKey: js.typedarray.Uint8Array
+    var Type: js.UndefOr[KeyType] = js.undefined
   }
-  object PrivateKey {
+  object PartialPrivateKey {
     
-    inline def apply(privateKey: js.typedarray.Uint8Array, publicKey: js.typedarray.Uint8Array): PrivateKey = {
-      val __obj = js.Dynamic.literal(privateKey = privateKey.asInstanceOf[js.Any], publicKey = publicKey.asInstanceOf[js.Any])
-      __obj.asInstanceOf[PrivateKey]
+    inline def apply(): PartialPrivateKey = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[PartialPrivateKey]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: PrivateKey] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: PartialPrivateKey] (val x: Self) extends AnyVal {
       
-      inline def setPrivateKey(value: js.typedarray.Uint8Array): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
+      inline def setData(value: js.typedarray.Uint8Array): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
       
-      inline def setPublicKey(value: js.typedarray.Uint8Array): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
+      inline def setDataUndefined: Self = StObject.set(x, "Data", js.undefined)
+      
+      inline def setType(value: KeyType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+      
+      inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
     }
   }
   
-  trait PublicKey extends StObject {
+  /* Inlined std.Partial<@libp2p/crypto.@libp2p/crypto/dist/src/keys/keys.PublicKey> */
+  trait PartialPublicKey extends StObject {
     
-    var privateKey: JsonWebKey
+    var Data: js.UndefOr[js.typedarray.Uint8Array] = js.undefined
     
-    var publicKey: JsonWebKey
+    var Type: js.UndefOr[KeyType] = js.undefined
   }
-  object PublicKey {
+  object PartialPublicKey {
     
-    inline def apply(privateKey: JsonWebKey, publicKey: JsonWebKey): PublicKey = {
-      val __obj = js.Dynamic.literal(privateKey = privateKey.asInstanceOf[js.Any], publicKey = publicKey.asInstanceOf[js.Any])
-      __obj.asInstanceOf[PublicKey]
+    inline def apply(): PartialPublicKey = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[PartialPublicKey]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: PublicKey] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: PartialPublicKey] (val x: Self) extends AnyVal {
       
-      inline def setPrivateKey(value: JsonWebKey): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
+      inline def setData(value: js.typedarray.Uint8Array): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
       
-      inline def setPublicKey(value: JsonWebKey): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
+      inline def setDataUndefined: Self = StObject.set(x, "Data", js.undefined)
+      
+      inline def setType(value: KeyType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+      
+      inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
     }
   }
   
@@ -357,24 +293,6 @@ object anon {
       inline def setUnmarshalSecp256k1PrivateKey(value: js.typedarray.Uint8Array => Secp256k1PrivateKey): Self = StObject.set(x, "unmarshalSecp256k1PrivateKey", js.Any.fromFunction1(value))
       
       inline def setUnmarshalSecp256k1PublicKey(value: js.typedarray.Uint8Array => Secp256k1PublicKey): Self = StObject.set(x, "unmarshalSecp256k1PublicKey", js.Any.fromFunction1(value))
-    }
-  }
-  
-  trait Update extends StObject {
-    
-    def update(data: js.typedarray.Uint8Array): js.typedarray.Uint8Array
-  }
-  object Update {
-    
-    inline def apply(update: js.typedarray.Uint8Array => js.typedarray.Uint8Array): Update = {
-      val __obj = js.Dynamic.literal(update = js.Any.fromFunction1(update))
-      __obj.asInstanceOf[Update]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: Update] (val x: Self) extends AnyVal {
-      
-      inline def setUpdate(value: js.typedarray.Uint8Array => js.typedarray.Uint8Array): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
     }
   }
 }

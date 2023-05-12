@@ -1,5 +1,8 @@
 package typings.std
 
+import typings.std.stdInts.`0`
+import typings.std.stdInts.`1`
+import typings.std.stdInts.`2`
 import typings.std.stdStrings.error
 import typings.std.stdStrings.message
 import typings.std.stdStrings.open
@@ -13,13 +16,13 @@ trait EventSource
      with EventTarget {
   
   /* standard dom */
-  val CLOSED: Double = js.native
+  val CLOSED: `2` = js.native
   
   /* standard dom */
-  val CONNECTING: Double = js.native
+  val CONNECTING: `0` = js.native
   
   /* standard dom */
-  val OPEN: Double = js.native
+  val OPEN: `1` = js.native
   
   /* standard dom */
   def addEventListener(

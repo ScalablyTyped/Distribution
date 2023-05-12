@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TypeofSourceCreateParams extends StObject {
   
-  val Mandate: TypeofMandateAcceptance
+  val Mandate: TypeofMandate
   
   val Receiver: Any
   
@@ -14,7 +14,7 @@ trait TypeofSourceCreateParams extends StObject {
 }
 object TypeofSourceCreateParams {
   
-  inline def apply(Mandate: TypeofMandateAcceptance, Receiver: Any, SourceOrder: TypeofSourceOrder): TypeofSourceCreateParams = {
+  inline def apply(Mandate: TypeofMandate, Receiver: Any, SourceOrder: TypeofSourceOrder): TypeofSourceCreateParams = {
     val __obj = js.Dynamic.literal(Mandate = Mandate.asInstanceOf[js.Any], Receiver = Receiver.asInstanceOf[js.Any], SourceOrder = SourceOrder.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofSourceCreateParams]
   }
@@ -22,7 +22,7 @@ object TypeofSourceCreateParams {
   @scala.inline
   implicit open class MutableBuilder[Self <: TypeofSourceCreateParams] (val x: Self) extends AnyVal {
     
-    inline def setMandate(value: TypeofMandateAcceptance): Self = StObject.set(x, "Mandate", value.asInstanceOf[js.Any])
+    inline def setMandate(value: TypeofMandate): Self = StObject.set(x, "Mandate", value.asInstanceOf[js.Any])
     
     inline def setReceiver(value: Any): Self = StObject.set(x, "Receiver", value.asInstanceOf[js.Any])
     

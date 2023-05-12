@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BreakStatement
   extends StObject
      with Statement
+     with FlowContainer
      with BreakOrContinueStatement
      with HasJSDoc {
   

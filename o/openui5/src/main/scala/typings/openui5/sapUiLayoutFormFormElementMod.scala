@@ -125,6 +125,7 @@ object sapUiLayoutFormFormElementMod {
     
     /**
       * @SINCE 1.74.0
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Sets the editable state of the `FormElement`.
       *
@@ -235,6 +236,8 @@ object sapUiLayoutFormFormElementMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Labels inside of a Form must be invalidated if "editable" changed on Form
       */
     def invalidateLabel(): Unit = js.native

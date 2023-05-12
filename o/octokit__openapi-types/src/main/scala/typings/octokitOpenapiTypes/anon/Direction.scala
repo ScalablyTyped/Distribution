@@ -8,20 +8,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Direction extends StObject {
   
-  /** To return the oldest accounts first, set to `asc`. Ignored without the `sort` parameter. */
+  /** @description To return the oldest accounts first, set to `asc`. Ignored without the `sort` parameter. */
   var direction: js.UndefOr[asc | desc] = js.undefined
   
-  /** Page number of the results to fetch. */
   var page: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['page'] */ js.Any
   ] = js.undefined
   
-  /** The number of results per page (max 100). */
   var per_page: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['per-page'] */ js.Any
   ] = js.undefined
   
-  /** The property to sort the results by. `created` means when the repository was starred. `updated` means when the repository was last pushed to. */
   var sort: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['sort'] */ js.Any
   ] = js.undefined

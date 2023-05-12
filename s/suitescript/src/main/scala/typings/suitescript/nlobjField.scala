@@ -11,7 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @classDescription Core descriptor for fields used to define records and also used to build pages and portlets.
   * @return {nlobjField}
-  * @constructor
   */
 @js.native
 trait nlobjField

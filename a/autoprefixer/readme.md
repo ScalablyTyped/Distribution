@@ -1,7 +1,7 @@
 
 # Scala.js typings for autoprefixer
 
-Typings are for version 10.4.13
+Typings are for version 10.4.14
 
 ## Library description:
 Parse CSS and add vendor prefixes to CSS rules using values from the Can I Use website

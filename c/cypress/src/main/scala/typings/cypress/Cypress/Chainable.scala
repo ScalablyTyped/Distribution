@@ -5,6 +5,7 @@ import typings.cypress.JQuery.Selector
 import typings.cypress.Mocha.Runnable
 import typings.cypress.Mocha.Test
 import typings.cypress.anon.Args
+import typings.cypress.anon.PartialAsOptions
 import typings.cypress.anon.PartialBlurOptions
 import typings.cypress.anon.PartialCheckOptions
 import typings.cypress.anon.PartialClearOptions
@@ -17,12 +18,10 @@ import typings.cypress.anon.PartialLoggableTimeoutablIncludeShadowDom
 import typings.cypress.anon.PartialLoggableTimeoutablLog
 import typings.cypress.anon.PartialLoggableTimeoutablTimeout
 import typings.cypress.anon.PartialRequestOptions
-import typings.cypress.anon.PartialRouteOptions
 import typings.cypress.anon.PartialScrollIntoViewOpti
 import typings.cypress.anon.PartialScrollToOptions
 import typings.cypress.anon.PartialSelectFileOptions
 import typings.cypress.anon.PartialSelectOptions
-import typings.cypress.anon.PartialServerOptions
 import typings.cypress.anon.PartialSetCookieOptions
 import typings.cypress.anon.PartialTimeoutable
 import typings.cypress.anon.PartialTriggerOptionsObje
@@ -3919,15 +3918,14 @@ trait Chainable[Subject] extends StObject {
     * @see https://on.cypress.io/variables-and-aliases
     * @see https://on.cypress.io/get
     * @example
-    ```
-    // Get the aliased 'todos' elements
-    cy.get('ul#todos').as('todos')
-    //...hack hack hack...
-    // later retrieve the todos
-    cy.get('@todos')
-    ```
+    *    // Get the aliased 'todos' elements
+    *    cy.get('ul#todos').as('todos')
+    *
+    *    // later retrieve the todos
+    *    cy.get('@todos')
     */
   def as(alias: String): Chainable[Subject] = js.native
+  def as(alias: String, options: PartialAsOptions): Chainable[Subject] = js.native
   
   /**
     * Blur a focused element. This element must currently be in focus.
@@ -4430,8 +4428,46 @@ trait Chainable[Subject] extends StObject {
   def clear(options: PartialClearOptions): Chainable[Subject] = js.native
   
   /**
-    * Clear a specific browser cookie for the current superdomain or for the domain specified.
-    * Cypress automatically clears all cookies before each test to prevent state from being shared across tests. You shouldn't need to use this command unless you're using it to clear a specific cookie inside a single test.
+    * Clear all browser cookies.
+    *
+    * Cypress automatically clears all cookies _before_ each test to prevent
+    * state from being shared across tests when test isolation is enabled.
+    * You shouldn't need to use this command unless you're using it to clear
+    * all cookie inside a single test or test isolation is disabled.
+    *
+    * @see https://on.cypress.io/clearallcookies
+    */
+  def clearAllCookies(): Chainable[Null] = js.native
+  def clearAllCookies(options: PartialLoggableTimeoutabl): Chainable[Null] = js.native
+  
+  /**
+    * Clear local storage for all origins.
+    *
+    * Cypress automatically clears all local storage _before_ each test to
+    * prevent state from being shared across tests when test isolation
+    * is enabled. You shouldn't need to use this command unless you're using it
+    * to clear localStorage inside a single test or test isolation is disabled.
+    *
+    * @see https://on.cypress.io/clearalllocalstorage
+    */
+  def clearAllLocalStorage(): Chainable[Null] = js.native
+  def clearAllLocalStorage(options: PartialLoggable): Chainable[Null] = js.native
+  
+  /**
+    * Clear session storage for all origins.
+    *
+    * @see https://on.cypress.io/clearallsessionstorage
+    */
+  def clearAllSessionStorage(): Chainable[Null] = js.native
+  def clearAllSessionStorage(options: PartialLoggable): Chainable[Null] = js.native
+  
+  /**
+    * Clear a specific browser cookie for a domain.
+    *
+    * Cypress automatically clears all cookies _before_ each test to prevent
+    * state from being shared across tests when test isolation is enabled.
+    * You shouldn't need to use this command unless you're using it to clear
+    * a specific cookie inside a single test or test isolation is disabled.
     *
     * @see https://on.cypress.io/clearcookie
     */
@@ -4439,8 +4475,12 @@ trait Chainable[Subject] extends StObject {
   def clearCookie(name: String, options: CookieOptions): Chainable[Null] = js.native
   
   /**
-    * Clear all browser cookies for the current superdomain or for the domain specified.
-    * Cypress automatically clears all cookies before each test to prevent state from being shared across tests. You shouldn't need to use this command unless you're using it to clear all cookies or specific cookies inside a single test.
+    * Clear browser cookies for a domain.
+    *
+    * Cypress automatically clears all cookies _before_ each test to prevent
+    * state from being shared across tests when test isolation is enabled.
+    * You shouldn't need to use this command unless you're using it to clear
+    * specific cookies inside a single test or test isolation is disabled.
     *
     * @see https://on.cypress.io/clearcookies
     */
@@ -4448,10 +4488,12 @@ trait Chainable[Subject] extends StObject {
   def clearCookies(options: CookieOptions): Chainable[Null] = js.native
   
   /**
-    * Clear data in local storage.
-    * Cypress automatically runs this command before each test to prevent state from being
-    * shared across tests. You shouldn't need to use this command unless you're using it
-    * to clear localStorage inside a single test. Yields `localStorage` object.
+    * Clear data in local storage for the current origin.
+    *
+    * Cypress automatically clears all local storage _before_ each test to
+    * prevent state from being shared across tests when test isolation
+    * is enabled. You shouldn't need to use this command unless you're using it
+    * to clear localStorage inside a single test or test isolation is disabled.
     *
     * @see https://on.cypress.io/clearlocalstorage
     * @param {string} [key] - name of a particular item to remove (optional).
@@ -7557,7 +7599,31 @@ trait Chainable[Subject] extends StObject {
   def get[S](alias: String, options: PartialLoggableTimeoutablTimeout): Chainable[S] = js.native
   
   /**
-    * Get a browser cookie by its name for the current superdomain or for the domain specified.
+    * Get all browser cookies.
+    *
+    * @see https://on.cypress.io/getallcookies
+    */
+  def getAllCookies(): Chainable[js.Array[Cookie]] = js.native
+  def getAllCookies(options: PartialLoggableTimeoutabl): Chainable[js.Array[Cookie]] = js.native
+  
+  /**
+    * Get local storage for all origins.
+    *
+    * @see https://on.cypress.io/getalllocalstorage
+    */
+  def getAllLocalStorage(): Chainable[StorageByOrigin] = js.native
+  def getAllLocalStorage(options: PartialLoggable): Chainable[StorageByOrigin] = js.native
+  
+  /**
+    * Get session storage for all origins.
+    *
+    * @see https://on.cypress.io/getallsessionstorage
+    */
+  def getAllSessionStorage(): Chainable[StorageByOrigin] = js.native
+  def getAllSessionStorage(options: PartialLoggable): Chainable[StorageByOrigin] = js.native
+  
+  /**
+    * Get a browser cookie by its name.
     *
     * @see https://on.cypress.io/getcookie
     */
@@ -7565,7 +7631,7 @@ trait Chainable[Subject] extends StObject {
   def getCookie(name: String, options: CookieOptions): Chainable[Cookie | Null] = js.native
   
   /**
-    * Get all of the browser cookies for the current superdomain or for the domain specified.
+    * Get browser cookies for a domain.
     *
     * @see https://on.cypress.io/getcookies
     */
@@ -8667,15 +8733,23 @@ trait Chainable[Subject] extends StObject {
     *
     * @see https://on.cypress.io/nextuntil
     */
-  def nextUntil[E /* <: HTMLElement */](): Chainable[JQuery[E]] = js.native
-  def nextUntil[E /* <: HTMLElement */](options: PartialLoggableTimeoutabl): Chainable[JQuery[E]] = js.native
+  def nextUntil[E /* <: Node */](element: E): Chainable[JQuery[E]] = js.native
+  def nextUntil[E /* <: Node */](element: E, filter: String): Chainable[JQuery[E]] = js.native
+  def nextUntil[E /* <: Node */](element: E, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[E]] = js.native
+  def nextUntil[E /* <: Node */](element: E, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[E]] = js.native
+  def nextUntil[E /* <: Node */](element: JQuery[E]): Chainable[JQuery[E]] = js.native
+  def nextUntil[E /* <: Node */](element: JQuery[E], filter: String): Chainable[JQuery[E]] = js.native
+  def nextUntil[E /* <: Node */](element: JQuery[E], filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[E]] = js.native
+  def nextUntil[E /* <: Node */](element: JQuery[E], filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[E]] = js.native
   /**
     * Get all following siblings of each DOM element in a set of matched DOM elements up to, but not including, the element provided.
     *
     * @see https://on.cypress.io/nextuntil
     */
-  def nextUntil[E /* <: HTMLElement */](selector: String): Chainable[JQuery[E]] = js.native
-  def nextUntil[E /* <: HTMLElement */](selector: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[E]] = js.native
+  def nextUntil[E /* <: Node */](selector: String): Chainable[JQuery[E]] = js.native
+  def nextUntil[E /* <: Node */](selector: String, filter: String): Chainable[JQuery[E]] = js.native
+  def nextUntil[E /* <: Node */](selector: String, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[E]] = js.native
+  def nextUntil[E /* <: Node */](selector: String, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[E]] = js.native
   /**
     * Get all following siblings of each DOM element in a set of matched DOM elements up to, but not including, the element provided.
     *
@@ -8684,447 +8758,891 @@ trait Chainable[Subject] extends StObject {
   @JSName("nextUntil")
   def nextUntil_a(selector: a): Chainable[JQuery[HTMLAnchorElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_a(selector: a, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLAnchorElement]] = js.native
+  def nextUntil_a(selector: a, filter: String): Chainable[JQuery[HTMLAnchorElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_a(selector: a, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLAnchorElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_a(selector: a, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLAnchorElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_abbr(selector: abbr): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_abbr(selector: abbr, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  def nextUntil_abbr(selector: abbr, filter: String): Chainable[JQuery[HTMLElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_abbr(selector: abbr, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_abbr(selector: abbr, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_address(selector: address): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_address(selector: address, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  def nextUntil_address(selector: address, filter: String): Chainable[JQuery[HTMLElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_address(selector: address, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_address(selector: address, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_area(selector: area): Chainable[JQuery[HTMLAreaElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_area(selector: area, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLAreaElement]] = js.native
+  def nextUntil_area(selector: area, filter: String): Chainable[JQuery[HTMLAreaElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_area(selector: area, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLAreaElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_area(selector: area, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLAreaElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_article(selector: article): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_article(selector: article, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  def nextUntil_article(selector: article, filter: String): Chainable[JQuery[HTMLElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_article(selector: article, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_article(selector: article, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_aside(selector: aside): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_aside(selector: aside, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  def nextUntil_aside(selector: aside, filter: String): Chainable[JQuery[HTMLElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_aside(selector: aside, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_aside(selector: aside, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_audio(selector: audio): Chainable[JQuery[HTMLAudioElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_audio(selector: audio, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLAudioElement]] = js.native
+  def nextUntil_audio(selector: audio, filter: String): Chainable[JQuery[HTMLAudioElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_audio(selector: audio, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLAudioElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_audio(selector: audio, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLAudioElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_b(selector: b): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_b(selector: b, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  def nextUntil_b(selector: b, filter: String): Chainable[JQuery[HTMLElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_b(selector: b, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_b(selector: b, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_base(selector: base_): Chainable[JQuery[HTMLBaseElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_base(selector: base_, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLBaseElement]] = js.native
+  def nextUntil_base(selector: base_, filter: String): Chainable[JQuery[HTMLBaseElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_base(selector: base_, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLBaseElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_base(selector: base_, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLBaseElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_bdi(selector: bdi): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_bdi(selector: bdi, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  def nextUntil_bdi(selector: bdi, filter: String): Chainable[JQuery[HTMLElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_bdi(selector: bdi, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_bdi(selector: bdi, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_bdo(selector: bdo): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_bdo(selector: bdo, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  def nextUntil_bdo(selector: bdo, filter: String): Chainable[JQuery[HTMLElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_bdo(selector: bdo, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_bdo(selector: bdo, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_blockquote(selector: blockquote): Chainable[JQuery[HTMLQuoteElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_blockquote(selector: blockquote, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLQuoteElement]] = js.native
+  def nextUntil_blockquote(selector: blockquote, filter: String): Chainable[JQuery[HTMLQuoteElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_blockquote(selector: blockquote, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLQuoteElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_blockquote(selector: blockquote, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLQuoteElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_body(selector: body): Chainable[JQuery[HTMLBodyElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_body(selector: body, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLBodyElement]] = js.native
+  def nextUntil_body(selector: body, filter: String): Chainable[JQuery[HTMLBodyElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_body(selector: body, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLBodyElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_body(selector: body, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLBodyElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_br(selector: br): Chainable[JQuery[HTMLBRElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_br(selector: br, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLBRElement]] = js.native
+  def nextUntil_br(selector: br, filter: String): Chainable[JQuery[HTMLBRElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_br(selector: br, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLBRElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_br(selector: br, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLBRElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_button(selector: button): Chainable[JQuery[HTMLButtonElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_button(selector: button, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLButtonElement]] = js.native
+  def nextUntil_button(selector: button, filter: String): Chainable[JQuery[HTMLButtonElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_button(selector: button, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLButtonElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_button(selector: button, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLButtonElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_canvas(selector: canvas): Chainable[JQuery[HTMLCanvasElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_canvas(selector: canvas, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLCanvasElement]] = js.native
+  def nextUntil_canvas(selector: canvas, filter: String): Chainable[JQuery[HTMLCanvasElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_canvas(selector: canvas, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLCanvasElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_canvas(selector: canvas, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLCanvasElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_caption(selector: caption): Chainable[JQuery[HTMLTableCaptionElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_caption(selector: caption, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLTableCaptionElement]] = js.native
+  def nextUntil_caption(selector: caption, filter: String): Chainable[JQuery[HTMLTableCaptionElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_caption(selector: caption, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLTableCaptionElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_caption(selector: caption, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLTableCaptionElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_cite(selector: cite): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_cite(selector: cite, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  def nextUntil_cite(selector: cite, filter: String): Chainable[JQuery[HTMLElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_cite(selector: cite, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_cite(selector: cite, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_code(selector: code): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_code(selector: code, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  def nextUntil_code(selector: code, filter: String): Chainable[JQuery[HTMLElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_code(selector: code, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_code(selector: code, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_col(selector: col): Chainable[JQuery[HTMLTableColElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_col(selector: col, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLTableColElement]] = js.native
+  def nextUntil_col(selector: col, filter: String): Chainable[JQuery[HTMLTableColElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_col(selector: col, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLTableColElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_col(selector: col, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLTableColElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_colgroup(selector: colgroup): Chainable[JQuery[HTMLTableColElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_colgroup(selector: colgroup, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLTableColElement]] = js.native
+  def nextUntil_colgroup(selector: colgroup, filter: String): Chainable[JQuery[HTMLTableColElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_colgroup(selector: colgroup, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLTableColElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_colgroup(selector: colgroup, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLTableColElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_data(selector: data): Chainable[JQuery[HTMLDataElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_data(selector: data, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLDataElement]] = js.native
+  def nextUntil_data(selector: data, filter: String): Chainable[JQuery[HTMLDataElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_data(selector: data, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLDataElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_data(selector: data, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLDataElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_datalist(selector: datalist): Chainable[JQuery[HTMLDataListElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_datalist(selector: datalist, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLDataListElement]] = js.native
+  def nextUntil_datalist(selector: datalist, filter: String): Chainable[JQuery[HTMLDataListElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_datalist(selector: datalist, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLDataListElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_datalist(selector: datalist, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLDataListElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_dd(selector: dd): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_dd(selector: dd, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  def nextUntil_dd(selector: dd, filter: String): Chainable[JQuery[HTMLElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_dd(selector: dd, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_dd(selector: dd, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_del(selector: del): Chainable[JQuery[HTMLModElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_del(selector: del, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLModElement]] = js.native
+  def nextUntil_del(selector: del, filter: String): Chainable[JQuery[HTMLModElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_del(selector: del, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLModElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_del(selector: del, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLModElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_details(selector: details): Chainable[JQuery[HTMLDetailsElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_details(selector: details, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLDetailsElement]] = js.native
+  def nextUntil_details(selector: details, filter: String): Chainable[JQuery[HTMLDetailsElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_details(selector: details, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLDetailsElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_details(selector: details, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLDetailsElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_dfn(selector: dfn): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_dfn(selector: dfn, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  def nextUntil_dfn(selector: dfn, filter: String): Chainable[JQuery[HTMLElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_dfn(selector: dfn, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_dfn(selector: dfn, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_dialog(selector: dialog): Chainable[JQuery[HTMLDialogElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_dialog(selector: dialog, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLDialogElement]] = js.native
+  def nextUntil_dialog(selector: dialog, filter: String): Chainable[JQuery[HTMLDialogElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_dialog(selector: dialog, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLDialogElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_dialog(selector: dialog, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLDialogElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_div(selector: div): Chainable[JQuery[HTMLDivElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_div(selector: div, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLDivElement]] = js.native
+  def nextUntil_div(selector: div, filter: String): Chainable[JQuery[HTMLDivElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_div(selector: div, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLDivElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_div(selector: div, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLDivElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_dl(selector: dl): Chainable[JQuery[HTMLDListElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_dl(selector: dl, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLDListElement]] = js.native
+  def nextUntil_dl(selector: dl, filter: String): Chainable[JQuery[HTMLDListElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_dl(selector: dl, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLDListElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_dl(selector: dl, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLDListElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_dt(selector: dt): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_dt(selector: dt, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  def nextUntil_dt(selector: dt, filter: String): Chainable[JQuery[HTMLElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_dt(selector: dt, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_dt(selector: dt, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_em(selector: em): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_em(selector: em, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  def nextUntil_em(selector: em, filter: String): Chainable[JQuery[HTMLElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_em(selector: em, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_em(selector: em, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_embed(selector: embed): Chainable[JQuery[HTMLEmbedElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_embed(selector: embed, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLEmbedElement]] = js.native
+  def nextUntil_embed(selector: embed, filter: String): Chainable[JQuery[HTMLEmbedElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_embed(selector: embed, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLEmbedElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_embed(selector: embed, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLEmbedElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_fieldset(selector: fieldset): Chainable[JQuery[HTMLFieldSetElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_fieldset(selector: fieldset, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLFieldSetElement]] = js.native
+  def nextUntil_fieldset(selector: fieldset, filter: String): Chainable[JQuery[HTMLFieldSetElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_fieldset(selector: fieldset, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLFieldSetElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_fieldset(selector: fieldset, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLFieldSetElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_figcaption(selector: figcaption): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_figcaption(selector: figcaption, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  def nextUntil_figcaption(selector: figcaption, filter: String): Chainable[JQuery[HTMLElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_figcaption(selector: figcaption, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_figcaption(selector: figcaption, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_figure(selector: figure): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_figure(selector: figure, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  def nextUntil_figure(selector: figure, filter: String): Chainable[JQuery[HTMLElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_figure(selector: figure, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_figure(selector: figure, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_footer(selector: footer): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_footer(selector: footer, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  def nextUntil_footer(selector: footer, filter: String): Chainable[JQuery[HTMLElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_footer(selector: footer, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_footer(selector: footer, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_form(selector: form): Chainable[JQuery[HTMLFormElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_form(selector: form, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLFormElement]] = js.native
+  def nextUntil_form(selector: form, filter: String): Chainable[JQuery[HTMLFormElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_form(selector: form, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLFormElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_form(selector: form, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLFormElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_h1(selector: h1): Chainable[JQuery[HTMLHeadingElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_h1(selector: h1, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLHeadingElement]] = js.native
+  def nextUntil_h1(selector: h1, filter: String): Chainable[JQuery[HTMLHeadingElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_h1(selector: h1, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLHeadingElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_h1(selector: h1, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLHeadingElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_h2(selector: h2): Chainable[JQuery[HTMLHeadingElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_h2(selector: h2, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLHeadingElement]] = js.native
+  def nextUntil_h2(selector: h2, filter: String): Chainable[JQuery[HTMLHeadingElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_h2(selector: h2, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLHeadingElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_h2(selector: h2, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLHeadingElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_h3(selector: h3): Chainable[JQuery[HTMLHeadingElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_h3(selector: h3, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLHeadingElement]] = js.native
+  def nextUntil_h3(selector: h3, filter: String): Chainable[JQuery[HTMLHeadingElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_h3(selector: h3, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLHeadingElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_h3(selector: h3, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLHeadingElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_h4(selector: h4): Chainable[JQuery[HTMLHeadingElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_h4(selector: h4, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLHeadingElement]] = js.native
+  def nextUntil_h4(selector: h4, filter: String): Chainable[JQuery[HTMLHeadingElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_h4(selector: h4, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLHeadingElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_h4(selector: h4, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLHeadingElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_h5(selector: h5): Chainable[JQuery[HTMLHeadingElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_h5(selector: h5, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLHeadingElement]] = js.native
+  def nextUntil_h5(selector: h5, filter: String): Chainable[JQuery[HTMLHeadingElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_h5(selector: h5, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLHeadingElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_h5(selector: h5, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLHeadingElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_h6(selector: h6): Chainable[JQuery[HTMLHeadingElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_h6(selector: h6, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLHeadingElement]] = js.native
+  def nextUntil_h6(selector: h6, filter: String): Chainable[JQuery[HTMLHeadingElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_h6(selector: h6, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLHeadingElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_h6(selector: h6, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLHeadingElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_head(selector: head_): Chainable[JQuery[HTMLHeadElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_head(selector: head_, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLHeadElement]] = js.native
+  def nextUntil_head(selector: head_, filter: String): Chainable[JQuery[HTMLHeadElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_head(selector: head_, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLHeadElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_head(selector: head_, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLHeadElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_header(selector: header): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_header(selector: header, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  def nextUntil_header(selector: header, filter: String): Chainable[JQuery[HTMLElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_header(selector: header, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_header(selector: header, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_hgroup(selector: hgroup): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_hgroup(selector: hgroup, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  def nextUntil_hgroup(selector: hgroup, filter: String): Chainable[JQuery[HTMLElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_hgroup(selector: hgroup, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_hgroup(selector: hgroup, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_hr(selector: hr): Chainable[JQuery[HTMLHRElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_hr(selector: hr, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLHRElement]] = js.native
+  def nextUntil_hr(selector: hr, filter: String): Chainable[JQuery[HTMLHRElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_hr(selector: hr, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLHRElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_hr(selector: hr, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLHRElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_html(selector: html_): Chainable[JQuery[HTMLHtmlElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_html(selector: html_, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLHtmlElement]] = js.native
+  def nextUntil_html(selector: html_, filter: String): Chainable[JQuery[HTMLHtmlElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_html(selector: html_, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLHtmlElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_html(selector: html_, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLHtmlElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_i(selector: i): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_i(selector: i, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  def nextUntil_i(selector: i, filter: String): Chainable[JQuery[HTMLElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_i(selector: i, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_i(selector: i, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_iframe(selector: iframe): Chainable[JQuery[HTMLIFrameElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_iframe(selector: iframe, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLIFrameElement]] = js.native
+  def nextUntil_iframe(selector: iframe, filter: String): Chainable[JQuery[HTMLIFrameElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_iframe(selector: iframe, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLIFrameElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_iframe(selector: iframe, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLIFrameElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_img(selector: img): Chainable[JQuery[HTMLImageElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_img(selector: img, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLImageElement]] = js.native
+  def nextUntil_img(selector: img, filter: String): Chainable[JQuery[HTMLImageElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_img(selector: img, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLImageElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_img(selector: img, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLImageElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_input(selector: input): Chainable[JQuery[HTMLInputElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_input(selector: input, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLInputElement]] = js.native
+  def nextUntil_input(selector: input, filter: String): Chainable[JQuery[HTMLInputElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_input(selector: input, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLInputElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_input(selector: input, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLInputElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_ins(selector: ins): Chainable[JQuery[HTMLModElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_ins(selector: ins, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLModElement]] = js.native
+  def nextUntil_ins(selector: ins, filter: String): Chainable[JQuery[HTMLModElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_ins(selector: ins, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLModElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_ins(selector: ins, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLModElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_kbd(selector: kbd): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_kbd(selector: kbd, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  def nextUntil_kbd(selector: kbd, filter: String): Chainable[JQuery[HTMLElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_kbd(selector: kbd, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_kbd(selector: kbd, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_label(selector: label): Chainable[JQuery[HTMLLabelElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_label(selector: label, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLLabelElement]] = js.native
+  def nextUntil_label(selector: label, filter: String): Chainable[JQuery[HTMLLabelElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_label(selector: label, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLLabelElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_label(selector: label, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLLabelElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_legend(selector: legend): Chainable[JQuery[HTMLLegendElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_legend(selector: legend, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLLegendElement]] = js.native
+  def nextUntil_legend(selector: legend, filter: String): Chainable[JQuery[HTMLLegendElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_legend(selector: legend, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLLegendElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_legend(selector: legend, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLLegendElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_li(selector: li): Chainable[JQuery[HTMLLIElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_li(selector: li, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLLIElement]] = js.native
+  def nextUntil_li(selector: li, filter: String): Chainable[JQuery[HTMLLIElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_li(selector: li, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLLIElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_li(selector: li, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLLIElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_link(selector: link_): Chainable[JQuery[HTMLLinkElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_link(selector: link_, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLLinkElement]] = js.native
+  def nextUntil_link(selector: link_, filter: String): Chainable[JQuery[HTMLLinkElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_link(selector: link_, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLLinkElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_link(selector: link_, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLLinkElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_main(selector: main): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_main(selector: main, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  def nextUntil_main(selector: main, filter: String): Chainable[JQuery[HTMLElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_main(selector: main, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_main(selector: main, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_map(selector: map): Chainable[JQuery[HTMLMapElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_map(selector: map, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLMapElement]] = js.native
+  def nextUntil_map(selector: map, filter: String): Chainable[JQuery[HTMLMapElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_map(selector: map, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLMapElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_map(selector: map, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLMapElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_mark(selector: mark): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_mark(selector: mark, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  def nextUntil_mark(selector: mark, filter: String): Chainable[JQuery[HTMLElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_mark(selector: mark, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_mark(selector: mark, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_menu(selector: menu): Chainable[JQuery[HTMLMenuElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_menu(selector: menu, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLMenuElement]] = js.native
+  def nextUntil_menu(selector: menu, filter: String): Chainable[JQuery[HTMLMenuElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_menu(selector: menu, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLMenuElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_menu(selector: menu, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLMenuElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_meta(selector: meta): Chainable[JQuery[HTMLMetaElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_meta(selector: meta, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLMetaElement]] = js.native
+  def nextUntil_meta(selector: meta, filter: String): Chainable[JQuery[HTMLMetaElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_meta(selector: meta, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLMetaElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_meta(selector: meta, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLMetaElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_meter(selector: meter): Chainable[JQuery[HTMLMeterElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_meter(selector: meter, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLMeterElement]] = js.native
+  def nextUntil_meter(selector: meter, filter: String): Chainable[JQuery[HTMLMeterElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_meter(selector: meter, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLMeterElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_meter(selector: meter, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLMeterElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_nav(selector: nav): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_nav(selector: nav, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  def nextUntil_nav(selector: nav, filter: String): Chainable[JQuery[HTMLElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_nav(selector: nav, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_nav(selector: nav, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_noscript(selector: noscript): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_noscript(selector: noscript, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  def nextUntil_noscript(selector: noscript, filter: String): Chainable[JQuery[HTMLElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_noscript(selector: noscript, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_noscript(selector: noscript, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_object(selector: object_): Chainable[JQuery[HTMLObjectElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_object(selector: object_, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLObjectElement]] = js.native
+  def nextUntil_object(selector: object_, filter: String): Chainable[JQuery[HTMLObjectElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_object(selector: object_, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLObjectElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_object(selector: object_, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLObjectElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_ol(selector: ol): Chainable[JQuery[HTMLOListElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_ol(selector: ol, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLOListElement]] = js.native
+  def nextUntil_ol(selector: ol, filter: String): Chainable[JQuery[HTMLOListElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_ol(selector: ol, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLOListElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_ol(selector: ol, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLOListElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_optgroup(selector: optgroup): Chainable[JQuery[HTMLOptGroupElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_optgroup(selector: optgroup, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLOptGroupElement]] = js.native
+  def nextUntil_optgroup(selector: optgroup, filter: String): Chainable[JQuery[HTMLOptGroupElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_optgroup(selector: optgroup, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLOptGroupElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_optgroup(selector: optgroup, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLOptGroupElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_option(selector: option): Chainable[JQuery[HTMLOptionElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_option(selector: option, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLOptionElement]] = js.native
+  def nextUntil_option(selector: option, filter: String): Chainable[JQuery[HTMLOptionElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_option(selector: option, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLOptionElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_option(selector: option, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLOptionElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_output(selector: output): Chainable[JQuery[HTMLOutputElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_output(selector: output, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLOutputElement]] = js.native
+  def nextUntil_output(selector: output, filter: String): Chainable[JQuery[HTMLOutputElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_output(selector: output, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLOutputElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_output(selector: output, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLOutputElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_p(selector: p): Chainable[JQuery[HTMLParagraphElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_p(selector: p, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLParagraphElement]] = js.native
+  def nextUntil_p(selector: p, filter: String): Chainable[JQuery[HTMLParagraphElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_p(selector: p, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLParagraphElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_p(selector: p, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLParagraphElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_picture(selector: picture): Chainable[JQuery[HTMLPictureElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_picture(selector: picture, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLPictureElement]] = js.native
+  def nextUntil_picture(selector: picture, filter: String): Chainable[JQuery[HTMLPictureElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_picture(selector: picture, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLPictureElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_picture(selector: picture, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLPictureElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_pre(selector: pre): Chainable[JQuery[HTMLPreElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_pre(selector: pre, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLPreElement]] = js.native
+  def nextUntil_pre(selector: pre, filter: String): Chainable[JQuery[HTMLPreElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_pre(selector: pre, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLPreElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_pre(selector: pre, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLPreElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_progress(selector: progress_): Chainable[JQuery[HTMLProgressElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_progress(selector: progress_, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLProgressElement]] = js.native
+  def nextUntil_progress(selector: progress_, filter: String): Chainable[JQuery[HTMLProgressElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_progress(selector: progress_, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLProgressElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_progress(selector: progress_, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLProgressElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_q(selector: q): Chainable[JQuery[HTMLQuoteElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_q(selector: q, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLQuoteElement]] = js.native
+  def nextUntil_q(selector: q, filter: String): Chainable[JQuery[HTMLQuoteElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_q(selector: q, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLQuoteElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_q(selector: q, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLQuoteElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_rp(selector: rp): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_rp(selector: rp, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  def nextUntil_rp(selector: rp, filter: String): Chainable[JQuery[HTMLElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_rp(selector: rp, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_rp(selector: rp, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_rt(selector: rt): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_rt(selector: rt, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  def nextUntil_rt(selector: rt, filter: String): Chainable[JQuery[HTMLElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_rt(selector: rt, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_rt(selector: rt, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_ruby(selector: ruby): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_ruby(selector: ruby, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  def nextUntil_ruby(selector: ruby, filter: String): Chainable[JQuery[HTMLElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_ruby(selector: ruby, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_ruby(selector: ruby, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_s(selector: s): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_s(selector: s, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  def nextUntil_s(selector: s, filter: String): Chainable[JQuery[HTMLElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_s(selector: s, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_s(selector: s, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_samp(selector: samp): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_samp(selector: samp, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  def nextUntil_samp(selector: samp, filter: String): Chainable[JQuery[HTMLElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_samp(selector: samp, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_samp(selector: samp, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_script(selector: script): Chainable[JQuery[HTMLScriptElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_script(selector: script, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLScriptElement]] = js.native
+  def nextUntil_script(selector: script, filter: String): Chainable[JQuery[HTMLScriptElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_script(selector: script, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLScriptElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_script(selector: script, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLScriptElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_section(selector: section): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_section(selector: section, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  def nextUntil_section(selector: section, filter: String): Chainable[JQuery[HTMLElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_section(selector: section, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_section(selector: section, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_select(selector: select): Chainable[JQuery[HTMLSelectElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_select(selector: select, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLSelectElement]] = js.native
+  def nextUntil_select(selector: select, filter: String): Chainable[JQuery[HTMLSelectElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_select(selector: select, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLSelectElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_select(selector: select, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLSelectElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_slot(selector: slot): Chainable[JQuery[HTMLSlotElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_slot(selector: slot, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLSlotElement]] = js.native
+  def nextUntil_slot(selector: slot, filter: String): Chainable[JQuery[HTMLSlotElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_slot(selector: slot, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLSlotElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_slot(selector: slot, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLSlotElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_small(selector: small): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_small(selector: small, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  def nextUntil_small(selector: small, filter: String): Chainable[JQuery[HTMLElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_small(selector: small, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_small(selector: small, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_source(selector: source_): Chainable[JQuery[HTMLSourceElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_source(selector: source_, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLSourceElement]] = js.native
+  def nextUntil_source(selector: source_, filter: String): Chainable[JQuery[HTMLSourceElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_source(selector: source_, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLSourceElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_source(selector: source_, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLSourceElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_span(selector: span): Chainable[JQuery[HTMLSpanElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_span(selector: span, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLSpanElement]] = js.native
+  def nextUntil_span(selector: span, filter: String): Chainable[JQuery[HTMLSpanElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_span(selector: span, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLSpanElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_span(selector: span, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLSpanElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_strong(selector: strong): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_strong(selector: strong, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  def nextUntil_strong(selector: strong, filter: String): Chainable[JQuery[HTMLElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_strong(selector: strong, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_strong(selector: strong, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_style(selector: style): Chainable[JQuery[HTMLStyleElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_style(selector: style, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLStyleElement]] = js.native
+  def nextUntil_style(selector: style, filter: String): Chainable[JQuery[HTMLStyleElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_style(selector: style, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLStyleElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_style(selector: style, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLStyleElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_sub(selector: sub): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_sub(selector: sub, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  def nextUntil_sub(selector: sub, filter: String): Chainable[JQuery[HTMLElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_sub(selector: sub, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_sub(selector: sub, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_summary(selector: summary): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_summary(selector: summary, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  def nextUntil_summary(selector: summary, filter: String): Chainable[JQuery[HTMLElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_summary(selector: summary, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_summary(selector: summary, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_sup(selector: sup): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_sup(selector: sup, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  def nextUntil_sup(selector: sup, filter: String): Chainable[JQuery[HTMLElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_sup(selector: sup, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_sup(selector: sup, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_table(selector: table): Chainable[JQuery[HTMLTableElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_table(selector: table, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLTableElement]] = js.native
+  def nextUntil_table(selector: table, filter: String): Chainable[JQuery[HTMLTableElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_table(selector: table, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLTableElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_table(selector: table, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLTableElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_tbody(selector: tbody): Chainable[JQuery[HTMLTableSectionElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_tbody(selector: tbody, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLTableSectionElement]] = js.native
+  def nextUntil_tbody(selector: tbody, filter: String): Chainable[JQuery[HTMLTableSectionElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_tbody(selector: tbody, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLTableSectionElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_tbody(selector: tbody, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLTableSectionElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_td(selector: td): Chainable[JQuery[HTMLTableCellElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_td(selector: td, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLTableCellElement]] = js.native
+  def nextUntil_td(selector: td, filter: String): Chainable[JQuery[HTMLTableCellElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_td(selector: td, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLTableCellElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_td(selector: td, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLTableCellElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_template(selector: template): Chainable[JQuery[HTMLTemplateElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_template(selector: template, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLTemplateElement]] = js.native
+  def nextUntil_template(selector: template, filter: String): Chainable[JQuery[HTMLTemplateElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_template(selector: template, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLTemplateElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_template(selector: template, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLTemplateElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_textarea(selector: textarea): Chainable[JQuery[HTMLTextAreaElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_textarea(selector: textarea, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLTextAreaElement]] = js.native
+  def nextUntil_textarea(selector: textarea, filter: String): Chainable[JQuery[HTMLTextAreaElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_textarea(selector: textarea, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLTextAreaElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_textarea(selector: textarea, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLTextAreaElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_tfoot(selector: tfoot): Chainable[JQuery[HTMLTableSectionElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_tfoot(selector: tfoot, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLTableSectionElement]] = js.native
+  def nextUntil_tfoot(selector: tfoot, filter: String): Chainable[JQuery[HTMLTableSectionElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_tfoot(selector: tfoot, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLTableSectionElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_tfoot(selector: tfoot, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLTableSectionElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_th(selector: th): Chainable[JQuery[HTMLTableCellElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_th(selector: th, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLTableCellElement]] = js.native
+  def nextUntil_th(selector: th, filter: String): Chainable[JQuery[HTMLTableCellElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_th(selector: th, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLTableCellElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_th(selector: th, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLTableCellElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_thead(selector: thead): Chainable[JQuery[HTMLTableSectionElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_thead(selector: thead, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLTableSectionElement]] = js.native
+  def nextUntil_thead(selector: thead, filter: String): Chainable[JQuery[HTMLTableSectionElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_thead(selector: thead, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLTableSectionElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_thead(selector: thead, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLTableSectionElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_time(selector: time): Chainable[JQuery[HTMLTimeElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_time(selector: time, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLTimeElement]] = js.native
+  def nextUntil_time(selector: time, filter: String): Chainable[JQuery[HTMLTimeElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_time(selector: time, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLTimeElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_time(selector: time, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLTimeElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_title(selector: title): Chainable[JQuery[HTMLTitleElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_title(selector: title, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLTitleElement]] = js.native
+  def nextUntil_title(selector: title, filter: String): Chainable[JQuery[HTMLTitleElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_title(selector: title, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLTitleElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_title(selector: title, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLTitleElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_tr(selector: tr): Chainable[JQuery[HTMLTableRowElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_tr(selector: tr, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLTableRowElement]] = js.native
+  def nextUntil_tr(selector: tr, filter: String): Chainable[JQuery[HTMLTableRowElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_tr(selector: tr, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLTableRowElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_tr(selector: tr, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLTableRowElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_track(selector: track): Chainable[JQuery[HTMLTrackElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_track(selector: track, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLTrackElement]] = js.native
+  def nextUntil_track(selector: track, filter: String): Chainable[JQuery[HTMLTrackElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_track(selector: track, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLTrackElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_track(selector: track, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLTrackElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_u(selector: u): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_u(selector: u, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  def nextUntil_u(selector: u, filter: String): Chainable[JQuery[HTMLElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_u(selector: u, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_u(selector: u, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_ul(selector: ul): Chainable[JQuery[HTMLUListElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_ul(selector: ul, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLUListElement]] = js.native
+  def nextUntil_ul(selector: ul, filter: String): Chainable[JQuery[HTMLUListElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_ul(selector: ul, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLUListElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_ul(selector: ul, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLUListElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_var(selector: `var`): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_var(selector: `var`, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  def nextUntil_var(selector: `var`, filter: String): Chainable[JQuery[HTMLElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_var(selector: `var`, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_var(selector: `var`, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_video(selector: video): Chainable[JQuery[HTMLVideoElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_video(selector: video, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLVideoElement]] = js.native
+  def nextUntil_video(selector: video, filter: String): Chainable[JQuery[HTMLVideoElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_video(selector: video, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLVideoElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_video(selector: video, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLVideoElement]] = js.native
   @JSName("nextUntil")
   def nextUntil_wbr(selector: wbr): Chainable[JQuery[HTMLElement]] = js.native
   @JSName("nextUntil")
-  def nextUntil_wbr(selector: wbr, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  def nextUntil_wbr(selector: wbr, filter: String): Chainable[JQuery[HTMLElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_wbr(selector: wbr, filter: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
+  @JSName("nextUntil")
+  def nextUntil_wbr(selector: wbr, filter: Unit, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
   
   /**
     * Get the immediately following sibling of each DOM element within a set of DOM elements.
@@ -9585,6 +10103,13 @@ trait Chainable[Subject] extends StObject {
   def not(selector: String, options: PartialLoggableTimeoutabl): Chainable[JQuery[HTMLElement]] = js.native
   
   /**
+    * Invoke a command synchronously, without using the command queue.
+    *
+    * @see https://on.cypress.io/api/custom-queries
+    */
+  def now(name: String, args: Any*): js.Promise[Any] | (js.Function1[/* subject */ Any, Any]) = js.native
+  
+  /**
     * Fires when an uncaught exception or unhandled rejection occurs in your application. If it's an unhandled rejection, the rejected promise will be the 3rd argument.
     * Cypress will fail the test when this fires.
     * Return `false` from this event and Cypress will not fail the test. Also useful for debugging purposes because the actual `error` instance is provided to you.
@@ -9667,7 +10192,7 @@ trait Chainable[Subject] extends StObject {
     * @see https://on.cypress.io/catalog-of-events#App-Events
     */
   @JSName("off")
-  def off_commandenqueued(action: commandColonenqueued, fn: js.Function1[/* command */ EnqueuedCommand, Unit]): typings.cypress.Cypress.Cypress = js.native
+  def off_commandenqueued(action: commandColonenqueued, fn: js.Function1[/* command */ EnqueuedCommandAttributes, Unit]): typings.cypress.Cypress.Cypress = js.native
   /**
     * Fires whenever a command begins its retrying routines.
     * This is called on the trailing edge after Cypress has internally
@@ -9717,7 +10242,7 @@ trait Chainable[Subject] extends StObject {
     * @see https://on.cypress.io/catalog-of-events#App-Events
     */
   @JSName("off")
-  def off_logadded(action: logColonadded, fn: js.Function2[/* log */ Any, /* interactive */ Boolean, Unit]): typings.cypress.Cypress.Cypress = js.native
+  def off_logadded(action: logColonadded, fn: js.Function2[/* attributes */ ObjectLike, /* log */ Any, Unit]): typings.cypress.Cypress.Cypress = js.native
   /**
     * Fires whenever a command's attributes changes.
     * This event is debounced to prevent it from firing too quickly and too often.
@@ -9729,7 +10254,7 @@ trait Chainable[Subject] extends StObject {
     * @see https://on.cypress.io/catalog-of-events#App-Events
     */
   @JSName("off")
-  def off_logchanged(action: logColonchanged, fn: js.Function2[/* log */ Any, /* interactive */ Boolean, Unit]): typings.cypress.Cypress.Cypress = js.native
+  def off_logchanged(action: logColonchanged, fn: js.Function2[/* attributes */ ObjectLike, /* log */ Any, Unit]): typings.cypress.Cypress.Cypress = js.native
   /**
     * Fires whenever **Cypress** is scrolling your application.
     * This event is fired when Cypress is {% url 'waiting for and calculating
@@ -9977,7 +10502,7 @@ trait Chainable[Subject] extends StObject {
     * @see https://on.cypress.io/catalog-of-events#App-Events
     */
   @JSName("on")
-  def on_commandenqueued(action: commandColonenqueued, fn: js.Function1[/* command */ EnqueuedCommand, Unit]): typings.cypress.Cypress.Cypress = js.native
+  def on_commandenqueued(action: commandColonenqueued, fn: js.Function1[/* command */ EnqueuedCommandAttributes, Unit]): typings.cypress.Cypress.Cypress = js.native
   /**
     * Fires whenever a command begins its retrying routines.
     * This is called on the trailing edge after Cypress has internally
@@ -10027,7 +10552,7 @@ trait Chainable[Subject] extends StObject {
     * @see https://on.cypress.io/catalog-of-events#App-Events
     */
   @JSName("on")
-  def on_logadded(action: logColonadded, fn: js.Function2[/* log */ Any, /* interactive */ Boolean, Unit]): typings.cypress.Cypress.Cypress = js.native
+  def on_logadded(action: logColonadded, fn: js.Function2[/* attributes */ ObjectLike, /* log */ Any, Unit]): typings.cypress.Cypress.Cypress = js.native
   /**
     * Fires whenever a command's attributes changes.
     * This event is debounced to prevent it from firing too quickly and too often.
@@ -10039,7 +10564,7 @@ trait Chainable[Subject] extends StObject {
     * @see https://on.cypress.io/catalog-of-events#App-Events
     */
   @JSName("on")
-  def on_logchanged(action: logColonchanged, fn: js.Function2[/* log */ Any, /* interactive */ Boolean, Unit]): typings.cypress.Cypress.Cypress = js.native
+  def on_logchanged(action: logColonchanged, fn: js.Function2[/* attributes */ ObjectLike, /* log */ Any, Unit]): typings.cypress.Cypress.Cypress = js.native
   /**
     * Fires whenever **Cypress** is scrolling your application.
     * This event is fired when Cypress is {% url 'waiting for and calculating
@@ -10287,7 +10812,7 @@ trait Chainable[Subject] extends StObject {
     * @see https://on.cypress.io/catalog-of-events#App-Events
     */
   @JSName("once")
-  def once_commandenqueued(action: commandColonenqueued, fn: js.Function1[/* command */ EnqueuedCommand, Unit]): typings.cypress.Cypress.Cypress = js.native
+  def once_commandenqueued(action: commandColonenqueued, fn: js.Function1[/* command */ EnqueuedCommandAttributes, Unit]): typings.cypress.Cypress.Cypress = js.native
   /**
     * Fires whenever a command begins its retrying routines.
     * This is called on the trailing edge after Cypress has internally
@@ -10337,7 +10862,7 @@ trait Chainable[Subject] extends StObject {
     * @see https://on.cypress.io/catalog-of-events#App-Events
     */
   @JSName("once")
-  def once_logadded(action: logColonadded, fn: js.Function2[/* log */ Any, /* interactive */ Boolean, Unit]): typings.cypress.Cypress.Cypress = js.native
+  def once_logadded(action: logColonadded, fn: js.Function2[/* attributes */ ObjectLike, /* log */ Any, Unit]): typings.cypress.Cypress.Cypress = js.native
   /**
     * Fires whenever a command's attributes changes.
     * This event is debounced to prevent it from firing too quickly and too often.
@@ -10349,7 +10874,7 @@ trait Chainable[Subject] extends StObject {
     * @see https://on.cypress.io/catalog-of-events#App-Events
     */
   @JSName("once")
-  def once_logchanged(action: logColonchanged, fn: js.Function2[/* log */ Any, /* interactive */ Boolean, Unit]): typings.cypress.Cypress.Cypress = js.native
+  def once_logchanged(action: logColonchanged, fn: js.Function2[/* attributes */ ObjectLike, /* log */ Any, Unit]): typings.cypress.Cypress.Cypress = js.native
   /**
     * Fires whenever **Cypress** is scrolling your application.
     * This event is fired when Cypress is {% url 'waiting for and calculating
@@ -12878,7 +13403,7 @@ trait Chainable[Subject] extends StObject {
     * Get all previous siblings of each DOM element in a set of matched DOM elements up to, but not including, the element provided.
     * > The querying behavior of this command matches exactly how [.prevUntil()](http://api.jquery.com/prevUntil) works in jQuery.
     *
-    * @see https://on.cypress.io/prevall
+    * @see https://on.cypress.io/prevuntil
     */
   def prevUntil[E /* <: Node */](element: E): Chainable[JQuery[E]] = js.native
   def prevUntil[E /* <: Node */](element: E, filter: String): Chainable[JQuery[E]] = js.native
@@ -12892,7 +13417,7 @@ trait Chainable[Subject] extends StObject {
     * Get all previous siblings of each DOM element in a set of matched DOM elements up to, but not including, the element provided.
     * > The querying behavior of this command matches exactly how [.prevUntil()](http://api.jquery.com/prevUntil) works in jQuery.
     *
-    * @see https://on.cypress.io/prevall
+    * @see https://on.cypress.io/prevuntil
     */
   def prevUntil[E /* <: Node */](selector: String): Chainable[JQuery[E]] = js.native
   def prevUntil[E /* <: Node */](selector: String, filter: String): Chainable[JQuery[E]] = js.native
@@ -12902,7 +13427,7 @@ trait Chainable[Subject] extends StObject {
     * Get all previous siblings of each DOM element in a set of matched DOM elements up to, but not including, the element provided.
     * > The querying behavior of this command matches exactly how [.prevUntil()](http://api.jquery.com/prevUntil) works in jQuery.
     *
-    * @see https://on.cypress.io/prevall
+    * @see https://on.cypress.io/prevuntil
     */
   @JSName("prevUntil")
   def prevUntil_a(selector: a): Chainable[JQuery[HTMLAnchorElement]] = js.native
@@ -14267,6 +14792,7 @@ trait Chainable[Subject] extends StObject {
     *
     * @see https://on.cypress.io/reload
     * @example
+    *    cy.visit('http://localhost:3000/admin')
     *    cy.reload()
     */
   def reload(): Chainable[AUTWindow] = js.native
@@ -14281,6 +14807,28 @@ trait Chainable[Subject] extends StObject {
     *    cy.reload(true)
     */
   def reload(forceReload: Boolean): Chainable[AUTWindow] = js.native
+  /**
+    * Reload the page without cache and with log and timeout options
+    *
+    * @see https://on.cypress.io/reload
+    * @param {Boolean} forceReload Whether to reload the current page without using the cache. true forces the reload without cache.
+    * @param {Partial<Loggable & Timeoutable>} options Pass in an options object to modify the default behavior of cy.reload()
+    * @example
+    *    // Reload the page without using the cache, do not log it in the command log and timeout after 15s
+    *    cy.visit('http://localhost:3000/admin')
+    *    cy.reload(true, {log: false, timeout: 15000})
+    */
+  def reload(forceReload: Boolean, options: PartialLoggableTimeoutabl): Chainable[AUTWindow] = js.native
+  /**
+    * Reload the page.
+    *
+    * @see https://on.cypress.io/reload
+    * @param {Partial<Loggable & Timeoutable>} options Pass in an options object to modify the default behavior of cy.reload()
+    * @example
+    *    // Reload the page, do not log it in the command log and timeout after 15s
+    *    cy.visit('http://localhost:3000/admin')
+    *    cy.reload({log: false, timeout: 15000})
+    */
   def reload(options: PartialLoggableTimeoutabl): Chainable[AUTWindow] = js.native
   
   /**
@@ -14358,76 +14906,7 @@ trait Chainable[Subject] extends StObject {
   def root[E /* <: Node */](): Chainable[JQuery[E]] = js.native
   def root[E /* <: Node */](options: PartialLoggable): Chainable[JQuery[E]] = js.native
   
-  /**
-    * @deprecated Use `cy.intercept()` instead.
-    *
-    * Set a route by returning an object literal from a callback function.
-    * Functions that return a Promise will automatically be awaited.
-    *
-    * @see https://on.cypress.io/route
-    * @example
-    *    cy.server()
-    *    cy.route(() => {
-    *      // your logic here
-    *      // return an appropriate routing object here
-    *      return {
-    *        method: 'POST',
-    *        url: '/comments',
-    *        response: this.commentsFixture
-    *      }
-    *    })
-    */
-  def route(fn: js.Function0[RouteOptions]): Chainable[Null] = js.native
-  def route(method: String, url: String, response: String): Chainable[Null] = js.native
-  def route(method: String, url: String, response: js.Object): Chainable[Null] = js.native
-  def route(method: String, url: js.RegExp): Chainable[Null] = js.native
-  def route(method: String, url: js.RegExp, response: String): Chainable[Null] = js.native
-  def route(method: String, url: js.RegExp, response: js.Object): Chainable[Null] = js.native
-  /**
-    * @deprecated Use `cy.intercept()` instead.
-    *
-    * Spy or stub a given route.
-    *
-    * @see https://on.cypress.io/route
-    * @example
-    *    cy.server()
-    *    cy.route({
-    *      method: 'DELETE',
-    *      url: '/users',
-    *      status: 412,
-    *      delay: 1000
-    *      // and other options, see documentation
-    *    })
-    */
-  def route(options: PartialRouteOptions): Chainable[Null] = js.native
   // can't do better typing unless we ignore the `.within()` case
-  /**
-    * @deprecated Use `cy.intercept()` instead.
-    *
-    * Use `cy.route()` to manage the behavior of network requests.
-    * @see https://on.cypress.io/route
-    * @example
-    *    cy.server()
-    *    cy.route('https://localhost:7777/users', [{id: 1, name: 'Pat'}])
-    */
-  def route(url: String): Chainable[Null] = js.native
-  /**
-    * @deprecated Use `cy.intercept()` instead.
-    *
-    * Spy or stub request with specific method and url.
-    *
-    * @see https://on.cypress.io/route
-    * @example
-    *    cy.server()
-    *    // spy on POST /todos requests
-    *    cy.route('POST', '/todos').as('add-todo')
-    */
-  def route(url: String, response: String): Chainable[Null] = js.native
-  def route(url: String, response: js.Object): Chainable[Null] = js.native
-  def route(url: js.RegExp): Chainable[Null] = js.native
-  def route(url: js.RegExp, response: String): Chainable[Null] = js.native
-  def route(url: js.RegExp, response: js.Object): Chainable[Null] = js.native
-  
   /**
     * Take a screenshot of the application under test and the Cypress Command Log.
     *
@@ -14507,30 +14986,7 @@ trait Chainable[Subject] extends StObject {
   def selectFile(files: FileReference, options: PartialSelectFileOptions): Chainable[Subject] = js.native
   
   /**
-    * @deprecated Use `cy.intercept()` instead.
-    *
-    * Start a server to begin routing responses to `cy.route()` and `cy.request()`.
-    *
-    * @example
-    *    // start server
-    *    cy.server()
-    *    // get default server options
-    *    cy.server().should((server) => {
-    *      expect(server.delay).to.eq(0)
-    *      expect(server.method).to.eq('GET')
-    *      expect(server.status).to.eq(200)
-    *      // and many others options
-    *    })
-    *
-    * @see https://on.cypress.io/server
-    */
-  def server(): Chainable[ServerOptions] = js.native
-  def server(options: PartialServerOptions): Chainable[ServerOptions] = js.native
-  
-  /**
     * Save/Restore browser Cookies, LocalStorage, and SessionStorage data resulting from the supplied `setup` function.
-    *
-    * Only available if the `experimentalSessionAndOrigin` config option is enabled.
     *
     * @see https://on.cypress.io/session
     */

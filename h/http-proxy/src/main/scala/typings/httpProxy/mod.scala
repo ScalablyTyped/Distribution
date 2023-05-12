@@ -31,7 +31,7 @@ object mod {
     * Creates the proxy server with specified options.
     * @param options - Config object passed to the proxy
     */
-  open class ^ () extends Server {
+  open class ^[TIncomingMessage, TServerResponse] () extends Server[TIncomingMessage, TServerResponse] {
     def this(options: ServerOptions) = this()
   }
   @JSImport("http-proxy", JSImport.Namespace)
@@ -43,27 +43,30 @@ object mod {
     * @param options Config object passed to the proxy
     * @returns Proxy object with handlers for `ws` and `web` requests
     */
+  // tslint:disable:no-unnecessary-generics
   /* static member */
-  inline def createProxy(): Server = ^.asInstanceOf[js.Dynamic].applyDynamic("createProxy")().asInstanceOf[Server]
-  inline def createProxy(options: ServerOptions): Server = ^.asInstanceOf[js.Dynamic].applyDynamic("createProxy")(options.asInstanceOf[js.Any]).asInstanceOf[Server]
+  inline def createProxy[TIncomingMessage, TServerResponse](): Server[TIncomingMessage, TServerResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("createProxy")().asInstanceOf[Server[TIncomingMessage, TServerResponse]]
+  inline def createProxy[TIncomingMessage, TServerResponse](options: ServerOptions): Server[TIncomingMessage, TServerResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("createProxy")(options.asInstanceOf[js.Any]).asInstanceOf[Server[TIncomingMessage, TServerResponse]]
   
   /**
     * Creates the proxy server with specified options.
     * @param options Config object passed to the proxy
     * @returns Proxy object with handlers for `ws` and `web` requests
     */
+  // tslint:disable:no-unnecessary-generics
   /* static member */
-  inline def createProxyServer(): Server = ^.asInstanceOf[js.Dynamic].applyDynamic("createProxyServer")().asInstanceOf[Server]
-  inline def createProxyServer(options: ServerOptions): Server = ^.asInstanceOf[js.Dynamic].applyDynamic("createProxyServer")(options.asInstanceOf[js.Any]).asInstanceOf[Server]
+  inline def createProxyServer[TIncomingMessage, TServerResponse](): Server[TIncomingMessage, TServerResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("createProxyServer")().asInstanceOf[Server[TIncomingMessage, TServerResponse]]
+  inline def createProxyServer[TIncomingMessage, TServerResponse](options: ServerOptions): Server[TIncomingMessage, TServerResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("createProxyServer")(options.asInstanceOf[js.Any]).asInstanceOf[Server[TIncomingMessage, TServerResponse]]
   
   /**
     * Creates the proxy server with specified options.
     * @param options Config object passed to the proxy
     * @returns Proxy object with handlers for `ws` and `web` requests
     */
+  // tslint:disable:no-unnecessary-generics
   /* static member */
-  inline def createServer(): Server = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")().asInstanceOf[Server]
-  inline def createServer(options: ServerOptions): Server = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(options.asInstanceOf[js.Any]).asInstanceOf[Server]
+  inline def createServer[TIncomingMessage, TServerResponse](): Server[TIncomingMessage, TServerResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")().asInstanceOf[Server[TIncomingMessage, TServerResponse]]
+  inline def createServer[TIncomingMessage, TServerResponse](options: ServerOptions): Server[TIncomingMessage, TServerResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(options.asInstanceOf[js.Any]).asInstanceOf[Server[TIncomingMessage, TServerResponse]]
   
   type CloseCallback[TIncomingMessage] = js.Function3[/* proxyRes */ TIncomingMessage, /* proxySocket */ Socket, /* proxyHead */ Any, Unit]
   
@@ -203,7 +206,7 @@ object mod {
   type ProxyTargetUrl = String | PartialUrl
   
   @js.native
-  trait Server extends EventEmitter {
+  trait Server[TIncomingMessage, TServerResponse] extends EventEmitter {
     
     def addListener(event: String, listener: js.Function0[Unit]): this.type = js.native
     
@@ -216,60 +219,50 @@ object mod {
     /**
       * A function that wraps the object in a webserver, for your convenience
       * @param port - Port to listen on
+      * @param hostname - The hostname to listen on
       */
-    def listen(port: Double): Server = js.native
+    def listen(port: Double): Server[TIncomingMessage, TServerResponse] = js.native
+    def listen(port: Double, hostname: String): Server[TIncomingMessage, TServerResponse] = js.native
     
     def on(event: String, listener: js.Function0[Unit]): this.type = js.native
     @JSName("on")
-    def on_close(event: close, listener: CloseCallback[IncomingMessage]): this.type = js.native
+    def on_close(event: close, listener: CloseCallback[TIncomingMessage]): this.type = js.native
     @JSName("on")
-    def on_econnreset(
-      event: econnreset,
-      listener: EconnresetCallback[js.Error, IncomingMessage, ServerResponse[IncomingMessage]]
-    ): this.type = js.native
+    def on_econnreset(event: econnreset, listener: EconnresetCallback[js.Error, TIncomingMessage, TServerResponse]): this.type = js.native
     @JSName("on")
-    def on_end(event: end, listener: EndCallback[IncomingMessage, ServerResponse[IncomingMessage]]): this.type = js.native
+    def on_end(event: end, listener: EndCallback[TIncomingMessage, TServerResponse]): this.type = js.native
     @JSName("on")
-    def on_error(event: error, listener: ErrorCallback[js.Error, IncomingMessage, ServerResponse[IncomingMessage]]): this.type = js.native
+    def on_error(event: error, listener: ErrorCallback[js.Error, TIncomingMessage, TServerResponse]): this.type = js.native
     @JSName("on")
     def on_open(event: open, listener: OpenCallback): this.type = js.native
     @JSName("on")
-    def on_proxyReq(
-      event: proxyReq,
-      listener: ProxyReqCallback[ClientRequest, IncomingMessage, ServerResponse[IncomingMessage]]
-    ): this.type = js.native
+    def on_proxyReq(event: proxyReq, listener: ProxyReqCallback[ClientRequest, TIncomingMessage, TServerResponse]): this.type = js.native
     @JSName("on")
-    def on_proxyReqWs(event: proxyReqWs, listener: ProxyReqWsCallback[ClientRequest, IncomingMessage]): this.type = js.native
+    def on_proxyReqWs(event: proxyReqWs, listener: ProxyReqWsCallback[ClientRequest, TIncomingMessage]): this.type = js.native
     @JSName("on")
-    def on_proxyRes(event: proxyRes, listener: ProxyResCallback[IncomingMessage, ServerResponse[IncomingMessage]]): this.type = js.native
+    def on_proxyRes(event: proxyRes, listener: ProxyResCallback[TIncomingMessage, TServerResponse]): this.type = js.native
     @JSName("on")
-    def on_start(event: start, listener: StartCallback[IncomingMessage, ServerResponse[IncomingMessage]]): this.type = js.native
+    def on_start(event: start, listener: StartCallback[TIncomingMessage, TServerResponse]): this.type = js.native
     
     def once(event: String, listener: js.Function0[Unit]): this.type = js.native
     @JSName("once")
-    def once_close(event: close, listener: CloseCallback[IncomingMessage]): this.type = js.native
+    def once_close(event: close, listener: CloseCallback[TIncomingMessage]): this.type = js.native
     @JSName("once")
-    def once_econnreset(
-      event: econnreset,
-      listener: EconnresetCallback[js.Error, IncomingMessage, ServerResponse[IncomingMessage]]
-    ): this.type = js.native
+    def once_econnreset(event: econnreset, listener: EconnresetCallback[js.Error, TIncomingMessage, TServerResponse]): this.type = js.native
     @JSName("once")
-    def once_end(event: end, listener: EndCallback[IncomingMessage, ServerResponse[IncomingMessage]]): this.type = js.native
+    def once_end(event: end, listener: EndCallback[TIncomingMessage, TServerResponse]): this.type = js.native
     @JSName("once")
-    def once_error(event: error, listener: ErrorCallback[js.Error, IncomingMessage, ServerResponse[IncomingMessage]]): this.type = js.native
+    def once_error(event: error, listener: ErrorCallback[js.Error, TIncomingMessage, TServerResponse]): this.type = js.native
     @JSName("once")
     def once_open(event: open, listener: OpenCallback): this.type = js.native
     @JSName("once")
-    def once_proxyReq(
-      event: proxyReq,
-      listener: ProxyReqCallback[ClientRequest, IncomingMessage, ServerResponse[IncomingMessage]]
-    ): this.type = js.native
+    def once_proxyReq(event: proxyReq, listener: ProxyReqCallback[ClientRequest, TIncomingMessage, TServerResponse]): this.type = js.native
     @JSName("once")
-    def once_proxyReqWs(event: proxyReqWs, listener: ProxyReqWsCallback[ClientRequest, IncomingMessage]): this.type = js.native
+    def once_proxyReqWs(event: proxyReqWs, listener: ProxyReqWsCallback[ClientRequest, TIncomingMessage]): this.type = js.native
     @JSName("once")
-    def once_proxyRes(event: proxyRes, listener: ProxyResCallback[IncomingMessage, ServerResponse[IncomingMessage]]): this.type = js.native
+    def once_proxyRes(event: proxyRes, listener: ProxyResCallback[TIncomingMessage, TServerResponse]): this.type = js.native
     @JSName("once")
-    def once_start(event: start, listener: StartCallback[IncomingMessage, ServerResponse[IncomingMessage]]): this.type = js.native
+    def once_start(event: start, listener: StartCallback[TIncomingMessage, TServerResponse]): this.type = js.native
     
     def removeListener(event: String, listener: js.Function0[Unit]): this.type = js.native
     

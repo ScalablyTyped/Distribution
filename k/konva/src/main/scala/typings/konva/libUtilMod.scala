@@ -5,6 +5,7 @@ import typings.konva.anon.Rotation
 import typings.konva.anon.X
 import typings.konva.konvaInts.`-1`
 import typings.konva.konvaInts.`1`
+import typings.konva.libContextMod.Context
 import typings.konva.libTypesMod.IRect
 import typings.konva.libTypesMod.RGB
 import typings.konva.libTypesMod.RGBA
@@ -79,6 +80,9 @@ object libUtilMod {
     
     inline def degToRad(deg: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("degToRad")(deg.asInstanceOf[js.Any]).asInstanceOf[Double]
     
+    inline def drawRoundedRectPath(context: Context, width: Double, height: Double, cornerRadius: js.Array[Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawRoundedRectPath")(context.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], cornerRadius.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def drawRoundedRectPath(context: Context, width: Double, height: Double, cornerRadius: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawRoundedRectPath")(context.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], cornerRadius.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
     inline def each(obj: Any, func: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("each")(obj.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     inline def error(str: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(str.asInstanceOf[js.Any]).asInstanceOf[Unit]
@@ -99,7 +103,11 @@ object libUtilMod {
     
     inline def hex3ColorToRGBA(str: String): RGBA = ^.asInstanceOf[js.Dynamic].applyDynamic("_hex3ColorToRGBA")(str.asInstanceOf[js.Any]).asInstanceOf[RGBA]
     
+    inline def hex4ColorToRGBA(str: String): RGBA = ^.asInstanceOf[js.Dynamic].applyDynamic("_hex4ColorToRGBA")(str.asInstanceOf[js.Any]).asInstanceOf[RGBA]
+    
     inline def hex6ColorToRGBA(str: String): RGBA = ^.asInstanceOf[js.Dynamic].applyDynamic("_hex6ColorToRGBA")(str.asInstanceOf[js.Any]).asInstanceOf[RGBA]
+    
+    inline def hex8ColorToRGBA(str: String): RGBA = ^.asInstanceOf[js.Dynamic].applyDynamic("_hex8ColorToRGBA")(str.asInstanceOf[js.Any]).asInstanceOf[RGBA]
     
     inline def hexToRgb(hex: String): RGB = ^.asInstanceOf[js.Dynamic].applyDynamic("_hexToRgb")(hex.asInstanceOf[js.Any]).asInstanceOf[RGB]
     

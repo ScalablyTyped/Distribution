@@ -24,6 +24,14 @@ object IllustratedMessageType extends StObject {
        with IllustratedMessageType
   
   /**
+    * "Add Dimensions" illustration type.
+    */
+  @js.native
+  sealed trait AddDimensions
+    extends StObject
+       with IllustratedMessageType
+  
+  /**
     * "Add People" illustration type.
     */
   @js.native
@@ -112,10 +120,26 @@ object IllustratedMessageType extends StObject {
        with IllustratedMessageType
   
   /**
+    * "No Columns Set" illustration type.
+    */
+  @js.native
+  sealed trait NoColumnsSet
+    extends StObject
+       with IllustratedMessageType
+  
+  /**
     * "No Data" illustration type.
     */
   @js.native
   sealed trait NoData
+    extends StObject
+       with IllustratedMessageType
+  
+  /**
+    * "No Dimensions Set" illustration type.
+    */
+  @js.native
+  sealed trait NoDimensionsSet
     extends StObject
        with IllustratedMessageType
   
@@ -400,6 +424,14 @@ object IllustratedMessageType extends StObject {
        with IllustratedMessageType
   
   /**
+    * "Survey" illustration type.
+    */
+  @js.native
+  sealed trait Survey
+    extends StObject
+       with IllustratedMessageType
+  
+  /**
     * "Tent" illustration type.
     */
   @js.native
@@ -436,6 +468,14 @@ object IllustratedMessageType extends StObject {
     */
   @js.native
   sealed trait UploadCollection
+    extends StObject
+       with IllustratedMessageType
+  
+  /**
+    * "Upload To Cloud" illustration type.
+    */
+  @js.native
+  sealed trait UploadToCloud
     extends StObject
        with IllustratedMessageType
 }

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "when-exit" : "2.1.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "when-exit" : "2.1.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

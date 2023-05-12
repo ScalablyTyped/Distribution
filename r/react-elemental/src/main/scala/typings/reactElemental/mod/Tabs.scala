@@ -12,7 +12,7 @@ open class Tabs protected ()
   def this(props: TabsProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: TabsProps, context: Any) = this()
 }

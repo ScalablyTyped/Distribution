@@ -5,6 +5,7 @@ import typings.awsSdk.anon.DescribeConversionTasksRe
 import typings.awsSdk.anon.DescribeCustomerGatewaysR
 import typings.awsSdk.anon.DescribeExportTasksReques
 import typings.awsSdk.anon.DescribeImagesRequestwait
+import typings.awsSdk.anon.DescribeImportSnapshotTas
 import typings.awsSdk.anon.DescribeInstanceStatusReq
 import typings.awsSdk.anon.DescribeInstancesRequestw
 import typings.awsSdk.anon.DescribeInternetGatewaysR
@@ -42,6 +43,7 @@ import typings.awsSdk.awsSdkStrings.networkInterfaceAvailable
 import typings.awsSdk.awsSdkStrings.passwordDataAvailable
 import typings.awsSdk.awsSdkStrings.securityGroupExists
 import typings.awsSdk.awsSdkStrings.snapshotCompleted
+import typings.awsSdk.awsSdkStrings.snapshotImported
 import typings.awsSdk.awsSdkStrings.spotInstanceRequestFulfilled
 import typings.awsSdk.awsSdkStrings.subnetAvailable
 import typings.awsSdk.awsSdkStrings.systemStatusOk
@@ -152,12 +154,12 @@ trait EC2 extends Service {
   ): Request[AcceptTransitGatewayVpcAttachmentResult, AWSError] = js.native
   
   /**
-    * Accepts one or more interface VPC endpoint connection requests to your VPC endpoint service.
+    * Accepts connection requests to your VPC endpoint service.
     */
   def acceptVpcEndpointConnections(): Request[AcceptVpcEndpointConnectionsResult, AWSError] = js.native
   def acceptVpcEndpointConnections(callback: js.Function2[/* err */ AWSError, /* data */ AcceptVpcEndpointConnectionsResult, Unit]): Request[AcceptVpcEndpointConnectionsResult, AWSError] = js.native
   /**
-    * Accepts one or more interface VPC endpoint connection requests to your VPC endpoint service.
+    * Accepts connection requests to your VPC endpoint service.
     */
   def acceptVpcEndpointConnections(params: AcceptVpcEndpointConnectionsRequest): Request[AcceptVpcEndpointConnectionsResult, AWSError] = js.native
   def acceptVpcEndpointConnections(
@@ -222,12 +224,12 @@ trait EC2 extends Service {
   ): Request[AllocateHostsResult, AWSError] = js.native
   
   /**
-    * Allocate a CIDR from an IPAM pool. In IPAM, an allocation is a CIDR assignment from an IPAM pool to another resource or IPAM pool. For more information, see Allocate CIDRs in the Amazon VPC IPAM User Guide. 
+    * Allocate a CIDR from an IPAM pool. In IPAM, an allocation is a CIDR assignment from an IPAM pool to another IPAM pool or to a resource. For more information, see Allocate CIDRs in the Amazon VPC IPAM User Guide.  This action creates an allocation with strong consistency. The returned CIDR will not overlap with any other allocations from the same pool. 
     */
   def allocateIpamPoolCidr(): Request[AllocateIpamPoolCidrResult, AWSError] = js.native
   def allocateIpamPoolCidr(callback: js.Function2[/* err */ AWSError, /* data */ AllocateIpamPoolCidrResult, Unit]): Request[AllocateIpamPoolCidrResult, AWSError] = js.native
   /**
-    * Allocate a CIDR from an IPAM pool. In IPAM, an allocation is a CIDR assignment from an IPAM pool to another resource or IPAM pool. For more information, see Allocate CIDRs in the Amazon VPC IPAM User Guide. 
+    * Allocate a CIDR from an IPAM pool. In IPAM, an allocation is a CIDR assignment from an IPAM pool to another IPAM pool or to a resource. For more information, see Allocate CIDRs in the Amazon VPC IPAM User Guide.  This action creates an allocation with strong consistency. The returned CIDR will not overlap with any other allocations from the same pool. 
     */
   def allocateIpamPoolCidr(params: AllocateIpamPoolCidrRequest): Request[AllocateIpamPoolCidrResult, AWSError] = js.native
   def allocateIpamPoolCidr(
@@ -286,6 +288,20 @@ trait EC2 extends Service {
     params: AssignPrivateIpAddressesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ AssignPrivateIpAddressesResult, Unit]
   ): Request[AssignPrivateIpAddressesResult, AWSError] = js.native
+  
+  /**
+    * Assigns one or more private IPv4 addresses to a private NAT gateway. For more information, see Work with NAT gateways in the Amazon Virtual Private Cloud User Guide.
+    */
+  def assignPrivateNatGatewayAddress(): Request[AssignPrivateNatGatewayAddressResult, AWSError] = js.native
+  def assignPrivateNatGatewayAddress(callback: js.Function2[/* err */ AWSError, /* data */ AssignPrivateNatGatewayAddressResult, Unit]): Request[AssignPrivateNatGatewayAddressResult, AWSError] = js.native
+  /**
+    * Assigns one or more private IPv4 addresses to a private NAT gateway. For more information, see Work with NAT gateways in the Amazon Virtual Private Cloud User Guide.
+    */
+  def assignPrivateNatGatewayAddress(params: AssignPrivateNatGatewayAddressRequest): Request[AssignPrivateNatGatewayAddressResult, AWSError] = js.native
+  def assignPrivateNatGatewayAddress(
+    params: AssignPrivateNatGatewayAddressRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ AssignPrivateNatGatewayAddressResult, Unit]
+  ): Request[AssignPrivateNatGatewayAddressResult, AWSError] = js.native
   
   /**
     * Associates an Elastic IP address, or carrier IP address (for instances that are in subnets in Wavelength Zones) with an instance or a network interface. Before you can use an Elastic IP address, you must allocate it to your account. An Elastic IP address is for use in either the EC2-Classic platform or in a VPC. For more information, see Elastic IP Addresses in the Amazon Elastic Compute Cloud User Guide. [EC2-Classic, VPC in an EC2-VPC-only account] If the Elastic IP address is already associated with a different instance, it is disassociated from that instance and associated with the specified instance. If you associate an Elastic IP address with an instance that has an existing Elastic IP address, the existing address is disassociated from the instance, but remains allocated to your account. [VPC in an EC2-Classic account] If you don't specify a private IP address, the Elastic IP address is associated with the primary IP address. If the Elastic IP address is already associated with a different instance or a network interface, you get an error unless you allow reassociation. You cannot associate an Elastic IP address with an instance or network interface that has an existing Elastic IP address. [Subnets in Wavelength Zones] You can associate an IP address from the telecommunication carrier to the instance or network interface.  You cannot associate an Elastic IP address with an interface in a different network border group.  This is an idempotent operation. If you perform the operation more than once, Amazon EC2 doesn't return an error, and you may be charged for each time the Elastic IP address is remapped to the same instance. For more information, see the Elastic IP Addresses section of Amazon EC2 Pricing.   We are retiring EC2-Classic. We recommend that you migrate from EC2-Classic to a VPC. For more information, see Migrate from EC2-Classic to a VPC in the Amazon Elastic Compute Cloud User Guide. 
@@ -372,6 +388,34 @@ trait EC2 extends Service {
     params: AssociateInstanceEventWindowRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ AssociateInstanceEventWindowResult, Unit]
   ): Request[AssociateInstanceEventWindowResult, AWSError] = js.native
+  
+  /**
+    * Associates an IPAM resource discovery with an Amazon VPC IPAM. A resource discovery is an IPAM component that enables IPAM to manage and monitor resources that belong to the owning account.
+    */
+  def associateIpamResourceDiscovery(): Request[AssociateIpamResourceDiscoveryResult, AWSError] = js.native
+  def associateIpamResourceDiscovery(callback: js.Function2[/* err */ AWSError, /* data */ AssociateIpamResourceDiscoveryResult, Unit]): Request[AssociateIpamResourceDiscoveryResult, AWSError] = js.native
+  /**
+    * Associates an IPAM resource discovery with an Amazon VPC IPAM. A resource discovery is an IPAM component that enables IPAM to manage and monitor resources that belong to the owning account.
+    */
+  def associateIpamResourceDiscovery(params: AssociateIpamResourceDiscoveryRequest): Request[AssociateIpamResourceDiscoveryResult, AWSError] = js.native
+  def associateIpamResourceDiscovery(
+    params: AssociateIpamResourceDiscoveryRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ AssociateIpamResourceDiscoveryResult, Unit]
+  ): Request[AssociateIpamResourceDiscoveryResult, AWSError] = js.native
+  
+  /**
+    * Associates Elastic IP addresses (EIPs) and private IPv4 addresses with a public NAT gateway. For more information, see Work with NAT gateways in the Amazon Virtual Private Cloud User Guide. By default, you can associate up to 2 Elastic IP addresses per public NAT gateway. You can increase the limit by requesting a quota adjustment. For more information, see Elastic IP address quotas in the Amazon Virtual Private Cloud User Guide.
+    */
+  def associateNatGatewayAddress(): Request[AssociateNatGatewayAddressResult, AWSError] = js.native
+  def associateNatGatewayAddress(callback: js.Function2[/* err */ AWSError, /* data */ AssociateNatGatewayAddressResult, Unit]): Request[AssociateNatGatewayAddressResult, AWSError] = js.native
+  /**
+    * Associates Elastic IP addresses (EIPs) and private IPv4 addresses with a public NAT gateway. For more information, see Work with NAT gateways in the Amazon Virtual Private Cloud User Guide. By default, you can associate up to 2 Elastic IP addresses per public NAT gateway. You can increase the limit by requesting a quota adjustment. For more information, see Elastic IP address quotas in the Amazon Virtual Private Cloud User Guide.
+    */
+  def associateNatGatewayAddress(params: AssociateNatGatewayAddressRequest): Request[AssociateNatGatewayAddressResult, AWSError] = js.native
+  def associateNatGatewayAddress(
+    params: AssociateNatGatewayAddressRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ AssociateNatGatewayAddressResult, Unit]
+  ): Request[AssociateNatGatewayAddressResult, AWSError] = js.native
   
   /**
     * Associates a subnet in your VPC or an internet gateway or virtual private gateway attached to your VPC with a route table in your VPC. This association causes traffic from the subnet or gateway to be routed according to the routes in the route table. The action returns an association ID, which you need in order to disassociate the route table later. A route table can be associated with multiple subnets. For more information, see Route tables in the Amazon Virtual Private Cloud User Guide.
@@ -518,6 +562,22 @@ trait EC2 extends Service {
     params: AttachNetworkInterfaceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ AttachNetworkInterfaceResult, Unit]
   ): Request[AttachNetworkInterfaceResult, AWSError] = js.native
+  
+  /**
+    * Attaches the specified Amazon Web Services Verified Access trust provider to the specified Amazon Web Services Verified Access instance.
+    */
+  def attachVerifiedAccessTrustProvider(): Request[AttachVerifiedAccessTrustProviderResult, AWSError] = js.native
+  def attachVerifiedAccessTrustProvider(
+    callback: js.Function2[/* err */ AWSError, /* data */ AttachVerifiedAccessTrustProviderResult, Unit]
+  ): Request[AttachVerifiedAccessTrustProviderResult, AWSError] = js.native
+  /**
+    * Attaches the specified Amazon Web Services Verified Access trust provider to the specified Amazon Web Services Verified Access instance.
+    */
+  def attachVerifiedAccessTrustProvider(params: AttachVerifiedAccessTrustProviderRequest): Request[AttachVerifiedAccessTrustProviderResult, AWSError] = js.native
+  def attachVerifiedAccessTrustProvider(
+    params: AttachVerifiedAccessTrustProviderRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ AttachVerifiedAccessTrustProviderResult, Unit]
+  ): Request[AttachVerifiedAccessTrustProviderResult, AWSError] = js.native
   
   /**
     * Attaches an EBS volume to a running or stopped instance and exposes it to the instance with the specified device name. Encrypted EBS volumes must be attached to instances that support Amazon EBS encryption. For more information, see Amazon EBS encryption in the Amazon Elastic Compute Cloud User Guide. After you attach an EBS volume, you must make it available. For more information, see Make an EBS volume available for use. If a volume has an Amazon Web Services Marketplace product code:   The volume can be attached only to a stopped instance.   Amazon Web Services Marketplace product codes are copied from the volume to the instance.   You must be subscribed to the product.   The instance type and operating system of the instance must support the product. For example, you can't detach a volume from a Windows instance and attach it to a Linux instance.   For more information, see Attach an Amazon EBS volume to an instance in the Amazon Elastic Compute Cloud User Guide.
@@ -674,12 +734,12 @@ trait EC2 extends Service {
   ): Request[js.Object, AWSError] = js.native
   
   /**
-    * Removes your Amazon Web Services account from the launch permissions for the specified AMI. For more information, see Cancel sharing an AMI with your Amazon Web Services account in the Amazon Elastic Compute Cloud User Guide.
+    * Removes your Amazon Web Services account from the launch permissions for the specified AMI. For more information, see  Cancel having an AMI shared with your Amazon Web Services account in the Amazon EC2 User Guide.
     */
   def cancelImageLaunchPermission(): Request[CancelImageLaunchPermissionResult, AWSError] = js.native
   def cancelImageLaunchPermission(callback: js.Function2[/* err */ AWSError, /* data */ CancelImageLaunchPermissionResult, Unit]): Request[CancelImageLaunchPermissionResult, AWSError] = js.native
   /**
-    * Removes your Amazon Web Services account from the launch permissions for the specified AMI. For more information, see Cancel sharing an AMI with your Amazon Web Services account in the Amazon Elastic Compute Cloud User Guide.
+    * Removes your Amazon Web Services account from the launch permissions for the specified AMI. For more information, see  Cancel having an AMI shared with your Amazon Web Services account in the Amazon EC2 User Guide.
     */
   def cancelImageLaunchPermission(params: CancelImageLaunchPermissionRequest): Request[CancelImageLaunchPermissionResult, AWSError] = js.native
   def cancelImageLaunchPermission(
@@ -716,12 +776,12 @@ trait EC2 extends Service {
   ): Request[CancelReservedInstancesListingResult, AWSError] = js.native
   
   /**
-    * Cancels the specified Spot Fleet requests. After you cancel a Spot Fleet request, the Spot Fleet launches no new Spot Instances. You must specify whether the Spot Fleet should also terminate its Spot Instances. If you terminate the instances, the Spot Fleet request enters the cancelled_terminating state. Otherwise, the Spot Fleet request enters the cancelled_running state and the instances continue to run until they are interrupted or you terminate them manually.
+    * Cancels the specified Spot Fleet requests. After you cancel a Spot Fleet request, the Spot Fleet launches no new instances. You must also specify whether a canceled Spot Fleet request should terminate its instances. If you choose to terminate the instances, the Spot Fleet request enters the cancelled_terminating state. Otherwise, the Spot Fleet request enters the cancelled_running state and the instances continue to run until they are interrupted or you terminate them manually.
     */
   def cancelSpotFleetRequests(): Request[CancelSpotFleetRequestsResponse, AWSError] = js.native
   def cancelSpotFleetRequests(callback: js.Function2[/* err */ AWSError, /* data */ CancelSpotFleetRequestsResponse, Unit]): Request[CancelSpotFleetRequestsResponse, AWSError] = js.native
   /**
-    * Cancels the specified Spot Fleet requests. After you cancel a Spot Fleet request, the Spot Fleet launches no new Spot Instances. You must specify whether the Spot Fleet should also terminate its Spot Instances. If you terminate the instances, the Spot Fleet request enters the cancelled_terminating state. Otherwise, the Spot Fleet request enters the cancelled_running state and the instances continue to run until they are interrupted or you terminate them manually.
+    * Cancels the specified Spot Fleet requests. After you cancel a Spot Fleet request, the Spot Fleet launches no new instances. You must also specify whether a canceled Spot Fleet request should terminate its instances. If you choose to terminate the instances, the Spot Fleet request enters the cancelled_terminating state. Otherwise, the Spot Fleet request enters the cancelled_running state and the instances continue to run until they are interrupted or you terminate them manually.
     */
   def cancelSpotFleetRequests(params: CancelSpotFleetRequestsRequest): Request[CancelSpotFleetRequestsResponse, AWSError] = js.native
   def cancelSpotFleetRequests(
@@ -775,12 +835,12 @@ trait EC2 extends Service {
   ): Request[CopyFpgaImageResult, AWSError] = js.native
   
   /**
-    * Initiates the copy of an AMI. You can copy an AMI from one Region to another, or from a Region to an Outpost. You can't copy an AMI from an Outpost to a Region, from one Outpost to another, or within the same Outpost. To copy an AMI to another partition, see CreateStoreImageTask. To copy an AMI from one Region to another, specify the source Region using the SourceRegion parameter, and specify the destination Region using its endpoint. Copies of encrypted backing snapshots for the AMI are encrypted. Copies of unencrypted backing snapshots remain unencrypted, unless you set Encrypted during the copy operation. You cannot create an unencrypted copy of an encrypted backing snapshot. To copy an AMI from a Region to an Outpost, specify the source Region using the SourceRegion parameter, and specify the ARN of the destination Outpost using DestinationOutpostArn. Backing snapshots copied to an Outpost are encrypted by default using the default encryption key for the Region, or a different key that you specify in the request using KmsKeyId. Outposts do not support unencrypted snapshots. For more information,  Amazon EBS local snapshots on Outposts in the Amazon Elastic Compute Cloud User Guide. For more information about the prerequisites and limits when copying an AMI, see Copying an AMI in the Amazon Elastic Compute Cloud User Guide.
+    * Initiates the copy of an AMI. You can copy an AMI from one Region to another, or from a Region to an Outpost. You can't copy an AMI from an Outpost to a Region, from one Outpost to another, or within the same Outpost. To copy an AMI to another partition, see CreateStoreImageTask. To copy an AMI from one Region to another, specify the source Region using the SourceRegion parameter, and specify the destination Region using its endpoint. Copies of encrypted backing snapshots for the AMI are encrypted. Copies of unencrypted backing snapshots remain unencrypted, unless you set Encrypted during the copy operation. You cannot create an unencrypted copy of an encrypted backing snapshot. To copy an AMI from a Region to an Outpost, specify the source Region using the SourceRegion parameter, and specify the ARN of the destination Outpost using DestinationOutpostArn. Backing snapshots copied to an Outpost are encrypted by default using the default encryption key for the Region, or a different key that you specify in the request using KmsKeyId. Outposts do not support unencrypted snapshots. For more information,  Amazon EBS local snapshots on Outposts in the Amazon EC2 User Guide. For more information about the prerequisites and limits when copying an AMI, see Copy an AMI in the Amazon EC2 User Guide.
     */
   def copyImage(): Request[CopyImageResult, AWSError] = js.native
   def copyImage(callback: js.Function2[/* err */ AWSError, /* data */ CopyImageResult, Unit]): Request[CopyImageResult, AWSError] = js.native
   /**
-    * Initiates the copy of an AMI. You can copy an AMI from one Region to another, or from a Region to an Outpost. You can't copy an AMI from an Outpost to a Region, from one Outpost to another, or within the same Outpost. To copy an AMI to another partition, see CreateStoreImageTask. To copy an AMI from one Region to another, specify the source Region using the SourceRegion parameter, and specify the destination Region using its endpoint. Copies of encrypted backing snapshots for the AMI are encrypted. Copies of unencrypted backing snapshots remain unencrypted, unless you set Encrypted during the copy operation. You cannot create an unencrypted copy of an encrypted backing snapshot. To copy an AMI from a Region to an Outpost, specify the source Region using the SourceRegion parameter, and specify the ARN of the destination Outpost using DestinationOutpostArn. Backing snapshots copied to an Outpost are encrypted by default using the default encryption key for the Region, or a different key that you specify in the request using KmsKeyId. Outposts do not support unencrypted snapshots. For more information,  Amazon EBS local snapshots on Outposts in the Amazon Elastic Compute Cloud User Guide. For more information about the prerequisites and limits when copying an AMI, see Copying an AMI in the Amazon Elastic Compute Cloud User Guide.
+    * Initiates the copy of an AMI. You can copy an AMI from one Region to another, or from a Region to an Outpost. You can't copy an AMI from an Outpost to a Region, from one Outpost to another, or within the same Outpost. To copy an AMI to another partition, see CreateStoreImageTask. To copy an AMI from one Region to another, specify the source Region using the SourceRegion parameter, and specify the destination Region using its endpoint. Copies of encrypted backing snapshots for the AMI are encrypted. Copies of unencrypted backing snapshots remain unencrypted, unless you set Encrypted during the copy operation. You cannot create an unencrypted copy of an encrypted backing snapshot. To copy an AMI from a Region to an Outpost, specify the source Region using the SourceRegion parameter, and specify the ARN of the destination Outpost using DestinationOutpostArn. Backing snapshots copied to an Outpost are encrypted by default using the default encryption key for the Region, or a different key that you specify in the request using KmsKeyId. Outposts do not support unencrypted snapshots. For more information,  Amazon EBS local snapshots on Outposts in the Amazon EC2 User Guide. For more information about the prerequisites and limits when copying an AMI, see Copy an AMI in the Amazon EC2 User Guide.
     */
   def copyImage(params: CopyImageRequest): Request[CopyImageResult, AWSError] = js.native
   def copyImage(
@@ -1013,12 +1073,12 @@ trait EC2 extends Service {
   ): Request[CreateFpgaImageResult, AWSError] = js.native
   
   /**
-    * Creates an Amazon EBS-backed AMI from an Amazon EBS-backed instance that is either running or stopped. By default, when Amazon EC2 creates the new AMI, it reboots the instance so that it can take snapshots of the attached volumes while data is at rest, in order to ensure a consistent state. You can set the NoReboot parameter to true in the API request, or use the --no-reboot option in the CLI to prevent Amazon EC2 from shutting down and rebooting the instance.  If you choose to bypass the shutdown and reboot process by setting the NoReboot parameter to true in the API request, or by using the --no-reboot option in the CLI, we can't guarantee the file system integrity of the created image.  If you customized your instance with instance store volumes or Amazon EBS volumes in addition to the root device volume, the new AMI contains block device mapping information for those volumes. When you launch an instance from this new AMI, the instance automatically launches with those additional volumes. For more information, see Creating Amazon EBS-Backed Linux AMIs in the Amazon Elastic Compute Cloud User Guide.
+    * Creates an Amazon EBS-backed AMI from an Amazon EBS-backed instance that is either running or stopped. By default, when Amazon EC2 creates the new AMI, it reboots the instance so that it can take snapshots of the attached volumes while data is at rest, in order to ensure a consistent state. You can set the NoReboot parameter to true in the API request, or use the --no-reboot option in the CLI to prevent Amazon EC2 from shutting down and rebooting the instance.  If you choose to bypass the shutdown and reboot process by setting the NoReboot parameter to true in the API request, or by using the --no-reboot option in the CLI, we can't guarantee the file system integrity of the created image.  If you customized your instance with instance store volumes or Amazon EBS volumes in addition to the root device volume, the new AMI contains block device mapping information for those volumes. When you launch an instance from this new AMI, the instance automatically launches with those additional volumes. For more information, see Create an Amazon EBS-backed Linux AMI in the Amazon Elastic Compute Cloud User Guide.
     */
   def createImage(): Request[CreateImageResult, AWSError] = js.native
   def createImage(callback: js.Function2[/* err */ AWSError, /* data */ CreateImageResult, Unit]): Request[CreateImageResult, AWSError] = js.native
   /**
-    * Creates an Amazon EBS-backed AMI from an Amazon EBS-backed instance that is either running or stopped. By default, when Amazon EC2 creates the new AMI, it reboots the instance so that it can take snapshots of the attached volumes while data is at rest, in order to ensure a consistent state. You can set the NoReboot parameter to true in the API request, or use the --no-reboot option in the CLI to prevent Amazon EC2 from shutting down and rebooting the instance.  If you choose to bypass the shutdown and reboot process by setting the NoReboot parameter to true in the API request, or by using the --no-reboot option in the CLI, we can't guarantee the file system integrity of the created image.  If you customized your instance with instance store volumes or Amazon EBS volumes in addition to the root device volume, the new AMI contains block device mapping information for those volumes. When you launch an instance from this new AMI, the instance automatically launches with those additional volumes. For more information, see Creating Amazon EBS-Backed Linux AMIs in the Amazon Elastic Compute Cloud User Guide.
+    * Creates an Amazon EBS-backed AMI from an Amazon EBS-backed instance that is either running or stopped. By default, when Amazon EC2 creates the new AMI, it reboots the instance so that it can take snapshots of the attached volumes while data is at rest, in order to ensure a consistent state. You can set the NoReboot parameter to true in the API request, or use the --no-reboot option in the CLI to prevent Amazon EC2 from shutting down and rebooting the instance.  If you choose to bypass the shutdown and reboot process by setting the NoReboot parameter to true in the API request, or by using the --no-reboot option in the CLI, we can't guarantee the file system integrity of the created image.  If you customized your instance with instance store volumes or Amazon EBS volumes in addition to the root device volume, the new AMI contains block device mapping information for those volumes. When you launch an instance from this new AMI, the instance automatically launches with those additional volumes. For more information, see Create an Amazon EBS-backed Linux AMI in the Amazon Elastic Compute Cloud User Guide.
     */
   def createImage(params: CreateImageRequest): Request[CreateImageResult, AWSError] = js.native
   def createImage(
@@ -1095,6 +1155,20 @@ trait EC2 extends Service {
     params: CreateIpamPoolRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateIpamPoolResult, Unit]
   ): Request[CreateIpamPoolResult, AWSError] = js.native
+  
+  /**
+    * Creates an IPAM resource discovery. A resource discovery is an IPAM component that enables IPAM to manage and monitor resources that belong to the owning account.
+    */
+  def createIpamResourceDiscovery(): Request[CreateIpamResourceDiscoveryResult, AWSError] = js.native
+  def createIpamResourceDiscovery(callback: js.Function2[/* err */ AWSError, /* data */ CreateIpamResourceDiscoveryResult, Unit]): Request[CreateIpamResourceDiscoveryResult, AWSError] = js.native
+  /**
+    * Creates an IPAM resource discovery. A resource discovery is an IPAM component that enables IPAM to manage and monitor resources that belong to the owning account.
+    */
+  def createIpamResourceDiscovery(params: CreateIpamResourceDiscoveryRequest): Request[CreateIpamResourceDiscoveryResult, AWSError] = js.native
+  def createIpamResourceDiscovery(
+    params: CreateIpamResourceDiscoveryRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateIpamResourceDiscoveryResult, Unit]
+  ): Request[CreateIpamResourceDiscoveryResult, AWSError] = js.native
   
   /**
     * Create an IPAM scope. In IPAM, a scope is the highest-level container within IPAM. An IPAM contains two default scopes. Each scope represents the IP space for a single network. The private scope is intended for all private IP address space. The public scope is intended for all public IP address space. Scopes enable you to reuse IP addresses across multiple unconnected networks without causing IP address overlap or conflict. For more information, see Add a scope in the Amazon VPC IPAM User Guide.
@@ -1298,12 +1372,12 @@ trait EC2 extends Service {
   ): Request[CreateNetworkInsightsAccessScopeResult, AWSError] = js.native
   
   /**
-    * Creates a path to analyze for reachability. Reachability Analyzer enables you to analyze and debug network reachability between two resources in your virtual private cloud (VPC). For more information, see What is Reachability Analyzer.
+    * Creates a path to analyze for reachability. Reachability Analyzer enables you to analyze and debug network reachability between two resources in your virtual private cloud (VPC). For more information, see the Reachability Analyzer Guide.
     */
   def createNetworkInsightsPath(): Request[CreateNetworkInsightsPathResult, AWSError] = js.native
   def createNetworkInsightsPath(callback: js.Function2[/* err */ AWSError, /* data */ CreateNetworkInsightsPathResult, Unit]): Request[CreateNetworkInsightsPathResult, AWSError] = js.native
   /**
-    * Creates a path to analyze for reachability. Reachability Analyzer enables you to analyze and debug network reachability between two resources in your virtual private cloud (VPC). For more information, see What is Reachability Analyzer.
+    * Creates a path to analyze for reachability. Reachability Analyzer enables you to analyze and debug network reachability between two resources in your virtual private cloud (VPC). For more information, see the Reachability Analyzer Guide.
     */
   def createNetworkInsightsPath(params: CreateNetworkInsightsPathRequest): Request[CreateNetworkInsightsPathResult, AWSError] = js.native
   def createNetworkInsightsPath(
@@ -1398,12 +1472,12 @@ trait EC2 extends Service {
   ): Request[CreateReservedInstancesListingResult, AWSError] = js.native
   
   /**
-    * Starts a task that restores an AMI from an Amazon S3 object that was previously created by using CreateStoreImageTask. To use this API, you must have the required permissions. For more information, see Permissions for storing and restoring AMIs using Amazon S3 in the Amazon Elastic Compute Cloud User Guide. For more information, see Store and restore an AMI using Amazon S3 in the Amazon Elastic Compute Cloud User Guide.
+    * Starts a task that restores an AMI from an Amazon S3 object that was previously created by using CreateStoreImageTask. To use this API, you must have the required permissions. For more information, see Permissions for storing and restoring AMIs using Amazon S3 in the Amazon EC2 User Guide. For more information, see Store and restore an AMI using Amazon S3 in the Amazon EC2 User Guide.
     */
   def createRestoreImageTask(): Request[CreateRestoreImageTaskResult, AWSError] = js.native
   def createRestoreImageTask(callback: js.Function2[/* err */ AWSError, /* data */ CreateRestoreImageTaskResult, Unit]): Request[CreateRestoreImageTaskResult, AWSError] = js.native
   /**
-    * Starts a task that restores an AMI from an Amazon S3 object that was previously created by using CreateStoreImageTask. To use this API, you must have the required permissions. For more information, see Permissions for storing and restoring AMIs using Amazon S3 in the Amazon Elastic Compute Cloud User Guide. For more information, see Store and restore an AMI using Amazon S3 in the Amazon Elastic Compute Cloud User Guide.
+    * Starts a task that restores an AMI from an Amazon S3 object that was previously created by using CreateStoreImageTask. To use this API, you must have the required permissions. For more information, see Permissions for storing and restoring AMIs using Amazon S3 in the Amazon EC2 User Guide. For more information, see Store and restore an AMI using Amazon S3 in the Amazon EC2 User Guide.
     */
   def createRestoreImageTask(params: CreateRestoreImageTaskRequest): Request[CreateRestoreImageTaskResult, AWSError] = js.native
   def createRestoreImageTask(
@@ -1454,12 +1528,12 @@ trait EC2 extends Service {
   ): Request[CreateSecurityGroupResult, AWSError] = js.native
   
   /**
-    * Creates a snapshot of an EBS volume and stores it in Amazon S3. You can use snapshots for backups, to make copies of EBS volumes, and to save data before shutting down an instance. You can create snapshots of volumes in a Region and volumes on an Outpost. If you create a snapshot of a volume in a Region, the snapshot must be stored in the same Region as the volume. If you create a snapshot of a volume on an Outpost, the snapshot can be stored on the same Outpost as the volume, or in the Region for that Outpost. When a snapshot is created, any Amazon Web Services Marketplace product codes that are associated with the source volume are propagated to the snapshot. You can take a snapshot of an attached volume that is in use. However, snapshots only capture data that has been written to your Amazon EBS volume at the time the snapshot command is issued; this might exclude any data that has been cached by any applications or the operating system. If you can pause any file systems on the volume long enough to take a snapshot, your snapshot should be complete. However, if you cannot pause all file writes to the volume, you should unmount the volume from within the instance, issue the snapshot command, and then remount the volume to ensure a consistent and complete snapshot. You may remount and use your volume while the snapshot status is pending. To create a snapshot for Amazon EBS volumes that serve as root devices, you should stop the instance before taking the snapshot. Snapshots that are taken from encrypted volumes are automatically encrypted. Volumes that are created from encrypted snapshots are also automatically encrypted. Your encrypted volumes and any associated snapshots always remain protected. You can tag your snapshots during creation. For more information, see Tag your Amazon EC2 resources in the Amazon Elastic Compute Cloud User Guide. For more information, see Amazon Elastic Block Store and Amazon EBS encryption in the Amazon Elastic Compute Cloud User Guide.
+    * Creates a snapshot of an EBS volume and stores it in Amazon S3. You can use snapshots for backups, to make copies of EBS volumes, and to save data before shutting down an instance. You can create snapshots of volumes in a Region and volumes on an Outpost. If you create a snapshot of a volume in a Region, the snapshot must be stored in the same Region as the volume. If you create a snapshot of a volume on an Outpost, the snapshot can be stored on the same Outpost as the volume, or in the Region for that Outpost. When a snapshot is created, any Amazon Web Services Marketplace product codes that are associated with the source volume are propagated to the snapshot. You can take a snapshot of an attached volume that is in use. However, snapshots only capture data that has been written to your Amazon EBS volume at the time the snapshot command is issued; this might exclude any data that has been cached by any applications or the operating system. If you can pause any file systems on the volume long enough to take a snapshot, your snapshot should be complete. However, if you cannot pause all file writes to the volume, you should unmount the volume from within the instance, issue the snapshot command, and then remount the volume to ensure a consistent and complete snapshot. You may remount and use your volume while the snapshot status is pending. When you create a snapshot for an EBS volume that serves as a root device, we recommend that you stop the instance before taking the snapshot. Snapshots that are taken from encrypted volumes are automatically encrypted. Volumes that are created from encrypted snapshots are also automatically encrypted. Your encrypted volumes and any associated snapshots always remain protected. You can tag your snapshots during creation. For more information, see Tag your Amazon EC2 resources in the Amazon Elastic Compute Cloud User Guide. For more information, see Amazon Elastic Block Store and Amazon EBS encryption in the Amazon Elastic Compute Cloud User Guide.
     */
   def createSnapshot(): Request[Snapshot, AWSError] = js.native
   def createSnapshot(callback: js.Function2[/* err */ AWSError, /* data */ Snapshot, Unit]): Request[Snapshot, AWSError] = js.native
   /**
-    * Creates a snapshot of an EBS volume and stores it in Amazon S3. You can use snapshots for backups, to make copies of EBS volumes, and to save data before shutting down an instance. You can create snapshots of volumes in a Region and volumes on an Outpost. If you create a snapshot of a volume in a Region, the snapshot must be stored in the same Region as the volume. If you create a snapshot of a volume on an Outpost, the snapshot can be stored on the same Outpost as the volume, or in the Region for that Outpost. When a snapshot is created, any Amazon Web Services Marketplace product codes that are associated with the source volume are propagated to the snapshot. You can take a snapshot of an attached volume that is in use. However, snapshots only capture data that has been written to your Amazon EBS volume at the time the snapshot command is issued; this might exclude any data that has been cached by any applications or the operating system. If you can pause any file systems on the volume long enough to take a snapshot, your snapshot should be complete. However, if you cannot pause all file writes to the volume, you should unmount the volume from within the instance, issue the snapshot command, and then remount the volume to ensure a consistent and complete snapshot. You may remount and use your volume while the snapshot status is pending. To create a snapshot for Amazon EBS volumes that serve as root devices, you should stop the instance before taking the snapshot. Snapshots that are taken from encrypted volumes are automatically encrypted. Volumes that are created from encrypted snapshots are also automatically encrypted. Your encrypted volumes and any associated snapshots always remain protected. You can tag your snapshots during creation. For more information, see Tag your Amazon EC2 resources in the Amazon Elastic Compute Cloud User Guide. For more information, see Amazon Elastic Block Store and Amazon EBS encryption in the Amazon Elastic Compute Cloud User Guide.
+    * Creates a snapshot of an EBS volume and stores it in Amazon S3. You can use snapshots for backups, to make copies of EBS volumes, and to save data before shutting down an instance. You can create snapshots of volumes in a Region and volumes on an Outpost. If you create a snapshot of a volume in a Region, the snapshot must be stored in the same Region as the volume. If you create a snapshot of a volume on an Outpost, the snapshot can be stored on the same Outpost as the volume, or in the Region for that Outpost. When a snapshot is created, any Amazon Web Services Marketplace product codes that are associated with the source volume are propagated to the snapshot. You can take a snapshot of an attached volume that is in use. However, snapshots only capture data that has been written to your Amazon EBS volume at the time the snapshot command is issued; this might exclude any data that has been cached by any applications or the operating system. If you can pause any file systems on the volume long enough to take a snapshot, your snapshot should be complete. However, if you cannot pause all file writes to the volume, you should unmount the volume from within the instance, issue the snapshot command, and then remount the volume to ensure a consistent and complete snapshot. You may remount and use your volume while the snapshot status is pending. When you create a snapshot for an EBS volume that serves as a root device, we recommend that you stop the instance before taking the snapshot. Snapshots that are taken from encrypted volumes are automatically encrypted. Volumes that are created from encrypted snapshots are also automatically encrypted. Your encrypted volumes and any associated snapshots always remain protected. You can tag your snapshots during creation. For more information, see Tag your Amazon EC2 resources in the Amazon Elastic Compute Cloud User Guide. For more information, see Amazon Elastic Block Store and Amazon EBS encryption in the Amazon Elastic Compute Cloud User Guide.
     */
   def createSnapshot(params: CreateSnapshotRequest): Request[Snapshot, AWSError] = js.native
   def createSnapshot(
@@ -1496,12 +1570,12 @@ trait EC2 extends Service {
   ): Request[CreateSpotDatafeedSubscriptionResult, AWSError] = js.native
   
   /**
-    * Stores an AMI as a single object in an Amazon S3 bucket. To use this API, you must have the required permissions. For more information, see Permissions for storing and restoring AMIs using Amazon S3 in the Amazon Elastic Compute Cloud User Guide. For more information, see Store and restore an AMI using Amazon S3 in the Amazon Elastic Compute Cloud User Guide.
+    * Stores an AMI as a single object in an Amazon S3 bucket. To use this API, you must have the required permissions. For more information, see Permissions for storing and restoring AMIs using Amazon S3 in the Amazon EC2 User Guide. For more information, see Store and restore an AMI using Amazon S3 in the Amazon EC2 User Guide.
     */
   def createStoreImageTask(): Request[CreateStoreImageTaskResult, AWSError] = js.native
   def createStoreImageTask(callback: js.Function2[/* err */ AWSError, /* data */ CreateStoreImageTaskResult, Unit]): Request[CreateStoreImageTaskResult, AWSError] = js.native
   /**
-    * Stores an AMI as a single object in an Amazon S3 bucket. To use this API, you must have the required permissions. For more information, see Permissions for storing and restoring AMIs using Amazon S3 in the Amazon Elastic Compute Cloud User Guide. For more information, see Store and restore an AMI using Amazon S3 in the Amazon Elastic Compute Cloud User Guide.
+    * Stores an AMI as a single object in an Amazon S3 bucket. To use this API, you must have the required permissions. For more information, see Permissions for storing and restoring AMIs using Amazon S3 in the Amazon EC2 User Guide. For more information, see Store and restore an AMI using Amazon S3 in the Amazon EC2 User Guide.
     */
   def createStoreImageTask(params: CreateStoreImageTaskRequest): Request[CreateStoreImageTaskResult, AWSError] = js.native
   def createStoreImageTask(
@@ -1510,12 +1584,12 @@ trait EC2 extends Service {
   ): Request[CreateStoreImageTaskResult, AWSError] = js.native
   
   /**
-    * Creates a subnet in a specified VPC. You must specify an IPv4 CIDR block for the subnet. After you create a subnet, you can't change its CIDR block. The allowed block size is between a /16 netmask (65,536 IP addresses) and /28 netmask (16 IP addresses). The CIDR block must not overlap with the CIDR block of an existing subnet in the VPC. If you've associated an IPv6 CIDR block with your VPC, you can create a subnet with an IPv6 CIDR block that uses a /64 prefix length.   Amazon Web Services reserves both the first four and the last IPv4 address in each subnet's CIDR block. They're not available for use.  If you add more than one subnet to a VPC, they're set up in a star topology with a logical router in the middle. When you stop an instance in a subnet, it retains its private IPv4 address. It's therefore possible to have a subnet with no running instances (they're all stopped), but no remaining IP addresses available. For more information about subnets, see Your VPC and subnets in the Amazon Virtual Private Cloud User Guide.
+    * Creates a subnet in the specified VPC. For an IPv4 only subnet, specify an IPv4 CIDR block. If the VPC has an IPv6 CIDR block, you can create an IPv6 only subnet or a dual stack subnet instead. For an IPv6 only subnet, specify an IPv6 CIDR block. For a dual stack subnet, specify both an IPv4 CIDR block and an IPv6 CIDR block. A subnet CIDR block must not overlap the CIDR block of an existing subnet in the VPC. After you create a subnet, you can't change its CIDR block. The allowed size for an IPv4 subnet is between a /28 netmask (16 IP addresses) and a /16 netmask (65,536 IP addresses). Amazon Web Services reserves both the first four and the last IPv4 address in each subnet's CIDR block. They're not available for your use. If you've associated an IPv6 CIDR block with your VPC, you can associate an IPv6 CIDR block with a subnet when you create it. The allowed block size for an IPv6 subnet is a /64 netmask. If you add more than one subnet to a VPC, they're set up in a star topology with a logical router in the middle. When you stop an instance in a subnet, it retains its private IPv4 address. It's therefore possible to have a subnet with no running instances (they're all stopped), but no remaining IP addresses available. For more information, see Subnets in the Amazon Virtual Private Cloud User Guide.
     */
   def createSubnet(): Request[CreateSubnetResult, AWSError] = js.native
   def createSubnet(callback: js.Function2[/* err */ AWSError, /* data */ CreateSubnetResult, Unit]): Request[CreateSubnetResult, AWSError] = js.native
   /**
-    * Creates a subnet in a specified VPC. You must specify an IPv4 CIDR block for the subnet. After you create a subnet, you can't change its CIDR block. The allowed block size is between a /16 netmask (65,536 IP addresses) and /28 netmask (16 IP addresses). The CIDR block must not overlap with the CIDR block of an existing subnet in the VPC. If you've associated an IPv6 CIDR block with your VPC, you can create a subnet with an IPv6 CIDR block that uses a /64 prefix length.   Amazon Web Services reserves both the first four and the last IPv4 address in each subnet's CIDR block. They're not available for use.  If you add more than one subnet to a VPC, they're set up in a star topology with a logical router in the middle. When you stop an instance in a subnet, it retains its private IPv4 address. It's therefore possible to have a subnet with no running instances (they're all stopped), but no remaining IP addresses available. For more information about subnets, see Your VPC and subnets in the Amazon Virtual Private Cloud User Guide.
+    * Creates a subnet in the specified VPC. For an IPv4 only subnet, specify an IPv4 CIDR block. If the VPC has an IPv6 CIDR block, you can create an IPv6 only subnet or a dual stack subnet instead. For an IPv6 only subnet, specify an IPv6 CIDR block. For a dual stack subnet, specify both an IPv4 CIDR block and an IPv6 CIDR block. A subnet CIDR block must not overlap the CIDR block of an existing subnet in the VPC. After you create a subnet, you can't change its CIDR block. The allowed size for an IPv4 subnet is between a /28 netmask (16 IP addresses) and a /16 netmask (65,536 IP addresses). Amazon Web Services reserves both the first four and the last IPv4 address in each subnet's CIDR block. They're not available for your use. If you've associated an IPv6 CIDR block with your VPC, you can associate an IPv6 CIDR block with a subnet when you create it. The allowed block size for an IPv6 subnet is a /64 netmask. If you add more than one subnet to a VPC, they're set up in a star topology with a logical router in the middle. When you stop an instance in a subnet, it retains its private IPv4 address. It's therefore possible to have a subnet with no running instances (they're all stopped), but no remaining IP addresses available. For more information, see Subnets in the Amazon Virtual Private Cloud User Guide.
     */
   def createSubnet(params: CreateSubnetRequest): Request[CreateSubnetResult, AWSError] = js.native
   def createSubnet(
@@ -1777,6 +1851,64 @@ trait EC2 extends Service {
   ): Request[CreateTransitGatewayVpcAttachmentResult, AWSError] = js.native
   
   /**
+    * An Amazon Web Services Verified Access endpoint is where you define your application along with an optional endpoint-level access policy.
+    */
+  def createVerifiedAccessEndpoint(): Request[CreateVerifiedAccessEndpointResult, AWSError] = js.native
+  def createVerifiedAccessEndpoint(callback: js.Function2[/* err */ AWSError, /* data */ CreateVerifiedAccessEndpointResult, Unit]): Request[CreateVerifiedAccessEndpointResult, AWSError] = js.native
+  /**
+    * An Amazon Web Services Verified Access endpoint is where you define your application along with an optional endpoint-level access policy.
+    */
+  def createVerifiedAccessEndpoint(params: CreateVerifiedAccessEndpointRequest): Request[CreateVerifiedAccessEndpointResult, AWSError] = js.native
+  def createVerifiedAccessEndpoint(
+    params: CreateVerifiedAccessEndpointRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateVerifiedAccessEndpointResult, Unit]
+  ): Request[CreateVerifiedAccessEndpointResult, AWSError] = js.native
+  
+  /**
+    * An Amazon Web Services Verified Access group is a collection of Amazon Web Services Verified Access endpoints who's associated applications have similar security requirements. Each instance within a Verified Access group shares an Verified Access policy. For example, you can group all Verified Access instances associated with "sales" applications together and use one common Verified Access policy.
+    */
+  def createVerifiedAccessGroup(): Request[CreateVerifiedAccessGroupResult, AWSError] = js.native
+  def createVerifiedAccessGroup(callback: js.Function2[/* err */ AWSError, /* data */ CreateVerifiedAccessGroupResult, Unit]): Request[CreateVerifiedAccessGroupResult, AWSError] = js.native
+  /**
+    * An Amazon Web Services Verified Access group is a collection of Amazon Web Services Verified Access endpoints who's associated applications have similar security requirements. Each instance within a Verified Access group shares an Verified Access policy. For example, you can group all Verified Access instances associated with "sales" applications together and use one common Verified Access policy.
+    */
+  def createVerifiedAccessGroup(params: CreateVerifiedAccessGroupRequest): Request[CreateVerifiedAccessGroupResult, AWSError] = js.native
+  def createVerifiedAccessGroup(
+    params: CreateVerifiedAccessGroupRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateVerifiedAccessGroupResult, Unit]
+  ): Request[CreateVerifiedAccessGroupResult, AWSError] = js.native
+  
+  /**
+    * An Amazon Web Services Verified Access instance is a regional entity that evaluates application requests and grants access only when your security requirements are met.
+    */
+  def createVerifiedAccessInstance(): Request[CreateVerifiedAccessInstanceResult, AWSError] = js.native
+  def createVerifiedAccessInstance(callback: js.Function2[/* err */ AWSError, /* data */ CreateVerifiedAccessInstanceResult, Unit]): Request[CreateVerifiedAccessInstanceResult, AWSError] = js.native
+  /**
+    * An Amazon Web Services Verified Access instance is a regional entity that evaluates application requests and grants access only when your security requirements are met.
+    */
+  def createVerifiedAccessInstance(params: CreateVerifiedAccessInstanceRequest): Request[CreateVerifiedAccessInstanceResult, AWSError] = js.native
+  def createVerifiedAccessInstance(
+    params: CreateVerifiedAccessInstanceRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateVerifiedAccessInstanceResult, Unit]
+  ): Request[CreateVerifiedAccessInstanceResult, AWSError] = js.native
+  
+  /**
+    * A trust provider is a third-party entity that creates, maintains, and manages identity information for users and devices. When an application request is made, the identity information sent by the trust provider is evaluated by Verified Access before allowing or denying the application request.
+    */
+  def createVerifiedAccessTrustProvider(): Request[CreateVerifiedAccessTrustProviderResult, AWSError] = js.native
+  def createVerifiedAccessTrustProvider(
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateVerifiedAccessTrustProviderResult, Unit]
+  ): Request[CreateVerifiedAccessTrustProviderResult, AWSError] = js.native
+  /**
+    * A trust provider is a third-party entity that creates, maintains, and manages identity information for users and devices. When an application request is made, the identity information sent by the trust provider is evaluated by Verified Access before allowing or denying the application request.
+    */
+  def createVerifiedAccessTrustProvider(params: CreateVerifiedAccessTrustProviderRequest): Request[CreateVerifiedAccessTrustProviderResult, AWSError] = js.native
+  def createVerifiedAccessTrustProvider(
+    params: CreateVerifiedAccessTrustProviderRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateVerifiedAccessTrustProviderResult, Unit]
+  ): Request[CreateVerifiedAccessTrustProviderResult, AWSError] = js.native
+  
+  /**
     * Creates an EBS volume that can be attached to an instance in the same Availability Zone. You can create a new empty volume or restore a volume from an EBS snapshot. Any Amazon Web Services Marketplace product codes from the snapshot are propagated to the volume. You can create encrypted volumes. Encrypted volumes must be attached to instances that support Amazon EBS encryption. Volumes that are created from encrypted snapshots are also automatically encrypted. For more information, see Amazon EBS encryption in the Amazon Elastic Compute Cloud User Guide. You can tag your volumes during creation. For more information, see Tag your Amazon EC2 resources in the Amazon Elastic Compute Cloud User Guide. For more information, see Create an Amazon EBS volume in the Amazon Elastic Compute Cloud User Guide.
     */
   def createVolume(): Request[Volume, AWSError] = js.native
@@ -1788,12 +1920,12 @@ trait EC2 extends Service {
   def createVolume(params: CreateVolumeRequest, callback: js.Function2[/* err */ AWSError, /* data */ Volume, Unit]): Request[Volume, AWSError] = js.native
   
   /**
-    * Creates a VPC with the specified IPv4 CIDR block. The smallest VPC you can create uses a /28 netmask (16 IPv4 addresses), and the largest uses a /16 netmask (65,536 IPv4 addresses). For more information about how large to make your VPC, see Your VPC and subnets in the Amazon Virtual Private Cloud User Guide. You can optionally request an IPv6 CIDR block for the VPC. You can request an Amazon-provided IPv6 CIDR block from Amazon's pool of IPv6 addresses, or an IPv6 CIDR block from an IPv6 address pool that you provisioned through bring your own IP addresses (BYOIP). By default, each instance you launch in the VPC has the default DHCP options, which include only a default DNS server that we provide (AmazonProvidedDNS). For more information, see DHCP options sets in the Amazon Virtual Private Cloud User Guide. You can specify the instance tenancy value for the VPC when you create it. You can't change this value for the VPC after you create it. For more information, see Dedicated Instances in the Amazon Elastic Compute Cloud User Guide.
+    * Creates a VPC with the specified CIDR blocks. For more information, see VPC CIDR blocks in the Amazon Virtual Private Cloud User Guide. You can optionally request an IPv6 CIDR block for the VPC. You can request an Amazon-provided IPv6 CIDR block from Amazon's pool of IPv6 addresses, or an IPv6 CIDR block from an IPv6 address pool that you provisioned through bring your own IP addresses (BYOIP). By default, each instance that you launch in the VPC has the default DHCP options, which include only a default DNS server that we provide (AmazonProvidedDNS). For more information, see DHCP option sets in the Amazon Virtual Private Cloud User Guide. You can specify the instance tenancy value for the VPC when you create it. You can't change this value for the VPC after you create it. For more information, see Dedicated Instances in the Amazon Elastic Compute Cloud User Guide.
     */
   def createVpc(): Request[CreateVpcResult, AWSError] = js.native
   def createVpc(callback: js.Function2[/* err */ AWSError, /* data */ CreateVpcResult, Unit]): Request[CreateVpcResult, AWSError] = js.native
   /**
-    * Creates a VPC with the specified IPv4 CIDR block. The smallest VPC you can create uses a /28 netmask (16 IPv4 addresses), and the largest uses a /16 netmask (65,536 IPv4 addresses). For more information about how large to make your VPC, see Your VPC and subnets in the Amazon Virtual Private Cloud User Guide. You can optionally request an IPv6 CIDR block for the VPC. You can request an Amazon-provided IPv6 CIDR block from Amazon's pool of IPv6 addresses, or an IPv6 CIDR block from an IPv6 address pool that you provisioned through bring your own IP addresses (BYOIP). By default, each instance you launch in the VPC has the default DHCP options, which include only a default DNS server that we provide (AmazonProvidedDNS). For more information, see DHCP options sets in the Amazon Virtual Private Cloud User Guide. You can specify the instance tenancy value for the VPC when you create it. You can't change this value for the VPC after you create it. For more information, see Dedicated Instances in the Amazon Elastic Compute Cloud User Guide.
+    * Creates a VPC with the specified CIDR blocks. For more information, see VPC CIDR blocks in the Amazon Virtual Private Cloud User Guide. You can optionally request an IPv6 CIDR block for the VPC. You can request an Amazon-provided IPv6 CIDR block from Amazon's pool of IPv6 addresses, or an IPv6 CIDR block from an IPv6 address pool that you provisioned through bring your own IP addresses (BYOIP). By default, each instance that you launch in the VPC has the default DHCP options, which include only a default DNS server that we provide (AmazonProvidedDNS). For more information, see DHCP option sets in the Amazon Virtual Private Cloud User Guide. You can specify the instance tenancy value for the VPC when you create it. You can't change this value for the VPC after you create it. For more information, see Dedicated Instances in the Amazon Elastic Compute Cloud User Guide.
     */
   def createVpc(params: CreateVpcRequest): Request[CreateVpcResult, AWSError] = js.native
   def createVpc(
@@ -1832,14 +1964,14 @@ trait EC2 extends Service {
   ): Request[CreateVpcEndpointConnectionNotificationResult, AWSError] = js.native
   
   /**
-    * Creates a VPC endpoint service to which service consumers (Amazon Web Services accounts, IAM users, and IAM roles) can connect. Before you create an endpoint service, you must create one of the following for your service:   A Network Load Balancer. Service consumers connect to your service using an interface endpoint.   A Gateway Load Balancer. Service consumers connect to your service using a Gateway Load Balancer endpoint.   If you set the private DNS name, you must prove that you own the private DNS domain name. For more information, see the Amazon Web Services PrivateLink Guide.
+    * Creates a VPC endpoint service to which service consumers (Amazon Web Services accounts, users, and IAM roles) can connect. Before you create an endpoint service, you must create one of the following for your service:   A Network Load Balancer. Service consumers connect to your service using an interface endpoint.   A Gateway Load Balancer. Service consumers connect to your service using a Gateway Load Balancer endpoint.   If you set the private DNS name, you must prove that you own the private DNS domain name. For more information, see the Amazon Web Services PrivateLink Guide.
     */
   def createVpcEndpointServiceConfiguration(): Request[CreateVpcEndpointServiceConfigurationResult, AWSError] = js.native
   def createVpcEndpointServiceConfiguration(
     callback: js.Function2[/* err */ AWSError, /* data */ CreateVpcEndpointServiceConfigurationResult, Unit]
   ): Request[CreateVpcEndpointServiceConfigurationResult, AWSError] = js.native
   /**
-    * Creates a VPC endpoint service to which service consumers (Amazon Web Services accounts, IAM users, and IAM roles) can connect. Before you create an endpoint service, you must create one of the following for your service:   A Network Load Balancer. Service consumers connect to your service using an interface endpoint.   A Gateway Load Balancer. Service consumers connect to your service using a Gateway Load Balancer endpoint.   If you set the private DNS name, you must prove that you own the private DNS domain name. For more information, see the Amazon Web Services PrivateLink Guide.
+    * Creates a VPC endpoint service to which service consumers (Amazon Web Services accounts, users, and IAM roles) can connect. Before you create an endpoint service, you must create one of the following for your service:   A Network Load Balancer. Service consumers connect to your service using an interface endpoint.   A Gateway Load Balancer. Service consumers connect to your service using a Gateway Load Balancer endpoint.   If you set the private DNS name, you must prove that you own the private DNS domain name. For more information, see the Amazon Web Services PrivateLink Guide.
     */
   def createVpcEndpointServiceConfiguration(params: CreateVpcEndpointServiceConfigurationRequest): Request[CreateVpcEndpointServiceConfigurationResult, AWSError] = js.native
   def createVpcEndpointServiceConfiguration(
@@ -2016,12 +2148,12 @@ trait EC2 extends Service {
   ): Request[DeleteEgressOnlyInternetGatewayResult, AWSError] = js.native
   
   /**
-    * Deletes the specified EC2 Fleet. After you delete an EC2 Fleet, it launches no new instances. You must specify whether a deleted EC2 Fleet should also terminate its instances. If you choose to terminate the instances, the EC2 Fleet enters the deleted_terminating state. Otherwise, the EC2 Fleet enters the deleted_running state, and the instances continue to run until they are interrupted or you terminate them manually. For instant fleets, EC2 Fleet must terminate the instances when the fleet is deleted. A deleted instant fleet with running instances is not supported.  Restrictions    You can delete up to 25 instant fleets in a single request. If you exceed this number, no instant fleets are deleted and an error is returned. There is no restriction on the number of fleets of type maintain or request that can be deleted in a single request.   Up to 1000 instances can be terminated in a single request to delete instant fleets.   For more information, see Delete an EC2 Fleet in the Amazon EC2 User Guide.
+    * Deletes the specified EC2 Fleets. After you delete an EC2 Fleet, it launches no new instances. You must also specify whether a deleted EC2 Fleet should terminate its instances. If you choose to terminate the instances, the EC2 Fleet enters the deleted_terminating state. Otherwise, the EC2 Fleet enters the deleted_running state, and the instances continue to run until they are interrupted or you terminate them manually. For instant fleets, EC2 Fleet must terminate the instances when the fleet is deleted. A deleted instant fleet with running instances is not supported.  Restrictions    You can delete up to 25 instant fleets in a single request. If you exceed this number, no instant fleets are deleted and an error is returned. There is no restriction on the number of fleets of type maintain or request that can be deleted in a single request.   Up to 1000 instances can be terminated in a single request to delete instant fleets.   For more information, see Delete an EC2 Fleet in the Amazon EC2 User Guide.
     */
   def deleteFleets(): Request[DeleteFleetsResult, AWSError] = js.native
   def deleteFleets(callback: js.Function2[/* err */ AWSError, /* data */ DeleteFleetsResult, Unit]): Request[DeleteFleetsResult, AWSError] = js.native
   /**
-    * Deletes the specified EC2 Fleet. After you delete an EC2 Fleet, it launches no new instances. You must specify whether a deleted EC2 Fleet should also terminate its instances. If you choose to terminate the instances, the EC2 Fleet enters the deleted_terminating state. Otherwise, the EC2 Fleet enters the deleted_running state, and the instances continue to run until they are interrupted or you terminate them manually. For instant fleets, EC2 Fleet must terminate the instances when the fleet is deleted. A deleted instant fleet with running instances is not supported.  Restrictions    You can delete up to 25 instant fleets in a single request. If you exceed this number, no instant fleets are deleted and an error is returned. There is no restriction on the number of fleets of type maintain or request that can be deleted in a single request.   Up to 1000 instances can be terminated in a single request to delete instant fleets.   For more information, see Delete an EC2 Fleet in the Amazon EC2 User Guide.
+    * Deletes the specified EC2 Fleets. After you delete an EC2 Fleet, it launches no new instances. You must also specify whether a deleted EC2 Fleet should terminate its instances. If you choose to terminate the instances, the EC2 Fleet enters the deleted_terminating state. Otherwise, the EC2 Fleet enters the deleted_running state, and the instances continue to run until they are interrupted or you terminate them manually. For instant fleets, EC2 Fleet must terminate the instances when the fleet is deleted. A deleted instant fleet with running instances is not supported.  Restrictions    You can delete up to 25 instant fleets in a single request. If you exceed this number, no instant fleets are deleted and an error is returned. There is no restriction on the number of fleets of type maintain or request that can be deleted in a single request.   Up to 1000 instances can be terminated in a single request to delete instant fleets.   For more information, see Delete an EC2 Fleet in the Amazon EC2 User Guide.
     */
   def deleteFleets(params: DeleteFleetsRequest): Request[DeleteFleetsResult, AWSError] = js.native
   def deleteFleets(
@@ -2112,6 +2244,20 @@ trait EC2 extends Service {
     params: DeleteIpamPoolRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteIpamPoolResult, Unit]
   ): Request[DeleteIpamPoolResult, AWSError] = js.native
+  
+  /**
+    * Deletes an IPAM resource discovery. A resource discovery is an IPAM component that enables IPAM to manage and monitor resources that belong to the owning account.
+    */
+  def deleteIpamResourceDiscovery(): Request[DeleteIpamResourceDiscoveryResult, AWSError] = js.native
+  def deleteIpamResourceDiscovery(callback: js.Function2[/* err */ AWSError, /* data */ DeleteIpamResourceDiscoveryResult, Unit]): Request[DeleteIpamResourceDiscoveryResult, AWSError] = js.native
+  /**
+    * Deletes an IPAM resource discovery. A resource discovery is an IPAM component that enables IPAM to manage and monitor resources that belong to the owning account.
+    */
+  def deleteIpamResourceDiscovery(params: DeleteIpamResourceDiscoveryRequest): Request[DeleteIpamResourceDiscoveryResult, AWSError] = js.native
+  def deleteIpamResourceDiscovery(
+    params: DeleteIpamResourceDiscoveryRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteIpamResourceDiscoveryResult, Unit]
+  ): Request[DeleteIpamResourceDiscoveryResult, AWSError] = js.native
   
   /**
     * Delete the scope for an IPAM. You cannot delete the default scopes. For more information, see Delete a scope in the Amazon VPC IPAM User Guide. 
@@ -2768,6 +2914,64 @@ trait EC2 extends Service {
   ): Request[DeleteTransitGatewayVpcAttachmentResult, AWSError] = js.native
   
   /**
+    * Delete an Amazon Web Services Verified Access endpoint.
+    */
+  def deleteVerifiedAccessEndpoint(): Request[DeleteVerifiedAccessEndpointResult, AWSError] = js.native
+  def deleteVerifiedAccessEndpoint(callback: js.Function2[/* err */ AWSError, /* data */ DeleteVerifiedAccessEndpointResult, Unit]): Request[DeleteVerifiedAccessEndpointResult, AWSError] = js.native
+  /**
+    * Delete an Amazon Web Services Verified Access endpoint.
+    */
+  def deleteVerifiedAccessEndpoint(params: DeleteVerifiedAccessEndpointRequest): Request[DeleteVerifiedAccessEndpointResult, AWSError] = js.native
+  def deleteVerifiedAccessEndpoint(
+    params: DeleteVerifiedAccessEndpointRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteVerifiedAccessEndpointResult, Unit]
+  ): Request[DeleteVerifiedAccessEndpointResult, AWSError] = js.native
+  
+  /**
+    * Delete an Amazon Web Services Verified Access group.
+    */
+  def deleteVerifiedAccessGroup(): Request[DeleteVerifiedAccessGroupResult, AWSError] = js.native
+  def deleteVerifiedAccessGroup(callback: js.Function2[/* err */ AWSError, /* data */ DeleteVerifiedAccessGroupResult, Unit]): Request[DeleteVerifiedAccessGroupResult, AWSError] = js.native
+  /**
+    * Delete an Amazon Web Services Verified Access group.
+    */
+  def deleteVerifiedAccessGroup(params: DeleteVerifiedAccessGroupRequest): Request[DeleteVerifiedAccessGroupResult, AWSError] = js.native
+  def deleteVerifiedAccessGroup(
+    params: DeleteVerifiedAccessGroupRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteVerifiedAccessGroupResult, Unit]
+  ): Request[DeleteVerifiedAccessGroupResult, AWSError] = js.native
+  
+  /**
+    * Delete an Amazon Web Services Verified Access instance.
+    */
+  def deleteVerifiedAccessInstance(): Request[DeleteVerifiedAccessInstanceResult, AWSError] = js.native
+  def deleteVerifiedAccessInstance(callback: js.Function2[/* err */ AWSError, /* data */ DeleteVerifiedAccessInstanceResult, Unit]): Request[DeleteVerifiedAccessInstanceResult, AWSError] = js.native
+  /**
+    * Delete an Amazon Web Services Verified Access instance.
+    */
+  def deleteVerifiedAccessInstance(params: DeleteVerifiedAccessInstanceRequest): Request[DeleteVerifiedAccessInstanceResult, AWSError] = js.native
+  def deleteVerifiedAccessInstance(
+    params: DeleteVerifiedAccessInstanceRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteVerifiedAccessInstanceResult, Unit]
+  ): Request[DeleteVerifiedAccessInstanceResult, AWSError] = js.native
+  
+  /**
+    * Delete an Amazon Web Services Verified Access trust provider.
+    */
+  def deleteVerifiedAccessTrustProvider(): Request[DeleteVerifiedAccessTrustProviderResult, AWSError] = js.native
+  def deleteVerifiedAccessTrustProvider(
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteVerifiedAccessTrustProviderResult, Unit]
+  ): Request[DeleteVerifiedAccessTrustProviderResult, AWSError] = js.native
+  /**
+    * Delete an Amazon Web Services Verified Access trust provider.
+    */
+  def deleteVerifiedAccessTrustProvider(params: DeleteVerifiedAccessTrustProviderRequest): Request[DeleteVerifiedAccessTrustProviderResult, AWSError] = js.native
+  def deleteVerifiedAccessTrustProvider(
+    params: DeleteVerifiedAccessTrustProviderRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteVerifiedAccessTrustProviderResult, Unit]
+  ): Request[DeleteVerifiedAccessTrustProviderResult, AWSError] = js.native
+  
+  /**
     * Deletes the specified EBS volume. The volume must be in the available state (not attached to an instance). The volume can remain in the deleting state for several minutes. For more information, see Delete an Amazon EBS volume in the Amazon Elastic Compute Cloud User Guide.
     */
   def deleteVolume(): Request[js.Object, AWSError] = js.native
@@ -2793,14 +2997,14 @@ trait EC2 extends Service {
   def deleteVpc(params: DeleteVpcRequest, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   
   /**
-    * Deletes one or more VPC endpoint connection notifications.
+    * Deletes the specified VPC endpoint connection notifications.
     */
   def deleteVpcEndpointConnectionNotifications(): Request[DeleteVpcEndpointConnectionNotificationsResult, AWSError] = js.native
   def deleteVpcEndpointConnectionNotifications(
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteVpcEndpointConnectionNotificationsResult, Unit]
   ): Request[DeleteVpcEndpointConnectionNotificationsResult, AWSError] = js.native
   /**
-    * Deletes one or more VPC endpoint connection notifications.
+    * Deletes the specified VPC endpoint connection notifications.
     */
   def deleteVpcEndpointConnectionNotifications(params: DeleteVpcEndpointConnectionNotificationsRequest): Request[DeleteVpcEndpointConnectionNotificationsResult, AWSError] = js.native
   def deleteVpcEndpointConnectionNotifications(
@@ -2809,14 +3013,14 @@ trait EC2 extends Service {
   ): Request[DeleteVpcEndpointConnectionNotificationsResult, AWSError] = js.native
   
   /**
-    * Deletes one or more VPC endpoint service configurations in your account. Before you delete the endpoint service configuration, you must reject any Available or PendingAcceptance interface endpoint connections that are attached to the service.
+    * Deletes the specified VPC endpoint service configurations. Before you can delete an endpoint service configuration, you must reject any Available or PendingAcceptance interface endpoint connections that are attached to the service.
     */
   def deleteVpcEndpointServiceConfigurations(): Request[DeleteVpcEndpointServiceConfigurationsResult, AWSError] = js.native
   def deleteVpcEndpointServiceConfigurations(
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteVpcEndpointServiceConfigurationsResult, Unit]
   ): Request[DeleteVpcEndpointServiceConfigurationsResult, AWSError] = js.native
   /**
-    * Deletes one or more VPC endpoint service configurations in your account. Before you delete the endpoint service configuration, you must reject any Available or PendingAcceptance interface endpoint connections that are attached to the service.
+    * Deletes the specified VPC endpoint service configurations. Before you can delete an endpoint service configuration, you must reject any Available or PendingAcceptance interface endpoint connections that are attached to the service.
     */
   def deleteVpcEndpointServiceConfigurations(params: DeleteVpcEndpointServiceConfigurationsRequest): Request[DeleteVpcEndpointServiceConfigurationsResult, AWSError] = js.native
   def deleteVpcEndpointServiceConfigurations(
@@ -2825,12 +3029,12 @@ trait EC2 extends Service {
   ): Request[DeleteVpcEndpointServiceConfigurationsResult, AWSError] = js.native
   
   /**
-    * Deletes one or more specified VPC endpoints. You can delete any of the following types of VPC endpoints.    Gateway endpoint,   Gateway Load Balancer endpoint,   Interface endpoint   The following rules apply when you delete a VPC endpoint:   When you delete a gateway endpoint, we delete the endpoint routes in the route tables that are associated with the endpoint.   When you delete a Gateway Load Balancer endpoint, we delete the endpoint network interfaces.  You can only delete Gateway Load Balancer endpoints when the routes that are associated with the endpoint are deleted.   When you delete an interface endpoint, we delete the endpoint network interfaces.  
+    * Deletes the specified VPC endpoints. When you delete a gateway endpoint, we delete the endpoint routes in the route tables for the endpoint. When you delete a Gateway Load Balancer endpoint, we delete its endpoint network interfaces. You can only delete Gateway Load Balancer endpoints when the routes that are associated with the endpoint are deleted. When you delete an interface endpoint, we delete its endpoint network interfaces.
     */
   def deleteVpcEndpoints(): Request[DeleteVpcEndpointsResult, AWSError] = js.native
   def deleteVpcEndpoints(callback: js.Function2[/* err */ AWSError, /* data */ DeleteVpcEndpointsResult, Unit]): Request[DeleteVpcEndpointsResult, AWSError] = js.native
   /**
-    * Deletes one or more specified VPC endpoints. You can delete any of the following types of VPC endpoints.    Gateway endpoint,   Gateway Load Balancer endpoint,   Interface endpoint   The following rules apply when you delete a VPC endpoint:   When you delete a gateway endpoint, we delete the endpoint routes in the route tables that are associated with the endpoint.   When you delete a Gateway Load Balancer endpoint, we delete the endpoint network interfaces.  You can only delete Gateway Load Balancer endpoints when the routes that are associated with the endpoint are deleted.   When you delete an interface endpoint, we delete the endpoint network interfaces.  
+    * Deletes the specified VPC endpoints. When you delete a gateway endpoint, we delete the endpoint routes in the route tables for the endpoint. When you delete a Gateway Load Balancer endpoint, we delete its endpoint network interfaces. You can only delete Gateway Load Balancer endpoints when the routes that are associated with the endpoint are deleted. When you delete an interface endpoint, we delete its endpoint network interfaces.
     */
   def deleteVpcEndpoints(params: DeleteVpcEndpointsRequest): Request[DeleteVpcEndpointsResult, AWSError] = js.native
   def deleteVpcEndpoints(
@@ -2937,12 +3141,12 @@ trait EC2 extends Service {
   ): Request[DeprovisionPublicIpv4PoolCidrResult, AWSError] = js.native
   
   /**
-    * Deregisters the specified AMI. After you deregister an AMI, it can't be used to launch new instances. If you deregister an AMI that matches a Recycle Bin retention rule, the AMI is retained in the Recycle Bin for the specified retention period. For more information, see Recycle Bin in the Amazon Elastic Compute Cloud User Guide. When you deregister an AMI, it doesn't affect any instances that you've already launched from the AMI. You'll continue to incur usage costs for those instances until you terminate them. When you deregister an Amazon EBS-backed AMI, it doesn't affect the snapshot that was created for the root volume of the instance during the AMI creation process. When you deregister an instance store-backed AMI, it doesn't affect the files that you uploaded to Amazon S3 when you created the AMI.
+    * Deregisters the specified AMI. After you deregister an AMI, it can't be used to launch new instances. If you deregister an AMI that matches a Recycle Bin retention rule, the AMI is retained in the Recycle Bin for the specified retention period. For more information, see Recycle Bin in the Amazon EC2 User Guide. When you deregister an AMI, it doesn't affect any instances that you've already launched from the AMI. You'll continue to incur usage costs for those instances until you terminate them. When you deregister an Amazon EBS-backed AMI, it doesn't affect the snapshot that was created for the root volume of the instance during the AMI creation process. When you deregister an instance store-backed AMI, it doesn't affect the files that you uploaded to Amazon S3 when you created the AMI.
     */
   def deregisterImage(): Request[js.Object, AWSError] = js.native
   def deregisterImage(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Deregisters the specified AMI. After you deregister an AMI, it can't be used to launch new instances. If you deregister an AMI that matches a Recycle Bin retention rule, the AMI is retained in the Recycle Bin for the specified retention period. For more information, see Recycle Bin in the Amazon Elastic Compute Cloud User Guide. When you deregister an AMI, it doesn't affect any instances that you've already launched from the AMI. You'll continue to incur usage costs for those instances until you terminate them. When you deregister an Amazon EBS-backed AMI, it doesn't affect the snapshot that was created for the root volume of the instance during the AMI creation process. When you deregister an instance store-backed AMI, it doesn't affect the files that you uploaded to Amazon S3 when you created the AMI.
+    * Deregisters the specified AMI. After you deregister an AMI, it can't be used to launch new instances. If you deregister an AMI that matches a Recycle Bin retention rule, the AMI is retained in the Recycle Bin for the specified retention period. For more information, see Recycle Bin in the Amazon EC2 User Guide. When you deregister an AMI, it doesn't affect any instances that you've already launched from the AMI. You'll continue to incur usage costs for those instances until you terminate them. When you deregister an Amazon EBS-backed AMI, it doesn't affect the snapshot that was created for the root volume of the instance during the AMI creation process. When you deregister an instance store-backed AMI, it doesn't affect the files that you uploaded to Amazon S3 when you created the AMI.
     */
   def deregisterImage(params: DeregisterImageRequest): Request[js.Object, AWSError] = js.native
   def deregisterImage(
@@ -3105,6 +3309,30 @@ trait EC2 extends Service {
     params: DescribeAvailabilityZonesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeAvailabilityZonesResult, Unit]
   ): Request[DescribeAvailabilityZonesResult, AWSError] = js.native
+  
+  /**
+    * Describes the current Infrastructure Performance metric subscriptions.
+    */
+  def describeAwsNetworkPerformanceMetricSubscriptions(): Request[DescribeAwsNetworkPerformanceMetricSubscriptionsResult, AWSError] = js.native
+  def describeAwsNetworkPerformanceMetricSubscriptions(
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ DescribeAwsNetworkPerformanceMetricSubscriptionsResult, 
+      Unit
+    ]
+  ): Request[DescribeAwsNetworkPerformanceMetricSubscriptionsResult, AWSError] = js.native
+  /**
+    * Describes the current Infrastructure Performance metric subscriptions.
+    */
+  def describeAwsNetworkPerformanceMetricSubscriptions(params: DescribeAwsNetworkPerformanceMetricSubscriptionsRequest): Request[DescribeAwsNetworkPerformanceMetricSubscriptionsResult, AWSError] = js.native
+  def describeAwsNetworkPerformanceMetricSubscriptions(
+    params: DescribeAwsNetworkPerformanceMetricSubscriptionsRequest,
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ DescribeAwsNetworkPerformanceMetricSubscriptionsResult, 
+      Unit
+    ]
+  ): Request[DescribeAwsNetworkPerformanceMetricSubscriptionsResult, AWSError] = js.native
   
   /**
     * Describes the specified bundle tasks or all of your bundle tasks.  Completed bundle tasks are listed for only a limited time. If your bundle task is no longer in the list, you can still register an AMI from it. Just use RegisterImage with the Amazon S3 bucket name and image manifest name you provided to the bundle task. 
@@ -3787,6 +4015,36 @@ trait EC2 extends Service {
   ): Request[DescribeIpamPoolsResult, AWSError] = js.native
   
   /**
+    * Describes IPAM resource discoveries. A resource discovery is an IPAM component that enables IPAM to manage and monitor resources that belong to the owning account.
+    */
+  def describeIpamResourceDiscoveries(): Request[DescribeIpamResourceDiscoveriesResult, AWSError] = js.native
+  def describeIpamResourceDiscoveries(callback: js.Function2[/* err */ AWSError, /* data */ DescribeIpamResourceDiscoveriesResult, Unit]): Request[DescribeIpamResourceDiscoveriesResult, AWSError] = js.native
+  /**
+    * Describes IPAM resource discoveries. A resource discovery is an IPAM component that enables IPAM to manage and monitor resources that belong to the owning account.
+    */
+  def describeIpamResourceDiscoveries(params: DescribeIpamResourceDiscoveriesRequest): Request[DescribeIpamResourceDiscoveriesResult, AWSError] = js.native
+  def describeIpamResourceDiscoveries(
+    params: DescribeIpamResourceDiscoveriesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeIpamResourceDiscoveriesResult, Unit]
+  ): Request[DescribeIpamResourceDiscoveriesResult, AWSError] = js.native
+  
+  /**
+    * Describes resource discovery association with an Amazon VPC IPAM. An associated resource discovery is a resource discovery that has been associated with an IPAM..
+    */
+  def describeIpamResourceDiscoveryAssociations(): Request[DescribeIpamResourceDiscoveryAssociationsResult, AWSError] = js.native
+  def describeIpamResourceDiscoveryAssociations(
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeIpamResourceDiscoveryAssociationsResult, Unit]
+  ): Request[DescribeIpamResourceDiscoveryAssociationsResult, AWSError] = js.native
+  /**
+    * Describes resource discovery association with an Amazon VPC IPAM. An associated resource discovery is a resource discovery that has been associated with an IPAM..
+    */
+  def describeIpamResourceDiscoveryAssociations(params: DescribeIpamResourceDiscoveryAssociationsRequest): Request[DescribeIpamResourceDiscoveryAssociationsResult, AWSError] = js.native
+  def describeIpamResourceDiscoveryAssociations(
+    params: DescribeIpamResourceDiscoveryAssociationsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeIpamResourceDiscoveryAssociationsResult, Unit]
+  ): Request[DescribeIpamResourceDiscoveryAssociationsResult, AWSError] = js.native
+  
+  /**
     * Get information about your IPAM scopes.
     */
   def describeIpamScopes(): Request[DescribeIpamScopesResult, AWSError] = js.native
@@ -4417,12 +4675,12 @@ trait EC2 extends Service {
   ): Request[DescribeSnapshotTierStatusResult, AWSError] = js.native
   
   /**
-    * Describes the specified EBS snapshots available to you or all of the EBS snapshots available to you. The snapshots available to you include public snapshots, private snapshots that you own, and private snapshots owned by other Amazon Web Services accounts for which you have explicit create volume permissions. The create volume permissions fall into the following categories:    public: The owner of the snapshot granted create volume permissions for the snapshot to the all group. All Amazon Web Services accounts have create volume permissions for these snapshots.    explicit: The owner of the snapshot granted create volume permissions to a specific Amazon Web Services account.    implicit: An Amazon Web Services account has implicit create volume permissions for all snapshots it owns.   The list of snapshots returned can be filtered by specifying snapshot IDs, snapshot owners, or Amazon Web Services accounts with create volume permissions. If no options are specified, Amazon EC2 returns all snapshots for which you have create volume permissions. If you specify one or more snapshot IDs, only snapshots that have the specified IDs are returned. If you specify an invalid snapshot ID, an error is returned. If you specify a snapshot ID for which you do not have access, it is not included in the returned results. If you specify one or more snapshot owners using the OwnerIds option, only snapshots from the specified owners and for which you have access are returned. The results can include the Amazon Web Services account IDs of the specified owners, amazon for snapshots owned by Amazon, or self for snapshots that you own. If you specify a list of restorable users, only snapshots with create snapshot permissions for those users are returned. You can specify Amazon Web Services account IDs (if you own the snapshots), self for snapshots for which you own or have explicit permissions, or all for public snapshots. If you are describing a long list of snapshots, we recommend that you paginate the output to make the list more manageable. The MaxResults parameter sets the maximum number of results returned in a single page. If the list of results exceeds your MaxResults value, then that number of results is returned along with a NextToken value that can be passed to a subsequent DescribeSnapshots request to retrieve the remaining results. To get the state of fast snapshot restores for a snapshot, use DescribeFastSnapshotRestores. For more information about EBS snapshots, see Amazon EBS snapshots in the Amazon Elastic Compute Cloud User Guide.
+    * Describes the specified EBS snapshots available to you or all of the EBS snapshots available to you. The snapshots available to you include public snapshots, private snapshots that you own, and private snapshots owned by other Amazon Web Services accounts for which you have explicit create volume permissions. The create volume permissions fall into the following categories:    public: The owner of the snapshot granted create volume permissions for the snapshot to the all group. All Amazon Web Services accounts have create volume permissions for these snapshots.    explicit: The owner of the snapshot granted create volume permissions to a specific Amazon Web Services account.    implicit: An Amazon Web Services account has implicit create volume permissions for all snapshots it owns.   The list of snapshots returned can be filtered by specifying snapshot IDs, snapshot owners, or Amazon Web Services accounts with create volume permissions. If no options are specified, Amazon EC2 returns all snapshots for which you have create volume permissions. If you specify one or more snapshot IDs, only snapshots that have the specified IDs are returned. If you specify an invalid snapshot ID, an error is returned. If you specify a snapshot ID for which you do not have access, it is not included in the returned results. If you specify one or more snapshot owners using the OwnerIds option, only snapshots from the specified owners and for which you have access are returned. The results can include the Amazon Web Services account IDs of the specified owners, amazon for snapshots owned by Amazon, or self for snapshots that you own. If you specify a list of restorable users, only snapshots with create snapshot permissions for those users are returned. You can specify Amazon Web Services account IDs (if you own the snapshots), self for snapshots for which you own or have explicit permissions, or all for public snapshots. If you are describing a long list of snapshots, we recommend that you paginate the output to make the list more manageable. For more information, see Pagination. To get the state of fast snapshot restores for a snapshot, use DescribeFastSnapshotRestores. For more information about EBS snapshots, see Amazon EBS snapshots in the Amazon Elastic Compute Cloud User Guide.
     */
   def describeSnapshots(): Request[DescribeSnapshotsResult, AWSError] = js.native
   def describeSnapshots(callback: js.Function2[/* err */ AWSError, /* data */ DescribeSnapshotsResult, Unit]): Request[DescribeSnapshotsResult, AWSError] = js.native
   /**
-    * Describes the specified EBS snapshots available to you or all of the EBS snapshots available to you. The snapshots available to you include public snapshots, private snapshots that you own, and private snapshots owned by other Amazon Web Services accounts for which you have explicit create volume permissions. The create volume permissions fall into the following categories:    public: The owner of the snapshot granted create volume permissions for the snapshot to the all group. All Amazon Web Services accounts have create volume permissions for these snapshots.    explicit: The owner of the snapshot granted create volume permissions to a specific Amazon Web Services account.    implicit: An Amazon Web Services account has implicit create volume permissions for all snapshots it owns.   The list of snapshots returned can be filtered by specifying snapshot IDs, snapshot owners, or Amazon Web Services accounts with create volume permissions. If no options are specified, Amazon EC2 returns all snapshots for which you have create volume permissions. If you specify one or more snapshot IDs, only snapshots that have the specified IDs are returned. If you specify an invalid snapshot ID, an error is returned. If you specify a snapshot ID for which you do not have access, it is not included in the returned results. If you specify one or more snapshot owners using the OwnerIds option, only snapshots from the specified owners and for which you have access are returned. The results can include the Amazon Web Services account IDs of the specified owners, amazon for snapshots owned by Amazon, or self for snapshots that you own. If you specify a list of restorable users, only snapshots with create snapshot permissions for those users are returned. You can specify Amazon Web Services account IDs (if you own the snapshots), self for snapshots for which you own or have explicit permissions, or all for public snapshots. If you are describing a long list of snapshots, we recommend that you paginate the output to make the list more manageable. The MaxResults parameter sets the maximum number of results returned in a single page. If the list of results exceeds your MaxResults value, then that number of results is returned along with a NextToken value that can be passed to a subsequent DescribeSnapshots request to retrieve the remaining results. To get the state of fast snapshot restores for a snapshot, use DescribeFastSnapshotRestores. For more information about EBS snapshots, see Amazon EBS snapshots in the Amazon Elastic Compute Cloud User Guide.
+    * Describes the specified EBS snapshots available to you or all of the EBS snapshots available to you. The snapshots available to you include public snapshots, private snapshots that you own, and private snapshots owned by other Amazon Web Services accounts for which you have explicit create volume permissions. The create volume permissions fall into the following categories:    public: The owner of the snapshot granted create volume permissions for the snapshot to the all group. All Amazon Web Services accounts have create volume permissions for these snapshots.    explicit: The owner of the snapshot granted create volume permissions to a specific Amazon Web Services account.    implicit: An Amazon Web Services account has implicit create volume permissions for all snapshots it owns.   The list of snapshots returned can be filtered by specifying snapshot IDs, snapshot owners, or Amazon Web Services accounts with create volume permissions. If no options are specified, Amazon EC2 returns all snapshots for which you have create volume permissions. If you specify one or more snapshot IDs, only snapshots that have the specified IDs are returned. If you specify an invalid snapshot ID, an error is returned. If you specify a snapshot ID for which you do not have access, it is not included in the returned results. If you specify one or more snapshot owners using the OwnerIds option, only snapshots from the specified owners and for which you have access are returned. The results can include the Amazon Web Services account IDs of the specified owners, amazon for snapshots owned by Amazon, or self for snapshots that you own. If you specify a list of restorable users, only snapshots with create snapshot permissions for those users are returned. You can specify Amazon Web Services account IDs (if you own the snapshots), self for snapshots for which you own or have explicit permissions, or all for public snapshots. If you are describing a long list of snapshots, we recommend that you paginate the output to make the list more manageable. For more information, see Pagination. To get the state of fast snapshot restores for a snapshot, use DescribeFastSnapshotRestores. For more information about EBS snapshots, see Amazon EBS snapshots in the Amazon Elastic Compute Cloud User Guide.
     */
   def describeSnapshots(params: DescribeSnapshotsRequest): Request[DescribeSnapshotsResult, AWSError] = js.native
   def describeSnapshots(
@@ -4491,12 +4749,12 @@ trait EC2 extends Service {
   ): Request[DescribeSpotFleetRequestsResponse, AWSError] = js.native
   
   /**
-    * Describes the specified Spot Instance requests. You can use DescribeSpotInstanceRequests to find a running Spot Instance by examining the response. If the status of the Spot Instance is fulfilled, the instance ID appears in the response and contains the identifier of the instance. Alternatively, you can use DescribeInstances with a filter to look for instances where the instance lifecycle is spot. We recommend that you set MaxResults to a value between 5 and 1000 to limit the number of results returned. This paginates the output, which makes the list more manageable and returns the results faster. If the list of results exceeds your MaxResults value, then that number of results is returned along with a NextToken value that can be passed to a subsequent DescribeSpotInstanceRequests request to retrieve the remaining results. Spot Instance requests are deleted four hours after they are canceled and their instances are terminated.
+    * Describes the specified Spot Instance requests. You can use DescribeSpotInstanceRequests to find a running Spot Instance by examining the response. If the status of the Spot Instance is fulfilled, the instance ID appears in the response and contains the identifier of the instance. Alternatively, you can use DescribeInstances with a filter to look for instances where the instance lifecycle is spot. We recommend that you set MaxResults to a value between 5 and 1000 to limit the number of items returned. This paginates the output, which makes the list more manageable and returns the items faster. If the list of items exceeds your MaxResults value, then that number of items is returned along with a NextToken value that can be passed to a subsequent DescribeSpotInstanceRequests request to retrieve the remaining items. Spot Instance requests are deleted four hours after they are canceled and their instances are terminated.
     */
   def describeSpotInstanceRequests(): Request[DescribeSpotInstanceRequestsResult, AWSError] = js.native
   def describeSpotInstanceRequests(callback: js.Function2[/* err */ AWSError, /* data */ DescribeSpotInstanceRequestsResult, Unit]): Request[DescribeSpotInstanceRequestsResult, AWSError] = js.native
   /**
-    * Describes the specified Spot Instance requests. You can use DescribeSpotInstanceRequests to find a running Spot Instance by examining the response. If the status of the Spot Instance is fulfilled, the instance ID appears in the response and contains the identifier of the instance. Alternatively, you can use DescribeInstances with a filter to look for instances where the instance lifecycle is spot. We recommend that you set MaxResults to a value between 5 and 1000 to limit the number of results returned. This paginates the output, which makes the list more manageable and returns the results faster. If the list of results exceeds your MaxResults value, then that number of results is returned along with a NextToken value that can be passed to a subsequent DescribeSpotInstanceRequests request to retrieve the remaining results. Spot Instance requests are deleted four hours after they are canceled and their instances are terminated.
+    * Describes the specified Spot Instance requests. You can use DescribeSpotInstanceRequests to find a running Spot Instance by examining the response. If the status of the Spot Instance is fulfilled, the instance ID appears in the response and contains the identifier of the instance. Alternatively, you can use DescribeInstances with a filter to look for instances where the instance lifecycle is spot. We recommend that you set MaxResults to a value between 5 and 1000 to limit the number of items returned. This paginates the output, which makes the list more manageable and returns the items faster. If the list of items exceeds your MaxResults value, then that number of items is returned along with a NextToken value that can be passed to a subsequent DescribeSpotInstanceRequests request to retrieve the remaining items. Spot Instance requests are deleted four hours after they are canceled and their instances are terminated.
     */
   def describeSpotInstanceRequests(params: DescribeSpotInstanceRequestsRequest): Request[DescribeSpotInstanceRequestsResult, AWSError] = js.native
   def describeSpotInstanceRequests(
@@ -4533,12 +4791,12 @@ trait EC2 extends Service {
   ): Request[DescribeStaleSecurityGroupsResult, AWSError] = js.native
   
   /**
-    * Describes the progress of the AMI store tasks. You can describe the store tasks for specified AMIs. If you don't specify the AMIs, you get a paginated list of store tasks from the last 31 days. For each AMI task, the response indicates if the task is InProgress, Completed, or Failed. For tasks InProgress, the response shows the estimated progress as a percentage. Tasks are listed in reverse chronological order. Currently, only tasks from the past 31 days can be viewed. To use this API, you must have the required permissions. For more information, see Permissions for storing and restoring AMIs using Amazon S3 in the Amazon Elastic Compute Cloud User Guide. For more information, see Store and restore an AMI using Amazon S3 in the Amazon Elastic Compute Cloud User Guide.
+    * Describes the progress of the AMI store tasks. You can describe the store tasks for specified AMIs. If you don't specify the AMIs, you get a paginated list of store tasks from the last 31 days. For each AMI task, the response indicates if the task is InProgress, Completed, or Failed. For tasks InProgress, the response shows the estimated progress as a percentage. Tasks are listed in reverse chronological order. Currently, only tasks from the past 31 days can be viewed. To use this API, you must have the required permissions. For more information, see Permissions for storing and restoring AMIs using Amazon S3 in the Amazon EC2 User Guide. For more information, see Store and restore an AMI using Amazon S3 in the Amazon EC2 User Guide.
     */
   def describeStoreImageTasks(): Request[DescribeStoreImageTasksResult, AWSError] = js.native
   def describeStoreImageTasks(callback: js.Function2[/* err */ AWSError, /* data */ DescribeStoreImageTasksResult, Unit]): Request[DescribeStoreImageTasksResult, AWSError] = js.native
   /**
-    * Describes the progress of the AMI store tasks. You can describe the store tasks for specified AMIs. If you don't specify the AMIs, you get a paginated list of store tasks from the last 31 days. For each AMI task, the response indicates if the task is InProgress, Completed, or Failed. For tasks InProgress, the response shows the estimated progress as a percentage. Tasks are listed in reverse chronological order. Currently, only tasks from the past 31 days can be viewed. To use this API, you must have the required permissions. For more information, see Permissions for storing and restoring AMIs using Amazon S3 in the Amazon Elastic Compute Cloud User Guide. For more information, see Store and restore an AMI using Amazon S3 in the Amazon Elastic Compute Cloud User Guide.
+    * Describes the progress of the AMI store tasks. You can describe the store tasks for specified AMIs. If you don't specify the AMIs, you get a paginated list of store tasks from the last 31 days. For each AMI task, the response indicates if the task is InProgress, Completed, or Failed. For tasks InProgress, the response shows the estimated progress as a percentage. Tasks are listed in reverse chronological order. Currently, only tasks from the past 31 days can be viewed. To use this API, you must have the required permissions. For more information, see Permissions for storing and restoring AMIs using Amazon S3 in the Amazon EC2 User Guide. For more information, see Store and restore an AMI using Amazon S3 in the Amazon EC2 User Guide.
     */
   def describeStoreImageTasks(params: DescribeStoreImageTasksRequest): Request[DescribeStoreImageTasksResult, AWSError] = js.native
   def describeStoreImageTasks(
@@ -4797,6 +5055,88 @@ trait EC2 extends Service {
   ): Request[DescribeTrunkInterfaceAssociationsResult, AWSError] = js.native
   
   /**
+    * Describes the specified Amazon Web Services Verified Access endpoints.
+    */
+  def describeVerifiedAccessEndpoints(): Request[DescribeVerifiedAccessEndpointsResult, AWSError] = js.native
+  def describeVerifiedAccessEndpoints(callback: js.Function2[/* err */ AWSError, /* data */ DescribeVerifiedAccessEndpointsResult, Unit]): Request[DescribeVerifiedAccessEndpointsResult, AWSError] = js.native
+  /**
+    * Describes the specified Amazon Web Services Verified Access endpoints.
+    */
+  def describeVerifiedAccessEndpoints(params: DescribeVerifiedAccessEndpointsRequest): Request[DescribeVerifiedAccessEndpointsResult, AWSError] = js.native
+  def describeVerifiedAccessEndpoints(
+    params: DescribeVerifiedAccessEndpointsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeVerifiedAccessEndpointsResult, Unit]
+  ): Request[DescribeVerifiedAccessEndpointsResult, AWSError] = js.native
+  
+  /**
+    * Describes the specified Verified Access groups.
+    */
+  def describeVerifiedAccessGroups(): Request[DescribeVerifiedAccessGroupsResult, AWSError] = js.native
+  def describeVerifiedAccessGroups(callback: js.Function2[/* err */ AWSError, /* data */ DescribeVerifiedAccessGroupsResult, Unit]): Request[DescribeVerifiedAccessGroupsResult, AWSError] = js.native
+  /**
+    * Describes the specified Verified Access groups.
+    */
+  def describeVerifiedAccessGroups(params: DescribeVerifiedAccessGroupsRequest): Request[DescribeVerifiedAccessGroupsResult, AWSError] = js.native
+  def describeVerifiedAccessGroups(
+    params: DescribeVerifiedAccessGroupsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeVerifiedAccessGroupsResult, Unit]
+  ): Request[DescribeVerifiedAccessGroupsResult, AWSError] = js.native
+  
+  /**
+    * Describes the specified Amazon Web Services Verified Access instances.
+    */
+  def describeVerifiedAccessInstanceLoggingConfigurations(): Request[DescribeVerifiedAccessInstanceLoggingConfigurationsResult, AWSError] = js.native
+  def describeVerifiedAccessInstanceLoggingConfigurations(
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ DescribeVerifiedAccessInstanceLoggingConfigurationsResult, 
+      Unit
+    ]
+  ): Request[DescribeVerifiedAccessInstanceLoggingConfigurationsResult, AWSError] = js.native
+  /**
+    * Describes the specified Amazon Web Services Verified Access instances.
+    */
+  def describeVerifiedAccessInstanceLoggingConfigurations(params: DescribeVerifiedAccessInstanceLoggingConfigurationsRequest): Request[DescribeVerifiedAccessInstanceLoggingConfigurationsResult, AWSError] = js.native
+  def describeVerifiedAccessInstanceLoggingConfigurations(
+    params: DescribeVerifiedAccessInstanceLoggingConfigurationsRequest,
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ DescribeVerifiedAccessInstanceLoggingConfigurationsResult, 
+      Unit
+    ]
+  ): Request[DescribeVerifiedAccessInstanceLoggingConfigurationsResult, AWSError] = js.native
+  
+  /**
+    * Describes the specified Amazon Web Services Verified Access instances.
+    */
+  def describeVerifiedAccessInstances(): Request[DescribeVerifiedAccessInstancesResult, AWSError] = js.native
+  def describeVerifiedAccessInstances(callback: js.Function2[/* err */ AWSError, /* data */ DescribeVerifiedAccessInstancesResult, Unit]): Request[DescribeVerifiedAccessInstancesResult, AWSError] = js.native
+  /**
+    * Describes the specified Amazon Web Services Verified Access instances.
+    */
+  def describeVerifiedAccessInstances(params: DescribeVerifiedAccessInstancesRequest): Request[DescribeVerifiedAccessInstancesResult, AWSError] = js.native
+  def describeVerifiedAccessInstances(
+    params: DescribeVerifiedAccessInstancesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeVerifiedAccessInstancesResult, Unit]
+  ): Request[DescribeVerifiedAccessInstancesResult, AWSError] = js.native
+  
+  /**
+    * Describes the specified Amazon Web Services Verified Access trust providers.
+    */
+  def describeVerifiedAccessTrustProviders(): Request[DescribeVerifiedAccessTrustProvidersResult, AWSError] = js.native
+  def describeVerifiedAccessTrustProviders(
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeVerifiedAccessTrustProvidersResult, Unit]
+  ): Request[DescribeVerifiedAccessTrustProvidersResult, AWSError] = js.native
+  /**
+    * Describes the specified Amazon Web Services Verified Access trust providers.
+    */
+  def describeVerifiedAccessTrustProviders(params: DescribeVerifiedAccessTrustProvidersRequest): Request[DescribeVerifiedAccessTrustProvidersResult, AWSError] = js.native
+  def describeVerifiedAccessTrustProviders(
+    params: DescribeVerifiedAccessTrustProvidersRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeVerifiedAccessTrustProvidersResult, Unit]
+  ): Request[DescribeVerifiedAccessTrustProvidersResult, AWSError] = js.native
+  
+  /**
     * Describes the specified attribute of the specified volume. You can specify only one attribute at a time. For more information about EBS volumes, see Amazon EBS volumes in the Amazon Elastic Compute Cloud User Guide.
     */
   def describeVolumeAttribute(): Request[DescribeVolumeAttributeResult, AWSError] = js.native
@@ -4825,12 +5165,12 @@ trait EC2 extends Service {
   ): Request[DescribeVolumeStatusResult, AWSError] = js.native
   
   /**
-    * Describes the specified EBS volumes or all of your EBS volumes. If you are describing a long list of volumes, we recommend that you paginate the output to make the list more manageable. The MaxResults parameter sets the maximum number of results returned in a single page. If the list of results exceeds your MaxResults value, then that number of results is returned along with a NextToken value that can be passed to a subsequent DescribeVolumes request to retrieve the remaining results. For more information about EBS volumes, see Amazon EBS volumes in the Amazon Elastic Compute Cloud User Guide.
+    * Describes the specified EBS volumes or all of your EBS volumes. If you are describing a long list of volumes, we recommend that you paginate the output to make the list more manageable. For more information, see Pagination. For more information about EBS volumes, see Amazon EBS volumes in the Amazon Elastic Compute Cloud User Guide.
     */
   def describeVolumes(): Request[DescribeVolumesResult, AWSError] = js.native
   def describeVolumes(callback: js.Function2[/* err */ AWSError, /* data */ DescribeVolumesResult, Unit]): Request[DescribeVolumesResult, AWSError] = js.native
   /**
-    * Describes the specified EBS volumes or all of your EBS volumes. If you are describing a long list of volumes, we recommend that you paginate the output to make the list more manageable. The MaxResults parameter sets the maximum number of results returned in a single page. If the list of results exceeds your MaxResults value, then that number of results is returned along with a NextToken value that can be passed to a subsequent DescribeVolumes request to retrieve the remaining results. For more information about EBS volumes, see Amazon EBS volumes in the Amazon Elastic Compute Cloud User Guide.
+    * Describes the specified EBS volumes or all of your EBS volumes. If you are describing a long list of volumes, we recommend that you paginate the output to make the list more manageable. For more information, see Pagination. For more information about EBS volumes, see Amazon EBS volumes in the Amazon Elastic Compute Cloud User Guide.
     */
   def describeVolumes(params: DescribeVolumesRequest): Request[DescribeVolumesResult, AWSError] = js.native
   def describeVolumes(
@@ -4981,12 +5321,12 @@ trait EC2 extends Service {
   ): Request[DescribeVpcEndpointServicesResult, AWSError] = js.native
   
   /**
-    * Describes one or more of your VPC endpoints.
+    * Describes your VPC endpoints.
     */
   def describeVpcEndpoints(): Request[DescribeVpcEndpointsResult, AWSError] = js.native
   def describeVpcEndpoints(callback: js.Function2[/* err */ AWSError, /* data */ DescribeVpcEndpointsResult, Unit]): Request[DescribeVpcEndpointsResult, AWSError] = js.native
   /**
-    * Describes one or more of your VPC endpoints.
+    * Describes your VPC endpoints.
     */
   def describeVpcEndpoints(params: DescribeVpcEndpointsRequest): Request[DescribeVpcEndpointsResult, AWSError] = js.native
   def describeVpcEndpoints(
@@ -5093,6 +5433,22 @@ trait EC2 extends Service {
   ): Request[js.Object, AWSError] = js.native
   
   /**
+    * Detaches the specified Amazon Web Services Verified Access trust provider from the specified Amazon Web Services Verified Access instance.
+    */
+  def detachVerifiedAccessTrustProvider(): Request[DetachVerifiedAccessTrustProviderResult, AWSError] = js.native
+  def detachVerifiedAccessTrustProvider(
+    callback: js.Function2[/* err */ AWSError, /* data */ DetachVerifiedAccessTrustProviderResult, Unit]
+  ): Request[DetachVerifiedAccessTrustProviderResult, AWSError] = js.native
+  /**
+    * Detaches the specified Amazon Web Services Verified Access trust provider from the specified Amazon Web Services Verified Access instance.
+    */
+  def detachVerifiedAccessTrustProvider(params: DetachVerifiedAccessTrustProviderRequest): Request[DetachVerifiedAccessTrustProviderResult, AWSError] = js.native
+  def detachVerifiedAccessTrustProvider(
+    params: DetachVerifiedAccessTrustProviderRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DetachVerifiedAccessTrustProviderResult, Unit]
+  ): Request[DetachVerifiedAccessTrustProviderResult, AWSError] = js.native
+  
+  /**
     * Detaches an EBS volume from an instance. Make sure to unmount any file systems on the device within your operating system before detaching the volume. Failure to do so can result in the volume becoming stuck in the busy state while detaching. If this happens, detachment can be delayed indefinitely until you unmount the volume, force detachment, reboot the instance, or all three. If an EBS volume is the root device of an instance, it can't be detached while the instance is running. To detach the root volume, stop the instance first. When a volume with an Amazon Web Services Marketplace product code is detached from an instance, the product code is no longer associated with the instance. For more information, see Detach an Amazon EBS volume in the Amazon Elastic Compute Cloud User Guide.
     */
   def detachVolume(): Request[VolumeAttachment, AWSError] = js.native
@@ -5133,6 +5489,30 @@ trait EC2 extends Service {
     params: DisableAddressTransferRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DisableAddressTransferResult, Unit]
   ): Request[DisableAddressTransferResult, AWSError] = js.native
+  
+  /**
+    * Disables Infrastructure Performance metric subscriptions.
+    */
+  def disableAwsNetworkPerformanceMetricSubscription(): Request[DisableAwsNetworkPerformanceMetricSubscriptionResult, AWSError] = js.native
+  def disableAwsNetworkPerformanceMetricSubscription(
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ DisableAwsNetworkPerformanceMetricSubscriptionResult, 
+      Unit
+    ]
+  ): Request[DisableAwsNetworkPerformanceMetricSubscriptionResult, AWSError] = js.native
+  /**
+    * Disables Infrastructure Performance metric subscriptions.
+    */
+  def disableAwsNetworkPerformanceMetricSubscription(params: DisableAwsNetworkPerformanceMetricSubscriptionRequest): Request[DisableAwsNetworkPerformanceMetricSubscriptionResult, AWSError] = js.native
+  def disableAwsNetworkPerformanceMetricSubscription(
+    params: DisableAwsNetworkPerformanceMetricSubscriptionRequest,
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ DisableAwsNetworkPerformanceMetricSubscriptionResult, 
+      Unit
+    ]
+  ): Request[DisableAwsNetworkPerformanceMetricSubscriptionResult, AWSError] = js.native
   
   /**
     * Disables EBS encryption by default for your account in the current Region. After you disable encryption by default, you can still create encrypted volumes by enabling encryption when you create each volume. Disabling encryption by default does not change the encryption status of your existing volumes. For more information, see Amazon EBS encryption in the Amazon Elastic Compute Cloud User Guide.
@@ -5177,12 +5557,12 @@ trait EC2 extends Service {
   ): Request[DisableFastSnapshotRestoresResult, AWSError] = js.native
   
   /**
-    * Cancels the deprecation of the specified AMI. For more information, see Deprecate an AMI in the Amazon Elastic Compute Cloud User Guide.
+    * Cancels the deprecation of the specified AMI. For more information, see Deprecate an AMI in the Amazon EC2 User Guide.
     */
   def disableImageDeprecation(): Request[DisableImageDeprecationResult, AWSError] = js.native
   def disableImageDeprecation(callback: js.Function2[/* err */ AWSError, /* data */ DisableImageDeprecationResult, Unit]): Request[DisableImageDeprecationResult, AWSError] = js.native
   /**
-    * Cancels the deprecation of the specified AMI. For more information, see Deprecate an AMI in the Amazon Elastic Compute Cloud User Guide.
+    * Cancels the deprecation of the specified AMI. For more information, see Deprecate an AMI in the Amazon EC2 User Guide.
     */
   def disableImageDeprecation(params: DisableImageDeprecationRequest): Request[DisableImageDeprecationResult, AWSError] = js.native
   def disableImageDeprecation(
@@ -5361,6 +5741,36 @@ trait EC2 extends Service {
   ): Request[DisassociateInstanceEventWindowResult, AWSError] = js.native
   
   /**
+    * Disassociates a resource discovery from an Amazon VPC IPAM. A resource discovery is an IPAM component that enables IPAM to manage and monitor resources that belong to the owning account.
+    */
+  def disassociateIpamResourceDiscovery(): Request[DisassociateIpamResourceDiscoveryResult, AWSError] = js.native
+  def disassociateIpamResourceDiscovery(
+    callback: js.Function2[/* err */ AWSError, /* data */ DisassociateIpamResourceDiscoveryResult, Unit]
+  ): Request[DisassociateIpamResourceDiscoveryResult, AWSError] = js.native
+  /**
+    * Disassociates a resource discovery from an Amazon VPC IPAM. A resource discovery is an IPAM component that enables IPAM to manage and monitor resources that belong to the owning account.
+    */
+  def disassociateIpamResourceDiscovery(params: DisassociateIpamResourceDiscoveryRequest): Request[DisassociateIpamResourceDiscoveryResult, AWSError] = js.native
+  def disassociateIpamResourceDiscovery(
+    params: DisassociateIpamResourceDiscoveryRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DisassociateIpamResourceDiscoveryResult, Unit]
+  ): Request[DisassociateIpamResourceDiscoveryResult, AWSError] = js.native
+  
+  /**
+    * Disassociates secondary Elastic IP addresses (EIPs) from a public NAT gateway. You cannot disassociate your primary EIP. For more information, see Edit secondary IP address associations in the Amazon Virtual Private Cloud User Guide. While disassociating is in progress, you cannot associate/disassociate additional EIPs while the connections are being drained. You are, however, allowed to delete the NAT gateway. An EIP will only be released at the end of MaxDrainDurationSeconds. The EIPs stay associated and support the existing connections but do not support any new connections (new connections are distributed across the remaining associated EIPs). As the existing connections drain out, the EIPs (and the corresponding private IPs mapped to them) get released.
+    */
+  def disassociateNatGatewayAddress(): Request[DisassociateNatGatewayAddressResult, AWSError] = js.native
+  def disassociateNatGatewayAddress(callback: js.Function2[/* err */ AWSError, /* data */ DisassociateNatGatewayAddressResult, Unit]): Request[DisassociateNatGatewayAddressResult, AWSError] = js.native
+  /**
+    * Disassociates secondary Elastic IP addresses (EIPs) from a public NAT gateway. You cannot disassociate your primary EIP. For more information, see Edit secondary IP address associations in the Amazon Virtual Private Cloud User Guide. While disassociating is in progress, you cannot associate/disassociate additional EIPs while the connections are being drained. You are, however, allowed to delete the NAT gateway. An EIP will only be released at the end of MaxDrainDurationSeconds. The EIPs stay associated and support the existing connections but do not support any new connections (new connections are distributed across the remaining associated EIPs). As the existing connections drain out, the EIPs (and the corresponding private IPs mapped to them) get released.
+    */
+  def disassociateNatGatewayAddress(params: DisassociateNatGatewayAddressRequest): Request[DisassociateNatGatewayAddressResult, AWSError] = js.native
+  def disassociateNatGatewayAddress(
+    params: DisassociateNatGatewayAddressRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DisassociateNatGatewayAddressResult, Unit]
+  ): Request[DisassociateNatGatewayAddressResult, AWSError] = js.native
+  
+  /**
     * Disassociates a subnet or gateway from a route table. After you perform this action, the subnet no longer uses the routes in the route table. Instead, it uses the routes in the VPC's main route table. For more information about route tables, see Route tables in the Amazon Virtual Private Cloud User Guide.
     */
   def disassociateRouteTable(): Request[js.Object, AWSError] = js.native
@@ -5479,6 +5889,30 @@ trait EC2 extends Service {
   ): Request[EnableAddressTransferResult, AWSError] = js.native
   
   /**
+    * Enables Infrastructure Performance subscriptions.
+    */
+  def enableAwsNetworkPerformanceMetricSubscription(): Request[EnableAwsNetworkPerformanceMetricSubscriptionResult, AWSError] = js.native
+  def enableAwsNetworkPerformanceMetricSubscription(
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ EnableAwsNetworkPerformanceMetricSubscriptionResult, 
+      Unit
+    ]
+  ): Request[EnableAwsNetworkPerformanceMetricSubscriptionResult, AWSError] = js.native
+  /**
+    * Enables Infrastructure Performance subscriptions.
+    */
+  def enableAwsNetworkPerformanceMetricSubscription(params: EnableAwsNetworkPerformanceMetricSubscriptionRequest): Request[EnableAwsNetworkPerformanceMetricSubscriptionResult, AWSError] = js.native
+  def enableAwsNetworkPerformanceMetricSubscription(
+    params: EnableAwsNetworkPerformanceMetricSubscriptionRequest,
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ EnableAwsNetworkPerformanceMetricSubscriptionResult, 
+      Unit
+    ]
+  ): Request[EnableAwsNetworkPerformanceMetricSubscriptionResult, AWSError] = js.native
+  
+  /**
     * Enables EBS encryption by default for your account in the current Region. After you enable encryption by default, the EBS volumes that you create are always encrypted, either using the default KMS key or the KMS key that you specified when you created each volume. For more information, see Amazon EBS encryption in the Amazon Elastic Compute Cloud User Guide. You can specify the default KMS key for encryption by default using ModifyEbsDefaultKmsKeyId or ResetEbsDefaultKmsKeyId. Enabling encryption by default has no effect on the encryption status of your existing volumes. After you enable encryption by default, you can no longer launch instances using instance types that do not support encryption. For more information, see Supported instance types.
     */
   def enableEbsEncryptionByDefault(): Request[EnableEbsEncryptionByDefaultResult, AWSError] = js.native
@@ -5521,12 +5955,12 @@ trait EC2 extends Service {
   ): Request[EnableFastSnapshotRestoresResult, AWSError] = js.native
   
   /**
-    * Enables deprecation of the specified AMI at the specified date and time. For more information, see Deprecate an AMI in the Amazon Elastic Compute Cloud User Guide.
+    * Enables deprecation of the specified AMI at the specified date and time. For more information, see Deprecate an AMI in the Amazon EC2 User Guide.
     */
   def enableImageDeprecation(): Request[EnableImageDeprecationResult, AWSError] = js.native
   def enableImageDeprecation(callback: js.Function2[/* err */ AWSError, /* data */ EnableImageDeprecationResult, Unit]): Request[EnableImageDeprecationResult, AWSError] = js.native
   /**
-    * Enables deprecation of the specified AMI at the specified date and time. For more information, see Deprecate an AMI in the Amazon Elastic Compute Cloud User Guide.
+    * Enables deprecation of the specified AMI at the specified date and time. For more information, see Deprecate an AMI in the Amazon EC2 User Guide.
     */
   def enableImageDeprecation(params: EnableImageDeprecationRequest): Request[EnableImageDeprecationResult, AWSError] = js.native
   def enableImageDeprecation(
@@ -5549,6 +5983,30 @@ trait EC2 extends Service {
     params: EnableIpamOrganizationAdminAccountRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ EnableIpamOrganizationAdminAccountResult, Unit]
   ): Request[EnableIpamOrganizationAdminAccountResult, AWSError] = js.native
+  
+  /**
+    * Establishes a trust relationship between Reachability Analyzer and Organizations. This operation must be performed by the management account for the organization. After you establish a trust relationship, a user in the management account or a delegated administrator account can run a cross-account analysis using resources from the member accounts.
+    */
+  def enableReachabilityAnalyzerOrganizationSharing(): Request[EnableReachabilityAnalyzerOrganizationSharingResult, AWSError] = js.native
+  def enableReachabilityAnalyzerOrganizationSharing(
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ EnableReachabilityAnalyzerOrganizationSharingResult, 
+      Unit
+    ]
+  ): Request[EnableReachabilityAnalyzerOrganizationSharingResult, AWSError] = js.native
+  /**
+    * Establishes a trust relationship between Reachability Analyzer and Organizations. This operation must be performed by the management account for the organization. After you establish a trust relationship, a user in the management account or a delegated administrator account can run a cross-account analysis using resources from the member accounts.
+    */
+  def enableReachabilityAnalyzerOrganizationSharing(params: EnableReachabilityAnalyzerOrganizationSharingRequest): Request[EnableReachabilityAnalyzerOrganizationSharingResult, AWSError] = js.native
+  def enableReachabilityAnalyzerOrganizationSharing(
+    params: EnableReachabilityAnalyzerOrganizationSharingRequest,
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ EnableReachabilityAnalyzerOrganizationSharingResult, 
+      Unit
+    ]
+  ): Request[EnableReachabilityAnalyzerOrganizationSharingResult, AWSError] = js.native
   
   /**
     * Enables access to the EC2 serial console of all instances for your account. By default, access to the EC2 serial console is disabled for your account. For more information, see Manage account access to the EC2 serial console in the Amazon EC2 User Guide.
@@ -5733,6 +6191,20 @@ trait EC2 extends Service {
     params: GetAssociatedIpv6PoolCidrsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetAssociatedIpv6PoolCidrsResult, Unit]
   ): Request[GetAssociatedIpv6PoolCidrsResult, AWSError] = js.native
+  
+  /**
+    * Gets network performance data.
+    */
+  def getAwsNetworkPerformanceData(): Request[GetAwsNetworkPerformanceDataResult, AWSError] = js.native
+  def getAwsNetworkPerformanceData(callback: js.Function2[/* err */ AWSError, /* data */ GetAwsNetworkPerformanceDataResult, Unit]): Request[GetAwsNetworkPerformanceDataResult, AWSError] = js.native
+  /**
+    * Gets network performance data.
+    */
+  def getAwsNetworkPerformanceData(params: GetAwsNetworkPerformanceDataRequest): Request[GetAwsNetworkPerformanceDataResult, AWSError] = js.native
+  def getAwsNetworkPerformanceData(
+    params: GetAwsNetworkPerformanceDataRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetAwsNetworkPerformanceDataResult, Unit]
+  ): Request[GetAwsNetworkPerformanceDataResult, AWSError] = js.native
   
   /**
     * Gets usage information about a Capacity Reservation. If the Capacity Reservation is shared, it shows usage information for the Capacity Reservation owner and each Amazon Web Services account that is currently using the shared capacity. If the Capacity Reservation is not shared, it shows only the Capacity Reservation owner's usage.
@@ -5921,12 +6393,40 @@ trait EC2 extends Service {
   ): Request[GetIpamAddressHistoryResult, AWSError] = js.native
   
   /**
-    * Get a list of all the CIDR allocations in an IPAM pool.
+    * Gets IPAM discovered accounts. A discovered account is an Amazon Web Services account that is monitored under a resource discovery. If you have integrated IPAM with Amazon Web Services Organizations, all accounts in the organization are discovered accounts. Only the IPAM account can get all discovered accounts in the organization.
+    */
+  def getIpamDiscoveredAccounts(): Request[GetIpamDiscoveredAccountsResult, AWSError] = js.native
+  def getIpamDiscoveredAccounts(callback: js.Function2[/* err */ AWSError, /* data */ GetIpamDiscoveredAccountsResult, Unit]): Request[GetIpamDiscoveredAccountsResult, AWSError] = js.native
+  /**
+    * Gets IPAM discovered accounts. A discovered account is an Amazon Web Services account that is monitored under a resource discovery. If you have integrated IPAM with Amazon Web Services Organizations, all accounts in the organization are discovered accounts. Only the IPAM account can get all discovered accounts in the organization.
+    */
+  def getIpamDiscoveredAccounts(params: GetIpamDiscoveredAccountsRequest): Request[GetIpamDiscoveredAccountsResult, AWSError] = js.native
+  def getIpamDiscoveredAccounts(
+    params: GetIpamDiscoveredAccountsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetIpamDiscoveredAccountsResult, Unit]
+  ): Request[GetIpamDiscoveredAccountsResult, AWSError] = js.native
+  
+  /**
+    * Returns the resource CIDRs that are monitored as part of a resource discovery. A discovered resource is a resource CIDR monitored under a resource discovery. The following resources can be discovered: VPCs, Public IPv4 pools, VPC subnets, and Elastic IP addresses. 
+    */
+  def getIpamDiscoveredResourceCidrs(): Request[GetIpamDiscoveredResourceCidrsResult, AWSError] = js.native
+  def getIpamDiscoveredResourceCidrs(callback: js.Function2[/* err */ AWSError, /* data */ GetIpamDiscoveredResourceCidrsResult, Unit]): Request[GetIpamDiscoveredResourceCidrsResult, AWSError] = js.native
+  /**
+    * Returns the resource CIDRs that are monitored as part of a resource discovery. A discovered resource is a resource CIDR monitored under a resource discovery. The following resources can be discovered: VPCs, Public IPv4 pools, VPC subnets, and Elastic IP addresses. 
+    */
+  def getIpamDiscoveredResourceCidrs(params: GetIpamDiscoveredResourceCidrsRequest): Request[GetIpamDiscoveredResourceCidrsResult, AWSError] = js.native
+  def getIpamDiscoveredResourceCidrs(
+    params: GetIpamDiscoveredResourceCidrsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetIpamDiscoveredResourceCidrsResult, Unit]
+  ): Request[GetIpamDiscoveredResourceCidrsResult, AWSError] = js.native
+  
+  /**
+    * Get a list of all the CIDR allocations in an IPAM pool.  If you use this action after AllocateIpamPoolCidr or ReleaseIpamPoolAllocation, note that all EC2 API actions follow an eventual consistency model. 
     */
   def getIpamPoolAllocations(): Request[GetIpamPoolAllocationsResult, AWSError] = js.native
   def getIpamPoolAllocations(callback: js.Function2[/* err */ AWSError, /* data */ GetIpamPoolAllocationsResult, Unit]): Request[GetIpamPoolAllocationsResult, AWSError] = js.native
   /**
-    * Get a list of all the CIDR allocations in an IPAM pool.
+    * Get a list of all the CIDR allocations in an IPAM pool.  If you use this action after AllocateIpamPoolCidr or ReleaseIpamPoolAllocation, note that all EC2 API actions follow an eventual consistency model. 
     */
   def getIpamPoolAllocations(params: GetIpamPoolAllocationsRequest): Request[GetIpamPoolAllocationsResult, AWSError] = js.native
   def getIpamPoolAllocations(
@@ -5949,12 +6449,12 @@ trait EC2 extends Service {
   ): Request[GetIpamPoolCidrsResult, AWSError] = js.native
   
   /**
-    * Get information about the resources in a scope.
+    * Returns resource CIDRs managed by IPAM in a given scope. If an IPAM is associated with more than one resource discovery, the resource CIDRs across all of the resource discoveries is returned. A resource discovery is an IPAM component that enables IPAM to manage and monitor resources that belong to the owning account.
     */
   def getIpamResourceCidrs(): Request[GetIpamResourceCidrsResult, AWSError] = js.native
   def getIpamResourceCidrs(callback: js.Function2[/* err */ AWSError, /* data */ GetIpamResourceCidrsResult, Unit]): Request[GetIpamResourceCidrsResult, AWSError] = js.native
   /**
-    * Get information about the resources in a scope.
+    * Returns resource CIDRs managed by IPAM in a given scope. If an IPAM is associated with more than one resource discovery, the resource CIDRs across all of the resource discoveries is returned. A resource discovery is an IPAM component that enables IPAM to manage and monitor resources that belong to the owning account.
     */
   def getIpamResourceCidrs(params: GetIpamResourceCidrsRequest): Request[GetIpamResourceCidrsResult, AWSError] = js.native
   def getIpamResourceCidrs(
@@ -6239,6 +6739,34 @@ trait EC2 extends Service {
   ): Request[GetTransitGatewayRouteTablePropagationsResult, AWSError] = js.native
   
   /**
+    * Get the Verified Access policy associated with the endpoint.
+    */
+  def getVerifiedAccessEndpointPolicy(): Request[GetVerifiedAccessEndpointPolicyResult, AWSError] = js.native
+  def getVerifiedAccessEndpointPolicy(callback: js.Function2[/* err */ AWSError, /* data */ GetVerifiedAccessEndpointPolicyResult, Unit]): Request[GetVerifiedAccessEndpointPolicyResult, AWSError] = js.native
+  /**
+    * Get the Verified Access policy associated with the endpoint.
+    */
+  def getVerifiedAccessEndpointPolicy(params: GetVerifiedAccessEndpointPolicyRequest): Request[GetVerifiedAccessEndpointPolicyResult, AWSError] = js.native
+  def getVerifiedAccessEndpointPolicy(
+    params: GetVerifiedAccessEndpointPolicyRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetVerifiedAccessEndpointPolicyResult, Unit]
+  ): Request[GetVerifiedAccessEndpointPolicyResult, AWSError] = js.native
+  
+  /**
+    * Shows the contents of the Verified Access policy associated with the group.
+    */
+  def getVerifiedAccessGroupPolicy(): Request[GetVerifiedAccessGroupPolicyResult, AWSError] = js.native
+  def getVerifiedAccessGroupPolicy(callback: js.Function2[/* err */ AWSError, /* data */ GetVerifiedAccessGroupPolicyResult, Unit]): Request[GetVerifiedAccessGroupPolicyResult, AWSError] = js.native
+  /**
+    * Shows the contents of the Verified Access policy associated with the group.
+    */
+  def getVerifiedAccessGroupPolicy(params: GetVerifiedAccessGroupPolicyRequest): Request[GetVerifiedAccessGroupPolicyResult, AWSError] = js.native
+  def getVerifiedAccessGroupPolicy(
+    params: GetVerifiedAccessGroupPolicyRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetVerifiedAccessGroupPolicyResult, Unit]
+  ): Request[GetVerifiedAccessGroupPolicyResult, AWSError] = js.native
+  
+  /**
     * Download an Amazon Web Services-provided sample configuration file to be used with the customer gateway device specified for your Site-to-Site VPN connection.
     */
   def getVpnConnectionDeviceSampleConfiguration(): Request[GetVpnConnectionDeviceSampleConfigurationResult, AWSError] = js.native
@@ -6269,6 +6797,20 @@ trait EC2 extends Service {
   ): Request[GetVpnConnectionDeviceTypesResult, AWSError] = js.native
   
   /**
+    * Get details of available tunnel endpoint maintenance.
+    */
+  def getVpnTunnelReplacementStatus(): Request[GetVpnTunnelReplacementStatusResult, AWSError] = js.native
+  def getVpnTunnelReplacementStatus(callback: js.Function2[/* err */ AWSError, /* data */ GetVpnTunnelReplacementStatusResult, Unit]): Request[GetVpnTunnelReplacementStatusResult, AWSError] = js.native
+  /**
+    * Get details of available tunnel endpoint maintenance.
+    */
+  def getVpnTunnelReplacementStatus(params: GetVpnTunnelReplacementStatusRequest): Request[GetVpnTunnelReplacementStatusResult, AWSError] = js.native
+  def getVpnTunnelReplacementStatus(
+    params: GetVpnTunnelReplacementStatusRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetVpnTunnelReplacementStatusResult, Unit]
+  ): Request[GetVpnTunnelReplacementStatusResult, AWSError] = js.native
+  
+  /**
     * Uploads a client certificate revocation list to the specified Client VPN endpoint. Uploading a client certificate revocation list overwrites the existing client certificate revocation list. Uploading a client certificate revocation list resets existing client connections.
     */
   def importClientVpnClientCertificateRevocationList(): Request[ImportClientVpnClientCertificateRevocationListResult, AWSError] = js.native
@@ -6293,12 +6835,12 @@ trait EC2 extends Service {
   ): Request[ImportClientVpnClientCertificateRevocationListResult, AWSError] = js.native
   
   /**
-    * Import single or multi-volume disk images or EBS snapshots into an Amazon Machine Image (AMI).  Amazon Web Services VM Import/Export strongly recommends specifying a value for either the --license-type or --usage-operation parameter when you create a new VM Import task. This ensures your operating system is licensed appropriately and your billing is optimized.  For more information, see Importing a VM as an image using VM Import/Export in the VM Import/Export User Guide.
+    *  To import your virtual machines (VMs) with a console-based experience, you can use the Import virtual machine images to Amazon Web Services template in the Migration Hub Orchestrator console. For more information, see the  Migration Hub Orchestrator User Guide .  Import single or multi-volume disk images or EBS snapshots into an Amazon Machine Image (AMI).  Amazon Web Services VM Import/Export strongly recommends specifying a value for either the --license-type or --usage-operation parameter when you create a new VM Import task. This ensures your operating system is licensed appropriately and your billing is optimized.  For more information, see Importing a VM as an image using VM Import/Export in the VM Import/Export User Guide.
     */
   def importImage(): Request[ImportImageResult, AWSError] = js.native
   def importImage(callback: js.Function2[/* err */ AWSError, /* data */ ImportImageResult, Unit]): Request[ImportImageResult, AWSError] = js.native
   /**
-    * Import single or multi-volume disk images or EBS snapshots into an Amazon Machine Image (AMI).  Amazon Web Services VM Import/Export strongly recommends specifying a value for either the --license-type or --usage-operation parameter when you create a new VM Import task. This ensures your operating system is licensed appropriately and your billing is optimized.  For more information, see Importing a VM as an image using VM Import/Export in the VM Import/Export User Guide.
+    *  To import your virtual machines (VMs) with a console-based experience, you can use the Import virtual machine images to Amazon Web Services template in the Migration Hub Orchestrator console. For more information, see the  Migration Hub Orchestrator User Guide .  Import single or multi-volume disk images or EBS snapshots into an Amazon Machine Image (AMI).  Amazon Web Services VM Import/Export strongly recommends specifying a value for either the --license-type or --usage-operation parameter when you create a new VM Import task. This ensures your operating system is licensed appropriately and your billing is optimized.  For more information, see Importing a VM as an image using VM Import/Export in the VM Import/Export User Guide.
     */
   def importImage(params: ImportImageRequest): Request[ImportImageResult, AWSError] = js.native
   def importImage(
@@ -6363,12 +6905,12 @@ trait EC2 extends Service {
   ): Request[ImportVolumeResult, AWSError] = js.native
   
   /**
-    * Lists one or more AMIs that are currently in the Recycle Bin. For more information, see Recycle Bin in the Amazon Elastic Compute Cloud User Guide.
+    * Lists one or more AMIs that are currently in the Recycle Bin. For more information, see Recycle Bin in the Amazon EC2 User Guide.
     */
   def listImagesInRecycleBin(): Request[ListImagesInRecycleBinResult, AWSError] = js.native
   def listImagesInRecycleBin(callback: js.Function2[/* err */ AWSError, /* data */ ListImagesInRecycleBinResult, Unit]): Request[ListImagesInRecycleBinResult, AWSError] = js.native
   /**
-    * Lists one or more AMIs that are currently in the Recycle Bin. For more information, see Recycle Bin in the Amazon Elastic Compute Cloud User Guide.
+    * Lists one or more AMIs that are currently in the Recycle Bin. For more information, see Recycle Bin in the Amazon EC2 User Guide.
     */
   def listImagesInRecycleBin(params: ListImagesInRecycleBinRequest): Request[ListImagesInRecycleBinResult, AWSError] = js.native
   def listImagesInRecycleBin(
@@ -6561,12 +7103,12 @@ trait EC2 extends Service {
   ): Request[js.Object, AWSError] = js.native
   
   /**
-    * Modifies the specified attribute of the specified AMI. You can specify only one attribute at a time. You can use the Attribute parameter to specify the attribute or one of the following parameters: Description or LaunchPermission. Images with an Amazon Web Services Marketplace product code cannot be made public. To enable the SriovNetSupport enhanced networking attribute of an image, enable SriovNetSupport on an instance and create an AMI from the instance.
+    * Modifies the specified attribute of the specified AMI. You can specify only one attribute at a time. To specify the attribute, you can use the Attribute parameter, or one of the following parameters: Description, ImdsSupport, or LaunchPermission. Images with an Amazon Web Services Marketplace product code cannot be made public. To enable the SriovNetSupport enhanced networking attribute of an image, enable SriovNetSupport on an instance and create an AMI from the instance.
     */
   def modifyImageAttribute(): Request[js.Object, AWSError] = js.native
   def modifyImageAttribute(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Modifies the specified attribute of the specified AMI. You can specify only one attribute at a time. You can use the Attribute parameter to specify the attribute or one of the following parameters: Description or LaunchPermission. Images with an Amazon Web Services Marketplace product code cannot be made public. To enable the SriovNetSupport enhanced networking attribute of an image, enable SriovNetSupport on an instance and create an AMI from the instance.
+    * Modifies the specified attribute of the specified AMI. You can specify only one attribute at a time. To specify the attribute, you can use the Attribute parameter, or one of the following parameters: Description, ImdsSupport, or LaunchPermission. Images with an Amazon Web Services Marketplace product code cannot be made public. To enable the SriovNetSupport enhanced networking attribute of an image, enable SriovNetSupport on an instance and create an AMI from the instance.
     */
   def modifyImageAttribute(params: ModifyImageAttributeRequest): Request[js.Object, AWSError] = js.native
   def modifyImageAttribute(
@@ -6575,12 +7117,12 @@ trait EC2 extends Service {
   ): Request[js.Object, AWSError] = js.native
   
   /**
-    * Modifies the specified attribute of the specified instance. You can specify only one attribute at a time.  Note: Using this action to change the security groups associated with an elastic network interface (ENI) attached to an instance in a VPC can result in an error if the instance has more than one ENI. To change the security groups associated with an ENI attached to an instance that has multiple ENIs, we recommend that you use the ModifyNetworkInterfaceAttribute action. To modify some attributes, the instance must be stopped. For more information, see Modify a stopped instance in the Amazon EC2 User Guide.
+    * Modifies the specified attribute of the specified instance. You can specify only one attribute at a time.  Note: Using this action to change the security groups associated with an elastic network interface (ENI) attached to an instance can result in an error if the instance has more than one ENI. To change the security groups associated with an ENI attached to an instance that has multiple ENIs, we recommend that you use the ModifyNetworkInterfaceAttribute action. To modify some attributes, the instance must be stopped. For more information, see Modify a stopped instance in the Amazon EC2 User Guide.
     */
   def modifyInstanceAttribute(): Request[js.Object, AWSError] = js.native
   def modifyInstanceAttribute(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Modifies the specified attribute of the specified instance. You can specify only one attribute at a time.  Note: Using this action to change the security groups associated with an elastic network interface (ENI) attached to an instance in a VPC can result in an error if the instance has more than one ENI. To change the security groups associated with an ENI attached to an instance that has multiple ENIs, we recommend that you use the ModifyNetworkInterfaceAttribute action. To modify some attributes, the instance must be stopped. For more information, see Modify a stopped instance in the Amazon EC2 User Guide.
+    * Modifies the specified attribute of the specified instance. You can specify only one attribute at a time.  Note: Using this action to change the security groups associated with an elastic network interface (ENI) attached to an instance can result in an error if the instance has more than one ENI. To change the security groups associated with an ENI attached to an instance that has multiple ENIs, we recommend that you use the ModifyNetworkInterfaceAttribute action. To modify some attributes, the instance must be stopped. For more information, see Modify a stopped instance in the Amazon EC2 User Guide.
     */
   def modifyInstanceAttribute(params: ModifyInstanceAttributeRequest): Request[js.Object, AWSError] = js.native
   def modifyInstanceAttribute(
@@ -6743,6 +7285,20 @@ trait EC2 extends Service {
   ): Request[ModifyIpamResourceCidrResult, AWSError] = js.native
   
   /**
+    * Modifies a resource discovery. A resource discovery is an IPAM component that enables IPAM to manage and monitor resources that belong to the owning account.
+    */
+  def modifyIpamResourceDiscovery(): Request[ModifyIpamResourceDiscoveryResult, AWSError] = js.native
+  def modifyIpamResourceDiscovery(callback: js.Function2[/* err */ AWSError, /* data */ ModifyIpamResourceDiscoveryResult, Unit]): Request[ModifyIpamResourceDiscoveryResult, AWSError] = js.native
+  /**
+    * Modifies a resource discovery. A resource discovery is an IPAM component that enables IPAM to manage and monitor resources that belong to the owning account.
+    */
+  def modifyIpamResourceDiscovery(params: ModifyIpamResourceDiscoveryRequest): Request[ModifyIpamResourceDiscoveryResult, AWSError] = js.native
+  def modifyIpamResourceDiscovery(
+    params: ModifyIpamResourceDiscoveryRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ModifyIpamResourceDiscoveryResult, Unit]
+  ): Request[ModifyIpamResourceDiscoveryResult, AWSError] = js.native
+  
+  /**
     * Modify an IPAM scope.
     */
   def modifyIpamScope(): Request[ModifyIpamScopeResult, AWSError] = js.native
@@ -6827,12 +7383,12 @@ trait EC2 extends Service {
   ): Request[ModifyPrivateDnsNameOptionsResult, AWSError] = js.native
   
   /**
-    * Modifies the configuration of your Reserved Instances, such as the Availability Zone, instance count, or instance type. The Reserved Instances to be modified must be identical, except for Availability Zone, network platform, and instance type. For more information, see Modifying Reserved Instances in the Amazon EC2 User Guide.  We are retiring EC2-Classic. We recommend that you migrate from EC2-Classic to a VPC. For more information, see Migrate from EC2-Classic to a VPC in the Amazon Elastic Compute Cloud User Guide. 
+    * Modifies the configuration of your Reserved Instances, such as the Availability Zone, instance count, or instance type. The Reserved Instances to be modified must be identical, except for Availability Zone, network platform, and instance type. For more information, see Modifying Reserved Instances in the Amazon EC2 User Guide.
     */
   def modifyReservedInstances(): Request[ModifyReservedInstancesResult, AWSError] = js.native
   def modifyReservedInstances(callback: js.Function2[/* err */ AWSError, /* data */ ModifyReservedInstancesResult, Unit]): Request[ModifyReservedInstancesResult, AWSError] = js.native
   /**
-    * Modifies the configuration of your Reserved Instances, such as the Availability Zone, instance count, or instance type. The Reserved Instances to be modified must be identical, except for Availability Zone, network platform, and instance type. For more information, see Modifying Reserved Instances in the Amazon EC2 User Guide.  We are retiring EC2-Classic. We recommend that you migrate from EC2-Classic to a VPC. For more information, see Migrate from EC2-Classic to a VPC in the Amazon Elastic Compute Cloud User Guide. 
+    * Modifies the configuration of your Reserved Instances, such as the Availability Zone, instance count, or instance type. The Reserved Instances to be modified must be identical, except for Availability Zone, network platform, and instance type. For more information, see Modifying Reserved Instances in the Amazon EC2 User Guide.
     */
   def modifyReservedInstances(params: ModifyReservedInstancesRequest): Request[ModifyReservedInstancesResult, AWSError] = js.native
   def modifyReservedInstances(
@@ -7001,6 +7557,118 @@ trait EC2 extends Service {
   ): Request[ModifyTransitGatewayVpcAttachmentResult, AWSError] = js.native
   
   /**
+    * Modifies the configuration of the specified Amazon Web Services Verified Access endpoint.
+    */
+  def modifyVerifiedAccessEndpoint(): Request[ModifyVerifiedAccessEndpointResult, AWSError] = js.native
+  def modifyVerifiedAccessEndpoint(callback: js.Function2[/* err */ AWSError, /* data */ ModifyVerifiedAccessEndpointResult, Unit]): Request[ModifyVerifiedAccessEndpointResult, AWSError] = js.native
+  /**
+    * Modifies the configuration of the specified Amazon Web Services Verified Access endpoint.
+    */
+  def modifyVerifiedAccessEndpoint(params: ModifyVerifiedAccessEndpointRequest): Request[ModifyVerifiedAccessEndpointResult, AWSError] = js.native
+  def modifyVerifiedAccessEndpoint(
+    params: ModifyVerifiedAccessEndpointRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ModifyVerifiedAccessEndpointResult, Unit]
+  ): Request[ModifyVerifiedAccessEndpointResult, AWSError] = js.native
+  
+  /**
+    * Modifies the specified Amazon Web Services Verified Access endpoint policy.
+    */
+  def modifyVerifiedAccessEndpointPolicy(): Request[ModifyVerifiedAccessEndpointPolicyResult, AWSError] = js.native
+  def modifyVerifiedAccessEndpointPolicy(
+    callback: js.Function2[/* err */ AWSError, /* data */ ModifyVerifiedAccessEndpointPolicyResult, Unit]
+  ): Request[ModifyVerifiedAccessEndpointPolicyResult, AWSError] = js.native
+  /**
+    * Modifies the specified Amazon Web Services Verified Access endpoint policy.
+    */
+  def modifyVerifiedAccessEndpointPolicy(params: ModifyVerifiedAccessEndpointPolicyRequest): Request[ModifyVerifiedAccessEndpointPolicyResult, AWSError] = js.native
+  def modifyVerifiedAccessEndpointPolicy(
+    params: ModifyVerifiedAccessEndpointPolicyRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ModifyVerifiedAccessEndpointPolicyResult, Unit]
+  ): Request[ModifyVerifiedAccessEndpointPolicyResult, AWSError] = js.native
+  
+  /**
+    * Modifies the specified Amazon Web Services Verified Access group configuration.
+    */
+  def modifyVerifiedAccessGroup(): Request[ModifyVerifiedAccessGroupResult, AWSError] = js.native
+  def modifyVerifiedAccessGroup(callback: js.Function2[/* err */ AWSError, /* data */ ModifyVerifiedAccessGroupResult, Unit]): Request[ModifyVerifiedAccessGroupResult, AWSError] = js.native
+  /**
+    * Modifies the specified Amazon Web Services Verified Access group configuration.
+    */
+  def modifyVerifiedAccessGroup(params: ModifyVerifiedAccessGroupRequest): Request[ModifyVerifiedAccessGroupResult, AWSError] = js.native
+  def modifyVerifiedAccessGroup(
+    params: ModifyVerifiedAccessGroupRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ModifyVerifiedAccessGroupResult, Unit]
+  ): Request[ModifyVerifiedAccessGroupResult, AWSError] = js.native
+  
+  /**
+    * Modifies the specified Amazon Web Services Verified Access group policy.
+    */
+  def modifyVerifiedAccessGroupPolicy(): Request[ModifyVerifiedAccessGroupPolicyResult, AWSError] = js.native
+  def modifyVerifiedAccessGroupPolicy(callback: js.Function2[/* err */ AWSError, /* data */ ModifyVerifiedAccessGroupPolicyResult, Unit]): Request[ModifyVerifiedAccessGroupPolicyResult, AWSError] = js.native
+  /**
+    * Modifies the specified Amazon Web Services Verified Access group policy.
+    */
+  def modifyVerifiedAccessGroupPolicy(params: ModifyVerifiedAccessGroupPolicyRequest): Request[ModifyVerifiedAccessGroupPolicyResult, AWSError] = js.native
+  def modifyVerifiedAccessGroupPolicy(
+    params: ModifyVerifiedAccessGroupPolicyRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ModifyVerifiedAccessGroupPolicyResult, Unit]
+  ): Request[ModifyVerifiedAccessGroupPolicyResult, AWSError] = js.native
+  
+  /**
+    * Modifies the configuration of the specified Amazon Web Services Verified Access instance.
+    */
+  def modifyVerifiedAccessInstance(): Request[ModifyVerifiedAccessInstanceResult, AWSError] = js.native
+  def modifyVerifiedAccessInstance(callback: js.Function2[/* err */ AWSError, /* data */ ModifyVerifiedAccessInstanceResult, Unit]): Request[ModifyVerifiedAccessInstanceResult, AWSError] = js.native
+  /**
+    * Modifies the configuration of the specified Amazon Web Services Verified Access instance.
+    */
+  def modifyVerifiedAccessInstance(params: ModifyVerifiedAccessInstanceRequest): Request[ModifyVerifiedAccessInstanceResult, AWSError] = js.native
+  def modifyVerifiedAccessInstance(
+    params: ModifyVerifiedAccessInstanceRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ModifyVerifiedAccessInstanceResult, Unit]
+  ): Request[ModifyVerifiedAccessInstanceResult, AWSError] = js.native
+  
+  /**
+    * Modifies the logging configuration for the specified Amazon Web Services Verified Access instance.
+    */
+  def modifyVerifiedAccessInstanceLoggingConfiguration(): Request[ModifyVerifiedAccessInstanceLoggingConfigurationResult, AWSError] = js.native
+  def modifyVerifiedAccessInstanceLoggingConfiguration(
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ ModifyVerifiedAccessInstanceLoggingConfigurationResult, 
+      Unit
+    ]
+  ): Request[ModifyVerifiedAccessInstanceLoggingConfigurationResult, AWSError] = js.native
+  /**
+    * Modifies the logging configuration for the specified Amazon Web Services Verified Access instance.
+    */
+  def modifyVerifiedAccessInstanceLoggingConfiguration(params: ModifyVerifiedAccessInstanceLoggingConfigurationRequest): Request[ModifyVerifiedAccessInstanceLoggingConfigurationResult, AWSError] = js.native
+  def modifyVerifiedAccessInstanceLoggingConfiguration(
+    params: ModifyVerifiedAccessInstanceLoggingConfigurationRequest,
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ ModifyVerifiedAccessInstanceLoggingConfigurationResult, 
+      Unit
+    ]
+  ): Request[ModifyVerifiedAccessInstanceLoggingConfigurationResult, AWSError] = js.native
+  
+  /**
+    * Modifies the configuration of the specified Amazon Web Services Verified Access trust provider.
+    */
+  def modifyVerifiedAccessTrustProvider(): Request[ModifyVerifiedAccessTrustProviderResult, AWSError] = js.native
+  def modifyVerifiedAccessTrustProvider(
+    callback: js.Function2[/* err */ AWSError, /* data */ ModifyVerifiedAccessTrustProviderResult, Unit]
+  ): Request[ModifyVerifiedAccessTrustProviderResult, AWSError] = js.native
+  /**
+    * Modifies the configuration of the specified Amazon Web Services Verified Access trust provider.
+    */
+  def modifyVerifiedAccessTrustProvider(params: ModifyVerifiedAccessTrustProviderRequest): Request[ModifyVerifiedAccessTrustProviderResult, AWSError] = js.native
+  def modifyVerifiedAccessTrustProvider(
+    params: ModifyVerifiedAccessTrustProviderRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ModifyVerifiedAccessTrustProviderResult, Unit]
+  ): Request[ModifyVerifiedAccessTrustProviderResult, AWSError] = js.native
+  
+  /**
     * You can modify several parameters of an existing EBS volume, including volume size, volume type, and IOPS capacity. If your EBS volume is attached to a current-generation EC2 instance type, you might be able to apply these changes without stopping the instance or detaching the volume from it. For more information about modifying EBS volumes, see Amazon EBS Elastic Volumes (Linux instances) or Amazon EBS Elastic Volumes (Windows instances). When you complete a resize operation on your volume, you need to extend the volume's file-system size to take advantage of the new storage capacity. For more information, see Extend a Linux file system or Extend a Windows file system.  You can use CloudWatch Events to check the status of a modification to an EBS volume. For information about CloudWatch Events, see the Amazon CloudWatch Events User Guide. You can also track the status of a modification using DescribeVolumesModifications. For information about tracking status changes using either method, see Monitor the progress of volume modifications. With previous-generation instance types, resizing an EBS volume might require detaching and reattaching the volume or stopping and restarting the instance. After modifying a volume, you must wait at least six hours and ensure that the volume is in the in-use or available state before you can modify the same volume. This is sometimes referred to as a cooldown period.
     */
   def modifyVolume(): Request[ModifyVolumeResult, AWSError] = js.native
@@ -7113,14 +7781,14 @@ trait EC2 extends Service {
   ): Request[ModifyVpcEndpointServicePayerResponsibilityResult, AWSError] = js.native
   
   /**
-    * Modifies the permissions for your VPC endpoint service. You can add or remove permissions for service consumers (IAM users, IAM roles, and Amazon Web Services accounts) to connect to your endpoint service. If you grant permissions to all principals, the service is public. Any users who know the name of a public service can send a request to attach an endpoint. If the service does not require manual approval, attachments are automatically approved.
+    * Modifies the permissions for your VPC endpoint service. You can add or remove permissions for service consumers (Amazon Web Services accounts, users, and IAM roles) to connect to your endpoint service. If you grant permissions to all principals, the service is public. Any users who know the name of a public service can send a request to attach an endpoint. If the service does not require manual approval, attachments are automatically approved.
     */
   def modifyVpcEndpointServicePermissions(): Request[ModifyVpcEndpointServicePermissionsResult, AWSError] = js.native
   def modifyVpcEndpointServicePermissions(
     callback: js.Function2[/* err */ AWSError, /* data */ ModifyVpcEndpointServicePermissionsResult, Unit]
   ): Request[ModifyVpcEndpointServicePermissionsResult, AWSError] = js.native
   /**
-    * Modifies the permissions for your VPC endpoint service. You can add or remove permissions for service consumers (IAM users, IAM roles, and Amazon Web Services accounts) to connect to your endpoint service. If you grant permissions to all principals, the service is public. Any users who know the name of a public service can send a request to attach an endpoint. If the service does not require manual approval, attachments are automatically approved.
+    * Modifies the permissions for your VPC endpoint service. You can add or remove permissions for service consumers (Amazon Web Services accounts, users, and IAM roles) to connect to your endpoint service. If you grant permissions to all principals, the service is public. Any users who know the name of a public service can send a request to attach an endpoint. If the service does not require manual approval, attachments are automatically approved.
     */
   def modifyVpcEndpointServicePermissions(params: ModifyVpcEndpointServicePermissionsRequest): Request[ModifyVpcEndpointServicePermissionsResult, AWSError] = js.native
   def modifyVpcEndpointServicePermissions(
@@ -7129,14 +7797,14 @@ trait EC2 extends Service {
   ): Request[ModifyVpcEndpointServicePermissionsResult, AWSError] = js.native
   
   /**
-    *  We are retiring EC2-Classic. We recommend that you migrate from EC2-Classic to a VPC. For more information, see Migrate from EC2-Classic to a VPC in the Amazon Elastic Compute Cloud User Guide.  Modifies the VPC peering connection options on one side of a VPC peering connection. You can do the following:   Enable/disable communication over the peering connection between an EC2-Classic instance that's linked to your VPC (using ClassicLink) and instances in the peer VPC.   Enable/disable communication over the peering connection between instances in your VPC and an EC2-Classic instance that's linked to the peer VPC.   Enable/disable the ability to resolve public DNS hostnames to private IP addresses when queried from instances in the peer VPC.   If the peered VPCs are in the same Amazon Web Services account, you can enable DNS resolution for queries from the local VPC. This ensures that queries from the local VPC resolve to private IP addresses in the peer VPC. This option is not available if the peered VPCs are in different different Amazon Web Services accounts or different Regions. For peered VPCs in different Amazon Web Services accounts, each Amazon Web Services account owner must initiate a separate request to modify the peering connection options. For inter-region peering connections, you must use the Region for the requester VPC to modify the requester VPC peering options and the Region for the accepter VPC to modify the accepter VPC peering options. To verify which VPCs are the accepter and the requester for a VPC peering connection, use the DescribeVpcPeeringConnections command.
+    *  We are retiring EC2-Classic. We recommend that you migrate from EC2-Classic to a VPC. For more information, see Migrate from EC2-Classic to a VPC in the Amazon Elastic Compute Cloud User Guide.  Modifies the VPC peering connection options on one side of a VPC peering connection. You can do the following:   Enable/disable communication over the peering connection between an EC2-Classic instance that's linked to your VPC (using ClassicLink) and instances in the peer VPC.   Enable/disable communication over the peering connection between instances in your VPC and an EC2-Classic instance that's linked to the peer VPC.   Enable/disable the ability to resolve public DNS hostnames to private IP addresses when queried from instances in the peer VPC.   If the peered VPCs are in the same Amazon Web Services account, you can enable DNS resolution for queries from the local VPC. This ensures that queries from the local VPC resolve to private IP addresses in the peer VPC. This option is not available if the peered VPCs are in different Amazon Web Services accounts or different Regions. For peered VPCs in different Amazon Web Services accounts, each Amazon Web Services account owner must initiate a separate request to modify the peering connection options. For inter-region peering connections, you must use the Region for the requester VPC to modify the requester VPC peering options and the Region for the accepter VPC to modify the accepter VPC peering options. To verify which VPCs are the accepter and the requester for a VPC peering connection, use the DescribeVpcPeeringConnections command.
     */
   def modifyVpcPeeringConnectionOptions(): Request[ModifyVpcPeeringConnectionOptionsResult, AWSError] = js.native
   def modifyVpcPeeringConnectionOptions(
     callback: js.Function2[/* err */ AWSError, /* data */ ModifyVpcPeeringConnectionOptionsResult, Unit]
   ): Request[ModifyVpcPeeringConnectionOptionsResult, AWSError] = js.native
   /**
-    *  We are retiring EC2-Classic. We recommend that you migrate from EC2-Classic to a VPC. For more information, see Migrate from EC2-Classic to a VPC in the Amazon Elastic Compute Cloud User Guide.  Modifies the VPC peering connection options on one side of a VPC peering connection. You can do the following:   Enable/disable communication over the peering connection between an EC2-Classic instance that's linked to your VPC (using ClassicLink) and instances in the peer VPC.   Enable/disable communication over the peering connection between instances in your VPC and an EC2-Classic instance that's linked to the peer VPC.   Enable/disable the ability to resolve public DNS hostnames to private IP addresses when queried from instances in the peer VPC.   If the peered VPCs are in the same Amazon Web Services account, you can enable DNS resolution for queries from the local VPC. This ensures that queries from the local VPC resolve to private IP addresses in the peer VPC. This option is not available if the peered VPCs are in different different Amazon Web Services accounts or different Regions. For peered VPCs in different Amazon Web Services accounts, each Amazon Web Services account owner must initiate a separate request to modify the peering connection options. For inter-region peering connections, you must use the Region for the requester VPC to modify the requester VPC peering options and the Region for the accepter VPC to modify the accepter VPC peering options. To verify which VPCs are the accepter and the requester for a VPC peering connection, use the DescribeVpcPeeringConnections command.
+    *  We are retiring EC2-Classic. We recommend that you migrate from EC2-Classic to a VPC. For more information, see Migrate from EC2-Classic to a VPC in the Amazon Elastic Compute Cloud User Guide.  Modifies the VPC peering connection options on one side of a VPC peering connection. You can do the following:   Enable/disable communication over the peering connection between an EC2-Classic instance that's linked to your VPC (using ClassicLink) and instances in the peer VPC.   Enable/disable communication over the peering connection between instances in your VPC and an EC2-Classic instance that's linked to the peer VPC.   Enable/disable the ability to resolve public DNS hostnames to private IP addresses when queried from instances in the peer VPC.   If the peered VPCs are in the same Amazon Web Services account, you can enable DNS resolution for queries from the local VPC. This ensures that queries from the local VPC resolve to private IP addresses in the peer VPC. This option is not available if the peered VPCs are in different Amazon Web Services accounts or different Regions. For peered VPCs in different Amazon Web Services accounts, each Amazon Web Services account owner must initiate a separate request to modify the peering connection options. For inter-region peering connections, you must use the Region for the requester VPC to modify the requester VPC peering options and the Region for the accepter VPC to modify the accepter VPC peering options. To verify which VPCs are the accepter and the requester for a VPC peering connection, use the DescribeVpcPeeringConnections command.
     */
   def modifyVpcPeeringConnectionOptions(params: ModifyVpcPeeringConnectionOptionsRequest): Request[ModifyVpcPeeringConnectionOptionsResult, AWSError] = js.native
   def modifyVpcPeeringConnectionOptions(
@@ -7243,12 +7911,12 @@ trait EC2 extends Service {
   ): Request[MoveAddressToVpcResult, AWSError] = js.native
   
   /**
-    * Move an BYOIP IPv4 CIDR to IPAM from a public IPv4 pool. If you already have an IPv4 BYOIP CIDR with Amazon Web Services, you can move the CIDR to IPAM from a public IPv4 pool. You cannot move an IPv6 CIDR to IPAM. If you are bringing a new IP address to Amazon Web Services for the first time, complete the steps in Tutorial: BYOIP address CIDRs to IPAM.
+    * Move a BYOIPv4 CIDR to IPAM from a public IPv4 pool. If you already have a BYOIPv4 CIDR with Amazon Web Services, you can move the CIDR to IPAM from a public IPv4 pool. You cannot move an IPv6 CIDR to IPAM. If you are bringing a new IP address to Amazon Web Services for the first time, complete the steps in Tutorial: BYOIP address CIDRs to IPAM.
     */
   def moveByoipCidrToIpam(): Request[MoveByoipCidrToIpamResult, AWSError] = js.native
   def moveByoipCidrToIpam(callback: js.Function2[/* err */ AWSError, /* data */ MoveByoipCidrToIpamResult, Unit]): Request[MoveByoipCidrToIpamResult, AWSError] = js.native
   /**
-    * Move an BYOIP IPv4 CIDR to IPAM from a public IPv4 pool. If you already have an IPv4 BYOIP CIDR with Amazon Web Services, you can move the CIDR to IPAM from a public IPv4 pool. You cannot move an IPv6 CIDR to IPAM. If you are bringing a new IP address to Amazon Web Services for the first time, complete the steps in Tutorial: BYOIP address CIDRs to IPAM.
+    * Move a BYOIPv4 CIDR to IPAM from a public IPv4 pool. If you already have a BYOIPv4 CIDR with Amazon Web Services, you can move the CIDR to IPAM from a public IPv4 pool. You cannot move an IPv6 CIDR to IPAM. If you are bringing a new IP address to Amazon Web Services for the first time, complete the steps in Tutorial: BYOIP address CIDRs to IPAM.
     */
   def moveByoipCidrToIpam(params: MoveByoipCidrToIpamRequest): Request[MoveByoipCidrToIpamResult, AWSError] = js.native
   def moveByoipCidrToIpam(
@@ -7313,14 +7981,14 @@ trait EC2 extends Service {
   ): Request[PurchaseHostReservationResult, AWSError] = js.native
   
   /**
-    * Purchases a Reserved Instance for use with your account. With Reserved Instances, you pay a lower hourly rate compared to On-Demand instance pricing. Use DescribeReservedInstancesOfferings to get a list of Reserved Instance offerings that match your specifications. After you've purchased a Reserved Instance, you can check for your new Reserved Instance with DescribeReservedInstances. To queue a purchase for a future date and time, specify a purchase time. If you do not specify a purchase time, the default is the current time. For more information, see Reserved Instances and Reserved Instance Marketplace in the Amazon EC2 User Guide.  We are retiring EC2-Classic. We recommend that you migrate from EC2-Classic to a VPC. For more information, see Migrate from EC2-Classic to a VPC in the Amazon Elastic Compute Cloud User Guide. 
+    * Purchases a Reserved Instance for use with your account. With Reserved Instances, you pay a lower hourly rate compared to On-Demand instance pricing. Use DescribeReservedInstancesOfferings to get a list of Reserved Instance offerings that match your specifications. After you've purchased a Reserved Instance, you can check for your new Reserved Instance with DescribeReservedInstances. To queue a purchase for a future date and time, specify a purchase time. If you do not specify a purchase time, the default is the current time. For more information, see Reserved Instances and Reserved Instance Marketplace in the Amazon EC2 User Guide.
     */
   def purchaseReservedInstancesOffering(): Request[PurchaseReservedInstancesOfferingResult, AWSError] = js.native
   def purchaseReservedInstancesOffering(
     callback: js.Function2[/* err */ AWSError, /* data */ PurchaseReservedInstancesOfferingResult, Unit]
   ): Request[PurchaseReservedInstancesOfferingResult, AWSError] = js.native
   /**
-    * Purchases a Reserved Instance for use with your account. With Reserved Instances, you pay a lower hourly rate compared to On-Demand instance pricing. Use DescribeReservedInstancesOfferings to get a list of Reserved Instance offerings that match your specifications. After you've purchased a Reserved Instance, you can check for your new Reserved Instance with DescribeReservedInstances. To queue a purchase for a future date and time, specify a purchase time. If you do not specify a purchase time, the default is the current time. For more information, see Reserved Instances and Reserved Instance Marketplace in the Amazon EC2 User Guide.  We are retiring EC2-Classic. We recommend that you migrate from EC2-Classic to a VPC. For more information, see Migrate from EC2-Classic to a VPC in the Amazon Elastic Compute Cloud User Guide. 
+    * Purchases a Reserved Instance for use with your account. With Reserved Instances, you pay a lower hourly rate compared to On-Demand instance pricing. Use DescribeReservedInstancesOfferings to get a list of Reserved Instance offerings that match your specifications. After you've purchased a Reserved Instance, you can check for your new Reserved Instance with DescribeReservedInstances. To queue a purchase for a future date and time, specify a purchase time. If you do not specify a purchase time, the default is the current time. For more information, see Reserved Instances and Reserved Instance Marketplace in the Amazon EC2 User Guide.
     */
   def purchaseReservedInstancesOffering(params: PurchaseReservedInstancesOfferingRequest): Request[PurchaseReservedInstancesOfferingResult, AWSError] = js.native
   def purchaseReservedInstancesOffering(
@@ -7357,12 +8025,12 @@ trait EC2 extends Service {
   ): Request[js.Object, AWSError] = js.native
   
   /**
-    * Registers an AMI. When you're creating an AMI, this is the final step you must complete before you can launch an instance from the AMI. For more information about creating AMIs, see Creating your own AMIs in the Amazon Elastic Compute Cloud User Guide.  For Amazon EBS-backed instances, CreateImage creates and registers the AMI in a single request, so you don't have to register the AMI yourself. We recommend that you always use CreateImage unless you have a specific reason to use RegisterImage.  If needed, you can deregister an AMI at any time. Any modifications you make to an AMI backed by an instance store volume invalidates its registration. If you make changes to an image, deregister the previous image and register the new image.  Register a snapshot of a root device volume  You can use RegisterImage to create an Amazon EBS-backed Linux AMI from a snapshot of a root device volume. You specify the snapshot using a block device mapping. You can't set the encryption state of the volume using the block device mapping. If the snapshot is encrypted, or encryption by default is enabled, the root volume of an instance launched from the AMI is encrypted. For more information, see Create a Linux AMI from a snapshot and Use encryption with Amazon EBS-backed AMIs in the Amazon Elastic Compute Cloud User Guide.  Amazon Web Services Marketplace product codes  If any snapshots have Amazon Web Services Marketplace product codes, they are copied to the new AMI. Windows and some Linux distributions, such as Red Hat Enterprise Linux (RHEL) and SUSE Linux Enterprise Server (SLES), use the Amazon EC2 billing product code associated with an AMI to verify the subscription status for package updates. To create a new AMI for operating systems that require a billing product code, instead of registering the AMI, do the following to preserve the billing product code association:   Launch an instance from an existing AMI with that billing product code.   Customize the instance.   Create an AMI from the instance using CreateImage.   If you purchase a Reserved Instance to apply to an On-Demand Instance that was launched from an AMI with a billing product code, make sure that the Reserved Instance has the matching billing product code. If you purchase a Reserved Instance without the matching billing product code, the Reserved Instance will not be applied to the On-Demand Instance. For information about how to obtain the platform details and billing information of an AMI, see Understanding AMI billing in the Amazon Elastic Compute Cloud User Guide.
+    * Registers an AMI. When you're creating an AMI, this is the final step you must complete before you can launch an instance from the AMI. For more information about creating AMIs, see Create your own AMI in the Amazon Elastic Compute Cloud User Guide.  For Amazon EBS-backed instances, CreateImage creates and registers the AMI in a single request, so you don't have to register the AMI yourself. We recommend that you always use CreateImage unless you have a specific reason to use RegisterImage.  If needed, you can deregister an AMI at any time. Any modifications you make to an AMI backed by an instance store volume invalidates its registration. If you make changes to an image, deregister the previous image and register the new image.  Register a snapshot of a root device volume  You can use RegisterImage to create an Amazon EBS-backed Linux AMI from a snapshot of a root device volume. You specify the snapshot using a block device mapping. You can't set the encryption state of the volume using the block device mapping. If the snapshot is encrypted, or encryption by default is enabled, the root volume of an instance launched from the AMI is encrypted. For more information, see Create a Linux AMI from a snapshot and Use encryption with Amazon EBS-backed AMIs in the Amazon Elastic Compute Cloud User Guide.  Amazon Web Services Marketplace product codes  If any snapshots have Amazon Web Services Marketplace product codes, they are copied to the new AMI. Windows and some Linux distributions, such as Red Hat Enterprise Linux (RHEL) and SUSE Linux Enterprise Server (SLES), use the Amazon EC2 billing product code associated with an AMI to verify the subscription status for package updates. To create a new AMI for operating systems that require a billing product code, instead of registering the AMI, do the following to preserve the billing product code association:   Launch an instance from an existing AMI with that billing product code.   Customize the instance.   Create an AMI from the instance using CreateImage.   If you purchase a Reserved Instance to apply to an On-Demand Instance that was launched from an AMI with a billing product code, make sure that the Reserved Instance has the matching billing product code. If you purchase a Reserved Instance without the matching billing product code, the Reserved Instance will not be applied to the On-Demand Instance. For information about how to obtain the platform details and billing information of an AMI, see Understand AMI billing information in the Amazon EC2 User Guide.
     */
   def registerImage(): Request[RegisterImageResult, AWSError] = js.native
   def registerImage(callback: js.Function2[/* err */ AWSError, /* data */ RegisterImageResult, Unit]): Request[RegisterImageResult, AWSError] = js.native
   /**
-    * Registers an AMI. When you're creating an AMI, this is the final step you must complete before you can launch an instance from the AMI. For more information about creating AMIs, see Creating your own AMIs in the Amazon Elastic Compute Cloud User Guide.  For Amazon EBS-backed instances, CreateImage creates and registers the AMI in a single request, so you don't have to register the AMI yourself. We recommend that you always use CreateImage unless you have a specific reason to use RegisterImage.  If needed, you can deregister an AMI at any time. Any modifications you make to an AMI backed by an instance store volume invalidates its registration. If you make changes to an image, deregister the previous image and register the new image.  Register a snapshot of a root device volume  You can use RegisterImage to create an Amazon EBS-backed Linux AMI from a snapshot of a root device volume. You specify the snapshot using a block device mapping. You can't set the encryption state of the volume using the block device mapping. If the snapshot is encrypted, or encryption by default is enabled, the root volume of an instance launched from the AMI is encrypted. For more information, see Create a Linux AMI from a snapshot and Use encryption with Amazon EBS-backed AMIs in the Amazon Elastic Compute Cloud User Guide.  Amazon Web Services Marketplace product codes  If any snapshots have Amazon Web Services Marketplace product codes, they are copied to the new AMI. Windows and some Linux distributions, such as Red Hat Enterprise Linux (RHEL) and SUSE Linux Enterprise Server (SLES), use the Amazon EC2 billing product code associated with an AMI to verify the subscription status for package updates. To create a new AMI for operating systems that require a billing product code, instead of registering the AMI, do the following to preserve the billing product code association:   Launch an instance from an existing AMI with that billing product code.   Customize the instance.   Create an AMI from the instance using CreateImage.   If you purchase a Reserved Instance to apply to an On-Demand Instance that was launched from an AMI with a billing product code, make sure that the Reserved Instance has the matching billing product code. If you purchase a Reserved Instance without the matching billing product code, the Reserved Instance will not be applied to the On-Demand Instance. For information about how to obtain the platform details and billing information of an AMI, see Understanding AMI billing in the Amazon Elastic Compute Cloud User Guide.
+    * Registers an AMI. When you're creating an AMI, this is the final step you must complete before you can launch an instance from the AMI. For more information about creating AMIs, see Create your own AMI in the Amazon Elastic Compute Cloud User Guide.  For Amazon EBS-backed instances, CreateImage creates and registers the AMI in a single request, so you don't have to register the AMI yourself. We recommend that you always use CreateImage unless you have a specific reason to use RegisterImage.  If needed, you can deregister an AMI at any time. Any modifications you make to an AMI backed by an instance store volume invalidates its registration. If you make changes to an image, deregister the previous image and register the new image.  Register a snapshot of a root device volume  You can use RegisterImage to create an Amazon EBS-backed Linux AMI from a snapshot of a root device volume. You specify the snapshot using a block device mapping. You can't set the encryption state of the volume using the block device mapping. If the snapshot is encrypted, or encryption by default is enabled, the root volume of an instance launched from the AMI is encrypted. For more information, see Create a Linux AMI from a snapshot and Use encryption with Amazon EBS-backed AMIs in the Amazon Elastic Compute Cloud User Guide.  Amazon Web Services Marketplace product codes  If any snapshots have Amazon Web Services Marketplace product codes, they are copied to the new AMI. Windows and some Linux distributions, such as Red Hat Enterprise Linux (RHEL) and SUSE Linux Enterprise Server (SLES), use the Amazon EC2 billing product code associated with an AMI to verify the subscription status for package updates. To create a new AMI for operating systems that require a billing product code, instead of registering the AMI, do the following to preserve the billing product code association:   Launch an instance from an existing AMI with that billing product code.   Customize the instance.   Create an AMI from the instance using CreateImage.   If you purchase a Reserved Instance to apply to an On-Demand Instance that was launched from an AMI with a billing product code, make sure that the Reserved Instance has the matching billing product code. If you purchase a Reserved Instance without the matching billing product code, the Reserved Instance will not be applied to the On-Demand Instance. For information about how to obtain the platform details and billing information of an AMI, see Understand AMI billing information in the Amazon EC2 User Guide.
     */
   def registerImage(params: RegisterImageRequest): Request[RegisterImageResult, AWSError] = js.native
   def registerImage(
@@ -7499,12 +8167,12 @@ trait EC2 extends Service {
   ): Request[RejectTransitGatewayVpcAttachmentResult, AWSError] = js.native
   
   /**
-    * Rejects one or more VPC endpoint connection requests to your VPC endpoint service.
+    * Rejects VPC endpoint connection requests to your VPC endpoint service.
     */
   def rejectVpcEndpointConnections(): Request[RejectVpcEndpointConnectionsResult, AWSError] = js.native
   def rejectVpcEndpointConnections(callback: js.Function2[/* err */ AWSError, /* data */ RejectVpcEndpointConnectionsResult, Unit]): Request[RejectVpcEndpointConnectionsResult, AWSError] = js.native
   /**
-    * Rejects one or more VPC endpoint connection requests to your VPC endpoint service.
+    * Rejects VPC endpoint connection requests to your VPC endpoint service.
     */
   def rejectVpcEndpointConnections(params: RejectVpcEndpointConnectionsRequest): Request[RejectVpcEndpointConnectionsResult, AWSError] = js.native
   def rejectVpcEndpointConnections(
@@ -7555,12 +8223,12 @@ trait EC2 extends Service {
   ): Request[ReleaseHostsResult, AWSError] = js.native
   
   /**
-    * Release an allocation within an IPAM pool. You can only use this action to release manual allocations. To remove an allocation for a resource without deleting the resource, set its monitored state to false using ModifyIpamResourceCidr. For more information, see Release an allocation in the Amazon VPC IPAM User Guide. 
+    * Release an allocation within an IPAM pool. You can only use this action to release manual allocations. To remove an allocation for a resource without deleting the resource, set its monitored state to false using ModifyIpamResourceCidr. For more information, see Release an allocation in the Amazon VPC IPAM User Guide.   All EC2 API actions follow an eventual consistency model. 
     */
   def releaseIpamPoolAllocation(): Request[ReleaseIpamPoolAllocationResult, AWSError] = js.native
   def releaseIpamPoolAllocation(callback: js.Function2[/* err */ AWSError, /* data */ ReleaseIpamPoolAllocationResult, Unit]): Request[ReleaseIpamPoolAllocationResult, AWSError] = js.native
   /**
-    * Release an allocation within an IPAM pool. You can only use this action to release manual allocations. To remove an allocation for a resource without deleting the resource, set its monitored state to false using ModifyIpamResourceCidr. For more information, see Release an allocation in the Amazon VPC IPAM User Guide. 
+    * Release an allocation within an IPAM pool. You can only use this action to release manual allocations. To remove an allocation for a resource without deleting the resource, set its monitored state to false using ModifyIpamResourceCidr. For more information, see Release an allocation in the Amazon VPC IPAM User Guide.   All EC2 API actions follow an eventual consistency model. 
     */
   def releaseIpamPoolAllocation(params: ReleaseIpamPoolAllocationRequest): Request[ReleaseIpamPoolAllocationResult, AWSError] = js.native
   def releaseIpamPoolAllocation(
@@ -7655,6 +8323,20 @@ trait EC2 extends Service {
   ): Request[ReplaceTransitGatewayRouteResult, AWSError] = js.native
   
   /**
+    * Trigger replacement of specified VPN tunnel.
+    */
+  def replaceVpnTunnel(): Request[ReplaceVpnTunnelResult, AWSError] = js.native
+  def replaceVpnTunnel(callback: js.Function2[/* err */ AWSError, /* data */ ReplaceVpnTunnelResult, Unit]): Request[ReplaceVpnTunnelResult, AWSError] = js.native
+  /**
+    * Trigger replacement of specified VPN tunnel.
+    */
+  def replaceVpnTunnel(params: ReplaceVpnTunnelRequest): Request[ReplaceVpnTunnelResult, AWSError] = js.native
+  def replaceVpnTunnel(
+    params: ReplaceVpnTunnelRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ReplaceVpnTunnelResult, Unit]
+  ): Request[ReplaceVpnTunnelResult, AWSError] = js.native
+  
+  /**
     * Submits feedback about the status of an instance. The instance must be in the running state. If your experience with the instance differs from the instance status returned by DescribeInstanceStatus, use ReportInstanceStatus to report your experience with the instance. Amazon EC2 collects this information to improve the accuracy of status checks. Use of this action does not change the value returned by DescribeInstanceStatus.
     */
   def reportInstanceStatus(): Request[js.Object, AWSError] = js.native
@@ -7683,12 +8365,12 @@ trait EC2 extends Service {
   ): Request[RequestSpotFleetResponse, AWSError] = js.native
   
   /**
-    * Creates a Spot Instance request. For more information, see Spot Instance requests in the Amazon EC2 User Guide for Linux Instances.  We strongly discourage using the RequestSpotInstances API because it is a legacy API with no planned investment. For options for requesting Spot Instances, see Which is the best Spot request method to use? in the Amazon EC2 User Guide for Linux Instances.   We are retiring EC2-Classic. We recommend that you migrate from EC2-Classic to a VPC. For more information, see Migrate from EC2-Classic to a VPC in the Amazon EC2 User Guide for Linux Instances. 
+    * Creates a Spot Instance request. For more information, see Spot Instance requests in the Amazon EC2 User Guide for Linux Instances.  We strongly discourage using the RequestSpotInstances API because it is a legacy API with no planned investment. For options for requesting Spot Instances, see Which is the best Spot request method to use? in the Amazon EC2 User Guide for Linux Instances. 
     */
   def requestSpotInstances(): Request[RequestSpotInstancesResult, AWSError] = js.native
   def requestSpotInstances(callback: js.Function2[/* err */ AWSError, /* data */ RequestSpotInstancesResult, Unit]): Request[RequestSpotInstancesResult, AWSError] = js.native
   /**
-    * Creates a Spot Instance request. For more information, see Spot Instance requests in the Amazon EC2 User Guide for Linux Instances.  We strongly discourage using the RequestSpotInstances API because it is a legacy API with no planned investment. For options for requesting Spot Instances, see Which is the best Spot request method to use? in the Amazon EC2 User Guide for Linux Instances.   We are retiring EC2-Classic. We recommend that you migrate from EC2-Classic to a VPC. For more information, see Migrate from EC2-Classic to a VPC in the Amazon EC2 User Guide for Linux Instances. 
+    * Creates a Spot Instance request. For more information, see Spot Instance requests in the Amazon EC2 User Guide for Linux Instances.  We strongly discourage using the RequestSpotInstances API because it is a legacy API with no planned investment. For options for requesting Spot Instances, see Which is the best Spot request method to use? in the Amazon EC2 User Guide for Linux Instances. 
     */
   def requestSpotInstances(params: RequestSpotInstancesRequest): Request[RequestSpotInstancesResult, AWSError] = js.native
   def requestSpotInstances(
@@ -7809,12 +8491,12 @@ trait EC2 extends Service {
   ): Request[RestoreAddressToClassicResult, AWSError] = js.native
   
   /**
-    * Restores an AMI from the Recycle Bin. For more information, see Recycle Bin in the Amazon Elastic Compute Cloud User Guide.
+    * Restores an AMI from the Recycle Bin. For more information, see Recycle Bin in the Amazon EC2 User Guide.
     */
   def restoreImageFromRecycleBin(): Request[RestoreImageFromRecycleBinResult, AWSError] = js.native
   def restoreImageFromRecycleBin(callback: js.Function2[/* err */ AWSError, /* data */ RestoreImageFromRecycleBinResult, Unit]): Request[RestoreImageFromRecycleBinResult, AWSError] = js.native
   /**
-    * Restores an AMI from the Recycle Bin. For more information, see Recycle Bin in the Amazon Elastic Compute Cloud User Guide.
+    * Restores an AMI from the Recycle Bin. For more information, see Recycle Bin in the Amazon EC2 User Guide.
     */
   def restoreImageFromRecycleBin(params: RestoreImageFromRecycleBinRequest): Request[RestoreImageFromRecycleBinResult, AWSError] = js.native
   def restoreImageFromRecycleBin(
@@ -7907,12 +8589,12 @@ trait EC2 extends Service {
   ): Request[RevokeSecurityGroupIngressResult, AWSError] = js.native
   
   /**
-    * Launches the specified number of instances using an AMI for which you have permissions. You can specify a number of options, or leave the default options. The following rules apply:   [EC2-VPC] If you don't specify a subnet ID, we choose a default subnet from your default VPC for you. If you don't have a default VPC, you must specify a subnet ID in the request.   [EC2-Classic] If don't specify an Availability Zone, we choose one for you.   Some instance types must be launched into a VPC. If you do not have a default VPC, or if you do not specify a subnet ID, the request fails. For more information, see Instance types available only in a VPC.   [EC2-VPC] All instances have a network interface with a primary private IPv4 address. If you don't specify this address, we choose one from the IPv4 range of your subnet.   Not all instance types support IPv6 addresses. For more information, see Instance types.   If you don't specify a security group ID, we use the default security group. For more information, see Security groups.   If any of the AMIs have a product code attached for which the user has not subscribed, the request fails.   You can create a launch template, which is a resource that contains the parameters to launch an instance. When you launch an instance using RunInstances, you can specify the launch template instead of specifying the launch parameters. To ensure faster instance launches, break up large requests into smaller batches. For example, create five separate launch requests for 100 instances each instead of one launch request for 500 instances. An instance is ready for you to use when it's in the running state. You can check the state of your instance using DescribeInstances. You can tag instances and EBS volumes during launch, after launch, or both. For more information, see CreateTags and Tagging your Amazon EC2 resources. Linux instances have access to the public key of the key pair at boot. You can use this key to provide secure access to the instance. Amazon EC2 public images use this feature to provide secure access without passwords. For more information, see Key pairs. For troubleshooting, see What to do if an instance immediately terminates, and Troubleshooting connecting to your instance.  We are retiring EC2-Classic. We recommend that you migrate from EC2-Classic to a VPC. For more information, see Migrate from EC2-Classic to a VPC in the Amazon EC2 User Guide. 
+    * Launches the specified number of instances using an AMI for which you have permissions. You can specify a number of options, or leave the default options. The following rules apply:   If you don't specify a subnet ID, we choose a default subnet from your default VPC for you. If you don't have a default VPC, you must specify a subnet ID in the request.   All instances have a network interface with a primary private IPv4 address. If you don't specify this address, we choose one from the IPv4 range of your subnet.   Not all instance types support IPv6 addresses. For more information, see Instance types.   If you don't specify a security group ID, we use the default security group. For more information, see Security groups.   If any of the AMIs have a product code attached for which the user has not subscribed, the request fails.   You can create a launch template, which is a resource that contains the parameters to launch an instance. When you launch an instance using RunInstances, you can specify the launch template instead of specifying the launch parameters. To ensure faster instance launches, break up large requests into smaller batches. For example, create five separate launch requests for 100 instances each instead of one launch request for 500 instances. An instance is ready for you to use when it's in the running state. You can check the state of your instance using DescribeInstances. You can tag instances and EBS volumes during launch, after launch, or both. For more information, see CreateTags and Tagging your Amazon EC2 resources. Linux instances have access to the public key of the key pair at boot. You can use this key to provide secure access to the instance. Amazon EC2 public images use this feature to provide secure access without passwords. For more information, see Key pairs. For troubleshooting, see What to do if an instance immediately terminates, and Troubleshooting connecting to your instance.
     */
   def runInstances(): Request[Reservation, AWSError] = js.native
   def runInstances(callback: js.Function2[/* err */ AWSError, /* data */ Reservation, Unit]): Request[Reservation, AWSError] = js.native
   /**
-    * Launches the specified number of instances using an AMI for which you have permissions. You can specify a number of options, or leave the default options. The following rules apply:   [EC2-VPC] If you don't specify a subnet ID, we choose a default subnet from your default VPC for you. If you don't have a default VPC, you must specify a subnet ID in the request.   [EC2-Classic] If don't specify an Availability Zone, we choose one for you.   Some instance types must be launched into a VPC. If you do not have a default VPC, or if you do not specify a subnet ID, the request fails. For more information, see Instance types available only in a VPC.   [EC2-VPC] All instances have a network interface with a primary private IPv4 address. If you don't specify this address, we choose one from the IPv4 range of your subnet.   Not all instance types support IPv6 addresses. For more information, see Instance types.   If you don't specify a security group ID, we use the default security group. For more information, see Security groups.   If any of the AMIs have a product code attached for which the user has not subscribed, the request fails.   You can create a launch template, which is a resource that contains the parameters to launch an instance. When you launch an instance using RunInstances, you can specify the launch template instead of specifying the launch parameters. To ensure faster instance launches, break up large requests into smaller batches. For example, create five separate launch requests for 100 instances each instead of one launch request for 500 instances. An instance is ready for you to use when it's in the running state. You can check the state of your instance using DescribeInstances. You can tag instances and EBS volumes during launch, after launch, or both. For more information, see CreateTags and Tagging your Amazon EC2 resources. Linux instances have access to the public key of the key pair at boot. You can use this key to provide secure access to the instance. Amazon EC2 public images use this feature to provide secure access without passwords. For more information, see Key pairs. For troubleshooting, see What to do if an instance immediately terminates, and Troubleshooting connecting to your instance.  We are retiring EC2-Classic. We recommend that you migrate from EC2-Classic to a VPC. For more information, see Migrate from EC2-Classic to a VPC in the Amazon EC2 User Guide. 
+    * Launches the specified number of instances using an AMI for which you have permissions. You can specify a number of options, or leave the default options. The following rules apply:   If you don't specify a subnet ID, we choose a default subnet from your default VPC for you. If you don't have a default VPC, you must specify a subnet ID in the request.   All instances have a network interface with a primary private IPv4 address. If you don't specify this address, we choose one from the IPv4 range of your subnet.   Not all instance types support IPv6 addresses. For more information, see Instance types.   If you don't specify a security group ID, we use the default security group. For more information, see Security groups.   If any of the AMIs have a product code attached for which the user has not subscribed, the request fails.   You can create a launch template, which is a resource that contains the parameters to launch an instance. When you launch an instance using RunInstances, you can specify the launch template instead of specifying the launch parameters. To ensure faster instance launches, break up large requests into smaller batches. For example, create five separate launch requests for 100 instances each instead of one launch request for 500 instances. An instance is ready for you to use when it's in the running state. You can check the state of your instance using DescribeInstances. You can tag instances and EBS volumes during launch, after launch, or both. For more information, see CreateTags and Tagging your Amazon EC2 resources. Linux instances have access to the public key of the key pair at boot. You can use this key to provide secure access to the instance. Amazon EC2 public images use this feature to provide secure access without passwords. For more information, see Key pairs. For troubleshooting, see What to do if an instance immediately terminates, and Troubleshooting connecting to your instance.
     */
   def runInstances(params: RunInstancesRequest): Request[Reservation, AWSError] = js.native
   def runInstances(
@@ -8129,6 +8811,22 @@ trait EC2 extends Service {
     params: UnassignPrivateIpAddressesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Unassigns secondary private IPv4 addresses from a private NAT gateway. You cannot unassign your primary private IP. For more information, see Edit secondary IP address associations in the Amazon Virtual Private Cloud User Guide. While unassigning is in progress, you cannot assign/unassign additional IP addresses while the connections are being drained. You are, however, allowed to delete the NAT gateway. A private IP address will only be released at the end of MaxDrainDurationSeconds. The private IP addresses stay associated and support the existing connections but do not support any new connections (new connections are distributed across the remaining assigned private IP address). After the existing connections drain out, the private IP addresses get released.   
+    */
+  def unassignPrivateNatGatewayAddress(): Request[UnassignPrivateNatGatewayAddressResult, AWSError] = js.native
+  def unassignPrivateNatGatewayAddress(
+    callback: js.Function2[/* err */ AWSError, /* data */ UnassignPrivateNatGatewayAddressResult, Unit]
+  ): Request[UnassignPrivateNatGatewayAddressResult, AWSError] = js.native
+  /**
+    * Unassigns secondary private IPv4 addresses from a private NAT gateway. You cannot unassign your primary private IP. For more information, see Edit secondary IP address associations in the Amazon Virtual Private Cloud User Guide. While unassigning is in progress, you cannot assign/unassign additional IP addresses while the connections are being drained. You are, however, allowed to delete the NAT gateway. A private IP address will only be released at the end of MaxDrainDurationSeconds. The private IP addresses stay associated and support the existing connections but do not support any new connections (new connections are distributed across the remaining assigned private IP address). After the existing connections drain out, the private IP addresses get released.   
+    */
+  def unassignPrivateNatGatewayAddress(params: UnassignPrivateNatGatewayAddressRequest): Request[UnassignPrivateNatGatewayAddressResult, AWSError] = js.native
+  def unassignPrivateNatGatewayAddress(
+    params: UnassignPrivateNatGatewayAddressRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UnassignPrivateNatGatewayAddressResult, Unit]
+  ): Request[UnassignPrivateNatGatewayAddressResult, AWSError] = js.native
   
   /**
     * Disables detailed monitoring for a running instance. For more information, see Monitoring your instances and volumes in the Amazon EC2 User Guide.
@@ -8646,6 +9344,27 @@ trait EC2 extends Service {
     params: DescribeSnapshotsRequestw,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeSnapshotsResult, Unit]
   ): Request[DescribeSnapshotsResult, AWSError] = js.native
+  /**
+    * Waits for the snapshotImported state by periodically calling the underlying EC2.describeImportSnapshotTasksoperation every 15 seconds (at most 40 times).
+    */
+  @JSName("waitFor")
+  def waitFor_snapshotImported(state: snapshotImported): Request[DescribeImportSnapshotTasksResult, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_snapshotImported(
+    state: snapshotImported,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeImportSnapshotTasksResult, Unit]
+  ): Request[DescribeImportSnapshotTasksResult, AWSError] = js.native
+  /**
+    * Waits for the snapshotImported state by periodically calling the underlying EC2.describeImportSnapshotTasksoperation every 15 seconds (at most 40 times).
+    */
+  @JSName("waitFor")
+  def waitFor_snapshotImported(state: snapshotImported, params: DescribeImportSnapshotTas): Request[DescribeImportSnapshotTasksResult, AWSError] = js.native
+  @JSName("waitFor")
+  def waitFor_snapshotImported(
+    state: snapshotImported,
+    params: DescribeImportSnapshotTas,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeImportSnapshotTasksResult, Unit]
+  ): Request[DescribeImportSnapshotTasksResult, AWSError] = js.native
   /**
     * Waits for the spotInstanceRequestFulfilled state by periodically calling the underlying EC2.describeSpotInstanceRequestsoperation every 15 seconds (at most 40 times).
     */

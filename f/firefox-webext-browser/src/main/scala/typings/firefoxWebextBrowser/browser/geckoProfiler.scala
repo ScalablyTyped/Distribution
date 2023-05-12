@@ -18,25 +18,27 @@ object geckoProfiler {
   /* Rewritten from type alias, can be one of: 
     - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.java_
     - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.js_
-    - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.leaf
     - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.mainthreadio
-    - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.responsiveness
-    - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.screenshots
-    - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.seqstyle
-    - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.stackwalk
-    - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.threads
-    - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.jstracer
-    - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.jsallocations
-    - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.nostacksampling
-    - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.nativeallocations
-    - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.preferencereads
-    - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.ipcmessages
     - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.fileio
     - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.fileioall
     - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.noiostacks
+    - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.screenshots
+    - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.seqstyle
+    - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.stackwalk
+    - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.jsallocations
+    - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.nostacksampling
+    - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.nativeallocations
+    - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.ipcmessages
     - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.audiocallbacktracing
     - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.cpu
     - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.notimerresolutionchange
+    - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.cpuallthreads
+    - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.samplingallthreads
+    - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.markersallthreads
+    - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.unregisteredthreads
+    - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.processcpu
+    - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.power
+    - typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.responsiveness
   */
   trait ProfilerFeature extends StObject
   object ProfilerFeature {
@@ -44,6 +46,8 @@ object geckoProfiler {
     inline def audiocallbacktracing: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.audiocallbacktracing = "audiocallbacktracing".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.audiocallbacktracing]
     
     inline def cpu: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.cpu = "cpu".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.cpu]
+    
+    inline def cpuallthreads: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.cpuallthreads = "cpuallthreads".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.cpuallthreads]
     
     inline def fileio: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.fileio = "fileio".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.fileio]
     
@@ -57,11 +61,9 @@ object geckoProfiler {
     
     inline def jsallocations: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.jsallocations = "jsallocations".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.jsallocations]
     
-    inline def jstracer: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.jstracer = "jstracer".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.jstracer]
-    
-    inline def leaf: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.leaf = "leaf".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.leaf]
-    
     inline def mainthreadio: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.mainthreadio = "mainthreadio".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.mainthreadio]
+    
+    inline def markersallthreads: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.markersallthreads = "markersallthreads".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.markersallthreads]
     
     inline def nativeallocations: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.nativeallocations = "nativeallocations".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.nativeallocations]
     
@@ -71,9 +73,13 @@ object geckoProfiler {
     
     inline def notimerresolutionchange: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.notimerresolutionchange = "notimerresolutionchange".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.notimerresolutionchange]
     
-    inline def preferencereads: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.preferencereads = "preferencereads".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.preferencereads]
+    inline def power: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.power = "power".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.power]
+    
+    inline def processcpu: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.processcpu = "processcpu".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.processcpu]
     
     inline def responsiveness: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.responsiveness = "responsiveness".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.responsiveness]
+    
+    inline def samplingallthreads: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.samplingallthreads = "samplingallthreads".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.samplingallthreads]
     
     inline def screenshots: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.screenshots = "screenshots".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.screenshots]
     
@@ -81,7 +87,7 @@ object geckoProfiler {
     
     inline def stackwalk: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.stackwalk = "stackwalk".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.stackwalk]
     
-    inline def threads: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.threads = "threads".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.threads]
+    inline def unregisteredthreads: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.unregisteredthreads = "unregisteredthreads".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.unregisteredthreads]
   }
   
   trait StartSettings extends StObject {

@@ -229,7 +229,7 @@ object mod {
     /**
       * Find all documents matching the query
       * If no callback is passed, we return the cursor so that user can limit, skip and finally exec
-      * * @param {any} query MongoDB-style query
+      * * @param query MongoDB-style query
       */
     def find[T /* <: G */](query: Any, callback: js.Function2[/* err */ js.Error | Null, /* documents */ js.Array[T], Unit]): Unit = js.native
     def find[T /* <: G */](query: Any, projection: Any): Cursor[T] = js.native

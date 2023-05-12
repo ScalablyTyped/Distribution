@@ -61,7 +61,7 @@ trait TagCollection
     * @remarks
     * [Api set: PowerPointApi 1.3]
     *
-    * @param key The ID of the tag.
+    * @param key The ID of the tag. The `key` parameter is case-sensitive.
     * @returns The tag with the unique ID. If such a tag does not exist, an error is thrown.
     */
   def getItem(key: String): Tag = js.native
@@ -83,7 +83,7 @@ trait TagCollection
     * @remarks
     * [Api set: PowerPointApi 1.3]
     *
-    * @param key The ID of the tag.
+    * @param key The ID of the tag. The `key` parameter is case-sensitive.
     * @returns The tag with the unique ID. If such a tag does not exist, an object with an `isNullObject` property set to true is returned.
     */
   def getItemOrNullObject(key: String): Tag = js.native

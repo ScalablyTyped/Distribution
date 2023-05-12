@@ -7,7 +7,7 @@ import typings.three.srcCoreEventDispatcherMod.Event
 import typings.three.srcThreeMod.Group
 import typings.three.srcThreeMod.Object3D
 import typings.three.threeStrings.boxes
-import typings.three.threeStrings.mesh
+import typings.three.threeStrings.mesh_
 import typings.three.threeStrings.spheres
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -27,8 +27,8 @@ object examplesJsmWebxrXrhandmodelfactoryMod {
   open class XRHandModelFactory () extends StObject {
     
     def createHandModel(controller: Group): XRHandModel = js.native
-    def createHandModel(controller: Group, profile: spheres | boxes | mesh): XRHandModel = js.native
-    def createHandModel(controller: Group, profile: spheres | boxes | mesh, options: XRHandPrimitiveModelOptions): XRHandModel = js.native
+    def createHandModel(controller: Group, profile: spheres | boxes | mesh_): XRHandModel = js.native
+    def createHandModel(controller: Group, profile: spheres | boxes | mesh_, options: XRHandPrimitiveModelOptions): XRHandModel = js.native
     def createHandModel(controller: Group, profile: Unit, options: XRHandPrimitiveModelOptions): XRHandModel = js.native
     
     var path: String = js.native

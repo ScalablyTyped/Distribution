@@ -37,6 +37,16 @@ trait AggregationRequest extends StObject {
   var imageLayerAggregation: js.UndefOr[ImageLayerAggregation] = js.undefined
   
   /**
+    * Returns an object with findings aggregated by AWS Lambda function.
+    */
+  var lambdaFunctionAggregation: js.UndefOr[LambdaFunctionAggregation] = js.undefined
+  
+  /**
+    * Returns an object with findings aggregated by AWS Lambda layer.
+    */
+  var lambdaLayerAggregation: js.UndefOr[LambdaLayerAggregation] = js.undefined
+  
+  /**
     * An object that contains details about an aggregation request based on operating system package type.
     */
   var packageAggregation: js.UndefOr[PackageAggregation] = js.undefined
@@ -84,6 +94,14 @@ object AggregationRequest {
     inline def setImageLayerAggregation(value: ImageLayerAggregation): Self = StObject.set(x, "imageLayerAggregation", value.asInstanceOf[js.Any])
     
     inline def setImageLayerAggregationUndefined: Self = StObject.set(x, "imageLayerAggregation", js.undefined)
+    
+    inline def setLambdaFunctionAggregation(value: LambdaFunctionAggregation): Self = StObject.set(x, "lambdaFunctionAggregation", value.asInstanceOf[js.Any])
+    
+    inline def setLambdaFunctionAggregationUndefined: Self = StObject.set(x, "lambdaFunctionAggregation", js.undefined)
+    
+    inline def setLambdaLayerAggregation(value: LambdaLayerAggregation): Self = StObject.set(x, "lambdaLayerAggregation", value.asInstanceOf[js.Any])
+    
+    inline def setLambdaLayerAggregationUndefined: Self = StObject.set(x, "lambdaLayerAggregation", js.undefined)
     
     inline def setPackageAggregation(value: PackageAggregation): Self = StObject.set(x, "packageAggregation", value.asInstanceOf[js.Any])
     

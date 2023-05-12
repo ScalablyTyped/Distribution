@@ -16,7 +16,7 @@ trait PointCloudUniqueValueRendererColorUniqueValueInfos extends StObject {
   /**
     * Label used to describe points matched to the unique value.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudUniqueValueRenderer.html#colorUniqueValueInfos)
+    * [Read more...](global.html)
     */
   var label: js.UndefOr[String] = js.undefined
   

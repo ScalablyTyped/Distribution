@@ -9,27 +9,33 @@ trait WebDriverProtocolNavigation extends StObject {
   
   /**
     * Navigate backwards in the browser history, if possible.
+    *
+    * @see https://nightwatchjs.org/api/back.html
     */
-  def back(): this.type = js.native
+  def back(): Awaitable[this.type, Null] = js.native
   def back(
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
-  ): this.type = js.native
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
+  ): Awaitable[this.type, Null] = js.native
   
   /**
     * Navigate forwards in the browser history, if possible.
+    *
+    * @see https://nightwatchjs.org/api/forward.html
     */
-  def forward(): this.type = js.native
+  def forward(): Awaitable[this.type, Null] = js.native
   def forward(
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
-  ): this.type = js.native
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
+  ): Awaitable[this.type, Null] = js.native
   
   /**
     * Refresh the current page.
+    *
+    * @see https://nightwatchjs.org/api/refresh.html
     */
-  def refresh(): this.type = js.native
+  def refresh(): Awaitable[this.type, Null] = js.native
   def refresh(
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
-  ): this.type = js.native
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
+  ): Awaitable[this.type, Null] = js.native
   
   /**
     * Get the current page title.
@@ -39,12 +45,14 @@ trait WebDriverProtocolNavigation extends StObject {
     *    browser.title(function(result) {
     *      console.log(result.value);
     *    });
-    * }
+    *  }
+    *
+    * @see https://nightwatchjs.org/api/title.html
     */
-  def title(): this.type = js.native
+  def title(): Awaitable[this.type, String] = js.native
   def title(
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[String], Unit]
-  ): this.type = js.native
+  ): Awaitable[this.type, String] = js.native
   
   /**
     * Retrieve the URL of the current page or navigate to a new URL.
@@ -67,18 +75,16 @@ trait WebDriverProtocolNavigation extends StObject {
     *     });
     *   }
     * }
+    *
+    * @see https://nightwatchjs.org/api/url.html
     */
-  def url(): this.type = js.native
+  def url(): Awaitable[this.type, String] = js.native
   def url(
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[String], Unit]
-  ): this.type = js.native
-  def url(url: String): this.type = js.native
+  ): Awaitable[this.type, String] = js.native
+  def url(url: String): Awaitable[this.type, Null] = js.native
   def url(
     url: String,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[String], Unit]
-  ): this.type = js.native
-  def url(
-    url: Unit,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[String], Unit]
-  ): this.type = js.native
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
+  ): Awaitable[this.type, Null] = js.native
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AssociateResourceRequest extends StObject {
   
   /**
-    * The name or ID of the application.
+    *  The name, ID, or ARN of the application. 
     */
   var application: ApplicationSpecifier
   

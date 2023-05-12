@@ -16,7 +16,7 @@ import typings.openui5.sapUiCoreLibraryMod.ID
 import typings.openui5.sapUiCoreLibraryMod.IFormContent
 import typings.openui5.sapUiCoreLibraryMod.URI
 import typings.openui5.sapUiCoreLibraryMod.ValueState
-import typings.openui5.sapUiUnifiedLibraryMod.FileUploaderHttpRequestMethod
+import typings.openui5.sapUiUnifiedFileUploaderHttpRequestMethodMod.FileUploaderHttpRequestMethod
 import typings.openui5.sapUiUnifiedLibraryMod.IProcessableBlobs
 import typings.std.Blob
 import typings.std.Record
@@ -89,7 +89,7 @@ object sapUiUnifiedFileUploaderMod {
       * The initial Blobs which can be used to determine a new array of Blobs for further processing.
       */
     aBlobs: js.Array[Blob]
-    ): js.Promise[Any] = js.native
+    ): js.Promise[js.Array[Blob]] = js.native
   }
   /* static members */
   object default {
@@ -1088,7 +1088,7 @@ object sapUiUnifiedFileUploaderMod {
       *
       * **Note:** The attached additional data however is retained.
       *
-      * @returns The `sap.ui.unified.FileUploader` instance
+      * @returns Reference to `this` for method chaining
       */
     def clear(): this.type = js.native
     
@@ -1427,6 +1427,7 @@ object sapUiUnifiedFileUploaderMod {
     
     /**
       * @SINCE 1.102.0
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:afterDialogClose afterDialogClose} to attached listeners.
       *
@@ -1440,6 +1441,7 @@ object sapUiUnifiedFileUploaderMod {
     
     /**
       * @SINCE 1.102.0
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:beforeDialogOpen beforeDialogOpen} to attached listeners.
       *
@@ -1452,6 +1454,8 @@ object sapUiUnifiedFileUploaderMod {
     mParameters: js.Object): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:change change} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -1463,6 +1467,8 @@ object sapUiUnifiedFileUploaderMod {
     mParameters: Files): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:fileAllowed fileAllowed} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -1474,6 +1480,8 @@ object sapUiUnifiedFileUploaderMod {
     mParameters: js.Object): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:fileEmpty fileEmpty} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -1485,6 +1493,8 @@ object sapUiUnifiedFileUploaderMod {
     mParameters: FileName): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:fileSizeExceed fileSizeExceed} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -1497,6 +1507,7 @@ object sapUiUnifiedFileUploaderMod {
     
     /**
       * @SINCE 1.24.0
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:filenameLengthExceed filenameLengthExceed} to attached listeners.
       *
@@ -1509,6 +1520,8 @@ object sapUiUnifiedFileUploaderMod {
     mParameters: FileName): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:typeMissmatch typeMissmatch} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -1521,6 +1534,7 @@ object sapUiUnifiedFileUploaderMod {
     
     /**
       * @SINCE 1.24.0
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:uploadAborted uploadAborted} to attached listeners.
       *
@@ -1533,6 +1547,8 @@ object sapUiUnifiedFileUploaderMod {
     mParameters: RequestHeaders): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:uploadComplete uploadComplete} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -1545,6 +1561,7 @@ object sapUiUnifiedFileUploaderMod {
     
     /**
       * @SINCE 1.24.0
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:uploadProgress uploadProgress} to attached listeners.
       *
@@ -1558,6 +1575,7 @@ object sapUiUnifiedFileUploaderMod {
     
     /**
       * @SINCE 1.30.0
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:uploadStart uploadStart} to attached listeners.
       *

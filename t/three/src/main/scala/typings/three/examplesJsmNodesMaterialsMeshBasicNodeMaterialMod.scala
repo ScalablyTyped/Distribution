@@ -18,18 +18,8 @@ object examplesJsmNodesMaterialsMeshBasicNodeMaterialMod {
   trait MeshBasicNodeMaterial
     extends typings.three.examplesJsmNodesMaterialsNodeMaterialMod.default {
     
-    var alphaTestNode: typings.three.examplesJsmNodesCoreNodeMod.default | Null = js.native
-    
-    var colorNode: typings.three.examplesJsmNodesCoreNodeMod.default | Null = js.native
-    
     def copy(source: MeshBasicNodeMaterial): this.type = js.native
     
     var isMeshBasicNodeMaterial: `true` = js.native
-    
-    var lightNode: typings.three.examplesJsmNodesCoreNodeMod.default | Null = js.native
-    
-    var opacityNode: typings.three.examplesJsmNodesCoreNodeMod.default | Null = js.native
-    
-    var positionNode: typings.three.examplesJsmNodesCoreNodeMod.default | Null = js.native
   }
 }

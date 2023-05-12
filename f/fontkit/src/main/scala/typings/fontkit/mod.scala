@@ -1,5 +1,7 @@
 package typings.fontkit
 
+import typings.fontkit.anon.BitmapOnly
+import typings.fontkit.anon.Italic
 import typings.fontkit.fontkitStrings.bezierCurveTo
 import typings.fontkit.fontkitStrings.closePath
 import typings.fontkit.fontkitStrings.lineTo
@@ -21,16 +23,15 @@ object mod {
   inline def create(buffer: Buffer): Font = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(buffer.asInstanceOf[js.Any]).asInstanceOf[Font]
   inline def create(buffer: Buffer, postscriptName: String): Font = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(buffer.asInstanceOf[js.Any], postscriptName.asInstanceOf[js.Any])).asInstanceOf[Font]
   
-  inline def open(
-    filename: String,
-    postscriptName: String,
-    callback: js.Function2[/* err */ js.Error | Null, /* font */ Font, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(filename.asInstanceOf[js.Any], postscriptName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def open(filename: String): js.Promise[Font] = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(filename.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Font]]
+  inline def open(filename: String, postscriptName: String): js.Promise[Font] = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(filename.asInstanceOf[js.Any], postscriptName.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Font]]
   
   inline def openSync(filename: String): Font = ^.asInstanceOf[js.Dynamic].applyDynamic("openSync")(filename.asInstanceOf[js.Any]).asInstanceOf[Font]
   inline def openSync(filename: String, postscriptName: String): Font = (^.asInstanceOf[js.Dynamic].applyDynamic("openSync")(filename.asInstanceOf[js.Any], postscriptName.asInstanceOf[js.Any])).asInstanceOf[Font]
   
   trait BBOX extends StObject {
+    
+    var height: Double
     
     var maxX: Double
     
@@ -39,16 +40,20 @@ object mod {
     var minX: Double
     
     var minY: Double
+    
+    var width: Double
   }
   object BBOX {
     
-    inline def apply(maxX: Double, maxY: Double, minX: Double, minY: Double): BBOX = {
-      val __obj = js.Dynamic.literal(maxX = maxX.asInstanceOf[js.Any], maxY = maxY.asInstanceOf[js.Any], minX = minX.asInstanceOf[js.Any], minY = minY.asInstanceOf[js.Any])
+    inline def apply(height: Double, maxX: Double, maxY: Double, minX: Double, minY: Double, width: Double): BBOX = {
+      val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], maxX = maxX.asInstanceOf[js.Any], maxY = maxY.asInstanceOf[js.Any], minX = minX.asInstanceOf[js.Any], minY = minY.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[BBOX]
     }
     
     @scala.inline
     implicit open class MutableBuilder[Self <: BBOX] (val x: Self) extends AnyVal {
+      
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
       inline def setMaxX(value: Double): Self = StObject.set(x, "maxX", value.asInstanceOf[js.Any])
       
@@ -57,11 +62,17 @@ object mod {
       inline def setMinX(value: Double): Self = StObject.set(x, "minX", value.asInstanceOf[js.Any])
       
       inline def setMinY(value: Double): Self = StObject.set(x, "minY", value.asInstanceOf[js.Any])
+      
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
   @js.native
   trait Font extends StObject {
+    
+    /** the font metric table consisting of a set of metrics and other data required for OpenType fonts */
+    @JSName("OS/2")
+    var OSSlash2: Os2Table = js.native
     
     /** the font’s ascender */
     var ascent: Double = js.native
@@ -88,6 +99,14 @@ object mod {
     var fullName: String = js.native
     
     /**
+      * Returns a glyph object for the given glyph id. You can pass the array of
+      * code points this glyph represents for your use later, and it will be
+      * stored in the glyph object.
+      */
+    def getGlyph(glyphId: Double): Glyph = js.native
+    def getGlyph(glyphId: Double, codePoints: js.Array[Double]): Glyph = js.native
+    
+    /**
       * Maps a single unicode code point to a Glyph object.
       * Does not perform any advanced substitutions (there is no context to do so).
       */
@@ -105,6 +124,9 @@ object mod {
       * Returns whether there is glyph in the font for the given unicode code point.
       */
     def hasGlyphForCodePoint(codePoint: Double): Boolean = js.native
+    
+    /** the font's horizontal header table consisting of information needed to layout fonts with horizontal characters    */
+    var hhea: HHEA = js.native
     
     /** if this is an italic font, the angle the cursor should be drawn at to match the font design */
     var italicAngle: Double = js.native
@@ -225,6 +247,9 @@ object mod {
     /** is a mark glyph (non-spacing combining glyph) */
     var isMark: Boolean
     
+    /**  The glyph's name. Commonly the character, or 'space' or UTF**** */
+    var name: String
+    
     /** a vector Path object representing the glyph */
     var path: Path
     
@@ -241,10 +266,11 @@ object mod {
       id: Double,
       isLigature: Boolean,
       isMark: Boolean,
+      name: String,
       path: Path,
       render: (CanvasRenderingContext2D, Double) => Unit
     ): Glyph = {
-      val __obj = js.Dynamic.literal(advanceWidth = advanceWidth.asInstanceOf[js.Any], bbox = bbox.asInstanceOf[js.Any], cbox = cbox.asInstanceOf[js.Any], codePoints = codePoints.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], isLigature = isLigature.asInstanceOf[js.Any], isMark = isMark.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], render = js.Any.fromFunction2(render))
+      val __obj = js.Dynamic.literal(advanceWidth = advanceWidth.asInstanceOf[js.Any], bbox = bbox.asInstanceOf[js.Any], cbox = cbox.asInstanceOf[js.Any], codePoints = codePoints.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], isLigature = isLigature.asInstanceOf[js.Any], isMark = isMark.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], render = js.Any.fromFunction2(render))
       __obj.asInstanceOf[Glyph]
     }
     
@@ -266,6 +292,8 @@ object mod {
       inline def setIsLigature(value: Boolean): Self = StObject.set(x, "isLigature", value.asInstanceOf[js.Any])
       
       inline def setIsMark(value: Boolean): Self = StObject.set(x, "isMark", value.asInstanceOf[js.Any])
+      
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       inline def setPath(value: Path): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
@@ -398,6 +426,272 @@ object mod {
       inline def setPositionsVarargs(value: GlyphPosition*): Self = StObject.set(x, "positions", js.Array(value*))
       
       inline def setScript(value: String): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait HHEA extends StObject {
+    
+    var advanceWidthMax: Double
+    
+    var ascent: Double
+    
+    var caretOffset: Double
+    
+    var caretSlopeRise: Double
+    
+    var caretSlopeRun: Double
+    
+    var descent: Double
+    
+    var lineGap: Double
+    
+    var metricDataFormat: Double
+    
+    var minLeftSideBearing: Double
+    
+    var minRightSideBearing: Double
+    
+    var numberOfMetrics: Double
+    
+    var version: Double
+    
+    var xMaxExtent: Double
+  }
+  object HHEA {
+    
+    inline def apply(
+      advanceWidthMax: Double,
+      ascent: Double,
+      caretOffset: Double,
+      caretSlopeRise: Double,
+      caretSlopeRun: Double,
+      descent: Double,
+      lineGap: Double,
+      metricDataFormat: Double,
+      minLeftSideBearing: Double,
+      minRightSideBearing: Double,
+      numberOfMetrics: Double,
+      version: Double,
+      xMaxExtent: Double
+    ): HHEA = {
+      val __obj = js.Dynamic.literal(advanceWidthMax = advanceWidthMax.asInstanceOf[js.Any], ascent = ascent.asInstanceOf[js.Any], caretOffset = caretOffset.asInstanceOf[js.Any], caretSlopeRise = caretSlopeRise.asInstanceOf[js.Any], caretSlopeRun = caretSlopeRun.asInstanceOf[js.Any], descent = descent.asInstanceOf[js.Any], lineGap = lineGap.asInstanceOf[js.Any], metricDataFormat = metricDataFormat.asInstanceOf[js.Any], minLeftSideBearing = minLeftSideBearing.asInstanceOf[js.Any], minRightSideBearing = minRightSideBearing.asInstanceOf[js.Any], numberOfMetrics = numberOfMetrics.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any], xMaxExtent = xMaxExtent.asInstanceOf[js.Any])
+      __obj.asInstanceOf[HHEA]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HHEA] (val x: Self) extends AnyVal {
+      
+      inline def setAdvanceWidthMax(value: Double): Self = StObject.set(x, "advanceWidthMax", value.asInstanceOf[js.Any])
+      
+      inline def setAscent(value: Double): Self = StObject.set(x, "ascent", value.asInstanceOf[js.Any])
+      
+      inline def setCaretOffset(value: Double): Self = StObject.set(x, "caretOffset", value.asInstanceOf[js.Any])
+      
+      inline def setCaretSlopeRise(value: Double): Self = StObject.set(x, "caretSlopeRise", value.asInstanceOf[js.Any])
+      
+      inline def setCaretSlopeRun(value: Double): Self = StObject.set(x, "caretSlopeRun", value.asInstanceOf[js.Any])
+      
+      inline def setDescent(value: Double): Self = StObject.set(x, "descent", value.asInstanceOf[js.Any])
+      
+      inline def setLineGap(value: Double): Self = StObject.set(x, "lineGap", value.asInstanceOf[js.Any])
+      
+      inline def setMetricDataFormat(value: Double): Self = StObject.set(x, "metricDataFormat", value.asInstanceOf[js.Any])
+      
+      inline def setMinLeftSideBearing(value: Double): Self = StObject.set(x, "minLeftSideBearing", value.asInstanceOf[js.Any])
+      
+      inline def setMinRightSideBearing(value: Double): Self = StObject.set(x, "minRightSideBearing", value.asInstanceOf[js.Any])
+      
+      inline def setNumberOfMetrics(value: Double): Self = StObject.set(x, "numberOfMetrics", value.asInstanceOf[js.Any])
+      
+      inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      
+      inline def setXMaxExtent(value: Double): Self = StObject.set(x, "xMaxExtent", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait Os2Table extends StObject {
+    
+    var breakChar: Double
+    
+    var capHeight: Double
+    
+    var codePageRange: js.Array[Double]
+    
+    var defaultChar: Double
+    
+    var fsSelection: Italic
+    
+    var fsType: BitmapOnly
+    
+    var maxContent: Double
+    
+    var panose: js.Array[Double]
+    
+    var sFamilyClass: Double
+    
+    var typoAscender: Double
+    
+    var typoDescender: Double
+    
+    var typoLineGap: Double
+    
+    var ulCharRange: js.Array[Double]
+    
+    var usFirstCharIndex: Double
+    
+    var usLastCharIndex: Double
+    
+    var usWeightClass: Double
+    
+    var usWidthClass: Double
+    
+    var vendorID: String
+    
+    var version: Double
+    
+    var winAscent: Double
+    
+    var winDescent: Double
+    
+    var xAvgCharWidth: Double
+    
+    var xHeight: Double
+    
+    var yStrikeoutPosition: Double
+    
+    var yStrikeoutSize: Double
+    
+    var ySubscriptXOffset: Double
+    
+    var ySubscriptXSize: Double
+    
+    var ySubscriptYOffset: Double
+    
+    var ySubscriptYSize: Double
+    
+    var ySuperscriptXOffset: Double
+    
+    var ySuperscriptXSize: Double
+    
+    var ySuperscriptYOffset: Double
+    
+    var ySuperscriptYSize: Double
+  }
+  object Os2Table {
+    
+    inline def apply(
+      breakChar: Double,
+      capHeight: Double,
+      codePageRange: js.Array[Double],
+      defaultChar: Double,
+      fsSelection: Italic,
+      fsType: BitmapOnly,
+      maxContent: Double,
+      panose: js.Array[Double],
+      sFamilyClass: Double,
+      typoAscender: Double,
+      typoDescender: Double,
+      typoLineGap: Double,
+      ulCharRange: js.Array[Double],
+      usFirstCharIndex: Double,
+      usLastCharIndex: Double,
+      usWeightClass: Double,
+      usWidthClass: Double,
+      vendorID: String,
+      version: Double,
+      winAscent: Double,
+      winDescent: Double,
+      xAvgCharWidth: Double,
+      xHeight: Double,
+      yStrikeoutPosition: Double,
+      yStrikeoutSize: Double,
+      ySubscriptXOffset: Double,
+      ySubscriptXSize: Double,
+      ySubscriptYOffset: Double,
+      ySubscriptYSize: Double,
+      ySuperscriptXOffset: Double,
+      ySuperscriptXSize: Double,
+      ySuperscriptYOffset: Double,
+      ySuperscriptYSize: Double
+    ): Os2Table = {
+      val __obj = js.Dynamic.literal(breakChar = breakChar.asInstanceOf[js.Any], capHeight = capHeight.asInstanceOf[js.Any], codePageRange = codePageRange.asInstanceOf[js.Any], defaultChar = defaultChar.asInstanceOf[js.Any], fsSelection = fsSelection.asInstanceOf[js.Any], fsType = fsType.asInstanceOf[js.Any], maxContent = maxContent.asInstanceOf[js.Any], panose = panose.asInstanceOf[js.Any], sFamilyClass = sFamilyClass.asInstanceOf[js.Any], typoAscender = typoAscender.asInstanceOf[js.Any], typoDescender = typoDescender.asInstanceOf[js.Any], typoLineGap = typoLineGap.asInstanceOf[js.Any], ulCharRange = ulCharRange.asInstanceOf[js.Any], usFirstCharIndex = usFirstCharIndex.asInstanceOf[js.Any], usLastCharIndex = usLastCharIndex.asInstanceOf[js.Any], usWeightClass = usWeightClass.asInstanceOf[js.Any], usWidthClass = usWidthClass.asInstanceOf[js.Any], vendorID = vendorID.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any], winAscent = winAscent.asInstanceOf[js.Any], winDescent = winDescent.asInstanceOf[js.Any], xAvgCharWidth = xAvgCharWidth.asInstanceOf[js.Any], xHeight = xHeight.asInstanceOf[js.Any], yStrikeoutPosition = yStrikeoutPosition.asInstanceOf[js.Any], yStrikeoutSize = yStrikeoutSize.asInstanceOf[js.Any], ySubscriptXOffset = ySubscriptXOffset.asInstanceOf[js.Any], ySubscriptXSize = ySubscriptXSize.asInstanceOf[js.Any], ySubscriptYOffset = ySubscriptYOffset.asInstanceOf[js.Any], ySubscriptYSize = ySubscriptYSize.asInstanceOf[js.Any], ySuperscriptXOffset = ySuperscriptXOffset.asInstanceOf[js.Any], ySuperscriptXSize = ySuperscriptXSize.asInstanceOf[js.Any], ySuperscriptYOffset = ySuperscriptYOffset.asInstanceOf[js.Any], ySuperscriptYSize = ySuperscriptYSize.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Os2Table]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Os2Table] (val x: Self) extends AnyVal {
+      
+      inline def setBreakChar(value: Double): Self = StObject.set(x, "breakChar", value.asInstanceOf[js.Any])
+      
+      inline def setCapHeight(value: Double): Self = StObject.set(x, "capHeight", value.asInstanceOf[js.Any])
+      
+      inline def setCodePageRange(value: js.Array[Double]): Self = StObject.set(x, "codePageRange", value.asInstanceOf[js.Any])
+      
+      inline def setCodePageRangeVarargs(value: Double*): Self = StObject.set(x, "codePageRange", js.Array(value*))
+      
+      inline def setDefaultChar(value: Double): Self = StObject.set(x, "defaultChar", value.asInstanceOf[js.Any])
+      
+      inline def setFsSelection(value: Italic): Self = StObject.set(x, "fsSelection", value.asInstanceOf[js.Any])
+      
+      inline def setFsType(value: BitmapOnly): Self = StObject.set(x, "fsType", value.asInstanceOf[js.Any])
+      
+      inline def setMaxContent(value: Double): Self = StObject.set(x, "maxContent", value.asInstanceOf[js.Any])
+      
+      inline def setPanose(value: js.Array[Double]): Self = StObject.set(x, "panose", value.asInstanceOf[js.Any])
+      
+      inline def setPanoseVarargs(value: Double*): Self = StObject.set(x, "panose", js.Array(value*))
+      
+      inline def setSFamilyClass(value: Double): Self = StObject.set(x, "sFamilyClass", value.asInstanceOf[js.Any])
+      
+      inline def setTypoAscender(value: Double): Self = StObject.set(x, "typoAscender", value.asInstanceOf[js.Any])
+      
+      inline def setTypoDescender(value: Double): Self = StObject.set(x, "typoDescender", value.asInstanceOf[js.Any])
+      
+      inline def setTypoLineGap(value: Double): Self = StObject.set(x, "typoLineGap", value.asInstanceOf[js.Any])
+      
+      inline def setUlCharRange(value: js.Array[Double]): Self = StObject.set(x, "ulCharRange", value.asInstanceOf[js.Any])
+      
+      inline def setUlCharRangeVarargs(value: Double*): Self = StObject.set(x, "ulCharRange", js.Array(value*))
+      
+      inline def setUsFirstCharIndex(value: Double): Self = StObject.set(x, "usFirstCharIndex", value.asInstanceOf[js.Any])
+      
+      inline def setUsLastCharIndex(value: Double): Self = StObject.set(x, "usLastCharIndex", value.asInstanceOf[js.Any])
+      
+      inline def setUsWeightClass(value: Double): Self = StObject.set(x, "usWeightClass", value.asInstanceOf[js.Any])
+      
+      inline def setUsWidthClass(value: Double): Self = StObject.set(x, "usWidthClass", value.asInstanceOf[js.Any])
+      
+      inline def setVendorID(value: String): Self = StObject.set(x, "vendorID", value.asInstanceOf[js.Any])
+      
+      inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      
+      inline def setWinAscent(value: Double): Self = StObject.set(x, "winAscent", value.asInstanceOf[js.Any])
+      
+      inline def setWinDescent(value: Double): Self = StObject.set(x, "winDescent", value.asInstanceOf[js.Any])
+      
+      inline def setXAvgCharWidth(value: Double): Self = StObject.set(x, "xAvgCharWidth", value.asInstanceOf[js.Any])
+      
+      inline def setXHeight(value: Double): Self = StObject.set(x, "xHeight", value.asInstanceOf[js.Any])
+      
+      inline def setYStrikeoutPosition(value: Double): Self = StObject.set(x, "yStrikeoutPosition", value.asInstanceOf[js.Any])
+      
+      inline def setYStrikeoutSize(value: Double): Self = StObject.set(x, "yStrikeoutSize", value.asInstanceOf[js.Any])
+      
+      inline def setYSubscriptXOffset(value: Double): Self = StObject.set(x, "ySubscriptXOffset", value.asInstanceOf[js.Any])
+      
+      inline def setYSubscriptXSize(value: Double): Self = StObject.set(x, "ySubscriptXSize", value.asInstanceOf[js.Any])
+      
+      inline def setYSubscriptYOffset(value: Double): Self = StObject.set(x, "ySubscriptYOffset", value.asInstanceOf[js.Any])
+      
+      inline def setYSubscriptYSize(value: Double): Self = StObject.set(x, "ySubscriptYSize", value.asInstanceOf[js.Any])
+      
+      inline def setYSuperscriptXOffset(value: Double): Self = StObject.set(x, "ySuperscriptXOffset", value.asInstanceOf[js.Any])
+      
+      inline def setYSuperscriptXSize(value: Double): Self = StObject.set(x, "ySuperscriptXSize", value.asInstanceOf[js.Any])
+      
+      inline def setYSuperscriptYOffset(value: Double): Self = StObject.set(x, "ySuperscriptYOffset", value.asInstanceOf[js.Any])
+      
+      inline def setYSuperscriptYSize(value: Double): Self = StObject.set(x, "ySuperscriptYSize", value.asInstanceOf[js.Any])
     }
   }
   

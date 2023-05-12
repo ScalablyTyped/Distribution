@@ -1,7 +1,7 @@
 
 # Scala.js typings for human-object-diff
 
-Typings are for version 2.0
+Typings are for version 3.0.0
 
 ## Library description:
 Human Readable Difference Between Two Objects
@@ -24,7 +24,7 @@ Human Readable Difference Between Two Objects
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

@@ -17,7 +17,7 @@ trait CreateMeetingWithAttendeesRequest extends StObject {
   var ClientRequestToken: typings.awsSdk.clientsChimesdkmeetingsMod.ClientRequestToken
   
   /**
-    * The external meeting ID.
+    * The external meeting ID. Pattern: [-_&amp;@+=,(){}\[\]\/«».:|'"#a-zA-Z0-9À-ÿ\s]*  Values that begin with aws: are reserved. You can't configure a value that uses this prefix. Case insensitive.
     */
   var ExternalMeetingId: typings.awsSdk.clientsChimesdkmeetingsMod.ExternalMeetingId
   

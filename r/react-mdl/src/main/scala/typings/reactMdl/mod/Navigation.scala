@@ -10,7 +10,7 @@ open class Navigation protected () extends _MDLComponent[NavigationProps] {
   def this(props: NavigationProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: NavigationProps, context: Any) = this()
 }

@@ -126,6 +126,8 @@ object distCacheSerializerSerializerTypesMod {
     var target: String
     
     var token_type: js.UndefOr[String] = js.undefined
+    
+    var userAssertionHash: js.UndefOr[String] = js.undefined
   }
   object SerializedAccessTokenEntity {
     
@@ -188,6 +190,10 @@ object distCacheSerializerSerializerTypesMod {
       inline def setToken_type(value: String): Self = StObject.set(x, "token_type", value.asInstanceOf[js.Any])
       
       inline def setToken_typeUndefined: Self = StObject.set(x, "token_type", js.undefined)
+      
+      inline def setUserAssertionHash(value: String): Self = StObject.set(x, "userAssertionHash", value.asInstanceOf[js.Any])
+      
+      inline def setUserAssertionHashUndefined: Self = StObject.set(x, "userAssertionHash", js.undefined)
     }
   }
   

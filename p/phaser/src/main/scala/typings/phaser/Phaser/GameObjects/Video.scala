@@ -8,6 +8,7 @@ import typings.phaser.Phaser.GameObjects.Components.GetBounds
 import typings.phaser.Phaser.GameObjects.Components.Mask
 import typings.phaser.Phaser.GameObjects.Components.Origin
 import typings.phaser.Phaser.GameObjects.Components.Pipeline
+import typings.phaser.Phaser.GameObjects.Components.PostPipeline
 import typings.phaser.Phaser.GameObjects.Components.ScrollFactor
 import typings.phaser.Phaser.GameObjects.Components.Size
 import typings.phaser.Phaser.GameObjects.Components.TextureCrop
@@ -17,7 +18,12 @@ import typings.phaser.Phaser.GameObjects.Components.Visible
 import typings.phaser.Phaser.Textures.CanvasTexture
 import typings.phaser.Phaser.Textures.Texture
 import typings.phaser.Phaser.Textures.TextureSource
+import typings.phaser.Phaser.Types.Loader.FileTypes.VideoFileURLConfig
+import typings.std.DOMException
+import typings.std.DOMHighResTimeStamp
+import typings.std.Event
 import typings.std.HTMLVideoElement
+import typings.std.VideoFrameCallbackMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,16 +31,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * A Video Game Object.
   * 
-  * This Game Object is capable of handling playback of a previously loaded video from the Phaser Video Cache,
-  * or playing a video based on a given URL. Videos can be either local, or streamed.
+  * This Game Object is capable of handling playback of a video file, video stream or media stream.
+  * 
+  * You can optionally 'preload' the video into the Phaser Video Cache:
   * 
   * ```javascript
   * preload () {
-  *   this.load.video('pixar', 'nemo.mp4');
+  *   this.load.video('ripley', 'assets/aliens.mp4');
   * }
   * 
   * create () {
-  *   this.add.video(400, 300, 'pixar');
+  *   this.add.video(400, 300, 'ripley');
+  * }
+  * ```
+  * 
+  * You don't have to 'preload' the video. You can also play it directly from a URL:
+  * 
+  * ```javascript
+  * create () {
+  *   this.add.video(400, 300).loadURL('assets/aliens.mp4');
   * }
   * ```
   * 
@@ -46,24 +61,38 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * an alpha channel, and providing the browser supports WebM playback (not all of them do), then it will render
   * in-game with full transparency.
   * 
+  * Playback is handled entirely via the Request Video Frame API, which is supported by most modern browsers.
+  * A polyfill is provided for older browsers.
+  * 
   * ### Autoplaying Videos
   * 
   * Videos can only autoplay if the browser has been unlocked with an interaction, or satisfies the MEI settings.
-  * The policies that control autoplaying are vast and vary between browser.
-  * You can, and should, read more about it here: https://developer.mozilla.org/en-US/docs/Web/Media/Autoplay_guide
+  * The policies that control autoplaying are vast and vary between browser. You can, and should, read more about
+  * it here: https://developer.mozilla.org/en-US/docs/Web/Media/Autoplay_guide
   * 
   * If your video doesn't contain any audio, then set the `noAudio` parameter to `true` when the video is _loaded_,
   * and it will often allow the video to play immediately:
   * 
   * ```javascript
   * preload () {
-  *   this.load.video('pixar', 'nemo.mp4', 'loadeddata', false, true);
+  *   this.load.video('pixar', 'nemo.mp4', true);
   * }
   * ```
   * 
-  * The 5th parameter in the load call tells Phaser that the video doesn't contain any audio tracks. Video without
+  * The 3rd parameter in the load call tells Phaser that the video doesn't contain any audio tracks. Video without
   * audio can autoplay without requiring a user interaction. Video with audio cannot do this unless it satisfies
   * the browsers MEI settings. See the MDN Autoplay Guide for further details.
+  * 
+  * Or:
+  * 
+  * ```javascript
+  * create () {
+  *   this.add.video(400, 300).loadURL('assets/aliens.mp4', true);
+  * }
+  * ```
+  * 
+  * You can set the `noAudio` parameter to `true` even if the video does contain audio. It will still allow the video
+  * to play immediately, but the audio will not start.
   * 
   * Note that due to a bug in IE11 you cannot play a video texture to a Sprite in WebGL. For IE11 force Canvas mode.
   * 
@@ -84,12 +113,23 @@ trait Video
      with Mask
      with Origin
      with Pipeline
+     with PostPipeline
      with ScrollFactor
      with Size
      with TextureCrop
      with Tint
      with Transform
      with Visible {
+  
+  /**
+    * Adds the playback specific event handlers to the video element.
+    */
+  def addEventHandlers(): Unit = js.native
+  
+  /**
+    * Adds the loading specific event handlers to the video element.
+    */
+  def addLoadEventHandlers(): Unit = js.native
   
   /**
     * Adds a sequence marker to this video.
@@ -107,6 +147,13 @@ trait Video
     * @param markerOut The time, in seconds, representing the end of this marker.
     */
   def addMarker(key: String, markerIn: Double, markerOut: Double): this.type = js.native
+  
+  /**
+    * The key of the current video as stored in the Video cache.
+    * 
+    * If the video did not come from the cache this will be an empty string.
+    */
+  val cacheKey: String = js.native
   
   /**
     * This method allows you to change the source of the current video element. It works by first stopping the
@@ -147,8 +194,34 @@ trait Video
   def completeHandler(): Unit = js.native
   
   /**
+    * Creates the video.play promise and adds the success and error handlers to it.
+    * 
+    * Not all browsers support the video.play promise, so this method will fall back to
+    * the old-school way of handling the video.play call.
+    * 
+    * See https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/play#browser_compatibility for details.
+    * @param catchError Should the error be caught and the video marked as failed to play? Default true.
+    */
+  def createPlayPromise(): Unit = js.native
+  def createPlayPromise(catchError: Boolean): Unit = js.native
+  
+  /**
+    * Records the number of times the video has failed to play,
+    * typically because the user hasn't interacted with the page yet.
+    */
+  var failedPlayAttempts: Double = js.native
+  
+  /**
+    * Has the video created its texture and populated it with the first frame of video?
+    */
+  var frameReady: Boolean = js.native
+  
+  /**
     * A double-precision floating-point value indicating the current playback time in seconds.
+    * 
     * If the media has not started to play and has not been seeked, this value is the media's initial playback time.
+    * 
+    * For a more accurate value, use the `Video.metadata.mediaTime` property instead.
     */
   def getCurrentTime(): Double = js.native
   
@@ -158,6 +231,8 @@ trait Video
     * 
     * If the media has no known end (such as for live streams of unknown duration, web radio, media incoming from WebRTC,
     * and so forth), this value is +Infinity.
+    * 
+    * If no video has been loaded, this method will return 0.
     */
   def getDuration(): Double = js.native
   
@@ -172,15 +247,19 @@ trait Video
   def getPlaybackRate(): Double = js.native
   
   /**
-    * Returns the current progress of the video. Progress is defined as a value between 0 (the start)
-    * and 1 (the end).
+    * Returns the current progress of the video as a float.
     * 
-    * Progress can only be returned if the video has a duration, otherwise it will always return zero.
+    * Progress is defined as a value between 0 (the start) and 1 (the end).
+    * 
+    * Progress can only be returned if the video has a duration. Some videos,
+    * such as those coming from a live stream, do not have a duration. In this
+    * case the method will return -1.
     */
   def getProgress(): Double = js.native
   
   /**
     * Returns the key of the currently played video, as stored in the Video Cache.
+    * 
     * If the video did not come from the cache this will return an empty string.
     */
   def getVideoKey(): String = js.native
@@ -206,44 +285,163 @@ trait Video
   def isPlaying(): Boolean = js.native
   
   /**
-    * Returns a boolean indicating if this Video is currently seeking, or not.
+    * Is the video currently seeking?
+    * 
+    * This is set to `true` when the `seeking` event is fired,
+    * and set to `false` when the `seeked` event is fired.
     */
-  def isSeeking(): Boolean = js.native
+  val isSeeking: Boolean = js.native
+  
+  /**
+    * This read-only property returns `true` if the video is currently stalled, i.e. it has stopped
+    * playing due to a lack of data, or too much data, but hasn't yet reached the end of the video.
+    * 
+    * This is set if the Video DOM element emits any of the following events:
+    * 
+    * `stalled`
+    * `suspend`
+    * `waiting`
+    * 
+    * And is cleared if the Video DOM element emits the `playing` event, or handles
+    * a requestVideoFrame call.
+    * 
+    * Listen for the Phaser Event `VIDEO_STALLED` to be notified and inspect the event
+    * to see which DOM event caused it.
+    * 
+    * Note that being stalled isn't always a negative thing. A video can be stalled if it
+    * has downloaded enough data in to its buffer to not need to download any more until
+    * the current batch of frames have rendered.
+    */
+  val isStalled: Boolean = js.native
+  
+  /**
+    * Called when the video emits a `playing` event.
+    * 
+    * This is the legacy handler for browsers that don't support Promise based playback.
+    */
+  def legacyPlayHandler(): Unit = js.native
+  
+  /**
+    * Loads a Video from the Video Cache, ready for playback with the `Video.play` method.
+    * 
+    * If a video is already playing, this method allows you to change the source of the current video element.
+    * It works by first stopping the current video and then starts playback of the new source through the existing video element.
+    * 
+    * The reason you may wish to do this is because videos that require interaction to unlock, remain in an unlocked
+    * state, even if you change the source of the video. By changing the source to a new video you avoid having to
+    * go through the unlock process again.
+    * @param key The key of the Video this Game Object will play, as stored in the Video Cache.
+    */
+  def load(key: String): this.type = js.native
+  
+  /**
+    * This internal method is called automatically if the video fails to load.
+    * @param event The error Event.
+    */
+  def loadErrorHandler(event: Event): Unit = js.native
+  
+  /**
+    * Internal method that loads a Video from the given URL, ready for playback with the
+    * `Video.play` method.
+    * 
+    * Normally you don't call this method directly, but instead use the `Video.loadURL` method,
+    * or the `Video.load` method if you have preloaded the video.
+    * 
+    * Calling this method will skip checking if the browser supports the given format in
+    * the URL, where-as the other two methods enforce these checks.
+    * @param url The absolute or relative URL to load the video file from. Set to `null` if passing in a MediaStream object.
+    * @param noAudio Does the video have an audio track? If not you can enable auto-playing on it.
+    * @param crossOrigin The value to use for the `crossOrigin` property in the video load request.  Either undefined, `anonymous` or `use-credentials`. If no value is given, `crossorigin` will not be set in the request.
+    * @param stream A MediaStream object if this is playing a stream instead of a file.
+    */
+  def loadHandler(): this.type = js.native
+  def loadHandler(url: String): this.type = js.native
+  def loadHandler(url: String, noAudio: Boolean): this.type = js.native
+  def loadHandler(url: String, noAudio: Boolean, crossOrigin: String): this.type = js.native
+  def loadHandler(url: String, noAudio: Boolean, crossOrigin: String, stream: String): this.type = js.native
+  def loadHandler(url: String, noAudio: Boolean, crossOrigin: Unit, stream: String): this.type = js.native
+  def loadHandler(url: String, noAudio: Unit, crossOrigin: String): this.type = js.native
+  def loadHandler(url: String, noAudio: Unit, crossOrigin: String, stream: String): this.type = js.native
+  def loadHandler(url: String, noAudio: Unit, crossOrigin: Unit, stream: String): this.type = js.native
+  def loadHandler(url: Unit, noAudio: Boolean): this.type = js.native
+  def loadHandler(url: Unit, noAudio: Boolean, crossOrigin: String): this.type = js.native
+  def loadHandler(url: Unit, noAudio: Boolean, crossOrigin: String, stream: String): this.type = js.native
+  def loadHandler(url: Unit, noAudio: Boolean, crossOrigin: Unit, stream: String): this.type = js.native
+  def loadHandler(url: Unit, noAudio: Unit, crossOrigin: String): this.type = js.native
+  def loadHandler(url: Unit, noAudio: Unit, crossOrigin: String, stream: String): this.type = js.native
+  def loadHandler(url: Unit, noAudio: Unit, crossOrigin: Unit, stream: String): this.type = js.native
   
   /**
     * Loads a Video from the given MediaStream object, ready for playback with the `Video.play` method.
-    * 
-    * You can control at what point the browser determines the video as being ready for playback via
-    * the `loadEvent` parameter. See https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement
-    * for more details.
     * @param stream The MediaStream object.
-    * @param loadEvent The load event to listen for. Either `loadeddata`, `canplay` or `canplaythrough`. Default 'loadeddata'.
     * @param noAudio Does the video have an audio track? If not you can enable auto-playing on it. Default false.
+    * @param crossOrigin The value to use for the `crossOrigin` property in the video load request.  Either undefined, `anonymous` or `use-credentials`. If no value is given, `crossorigin` will not be set in the request.
     */
   def loadMediaStream(stream: String): this.type = js.native
-  def loadMediaStream(stream: String, loadEvent: String): this.type = js.native
-  def loadMediaStream(stream: String, loadEvent: String, noAudio: Boolean): this.type = js.native
-  def loadMediaStream(stream: String, loadEvent: Unit, noAudio: Boolean): this.type = js.native
+  def loadMediaStream(stream: String, noAudio: Boolean): this.type = js.native
+  def loadMediaStream(stream: String, noAudio: Boolean, crossOrigin: String): this.type = js.native
+  def loadMediaStream(stream: String, noAudio: Unit, crossOrigin: String): this.type = js.native
   
   /**
     * Loads a Video from the given URL, ready for playback with the `Video.play` method.
     * 
-    * You can control at what point the browser determines the video as being ready for playback via
-    * the `loadEvent` parameter. See https://developer.mozilla.org/en-US/docs/Web/API/HTMLVideoElement
-    * for more details.
-    * @param url The URL of the video to load or be streamed.
-    * @param loadEvent The load event to listen for. Either `loadeddata`, `canplay` or `canplaythrough`. Default 'loadeddata'.
+    * If a video is already playing, this method allows you to change the source of the current video element.
+    * It works by first stopping the current video and then starts playback of the new source through the existing video element.
+    * 
+    * The reason you may wish to do this is because videos that require interaction to unlock, remain in an unlocked
+    * state, even if you change the source of the video. By changing the source to a new video you avoid having to
+    * go through the unlock process again.
+    * @param urls The absolute or relative URL to load the video files from.
     * @param noAudio Does the video have an audio track? If not you can enable auto-playing on it. Default false.
+    * @param crossOrigin The value to use for the `crossOrigin` property in the video load request.  Either undefined, `anonymous` or `use-credentials`. If no value is given, `crossorigin` will not be set in the request.
     */
-  def loadURL(url: String): this.type = js.native
-  def loadURL(url: String, loadEvent: String): this.type = js.native
-  def loadURL(url: String, loadEvent: String, noAudio: Boolean): this.type = js.native
-  def loadURL(url: String, loadEvent: Unit, noAudio: Boolean): this.type = js.native
+  def loadURL(): this.type = js.native
+  def loadURL(urls: String): this.type = js.native
+  def loadURL(urls: String, noAudio: Boolean): this.type = js.native
+  def loadURL(urls: String, noAudio: Boolean, crossOrigin: String): this.type = js.native
+  def loadURL(urls: String, noAudio: Unit, crossOrigin: String): this.type = js.native
+  def loadURL(urls: js.Array[String | VideoFileURLConfig]): this.type = js.native
+  def loadURL(urls: js.Array[String | VideoFileURLConfig], noAudio: Boolean): this.type = js.native
+  def loadURL(urls: js.Array[String | VideoFileURLConfig], noAudio: Boolean, crossOrigin: String): this.type = js.native
+  def loadURL(urls: js.Array[String | VideoFileURLConfig], noAudio: Unit, crossOrigin: String): this.type = js.native
+  def loadURL(urls: Unit, noAudio: Boolean): this.type = js.native
+  def loadURL(urls: Unit, noAudio: Boolean, crossOrigin: String): this.type = js.native
+  def loadURL(urls: Unit, noAudio: Unit, crossOrigin: String): this.type = js.native
+  def loadURL(urls: VideoFileURLConfig): this.type = js.native
+  def loadURL(urls: VideoFileURLConfig, noAudio: Boolean): this.type = js.native
+  def loadURL(urls: VideoFileURLConfig, noAudio: Boolean, crossOrigin: String): this.type = js.native
+  def loadURL(urls: VideoFileURLConfig, noAudio: Unit, crossOrigin: String): this.type = js.native
   
   /**
     * An object containing in and out markers for sequence playback.
     */
   var markers: Any = js.native
+  
+  /**
+    * If the browser supports the Request Video Frame API then this
+    * property will hold the metadata that is returned from
+    * the callback each time it is invoked.
+    * 
+    * See https://wicg.github.io/video-rvfc/#video-frame-metadata-callback
+    * for a complete list of all properties that will be in this object.
+    * Likely of most interest is the `mediaTime` property:
+    * 
+    * The media presentation timestamp (PTS) in seconds of the frame presented
+    * (e.g. its timestamp on the video.currentTime timeline). MAY have a zero
+    * value for live-streams or WebRTC applications.
+    * 
+    * If the browser doesn't support the API then this property will be undefined.
+    */
+  var metadata: VideoFrameCallbackMetadata = js.native
+  
+  /**
+    * Pauses the current Video, if one is playing.
+    * 
+    * If no video is loaded, this method does nothing.
+    * 
+    * Call `Video.resume` to resume playback.
+    */
+  def pause(): this.type = js.native
   
   /**
     * Starts this video playing.
@@ -259,11 +457,11 @@ trait Video
     * 
     * ```javascript
     * preload () {
-    *   this.load.video('pixar', 'nemo.mp4', 'loadeddata', false, true);
+    *   this.load.video('pixar', 'nemo.mp4', true);
     * }
     * ```
     * 
-    * The 5th parameter in the load call tells Phaser that the video doesn't contain any audio tracks. Video without
+    * The 3rd parameter in the load call tells Phaser that the video doesn't contain any audio tracks. Video without
     * audio can autoplay without requiring a user interaction. Video with audio cannot do this unless it satisfies
     * the browsers MEI settings. See the MDN Autoplay Guide for details.
     * 
@@ -283,11 +481,10 @@ trait Video
   def play(loop: Unit, markerIn: Unit, markerOut: Double): this.type = js.native
   
   /**
-    * Called when the video emits a `playing` event during load.
-    * 
-    * This is only listened for if the browser doesn't support Promises.
+    * This internal method is called automatically if the playback Promise fails to resolve.
+    * @param error The Promise DOM Exception error.
     */
-  def playHandler(): Unit = js.native
+  def playError(error: DOMException): Unit = js.native
   
   /**
     * Plays a pre-defined sequence in this video.
@@ -306,9 +503,29 @@ trait Video
   def playMarker(key: String, loop: Boolean): this.type = js.native
   
   /**
+    * This internal method is called automatically if the playback Promise resolves successfully.
+    */
+  def playSuccess(): Unit = js.native
+  
+  /**
     * Should the video auto play when document interaction is required and happens?
     */
   var playWhenUnlocked: Boolean = js.native
+  
+  /**
+    * Called when the video emits a `playing` event.
+    */
+  def playingHandler(): Unit = js.native
+  
+  /**
+    * Removes the playback specific event handlers from the video element.
+    */
+  def removeEventHandlers(): Unit = js.native
+  
+  /**
+    * Removes the loading specific event handlers from the video element.
+    */
+  def removeLoadEventHandlers(): Unit = js.native
   
   /**
     * Removes a previously set marker from this video.
@@ -321,39 +538,51 @@ trait Video
   /**
     * Removes the Video element from the DOM by calling parentNode.removeChild on itself.
     * 
-    * Also removes the autoplay and src attributes and nulls the Video reference.
-    * 
-    * You should not call this method if you were playing a video from the Video Cache that
-    * you wish to play again in your game, or if another Video object is also using the same
-    * video.
+    * Also removes the autoplay and src attributes and nulls the `Video.video` reference.
     * 
     * If you loaded an external video via `Video.loadURL` then you should call this function
-    * to clear up once you are done with the instance.
+    * to clear up once you are done with the instance, but don't want to destroy this
+    * Video Game Object.
+    * 
+    * This method is called automatically by `Video.destroy`.
     */
   def removeVideoElement(): Unit = js.native
   
   /**
-    * Should the Video element that this Video is using, be removed from the DOM
-    * when this Video is destroyed?
+    * This method handles the Request Video Frame callback.
+    * 
+    * It is called by the browser when a new video frame is ready to be displayed.
+    * 
+    * It's also responsible for the creation of the video texture, if it doesn't
+    * already exist. If it does, it updates the texture as required.
+    * 
+    * For more details about the Request Video Frame callback, see:
+    * https://web.dev/requestvideoframecallback-rvfc
+    * @param now The current time in milliseconds.
+    * @param metadata Useful metadata about the video frame that was most recently presented for composition. See https://wicg.github.io/video-rvfc/#video-frame-metadata-callback
     */
-  var removeVideoElementOnDestroy: Boolean = js.native
+  def requestVideoFrame(now: DOMHighResTimeStamp, metadata: VideoFrameCallbackMetadata): Unit = js.native
   
   /**
-    * The current retry attempt.
+    * Resumes the current Video, if one was previously playing and has been paused.
+    * 
+    * If no video is loaded, this method does nothing.
+    * 
+    * Call `Video.pause` to pause playback.
+    */
+  def resume(): this.type = js.native
+  
+  /**
+    * The current retry elapsed time.
     */
   var retry: Double = js.native
   
   /**
-    * The number of ms between each retry while monitoring the ready state of a downloading video.
+    * If a video fails to play due to a lack of user interaction, this is the
+    * amount of time, in ms, that the video will wait before trying again to
+    * play. The default is 500ms.
     */
   var retryInterval: Double = js.native
-  
-  /**
-    * When starting playback of a video Phaser will monitor its `readyState` using a `setTimeout` call.
-    * The `setTimeout` happens once every `Video.retryInterval` ms. It will carry on monitoring the video
-    * state in this manner until the `retryLimit` is reached and then abort.
-    */
-  var retryLimit: Double = js.native
   
   /**
     * Stores a copy of this Videos `snapshotTexture` in the Texture Manager using the given key.
@@ -387,16 +616,33 @@ trait Video
   
   /**
     * Stores this Video in the Texture Manager using the given key as a dynamic texture,
-    * which any texture-based Game Object, such as a Sprite, can use as its texture:
+    * which any texture-based Game Object, such as a Sprite, can use as its source:
     * 
     * ```javascript
-    * var vid = this.add.video(0, 0, 'intro');
+    * const vid = this.add.video(0, 0, 'intro');
     * 
     * vid.play();
     * 
     * vid.saveTexture('doodle');
     * 
     * this.add.image(400, 300, 'doodle');
+    * ```
+    * 
+    * If the video is not yet playing then you need to listen for the `TEXTURE_READY` event before
+    * you can use this texture on a Game Object:
+    * 
+    * ```javascript
+    * const vid = this.add.video(0, 0, 'intro');
+    * 
+    * vid.play();
+    * 
+    * vid.once('textureready', (video, texture, key) => {
+    * 
+    *     this.add.image(400, 300, key);
+    * 
+    * });
+    * 
+    * vid.saveTexture('doodle');
     * ```
     * 
     * The saved texture is automatically updated as the video plays. If you pause this video,
@@ -413,8 +659,8 @@ trait Video
     * @param key The unique key to store the texture as within the global Texture Manager.
     * @param flipY Should the WebGL Texture set `UNPACK_MULTIPLY_FLIP_Y` during upload? Default false.
     */
-  def saveTexture(key: String): Texture = js.native
-  def saveTexture(key: String, flipY: Boolean): Texture = js.native
+  def saveTexture(key: String): Boolean = js.native
+  def saveTexture(key: String, flipY: Boolean): Boolean = js.native
   
   /**
     * Seeks to a given point in the video. The value is given as a float between 0 and 1,
@@ -426,6 +672,9 @@ trait Video
     * seeking (i.e. reaches its designated timestamp) it will emit a `seeked` event.
     * 
     * If you wish to seek based on time instead, use the `Video.setCurrentTime` method.
+    * 
+    * Unfortunately, the DOM video element does not guarantee frame-accurate seeking.
+    * This has been an ongoing subject of discussion: https://github.com/w3c/media-and-entertainment/issues/4
     * @param value The point in the video to seek to. A value between 0 and 1.
     */
   def seekTo(value: Double): this.type = js.native
@@ -474,6 +723,10 @@ trait Video
     * If the video is paused, calling this method with `false` will resume playback.
     * 
     * If no video is loaded, this method does nothing.
+    * 
+    * If the video has not yet been played, `Video.play` will be called with no parameters.
+    * 
+    * If the video has ended, this method will do nothing.
     * @param value The paused value. `true` if the video should be paused, `false` to resume it. Default true.
     */
   def setPaused(): this.type = js.native
@@ -534,10 +787,19 @@ trait Video
   ): CanvasTexture = js.native
   
   /**
-    * A Phaser CanvasTexture instance that holds the most recent snapshot taken from the video.
-    * This will only be set if `snapshot` or `snapshotArea` have been called, and will be `null` until that point.
+    * A Phaser `CanvasTexture` instance that holds the most recent snapshot taken from the video.
+    * 
+    * This will only be set if the `snapshot` or `snapshotArea` methods have been called.
+    * 
+    * Until those methods are called, this property will be `undefined`.
     */
-  var snapshotTexture: CanvasTexture = js.native
+  var snapshotTexture: CanvasTexture | Null = js.native
+  
+  /**
+    * This internal method is called automatically if the video stalls, for whatever reason.
+    * @param event The error Event.
+    */
+  def stalledHandler(event: Event): Unit = js.native
   
   /**
     * Stops the video playing and clears all internal event listeners.
@@ -546,45 +808,35 @@ trait Video
     * 
     * If the video hasn't finished downloading, calling this method will not abort the download. To do that you need to
     * call `destroy` instead.
+    * @param emitStopEvent Should the `VIDEO_STOP` event be emitted? Default true.
     */
   def stop(): this.type = js.native
-  
-  /**
-    * Called when the video emits a `timeUpdate` event during playback.
-    * 
-    * This event is too slow and irregular to be used for actual video timing or texture updating,
-    * but we can use it to determine if a video has looped.
-    */
-  def timeUpdateHandler(): Unit = js.native
+  def stop(emitStopEvent: Boolean): this.type = js.native
   
   /**
     * An internal flag holding the current state of the video lock, should document interaction be required
     * before playback can begin.
     */
-  var touchLocked: Boolean = js.native
-  
-  /**
-    * Internal method that is called when enough video data has been received in order to create a texture
-    * from it. The texture is assigned to the `Video.videoTexture` property and given a base frame that
-    * encompases the whole video size.
-    */
-  def updateTexture(): Unit = js.native
+  val touchLocked: Boolean = js.native
   
   /**
     * A reference to the HTML Video Element this Video Game Object is playing.
-    * Will be `null` until a video is loaded for playback.
+    * 
+    * Will be `undefined` until a video is loaded for playback.
     */
-  var video: HTMLVideoElement = js.native
+  var video: HTMLVideoElement | Null = js.native
   
   /**
     * The Phaser Texture this Game Object is using to render the video to.
-    * Will be `null` until a video is loaded for playback.
+    * 
+    * Will be `undefined` until a video is loaded for playback.
     */
-  var videoTexture: Texture = js.native
+  var videoTexture: Texture | Null = js.native
   
   /**
-    * A reference to the TextureSource belong to the `videoTexture` Texture object.
-    * Will be `null` until a video is loaded for playback.
+    * A reference to the TextureSource backing the `videoTexture` Texture object.
+    * 
+    * Will be `undefined` until a video is loaded for playback.
     */
-  var videoTextureSource: TextureSource = js.native
+  var videoTextureSource: TextureSource | Null = js.native
 }

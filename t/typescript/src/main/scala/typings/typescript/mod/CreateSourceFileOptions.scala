@@ -1,7 +1,5 @@
 package typings.typescript.mod
 
-import typings.typescript.mod.ModuleKind.CommonJS
-import typings.typescript.mod.ModuleKind.ESNext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +11,7 @@ trait CreateSourceFileOptions extends StObject {
     * and files on disk, but needs to be done with a module resolution cache in scope to be performant.
     * This is usually `undefined` for compilations that do not have `moduleResolution` values of `node16` or `nodenext`.
     */
-  var impliedNodeFormat: js.UndefOr[ESNext | CommonJS] = js.undefined
+  var impliedNodeFormat: js.UndefOr[ResolutionMode] = js.undefined
   
   var languageVersion: ScriptTarget
   
@@ -34,7 +32,7 @@ object CreateSourceFileOptions {
   @scala.inline
   implicit open class MutableBuilder[Self <: CreateSourceFileOptions] (val x: Self) extends AnyVal {
     
-    inline def setImpliedNodeFormat(value: ESNext | CommonJS): Self = StObject.set(x, "impliedNodeFormat", value.asInstanceOf[js.Any])
+    inline def setImpliedNodeFormat(value: ResolutionMode): Self = StObject.set(x, "impliedNodeFormat", value.asInstanceOf[js.Any])
     
     inline def setImpliedNodeFormatUndefined: Self = StObject.set(x, "impliedNodeFormat", js.undefined)
     

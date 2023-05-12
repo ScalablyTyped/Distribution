@@ -424,6 +424,10 @@ type ConsecutiveDatapointsToAlarm = Double
 
 type ConsecutiveDatapointsToClear = Double
 
+type ContentType = java.lang.String
+
+type CorrelationData = java.lang.String
+
 type Count = Double
 
 type CreatedAtDate = js.Date
@@ -431,6 +435,8 @@ type CreatedAtDate = js.Date
 type CreationDate = js.Date
 
 type CredentialDurationSeconds = Double
+
+type CronExpression = java.lang.String
 
 type CustomMetricArn = java.lang.String
 
@@ -571,6 +577,8 @@ type DomainName = java.lang.String
   - java.lang.String
 */
 type DomainType = _DomainType | java.lang.String
+
+type DurationInMinutes = Double
 
 type DurationSeconds = Double
 
@@ -806,6 +814,14 @@ type JobDocument = java.lang.String
 type JobDocumentSource = java.lang.String
 
 /* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.STOP_ROLLOUT
+  - typings.awsSdk.awsSdkStrings.CANCEL
+  - typings.awsSdk.awsSdkStrings.FORCE_CANCEL
+  - java.lang.String
+*/
+type JobEndBehavior = _JobEndBehavior | java.lang.String
+
+/* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.FAILED
   - typings.awsSdk.awsSdkStrings.REJECTED
   - typings.awsSdk.awsSdkStrings.TIMED_OUT
@@ -838,6 +854,7 @@ type JobId = java.lang.String
   - typings.awsSdk.awsSdkStrings.CANCELED
   - typings.awsSdk.awsSdkStrings.COMPLETED
   - typings.awsSdk.awsSdkStrings.DELETION_IN_PROGRESS
+  - typings.awsSdk.awsSdkStrings.SCHEDULED
   - java.lang.String
 */
 type JobStatus = _JobStatus | java.lang.String
@@ -896,6 +913,8 @@ type LogTargetName = java.lang.String
 */
 type LogTargetType = _LogTargetType | java.lang.String
 
+type MaintenanceWindows = js.Array[MaintenanceWindow]
+
 type ManagedJobTemplateName = java.lang.String
 
 type ManagedJobTemplatesSummaryList = js.Array[ManagedJobTemplateSummary]
@@ -915,6 +934,8 @@ type Maximum = Double
 type MaximumPerMinute = Double
 
 type Message = java.lang.String
+
+type MessageExpiry = java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.RAW
@@ -1022,6 +1043,8 @@ type OTAUpdateId = java.lang.String
   - typings.awsSdk.awsSdkStrings.CREATE_IN_PROGRESS
   - typings.awsSdk.awsSdkStrings.CREATE_COMPLETE
   - typings.awsSdk.awsSdkStrings.CREATE_FAILED
+  - typings.awsSdk.awsSdkStrings.DELETE_IN_PROGRESS
+  - typings.awsSdk.awsSdkStrings.DELETE_FAILED
   - java.lang.String
 */
 type OTAUpdateStatus = _OTAUpdateStatus | java.lang.String
@@ -1051,6 +1074,8 @@ type Parameters = StringDictionary[Value]
 type PartitionKey = java.lang.String
 
 type PayloadField = java.lang.String
+
+type PayloadFormatIndicator = java.lang.String
 
 type PayloadVersion = java.lang.String
 
@@ -1214,6 +1239,8 @@ type ResourceType = _ResourceType | java.lang.String
 
 type Resources = js.Array[Resource]
 
+type ResponseTopic = java.lang.String
+
 type RetryAttempt = Double
 
 type RetryCriteriaList = js.Array[RetryCriteria]
@@ -1262,6 +1289,8 @@ type ScheduledAuditMetadataList = js.Array[ScheduledAuditMetadata]
 
 type ScheduledAuditName = java.lang.String
 
+type ScheduledJobRolloutList = js.Array[ScheduledJobRollout]
+
 type SearchableAttributes = js.Array[AttributeName]
 
 type Seconds = Double
@@ -1269,6 +1298,8 @@ type Seconds = Double
 type SecurityGroupId = java.lang.String
 
 type SecurityGroupList = js.Array[SecurityGroupId]
+
+type SecurityPolicy = java.lang.String
 
 type SecurityProfileArn = java.lang.String
 
@@ -1366,6 +1397,8 @@ type StreamVersion = Double
 type StreamsSummary = js.Array[StreamSummary]
 
 type String = java.lang.String
+
+type StringDateTime = java.lang.String
 
 type StringList = js.Array[stringValue]
 
@@ -1560,6 +1593,12 @@ type UnsignedLong = Double
 type Url = java.lang.String
 
 type UseBase64 = scala.Boolean
+
+type UserProperties = js.Array[UserProperty]
+
+type UserPropertyKey = java.lang.String
+
+type UserPropertyValue = java.lang.String
 
 type Valid = scala.Boolean
 

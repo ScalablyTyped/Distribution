@@ -1,0 +1,16 @@
+package typings.ethers.mod.ethers
+
+import typings.ethers.typesProvidersProviderMod.Provider
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+@JSImport("ethers", "ethers.FeeDataNetworkPlugin")
+@js.native
+open class FeeDataNetworkPlugin protected ()
+  extends typings.ethers.typesEthersMod.FeeDataNetworkPlugin {
+  def this(feeDataFunc: js.Function1[
+        /* provider */ Provider, 
+        js.Promise[typings.ethers.typesProvidersProviderMod.FeeData]
+      ]) = this()
+}

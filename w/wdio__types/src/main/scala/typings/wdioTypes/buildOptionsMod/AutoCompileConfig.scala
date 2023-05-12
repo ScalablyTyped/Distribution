@@ -1,7 +1,6 @@
 package typings.wdioTypes.buildOptionsMod
 
 import typings.std.Record
-import typings.wdioTypes.buildCompilerMod.RegisterOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,9 +11,7 @@ trait AutoCompileConfig extends StObject {
   
   var babelOpts: js.UndefOr[Record[String, Any]] = js.undefined
   
-  var tsConfigPathsOpts: js.UndefOr[TSConfigPathsOptions] = js.undefined
-  
-  var tsNodeOpts: js.UndefOr[RegisterOptions] = js.undefined
+  var tsNodeOpts: js.UndefOr[TSNodeOptions] = js.undefined
 }
 object AutoCompileConfig {
   
@@ -34,11 +31,7 @@ object AutoCompileConfig {
     
     inline def setBabelOptsUndefined: Self = StObject.set(x, "babelOpts", js.undefined)
     
-    inline def setTsConfigPathsOpts(value: TSConfigPathsOptions): Self = StObject.set(x, "tsConfigPathsOpts", value.asInstanceOf[js.Any])
-    
-    inline def setTsConfigPathsOptsUndefined: Self = StObject.set(x, "tsConfigPathsOpts", js.undefined)
-    
-    inline def setTsNodeOpts(value: RegisterOptions): Self = StObject.set(x, "tsNodeOpts", value.asInstanceOf[js.Any])
+    inline def setTsNodeOpts(value: TSNodeOptions): Self = StObject.set(x, "tsNodeOpts", value.asInstanceOf[js.Any])
     
     inline def setTsNodeOptsUndefined: Self = StObject.set(x, "tsNodeOpts", js.undefined)
   }

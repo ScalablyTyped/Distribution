@@ -1,18 +1,19 @@
 package typings.firebaseFirestore
 
+import org.scalablytyped.runtime.Shortcut
 import typings.firebaseFirestore.anon.Output
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object distLitePackagesFirestoreRollupDotconfigDotdebugMod {
-  
-  @JSImport("@firebase/firestore/dist/lite/packages/firestore/rollup.config.debug", JSImport.Namespace)
-  @js.native
-  val ^ : js.Any = js.native
+object distLitePackagesFirestoreRollupDotconfigDotdebugMod extends Shortcut {
   
   @JSImport("@firebase/firestore/dist/lite/packages/firestore/rollup.config.debug", JSImport.Default)
   @js.native
-  def default: js.Array[Output] = js.native
-  inline def default_=(x: js.Array[Output]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
+  val default: js.Array[Output] = js.native
+  
+  type _To = js.Array[Output]
+  
+  /* This means you don't have to write `default`, but can instead just say `distLitePackagesFirestoreRollupDotconfigDotdebugMod.foo` */
+  override def _to: js.Array[Output] = default
 }

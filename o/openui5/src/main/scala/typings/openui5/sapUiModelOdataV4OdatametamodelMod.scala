@@ -2,8 +2,8 @@ package typings.openui5
 
 import typings.openui5.anon.ScopeValueAsPromise
 import typings.openui5.anon.StandardCode
-import typings.openui5.anon.`35`
-import typings.openui5.anon.`36`
+import typings.openui5.anon.`43`
+import typings.openui5.anon.`44`
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiModelOdataV4ValueListTypeMod.ValueListType
 import typings.std.Record
@@ -254,7 +254,7 @@ object sapUiModelOdataV4OdatametamodelMod {
       /**
       * Optional (binding) parameters; if they are given, `oContext` cannot be omitted
       */
-    mParameters: `35`
+    mParameters: `43`
     ): js.UndefOr[Any] = js.native
     def getObject(
       /**
@@ -268,7 +268,7 @@ object sapUiModelOdataV4OdatametamodelMod {
       /**
       * Optional (binding) parameters; if they are given, `oContext` cannot be omitted
       */
-    mParameters: `35`
+    mParameters: `43`
     ): js.UndefOr[Any] = js.native
     
     /**
@@ -280,8 +280,8 @@ object sapUiModelOdataV4OdatametamodelMod {
     
     /**
       * @SINCE 1.37.0
-      * @deprecated (since 1.37.0) - use {@link #getObject}.
       *
+      * Use {@link #getObject}.
       * See:
       * 	sap.ui.model.Model#getProperty
       */
@@ -366,7 +366,7 @@ object sapUiModelOdataV4OdatametamodelMod {
       /**
       * The details object
       */
-    oDetails: `36`
+    oDetails: `44`
     ): js.Promise[(Record[String, StandardCode]) | Null] = js.native
     def requestCurrencyCodes(
       /**
@@ -376,7 +376,7 @@ object sapUiModelOdataV4OdatametamodelMod {
       /**
       * The details object
       */
-    oDetails: `36`
+    oDetails: `44`
     ): js.Promise[(Record[String, StandardCode]) | Null] = js.native
     
     /**
@@ -596,7 +596,7 @@ object sapUiModelOdataV4OdatametamodelMod {
       /**
       * Optional (binding) parameters; if they are given, `oContext` cannot be omitted
       */
-    mParameters: `35`
+    mParameters: `43`
     ): js.Promise[Any] = js.native
     def requestObject(
       /**
@@ -620,7 +620,7 @@ object sapUiModelOdataV4OdatametamodelMod {
       /**
       * Optional (binding) parameters; if they are given, `oContext` cannot be omitted
       */
-    mParameters: `35`
+    mParameters: `43`
     ): js.Promise[Any] = js.native
     
     /**
@@ -685,7 +685,7 @@ object sapUiModelOdataV4OdatametamodelMod {
       /**
       * The details object
       */
-    oDetails: `36`
+    oDetails: `44`
     ): js.Promise[(Record[String, StandardCode]) | Null] = js.native
     def requestUnitsOfMeasure(
       /**
@@ -695,7 +695,7 @@ object sapUiModelOdataV4OdatametamodelMod {
       /**
       * The details object
       */
-    oDetails: `36`
+    oDetails: `44`
     ): js.Promise[(Record[String, StandardCode]) | Null] = js.native
     
     /**

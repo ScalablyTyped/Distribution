@@ -1,6 +1,5 @@
 package typings.devextreme.mod.DevExpress.common.grids
 
-import typings.devextreme.mod.DevExpress.common.charts.StateStoreType
 import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

@@ -13,8 +13,6 @@ trait LoginWithExternalServiceOptions extends StObject {
   
   var loginStyle: js.UndefOr[String] = js.undefined
   
-  var loginUrlParameters: js.UndefOr[js.Object] = js.undefined
-  
   var redirectUrl: js.UndefOr[String] = js.undefined
   
   var requestOfflineToken: js.UndefOr[Boolean] = js.undefined
@@ -42,10 +40,6 @@ object LoginWithExternalServiceOptions {
     inline def setLoginStyle(value: String): Self = StObject.set(x, "loginStyle", value.asInstanceOf[js.Any])
     
     inline def setLoginStyleUndefined: Self = StObject.set(x, "loginStyle", js.undefined)
-    
-    inline def setLoginUrlParameters(value: js.Object): Self = StObject.set(x, "loginUrlParameters", value.asInstanceOf[js.Any])
-    
-    inline def setLoginUrlParametersUndefined: Self = StObject.set(x, "loginUrlParameters", js.undefined)
     
     inline def setRedirectUrl(value: String): Self = StObject.set(x, "redirectUrl", value.asInstanceOf[js.Any])
     

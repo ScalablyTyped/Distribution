@@ -57,8 +57,8 @@ trait GeocodingService
 object GeocodingService {
   
   /**
-    * @property subDomain {string=} - the sub-domain of the geo-coding service relative to the platform's base URL, default is 'geocoder'
-    * @property path {string=} - the path of the Geocoding service, default is '6.2'
+    * subDomain {string=} - the sub-domain of the geo-coding service relative to the platform's base URL, default is 'geocoder'
+    * path {string=} - the path of the Geocoding service, default is '6.2'
     */
   trait Options extends StObject {
     

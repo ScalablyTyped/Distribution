@@ -8,6 +8,7 @@ import typings.classValidator.typesDecoratorArrayArrayUniqueMod.ArrayUniqueIdent
 import typings.classValidator.typesDecoratorCommonValidateByMod.ValidateByOptions
 import typings.classValidator.typesDecoratorStringIsIPMod.IsIpVersion
 import typings.classValidator.typesDecoratorStringIsISBNMod.IsISBNVersion
+import typings.classValidator.typesDecoratorStringIsStrongPasswordMod.IsStrongPasswordOptions
 import typings.classValidator.typesDecoratorStringIsUUIDMod.UUIDVersion
 import typings.classValidator.typesDecoratorTypecheckerIsNumberMod.IsNumberOptions
 import typings.classValidator.typesDecoratorValidationOptionsMod.ValidationOptions
@@ -122,6 +123,10 @@ object typesDecoratorDecoratorsMod {
   @JSImport("class-validator/types/decorator/decorators", "IS_BASE32")
   @js.native
   val IS_BASE32: /* "isBase32" */ String = js.native
+  
+  @JSImport("class-validator/types/decorator/decorators", "IS_BASE58")
+  @js.native
+  val IS_BASE58: /* "isBase58" */ String = js.native
   
   @JSImport("class-validator/types/decorator/decorators", "IS_BASE64")
   @js.native
@@ -271,6 +276,10 @@ object typesDecoratorDecoratorsMod {
   @js.native
   val IS_ISO31661_ALPHA_3: /* "isISO31661Alpha3" */ String = js.native
   
+  @JSImport("class-validator/types/decorator/decorators", "IS_ISO4217_CURRENCY_CODE")
+  @js.native
+  val IS_ISO4217_CURRENCY_CODE: /* "isISO4217CurrencyCode" */ String = js.native
+  
   @JSImport("class-validator/types/decorator/decorators", "IS_ISO8601")
   @js.native
   val IS_ISO8601: /* "isIso8601" */ String = js.native
@@ -411,9 +420,21 @@ object typesDecoratorDecoratorsMod {
   @js.native
   val IS_STRING: /* "isString" */ String = js.native
   
+  @JSImport("class-validator/types/decorator/decorators", "IS_STRONG_PASSWORD")
+  @js.native
+  val IS_STRONG_PASSWORD: /* "isStrongPassword" */ String = js.native
+  
   @JSImport("class-validator/types/decorator/decorators", "IS_SURROGATE_PAIR")
   @js.native
   val IS_SURROGATE_PAIR: /* "isSurrogatePair" */ String = js.native
+  
+  @JSImport("class-validator/types/decorator/decorators", "IS_TAX_ID")
+  @js.native
+  val IS_TAX_ID: /* "isTaxId" */ String = js.native
+  
+  @JSImport("class-validator/types/decorator/decorators", "IS_TIMEZONE")
+  @js.native
+  val IS_TIMEZONE: /* "isTimeZone" */ String = js.native
   
   @JSImport("class-validator/types/decorator/decorators", "IS_UPPERCASE")
   @js.native
@@ -432,14 +453,14 @@ object typesDecoratorDecoratorsMod {
   val IS_VARIABLE_WIDTH: /* "isVariableWidth" */ String = js.native
   
   inline def IsAlpha_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsAlpha")().asInstanceOf[PropertyDecorator]
-  inline def IsAlpha_(locale: String): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsAlpha")(locale.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
-  inline def IsAlpha_(locale: String, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("IsAlpha")(locale.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
   inline def IsAlpha_(locale: Unit, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("IsAlpha")(locale.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
+  inline def IsAlpha_(locale: AlphaLocale): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsAlpha")(locale.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  inline def IsAlpha_(locale: AlphaLocale, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("IsAlpha")(locale.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
   
   inline def IsAlphanumeric_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsAlphanumeric")().asInstanceOf[PropertyDecorator]
-  inline def IsAlphanumeric_(locale: String): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsAlphanumeric")(locale.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
-  inline def IsAlphanumeric_(locale: String, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("IsAlphanumeric")(locale.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
   inline def IsAlphanumeric_(locale: Unit, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("IsAlphanumeric")(locale.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
+  inline def IsAlphanumeric_(locale: AlphanumericLocale): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsAlphanumeric")(locale.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  inline def IsAlphanumeric_(locale: AlphanumericLocale, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("IsAlphanumeric")(locale.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
   
   inline def IsArray_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsArray")().asInstanceOf[PropertyDecorator]
   inline def IsArray_(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsArray")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
@@ -452,6 +473,9 @@ object typesDecoratorDecoratorsMod {
   
   inline def IsBase32_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsBase32")().asInstanceOf[PropertyDecorator]
   inline def IsBase32_(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsBase32")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  
+  inline def IsBase58_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsBase58")().asInstanceOf[PropertyDecorator]
+  inline def IsBase58_(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsBase58")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
   inline def IsBase64_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsBase64")().asInstanceOf[PropertyDecorator]
   inline def IsBase64_(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsBase64")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
@@ -564,6 +588,9 @@ object typesDecoratorDecoratorsMod {
   
   inline def IsISO31661Alpha3_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsISO31661Alpha3")().asInstanceOf[PropertyDecorator]
   inline def IsISO31661Alpha3_(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsISO31661Alpha3")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  
+  inline def IsISO4217CurrencyCode_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsISO4217CurrencyCode")().asInstanceOf[PropertyDecorator]
+  inline def IsISO4217CurrencyCode_(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsISO4217CurrencyCode")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
   inline def IsISO8601_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsISO8601")().asInstanceOf[PropertyDecorator]
   inline def IsISO8601_(options: Unit, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("IsISO8601")(options.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
@@ -712,8 +739,21 @@ object typesDecoratorDecoratorsMod {
   inline def IsString_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsString")().asInstanceOf[PropertyDecorator]
   inline def IsString_(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsString")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
+  inline def IsStrongPassword_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsStrongPassword")().asInstanceOf[PropertyDecorator]
+  inline def IsStrongPassword_(options: Unit, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("IsStrongPassword")(options.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
+  inline def IsStrongPassword_(options: IsStrongPasswordOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsStrongPassword")(options.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  inline def IsStrongPassword_(options: IsStrongPasswordOptions, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("IsStrongPassword")(options.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
+  
   inline def IsSurrogatePair_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsSurrogatePair")().asInstanceOf[PropertyDecorator]
   inline def IsSurrogatePair_(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsSurrogatePair")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  
+  inline def IsTaxId_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsTaxId")().asInstanceOf[PropertyDecorator]
+  inline def IsTaxId_(locale: String): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsTaxId")(locale.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  inline def IsTaxId_(locale: String, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("IsTaxId")(locale.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
+  inline def IsTaxId_(locale: Unit, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("IsTaxId")(locale.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
+  
+  inline def IsTimeZone_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsTimeZone")().asInstanceOf[PropertyDecorator]
+  inline def IsTimeZone_(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsTimeZone")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
   inline def IsUUID_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsUUID")().asInstanceOf[PropertyDecorator]
   inline def IsUUID_(version: Unit, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("IsUUID")(version.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
@@ -773,6 +813,8 @@ object typesDecoratorDecoratorsMod {
   
   inline def MaxDate_(date: js.Date): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("MaxDate")(date.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   inline def MaxDate_(date: js.Date, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("MaxDate")(date.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
+  inline def MaxDate_(date: js.Function0[js.Date]): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("MaxDate")(date.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  inline def MaxDate_(date: js.Function0[js.Date], validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("MaxDate")(date.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
   
   inline def MaxLength_(max: Double): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("MaxLength")(max.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   inline def MaxLength_(max: Double, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("MaxLength")(max.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
@@ -782,6 +824,8 @@ object typesDecoratorDecoratorsMod {
   
   inline def MinDate_(date: js.Date): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("MinDate")(date.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   inline def MinDate_(date: js.Date, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("MinDate")(date.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
+  inline def MinDate_(date: js.Function0[js.Date]): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("MinDate")(date.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  inline def MinDate_(date: js.Function0[js.Date], validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("MinDate")(date.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
   
   inline def MinLength_(min: Double): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("MinLength")(min.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   inline def MinLength_(min: Double, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("MinLength")(min.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
@@ -856,7 +900,7 @@ object typesDecoratorDecoratorsMod {
   inline def isAlphanumeric(value: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAlphanumeric")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   inline def isAlphanumeric(value: Any, locale: AlphanumericLocale): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isAlphanumeric")(value.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def isArray(value: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isArray")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isArray[T](value: Any): /* is std.Array<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isArray")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.Array<T> */ Boolean]
   
   inline def isAscii(value: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAscii")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
@@ -864,9 +908,11 @@ object typesDecoratorDecoratorsMod {
   
   inline def isBase32(value: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBase32")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
+  inline def isBase58(value: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBase58")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
   inline def isBase64(value: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBase64")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def isBoolean(value: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBoolean")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isBoolean(value: Any): /* is boolean */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBoolean")(value.asInstanceOf[js.Any]).asInstanceOf[/* is boolean */ Boolean]
   
   inline def isBooleanString(value: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBooleanString")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
@@ -882,7 +928,7 @@ object typesDecoratorDecoratorsMod {
   
   inline def isDataURI(value: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDataURI")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  inline def isDate(value: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDate")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isDate(value: Any): /* is std.Date */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDate")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.Date */ Boolean]
   
   inline def isDateString(value: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDateString")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   inline def isDateString(value: Any, options: IsISO8601Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isDateString")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
@@ -936,6 +982,8 @@ object typesDecoratorDecoratorsMod {
   
   inline def isISO31661Alpha3(value: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isISO31661Alpha3")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
+  inline def isISO4217CurrencyCode(value: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isISO4217CurrencyCode")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
   inline def isISO8601(value: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isISO8601")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   inline def isISO8601(value: Any, options: IsISO8601Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isISO8601")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
@@ -950,7 +998,7 @@ object typesDecoratorDecoratorsMod {
   
   inline def isInstance(`object`: Any, targetTypeConstructor: Instantiable1[/* args (repeated) */ Any, Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(`object`.asInstanceOf[js.Any], targetTypeConstructor.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def isInt(`val`: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInt")(`val`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isInt(`val`: Any): /* is std.Number */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInt")(`val`.asInstanceOf[js.Any]).asInstanceOf[/* is std.Number */ Boolean]
   
   inline def isJSON(value: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isJSON")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
@@ -993,13 +1041,13 @@ object typesDecoratorDecoratorsMod {
   
   inline def isNotIn(value: Any, possibleValues: js.Array[Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isNotIn")(value.asInstanceOf[js.Any], possibleValues.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def isNumber(value: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNumber")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  inline def isNumber(value: Any, options: IsNumberOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isNumber")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isNumber(value: Any): /* is number */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNumber")(value.asInstanceOf[js.Any]).asInstanceOf[/* is number */ Boolean]
+  inline def isNumber(value: Any, options: IsNumberOptions): /* is number */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isNumber")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[/* is number */ Boolean]
   
   inline def isNumberString(value: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNumberString")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   inline def isNumberString(value: Any, options: IsNumericOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isNumberString")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def isObject(value: Any): /* is object */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObject")(value.asInstanceOf[js.Any]).asInstanceOf[/* is object */ Boolean]
+  inline def isObject[T](value: Any): /* is T */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObject")(value.asInstanceOf[js.Any]).asInstanceOf[/* is T */ Boolean]
   
   inline def isOctal(value: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isOctal")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
@@ -1025,7 +1073,15 @@ object typesDecoratorDecoratorsMod {
   
   inline def isString(value: Any): /* is string */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isString")(value.asInstanceOf[js.Any]).asInstanceOf[/* is string */ Boolean]
   
+  inline def isStrongPassword(value: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStrongPassword")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isStrongPassword(value: Any, options: IsStrongPasswordOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isStrongPassword")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
   inline def isSurrogatePair(value: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSurrogatePair")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def isTaxId(value: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTaxId")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isTaxId(value: Any, locale: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTaxId")(value.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  inline def isTimeZone(value: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTimeZone")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def isURL(value: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isURL")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   inline def isURL(value: String, options: IsURLOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isURL")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
@@ -1046,12 +1102,14 @@ object typesDecoratorDecoratorsMod {
   inline def max(num: Any, max: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("max")(num.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   inline def maxDate(date: Any, maxDate: js.Date): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("maxDate")(date.asInstanceOf[js.Any], maxDate.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def maxDate(date: Any, maxDate: js.Function0[js.Date]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("maxDate")(date.asInstanceOf[js.Any], maxDate.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   inline def maxLength(value: Any, max: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("maxLength")(value.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   inline def min(num: Any, min: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("min")(num.asInstanceOf[js.Any], min.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   inline def minDate(date: Any, minDate: js.Date): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("minDate")(date.asInstanceOf[js.Any], minDate.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def minDate(date: Any, minDate: js.Function0[js.Date]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("minDate")(date.asInstanceOf[js.Any], minDate.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   inline def minLength(value: Any, min: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("minLength")(value.asInstanceOf[js.Any], min.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   

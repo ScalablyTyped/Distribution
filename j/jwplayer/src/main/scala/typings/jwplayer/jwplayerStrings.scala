@@ -264,6 +264,18 @@ object jwplayerStrings {
   inline def time: time = "time".asInstanceOf[time]
   
   @js.native
+  sealed trait userActive
+    extends StObject
+       with NoParamEvent
+  inline def userActive: userActive = "userActive".asInstanceOf[userActive]
+  
+  @js.native
+  sealed trait userInactive
+    extends StObject
+       with NoParamEvent
+  inline def userInactive: userInactive = "userInactive".asInstanceOf[userInactive]
+  
+  @js.native
   sealed trait vast extends StObject
   inline def vast: vast = "vast".asInstanceOf[vast]
   

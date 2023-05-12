@@ -5,12 +5,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Displays the panorama for a given <code>LatLng</code> or panorama ID. A
-  * <code>StreetViewPanorama</code> object provides a Street View
-  * &quot;viewer&quot; which can be stand-alone within a separate
-  * <code>&lt;div&gt;</code> or bound to a <code>Map</code>.
-  */
 @js.native
 trait StreetViewPanorama
   extends StObject

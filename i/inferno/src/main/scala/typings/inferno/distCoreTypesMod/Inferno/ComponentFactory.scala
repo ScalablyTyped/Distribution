@@ -1,6 +1,7 @@
 package typings.inferno.distCoreTypesMod.Inferno
 
 import typings.inferno.distCoreTypesMod.IComponent
+import typings.inferno.distCoreTypesMod.InfernoNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

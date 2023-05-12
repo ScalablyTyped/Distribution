@@ -3096,6 +3096,23 @@ object Layui {
         Double
       ] = js.native
     
+    def findLast[S /* <: Any */](
+      predicate: js.Function3[/* value */ Any, /* index */ Double, /* array */ js.Array[Any], /* is S */ Boolean]
+    ): js.UndefOr[S] = js.native
+    
+    def findLastIndex(predicate: js.Function3[/* value */ Any, /* index */ Double, /* array */ js.Array[Any], Any]): Double = js.native
+    @JSName("findLastIndex")
+    var findLastIndex_Original: js.Function1[
+        /* predicate */ js.Function3[/* value */ Any, /* index */ Double, /* array */ js.Array[Any], Any], 
+        Double
+      ] = js.native
+    
+    @JSName("findLast")
+    var findLast_Original: js.Function1[
+        /* predicate */ js.Function3[/* value */ Any, /* index */ Double, /* array */ js.Array[Any], /* is any */ Boolean], 
+        js.UndefOr[Any]
+      ] = js.native
+    
     def flat[A, D /* <: Double */](): js.Array[FlatArray[A, D]] = js.native
     
     def flatMap[U, This](
@@ -3198,7 +3215,7 @@ object Layui {
       * @param [fn] 回调    (tip:this:any)
       */
     def on(
-      eventName: /* keyof std.HTMLElementEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 101, starting with typings.layuiSrc.layuiSrcStrings.fullscreenchange, typings.layuiSrc.layuiSrcStrings.fullscreenerror, typings.layuiSrc.layuiSrcStrings.copy */ Any,
+      eventName: /* keyof std.HTMLElementEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 101, starting with typings.layuiSrc.layuiSrcStrings.fullscreenchange, typings.layuiSrc.layuiSrcStrings.fullscreenerror, typings.layuiSrc.layuiSrcStrings.abort */ Any,
       fn: js.Function1[/* args */ Any, Any]
     ): js.Array[HTMLElement] = js.native
     

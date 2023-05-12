@@ -187,49 +187,54 @@ object layersHighlightLayerMod {
   trait IHighlightLayerOptions extends StObject {
     
     /**
-      * Alpha blending mode used to apply the blur. Default is combine.
+      * Alpha blending mode used to apply the blur.  Default: ALPHA_COMBINE
       */
     var alphaBlendingMode: Double
     
     /**
-      * How big in texel of the blur texture is the horizontal blur.
+      * How big in texel of the blur texture is the horizontal blur. Default: 1
       */
     var blurHorizontalSize: Double
     
     /**
       * Multiplication factor apply to the main texture size in the first step of the blur to reduce the size
-      * of the picture to blur (the smaller the faster).
+      * of the picture to blur (the smaller the faster). Default: 0.5
       */
     var blurTextureSizeRatio: Double
     
     /**
-      * How big in texel of the blur texture is the vertical blur.
+      * How big in texel of the blur texture is the vertical blur. Default: 1
       */
     var blurVerticalSize: Double
     
     /**
-      * The camera attached to the layer.
+      * The camera attached to the layer. Default: null
       */
     var camera: Nullable[Camera]
     
     /**
-      * Should we display highlight as a solid stroke?
+      * Should we display highlight as a solid stroke? Default: false
       */
     var isStroke: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * Enforces a fixed size texture to ensure resize independent blur.
+      * Enforces a fixed size texture to ensure resize independent blur. Default: undefined
       */
     var mainTextureFixedSize: js.UndefOr[Double] = js.undefined
     
     /**
       * Multiplication factor apply to the canvas size to compute the render target size
-      * used to generated the glowing objects (the smaller the faster).
+      * used to generated the glowing objects (the smaller the faster). Default: 0.5
       */
     var mainTextureRatio: Double
     
     /**
-      * The rendering group to draw the layer in.
+      * The type of the main texture. Default: TEXTURETYPE_UNSIGNED_INT
+      */
+    var mainTextureType: Double
+    
+    /**
+      * The rendering group to draw the layer in. Default: -1
       */
     var renderingGroupId: Double
   }
@@ -241,9 +246,10 @@ object layersHighlightLayerMod {
       blurTextureSizeRatio: Double,
       blurVerticalSize: Double,
       mainTextureRatio: Double,
+      mainTextureType: Double,
       renderingGroupId: Double
     ): IHighlightLayerOptions = {
-      val __obj = js.Dynamic.literal(alphaBlendingMode = alphaBlendingMode.asInstanceOf[js.Any], blurHorizontalSize = blurHorizontalSize.asInstanceOf[js.Any], blurTextureSizeRatio = blurTextureSizeRatio.asInstanceOf[js.Any], blurVerticalSize = blurVerticalSize.asInstanceOf[js.Any], mainTextureRatio = mainTextureRatio.asInstanceOf[js.Any], renderingGroupId = renderingGroupId.asInstanceOf[js.Any], camera = null)
+      val __obj = js.Dynamic.literal(alphaBlendingMode = alphaBlendingMode.asInstanceOf[js.Any], blurHorizontalSize = blurHorizontalSize.asInstanceOf[js.Any], blurTextureSizeRatio = blurTextureSizeRatio.asInstanceOf[js.Any], blurVerticalSize = blurVerticalSize.asInstanceOf[js.Any], mainTextureRatio = mainTextureRatio.asInstanceOf[js.Any], mainTextureType = mainTextureType.asInstanceOf[js.Any], renderingGroupId = renderingGroupId.asInstanceOf[js.Any], camera = null)
       __obj.asInstanceOf[IHighlightLayerOptions]
     }
     
@@ -271,6 +277,8 @@ object layersHighlightLayerMod {
       inline def setMainTextureFixedSizeUndefined: Self = StObject.set(x, "mainTextureFixedSize", js.undefined)
       
       inline def setMainTextureRatio(value: Double): Self = StObject.set(x, "mainTextureRatio", value.asInstanceOf[js.Any])
+      
+      inline def setMainTextureType(value: Double): Self = StObject.set(x, "mainTextureType", value.asInstanceOf[js.Any])
       
       inline def setRenderingGroupId(value: Double): Self = StObject.set(x, "renderingGroupId", value.asInstanceOf[js.Any])
     }

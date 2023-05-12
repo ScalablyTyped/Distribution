@@ -32,7 +32,7 @@ object distOpsFillMod {
     * @param shape An array of integers defining the output tensor shape.
     * @param value The scalar value to fill the tensor with.
     * @param dtype The type of an element in the resulting tensor. Defaults to
-    * 'float'.
+    *     'float32' if the given param value is a number, otherwise 'string'.
     *
     * @doc {heading: 'Tensors', subheading: 'Creation'}
     */

@@ -27,6 +27,11 @@ trait HostedConfigurationVersionSummary extends StObject {
   var Description: js.UndefOr[typings.awsSdk.clientsAppconfigMod.Description] = js.undefined
   
   /**
+    * A user-defined label for an AppConfig hosted configuration version.
+    */
+  var VersionLabel: js.UndefOr[typings.awsSdk.clientsAppconfigMod.VersionLabel] = js.undefined
+  
+  /**
     * The configuration version.
     */
   var VersionNumber: js.UndefOr[Integer] = js.undefined
@@ -56,6 +61,10 @@ object HostedConfigurationVersionSummary {
     inline def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    
+    inline def setVersionLabel(value: VersionLabel): Self = StObject.set(x, "VersionLabel", value.asInstanceOf[js.Any])
+    
+    inline def setVersionLabelUndefined: Self = StObject.set(x, "VersionLabel", js.undefined)
     
     inline def setVersionNumber(value: Integer): Self = StObject.set(x, "VersionNumber", value.asInstanceOf[js.Any])
     

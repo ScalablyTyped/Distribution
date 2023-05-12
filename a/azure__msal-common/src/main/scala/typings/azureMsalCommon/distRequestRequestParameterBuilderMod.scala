@@ -118,9 +118,9 @@ object distRequestRequestParameterBuilderMod {
     
     /**
       * add extraQueryParams
-      * @param eQparams
+      * @param eQParams
       */
-    def addExtraQueryParameters(eQparams: StringDict): Unit = js.native
+    def addExtraQueryParameters(eQParams: StringDict): Unit = js.native
     
     /**
       * add grant type

@@ -11,19 +11,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FloatingActionButtonOptions extends StObject {
   
   /**
-    * Direction FAB menu opens
+    * Direction FAB menu opens.
     * @default "top"
     */
   var direction: top | right | buttom | left
   
   /**
-    * true: FAB menu appears on hover, false: FAB menu appears on click
+    * true: FAB menu appears on hover, false: FAB menu appears on click.
     * @default true
     */
   var hoverEnabled: Boolean
   
   /**
-    * Enable transit the FAB into a toolbar on click
+    * Enable transit the FAB into a toolbar on click.
     * @default false
     */
   var toolbarEnabled: Boolean

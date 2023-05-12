@@ -9,11 +9,11 @@ trait GetEventActionRequest extends StObject {
   /**
     * The unique identifier for the event action.
     */
-  var EventActionId: string
+  var EventActionId: _String
 }
 object GetEventActionRequest {
   
-  inline def apply(EventActionId: string): GetEventActionRequest = {
+  inline def apply(EventActionId: _String): GetEventActionRequest = {
     val __obj = js.Dynamic.literal(EventActionId = EventActionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetEventActionRequest]
   }
@@ -21,6 +21,6 @@ object GetEventActionRequest {
   @scala.inline
   implicit open class MutableBuilder[Self <: GetEventActionRequest] (val x: Self) extends AnyVal {
     
-    inline def setEventActionId(value: string): Self = StObject.set(x, "EventActionId", value.asInstanceOf[js.Any])
+    inline def setEventActionId(value: _String): Self = StObject.set(x, "EventActionId", value.asInstanceOf[js.Any])
   }
 }

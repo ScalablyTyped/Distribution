@@ -29,5 +29,21 @@ object buildErrorsMod {
     var name: String = js.native
   }
   
+  @JSImport("@react-native-community/cli-tools/build/errors", "UnknownProjectError")
+  @js.native
+  open class UnknownProjectError ()
+    extends StObject
+       with Error {
+    
+    /* standard es5 */
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* standard es5 */
+    /* CompleteClass */
+    var name: String = js.native
+  }
+  
+  inline def inlineString(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("inlineString")().asInstanceOf[String]
   inline def inlineString(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("inlineString")(str.asInstanceOf[js.Any]).asInstanceOf[String]
 }

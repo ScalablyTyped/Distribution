@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetParametersQueryResolution extends StObject {
   
   /**
-    * Lists secret scanning alerts for eligible repositories in an organization, from newest to oldest.
+    * List secret scanning alerts for an organization
+    * @description Lists secret scanning alerts for eligible repositories in an organization, from newest to oldest.
     * To use this endpoint, you must be an administrator or security manager for the organization, and you must use an access token with the `repo` scope or `security_events` scope.
     * For public repositories, you may instead use the `public_repo` scope.
     *

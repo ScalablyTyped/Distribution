@@ -121,7 +121,7 @@ object distEsmRruleMod {
     /* protected */ def _iter[M /* <: QueryMethodTypes */](iterResult: default[M]): IterResultType[M] = js.native
     
     /* CompleteClass */
-    override def after(date: js.Date, inc: Boolean): js.Date = js.native
+    override def after(date: js.Date, inc: Boolean): js.Date | Null = js.native
     /**
       * Returns the first recurrence after the given datetime instance.
       * The inc keyword defines what happens if dt is an occurrence.
@@ -129,14 +129,14 @@ object distEsmRruleMod {
       *
       * @return Date or null
       */
-    def after(dt: js.Date): js.Date = js.native
+    def after(dt: js.Date): js.Date | Null = js.native
     
     /* CompleteClass */
     override def all(): js.Array[js.Date] = js.native
     def all(iterator: js.Function2[/* d */ js.Date, /* len */ Double, Boolean]): js.Array[js.Date] = js.native
     
     /* CompleteClass */
-    override def before(date: js.Date, inc: Boolean): js.Date = js.native
+    override def before(date: js.Date, inc: Boolean): js.Date | Null = js.native
     /**
       * Returns the last recurrence before the given datetime instance.
       * The inc keyword defines what happens if dt is an occurrence.
@@ -144,7 +144,7 @@ object distEsmRruleMod {
       *
       * @return Date or null
       */
-    def before(dt: js.Date): js.Date = js.native
+    def before(dt: js.Date): js.Date | Null = js.native
     
     /**
       * Returns all the occurrences of the rrule between after and before.

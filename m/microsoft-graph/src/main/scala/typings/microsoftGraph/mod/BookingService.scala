@@ -41,11 +41,20 @@ trait BookingService
   // The display name is suitable for human-readable interfaces.
   var displayName: js.UndefOr[String] = js.undefined
   
+  /**
+    * True if the URL to join the appointment anonymously (anonymousJoinWebUrl) will be generated for the appointment booked
+    * for this service.
+    */
+  var isAnonymousJoinEnabled: js.UndefOr[Boolean] = js.undefined
+  
   // True means this service is not available to customers for booking.
   var isHiddenFromCustomers: js.UndefOr[Boolean] = js.undefined
   
   // True indicates that the appointments for the service will be held online. Default value is false.
   var isLocationOnline: js.UndefOr[Boolean] = js.undefined
+  
+  // The language of the self-service booking page.
+  var languageTag: js.UndefOr[String] = js.undefined
   
   /**
     * The maximum number of customers allowed in a service. If maximumAttendeesCount of the service is greater than 1, pass
@@ -138,6 +147,10 @@ object BookingService {
     
     inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
+    inline def setIsAnonymousJoinEnabled(value: Boolean): Self = StObject.set(x, "isAnonymousJoinEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setIsAnonymousJoinEnabledUndefined: Self = StObject.set(x, "isAnonymousJoinEnabled", js.undefined)
+    
     inline def setIsHiddenFromCustomers(value: Boolean): Self = StObject.set(x, "isHiddenFromCustomers", value.asInstanceOf[js.Any])
     
     inline def setIsHiddenFromCustomersUndefined: Self = StObject.set(x, "isHiddenFromCustomers", js.undefined)
@@ -145,6 +158,10 @@ object BookingService {
     inline def setIsLocationOnline(value: Boolean): Self = StObject.set(x, "isLocationOnline", value.asInstanceOf[js.Any])
     
     inline def setIsLocationOnlineUndefined: Self = StObject.set(x, "isLocationOnline", js.undefined)
+    
+    inline def setLanguageTag(value: String): Self = StObject.set(x, "languageTag", value.asInstanceOf[js.Any])
+    
+    inline def setLanguageTagUndefined: Self = StObject.set(x, "languageTag", js.undefined)
     
     inline def setMaximumAttendeesCount(value: Double): Self = StObject.set(x, "maximumAttendeesCount", value.asInstanceOf[js.Any])
     

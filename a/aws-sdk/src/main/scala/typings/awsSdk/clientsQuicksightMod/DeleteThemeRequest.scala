@@ -14,7 +14,7 @@ trait DeleteThemeRequest extends StObject {
   /**
     * An ID for the theme that you want to delete.
     */
-  var ThemeId: RestrictiveResourceId
+  var ThemeId: ShortRestrictiveResourceId
   
   /**
     * The version of the theme that you want to delete.   Note: If you don't provide a version number, you're using this call to DeleteTheme to delete all versions of the theme.
@@ -23,7 +23,7 @@ trait DeleteThemeRequest extends StObject {
 }
 object DeleteThemeRequest {
   
-  inline def apply(AwsAccountId: AwsAccountId, ThemeId: RestrictiveResourceId): DeleteThemeRequest = {
+  inline def apply(AwsAccountId: AwsAccountId, ThemeId: ShortRestrictiveResourceId): DeleteThemeRequest = {
     val __obj = js.Dynamic.literal(AwsAccountId = AwsAccountId.asInstanceOf[js.Any], ThemeId = ThemeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteThemeRequest]
   }
@@ -33,7 +33,7 @@ object DeleteThemeRequest {
     
     inline def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
     
-    inline def setThemeId(value: RestrictiveResourceId): Self = StObject.set(x, "ThemeId", value.asInstanceOf[js.Any])
+    inline def setThemeId(value: ShortRestrictiveResourceId): Self = StObject.set(x, "ThemeId", value.asInstanceOf[js.Any])
     
     inline def setVersionNumber(value: VersionNumber): Self = StObject.set(x, "VersionNumber", value.asInstanceOf[js.Any])
     

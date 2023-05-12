@@ -103,39 +103,87 @@ object panelPanelMod {
     def this(props: PanelProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: PanelProps, context: Any) = this()
     
+    /**
+      * Used to get content of the panel.
+      * @return {HTMLDivElement} Content element
+      */
     def getContent(): HTMLDivElement = js.native
     
+    /**
+      * Used to get container element.
+      * @return {HTMLDivElement} Container element
+      */
     def getElement(): HTMLDivElement = js.native
   }
   
+  /**
+    * Custom panel header template options.
+    */
   trait PanelHeaderTemplateOptions extends StObject {
     
+    /**
+      * Style class of the panel.
+      */
     var className: String
     
+    /**
+      * Whether the panel header is collapsed or not.
+      */
     var collapsed: Boolean
     
+    /**
+      * The JSX element that represents the panel.
+      */
     var element: Element
     
+    /**
+      * Style class of the panel icons.
+      */
     var iconsClassName: String
     
+    /**
+      * The JSX element that represents the icons of the panel.
+      */
     var iconsElement: Element
     
+    /**
+      * Callback to invoke when the toggler button is clicked.
+      * @param {React.MouseEvent<HTMLElement>} event Browser event.
+      */
     def onTogglerClick(event: MouseEvent[HTMLElement, NativeMouseEvent]): Unit
     
+    /**
+      * The props of the Panel component.
+      */
     var props: PanelProps
     
+    /**
+      * Style class of the panel title.
+      */
     var titleClassName: String
     
+    /**
+      * The JSX element that represents the title of the panel.
+      */
     var titleElement: Element
     
+    /**
+      * Style class of the panel toggler.
+      */
     var togglerClassName: String
     
+    /**
+      * The JSX element that represents the toggler of the panel.
+      */
     var togglerElement: Element
     
+    /**
+      * Style class of the panel toggler icon.
+      */
     var togglerIconClassName: String
   }
   object PanelHeaderTemplateOptions {
@@ -186,10 +234,6 @@ object panelPanelMod {
       inline def setTogglerIconClassName(value: String): Self = StObject.set(x, "togglerIconClassName", value.asInstanceOf[js.Any])
     }
   }
-  
-  type PanelHeaderTemplateType = ReactNode | (js.Function1[/* options */ PanelHeaderTemplateOptions, ReactNode])
-  
-  type PanelIconsTemplateType = ReactNode | (js.Function1[/* props */ PanelProps, ReactNode])
   
   /* Inlined parent std.Omit<react.react.DetailedHTMLProps<react.react.HTMLAttributes<std.HTMLDivElement>, std.HTMLDivElement>, 'ref'> */
   trait PanelProps extends StObject {
@@ -300,19 +344,34 @@ object panelPanelMod {
     
     var autoCorrect: js.UndefOr[String] = js.undefined
     
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
+    
     var autoSave: js.UndefOr[String] = js.undefined
     
+    /**
+      * Used to get the child elements of the component.
+      * @readonly
+      */
     var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
+    /**
+      * Icon of a collapsed tab.
+      */
     var collapseIcon: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconType<PanelProps> */ Any
       ] = js.undefined
     
+    /**
+      * Defines the initial state of panel content, supports one or two-way binding as well.
+      * @defaultValue false
+      */
     var collapsed: js.UndefOr[Boolean] = js.undefined
     
     var color: js.UndefOr[String] = js.undefined
+    
+    var content: js.UndefOr[String] = js.undefined
     
     var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
@@ -330,17 +389,30 @@ object panelPanelMod {
     
     var draggable: js.UndefOr[Booleanish] = js.undefined
     
+    /**
+      * Icon of a expanded tab.
+      */
     var expandIcon: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconType<PanelProps> */ Any
       ] = js.undefined
     
+    /**
+      * Custom header template of the panel.
+      */
     var header: js.UndefOr[ReactNode] = js.undefined
     
-    var headerTemplate: js.UndefOr[PanelHeaderTemplateType] = js.undefined
+    /**
+      * Header template of the panel to customize more.
+      * @param {PanelHeaderTemplateOptions} options - Options to customize the header template.
+      */
+    var headerTemplate: js.UndefOr[ReactNode | (js.Function1[/* options */ PanelHeaderTemplateOptions, ReactNode])] = js.undefined
     
     var hidden: js.UndefOr[Boolean] = js.undefined
     
-    var icons: js.UndefOr[PanelIconsTemplateType] = js.undefined
+    /**
+      * Custom icons template for the header.
+      */
+    var icons: js.UndefOr[ReactNode | (js.Function1[/* props */ this.type, ReactNode])] = js.undefined
     
     var id: js.UndefOr[String] = js.undefined
     
@@ -388,6 +460,10 @@ object panelPanelMod {
     
     var onClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
+    /**
+      * Callback to invoke when an active tab is collapsed by clicking on the header.
+      * @param {React.SyntheticEvent} event - Browser event.
+      */
     var onCollapse: js.UndefOr[js.Function1[/* event */ SyntheticEvent[typings.std.Element, Event], Unit]] = js.undefined
     
     var onCompositionEnd: js.UndefOr[CompositionEventHandler[HTMLDivElement]] = js.undefined
@@ -430,6 +506,10 @@ object panelPanelMod {
     
     var onError: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
+    /**
+      * Callback to invoke when a tab gets expanded.
+      * @param {React.SyntheticEvent} event - Browser event.
+      */
     var onExpand: js.UndefOr[js.Function1[/* event */ SyntheticEvent[typings.std.Element, Event], Unit]] = js.undefined
     
     var onFocus: js.UndefOr[FocusEventHandler[HTMLDivElement]] = js.undefined
@@ -514,7 +594,11 @@ object panelPanelMod {
     
     var onTimeUpdate: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
-    var onToggle: js.UndefOr[js.Function1[/* e */ PanelToggleParams, Unit]] = js.undefined
+    /**
+      * Callback to invoke when a tab gets expanded.
+      * @param {PanelToggleEvent} event - Custom toggle event.
+      */
+    var onToggle: js.UndefOr[js.Function1[/* event */ PanelToggleEvent, Unit]] = js.undefined
     
     var onTouchCancel: js.UndefOr[TouchEventHandler[HTMLDivElement]] = js.undefined
     
@@ -540,9 +624,13 @@ object panelPanelMod {
     
     var radioGroup: js.UndefOr[String] = js.undefined
     
+    var rel: js.UndefOr[String] = js.undefined
+    
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
+    
+    var rev: js.UndefOr[String] = js.undefined
     
     var role: js.UndefOr[AriaRole] = js.undefined
     
@@ -562,8 +650,16 @@ object panelPanelMod {
     
     var title: js.UndefOr[String] = js.undefined
     
+    /**
+      * Defines if content of panel can be expanded and collapsed.
+      * @defaultValue false
+      */
     var toggleable: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * The properties of CSSTransition can be customized, except for "nodeRef" and "in" properties.
+      * @type {CSSTransitionProps}
+      */
     var transitionOptions: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSSTransitionProps */ Any
       ] = js.undefined
@@ -796,6 +892,10 @@ object panelPanelMod {
       
       inline def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
       
+      inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+      
+      inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+      
       inline def setAutoSave(value: String): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
       
       inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
@@ -822,9 +922,13 @@ object panelPanelMod {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
       inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
       inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
@@ -864,7 +968,7 @@ object panelPanelMod {
       
       inline def setHeader(value: ReactNode): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
-      inline def setHeaderTemplate(value: PanelHeaderTemplateType): Self = StObject.set(x, "headerTemplate", value.asInstanceOf[js.Any])
+      inline def setHeaderTemplate(value: ReactNode | (js.Function1[/* options */ PanelHeaderTemplateOptions, ReactNode])): Self = StObject.set(x, "headerTemplate", value.asInstanceOf[js.Any])
       
       inline def setHeaderTemplateFunction1(value: /* options */ PanelHeaderTemplateOptions => ReactNode): Self = StObject.set(x, "headerTemplate", js.Any.fromFunction1(value))
       
@@ -876,9 +980,9 @@ object panelPanelMod {
       
       inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
       
-      inline def setIcons(value: PanelIconsTemplateType): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
+      inline def setIcons(value: ReactNode | (js.Function1[PanelProps, ReactNode])): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
       
-      inline def setIconsFunction1(value: /* props */ PanelProps => ReactNode): Self = StObject.set(x, "icons", js.Any.fromFunction1(value))
+      inline def setIconsFunction1(value: PanelProps => ReactNode): Self = StObject.set(x, "icons", js.Any.fromFunction1(value))
       
       inline def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
       
@@ -1228,7 +1332,7 @@ object panelPanelMod {
       
       inline def setOnTimeUpdateUndefined: Self = StObject.set(x, "onTimeUpdate", js.undefined)
       
-      inline def setOnToggle(value: /* e */ PanelToggleParams => Unit): Self = StObject.set(x, "onToggle", js.Any.fromFunction1(value))
+      inline def setOnToggle(value: /* event */ PanelToggleEvent => Unit): Self = StObject.set(x, "onToggle", js.Any.fromFunction1(value))
       
       inline def setOnToggleUndefined: Self = StObject.set(x, "onToggle", js.undefined)
       
@@ -1280,6 +1384,10 @@ object panelPanelMod {
       
       inline def setRadioGroupUndefined: Self = StObject.set(x, "radioGroup", js.undefined)
       
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      
+      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+      
       inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
       inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
@@ -1287,6 +1395,10 @@ object panelPanelMod {
       inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+      
+      inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+      
+      inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
       
       inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
@@ -1352,21 +1464,32 @@ object panelPanelMod {
     }
   }
   
-  trait PanelToggleParams extends StObject {
+  /**
+    * Custom toggle event.
+    * @see {@link PanelProps.onToggle}
+    * @event
+    */
+  trait PanelToggleEvent extends StObject {
     
+    /**
+      * Browser event.
+      */
     var originalEvent: MouseEvent[HTMLElement, NativeMouseEvent]
     
+    /**
+      * Collapsed state as a boolean.
+      */
     var value: Boolean
   }
-  object PanelToggleParams {
+  object PanelToggleEvent {
     
-    inline def apply(originalEvent: MouseEvent[HTMLElement, NativeMouseEvent], value: Boolean): PanelToggleParams = {
+    inline def apply(originalEvent: MouseEvent[HTMLElement, NativeMouseEvent], value: Boolean): PanelToggleEvent = {
       val __obj = js.Dynamic.literal(originalEvent = originalEvent.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.asInstanceOf[PanelToggleParams]
+      __obj.asInstanceOf[PanelToggleEvent]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: PanelToggleParams] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: PanelToggleEvent] (val x: Self) extends AnyVal {
       
       inline def setOriginalEvent(value: MouseEvent[HTMLElement, NativeMouseEvent]): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       

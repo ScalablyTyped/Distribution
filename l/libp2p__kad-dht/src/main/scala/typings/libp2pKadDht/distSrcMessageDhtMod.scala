@@ -1,5 +1,8 @@
 package typings.libp2pKadDht
 
+import typings.libp2pKadDht.anon.PartialMessage
+import typings.libp2pKadDht.anon.PartialPeer
+import typings.libp2pKadDht.anon.PartialRecord
 import typings.libp2pKadDht.distSrcMessageDhtMod.Message.MessageType
 import typings.libp2pKadDht.distSrcMessageDhtMod.Message.Peer
 import typings.protonsRuntime.distSrcCodecMod.Codec
@@ -143,7 +146,7 @@ object distSrcMessageDhtMod {
       inline def decode(buf: js.typedarray.Uint8Array): Peer = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(buf.asInstanceOf[js.Any]).asInstanceOf[Peer]
       inline def decode(buf: Uint8ArrayList): Peer = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(buf.asInstanceOf[js.Any]).asInstanceOf[Peer]
       
-      inline def encode(obj: Peer): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+      inline def encode(obj: PartialPeer): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
       
       @scala.inline
       implicit open class MutableBuilder[Self <: Peer] (val x: Self) extends AnyVal {
@@ -167,7 +170,7 @@ object distSrcMessageDhtMod {
     inline def decode(buf: js.typedarray.Uint8Array): Message = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(buf.asInstanceOf[js.Any]).asInstanceOf[Message]
     inline def decode(buf: Uint8ArrayList): Message = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(buf.asInstanceOf[js.Any]).asInstanceOf[Message]
     
-    inline def encode(obj: Message): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+    inline def encode(obj: PartialMessage): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
     
     @scala.inline
     implicit open class MutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
@@ -226,7 +229,7 @@ object distSrcMessageDhtMod {
     inline def decode(buf: js.typedarray.Uint8Array): Record = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(buf.asInstanceOf[js.Any]).asInstanceOf[Record]
     inline def decode(buf: Uint8ArrayList): Record = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(buf.asInstanceOf[js.Any]).asInstanceOf[Record]
     
-    inline def encode(obj: Record): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+    inline def encode(obj: PartialRecord): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
     
     @scala.inline
     implicit open class MutableBuilder[Self <: Record] (val x: Self) extends AnyVal {

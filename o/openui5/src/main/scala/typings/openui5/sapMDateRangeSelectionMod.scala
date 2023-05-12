@@ -136,35 +136,31 @@ object sapMDateRangeSelectionMod {
     /**
       * @deprecated (since 1.22.0) - replaced by `dateValue` property of the {@link sap.m.DateTimeField}
       *
-      * Gets current value of property {@link #getFrom from}.
+      * Get the start date of the range.
       *
-      * Start date of the range.
-      *
-      * @returns Value of property `from`
+      * @returns the start date of the date range
       */
-    def getFrom(): js.Object = js.native
+    def getFrom(): js.Date = js.native
     
     /**
-      * Gets current value of property {@link #getSecondDateValue secondDateValue}.
+      * Getter for property `secondDateValue`.
       *
       * The end date of the range as JavaScript Date object. This is independent from any formatter.
       *
       * **Note:** If this property is used, the `value` property should not be changed from the caller.
       *
-      * @returns Value of property `secondDateValue`
+      * @returns the value of property `secondDateValue`
       */
-    def getSecondDateValue(): js.Object = js.native
+    def getSecondDateValue(): js.Date = js.native
     
     /**
       * @deprecated (since 1.22.0) - replaced by `secondDateValue` property
       *
-      * Gets current value of property {@link #getTo to}.
+      * Get the end date of the range.
       *
-      * End date of the range.
-      *
-      * @returns Value of property `to`
+      * @returns the end date of the date range
       */
-    def getTo(): js.Object = js.native
+    def getTo(): js.Date = js.native
     
     /**
       * Sets a new value for property {@link #getDelimiter delimiter}.
@@ -187,53 +183,40 @@ object sapMDateRangeSelectionMod {
     /**
       * @deprecated (since 1.22.0) - replaced by `dateValue` property of the {@link sap.m.DateTimeField}
       *
-      * Sets a new value for property {@link #getFrom from}.
+      * Set the start date of the range.
       *
-      * Start date of the range.
-      *
-      * When called with a value of `null` or `undefined`, the default value of the property will be restored.
-      *
-      * @returns Reference to `this` in order to allow method chaining
+      * @returns Reference to `this` for method chaining
       */
-    def setFrom(): this.type = js.native
     def setFrom(/**
-      * New value for property `from`
+      * A JavaScript Date
       */
-    oFrom: js.Object): this.type = js.native
+    oFrom: js.Date): this.type = js.native
     
     /**
-      * Sets a new value for property {@link #getSecondDateValue secondDateValue}.
+      * Setter for property `secondDateValue`.
       *
-      * The end date of the range as JavaScript Date object. This is independent from any formatter.
+      * The start date of the range as JavaScript Date object. This is independent from any formatter.
       *
       * **Note:** If this property is used, the `value` property should not be changed from the caller.
       *
-      * When called with a value of `null` or `undefined`, the default value of the property will be restored.
-      *
-      * @returns Reference to `this` in order to allow method chaining
+      * @returns Reference to `this` for method chaining
       */
-    def setSecondDateValue(): this.type = js.native
     def setSecondDateValue(/**
-      * New value for property `secondDateValue`
+      * New value for property `dateValue`
       */
-    oSecondDateValue: js.Object): this.type = js.native
+    oSecondDateValue: js.Date): this.type = js.native
     
     /**
       * @deprecated (since 1.22.0) - replaced by `secondDateValue` property
       *
-      * Sets a new value for property {@link #getTo to}.
+      * Set the end date of the range.
       *
-      * End date of the range.
-      *
-      * When called with a value of `null` or `undefined`, the default value of the property will be restored.
-      *
-      * @returns Reference to `this` in order to allow method chaining
+      * @returns Reference to `this` for method chaining
       */
-    def setTo(): this.type = js.native
     def setTo(/**
-      * New value for property `to`
+      * A JavaScript Date
       */
-    oTo: js.Object): this.type = js.native
+    oTo: js.Date): this.type = js.native
   }
   
   trait DateRangeSelectionSettings

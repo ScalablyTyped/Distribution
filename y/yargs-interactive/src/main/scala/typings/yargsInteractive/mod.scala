@@ -1,7 +1,6 @@
 package typings.yargsInteractive
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.yargs.mod.Argv
 import typings.yargsInteractive.anon.Default
 import typings.yargsInteractive.yargsInteractiveStrings.`if-empty`
 import typings.yargsInteractive.yargsInteractiveStrings.`if-no-arg`
@@ -28,14 +27,36 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @js.native
-  trait Interactive
-    extends StObject
-       with Argv[js.Object] {
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Argv * / any */ trait Interactive extends StObject {
     
-    def interactive(options: Option): Interactive = js.native
+    def interactive(options: Option): Interactive
     
-    def `then`(callback: js.Function1[/* result */ Any, Any]): Interactive = js.native
+    def `then`(callback: js.Function1[/* result */ Any, Any]): Interactive
+    
+    def usage(usage: String): Interactive
+  }
+  object Interactive {
+    
+    inline def apply(
+      interactive: Option => Interactive,
+      `then`: js.Function1[/* result */ Any, Any] => Interactive,
+      usage: String => Interactive
+    ): Interactive = {
+      val __obj = js.Dynamic.literal(interactive = js.Any.fromFunction1(interactive), usage = js.Any.fromFunction1(usage))
+      __obj.updateDynamic("then")(js.Any.fromFunction1(`then`))
+      __obj.asInstanceOf[Interactive]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Interactive] (val x: Self) extends AnyVal {
+      
+      inline def setInteractive(value: Option => Interactive): Self = StObject.set(x, "interactive", js.Any.fromFunction1(value))
+      
+      inline def setThen(value: js.Function1[/* result */ Any, Any] => Interactive): Self = StObject.set(x, "then", js.Any.fromFunction1(value))
+      
+      inline def setUsage(value: String => Interactive): Self = StObject.set(x, "usage", js.Any.fromFunction1(value))
+    }
   }
   
   type Option = StringDictionary[OptionData | Default]

@@ -15,12 +15,20 @@ object libConstMod {
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[TEXT_GRADIENT & Double] = js.native
     
+    /**
+      * Linear gradient
+      * @default 1
+      */
     @js.native
     sealed trait LINEAR_HORIZONTAL
       extends StObject
          with TEXT_GRADIENT
     /* 1 */ val LINEAR_HORIZONTAL: typings.pixiText.libConstMod.TEXT_GRADIENT.LINEAR_HORIZONTAL & Double = js.native
     
+    /**
+      * Vertical gradient
+      * @default 0
+      */
     @js.native
     sealed trait LINEAR_VERTICAL
       extends StObject

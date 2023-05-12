@@ -6,7 +6,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSImport("facebook-nodejs-business-sdk", "FacebookAdsApi")
 @js.native
 open class FacebookAdsApi protected () extends default {
@@ -15,6 +14,7 @@ open class FacebookAdsApi protected () extends default {
   def this(accessToken: String, locale: String, crash_log: Boolean) = this()
   def this(accessToken: String, locale: Unit, crash_log: Boolean) = this()
 }
+/* static members */
 object FacebookAdsApi {
   
   @JSImport("facebook-nodejs-business-sdk", "FacebookAdsApi")
@@ -23,11 +23,10 @@ object FacebookAdsApi {
   
   @JSImport("facebook-nodejs-business-sdk", "FacebookAdsApi._defaultApi")
   @js.native
-  def defaultApi: typings.facebookNodejsBusinessSdk.srcApiMod.FacebookAdsApi = js.native
+  def _defaultApi: typings.facebookNodejsBusinessSdk.srcApiMod.FacebookAdsApi = js.native
+  inline def _defaultApi_=(x: typings.facebookNodejsBusinessSdk.srcApiMod.FacebookAdsApi): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_defaultApi")(x.asInstanceOf[js.Any])
   
-  inline def defaultApi_=(x: typings.facebookNodejsBusinessSdk.srcApiMod.FacebookAdsApi): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_defaultApi")(x.asInstanceOf[js.Any])
-  
-  inline def encodeParams(params: Record[String, Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_encodeParams")(params.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def _encodeParams(params: Record[String, Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_encodeParams")(params.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def getDefaultApi(): typings.facebookNodejsBusinessSdk.srcApiMod.FacebookAdsApi = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultApi")().asInstanceOf[typings.facebookNodejsBusinessSdk.srcApiMod.FacebookAdsApi]
   

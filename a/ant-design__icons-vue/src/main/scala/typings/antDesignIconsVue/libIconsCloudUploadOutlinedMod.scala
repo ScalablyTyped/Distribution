@@ -16,7 +16,7 @@ object libIconsCloudUploadOutlinedMod extends Shortcut {
   @js.native
   trait CloudUploadOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_CloudUploadOutlinedIconType: String = js.native

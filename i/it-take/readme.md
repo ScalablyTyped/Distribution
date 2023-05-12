@@ -1,7 +1,7 @@
 
 # Scala.js typings for it-take
 
-Typings are for version 2.0.0
+Typings are for version 3.0.2
 
 ## Library description:
 Stop iteration after n items have been received

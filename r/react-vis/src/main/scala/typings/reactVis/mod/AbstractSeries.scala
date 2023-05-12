@@ -12,7 +12,7 @@ open class AbstractSeries[T] protected ()
   def this(props: T) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: T, context: Any) = this()
 }

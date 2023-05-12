@@ -18,7 +18,6 @@ import typings.swiper.typesModulesFreeModeMod.FreeModeEvents
 import typings.swiper.typesModulesHashNavigationMod.HashNavigationEvents
 import typings.swiper.typesModulesHistoryMod.HistoryEvents
 import typings.swiper.typesModulesKeyboardMod.KeyboardEvents
-import typings.swiper.typesModulesLazyMod.LazyEvents
 import typings.swiper.typesModulesMousewheelMod.MousewheelEvents
 import typings.swiper.typesModulesNavigationMod.NavigationEvents
 import typings.swiper.typesModulesPaginationMod.PaginationEvents
@@ -50,7 +49,6 @@ object typesSwiperEventsMod {
        with HashNavigationEvents
        with HistoryEvents
        with KeyboardEvents
-       with LazyEvents
        with MousewheelEvents
        with NavigationEvents
        with PaginationEvents
@@ -174,11 +172,6 @@ object typesSwiperEventsMod {
       * Event will be fired when Swiper goes from beginning or end position
       */
     def fromEdge(swiper: default): Unit = js.native
-    
-    /**
-      * Event will be fired right after all inner images are loaded. updateOnImagesReady should be also enabled
-      */
-    def imagesReady(swiper: default): Unit = js.native
     
     // CORE_EVENTS_START
     /**

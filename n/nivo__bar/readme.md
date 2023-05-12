@@ -1,7 +1,7 @@
 
 # Scala.js typings for nivo__bar
 
-Typings are for version 0.80.0
+Typings are for version 0.83.0
 
 ## Library description:
 <a href="https://nivo.rocks"><img alt="nivo" src="https://raw.githubusercontent.com/plouc/nivo/master/nivo.png" width="216" height="68"/></a>

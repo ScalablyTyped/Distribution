@@ -17,7 +17,7 @@ trait CreateHarvestJobResponse extends StObject {
   var ChannelId: js.UndefOr[string] = js.undefined
   
   /**
-    * The time the HarvestJob was submitted
+    * The date and time the HarvestJob was submitted.
     */
   var CreatedAt: js.UndefOr[string] = js.undefined
   

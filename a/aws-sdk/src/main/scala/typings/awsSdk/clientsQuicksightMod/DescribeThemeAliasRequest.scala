@@ -19,11 +19,11 @@ trait DescribeThemeAliasRequest extends StObject {
   /**
     * The ID for the theme.
     */
-  var ThemeId: RestrictiveResourceId
+  var ThemeId: ShortRestrictiveResourceId
 }
 object DescribeThemeAliasRequest {
   
-  inline def apply(AliasName: AliasName, AwsAccountId: AwsAccountId, ThemeId: RestrictiveResourceId): DescribeThemeAliasRequest = {
+  inline def apply(AliasName: AliasName, AwsAccountId: AwsAccountId, ThemeId: ShortRestrictiveResourceId): DescribeThemeAliasRequest = {
     val __obj = js.Dynamic.literal(AliasName = AliasName.asInstanceOf[js.Any], AwsAccountId = AwsAccountId.asInstanceOf[js.Any], ThemeId = ThemeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeThemeAliasRequest]
   }
@@ -35,6 +35,6 @@ object DescribeThemeAliasRequest {
     
     inline def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
     
-    inline def setThemeId(value: RestrictiveResourceId): Self = StObject.set(x, "ThemeId", value.asInstanceOf[js.Any])
+    inline def setThemeId(value: ShortRestrictiveResourceId): Self = StObject.set(x, "ThemeId", value.asInstanceOf[js.Any])
   }
 }

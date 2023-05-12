@@ -9,7 +9,7 @@ trait MountOptions extends StObject {
   /** A human-readable name for the file system. */
   var displayName: String
   
-  /** The string indentifier of the file system. Must be unique per each extension. */
+  /** The string identifier of the file system. Must be unique per each extension. */
   var fileSystemId: String
   
   /**

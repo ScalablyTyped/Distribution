@@ -6,7 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PostRequestBodyContentApplicationjsonBodyEvent extends StObject {
   
-  /** Submits a pending review for a pull request. For more information about creating a pending review for a pull request, see "[Create a review for a pull request](https://docs.github.com/rest/pulls#create-a-review-for-a-pull-request)." */
+  /**
+    * Submit a review for a pull request
+    * @description Submits a pending review for a pull request. For more information about creating a pending review for a pull request, see "[Create a review for a pull request](https://docs.github.com/rest/pulls#create-a-review-for-a-pull-request)."
+    */
   var post: RequestBodyContentApplicationjsonBodyEvent
 }
 object PostRequestBodyContentApplicationjsonBodyEvent {

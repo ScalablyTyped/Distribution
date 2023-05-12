@@ -1,7 +1,7 @@
 
 # Scala.js typings for vscode-languageclient
 
-Typings are for version 8.0.2
+Typings are for version 8.1.0
 
 ## Library description:
 VSCode Language client implementation

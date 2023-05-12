@@ -62,7 +62,7 @@ trait CreateDomainRequest extends StObject {
   var EngineVersion: js.UndefOr[VersionString] = js.undefined
   
   /**
-    * Key-value pairs to configure slow log publishing.
+    * Key-value pairs to configure log publishing.
     */
   var LogPublishingOptions: js.UndefOr[typings.awsSdk.clientsOpensearchMod.LogPublishingOptions] = js.undefined
   
@@ -72,9 +72,19 @@ trait CreateDomainRequest extends StObject {
   var NodeToNodeEncryptionOptions: js.UndefOr[typings.awsSdk.clientsOpensearchMod.NodeToNodeEncryptionOptions] = js.undefined
   
   /**
+    * Specifies a daily 10-hour time block during which OpenSearch Service can perform configuration changes on the domain, including service software updates and Auto-Tune enhancements that require a blue/green deployment. If no options are specified, the default start time of 10:00 P.M. local time (for the Region that the domain is created in) is used.
+    */
+  var OffPeakWindowOptions: js.UndefOr[typings.awsSdk.clientsOpensearchMod.OffPeakWindowOptions] = js.undefined
+  
+  /**
     * DEPRECATED. Container for the parameters required to configure automated snapshots of domain indexes.
     */
   var SnapshotOptions: js.UndefOr[typings.awsSdk.clientsOpensearchMod.SnapshotOptions] = js.undefined
+  
+  /**
+    * Software update options for the domain.
+    */
+  var SoftwareUpdateOptions: js.UndefOr[typings.awsSdk.clientsOpensearchMod.SoftwareUpdateOptions] = js.undefined
   
   /**
     * List of tags to add to the domain upon creation.
@@ -146,9 +156,17 @@ object CreateDomainRequest {
     
     inline def setNodeToNodeEncryptionOptionsUndefined: Self = StObject.set(x, "NodeToNodeEncryptionOptions", js.undefined)
     
+    inline def setOffPeakWindowOptions(value: OffPeakWindowOptions): Self = StObject.set(x, "OffPeakWindowOptions", value.asInstanceOf[js.Any])
+    
+    inline def setOffPeakWindowOptionsUndefined: Self = StObject.set(x, "OffPeakWindowOptions", js.undefined)
+    
     inline def setSnapshotOptions(value: SnapshotOptions): Self = StObject.set(x, "SnapshotOptions", value.asInstanceOf[js.Any])
     
     inline def setSnapshotOptionsUndefined: Self = StObject.set(x, "SnapshotOptions", js.undefined)
+    
+    inline def setSoftwareUpdateOptions(value: SoftwareUpdateOptions): Self = StObject.set(x, "SoftwareUpdateOptions", value.asInstanceOf[js.Any])
+    
+    inline def setSoftwareUpdateOptionsUndefined: Self = StObject.set(x, "SoftwareUpdateOptions", js.undefined)
     
     inline def setTagList(value: TagList): Self = StObject.set(x, "TagList", value.asInstanceOf[js.Any])
     

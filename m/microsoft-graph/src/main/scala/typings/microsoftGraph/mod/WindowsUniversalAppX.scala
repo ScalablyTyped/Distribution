@@ -17,6 +17,9 @@ trait WindowsUniversalAppX
     */
   var applicableDeviceTypes: js.UndefOr[WindowsDeviceType] = js.undefined
   
+  // The collection of contained apps in the committed mobileAppContent of a windowsUniversalAppX app.
+  var committedContainedApps: js.UndefOr[NullableOption[js.Array[MobileContainedApp]]] = js.undefined
+  
   // The Identity Name.
   var identityName: js.UndefOr[NullableOption[String]] = js.undefined
   
@@ -52,6 +55,14 @@ object WindowsUniversalAppX {
     inline def setApplicableDeviceTypes(value: WindowsDeviceType): Self = StObject.set(x, "applicableDeviceTypes", value.asInstanceOf[js.Any])
     
     inline def setApplicableDeviceTypesUndefined: Self = StObject.set(x, "applicableDeviceTypes", js.undefined)
+    
+    inline def setCommittedContainedApps(value: NullableOption[js.Array[MobileContainedApp]]): Self = StObject.set(x, "committedContainedApps", value.asInstanceOf[js.Any])
+    
+    inline def setCommittedContainedAppsNull: Self = StObject.set(x, "committedContainedApps", null)
+    
+    inline def setCommittedContainedAppsUndefined: Self = StObject.set(x, "committedContainedApps", js.undefined)
+    
+    inline def setCommittedContainedAppsVarargs(value: MobileContainedApp*): Self = StObject.set(x, "committedContainedApps", js.Array(value*))
     
     inline def setIdentityName(value: NullableOption[String]): Self = StObject.set(x, "identityName", value.asInstanceOf[js.Any])
     

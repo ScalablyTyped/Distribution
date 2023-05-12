@@ -5,6 +5,7 @@ import typings.mendixmodelsdk.srcGenExpressionsMod.expressions.Expression
 import typings.mendixmodelsdk.srcGenMicroflowsMod.StructureVersionInfo
 import typings.mendixmodelsdk.srcGenRestMod.rest.ConsumedODataService
 import typings.mendixmodelsdk.srcGenRestMod.rest.InteractiveRest
+import typings.mendixmodelsdk.srcGenRestMod.rest.InteractiveRestOperation
 import typings.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
 import typings.mendixmodelsdk.srcSdkInternalInstancesMod.IList
 import typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement
@@ -45,6 +46,8 @@ open class HttpConfiguration protected () extends Element[IModel] {
   def containerAsConsumedODataService: ConsumedODataService = js.native
   
   def containerAsInteractiveRest: InteractiveRest = js.native
+  
+  def containerAsInteractiveRestOperation: InteractiveRestOperation = js.native
   
   def containerAsRestCallAction: RestCallAction = js.native
   
@@ -162,10 +165,21 @@ object HttpConfiguration {
   /**
     * Creates and returns a new HttpConfiguration instance in the SDK and on the server.
     * The new HttpConfiguration will be automatically stored in the 'httpConfiguration' property
+    * of the parent rest.InteractiveRestOperation element passed as argument.
+    *
+    * Warning! Can only be used on models with the following Mendix meta model versions:
+    *  9.22.0 and higher
+    */
+  /* static member */
+  inline def createInInteractiveRestOperationUnderHttpConfiguration(container: InteractiveRestOperation): HttpConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("createInInteractiveRestOperationUnderHttpConfiguration")(container.asInstanceOf[js.Any]).asInstanceOf[HttpConfiguration]
+  
+  /**
+    * Creates and returns a new HttpConfiguration instance in the SDK and on the server.
+    * The new HttpConfiguration will be automatically stored in the 'httpConfiguration' property
     * of the parent rest.InteractiveRest element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  9.18.0 and higher
+    *  9.18.0 to 9.22.0
     */
   /* static member */
   inline def createInInteractiveRestUnderHttpConfiguration(container: InteractiveRest): HttpConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("createInInteractiveRestUnderHttpConfiguration")(container.asInstanceOf[js.Any]).asInstanceOf[HttpConfiguration]

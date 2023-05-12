@@ -47,7 +47,7 @@ trait DescribeExperimentResponse extends StObject {
   var LastModifiedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The ARN of the source and, optionally, the type.
+    * The Amazon Resource Name (ARN) of the source and, optionally, the type.
     */
   var Source: js.UndefOr[ExperimentSource] = js.undefined
 }

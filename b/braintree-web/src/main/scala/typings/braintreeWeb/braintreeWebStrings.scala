@@ -6,6 +6,7 @@ import typings.braintreeWeb.modulesApplePayMod.ApplePayRecurringPaymentDateUnit
 import typings.braintreeWeb.modulesApplePayMod.ApplePayTokenizeValues
 import typings.braintreeWeb.modulesCoreMod.BraintreeErrorTypes
 import typings.braintreeWeb.modulesGooglePaymentMod.GooglePaymentTokenizeValues
+import typings.braintreeWeb.modulesHostedFieldsMod.HostedFieldAttributeName
 import typings.braintreeWeb.modulesHostedFieldsMod.HostedFieldEventType
 import typings.braintreeWeb.modulesHostedFieldsMod.HostedFieldsHostedFieldsFieldName
 import typings.braintreeWeb.modulesLocalPaymentMod.LocalPaymentTypes
@@ -82,6 +83,18 @@ object braintreeWebStrings {
        with ApplePayTokenizeValues
        with GooglePaymentTokenizeValues
   inline def Yes: Yes = "Yes".asInstanceOf[Yes]
+  
+  @js.native
+  sealed trait `aria-invalid`
+    extends StObject
+       with HostedFieldAttributeName
+  inline def `aria-invalid`: `aria-invalid` = "aria-invalid".asInstanceOf[`aria-invalid`]
+  
+  @js.native
+  sealed trait `aria-required`
+    extends StObject
+       with HostedFieldAttributeName
+  inline def `aria-required`: `aria-required` = "aria-required".asInstanceOf[`aria-required`]
   
   @js.native
   sealed trait `authentication-iframe-available`
@@ -182,6 +195,12 @@ object braintreeWebStrings {
     extends StObject
        with ApplePayPaymentTiming
   inline def deferred: deferred = "deferred".asInstanceOf[deferred]
+  
+  @js.native
+  sealed trait disabled
+    extends StObject
+       with HostedFieldAttributeName
+  inline def disabled: disabled = "disabled".asInstanceOf[disabled]
   
   @js.native
   sealed trait empty
@@ -306,6 +325,12 @@ object braintreeWebStrings {
     extends StObject
        with ApplePayLineItemType
   inline def pending: pending = "pending".asInstanceOf[pending]
+  
+  @js.native
+  sealed trait placeholder
+    extends StObject
+       with HostedFieldAttributeName
+  inline def placeholder: placeholder = "placeholder".asInstanceOf[placeholder]
   
   @js.native
   sealed trait postalCode

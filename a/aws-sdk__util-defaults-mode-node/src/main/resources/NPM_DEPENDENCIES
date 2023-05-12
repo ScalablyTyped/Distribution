@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@aws-sdk/util-defaults-mode-node" : "3.209.0"
+      "@aws-sdk/util-defaults-mode-node" : "3.329.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@aws-sdk/util-defaults-mode-node" : "3.209.0"
+      "@aws-sdk/util-defaults-mode-node" : "3.329.0"
     }
   ],
   "compile-devDependencies" : [

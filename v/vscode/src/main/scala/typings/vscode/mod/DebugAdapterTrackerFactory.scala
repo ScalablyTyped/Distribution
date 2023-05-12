@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DebugAdapterTrackerFactory extends StObject {
   
   /**
-    * The method 'createDebugAdapterTracker' is called at the start of a debug session in order
-    * to return a "tracker" object that provides read-access to the communication between the editor and a debug adapter.
-    *
-    * @param session The {@link DebugSession debug session} for which the debug adapter tracker will be used.
-    * @return A {@link DebugAdapterTracker debug adapter tracker} or undefined.
-    */
+  		 * The method 'createDebugAdapterTracker' is called at the start of a debug session in order
+  		 * to return a "tracker" object that provides read-access to the communication between the editor and a debug adapter.
+  		 *
+  		 * @param session The {@link DebugSession debug session} for which the debug adapter tracker will be used.
+  		 * @return A {@link DebugAdapterTracker debug adapter tracker} or undefined.
+  		 */
   def createDebugAdapterTracker(session: DebugSession): ProviderResult[DebugAdapterTracker]
 }
 object DebugAdapterTrackerFactory {

@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GetParametersPathBranch extends StObject {
   
+  /** Get a branch */
   var get: ParametersPathBranch
 }
 object GetParametersPathBranch {

@@ -21,6 +21,8 @@ object libSimpleLayoutFooterMod {
   @js.native
   val ^ : js.Any = js.native
   
+  type Email = typings.nginstackEngine.libEmailEmailMod.^
+  
   @js.native
   trait Footer extends StObject {
     
@@ -45,8 +47,6 @@ object libSimpleLayoutFooterMod {
     
     def writePlain(outputObj: Write, options: CalculatedWidth): Unit = js.native
   }
-  
-  type Mail = typings.nginstackEngine.libMailMailMod.^
   
   type SimpleLayout = typings.nginstackWebFramework.libSimpleLayoutSimpleLayoutMod.^
   

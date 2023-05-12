@@ -1,6 +1,6 @@
 package typings.wixDesignSystemsLocaleUtils
 
-import typings.wixDesignSystemsLocaleUtils.distTypesDateTimeFormatConstantsMod.SupportedWixLocales_
+import typings.wixDesignSystemsLocaleUtils.distTypesConstantsMod.SupportedWixLocales_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -284,6 +284,17 @@ object Vector2 {
   ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("PointInTriangle")(p.asInstanceOf[js.Any], p0.asInstanceOf[js.Any], p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
+    * Returns a new Vector2 with random values between min and max
+    * @param min the minimum random value
+    * @param max the maximum random value
+    * @returns a Vector2 with random values between min and max
+    */
+  inline def Random(): typings.babylonjs.BABYLON.Vector2 = ^.asInstanceOf[js.Dynamic].applyDynamic("Random")().asInstanceOf[typings.babylonjs.BABYLON.Vector2]
+  inline def Random(min: Double): typings.babylonjs.BABYLON.Vector2 = ^.asInstanceOf[js.Dynamic].applyDynamic("Random")(min.asInstanceOf[js.Any]).asInstanceOf[typings.babylonjs.BABYLON.Vector2]
+  inline def Random(min: Double, max: Double): typings.babylonjs.BABYLON.Vector2 = (^.asInstanceOf[js.Dynamic].applyDynamic("Random")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Vector2]
+  inline def Random(min: Unit, max: Double): typings.babylonjs.BABYLON.Vector2 = (^.asInstanceOf[js.Dynamic].applyDynamic("Random")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.BABYLON.Vector2]
+  
+  /**
     * Gets a new Vector2 set with the transformed coordinates of the given vector by the given transformation matrix
     * Example Playground https://playground.babylonjs.com/#QYBWV4#17
     * @param vector defines the vector to transform

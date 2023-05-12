@@ -28,8 +28,14 @@ object distTypesCommandsListAccountRolesCommandMod {
           Any, 
           Any
         ] {
+    /**
+      * @public
+      */
     def this(input: ListAccountRolesCommandInput) = this()
     
+    /**
+      * @internal
+      */
     /* private */ var deserialize: Any = js.native
     
     /**
@@ -45,6 +51,9 @@ object distTypesCommandsListAccountRolesCommandMod {
       options: HttpHandlerOptions
     ): Handler[ListAccountRolesCommandInput, ListAccountRolesCommandOutput] = js.native
     
+    /**
+      * @internal
+      */
     /* private */ var serialize: Any = js.native
   }
   /* static members */

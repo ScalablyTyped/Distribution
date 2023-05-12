@@ -50,6 +50,11 @@ trait DescribeDomainConfigurationResponse extends StObject {
     * The type of service delivered by the endpoint.
     */
   var serviceType: js.UndefOr[ServiceType] = js.undefined
+  
+  /**
+    * An object that specifies the TLS configuration for a domain.
+    */
+  var tlsConfig: js.UndefOr[TlsConfig] = js.undefined
 }
 object DescribeDomainConfigurationResponse {
   
@@ -98,5 +103,9 @@ object DescribeDomainConfigurationResponse {
     inline def setServiceType(value: ServiceType): Self = StObject.set(x, "serviceType", value.asInstanceOf[js.Any])
     
     inline def setServiceTypeUndefined: Self = StObject.set(x, "serviceType", js.undefined)
+    
+    inline def setTlsConfig(value: TlsConfig): Self = StObject.set(x, "tlsConfig", value.asInstanceOf[js.Any])
+    
+    inline def setTlsConfigUndefined: Self = StObject.set(x, "tlsConfig", js.undefined)
   }
 }

@@ -1,5 +1,8 @@
 package typings.std
 
+import typings.std.stdInts.`1`
+import typings.std.stdInts.`2`
+import typings.std.stdInts.`3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,13 +17,13 @@ trait MutationEvent
      with Event {
   
   /* standard dom */
-  val ADDITION: Double = js.native
+  val ADDITION: `2` = js.native
   
   /* standard dom */
-  val MODIFICATION: Double = js.native
+  val MODIFICATION: `1` = js.native
   
   /* standard dom */
-  val REMOVAL: Double = js.native
+  val REMOVAL: `3` = js.native
   
   /** @deprecated */
   /* standard dom */

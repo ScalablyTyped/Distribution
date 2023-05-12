@@ -18,6 +18,98 @@ object enterprise {
     */
   object platformKeys {
     
+    /**
+      * Type of key to generate.
+      */
+    /* Rewritten from type alias, can be one of: 
+      - typings.chromeApps.chromeAppsStrings.RSA
+      - typings.chromeApps.chromeAppsStrings.ECDSA
+    */
+    trait Algorithm extends StObject
+    object Algorithm {
+      
+      inline def ECDSA: typings.chromeApps.chromeAppsStrings.ECDSA = "ECDSA".asInstanceOf[typings.chromeApps.chromeAppsStrings.ECDSA]
+      
+      inline def RSA: typings.chromeApps.chromeAppsStrings.RSA = "RSA".asInstanceOf[typings.chromeApps.chromeAppsStrings.RSA]
+    }
+    
+    trait ChallengeKeyOptions extends StObject {
+      
+      /**
+        * A challenge as emitted by the Verified Access Web API.
+        */
+      var challenge: js.typedarray.ArrayBuffer
+      
+      /**
+        * If present, registers the challenged key with the specified
+        * scope's token. The key can then be associated with a certificate
+        * and used like any other signing key. Subsequent calls to this
+        * function will then generate a new Enterprise Key in the specified
+        * scope.
+        */
+      var registerKey: js.UndefOr[RegisterKeyOptions] = js.undefined
+      
+      /**
+        * Which Enterprise Key to challenge.
+        */
+      var scope: Scope
+    }
+    object ChallengeKeyOptions {
+      
+      inline def apply(challenge: js.typedarray.ArrayBuffer, scope: Scope): ChallengeKeyOptions = {
+        val __obj = js.Dynamic.literal(challenge = challenge.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any])
+        __obj.asInstanceOf[ChallengeKeyOptions]
+      }
+      
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ChallengeKeyOptions] (val x: Self) extends AnyVal {
+        
+        inline def setChallenge(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "challenge", value.asInstanceOf[js.Any])
+        
+        inline def setRegisterKey(value: RegisterKeyOptions): Self = StObject.set(x, "registerKey", value.asInstanceOf[js.Any])
+        
+        inline def setRegisterKeyUndefined: Self = StObject.set(x, "registerKey", js.undefined)
+        
+        inline def setScope(value: Scope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      }
+    }
+    
+    trait RegisterKeyOptions extends StObject {
+      
+      /**
+        * Which algorithm the registered key should use.
+        */
+      var algorithm: Algorithm
+    }
+    object RegisterKeyOptions {
+      
+      inline def apply(algorithm: Algorithm): RegisterKeyOptions = {
+        val __obj = js.Dynamic.literal(algorithm = algorithm.asInstanceOf[js.Any])
+        __obj.asInstanceOf[RegisterKeyOptions]
+      }
+      
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RegisterKeyOptions] (val x: Self) extends AnyVal {
+        
+        inline def setAlgorithm(value: Algorithm): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
+      }
+    }
+    
+    /**
+      * Whether to use the Enterprise User Key or the Enterprise Machine Key.
+      */
+    /* Rewritten from type alias, can be one of: 
+      - typings.chromeApps.chromeAppsStrings.MACHINE
+      - typings.chromeApps.chromeAppsStrings.USER
+    */
+    trait Scope extends StObject
+    object Scope {
+      
+      inline def MACHINE: typings.chromeApps.chromeAppsStrings.MACHINE = "MACHINE".asInstanceOf[typings.chromeApps.chromeAppsStrings.MACHINE]
+      
+      inline def USER: typings.chromeApps.chromeAppsStrings.USER = "USER".asInstanceOf[typings.chromeApps.chromeAppsStrings.USER]
+    }
+    
     trait Token extends StObject {
       
       /**

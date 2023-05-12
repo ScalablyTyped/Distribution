@@ -1,5 +1,6 @@
 package typings.devextreme.mod.DevExpress.viz
 
+import typings.devextreme.mod.DevExpress.common.charts.BaseLegend
 import typings.devextreme.mod.DevExpress.core.UserDefinedElement
 import typings.devextreme.mod.DevExpress.core.template
 import typings.std.SVGElement

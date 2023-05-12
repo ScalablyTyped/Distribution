@@ -1,5 +1,12 @@
 package typings.std
 
+import typings.std.stdInts.`0`
+import typings.std.stdInts.`1`
+import typings.std.stdInts.`2`
+import typings.std.stdInts.`3`
+import typings.std.stdInts.`4`
+import typings.std.stdInts.`5`
+import typings.std.stdInts.`6`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,25 +16,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SVGTransform extends StObject {
   
   /* standard dom */
-  val SVG_TRANSFORM_MATRIX: Double = js.native
+  val SVG_TRANSFORM_MATRIX: `1` = js.native
   
   /* standard dom */
-  val SVG_TRANSFORM_ROTATE: Double = js.native
+  val SVG_TRANSFORM_ROTATE: `4` = js.native
   
   /* standard dom */
-  val SVG_TRANSFORM_SCALE: Double = js.native
+  val SVG_TRANSFORM_SCALE: `3` = js.native
   
   /* standard dom */
-  val SVG_TRANSFORM_SKEWX: Double = js.native
+  val SVG_TRANSFORM_SKEWX: `5` = js.native
   
   /* standard dom */
-  val SVG_TRANSFORM_SKEWY: Double = js.native
+  val SVG_TRANSFORM_SKEWY: `6` = js.native
   
   /* standard dom */
-  val SVG_TRANSFORM_TRANSLATE: Double = js.native
+  val SVG_TRANSFORM_TRANSLATE: `2` = js.native
   
   /* standard dom */
-  val SVG_TRANSFORM_UNKNOWN: Double = js.native
+  val SVG_TRANSFORM_UNKNOWN: `0` = js.native
   
   /* standard dom */
   val angle: Double = js.native

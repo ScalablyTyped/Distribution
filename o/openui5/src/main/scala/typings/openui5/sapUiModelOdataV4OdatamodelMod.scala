@@ -1,9 +1,9 @@
 package typings.openui5
 
-import typings.openui5.anon.Aggregation
 import typings.openui5.anon.Apply
 import typings.openui5.anon.AutoExpandSelect
 import typings.openui5.anon.CanonicalPath
+import typings.openui5.anon.NoPatch
 import typings.openui5.anon.PatchWithoutSideEffects
 import typings.openui5.sap.ClassInfo
 import typings.std.Record
@@ -301,7 +301,7 @@ object sapUiModelOdataV4OdatamodelMod {
       * System Query Options"; OData V4 only allows $levels inside $expand.  All other query options lead
       * to an error. Query options specified for the binding overwrite model query options.
       */
-    mParameters: Aggregation
+    mParameters: Apply
     ): typings.openui5.sapUiModelOdataV4OdatalistbindingMod.default = js.native
     def bindList(
       /**
@@ -334,7 +334,7 @@ object sapUiModelOdataV4OdatamodelMod {
       * System Query Options"; OData V4 only allows $levels inside $expand.  All other query options lead
       * to an error. Query options specified for the binding overwrite model query options.
       */
-    mParameters: Aggregation
+    mParameters: Apply
     ): typings.openui5.sapUiModelOdataV4OdatalistbindingMod.default = js.native
     def bindList(
       /**
@@ -367,7 +367,7 @@ object sapUiModelOdataV4OdatamodelMod {
       * System Query Options"; OData V4 only allows $levels inside $expand.  All other query options lead
       * to an error. Query options specified for the binding overwrite model query options.
       */
-    mParameters: Aggregation
+    mParameters: Apply
     ): typings.openui5.sapUiModelOdataV4OdatalistbindingMod.default = js.native
     def bindList(
       /**
@@ -400,7 +400,7 @@ object sapUiModelOdataV4OdatamodelMod {
       * System Query Options"; OData V4 only allows $levels inside $expand.  All other query options lead
       * to an error. Query options specified for the binding overwrite model query options.
       */
-    mParameters: Aggregation
+    mParameters: Apply
     ): typings.openui5.sapUiModelOdataV4OdatalistbindingMod.default = js.native
     def bindList(
       /**
@@ -433,7 +433,7 @@ object sapUiModelOdataV4OdatamodelMod {
       * System Query Options"; OData V4 only allows $levels inside $expand.  All other query options lead
       * to an error. Query options specified for the binding overwrite model query options.
       */
-    mParameters: Aggregation
+    mParameters: Apply
     ): typings.openui5.sapUiModelOdataV4OdatalistbindingMod.default = js.native
     def bindList(
       /**
@@ -466,7 +466,7 @@ object sapUiModelOdataV4OdatamodelMod {
       * System Query Options"; OData V4 only allows $levels inside $expand.  All other query options lead
       * to an error. Query options specified for the binding overwrite model query options.
       */
-    mParameters: Aggregation
+    mParameters: Apply
     ): typings.openui5.sapUiModelOdataV4OdatalistbindingMod.default = js.native
     def bindList(
       /**
@@ -499,7 +499,7 @@ object sapUiModelOdataV4OdatamodelMod {
       * System Query Options"; OData V4 only allows $levels inside $expand.  All other query options lead
       * to an error. Query options specified for the binding overwrite model query options.
       */
-    mParameters: Aggregation
+    mParameters: Apply
     ): typings.openui5.sapUiModelOdataV4OdatalistbindingMod.default = js.native
     def bindList(
       /**
@@ -532,7 +532,7 @@ object sapUiModelOdataV4OdatamodelMod {
       * System Query Options"; OData V4 only allows $levels inside $expand.  All other query options lead
       * to an error. Query options specified for the binding overwrite model query options.
       */
-    mParameters: Aggregation
+    mParameters: Apply
     ): typings.openui5.sapUiModelOdataV4OdatalistbindingMod.default = js.native
     def bindList(
       /**
@@ -565,7 +565,7 @@ object sapUiModelOdataV4OdatamodelMod {
       * System Query Options"; OData V4 only allows $levels inside $expand.  All other query options lead
       * to an error. Query options specified for the binding overwrite model query options.
       */
-    mParameters: Aggregation
+    mParameters: Apply
     ): typings.openui5.sapUiModelOdataV4OdatalistbindingMod.default = js.native
     def bindList(
       /**
@@ -598,7 +598,7 @@ object sapUiModelOdataV4OdatamodelMod {
       * System Query Options"; OData V4 only allows $levels inside $expand.  All other query options lead
       * to an error. Query options specified for the binding overwrite model query options.
       */
-    mParameters: Aggregation
+    mParameters: Apply
     ): typings.openui5.sapUiModelOdataV4OdatalistbindingMod.default = js.native
     def bindList(
       /**
@@ -631,7 +631,7 @@ object sapUiModelOdataV4OdatamodelMod {
       * System Query Options"; OData V4 only allows $levels inside $expand.  All other query options lead
       * to an error. Query options specified for the binding overwrite model query options.
       */
-    mParameters: Aggregation
+    mParameters: Apply
     ): typings.openui5.sapUiModelOdataV4OdatalistbindingMod.default = js.native
     def bindList(
       /**
@@ -664,7 +664,7 @@ object sapUiModelOdataV4OdatamodelMod {
       * System Query Options"; OData V4 only allows $levels inside $expand.  All other query options lead
       * to an error. Query options specified for the binding overwrite model query options.
       */
-    mParameters: Aggregation
+    mParameters: Apply
     ): typings.openui5.sapUiModelOdataV4OdatalistbindingMod.default = js.native
     def bindList(
       /**
@@ -697,7 +697,7 @@ object sapUiModelOdataV4OdatamodelMod {
       * System Query Options"; OData V4 only allows $levels inside $expand.  All other query options lead
       * to an error. Query options specified for the binding overwrite model query options.
       */
-    mParameters: Aggregation
+    mParameters: Apply
     ): typings.openui5.sapUiModelOdataV4OdatalistbindingMod.default = js.native
     def bindList(
       /**
@@ -730,7 +730,7 @@ object sapUiModelOdataV4OdatamodelMod {
       * System Query Options"; OData V4 only allows $levels inside $expand.  All other query options lead
       * to an error. Query options specified for the binding overwrite model query options.
       */
-    mParameters: Aggregation
+    mParameters: Apply
     ): typings.openui5.sapUiModelOdataV4OdatalistbindingMod.default = js.native
     def bindList(
       /**
@@ -763,7 +763,7 @@ object sapUiModelOdataV4OdatamodelMod {
       * System Query Options"; OData V4 only allows $levels inside $expand.  All other query options lead
       * to an error. Query options specified for the binding overwrite model query options.
       */
-    mParameters: Aggregation
+    mParameters: Apply
     ): typings.openui5.sapUiModelOdataV4OdatalistbindingMod.default = js.native
     def bindList(
       /**
@@ -796,7 +796,7 @@ object sapUiModelOdataV4OdatamodelMod {
       * System Query Options"; OData V4 only allows $levels inside $expand.  All other query options lead
       * to an error. Query options specified for the binding overwrite model query options.
       */
-    mParameters: Aggregation
+    mParameters: Apply
     ): typings.openui5.sapUiModelOdataV4OdatalistbindingMod.default = js.native
     def bindList(
       /**
@@ -829,7 +829,7 @@ object sapUiModelOdataV4OdatamodelMod {
       * System Query Options"; OData V4 only allows $levels inside $expand.  All other query options lead
       * to an error. Query options specified for the binding overwrite model query options.
       */
-    mParameters: Aggregation
+    mParameters: Apply
     ): typings.openui5.sapUiModelOdataV4OdatalistbindingMod.default = js.native
     def bindList(
       /**
@@ -862,7 +862,7 @@ object sapUiModelOdataV4OdatamodelMod {
       * System Query Options"; OData V4 only allows $levels inside $expand.  All other query options lead
       * to an error. Query options specified for the binding overwrite model query options.
       */
-    mParameters: Aggregation
+    mParameters: Apply
     ): typings.openui5.sapUiModelOdataV4OdatalistbindingMod.default = js.native
     
     def bindProperty(
@@ -884,7 +884,7 @@ object sapUiModelOdataV4OdatamodelMod {
       * or if it is relative to a context created via {@link #createBindingContext}. The binding parameters are
       * ignored in case the binding creates no own data service request or in case the binding points to metadata.
       */
-    mParameters: Apply
+    mParameters: NoPatch
     ): typings.openui5.sapUiModelOdataV4OdatapropertybindingMod.default = js.native
     def bindProperty(
       /**
@@ -905,7 +905,7 @@ object sapUiModelOdataV4OdatamodelMod {
       * or if it is relative to a context created via {@link #createBindingContext}. The binding parameters are
       * ignored in case the binding creates no own data service request or in case the binding points to metadata.
       */
-    mParameters: Apply
+    mParameters: NoPatch
     ): typings.openui5.sapUiModelOdataV4OdatapropertybindingMod.default = js.native
     
     /**
@@ -1258,8 +1258,9 @@ object sapUiModelOdataV4OdatamodelMod {
       *
       * Returns `true` if there are pending changes, which can be updates, created entities (see {@link sap.ui.model.odata.v4.ODataListBinding#create})
       * or entity deletions (see {@link sap.ui.model.odata.v4.Context#delete}) that have not yet been successfully
-      * sent to the server. Since 1.98.0, {@link sap.ui.model.odata.v4.Context#isInactive inactive} contexts
-      * are ignored.
+      * sent to the server. Those changes can be either sent via {@link #submitBatch} or reset via {@link #resetChanges}.
+      * Since 1.98.0, {@link sap.ui.model.odata.v4.Context#isInactive inactive} contexts are ignored, even when
+      * their {@link sap.ui.model.odata.v4.ODataListBinding#event:createActivate activation} has been prevented.
       *
       * @returns `true` if there are pending changes
       */
@@ -1330,9 +1331,12 @@ object sapUiModelOdataV4OdatamodelMod {
       *
       * Resets all property changes, created entities, and entity deletions associated with the given group ID
       * which have not been successfully submitted via {@link #submitBatch}. Resets also invalid user input for
-      * the same group ID. This function does not reset the execution of OData operations (see {@link sap.ui.model.odata.v4.ODataContextBinding#execute}).
+      * the same group ID and (since 1.111.0) inactive contexts which had their activation prevented (see {@link
+      * sap.ui.model.odata.v4.Context#isInactive}). This function does not reset the execution of OData operations
+      * (see {@link sap.ui.model.odata.v4.ODataContextBinding#execute}).
       * See:
-      * 	sap.ui.model.odata.v4.ODataModel#constructor.
+      * 	sap.ui.model.odata.v4.ODataModel#constructor
+      * 	#hasPendingChanges
       */
     def resetChanges(): Unit = js.native
     def resetChanges(
@@ -1359,6 +1363,9 @@ object sapUiModelOdataV4OdatamodelMod {
       * sets. For group IDs with {@link sap.ui.model.odata.v4.SubmitMode.Auto}, only a single change set is used;
       * this method is useful to repeat failed updates or creates (see {@link sap.ui.model.odata.v4.ODataListBinding#create})
       * together with all other requests for the given group ID in one batch request.
+      *
+      * {@link #resetChanges} can be used to reset all pending changes instead. After that, or when the promise
+      * returned by this method is fulfilled, {@link #hasPendingChanges} will not report pending changes anymore.
       *
       * @returns A promise on the outcome of the HTTP request resolving with `undefined`; it is rejected with
       * an error if the batch request itself fails

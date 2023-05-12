@@ -11,7 +11,7 @@ object distSrcResolveMod {
   @js.native
   val createResolve: Factory[
     js.Function2[
-      /* path */ String, 
+      /* name */ String, 
       /* options */ js.UndefOr[
         (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_root.ResolveOptions */ Any) & typings.ipfsHttpClient.distSrcTypesMod.HTTPClientExtraOptions
       ], 

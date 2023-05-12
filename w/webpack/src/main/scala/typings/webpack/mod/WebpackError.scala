@@ -2,8 +2,6 @@ package typings.webpack.mod
 
 import typings.node.NodeJS.CallSite
 import typings.std.Error
-import typings.webpack.anon.Read
-import typings.webpack.anon.Write
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +18,7 @@ open class WebpackError ()
   
   var chunk: Chunk = js.native
   
-  def deserialize(__0: Read): Unit = js.native
+  def deserialize(__0: ObjectDeserializerContext): Unit = js.native
   
   var details: Any = js.native
   
@@ -40,7 +38,7 @@ open class WebpackError ()
   /* CompleteClass */
   var name: String = js.native
   
-  def serialize(__0: Write): Unit = js.native
+  def serialize(__0: ObjectSerializerContext): Unit = js.native
 }
 object WebpackError {
   

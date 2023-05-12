@@ -1,7 +1,7 @@
 
 # Scala.js typings for jose
 
-Typings are for version 4.11.0
+Typings are for version 4.14.4
 
 ## Library description:
 'JSON Web Almost Everything' - JWA, JWS, JWE, JWT, JWK, JWKS for Node.js, Browser, Cloudflare Workers, Deno, Bun, and other Web-interoperable runtimes

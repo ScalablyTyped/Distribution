@@ -6,35 +6,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CSSNumericType extends StObject {
   
-  var angle: Double
+  var angle: js.UndefOr[Double] = js.undefined
   
-  var flex: Double
+  var flex: js.UndefOr[Double] = js.undefined
   
-  var frequency: Double
+  var frequency: js.UndefOr[Double] = js.undefined
   
-  var length: Double
+  var length: js.UndefOr[Double] = js.undefined
   
-  var percent: Double
+  var percent: js.UndefOr[Double] = js.undefined
   
-  var percentHint: CSSNumericBaseType
+  var percentHint: js.UndefOr[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSSNumericBaseType */ Any
+  ] = js.undefined
   
-  var resolution: Double
+  var resolution: js.UndefOr[Double] = js.undefined
   
-  var time: Double
+  var time: js.UndefOr[Double] = js.undefined
 }
 object CSSNumericType {
   
-  inline def apply(
-    angle: Double,
-    flex: Double,
-    frequency: Double,
-    length: Double,
-    percent: Double,
-    percentHint: CSSNumericBaseType,
-    resolution: Double,
-    time: Double
-  ): CSSNumericType = {
-    val __obj = js.Dynamic.literal(angle = angle.asInstanceOf[js.Any], flex = flex.asInstanceOf[js.Any], frequency = frequency.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], percent = percent.asInstanceOf[js.Any], percentHint = percentHint.asInstanceOf[js.Any], resolution = resolution.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
+  inline def apply(): CSSNumericType = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CSSNumericType]
   }
   
@@ -43,18 +36,36 @@ object CSSNumericType {
     
     inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     
+    inline def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
+    
     inline def setFlex(value: Double): Self = StObject.set(x, "flex", value.asInstanceOf[js.Any])
+    
+    inline def setFlexUndefined: Self = StObject.set(x, "flex", js.undefined)
     
     inline def setFrequency(value: Double): Self = StObject.set(x, "frequency", value.asInstanceOf[js.Any])
     
+    inline def setFrequencyUndefined: Self = StObject.set(x, "frequency", js.undefined)
+    
     inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    
+    inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
     
     inline def setPercent(value: Double): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
     
-    inline def setPercentHint(value: CSSNumericBaseType): Self = StObject.set(x, "percentHint", value.asInstanceOf[js.Any])
+    inline def setPercentHint(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSSNumericBaseType */ Any
+    ): Self = StObject.set(x, "percentHint", value.asInstanceOf[js.Any])
+    
+    inline def setPercentHintUndefined: Self = StObject.set(x, "percentHint", js.undefined)
+    
+    inline def setPercentUndefined: Self = StObject.set(x, "percent", js.undefined)
     
     inline def setResolution(value: Double): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
     
+    inline def setResolutionUndefined: Self = StObject.set(x, "resolution", js.undefined)
+    
     inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+    
+    inline def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
   }
 }

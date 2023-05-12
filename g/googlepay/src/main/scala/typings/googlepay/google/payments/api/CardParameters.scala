@@ -116,6 +116,17 @@ trait CardParameters extends StObject {
     * parameters are needed to complete a transaction.
     */
   var cardNetworkParameters: js.UndefOr[js.Array[CardNetworkParameters]] = js.undefined
+  
+  /**
+    * You might require the card verification code (CVC) value of a card in order to process a transaction
+    * for various regulations, security requirements, or acquirers’ requirements. By default,
+    * the CVC isn't requested from the user in Google Pay during checkout since it's required and verified
+    * in the initial card acquisition. If you want CVC to be present in the payment token,
+    * communicate with your point of contact from Google to turn this feature on.
+    *
+    * @default false
+    */
+  var cvcRequired: js.UndefOr[Boolean] = js.undefined
 }
 object CardParameters {
   
@@ -160,5 +171,9 @@ object CardParameters {
     inline def setCardNetworkParametersUndefined: Self = StObject.set(x, "cardNetworkParameters", js.undefined)
     
     inline def setCardNetworkParametersVarargs(value: CardNetworkParameters*): Self = StObject.set(x, "cardNetworkParameters", js.Array(value*))
+    
+    inline def setCvcRequired(value: Boolean): Self = StObject.set(x, "cvcRequired", value.asInstanceOf[js.Any])
+    
+    inline def setCvcRequiredUndefined: Self = StObject.set(x, "cvcRequired", js.undefined)
   }
 }

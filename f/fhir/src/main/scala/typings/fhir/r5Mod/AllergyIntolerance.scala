@@ -1,12 +1,10 @@
 package typings.fhir.r5Mod
 
 import typings.fhir.fhirStrings.`unable-to-assess`
-import typings.fhir.fhirStrings.allergy
 import typings.fhir.fhirStrings.biologic
 import typings.fhir.fhirStrings.environment
 import typings.fhir.fhirStrings.food
 import typings.fhir.fhirStrings.high
-import typings.fhir.fhirStrings.intolerance
 import typings.fhir.fhirStrings.low
 import typings.fhir.fhirStrings.medication_
 import org.scalablytyped.runtime.StObject
@@ -30,13 +28,6 @@ trait AllergyIntolerance
   
   var _recordedDate: js.UndefOr[Element] = js.undefined
   
-  var _type: js.UndefOr[Element] = js.undefined
-  
-  /**
-    * The recorder takes responsibility for the content, but can reference the source from where they got it.
-    */
-  var asserter: js.UndefOr[Reference] = js.undefined
-  
   /**
     * This data element has been included because it is currently being captured in some clinical systems. This data can be derived from the substance where coding systems are used, and is effectively redundant in that situation.  When searching on category, consider the implications of AllergyIntolerance resources without a category.  For example, when searching on category = medication, medication allergies that don't have a category valued will not be returned.  Refer to [search](search.html) for more information on how to search category with a :missing modifier to get allergies that don't have a category.  Additionally, category should be used with caution because category can be subjective based on the sender.
     */
@@ -44,7 +35,7 @@ trait AllergyIntolerance
   
   /**
     * AllergyIntolerance.clinicalStatus should be present if verificationStatus is not entered-in-error and the AllergyIntolerance.code isn't negated (No Known Allergy, No Drug Allergy, No Food Allergy, No Latex Allergy).
-    * Refer to [discussion](extensibility.html#Special-Case) if clincalStatus is missing data.
+    * Refer to [discussion](extensibility.html#Special-Case) if clinicalStatus is missing data.
     * The data type is CodeableConcept because clinicalStatus has some clinical judgment involved, such that there might need to be more specificity than the required FHIR value set allows. For example, a SNOMED coding might allow for additional specificity.
     */
   var clinicalStatus: js.UndefOr[CodeableConcept] = js.undefined
@@ -82,29 +73,34 @@ trait AllergyIntolerance
   var note: js.UndefOr[js.Array[Annotation]] = js.undefined
   
   /**
-    * Estimated or actual date,  date-time, or age when allergy or intolerance was identified.
+    * Age is generally used when the patient reports an age at which the AllergyIntolerance was noted. Period is generally used to convey an imprecise onset that occurred within the time period.  Range is generally used to convey an imprecise age range (e.g. 4 to 6 years old).
     */
   var onsetAge: js.UndefOr[Age] = js.undefined
   
   /**
-    * Estimated or actual date,  date-time, or age when allergy or intolerance was identified.
+    * Age is generally used when the patient reports an age at which the AllergyIntolerance was noted. Period is generally used to convey an imprecise onset that occurred within the time period.  Range is generally used to convey an imprecise age range (e.g. 4 to 6 years old).
     */
   var onsetDateTime: js.UndefOr[String] = js.undefined
   
   /**
-    * Estimated or actual date,  date-time, or age when allergy or intolerance was identified.
+    * Age is generally used when the patient reports an age at which the AllergyIntolerance was noted. Period is generally used to convey an imprecise onset that occurred within the time period.  Range is generally used to convey an imprecise age range (e.g. 4 to 6 years old).
     */
   var onsetPeriod: js.UndefOr[Period] = js.undefined
   
   /**
-    * Estimated or actual date,  date-time, or age when allergy or intolerance was identified.
+    * Age is generally used when the patient reports an age at which the AllergyIntolerance was noted. Period is generally used to convey an imprecise onset that occurred within the time period.  Range is generally used to convey an imprecise age range (e.g. 4 to 6 years old).
     */
   var onsetRange: js.UndefOr[Range] = js.undefined
   
   /**
-    * Estimated or actual date,  date-time, or age when allergy or intolerance was identified.
+    * Age is generally used when the patient reports an age at which the AllergyIntolerance was noted. Period is generally used to convey an imprecise onset that occurred within the time period.  Range is generally used to convey an imprecise age range (e.g. 4 to 6 years old).
     */
   var onsetString: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Indicates who or what participated in the activities related to the allergy or intolerance and how they were involved.
+    */
+  var participant: js.UndefOr[js.Array[AllergyIntoleranceParticipant]] = js.undefined
   
   /**
     * The patient who has the allergy or intolerance.
@@ -117,14 +113,9 @@ trait AllergyIntolerance
   var reaction: js.UndefOr[js.Array[AllergyIntoleranceReaction]] = js.undefined
   
   /**
-    * The recordedDate represents when this particular AllergyIntolerance record was created in the system, which is often a system-generated date.
+    * When onset date is unknown, recordedDate can be used to establish if the allergy or intolerance was present on or before a given date.  If the recordedDate is known and provided by a sending system, it is preferred that the receiving system preserve that recordedDate value. If the recordedDate is not provided by the sending system, the receipt timestamp is sometimes used as the recordedDate.
     */
   var recordedDate: js.UndefOr[String] = js.undefined
-  
-  /**
-    * Individual who recorded the record and takes responsibility for its content.
-    */
-  var recorder: js.UndefOr[Reference] = js.undefined
   
   /** Resource Type Name (for serialization) */
   @JSName("resourceType")
@@ -133,7 +124,7 @@ trait AllergyIntolerance
   /**
     * Allergic (typically immune-mediated) reactions have been traditionally regarded as an indicator for potential escalation to significant future risk. Contemporary knowledge suggests that some reactions previously thought to be immune-mediated are, in fact, non-immune, but in some cases can still pose a life threatening risk. It is acknowledged that many clinicians might not be in a position to distinguish the mechanism of a particular reaction. Often the term "allergy" is used rather generically and may overlap with the use of "intolerance" - in practice the boundaries between these two concepts might not be well-defined or understood. This data element is included nevertheless, because many legacy systems have captured this attribute. Immunologic testing may provide supporting evidence for the basis of the reaction and the causative substance, but no tests are 100% sensitive or specific for sensitivity to a particular substance. If, as is commonly the case, it is unclear whether the reaction is due to an allergy or an intolerance, then the type element should be omitted from the resource.
     */
-  var `type`: js.UndefOr[allergy | intolerance] = js.undefined
+  var `type`: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * The data type is CodeableConcept because verificationStatus has some clinical judgment involved, such that there might need to be more specificity than the required FHIR value set allows. For example, a SNOMED coding might allow for additional specificity.
@@ -149,10 +140,6 @@ object AllergyIntolerance {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: AllergyIntolerance] (val x: Self) extends AnyVal {
-    
-    inline def setAsserter(value: Reference): Self = StObject.set(x, "asserter", value.asInstanceOf[js.Any])
-    
-    inline def setAsserterUndefined: Self = StObject.set(x, "asserter", js.undefined)
     
     inline def setCategory(value: js.Array[food | medication_ | environment | biologic]): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
@@ -212,6 +199,12 @@ object AllergyIntolerance {
     
     inline def setOnsetStringUndefined: Self = StObject.set(x, "onsetString", js.undefined)
     
+    inline def setParticipant(value: js.Array[AllergyIntoleranceParticipant]): Self = StObject.set(x, "participant", value.asInstanceOf[js.Any])
+    
+    inline def setParticipantUndefined: Self = StObject.set(x, "participant", js.undefined)
+    
+    inline def setParticipantVarargs(value: AllergyIntoleranceParticipant*): Self = StObject.set(x, "participant", js.Array(value*))
+    
     inline def setPatient(value: Reference): Self = StObject.set(x, "patient", value.asInstanceOf[js.Any])
     
     inline def setReaction(value: js.Array[AllergyIntoleranceReaction]): Self = StObject.set(x, "reaction", value.asInstanceOf[js.Any])
@@ -224,13 +217,9 @@ object AllergyIntolerance {
     
     inline def setRecordedDateUndefined: Self = StObject.set(x, "recordedDate", js.undefined)
     
-    inline def setRecorder(value: Reference): Self = StObject.set(x, "recorder", value.asInstanceOf[js.Any])
-    
-    inline def setRecorderUndefined: Self = StObject.set(x, "recorder", js.undefined)
-    
     inline def setResourceType(value: typings.fhir.fhirStrings.AllergyIntolerance): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
-    inline def setType(value: allergy | intolerance): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: CodeableConcept): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
@@ -263,9 +252,5 @@ object AllergyIntolerance {
     inline def set_recordedDate(value: Element): Self = StObject.set(x, "_recordedDate", value.asInstanceOf[js.Any])
     
     inline def set_recordedDateUndefined: Self = StObject.set(x, "_recordedDate", js.undefined)
-    
-    inline def set_type(value: Element): Self = StObject.set(x, "_type", value.asInstanceOf[js.Any])
-    
-    inline def set_typeUndefined: Self = StObject.set(x, "_type", js.undefined)
   }
 }

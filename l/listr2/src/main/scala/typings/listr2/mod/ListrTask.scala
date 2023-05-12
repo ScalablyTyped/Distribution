@@ -1,83 +1,103 @@
 package typings.listr2.mod
 
+import typings.listr2.anon.Delay
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * ListrTask.
+  * Defines the task, conditions and options to run a specific task in the Listr.
+  * This defines the external API for the task where {@link TaskWrapper} is used internally.
   *
-  * Defines the task, conditions and options to run a specific task in the listr.
+  * @see {@link https://listr2.kilic.dev/task/task.html}
   */
 trait ListrTask[Ctx, Renderer /* <: ListrRendererFactory */] extends StObject {
   
   /**
     * Enable a task depending on the context.
     *
-    * The function that has been passed in will be evaluated at the initial creation of the Listr class for rendering purposes,
-    * as well as re-evaluated when the time for that specific task has come.
+    * - The callback function will be evaluated before all the tasks start to check which tasks has been enabled.
+    * - The callback function will be evaluated again before the task starts.
+    *
+    * @see {@link https://listr2.kilic.dev/task/enable.html}
     */
   var enabled: js.UndefOr[Boolean | (js.Function1[/* ctx */ Ctx, Boolean | js.Promise[Boolean]])] = js.undefined
   
   /**
-    * Set exit on the error option from task-level instead of setting it for all the subtasks.
+    * Determine the default behavior of exiting on errors for this attached task.
     */
   var exitOnError: js.UndefOr[Boolean | (js.Function1[/* ctx */ Ctx, Boolean | js.Promise[Boolean]])] = js.undefined
   
   /**
-    * Per task options, that depends on the selected renderer.
+    * Per-task options, that depends on the selected renderer.
     *
-    * These options depend on the implementation of the selected renderer. If the selected renderer has no options it will
-    * be displayed as never.
+    * - Options of the current preferred renderer can be changed on task level.
+    * - These options depend on the implementation of the preferred renderer.
+    * - Whenever the preferred renderer has no options it will be displayed as never.
+    *
+    * **This option will be deprecated in a future major release in favor of having options for both the default and the fallback renderer.**
     */
   var options: js.UndefOr[ListrGetRendererTaskOptions[Renderer]] = js.undefined
   
   /**
-    * Adds the given number of retry attempts to the task if the task fails.
+    * Retries a task with the given amounts whenever a task fails.
+    *
+    * @see {@link https://listr2.kilic.dev/task/retry.html}
     */
-  var retry: js.UndefOr[Double] = js.undefined
+  var retry: js.UndefOr[Double | Delay] = js.undefined
   
   /**
-    * Runs a specific event if the current task or any of the subtasks has failed.
+    * The callback function that you provide will run whenever the attached task fails and
+    * give you the ability to revert your changes, before failing.
     *
-    * Mostly useful for rollback purposes for subtasks.
-    * But can also be useful whenever a task is failed and some measures have to be taken to ensure the state is not changed.
+    * @see {@link https://listr2.kilic.dev/task/rollback.html}
     */
-  var rollback: js.UndefOr[
-    js.Function2[/* ctx */ Ctx, /* task */ TaskWrapper[Ctx, Renderer], Unit | ListrTaskResult[Ctx]]
-  ] = js.undefined
+  var rollback: js.UndefOr[ListrTaskFn[Ctx, Renderer]] = js.undefined
   
   /**
     * Skip this task depending on the context.
     *
-    * The function that has been passed in will be evaluated at the runtime when the task tries to initially run.
+    * - The callback function will be evaluated once before the task starts.
+    *
+    * @see {@link https://listr2.kilic.dev/task/skip.html}
     */
   var skip: js.UndefOr[
     Boolean | String | (js.Function1[/* ctx */ Ctx, Boolean | String | (js.Promise[Boolean | String])])
   ] = js.undefined
   
   /**
-    * The task itself.
+    * The task itself in the form of a `Function`, `Promise`, `Listr`, `Observable` or `Stream`.
     *
-    * Task can be a sync or async function, an Observable, or a Stream.
-    * Task will be executed, if the certain criteria of the state are met and whenever the time for that specific task has come.
+    * - Task will be executed, whenever the provided criterion is met with the current state and whenever the time for that specific task has come.
+    *
+    * @see {@link https://listr2.kilic.dev/task/task.html}
     */
   def task(ctx: Ctx, task: TaskWrapper[Ctx, Renderer]): Unit | ListrTaskResult[Ctx]
+  /**
+    * The task itself in the form of a `Function`, `Promise`, `Listr`, `Observable` or `Stream`.
+    *
+    * - Task will be executed, whenever the provided criterion is met with the current state and whenever the time for that specific task has come.
+    *
+    * @see {@link https://listr2.kilic.dev/task/task.html}
+    */
+  @JSName("task")
+  var task_Original: ListrTaskFn[Ctx, Renderer]
   
   /**
     * Title of the task.
     *
-    * Give this task a title if you want to track it by name in the current renderer.
+    * Give this task a title to enchance it on the preferred renderer.
     *
-    * Tasks without a title will hide in the default renderer and are useful for running a background instance.
-    * On verbose renderer, state changes from these tasks will log as 'Task without a title.'
+    * - Tasks without a title will be hidden from view in renderers and will act as a background task.
+    *
+    * @see {@link https://listr2.kilic.dev/task/title.html}
     */
-  var title: js.UndefOr[String] = js.undefined
+  var title: js.UndefOr[String | js.Array[Any]] = js.undefined
 }
 object ListrTask {
   
-  inline def apply[Ctx, Renderer /* <: ListrRendererFactory */](task: (Ctx, TaskWrapper[Ctx, Renderer]) => Unit | ListrTaskResult[Ctx]): ListrTask[Ctx, Renderer] = {
-    val __obj = js.Dynamic.literal(task = js.Any.fromFunction2(task))
+  inline def apply[Ctx, Renderer /* <: ListrRendererFactory */](task: ListrTaskFn[Ctx, Renderer]): ListrTask[Ctx, Renderer] = {
+    val __obj = js.Dynamic.literal(task = task.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListrTask[Ctx, Renderer]]
   }
   
@@ -100,11 +120,11 @@ object ListrTask {
     
     inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    inline def setRetry(value: Double): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])
+    inline def setRetry(value: Double | Delay): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])
     
     inline def setRetryUndefined: Self = StObject.set(x, "retry", js.undefined)
     
-    inline def setRollback(value: (/* ctx */ Ctx, /* task */ TaskWrapper[Ctx, Renderer]) => Unit | ListrTaskResult[Ctx]): Self = StObject.set(x, "rollback", js.Any.fromFunction2(value))
+    inline def setRollback(value: ListrTaskFn[Ctx, Renderer]): Self = StObject.set(x, "rollback", value.asInstanceOf[js.Any])
     
     inline def setRollbackUndefined: Self = StObject.set(x, "rollback", js.undefined)
     
@@ -116,10 +136,12 @@ object ListrTask {
     
     inline def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
     
-    inline def setTask(value: (Ctx, TaskWrapper[Ctx, Renderer]) => Unit | ListrTaskResult[Ctx]): Self = StObject.set(x, "task", js.Any.fromFunction2(value))
+    inline def setTask(value: ListrTaskFn[Ctx, Renderer]): Self = StObject.set(x, "task", value.asInstanceOf[js.Any])
     
-    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String | js.Array[Any]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    
+    inline def setTitleVarargs(value: Any*): Self = StObject.set(x, "title", js.Array(value*))
   }
 }

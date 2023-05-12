@@ -78,13 +78,12 @@ object distComponentsProgressBarMod {
     /**
       * Optional type : info, success ...
       */
-    var `type`: TypeOptions
+    var `type`: js.UndefOr[TypeOptions] = js.undefined
   }
   object ProgressBarProps {
     
-    inline def apply(closeToast: () => Unit, delay: Double, isRunning: Boolean, theme: Theme, `type`: TypeOptions): ProgressBarProps = {
+    inline def apply(closeToast: () => Unit, delay: Double, isRunning: Boolean, theme: Theme): ProgressBarProps = {
       val __obj = js.Dynamic.literal(closeToast = js.Any.fromFunction0(closeToast), delay = delay.asInstanceOf[js.Any], isRunning = isRunning.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ProgressBarProps]
     }
     
@@ -130,6 +129,8 @@ object distComponentsProgressBarMod {
       inline def setTheme(value: Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
       inline def setType(value: TypeOptions): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
 }

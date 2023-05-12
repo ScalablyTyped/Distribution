@@ -47,7 +47,7 @@ object srcMathEulerMod {
     var iterator: js.Function0[Generator[String | Double, Unit, Any]] = js.native
     
     /**
-      * @default THREE.Euler.DefaultOrder
+      * @default THREE.Euler.DEFAULT_ORDER
       */
     var order: EulerOrder = js.native
     
@@ -96,15 +96,10 @@ object srcMathEulerMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("three/src/math/Euler", "Euler.DefaultOrder")
+    @JSImport("three/src/math/Euler", "Euler.DEFAULT_ORDER")
     @js.native
-    def DefaultOrder: XYZ = js.native
-    inline def DefaultOrder_=(x: XYZ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultOrder")(x.asInstanceOf[js.Any])
-    
-    @JSImport("three/src/math/Euler", "Euler.RotationOrders")
-    @js.native
-    def RotationOrders: js.Array[EulerOrder] = js.native
-    inline def RotationOrders_=(x: js.Array[EulerOrder]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RotationOrders")(x.asInstanceOf[js.Any])
+    def DEFAULT_ORDER: XYZ = js.native
+    inline def DEFAULT_ORDER_=(x: XYZ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_ORDER")(x.asInstanceOf[js.Any])
   }
   
   /* Rewritten from type alias, can be one of: 

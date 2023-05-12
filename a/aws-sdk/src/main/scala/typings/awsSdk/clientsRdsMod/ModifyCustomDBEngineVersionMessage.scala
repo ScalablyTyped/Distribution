@@ -12,7 +12,7 @@ trait ModifyCustomDBEngineVersionMessage extends StObject {
   var Description: js.UndefOr[typings.awsSdk.clientsRdsMod.Description] = js.undefined
   
   /**
-    * The DB engine. The only supported value is custom-oracle-ee.
+    * The DB engine. The only supported values are custom-oracle-ee and custom-oracle-ee-cdb.
     */
   var Engine: CustomEngineName
   

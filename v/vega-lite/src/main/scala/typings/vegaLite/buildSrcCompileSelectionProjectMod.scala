@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.Shortcut
 import typings.std.Partial
 import typings.std.Record
 import typings.vegaLite.anon.Visual
+import typings.vegaLite.buildSrcChannelMod.GeoPositionChannel
 import typings.vegaLite.buildSrcChannelMod.SingleDefUnitChannel
 import typings.vegaLite.buildSrcCompileDataTimeunitMod.TimeUnitNode
 import typings.vegaLite.buildSrcCompileSelectionMod.SelectionCompiler
@@ -44,7 +45,11 @@ object buildSrcCompileSelectionProjectMod extends Shortcut {
     
     var field: String
     
+    var geoChannel: js.UndefOr[GeoPositionChannel] = js.undefined
+    
     var hasLegend: js.UndefOr[Boolean] = js.undefined
+    
+    var index: Double
     
     var signals: js.UndefOr[Visual] = js.undefined
     
@@ -52,8 +57,8 @@ object buildSrcCompileSelectionProjectMod extends Shortcut {
   }
   object SelectionProjection {
     
-    inline def apply(field: String, `type`: TupleStoreType): SelectionProjection = {
-      val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any])
+    inline def apply(field: String, index: Double, `type`: TupleStoreType): SelectionProjection = {
+      val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[SelectionProjection]
     }
@@ -67,9 +72,15 @@ object buildSrcCompileSelectionProjectMod extends Shortcut {
       
       inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
       
+      inline def setGeoChannel(value: GeoPositionChannel): Self = StObject.set(x, "geoChannel", value.asInstanceOf[js.Any])
+      
+      inline def setGeoChannelUndefined: Self = StObject.set(x, "geoChannel", js.undefined)
+      
       inline def setHasLegend(value: Boolean): Self = StObject.set(x, "hasLegend", value.asInstanceOf[js.Any])
       
       inline def setHasLegendUndefined: Self = StObject.set(x, "hasLegend", js.undefined)
+      
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
       inline def setSignals(value: Visual): Self = StObject.set(x, "signals", value.asInstanceOf[js.Any])
       

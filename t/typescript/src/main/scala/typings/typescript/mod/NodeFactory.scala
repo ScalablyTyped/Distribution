@@ -304,393 +304,6 @@ trait NodeFactory extends StObject {
   def createCatchClause(variableDeclaration: BindingName, block: Block): CatchClause = js.native
   def createCatchClause(variableDeclaration: VariableDeclaration, block: Block): CatchClause = js.native
   
-  /**
-    * @deprecated Decorators have been combined with modifiers. Callers should use an overload that does not accept a `decorators` parameter.
-    */
-  def createClassDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: java.lang.String,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[ClassElement]
-  ): ClassDeclaration = js.native
-  def createClassDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: java.lang.String,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: Unit,
-    members: js.Array[ClassElement]
-  ): ClassDeclaration = js.native
-  def createClassDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: java.lang.String,
-    typeParameters: Unit,
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[ClassElement]
-  ): ClassDeclaration = js.native
-  def createClassDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: java.lang.String,
-    typeParameters: Unit,
-    heritageClauses: Unit,
-    members: js.Array[ClassElement]
-  ): ClassDeclaration = js.native
-  def createClassDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: Unit,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[ClassElement]
-  ): ClassDeclaration = js.native
-  def createClassDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: Unit,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: Unit,
-    members: js.Array[ClassElement]
-  ): ClassDeclaration = js.native
-  def createClassDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: Unit,
-    typeParameters: Unit,
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[ClassElement]
-  ): ClassDeclaration = js.native
-  def createClassDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: Unit,
-    typeParameters: Unit,
-    heritageClauses: Unit,
-    members: js.Array[ClassElement]
-  ): ClassDeclaration = js.native
-  def createClassDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: Identifier,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[ClassElement]
-  ): ClassDeclaration = js.native
-  def createClassDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: Identifier,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: Unit,
-    members: js.Array[ClassElement]
-  ): ClassDeclaration = js.native
-  def createClassDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: Identifier,
-    typeParameters: Unit,
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[ClassElement]
-  ): ClassDeclaration = js.native
-  def createClassDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: Identifier,
-    typeParameters: Unit,
-    heritageClauses: Unit,
-    members: js.Array[ClassElement]
-  ): ClassDeclaration = js.native
-  def createClassDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    name: java.lang.String,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[ClassElement]
-  ): ClassDeclaration = js.native
-  def createClassDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    name: java.lang.String,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: Unit,
-    members: js.Array[ClassElement]
-  ): ClassDeclaration = js.native
-  def createClassDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    name: java.lang.String,
-    typeParameters: Unit,
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[ClassElement]
-  ): ClassDeclaration = js.native
-  def createClassDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    name: java.lang.String,
-    typeParameters: Unit,
-    heritageClauses: Unit,
-    members: js.Array[ClassElement]
-  ): ClassDeclaration = js.native
-  def createClassDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    name: Unit,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[ClassElement]
-  ): ClassDeclaration = js.native
-  def createClassDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    name: Unit,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: Unit,
-    members: js.Array[ClassElement]
-  ): ClassDeclaration = js.native
-  def createClassDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    name: Unit,
-    typeParameters: Unit,
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[ClassElement]
-  ): ClassDeclaration = js.native
-  def createClassDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    name: Unit,
-    typeParameters: Unit,
-    heritageClauses: Unit,
-    members: js.Array[ClassElement]
-  ): ClassDeclaration = js.native
-  def createClassDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    name: Identifier,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[ClassElement]
-  ): ClassDeclaration = js.native
-  def createClassDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    name: Identifier,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: Unit,
-    members: js.Array[ClassElement]
-  ): ClassDeclaration = js.native
-  def createClassDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    name: Identifier,
-    typeParameters: Unit,
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[ClassElement]
-  ): ClassDeclaration = js.native
-  def createClassDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    name: Identifier,
-    typeParameters: Unit,
-    heritageClauses: Unit,
-    members: js.Array[ClassElement]
-  ): ClassDeclaration = js.native
-  def createClassDeclaration(
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    name: java.lang.String,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[ClassElement]
-  ): ClassDeclaration = js.native
-  def createClassDeclaration(
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    name: java.lang.String,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: Unit,
-    members: js.Array[ClassElement]
-  ): ClassDeclaration = js.native
-  def createClassDeclaration(
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    name: java.lang.String,
-    typeParameters: Unit,
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[ClassElement]
-  ): ClassDeclaration = js.native
-  def createClassDeclaration(
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    name: java.lang.String,
-    typeParameters: Unit,
-    heritageClauses: Unit,
-    members: js.Array[ClassElement]
-  ): ClassDeclaration = js.native
-  def createClassDeclaration(
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    name: Unit,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[ClassElement]
-  ): ClassDeclaration = js.native
-  def createClassDeclaration(
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    name: Unit,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: Unit,
-    members: js.Array[ClassElement]
-  ): ClassDeclaration = js.native
-  def createClassDeclaration(
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    name: Unit,
-    typeParameters: Unit,
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[ClassElement]
-  ): ClassDeclaration = js.native
-  def createClassDeclaration(
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    name: Unit,
-    typeParameters: Unit,
-    heritageClauses: Unit,
-    members: js.Array[ClassElement]
-  ): ClassDeclaration = js.native
-  def createClassDeclaration(
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    name: Identifier,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[ClassElement]
-  ): ClassDeclaration = js.native
-  def createClassDeclaration(
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    name: Identifier,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: Unit,
-    members: js.Array[ClassElement]
-  ): ClassDeclaration = js.native
-  def createClassDeclaration(
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    name: Identifier,
-    typeParameters: Unit,
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[ClassElement]
-  ): ClassDeclaration = js.native
-  def createClassDeclaration(
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    name: Identifier,
-    typeParameters: Unit,
-    heritageClauses: Unit,
-    members: js.Array[ClassElement]
-  ): ClassDeclaration = js.native
-  def createClassDeclaration(
-    decorators: Unit,
-    modifiers: Unit,
-    name: java.lang.String,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[ClassElement]
-  ): ClassDeclaration = js.native
-  def createClassDeclaration(
-    decorators: Unit,
-    modifiers: Unit,
-    name: java.lang.String,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: Unit,
-    members: js.Array[ClassElement]
-  ): ClassDeclaration = js.native
-  def createClassDeclaration(
-    decorators: Unit,
-    modifiers: Unit,
-    name: java.lang.String,
-    typeParameters: Unit,
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[ClassElement]
-  ): ClassDeclaration = js.native
-  def createClassDeclaration(
-    decorators: Unit,
-    modifiers: Unit,
-    name: java.lang.String,
-    typeParameters: Unit,
-    heritageClauses: Unit,
-    members: js.Array[ClassElement]
-  ): ClassDeclaration = js.native
-  def createClassDeclaration(
-    decorators: Unit,
-    modifiers: Unit,
-    name: Unit,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[ClassElement]
-  ): ClassDeclaration = js.native
-  def createClassDeclaration(
-    decorators: Unit,
-    modifiers: Unit,
-    name: Unit,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: Unit,
-    members: js.Array[ClassElement]
-  ): ClassDeclaration = js.native
-  def createClassDeclaration(
-    decorators: Unit,
-    modifiers: Unit,
-    name: Unit,
-    typeParameters: Unit,
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[ClassElement]
-  ): ClassDeclaration = js.native
-  def createClassDeclaration(
-    decorators: Unit,
-    modifiers: Unit,
-    name: Unit,
-    typeParameters: Unit,
-    heritageClauses: Unit,
-    members: js.Array[ClassElement]
-  ): ClassDeclaration = js.native
-  def createClassDeclaration(
-    decorators: Unit,
-    modifiers: Unit,
-    name: Identifier,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[ClassElement]
-  ): ClassDeclaration = js.native
-  def createClassDeclaration(
-    decorators: Unit,
-    modifiers: Unit,
-    name: Identifier,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: Unit,
-    members: js.Array[ClassElement]
-  ): ClassDeclaration = js.native
-  def createClassDeclaration(
-    decorators: Unit,
-    modifiers: Unit,
-    name: Identifier,
-    typeParameters: Unit,
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[ClassElement]
-  ): ClassDeclaration = js.native
-  def createClassDeclaration(
-    decorators: Unit,
-    modifiers: Unit,
-    name: Identifier,
-    typeParameters: Unit,
-    heritageClauses: Unit,
-    members: js.Array[ClassElement]
-  ): ClassDeclaration = js.native
   def createClassDeclaration(
     modifiers: js.Array[ModifierLike],
     name: java.lang.String,
@@ -860,393 +473,6 @@ trait NodeFactory extends StObject {
     members: js.Array[ClassElement]
   ): ClassDeclaration = js.native
   
-  /**
-    * @deprecated Decorators have been combined with modifiers. Callers should use an overload that does not accept a `decorators` parameter.
-    */
-  def createClassExpression(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: java.lang.String,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[ClassElement]
-  ): ClassExpression = js.native
-  def createClassExpression(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: java.lang.String,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: Unit,
-    members: js.Array[ClassElement]
-  ): ClassExpression = js.native
-  def createClassExpression(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: java.lang.String,
-    typeParameters: Unit,
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[ClassElement]
-  ): ClassExpression = js.native
-  def createClassExpression(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: java.lang.String,
-    typeParameters: Unit,
-    heritageClauses: Unit,
-    members: js.Array[ClassElement]
-  ): ClassExpression = js.native
-  def createClassExpression(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: Unit,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[ClassElement]
-  ): ClassExpression = js.native
-  def createClassExpression(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: Unit,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: Unit,
-    members: js.Array[ClassElement]
-  ): ClassExpression = js.native
-  def createClassExpression(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: Unit,
-    typeParameters: Unit,
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[ClassElement]
-  ): ClassExpression = js.native
-  def createClassExpression(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: Unit,
-    typeParameters: Unit,
-    heritageClauses: Unit,
-    members: js.Array[ClassElement]
-  ): ClassExpression = js.native
-  def createClassExpression(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: Identifier,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[ClassElement]
-  ): ClassExpression = js.native
-  def createClassExpression(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: Identifier,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: Unit,
-    members: js.Array[ClassElement]
-  ): ClassExpression = js.native
-  def createClassExpression(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: Identifier,
-    typeParameters: Unit,
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[ClassElement]
-  ): ClassExpression = js.native
-  def createClassExpression(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: Identifier,
-    typeParameters: Unit,
-    heritageClauses: Unit,
-    members: js.Array[ClassElement]
-  ): ClassExpression = js.native
-  def createClassExpression(
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    name: java.lang.String,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[ClassElement]
-  ): ClassExpression = js.native
-  def createClassExpression(
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    name: java.lang.String,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: Unit,
-    members: js.Array[ClassElement]
-  ): ClassExpression = js.native
-  def createClassExpression(
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    name: java.lang.String,
-    typeParameters: Unit,
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[ClassElement]
-  ): ClassExpression = js.native
-  def createClassExpression(
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    name: java.lang.String,
-    typeParameters: Unit,
-    heritageClauses: Unit,
-    members: js.Array[ClassElement]
-  ): ClassExpression = js.native
-  def createClassExpression(
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    name: Unit,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[ClassElement]
-  ): ClassExpression = js.native
-  def createClassExpression(
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    name: Unit,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: Unit,
-    members: js.Array[ClassElement]
-  ): ClassExpression = js.native
-  def createClassExpression(
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    name: Unit,
-    typeParameters: Unit,
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[ClassElement]
-  ): ClassExpression = js.native
-  def createClassExpression(
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    name: Unit,
-    typeParameters: Unit,
-    heritageClauses: Unit,
-    members: js.Array[ClassElement]
-  ): ClassExpression = js.native
-  def createClassExpression(
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    name: Identifier,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[ClassElement]
-  ): ClassExpression = js.native
-  def createClassExpression(
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    name: Identifier,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: Unit,
-    members: js.Array[ClassElement]
-  ): ClassExpression = js.native
-  def createClassExpression(
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    name: Identifier,
-    typeParameters: Unit,
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[ClassElement]
-  ): ClassExpression = js.native
-  def createClassExpression(
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    name: Identifier,
-    typeParameters: Unit,
-    heritageClauses: Unit,
-    members: js.Array[ClassElement]
-  ): ClassExpression = js.native
-  def createClassExpression(
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    name: java.lang.String,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[ClassElement]
-  ): ClassExpression = js.native
-  def createClassExpression(
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    name: java.lang.String,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: Unit,
-    members: js.Array[ClassElement]
-  ): ClassExpression = js.native
-  def createClassExpression(
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    name: java.lang.String,
-    typeParameters: Unit,
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[ClassElement]
-  ): ClassExpression = js.native
-  def createClassExpression(
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    name: java.lang.String,
-    typeParameters: Unit,
-    heritageClauses: Unit,
-    members: js.Array[ClassElement]
-  ): ClassExpression = js.native
-  def createClassExpression(
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    name: Unit,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[ClassElement]
-  ): ClassExpression = js.native
-  def createClassExpression(
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    name: Unit,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: Unit,
-    members: js.Array[ClassElement]
-  ): ClassExpression = js.native
-  def createClassExpression(
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    name: Unit,
-    typeParameters: Unit,
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[ClassElement]
-  ): ClassExpression = js.native
-  def createClassExpression(
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    name: Unit,
-    typeParameters: Unit,
-    heritageClauses: Unit,
-    members: js.Array[ClassElement]
-  ): ClassExpression = js.native
-  def createClassExpression(
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    name: Identifier,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[ClassElement]
-  ): ClassExpression = js.native
-  def createClassExpression(
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    name: Identifier,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: Unit,
-    members: js.Array[ClassElement]
-  ): ClassExpression = js.native
-  def createClassExpression(
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    name: Identifier,
-    typeParameters: Unit,
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[ClassElement]
-  ): ClassExpression = js.native
-  def createClassExpression(
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    name: Identifier,
-    typeParameters: Unit,
-    heritageClauses: Unit,
-    members: js.Array[ClassElement]
-  ): ClassExpression = js.native
-  def createClassExpression(
-    decorators: Unit,
-    modifiers: Unit,
-    name: java.lang.String,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[ClassElement]
-  ): ClassExpression = js.native
-  def createClassExpression(
-    decorators: Unit,
-    modifiers: Unit,
-    name: java.lang.String,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: Unit,
-    members: js.Array[ClassElement]
-  ): ClassExpression = js.native
-  def createClassExpression(
-    decorators: Unit,
-    modifiers: Unit,
-    name: java.lang.String,
-    typeParameters: Unit,
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[ClassElement]
-  ): ClassExpression = js.native
-  def createClassExpression(
-    decorators: Unit,
-    modifiers: Unit,
-    name: java.lang.String,
-    typeParameters: Unit,
-    heritageClauses: Unit,
-    members: js.Array[ClassElement]
-  ): ClassExpression = js.native
-  def createClassExpression(
-    decorators: Unit,
-    modifiers: Unit,
-    name: Unit,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[ClassElement]
-  ): ClassExpression = js.native
-  def createClassExpression(
-    decorators: Unit,
-    modifiers: Unit,
-    name: Unit,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: Unit,
-    members: js.Array[ClassElement]
-  ): ClassExpression = js.native
-  def createClassExpression(
-    decorators: Unit,
-    modifiers: Unit,
-    name: Unit,
-    typeParameters: Unit,
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[ClassElement]
-  ): ClassExpression = js.native
-  def createClassExpression(
-    decorators: Unit,
-    modifiers: Unit,
-    name: Unit,
-    typeParameters: Unit,
-    heritageClauses: Unit,
-    members: js.Array[ClassElement]
-  ): ClassExpression = js.native
-  def createClassExpression(
-    decorators: Unit,
-    modifiers: Unit,
-    name: Identifier,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[ClassElement]
-  ): ClassExpression = js.native
-  def createClassExpression(
-    decorators: Unit,
-    modifiers: Unit,
-    name: Identifier,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: Unit,
-    members: js.Array[ClassElement]
-  ): ClassExpression = js.native
-  def createClassExpression(
-    decorators: Unit,
-    modifiers: Unit,
-    name: Identifier,
-    typeParameters: Unit,
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[ClassElement]
-  ): ClassExpression = js.native
-  def createClassExpression(
-    decorators: Unit,
-    modifiers: Unit,
-    name: Identifier,
-    typeParameters: Unit,
-    heritageClauses: Unit,
-    members: js.Array[ClassElement]
-  ): ClassExpression = js.native
   def createClassExpression(
     modifiers: js.Array[ModifierLike],
     name: java.lang.String,
@@ -1417,13 +643,6 @@ trait NodeFactory extends StObject {
   ): ClassExpression = js.native
   
   def createClassStaticBlockDeclaration(body: Block): ClassStaticBlockDeclaration = js.native
-  /**
-    * @deprecated Decorators and modifiers are no longer supported for this function. Callers should use an overload that does not accept the `decorators` and `modifiers` parameters.
-    */
-  def createClassStaticBlockDeclaration(decorators: js.Array[Decorator], modifiers: js.Array[Modifier], body: Block): ClassStaticBlockDeclaration = js.native
-  def createClassStaticBlockDeclaration(decorators: js.Array[Decorator], modifiers: Unit, body: Block): ClassStaticBlockDeclaration = js.native
-  def createClassStaticBlockDeclaration(decorators: Unit, modifiers: js.Array[Modifier], body: Block): ClassStaticBlockDeclaration = js.native
-  def createClassStaticBlockDeclaration(decorators: Unit, modifiers: Unit, body: Block): ClassStaticBlockDeclaration = js.native
   
   def createComma(left: Expression, right: Expression): BinaryExpression = js.native
   
@@ -1471,38 +690,8 @@ trait NodeFactory extends StObject {
   def createConstructSignature(typeParameters: Unit, parameters: js.Array[ParameterDeclaration]): ConstructSignatureDeclaration = js.native
   def createConstructSignature(typeParameters: Unit, parameters: js.Array[ParameterDeclaration], `type`: TypeNode): ConstructSignatureDeclaration = js.native
   
-  /**
-    * @deprecated This node does not support Decorators. Callers should use an overload that does not accept a `decorators` parameter.
-    */
-  def createConstructorDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    parameters: js.Array[ParameterDeclaration]
-  ): ConstructorDeclaration = js.native
-  def createConstructorDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    parameters: js.Array[ParameterDeclaration],
-    body: Block
-  ): ConstructorDeclaration = js.native
-  def createConstructorDeclaration(decorators: js.Array[Decorator], modifiers: Unit, parameters: js.Array[ParameterDeclaration]): ConstructorDeclaration = js.native
-  def createConstructorDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    parameters: js.Array[ParameterDeclaration],
-    body: Block
-  ): ConstructorDeclaration = js.native
-  def createConstructorDeclaration(decorators: Unit, modifiers: js.Array[Modifier], parameters: js.Array[ParameterDeclaration]): ConstructorDeclaration = js.native
-  def createConstructorDeclaration(
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    parameters: js.Array[ParameterDeclaration],
-    body: Block
-  ): ConstructorDeclaration = js.native
-  def createConstructorDeclaration(decorators: Unit, modifiers: Unit, parameters: js.Array[ParameterDeclaration]): ConstructorDeclaration = js.native
-  def createConstructorDeclaration(decorators: Unit, modifiers: Unit, parameters: js.Array[ParameterDeclaration], body: Block): ConstructorDeclaration = js.native
-  def createConstructorDeclaration(modifiers: js.Array[Modifier], parameters: js.Array[ParameterDeclaration]): ConstructorDeclaration = js.native
-  def createConstructorDeclaration(modifiers: js.Array[Modifier], parameters: js.Array[ParameterDeclaration], body: Block): ConstructorDeclaration = js.native
+  def createConstructorDeclaration(modifiers: js.Array[ModifierLike], parameters: js.Array[ParameterDeclaration]): ConstructorDeclaration = js.native
+  def createConstructorDeclaration(modifiers: js.Array[ModifierLike], parameters: js.Array[ParameterDeclaration], body: Block): ConstructorDeclaration = js.native
   def createConstructorDeclaration(modifiers: Unit, parameters: js.Array[ParameterDeclaration]): ConstructorDeclaration = js.native
   def createConstructorDeclaration(modifiers: Unit, parameters: js.Array[ParameterDeclaration], body: Block): ConstructorDeclaration = js.native
   
@@ -1530,13 +719,6 @@ trait NodeFactory extends StObject {
     parameters: js.Array[ParameterDeclaration],
     `type`: TypeNode
   ): ConstructorTypeNode = js.native
-  /** @deprecated Use the overload that accepts 'modifiers' */
-  def createConstructorTypeNode(
-    typeParameters: js.Array[TypeParameterDeclaration],
-    parameters: js.Array[ParameterDeclaration],
-    `type`: TypeNode
-  ): ConstructorTypeNode = js.native
-  def createConstructorTypeNode(typeParameters: Unit, parameters: js.Array[ParameterDeclaration], `type`: TypeNode): ConstructorTypeNode = js.native
   
   def createContinueStatement(): ContinueStatement = js.native
   def createContinueStatement(label: java.lang.String): ContinueStatement = js.native
@@ -1564,39 +746,8 @@ trait NodeFactory extends StObject {
   
   def createEmptyStatement(): EmptyStatement = js.native
   
-  /**
-    * @deprecated Decorators are no longer supported for this function. Callers should use an overload that does not accept a `decorators` parameter.
-    */
-  def createEnumDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: java.lang.String,
-    members: js.Array[EnumMember]
-  ): EnumDeclaration = js.native
-  def createEnumDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: Identifier,
-    members: js.Array[EnumMember]
-  ): EnumDeclaration = js.native
-  def createEnumDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    name: java.lang.String,
-    members: js.Array[EnumMember]
-  ): EnumDeclaration = js.native
-  def createEnumDeclaration(decorators: js.Array[Decorator], modifiers: Unit, name: Identifier, members: js.Array[EnumMember]): EnumDeclaration = js.native
-  def createEnumDeclaration(
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    name: java.lang.String,
-    members: js.Array[EnumMember]
-  ): EnumDeclaration = js.native
-  def createEnumDeclaration(decorators: Unit, modifiers: js.Array[Modifier], name: Identifier, members: js.Array[EnumMember]): EnumDeclaration = js.native
-  def createEnumDeclaration(decorators: Unit, modifiers: Unit, name: java.lang.String, members: js.Array[EnumMember]): EnumDeclaration = js.native
-  def createEnumDeclaration(decorators: Unit, modifiers: Unit, name: Identifier, members: js.Array[EnumMember]): EnumDeclaration = js.native
-  def createEnumDeclaration(modifiers: js.Array[Modifier], name: java.lang.String, members: js.Array[EnumMember]): EnumDeclaration = js.native
-  def createEnumDeclaration(modifiers: js.Array[Modifier], name: Identifier, members: js.Array[EnumMember]): EnumDeclaration = js.native
+  def createEnumDeclaration(modifiers: js.Array[ModifierLike], name: java.lang.String, members: js.Array[EnumMember]): EnumDeclaration = js.native
+  def createEnumDeclaration(modifiers: js.Array[ModifierLike], name: Identifier, members: js.Array[EnumMember]): EnumDeclaration = js.native
   def createEnumDeclaration(modifiers: Unit, name: java.lang.String, members: js.Array[EnumMember]): EnumDeclaration = js.native
   def createEnumDeclaration(modifiers: Unit, name: Identifier, members: js.Array[EnumMember]): EnumDeclaration = js.native
   
@@ -1609,279 +760,48 @@ trait NodeFactory extends StObject {
   
   def createExponent(left: Expression, right: Expression): BinaryExpression = js.native
   
-  /**
-    * @deprecated Decorators are no longer supported for this function. Callers should use an overload that does not accept a `decorators` parameter.
-    */
-  def createExportAssignment(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    isExportEquals: Boolean,
-    expression: Expression
-  ): ExportAssignment = js.native
-  def createExportAssignment(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    isExportEquals: Unit,
-    expression: Expression
-  ): ExportAssignment = js.native
-  def createExportAssignment(decorators: js.Array[Decorator], modifiers: Unit, isExportEquals: Boolean, expression: Expression): ExportAssignment = js.native
-  def createExportAssignment(decorators: js.Array[Decorator], modifiers: Unit, isExportEquals: Unit, expression: Expression): ExportAssignment = js.native
-  def createExportAssignment(decorators: Unit, modifiers: js.Array[Modifier], isExportEquals: Boolean, expression: Expression): ExportAssignment = js.native
-  def createExportAssignment(decorators: Unit, modifiers: js.Array[Modifier], isExportEquals: Unit, expression: Expression): ExportAssignment = js.native
-  def createExportAssignment(decorators: Unit, modifiers: Unit, isExportEquals: Boolean, expression: Expression): ExportAssignment = js.native
-  def createExportAssignment(decorators: Unit, modifiers: Unit, isExportEquals: Unit, expression: Expression): ExportAssignment = js.native
-  def createExportAssignment(modifiers: js.Array[Modifier], isExportEquals: Boolean, expression: Expression): ExportAssignment = js.native
-  def createExportAssignment(modifiers: js.Array[Modifier], isExportEquals: Unit, expression: Expression): ExportAssignment = js.native
+  def createExportAssignment(modifiers: js.Array[ModifierLike], isExportEquals: Boolean, expression: Expression): ExportAssignment = js.native
+  def createExportAssignment(modifiers: js.Array[ModifierLike], isExportEquals: Unit, expression: Expression): ExportAssignment = js.native
   def createExportAssignment(modifiers: Unit, isExportEquals: Boolean, expression: Expression): ExportAssignment = js.native
   def createExportAssignment(modifiers: Unit, isExportEquals: Unit, expression: Expression): ExportAssignment = js.native
   
-  /**
-    * @deprecated Decorators are no longer supported for this function. Callers should use an overload that does not accept a `decorators` parameter.
-    */
-  def createExportDeclaration(decorators: js.Array[Decorator], modifiers: js.Array[Modifier], isTypeOnly: Boolean): ExportDeclaration = js.native
+  def createExportDeclaration(modifiers: js.Array[ModifierLike], isTypeOnly: Boolean): ExportDeclaration = js.native
   def createExportDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
+    modifiers: js.Array[ModifierLike],
     isTypeOnly: Boolean,
     exportClause: Unit,
     moduleSpecifier: Unit,
     assertClause: AssertClause
   ): ExportDeclaration = js.native
   def createExportDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
+    modifiers: js.Array[ModifierLike],
     isTypeOnly: Boolean,
     exportClause: Unit,
     moduleSpecifier: Expression
   ): ExportDeclaration = js.native
   def createExportDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
+    modifiers: js.Array[ModifierLike],
     isTypeOnly: Boolean,
     exportClause: Unit,
     moduleSpecifier: Expression,
     assertClause: AssertClause
   ): ExportDeclaration = js.native
+  def createExportDeclaration(modifiers: js.Array[ModifierLike], isTypeOnly: Boolean, exportClause: NamedExportBindings): ExportDeclaration = js.native
   def createExportDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    isTypeOnly: Boolean,
-    exportClause: NamedExportBindings
-  ): ExportDeclaration = js.native
-  def createExportDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
+    modifiers: js.Array[ModifierLike],
     isTypeOnly: Boolean,
     exportClause: NamedExportBindings,
     moduleSpecifier: Unit,
     assertClause: AssertClause
   ): ExportDeclaration = js.native
   def createExportDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
+    modifiers: js.Array[ModifierLike],
     isTypeOnly: Boolean,
     exportClause: NamedExportBindings,
     moduleSpecifier: Expression
   ): ExportDeclaration = js.native
   def createExportDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    isTypeOnly: Boolean,
-    exportClause: NamedExportBindings,
-    moduleSpecifier: Expression,
-    assertClause: AssertClause
-  ): ExportDeclaration = js.native
-  def createExportDeclaration(decorators: js.Array[Decorator], modifiers: Unit, isTypeOnly: Boolean): ExportDeclaration = js.native
-  def createExportDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    isTypeOnly: Boolean,
-    exportClause: Unit,
-    moduleSpecifier: Unit,
-    assertClause: AssertClause
-  ): ExportDeclaration = js.native
-  def createExportDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    isTypeOnly: Boolean,
-    exportClause: Unit,
-    moduleSpecifier: Expression
-  ): ExportDeclaration = js.native
-  def createExportDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    isTypeOnly: Boolean,
-    exportClause: Unit,
-    moduleSpecifier: Expression,
-    assertClause: AssertClause
-  ): ExportDeclaration = js.native
-  def createExportDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    isTypeOnly: Boolean,
-    exportClause: NamedExportBindings
-  ): ExportDeclaration = js.native
-  def createExportDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    isTypeOnly: Boolean,
-    exportClause: NamedExportBindings,
-    moduleSpecifier: Unit,
-    assertClause: AssertClause
-  ): ExportDeclaration = js.native
-  def createExportDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    isTypeOnly: Boolean,
-    exportClause: NamedExportBindings,
-    moduleSpecifier: Expression
-  ): ExportDeclaration = js.native
-  def createExportDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    isTypeOnly: Boolean,
-    exportClause: NamedExportBindings,
-    moduleSpecifier: Expression,
-    assertClause: AssertClause
-  ): ExportDeclaration = js.native
-  def createExportDeclaration(decorators: Unit, modifiers: js.Array[Modifier], isTypeOnly: Boolean): ExportDeclaration = js.native
-  def createExportDeclaration(
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    isTypeOnly: Boolean,
-    exportClause: Unit,
-    moduleSpecifier: Unit,
-    assertClause: AssertClause
-  ): ExportDeclaration = js.native
-  def createExportDeclaration(
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    isTypeOnly: Boolean,
-    exportClause: Unit,
-    moduleSpecifier: Expression
-  ): ExportDeclaration = js.native
-  def createExportDeclaration(
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    isTypeOnly: Boolean,
-    exportClause: Unit,
-    moduleSpecifier: Expression,
-    assertClause: AssertClause
-  ): ExportDeclaration = js.native
-  def createExportDeclaration(
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    isTypeOnly: Boolean,
-    exportClause: NamedExportBindings
-  ): ExportDeclaration = js.native
-  def createExportDeclaration(
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    isTypeOnly: Boolean,
-    exportClause: NamedExportBindings,
-    moduleSpecifier: Unit,
-    assertClause: AssertClause
-  ): ExportDeclaration = js.native
-  def createExportDeclaration(
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    isTypeOnly: Boolean,
-    exportClause: NamedExportBindings,
-    moduleSpecifier: Expression
-  ): ExportDeclaration = js.native
-  def createExportDeclaration(
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    isTypeOnly: Boolean,
-    exportClause: NamedExportBindings,
-    moduleSpecifier: Expression,
-    assertClause: AssertClause
-  ): ExportDeclaration = js.native
-  def createExportDeclaration(decorators: Unit, modifiers: Unit, isTypeOnly: Boolean): ExportDeclaration = js.native
-  def createExportDeclaration(
-    decorators: Unit,
-    modifiers: Unit,
-    isTypeOnly: Boolean,
-    exportClause: Unit,
-    moduleSpecifier: Unit,
-    assertClause: AssertClause
-  ): ExportDeclaration = js.native
-  def createExportDeclaration(
-    decorators: Unit,
-    modifiers: Unit,
-    isTypeOnly: Boolean,
-    exportClause: Unit,
-    moduleSpecifier: Expression
-  ): ExportDeclaration = js.native
-  def createExportDeclaration(
-    decorators: Unit,
-    modifiers: Unit,
-    isTypeOnly: Boolean,
-    exportClause: Unit,
-    moduleSpecifier: Expression,
-    assertClause: AssertClause
-  ): ExportDeclaration = js.native
-  def createExportDeclaration(decorators: Unit, modifiers: Unit, isTypeOnly: Boolean, exportClause: NamedExportBindings): ExportDeclaration = js.native
-  def createExportDeclaration(
-    decorators: Unit,
-    modifiers: Unit,
-    isTypeOnly: Boolean,
-    exportClause: NamedExportBindings,
-    moduleSpecifier: Unit,
-    assertClause: AssertClause
-  ): ExportDeclaration = js.native
-  def createExportDeclaration(
-    decorators: Unit,
-    modifiers: Unit,
-    isTypeOnly: Boolean,
-    exportClause: NamedExportBindings,
-    moduleSpecifier: Expression
-  ): ExportDeclaration = js.native
-  def createExportDeclaration(
-    decorators: Unit,
-    modifiers: Unit,
-    isTypeOnly: Boolean,
-    exportClause: NamedExportBindings,
-    moduleSpecifier: Expression,
-    assertClause: AssertClause
-  ): ExportDeclaration = js.native
-  def createExportDeclaration(modifiers: js.Array[Modifier], isTypeOnly: Boolean): ExportDeclaration = js.native
-  def createExportDeclaration(
-    modifiers: js.Array[Modifier],
-    isTypeOnly: Boolean,
-    exportClause: Unit,
-    moduleSpecifier: Unit,
-    assertClause: AssertClause
-  ): ExportDeclaration = js.native
-  def createExportDeclaration(
-    modifiers: js.Array[Modifier],
-    isTypeOnly: Boolean,
-    exportClause: Unit,
-    moduleSpecifier: Expression
-  ): ExportDeclaration = js.native
-  def createExportDeclaration(
-    modifiers: js.Array[Modifier],
-    isTypeOnly: Boolean,
-    exportClause: Unit,
-    moduleSpecifier: Expression,
-    assertClause: AssertClause
-  ): ExportDeclaration = js.native
-  def createExportDeclaration(modifiers: js.Array[Modifier], isTypeOnly: Boolean, exportClause: NamedExportBindings): ExportDeclaration = js.native
-  def createExportDeclaration(
-    modifiers: js.Array[Modifier],
-    isTypeOnly: Boolean,
-    exportClause: NamedExportBindings,
-    moduleSpecifier: Unit,
-    assertClause: AssertClause
-  ): ExportDeclaration = js.native
-  def createExportDeclaration(
-    modifiers: js.Array[Modifier],
-    isTypeOnly: Boolean,
-    exportClause: NamedExportBindings,
-    moduleSpecifier: Expression
-  ): ExportDeclaration = js.native
-  def createExportDeclaration(
-    modifiers: js.Array[Modifier],
+    modifiers: js.Array[ModifierLike],
     isTypeOnly: Boolean,
     exportClause: NamedExportBindings,
     moduleSpecifier: Expression,
@@ -1964,19 +884,6 @@ trait NodeFactory extends StObject {
   def createForStatement(initializer: ForInitializer, condition: Expression, incrementor: Unit, statement: Statement): ForStatement = js.native
   def createForStatement(initializer: ForInitializer, condition: Expression, incrementor: Expression, statement: Statement): ForStatement = js.native
   
-  /**
-    * @deprecated Decorators are no longer supported for this function. Callers should use an overload that does not accept a `decorators` parameter.
-    */
-  def createFunctionDeclaration(
-    decorators: js.UndefOr[js.Array[Decorator]],
-    modifiers: js.UndefOr[js.Array[Modifier]],
-    asteriskToken: js.UndefOr[AsteriskToken],
-    name: js.UndefOr[java.lang.String | Identifier],
-    typeParameters: js.UndefOr[js.Array[TypeParameterDeclaration]],
-    parameters: js.Array[ParameterDeclaration],
-    `type`: js.UndefOr[TypeNode],
-    body: js.UndefOr[Block]
-  ): FunctionDeclaration = js.native
   def createFunctionDeclaration(
     modifiers: js.UndefOr[js.Array[ModifierLike]],
     asteriskToken: js.UndefOr[AsteriskToken],
@@ -2004,236 +911,6 @@ trait NodeFactory extends StObject {
   ): FunctionTypeNode = js.native
   def createFunctionTypeNode(typeParameters: Unit, parameters: js.Array[ParameterDeclaration], `type`: TypeNode): FunctionTypeNode = js.native
   
-  /**
-    * @deprecated Decorators have been combined with modifiers. Callers should use an overload that does not accept a `decorators` parameter.
-    */
-  def createGetAccessorDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: java.lang.String,
-    parameters: js.Array[ParameterDeclaration]
-  ): GetAccessorDeclaration = js.native
-  def createGetAccessorDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: java.lang.String,
-    parameters: js.Array[ParameterDeclaration],
-    `type`: Unit,
-    body: Block
-  ): GetAccessorDeclaration = js.native
-  def createGetAccessorDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: java.lang.String,
-    parameters: js.Array[ParameterDeclaration],
-    `type`: TypeNode
-  ): GetAccessorDeclaration = js.native
-  def createGetAccessorDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: java.lang.String,
-    parameters: js.Array[ParameterDeclaration],
-    `type`: TypeNode,
-    body: Block
-  ): GetAccessorDeclaration = js.native
-  def createGetAccessorDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: PropertyName,
-    parameters: js.Array[ParameterDeclaration]
-  ): GetAccessorDeclaration = js.native
-  def createGetAccessorDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: PropertyName,
-    parameters: js.Array[ParameterDeclaration],
-    `type`: Unit,
-    body: Block
-  ): GetAccessorDeclaration = js.native
-  def createGetAccessorDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: PropertyName,
-    parameters: js.Array[ParameterDeclaration],
-    `type`: TypeNode
-  ): GetAccessorDeclaration = js.native
-  def createGetAccessorDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: PropertyName,
-    parameters: js.Array[ParameterDeclaration],
-    `type`: TypeNode,
-    body: Block
-  ): GetAccessorDeclaration = js.native
-  def createGetAccessorDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    name: java.lang.String,
-    parameters: js.Array[ParameterDeclaration]
-  ): GetAccessorDeclaration = js.native
-  def createGetAccessorDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    name: java.lang.String,
-    parameters: js.Array[ParameterDeclaration],
-    `type`: Unit,
-    body: Block
-  ): GetAccessorDeclaration = js.native
-  def createGetAccessorDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    name: java.lang.String,
-    parameters: js.Array[ParameterDeclaration],
-    `type`: TypeNode
-  ): GetAccessorDeclaration = js.native
-  def createGetAccessorDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    name: java.lang.String,
-    parameters: js.Array[ParameterDeclaration],
-    `type`: TypeNode,
-    body: Block
-  ): GetAccessorDeclaration = js.native
-  def createGetAccessorDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    name: PropertyName,
-    parameters: js.Array[ParameterDeclaration]
-  ): GetAccessorDeclaration = js.native
-  def createGetAccessorDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    name: PropertyName,
-    parameters: js.Array[ParameterDeclaration],
-    `type`: Unit,
-    body: Block
-  ): GetAccessorDeclaration = js.native
-  def createGetAccessorDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    name: PropertyName,
-    parameters: js.Array[ParameterDeclaration],
-    `type`: TypeNode
-  ): GetAccessorDeclaration = js.native
-  def createGetAccessorDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    name: PropertyName,
-    parameters: js.Array[ParameterDeclaration],
-    `type`: TypeNode,
-    body: Block
-  ): GetAccessorDeclaration = js.native
-  def createGetAccessorDeclaration(
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    name: java.lang.String,
-    parameters: js.Array[ParameterDeclaration]
-  ): GetAccessorDeclaration = js.native
-  def createGetAccessorDeclaration(
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    name: java.lang.String,
-    parameters: js.Array[ParameterDeclaration],
-    `type`: Unit,
-    body: Block
-  ): GetAccessorDeclaration = js.native
-  def createGetAccessorDeclaration(
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    name: java.lang.String,
-    parameters: js.Array[ParameterDeclaration],
-    `type`: TypeNode
-  ): GetAccessorDeclaration = js.native
-  def createGetAccessorDeclaration(
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    name: java.lang.String,
-    parameters: js.Array[ParameterDeclaration],
-    `type`: TypeNode,
-    body: Block
-  ): GetAccessorDeclaration = js.native
-  def createGetAccessorDeclaration(
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    name: PropertyName,
-    parameters: js.Array[ParameterDeclaration]
-  ): GetAccessorDeclaration = js.native
-  def createGetAccessorDeclaration(
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    name: PropertyName,
-    parameters: js.Array[ParameterDeclaration],
-    `type`: Unit,
-    body: Block
-  ): GetAccessorDeclaration = js.native
-  def createGetAccessorDeclaration(
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    name: PropertyName,
-    parameters: js.Array[ParameterDeclaration],
-    `type`: TypeNode
-  ): GetAccessorDeclaration = js.native
-  def createGetAccessorDeclaration(
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    name: PropertyName,
-    parameters: js.Array[ParameterDeclaration],
-    `type`: TypeNode,
-    body: Block
-  ): GetAccessorDeclaration = js.native
-  def createGetAccessorDeclaration(
-    decorators: Unit,
-    modifiers: Unit,
-    name: java.lang.String,
-    parameters: js.Array[ParameterDeclaration]
-  ): GetAccessorDeclaration = js.native
-  def createGetAccessorDeclaration(
-    decorators: Unit,
-    modifiers: Unit,
-    name: java.lang.String,
-    parameters: js.Array[ParameterDeclaration],
-    `type`: Unit,
-    body: Block
-  ): GetAccessorDeclaration = js.native
-  def createGetAccessorDeclaration(
-    decorators: Unit,
-    modifiers: Unit,
-    name: java.lang.String,
-    parameters: js.Array[ParameterDeclaration],
-    `type`: TypeNode
-  ): GetAccessorDeclaration = js.native
-  def createGetAccessorDeclaration(
-    decorators: Unit,
-    modifiers: Unit,
-    name: java.lang.String,
-    parameters: js.Array[ParameterDeclaration],
-    `type`: TypeNode,
-    body: Block
-  ): GetAccessorDeclaration = js.native
-  def createGetAccessorDeclaration(decorators: Unit, modifiers: Unit, name: PropertyName, parameters: js.Array[ParameterDeclaration]): GetAccessorDeclaration = js.native
-  def createGetAccessorDeclaration(
-    decorators: Unit,
-    modifiers: Unit,
-    name: PropertyName,
-    parameters: js.Array[ParameterDeclaration],
-    `type`: Unit,
-    body: Block
-  ): GetAccessorDeclaration = js.native
-  def createGetAccessorDeclaration(
-    decorators: Unit,
-    modifiers: Unit,
-    name: PropertyName,
-    parameters: js.Array[ParameterDeclaration],
-    `type`: TypeNode
-  ): GetAccessorDeclaration = js.native
-  def createGetAccessorDeclaration(
-    decorators: Unit,
-    modifiers: Unit,
-    name: PropertyName,
-    parameters: js.Array[ParameterDeclaration],
-    `type`: TypeNode,
-    body: Block
-  ): GetAccessorDeclaration = js.native
   def createGetAccessorDeclaration(
     modifiers: js.Array[ModifierLike],
     name: java.lang.String,
@@ -2341,103 +1018,16 @@ trait NodeFactory extends StObject {
   def createImportClause(isTypeOnly: Boolean, name: Identifier): ImportClause = js.native
   def createImportClause(isTypeOnly: Boolean, name: Identifier, namedBindings: NamedImportBindings): ImportClause = js.native
   
+  def createImportDeclaration(modifiers: js.Array[ModifierLike], importClause: Unit, moduleSpecifier: Expression): ImportDeclaration = js.native
   def createImportDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    importClause: Unit,
-    moduleSpecifier: Expression
-  ): ImportDeclaration = js.native
-  def createImportDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
+    modifiers: js.Array[ModifierLike],
     importClause: Unit,
     moduleSpecifier: Expression,
     assertClause: AssertClause
   ): ImportDeclaration = js.native
-  /**
-    * @deprecated Decorators are no longer supported for this function. Callers should use an overload that does not accept a `decorators` parameter.
-    */
+  def createImportDeclaration(modifiers: js.Array[ModifierLike], importClause: ImportClause, moduleSpecifier: Expression): ImportDeclaration = js.native
   def createImportDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    importClause: ImportClause,
-    moduleSpecifier: Expression
-  ): ImportDeclaration = js.native
-  def createImportDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    importClause: ImportClause,
-    moduleSpecifier: Expression,
-    assertClause: AssertClause
-  ): ImportDeclaration = js.native
-  def createImportDeclaration(decorators: js.Array[Decorator], modifiers: Unit, importClause: Unit, moduleSpecifier: Expression): ImportDeclaration = js.native
-  def createImportDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    importClause: Unit,
-    moduleSpecifier: Expression,
-    assertClause: AssertClause
-  ): ImportDeclaration = js.native
-  def createImportDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    importClause: ImportClause,
-    moduleSpecifier: Expression
-  ): ImportDeclaration = js.native
-  def createImportDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    importClause: ImportClause,
-    moduleSpecifier: Expression,
-    assertClause: AssertClause
-  ): ImportDeclaration = js.native
-  def createImportDeclaration(decorators: Unit, modifiers: js.Array[Modifier], importClause: Unit, moduleSpecifier: Expression): ImportDeclaration = js.native
-  def createImportDeclaration(
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    importClause: Unit,
-    moduleSpecifier: Expression,
-    assertClause: AssertClause
-  ): ImportDeclaration = js.native
-  def createImportDeclaration(
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    importClause: ImportClause,
-    moduleSpecifier: Expression
-  ): ImportDeclaration = js.native
-  def createImportDeclaration(
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    importClause: ImportClause,
-    moduleSpecifier: Expression,
-    assertClause: AssertClause
-  ): ImportDeclaration = js.native
-  def createImportDeclaration(decorators: Unit, modifiers: Unit, importClause: Unit, moduleSpecifier: Expression): ImportDeclaration = js.native
-  def createImportDeclaration(
-    decorators: Unit,
-    modifiers: Unit,
-    importClause: Unit,
-    moduleSpecifier: Expression,
-    assertClause: AssertClause
-  ): ImportDeclaration = js.native
-  def createImportDeclaration(decorators: Unit, modifiers: Unit, importClause: ImportClause, moduleSpecifier: Expression): ImportDeclaration = js.native
-  def createImportDeclaration(
-    decorators: Unit,
-    modifiers: Unit,
-    importClause: ImportClause,
-    moduleSpecifier: Expression,
-    assertClause: AssertClause
-  ): ImportDeclaration = js.native
-  def createImportDeclaration(modifiers: js.Array[Modifier], importClause: Unit, moduleSpecifier: Expression): ImportDeclaration = js.native
-  def createImportDeclaration(
-    modifiers: js.Array[Modifier],
-    importClause: Unit,
-    moduleSpecifier: Expression,
-    assertClause: AssertClause
-  ): ImportDeclaration = js.native
-  def createImportDeclaration(modifiers: js.Array[Modifier], importClause: ImportClause, moduleSpecifier: Expression): ImportDeclaration = js.native
-  def createImportDeclaration(
-    modifiers: js.Array[Modifier],
+    modifiers: js.Array[ModifierLike],
     importClause: ImportClause,
     moduleSpecifier: Expression,
     assertClause: AssertClause
@@ -2452,73 +1042,14 @@ trait NodeFactory extends StObject {
     assertClause: AssertClause
   ): ImportDeclaration = js.native
   
-  /**
-    * @deprecated Decorators are no longer supported for this function. Callers should use an overload that does not accept a `decorators` parameter.
-    */
   def createImportEqualsDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
+    modifiers: js.Array[ModifierLike],
     isTypeOnly: Boolean,
     name: java.lang.String,
     moduleReference: ModuleReference
   ): ImportEqualsDeclaration = js.native
   def createImportEqualsDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    isTypeOnly: Boolean,
-    name: Identifier,
-    moduleReference: ModuleReference
-  ): ImportEqualsDeclaration = js.native
-  def createImportEqualsDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    isTypeOnly: Boolean,
-    name: java.lang.String,
-    moduleReference: ModuleReference
-  ): ImportEqualsDeclaration = js.native
-  def createImportEqualsDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    isTypeOnly: Boolean,
-    name: Identifier,
-    moduleReference: ModuleReference
-  ): ImportEqualsDeclaration = js.native
-  def createImportEqualsDeclaration(
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    isTypeOnly: Boolean,
-    name: java.lang.String,
-    moduleReference: ModuleReference
-  ): ImportEqualsDeclaration = js.native
-  def createImportEqualsDeclaration(
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    isTypeOnly: Boolean,
-    name: Identifier,
-    moduleReference: ModuleReference
-  ): ImportEqualsDeclaration = js.native
-  def createImportEqualsDeclaration(
-    decorators: Unit,
-    modifiers: Unit,
-    isTypeOnly: Boolean,
-    name: java.lang.String,
-    moduleReference: ModuleReference
-  ): ImportEqualsDeclaration = js.native
-  def createImportEqualsDeclaration(
-    decorators: Unit,
-    modifiers: Unit,
-    isTypeOnly: Boolean,
-    name: Identifier,
-    moduleReference: ModuleReference
-  ): ImportEqualsDeclaration = js.native
-  def createImportEqualsDeclaration(
-    modifiers: js.Array[Modifier],
-    isTypeOnly: Boolean,
-    name: java.lang.String,
-    moduleReference: ModuleReference
-  ): ImportEqualsDeclaration = js.native
-  def createImportEqualsDeclaration(
-    modifiers: js.Array[Modifier],
+    modifiers: js.Array[ModifierLike],
     isTypeOnly: Boolean,
     name: Identifier,
     moduleReference: ModuleReference
@@ -2600,37 +1131,8 @@ trait NodeFactory extends StObject {
     typeArguments: Unit,
     isTypeOf: Boolean
   ): ImportTypeNode = js.native
-  def createImportTypeNode(argument: TypeNode, qualifier: Unit, typeArguments: js.Array[TypeNode]): ImportTypeNode = js.native
-  def createImportTypeNode(argument: TypeNode, qualifier: Unit, typeArguments: js.Array[TypeNode], isTypeOf: Boolean): ImportTypeNode = js.native
-  def createImportTypeNode(argument: TypeNode, qualifier: Unit, typeArguments: Unit, isTypeOf: Boolean): ImportTypeNode = js.native
-  def createImportTypeNode(argument: TypeNode, qualifier: EntityName): ImportTypeNode = js.native
-  def createImportTypeNode(argument: TypeNode, qualifier: EntityName, typeArguments: js.Array[TypeNode]): ImportTypeNode = js.native
-  def createImportTypeNode(argument: TypeNode, qualifier: EntityName, typeArguments: js.Array[TypeNode], isTypeOf: Boolean): ImportTypeNode = js.native
-  def createImportTypeNode(argument: TypeNode, qualifier: EntityName, typeArguments: Unit, isTypeOf: Boolean): ImportTypeNode = js.native
   
-  /**
-    * @deprecated Decorators are no longer supported for this function. Callers should use an overload that does not accept a `decorators` parameter.
-    */
-  def createIndexSignature(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    parameters: js.Array[ParameterDeclaration],
-    `type`: TypeNode
-  ): IndexSignatureDeclaration = js.native
-  def createIndexSignature(
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    parameters: js.Array[ParameterDeclaration],
-    `type`: TypeNode
-  ): IndexSignatureDeclaration = js.native
-  def createIndexSignature(
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    parameters: js.Array[ParameterDeclaration],
-    `type`: TypeNode
-  ): IndexSignatureDeclaration = js.native
-  def createIndexSignature(decorators: Unit, modifiers: Unit, parameters: js.Array[ParameterDeclaration], `type`: TypeNode): IndexSignatureDeclaration = js.native
-  def createIndexSignature(modifiers: js.Array[Modifier], parameters: js.Array[ParameterDeclaration], `type`: TypeNode): IndexSignatureDeclaration = js.native
+  def createIndexSignature(modifiers: js.Array[ModifierLike], parameters: js.Array[ParameterDeclaration], `type`: TypeNode): IndexSignatureDeclaration = js.native
   def createIndexSignature(modifiers: Unit, parameters: js.Array[ParameterDeclaration], `type`: TypeNode): IndexSignatureDeclaration = js.native
   
   def createIndexedAccessTypeNode(objectType: TypeNode, indexType: TypeNode): IndexedAccessTypeNode = js.native
@@ -2639,316 +1141,57 @@ trait NodeFactory extends StObject {
   
   def createInferTypeNode(typeParameter: TypeParameterDeclaration): InferTypeNode = js.native
   
-  /**
-    * @deprecated Decorators are no longer supported for this function. Callers should use an overload that does not accept a `decorators` parameter.
-    */
   def createInterfaceDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
+    modifiers: js.Array[ModifierLike],
     name: java.lang.String,
     typeParameters: js.Array[TypeParameterDeclaration],
     heritageClauses: js.Array[HeritageClause],
     members: js.Array[TypeElement]
   ): InterfaceDeclaration = js.native
   def createInterfaceDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
+    modifiers: js.Array[ModifierLike],
     name: java.lang.String,
     typeParameters: js.Array[TypeParameterDeclaration],
     heritageClauses: Unit,
     members: js.Array[TypeElement]
   ): InterfaceDeclaration = js.native
   def createInterfaceDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
+    modifiers: js.Array[ModifierLike],
     name: java.lang.String,
     typeParameters: Unit,
     heritageClauses: js.Array[HeritageClause],
     members: js.Array[TypeElement]
   ): InterfaceDeclaration = js.native
   def createInterfaceDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
+    modifiers: js.Array[ModifierLike],
     name: java.lang.String,
     typeParameters: Unit,
     heritageClauses: Unit,
     members: js.Array[TypeElement]
   ): InterfaceDeclaration = js.native
   def createInterfaceDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
+    modifiers: js.Array[ModifierLike],
     name: Identifier,
     typeParameters: js.Array[TypeParameterDeclaration],
     heritageClauses: js.Array[HeritageClause],
     members: js.Array[TypeElement]
   ): InterfaceDeclaration = js.native
   def createInterfaceDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
+    modifiers: js.Array[ModifierLike],
     name: Identifier,
     typeParameters: js.Array[TypeParameterDeclaration],
     heritageClauses: Unit,
     members: js.Array[TypeElement]
   ): InterfaceDeclaration = js.native
   def createInterfaceDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
+    modifiers: js.Array[ModifierLike],
     name: Identifier,
     typeParameters: Unit,
     heritageClauses: js.Array[HeritageClause],
     members: js.Array[TypeElement]
   ): InterfaceDeclaration = js.native
   def createInterfaceDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: Identifier,
-    typeParameters: Unit,
-    heritageClauses: Unit,
-    members: js.Array[TypeElement]
-  ): InterfaceDeclaration = js.native
-  def createInterfaceDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    name: java.lang.String,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[TypeElement]
-  ): InterfaceDeclaration = js.native
-  def createInterfaceDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    name: java.lang.String,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: Unit,
-    members: js.Array[TypeElement]
-  ): InterfaceDeclaration = js.native
-  def createInterfaceDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    name: java.lang.String,
-    typeParameters: Unit,
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[TypeElement]
-  ): InterfaceDeclaration = js.native
-  def createInterfaceDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    name: java.lang.String,
-    typeParameters: Unit,
-    heritageClauses: Unit,
-    members: js.Array[TypeElement]
-  ): InterfaceDeclaration = js.native
-  def createInterfaceDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    name: Identifier,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[TypeElement]
-  ): InterfaceDeclaration = js.native
-  def createInterfaceDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    name: Identifier,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: Unit,
-    members: js.Array[TypeElement]
-  ): InterfaceDeclaration = js.native
-  def createInterfaceDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    name: Identifier,
-    typeParameters: Unit,
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[TypeElement]
-  ): InterfaceDeclaration = js.native
-  def createInterfaceDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    name: Identifier,
-    typeParameters: Unit,
-    heritageClauses: Unit,
-    members: js.Array[TypeElement]
-  ): InterfaceDeclaration = js.native
-  def createInterfaceDeclaration(
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    name: java.lang.String,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[TypeElement]
-  ): InterfaceDeclaration = js.native
-  def createInterfaceDeclaration(
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    name: java.lang.String,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: Unit,
-    members: js.Array[TypeElement]
-  ): InterfaceDeclaration = js.native
-  def createInterfaceDeclaration(
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    name: java.lang.String,
-    typeParameters: Unit,
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[TypeElement]
-  ): InterfaceDeclaration = js.native
-  def createInterfaceDeclaration(
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    name: java.lang.String,
-    typeParameters: Unit,
-    heritageClauses: Unit,
-    members: js.Array[TypeElement]
-  ): InterfaceDeclaration = js.native
-  def createInterfaceDeclaration(
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    name: Identifier,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[TypeElement]
-  ): InterfaceDeclaration = js.native
-  def createInterfaceDeclaration(
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    name: Identifier,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: Unit,
-    members: js.Array[TypeElement]
-  ): InterfaceDeclaration = js.native
-  def createInterfaceDeclaration(
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    name: Identifier,
-    typeParameters: Unit,
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[TypeElement]
-  ): InterfaceDeclaration = js.native
-  def createInterfaceDeclaration(
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    name: Identifier,
-    typeParameters: Unit,
-    heritageClauses: Unit,
-    members: js.Array[TypeElement]
-  ): InterfaceDeclaration = js.native
-  def createInterfaceDeclaration(
-    decorators: Unit,
-    modifiers: Unit,
-    name: java.lang.String,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[TypeElement]
-  ): InterfaceDeclaration = js.native
-  def createInterfaceDeclaration(
-    decorators: Unit,
-    modifiers: Unit,
-    name: java.lang.String,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: Unit,
-    members: js.Array[TypeElement]
-  ): InterfaceDeclaration = js.native
-  def createInterfaceDeclaration(
-    decorators: Unit,
-    modifiers: Unit,
-    name: java.lang.String,
-    typeParameters: Unit,
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[TypeElement]
-  ): InterfaceDeclaration = js.native
-  def createInterfaceDeclaration(
-    decorators: Unit,
-    modifiers: Unit,
-    name: java.lang.String,
-    typeParameters: Unit,
-    heritageClauses: Unit,
-    members: js.Array[TypeElement]
-  ): InterfaceDeclaration = js.native
-  def createInterfaceDeclaration(
-    decorators: Unit,
-    modifiers: Unit,
-    name: Identifier,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[TypeElement]
-  ): InterfaceDeclaration = js.native
-  def createInterfaceDeclaration(
-    decorators: Unit,
-    modifiers: Unit,
-    name: Identifier,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: Unit,
-    members: js.Array[TypeElement]
-  ): InterfaceDeclaration = js.native
-  def createInterfaceDeclaration(
-    decorators: Unit,
-    modifiers: Unit,
-    name: Identifier,
-    typeParameters: Unit,
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[TypeElement]
-  ): InterfaceDeclaration = js.native
-  def createInterfaceDeclaration(
-    decorators: Unit,
-    modifiers: Unit,
-    name: Identifier,
-    typeParameters: Unit,
-    heritageClauses: Unit,
-    members: js.Array[TypeElement]
-  ): InterfaceDeclaration = js.native
-  def createInterfaceDeclaration(
-    modifiers: js.Array[Modifier],
-    name: java.lang.String,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[TypeElement]
-  ): InterfaceDeclaration = js.native
-  def createInterfaceDeclaration(
-    modifiers: js.Array[Modifier],
-    name: java.lang.String,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: Unit,
-    members: js.Array[TypeElement]
-  ): InterfaceDeclaration = js.native
-  def createInterfaceDeclaration(
-    modifiers: js.Array[Modifier],
-    name: java.lang.String,
-    typeParameters: Unit,
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[TypeElement]
-  ): InterfaceDeclaration = js.native
-  def createInterfaceDeclaration(
-    modifiers: js.Array[Modifier],
-    name: java.lang.String,
-    typeParameters: Unit,
-    heritageClauses: Unit,
-    members: js.Array[TypeElement]
-  ): InterfaceDeclaration = js.native
-  def createInterfaceDeclaration(
-    modifiers: js.Array[Modifier],
-    name: Identifier,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[TypeElement]
-  ): InterfaceDeclaration = js.native
-  def createInterfaceDeclaration(
-    modifiers: js.Array[Modifier],
-    name: Identifier,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: Unit,
-    members: js.Array[TypeElement]
-  ): InterfaceDeclaration = js.native
-  def createInterfaceDeclaration(
-    modifiers: js.Array[Modifier],
-    name: Identifier,
-    typeParameters: Unit,
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[TypeElement]
-  ): InterfaceDeclaration = js.native
-  def createInterfaceDeclaration(
-    modifiers: js.Array[Modifier],
+    modifiers: js.Array[ModifierLike],
     name: Identifier,
     typeParameters: Unit,
     heritageClauses: Unit,
@@ -3102,6 +1345,9 @@ trait NodeFactory extends StObject {
   def createJSDocComment(comment: NodeArray[JSDocComment]): JSDoc = js.native
   def createJSDocComment(comment: NodeArray[JSDocComment], tags: js.Array[JSDocTag]): JSDoc = js.native
   
+  def createJSDocDeprecatedTag(): JSDocDeprecatedTag = js.native
+  def createJSDocDeprecatedTag(tagName: Unit, comment: java.lang.String): JSDocDeprecatedTag = js.native
+  def createJSDocDeprecatedTag(tagName: Unit, comment: NodeArray[JSDocComment]): JSDocDeprecatedTag = js.native
   def createJSDocDeprecatedTag(tagName: Identifier): JSDocDeprecatedTag = js.native
   def createJSDocDeprecatedTag(tagName: Identifier, comment: java.lang.String): JSDocDeprecatedTag = js.native
   def createJSDocDeprecatedTag(tagName: Identifier, comment: NodeArray[JSDocComment]): JSDocDeprecatedTag = js.native
@@ -3151,6 +1397,16 @@ trait NodeFactory extends StObject {
   
   def createJSDocOptionalType(`type`: TypeNode): JSDocOptionalType = js.native
   
+  def createJSDocOverloadTag(tagName: Unit, typeExpression: JSDocSignature): JSDocOverloadTag = js.native
+  def createJSDocOverloadTag(tagName: Unit, typeExpression: JSDocSignature, comment: java.lang.String): JSDocOverloadTag = js.native
+  def createJSDocOverloadTag(tagName: Unit, typeExpression: JSDocSignature, comment: NodeArray[JSDocComment]): JSDocOverloadTag = js.native
+  def createJSDocOverloadTag(tagName: Identifier, typeExpression: JSDocSignature): JSDocOverloadTag = js.native
+  def createJSDocOverloadTag(tagName: Identifier, typeExpression: JSDocSignature, comment: java.lang.String): JSDocOverloadTag = js.native
+  def createJSDocOverloadTag(tagName: Identifier, typeExpression: JSDocSignature, comment: NodeArray[JSDocComment]): JSDocOverloadTag = js.native
+  
+  def createJSDocOverrideTag(): JSDocOverrideTag = js.native
+  def createJSDocOverrideTag(tagName: Unit, comment: java.lang.String): JSDocOverrideTag = js.native
+  def createJSDocOverrideTag(tagName: Unit, comment: NodeArray[JSDocComment]): JSDocOverrideTag = js.native
   def createJSDocOverrideTag(tagName: Identifier): JSDocOverrideTag = js.native
   def createJSDocOverrideTag(tagName: Identifier, comment: java.lang.String): JSDocOverrideTag = js.native
   def createJSDocOverrideTag(tagName: Identifier, comment: NodeArray[JSDocComment]): JSDocOverrideTag = js.native
@@ -3506,6 +1762,13 @@ trait NodeFactory extends StObject {
   def createJSDocReturnTag(tagName: Identifier, typeExpression: JSDocTypeExpression, comment: java.lang.String): JSDocReturnTag = js.native
   def createJSDocReturnTag(tagName: Identifier, typeExpression: JSDocTypeExpression, comment: NodeArray[JSDocComment]): JSDocReturnTag = js.native
   
+  def createJSDocSatisfiesTag(tagName: Unit, typeExpression: JSDocTypeExpression): JSDocSatisfiesTag = js.native
+  def createJSDocSatisfiesTag(tagName: Unit, typeExpression: JSDocTypeExpression, comment: java.lang.String): JSDocSatisfiesTag = js.native
+  def createJSDocSatisfiesTag(tagName: Unit, typeExpression: JSDocTypeExpression, comment: NodeArray[JSDocComment]): JSDocSatisfiesTag = js.native
+  def createJSDocSatisfiesTag(tagName: Identifier, typeExpression: JSDocTypeExpression): JSDocSatisfiesTag = js.native
+  def createJSDocSatisfiesTag(tagName: Identifier, typeExpression: JSDocTypeExpression, comment: java.lang.String): JSDocSatisfiesTag = js.native
+  def createJSDocSatisfiesTag(tagName: Identifier, typeExpression: JSDocTypeExpression, comment: NodeArray[JSDocComment]): JSDocSatisfiesTag = js.native
+  
   def createJSDocSeeTag(): JSDocSeeTag = js.native
   def createJSDocSeeTag(tagName: Unit, nameExpression: Unit, comment: java.lang.String): JSDocSeeTag = js.native
   def createJSDocSeeTag(tagName: Unit, nameExpression: Unit, comment: NodeArray[JSDocComment]): JSDocSeeTag = js.native
@@ -3593,6 +1856,13 @@ trait NodeFactory extends StObject {
   def createJSDocThisTag(tagName: Identifier, typeExpression: JSDocTypeExpression): JSDocThisTag = js.native
   def createJSDocThisTag(tagName: Identifier, typeExpression: JSDocTypeExpression, comment: java.lang.String): JSDocThisTag = js.native
   def createJSDocThisTag(tagName: Identifier, typeExpression: JSDocTypeExpression, comment: NodeArray[JSDocComment]): JSDocThisTag = js.native
+  
+  def createJSDocThrowsTag(tagName: Identifier): JSDocThrowsTag = js.native
+  def createJSDocThrowsTag(tagName: Identifier, typeExpression: Unit, comment: java.lang.String): JSDocThrowsTag = js.native
+  def createJSDocThrowsTag(tagName: Identifier, typeExpression: Unit, comment: NodeArray[JSDocComment]): JSDocThrowsTag = js.native
+  def createJSDocThrowsTag(tagName: Identifier, typeExpression: JSDocTypeExpression): JSDocThrowsTag = js.native
+  def createJSDocThrowsTag(tagName: Identifier, typeExpression: JSDocTypeExpression, comment: java.lang.String): JSDocThrowsTag = js.native
+  def createJSDocThrowsTag(tagName: Identifier, typeExpression: JSDocTypeExpression, comment: NodeArray[JSDocComment]): JSDocThrowsTag = js.native
   
   def createJSDocTypeExpression(`type`: TypeNode): JSDocTypeExpression = js.native
   
@@ -3701,20 +1971,6 @@ trait NodeFactory extends StObject {
   def createMetaProperty(keywordToken: ImportKeyword, name: Identifier): MetaProperty = js.native
   def createMetaProperty(keywordToken: NewKeyword, name: Identifier): MetaProperty = js.native
   
-  /**
-    * @deprecated Decorators have been combined with modifiers. Callers should use an overload that does not accept a `decorators` parameter.
-    */
-  def createMethodDeclaration(
-    decorators: js.UndefOr[js.Array[Decorator]],
-    modifiers: js.UndefOr[js.Array[Modifier]],
-    asteriskToken: js.UndefOr[AsteriskToken],
-    name: java.lang.String | PropertyName,
-    questionToken: js.UndefOr[QuestionToken],
-    typeParameters: js.UndefOr[js.Array[TypeParameterDeclaration]],
-    parameters: js.Array[ParameterDeclaration],
-    `type`: js.UndefOr[TypeNode],
-    body: js.UndefOr[Block]
-  ): MethodDeclaration = js.native
   def createMethodDeclaration(
     modifiers: js.UndefOr[js.Array[ModifierLike]],
     asteriskToken: js.UndefOr[AsteriskToken],
@@ -3973,53 +2229,10 @@ trait NodeFactory extends StObject {
   
   def createModuleBlock(statements: js.Array[Statement]): ModuleBlock = js.native
   
-  /**
-    * @deprecated Decorators are no longer supported for this function. Callers should use an overload that does not accept a `decorators` parameter.
-    */
-  def createModuleDeclaration(decorators: js.Array[Decorator], modifiers: js.Array[Modifier], name: ModuleName): ModuleDeclaration = js.native
-  def createModuleDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: ModuleName,
-    body: Unit,
-    flags: NodeFlags
-  ): ModuleDeclaration = js.native
-  def createModuleDeclaration(decorators: js.Array[Decorator], modifiers: js.Array[Modifier], name: ModuleName, body: ModuleBody): ModuleDeclaration = js.native
-  def createModuleDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: ModuleName,
-    body: ModuleBody,
-    flags: NodeFlags
-  ): ModuleDeclaration = js.native
-  def createModuleDeclaration(decorators: js.Array[Decorator], modifiers: Unit, name: ModuleName): ModuleDeclaration = js.native
-  def createModuleDeclaration(decorators: js.Array[Decorator], modifiers: Unit, name: ModuleName, body: Unit, flags: NodeFlags): ModuleDeclaration = js.native
-  def createModuleDeclaration(decorators: js.Array[Decorator], modifiers: Unit, name: ModuleName, body: ModuleBody): ModuleDeclaration = js.native
-  def createModuleDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    name: ModuleName,
-    body: ModuleBody,
-    flags: NodeFlags
-  ): ModuleDeclaration = js.native
-  def createModuleDeclaration(decorators: Unit, modifiers: js.Array[Modifier], name: ModuleName): ModuleDeclaration = js.native
-  def createModuleDeclaration(decorators: Unit, modifiers: js.Array[Modifier], name: ModuleName, body: Unit, flags: NodeFlags): ModuleDeclaration = js.native
-  def createModuleDeclaration(decorators: Unit, modifiers: js.Array[Modifier], name: ModuleName, body: ModuleBody): ModuleDeclaration = js.native
-  def createModuleDeclaration(
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    name: ModuleName,
-    body: ModuleBody,
-    flags: NodeFlags
-  ): ModuleDeclaration = js.native
-  def createModuleDeclaration(decorators: Unit, modifiers: Unit, name: ModuleName): ModuleDeclaration = js.native
-  def createModuleDeclaration(decorators: Unit, modifiers: Unit, name: ModuleName, body: Unit, flags: NodeFlags): ModuleDeclaration = js.native
-  def createModuleDeclaration(decorators: Unit, modifiers: Unit, name: ModuleName, body: ModuleBody): ModuleDeclaration = js.native
-  def createModuleDeclaration(decorators: Unit, modifiers: Unit, name: ModuleName, body: ModuleBody, flags: NodeFlags): ModuleDeclaration = js.native
-  def createModuleDeclaration(modifiers: js.Array[Modifier], name: ModuleName): ModuleDeclaration = js.native
-  def createModuleDeclaration(modifiers: js.Array[Modifier], name: ModuleName, body: Unit, flags: NodeFlags): ModuleDeclaration = js.native
-  def createModuleDeclaration(modifiers: js.Array[Modifier], name: ModuleName, body: ModuleBody): ModuleDeclaration = js.native
-  def createModuleDeclaration(modifiers: js.Array[Modifier], name: ModuleName, body: ModuleBody, flags: NodeFlags): ModuleDeclaration = js.native
+  def createModuleDeclaration(modifiers: js.Array[ModifierLike], name: ModuleName): ModuleDeclaration = js.native
+  def createModuleDeclaration(modifiers: js.Array[ModifierLike], name: ModuleName, body: Unit, flags: NodeFlags): ModuleDeclaration = js.native
+  def createModuleDeclaration(modifiers: js.Array[ModifierLike], name: ModuleName, body: ModuleBody): ModuleDeclaration = js.native
+  def createModuleDeclaration(modifiers: js.Array[ModifierLike], name: ModuleName, body: ModuleBody, flags: NodeFlags): ModuleDeclaration = js.native
   def createModuleDeclaration(modifiers: Unit, name: ModuleName): ModuleDeclaration = js.native
   def createModuleDeclaration(modifiers: Unit, name: ModuleName, body: Unit, flags: NodeFlags): ModuleDeclaration = js.native
   def createModuleDeclaration(modifiers: Unit, name: ModuleName, body: ModuleBody): ModuleDeclaration = js.native
@@ -4083,18 +2296,6 @@ trait NodeFactory extends StObject {
   
   def createOptionalTypeNode(`type`: TypeNode): OptionalTypeNode = js.native
   
-  /**
-    * @deprecated Decorators have been combined with modifiers. Callers should use an overload that does not accept a `decorators` parameter.
-    */
-  def createParameterDeclaration(
-    decorators: js.UndefOr[js.Array[Decorator]],
-    modifiers: js.UndefOr[js.Array[Modifier]],
-    dotDotDotToken: js.UndefOr[DotDotDotToken],
-    name: java.lang.String | BindingName,
-    questionToken: js.UndefOr[QuestionToken],
-    `type`: js.UndefOr[TypeNode],
-    initializer: js.UndefOr[Expression]
-  ): ParameterDeclaration = js.native
   def createParameterDeclaration(
     modifiers: js.UndefOr[js.Array[ModifierLike]],
     dotDotDotToken: js.UndefOr[DotDotDotToken],
@@ -4140,17 +2341,6 @@ trait NodeFactory extends StObject {
   def createPropertyAssignment(name: java.lang.String, initializer: Expression): PropertyAssignment = js.native
   def createPropertyAssignment(name: PropertyName, initializer: Expression): PropertyAssignment = js.native
   
-  /**
-    * @deprecated Decorators have been combined with modifiers. Callers should use an overload that does not accept a `decorators` parameter.
-    */
-  def createPropertyDeclaration(
-    decorators: js.UndefOr[js.Array[Decorator]],
-    modifiers: js.UndefOr[js.Array[Modifier]],
-    name: java.lang.String | PropertyName,
-    questionOrExclamationToken: js.UndefOr[QuestionToken | ExclamationToken],
-    `type`: js.UndefOr[TypeNode],
-    initializer: js.UndefOr[Expression]
-  ): PropertyDeclaration = js.native
   def createPropertyDeclaration(modifiers: js.Array[ModifierLike], name: java.lang.String): PropertyDeclaration = js.native
   def createPropertyDeclaration(
     modifiers: js.Array[ModifierLike],
@@ -4360,108 +2550,6 @@ trait NodeFactory extends StObject {
   
   def createSemicolonClassElement(): SemicolonClassElement = js.native
   
-  /**
-    * @deprecated Decorators have been combined with modifiers. Callers should use an overload that does not accept a `decorators` parameter.
-    */
-  def createSetAccessorDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: java.lang.String,
-    parameters: js.Array[ParameterDeclaration]
-  ): SetAccessorDeclaration = js.native
-  def createSetAccessorDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: java.lang.String,
-    parameters: js.Array[ParameterDeclaration],
-    body: Block
-  ): SetAccessorDeclaration = js.native
-  def createSetAccessorDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: PropertyName,
-    parameters: js.Array[ParameterDeclaration]
-  ): SetAccessorDeclaration = js.native
-  def createSetAccessorDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: PropertyName,
-    parameters: js.Array[ParameterDeclaration],
-    body: Block
-  ): SetAccessorDeclaration = js.native
-  def createSetAccessorDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    name: java.lang.String,
-    parameters: js.Array[ParameterDeclaration]
-  ): SetAccessorDeclaration = js.native
-  def createSetAccessorDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    name: java.lang.String,
-    parameters: js.Array[ParameterDeclaration],
-    body: Block
-  ): SetAccessorDeclaration = js.native
-  def createSetAccessorDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    name: PropertyName,
-    parameters: js.Array[ParameterDeclaration]
-  ): SetAccessorDeclaration = js.native
-  def createSetAccessorDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    name: PropertyName,
-    parameters: js.Array[ParameterDeclaration],
-    body: Block
-  ): SetAccessorDeclaration = js.native
-  def createSetAccessorDeclaration(
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    name: java.lang.String,
-    parameters: js.Array[ParameterDeclaration]
-  ): SetAccessorDeclaration = js.native
-  def createSetAccessorDeclaration(
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    name: java.lang.String,
-    parameters: js.Array[ParameterDeclaration],
-    body: Block
-  ): SetAccessorDeclaration = js.native
-  def createSetAccessorDeclaration(
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    name: PropertyName,
-    parameters: js.Array[ParameterDeclaration]
-  ): SetAccessorDeclaration = js.native
-  def createSetAccessorDeclaration(
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    name: PropertyName,
-    parameters: js.Array[ParameterDeclaration],
-    body: Block
-  ): SetAccessorDeclaration = js.native
-  def createSetAccessorDeclaration(
-    decorators: Unit,
-    modifiers: Unit,
-    name: java.lang.String,
-    parameters: js.Array[ParameterDeclaration]
-  ): SetAccessorDeclaration = js.native
-  def createSetAccessorDeclaration(
-    decorators: Unit,
-    modifiers: Unit,
-    name: java.lang.String,
-    parameters: js.Array[ParameterDeclaration],
-    body: Block
-  ): SetAccessorDeclaration = js.native
-  def createSetAccessorDeclaration(decorators: Unit, modifiers: Unit, name: PropertyName, parameters: js.Array[ParameterDeclaration]): SetAccessorDeclaration = js.native
-  def createSetAccessorDeclaration(
-    decorators: Unit,
-    modifiers: Unit,
-    name: PropertyName,
-    parameters: js.Array[ParameterDeclaration],
-    body: Block
-  ): SetAccessorDeclaration = js.native
   def createSetAccessorDeclaration(
     modifiers: js.Array[ModifierLike],
     name: java.lang.String,
@@ -4568,20 +2656,20 @@ trait NodeFactory extends StObject {
   
   def createThrowStatement(expression: Expression): ThrowStatement = js.native
   
+  def createToken(token: typings.typescript.mod.SyntaxKind.EndOfFileToken): EndOfFileToken = js.native
   def createToken(token: FalseKeyword): FalseLiteral = js.native
   def createToken(token: NullKeyword): NullLiteral = js.native
   def createToken(token: SuperKeyword): SuperExpression = js.native
   def createToken(token: ThisKeyword): ThisExpression = js.native
   def createToken(token: TrueKeyword): TrueLiteral = js.native
-  def createToken[TKind /* <: PunctuationSyntaxKind */](token: TKind): PunctuationToken[TKind] = js.native
-  @JSName("createToken")
-  def createToken_TKind_KeywordToken[TKind /* <: KeywordSyntaxKind */](token: TKind): KeywordToken[TKind] = js.native
+  def createToken(token: Unknown): Token[Unknown] = js.native
+  def createToken[TKind /* <: KeywordSyntaxKind */](token: TKind): KeywordToken[TKind] = js.native
   @JSName("createToken")
   def createToken_TKind_KeywordTypeNode[TKind /* <: KeywordTypeSyntaxKind */](token: TKind): KeywordTypeNode[TKind] = js.native
   @JSName("createToken")
   def createToken_TKind_ModifierToken[TKind /* <: ModifierSyntaxKind */](token: TKind): ModifierToken[TKind] = js.native
   @JSName("createToken")
-  def createToken_TKind_Token[TKind /* <: Unknown | typings.typescript.mod.SyntaxKind.EndOfFileToken */](token: TKind): Token[TKind] = js.native
+  def createToken_TKind_PunctuationToken[TKind /* <: PunctuationSyntaxKind */](token: TKind): PunctuationToken[TKind] = js.native
   
   def createTrue(): TrueLiteral = js.native
   
@@ -4592,123 +2680,20 @@ trait NodeFactory extends StObject {
   
   def createTupleTypeNode(elements: js.Array[TypeNode | NamedTupleMember]): TupleTypeNode = js.native
   
-  /**
-    * @deprecated Decorators are no longer supported for this function. Callers should use an overload that does not accept a `decorators` parameter.
-    */
   def createTypeAliasDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
+    modifiers: js.Array[ModifierLike],
     name: java.lang.String,
     typeParameters: js.Array[TypeParameterDeclaration],
     `type`: TypeNode
   ): TypeAliasDeclaration = js.native
+  def createTypeAliasDeclaration(modifiers: js.Array[ModifierLike], name: java.lang.String, typeParameters: Unit, `type`: TypeNode): TypeAliasDeclaration = js.native
   def createTypeAliasDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: java.lang.String,
-    typeParameters: Unit,
-    `type`: TypeNode
-  ): TypeAliasDeclaration = js.native
-  def createTypeAliasDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
+    modifiers: js.Array[ModifierLike],
     name: Identifier,
     typeParameters: js.Array[TypeParameterDeclaration],
     `type`: TypeNode
   ): TypeAliasDeclaration = js.native
-  def createTypeAliasDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: Identifier,
-    typeParameters: Unit,
-    `type`: TypeNode
-  ): TypeAliasDeclaration = js.native
-  def createTypeAliasDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    name: java.lang.String,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    `type`: TypeNode
-  ): TypeAliasDeclaration = js.native
-  def createTypeAliasDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    name: java.lang.String,
-    typeParameters: Unit,
-    `type`: TypeNode
-  ): TypeAliasDeclaration = js.native
-  def createTypeAliasDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    name: Identifier,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    `type`: TypeNode
-  ): TypeAliasDeclaration = js.native
-  def createTypeAliasDeclaration(
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    name: Identifier,
-    typeParameters: Unit,
-    `type`: TypeNode
-  ): TypeAliasDeclaration = js.native
-  def createTypeAliasDeclaration(
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    name: java.lang.String,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    `type`: TypeNode
-  ): TypeAliasDeclaration = js.native
-  def createTypeAliasDeclaration(
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    name: java.lang.String,
-    typeParameters: Unit,
-    `type`: TypeNode
-  ): TypeAliasDeclaration = js.native
-  def createTypeAliasDeclaration(
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    name: Identifier,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    `type`: TypeNode
-  ): TypeAliasDeclaration = js.native
-  def createTypeAliasDeclaration(
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    name: Identifier,
-    typeParameters: Unit,
-    `type`: TypeNode
-  ): TypeAliasDeclaration = js.native
-  def createTypeAliasDeclaration(
-    decorators: Unit,
-    modifiers: Unit,
-    name: java.lang.String,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    `type`: TypeNode
-  ): TypeAliasDeclaration = js.native
-  def createTypeAliasDeclaration(decorators: Unit, modifiers: Unit, name: java.lang.String, typeParameters: Unit, `type`: TypeNode): TypeAliasDeclaration = js.native
-  def createTypeAliasDeclaration(
-    decorators: Unit,
-    modifiers: Unit,
-    name: Identifier,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    `type`: TypeNode
-  ): TypeAliasDeclaration = js.native
-  def createTypeAliasDeclaration(decorators: Unit, modifiers: Unit, name: Identifier, typeParameters: Unit, `type`: TypeNode): TypeAliasDeclaration = js.native
-  def createTypeAliasDeclaration(
-    modifiers: js.Array[Modifier],
-    name: java.lang.String,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    `type`: TypeNode
-  ): TypeAliasDeclaration = js.native
-  def createTypeAliasDeclaration(modifiers: js.Array[Modifier], name: java.lang.String, typeParameters: Unit, `type`: TypeNode): TypeAliasDeclaration = js.native
-  def createTypeAliasDeclaration(
-    modifiers: js.Array[Modifier],
-    name: Identifier,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    `type`: TypeNode
-  ): TypeAliasDeclaration = js.native
-  def createTypeAliasDeclaration(modifiers: js.Array[Modifier], name: Identifier, typeParameters: Unit, `type`: TypeNode): TypeAliasDeclaration = js.native
+  def createTypeAliasDeclaration(modifiers: js.Array[ModifierLike], name: Identifier, typeParameters: Unit, `type`: TypeNode): TypeAliasDeclaration = js.native
   def createTypeAliasDeclaration(
     modifiers: Unit,
     name: java.lang.String,
@@ -4751,15 +2736,6 @@ trait NodeFactory extends StObject {
   def createTypeParameterDeclaration(modifiers: Unit, name: Identifier, constraint: Unit, defaultType: TypeNode): TypeParameterDeclaration = js.native
   def createTypeParameterDeclaration(modifiers: Unit, name: Identifier, constraint: TypeNode): TypeParameterDeclaration = js.native
   def createTypeParameterDeclaration(modifiers: Unit, name: Identifier, constraint: TypeNode, defaultType: TypeNode): TypeParameterDeclaration = js.native
-  /** @deprecated Use the overload that accepts 'modifiers' */
-  def createTypeParameterDeclaration(name: java.lang.String): TypeParameterDeclaration = js.native
-  def createTypeParameterDeclaration(name: java.lang.String, constraint: Unit, defaultType: TypeNode): TypeParameterDeclaration = js.native
-  def createTypeParameterDeclaration(name: java.lang.String, constraint: TypeNode): TypeParameterDeclaration = js.native
-  def createTypeParameterDeclaration(name: java.lang.String, constraint: TypeNode, defaultType: TypeNode): TypeParameterDeclaration = js.native
-  def createTypeParameterDeclaration(name: Identifier): TypeParameterDeclaration = js.native
-  def createTypeParameterDeclaration(name: Identifier, constraint: Unit, defaultType: TypeNode): TypeParameterDeclaration = js.native
-  def createTypeParameterDeclaration(name: Identifier, constraint: TypeNode): TypeParameterDeclaration = js.native
-  def createTypeParameterDeclaration(name: Identifier, constraint: TypeNode, defaultType: TypeNode): TypeParameterDeclaration = js.native
   
   def createTypePredicateNode(assertsModifier: Unit, parameterName: java.lang.String): TypePredicateNode = js.native
   def createTypePredicateNode(assertsModifier: Unit, parameterName: java.lang.String, `type`: TypeNode): TypePredicateNode = js.native
@@ -4818,8 +2794,8 @@ trait NodeFactory extends StObject {
   def createVariableDeclarationList(declarations: js.Array[VariableDeclaration]): VariableDeclarationList = js.native
   def createVariableDeclarationList(declarations: js.Array[VariableDeclaration], flags: NodeFlags): VariableDeclarationList = js.native
   
-  def createVariableStatement(modifiers: js.Array[Modifier], declarationList: js.Array[VariableDeclaration]): VariableStatement = js.native
-  def createVariableStatement(modifiers: js.Array[Modifier], declarationList: VariableDeclarationList): VariableStatement = js.native
+  def createVariableStatement(modifiers: js.Array[ModifierLike], declarationList: js.Array[VariableDeclaration]): VariableStatement = js.native
+  def createVariableStatement(modifiers: js.Array[ModifierLike], declarationList: VariableDeclarationList): VariableStatement = js.native
   def createVariableStatement(modifiers: Unit, declarationList: js.Array[VariableDeclaration]): VariableStatement = js.native
   def createVariableStatement(modifiers: Unit, declarationList: VariableDeclarationList): VariableStatement = js.native
   
@@ -5055,297 +3031,6 @@ trait NodeFactory extends StObject {
   
   def updateClassDeclaration(
     node: ClassDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: Unit,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[ClassElement]
-  ): ClassDeclaration = js.native
-  def updateClassDeclaration(
-    node: ClassDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: Unit,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: Unit,
-    members: js.Array[ClassElement]
-  ): ClassDeclaration = js.native
-  def updateClassDeclaration(
-    node: ClassDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: Unit,
-    typeParameters: Unit,
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[ClassElement]
-  ): ClassDeclaration = js.native
-  def updateClassDeclaration(
-    node: ClassDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: Unit,
-    typeParameters: Unit,
-    heritageClauses: Unit,
-    members: js.Array[ClassElement]
-  ): ClassDeclaration = js.native
-  /**
-    * @deprecated Decorators have been combined with modifiers. Callers should use an overload that does not accept a `decorators` parameter.
-    */
-  def updateClassDeclaration(
-    node: ClassDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: Identifier,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[ClassElement]
-  ): ClassDeclaration = js.native
-  def updateClassDeclaration(
-    node: ClassDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: Identifier,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: Unit,
-    members: js.Array[ClassElement]
-  ): ClassDeclaration = js.native
-  def updateClassDeclaration(
-    node: ClassDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: Identifier,
-    typeParameters: Unit,
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[ClassElement]
-  ): ClassDeclaration = js.native
-  def updateClassDeclaration(
-    node: ClassDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: Identifier,
-    typeParameters: Unit,
-    heritageClauses: Unit,
-    members: js.Array[ClassElement]
-  ): ClassDeclaration = js.native
-  def updateClassDeclaration(
-    node: ClassDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    name: Unit,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[ClassElement]
-  ): ClassDeclaration = js.native
-  def updateClassDeclaration(
-    node: ClassDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    name: Unit,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: Unit,
-    members: js.Array[ClassElement]
-  ): ClassDeclaration = js.native
-  def updateClassDeclaration(
-    node: ClassDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    name: Unit,
-    typeParameters: Unit,
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[ClassElement]
-  ): ClassDeclaration = js.native
-  def updateClassDeclaration(
-    node: ClassDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    name: Unit,
-    typeParameters: Unit,
-    heritageClauses: Unit,
-    members: js.Array[ClassElement]
-  ): ClassDeclaration = js.native
-  def updateClassDeclaration(
-    node: ClassDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    name: Identifier,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[ClassElement]
-  ): ClassDeclaration = js.native
-  def updateClassDeclaration(
-    node: ClassDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    name: Identifier,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: Unit,
-    members: js.Array[ClassElement]
-  ): ClassDeclaration = js.native
-  def updateClassDeclaration(
-    node: ClassDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    name: Identifier,
-    typeParameters: Unit,
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[ClassElement]
-  ): ClassDeclaration = js.native
-  def updateClassDeclaration(
-    node: ClassDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    name: Identifier,
-    typeParameters: Unit,
-    heritageClauses: Unit,
-    members: js.Array[ClassElement]
-  ): ClassDeclaration = js.native
-  def updateClassDeclaration(
-    node: ClassDeclaration,
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    name: Unit,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[ClassElement]
-  ): ClassDeclaration = js.native
-  def updateClassDeclaration(
-    node: ClassDeclaration,
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    name: Unit,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: Unit,
-    members: js.Array[ClassElement]
-  ): ClassDeclaration = js.native
-  def updateClassDeclaration(
-    node: ClassDeclaration,
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    name: Unit,
-    typeParameters: Unit,
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[ClassElement]
-  ): ClassDeclaration = js.native
-  def updateClassDeclaration(
-    node: ClassDeclaration,
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    name: Unit,
-    typeParameters: Unit,
-    heritageClauses: Unit,
-    members: js.Array[ClassElement]
-  ): ClassDeclaration = js.native
-  def updateClassDeclaration(
-    node: ClassDeclaration,
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    name: Identifier,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[ClassElement]
-  ): ClassDeclaration = js.native
-  def updateClassDeclaration(
-    node: ClassDeclaration,
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    name: Identifier,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: Unit,
-    members: js.Array[ClassElement]
-  ): ClassDeclaration = js.native
-  def updateClassDeclaration(
-    node: ClassDeclaration,
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    name: Identifier,
-    typeParameters: Unit,
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[ClassElement]
-  ): ClassDeclaration = js.native
-  def updateClassDeclaration(
-    node: ClassDeclaration,
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    name: Identifier,
-    typeParameters: Unit,
-    heritageClauses: Unit,
-    members: js.Array[ClassElement]
-  ): ClassDeclaration = js.native
-  def updateClassDeclaration(
-    node: ClassDeclaration,
-    decorators: Unit,
-    modifiers: Unit,
-    name: Unit,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[ClassElement]
-  ): ClassDeclaration = js.native
-  def updateClassDeclaration(
-    node: ClassDeclaration,
-    decorators: Unit,
-    modifiers: Unit,
-    name: Unit,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: Unit,
-    members: js.Array[ClassElement]
-  ): ClassDeclaration = js.native
-  def updateClassDeclaration(
-    node: ClassDeclaration,
-    decorators: Unit,
-    modifiers: Unit,
-    name: Unit,
-    typeParameters: Unit,
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[ClassElement]
-  ): ClassDeclaration = js.native
-  def updateClassDeclaration(
-    node: ClassDeclaration,
-    decorators: Unit,
-    modifiers: Unit,
-    name: Unit,
-    typeParameters: Unit,
-    heritageClauses: Unit,
-    members: js.Array[ClassElement]
-  ): ClassDeclaration = js.native
-  def updateClassDeclaration(
-    node: ClassDeclaration,
-    decorators: Unit,
-    modifiers: Unit,
-    name: Identifier,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[ClassElement]
-  ): ClassDeclaration = js.native
-  def updateClassDeclaration(
-    node: ClassDeclaration,
-    decorators: Unit,
-    modifiers: Unit,
-    name: Identifier,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: Unit,
-    members: js.Array[ClassElement]
-  ): ClassDeclaration = js.native
-  def updateClassDeclaration(
-    node: ClassDeclaration,
-    decorators: Unit,
-    modifiers: Unit,
-    name: Identifier,
-    typeParameters: Unit,
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[ClassElement]
-  ): ClassDeclaration = js.native
-  def updateClassDeclaration(
-    node: ClassDeclaration,
-    decorators: Unit,
-    modifiers: Unit,
-    name: Identifier,
-    typeParameters: Unit,
-    heritageClauses: Unit,
-    members: js.Array[ClassElement]
-  ): ClassDeclaration = js.native
-  def updateClassDeclaration(
-    node: ClassDeclaration,
     modifiers: js.Array[ModifierLike],
     name: Unit,
     typeParameters: js.Array[TypeParameterDeclaration],
@@ -5473,297 +3158,6 @@ trait NodeFactory extends StObject {
     members: js.Array[ClassElement]
   ): ClassDeclaration = js.native
   
-  def updateClassExpression(
-    node: ClassExpression,
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: Unit,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[ClassElement]
-  ): ClassExpression = js.native
-  def updateClassExpression(
-    node: ClassExpression,
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: Unit,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: Unit,
-    members: js.Array[ClassElement]
-  ): ClassExpression = js.native
-  def updateClassExpression(
-    node: ClassExpression,
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: Unit,
-    typeParameters: Unit,
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[ClassElement]
-  ): ClassExpression = js.native
-  def updateClassExpression(
-    node: ClassExpression,
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: Unit,
-    typeParameters: Unit,
-    heritageClauses: Unit,
-    members: js.Array[ClassElement]
-  ): ClassExpression = js.native
-  /**
-    * @deprecated Decorators have been combined with modifiers. Callers should use an overload that does not accept a `decorators` parameter.
-    */
-  def updateClassExpression(
-    node: ClassExpression,
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: Identifier,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[ClassElement]
-  ): ClassExpression = js.native
-  def updateClassExpression(
-    node: ClassExpression,
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: Identifier,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: Unit,
-    members: js.Array[ClassElement]
-  ): ClassExpression = js.native
-  def updateClassExpression(
-    node: ClassExpression,
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: Identifier,
-    typeParameters: Unit,
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[ClassElement]
-  ): ClassExpression = js.native
-  def updateClassExpression(
-    node: ClassExpression,
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: Identifier,
-    typeParameters: Unit,
-    heritageClauses: Unit,
-    members: js.Array[ClassElement]
-  ): ClassExpression = js.native
-  def updateClassExpression(
-    node: ClassExpression,
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    name: Unit,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[ClassElement]
-  ): ClassExpression = js.native
-  def updateClassExpression(
-    node: ClassExpression,
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    name: Unit,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: Unit,
-    members: js.Array[ClassElement]
-  ): ClassExpression = js.native
-  def updateClassExpression(
-    node: ClassExpression,
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    name: Unit,
-    typeParameters: Unit,
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[ClassElement]
-  ): ClassExpression = js.native
-  def updateClassExpression(
-    node: ClassExpression,
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    name: Unit,
-    typeParameters: Unit,
-    heritageClauses: Unit,
-    members: js.Array[ClassElement]
-  ): ClassExpression = js.native
-  def updateClassExpression(
-    node: ClassExpression,
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    name: Identifier,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[ClassElement]
-  ): ClassExpression = js.native
-  def updateClassExpression(
-    node: ClassExpression,
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    name: Identifier,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: Unit,
-    members: js.Array[ClassElement]
-  ): ClassExpression = js.native
-  def updateClassExpression(
-    node: ClassExpression,
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    name: Identifier,
-    typeParameters: Unit,
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[ClassElement]
-  ): ClassExpression = js.native
-  def updateClassExpression(
-    node: ClassExpression,
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    name: Identifier,
-    typeParameters: Unit,
-    heritageClauses: Unit,
-    members: js.Array[ClassElement]
-  ): ClassExpression = js.native
-  def updateClassExpression(
-    node: ClassExpression,
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    name: Unit,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[ClassElement]
-  ): ClassExpression = js.native
-  def updateClassExpression(
-    node: ClassExpression,
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    name: Unit,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: Unit,
-    members: js.Array[ClassElement]
-  ): ClassExpression = js.native
-  def updateClassExpression(
-    node: ClassExpression,
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    name: Unit,
-    typeParameters: Unit,
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[ClassElement]
-  ): ClassExpression = js.native
-  def updateClassExpression(
-    node: ClassExpression,
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    name: Unit,
-    typeParameters: Unit,
-    heritageClauses: Unit,
-    members: js.Array[ClassElement]
-  ): ClassExpression = js.native
-  def updateClassExpression(
-    node: ClassExpression,
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    name: Identifier,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[ClassElement]
-  ): ClassExpression = js.native
-  def updateClassExpression(
-    node: ClassExpression,
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    name: Identifier,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: Unit,
-    members: js.Array[ClassElement]
-  ): ClassExpression = js.native
-  def updateClassExpression(
-    node: ClassExpression,
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    name: Identifier,
-    typeParameters: Unit,
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[ClassElement]
-  ): ClassExpression = js.native
-  def updateClassExpression(
-    node: ClassExpression,
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    name: Identifier,
-    typeParameters: Unit,
-    heritageClauses: Unit,
-    members: js.Array[ClassElement]
-  ): ClassExpression = js.native
-  def updateClassExpression(
-    node: ClassExpression,
-    decorators: Unit,
-    modifiers: Unit,
-    name: Unit,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[ClassElement]
-  ): ClassExpression = js.native
-  def updateClassExpression(
-    node: ClassExpression,
-    decorators: Unit,
-    modifiers: Unit,
-    name: Unit,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: Unit,
-    members: js.Array[ClassElement]
-  ): ClassExpression = js.native
-  def updateClassExpression(
-    node: ClassExpression,
-    decorators: Unit,
-    modifiers: Unit,
-    name: Unit,
-    typeParameters: Unit,
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[ClassElement]
-  ): ClassExpression = js.native
-  def updateClassExpression(
-    node: ClassExpression,
-    decorators: Unit,
-    modifiers: Unit,
-    name: Unit,
-    typeParameters: Unit,
-    heritageClauses: Unit,
-    members: js.Array[ClassElement]
-  ): ClassExpression = js.native
-  def updateClassExpression(
-    node: ClassExpression,
-    decorators: Unit,
-    modifiers: Unit,
-    name: Identifier,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[ClassElement]
-  ): ClassExpression = js.native
-  def updateClassExpression(
-    node: ClassExpression,
-    decorators: Unit,
-    modifiers: Unit,
-    name: Identifier,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: Unit,
-    members: js.Array[ClassElement]
-  ): ClassExpression = js.native
-  def updateClassExpression(
-    node: ClassExpression,
-    decorators: Unit,
-    modifiers: Unit,
-    name: Identifier,
-    typeParameters: Unit,
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[ClassElement]
-  ): ClassExpression = js.native
-  def updateClassExpression(
-    node: ClassExpression,
-    decorators: Unit,
-    modifiers: Unit,
-    name: Identifier,
-    typeParameters: Unit,
-    heritageClauses: Unit,
-    members: js.Array[ClassElement]
-  ): ClassExpression = js.native
   def updateClassExpression(
     node: ClassExpression,
     modifiers: js.Array[ModifierLike],
@@ -5894,18 +3288,6 @@ trait NodeFactory extends StObject {
   ): ClassExpression = js.native
   
   def updateClassStaticBlockDeclaration(node: ClassStaticBlockDeclaration, body: Block): ClassStaticBlockDeclaration = js.native
-  /**
-    * @deprecated Decorators are no longer supported for this function. Callers should use an overload that does not accept a `decorators` parameter.
-    */
-  def updateClassStaticBlockDeclaration(
-    node: ClassStaticBlockDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    body: Block
-  ): ClassStaticBlockDeclaration = js.native
-  def updateClassStaticBlockDeclaration(node: ClassStaticBlockDeclaration, decorators: js.Array[Decorator], modifiers: Unit, body: Block): ClassStaticBlockDeclaration = js.native
-  def updateClassStaticBlockDeclaration(node: ClassStaticBlockDeclaration, decorators: Unit, modifiers: js.Array[Modifier], body: Block): ClassStaticBlockDeclaration = js.native
-  def updateClassStaticBlockDeclaration(node: ClassStaticBlockDeclaration, decorators: Unit, modifiers: Unit, body: Block): ClassStaticBlockDeclaration = js.native
   
   def updateCommaListExpression(node: CommaListExpression, elements: js.Array[Expression]): CommaListExpression = js.native
   
@@ -5951,69 +3333,14 @@ trait NodeFactory extends StObject {
     `type`: TypeNode
   ): ConstructSignatureDeclaration = js.native
   
-  /**
-    * @deprecated This node does not support Decorators. Callers should use an overload that does not accept a `decorators` parameter.
-    */
   def updateConstructorDeclaration(
     node: ConstructorDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
+    modifiers: js.Array[ModifierLike],
     parameters: js.Array[ParameterDeclaration]
   ): ConstructorDeclaration = js.native
   def updateConstructorDeclaration(
     node: ConstructorDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    parameters: js.Array[ParameterDeclaration],
-    body: Block
-  ): ConstructorDeclaration = js.native
-  def updateConstructorDeclaration(
-    node: ConstructorDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    parameters: js.Array[ParameterDeclaration]
-  ): ConstructorDeclaration = js.native
-  def updateConstructorDeclaration(
-    node: ConstructorDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    parameters: js.Array[ParameterDeclaration],
-    body: Block
-  ): ConstructorDeclaration = js.native
-  def updateConstructorDeclaration(
-    node: ConstructorDeclaration,
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    parameters: js.Array[ParameterDeclaration]
-  ): ConstructorDeclaration = js.native
-  def updateConstructorDeclaration(
-    node: ConstructorDeclaration,
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    parameters: js.Array[ParameterDeclaration],
-    body: Block
-  ): ConstructorDeclaration = js.native
-  def updateConstructorDeclaration(
-    node: ConstructorDeclaration,
-    decorators: Unit,
-    modifiers: Unit,
-    parameters: js.Array[ParameterDeclaration]
-  ): ConstructorDeclaration = js.native
-  def updateConstructorDeclaration(
-    node: ConstructorDeclaration,
-    decorators: Unit,
-    modifiers: Unit,
-    parameters: js.Array[ParameterDeclaration],
-    body: Block
-  ): ConstructorDeclaration = js.native
-  def updateConstructorDeclaration(
-    node: ConstructorDeclaration,
-    modifiers: js.Array[Modifier],
-    parameters: js.Array[ParameterDeclaration]
-  ): ConstructorDeclaration = js.native
-  def updateConstructorDeclaration(
-    node: ConstructorDeclaration,
-    modifiers: js.Array[Modifier],
+    modifiers: js.Array[ModifierLike],
     parameters: js.Array[ParameterDeclaration],
     body: Block
   ): ConstructorDeclaration = js.native
@@ -6053,19 +3380,6 @@ trait NodeFactory extends StObject {
     parameters: NodeArray[ParameterDeclaration],
     `type`: TypeNode
   ): ConstructorTypeNode = js.native
-  def updateConstructorTypeNode(
-    node: ConstructorTypeNode,
-    typeParameters: Unit,
-    parameters: NodeArray[ParameterDeclaration],
-    `type`: TypeNode
-  ): ConstructorTypeNode = js.native
-  /** @deprecated Use the overload that accepts 'modifiers' */
-  def updateConstructorTypeNode(
-    node: ConstructorTypeNode,
-    typeParameters: NodeArray[TypeParameterDeclaration],
-    parameters: NodeArray[ParameterDeclaration],
-    `type`: TypeNode
-  ): ConstructorTypeNode = js.native
   
   def updateContinueStatement(node: ContinueStatement): ContinueStatement = js.native
   def updateContinueStatement(node: ContinueStatement, label: Identifier): ContinueStatement = js.native
@@ -6093,40 +3407,9 @@ trait NodeFactory extends StObject {
   
   def updateElementAccessExpression(node: ElementAccessExpression, expression: Expression, argumentExpression: Expression): ElementAccessExpression = js.native
   
-  /**
-    * @deprecated Decorators are no longer supported for this function. Callers should use an overload that does not accept a `decorators` parameter.
-    */
   def updateEnumDeclaration(
     node: EnumDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: Identifier,
-    members: js.Array[EnumMember]
-  ): EnumDeclaration = js.native
-  def updateEnumDeclaration(
-    node: EnumDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    name: Identifier,
-    members: js.Array[EnumMember]
-  ): EnumDeclaration = js.native
-  def updateEnumDeclaration(
-    node: EnumDeclaration,
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    name: Identifier,
-    members: js.Array[EnumMember]
-  ): EnumDeclaration = js.native
-  def updateEnumDeclaration(
-    node: EnumDeclaration,
-    decorators: Unit,
-    modifiers: Unit,
-    name: Identifier,
-    members: js.Array[EnumMember]
-  ): EnumDeclaration = js.native
-  def updateEnumDeclaration(
-    node: EnumDeclaration,
-    modifiers: js.Array[Modifier],
+    modifiers: js.Array[ModifierLike],
     name: Identifier,
     members: js.Array[EnumMember]
   ): EnumDeclaration = js.native
@@ -6135,34 +3418,13 @@ trait NodeFactory extends StObject {
   def updateEnumMember(node: EnumMember, name: PropertyName): EnumMember = js.native
   def updateEnumMember(node: EnumMember, name: PropertyName, initializer: Expression): EnumMember = js.native
   
-  /**
-    * @deprecated Decorators are no longer supported for this function. Callers should use an overload that does not accept a `decorators` parameter.
-    */
-  def updateExportAssignment(
-    node: ExportAssignment,
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    expression: Expression
-  ): ExportAssignment = js.native
-  def updateExportAssignment(node: ExportAssignment, decorators: js.Array[Decorator], modifiers: Unit, expression: Expression): ExportAssignment = js.native
-  def updateExportAssignment(node: ExportAssignment, decorators: Unit, modifiers: js.Array[Modifier], expression: Expression): ExportAssignment = js.native
-  def updateExportAssignment(node: ExportAssignment, decorators: Unit, modifiers: Unit, expression: Expression): ExportAssignment = js.native
-  def updateExportAssignment(node: ExportAssignment, modifiers: js.Array[Modifier], expression: Expression): ExportAssignment = js.native
+  def updateExportAssignment(node: ExportAssignment, modifiers: js.Array[ModifierLike], expression: Expression): ExportAssignment = js.native
   def updateExportAssignment(node: ExportAssignment, modifiers: Unit, expression: Expression): ExportAssignment = js.native
   
-  /**
-    * @deprecated Decorators are no longer supported for this function. Callers should use an overload that does not accept a `decorators` parameter.
-    */
+  def updateExportDeclaration(node: ExportDeclaration, modifiers: js.Array[ModifierLike], isTypeOnly: Boolean): ExportDeclaration = js.native
   def updateExportDeclaration(
     node: ExportDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    isTypeOnly: Boolean
-  ): ExportDeclaration = js.native
-  def updateExportDeclaration(
-    node: ExportDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
+    modifiers: js.Array[ModifierLike],
     isTypeOnly: Boolean,
     exportClause: Unit,
     moduleSpecifier: Unit,
@@ -6170,16 +3432,14 @@ trait NodeFactory extends StObject {
   ): ExportDeclaration = js.native
   def updateExportDeclaration(
     node: ExportDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
+    modifiers: js.Array[ModifierLike],
     isTypeOnly: Boolean,
     exportClause: Unit,
     moduleSpecifier: Expression
   ): ExportDeclaration = js.native
   def updateExportDeclaration(
     node: ExportDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
+    modifiers: js.Array[ModifierLike],
     isTypeOnly: Boolean,
     exportClause: Unit,
     moduleSpecifier: Expression,
@@ -6187,15 +3447,13 @@ trait NodeFactory extends StObject {
   ): ExportDeclaration = js.native
   def updateExportDeclaration(
     node: ExportDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
+    modifiers: js.Array[ModifierLike],
     isTypeOnly: Boolean,
     exportClause: NamedExportBindings
   ): ExportDeclaration = js.native
   def updateExportDeclaration(
     node: ExportDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
+    modifiers: js.Array[ModifierLike],
     isTypeOnly: Boolean,
     exportClause: NamedExportBindings,
     moduleSpecifier: Unit,
@@ -6203,249 +3461,14 @@ trait NodeFactory extends StObject {
   ): ExportDeclaration = js.native
   def updateExportDeclaration(
     node: ExportDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
+    modifiers: js.Array[ModifierLike],
     isTypeOnly: Boolean,
     exportClause: NamedExportBindings,
     moduleSpecifier: Expression
   ): ExportDeclaration = js.native
   def updateExportDeclaration(
     node: ExportDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    isTypeOnly: Boolean,
-    exportClause: NamedExportBindings,
-    moduleSpecifier: Expression,
-    assertClause: AssertClause
-  ): ExportDeclaration = js.native
-  def updateExportDeclaration(node: ExportDeclaration, decorators: js.Array[Decorator], modifiers: Unit, isTypeOnly: Boolean): ExportDeclaration = js.native
-  def updateExportDeclaration(
-    node: ExportDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    isTypeOnly: Boolean,
-    exportClause: Unit,
-    moduleSpecifier: Unit,
-    assertClause: AssertClause
-  ): ExportDeclaration = js.native
-  def updateExportDeclaration(
-    node: ExportDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    isTypeOnly: Boolean,
-    exportClause: Unit,
-    moduleSpecifier: Expression
-  ): ExportDeclaration = js.native
-  def updateExportDeclaration(
-    node: ExportDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    isTypeOnly: Boolean,
-    exportClause: Unit,
-    moduleSpecifier: Expression,
-    assertClause: AssertClause
-  ): ExportDeclaration = js.native
-  def updateExportDeclaration(
-    node: ExportDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    isTypeOnly: Boolean,
-    exportClause: NamedExportBindings
-  ): ExportDeclaration = js.native
-  def updateExportDeclaration(
-    node: ExportDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    isTypeOnly: Boolean,
-    exportClause: NamedExportBindings,
-    moduleSpecifier: Unit,
-    assertClause: AssertClause
-  ): ExportDeclaration = js.native
-  def updateExportDeclaration(
-    node: ExportDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    isTypeOnly: Boolean,
-    exportClause: NamedExportBindings,
-    moduleSpecifier: Expression
-  ): ExportDeclaration = js.native
-  def updateExportDeclaration(
-    node: ExportDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    isTypeOnly: Boolean,
-    exportClause: NamedExportBindings,
-    moduleSpecifier: Expression,
-    assertClause: AssertClause
-  ): ExportDeclaration = js.native
-  def updateExportDeclaration(node: ExportDeclaration, decorators: Unit, modifiers: js.Array[Modifier], isTypeOnly: Boolean): ExportDeclaration = js.native
-  def updateExportDeclaration(
-    node: ExportDeclaration,
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    isTypeOnly: Boolean,
-    exportClause: Unit,
-    moduleSpecifier: Unit,
-    assertClause: AssertClause
-  ): ExportDeclaration = js.native
-  def updateExportDeclaration(
-    node: ExportDeclaration,
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    isTypeOnly: Boolean,
-    exportClause: Unit,
-    moduleSpecifier: Expression
-  ): ExportDeclaration = js.native
-  def updateExportDeclaration(
-    node: ExportDeclaration,
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    isTypeOnly: Boolean,
-    exportClause: Unit,
-    moduleSpecifier: Expression,
-    assertClause: AssertClause
-  ): ExportDeclaration = js.native
-  def updateExportDeclaration(
-    node: ExportDeclaration,
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    isTypeOnly: Boolean,
-    exportClause: NamedExportBindings
-  ): ExportDeclaration = js.native
-  def updateExportDeclaration(
-    node: ExportDeclaration,
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    isTypeOnly: Boolean,
-    exportClause: NamedExportBindings,
-    moduleSpecifier: Unit,
-    assertClause: AssertClause
-  ): ExportDeclaration = js.native
-  def updateExportDeclaration(
-    node: ExportDeclaration,
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    isTypeOnly: Boolean,
-    exportClause: NamedExportBindings,
-    moduleSpecifier: Expression
-  ): ExportDeclaration = js.native
-  def updateExportDeclaration(
-    node: ExportDeclaration,
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    isTypeOnly: Boolean,
-    exportClause: NamedExportBindings,
-    moduleSpecifier: Expression,
-    assertClause: AssertClause
-  ): ExportDeclaration = js.native
-  def updateExportDeclaration(node: ExportDeclaration, decorators: Unit, modifiers: Unit, isTypeOnly: Boolean): ExportDeclaration = js.native
-  def updateExportDeclaration(
-    node: ExportDeclaration,
-    decorators: Unit,
-    modifiers: Unit,
-    isTypeOnly: Boolean,
-    exportClause: Unit,
-    moduleSpecifier: Unit,
-    assertClause: AssertClause
-  ): ExportDeclaration = js.native
-  def updateExportDeclaration(
-    node: ExportDeclaration,
-    decorators: Unit,
-    modifiers: Unit,
-    isTypeOnly: Boolean,
-    exportClause: Unit,
-    moduleSpecifier: Expression
-  ): ExportDeclaration = js.native
-  def updateExportDeclaration(
-    node: ExportDeclaration,
-    decorators: Unit,
-    modifiers: Unit,
-    isTypeOnly: Boolean,
-    exportClause: Unit,
-    moduleSpecifier: Expression,
-    assertClause: AssertClause
-  ): ExportDeclaration = js.native
-  def updateExportDeclaration(
-    node: ExportDeclaration,
-    decorators: Unit,
-    modifiers: Unit,
-    isTypeOnly: Boolean,
-    exportClause: NamedExportBindings
-  ): ExportDeclaration = js.native
-  def updateExportDeclaration(
-    node: ExportDeclaration,
-    decorators: Unit,
-    modifiers: Unit,
-    isTypeOnly: Boolean,
-    exportClause: NamedExportBindings,
-    moduleSpecifier: Unit,
-    assertClause: AssertClause
-  ): ExportDeclaration = js.native
-  def updateExportDeclaration(
-    node: ExportDeclaration,
-    decorators: Unit,
-    modifiers: Unit,
-    isTypeOnly: Boolean,
-    exportClause: NamedExportBindings,
-    moduleSpecifier: Expression
-  ): ExportDeclaration = js.native
-  def updateExportDeclaration(
-    node: ExportDeclaration,
-    decorators: Unit,
-    modifiers: Unit,
-    isTypeOnly: Boolean,
-    exportClause: NamedExportBindings,
-    moduleSpecifier: Expression,
-    assertClause: AssertClause
-  ): ExportDeclaration = js.native
-  def updateExportDeclaration(node: ExportDeclaration, modifiers: js.Array[Modifier], isTypeOnly: Boolean): ExportDeclaration = js.native
-  def updateExportDeclaration(
-    node: ExportDeclaration,
-    modifiers: js.Array[Modifier],
-    isTypeOnly: Boolean,
-    exportClause: Unit,
-    moduleSpecifier: Unit,
-    assertClause: AssertClause
-  ): ExportDeclaration = js.native
-  def updateExportDeclaration(
-    node: ExportDeclaration,
-    modifiers: js.Array[Modifier],
-    isTypeOnly: Boolean,
-    exportClause: Unit,
-    moduleSpecifier: Expression
-  ): ExportDeclaration = js.native
-  def updateExportDeclaration(
-    node: ExportDeclaration,
-    modifiers: js.Array[Modifier],
-    isTypeOnly: Boolean,
-    exportClause: Unit,
-    moduleSpecifier: Expression,
-    assertClause: AssertClause
-  ): ExportDeclaration = js.native
-  def updateExportDeclaration(
-    node: ExportDeclaration,
-    modifiers: js.Array[Modifier],
-    isTypeOnly: Boolean,
-    exportClause: NamedExportBindings
-  ): ExportDeclaration = js.native
-  def updateExportDeclaration(
-    node: ExportDeclaration,
-    modifiers: js.Array[Modifier],
-    isTypeOnly: Boolean,
-    exportClause: NamedExportBindings,
-    moduleSpecifier: Unit,
-    assertClause: AssertClause
-  ): ExportDeclaration = js.native
-  def updateExportDeclaration(
-    node: ExportDeclaration,
-    modifiers: js.Array[Modifier],
-    isTypeOnly: Boolean,
-    exportClause: NamedExportBindings,
-    moduleSpecifier: Expression
-  ): ExportDeclaration = js.native
-  def updateExportDeclaration(
-    node: ExportDeclaration,
-    modifiers: js.Array[Modifier],
+    modifiers: js.Array[ModifierLike],
     isTypeOnly: Boolean,
     exportClause: NamedExportBindings,
     moduleSpecifier: Expression,
@@ -6578,20 +3601,6 @@ trait NodeFactory extends StObject {
     statement: Statement
   ): ForStatement = js.native
   
-  /**
-    * @deprecated Decorators are no longer supported for this function. Callers should use an overload that does not accept a `decorators` parameter.
-    */
-  def updateFunctionDeclaration(
-    node: FunctionDeclaration,
-    decorators: js.UndefOr[js.Array[Decorator]],
-    modifiers: js.UndefOr[js.Array[Modifier]],
-    asteriskToken: js.UndefOr[AsteriskToken],
-    name: js.UndefOr[Identifier],
-    typeParameters: js.UndefOr[js.Array[TypeParameterDeclaration]],
-    parameters: js.Array[ParameterDeclaration],
-    `type`: js.UndefOr[TypeNode],
-    body: js.UndefOr[Block]
-  ): FunctionDeclaration = js.native
   def updateFunctionDeclaration(
     node: FunctionDeclaration,
     modifiers: js.UndefOr[js.Array[ModifierLike]],
@@ -6937,141 +3946,6 @@ trait NodeFactory extends StObject {
     `type`: TypeNode
   ): FunctionTypeNode = js.native
   
-  /**
-    * @deprecated Decorators have been combined with modifiers. Callers should use an overload that does not accept a `decorators` parameter.
-    */
-  def updateGetAccessorDeclaration(
-    node: GetAccessorDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: PropertyName,
-    parameters: js.Array[ParameterDeclaration]
-  ): GetAccessorDeclaration = js.native
-  def updateGetAccessorDeclaration(
-    node: GetAccessorDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: PropertyName,
-    parameters: js.Array[ParameterDeclaration],
-    `type`: Unit,
-    body: Block
-  ): GetAccessorDeclaration = js.native
-  def updateGetAccessorDeclaration(
-    node: GetAccessorDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: PropertyName,
-    parameters: js.Array[ParameterDeclaration],
-    `type`: TypeNode
-  ): GetAccessorDeclaration = js.native
-  def updateGetAccessorDeclaration(
-    node: GetAccessorDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: PropertyName,
-    parameters: js.Array[ParameterDeclaration],
-    `type`: TypeNode,
-    body: Block
-  ): GetAccessorDeclaration = js.native
-  def updateGetAccessorDeclaration(
-    node: GetAccessorDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    name: PropertyName,
-    parameters: js.Array[ParameterDeclaration]
-  ): GetAccessorDeclaration = js.native
-  def updateGetAccessorDeclaration(
-    node: GetAccessorDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    name: PropertyName,
-    parameters: js.Array[ParameterDeclaration],
-    `type`: Unit,
-    body: Block
-  ): GetAccessorDeclaration = js.native
-  def updateGetAccessorDeclaration(
-    node: GetAccessorDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    name: PropertyName,
-    parameters: js.Array[ParameterDeclaration],
-    `type`: TypeNode
-  ): GetAccessorDeclaration = js.native
-  def updateGetAccessorDeclaration(
-    node: GetAccessorDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    name: PropertyName,
-    parameters: js.Array[ParameterDeclaration],
-    `type`: TypeNode,
-    body: Block
-  ): GetAccessorDeclaration = js.native
-  def updateGetAccessorDeclaration(
-    node: GetAccessorDeclaration,
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    name: PropertyName,
-    parameters: js.Array[ParameterDeclaration]
-  ): GetAccessorDeclaration = js.native
-  def updateGetAccessorDeclaration(
-    node: GetAccessorDeclaration,
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    name: PropertyName,
-    parameters: js.Array[ParameterDeclaration],
-    `type`: Unit,
-    body: Block
-  ): GetAccessorDeclaration = js.native
-  def updateGetAccessorDeclaration(
-    node: GetAccessorDeclaration,
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    name: PropertyName,
-    parameters: js.Array[ParameterDeclaration],
-    `type`: TypeNode
-  ): GetAccessorDeclaration = js.native
-  def updateGetAccessorDeclaration(
-    node: GetAccessorDeclaration,
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    name: PropertyName,
-    parameters: js.Array[ParameterDeclaration],
-    `type`: TypeNode,
-    body: Block
-  ): GetAccessorDeclaration = js.native
-  def updateGetAccessorDeclaration(
-    node: GetAccessorDeclaration,
-    decorators: Unit,
-    modifiers: Unit,
-    name: PropertyName,
-    parameters: js.Array[ParameterDeclaration]
-  ): GetAccessorDeclaration = js.native
-  def updateGetAccessorDeclaration(
-    node: GetAccessorDeclaration,
-    decorators: Unit,
-    modifiers: Unit,
-    name: PropertyName,
-    parameters: js.Array[ParameterDeclaration],
-    `type`: Unit,
-    body: Block
-  ): GetAccessorDeclaration = js.native
-  def updateGetAccessorDeclaration(
-    node: GetAccessorDeclaration,
-    decorators: Unit,
-    modifiers: Unit,
-    name: PropertyName,
-    parameters: js.Array[ParameterDeclaration],
-    `type`: TypeNode
-  ): GetAccessorDeclaration = js.native
-  def updateGetAccessorDeclaration(
-    node: GetAccessorDeclaration,
-    decorators: Unit,
-    modifiers: Unit,
-    name: PropertyName,
-    parameters: js.Array[ParameterDeclaration],
-    `type`: TypeNode,
-    body: Block
-  ): GetAccessorDeclaration = js.native
   def updateGetAccessorDeclaration(
     node: GetAccessorDeclaration,
     modifiers: js.Array[ModifierLike],
@@ -7143,149 +4017,26 @@ trait NodeFactory extends StObject {
   
   def updateImportDeclaration(
     node: ImportDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
+    modifiers: js.Array[ModifierLike],
     importClause: Unit,
     moduleSpecifier: Expression
   ): ImportDeclaration = js.native
   def updateImportDeclaration(
     node: ImportDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    importClause: Unit,
-    moduleSpecifier: Expression,
-    assertClause: AssertClause
-  ): ImportDeclaration = js.native
-  /**
-    * @deprecated Decorators are no longer supported for this function. Callers should use an overload that does not accept a `decorators` parameter.
-    */
-  def updateImportDeclaration(
-    node: ImportDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    importClause: ImportClause,
-    moduleSpecifier: Expression
-  ): ImportDeclaration = js.native
-  def updateImportDeclaration(
-    node: ImportDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    importClause: ImportClause,
-    moduleSpecifier: Expression,
-    assertClause: AssertClause
-  ): ImportDeclaration = js.native
-  def updateImportDeclaration(
-    node: ImportDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    importClause: Unit,
-    moduleSpecifier: Expression
-  ): ImportDeclaration = js.native
-  def updateImportDeclaration(
-    node: ImportDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
+    modifiers: js.Array[ModifierLike],
     importClause: Unit,
     moduleSpecifier: Expression,
     assertClause: AssertClause
   ): ImportDeclaration = js.native
   def updateImportDeclaration(
     node: ImportDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
+    modifiers: js.Array[ModifierLike],
     importClause: ImportClause,
     moduleSpecifier: Expression
   ): ImportDeclaration = js.native
   def updateImportDeclaration(
     node: ImportDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    importClause: ImportClause,
-    moduleSpecifier: Expression,
-    assertClause: AssertClause
-  ): ImportDeclaration = js.native
-  def updateImportDeclaration(
-    node: ImportDeclaration,
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    importClause: Unit,
-    moduleSpecifier: Expression
-  ): ImportDeclaration = js.native
-  def updateImportDeclaration(
-    node: ImportDeclaration,
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    importClause: Unit,
-    moduleSpecifier: Expression,
-    assertClause: AssertClause
-  ): ImportDeclaration = js.native
-  def updateImportDeclaration(
-    node: ImportDeclaration,
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    importClause: ImportClause,
-    moduleSpecifier: Expression
-  ): ImportDeclaration = js.native
-  def updateImportDeclaration(
-    node: ImportDeclaration,
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    importClause: ImportClause,
-    moduleSpecifier: Expression,
-    assertClause: AssertClause
-  ): ImportDeclaration = js.native
-  def updateImportDeclaration(
-    node: ImportDeclaration,
-    decorators: Unit,
-    modifiers: Unit,
-    importClause: Unit,
-    moduleSpecifier: Expression
-  ): ImportDeclaration = js.native
-  def updateImportDeclaration(
-    node: ImportDeclaration,
-    decorators: Unit,
-    modifiers: Unit,
-    importClause: Unit,
-    moduleSpecifier: Expression,
-    assertClause: AssertClause
-  ): ImportDeclaration = js.native
-  def updateImportDeclaration(
-    node: ImportDeclaration,
-    decorators: Unit,
-    modifiers: Unit,
-    importClause: ImportClause,
-    moduleSpecifier: Expression
-  ): ImportDeclaration = js.native
-  def updateImportDeclaration(
-    node: ImportDeclaration,
-    decorators: Unit,
-    modifiers: Unit,
-    importClause: ImportClause,
-    moduleSpecifier: Expression,
-    assertClause: AssertClause
-  ): ImportDeclaration = js.native
-  def updateImportDeclaration(
-    node: ImportDeclaration,
-    modifiers: js.Array[Modifier],
-    importClause: Unit,
-    moduleSpecifier: Expression
-  ): ImportDeclaration = js.native
-  def updateImportDeclaration(
-    node: ImportDeclaration,
-    modifiers: js.Array[Modifier],
-    importClause: Unit,
-    moduleSpecifier: Expression,
-    assertClause: AssertClause
-  ): ImportDeclaration = js.native
-  def updateImportDeclaration(
-    node: ImportDeclaration,
-    modifiers: js.Array[Modifier],
-    importClause: ImportClause,
-    moduleSpecifier: Expression
-  ): ImportDeclaration = js.native
-  def updateImportDeclaration(
-    node: ImportDeclaration,
-    modifiers: js.Array[Modifier],
+    modifiers: js.Array[ModifierLike],
     importClause: ImportClause,
     moduleSpecifier: Expression,
     assertClause: AssertClause
@@ -7307,44 +4058,9 @@ trait NodeFactory extends StObject {
     assertClause: AssertClause
   ): ImportDeclaration = js.native
   
-  /**
-    * @deprecated Decorators are no longer supported for this function. Callers should use an overload that does not accept a `decorators` parameter.
-    */
   def updateImportEqualsDeclaration(
     node: ImportEqualsDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    isTypeOnly: Boolean,
-    name: Identifier,
-    moduleReference: ModuleReference
-  ): ImportEqualsDeclaration = js.native
-  def updateImportEqualsDeclaration(
-    node: ImportEqualsDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    isTypeOnly: Boolean,
-    name: Identifier,
-    moduleReference: ModuleReference
-  ): ImportEqualsDeclaration = js.native
-  def updateImportEqualsDeclaration(
-    node: ImportEqualsDeclaration,
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    isTypeOnly: Boolean,
-    name: Identifier,
-    moduleReference: ModuleReference
-  ): ImportEqualsDeclaration = js.native
-  def updateImportEqualsDeclaration(
-    node: ImportEqualsDeclaration,
-    decorators: Unit,
-    modifiers: Unit,
-    isTypeOnly: Boolean,
-    name: Identifier,
-    moduleReference: ModuleReference
-  ): ImportEqualsDeclaration = js.native
-  def updateImportEqualsDeclaration(
-    node: ImportEqualsDeclaration,
-    modifiers: js.Array[Modifier],
+    modifiers: js.Array[ModifierLike],
     isTypeOnly: Boolean,
     name: Identifier,
     moduleReference: ModuleReference
@@ -7464,66 +4180,10 @@ trait NodeFactory extends StObject {
     typeArguments: Unit,
     isTypeOf: Boolean
   ): ImportTypeNode = js.native
-  def updateImportTypeNode(node: ImportTypeNode, argument: TypeNode, qualifier: Unit, typeArguments: js.Array[TypeNode]): ImportTypeNode = js.native
-  def updateImportTypeNode(
-    node: ImportTypeNode,
-    argument: TypeNode,
-    qualifier: Unit,
-    typeArguments: js.Array[TypeNode],
-    isTypeOf: Boolean
-  ): ImportTypeNode = js.native
-  def updateImportTypeNode(node: ImportTypeNode, argument: TypeNode, qualifier: Unit, typeArguments: Unit, isTypeOf: Boolean): ImportTypeNode = js.native
-  def updateImportTypeNode(node: ImportTypeNode, argument: TypeNode, qualifier: EntityName): ImportTypeNode = js.native
-  def updateImportTypeNode(node: ImportTypeNode, argument: TypeNode, qualifier: EntityName, typeArguments: js.Array[TypeNode]): ImportTypeNode = js.native
-  def updateImportTypeNode(
-    node: ImportTypeNode,
-    argument: TypeNode,
-    qualifier: EntityName,
-    typeArguments: js.Array[TypeNode],
-    isTypeOf: Boolean
-  ): ImportTypeNode = js.native
-  def updateImportTypeNode(
-    node: ImportTypeNode,
-    argument: TypeNode,
-    qualifier: EntityName,
-    typeArguments: Unit,
-    isTypeOf: Boolean
-  ): ImportTypeNode = js.native
   
-  /**
-    * @deprecated Decorators and modifiers are no longer supported for this function. Callers should use an overload that does not accept the `decorators` and `modifiers` parameters.
-    */
   def updateIndexSignature(
     node: IndexSignatureDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    parameters: js.Array[ParameterDeclaration],
-    `type`: TypeNode
-  ): IndexSignatureDeclaration = js.native
-  def updateIndexSignature(
-    node: IndexSignatureDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    parameters: js.Array[ParameterDeclaration],
-    `type`: TypeNode
-  ): IndexSignatureDeclaration = js.native
-  def updateIndexSignature(
-    node: IndexSignatureDeclaration,
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    parameters: js.Array[ParameterDeclaration],
-    `type`: TypeNode
-  ): IndexSignatureDeclaration = js.native
-  def updateIndexSignature(
-    node: IndexSignatureDeclaration,
-    decorators: Unit,
-    modifiers: Unit,
-    parameters: js.Array[ParameterDeclaration],
-    `type`: TypeNode
-  ): IndexSignatureDeclaration = js.native
-  def updateIndexSignature(
-    node: IndexSignatureDeclaration,
-    modifiers: js.Array[Modifier],
+    modifiers: js.Array[ModifierLike],
     parameters: js.Array[ParameterDeclaration],
     `type`: TypeNode
   ): IndexSignatureDeclaration = js.native
@@ -7538,13 +4198,9 @@ trait NodeFactory extends StObject {
   
   def updateInferTypeNode(node: InferTypeNode, typeParameter: TypeParameterDeclaration): InferTypeNode = js.native
   
-  /**
-    * @deprecated Decorators are no longer supported for this function. Callers should use an overload that does not accept a `decorators` parameter.
-    */
   def updateInterfaceDeclaration(
     node: InterfaceDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
+    modifiers: js.Array[ModifierLike],
     name: Identifier,
     typeParameters: js.Array[TypeParameterDeclaration],
     heritageClauses: js.Array[HeritageClause],
@@ -7552,8 +4208,7 @@ trait NodeFactory extends StObject {
   ): InterfaceDeclaration = js.native
   def updateInterfaceDeclaration(
     node: InterfaceDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
+    modifiers: js.Array[ModifierLike],
     name: Identifier,
     typeParameters: js.Array[TypeParameterDeclaration],
     heritageClauses: Unit,
@@ -7561,8 +4216,7 @@ trait NodeFactory extends StObject {
   ): InterfaceDeclaration = js.native
   def updateInterfaceDeclaration(
     node: InterfaceDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
+    modifiers: js.Array[ModifierLike],
     name: Identifier,
     typeParameters: Unit,
     heritageClauses: js.Array[HeritageClause],
@@ -7570,148 +4224,7 @@ trait NodeFactory extends StObject {
   ): InterfaceDeclaration = js.native
   def updateInterfaceDeclaration(
     node: InterfaceDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: Identifier,
-    typeParameters: Unit,
-    heritageClauses: Unit,
-    members: js.Array[TypeElement]
-  ): InterfaceDeclaration = js.native
-  def updateInterfaceDeclaration(
-    node: InterfaceDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    name: Identifier,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[TypeElement]
-  ): InterfaceDeclaration = js.native
-  def updateInterfaceDeclaration(
-    node: InterfaceDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    name: Identifier,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: Unit,
-    members: js.Array[TypeElement]
-  ): InterfaceDeclaration = js.native
-  def updateInterfaceDeclaration(
-    node: InterfaceDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    name: Identifier,
-    typeParameters: Unit,
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[TypeElement]
-  ): InterfaceDeclaration = js.native
-  def updateInterfaceDeclaration(
-    node: InterfaceDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    name: Identifier,
-    typeParameters: Unit,
-    heritageClauses: Unit,
-    members: js.Array[TypeElement]
-  ): InterfaceDeclaration = js.native
-  def updateInterfaceDeclaration(
-    node: InterfaceDeclaration,
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    name: Identifier,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[TypeElement]
-  ): InterfaceDeclaration = js.native
-  def updateInterfaceDeclaration(
-    node: InterfaceDeclaration,
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    name: Identifier,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: Unit,
-    members: js.Array[TypeElement]
-  ): InterfaceDeclaration = js.native
-  def updateInterfaceDeclaration(
-    node: InterfaceDeclaration,
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    name: Identifier,
-    typeParameters: Unit,
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[TypeElement]
-  ): InterfaceDeclaration = js.native
-  def updateInterfaceDeclaration(
-    node: InterfaceDeclaration,
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    name: Identifier,
-    typeParameters: Unit,
-    heritageClauses: Unit,
-    members: js.Array[TypeElement]
-  ): InterfaceDeclaration = js.native
-  def updateInterfaceDeclaration(
-    node: InterfaceDeclaration,
-    decorators: Unit,
-    modifiers: Unit,
-    name: Identifier,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[TypeElement]
-  ): InterfaceDeclaration = js.native
-  def updateInterfaceDeclaration(
-    node: InterfaceDeclaration,
-    decorators: Unit,
-    modifiers: Unit,
-    name: Identifier,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: Unit,
-    members: js.Array[TypeElement]
-  ): InterfaceDeclaration = js.native
-  def updateInterfaceDeclaration(
-    node: InterfaceDeclaration,
-    decorators: Unit,
-    modifiers: Unit,
-    name: Identifier,
-    typeParameters: Unit,
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[TypeElement]
-  ): InterfaceDeclaration = js.native
-  def updateInterfaceDeclaration(
-    node: InterfaceDeclaration,
-    decorators: Unit,
-    modifiers: Unit,
-    name: Identifier,
-    typeParameters: Unit,
-    heritageClauses: Unit,
-    members: js.Array[TypeElement]
-  ): InterfaceDeclaration = js.native
-  def updateInterfaceDeclaration(
-    node: InterfaceDeclaration,
-    modifiers: js.Array[Modifier],
-    name: Identifier,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[TypeElement]
-  ): InterfaceDeclaration = js.native
-  def updateInterfaceDeclaration(
-    node: InterfaceDeclaration,
-    modifiers: js.Array[Modifier],
-    name: Identifier,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    heritageClauses: Unit,
-    members: js.Array[TypeElement]
-  ): InterfaceDeclaration = js.native
-  def updateInterfaceDeclaration(
-    node: InterfaceDeclaration,
-    modifiers: js.Array[Modifier],
-    name: Identifier,
-    typeParameters: Unit,
-    heritageClauses: js.Array[HeritageClause],
-    members: js.Array[TypeElement]
-  ): InterfaceDeclaration = js.native
-  def updateInterfaceDeclaration(
-    node: InterfaceDeclaration,
-    modifiers: js.Array[Modifier],
+    modifiers: js.Array[ModifierLike],
     name: Identifier,
     typeParameters: Unit,
     heritageClauses: Unit,
@@ -7901,6 +4414,9 @@ trait NodeFactory extends StObject {
   def updateJSDocComment(node: JSDoc, comment: NodeArray[JSDocComment]): JSDoc = js.native
   def updateJSDocComment(node: JSDoc, comment: NodeArray[JSDocComment], tags: js.Array[JSDocTag]): JSDoc = js.native
   
+  def updateJSDocDeprecatedTag(node: JSDocDeprecatedTag): JSDocDeprecatedTag = js.native
+  def updateJSDocDeprecatedTag(node: JSDocDeprecatedTag, tagName: Unit, comment: java.lang.String): JSDocDeprecatedTag = js.native
+  def updateJSDocDeprecatedTag(node: JSDocDeprecatedTag, tagName: Unit, comment: NodeArray[JSDocComment]): JSDocDeprecatedTag = js.native
   def updateJSDocDeprecatedTag(node: JSDocDeprecatedTag, tagName: Identifier): JSDocDeprecatedTag = js.native
   def updateJSDocDeprecatedTag(node: JSDocDeprecatedTag, tagName: Identifier, comment: java.lang.String): JSDocDeprecatedTag = js.native
   def updateJSDocDeprecatedTag(node: JSDocDeprecatedTag, tagName: Identifier, comment: NodeArray[JSDocComment]): JSDocDeprecatedTag = js.native
@@ -7983,6 +4499,31 @@ trait NodeFactory extends StObject {
   
   def updateJSDocOptionalType(node: JSDocOptionalType, `type`: TypeNode): JSDocOptionalType = js.native
   
+  def updateJSDocOverloadTag(node: JSDocOverloadTag, tagName: Unit, typeExpression: JSDocSignature): JSDocOverloadTag = js.native
+  def updateJSDocOverloadTag(node: JSDocOverloadTag, tagName: Unit, typeExpression: JSDocSignature, comment: java.lang.String): JSDocOverloadTag = js.native
+  def updateJSDocOverloadTag(
+    node: JSDocOverloadTag,
+    tagName: Unit,
+    typeExpression: JSDocSignature,
+    comment: NodeArray[JSDocComment]
+  ): JSDocOverloadTag = js.native
+  def updateJSDocOverloadTag(node: JSDocOverloadTag, tagName: Identifier, typeExpression: JSDocSignature): JSDocOverloadTag = js.native
+  def updateJSDocOverloadTag(
+    node: JSDocOverloadTag,
+    tagName: Identifier,
+    typeExpression: JSDocSignature,
+    comment: java.lang.String
+  ): JSDocOverloadTag = js.native
+  def updateJSDocOverloadTag(
+    node: JSDocOverloadTag,
+    tagName: Identifier,
+    typeExpression: JSDocSignature,
+    comment: NodeArray[JSDocComment]
+  ): JSDocOverloadTag = js.native
+  
+  def updateJSDocOverrideTag(node: JSDocOverrideTag): JSDocOverrideTag = js.native
+  def updateJSDocOverrideTag(node: JSDocOverrideTag, tagName: Unit, comment: java.lang.String): JSDocOverrideTag = js.native
+  def updateJSDocOverrideTag(node: JSDocOverrideTag, tagName: Unit, comment: NodeArray[JSDocComment]): JSDocOverrideTag = js.native
   def updateJSDocOverrideTag(node: JSDocOverrideTag, tagName: Identifier): JSDocOverrideTag = js.native
   def updateJSDocOverrideTag(node: JSDocOverrideTag, tagName: Identifier, comment: java.lang.String): JSDocOverrideTag = js.native
   def updateJSDocOverrideTag(node: JSDocOverrideTag, tagName: Identifier, comment: NodeArray[JSDocComment]): JSDocOverrideTag = js.native
@@ -8258,6 +4799,33 @@ trait NodeFactory extends StObject {
     comment: NodeArray[JSDocComment]
   ): JSDocReturnTag = js.native
   
+  def updateJSDocSatisfiesTag(node: JSDocSatisfiesTag, tagName: Unit, typeExpression: JSDocTypeExpression): JSDocSatisfiesTag = js.native
+  def updateJSDocSatisfiesTag(
+    node: JSDocSatisfiesTag,
+    tagName: Unit,
+    typeExpression: JSDocTypeExpression,
+    comment: java.lang.String
+  ): JSDocSatisfiesTag = js.native
+  def updateJSDocSatisfiesTag(
+    node: JSDocSatisfiesTag,
+    tagName: Unit,
+    typeExpression: JSDocTypeExpression,
+    comment: NodeArray[JSDocComment]
+  ): JSDocSatisfiesTag = js.native
+  def updateJSDocSatisfiesTag(node: JSDocSatisfiesTag, tagName: Identifier, typeExpression: JSDocTypeExpression): JSDocSatisfiesTag = js.native
+  def updateJSDocSatisfiesTag(
+    node: JSDocSatisfiesTag,
+    tagName: Identifier,
+    typeExpression: JSDocTypeExpression,
+    comment: java.lang.String
+  ): JSDocSatisfiesTag = js.native
+  def updateJSDocSatisfiesTag(
+    node: JSDocSatisfiesTag,
+    tagName: Identifier,
+    typeExpression: JSDocTypeExpression,
+    comment: NodeArray[JSDocComment]
+  ): JSDocSatisfiesTag = js.native
+  
   def updateJSDocSeeTag(node: JSDocSeeTag): JSDocSeeTag = js.native
   def updateJSDocSeeTag(node: JSDocSeeTag, tagName: Unit, nameExpression: Unit, comment: java.lang.String): JSDocSeeTag = js.native
   def updateJSDocSeeTag(node: JSDocSeeTag, tagName: Unit, nameExpression: Unit, comment: NodeArray[JSDocComment]): JSDocSeeTag = js.native
@@ -8416,6 +4984,39 @@ trait NodeFactory extends StObject {
     comment: NodeArray[JSDocComment]
   ): JSDocThisTag = js.native
   
+  def updateJSDocThrowsTag(node: JSDocThrowsTag): JSDocThrowsTag = js.native
+  def updateJSDocThrowsTag(node: JSDocThrowsTag, tagName: Unit, typeExpression: Unit, comment: java.lang.String): JSDocThrowsTag = js.native
+  def updateJSDocThrowsTag(node: JSDocThrowsTag, tagName: Unit, typeExpression: Unit, comment: NodeArray[JSDocComment]): JSDocThrowsTag = js.native
+  def updateJSDocThrowsTag(node: JSDocThrowsTag, tagName: Unit, typeExpression: JSDocTypeExpression): JSDocThrowsTag = js.native
+  def updateJSDocThrowsTag(
+    node: JSDocThrowsTag,
+    tagName: Unit,
+    typeExpression: JSDocTypeExpression,
+    comment: java.lang.String
+  ): JSDocThrowsTag = js.native
+  def updateJSDocThrowsTag(
+    node: JSDocThrowsTag,
+    tagName: Unit,
+    typeExpression: JSDocTypeExpression,
+    comment: NodeArray[JSDocComment]
+  ): JSDocThrowsTag = js.native
+  def updateJSDocThrowsTag(node: JSDocThrowsTag, tagName: Identifier): JSDocThrowsTag = js.native
+  def updateJSDocThrowsTag(node: JSDocThrowsTag, tagName: Identifier, typeExpression: Unit, comment: java.lang.String): JSDocThrowsTag = js.native
+  def updateJSDocThrowsTag(node: JSDocThrowsTag, tagName: Identifier, typeExpression: Unit, comment: NodeArray[JSDocComment]): JSDocThrowsTag = js.native
+  def updateJSDocThrowsTag(node: JSDocThrowsTag, tagName: Identifier, typeExpression: JSDocTypeExpression): JSDocThrowsTag = js.native
+  def updateJSDocThrowsTag(
+    node: JSDocThrowsTag,
+    tagName: Identifier,
+    typeExpression: JSDocTypeExpression,
+    comment: java.lang.String
+  ): JSDocThrowsTag = js.native
+  def updateJSDocThrowsTag(
+    node: JSDocThrowsTag,
+    tagName: Identifier,
+    typeExpression: JSDocTypeExpression,
+    comment: NodeArray[JSDocComment]
+  ): JSDocThrowsTag = js.native
+  
   def updateJSDocTypeExpression(node: JSDocTypeExpression, `type`: TypeNode): JSDocTypeExpression = js.native
   
   def updateJSDocTypeLiteral(node: JSDocTypeLiteral): JSDocTypeLiteral = js.native
@@ -8533,21 +5134,6 @@ trait NodeFactory extends StObject {
   
   def updateMetaProperty(node: MetaProperty, name: Identifier): MetaProperty = js.native
   
-  /**
-    * @deprecated Decorators have been combined with modifiers. Callers should use an overload that does not accept a `decorators` parameter.
-    */
-  def updateMethodDeclaration(
-    node: MethodDeclaration,
-    decorators: js.UndefOr[js.Array[Decorator]],
-    modifiers: js.UndefOr[js.Array[Modifier]],
-    asteriskToken: js.UndefOr[AsteriskToken],
-    name: PropertyName,
-    questionToken: js.UndefOr[QuestionToken],
-    typeParameters: js.UndefOr[js.Array[TypeParameterDeclaration]],
-    parameters: js.Array[ParameterDeclaration],
-    `type`: js.UndefOr[TypeNode],
-    body: js.UndefOr[Block]
-  ): MethodDeclaration = js.native
   def updateMethodDeclaration(
     node: MethodDeclaration,
     modifiers: js.UndefOr[js.Array[ModifierLike]],
@@ -8699,42 +5285,8 @@ trait NodeFactory extends StObject {
   
   def updateModuleBlock(node: ModuleBlock, statements: js.Array[Statement]): ModuleBlock = js.native
   
-  /**
-    * @deprecated Decorators are no longer supported for this function. Callers should use an overload that does not accept a `decorators` parameter.
-    */
-  def updateModuleDeclaration(
-    node: ModuleDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: ModuleName
-  ): ModuleDeclaration = js.native
-  def updateModuleDeclaration(
-    node: ModuleDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: ModuleName,
-    body: ModuleBody
-  ): ModuleDeclaration = js.native
-  def updateModuleDeclaration(node: ModuleDeclaration, decorators: js.Array[Decorator], modifiers: Unit, name: ModuleName): ModuleDeclaration = js.native
-  def updateModuleDeclaration(
-    node: ModuleDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    name: ModuleName,
-    body: ModuleBody
-  ): ModuleDeclaration = js.native
-  def updateModuleDeclaration(node: ModuleDeclaration, decorators: Unit, modifiers: js.Array[Modifier], name: ModuleName): ModuleDeclaration = js.native
-  def updateModuleDeclaration(
-    node: ModuleDeclaration,
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    name: ModuleName,
-    body: ModuleBody
-  ): ModuleDeclaration = js.native
-  def updateModuleDeclaration(node: ModuleDeclaration, decorators: Unit, modifiers: Unit, name: ModuleName): ModuleDeclaration = js.native
-  def updateModuleDeclaration(node: ModuleDeclaration, decorators: Unit, modifiers: Unit, name: ModuleName, body: ModuleBody): ModuleDeclaration = js.native
-  def updateModuleDeclaration(node: ModuleDeclaration, modifiers: js.Array[Modifier], name: ModuleName): ModuleDeclaration = js.native
-  def updateModuleDeclaration(node: ModuleDeclaration, modifiers: js.Array[Modifier], name: ModuleName, body: ModuleBody): ModuleDeclaration = js.native
+  def updateModuleDeclaration(node: ModuleDeclaration, modifiers: js.Array[ModifierLike], name: ModuleName): ModuleDeclaration = js.native
+  def updateModuleDeclaration(node: ModuleDeclaration, modifiers: js.Array[ModifierLike], name: ModuleName, body: ModuleBody): ModuleDeclaration = js.native
   def updateModuleDeclaration(node: ModuleDeclaration, modifiers: Unit, name: ModuleName): ModuleDeclaration = js.native
   def updateModuleDeclaration(node: ModuleDeclaration, modifiers: Unit, name: ModuleName, body: ModuleBody): ModuleDeclaration = js.native
   
@@ -8802,19 +5354,6 @@ trait NodeFactory extends StObject {
   
   def updateOptionalTypeNode(node: OptionalTypeNode, `type`: TypeNode): OptionalTypeNode = js.native
   
-  /**
-    * @deprecated Decorators have been combined with modifiers. Callers should use an overload that does not accept a `decorators` parameter.
-    */
-  def updateParameterDeclaration(
-    node: ParameterDeclaration,
-    decorators: js.UndefOr[js.Array[Decorator]],
-    modifiers: js.UndefOr[js.Array[Modifier]],
-    dotDotDotToken: js.UndefOr[DotDotDotToken],
-    name: java.lang.String | BindingName,
-    questionToken: js.UndefOr[QuestionToken],
-    `type`: js.UndefOr[TypeNode],
-    initializer: js.UndefOr[Expression]
-  ): ParameterDeclaration = js.native
   def updateParameterDeclaration(
     node: ParameterDeclaration,
     modifiers: js.UndefOr[js.Array[ModifierLike]],
@@ -8847,18 +5386,6 @@ trait NodeFactory extends StObject {
   
   def updatePropertyAssignment(node: PropertyAssignment, name: PropertyName, initializer: Expression): PropertyAssignment = js.native
   
-  /**
-    * @deprecated Decorators have been combined with modifiers. Callers should use an overload that does not accept a `decorators` parameter.
-    */
-  def updatePropertyDeclaration(
-    node: PropertyDeclaration,
-    decorators: js.UndefOr[js.Array[Decorator]],
-    modifiers: js.UndefOr[js.Array[Modifier]],
-    name: java.lang.String | PropertyName,
-    questionOrExclamationToken: js.UndefOr[QuestionToken | ExclamationToken],
-    `type`: js.UndefOr[TypeNode],
-    initializer: js.UndefOr[Expression]
-  ): PropertyDeclaration = js.native
   def updatePropertyDeclaration(node: PropertyDeclaration, modifiers: js.Array[ModifierLike], name: java.lang.String): PropertyDeclaration = js.native
   def updatePropertyDeclaration(
     node: PropertyDeclaration,
@@ -9119,69 +5646,6 @@ trait NodeFactory extends StObject {
   
   def updateSatisfiesExpression(node: SatisfiesExpression, expression: Expression, `type`: TypeNode): SatisfiesExpression = js.native
   
-  /**
-    * @deprecated Decorators have been combined with modifiers. Callers should use an overload that does not accept a `decorators` parameter.
-    */
-  def updateSetAccessorDeclaration(
-    node: SetAccessorDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: PropertyName,
-    parameters: js.Array[ParameterDeclaration]
-  ): SetAccessorDeclaration = js.native
-  def updateSetAccessorDeclaration(
-    node: SetAccessorDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: PropertyName,
-    parameters: js.Array[ParameterDeclaration],
-    body: Block
-  ): SetAccessorDeclaration = js.native
-  def updateSetAccessorDeclaration(
-    node: SetAccessorDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    name: PropertyName,
-    parameters: js.Array[ParameterDeclaration]
-  ): SetAccessorDeclaration = js.native
-  def updateSetAccessorDeclaration(
-    node: SetAccessorDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    name: PropertyName,
-    parameters: js.Array[ParameterDeclaration],
-    body: Block
-  ): SetAccessorDeclaration = js.native
-  def updateSetAccessorDeclaration(
-    node: SetAccessorDeclaration,
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    name: PropertyName,
-    parameters: js.Array[ParameterDeclaration]
-  ): SetAccessorDeclaration = js.native
-  def updateSetAccessorDeclaration(
-    node: SetAccessorDeclaration,
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    name: PropertyName,
-    parameters: js.Array[ParameterDeclaration],
-    body: Block
-  ): SetAccessorDeclaration = js.native
-  def updateSetAccessorDeclaration(
-    node: SetAccessorDeclaration,
-    decorators: Unit,
-    modifiers: Unit,
-    name: PropertyName,
-    parameters: js.Array[ParameterDeclaration]
-  ): SetAccessorDeclaration = js.native
-  def updateSetAccessorDeclaration(
-    node: SetAccessorDeclaration,
-    decorators: Unit,
-    modifiers: Unit,
-    name: PropertyName,
-    parameters: js.Array[ParameterDeclaration],
-    body: Block
-  ): SetAccessorDeclaration = js.native
   def updateSetAccessorDeclaration(
     node: SetAccessorDeclaration,
     modifiers: js.Array[ModifierLike],
@@ -9500,83 +5964,16 @@ trait NodeFactory extends StObject {
   
   def updateTupleTypeNode(node: TupleTypeNode, elements: js.Array[TypeNode | NamedTupleMember]): TupleTypeNode = js.native
   
-  /**
-    * @deprecated Decorators are no longer supported for this function. Callers should use an overload that does not accept a `decorators` parameter.
-    */
   def updateTypeAliasDeclaration(
     node: TypeAliasDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
+    modifiers: js.Array[ModifierLike],
     name: Identifier,
     typeParameters: js.Array[TypeParameterDeclaration],
     `type`: TypeNode
   ): TypeAliasDeclaration = js.native
   def updateTypeAliasDeclaration(
     node: TypeAliasDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: js.Array[Modifier],
-    name: Identifier,
-    typeParameters: Unit,
-    `type`: TypeNode
-  ): TypeAliasDeclaration = js.native
-  def updateTypeAliasDeclaration(
-    node: TypeAliasDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    name: Identifier,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    `type`: TypeNode
-  ): TypeAliasDeclaration = js.native
-  def updateTypeAliasDeclaration(
-    node: TypeAliasDeclaration,
-    decorators: js.Array[Decorator],
-    modifiers: Unit,
-    name: Identifier,
-    typeParameters: Unit,
-    `type`: TypeNode
-  ): TypeAliasDeclaration = js.native
-  def updateTypeAliasDeclaration(
-    node: TypeAliasDeclaration,
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    name: Identifier,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    `type`: TypeNode
-  ): TypeAliasDeclaration = js.native
-  def updateTypeAliasDeclaration(
-    node: TypeAliasDeclaration,
-    decorators: Unit,
-    modifiers: js.Array[Modifier],
-    name: Identifier,
-    typeParameters: Unit,
-    `type`: TypeNode
-  ): TypeAliasDeclaration = js.native
-  def updateTypeAliasDeclaration(
-    node: TypeAliasDeclaration,
-    decorators: Unit,
-    modifiers: Unit,
-    name: Identifier,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    `type`: TypeNode
-  ): TypeAliasDeclaration = js.native
-  def updateTypeAliasDeclaration(
-    node: TypeAliasDeclaration,
-    decorators: Unit,
-    modifiers: Unit,
-    name: Identifier,
-    typeParameters: Unit,
-    `type`: TypeNode
-  ): TypeAliasDeclaration = js.native
-  def updateTypeAliasDeclaration(
-    node: TypeAliasDeclaration,
-    modifiers: js.Array[Modifier],
-    name: Identifier,
-    typeParameters: js.Array[TypeParameterDeclaration],
-    `type`: TypeNode
-  ): TypeAliasDeclaration = js.native
-  def updateTypeAliasDeclaration(
-    node: TypeAliasDeclaration,
-    modifiers: js.Array[Modifier],
+    modifiers: js.Array[ModifierLike],
     name: Identifier,
     typeParameters: Unit,
     `type`: TypeNode
@@ -9641,11 +6038,6 @@ trait NodeFactory extends StObject {
     constraint: TypeNode,
     defaultType: TypeNode
   ): TypeParameterDeclaration = js.native
-  /** @deprecated Use the overload that accepts 'modifiers' */
-  def updateTypeParameterDeclaration(node: TypeParameterDeclaration, name: Identifier): TypeParameterDeclaration = js.native
-  def updateTypeParameterDeclaration(node: TypeParameterDeclaration, name: Identifier, constraint: Unit, defaultType: TypeNode): TypeParameterDeclaration = js.native
-  def updateTypeParameterDeclaration(node: TypeParameterDeclaration, name: Identifier, constraint: TypeNode): TypeParameterDeclaration = js.native
-  def updateTypeParameterDeclaration(node: TypeParameterDeclaration, name: Identifier, constraint: TypeNode, defaultType: TypeNode): TypeParameterDeclaration = js.native
   
   def updateTypePredicateNode(node: TypePredicateNode, assertsModifier: Unit, parameterName: Identifier): TypePredicateNode = js.native
   def updateTypePredicateNode(node: TypePredicateNode, assertsModifier: Unit, parameterName: Identifier, `type`: TypeNode): TypePredicateNode = js.native
@@ -9709,7 +6101,11 @@ trait NodeFactory extends StObject {
   
   def updateVariableDeclarationList(node: VariableDeclarationList, declarations: js.Array[VariableDeclaration]): VariableDeclarationList = js.native
   
-  def updateVariableStatement(node: VariableStatement, modifiers: js.Array[Modifier], declarationList: VariableDeclarationList): VariableStatement = js.native
+  def updateVariableStatement(
+    node: VariableStatement,
+    modifiers: js.Array[ModifierLike],
+    declarationList: VariableDeclarationList
+  ): VariableStatement = js.native
   def updateVariableStatement(node: VariableStatement, modifiers: Unit, declarationList: VariableDeclarationList): VariableStatement = js.native
   
   def updateVoidExpression(node: VoidExpression, expression: Expression): VoidExpression = js.native

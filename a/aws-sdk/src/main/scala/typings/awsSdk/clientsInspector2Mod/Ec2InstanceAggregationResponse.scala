@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Ec2InstanceAggregationResponse extends StObject {
   
   /**
-    * The Amazon Web Services account the Amazon EC2 instance belongs to.
+    * The Amazon Web Services account for the Amazon EC2 instance.
     */
   var accountId: js.UndefOr[String] = js.undefined
   

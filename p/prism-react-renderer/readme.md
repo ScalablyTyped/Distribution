@@ -1,7 +1,7 @@
 
 # Scala.js typings for prism-react-renderer
 
-Typings are for version 1.3.5
+Typings are for version 2.0.4
 
 ## Library description:
 Renders highlighted Prism output using React

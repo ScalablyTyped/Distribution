@@ -47,6 +47,14 @@ object vueClassComponentStrings {
   inline def findIndex: findIndex = "findIndex".asInstanceOf[findIndex]
   
   @js.native
+  sealed trait findLast extends StObject
+  inline def findLast: findLast = "findLast".asInstanceOf[findLast]
+  
+  @js.native
+  sealed trait findLastIndex extends StObject
+  inline def findLastIndex: findLastIndex = "findLastIndex".asInstanceOf[findLastIndex]
+  
+  @js.native
   sealed trait flat extends StObject
   inline def flat: flat = "flat".asInstanceOf[flat]
   

@@ -7,10 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("three/src/Three", "PlaneGeometry")
 @js.native
 /**
-  * @param [width=1] — Width of the sides on the X axis.
-  * @param [height=1] — Height of the sides on the Y axis.
-  * @param [widthSegments=1] — Number of segmented faces along the width of the sides.
-  * @param [heightSegments=1] — Number of segmented faces along the height of the sides.
+  * Create a new instance of {@link PlaneGeometry}
+  * @param width Width along the X axis. Expects a `Float`. Default `1`
+  * @param height Height along the Y axis. Expects a `Float`. Default `1`
+  * @param widthSegments Number of segmented faces along the width of the sides. Expects a `Integer`. Default `1`
+  * @param heightSegments Number of segmented faces along the height of the sides. Expects a `Integer`. Default `1`
   */
 open class PlaneGeometry ()
   extends typings.three.srcGeometriesGeometriesMod.PlaneGeometry {
@@ -37,5 +38,6 @@ object PlaneGeometry {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def fromJSON(data: Any): typings.three.srcGeometriesPlaneGeometryMod.PlaneGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(data.asInstanceOf[js.Any]).asInstanceOf[typings.three.srcGeometriesPlaneGeometryMod.PlaneGeometry]
+  /** @internal */
+  inline def fromJSON(data: js.Object): typings.three.srcGeometriesPlaneGeometryMod.PlaneGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(data.asInstanceOf[js.Any]).asInstanceOf[typings.three.srcGeometriesPlaneGeometryMod.PlaneGeometry]
 }

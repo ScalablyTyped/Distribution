@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "thread-stream" : "2.2.0"
+      "thread-stream" : "2.3.0"
     }
   ],
   "test-dependencies" : [
     {
-      "thread-stream" : "2.2.0"
+      "thread-stream" : "2.3.0"
     }
   ],
   "compile-devDependencies" : [

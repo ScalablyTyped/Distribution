@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UntagResourceRequest extends StObject {
   
   /**
-    * 
+    * The Amazon Resource Name (ARN) of the resource.
     */
   var resourceArn: SsmSapArn
   
   /**
-    * 
+    * Adds/updates or removes credentials for applications registered with AWS Systems Manager for SAP.
     */
   var tagKeys: TagKeyList
 }

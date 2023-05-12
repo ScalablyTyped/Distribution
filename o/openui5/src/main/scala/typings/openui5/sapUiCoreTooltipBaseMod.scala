@@ -218,6 +218,7 @@ object sapUiCoreTooltipBaseMod {
     
     /**
       * @SINCE 1.11.0
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:closed closed} to attached listeners.
       *

@@ -18,7 +18,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * simplify them in the future so it is not encouraged to rely too heavily on it.
   * Unlike projects, tags do not provide any ordering on the tasks they
   * are associated with.
-  * @class
   * @param {Dispatcher} dispatcher The API dispatcher
   */
 @js.native

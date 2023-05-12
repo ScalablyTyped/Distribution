@@ -140,6 +140,7 @@ object Plugins {
       * @param mapping If this plugin is to be injected into the Scene Systems, this is the property key map used.
       * @param data A value to be passed to the plugin's `init` method.
       */
+    inline def registerCustom(key: String, plugin: js.Function, mapping: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerCustom")(key.asInstanceOf[js.Any], plugin.asInstanceOf[js.Any], mapping.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def registerCustom(key: String, plugin: js.Function, mapping: String, data: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerCustom")(key.asInstanceOf[js.Any], plugin.asInstanceOf[js.Any], mapping.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**

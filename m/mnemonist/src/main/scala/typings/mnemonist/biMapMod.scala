@@ -42,7 +42,7 @@ object biMapMod {
     def forEach(callback: js.Function3[/* value */ V, /* key */ K, /* map */ this.type, Unit]): Unit = js.native
     def forEach(callback: js.Function3[/* value */ V, /* key */ K, /* map */ this.type, Unit], scope: Any): Unit = js.native
     
-    def get(key: K): V = js.native
+    def get(key: K): js.UndefOr[V] = js.native
     
     def has(key: K): Boolean = js.native
     
@@ -78,7 +78,7 @@ object biMapMod {
     def forEach(callback: js.Function3[/* value */ V, /* key */ K, /* map */ this.type, Unit]): Unit = js.native
     def forEach(callback: js.Function3[/* value */ V, /* key */ K, /* map */ this.type, Unit], scope: Any): Unit = js.native
     
-    def get(key: K): V = js.native
+    def get(key: K): js.UndefOr[V] = js.native
     
     def has(key: K): Boolean = js.native
     

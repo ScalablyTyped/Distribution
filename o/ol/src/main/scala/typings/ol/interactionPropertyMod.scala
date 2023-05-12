@@ -6,25 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object interactionPropertyMod {
   
-  @JSImport("ol/interaction/Property", JSImport.Default)
-  @js.native
-  object default extends StObject {
+  object default {
     
-    @JSBracketAccess
-    def apply(value: String): js.UndefOr[Property & String] = js.native
-    
-    /* "active" */ val ACTIVE: typings.ol.interactionPropertyMod.Property.ACTIVE & String = js.native
-  }
-  
-  @js.native
-  sealed trait Property extends StObject
-  @JSImport("ol/interaction/Property", "Property")
-  @js.native
-  object Property extends StObject {
-    
+    @JSImport("ol/interaction/Property", "default.ACTIVE")
     @js.native
-    sealed trait ACTIVE
-      extends StObject
-         with Property
+    val ACTIVE: String = js.native
   }
 }

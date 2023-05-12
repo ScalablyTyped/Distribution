@@ -1,9 +1,9 @@
 package typings.slate
 
-import typings.slate.distInterfacesCustomTypesMod.ExtendedType
 import typings.slate.distInterfacesOperationMod.Operation
 import typings.slate.distInterfacesPathMod.Path
-import typings.slate.distInterfacesTypesMod.TextDirection
+import typings.slate.distTypesCustomTypesMod.ExtendedType
+import typings.slate.distTypesTypesMod.TextDirection
 import typings.slate.slateInts.`-1`
 import typings.slate.slateInts.`0`
 import typings.slate.slateInts.`1`
@@ -49,28 +49,47 @@ object distInterfacesPointMod {
   @js.native
   trait PointInterface extends StObject {
     
+    /**
+      * Compare a point to another, returning an integer indicating whether the
+      * point was before, at, or after the other.
+      */
     def compare(
       point: typings.slate.distInterfacesPointMod.Point,
       another: typings.slate.distInterfacesPointMod.Point
     ): `-1` | `0` | `1` = js.native
     
+    /**
+      * Check if a point is exactly equal to another.
+      */
     def equals(
       point: typings.slate.distInterfacesPointMod.Point,
       another: typings.slate.distInterfacesPointMod.Point
     ): Boolean = js.native
     
+    /**
+      * Check if a point is after another.
+      */
     def isAfter(
       point: typings.slate.distInterfacesPointMod.Point,
       another: typings.slate.distInterfacesPointMod.Point
     ): Boolean = js.native
     
+    /**
+      * Check if a point is before another.
+      */
     def isBefore(
       point: typings.slate.distInterfacesPointMod.Point,
       another: typings.slate.distInterfacesPointMod.Point
     ): Boolean = js.native
     
+    /**
+      * Check if a value implements the `Point` interface.
+      */
     def isPoint(value: Any): /* is slate.slate/dist/interfaces/point.Point */ Boolean = js.native
     
+    /**
+      * Transform a point by an operation.
+      */
     def transform(point: typings.slate.distInterfacesPointMod.Point, op: Operation): typings.slate.distInterfacesPointMod.Point | Null = js.native
     def transform(point: typings.slate.distInterfacesPointMod.Point, op: Operation, options: PointTransformOptions): typings.slate.distInterfacesPointMod.Point | Null = js.native
   }

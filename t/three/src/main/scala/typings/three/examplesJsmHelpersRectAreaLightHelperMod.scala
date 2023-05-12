@@ -1,10 +1,11 @@
 package typings.three
 
 import typings.three.srcCoreBufferGeometryMod.BufferGeometry
+import typings.three.srcCoreBufferGeometryMod.NormalBufferAttributes
 import typings.three.srcMaterialsMaterialMod.Material
+import typings.three.srcMathColorMod.ColorRepresentation
 import typings.three.srcThreeMod.Line
 import typings.three.srcThreeMod.RectAreaLight
-import typings.three.srcUtilsMod.ColorRepresentation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,7 +15,7 @@ object examplesJsmHelpersRectAreaLightHelperMod {
   @JSImport("three/examples/jsm/helpers/RectAreaLightHelper", "RectAreaLightHelper")
   @js.native
   open class RectAreaLightHelper protected ()
-    extends Line[BufferGeometry, Material | js.Array[Material]] {
+    extends Line[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]] {
     def this(light: RectAreaLight) = this()
     def this(light: RectAreaLight, color: ColorRepresentation) = this()
     

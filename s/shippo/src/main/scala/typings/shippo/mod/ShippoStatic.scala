@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ShippoStatic
   extends StObject
-     with Instantiable1[/* token */ String, typings.shippo.mod.Shippo.Shippo] {
+     with Instantiable1[/* token */ String, Shippo] {
   
-  def apply(token: String): typings.shippo.mod.Shippo.Shippo = js.native
+  def apply(token: String): Shippo = js.native
 }

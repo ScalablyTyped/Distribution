@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ResolutionResolutioncomment extends StObject {
   
-  var resolution: js.UndefOr[Null | false_positive | wont_fix | revoked | used_in_tests] = js.undefined
+  var resolution: js.UndefOr[false_positive | wont_fix | revoked | used_in_tests | Null] = js.undefined
   
   var resolution_comment: js.UndefOr[String | Null] = js.undefined
   

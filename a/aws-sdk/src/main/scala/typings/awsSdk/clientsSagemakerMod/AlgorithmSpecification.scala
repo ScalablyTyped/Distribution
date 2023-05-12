@@ -36,6 +36,11 @@ trait AlgorithmSpecification extends StObject {
     */
   var TrainingImage: js.UndefOr[AlgorithmImage] = js.undefined
   
+  /**
+    * The configuration to use an image from a private Docker registry for a training job.
+    */
+  var TrainingImageConfig: js.UndefOr[typings.awsSdk.clientsSagemakerMod.TrainingImageConfig] = js.undefined
+  
   var TrainingInputMode: typings.awsSdk.clientsSagemakerMod.TrainingInputMode
 }
 object AlgorithmSpecification {
@@ -75,6 +80,10 @@ object AlgorithmSpecification {
     inline def setMetricDefinitionsVarargs(value: MetricDefinition*): Self = StObject.set(x, "MetricDefinitions", js.Array(value*))
     
     inline def setTrainingImage(value: AlgorithmImage): Self = StObject.set(x, "TrainingImage", value.asInstanceOf[js.Any])
+    
+    inline def setTrainingImageConfig(value: TrainingImageConfig): Self = StObject.set(x, "TrainingImageConfig", value.asInstanceOf[js.Any])
+    
+    inline def setTrainingImageConfigUndefined: Self = StObject.set(x, "TrainingImageConfig", js.undefined)
     
     inline def setTrainingImageUndefined: Self = StObject.set(x, "TrainingImage", js.undefined)
     

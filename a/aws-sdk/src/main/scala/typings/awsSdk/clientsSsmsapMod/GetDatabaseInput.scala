@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetDatabaseInput extends StObject {
   
   /**
-    * 
+    * The ID of the application.
     */
   var ApplicationId: js.UndefOr[typings.awsSdk.clientsSsmsapMod.ApplicationId] = js.undefined
   
   /**
-    * 
+    * The ID of the component.
     */
   var ComponentId: js.UndefOr[typings.awsSdk.clientsSsmsapMod.ComponentId] = js.undefined
   
   /**
-    * 
+    * The Amazon Resource Name (ARN) of the database.
     */
   var DatabaseArn: js.UndefOr[SsmSapArn] = js.undefined
   
   /**
-    * 
+    * The ID of the database.
     */
   var DatabaseId: js.UndefOr[typings.awsSdk.clientsSsmsapMod.DatabaseId] = js.undefined
 }

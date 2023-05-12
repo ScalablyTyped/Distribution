@@ -10,7 +10,7 @@ open class MarkSeries protected () extends AbstractSeries[MarkSeriesProps] {
   def this(props: MarkSeriesProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: MarkSeriesProps, context: Any) = this()
 }

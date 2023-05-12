@@ -1,10 +1,11 @@
 package typings.abortableIterator
 
-import typings.abortableIterator.anon.Sink
 import typings.itStreamTypes.mod.Duplex
+import typings.itStreamTypes.mod.Sink
 import typings.itStreamTypes.mod.Source
 import typings.std.AbortSignal
 import typings.std.AsyncGenerator
+import typings.std.AsyncIterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,17 +25,21 @@ object mod {
     def this(message: Unit, code: String) = this()
   }
   
-  inline def abortableDuplex[TSource, TSink, RSink](duplex: Duplex[TSource, TSink, RSink], signal: AbortSignal): Sink[TSink, RSink, TSource] = (^.asInstanceOf[js.Dynamic].applyDynamic("abortableDuplex")(duplex.asInstanceOf[js.Any], signal.asInstanceOf[js.Any])).asInstanceOf[Sink[TSink, RSink, TSource]]
-  inline def abortableDuplex[TSource, TSink, RSink](duplex: Duplex[TSource, TSink, RSink], signal: AbortSignal, options: Options[TSource]): Sink[TSink, RSink, TSource] = (^.asInstanceOf[js.Dynamic].applyDynamic("abortableDuplex")(duplex.asInstanceOf[js.Any], signal.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Sink[TSink, RSink, TSource]]
+  inline def abortableDuplex[TSource, TSink, RSink](duplex: Duplex[AsyncIterable[TSource], Source[TSink], RSink], signal: AbortSignal): Duplex[AsyncGenerator[TSource, Any, Any], Source[TSink], RSink] = (^.asInstanceOf[js.Dynamic].applyDynamic("abortableDuplex")(duplex.asInstanceOf[js.Any], signal.asInstanceOf[js.Any])).asInstanceOf[Duplex[AsyncGenerator[TSource, Any, Any], Source[TSink], RSink]]
+  inline def abortableDuplex[TSource, TSink, RSink](
+    duplex: Duplex[AsyncIterable[TSource], Source[TSink], RSink],
+    signal: AbortSignal,
+    options: Options[TSource]
+  ): Duplex[AsyncGenerator[TSource, Any, Any], Source[TSink], RSink] = (^.asInstanceOf[js.Dynamic].applyDynamic("abortableDuplex")(duplex.asInstanceOf[js.Any], signal.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Duplex[AsyncGenerator[TSource, Any, Any], Source[TSink], RSink]]
   
-  inline def abortableSink[T, R](sink: typings.itStreamTypes.mod.Sink[T, R], signal: AbortSignal): typings.itStreamTypes.mod.Sink[T, R] = (^.asInstanceOf[js.Dynamic].applyDynamic("abortableSink")(sink.asInstanceOf[js.Any], signal.asInstanceOf[js.Any])).asInstanceOf[typings.itStreamTypes.mod.Sink[T, R]]
-  inline def abortableSink[T, R](sink: typings.itStreamTypes.mod.Sink[T, R], signal: AbortSignal, options: Options[T]): typings.itStreamTypes.mod.Sink[T, R] = (^.asInstanceOf[js.Dynamic].applyDynamic("abortableSink")(sink.asInstanceOf[js.Any], signal.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.itStreamTypes.mod.Sink[T, R]]
+  inline def abortableSink[T, R](sink: Sink[AsyncIterable[T], R], signal: AbortSignal): Sink[Source[T], R] = (^.asInstanceOf[js.Dynamic].applyDynamic("abortableSink")(sink.asInstanceOf[js.Any], signal.asInstanceOf[js.Any])).asInstanceOf[Sink[Source[T], R]]
+  inline def abortableSink[T, R](sink: Sink[AsyncIterable[T], R], signal: AbortSignal, options: Options[T]): Sink[Source[T], R] = (^.asInstanceOf[js.Dynamic].applyDynamic("abortableSink")(sink.asInstanceOf[js.Any], signal.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Sink[Source[T], R]]
   
-  inline def abortableSource[T](source: Source[T], signal: AbortSignal): AsyncGenerator[T, Unit, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("abortableSource")(source.asInstanceOf[js.Any], signal.asInstanceOf[js.Any])).asInstanceOf[AsyncGenerator[T, Unit, Any]]
-  inline def abortableSource[T](source: Source[T], signal: AbortSignal, options: Options[T]): AsyncGenerator[T, Unit, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("abortableSource")(source.asInstanceOf[js.Any], signal.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AsyncGenerator[T, Unit, Any]]
+  inline def abortableSource[T](source: Source[T], signal: AbortSignal): AsyncGenerator[T, Any, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("abortableSource")(source.asInstanceOf[js.Any], signal.asInstanceOf[js.Any])).asInstanceOf[AsyncGenerator[T, Any, Any]]
+  inline def abortableSource[T](source: Source[T], signal: AbortSignal, options: Options[T]): AsyncGenerator[T, Any, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("abortableSource")(source.asInstanceOf[js.Any], signal.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AsyncGenerator[T, Any, Any]]
   
-  inline def abortableTransform[T, R](sink: typings.itStreamTypes.mod.Sink[T, R], signal: AbortSignal): typings.itStreamTypes.mod.Sink[T, R] = (^.asInstanceOf[js.Dynamic].applyDynamic("abortableTransform")(sink.asInstanceOf[js.Any], signal.asInstanceOf[js.Any])).asInstanceOf[typings.itStreamTypes.mod.Sink[T, R]]
-  inline def abortableTransform[T, R](sink: typings.itStreamTypes.mod.Sink[T, R], signal: AbortSignal, options: Options[T]): typings.itStreamTypes.mod.Sink[T, R] = (^.asInstanceOf[js.Dynamic].applyDynamic("abortableTransform")(sink.asInstanceOf[js.Any], signal.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.itStreamTypes.mod.Sink[T, R]]
+  inline def abortableTransform[T, R](sink: Sink[AsyncIterable[T], R], signal: AbortSignal): Sink[Source[T], R] = (^.asInstanceOf[js.Dynamic].applyDynamic("abortableTransform")(sink.asInstanceOf[js.Any], signal.asInstanceOf[js.Any])).asInstanceOf[Sink[Source[T], R]]
+  inline def abortableTransform[T, R](sink: Sink[AsyncIterable[T], R], signal: AbortSignal, options: Options[T]): Sink[Source[T], R] = (^.asInstanceOf[js.Dynamic].applyDynamic("abortableTransform")(sink.asInstanceOf[js.Any], signal.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Sink[Source[T], R]]
   
   trait Options[T] extends StObject {
     

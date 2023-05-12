@@ -25,16 +25,6 @@ import typings.wordpressBlocks.apiParserMod.Source
 import typings.wordpressBlocks.apiRawHandlingMod.PhrasingContentSchema
 import typings.wordpressBlocks.apiRawHandlingMod.pasteHandler.Options
 import typings.wordpressBlocks.apiTemplatesMod.TemplateArray
-import typings.wordpressBlocks.mod.Block
-import typings.wordpressBlocks.mod.BlockAttributes
-import typings.wordpressBlocks.mod.BlockConfiguration
-import typings.wordpressBlocks.mod.BlockIcon
-import typings.wordpressBlocks.mod.BlockIconNormalized
-import typings.wordpressBlocks.mod.BlockInstance
-import typings.wordpressBlocks.mod.BlockStyle
-import typings.wordpressBlocks.mod.BlockVariation
-import typings.wordpressBlocks.mod.BlockVariationScope
-import typings.wordpressBlocks.mod.Transform
 import typings.wordpressBlocks.wordpressBlocksStrings.align
 import typings.wordpressBlocks.wordpressBlocksStrings.alignWide
 import typings.wordpressBlocks.wordpressBlocksStrings.anchor
@@ -71,6 +61,8 @@ object apiMod {
       * concatenation of its values.
       *
       * @param blockNodes - Block nodes to concatenate.
+      *
+      * @deprecated since 11.17.0. Use the html source instead.
       */
     inline def concat(blockNodes: ReactChild*): js.Array[ReactChild] = ^.asInstanceOf[js.Dynamic].applyDynamic("concat")(blockNodes.asInstanceOf[Seq[js.Any]]*).asInstanceOf[js.Array[ReactChild]]
     
@@ -79,6 +71,8 @@ object apiMod {
       * Ignores any non-element/text nodes included in set.
       *
       * @param domNodes - list of DOM nodes to convert.
+      *
+      * @deprecated since 11.17.0. Use the html source instead.
       */
     inline def fromDOM(domNodes: ArrayLike[Node]): js.Array[ReactChild] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDOM")(domNodes.asInstanceOf[js.Any]).asInstanceOf[js.Array[ReactChild]]
     
@@ -86,6 +80,8 @@ object apiMod {
       * Given block children, returns an array of block nodes.
       *
       * @param children - Block children object to convert.
+      *
+      * @deprecated since 11.17.0. Use the html source instead.
       */
     inline def getChildrenArray(children: js.Array[ReactChild]): js.Array[ReactChild] = ^.asInstanceOf[js.Dynamic].applyDynamic("getChildrenArray")(children.asInstanceOf[js.Any]).asInstanceOf[js.Array[ReactChild]]
     
@@ -94,6 +90,8 @@ object apiMod {
       * matching the selector result.
       *
       * @param selector - DOM selector.
+      *
+      * @deprecated since 11.17.0. Use the html source instead.
       */
     inline def matcher(selector: String): js.Function1[/* domNode */ Node & ParentNode, js.Array[ReactChild]] = ^.asInstanceOf[js.Dynamic].applyDynamic("matcher")(selector.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* domNode */ Node & ParentNode, js.Array[ReactChild]]]
     
@@ -101,6 +99,8 @@ object apiMod {
       * Given a block node, returns its HTML string representation.
       *
       * @param children - Block node(s) to convert to string.
+      *
+      * @deprecated since 11.17.0. Use the html source instead.
       */
     inline def toHTML(children: js.Array[ReactChild]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toHTML")(children.asInstanceOf[js.Any]).asInstanceOf[String]
   }
@@ -132,8 +132,8 @@ object apiMod {
   
   inline def getBlockAttributes(blockTypeOrName: String, innerHTML: String): Record[String, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getBlockAttributes")(blockTypeOrName.asInstanceOf[js.Any], innerHTML.asInstanceOf[js.Any])).asInstanceOf[Record[String, Any]]
   inline def getBlockAttributes(blockTypeOrName: String, innerHTML: String, attributes: Record[String, Any]): Record[String, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getBlockAttributes")(blockTypeOrName.asInstanceOf[js.Any], innerHTML.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[Record[String, Any]]
-  inline def getBlockAttributes[T /* <: Block[Any] */](blockTypeOrName: T, innerHTML: String): /* import warning: importer.ImportType#apply Failed type conversion: T extends @wordpress/blocks.@wordpress/blocks.Block<infer U> ? U : never */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getBlockAttributes")(blockTypeOrName.asInstanceOf[js.Any], innerHTML.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: T extends @wordpress/blocks.@wordpress/blocks.Block<infer U> ? U : never */ js.Any]
-  inline def getBlockAttributes[T /* <: Block[Any] */](blockTypeOrName: T, innerHTML: String, attributes: Record[String, Any]): /* import warning: importer.ImportType#apply Failed type conversion: T extends @wordpress/blocks.@wordpress/blocks.Block<infer U> ? U : never */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getBlockAttributes")(blockTypeOrName.asInstanceOf[js.Any], innerHTML.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: T extends @wordpress/blocks.@wordpress/blocks.Block<infer U> ? U : never */ js.Any]
+  inline def getBlockAttributes[T /* <: Block[Any] */](blockTypeOrName: T, innerHTML: String): /* import warning: importer.ImportType#apply Failed type conversion: T extends @wordpress/blocks.Block<infer U> ? U : never */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getBlockAttributes")(blockTypeOrName.asInstanceOf[js.Any], innerHTML.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: T extends @wordpress/blocks.Block<infer U> ? U : never */ js.Any]
+  inline def getBlockAttributes[T /* <: Block[Any] */](blockTypeOrName: T, innerHTML: String, attributes: Record[String, Any]): /* import warning: importer.ImportType#apply Failed type conversion: T extends @wordpress/blocks.Block<infer U> ? U : never */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getBlockAttributes")(blockTypeOrName.asInstanceOf[js.Any], innerHTML.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: T extends @wordpress/blocks.Block<infer U> ? U : never */ js.Any]
   
   inline def getBlockContent(block: BlockInstance[StringDictionary[Any]]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getBlockContent")(block.asInstanceOf[js.Any]).asInstanceOf[String]
   
@@ -269,6 +269,8 @@ object apiMod {
       * @throws {TypeError} If non-element/text node is passed.
       *
       * @param domNode - DOM node to convert.
+      *
+      * @deprecated since 11.17.0. Use the html source instead.
       */
     inline def fromDOM(domNode: Node): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDOM")(domNode.asInstanceOf[js.Any]).asInstanceOf[Element]
     
@@ -278,6 +280,8 @@ object apiMod {
       *
       * @param node - Block node to test
       * @param type - Node to type to test against.
+      *
+      * @deprecated since 11.17.0. Use the html source instead.
       */
     inline def isNodeOfType_type(
       node: Element,
@@ -289,6 +293,8 @@ object apiMod {
       * matching the selector result.
       *
       * @param selector - DOM selector.
+      *
+      * @deprecated since 11.17.0. Use the html source instead.
       */
     /* was `typeof children.matcher` */
     inline def matcher(selector: String): js.Function1[/* domNode */ Node & ParentNode, js.Array[ReactChild]] = ^.asInstanceOf[js.Dynamic].applyDynamic("matcher")(selector.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* domNode */ Node & ParentNode, js.Array[ReactChild]]]
@@ -297,6 +303,8 @@ object apiMod {
       * Given a block node, returns its HTML string representation.
       *
       * @param node - Block node to convert to string.
+      *
+      * @deprecated since 11.17.0. Use the html source instead.
       */
     inline def toHTML(node: ReactChild): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toHTML")(node.asInstanceOf[js.Any]).asInstanceOf[String]
   }

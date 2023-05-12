@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "openapi-request-validator" : "12.0.2"
+      "openapi-request-validator" : "12.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "openapi-request-validator" : "12.0.2"
+      "openapi-request-validator" : "12.1.0"
     }
   ],
   "compile-devDependencies" : [

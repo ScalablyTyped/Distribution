@@ -28,6 +28,8 @@ trait ResolvedBuildOptions extends StObject {
   
   var cssCodeSplit: Boolean
   
+  var cssMinify: Boolean
+  
   var cssTarget: String | js.Array[String] | `false`
   
   var dynamicImportVarsOptions: RollupDynamicImportVarsOptions
@@ -52,6 +54,8 @@ trait ResolvedBuildOptions extends StObject {
   
   var ssr: Boolean | String
   
+  var ssrEmitAssets: Boolean
+  
   var ssrManifest: Boolean | String
   
   var target: modules | String | js.Array[String] | `false`
@@ -71,6 +75,7 @@ object ResolvedBuildOptions {
     commonjsOptions: RollupCommonJSOptions,
     copyPublicDir: Boolean,
     cssCodeSplit: Boolean,
+    cssMinify: Boolean,
     cssTarget: String | js.Array[String] | `false`,
     dynamicImportVarsOptions: RollupDynamicImportVarsOptions,
     emptyOutDir: Boolean,
@@ -83,13 +88,14 @@ object ResolvedBuildOptions {
     rollupOptions: RollupOptions,
     sourcemap: Boolean | `inline` | hidden,
     ssr: Boolean | String,
+    ssrEmitAssets: Boolean,
     ssrManifest: Boolean | String,
     target: modules | String | js.Array[String] | `false`,
     terserOptions: MinifyOptions,
     watch: WatcherOptions,
     write: Boolean
   ): ResolvedBuildOptions = {
-    val __obj = js.Dynamic.literal(assetsDir = assetsDir.asInstanceOf[js.Any], assetsInlineLimit = assetsInlineLimit.asInstanceOf[js.Any], chunkSizeWarningLimit = chunkSizeWarningLimit.asInstanceOf[js.Any], commonjsOptions = commonjsOptions.asInstanceOf[js.Any], copyPublicDir = copyPublicDir.asInstanceOf[js.Any], cssCodeSplit = cssCodeSplit.asInstanceOf[js.Any], cssTarget = cssTarget.asInstanceOf[js.Any], dynamicImportVarsOptions = dynamicImportVarsOptions.asInstanceOf[js.Any], emptyOutDir = emptyOutDir.asInstanceOf[js.Any], lib = lib.asInstanceOf[js.Any], manifest = manifest.asInstanceOf[js.Any], minify = minify.asInstanceOf[js.Any], modulePreload = modulePreload.asInstanceOf[js.Any], outDir = outDir.asInstanceOf[js.Any], reportCompressedSize = reportCompressedSize.asInstanceOf[js.Any], rollupOptions = rollupOptions.asInstanceOf[js.Any], sourcemap = sourcemap.asInstanceOf[js.Any], ssr = ssr.asInstanceOf[js.Any], ssrManifest = ssrManifest.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], terserOptions = terserOptions.asInstanceOf[js.Any], watch = watch.asInstanceOf[js.Any], write = write.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(assetsDir = assetsDir.asInstanceOf[js.Any], assetsInlineLimit = assetsInlineLimit.asInstanceOf[js.Any], chunkSizeWarningLimit = chunkSizeWarningLimit.asInstanceOf[js.Any], commonjsOptions = commonjsOptions.asInstanceOf[js.Any], copyPublicDir = copyPublicDir.asInstanceOf[js.Any], cssCodeSplit = cssCodeSplit.asInstanceOf[js.Any], cssMinify = cssMinify.asInstanceOf[js.Any], cssTarget = cssTarget.asInstanceOf[js.Any], dynamicImportVarsOptions = dynamicImportVarsOptions.asInstanceOf[js.Any], emptyOutDir = emptyOutDir.asInstanceOf[js.Any], lib = lib.asInstanceOf[js.Any], manifest = manifest.asInstanceOf[js.Any], minify = minify.asInstanceOf[js.Any], modulePreload = modulePreload.asInstanceOf[js.Any], outDir = outDir.asInstanceOf[js.Any], reportCompressedSize = reportCompressedSize.asInstanceOf[js.Any], rollupOptions = rollupOptions.asInstanceOf[js.Any], sourcemap = sourcemap.asInstanceOf[js.Any], ssr = ssr.asInstanceOf[js.Any], ssrEmitAssets = ssrEmitAssets.asInstanceOf[js.Any], ssrManifest = ssrManifest.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], terserOptions = terserOptions.asInstanceOf[js.Any], watch = watch.asInstanceOf[js.Any], write = write.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResolvedBuildOptions]
   }
   
@@ -107,6 +113,8 @@ object ResolvedBuildOptions {
     inline def setCopyPublicDir(value: Boolean): Self = StObject.set(x, "copyPublicDir", value.asInstanceOf[js.Any])
     
     inline def setCssCodeSplit(value: Boolean): Self = StObject.set(x, "cssCodeSplit", value.asInstanceOf[js.Any])
+    
+    inline def setCssMinify(value: Boolean): Self = StObject.set(x, "cssMinify", value.asInstanceOf[js.Any])
     
     inline def setCssTarget(value: String | js.Array[String] | `false`): Self = StObject.set(x, "cssTarget", value.asInstanceOf[js.Any])
     
@@ -133,6 +141,8 @@ object ResolvedBuildOptions {
     inline def setSourcemap(value: Boolean | `inline` | hidden): Self = StObject.set(x, "sourcemap", value.asInstanceOf[js.Any])
     
     inline def setSsr(value: Boolean | String): Self = StObject.set(x, "ssr", value.asInstanceOf[js.Any])
+    
+    inline def setSsrEmitAssets(value: Boolean): Self = StObject.set(x, "ssrEmitAssets", value.asInstanceOf[js.Any])
     
     inline def setSsrManifest(value: Boolean | String): Self = StObject.set(x, "ssrManifest", value.asInstanceOf[js.Any])
     

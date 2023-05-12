@@ -6,11 +6,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GetParametersPathDeploymentidQueryPage extends StObject {
   
-  /** Users with pull access can view deployment statuses for a deployment: */
+  /**
+    * List deployment statuses
+    * @description Users with pull access can view deployment statuses for a deployment:
+    */
   var get: ParametersPathDeploymentidQueryPage
   
   /**
-    * Users with `push` access can create deployment statuses for a given deployment.
+    * Create a deployment status
+    * @description Users with `push` access can create deployment statuses for a given deployment.
     *
     * GitHub Apps require `read & write` access to "Deployments" and `read-only` access to "Repo contents" (for private repos). OAuth Apps require the `repo_deployment` scope.
     */

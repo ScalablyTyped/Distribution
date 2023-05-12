@@ -13,4 +13,6 @@ trait ExtendedSourceBuffer
   var changeType: js.UndefOr[js.Function1[/* type */ String, Unit]] = js.native
   
   var ended: js.UndefOr[Boolean] = js.native
+  
+  var ending: js.UndefOr[Boolean] = js.native
 }

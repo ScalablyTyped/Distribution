@@ -53,6 +53,10 @@ trait mParticleInstance extends StObject {
   @JSName("getDeviceId")
   var getDeviceId_Original: GetDeviceId_
   
+  def getEnvironment(): String
+  @JSName("getEnvironment")
+  var getEnvironment_Original: GetEnvironment_
+  
   def getIntegrationAttributes(integrationId: Double): Record[String, Any]
   @JSName("getIntegrationAttributes")
   var getIntegrationAttributes_Original: GetIntegrationAttributes_
@@ -288,6 +292,7 @@ object mParticleInstance {
     getAppName: () => String,
     getAppVersion: () => String,
     getDeviceId: () => String,
+    getEnvironment: () => String,
     getIntegrationAttributes: /* integrationId */ Double => Record[String, Any],
     getVersion: () => String,
     init: (/* apiKey */ String, /* config */ MPConfiguration, /* instanceName */ js.UndefOr[String]) => Unit,
@@ -314,7 +319,7 @@ object mParticleInstance {
     stopTrackingLocation: () => Unit,
     upload: () => Unit
   ): mParticleInstance = {
-    val __obj = js.Dynamic.literal(CommerceEventType = CommerceEventType.asInstanceOf[js.Any], Consent = Consent.asInstanceOf[js.Any], EventType = EventType.asInstanceOf[js.Any], Identity = Identity.asInstanceOf[js.Any], IdentityType = IdentityType.asInstanceOf[js.Any], ProductActionType = ProductActionType.asInstanceOf[js.Any], PromotionType = PromotionType.asInstanceOf[js.Any], eCommerce = eCommerce.asInstanceOf[js.Any], endSession = js.Any.fromFunction0(endSession), getAppName = js.Any.fromFunction0(getAppName), getAppVersion = js.Any.fromFunction0(getAppVersion), getDeviceId = js.Any.fromFunction0(getDeviceId), getIntegrationAttributes = js.Any.fromFunction1(getIntegrationAttributes), getVersion = js.Any.fromFunction0(getVersion), init = js.Any.fromFunction3(init), isInitialized = js.Any.fromFunction0(isInitialized), logBaseEvent = js.Any.fromFunction2(logBaseEvent), logError = js.Any.fromFunction2(logError), logEvent = js.Any.fromFunction5(logEvent), logForm = js.Any.fromFunction4(logForm), logLink = js.Any.fromFunction4(logLink), logPageView = js.Any.fromFunction4(logPageView), ready = js.Any.fromFunction1(ready), reset = js.Any.fromFunction0(reset), sessionManager = sessionManager.asInstanceOf[js.Any], setAppName = js.Any.fromFunction1(setAppName), setAppVersion = js.Any.fromFunction1(setAppVersion), setDeviceId = js.Any.fromFunction1(setDeviceId), setIntegrationAttribute = js.Any.fromFunction2(setIntegrationAttribute), setLogLevel = js.Any.fromFunction1(setLogLevel), setOptOut = js.Any.fromFunction1(setOptOut), setPosition = js.Any.fromFunction2(setPosition), setSessionAttribute = js.Any.fromFunction2(setSessionAttribute), startNewSession = js.Any.fromFunction0(startNewSession), startTrackingLocation = js.Any.fromFunction1(startTrackingLocation), stopTrackingLocation = js.Any.fromFunction0(stopTrackingLocation), upload = js.Any.fromFunction0(upload))
+    val __obj = js.Dynamic.literal(CommerceEventType = CommerceEventType.asInstanceOf[js.Any], Consent = Consent.asInstanceOf[js.Any], EventType = EventType.asInstanceOf[js.Any], Identity = Identity.asInstanceOf[js.Any], IdentityType = IdentityType.asInstanceOf[js.Any], ProductActionType = ProductActionType.asInstanceOf[js.Any], PromotionType = PromotionType.asInstanceOf[js.Any], eCommerce = eCommerce.asInstanceOf[js.Any], endSession = js.Any.fromFunction0(endSession), getAppName = js.Any.fromFunction0(getAppName), getAppVersion = js.Any.fromFunction0(getAppVersion), getDeviceId = js.Any.fromFunction0(getDeviceId), getEnvironment = js.Any.fromFunction0(getEnvironment), getIntegrationAttributes = js.Any.fromFunction1(getIntegrationAttributes), getVersion = js.Any.fromFunction0(getVersion), init = js.Any.fromFunction3(init), isInitialized = js.Any.fromFunction0(isInitialized), logBaseEvent = js.Any.fromFunction2(logBaseEvent), logError = js.Any.fromFunction2(logError), logEvent = js.Any.fromFunction5(logEvent), logForm = js.Any.fromFunction4(logForm), logLink = js.Any.fromFunction4(logLink), logPageView = js.Any.fromFunction4(logPageView), ready = js.Any.fromFunction1(ready), reset = js.Any.fromFunction0(reset), sessionManager = sessionManager.asInstanceOf[js.Any], setAppName = js.Any.fromFunction1(setAppName), setAppVersion = js.Any.fromFunction1(setAppVersion), setDeviceId = js.Any.fromFunction1(setDeviceId), setIntegrationAttribute = js.Any.fromFunction2(setIntegrationAttribute), setLogLevel = js.Any.fromFunction1(setLogLevel), setOptOut = js.Any.fromFunction1(setOptOut), setPosition = js.Any.fromFunction2(setPosition), setSessionAttribute = js.Any.fromFunction2(setSessionAttribute), startNewSession = js.Any.fromFunction0(startNewSession), startTrackingLocation = js.Any.fromFunction1(startTrackingLocation), stopTrackingLocation = js.Any.fromFunction0(stopTrackingLocation), upload = js.Any.fromFunction0(upload))
     __obj.asInstanceOf[mParticleInstance]
   }
   
@@ -336,6 +341,8 @@ object mParticleInstance {
     inline def setGetAppVersion(value: () => String): Self = StObject.set(x, "getAppVersion", js.Any.fromFunction0(value))
     
     inline def setGetDeviceId(value: () => String): Self = StObject.set(x, "getDeviceId", js.Any.fromFunction0(value))
+    
+    inline def setGetEnvironment(value: () => String): Self = StObject.set(x, "getEnvironment", js.Any.fromFunction0(value))
     
     inline def setGetIntegrationAttributes(value: /* integrationId */ Double => Record[String, Any]): Self = StObject.set(x, "getIntegrationAttributes", js.Any.fromFunction1(value))
     

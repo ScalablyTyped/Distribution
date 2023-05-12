@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TakeComputedStyleUpdatesResponse extends StObject {
   
   /**
-    * The list of node Ids that have their tracked computed styles updated
+    * The list of node Ids that have their tracked computed styles updated.
     */
   var nodeIds: js.Array[NodeId]
 }

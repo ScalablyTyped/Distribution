@@ -1,7 +1,7 @@
 
 # Scala.js typings for aws-sdk__credential-providers
 
-Typings are for version 3.192.0
+Typings are for version 3.332.0
 
 ## Library description:
 A collection of credential providers, without requiring service clients like STS, Cognito

@@ -17,7 +17,7 @@ trait AsyncCache extends StObject {
     * Cache configuration, only for `async` views; caching gets active when this object is provided with vView.cache.keys
     * array; keys are used to store data in the cache and for invalidation of the cache
     */
-  var cache: js.UndefOr[`28`] = js.undefined
+  var cache: js.UndefOr[`36`] = js.undefined
   
   /**
     * Controller instance to be used for this view
@@ -53,7 +53,7 @@ object AsyncCache {
     
     inline def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
     
-    inline def setCache(value: `28`): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+    inline def setCache(value: `36`): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     
     inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
     

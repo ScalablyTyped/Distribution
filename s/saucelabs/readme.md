@@ -1,7 +1,7 @@
 
 # Scala.js typings for saucelabs
 
-Typings are for version 7.2.0
+Typings are for version 7.2.1
 
 ## Library description:
 A wrapper around Sauce Labs REST API

@@ -17,7 +17,7 @@ trait EnableFastLaunchResult extends StObject {
   var LaunchTemplate: js.UndefOr[FastLaunchLaunchTemplateSpecificationResponse] = js.undefined
   
   /**
-    * The maximum number of parallel instances to launch for creating resources.
+    * The maximum number of instances that Amazon EC2 can launch at the same time to create pre-provisioned snapshots for Windows faster launching.
     */
   var MaxParallelLaunches: js.UndefOr[Integer] = js.undefined
   
@@ -32,7 +32,7 @@ trait EnableFastLaunchResult extends StObject {
   var ResourceType: js.UndefOr[FastLaunchResourceType] = js.undefined
   
   /**
-    * The configuration settings that were defined for creating and managing the pre-provisioned snapshots for faster launching of the Windows AMI. This property is returned when the associated resourceType is snapshot.
+    * Settings to create and manage the pre-provisioned snapshots that Amazon EC2 uses for faster launches from the Windows AMI. This property is returned when the associated resourceType is snapshot.
     */
   var SnapshotConfiguration: js.UndefOr[FastLaunchSnapshotConfigurationResponse] = js.undefined
   

@@ -28,7 +28,10 @@ trait AppRoleAssignment
     */
   var principalDisplayName: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // The unique identifier (id) for the user, group, or service principal being granted the app role. Required on create.
+  /**
+    * The unique identifier (id) for the user, security group, or service principal being granted the app role. Security
+    * groups with dynamic memberships are supported. Required on create.
+    */
   var principalId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The type of the assigned principal. This can either be User, Group, or ServicePrincipal. Read-only.

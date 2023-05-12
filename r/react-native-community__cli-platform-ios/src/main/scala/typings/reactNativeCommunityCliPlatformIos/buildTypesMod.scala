@@ -78,4 +78,45 @@ object buildTypesMod {
       inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
+  
+  trait IosProjectInfo extends StObject {
+    
+    var configurations: js.Array[String]
+    
+    var name: String
+    
+    var schemes: js.Array[String]
+    
+    var targets: js.Array[String]
+  }
+  object IosProjectInfo {
+    
+    inline def apply(
+      configurations: js.Array[String],
+      name: String,
+      schemes: js.Array[String],
+      targets: js.Array[String]
+    ): IosProjectInfo = {
+      val __obj = js.Dynamic.literal(configurations = configurations.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], schemes = schemes.asInstanceOf[js.Any], targets = targets.asInstanceOf[js.Any])
+      __obj.asInstanceOf[IosProjectInfo]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IosProjectInfo] (val x: Self) extends AnyVal {
+      
+      inline def setConfigurations(value: js.Array[String]): Self = StObject.set(x, "configurations", value.asInstanceOf[js.Any])
+      
+      inline def setConfigurationsVarargs(value: String*): Self = StObject.set(x, "configurations", js.Array(value*))
+      
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      inline def setSchemes(value: js.Array[String]): Self = StObject.set(x, "schemes", value.asInstanceOf[js.Any])
+      
+      inline def setSchemesVarargs(value: String*): Self = StObject.set(x, "schemes", js.Array(value*))
+      
+      inline def setTargets(value: js.Array[String]): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
+      
+      inline def setTargetsVarargs(value: String*): Self = StObject.set(x, "targets", js.Array(value*))
+    }
+  }
 }

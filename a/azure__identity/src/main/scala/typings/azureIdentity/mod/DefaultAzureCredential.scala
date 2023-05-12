@@ -15,7 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The following credential types will be tried, in order:
   *
   * - {@link EnvironmentCredential}
+  * - {@link WorkloadIdentityCredential}
   * - {@link ManagedIdentityCredential}
+  * - {@link AzureDeveloperCliCredential}
   * - {@link AzureCliCredential}
   * - {@link AzurePowerShellCredential}
   *

@@ -10,13 +10,6 @@ trait KnowledgeGraph
      with Accessor {
   
   /**
-    * The data model of the knowledge graph service.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-KnowledgeGraph.html#dataModel)
-    */
-  var dataModel: DataModel = js.native
-  
-  /**
     * The url to a hosted knowledge graph.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-KnowledgeGraph.html#url)

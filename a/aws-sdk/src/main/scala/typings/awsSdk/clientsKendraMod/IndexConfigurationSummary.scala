@@ -12,17 +12,17 @@ trait IndexConfigurationSummary extends StObject {
   var CreatedAt: js.Date
   
   /**
-    * Indicates whether the index is a enterprise edition index or a developer edition index. 
+    * Indicates whether the index is a Enterprise Edition index or a Developer Edition index. 
     */
   var Edition: js.UndefOr[IndexEdition] = js.undefined
   
   /**
-    * A unique identifier for the index. Use this to identify the index when you are using APIs such as Query, DescribeIndex, UpdateIndex, and DeleteIndex.
+    * A identifier for the index. Use this to identify the index when you are using APIs such as Query, DescribeIndex, UpdateIndex, and DeleteIndex.
     */
   var Id: js.UndefOr[IndexId] = js.undefined
   
   /**
-    * The identifier of the index.
+    * The name of the index.
     */
   var Name: js.UndefOr[IndexName] = js.undefined
   
@@ -32,7 +32,7 @@ trait IndexConfigurationSummary extends StObject {
   var Status: IndexStatus
   
   /**
-    * The Unix timestamp when the index was last updated by the UpdateIndex API.
+    * The Unix timestamp when the index was last updated.
     */
   var UpdatedAt: js.Date
 }

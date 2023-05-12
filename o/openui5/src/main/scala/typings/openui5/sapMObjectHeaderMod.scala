@@ -1,6 +1,6 @@
 package typings.openui5
 
-import typings.openui5.anon.`18`
+import typings.openui5.anon.`21`
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapMLibraryMod.BackgroundDesign
 import typings.openui5.sapMLibraryMod.ObjectHeaderContainer
@@ -632,6 +632,8 @@ object sapMObjectHeaderMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:iconPress iconPress} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -640,9 +642,11 @@ object sapMObjectHeaderMod {
     def fireIconPress(/**
       * Parameters to pass along with the event
       */
-    mParameters: `18`): this.type = js.native
+    mParameters: `21`): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:introPress introPress} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -651,9 +655,11 @@ object sapMObjectHeaderMod {
     def fireIntroPress(/**
       * Parameters to pass along with the event
       */
-    mParameters: `18`): this.type = js.native
+    mParameters: `21`): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:titlePress titlePress} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -662,10 +668,11 @@ object sapMObjectHeaderMod {
     def fireTitlePress(/**
       * Parameters to pass along with the event
       */
-    mParameters: `18`): this.type = js.native
+    mParameters: `21`): this.type = js.native
     
     /**
       * @SINCE 1.16.0
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:titleSelectorPress titleSelectorPress} to attached listeners.
       *
@@ -675,7 +682,7 @@ object sapMObjectHeaderMod {
     def fireTitleSelectorPress(/**
       * Parameters to pass along with the event
       */
-    mParameters: `18`): this.type = js.native
+    mParameters: `21`): this.type = js.native
     
     /**
       * @SINCE 1.38.0

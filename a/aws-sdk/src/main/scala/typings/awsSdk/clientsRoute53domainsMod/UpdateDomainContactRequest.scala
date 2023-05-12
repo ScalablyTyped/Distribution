@@ -12,6 +12,11 @@ trait UpdateDomainContactRequest extends StObject {
   var AdminContact: js.UndefOr[ContactDetail] = js.undefined
   
   /**
+    *  Customer's consent for the owner change request. 
+    */
+  var Consent: js.UndefOr[typings.awsSdk.clientsRoute53domainsMod.Consent] = js.undefined
+  
+  /**
     * The name of the domain that you want to update contact information for.
     */
   var DomainName: typings.awsSdk.clientsRoute53domainsMod.DomainName
@@ -39,6 +44,10 @@ object UpdateDomainContactRequest {
     inline def setAdminContact(value: ContactDetail): Self = StObject.set(x, "AdminContact", value.asInstanceOf[js.Any])
     
     inline def setAdminContactUndefined: Self = StObject.set(x, "AdminContact", js.undefined)
+    
+    inline def setConsent(value: Consent): Self = StObject.set(x, "Consent", value.asInstanceOf[js.Any])
+    
+    inline def setConsentUndefined: Self = StObject.set(x, "Consent", js.undefined)
     
     inline def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     

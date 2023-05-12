@@ -403,7 +403,7 @@ trait Worksheet
     * Occurs when the worksheet name is changed.
     *
     * @remarks
-    * [Api set: ExcelApiOnline 1.1]
+    * [Api set: ExcelApi 1.17]
     *
     * @eventproperty
     */
@@ -465,7 +465,7 @@ trait Worksheet
     * Occurs when the worksheet visibility is changed.
     *
     * @remarks
-    * [Api set: ExcelApiOnline 1.1]
+    * [Api set: ExcelApi 1.17]
     *
     * @eventproperty
     */

@@ -63,6 +63,11 @@ open class PublishedODataService protected () extends Document {
   def description_=(newValue: String): Unit = js.native
   
   /**
+    * In version 9.21.0: introduced
+    */
+  def enumerations: IList[PublishedODataEnumeration] = js.native
+  
+  /**
     * In version 9.19.0: introduced
     */
   def microflows: IList[PublishedODataMicroflow] = js.native

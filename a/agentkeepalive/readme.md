@@ -1,7 +1,7 @@
 
 # Scala.js typings for agentkeepalive
 
-Typings are for version 4.2.1
+Typings are for version 4.3.0
 
 ## Library description:
 Missing keepalive http.Agent

@@ -8,12 +8,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ComponentBase[TOptions] extends StObject {
   
   /**
-    * The DOM element the plugin was initialized with
+    * The DOM element the plugin was initialized with.
     */
   var el: Element
   
   /**
-    * The options the instance was initialized with
+    * The options the instance was initialized with.
     */
   var options: TOptions
 }

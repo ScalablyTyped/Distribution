@@ -1,16 +1,18 @@
 package typings.three
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.std.Set
 import typings.std.WebGLRenderingContext
 import typings.three.anon.FullHeight
+import typings.three.anon.Geometries
 import typings.three.srcAnimationAnimationClipMod.AnimationClip
 import typings.three.srcCamerasCameraMod.Camera
 import typings.three.srcCamerasPerspectiveCameraMod.PerspectiveCamera
 import typings.three.srcCoreBufferGeometryMod.BufferGeometry
+import typings.three.srcCoreBufferGeometryMod.NormalBufferAttributes
 import typings.three.srcCoreEventDispatcherMod.Event
 import typings.three.srcCoreEventDispatcherMod.EventDispatcher
 import typings.three.srcCoreEventDispatcherMod.EventListener
-import typings.three.srcCoreLayersMod.Layers
 import typings.three.srcCoreObject3DMod.Object3D
 import typings.three.srcCoreRaycasterMod.Intersection
 import typings.three.srcCoreRaycasterMod.Raycaster
@@ -27,9 +29,11 @@ import typings.three.srcRenderersWebxrWebXRControllerMod.XRGripSpace
 import typings.three.srcRenderersWebxrWebXRControllerMod.XRHandSpace
 import typings.three.srcRenderersWebxrWebXRControllerMod.XRTargetRaySpace
 import typings.three.srcScenesSceneMod.Scene
+import typings.three.srcThreeMod.Layers
 import typings.three.threeBooleans.`true`
 import typings.webxr.XRFrame
 import typings.webxr.XRFrameRequestCallback
+import typings.webxr.XRPlane
 import typings.webxr.XRProjectionLayer
 import typings.webxr.XRReferenceSpace
 import typings.webxr.XRReferenceSpaceType
@@ -75,6 +79,11 @@ object srcRenderersWebxrWebXRManagerMod {
     
     def getHand(index: Double): XRHandSpace = js.native
     
+    /**
+      * Returns the set of planes detected by WebXR's plane detection API.
+      */
+    def getPlanes(): Set[XRPlane] = js.native
+    
     def getReferenceSpace(): XRReferenceSpace | Null = js.native
     
     def getSession(): XRSession | Null = js.native
@@ -87,7 +96,7 @@ object srcRenderersWebxrWebXRManagerMod {
     def setAnimationLoop(): Unit = js.native
     def setAnimationLoop(callback: XRFrameRequestCallback): Unit = js.native
     
-    def setFoveation(foveation: Double): Unit = js.native
+    def setFoveation(value: Double): Unit = js.native
     
     def setFramebufferScaleFactor(value: Double): Unit = js.native
     
@@ -95,6 +104,7 @@ object srcRenderersWebxrWebXRManagerMod {
     
     def setReferenceSpaceType(value: XRReferenceSpaceType): Unit = js.native
     
+    def setSession(): js.Promise[Unit] = js.native
     def setSession(value: XRSession): js.Promise[Unit] = js.native
     
     def updateCamera(camera: PerspectiveCamera): Unit = js.native
@@ -103,11 +113,11 @@ object srcRenderersWebxrWebXRManagerMod {
   /* Inlined std.Omit<three.three/src/cameras/ArrayCamera.ArrayCamera, 'cameras'> & {  cameras :[three.three/src/renderers/webxr/WebXRManager.WebXRCamera, three.three/src/renderers/webxr/WebXRManager.WebXRCamera]} */
   trait WebXRArrayCamera extends StObject {
     
-    var DefaultMatrixAutoUpdate: js.UndefOr[Any] = js.undefined
+    var DEFAULT_MATRIX_AUTO_UPDATE: js.UndefOr[Any] = js.undefined
     
-    var DefaultMatrixWorldAutoUpdate: js.UndefOr[Any] = js.undefined
+    var DEFAULT_MATRIX_WORLD_AUTO_UPDATE: js.UndefOr[Any] = js.undefined
     
-    var DefaultUp: js.UndefOr[Any] = js.undefined
+    var DEFAULT_UP: js.UndefOr[Any] = js.undefined
     
     def add(`object`: Object3D[Event]*): this.type
     
@@ -161,9 +171,9 @@ object srcRenderersWebxrWebXRManagerMod {
     @JSName("copy")
     var copy_Original: js.Function2[/* source */ this.type, /* recursive */ js.UndefOr[Boolean], this.type]
     
-    var customDepthMaterial: Material
+    var customDepthMaterial: js.UndefOr[Material] = js.undefined
     
-    var customDistanceMaterial: Material
+    var customDistanceMaterial: js.UndefOr[Material] = js.undefined
     
     def dispatchEvent(event: Event): Unit
     @JSName("dispatchEvent")
@@ -208,6 +218,10 @@ object srcRenderersWebxrWebXRManagerMod {
     def getObjectByProperty(name: String, value: Any): js.UndefOr[Object3D[Event]]
     @JSName("getObjectByProperty")
     var getObjectByProperty_Original: js.Function2[/* name */ String, /* value */ Any, js.UndefOr[Object3D[Event]]]
+    
+    def getObjectsByProperty(name: String, value: Any): js.Array[Object3D[Event]]
+    @JSName("getObjectsByProperty")
+    var getObjectsByProperty_Original: js.Function2[/* name */ String, /* value */ Any, js.Array[Object3D[Event]]]
     
     def getWorldDirection(target: Vector3): Vector3
     @JSName("getWorldDirection")
@@ -273,7 +287,7 @@ object srcRenderersWebxrWebXRManagerMod {
       renderer: WebGLRenderer,
       scene: Scene,
       camera: Camera,
-      geometry: BufferGeometry,
+      geometry: BufferGeometry[NormalBufferAttributes],
       material: Material,
       group: Group
     ): Unit
@@ -282,7 +296,7 @@ object srcRenderersWebxrWebXRManagerMod {
         /* renderer */ WebGLRenderer, 
         /* scene */ Scene, 
         /* camera */ Camera, 
-        /* geometry */ BufferGeometry, 
+        /* geometry */ BufferGeometry[NormalBufferAttributes], 
         /* material */ Material, 
         /* group */ Group, 
         Unit
@@ -292,7 +306,7 @@ object srcRenderersWebxrWebXRManagerMod {
       renderer: WebGLRenderer,
       scene: Scene,
       camera: Camera,
-      geometry: BufferGeometry,
+      geometry: BufferGeometry[NormalBufferAttributes],
       material: Material,
       group: Group
     ): Unit
@@ -301,7 +315,7 @@ object srcRenderersWebxrWebXRManagerMod {
         /* renderer */ WebGLRenderer, 
         /* scene */ Scene, 
         /* camera */ Camera, 
-        /* geometry */ BufferGeometry, 
+        /* geometry */ BufferGeometry[NormalBufferAttributes], 
         /* material */ Material, 
         /* group */ Group, 
         Unit
@@ -404,9 +418,9 @@ object srcRenderersWebxrWebXRManagerMod {
       ]
     
     def toJSON(): Any
-    def toJSON(meta: Any): Any
+    def toJSON(meta: Geometries): Any
     @JSName("toJSON")
-    var toJSON_Original: js.Function1[/* meta */ js.UndefOr[Any], Any]
+    var toJSON_Original: js.Function1[/* meta */ js.UndefOr[Geometries], Any]
     
     def translateOnAxis(axis: Vector3, distance: Double): this.type
     @JSName("translateOnAxis")
@@ -437,7 +451,7 @@ object srcRenderersWebxrWebXRManagerMod {
     @JSName("traverse")
     var traverse_Original: js.Function1[/* callback */ js.Function1[/* object */ Object3D[Event], Any], Unit]
     
-    var `type`: typings.three.threeStrings.PerspectiveCamera
+    var `type`: String | typings.three.threeStrings.PerspectiveCamera
     
     var up: Vector3
     
@@ -491,8 +505,6 @@ object srcRenderersWebxrWebXRManagerMod {
       clone_ : /* recursive */ js.UndefOr[Boolean] => WebXRArrayCamera,
       constructor: /* cameras */ js.UndefOr[js.Array[PerspectiveCamera]] => Any,
       copy: (WebXRArrayCamera, /* recursive */ js.UndefOr[Boolean]) => WebXRArrayCamera,
-      customDepthMaterial: Material,
-      customDistanceMaterial: Material,
       dispatchEvent: /* event */ Event => Unit,
       far: Double,
       filmGauge: Double,
@@ -507,6 +519,7 @@ object srcRenderersWebxrWebXRManagerMod {
       getObjectById: /* id */ Double => js.UndefOr[Object3D[Event]],
       getObjectByName: /* name */ String => js.UndefOr[Object3D[Event]],
       getObjectByProperty: (/* name */ String, /* value */ Any) => js.UndefOr[Object3D[Event]],
+      getObjectsByProperty: (/* name */ String, /* value */ Any) => js.Array[Object3D[Event]],
       getWorldDirection: /* target */ Vector3 => Vector3,
       getWorldPosition: /* target */ Vector3 => Vector3,
       getWorldQuaternion: /* target */ Quaternion => Quaternion,
@@ -526,8 +539,8 @@ object srcRenderersWebxrWebXRManagerMod {
       name: String,
       near: Double,
       normalMatrix: Matrix3,
-      onAfterRender: (/* renderer */ WebGLRenderer, /* scene */ Scene, /* camera */ Camera, /* geometry */ BufferGeometry, /* material */ Material, /* group */ Group) => Unit,
-      onBeforeRender: (/* renderer */ WebGLRenderer, /* scene */ Scene, /* camera */ Camera, /* geometry */ BufferGeometry, /* material */ Material, /* group */ Group) => Unit,
+      onAfterRender: (/* renderer */ WebGLRenderer, /* scene */ Scene, /* camera */ Camera, /* geometry */ BufferGeometry[NormalBufferAttributes], /* material */ Material, /* group */ Group) => Unit,
+      onBeforeRender: (/* renderer */ WebGLRenderer, /* scene */ Scene, /* camera */ Camera, /* geometry */ BufferGeometry[NormalBufferAttributes], /* material */ Material, /* group */ Group) => Unit,
       position: Vector3,
       projectionMatrix: Matrix4,
       projectionMatrixInverse: Matrix4,
@@ -552,7 +565,7 @@ object srcRenderersWebxrWebXRManagerMod {
       setRotationFromMatrix: /* m */ Matrix4 => Unit,
       setRotationFromQuaternion: /* q */ Quaternion => Unit,
       setViewOffset: (/* fullWidth */ Double, /* fullHeight */ Double, /* x */ Double, /* y */ Double, /* width */ Double, /* height */ Double) => Unit,
-      toJSON: /* meta */ js.UndefOr[Any] => Any,
+      toJSON: /* meta */ js.UndefOr[Geometries] => Any,
       translateOnAxis: (/* axis */ Vector3, /* distance */ Double) => WebXRArrayCamera,
       translateX: /* distance */ Double => WebXRArrayCamera,
       translateY: /* distance */ Double => WebXRArrayCamera,
@@ -560,6 +573,7 @@ object srcRenderersWebxrWebXRManagerMod {
       traverse: /* callback */ js.Function1[/* object */ Object3D[Event], Any] => Unit,
       traverseAncestors: /* callback */ js.Function1[/* object */ Object3D[Event], Any] => Unit,
       traverseVisible: /* callback */ js.Function1[/* object */ Object3D[Event], Any] => Unit,
+      `type`: String | typings.three.threeStrings.PerspectiveCamera,
       up: Vector3,
       updateMatrix: () => Unit,
       updateMatrixWorld: /* force */ js.UndefOr[Boolean] => Unit,
@@ -571,9 +585,9 @@ object srcRenderersWebxrWebXRManagerMod {
       worldToLocal: /* vector */ Vector3 => Vector3,
       zoom: Double
     ): WebXRArrayCamera = {
-      val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), addEventListener = js.Any.fromFunction2(addEventListener), animations = animations.asInstanceOf[js.Any], applyMatrix4 = js.Any.fromFunction1(applyMatrix4), applyQuaternion = js.Any.fromFunction1(applyQuaternion), aspect = aspect.asInstanceOf[js.Any], attach = js.Any.fromFunction1(attach), cameras = cameras.asInstanceOf[js.Any], castShadow = castShadow.asInstanceOf[js.Any], children = children.asInstanceOf[js.Any], clear = js.Any.fromFunction0(clear), clearViewOffset = js.Any.fromFunction0(clearViewOffset), constructor = js.Any.fromFunction1(constructor), copy = js.Any.fromFunction2(copy), customDepthMaterial = customDepthMaterial.asInstanceOf[js.Any], customDistanceMaterial = customDistanceMaterial.asInstanceOf[js.Any], dispatchEvent = js.Any.fromFunction1(dispatchEvent), far = far.asInstanceOf[js.Any], filmGauge = filmGauge.asInstanceOf[js.Any], filmOffset = filmOffset.asInstanceOf[js.Any], focus = focus.asInstanceOf[js.Any], fov = fov.asInstanceOf[js.Any], frustumCulled = frustumCulled.asInstanceOf[js.Any], getEffectiveFOV = js.Any.fromFunction0(getEffectiveFOV), getFilmHeight = js.Any.fromFunction0(getFilmHeight), getFilmWidth = js.Any.fromFunction0(getFilmWidth), getFocalLength = js.Any.fromFunction0(getFocalLength), getObjectById = js.Any.fromFunction1(getObjectById), getObjectByName = js.Any.fromFunction1(getObjectByName), getObjectByProperty = js.Any.fromFunction2(getObjectByProperty), getWorldDirection = js.Any.fromFunction1(getWorldDirection), getWorldPosition = js.Any.fromFunction1(getWorldPosition), getWorldQuaternion = js.Any.fromFunction1(getWorldQuaternion), getWorldScale = js.Any.fromFunction1(getWorldScale), hasEventListener = js.Any.fromFunction2(hasEventListener), id = id.asInstanceOf[js.Any], isArrayCamera = true, isCamera = true, isObject3D = true, isPerspectiveCamera = true, layers = layers.asInstanceOf[js.Any], localToWorld = js.Any.fromFunction1(localToWorld), lookAt = js.Any.fromFunction1(lookAt), matrix = matrix.asInstanceOf[js.Any], matrixAutoUpdate = matrixAutoUpdate.asInstanceOf[js.Any], matrixWorld = matrixWorld.asInstanceOf[js.Any], matrixWorldAutoUpdate = matrixWorldAutoUpdate.asInstanceOf[js.Any], matrixWorldInverse = matrixWorldInverse.asInstanceOf[js.Any], matrixWorldNeedsUpdate = matrixWorldNeedsUpdate.asInstanceOf[js.Any], modelViewMatrix = modelViewMatrix.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], near = near.asInstanceOf[js.Any], normalMatrix = normalMatrix.asInstanceOf[js.Any], onAfterRender = js.Any.fromFunction6(onAfterRender), onBeforeRender = js.Any.fromFunction6(onBeforeRender), position = position.asInstanceOf[js.Any], projectionMatrix = projectionMatrix.asInstanceOf[js.Any], projectionMatrixInverse = projectionMatrixInverse.asInstanceOf[js.Any], quaternion = quaternion.asInstanceOf[js.Any], raycast = js.Any.fromFunction2(raycast), receiveShadow = receiveShadow.asInstanceOf[js.Any], remove = js.Any.fromFunction1(remove), removeEventListener = js.Any.fromFunction2(removeEventListener), removeFromParent = js.Any.fromFunction0(removeFromParent), renderOrder = renderOrder.asInstanceOf[js.Any], rotateOnAxis = js.Any.fromFunction2(rotateOnAxis), rotateOnWorldAxis = js.Any.fromFunction2(rotateOnWorldAxis), rotateX = js.Any.fromFunction1(rotateX), rotateY = js.Any.fromFunction1(rotateY), rotateZ = js.Any.fromFunction1(rotateZ), rotation = rotation.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any], setFocalLength = js.Any.fromFunction1(setFocalLength), setLens = js.Any.fromFunction2(setLens), setRotationFromAxisAngle = js.Any.fromFunction2(setRotationFromAxisAngle), setRotationFromEuler = js.Any.fromFunction1(setRotationFromEuler), setRotationFromMatrix = js.Any.fromFunction1(setRotationFromMatrix), setRotationFromQuaternion = js.Any.fromFunction1(setRotationFromQuaternion), setViewOffset = js.Any.fromFunction6(setViewOffset), toJSON = js.Any.fromFunction1(toJSON), translateOnAxis = js.Any.fromFunction2(translateOnAxis), translateX = js.Any.fromFunction1(translateX), translateY = js.Any.fromFunction1(translateY), translateZ = js.Any.fromFunction1(translateZ), traverse = js.Any.fromFunction1(traverse), traverseAncestors = js.Any.fromFunction1(traverseAncestors), traverseVisible = js.Any.fromFunction1(traverseVisible), up = up.asInstanceOf[js.Any], updateMatrix = js.Any.fromFunction0(updateMatrix), updateMatrixWorld = js.Any.fromFunction1(updateMatrixWorld), updateProjectionMatrix = js.Any.fromFunction0(updateProjectionMatrix), updateWorldMatrix = js.Any.fromFunction2(updateWorldMatrix), userData = userData.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any], worldToLocal = js.Any.fromFunction1(worldToLocal), zoom = zoom.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), addEventListener = js.Any.fromFunction2(addEventListener), animations = animations.asInstanceOf[js.Any], applyMatrix4 = js.Any.fromFunction1(applyMatrix4), applyQuaternion = js.Any.fromFunction1(applyQuaternion), aspect = aspect.asInstanceOf[js.Any], attach = js.Any.fromFunction1(attach), cameras = cameras.asInstanceOf[js.Any], castShadow = castShadow.asInstanceOf[js.Any], children = children.asInstanceOf[js.Any], clear = js.Any.fromFunction0(clear), clearViewOffset = js.Any.fromFunction0(clearViewOffset), constructor = js.Any.fromFunction1(constructor), copy = js.Any.fromFunction2(copy), dispatchEvent = js.Any.fromFunction1(dispatchEvent), far = far.asInstanceOf[js.Any], filmGauge = filmGauge.asInstanceOf[js.Any], filmOffset = filmOffset.asInstanceOf[js.Any], focus = focus.asInstanceOf[js.Any], fov = fov.asInstanceOf[js.Any], frustumCulled = frustumCulled.asInstanceOf[js.Any], getEffectiveFOV = js.Any.fromFunction0(getEffectiveFOV), getFilmHeight = js.Any.fromFunction0(getFilmHeight), getFilmWidth = js.Any.fromFunction0(getFilmWidth), getFocalLength = js.Any.fromFunction0(getFocalLength), getObjectById = js.Any.fromFunction1(getObjectById), getObjectByName = js.Any.fromFunction1(getObjectByName), getObjectByProperty = js.Any.fromFunction2(getObjectByProperty), getObjectsByProperty = js.Any.fromFunction2(getObjectsByProperty), getWorldDirection = js.Any.fromFunction1(getWorldDirection), getWorldPosition = js.Any.fromFunction1(getWorldPosition), getWorldQuaternion = js.Any.fromFunction1(getWorldQuaternion), getWorldScale = js.Any.fromFunction1(getWorldScale), hasEventListener = js.Any.fromFunction2(hasEventListener), id = id.asInstanceOf[js.Any], isArrayCamera = true, isCamera = true, isObject3D = true, isPerspectiveCamera = true, layers = layers.asInstanceOf[js.Any], localToWorld = js.Any.fromFunction1(localToWorld), lookAt = js.Any.fromFunction1(lookAt), matrix = matrix.asInstanceOf[js.Any], matrixAutoUpdate = matrixAutoUpdate.asInstanceOf[js.Any], matrixWorld = matrixWorld.asInstanceOf[js.Any], matrixWorldAutoUpdate = matrixWorldAutoUpdate.asInstanceOf[js.Any], matrixWorldInverse = matrixWorldInverse.asInstanceOf[js.Any], matrixWorldNeedsUpdate = matrixWorldNeedsUpdate.asInstanceOf[js.Any], modelViewMatrix = modelViewMatrix.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], near = near.asInstanceOf[js.Any], normalMatrix = normalMatrix.asInstanceOf[js.Any], onAfterRender = js.Any.fromFunction6(onAfterRender), onBeforeRender = js.Any.fromFunction6(onBeforeRender), position = position.asInstanceOf[js.Any], projectionMatrix = projectionMatrix.asInstanceOf[js.Any], projectionMatrixInverse = projectionMatrixInverse.asInstanceOf[js.Any], quaternion = quaternion.asInstanceOf[js.Any], raycast = js.Any.fromFunction2(raycast), receiveShadow = receiveShadow.asInstanceOf[js.Any], remove = js.Any.fromFunction1(remove), removeEventListener = js.Any.fromFunction2(removeEventListener), removeFromParent = js.Any.fromFunction0(removeFromParent), renderOrder = renderOrder.asInstanceOf[js.Any], rotateOnAxis = js.Any.fromFunction2(rotateOnAxis), rotateOnWorldAxis = js.Any.fromFunction2(rotateOnWorldAxis), rotateX = js.Any.fromFunction1(rotateX), rotateY = js.Any.fromFunction1(rotateY), rotateZ = js.Any.fromFunction1(rotateZ), rotation = rotation.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any], setFocalLength = js.Any.fromFunction1(setFocalLength), setLens = js.Any.fromFunction2(setLens), setRotationFromAxisAngle = js.Any.fromFunction2(setRotationFromAxisAngle), setRotationFromEuler = js.Any.fromFunction1(setRotationFromEuler), setRotationFromMatrix = js.Any.fromFunction1(setRotationFromMatrix), setRotationFromQuaternion = js.Any.fromFunction1(setRotationFromQuaternion), setViewOffset = js.Any.fromFunction6(setViewOffset), toJSON = js.Any.fromFunction1(toJSON), translateOnAxis = js.Any.fromFunction2(translateOnAxis), translateX = js.Any.fromFunction1(translateX), translateY = js.Any.fromFunction1(translateY), translateZ = js.Any.fromFunction1(translateZ), traverse = js.Any.fromFunction1(traverse), traverseAncestors = js.Any.fromFunction1(traverseAncestors), traverseVisible = js.Any.fromFunction1(traverseVisible), up = up.asInstanceOf[js.Any], updateMatrix = js.Any.fromFunction0(updateMatrix), updateMatrixWorld = js.Any.fromFunction1(updateMatrixWorld), updateProjectionMatrix = js.Any.fromFunction0(updateProjectionMatrix), updateWorldMatrix = js.Any.fromFunction2(updateWorldMatrix), userData = userData.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any], worldToLocal = js.Any.fromFunction1(worldToLocal), zoom = zoom.asInstanceOf[js.Any])
       __obj.updateDynamic("clone")(js.Any.fromFunction1(clone_))
-      __obj.updateDynamic("type")("PerspectiveCamera")
+      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[WebXRArrayCamera]
     }
     
@@ -616,19 +630,23 @@ object srcRenderersWebxrWebXRManagerMod {
       
       inline def setCustomDepthMaterial(value: Material): Self = StObject.set(x, "customDepthMaterial", value.asInstanceOf[js.Any])
       
+      inline def setCustomDepthMaterialUndefined: Self = StObject.set(x, "customDepthMaterial", js.undefined)
+      
       inline def setCustomDistanceMaterial(value: Material): Self = StObject.set(x, "customDistanceMaterial", value.asInstanceOf[js.Any])
       
-      inline def setDefaultMatrixAutoUpdate(value: Any): Self = StObject.set(x, "DefaultMatrixAutoUpdate", value.asInstanceOf[js.Any])
+      inline def setCustomDistanceMaterialUndefined: Self = StObject.set(x, "customDistanceMaterial", js.undefined)
       
-      inline def setDefaultMatrixAutoUpdateUndefined: Self = StObject.set(x, "DefaultMatrixAutoUpdate", js.undefined)
+      inline def setDEFAULT_MATRIX_AUTO_UPDATE(value: Any): Self = StObject.set(x, "DEFAULT_MATRIX_AUTO_UPDATE", value.asInstanceOf[js.Any])
       
-      inline def setDefaultMatrixWorldAutoUpdate(value: Any): Self = StObject.set(x, "DefaultMatrixWorldAutoUpdate", value.asInstanceOf[js.Any])
+      inline def setDEFAULT_MATRIX_AUTO_UPDATEUndefined: Self = StObject.set(x, "DEFAULT_MATRIX_AUTO_UPDATE", js.undefined)
       
-      inline def setDefaultMatrixWorldAutoUpdateUndefined: Self = StObject.set(x, "DefaultMatrixWorldAutoUpdate", js.undefined)
+      inline def setDEFAULT_MATRIX_WORLD_AUTO_UPDATE(value: Any): Self = StObject.set(x, "DEFAULT_MATRIX_WORLD_AUTO_UPDATE", value.asInstanceOf[js.Any])
       
-      inline def setDefaultUp(value: Any): Self = StObject.set(x, "DefaultUp", value.asInstanceOf[js.Any])
+      inline def setDEFAULT_MATRIX_WORLD_AUTO_UPDATEUndefined: Self = StObject.set(x, "DEFAULT_MATRIX_WORLD_AUTO_UPDATE", js.undefined)
       
-      inline def setDefaultUpUndefined: Self = StObject.set(x, "DefaultUp", js.undefined)
+      inline def setDEFAULT_UP(value: Any): Self = StObject.set(x, "DEFAULT_UP", value.asInstanceOf[js.Any])
+      
+      inline def setDEFAULT_UPUndefined: Self = StObject.set(x, "DEFAULT_UP", js.undefined)
       
       inline def setDispatchEvent(value: /* event */ Event => Unit): Self = StObject.set(x, "dispatchEvent", js.Any.fromFunction1(value))
       
@@ -657,6 +675,8 @@ object srcRenderersWebxrWebXRManagerMod {
       inline def setGetObjectByName(value: /* name */ String => js.UndefOr[Object3D[Event]]): Self = StObject.set(x, "getObjectByName", js.Any.fromFunction1(value))
       
       inline def setGetObjectByProperty(value: (/* name */ String, /* value */ Any) => js.UndefOr[Object3D[Event]]): Self = StObject.set(x, "getObjectByProperty", js.Any.fromFunction2(value))
+      
+      inline def setGetObjectsByProperty(value: (/* name */ String, /* value */ Any) => js.Array[Object3D[Event]]): Self = StObject.set(x, "getObjectsByProperty", js.Any.fromFunction2(value))
       
       inline def setGetWorldDirection(value: /* target */ Vector3 => Vector3): Self = StObject.set(x, "getWorldDirection", js.Any.fromFunction1(value))
       
@@ -707,11 +727,11 @@ object srcRenderersWebxrWebXRManagerMod {
       inline def setNormalMatrix(value: Matrix3): Self = StObject.set(x, "normalMatrix", value.asInstanceOf[js.Any])
       
       inline def setOnAfterRender(
-        value: (/* renderer */ WebGLRenderer, /* scene */ Scene, /* camera */ Camera, /* geometry */ BufferGeometry, /* material */ Material, /* group */ Group) => Unit
+        value: (/* renderer */ WebGLRenderer, /* scene */ Scene, /* camera */ Camera, /* geometry */ BufferGeometry[NormalBufferAttributes], /* material */ Material, /* group */ Group) => Unit
       ): Self = StObject.set(x, "onAfterRender", js.Any.fromFunction6(value))
       
       inline def setOnBeforeRender(
-        value: (/* renderer */ WebGLRenderer, /* scene */ Scene, /* camera */ Camera, /* geometry */ BufferGeometry, /* material */ Material, /* group */ Group) => Unit
+        value: (/* renderer */ WebGLRenderer, /* scene */ Scene, /* camera */ Camera, /* geometry */ BufferGeometry[NormalBufferAttributes], /* material */ Material, /* group */ Group) => Unit
       ): Self = StObject.set(x, "onBeforeRender", js.Any.fromFunction6(value))
       
       inline def setParent(value: Object3D[Event]): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
@@ -772,7 +792,7 @@ object srcRenderersWebxrWebXRManagerMod {
         value: (/* fullWidth */ Double, /* fullHeight */ Double, /* x */ Double, /* y */ Double, /* width */ Double, /* height */ Double) => Unit
       ): Self = StObject.set(x, "setViewOffset", js.Any.fromFunction6(value))
       
-      inline def setToJSON(value: /* meta */ js.UndefOr[Any] => Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction1(value))
+      inline def setToJSON(value: /* meta */ js.UndefOr[Geometries] => Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction1(value))
       
       inline def setTranslateOnAxis(value: (/* axis */ Vector3, /* distance */ Double) => WebXRArrayCamera): Self = StObject.set(x, "translateOnAxis", js.Any.fromFunction2(value))
       
@@ -788,7 +808,7 @@ object srcRenderersWebxrWebXRManagerMod {
       
       inline def setTraverseVisible(value: /* callback */ js.Function1[/* object */ Object3D[Event], Any] => Unit): Self = StObject.set(x, "traverseVisible", js.Any.fromFunction1(value))
       
-      inline def setType(value: typings.three.threeStrings.PerspectiveCamera): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String | typings.three.threeStrings.PerspectiveCamera): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
       inline def setUp(value: Vector3): Self = StObject.set(x, "up", value.asInstanceOf[js.Any])
       

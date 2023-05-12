@@ -212,8 +212,8 @@ object foxxQueuesMod {
     def progress(): js.Array[String] = js.native
     def progress(script: Script): js.Array[String] = js.native
     
-    def push(item: QueueItem, data: Any): Unit = js.native
-    def push(item: QueueItem, data: Any, opts: JobOptions): Unit = js.native
+    def push(item: QueueItem, data: Any): String = js.native
+    def push(item: QueueItem, data: Any, opts: JobOptions): String = js.native
   }
   
   trait QueueItem extends StObject {

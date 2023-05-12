@@ -16,11 +16,25 @@ trait InlineCompletionsProvider[T /* <: InlineCompletions[InlineCompletion] */] 
   
   /**
     * Will be called when an item is shown.
+    * @param updatedInsertText Is useful to understand bracket completion.
     */
   var handleItemDidShow: js.UndefOr[
-    js.Function2[
+    js.Function3[
       /* completions */ T, 
       /* import warning: importer.ImportType#apply Failed type conversion: T['items'][number] */ /* item */ js.Any, 
+      /* updatedInsertText */ String, 
+      Unit
+    ]
+  ] = js.undefined
+  
+  /**
+    * Will be called when an item is partially accepted.
+    */
+  var handlePartialAccept: js.UndefOr[
+    js.Function3[
+      /* completions */ T, 
+      /* import warning: importer.ImportType#apply Failed type conversion: T['items'][number] */ /* item */ js.Any, 
+      /* acceptedCharacters */ Double, 
       Unit
     ]
   ] = js.undefined
@@ -43,10 +57,16 @@ object InlineCompletionsProvider {
     inline def setFreeInlineCompletions(value: T => Unit): Self = StObject.set(x, "freeInlineCompletions", js.Any.fromFunction1(value))
     
     inline def setHandleItemDidShow(
-      value: (/* completions */ T, /* import warning: importer.ImportType#apply Failed type conversion: T['items'][number] */ /* item */ js.Any) => Unit
-    ): Self = StObject.set(x, "handleItemDidShow", js.Any.fromFunction2(value))
+      value: (/* completions */ T, /* import warning: importer.ImportType#apply Failed type conversion: T['items'][number] */ /* item */ js.Any, /* updatedInsertText */ String) => Unit
+    ): Self = StObject.set(x, "handleItemDidShow", js.Any.fromFunction3(value))
     
     inline def setHandleItemDidShowUndefined: Self = StObject.set(x, "handleItemDidShow", js.undefined)
+    
+    inline def setHandlePartialAccept(
+      value: (/* completions */ T, /* import warning: importer.ImportType#apply Failed type conversion: T['items'][number] */ /* item */ js.Any, /* acceptedCharacters */ Double) => Unit
+    ): Self = StObject.set(x, "handlePartialAccept", js.Any.fromFunction3(value))
+    
+    inline def setHandlePartialAcceptUndefined: Self = StObject.set(x, "handlePartialAccept", js.undefined)
     
     inline def setProvideInlineCompletions(value: (ITextModel, Position, InlineCompletionContext, CancellationToken) => ProviderResult[T]): Self = StObject.set(x, "provideInlineCompletions", js.Any.fromFunction4(value))
   }

@@ -6,15 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("bson", "BSONRegExp")
 @js.native
-open class BSONRegExp protected () extends StObject {
+open class BSONRegExp protected () extends BSONValue {
   /**
     * @param pattern - The regular expression pattern to match
     * @param options - The regular expression options
     */
   def this(pattern: String) = this()
   def this(pattern: String, options: String) = this()
-  
-  var _bsontype: typings.bson.bsonStrings.BSONRegExp = js.native
   
   var options: String = js.native
   

@@ -12,7 +12,7 @@ trait CreateMapResponse extends StObject {
   var CreateTime: js.Date
   
   /**
-    * The Amazon Resource Name (ARN) for the map resource. Used to specify a resource across all AWS.   Format example: arn:aws:geo:region:account-id:map/ExampleMap   
+    * The Amazon Resource Name (ARN) for the map resource. Used to specify a resource across all Amazon Web Services.   Format example: arn:aws:geo:region:account-id:map/ExampleMap   
     */
   var MapArn: GeoArn
   

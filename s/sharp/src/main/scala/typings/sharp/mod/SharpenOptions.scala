@@ -6,22 +6,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SharpenOptions extends StObject {
   
-  /** The level of sharpening to apply to "flat" areas. (optional, default 1.0) */
+  /** The level of sharpening to apply to "flat" areas, between 0 and 1000000 (optional, default 1.0) */
   var m1: js.UndefOr[Double] = js.undefined
   
-  /** The level of sharpening to apply to "jagged" areas. (optional, default 2.0) */
+  /** The level of sharpening to apply to "jagged" areas, between 0 and 1000000 (optional, default 2.0) */
   var m2: js.UndefOr[Double] = js.undefined
   
-  /** The sigma of the Gaussian mask, where sigma = 1 + radius / 2. */
+  /** The sigma of the Gaussian mask, where sigma = 1 + radius / 2, between 0.000001 and 10000 */
   var sigma: Double
   
-  /** Threshold between "flat" and "jagged" (optional, default 2.0) */
+  /** Threshold between "flat" and "jagged", between 0 and 1000000 (optional, default 2.0) */
   var x1: js.UndefOr[Double] = js.undefined
   
-  /** Maximum amount of brightening. (optional, default 10.0) */
+  /** Maximum amount of brightening, between 0 and 1000000 (optional, default 10.0) */
   var y2: js.UndefOr[Double] = js.undefined
   
-  /** Maximum amount of darkening. (optional, default 20.0) */
+  /** Maximum amount of darkening, between 0 and 1000000 (optional, default 20.0) */
   var y3: js.UndefOr[Double] = js.undefined
 }
 object SharpenOptions {

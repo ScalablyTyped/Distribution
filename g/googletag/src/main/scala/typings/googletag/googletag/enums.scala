@@ -14,8 +14,7 @@ object enums {
   /**
     * Out-of-page formats supported by GPT.
     *
-    * **See also**
-    * - {@link googletag.defineOutOfPageSlot}
+    * @see {@link googletag.defineOutOfPageSlot}
     */
   @JSGlobal("googletag.enums.OutOfPageFormat")
   @js.native
@@ -59,8 +58,7 @@ object enums {
   /**
     * [Traffic sources](https://support.google.com/admanager/answer/11233407) supported by GPT.
     *
-    * **See also**
-    * - {@link PrivacySettingsConfig.trafficSource}
+    * @see {@link PrivacySettingsConfig.trafficSource}
     */
   @JSGlobal("googletag.enums.TrafficSource")
   @js.native

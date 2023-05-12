@@ -31,6 +31,10 @@ trait RElementownerDocumentDocu extends StObject {
   
   var className: String = js.native
   
+  var firstChild: RNode | Null = js.native
+  
+  def getAttribute(name: String): String | Null = js.native
+  
   def insertBefore(newChild: RNode, refChild: Null, isViewRoot: Boolean): Unit = js.native
   /**
     * Insert a child node.

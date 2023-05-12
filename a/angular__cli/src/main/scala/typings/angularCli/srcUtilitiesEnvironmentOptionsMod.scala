@@ -10,10 +10,6 @@ object srcUtilitiesEnvironmentOptionsMod {
   @js.native
   val analyticsDisabled: Boolean = js.native
   
-  @JSImport("@angular/cli/src/utilities/environment-options", "analyticsShareDisabled")
-  @js.native
-  val analyticsShareDisabled: Boolean = js.native
-  
   @JSImport("@angular/cli/src/utilities/environment-options", "disableVersionCheck")
   @js.native
   val disableVersionCheck: Boolean = js.native

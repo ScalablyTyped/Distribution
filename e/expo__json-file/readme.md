@@ -1,7 +1,7 @@
 
 # Scala.js typings for expo__json-file
 
-Typings are for version 8.2.36
+Typings are for version 8.2.37
 
 ## Library description:
 A module for reading, writing, and manipulating JSON files

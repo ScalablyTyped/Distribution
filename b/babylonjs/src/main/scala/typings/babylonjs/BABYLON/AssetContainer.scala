@@ -10,9 +10,28 @@ trait AssetContainer
   extends StObject
      with AbstractScene {
   
+  /* private */ var _addNodeAndDescendantsToList: Any = js.native
+  
+  /**
+    * Check if a specific node is contained in this asset container.
+    * @param node
+    */
+  /* private */ var _isNodeInContainer: Any = js.native
+  
+  /**
+    * For every node in the scene, check if its parent node is also in the scene.
+    */
+  /* private */ var _isValidHierarchy: Any = js.native
+  
   /* private */ var _moveAssets: Any = js.native
   
   /* private */ var _onContextRestoredObserver: Any = js.native
+  
+  /**
+    * Given a list of nodes, return a topological sorting of them.
+    * @param nodes
+    */
+  /* private */ var _topologicalSort: Any = js.native
   
   /* private */ var _wasAddedToScene: Any = js.native
   

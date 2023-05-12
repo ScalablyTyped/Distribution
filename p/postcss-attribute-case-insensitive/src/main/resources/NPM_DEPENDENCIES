@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "postcss-attribute-case-insensitive" : "5.0.2"
+      "postcss-attribute-case-insensitive" : "6.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "postcss-attribute-case-insensitive" : "5.0.2"
+      "postcss-attribute-case-insensitive" : "6.0.2"
     }
   ],
   "compile-devDependencies" : [

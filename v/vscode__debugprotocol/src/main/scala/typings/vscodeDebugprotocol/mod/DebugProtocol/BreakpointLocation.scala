@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Properties of a breakpoint location returned from the `breakpointLocations` request. */
 trait BreakpointLocation extends StObject {
   
-  /** The start column of breakpoint location. */
+  /** The start position of a breakpoint location. Position is measured in UTF-16 code units and the client capability `columnsStartAt1` determines whether it is 0- or 1-based. */
   var column: js.UndefOr[Double] = js.undefined
   
-  /** The end column of breakpoint location if the location covers a range. */
+  /** The end position of a breakpoint location (if the location covers a range). Position is measured in UTF-16 code units and the client capability `columnsStartAt1` determines whether it is 0- or 1-based. */
   var endColumn: js.UndefOr[Double] = js.undefined
   
   /** The end line of breakpoint location if the location covers a range. */

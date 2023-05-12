@@ -12,7 +12,7 @@ open class Layer protected ()
   def this(props: LayerProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: LayerProps, context: Any) = this()
 }

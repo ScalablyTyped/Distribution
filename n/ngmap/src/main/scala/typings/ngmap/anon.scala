@@ -42,21 +42,17 @@ object anon {
     /**
       * Icon for the foreground.
       * If a string is provided, it is treated as though it were an Icon with the string as url.
-      * @type {(string|Icon|Symbol)}
       */
     var icon: js.UndefOr[String | Icon | Symbol] = js.undefined
     
     /**
       * Adds a label to the marker. The label can either be a string, or a MarkerLabel object.
       * Only the first character of the string will be displayed.
-      * @type {string}
       */
     var label: js.UndefOr[String] = js.undefined
     
     /**
       * Map on which to display Marker.
-      * @type {(Map|StreetViewPanorama)}
-      *
       */
     var map: js.UndefOr[Map | StreetViewPanorama] = js.undefined
     

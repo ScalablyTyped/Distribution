@@ -42,6 +42,16 @@ trait JobDetail extends StObject {
   var eksProperties: js.UndefOr[EksPropertiesDetail] = js.undefined
   
   /**
+    * Indicates whether the job is canceled.
+    */
+  var isCancelled: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Indicates whether the job is terminated.
+    */
+  var isTerminated: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * The Amazon Resource Name (ARN) of the job.
     */
   var jobArn: js.UndefOr[String] = js.undefined
@@ -186,6 +196,14 @@ object JobDetail {
     inline def setEksProperties(value: EksPropertiesDetail): Self = StObject.set(x, "eksProperties", value.asInstanceOf[js.Any])
     
     inline def setEksPropertiesUndefined: Self = StObject.set(x, "eksProperties", js.undefined)
+    
+    inline def setIsCancelled(value: Boolean): Self = StObject.set(x, "isCancelled", value.asInstanceOf[js.Any])
+    
+    inline def setIsCancelledUndefined: Self = StObject.set(x, "isCancelled", js.undefined)
+    
+    inline def setIsTerminated(value: Boolean): Self = StObject.set(x, "isTerminated", value.asInstanceOf[js.Any])
+    
+    inline def setIsTerminatedUndefined: Self = StObject.set(x, "isTerminated", js.undefined)
     
     inline def setJobArn(value: String): Self = StObject.set(x, "jobArn", value.asInstanceOf[js.Any])
     

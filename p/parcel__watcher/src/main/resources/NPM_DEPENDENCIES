@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@parcel/watcher" : "2.0.7"
+      "@parcel/watcher" : "2.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@parcel/watcher" : "2.0.7"
+      "@parcel/watcher" : "2.1.0"
     }
   ],
   "compile-devDependencies" : [

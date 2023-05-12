@@ -75,7 +75,7 @@ object global {
     override def reset(): Unit = js.native
     
     /* CompleteClass */
-    override val state: CodecState = js.native
+    override val state: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CodecState */ Any = js.native
   }
   object AudioDecoder {
     
@@ -113,7 +113,7 @@ object global {
     override def reset(): Unit = js.native
     
     /* CompleteClass */
-    override val state: CodecState = js.native
+    override val state: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CodecState */ Any = js.native
   }
   object AudioEncoder {
     
@@ -169,7 +169,7 @@ object global {
     override val timestamp: Double = js.native
     
     /* CompleteClass */
-    override val `type`: EncodedVideoChunkType = js.native
+    override val `type`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EncodedVideoChunkType */ Any = js.native
   }
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -280,7 +280,7 @@ object global {
     override def reset(): Unit = js.native
     
     /* CompleteClass */
-    override val state: CodecState = js.native
+    override val state: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CodecState */ Any = js.native
   }
   object VideoDecoder {
     

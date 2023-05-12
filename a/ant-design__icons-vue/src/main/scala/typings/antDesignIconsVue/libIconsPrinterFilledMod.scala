@@ -16,7 +16,7 @@ object libIconsPrinterFilledMod extends Shortcut {
   @js.native
   trait PrinterFilledIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_PrinterFilledIconType: String = js.native

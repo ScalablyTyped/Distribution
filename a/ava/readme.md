@@ -1,7 +1,7 @@
 
 # Scala.js typings for ava
 
-Typings are for version 5.1.0
+Typings are for version 5.2.0
 
 ## Library description:
 Node.js test runner that lets you develop with confidence.

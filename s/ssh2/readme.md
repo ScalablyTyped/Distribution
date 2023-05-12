@@ -1,7 +1,7 @@
 
 # Scala.js typings for ssh2
 
-Typings are for version v1.11
+Typings are for version 1.11
 
 ## Library description:
 SSH2 client and server modules written in pure JavaScript for node.js

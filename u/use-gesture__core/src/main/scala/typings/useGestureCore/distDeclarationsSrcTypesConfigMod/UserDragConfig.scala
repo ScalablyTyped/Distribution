@@ -67,6 +67,11 @@ trait UserDragConfig extends StObject {
     Vector2 | (js.Function1[/* state */ NonUndefined[js.UndefOr[DragStateeventEventTypesd]], Vector2])
   ] = js.undefined
   
+  /**
+    * The distance (in pixels) emulated by arrow keys.
+    */
+  var keyboardDisplacement: js.UndefOr[Double] = js.undefined
+  
   var pointer: js.UndefOr[Keys] = js.undefined
   
   var preventDefault: js.UndefOr[Boolean] = js.undefined
@@ -163,6 +168,10 @@ object UserDragConfig {
     inline def setFromFunction1(value: /* state */ NonUndefined[js.UndefOr[DragStateeventEventTypesd]] => Vector2): Self = StObject.set(x, "from", js.Any.fromFunction1(value))
     
     inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+    
+    inline def setKeyboardDisplacement(value: Double): Self = StObject.set(x, "keyboardDisplacement", value.asInstanceOf[js.Any])
+    
+    inline def setKeyboardDisplacementUndefined: Self = StObject.set(x, "keyboardDisplacement", js.undefined)
     
     inline def setPointer(value: Keys): Self = StObject.set(x, "pointer", value.asInstanceOf[js.Any])
     

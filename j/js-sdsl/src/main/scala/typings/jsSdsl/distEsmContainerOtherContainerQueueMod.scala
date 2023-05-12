@@ -19,17 +19,21 @@ object distEsmContainerOtherContainerQueueMod {
     
     /**
       * @description Access the first element.
+      * @returns The first element.
       */
     def front(): js.UndefOr[T] = js.native
     
     /**
       * @description Removes the first element.
+      * @returns The element you popped.
       */
-    def pop(): Unit = js.native
+    def pop(): js.UndefOr[T] = js.native
     
     /**
       * @description Inserts element to queue's end.
+      * @param element - The element you want to push to the front.
+      * @returns The container length after pushing.
       */
-    def push(element: T): Unit = js.native
+    def push(element: T): Double = js.native
   }
 }

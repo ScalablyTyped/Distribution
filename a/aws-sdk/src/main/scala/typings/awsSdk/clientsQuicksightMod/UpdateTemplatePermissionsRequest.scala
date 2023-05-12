@@ -24,11 +24,11 @@ trait UpdateTemplatePermissionsRequest extends StObject {
   /**
     * The ID for the template.
     */
-  var TemplateId: RestrictiveResourceId
+  var TemplateId: ShortRestrictiveResourceId
 }
 object UpdateTemplatePermissionsRequest {
   
-  inline def apply(AwsAccountId: AwsAccountId, TemplateId: RestrictiveResourceId): UpdateTemplatePermissionsRequest = {
+  inline def apply(AwsAccountId: AwsAccountId, TemplateId: ShortRestrictiveResourceId): UpdateTemplatePermissionsRequest = {
     val __obj = js.Dynamic.literal(AwsAccountId = AwsAccountId.asInstanceOf[js.Any], TemplateId = TemplateId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateTemplatePermissionsRequest]
   }
@@ -50,6 +50,6 @@ object UpdateTemplatePermissionsRequest {
     
     inline def setRevokePermissionsVarargs(value: ResourcePermission*): Self = StObject.set(x, "RevokePermissions", js.Array(value*))
     
-    inline def setTemplateId(value: RestrictiveResourceId): Self = StObject.set(x, "TemplateId", value.asInstanceOf[js.Any])
+    inline def setTemplateId(value: ShortRestrictiveResourceId): Self = StObject.set(x, "TemplateId", value.asInstanceOf[js.Any])
   }
 }

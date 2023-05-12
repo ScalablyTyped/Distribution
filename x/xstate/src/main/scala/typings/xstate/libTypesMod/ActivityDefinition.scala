@@ -4,23 +4,10 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait ActivityDefinition[TContext, TEvent /* <: EventObject */]
   extends StObject
-     with ActionObject[TContext, TEvent] {
+     with ActionObject[TContext, TEvent, TEvent, BaseActionObject] {
   
-  var id: String
-}
-object ActivityDefinition {
-  
-  inline def apply[TContext, TEvent /* <: EventObject */](id: String, `type`: String): ActivityDefinition[TContext, TEvent] = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ActivityDefinition[TContext, TEvent]]
-  }
-  
-  @scala.inline
-  implicit open class MutableBuilder[Self <: ActivityDefinition[?, ?], TContext, TEvent /* <: EventObject */] (val x: Self & (ActivityDefinition[TContext, TEvent])) extends AnyVal {
-    
-    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
-  }
+  var id: String = js.native
 }

@@ -8,9 +8,13 @@ trait Expire extends StObject {
   
   var expire: js.UndefOr[Double] = js.undefined
   
+  var force_network: js.UndefOr[String] = js.undefined
+  
   var multisign: js.UndefOr[Boolean] = js.undefined
   
   var pathfinding: js.UndefOr[Boolean] = js.undefined
+  
+  var pathfinding_fallback: js.UndefOr[Boolean] = js.undefined
   
   var return_url: js.UndefOr[App] = js.undefined
   
@@ -32,6 +36,10 @@ object Expire {
     
     inline def setExpireUndefined: Self = StObject.set(x, "expire", js.undefined)
     
+    inline def setForce_network(value: String): Self = StObject.set(x, "force_network", value.asInstanceOf[js.Any])
+    
+    inline def setForce_networkUndefined: Self = StObject.set(x, "force_network", js.undefined)
+    
     inline def setMultisign(value: Boolean): Self = StObject.set(x, "multisign", value.asInstanceOf[js.Any])
     
     inline def setMultisignUndefined: Self = StObject.set(x, "multisign", js.undefined)
@@ -39,6 +47,10 @@ object Expire {
     inline def setPathfinding(value: Boolean): Self = StObject.set(x, "pathfinding", value.asInstanceOf[js.Any])
     
     inline def setPathfindingUndefined: Self = StObject.set(x, "pathfinding", js.undefined)
+    
+    inline def setPathfinding_fallback(value: Boolean): Self = StObject.set(x, "pathfinding_fallback", value.asInstanceOf[js.Any])
+    
+    inline def setPathfinding_fallbackUndefined: Self = StObject.set(x, "pathfinding_fallback", js.undefined)
     
     inline def setReturn_url(value: App): Self = StObject.set(x, "return_url", value.asInstanceOf[js.Any])
     

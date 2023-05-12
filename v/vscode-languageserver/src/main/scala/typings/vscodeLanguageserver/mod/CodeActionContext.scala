@@ -30,7 +30,7 @@ object CodeActionContext {
   ): typings.vscodeLanguageserverTypes.mod.CodeActionContext = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(diagnostics.asInstanceOf[js.Any], only.asInstanceOf[js.Any], triggerKind.asInstanceOf[js.Any])).asInstanceOf[typings.vscodeLanguageserverTypes.mod.CodeActionContext]
   
   /**
-    * Checks whether the given literal conforms to the [CodeActionContext](#CodeActionContext) interface.
+    * Checks whether the given literal conforms to the {@link CodeActionContext} interface.
     */
   inline def is(value: Any): /* is vscode-languageserver-types.vscode-languageserver-types.CodeActionContext */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.CodeActionContext */ Boolean]
 }

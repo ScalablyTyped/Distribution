@@ -52,14 +52,19 @@ trait ZAxisScrollbarOptions extends StObject {
   var buttonBorderWidth: js.UndefOr[Double] = js.undefined
   
   /**
+    * (Highstock) Enable or disable the buttons at the end of the scrollbar.
+    */
+  var buttonsEnabled: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * (Highstock) Enable or disable the scrollbar.
     */
   var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * (Highstock) The height of the scrollbar. The height also applies to the
-    * width of the scroll arrows so that they are always squares. Defaults to
-    * 20 for touch devices and 14 for mouse devices.
+    * (Highstock) The height of the scrollbar. If `buttonsEnabled` is true ,
+    * the height also applies to the width of the scroll arrows so that they
+    * are always squares.
     */
   var height: js.UndefOr[Double] = js.undefined
   
@@ -72,7 +77,8 @@ trait ZAxisScrollbarOptions extends StObject {
   
   /**
     * (Highstock) The margin between the scrollbar and its axis when the
-    * scrollbar is applied directly to an axis.
+    * scrollbar is applied directly to an axis, or the navigator in case that
+    * is enabled. Defaults to 10 for axis, 0 for navigator.
     */
   var margin: js.UndefOr[Double] = js.undefined
   
@@ -173,6 +179,10 @@ object ZAxisScrollbarOptions {
     inline def setButtonBorderWidth(value: Double): Self = StObject.set(x, "buttonBorderWidth", value.asInstanceOf[js.Any])
     
     inline def setButtonBorderWidthUndefined: Self = StObject.set(x, "buttonBorderWidth", js.undefined)
+    
+    inline def setButtonsEnabled(value: Boolean): Self = StObject.set(x, "buttonsEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setButtonsEnabledUndefined: Self = StObject.set(x, "buttonsEnabled", js.undefined)
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

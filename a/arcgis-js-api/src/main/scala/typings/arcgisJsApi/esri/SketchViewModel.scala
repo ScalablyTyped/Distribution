@@ -110,6 +110,13 @@ trait SketchViewModel
   def delete(): scala.Unit = js.native
   
   /**
+    * Duplicates current graphics used in the update workflow and automatically adds them to the associated layer
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#duplicate)
+    */
+  def duplicate(): scala.Unit = js.native
+  
+  /**
     * Options to configure the labels shown next to each segment of the geometry being created or updated.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html#labelOptions)

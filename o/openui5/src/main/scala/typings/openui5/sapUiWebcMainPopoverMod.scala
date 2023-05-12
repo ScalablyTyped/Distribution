@@ -565,6 +565,8 @@ object sapUiWebcMainPopoverMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:afterClose afterClose} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -576,6 +578,8 @@ object sapUiWebcMainPopoverMod {
     mParameters: js.Object): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:afterOpen afterOpen} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -587,6 +591,8 @@ object sapUiWebcMainPopoverMod {
     mParameters: js.Object): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:beforeClose beforeClose} to attached listeners.
       *
       * Listeners may prevent the default action of this event by calling the `preventDefault` method on the
@@ -601,6 +607,8 @@ object sapUiWebcMainPopoverMod {
     mParameters: EscPressed): Boolean = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:beforeOpen beforeOpen} to attached listeners.
       *
       * Listeners may prevent the default action of this event by calling the `preventDefault` method on the

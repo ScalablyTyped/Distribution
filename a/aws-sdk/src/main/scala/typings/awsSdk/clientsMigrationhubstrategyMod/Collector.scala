@@ -22,6 +22,11 @@ trait Collector extends StObject {
   var collectorVersion: js.UndefOr[String] = js.undefined
   
   /**
+    * Summary of the collector configuration.
+    */
+  var configurationSummary: js.UndefOr[ConfigurationSummary] = js.undefined
+  
+  /**
     *  Hostname of the server that is hosting the collector. 
     */
   var hostName: js.UndefOr[String] = js.undefined
@@ -62,6 +67,10 @@ object Collector {
     inline def setCollectorVersion(value: String): Self = StObject.set(x, "collectorVersion", value.asInstanceOf[js.Any])
     
     inline def setCollectorVersionUndefined: Self = StObject.set(x, "collectorVersion", js.undefined)
+    
+    inline def setConfigurationSummary(value: ConfigurationSummary): Self = StObject.set(x, "configurationSummary", value.asInstanceOf[js.Any])
+    
+    inline def setConfigurationSummaryUndefined: Self = StObject.set(x, "configurationSummary", js.undefined)
     
     inline def setHostName(value: String): Self = StObject.set(x, "hostName", value.asInstanceOf[js.Any])
     

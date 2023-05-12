@@ -13,6 +13,7 @@ object distSrcStreamMod {
   @js.native
   open class InboundStream protected () extends StObject {
     def this(rawStream: Stream) = this()
+    def this(rawStream: Stream, opts: InboundStreamOpts) = this()
     
     def close(): Unit = js.native
     
@@ -41,6 +42,27 @@ object distSrcStreamMod {
     /* private */ val pushable: Any = js.native
     
     /* private */ val rawStream: Any = js.native
+  }
+  
+  trait InboundStreamOpts extends StObject {
+    
+    /** Max size in bytes for reading messages from the stream */
+    var maxDataLength: js.UndefOr[Double] = js.undefined
+  }
+  object InboundStreamOpts {
+    
+    inline def apply(): InboundStreamOpts = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[InboundStreamOpts]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InboundStreamOpts] (val x: Self) extends AnyVal {
+      
+      inline def setMaxDataLength(value: Double): Self = StObject.set(x, "maxDataLength", value.asInstanceOf[js.Any])
+      
+      inline def setMaxDataLengthUndefined: Self = StObject.set(x, "maxDataLength", js.undefined)
+    }
   }
   
   trait OutboundStreamOpts extends StObject {

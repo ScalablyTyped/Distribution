@@ -5,6 +5,8 @@ import typings.react.mod.SVGAttributes
 import typings.std.SVGElement
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsAccessibilityMod.AccessibilityProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsAccessibilitySmallMod.AccessibilitySmallProps
+import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsActivityMod.ActivityProps
+import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsActivitySmallMod.ActivitySmallProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsAddChannelMod.AddChannelProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsAddChannelSmallMod.AddChannelSmallProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsAddMod.AddProps
@@ -56,6 +58,8 @@ import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsAutomationsMod.
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsAutomationsSmallMod.AutomationsSmallProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsBackgroundMod.BackgroundProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsBackgroundSmallMod.BackgroundSmallProps
+import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsBackwardBottomMod.BackwardBottomProps
+import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsBackwardBottomSmallMod.BackwardBottomSmallProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsBackwardMod.BackwardProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsBackwardSmallMod.BackwardSmallProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsBadgeMod.BadgeProps
@@ -70,6 +74,10 @@ import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsBlockMod.BlockP
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsBlockSmallMod.BlockSmallProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsBonusGiftMod.BonusGiftProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsBonusGiftSmallMod.BonusGiftSmallProps
+import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsBookingChannelsMod.BookingChannelsProps
+import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsBookingChannelsSmallMod.BookingChannelsSmallProps
+import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsBookingPageLinksMod.BookingPageLinksProps
+import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsBookingPageLinksSmallMod.BookingPageLinksSmallProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsBookmarkFilledMod.BookmarkFilledProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsBookmarkFilledSmallMod.BookmarkFilledSmallProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsBookmarkMod.BookmarkProps
@@ -78,6 +86,8 @@ import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsBowMod.BowProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsBowSmallMod.BowSmallProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsBrightnessMod.BrightnessProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsBrightnessSmallMod.BrightnessSmallProps
+import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsBuildMod.BuildProps
+import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsBuildSmallMod.BuildSmallProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsCahtFilledSmallMod.CahtFilledSmallProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsCancelOrderMod.CancelOrderProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsCancelOrderSmallMod.CancelOrderSmallProps
@@ -189,6 +199,8 @@ import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsDateSyncMod.Dat
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsDateSyncSmallMod.DateSyncSmallProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsDeleteMod.DeleteProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsDeleteSmallMod.DeleteSmallProps
+import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsDesignMod.DesignProps
+import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsDesignSmallMod.DesignSmallProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsDesktopDisabledMod.DesktopDisabledProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsDesktopDisabledSmallMod.DesktopDisabledSmallProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsDesktopMod.DesktopProps
@@ -277,6 +289,8 @@ import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsFaceNeutralMod.
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsFaceSmilingMod.FaceSmilingProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsFacebookMod.FacebookProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsFacebookSmallMod.FacebookSmallProps
+import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsFaqMod.FAQProps
+import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsFaqsmallMod.FAQSmallProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsFavoriteFilledMod.FavoriteFilledProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsFavoriteFilledSmallMod.FavoriteFilledSmallProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsFavoriteMod.FavoriteProps
@@ -313,6 +327,10 @@ import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsFoodOutOfStockS
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsFoodSmallMod.FoodSmallProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsForwardMod.ForwardProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsForwardSmallMod.ForwardSmallProps
+import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsForwardTopMod.ForwardTopProps
+import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsForwardTopSmallMod.ForwardTopSmallProps
+import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsFreezeMod.FreezeProps
+import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsFreezeSmallMod.FreezeSmallProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsFullScreenMod.FullScreenProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsFullScreenSmallMod.FullScreenSmallProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsFunnelChartMod.FunnelChartProps
@@ -327,6 +345,8 @@ import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsGlobeMod.GlobeP
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsGlobeSmallMod.GlobeSmallProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsGlutenFreeMod.GlutenFreeProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsGlutenFreeSmallMod.GlutenFreeSmallProps
+import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsGoogleAdsMod.GoogleAdsProps
+import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsGoogleAdsSmallMod.GoogleAdsSmallProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsGoogleMod.GoogleProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsGoogleSmallMod.GoogleSmallProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsGroupsMod.GroupsProps
@@ -365,6 +385,8 @@ import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsInboxMod.InboxP
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsInboxSmallMod.InboxSmallProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsIndoorLightMod.IndoorLightProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsIndoorLightSmallMod.IndoorLightSmallProps
+import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsInfoCircleFilledMod.InfoCircleFilledProps
+import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsInfoCircleFilledSmallMod.InfoCircleFilledSmallProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsInfoCircleMod.InfoCircleProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsInfoCircleSmallMod.InfoCircleSmallProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsInfoMod.InfoProps
@@ -379,6 +401,8 @@ import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsInvoiceMod.Invo
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsInvoiceSmallMod.InvoiceSmallProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsItalicMod.ItalicProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsItalicSmallMod.ItalicSmallProps
+import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsKeypadMod.KeypadProps
+import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsKeypadSmallMod.KeypadSmallProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsLanguagesMod.LanguagesProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsLanguagesSmallMod.LanguagesSmallProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsLayersMod.LayersProps
@@ -458,6 +482,8 @@ import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsMultiRowMod.Mul
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsMultiRowSmallMod.MultiRowSmallProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsMultiSelectMod.MultiSelectProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsMultiSelectSmallMod.MultiSelectSmallProps
+import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsMultilingualMod.MultilingualProps
+import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsMultilingualSmallMod.MultilingualSmallProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsMultipleChoicesMod.MultipleChoicesProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsMultipleChoicesSmallMod.MultipleChoicesSmallProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsMultireferenceMod.MultireferenceProps
@@ -524,6 +550,8 @@ import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsPhotoCameraMod.
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsPhotoCameraSmallMod.PhotoCameraSmallProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsPieChartMod.PieChartProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsPieChartSmallMod.PieChartSmallProps
+import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsPinFilledMod.PinFilledProps
+import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsPinFilledSmallMod.PinFilledSmallProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsPinMod.PinProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsPinSmallMod.PinSmallProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsPinterestMod.PinterestProps
@@ -532,6 +560,10 @@ import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsPlayFilledMod.P
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsPlayFilledSmallMod.PlayFilledSmallProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsPlayMod.PlayProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsPlaySmallMod.PlaySmallProps
+import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsPortfolioMod.PortfolioProps
+import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsPortfolioSmallMod.PortfolioSmallProps
+import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsPremiumFilledMod.PremiumFilledProps
+import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsPremiumFilledSmallMod.PremiumFilledSmallProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsPremiumMod.PremiumProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsPremiumMoveMod.PremiumMoveProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsPremiumMoveSmallMod.PremiumMoveSmallProps
@@ -548,6 +580,8 @@ import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsPromoteMod.Prom
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsPromoteSmallMod.PromoteSmallProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsPublicMod.PublicProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsPublicSmallMod.PublicSmallProps
+import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsQRMod.QRProps
+import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsQrsmallMod.QRSmallProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsQuickAccessMod.QuickAccessProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsQuickAccessSmallMod.QuickAccessSmallProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsRadioButtonGroupMod.RadioButtonGroupProps
@@ -556,6 +590,8 @@ import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsRectangleLargeM
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsRectangleLargeSmallMod.RectangleLargeSmallProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsRedoMod.RedoProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsRedoSmallMod.RedoSmallProps
+import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsReelsMod.ReelsProps
+import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsReelsSmallMod.ReelsSmallProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsReferenceMod.ReferenceProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsReferenceSmallMod.ReferenceSmallProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsRefreshMod.RefreshProps
@@ -571,6 +607,8 @@ import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsReplaceSmallMod
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsRevertMod.RevertProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsRevertResetMod.RevertResetProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsRevertSmallMod.RevertSmallProps
+import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsReviewsMod.ReviewsProps
+import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsReviewsSmallMod.ReviewsSmallProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsRichTextMod.RichTextProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsRichTextSmallMod.RichTextSmallProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsRotateLeftMod.RotateLeftProps
@@ -581,6 +619,10 @@ import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsRoundCornerMod.
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsRoundCornerSmallMod.RoundCornerSmallProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsRoundedCornerMod.RoundedCornerProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsRoundedCornerSmallMod.RoundedCornerSmallProps
+import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsRuleMod.RuleProps
+import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsRuleSmallMod.RuleSmallProps
+import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsSaleChannelsMod.SaleChannelsProps
+import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsSaleChannelsSmallMod.SaleChannelsSmallProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsSceneryMod.SceneryProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsScenerySmallMod.ScenerySmallProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsSearchMod.SearchProps
@@ -589,6 +631,7 @@ import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsSeatRowMod.Seat
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsSeatRowSmallMod.SeatRowSmallProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsSeatSelectionToolMod.SeatSelectionToolProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsSeatSelectionToolSmallMod.SeatSelectionToolSmallProps
+import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsSectionLayoutMod.SectionLayoutProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsSelectionToolMod.SelectionToolProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsSelectionToolSmallMod.SelectionToolSmallProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsSendMod.SendProps
@@ -615,6 +658,8 @@ import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsSidebarUndockMo
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsSidebarUndockSmallMod.SidebarUndockSmallProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsSiteAddMod.SiteAddProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsSiteAddSmallMod.SiteAddSmallProps
+import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsSiteAppMod.SiteAppProps
+import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsSiteAppSmallMod.SiteAppSmallProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsSiteDuplicateMod.SiteDuplicateProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsSiteDuplicateSmallMod.SiteDuplicateSmallProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsSiteMod.SiteProps
@@ -651,6 +696,8 @@ import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsSquareRatioChec
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsSquareRatioCheckedSmallMod.SquareRatioCheckedSmallProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsSquareRatioMod.SquareRatioProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsSquareRatioSmallMod.SquareRatioSmallProps
+import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsStaffMod.StaffProps
+import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsStaffSmallMod.StaffSmallProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsStageMod.StageProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsStageSmallMod.StageSmallProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsStairsMod.StairsProps
@@ -725,6 +772,10 @@ import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsTextAlignRightM
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsTextAlignRightSmallMod.TextAlignRightSmallProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsTextJustifyMod.TextJustifyProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsTextJustifySmallMod.TextJustifySmallProps
+import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsThumbsDownFilledMod.ThumbsDownFilledProps
+import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsThumbsDownFilledSmallMod.ThumbsDownFilledSmallProps
+import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsThumbsDownMod.ThumbsDownProps
+import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsThumbsDownSmallMod.ThumbsDownSmallProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsThumbsUpFilledMod.ThumbsUpFilledProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsThumbsUpFilledSmallMod.ThumbsUpFilledSmallProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsThumbsUpMod.ThumbsUpProps
@@ -733,6 +784,8 @@ import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsTikTokMod.TikTo
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsTikTokSmallMod.TikTokSmallProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsTimeMod.TimeProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsTimeSmallMod.TimeSmallProps
+import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsTimerMod.TimerProps
+import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsTimerSmallMod.TimerSmallProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsToolboxMod.ToolboxProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsToolboxSmallMod.ToolboxSmallProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsTransferMod.TransferProps
@@ -804,8 +857,12 @@ import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsWcMod.WcProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsWcSmallMod.WcSmallProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsWcWomenMod.WcWomenProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsWcWomenSmallMod.WcWomenSmallProps
+import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsWebhookMod.WebhookProps
+import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsWebhookSmallMod.WebhookSmallProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsWhatsappMod.WhatsappProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsWhatsappSmallMod.WhatsappSmallProps
+import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsWidgetsMod.WidgetsProps
+import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsWidgetsSmallMod.WidgetsSmallProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsWixBookingMod.WixBookingProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsWixBookingSmallMod.WixBookingSmallProps
 import typings.wixWixUiIconsCommon.distTypesGeneralDistComponentsWixChatFilledMod.WixChatFilledProps
@@ -848,6 +905,14 @@ object mod {
   @JSImport("@wix/wix-ui-icons-common", "AccessibilitySmall")
   @js.native
   val AccessibilitySmall: FC[AccessibilitySmallProps] = js.native
+  
+  @JSImport("@wix/wix-ui-icons-common", "Activity")
+  @js.native
+  val Activity: FC[ActivityProps] = js.native
+  
+  @JSImport("@wix/wix-ui-icons-common", "ActivitySmall")
+  @js.native
+  val ActivitySmall: FC[ActivitySmallProps] = js.native
   
   @JSImport("@wix/wix-ui-icons-common", "Add")
   @js.native
@@ -1057,6 +1122,14 @@ object mod {
   @js.native
   val Backward: FC[BackwardProps] = js.native
   
+  @JSImport("@wix/wix-ui-icons-common", "BackwardBottom")
+  @js.native
+  val BackwardBottom: FC[BackwardBottomProps] = js.native
+  
+  @JSImport("@wix/wix-ui-icons-common", "BackwardBottomSmall")
+  @js.native
+  val BackwardBottomSmall: FC[BackwardBottomSmallProps] = js.native
+  
   @JSImport("@wix/wix-ui-icons-common", "BackwardSmall")
   @js.native
   val BackwardSmall: FC[BackwardSmallProps] = js.native
@@ -1109,6 +1182,22 @@ object mod {
   @js.native
   val BonusGiftSmall: FC[BonusGiftSmallProps] = js.native
   
+  @JSImport("@wix/wix-ui-icons-common", "BookingChannels")
+  @js.native
+  val BookingChannels: FC[BookingChannelsProps] = js.native
+  
+  @JSImport("@wix/wix-ui-icons-common", "BookingChannelsSmall")
+  @js.native
+  val BookingChannelsSmall: FC[BookingChannelsSmallProps] = js.native
+  
+  @JSImport("@wix/wix-ui-icons-common", "BookingPageLinks")
+  @js.native
+  val BookingPageLinks: FC[BookingPageLinksProps] = js.native
+  
+  @JSImport("@wix/wix-ui-icons-common", "BookingPageLinksSmall")
+  @js.native
+  val BookingPageLinksSmall: FC[BookingPageLinksSmallProps] = js.native
+  
   @JSImport("@wix/wix-ui-icons-common", "Bookmark")
   @js.native
   val Bookmark: FC[BookmarkProps] = js.native
@@ -1140,6 +1229,14 @@ object mod {
   @JSImport("@wix/wix-ui-icons-common", "BrightnessSmall")
   @js.native
   val BrightnessSmall: FC[BrightnessSmallProps] = js.native
+  
+  @JSImport("@wix/wix-ui-icons-common", "Build")
+  @js.native
+  val Build: FC[BuildProps] = js.native
+  
+  @JSImport("@wix/wix-ui-icons-common", "BuildSmall")
+  @js.native
+  val BuildSmall: FC[BuildSmallProps] = js.native
   
   @JSImport("@wix/wix-ui-icons-common", "CahtFilledSmall")
   @js.native
@@ -1585,6 +1682,14 @@ object mod {
   @js.native
   val DeleteSmall: FC[DeleteSmallProps] = js.native
   
+  @JSImport("@wix/wix-ui-icons-common", "Design")
+  @js.native
+  val Design: FC[DesignProps] = js.native
+  
+  @JSImport("@wix/wix-ui-icons-common", "DesignSmall")
+  @js.native
+  val DesignSmall: FC[DesignSmallProps] = js.native
+  
   @JSImport("@wix/wix-ui-icons-common", "Desktop")
   @js.native
   val Desktop: FC[DesktopProps] = js.native
@@ -1901,6 +2006,14 @@ object mod {
   @js.native
   val ExtraHotSmall: FC[ExtraHotSmallProps] = js.native
   
+  @JSImport("@wix/wix-ui-icons-common", "FAQ")
+  @js.native
+  val FAQ: FC[FAQProps] = js.native
+  
+  @JSImport("@wix/wix-ui-icons-common", "FAQSmall")
+  @js.native
+  val FAQSmall: FC[FAQSmallProps] = js.native
+  
   @JSImport("@wix/wix-ui-icons-common", "FaceDisapointed")
   @js.native
   val FaceDisapointed: FC[FaceDisapointedProps] = js.native
@@ -2081,6 +2194,22 @@ object mod {
   @js.native
   val ForwardSmall: FC[ForwardSmallProps] = js.native
   
+  @JSImport("@wix/wix-ui-icons-common", "ForwardTop")
+  @js.native
+  val ForwardTop: FC[ForwardTopProps] = js.native
+  
+  @JSImport("@wix/wix-ui-icons-common", "ForwardTopSmall")
+  @js.native
+  val ForwardTopSmall: FC[ForwardTopSmallProps] = js.native
+  
+  @JSImport("@wix/wix-ui-icons-common", "Freeze")
+  @js.native
+  val Freeze: FC[FreezeProps] = js.native
+  
+  @JSImport("@wix/wix-ui-icons-common", "FreezeSmall")
+  @js.native
+  val FreezeSmall: FC[FreezeSmallProps] = js.native
+  
   @JSImport("@wix/wix-ui-icons-common", "FullScreen")
   @js.native
   val FullScreen: FC[FullScreenProps] = js.native
@@ -2140,6 +2269,14 @@ object mod {
   @JSImport("@wix/wix-ui-icons-common", "Google")
   @js.native
   val Google: FC[GoogleProps] = js.native
+  
+  @JSImport("@wix/wix-ui-icons-common", "GoogleAds")
+  @js.native
+  val GoogleAds: FC[GoogleAdsProps] = js.native
+  
+  @JSImport("@wix/wix-ui-icons-common", "GoogleAdsSmall")
+  @js.native
+  val GoogleAdsSmall: FC[GoogleAdsSmallProps] = js.native
   
   @JSImport("@wix/wix-ui-icons-common", "GoogleSmall")
   @js.native
@@ -2297,6 +2434,14 @@ object mod {
   @js.native
   val InfoCircle: FC[InfoCircleProps] = js.native
   
+  @JSImport("@wix/wix-ui-icons-common", "InfoCircleFilled")
+  @js.native
+  val InfoCircleFilled: FC[InfoCircleFilledProps] = js.native
+  
+  @JSImport("@wix/wix-ui-icons-common", "InfoCircleFilledSmall")
+  @js.native
+  val InfoCircleFilledSmall: FC[InfoCircleFilledSmallProps] = js.native
+  
   @JSImport("@wix/wix-ui-icons-common", "InfoCircleSmall")
   @js.native
   val InfoCircleSmall: FC[InfoCircleSmallProps] = js.native
@@ -2344,6 +2489,14 @@ object mod {
   @JSImport("@wix/wix-ui-icons-common", "ItalicSmall")
   @js.native
   val ItalicSmall: FC[ItalicSmallProps] = js.native
+  
+  @JSImport("@wix/wix-ui-icons-common", "Keypad")
+  @js.native
+  val Keypad: FC[KeypadProps] = js.native
+  
+  @JSImport("@wix/wix-ui-icons-common", "KeypadSmall")
+  @js.native
+  val KeypadSmall: FC[KeypadSmallProps] = js.native
   
   @JSImport("@wix/wix-ui-icons-common", "Languages")
   @js.native
@@ -2661,6 +2814,14 @@ object mod {
   @js.native
   val MultiSelectSmall: FC[MultiSelectSmallProps] = js.native
   
+  @JSImport("@wix/wix-ui-icons-common", "Multilingual")
+  @js.native
+  val Multilingual: FC[MultilingualProps] = js.native
+  
+  @JSImport("@wix/wix-ui-icons-common", "MultilingualSmall")
+  @js.native
+  val MultilingualSmall: FC[MultilingualSmallProps] = js.native
+  
   @JSImport("@wix/wix-ui-icons-common", "MultipleChoices")
   @js.native
   val MultipleChoices: FC[MultipleChoicesProps] = js.native
@@ -2929,6 +3090,14 @@ object mod {
   @js.native
   val Pin: FC[PinProps] = js.native
   
+  @JSImport("@wix/wix-ui-icons-common", "PinFilled")
+  @js.native
+  val PinFilled: FC[PinFilledProps] = js.native
+  
+  @JSImport("@wix/wix-ui-icons-common", "PinFilledSmall")
+  @js.native
+  val PinFilledSmall: FC[PinFilledSmallProps] = js.native
+  
   @JSImport("@wix/wix-ui-icons-common", "PinSmall")
   @js.native
   val PinSmall: FC[PinSmallProps] = js.native
@@ -2957,9 +3126,25 @@ object mod {
   @js.native
   val PlaySmall: FC[PlaySmallProps] = js.native
   
+  @JSImport("@wix/wix-ui-icons-common", "Portfolio")
+  @js.native
+  val Portfolio: FC[PortfolioProps] = js.native
+  
+  @JSImport("@wix/wix-ui-icons-common", "PortfolioSmall")
+  @js.native
+  val PortfolioSmall: FC[PortfolioSmallProps] = js.native
+  
   @JSImport("@wix/wix-ui-icons-common", "Premium")
   @js.native
   val Premium: FC[PremiumProps] = js.native
+  
+  @JSImport("@wix/wix-ui-icons-common", "PremiumFilled")
+  @js.native
+  val PremiumFilled: FC[PremiumFilledProps] = js.native
+  
+  @JSImport("@wix/wix-ui-icons-common", "PremiumFilledSmall")
+  @js.native
+  val PremiumFilledSmall: FC[PremiumFilledSmallProps] = js.native
   
   @JSImport("@wix/wix-ui-icons-common", "PremiumMove")
   @js.native
@@ -3021,6 +3206,14 @@ object mod {
   @js.native
   val PublicSmall: FC[PublicSmallProps] = js.native
   
+  @JSImport("@wix/wix-ui-icons-common", "QR")
+  @js.native
+  val QR: FC[QRProps] = js.native
+  
+  @JSImport("@wix/wix-ui-icons-common", "QRSmall")
+  @js.native
+  val QRSmall: FC[QRSmallProps] = js.native
+  
   @JSImport("@wix/wix-ui-icons-common", "QuickAccess")
   @js.native
   val QuickAccess: FC[QuickAccessProps] = js.native
@@ -3052,6 +3245,14 @@ object mod {
   @JSImport("@wix/wix-ui-icons-common", "RedoSmall")
   @js.native
   val RedoSmall: FC[RedoSmallProps] = js.native
+  
+  @JSImport("@wix/wix-ui-icons-common", "Reels")
+  @js.native
+  val Reels: FC[ReelsProps] = js.native
+  
+  @JSImport("@wix/wix-ui-icons-common", "ReelsSmall")
+  @js.native
+  val ReelsSmall: FC[ReelsSmallProps] = js.native
   
   @JSImport("@wix/wix-ui-icons-common", "Reference")
   @js.native
@@ -3113,6 +3314,14 @@ object mod {
   @js.native
   val RevertSmall: FC[RevertSmallProps] = js.native
   
+  @JSImport("@wix/wix-ui-icons-common", "Reviews")
+  @js.native
+  val Reviews: FC[ReviewsProps] = js.native
+  
+  @JSImport("@wix/wix-ui-icons-common", "ReviewsSmall")
+  @js.native
+  val ReviewsSmall: FC[ReviewsSmallProps] = js.native
+  
   @JSImport("@wix/wix-ui-icons-common", "RichText")
   @js.native
   val RichText: FC[RichTextProps] = js.native
@@ -3153,6 +3362,22 @@ object mod {
   @js.native
   val RoundedCornerSmall: FC[RoundedCornerSmallProps] = js.native
   
+  @JSImport("@wix/wix-ui-icons-common", "Rule")
+  @js.native
+  val Rule: FC[RuleProps] = js.native
+  
+  @JSImport("@wix/wix-ui-icons-common", "RuleSmall")
+  @js.native
+  val RuleSmall: FC[RuleSmallProps] = js.native
+  
+  @JSImport("@wix/wix-ui-icons-common", "SaleChannels")
+  @js.native
+  val SaleChannels: FC[SaleChannelsProps] = js.native
+  
+  @JSImport("@wix/wix-ui-icons-common", "SaleChannelsSmall")
+  @js.native
+  val SaleChannelsSmall: FC[SaleChannelsSmallProps] = js.native
+  
   @JSImport("@wix/wix-ui-icons-common", "Scenery")
   @js.native
   val Scenery: FC[SceneryProps] = js.native
@@ -3184,6 +3409,10 @@ object mod {
   @JSImport("@wix/wix-ui-icons-common", "SeatSelectionToolSmall")
   @js.native
   val SeatSelectionToolSmall: FC[SeatSelectionToolSmallProps] = js.native
+  
+  @JSImport("@wix/wix-ui-icons-common", "SectionLayout")
+  @js.native
+  val SectionLayout: FC[SectionLayoutProps] = js.native
   
   @JSImport("@wix/wix-ui-icons-common", "SelectionTool")
   @js.native
@@ -3292,6 +3521,14 @@ object mod {
   @JSImport("@wix/wix-ui-icons-common", "SiteAddSmall")
   @js.native
   val SiteAddSmall: FC[SiteAddSmallProps] = js.native
+  
+  @JSImport("@wix/wix-ui-icons-common", "SiteApp")
+  @js.native
+  val SiteApp: FC[SiteAppProps] = js.native
+  
+  @JSImport("@wix/wix-ui-icons-common", "SiteAppSmall")
+  @js.native
+  val SiteAppSmall: FC[SiteAppSmallProps] = js.native
   
   @JSImport("@wix/wix-ui-icons-common", "SiteDuplicate")
   @js.native
@@ -3432,6 +3669,14 @@ object mod {
   @JSImport("@wix/wix-ui-icons-common", "SquareRatioSmall")
   @js.native
   val SquareRatioSmall: FC[SquareRatioSmallProps] = js.native
+  
+  @JSImport("@wix/wix-ui-icons-common", "Staff")
+  @js.native
+  val Staff: FC[StaffProps] = js.native
+  
+  @JSImport("@wix/wix-ui-icons-common", "StaffSmall")
+  @js.native
+  val StaffSmall: FC[StaffSmallProps] = js.native
   
   @JSImport("@wix/wix-ui-icons-common", "Stage")
   @js.native
@@ -3737,6 +3982,22 @@ object mod {
   @js.native
   val TextJustifySmall: FC[TextJustifySmallProps] = js.native
   
+  @JSImport("@wix/wix-ui-icons-common", "ThumbsDown")
+  @js.native
+  val ThumbsDown: FC[ThumbsDownProps] = js.native
+  
+  @JSImport("@wix/wix-ui-icons-common", "ThumbsDownFilled")
+  @js.native
+  val ThumbsDownFilled: FC[ThumbsDownFilledProps] = js.native
+  
+  @JSImport("@wix/wix-ui-icons-common", "ThumbsDownFilledSmall")
+  @js.native
+  val ThumbsDownFilledSmall: FC[ThumbsDownFilledSmallProps] = js.native
+  
+  @JSImport("@wix/wix-ui-icons-common", "ThumbsDownSmall")
+  @js.native
+  val ThumbsDownSmall: FC[ThumbsDownSmallProps] = js.native
+  
   @JSImport("@wix/wix-ui-icons-common", "ThumbsUp")
   @js.native
   val ThumbsUp: FC[ThumbsUpProps] = js.native
@@ -3768,6 +4029,14 @@ object mod {
   @JSImport("@wix/wix-ui-icons-common", "TimeSmall")
   @js.native
   val TimeSmall: FC[TimeSmallProps] = js.native
+  
+  @JSImport("@wix/wix-ui-icons-common", "Timer")
+  @js.native
+  val Timer: FC[TimerProps] = js.native
+  
+  @JSImport("@wix/wix-ui-icons-common", "TimerSmall")
+  @js.native
+  val TimerSmall: FC[TimerSmallProps] = js.native
   
   @JSImport("@wix/wix-ui-icons-common", "Toolbox")
   @js.native
@@ -4045,6 +4314,14 @@ object mod {
   @js.native
   val WcWomenSmall: FC[WcWomenSmallProps] = js.native
   
+  @JSImport("@wix/wix-ui-icons-common", "Webhook")
+  @js.native
+  val Webhook: FC[WebhookProps] = js.native
+  
+  @JSImport("@wix/wix-ui-icons-common", "WebhookSmall")
+  @js.native
+  val WebhookSmall: FC[WebhookSmallProps] = js.native
+  
   @JSImport("@wix/wix-ui-icons-common", "Whatsapp")
   @js.native
   val Whatsapp: FC[WhatsappProps] = js.native
@@ -4052,6 +4329,14 @@ object mod {
   @JSImport("@wix/wix-ui-icons-common", "WhatsappSmall")
   @js.native
   val WhatsappSmall: FC[WhatsappSmallProps] = js.native
+  
+  @JSImport("@wix/wix-ui-icons-common", "Widgets")
+  @js.native
+  val Widgets: FC[WidgetsProps] = js.native
+  
+  @JSImport("@wix/wix-ui-icons-common", "WidgetsSmall")
+  @js.native
+  val WidgetsSmall: FC[WidgetsSmallProps] = js.native
   
   @JSImport("@wix/wix-ui-icons-common", "WixBooking")
   @js.native

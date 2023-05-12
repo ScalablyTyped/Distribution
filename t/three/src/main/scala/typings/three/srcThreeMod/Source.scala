@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class Source protected ()
   extends typings.three.srcTexturesSourceMod.Source {
   /**
-    * @param [data] The data definition of a texture. default is **null**.
+    * Create a new instance of {@link Source}
+    * @param data The data definition of a texture. Default `null`
     */
   def this(data: Any) = this()
 }

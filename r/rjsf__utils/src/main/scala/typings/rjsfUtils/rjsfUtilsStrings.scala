@@ -67,6 +67,10 @@ object rjsfUtilsStrings {
   inline def WrapIfAdditionalTemplate: WrapIfAdditionalTemplate = "WrapIfAdditionalTemplate".asInstanceOf[WrapIfAdditionalTemplate]
   
   @js.native
+  sealed trait _empty extends StObject
+  inline def _empty: _empty = "".asInstanceOf[_empty]
+  
+  @js.native
   sealed trait additions extends StObject
   inline def additions: additions = "additions".asInstanceOf[additions]
   
@@ -129,6 +133,10 @@ object rjsfUtilsStrings {
   @js.native
   sealed trait email extends StObject
   inline def email: email = "email".asInstanceOf[email]
+  
+  @js.native
+  sealed trait excludeObjectChildren extends StObject
+  inline def excludeObjectChildren: excludeObjectChildren = "excludeObjectChildren".asInstanceOf[excludeObjectChildren]
   
   @js.native
   sealed trait execute extends StObject
@@ -229,6 +237,10 @@ object rjsfUtilsStrings {
   @js.native
   sealed trait popup extends StObject
   inline def popup: popup = "popup".asInstanceOf[popup]
+  
+  @js.native
+  sealed trait preventDuplicates extends StObject
+  inline def preventDuplicates: preventDuplicates = "preventDuplicates".asInstanceOf[preventDuplicates]
   
   @js.native
   sealed trait removals extends StObject

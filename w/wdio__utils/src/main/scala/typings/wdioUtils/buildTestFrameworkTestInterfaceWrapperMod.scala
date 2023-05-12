@@ -106,7 +106,7 @@ object buildTestFrameworkTestInterfaceWrapperMod {
     timeout: Double
   ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("runSpec")(specTitle.asInstanceOf[js.Any], specFn.asInstanceOf[js.Any], origFn.asInstanceOf[js.Any], beforeFn.asInstanceOf[js.Any], beforeFnArgs.asInstanceOf[js.Any], afterFn.asInstanceOf[js.Any], afterFnArgs.asInstanceOf[js.Any], cid.asInstanceOf[js.Any], repeatTest.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  inline def runTestInFiberContext(
+  inline def wrapGlobalTestMethod(
     isSpec: Boolean,
     beforeFn: js.Array[js.Function],
     beforeArgsFn: HookFnArgs[Any],
@@ -114,8 +114,8 @@ object buildTestFrameworkTestInterfaceWrapperMod {
     afterArgsFn: HookFnArgs[Any],
     fnName: String,
     cid: String
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("runTestInFiberContext")(isSpec.asInstanceOf[js.Any], beforeFn.asInstanceOf[js.Any], beforeArgsFn.asInstanceOf[js.Any], afterFn.asInstanceOf[js.Any], afterArgsFn.asInstanceOf[js.Any], fnName.asInstanceOf[js.Any], cid.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def runTestInFiberContext(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapGlobalTestMethod")(isSpec.asInstanceOf[js.Any], beforeFn.asInstanceOf[js.Any], beforeArgsFn.asInstanceOf[js.Any], afterFn.asInstanceOf[js.Any], afterArgsFn.asInstanceOf[js.Any], fnName.asInstanceOf[js.Any], cid.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def wrapGlobalTestMethod(
     isSpec: Boolean,
     beforeFn: js.Array[js.Function],
     beforeArgsFn: HookFnArgs[Any],
@@ -124,8 +124,8 @@ object buildTestFrameworkTestInterfaceWrapperMod {
     fnName: String,
     cid: String,
     scope: /* globalThis */ Any
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("runTestInFiberContext")(isSpec.asInstanceOf[js.Any], beforeFn.asInstanceOf[js.Any], beforeArgsFn.asInstanceOf[js.Any], afterFn.asInstanceOf[js.Any], afterArgsFn.asInstanceOf[js.Any], fnName.asInstanceOf[js.Any], cid.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def runTestInFiberContext(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapGlobalTestMethod")(isSpec.asInstanceOf[js.Any], beforeFn.asInstanceOf[js.Any], beforeArgsFn.asInstanceOf[js.Any], afterFn.asInstanceOf[js.Any], afterArgsFn.asInstanceOf[js.Any], fnName.asInstanceOf[js.Any], cid.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def wrapGlobalTestMethod(
     isSpec: Boolean,
     beforeFn: js.Array[js.Function],
     beforeArgsFn: HookFnArgs[Any],
@@ -133,8 +133,8 @@ object buildTestFrameworkTestInterfaceWrapperMod {
     afterArgsFn: HookFnArgs[Any],
     fnName: String,
     cid: String
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("runTestInFiberContext")(isSpec.asInstanceOf[js.Any], beforeFn.asInstanceOf[js.Any], beforeArgsFn.asInstanceOf[js.Any], afterFn.asInstanceOf[js.Any], afterArgsFn.asInstanceOf[js.Any], fnName.asInstanceOf[js.Any], cid.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def runTestInFiberContext(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapGlobalTestMethod")(isSpec.asInstanceOf[js.Any], beforeFn.asInstanceOf[js.Any], beforeArgsFn.asInstanceOf[js.Any], afterFn.asInstanceOf[js.Any], afterArgsFn.asInstanceOf[js.Any], fnName.asInstanceOf[js.Any], cid.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def wrapGlobalTestMethod(
     isSpec: Boolean,
     beforeFn: js.Array[js.Function],
     beforeArgsFn: HookFnArgs[Any],
@@ -143,8 +143,8 @@ object buildTestFrameworkTestInterfaceWrapperMod {
     fnName: String,
     cid: String,
     scope: /* globalThis */ Any
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("runTestInFiberContext")(isSpec.asInstanceOf[js.Any], beforeFn.asInstanceOf[js.Any], beforeArgsFn.asInstanceOf[js.Any], afterFn.asInstanceOf[js.Any], afterArgsFn.asInstanceOf[js.Any], fnName.asInstanceOf[js.Any], cid.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def runTestInFiberContext(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapGlobalTestMethod")(isSpec.asInstanceOf[js.Any], beforeFn.asInstanceOf[js.Any], beforeArgsFn.asInstanceOf[js.Any], afterFn.asInstanceOf[js.Any], afterArgsFn.asInstanceOf[js.Any], fnName.asInstanceOf[js.Any], cid.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def wrapGlobalTestMethod(
     isSpec: Boolean,
     beforeFn: js.Function,
     beforeArgsFn: HookFnArgs[Any],
@@ -152,8 +152,8 @@ object buildTestFrameworkTestInterfaceWrapperMod {
     afterArgsFn: HookFnArgs[Any],
     fnName: String,
     cid: String
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("runTestInFiberContext")(isSpec.asInstanceOf[js.Any], beforeFn.asInstanceOf[js.Any], beforeArgsFn.asInstanceOf[js.Any], afterFn.asInstanceOf[js.Any], afterArgsFn.asInstanceOf[js.Any], fnName.asInstanceOf[js.Any], cid.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def runTestInFiberContext(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapGlobalTestMethod")(isSpec.asInstanceOf[js.Any], beforeFn.asInstanceOf[js.Any], beforeArgsFn.asInstanceOf[js.Any], afterFn.asInstanceOf[js.Any], afterArgsFn.asInstanceOf[js.Any], fnName.asInstanceOf[js.Any], cid.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def wrapGlobalTestMethod(
     isSpec: Boolean,
     beforeFn: js.Function,
     beforeArgsFn: HookFnArgs[Any],
@@ -162,8 +162,8 @@ object buildTestFrameworkTestInterfaceWrapperMod {
     fnName: String,
     cid: String,
     scope: /* globalThis */ Any
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("runTestInFiberContext")(isSpec.asInstanceOf[js.Any], beforeFn.asInstanceOf[js.Any], beforeArgsFn.asInstanceOf[js.Any], afterFn.asInstanceOf[js.Any], afterArgsFn.asInstanceOf[js.Any], fnName.asInstanceOf[js.Any], cid.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def runTestInFiberContext(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapGlobalTestMethod")(isSpec.asInstanceOf[js.Any], beforeFn.asInstanceOf[js.Any], beforeArgsFn.asInstanceOf[js.Any], afterFn.asInstanceOf[js.Any], afterArgsFn.asInstanceOf[js.Any], fnName.asInstanceOf[js.Any], cid.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def wrapGlobalTestMethod(
     isSpec: Boolean,
     beforeFn: js.Function,
     beforeArgsFn: HookFnArgs[Any],
@@ -171,8 +171,8 @@ object buildTestFrameworkTestInterfaceWrapperMod {
     afterArgsFn: HookFnArgs[Any],
     fnName: String,
     cid: String
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("runTestInFiberContext")(isSpec.asInstanceOf[js.Any], beforeFn.asInstanceOf[js.Any], beforeArgsFn.asInstanceOf[js.Any], afterFn.asInstanceOf[js.Any], afterArgsFn.asInstanceOf[js.Any], fnName.asInstanceOf[js.Any], cid.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def runTestInFiberContext(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapGlobalTestMethod")(isSpec.asInstanceOf[js.Any], beforeFn.asInstanceOf[js.Any], beforeArgsFn.asInstanceOf[js.Any], afterFn.asInstanceOf[js.Any], afterArgsFn.asInstanceOf[js.Any], fnName.asInstanceOf[js.Any], cid.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def wrapGlobalTestMethod(
     isSpec: Boolean,
     beforeFn: js.Function,
     beforeArgsFn: HookFnArgs[Any],
@@ -181,7 +181,7 @@ object buildTestFrameworkTestInterfaceWrapperMod {
     fnName: String,
     cid: String,
     scope: /* globalThis */ Any
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("runTestInFiberContext")(isSpec.asInstanceOf[js.Any], beforeFn.asInstanceOf[js.Any], beforeArgsFn.asInstanceOf[js.Any], afterFn.asInstanceOf[js.Any], afterArgsFn.asInstanceOf[js.Any], fnName.asInstanceOf[js.Any], cid.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapGlobalTestMethod")(isSpec.asInstanceOf[js.Any], beforeFn.asInstanceOf[js.Any], beforeArgsFn.asInstanceOf[js.Any], afterFn.asInstanceOf[js.Any], afterArgsFn.asInstanceOf[js.Any], fnName.asInstanceOf[js.Any], cid.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def wrapTestFunction(
     origFn: js.Function,

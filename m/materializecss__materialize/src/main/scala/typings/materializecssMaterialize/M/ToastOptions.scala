@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ToastOptions extends StObject {
   
   /**
-    * The percentage of the toast's width it takes for a drag to dismiss a Toast.
+    * The percentage of the toast's width it takes fora drag
+    * to dismiss a Toast.
     * @default 0.8
     */
   var activationPercent: Double
@@ -29,10 +30,11 @@ trait ToastOptions extends StObject {
   var displayLength: Double
   
   /**
-    * HTML content that will be appended to text.
-    * Only use properly sanitized or otherwise trusted data for html.
+    * HTML content that will be appended to text.\
+    * Only use properly sanitized or otherwise trusted data for html.\
     * Will be ignored if unsafeHTML is set.
     * @deprecated Will be removed in a later release.
+    * @default ""
     */
   var html: String
   
@@ -50,12 +52,14 @@ trait ToastOptions extends StObject {
   
   /**
     * The content of the Toast.
+    * @default ""
     */
   var text: String
   
   /**
     * HTML content that will be appended to to text.
     * Only use properly sanitized or otherwise trusted data for unsafeHTML.
+    * @default ""
     */
   var unsafeHTML: String
 }

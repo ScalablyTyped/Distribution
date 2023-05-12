@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "stringify-attributes" : "3.0.0"
+      "stringify-attributes" : "4.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "stringify-attributes" : "3.0.0"
+      "stringify-attributes" : "4.0.0"
     }
   ],
   "compile-devDependencies" : [

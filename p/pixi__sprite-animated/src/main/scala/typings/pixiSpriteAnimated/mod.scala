@@ -16,7 +16,7 @@ object mod {
     /**
       * @param textures - An array of {@link PIXI.Texture} or frame
       *  objects that make up the animation.
-      * @param {boolean} [autoUpdate=true] - Whether to use PIXI.Ticker.shared to auto update animation time.
+      * @param {boolean} [autoUpdate=true] - Whether to use Ticker.shared to auto update animation time.
       */
     def this(textures: js.Array[FrameObject | Texture[Resource]]) = this()
     def this(textures: js.Array[FrameObject | Texture[Resource]], autoUpdate: Boolean) = this()

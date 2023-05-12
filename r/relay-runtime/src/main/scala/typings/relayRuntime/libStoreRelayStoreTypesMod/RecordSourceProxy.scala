@@ -11,7 +11,7 @@ trait RecordSourceProxy extends StObject {
   
   def delete(dataID: DataID): Unit
   
-  // tslint:disable-next-line:no-unnecessary-generics
+  // eslint-disable-next-line no-unnecessary-generics
   def get[T](dataID: DataID): js.UndefOr[RecordProxy[T] | Null]
   
   def getRoot(): RecordProxy[js.Object]

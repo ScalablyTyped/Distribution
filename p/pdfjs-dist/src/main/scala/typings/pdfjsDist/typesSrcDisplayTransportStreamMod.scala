@@ -1,5 +1,7 @@
 package typings.pdfjsDist
 
+import typings.pdfjsDist.anon.Begin
+import typings.pdfjsDist.anon.ContentDispositionFilename
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +12,7 @@ object typesSrcDisplayTransportStreamMod {
   - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IPDFStream * / any */ @JSImport("pdfjs-dist/types/src/display/transport_stream", "PDFDataTransportStream")
   @js.native
   open class PDFDataTransportStream protected () extends StObject {
-    def this(params: Any, pdfDataRangeTransport: Any) = this()
+    def this(param0: ContentDispositionFilename, pdfDataRangeTransport: Any) = this()
     
     var _contentDispositionFilename: Any = js.native
     
@@ -26,13 +28,13 @@ object typesSrcDisplayTransportStreamMod {
     
     def _onProgressiveDone(): Unit = js.native
     
-    def _onReceiveData(args: Any): Unit = js.native
+    def _onReceiveData(param0: Begin): Unit = js.native
     
     var _pdfDataRangeTransport: Any = js.native
     
     def _progressiveDataLength: Any = js.native
     
-    var _progressiveDone: Any = js.native
+    var _progressiveDone: Boolean = js.native
     
     var _queuedChunks: js.Array[js.typedarray.ArrayBuffer] = js.native
     

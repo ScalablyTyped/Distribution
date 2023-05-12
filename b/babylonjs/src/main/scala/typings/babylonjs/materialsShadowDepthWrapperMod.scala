@@ -19,7 +19,7 @@ object materialsShadowDepthWrapperMod {
       * Instantiate a new shadow depth wrapper.
       * It works by injecting some specific code in the vertex/fragment shaders of the base material and is used by a shadow generator to
       * generate the shadow depth map. For more information, please refer to the documentation:
-      * https://doc.babylonjs.com/babylon101/shadows
+      * https://doc.babylonjs.com/features/featuresDeepDive/lights/shadows
       * @param baseMaterial Material to wrap
       * @param scene Define the scene the material belongs to
       * @param options Options used to create the wrapper
@@ -53,6 +53,9 @@ object materialsShadowDepthWrapperMod {
       */
     def dispose(): Unit = js.native
     
+    /** Gets the doNotInjectCode status of the wrapper */
+    def doNotInjectCode: Boolean = js.native
+    
     /**
       * Gets the effect to use to generate the depth map
       * @param subMesh subMesh to get the effect for
@@ -85,6 +88,9 @@ object materialsShadowDepthWrapperMod {
   
   trait IIOptionShadowDepthMaterial extends StObject {
     
+    /** Set doNotInjectCode if the specific shadow map generation code is already implemented by the material. That will prevent this code to be injected twice by ShadowDepthWrapper */
+    var doNotInjectCode: js.UndefOr[Boolean] = js.undefined
+    
     /** Variables in the vertex shader code that need to have their names remapped.
       * The format is: ["var_name", "var_remapped_name", "var_name", "var_remapped_name", ...]
       * "var_name" should be either: worldPos or vNormalW
@@ -106,6 +112,10 @@ object materialsShadowDepthWrapperMod {
     
     @scala.inline
     implicit open class MutableBuilder[Self <: IIOptionShadowDepthMaterial] (val x: Self) extends AnyVal {
+      
+      inline def setDoNotInjectCode(value: Boolean): Self = StObject.set(x, "doNotInjectCode", value.asInstanceOf[js.Any])
+      
+      inline def setDoNotInjectCodeUndefined: Self = StObject.set(x, "doNotInjectCode", js.undefined)
       
       inline def setRemappedVariables(value: js.Array[String]): Self = StObject.set(x, "remappedVariables", value.asInstanceOf[js.Any])
       

@@ -1,11 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import typings.arcgisJsApi.arcgisJsApiStrings.`junction-edge-from-connectivity`
-import typings.arcgisJsApi.arcgisJsApiStrings.`junction-edge-to-connectivity`
-import typings.arcgisJsApi.arcgisJsApiStrings.`junction-midspan-connectivity`
-import typings.arcgisJsApi.arcgisJsApiStrings.attachment
-import typings.arcgisJsApi.arcgisJsApiStrings.connectivity
-import typings.arcgisJsApi.arcgisJsApiStrings.containment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +11,7 @@ trait QueryAssociationsParametersProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-QueryAssociationsParameters.html#elements)
     */
-  var elements: js.UndefOr[js.Array[Any]] = js.undefined
+  var elements: js.UndefOr[js.Array[NetworkElementProperties]] = js.undefined
   
   /**
     * The geodatabase version to execute the function against.
@@ -47,9 +41,7 @@ trait QueryAssociationsParametersProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-QueryAssociationsParameters.html#types)
     */
-  var types: js.UndefOr[
-    connectivity | attachment | containment | `junction-edge-from-connectivity` | `junction-midspan-connectivity` | js.Array[`junction-edge-to-connectivity`]
-  ] = js.undefined
+  var types: js.UndefOr[js.Array[String]] = js.undefined
 }
 object QueryAssociationsParametersProperties {
   
@@ -61,11 +53,11 @@ object QueryAssociationsParametersProperties {
   @scala.inline
   implicit open class MutableBuilder[Self <: QueryAssociationsParametersProperties] (val x: Self) extends AnyVal {
     
-    inline def setElements(value: js.Array[Any]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
+    inline def setElements(value: js.Array[NetworkElementProperties]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
     
     inline def setElementsUndefined: Self = StObject.set(x, "elements", js.undefined)
     
-    inline def setElementsVarargs(value: Any*): Self = StObject.set(x, "elements", js.Array(value*))
+    inline def setElementsVarargs(value: NetworkElementProperties*): Self = StObject.set(x, "elements", js.Array(value*))
     
     inline def setGdbVersion(value: String): Self = StObject.set(x, "gdbVersion", value.asInstanceOf[js.Any])
     
@@ -79,12 +71,10 @@ object QueryAssociationsParametersProperties {
     
     inline def setReturnDeletesUndefined: Self = StObject.set(x, "returnDeletes", js.undefined)
     
-    inline def setTypes(
-      value: connectivity | attachment | containment | `junction-edge-from-connectivity` | `junction-midspan-connectivity` | js.Array[`junction-edge-to-connectivity`]
-    ): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+    inline def setTypes(value: js.Array[String]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
     inline def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
     
-    inline def setTypesVarargs(value: `junction-edge-to-connectivity`*): Self = StObject.set(x, "types", js.Array(value*))
+    inline def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value*))
   }
 }

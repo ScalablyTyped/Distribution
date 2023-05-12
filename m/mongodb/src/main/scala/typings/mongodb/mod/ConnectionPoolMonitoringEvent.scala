@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mongodb", "ConnectionPoolMonitoringEvent")
+/* note: abstract class */ @JSImport("mongodb", "ConnectionPoolMonitoringEvent")
 @js.native
 open class ConnectionPoolMonitoringEvent () extends StObject {
   

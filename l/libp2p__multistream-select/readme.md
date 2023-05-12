@@ -1,7 +1,7 @@
 
 # Scala.js typings for libp2p__multistream-select
 
-Typings are for version 3.1.0
+Typings are for version 3.1.8
 
 ## Library description:
 JavaScript implementation of multistream-select

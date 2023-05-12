@@ -17,7 +17,7 @@ trait AutoScalingInstanceDetails extends StObject {
   var AvailabilityZone: XmlStringMaxLen255
   
   /**
-    * The last reported health status of this instance. "Healthy" means that the instance is healthy and should remain in service. "Unhealthy" means that the instance is unhealthy and Amazon EC2 Auto Scaling should terminate and replace it.
+    * The last reported health status of this instance. Healthy means that the instance is healthy and should remain in service. Unhealthy means that the instance is unhealthy and Amazon EC2 Auto Scaling should terminate and replace it.
     */
   var HealthStatus: XmlStringMaxLen32
   

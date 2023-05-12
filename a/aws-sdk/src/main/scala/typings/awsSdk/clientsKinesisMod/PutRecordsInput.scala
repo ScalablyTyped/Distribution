@@ -12,14 +12,19 @@ trait PutRecordsInput extends StObject {
   var Records: PutRecordsRequestEntryList
   
   /**
+    * The ARN of the stream.
+    */
+  var StreamARN: js.UndefOr[typings.awsSdk.clientsKinesisMod.StreamARN] = js.undefined
+  
+  /**
     * The stream name associated with the request.
     */
-  var StreamName: typings.awsSdk.clientsKinesisMod.StreamName
+  var StreamName: js.UndefOr[typings.awsSdk.clientsKinesisMod.StreamName] = js.undefined
 }
 object PutRecordsInput {
   
-  inline def apply(Records: PutRecordsRequestEntryList, StreamName: StreamName): PutRecordsInput = {
-    val __obj = js.Dynamic.literal(Records = Records.asInstanceOf[js.Any], StreamName = StreamName.asInstanceOf[js.Any])
+  inline def apply(Records: PutRecordsRequestEntryList): PutRecordsInput = {
+    val __obj = js.Dynamic.literal(Records = Records.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutRecordsInput]
   }
   
@@ -30,6 +35,12 @@ object PutRecordsInput {
     
     inline def setRecordsVarargs(value: PutRecordsRequestEntry*): Self = StObject.set(x, "Records", js.Array(value*))
     
+    inline def setStreamARN(value: StreamARN): Self = StObject.set(x, "StreamARN", value.asInstanceOf[js.Any])
+    
+    inline def setStreamARNUndefined: Self = StObject.set(x, "StreamARN", js.undefined)
+    
     inline def setStreamName(value: StreamName): Self = StObject.set(x, "StreamName", value.asInstanceOf[js.Any])
+    
+    inline def setStreamNameUndefined: Self = StObject.set(x, "StreamName", js.undefined)
   }
 }

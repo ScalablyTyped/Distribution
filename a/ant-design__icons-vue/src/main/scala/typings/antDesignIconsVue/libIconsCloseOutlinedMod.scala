@@ -16,7 +16,7 @@ object libIconsCloseOutlinedMod extends Shortcut {
   @js.native
   trait CloseOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_CloseOutlinedIconType: String = js.native

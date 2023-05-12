@@ -359,6 +359,11 @@ object anon {
     
     var pixelRatio: js.UndefOr[Double] = js.undefined
     
+    /**
+      * Allows getting a ref to the component instance.
+      * Once the component unmounts, React will set `ref.current` to `null` (or call the ref with `null` if you passed a callback ref).
+      * @see https://react.dev/learn/referencing-values-with-refs#refs-and-the-dom
+      */
     var ref: js.UndefOr[Ref[HTMLCanvasElement]] = js.undefined
     
     var renderNode: js.UndefOr[
@@ -793,6 +798,11 @@ object anon {
     
     var pixelRatio: js.UndefOr[Double] = js.undefined
     
+    /**
+      * Allows getting a ref to the component instance.
+      * Once the component unmounts, React will set `ref.current` to `null` (or call the ref with `null` if you passed a callback ref).
+      * @see https://react.dev/learn/referencing-values-with-refs#refs-and-the-dom
+      */
     var ref: js.UndefOr[Ref[HTMLCanvasElement]] = js.undefined
     
     var renderNode: js.UndefOr[
@@ -1050,6 +1060,36 @@ object anon {
     implicit open class MutableBuilder[Self <: SerieId] (val x: Self) extends AnyVal {
       
       inline def setSerieId(value: String | Double): Self = StObject.set(x, "serieId", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait Size extends StObject {
+    
+    var color: String
+    
+    var size: Double
+    
+    var x: Double
+    
+    var y: Double
+  }
+  object Size {
+    
+    inline def apply(color: String, size: Double, x: Double, y: Double): Size = {
+      val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Size]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Size] (val x: Self) extends AnyVal {
+      
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
 }

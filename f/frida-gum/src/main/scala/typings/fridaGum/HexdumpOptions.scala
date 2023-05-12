@@ -7,6 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait HexdumpOptions extends StObject {
   
   /**
+    * Specifies base address of data being dumped. Defaults to the address of
+    * the `target` argument, if it has an address, and 0 otherwise.
+    */
+  var address: js.UndefOr[NativePointer] = js.undefined
+  
+  /**
     * Whether ANSI colors should be used. Defaults to false.
     */
   var ansi: js.UndefOr[Boolean] = js.undefined
@@ -35,6 +41,10 @@ object HexdumpOptions {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: HexdumpOptions] (val x: Self) extends AnyVal {
+    
+    inline def setAddress(value: NativePointer): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    
+    inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
     inline def setAnsi(value: Boolean): Self = StObject.set(x, "ansi", value.asInstanceOf[js.Any])
     

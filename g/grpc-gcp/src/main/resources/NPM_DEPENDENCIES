@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "grpc-gcp" : "1.0.0"
+      "grpc-gcp" : "1.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "grpc-gcp" : "1.0.0"
+      "grpc-gcp" : "1.0.1"
     }
   ],
   "compile-devDependencies" : [

@@ -161,6 +161,9 @@ object sapMP13nSelectionPanelMod {
       * An optional callback that may be used to display additional custom content in each selectable item. This
       * factory can be toggled by executing the {@link sap.m.p13n.SelectionPanel#showFactory} method.
       *
+      * **Note:**: The `getIdForLabel` method can be imlplemented on the returned control instance to return
+      * a focusable children control to provide the `labelFor` reference for the associated text.
+      *
       * @returns Value of property `itemFactory`
       */
     def getItemFactory(): js.Function = js.native
@@ -234,6 +237,9 @@ object sapMP13nSelectionPanelMod {
       * An optional callback that may be used to display additional custom content in each selectable item. This
       * factory can be toggled by executing the {@link sap.m.p13n.SelectionPanel#showFactory} method.
       *
+      * **Note:**: The `getIdForLabel` method can be imlplemented on the returned control instance to return
+      * a focusable children control to provide the `labelFor` reference for the associated text.
+      *
       * When called with a value of `null` or `undefined`, the default value of the property will be restored.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -300,6 +306,9 @@ object sapMP13nSelectionPanelMod {
     /**
       * An optional callback that may be used to display additional custom content in each selectable item. This
       * factory can be toggled by executing the {@link sap.m.p13n.SelectionPanel#showFactory} method.
+      *
+      * **Note:**: The `getIdForLabel` method can be imlplemented on the returned control instance to return
+      * a focusable children control to provide the `labelFor` reference for the associated text.
       */
     var itemFactory: js.UndefOr[
         js.Function | PropertyBindingInfo | (/* template literal string: {${string}} */ String)

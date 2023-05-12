@@ -52,7 +52,7 @@ trait ProgressPluginOptions extends StObject {
   /**
   	 * Collect percent algorithm. By default it calculates by a median from modules, entries and dependencies percent.
   	 */
-  var percentBy: js.UndefOr[Null | modules | dependencies | entries] = js.undefined
+  var percentBy: js.UndefOr[Null | entries | modules | dependencies] = js.undefined
   
   /**
   	 * Collect profile data for progress steps. Default: false.
@@ -97,7 +97,7 @@ object ProgressPluginOptions {
     
     inline def setModulesUndefined: Self = StObject.set(x, "modules", js.undefined)
     
-    inline def setPercentBy(value: modules | dependencies | entries): Self = StObject.set(x, "percentBy", value.asInstanceOf[js.Any])
+    inline def setPercentBy(value: entries | modules | dependencies): Self = StObject.set(x, "percentBy", value.asInstanceOf[js.Any])
     
     inline def setPercentByNull: Self = StObject.set(x, "percentBy", null)
     

@@ -11,5 +11,6 @@ trait TypeofExtrudeGeometry
   extends StObject
      with Instantiable0[ExtrudeGeometry] {
   
-  def fromJSON(data: Any): typings.three.srcGeometriesExtrudeGeometryMod.ExtrudeGeometry = js.native
+  /** @internal */
+  def fromJSON(data: js.Object, shapes: Any): typings.three.srcGeometriesExtrudeGeometryMod.ExtrudeGeometry = js.native
 }

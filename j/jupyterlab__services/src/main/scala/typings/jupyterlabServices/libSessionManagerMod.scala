@@ -8,7 +8,6 @@ import typings.jupyterlabServices.libSessionManagerMod.SessionManager.IOptions
 import typings.jupyterlabServices.libSessionSessionMod.IModel
 import typings.jupyterlabServices.libSessionSessionMod.ISessionConnection
 import typings.jupyterlabServices.libSessionSessionMod.ISessionOptions
-import typings.luminoAlgorithm.typesIterMod.IIterator
 import typings.luminoPolling.typesPollMod.Poll.Standby
 import typings.luminoSignaling.mod.ISignal
 import org.scalablytyped.runtime.StObject
@@ -144,7 +143,7 @@ object libSessionManagerMod {
       *
       * @returns A new iterator over the running sessions.
       */
-    def running(): IIterator[IModel] = js.native
+    def running(): Any = js.native
     
     /**
       * A signal emitted when the running sessions change.

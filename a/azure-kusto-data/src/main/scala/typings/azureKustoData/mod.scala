@@ -1,11 +1,12 @@
 package typings.azureKustoData
 
-import org.scalablytyped.runtime.TopLevel
-import typings.adalNode.mod.UserCodeInfo
-import typings.azureKustoData.anon.Mgmt
-import typings.azureKustoData.mod.Client.KustoResponseDataSetV2
-import typings.std.Error
-import typings.std.IterableIterator
+import typings.azureCoreAuth.mod.TokenCredential
+import typings.azureIdentity.mod.DeviceCodeInfo
+import typings.azureIdentity.mod.InteractiveBrowserCredentialInBrowserOptions
+import typings.azureIdentity.mod.InteractiveBrowserCredentialNodeOptions
+import typings.azureKustoData.typesSrcClientMod.default
+import typings.azureKustoData.typesSrcKustoTrustedEndpointsMod.KustoTrustedEndpointsImpl
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,223 +15,134 @@ object mod {
   
   @JSImport("azure-kusto-data", "Client")
   @js.native
-  class Client protected () extends StObject {
+  open class Client protected () extends default {
     def this(kcsb: String) = this()
-    def this(kcsb: KustoConnectionStringBuilder) = this()
-    
-    var aadHelper: js.Any = js.native
-    
-    var cluster: String = js.native
-    
-    var connectionString: KustoConnectionStringBuilder = js.native
-    
-    var endpoints: Mgmt = js.native
-    
-    def execute(
-      db: js.Any,
-      query: js.Any,
-      callback: js.Function2[/* err */ Error, /* results */ KustoResponseDataSetV2[js.Any], Unit]
-    ): js.Any = js.native
-    def execute(
-      db: js.Any,
-      query: js.Any,
-      callback: js.Function2[/* err */ Error, /* results */ KustoResponseDataSetV2[js.Any], Unit],
-      properties: js.Any
-    ): js.Any = js.native
-    
-    def executeMgmt(
-      db: js.Any,
-      query: js.Any,
-      callback: js.Function2[/* err */ Error, /* results */ KustoResponseDataSetV2[js.Any], Unit],
-      properties: js.Any
-    ): js.Any = js.native
-    
-    def executeQuery(
-      db: js.Any,
-      query: js.Any,
-      callback: js.Function2[/* err */ Error, /* results */ KustoResponseDataSetV2[js.Any], Unit],
-      properties: js.Any
-    ): js.Any = js.native
-  }
-  object Client {
-    
-    trait KustoResponseDataSet[T] extends StObject {
-      
-      var primaryResults: js.Array[KustoResultTable[T]]
-      
-      var statusTable: KustoResultTable[T]
-      
-      var tableNames: js.Array[String]
-      
-      var tables: js.Array[KustoResultTable[T]]
-    }
-    object KustoResponseDataSet {
-      
-      inline def apply[T](
-        primaryResults: js.Array[KustoResultTable[T]],
-        statusTable: KustoResultTable[T],
-        tableNames: js.Array[String],
-        tables: js.Array[KustoResultTable[T]]
-      ): KustoResponseDataSet[T] = {
-        val __obj = js.Dynamic.literal(primaryResults = primaryResults.asInstanceOf[js.Any], statusTable = statusTable.asInstanceOf[js.Any], tableNames = tableNames.asInstanceOf[js.Any], tables = tables.asInstanceOf[js.Any])
-        __obj.asInstanceOf[KustoResponseDataSet[T]]
-      }
-      
-      extension [Self <: KustoResponseDataSet[?], T](x: Self & KustoResponseDataSet[T]) {
-        
-        inline def setPrimaryResults(value: js.Array[KustoResultTable[T]]): Self = StObject.set(x, "primaryResults", value.asInstanceOf[js.Any])
-        
-        inline def setPrimaryResultsVarargs(value: KustoResultTable[T]*): Self = StObject.set(x, "primaryResults", js.Array(value :_*))
-        
-        inline def setStatusTable(value: KustoResultTable[T]): Self = StObject.set(x, "statusTable", value.asInstanceOf[js.Any])
-        
-        inline def setTableNames(value: js.Array[String]): Self = StObject.set(x, "tableNames", value.asInstanceOf[js.Any])
-        
-        inline def setTableNamesVarargs(value: String*): Self = StObject.set(x, "tableNames", js.Array(value :_*))
-        
-        inline def setTables(value: js.Array[KustoResultTable[T]]): Self = StObject.set(x, "tables", value.asInstanceOf[js.Any])
-        
-        inline def setTablesVarargs(value: KustoResultTable[T]*): Self = StObject.set(x, "tables", js.Array(value :_*))
-      }
-    }
-    
-    trait KustoResponseDataSetV2[T]
-      extends StObject
-         with KustoResponseDataSet[T] {
-      
-      def getCridColumn(): String
-      
-      def getErrorColumn(): String
-      
-      def getStatusColumn(): String
-      
-      var version: String
-    }
-    object KustoResponseDataSetV2 {
-      
-      inline def apply[T](
-        getCridColumn: () => String,
-        getErrorColumn: () => String,
-        getStatusColumn: () => String,
-        primaryResults: js.Array[KustoResultTable[T]],
-        statusTable: KustoResultTable[T],
-        tableNames: js.Array[String],
-        tables: js.Array[KustoResultTable[T]],
-        version: String
-      ): KustoResponseDataSetV2[T] = {
-        val __obj = js.Dynamic.literal(getCridColumn = js.Any.fromFunction0(getCridColumn), getErrorColumn = js.Any.fromFunction0(getErrorColumn), getStatusColumn = js.Any.fromFunction0(getStatusColumn), primaryResults = primaryResults.asInstanceOf[js.Any], statusTable = statusTable.asInstanceOf[js.Any], tableNames = tableNames.asInstanceOf[js.Any], tables = tables.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-        __obj.asInstanceOf[KustoResponseDataSetV2[T]]
-      }
-      
-      extension [Self <: KustoResponseDataSetV2[?], T](x: Self & KustoResponseDataSetV2[T]) {
-        
-        inline def setGetCridColumn(value: () => String): Self = StObject.set(x, "getCridColumn", js.Any.fromFunction0(value))
-        
-        inline def setGetErrorColumn(value: () => String): Self = StObject.set(x, "getErrorColumn", js.Any.fromFunction0(value))
-        
-        inline def setGetStatusColumn(value: () => String): Self = StObject.set(x, "getStatusColumn", js.Any.fromFunction0(value))
-        
-        inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
-      }
-    }
-    
-    type KustoResultRow[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-    {[ P in keyof T ]: T[P]}
-      */ typings.azureKustoData.azureKustoDataStrings.KustoResultRow & TopLevel[T]
-    
-    trait KustoResultTable[T] extends StObject {
-      
-      var columns: js.Array[js.Any]
-      
-      var id: String
-      
-      var kind: String
-      
-      var name: String
-      
-      def rows(): IterableIterator[KustoResultRow[T]]
-      
-      def toJson(): js.Any
-    }
-    object KustoResultTable {
-      
-      inline def apply[T](
-        columns: js.Array[js.Any],
-        id: String,
-        kind: String,
-        name: String,
-        rows: () => IterableIterator[KustoResultRow[T]],
-        toJson: () => js.Any
-      ): KustoResultTable[T] = {
-        val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], rows = js.Any.fromFunction0(rows), toJson = js.Any.fromFunction0(toJson))
-        __obj.asInstanceOf[KustoResultTable[T]]
-      }
-      
-      extension [Self <: KustoResultTable[?], T](x: Self & KustoResultTable[T]) {
-        
-        inline def setColumns(value: js.Array[js.Any]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
-        
-        inline def setColumnsVarargs(value: js.Any*): Self = StObject.set(x, "columns", js.Array(value :_*))
-        
-        inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
-        
-        inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
-        
-        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-        
-        inline def setRows(value: () => IterableIterator[KustoResultRow[T]]): Self = StObject.set(x, "rows", js.Any.fromFunction0(value))
-        
-        inline def setToJson(value: () => js.Any): Self = StObject.set(x, "toJson", js.Any.fromFunction0(value))
-      }
-    }
+    def this(kcsb: typings.azureKustoData.typesSrcConnectionBuilderMod.default) = this()
   }
   
   @JSImport("azure-kusto-data", "ClientRequestProperties")
   @js.native
-  class ClientRequestProperties () extends StObject {
-    def this(options: js.Any) = this()
-    def this(options: js.Any, parameters: js.Any) = this()
-    def this(options: Unit, parameters: js.Any) = this()
-    
-    def clearOptions(): Unit = js.native
-    
-    def clearParameters(): Unit = js.native
-    
-    def getOption(name: String, defaultValue: js.Any): js.Any = js.native
-    
-    def getParameter(name: String, defaultValue: js.Any): js.Any = js.native
-    
-    def getTimeout(): js.Any = js.native
-    
-    def setOption(name: String, value: js.Any): Unit = js.native
-    
-    def setParameter(name: String, value: js.Any): Unit = js.native
-    
-    def setTimeout(timeoutMillis: js.Any): Unit = js.native
-    
-    def toJson(): js.Any = js.native
+  open class ClientRequestProperties ()
+    extends typings.azureKustoData.typesSrcClientRequestPropertiesMod.default {
+    def this(options: Record[String, Any]) = this()
+    def this(options: Unit, parameters: Record[String, Any]) = this()
+    def this(options: Record[String, Any], parameters: Record[String, Any]) = this()
+    def this(options: Unit, parameters: Unit, clientRequestId: String) = this()
+    def this(options: Unit, parameters: Record[String, Any], clientRequestId: String) = this()
+    def this(options: Record[String, Any], parameters: Unit, clientRequestId: String) = this()
+    def this(options: Record[String, Any], parameters: Record[String, Any], clientRequestId: String) = this()
+    def this(options: Unit, parameters: Unit, clientRequestId: String, user: String) = this()
+    def this(options: Unit, parameters: Unit, clientRequestId: Unit, user: String) = this()
+    def this(options: Unit, parameters: Record[String, Any], clientRequestId: String, user: String) = this()
+    def this(options: Unit, parameters: Record[String, Any], clientRequestId: Unit, user: String) = this()
+    def this(options: Record[String, Any], parameters: Unit, clientRequestId: String, user: String) = this()
+    def this(options: Record[String, Any], parameters: Unit, clientRequestId: Unit, user: String) = this()
+    def this(
+      options: Record[String, Any],
+      parameters: Record[String, Any],
+      clientRequestId: String,
+      user: String
+    ) = this()
+    def this(options: Record[String, Any], parameters: Record[String, Any], clientRequestId: Unit, user: String) = this()
+    def this(options: Unit, parameters: Unit, clientRequestId: String, user: String, application: String) = this()
+    def this(options: Unit, parameters: Unit, clientRequestId: String, user: Unit, application: String) = this()
+    def this(options: Unit, parameters: Unit, clientRequestId: Unit, user: String, application: String) = this()
+    def this(options: Unit, parameters: Unit, clientRequestId: Unit, user: Unit, application: String) = this()
+    def this(
+      options: Unit,
+      parameters: Record[String, Any],
+      clientRequestId: String,
+      user: String,
+      application: String
+    ) = this()
+    def this(
+      options: Unit,
+      parameters: Record[String, Any],
+      clientRequestId: String,
+      user: Unit,
+      application: String
+    ) = this()
+    def this(
+      options: Unit,
+      parameters: Record[String, Any],
+      clientRequestId: Unit,
+      user: String,
+      application: String
+    ) = this()
+    def this(
+      options: Unit,
+      parameters: Record[String, Any],
+      clientRequestId: Unit,
+      user: Unit,
+      application: String
+    ) = this()
+    def this(
+      options: Record[String, Any],
+      parameters: Unit,
+      clientRequestId: String,
+      user: String,
+      application: String
+    ) = this()
+    def this(
+      options: Record[String, Any],
+      parameters: Unit,
+      clientRequestId: String,
+      user: Unit,
+      application: String
+    ) = this()
+    def this(
+      options: Record[String, Any],
+      parameters: Unit,
+      clientRequestId: Unit,
+      user: String,
+      application: String
+    ) = this()
+    def this(
+      options: Record[String, Any],
+      parameters: Unit,
+      clientRequestId: Unit,
+      user: Unit,
+      application: String
+    ) = this()
+    def this(
+      options: Record[String, Any],
+      parameters: Record[String, Any],
+      clientRequestId: String,
+      user: String,
+      application: String
+    ) = this()
+    def this(
+      options: Record[String, Any],
+      parameters: Record[String, Any],
+      clientRequestId: String,
+      user: Unit,
+      application: String
+    ) = this()
+    def this(
+      options: Record[String, Any],
+      parameters: Record[String, Any],
+      clientRequestId: Unit,
+      user: String,
+      application: String
+    ) = this()
+    def this(
+      options: Record[String, Any],
+      parameters: Record[String, Any],
+      clientRequestId: Unit,
+      user: Unit,
+      application: String
+    ) = this()
   }
+  
+  @JSImport("azure-kusto-data", "CloudSettings")
+  @js.native
+  val CloudSettings: typings.azureKustoData.typesSrcCloudSettingsMod.CloudSettings = js.native
   
   @JSImport("azure-kusto-data", "KustoConnectionStringBuilder")
   @js.native
-  class KustoConnectionStringBuilder protected () extends StObject {
+  open class KustoConnectionStringBuilder protected ()
+    extends typings.azureKustoData.typesSrcConnectionBuilderMod.default {
     def this(connectionString: String) = this()
-    
-    var aadUserId: js.UndefOr[String] = js.native
-    
-    var applicationCertificate: js.UndefOr[String] = js.native
-    
-    var applicationCertificateThumbprint: js.UndefOr[String] = js.native
-    
-    var applicationClientId: js.UndefOr[String] = js.native
-    
-    var applicationKey: js.UndefOr[String] = js.native
-    
-    var authorityId: String = js.native
-    
-    var dataSource: String = js.native
-    
-    var password: js.UndefOr[String] = js.native
   }
   /* static members */
   object KustoConnectionStringBuilder {
@@ -239,29 +151,229 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
+    @JSImport("azure-kusto-data", "KustoConnectionStringBuilder.DefaultDatabaseName")
+    @js.native
+    val DefaultDatabaseName: /* "NetDefaultDB" */ String = js.native
+    
+    @JSImport("azure-kusto-data", "KustoConnectionStringBuilder.SecretReplacement")
+    @js.native
+    val SecretReplacement: /* "****" */ String = js.native
+    
+    inline def withAadApplicationCertificateAuthentication(connectionString: String, aadAppId: String): typings.azureKustoData.typesSrcConnectionBuilderMod.KustoConnectionStringBuilder = (^.asInstanceOf[js.Dynamic].applyDynamic("withAadApplicationCertificateAuthentication")(connectionString.asInstanceOf[js.Any], aadAppId.asInstanceOf[js.Any])).asInstanceOf[typings.azureKustoData.typesSrcConnectionBuilderMod.KustoConnectionStringBuilder]
+    inline def withAadApplicationCertificateAuthentication(connectionString: String, aadAppId: String, applicationCertificatePrivateKey: String): typings.azureKustoData.typesSrcConnectionBuilderMod.KustoConnectionStringBuilder = (^.asInstanceOf[js.Dynamic].applyDynamic("withAadApplicationCertificateAuthentication")(connectionString.asInstanceOf[js.Any], aadAppId.asInstanceOf[js.Any], applicationCertificatePrivateKey.asInstanceOf[js.Any])).asInstanceOf[typings.azureKustoData.typesSrcConnectionBuilderMod.KustoConnectionStringBuilder]
     inline def withAadApplicationCertificateAuthentication(
       connectionString: String,
       aadAppId: String,
-      certificate: String,
-      thumbprint: String,
+      applicationCertificatePrivateKey: String,
       authorityId: String
-    ): KustoConnectionStringBuilder = (^.asInstanceOf[js.Dynamic].applyDynamic("withAadApplicationCertificateAuthentication")(connectionString.asInstanceOf[js.Any], aadAppId.asInstanceOf[js.Any], certificate.asInstanceOf[js.Any], thumbprint.asInstanceOf[js.Any], authorityId.asInstanceOf[js.Any])).asInstanceOf[KustoConnectionStringBuilder]
+    ): typings.azureKustoData.typesSrcConnectionBuilderMod.KustoConnectionStringBuilder = (^.asInstanceOf[js.Dynamic].applyDynamic("withAadApplicationCertificateAuthentication")(connectionString.asInstanceOf[js.Any], aadAppId.asInstanceOf[js.Any], applicationCertificatePrivateKey.asInstanceOf[js.Any], authorityId.asInstanceOf[js.Any])).asInstanceOf[typings.azureKustoData.typesSrcConnectionBuilderMod.KustoConnectionStringBuilder]
+    inline def withAadApplicationCertificateAuthentication(
+      connectionString: String,
+      aadAppId: String,
+      applicationCertificatePrivateKey: String,
+      authorityId: String,
+      applicationCertificateSendX5c: Boolean
+    ): typings.azureKustoData.typesSrcConnectionBuilderMod.KustoConnectionStringBuilder = (^.asInstanceOf[js.Dynamic].applyDynamic("withAadApplicationCertificateAuthentication")(connectionString.asInstanceOf[js.Any], aadAppId.asInstanceOf[js.Any], applicationCertificatePrivateKey.asInstanceOf[js.Any], authorityId.asInstanceOf[js.Any], applicationCertificateSendX5c.asInstanceOf[js.Any])).asInstanceOf[typings.azureKustoData.typesSrcConnectionBuilderMod.KustoConnectionStringBuilder]
+    inline def withAadApplicationCertificateAuthentication(
+      connectionString: String,
+      aadAppId: String,
+      applicationCertificatePrivateKey: String,
+      authorityId: String,
+      applicationCertificateSendX5c: Boolean,
+      applicationCertificatePrivatePath: String
+    ): typings.azureKustoData.typesSrcConnectionBuilderMod.KustoConnectionStringBuilder = (^.asInstanceOf[js.Dynamic].applyDynamic("withAadApplicationCertificateAuthentication")(connectionString.asInstanceOf[js.Any], aadAppId.asInstanceOf[js.Any], applicationCertificatePrivateKey.asInstanceOf[js.Any], authorityId.asInstanceOf[js.Any], applicationCertificateSendX5c.asInstanceOf[js.Any], applicationCertificatePrivatePath.asInstanceOf[js.Any])).asInstanceOf[typings.azureKustoData.typesSrcConnectionBuilderMod.KustoConnectionStringBuilder]
+    inline def withAadApplicationCertificateAuthentication(
+      connectionString: String,
+      aadAppId: String,
+      applicationCertificatePrivateKey: String,
+      authorityId: String,
+      applicationCertificateSendX5c: Unit,
+      applicationCertificatePrivatePath: String
+    ): typings.azureKustoData.typesSrcConnectionBuilderMod.KustoConnectionStringBuilder = (^.asInstanceOf[js.Dynamic].applyDynamic("withAadApplicationCertificateAuthentication")(connectionString.asInstanceOf[js.Any], aadAppId.asInstanceOf[js.Any], applicationCertificatePrivateKey.asInstanceOf[js.Any], authorityId.asInstanceOf[js.Any], applicationCertificateSendX5c.asInstanceOf[js.Any], applicationCertificatePrivatePath.asInstanceOf[js.Any])).asInstanceOf[typings.azureKustoData.typesSrcConnectionBuilderMod.KustoConnectionStringBuilder]
+    inline def withAadApplicationCertificateAuthentication(
+      connectionString: String,
+      aadAppId: String,
+      applicationCertificatePrivateKey: String,
+      authorityId: Unit,
+      applicationCertificateSendX5c: Boolean
+    ): typings.azureKustoData.typesSrcConnectionBuilderMod.KustoConnectionStringBuilder = (^.asInstanceOf[js.Dynamic].applyDynamic("withAadApplicationCertificateAuthentication")(connectionString.asInstanceOf[js.Any], aadAppId.asInstanceOf[js.Any], applicationCertificatePrivateKey.asInstanceOf[js.Any], authorityId.asInstanceOf[js.Any], applicationCertificateSendX5c.asInstanceOf[js.Any])).asInstanceOf[typings.azureKustoData.typesSrcConnectionBuilderMod.KustoConnectionStringBuilder]
+    inline def withAadApplicationCertificateAuthentication(
+      connectionString: String,
+      aadAppId: String,
+      applicationCertificatePrivateKey: String,
+      authorityId: Unit,
+      applicationCertificateSendX5c: Boolean,
+      applicationCertificatePrivatePath: String
+    ): typings.azureKustoData.typesSrcConnectionBuilderMod.KustoConnectionStringBuilder = (^.asInstanceOf[js.Dynamic].applyDynamic("withAadApplicationCertificateAuthentication")(connectionString.asInstanceOf[js.Any], aadAppId.asInstanceOf[js.Any], applicationCertificatePrivateKey.asInstanceOf[js.Any], authorityId.asInstanceOf[js.Any], applicationCertificateSendX5c.asInstanceOf[js.Any], applicationCertificatePrivatePath.asInstanceOf[js.Any])).asInstanceOf[typings.azureKustoData.typesSrcConnectionBuilderMod.KustoConnectionStringBuilder]
+    inline def withAadApplicationCertificateAuthentication(
+      connectionString: String,
+      aadAppId: String,
+      applicationCertificatePrivateKey: String,
+      authorityId: Unit,
+      applicationCertificateSendX5c: Unit,
+      applicationCertificatePrivatePath: String
+    ): typings.azureKustoData.typesSrcConnectionBuilderMod.KustoConnectionStringBuilder = (^.asInstanceOf[js.Dynamic].applyDynamic("withAadApplicationCertificateAuthentication")(connectionString.asInstanceOf[js.Any], aadAppId.asInstanceOf[js.Any], applicationCertificatePrivateKey.asInstanceOf[js.Any], authorityId.asInstanceOf[js.Any], applicationCertificateSendX5c.asInstanceOf[js.Any], applicationCertificatePrivatePath.asInstanceOf[js.Any])).asInstanceOf[typings.azureKustoData.typesSrcConnectionBuilderMod.KustoConnectionStringBuilder]
+    inline def withAadApplicationCertificateAuthentication(
+      connectionString: String,
+      aadAppId: String,
+      applicationCertificatePrivateKey: Unit,
+      authorityId: String
+    ): typings.azureKustoData.typesSrcConnectionBuilderMod.KustoConnectionStringBuilder = (^.asInstanceOf[js.Dynamic].applyDynamic("withAadApplicationCertificateAuthentication")(connectionString.asInstanceOf[js.Any], aadAppId.asInstanceOf[js.Any], applicationCertificatePrivateKey.asInstanceOf[js.Any], authorityId.asInstanceOf[js.Any])).asInstanceOf[typings.azureKustoData.typesSrcConnectionBuilderMod.KustoConnectionStringBuilder]
+    inline def withAadApplicationCertificateAuthentication(
+      connectionString: String,
+      aadAppId: String,
+      applicationCertificatePrivateKey: Unit,
+      authorityId: String,
+      applicationCertificateSendX5c: Boolean
+    ): typings.azureKustoData.typesSrcConnectionBuilderMod.KustoConnectionStringBuilder = (^.asInstanceOf[js.Dynamic].applyDynamic("withAadApplicationCertificateAuthentication")(connectionString.asInstanceOf[js.Any], aadAppId.asInstanceOf[js.Any], applicationCertificatePrivateKey.asInstanceOf[js.Any], authorityId.asInstanceOf[js.Any], applicationCertificateSendX5c.asInstanceOf[js.Any])).asInstanceOf[typings.azureKustoData.typesSrcConnectionBuilderMod.KustoConnectionStringBuilder]
+    inline def withAadApplicationCertificateAuthentication(
+      connectionString: String,
+      aadAppId: String,
+      applicationCertificatePrivateKey: Unit,
+      authorityId: String,
+      applicationCertificateSendX5c: Boolean,
+      applicationCertificatePrivatePath: String
+    ): typings.azureKustoData.typesSrcConnectionBuilderMod.KustoConnectionStringBuilder = (^.asInstanceOf[js.Dynamic].applyDynamic("withAadApplicationCertificateAuthentication")(connectionString.asInstanceOf[js.Any], aadAppId.asInstanceOf[js.Any], applicationCertificatePrivateKey.asInstanceOf[js.Any], authorityId.asInstanceOf[js.Any], applicationCertificateSendX5c.asInstanceOf[js.Any], applicationCertificatePrivatePath.asInstanceOf[js.Any])).asInstanceOf[typings.azureKustoData.typesSrcConnectionBuilderMod.KustoConnectionStringBuilder]
+    inline def withAadApplicationCertificateAuthentication(
+      connectionString: String,
+      aadAppId: String,
+      applicationCertificatePrivateKey: Unit,
+      authorityId: String,
+      applicationCertificateSendX5c: Unit,
+      applicationCertificatePrivatePath: String
+    ): typings.azureKustoData.typesSrcConnectionBuilderMod.KustoConnectionStringBuilder = (^.asInstanceOf[js.Dynamic].applyDynamic("withAadApplicationCertificateAuthentication")(connectionString.asInstanceOf[js.Any], aadAppId.asInstanceOf[js.Any], applicationCertificatePrivateKey.asInstanceOf[js.Any], authorityId.asInstanceOf[js.Any], applicationCertificateSendX5c.asInstanceOf[js.Any], applicationCertificatePrivatePath.asInstanceOf[js.Any])).asInstanceOf[typings.azureKustoData.typesSrcConnectionBuilderMod.KustoConnectionStringBuilder]
+    inline def withAadApplicationCertificateAuthentication(
+      connectionString: String,
+      aadAppId: String,
+      applicationCertificatePrivateKey: Unit,
+      authorityId: Unit,
+      applicationCertificateSendX5c: Boolean
+    ): typings.azureKustoData.typesSrcConnectionBuilderMod.KustoConnectionStringBuilder = (^.asInstanceOf[js.Dynamic].applyDynamic("withAadApplicationCertificateAuthentication")(connectionString.asInstanceOf[js.Any], aadAppId.asInstanceOf[js.Any], applicationCertificatePrivateKey.asInstanceOf[js.Any], authorityId.asInstanceOf[js.Any], applicationCertificateSendX5c.asInstanceOf[js.Any])).asInstanceOf[typings.azureKustoData.typesSrcConnectionBuilderMod.KustoConnectionStringBuilder]
+    inline def withAadApplicationCertificateAuthentication(
+      connectionString: String,
+      aadAppId: String,
+      applicationCertificatePrivateKey: Unit,
+      authorityId: Unit,
+      applicationCertificateSendX5c: Boolean,
+      applicationCertificatePrivatePath: String
+    ): typings.azureKustoData.typesSrcConnectionBuilderMod.KustoConnectionStringBuilder = (^.asInstanceOf[js.Dynamic].applyDynamic("withAadApplicationCertificateAuthentication")(connectionString.asInstanceOf[js.Any], aadAppId.asInstanceOf[js.Any], applicationCertificatePrivateKey.asInstanceOf[js.Any], authorityId.asInstanceOf[js.Any], applicationCertificateSendX5c.asInstanceOf[js.Any], applicationCertificatePrivatePath.asInstanceOf[js.Any])).asInstanceOf[typings.azureKustoData.typesSrcConnectionBuilderMod.KustoConnectionStringBuilder]
+    inline def withAadApplicationCertificateAuthentication(
+      connectionString: String,
+      aadAppId: String,
+      applicationCertificatePrivateKey: Unit,
+      authorityId: Unit,
+      applicationCertificateSendX5c: Unit,
+      applicationCertificatePrivatePath: String
+    ): typings.azureKustoData.typesSrcConnectionBuilderMod.KustoConnectionStringBuilder = (^.asInstanceOf[js.Dynamic].applyDynamic("withAadApplicationCertificateAuthentication")(connectionString.asInstanceOf[js.Any], aadAppId.asInstanceOf[js.Any], applicationCertificatePrivateKey.asInstanceOf[js.Any], authorityId.asInstanceOf[js.Any], applicationCertificateSendX5c.asInstanceOf[js.Any], applicationCertificatePrivatePath.asInstanceOf[js.Any])).asInstanceOf[typings.azureKustoData.typesSrcConnectionBuilderMod.KustoConnectionStringBuilder]
     
-    inline def withAadApplicationKeyAuthentication(connectionString: String, aadAppId: String, appKey: String, authorityId: String): KustoConnectionStringBuilder = (^.asInstanceOf[js.Dynamic].applyDynamic("withAadApplicationKeyAuthentication")(connectionString.asInstanceOf[js.Any], aadAppId.asInstanceOf[js.Any], appKey.asInstanceOf[js.Any], authorityId.asInstanceOf[js.Any])).asInstanceOf[KustoConnectionStringBuilder]
+    inline def withAadApplicationKeyAuthentication(connectionString: String, aadAppId: String, appKey: String): typings.azureKustoData.typesSrcConnectionBuilderMod.KustoConnectionStringBuilder = (^.asInstanceOf[js.Dynamic].applyDynamic("withAadApplicationKeyAuthentication")(connectionString.asInstanceOf[js.Any], aadAppId.asInstanceOf[js.Any], appKey.asInstanceOf[js.Any])).asInstanceOf[typings.azureKustoData.typesSrcConnectionBuilderMod.KustoConnectionStringBuilder]
+    inline def withAadApplicationKeyAuthentication(connectionString: String, aadAppId: String, appKey: String, authorityId: String): typings.azureKustoData.typesSrcConnectionBuilderMod.KustoConnectionStringBuilder = (^.asInstanceOf[js.Dynamic].applyDynamic("withAadApplicationKeyAuthentication")(connectionString.asInstanceOf[js.Any], aadAppId.asInstanceOf[js.Any], appKey.asInstanceOf[js.Any], authorityId.asInstanceOf[js.Any])).asInstanceOf[typings.azureKustoData.typesSrcConnectionBuilderMod.KustoConnectionStringBuilder]
     
-    inline def withAadDeviceAuthentication(connectionString: String, authorityId: String): KustoConnectionStringBuilder = (^.asInstanceOf[js.Dynamic].applyDynamic("withAadDeviceAuthentication")(connectionString.asInstanceOf[js.Any], authorityId.asInstanceOf[js.Any])).asInstanceOf[KustoConnectionStringBuilder]
+    inline def withAadDeviceAuthentication(connectionString: String): typings.azureKustoData.typesSrcConnectionBuilderMod.KustoConnectionStringBuilder = ^.asInstanceOf[js.Dynamic].applyDynamic("withAadDeviceAuthentication")(connectionString.asInstanceOf[js.Any]).asInstanceOf[typings.azureKustoData.typesSrcConnectionBuilderMod.KustoConnectionStringBuilder]
+    inline def withAadDeviceAuthentication(connectionString: String, authorityId: String): typings.azureKustoData.typesSrcConnectionBuilderMod.KustoConnectionStringBuilder = (^.asInstanceOf[js.Dynamic].applyDynamic("withAadDeviceAuthentication")(connectionString.asInstanceOf[js.Any], authorityId.asInstanceOf[js.Any])).asInstanceOf[typings.azureKustoData.typesSrcConnectionBuilderMod.KustoConnectionStringBuilder]
     inline def withAadDeviceAuthentication(
       connectionString: String,
       authorityId: String,
-      authCallback: js.Function1[/* tokenReponse */ UserCodeInfo, Unit]
-    ): KustoConnectionStringBuilder = (^.asInstanceOf[js.Dynamic].applyDynamic("withAadDeviceAuthentication")(connectionString.asInstanceOf[js.Any], authorityId.asInstanceOf[js.Any], authCallback.asInstanceOf[js.Any])).asInstanceOf[KustoConnectionStringBuilder]
+      deviceCodeCallback: js.Function1[/* response */ DeviceCodeInfo, Unit]
+    ): typings.azureKustoData.typesSrcConnectionBuilderMod.KustoConnectionStringBuilder = (^.asInstanceOf[js.Dynamic].applyDynamic("withAadDeviceAuthentication")(connectionString.asInstanceOf[js.Any], authorityId.asInstanceOf[js.Any], deviceCodeCallback.asInstanceOf[js.Any])).asInstanceOf[typings.azureKustoData.typesSrcConnectionBuilderMod.KustoConnectionStringBuilder]
+    inline def withAadDeviceAuthentication(
+      connectionString: String,
+      authorityId: Unit,
+      deviceCodeCallback: js.Function1[/* response */ DeviceCodeInfo, Unit]
+    ): typings.azureKustoData.typesSrcConnectionBuilderMod.KustoConnectionStringBuilder = (^.asInstanceOf[js.Dynamic].applyDynamic("withAadDeviceAuthentication")(connectionString.asInstanceOf[js.Any], authorityId.asInstanceOf[js.Any], deviceCodeCallback.asInstanceOf[js.Any])).asInstanceOf[typings.azureKustoData.typesSrcConnectionBuilderMod.KustoConnectionStringBuilder]
     
-    inline def withAadManagedIdentities(connectionString: String): KustoConnectionStringBuilder = ^.asInstanceOf[js.Dynamic].applyDynamic("withAadManagedIdentities")(connectionString.asInstanceOf[js.Any]).asInstanceOf[KustoConnectionStringBuilder]
-    inline def withAadManagedIdentities(connectionString: String, msiEndpoint: String): KustoConnectionStringBuilder = (^.asInstanceOf[js.Dynamic].applyDynamic("withAadManagedIdentities")(connectionString.asInstanceOf[js.Any], msiEndpoint.asInstanceOf[js.Any])).asInstanceOf[KustoConnectionStringBuilder]
-    inline def withAadManagedIdentities(connectionString: String, msiEndpoint: String, clientId: String): KustoConnectionStringBuilder = (^.asInstanceOf[js.Dynamic].applyDynamic("withAadManagedIdentities")(connectionString.asInstanceOf[js.Any], msiEndpoint.asInstanceOf[js.Any], clientId.asInstanceOf[js.Any])).asInstanceOf[KustoConnectionStringBuilder]
-    inline def withAadManagedIdentities(connectionString: String, msiEndpoint: Unit, clientId: String): KustoConnectionStringBuilder = (^.asInstanceOf[js.Dynamic].applyDynamic("withAadManagedIdentities")(connectionString.asInstanceOf[js.Any], msiEndpoint.asInstanceOf[js.Any], clientId.asInstanceOf[js.Any])).asInstanceOf[KustoConnectionStringBuilder]
+    @JSImport("azure-kusto-data", "KustoConnectionStringBuilder.withAadManagedIdentities")
+    @js.native
+    def withAadManagedIdentities: Any = js.native
+    inline def withAadManagedIdentities_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("withAadManagedIdentities")(x.asInstanceOf[js.Any])
     
-    inline def withAadUserPasswordAuthentication(connectionString: String, userId: String, password: String): KustoConnectionStringBuilder = (^.asInstanceOf[js.Dynamic].applyDynamic("withAadUserPasswordAuthentication")(connectionString.asInstanceOf[js.Any], userId.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[KustoConnectionStringBuilder]
-    inline def withAadUserPasswordAuthentication(connectionString: String, userId: String, password: String, authorityId: js.Any): KustoConnectionStringBuilder = (^.asInstanceOf[js.Dynamic].applyDynamic("withAadUserPasswordAuthentication")(connectionString.asInstanceOf[js.Any], userId.asInstanceOf[js.Any], password.asInstanceOf[js.Any], authorityId.asInstanceOf[js.Any])).asInstanceOf[KustoConnectionStringBuilder]
+    inline def withAadUserPasswordAuthentication(connectionString: String, userId: String, password: String): typings.azureKustoData.typesSrcConnectionBuilderMod.KustoConnectionStringBuilder = (^.asInstanceOf[js.Dynamic].applyDynamic("withAadUserPasswordAuthentication")(connectionString.asInstanceOf[js.Any], userId.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[typings.azureKustoData.typesSrcConnectionBuilderMod.KustoConnectionStringBuilder]
+    inline def withAadUserPasswordAuthentication(connectionString: String, userId: String, password: String, authorityId: String): typings.azureKustoData.typesSrcConnectionBuilderMod.KustoConnectionStringBuilder = (^.asInstanceOf[js.Dynamic].applyDynamic("withAadUserPasswordAuthentication")(connectionString.asInstanceOf[js.Any], userId.asInstanceOf[js.Any], password.asInstanceOf[js.Any], authorityId.asInstanceOf[js.Any])).asInstanceOf[typings.azureKustoData.typesSrcConnectionBuilderMod.KustoConnectionStringBuilder]
+    
+    inline def withAccessToken(connectionString: String, accessToken: String): typings.azureKustoData.typesSrcConnectionBuilderMod.KustoConnectionStringBuilder = (^.asInstanceOf[js.Dynamic].applyDynamic("withAccessToken")(connectionString.asInstanceOf[js.Any], accessToken.asInstanceOf[js.Any])).asInstanceOf[typings.azureKustoData.typesSrcConnectionBuilderMod.KustoConnectionStringBuilder]
+    
+    inline def withAzLoginIdentity(connectionString: String): typings.azureKustoData.typesSrcConnectionBuilderMod.KustoConnectionStringBuilder = ^.asInstanceOf[js.Dynamic].applyDynamic("withAzLoginIdentity")(connectionString.asInstanceOf[js.Any]).asInstanceOf[typings.azureKustoData.typesSrcConnectionBuilderMod.KustoConnectionStringBuilder]
+    inline def withAzLoginIdentity(connectionString: String, authorityId: String): typings.azureKustoData.typesSrcConnectionBuilderMod.KustoConnectionStringBuilder = (^.asInstanceOf[js.Dynamic].applyDynamic("withAzLoginIdentity")(connectionString.asInstanceOf[js.Any], authorityId.asInstanceOf[js.Any])).asInstanceOf[typings.azureKustoData.typesSrcConnectionBuilderMod.KustoConnectionStringBuilder]
+    inline def withAzLoginIdentity(connectionString: String, authorityId: String, timeoutMs: Double): typings.azureKustoData.typesSrcConnectionBuilderMod.KustoConnectionStringBuilder = (^.asInstanceOf[js.Dynamic].applyDynamic("withAzLoginIdentity")(connectionString.asInstanceOf[js.Any], authorityId.asInstanceOf[js.Any], timeoutMs.asInstanceOf[js.Any])).asInstanceOf[typings.azureKustoData.typesSrcConnectionBuilderMod.KustoConnectionStringBuilder]
+    inline def withAzLoginIdentity(connectionString: String, authorityId: Unit, timeoutMs: Double): typings.azureKustoData.typesSrcConnectionBuilderMod.KustoConnectionStringBuilder = (^.asInstanceOf[js.Dynamic].applyDynamic("withAzLoginIdentity")(connectionString.asInstanceOf[js.Any], authorityId.asInstanceOf[js.Any], timeoutMs.asInstanceOf[js.Any])).asInstanceOf[typings.azureKustoData.typesSrcConnectionBuilderMod.KustoConnectionStringBuilder]
+    
+    inline def withSystemManagedIdentity(connectionString: String): typings.azureKustoData.typesSrcConnectionBuilderMod.KustoConnectionStringBuilder = ^.asInstanceOf[js.Dynamic].applyDynamic("withSystemManagedIdentity")(connectionString.asInstanceOf[js.Any]).asInstanceOf[typings.azureKustoData.typesSrcConnectionBuilderMod.KustoConnectionStringBuilder]
+    inline def withSystemManagedIdentity(connectionString: String, authorityId: String): typings.azureKustoData.typesSrcConnectionBuilderMod.KustoConnectionStringBuilder = (^.asInstanceOf[js.Dynamic].applyDynamic("withSystemManagedIdentity")(connectionString.asInstanceOf[js.Any], authorityId.asInstanceOf[js.Any])).asInstanceOf[typings.azureKustoData.typesSrcConnectionBuilderMod.KustoConnectionStringBuilder]
+    inline def withSystemManagedIdentity(connectionString: String, authorityId: String, timeoutMs: Double): typings.azureKustoData.typesSrcConnectionBuilderMod.KustoConnectionStringBuilder = (^.asInstanceOf[js.Dynamic].applyDynamic("withSystemManagedIdentity")(connectionString.asInstanceOf[js.Any], authorityId.asInstanceOf[js.Any], timeoutMs.asInstanceOf[js.Any])).asInstanceOf[typings.azureKustoData.typesSrcConnectionBuilderMod.KustoConnectionStringBuilder]
+    inline def withSystemManagedIdentity(connectionString: String, authorityId: Unit, timeoutMs: Double): typings.azureKustoData.typesSrcConnectionBuilderMod.KustoConnectionStringBuilder = (^.asInstanceOf[js.Dynamic].applyDynamic("withSystemManagedIdentity")(connectionString.asInstanceOf[js.Any], authorityId.asInstanceOf[js.Any], timeoutMs.asInstanceOf[js.Any])).asInstanceOf[typings.azureKustoData.typesSrcConnectionBuilderMod.KustoConnectionStringBuilder]
+    
+    inline def withTokenCredential(connectionString: String, credential: TokenCredential): typings.azureKustoData.typesSrcConnectionBuilderMod.KustoConnectionStringBuilder = (^.asInstanceOf[js.Dynamic].applyDynamic("withTokenCredential")(connectionString.asInstanceOf[js.Any], credential.asInstanceOf[js.Any])).asInstanceOf[typings.azureKustoData.typesSrcConnectionBuilderMod.KustoConnectionStringBuilder]
+    
+    inline def withTokenProvider(connectionString: String, tokenProvider: js.Function0[js.Promise[String]]): typings.azureKustoData.typesSrcConnectionBuilderMod.KustoConnectionStringBuilder = (^.asInstanceOf[js.Dynamic].applyDynamic("withTokenProvider")(connectionString.asInstanceOf[js.Any], tokenProvider.asInstanceOf[js.Any])).asInstanceOf[typings.azureKustoData.typesSrcConnectionBuilderMod.KustoConnectionStringBuilder]
+    
+    inline def withUserManagedIdentity(connectionString: String, msiClientId: String): typings.azureKustoData.typesSrcConnectionBuilderMod.KustoConnectionStringBuilder = (^.asInstanceOf[js.Dynamic].applyDynamic("withUserManagedIdentity")(connectionString.asInstanceOf[js.Any], msiClientId.asInstanceOf[js.Any])).asInstanceOf[typings.azureKustoData.typesSrcConnectionBuilderMod.KustoConnectionStringBuilder]
+    inline def withUserManagedIdentity(connectionString: String, msiClientId: String, authorityId: String): typings.azureKustoData.typesSrcConnectionBuilderMod.KustoConnectionStringBuilder = (^.asInstanceOf[js.Dynamic].applyDynamic("withUserManagedIdentity")(connectionString.asInstanceOf[js.Any], msiClientId.asInstanceOf[js.Any], authorityId.asInstanceOf[js.Any])).asInstanceOf[typings.azureKustoData.typesSrcConnectionBuilderMod.KustoConnectionStringBuilder]
+    inline def withUserManagedIdentity(connectionString: String, msiClientId: String, authorityId: String, timeoutMs: Double): typings.azureKustoData.typesSrcConnectionBuilderMod.KustoConnectionStringBuilder = (^.asInstanceOf[js.Dynamic].applyDynamic("withUserManagedIdentity")(connectionString.asInstanceOf[js.Any], msiClientId.asInstanceOf[js.Any], authorityId.asInstanceOf[js.Any], timeoutMs.asInstanceOf[js.Any])).asInstanceOf[typings.azureKustoData.typesSrcConnectionBuilderMod.KustoConnectionStringBuilder]
+    inline def withUserManagedIdentity(connectionString: String, msiClientId: String, authorityId: Unit, timeoutMs: Double): typings.azureKustoData.typesSrcConnectionBuilderMod.KustoConnectionStringBuilder = (^.asInstanceOf[js.Dynamic].applyDynamic("withUserManagedIdentity")(connectionString.asInstanceOf[js.Any], msiClientId.asInstanceOf[js.Any], authorityId.asInstanceOf[js.Any], timeoutMs.asInstanceOf[js.Any])).asInstanceOf[typings.azureKustoData.typesSrcConnectionBuilderMod.KustoConnectionStringBuilder]
+    
+    /**
+      * Use InteractiveBrowserCredentialNodeOptions in Node.JS and InteractiveBrowserCredentialInBrowserOptions in browser
+      * For browser cors issue: you need to visit your app registration and update the redirect URI you're using to the type spa (for "single page application").
+      * See: https://github.com/Azure/azure-sdk-for-js/tree/main/sdk/identity/identity/test/manual/interactive-browser-credential
+      */
+    inline def withUserPrompt(connectionString: String): typings.azureKustoData.typesSrcConnectionBuilderMod.KustoConnectionStringBuilder = ^.asInstanceOf[js.Dynamic].applyDynamic("withUserPrompt")(connectionString.asInstanceOf[js.Any]).asInstanceOf[typings.azureKustoData.typesSrcConnectionBuilderMod.KustoConnectionStringBuilder]
+    inline def withUserPrompt(connectionString: String, options: Unit, timeoutMs: Double): typings.azureKustoData.typesSrcConnectionBuilderMod.KustoConnectionStringBuilder = (^.asInstanceOf[js.Dynamic].applyDynamic("withUserPrompt")(connectionString.asInstanceOf[js.Any], options.asInstanceOf[js.Any], timeoutMs.asInstanceOf[js.Any])).asInstanceOf[typings.azureKustoData.typesSrcConnectionBuilderMod.KustoConnectionStringBuilder]
+    inline def withUserPrompt(connectionString: String, options: InteractiveBrowserCredentialInBrowserOptions): typings.azureKustoData.typesSrcConnectionBuilderMod.KustoConnectionStringBuilder = (^.asInstanceOf[js.Dynamic].applyDynamic("withUserPrompt")(connectionString.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.azureKustoData.typesSrcConnectionBuilderMod.KustoConnectionStringBuilder]
+    inline def withUserPrompt(connectionString: String, options: InteractiveBrowserCredentialInBrowserOptions, timeoutMs: Double): typings.azureKustoData.typesSrcConnectionBuilderMod.KustoConnectionStringBuilder = (^.asInstanceOf[js.Dynamic].applyDynamic("withUserPrompt")(connectionString.asInstanceOf[js.Any], options.asInstanceOf[js.Any], timeoutMs.asInstanceOf[js.Any])).asInstanceOf[typings.azureKustoData.typesSrcConnectionBuilderMod.KustoConnectionStringBuilder]
+    inline def withUserPrompt(connectionString: String, options: InteractiveBrowserCredentialNodeOptions): typings.azureKustoData.typesSrcConnectionBuilderMod.KustoConnectionStringBuilder = (^.asInstanceOf[js.Dynamic].applyDynamic("withUserPrompt")(connectionString.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.azureKustoData.typesSrcConnectionBuilderMod.KustoConnectionStringBuilder]
+    inline def withUserPrompt(connectionString: String, options: InteractiveBrowserCredentialNodeOptions, timeoutMs: Double): typings.azureKustoData.typesSrcConnectionBuilderMod.KustoConnectionStringBuilder = (^.asInstanceOf[js.Dynamic].applyDynamic("withUserPrompt")(connectionString.asInstanceOf[js.Any], options.asInstanceOf[js.Any], timeoutMs.asInstanceOf[js.Any])).asInstanceOf[typings.azureKustoData.typesSrcConnectionBuilderMod.KustoConnectionStringBuilder]
   }
+  
+  object KustoDataErrors {
+    
+    @JSImport("azure-kusto-data", "KustoDataErrors.KustoAuthenticationError")
+    @js.native
+    open class KustoAuthenticationError protected ()
+      extends typings.azureKustoData.typesSrcErrorsMod.KustoAuthenticationError {
+      def this(message: String, inner: js.Error, tokenProviderName: String, context: Record[String, Any]) = this()
+      def this(message: String, inner: Unit, tokenProviderName: String, context: Record[String, Any]) = this()
+    }
+    
+    @JSImport("azure-kusto-data", "KustoDataErrors.ThrottlingError")
+    @js.native
+    open class ThrottlingError protected ()
+      extends typings.azureKustoData.typesSrcErrorsMod.ThrottlingError {
+      def this(message: String) = this()
+      def this(message: String, inner: js.Error) = this()
+    }
+  }
+  
+  @JSImport("azure-kusto-data", "MatchRule")
+  @js.native
+  open class MatchRule protected ()
+    extends typings.azureKustoData.typesSrcKustoTrustedEndpointsMod.MatchRule {
+    def this(
+      /**
+      * The suffix which the candidate must end with in order to match.
+      */
+    suffix: String,
+      /**
+      * Indicates whether the match must be exact (the candidate must
+      * not have any prefix) or not.
+      */
+    exact: Boolean
+    ) = this()
+  }
+  
+  object TimeUtils {
+    
+    @JSImport("azure-kusto-data", "TimeUtils")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("azure-kusto-data", "TimeUtils.toMilliseconds")
+    @js.native
+    def toMilliseconds: js.Function3[/* hours */ Double, /* minutes */ Double, /* seconds */ Double, Double] = js.native
+    inline def toMilliseconds(hours: Double, minutes: Double, seconds: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("toMilliseconds")(hours.asInstanceOf[js.Any], minutes.asInstanceOf[js.Any], seconds.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def toMilliseconds_=(x: js.Function3[/* hours */ Double, /* minutes */ Double, /* seconds */ Double, Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("toMilliseconds")(x.asInstanceOf[js.Any])
+  }
+  
+  @JSImport("azure-kusto-data", "kustoTrustedEndpoints")
+  @js.native
+  val kustoTrustedEndpoints: KustoTrustedEndpointsImpl = js.native
 }

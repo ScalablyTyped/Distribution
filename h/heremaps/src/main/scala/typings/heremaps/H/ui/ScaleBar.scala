@@ -11,7 +11,7 @@ trait ScaleBar extends StObject
 object ScaleBar {
   
   /**
-    * @property alignment {H.ui.LayoutAlignment=} - the layout alignment which should be applied to this control, default is H.ui.LayoutAlignment.BOTTOM_RIGHT
+    * alignment {H.ui.LayoutAlignment=} - the layout alignment which should be applied to this control, default is H.ui.LayoutAlignment.BOTTOM_RIGHT
     */
   trait Options extends StObject {
     

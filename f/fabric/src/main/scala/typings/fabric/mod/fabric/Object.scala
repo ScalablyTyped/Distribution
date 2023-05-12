@@ -32,7 +32,6 @@ object Object {
     * @param {fabric.Object} Original object
     * @param {Function} Callback when complete
     * @param {Object} Extra parameters for fabric.Object
-    * @private
     * @return {fabric.Object}
     */
   inline def _fromObject(className: String, `object`: typings.fabric.fabricImplMod.Object): typings.fabric.fabricImplMod.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("_fromObject")(className.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[typings.fabric.fabricImplMod.Object]

@@ -9,7 +9,7 @@ trait AnalysisSummary extends StObject {
   /**
     * The ID of the analysis. This ID displays in the URL.
     */
-  var AnalysisId: js.UndefOr[RestrictiveResourceId] = js.undefined
+  var AnalysisId: js.UndefOr[ShortRestrictiveResourceId] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) for the analysis.
@@ -46,7 +46,7 @@ object AnalysisSummary {
   @scala.inline
   implicit open class MutableBuilder[Self <: AnalysisSummary] (val x: Self) extends AnyVal {
     
-    inline def setAnalysisId(value: RestrictiveResourceId): Self = StObject.set(x, "AnalysisId", value.asInstanceOf[js.Any])
+    inline def setAnalysisId(value: ShortRestrictiveResourceId): Self = StObject.set(x, "AnalysisId", value.asInstanceOf[js.Any])
     
     inline def setAnalysisIdUndefined: Self = StObject.set(x, "AnalysisId", js.undefined)
     

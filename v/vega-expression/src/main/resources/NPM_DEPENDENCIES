@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "vega-expression" : "5.0.0"
+      "vega-expression" : "5.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "vega-expression" : "5.0.0"
+      "vega-expression" : "5.1.0"
     }
   ],
   "compile-devDependencies" : [

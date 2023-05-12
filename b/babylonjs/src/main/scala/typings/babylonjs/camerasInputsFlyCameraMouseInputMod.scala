@@ -12,7 +12,7 @@ object camerasInputsFlyCameraMouseInputMod {
   @js.native
   /**
     * Listen to mouse events to control the camera.
-    * @see https://doc.babylonjs.com/how_to/customizing_camera_inputs
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/cameras/customizingCameraInputs
     */
   open class FlyCameraMouseInput ()
     extends StObject

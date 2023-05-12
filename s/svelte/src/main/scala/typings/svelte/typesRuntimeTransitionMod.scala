@@ -4,6 +4,8 @@ import typings.std.Element
 import typings.svelte.anon.CrossfadeParamsfallbackno
 import typings.svelte.anon.CrossfadeParamskeyany
 import typings.svelte.anon.SVGElementgetTotalLengthn
+import typings.svelte.svelteStrings.x
+import typings.svelte.svelteStrings.y
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -58,7 +60,7 @@ object typesRuntimeTransitionMod {
   
   trait BlurParams extends StObject {
     
-    var amount: js.UndefOr[Double] = js.undefined
+    var amount: js.UndefOr[Double | String] = js.undefined
     
     var delay: js.UndefOr[Double] = js.undefined
     
@@ -78,7 +80,7 @@ object typesRuntimeTransitionMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: BlurParams] (val x: Self) extends AnyVal {
       
-      inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+      inline def setAmount(value: Double | String): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
       
       inline def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
       
@@ -218,9 +220,9 @@ object typesRuntimeTransitionMod {
     
     var opacity: js.UndefOr[Double] = js.undefined
     
-    var x: js.UndefOr[Double] = js.undefined
+    var x: js.UndefOr[Double | String] = js.undefined
     
-    var y: js.UndefOr[Double] = js.undefined
+    var y: js.UndefOr[Double | String] = js.undefined
   }
   object FlyParams {
     
@@ -248,11 +250,11 @@ object typesRuntimeTransitionMod {
       
       inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
       
-      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double | String): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
       inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
       
-      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double | String): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
       
       inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
     }
@@ -304,6 +306,8 @@ object typesRuntimeTransitionMod {
   
   trait SlideParams extends StObject {
     
+    var axis: js.UndefOr[x | y] = js.undefined
+    
     var delay: js.UndefOr[Double] = js.undefined
     
     var duration: js.UndefOr[Double] = js.undefined
@@ -319,6 +323,10 @@ object typesRuntimeTransitionMod {
     
     @scala.inline
     implicit open class MutableBuilder[Self <: SlideParams] (val x: Self) extends AnyVal {
+      
+      inline def setAxis(value: typings.svelte.svelteStrings.x | y): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
+      
+      inline def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
       
       inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       

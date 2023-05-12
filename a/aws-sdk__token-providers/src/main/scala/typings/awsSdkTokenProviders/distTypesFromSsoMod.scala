@@ -1,7 +1,7 @@
 package typings.awsSdkTokenProviders
 
 import typings.awsSdkSharedIniFileLoader.distTypesParseKnownFilesMod.SourceProfileInit
-import typings.awsSdkTypes.distTypesTokenMod.TokenProvider
+import typings.awsSdkTypes.distTypesIdentityTokenIdentityMod.TokenIdentityProvider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,8 +12,8 @@ object distTypesFromSsoMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def fromSso(): TokenProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSso")().asInstanceOf[TokenProvider]
-  inline def fromSso(init: FromSsoInit): TokenProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSso")(init.asInstanceOf[js.Any]).asInstanceOf[TokenProvider]
+  inline def fromSso(): TokenIdentityProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSso")().asInstanceOf[TokenIdentityProvider]
+  inline def fromSso(init: FromSsoInit): TokenIdentityProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSso")(init.asInstanceOf[js.Any]).asInstanceOf[TokenIdentityProvider]
   
   type FromSsoInit = SourceProfileInit
 }

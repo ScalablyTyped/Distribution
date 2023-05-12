@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ImageState extends StObject {
   
   /**
-    * The reason for the image's status.
+    * The reason for the status of the image.
     */
   var reason: js.UndefOr[NonEmptyString] = js.undefined
   

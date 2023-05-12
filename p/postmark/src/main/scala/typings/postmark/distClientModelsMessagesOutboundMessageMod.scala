@@ -29,6 +29,8 @@ object distClientModelsMessagesOutboundMessageMod {
     
     var Recipients: js.Array[String]
     
+    var Sandboxed: Boolean
+    
     var Status: String
     
     var Subject: String
@@ -53,13 +55,14 @@ object distClientModelsMessagesOutboundMessageMod {
       Metadata: Hash[String],
       ReceivedAt: String,
       Recipients: js.Array[String],
+      Sandboxed: Boolean,
       Status: String,
       Subject: String,
       To: js.Array[Recipient],
       TrackLinks: LinkTrackingOptions,
       TrackOpens: Boolean
     ): OutboundMessage = {
-      val __obj = js.Dynamic.literal(Attachments = Attachments.asInstanceOf[js.Any], Bcc = Bcc.asInstanceOf[js.Any], Cc = Cc.asInstanceOf[js.Any], From = From.asInstanceOf[js.Any], MessageID = MessageID.asInstanceOf[js.Any], MessageStream = MessageStream.asInstanceOf[js.Any], Metadata = Metadata.asInstanceOf[js.Any], ReceivedAt = ReceivedAt.asInstanceOf[js.Any], Recipients = Recipients.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any], Subject = Subject.asInstanceOf[js.Any], To = To.asInstanceOf[js.Any], TrackLinks = TrackLinks.asInstanceOf[js.Any], TrackOpens = TrackOpens.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(Attachments = Attachments.asInstanceOf[js.Any], Bcc = Bcc.asInstanceOf[js.Any], Cc = Cc.asInstanceOf[js.Any], From = From.asInstanceOf[js.Any], MessageID = MessageID.asInstanceOf[js.Any], MessageStream = MessageStream.asInstanceOf[js.Any], Metadata = Metadata.asInstanceOf[js.Any], ReceivedAt = ReceivedAt.asInstanceOf[js.Any], Recipients = Recipients.asInstanceOf[js.Any], Sandboxed = Sandboxed.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any], Subject = Subject.asInstanceOf[js.Any], To = To.asInstanceOf[js.Any], TrackLinks = TrackLinks.asInstanceOf[js.Any], TrackOpens = TrackOpens.asInstanceOf[js.Any])
       __obj.asInstanceOf[OutboundMessage]
     }
     
@@ -91,6 +94,8 @@ object distClientModelsMessagesOutboundMessageMod {
       inline def setRecipients(value: js.Array[String]): Self = StObject.set(x, "Recipients", value.asInstanceOf[js.Any])
       
       inline def setRecipientsVarargs(value: String*): Self = StObject.set(x, "Recipients", js.Array(value*))
+      
+      inline def setSandboxed(value: Boolean): Self = StObject.set(x, "Sandboxed", value.asInstanceOf[js.Any])
       
       inline def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
       
@@ -136,13 +141,14 @@ object distClientModelsMessagesOutboundMessageMod {
       Metadata: Hash[String],
       ReceivedAt: String,
       Recipients: js.Array[String],
+      Sandboxed: Boolean,
       Status: String,
       Subject: String,
       To: js.Array[Recipient],
       TrackLinks: LinkTrackingOptions,
       TrackOpens: Boolean
     ): OutboundMessageDetails = {
-      val __obj = js.Dynamic.literal(Attachments = Attachments.asInstanceOf[js.Any], Bcc = Bcc.asInstanceOf[js.Any], Body = Body.asInstanceOf[js.Any], Cc = Cc.asInstanceOf[js.Any], From = From.asInstanceOf[js.Any], MessageEvents = MessageEvents.asInstanceOf[js.Any], MessageID = MessageID.asInstanceOf[js.Any], MessageStream = MessageStream.asInstanceOf[js.Any], Metadata = Metadata.asInstanceOf[js.Any], ReceivedAt = ReceivedAt.asInstanceOf[js.Any], Recipients = Recipients.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any], Subject = Subject.asInstanceOf[js.Any], To = To.asInstanceOf[js.Any], TrackLinks = TrackLinks.asInstanceOf[js.Any], TrackOpens = TrackOpens.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(Attachments = Attachments.asInstanceOf[js.Any], Bcc = Bcc.asInstanceOf[js.Any], Body = Body.asInstanceOf[js.Any], Cc = Cc.asInstanceOf[js.Any], From = From.asInstanceOf[js.Any], MessageEvents = MessageEvents.asInstanceOf[js.Any], MessageID = MessageID.asInstanceOf[js.Any], MessageStream = MessageStream.asInstanceOf[js.Any], Metadata = Metadata.asInstanceOf[js.Any], ReceivedAt = ReceivedAt.asInstanceOf[js.Any], Recipients = Recipients.asInstanceOf[js.Any], Sandboxed = Sandboxed.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any], Subject = Subject.asInstanceOf[js.Any], To = To.asInstanceOf[js.Any], TrackLinks = TrackLinks.asInstanceOf[js.Any], TrackOpens = TrackOpens.asInstanceOf[js.Any])
       __obj.asInstanceOf[OutboundMessageDetails]
     }
     

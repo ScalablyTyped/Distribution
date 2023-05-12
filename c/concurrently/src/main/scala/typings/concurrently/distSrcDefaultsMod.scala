@@ -23,6 +23,10 @@ object distSrcDefaultsMod {
   @js.native
   val hide: /* "" */ String = js.native
   
+  @JSImport("concurrently/dist/src/defaults", "killSignal")
+  @js.native
+  val killSignal: js.UndefOr[String] = js.native
+  
   @JSImport("concurrently/dist/src/defaults", "maxProcesses")
   @js.native
   val maxProcesses: /* 0 */ Double = js.native

@@ -12,7 +12,7 @@ open class Overlay protected ()
   def this(props: OverlayProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: OverlayProps, context: Any) = this()
 }

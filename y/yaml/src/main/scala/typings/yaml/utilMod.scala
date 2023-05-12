@@ -9,6 +9,7 @@ import typings.yaml.distSchemaTypesMod.ScalarTag
 import typings.yaml.distStringifyFoldFlowLinesMod.FoldMode
 import typings.yaml.distStringifyFoldFlowLinesMod.FoldOptions
 import typings.yaml.distStringifyStringifyMod.StringifyContext
+import typings.yaml.distStringifyStringifyStringMod.StringifyScalar
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -51,6 +52,15 @@ object utilMod {
     onChompKeep: js.Function0[Unit]
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringifyString")(item.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], onComment.asInstanceOf[js.Any], onChompKeep.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def stringifyString(item: Scalar[Any], ctx: StringifyContext, onComment: Unit, onChompKeep: js.Function0[Unit]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringifyString")(item.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], onComment.asInstanceOf[js.Any], onChompKeep.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringifyString(item: StringifyScalar, ctx: StringifyContext): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringifyString")(item.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringifyString(item: StringifyScalar, ctx: StringifyContext, onComment: js.Function0[Unit]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringifyString")(item.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], onComment.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringifyString(
+    item: StringifyScalar,
+    ctx: StringifyContext,
+    onComment: js.Function0[Unit],
+    onChompKeep: js.Function0[Unit]
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringifyString")(item.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], onComment.asInstanceOf[js.Any], onChompKeep.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringifyString(item: StringifyScalar, ctx: StringifyContext, onComment: Unit, onChompKeep: js.Function0[Unit]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringifyString")(item.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], onComment.asInstanceOf[js.Any], onChompKeep.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def toJS(value: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toJS")(value.asInstanceOf[js.Any]).asInstanceOf[Any]
   inline def toJS(value: Any, arg: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("toJS")(value.asInstanceOf[js.Any], arg.asInstanceOf[js.Any])).asInstanceOf[Any]

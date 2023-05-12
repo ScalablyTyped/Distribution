@@ -11,16 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("pc.ForwardRenderer")
 @js.native
-open class ForwardRenderer protected ()
-  extends typings.playcanvas.mod.ForwardRenderer {
-  /**
-    * Create a new ForwardRenderer instance.
-    *
-    * @param {GraphicsDevice} graphicsDevice - The graphics device used by the renderer.
-    * @hideconstructor
-    */
-  def this(graphicsDevice: typings.playcanvas.mod.GraphicsDevice) = this()
-}
+open class ForwardRenderer ()
+  extends typings.playcanvas.mod.ForwardRenderer
 object ForwardRenderer {
   
   @JSGlobal("pc.ForwardRenderer")

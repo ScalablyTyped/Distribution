@@ -25,7 +25,7 @@ object mod {
     def this(props: ManagerProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: ManagerProps, context: Any) = this()
   }
@@ -40,7 +40,7 @@ object mod {
     def this(props: ReferenceProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: ReferenceProps, context: Any) = this()
   }

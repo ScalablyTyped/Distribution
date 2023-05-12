@@ -136,6 +136,8 @@ object sapUiUx3DataSetSimpleViewMod {
     def destroyTemplate(): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * View finalization: Called when leaving the view
       */
     def exitView(aItems: js.Array[typings.openui5.sapUiUx3DataSetItemMod.default]): Unit = js.native
@@ -277,6 +279,8 @@ object sapUiUx3DataSetSimpleViewMod {
     def getTemplate(): typings.openui5.sapUiCoreControlMod.default = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Eventhandler for the selection of an Item
       */
     def handleSelection(/**
@@ -285,6 +289,8 @@ object sapUiUx3DataSetSimpleViewMod {
     oEvent: typings.openui5.sapUiBaseEventMod.default): Unit = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * View Initialization: Called when selecting the view
       */
     def initView(/**
@@ -293,6 +299,8 @@ object sapUiUx3DataSetSimpleViewMod {
     aItems: js.Array[Any]): Unit = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Check if Item `oItem` is selected
       */
     def isItemSelected(/**
@@ -491,6 +499,8 @@ object sapUiUx3DataSetSimpleViewMod {
     oTemplate: typings.openui5.sapUiCoreControlMod.default): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * View update: Called when pagination adds items
       */
     def updateView(

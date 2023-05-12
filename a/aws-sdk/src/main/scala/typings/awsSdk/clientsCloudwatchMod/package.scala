@@ -1,6 +1,7 @@
 package typings.awsSdk.clientsCloudwatchMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.awsSdk.awsSdkStrings.PARTIAL_DATA
 import typings.awsSdk.awsSdkStrings.PT3H
 import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
@@ -130,6 +131,8 @@ type EvaluateLowSampleCountPercentile = String
 
 type EvaluationPeriods = Double
 
+type EvaluationState = PARTIAL_DATA | String
+
 type ExceptionType = String
 
 type ExtendedStatistic = String
@@ -157,6 +160,10 @@ type HistoryData = String
 type HistoryItemType = _HistoryItemType | String
 
 type HistorySummary = String
+
+type IncludeLinkedAccounts = Boolean
+
+type IncludeLinkedAccountsMetrics = Boolean
 
 type InsightRuleAggregationStatistic = String
 
@@ -240,6 +247,8 @@ type MetricName = String
 
 type MetricStreamEntries = js.Array[MetricStreamEntry]
 
+type MetricStreamFilterMetricNames = js.Array[MetricName]
+
 type MetricStreamFilters = js.Array[MetricStreamFilter]
 
 type MetricStreamName = String
@@ -274,6 +283,8 @@ type Namespace = String
 type NextToken = String
 
 type OutputFormat = String
+
+type OwningAccounts = js.Array[AccountId]
 
 type Period = Double
 
@@ -356,6 +367,7 @@ type Statistics = js.Array[Statistic]
   - typings.awsSdk.awsSdkStrings.Complete_
   - typings.awsSdk.awsSdkStrings.InternalError
   - typings.awsSdk.awsSdkStrings.PartialData
+  - typings.awsSdk.awsSdkStrings.Forbidden
   - java.lang.String
 */
 type StatusCode = _StatusCode | String

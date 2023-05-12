@@ -1,9 +1,9 @@
 package typings.reactSpringShared
 
-import typings.reactSpringShared.distDeclarationsSrcFluidsMod.FluidEvent
-import typings.reactSpringShared.distDeclarationsSrcFluidsMod.FluidValue
-import typings.reactSpringTypes.interpolationMod.InterpolatorArgs
-import typings.reactSpringTypes.utilMod.OneOrMore
+import typings.reactSpringShared.mod.FluidEvent
+import typings.reactSpringShared.mod.FluidValue
+import typings.reactSpringTypes.mod.InterpolatorArgs
+import typings.reactSpringTypes.mod.OneOrMore
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -797,5 +797,70 @@ object anon {
   trait FnCall extends StObject {
     
     def apply[Input, Output](source: OneOrMore[FluidValue[Any, Any]], args: InterpolatorArgs[Input, Output]): FluidValue[Output, Any] = js.native
+  }
+  
+  /* Inlined std.Pick<std.DOMRectReadOnly, 'width' | 'height'> & std.Partial<std.Omit<std.DOMRectReadOnly, 'width' | 'height'>> */
+  trait PickDOMRectReadOnlywidthh extends StObject {
+    
+    var bottom: js.UndefOr[Double] = js.undefined
+    
+    var height: Double
+    
+    var left: js.UndefOr[Double] = js.undefined
+    
+    var right: js.UndefOr[Double] = js.undefined
+    
+    var toJSON: js.UndefOr[js.Function0[Any]] = js.undefined
+    
+    var top: js.UndefOr[Double] = js.undefined
+    
+    var width: Double
+    
+    var x: js.UndefOr[Double] = js.undefined
+    
+    var y: js.UndefOr[Double] = js.undefined
+  }
+  object PickDOMRectReadOnlywidthh {
+    
+    inline def apply(height: Double, width: Double): PickDOMRectReadOnlywidthh = {
+      val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+      __obj.asInstanceOf[PickDOMRectReadOnlywidthh]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickDOMRectReadOnlywidthh] (val x: Self) extends AnyVal {
+      
+      inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+      
+      inline def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
+      
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      
+      inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      
+      inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+      
+      inline def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+      
+      inline def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
+      
+      inline def setToJSON(value: () => Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+      
+      inline def setToJSONUndefined: Self = StObject.set(x, "toJSON", js.undefined)
+      
+      inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      
+      inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
+      
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      
+      inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+      
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      
+      inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+    }
   }
 }

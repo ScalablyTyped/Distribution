@@ -23,6 +23,7 @@ import typings.redisClient.anon.TypeofCLIENTGETREDIR
 import typings.redisClient.anon.TypeofCLIENTID
 import typings.redisClient.anon.TypeofCLIENTINFO
 import typings.redisClient.anon.TypeofCLIENTKILL
+import typings.redisClient.anon.TypeofCLIENTLIST
 import typings.redisClient.anon.TypeofCLIENTNOEVICT
 import typings.redisClient.anon.TypeofCLIENTPAUSE
 import typings.redisClient.anon.TypeofCLIENTSETNAME
@@ -83,6 +84,7 @@ import typings.redisClient.anon.TypeofINFO
 import typings.redisClient.anon.TypeofKEYS
 import typings.redisClient.anon.TypeofLASTSAVE
 import typings.redisClient.anon.TypeofLATENCYDOCTOR
+import typings.redisClient.anon.TypeofLATENCYGRAPH
 import typings.redisClient.anon.TypeofLOLWUT
 import typings.redisClient.anon.TypeofMEMORYDOCTOR
 import typings.redisClient.anon.TypeofMEMORYMALLOCSTATS
@@ -97,6 +99,7 @@ import typings.redisClient.anon.TypeofPING
 import typings.redisClient.anon.TypeofPUBSUBCHANNELS
 import typings.redisClient.anon.TypeofPUBSUBNUMPAT
 import typings.redisClient.anon.TypeofPUBSUBNUMSUB
+import typings.redisClient.anon.TypeofPUBSUBSHARDCHANNEL
 import typings.redisClient.anon.TypeofRANDOMKEY
 import typings.redisClient.anon.TypeofREADONLY
 import typings.redisClient.anon.TypeofREADWRITE
@@ -246,6 +249,7 @@ import typings.redisClient.anon.TypeofimportedSORT
 import typings.redisClient.anon.TypeofimportedSORTRO
 import typings.redisClient.anon.TypeofimportedSORTSTORE
 import typings.redisClient.anon.TypeofimportedSPOP
+import typings.redisClient.anon.TypeofimportedSPUBLISH
 import typings.redisClient.anon.TypeofimportedSRANDMEMBE
 import typings.redisClient.anon.TypeofimportedSRANDMEMBEFIRSTKEYINDEX
 import typings.redisClient.anon.TypeofimportedSREM
@@ -534,6 +538,11 @@ object distLibClientCommandsMod {
     @js.native
     def CLIENT_KILL: TypeofCLIENTKILL = js.native
     inline def CLIENT_KILL_=(x: TypeofCLIENTKILL): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLIENT_KILL")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@redis/client/dist/lib/client/commands", "default.CLIENT_LIST")
+    @js.native
+    def CLIENT_LIST: TypeofCLIENTLIST = js.native
+    inline def CLIENT_LIST_=(x: TypeofCLIENTLIST): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLIENT_LIST")(x.asInstanceOf[js.Any])
     
     @JSImport("@redis/client/dist/lib/client/commands", "default.CLIENT_NO-EVICT")
     @js.native
@@ -1187,6 +1196,11 @@ object distLibClientCommandsMod {
     def LATENCY_DOCTOR: TypeofLATENCYDOCTOR = js.native
     inline def LATENCY_DOCTOR_=(x: TypeofLATENCYDOCTOR): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LATENCY_DOCTOR")(x.asInstanceOf[js.Any])
     
+    @JSImport("@redis/client/dist/lib/client/commands", "default.LATENCY_GRAPH")
+    @js.native
+    def LATENCY_GRAPH: TypeofLATENCYGRAPH = js.native
+    inline def LATENCY_GRAPH_=(x: TypeofLATENCYGRAPH): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LATENCY_GRAPH")(x.asInstanceOf[js.Any])
+    
     @JSImport("@redis/client/dist/lib/client/commands", "default.LCS")
     @js.native
     def LCS_ : TypeofimportedLCS = js.native
@@ -1474,6 +1488,11 @@ object distLibClientCommandsMod {
     def PUBSUB_NUMSUB: TypeofPUBSUBNUMSUB = js.native
     inline def PUBSUB_NUMSUB_=(x: TypeofPUBSUBNUMSUB): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PUBSUB_NUMSUB")(x.asInstanceOf[js.Any])
     
+    @JSImport("@redis/client/dist/lib/client/commands", "default.PUBSUB_SHARDCHANNELS")
+    @js.native
+    def PUBSUB_SHARDCHANNELS: TypeofPUBSUBSHARDCHANNEL = js.native
+    inline def PUBSUB_SHARDCHANNELS_=(x: TypeofPUBSUBSHARDCHANNEL): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PUBSUB_SHARDCHANNELS")(x.asInstanceOf[js.Any])
+    
     @JSImport("@redis/client/dist/lib/client/commands", "default.RANDOMKEY")
     @js.native
     def RANDOMKEY_ : TypeofRANDOMKEY = js.native
@@ -1709,6 +1728,12 @@ object distLibClientCommandsMod {
     def SPOP_ : TypeofimportedSPOP = js.native
     
     inline def SPOP__=(x: TypeofimportedSPOP): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SPOP")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@redis/client/dist/lib/client/commands", "default.SPUBLISH")
+    @js.native
+    def SPUBLISH_ : TypeofimportedSPUBLISH = js.native
+    
+    inline def SPUBLISH__=(x: TypeofimportedSPUBLISH): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SPUBLISH")(x.asInstanceOf[js.Any])
     
     @JSImport("@redis/client/dist/lib/client/commands", "default.SRANDMEMBER")
     @js.native
@@ -2344,6 +2369,11 @@ object distLibClientCommandsMod {
     @js.native
     def clientKill: TypeofCLIENTKILL = js.native
     inline def clientKill_=(x: TypeofCLIENTKILL): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("clientKill")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@redis/client/dist/lib/client/commands", "default.clientList")
+    @js.native
+    def clientList: TypeofCLIENTLIST = js.native
+    inline def clientList_=(x: TypeofCLIENTLIST): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("clientList")(x.asInstanceOf[js.Any])
     
     @JSImport("@redis/client/dist/lib/client/commands", "default.clientNoEvict")
     @js.native
@@ -3032,6 +3062,11 @@ object distLibClientCommandsMod {
     def latencyDoctor: TypeofLATENCYDOCTOR = js.native
     inline def latencyDoctor_=(x: TypeofLATENCYDOCTOR): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("latencyDoctor")(x.asInstanceOf[js.Any])
     
+    @JSImport("@redis/client/dist/lib/client/commands", "default.latencyGraph")
+    @js.native
+    def latencyGraph: TypeofLATENCYGRAPH = js.native
+    inline def latencyGraph_=(x: TypeofLATENCYGRAPH): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("latencyGraph")(x.asInstanceOf[js.Any])
+    
     @JSImport("@redis/client/dist/lib/client/commands", "default.lcs")
     @js.native
     def lcs: TypeofimportedLCS = js.native
@@ -3216,6 +3251,11 @@ object distLibClientCommandsMod {
     def pubSubNumSub: TypeofPUBSUBNUMSUB = js.native
     inline def pubSubNumSub_=(x: TypeofPUBSUBNUMSUB): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pubSubNumSub")(x.asInstanceOf[js.Any])
     
+    @JSImport("@redis/client/dist/lib/client/commands", "default.pubSubShardChannels")
+    @js.native
+    def pubSubShardChannels: TypeofPUBSUBSHARDCHANNEL = js.native
+    inline def pubSubShardChannels_=(x: TypeofPUBSUBSHARDCHANNEL): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pubSubShardChannels")(x.asInstanceOf[js.Any])
+    
     @JSImport("@redis/client/dist/lib/client/commands", "default.publish")
     @js.native
     def publish: TypeofimportedPUBLISH = js.native
@@ -3345,6 +3385,11 @@ object distLibClientCommandsMod {
     @js.native
     def sPop: TypeofimportedSPOP = js.native
     inline def sPop_=(x: TypeofimportedSPOP): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sPop")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@redis/client/dist/lib/client/commands", "default.sPublish")
+    @js.native
+    def sPublish: TypeofimportedSPUBLISH = js.native
+    inline def sPublish_=(x: TypeofimportedSPUBLISH): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sPublish")(x.asInstanceOf[js.Any])
     
     @JSImport("@redis/client/dist/lib/client/commands", "default.sRandMember")
     @js.native

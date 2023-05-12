@@ -16,7 +16,7 @@ object libFieldArrayMod {
     def this(props: BaseFieldArrayProps[P, FieldValue]) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: BaseFieldArrayProps[P, FieldValue], context: Any) = this()
   }

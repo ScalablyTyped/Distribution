@@ -19,23 +19,13 @@ object distSrcMulticodecsMod {
     def this(options: Codecs) = this()
     
     /** @type {Record<number, BlockCodec>}} */
-    var _codecsByCode: Record[
-        Double, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_interface.BlockCodec<any, any> */ Any
-      ] = js.native
+    var _codecsByCode: Record[Double, typings.multiformats.distTypesSrcCodecsInterfaceMod.BlockCodec[Any, Any]] = js.native
     
     /** @type {Record<string, BlockCodec>}} */
-    var _codecsByName: Record[
-        String, 
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_interface.BlockCodec<any, any> */ Any
-      ] = js.native
+    var _codecsByName: Record[String, typings.multiformats.distTypesSrcCodecsInterfaceMod.BlockCodec[Any, Any]] = js.native
     
-    def _loadCodec(codeOrName: String): js.Promise[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BlockCodec<any, any> */ Any
-      ] = js.native
-    def _loadCodec(codeOrName: Double): js.Promise[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BlockCodec<any, any> */ Any
-      ] = js.native
+    def _loadCodec(codeOrName: String): js.Promise[typings.multiformats.distTypesSrcCodecsInterfaceMod.BlockCodec[Any, Any]] = js.native
+    def _loadCodec(codeOrName: Double): js.Promise[typings.multiformats.distTypesSrcCodecsInterfaceMod.BlockCodec[Any, Any]] = js.native
     @JSName("_loadCodec")
     var _loadCodec_Original: typings.ipfsCoreUtils.distSrcTypesMod.LoadCodecFn = js.native
     
@@ -44,37 +34,27 @@ object distSrcMulticodecsMod {
       *
       * @param {BlockCodec} codec
       */
-    def addCodec(
-      codec: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_interface.BlockCodec<any, any> */ Any
-    ): Unit = js.native
+    def addCodec(codec: typings.multiformats.distTypesSrcCodecsInterfaceMod.BlockCodec[Any, Any]): Unit = js.native
     
-    def getCodec(code: String): js.Promise[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_interface.BlockCodec<any, any> */ Any
-      ] = js.native
+    def getCodec(code: String): js.Promise[typings.multiformats.distTypesSrcCodecsInterfaceMod.BlockCodec[Any, Any]] = js.native
     /**
       * @param {number | string} code
       */
-    def getCodec(code: Double): js.Promise[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_interface.BlockCodec<any, any> */ Any
-      ] = js.native
+    def getCodec(code: Double): js.Promise[typings.multiformats.distTypesSrcCodecsInterfaceMod.BlockCodec[Any, Any]] = js.native
     
-    def listCodecs(): js.Array[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_interface.BlockCodec<any, any> */ Any
-      ] = js.native
+    def listCodecs(): js.Array[typings.multiformats.distTypesSrcCodecsInterfaceMod.BlockCodec[Any, Any]] = js.native
     
     /**
       * Remove support for a block codec
       *
       * @param {BlockCodec} codec
       */
-    def removeCodec(
-      codec: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_interface.BlockCodec<any, any> */ Any
-    ): Unit = js.native
+    def removeCodec(codec: typings.multiformats.distTypesSrcCodecsInterfaceMod.BlockCodec[Any, Any]): Unit = js.native
   }
   
   type AbortOptions = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_utils.AbortOptions */ Any
   
-  type BlockCodec = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_interface.BlockCodec<any, any> */ Any
+  type BlockCodec = typings.multiformats.distTypesSrcCodecsInterfaceMod.BlockCodec[Any, Any]
   
   type LoadCodecFn = typings.ipfsCoreUtils.distSrcTypesMod.LoadCodecFn
 }

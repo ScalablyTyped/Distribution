@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.MaskBorderWidth
+import typings.csstype.mod.Property.BorderInlineStyle
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,13 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `476` extends StObject {
   
   var value: js.UndefOr[
-    (MaskBorderWidth[Double | String]) | (js.Array[
+    BorderInlineStyle | (js.Array[
       (Extract[
-        js.UndefOr[
-          (MaskBorderWidth[Double | String]) | (js.Array[NonNullable[js.UndefOr[MaskBorderWidth[Double | String]]]])
-        ], 
+        js.UndefOr[BorderInlineStyle | js.Array[NonNullable[js.UndefOr[BorderInlineStyle]]]], 
         String
-      ]) | (NonNullable[js.UndefOr[MaskBorderWidth[Double | String]]])
+      ]) | NonNullable[js.UndefOr[BorderInlineStyle]]
     ])
   ] = js.native
 }

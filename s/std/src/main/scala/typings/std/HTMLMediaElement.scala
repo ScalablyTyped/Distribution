@@ -1,5 +1,10 @@
 package typings.std
 
+import typings.std.stdInts.`0`
+import typings.std.stdInts.`1`
+import typings.std.stdInts.`2`
+import typings.std.stdInts.`3`
+import typings.std.stdInts.`4`
 import typings.std.stdStrings._empty
 import typings.std.stdStrings.auto
 import typings.std.stdStrings.encrypted
@@ -17,31 +22,31 @@ trait HTMLMediaElement
      with HTMLElement {
   
   /* standard dom */
-  val HAVE_CURRENT_DATA: Double = js.native
+  val HAVE_CURRENT_DATA: `2` = js.native
   
   /* standard dom */
-  val HAVE_ENOUGH_DATA: Double = js.native
+  val HAVE_ENOUGH_DATA: `4` = js.native
   
   /* standard dom */
-  val HAVE_FUTURE_DATA: Double = js.native
+  val HAVE_FUTURE_DATA: `3` = js.native
   
   /* standard dom */
-  val HAVE_METADATA: Double = js.native
+  val HAVE_METADATA: `1` = js.native
   
   /* standard dom */
-  val HAVE_NOTHING: Double = js.native
+  val HAVE_NOTHING: `0` = js.native
   
   /* standard dom */
-  val NETWORK_EMPTY: Double = js.native
+  val NETWORK_EMPTY: `0` = js.native
   
   /* standard dom */
-  val NETWORK_IDLE: Double = js.native
+  val NETWORK_IDLE: `1` = js.native
   
   /* standard dom */
-  val NETWORK_LOADING: Double = js.native
+  val NETWORK_LOADING: `2` = js.native
   
   /* standard dom */
-  val NETWORK_NO_SOURCE: Double = js.native
+  val NETWORK_NO_SOURCE: `3` = js.native
   
   /* InferMemberOverrides */
   override def addEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject): Unit = js.native

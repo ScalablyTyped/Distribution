@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OptionGroupOption extends StObject {
   
   /**
+    * Specifies whether the option can be copied across Amazon Web Services accounts.
+    */
+  var CopyableCrossAccount: js.UndefOr[BooleanOptional] = js.undefined
+  
+  /**
     * If the option requires a port, specifies the default port for the option.
     */
   var DefaultPort: js.UndefOr[IntegerOptional] = js.undefined
@@ -95,6 +100,10 @@ object OptionGroupOption {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: OptionGroupOption] (val x: Self) extends AnyVal {
+    
+    inline def setCopyableCrossAccount(value: BooleanOptional): Self = StObject.set(x, "CopyableCrossAccount", value.asInstanceOf[js.Any])
+    
+    inline def setCopyableCrossAccountUndefined: Self = StObject.set(x, "CopyableCrossAccount", js.undefined)
     
     inline def setDefaultPort(value: IntegerOptional): Self = StObject.set(x, "DefaultPort", value.asInstanceOf[js.Any])
     

@@ -1,7 +1,7 @@
 package typings.libp2pInterfaces
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.std.CustomEventInit
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,6 +21,6 @@ object eventsMod {
   
   @JSImport("@libp2p/interfaces/events", "EventEmitter")
   @js.native
-  open class EventEmitter[EventMap /* <: StringDictionary[Any] */] ()
+  open class EventEmitter[EventMap /* <: Record[String, Any] */] ()
     extends typings.libp2pInterfaces.distSrcEventsMod.EventEmitter[EventMap]
 }

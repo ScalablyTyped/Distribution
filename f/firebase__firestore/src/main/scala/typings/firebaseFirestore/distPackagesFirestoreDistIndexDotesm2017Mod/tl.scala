@@ -4,21 +4,26 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait tl extends StObject {
+trait tl
+  extends StObject
+     with Gh {
   
-  def convertArray(t: Any, e: Any): Any = js.native
+  def _toFieldTransform(t: Any): Null
   
-  def convertDocumentKey(t: Any, e: Any): ct = js.native
+  def isEqual(t: Any): Boolean
+}
+object tl {
   
-  def convertGeoPoint(t: Any): ih = js.native
+  inline def apply(_methodName: Any, _toFieldTransform: Any => Null, isEqual: Any => Boolean): tl = {
+    val __obj = js.Dynamic.literal(_methodName = _methodName.asInstanceOf[js.Any], _toFieldTransform = js.Any.fromFunction1(_toFieldTransform), isEqual = js.Any.fromFunction1(isEqual))
+    __obj.asInstanceOf[tl]
+  }
   
-  def convertObject(t: Any, e: Any): js.Object = js.native
-  
-  def convertServerTimestamp(t: Any, e: Any): Any = js.native
-  
-  def convertTimestamp(t: Any): nt = js.native
-  
-  def convertValue(t: Any): Any = js.native
-  def convertValue(t: Any, e: String): Any = js.native
+  @scala.inline
+  implicit open class MutableBuilder[Self <: tl] (val x: Self) extends AnyVal {
+    
+    inline def setIsEqual(value: Any => Boolean): Self = StObject.set(x, "isEqual", js.Any.fromFunction1(value))
+    
+    inline def set_toFieldTransform(value: Any => Null): Self = StObject.set(x, "_toFieldTransform", js.Any.fromFunction1(value))
+  }
 }

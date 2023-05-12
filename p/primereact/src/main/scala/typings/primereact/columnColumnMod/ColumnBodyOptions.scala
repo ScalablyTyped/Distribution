@@ -6,18 +6,39 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ColumnBodyOptions extends StObject {
   
+  /**
+    * Column of the options.
+    */
   var column: Column
   
+  /**
+    * Options for the expander component.
+    */
   var expander: js.UndefOr[ColumnBodyExpanderOptions] = js.undefined
   
+  /**
+    * Field name of the column.
+    */
   var field: String
   
+  /**
+    * Whether the row is frozen or not.
+    */
   var frozenRow: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Additional properties passed to the body component.
+    */
   var props: js.UndefOr[Any] = js.undefined
   
+  /**
+    * Options for the row editor component.
+    */
   var rowEditor: js.UndefOr[ColumnBodyRowEditorOptions] = js.undefined
   
+  /**
+    * Index of the row.
+    */
   var rowIndex: Double
 }
 object ColumnBodyOptions {

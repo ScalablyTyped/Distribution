@@ -12,7 +12,7 @@ trait DeleteResponseHeadersPolicyRequest extends StObject {
   var Id: String
   
   /**
-    * The version of the response headers policy that you are deleting. The version is the response headers policy’s ETag value, which you can get using ListResponseHeadersPolicies, GetResponseHeadersPolicy, or GetResponseHeadersPolicyConfig.
+    * The version of the response headers policy that you are deleting. The version is the response headers policy's ETag value, which you can get using ListResponseHeadersPolicies, GetResponseHeadersPolicy, or GetResponseHeadersPolicyConfig.
     */
   var IfMatch: js.UndefOr[String] = js.undefined
 }

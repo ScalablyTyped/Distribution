@@ -1,107 +1,22 @@
 package typings.libp2p
 
 import typings.libp2p.anon.TypeofIdentify
-import typings.libp2p.distSrcIdentifyPbMessageMod.Identify
 import typings.libp2pInterfaceAddressManager.mod.AddressManager
-import typings.libp2pInterfaceConnection.mod.Connection
 import typings.libp2pInterfaceConnectionManager.mod.ConnectionManager
+import typings.libp2pInterfaceLibp2p.mod.Libp2pEvents
 import typings.libp2pInterfacePeerId.mod.PeerId
 import typings.libp2pInterfacePeerStore.mod.PeerStore
-import typings.libp2pInterfaceRegistrar.mod.IncomingStreamData
 import typings.libp2pInterfaceRegistrar.mod.Registrar
-import typings.libp2pInterfaces.distSrcStartableMod.Startable
-import typings.libp2pInterfaces.mod.AbortOptions
-import typings.multiformatsMultiaddr.mod.Multiaddr_
+import typings.libp2pInterfaces.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object distSrcIdentifyMod {
   
-  @JSImport("libp2p/dist/src/identify", "IdentifyService")
+  @JSImport("libp2p/dist/src/identify", JSImport.Namespace)
   @js.native
-  open class IdentifyService protected ()
-    extends StObject
-       with Startable {
-    def this(components: IdentifyServiceComponents, init: IdentifyServiceInit) = this()
-    
-    /**
-      * Sends the `Identify` response with the Signed Peer Record
-      * to the requesting peer over the given `connection`
-      */
-    def _handleIdentify(data: IncomingStreamData): js.Promise[Unit] = js.native
-    
-    /**
-      * Reads the Identify Push message from the given `connection`
-      */
-    def _handlePush(data: IncomingStreamData): js.Promise[Unit] = js.native
-    
-    def _identify(connection: Connection): js.Promise[Identify] = js.native
-    def _identify(connection: Connection, options: AbortOptions): js.Promise[Identify] = js.native
-    
-    /* private */ val components: Any = js.native
-    
-    /* private */ val host: Any = js.native
-    
-    /**
-      * Requests the `Identify` message from peer associated with the given `connection`.
-      * If the identified peer does not match the `PeerId` associated with the connection,
-      * an error will be thrown.
-      */
-    def identify(connection: Connection): js.Promise[Unit] = js.native
-    def identify(connection: Connection, options: AbortOptions): js.Promise[Unit] = js.native
-    
-    /* private */ val identifyProtocolStr: Any = js.native
-    
-    /* private */ val identifyPushProtocolStr: Any = js.native
-    
-    /* private */ val init: Any = js.native
-    
-    /* CompleteClass */
-    override def isStarted(): Boolean = js.native
-    
-    /**
-      * Send an Identify Push update to the list of connections
-      */
-    def push(connections: js.Array[Connection]): js.Promise[Unit] = js.native
-    
-    /**
-      * Calls `push` on all peer connections
-      */
-    def pushToPeerStore(): js.Promise[Unit] = js.native
-    
-    /**
-      * This method will be invoked to start the component.
-      *
-      * It should not assume that any other components have been started.
-      */
-    /* CompleteClass */
-    override def start(): Unit | js.Promise[Unit] = js.native
-    
-    /* private */ var started: Any = js.native
-    
-    /**
-      * This method will be invoked to stop the component.
-      *
-      * It should not assume any other components are running when it is called.
-      */
-    /* CompleteClass */
-    override def stop(): Unit | js.Promise[Unit] = js.native
-  }
-  /* static members */
-  object IdentifyService {
-    
-    @JSImport("libp2p/dist/src/identify", "IdentifyService")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    /**
-      * Takes the `addr` and converts it to a Multiaddr if possible
-      */
-    inline def getCleanMultiaddr(): js.UndefOr[Multiaddr_] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCleanMultiaddr")().asInstanceOf[js.UndefOr[Multiaddr_]]
-    inline def getCleanMultiaddr(addr: String): js.UndefOr[Multiaddr_] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCleanMultiaddr")(addr.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Multiaddr_]]
-    inline def getCleanMultiaddr(addr: js.typedarray.Uint8Array): js.UndefOr[Multiaddr_] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCleanMultiaddr")(addr.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Multiaddr_]]
-  }
+  val ^ : js.Any = js.native
   
   object Message {
     
@@ -114,6 +29,9 @@ object distSrcIdentifyMod {
     def Identify: TypeofIdentify = js.native
     inline def Identify_=(x: TypeofIdentify): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Identify")(x.asInstanceOf[js.Any])
   }
+  
+  inline def identifyService(): js.Function1[/* components */ IdentifyServiceComponents, js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("identifyService")().asInstanceOf[js.Function1[/* components */ IdentifyServiceComponents, js.Object]]
+  inline def identifyService(init: IdentifyServiceInit): js.Function1[/* components */ IdentifyServiceComponents, js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("identifyService")(init.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* components */ IdentifyServiceComponents, js.Object]]
   
   object multicodecs {
     
@@ -132,29 +50,13 @@ object distSrcIdentifyMod {
     inline def IDENTIFY_PUSH_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IDENTIFY_PUSH")(x.asInstanceOf[js.Any])
   }
   
-  trait HostProperties extends StObject {
-    
-    var agentVersion: String
-  }
-  object HostProperties {
-    
-    inline def apply(agentVersion: String): HostProperties = {
-      val __obj = js.Dynamic.literal(agentVersion = agentVersion.asInstanceOf[js.Any])
-      __obj.asInstanceOf[HostProperties]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: HostProperties] (val x: Self) extends AnyVal {
-      
-      inline def setAgentVersion(value: String): Self = StObject.set(x, "agentVersion", value.asInstanceOf[js.Any])
-    }
-  }
-  
   trait IdentifyServiceComponents extends StObject {
     
     var addressManager: AddressManager
     
     var connectionManager: ConnectionManager
+    
+    var events: EventEmitter[Libp2pEvents]
     
     var peerId: PeerId
     
@@ -167,11 +69,12 @@ object distSrcIdentifyMod {
     inline def apply(
       addressManager: AddressManager,
       connectionManager: ConnectionManager,
+      events: EventEmitter[Libp2pEvents],
       peerId: PeerId,
       peerStore: PeerStore,
       registrar: Registrar
     ): IdentifyServiceComponents = {
-      val __obj = js.Dynamic.literal(addressManager = addressManager.asInstanceOf[js.Any], connectionManager = connectionManager.asInstanceOf[js.Any], peerId = peerId.asInstanceOf[js.Any], peerStore = peerStore.asInstanceOf[js.Any], registrar = registrar.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(addressManager = addressManager.asInstanceOf[js.Any], connectionManager = connectionManager.asInstanceOf[js.Any], events = events.asInstanceOf[js.Any], peerId = peerId.asInstanceOf[js.Any], peerStore = peerStore.asInstanceOf[js.Any], registrar = registrar.asInstanceOf[js.Any])
       __obj.asInstanceOf[IdentifyServiceComponents]
     }
     
@@ -181,6 +84,8 @@ object distSrcIdentifyMod {
       inline def setAddressManager(value: AddressManager): Self = StObject.set(x, "addressManager", value.asInstanceOf[js.Any])
       
       inline def setConnectionManager(value: ConnectionManager): Self = StObject.set(x, "connectionManager", value.asInstanceOf[js.Any])
+      
+      inline def setEvents(value: EventEmitter[Libp2pEvents]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
       inline def setPeerId(value: PeerId): Self = StObject.set(x, "peerId", value.asInstanceOf[js.Any])
       
@@ -195,50 +100,46 @@ object distSrcIdentifyMod {
     /**
       * What details we should send as part of an identify message
       */
-    var host: HostProperties
+    var agentVersion: js.UndefOr[String] = js.undefined
     
     /**
       * Identify responses larger than this in bytes will be rejected (default: 8192)
       */
     var maxIdentifyMessageSize: js.UndefOr[Double] = js.undefined
     
-    var maxInboundStreams: Double
+    var maxInboundStreams: js.UndefOr[Double] = js.undefined
     
-    var maxOutboundStreams: Double
+    var maxObservedAddresses: js.UndefOr[Double] = js.undefined
     
-    var maxPushIncomingStreams: Double
+    var maxOutboundStreams: js.UndefOr[Double] = js.undefined
     
-    var maxPushOutgoingStreams: Double
+    var maxPushIncomingStreams: js.UndefOr[Double] = js.undefined
+    
+    var maxPushOutgoingStreams: js.UndefOr[Double] = js.undefined
     
     /**
       * The prefix to use for the protocol (default: 'ipfs')
       */
-    var protocolPrefix: String
+    var protocolPrefix: js.UndefOr[String] = js.undefined
     
     /**
       * How long we should wait for a remote peer to send their identify response
       */
-    var timeout: Double
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object IdentifyServiceInit {
     
-    inline def apply(
-      host: HostProperties,
-      maxInboundStreams: Double,
-      maxOutboundStreams: Double,
-      maxPushIncomingStreams: Double,
-      maxPushOutgoingStreams: Double,
-      protocolPrefix: String,
-      timeout: Double
-    ): IdentifyServiceInit = {
-      val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], maxInboundStreams = maxInboundStreams.asInstanceOf[js.Any], maxOutboundStreams = maxOutboundStreams.asInstanceOf[js.Any], maxPushIncomingStreams = maxPushIncomingStreams.asInstanceOf[js.Any], maxPushOutgoingStreams = maxPushOutgoingStreams.asInstanceOf[js.Any], protocolPrefix = protocolPrefix.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any])
+    inline def apply(): IdentifyServiceInit = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IdentifyServiceInit]
     }
     
     @scala.inline
     implicit open class MutableBuilder[Self <: IdentifyServiceInit] (val x: Self) extends AnyVal {
       
-      inline def setHost(value: HostProperties): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setAgentVersion(value: String): Self = StObject.set(x, "agentVersion", value.asInstanceOf[js.Any])
+      
+      inline def setAgentVersionUndefined: Self = StObject.set(x, "agentVersion", js.undefined)
       
       inline def setMaxIdentifyMessageSize(value: Double): Self = StObject.set(x, "maxIdentifyMessageSize", value.asInstanceOf[js.Any])
       
@@ -246,15 +147,31 @@ object distSrcIdentifyMod {
       
       inline def setMaxInboundStreams(value: Double): Self = StObject.set(x, "maxInboundStreams", value.asInstanceOf[js.Any])
       
+      inline def setMaxInboundStreamsUndefined: Self = StObject.set(x, "maxInboundStreams", js.undefined)
+      
+      inline def setMaxObservedAddresses(value: Double): Self = StObject.set(x, "maxObservedAddresses", value.asInstanceOf[js.Any])
+      
+      inline def setMaxObservedAddressesUndefined: Self = StObject.set(x, "maxObservedAddresses", js.undefined)
+      
       inline def setMaxOutboundStreams(value: Double): Self = StObject.set(x, "maxOutboundStreams", value.asInstanceOf[js.Any])
+      
+      inline def setMaxOutboundStreamsUndefined: Self = StObject.set(x, "maxOutboundStreams", js.undefined)
       
       inline def setMaxPushIncomingStreams(value: Double): Self = StObject.set(x, "maxPushIncomingStreams", value.asInstanceOf[js.Any])
       
+      inline def setMaxPushIncomingStreamsUndefined: Self = StObject.set(x, "maxPushIncomingStreams", js.undefined)
+      
       inline def setMaxPushOutgoingStreams(value: Double): Self = StObject.set(x, "maxPushOutgoingStreams", value.asInstanceOf[js.Any])
+      
+      inline def setMaxPushOutgoingStreamsUndefined: Self = StObject.set(x, "maxPushOutgoingStreams", js.undefined)
       
       inline def setProtocolPrefix(value: String): Self = StObject.set(x, "protocolPrefix", value.asInstanceOf[js.Any])
       
+      inline def setProtocolPrefixUndefined: Self = StObject.set(x, "protocolPrefix", js.undefined)
+      
       inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
 }

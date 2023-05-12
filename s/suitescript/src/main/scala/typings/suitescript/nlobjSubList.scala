@@ -11,7 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @classDescription high level container for defining sublist (many to one) relationships on a record or multi-line data entry UIs on pages.
   * @return {nlobjSubList}
-  * @constructor
   */
 @js.native
 trait nlobjSubList

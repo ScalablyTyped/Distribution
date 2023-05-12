@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@use-gesture/react" : "10.2.21"
+      "@use-gesture/react" : "10.2.26"
     }
   ],
   "test-dependencies" : [
     {
-      "@use-gesture/react" : "10.2.21"
+      "@use-gesture/react" : "10.2.26"
     }
   ],
   "compile-devDependencies" : [

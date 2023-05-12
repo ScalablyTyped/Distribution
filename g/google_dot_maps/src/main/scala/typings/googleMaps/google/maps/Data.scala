@@ -12,15 +12,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A layer for displaying geospatial data. Points, line-strings and polygons
-  * can be displayed. <p> Every <code>Map</code> has a <code>Data</code> object
-  * by default, so most of the time there is no need to construct one. For
-  * example: <pre> var myMap = new google.maps.Map(...);<br>
-  * myMap.data.addGeoJson(...);<br> myMap.data.setStyle(...); </pre> The
-  * <code>Data</code> object is a collection of <a
-  * href="#Data.Feature"><code>Features</code></a>.
-  */
 @js.native
 trait Data
   extends StObject
@@ -200,9 +191,6 @@ trait Data
 }
 object Data {
   
-  /**
-    * The properties of a <code>addfeature</code> event.
-    */
   trait AddFeatureEvent extends StObject {
     
     /**
@@ -224,10 +212,6 @@ object Data {
     }
   }
   
-  /**
-    * DataOptions object used to define the properties that a developer can set
-    * on a <code>Data</code> object.
-    */
   trait DataOptions extends StObject {
     
     /**
@@ -323,9 +307,6 @@ object Data {
     }
   }
   
-  /**
-    * A feature has a geometry, an id, and a set of properties.
-    */
   @js.native
   trait Feature extends StObject {
     
@@ -378,9 +359,6 @@ object Data {
     def toGeoJson(callback: js.Function1[/* a */ js.Object, Unit]): Unit = js.native
   }
   
-  /**
-    * Optional parameters for creating <code>Data.Feature</code> objects.
-    */
   trait FeatureOptions extends StObject {
     
     /**
@@ -433,9 +411,6 @@ object Data {
     }
   }
   
-  /**
-    * Optional parameters for importing GeoJSON.
-    */
   trait GeoJsonOptions extends StObject {
     
     /**
@@ -462,9 +437,6 @@ object Data {
     }
   }
   
-  /**
-    * A superclass for the various geometry objects.
-    */
   trait Geometry extends StObject {
     
     /**
@@ -498,11 +470,6 @@ object Data {
     }
   }
   
-  /**
-    * A GeometryCollection contains a number of geometry objects. Any
-    * <code>LatLng</code> or <code>LatLngLiteral</code> objects are automatically
-    * converted to <code>Data.Point</code> geometry objects.
-    */
   trait GeometryCollection
     extends StObject
        with Geometry {
@@ -547,9 +514,6 @@ object Data {
     }
   }
   
-  /**
-    * A LineString geometry contains a number of <code>LatLng</code>s.
-    */
   trait LineString
     extends StObject
        with Geometry {
@@ -594,12 +558,6 @@ object Data {
     }
   }
   
-  /**
-    * A LinearRing geometry contains a number of <code>LatLng</code>s,
-    * representing a closed LineString. There is no need to make the first
-    * <code>LatLng</code> equal to the last <code>LatLng</code>. The LinearRing
-    * is closed implicitly.
-    */
   trait LinearRing
     extends StObject
        with Geometry {
@@ -644,10 +602,6 @@ object Data {
     }
   }
   
-  /**
-    * This object is passed to mouse event handlers on a <code>Data</code>
-    * object.
-    */
   trait MouseEvent
     extends StObject
        with MapMouseEvent {
@@ -675,9 +629,6 @@ object Data {
     }
   }
   
-  /**
-    * A MultiLineString geometry contains a number of <code>LineString</code>s.
-    */
   trait MultiLineString
     extends StObject
        with Geometry {
@@ -722,9 +673,6 @@ object Data {
     }
   }
   
-  /**
-    * A MultiPoint geometry contains a number of <code>LatLng</code>s.
-    */
   trait MultiPoint
     extends StObject
        with Geometry {
@@ -769,9 +717,6 @@ object Data {
     }
   }
   
-  /**
-    * A MultiPolygon geometry contains a number of <code>Data.Polygon</code>s.
-    */
   trait MultiPolygon
     extends StObject
        with Geometry {
@@ -816,9 +761,6 @@ object Data {
     }
   }
   
-  /**
-    * A Point geometry contains a single <code>LatLng</code>.
-    */
   trait Point
     extends StObject
        with Geometry {
@@ -846,13 +788,6 @@ object Data {
     }
   }
   
-  /**
-    * A Polygon geometry contains a number of <code>Data.LinearRing</code>s. The
-    * first linear-ring must be the polygon exterior boundary and subsequent
-    * linear-rings must be interior boundaries, also known as holes. See the <a
-    * href="https://developers.google.com/maps/documentation/javascript/examples/layer-data-polygon">sample
-    * polygon with a hole</a>.
-    */
   trait Polygon
     extends StObject
        with Geometry {
@@ -897,9 +832,6 @@ object Data {
     }
   }
   
-  /**
-    * The properties of a <code>removefeature</code> event.
-    */
   trait RemoveFeatureEvent extends StObject {
     
     /**
@@ -921,9 +853,6 @@ object Data {
     }
   }
   
-  /**
-    * The properties of a <code>removeproperty</code> event.
-    */
   trait RemovePropertyEvent extends StObject {
     
     /**
@@ -959,9 +888,6 @@ object Data {
     }
   }
   
-  /**
-    * The properties of a <code>setgeometry</code> event.
-    */
   trait SetGeometryEvent extends StObject {
     
     /**
@@ -1001,9 +927,6 @@ object Data {
     }
   }
   
-  /**
-    * The properties of a <code>setproperty</code> event.
-    */
   trait SetPropertyEvent extends StObject {
     
     /**
@@ -1047,10 +970,6 @@ object Data {
     }
   }
   
-  /**
-    * These options specify the way a Feature should appear when displayed on a
-    * map.
-    */
   trait StyleOptions extends StObject {
     
     /**

@@ -9,11 +9,11 @@ import typings.grpcGrpcJs.buildSrcAdminMod.GetServiceDefinition
 import typings.grpcGrpcJs.buildSrcBackoffTimeoutMod.BackoffOptions
 import typings.grpcGrpcJs.buildSrcCallCredentialsMod.CallMetadataGenerator
 import typings.grpcGrpcJs.buildSrcCallCredentialsMod.OAuth2Client
+import typings.grpcGrpcJs.buildSrcCallInterfaceMod.StatusObject
 import typings.grpcGrpcJs.buildSrcCallMod.ClientDuplexStream
 import typings.grpcGrpcJs.buildSrcCallMod.ClientReadableStream
 import typings.grpcGrpcJs.buildSrcCallMod.ClientUnaryCall
 import typings.grpcGrpcJs.buildSrcCallMod.ClientWritableStream
-import typings.grpcGrpcJs.buildSrcCallStreamMod.StatusObject
 import typings.grpcGrpcJs.buildSrcChannelCredentialsMod.VerifyOptions
 import typings.grpcGrpcJs.buildSrcChannelMod.ChannelImplementation
 import typings.grpcGrpcJs.buildSrcChannelOptionsMod.ChannelOptions

@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.RowGap
+import typings.csstype.mod.Property.JustifyTracks
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,13 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `342` extends StObject {
   
   var value: js.UndefOr[
-    (RowGap[Double | String]) | (js.Array[
+    JustifyTracks | (js.Array[
       (Extract[
-        js.UndefOr[
-          (RowGap[Double | String]) | (js.Array[NonNullable[js.UndefOr[RowGap[Double | String]]]])
-        ], 
+        js.UndefOr[JustifyTracks | js.Array[NonNullable[js.UndefOr[JustifyTracks]]]], 
         String
-      ]) | (NonNullable[js.UndefOr[RowGap[Double | String]]])
+      ]) | NonNullable[js.UndefOr[JustifyTracks]]
     ])
   ] = js.native
 }

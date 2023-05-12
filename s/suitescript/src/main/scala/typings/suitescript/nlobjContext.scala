@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @classDescription Utility class providing information about the current user and the script runtime.
   * @return {nlobjContext}
-  * @constructor
   */
 @js.native
 trait nlobjContext

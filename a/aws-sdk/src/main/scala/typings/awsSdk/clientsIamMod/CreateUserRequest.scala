@@ -12,7 +12,7 @@ trait CreateUserRequest extends StObject {
   var Path: js.UndefOr[pathType] = js.undefined
   
   /**
-    * The ARN of the policy that is used to set the permissions boundary for the user.
+    * The ARN of the managed policy that is used to set the permissions boundary for the user. A permissions boundary policy defines the maximum permissions that identity-based policies can grant to an entity, but does not grant permissions. Permissions boundaries do not define the maximum permissions that a resource-based policy can grant to an entity. To learn more, see Permissions boundaries for IAM entities in the IAM User Guide. For more information about policy types, see Policy types  in the IAM User Guide.
     */
   var PermissionsBoundary: js.UndefOr[arnType] = js.undefined
   

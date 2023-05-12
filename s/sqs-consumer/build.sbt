@@ -1,14 +1,21 @@
 organization := "org.scalablytyped"
 name := "sqs-consumer"
-version := "5.7.0-b279d3"
+version := "7.1.0-228d53"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "aws-sdk" % "2.1255.0-7c20e6",
-  "org.scalablytyped" %%% "events" % "3.0-dt-20211202Z-c3a2f0",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-874609",
-  "org.scalablytyped" %%% "std" % "4.9-ecb5eb")
+  "org.scalablytyped" %%% "aws-sdk__client-sqs" % "3.329.0-1e95f3",
+  "org.scalablytyped" %%% "aws-sdk__fetch-http-handler" % "3.329.0-35fc6e",
+  "org.scalablytyped" %%% "aws-sdk__middleware-endpoint" % "3.329.0-065ce6",
+  "org.scalablytyped" %%% "aws-sdk__node-http-handler" % "3.329.0-b8fcbb",
+  "org.scalablytyped" %%% "aws-sdk__protocol-http" % "3.329.0-62d616",
+  "org.scalablytyped" %%% "aws-sdk__signature-v4" % "3.329.0-caa31a",
+  "org.scalablytyped" %%% "aws-sdk__smithy-client" % "3.329.0-98a842",
+  "org.scalablytyped" %%% "aws-sdk__types" % "3.329.0-3ef5a2",
+  "org.scalablytyped" %%% "aws-sdk__util-endpoints" % "3.332.0-7550bd",
+  "org.scalablytyped" %%% "node" % "20.1-dt-20230511Z-0320fc",
+  "org.scalablytyped" %%% "std" % "5.0-e63739")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -3,7 +3,6 @@ package typings.libp2pWebrtcPeer
 import typings.itPushable.mod.Pushable_
 import typings.itStreamTypes.mod.Duplex
 import typings.itStreamTypes.mod.Sink
-import typings.itStreamTypes.mod.Source
 import typings.libp2pInterfaces.eventsMod.EventEmitter
 import typings.libp2pLogger.mod.Logger_
 import typings.libp2pWebrtcPeer.anon.Channel
@@ -22,7 +21,7 @@ object distSrcPeerMod {
   @js.native
   open class WebRTCPeer protected ()
     extends EventEmitter[WebRTCPeerEvents]
-       with Duplex[js.typedarray.Uint8Array, js.typedarray.Uint8Array, js.Promise[Unit]] {
+       with Duplex[js.typedarray.Uint8Array, js.typedarray.Uint8Array, Any] {
     def this(opts: WebRTCPeerInitlogPrefixst) = this()
     
     /* protected */ var channel: js.UndefOr[WebRTCDataChannel] = js.native
@@ -45,15 +44,15 @@ object distSrcPeerMod {
     /* protected */ var peerConnection: RTCPeerConnection = js.native
     
     /* CompleteClass */
-    override def sink(source: Source[js.typedarray.Uint8Array]): js.Promise[Unit] = js.native
+    override def sink(source: js.typedarray.Uint8Array): Any = js.native
     /* CompleteClass */
     @JSName("sink")
-    var sink_Original: Sink[js.typedarray.Uint8Array, js.Promise[Unit]] = js.native
+    var sink_Original: Sink[js.typedarray.Uint8Array, Any] = js.native
     
     /* CompleteClass */
-    var source: Source[js.typedarray.Uint8Array] = js.native
+    var source: js.typedarray.Uint8Array = js.native
     @JSName("source")
-    var source_WebRTCPeer: Pushable_[js.typedarray.Uint8Array] = js.native
+    var source_WebRTCPeer: Pushable_[js.typedarray.Uint8Array, Unit, Any] = js.native
     
     /* protected */ var wrtc: WRTC = js.native
   }

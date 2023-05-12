@@ -142,17 +142,17 @@ trait RestoreFromClusterSnapshotMessage extends StObject {
   var ReservedNodeId: js.UndefOr[String] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the snapshot associated with the message to restore from a cluster. You can specify this parameter or snapshotIdentifier, but not both.
+    * The Amazon Resource Name (ARN) of the snapshot associated with the message to restore from a cluster. You must specify this parameter or snapshotIdentifier, but not both.
     */
   var SnapshotArn: js.UndefOr[String] = js.undefined
   
   /**
-    * The name of the cluster the source snapshot was created from. This parameter is required if your IAM user has a policy containing a snapshot resource element that specifies anything other than * for the cluster name.
+    * The name of the cluster the source snapshot was created from. This parameter is required if your IAM user or role has a policy containing a snapshot resource element that specifies anything other than * for the cluster name.
     */
   var SnapshotClusterIdentifier: js.UndefOr[String] = js.undefined
   
   /**
-    * The name of the snapshot from which to create the new cluster. This parameter isn't case sensitive. You can specify this parameter or snapshotArn, but not both. Example: my-snapshot-id 
+    * The name of the snapshot from which to create the new cluster. This parameter isn't case sensitive. You must specify this parameter or snapshotArn, but not both. Example: my-snapshot-id 
     */
   var SnapshotIdentifier: js.UndefOr[String] = js.undefined
   

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** module Or Internal Object */
 /**
   * @brief XmlNamedNodeMap 对象表示一个无顺序的属性列表
-  * @detail 
+  * @detail
   */
 @JSGlobal("Class_XmlNamedNodeMap")
 @js.native

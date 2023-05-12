@@ -1,5 +1,6 @@
 package typings.yjs.distSrcInternalsMod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,7 +18,7 @@ open class YXmlEvent protected ()
     *                                  change was created.
     */
   def this(
-    target: typings.yjs.distSrcTypesYxmlelementMod.YXmlElement,
+    target: typings.yjs.distSrcTypesYxmlelementMod.YXmlElement[StringDictionary[String]],
     subs: Set[String | Null],
     transaction: typings.yjs.distSrcUtilsTransactionMod.Transaction
   ) = this()

@@ -16,7 +16,7 @@ object libIconsPauseCircleFilledMod extends Shortcut {
   @js.native
   trait PauseCircleFilledIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_PauseCircleFilledIconType: String = js.native

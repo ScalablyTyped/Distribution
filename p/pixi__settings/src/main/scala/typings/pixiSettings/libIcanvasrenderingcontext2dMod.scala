@@ -58,5 +58,9 @@ object libIcanvasrenderingcontext2dMod {
       dw: Double,
       dh: Double
     ): Unit = js.native
+    
+    var letterSpacing: js.UndefOr[String] = js.native
+    
+    var textLetterSpacing: js.UndefOr[String] = js.native
   }
 }

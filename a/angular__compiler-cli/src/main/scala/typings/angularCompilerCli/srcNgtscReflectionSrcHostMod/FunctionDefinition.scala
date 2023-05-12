@@ -1,9 +1,11 @@
 package typings.angularCompilerCli.srcNgtscReflectionSrcHostMod
 
+import typings.typescript.mod.ArrowFunction
 import typings.typescript.mod.FunctionDeclaration
 import typings.typescript.mod.FunctionExpression
 import typings.typescript.mod.MethodDeclaration
 import typings.typescript.mod.Statement
+import typings.typescript.mod.TypeParameterDeclaration
 import typings.typescript.mod.VariableDeclaration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -24,20 +26,25 @@ trait FunctionDefinition extends StObject {
   /**
     * A reference to the node which declares the function.
     */
-  var node: MethodDeclaration | FunctionDeclaration | FunctionExpression | VariableDeclaration
+  var node: MethodDeclaration | FunctionDeclaration | FunctionExpression | VariableDeclaration | ArrowFunction
   
   /**
     * Metadata regarding the function's parameters, including possible default value expressions.
     */
   var parameters: js.Array[Parameter]
+  
+  /**
+    * Generic type parameters of the function.
+    */
+  var typeParameters: js.Array[TypeParameterDeclaration] | Null
 }
 object FunctionDefinition {
   
   inline def apply(
-    node: MethodDeclaration | FunctionDeclaration | FunctionExpression | VariableDeclaration,
+    node: MethodDeclaration | FunctionDeclaration | FunctionExpression | VariableDeclaration | ArrowFunction,
     parameters: js.Array[Parameter]
   ): FunctionDefinition = {
-    val __obj = js.Dynamic.literal(node = node.asInstanceOf[js.Any], parameters = parameters.asInstanceOf[js.Any], body = null)
+    val __obj = js.Dynamic.literal(node = node.asInstanceOf[js.Any], parameters = parameters.asInstanceOf[js.Any], body = null, typeParameters = null)
     __obj.asInstanceOf[FunctionDefinition]
   }
   
@@ -50,10 +57,18 @@ object FunctionDefinition {
     
     inline def setBodyVarargs(value: Statement*): Self = StObject.set(x, "body", js.Array(value*))
     
-    inline def setNode(value: MethodDeclaration | FunctionDeclaration | FunctionExpression | VariableDeclaration): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    inline def setNode(
+      value: MethodDeclaration | FunctionDeclaration | FunctionExpression | VariableDeclaration | ArrowFunction
+    ): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     
     inline def setParameters(value: js.Array[Parameter]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     inline def setParametersVarargs(value: Parameter*): Self = StObject.set(x, "parameters", js.Array(value*))
+    
+    inline def setTypeParameters(value: js.Array[TypeParameterDeclaration]): Self = StObject.set(x, "typeParameters", value.asInstanceOf[js.Any])
+    
+    inline def setTypeParametersNull: Self = StObject.set(x, "typeParameters", null)
+    
+    inline def setTypeParametersVarargs(value: TypeParameterDeclaration*): Self = StObject.set(x, "typeParameters", js.Array(value*))
   }
 }

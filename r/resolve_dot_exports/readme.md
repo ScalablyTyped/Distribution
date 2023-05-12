@@ -1,7 +1,7 @@
 
 # Scala.js typings for resolve_dot_exports
 
-Typings are for version 1.1.0
+Typings are for version 2.0.2
 
 ## Library description:
 A tiny (813b), correct, general-purpose, and configurable "exports" resolver without file-system reliance

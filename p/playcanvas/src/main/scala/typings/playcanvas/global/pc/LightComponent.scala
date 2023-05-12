@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * ```javascript
   * // Add a pc.LightComponent to an entity
-  * var entity = new pc.Entity();
+  * const entity = new pc.Entity();
   * entity.addComponent('light', {
   *     type: "omni",
   *     color: new pc.Color(1, 0, 0),
@@ -22,7 +22,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * });
   *
   * // Get the pc.LightComponent on an entity
-  * var lightComponent = entity.light;
+  * const lightComponent = entity.light;
   *
   * // Update a property on a light component
   * entity.light.range = 20;
@@ -42,10 +42,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @property {number} luminance The physically based luminance. Only used if scene.physicalUnits is true. Defaults to 0.
   * @property {number} shape The light source shape. Can be:
   *
-  * - {@link pc.LIGHTSHAPE_PUNCTUAL}: Infinitesimally small point.
-  * - {@link pc.LIGHTSHAPE_RECT}: Rectangle shape.
-  * - {@link pc.LIGHTSHAPE_DISK}: Disk shape.
-  * - {@link pc.LIGHTSHAPE_SPHERE}: Sphere shape.
+  * - {@link LIGHTSHAPE_PUNCTUAL}: Infinitesimally small point.
+  * - {@link LIGHTSHAPE_RECT}: Rectangle shape.
+  * - {@link LIGHTSHAPE_DISK}: Disk shape.
+  * - {@link LIGHTSHAPE_SPHERE}: Sphere shape.
   *
   * Defaults to pc.LIGHTSHAPE_PUNCTUAL.
   * @property {boolean} castShadows If enabled the light will cast shadows. Defaults to false.
@@ -129,8 +129,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @property {string} cookieChannel Color channels of the projection texture to use. Can be "r",
   * "g", "b", "a", "rgb".
   * @property {number} cookieAngle Angle for spotlight cookie rotation.
-  * @property {Vec2} cookieScale Spotlight cookie scale.
-  * @property {Vec2} cookieOffset Spotlight cookie position offset.
+  * @property {import('../../../core/math/vec2.js').Vec2} cookieScale Spotlight cookie scale.
+  * @property {import('../../../core/math/vec2.js').Vec2} cookieOffset Spotlight cookie position
+  * offset.
   * @property {boolean} isStatic Mark light as non-movable (optimization).
   * @property {number[]} layers An array of layer IDs ({@link Layer#id}) to which this light should
   * belong. Don't push/pop/splice or modify this array, if you want to change it - set a new one
@@ -144,8 +145,10 @@ open class LightComponent protected ()
   /**
     * Creates a new LightComponent instance.
     *
-    * @param {LightComponentSystem} system - The ComponentSystem that created this Component.
-    * @param {Entity} entity - The Entity that this Component is attached to.
+    * @param {import('./system.js').LightComponentSystem} system - The ComponentSystem that
+    * created this Component.
+    * @param {import('../../entity.js').Entity} entity - The Entity that this Component is
+    * attached to.
     */
   def this(system: typings.playcanvas.mod.LightComponentSystem, entity: typings.playcanvas.mod.Entity) = this()
 }

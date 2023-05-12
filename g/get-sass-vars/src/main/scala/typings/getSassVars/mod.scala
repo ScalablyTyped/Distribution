@@ -1,8 +1,7 @@
 package typings.getSassVars
 
-import typings.getSassVars.getSassVarsStrings.async
 import typings.getSassVars.getSassVarsStrings.sync
-import typings.sass.typesOptionsMod.Options
+import typings.sass.typesLegacyOptionsMod.LegacyOptions
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -41,7 +40,7 @@ object mod {
     /**
       * The options to pass to `sass`.
       */
-    var sassOptions: js.UndefOr[Options[sync | async]] = js.undefined
+    var sassOptions: js.UndefOr[LegacyOptions[sync]] = js.undefined
   }
   object SassVarsOptions {
     
@@ -57,7 +56,7 @@ object mod {
       
       inline def setCamelizeUndefined: Self = StObject.set(x, "camelize", js.undefined)
       
-      inline def setSassOptions(value: Options[sync | async]): Self = StObject.set(x, "sassOptions", value.asInstanceOf[js.Any])
+      inline def setSassOptions(value: LegacyOptions[sync]): Self = StObject.set(x, "sassOptions", value.asInstanceOf[js.Any])
       
       inline def setSassOptionsUndefined: Self = StObject.set(x, "sassOptions", js.undefined)
     }

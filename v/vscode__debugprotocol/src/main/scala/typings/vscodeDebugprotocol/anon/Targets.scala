@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Targets extends StObject {
   
-  /** The possible stepIn targets of the specified source location. */
+  /** The possible step-in targets of the specified source location. */
   var targets: js.Array[StepInTarget]
 }
 object Targets {

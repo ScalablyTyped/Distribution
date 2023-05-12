@@ -12,19 +12,19 @@ trait SuiteRunConfiguration extends StObject {
   var parallelRun: js.UndefOr[ParallelRun] = js.undefined
   
   /**
-    * Gets the primary device for suite run.
+    * Sets the primary device for the test suite run. This requires a thing ARN or a certificate ARN.
     */
-  var primaryDevice: js.UndefOr[DeviceUnderTest] = js.undefined
+  var primaryDevice: DeviceUnderTest
   
   /**
-    * Gets test case list.
+    * Sets test case list.
     */
   var selectedTestList: js.UndefOr[SelectedTestList] = js.undefined
 }
 object SuiteRunConfiguration {
   
-  inline def apply(): SuiteRunConfiguration = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(primaryDevice: DeviceUnderTest): SuiteRunConfiguration = {
+    val __obj = js.Dynamic.literal(primaryDevice = primaryDevice.asInstanceOf[js.Any])
     __obj.asInstanceOf[SuiteRunConfiguration]
   }
   
@@ -36,8 +36,6 @@ object SuiteRunConfiguration {
     inline def setParallelRunUndefined: Self = StObject.set(x, "parallelRun", js.undefined)
     
     inline def setPrimaryDevice(value: DeviceUnderTest): Self = StObject.set(x, "primaryDevice", value.asInstanceOf[js.Any])
-    
-    inline def setPrimaryDeviceUndefined: Self = StObject.set(x, "primaryDevice", js.undefined)
     
     inline def setSelectedTestList(value: SelectedTestList): Self = StObject.set(x, "selectedTestList", value.asInstanceOf[js.Any])
     

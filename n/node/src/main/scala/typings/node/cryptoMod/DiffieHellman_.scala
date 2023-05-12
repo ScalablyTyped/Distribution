@@ -14,11 +14,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Instances of the `DiffieHellman` class can be created using the {@link createDiffieHellman} function.
   *
   * ```js
-  * import assert from 'assert';
+  * import assert from 'node:assert';
   *
   * const {
-  *   createDiffieHellman
-  * } = await import('crypto');
+  *   createDiffieHellman,
+  * } = await import('node:crypto');
   *
   * // Generate Alice's keys...
   * const alice = createDiffieHellman(2048);
@@ -134,7 +134,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * A bit field containing any warnings and/or errors resulting from a check
     * performed during initialization of the `DiffieHellman` object.
     *
-    * The following values are valid for this property (as defined in `constants`module):
+    * The following values are valid for this property (as defined in `node:constants` module):
     *
     * * `DH_CHECK_P_NOT_SAFE_PRIME`
     * * `DH_CHECK_P_NOT_PRIME`

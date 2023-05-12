@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 /**
   * Creates the {@link BlobWriter} instance
-  * 
+  *
   * @param mimeString The MIME type of the content.
   */
 open class BlobWriter ()
@@ -21,7 +21,7 @@ open class BlobWriter ()
   
   /**
     * Retrieves all the written data
-    * 
+    *
     * @returns A promise resolving to the written data.
     */
   def getData(): js.Promise[Blob] = js.native

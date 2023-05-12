@@ -22,17 +22,9 @@ open class Button protected () extends StObject {
   
   var id: String = js.native
   
-  def on(event: String, cb: js.Function0[Unit]): this.type = js.native
-  @JSName("on")
-  def on_down(event: down, cb: js.Function0[Unit]): this.type = js.native
+  def on(event: down | press | up | release, cb: js.Function0[Unit]): this.type = js.native
   @JSName("on")
   def on_hold(event: hold, cb: js.Function1[/* holdTime */ Double, Unit]): this.type = js.native
-  @JSName("on")
-  def on_press(event: press, cb: js.Function0[Unit]): this.type = js.native
-  @JSName("on")
-  def on_release(event: release, cb: js.Function0[Unit]): this.type = js.native
-  @JSName("on")
-  def on_up(event: up, cb: js.Function0[Unit]): this.type = js.native
   
   var pin: Double | String = js.native
   

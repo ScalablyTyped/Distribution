@@ -40,7 +40,7 @@ object StorageObserver2 {
     
     inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
-    inline def setError(value: /* error */ StorageError2 => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+    inline def setError(value: /* error */ StorageError => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
     
     inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     

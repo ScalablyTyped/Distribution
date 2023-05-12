@@ -10,15 +10,11 @@ trait ParametersPathClientidString extends StObject {
   
   var requestBody: ContentApplicationjsonAccesstoken
   
-  var responses: `422Content397`
+  var responses: `476`
 }
 object ParametersPathClientidString {
   
-  inline def apply(
-    parameters: PathClientidString,
-    requestBody: ContentApplicationjsonAccesstoken,
-    responses: `422Content397`
-  ): ParametersPathClientidString = {
+  inline def apply(parameters: PathClientidString, requestBody: ContentApplicationjsonAccesstoken, responses: `476`): ParametersPathClientidString = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], requestBody = requestBody.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersPathClientidString]
   }
@@ -30,6 +26,6 @@ object ParametersPathClientidString {
     
     inline def setRequestBody(value: ContentApplicationjsonAccesstoken): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `422Content397`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `476`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

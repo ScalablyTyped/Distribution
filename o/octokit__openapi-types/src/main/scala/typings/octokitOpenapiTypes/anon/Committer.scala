@@ -9,7 +9,7 @@ trait Committer extends StObject {
   /** @description The author of the file. Default: The `committer` or the authenticated user if you omit `committer`. */
   var author: js.UndefOr[Date] = js.undefined
   
-  /** @description The branch name. Default: the repository’s default branch (usually `master`) */
+  /** @description The branch name. Default: the repository’s default branch. */
   var branch: js.UndefOr[String] = js.undefined
   
   /** @description The person that committed the file. Default: the authenticated user. */

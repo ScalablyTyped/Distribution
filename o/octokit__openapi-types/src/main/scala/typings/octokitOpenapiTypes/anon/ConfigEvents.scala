@@ -12,24 +12,24 @@ trait ConfigEvents extends StObject {
     */
   var active: js.UndefOr[Boolean] = js.undefined
   
-  /** @description Key/value pairs to provide settings for this webhook. [These are defined below](https://docs.github.com/rest/reference/orgs#update-hook-config-params). */
-  var config: js.UndefOr[SecretUrl] = js.undefined
+  /** @description Key/value pairs to provide settings for this webhook. [These are defined below](https://docs.github.com/rest/reference/orgs#create-hook-config-params). */
+  var config: InsecuresslPassword
   
   /**
-    * @description Determines what [events](https://docs.github.com/webhooks/event-payloads) the hook is triggered for.
+    * @description Determines what [events](https://docs.github.com/webhooks/event-payloads) the hook is triggered for. Set to `["*"]` to receive all possible events.
     * @default [
     *   "push"
     * ]
     */
   var events: js.UndefOr[js.Array[String]] = js.undefined
   
-  /** @example "web" */
-  var name: js.UndefOr[String] = js.undefined
+  /** @description Must be passed as "web". */
+  var name: String
 }
 object ConfigEvents {
   
-  inline def apply(): ConfigEvents = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(config: InsecuresslPassword, name: String): ConfigEvents = {
+    val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigEvents]
   }
   
@@ -40,9 +40,7 @@ object ConfigEvents {
     
     inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
-    inline def setConfig(value: SecretUrl): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
-    
-    inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+    inline def setConfig(value: InsecuresslPassword): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
     inline def setEvents(value: js.Array[String]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
@@ -51,7 +49,5 @@ object ConfigEvents {
     inline def setEventsVarargs(value: String*): Self = StObject.set(x, "events", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-    
-    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

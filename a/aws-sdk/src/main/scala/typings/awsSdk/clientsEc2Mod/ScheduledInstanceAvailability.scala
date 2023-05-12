@@ -42,7 +42,7 @@ trait ScheduledInstanceAvailability extends StObject {
   var MinTermDurationInDays: js.UndefOr[Integer] = js.undefined
   
   /**
-    * The network platform (EC2-Classic or EC2-VPC).
+    * The network platform.
     */
   var NetworkPlatform: js.UndefOr[String] = js.undefined
   

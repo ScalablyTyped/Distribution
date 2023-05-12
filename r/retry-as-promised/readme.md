@@ -1,7 +1,7 @@
 
 # Scala.js typings for retry-as-promised
 
-Typings are for version 2.3
+Typings are for version 7.0.4
 
 ## Library description:
 Retry a failed promise
@@ -24,7 +24,7 @@ Retry a failed promise
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

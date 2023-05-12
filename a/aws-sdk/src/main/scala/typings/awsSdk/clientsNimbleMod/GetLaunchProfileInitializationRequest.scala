@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetLaunchProfileInitializationRequest extends StObject {
   
   /**
-    * The Launch Profile ID.
+    * The ID of the launch profile used to control access from the streaming session.
     */
   var launchProfileId: String
   
@@ -22,7 +22,7 @@ trait GetLaunchProfileInitializationRequest extends StObject {
   var launchPurpose: String
   
   /**
-    * The platform where this Launch Profile will be used, either WINDOWS or LINUX.
+    * The platform where this Launch Profile will be used, either Windows or Linux.
     */
   var platform: String
   

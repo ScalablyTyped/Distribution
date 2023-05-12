@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StringDictionary
 import typings.three.anon.Ids
 import typings.three.examplesJsmLoadersIfcloaderMod.^
+import typings.three.srcCoreBufferGeometryMod.NormalBufferAttributes
 import typings.three.srcThreeMod.BufferAttribute
 import typings.three.srcThreeMod.BufferGeometry
 import org.scalablytyped.runtime.StObject
@@ -15,8 +16,8 @@ inline def DEFAULT: /* "default" */ String = ^.asInstanceOf[js.Dynamic].selectDy
 
 inline def IdAttrName: /* "expressID" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("IdAttrName").asInstanceOf[/* "expressID" */ String]
 
-inline def merge(geoms: js.Array[BufferGeometry]): BufferGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(geoms.asInstanceOf[js.Any]).asInstanceOf[BufferGeometry]
-inline def merge(geoms: js.Array[BufferGeometry], createGroups: Boolean): BufferGeometry = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(geoms.asInstanceOf[js.Any], createGroups.asInstanceOf[js.Any])).asInstanceOf[BufferGeometry]
+inline def merge(geoms: js.Array[BufferGeometry[NormalBufferAttributes]]): BufferGeometry[NormalBufferAttributes] = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(geoms.asInstanceOf[js.Any]).asInstanceOf[BufferGeometry[NormalBufferAttributes]]
+inline def merge(geoms: js.Array[BufferGeometry[NormalBufferAttributes]], createGroups: Boolean): BufferGeometry[NormalBufferAttributes] = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(geoms.asInstanceOf[js.Any], createGroups.asInstanceOf[js.Any])).asInstanceOf[BufferGeometry[NormalBufferAttributes]]
 
 inline def newFloatAttr(data: js.Array[Any], size: Double): BufferAttribute = (^.asInstanceOf[js.Dynamic].applyDynamic("newFloatAttr")(data.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[BufferAttribute]
 
@@ -28,7 +29,7 @@ type IdAttributeByMaterial = NumberDictionary[Double]
 
 type IdAttributesByMaterials = StringDictionary[IdAttributeByMaterial]
 
-type IdGeometries = NumberDictionary[BufferGeometry]
+type IdGeometries = NumberDictionary[BufferGeometry[NormalBufferAttributes]]
 
 type MapFaceindexID = NumberDictionary[Double]
 

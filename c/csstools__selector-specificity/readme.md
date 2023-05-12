@@ -1,7 +1,7 @@
 
 # Scala.js typings for csstools__selector-specificity
 
-Typings are for version 2.0.2
+Typings are for version 2.2.0
 
 ## Library description:
 Determine selector specificity with postcss-selector-parser

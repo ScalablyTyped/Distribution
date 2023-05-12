@@ -8,11 +8,14 @@ trait ParametersPathEnvironmentnameString extends StObject {
   
   var parameters: PathEnvironmentnameString
   
-  var responses: `200ContentApplicationjson483`
+  var responses: `200ContentApplicationjsonCustomdeploymentprotectionrulesTotalcount`
 }
 object ParametersPathEnvironmentnameString {
   
-  inline def apply(parameters: PathEnvironmentnameString, responses: `200ContentApplicationjson483`): ParametersPathEnvironmentnameString = {
+  inline def apply(
+    parameters: PathEnvironmentnameString,
+    responses: `200ContentApplicationjsonCustomdeploymentprotectionrulesTotalcount`
+  ): ParametersPathEnvironmentnameString = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersPathEnvironmentnameString]
   }
@@ -22,6 +25,6 @@ object ParametersPathEnvironmentnameString {
     
     inline def setParameters(value: PathEnvironmentnameString): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `200ContentApplicationjson483`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `200ContentApplicationjsonCustomdeploymentprotectionrulesTotalcount`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

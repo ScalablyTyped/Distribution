@@ -8,27 +8,21 @@ trait ChargeItemDefinitionApplicability
   extends StObject
      with BackboneElement {
   
-  var _description: js.UndefOr[Element] = js.undefined
-  
-  var _expression: js.UndefOr[Element] = js.undefined
-  
-  var _language: js.UndefOr[Element] = js.undefined
-  
-  /**
-    * A brief, natural language description of the condition that effectively communicates the intended semantics.
-    */
-  var description: js.UndefOr[String] = js.undefined
-  
   /**
     * Please note that FHIRPath Expressions can only be evaluated in the scope of the current ChargeItem resource to which this definition is being applied.
     * FHIRPath expressions can traverse into other resources linked from the ChargeItem resource, however, testing rules such as that a billing code may be billed only once per encounter need a wider scope. In such scenarios, CQL may be the appropriate choice.
     */
-  var expression: js.UndefOr[String] = js.undefined
+  var condition: js.UndefOr[Expression] = js.undefined
   
   /**
-    * The media type of the language for the expression, e.g. "text/cql" for Clinical Query Language expressions or "text/fhirpath" for FHIRPath expressions.
+    * The effective period for a charge item definition  determines when the content is applicable for usage and is independent of publication and review dates. For example, a measure intended to be used for the year 2016 might be published in 2015.
     */
-  var language: js.UndefOr[String] = js.undefined
+  var effectivePeriod: js.UndefOr[Period] = js.undefined
+  
+  /**
+    * Reference to / quotation of the external source of the group of properties.
+    */
+  var relatedArtifact: js.UndefOr[RelatedArtifact] = js.undefined
 }
 object ChargeItemDefinitionApplicability {
   
@@ -40,28 +34,16 @@ object ChargeItemDefinitionApplicability {
   @scala.inline
   implicit open class MutableBuilder[Self <: ChargeItemDefinitionApplicability] (val x: Self) extends AnyVal {
     
-    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setCondition(value: Expression): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
-    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
     
-    inline def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+    inline def setEffectivePeriod(value: Period): Self = StObject.set(x, "effectivePeriod", value.asInstanceOf[js.Any])
     
-    inline def setExpressionUndefined: Self = StObject.set(x, "expression", js.undefined)
+    inline def setEffectivePeriodUndefined: Self = StObject.set(x, "effectivePeriod", js.undefined)
     
-    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setRelatedArtifact(value: RelatedArtifact): Self = StObject.set(x, "relatedArtifact", value.asInstanceOf[js.Any])
     
-    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
-    
-    inline def set_description(value: Element): Self = StObject.set(x, "_description", value.asInstanceOf[js.Any])
-    
-    inline def set_descriptionUndefined: Self = StObject.set(x, "_description", js.undefined)
-    
-    inline def set_expression(value: Element): Self = StObject.set(x, "_expression", value.asInstanceOf[js.Any])
-    
-    inline def set_expressionUndefined: Self = StObject.set(x, "_expression", js.undefined)
-    
-    inline def set_language(value: Element): Self = StObject.set(x, "_language", value.asInstanceOf[js.Any])
-    
-    inline def set_languageUndefined: Self = StObject.set(x, "_language", js.undefined)
+    inline def setRelatedArtifactUndefined: Self = StObject.set(x, "relatedArtifact", js.undefined)
   }
 }

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "query-string" : "7.1.1"
+      "query-string" : "8.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "query-string" : "7.1.1"
+      "query-string" : "8.1.0"
     }
   ],
   "compile-devDependencies" : [

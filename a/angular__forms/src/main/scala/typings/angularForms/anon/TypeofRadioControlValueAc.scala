@@ -32,7 +32,8 @@ trait TypeofRadioControlValueAc
     js.Object, 
     scala.Nothing, 
     scala.Nothing, 
-    `false`
+    `false`, 
+    scala.Nothing
   ] = js.native
   
   var ɵfac: ɵɵFactoryDeclaration[RadioControlValueAccessor, scala.Nothing] = js.native

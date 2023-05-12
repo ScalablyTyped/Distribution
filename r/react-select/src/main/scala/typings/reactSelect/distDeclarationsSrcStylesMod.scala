@@ -32,59 +32,665 @@ object distDeclarationsSrcStylesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("react-select/dist/declarations/src/styles", "defaultStyles")
-  @js.native
-  val defaultStyles: StylesFunctions[Any, Boolean, GroupBase[Any]] = js.native
+  /* Inlined {[ K in keyof react-select.react-select/dist/declarations/src/styles.StylesProps<any, any, any> ]: (props : react-select.react-select/dist/declarations/src/styles.StylesProps<unknown, boolean, react-select.react-select/dist/declarations/src/types.GroupBase<unknown>>[K], unstyled : boolean): react-select.react-select/dist/declarations/src/types.CSSObjectWithLabel} */
+  object defaultStyles {
+    
+    @JSImport("react-select/dist/declarations/src/styles", "defaultStyles")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("react-select/dist/declarations/src/styles", "defaultStyles.clearIndicator")
+    @js.native
+    def clearIndicator: js.Function2[
+        /* props */ ClearIndicatorProps[Any, Boolean, GroupBase[Any]], 
+        /* unstyled */ Boolean, 
+        CSSObjectWithLabel
+      ] = js.native
+    inline def clearIndicator_=(
+      x: js.Function2[
+          /* props */ ClearIndicatorProps[Any, Boolean, GroupBase[Any]], 
+          /* unstyled */ Boolean, 
+          CSSObjectWithLabel
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("clearIndicator")(x.asInstanceOf[js.Any])
+    
+    @JSImport("react-select/dist/declarations/src/styles", "defaultStyles.container")
+    @js.native
+    def container: js.Function2[
+        /* props */ ContainerProps[Any, Boolean, GroupBase[Any]], 
+        /* unstyled */ Boolean, 
+        CSSObjectWithLabel
+      ] = js.native
+    inline def container_=(
+      x: js.Function2[
+          /* props */ ContainerProps[Any, Boolean, GroupBase[Any]], 
+          /* unstyled */ Boolean, 
+          CSSObjectWithLabel
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("container")(x.asInstanceOf[js.Any])
+    
+    @JSImport("react-select/dist/declarations/src/styles", "defaultStyles.control")
+    @js.native
+    def control: js.Function2[
+        /* props */ ControlProps[Any, Boolean, GroupBase[Any]], 
+        /* unstyled */ Boolean, 
+        CSSObjectWithLabel
+      ] = js.native
+    inline def control_=(
+      x: js.Function2[
+          /* props */ ControlProps[Any, Boolean, GroupBase[Any]], 
+          /* unstyled */ Boolean, 
+          CSSObjectWithLabel
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("control")(x.asInstanceOf[js.Any])
+    
+    @JSImport("react-select/dist/declarations/src/styles", "defaultStyles.dropdownIndicator")
+    @js.native
+    def dropdownIndicator: js.Function2[
+        /* props */ DropdownIndicatorProps[Any, Boolean, GroupBase[Any]], 
+        /* unstyled */ Boolean, 
+        CSSObjectWithLabel
+      ] = js.native
+    inline def dropdownIndicator_=(
+      x: js.Function2[
+          /* props */ DropdownIndicatorProps[Any, Boolean, GroupBase[Any]], 
+          /* unstyled */ Boolean, 
+          CSSObjectWithLabel
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dropdownIndicator")(x.asInstanceOf[js.Any])
+    
+    @JSImport("react-select/dist/declarations/src/styles", "defaultStyles.group")
+    @js.native
+    def group: js.Function2[
+        /* props */ GroupProps[Any, Boolean, GroupBase[Any]], 
+        /* unstyled */ Boolean, 
+        CSSObjectWithLabel
+      ] = js.native
+    
+    @JSImport("react-select/dist/declarations/src/styles", "defaultStyles.groupHeading")
+    @js.native
+    def groupHeading: js.Function2[
+        /* props */ GroupHeadingProps[Any, Boolean, GroupBase[Any]], 
+        /* unstyled */ Boolean, 
+        CSSObjectWithLabel
+      ] = js.native
+    inline def groupHeading_=(
+      x: js.Function2[
+          /* props */ GroupHeadingProps[Any, Boolean, GroupBase[Any]], 
+          /* unstyled */ Boolean, 
+          CSSObjectWithLabel
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("groupHeading")(x.asInstanceOf[js.Any])
+    
+    inline def group_=(
+      x: js.Function2[
+          /* props */ GroupProps[Any, Boolean, GroupBase[Any]], 
+          /* unstyled */ Boolean, 
+          CSSObjectWithLabel
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("group")(x.asInstanceOf[js.Any])
+    
+    @JSImport("react-select/dist/declarations/src/styles", "defaultStyles.indicatorSeparator")
+    @js.native
+    def indicatorSeparator: js.Function2[
+        /* props */ IndicatorSeparatorProps[Any, Boolean, GroupBase[Any]], 
+        /* unstyled */ Boolean, 
+        CSSObjectWithLabel
+      ] = js.native
+    inline def indicatorSeparator_=(
+      x: js.Function2[
+          /* props */ IndicatorSeparatorProps[Any, Boolean, GroupBase[Any]], 
+          /* unstyled */ Boolean, 
+          CSSObjectWithLabel
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("indicatorSeparator")(x.asInstanceOf[js.Any])
+    
+    @JSImport("react-select/dist/declarations/src/styles", "defaultStyles.indicatorsContainer")
+    @js.native
+    def indicatorsContainer: js.Function2[
+        /* props */ IndicatorsContainerProps[Any, Boolean, GroupBase[Any]], 
+        /* unstyled */ Boolean, 
+        CSSObjectWithLabel
+      ] = js.native
+    inline def indicatorsContainer_=(
+      x: js.Function2[
+          /* props */ IndicatorsContainerProps[Any, Boolean, GroupBase[Any]], 
+          /* unstyled */ Boolean, 
+          CSSObjectWithLabel
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("indicatorsContainer")(x.asInstanceOf[js.Any])
+    
+    @JSImport("react-select/dist/declarations/src/styles", "defaultStyles.input")
+    @js.native
+    def input: js.Function2[
+        /* props */ InputProps[Any, Boolean, GroupBase[Any]], 
+        /* unstyled */ Boolean, 
+        CSSObjectWithLabel
+      ] = js.native
+    inline def input_=(
+      x: js.Function2[
+          /* props */ InputProps[Any, Boolean, GroupBase[Any]], 
+          /* unstyled */ Boolean, 
+          CSSObjectWithLabel
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("input")(x.asInstanceOf[js.Any])
+    
+    @JSImport("react-select/dist/declarations/src/styles", "defaultStyles.loadingIndicator")
+    @js.native
+    def loadingIndicator: js.Function2[
+        /* props */ LoadingIndicatorProps[Any, Boolean, GroupBase[Any]], 
+        /* unstyled */ Boolean, 
+        CSSObjectWithLabel
+      ] = js.native
+    inline def loadingIndicator_=(
+      x: js.Function2[
+          /* props */ LoadingIndicatorProps[Any, Boolean, GroupBase[Any]], 
+          /* unstyled */ Boolean, 
+          CSSObjectWithLabel
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("loadingIndicator")(x.asInstanceOf[js.Any])
+    
+    @JSImport("react-select/dist/declarations/src/styles", "defaultStyles.loadingMessage")
+    @js.native
+    def loadingMessage: js.Function2[
+        /* props */ NoticeProps[Any, Boolean, GroupBase[Any]], 
+        /* unstyled */ Boolean, 
+        CSSObjectWithLabel
+      ] = js.native
+    inline def loadingMessage_=(
+      x: js.Function2[
+          /* props */ NoticeProps[Any, Boolean, GroupBase[Any]], 
+          /* unstyled */ Boolean, 
+          CSSObjectWithLabel
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("loadingMessage")(x.asInstanceOf[js.Any])
+    
+    @JSImport("react-select/dist/declarations/src/styles", "defaultStyles.menu")
+    @js.native
+    def menu: js.Function2[
+        /* props */ MenuProps[Any, Boolean, GroupBase[Any]], 
+        /* unstyled */ Boolean, 
+        CSSObjectWithLabel
+      ] = js.native
+    
+    @JSImport("react-select/dist/declarations/src/styles", "defaultStyles.menuList")
+    @js.native
+    def menuList: js.Function2[
+        /* props */ MenuListProps[Any, Boolean, GroupBase[Any]], 
+        /* unstyled */ Boolean, 
+        CSSObjectWithLabel
+      ] = js.native
+    inline def menuList_=(
+      x: js.Function2[
+          /* props */ MenuListProps[Any, Boolean, GroupBase[Any]], 
+          /* unstyled */ Boolean, 
+          CSSObjectWithLabel
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("menuList")(x.asInstanceOf[js.Any])
+    
+    @JSImport("react-select/dist/declarations/src/styles", "defaultStyles.menuPortal")
+    @js.native
+    def menuPortal: js.Function2[/* props */ PortalStyleArgs, /* unstyled */ Boolean, CSSObjectWithLabel] = js.native
+    inline def menuPortal_=(x: js.Function2[/* props */ PortalStyleArgs, /* unstyled */ Boolean, CSSObjectWithLabel]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("menuPortal")(x.asInstanceOf[js.Any])
+    
+    inline def menu_=(
+      x: js.Function2[
+          /* props */ MenuProps[Any, Boolean, GroupBase[Any]], 
+          /* unstyled */ Boolean, 
+          CSSObjectWithLabel
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("menu")(x.asInstanceOf[js.Any])
+    
+    @JSImport("react-select/dist/declarations/src/styles", "defaultStyles.multiValue")
+    @js.native
+    def multiValue: js.Function2[
+        /* props */ MultiValueProps[Any, Boolean, GroupBase[Any]], 
+        /* unstyled */ Boolean, 
+        CSSObjectWithLabel
+      ] = js.native
+    
+    @JSImport("react-select/dist/declarations/src/styles", "defaultStyles.multiValueLabel")
+    @js.native
+    def multiValueLabel: js.Function2[
+        /* props */ MultiValueProps[Any, Boolean, GroupBase[Any]], 
+        /* unstyled */ Boolean, 
+        CSSObjectWithLabel
+      ] = js.native
+    inline def multiValueLabel_=(
+      x: js.Function2[
+          /* props */ MultiValueProps[Any, Boolean, GroupBase[Any]], 
+          /* unstyled */ Boolean, 
+          CSSObjectWithLabel
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("multiValueLabel")(x.asInstanceOf[js.Any])
+    
+    @JSImport("react-select/dist/declarations/src/styles", "defaultStyles.multiValueRemove")
+    @js.native
+    def multiValueRemove: js.Function2[
+        /* props */ MultiValueProps[Any, Boolean, GroupBase[Any]], 
+        /* unstyled */ Boolean, 
+        CSSObjectWithLabel
+      ] = js.native
+    inline def multiValueRemove_=(
+      x: js.Function2[
+          /* props */ MultiValueProps[Any, Boolean, GroupBase[Any]], 
+          /* unstyled */ Boolean, 
+          CSSObjectWithLabel
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("multiValueRemove")(x.asInstanceOf[js.Any])
+    
+    inline def multiValue_=(
+      x: js.Function2[
+          /* props */ MultiValueProps[Any, Boolean, GroupBase[Any]], 
+          /* unstyled */ Boolean, 
+          CSSObjectWithLabel
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("multiValue")(x.asInstanceOf[js.Any])
+    
+    @JSImport("react-select/dist/declarations/src/styles", "defaultStyles.noOptionsMessage")
+    @js.native
+    def noOptionsMessage: js.Function2[
+        /* props */ NoticeProps[Any, Boolean, GroupBase[Any]], 
+        /* unstyled */ Boolean, 
+        CSSObjectWithLabel
+      ] = js.native
+    inline def noOptionsMessage_=(
+      x: js.Function2[
+          /* props */ NoticeProps[Any, Boolean, GroupBase[Any]], 
+          /* unstyled */ Boolean, 
+          CSSObjectWithLabel
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("noOptionsMessage")(x.asInstanceOf[js.Any])
+    
+    @JSImport("react-select/dist/declarations/src/styles", "defaultStyles.option")
+    @js.native
+    def option: js.Function2[
+        /* props */ OptionProps[Any, Boolean, GroupBase[Any]], 
+        /* unstyled */ Boolean, 
+        CSSObjectWithLabel
+      ] = js.native
+    inline def option_=(
+      x: js.Function2[
+          /* props */ OptionProps[Any, Boolean, GroupBase[Any]], 
+          /* unstyled */ Boolean, 
+          CSSObjectWithLabel
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("option")(x.asInstanceOf[js.Any])
+    
+    @JSImport("react-select/dist/declarations/src/styles", "defaultStyles.placeholder")
+    @js.native
+    def placeholder: js.Function2[
+        /* props */ PlaceholderProps[Any, Boolean, GroupBase[Any]], 
+        /* unstyled */ Boolean, 
+        CSSObjectWithLabel
+      ] = js.native
+    inline def placeholder_=(
+      x: js.Function2[
+          /* props */ PlaceholderProps[Any, Boolean, GroupBase[Any]], 
+          /* unstyled */ Boolean, 
+          CSSObjectWithLabel
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("placeholder")(x.asInstanceOf[js.Any])
+    
+    @JSImport("react-select/dist/declarations/src/styles", "defaultStyles.singleValue")
+    @js.native
+    def singleValue: js.Function2[
+        /* props */ SingleValueProps[Any, Boolean, GroupBase[Any]], 
+        /* unstyled */ Boolean, 
+        CSSObjectWithLabel
+      ] = js.native
+    inline def singleValue_=(
+      x: js.Function2[
+          /* props */ SingleValueProps[Any, Boolean, GroupBase[Any]], 
+          /* unstyled */ Boolean, 
+          CSSObjectWithLabel
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("singleValue")(x.asInstanceOf[js.Any])
+    
+    @JSImport("react-select/dist/declarations/src/styles", "defaultStyles.valueContainer")
+    @js.native
+    def valueContainer: js.Function2[
+        /* props */ ValueContainerProps[Any, Boolean, GroupBase[Any]], 
+        /* unstyled */ Boolean, 
+        CSSObjectWithLabel
+      ] = js.native
+    inline def valueContainer_=(
+      x: js.Function2[
+          /* props */ ValueContainerProps[Any, Boolean, GroupBase[Any]], 
+          /* unstyled */ Boolean, 
+          CSSObjectWithLabel
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("valueContainer")(x.asInstanceOf[js.Any])
+  }
   
   inline def mergeStyles[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](source: StylesConfig[Option, IsMulti, Group]): Container[Option, IsMulti, Group] = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeStyles")(source.asInstanceOf[js.Any]).asInstanceOf[Container[Option, IsMulti, Group]]
   inline def mergeStyles[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](source: StylesConfig[Option, IsMulti, Group], target: StylesConfig[Option, IsMulti, Group]): Container[Option, IsMulti, Group] = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeStyles")(source.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Container[Option, IsMulti, Group]]
   
-  /* Inlined {[ K in keyof react-select.react-select/dist/declarations/src/styles.StylesProps<Option, IsMulti, Group> ]:? react-select.react-select/dist/declarations/src/styles.StylesConfigFunction<react-select.react-select/dist/declarations/src/styles.StylesProps<Option, IsMulti, Group>[K]>} */
+  /* Inlined {[ K in keyof react-select.react-select/dist/declarations/src/styles.StylesProps<Option, IsMulti, Group> ]:? (props : react-select.react-select/dist/declarations/src/styles.StylesProps<Option, IsMulti, Group>[K]): string} */
+  trait ClassNamesConfig[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */] extends StObject {
+    
+    var clearIndicator: js.UndefOr[js.Function1[/* props */ ClearIndicatorProps[Option, IsMulti, Group], String]] = js.undefined
+    
+    var container: js.UndefOr[js.Function1[/* props */ ContainerProps[Option, IsMulti, Group], String]] = js.undefined
+    
+    var control: js.UndefOr[js.Function1[/* props */ ControlProps[Option, IsMulti, Group], String]] = js.undefined
+    
+    var dropdownIndicator: js.UndefOr[js.Function1[/* props */ DropdownIndicatorProps[Option, IsMulti, Group], String]] = js.undefined
+    
+    var group: js.UndefOr[js.Function1[/* props */ GroupProps[Option, IsMulti, Group], String]] = js.undefined
+    
+    var groupHeading: js.UndefOr[js.Function1[/* props */ GroupHeadingProps[Option, IsMulti, Group], String]] = js.undefined
+    
+    var indicatorSeparator: js.UndefOr[
+        js.Function1[/* props */ IndicatorSeparatorProps[Option, IsMulti, Group], String]
+      ] = js.undefined
+    
+    var indicatorsContainer: js.UndefOr[
+        js.Function1[/* props */ IndicatorsContainerProps[Option, IsMulti, Group], String]
+      ] = js.undefined
+    
+    var input: js.UndefOr[js.Function1[/* props */ InputProps[Option, IsMulti, Group], String]] = js.undefined
+    
+    var loadingIndicator: js.UndefOr[js.Function1[/* props */ LoadingIndicatorProps[Option, IsMulti, Group], String]] = js.undefined
+    
+    var loadingMessage: js.UndefOr[js.Function1[/* props */ NoticeProps[Option, IsMulti, Group], String]] = js.undefined
+    
+    var menu: js.UndefOr[js.Function1[/* props */ MenuProps[Option, IsMulti, Group], String]] = js.undefined
+    
+    var menuList: js.UndefOr[js.Function1[/* props */ MenuListProps[Option, IsMulti, Group], String]] = js.undefined
+    
+    var menuPortal: js.UndefOr[js.Function1[/* props */ PortalStyleArgs, String]] = js.undefined
+    
+    var multiValue: js.UndefOr[js.Function1[/* props */ MultiValueProps[Option, IsMulti, Group], String]] = js.undefined
+    
+    var multiValueLabel: js.UndefOr[js.Function1[/* props */ MultiValueProps[Option, IsMulti, Group], String]] = js.undefined
+    
+    var multiValueRemove: js.UndefOr[js.Function1[/* props */ MultiValueProps[Option, IsMulti, Group], String]] = js.undefined
+    
+    var noOptionsMessage: js.UndefOr[js.Function1[/* props */ NoticeProps[Option, IsMulti, Group], String]] = js.undefined
+    
+    var option: js.UndefOr[js.Function1[/* props */ OptionProps[Option, IsMulti, Group], String]] = js.undefined
+    
+    var placeholder: js.UndefOr[js.Function1[/* props */ PlaceholderProps[Option, IsMulti, Group], String]] = js.undefined
+    
+    var singleValue: js.UndefOr[js.Function1[/* props */ SingleValueProps[Option, IsMulti, Group], String]] = js.undefined
+    
+    var valueContainer: js.UndefOr[js.Function1[/* props */ ValueContainerProps[Option, IsMulti, Group], String]] = js.undefined
+  }
+  object ClassNamesConfig {
+    
+    inline def apply[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](): ClassNamesConfig[Option, IsMulti, Group] = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ClassNamesConfig[Option, IsMulti, Group]]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClassNamesConfig[?, ?, ?], Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */] (val x: Self & (ClassNamesConfig[Option, IsMulti, Group])) extends AnyVal {
+      
+      inline def setClearIndicator(value: /* props */ ClearIndicatorProps[Option, IsMulti, Group] => String): Self = StObject.set(x, "clearIndicator", js.Any.fromFunction1(value))
+      
+      inline def setClearIndicatorUndefined: Self = StObject.set(x, "clearIndicator", js.undefined)
+      
+      inline def setContainer(value: /* props */ ContainerProps[Option, IsMulti, Group] => String): Self = StObject.set(x, "container", js.Any.fromFunction1(value))
+      
+      inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+      
+      inline def setControl(value: /* props */ ControlProps[Option, IsMulti, Group] => String): Self = StObject.set(x, "control", js.Any.fromFunction1(value))
+      
+      inline def setControlUndefined: Self = StObject.set(x, "control", js.undefined)
+      
+      inline def setDropdownIndicator(value: /* props */ DropdownIndicatorProps[Option, IsMulti, Group] => String): Self = StObject.set(x, "dropdownIndicator", js.Any.fromFunction1(value))
+      
+      inline def setDropdownIndicatorUndefined: Self = StObject.set(x, "dropdownIndicator", js.undefined)
+      
+      inline def setGroup(value: /* props */ GroupProps[Option, IsMulti, Group] => String): Self = StObject.set(x, "group", js.Any.fromFunction1(value))
+      
+      inline def setGroupHeading(value: /* props */ GroupHeadingProps[Option, IsMulti, Group] => String): Self = StObject.set(x, "groupHeading", js.Any.fromFunction1(value))
+      
+      inline def setGroupHeadingUndefined: Self = StObject.set(x, "groupHeading", js.undefined)
+      
+      inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
+      
+      inline def setIndicatorSeparator(value: /* props */ IndicatorSeparatorProps[Option, IsMulti, Group] => String): Self = StObject.set(x, "indicatorSeparator", js.Any.fromFunction1(value))
+      
+      inline def setIndicatorSeparatorUndefined: Self = StObject.set(x, "indicatorSeparator", js.undefined)
+      
+      inline def setIndicatorsContainer(value: /* props */ IndicatorsContainerProps[Option, IsMulti, Group] => String): Self = StObject.set(x, "indicatorsContainer", js.Any.fromFunction1(value))
+      
+      inline def setIndicatorsContainerUndefined: Self = StObject.set(x, "indicatorsContainer", js.undefined)
+      
+      inline def setInput(value: /* props */ InputProps[Option, IsMulti, Group] => String): Self = StObject.set(x, "input", js.Any.fromFunction1(value))
+      
+      inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
+      
+      inline def setLoadingIndicator(value: /* props */ LoadingIndicatorProps[Option, IsMulti, Group] => String): Self = StObject.set(x, "loadingIndicator", js.Any.fromFunction1(value))
+      
+      inline def setLoadingIndicatorUndefined: Self = StObject.set(x, "loadingIndicator", js.undefined)
+      
+      inline def setLoadingMessage(value: /* props */ NoticeProps[Option, IsMulti, Group] => String): Self = StObject.set(x, "loadingMessage", js.Any.fromFunction1(value))
+      
+      inline def setLoadingMessageUndefined: Self = StObject.set(x, "loadingMessage", js.undefined)
+      
+      inline def setMenu(value: /* props */ MenuProps[Option, IsMulti, Group] => String): Self = StObject.set(x, "menu", js.Any.fromFunction1(value))
+      
+      inline def setMenuList(value: /* props */ MenuListProps[Option, IsMulti, Group] => String): Self = StObject.set(x, "menuList", js.Any.fromFunction1(value))
+      
+      inline def setMenuListUndefined: Self = StObject.set(x, "menuList", js.undefined)
+      
+      inline def setMenuPortal(value: /* props */ PortalStyleArgs => String): Self = StObject.set(x, "menuPortal", js.Any.fromFunction1(value))
+      
+      inline def setMenuPortalUndefined: Self = StObject.set(x, "menuPortal", js.undefined)
+      
+      inline def setMenuUndefined: Self = StObject.set(x, "menu", js.undefined)
+      
+      inline def setMultiValue(value: /* props */ MultiValueProps[Option, IsMulti, Group] => String): Self = StObject.set(x, "multiValue", js.Any.fromFunction1(value))
+      
+      inline def setMultiValueLabel(value: /* props */ MultiValueProps[Option, IsMulti, Group] => String): Self = StObject.set(x, "multiValueLabel", js.Any.fromFunction1(value))
+      
+      inline def setMultiValueLabelUndefined: Self = StObject.set(x, "multiValueLabel", js.undefined)
+      
+      inline def setMultiValueRemove(value: /* props */ MultiValueProps[Option, IsMulti, Group] => String): Self = StObject.set(x, "multiValueRemove", js.Any.fromFunction1(value))
+      
+      inline def setMultiValueRemoveUndefined: Self = StObject.set(x, "multiValueRemove", js.undefined)
+      
+      inline def setMultiValueUndefined: Self = StObject.set(x, "multiValue", js.undefined)
+      
+      inline def setNoOptionsMessage(value: /* props */ NoticeProps[Option, IsMulti, Group] => String): Self = StObject.set(x, "noOptionsMessage", js.Any.fromFunction1(value))
+      
+      inline def setNoOptionsMessageUndefined: Self = StObject.set(x, "noOptionsMessage", js.undefined)
+      
+      inline def setOption(value: /* props */ OptionProps[Option, IsMulti, Group] => String): Self = StObject.set(x, "option", js.Any.fromFunction1(value))
+      
+      inline def setOptionUndefined: Self = StObject.set(x, "option", js.undefined)
+      
+      inline def setPlaceholder(value: /* props */ PlaceholderProps[Option, IsMulti, Group] => String): Self = StObject.set(x, "placeholder", js.Any.fromFunction1(value))
+      
+      inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
+      
+      inline def setSingleValue(value: /* props */ SingleValueProps[Option, IsMulti, Group] => String): Self = StObject.set(x, "singleValue", js.Any.fromFunction1(value))
+      
+      inline def setSingleValueUndefined: Self = StObject.set(x, "singleValue", js.undefined)
+      
+      inline def setValueContainer(value: /* props */ ValueContainerProps[Option, IsMulti, Group] => String): Self = StObject.set(x, "valueContainer", js.Any.fromFunction1(value))
+      
+      inline def setValueContainerUndefined: Self = StObject.set(x, "valueContainer", js.undefined)
+    }
+  }
+  
+  /* Inlined {[ K in keyof react-select.react-select/dist/declarations/src/styles.StylesProps<Option, IsMulti, Group> ]:? (base : react-select.react-select/dist/declarations/src/types.CSSObjectWithLabel, props : react-select.react-select/dist/declarations/src/styles.StylesProps<Option, IsMulti, Group>[K]): react-select.react-select/dist/declarations/src/types.CSSObjectWithLabel} */
   trait StylesConfig[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */] extends StObject {
     
-    var clearIndicator: js.UndefOr[StylesConfigFunction[ClearIndicatorProps[Option, IsMulti, Group]]] = js.undefined
+    var clearIndicator: js.UndefOr[
+        js.Function2[
+          /* base */ CSSObjectWithLabel, 
+          /* props */ ClearIndicatorProps[Option, IsMulti, Group], 
+          CSSObjectWithLabel
+        ]
+      ] = js.undefined
     
-    var container: js.UndefOr[StylesConfigFunction[ContainerProps[Option, IsMulti, Group]]] = js.undefined
+    var container: js.UndefOr[
+        js.Function2[
+          /* base */ CSSObjectWithLabel, 
+          /* props */ ContainerProps[Option, IsMulti, Group], 
+          CSSObjectWithLabel
+        ]
+      ] = js.undefined
     
-    var control: js.UndefOr[StylesConfigFunction[ControlProps[Option, IsMulti, Group]]] = js.undefined
+    var control: js.UndefOr[
+        js.Function2[
+          /* base */ CSSObjectWithLabel, 
+          /* props */ ControlProps[Option, IsMulti, Group], 
+          CSSObjectWithLabel
+        ]
+      ] = js.undefined
     
-    var dropdownIndicator: js.UndefOr[StylesConfigFunction[DropdownIndicatorProps[Option, IsMulti, Group]]] = js.undefined
+    var dropdownIndicator: js.UndefOr[
+        js.Function2[
+          /* base */ CSSObjectWithLabel, 
+          /* props */ DropdownIndicatorProps[Option, IsMulti, Group], 
+          CSSObjectWithLabel
+        ]
+      ] = js.undefined
     
-    var group: js.UndefOr[StylesConfigFunction[GroupProps[Option, IsMulti, Group]]] = js.undefined
+    var group: js.UndefOr[
+        js.Function2[
+          /* base */ CSSObjectWithLabel, 
+          /* props */ GroupProps[Option, IsMulti, Group], 
+          CSSObjectWithLabel
+        ]
+      ] = js.undefined
     
-    var groupHeading: js.UndefOr[StylesConfigFunction[GroupHeadingProps[Option, IsMulti, Group]]] = js.undefined
+    var groupHeading: js.UndefOr[
+        js.Function2[
+          /* base */ CSSObjectWithLabel, 
+          /* props */ GroupHeadingProps[Option, IsMulti, Group], 
+          CSSObjectWithLabel
+        ]
+      ] = js.undefined
     
-    var indicatorSeparator: js.UndefOr[StylesConfigFunction[IndicatorSeparatorProps[Option, IsMulti, Group]]] = js.undefined
+    var indicatorSeparator: js.UndefOr[
+        js.Function2[
+          /* base */ CSSObjectWithLabel, 
+          /* props */ IndicatorSeparatorProps[Option, IsMulti, Group], 
+          CSSObjectWithLabel
+        ]
+      ] = js.undefined
     
-    var indicatorsContainer: js.UndefOr[StylesConfigFunction[IndicatorsContainerProps[Option, IsMulti, Group]]] = js.undefined
+    var indicatorsContainer: js.UndefOr[
+        js.Function2[
+          /* base */ CSSObjectWithLabel, 
+          /* props */ IndicatorsContainerProps[Option, IsMulti, Group], 
+          CSSObjectWithLabel
+        ]
+      ] = js.undefined
     
-    var input: js.UndefOr[StylesConfigFunction[InputProps[Option, IsMulti, Group]]] = js.undefined
+    var input: js.UndefOr[
+        js.Function2[
+          /* base */ CSSObjectWithLabel, 
+          /* props */ InputProps[Option, IsMulti, Group], 
+          CSSObjectWithLabel
+        ]
+      ] = js.undefined
     
-    var loadingIndicator: js.UndefOr[StylesConfigFunction[LoadingIndicatorProps[Option, IsMulti, Group]]] = js.undefined
+    var loadingIndicator: js.UndefOr[
+        js.Function2[
+          /* base */ CSSObjectWithLabel, 
+          /* props */ LoadingIndicatorProps[Option, IsMulti, Group], 
+          CSSObjectWithLabel
+        ]
+      ] = js.undefined
     
-    var loadingMessage: js.UndefOr[StylesConfigFunction[NoticeProps[Option, IsMulti, Group]]] = js.undefined
+    var loadingMessage: js.UndefOr[
+        js.Function2[
+          /* base */ CSSObjectWithLabel, 
+          /* props */ NoticeProps[Option, IsMulti, Group], 
+          CSSObjectWithLabel
+        ]
+      ] = js.undefined
     
-    var menu: js.UndefOr[StylesConfigFunction[MenuProps[Option, IsMulti, Group]]] = js.undefined
+    var menu: js.UndefOr[
+        js.Function2[
+          /* base */ CSSObjectWithLabel, 
+          /* props */ MenuProps[Option, IsMulti, Group], 
+          CSSObjectWithLabel
+        ]
+      ] = js.undefined
     
-    var menuList: js.UndefOr[StylesConfigFunction[MenuListProps[Option, IsMulti, Group]]] = js.undefined
+    var menuList: js.UndefOr[
+        js.Function2[
+          /* base */ CSSObjectWithLabel, 
+          /* props */ MenuListProps[Option, IsMulti, Group], 
+          CSSObjectWithLabel
+        ]
+      ] = js.undefined
     
-    var menuPortal: js.UndefOr[StylesConfigFunction[PortalStyleArgs]] = js.undefined
+    var menuPortal: js.UndefOr[
+        js.Function2[/* base */ CSSObjectWithLabel, /* props */ PortalStyleArgs, CSSObjectWithLabel]
+      ] = js.undefined
     
-    var multiValue: js.UndefOr[StylesConfigFunction[MultiValueProps[Option, IsMulti, Group]]] = js.undefined
+    var multiValue: js.UndefOr[
+        js.Function2[
+          /* base */ CSSObjectWithLabel, 
+          /* props */ MultiValueProps[Option, IsMulti, Group], 
+          CSSObjectWithLabel
+        ]
+      ] = js.undefined
     
-    var multiValueLabel: js.UndefOr[StylesConfigFunction[MultiValueProps[Option, IsMulti, Group]]] = js.undefined
+    var multiValueLabel: js.UndefOr[
+        js.Function2[
+          /* base */ CSSObjectWithLabel, 
+          /* props */ MultiValueProps[Option, IsMulti, Group], 
+          CSSObjectWithLabel
+        ]
+      ] = js.undefined
     
-    var multiValueRemove: js.UndefOr[StylesConfigFunction[MultiValueProps[Option, IsMulti, Group]]] = js.undefined
+    var multiValueRemove: js.UndefOr[
+        js.Function2[
+          /* base */ CSSObjectWithLabel, 
+          /* props */ MultiValueProps[Option, IsMulti, Group], 
+          CSSObjectWithLabel
+        ]
+      ] = js.undefined
     
-    var noOptionsMessage: js.UndefOr[StylesConfigFunction[NoticeProps[Option, IsMulti, Group]]] = js.undefined
+    var noOptionsMessage: js.UndefOr[
+        js.Function2[
+          /* base */ CSSObjectWithLabel, 
+          /* props */ NoticeProps[Option, IsMulti, Group], 
+          CSSObjectWithLabel
+        ]
+      ] = js.undefined
     
-    var option: js.UndefOr[StylesConfigFunction[OptionProps[Option, IsMulti, Group]]] = js.undefined
+    var option: js.UndefOr[
+        js.Function2[
+          /* base */ CSSObjectWithLabel, 
+          /* props */ OptionProps[Option, IsMulti, Group], 
+          CSSObjectWithLabel
+        ]
+      ] = js.undefined
     
-    var placeholder: js.UndefOr[StylesConfigFunction[PlaceholderProps[Option, IsMulti, Group]]] = js.undefined
+    var placeholder: js.UndefOr[
+        js.Function2[
+          /* base */ CSSObjectWithLabel, 
+          /* props */ PlaceholderProps[Option, IsMulti, Group], 
+          CSSObjectWithLabel
+        ]
+      ] = js.undefined
     
-    var singleValue: js.UndefOr[StylesConfigFunction[SingleValueProps[Option, IsMulti, Group]]] = js.undefined
+    var singleValue: js.UndefOr[
+        js.Function2[
+          /* base */ CSSObjectWithLabel, 
+          /* props */ SingleValueProps[Option, IsMulti, Group], 
+          CSSObjectWithLabel
+        ]
+      ] = js.undefined
     
-    var valueContainer: js.UndefOr[StylesConfigFunction[ValueContainerProps[Option, IsMulti, Group]]] = js.undefined
+    var valueContainer: js.UndefOr[
+        js.Function2[
+          /* base */ CSSObjectWithLabel, 
+          /* props */ ValueContainerProps[Option, IsMulti, Group], 
+          CSSObjectWithLabel
+        ]
+      ] = js.undefined
   }
   object StylesConfig {
     
@@ -97,31 +703,35 @@ object distDeclarationsSrcStylesMod {
     implicit open class MutableBuilder[Self <: StylesConfig[?, ?, ?], Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */] (val x: Self & (StylesConfig[Option, IsMulti, Group])) extends AnyVal {
       
       inline def setClearIndicator(
-        value: (/* base */ CSSObjectWithLabel, ClearIndicatorProps[Option, IsMulti, Group]) => CSSObjectWithLabel
+        value: (/* base */ CSSObjectWithLabel, /* props */ ClearIndicatorProps[Option, IsMulti, Group]) => CSSObjectWithLabel
       ): Self = StObject.set(x, "clearIndicator", js.Any.fromFunction2(value))
       
       inline def setClearIndicatorUndefined: Self = StObject.set(x, "clearIndicator", js.undefined)
       
       inline def setContainer(
-        value: (/* base */ CSSObjectWithLabel, ContainerProps[Option, IsMulti, Group]) => CSSObjectWithLabel
+        value: (/* base */ CSSObjectWithLabel, /* props */ ContainerProps[Option, IsMulti, Group]) => CSSObjectWithLabel
       ): Self = StObject.set(x, "container", js.Any.fromFunction2(value))
       
       inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
       
-      inline def setControl(value: (/* base */ CSSObjectWithLabel, ControlProps[Option, IsMulti, Group]) => CSSObjectWithLabel): Self = StObject.set(x, "control", js.Any.fromFunction2(value))
+      inline def setControl(
+        value: (/* base */ CSSObjectWithLabel, /* props */ ControlProps[Option, IsMulti, Group]) => CSSObjectWithLabel
+      ): Self = StObject.set(x, "control", js.Any.fromFunction2(value))
       
       inline def setControlUndefined: Self = StObject.set(x, "control", js.undefined)
       
       inline def setDropdownIndicator(
-        value: (/* base */ CSSObjectWithLabel, DropdownIndicatorProps[Option, IsMulti, Group]) => CSSObjectWithLabel
+        value: (/* base */ CSSObjectWithLabel, /* props */ DropdownIndicatorProps[Option, IsMulti, Group]) => CSSObjectWithLabel
       ): Self = StObject.set(x, "dropdownIndicator", js.Any.fromFunction2(value))
       
       inline def setDropdownIndicatorUndefined: Self = StObject.set(x, "dropdownIndicator", js.undefined)
       
-      inline def setGroup(value: (/* base */ CSSObjectWithLabel, GroupProps[Option, IsMulti, Group]) => CSSObjectWithLabel): Self = StObject.set(x, "group", js.Any.fromFunction2(value))
+      inline def setGroup(
+        value: (/* base */ CSSObjectWithLabel, /* props */ GroupProps[Option, IsMulti, Group]) => CSSObjectWithLabel
+      ): Self = StObject.set(x, "group", js.Any.fromFunction2(value))
       
       inline def setGroupHeading(
-        value: (/* base */ CSSObjectWithLabel, GroupHeadingProps[Option, IsMulti, Group]) => CSSObjectWithLabel
+        value: (/* base */ CSSObjectWithLabel, /* props */ GroupHeadingProps[Option, IsMulti, Group]) => CSSObjectWithLabel
       ): Self = StObject.set(x, "groupHeading", js.Any.fromFunction2(value))
       
       inline def setGroupHeadingUndefined: Self = StObject.set(x, "groupHeading", js.undefined)
@@ -129,218 +739,98 @@ object distDeclarationsSrcStylesMod {
       inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
       
       inline def setIndicatorSeparator(
-        value: (/* base */ CSSObjectWithLabel, IndicatorSeparatorProps[Option, IsMulti, Group]) => CSSObjectWithLabel
+        value: (/* base */ CSSObjectWithLabel, /* props */ IndicatorSeparatorProps[Option, IsMulti, Group]) => CSSObjectWithLabel
       ): Self = StObject.set(x, "indicatorSeparator", js.Any.fromFunction2(value))
       
       inline def setIndicatorSeparatorUndefined: Self = StObject.set(x, "indicatorSeparator", js.undefined)
       
       inline def setIndicatorsContainer(
-        value: (/* base */ CSSObjectWithLabel, IndicatorsContainerProps[Option, IsMulti, Group]) => CSSObjectWithLabel
+        value: (/* base */ CSSObjectWithLabel, /* props */ IndicatorsContainerProps[Option, IsMulti, Group]) => CSSObjectWithLabel
       ): Self = StObject.set(x, "indicatorsContainer", js.Any.fromFunction2(value))
       
       inline def setIndicatorsContainerUndefined: Self = StObject.set(x, "indicatorsContainer", js.undefined)
       
-      inline def setInput(value: (/* base */ CSSObjectWithLabel, InputProps[Option, IsMulti, Group]) => CSSObjectWithLabel): Self = StObject.set(x, "input", js.Any.fromFunction2(value))
+      inline def setInput(
+        value: (/* base */ CSSObjectWithLabel, /* props */ InputProps[Option, IsMulti, Group]) => CSSObjectWithLabel
+      ): Self = StObject.set(x, "input", js.Any.fromFunction2(value))
       
       inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
       
       inline def setLoadingIndicator(
-        value: (/* base */ CSSObjectWithLabel, LoadingIndicatorProps[Option, IsMulti, Group]) => CSSObjectWithLabel
+        value: (/* base */ CSSObjectWithLabel, /* props */ LoadingIndicatorProps[Option, IsMulti, Group]) => CSSObjectWithLabel
       ): Self = StObject.set(x, "loadingIndicator", js.Any.fromFunction2(value))
       
       inline def setLoadingIndicatorUndefined: Self = StObject.set(x, "loadingIndicator", js.undefined)
       
-      inline def setLoadingMessage(value: (/* base */ CSSObjectWithLabel, NoticeProps[Option, IsMulti, Group]) => CSSObjectWithLabel): Self = StObject.set(x, "loadingMessage", js.Any.fromFunction2(value))
+      inline def setLoadingMessage(
+        value: (/* base */ CSSObjectWithLabel, /* props */ NoticeProps[Option, IsMulti, Group]) => CSSObjectWithLabel
+      ): Self = StObject.set(x, "loadingMessage", js.Any.fromFunction2(value))
       
       inline def setLoadingMessageUndefined: Self = StObject.set(x, "loadingMessage", js.undefined)
       
-      inline def setMenu(value: (/* base */ CSSObjectWithLabel, MenuProps[Option, IsMulti, Group]) => CSSObjectWithLabel): Self = StObject.set(x, "menu", js.Any.fromFunction2(value))
+      inline def setMenu(
+        value: (/* base */ CSSObjectWithLabel, /* props */ MenuProps[Option, IsMulti, Group]) => CSSObjectWithLabel
+      ): Self = StObject.set(x, "menu", js.Any.fromFunction2(value))
       
       inline def setMenuList(
-        value: (/* base */ CSSObjectWithLabel, MenuListProps[Option, IsMulti, Group]) => CSSObjectWithLabel
+        value: (/* base */ CSSObjectWithLabel, /* props */ MenuListProps[Option, IsMulti, Group]) => CSSObjectWithLabel
       ): Self = StObject.set(x, "menuList", js.Any.fromFunction2(value))
       
       inline def setMenuListUndefined: Self = StObject.set(x, "menuList", js.undefined)
       
-      inline def setMenuPortal(value: (/* base */ CSSObjectWithLabel, PortalStyleArgs) => CSSObjectWithLabel): Self = StObject.set(x, "menuPortal", js.Any.fromFunction2(value))
+      inline def setMenuPortal(value: (/* base */ CSSObjectWithLabel, /* props */ PortalStyleArgs) => CSSObjectWithLabel): Self = StObject.set(x, "menuPortal", js.Any.fromFunction2(value))
       
       inline def setMenuPortalUndefined: Self = StObject.set(x, "menuPortal", js.undefined)
       
       inline def setMenuUndefined: Self = StObject.set(x, "menu", js.undefined)
       
       inline def setMultiValue(
-        value: (/* base */ CSSObjectWithLabel, MultiValueProps[Option, IsMulti, Group]) => CSSObjectWithLabel
+        value: (/* base */ CSSObjectWithLabel, /* props */ MultiValueProps[Option, IsMulti, Group]) => CSSObjectWithLabel
       ): Self = StObject.set(x, "multiValue", js.Any.fromFunction2(value))
       
       inline def setMultiValueLabel(
-        value: (/* base */ CSSObjectWithLabel, MultiValueProps[Option, IsMulti, Group]) => CSSObjectWithLabel
+        value: (/* base */ CSSObjectWithLabel, /* props */ MultiValueProps[Option, IsMulti, Group]) => CSSObjectWithLabel
       ): Self = StObject.set(x, "multiValueLabel", js.Any.fromFunction2(value))
       
       inline def setMultiValueLabelUndefined: Self = StObject.set(x, "multiValueLabel", js.undefined)
       
       inline def setMultiValueRemove(
-        value: (/* base */ CSSObjectWithLabel, MultiValueProps[Option, IsMulti, Group]) => CSSObjectWithLabel
+        value: (/* base */ CSSObjectWithLabel, /* props */ MultiValueProps[Option, IsMulti, Group]) => CSSObjectWithLabel
       ): Self = StObject.set(x, "multiValueRemove", js.Any.fromFunction2(value))
       
       inline def setMultiValueRemoveUndefined: Self = StObject.set(x, "multiValueRemove", js.undefined)
       
       inline def setMultiValueUndefined: Self = StObject.set(x, "multiValue", js.undefined)
       
-      inline def setNoOptionsMessage(value: (/* base */ CSSObjectWithLabel, NoticeProps[Option, IsMulti, Group]) => CSSObjectWithLabel): Self = StObject.set(x, "noOptionsMessage", js.Any.fromFunction2(value))
+      inline def setNoOptionsMessage(
+        value: (/* base */ CSSObjectWithLabel, /* props */ NoticeProps[Option, IsMulti, Group]) => CSSObjectWithLabel
+      ): Self = StObject.set(x, "noOptionsMessage", js.Any.fromFunction2(value))
       
       inline def setNoOptionsMessageUndefined: Self = StObject.set(x, "noOptionsMessage", js.undefined)
       
-      inline def setOption(value: (/* base */ CSSObjectWithLabel, OptionProps[Option, IsMulti, Group]) => CSSObjectWithLabel): Self = StObject.set(x, "option", js.Any.fromFunction2(value))
+      inline def setOption(
+        value: (/* base */ CSSObjectWithLabel, /* props */ OptionProps[Option, IsMulti, Group]) => CSSObjectWithLabel
+      ): Self = StObject.set(x, "option", js.Any.fromFunction2(value))
       
       inline def setOptionUndefined: Self = StObject.set(x, "option", js.undefined)
       
       inline def setPlaceholder(
-        value: (/* base */ CSSObjectWithLabel, PlaceholderProps[Option, IsMulti, Group]) => CSSObjectWithLabel
+        value: (/* base */ CSSObjectWithLabel, /* props */ PlaceholderProps[Option, IsMulti, Group]) => CSSObjectWithLabel
       ): Self = StObject.set(x, "placeholder", js.Any.fromFunction2(value))
       
       inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
       
       inline def setSingleValue(
-        value: (/* base */ CSSObjectWithLabel, SingleValueProps[Option, IsMulti, Group]) => CSSObjectWithLabel
+        value: (/* base */ CSSObjectWithLabel, /* props */ SingleValueProps[Option, IsMulti, Group]) => CSSObjectWithLabel
       ): Self = StObject.set(x, "singleValue", js.Any.fromFunction2(value))
       
       inline def setSingleValueUndefined: Self = StObject.set(x, "singleValue", js.undefined)
       
       inline def setValueContainer(
-        value: (/* base */ CSSObjectWithLabel, ValueContainerProps[Option, IsMulti, Group]) => CSSObjectWithLabel
+        value: (/* base */ CSSObjectWithLabel, /* props */ ValueContainerProps[Option, IsMulti, Group]) => CSSObjectWithLabel
       ): Self = StObject.set(x, "valueContainer", js.Any.fromFunction2(value))
       
       inline def setValueContainerUndefined: Self = StObject.set(x, "valueContainer", js.undefined)
-    }
-  }
-  
-  type StylesConfigFunction[Props] = js.Function2[/* base */ CSSObjectWithLabel, /* props */ Props, CSSObjectWithLabel]
-  
-  type StylesFunction[Props] = js.Function1[/* props */ Props, CSSObjectWithLabel]
-  
-  /* Inlined {[ K in keyof react-select.react-select/dist/declarations/src/styles.StylesProps<Option, IsMulti, Group> ]: react-select.react-select/dist/declarations/src/styles.StylesFunction<react-select.react-select/dist/declarations/src/styles.StylesProps<Option, IsMulti, Group>[K]>} */
-  trait StylesFunctions[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */] extends StObject {
-    
-    var clearIndicator: StylesFunction[ClearIndicatorProps[Option, IsMulti, Group]]
-    
-    var container: StylesFunction[ContainerProps[Option, IsMulti, Group]]
-    
-    var control: StylesFunction[ControlProps[Option, IsMulti, Group]]
-    
-    var dropdownIndicator: StylesFunction[DropdownIndicatorProps[Option, IsMulti, Group]]
-    
-    var group: StylesFunction[GroupProps[Option, IsMulti, Group]]
-    
-    var groupHeading: StylesFunction[GroupHeadingProps[Option, IsMulti, Group]]
-    
-    var indicatorSeparator: StylesFunction[IndicatorSeparatorProps[Option, IsMulti, Group]]
-    
-    var indicatorsContainer: StylesFunction[IndicatorsContainerProps[Option, IsMulti, Group]]
-    
-    var input: StylesFunction[InputProps[Option, IsMulti, Group]]
-    
-    var loadingIndicator: StylesFunction[LoadingIndicatorProps[Option, IsMulti, Group]]
-    
-    var loadingMessage: StylesFunction[NoticeProps[Option, IsMulti, Group]]
-    
-    var menu: StylesFunction[MenuProps[Option, IsMulti, Group]]
-    
-    var menuList: StylesFunction[MenuListProps[Option, IsMulti, Group]]
-    
-    var menuPortal: StylesFunction[PortalStyleArgs]
-    
-    var multiValue: StylesFunction[MultiValueProps[Option, IsMulti, Group]]
-    
-    var multiValueLabel: StylesFunction[MultiValueProps[Option, IsMulti, Group]]
-    
-    var multiValueRemove: StylesFunction[MultiValueProps[Option, IsMulti, Group]]
-    
-    var noOptionsMessage: StylesFunction[NoticeProps[Option, IsMulti, Group]]
-    
-    var option: StylesFunction[OptionProps[Option, IsMulti, Group]]
-    
-    var placeholder: StylesFunction[PlaceholderProps[Option, IsMulti, Group]]
-    
-    var singleValue: StylesFunction[SingleValueProps[Option, IsMulti, Group]]
-    
-    var valueContainer: StylesFunction[ValueContainerProps[Option, IsMulti, Group]]
-  }
-  object StylesFunctions {
-    
-    inline def apply[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](
-      clearIndicator: ClearIndicatorProps[Option, IsMulti, Group] => CSSObjectWithLabel,
-      container: ContainerProps[Option, IsMulti, Group] => CSSObjectWithLabel,
-      control: ControlProps[Option, IsMulti, Group] => CSSObjectWithLabel,
-      dropdownIndicator: DropdownIndicatorProps[Option, IsMulti, Group] => CSSObjectWithLabel,
-      group: GroupProps[Option, IsMulti, Group] => CSSObjectWithLabel,
-      groupHeading: GroupHeadingProps[Option, IsMulti, Group] => CSSObjectWithLabel,
-      indicatorSeparator: IndicatorSeparatorProps[Option, IsMulti, Group] => CSSObjectWithLabel,
-      indicatorsContainer: IndicatorsContainerProps[Option, IsMulti, Group] => CSSObjectWithLabel,
-      input: InputProps[Option, IsMulti, Group] => CSSObjectWithLabel,
-      loadingIndicator: LoadingIndicatorProps[Option, IsMulti, Group] => CSSObjectWithLabel,
-      loadingMessage: NoticeProps[Option, IsMulti, Group] => CSSObjectWithLabel,
-      menu: MenuProps[Option, IsMulti, Group] => CSSObjectWithLabel,
-      menuList: MenuListProps[Option, IsMulti, Group] => CSSObjectWithLabel,
-      menuPortal: PortalStyleArgs => CSSObjectWithLabel,
-      multiValue: MultiValueProps[Option, IsMulti, Group] => CSSObjectWithLabel,
-      multiValueLabel: MultiValueProps[Option, IsMulti, Group] => CSSObjectWithLabel,
-      multiValueRemove: MultiValueProps[Option, IsMulti, Group] => CSSObjectWithLabel,
-      noOptionsMessage: NoticeProps[Option, IsMulti, Group] => CSSObjectWithLabel,
-      option: OptionProps[Option, IsMulti, Group] => CSSObjectWithLabel,
-      placeholder: PlaceholderProps[Option, IsMulti, Group] => CSSObjectWithLabel,
-      singleValue: SingleValueProps[Option, IsMulti, Group] => CSSObjectWithLabel,
-      valueContainer: ValueContainerProps[Option, IsMulti, Group] => CSSObjectWithLabel
-    ): StylesFunctions[Option, IsMulti, Group] = {
-      val __obj = js.Dynamic.literal(clearIndicator = js.Any.fromFunction1(clearIndicator), container = js.Any.fromFunction1(container), control = js.Any.fromFunction1(control), dropdownIndicator = js.Any.fromFunction1(dropdownIndicator), group = js.Any.fromFunction1(group), groupHeading = js.Any.fromFunction1(groupHeading), indicatorSeparator = js.Any.fromFunction1(indicatorSeparator), indicatorsContainer = js.Any.fromFunction1(indicatorsContainer), input = js.Any.fromFunction1(input), loadingIndicator = js.Any.fromFunction1(loadingIndicator), loadingMessage = js.Any.fromFunction1(loadingMessage), menu = js.Any.fromFunction1(menu), menuList = js.Any.fromFunction1(menuList), menuPortal = js.Any.fromFunction1(menuPortal), multiValue = js.Any.fromFunction1(multiValue), multiValueLabel = js.Any.fromFunction1(multiValueLabel), multiValueRemove = js.Any.fromFunction1(multiValueRemove), noOptionsMessage = js.Any.fromFunction1(noOptionsMessage), option = js.Any.fromFunction1(option), placeholder = js.Any.fromFunction1(placeholder), singleValue = js.Any.fromFunction1(singleValue), valueContainer = js.Any.fromFunction1(valueContainer))
-      __obj.asInstanceOf[StylesFunctions[Option, IsMulti, Group]]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: StylesFunctions[?, ?, ?], Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */] (val x: Self & (StylesFunctions[Option, IsMulti, Group])) extends AnyVal {
-      
-      inline def setClearIndicator(value: ClearIndicatorProps[Option, IsMulti, Group] => CSSObjectWithLabel): Self = StObject.set(x, "clearIndicator", js.Any.fromFunction1(value))
-      
-      inline def setContainer(value: ContainerProps[Option, IsMulti, Group] => CSSObjectWithLabel): Self = StObject.set(x, "container", js.Any.fromFunction1(value))
-      
-      inline def setControl(value: ControlProps[Option, IsMulti, Group] => CSSObjectWithLabel): Self = StObject.set(x, "control", js.Any.fromFunction1(value))
-      
-      inline def setDropdownIndicator(value: DropdownIndicatorProps[Option, IsMulti, Group] => CSSObjectWithLabel): Self = StObject.set(x, "dropdownIndicator", js.Any.fromFunction1(value))
-      
-      inline def setGroup(value: GroupProps[Option, IsMulti, Group] => CSSObjectWithLabel): Self = StObject.set(x, "group", js.Any.fromFunction1(value))
-      
-      inline def setGroupHeading(value: GroupHeadingProps[Option, IsMulti, Group] => CSSObjectWithLabel): Self = StObject.set(x, "groupHeading", js.Any.fromFunction1(value))
-      
-      inline def setIndicatorSeparator(value: IndicatorSeparatorProps[Option, IsMulti, Group] => CSSObjectWithLabel): Self = StObject.set(x, "indicatorSeparator", js.Any.fromFunction1(value))
-      
-      inline def setIndicatorsContainer(value: IndicatorsContainerProps[Option, IsMulti, Group] => CSSObjectWithLabel): Self = StObject.set(x, "indicatorsContainer", js.Any.fromFunction1(value))
-      
-      inline def setInput(value: InputProps[Option, IsMulti, Group] => CSSObjectWithLabel): Self = StObject.set(x, "input", js.Any.fromFunction1(value))
-      
-      inline def setLoadingIndicator(value: LoadingIndicatorProps[Option, IsMulti, Group] => CSSObjectWithLabel): Self = StObject.set(x, "loadingIndicator", js.Any.fromFunction1(value))
-      
-      inline def setLoadingMessage(value: NoticeProps[Option, IsMulti, Group] => CSSObjectWithLabel): Self = StObject.set(x, "loadingMessage", js.Any.fromFunction1(value))
-      
-      inline def setMenu(value: MenuProps[Option, IsMulti, Group] => CSSObjectWithLabel): Self = StObject.set(x, "menu", js.Any.fromFunction1(value))
-      
-      inline def setMenuList(value: MenuListProps[Option, IsMulti, Group] => CSSObjectWithLabel): Self = StObject.set(x, "menuList", js.Any.fromFunction1(value))
-      
-      inline def setMenuPortal(value: PortalStyleArgs => CSSObjectWithLabel): Self = StObject.set(x, "menuPortal", js.Any.fromFunction1(value))
-      
-      inline def setMultiValue(value: MultiValueProps[Option, IsMulti, Group] => CSSObjectWithLabel): Self = StObject.set(x, "multiValue", js.Any.fromFunction1(value))
-      
-      inline def setMultiValueLabel(value: MultiValueProps[Option, IsMulti, Group] => CSSObjectWithLabel): Self = StObject.set(x, "multiValueLabel", js.Any.fromFunction1(value))
-      
-      inline def setMultiValueRemove(value: MultiValueProps[Option, IsMulti, Group] => CSSObjectWithLabel): Self = StObject.set(x, "multiValueRemove", js.Any.fromFunction1(value))
-      
-      inline def setNoOptionsMessage(value: NoticeProps[Option, IsMulti, Group] => CSSObjectWithLabel): Self = StObject.set(x, "noOptionsMessage", js.Any.fromFunction1(value))
-      
-      inline def setOption(value: OptionProps[Option, IsMulti, Group] => CSSObjectWithLabel): Self = StObject.set(x, "option", js.Any.fromFunction1(value))
-      
-      inline def setPlaceholder(value: PlaceholderProps[Option, IsMulti, Group] => CSSObjectWithLabel): Self = StObject.set(x, "placeholder", js.Any.fromFunction1(value))
-      
-      inline def setSingleValue(value: SingleValueProps[Option, IsMulti, Group] => CSSObjectWithLabel): Self = StObject.set(x, "singleValue", js.Any.fromFunction1(value))
-      
-      inline def setValueContainer(value: ValueContainerProps[Option, IsMulti, Group] => CSSObjectWithLabel): Self = StObject.set(x, "valueContainer", js.Any.fromFunction1(value))
     }
   }
   

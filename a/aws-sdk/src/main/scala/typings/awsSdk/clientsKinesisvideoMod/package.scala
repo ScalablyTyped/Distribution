@@ -28,6 +28,7 @@ type ChannelName = String
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.WSS
   - typings.awsSdk.awsSdkStrings.HTTPS
+  - typings.awsSdk.awsSdkStrings.WEBRTC
   - java.lang.String
 */
 type ChannelProtocol = _ChannelProtocol | String
@@ -61,11 +62,19 @@ type DataRetentionChangeInHours = Double
 
 type DataRetentionInHours = Double
 
+type DeleteAfterUpload = Boolean
+
 type DestinationRegion = String
 
 type DestinationUri = String
 
 type DeviceName = String
+
+type DurationInSeconds = Double
+
+type EdgeRetentionInHours = Double
+
+type FailedStatusDetails = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.JPEG
@@ -82,6 +91,8 @@ type FormatConfigValue = String
 
 type HeightPixels = Double
 
+type HubDeviceArn = String
+
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.SERVER_TIMESTAMP
   - typings.awsSdk.awsSdkStrings.PRODUCER_TIMESTAMP
@@ -95,7 +106,29 @@ type ListOfProtocols = js.Array[ChannelProtocol]
 
 type ListStreamsInputLimit = Double
 
+type MappedResourceConfigurationList = js.Array[MappedResourceConfigurationListItem]
+
+type MappedResourceConfigurationListLimit = Double
+
+type MaxLocalMediaSizeInMB = Double
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ENABLED
+  - typings.awsSdk.awsSdkStrings.DISABLED
+  - java.lang.String
+*/
+type MediaStorageConfigurationStatus = _MediaStorageConfigurationStatus | String
+
 type MediaType = String
+
+type MediaUriSecretArn = String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.RTSP_URI
+  - typings.awsSdk.awsSdkStrings.FILE_URI
+  - java.lang.String
+*/
+type MediaUriType = _MediaUriType | String
 
 type MessageTtlSeconds = Double
 
@@ -111,6 +144,8 @@ type ResourceTags = StringDictionary[TagValue]
 
 type SamplingInterval = Double
 
+type ScheduleExpression = String
+
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CREATING
   - typings.awsSdk.awsSdkStrings.ACTIVE
@@ -120,9 +155,27 @@ type SamplingInterval = Double
 */
 type Status = _Status | String
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.DELETE_OLDEST_MEDIA
+  - typings.awsSdk.awsSdkStrings.DENY_NEW_MEDIA
+  - java.lang.String
+*/
+type StrategyOnFullSize = _StrategyOnFullSize | String
+
 type StreamInfoList = js.Array[StreamInfo]
 
 type StreamName = String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.SYNCING
+  - typings.awsSdk.awsSdkStrings.ACKNOWLEDGED
+  - typings.awsSdk.awsSdkStrings.IN_SYNC
+  - typings.awsSdk.awsSdkStrings.SYNC_FAILED
+  - typings.awsSdk.awsSdkStrings.DELETING
+  - typings.awsSdk.awsSdkStrings.DELETE_FAILED
+  - java.lang.String
+*/
+type SyncStatus = _SyncStatus | String
 
 type TagKey = String
 
@@ -135,6 +188,8 @@ type TagOnCreateList = js.Array[Tag]
 type TagValue = String
 
 type Timestamp = js.Date
+
+type Type = String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.INCREASE_DATA_RETENTION

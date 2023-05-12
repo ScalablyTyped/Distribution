@@ -5,9 +5,9 @@ import typings.chartJs.chartJsStrings.linear
 import typings.chartJs.chartJsStrings.logarithmic
 import typings.chartJs.chartJsStrings.time
 import typings.chartJs.chartJsStrings.timeseries
-import typings.chartJs.mod.BubbleControllerDatasetOptions
-import typings.chartJs.mod.BubbleDataPoint
-import typings.chartJs.mod.BubbleParsedData
+import typings.chartJs.distTypesIndexMod.BubbleControllerDatasetOptions
+import typings.chartJs.distTypesIndexMod.BubbleDataPoint
+import typings.chartJs.distTypesIndexMod.BubbleParsedData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -27,8 +27,14 @@ object distTypesCommandsGetCallerIdentityCommandMod {
           Any, 
           Any
         ] {
+    /**
+      * @public
+      */
     def this(input: GetCallerIdentityCommandInput) = this()
     
+    /**
+      * @internal
+      */
     /* private */ var deserialize: Any = js.native
     
     /**
@@ -44,6 +50,9 @@ object distTypesCommandsGetCallerIdentityCommandMod {
       options: HttpHandlerOptions
     ): Handler[GetCallerIdentityCommandInput, GetCallerIdentityCommandOutput] = js.native
     
+    /**
+      * @internal
+      */
     /* private */ var serialize: Any = js.native
   }
   /* static members */

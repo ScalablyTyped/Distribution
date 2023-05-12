@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "html-webpack-plugin" : "5.5.0"
+      "html-webpack-plugin" : "5.5.1"
     }
   ],
   "test-dependencies" : [
     {
-      "html-webpack-plugin" : "5.5.0"
+      "html-webpack-plugin" : "5.5.1"
     }
   ],
   "compile-devDependencies" : [

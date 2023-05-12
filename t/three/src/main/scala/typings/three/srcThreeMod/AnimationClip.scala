@@ -1,6 +1,7 @@
 package typings.three.srcThreeMod
 
 import typings.three.srcAnimationAnimationClipMod.MorphTarget
+import typings.three.srcConstantsMod.AnimationBlendMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,50 +37,30 @@ open class AnimationClip ()
     name: String,
     duration: Double,
     tracks: js.Array[typings.three.srcAnimationKeyframeTrackMod.KeyframeTrack],
-    blendMode: typings.three.srcConstantsMod.AnimationBlendMode
+    blendMode: AnimationBlendMode
   ) = this()
-  def this(
-    name: String,
-    duration: Double,
-    tracks: Unit,
-    blendMode: typings.three.srcConstantsMod.AnimationBlendMode
-  ) = this()
+  def this(name: String, duration: Double, tracks: Unit, blendMode: AnimationBlendMode) = this()
   def this(
     name: String,
     duration: Unit,
     tracks: js.Array[typings.three.srcAnimationKeyframeTrackMod.KeyframeTrack],
-    blendMode: typings.three.srcConstantsMod.AnimationBlendMode
+    blendMode: AnimationBlendMode
   ) = this()
-  def this(
-    name: String,
-    duration: Unit,
-    tracks: Unit,
-    blendMode: typings.three.srcConstantsMod.AnimationBlendMode
-  ) = this()
+  def this(name: String, duration: Unit, tracks: Unit, blendMode: AnimationBlendMode) = this()
   def this(
     name: Unit,
     duration: Double,
     tracks: js.Array[typings.three.srcAnimationKeyframeTrackMod.KeyframeTrack],
-    blendMode: typings.three.srcConstantsMod.AnimationBlendMode
+    blendMode: AnimationBlendMode
   ) = this()
-  def this(
-    name: Unit,
-    duration: Double,
-    tracks: Unit,
-    blendMode: typings.three.srcConstantsMod.AnimationBlendMode
-  ) = this()
+  def this(name: Unit, duration: Double, tracks: Unit, blendMode: AnimationBlendMode) = this()
   def this(
     name: Unit,
     duration: Unit,
     tracks: js.Array[typings.three.srcAnimationKeyframeTrackMod.KeyframeTrack],
-    blendMode: typings.three.srcConstantsMod.AnimationBlendMode
+    blendMode: AnimationBlendMode
   ) = this()
-  def this(
-    name: Unit,
-    duration: Unit,
-    tracks: Unit,
-    blendMode: typings.three.srcConstantsMod.AnimationBlendMode
-  ) = this()
+  def this(name: Unit, duration: Unit, tracks: Unit, blendMode: AnimationBlendMode) = this()
 }
 /* static members */
 object AnimationClip {

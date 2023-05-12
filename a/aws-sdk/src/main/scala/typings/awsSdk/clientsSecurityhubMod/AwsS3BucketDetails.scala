@@ -37,9 +37,14 @@ trait AwsS3BucketDetails extends StObject {
   var BucketWebsiteConfiguration: js.UndefOr[AwsS3BucketWebsiteConfiguration] = js.undefined
   
   /**
-    * Indicates when the S3 bucket was created. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces. For example, 2020-03-22T13:22:13.933Z.
+    * Indicates when the S3 bucket was created. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces, and date and time should be separated by T. For example, 2020-03-22T13:22:13.933Z.
     */
   var CreatedAt: js.UndefOr[NonEmptyString] = js.undefined
+  
+  /**
+    *  Specifies which rule Amazon S3 applies by default to every new object placed in the specified bucket. 
+    */
+  var ObjectLockConfiguration: js.UndefOr[AwsS3BucketObjectLockConfiguration] = js.undefined
   
   /**
     * The Amazon Web Services account identifier of the account that owns the S3 bucket.
@@ -103,6 +108,10 @@ object AwsS3BucketDetails {
     inline def setCreatedAt(value: NonEmptyString): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     
     inline def setCreatedAtUndefined: Self = StObject.set(x, "CreatedAt", js.undefined)
+    
+    inline def setObjectLockConfiguration(value: AwsS3BucketObjectLockConfiguration): Self = StObject.set(x, "ObjectLockConfiguration", value.asInstanceOf[js.Any])
+    
+    inline def setObjectLockConfigurationUndefined: Self = StObject.set(x, "ObjectLockConfiguration", js.undefined)
     
     inline def setOwnerAccountId(value: NonEmptyString): Self = StObject.set(x, "OwnerAccountId", value.asInstanceOf[js.Any])
     

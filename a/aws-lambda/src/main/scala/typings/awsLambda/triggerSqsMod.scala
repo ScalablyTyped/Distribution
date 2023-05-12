@@ -194,6 +194,8 @@ object triggerSqsMod {
     
     var ApproximateReceiveCount: String
     
+    var DeadLetterQueueSourceArn: js.UndefOr[String] = js.undefined
+    
     var MessageDeduplicationId: js.UndefOr[String] = js.undefined
     
     var MessageGroupId: js.UndefOr[String] = js.undefined
@@ -226,6 +228,10 @@ object triggerSqsMod {
       inline def setApproximateFirstReceiveTimestamp(value: String): Self = StObject.set(x, "ApproximateFirstReceiveTimestamp", value.asInstanceOf[js.Any])
       
       inline def setApproximateReceiveCount(value: String): Self = StObject.set(x, "ApproximateReceiveCount", value.asInstanceOf[js.Any])
+      
+      inline def setDeadLetterQueueSourceArn(value: String): Self = StObject.set(x, "DeadLetterQueueSourceArn", value.asInstanceOf[js.Any])
+      
+      inline def setDeadLetterQueueSourceArnUndefined: Self = StObject.set(x, "DeadLetterQueueSourceArn", js.undefined)
       
       inline def setMessageDeduplicationId(value: String): Self = StObject.set(x, "MessageDeduplicationId", value.asInstanceOf[js.Any])
       

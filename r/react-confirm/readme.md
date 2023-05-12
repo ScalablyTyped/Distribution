@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-confirm
 
-Typings are for version 0.1
+Typings are for version 0.2
 
 ## Library description:
 Small library which makes your Dialog component callable

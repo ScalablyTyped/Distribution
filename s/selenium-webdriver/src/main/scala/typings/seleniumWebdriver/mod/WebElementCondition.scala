@@ -12,7 +12,6 @@ open class WebElementCondition protected () extends Condition[WebElement] {
     *     sentence 'Waiting [...]'
     * @param {function(!WebDriver): OUT} fn The condition function to
     *     evaluate on each iteration of the wait loop.
-    * @constructor
     */
   def this(message: String, fn: ConditionFn[WebElement]) = this()
   

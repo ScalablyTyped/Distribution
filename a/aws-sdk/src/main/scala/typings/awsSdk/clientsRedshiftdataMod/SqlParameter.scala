@@ -12,7 +12,7 @@ trait SqlParameter extends StObject {
   var name: ParameterName
   
   /**
-    * The value of the parameter. Amazon Redshift implicitly converts to the proper data type. For more inforation, see Data types in the Amazon Redshift Database Developer Guide. 
+    * The value of the parameter. Amazon Redshift implicitly converts to the proper data type. For more information, see Data types in the Amazon Redshift Database Developer Guide. 
     */
   var value: ParameterValue
 }

@@ -16,68 +16,77 @@ object distEsmContainerSequentialContainerBaseMod {
     
     /**
       * @description Removes the elements of the specified value.
-      * @param value The value you want to remove.
-      * @example container.eraseElementByValue(-1);
+      * @param value - The value you want to remove.
+      * @returns The size of container after erasing.
+      * @example
+      * container.eraseElementByValue(-1);
       */
-    def eraseElementByValue(value: T): Unit = js.native
+    def eraseElementByValue(value: T): Double = js.native
     
     /**
       * @description Insert several elements after the specified position.
-      * @param pos The position you want to insert.
-      * @param element The element you want to insert.
-      * @param num The number of elements you want to insert (default 1).
+      * @param pos - The position you want to insert.
+      * @param element - The element you want to insert.
+      * @param num - The number of elements you want to insert (default 1).
+      * @returns The size of container after inserting.
       * @example
       * const container = new Vector([1, 2, 3]);
       * container.insert(1, 4);  // [1, 4, 2, 3]
       * container.insert(1, 5, 3); // [1, 5, 5, 5, 4, 2, 3]
       */
-    def insert(pos: Double, element: T): Unit = js.native
-    def insert(pos: Double, element: T, num: Double): Unit = js.native
+    def insert(pos: Double, element: T): Double = js.native
+    def insert(pos: Double, element: T, num: Double): Double = js.native
     
     /**
       * @description Removes the last element.
+      * @returns The element you popped.
       */
-    def popBack(): Unit = js.native
+    def popBack(): js.UndefOr[T] = js.native
     
     /**
       * @description Push the element to the back.
-      * @param element The element you want to push.
+      * @param element - The element you want to push.
+      * @returns The size of container after pushing.
       */
-    def pushBack(element: T): Unit = js.native
+    def pushBack(element: T): Double = js.native
     
     /**
       * @description Reverses the container.
+      * @returns The container's self.
       * @example
       * const container = new Vector([1, 2, 3]);
       * container.reverse(); // [3, 2, 1]
       */
-    def reverse(): Unit = js.native
+    def reverse(): this.type = js.native
     
     /**
       * @description Sets element by position.
-      * @param pos The position you want to change.
-      * @param element The element's value you want to update.
-      * @example container.setElementByPos(-1, 1); // throw a RangeError
+      * @param pos - The position you want to change.
+      * @param element - The element's value you want to update.
+      * @example
+      * container.setElementByPos(-1, 1); // throw a RangeError
       */
     def setElementByPos(pos: Double, element: T): Unit = js.native
     
     /**
       * @description Sort the container.
-      * @param cmp Comparison function.
+      * @param cmp - Comparison function to sort.
+      * @returns The container's self.
       * @example
       * const container = new Vector([3, 1, 10]);
       * container.sort();  // [1, 10, 3]
       * container.sort((x, y) => x - y); // [1, 3, 10]
       */
-    def sort(): Unit = js.native
-    def sort(cmp: js.Function2[/* x */ T, /* y */ T, Double]): Unit = js.native
+    def sort(): this.type = js.native
+    def sort(cmp: js.Function2[/* x */ T, /* y */ T, Double]): this.type = js.native
     
     /**
       * @description Removes the duplication of elements in the container.
+      * @returns The size of container after inserting.
       * @example
       * const container = new Vector([1, 1, 3, 2, 2, 5, 5, 2]);
       * container.unique(); // [1, 3, 2, 5, 2]
       */
-    def unique(): Unit = js.native
+    def unique(): Double = js.native
   }
 }

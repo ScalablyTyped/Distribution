@@ -3,7 +3,7 @@ package typings.plotlyJs
 import typings.plotlyJs.anon.Align
 import typings.plotlyJs.anon.`0`
 import typings.plotlyJs.anon.`1`
-import typings.plotlyJs.libTracesOhclMod.HoverInfo
+import typings.plotlyJs.libTracesOhlcMod.HoverInfo
 import typings.plotlyJs.plotlyJsStrings.candlestick
 import typings.plotlyJs.plotlyJsStrings.end
 import typings.plotlyJs.plotlyJsStrings.legendonly
@@ -46,7 +46,7 @@ object libTracesCandlestickMod {
     
     var low: js.Array[Double]
     
-    var meta: /* import warning: importer.ImportType#apply Failed type conversion: plotly.js.plotly.js/lib/traces/ohcl.OhclData['meta'] */ js.Any
+    var meta: /* import warning: importer.ImportType#apply Failed type conversion: plotly.js.plotly.js/lib/traces/ohlc.OhlcData['meta'] */ js.Any
     
     var name: String
     
@@ -94,9 +94,9 @@ object libTracesCandlestickMod {
     /**
       * @default 0
       */
-    var xperiod: /* import warning: importer.ImportType#apply Failed type conversion: plotly.js.plotly.js/lib/traces/ohcl.OhclData['xperiod'] */ js.Any
+    var xperiod: /* import warning: importer.ImportType#apply Failed type conversion: plotly.js.plotly.js/lib/traces/ohlc.OhlcData['xperiod'] */ js.Any
     
-    var xperiod0: /* import warning: importer.ImportType#apply Failed type conversion: plotly.js.plotly.js/lib/traces/ohcl.OhclData['xperiod0'] */ js.Any
+    var xperiod0: /* import warning: importer.ImportType#apply Failed type conversion: plotly.js.plotly.js/lib/traces/ohlc.OhlcData['xperiod0'] */ js.Any
     
     /**
       * @default "middle"
@@ -116,7 +116,7 @@ object libTracesCandlestickMod {
       increasing: `0`,
       line: `1`,
       low: js.Array[Double],
-      meta: /* import warning: importer.ImportType#apply Failed type conversion: plotly.js.plotly.js/lib/traces/ohcl.OhclData['meta'] */ js.Any,
+      meta: /* import warning: importer.ImportType#apply Failed type conversion: plotly.js.plotly.js/lib/traces/ohlc.OhlcData['meta'] */ js.Any,
       name: String,
       opacity: Double,
       open: js.Array[Double],
@@ -126,8 +126,8 @@ object libTracesCandlestickMod {
       whiskerwidth: Double,
       x: js.Array[String],
       xaxis: String,
-      xperiod: /* import warning: importer.ImportType#apply Failed type conversion: plotly.js.plotly.js/lib/traces/ohcl.OhclData['xperiod'] */ js.Any,
-      xperiod0: /* import warning: importer.ImportType#apply Failed type conversion: plotly.js.plotly.js/lib/traces/ohcl.OhclData['xperiod0'] */ js.Any,
+      xperiod: /* import warning: importer.ImportType#apply Failed type conversion: plotly.js.plotly.js/lib/traces/ohlc.OhlcData['xperiod'] */ js.Any,
+      xperiod0: /* import warning: importer.ImportType#apply Failed type conversion: plotly.js.plotly.js/lib/traces/ohlc.OhlcData['xperiod0'] */ js.Any,
       xperiodalignment: start | middle | end
     ): CandlestickData = {
       val __obj = js.Dynamic.literal(close = close.asInstanceOf[js.Any], decreasing = decreasing.asInstanceOf[js.Any], high = high.asInstanceOf[js.Any], hoverinfo = hoverinfo.asInstanceOf[js.Any], hoverlabel = hoverlabel.asInstanceOf[js.Any], hovertext = hovertext.asInstanceOf[js.Any], ids = ids.asInstanceOf[js.Any], increasing = increasing.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], low = low.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], opacity = opacity.asInstanceOf[js.Any], open = open.asInstanceOf[js.Any], showlegend = showlegend.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any], whiskerwidth = whiskerwidth.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], xaxis = xaxis.asInstanceOf[js.Any], xperiod = xperiod.asInstanceOf[js.Any], xperiod0 = xperiod0.asInstanceOf[js.Any], xperiodalignment = xperiodalignment.asInstanceOf[js.Any])
@@ -169,7 +169,7 @@ object libTracesCandlestickMod {
       inline def setLowVarargs(value: Double*): Self = StObject.set(x, "low", js.Array(value*))
       
       inline def setMeta(
-        value: /* import warning: importer.ImportType#apply Failed type conversion: plotly.js.plotly.js/lib/traces/ohcl.OhclData['meta'] */ js.Any
+        value: /* import warning: importer.ImportType#apply Failed type conversion: plotly.js.plotly.js/lib/traces/ohlc.OhlcData['meta'] */ js.Any
       ): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
@@ -199,11 +199,11 @@ object libTracesCandlestickMod {
       inline def setXaxis(value: String): Self = StObject.set(x, "xaxis", value.asInstanceOf[js.Any])
       
       inline def setXperiod(
-        value: /* import warning: importer.ImportType#apply Failed type conversion: plotly.js.plotly.js/lib/traces/ohcl.OhclData['xperiod'] */ js.Any
+        value: /* import warning: importer.ImportType#apply Failed type conversion: plotly.js.plotly.js/lib/traces/ohlc.OhlcData['xperiod'] */ js.Any
       ): Self = StObject.set(x, "xperiod", value.asInstanceOf[js.Any])
       
       inline def setXperiod0(
-        value: /* import warning: importer.ImportType#apply Failed type conversion: plotly.js.plotly.js/lib/traces/ohcl.OhclData['xperiod0'] */ js.Any
+        value: /* import warning: importer.ImportType#apply Failed type conversion: plotly.js.plotly.js/lib/traces/ohlc.OhlcData['xperiod0'] */ js.Any
       ): Self = StObject.set(x, "xperiod0", value.asInstanceOf[js.Any])
       
       inline def setXperiodalignment(value: start | middle | end): Self = StObject.set(x, "xperiodalignment", value.asInstanceOf[js.Any])

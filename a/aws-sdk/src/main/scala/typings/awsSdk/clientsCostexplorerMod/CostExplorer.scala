@@ -29,12 +29,12 @@ trait CostExplorer extends Service {
   ): Request[CreateAnomalyMonitorResponse, AWSError] = js.native
   
   /**
-    * Adds a subscription to a cost anomaly detection monitor. You can use each subscription to define subscribers with email or SNS notifications. Email subscribers can set a dollar threshold and a time frequency for receiving notifications. 
+    * Adds an alert subscription to a cost anomaly detection monitor. You can use each subscription to define subscribers with email or SNS notifications. Email subscribers can set an absolute or percentage threshold and a time frequency for receiving notifications. 
     */
   def createAnomalySubscription(): Request[CreateAnomalySubscriptionResponse, AWSError] = js.native
   def createAnomalySubscription(callback: js.Function2[/* err */ AWSError, /* data */ CreateAnomalySubscriptionResponse, Unit]): Request[CreateAnomalySubscriptionResponse, AWSError] = js.native
   /**
-    * Adds a subscription to a cost anomaly detection monitor. You can use each subscription to define subscribers with email or SNS notifications. Email subscribers can set a dollar threshold and a time frequency for receiving notifications. 
+    * Adds an alert subscription to a cost anomaly detection monitor. You can use each subscription to define subscribers with email or SNS notifications. Email subscribers can set an absolute or percentage threshold and a time frequency for receiving notifications. 
     */
   def createAnomalySubscription(params: CreateAnomalySubscriptionRequest): Request[CreateAnomalySubscriptionResponse, AWSError] = js.native
   def createAnomalySubscription(
@@ -115,12 +115,12 @@ trait CostExplorer extends Service {
   ): Request[DescribeCostCategoryDefinitionResponse, AWSError] = js.native
   
   /**
-    * Retrieves all of the cost anomalies detected on your account during the time period that's specified by the DateInterval object. 
+    * Retrieves all of the cost anomalies detected on your account during the time period that's specified by the DateInterval object. Anomalies are available for up to 90 days.
     */
   def getAnomalies(): Request[GetAnomaliesResponse, AWSError] = js.native
   def getAnomalies(callback: js.Function2[/* err */ AWSError, /* data */ GetAnomaliesResponse, Unit]): Request[GetAnomaliesResponse, AWSError] = js.native
   /**
-    * Retrieves all of the cost anomalies detected on your account during the time period that's specified by the DateInterval object. 
+    * Retrieves all of the cost anomalies detected on your account during the time period that's specified by the DateInterval object. Anomalies are available for up to 90 days.
     */
   def getAnomalies(params: GetAnomaliesRequest): Request[GetAnomaliesResponse, AWSError] = js.native
   def getAnomalies(
@@ -299,14 +299,14 @@ trait CostExplorer extends Service {
   ): Request[GetSavingsPlansCoverageResponse, AWSError] = js.native
   
   /**
-    * Retrieves your request parameters, Savings Plan Recommendations Summary and Details. 
+    * Retrieves the Savings Plans recommendations for your account. First use StartSavingsPlansPurchaseRecommendationGeneration to generate a new set of recommendations, and then use GetSavingsPlansPurchaseRecommendation to retrieve them.
     */
   def getSavingsPlansPurchaseRecommendation(): Request[GetSavingsPlansPurchaseRecommendationResponse, AWSError] = js.native
   def getSavingsPlansPurchaseRecommendation(
     callback: js.Function2[/* err */ AWSError, /* data */ GetSavingsPlansPurchaseRecommendationResponse, Unit]
   ): Request[GetSavingsPlansPurchaseRecommendationResponse, AWSError] = js.native
   /**
-    * Retrieves your request parameters, Savings Plan Recommendations Summary and Details. 
+    * Retrieves the Savings Plans recommendations for your account. First use StartSavingsPlansPurchaseRecommendationGeneration to generate a new set of recommendations, and then use GetSavingsPlansPurchaseRecommendation to retrieve them.
     */
   def getSavingsPlansPurchaseRecommendation(params: GetSavingsPlansPurchaseRecommendationRequest): Request[GetSavingsPlansPurchaseRecommendationResponse, AWSError] = js.native
   def getSavingsPlansPurchaseRecommendation(
@@ -401,6 +401,30 @@ trait CostExplorer extends Service {
   ): Request[ListCostCategoryDefinitionsResponse, AWSError] = js.native
   
   /**
+    * Retrieves a list of your historical recommendation generations within the past 30 days.
+    */
+  def listSavingsPlansPurchaseRecommendationGeneration(): Request[ListSavingsPlansPurchaseRecommendationGenerationResponse, AWSError] = js.native
+  def listSavingsPlansPurchaseRecommendationGeneration(
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ ListSavingsPlansPurchaseRecommendationGenerationResponse, 
+      Unit
+    ]
+  ): Request[ListSavingsPlansPurchaseRecommendationGenerationResponse, AWSError] = js.native
+  /**
+    * Retrieves a list of your historical recommendation generations within the past 30 days.
+    */
+  def listSavingsPlansPurchaseRecommendationGeneration(params: ListSavingsPlansPurchaseRecommendationGenerationRequest): Request[ListSavingsPlansPurchaseRecommendationGenerationResponse, AWSError] = js.native
+  def listSavingsPlansPurchaseRecommendationGeneration(
+    params: ListSavingsPlansPurchaseRecommendationGenerationRequest,
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ ListSavingsPlansPurchaseRecommendationGenerationResponse, 
+      Unit
+    ]
+  ): Request[ListSavingsPlansPurchaseRecommendationGenerationResponse, AWSError] = js.native
+  
+  /**
     * Returns a list of resource tags associated with the resource specified by the Amazon Resource Name (ARN). 
     */
   def listTagsForResource(): Request[ListTagsForResourceResponse, AWSError] = js.native
@@ -427,6 +451,30 @@ trait CostExplorer extends Service {
     params: ProvideAnomalyFeedbackRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ProvideAnomalyFeedbackResponse, Unit]
   ): Request[ProvideAnomalyFeedbackResponse, AWSError] = js.native
+  
+  /**
+    * Requests a Savings Plans recommendation generation. This enables you to calculate a fresh set of Savings Plans recommendations that takes your latest usage data and current Savings Plans inventory into account. You can refresh Savings Plans recommendations up to three times daily for a consolidated billing family.   StartSavingsPlansPurchaseRecommendationGeneration has no request syntax because no input parameters are needed to support this operation. 
+    */
+  def startSavingsPlansPurchaseRecommendationGeneration(): Request[StartSavingsPlansPurchaseRecommendationGenerationResponse, AWSError] = js.native
+  def startSavingsPlansPurchaseRecommendationGeneration(
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ StartSavingsPlansPurchaseRecommendationGenerationResponse, 
+      Unit
+    ]
+  ): Request[StartSavingsPlansPurchaseRecommendationGenerationResponse, AWSError] = js.native
+  /**
+    * Requests a Savings Plans recommendation generation. This enables you to calculate a fresh set of Savings Plans recommendations that takes your latest usage data and current Savings Plans inventory into account. You can refresh Savings Plans recommendations up to three times daily for a consolidated billing family.   StartSavingsPlansPurchaseRecommendationGeneration has no request syntax because no input parameters are needed to support this operation. 
+    */
+  def startSavingsPlansPurchaseRecommendationGeneration(params: StartSavingsPlansPurchaseRecommendationGenerationRequest): Request[StartSavingsPlansPurchaseRecommendationGenerationResponse, AWSError] = js.native
+  def startSavingsPlansPurchaseRecommendationGeneration(
+    params: StartSavingsPlansPurchaseRecommendationGenerationRequest,
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ StartSavingsPlansPurchaseRecommendationGenerationResponse, 
+      Unit
+    ]
+  ): Request[StartSavingsPlansPurchaseRecommendationGenerationResponse, AWSError] = js.native
   
   /**
     * An API operation for adding one or more tags (key-value pairs) to a resource. You can use the TagResource operation with a resource that already has tags. If you specify a new tag key for the resource, this tag is appended to the list of tags associated with the resource. If you specify a tag key that is already associated with the resource, the new tag value you specify replaces the previous value for that tag. Although the maximum number of array members is 200, user-tag maximum is 50. The remaining are reserved for Amazon Web Services use.

@@ -7,13 +7,19 @@ import typings.verovio.verovioStrings.always
 import typings.verovio.verovioStrings.auto
 import typings.verovio.verovioStrings.block
 import typings.verovio.verovioStrings.default
+import typings.verovio.verovioStrings.embedded
 import typings.verovio.verovioStrings.encoded
 import typings.verovio.verovioStrings.left
 import typings.verovio.verovioStrings.line
+import typings.verovio.verovioStrings.linked
+import typings.verovio.verovioStrings.narrow
 import typings.verovio.verovioStrings.none
 import typings.verovio.verovioStrings.pedstar
+import typings.verovio.verovioStrings.regular
 import typings.verovio.verovioStrings.smart
 import typings.verovio.verovioStrings.symbols
+import typings.verovio.verovioStrings.unicode
+import typings.verovio.verovioStrings.wide
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -458,6 +464,13 @@ object verovioOptionsMod {
     var dynamDist: js.UndefOr[Double] = js.undefined
     
     /**
+      * Don't use SMuFL's predefined dynamics glyph combinations
+      *
+      * default: false
+      */
+    var dynamSingleGlyphs: js.UndefOr[Boolean] = js.undefined
+    
+    /**
       * Json describing defaults for engraving SMuFL elements
       */
     var engravingDefaults: js.UndefOr[EngravingDefaults] = js.undefined
@@ -475,6 +488,17 @@ object verovioOptionsMod {
       * default: ""
       */
     var expand: js.UndefOr[String] = js.undefined
+    
+    /**
+      * (double) Minimum space required for extender line to be drawn
+      *
+      * default: 1.5
+      *
+      * max: 10
+      *
+      * min: 1.5
+      */
+    var extenderLineMinSpace: js.UndefOr[Double] = js.undefined
     
     /**
       * (double) The scale of fingering font compared to default font size
@@ -874,6 +898,13 @@ object verovioOptionsMod {
       * default: false
       */
     var ligatureAsBracket: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * The lyric elision width
+      *
+      * default: "regular"
+      */
+    var lyricElision: js.UndefOr[unicode | narrow | regular | wide] = js.undefined
     
     /**
       * (double) The lyric hyphen and dash length
@@ -1423,7 +1454,7 @@ object verovioOptionsMod {
     var rightMarginTabDurSym: js.UndefOr[Double] = js.undefined
     
     /**
-      * (int) Scale of the output in percent
+      * (int) Scale of the output in percent (100 is normal size)
       *
       * default: 100
       *
@@ -1432,6 +1463,13 @@ object verovioOptionsMod {
       * min: 1
       */
     var scale: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * Scale the content within the page instead of scaling the page itself
+      *
+      * default: false
+      */
+    var scaleToPageSize: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Display the total runtime on command-line
@@ -1523,6 +1561,13 @@ object verovioOptionsMod {
       * min: 0
       */
     var slurSymmetry: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * Specify if the smufl text font is embedded, linked, or ignored
+      *
+      * default: "embedded"
+      */
+    var smuflTextFont: js.UndefOr[embedded | linked | none] = js.undefined
     
     /**
       * (int) Minimum space between staves inside a braced group in MEI units
@@ -2030,6 +2075,10 @@ object verovioOptionsMod {
       
       inline def setDynamDistUndefined: Self = StObject.set(x, "dynamDist", js.undefined)
       
+      inline def setDynamSingleGlyphs(value: Boolean): Self = StObject.set(x, "dynamSingleGlyphs", value.asInstanceOf[js.Any])
+      
+      inline def setDynamSingleGlyphsUndefined: Self = StObject.set(x, "dynamSingleGlyphs", js.undefined)
+      
       inline def setEngravingDefaults(value: EngravingDefaults): Self = StObject.set(x, "engravingDefaults", value.asInstanceOf[js.Any])
       
       inline def setEngravingDefaultsUndefined: Self = StObject.set(x, "engravingDefaults", js.undefined)
@@ -2041,6 +2090,10 @@ object verovioOptionsMod {
       inline def setExpand(value: String): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
       
       inline def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
+      
+      inline def setExtenderLineMinSpace(value: Double): Self = StObject.set(x, "extenderLineMinSpace", value.asInstanceOf[js.Any])
+      
+      inline def setExtenderLineMinSpaceUndefined: Self = StObject.set(x, "extenderLineMinSpace", js.undefined)
       
       inline def setFingeringScale(value: Double): Self = StObject.set(x, "fingeringScale", value.asInstanceOf[js.Any])
       
@@ -2203,6 +2256,10 @@ object verovioOptionsMod {
       inline def setLigatureAsBracket(value: Boolean): Self = StObject.set(x, "ligatureAsBracket", value.asInstanceOf[js.Any])
       
       inline def setLigatureAsBracketUndefined: Self = StObject.set(x, "ligatureAsBracket", js.undefined)
+      
+      inline def setLyricElision(value: unicode | narrow | regular | wide): Self = StObject.set(x, "lyricElision", value.asInstanceOf[js.Any])
+      
+      inline def setLyricElisionUndefined: Self = StObject.set(x, "lyricElision", js.undefined)
       
       inline def setLyricHyphenLength(value: Double): Self = StObject.set(x, "lyricHyphenLength", value.asInstanceOf[js.Any])
       
@@ -2430,6 +2487,10 @@ object verovioOptionsMod {
       
       inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
       
+      inline def setScaleToPageSize(value: Boolean): Self = StObject.set(x, "scaleToPageSize", value.asInstanceOf[js.Any])
+      
+      inline def setScaleToPageSizeUndefined: Self = StObject.set(x, "scaleToPageSize", js.undefined)
+      
       inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
       
       inline def setShowRuntime(value: Boolean): Self = StObject.set(x, "showRuntime", value.asInstanceOf[js.Any])
@@ -2467,6 +2528,10 @@ object verovioOptionsMod {
       inline def setSlurSymmetry(value: Double): Self = StObject.set(x, "slurSymmetry", value.asInstanceOf[js.Any])
       
       inline def setSlurSymmetryUndefined: Self = StObject.set(x, "slurSymmetry", js.undefined)
+      
+      inline def setSmuflTextFont(value: embedded | linked | none): Self = StObject.set(x, "smuflTextFont", value.asInstanceOf[js.Any])
+      
+      inline def setSmuflTextFontUndefined: Self = StObject.set(x, "smuflTextFont", js.undefined)
       
       inline def setSpacingBraceGroup(value: Double): Self = StObject.set(x, "spacingBraceGroup", value.asInstanceOf[js.Any])
       

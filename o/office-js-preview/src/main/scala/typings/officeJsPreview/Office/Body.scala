@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Outlook on Windows: If you're setting various cell borders to different colors in an HTML table in Compose mode, a cell's borders may not reflect
   * the expected color. For the known behavior, visit {@link https://github.com/OfficeDev/office-js/issues/1818 | OfficeDev/office-js issue #1818}.
   *
-  * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+  * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
   *
   * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
   */
@@ -26,7 +26,7 @@ trait Body extends StObject {
   /**
     * Appends on send the specified content to the end of the item body, after any signature.
     *
-    * To use `appendOnSendAsync`, the `ExtendedPermissions` manifest node must include the `AppendOnSend` extended permission. To learn more
+    * To use `appendOnSendAsync`, you must specify a supplementary permission in the manifest. Details vary with the type of manifest. See {@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Understanding Outlook add-in permissions}. To learn more
     * about append-on-send and its configuration, see
     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/append-on-send | Implement append-on-send in your Outlook add-in}.
     * 
@@ -45,7 +45,7 @@ trait Body extends StObject {
     * @remarks
     * [Api set: Mailbox 1.9]
     *
-    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
     *
@@ -64,7 +64,7 @@ trait Body extends StObject {
   /**
     * Appends on send the specified content to the end of the item body, after any signature.
     *
-    * To use `appendOnSendAsync`, the `ExtendedPermissions` manifest node must include the `AppendOnSend` extended permission. To learn more
+    * To use `appendOnSendAsync`, you must specify a supplementary permission in the manifest. Details vary with the type of manifest. See {@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Understanding Outlook add-in permissions}. To learn more
     * about append-on-send and its configuration, see
     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/append-on-send | Implement append-on-send in your Outlook add-in}.
     * 
@@ -83,7 +83,7 @@ trait Body extends StObject {
     * @remarks
     * [Api set: Mailbox 1.9]
     *
-    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
     *
@@ -127,7 +127,7 @@ trait Body extends StObject {
     * @remarks
     * [Api set: Mailbox 1.3]
     *
-    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     *
@@ -149,7 +149,7 @@ trait Body extends StObject {
     * @remarks
     * [Api set: Mailbox 1.3]
     *
-    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     *
@@ -172,7 +172,7 @@ trait Body extends StObject {
     * @remarks
     * [Api set: Mailbox 1.1]
     *
-    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
     *
@@ -188,7 +188,7 @@ trait Body extends StObject {
     * @remarks
     * [Api set: Mailbox 1.1]
     *
-    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
     *
@@ -222,7 +222,7 @@ trait Body extends StObject {
     * @remarks
     * [Api set: Mailbox 1.1]
     *
-    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
     *
@@ -254,7 +254,7 @@ trait Body extends StObject {
     * @remarks
     * [Api set: Mailbox 1.1]
     *
-    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
     *
@@ -277,6 +277,96 @@ trait Body extends StObject {
   ): Unit = js.native
   
   /**
+    * Prepends HTML or plain text to the beginning of a message or appointment body when the mail item is sent.
+    * 
+    * To use `prependOnSendAsync`, you must specify a supplementary permission in the manifest. Details vary with the type of manifest. For guidance,
+    * see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Understanding Outlook add-in permissions}.
+    * 
+    * @remarks
+    * [Api set: Mailbox preview]
+    * 
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
+    *
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+    * 
+    * **Recommended**: Call `getTypeAsync`, then pass its returned value to the `options.coercionType` parameter.
+    * 
+    * **Important**: When implementing `prependOnSendAsync`, keep the following in mind.
+    * 
+    * - In a {@link https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough | Smart Alerts add-in},
+    * the prepend-on-send feature runs first.
+    * 
+    * - A new line is added after the prepended content.
+    * 
+    * - If multiple active add-ins call `prependOnSendAsync`, the order of the inserted content depends on the order in which the add-in runs.
+    * The content of the last run add-in appears above previously prepended content.
+    * 
+    * - If the add-in attempts to insert HTML into a plain text body, the content won't be prepended. Conversely, plain text will be inserted into an HTML body.
+    * 
+    * **Errors**:
+    * 
+    * - `DataExceedsMaximumSize`: The `data` parameter exceeds 5,000 characters.
+    * 
+    * - `InvalidFormatError`: The `options.coercionType` parameter is set to `Office.CoercionType.Html`, but the item body is in plain text format.
+    * 
+    * @param data - The string to be prepended to the beginning of the message or appointment body. The string is limited to 5,000 characters.
+    * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
+    *                             of type `Office.AsyncResult`. Any errors encountered will be provided in the `asyncResult.error` property.
+    * 
+    * @beta
+    */
+  def prependOnSendAsync(data: String): Unit = js.native
+  def prependOnSendAsync(data: String, callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]): Unit = js.native
+  /**
+    * Prepends HTML or plain text to the beginning of a message or appointment body when the mail item is sent.
+    * 
+    * To use `prependOnSendAsync`, you must specify a supplementary permission in the manifest. Details vary with the type of manifest. For guidance,
+    * see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Understanding Outlook add-in permissions}.
+    * 
+    * @remarks
+    * [Api set: Mailbox preview]
+    * 
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
+    *
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
+    * 
+    * **Recommended**: Call `getTypeAsync`, then pass its returned value to the `options.coercionType` parameter.
+    * 
+    * **Important**: When implementing `prependOnSendAsync`, keep the following in mind.
+    * 
+    * - In a {@link https://learn.microsoft.com/office/dev/add-ins/outlook/smart-alerts-onmessagesend-walkthrough | Smart Alerts add-in},
+    * the prepend-on-send feature runs first.
+    * 
+    * - A new line is added after the prepended content.
+    * 
+    * - If multiple active add-ins call `prependOnSendAsync`, the order of the inserted content depends on the order in which the add-in runs.
+    * The content of the last run add-in appears above previously prepended content.
+    * 
+    * - If the add-in attempts to insert HTML into a plain text body, the content won't be prepended. Conversely, plain text will be inserted into an HTML body.
+    * 
+    * **Errors**:
+    * 
+    * - `DataExceedsMaximumSize`: The `data` parameter exceeds 5,000 characters.
+    * 
+    * - `InvalidFormatError`: The `options.coercionType` parameter is set to `Office.CoercionType.Html`, but the item body is in plain text format.
+    * 
+    * @param data - The string to be prepended to the beginning of the message or appointment body. The string is limited to 5,000 characters.
+    * @param options - An object literal that contains one or more of the following properties:-
+    *        `asyncContext`: Any object that can be accessed in the callback function.
+    *        `coercionType`: The desired format for the body. The string in the `data` parameter is converted to this format.
+    * @param callback - Optional. When the method completes, the function passed in the `callback` parameter is called with a single parameter
+    *                             of type `Office.AsyncResult`. Any errors encountered will be provided in the `asyncResult.error` property.
+    * 
+    * @beta
+    */
+  def prependOnSendAsync(data: String, options: AsyncContextOptions & CoercionTypeOptions): Unit = js.native
+  def prependOnSendAsync(
+    data: String,
+    options: AsyncContextOptions & CoercionTypeOptions,
+    callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
+  ): Unit = js.native
+  
+  /**
     * Replaces the entire body with the specified text.
     *
     * When working with HTML-formatted bodies, it is important to note that the `Body.getAsync` and `Body.setAsync` methods are not idempotent.
@@ -293,7 +383,7 @@ trait Body extends StObject {
     * @remarks
     * [Api set: Mailbox 1.3]
     *
-    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
     *
@@ -326,7 +416,7 @@ trait Body extends StObject {
     * @remarks
     * [Api set: Mailbox 1.3]
     *
-    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
     *
@@ -365,7 +455,7 @@ trait Body extends StObject {
     * @remarks
     * [Api set: Mailbox 1.1]
     *
-    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
     *
@@ -396,7 +486,7 @@ trait Body extends StObject {
     * @remarks
     * [Api set: Mailbox 1.1]
     *
-    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
     *
@@ -435,7 +525,7 @@ trait Body extends StObject {
     * @remarks
     * [Api set: Mailbox 1.10]
     *
-    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
     *
@@ -466,7 +556,7 @@ trait Body extends StObject {
     * @remarks
     * [Api set: Mailbox 1.10]
     *
-    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteItem`
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write item**
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose
     *

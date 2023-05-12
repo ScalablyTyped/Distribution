@@ -67,7 +67,10 @@ object anon {
     extends StObject
        with Instantiable0[default] {
     
-    val pluginName: IndentEditing = js.native
+    /**
+      * @inheritDoc
+      */
+    def pluginName: IndentEditing = js.native
   }
   
   @js.native
@@ -75,6 +78,9 @@ object anon {
     extends StObject
        with Instantiable0[typings.ckeditorCkeditor5Indent.srcIndentuiMod.default] {
     
-    val pluginName: IndentUI = js.native
+    /**
+      * @inheritDoc
+      */
+    def pluginName: IndentUI = js.native
   }
 }

@@ -14,7 +14,7 @@ open class StandardMaterial protected ()
     * Instantiates a new standard material.
     * This is the default material used in Babylon. It is the best trade off between quality
     * and performances.
-    * @see https://doc.babylonjs.com/babylon101/materials
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/materials/using/materials_introduction
     * @param name Define the name of the material in the scene
     * @param scene Define the scene the material belong to
     */
@@ -26,6 +26,42 @@ open class StandardMaterial protected ()
     */
   /* CompleteClass */
   var animations: Nullable[js.Array[typings.babylonjs.BABYLON.Animation]] = js.native
+  
+  /**
+    * Gets or sets the active clipplane 1
+    */
+  /* CompleteClass */
+  var clipPlane: Nullable[typings.babylonjs.BABYLON.Plane] = js.native
+  
+  /**
+    * Gets or sets the active clipplane 2
+    */
+  /* CompleteClass */
+  var clipPlane2: Nullable[typings.babylonjs.BABYLON.Plane] = js.native
+  
+  /**
+    * Gets or sets the active clipplane 3
+    */
+  /* CompleteClass */
+  var clipPlane3: Nullable[typings.babylonjs.BABYLON.Plane] = js.native
+  
+  /**
+    * Gets or sets the active clipplane 4
+    */
+  /* CompleteClass */
+  var clipPlane4: Nullable[typings.babylonjs.BABYLON.Plane] = js.native
+  
+  /**
+    * Gets or sets the active clipplane 5
+    */
+  /* CompleteClass */
+  var clipPlane5: Nullable[typings.babylonjs.BABYLON.Plane] = js.native
+  
+  /**
+    * Gets or sets the active clipplane 6
+    */
+  /* CompleteClass */
+  var clipPlane6: Nullable[typings.babylonjs.BABYLON.Plane] = js.native
 }
 /* static members */
 object StandardMaterial {

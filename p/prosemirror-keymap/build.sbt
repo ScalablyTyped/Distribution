@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "prosemirror-keymap"
-version := "1.2.0-e7b50f"
+version := "1.2.1-698b59"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "orderedmap" % "2.1.0-4a923a",
-  "org.scalablytyped" %%% "prosemirror-model" % "1.18.2-b39084",
-  "org.scalablytyped" %%% "prosemirror-state" % "1.4.2-a74627",
-  "org.scalablytyped" %%% "prosemirror-transform" % "1.7.0-a598d4",
-  "org.scalablytyped" %%% "prosemirror-view" % "1.29.1-92f3ca",
-  "org.scalablytyped" %%% "std" % "4.9-ecb5eb")
+  "org.scalablytyped" %%% "orderedmap" % "2.1.0-24aa81",
+  "org.scalablytyped" %%% "prosemirror-model" % "1.19.0-d0784d",
+  "org.scalablytyped" %%% "prosemirror-state" % "1.4.2-a9027b",
+  "org.scalablytyped" %%% "prosemirror-transform" % "1.7.1-ca0ba7",
+  "org.scalablytyped" %%% "prosemirror-view" % "1.31.2-a7790e",
+  "org.scalablytyped" %%% "std" % "5.0-e63739")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

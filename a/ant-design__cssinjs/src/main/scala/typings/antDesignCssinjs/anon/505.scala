@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.GridGap
+import typings.csstype.mod.Property.Grid
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,13 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `505` extends StObject {
   
   var value: js.UndefOr[
-    (GridGap[Double | String]) | (js.Array[
-      (Extract[
-        js.UndefOr[
-          (GridGap[Double | String]) | (js.Array[NonNullable[js.UndefOr[GridGap[Double | String]]]])
-        ], 
-        String
-      ]) | (NonNullable[js.UndefOr[GridGap[Double | String]]])
+    Grid | (js.Array[
+      (Extract[js.UndefOr[Grid | js.Array[NonNullable[js.UndefOr[Grid]]]], String]) | NonNullable[js.UndefOr[Grid]]
     ])
   ] = js.native
 }

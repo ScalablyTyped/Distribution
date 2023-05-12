@@ -5,24 +5,26 @@ import typings.angularCompilerCli.srcNgtscCoreApiSrcInterfacesMod.ResourceHostCo
 import typings.angularCompilerCli.srcNgtscCoreApiSrcInterfacesMod.TransformResourceResult
 import typings.angularCompilerCli.srcNgtscCoreApiSrcInterfacesMod.UnifiedModulesHost
 import typings.angularCompilerCli.srcNgtscFileSystemSrcTypesMod.AbsoluteFsPath
-import typings.angularCompilerCli.srcNgtscShimsApiMod.FactoryTracker
 import typings.angularCompilerCli.srcNgtscShimsMod.ShimAdapter
 import typings.angularCompilerCli.srcNgtscShimsMod.ShimReferenceTagger
 import typings.std.Set
+import typings.typescript.mod.CancellationToken
 import typings.typescript.mod.CompilerOptions
 import typings.typescript.mod.CreateSourceFileOptions
 import typings.typescript.mod.Diagnostic
 import typings.typescript.mod.FileReference
-import typings.typescript.mod.ModuleKind.CommonJS
-import typings.typescript.mod.ModuleKind.ESNext
 import typings.typescript.mod.ModuleResolutionCache
 import typings.typescript.mod.ParsedCommandLine
 import typings.typescript.mod.Path
+import typings.typescript.mod.ResolutionMode
 import typings.typescript.mod.ResolvedModule
+import typings.typescript.mod.ResolvedModuleWithFailedLookupLocations
 import typings.typescript.mod.ResolvedProjectReference
 import typings.typescript.mod.ResolvedTypeReferenceDirective
+import typings.typescript.mod.ResolvedTypeReferenceDirectiveWithFailedLookupLocations
 import typings.typescript.mod.ScriptTarget
 import typings.typescript.mod.SourceFile
+import typings.typescript.mod.StringLiteralLike
 import typings.typescript.mod.WriteFileCallback
 import typings.typescript.mod.WriteFileCallbackData
 import org.scalablytyped.runtime.StObject
@@ -47,8 +49,6 @@ trait NgCompilerHost extends StObject {
   
   val entryPoint: AbsoluteFsPath | Null = js.native
   
-  val factoryTracker: FactoryTracker | Null = js.native
-  
   def fileExists(fileName: String): Boolean = js.native
   @JSName("fileExists")
   var fileExists_Original: js.Function1[/* fileName */ String, Boolean] = js.native
@@ -57,7 +57,7 @@ trait NgCompilerHost extends StObject {
     js.Function2[/* importedFilePath */ String, /* containingFilePath */ String, String]
   ] = js.native
   
-  var getCancellationToken: js.UndefOr[js.Function0[typings.typescript.mod.CancellationToken]] = js.native
+  var getCancellationToken: js.UndefOr[js.Function0[CancellationToken]] = js.native
   
   def getCanonicalFileName(fileName: String): String = js.native
   @JSName("getCanonicalFileName")
@@ -201,6 +201,19 @@ trait NgCompilerHost extends StObject {
     */
   var realpath: js.UndefOr[js.Function1[/* path */ String, String]] = js.native
   
+  var resolveModuleNameLiterals: js.UndefOr[
+    js.Function6[
+      /* moduleLiterals */ js.Array[StringLiteralLike], 
+      /* containingFile */ String, 
+      /* redirectedReference */ js.UndefOr[ResolvedProjectReference], 
+      /* options */ CompilerOptions, 
+      /* containingSourceFile */ SourceFile, 
+      /* reusedNames */ js.UndefOr[js.Array[StringLiteralLike]], 
+      js.Array[ResolvedModuleWithFailedLookupLocations]
+    ]
+  ] = js.native
+  
+  /** @deprecated supply resolveModuleNameLiterals instead for resolution that can handle newer resolution modes like nodenext */
   var resolveModuleNames: js.UndefOr[
     js.Function6[
       /* moduleNames */ js.Array[String], 
@@ -213,7 +226,21 @@ trait NgCompilerHost extends StObject {
     ]
   ] = js.native
   
+  var resolveTypeReferenceDirectiveReferences: js.UndefOr[
+    js.Function6[
+      /* typeDirectiveReferences */ js.Array[FileReference | String], 
+      /* containingFile */ String, 
+      /* redirectedReference */ js.UndefOr[ResolvedProjectReference], 
+      /* options */ CompilerOptions, 
+      /* containingSourceFile */ js.UndefOr[SourceFile], 
+      /* reusedNames */ js.UndefOr[js.Array[FileReference | String]], 
+      js.Array[ResolvedTypeReferenceDirectiveWithFailedLookupLocations]
+    ]
+  ] = js.native
+  
   /**
+    * @deprecated supply resolveTypeReferenceDirectiveReferences instead for resolution that can handle newer resolution modes like nodenext
+    *
     * This method is a companion for 'resolveModuleNames' and is used to resolve 'types' references to actual type declaration files
     */
   var resolveTypeReferenceDirectives: js.UndefOr[
@@ -222,7 +249,7 @@ trait NgCompilerHost extends StObject {
       /* containingFile */ String, 
       /* redirectedReference */ js.UndefOr[ResolvedProjectReference], 
       /* options */ CompilerOptions, 
-      /* containingFileMode */ js.UndefOr[ESNext | CommonJS], 
+      /* containingFileMode */ js.UndefOr[ResolutionMode], 
       js.Array[js.UndefOr[ResolvedTypeReferenceDirective]]
     ]
   ] = js.native

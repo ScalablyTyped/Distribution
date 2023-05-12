@@ -9,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  inline def apply(args: Streams*): Merge2Stream = ^.asInstanceOf[js.Dynamic].apply(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Merge2Stream]
   /**
     * @summary        This function takes an arbitrary number of streams and returns a
     *                 Merge2Stream.
@@ -24,6 +23,8 @@ object mod {
     *
     * @return         A merged duplex stream
     */
+  inline def apply(): Merge2Stream = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Merge2Stream]
+  inline def apply(args: Streams*): Merge2Stream = ^.asInstanceOf[js.Dynamic].apply(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Merge2Stream]
   inline def apply(a: Streams): Merge2Stream = ^.asInstanceOf[js.Dynamic].apply(a.asInstanceOf[js.Any]).asInstanceOf[Merge2Stream]
   inline def apply(a: Streams, b: Streams): Merge2Stream = (^.asInstanceOf[js.Dynamic].apply(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Merge2Stream]
   inline def apply(a: Streams, b: Streams, c: Streams): Merge2Stream = (^.asInstanceOf[js.Dynamic].apply(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any])).asInstanceOf[Merge2Stream]
@@ -34,6 +35,7 @@ object mod {
   inline def apply(a: Streams, b: Streams, c: Streams, options: Options): Merge2Stream = (^.asInstanceOf[js.Dynamic].apply(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Merge2Stream]
   inline def apply(a: Streams, b: Streams, options: Options): Merge2Stream = (^.asInstanceOf[js.Dynamic].apply(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Merge2Stream]
   inline def apply(a: Streams, options: Options): Merge2Stream = (^.asInstanceOf[js.Dynamic].apply(a.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Merge2Stream]
+  inline def apply(options: Options): Merge2Stream = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Merge2Stream]
   
   @JSImport("merge2", JSImport.Namespace)
   @js.native
@@ -74,6 +76,8 @@ object mod {
     var end: js.UndefOr[Boolean] = js.undefined
     
     var objectMode: js.UndefOr[Boolean] = js.undefined
+    
+    var pipeError: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -92,6 +96,10 @@ object mod {
       inline def setObjectMode(value: Boolean): Self = StObject.set(x, "objectMode", value.asInstanceOf[js.Any])
       
       inline def setObjectModeUndefined: Self = StObject.set(x, "objectMode", js.undefined)
+      
+      inline def setPipeError(value: Boolean): Self = StObject.set(x, "pipeError", value.asInstanceOf[js.Any])
+      
+      inline def setPipeErrorUndefined: Self = StObject.set(x, "pipeError", js.undefined)
     }
   }
   

@@ -12,6 +12,8 @@ trait AxiosProgressEvent extends StObject {
   
   var estimated: js.UndefOr[Double] = js.undefined
   
+  var event: js.UndefOr[BrowserProgressEvent] = js.undefined
+  
   var loaded: Double
   
   var progress: js.UndefOr[Double] = js.undefined
@@ -41,6 +43,10 @@ object AxiosProgressEvent {
     inline def setEstimated(value: Double): Self = StObject.set(x, "estimated", value.asInstanceOf[js.Any])
     
     inline def setEstimatedUndefined: Self = StObject.set(x, "estimated", js.undefined)
+    
+    inline def setEvent(value: BrowserProgressEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    
+    inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
     
     inline def setLoaded(value: Double): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
     

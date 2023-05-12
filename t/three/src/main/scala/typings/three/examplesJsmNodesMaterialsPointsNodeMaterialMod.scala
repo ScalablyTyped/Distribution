@@ -19,9 +19,11 @@ object examplesJsmNodesMaterialsPointsNodeMaterialMod {
   trait PointsNodeMaterial
     extends typings.three.examplesJsmNodesMaterialsNodeMaterialMod.default {
     
-    var alphaTestNode: Node | Null = js.native
+    @JSName("alphaTestNode")
+    var alphaTestNode_PointsNodeMaterial: Node | Null = js.native
     
-    var colorNode: Node | Null = js.native
+    @JSName("colorNode")
+    var colorNode_PointsNodeMaterial: Node | Null = js.native
     
     def copy(source: PointsNodeMaterial): this.type = js.native
     
@@ -29,9 +31,11 @@ object examplesJsmNodesMaterialsPointsNodeMaterialMod {
     
     var lightNode: Node | Null = js.native
     
-    var opacityNode: Node | Null = js.native
+    @JSName("opacityNode")
+    var opacityNode_PointsNodeMaterial: Node | Null = js.native
     
-    var positionNode: Node | Null = js.native
+    @JSName("positionNode")
+    var positionNode_PointsNodeMaterial: Node | Null = js.native
     
     var sizeNode: Node | Null = js.native
   }

@@ -59,6 +59,34 @@ trait RAM extends Service {
   var config_RAM: ConfigBase & ClientConfiguration = js.native
   
   /**
+    * Creates a customer managed permission for a specified resource type that you can attach to resource shares. It is created in the Amazon Web Services Region in which you call the operation.
+    */
+  def createPermission(): Request[CreatePermissionResponse, AWSError] = js.native
+  def createPermission(callback: js.Function2[/* err */ AWSError, /* data */ CreatePermissionResponse, Unit]): Request[CreatePermissionResponse, AWSError] = js.native
+  /**
+    * Creates a customer managed permission for a specified resource type that you can attach to resource shares. It is created in the Amazon Web Services Region in which you call the operation.
+    */
+  def createPermission(params: CreatePermissionRequest): Request[CreatePermissionResponse, AWSError] = js.native
+  def createPermission(
+    params: CreatePermissionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreatePermissionResponse, Unit]
+  ): Request[CreatePermissionResponse, AWSError] = js.native
+  
+  /**
+    * Creates a new version of the specified customer managed permission. The new version is automatically set as the default version of the customer managed permission. New resource shares automatically use the default permission. Existing resource shares continue to use their original permission versions, but you can use ReplacePermissionAssociations to update them. If the specified customer managed permission already has the maximum of 5 versions, then you must delete one of the existing versions before you can create a new one.
+    */
+  def createPermissionVersion(): Request[CreatePermissionVersionResponse, AWSError] = js.native
+  def createPermissionVersion(callback: js.Function2[/* err */ AWSError, /* data */ CreatePermissionVersionResponse, Unit]): Request[CreatePermissionVersionResponse, AWSError] = js.native
+  /**
+    * Creates a new version of the specified customer managed permission. The new version is automatically set as the default version of the customer managed permission. New resource shares automatically use the default permission. Existing resource shares continue to use their original permission versions, but you can use ReplacePermissionAssociations to update them. If the specified customer managed permission already has the maximum of 5 versions, then you must delete one of the existing versions before you can create a new one.
+    */
+  def createPermissionVersion(params: CreatePermissionVersionRequest): Request[CreatePermissionVersionResponse, AWSError] = js.native
+  def createPermissionVersion(
+    params: CreatePermissionVersionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreatePermissionVersionResponse, Unit]
+  ): Request[CreatePermissionVersionResponse, AWSError] = js.native
+  
+  /**
     * Creates a resource share. You can provide a list of the Amazon Resource Names (ARNs) for the resources that you want to share, a list of principals you want to share the resources with, and the permissions to grant those principals.  Sharing a resource makes it available for use by principals outside of the Amazon Web Services account that created the resource. Sharing doesn't change any permissions or quotas that apply to the resource in the account that created it. 
     */
   def createResourceShare(): Request[CreateResourceShareResponse, AWSError] = js.native
@@ -73,12 +101,40 @@ trait RAM extends Service {
   ): Request[CreateResourceShareResponse, AWSError] = js.native
   
   /**
-    * Deletes the specified resource share. This doesn't delete any of the resources that were associated with the resource share; it only stops the sharing of those resources outside of the Amazon Web Services account that created them.
+    * Deletes the specified customer managed permission in the Amazon Web Services Region in which you call this operation. You can delete a customer managed permission only if it isn't attached to any resource share. The operation deletes all versions associated with the customer managed permission.
+    */
+  def deletePermission(): Request[DeletePermissionResponse, AWSError] = js.native
+  def deletePermission(callback: js.Function2[/* err */ AWSError, /* data */ DeletePermissionResponse, Unit]): Request[DeletePermissionResponse, AWSError] = js.native
+  /**
+    * Deletes the specified customer managed permission in the Amazon Web Services Region in which you call this operation. You can delete a customer managed permission only if it isn't attached to any resource share. The operation deletes all versions associated with the customer managed permission.
+    */
+  def deletePermission(params: DeletePermissionRequest): Request[DeletePermissionResponse, AWSError] = js.native
+  def deletePermission(
+    params: DeletePermissionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeletePermissionResponse, Unit]
+  ): Request[DeletePermissionResponse, AWSError] = js.native
+  
+  /**
+    * Deletes one version of a customer managed permission. The version you specify must not be attached to any resource share and must not be the default version for the permission. If a customer managed permission has the maximum of 5 versions, then you must delete at least one version before you can create another.
+    */
+  def deletePermissionVersion(): Request[DeletePermissionVersionResponse, AWSError] = js.native
+  def deletePermissionVersion(callback: js.Function2[/* err */ AWSError, /* data */ DeletePermissionVersionResponse, Unit]): Request[DeletePermissionVersionResponse, AWSError] = js.native
+  /**
+    * Deletes one version of a customer managed permission. The version you specify must not be attached to any resource share and must not be the default version for the permission. If a customer managed permission has the maximum of 5 versions, then you must delete at least one version before you can create another.
+    */
+  def deletePermissionVersion(params: DeletePermissionVersionRequest): Request[DeletePermissionVersionResponse, AWSError] = js.native
+  def deletePermissionVersion(
+    params: DeletePermissionVersionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeletePermissionVersionResponse, Unit]
+  ): Request[DeletePermissionVersionResponse, AWSError] = js.native
+  
+  /**
+    * Deletes the specified resource share.  This doesn't delete any of the resources that were associated with the resource share; it only stops the sharing of those resources through this resource share. 
     */
   def deleteResourceShare(): Request[DeleteResourceShareResponse, AWSError] = js.native
   def deleteResourceShare(callback: js.Function2[/* err */ AWSError, /* data */ DeleteResourceShareResponse, Unit]): Request[DeleteResourceShareResponse, AWSError] = js.native
   /**
-    * Deletes the specified resource share. This doesn't delete any of the resources that were associated with the resource share; it only stops the sharing of those resources outside of the Amazon Web Services account that created them.
+    * Deletes the specified resource share.  This doesn't delete any of the resources that were associated with the resource share; it only stops the sharing of those resources through this resource share. 
     */
   def deleteResourceShare(params: DeleteResourceShareRequest): Request[DeleteResourceShareResponse, AWSError] = js.native
   def deleteResourceShare(
@@ -87,12 +143,12 @@ trait RAM extends Service {
   ): Request[DeleteResourceShareResponse, AWSError] = js.native
   
   /**
-    * Disassociates the specified principals or resources from the specified resource share.
+    * Removes the specified principals or resources from participating in the specified resource share.
     */
   def disassociateResourceShare(): Request[DisassociateResourceShareResponse, AWSError] = js.native
   def disassociateResourceShare(callback: js.Function2[/* err */ AWSError, /* data */ DisassociateResourceShareResponse, Unit]): Request[DisassociateResourceShareResponse, AWSError] = js.native
   /**
-    * Disassociates the specified principals or resources from the specified resource share.
+    * Removes the specified principals or resources from participating in the specified resource share.
     */
   def disassociateResourceShare(params: DisassociateResourceShareRequest): Request[DisassociateResourceShareResponse, AWSError] = js.native
   def disassociateResourceShare(
@@ -101,14 +157,14 @@ trait RAM extends Service {
   ): Request[DisassociateResourceShareResponse, AWSError] = js.native
   
   /**
-    * Disassociates an RAM permission from a resource share. Permission changes take effect immediately. You can remove a RAM permission from a resource share only if there are currently no resources of the relevant resource type currently attached to the resource share.
+    * Removes a managed permission from a resource share. Permission changes take effect immediately. You can remove a managed permission from a resource share only if there are currently no resources of the relevant resource type currently attached to the resource share.
     */
   def disassociateResourceSharePermission(): Request[DisassociateResourceSharePermissionResponse, AWSError] = js.native
   def disassociateResourceSharePermission(
     callback: js.Function2[/* err */ AWSError, /* data */ DisassociateResourceSharePermissionResponse, Unit]
   ): Request[DisassociateResourceSharePermissionResponse, AWSError] = js.native
   /**
-    * Disassociates an RAM permission from a resource share. Permission changes take effect immediately. You can remove a RAM permission from a resource share only if there are currently no resources of the relevant resource type currently attached to the resource share.
+    * Removes a managed permission from a resource share. Permission changes take effect immediately. You can remove a managed permission from a resource share only if there are currently no resources of the relevant resource type currently attached to the resource share.
     */
   def disassociateResourceSharePermission(params: DisassociateResourceSharePermissionRequest): Request[DisassociateResourceSharePermissionResponse, AWSError] = js.native
   def disassociateResourceSharePermission(
@@ -117,14 +173,14 @@ trait RAM extends Service {
   ): Request[DisassociateResourceSharePermissionResponse, AWSError] = js.native
   
   /**
-    * Enables resource sharing within your organization in Organizations. Calling this operation enables RAM to retrieve information about the organization and its structure. This lets you share resources with all of the accounts in an organization by specifying the organization's ID, or all of the accounts in an organizational unit (OU) by specifying the OU's ID. Until you enable sharing within the organization, you can specify only individual Amazon Web Services accounts, or for supported resource types, IAM users and roles. You must call this operation from an IAM user or role in the organization's management account.
+    * Enables resource sharing within your organization in Organizations. This operation creates a service-linked role called AWSServiceRoleForResourceAccessManager that has the IAM managed policy named AWSResourceAccessManagerServiceRolePolicy attached. This role permits RAM to retrieve information about the organization and its structure. This lets you share resources with all of the accounts in the calling account's organization by specifying the organization ID, or all of the accounts in an organizational unit (OU) by specifying the OU ID. Until you enable sharing within the organization, you can specify only individual Amazon Web Services accounts, or for supported resource types, IAM roles and users. You must call this operation from an IAM role or user in the organization's management account. 
     */
   def enableSharingWithAwsOrganization(): Request[EnableSharingWithAwsOrganizationResponse, AWSError] = js.native
   def enableSharingWithAwsOrganization(
     callback: js.Function2[/* err */ AWSError, /* data */ EnableSharingWithAwsOrganizationResponse, Unit]
   ): Request[EnableSharingWithAwsOrganizationResponse, AWSError] = js.native
   /**
-    * Enables resource sharing within your organization in Organizations. Calling this operation enables RAM to retrieve information about the organization and its structure. This lets you share resources with all of the accounts in an organization by specifying the organization's ID, or all of the accounts in an organizational unit (OU) by specifying the OU's ID. Until you enable sharing within the organization, you can specify only individual Amazon Web Services accounts, or for supported resource types, IAM users and roles. You must call this operation from an IAM user or role in the organization's management account.
+    * Enables resource sharing within your organization in Organizations. This operation creates a service-linked role called AWSServiceRoleForResourceAccessManager that has the IAM managed policy named AWSResourceAccessManagerServiceRolePolicy attached. This role permits RAM to retrieve information about the organization and its structure. This lets you share resources with all of the accounts in the calling account's organization by specifying the organization ID, or all of the accounts in an organizational unit (OU) by specifying the OU ID. Until you enable sharing within the organization, you can specify only individual Amazon Web Services accounts, or for supported resource types, IAM roles and users. You must call this operation from an IAM role or user in the organization's management account. 
     */
   def enableSharingWithAwsOrganization(params: EnableSharingWithAwsOrganizationRequest): Request[EnableSharingWithAwsOrganizationResponse, AWSError] = js.native
   def enableSharingWithAwsOrganization(
@@ -133,12 +189,12 @@ trait RAM extends Service {
   ): Request[EnableSharingWithAwsOrganizationResponse, AWSError] = js.native
   
   /**
-    * Gets the contents of an RAM permission in JSON format.
+    * Retrieves the contents of a managed permission in JSON format.
     */
   def getPermission(): Request[GetPermissionResponse, AWSError] = js.native
   def getPermission(callback: js.Function2[/* err */ AWSError, /* data */ GetPermissionResponse, Unit]): Request[GetPermissionResponse, AWSError] = js.native
   /**
-    * Gets the contents of an RAM permission in JSON format.
+    * Retrieves the contents of a managed permission in JSON format.
     */
   def getPermission(params: GetPermissionRequest): Request[GetPermissionResponse, AWSError] = js.native
   def getPermission(
@@ -161,12 +217,12 @@ trait RAM extends Service {
   ): Request[GetResourcePoliciesResponse, AWSError] = js.native
   
   /**
-    * Retrieves the resource and principal associations for resource shares that you own.
+    * Retrieves the lists of resources and principals that associated for resource shares that you own.
     */
   def getResourceShareAssociations(): Request[GetResourceShareAssociationsResponse, AWSError] = js.native
   def getResourceShareAssociations(callback: js.Function2[/* err */ AWSError, /* data */ GetResourceShareAssociationsResponse, Unit]): Request[GetResourceShareAssociationsResponse, AWSError] = js.native
   /**
-    * Retrieves the resource and principal associations for resource shares that you own.
+    * Retrieves the lists of resources and principals that associated for resource shares that you own.
     */
   def getResourceShareAssociations(params: GetResourceShareAssociationsRequest): Request[GetResourceShareAssociationsResponse, AWSError] = js.native
   def getResourceShareAssociations(
@@ -219,6 +275,20 @@ trait RAM extends Service {
   ): Request[ListPendingInvitationResourcesResponse, AWSError] = js.native
   
   /**
+    * Lists information about the managed permission and its associations to any resource shares that use this managed permission. This lets you see which resource shares use which versions of the specified managed permission.
+    */
+  def listPermissionAssociations(): Request[ListPermissionAssociationsResponse, AWSError] = js.native
+  def listPermissionAssociations(callback: js.Function2[/* err */ AWSError, /* data */ ListPermissionAssociationsResponse, Unit]): Request[ListPermissionAssociationsResponse, AWSError] = js.native
+  /**
+    * Lists information about the managed permission and its associations to any resource shares that use this managed permission. This lets you see which resource shares use which versions of the specified managed permission.
+    */
+  def listPermissionAssociations(params: ListPermissionAssociationsRequest): Request[ListPermissionAssociationsResponse, AWSError] = js.native
+  def listPermissionAssociations(
+    params: ListPermissionAssociationsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListPermissionAssociationsResponse, Unit]
+  ): Request[ListPermissionAssociationsResponse, AWSError] = js.native
+  
+  /**
     * Lists the available versions of the specified RAM permission.
     */
   def listPermissionVersions(): Request[ListPermissionVersionsResponse, AWSError] = js.native
@@ -259,6 +329,22 @@ trait RAM extends Service {
     params: ListPrincipalsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListPrincipalsResponse, Unit]
   ): Request[ListPrincipalsResponse, AWSError] = js.native
+  
+  /**
+    * Retrieves the current status of the asynchronous tasks performed by RAM when you perform the ReplacePermissionAssociationsWork operation.
+    */
+  def listReplacePermissionAssociationsWork(): Request[ListReplacePermissionAssociationsWorkResponse, AWSError] = js.native
+  def listReplacePermissionAssociationsWork(
+    callback: js.Function2[/* err */ AWSError, /* data */ ListReplacePermissionAssociationsWorkResponse, Unit]
+  ): Request[ListReplacePermissionAssociationsWorkResponse, AWSError] = js.native
+  /**
+    * Retrieves the current status of the asynchronous tasks performed by RAM when you perform the ReplacePermissionAssociationsWork operation.
+    */
+  def listReplacePermissionAssociationsWork(params: ListReplacePermissionAssociationsWorkRequest): Request[ListReplacePermissionAssociationsWorkResponse, AWSError] = js.native
+  def listReplacePermissionAssociationsWork(
+    params: ListReplacePermissionAssociationsWorkRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListReplacePermissionAssociationsWorkResponse, Unit]
+  ): Request[ListReplacePermissionAssociationsWorkResponse, AWSError] = js.native
   
   /**
     * Lists the RAM permissions that are associated with a resource share.
@@ -303,14 +389,30 @@ trait RAM extends Service {
   ): Request[ListResourcesResponse, AWSError] = js.native
   
   /**
-    * When you attach a resource-based permission policy to a resource, it automatically creates a resource share. However, resource shares created this way are visible only to the resource share owner, and the resource share can't be modified in RAM. You can use this operation to promote the resource share to a full RAM resource share. When you promote a resource share, you can then manage the resource share in RAM and it becomes visible to all of the principals you shared it with.
+    * When you attach a resource-based policy to a resource, RAM automatically creates a resource share of featureSet=CREATED_FROM_POLICY with a managed permission that has the same IAM permissions as the original resource-based policy. However, this type of managed permission is visible to only the resource share owner, and the associated resource share can't be modified by using RAM. This operation creates a separate, fully manageable customer managed permission that has the same IAM permissions as the original resource-based policy. You can associate this customer managed permission to any resource shares. Before you use PromoteResourceShareCreatedFromPolicy, you should first run this operation to ensure that you have an appropriate customer managed permission that can be associated with the promoted resource share.    The original CREATED_FROM_POLICY policy isn't deleted, and resource shares using that original policy aren't automatically updated.   You can't modify a CREATED_FROM_POLICY resource share so you can't associate the new customer managed permission by using ReplacePermsissionAssociations. However, if you use PromoteResourceShareCreatedFromPolicy, that operation automatically associates the fully manageable customer managed permission to the newly promoted STANDARD resource share.   After you promote a resource share, if the original CREATED_FROM_POLICY managed permission has no other associations to A resource share, then RAM automatically deletes it.   
+    */
+  def promotePermissionCreatedFromPolicy(): Request[PromotePermissionCreatedFromPolicyResponse, AWSError] = js.native
+  def promotePermissionCreatedFromPolicy(
+    callback: js.Function2[/* err */ AWSError, /* data */ PromotePermissionCreatedFromPolicyResponse, Unit]
+  ): Request[PromotePermissionCreatedFromPolicyResponse, AWSError] = js.native
+  /**
+    * When you attach a resource-based policy to a resource, RAM automatically creates a resource share of featureSet=CREATED_FROM_POLICY with a managed permission that has the same IAM permissions as the original resource-based policy. However, this type of managed permission is visible to only the resource share owner, and the associated resource share can't be modified by using RAM. This operation creates a separate, fully manageable customer managed permission that has the same IAM permissions as the original resource-based policy. You can associate this customer managed permission to any resource shares. Before you use PromoteResourceShareCreatedFromPolicy, you should first run this operation to ensure that you have an appropriate customer managed permission that can be associated with the promoted resource share.    The original CREATED_FROM_POLICY policy isn't deleted, and resource shares using that original policy aren't automatically updated.   You can't modify a CREATED_FROM_POLICY resource share so you can't associate the new customer managed permission by using ReplacePermsissionAssociations. However, if you use PromoteResourceShareCreatedFromPolicy, that operation automatically associates the fully manageable customer managed permission to the newly promoted STANDARD resource share.   After you promote a resource share, if the original CREATED_FROM_POLICY managed permission has no other associations to A resource share, then RAM automatically deletes it.   
+    */
+  def promotePermissionCreatedFromPolicy(params: PromotePermissionCreatedFromPolicyRequest): Request[PromotePermissionCreatedFromPolicyResponse, AWSError] = js.native
+  def promotePermissionCreatedFromPolicy(
+    params: PromotePermissionCreatedFromPolicyRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ PromotePermissionCreatedFromPolicyResponse, Unit]
+  ): Request[PromotePermissionCreatedFromPolicyResponse, AWSError] = js.native
+  
+  /**
+    * When you attach a resource-based policy to a resource, RAM automatically creates a resource share of featureSet=CREATED_FROM_POLICY with a managed permission that has the same IAM permissions as the original resource-based policy. However, this type of managed permission is visible to only the resource share owner, and the associated resource share can't be modified by using RAM. This operation promotes the resource share to a STANDARD resource share that is fully manageable in RAM. When you promote a resource share, you can then manage the resource share in RAM and it becomes visible to all of the principals you shared it with.  Before you perform this operation, you should first run PromotePermissionCreatedFromPolicyto ensure that you have an appropriate customer managed permission that can be associated with this resource share after its is promoted. If this operation can't find a managed permission that exactly matches the existing CREATED_FROM_POLICY permission, then this operation fails. 
     */
   def promoteResourceShareCreatedFromPolicy(): Request[PromoteResourceShareCreatedFromPolicyResponse, AWSError] = js.native
   def promoteResourceShareCreatedFromPolicy(
     callback: js.Function2[/* err */ AWSError, /* data */ PromoteResourceShareCreatedFromPolicyResponse, Unit]
   ): Request[PromoteResourceShareCreatedFromPolicyResponse, AWSError] = js.native
   /**
-    * When you attach a resource-based permission policy to a resource, it automatically creates a resource share. However, resource shares created this way are visible only to the resource share owner, and the resource share can't be modified in RAM. You can use this operation to promote the resource share to a full RAM resource share. When you promote a resource share, you can then manage the resource share in RAM and it becomes visible to all of the principals you shared it with.
+    * When you attach a resource-based policy to a resource, RAM automatically creates a resource share of featureSet=CREATED_FROM_POLICY with a managed permission that has the same IAM permissions as the original resource-based policy. However, this type of managed permission is visible to only the resource share owner, and the associated resource share can't be modified by using RAM. This operation promotes the resource share to a STANDARD resource share that is fully manageable in RAM. When you promote a resource share, you can then manage the resource share in RAM and it becomes visible to all of the principals you shared it with.  Before you perform this operation, you should first run PromotePermissionCreatedFromPolicyto ensure that you have an appropriate customer managed permission that can be associated with this resource share after its is promoted. If this operation can't find a managed permission that exactly matches the existing CREATED_FROM_POLICY permission, then this operation fails. 
     */
   def promoteResourceShareCreatedFromPolicy(params: PromoteResourceShareCreatedFromPolicyRequest): Request[PromoteResourceShareCreatedFromPolicyResponse, AWSError] = js.native
   def promoteResourceShareCreatedFromPolicy(
@@ -333,12 +435,40 @@ trait RAM extends Service {
   ): Request[RejectResourceShareInvitationResponse, AWSError] = js.native
   
   /**
-    * Adds the specified tag keys and values to the specified resource share. The tags are attached only to the resource share, not to the resources that are in the resource share.
+    * Updates all resource shares that use a managed permission to a different managed permission. This operation always applies the default version of the target managed permission. You can optionally specify that the update applies to only resource shares that currently use a specified version. This enables you to update to the latest version, without changing the which managed permission is used. You can use this operation to update all of your resource shares to use the current default version of the permission by specifying the same value for the fromPermissionArn and toPermissionArn parameters. You can use the optional fromPermissionVersion parameter to update only those resources that use a specified version of the managed permission to the new managed permission.  To successfully perform this operation, you must have permission to update the resource-based policy on all affected resource types. 
+    */
+  def replacePermissionAssociations(): Request[ReplacePermissionAssociationsResponse, AWSError] = js.native
+  def replacePermissionAssociations(callback: js.Function2[/* err */ AWSError, /* data */ ReplacePermissionAssociationsResponse, Unit]): Request[ReplacePermissionAssociationsResponse, AWSError] = js.native
+  /**
+    * Updates all resource shares that use a managed permission to a different managed permission. This operation always applies the default version of the target managed permission. You can optionally specify that the update applies to only resource shares that currently use a specified version. This enables you to update to the latest version, without changing the which managed permission is used. You can use this operation to update all of your resource shares to use the current default version of the permission by specifying the same value for the fromPermissionArn and toPermissionArn parameters. You can use the optional fromPermissionVersion parameter to update only those resources that use a specified version of the managed permission to the new managed permission.  To successfully perform this operation, you must have permission to update the resource-based policy on all affected resource types. 
+    */
+  def replacePermissionAssociations(params: ReplacePermissionAssociationsRequest): Request[ReplacePermissionAssociationsResponse, AWSError] = js.native
+  def replacePermissionAssociations(
+    params: ReplacePermissionAssociationsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ReplacePermissionAssociationsResponse, Unit]
+  ): Request[ReplacePermissionAssociationsResponse, AWSError] = js.native
+  
+  /**
+    * Designates the specified version number as the default version for the specified customer managed permission. New resource shares automatically use this new default permission. Existing resource shares continue to use their original permission version, but you can use ReplacePermissionAssociations to update them.
+    */
+  def setDefaultPermissionVersion(): Request[SetDefaultPermissionVersionResponse, AWSError] = js.native
+  def setDefaultPermissionVersion(callback: js.Function2[/* err */ AWSError, /* data */ SetDefaultPermissionVersionResponse, Unit]): Request[SetDefaultPermissionVersionResponse, AWSError] = js.native
+  /**
+    * Designates the specified version number as the default version for the specified customer managed permission. New resource shares automatically use this new default permission. Existing resource shares continue to use their original permission version, but you can use ReplacePermissionAssociations to update them.
+    */
+  def setDefaultPermissionVersion(params: SetDefaultPermissionVersionRequest): Request[SetDefaultPermissionVersionResponse, AWSError] = js.native
+  def setDefaultPermissionVersion(
+    params: SetDefaultPermissionVersionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ SetDefaultPermissionVersionResponse, Unit]
+  ): Request[SetDefaultPermissionVersionResponse, AWSError] = js.native
+  
+  /**
+    * Adds the specified tag keys and values to a resource share or managed permission. If you choose a resource share, the tags are attached to only the resource share, not to the resources that are in the resource share. The tags on a managed permission are the same for all versions of the managed permission.
     */
   def tagResource(): Request[TagResourceResponse, AWSError] = js.native
   def tagResource(callback: js.Function2[/* err */ AWSError, /* data */ TagResourceResponse, Unit]): Request[TagResourceResponse, AWSError] = js.native
   /**
-    * Adds the specified tag keys and values to the specified resource share. The tags are attached only to the resource share, not to the resources that are in the resource share.
+    * Adds the specified tag keys and values to a resource share or managed permission. If you choose a resource share, the tags are attached to only the resource share, not to the resources that are in the resource share. The tags on a managed permission are the same for all versions of the managed permission.
     */
   def tagResource(params: TagResourceRequest): Request[TagResourceResponse, AWSError] = js.native
   def tagResource(
@@ -347,12 +477,12 @@ trait RAM extends Service {
   ): Request[TagResourceResponse, AWSError] = js.native
   
   /**
-    * Removes the specified tag key and value pairs from the specified resource share.
+    * Removes the specified tag key and value pairs from the specified resource share or managed permission.
     */
   def untagResource(): Request[UntagResourceResponse, AWSError] = js.native
   def untagResource(callback: js.Function2[/* err */ AWSError, /* data */ UntagResourceResponse, Unit]): Request[UntagResourceResponse, AWSError] = js.native
   /**
-    * Removes the specified tag key and value pairs from the specified resource share.
+    * Removes the specified tag key and value pairs from the specified resource share or managed permission.
     */
   def untagResource(params: UntagResourceRequest): Request[UntagResourceResponse, AWSError] = js.native
   def untagResource(

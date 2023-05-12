@@ -19,6 +19,14 @@ object lib0Strings {
   inline def bool: bool = "bool".asInstanceOf[bool]
   
   @js.native
+  sealed trait decrypt extends StObject
+  inline def decrypt: decrypt = "decrypt".asInstanceOf[decrypt]
+  
+  @js.native
+  sealed trait encrypt extends StObject
+  inline def encrypt: encrypt = "encrypt".asInstanceOf[encrypt]
+  
+  @js.native
   sealed trait json extends StObject
   inline def json: json = "json".asInstanceOf[json]
   
@@ -51,6 +59,14 @@ object lib0Strings {
   inline def readwrite: readwrite = "readwrite".asInstanceOf[readwrite]
   
   @js.native
+  sealed trait sign extends StObject
+  inline def sign: sign = "sign".asInstanceOf[sign]
+  
+  @js.native
   sealed trait string extends StObject
   inline def string: string = "string".asInstanceOf[string]
+  
+  @js.native
+  sealed trait verify extends StObject
+  inline def verify: verify = "verify".asInstanceOf[verify]
 }

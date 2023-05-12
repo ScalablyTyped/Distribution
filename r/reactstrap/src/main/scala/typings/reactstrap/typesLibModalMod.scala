@@ -37,8 +37,6 @@ object typesLibModalMod {
        with HTMLAttributes[HTMLElement]
        with /* key */ StringDictionary[Any] {
     
-    var autoFocus: js.UndefOr[Boolean] = js.undefined
-    
     var backdrop: js.UndefOr[Boolean | static] = js.undefined
     
     var backdropClassName: js.UndefOr[String] = js.undefined
@@ -104,10 +102,6 @@ object typesLibModalMod {
     
     @scala.inline
     implicit open class MutableBuilder[Self <: ModalProps] (val x: Self) extends AnyVal {
-      
-      inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
-      
-      inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
       
       inline def setBackdrop(value: Boolean | static): Self = StObject.set(x, "backdrop", value.asInstanceOf[js.Any])
       

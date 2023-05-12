@@ -19,13 +19,14 @@ trait TElementContainerNode
   @JSName("projection")
   var projection_TElementContainerNode: Null
   
-  @JSName("tViews")
-  var tViews_TElementContainerNode: Null
+  @JSName("tView")
+  var tView_TElementContainerNode: Null
 }
 object TElementContainerNode {
   
   inline def apply(
     classBindings: TStylingRange,
+    componentOffset: Double,
     directiveEnd: Double,
     directiveStart: Double,
     directiveStylingLast: Double,
@@ -35,11 +36,11 @@ object TElementContainerNode {
     projection: Null,
     providerIndexes: TNodeProviderIndexes,
     styleBindings: TStylingRange,
-    tViews: Null,
+    tView: Null,
     `type`: TNodeType,
     value: Any
   ): TElementContainerNode = {
-    val __obj = js.Dynamic.literal(classBindings = classBindings.asInstanceOf[js.Any], directiveEnd = directiveEnd.asInstanceOf[js.Any], directiveStart = directiveStart.asInstanceOf[js.Any], directiveStylingLast = directiveStylingLast.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], injectorIndex = injectorIndex.asInstanceOf[js.Any], projection = projection.asInstanceOf[js.Any], providerIndexes = providerIndexes.asInstanceOf[js.Any], styleBindings = styleBindings.asInstanceOf[js.Any], tViews = tViews.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], attrs = null, child = null, classes = null, classesWithoutHost = null, inputs = null, insertBeforeIndex = null, localNames = null, mergedAttrs = null, next = null, outputs = null, parent = null, projectionNext = null, propertyBindings = null, styles = null, stylesWithoutHost = null)
+    val __obj = js.Dynamic.literal(classBindings = classBindings.asInstanceOf[js.Any], componentOffset = componentOffset.asInstanceOf[js.Any], directiveEnd = directiveEnd.asInstanceOf[js.Any], directiveStart = directiveStart.asInstanceOf[js.Any], directiveStylingLast = directiveStylingLast.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], injectorIndex = injectorIndex.asInstanceOf[js.Any], projection = projection.asInstanceOf[js.Any], providerIndexes = providerIndexes.asInstanceOf[js.Any], styleBindings = styleBindings.asInstanceOf[js.Any], tView = tView.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], attrs = null, child = null, classes = null, classesWithoutHost = null, inputs = null, insertBeforeIndex = null, localNames = null, mergedAttrs = null, next = null, outputs = null, parent = null, prev = null, projectionNext = null, propertyBindings = null, styles = null, stylesWithoutHost = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TElementContainerNode]
   }
@@ -57,6 +58,6 @@ object TElementContainerNode {
     
     inline def setProjection(value: Null): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
     
-    inline def setTViews(value: Null): Self = StObject.set(x, "tViews", value.asInstanceOf[js.Any])
+    inline def setTView(value: Null): Self = StObject.set(x, "tView", value.asInstanceOf[js.Any])
   }
 }

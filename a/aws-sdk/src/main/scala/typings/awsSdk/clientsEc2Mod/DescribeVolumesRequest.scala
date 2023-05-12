@@ -17,12 +17,12 @@ trait DescribeVolumesRequest extends StObject {
   var Filters: js.UndefOr[FilterList] = js.undefined
   
   /**
-    * The maximum number of volume results returned by DescribeVolumes in paginated output. When this parameter is used, DescribeVolumes only returns MaxResults results in a single page along with a NextToken response element. The remaining results of the initial request can be seen by sending another DescribeVolumes request with the returned NextToken value. This value can be between 5 and 500; if MaxResults is given a value larger than 500, only 500 results are returned. If this parameter is not used, then DescribeVolumes returns all results. You cannot specify this parameter and the volume IDs parameter in the same request.
+    * The maximum number of volumes to return for this request. This value can be between 5 and 500; if you specify a value larger than 500, only 500 items are returned. If this parameter is not used, then all items are returned. You cannot specify this parameter and the volume IDs parameter in the same request. For more information, see Pagination.
     */
   var MaxResults: js.UndefOr[Integer] = js.undefined
   
   /**
-    * The NextToken value returned from a previous paginated DescribeVolumes request where MaxResults was used and the results exceeded the value of that parameter. Pagination continues from the end of the previous results that returned the NextToken value. This value is null when there are no more results to return.
+    * The token returned from a previous paginated request. Pagination continues from the end of the items returned from the previous request.
     */
   var NextToken: js.UndefOr[String] = js.undefined
   

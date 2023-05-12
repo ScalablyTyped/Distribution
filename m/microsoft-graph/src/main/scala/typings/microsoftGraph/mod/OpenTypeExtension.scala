@@ -8,7 +8,7 @@ trait OpenTypeExtension
   extends StObject
      with Entity {
   
-  // A unique text identifier for an open type data extension. Required.
+  // A unique text identifier for an open type data extension. Optional.
   var extensionName: js.UndefOr[String] = js.undefined
 }
 object OpenTypeExtension {

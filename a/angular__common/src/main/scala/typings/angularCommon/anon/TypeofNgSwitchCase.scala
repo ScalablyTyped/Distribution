@@ -29,7 +29,8 @@ trait TypeofNgSwitchCase
     js.Object, 
     scala.Nothing, 
     scala.Nothing, 
-    `true`
+    `true`, 
+    scala.Nothing
   ] = js.native
   
   var ɵfac: ɵɵFactoryDeclaration[typings.angularCommon.mod.NgSwitchCase, js.Tuple3[Null, Null, Host]] = js.native

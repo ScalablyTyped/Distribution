@@ -17,7 +17,7 @@ trait ImagingStudySeries
   /**
     * The anatomic structures examined. See DICOM Part 16 Annex L (http://dicom.nema.org/medical/dicom/current/output/chtml/part16/chapter_L.html) for DICOM to SNOMED-CT mappings. The bodySite may indicate the laterality of body part imaged; if so, it shall be consistent with any content of ImagingStudy.series.laterality.
     */
-  var bodySite: js.UndefOr[Coding] = js.undefined
+  var bodySite: js.UndefOr[CodeableReference] = js.undefined
   
   /**
     * A description of the series.
@@ -37,12 +37,12 @@ trait ImagingStudySeries
   /**
     * The laterality of the (possibly paired) anatomic structures examined. E.g., the left knee, both lungs, or unpaired abdomen. If present, shall be consistent with any laterality information indicated in ImagingStudy.series.bodySite.
     */
-  var laterality: js.UndefOr[Coding] = js.undefined
+  var laterality: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * The distinct modality for this series. This may include both acquisition and non-acquisition modalities.
     */
-  var modality: Coding
+  var modality: CodeableConcept
   
   /**
     * The numeric identifier of this series in the study.
@@ -76,7 +76,7 @@ trait ImagingStudySeries
 }
 object ImagingStudySeries {
   
-  inline def apply(modality: Coding, uid: String): ImagingStudySeries = {
+  inline def apply(modality: CodeableConcept, uid: String): ImagingStudySeries = {
     val __obj = js.Dynamic.literal(modality = modality.asInstanceOf[js.Any], uid = uid.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImagingStudySeries]
   }
@@ -84,7 +84,7 @@ object ImagingStudySeries {
   @scala.inline
   implicit open class MutableBuilder[Self <: ImagingStudySeries] (val x: Self) extends AnyVal {
     
-    inline def setBodySite(value: Coding): Self = StObject.set(x, "bodySite", value.asInstanceOf[js.Any])
+    inline def setBodySite(value: CodeableReference): Self = StObject.set(x, "bodySite", value.asInstanceOf[js.Any])
     
     inline def setBodySiteUndefined: Self = StObject.set(x, "bodySite", js.undefined)
     
@@ -104,11 +104,11 @@ object ImagingStudySeries {
     
     inline def setInstanceVarargs(value: ImagingStudySeriesInstance*): Self = StObject.set(x, "instance", js.Array(value*))
     
-    inline def setLaterality(value: Coding): Self = StObject.set(x, "laterality", value.asInstanceOf[js.Any])
+    inline def setLaterality(value: CodeableConcept): Self = StObject.set(x, "laterality", value.asInstanceOf[js.Any])
     
     inline def setLateralityUndefined: Self = StObject.set(x, "laterality", js.undefined)
     
-    inline def setModality(value: Coding): Self = StObject.set(x, "modality", value.asInstanceOf[js.Any])
+    inline def setModality(value: CodeableConcept): Self = StObject.set(x, "modality", value.asInstanceOf[js.Any])
     
     inline def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     

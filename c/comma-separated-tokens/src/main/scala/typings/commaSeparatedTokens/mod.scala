@@ -13,29 +13,29 @@ object mod {
   inline def parse(value: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(value.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
   inline def stringify(values: js.Array[String | Double]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(values.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def stringify(values: js.Array[String | Double], options: StringifyOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(values.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringify(values: js.Array[String | Double], options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(values.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  trait StringifyOptions extends StObject {
+  trait Options extends StObject {
     
     /**
-      * Whether to pad a space before a token (`boolean`, default: `true`).
+      * Whether to pad a space before a token.
       */
     var padLeft: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * Whether to pad a space after a token (`boolean`, default: `false`).
+      * Whether to pad a space after a token.
       */
     var padRight: js.UndefOr[Boolean] = js.undefined
   }
-  object StringifyOptions {
+  object Options {
     
-    inline def apply(): StringifyOptions = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[StringifyOptions]
+      __obj.asInstanceOf[Options]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: StringifyOptions] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setPadLeft(value: Boolean): Self = StObject.set(x, "padLeft", value.asInstanceOf[js.Any])
       
@@ -46,4 +46,6 @@ object mod {
       inline def setPadRightUndefined: Self = StObject.set(x, "padRight", js.undefined)
     }
   }
+  
+  type StringifyOptions = Options
 }

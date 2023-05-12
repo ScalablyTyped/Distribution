@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @classDescription high level grouping for fields on a data entry form (nlobjForm).
   * @return {nlobjTab}
-  * @constructor
   */
 @js.native
 trait nlobjTab

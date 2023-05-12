@@ -14,13 +14,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 inline def messageParent(message: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("messageParent")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
 inline def messageParent(message: Any, parentProcess: Process): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("messageParent")(message.asInstanceOf[js.Any], parentProcess.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-type ChildMessage = ChildMessageInitialize | ChildMessageCall | ChildMessageEnd | ChildMessageMemUsage
+type ChildMessage = ChildMessageInitialize | ChildMessageCall | ChildMessageEnd | ChildMessageMemUsage | ChildMessageCallSetup
 
 type ChildMessageCall = js.Tuple4[
 /* 1 */ /* type */ Double, 
 /* isProcessed */ Boolean, 
 /* methodName */ String, 
 /* args */ js.Array[Any]]
+
+type ChildMessageCallSetup = js.Array[/* 4 */ /* type */ Double]
 
 type ChildMessageEnd = js.Tuple2[/* 2 */ /* type */ Double, /* isProcessed */ Boolean]
 

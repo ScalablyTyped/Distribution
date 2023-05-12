@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class HttpRangeReader protected () extends HttpReader {
   /**
     * Creates the {@link HttpRangeReader} instance
-    * 
+    *
     * @param url The URL of the data.
     * @param options The options.
     */

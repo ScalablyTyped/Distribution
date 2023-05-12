@@ -1,7 +1,6 @@
 package typings.bson.mod
 
 import typings.bson.anon.PinExcludekeyofLongTimest
-import typings.bson.bsonBooleans.`true`
 import typings.bson.bsonInts.`-1`
 import typings.bson.bsonInts.`0`
 import typings.bson.bsonInts.`1`
@@ -17,12 +16,17 @@ open class LongWithoutOverridesClass protected ()
   extends StObject
      with PinExcludekeyofLongTimest {
   def this(low: Any) = this()
+  def this(low: Any, high: Boolean) = this()
   def this(low: Any, high: scala.Double) = this()
+  def this(low: Any, high: Boolean, unsigned: Boolean) = this()
   def this(low: Any, high: scala.Double, unsigned: Boolean) = this()
   def this(low: Any, high: Unit, unsigned: Boolean) = this()
   
   /* CompleteClass */
-  var __isLong__ : `true` = js.native
+  override def __isLong__(): Boolean = js.native
+  /* CompleteClass */
+  @JSName("__isLong__")
+  var __isLong___Original: js.Function0[Boolean] = js.native
   
   /* CompleteClass */
   override def add(addend: String): Long = js.native

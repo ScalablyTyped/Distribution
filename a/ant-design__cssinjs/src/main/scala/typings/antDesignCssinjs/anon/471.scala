@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.All
+import typings.csstype.mod.Property.HyphenateLimitChars
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,8 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `471` extends StObject {
   
   var value: js.UndefOr[
-    All | (js.Array[
-      (Extract[js.UndefOr[All | js.Array[NonNullable[js.UndefOr[All]]]], String]) | NonNullable[js.UndefOr[All]]
+    HyphenateLimitChars | (js.Array[
+      (Extract[
+        js.UndefOr[HyphenateLimitChars | js.Array[NonNullable[js.UndefOr[HyphenateLimitChars]]]], 
+        String
+      ]) | NonNullable[js.UndefOr[HyphenateLimitChars]]
     ])
   ] = js.native
 }

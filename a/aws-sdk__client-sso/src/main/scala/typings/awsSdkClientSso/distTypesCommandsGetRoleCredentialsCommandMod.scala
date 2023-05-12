@@ -28,8 +28,14 @@ object distTypesCommandsGetRoleCredentialsCommandMod {
           Any, 
           Any
         ] {
+    /**
+      * @public
+      */
     def this(input: GetRoleCredentialsCommandInput) = this()
     
+    /**
+      * @internal
+      */
     /* private */ var deserialize: Any = js.native
     
     /**
@@ -45,6 +51,9 @@ object distTypesCommandsGetRoleCredentialsCommandMod {
       options: HttpHandlerOptions
     ): Handler[GetRoleCredentialsCommandInput, GetRoleCredentialsCommandOutput] = js.native
     
+    /**
+      * @internal
+      */
     /* private */ var serialize: Any = js.native
   }
   /* static members */

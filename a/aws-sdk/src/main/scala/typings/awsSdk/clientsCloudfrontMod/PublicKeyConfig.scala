@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PublicKeyConfig extends StObject {
   
   /**
-    * A string included in the request to help make sure that the request can’t be replayed.
+    * A string included in the request to help make sure that the request can't be replayed.
     */
   var CallerReference: String
   

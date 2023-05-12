@@ -190,12 +190,18 @@ object mod {
     /**
       * Rotate by origin `vec2` (default `this.center()`) by radians `rads` and return a clone if `returnNew` is specified
       */
-    def rotate(rads: Double, vec2: typings.vec2.mod.^): Polygon = js.native
-    def rotate(rads: Double, vec2: typings.vec2.mod.^, returnNew: Boolean): Polygon = js.native
+    def rotate(rads: Double): Polygon = js.native
+    def rotate(rads: Double, origin: Null, returnNew: Boolean): Polygon = js.native
+    def rotate(rads: Double, origin: Unit, returnNew: Boolean): Polygon = js.native
+    def rotate(rads: Double, origin: typings.vec2.mod.^): Polygon = js.native
+    def rotate(rads: Double, origin: typings.vec2.mod.^, returnNew: Boolean): Polygon = js.native
     
     /**
       * Scales this polygon around `origin` (default is `this.center()`) and will return a new polygon if requested with `returnNew`
       */
+    def scale(amount: Double): Polygon = js.native
+    def scale(amount: Double, origin: Null, returnNew: Boolean): Polygon = js.native
+    def scale(amount: Double, origin: Unit, returnNew: Boolean): Polygon = js.native
     def scale(amount: Double, origin: typings.vec2.mod.^): Polygon = js.native
     def scale(amount: Double, origin: typings.vec2.mod.^, returnNew: Boolean): Polygon = js.native
     

@@ -1,6 +1,7 @@
 package typings.openui5
 
-import typings.openui5.anon.`1`
+import typings.openui5.anon.SnapValue
+import typings.openui5.anon.`2`
 import typings.openui5.jQuery.Event
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapMLibraryMod.IScale
@@ -167,6 +168,8 @@ object sapMSliderMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Creates default tooltips, if needed, and forwards properties to them
       */
     def assignDefaultTooltips(): Unit = js.native
@@ -176,6 +179,8 @@ object sapMSliderMod {
     aTooltipIds: js.Array[Any]): Unit = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Creates custom tooltips, if needed, and forwards properties to them
       */
     def associateCustomTooltips(): Unit = js.native
@@ -377,6 +382,8 @@ object sapMSliderMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:change change} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -385,9 +392,11 @@ object sapMSliderMod {
     def fireChange(/**
       * Parameters to pass along with the event
       */
-    mParameters: `1`): this.type = js.native
+    mParameters: `2`): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:liveChange liveChange} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -396,9 +405,11 @@ object sapMSliderMod {
     def fireLiveChange(/**
       * Parameters to pass along with the event
       */
-    mParameters: `1`): this.type = js.native
+    mParameters: `2`): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Forwards properties to a given control
       */
     def forwardProperties(): Unit = js.native
@@ -428,6 +439,8 @@ object sapMSliderMod {
     ): Unit = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Forwards properties to default tooltips
       */
     def forwardPropertiesToDefaultTooltips(): Unit = js.native
@@ -593,6 +606,8 @@ object sapMSliderMod {
     def getStep(): float = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Gets the tooltips that should be shown. Returns custom tooltips if provided. Otherwise - default tooltips
       *
       * @returns SliderTooltipBase instances.
@@ -625,6 +640,8 @@ object sapMSliderMod {
     def getWidth(): CSSSize = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Handles change of Tooltip's inputs.
       */
     def handleTooltipChange(oEvent: Event): Unit = js.native
@@ -645,6 +662,8 @@ object sapMSliderMod {
     ): int = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Assigns tooltips and forwards properties to them
       */
     def initAndSyncTooltips(): Unit = js.native
@@ -654,6 +673,8 @@ object sapMSliderMod {
     aTooltipIds: js.Array[Any]): Unit = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Creates a default SliderTooltip instance and adds it as an aggregation
       */
     def initDefaultTooltip(): Unit = js.native
@@ -663,6 +684,8 @@ object sapMSliderMod {
     sId: String): Unit = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Creates a SliderTooltipContainer
       */
     def initTooltipContainer(): Unit = js.native
@@ -951,6 +974,16 @@ object sapMSliderMod {
       */
     fStep: float): this.type = js.native
     
+    def setValue(
+      /**
+      * new value for property `value`.
+      */
+    fNewValue: float,
+      /**
+      * The options object
+      */
+    mOptions: js.Object
+    ): this.type = js.native
     /**
       * Sets the property `value`.
       *
@@ -966,7 +999,7 @@ object sapMSliderMod {
       /**
       * The options object
       */
-    mOptions: js.Object
+    mOptions: SnapValue
     ): this.type = js.native
     
     /**
@@ -1009,6 +1042,8 @@ object sapMSliderMod {
     iStep: int): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Updates value of the advanced tooltip.
       */
     def updateAdvancedTooltipDom(/**

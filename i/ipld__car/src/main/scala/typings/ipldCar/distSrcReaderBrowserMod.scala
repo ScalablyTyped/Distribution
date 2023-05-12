@@ -94,7 +94,7 @@ object distSrcReaderBrowserMod {
       * @static
       * @memberof CarReader
       * @param {Uint8Array} bytes
-      * @returns {Promise<CarReader>} blip blop
+      * @returns {Promise<CarReader>}
       */
     inline def fromBytes(bytes: js.typedarray.Uint8Array): js.Promise[CarReader] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBytes")(bytes.asInstanceOf[js.Any]).asInstanceOf[js.Promise[CarReader]]
     

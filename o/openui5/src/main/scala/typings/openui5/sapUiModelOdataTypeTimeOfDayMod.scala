@@ -16,12 +16,12 @@ object sapUiModelOdataTypeTimeOfDayMod {
     */
   open class default () extends TimeOfDay {
     def this(/**
-      * Format options as defined in {@link sap.ui.core.format.DateFormat}
+      * Format options as defined in {@link sap.ui.core.format.DateFormat.getTimeInstance}
       */
     oFormatOptions: js.Object) = this()
     def this(
       /**
-      * Format options as defined in {@link sap.ui.core.format.DateFormat}
+      * Format options as defined in {@link sap.ui.core.format.DateFormat.getTimeInstance}
       */
     oFormatOptions: js.Object,
       /**
@@ -31,7 +31,7 @@ object sapUiModelOdataTypeTimeOfDayMod {
     ) = this()
     def this(
       /**
-      * Format options as defined in {@link sap.ui.core.format.DateFormat}
+      * Format options as defined in {@link sap.ui.core.format.DateFormat.getTimeInstance}
       */
     oFormatOptions: Unit,
       /**
@@ -130,7 +130,29 @@ object sapUiModelOdataTypeTimeOfDayMod {
       * for more information
       */
     sTargetType: String
-    ): js.Date | String = js.native
+    ): js.Date | typings.openui5.sapUiCoreDateUi5dateMod.default | String = js.native
+    
+    /**
+      * @SINCE 1.111.0
+      *
+      * Gets the model value according to this type's constraints and format options for the given date object
+      * representing a time. Validates the resulting value against the constraints of this type instance.
+      *
+      * @returns The model representation of the time
+      */
+    def getModelValue(): String | Null = js.native
+    def getModelValue(
+      /**
+      * The date object considering the configured time zone. Must be created via {@link module:sap/ui/core/date/UI5Date.getInstance}
+      */
+    oDate: js.Date
+    ): String | Null = js.native
+    def getModelValue(
+      /**
+      * The date object considering the configured time zone. Must be created via {@link module:sap/ui/core/date/UI5Date.getInstance}
+      */
+    oDate: typings.openui5.sapUiCoreDateUi5dateMod.default
+    ): String | Null = js.native
     
     def parseValue(
       /**

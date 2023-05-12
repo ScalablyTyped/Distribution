@@ -14,6 +14,11 @@ trait IModelContentChangedEvent extends StObject {
   val eol: String
   
   /**
+    * Flag that indicates that this event describes an eol change.
+    */
+  val isEolChange: Boolean
+  
+  /**
     * Flag that indicates that all decorations were lost with this edit.
     * The model has been reset to a new value.
     */
@@ -39,12 +44,13 @@ object IModelContentChangedEvent {
   inline def apply(
     changes: js.Array[IModelContentChange],
     eol: String,
+    isEolChange: Boolean,
     isFlush: Boolean,
     isRedoing: Boolean,
     isUndoing: Boolean,
     versionId: Double
   ): IModelContentChangedEvent = {
-    val __obj = js.Dynamic.literal(changes = changes.asInstanceOf[js.Any], eol = eol.asInstanceOf[js.Any], isFlush = isFlush.asInstanceOf[js.Any], isRedoing = isRedoing.asInstanceOf[js.Any], isUndoing = isUndoing.asInstanceOf[js.Any], versionId = versionId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(changes = changes.asInstanceOf[js.Any], eol = eol.asInstanceOf[js.Any], isEolChange = isEolChange.asInstanceOf[js.Any], isFlush = isFlush.asInstanceOf[js.Any], isRedoing = isRedoing.asInstanceOf[js.Any], isUndoing = isUndoing.asInstanceOf[js.Any], versionId = versionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[IModelContentChangedEvent]
   }
   
@@ -56,6 +62,8 @@ object IModelContentChangedEvent {
     inline def setChangesVarargs(value: IModelContentChange*): Self = StObject.set(x, "changes", js.Array(value*))
     
     inline def setEol(value: String): Self = StObject.set(x, "eol", value.asInstanceOf[js.Any])
+    
+    inline def setIsEolChange(value: Boolean): Self = StObject.set(x, "isEolChange", value.asInstanceOf[js.Any])
     
     inline def setIsFlush(value: Boolean): Self = StObject.set(x, "isFlush", value.asInstanceOf[js.Any])
     

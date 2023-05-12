@@ -11,7 +11,7 @@ trait Modal
      with Openable {
   
   /**
-    * ID of the modal element
+    * ID of the modal element.
     */
   var id: String
 }

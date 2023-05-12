@@ -1,10 +1,9 @@
 package typings.angularCompilerCli
 
+import typings.angularCompilerCli.anon.ClassDeclarationDeclarati
 import typings.angularCompilerCli.srcNgtscImportsMod.Reference
 import typings.angularCompilerCli.srcNgtscImportsSrcAliasMod.AliasingHost
 import typings.angularCompilerCli.srcNgtscMetadataSrcApiMod.MetadataReader
-import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.ClassDeclaration
-import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.DeclarationNode
 import typings.angularCompilerCli.srcNgtscScopeSrcApiMod.ExportScope
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -35,16 +34,16 @@ object srcNgtscScopeSrcDependencyMod {
     /* private */ var maybeAlias: Any = js.native
     
     /* CompleteClass */
-    override def resolve(ref: Reference[ClassDeclaration[DeclarationNode]]): ExportScope | Null = js.native
+    override def resolve(ref: Reference[ClassDeclarationDeclarati]): ExportScope | Null = js.native
   }
   
   trait DtsModuleScopeResolver extends StObject {
     
-    def resolve(ref: Reference[ClassDeclaration[DeclarationNode]]): ExportScope | Null
+    def resolve(ref: Reference[ClassDeclarationDeclarati]): ExportScope | Null
   }
   object DtsModuleScopeResolver {
     
-    inline def apply(resolve: Reference[ClassDeclaration[DeclarationNode]] => ExportScope | Null): DtsModuleScopeResolver = {
+    inline def apply(resolve: Reference[ClassDeclarationDeclarati] => ExportScope | Null): DtsModuleScopeResolver = {
       val __obj = js.Dynamic.literal(resolve = js.Any.fromFunction1(resolve))
       __obj.asInstanceOf[DtsModuleScopeResolver]
     }
@@ -52,7 +51,7 @@ object srcNgtscScopeSrcDependencyMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: DtsModuleScopeResolver] (val x: Self) extends AnyVal {
       
-      inline def setResolve(value: Reference[ClassDeclaration[DeclarationNode]] => ExportScope | Null): Self = StObject.set(x, "resolve", js.Any.fromFunction1(value))
+      inline def setResolve(value: Reference[ClassDeclarationDeclarati] => ExportScope | Null): Self = StObject.set(x, "resolve", js.Any.fromFunction1(value))
     }
   }
 }

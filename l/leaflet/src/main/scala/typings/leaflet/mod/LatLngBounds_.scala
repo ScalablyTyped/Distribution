@@ -13,6 +13,7 @@ open class LatLngBounds_ protected () extends StObject {
   def contains(otherBoundsOrLatLng: LatLngBoundsExpression | LatLngExpression): Boolean = js.native
   
   def equals(otherBounds: LatLngBoundsExpression): Boolean = js.native
+  def equals(otherBounds: LatLngBoundsExpression, maxMargin: Double): Boolean = js.native
   
   def extend(latlngOrBounds: LatLngBoundsExpression | LatLngExpression): this.type = js.native
   

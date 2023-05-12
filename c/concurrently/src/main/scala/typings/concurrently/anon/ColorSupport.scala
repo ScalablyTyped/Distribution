@@ -14,7 +14,7 @@ trait ColorSupport extends StObject {
     *
     * Defaults to whatever the terminal's stdout support is.
     */
-  var colorSupport: js.UndefOr[Pickanylevel | `false`] = js.undefined
+  var colorSupport: js.UndefOr[`false` | Pickanylevel] = js.undefined
   
   /**
     * A custom working directory to spawn processes in.
@@ -30,7 +30,7 @@ trait ColorSupport extends StObject {
   /**
     * The NodeJS process.
     */
-  var process: js.UndefOr[PickProcesscwdplatformenv] = js.undefined
+  var process: js.UndefOr[PickProcesscwdenvplatform] = js.undefined
   
   /**
     * Whether to customize the options for spawning processes in raw mode.
@@ -48,7 +48,7 @@ object ColorSupport {
   @scala.inline
   implicit open class MutableBuilder[Self <: ColorSupport] (val x: Self) extends AnyVal {
     
-    inline def setColorSupport(value: Pickanylevel | `false`): Self = StObject.set(x, "colorSupport", value.asInstanceOf[js.Any])
+    inline def setColorSupport(value: `false` | Pickanylevel): Self = StObject.set(x, "colorSupport", value.asInstanceOf[js.Any])
     
     inline def setColorSupportUndefined: Self = StObject.set(x, "colorSupport", js.undefined)
     
@@ -60,7 +60,7 @@ object ColorSupport {
     
     inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
     
-    inline def setProcess(value: PickProcesscwdplatformenv): Self = StObject.set(x, "process", value.asInstanceOf[js.Any])
+    inline def setProcess(value: PickProcesscwdenvplatform): Self = StObject.set(x, "process", value.asInstanceOf[js.Any])
     
     inline def setProcessUndefined: Self = StObject.set(x, "process", js.undefined)
     

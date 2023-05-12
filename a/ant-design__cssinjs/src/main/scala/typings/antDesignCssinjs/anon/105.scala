@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.BoxShadow
+import typings.csstype.mod.Property.CounterIncrement
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,8 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `105` extends StObject {
   
   var value: js.UndefOr[
-    BoxShadow | (js.Array[
-      (Extract[js.UndefOr[BoxShadow | js.Array[NonNullable[js.UndefOr[BoxShadow]]]], String]) | NonNullable[js.UndefOr[BoxShadow]]
+    CounterIncrement | (js.Array[
+      (Extract[
+        js.UndefOr[CounterIncrement | js.Array[NonNullable[js.UndefOr[CounterIncrement]]]], 
+        String
+      ]) | NonNullable[js.UndefOr[CounterIncrement]]
     ])
   ] = js.native
 }

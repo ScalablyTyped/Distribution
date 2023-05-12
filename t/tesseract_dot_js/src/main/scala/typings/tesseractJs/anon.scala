@@ -9,10 +9,156 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
+  /* Inlined std.Partial<tesseract.js.tesseract.js.InitOptions> */
+  trait PartialInitOptions extends StObject {
+    
+    var load_bigram_dawg: js.UndefOr[String] = js.undefined
+    
+    var load_freq_dawg: js.UndefOr[String] = js.undefined
+    
+    var load_number_dawg: js.UndefOr[String] = js.undefined
+    
+    var load_punc_dawg: js.UndefOr[String] = js.undefined
+    
+    var load_system_dawg: js.UndefOr[String] = js.undefined
+    
+    var load_unambig_dawg: js.UndefOr[String] = js.undefined
+  }
+  object PartialInitOptions {
+    
+    inline def apply(): PartialInitOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[PartialInitOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialInitOptions] (val x: Self) extends AnyVal {
+      
+      inline def setLoad_bigram_dawg(value: String): Self = StObject.set(x, "load_bigram_dawg", value.asInstanceOf[js.Any])
+      
+      inline def setLoad_bigram_dawgUndefined: Self = StObject.set(x, "load_bigram_dawg", js.undefined)
+      
+      inline def setLoad_freq_dawg(value: String): Self = StObject.set(x, "load_freq_dawg", value.asInstanceOf[js.Any])
+      
+      inline def setLoad_freq_dawgUndefined: Self = StObject.set(x, "load_freq_dawg", js.undefined)
+      
+      inline def setLoad_number_dawg(value: String): Self = StObject.set(x, "load_number_dawg", value.asInstanceOf[js.Any])
+      
+      inline def setLoad_number_dawgUndefined: Self = StObject.set(x, "load_number_dawg", js.undefined)
+      
+      inline def setLoad_punc_dawg(value: String): Self = StObject.set(x, "load_punc_dawg", value.asInstanceOf[js.Any])
+      
+      inline def setLoad_punc_dawgUndefined: Self = StObject.set(x, "load_punc_dawg", js.undefined)
+      
+      inline def setLoad_system_dawg(value: String): Self = StObject.set(x, "load_system_dawg", value.asInstanceOf[js.Any])
+      
+      inline def setLoad_system_dawgUndefined: Self = StObject.set(x, "load_system_dawg", js.undefined)
+      
+      inline def setLoad_unambig_dawg(value: String): Self = StObject.set(x, "load_unambig_dawg", value.asInstanceOf[js.Any])
+      
+      inline def setLoad_unambig_dawgUndefined: Self = StObject.set(x, "load_unambig_dawg", js.undefined)
+    }
+  }
+  
+  /* Inlined std.Partial<tesseract.js.tesseract.js.OutputFormats> */
+  trait PartialOutputFormats extends StObject {
+    
+    var blocks: js.UndefOr[Boolean] = js.undefined
+    
+    var box: js.UndefOr[Boolean] = js.undefined
+    
+    var debug: js.UndefOr[Boolean] = js.undefined
+    
+    var hocr: js.UndefOr[Boolean] = js.undefined
+    
+    var imageBinary: js.UndefOr[Boolean] = js.undefined
+    
+    var imageColor: js.UndefOr[Boolean] = js.undefined
+    
+    var imageGrey: js.UndefOr[Boolean] = js.undefined
+    
+    var osd: js.UndefOr[Boolean] = js.undefined
+    
+    var pdf: js.UndefOr[Boolean] = js.undefined
+    
+    var text: js.UndefOr[Boolean] = js.undefined
+    
+    var tsv: js.UndefOr[Boolean] = js.undefined
+    
+    var unlv: js.UndefOr[Boolean] = js.undefined
+  }
+  object PartialOutputFormats {
+    
+    inline def apply(): PartialOutputFormats = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[PartialOutputFormats]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialOutputFormats] (val x: Self) extends AnyVal {
+      
+      inline def setBlocks(value: Boolean): Self = StObject.set(x, "blocks", value.asInstanceOf[js.Any])
+      
+      inline def setBlocksUndefined: Self = StObject.set(x, "blocks", js.undefined)
+      
+      inline def setBox(value: Boolean): Self = StObject.set(x, "box", value.asInstanceOf[js.Any])
+      
+      inline def setBoxUndefined: Self = StObject.set(x, "box", js.undefined)
+      
+      inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      
+      inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+      
+      inline def setHocr(value: Boolean): Self = StObject.set(x, "hocr", value.asInstanceOf[js.Any])
+      
+      inline def setHocrUndefined: Self = StObject.set(x, "hocr", js.undefined)
+      
+      inline def setImageBinary(value: Boolean): Self = StObject.set(x, "imageBinary", value.asInstanceOf[js.Any])
+      
+      inline def setImageBinaryUndefined: Self = StObject.set(x, "imageBinary", js.undefined)
+      
+      inline def setImageColor(value: Boolean): Self = StObject.set(x, "imageColor", value.asInstanceOf[js.Any])
+      
+      inline def setImageColorUndefined: Self = StObject.set(x, "imageColor", js.undefined)
+      
+      inline def setImageGrey(value: Boolean): Self = StObject.set(x, "imageGrey", value.asInstanceOf[js.Any])
+      
+      inline def setImageGreyUndefined: Self = StObject.set(x, "imageGrey", js.undefined)
+      
+      inline def setOsd(value: Boolean): Self = StObject.set(x, "osd", value.asInstanceOf[js.Any])
+      
+      inline def setOsdUndefined: Self = StObject.set(x, "osd", js.undefined)
+      
+      inline def setPdf(value: Boolean): Self = StObject.set(x, "pdf", value.asInstanceOf[js.Any])
+      
+      inline def setPdfUndefined: Self = StObject.set(x, "pdf", js.undefined)
+      
+      inline def setText(value: Boolean): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      
+      inline def setTsv(value: Boolean): Self = StObject.set(x, "tsv", value.asInstanceOf[js.Any])
+      
+      inline def setTsvUndefined: Self = StObject.set(x, "tsv", js.undefined)
+      
+      inline def setUnlv(value: Boolean): Self = StObject.set(x, "unlv", value.asInstanceOf[js.Any])
+      
+      inline def setUnlvUndefined: Self = StObject.set(x, "unlv", js.undefined)
+    }
+  }
+  
   /* Inlined std.Partial<tesseract.js.tesseract.js.RecognizeOptions> */
   trait PartialRecognizeOptions extends StObject {
     
+    var pdfTextOnly: js.UndefOr[Boolean] = js.undefined
+    
+    var pdfTitle: js.UndefOr[String] = js.undefined
+    
     var rectangle: js.UndefOr[Rectangle] = js.undefined
+    
+    var rotateAuto: js.UndefOr[Boolean] = js.undefined
+    
+    var rotateRadians: js.UndefOr[Double] = js.undefined
   }
   object PartialRecognizeOptions {
     
@@ -24,9 +170,25 @@ object anon {
     @scala.inline
     implicit open class MutableBuilder[Self <: PartialRecognizeOptions] (val x: Self) extends AnyVal {
       
+      inline def setPdfTextOnly(value: Boolean): Self = StObject.set(x, "pdfTextOnly", value.asInstanceOf[js.Any])
+      
+      inline def setPdfTextOnlyUndefined: Self = StObject.set(x, "pdfTextOnly", js.undefined)
+      
+      inline def setPdfTitle(value: String): Self = StObject.set(x, "pdfTitle", value.asInstanceOf[js.Any])
+      
+      inline def setPdfTitleUndefined: Self = StObject.set(x, "pdfTitle", js.undefined)
+      
       inline def setRectangle(value: Rectangle): Self = StObject.set(x, "rectangle", value.asInstanceOf[js.Any])
       
       inline def setRectangleUndefined: Self = StObject.set(x, "rectangle", js.undefined)
+      
+      inline def setRotateAuto(value: Boolean): Self = StObject.set(x, "rotateAuto", value.asInstanceOf[js.Any])
+      
+      inline def setRotateAutoUndefined: Self = StObject.set(x, "rotateAuto", js.undefined)
+      
+      inline def setRotateRadians(value: Double): Self = StObject.set(x, "rotateRadians", value.asInstanceOf[js.Any])
+      
+      inline def setRotateRadiansUndefined: Self = StObject.set(x, "rotateRadians", js.undefined)
     }
   }
   

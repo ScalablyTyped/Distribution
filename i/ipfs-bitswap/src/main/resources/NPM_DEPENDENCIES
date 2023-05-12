@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "ipfs-bitswap" : "13.0.0"
+      "ipfs-bitswap" : "17.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "ipfs-bitswap" : "13.0.0"
+      "ipfs-bitswap" : "17.0.2"
     }
   ],
   "compile-devDependencies" : [

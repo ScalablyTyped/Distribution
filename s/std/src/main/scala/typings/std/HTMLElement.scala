@@ -9,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait HTMLElement
   extends StObject
      with Element
-     with DocumentAndElementEventHandlers
      with ElementCSSInlineStyle
      with ElementContentEditable
      with GlobalEventHandlers

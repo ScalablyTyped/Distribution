@@ -1,14 +1,5 @@
 package typings.fabric.fabricImplMod
 
-import typings.fabric.fabricStrings.mouseColondblclick
-import typings.fabric.fabricStrings.mouseColondown
-import typings.fabric.fabricStrings.mouseColondownColonbefore
-import typings.fabric.fabricStrings.mouseColonmove
-import typings.fabric.fabricStrings.mouseColonmoveColonbefore
-import typings.fabric.fabricStrings.mouseColonout
-import typings.fabric.fabricStrings.mouseColonover
-import typings.fabric.fabricStrings.mouseColonup
-import typings.fabric.fabricStrings.mouseColonupColonbefore
 import typings.fabric.fabricStrings.mouseColonwheel
 import typings.std.Event
 import typings.std.MouseEvent
@@ -44,16 +35,13 @@ trait IObservable[T] extends StObject {
   def off(eventName: Any, handler: js.Function1[/* e */ IEvent[Event], Unit]): T = js.native
   def off(eventName: Unit, handler: js.Function1[/* e */ IEvent[Event], Unit]): T = js.native
   
+  def on(eventName: String, handler: js.Function1[/* e */ IEvent[Event], Unit]): T = js.native
   /**
     * Observes specified event
     * @param eventName Event name (eg. 'after:render')
     * @param handler Function that receives a notification when an event of the specified type occurs
     */
-  def on(
-    eventName: mouseColonup | mouseColondown | mouseColonmove | mouseColonupColonbefore | mouseColondownColonbefore | mouseColonmoveColonbefore | mouseColondblclick | mouseColonover | mouseColonout,
-    handler: js.Function1[/* e */ IEvent[MouseEvent], Unit]
-  ): T = js.native
-  def on(eventName: String, handler: js.Function1[/* e */ IEvent[Event], Unit]): T = js.native
+  def on(eventName: EventName, handler: js.Function1[/* e */ IEvent[MouseEvent], Unit]): T = js.native
   @JSName("on")
   def on_mousewheel(eventName: mouseColonwheel, handler: js.Function1[/* e */ IEvent[WheelEvent], Unit]): T = js.native
 }

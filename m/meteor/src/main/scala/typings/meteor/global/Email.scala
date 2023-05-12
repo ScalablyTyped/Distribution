@@ -17,4 +17,6 @@ object Email {
   inline def hookSend(fn: js.Function1[/* options */ EmailOptions, Boolean]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hookSend")(fn.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def send(options: EmailOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("send")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  inline def sendAsync(options: EmailOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("sendAsync")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
 }

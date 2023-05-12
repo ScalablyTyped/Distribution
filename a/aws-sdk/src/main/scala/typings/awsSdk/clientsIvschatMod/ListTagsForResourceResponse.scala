@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListTagsForResourceResponse extends StObject {
   
   /**
-    * Tags attached to the resource, from the request.
+    * Tags attached to the resource. Array of maps, each of the form string:string (key:value).
     */
   var tags: Tags
 }

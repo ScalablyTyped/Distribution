@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@sentry/utils" : "7.19.0"
+      "@sentry/utils" : "7.51.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@sentry/utils" : "7.19.0"
+      "@sentry/utils" : "7.51.2"
     }
   ],
   "compile-devDependencies" : [

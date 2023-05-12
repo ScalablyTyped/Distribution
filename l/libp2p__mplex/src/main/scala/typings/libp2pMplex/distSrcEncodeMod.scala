@@ -13,5 +13,6 @@ object distSrcEncodeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def encode(source: Source[Message | js.Array[Message]]): AsyncGenerator[js.typedarray.Uint8Array, Unit, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(source.asInstanceOf[js.Any]).asInstanceOf[AsyncGenerator[js.typedarray.Uint8Array, Unit, Unit]]
+  inline def encode(source: Source[js.Array[Message]]): AsyncGenerator[js.typedarray.Uint8Array, Unit, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(source.asInstanceOf[js.Any]).asInstanceOf[AsyncGenerator[js.typedarray.Uint8Array, Unit, Unit]]
+  inline def encode(source: Source[js.Array[Message]], minSendBytes: Double): AsyncGenerator[js.typedarray.Uint8Array, Unit, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(source.asInstanceOf[js.Any], minSendBytes.asInstanceOf[js.Any])).asInstanceOf[AsyncGenerator[js.typedarray.Uint8Array, Unit, Unit]]
 }

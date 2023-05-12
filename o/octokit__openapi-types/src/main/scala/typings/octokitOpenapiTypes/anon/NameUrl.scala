@@ -10,7 +10,6 @@ trait NameUrl extends StObject {
   
   var name: String
   
-  /** Format: uri */
   var url: String
 }
 object NameUrl {

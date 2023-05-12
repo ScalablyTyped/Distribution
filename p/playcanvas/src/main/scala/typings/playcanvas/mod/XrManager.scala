@@ -5,9 +5,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** @typedef {import('../components/camera/component.js').CameraComponent} CameraComponent */
-/** @typedef {import('../app-base.js').AppBase} AppBase */
-/** @typedef {import('../entity.js').Entity} Entity */
 /**
   * Callback used by {@link XrManager#endXr} and {@link XrManager#startXr}.
   *
@@ -25,7 +22,7 @@ open class XrManager protected () extends EventHandler {
   /**
     * Create a new XrManager instance.
     *
-    * @param {AppBase} app - The main application.
+    * @param {import('../app-base.js').AppBase} app - The main application.
     * @hideconstructor
     */
   def this(app: AppBase) = this()
@@ -43,7 +40,7 @@ open class XrManager protected () extends EventHandler {
   /* private */ var _baseLayer: Any = js.native
   
   /**
-    * @type {CameraComponent}
+    * @type {import('../components/camera/component.js').CameraComponent}
     * @private
     */
   /* private */ var _camera: Any = js.native
@@ -155,7 +152,7 @@ open class XrManager protected () extends EventHandler {
   def active: Boolean = js.native
   
   /**
-    * @type {AppBase}
+    * @type {import('../app-base.js').AppBase}
     * @ignore
     */
   var app: AppBase = js.native
@@ -163,7 +160,7 @@ open class XrManager protected () extends EventHandler {
   /**
     * Active camera for which XR session is running or null.
     *
-    * @type {Entity|null}
+    * @type {import('../entity.js').Entity|null}
     */
   def camera: Entity = js.native
   
@@ -347,8 +344,8 @@ open class XrManager protected () extends EventHandler {
     * callback when session is created or failed to create. Integrated XR APIs need to be enabled
     * by providing relevant options.
     *
-    * @param {CameraComponent} camera - It will be used to render XR session and manipulated based
-    * on pose tracking.
+    * @param {import('../components/camera/component.js').CameraComponent} camera - It will be
+    * used to render XR session and manipulated based on pose tracking.
     * @param {string} type - Session type. Can be one of the following:
     *
     * - {@link XRTYPE_INLINE}: Inline - always available type of session. It has limited features

@@ -182,11 +182,16 @@ trait OmitPopoverPropscontentac extends StObject {
   
   var placement: js.UndefOr[Placement | DeprecatedPlacement] = js.undefined
   
+  /**
+    * Allows getting a ref to the component instance.
+    * Once the component unmounts, React will set `ref.current` to `null` (or call the ref with `null` if you passed a callback ref).
+    * @see https://react.dev/learn/referencing-values-with-refs#refs-and-the-dom
+    */
   var ref: js.UndefOr[Ref[PopoverRef]] = js.undefined
   
   var stopPropagation: js.UndefOr[js.Array[PropagationEvent]] = js.undefined
   
-  var style: js.UndefOr[CSSPropertiesPartialRecorAlignmentBaseline] = js.undefined
+  var style: js.UndefOr[CSSPropertiesPartialRecorArrowsize] = js.undefined
   
   var tabIndex: js.UndefOr[Double] = js.undefined
   
@@ -463,7 +468,7 @@ object OmitPopoverPropscontentac {
     
     inline def setStopPropagationVarargs(value: PropagationEvent*): Self = StObject.set(x, "stopPropagation", js.Array(value*))
     
-    inline def setStyle(value: CSSPropertiesPartialRecorAlignmentBaseline): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: CSSPropertiesPartialRecorArrowsize): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     

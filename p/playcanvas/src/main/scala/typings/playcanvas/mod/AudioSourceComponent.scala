@@ -4,8 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** @typedef {import('./system.js').AudioSourceComponentSystem} AudioSourceComponentSystem */
-/** @typedef {import('../../entity.js').Entity} Entity */
 /**
   * The AudioSource Component controls playback of an audio sample. This class will be deprecated
   * in favor of {@link SoundComponent}.
@@ -41,9 +39,10 @@ open class AudioSourceComponent protected () extends Component {
   /**
     * Create a new AudioSource Component instance.
     *
-    * @param {AudioSourceComponentSystem} system - The ComponentSystem that created
-    * this component.
-    * @param {Entity} entity - The entity that the Component is attached to.
+    * @param {import('./system.js').AudioSourceComponentSystem} system - The ComponentSystem that
+    * created this component.
+    * @param {import('../../entity.js').Entity} entity - The entity that the Component is attached
+    * to.
     */
   def this(system: AudioSourceComponentSystem, entity: Entity) = this()
   

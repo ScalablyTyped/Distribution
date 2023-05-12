@@ -29,18 +29,32 @@ trait ChimeSDKIdentity extends Service {
   ): Request[CreateAppInstanceResponse, AWSError] = js.native
   
   /**
-    * Promotes an AppInstanceUser to an AppInstanceAdmin. The promoted user can perform the following actions.     ChannelModerator actions across all channels in the AppInstance.    DeleteChannelMessage actions.   Only an AppInstanceUser can be promoted to an AppInstanceAdmin role.
+    * Promotes an AppInstanceUser or AppInstanceBot to an AppInstanceAdmin. The promoted entity can perform the following actions.     ChannelModerator actions across all channels in the AppInstance.    DeleteChannelMessage actions.   Only an AppInstanceUser and AppInstanceBot can be promoted to an AppInstanceAdmin role.
     */
   def createAppInstanceAdmin(): Request[CreateAppInstanceAdminResponse, AWSError] = js.native
   def createAppInstanceAdmin(callback: js.Function2[/* err */ AWSError, /* data */ CreateAppInstanceAdminResponse, Unit]): Request[CreateAppInstanceAdminResponse, AWSError] = js.native
   /**
-    * Promotes an AppInstanceUser to an AppInstanceAdmin. The promoted user can perform the following actions.     ChannelModerator actions across all channels in the AppInstance.    DeleteChannelMessage actions.   Only an AppInstanceUser can be promoted to an AppInstanceAdmin role.
+    * Promotes an AppInstanceUser or AppInstanceBot to an AppInstanceAdmin. The promoted entity can perform the following actions.     ChannelModerator actions across all channels in the AppInstance.    DeleteChannelMessage actions.   Only an AppInstanceUser and AppInstanceBot can be promoted to an AppInstanceAdmin role.
     */
   def createAppInstanceAdmin(params: CreateAppInstanceAdminRequest): Request[CreateAppInstanceAdminResponse, AWSError] = js.native
   def createAppInstanceAdmin(
     params: CreateAppInstanceAdminRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateAppInstanceAdminResponse, Unit]
   ): Request[CreateAppInstanceAdminResponse, AWSError] = js.native
+  
+  /**
+    * Creates a bot under an Amazon Chime AppInstance. The request consists of a unique Configuration and Name for that bot.
+    */
+  def createAppInstanceBot(): Request[CreateAppInstanceBotResponse, AWSError] = js.native
+  def createAppInstanceBot(callback: js.Function2[/* err */ AWSError, /* data */ CreateAppInstanceBotResponse, Unit]): Request[CreateAppInstanceBotResponse, AWSError] = js.native
+  /**
+    * Creates a bot under an Amazon Chime AppInstance. The request consists of a unique Configuration and Name for that bot.
+    */
+  def createAppInstanceBot(params: CreateAppInstanceBotRequest): Request[CreateAppInstanceBotResponse, AWSError] = js.native
+  def createAppInstanceBot(
+    params: CreateAppInstanceBotRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateAppInstanceBotResponse, Unit]
+  ): Request[CreateAppInstanceBotResponse, AWSError] = js.native
   
   /**
     * Creates a user under an Amazon Chime AppInstance. The request consists of a unique appInstanceUserId and Name for that user.
@@ -71,16 +85,30 @@ trait ChimeSDKIdentity extends Service {
   ): Request[js.Object, AWSError] = js.native
   
   /**
-    * Demotes an AppInstanceAdmin to an AppInstanceUser. This action does not delete the user.
+    * Demotes an AppInstanceAdmin to an AppInstanceUser or AppInstanceBot. This action does not delete the user.
     */
   def deleteAppInstanceAdmin(): Request[js.Object, AWSError] = js.native
   def deleteAppInstanceAdmin(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Demotes an AppInstanceAdmin to an AppInstanceUser. This action does not delete the user.
+    * Demotes an AppInstanceAdmin to an AppInstanceUser or AppInstanceBot. This action does not delete the user.
     */
   def deleteAppInstanceAdmin(params: DeleteAppInstanceAdminRequest): Request[js.Object, AWSError] = js.native
   def deleteAppInstanceAdmin(
     params: DeleteAppInstanceAdminRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Deletes an AppInstanceBot.
+    */
+  def deleteAppInstanceBot(): Request[js.Object, AWSError] = js.native
+  def deleteAppInstanceBot(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Deletes an AppInstanceBot.
+    */
+  def deleteAppInstanceBot(params: DeleteAppInstanceBotRequest): Request[js.Object, AWSError] = js.native
+  def deleteAppInstanceBot(
+    params: DeleteAppInstanceBotRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
   
@@ -141,6 +169,20 @@ trait ChimeSDKIdentity extends Service {
   ): Request[DescribeAppInstanceAdminResponse, AWSError] = js.native
   
   /**
+    * The AppInstanceBot's information.
+    */
+  def describeAppInstanceBot(): Request[DescribeAppInstanceBotResponse, AWSError] = js.native
+  def describeAppInstanceBot(callback: js.Function2[/* err */ AWSError, /* data */ DescribeAppInstanceBotResponse, Unit]): Request[DescribeAppInstanceBotResponse, AWSError] = js.native
+  /**
+    * The AppInstanceBot's information.
+    */
+  def describeAppInstanceBot(params: DescribeAppInstanceBotRequest): Request[DescribeAppInstanceBotResponse, AWSError] = js.native
+  def describeAppInstanceBot(
+    params: DescribeAppInstanceBotRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeAppInstanceBotResponse, Unit]
+  ): Request[DescribeAppInstanceBotResponse, AWSError] = js.native
+  
+  /**
     * Returns the full details of an AppInstanceUser.
     */
   def describeAppInstanceUser(): Request[DescribeAppInstanceUserResponse, AWSError] = js.native
@@ -199,6 +241,20 @@ trait ChimeSDKIdentity extends Service {
     params: ListAppInstanceAdminsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListAppInstanceAdminsResponse, Unit]
   ): Request[ListAppInstanceAdminsResponse, AWSError] = js.native
+  
+  /**
+    * Lists all AppInstanceBots created under a single AppInstance.
+    */
+  def listAppInstanceBots(): Request[ListAppInstanceBotsResponse, AWSError] = js.native
+  def listAppInstanceBots(callback: js.Function2[/* err */ AWSError, /* data */ ListAppInstanceBotsResponse, Unit]): Request[ListAppInstanceBotsResponse, AWSError] = js.native
+  /**
+    * Lists all AppInstanceBots created under a single AppInstance.
+    */
+  def listAppInstanceBots(params: ListAppInstanceBotsRequest): Request[ListAppInstanceBotsResponse, AWSError] = js.native
+  def listAppInstanceBots(
+    params: ListAppInstanceBotsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListAppInstanceBotsResponse, Unit]
+  ): Request[ListAppInstanceBotsResponse, AWSError] = js.native
   
   /**
     * Lists all the AppInstanceUserEndpoints created under a single AppInstanceUser.
@@ -273,6 +329,22 @@ trait ChimeSDKIdentity extends Service {
   ): Request[PutAppInstanceRetentionSettingsResponse, AWSError] = js.native
   
   /**
+    * Sets the number of days before the AppInstanceUser is automatically deleted.  A background process deletes expired AppInstanceUsers within 6 hours of expiration. Actual deletion times may vary. Expired AppInstanceUsers that have not yet been deleted appear as active, and you can update their expiration settings. The system honors the new settings. 
+    */
+  def putAppInstanceUserExpirationSettings(): Request[PutAppInstanceUserExpirationSettingsResponse, AWSError] = js.native
+  def putAppInstanceUserExpirationSettings(
+    callback: js.Function2[/* err */ AWSError, /* data */ PutAppInstanceUserExpirationSettingsResponse, Unit]
+  ): Request[PutAppInstanceUserExpirationSettingsResponse, AWSError] = js.native
+  /**
+    * Sets the number of days before the AppInstanceUser is automatically deleted.  A background process deletes expired AppInstanceUsers within 6 hours of expiration. Actual deletion times may vary. Expired AppInstanceUsers that have not yet been deleted appear as active, and you can update their expiration settings. The system honors the new settings. 
+    */
+  def putAppInstanceUserExpirationSettings(params: PutAppInstanceUserExpirationSettingsRequest): Request[PutAppInstanceUserExpirationSettingsResponse, AWSError] = js.native
+  def putAppInstanceUserExpirationSettings(
+    params: PutAppInstanceUserExpirationSettingsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ PutAppInstanceUserExpirationSettingsResponse, Unit]
+  ): Request[PutAppInstanceUserExpirationSettingsResponse, AWSError] = js.native
+  
+  /**
     * Registers an endpoint under an Amazon Chime AppInstanceUser. The endpoint receives messages for a user. For push notifications, the endpoint is a mobile device used to receive mobile push notifications for a user.
     */
   def registerAppInstanceUserEndpoint(): Request[RegisterAppInstanceUserEndpointResponse, AWSError] = js.native
@@ -326,6 +398,20 @@ trait ChimeSDKIdentity extends Service {
     params: UpdateAppInstanceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateAppInstanceResponse, Unit]
   ): Request[UpdateAppInstanceResponse, AWSError] = js.native
+  
+  /**
+    * Updates the name and metadata of an AppInstanceBot.
+    */
+  def updateAppInstanceBot(): Request[UpdateAppInstanceBotResponse, AWSError] = js.native
+  def updateAppInstanceBot(callback: js.Function2[/* err */ AWSError, /* data */ UpdateAppInstanceBotResponse, Unit]): Request[UpdateAppInstanceBotResponse, AWSError] = js.native
+  /**
+    * Updates the name and metadata of an AppInstanceBot.
+    */
+  def updateAppInstanceBot(params: UpdateAppInstanceBotRequest): Request[UpdateAppInstanceBotResponse, AWSError] = js.native
+  def updateAppInstanceBot(
+    params: UpdateAppInstanceBotRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateAppInstanceBotResponse, Unit]
+  ): Request[UpdateAppInstanceBotResponse, AWSError] = js.native
   
   /**
     * Updates the details of an AppInstanceUser. You can update names and metadata.

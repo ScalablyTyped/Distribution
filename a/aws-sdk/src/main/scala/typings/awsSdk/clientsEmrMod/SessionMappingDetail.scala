@@ -17,7 +17,7 @@ trait SessionMappingDetail extends StObject {
   var IdentityId: js.UndefOr[XmlStringMaxLen256] = js.undefined
   
   /**
-    * The name of the user or group. For more information, see UserName and DisplayName in the Amazon Web Services SSO Identity Store API Reference.
+    * The name of the user or group. For more information, see UserName and DisplayName in the IAM Identity Center Identity Store API Reference.
     */
   var IdentityName: js.UndefOr[XmlStringMaxLen256] = js.undefined
   

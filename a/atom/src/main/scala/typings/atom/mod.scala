@@ -64,7 +64,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // NOTE: intentional; needed for config extensibility
-// tslint:disable-next-line:no-declare-current-package
+// eslint-disable-next-line no-declare-current-package
 object mod {
   
   @JSImport("atom", JSImport.Namespace)
@@ -1229,7 +1229,7 @@ object mod {
   }
   
   // NOTE: A hack to make ConfigValues extensible
-  // tslint:disable-next-line:no-declare-current-package
+  // eslint-disable-next-line no-declare-current-package
   /* augmented module */
   object atomAugmentingMod {
     

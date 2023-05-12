@@ -8,24 +8,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DocumentColorProvider extends StObject {
   
   /**
-    * Provide {@link ColorPresentation representations} for a color.
-    *
-    * @param color The color to show and insert.
-    * @param context A context object with additional information
-    * @param token A cancellation token.
-    * @return An array of color presentations or a thenable that resolves to such. The lack of a result
-    * can be signaled by returning `undefined`, `null`, or an empty array.
-    */
+  		 * Provide {@link ColorPresentation representations} for a color.
+  		 *
+  		 * @param color The color to show and insert.
+  		 * @param context A context object with additional information
+  		 * @param token A cancellation token.
+  		 * @return An array of color presentations or a thenable that resolves to such. The lack of a result
+  		 * can be signaled by returning `undefined`, `null`, or an empty array.
+  		 */
   def provideColorPresentations(color: Color, context: Document, token: CancellationToken): ProviderResult[js.Array[ColorPresentation]]
   
   /**
-    * Provide colors for the given document.
-    *
-    * @param document The document in which the command was invoked.
-    * @param token A cancellation token.
-    * @return An array of {@link ColorInformation color information} or a thenable that resolves to such. The lack of a result
-    * can be signaled by returning `undefined`, `null`, or an empty array.
-    */
+  		 * Provide colors for the given document.
+  		 *
+  		 * @param document The document in which the command was invoked.
+  		 * @param token A cancellation token.
+  		 * @return An array of {@link ColorInformation color information} or a thenable that resolves to such. The lack of a result
+  		 * can be signaled by returning `undefined`, `null`, or an empty array.
+  		 */
   def provideDocumentColors(document: TextDocument, token: CancellationToken): ProviderResult[js.Array[ColorInformation]]
 }
 object DocumentColorProvider {

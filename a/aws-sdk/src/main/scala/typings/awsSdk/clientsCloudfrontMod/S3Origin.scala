@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait S3Origin extends StObject {
   
   /**
-    * The DNS name of the Amazon S3 origin. 
+    * The DNS name of the Amazon S3 origin.
     */
   var DomainName: String
   

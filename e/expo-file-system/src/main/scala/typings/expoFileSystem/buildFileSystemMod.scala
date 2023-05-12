@@ -1,9 +1,6 @@
 package typings.expoFileSystem
 
-import typings.expoFileSystem.anon.From
-import typings.expoFileSystem.anon.Idempotent
-import typings.expoFileSystem.anon.Intermediates
-import typings.expoFileSystem.anon.Md5
+import typings.expoFileSystem.buildFileSystemDottypesMod.DeletingOptions
 import typings.expoFileSystem.buildFileSystemDottypesMod.DownloadOptions
 import typings.expoFileSystem.buildFileSystemDottypesMod.DownloadPauseState
 import typings.expoFileSystem.buildFileSystemDottypesMod.DownloadProgressData
@@ -13,7 +10,10 @@ import typings.expoFileSystem.buildFileSystemDottypesMod.FileSystemNetworkTaskPr
 import typings.expoFileSystem.buildFileSystemDottypesMod.FileSystemRequestDirectoryPermissionsResult
 import typings.expoFileSystem.buildFileSystemDottypesMod.FileSystemUploadOptions
 import typings.expoFileSystem.buildFileSystemDottypesMod.FileSystemUploadResult
+import typings.expoFileSystem.buildFileSystemDottypesMod.InfoOptions
+import typings.expoFileSystem.buildFileSystemDottypesMod.MakeDirectoryOptions
 import typings.expoFileSystem.buildFileSystemDottypesMod.ReadingOptions
+import typings.expoFileSystem.buildFileSystemDottypesMod.RelocatingOptions
 import typings.expoFileSystem.buildFileSystemDottypesMod.UploadProgressData
 import typings.expoFileSystem.buildFileSystemDottypesMod.WritingOptions
 import org.scalablytyped.runtime.StObject
@@ -64,33 +64,38 @@ object buildFileSystemMod {
     
     /* private */ var callback: Any = js.native
     
+    /**
+      * Download the contents at a remote URI to a file in the app's file system.
+      * @return Returns a Promise that resolves to `FileSystemDownloadResult` object, or to `undefined` when task was cancelled.
+      */
     def downloadAsync(): js.Promise[js.UndefOr[FileSystemDownloadResult]] = js.native
     
     def fileUri: String = js.native
     
     /* private */ var options: Any = js.native
     
+    /**
+      * Pause the current download operation. `resumeData` is added to the `DownloadResumable` object after a successful pause operation.
+      * Returns an object that can be saved with `AsyncStorage` for future retrieval (the same object that is returned from calling `FileSystem.DownloadResumable.savable()`).
+      * @return Returns a Promise that resolves to `DownloadPauseState` object.
+      */
     def pauseAsync(): js.Promise[DownloadPauseState] = js.native
     
+    /**
+      * Resume a paused download operation.
+      * @return Returns a Promise that resolves to `FileSystemDownloadResult` object, or to `undefined` when task was cancelled.
+      */
     def resumeAsync(): js.Promise[js.UndefOr[FileSystemDownloadResult]] = js.native
     
     /* private */ var resumeData: Any = js.native
     
+    /**
+      * Method to get the object which can be saved with `AsyncStorage` for future retrieval.
+      * @returns Returns object in shape of `DownloadPauseState` type.
+      */
     def savable(): DownloadPauseState = js.native
     
     /* private */ var url: Any = js.native
-  }
-  
-  @JSImport("expo-file-system/build/FileSystem", "EncodingType")
-  @js.native
-  object EncodingType extends StObject {
-    
-    @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.expoFileSystem.buildFileSystemDottypesMod.EncodingType & String] = js.native
-    
-    /* "base64" */ val Base64: typings.expoFileSystem.buildFileSystemDottypesMod.EncodingType.Base64 & String = js.native
-    
-    /* "utf8" */ val UTF8: typings.expoFileSystem.buildFileSystemDottypesMod.EncodingType.UTF8 & String = js.native
   }
   
   /* note: abstract class */ @JSImport("expo-file-system/build/FileSystem", "FileSystemCancellableNetworkTask")
@@ -120,30 +125,6 @@ object buildFileSystemMod {
     /* protected */ def uuid: String = js.native
   }
   
-  @JSImport("expo-file-system/build/FileSystem", "FileSystemSessionType")
-  @js.native
-  object FileSystemSessionType extends StObject {
-    
-    @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.expoFileSystem.buildFileSystemDottypesMod.FileSystemSessionType & Double] = js.native
-    
-    /* 0 */ val BACKGROUND: typings.expoFileSystem.buildFileSystemDottypesMod.FileSystemSessionType.BACKGROUND & Double = js.native
-    
-    /* 1 */ val FOREGROUND: typings.expoFileSystem.buildFileSystemDottypesMod.FileSystemSessionType.FOREGROUND & Double = js.native
-  }
-  
-  @JSImport("expo-file-system/build/FileSystem", "FileSystemUploadType")
-  @js.native
-  object FileSystemUploadType extends StObject {
-    
-    @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.expoFileSystem.buildFileSystemDottypesMod.FileSystemUploadType & Double] = js.native
-    
-    /* 0 */ val BINARY_CONTENT: typings.expoFileSystem.buildFileSystemDottypesMod.FileSystemUploadType.BINARY_CONTENT & Double = js.native
-    
-    /* 1 */ val MULTIPART: typings.expoFileSystem.buildFileSystemDottypesMod.FileSystemUploadType.MULTIPART & Double = js.native
-  }
-  
   object StorageAccessFramework {
     
     @JSImport("expo-file-system/build/FileSystem", "StorageAccessFramework")
@@ -151,27 +132,58 @@ object buildFileSystemMod {
     val ^ : js.Any = js.native
     
     /* was `typeof imported_FileSystem.copyAsync` */
-    inline def copyAsync(options: From): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("copyAsync")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+    inline def copyAsync(options: RelocatingOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("copyAsync")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
     
+    /**
+      * Creates a new empty file.
+      * @param parentUri The [SAF](#saf-uri) URI to the parent directory.
+      * @param fileName The name of new file **without the extension**.
+      * @param mimeType The MIME type of new file.
+      * @return A Promise that resolves to a [SAF URI](#saf-uri) to the created file.
+      */
     inline def createFileAsync(parentUri: String, fileName: String, mimeType: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("createFileAsync")(parentUri.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
     
     /* was `typeof imported_FileSystem.deleteAsync` */
     inline def deleteAsync(fileUri: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteAsync")(fileUri.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
-    inline def deleteAsync(fileUri: String, options: Idempotent): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteAsync")(fileUri.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    inline def deleteAsync(fileUri: String, options: DeletingOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteAsync")(fileUri.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     
+    /**
+      * Gets a [SAF URI](#saf-uri) pointing to a folder in the Android root directory. You can use this function to get URI for
+      * `StorageAccessFramework.requestDirectoryPermissionsAsync()` when you trying to migrate an album. In that case, the name of the album is the folder name.
+      * @param folderName The name of the folder which is located in the Android root directory.
+      * @return Returns a [SAF URI](#saf-uri) to a folder.
+      */
     inline def getUriForDirectoryInRoot(folderName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getUriForDirectoryInRoot")(folderName.asInstanceOf[js.Any]).asInstanceOf[String]
     
+    /**
+      * Creates a new empty directory.
+      * @param parentUri The [SAF](#saf-uri) URI to the parent directory.
+      * @param dirName The name of new directory.
+      * @return A Promise that resolves to a [SAF URI](#saf-uri) to the created directory.
+      */
     inline def makeDirectoryAsync(parentUri: String, dirName: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("makeDirectoryAsync")(parentUri.asInstanceOf[js.Any], dirName.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
     
     /* was `typeof imported_FileSystem.moveAsync` */
-    inline def moveAsync(options: From): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("moveAsync")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+    inline def moveAsync(options: RelocatingOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("moveAsync")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
     
     /* was `typeof imported_FileSystem.readAsStringAsync` */
     inline def readAsStringAsync(fileUri: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("readAsStringAsync")(fileUri.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
     inline def readAsStringAsync(fileUri: String, options: ReadingOptions): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readAsStringAsync")(fileUri.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
     
+    /**
+      * Enumerate the contents of a directory.
+      * @param dirUri [SAF](#saf-uri) URI to the directory.
+      * @return A Promise that resolves to an array of strings, each containing the full [SAF URI](#saf-uri) of a file or directory contained in the directory at `fileUri`.
+      */
     inline def readDirectoryAsync(dirUri: String): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("readDirectoryAsync")(dirUri.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
     
+    /**
+      * Allows users to select a specific directory, granting your app access to all of the files and sub-directories within that directory.
+      * @param initialFileUrl The [SAF URI](#saf-uri) of the directory that the file picker should display when it first loads.
+      * If URI is incorrect or points to a non-existing folder, it's ignored.
+      * @platform android 11+
+      * @return Returns a Promise that resolves to `FileSystemRequestDirectoryPermissionsResult` object.
+      */
     inline def requestDirectoryPermissionsAsync(): js.Promise[FileSystemRequestDirectoryPermissionsResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestDirectoryPermissionsAsync")().asInstanceOf[js.Promise[FileSystemRequestDirectoryPermissionsResult]]
     inline def requestDirectoryPermissionsAsync(initialFileUrl: String): js.Promise[FileSystemRequestDirectoryPermissionsResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestDirectoryPermissionsAsync")(initialFileUrl.asInstanceOf[js.Any]).asInstanceOf[js.Promise[FileSystemRequestDirectoryPermissionsResult]]
     
@@ -217,7 +229,7 @@ object buildFileSystemMod {
   @js.native
   val cacheDirectory: String | Null = js.native
   
-  inline def copyAsync(options: From): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("copyAsync")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def copyAsync(options: RelocatingOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("copyAsync")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
   inline def createDownloadResumable(uri: String, fileUri: String): DownloadResumable = (^.asInstanceOf[js.Dynamic].applyDynamic("createDownloadResumable")(uri.asInstanceOf[js.Any], fileUri.asInstanceOf[js.Any])).asInstanceOf[DownloadResumable]
   inline def createDownloadResumable(uri: String, fileUri: String, options: Unit, callback: Unit, resumeData: String): DownloadResumable = (^.asInstanceOf[js.Dynamic].applyDynamic("createDownloadResumable")(uri.asInstanceOf[js.Any], fileUri.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], resumeData.asInstanceOf[js.Any])).asInstanceOf[DownloadResumable]
@@ -266,7 +278,7 @@ object buildFileSystemMod {
   ): UploadTask = (^.asInstanceOf[js.Dynamic].applyDynamic("createUploadTask")(url.asInstanceOf[js.Any], fileUri.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[UploadTask]
   
   inline def deleteAsync(fileUri: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteAsync")(fileUri.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
-  inline def deleteAsync(fileUri: String, options: Idempotent): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteAsync")(fileUri.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def deleteAsync(fileUri: String, options: DeletingOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteAsync")(fileUri.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   inline def deleteLegacyDocumentDirectoryAndroid(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteLegacyDocumentDirectoryAndroid")().asInstanceOf[js.Promise[Unit]]
   
@@ -282,14 +294,14 @@ object buildFileSystemMod {
   inline def getFreeDiskStorageAsync(): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFreeDiskStorageAsync")().asInstanceOf[js.Promise[Double]]
   
   inline def getInfoAsync(fileUri: String): js.Promise[FileInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("getInfoAsync")(fileUri.asInstanceOf[js.Any]).asInstanceOf[js.Promise[FileInfo]]
-  inline def getInfoAsync(fileUri: String, options: Md5): js.Promise[FileInfo] = (^.asInstanceOf[js.Dynamic].applyDynamic("getInfoAsync")(fileUri.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[FileInfo]]
+  inline def getInfoAsync(fileUri: String, options: InfoOptions): js.Promise[FileInfo] = (^.asInstanceOf[js.Dynamic].applyDynamic("getInfoAsync")(fileUri.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[FileInfo]]
   
   inline def getTotalDiskCapacityAsync(): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTotalDiskCapacityAsync")().asInstanceOf[js.Promise[Double]]
   
   inline def makeDirectoryAsync(fileUri: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeDirectoryAsync")(fileUri.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
-  inline def makeDirectoryAsync(fileUri: String, options: Intermediates): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("makeDirectoryAsync")(fileUri.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def makeDirectoryAsync(fileUri: String, options: MakeDirectoryOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("makeDirectoryAsync")(fileUri.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  inline def moveAsync(options: From): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("moveAsync")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def moveAsync(options: RelocatingOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("moveAsync")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
   inline def readAsStringAsync(fileUri: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("readAsStringAsync")(fileUri.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   inline def readAsStringAsync(fileUri: String, options: ReadingOptions): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readAsStringAsync")(fileUri.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]

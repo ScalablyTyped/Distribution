@@ -130,7 +130,7 @@ object sapUiModelOdataTypeDateTimeBaseMod {
       * for more information.
       */
     sTargetType: String
-    ): js.Date | String = js.native
+    ): js.Date | typings.openui5.sapUiCoreDateUi5dateMod.default | String = js.native
     
     /**
       * @SINCE 1.27.0
@@ -150,7 +150,7 @@ object sapUiModelOdataTypeDateTimeBaseMod {
       * sap.ui.model.odata.type} for more information.
       */
     sSourceType: String
-    ): js.Date | String = js.native
+    ): js.Date | typings.openui5.sapUiCoreDateUi5dateMod.default | String = js.native
     def parseValue(
       /**
       * The value to be parsed; the empty string and `null` are parsed to `null`
@@ -162,7 +162,7 @@ object sapUiModelOdataTypeDateTimeBaseMod {
       * sap.ui.model.odata.type} for more information.
       */
     sSourceType: String
-    ): js.Date | String = js.native
+    ): js.Date | typings.openui5.sapUiCoreDateUi5dateMod.default | String = js.native
     
     /**
       * @SINCE 1.27.0

@@ -1,5 +1,6 @@
 package typings.three
 
+import typings.three.srcCoreBufferGeometryMod.NormalBufferAttributes
 import typings.three.srcThreeMod.BufferGeometry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -23,6 +24,6 @@ object examplesJsmModifiersEdgeSplitModifierMod {
       * 									To use this feature, you also need to pass an indexed geometry with a 'normal'
       * 									BufferAttribute.
       */
-    def modify(geometry: BufferGeometry, cutOffPoint: Double, tryKeepNormals: Boolean): BufferGeometry = js.native
+    def modify(geometry: BufferGeometry[NormalBufferAttributes], cutOffPoint: Double, tryKeepNormals: Boolean): BufferGeometry[NormalBufferAttributes] = js.native
   }
 }

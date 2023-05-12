@@ -1,7 +1,7 @@
 
 # Scala.js typings for zwitch
 
-Typings are for version 2.0.2
+Typings are for version 2.0.4
 
 ## Library description:
 Handle values based on a property

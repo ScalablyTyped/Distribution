@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DeathZoneSource extends StObject {
   
-  def contains(x: Double, y: Double): Unit
+  def contains(x: Double, y: Double): Boolean
   @JSName("contains")
   var contains_Original: DeathZoneSourceCallback
 }
 object DeathZoneSource {
   
-  inline def apply(contains: (/* x */ Double, /* y */ Double) => Unit): DeathZoneSource = {
+  inline def apply(contains: (/* x */ Double, /* y */ Double) => Boolean): DeathZoneSource = {
     val __obj = js.Dynamic.literal(contains = js.Any.fromFunction2(contains))
     __obj.asInstanceOf[DeathZoneSource]
   }
@@ -20,6 +20,6 @@ object DeathZoneSource {
   @scala.inline
   implicit open class MutableBuilder[Self <: DeathZoneSource] (val x: Self) extends AnyVal {
     
-    inline def setContains(value: (/* x */ Double, /* y */ Double) => Unit): Self = StObject.set(x, "contains", js.Any.fromFunction2(value))
+    inline def setContains(value: (/* x */ Double, /* y */ Double) => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction2(value))
   }
 }

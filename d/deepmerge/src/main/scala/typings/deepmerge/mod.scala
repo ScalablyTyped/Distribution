@@ -20,13 +20,22 @@ object mod {
   inline def all_T_T[T](objects: js.Array[Partial[T]]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(objects.asInstanceOf[js.Any]).asInstanceOf[T]
   inline def all_T_T[T](objects: js.Array[Partial[T]], options: Options): T = (^.asInstanceOf[js.Dynamic].applyDynamic("all")(objects.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T]
   
+  @js.native
+  trait ArrayMergeOptions extends StObject {
+    
+    def cloneUnlessOtherwiseSpecified(value: js.Object): js.Object = js.native
+    def cloneUnlessOtherwiseSpecified(value: js.Object, options: Options): js.Object = js.native
+    
+    def isMergeableObject(value: js.Object): Boolean = js.native
+  }
+  
   trait Options extends StObject {
     
     var arrayMerge: js.UndefOr[
         js.Function3[
           /* target */ js.Array[Any], 
           /* source */ js.Array[Any], 
-          /* options */ js.UndefOr[this.type], 
+          /* options */ js.UndefOr[ArrayMergeOptions], 
           js.Array[Any]
         ]
       ] = js.undefined
@@ -55,7 +64,7 @@ object mod {
     implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setArrayMerge(
-        value: (/* target */ js.Array[Any], /* source */ js.Array[Any], /* options */ js.UndefOr[Options]) => js.Array[Any]
+        value: (/* target */ js.Array[Any], /* source */ js.Array[Any], /* options */ js.UndefOr[ArrayMergeOptions]) => js.Array[Any]
       ): Self = StObject.set(x, "arrayMerge", js.Any.fromFunction3(value))
       
       inline def setArrayMergeUndefined: Self = StObject.set(x, "arrayMerge", js.undefined)

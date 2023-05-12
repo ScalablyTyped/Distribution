@@ -32,6 +32,11 @@ trait TimeSeriesSummary extends StObject {
   var propertyId: js.UndefOr[ID] = js.undefined
   
   /**
+    * The ARN of the time series, which has the following format.  arn:${Partition}:iotsitewise:${Region}:${Account}:time-series/${TimeSeriesId} 
+    */
+  var timeSeriesArn: ARN
+  
+  /**
     * The date that the time series was created, in Unix epoch time.
     */
   var timeSeriesCreationDate: js.Date
@@ -50,11 +55,12 @@ object TimeSeriesSummary {
   
   inline def apply(
     dataType: PropertyDataType,
+    timeSeriesArn: ARN,
     timeSeriesCreationDate: js.Date,
     timeSeriesId: TimeSeriesId,
     timeSeriesLastUpdateDate: js.Date
   ): TimeSeriesSummary = {
-    val __obj = js.Dynamic.literal(dataType = dataType.asInstanceOf[js.Any], timeSeriesCreationDate = timeSeriesCreationDate.asInstanceOf[js.Any], timeSeriesId = timeSeriesId.asInstanceOf[js.Any], timeSeriesLastUpdateDate = timeSeriesLastUpdateDate.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(dataType = dataType.asInstanceOf[js.Any], timeSeriesArn = timeSeriesArn.asInstanceOf[js.Any], timeSeriesCreationDate = timeSeriesCreationDate.asInstanceOf[js.Any], timeSeriesId = timeSeriesId.asInstanceOf[js.Any], timeSeriesLastUpdateDate = timeSeriesLastUpdateDate.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimeSeriesSummary]
   }
   
@@ -78,6 +84,8 @@ object TimeSeriesSummary {
     inline def setPropertyId(value: ID): Self = StObject.set(x, "propertyId", value.asInstanceOf[js.Any])
     
     inline def setPropertyIdUndefined: Self = StObject.set(x, "propertyId", js.undefined)
+    
+    inline def setTimeSeriesArn(value: ARN): Self = StObject.set(x, "timeSeriesArn", value.asInstanceOf[js.Any])
     
     inline def setTimeSeriesCreationDate(value: js.Date): Self = StObject.set(x, "timeSeriesCreationDate", value.asInstanceOf[js.Any])
     

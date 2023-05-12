@@ -4,10 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** @typedef {import('../../../core/math/vec3.js').Vec3} Vec3 */
-/** @typedef {import('../../../scene/model.js').Model} Model */
-/** @typedef {import('../../entity.js').Entity} Entity */
-/** @typedef {import('./system.js').CollisionComponentSystem} CollisionComponentSystem */
 /**
   * A collision volume. Use this in conjunction with a {@link RigidBodyComponent} to make a
   * collision volume that can be simulated using the physics engine.
@@ -37,8 +33,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * - "sphere": A sphere-shaped collision volume.
   *
   * Defaults to "box".
-  * @property {Vec3} halfExtents The half-extents of the box-shaped collision volume in the x, y and
-  * z axes. Defaults to [0.5, 0.5, 0.5].
+  * @property {Vec3} halfExtents The half-extents of the
+  * box-shaped collision volume in the x, y and z axes. Defaults to [0.5, 0.5, 0.5].
+  * @property {Vec3} linearOffset The positional offset of the collision shape from the Entity position along the local axes.
+  * Defaults to [0, 0, 0].
+  * @property {Quat} angularOffset The rotational offset of the collision shape from the Entity rotation in local space.
+  * Defaults to identity.
   * @property {number} radius The radius of the sphere, capsule, cylinder or cone-shaped collision
   * volumes. Defaults to 0.5.
   * @property {number} axis The local space axis with which the capsule, cylinder or cone-shaped
@@ -49,8 +49,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * be an asset id. Defaults to null.
   * @property {Asset|number} renderAsset The render asset of the mesh collision volume - can also be
   * an asset id. Defaults to null. If not set then the asset property will be checked instead.
-  * @property {Model} model The model that is added to the scene graph for the mesh collision
-  * volume.
+  * @property {import('../../../scene/model.js').Model} model The model that is added to the scene
+  * graph for the mesh collision volume.
   * @augments Component
   */
 @JSGlobal("pc.CollisionComponent")
@@ -60,8 +60,10 @@ open class CollisionComponent protected ()
   /**
     * Create a new CollisionComponent.
     *
-    * @param {CollisionComponentSystem} system - The ComponentSystem that created this Component.
-    * @param {Entity} entity - The Entity that this Component is attached to.
+    * @param {import('./system.js').CollisionComponentSystem} system - The ComponentSystem that
+    * created this Component.
+    * @param {import('../../entity.js').Entity} entity - The Entity that this Component is
+    * attached to.
     */
   def this(system: typings.playcanvas.mod.CollisionComponentSystem, entity: typings.playcanvas.mod.Entity) = this()
 }

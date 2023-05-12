@@ -6,53 +6,56 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object renderEventTypeMod {
   
-  @JSImport("ol/render/EventType", JSImport.Default)
-  @js.native
-  object default extends StObject {
+  object default {
     
-    @JSBracketAccess
-    def apply(value: String): js.UndefOr[EventType & String] = js.native
+    @JSImport("ol/render/EventType", "default.POSTCOMPOSE")
+    @js.native
+    val POSTCOMPOSE: String = js.native
     
-    /* "postcompose" */ val POSTCOMPOSE: typings.ol.renderEventTypeMod.EventType.POSTCOMPOSE & String = js.native
+    @JSImport("ol/render/EventType", "default.POSTRENDER")
+    @js.native
+    val POSTRENDER: String = js.native
     
-    /* "postrender" */ val POSTRENDER: typings.ol.renderEventTypeMod.EventType.POSTRENDER & String = js.native
+    @JSImport("ol/render/EventType", "default.PRECOMPOSE")
+    @js.native
+    val PRECOMPOSE: String = js.native
     
-    /* "precompose" */ val PRECOMPOSE: typings.ol.renderEventTypeMod.EventType.PRECOMPOSE & String = js.native
+    @JSImport("ol/render/EventType", "default.PRERENDER")
+    @js.native
+    val PRERENDER: String = js.native
     
-    /* "prerender" */ val PRERENDER: typings.ol.renderEventTypeMod.EventType.PRERENDER & String = js.native
-    
-    /* "rendercomplete" */ val RENDERCOMPLETE: typings.ol.renderEventTypeMod.EventType.RENDERCOMPLETE & String = js.native
+    @JSImport("ol/render/EventType", "default.RENDERCOMPLETE")
+    @js.native
+    val RENDERCOMPLETE: String = js.native
   }
   
-  @js.native
-  sealed trait EventType extends StObject
-  @JSImport("ol/render/EventType", "EventType")
-  @js.native
-  object EventType extends StObject {
+  /* Rewritten from type alias, can be one of: 
+    - typings.ol.olStrings.postrender
+    - typings.ol.olStrings.prerender
+  */
+  trait LayerRenderEventTypes extends StObject
+  object LayerRenderEventTypes {
     
-    @js.native
-    sealed trait POSTCOMPOSE
-      extends StObject
-         with EventType
+    inline def postrender: typings.ol.olStrings.postrender = "postrender".asInstanceOf[typings.ol.olStrings.postrender]
     
-    @js.native
-    sealed trait POSTRENDER
-      extends StObject
-         with EventType
+    inline def prerender: typings.ol.olStrings.prerender = "prerender".asInstanceOf[typings.ol.olStrings.prerender]
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.ol.olStrings.postrender
+    - typings.ol.olStrings.precompose
+    - typings.ol.olStrings.postcompose
+    - typings.ol.olStrings.rendercomplete
+  */
+  trait MapRenderEventTypes extends StObject
+  object MapRenderEventTypes {
     
-    @js.native
-    sealed trait PRECOMPOSE
-      extends StObject
-         with EventType
+    inline def postcompose: typings.ol.olStrings.postcompose = "postcompose".asInstanceOf[typings.ol.olStrings.postcompose]
     
-    @js.native
-    sealed trait PRERENDER
-      extends StObject
-         with EventType
+    inline def postrender: typings.ol.olStrings.postrender = "postrender".asInstanceOf[typings.ol.olStrings.postrender]
     
-    @js.native
-    sealed trait RENDERCOMPLETE
-      extends StObject
-         with EventType
+    inline def precompose: typings.ol.olStrings.precompose = "precompose".asInstanceOf[typings.ol.olStrings.precompose]
+    
+    inline def rendercomplete: typings.ol.olStrings.rendercomplete = "rendercomplete".asInstanceOf[typings.ol.olStrings.rendercomplete]
   }
 }

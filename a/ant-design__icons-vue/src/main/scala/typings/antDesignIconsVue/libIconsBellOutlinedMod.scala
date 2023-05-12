@@ -16,7 +16,7 @@ object libIconsBellOutlinedMod extends Shortcut {
   @js.native
   trait BellOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_BellOutlinedIconType: String = js.native

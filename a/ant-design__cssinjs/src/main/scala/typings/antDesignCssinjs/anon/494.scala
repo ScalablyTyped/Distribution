@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.WebkitTextStrokeWidth
+import typings.csstype.mod.Property.MaskBorderWidth
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,13 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `494` extends StObject {
   
   var value: js.UndefOr[
-    (WebkitTextStrokeWidth[Double | String]) | (js.Array[
+    (MaskBorderWidth[Double | String]) | (js.Array[
       (Extract[
         js.UndefOr[
-          (WebkitTextStrokeWidth[Double | String]) | (js.Array[NonNullable[js.UndefOr[WebkitTextStrokeWidth[Double | String]]]])
+          (MaskBorderWidth[Double | String]) | (js.Array[NonNullable[js.UndefOr[MaskBorderWidth[Double | String]]]])
         ], 
         String
-      ]) | (NonNullable[js.UndefOr[WebkitTextStrokeWidth[Double | String]]])
+      ]) | (NonNullable[js.UndefOr[MaskBorderWidth[Double | String]]])
     ])
   ] = js.native
 }

@@ -1,5 +1,6 @@
 package typings.openui5
 
+import typings.openui5.anon.HeaderDescription
 import typings.openui5.anon.KeyPreviousKey
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapMLibraryMod.BackgroundDesign
@@ -233,6 +234,8 @@ object sapMIconTabHeaderMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:select select} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -244,8 +247,6 @@ object sapMIconTabHeaderMod {
     mParameters: KeyPreviousKey): this.type = js.native
     
     /**
-      * @SINCE 1.80
-      *
       * Gets current value of property {@link #getAriaTexts ariaTexts}.
       *
       * Specifies optional texts for the screen reader.
@@ -255,7 +256,7 @@ object sapMIconTabHeaderMod {
       *
       * @returns Value of property `ariaTexts`
       */
-    def getAriaTexts(): js.Object = js.native
+    def getAriaTexts(): HeaderDescription | Null = js.native
     
     /**
       * @SINCE 1.44
@@ -459,9 +460,7 @@ object sapMIconTabHeaderMod {
     vItem: IconTab): IconTab | Null = js.native
     
     /**
-      * @SINCE 1.80
-      *
-      * Sets a new value for property {@link #getAriaTexts ariaTexts}.
+      * Sets a new value for property {@link #setAriaTexts ariaTexts}.
       *
       * Specifies optional texts for the screen reader.
       *
@@ -476,7 +475,7 @@ object sapMIconTabHeaderMod {
     def setAriaTexts(/**
       * New value for property `ariaTexts`
       */
-    oAriaTexts: js.Object): this.type = js.native
+    oAriaTexts: HeaderDescription): this.type = js.native
     
     /**
       * @SINCE 1.44

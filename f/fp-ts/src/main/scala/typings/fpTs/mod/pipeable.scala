@@ -93,7 +93,7 @@ import typings.fpTs.libFoldableWithIndexMod.FoldableWithIndex2C
 import typings.fpTs.libFoldableWithIndexMod.FoldableWithIndex3
 import typings.fpTs.libFoldableWithIndexMod.FoldableWithIndex3C
 import typings.fpTs.libFoldableWithIndexMod.FoldableWithIndex4
-import typings.fpTs.libFunctionMod.Lazy
+import typings.fpTs.libFunctionMod.LazyArg
 import typings.fpTs.libFunctorMod.Functor
 import typings.fpTs.libFunctorMod.Functor1
 import typings.fpTs.libFunctorMod.Functor2
@@ -134,7 +134,7 @@ object pipeable {
   val ^ : js.Any = js.native
   
   inline def alt[F](F: Alt[F]): js.Function1[
-    /* that */ Lazy[
+    /* that */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ Any
     ], 
     js.Function1[
@@ -142,7 +142,7 @@ object pipeable {
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ Any
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("alt")(F.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* that */ Lazy[
+    /* that */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ Any
     ], 
     js.Function1[
@@ -151,7 +151,7 @@ object pipeable {
     ]
   ]]
   inline def alt[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */](F: Alt1[F]): js.Function1[
-    /* that */ Lazy[
+    /* that */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ Any
     ], 
     js.Function1[
@@ -159,7 +159,7 @@ object pipeable {
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ Any
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("alt")(F.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* that */ Lazy[
+    /* that */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ Any
     ], 
     js.Function1[
@@ -168,7 +168,7 @@ object pipeable {
     ]
   ]]
   inline def alt[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */](F: Alt2[F]): js.Function1[
-    /* that */ Lazy[
+    /* that */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ Any
     ], 
     js.Function1[
@@ -176,7 +176,7 @@ object pipeable {
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ Any
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("alt")(F.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* that */ Lazy[
+    /* that */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ Any
     ], 
     js.Function1[
@@ -185,7 +185,7 @@ object pipeable {
     ]
   ]]
   inline def alt[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */](F: Alt3[F]): js.Function1[
-    /* that */ Lazy[
+    /* that */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ Any
     ], 
     js.Function1[
@@ -193,7 +193,7 @@ object pipeable {
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ Any
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("alt")(F.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* that */ Lazy[
+    /* that */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ Any
     ], 
     js.Function1[
@@ -202,7 +202,7 @@ object pipeable {
     ]
   ]]
   inline def alt[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ Any */](F: Alt4[F]): js.Function1[
-    /* that */ Lazy[
+    /* that */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, E, A> */ Any
     ], 
     js.Function1[
@@ -210,7 +210,7 @@ object pipeable {
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, E, A> */ Any
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("alt")(F.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* that */ Lazy[
+    /* that */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, E, A> */ Any
     ], 
     js.Function1[
@@ -219,7 +219,7 @@ object pipeable {
     ]
   ]]
   inline def alt[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E](F: Alt2C[F, E]): js.Function1[
-    /* that */ Lazy[
+    /* that */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ Any
     ], 
     js.Function1[
@@ -227,7 +227,7 @@ object pipeable {
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ Any
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("alt")(F.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* that */ Lazy[
+    /* that */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ Any
     ], 
     js.Function1[
@@ -236,7 +236,7 @@ object pipeable {
     ]
   ]]
   inline def alt[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, E](F: Alt3C[F, E]): js.Function1[
-    /* that */ Lazy[
+    /* that */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ Any
     ], 
     js.Function1[
@@ -244,7 +244,7 @@ object pipeable {
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ Any
     ]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("alt")(F.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
-    /* that */ Lazy[
+    /* that */ LazyArg[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ Any
     ], 
     js.Function1[

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** A Variable is a name/value pair.
 		The `type` attribute is shown if space permits or when hovering over the variable's name.
 		The `kind` attribute is used to render additional properties of the variable, e.g. different icons can be used to indicate that a variable is public or private.
-		If the value is structured (has children), a handle is provided to retrieve the children with the VariablesRequest.
+		If the value is structured (has children), a handle is provided to retrieve the children with the `variables` request.
 		If the number of named or indexed children is large, the numbers should be returned via the `namedVariables` and `indexedVariables` attributes.
 		The client can use this information to present the children in a paged UI and fetch them in chunks.
 	*/
@@ -49,7 +49,7 @@ trait Variable extends StObject {
   		*/
   var value: String
   
-  /** If variablesReference is > 0, the variable is structured and its children can be retrieved by passing variablesReference to the VariablesRequest. */
+  /** If `variablesReference` is > 0, the variable is structured and its children can be retrieved by passing `variablesReference` to the `variables` request as long as execution remains suspended. See 'Lifetime of Object References' in the Overview section for details. */
   var variablesReference: Double
 }
 object Variable {

@@ -127,6 +127,29 @@ object anon {
     }
   }
   
+  /* Inlined @react-spring/web.@react-spring/web.AnimatedProps<{  transform :string}> */
+  trait AnimatedPropstransformstr extends StObject {
+    
+    var transform: /* import warning: importer.ImportType#apply Failed type conversion: 'transform' extends 'ref' | 'key' ? string : @react-spring/web.@react-spring/web.AnimatedProp<string> */ js.Any
+  }
+  object AnimatedPropstransformstr {
+    
+    inline def apply(
+      transform: /* import warning: importer.ImportType#apply Failed type conversion: 'transform' extends 'ref' | 'key' ? string : @react-spring/web.@react-spring/web.AnimatedProp<string> */ js.Any
+    ): AnimatedPropstransformstr = {
+      val __obj = js.Dynamic.literal(transform = transform.asInstanceOf[js.Any])
+      __obj.asInstanceOf[AnimatedPropstransformstr]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnimatedPropstransformstr] (val x: Self) extends AnyVal {
+      
+      inline def setTransform(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: 'transform' extends 'ref' | 'key' ? string : @react-spring/web.@react-spring/web.AnimatedProp<string> */ js.Any
+      ): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+    }
+  }
+  
   trait Color extends StObject {
     
     var color: String

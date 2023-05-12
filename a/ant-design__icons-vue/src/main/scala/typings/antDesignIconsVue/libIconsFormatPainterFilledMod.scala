@@ -16,7 +16,7 @@ object libIconsFormatPainterFilledMod extends Shortcut {
   @js.native
   trait FormatPainterFilledIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_FormatPainterFilledIconType: String = js.native

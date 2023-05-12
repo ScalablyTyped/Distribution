@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait getTextContentParameters extends StObject {
   
   /**
-    * - Do not attempt to combine
-    * same line {@link TextItem }'s. The default value is `false`.
+    * - When true the text is *not*
+    * normalized in the worker-thread. The default is `false`.
     */
-  var disableCombineTextItems: Boolean
+  var disableNormalization: js.UndefOr[Boolean] = js.undefined
   
   /**
     * - When true include marked
@@ -20,15 +20,17 @@ trait getTextContentParameters extends StObject {
 }
 object getTextContentParameters {
   
-  inline def apply(disableCombineTextItems: Boolean): getTextContentParameters = {
-    val __obj = js.Dynamic.literal(disableCombineTextItems = disableCombineTextItems.asInstanceOf[js.Any])
+  inline def apply(): getTextContentParameters = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[getTextContentParameters]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: getTextContentParameters] (val x: Self) extends AnyVal {
     
-    inline def setDisableCombineTextItems(value: Boolean): Self = StObject.set(x, "disableCombineTextItems", value.asInstanceOf[js.Any])
+    inline def setDisableNormalization(value: Boolean): Self = StObject.set(x, "disableNormalization", value.asInstanceOf[js.Any])
+    
+    inline def setDisableNormalizationUndefined: Self = StObject.set(x, "disableNormalization", js.undefined)
     
     inline def setIncludeMarkedContent(value: Boolean): Self = StObject.set(x, "includeMarkedContent", value.asInstanceOf[js.Any])
     

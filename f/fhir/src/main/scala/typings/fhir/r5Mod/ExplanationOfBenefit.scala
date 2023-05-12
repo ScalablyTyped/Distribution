@@ -78,9 +78,14 @@ trait ExplanationOfBenefit
   var claimResponse: js.UndefOr[Reference] = js.undefined
   
   /**
-    * This field is independent of the date of creation of the resource as it may reflect the creation date of a source document prior to digitization. Typically for claims all services must be completed as of this date.
+    * The date this resource was created.
     */
   var created: String
+  
+  /**
+    * The element is used to indicate the current state of the adjudication overall for the claim resource, for example: the request has been held (pended) for adjudication processing, for manual review or other reasons; that it has been processed and will be paid, or the outstanding paid, as submitted (approved); that no amount will be paid (denied); or that some amount between zero and the submitted amoutn will be paid (partial).
+    */
+  var decision: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * Information about diagnoses relevant to the claim items.
@@ -88,14 +93,29 @@ trait ExplanationOfBenefit
   var diagnosis: js.UndefOr[js.Array[ExplanationOfBenefitDiagnosis]] = js.undefined
   
   /**
+    * For example DRG (Diagnosis Related Group) or a bundled billing code. A patient may have a diagnosis of a Myocardial Infarction and a DRG for HeartAttack would be assigned. The Claim item (and possible subsequent claims) would refer to the DRG for those line items that were for services related to the heart attack event.
+    */
+  var diagnosisRelatedGroup: js.UndefOr[CodeableConcept] = js.undefined
+  
+  /**
     * A human readable description of the status of the adjudication.
     */
   var disposition: js.UndefOr[String] = js.undefined
   
   /**
+    * Healthcare encounters related to this claim.
+    */
+  var encounter: js.UndefOr[js.Array[Reference]] = js.undefined
+  
+  /**
     * Individual who created the claim, predetermination or preauthorization.
     */
   var enterer: js.UndefOr[Reference] = js.undefined
+  
+  /**
+    * Information code for an event with a corresponding date or period.
+    */
+  var event: js.UndefOr[js.Array[ExplanationOfBenefitEvent]] = js.undefined
   
   /**
     * Facility where the services were provided.
@@ -130,12 +150,12 @@ trait ExplanationOfBenefit
   /**
     * All insurance coverages for the patient which may be applicable for reimbursement, of the products and services listed in the claim, are typically provided in the claim to allow insurers to confirm the ordering of the insurance coverages relative to local 'coordination of benefit' rules. One coverage (and only one) with 'focal=true' is to be used in the adjudication of this claim. Coverages appearing before the focal Coverage in the list, and where 'Coverage.subrogation=false', should provide a reference to the ClaimResponse containing the adjudication results of the prior claim.
     */
-  var insurance: js.Array[ExplanationOfBenefitInsurance]
+  var insurance: js.UndefOr[js.Array[ExplanationOfBenefitInsurance]] = js.undefined
   
   /**
     * The party responsible for authorization, adjudication and reimbursement.
     */
-  var insurer: Reference
+  var insurer: js.UndefOr[Reference] = js.undefined
   
   /**
     * A claim line. Either a simple (a product or service) or a 'group' of details which can also be a simple items or groups of sub-details.
@@ -148,7 +168,7 @@ trait ExplanationOfBenefit
   var originalPrescription: js.UndefOr[Reference] = js.undefined
   
   /**
-    * The resource may be used to indicate that: the request has been held (queued) for processing; that it has been processed and errors found (error); that no errors were found and that some of the adjudication has been undertaken (partial) or that all of the adjudication has been undertaken (complete).
+    * The resource may be used to indicate that the Claim/Preauthorization/Pre-determination has been received but processing has not begun (queued); that it has been processed and one or more errors have been detected (error); no errors were detected and some of the adjudication processing has been performed (partial); or all of the adjudication processing has completed without errors (complete).
     */
   var outcome: queued | complete | error | partial
   
@@ -156,6 +176,11 @@ trait ExplanationOfBenefit
     * The party to whom the professional services and/or products have been supplied or are being considered and for whom actual for forecast reimbursement is sought.
     */
   var patient: Reference
+  
+  /**
+    * The amount paid by the patient, in total at the claim claim level or specifically for the item and detail level, to the provider for goods and services.
+    */
+  var patientPaid: js.UndefOr[Money] = js.undefined
   
   /**
     * Often providers agree to receive the benefits payable to reduce the near-term costs to the patient. The insurer may decline to pay the provider and may choose to pay the subscriber instead.
@@ -183,12 +208,12 @@ trait ExplanationOfBenefit
   var precedence: js.UndefOr[Double] = js.undefined
   
   /**
-    * Prescription to support the dispensing of pharmacy, device or vision products.
+    * Prescription is the document/authorization given to the claim author for them to provide products and services for which consideration (reimbursement) is sought. Could be a RX for medications, an 'order' for oxygen or wheelchair or physiotherapy treatments.
     */
   var prescription: js.UndefOr[Reference] = js.undefined
   
   /**
-    * If a claim processor is unable to complete the processing as per the priority then they should generate and error and not process the request.
+    * If a claim processor is unable to complete the processing as per the priority then they should generate an error and not process the request.
     */
   var priority: js.UndefOr[CodeableConcept] = js.undefined
   
@@ -203,9 +228,9 @@ trait ExplanationOfBenefit
   var processNote: js.UndefOr[js.Array[ExplanationOfBenefitProcessNote]] = js.undefined
   
   /**
-    * Typically this field would be 1..1 where this party is responsible for the claim but not necessarily professionally responsible for the provision of the individual products and services listed below.
+    * Typically this field would be 1..1 where this party is accountable for the data content within the claim but is not necessarily the facility, provider group or practitioner who provided the products and services listed within this claim resource. This field is the Billing Provider, for example, a facility, provider group, lab or practitioner.
     */
-  var provider: Reference
+  var provider: js.UndefOr[Reference] = js.undefined
   
   /**
     * The referral resource which lists the date, practitioner, reason and other supporting information.
@@ -242,12 +267,17 @@ trait ExplanationOfBenefit
   var total: js.UndefOr[js.Array[ExplanationOfBenefitTotal]] = js.undefined
   
   /**
+    * Trace number for tracking purposes. May be defined at the jurisdiction level or between trading partners.
+    */
+  var traceNumber: js.UndefOr[js.Array[Identifier]] = js.undefined
+  
+  /**
     * The majority of jurisdictions use: oral, pharmacy, vision, professional and institutional, or variants on those terms, as the general styles of claims. The valueset is extensible to accommodate other jurisdictional requirements.
     */
   var `type`: CodeableConcept
   
   /**
-    * A code to indicate whether the nature of the request is: to request adjudication of products and services previously rendered; or requesting authorization and adjudication for provision in the future; or requesting the non-binding adjudication of the listed products and services which could be provided in the future.
+    * A code to indicate whether the nature of the request is: Claim - A request to an Insurer to adjudicate the supplied charges for health care goods and services under the identified policy and to pay the determined Benefit amount, if any; Preauthorization - A request to an Insurer to adjudicate the supplied proposed future charges for health care goods and services under the identified policy and to approve the services and provide the expected benefit amounts and potentially to reserve funds to pay the benefits when Claims for the indicated services are later submitted; or, Pre-determination - A request to an Insurer to adjudicate the supplied 'what if' charges for health care goods and services under the identified policy and report back what the Benefit payable would be had the services actually been provided.
     */
   var use: claim_ | preauthorization | predetermination
 }
@@ -255,16 +285,13 @@ object ExplanationOfBenefit {
   
   inline def apply(
     created: String,
-    insurance: js.Array[ExplanationOfBenefitInsurance],
-    insurer: Reference,
     outcome: queued | complete | error | partial,
     patient: Reference,
-    provider: Reference,
     status: active | cancelled | draft | `entered-in-error`,
     `type`: CodeableConcept,
     use: claim_ | preauthorization | predetermination
   ): ExplanationOfBenefit = {
-    val __obj = js.Dynamic.literal(created = created.asInstanceOf[js.Any], insurance = insurance.asInstanceOf[js.Any], insurer = insurer.asInstanceOf[js.Any], outcome = outcome.asInstanceOf[js.Any], patient = patient.asInstanceOf[js.Any], provider = provider.asInstanceOf[js.Any], resourceType = "ExplanationOfBenefit", status = status.asInstanceOf[js.Any], use = use.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(created = created.asInstanceOf[js.Any], outcome = outcome.asInstanceOf[js.Any], patient = patient.asInstanceOf[js.Any], resourceType = "ExplanationOfBenefit", status = status.asInstanceOf[js.Any], use = use.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExplanationOfBenefit]
   }
@@ -318,7 +345,15 @@ object ExplanationOfBenefit {
     
     inline def setCreated(value: String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
+    inline def setDecision(value: CodeableConcept): Self = StObject.set(x, "decision", value.asInstanceOf[js.Any])
+    
+    inline def setDecisionUndefined: Self = StObject.set(x, "decision", js.undefined)
+    
     inline def setDiagnosis(value: js.Array[ExplanationOfBenefitDiagnosis]): Self = StObject.set(x, "diagnosis", value.asInstanceOf[js.Any])
+    
+    inline def setDiagnosisRelatedGroup(value: CodeableConcept): Self = StObject.set(x, "diagnosisRelatedGroup", value.asInstanceOf[js.Any])
+    
+    inline def setDiagnosisRelatedGroupUndefined: Self = StObject.set(x, "diagnosisRelatedGroup", js.undefined)
     
     inline def setDiagnosisUndefined: Self = StObject.set(x, "diagnosis", js.undefined)
     
@@ -328,9 +363,21 @@ object ExplanationOfBenefit {
     
     inline def setDispositionUndefined: Self = StObject.set(x, "disposition", js.undefined)
     
+    inline def setEncounter(value: js.Array[Reference]): Self = StObject.set(x, "encounter", value.asInstanceOf[js.Any])
+    
+    inline def setEncounterUndefined: Self = StObject.set(x, "encounter", js.undefined)
+    
+    inline def setEncounterVarargs(value: Reference*): Self = StObject.set(x, "encounter", js.Array(value*))
+    
     inline def setEnterer(value: Reference): Self = StObject.set(x, "enterer", value.asInstanceOf[js.Any])
     
     inline def setEntererUndefined: Self = StObject.set(x, "enterer", js.undefined)
+    
+    inline def setEvent(value: js.Array[ExplanationOfBenefitEvent]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    
+    inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
+    
+    inline def setEventVarargs(value: ExplanationOfBenefitEvent*): Self = StObject.set(x, "event", js.Array(value*))
     
     inline def setFacility(value: Reference): Self = StObject.set(x, "facility", value.asInstanceOf[js.Any])
     
@@ -360,9 +407,13 @@ object ExplanationOfBenefit {
     
     inline def setInsurance(value: js.Array[ExplanationOfBenefitInsurance]): Self = StObject.set(x, "insurance", value.asInstanceOf[js.Any])
     
+    inline def setInsuranceUndefined: Self = StObject.set(x, "insurance", js.undefined)
+    
     inline def setInsuranceVarargs(value: ExplanationOfBenefitInsurance*): Self = StObject.set(x, "insurance", js.Array(value*))
     
     inline def setInsurer(value: Reference): Self = StObject.set(x, "insurer", value.asInstanceOf[js.Any])
+    
+    inline def setInsurerUndefined: Self = StObject.set(x, "insurer", js.undefined)
     
     inline def setItem(value: js.Array[ExplanationOfBenefitItem]): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
@@ -377,6 +428,10 @@ object ExplanationOfBenefit {
     inline def setOutcome(value: queued | complete | error | partial): Self = StObject.set(x, "outcome", value.asInstanceOf[js.Any])
     
     inline def setPatient(value: Reference): Self = StObject.set(x, "patient", value.asInstanceOf[js.Any])
+    
+    inline def setPatientPaid(value: Money): Self = StObject.set(x, "patientPaid", value.asInstanceOf[js.Any])
+    
+    inline def setPatientPaidUndefined: Self = StObject.set(x, "patientPaid", js.undefined)
     
     inline def setPayee(value: ExplanationOfBenefitPayee): Self = StObject.set(x, "payee", value.asInstanceOf[js.Any])
     
@@ -424,6 +479,8 @@ object ExplanationOfBenefit {
     
     inline def setProvider(value: Reference): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     
+    inline def setProviderUndefined: Self = StObject.set(x, "provider", js.undefined)
+    
     inline def setReferral(value: Reference): Self = StObject.set(x, "referral", value.asInstanceOf[js.Any])
     
     inline def setReferralUndefined: Self = StObject.set(x, "referral", js.undefined)
@@ -453,6 +510,12 @@ object ExplanationOfBenefit {
     inline def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
     
     inline def setTotalVarargs(value: ExplanationOfBenefitTotal*): Self = StObject.set(x, "total", js.Array(value*))
+    
+    inline def setTraceNumber(value: js.Array[Identifier]): Self = StObject.set(x, "traceNumber", value.asInstanceOf[js.Any])
+    
+    inline def setTraceNumberUndefined: Self = StObject.set(x, "traceNumber", js.undefined)
+    
+    inline def setTraceNumberVarargs(value: Identifier*): Self = StObject.set(x, "traceNumber", js.Array(value*))
     
     inline def setType(value: CodeableConcept): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

@@ -3,7 +3,8 @@ package typings.three
 import typings.three.srcMaterialsMaterialMod.Material
 import typings.three.srcMaterialsMaterialMod.MaterialParameters
 import typings.three.srcMathColorMod.Color
-import typings.three.srcUtilsMod.ColorRepresentation
+import typings.three.srcMathColorMod.ColorRepresentation
+import typings.three.srcTexturesTextureMod.Texture
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,6 +41,11 @@ object srcMaterialsLineBasicMaterialMod {
       * @default 1
       */
     var linewidth: Double = js.native
+    
+    /**
+      * Sets the color of the lines using data from a {@link Texture}.
+      */
+    var map: Texture | Null = js.native
     
     def setValues(parameters: LineBasicMaterialParameters): Unit = js.native
   }

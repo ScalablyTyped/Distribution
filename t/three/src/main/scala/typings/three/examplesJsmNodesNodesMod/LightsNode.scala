@@ -3,6 +3,8 @@ package typings.three.examplesJsmNodesNodesMod
 import typings.three.anon.Instantiable
 import typings.three.anon.InstantiableDefault
 import typings.three.examplesJsmNodesLightingLightsNodeMod.default
+import typings.three.srcCamerasCameraMod.Camera
+import typings.three.srcLightsLightShadowMod.LightShadow
 import typings.three.srcThreeMod.Light
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -20,5 +22,5 @@ object LightsNode {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def setReference[T /* <: Light */](lightClass: Instantiable[T], lightNodeClass: InstantiableDefault[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setReference")(lightClass.asInstanceOf[js.Any], lightNodeClass.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setReference[T /* <: Light[js.UndefOr[LightShadow[Camera]]] */](lightClass: Instantiable[T], lightNodeClass: InstantiableDefault[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setReference")(lightClass.asInstanceOf[js.Any], lightNodeClass.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

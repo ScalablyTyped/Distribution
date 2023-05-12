@@ -47,13 +47,6 @@ object MaterialHelper {
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("BindBonesParameters")(mesh.asInstanceOf[js.Any], effect.asInstanceOf[js.Any], prePassConfiguration.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
-    * Binds the clip plane information from the scene to the effect.
-    * @param effect The effect we are binding the data to
-    * @param scene The scene the clip plane information are extracted from
-    */
-  inline def BindClipPlane(effect: typings.babylonjs.BABYLON.Effect, scene: typings.babylonjs.BABYLON.Scene): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("BindClipPlane")(effect.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
-  /**
     * Binds the fog information from the scene to the effect for the given mesh.
     * @param scene The scene the lights belongs to
     * @param mesh The mesh we are binding the information to render
@@ -333,9 +326,18 @@ object MaterialHelper {
   inline def PrepareDefinesForBones(mesh: typings.babylonjs.BABYLON.AbstractMesh, defines: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PrepareDefinesForBones")(mesh.asInstanceOf[js.Any], defines.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
+    * Helper used to prepare the defines relative to the active camera
+    * @param scene defines the current scene
+    * @param defines specifies the list of active defines
+    * @returns true if the defines have been updated, else false
+    */
+  inline def PrepareDefinesForCamera(scene: typings.babylonjs.BABYLON.Scene, defines: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("PrepareDefinesForCamera")(scene.asInstanceOf[js.Any], defines.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  /**
     * Helper used to prepare the list of defines associated with frame values for shader compilation
     * @param scene defines the current scene
     * @param engine defines the current engine
+    * @param material defines the material we are compiling the shader for
     * @param defines specifies the list of active defines
     * @param useInstances defines if instances have to be turned on
     * @param useClipPlane defines if clip plane have to be turned on
@@ -344,32 +346,36 @@ object MaterialHelper {
   inline def PrepareDefinesForFrameBoundValues(
     scene: typings.babylonjs.BABYLON.Scene,
     engine: typings.babylonjs.BABYLON.Engine,
+    material: typings.babylonjs.BABYLON.Material,
     defines: Any,
     useInstances: Boolean
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PrepareDefinesForFrameBoundValues")(scene.asInstanceOf[js.Any], engine.asInstanceOf[js.Any], defines.asInstanceOf[js.Any], useInstances.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PrepareDefinesForFrameBoundValues")(scene.asInstanceOf[js.Any], engine.asInstanceOf[js.Any], material.asInstanceOf[js.Any], defines.asInstanceOf[js.Any], useInstances.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def PrepareDefinesForFrameBoundValues(
     scene: typings.babylonjs.BABYLON.Scene,
     engine: typings.babylonjs.BABYLON.Engine,
+    material: typings.babylonjs.BABYLON.Material,
     defines: Any,
     useInstances: Boolean,
     useClipPlane: Unit,
     useThinInstances: Boolean
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PrepareDefinesForFrameBoundValues")(scene.asInstanceOf[js.Any], engine.asInstanceOf[js.Any], defines.asInstanceOf[js.Any], useInstances.asInstanceOf[js.Any], useClipPlane.asInstanceOf[js.Any], useThinInstances.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PrepareDefinesForFrameBoundValues")(scene.asInstanceOf[js.Any], engine.asInstanceOf[js.Any], material.asInstanceOf[js.Any], defines.asInstanceOf[js.Any], useInstances.asInstanceOf[js.Any], useClipPlane.asInstanceOf[js.Any], useThinInstances.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def PrepareDefinesForFrameBoundValues(
     scene: typings.babylonjs.BABYLON.Scene,
     engine: typings.babylonjs.BABYLON.Engine,
+    material: typings.babylonjs.BABYLON.Material,
     defines: Any,
     useInstances: Boolean,
     useClipPlane: Nullable[Boolean]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PrepareDefinesForFrameBoundValues")(scene.asInstanceOf[js.Any], engine.asInstanceOf[js.Any], defines.asInstanceOf[js.Any], useInstances.asInstanceOf[js.Any], useClipPlane.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PrepareDefinesForFrameBoundValues")(scene.asInstanceOf[js.Any], engine.asInstanceOf[js.Any], material.asInstanceOf[js.Any], defines.asInstanceOf[js.Any], useInstances.asInstanceOf[js.Any], useClipPlane.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def PrepareDefinesForFrameBoundValues(
     scene: typings.babylonjs.BABYLON.Scene,
     engine: typings.babylonjs.BABYLON.Engine,
+    material: typings.babylonjs.BABYLON.Material,
     defines: Any,
     useInstances: Boolean,
     useClipPlane: Nullable[Boolean],
     useThinInstances: Boolean
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PrepareDefinesForFrameBoundValues")(scene.asInstanceOf[js.Any], engine.asInstanceOf[js.Any], defines.asInstanceOf[js.Any], useInstances.asInstanceOf[js.Any], useClipPlane.asInstanceOf[js.Any], useThinInstances.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PrepareDefinesForFrameBoundValues")(scene.asInstanceOf[js.Any], engine.asInstanceOf[js.Any], material.asInstanceOf[js.Any], defines.asInstanceOf[js.Any], useInstances.asInstanceOf[js.Any], useClipPlane.asInstanceOf[js.Any], useThinInstances.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Prepares the defines related to the light information passed in parameter

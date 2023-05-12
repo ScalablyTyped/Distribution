@@ -32,7 +32,7 @@ trait EbsInstanceBlockDeviceSpecification extends StObject {
   var snapshotId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    *  For GP3 volumes only – The throughput in MiB/s that the volume supports. 
+    *  For GP3 volumes only – The throughput in MiB/s that the volume supports.
     */
   var throughput: js.UndefOr[EbsVolumeThroughput] = js.undefined
   

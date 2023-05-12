@@ -31,6 +31,8 @@ object examplesJsmPostprocessingPassMod {
     
     var enabled: Boolean = js.native
     
+    var isPass: Boolean = js.native
+    
     var needsSwap: Boolean = js.native
     
     def render(

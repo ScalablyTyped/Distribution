@@ -224,12 +224,12 @@ trait AmplifyBackend extends StObject {
   ): Request[GetBackendAPIResponse, AWSError] = js.native
   
   /**
-    * Generates a model schema for existing backend API resource.
+    * Gets a model introspection schema for an existing backend API resource.
     */
   def getBackendAPIModels(): Request[GetBackendAPIModelsResponse, AWSError] = js.native
   def getBackendAPIModels(callback: js.Function2[/* err */ AWSError, /* data */ GetBackendAPIModelsResponse, Unit]): Request[GetBackendAPIModelsResponse, AWSError] = js.native
   /**
-    * Generates a model schema for existing backend API resource.
+    * Gets a model introspection schema for an existing backend API resource.
     */
   def getBackendAPIModels(params: GetBackendAPIModelsRequest): Request[GetBackendAPIModelsResponse, AWSError] = js.native
   def getBackendAPIModels(

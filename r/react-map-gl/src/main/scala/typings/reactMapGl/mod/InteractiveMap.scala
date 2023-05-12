@@ -15,7 +15,7 @@ open class InteractiveMap protected ()
   def this(props: InteractiveMapProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: InteractiveMapProps, context: Any) = this()
   

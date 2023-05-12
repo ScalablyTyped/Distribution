@@ -1,14 +1,13 @@
 package typings.ecmarkdown
 
 import typings.ecmarkdown.anon.Contents
-import typings.ecmarkdown.anon.ContentsLocation
 import typings.ecmarkdown.anon.Location
 import typings.ecmarkdown.anon.Name
 import typings.ecmarkdown.anon.PickOrderedListNodeconten
-import typings.ecmarkdown.anon.PickPipeNodecontentsnamen
 import typings.ecmarkdown.anon.PickUnorderedListNodecont
 import typings.ecmarkdown.distNodeTypesMod.CommentNode
 import typings.ecmarkdown.distNodeTypesMod.Format
+import typings.ecmarkdown.distNodeTypesMod.FormatNode
 import typings.ecmarkdown.distNodeTypesMod.FragmentNode
 import typings.ecmarkdown.distNodeTypesMod.Node
 import typings.ecmarkdown.distNodeTypesMod.OrderedListItemNode
@@ -50,7 +49,7 @@ object distParserMod {
     
     def parseAlgorithm(): Contents = js.native
     
-    def parseFormat(format: Format, opts: ParseFragmentOpts): js.Array[CommentNode | ContentsLocation | PickPipeNodecontentsnamen | TagNode | TextNode] = js.native
+    def parseFormat(format: Format, opts: ParseFragmentOpts): js.Array[TextNode | CommentNode | TagNode | FormatNode] = js.native
     
     def parseFragment(opts: ParseFragmentOpts): js.Array[FragmentNode] = js.native
     def parseFragment(opts: ParseFragmentOpts, closingFormatKind: Format): js.Array[TextNode | CommentNode | TagNode] = js.native

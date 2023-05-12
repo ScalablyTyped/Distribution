@@ -20,6 +20,8 @@ object distTypesNodesTextNodeMod {
     
     var bold: js.UndefOr[Boolean] = js.native
     
+    var break: js.UndefOr[Boolean] = js.native
+    
     var inlineCode: js.UndefOr[Boolean] = js.native
     
     var italic: js.UndefOr[Boolean] = js.native

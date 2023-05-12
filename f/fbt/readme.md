@@ -1,7 +1,7 @@
 
 # Scala.js typings for fbt
 
-Typings are for version 0.16
+Typings are for version 1.0
 
 ## Library description:
 The fbt i18n framework JS runtime.

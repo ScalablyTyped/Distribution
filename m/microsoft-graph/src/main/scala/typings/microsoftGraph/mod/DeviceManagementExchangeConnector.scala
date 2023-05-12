@@ -14,7 +14,10 @@ trait DeviceManagementExchangeConnector
   // An alias assigned to the Exchange server
   var exchangeAlias: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // The type of Exchange Connector Configured. Possible values are: onPremises, hosted, serviceToService, dedicated.
+  /**
+    * The type of Exchange Connector Configured. Possible values are: onPremises, hosted, serviceToService, dedicated,
+    * unknownFutureValue.
+    */
   var exchangeConnectorType: js.UndefOr[DeviceManagementExchangeConnectorType] = js.undefined
   
   // Exchange Organization to the Exchange server
@@ -29,7 +32,7 @@ trait DeviceManagementExchangeConnector
   // The name of the Exchange server.
   var serverName: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // Exchange Connector Status. Possible values are: none, connectionPending, connected, disconnected.
+  // Exchange Connector Status. Possible values are: none, connectionPending, connected, disconnected, unknownFutureValue.
   var status: js.UndefOr[DeviceManagementExchangeConnectorStatus] = js.undefined
   
   // The version of the ExchangeConnectorAgent

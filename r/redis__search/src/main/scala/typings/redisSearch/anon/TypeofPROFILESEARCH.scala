@@ -17,5 +17,5 @@ trait TypeofPROFILESEARCH extends StObject {
   def transformArguments(index: String, query: String): RedisCommandArguments = js.native
   def transformArguments(index: String, query: String, options: ProfileOptions & SearchOptions): RedisCommandArguments = js.native
   
-  def transformReply(reply: ProfileSearchRawReply): ProfileReply = js.native
+  def transformReply(reply: ProfileSearchRawReply, withoutDocuments: Boolean): ProfileReply = js.native
 }

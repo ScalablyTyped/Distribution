@@ -11,11 +11,23 @@ object srcObjectsBoneMod {
   
   @JSImport("three/src/objects/Bone", "Bone")
   @js.native
+  /**
+    * Creates a new {@link Bone}.
+    */
   open class Bone () extends Object3D[Event] {
     
+    /**
+      * Read-only flag to check if a given object is of type {@link Bone}.
+      * @remarks This is a _constant_ value
+      * @defaultValue `true`
+      */
     val isBone: `true` = js.native
     
+    /**
+      * @override
+      * @defaultValue `Bone`
+      */
     @JSName("type")
-    var type_Bone: typings.three.threeStrings.Bone = js.native
+    val type_Bone: String | typings.three.threeStrings.Bone = js.native
   }
 }

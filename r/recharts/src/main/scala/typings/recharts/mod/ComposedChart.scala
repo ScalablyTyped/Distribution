@@ -12,7 +12,7 @@ open class ComposedChart protected ()
   def this(props: ComposedChartProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: ComposedChartProps, context: Any) = this()
 }

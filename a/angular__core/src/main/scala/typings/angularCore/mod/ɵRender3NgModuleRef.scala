@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@angular/core", "\u0275Render3NgModuleRef")
 @js.native
 open class ɵRender3NgModuleRef[T] protected () extends InternalNgModuleRef[T] {
-  def this(ngModuleType: Type[T]) = this()
-  def this(ngModuleType: Type[T], _parent: Injector) = this()
+  def this(ngModuleType: Type[T], _parent: Null, additionalProviders: js.Array[StaticProvider]) = this()
+  def this(ngModuleType: Type[T], _parent: Injector, additionalProviders: js.Array[StaticProvider]) = this()
   
   var _parent: Injector | Null = js.native
   

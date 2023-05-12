@@ -1,7 +1,7 @@
 
 # Scala.js typings for immutable
 
-Typings are for version 4.1.0
+Typings are for version 4.3.0
 
 ## Library description:
 Immutable Data Collections

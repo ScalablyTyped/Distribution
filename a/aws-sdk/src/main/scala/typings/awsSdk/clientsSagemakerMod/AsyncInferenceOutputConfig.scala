@@ -17,14 +17,19 @@ trait AsyncInferenceOutputConfig extends StObject {
   var NotificationConfig: js.UndefOr[AsyncInferenceNotificationConfig] = js.undefined
   
   /**
+    * The Amazon S3 location to upload failure inference responses to.
+    */
+  var S3FailurePath: js.UndefOr[DestinationS3Uri] = js.undefined
+  
+  /**
     * The Amazon S3 location to upload inference responses to.
     */
-  var S3OutputPath: DestinationS3Uri
+  var S3OutputPath: js.UndefOr[DestinationS3Uri] = js.undefined
 }
 object AsyncInferenceOutputConfig {
   
-  inline def apply(S3OutputPath: DestinationS3Uri): AsyncInferenceOutputConfig = {
-    val __obj = js.Dynamic.literal(S3OutputPath = S3OutputPath.asInstanceOf[js.Any])
+  inline def apply(): AsyncInferenceOutputConfig = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AsyncInferenceOutputConfig]
   }
   
@@ -39,6 +44,12 @@ object AsyncInferenceOutputConfig {
     
     inline def setNotificationConfigUndefined: Self = StObject.set(x, "NotificationConfig", js.undefined)
     
+    inline def setS3FailurePath(value: DestinationS3Uri): Self = StObject.set(x, "S3FailurePath", value.asInstanceOf[js.Any])
+    
+    inline def setS3FailurePathUndefined: Self = StObject.set(x, "S3FailurePath", js.undefined)
+    
     inline def setS3OutputPath(value: DestinationS3Uri): Self = StObject.set(x, "S3OutputPath", value.asInstanceOf[js.Any])
+    
+    inline def setS3OutputPathUndefined: Self = StObject.set(x, "S3OutputPath", js.undefined)
   }
 }

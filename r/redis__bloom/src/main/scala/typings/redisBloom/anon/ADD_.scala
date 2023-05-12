@@ -8,6 +8,8 @@ trait ADD_ extends StObject {
   
   var ADD: FIRSTKEYINDEX
   
+  var CARD: TypeofimportedCARD
+  
   var EXISTS: ISREADONLY
   
   var INFO: TransformArguments
@@ -25,6 +27,8 @@ trait ADD_ extends StObject {
   var SCANDUMP: ISREADONLYTransformArguments
   
   var add: FIRSTKEYINDEX
+  
+  var card: TypeofimportedCARD
   
   var exists: ISREADONLY
   
@@ -46,6 +50,7 @@ object ADD_ {
   
   inline def apply(
     ADD: FIRSTKEYINDEX,
+    CARD: TypeofimportedCARD,
     EXISTS: ISREADONLY,
     INFO: TransformArguments,
     INSERT: TransformReply,
@@ -55,6 +60,7 @@ object ADD_ {
     RESERVE: FIRSTKEYINDEXISREADONLY,
     SCANDUMP: ISREADONLYTransformArguments,
     add: FIRSTKEYINDEX,
+    card: TypeofimportedCARD,
     exists: ISREADONLY,
     info: TransformArguments,
     insert: TransformReply,
@@ -64,7 +70,7 @@ object ADD_ {
     reserve: FIRSTKEYINDEXISREADONLY,
     scanDump: ISREADONLYTransformArguments
   ): ADD_ = {
-    val __obj = js.Dynamic.literal(ADD = ADD.asInstanceOf[js.Any], EXISTS = EXISTS.asInstanceOf[js.Any], INFO = INFO.asInstanceOf[js.Any], INSERT = INSERT.asInstanceOf[js.Any], LOADCHUNK = LOADCHUNK.asInstanceOf[js.Any], MADD = MADD.asInstanceOf[js.Any], MEXISTS = MEXISTS.asInstanceOf[js.Any], RESERVE = RESERVE.asInstanceOf[js.Any], SCANDUMP = SCANDUMP.asInstanceOf[js.Any], add = add.asInstanceOf[js.Any], exists = exists.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any], insert = insert.asInstanceOf[js.Any], loadChunk = loadChunk.asInstanceOf[js.Any], mAdd = mAdd.asInstanceOf[js.Any], mExists = mExists.asInstanceOf[js.Any], reserve = reserve.asInstanceOf[js.Any], scanDump = scanDump.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(ADD = ADD.asInstanceOf[js.Any], CARD = CARD.asInstanceOf[js.Any], EXISTS = EXISTS.asInstanceOf[js.Any], INFO = INFO.asInstanceOf[js.Any], INSERT = INSERT.asInstanceOf[js.Any], LOADCHUNK = LOADCHUNK.asInstanceOf[js.Any], MADD = MADD.asInstanceOf[js.Any], MEXISTS = MEXISTS.asInstanceOf[js.Any], RESERVE = RESERVE.asInstanceOf[js.Any], SCANDUMP = SCANDUMP.asInstanceOf[js.Any], add = add.asInstanceOf[js.Any], card = card.asInstanceOf[js.Any], exists = exists.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any], insert = insert.asInstanceOf[js.Any], loadChunk = loadChunk.asInstanceOf[js.Any], mAdd = mAdd.asInstanceOf[js.Any], mExists = mExists.asInstanceOf[js.Any], reserve = reserve.asInstanceOf[js.Any], scanDump = scanDump.asInstanceOf[js.Any])
     __obj.asInstanceOf[ADD_]
   }
   
@@ -72,6 +78,8 @@ object ADD_ {
   implicit open class MutableBuilder[Self <: ADD_] (val x: Self) extends AnyVal {
     
     inline def setADD(value: FIRSTKEYINDEX): Self = StObject.set(x, "ADD", value.asInstanceOf[js.Any])
+    
+    inline def setCARD(value: TypeofimportedCARD): Self = StObject.set(x, "CARD", value.asInstanceOf[js.Any])
     
     inline def setEXISTS(value: ISREADONLY): Self = StObject.set(x, "EXISTS", value.asInstanceOf[js.Any])
     

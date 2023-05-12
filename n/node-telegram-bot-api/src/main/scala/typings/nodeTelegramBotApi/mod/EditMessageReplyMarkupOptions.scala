@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait EditMessageReplyMarkupOptions extends StObject {
   
-  var chat_id: js.UndefOr[Double | String] = js.undefined
+  var chat_id: js.UndefOr[ChatId] = js.undefined
   
   var inline_message_id: js.UndefOr[String] = js.undefined
   
@@ -22,7 +22,7 @@ object EditMessageReplyMarkupOptions {
   @scala.inline
   implicit open class MutableBuilder[Self <: EditMessageReplyMarkupOptions] (val x: Self) extends AnyVal {
     
-    inline def setChat_id(value: Double | String): Self = StObject.set(x, "chat_id", value.asInstanceOf[js.Any])
+    inline def setChat_id(value: ChatId): Self = StObject.set(x, "chat_id", value.asInstanceOf[js.Any])
     
     inline def setChat_idUndefined: Self = StObject.set(x, "chat_id", js.undefined)
     

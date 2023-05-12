@@ -3,7 +3,7 @@ package typings.sinclairTypebox
 import typings.sinclairTypebox.mod.Static
 import typings.sinclairTypebox.mod.TRef
 import typings.sinclairTypebox.mod.TSchema
-import typings.sinclairTypebox.mod.TSelf
+import typings.sinclairTypebox.mod.TThis
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,11 +17,7 @@ object valueCastMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def Cast[T /* <: TSchema */, R /* <: js.Array[TSchema] */](
-      schema: T,
-      references: /* import warning: importer.ImportType#apply c repeated non-array type: R */ js.Array[R],
-      value: Any
-    ): Static[T, js.Array[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("Cast")(schema.asInstanceOf[js.Any], references.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Static[T, js.Array[Any]]]
+    inline def Cast[T /* <: TSchema */](schema: T, references: js.Array[TSchema], value: Any): Static[T, js.Array[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("Cast")(schema.asInstanceOf[js.Any], references.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Static[T, js.Array[Any]]]
     
     inline def Visit(schema: TSchema, references: js.Array[TSchema], value: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("Visit")(schema.asInstanceOf[js.Any], references.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Any]
   }
@@ -44,6 +40,25 @@ object valueCastMod {
     val schema: TSchema = js.native
     
     val value: Any = js.native
+  }
+  
+  @JSImport("@sinclair/typebox/value/cast", "ValueCastDereferenceError")
+  @js.native
+  open class ValueCastDereferenceError protected ()
+    extends StObject
+       with Error {
+    def this(schema: TRef[TSchema]) = this()
+    def this(schema: TThis) = this()
+    
+    /* standard es5 */
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* standard es5 */
+    /* CompleteClass */
+    var name: String = js.native
+    
+    val schema: TRef[TSchema] | TThis = js.native
   }
   
   @JSImport("@sinclair/typebox/value/cast", "ValueCastNeverTypeError")
@@ -88,7 +103,7 @@ object valueCastMod {
     extends StObject
        with Error {
     def this(schema: TRef[TSchema]) = this()
-    def this(schema: TSelf) = this()
+    def this(schema: TThis) = this()
     
     /* standard es5 */
     /* CompleteClass */
@@ -98,7 +113,7 @@ object valueCastMod {
     /* CompleteClass */
     var name: String = js.native
     
-    val schema: TRef[TSchema] | TSelf = js.native
+    val schema: TRef[TSchema] | TThis = js.native
   }
   
   @JSImport("@sinclair/typebox/value/cast", "ValueCastUnknownTypeError")

@@ -98,7 +98,7 @@ trait About extends StObject {
   
   var `aria-atomic`: js.UndefOr[Boolean] = js.undefined
   
-  var `aria-autocomplete`: js.UndefOr[list | none | `inline` | both] = js.undefined
+  var `aria-autocomplete`: js.UndefOr[none | list | `inline` | both] = js.undefined
   
   var `aria-busy`: js.UndefOr[Boolean] = js.undefined
   
@@ -120,7 +120,7 @@ trait About extends StObject {
   
   var `aria-disabled`: js.UndefOr[Boolean] = js.undefined
   
-  var `aria-dropeffect`: js.UndefOr[link | move | none | copy | execute | popup] = js.undefined
+  var `aria-dropeffect`: js.UndefOr[none | link | move | copy | execute | popup] = js.undefined
   
   var `aria-errormessage`: js.UndefOr[String] = js.undefined
   
@@ -130,7 +130,7 @@ trait About extends StObject {
   
   var `aria-grabbed`: js.UndefOr[Boolean] = js.undefined
   
-  var `aria-haspopup`: js.UndefOr[Boolean | dialog | menu | grid | tree | listbox] = js.undefined
+  var `aria-haspopup`: js.UndefOr[Boolean | grid | menu | tree | dialog | listbox] = js.undefined
   
   var `aria-hidden`: js.UndefOr[Boolean] = js.undefined
   
@@ -226,7 +226,7 @@ trait About extends StObject {
   
   var inlist: js.UndefOr[Any] = js.undefined
   
-  var inputMode: js.UndefOr[search | text | none | tel | url | email | numeric | decimal] = js.undefined
+  var inputMode: js.UndefOr[none | text | search | tel | url | email | numeric | decimal] = js.undefined
   
   var is: js.UndefOr[String] = js.undefined
   
@@ -630,7 +630,7 @@ object About {
     
     inline def `setAria-atomicUndefined`: Self = StObject.set(x, "aria-atomic", js.undefined)
     
-    inline def `setAria-autocomplete`(value: list | none | `inline` | both): Self = StObject.set(x, "aria-autocomplete", value.asInstanceOf[js.Any])
+    inline def `setAria-autocomplete`(value: none | list | `inline` | both): Self = StObject.set(x, "aria-autocomplete", value.asInstanceOf[js.Any])
     
     inline def `setAria-autocompleteUndefined`: Self = StObject.set(x, "aria-autocomplete", js.undefined)
     
@@ -674,7 +674,7 @@ object About {
     
     inline def `setAria-disabledUndefined`: Self = StObject.set(x, "aria-disabled", js.undefined)
     
-    inline def `setAria-dropeffect`(value: link | move | none | copy | execute | popup): Self = StObject.set(x, "aria-dropeffect", value.asInstanceOf[js.Any])
+    inline def `setAria-dropeffect`(value: none | link | move | copy | execute | popup): Self = StObject.set(x, "aria-dropeffect", value.asInstanceOf[js.Any])
     
     inline def `setAria-dropeffectUndefined`: Self = StObject.set(x, "aria-dropeffect", js.undefined)
     
@@ -694,7 +694,7 @@ object About {
     
     inline def `setAria-grabbedUndefined`: Self = StObject.set(x, "aria-grabbed", js.undefined)
     
-    inline def `setAria-haspopup`(value: Boolean | dialog | menu | grid | tree | listbox): Self = StObject.set(x, "aria-haspopup", value.asInstanceOf[js.Any])
+    inline def `setAria-haspopup`(value: Boolean | grid | menu | tree | dialog | listbox): Self = StObject.set(x, "aria-haspopup", value.asInstanceOf[js.Any])
     
     inline def `setAria-haspopupUndefined`: Self = StObject.set(x, "aria-haspopup", js.undefined)
     
@@ -880,7 +880,7 @@ object About {
     
     inline def setInlistUndefined: Self = StObject.set(x, "inlist", js.undefined)
     
-    inline def setInputMode(value: search | text | none | tel | url | email | numeric | decimal): Self = StObject.set(x, "inputMode", value.asInstanceOf[js.Any])
+    inline def setInputMode(value: none | text | search | tel | url | email | numeric | decimal): Self = StObject.set(x, "inputMode", value.asInstanceOf[js.Any])
     
     inline def setInputModeUndefined: Self = StObject.set(x, "inputMode", js.undefined)
     

@@ -1,7 +1,7 @@
 
 # Scala.js typings for wordpress__block-editor
 
-Typings are for version 7.0
+Typings are for version 11.5
 
 ## Library description:
 Generic block editor.

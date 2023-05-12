@@ -16,6 +16,16 @@ object string {
   @js.native
   val ^ : js.Any = js.native
   
+  inline def staticRegexReplace(input: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank], pattern: String, rewrite: String): Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("staticRegexReplace")(input.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], rewrite.asInstanceOf[js.Any])).asInstanceOf[Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]]
+  inline def staticRegexReplace(
+    input: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],
+    pattern: String,
+    rewrite: String,
+    replaceGlobal: Boolean
+  ): Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("staticRegexReplace")(input.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], rewrite.asInstanceOf[js.Any], replaceGlobal.asInstanceOf[js.Any])).asInstanceOf[Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]]
+  inline def staticRegexReplace(input: TensorLike, pattern: String, rewrite: String): Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("staticRegexReplace")(input.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], rewrite.asInstanceOf[js.Any])).asInstanceOf[Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]]
+  inline def staticRegexReplace(input: TensorLike, pattern: String, rewrite: String, replaceGlobal: Boolean): Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("staticRegexReplace")(input.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], rewrite.asInstanceOf[js.Any], replaceGlobal.asInstanceOf[js.Any])).asInstanceOf[Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank]]
+  
   inline def stringNGrams(
     data: Tensor1D,
     dataSplits: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank],

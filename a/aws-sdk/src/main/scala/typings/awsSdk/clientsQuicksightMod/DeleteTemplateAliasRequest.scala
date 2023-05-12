@@ -19,11 +19,11 @@ trait DeleteTemplateAliasRequest extends StObject {
   /**
     * The ID for the template that the specified alias is for.
     */
-  var TemplateId: RestrictiveResourceId
+  var TemplateId: ShortRestrictiveResourceId
 }
 object DeleteTemplateAliasRequest {
   
-  inline def apply(AliasName: AliasName, AwsAccountId: AwsAccountId, TemplateId: RestrictiveResourceId): DeleteTemplateAliasRequest = {
+  inline def apply(AliasName: AliasName, AwsAccountId: AwsAccountId, TemplateId: ShortRestrictiveResourceId): DeleteTemplateAliasRequest = {
     val __obj = js.Dynamic.literal(AliasName = AliasName.asInstanceOf[js.Any], AwsAccountId = AwsAccountId.asInstanceOf[js.Any], TemplateId = TemplateId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteTemplateAliasRequest]
   }
@@ -35,6 +35,6 @@ object DeleteTemplateAliasRequest {
     
     inline def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
     
-    inline def setTemplateId(value: RestrictiveResourceId): Self = StObject.set(x, "TemplateId", value.asInstanceOf[js.Any])
+    inline def setTemplateId(value: ShortRestrictiveResourceId): Self = StObject.set(x, "TemplateId", value.asInstanceOf[js.Any])
   }
 }

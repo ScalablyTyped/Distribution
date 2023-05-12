@@ -1,11 +1,12 @@
 package typings.angularCommon.mod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.angularCommon.angularCommonBooleans.`true`
-import typings.angularCommon.angularCommonStrings.`img[ngSrc]Commaimg[rawSrc]`
+import typings.angularCommon.angularCommonStrings.`img[ngSrc]`
 import typings.angularCommon.angularCommonStrings.`lazy`
 import typings.angularCommon.angularCommonStrings.auto
 import typings.angularCommon.angularCommonStrings.eager
-import typings.angularCommon.anon.Height
+import typings.angularCommon.anon.DisableOptimizedSrcset
 import typings.angularCore.mod.OnChanges
 import typings.angularCore.mod.OnDestroy
 import typings.angularCore.mod.OnInit
@@ -24,6 +25,10 @@ open class NgOptimizedImage ()
      with OnChanges
      with OnDestroy {
   
+  /* private */ var _disableOptimizedSrcset: Any = js.native
+  
+  /* private */ var _fill: Any = js.native
+  
   /* private */ var _height: Any = js.native
   
   /* private */ var _priority: Any = js.native
@@ -38,9 +43,34 @@ open class NgOptimizedImage ()
   
   /* private */ var _width: Any = js.native
   
+  /* private */ var callImageLoader: Any = js.native
+  
+  /* private */ var config: Any = js.native
+  
+  def disableOptimizedSrcset: Boolean = js.native
+  /**
+    * Disables automatic srcset generation for this image.
+    */
+  def disableOptimizedSrcset_=(value: js.UndefOr[String | Boolean]): Unit = js.native
+  
+  def fill: Boolean = js.native
+  /**
+    * Sets the image to "fill mode", which eliminates the height/width requirement and adds
+    * styles such that the image fills its containing element.
+    *
+    * @developerPreview
+    */
+  def fill_=(value: js.UndefOr[String | Boolean]): Unit = js.native
+  
+  /* private */ var getAutomaticSrcset: Any = js.native
+  
   /* private */ var getFetchPriority: Any = js.native
   
+  /* private */ var getFixedSrcset: Any = js.native
+  
   /* private */ var getLoadingBehavior: Any = js.native
+  
+  /* private */ var getResponsiveSrcset: Any = js.native
   
   /* private */ var getRewrittenSrc: Any = js.native
   
@@ -48,7 +78,9 @@ open class NgOptimizedImage ()
   
   def height: js.UndefOr[Double] = js.native
   /**
-    * The intrinsic height of the image in pixels.
+    * For responsive images: the intrinsic height of the image in pixels.
+    * For fixed size images: the desired rendered height of the image in pixels.* The intrinsic
+    * height of the image in pixels.
     */
   def height_=(value: js.UndefOr[String | Double]): Unit = js.native
   
@@ -58,7 +90,14 @@ open class NgOptimizedImage ()
   
   /* private */ var injector: Any = js.native
   
+  /* private */ val isServer: Any = js.native
+  
   /* private */ var lcpObserver: Any = js.native
+  
+  /**
+    * Data to pass through to custom loaders.
+    */
+  var loaderParams: js.UndefOr[StringDictionary[Any]] = js.native
   
   /**
     * The desired loading behavior (lazy, eager, or auto).
@@ -115,23 +154,13 @@ open class NgOptimizedImage ()
     */
   var ngSrcset: String = js.native
   
+  /* private */ val preloadLinkChecker: Any = js.native
+  
   def priority: Boolean = js.native
   /**
     * Indicates whether this image should have a high priority.
     */
   def priority_=(value: js.UndefOr[String | Boolean]): Unit = js.native
-  
-  /**
-    * Previously, the `rawSrc` attribute was used to activate the directive.
-    * The attribute was renamed to `ngSrc` and this input just produces an error,
-    * suggesting to switch to `ngSrc` instead.
-    *
-    * This error should be removed in v15.
-    *
-    * @nodoc
-    * @deprecated Use `ngSrc` instead.
-    */
-  def rawSrc_=(value: String): Unit = js.native
   
   /* private */ var renderer: Any = js.native
   
@@ -139,9 +168,18 @@ open class NgOptimizedImage ()
   
   /* private */ var setHostAttributes: Any = js.native
   
+  /* private */ var shouldGenerateAutomaticSrcset: Any = js.native
+  
+  /**
+    * The base `sizes` attribute passed through to the `<img>` element.
+    * Providing sizes causes the image to create an automatic responsive srcset.
+    */
+  var sizes: js.UndefOr[String] = js.native
+  
   def width: js.UndefOr[Double] = js.native
   /**
-    * The intrinsic width of the image in pixels.
+    * For responsive images: the intrinsic width of the image in pixels.
+    * For fixed size images: the desired rendered width of the image in pixels.
     */
   def width_=(value: js.UndefOr[String | Double]): Unit = js.native
 }
@@ -156,24 +194,26 @@ object NgOptimizedImage {
   @js.native
   def ɵdir: ɵɵDirectiveDeclaration[
     NgOptimizedImage, 
-    `img[ngSrc]Commaimg[rawSrc]`, 
+    `img[ngSrc]`, 
     scala.Nothing, 
-    Height, 
+    DisableOptimizedSrcset, 
     js.Object, 
     scala.Nothing, 
     scala.Nothing, 
-    `true`
+    `true`, 
+    scala.Nothing
   ] = js.native
   inline def ɵdir_=(
     x: ɵɵDirectiveDeclaration[
       NgOptimizedImage, 
-      `img[ngSrc]Commaimg[rawSrc]`, 
+      `img[ngSrc]`, 
       scala.Nothing, 
-      Height, 
+      DisableOptimizedSrcset, 
       js.Object, 
       scala.Nothing, 
       scala.Nothing, 
-      `true`
+      `true`, 
+      scala.Nothing
     ]
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275dir")(x.asInstanceOf[js.Any])
   

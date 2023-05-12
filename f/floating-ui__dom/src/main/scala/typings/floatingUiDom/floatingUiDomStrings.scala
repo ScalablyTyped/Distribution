@@ -15,6 +15,10 @@ object floatingUiDomStrings {
   inline def clippingAncestors: clippingAncestors = "clippingAncestors".asInstanceOf[clippingAncestors]
   
   @js.native
+  sealed trait end extends StObject
+  inline def end: end = "end".asInstanceOf[end]
+  
+  @js.native
   sealed trait escaped extends StObject
   inline def escaped: escaped = "escaped".asInstanceOf[escaped]
   
@@ -23,6 +27,14 @@ object floatingUiDomStrings {
   inline def initialPlacement: initialPlacement = "initialPlacement".asInstanceOf[initialPlacement]
   
   @js.native
+  sealed trait none extends StObject
+  inline def none: none = "none".asInstanceOf[none]
+  
+  @js.native
   sealed trait referenceHidden extends StObject
   inline def referenceHidden: referenceHidden = "referenceHidden".asInstanceOf[referenceHidden]
+  
+  @js.native
+  sealed trait start extends StObject
+  inline def start: start = "start".asInstanceOf[start]
 }

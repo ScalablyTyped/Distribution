@@ -19,7 +19,7 @@ trait OptionsDebug extends StObject {
   var debugInitialization: js.UndefOr[Boolean] = js.undefined
   
   /** Disable component function warnings */
-  var debugInvalidComponentFunc: js.UndefOr[Boolean] = js.undefined
+  var debugInvalidComponentFuncs: js.UndefOr[Boolean] = js.undefined
   
   /** Enabled by default this will provide a console warning if you are trying to set an option on the table that does not exist. With the new optional modular structure this is particularly valuable as it will prompt you if you are trying to use an option for a module that has not been installed */
   var debugInvalidOptions: js.UndefOr[Boolean] = js.undefined
@@ -52,9 +52,9 @@ object OptionsDebug {
     
     inline def setDebugInitializationUndefined: Self = StObject.set(x, "debugInitialization", js.undefined)
     
-    inline def setDebugInvalidComponentFunc(value: Boolean): Self = StObject.set(x, "debugInvalidComponentFunc", value.asInstanceOf[js.Any])
+    inline def setDebugInvalidComponentFuncs(value: Boolean): Self = StObject.set(x, "debugInvalidComponentFuncs", value.asInstanceOf[js.Any])
     
-    inline def setDebugInvalidComponentFuncUndefined: Self = StObject.set(x, "debugInvalidComponentFunc", js.undefined)
+    inline def setDebugInvalidComponentFuncsUndefined: Self = StObject.set(x, "debugInvalidComponentFuncs", js.undefined)
     
     inline def setDebugInvalidOptions(value: Boolean): Self = StObject.set(x, "debugInvalidOptions", value.asInstanceOf[js.Any])
     

@@ -1,7 +1,7 @@
 package typings.chartJs.anon
 
-import typings.chartJs.mod.FillerControllerDatasetOptions
-import typings.chartJs.mod.RadarControllerDatasetOptions
+import typings.chartJs.distTypesIndexMod.FillerControllerDatasetOptions
+import typings.chartJs.distTypesIndexMod.RadarControllerDatasetOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

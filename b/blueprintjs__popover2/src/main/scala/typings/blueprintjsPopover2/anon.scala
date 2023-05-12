@@ -59,8 +59,11 @@ import typings.blueprintjsPopover2.blueprintjsPopover2Strings.tree
 import typings.blueprintjsPopover2.blueprintjsPopover2Strings.url
 import typings.blueprintjsPopover2.blueprintjsPopover2Strings.vertical
 import typings.blueprintjsPopover2.blueprintjsPopover2Strings.yes
+import typings.blueprintjsPopover2.libEsmContextMenu2SharedMod.Offset
 import typings.blueprintjsPopover2.libEsmPopover2Mod.Popover2InteractionKind
 import typings.blueprintjsPopover2.libEsmPopover2SharedPropsMod.DefaultPopover2TargetHTMLProps
+import typings.blueprintjsPopover2.libEsmPopover2SharedPropsMod.Popover2ClickTargetHandlers
+import typings.blueprintjsPopover2.libEsmPopover2SharedPropsMod.Popover2HoverTargetHandlers
 import typings.blueprintjsPopover2.libEsmPopover2SharedPropsMod.Popover2TargetProps
 import typings.blueprintjsPopover2.libEsmPopover2SharedPropsMod.PopperCustomModifer
 import typings.blueprintjsPopover2.libEsmPopover2SharedPropsMod.PopperModifierOverrides
@@ -145,88 +148,23 @@ object anon {
     }
   }
   
-  /* Inlined @blueprintjs/core.@blueprintjs/core.IOverlayLifecycleProps & std.Pick<@blueprintjs/popover2.@blueprintjs/popover2/lib/esm/popover2.Popover2Props<@blueprintjs/popover2.@blueprintjs/popover2/lib/esm/popover2SharedProps.DefaultPopover2TargetHTMLProps>, 'popoverClassName' | 'transitionDuration' | 'popoverRef' | 'rootBoundary'> */
-  trait IOverlayLifecyclePropsPic extends StObject {
+  trait Children extends StObject {
     
-    /**
-      * Lifecycle method invoked just after the CSS _close_ transition ends but
-      * before the child has been removed from the DOM. Receives the DOM element
-      * of the child being closed.
-      */
-    var onClosed: js.UndefOr[js.Function1[/* node */ HTMLElement, Unit]] = js.undefined
-    
-    /**
-      * Lifecycle method invoked just before the CSS _close_ transition begins on
-      * a child. Receives the DOM element of the child being closed.
-      */
-    var onClosing: js.UndefOr[js.Function1[/* node */ HTMLElement, Unit]] = js.undefined
-    
-    /**
-      * Lifecycle method invoked just after the CSS _open_ transition ends.
-      * Receives the DOM element of the child being opened.
-      */
-    var onOpened: js.UndefOr[js.Function1[/* node */ HTMLElement, Unit]] = js.undefined
-    
-    /**
-      * Lifecycle method invoked just after mounting the child in the DOM but
-      * just before the CSS _open_ transition begins. Receives the DOM element of
-      * the child being opened.
-      */
-    var onOpening: js.UndefOr[js.Function1[/* node */ HTMLElement, Unit]] = js.undefined
-    
-    var popoverClassName: js.UndefOr[String] = js.undefined
-    
-    var popoverRef: js.UndefOr[Ref[HTMLElement]] = js.undefined
-    
-    var rootBoundary: js.UndefOr[RootBoundary] = js.undefined
-    
-    var transitionDuration: js.UndefOr[Double] = js.undefined
+    var children: js.UndefOr[ReactNode] = js.undefined
   }
-  object IOverlayLifecyclePropsPic {
+  object Children {
     
-    inline def apply(): IOverlayLifecyclePropsPic = {
+    inline def apply(): Children = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[IOverlayLifecyclePropsPic]
+      __obj.asInstanceOf[Children]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: IOverlayLifecyclePropsPic] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: Children] (val x: Self) extends AnyVal {
       
-      inline def setOnClosed(value: /* node */ HTMLElement => Unit): Self = StObject.set(x, "onClosed", js.Any.fromFunction1(value))
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      inline def setOnClosedUndefined: Self = StObject.set(x, "onClosed", js.undefined)
-      
-      inline def setOnClosing(value: /* node */ HTMLElement => Unit): Self = StObject.set(x, "onClosing", js.Any.fromFunction1(value))
-      
-      inline def setOnClosingUndefined: Self = StObject.set(x, "onClosing", js.undefined)
-      
-      inline def setOnOpened(value: /* node */ HTMLElement => Unit): Self = StObject.set(x, "onOpened", js.Any.fromFunction1(value))
-      
-      inline def setOnOpenedUndefined: Self = StObject.set(x, "onOpened", js.undefined)
-      
-      inline def setOnOpening(value: /* node */ HTMLElement => Unit): Self = StObject.set(x, "onOpening", js.Any.fromFunction1(value))
-      
-      inline def setOnOpeningUndefined: Self = StObject.set(x, "onOpening", js.undefined)
-      
-      inline def setPopoverClassName(value: String): Self = StObject.set(x, "popoverClassName", value.asInstanceOf[js.Any])
-      
-      inline def setPopoverClassNameUndefined: Self = StObject.set(x, "popoverClassName", js.undefined)
-      
-      inline def setPopoverRef(value: Ref[HTMLElement]): Self = StObject.set(x, "popoverRef", value.asInstanceOf[js.Any])
-      
-      inline def setPopoverRefFunction1(value: /* instance */ HTMLElement | Null => Unit): Self = StObject.set(x, "popoverRef", js.Any.fromFunction1(value))
-      
-      inline def setPopoverRefNull: Self = StObject.set(x, "popoverRef", null)
-      
-      inline def setPopoverRefUndefined: Self = StObject.set(x, "popoverRef", js.undefined)
-      
-      inline def setRootBoundary(value: RootBoundary): Self = StObject.set(x, "rootBoundary", value.asInstanceOf[js.Any])
-      
-      inline def setRootBoundaryUndefined: Self = StObject.set(x, "rootBoundary", js.undefined)
-      
-      inline def setTransitionDuration(value: Double): Self = StObject.set(x, "transitionDuration", value.asInstanceOf[js.Any])
-      
-      inline def setTransitionDurationUndefined: Self = StObject.set(x, "transitionDuration", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     }
   }
   
@@ -249,6 +187,101 @@ object anon {
       inline def setLeft(value: String): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
       inline def setTop(value: String): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  /* Inlined std.Omit<@blueprintjs/popover2.@blueprintjs/popover2/lib/esm/contextMenu2Popover.ContextMenu2PopoverProps, 'isOpen'> */
+  trait OmitContextMenu2PopoverPr extends StObject {
+    
+    var content: Element
+    
+    var isDarkTheme: js.UndefOr[Boolean] = js.undefined
+    
+    var onClose: js.UndefOr[js.Function0[Unit]] = js.undefined
+    
+    var onClosed: js.UndefOr[js.Function1[/* node */ HTMLElement, Unit]] = js.undefined
+    
+    var onClosing: js.UndefOr[js.Function1[/* node */ HTMLElement, Unit]] = js.undefined
+    
+    var onOpened: js.UndefOr[js.Function1[/* node */ HTMLElement, Unit]] = js.undefined
+    
+    var onOpening: js.UndefOr[js.Function1[/* node */ HTMLElement, Unit]] = js.undefined
+    
+    var placement: js.UndefOr[Placement] = js.undefined
+    
+    var popoverClassName: js.UndefOr[String] = js.undefined
+    
+    var popoverRef: js.UndefOr[Ref[HTMLElement]] = js.undefined
+    
+    var rootBoundary: js.UndefOr[RootBoundary] = js.undefined
+    
+    var targetOffset: js.UndefOr[Offset] = js.undefined
+    
+    var transitionDuration: js.UndefOr[Double] = js.undefined
+  }
+  object OmitContextMenu2PopoverPr {
+    
+    inline def apply(content: Element): OmitContextMenu2PopoverPr = {
+      val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
+      __obj.asInstanceOf[OmitContextMenu2PopoverPr]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OmitContextMenu2PopoverPr] (val x: Self) extends AnyVal {
+      
+      inline def setContent(value: Element): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
+      inline def setIsDarkTheme(value: Boolean): Self = StObject.set(x, "isDarkTheme", value.asInstanceOf[js.Any])
+      
+      inline def setIsDarkThemeUndefined: Self = StObject.set(x, "isDarkTheme", js.undefined)
+      
+      inline def setOnClose(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
+      
+      inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
+      
+      inline def setOnClosed(value: /* node */ HTMLElement => Unit): Self = StObject.set(x, "onClosed", js.Any.fromFunction1(value))
+      
+      inline def setOnClosedUndefined: Self = StObject.set(x, "onClosed", js.undefined)
+      
+      inline def setOnClosing(value: /* node */ HTMLElement => Unit): Self = StObject.set(x, "onClosing", js.Any.fromFunction1(value))
+      
+      inline def setOnClosingUndefined: Self = StObject.set(x, "onClosing", js.undefined)
+      
+      inline def setOnOpened(value: /* node */ HTMLElement => Unit): Self = StObject.set(x, "onOpened", js.Any.fromFunction1(value))
+      
+      inline def setOnOpenedUndefined: Self = StObject.set(x, "onOpened", js.undefined)
+      
+      inline def setOnOpening(value: /* node */ HTMLElement => Unit): Self = StObject.set(x, "onOpening", js.Any.fromFunction1(value))
+      
+      inline def setOnOpeningUndefined: Self = StObject.set(x, "onOpening", js.undefined)
+      
+      inline def setPlacement(value: Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+      
+      inline def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
+      
+      inline def setPopoverClassName(value: String): Self = StObject.set(x, "popoverClassName", value.asInstanceOf[js.Any])
+      
+      inline def setPopoverClassNameUndefined: Self = StObject.set(x, "popoverClassName", js.undefined)
+      
+      inline def setPopoverRef(value: Ref[HTMLElement]): Self = StObject.set(x, "popoverRef", value.asInstanceOf[js.Any])
+      
+      inline def setPopoverRefFunction1(value: /* instance */ HTMLElement | Null => Unit): Self = StObject.set(x, "popoverRef", js.Any.fromFunction1(value))
+      
+      inline def setPopoverRefNull: Self = StObject.set(x, "popoverRef", null)
+      
+      inline def setPopoverRefUndefined: Self = StObject.set(x, "popoverRef", js.undefined)
+      
+      inline def setRootBoundary(value: RootBoundary): Self = StObject.set(x, "rootBoundary", value.asInstanceOf[js.Any])
+      
+      inline def setRootBoundaryUndefined: Self = StObject.set(x, "rootBoundary", js.undefined)
+      
+      inline def setTargetOffset(value: Offset): Self = StObject.set(x, "targetOffset", value.asInstanceOf[js.Any])
+      
+      inline def setTargetOffsetUndefined: Self = StObject.set(x, "targetOffset", js.undefined)
+      
+      inline def setTransitionDuration(value: Double): Self = StObject.set(x, "transitionDuration", value.asInstanceOf[js.Any])
+      
+      inline def setTransitionDurationUndefined: Self = StObject.set(x, "transitionDuration", js.undefined)
     }
   }
   
@@ -426,6 +459,8 @@ object anon {
     
     var autoCorrect: js.UndefOr[String] = js.undefined
     
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
+    
     var autoSave: js.UndefOr[String] = js.undefined
     
     var children: js.UndefOr[ReactNode] = js.undefined
@@ -433,6 +468,8 @@ object anon {
     var className: js.UndefOr[String] = js.undefined
     
     var color: js.UndefOr[String] = js.undefined
+    
+    var content: js.UndefOr[String] = js.undefined
     
     var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
@@ -644,9 +681,13 @@ object anon {
     
     var radioGroup: js.UndefOr[String] = js.undefined
     
+    var rel: js.UndefOr[String] = js.undefined
+    
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
+    
+    var rev: js.UndefOr[String] = js.undefined
     
     var role: js.UndefOr[AriaRole] = js.undefined
     
@@ -896,6 +937,10 @@ object anon {
       
       inline def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
       
+      inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+      
+      inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+      
       inline def setAutoSave(value: String): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
       
       inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
@@ -912,9 +957,13 @@ object anon {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
       inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
       inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
@@ -1334,6 +1383,10 @@ object anon {
       
       inline def setRadioGroupUndefined: Self = StObject.set(x, "radioGroup", js.undefined)
       
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      
+      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+      
       inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
       inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
@@ -1341,6 +1394,10 @@ object anon {
       inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+      
+      inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+      
+      inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
       
       inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
@@ -1422,7 +1479,7 @@ object anon {
     var style: js.UndefOr[CSSProperties] = js.undefined
     
     var tagName: js.UndefOr[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.blueprintjsPopover2.blueprintjsPopover2Strings.a, typings.blueprintjsPopover2.blueprintjsPopover2Strings.abbr, typings.blueprintjsPopover2.blueprintjsPopover2Strings.address */ Any
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177, starting with typings.blueprintjsPopover2.blueprintjsPopover2Strings.a, typings.blueprintjsPopover2.blueprintjsPopover2Strings.abbr, typings.blueprintjsPopover2.blueprintjsPopover2Strings.address */ Any
       ] = js.undefined
   }
   object PartialOmitOverflowListPr {
@@ -1464,7 +1521,7 @@ object anon {
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
       inline def setTagName(
-        value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.blueprintjsPopover2.blueprintjsPopover2Strings.a, typings.blueprintjsPopover2.blueprintjsPopover2Strings.abbr, typings.blueprintjsPopover2.blueprintjsPopover2Strings.address */ Any
+        value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177, starting with typings.blueprintjsPopover2.blueprintjsPopover2Strings.a, typings.blueprintjsPopover2.blueprintjsPopover2Strings.abbr, typings.blueprintjsPopover2.blueprintjsPopover2Strings.address */ Any
       ): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
       
       inline def setTagNameUndefined: Self = StObject.set(x, "tagName", js.undefined)
@@ -1551,6 +1608,8 @@ object anon {
     var rootBoundary: js.UndefOr[RootBoundary] = js.undefined
     
     var shouldReturnFocusOnClose: js.UndefOr[Boolean] = js.undefined
+    
+    var targetProps: js.UndefOr[DefaultPopover2TargetHTMLProps] = js.undefined
     
     var transitionDuration: js.UndefOr[Double] = js.undefined
     
@@ -1720,6 +1779,10 @@ object anon {
       
       inline def setShouldReturnFocusOnCloseUndefined: Self = StObject.set(x, "shouldReturnFocusOnClose", js.undefined)
       
+      inline def setTargetProps(value: DefaultPopover2TargetHTMLProps): Self = StObject.set(x, "targetProps", value.asInstanceOf[js.Any])
+      
+      inline def setTargetPropsUndefined: Self = StObject.set(x, "targetProps", js.undefined)
+      
       inline def setTransitionDuration(value: Double): Self = StObject.set(x, "transitionDuration", value.asInstanceOf[js.Any])
       
       inline def setTransitionDurationUndefined: Self = StObject.set(x, "transitionDuration", js.undefined)
@@ -1812,15 +1875,20 @@ object anon {
     var positioningStrategy: js.UndefOr[PositioningStrategy] = js.undefined
     
     var renderTarget: js.UndefOr[
-        js.Function1[/* props */ Popover2TargetProps & DefaultPopover2TargetHTMLProps, Element]
+        js.Function1[
+          /* props */ Popover2TargetProps & Popover2HoverTargetHandlers[DefaultPopover2TargetHTMLProps] & Popover2ClickTargetHandlers[DefaultPopover2TargetHTMLProps], 
+          Element
+        ]
       ] = js.undefined
     
     var rootBoundary: js.UndefOr[RootBoundary] = js.undefined
     
     var shouldReturnFocusOnClose: js.UndefOr[Boolean] = js.undefined
     
+    var targetProps: js.UndefOr[DefaultPopover2TargetHTMLProps] = js.undefined
+    
     var targetTagName: js.UndefOr[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.blueprintjsPopover2.blueprintjsPopover2Strings.a, typings.blueprintjsPopover2.blueprintjsPopover2Strings.abbr, typings.blueprintjsPopover2.blueprintjsPopover2Strings.address */ Any
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177, starting with typings.blueprintjsPopover2.blueprintjsPopover2Strings.a, typings.blueprintjsPopover2.blueprintjsPopover2Strings.abbr, typings.blueprintjsPopover2.blueprintjsPopover2Strings.address */ Any
       ] = js.undefined
     
     var transitionDuration: js.UndefOr[Double] = js.undefined
@@ -1991,7 +2059,9 @@ object anon {
       
       inline def setPositioningStrategyUndefined: Self = StObject.set(x, "positioningStrategy", js.undefined)
       
-      inline def setRenderTarget(value: /* props */ Popover2TargetProps & DefaultPopover2TargetHTMLProps => Element): Self = StObject.set(x, "renderTarget", js.Any.fromFunction1(value))
+      inline def setRenderTarget(
+        value: /* props */ Popover2TargetProps & Popover2HoverTargetHandlers[DefaultPopover2TargetHTMLProps] & Popover2ClickTargetHandlers[DefaultPopover2TargetHTMLProps] => Element
+      ): Self = StObject.set(x, "renderTarget", js.Any.fromFunction1(value))
       
       inline def setRenderTargetUndefined: Self = StObject.set(x, "renderTarget", js.undefined)
       
@@ -2003,8 +2073,12 @@ object anon {
       
       inline def setShouldReturnFocusOnCloseUndefined: Self = StObject.set(x, "shouldReturnFocusOnClose", js.undefined)
       
+      inline def setTargetProps(value: DefaultPopover2TargetHTMLProps): Self = StObject.set(x, "targetProps", value.asInstanceOf[js.Any])
+      
+      inline def setTargetPropsUndefined: Self = StObject.set(x, "targetProps", js.undefined)
+      
       inline def setTargetTagName(
-        value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.blueprintjsPopover2.blueprintjsPopover2Strings.a, typings.blueprintjsPopover2.blueprintjsPopover2Strings.abbr, typings.blueprintjsPopover2.blueprintjsPopover2Strings.address */ Any
+        value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177, starting with typings.blueprintjsPopover2.blueprintjsPopover2Strings.a, typings.blueprintjsPopover2.blueprintjsPopover2Strings.abbr, typings.blueprintjsPopover2.blueprintjsPopover2Strings.address */ Any
       ): Self = StObject.set(x, "targetTagName", value.asInstanceOf[js.Any])
       
       inline def setTargetTagNameUndefined: Self = StObject.set(x, "targetTagName", js.undefined)
@@ -2117,6 +2191,8 @@ object anon {
     
     var className: js.UndefOr[String] = js.undefined
     
+    var compact: js.UndefOr[Boolean] = js.undefined
+    
     var content: js.UndefOr[Element | String] = js.undefined
     
     var defaultIsOpen: js.UndefOr[Boolean] = js.undefined
@@ -2182,13 +2258,18 @@ object anon {
     var position: js.UndefOr[PopoverPosition] = js.undefined
     
     var renderTarget: js.UndefOr[
-        js.Function1[/* props */ Popover2TargetProps & DefaultPopover2TargetHTMLProps, Element]
+        js.Function1[
+          /* props */ Popover2TargetProps & Popover2HoverTargetHandlers[DefaultPopover2TargetHTMLProps] & Popover2ClickTargetHandlers[DefaultPopover2TargetHTMLProps], 
+          Element
+        ]
       ] = js.undefined
     
     var rootBoundary: js.UndefOr[RootBoundary] = js.undefined
     
+    var targetProps: js.UndefOr[DefaultPopover2TargetHTMLProps] = js.undefined
+    
     var targetTagName: js.UndefOr[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.blueprintjsPopover2.blueprintjsPopover2Strings.a, typings.blueprintjsPopover2.blueprintjsPopover2Strings.abbr, typings.blueprintjsPopover2.blueprintjsPopover2Strings.address */ Any
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177, starting with typings.blueprintjsPopover2.blueprintjsPopover2Strings.a, typings.blueprintjsPopover2.blueprintjsPopover2Strings.abbr, typings.blueprintjsPopover2.blueprintjsPopover2Strings.address */ Any
       ] = js.undefined
     
     var transitionDuration: js.UndefOr[Double] = js.undefined
@@ -2230,6 +2311,10 @@ object anon {
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      
+      inline def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
+      
+      inline def setCompactUndefined: Self = StObject.set(x, "compact", js.undefined)
       
       inline def setContent(value: Element | String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -2355,7 +2440,9 @@ object anon {
       
       inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
       
-      inline def setRenderTarget(value: /* props */ Popover2TargetProps & DefaultPopover2TargetHTMLProps => Element): Self = StObject.set(x, "renderTarget", js.Any.fromFunction1(value))
+      inline def setRenderTarget(
+        value: /* props */ Popover2TargetProps & Popover2HoverTargetHandlers[DefaultPopover2TargetHTMLProps] & Popover2ClickTargetHandlers[DefaultPopover2TargetHTMLProps] => Element
+      ): Self = StObject.set(x, "renderTarget", js.Any.fromFunction1(value))
       
       inline def setRenderTargetUndefined: Self = StObject.set(x, "renderTarget", js.undefined)
       
@@ -2363,598 +2450,12 @@ object anon {
       
       inline def setRootBoundaryUndefined: Self = StObject.set(x, "rootBoundary", js.undefined)
       
-      inline def setTargetTagName(
-        value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.blueprintjsPopover2.blueprintjsPopover2Strings.a, typings.blueprintjsPopover2.blueprintjsPopover2Strings.abbr, typings.blueprintjsPopover2.blueprintjsPopover2Strings.address */ Any
-      ): Self = StObject.set(x, "targetTagName", value.asInstanceOf[js.Any])
+      inline def setTargetProps(value: DefaultPopover2TargetHTMLProps): Self = StObject.set(x, "targetProps", value.asInstanceOf[js.Any])
       
-      inline def setTargetTagNameUndefined: Self = StObject.set(x, "targetTagName", js.undefined)
-      
-      inline def setTransitionDuration(value: Double): Self = StObject.set(x, "transitionDuration", value.asInstanceOf[js.Any])
-      
-      inline def setTransitionDurationUndefined: Self = StObject.set(x, "transitionDuration", js.undefined)
-      
-      inline def setUsePortal(value: Boolean): Self = StObject.set(x, "usePortal", value.asInstanceOf[js.Any])
-      
-      inline def setUsePortalUndefined: Self = StObject.set(x, "usePortal", js.undefined)
-    }
-  }
-  
-  /* Inlined @blueprintjs/popover2.@blueprintjs/popover2/lib/esm/popover2.Popover2Props<@blueprintjs/popover2.@blueprintjs/popover2/lib/esm/popover2SharedProps.DefaultPopover2TargetHTMLProps> & {  children :react.react.ReactNode | undefined} */
-  trait Popover2PropsDefaultPopov extends StObject {
-    
-    /**
-      * Whether the popover/tooltip should acquire application focus when it first opens.
-      *
-      * @default true for click interactions, false for hover interactions
-      */
-    var autoFocus: js.UndefOr[Boolean] = js.undefined
-    
-    /** HTML props for the backdrop element. Can be combined with `backdropClassName`. */
-    var backdropProps: js.UndefOr[HTMLProps[HTMLDivElement]] = js.undefined
-    
-    /**
-      * A boundary element supplied to the "flip" and "preventOverflow" modifiers.
-      * This is a shorthand for overriding Popper.js modifier options with the `modifiers` prop.
-      *
-      * @see https://popper.js.org/docs/v2/utils/detect-overflow/#boundary
-      */
-    var boundary: js.UndefOr[typings.popperjsCore.libEnumsMod.Boundary] = js.undefined
-    
-    /**
-      * Whether pressing the `esc` key should invoke `onClose`.
-      *
-      * @default true
-      */
-    var canEscapeKeyClose: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * When enabled, clicks inside a `Classes.POPOVER_DISMISS` element
-      * will only close the current popover and not outer popovers.
-      * When disabled, the current popover and any ancestor popovers will be closed.
-      *
-      * @see http://blueprintjs.com/docs/#core/components/popover.closing-on-click
-      * @default false
-      */
-    var captureDismiss: js.UndefOr[Boolean] = js.undefined
-    
-    /** Interactive element which will trigger the popover. */
-    var children: js.UndefOr[ReactNode] = js.undefined
-    
-    /** A space-delimited list of class names to pass along to a child element. */
-    var className: js.UndefOr[String] = js.undefined
-    
-    /**
-      * The content displayed inside the popover.
-      */
-    var content: js.UndefOr[String | Element] = js.undefined
-    
-    /**
-      * Initial opened state when uncontrolled.
-      *
-      * @default false
-      */
-    var defaultIsOpen: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * Prevents the popover from appearing when `true`.
-      *
-      * @default false
-      */
-    var disabled: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * Whether the overlay should prevent focus from leaving itself. That is, if the user attempts
-      * to focus an element outside the overlay and this prop is enabled, then the overlay will
-      * immediately bring focus back to itself. If you are nesting overlay components, either disable
-      * this prop on the "outermost" overlays or mark the nested ones `usePortal={false}`.
-      *
-      * @default true
-      */
-    var enforceFocus: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * Whether the wrapper and target should take up the full width of their container.
-      * Note that supplying `true` for this prop will force  `targetTagName="div"`.
-      */
-    var fill: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * Enables an invisible overlay beneath the popover that captures clicks and
-      * prevents interaction with the rest of the document until the popover is
-      * closed. This prop is only available when `interactionKind` is
-      * `PopoverInteractionKind.CLICK`. When popovers with backdrop are opened,
-      * they become focused.
-      *
-      * @default false
-      */
-    var hasBackdrop: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * The amount of time in milliseconds the popover should remain open after
-      * the user hovers off the trigger. The timer is canceled if the user mouses
-      * over the target before it expires.
-      *
-      * @default 300
-      */
-    var hoverCloseDelay: js.UndefOr[Double] = js.undefined
-    
-    /**
-      * The amount of time in milliseconds the popover should wait before opening
-      * after the user hovers over the trigger. The timer is canceled if the user
-      * mouses away from the target before it expires.
-      *
-      * @default 150
-      */
-    var hoverOpenDelay: js.UndefOr[Double] = js.undefined
-    
-    /**
-      * Whether a popover that uses a `Portal` should automatically inherit the
-      * dark theme from its parent.
-      *
-      * @default true
-      */
-    var inheritDarkTheme: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * The kind of interaction that triggers the display of the popover.
-      *
-      * @default "click"
-      */
-    var interactionKind: js.UndefOr[Popover2InteractionKind] = js.undefined
-    
-    /**
-      * Whether the popover is visible. Passing this prop puts the popover in
-      * controlled mode, where the only way to change visibility is by updating
-      * this property. If `disabled={true}`, this prop will be ignored, and the
-      * popover will remain closed.
-      *
-      * @default undefined
-      */
-    var isOpen: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * If `true` and `usePortal={true}`, the `Portal` containing the children is created and attached
-      * to the DOM when the overlay is opened for the first time; otherwise this happens when the
-      * component mounts. Lazy mounting provides noticeable performance improvements if you have lots
-      * of overlays at once, such as on each row of a table.
-      *
-      * @default true
-      */
-    var `lazy`: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * Whether the popover content should be sized to match the width of the target.
-      * This is sometimes useful for dropdown menus. This prop is implemented using
-      * a Popper.js custom modifier.
-      *
-      * @default false
-      */
-    var matchTargetWidth: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * Whether to apply minimal styling to this popover or tooltip. Minimal popovers
-      * do not have an arrow pointing to their target and use a subtler animation.
-      *
-      * @default false
-      */
-    var minimal: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * Overrides for Popper.js built-in modifiers.
-      * Each override is is a full modifier object (omitting its name), keyed by its modifier name.
-      *
-      * For example, the arrow modifier can be disabled by providing `{ arrow: { enabled: false } }`.
-      *
-      * Some of Popover2's default modifiers may get disabled under certain circumstances, but you may
-      * choose to re-enable and customize them. For example, "offset" is disabled when `minimal={true}`,
-      * but you can re-enable it with `{ offset: { enabled: true } }`.
-      *
-      * @see https://popper.js.org/docs/v2/modifiers/
-      */
-    var modifiers: js.UndefOr[PopperModifierOverrides] = js.undefined
-    
-    /**
-      * Custom modifiers to add to the popper instance.
-      *
-      * @see https://popper.js.org/docs/v2/modifiers/#custom-modifiers
-      */
-    var modifiersCustom: js.UndefOr[js.Array[PopperCustomModifer]] = js.undefined
-    
-    /**
-      * A callback that is invoked when user interaction causes the overlay to close, such as
-      * clicking on the overlay or pressing the `esc` key (if enabled).
-      *
-      * Receives the event from the user's interaction, if there was an event (generally either a
-      * mouse or key event). Note that, since this component is controlled by the `isOpen` prop, it
-      * will not actually close itself until that prop becomes `false`.
-      */
-    var onClose: js.UndefOr[js.Function1[/* event */ SyntheticEvent[HTMLElement, Event], Unit]] = js.undefined
-    
-    /**
-      * Lifecycle method invoked just after the CSS _close_ transition ends but
-      * before the child has been removed from the DOM. Receives the DOM element
-      * of the child being closed.
-      */
-    var onClosed: js.UndefOr[js.Function1[/* node */ HTMLElement, Unit]] = js.undefined
-    
-    /**
-      * Lifecycle method invoked just before the CSS _close_ transition begins on
-      * a child. Receives the DOM element of the child being closed.
-      */
-    var onClosing: js.UndefOr[js.Function1[/* node */ HTMLElement, Unit]] = js.undefined
-    
-    /**
-      * Callback invoked in controlled mode when the popover open state *would*
-      * change due to user interaction.
-      */
-    var onInteraction: js.UndefOr[
-        js.Function2[
-          /* nextOpenState */ Boolean, 
-          /* e */ js.UndefOr[SyntheticEvent[HTMLElement, Event]], 
-          Unit
-        ]
-      ] = js.undefined
-    
-    /**
-      * Lifecycle method invoked just after the CSS _open_ transition ends.
-      * Receives the DOM element of the child being opened.
-      */
-    var onOpened: js.UndefOr[js.Function1[/* node */ HTMLElement, Unit]] = js.undefined
-    
-    /**
-      * Lifecycle method invoked just after mounting the child in the DOM but
-      * just before the CSS _open_ transition begins. Receives the DOM element of
-      * the child being opened.
-      */
-    var onOpening: js.UndefOr[js.Function1[/* node */ HTMLElement, Unit]] = js.undefined
-    
-    /**
-      * Whether the popover should open when its target is focused. If `true`,
-      * target will render with `tabindex="0"` to make it focusable via keyboard
-      * navigation.
-      *
-      * Note that this functionality is only enabled for hover interaction
-      * popovers/tooltips.
-      *
-      * @default true
-      */
-    var openOnTargetFocus: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * The placement (relative to the target) at which the popover should appear.
-      * Mutually exclusive with `position` prop. Prefer using this over `position`,
-      * as it more closely aligns with Popper.js semantics.
-      *
-      * The default value of `"auto"` will choose the best placement when opened
-      * and will allow the popover to reposition itself to remain onscreen as the
-      * user scrolls around.
-      *
-      * @default "auto"
-      */
-    var placement: js.UndefOr[Placement] = js.undefined
-    
-    /**
-      * A space-delimited string of class names applied to the popover element.
-      */
-    var popoverClassName: js.UndefOr[String] = js.undefined
-    
-    /**
-      * Ref supplied to the `Classes.POPOVER` element.
-      */
-    var popoverRef: js.UndefOr[Ref[HTMLElement]] = js.undefined
-    
-    /**
-      * The kind of popup displayed by the popover. This property is ignored if
-      * `interactionKind` is {@link Popover2InteractionKind.HOVER_TARGET_ONLY}.
-      * This controls the `aria-haspopup` attribute of the target element. The
-      * default is "menu" (technically, `aria-haspopup` will be set to "true",
-      * which is the same as "menu", for backwards compatibility).
-      *
-      * @default "menu" or undefined
-      */
-    var popupKind: js.UndefOr[PopupKind] = js.undefined
-    
-    /**
-      * Space-delimited string of class names applied to the `Portal` element if
-      * `usePortal={true}`.
-      */
-    var portalClassName: js.UndefOr[String] = js.undefined
-    
-    /**
-      * The container element into which the overlay renders its contents, when `usePortal` is `true`.
-      * This prop is ignored if `usePortal` is `false`.
-      *
-      * @default document.body
-      */
-    var portalContainer: js.UndefOr[HTMLElement] = js.undefined
-    
-    /**
-      * The position (relative to the target) at which the popover should appear.
-      * Mutually exclusive with `placement` prop.
-      *
-      * The default value of `"auto"` will choose the best position when opened
-      * and will allow the popover to reposition itself to remain onscreen as the
-      * user scrolls around.
-      *
-      * @default "auto"
-      */
-    var position: js.UndefOr[PopoverPosition] = js.undefined
-    
-    /**
-      * Popper.js positioning strategy.
-      *
-      * @see https://popper.js.org/docs/v2/constructors/#strategy
-      * @default "absolute"
-      */
-    var positioningStrategy: js.UndefOr[PositioningStrategy] = js.undefined
-    
-    /**
-      * Target renderer which receives props injected by Popover2 which should be spread onto
-      * the rendered element. This function should return a single React node.
-      *
-      * Mutually exclusive with `children` and `targetTagName` props.
-      */
-    var renderTarget: js.UndefOr[
-        js.Function1[/* props */ Popover2TargetProps & DefaultPopover2TargetHTMLProps, Element]
-      ] = js.undefined
-    
-    /**
-      * A root boundary element supplied to the "flip" and "preventOverflow" modifiers.
-      * This is a shorthand for overriding Popper.js modifier options with the `modifiers` prop.
-      *
-      * @see https://popper.js.org/docs/v2/utils/detect-overflow/#rootboundary
-      */
-    var rootBoundary: js.UndefOr[RootBoundary] = js.undefined
-    
-    /**
-      * Whether the application should return focus to the last active element in the
-      * document after this popover closes.
-      *
-      * This is automatically set to `false` if this is a hover interaction popover.
-      *
-      * If you are attaching a popover _and_ a tooltip to the same target, you must take
-      * care to either disable this prop for the popover _or_ disable the tooltip's
-      * `openOnTargetFocus` prop.
-      *
-      * @default false
-      */
-    var shouldReturnFocusOnClose: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * HTML tag name for the target element. This must be an HTML element to
-      * ensure that it supports the necessary DOM event handlers.
-      *
-      * By default, a `<span>` tag is used so popovers appear as inline-block
-      * elements and can be nested in text. Use `<div>` tag for a block element.
-      *
-      * If `fill` is set to `true`, this prop's default value will become `"div"`
-      * instead of `"span"`.
-      *
-      * Note that _not all HTML tags are supported_; you will need to make sure
-      * the tag you choose supports the HTML attributes Popover2 applies to the
-      * target element.
-      *
-      * This prop is mutually exclusive with the `renderTarget` API.
-      *
-      * @default "span" ("div" if `fill={true}`)
-      */
-    var targetTagName: js.UndefOr[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.blueprintjsPopover2.blueprintjsPopover2Strings.a, typings.blueprintjsPopover2.blueprintjsPopover2Strings.abbr, typings.blueprintjsPopover2.blueprintjsPopover2Strings.address */ Any
-      ] = js.undefined
-    
-    /**
-      * Indicates how long (in milliseconds) the overlay's enter/leave transition takes.
-      * This is used by React `CSSTransition` to know when a transition completes and must match
-      * the duration of the animation in CSS. Only set this prop if you override Blueprint's default
-      * transitions with new transitions of a different length.
-      *
-      * @default 300
-      */
-    var transitionDuration: js.UndefOr[Double] = js.undefined
-    
-    /**
-      * Whether the popover should be rendered inside a `Portal` attached to
-      * `portalContainer` prop.
-      *
-      * Rendering content inside a `Portal` allows the popover content to escape
-      * the physical bounds of its parent while still being positioned correctly
-      * relative to its target. Using a `Portal` is necessary if any ancestor of
-      * the target hides overflow or uses very complex positioning.
-      *
-      * Not using a `Portal` can result in smoother performance when scrolling
-      * and allows the popover content to inherit CSS styles from surrounding
-      * elements, but it remains subject to the overflow bounds of its ancestors.
-      *
-      * @default true
-      */
-    var usePortal: js.UndefOr[Boolean] = js.undefined
-  }
-  object Popover2PropsDefaultPopov {
-    
-    inline def apply(): Popover2PropsDefaultPopov = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Popover2PropsDefaultPopov]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: Popover2PropsDefaultPopov] (val x: Self) extends AnyVal {
-      
-      inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
-      
-      inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
-      
-      inline def setBackdropProps(value: HTMLProps[HTMLDivElement]): Self = StObject.set(x, "backdropProps", value.asInstanceOf[js.Any])
-      
-      inline def setBackdropPropsUndefined: Self = StObject.set(x, "backdropProps", js.undefined)
-      
-      inline def setBoundary(value: typings.popperjsCore.libEnumsMod.Boundary): Self = StObject.set(x, "boundary", value.asInstanceOf[js.Any])
-      
-      inline def setBoundaryUndefined: Self = StObject.set(x, "boundary", js.undefined)
-      
-      inline def setBoundaryVarargs(value: typings.std.Element*): Self = StObject.set(x, "boundary", js.Array(value*))
-      
-      inline def setCanEscapeKeyClose(value: Boolean): Self = StObject.set(x, "canEscapeKeyClose", value.asInstanceOf[js.Any])
-      
-      inline def setCanEscapeKeyCloseUndefined: Self = StObject.set(x, "canEscapeKeyClose", js.undefined)
-      
-      inline def setCaptureDismiss(value: Boolean): Self = StObject.set(x, "captureDismiss", value.asInstanceOf[js.Any])
-      
-      inline def setCaptureDismissUndefined: Self = StObject.set(x, "captureDismiss", js.undefined)
-      
-      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
-      
-      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
-      
-      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
-      
-      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
-      
-      inline def setContent(value: String | Element): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
-      
-      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
-      
-      inline def setDefaultIsOpen(value: Boolean): Self = StObject.set(x, "defaultIsOpen", value.asInstanceOf[js.Any])
-      
-      inline def setDefaultIsOpenUndefined: Self = StObject.set(x, "defaultIsOpen", js.undefined)
-      
-      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
-      
-      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
-      
-      inline def setEnforceFocus(value: Boolean): Self = StObject.set(x, "enforceFocus", value.asInstanceOf[js.Any])
-      
-      inline def setEnforceFocusUndefined: Self = StObject.set(x, "enforceFocus", js.undefined)
-      
-      inline def setFill(value: Boolean): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
-      
-      inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
-      
-      inline def setHasBackdrop(value: Boolean): Self = StObject.set(x, "hasBackdrop", value.asInstanceOf[js.Any])
-      
-      inline def setHasBackdropUndefined: Self = StObject.set(x, "hasBackdrop", js.undefined)
-      
-      inline def setHoverCloseDelay(value: Double): Self = StObject.set(x, "hoverCloseDelay", value.asInstanceOf[js.Any])
-      
-      inline def setHoverCloseDelayUndefined: Self = StObject.set(x, "hoverCloseDelay", js.undefined)
-      
-      inline def setHoverOpenDelay(value: Double): Self = StObject.set(x, "hoverOpenDelay", value.asInstanceOf[js.Any])
-      
-      inline def setHoverOpenDelayUndefined: Self = StObject.set(x, "hoverOpenDelay", js.undefined)
-      
-      inline def setInheritDarkTheme(value: Boolean): Self = StObject.set(x, "inheritDarkTheme", value.asInstanceOf[js.Any])
-      
-      inline def setInheritDarkThemeUndefined: Self = StObject.set(x, "inheritDarkTheme", js.undefined)
-      
-      inline def setInteractionKind(value: Popover2InteractionKind): Self = StObject.set(x, "interactionKind", value.asInstanceOf[js.Any])
-      
-      inline def setInteractionKindUndefined: Self = StObject.set(x, "interactionKind", js.undefined)
-      
-      inline def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
-      
-      inline def setIsOpenUndefined: Self = StObject.set(x, "isOpen", js.undefined)
-      
-      inline def setLazy(value: Boolean): Self = StObject.set(x, "lazy", value.asInstanceOf[js.Any])
-      
-      inline def setLazyUndefined: Self = StObject.set(x, "lazy", js.undefined)
-      
-      inline def setMatchTargetWidth(value: Boolean): Self = StObject.set(x, "matchTargetWidth", value.asInstanceOf[js.Any])
-      
-      inline def setMatchTargetWidthUndefined: Self = StObject.set(x, "matchTargetWidth", js.undefined)
-      
-      inline def setMinimal(value: Boolean): Self = StObject.set(x, "minimal", value.asInstanceOf[js.Any])
-      
-      inline def setMinimalUndefined: Self = StObject.set(x, "minimal", js.undefined)
-      
-      inline def setModifiers(value: PopperModifierOverrides): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
-      
-      inline def setModifiersCustom(value: js.Array[PopperCustomModifer]): Self = StObject.set(x, "modifiersCustom", value.asInstanceOf[js.Any])
-      
-      inline def setModifiersCustomUndefined: Self = StObject.set(x, "modifiersCustom", js.undefined)
-      
-      inline def setModifiersCustomVarargs(value: PopperCustomModifer*): Self = StObject.set(x, "modifiersCustom", js.Array(value*))
-      
-      inline def setModifiersUndefined: Self = StObject.set(x, "modifiers", js.undefined)
-      
-      inline def setOnClose(value: /* event */ SyntheticEvent[HTMLElement, Event] => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
-      
-      inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
-      
-      inline def setOnClosed(value: /* node */ HTMLElement => Unit): Self = StObject.set(x, "onClosed", js.Any.fromFunction1(value))
-      
-      inline def setOnClosedUndefined: Self = StObject.set(x, "onClosed", js.undefined)
-      
-      inline def setOnClosing(value: /* node */ HTMLElement => Unit): Self = StObject.set(x, "onClosing", js.Any.fromFunction1(value))
-      
-      inline def setOnClosingUndefined: Self = StObject.set(x, "onClosing", js.undefined)
-      
-      inline def setOnInteraction(
-        value: (/* nextOpenState */ Boolean, /* e */ js.UndefOr[SyntheticEvent[HTMLElement, Event]]) => Unit
-      ): Self = StObject.set(x, "onInteraction", js.Any.fromFunction2(value))
-      
-      inline def setOnInteractionUndefined: Self = StObject.set(x, "onInteraction", js.undefined)
-      
-      inline def setOnOpened(value: /* node */ HTMLElement => Unit): Self = StObject.set(x, "onOpened", js.Any.fromFunction1(value))
-      
-      inline def setOnOpenedUndefined: Self = StObject.set(x, "onOpened", js.undefined)
-      
-      inline def setOnOpening(value: /* node */ HTMLElement => Unit): Self = StObject.set(x, "onOpening", js.Any.fromFunction1(value))
-      
-      inline def setOnOpeningUndefined: Self = StObject.set(x, "onOpening", js.undefined)
-      
-      inline def setOpenOnTargetFocus(value: Boolean): Self = StObject.set(x, "openOnTargetFocus", value.asInstanceOf[js.Any])
-      
-      inline def setOpenOnTargetFocusUndefined: Self = StObject.set(x, "openOnTargetFocus", js.undefined)
-      
-      inline def setPlacement(value: Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
-      
-      inline def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
-      
-      inline def setPopoverClassName(value: String): Self = StObject.set(x, "popoverClassName", value.asInstanceOf[js.Any])
-      
-      inline def setPopoverClassNameUndefined: Self = StObject.set(x, "popoverClassName", js.undefined)
-      
-      inline def setPopoverRef(value: Ref[HTMLElement]): Self = StObject.set(x, "popoverRef", value.asInstanceOf[js.Any])
-      
-      inline def setPopoverRefFunction1(value: /* instance */ HTMLElement | Null => Unit): Self = StObject.set(x, "popoverRef", js.Any.fromFunction1(value))
-      
-      inline def setPopoverRefNull: Self = StObject.set(x, "popoverRef", null)
-      
-      inline def setPopoverRefUndefined: Self = StObject.set(x, "popoverRef", js.undefined)
-      
-      inline def setPopupKind(value: PopupKind): Self = StObject.set(x, "popupKind", value.asInstanceOf[js.Any])
-      
-      inline def setPopupKindUndefined: Self = StObject.set(x, "popupKind", js.undefined)
-      
-      inline def setPortalClassName(value: String): Self = StObject.set(x, "portalClassName", value.asInstanceOf[js.Any])
-      
-      inline def setPortalClassNameUndefined: Self = StObject.set(x, "portalClassName", js.undefined)
-      
-      inline def setPortalContainer(value: HTMLElement): Self = StObject.set(x, "portalContainer", value.asInstanceOf[js.Any])
-      
-      inline def setPortalContainerUndefined: Self = StObject.set(x, "portalContainer", js.undefined)
-      
-      inline def setPosition(value: PopoverPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
-      
-      inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
-      
-      inline def setPositioningStrategy(value: PositioningStrategy): Self = StObject.set(x, "positioningStrategy", value.asInstanceOf[js.Any])
-      
-      inline def setPositioningStrategyUndefined: Self = StObject.set(x, "positioningStrategy", js.undefined)
-      
-      inline def setRenderTarget(value: /* props */ Popover2TargetProps & DefaultPopover2TargetHTMLProps => Element): Self = StObject.set(x, "renderTarget", js.Any.fromFunction1(value))
-      
-      inline def setRenderTargetUndefined: Self = StObject.set(x, "renderTarget", js.undefined)
-      
-      inline def setRootBoundary(value: RootBoundary): Self = StObject.set(x, "rootBoundary", value.asInstanceOf[js.Any])
-      
-      inline def setRootBoundaryUndefined: Self = StObject.set(x, "rootBoundary", js.undefined)
-      
-      inline def setShouldReturnFocusOnClose(value: Boolean): Self = StObject.set(x, "shouldReturnFocusOnClose", value.asInstanceOf[js.Any])
-      
-      inline def setShouldReturnFocusOnCloseUndefined: Self = StObject.set(x, "shouldReturnFocusOnClose", js.undefined)
+      inline def setTargetPropsUndefined: Self = StObject.set(x, "targetProps", js.undefined)
       
       inline def setTargetTagName(
-        value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.blueprintjsPopover2.blueprintjsPopover2Strings.a, typings.blueprintjsPopover2.blueprintjsPopover2Strings.abbr, typings.blueprintjsPopover2.blueprintjsPopover2Strings.address */ Any
+        value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177, starting with typings.blueprintjsPopover2.blueprintjsPopover2Strings.a, typings.blueprintjsPopover2.blueprintjsPopover2Strings.abbr, typings.blueprintjsPopover2.blueprintjsPopover2Strings.address */ Any
       ): Self = StObject.set(x, "targetTagName", value.asInstanceOf[js.Any])
       
       inline def setTargetTagNameUndefined: Self = StObject.set(x, "targetTagName", js.undefined)

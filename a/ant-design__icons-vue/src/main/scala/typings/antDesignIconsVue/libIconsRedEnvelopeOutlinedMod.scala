@@ -16,7 +16,7 @@ object libIconsRedEnvelopeOutlinedMod extends Shortcut {
   @js.native
   trait RedEnvelopeOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_RedEnvelopeOutlinedIconType: String = js.native

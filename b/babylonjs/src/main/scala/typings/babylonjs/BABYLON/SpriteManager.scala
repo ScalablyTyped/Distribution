@@ -80,6 +80,11 @@ trait SpriteManager
   def getClassName(): String = js.native
   
   /**
+    * Gets or sets an object used to store user defined information for the sprite manager
+    */
+  var metadata: Any = js.native
+  
+  /**
     * An event triggered when the manager is disposed.
     */
   var onDisposeObservable: Observable[SpriteManager] = js.native
@@ -88,6 +93,14 @@ trait SpriteManager
     * Callback called when the manager is disposed
     */
   def onDispose_=(callback: js.Function0[Unit]): Unit = js.native
+  
+  /**
+    * Gets or sets a boolean indicating if the renderer must render sprites with pixel perfect rendering
+    * In this mode, sprites are rendered as "pixel art", which means that they appear as pixelated but remain stable when moving or when rotated or scaled.
+    * Note that for this mode to work as expected, the sprite texture must use the BILINEAR sampling mode, not NEAREST!
+    */
+  def pixelPerfect: Boolean = js.native
+  def pixelPerfect_=(value: Boolean): Unit = js.native
   
   /**
     * Gets the hosting scene

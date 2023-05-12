@@ -14,6 +14,8 @@ trait ClinicalUseDefinition
      with DomainResource
      with _FhirResource {
   
+  var _library: js.UndefOr[js.Array[Element]] = js.undefined
+  
   var _type: js.UndefOr[Element] = js.undefined
   
   /**
@@ -42,6 +44,11 @@ trait ClinicalUseDefinition
   var interaction: js.UndefOr[ClinicalUseDefinitionInteraction] = js.undefined
   
   /**
+    * Logic used by the clinical use definition.
+    */
+  var library: js.UndefOr[js.Array[String]] = js.undefined
+  
+  /**
     * The population group to which this applies.
     */
   var population: js.UndefOr[js.Array[Reference]] = js.undefined
@@ -56,7 +63,7 @@ trait ClinicalUseDefinition
   var status: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
-    * The medication or procedure for which this is an indication.
+    * The medication, product, substance, device, procedure etc. for which this is an indication.
     */
   var subject: js.UndefOr[js.Array[Reference]] = js.undefined
   
@@ -66,7 +73,7 @@ trait ClinicalUseDefinition
   var `type`: indication | contraindication | interaction | `undesirable-effect` | warning
   
   /**
-    * Describe the undesirable effects of the medicinal product.
+    * Describe the possible undesirable effects (negative outcomes) from the use of the medicinal product as treatment.
     */
   var undesirableEffect: js.UndefOr[ClinicalUseDefinitionUndesirableEffect] = js.undefined
   
@@ -110,6 +117,12 @@ object ClinicalUseDefinition {
     
     inline def setInteractionUndefined: Self = StObject.set(x, "interaction", js.undefined)
     
+    inline def setLibrary(value: js.Array[String]): Self = StObject.set(x, "library", value.asInstanceOf[js.Any])
+    
+    inline def setLibraryUndefined: Self = StObject.set(x, "library", js.undefined)
+    
+    inline def setLibraryVarargs(value: String*): Self = StObject.set(x, "library", js.Array(value*))
+    
     inline def setPopulation(value: js.Array[Reference]): Self = StObject.set(x, "population", value.asInstanceOf[js.Any])
     
     inline def setPopulationUndefined: Self = StObject.set(x, "population", js.undefined)
@@ -137,6 +150,12 @@ object ClinicalUseDefinition {
     inline def setWarning(value: ClinicalUseDefinitionWarning): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     
     inline def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
+    
+    inline def set_library(value: js.Array[Element]): Self = StObject.set(x, "_library", value.asInstanceOf[js.Any])
+    
+    inline def set_libraryUndefined: Self = StObject.set(x, "_library", js.undefined)
+    
+    inline def set_libraryVarargs(value: Element*): Self = StObject.set(x, "_library", js.Array(value*))
     
     inline def set_type(value: Element): Self = StObject.set(x, "_type", value.asInstanceOf[js.Any])
     

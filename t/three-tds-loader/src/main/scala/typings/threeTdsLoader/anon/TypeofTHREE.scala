@@ -15,6 +15,7 @@ import org.scalablytyped.runtime.Instantiable9
 import typings.std.ArrayLike
 import typings.std.AudioNode
 import typings.std.BufferSource
+import typings.std.GLenum
 import typings.std.HTMLVideoElement
 import typings.std.ImageData
 import typings.std.TexImageSource
@@ -33,6 +34,7 @@ import typings.three.mod.ArrowHelper
 import typings.three.mod.AudioAnalyser
 import typings.three.mod.AudioLoader
 import typings.three.mod.AxesHelper
+import typings.three.mod.Bone
 import typings.three.mod.BooleanKeyframeTrack
 import typings.three.mod.Box2
 import typings.three.mod.Box3Helper
@@ -53,13 +55,12 @@ import typings.three.mod.CubeTextureLoader
 import typings.three.mod.CubicBezierCurve
 import typings.three.mod.CubicBezierCurve3
 import typings.three.mod.CubicInterpolant
+import typings.three.mod.Curve
 import typings.three.mod.CurvePath
 import typings.three.mod.Cylindrical
 import typings.three.mod.Data3DTexture
 import typings.three.mod.DataArrayTexture
 import typings.three.mod.DataTexture
-import typings.three.mod.DataTexture2DArray
-import typings.three.mod.DataTexture3D
 import typings.three.mod.DataTextureLoader
 import typings.three.mod.DepthTexture
 import typings.three.mod.DirectionalLightHelper
@@ -70,9 +71,7 @@ import typings.three.mod.EllipseCurve
 import typings.three.mod.EventDispatcher
 import typings.three.mod.FileLoader
 import typings.three.mod.Float16BufferAttribute
-import typings.three.mod.Float32Attribute
 import typings.three.mod.Float32BufferAttribute
-import typings.three.mod.Float64Attribute
 import typings.three.mod.Float64BufferAttribute
 import typings.three.mod.Fog
 import typings.three.mod.FogExp2
@@ -89,18 +88,14 @@ import typings.three.mod.InstancedBufferAttribute
 import typings.three.mod.InstancedBufferGeometry
 import typings.three.mod.InstancedInterleavedBuffer
 import typings.three.mod.InstancedMesh
-import typings.three.mod.Int16Attribute
 import typings.three.mod.Int16BufferAttribute
-import typings.three.mod.Int32Attribute
 import typings.three.mod.Int32BufferAttribute
-import typings.three.mod.Int8Attribute
 import typings.three.mod.Int8BufferAttribute
 import typings.three.mod.InterleavedBufferAttribute
 import typings.three.mod.Interpolant
 import typings.three.mod.LOD
 import typings.three.mod.Layers
 import typings.three.mod.LightProbe
-import typings.three.mod.LightShadow
 import typings.three.mod.Line
 import typings.three.mod.Line3
 import typings.three.mod.LineBasicMaterial
@@ -130,7 +125,6 @@ import typings.three.mod.ObjectLoader
 import typings.three.mod.OrthographicCamera
 import typings.three.mod.PMREMGenerator
 import typings.three.mod.Path
-import typings.three.mod.PerspectiveCamera
 import typings.three.mod.PlaneHelper
 import typings.three.mod.PointLightHelper
 import typings.three.mod.PointLightShadow
@@ -154,7 +148,6 @@ import typings.three.mod.Shape
 import typings.three.mod.ShapePath
 import typings.three.mod.Skeleton
 import typings.three.mod.SkeletonHelper
-import typings.three.mod.SkinnedMesh
 import typings.three.mod.Source
 import typings.three.mod.Sphere
 import typings.three.mod.Spherical
@@ -167,15 +160,12 @@ import typings.three.mod.SpriteMaterial
 import typings.three.mod.StereoCamera
 import typings.three.mod.StringKeyframeTrack
 import typings.three.mod.TextureLoader
-import typings.three.mod.Uint16Attribute
 import typings.three.mod.Uint16BufferAttribute
-import typings.three.mod.Uint32Attribute
 import typings.three.mod.Uint32BufferAttribute
-import typings.three.mod.Uint8Attribute
 import typings.three.mod.Uint8BufferAttribute
-import typings.three.mod.Uint8ClampedAttribute
 import typings.three.mod.Uint8ClampedBufferAttribute
 import typings.three.mod.Uniform
+import typings.three.mod.Vector2
 import typings.three.mod.Vector4
 import typings.three.mod.VectorKeyframeTrack
 import typings.three.mod.VideoTexture
@@ -190,7 +180,6 @@ import typings.three.mod.WebGLGeometries
 import typings.three.mod.WebGLIndexedBufferRenderer
 import typings.three.mod.WebGLLights
 import typings.three.mod.WebGLMultipleRenderTargets
-import typings.three.mod.WebGLMultisampleRenderTarget
 import typings.three.mod.WebGLProgram
 import typings.three.mod.WebGLPrograms
 import typings.three.mod.WebGLRenderList
@@ -204,41 +193,27 @@ import typings.three.mod.WebXRManager
 import typings.three.mod.WireframeGeometry
 import typings.three.mod.XRGripSpace
 import typings.three.mod.XRHandSpace
+import typings.three.mod.XRJointSpace
 import typings.three.mod.XRTargetRaySpace
 import typings.three.srcAnimationAnimationClipMod.AnimationClip
 import typings.three.srcAnimationAnimationMixerMod.AnimationMixer
 import typings.three.srcAudioAudioListenerMod.AudioListener
 import typings.three.srcAudioAudioMod.Audio
 import typings.three.srcCamerasCameraMod.Camera
-import typings.three.srcConstantsMod.AnimationActionLoopStyles
-import typings.three.srcConstantsMod.AnimationBlendMode
-import typings.three.srcConstantsMod.Blending
-import typings.three.srcConstantsMod.BlendingDstFactor
-import typings.three.srcConstantsMod.BlendingEquation
-import typings.three.srcConstantsMod.BlendingSrcFactor
-import typings.three.srcConstantsMod.Combine
+import typings.three.srcCamerasPerspectiveCameraMod.PerspectiveCamera
+import typings.three.srcConstantsMod.ColorSpace
 import typings.three.srcConstantsMod.CompressedPixelFormat
-import typings.three.srcConstantsMod.CullFace
-import typings.three.srcConstantsMod.DepthModes
-import typings.three.srcConstantsMod.DepthPackingStrategies
-import typings.three.srcConstantsMod.GLSLVersion
-import typings.three.srcConstantsMod.InterpolationEndingModes
-import typings.three.srcConstantsMod.InterpolationModes
+import typings.three.srcConstantsMod.CubeTextureMapping
+import typings.three.srcConstantsMod.DeepTexturePixelFormat
+import typings.three.srcConstantsMod.MagnificationTextureFilter
 import typings.three.srcConstantsMod.Mapping
-import typings.three.srcConstantsMod.NormalMapTypes
+import typings.three.srcConstantsMod.MinificationTextureFilter
 import typings.three.srcConstantsMod.PixelFormat
-import typings.three.srcConstantsMod.ShadowMapType
-import typings.three.srcConstantsMod.Side
-import typings.three.srcConstantsMod.StencilFunc
-import typings.three.srcConstantsMod.StencilOp
 import typings.three.srcConstantsMod.TextureDataType
-import typings.three.srcConstantsMod.TextureEncoding
-import typings.three.srcConstantsMod.TextureFilter
-import typings.three.srcConstantsMod.ToneMapping
-import typings.three.srcConstantsMod.TrianglesDrawModes
-import typings.three.srcConstantsMod.Usage
 import typings.three.srcConstantsMod.Wrapping
 import typings.three.srcCoreBufferGeometryMod.BufferGeometry
+import typings.three.srcCoreBufferGeometryMod.NormalBufferAttributes
+import typings.three.srcCoreBufferGeometryMod.NormalOrGLBufferAttributes
 import typings.three.srcCoreEventDispatcherMod.BaseEvent
 import typings.three.srcCoreEventDispatcherMod.Event
 import typings.three.srcCoreInterleavedBufferMod.InterleavedBuffer
@@ -247,16 +222,16 @@ import typings.three.srcCoreUniformsGroupMod.UniformsGroup
 import typings.three.srcLightsDirectionalLightMod.DirectionalLight
 import typings.three.srcLightsHemisphereLightMod.HemisphereLight
 import typings.three.srcLightsLightMod.Light
+import typings.three.srcLightsLightShadowMod.LightShadow
 import typings.three.srcLightsPointLightMod.PointLight
 import typings.three.srcLoadersLoaderUtilsMod.LoaderUtils
 import typings.three.srcLoadersLoadingManagerMod.LoadingManager
 import typings.three.srcMaterialsMaterialMod.Material
 import typings.three.srcMathBox3Mod.Box3
+import typings.three.srcMathColorMod.ColorRepresentation
 import typings.three.srcMathPlaneMod.Plane
 import typings.three.srcMathVector2Mod.Vector
-import typings.three.srcMathVector2Mod.Vector2
 import typings.three.srcMathVector3Mod.Vector3
-import typings.three.srcObjectsBoneMod.Bone
 import typings.three.srcRenderersWebGLCubeRenderTargetMod.WebGLCubeRenderTarget
 import typings.three.srcRenderersWebGLRendererMod.WebGLRenderer
 import typings.three.srcRenderersWebglWebGLAttributesMod.WebGLAttributes
@@ -272,31 +247,162 @@ import typings.three.srcRenderersWebglWebGLPropertiesMod.WebGLProperties
 import typings.three.srcRenderersWebglWebGLStateMod.WebGLState
 import typings.three.srcRenderersWebglWebGLUtilsMod.WebGLUtils
 import typings.three.srcTexturesTextureMod.OffscreenCanvas
-import typings.three.srcUtilsMod.ColorRepresentation
+import typings.three.srcThreeMod.SkinnedMesh
+import typings.threeTdsLoader.threeTdsLoaderInts.`0`
+import typings.threeTdsLoader.threeTdsLoaderInts.`1000`
+import typings.threeTdsLoader.threeTdsLoaderInts.`1001`
+import typings.threeTdsLoader.threeTdsLoaderInts.`1002`
+import typings.threeTdsLoader.threeTdsLoaderInts.`1003`
+import typings.threeTdsLoader.threeTdsLoaderInts.`1004`
+import typings.threeTdsLoader.threeTdsLoaderInts.`1005`
+import typings.threeTdsLoader.threeTdsLoaderInts.`1006`
+import typings.threeTdsLoader.threeTdsLoaderInts.`1007`
+import typings.threeTdsLoader.threeTdsLoaderInts.`1008`
+import typings.threeTdsLoader.threeTdsLoaderInts.`1009`
+import typings.threeTdsLoader.threeTdsLoaderInts.`100`
+import typings.threeTdsLoader.threeTdsLoaderInts.`1010`
+import typings.threeTdsLoader.threeTdsLoaderInts.`1011`
+import typings.threeTdsLoader.threeTdsLoaderInts.`1012`
+import typings.threeTdsLoader.threeTdsLoaderInts.`1013`
+import typings.threeTdsLoader.threeTdsLoaderInts.`1014`
+import typings.threeTdsLoader.threeTdsLoaderInts.`1015`
+import typings.threeTdsLoader.threeTdsLoaderInts.`1016`
+import typings.threeTdsLoader.threeTdsLoaderInts.`1017`
+import typings.threeTdsLoader.threeTdsLoaderInts.`1018`
+import typings.threeTdsLoader.threeTdsLoaderInts.`101`
+import typings.threeTdsLoader.threeTdsLoaderInts.`1020`
+import typings.threeTdsLoader.threeTdsLoaderInts.`1021`
+import typings.threeTdsLoader.threeTdsLoaderInts.`1023`
+import typings.threeTdsLoader.threeTdsLoaderInts.`1024`
+import typings.threeTdsLoader.threeTdsLoaderInts.`1025`
+import typings.threeTdsLoader.threeTdsLoaderInts.`1026`
+import typings.threeTdsLoader.threeTdsLoaderInts.`1027`
+import typings.threeTdsLoader.threeTdsLoaderInts.`1028`
+import typings.threeTdsLoader.threeTdsLoaderInts.`1029`
+import typings.threeTdsLoader.threeTdsLoaderInts.`102`
+import typings.threeTdsLoader.threeTdsLoaderInts.`1030`
+import typings.threeTdsLoader.threeTdsLoaderInts.`1031`
+import typings.threeTdsLoader.threeTdsLoaderInts.`1033`
+import typings.threeTdsLoader.threeTdsLoaderInts.`103`
+import typings.threeTdsLoader.threeTdsLoaderInts.`104`
 import typings.threeTdsLoader.threeTdsLoaderInts.`1`
+import typings.threeTdsLoader.threeTdsLoaderInts.`200`
+import typings.threeTdsLoader.threeTdsLoaderInts.`201`
+import typings.threeTdsLoader.threeTdsLoaderInts.`202`
+import typings.threeTdsLoader.threeTdsLoaderInts.`203`
+import typings.threeTdsLoader.threeTdsLoaderInts.`204`
+import typings.threeTdsLoader.threeTdsLoaderInts.`205`
+import typings.threeTdsLoader.threeTdsLoaderInts.`206`
+import typings.threeTdsLoader.threeTdsLoaderInts.`207`
+import typings.threeTdsLoader.threeTdsLoaderInts.`208`
+import typings.threeTdsLoader.threeTdsLoaderInts.`209`
+import typings.threeTdsLoader.threeTdsLoaderInts.`210`
+import typings.threeTdsLoader.threeTdsLoaderInts.`2200`
+import typings.threeTdsLoader.threeTdsLoaderInts.`2201`
+import typings.threeTdsLoader.threeTdsLoaderInts.`2202`
+import typings.threeTdsLoader.threeTdsLoaderInts.`2300`
+import typings.threeTdsLoader.threeTdsLoaderInts.`2301`
+import typings.threeTdsLoader.threeTdsLoaderInts.`2302`
+import typings.threeTdsLoader.threeTdsLoaderInts.`2400`
+import typings.threeTdsLoader.threeTdsLoaderInts.`2401`
+import typings.threeTdsLoader.threeTdsLoaderInts.`2402`
+import typings.threeTdsLoader.threeTdsLoaderInts.`2500`
+import typings.threeTdsLoader.threeTdsLoaderInts.`2501`
 import typings.threeTdsLoader.threeTdsLoaderInts.`2`
+import typings.threeTdsLoader.threeTdsLoaderInts.`3000`
+import typings.threeTdsLoader.threeTdsLoaderInts.`3001`
+import typings.threeTdsLoader.threeTdsLoaderInts.`300`
+import typings.threeTdsLoader.threeTdsLoaderInts.`301`
+import typings.threeTdsLoader.threeTdsLoaderInts.`302`
+import typings.threeTdsLoader.threeTdsLoaderInts.`303`
+import typings.threeTdsLoader.threeTdsLoaderInts.`304`
+import typings.threeTdsLoader.threeTdsLoaderInts.`306`
+import typings.threeTdsLoader.threeTdsLoaderInts.`3200`
+import typings.threeTdsLoader.threeTdsLoaderInts.`3201`
+import typings.threeTdsLoader.threeTdsLoaderInts.`33776`
+import typings.threeTdsLoader.threeTdsLoaderInts.`33777`
+import typings.threeTdsLoader.threeTdsLoaderInts.`33778`
+import typings.threeTdsLoader.threeTdsLoaderInts.`33779`
+import typings.threeTdsLoader.threeTdsLoaderInts.`34055`
+import typings.threeTdsLoader.threeTdsLoaderInts.`34056`
+import typings.threeTdsLoader.threeTdsLoaderInts.`35040`
+import typings.threeTdsLoader.threeTdsLoaderInts.`35041`
+import typings.threeTdsLoader.threeTdsLoaderInts.`35042`
+import typings.threeTdsLoader.threeTdsLoaderInts.`35044`
+import typings.threeTdsLoader.threeTdsLoaderInts.`35045`
+import typings.threeTdsLoader.threeTdsLoaderInts.`35046`
+import typings.threeTdsLoader.threeTdsLoaderInts.`35048`
+import typings.threeTdsLoader.threeTdsLoaderInts.`35049`
+import typings.threeTdsLoader.threeTdsLoaderInts.`35050`
+import typings.threeTdsLoader.threeTdsLoaderInts.`35840`
+import typings.threeTdsLoader.threeTdsLoaderInts.`35841`
+import typings.threeTdsLoader.threeTdsLoaderInts.`35842`
+import typings.threeTdsLoader.threeTdsLoaderInts.`35843`
+import typings.threeTdsLoader.threeTdsLoaderInts.`36196`
+import typings.threeTdsLoader.threeTdsLoaderInts.`36283`
+import typings.threeTdsLoader.threeTdsLoaderInts.`36284`
+import typings.threeTdsLoader.threeTdsLoaderInts.`36285`
+import typings.threeTdsLoader.threeTdsLoaderInts.`36286`
+import typings.threeTdsLoader.threeTdsLoaderInts.`36492`
+import typings.threeTdsLoader.threeTdsLoaderInts.`37492`
+import typings.threeTdsLoader.threeTdsLoaderInts.`37496`
+import typings.threeTdsLoader.threeTdsLoaderInts.`37808`
+import typings.threeTdsLoader.threeTdsLoaderInts.`37809`
+import typings.threeTdsLoader.threeTdsLoaderInts.`37810`
+import typings.threeTdsLoader.threeTdsLoaderInts.`37811`
+import typings.threeTdsLoader.threeTdsLoaderInts.`37812`
+import typings.threeTdsLoader.threeTdsLoaderInts.`37813`
+import typings.threeTdsLoader.threeTdsLoaderInts.`37814`
+import typings.threeTdsLoader.threeTdsLoaderInts.`37815`
+import typings.threeTdsLoader.threeTdsLoaderInts.`37816`
+import typings.threeTdsLoader.threeTdsLoaderInts.`37817`
+import typings.threeTdsLoader.threeTdsLoaderInts.`37818`
+import typings.threeTdsLoader.threeTdsLoaderInts.`37819`
+import typings.threeTdsLoader.threeTdsLoaderInts.`37820`
+import typings.threeTdsLoader.threeTdsLoaderInts.`37821`
+import typings.threeTdsLoader.threeTdsLoaderInts.`3`
 import typings.threeTdsLoader.threeTdsLoaderInts.`4`
+import typings.threeTdsLoader.threeTdsLoaderInts.`512`
+import typings.threeTdsLoader.threeTdsLoaderInts.`513`
+import typings.threeTdsLoader.threeTdsLoaderInts.`514`
+import typings.threeTdsLoader.threeTdsLoaderInts.`515`
+import typings.threeTdsLoader.threeTdsLoaderInts.`516`
+import typings.threeTdsLoader.threeTdsLoaderInts.`517`
+import typings.threeTdsLoader.threeTdsLoaderInts.`518`
+import typings.threeTdsLoader.threeTdsLoaderInts.`519`
+import typings.threeTdsLoader.threeTdsLoaderInts.`5386`
+import typings.threeTdsLoader.threeTdsLoaderInts.`5`
+import typings.threeTdsLoader.threeTdsLoaderInts.`6`
+import typings.threeTdsLoader.threeTdsLoaderInts.`7283`
+import typings.threeTdsLoader.threeTdsLoaderInts.`7680`
+import typings.threeTdsLoader.threeTdsLoaderInts.`7681`
+import typings.threeTdsLoader.threeTdsLoaderInts.`7682`
+import typings.threeTdsLoader.threeTdsLoaderInts.`7`
+import typings.threeTdsLoader.threeTdsLoaderStrings._empty
+import typings.threeTdsLoader.threeTdsLoaderStrings.`300 es`
+import typings.threeTdsLoader.threeTdsLoaderStrings.`srgb-linear`
+import typings.threeTdsLoader.threeTdsLoaderStrings.srgb
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait TypeofTHREE extends StObject {
   
-  val ACESFilmicToneMapping: ToneMapping
+  val ACESFilmicToneMapping: `4`
   
-  val AddEquation: BlendingEquation
+  val AddEquation: `100`
   
-  val AddOperation: Combine
+  val AddOperation: `2`
   
-  val AdditiveAnimationBlendMode: AnimationBlendMode
+  val AdditiveAnimationBlendMode: `2501`
   
-  val AdditiveBlending: Blending
+  val AdditiveBlending: `2`
   
-  val AlphaFormat: PixelFormat
+  val AlphaFormat: `1021`
   
-  val AlwaysDepth: DepthModes
+  val AlwaysDepth: `1`
   
-  val AlwaysStencilFunc: StencilFunc
+  val AlwaysStencilFunc: `519`
   
   var AmbientLight: Instantiable0[typings.three.mod.AmbientLight]
   
@@ -319,12 +425,12 @@ trait TypeofTHREE extends StObject {
   val AnimationUtils: TypeofAnimationUtils
   
   var ArcCurve: Instantiable6[
-    /* aX */ Double, 
-    /* aY */ Double, 
-    /* aRadius */ Double, 
-    /* aStartAngle */ Double, 
-    /* aEndAngle */ Double, 
-    /* aClockwise */ Boolean, 
+    /* aX */ js.UndefOr[Double], 
+    /* aY */ js.UndefOr[Double], 
+    /* aRadius */ js.UndefOr[Double], 
+    /* aStartAngle */ js.UndefOr[Double], 
+    /* aEndAngle */ js.UndefOr[Double], 
+    /* aClockwise */ js.UndefOr[Boolean], 
     typings.three.mod.ArcCurve
   ]
   
@@ -352,18 +458,18 @@ trait TypeofTHREE extends StObject {
   
   var AxesHelper: Instantiable0[typings.three.mod.AxesHelper]
   
-  val BackSide: Side
+  val BackSide: `1`
   
-  val BasicDepthPacking: DepthPackingStrategies
+  val BasicDepthPacking: `3200`
   
-  val BasicShadowMap: ShadowMapType
+  val BasicShadowMap: `0`
   
   var Bone: Instantiable0[typings.three.mod.Bone]
   
   var BooleanKeyframeTrack: Instantiable3[
     /* name */ String, 
-    /* times */ js.Array[Any], 
-    /* values */ js.Array[Any], 
+    /* times */ ArrayLike[Double], 
+    /* values */ ArrayLike[Any], 
     typings.three.mod.BooleanKeyframeTrack
   ]
   
@@ -383,13 +489,11 @@ trait TypeofTHREE extends StObject {
     typings.three.mod.BufferAttribute
   ]
   
-  var BufferGeometry: Instantiable0[typings.three.mod.BufferGeometry]
+  var BufferGeometry: Instantiable0[typings.three.mod.BufferGeometry[NormalOrGLBufferAttributes]]
   
   var BufferGeometryLoader: Instantiable0[typings.three.mod.BufferGeometryLoader]
   
-  val BufferGeometryUtils: TypeofBufferGeometryUtils
-  
-  val ByteType: TextureDataType
+  val ByteType: `1010`
   
   val Cache: TypeofCache
   
@@ -402,8 +506,8 @@ trait TypeofTHREE extends StObject {
     /* mapping */ js.UndefOr[Mapping], 
     /* wrapS */ js.UndefOr[Wrapping], 
     /* wrapT */ js.UndefOr[Wrapping], 
-    /* magFilter */ js.UndefOr[TextureFilter], 
-    /* minFilter */ js.UndefOr[TextureFilter], 
+    /* magFilter */ js.UndefOr[MagnificationTextureFilter], 
+    /* minFilter */ js.UndefOr[MinificationTextureFilter], 
     /* format */ js.UndefOr[PixelFormat], 
     /* type */ js.UndefOr[TextureDataType], 
     /* anisotropy */ js.UndefOr[Double], 
@@ -412,13 +516,15 @@ trait TypeofTHREE extends StObject {
   
   var CapsuleGeometry: TypeofCapsuleGeometry
   
+  def CatmullRom(t: Double, p0: Double, p1: Double, p2: Double, p3: Double): Double
+  
   var CatmullRomCurve3: Instantiable0[typings.three.mod.CatmullRomCurve3]
   
-  val CineonToneMapping: ToneMapping
+  val CineonToneMapping: `3`
   
   var CircleGeometry: TypeofCircleGeometry
   
-  val ClampToEdgeWrapping: Wrapping
+  val ClampToEdgeWrapping: `1001`
   
   var Clock: Instantiable0[typings.three.mod.Clock]
   
@@ -426,18 +532,19 @@ trait TypeofTHREE extends StObject {
   
   var ColorKeyframeTrack: Instantiable3[
     /* name */ String, 
-    /* times */ js.Array[Any], 
-    /* values */ js.Array[Any], 
+    /* times */ ArrayLike[Double], 
+    /* values */ ArrayLike[Double], 
     typings.three.mod.ColorKeyframeTrack
   ]
   
   val ColorManagement: TypeofColorManagement
   
-  var CompressedArrayTexture: Instantiable4[
+  var CompressedArrayTexture: Instantiable5[
     /* mipmaps */ js.Array[ImageData], 
     /* width */ Double, 
     /* height */ Double, 
     /* depth */ Double, 
+    /* format */ CompressedPixelFormat, 
     typings.three.mod.CompressedArrayTexture
   ]
   
@@ -445,15 +552,15 @@ trait TypeofTHREE extends StObject {
     /* mipmaps */ js.Array[ImageData], 
     /* width */ Double, 
     /* height */ Double, 
-    /* format */ js.UndefOr[CompressedPixelFormat], 
+    /* format */ CompressedPixelFormat, 
     /* type */ js.UndefOr[TextureDataType], 
     /* mapping */ js.UndefOr[Mapping], 
     /* wrapS */ js.UndefOr[Wrapping], 
     /* wrapT */ js.UndefOr[Wrapping], 
-    /* magFilter */ js.UndefOr[TextureFilter], 
-    /* minFilter */ js.UndefOr[TextureFilter], 
+    /* magFilter */ js.UndefOr[MagnificationTextureFilter], 
+    /* minFilter */ js.UndefOr[MinificationTextureFilter], 
     /* anisotropy */ js.UndefOr[Double], 
-    /* encoding */ js.UndefOr[TextureEncoding], 
+    /* colorSpace */ js.UndefOr[ColorSpace], 
     typings.three.mod.CompressedTexture
   ]
   
@@ -468,43 +575,43 @@ trait TypeofTHREE extends StObject {
     typings.three.mod.CubeCamera
   ]
   
-  val CubeReflectionMapping: Mapping
+  val CubeReflectionMapping: `301`
   
-  val CubeRefractionMapping: Mapping
+  val CubeRefractionMapping: `302`
   
   var CubeTexture: Instantiable10[
     /* images */ js.UndefOr[js.Array[Any]], 
-    /* mapping */ js.UndefOr[Mapping], 
+    /* mapping */ js.UndefOr[CubeTextureMapping], 
     /* wrapS */ js.UndefOr[Wrapping], 
     /* wrapT */ js.UndefOr[Wrapping], 
-    /* magFilter */ js.UndefOr[TextureFilter], 
-    /* minFilter */ js.UndefOr[TextureFilter], 
+    /* magFilter */ js.UndefOr[MagnificationTextureFilter], 
+    /* minFilter */ js.UndefOr[MinificationTextureFilter], 
     /* format */ js.UndefOr[PixelFormat], 
     /* type */ js.UndefOr[TextureDataType], 
     /* anisotropy */ js.UndefOr[Double], 
-    /* encoding */ js.UndefOr[TextureEncoding], 
+    /* colorSpace */ js.UndefOr[ColorSpace], 
     typings.three.mod.CubeTexture
   ]
   
   var CubeTextureLoader: Instantiable0[typings.three.mod.CubeTextureLoader]
   
-  val CubeUVReflectionMapping: Mapping
+  val CubeUVReflectionMapping: `306`
   
-  var CubicBezierCurve: Instantiable4[
-    /* v0 */ Vector2, 
-    /* v1 */ Vector2, 
-    /* v2 */ Vector2, 
-    /* v3 */ Vector2, 
-    typings.three.mod.CubicBezierCurve
-  ]
+  /**
+    * Used internally by {@link THREE.CubicBezierCurve3 | CubicBezierCurve3} and {@link THREE.CubicBezierCurve | CubicBezierCurve}.
+    * @param t Interpolation weight. Expects a `Float`
+    * @param p0 Expects a `Float`
+    * @param p1 Expects a `Float`
+    * @param p2 Expects a `Float`
+    * @param p3 P0, p1, p2, the starting, control(twice) and end points defining the curve. Expects a `Float`
+    * @see {@link https://threejs.org/docs/index.html#api/en/extras/core/Interpolations | Official Documentation}
+    * @see {@link https://github.com/mrdoob/three.js/blob/master/src/extras/core/Interpolations.js | Source}
+    */
+  def CubicBezier(t: Double, p0: Double, p1: Double, p2: Double, p3: Double): Double
   
-  var CubicBezierCurve3: Instantiable4[
-    /* v0 */ Vector3, 
-    /* v1 */ Vector3, 
-    /* v2 */ Vector3, 
-    /* v3 */ Vector3, 
-    typings.three.mod.CubicBezierCurve3
-  ]
+  var CubicBezierCurve: Instantiable0[typings.three.mod.CubicBezierCurve]
+  
+  var CubicBezierCurve3: Instantiable0[typings.three.mod.CubicBezierCurve3]
   
   var CubicInterpolant: Instantiable3[
     /* parameterPositions */ Any, 
@@ -513,35 +620,27 @@ trait TypeofTHREE extends StObject {
     typings.three.mod.CubicInterpolant
   ]
   
-  val CullFaceBack: CullFace
+  val CullFaceBack: `1`
   
-  val CullFaceFront: CullFace
+  val CullFaceFront: `2`
   
-  val CullFaceFrontBack: CullFace
+  val CullFaceFrontBack: `3`
   
-  val CullFaceNone: CullFace
+  val CullFaceNone: `0`
   
-  var Curve: TypeofCurve
+  var Curve: Instantiable0[typings.three.mod.Curve[Vector]]
   
   var CurvePath: Instantiable0[typings.three.mod.CurvePath[Vector]]
   
-  val CurveUtils: TypeofCurveUtils
+  val CustomBlending: `5`
   
-  val CustomBlending: Blending
-  
-  val CustomToneMapping: ToneMapping
+  val CustomToneMapping: `5`
   
   var CylinderGeometry: TypeofCylinderGeometry
   
   var Cylindrical: Instantiable0[typings.three.mod.Cylindrical]
   
-  var Data3DTexture: Instantiable4[
-    /* data */ BufferSource, 
-    /* width */ Double, 
-    /* height */ Double, 
-    /* depth */ Double, 
-    typings.three.mod.Data3DTexture
-  ]
+  var Data3DTexture: Instantiable0[typings.three.mod.Data3DTexture]
   
   var DataArrayTexture: Instantiable0[typings.three.mod.DataArrayTexture]
   
@@ -554,45 +653,38 @@ trait TypeofTHREE extends StObject {
     /* mapping */ js.UndefOr[Mapping], 
     /* wrapS */ js.UndefOr[Wrapping], 
     /* wrapT */ js.UndefOr[Wrapping], 
-    /* magFilter */ js.UndefOr[TextureFilter], 
-    /* minFilter */ js.UndefOr[TextureFilter], 
+    /* magFilter */ js.UndefOr[MagnificationTextureFilter], 
+    /* minFilter */ js.UndefOr[MinificationTextureFilter], 
     /* anisotropy */ js.UndefOr[Double], 
-    /* encoding */ js.UndefOr[TextureEncoding], 
+    /* colorSpace */ js.UndefOr[ColorSpace], 
     typings.three.mod.DataTexture
-  ]
-  
-  var DataTexture2DArray: Instantiable0[typings.three.mod.DataTexture2DArray]
-  
-  var DataTexture3D: Instantiable4[
-    /* data */ BufferSource, 
-    /* width */ Double, 
-    /* height */ Double, 
-    /* depth */ Double, 
-    typings.three.mod.DataTexture3D
   ]
   
   var DataTextureLoader: Instantiable0[typings.three.mod.DataTextureLoader]
   
-  val DecrementStencilOp: StencilOp
+  val DataUtils: TypeofDataUtils
   
-  val DecrementWrapStencilOp: StencilOp
+  val DecrementStencilOp: `7283`
+  
+  val DecrementWrapStencilOp: `34056`
   
   val DefaultLoadingManager: LoadingManager
   
-  val DepthFormat: PixelFormat
+  val DepthFormat: `1026`
   
-  val DepthStencilFormat: PixelFormat
+  val DepthStencilFormat: `1027`
   
-  var DepthTexture: Instantiable9[
+  var DepthTexture: Instantiable10[
     /* width */ Double, 
     /* height */ Double, 
     /* type */ js.UndefOr[TextureDataType], 
     /* mapping */ js.UndefOr[Mapping], 
     /* wrapS */ js.UndefOr[Wrapping], 
     /* wrapT */ js.UndefOr[Wrapping], 
-    /* magFilter */ js.UndefOr[TextureFilter], 
-    /* minFilter */ js.UndefOr[TextureFilter], 
+    /* magFilter */ js.UndefOr[MagnificationTextureFilter], 
+    /* minFilter */ js.UndefOr[MinificationTextureFilter], 
     /* anisotropy */ js.UndefOr[Double], 
+    /* format */ js.UndefOr[DeepTexturePixelFormat], 
     typings.three.mod.DepthTexture
   ]
   
@@ -600,7 +692,7 @@ trait TypeofTHREE extends StObject {
   
   var DirectionalLightHelper: Instantiable1[/* light */ DirectionalLight, typings.three.mod.DirectionalLightHelper]
   
-  var DirectionalLightShadow: Instantiable1[/* camera */ Camera, typings.three.mod.DirectionalLightShadow]
+  var DirectionalLightShadow: Instantiable0[typings.three.mod.DirectionalLightShadow]
   
   var DiscreteInterpolant: Instantiable3[
     /* parameterPositions */ Any, 
@@ -609,43 +701,43 @@ trait TypeofTHREE extends StObject {
     typings.three.mod.DiscreteInterpolant
   ]
   
+  val DisplayP3ColorSpace: /* "display-p3" */ String
+  
   var DodecahedronGeometry: TypeofDodecahedronGeometr
   
-  val DoubleSide: Side
+  val DoubleSide: `2`
   
-  val DstAlphaFactor: BlendingDstFactor
+  val DstAlphaFactor: `206`
   
-  val DstColorFactor: BlendingDstFactor
+  val DstColorFactor: `208`
   
-  val DynamicCopyUsage: Usage
+  val DynamicCopyUsage: `35050`
   
-  val DynamicDrawUsage: Usage
+  val DynamicDrawUsage: `35048`
   
-  val DynamicReadUsage: Usage
+  val DynamicReadUsage: `35049`
   
-  val Earcut: TypeofEarcut
-  
-  var EdgesGeometry: Instantiable0[typings.three.mod.EdgesGeometry[BufferGeometry]]
+  var EdgesGeometry: Instantiable0[typings.three.mod.EdgesGeometry[BufferGeometry[NormalBufferAttributes]]]
   
   var EllipseCurve: Instantiable8[
-    /* aX */ Double, 
-    /* aY */ Double, 
-    /* xRadius */ Double, 
-    /* yRadius */ Double, 
-    /* aStartAngle */ Double, 
-    /* aEndAngle */ Double, 
-    /* aClockwise */ Boolean, 
-    /* aRotation */ Double, 
+    /* aX */ js.UndefOr[Double], 
+    /* aY */ js.UndefOr[Double], 
+    /* xRadius */ js.UndefOr[Double], 
+    /* yRadius */ js.UndefOr[Double], 
+    /* aStartAngle */ js.UndefOr[Double], 
+    /* aEndAngle */ js.UndefOr[Double], 
+    /* aClockwise */ js.UndefOr[Boolean], 
+    /* aRotation */ js.UndefOr[Double], 
     typings.three.mod.EllipseCurve
   ]
   
-  val EqualDepth: DepthModes
+  val EqualDepth: `4`
   
-  val EqualStencilFunc: StencilFunc
+  val EqualStencilFunc: `514`
   
-  val EquirectangularReflectionMapping: Mapping
+  val EquirectangularReflectionMapping: `303`
   
-  val EquirectangularRefractionMapping: Mapping
+  val EquirectangularRefractionMapping: `304`
   
   var Euler: TypeofEuler
   
@@ -661,15 +753,11 @@ trait TypeofTHREE extends StObject {
     typings.three.mod.Float16BufferAttribute
   ]
   
-  var Float32Attribute: Instantiable2[/* array */ Any, /* itemSize */ Double, typings.three.mod.Float32Attribute]
-  
   var Float32BufferAttribute: Instantiable2[
     /* array */ js.Iterable[Double], 
     /* itemSize */ Double, 
     typings.three.mod.Float32BufferAttribute
   ]
-  
-  var Float64Attribute: Instantiable2[/* array */ Any, /* itemSize */ Double, typings.three.mod.Float64Attribute]
   
   var Float64BufferAttribute: Instantiable2[
     /* array */ js.Iterable[Double], 
@@ -677,11 +765,11 @@ trait TypeofTHREE extends StObject {
     typings.three.mod.Float64BufferAttribute
   ]
   
-  val FloatType: TextureDataType
+  val FloatType: `1015`
   
   var Fog: Instantiable1[/* color */ ColorRepresentation, typings.three.mod.Fog]
   
-  var FogExp2: Instantiable1[/* hex */ Double, typings.three.mod.FogExp2]
+  var FogExp2: Instantiable1[/* color */ ColorRepresentation, typings.three.mod.FogExp2]
   
   var FramebufferTexture: Instantiable3[
     /* width */ Double, 
@@ -690,7 +778,7 @@ trait TypeofTHREE extends StObject {
     typings.three.mod.FramebufferTexture
   ]
   
-  val FrontSide: Side
+  val FrontSide: `0`
   
   var Frustum: Instantiable6[
     /* p0 */ js.UndefOr[Plane], 
@@ -704,32 +792,30 @@ trait TypeofTHREE extends StObject {
   
   var GLBufferAttribute: Instantiable5[
     /* buffer */ WebGLBuffer, 
-    /* type */ Double, 
+    /* type */ GLenum, 
     /* itemSize */ Double, 
     /* elementSize */ `1` | `2` | `4`, 
     /* count */ Double, 
     typings.three.mod.GLBufferAttribute
   ]
   
-  val GLSL1: GLSLVersion
+  val GLSL1: typings.threeTdsLoader.threeTdsLoaderStrings.`100`
   
-  val GLSL3: GLSLVersion
+  val GLSL3: `300 es`
   
-  val GeometryUtils: TypeofGeometryUtils
+  val GreaterDepth: `6`
   
-  val GreaterDepth: DepthModes
+  val GreaterEqualDepth: `5`
   
-  val GreaterEqualDepth: DepthModes
+  val GreaterEqualStencilFunc: `518`
   
-  val GreaterEqualStencilFunc: StencilFunc
-  
-  val GreaterStencilFunc: StencilFunc
+  val GreaterStencilFunc: `516`
   
   var GridHelper: Instantiable0[typings.three.mod.GridHelper]
   
   var Group: Instantiable0[typings.three.mod.Group]
   
-  val HalfFloatType: TextureDataType
+  val HalfFloatType: `1016`
   
   var HemisphereLight: Instantiable0[typings.three.mod.HemisphereLight]
   
@@ -749,9 +835,9 @@ trait TypeofTHREE extends StObject {
   
   val ImageUtils: TypeofImageUtils
   
-  val IncrementStencilOp: StencilOp
+  val IncrementStencilOp: `7682`
   
-  val IncrementWrapStencilOp: StencilOp
+  val IncrementWrapStencilOp: `34055`
   
   var InstancedBufferAttribute: Instantiable2[
     /* array */ ArrayLike[Double], 
@@ -771,10 +857,8 @@ trait TypeofTHREE extends StObject {
     /* import warning: RewrittenClass.unapply cls was tparam TGeometry */ /* geometry */ Any, 
     /* import warning: RewrittenClass.unapply cls was tparam TMaterial */ /* material */ Any, 
     /* count */ Double, 
-    typings.three.mod.InstancedMesh[BufferGeometry, Material | js.Array[Material]]
+    typings.three.mod.InstancedMesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]]
   ]
-  
-  var Int16Attribute: Instantiable2[/* array */ Any, /* itemSize */ Double, typings.three.mod.Int16Attribute]
   
   var Int16BufferAttribute: Instantiable2[
     /* array */ js.Iterable[Double], 
@@ -782,15 +866,11 @@ trait TypeofTHREE extends StObject {
     typings.three.mod.Int16BufferAttribute
   ]
   
-  var Int32Attribute: Instantiable2[/* array */ Any, /* itemSize */ Double, typings.three.mod.Int32Attribute]
-  
   var Int32BufferAttribute: Instantiable2[
     /* array */ js.Iterable[Double], 
     /* itemSize */ Double, 
     typings.three.mod.Int32BufferAttribute
   ]
-  
-  var Int8Attribute: Instantiable2[/* array */ Any, /* itemSize */ Double, typings.three.mod.Int8Attribute]
   
   var Int8BufferAttribute: Instantiable2[
     /* array */ js.Iterable[Double], 
@@ -798,7 +878,7 @@ trait TypeofTHREE extends StObject {
     typings.three.mod.Int8BufferAttribute
   ]
   
-  val IntType: TextureDataType
+  val IntType: `1013`
   
   var InterleavedBuffer: Instantiable2[
     /* array */ ArrayLike[Double], 
@@ -820,15 +900,15 @@ trait TypeofTHREE extends StObject {
     typings.three.mod.Interpolant
   ]
   
-  val InterpolateDiscrete: InterpolationModes
+  val InterpolateDiscrete: `2300`
   
-  val InterpolateLinear: InterpolationModes
+  val InterpolateLinear: `2301`
   
-  val InterpolateSmooth: InterpolationModes
+  val InterpolateSmooth: `2302`
   
-  val InvertStencilOp: StencilOp
+  val InvertStencilOp: `5386`
   
-  val KeepStencilOp: StencilOp
+  val KeepStencilOp: `7680`
   
   var KeyframeTrack: TypeofKeyframeTrack
   
@@ -838,43 +918,48 @@ trait TypeofTHREE extends StObject {
   
   var Layers: Instantiable0[typings.three.mod.Layers]
   
-  val LessDepth: DepthModes
+  val LessDepth: `2`
   
-  val LessEqualDepth: DepthModes
+  val LessEqualDepth: `3`
   
-  val LessEqualStencilFunc: StencilFunc
+  val LessEqualStencilFunc: `515`
   
-  val LessStencilFunc: StencilFunc
+  val LessStencilFunc: `513`
   
-  var Light: Instantiable0[typings.three.mod.Light]
+  var Light: Instantiable0[typings.three.mod.Light[js.UndefOr[LightShadow[Camera]]]]
   
   var LightProbe: Instantiable0[typings.three.mod.LightProbe]
   
-  var LightShadow: Instantiable1[/* camera */ Camera, typings.three.mod.LightShadow]
+  var LightShadow: Instantiable1[
+    /* import warning: RewrittenClass.unapply cls was tparam TCamera */ /* camera */ Any, 
+    typings.three.mod.LightShadow[Camera]
+  ]
   
-  var Line: Instantiable0[typings.three.mod.Line[BufferGeometry, Material | js.Array[Material]]]
+  var Line: Instantiable0[
+    typings.three.mod.Line[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]]
+  ]
   
   var Line3: Instantiable0[typings.three.mod.Line3]
   
   var LineBasicMaterial: Instantiable0[typings.three.mod.LineBasicMaterial]
   
-  var LineCurve: Instantiable2[/* v1 */ Vector2, /* v2 */ Vector2, typings.three.mod.LineCurve]
+  var LineCurve: Instantiable0[typings.three.mod.LineCurve]
   
-  var LineCurve3: Instantiable2[/* v1 */ Vector3, /* v2 */ Vector3, typings.three.mod.LineCurve3]
+  var LineCurve3: Instantiable0[typings.three.mod.LineCurve3]
   
   var LineDashedMaterial: Instantiable0[typings.three.mod.LineDashedMaterial]
   
-  var LineLoop: Instantiable0[typings.three.mod.LineLoop[BufferGeometry, Material | js.Array[Material]]]
+  var LineLoop: Instantiable0[
+    typings.three.mod.LineLoop[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]]
+  ]
   
-  val LinePieces: Double
+  var LineSegments: Instantiable0[
+    typings.three.mod.LineSegments[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]]
+  ]
   
-  var LineSegments: Instantiable0[typings.three.mod.LineSegments[BufferGeometry, Material | js.Array[Material]]]
+  val LinearEncoding: `3000`
   
-  val LineStrip: Double
-  
-  val LinearEncoding: TextureEncoding
-  
-  val LinearFilter: TextureFilter
+  val LinearFilter: `1006`
   
   var LinearInterpolant: Instantiable3[
     /* parameterPositions */ Any, 
@@ -883,15 +968,17 @@ trait TypeofTHREE extends StObject {
     typings.three.mod.LinearInterpolant
   ]
   
-  val LinearMipMapLinearFilter: TextureFilter
+  val LinearMipMapLinearFilter: `1008`
   
-  val LinearMipMapNearestFilter: TextureFilter
+  val LinearMipMapNearestFilter: `1007`
   
-  val LinearMipmapLinearFilter: TextureFilter
+  val LinearMipmapLinearFilter: `1008`
   
-  val LinearMipmapNearestFilter: TextureFilter
+  val LinearMipmapNearestFilter: `1007`
   
-  val LinearToneMapping: ToneMapping
+  val LinearSRGBColorSpace: `srgb-linear`
+  
+  val LinearToneMapping: `1`
   
   var Loader: Instantiable0[typings.three.mod.Loader]
   
@@ -899,15 +986,15 @@ trait TypeofTHREE extends StObject {
   
   var LoadingManager: Instantiable0[typings.three.mod.LoadingManager]
   
-  val LoopOnce: AnimationActionLoopStyles
+  val LoopOnce: `2200`
   
-  val LoopPingPong: AnimationActionLoopStyles
+  val LoopPingPong: `2202`
   
-  val LoopRepeat: AnimationActionLoopStyles
+  val LoopRepeat: `2201`
   
-  val LuminanceAlphaFormat: PixelFormat
+  val LuminanceAlphaFormat: `1025`
   
-  val LuminanceFormat: PixelFormat
+  val LuminanceFormat: `1024`
   
   var Material: Instantiable0[typings.three.mod.Material]
   
@@ -919,9 +1006,11 @@ trait TypeofTHREE extends StObject {
   
   var Matrix4: Instantiable0[typings.three.mod.Matrix4]
   
-  val MaxEquation: BlendingEquation
+  val MaxEquation: `104`
   
-  var Mesh: Instantiable0[typings.three.mod.Mesh[BufferGeometry, Material | js.Array[Material]]]
+  var Mesh: Instantiable0[
+    typings.three.mod.Mesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]]
+  ]
   
   var MeshBasicMaterial: Instantiable0[typings.three.mod.MeshBasicMaterial]
   
@@ -943,46 +1032,48 @@ trait TypeofTHREE extends StObject {
   
   var MeshToonMaterial: Instantiable0[typings.three.mod.MeshToonMaterial]
   
-  val MinEquation: BlendingEquation
+  val MinEquation: `103`
   
-  val MirroredRepeatWrapping: Wrapping
+  val MirroredRepeatWrapping: `1002`
   
-  val MixOperation: Combine
+  val MixOperation: `1`
   
-  val MultiplyBlending: Blending
+  val MultiplyBlending: `4`
   
-  val MultiplyOperation: Combine
+  val MultiplyOperation: `0`
   
-  val NearestFilter: TextureFilter
+  val NearestFilter: `1003`
   
-  val NearestMipMapLinearFilter: TextureFilter
+  val NearestMipMapLinearFilter: `1005`
   
-  val NearestMipMapNearestFilter: TextureFilter
+  val NearestMipMapNearestFilter: `1004`
   
-  val NearestMipmapLinearFilter: TextureFilter
+  val NearestMipmapLinearFilter: `1005`
   
-  val NearestMipmapNearestFilter: TextureFilter
+  val NearestMipmapNearestFilter: `1004`
   
-  val NeverDepth: DepthModes
+  val NeverDepth: `0`
   
-  val NeverStencilFunc: StencilFunc
+  val NeverStencilFunc: `512`
   
-  val NoBlending: Blending
+  val NoBlending: `0`
   
-  val NoToneMapping: ToneMapping
+  val NoColorSpace: _empty
   
-  val NormalAnimationBlendMode: AnimationBlendMode
+  val NoToneMapping: `0`
   
-  val NormalBlending: Blending
+  val NormalAnimationBlendMode: `2500`
   
-  val NotEqualDepth: DepthModes
+  val NormalBlending: `1`
   
-  val NotEqualStencilFunc: StencilFunc
+  val NotEqualDepth: `7`
+  
+  val NotEqualStencilFunc: `517`
   
   var NumberKeyframeTrack: Instantiable3[
     /* name */ String, 
-    /* times */ js.Array[Any], 
-    /* values */ js.Array[Any], 
+    /* times */ ArrayLike[Double], 
+    /* values */ ArrayLike[Double], 
     typings.three.mod.NumberKeyframeTrack
   ]
   
@@ -990,19 +1081,19 @@ trait TypeofTHREE extends StObject {
   
   var ObjectLoader: Instantiable0[typings.three.mod.ObjectLoader]
   
-  val ObjectSpaceNormalMap: NormalMapTypes
+  val ObjectSpaceNormalMap: `1`
   
   var OctahedronGeometry: TypeofOctahedronGeometry
   
-  val OneFactor: BlendingDstFactor
+  val OneFactor: `201`
   
-  val OneMinusDstAlphaFactor: BlendingDstFactor
+  val OneMinusDstAlphaFactor: `207`
   
-  val OneMinusDstColorFactor: BlendingDstFactor
+  val OneMinusDstColorFactor: `209`
   
-  val OneMinusSrcAlphaFactor: BlendingDstFactor
+  val OneMinusSrcAlphaFactor: `205`
   
-  val OneMinusSrcColorFactor: BlendingDstFactor
+  val OneMinusSrcColorFactor: `203`
   
   var OrthographicCamera: Instantiable6[
     /* left */ js.UndefOr[Double], 
@@ -1014,9 +1105,9 @@ trait TypeofTHREE extends StObject {
     typings.three.mod.OrthographicCamera
   ]
   
-  val PCFShadowMap: ShadowMapType
+  val PCFShadowMap: `1`
   
-  val PCFSoftShadowMap: ShadowMapType
+  val PCFSoftShadowMap: `2`
   
   var PMREMGenerator: Instantiable1[/* renderer */ WebGLRenderer, typings.three.mod.PMREMGenerator]
   
@@ -1034,9 +1125,11 @@ trait TypeofTHREE extends StObject {
   
   var PointLightHelper: Instantiable1[/* light */ PointLight, typings.three.mod.PointLightHelper]
   
-  var PointLightShadow: Instantiable1[/* camera */ Camera, typings.three.mod.PointLightShadow]
+  var PointLightShadow: Instantiable1[/* camera */ PerspectiveCamera, typings.three.mod.PointLightShadow]
   
-  var Points: Instantiable0[typings.three.mod.Points[BufferGeometry, Material | js.Array[Material]]]
+  var Points: Instantiable0[
+    typings.three.mod.Points[BufferGeometry[NormalOrGLBufferAttributes], Material | js.Array[Material]]
+  ]
   
   var PointsMaterial: Instantiable0[typings.three.mod.PointsMaterial]
   
@@ -1063,26 +1156,27 @@ trait TypeofTHREE extends StObject {
     typings.three.mod.PropertyMixer
   ]
   
-  var QuadraticBezierCurve: Instantiable3[
-    /* v0 */ Vector2, 
-    /* v1 */ Vector2, 
-    /* v2 */ Vector2, 
-    typings.three.mod.QuadraticBezierCurve
-  ]
+  /**
+    * Used internally by {@link THREE.QuadraticBezierCurve3 | QuadraticBezierCurve3} and {@link THREE.QuadraticBezierCurve | QuadraticBezierCurve}.
+    * @param t Interpolation weight. Expects a `Float`
+    * @param p0 Expects a `Float`
+    * @param p1 Expects a `Float`
+    * @param p2 P0, p1, the starting, control and end points defining the curve. Expects a `Float`
+    * @see {@link https://threejs.org/docs/index.html#api/en/extras/core/Interpolations | Official Documentation}
+    * @see {@link https://github.com/mrdoob/three.js/blob/master/src/extras/core/Interpolations.js | Source}
+    */
+  def QuadraticBezier(t: Double, p0: Double, p1: Double, p2: Double): Double
   
-  var QuadraticBezierCurve3: Instantiable3[
-    /* v0 */ Vector3, 
-    /* v1 */ Vector3, 
-    /* v2 */ Vector3, 
-    typings.three.mod.QuadraticBezierCurve3
-  ]
+  var QuadraticBezierCurve: Instantiable0[typings.three.mod.QuadraticBezierCurve]
+  
+  var QuadraticBezierCurve3: Instantiable0[typings.three.mod.QuadraticBezierCurve3]
   
   var Quaternion: TypeofQuaternion
   
   var QuaternionKeyframeTrack: Instantiable3[
     /* name */ String, 
-    /* times */ js.Array[Any], 
-    /* values */ js.Array[Any], 
+    /* times */ ArrayLike[Double], 
+    /* values */ ArrayLike[Double], 
     typings.three.mod.QuaternionKeyframeTrack
   ]
   
@@ -1093,71 +1187,73 @@ trait TypeofTHREE extends StObject {
     typings.three.mod.QuaternionLinearInterpolant
   ]
   
+  val RED_GREEN_RGTC2_Format: `36285`
+  
+  val RED_RGTC1_Format: `36283`
+  
   val REVISION: String
   
-  val RGBADepthPacking: DepthPackingStrategies
+  val RGBADepthPacking: `3201`
   
-  val RGBAFormat: PixelFormat
+  val RGBAFormat: `1023`
   
-  val RGBAIntegerFormat: PixelFormat
+  val RGBAIntegerFormat: `1033`
   
-  val RGBA_ASTC_10x10_Format: CompressedPixelFormat
+  val RGBA_ASTC_10x10_Format: `37819`
   
-  val RGBA_ASTC_10x5_Format: CompressedPixelFormat
+  val RGBA_ASTC_10x5_Format: `37816`
   
-  val RGBA_ASTC_10x6_Format: CompressedPixelFormat
+  val RGBA_ASTC_10x6_Format: `37817`
   
-  val RGBA_ASTC_10x8_Format: CompressedPixelFormat
+  val RGBA_ASTC_10x8_Format: `37818`
   
-  val RGBA_ASTC_12x10_Format: CompressedPixelFormat
+  val RGBA_ASTC_12x10_Format: `37820`
   
-  val RGBA_ASTC_12x12_Format: CompressedPixelFormat
+  val RGBA_ASTC_12x12_Format: `37821`
   
-  val RGBA_ASTC_4x4_Format: CompressedPixelFormat
+  val RGBA_ASTC_4x4_Format: `37808`
   
-  val RGBA_ASTC_5x4_Format: CompressedPixelFormat
+  val RGBA_ASTC_5x4_Format: `37809`
   
-  val RGBA_ASTC_5x5_Format: CompressedPixelFormat
+  val RGBA_ASTC_5x5_Format: `37810`
   
-  val RGBA_ASTC_6x5_Format: CompressedPixelFormat
+  val RGBA_ASTC_6x5_Format: `37811`
   
-  val RGBA_ASTC_6x6_Format: CompressedPixelFormat
+  val RGBA_ASTC_6x6_Format: `37812`
   
-  val RGBA_ASTC_8x5_Format: CompressedPixelFormat
+  val RGBA_ASTC_8x5_Format: `37813`
   
-  val RGBA_ASTC_8x6_Format: CompressedPixelFormat
+  val RGBA_ASTC_8x6_Format: `37814`
   
-  val RGBA_ASTC_8x8_Format: CompressedPixelFormat
+  val RGBA_ASTC_8x8_Format: `37815`
   
-  val RGBA_BPTC_Format: CompressedPixelFormat
+  val RGBA_BPTC_Format: `36492`
   
-  val RGBA_ETC2_EAC_Format: CompressedPixelFormat
+  val RGBA_ETC2_EAC_Format: `37496`
   
-  val RGBA_PVRTC_2BPPV1_Format: CompressedPixelFormat
+  val RGBA_PVRTC_2BPPV1_Format: `35843`
   
-  val RGBA_PVRTC_4BPPV1_Format: CompressedPixelFormat
+  val RGBA_PVRTC_4BPPV1_Format: `35842`
   
-  val RGBA_S3TC_DXT1_Format: CompressedPixelFormat
+  val RGBA_S3TC_DXT1_Format: `33777`
   
-  val RGBA_S3TC_DXT3_Format: CompressedPixelFormat
+  val RGBA_S3TC_DXT3_Format: `33778`
   
-  val RGBA_S3TC_DXT5_Format: CompressedPixelFormat
+  val RGBA_S3TC_DXT5_Format: `33779`
   
-  val RGBFormat: PixelFormat
+  val RGB_ETC1_Format: `36196`
   
-  val RGB_ETC1_Format: CompressedPixelFormat
+  val RGB_ETC2_Format: `37492`
   
-  val RGB_ETC2_Format: CompressedPixelFormat
+  val RGB_PVRTC_2BPPV1_Format: `35841`
   
-  val RGB_PVRTC_2BPPV1_Format: CompressedPixelFormat
+  val RGB_PVRTC_4BPPV1_Format: `35840`
   
-  val RGB_PVRTC_4BPPV1_Format: CompressedPixelFormat
+  val RGB_S3TC_DXT1_Format: `33776`
   
-  val RGB_S3TC_DXT1_Format: CompressedPixelFormat
+  val RGFormat: `1030`
   
-  val RGFormat: PixelFormat
-  
-  val RGIntegerFormat: PixelFormat
+  val RGIntegerFormat: `1031`
   
   var RawShaderMaterial: Instantiable0[typings.three.mod.RawShaderMaterial]
   
@@ -1167,19 +1263,25 @@ trait TypeofTHREE extends StObject {
   
   var RectAreaLight: Instantiable0[typings.three.mod.RectAreaLight]
   
-  val RedFormat: PixelFormat
+  val RedFormat: `1028`
   
-  val RedIntegerFormat: PixelFormat
+  val RedIntegerFormat: `1029`
   
-  val ReinhardToneMapping: ToneMapping
+  val ReinhardToneMapping: `2`
   
-  val RepeatWrapping: Wrapping
+  val RepeatWrapping: `1000`
   
-  val ReplaceStencilOp: StencilOp
+  val ReplaceStencilOp: `7681`
   
-  val ReverseSubtractEquation: BlendingEquation
+  val ReverseSubtractEquation: `102`
   
   var RingGeometry: TypeofRingGeometry
+  
+  val SIGNED_RED_GREEN_RGTC2_Format: `36286`
+  
+  val SIGNED_RED_RGTC1_Format: `36284`
+  
+  val SRGBColorSpace: srgb
   
   def SRGBToLinear(c: Double): Double
   
@@ -1201,13 +1303,18 @@ trait TypeofTHREE extends StObject {
   
   val ShapeUtils: TypeofShapeUtils
   
-  val ShortType: TextureDataType
+  val ShortType: `1011`
   
-  var Skeleton: Instantiable1[/* bones */ js.Array[Bone], typings.three.mod.Skeleton]
+  var Skeleton: Instantiable0[typings.three.mod.Skeleton]
   
-  var SkeletonHelper: Instantiable1[/* object */ Object3D[Event], typings.three.mod.SkeletonHelper]
+  var SkeletonHelper: Instantiable1[
+    /* object */ SkinnedMesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]], 
+    typings.three.mod.SkeletonHelper
+  ]
   
-  var SkinnedMesh: Instantiable0[typings.three.mod.SkinnedMesh[BufferGeometry, Material | js.Array[Material]]]
+  var SkinnedMesh: Instantiable0[
+    typings.three.mod.SkinnedMesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]]
+  ]
   
   var Source: Instantiable1[/* data */ Any, typings.three.mod.Source]
   
@@ -1231,46 +1338,49 @@ trait TypeofTHREE extends StObject {
     typings.three.mod.SpotLight
   ]
   
-  var SpotLightHelper: Instantiable1[/* light */ Light, typings.three.mod.SpotLightHelper]
+  var SpotLightHelper: Instantiable1[
+    /* light */ Light[js.UndefOr[LightShadow[Camera]]], 
+    typings.three.mod.SpotLightHelper
+  ]
   
-  var SpotLightShadow: Instantiable1[/* camera */ Camera, typings.three.mod.SpotLightShadow]
+  var SpotLightShadow: Instantiable1[/* camera */ PerspectiveCamera, typings.three.mod.SpotLightShadow]
   
   var Sprite: Instantiable0[typings.three.mod.Sprite]
   
   var SpriteMaterial: Instantiable0[typings.three.mod.SpriteMaterial]
   
-  val SrcAlphaFactor: BlendingDstFactor
+  val SrcAlphaFactor: `204`
   
-  val SrcAlphaSaturateFactor: BlendingSrcFactor
+  val SrcAlphaSaturateFactor: `210`
   
-  val SrcColorFactor: BlendingDstFactor
+  val SrcColorFactor: `202`
   
-  val StaticCopyUsage: Usage
+  val StaticCopyUsage: `35046`
   
-  val StaticDrawUsage: Usage
+  val StaticDrawUsage: `35044`
   
-  val StaticReadUsage: Usage
+  val StaticReadUsage: `35045`
   
   var StereoCamera: Instantiable0[typings.three.mod.StereoCamera]
   
-  val StreamCopyUsage: Usage
+  val StreamCopyUsage: `35042`
   
-  val StreamDrawUsage: Usage
+  val StreamDrawUsage: `35040`
   
-  val StreamReadUsage: Usage
+  val StreamReadUsage: `35041`
   
   var StringKeyframeTrack: Instantiable3[
     /* name */ String, 
-    /* times */ js.Array[Any], 
-    /* values */ js.Array[Any], 
+    /* times */ ArrayLike[Double], 
+    /* values */ ArrayLike[Any], 
     typings.three.mod.StringKeyframeTrack
   ]
   
-  val SubtractEquation: BlendingEquation
+  val SubtractEquation: `101`
   
-  val SubtractiveBlending: Blending
+  val SubtractiveBlending: `3`
   
-  val TangentSpaceNormalMap: NormalMapTypes
+  val TangentSpaceNormalMap: `0`
   
   var TetrahedronGeometry: TypeofTetrahedronGeometry
   
@@ -1284,17 +1394,17 @@ trait TypeofTHREE extends StObject {
   
   var Triangle: TypeofTriangle
   
-  val TriangleFanDrawMode: TrianglesDrawModes
+  val TriangleFanDrawMode: `2`
   
-  val TriangleStripDrawMode: TrianglesDrawModes
+  val TriangleStripDrawMode: `1`
   
-  val TrianglesDrawMode: TrianglesDrawModes
+  val TrianglesDrawMode: `0`
   
   var TubeGeometry: TypeofTubeGeometry
   
-  val UVMapping: Mapping
+  val TwoPassDoubleSide: `2`
   
-  var Uint16Attribute: Instantiable2[/* array */ Any, /* itemSize */ Double, typings.three.mod.Uint16Attribute]
+  val UVMapping: `300`
   
   var Uint16BufferAttribute: Instantiable2[
     /* array */ js.Iterable[Double], 
@@ -1302,15 +1412,11 @@ trait TypeofTHREE extends StObject {
     typings.three.mod.Uint16BufferAttribute
   ]
   
-  var Uint32Attribute: Instantiable2[/* array */ Any, /* itemSize */ Double, typings.three.mod.Uint32Attribute]
-  
   var Uint32BufferAttribute: Instantiable2[
     /* array */ js.Iterable[Double], 
     /* itemSize */ Double, 
     typings.three.mod.Uint32BufferAttribute
   ]
-  
-  var Uint8Attribute: Instantiable2[/* array */ Any, /* itemSize */ Double, typings.three.mod.Uint8Attribute]
   
   var Uint8BufferAttribute: Instantiable2[
     /* array */ js.Iterable[Double], 
@@ -1318,15 +1424,16 @@ trait TypeofTHREE extends StObject {
     typings.three.mod.Uint8BufferAttribute
   ]
   
-  var Uint8ClampedAttribute: Instantiable2[/* array */ Any, /* itemSize */ Double, typings.three.mod.Uint8ClampedAttribute]
-  
   var Uint8ClampedBufferAttribute: Instantiable2[
     /* array */ js.Iterable[Double], 
     /* itemSize */ Double, 
     typings.three.mod.Uint8ClampedBufferAttribute
   ]
   
-  var Uniform: Instantiable1[/* value */ Any, typings.three.mod.Uniform]
+  var Uniform: Instantiable1[
+    /* import warning: RewrittenClass.unapply cls was tparam T */ /* value */ Any, 
+    typings.three.mod.Uniform[js.Object]
+  ]
   
   var UniformsGroup: Instantiable0[typings.three.mod.UniformsGroup]
   
@@ -1334,19 +1441,19 @@ trait TypeofTHREE extends StObject {
   
   val UniformsUtils: Any
   
-  val UnsignedByteType: TextureDataType
+  val UnsignedByteType: `1009`
   
-  val UnsignedInt248Type: TextureDataType
+  val UnsignedInt248Type: `1020`
   
-  val UnsignedIntType: TextureDataType
+  val UnsignedIntType: `1014`
   
-  val UnsignedShort4444Type: TextureDataType
+  val UnsignedShort4444Type: `1017`
   
-  val UnsignedShort5551Type: TextureDataType
+  val UnsignedShort5551Type: `1018`
   
-  val UnsignedShortType: TextureDataType
+  val UnsignedShortType: `1012`
   
-  val VSMShadowMap: ShadowMapType
+  val VSMShadowMap: `3`
   
   var Vector2: Instantiable0[typings.three.mod.Vector2]
   
@@ -1356,8 +1463,8 @@ trait TypeofTHREE extends StObject {
   
   var VectorKeyframeTrack: Instantiable3[
     /* name */ String, 
-    /* times */ js.Array[Any], 
-    /* values */ js.Array[Any], 
+    /* times */ ArrayLike[Double], 
+    /* values */ ArrayLike[Double], 
     typings.three.mod.VectorKeyframeTrack
   ]
   
@@ -1366,8 +1473,8 @@ trait TypeofTHREE extends StObject {
     /* mapping */ js.UndefOr[Mapping], 
     /* wrapS */ js.UndefOr[Wrapping], 
     /* wrapT */ js.UndefOr[Wrapping], 
-    /* magFilter */ js.UndefOr[TextureFilter], 
-    /* minFilter */ js.UndefOr[TextureFilter], 
+    /* magFilter */ js.UndefOr[MagnificationTextureFilter], 
+    /* minFilter */ js.UndefOr[MinificationTextureFilter], 
     /* format */ js.UndefOr[PixelFormat], 
     /* type */ js.UndefOr[TextureDataType], 
     /* anisotropy */ js.UndefOr[Double], 
@@ -1434,8 +1541,6 @@ trait TypeofTHREE extends StObject {
   ]
   
   var WebGLMultipleRenderTargets: Instantiable0[typings.three.mod.WebGLMultipleRenderTargets]
-  
-  var WebGLMultisampleRenderTarget: Instantiable0[typings.three.mod.WebGLMultisampleRenderTarget]
   
   var WebGLObjects: Instantiable4[
     /* gl */ WebGLRenderingContext, 
@@ -1516,51 +1621,39 @@ trait TypeofTHREE extends StObject {
   
   var WebXRManager: Instantiable2[/* renderer */ Any, /* gl */ WebGLRenderingContext, typings.three.mod.WebXRManager]
   
-  var WireframeGeometry: Instantiable0[typings.three.mod.WireframeGeometry[BufferGeometry]]
+  var WireframeGeometry: Instantiable0[typings.three.mod.WireframeGeometry[BufferGeometry[NormalBufferAttributes]]]
   
-  val WrapAroundEnding: InterpolationEndingModes
+  val WrapAroundEnding: `2402`
   
   var XRGripSpace: Instantiable0[typings.three.mod.XRGripSpace]
   
   var XRHandSpace: Instantiable0[typings.three.mod.XRHandSpace]
   
+  var XRJointSpace: Instantiable0[typings.three.mod.XRJointSpace]
+  
   var XRTargetRaySpace: Instantiable0[typings.three.mod.XRTargetRaySpace]
   
-  val ZeroCurvatureEnding: InterpolationEndingModes
+  val ZeroCurvatureEnding: `2400`
   
-  val ZeroFactor: BlendingDstFactor
+  val ZeroFactor: `200`
   
-  val ZeroSlopeEnding: InterpolationEndingModes
+  val ZeroSlopeEnding: `2401`
   
-  val ZeroStencilOp: StencilOp
+  val ZeroStencilOp: `0`
   
-  val _SRGBAFormat: PixelFormat
-  
-  val _SRGBFormat: PixelFormat
+  val _SRGBAFormat: /* 1035 */ Double
   
   def cloneUniforms(uniforms_src: Any): Any
   
   def cloneUniformsGroups(src: js.Array[UniformsGroup]): js.Array[UniformsGroup]
   
-  def fromHalfFloat(`val`: Double): Double
-  
   def mergeUniforms(uniforms: Any): Any
   
-  val sRGBEncoding: TextureEncoding
-  
-  def toHalfFloat(`val`: Double): Double
+  val sRGBEncoding: `3001`
 }
 object TypeofTHREE {
   
   inline def apply(
-    ACESFilmicToneMapping: ToneMapping,
-    AddEquation: BlendingEquation,
-    AddOperation: Combine,
-    AdditiveAnimationBlendMode: AnimationBlendMode,
-    AdditiveBlending: Blending,
-    AlphaFormat: PixelFormat,
-    AlwaysDepth: DepthModes,
-    AlwaysStencilFunc: StencilFunc,
     AmbientLight: Instantiable0[AmbientLight],
     AmbientLightProbe: Instantiable0[AmbientLightProbe],
     AnimationAction: Instantiable2[/* mixer */ AnimationMixer, /* clip */ AnimationClip, AnimationAction],
@@ -1570,12 +1663,12 @@ object TypeofTHREE {
     AnimationObjectGroup: Instantiable1[/* args (repeated) */ Any, AnimationObjectGroup],
     AnimationUtils: TypeofAnimationUtils,
     ArcCurve: Instantiable6[
-      /* aX */ Double, 
-      /* aY */ Double, 
-      /* aRadius */ Double, 
-      /* aStartAngle */ Double, 
-      /* aEndAngle */ Double, 
-      /* aClockwise */ Boolean, 
+      /* aX */ js.UndefOr[Double], 
+      /* aY */ js.UndefOr[Double], 
+      /* aRadius */ js.UndefOr[Double], 
+      /* aStartAngle */ js.UndefOr[Double], 
+      /* aEndAngle */ js.UndefOr[Double], 
+      /* aClockwise */ js.UndefOr[Boolean], 
       ArcCurve
     ],
     ArrayCamera: Instantiable0[ArrayCamera],
@@ -1594,14 +1687,11 @@ object TypeofTHREE {
     AudioListener: Instantiable0[typings.three.mod.AudioListener],
     AudioLoader: Instantiable0[AudioLoader],
     AxesHelper: Instantiable0[AxesHelper],
-    BackSide: Side,
-    BasicDepthPacking: DepthPackingStrategies,
-    BasicShadowMap: ShadowMapType,
-    Bone: Instantiable0[typings.three.mod.Bone],
+    Bone: Instantiable0[Bone],
     BooleanKeyframeTrack: Instantiable3[
       /* name */ String, 
-      /* times */ js.Array[Any], 
-      /* values */ js.Array[Any], 
+      /* times */ ArrayLike[Double], 
+      /* values */ ArrayLike[Any], 
       BooleanKeyframeTrack
     ],
     Box2: Instantiable0[Box2],
@@ -1610,10 +1700,8 @@ object TypeofTHREE {
     BoxGeometry: TypeofBoxGeometry,
     BoxHelper: Instantiable1[/* object */ Object3D[Event], BoxHelper],
     BufferAttribute: Instantiable2[/* array */ ArrayLike[Double], /* itemSize */ Double, BufferAttribute],
-    BufferGeometry: Instantiable0[typings.three.mod.BufferGeometry],
+    BufferGeometry: Instantiable0[typings.three.mod.BufferGeometry[NormalOrGLBufferAttributes]],
     BufferGeometryLoader: Instantiable0[BufferGeometryLoader],
-    BufferGeometryUtils: TypeofBufferGeometryUtils,
-    ByteType: TextureDataType,
     Cache: TypeofCache,
     Camera: Instantiable0[typings.three.mod.Camera],
     CameraHelper: Instantiable1[/* camera */ Camera, CameraHelper],
@@ -1622,47 +1710,47 @@ object TypeofTHREE {
       /* mapping */ js.UndefOr[Mapping], 
       /* wrapS */ js.UndefOr[Wrapping], 
       /* wrapT */ js.UndefOr[Wrapping], 
-      /* magFilter */ js.UndefOr[TextureFilter], 
-      /* minFilter */ js.UndefOr[TextureFilter], 
+      /* magFilter */ js.UndefOr[MagnificationTextureFilter], 
+      /* minFilter */ js.UndefOr[MinificationTextureFilter], 
       /* format */ js.UndefOr[PixelFormat], 
       /* type */ js.UndefOr[TextureDataType], 
       /* anisotropy */ js.UndefOr[Double], 
       CanvasTexture
     ],
     CapsuleGeometry: TypeofCapsuleGeometry,
+    CatmullRom: (Double, Double, Double, Double, Double) => Double,
     CatmullRomCurve3: Instantiable0[CatmullRomCurve3],
-    CineonToneMapping: ToneMapping,
     CircleGeometry: TypeofCircleGeometry,
-    ClampToEdgeWrapping: Wrapping,
     Clock: Instantiable0[Clock],
     Color: TypeofColor,
     ColorKeyframeTrack: Instantiable3[
       /* name */ String, 
-      /* times */ js.Array[Any], 
-      /* values */ js.Array[Any], 
+      /* times */ ArrayLike[Double], 
+      /* values */ ArrayLike[Double], 
       ColorKeyframeTrack
     ],
     ColorManagement: TypeofColorManagement,
-    CompressedArrayTexture: Instantiable4[
+    CompressedArrayTexture: Instantiable5[
       /* mipmaps */ js.Array[ImageData], 
       /* width */ Double, 
       /* height */ Double, 
       /* depth */ Double, 
+      /* format */ CompressedPixelFormat, 
       CompressedArrayTexture
     ],
     CompressedTexture: Instantiable12[
       /* mipmaps */ js.Array[ImageData], 
       /* width */ Double, 
       /* height */ Double, 
-      /* format */ js.UndefOr[CompressedPixelFormat], 
+      /* format */ CompressedPixelFormat, 
       /* type */ js.UndefOr[TextureDataType], 
       /* mapping */ js.UndefOr[Mapping], 
       /* wrapS */ js.UndefOr[Wrapping], 
       /* wrapT */ js.UndefOr[Wrapping], 
-      /* magFilter */ js.UndefOr[TextureFilter], 
-      /* minFilter */ js.UndefOr[TextureFilter], 
+      /* magFilter */ js.UndefOr[MagnificationTextureFilter], 
+      /* minFilter */ js.UndefOr[MinificationTextureFilter], 
       /* anisotropy */ js.UndefOr[Double], 
-      /* encoding */ js.UndefOr[TextureEncoding], 
+      /* colorSpace */ js.UndefOr[ColorSpace], 
       CompressedTexture
     ],
     CompressedTextureLoader: Instantiable0[CompressedTextureLoader],
@@ -1673,55 +1761,34 @@ object TypeofTHREE {
       /* renderTarget */ WebGLCubeRenderTarget, 
       CubeCamera
     ],
-    CubeReflectionMapping: Mapping,
-    CubeRefractionMapping: Mapping,
     CubeTexture: Instantiable10[
       /* images */ js.UndefOr[js.Array[Any]], 
-      /* mapping */ js.UndefOr[Mapping], 
+      /* mapping */ js.UndefOr[CubeTextureMapping], 
       /* wrapS */ js.UndefOr[Wrapping], 
       /* wrapT */ js.UndefOr[Wrapping], 
-      /* magFilter */ js.UndefOr[TextureFilter], 
-      /* minFilter */ js.UndefOr[TextureFilter], 
+      /* magFilter */ js.UndefOr[MagnificationTextureFilter], 
+      /* minFilter */ js.UndefOr[MinificationTextureFilter], 
       /* format */ js.UndefOr[PixelFormat], 
       /* type */ js.UndefOr[TextureDataType], 
       /* anisotropy */ js.UndefOr[Double], 
-      /* encoding */ js.UndefOr[TextureEncoding], 
+      /* colorSpace */ js.UndefOr[ColorSpace], 
       CubeTexture
     ],
     CubeTextureLoader: Instantiable0[CubeTextureLoader],
-    CubeUVReflectionMapping: Mapping,
-    CubicBezierCurve: Instantiable4[/* v0 */ Vector2, /* v1 */ Vector2, /* v2 */ Vector2, /* v3 */ Vector2, CubicBezierCurve],
-    CubicBezierCurve3: Instantiable4[
-      /* v0 */ Vector3, 
-      /* v1 */ Vector3, 
-      /* v2 */ Vector3, 
-      /* v3 */ Vector3, 
-      CubicBezierCurve3
-    ],
+    CubicBezier: (Double, Double, Double, Double, Double) => Double,
+    CubicBezierCurve: Instantiable0[CubicBezierCurve],
+    CubicBezierCurve3: Instantiable0[CubicBezierCurve3],
     CubicInterpolant: Instantiable3[
       /* parameterPositions */ Any, 
       /* samplesValues */ Any, 
       /* sampleSize */ Double, 
       CubicInterpolant
     ],
-    CullFaceBack: CullFace,
-    CullFaceFront: CullFace,
-    CullFaceFrontBack: CullFace,
-    CullFaceNone: CullFace,
-    Curve: TypeofCurve,
+    Curve: Instantiable0[Curve[Vector]],
     CurvePath: Instantiable0[CurvePath[Vector]],
-    CurveUtils: TypeofCurveUtils,
-    CustomBlending: Blending,
-    CustomToneMapping: ToneMapping,
     CylinderGeometry: TypeofCylinderGeometry,
     Cylindrical: Instantiable0[Cylindrical],
-    Data3DTexture: Instantiable4[
-      /* data */ BufferSource, 
-      /* width */ Double, 
-      /* height */ Double, 
-      /* depth */ Double, 
-      Data3DTexture
-    ],
+    Data3DTexture: Instantiable0[Data3DTexture],
     DataArrayTexture: Instantiable0[DataArrayTexture],
     DataTexture: Instantiable12[
       /* data */ js.UndefOr[BufferSource | Null], 
@@ -1732,85 +1799,61 @@ object TypeofTHREE {
       /* mapping */ js.UndefOr[Mapping], 
       /* wrapS */ js.UndefOr[Wrapping], 
       /* wrapT */ js.UndefOr[Wrapping], 
-      /* magFilter */ js.UndefOr[TextureFilter], 
-      /* minFilter */ js.UndefOr[TextureFilter], 
+      /* magFilter */ js.UndefOr[MagnificationTextureFilter], 
+      /* minFilter */ js.UndefOr[MinificationTextureFilter], 
       /* anisotropy */ js.UndefOr[Double], 
-      /* encoding */ js.UndefOr[TextureEncoding], 
+      /* colorSpace */ js.UndefOr[ColorSpace], 
       DataTexture
     ],
-    DataTexture2DArray: Instantiable0[DataTexture2DArray],
-    DataTexture3D: Instantiable4[
-      /* data */ BufferSource, 
-      /* width */ Double, 
-      /* height */ Double, 
-      /* depth */ Double, 
-      DataTexture3D
-    ],
     DataTextureLoader: Instantiable0[DataTextureLoader],
-    DecrementStencilOp: StencilOp,
-    DecrementWrapStencilOp: StencilOp,
+    DataUtils: TypeofDataUtils,
     DefaultLoadingManager: LoadingManager,
-    DepthFormat: PixelFormat,
-    DepthStencilFormat: PixelFormat,
-    DepthTexture: Instantiable9[
+    DepthTexture: Instantiable10[
       /* width */ Double, 
       /* height */ Double, 
       /* type */ js.UndefOr[TextureDataType], 
       /* mapping */ js.UndefOr[Mapping], 
       /* wrapS */ js.UndefOr[Wrapping], 
       /* wrapT */ js.UndefOr[Wrapping], 
-      /* magFilter */ js.UndefOr[TextureFilter], 
-      /* minFilter */ js.UndefOr[TextureFilter], 
+      /* magFilter */ js.UndefOr[MagnificationTextureFilter], 
+      /* minFilter */ js.UndefOr[MinificationTextureFilter], 
       /* anisotropy */ js.UndefOr[Double], 
+      /* format */ js.UndefOr[DeepTexturePixelFormat], 
       DepthTexture
     ],
     DirectionalLight: Instantiable0[typings.three.mod.DirectionalLight],
     DirectionalLightHelper: Instantiable1[/* light */ DirectionalLight, DirectionalLightHelper],
-    DirectionalLightShadow: Instantiable1[/* camera */ Camera, DirectionalLightShadow],
+    DirectionalLightShadow: Instantiable0[DirectionalLightShadow],
     DiscreteInterpolant: Instantiable3[
       /* parameterPositions */ Any, 
       /* samplesValues */ Any, 
       /* sampleSize */ Double, 
       DiscreteInterpolant
     ],
+    DisplayP3ColorSpace: /* "display-p3" */ String,
     DodecahedronGeometry: TypeofDodecahedronGeometr,
-    DoubleSide: Side,
-    DstAlphaFactor: BlendingDstFactor,
-    DstColorFactor: BlendingDstFactor,
-    DynamicCopyUsage: Usage,
-    DynamicDrawUsage: Usage,
-    DynamicReadUsage: Usage,
-    Earcut: TypeofEarcut,
-    EdgesGeometry: Instantiable0[EdgesGeometry[BufferGeometry]],
+    EdgesGeometry: Instantiable0[EdgesGeometry[BufferGeometry[NormalBufferAttributes]]],
     EllipseCurve: Instantiable8[
-      /* aX */ Double, 
-      /* aY */ Double, 
-      /* xRadius */ Double, 
-      /* yRadius */ Double, 
-      /* aStartAngle */ Double, 
-      /* aEndAngle */ Double, 
-      /* aClockwise */ Boolean, 
-      /* aRotation */ Double, 
+      /* aX */ js.UndefOr[Double], 
+      /* aY */ js.UndefOr[Double], 
+      /* xRadius */ js.UndefOr[Double], 
+      /* yRadius */ js.UndefOr[Double], 
+      /* aStartAngle */ js.UndefOr[Double], 
+      /* aEndAngle */ js.UndefOr[Double], 
+      /* aClockwise */ js.UndefOr[Boolean], 
+      /* aRotation */ js.UndefOr[Double], 
       EllipseCurve
     ],
-    EqualDepth: DepthModes,
-    EqualStencilFunc: StencilFunc,
-    EquirectangularReflectionMapping: Mapping,
-    EquirectangularRefractionMapping: Mapping,
     Euler: TypeofEuler,
     EventDispatcher: Instantiable0[EventDispatcher[BaseEvent]],
     ExtrudeGeometry: TypeofExtrudeGeometry,
     FileLoader: Instantiable0[FileLoader],
     Float16BufferAttribute: Instantiable2[/* array */ js.Iterable[Double], /* itemSize */ Double, Float16BufferAttribute],
-    Float32Attribute: Instantiable2[/* array */ Any, /* itemSize */ Double, Float32Attribute],
     Float32BufferAttribute: Instantiable2[/* array */ js.Iterable[Double], /* itemSize */ Double, Float32BufferAttribute],
-    Float64Attribute: Instantiable2[/* array */ Any, /* itemSize */ Double, Float64Attribute],
     Float64BufferAttribute: Instantiable2[/* array */ js.Iterable[Double], /* itemSize */ Double, Float64BufferAttribute],
-    FloatType: TextureDataType,
     Fog: Instantiable1[/* color */ ColorRepresentation, Fog],
-    FogExp2: Instantiable1[/* hex */ Double, FogExp2],
+    FogExp2: Instantiable1[/* color */ ColorRepresentation, FogExp2],
     FramebufferTexture: Instantiable3[/* width */ Double, /* height */ Double, /* format */ PixelFormat, FramebufferTexture],
-    FrontSide: Side,
     Frustum: Instantiable6[
       /* p0 */ js.UndefOr[Plane], 
       /* p1 */ js.UndefOr[Plane], 
@@ -1822,22 +1865,14 @@ object TypeofTHREE {
     ],
     GLBufferAttribute: Instantiable5[
       /* buffer */ WebGLBuffer, 
-      /* type */ Double, 
+      /* type */ GLenum, 
       /* itemSize */ Double, 
       /* elementSize */ `1` | `2` | `4`, 
       /* count */ Double, 
       GLBufferAttribute
     ],
-    GLSL1: GLSLVersion,
-    GLSL3: GLSLVersion,
-    GeometryUtils: TypeofGeometryUtils,
-    GreaterDepth: DepthModes,
-    GreaterEqualDepth: DepthModes,
-    GreaterEqualStencilFunc: StencilFunc,
-    GreaterStencilFunc: StencilFunc,
     GridHelper: Instantiable0[GridHelper],
     Group: Instantiable0[Group],
-    HalfFloatType: TextureDataType,
     HemisphereLight: Instantiable0[typings.three.mod.HemisphereLight],
     HemisphereLightHelper: Instantiable2[/* light */ HemisphereLight, /* size */ Double, HemisphereLightHelper],
     HemisphereLightProbe: Instantiable0[HemisphereLightProbe],
@@ -1845,8 +1880,6 @@ object TypeofTHREE {
     ImageBitmapLoader: Instantiable0[ImageBitmapLoader],
     ImageLoader: Instantiable0[ImageLoader],
     ImageUtils: TypeofImageUtils,
-    IncrementStencilOp: StencilOp,
-    IncrementWrapStencilOp: StencilOp,
     InstancedBufferAttribute: Instantiable2[/* array */ ArrayLike[Double], /* itemSize */ Double, InstancedBufferAttribute],
     InstancedBufferGeometry: Instantiable0[InstancedBufferGeometry],
     InstancedInterleavedBuffer: Instantiable2[/* array */ ArrayLike[Double], /* stride */ Double, InstancedInterleavedBuffer],
@@ -1854,15 +1887,11 @@ object TypeofTHREE {
       /* import warning: RewrittenClass.unapply cls was tparam TGeometry */ /* geometry */ Any, 
       /* import warning: RewrittenClass.unapply cls was tparam TMaterial */ /* material */ Any, 
       /* count */ Double, 
-      InstancedMesh[BufferGeometry, Material | js.Array[Material]]
+      InstancedMesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]]
     ],
-    Int16Attribute: Instantiable2[/* array */ Any, /* itemSize */ Double, Int16Attribute],
     Int16BufferAttribute: Instantiable2[/* array */ js.Iterable[Double], /* itemSize */ Double, Int16BufferAttribute],
-    Int32Attribute: Instantiable2[/* array */ Any, /* itemSize */ Double, Int32Attribute],
     Int32BufferAttribute: Instantiable2[/* array */ js.Iterable[Double], /* itemSize */ Double, Int32BufferAttribute],
-    Int8Attribute: Instantiable2[/* array */ Any, /* itemSize */ Double, Int8Attribute],
     Int8BufferAttribute: Instantiable2[/* array */ js.Iterable[Double], /* itemSize */ Double, Int8BufferAttribute],
-    IntType: TextureDataType,
     InterleavedBuffer: Instantiable2[
       /* array */ ArrayLike[Double], 
       /* stride */ Double, 
@@ -1880,60 +1909,41 @@ object TypeofTHREE {
       /* sampleSize */ Double, 
       Interpolant
     ],
-    InterpolateDiscrete: InterpolationModes,
-    InterpolateLinear: InterpolationModes,
-    InterpolateSmooth: InterpolationModes,
-    InvertStencilOp: StencilOp,
-    KeepStencilOp: StencilOp,
     KeyframeTrack: TypeofKeyframeTrack,
     LOD: Instantiable0[LOD],
     LatheGeometry: TypeofLatheGeometry,
     Layers: Instantiable0[Layers],
-    LessDepth: DepthModes,
-    LessEqualDepth: DepthModes,
-    LessEqualStencilFunc: StencilFunc,
-    LessStencilFunc: StencilFunc,
-    Light: Instantiable0[typings.three.mod.Light],
+    Light: Instantiable0[typings.three.mod.Light[js.UndefOr[LightShadow[Camera]]]],
     LightProbe: Instantiable0[LightProbe],
-    LightShadow: Instantiable1[/* camera */ Camera, LightShadow],
-    Line: Instantiable0[Line[BufferGeometry, Material | js.Array[Material]]],
+    LightShadow: Instantiable1[
+      /* import warning: RewrittenClass.unapply cls was tparam TCamera */ /* camera */ Any, 
+      typings.three.mod.LightShadow[Camera]
+    ],
+    Line: Instantiable0[Line[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]]],
     Line3: Instantiable0[Line3],
     LineBasicMaterial: Instantiable0[LineBasicMaterial],
-    LineCurve: Instantiable2[/* v1 */ Vector2, /* v2 */ Vector2, LineCurve],
-    LineCurve3: Instantiable2[/* v1 */ Vector3, /* v2 */ Vector3, LineCurve3],
+    LineCurve: Instantiable0[LineCurve],
+    LineCurve3: Instantiable0[LineCurve3],
     LineDashedMaterial: Instantiable0[LineDashedMaterial],
-    LineLoop: Instantiable0[LineLoop[BufferGeometry, Material | js.Array[Material]]],
-    LinePieces: Double,
-    LineSegments: Instantiable0[LineSegments[BufferGeometry, Material | js.Array[Material]]],
-    LineStrip: Double,
-    LinearEncoding: TextureEncoding,
-    LinearFilter: TextureFilter,
+    LineLoop: Instantiable0[LineLoop[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]]],
+    LineSegments: Instantiable0[
+      LineSegments[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]]
+    ],
     LinearInterpolant: Instantiable3[
       /* parameterPositions */ Any, 
       /* samplesValues */ Any, 
       /* sampleSize */ Double, 
       LinearInterpolant
     ],
-    LinearMipMapLinearFilter: TextureFilter,
-    LinearMipMapNearestFilter: TextureFilter,
-    LinearMipmapLinearFilter: TextureFilter,
-    LinearMipmapNearestFilter: TextureFilter,
-    LinearToneMapping: ToneMapping,
     Loader: Instantiable0[Loader],
     LoaderUtils: LoaderUtils,
     LoadingManager: Instantiable0[typings.three.mod.LoadingManager],
-    LoopOnce: AnimationActionLoopStyles,
-    LoopPingPong: AnimationActionLoopStyles,
-    LoopRepeat: AnimationActionLoopStyles,
-    LuminanceAlphaFormat: PixelFormat,
-    LuminanceFormat: PixelFormat,
     Material: Instantiable0[typings.three.mod.Material],
     MaterialLoader: Instantiable0[MaterialLoader],
     MathUtils: TypeofMathUtils,
     Matrix3: Instantiable0[Matrix3],
     Matrix4: Instantiable0[Matrix4],
-    MaxEquation: BlendingEquation,
-    Mesh: Instantiable0[Mesh[BufferGeometry, Material | js.Array[Material]]],
+    Mesh: Instantiable0[Mesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]]],
     MeshBasicMaterial: Instantiable0[MeshBasicMaterial],
     MeshDepthMaterial: Instantiable0[MeshDepthMaterial],
     MeshDistanceMaterial: Instantiable0[MeshDistanceMaterial],
@@ -1944,39 +1954,15 @@ object TypeofTHREE {
     MeshPhysicalMaterial: Instantiable0[MeshPhysicalMaterial],
     MeshStandardMaterial: Instantiable0[MeshStandardMaterial],
     MeshToonMaterial: Instantiable0[MeshToonMaterial],
-    MinEquation: BlendingEquation,
-    MirroredRepeatWrapping: Wrapping,
-    MixOperation: Combine,
-    MultiplyBlending: Blending,
-    MultiplyOperation: Combine,
-    NearestFilter: TextureFilter,
-    NearestMipMapLinearFilter: TextureFilter,
-    NearestMipMapNearestFilter: TextureFilter,
-    NearestMipmapLinearFilter: TextureFilter,
-    NearestMipmapNearestFilter: TextureFilter,
-    NeverDepth: DepthModes,
-    NeverStencilFunc: StencilFunc,
-    NoBlending: Blending,
-    NoToneMapping: ToneMapping,
-    NormalAnimationBlendMode: AnimationBlendMode,
-    NormalBlending: Blending,
-    NotEqualDepth: DepthModes,
-    NotEqualStencilFunc: StencilFunc,
     NumberKeyframeTrack: Instantiable3[
       /* name */ String, 
-      /* times */ js.Array[Any], 
-      /* values */ js.Array[Any], 
+      /* times */ ArrayLike[Double], 
+      /* values */ ArrayLike[Double], 
       NumberKeyframeTrack
     ],
     Object3D: TypeofObject3D,
     ObjectLoader: Instantiable0[ObjectLoader],
-    ObjectSpaceNormalMap: NormalMapTypes,
     OctahedronGeometry: TypeofOctahedronGeometry,
-    OneFactor: BlendingDstFactor,
-    OneMinusDstAlphaFactor: BlendingDstFactor,
-    OneMinusDstColorFactor: BlendingDstFactor,
-    OneMinusSrcAlphaFactor: BlendingDstFactor,
-    OneMinusSrcColorFactor: BlendingDstFactor,
     OrthographicCamera: Instantiable6[
       /* left */ js.UndefOr[Double], 
       /* right */ js.UndefOr[Double], 
@@ -1986,39 +1972,54 @@ object TypeofTHREE {
       /* far */ js.UndefOr[Double], 
       OrthographicCamera
     ],
-    PCFShadowMap: ShadowMapType,
-    PCFSoftShadowMap: ShadowMapType,
     PMREMGenerator: Instantiable1[/* renderer */ WebGLRenderer, PMREMGenerator],
     Path: Instantiable0[Path],
-    PerspectiveCamera: Instantiable0[PerspectiveCamera],
+    PerspectiveCamera: Instantiable0[typings.three.mod.PerspectiveCamera],
     Plane: Instantiable0[typings.three.mod.Plane],
     PlaneGeometry: TypeofPlaneGeometry,
     PlaneHelper: Instantiable1[/* plane */ Plane, PlaneHelper],
     PointLight: Instantiable0[typings.three.mod.PointLight],
-    PointLightHelper: Instantiable1[/* light */ PointLight, PointLightHelper]
+    PointLightHelper: Instantiable1[/* light */ PointLight, PointLightHelper],
+    PointLightShadow: Instantiable1[/* camera */ PerspectiveCamera, PointLightShadow],
+    Points: Instantiable0[
+      Points[BufferGeometry[NormalOrGLBufferAttributes], Material | js.Array[Material]]
+    ],
+    PointsMaterial: Instantiable0[PointsMaterial],
+    PolarGridHelper: Instantiable6[
+      /* radius */ js.UndefOr[Double], 
+      /* radials */ js.UndefOr[Double], 
+      /* circles */ js.UndefOr[Double], 
+      /* divisions */ js.UndefOr[Double], 
+      /* color1 */ js.UndefOr[ColorRepresentation], 
+      /* color2 */ js.UndefOr[ColorRepresentation], 
+      PolarGridHelper
+    ],
+    PolyhedronGeometry: TypeofPolyhedronGeometry,
+    PositionalAudio: Instantiable1[/* listener */ AudioListener, PositionalAudio],
+    PropertyBinding: TypeofPropertyBinding
   ): TypeofTHREE = {
-    val __obj = js.Dynamic.literal(ACESFilmicToneMapping = ACESFilmicToneMapping.asInstanceOf[js.Any], AddEquation = AddEquation.asInstanceOf[js.Any], AddOperation = AddOperation.asInstanceOf[js.Any], AdditiveAnimationBlendMode = AdditiveAnimationBlendMode.asInstanceOf[js.Any], AdditiveBlending = AdditiveBlending.asInstanceOf[js.Any], AlphaFormat = AlphaFormat.asInstanceOf[js.Any], AlwaysDepth = AlwaysDepth.asInstanceOf[js.Any], AlwaysStencilFunc = AlwaysStencilFunc.asInstanceOf[js.Any], AmbientLight = AmbientLight.asInstanceOf[js.Any], AmbientLightProbe = AmbientLightProbe.asInstanceOf[js.Any], AnimationAction = AnimationAction.asInstanceOf[js.Any], AnimationClip = AnimationClip.asInstanceOf[js.Any], AnimationLoader = AnimationLoader.asInstanceOf[js.Any], AnimationMixer = AnimationMixer.asInstanceOf[js.Any], AnimationObjectGroup = AnimationObjectGroup.asInstanceOf[js.Any], AnimationUtils = AnimationUtils.asInstanceOf[js.Any], ArcCurve = ArcCurve.asInstanceOf[js.Any], ArrayCamera = ArrayCamera.asInstanceOf[js.Any], ArrowHelper = ArrowHelper.asInstanceOf[js.Any], Audio = Audio.asInstanceOf[js.Any], AudioAnalyser = AudioAnalyser.asInstanceOf[js.Any], AudioContext = AudioContext.asInstanceOf[js.Any], AudioListener = AudioListener.asInstanceOf[js.Any], AudioLoader = AudioLoader.asInstanceOf[js.Any], AxesHelper = AxesHelper.asInstanceOf[js.Any], BackSide = BackSide.asInstanceOf[js.Any], BasicDepthPacking = BasicDepthPacking.asInstanceOf[js.Any], BasicShadowMap = BasicShadowMap.asInstanceOf[js.Any], Bone = Bone.asInstanceOf[js.Any], BooleanKeyframeTrack = BooleanKeyframeTrack.asInstanceOf[js.Any], Box2 = Box2.asInstanceOf[js.Any], Box3 = Box3.asInstanceOf[js.Any], Box3Helper = Box3Helper.asInstanceOf[js.Any], BoxGeometry = BoxGeometry.asInstanceOf[js.Any], BoxHelper = BoxHelper.asInstanceOf[js.Any], BufferAttribute = BufferAttribute.asInstanceOf[js.Any], BufferGeometry = BufferGeometry.asInstanceOf[js.Any], BufferGeometryLoader = BufferGeometryLoader.asInstanceOf[js.Any], BufferGeometryUtils = BufferGeometryUtils.asInstanceOf[js.Any], ByteType = ByteType.asInstanceOf[js.Any], Cache = Cache.asInstanceOf[js.Any], Camera = Camera.asInstanceOf[js.Any], CameraHelper = CameraHelper.asInstanceOf[js.Any], CanvasTexture = CanvasTexture.asInstanceOf[js.Any], CapsuleGeometry = CapsuleGeometry.asInstanceOf[js.Any], CatmullRomCurve3 = CatmullRomCurve3.asInstanceOf[js.Any], CineonToneMapping = CineonToneMapping.asInstanceOf[js.Any], CircleGeometry = CircleGeometry.asInstanceOf[js.Any], ClampToEdgeWrapping = ClampToEdgeWrapping.asInstanceOf[js.Any], Clock = Clock.asInstanceOf[js.Any], Color = Color.asInstanceOf[js.Any], ColorKeyframeTrack = ColorKeyframeTrack.asInstanceOf[js.Any], ColorManagement = ColorManagement.asInstanceOf[js.Any], CompressedArrayTexture = CompressedArrayTexture.asInstanceOf[js.Any], CompressedTexture = CompressedTexture.asInstanceOf[js.Any], CompressedTextureLoader = CompressedTextureLoader.asInstanceOf[js.Any], ConeGeometry = ConeGeometry.asInstanceOf[js.Any], CubeCamera = CubeCamera.asInstanceOf[js.Any], CubeReflectionMapping = CubeReflectionMapping.asInstanceOf[js.Any], CubeRefractionMapping = CubeRefractionMapping.asInstanceOf[js.Any], CubeTexture = CubeTexture.asInstanceOf[js.Any], CubeTextureLoader = CubeTextureLoader.asInstanceOf[js.Any], CubeUVReflectionMapping = CubeUVReflectionMapping.asInstanceOf[js.Any], CubicBezierCurve = CubicBezierCurve.asInstanceOf[js.Any], CubicBezierCurve3 = CubicBezierCurve3.asInstanceOf[js.Any], CubicInterpolant = CubicInterpolant.asInstanceOf[js.Any], CullFaceBack = CullFaceBack.asInstanceOf[js.Any], CullFaceFront = CullFaceFront.asInstanceOf[js.Any], CullFaceFrontBack = CullFaceFrontBack.asInstanceOf[js.Any], CullFaceNone = CullFaceNone.asInstanceOf[js.Any], Curve = Curve.asInstanceOf[js.Any], CurvePath = CurvePath.asInstanceOf[js.Any], CurveUtils = CurveUtils.asInstanceOf[js.Any], CustomBlending = CustomBlending.asInstanceOf[js.Any], CustomToneMapping = CustomToneMapping.asInstanceOf[js.Any], CylinderGeometry = CylinderGeometry.asInstanceOf[js.Any], Cylindrical = Cylindrical.asInstanceOf[js.Any], Data3DTexture = Data3DTexture.asInstanceOf[js.Any], DataArrayTexture = DataArrayTexture.asInstanceOf[js.Any], DataTexture = DataTexture.asInstanceOf[js.Any], DataTexture2DArray = DataTexture2DArray.asInstanceOf[js.Any], DataTexture3D = DataTexture3D.asInstanceOf[js.Any], DataTextureLoader = DataTextureLoader.asInstanceOf[js.Any], DecrementStencilOp = DecrementStencilOp.asInstanceOf[js.Any], DecrementWrapStencilOp = DecrementWrapStencilOp.asInstanceOf[js.Any], DefaultLoadingManager = DefaultLoadingManager.asInstanceOf[js.Any], DepthFormat = DepthFormat.asInstanceOf[js.Any], DepthStencilFormat = DepthStencilFormat.asInstanceOf[js.Any], DepthTexture = DepthTexture.asInstanceOf[js.Any], DirectionalLight = DirectionalLight.asInstanceOf[js.Any], DirectionalLightHelper = DirectionalLightHelper.asInstanceOf[js.Any], DirectionalLightShadow = DirectionalLightShadow.asInstanceOf[js.Any], DiscreteInterpolant = DiscreteInterpolant.asInstanceOf[js.Any], DodecahedronGeometry = DodecahedronGeometry.asInstanceOf[js.Any], DoubleSide = DoubleSide.asInstanceOf[js.Any], DstAlphaFactor = DstAlphaFactor.asInstanceOf[js.Any], DstColorFactor = DstColorFactor.asInstanceOf[js.Any], DynamicCopyUsage = DynamicCopyUsage.asInstanceOf[js.Any], DynamicDrawUsage = DynamicDrawUsage.asInstanceOf[js.Any], DynamicReadUsage = DynamicReadUsage.asInstanceOf[js.Any], Earcut = Earcut.asInstanceOf[js.Any], EdgesGeometry = EdgesGeometry.asInstanceOf[js.Any], EllipseCurve = EllipseCurve.asInstanceOf[js.Any], EqualDepth = EqualDepth.asInstanceOf[js.Any], EqualStencilFunc = EqualStencilFunc.asInstanceOf[js.Any], EquirectangularReflectionMapping = EquirectangularReflectionMapping.asInstanceOf[js.Any], EquirectangularRefractionMapping = EquirectangularRefractionMapping.asInstanceOf[js.Any], Euler = Euler.asInstanceOf[js.Any], EventDispatcher = EventDispatcher.asInstanceOf[js.Any], ExtrudeGeometry = ExtrudeGeometry.asInstanceOf[js.Any], FileLoader = FileLoader.asInstanceOf[js.Any], Float16BufferAttribute = Float16BufferAttribute.asInstanceOf[js.Any], Float32Attribute = Float32Attribute.asInstanceOf[js.Any], Float32BufferAttribute = Float32BufferAttribute.asInstanceOf[js.Any], Float64Attribute = Float64Attribute.asInstanceOf[js.Any], Float64BufferAttribute = Float64BufferAttribute.asInstanceOf[js.Any], FloatType = FloatType.asInstanceOf[js.Any], Fog = Fog.asInstanceOf[js.Any], FogExp2 = FogExp2.asInstanceOf[js.Any], FramebufferTexture = FramebufferTexture.asInstanceOf[js.Any], FrontSide = FrontSide.asInstanceOf[js.Any], Frustum = Frustum.asInstanceOf[js.Any], GLBufferAttribute = GLBufferAttribute.asInstanceOf[js.Any], GLSL1 = GLSL1.asInstanceOf[js.Any], GLSL3 = GLSL3.asInstanceOf[js.Any], GeometryUtils = GeometryUtils.asInstanceOf[js.Any], GreaterDepth = GreaterDepth.asInstanceOf[js.Any], GreaterEqualDepth = GreaterEqualDepth.asInstanceOf[js.Any], GreaterEqualStencilFunc = GreaterEqualStencilFunc.asInstanceOf[js.Any], GreaterStencilFunc = GreaterStencilFunc.asInstanceOf[js.Any], GridHelper = GridHelper.asInstanceOf[js.Any], Group = Group.asInstanceOf[js.Any], HalfFloatType = HalfFloatType.asInstanceOf[js.Any], HemisphereLight = HemisphereLight.asInstanceOf[js.Any], HemisphereLightHelper = HemisphereLightHelper.asInstanceOf[js.Any], HemisphereLightProbe = HemisphereLightProbe.asInstanceOf[js.Any], IcosahedronGeometry = IcosahedronGeometry.asInstanceOf[js.Any], ImageBitmapLoader = ImageBitmapLoader.asInstanceOf[js.Any], ImageLoader = ImageLoader.asInstanceOf[js.Any], ImageUtils = ImageUtils.asInstanceOf[js.Any], IncrementStencilOp = IncrementStencilOp.asInstanceOf[js.Any], IncrementWrapStencilOp = IncrementWrapStencilOp.asInstanceOf[js.Any], InstancedBufferAttribute = InstancedBufferAttribute.asInstanceOf[js.Any], InstancedBufferGeometry = InstancedBufferGeometry.asInstanceOf[js.Any], InstancedInterleavedBuffer = InstancedInterleavedBuffer.asInstanceOf[js.Any], InstancedMesh = InstancedMesh.asInstanceOf[js.Any], Int16Attribute = Int16Attribute.asInstanceOf[js.Any], Int16BufferAttribute = Int16BufferAttribute.asInstanceOf[js.Any], Int32Attribute = Int32Attribute.asInstanceOf[js.Any], Int32BufferAttribute = Int32BufferAttribute.asInstanceOf[js.Any], Int8Attribute = Int8Attribute.asInstanceOf[js.Any], Int8BufferAttribute = Int8BufferAttribute.asInstanceOf[js.Any], IntType = IntType.asInstanceOf[js.Any], InterleavedBuffer = InterleavedBuffer.asInstanceOf[js.Any], InterleavedBufferAttribute = InterleavedBufferAttribute.asInstanceOf[js.Any], Interpolant = Interpolant.asInstanceOf[js.Any], InterpolateDiscrete = InterpolateDiscrete.asInstanceOf[js.Any], InterpolateLinear = InterpolateLinear.asInstanceOf[js.Any], InterpolateSmooth = InterpolateSmooth.asInstanceOf[js.Any], InvertStencilOp = InvertStencilOp.asInstanceOf[js.Any], KeepStencilOp = KeepStencilOp.asInstanceOf[js.Any], KeyframeTrack = KeyframeTrack.asInstanceOf[js.Any], LOD = LOD.asInstanceOf[js.Any], LatheGeometry = LatheGeometry.asInstanceOf[js.Any], Layers = Layers.asInstanceOf[js.Any], LessDepth = LessDepth.asInstanceOf[js.Any], LessEqualDepth = LessEqualDepth.asInstanceOf[js.Any], LessEqualStencilFunc = LessEqualStencilFunc.asInstanceOf[js.Any], LessStencilFunc = LessStencilFunc.asInstanceOf[js.Any], Light = Light.asInstanceOf[js.Any], LightProbe = LightProbe.asInstanceOf[js.Any], LightShadow = LightShadow.asInstanceOf[js.Any], Line = Line.asInstanceOf[js.Any], Line3 = Line3.asInstanceOf[js.Any], LineBasicMaterial = LineBasicMaterial.asInstanceOf[js.Any], LineCurve = LineCurve.asInstanceOf[js.Any], LineCurve3 = LineCurve3.asInstanceOf[js.Any], LineDashedMaterial = LineDashedMaterial.asInstanceOf[js.Any], LineLoop = LineLoop.asInstanceOf[js.Any], LinePieces = LinePieces.asInstanceOf[js.Any], LineSegments = LineSegments.asInstanceOf[js.Any], LineStrip = LineStrip.asInstanceOf[js.Any], LinearEncoding = LinearEncoding.asInstanceOf[js.Any], LinearFilter = LinearFilter.asInstanceOf[js.Any], LinearInterpolant = LinearInterpolant.asInstanceOf[js.Any], LinearMipMapLinearFilter = LinearMipMapLinearFilter.asInstanceOf[js.Any], LinearMipMapNearestFilter = LinearMipMapNearestFilter.asInstanceOf[js.Any], LinearMipmapLinearFilter = LinearMipmapLinearFilter.asInstanceOf[js.Any], LinearMipmapNearestFilter = LinearMipmapNearestFilter.asInstanceOf[js.Any], LinearToneMapping = LinearToneMapping.asInstanceOf[js.Any], Loader = Loader.asInstanceOf[js.Any], LoaderUtils = LoaderUtils.asInstanceOf[js.Any], LoadingManager = LoadingManager.asInstanceOf[js.Any], LoopOnce = LoopOnce.asInstanceOf[js.Any], LoopPingPong = LoopPingPong.asInstanceOf[js.Any], LoopRepeat = LoopRepeat.asInstanceOf[js.Any], LuminanceAlphaFormat = LuminanceAlphaFormat.asInstanceOf[js.Any], LuminanceFormat = LuminanceFormat.asInstanceOf[js.Any], Material = Material.asInstanceOf[js.Any], MaterialLoader = MaterialLoader.asInstanceOf[js.Any], MathUtils = MathUtils.asInstanceOf[js.Any], Matrix3 = Matrix3.asInstanceOf[js.Any], Matrix4 = Matrix4.asInstanceOf[js.Any], MaxEquation = MaxEquation.asInstanceOf[js.Any], Mesh = Mesh.asInstanceOf[js.Any], MeshBasicMaterial = MeshBasicMaterial.asInstanceOf[js.Any], MeshDepthMaterial = MeshDepthMaterial.asInstanceOf[js.Any], MeshDistanceMaterial = MeshDistanceMaterial.asInstanceOf[js.Any], MeshLambertMaterial = MeshLambertMaterial.asInstanceOf[js.Any], MeshMatcapMaterial = MeshMatcapMaterial.asInstanceOf[js.Any], MeshNormalMaterial = MeshNormalMaterial.asInstanceOf[js.Any], MeshPhongMaterial = MeshPhongMaterial.asInstanceOf[js.Any], MeshPhysicalMaterial = MeshPhysicalMaterial.asInstanceOf[js.Any], MeshStandardMaterial = MeshStandardMaterial.asInstanceOf[js.Any], MeshToonMaterial = MeshToonMaterial.asInstanceOf[js.Any], MinEquation = MinEquation.asInstanceOf[js.Any], MirroredRepeatWrapping = MirroredRepeatWrapping.asInstanceOf[js.Any], MixOperation = MixOperation.asInstanceOf[js.Any], MultiplyBlending = MultiplyBlending.asInstanceOf[js.Any], MultiplyOperation = MultiplyOperation.asInstanceOf[js.Any], NearestFilter = NearestFilter.asInstanceOf[js.Any], NearestMipMapLinearFilter = NearestMipMapLinearFilter.asInstanceOf[js.Any], NearestMipMapNearestFilter = NearestMipMapNearestFilter.asInstanceOf[js.Any], NearestMipmapLinearFilter = NearestMipmapLinearFilter.asInstanceOf[js.Any], NearestMipmapNearestFilter = NearestMipmapNearestFilter.asInstanceOf[js.Any], NeverDepth = NeverDepth.asInstanceOf[js.Any], NeverStencilFunc = NeverStencilFunc.asInstanceOf[js.Any], NoBlending = NoBlending.asInstanceOf[js.Any], NoToneMapping = NoToneMapping.asInstanceOf[js.Any], NormalAnimationBlendMode = NormalAnimationBlendMode.asInstanceOf[js.Any], NormalBlending = NormalBlending.asInstanceOf[js.Any], NotEqualDepth = NotEqualDepth.asInstanceOf[js.Any], NotEqualStencilFunc = NotEqualStencilFunc.asInstanceOf[js.Any], NumberKeyframeTrack = NumberKeyframeTrack.asInstanceOf[js.Any], Object3D = Object3D.asInstanceOf[js.Any], ObjectLoader = ObjectLoader.asInstanceOf[js.Any], ObjectSpaceNormalMap = ObjectSpaceNormalMap.asInstanceOf[js.Any], OctahedronGeometry = OctahedronGeometry.asInstanceOf[js.Any], OneFactor = OneFactor.asInstanceOf[js.Any], OneMinusDstAlphaFactor = OneMinusDstAlphaFactor.asInstanceOf[js.Any], OneMinusDstColorFactor = OneMinusDstColorFactor.asInstanceOf[js.Any], OneMinusSrcAlphaFactor = OneMinusSrcAlphaFactor.asInstanceOf[js.Any], OneMinusSrcColorFactor = OneMinusSrcColorFactor.asInstanceOf[js.Any], OrthographicCamera = OrthographicCamera.asInstanceOf[js.Any], PCFShadowMap = PCFShadowMap.asInstanceOf[js.Any], PCFSoftShadowMap = PCFSoftShadowMap.asInstanceOf[js.Any], PMREMGenerator = PMREMGenerator.asInstanceOf[js.Any], Path = Path.asInstanceOf[js.Any], PerspectiveCamera = PerspectiveCamera.asInstanceOf[js.Any], Plane = Plane.asInstanceOf[js.Any], PlaneGeometry = PlaneGeometry.asInstanceOf[js.Any], PlaneHelper = PlaneHelper.asInstanceOf[js.Any], PointLight = PointLight.asInstanceOf[js.Any], PointLightHelper = PointLightHelper.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(ACESFilmicToneMapping = 4, AddEquation = 100, AddOperation = 2, AdditiveAnimationBlendMode = 2501, AdditiveBlending = 2, AlphaFormat = 1021, AlwaysDepth = 1, AlwaysStencilFunc = 519, AmbientLight = AmbientLight.asInstanceOf[js.Any], AmbientLightProbe = AmbientLightProbe.asInstanceOf[js.Any], AnimationAction = AnimationAction.asInstanceOf[js.Any], AnimationClip = AnimationClip.asInstanceOf[js.Any], AnimationLoader = AnimationLoader.asInstanceOf[js.Any], AnimationMixer = AnimationMixer.asInstanceOf[js.Any], AnimationObjectGroup = AnimationObjectGroup.asInstanceOf[js.Any], AnimationUtils = AnimationUtils.asInstanceOf[js.Any], ArcCurve = ArcCurve.asInstanceOf[js.Any], ArrayCamera = ArrayCamera.asInstanceOf[js.Any], ArrowHelper = ArrowHelper.asInstanceOf[js.Any], Audio = Audio.asInstanceOf[js.Any], AudioAnalyser = AudioAnalyser.asInstanceOf[js.Any], AudioContext = AudioContext.asInstanceOf[js.Any], AudioListener = AudioListener.asInstanceOf[js.Any], AudioLoader = AudioLoader.asInstanceOf[js.Any], AxesHelper = AxesHelper.asInstanceOf[js.Any], BackSide = 1, BasicDepthPacking = 3200, BasicShadowMap = 0, Bone = Bone.asInstanceOf[js.Any], BooleanKeyframeTrack = BooleanKeyframeTrack.asInstanceOf[js.Any], Box2 = Box2.asInstanceOf[js.Any], Box3 = Box3.asInstanceOf[js.Any], Box3Helper = Box3Helper.asInstanceOf[js.Any], BoxGeometry = BoxGeometry.asInstanceOf[js.Any], BoxHelper = BoxHelper.asInstanceOf[js.Any], BufferAttribute = BufferAttribute.asInstanceOf[js.Any], BufferGeometry = BufferGeometry.asInstanceOf[js.Any], BufferGeometryLoader = BufferGeometryLoader.asInstanceOf[js.Any], ByteType = 1010, Cache = Cache.asInstanceOf[js.Any], Camera = Camera.asInstanceOf[js.Any], CameraHelper = CameraHelper.asInstanceOf[js.Any], CanvasTexture = CanvasTexture.asInstanceOf[js.Any], CapsuleGeometry = CapsuleGeometry.asInstanceOf[js.Any], CatmullRom = js.Any.fromFunction5(CatmullRom), CatmullRomCurve3 = CatmullRomCurve3.asInstanceOf[js.Any], CineonToneMapping = 3, CircleGeometry = CircleGeometry.asInstanceOf[js.Any], ClampToEdgeWrapping = 1001, Clock = Clock.asInstanceOf[js.Any], Color = Color.asInstanceOf[js.Any], ColorKeyframeTrack = ColorKeyframeTrack.asInstanceOf[js.Any], ColorManagement = ColorManagement.asInstanceOf[js.Any], CompressedArrayTexture = CompressedArrayTexture.asInstanceOf[js.Any], CompressedTexture = CompressedTexture.asInstanceOf[js.Any], CompressedTextureLoader = CompressedTextureLoader.asInstanceOf[js.Any], ConeGeometry = ConeGeometry.asInstanceOf[js.Any], CubeCamera = CubeCamera.asInstanceOf[js.Any], CubeReflectionMapping = 301, CubeRefractionMapping = 302, CubeTexture = CubeTexture.asInstanceOf[js.Any], CubeTextureLoader = CubeTextureLoader.asInstanceOf[js.Any], CubeUVReflectionMapping = 306, CubicBezier = js.Any.fromFunction5(CubicBezier), CubicBezierCurve = CubicBezierCurve.asInstanceOf[js.Any], CubicBezierCurve3 = CubicBezierCurve3.asInstanceOf[js.Any], CubicInterpolant = CubicInterpolant.asInstanceOf[js.Any], CullFaceBack = 1, CullFaceFront = 2, CullFaceFrontBack = 3, CullFaceNone = 0, Curve = Curve.asInstanceOf[js.Any], CurvePath = CurvePath.asInstanceOf[js.Any], CustomBlending = 5, CustomToneMapping = 5, CylinderGeometry = CylinderGeometry.asInstanceOf[js.Any], Cylindrical = Cylindrical.asInstanceOf[js.Any], Data3DTexture = Data3DTexture.asInstanceOf[js.Any], DataArrayTexture = DataArrayTexture.asInstanceOf[js.Any], DataTexture = DataTexture.asInstanceOf[js.Any], DataTextureLoader = DataTextureLoader.asInstanceOf[js.Any], DataUtils = DataUtils.asInstanceOf[js.Any], DecrementStencilOp = 7283, DecrementWrapStencilOp = 34056, DefaultLoadingManager = DefaultLoadingManager.asInstanceOf[js.Any], DepthFormat = 1026, DepthStencilFormat = 1027, DepthTexture = DepthTexture.asInstanceOf[js.Any], DirectionalLight = DirectionalLight.asInstanceOf[js.Any], DirectionalLightHelper = DirectionalLightHelper.asInstanceOf[js.Any], DirectionalLightShadow = DirectionalLightShadow.asInstanceOf[js.Any], DiscreteInterpolant = DiscreteInterpolant.asInstanceOf[js.Any], DisplayP3ColorSpace = DisplayP3ColorSpace.asInstanceOf[js.Any], DodecahedronGeometry = DodecahedronGeometry.asInstanceOf[js.Any], DoubleSide = 2, DstAlphaFactor = 206, DstColorFactor = 208, DynamicCopyUsage = 35050, DynamicDrawUsage = 35048, DynamicReadUsage = 35049, EdgesGeometry = EdgesGeometry.asInstanceOf[js.Any], EllipseCurve = EllipseCurve.asInstanceOf[js.Any], EqualDepth = 4, EqualStencilFunc = 514, EquirectangularReflectionMapping = 303, EquirectangularRefractionMapping = 304, Euler = Euler.asInstanceOf[js.Any], EventDispatcher = EventDispatcher.asInstanceOf[js.Any], ExtrudeGeometry = ExtrudeGeometry.asInstanceOf[js.Any], FileLoader = FileLoader.asInstanceOf[js.Any], Float16BufferAttribute = Float16BufferAttribute.asInstanceOf[js.Any], Float32BufferAttribute = Float32BufferAttribute.asInstanceOf[js.Any], Float64BufferAttribute = Float64BufferAttribute.asInstanceOf[js.Any], FloatType = 1015, Fog = Fog.asInstanceOf[js.Any], FogExp2 = FogExp2.asInstanceOf[js.Any], FramebufferTexture = FramebufferTexture.asInstanceOf[js.Any], FrontSide = 0, Frustum = Frustum.asInstanceOf[js.Any], GLBufferAttribute = GLBufferAttribute.asInstanceOf[js.Any], GLSL1 = "100", GLSL3 = "300 es", GreaterDepth = 6, GreaterEqualDepth = 5, GreaterEqualStencilFunc = 518, GreaterStencilFunc = 516, GridHelper = GridHelper.asInstanceOf[js.Any], Group = Group.asInstanceOf[js.Any], HalfFloatType = 1016, HemisphereLight = HemisphereLight.asInstanceOf[js.Any], HemisphereLightHelper = HemisphereLightHelper.asInstanceOf[js.Any], HemisphereLightProbe = HemisphereLightProbe.asInstanceOf[js.Any], IcosahedronGeometry = IcosahedronGeometry.asInstanceOf[js.Any], ImageBitmapLoader = ImageBitmapLoader.asInstanceOf[js.Any], ImageLoader = ImageLoader.asInstanceOf[js.Any], ImageUtils = ImageUtils.asInstanceOf[js.Any], IncrementStencilOp = 7682, IncrementWrapStencilOp = 34055, InstancedBufferAttribute = InstancedBufferAttribute.asInstanceOf[js.Any], InstancedBufferGeometry = InstancedBufferGeometry.asInstanceOf[js.Any], InstancedInterleavedBuffer = InstancedInterleavedBuffer.asInstanceOf[js.Any], InstancedMesh = InstancedMesh.asInstanceOf[js.Any], Int16BufferAttribute = Int16BufferAttribute.asInstanceOf[js.Any], Int32BufferAttribute = Int32BufferAttribute.asInstanceOf[js.Any], Int8BufferAttribute = Int8BufferAttribute.asInstanceOf[js.Any], IntType = 1013, InterleavedBuffer = InterleavedBuffer.asInstanceOf[js.Any], InterleavedBufferAttribute = InterleavedBufferAttribute.asInstanceOf[js.Any], Interpolant = Interpolant.asInstanceOf[js.Any], InterpolateDiscrete = 2300, InterpolateLinear = 2301, InterpolateSmooth = 2302, InvertStencilOp = 5386, KeepStencilOp = 7680, KeyframeTrack = KeyframeTrack.asInstanceOf[js.Any], LOD = LOD.asInstanceOf[js.Any], LatheGeometry = LatheGeometry.asInstanceOf[js.Any], Layers = Layers.asInstanceOf[js.Any], LessDepth = 2, LessEqualDepth = 3, LessEqualStencilFunc = 515, LessStencilFunc = 513, Light = Light.asInstanceOf[js.Any], LightProbe = LightProbe.asInstanceOf[js.Any], LightShadow = LightShadow.asInstanceOf[js.Any], Line = Line.asInstanceOf[js.Any], Line3 = Line3.asInstanceOf[js.Any], LineBasicMaterial = LineBasicMaterial.asInstanceOf[js.Any], LineCurve = LineCurve.asInstanceOf[js.Any], LineCurve3 = LineCurve3.asInstanceOf[js.Any], LineDashedMaterial = LineDashedMaterial.asInstanceOf[js.Any], LineLoop = LineLoop.asInstanceOf[js.Any], LineSegments = LineSegments.asInstanceOf[js.Any], LinearEncoding = 3000, LinearFilter = 1006, LinearInterpolant = LinearInterpolant.asInstanceOf[js.Any], LinearMipMapLinearFilter = 1008, LinearMipMapNearestFilter = 1007, LinearMipmapLinearFilter = 1008, LinearMipmapNearestFilter = 1007, LinearSRGBColorSpace = "srgb-linear", LinearToneMapping = 1, Loader = Loader.asInstanceOf[js.Any], LoaderUtils = LoaderUtils.asInstanceOf[js.Any], LoadingManager = LoadingManager.asInstanceOf[js.Any], LoopOnce = 2200, LoopPingPong = 2202, LoopRepeat = 2201, LuminanceAlphaFormat = 1025, LuminanceFormat = 1024, Material = Material.asInstanceOf[js.Any], MaterialLoader = MaterialLoader.asInstanceOf[js.Any], MathUtils = MathUtils.asInstanceOf[js.Any], Matrix3 = Matrix3.asInstanceOf[js.Any], Matrix4 = Matrix4.asInstanceOf[js.Any], MaxEquation = 104, Mesh = Mesh.asInstanceOf[js.Any], MeshBasicMaterial = MeshBasicMaterial.asInstanceOf[js.Any], MeshDepthMaterial = MeshDepthMaterial.asInstanceOf[js.Any], MeshDistanceMaterial = MeshDistanceMaterial.asInstanceOf[js.Any], MeshLambertMaterial = MeshLambertMaterial.asInstanceOf[js.Any], MeshMatcapMaterial = MeshMatcapMaterial.asInstanceOf[js.Any], MeshNormalMaterial = MeshNormalMaterial.asInstanceOf[js.Any], MeshPhongMaterial = MeshPhongMaterial.asInstanceOf[js.Any], MeshPhysicalMaterial = MeshPhysicalMaterial.asInstanceOf[js.Any], MeshStandardMaterial = MeshStandardMaterial.asInstanceOf[js.Any], MeshToonMaterial = MeshToonMaterial.asInstanceOf[js.Any], MinEquation = 103, MirroredRepeatWrapping = 1002, MixOperation = 1, MultiplyBlending = 4, MultiplyOperation = 0, NearestFilter = 1003, NearestMipMapLinearFilter = 1005, NearestMipMapNearestFilter = 1004, NearestMipmapLinearFilter = 1005, NearestMipmapNearestFilter = 1004, NeverDepth = 0, NeverStencilFunc = 512, NoBlending = 0, NoColorSpace = "", NoToneMapping = 0, NormalAnimationBlendMode = 2500, NormalBlending = 1, NotEqualDepth = 7, NotEqualStencilFunc = 517, NumberKeyframeTrack = NumberKeyframeTrack.asInstanceOf[js.Any], Object3D = Object3D.asInstanceOf[js.Any], ObjectLoader = ObjectLoader.asInstanceOf[js.Any], ObjectSpaceNormalMap = 1, OctahedronGeometry = OctahedronGeometry.asInstanceOf[js.Any], OneFactor = 201, OneMinusDstAlphaFactor = 207, OneMinusDstColorFactor = 209, OneMinusSrcAlphaFactor = 205, OneMinusSrcColorFactor = 203, OrthographicCamera = OrthographicCamera.asInstanceOf[js.Any], PCFShadowMap = 1, PCFSoftShadowMap = 2, PMREMGenerator = PMREMGenerator.asInstanceOf[js.Any], Path = Path.asInstanceOf[js.Any], PerspectiveCamera = PerspectiveCamera.asInstanceOf[js.Any], Plane = Plane.asInstanceOf[js.Any], PlaneGeometry = PlaneGeometry.asInstanceOf[js.Any], PlaneHelper = PlaneHelper.asInstanceOf[js.Any], PointLight = PointLight.asInstanceOf[js.Any], PointLightHelper = PointLightHelper.asInstanceOf[js.Any], PointLightShadow = PointLightShadow.asInstanceOf[js.Any], Points = Points.asInstanceOf[js.Any], PointsMaterial = PointsMaterial.asInstanceOf[js.Any], PolarGridHelper = PolarGridHelper.asInstanceOf[js.Any], PolyhedronGeometry = PolyhedronGeometry.asInstanceOf[js.Any], PositionalAudio = PositionalAudio.asInstanceOf[js.Any], PropertyBinding = PropertyBinding.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofTHREE]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: TypeofTHREE] (val x: Self) extends AnyVal {
     
-    inline def setACESFilmicToneMapping(value: ToneMapping): Self = StObject.set(x, "ACESFilmicToneMapping", value.asInstanceOf[js.Any])
+    inline def setACESFilmicToneMapping(value: `4`): Self = StObject.set(x, "ACESFilmicToneMapping", value.asInstanceOf[js.Any])
     
-    inline def setAddEquation(value: BlendingEquation): Self = StObject.set(x, "AddEquation", value.asInstanceOf[js.Any])
+    inline def setAddEquation(value: `100`): Self = StObject.set(x, "AddEquation", value.asInstanceOf[js.Any])
     
-    inline def setAddOperation(value: Combine): Self = StObject.set(x, "AddOperation", value.asInstanceOf[js.Any])
+    inline def setAddOperation(value: `2`): Self = StObject.set(x, "AddOperation", value.asInstanceOf[js.Any])
     
-    inline def setAdditiveAnimationBlendMode(value: AnimationBlendMode): Self = StObject.set(x, "AdditiveAnimationBlendMode", value.asInstanceOf[js.Any])
+    inline def setAdditiveAnimationBlendMode(value: `2501`): Self = StObject.set(x, "AdditiveAnimationBlendMode", value.asInstanceOf[js.Any])
     
-    inline def setAdditiveBlending(value: Blending): Self = StObject.set(x, "AdditiveBlending", value.asInstanceOf[js.Any])
+    inline def setAdditiveBlending(value: `2`): Self = StObject.set(x, "AdditiveBlending", value.asInstanceOf[js.Any])
     
-    inline def setAlphaFormat(value: PixelFormat): Self = StObject.set(x, "AlphaFormat", value.asInstanceOf[js.Any])
+    inline def setAlphaFormat(value: `1021`): Self = StObject.set(x, "AlphaFormat", value.asInstanceOf[js.Any])
     
-    inline def setAlwaysDepth(value: DepthModes): Self = StObject.set(x, "AlwaysDepth", value.asInstanceOf[js.Any])
+    inline def setAlwaysDepth(value: `1`): Self = StObject.set(x, "AlwaysDepth", value.asInstanceOf[js.Any])
     
-    inline def setAlwaysStencilFunc(value: StencilFunc): Self = StObject.set(x, "AlwaysStencilFunc", value.asInstanceOf[js.Any])
+    inline def setAlwaysStencilFunc(value: `519`): Self = StObject.set(x, "AlwaysStencilFunc", value.asInstanceOf[js.Any])
     
     inline def setAmbientLight(value: Instantiable0[AmbientLight]): Self = StObject.set(x, "AmbientLight", value.asInstanceOf[js.Any])
     
@@ -2038,12 +2039,12 @@ object TypeofTHREE {
     
     inline def setArcCurve(
       value: Instantiable6[
-          /* aX */ Double, 
-          /* aY */ Double, 
-          /* aRadius */ Double, 
-          /* aStartAngle */ Double, 
-          /* aEndAngle */ Double, 
-          /* aClockwise */ Boolean, 
+          /* aX */ js.UndefOr[Double], 
+          /* aY */ js.UndefOr[Double], 
+          /* aRadius */ js.UndefOr[Double], 
+          /* aStartAngle */ js.UndefOr[Double], 
+          /* aEndAngle */ js.UndefOr[Double], 
+          /* aClockwise */ js.UndefOr[Boolean], 
           ArcCurve
         ]
     ): Self = StObject.set(x, "ArcCurve", value.asInstanceOf[js.Any])
@@ -2074,19 +2075,19 @@ object TypeofTHREE {
     
     inline def setAxesHelper(value: Instantiable0[AxesHelper]): Self = StObject.set(x, "AxesHelper", value.asInstanceOf[js.Any])
     
-    inline def setBackSide(value: Side): Self = StObject.set(x, "BackSide", value.asInstanceOf[js.Any])
+    inline def setBackSide(value: `1`): Self = StObject.set(x, "BackSide", value.asInstanceOf[js.Any])
     
-    inline def setBasicDepthPacking(value: DepthPackingStrategies): Self = StObject.set(x, "BasicDepthPacking", value.asInstanceOf[js.Any])
+    inline def setBasicDepthPacking(value: `3200`): Self = StObject.set(x, "BasicDepthPacking", value.asInstanceOf[js.Any])
     
-    inline def setBasicShadowMap(value: ShadowMapType): Self = StObject.set(x, "BasicShadowMap", value.asInstanceOf[js.Any])
+    inline def setBasicShadowMap(value: `0`): Self = StObject.set(x, "BasicShadowMap", value.asInstanceOf[js.Any])
     
-    inline def setBone(value: Instantiable0[typings.three.mod.Bone]): Self = StObject.set(x, "Bone", value.asInstanceOf[js.Any])
+    inline def setBone(value: Instantiable0[Bone]): Self = StObject.set(x, "Bone", value.asInstanceOf[js.Any])
     
     inline def setBooleanKeyframeTrack(
       value: Instantiable3[
           /* name */ String, 
-          /* times */ js.Array[Any], 
-          /* values */ js.Array[Any], 
+          /* times */ ArrayLike[Double], 
+          /* values */ ArrayLike[Any], 
           BooleanKeyframeTrack
         ]
     ): Self = StObject.set(x, "BooleanKeyframeTrack", value.asInstanceOf[js.Any])
@@ -2103,13 +2104,11 @@ object TypeofTHREE {
     
     inline def setBufferAttribute(value: Instantiable2[/* array */ ArrayLike[Double], /* itemSize */ Double, BufferAttribute]): Self = StObject.set(x, "BufferAttribute", value.asInstanceOf[js.Any])
     
-    inline def setBufferGeometry(value: Instantiable0[typings.three.mod.BufferGeometry]): Self = StObject.set(x, "BufferGeometry", value.asInstanceOf[js.Any])
+    inline def setBufferGeometry(value: Instantiable0[typings.three.mod.BufferGeometry[NormalOrGLBufferAttributes]]): Self = StObject.set(x, "BufferGeometry", value.asInstanceOf[js.Any])
     
     inline def setBufferGeometryLoader(value: Instantiable0[BufferGeometryLoader]): Self = StObject.set(x, "BufferGeometryLoader", value.asInstanceOf[js.Any])
     
-    inline def setBufferGeometryUtils(value: TypeofBufferGeometryUtils): Self = StObject.set(x, "BufferGeometryUtils", value.asInstanceOf[js.Any])
-    
-    inline def setByteType(value: TextureDataType): Self = StObject.set(x, "ByteType", value.asInstanceOf[js.Any])
+    inline def setByteType(value: `1010`): Self = StObject.set(x, "ByteType", value.asInstanceOf[js.Any])
     
     inline def setCache(value: TypeofCache): Self = StObject.set(x, "Cache", value.asInstanceOf[js.Any])
     
@@ -2123,8 +2122,8 @@ object TypeofTHREE {
           /* mapping */ js.UndefOr[Mapping], 
           /* wrapS */ js.UndefOr[Wrapping], 
           /* wrapT */ js.UndefOr[Wrapping], 
-          /* magFilter */ js.UndefOr[TextureFilter], 
-          /* minFilter */ js.UndefOr[TextureFilter], 
+          /* magFilter */ js.UndefOr[MagnificationTextureFilter], 
+          /* minFilter */ js.UndefOr[MinificationTextureFilter], 
           /* format */ js.UndefOr[PixelFormat], 
           /* type */ js.UndefOr[TextureDataType], 
           /* anisotropy */ js.UndefOr[Double], 
@@ -2134,13 +2133,15 @@ object TypeofTHREE {
     
     inline def setCapsuleGeometry(value: TypeofCapsuleGeometry): Self = StObject.set(x, "CapsuleGeometry", value.asInstanceOf[js.Any])
     
+    inline def setCatmullRom(value: (Double, Double, Double, Double, Double) => Double): Self = StObject.set(x, "CatmullRom", js.Any.fromFunction5(value))
+    
     inline def setCatmullRomCurve3(value: Instantiable0[CatmullRomCurve3]): Self = StObject.set(x, "CatmullRomCurve3", value.asInstanceOf[js.Any])
     
-    inline def setCineonToneMapping(value: ToneMapping): Self = StObject.set(x, "CineonToneMapping", value.asInstanceOf[js.Any])
+    inline def setCineonToneMapping(value: `3`): Self = StObject.set(x, "CineonToneMapping", value.asInstanceOf[js.Any])
     
     inline def setCircleGeometry(value: TypeofCircleGeometry): Self = StObject.set(x, "CircleGeometry", value.asInstanceOf[js.Any])
     
-    inline def setClampToEdgeWrapping(value: Wrapping): Self = StObject.set(x, "ClampToEdgeWrapping", value.asInstanceOf[js.Any])
+    inline def setClampToEdgeWrapping(value: `1001`): Self = StObject.set(x, "ClampToEdgeWrapping", value.asInstanceOf[js.Any])
     
     inline def setClock(value: Instantiable0[Clock]): Self = StObject.set(x, "Clock", value.asInstanceOf[js.Any])
     
@@ -2153,8 +2154,8 @@ object TypeofTHREE {
     inline def setColorKeyframeTrack(
       value: Instantiable3[
           /* name */ String, 
-          /* times */ js.Array[Any], 
-          /* values */ js.Array[Any], 
+          /* times */ ArrayLike[Double], 
+          /* values */ ArrayLike[Double], 
           ColorKeyframeTrack
         ]
     ): Self = StObject.set(x, "ColorKeyframeTrack", value.asInstanceOf[js.Any])
@@ -2162,11 +2163,12 @@ object TypeofTHREE {
     inline def setColorManagement(value: TypeofColorManagement): Self = StObject.set(x, "ColorManagement", value.asInstanceOf[js.Any])
     
     inline def setCompressedArrayTexture(
-      value: Instantiable4[
+      value: Instantiable5[
           /* mipmaps */ js.Array[ImageData], 
           /* width */ Double, 
           /* height */ Double, 
           /* depth */ Double, 
+          /* format */ CompressedPixelFormat, 
           CompressedArrayTexture
         ]
     ): Self = StObject.set(x, "CompressedArrayTexture", value.asInstanceOf[js.Any])
@@ -2176,15 +2178,15 @@ object TypeofTHREE {
           /* mipmaps */ js.Array[ImageData], 
           /* width */ Double, 
           /* height */ Double, 
-          /* format */ js.UndefOr[CompressedPixelFormat], 
+          /* format */ CompressedPixelFormat, 
           /* type */ js.UndefOr[TextureDataType], 
           /* mapping */ js.UndefOr[Mapping], 
           /* wrapS */ js.UndefOr[Wrapping], 
           /* wrapT */ js.UndefOr[Wrapping], 
-          /* magFilter */ js.UndefOr[TextureFilter], 
-          /* minFilter */ js.UndefOr[TextureFilter], 
+          /* magFilter */ js.UndefOr[MagnificationTextureFilter], 
+          /* minFilter */ js.UndefOr[MinificationTextureFilter], 
           /* anisotropy */ js.UndefOr[Double], 
-          /* encoding */ js.UndefOr[TextureEncoding], 
+          /* colorSpace */ js.UndefOr[ColorSpace], 
           CompressedTexture
         ]
     ): Self = StObject.set(x, "CompressedTexture", value.asInstanceOf[js.Any])
@@ -2202,43 +2204,35 @@ object TypeofTHREE {
         ]
     ): Self = StObject.set(x, "CubeCamera", value.asInstanceOf[js.Any])
     
-    inline def setCubeReflectionMapping(value: Mapping): Self = StObject.set(x, "CubeReflectionMapping", value.asInstanceOf[js.Any])
+    inline def setCubeReflectionMapping(value: `301`): Self = StObject.set(x, "CubeReflectionMapping", value.asInstanceOf[js.Any])
     
-    inline def setCubeRefractionMapping(value: Mapping): Self = StObject.set(x, "CubeRefractionMapping", value.asInstanceOf[js.Any])
+    inline def setCubeRefractionMapping(value: `302`): Self = StObject.set(x, "CubeRefractionMapping", value.asInstanceOf[js.Any])
     
     inline def setCubeTexture(
       value: Instantiable10[
           /* images */ js.UndefOr[js.Array[Any]], 
-          /* mapping */ js.UndefOr[Mapping], 
+          /* mapping */ js.UndefOr[CubeTextureMapping], 
           /* wrapS */ js.UndefOr[Wrapping], 
           /* wrapT */ js.UndefOr[Wrapping], 
-          /* magFilter */ js.UndefOr[TextureFilter], 
-          /* minFilter */ js.UndefOr[TextureFilter], 
+          /* magFilter */ js.UndefOr[MagnificationTextureFilter], 
+          /* minFilter */ js.UndefOr[MinificationTextureFilter], 
           /* format */ js.UndefOr[PixelFormat], 
           /* type */ js.UndefOr[TextureDataType], 
           /* anisotropy */ js.UndefOr[Double], 
-          /* encoding */ js.UndefOr[TextureEncoding], 
+          /* colorSpace */ js.UndefOr[ColorSpace], 
           CubeTexture
         ]
     ): Self = StObject.set(x, "CubeTexture", value.asInstanceOf[js.Any])
     
     inline def setCubeTextureLoader(value: Instantiable0[CubeTextureLoader]): Self = StObject.set(x, "CubeTextureLoader", value.asInstanceOf[js.Any])
     
-    inline def setCubeUVReflectionMapping(value: Mapping): Self = StObject.set(x, "CubeUVReflectionMapping", value.asInstanceOf[js.Any])
+    inline def setCubeUVReflectionMapping(value: `306`): Self = StObject.set(x, "CubeUVReflectionMapping", value.asInstanceOf[js.Any])
     
-    inline def setCubicBezierCurve(
-      value: Instantiable4[/* v0 */ Vector2, /* v1 */ Vector2, /* v2 */ Vector2, /* v3 */ Vector2, CubicBezierCurve]
-    ): Self = StObject.set(x, "CubicBezierCurve", value.asInstanceOf[js.Any])
+    inline def setCubicBezier(value: (Double, Double, Double, Double, Double) => Double): Self = StObject.set(x, "CubicBezier", js.Any.fromFunction5(value))
     
-    inline def setCubicBezierCurve3(
-      value: Instantiable4[
-          /* v0 */ Vector3, 
-          /* v1 */ Vector3, 
-          /* v2 */ Vector3, 
-          /* v3 */ Vector3, 
-          CubicBezierCurve3
-        ]
-    ): Self = StObject.set(x, "CubicBezierCurve3", value.asInstanceOf[js.Any])
+    inline def setCubicBezierCurve(value: Instantiable0[CubicBezierCurve]): Self = StObject.set(x, "CubicBezierCurve", value.asInstanceOf[js.Any])
+    
+    inline def setCubicBezierCurve3(value: Instantiable0[CubicBezierCurve3]): Self = StObject.set(x, "CubicBezierCurve3", value.asInstanceOf[js.Any])
     
     inline def setCubicInterpolant(
       value: Instantiable3[
@@ -2249,37 +2243,27 @@ object TypeofTHREE {
         ]
     ): Self = StObject.set(x, "CubicInterpolant", value.asInstanceOf[js.Any])
     
-    inline def setCullFaceBack(value: CullFace): Self = StObject.set(x, "CullFaceBack", value.asInstanceOf[js.Any])
+    inline def setCullFaceBack(value: `1`): Self = StObject.set(x, "CullFaceBack", value.asInstanceOf[js.Any])
     
-    inline def setCullFaceFront(value: CullFace): Self = StObject.set(x, "CullFaceFront", value.asInstanceOf[js.Any])
+    inline def setCullFaceFront(value: `2`): Self = StObject.set(x, "CullFaceFront", value.asInstanceOf[js.Any])
     
-    inline def setCullFaceFrontBack(value: CullFace): Self = StObject.set(x, "CullFaceFrontBack", value.asInstanceOf[js.Any])
+    inline def setCullFaceFrontBack(value: `3`): Self = StObject.set(x, "CullFaceFrontBack", value.asInstanceOf[js.Any])
     
-    inline def setCullFaceNone(value: CullFace): Self = StObject.set(x, "CullFaceNone", value.asInstanceOf[js.Any])
+    inline def setCullFaceNone(value: `0`): Self = StObject.set(x, "CullFaceNone", value.asInstanceOf[js.Any])
     
-    inline def setCurve(value: TypeofCurve): Self = StObject.set(x, "Curve", value.asInstanceOf[js.Any])
+    inline def setCurve(value: Instantiable0[Curve[Vector]]): Self = StObject.set(x, "Curve", value.asInstanceOf[js.Any])
     
     inline def setCurvePath(value: Instantiable0[CurvePath[Vector]]): Self = StObject.set(x, "CurvePath", value.asInstanceOf[js.Any])
     
-    inline def setCurveUtils(value: TypeofCurveUtils): Self = StObject.set(x, "CurveUtils", value.asInstanceOf[js.Any])
+    inline def setCustomBlending(value: `5`): Self = StObject.set(x, "CustomBlending", value.asInstanceOf[js.Any])
     
-    inline def setCustomBlending(value: Blending): Self = StObject.set(x, "CustomBlending", value.asInstanceOf[js.Any])
-    
-    inline def setCustomToneMapping(value: ToneMapping): Self = StObject.set(x, "CustomToneMapping", value.asInstanceOf[js.Any])
+    inline def setCustomToneMapping(value: `5`): Self = StObject.set(x, "CustomToneMapping", value.asInstanceOf[js.Any])
     
     inline def setCylinderGeometry(value: TypeofCylinderGeometry): Self = StObject.set(x, "CylinderGeometry", value.asInstanceOf[js.Any])
     
     inline def setCylindrical(value: Instantiable0[Cylindrical]): Self = StObject.set(x, "Cylindrical", value.asInstanceOf[js.Any])
     
-    inline def setData3DTexture(
-      value: Instantiable4[
-          /* data */ BufferSource, 
-          /* width */ Double, 
-          /* height */ Double, 
-          /* depth */ Double, 
-          Data3DTexture
-        ]
-    ): Self = StObject.set(x, "Data3DTexture", value.asInstanceOf[js.Any])
+    inline def setData3DTexture(value: Instantiable0[Data3DTexture]): Self = StObject.set(x, "Data3DTexture", value.asInstanceOf[js.Any])
     
     inline def setDataArrayTexture(value: Instantiable0[DataArrayTexture]): Self = StObject.set(x, "DataArrayTexture", value.asInstanceOf[js.Any])
     
@@ -2293,49 +2277,40 @@ object TypeofTHREE {
           /* mapping */ js.UndefOr[Mapping], 
           /* wrapS */ js.UndefOr[Wrapping], 
           /* wrapT */ js.UndefOr[Wrapping], 
-          /* magFilter */ js.UndefOr[TextureFilter], 
-          /* minFilter */ js.UndefOr[TextureFilter], 
+          /* magFilter */ js.UndefOr[MagnificationTextureFilter], 
+          /* minFilter */ js.UndefOr[MinificationTextureFilter], 
           /* anisotropy */ js.UndefOr[Double], 
-          /* encoding */ js.UndefOr[TextureEncoding], 
+          /* colorSpace */ js.UndefOr[ColorSpace], 
           DataTexture
         ]
     ): Self = StObject.set(x, "DataTexture", value.asInstanceOf[js.Any])
     
-    inline def setDataTexture2DArray(value: Instantiable0[DataTexture2DArray]): Self = StObject.set(x, "DataTexture2DArray", value.asInstanceOf[js.Any])
-    
-    inline def setDataTexture3D(
-      value: Instantiable4[
-          /* data */ BufferSource, 
-          /* width */ Double, 
-          /* height */ Double, 
-          /* depth */ Double, 
-          DataTexture3D
-        ]
-    ): Self = StObject.set(x, "DataTexture3D", value.asInstanceOf[js.Any])
-    
     inline def setDataTextureLoader(value: Instantiable0[DataTextureLoader]): Self = StObject.set(x, "DataTextureLoader", value.asInstanceOf[js.Any])
     
-    inline def setDecrementStencilOp(value: StencilOp): Self = StObject.set(x, "DecrementStencilOp", value.asInstanceOf[js.Any])
+    inline def setDataUtils(value: TypeofDataUtils): Self = StObject.set(x, "DataUtils", value.asInstanceOf[js.Any])
     
-    inline def setDecrementWrapStencilOp(value: StencilOp): Self = StObject.set(x, "DecrementWrapStencilOp", value.asInstanceOf[js.Any])
+    inline def setDecrementStencilOp(value: `7283`): Self = StObject.set(x, "DecrementStencilOp", value.asInstanceOf[js.Any])
+    
+    inline def setDecrementWrapStencilOp(value: `34056`): Self = StObject.set(x, "DecrementWrapStencilOp", value.asInstanceOf[js.Any])
     
     inline def setDefaultLoadingManager(value: LoadingManager): Self = StObject.set(x, "DefaultLoadingManager", value.asInstanceOf[js.Any])
     
-    inline def setDepthFormat(value: PixelFormat): Self = StObject.set(x, "DepthFormat", value.asInstanceOf[js.Any])
+    inline def setDepthFormat(value: `1026`): Self = StObject.set(x, "DepthFormat", value.asInstanceOf[js.Any])
     
-    inline def setDepthStencilFormat(value: PixelFormat): Self = StObject.set(x, "DepthStencilFormat", value.asInstanceOf[js.Any])
+    inline def setDepthStencilFormat(value: `1027`): Self = StObject.set(x, "DepthStencilFormat", value.asInstanceOf[js.Any])
     
     inline def setDepthTexture(
-      value: Instantiable9[
+      value: Instantiable10[
           /* width */ Double, 
           /* height */ Double, 
           /* type */ js.UndefOr[TextureDataType], 
           /* mapping */ js.UndefOr[Mapping], 
           /* wrapS */ js.UndefOr[Wrapping], 
           /* wrapT */ js.UndefOr[Wrapping], 
-          /* magFilter */ js.UndefOr[TextureFilter], 
-          /* minFilter */ js.UndefOr[TextureFilter], 
+          /* magFilter */ js.UndefOr[MagnificationTextureFilter], 
+          /* minFilter */ js.UndefOr[MinificationTextureFilter], 
           /* anisotropy */ js.UndefOr[Double], 
+          /* format */ js.UndefOr[DeepTexturePixelFormat], 
           DepthTexture
         ]
     ): Self = StObject.set(x, "DepthTexture", value.asInstanceOf[js.Any])
@@ -2344,7 +2319,7 @@ object TypeofTHREE {
     
     inline def setDirectionalLightHelper(value: Instantiable1[/* light */ DirectionalLight, DirectionalLightHelper]): Self = StObject.set(x, "DirectionalLightHelper", value.asInstanceOf[js.Any])
     
-    inline def setDirectionalLightShadow(value: Instantiable1[/* camera */ Camera, DirectionalLightShadow]): Self = StObject.set(x, "DirectionalLightShadow", value.asInstanceOf[js.Any])
+    inline def setDirectionalLightShadow(value: Instantiable0[DirectionalLightShadow]): Self = StObject.set(x, "DirectionalLightShadow", value.asInstanceOf[js.Any])
     
     inline def setDiscreteInterpolant(
       value: Instantiable3[
@@ -2355,45 +2330,45 @@ object TypeofTHREE {
         ]
     ): Self = StObject.set(x, "DiscreteInterpolant", value.asInstanceOf[js.Any])
     
+    inline def setDisplayP3ColorSpace(value: /* "display-p3" */ String): Self = StObject.set(x, "DisplayP3ColorSpace", value.asInstanceOf[js.Any])
+    
     inline def setDodecahedronGeometry(value: TypeofDodecahedronGeometr): Self = StObject.set(x, "DodecahedronGeometry", value.asInstanceOf[js.Any])
     
-    inline def setDoubleSide(value: Side): Self = StObject.set(x, "DoubleSide", value.asInstanceOf[js.Any])
+    inline def setDoubleSide(value: `2`): Self = StObject.set(x, "DoubleSide", value.asInstanceOf[js.Any])
     
-    inline def setDstAlphaFactor(value: BlendingDstFactor): Self = StObject.set(x, "DstAlphaFactor", value.asInstanceOf[js.Any])
+    inline def setDstAlphaFactor(value: `206`): Self = StObject.set(x, "DstAlphaFactor", value.asInstanceOf[js.Any])
     
-    inline def setDstColorFactor(value: BlendingDstFactor): Self = StObject.set(x, "DstColorFactor", value.asInstanceOf[js.Any])
+    inline def setDstColorFactor(value: `208`): Self = StObject.set(x, "DstColorFactor", value.asInstanceOf[js.Any])
     
-    inline def setDynamicCopyUsage(value: Usage): Self = StObject.set(x, "DynamicCopyUsage", value.asInstanceOf[js.Any])
+    inline def setDynamicCopyUsage(value: `35050`): Self = StObject.set(x, "DynamicCopyUsage", value.asInstanceOf[js.Any])
     
-    inline def setDynamicDrawUsage(value: Usage): Self = StObject.set(x, "DynamicDrawUsage", value.asInstanceOf[js.Any])
+    inline def setDynamicDrawUsage(value: `35048`): Self = StObject.set(x, "DynamicDrawUsage", value.asInstanceOf[js.Any])
     
-    inline def setDynamicReadUsage(value: Usage): Self = StObject.set(x, "DynamicReadUsage", value.asInstanceOf[js.Any])
+    inline def setDynamicReadUsage(value: `35049`): Self = StObject.set(x, "DynamicReadUsage", value.asInstanceOf[js.Any])
     
-    inline def setEarcut(value: TypeofEarcut): Self = StObject.set(x, "Earcut", value.asInstanceOf[js.Any])
-    
-    inline def setEdgesGeometry(value: Instantiable0[EdgesGeometry[BufferGeometry]]): Self = StObject.set(x, "EdgesGeometry", value.asInstanceOf[js.Any])
+    inline def setEdgesGeometry(value: Instantiable0[EdgesGeometry[BufferGeometry[NormalBufferAttributes]]]): Self = StObject.set(x, "EdgesGeometry", value.asInstanceOf[js.Any])
     
     inline def setEllipseCurve(
       value: Instantiable8[
-          /* aX */ Double, 
-          /* aY */ Double, 
-          /* xRadius */ Double, 
-          /* yRadius */ Double, 
-          /* aStartAngle */ Double, 
-          /* aEndAngle */ Double, 
-          /* aClockwise */ Boolean, 
-          /* aRotation */ Double, 
+          /* aX */ js.UndefOr[Double], 
+          /* aY */ js.UndefOr[Double], 
+          /* xRadius */ js.UndefOr[Double], 
+          /* yRadius */ js.UndefOr[Double], 
+          /* aStartAngle */ js.UndefOr[Double], 
+          /* aEndAngle */ js.UndefOr[Double], 
+          /* aClockwise */ js.UndefOr[Boolean], 
+          /* aRotation */ js.UndefOr[Double], 
           EllipseCurve
         ]
     ): Self = StObject.set(x, "EllipseCurve", value.asInstanceOf[js.Any])
     
-    inline def setEqualDepth(value: DepthModes): Self = StObject.set(x, "EqualDepth", value.asInstanceOf[js.Any])
+    inline def setEqualDepth(value: `4`): Self = StObject.set(x, "EqualDepth", value.asInstanceOf[js.Any])
     
-    inline def setEqualStencilFunc(value: StencilFunc): Self = StObject.set(x, "EqualStencilFunc", value.asInstanceOf[js.Any])
+    inline def setEqualStencilFunc(value: `514`): Self = StObject.set(x, "EqualStencilFunc", value.asInstanceOf[js.Any])
     
-    inline def setEquirectangularReflectionMapping(value: Mapping): Self = StObject.set(x, "EquirectangularReflectionMapping", value.asInstanceOf[js.Any])
+    inline def setEquirectangularReflectionMapping(value: `303`): Self = StObject.set(x, "EquirectangularReflectionMapping", value.asInstanceOf[js.Any])
     
-    inline def setEquirectangularRefractionMapping(value: Mapping): Self = StObject.set(x, "EquirectangularRefractionMapping", value.asInstanceOf[js.Any])
+    inline def setEquirectangularRefractionMapping(value: `304`): Self = StObject.set(x, "EquirectangularRefractionMapping", value.asInstanceOf[js.Any])
     
     inline def setEuler(value: TypeofEuler): Self = StObject.set(x, "Euler", value.asInstanceOf[js.Any])
     
@@ -2407,31 +2382,25 @@ object TypeofTHREE {
       value: Instantiable2[/* array */ js.Iterable[Double], /* itemSize */ Double, Float16BufferAttribute]
     ): Self = StObject.set(x, "Float16BufferAttribute", value.asInstanceOf[js.Any])
     
-    inline def setFloat32Attribute(value: Instantiable2[/* array */ Any, /* itemSize */ Double, Float32Attribute]): Self = StObject.set(x, "Float32Attribute", value.asInstanceOf[js.Any])
-    
     inline def setFloat32BufferAttribute(
       value: Instantiable2[/* array */ js.Iterable[Double], /* itemSize */ Double, Float32BufferAttribute]
     ): Self = StObject.set(x, "Float32BufferAttribute", value.asInstanceOf[js.Any])
-    
-    inline def setFloat64Attribute(value: Instantiable2[/* array */ Any, /* itemSize */ Double, Float64Attribute]): Self = StObject.set(x, "Float64Attribute", value.asInstanceOf[js.Any])
     
     inline def setFloat64BufferAttribute(
       value: Instantiable2[/* array */ js.Iterable[Double], /* itemSize */ Double, Float64BufferAttribute]
     ): Self = StObject.set(x, "Float64BufferAttribute", value.asInstanceOf[js.Any])
     
-    inline def setFloatType(value: TextureDataType): Self = StObject.set(x, "FloatType", value.asInstanceOf[js.Any])
+    inline def setFloatType(value: `1015`): Self = StObject.set(x, "FloatType", value.asInstanceOf[js.Any])
     
     inline def setFog(value: Instantiable1[/* color */ ColorRepresentation, Fog]): Self = StObject.set(x, "Fog", value.asInstanceOf[js.Any])
     
-    inline def setFogExp2(value: Instantiable1[/* hex */ Double, FogExp2]): Self = StObject.set(x, "FogExp2", value.asInstanceOf[js.Any])
+    inline def setFogExp2(value: Instantiable1[/* color */ ColorRepresentation, FogExp2]): Self = StObject.set(x, "FogExp2", value.asInstanceOf[js.Any])
     
     inline def setFramebufferTexture(
       value: Instantiable3[/* width */ Double, /* height */ Double, /* format */ PixelFormat, FramebufferTexture]
     ): Self = StObject.set(x, "FramebufferTexture", value.asInstanceOf[js.Any])
     
-    inline def setFromHalfFloat(value: Double => Double): Self = StObject.set(x, "fromHalfFloat", js.Any.fromFunction1(value))
-    
-    inline def setFrontSide(value: Side): Self = StObject.set(x, "FrontSide", value.asInstanceOf[js.Any])
+    inline def setFrontSide(value: `0`): Self = StObject.set(x, "FrontSide", value.asInstanceOf[js.Any])
     
     inline def setFrustum(
       value: Instantiable6[
@@ -2448,7 +2417,7 @@ object TypeofTHREE {
     inline def setGLBufferAttribute(
       value: Instantiable5[
           /* buffer */ WebGLBuffer, 
-          /* type */ Double, 
+          /* type */ GLenum, 
           /* itemSize */ Double, 
           /* elementSize */ `1` | `2` | `4`, 
           /* count */ Double, 
@@ -2456,25 +2425,23 @@ object TypeofTHREE {
         ]
     ): Self = StObject.set(x, "GLBufferAttribute", value.asInstanceOf[js.Any])
     
-    inline def setGLSL1(value: GLSLVersion): Self = StObject.set(x, "GLSL1", value.asInstanceOf[js.Any])
+    inline def setGLSL1(value: typings.threeTdsLoader.threeTdsLoaderStrings.`100`): Self = StObject.set(x, "GLSL1", value.asInstanceOf[js.Any])
     
-    inline def setGLSL3(value: GLSLVersion): Self = StObject.set(x, "GLSL3", value.asInstanceOf[js.Any])
+    inline def setGLSL3(value: `300 es`): Self = StObject.set(x, "GLSL3", value.asInstanceOf[js.Any])
     
-    inline def setGeometryUtils(value: TypeofGeometryUtils): Self = StObject.set(x, "GeometryUtils", value.asInstanceOf[js.Any])
+    inline def setGreaterDepth(value: `6`): Self = StObject.set(x, "GreaterDepth", value.asInstanceOf[js.Any])
     
-    inline def setGreaterDepth(value: DepthModes): Self = StObject.set(x, "GreaterDepth", value.asInstanceOf[js.Any])
+    inline def setGreaterEqualDepth(value: `5`): Self = StObject.set(x, "GreaterEqualDepth", value.asInstanceOf[js.Any])
     
-    inline def setGreaterEqualDepth(value: DepthModes): Self = StObject.set(x, "GreaterEqualDepth", value.asInstanceOf[js.Any])
+    inline def setGreaterEqualStencilFunc(value: `518`): Self = StObject.set(x, "GreaterEqualStencilFunc", value.asInstanceOf[js.Any])
     
-    inline def setGreaterEqualStencilFunc(value: StencilFunc): Self = StObject.set(x, "GreaterEqualStencilFunc", value.asInstanceOf[js.Any])
-    
-    inline def setGreaterStencilFunc(value: StencilFunc): Self = StObject.set(x, "GreaterStencilFunc", value.asInstanceOf[js.Any])
+    inline def setGreaterStencilFunc(value: `516`): Self = StObject.set(x, "GreaterStencilFunc", value.asInstanceOf[js.Any])
     
     inline def setGridHelper(value: Instantiable0[GridHelper]): Self = StObject.set(x, "GridHelper", value.asInstanceOf[js.Any])
     
     inline def setGroup(value: Instantiable0[Group]): Self = StObject.set(x, "Group", value.asInstanceOf[js.Any])
     
-    inline def setHalfFloatType(value: TextureDataType): Self = StObject.set(x, "HalfFloatType", value.asInstanceOf[js.Any])
+    inline def setHalfFloatType(value: `1016`): Self = StObject.set(x, "HalfFloatType", value.asInstanceOf[js.Any])
     
     inline def setHemisphereLight(value: Instantiable0[typings.three.mod.HemisphereLight]): Self = StObject.set(x, "HemisphereLight", value.asInstanceOf[js.Any])
     
@@ -2490,9 +2457,9 @@ object TypeofTHREE {
     
     inline def setImageUtils(value: TypeofImageUtils): Self = StObject.set(x, "ImageUtils", value.asInstanceOf[js.Any])
     
-    inline def setIncrementStencilOp(value: StencilOp): Self = StObject.set(x, "IncrementStencilOp", value.asInstanceOf[js.Any])
+    inline def setIncrementStencilOp(value: `7682`): Self = StObject.set(x, "IncrementStencilOp", value.asInstanceOf[js.Any])
     
-    inline def setIncrementWrapStencilOp(value: StencilOp): Self = StObject.set(x, "IncrementWrapStencilOp", value.asInstanceOf[js.Any])
+    inline def setIncrementWrapStencilOp(value: `34055`): Self = StObject.set(x, "IncrementWrapStencilOp", value.asInstanceOf[js.Any])
     
     inline def setInstancedBufferAttribute(
       value: Instantiable2[/* array */ ArrayLike[Double], /* itemSize */ Double, InstancedBufferAttribute]
@@ -2509,23 +2476,17 @@ object TypeofTHREE {
           /* import warning: RewrittenClass.unapply cls was tparam TGeometry */ /* geometry */ Any, 
           /* import warning: RewrittenClass.unapply cls was tparam TMaterial */ /* material */ Any, 
           /* count */ Double, 
-          InstancedMesh[BufferGeometry, Material | js.Array[Material]]
+          InstancedMesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]]
         ]
     ): Self = StObject.set(x, "InstancedMesh", value.asInstanceOf[js.Any])
     
-    inline def setInt16Attribute(value: Instantiable2[/* array */ Any, /* itemSize */ Double, Int16Attribute]): Self = StObject.set(x, "Int16Attribute", value.asInstanceOf[js.Any])
-    
     inline def setInt16BufferAttribute(value: Instantiable2[/* array */ js.Iterable[Double], /* itemSize */ Double, Int16BufferAttribute]): Self = StObject.set(x, "Int16BufferAttribute", value.asInstanceOf[js.Any])
-    
-    inline def setInt32Attribute(value: Instantiable2[/* array */ Any, /* itemSize */ Double, Int32Attribute]): Self = StObject.set(x, "Int32Attribute", value.asInstanceOf[js.Any])
     
     inline def setInt32BufferAttribute(value: Instantiable2[/* array */ js.Iterable[Double], /* itemSize */ Double, Int32BufferAttribute]): Self = StObject.set(x, "Int32BufferAttribute", value.asInstanceOf[js.Any])
     
-    inline def setInt8Attribute(value: Instantiable2[/* array */ Any, /* itemSize */ Double, Int8Attribute]): Self = StObject.set(x, "Int8Attribute", value.asInstanceOf[js.Any])
-    
     inline def setInt8BufferAttribute(value: Instantiable2[/* array */ js.Iterable[Double], /* itemSize */ Double, Int8BufferAttribute]): Self = StObject.set(x, "Int8BufferAttribute", value.asInstanceOf[js.Any])
     
-    inline def setIntType(value: TextureDataType): Self = StObject.set(x, "IntType", value.asInstanceOf[js.Any])
+    inline def setIntType(value: `1013`): Self = StObject.set(x, "IntType", value.asInstanceOf[js.Any])
     
     inline def setInterleavedBuffer(
       value: Instantiable2[
@@ -2553,15 +2514,15 @@ object TypeofTHREE {
         ]
     ): Self = StObject.set(x, "Interpolant", value.asInstanceOf[js.Any])
     
-    inline def setInterpolateDiscrete(value: InterpolationModes): Self = StObject.set(x, "InterpolateDiscrete", value.asInstanceOf[js.Any])
+    inline def setInterpolateDiscrete(value: `2300`): Self = StObject.set(x, "InterpolateDiscrete", value.asInstanceOf[js.Any])
     
-    inline def setInterpolateLinear(value: InterpolationModes): Self = StObject.set(x, "InterpolateLinear", value.asInstanceOf[js.Any])
+    inline def setInterpolateLinear(value: `2301`): Self = StObject.set(x, "InterpolateLinear", value.asInstanceOf[js.Any])
     
-    inline def setInterpolateSmooth(value: InterpolationModes): Self = StObject.set(x, "InterpolateSmooth", value.asInstanceOf[js.Any])
+    inline def setInterpolateSmooth(value: `2302`): Self = StObject.set(x, "InterpolateSmooth", value.asInstanceOf[js.Any])
     
-    inline def setInvertStencilOp(value: StencilOp): Self = StObject.set(x, "InvertStencilOp", value.asInstanceOf[js.Any])
+    inline def setInvertStencilOp(value: `5386`): Self = StObject.set(x, "InvertStencilOp", value.asInstanceOf[js.Any])
     
-    inline def setKeepStencilOp(value: StencilOp): Self = StObject.set(x, "KeepStencilOp", value.asInstanceOf[js.Any])
+    inline def setKeepStencilOp(value: `7680`): Self = StObject.set(x, "KeepStencilOp", value.asInstanceOf[js.Any])
     
     inline def setKeyframeTrack(value: TypeofKeyframeTrack): Self = StObject.set(x, "KeyframeTrack", value.asInstanceOf[js.Any])
     
@@ -2571,43 +2532,50 @@ object TypeofTHREE {
     
     inline def setLayers(value: Instantiable0[Layers]): Self = StObject.set(x, "Layers", value.asInstanceOf[js.Any])
     
-    inline def setLessDepth(value: DepthModes): Self = StObject.set(x, "LessDepth", value.asInstanceOf[js.Any])
+    inline def setLessDepth(value: `2`): Self = StObject.set(x, "LessDepth", value.asInstanceOf[js.Any])
     
-    inline def setLessEqualDepth(value: DepthModes): Self = StObject.set(x, "LessEqualDepth", value.asInstanceOf[js.Any])
+    inline def setLessEqualDepth(value: `3`): Self = StObject.set(x, "LessEqualDepth", value.asInstanceOf[js.Any])
     
-    inline def setLessEqualStencilFunc(value: StencilFunc): Self = StObject.set(x, "LessEqualStencilFunc", value.asInstanceOf[js.Any])
+    inline def setLessEqualStencilFunc(value: `515`): Self = StObject.set(x, "LessEqualStencilFunc", value.asInstanceOf[js.Any])
     
-    inline def setLessStencilFunc(value: StencilFunc): Self = StObject.set(x, "LessStencilFunc", value.asInstanceOf[js.Any])
+    inline def setLessStencilFunc(value: `513`): Self = StObject.set(x, "LessStencilFunc", value.asInstanceOf[js.Any])
     
-    inline def setLight(value: Instantiable0[typings.three.mod.Light]): Self = StObject.set(x, "Light", value.asInstanceOf[js.Any])
+    inline def setLight(value: Instantiable0[typings.three.mod.Light[js.UndefOr[LightShadow[Camera]]]]): Self = StObject.set(x, "Light", value.asInstanceOf[js.Any])
     
     inline def setLightProbe(value: Instantiable0[LightProbe]): Self = StObject.set(x, "LightProbe", value.asInstanceOf[js.Any])
     
-    inline def setLightShadow(value: Instantiable1[/* camera */ Camera, LightShadow]): Self = StObject.set(x, "LightShadow", value.asInstanceOf[js.Any])
+    inline def setLightShadow(
+      value: Instantiable1[
+          /* import warning: RewrittenClass.unapply cls was tparam TCamera */ /* camera */ Any, 
+          typings.three.mod.LightShadow[Camera]
+        ]
+    ): Self = StObject.set(x, "LightShadow", value.asInstanceOf[js.Any])
     
-    inline def setLine(value: Instantiable0[Line[BufferGeometry, Material | js.Array[Material]]]): Self = StObject.set(x, "Line", value.asInstanceOf[js.Any])
+    inline def setLine(value: Instantiable0[Line[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]]]): Self = StObject.set(x, "Line", value.asInstanceOf[js.Any])
     
     inline def setLine3(value: Instantiable0[Line3]): Self = StObject.set(x, "Line3", value.asInstanceOf[js.Any])
     
     inline def setLineBasicMaterial(value: Instantiable0[LineBasicMaterial]): Self = StObject.set(x, "LineBasicMaterial", value.asInstanceOf[js.Any])
     
-    inline def setLineCurve(value: Instantiable2[/* v1 */ Vector2, /* v2 */ Vector2, LineCurve]): Self = StObject.set(x, "LineCurve", value.asInstanceOf[js.Any])
+    inline def setLineCurve(value: Instantiable0[LineCurve]): Self = StObject.set(x, "LineCurve", value.asInstanceOf[js.Any])
     
-    inline def setLineCurve3(value: Instantiable2[/* v1 */ Vector3, /* v2 */ Vector3, LineCurve3]): Self = StObject.set(x, "LineCurve3", value.asInstanceOf[js.Any])
+    inline def setLineCurve3(value: Instantiable0[LineCurve3]): Self = StObject.set(x, "LineCurve3", value.asInstanceOf[js.Any])
     
     inline def setLineDashedMaterial(value: Instantiable0[LineDashedMaterial]): Self = StObject.set(x, "LineDashedMaterial", value.asInstanceOf[js.Any])
     
-    inline def setLineLoop(value: Instantiable0[LineLoop[BufferGeometry, Material | js.Array[Material]]]): Self = StObject.set(x, "LineLoop", value.asInstanceOf[js.Any])
+    inline def setLineLoop(
+      value: Instantiable0[LineLoop[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]]]
+    ): Self = StObject.set(x, "LineLoop", value.asInstanceOf[js.Any])
     
-    inline def setLinePieces(value: Double): Self = StObject.set(x, "LinePieces", value.asInstanceOf[js.Any])
+    inline def setLineSegments(
+      value: Instantiable0[
+          LineSegments[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]]
+        ]
+    ): Self = StObject.set(x, "LineSegments", value.asInstanceOf[js.Any])
     
-    inline def setLineSegments(value: Instantiable0[LineSegments[BufferGeometry, Material | js.Array[Material]]]): Self = StObject.set(x, "LineSegments", value.asInstanceOf[js.Any])
+    inline def setLinearEncoding(value: `3000`): Self = StObject.set(x, "LinearEncoding", value.asInstanceOf[js.Any])
     
-    inline def setLineStrip(value: Double): Self = StObject.set(x, "LineStrip", value.asInstanceOf[js.Any])
-    
-    inline def setLinearEncoding(value: TextureEncoding): Self = StObject.set(x, "LinearEncoding", value.asInstanceOf[js.Any])
-    
-    inline def setLinearFilter(value: TextureFilter): Self = StObject.set(x, "LinearFilter", value.asInstanceOf[js.Any])
+    inline def setLinearFilter(value: `1006`): Self = StObject.set(x, "LinearFilter", value.asInstanceOf[js.Any])
     
     inline def setLinearInterpolant(
       value: Instantiable3[
@@ -2618,11 +2586,13 @@ object TypeofTHREE {
         ]
     ): Self = StObject.set(x, "LinearInterpolant", value.asInstanceOf[js.Any])
     
-    inline def setLinearMipMapLinearFilter(value: TextureFilter): Self = StObject.set(x, "LinearMipMapLinearFilter", value.asInstanceOf[js.Any])
+    inline def setLinearMipMapLinearFilter(value: `1008`): Self = StObject.set(x, "LinearMipMapLinearFilter", value.asInstanceOf[js.Any])
     
-    inline def setLinearMipMapNearestFilter(value: TextureFilter): Self = StObject.set(x, "LinearMipMapNearestFilter", value.asInstanceOf[js.Any])
+    inline def setLinearMipMapNearestFilter(value: `1007`): Self = StObject.set(x, "LinearMipMapNearestFilter", value.asInstanceOf[js.Any])
     
-    inline def setLinearToneMapping(value: ToneMapping): Self = StObject.set(x, "LinearToneMapping", value.asInstanceOf[js.Any])
+    inline def setLinearSRGBColorSpace(value: `srgb-linear`): Self = StObject.set(x, "LinearSRGBColorSpace", value.asInstanceOf[js.Any])
+    
+    inline def setLinearToneMapping(value: `1`): Self = StObject.set(x, "LinearToneMapping", value.asInstanceOf[js.Any])
     
     inline def setLoader(value: Instantiable0[Loader]): Self = StObject.set(x, "Loader", value.asInstanceOf[js.Any])
     
@@ -2630,15 +2600,15 @@ object TypeofTHREE {
     
     inline def setLoadingManager(value: Instantiable0[typings.three.mod.LoadingManager]): Self = StObject.set(x, "LoadingManager", value.asInstanceOf[js.Any])
     
-    inline def setLoopOnce(value: AnimationActionLoopStyles): Self = StObject.set(x, "LoopOnce", value.asInstanceOf[js.Any])
+    inline def setLoopOnce(value: `2200`): Self = StObject.set(x, "LoopOnce", value.asInstanceOf[js.Any])
     
-    inline def setLoopPingPong(value: AnimationActionLoopStyles): Self = StObject.set(x, "LoopPingPong", value.asInstanceOf[js.Any])
+    inline def setLoopPingPong(value: `2202`): Self = StObject.set(x, "LoopPingPong", value.asInstanceOf[js.Any])
     
-    inline def setLoopRepeat(value: AnimationActionLoopStyles): Self = StObject.set(x, "LoopRepeat", value.asInstanceOf[js.Any])
+    inline def setLoopRepeat(value: `2201`): Self = StObject.set(x, "LoopRepeat", value.asInstanceOf[js.Any])
     
-    inline def setLuminanceAlphaFormat(value: PixelFormat): Self = StObject.set(x, "LuminanceAlphaFormat", value.asInstanceOf[js.Any])
+    inline def setLuminanceAlphaFormat(value: `1025`): Self = StObject.set(x, "LuminanceAlphaFormat", value.asInstanceOf[js.Any])
     
-    inline def setLuminanceFormat(value: PixelFormat): Self = StObject.set(x, "LuminanceFormat", value.asInstanceOf[js.Any])
+    inline def setLuminanceFormat(value: `1024`): Self = StObject.set(x, "LuminanceFormat", value.asInstanceOf[js.Any])
     
     inline def setMaterial(value: Instantiable0[typings.three.mod.Material]): Self = StObject.set(x, "Material", value.asInstanceOf[js.Any])
     
@@ -2650,11 +2620,11 @@ object TypeofTHREE {
     
     inline def setMatrix4(value: Instantiable0[Matrix4]): Self = StObject.set(x, "Matrix4", value.asInstanceOf[js.Any])
     
-    inline def setMaxEquation(value: BlendingEquation): Self = StObject.set(x, "MaxEquation", value.asInstanceOf[js.Any])
+    inline def setMaxEquation(value: `104`): Self = StObject.set(x, "MaxEquation", value.asInstanceOf[js.Any])
     
     inline def setMergeUniforms(value: Any => Any): Self = StObject.set(x, "mergeUniforms", js.Any.fromFunction1(value))
     
-    inline def setMesh(value: Instantiable0[Mesh[BufferGeometry, Material | js.Array[Material]]]): Self = StObject.set(x, "Mesh", value.asInstanceOf[js.Any])
+    inline def setMesh(value: Instantiable0[Mesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]]]): Self = StObject.set(x, "Mesh", value.asInstanceOf[js.Any])
     
     inline def setMeshBasicMaterial(value: Instantiable0[MeshBasicMaterial]): Self = StObject.set(x, "MeshBasicMaterial", value.asInstanceOf[js.Any])
     
@@ -2676,43 +2646,45 @@ object TypeofTHREE {
     
     inline def setMeshToonMaterial(value: Instantiable0[MeshToonMaterial]): Self = StObject.set(x, "MeshToonMaterial", value.asInstanceOf[js.Any])
     
-    inline def setMinEquation(value: BlendingEquation): Self = StObject.set(x, "MinEquation", value.asInstanceOf[js.Any])
+    inline def setMinEquation(value: `103`): Self = StObject.set(x, "MinEquation", value.asInstanceOf[js.Any])
     
-    inline def setMirroredRepeatWrapping(value: Wrapping): Self = StObject.set(x, "MirroredRepeatWrapping", value.asInstanceOf[js.Any])
+    inline def setMirroredRepeatWrapping(value: `1002`): Self = StObject.set(x, "MirroredRepeatWrapping", value.asInstanceOf[js.Any])
     
-    inline def setMixOperation(value: Combine): Self = StObject.set(x, "MixOperation", value.asInstanceOf[js.Any])
+    inline def setMixOperation(value: `1`): Self = StObject.set(x, "MixOperation", value.asInstanceOf[js.Any])
     
-    inline def setMultiplyBlending(value: Blending): Self = StObject.set(x, "MultiplyBlending", value.asInstanceOf[js.Any])
+    inline def setMultiplyBlending(value: `4`): Self = StObject.set(x, "MultiplyBlending", value.asInstanceOf[js.Any])
     
-    inline def setMultiplyOperation(value: Combine): Self = StObject.set(x, "MultiplyOperation", value.asInstanceOf[js.Any])
+    inline def setMultiplyOperation(value: `0`): Self = StObject.set(x, "MultiplyOperation", value.asInstanceOf[js.Any])
     
-    inline def setNearestFilter(value: TextureFilter): Self = StObject.set(x, "NearestFilter", value.asInstanceOf[js.Any])
+    inline def setNearestFilter(value: `1003`): Self = StObject.set(x, "NearestFilter", value.asInstanceOf[js.Any])
     
-    inline def setNearestMipMapLinearFilter(value: TextureFilter): Self = StObject.set(x, "NearestMipMapLinearFilter", value.asInstanceOf[js.Any])
+    inline def setNearestMipMapLinearFilter(value: `1005`): Self = StObject.set(x, "NearestMipMapLinearFilter", value.asInstanceOf[js.Any])
     
-    inline def setNearestMipMapNearestFilter(value: TextureFilter): Self = StObject.set(x, "NearestMipMapNearestFilter", value.asInstanceOf[js.Any])
+    inline def setNearestMipMapNearestFilter(value: `1004`): Self = StObject.set(x, "NearestMipMapNearestFilter", value.asInstanceOf[js.Any])
     
-    inline def setNeverDepth(value: DepthModes): Self = StObject.set(x, "NeverDepth", value.asInstanceOf[js.Any])
+    inline def setNeverDepth(value: `0`): Self = StObject.set(x, "NeverDepth", value.asInstanceOf[js.Any])
     
-    inline def setNeverStencilFunc(value: StencilFunc): Self = StObject.set(x, "NeverStencilFunc", value.asInstanceOf[js.Any])
+    inline def setNeverStencilFunc(value: `512`): Self = StObject.set(x, "NeverStencilFunc", value.asInstanceOf[js.Any])
     
-    inline def setNoBlending(value: Blending): Self = StObject.set(x, "NoBlending", value.asInstanceOf[js.Any])
+    inline def setNoBlending(value: `0`): Self = StObject.set(x, "NoBlending", value.asInstanceOf[js.Any])
     
-    inline def setNoToneMapping(value: ToneMapping): Self = StObject.set(x, "NoToneMapping", value.asInstanceOf[js.Any])
+    inline def setNoColorSpace(value: _empty): Self = StObject.set(x, "NoColorSpace", value.asInstanceOf[js.Any])
     
-    inline def setNormalAnimationBlendMode(value: AnimationBlendMode): Self = StObject.set(x, "NormalAnimationBlendMode", value.asInstanceOf[js.Any])
+    inline def setNoToneMapping(value: `0`): Self = StObject.set(x, "NoToneMapping", value.asInstanceOf[js.Any])
     
-    inline def setNormalBlending(value: Blending): Self = StObject.set(x, "NormalBlending", value.asInstanceOf[js.Any])
+    inline def setNormalAnimationBlendMode(value: `2500`): Self = StObject.set(x, "NormalAnimationBlendMode", value.asInstanceOf[js.Any])
     
-    inline def setNotEqualDepth(value: DepthModes): Self = StObject.set(x, "NotEqualDepth", value.asInstanceOf[js.Any])
+    inline def setNormalBlending(value: `1`): Self = StObject.set(x, "NormalBlending", value.asInstanceOf[js.Any])
     
-    inline def setNotEqualStencilFunc(value: StencilFunc): Self = StObject.set(x, "NotEqualStencilFunc", value.asInstanceOf[js.Any])
+    inline def setNotEqualDepth(value: `7`): Self = StObject.set(x, "NotEqualDepth", value.asInstanceOf[js.Any])
+    
+    inline def setNotEqualStencilFunc(value: `517`): Self = StObject.set(x, "NotEqualStencilFunc", value.asInstanceOf[js.Any])
     
     inline def setNumberKeyframeTrack(
       value: Instantiable3[
           /* name */ String, 
-          /* times */ js.Array[Any], 
-          /* values */ js.Array[Any], 
+          /* times */ ArrayLike[Double], 
+          /* values */ ArrayLike[Double], 
           NumberKeyframeTrack
         ]
     ): Self = StObject.set(x, "NumberKeyframeTrack", value.asInstanceOf[js.Any])
@@ -2721,19 +2693,19 @@ object TypeofTHREE {
     
     inline def setObjectLoader(value: Instantiable0[ObjectLoader]): Self = StObject.set(x, "ObjectLoader", value.asInstanceOf[js.Any])
     
-    inline def setObjectSpaceNormalMap(value: NormalMapTypes): Self = StObject.set(x, "ObjectSpaceNormalMap", value.asInstanceOf[js.Any])
+    inline def setObjectSpaceNormalMap(value: `1`): Self = StObject.set(x, "ObjectSpaceNormalMap", value.asInstanceOf[js.Any])
     
     inline def setOctahedronGeometry(value: TypeofOctahedronGeometry): Self = StObject.set(x, "OctahedronGeometry", value.asInstanceOf[js.Any])
     
-    inline def setOneFactor(value: BlendingDstFactor): Self = StObject.set(x, "OneFactor", value.asInstanceOf[js.Any])
+    inline def setOneFactor(value: `201`): Self = StObject.set(x, "OneFactor", value.asInstanceOf[js.Any])
     
-    inline def setOneMinusDstAlphaFactor(value: BlendingDstFactor): Self = StObject.set(x, "OneMinusDstAlphaFactor", value.asInstanceOf[js.Any])
+    inline def setOneMinusDstAlphaFactor(value: `207`): Self = StObject.set(x, "OneMinusDstAlphaFactor", value.asInstanceOf[js.Any])
     
-    inline def setOneMinusDstColorFactor(value: BlendingDstFactor): Self = StObject.set(x, "OneMinusDstColorFactor", value.asInstanceOf[js.Any])
+    inline def setOneMinusDstColorFactor(value: `209`): Self = StObject.set(x, "OneMinusDstColorFactor", value.asInstanceOf[js.Any])
     
-    inline def setOneMinusSrcAlphaFactor(value: BlendingDstFactor): Self = StObject.set(x, "OneMinusSrcAlphaFactor", value.asInstanceOf[js.Any])
+    inline def setOneMinusSrcAlphaFactor(value: `205`): Self = StObject.set(x, "OneMinusSrcAlphaFactor", value.asInstanceOf[js.Any])
     
-    inline def setOneMinusSrcColorFactor(value: BlendingDstFactor): Self = StObject.set(x, "OneMinusSrcColorFactor", value.asInstanceOf[js.Any])
+    inline def setOneMinusSrcColorFactor(value: `203`): Self = StObject.set(x, "OneMinusSrcColorFactor", value.asInstanceOf[js.Any])
     
     inline def setOrthographicCamera(
       value: Instantiable6[
@@ -2747,15 +2719,15 @@ object TypeofTHREE {
         ]
     ): Self = StObject.set(x, "OrthographicCamera", value.asInstanceOf[js.Any])
     
-    inline def setPCFShadowMap(value: ShadowMapType): Self = StObject.set(x, "PCFShadowMap", value.asInstanceOf[js.Any])
+    inline def setPCFShadowMap(value: `1`): Self = StObject.set(x, "PCFShadowMap", value.asInstanceOf[js.Any])
     
-    inline def setPCFSoftShadowMap(value: ShadowMapType): Self = StObject.set(x, "PCFSoftShadowMap", value.asInstanceOf[js.Any])
+    inline def setPCFSoftShadowMap(value: `2`): Self = StObject.set(x, "PCFSoftShadowMap", value.asInstanceOf[js.Any])
     
     inline def setPMREMGenerator(value: Instantiable1[/* renderer */ WebGLRenderer, PMREMGenerator]): Self = StObject.set(x, "PMREMGenerator", value.asInstanceOf[js.Any])
     
     inline def setPath(value: Instantiable0[Path]): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
     
-    inline def setPerspectiveCamera(value: Instantiable0[PerspectiveCamera]): Self = StObject.set(x, "PerspectiveCamera", value.asInstanceOf[js.Any])
+    inline def setPerspectiveCamera(value: Instantiable0[typings.three.mod.PerspectiveCamera]): Self = StObject.set(x, "PerspectiveCamera", value.asInstanceOf[js.Any])
     
     inline def setPlane(value: Instantiable0[typings.three.mod.Plane]): Self = StObject.set(x, "Plane", value.asInstanceOf[js.Any])
     
@@ -2767,9 +2739,13 @@ object TypeofTHREE {
     
     inline def setPointLightHelper(value: Instantiable1[/* light */ PointLight, PointLightHelper]): Self = StObject.set(x, "PointLightHelper", value.asInstanceOf[js.Any])
     
-    inline def setPointLightShadow(value: Instantiable1[/* camera */ Camera, PointLightShadow]): Self = StObject.set(x, "PointLightShadow", value.asInstanceOf[js.Any])
+    inline def setPointLightShadow(value: Instantiable1[/* camera */ PerspectiveCamera, PointLightShadow]): Self = StObject.set(x, "PointLightShadow", value.asInstanceOf[js.Any])
     
-    inline def setPoints(value: Instantiable0[Points[BufferGeometry, Material | js.Array[Material]]]): Self = StObject.set(x, "Points", value.asInstanceOf[js.Any])
+    inline def setPoints(
+      value: Instantiable0[
+          Points[BufferGeometry[NormalOrGLBufferAttributes], Material | js.Array[Material]]
+        ]
+    ): Self = StObject.set(x, "Points", value.asInstanceOf[js.Any])
     
     inline def setPointsMaterial(value: Instantiable0[PointsMaterial]): Self = StObject.set(x, "PointsMaterial", value.asInstanceOf[js.Any])
     
@@ -2795,17 +2771,19 @@ object TypeofTHREE {
       value: Instantiable3[/* binding */ Any, /* typeName */ String, /* valueSize */ Double, PropertyMixer]
     ): Self = StObject.set(x, "PropertyMixer", value.asInstanceOf[js.Any])
     
-    inline def setQuadraticBezierCurve(value: Instantiable3[/* v0 */ Vector2, /* v1 */ Vector2, /* v2 */ Vector2, QuadraticBezierCurve]): Self = StObject.set(x, "QuadraticBezierCurve", value.asInstanceOf[js.Any])
+    inline def setQuadraticBezier(value: (Double, Double, Double, Double) => Double): Self = StObject.set(x, "QuadraticBezier", js.Any.fromFunction4(value))
     
-    inline def setQuadraticBezierCurve3(value: Instantiable3[/* v0 */ Vector3, /* v1 */ Vector3, /* v2 */ Vector3, QuadraticBezierCurve3]): Self = StObject.set(x, "QuadraticBezierCurve3", value.asInstanceOf[js.Any])
+    inline def setQuadraticBezierCurve(value: Instantiable0[QuadraticBezierCurve]): Self = StObject.set(x, "QuadraticBezierCurve", value.asInstanceOf[js.Any])
+    
+    inline def setQuadraticBezierCurve3(value: Instantiable0[QuadraticBezierCurve3]): Self = StObject.set(x, "QuadraticBezierCurve3", value.asInstanceOf[js.Any])
     
     inline def setQuaternion(value: TypeofQuaternion): Self = StObject.set(x, "Quaternion", value.asInstanceOf[js.Any])
     
     inline def setQuaternionKeyframeTrack(
       value: Instantiable3[
           /* name */ String, 
-          /* times */ js.Array[Any], 
-          /* values */ js.Array[Any], 
+          /* times */ ArrayLike[Double], 
+          /* values */ ArrayLike[Double], 
           QuaternionKeyframeTrack
         ]
     ): Self = StObject.set(x, "QuaternionKeyframeTrack", value.asInstanceOf[js.Any])
@@ -2819,71 +2797,73 @@ object TypeofTHREE {
         ]
     ): Self = StObject.set(x, "QuaternionLinearInterpolant", value.asInstanceOf[js.Any])
     
+    inline def setRED_GREEN_RGTC2_Format(value: `36285`): Self = StObject.set(x, "RED_GREEN_RGTC2_Format", value.asInstanceOf[js.Any])
+    
+    inline def setRED_RGTC1_Format(value: `36283`): Self = StObject.set(x, "RED_RGTC1_Format", value.asInstanceOf[js.Any])
+    
     inline def setREVISION(value: String): Self = StObject.set(x, "REVISION", value.asInstanceOf[js.Any])
     
-    inline def setRGBADepthPacking(value: DepthPackingStrategies): Self = StObject.set(x, "RGBADepthPacking", value.asInstanceOf[js.Any])
+    inline def setRGBADepthPacking(value: `3201`): Self = StObject.set(x, "RGBADepthPacking", value.asInstanceOf[js.Any])
     
-    inline def setRGBAFormat(value: PixelFormat): Self = StObject.set(x, "RGBAFormat", value.asInstanceOf[js.Any])
+    inline def setRGBAFormat(value: `1023`): Self = StObject.set(x, "RGBAFormat", value.asInstanceOf[js.Any])
     
-    inline def setRGBAIntegerFormat(value: PixelFormat): Self = StObject.set(x, "RGBAIntegerFormat", value.asInstanceOf[js.Any])
+    inline def setRGBAIntegerFormat(value: `1033`): Self = StObject.set(x, "RGBAIntegerFormat", value.asInstanceOf[js.Any])
     
-    inline def setRGBA_ASTC_10x10_Format(value: CompressedPixelFormat): Self = StObject.set(x, "RGBA_ASTC_10x10_Format", value.asInstanceOf[js.Any])
+    inline def setRGBA_ASTC_10x10_Format(value: `37819`): Self = StObject.set(x, "RGBA_ASTC_10x10_Format", value.asInstanceOf[js.Any])
     
-    inline def setRGBA_ASTC_10x5_Format(value: CompressedPixelFormat): Self = StObject.set(x, "RGBA_ASTC_10x5_Format", value.asInstanceOf[js.Any])
+    inline def setRGBA_ASTC_10x5_Format(value: `37816`): Self = StObject.set(x, "RGBA_ASTC_10x5_Format", value.asInstanceOf[js.Any])
     
-    inline def setRGBA_ASTC_10x6_Format(value: CompressedPixelFormat): Self = StObject.set(x, "RGBA_ASTC_10x6_Format", value.asInstanceOf[js.Any])
+    inline def setRGBA_ASTC_10x6_Format(value: `37817`): Self = StObject.set(x, "RGBA_ASTC_10x6_Format", value.asInstanceOf[js.Any])
     
-    inline def setRGBA_ASTC_10x8_Format(value: CompressedPixelFormat): Self = StObject.set(x, "RGBA_ASTC_10x8_Format", value.asInstanceOf[js.Any])
+    inline def setRGBA_ASTC_10x8_Format(value: `37818`): Self = StObject.set(x, "RGBA_ASTC_10x8_Format", value.asInstanceOf[js.Any])
     
-    inline def setRGBA_ASTC_12x10_Format(value: CompressedPixelFormat): Self = StObject.set(x, "RGBA_ASTC_12x10_Format", value.asInstanceOf[js.Any])
+    inline def setRGBA_ASTC_12x10_Format(value: `37820`): Self = StObject.set(x, "RGBA_ASTC_12x10_Format", value.asInstanceOf[js.Any])
     
-    inline def setRGBA_ASTC_12x12_Format(value: CompressedPixelFormat): Self = StObject.set(x, "RGBA_ASTC_12x12_Format", value.asInstanceOf[js.Any])
+    inline def setRGBA_ASTC_12x12_Format(value: `37821`): Self = StObject.set(x, "RGBA_ASTC_12x12_Format", value.asInstanceOf[js.Any])
     
-    inline def setRGBA_ASTC_4x4_Format(value: CompressedPixelFormat): Self = StObject.set(x, "RGBA_ASTC_4x4_Format", value.asInstanceOf[js.Any])
+    inline def setRGBA_ASTC_4x4_Format(value: `37808`): Self = StObject.set(x, "RGBA_ASTC_4x4_Format", value.asInstanceOf[js.Any])
     
-    inline def setRGBA_ASTC_5x4_Format(value: CompressedPixelFormat): Self = StObject.set(x, "RGBA_ASTC_5x4_Format", value.asInstanceOf[js.Any])
+    inline def setRGBA_ASTC_5x4_Format(value: `37809`): Self = StObject.set(x, "RGBA_ASTC_5x4_Format", value.asInstanceOf[js.Any])
     
-    inline def setRGBA_ASTC_5x5_Format(value: CompressedPixelFormat): Self = StObject.set(x, "RGBA_ASTC_5x5_Format", value.asInstanceOf[js.Any])
+    inline def setRGBA_ASTC_5x5_Format(value: `37810`): Self = StObject.set(x, "RGBA_ASTC_5x5_Format", value.asInstanceOf[js.Any])
     
-    inline def setRGBA_ASTC_6x5_Format(value: CompressedPixelFormat): Self = StObject.set(x, "RGBA_ASTC_6x5_Format", value.asInstanceOf[js.Any])
+    inline def setRGBA_ASTC_6x5_Format(value: `37811`): Self = StObject.set(x, "RGBA_ASTC_6x5_Format", value.asInstanceOf[js.Any])
     
-    inline def setRGBA_ASTC_6x6_Format(value: CompressedPixelFormat): Self = StObject.set(x, "RGBA_ASTC_6x6_Format", value.asInstanceOf[js.Any])
+    inline def setRGBA_ASTC_6x6_Format(value: `37812`): Self = StObject.set(x, "RGBA_ASTC_6x6_Format", value.asInstanceOf[js.Any])
     
-    inline def setRGBA_ASTC_8x5_Format(value: CompressedPixelFormat): Self = StObject.set(x, "RGBA_ASTC_8x5_Format", value.asInstanceOf[js.Any])
+    inline def setRGBA_ASTC_8x5_Format(value: `37813`): Self = StObject.set(x, "RGBA_ASTC_8x5_Format", value.asInstanceOf[js.Any])
     
-    inline def setRGBA_ASTC_8x6_Format(value: CompressedPixelFormat): Self = StObject.set(x, "RGBA_ASTC_8x6_Format", value.asInstanceOf[js.Any])
+    inline def setRGBA_ASTC_8x6_Format(value: `37814`): Self = StObject.set(x, "RGBA_ASTC_8x6_Format", value.asInstanceOf[js.Any])
     
-    inline def setRGBA_ASTC_8x8_Format(value: CompressedPixelFormat): Self = StObject.set(x, "RGBA_ASTC_8x8_Format", value.asInstanceOf[js.Any])
+    inline def setRGBA_ASTC_8x8_Format(value: `37815`): Self = StObject.set(x, "RGBA_ASTC_8x8_Format", value.asInstanceOf[js.Any])
     
-    inline def setRGBA_BPTC_Format(value: CompressedPixelFormat): Self = StObject.set(x, "RGBA_BPTC_Format", value.asInstanceOf[js.Any])
+    inline def setRGBA_BPTC_Format(value: `36492`): Self = StObject.set(x, "RGBA_BPTC_Format", value.asInstanceOf[js.Any])
     
-    inline def setRGBA_ETC2_EAC_Format(value: CompressedPixelFormat): Self = StObject.set(x, "RGBA_ETC2_EAC_Format", value.asInstanceOf[js.Any])
+    inline def setRGBA_ETC2_EAC_Format(value: `37496`): Self = StObject.set(x, "RGBA_ETC2_EAC_Format", value.asInstanceOf[js.Any])
     
-    inline def setRGBA_PVRTC_2BPPV1_Format(value: CompressedPixelFormat): Self = StObject.set(x, "RGBA_PVRTC_2BPPV1_Format", value.asInstanceOf[js.Any])
+    inline def setRGBA_PVRTC_2BPPV1_Format(value: `35843`): Self = StObject.set(x, "RGBA_PVRTC_2BPPV1_Format", value.asInstanceOf[js.Any])
     
-    inline def setRGBA_PVRTC_4BPPV1_Format(value: CompressedPixelFormat): Self = StObject.set(x, "RGBA_PVRTC_4BPPV1_Format", value.asInstanceOf[js.Any])
+    inline def setRGBA_PVRTC_4BPPV1_Format(value: `35842`): Self = StObject.set(x, "RGBA_PVRTC_4BPPV1_Format", value.asInstanceOf[js.Any])
     
-    inline def setRGBA_S3TC_DXT1_Format(value: CompressedPixelFormat): Self = StObject.set(x, "RGBA_S3TC_DXT1_Format", value.asInstanceOf[js.Any])
+    inline def setRGBA_S3TC_DXT1_Format(value: `33777`): Self = StObject.set(x, "RGBA_S3TC_DXT1_Format", value.asInstanceOf[js.Any])
     
-    inline def setRGBA_S3TC_DXT3_Format(value: CompressedPixelFormat): Self = StObject.set(x, "RGBA_S3TC_DXT3_Format", value.asInstanceOf[js.Any])
+    inline def setRGBA_S3TC_DXT3_Format(value: `33778`): Self = StObject.set(x, "RGBA_S3TC_DXT3_Format", value.asInstanceOf[js.Any])
     
-    inline def setRGBA_S3TC_DXT5_Format(value: CompressedPixelFormat): Self = StObject.set(x, "RGBA_S3TC_DXT5_Format", value.asInstanceOf[js.Any])
+    inline def setRGBA_S3TC_DXT5_Format(value: `33779`): Self = StObject.set(x, "RGBA_S3TC_DXT5_Format", value.asInstanceOf[js.Any])
     
-    inline def setRGBFormat(value: PixelFormat): Self = StObject.set(x, "RGBFormat", value.asInstanceOf[js.Any])
+    inline def setRGB_ETC1_Format(value: `36196`): Self = StObject.set(x, "RGB_ETC1_Format", value.asInstanceOf[js.Any])
     
-    inline def setRGB_ETC1_Format(value: CompressedPixelFormat): Self = StObject.set(x, "RGB_ETC1_Format", value.asInstanceOf[js.Any])
+    inline def setRGB_ETC2_Format(value: `37492`): Self = StObject.set(x, "RGB_ETC2_Format", value.asInstanceOf[js.Any])
     
-    inline def setRGB_ETC2_Format(value: CompressedPixelFormat): Self = StObject.set(x, "RGB_ETC2_Format", value.asInstanceOf[js.Any])
+    inline def setRGB_PVRTC_2BPPV1_Format(value: `35841`): Self = StObject.set(x, "RGB_PVRTC_2BPPV1_Format", value.asInstanceOf[js.Any])
     
-    inline def setRGB_PVRTC_2BPPV1_Format(value: CompressedPixelFormat): Self = StObject.set(x, "RGB_PVRTC_2BPPV1_Format", value.asInstanceOf[js.Any])
+    inline def setRGB_PVRTC_4BPPV1_Format(value: `35840`): Self = StObject.set(x, "RGB_PVRTC_4BPPV1_Format", value.asInstanceOf[js.Any])
     
-    inline def setRGB_PVRTC_4BPPV1_Format(value: CompressedPixelFormat): Self = StObject.set(x, "RGB_PVRTC_4BPPV1_Format", value.asInstanceOf[js.Any])
+    inline def setRGB_S3TC_DXT1_Format(value: `33776`): Self = StObject.set(x, "RGB_S3TC_DXT1_Format", value.asInstanceOf[js.Any])
     
-    inline def setRGB_S3TC_DXT1_Format(value: CompressedPixelFormat): Self = StObject.set(x, "RGB_S3TC_DXT1_Format", value.asInstanceOf[js.Any])
+    inline def setRGFormat(value: `1030`): Self = StObject.set(x, "RGFormat", value.asInstanceOf[js.Any])
     
-    inline def setRGFormat(value: PixelFormat): Self = StObject.set(x, "RGFormat", value.asInstanceOf[js.Any])
-    
-    inline def setRGIntegerFormat(value: PixelFormat): Self = StObject.set(x, "RGIntegerFormat", value.asInstanceOf[js.Any])
+    inline def setRGIntegerFormat(value: `1031`): Self = StObject.set(x, "RGIntegerFormat", value.asInstanceOf[js.Any])
     
     inline def setRawShaderMaterial(value: Instantiable0[RawShaderMaterial]): Self = StObject.set(x, "RawShaderMaterial", value.asInstanceOf[js.Any])
     
@@ -2893,21 +2873,27 @@ object TypeofTHREE {
     
     inline def setRectAreaLight(value: Instantiable0[RectAreaLight]): Self = StObject.set(x, "RectAreaLight", value.asInstanceOf[js.Any])
     
-    inline def setRedFormat(value: PixelFormat): Self = StObject.set(x, "RedFormat", value.asInstanceOf[js.Any])
+    inline def setRedFormat(value: `1028`): Self = StObject.set(x, "RedFormat", value.asInstanceOf[js.Any])
     
-    inline def setRedIntegerFormat(value: PixelFormat): Self = StObject.set(x, "RedIntegerFormat", value.asInstanceOf[js.Any])
+    inline def setRedIntegerFormat(value: `1029`): Self = StObject.set(x, "RedIntegerFormat", value.asInstanceOf[js.Any])
     
-    inline def setReinhardToneMapping(value: ToneMapping): Self = StObject.set(x, "ReinhardToneMapping", value.asInstanceOf[js.Any])
+    inline def setReinhardToneMapping(value: `2`): Self = StObject.set(x, "ReinhardToneMapping", value.asInstanceOf[js.Any])
     
-    inline def setRepeatWrapping(value: Wrapping): Self = StObject.set(x, "RepeatWrapping", value.asInstanceOf[js.Any])
+    inline def setRepeatWrapping(value: `1000`): Self = StObject.set(x, "RepeatWrapping", value.asInstanceOf[js.Any])
     
-    inline def setReplaceStencilOp(value: StencilOp): Self = StObject.set(x, "ReplaceStencilOp", value.asInstanceOf[js.Any])
+    inline def setReplaceStencilOp(value: `7681`): Self = StObject.set(x, "ReplaceStencilOp", value.asInstanceOf[js.Any])
     
-    inline def setReverseSubtractEquation(value: BlendingEquation): Self = StObject.set(x, "ReverseSubtractEquation", value.asInstanceOf[js.Any])
+    inline def setReverseSubtractEquation(value: `102`): Self = StObject.set(x, "ReverseSubtractEquation", value.asInstanceOf[js.Any])
     
     inline def setRingGeometry(value: TypeofRingGeometry): Self = StObject.set(x, "RingGeometry", value.asInstanceOf[js.Any])
     
-    inline def setSRGBEncoding(value: TextureEncoding): Self = StObject.set(x, "sRGBEncoding", value.asInstanceOf[js.Any])
+    inline def setSIGNED_RED_GREEN_RGTC2_Format(value: `36286`): Self = StObject.set(x, "SIGNED_RED_GREEN_RGTC2_Format", value.asInstanceOf[js.Any])
+    
+    inline def setSIGNED_RED_RGTC1_Format(value: `36284`): Self = StObject.set(x, "SIGNED_RED_RGTC1_Format", value.asInstanceOf[js.Any])
+    
+    inline def setSRGBColorSpace(value: srgb): Self = StObject.set(x, "SRGBColorSpace", value.asInstanceOf[js.Any])
+    
+    inline def setSRGBEncoding(value: `3001`): Self = StObject.set(x, "sRGBEncoding", value.asInstanceOf[js.Any])
     
     inline def setSRGBToLinear(value: Double => Double): Self = StObject.set(x, "SRGBToLinear", js.Any.fromFunction1(value))
     
@@ -2929,13 +2915,22 @@ object TypeofTHREE {
     
     inline def setShapeUtils(value: TypeofShapeUtils): Self = StObject.set(x, "ShapeUtils", value.asInstanceOf[js.Any])
     
-    inline def setShortType(value: TextureDataType): Self = StObject.set(x, "ShortType", value.asInstanceOf[js.Any])
+    inline def setShortType(value: `1011`): Self = StObject.set(x, "ShortType", value.asInstanceOf[js.Any])
     
-    inline def setSkeleton(value: Instantiable1[/* bones */ js.Array[Bone], Skeleton]): Self = StObject.set(x, "Skeleton", value.asInstanceOf[js.Any])
+    inline def setSkeleton(value: Instantiable0[Skeleton]): Self = StObject.set(x, "Skeleton", value.asInstanceOf[js.Any])
     
-    inline def setSkeletonHelper(value: Instantiable1[/* object */ Object3D[Event], SkeletonHelper]): Self = StObject.set(x, "SkeletonHelper", value.asInstanceOf[js.Any])
+    inline def setSkeletonHelper(
+      value: Instantiable1[
+          /* object */ SkinnedMesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]], 
+          SkeletonHelper
+        ]
+    ): Self = StObject.set(x, "SkeletonHelper", value.asInstanceOf[js.Any])
     
-    inline def setSkinnedMesh(value: Instantiable0[SkinnedMesh[BufferGeometry, Material | js.Array[Material]]]): Self = StObject.set(x, "SkinnedMesh", value.asInstanceOf[js.Any])
+    inline def setSkinnedMesh(
+      value: Instantiable0[
+          typings.three.mod.SkinnedMesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]]
+        ]
+    ): Self = StObject.set(x, "SkinnedMesh", value.asInstanceOf[js.Any])
     
     inline def setSource(value: Instantiable1[/* data */ Any, Source]): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
     
@@ -2961,48 +2956,48 @@ object TypeofTHREE {
         ]
     ): Self = StObject.set(x, "SpotLight", value.asInstanceOf[js.Any])
     
-    inline def setSpotLightHelper(value: Instantiable1[/* light */ Light, SpotLightHelper]): Self = StObject.set(x, "SpotLightHelper", value.asInstanceOf[js.Any])
+    inline def setSpotLightHelper(value: Instantiable1[/* light */ Light[js.UndefOr[LightShadow[Camera]]], SpotLightHelper]): Self = StObject.set(x, "SpotLightHelper", value.asInstanceOf[js.Any])
     
-    inline def setSpotLightShadow(value: Instantiable1[/* camera */ Camera, SpotLightShadow]): Self = StObject.set(x, "SpotLightShadow", value.asInstanceOf[js.Any])
+    inline def setSpotLightShadow(value: Instantiable1[/* camera */ PerspectiveCamera, SpotLightShadow]): Self = StObject.set(x, "SpotLightShadow", value.asInstanceOf[js.Any])
     
     inline def setSprite(value: Instantiable0[Sprite]): Self = StObject.set(x, "Sprite", value.asInstanceOf[js.Any])
     
     inline def setSpriteMaterial(value: Instantiable0[SpriteMaterial]): Self = StObject.set(x, "SpriteMaterial", value.asInstanceOf[js.Any])
     
-    inline def setSrcAlphaFactor(value: BlendingDstFactor): Self = StObject.set(x, "SrcAlphaFactor", value.asInstanceOf[js.Any])
+    inline def setSrcAlphaFactor(value: `204`): Self = StObject.set(x, "SrcAlphaFactor", value.asInstanceOf[js.Any])
     
-    inline def setSrcAlphaSaturateFactor(value: BlendingSrcFactor): Self = StObject.set(x, "SrcAlphaSaturateFactor", value.asInstanceOf[js.Any])
+    inline def setSrcAlphaSaturateFactor(value: `210`): Self = StObject.set(x, "SrcAlphaSaturateFactor", value.asInstanceOf[js.Any])
     
-    inline def setSrcColorFactor(value: BlendingDstFactor): Self = StObject.set(x, "SrcColorFactor", value.asInstanceOf[js.Any])
+    inline def setSrcColorFactor(value: `202`): Self = StObject.set(x, "SrcColorFactor", value.asInstanceOf[js.Any])
     
-    inline def setStaticCopyUsage(value: Usage): Self = StObject.set(x, "StaticCopyUsage", value.asInstanceOf[js.Any])
+    inline def setStaticCopyUsage(value: `35046`): Self = StObject.set(x, "StaticCopyUsage", value.asInstanceOf[js.Any])
     
-    inline def setStaticDrawUsage(value: Usage): Self = StObject.set(x, "StaticDrawUsage", value.asInstanceOf[js.Any])
+    inline def setStaticDrawUsage(value: `35044`): Self = StObject.set(x, "StaticDrawUsage", value.asInstanceOf[js.Any])
     
-    inline def setStaticReadUsage(value: Usage): Self = StObject.set(x, "StaticReadUsage", value.asInstanceOf[js.Any])
+    inline def setStaticReadUsage(value: `35045`): Self = StObject.set(x, "StaticReadUsage", value.asInstanceOf[js.Any])
     
     inline def setStereoCamera(value: Instantiable0[StereoCamera]): Self = StObject.set(x, "StereoCamera", value.asInstanceOf[js.Any])
     
-    inline def setStreamCopyUsage(value: Usage): Self = StObject.set(x, "StreamCopyUsage", value.asInstanceOf[js.Any])
+    inline def setStreamCopyUsage(value: `35042`): Self = StObject.set(x, "StreamCopyUsage", value.asInstanceOf[js.Any])
     
-    inline def setStreamDrawUsage(value: Usage): Self = StObject.set(x, "StreamDrawUsage", value.asInstanceOf[js.Any])
+    inline def setStreamDrawUsage(value: `35040`): Self = StObject.set(x, "StreamDrawUsage", value.asInstanceOf[js.Any])
     
-    inline def setStreamReadUsage(value: Usage): Self = StObject.set(x, "StreamReadUsage", value.asInstanceOf[js.Any])
+    inline def setStreamReadUsage(value: `35041`): Self = StObject.set(x, "StreamReadUsage", value.asInstanceOf[js.Any])
     
     inline def setStringKeyframeTrack(
       value: Instantiable3[
           /* name */ String, 
-          /* times */ js.Array[Any], 
-          /* values */ js.Array[Any], 
+          /* times */ ArrayLike[Double], 
+          /* values */ ArrayLike[Any], 
           StringKeyframeTrack
         ]
     ): Self = StObject.set(x, "StringKeyframeTrack", value.asInstanceOf[js.Any])
     
-    inline def setSubtractEquation(value: BlendingEquation): Self = StObject.set(x, "SubtractEquation", value.asInstanceOf[js.Any])
+    inline def setSubtractEquation(value: `101`): Self = StObject.set(x, "SubtractEquation", value.asInstanceOf[js.Any])
     
-    inline def setSubtractiveBlending(value: Blending): Self = StObject.set(x, "SubtractiveBlending", value.asInstanceOf[js.Any])
+    inline def setSubtractiveBlending(value: `3`): Self = StObject.set(x, "SubtractiveBlending", value.asInstanceOf[js.Any])
     
-    inline def setTangentSpaceNormalMap(value: NormalMapTypes): Self = StObject.set(x, "TangentSpaceNormalMap", value.asInstanceOf[js.Any])
+    inline def setTangentSpaceNormalMap(value: `0`): Self = StObject.set(x, "TangentSpaceNormalMap", value.asInstanceOf[js.Any])
     
     inline def setTetrahedronGeometry(value: TypeofTetrahedronGeometry): Self = StObject.set(x, "TetrahedronGeometry", value.asInstanceOf[js.Any])
     
@@ -3010,47 +3005,44 @@ object TypeofTHREE {
     
     inline def setTextureLoader(value: Instantiable0[TextureLoader]): Self = StObject.set(x, "TextureLoader", value.asInstanceOf[js.Any])
     
-    inline def setToHalfFloat(value: Double => Double): Self = StObject.set(x, "toHalfFloat", js.Any.fromFunction1(value))
-    
     inline def setTorusGeometry(value: TypeofTorusGeometry): Self = StObject.set(x, "TorusGeometry", value.asInstanceOf[js.Any])
     
     inline def setTorusKnotGeometry(value: TypeofTorusKnotGeometry): Self = StObject.set(x, "TorusKnotGeometry", value.asInstanceOf[js.Any])
     
     inline def setTriangle(value: TypeofTriangle): Self = StObject.set(x, "Triangle", value.asInstanceOf[js.Any])
     
-    inline def setTriangleFanDrawMode(value: TrianglesDrawModes): Self = StObject.set(x, "TriangleFanDrawMode", value.asInstanceOf[js.Any])
+    inline def setTriangleFanDrawMode(value: `2`): Self = StObject.set(x, "TriangleFanDrawMode", value.asInstanceOf[js.Any])
     
-    inline def setTriangleStripDrawMode(value: TrianglesDrawModes): Self = StObject.set(x, "TriangleStripDrawMode", value.asInstanceOf[js.Any])
+    inline def setTriangleStripDrawMode(value: `1`): Self = StObject.set(x, "TriangleStripDrawMode", value.asInstanceOf[js.Any])
     
-    inline def setTrianglesDrawMode(value: TrianglesDrawModes): Self = StObject.set(x, "TrianglesDrawMode", value.asInstanceOf[js.Any])
+    inline def setTrianglesDrawMode(value: `0`): Self = StObject.set(x, "TrianglesDrawMode", value.asInstanceOf[js.Any])
     
     inline def setTubeGeometry(value: TypeofTubeGeometry): Self = StObject.set(x, "TubeGeometry", value.asInstanceOf[js.Any])
     
-    inline def setUVMapping(value: Mapping): Self = StObject.set(x, "UVMapping", value.asInstanceOf[js.Any])
+    inline def setTwoPassDoubleSide(value: `2`): Self = StObject.set(x, "TwoPassDoubleSide", value.asInstanceOf[js.Any])
     
-    inline def setUint16Attribute(value: Instantiable2[/* array */ Any, /* itemSize */ Double, Uint16Attribute]): Self = StObject.set(x, "Uint16Attribute", value.asInstanceOf[js.Any])
+    inline def setUVMapping(value: `300`): Self = StObject.set(x, "UVMapping", value.asInstanceOf[js.Any])
     
     inline def setUint16BufferAttribute(
       value: Instantiable2[/* array */ js.Iterable[Double], /* itemSize */ Double, Uint16BufferAttribute]
     ): Self = StObject.set(x, "Uint16BufferAttribute", value.asInstanceOf[js.Any])
     
-    inline def setUint32Attribute(value: Instantiable2[/* array */ Any, /* itemSize */ Double, Uint32Attribute]): Self = StObject.set(x, "Uint32Attribute", value.asInstanceOf[js.Any])
-    
     inline def setUint32BufferAttribute(
       value: Instantiable2[/* array */ js.Iterable[Double], /* itemSize */ Double, Uint32BufferAttribute]
     ): Self = StObject.set(x, "Uint32BufferAttribute", value.asInstanceOf[js.Any])
     
-    inline def setUint8Attribute(value: Instantiable2[/* array */ Any, /* itemSize */ Double, Uint8Attribute]): Self = StObject.set(x, "Uint8Attribute", value.asInstanceOf[js.Any])
-    
     inline def setUint8BufferAttribute(value: Instantiable2[/* array */ js.Iterable[Double], /* itemSize */ Double, Uint8BufferAttribute]): Self = StObject.set(x, "Uint8BufferAttribute", value.asInstanceOf[js.Any])
-    
-    inline def setUint8ClampedAttribute(value: Instantiable2[/* array */ Any, /* itemSize */ Double, Uint8ClampedAttribute]): Self = StObject.set(x, "Uint8ClampedAttribute", value.asInstanceOf[js.Any])
     
     inline def setUint8ClampedBufferAttribute(
       value: Instantiable2[/* array */ js.Iterable[Double], /* itemSize */ Double, Uint8ClampedBufferAttribute]
     ): Self = StObject.set(x, "Uint8ClampedBufferAttribute", value.asInstanceOf[js.Any])
     
-    inline def setUniform(value: Instantiable1[/* value */ Any, Uniform]): Self = StObject.set(x, "Uniform", value.asInstanceOf[js.Any])
+    inline def setUniform(
+      value: Instantiable1[
+          /* import warning: RewrittenClass.unapply cls was tparam T */ /* value */ Any, 
+          Uniform[js.Object]
+        ]
+    ): Self = StObject.set(x, "Uniform", value.asInstanceOf[js.Any])
     
     inline def setUniformsGroup(value: Instantiable0[typings.three.mod.UniformsGroup]): Self = StObject.set(x, "UniformsGroup", value.asInstanceOf[js.Any])
     
@@ -3058,21 +3050,21 @@ object TypeofTHREE {
     
     inline def setUniformsUtils(value: Any): Self = StObject.set(x, "UniformsUtils", value.asInstanceOf[js.Any])
     
-    inline def setUnsignedByteType(value: TextureDataType): Self = StObject.set(x, "UnsignedByteType", value.asInstanceOf[js.Any])
+    inline def setUnsignedByteType(value: `1009`): Self = StObject.set(x, "UnsignedByteType", value.asInstanceOf[js.Any])
     
-    inline def setUnsignedInt248Type(value: TextureDataType): Self = StObject.set(x, "UnsignedInt248Type", value.asInstanceOf[js.Any])
+    inline def setUnsignedInt248Type(value: `1020`): Self = StObject.set(x, "UnsignedInt248Type", value.asInstanceOf[js.Any])
     
-    inline def setUnsignedIntType(value: TextureDataType): Self = StObject.set(x, "UnsignedIntType", value.asInstanceOf[js.Any])
+    inline def setUnsignedIntType(value: `1014`): Self = StObject.set(x, "UnsignedIntType", value.asInstanceOf[js.Any])
     
-    inline def setUnsignedShort4444Type(value: TextureDataType): Self = StObject.set(x, "UnsignedShort4444Type", value.asInstanceOf[js.Any])
+    inline def setUnsignedShort4444Type(value: `1017`): Self = StObject.set(x, "UnsignedShort4444Type", value.asInstanceOf[js.Any])
     
-    inline def setUnsignedShort5551Type(value: TextureDataType): Self = StObject.set(x, "UnsignedShort5551Type", value.asInstanceOf[js.Any])
+    inline def setUnsignedShort5551Type(value: `1018`): Self = StObject.set(x, "UnsignedShort5551Type", value.asInstanceOf[js.Any])
     
-    inline def setUnsignedShortType(value: TextureDataType): Self = StObject.set(x, "UnsignedShortType", value.asInstanceOf[js.Any])
+    inline def setUnsignedShortType(value: `1012`): Self = StObject.set(x, "UnsignedShortType", value.asInstanceOf[js.Any])
     
-    inline def setVSMShadowMap(value: ShadowMapType): Self = StObject.set(x, "VSMShadowMap", value.asInstanceOf[js.Any])
+    inline def setVSMShadowMap(value: `3`): Self = StObject.set(x, "VSMShadowMap", value.asInstanceOf[js.Any])
     
-    inline def setVector2(value: Instantiable0[typings.three.mod.Vector2]): Self = StObject.set(x, "Vector2", value.asInstanceOf[js.Any])
+    inline def setVector2(value: Instantiable0[Vector2]): Self = StObject.set(x, "Vector2", value.asInstanceOf[js.Any])
     
     inline def setVector3(value: Instantiable0[typings.three.mod.Vector3]): Self = StObject.set(x, "Vector3", value.asInstanceOf[js.Any])
     
@@ -3081,8 +3073,8 @@ object TypeofTHREE {
     inline def setVectorKeyframeTrack(
       value: Instantiable3[
           /* name */ String, 
-          /* times */ js.Array[Any], 
-          /* values */ js.Array[Any], 
+          /* times */ ArrayLike[Double], 
+          /* values */ ArrayLike[Double], 
           VectorKeyframeTrack
         ]
     ): Self = StObject.set(x, "VectorKeyframeTrack", value.asInstanceOf[js.Any])
@@ -3093,8 +3085,8 @@ object TypeofTHREE {
           /* mapping */ js.UndefOr[Mapping], 
           /* wrapS */ js.UndefOr[Wrapping], 
           /* wrapT */ js.UndefOr[Wrapping], 
-          /* magFilter */ js.UndefOr[TextureFilter], 
-          /* minFilter */ js.UndefOr[TextureFilter], 
+          /* magFilter */ js.UndefOr[MagnificationTextureFilter], 
+          /* minFilter */ js.UndefOr[MinificationTextureFilter], 
           /* format */ js.UndefOr[PixelFormat], 
           /* type */ js.UndefOr[TextureDataType], 
           /* anisotropy */ js.UndefOr[Double], 
@@ -3165,8 +3157,6 @@ object TypeofTHREE {
     ): Self = StObject.set(x, "WebGLLights", value.asInstanceOf[js.Any])
     
     inline def setWebGLMultipleRenderTargets(value: Instantiable0[WebGLMultipleRenderTargets]): Self = StObject.set(x, "WebGLMultipleRenderTargets", value.asInstanceOf[js.Any])
-    
-    inline def setWebGLMultisampleRenderTarget(value: Instantiable0[WebGLMultisampleRenderTarget]): Self = StObject.set(x, "WebGLMultisampleRenderTarget", value.asInstanceOf[js.Any])
     
     inline def setWebGLObjects(
       value: Instantiable4[
@@ -3261,26 +3251,26 @@ object TypeofTHREE {
     
     inline def setWebXRManager(value: Instantiable2[/* renderer */ Any, /* gl */ WebGLRenderingContext, WebXRManager]): Self = StObject.set(x, "WebXRManager", value.asInstanceOf[js.Any])
     
-    inline def setWireframeGeometry(value: Instantiable0[WireframeGeometry[BufferGeometry]]): Self = StObject.set(x, "WireframeGeometry", value.asInstanceOf[js.Any])
+    inline def setWireframeGeometry(value: Instantiable0[WireframeGeometry[BufferGeometry[NormalBufferAttributes]]]): Self = StObject.set(x, "WireframeGeometry", value.asInstanceOf[js.Any])
     
-    inline def setWrapAroundEnding(value: InterpolationEndingModes): Self = StObject.set(x, "WrapAroundEnding", value.asInstanceOf[js.Any])
+    inline def setWrapAroundEnding(value: `2402`): Self = StObject.set(x, "WrapAroundEnding", value.asInstanceOf[js.Any])
     
     inline def setXRGripSpace(value: Instantiable0[XRGripSpace]): Self = StObject.set(x, "XRGripSpace", value.asInstanceOf[js.Any])
     
     inline def setXRHandSpace(value: Instantiable0[XRHandSpace]): Self = StObject.set(x, "XRHandSpace", value.asInstanceOf[js.Any])
     
+    inline def setXRJointSpace(value: Instantiable0[XRJointSpace]): Self = StObject.set(x, "XRJointSpace", value.asInstanceOf[js.Any])
+    
     inline def setXRTargetRaySpace(value: Instantiable0[XRTargetRaySpace]): Self = StObject.set(x, "XRTargetRaySpace", value.asInstanceOf[js.Any])
     
-    inline def setZeroCurvatureEnding(value: InterpolationEndingModes): Self = StObject.set(x, "ZeroCurvatureEnding", value.asInstanceOf[js.Any])
+    inline def setZeroCurvatureEnding(value: `2400`): Self = StObject.set(x, "ZeroCurvatureEnding", value.asInstanceOf[js.Any])
     
-    inline def setZeroFactor(value: BlendingDstFactor): Self = StObject.set(x, "ZeroFactor", value.asInstanceOf[js.Any])
+    inline def setZeroFactor(value: `200`): Self = StObject.set(x, "ZeroFactor", value.asInstanceOf[js.Any])
     
-    inline def setZeroSlopeEnding(value: InterpolationEndingModes): Self = StObject.set(x, "ZeroSlopeEnding", value.asInstanceOf[js.Any])
+    inline def setZeroSlopeEnding(value: `2401`): Self = StObject.set(x, "ZeroSlopeEnding", value.asInstanceOf[js.Any])
     
-    inline def setZeroStencilOp(value: StencilOp): Self = StObject.set(x, "ZeroStencilOp", value.asInstanceOf[js.Any])
+    inline def setZeroStencilOp(value: `0`): Self = StObject.set(x, "ZeroStencilOp", value.asInstanceOf[js.Any])
     
-    inline def set_SRGBAFormat(value: PixelFormat): Self = StObject.set(x, "_SRGBAFormat", value.asInstanceOf[js.Any])
-    
-    inline def set_SRGBFormat(value: PixelFormat): Self = StObject.set(x, "_SRGBFormat", value.asInstanceOf[js.Any])
+    inline def set_SRGBAFormat(value: /* 1035 */ Double): Self = StObject.set(x, "_SRGBAFormat", value.asInstanceOf[js.Any])
   }
 }

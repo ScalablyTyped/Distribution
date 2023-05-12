@@ -5,13 +5,14 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Base class for managing network errors in Maps.
-  */
 @JSGlobal("google.maps.MapsNetworkError")
 @js.native
 /**
   * Base class for managing network errors in Maps.
+  *
+  * Access by calling `const {MapsNetworkError} = await
+  * google.maps.importLibrary("core")`. See
+  * https://developers.google.com/maps/documentation/javascript/libraries.
   */
 open class MapsNetworkError ()
   extends StObject

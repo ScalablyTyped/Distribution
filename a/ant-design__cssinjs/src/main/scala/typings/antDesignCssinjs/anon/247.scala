@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.MozTextBlink
+import typings.csstype.mod.Property.ScrollPaddingLeft
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,8 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `247` extends StObject {
   
   var value: js.UndefOr[
-    MozTextBlink | (js.Array[
-      (Extract[js.UndefOr[MozTextBlink | js.Array[NonNullable[js.UndefOr[MozTextBlink]]]], String]) | NonNullable[js.UndefOr[MozTextBlink]]
+    (ScrollPaddingLeft[Double | String]) | (js.Array[
+      (Extract[
+        js.UndefOr[
+          (ScrollPaddingLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[ScrollPaddingLeft[Double | String]]]])
+        ], 
+        String
+      ]) | (NonNullable[js.UndefOr[ScrollPaddingLeft[Double | String]]])
     ])
   ] = js.native
 }

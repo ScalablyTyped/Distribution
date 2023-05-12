@@ -1,7 +1,7 @@
 package typings.dataApiClient
 
-import typings.awsSdk.clientsRdsdataserviceMod.BeginTransactionResponse
-import typings.awsSdk.clientsRdsdataserviceMod.ClientConfiguration
+import typings.awsSdk2Types.clientsRdsdataserviceMod.BeginTransactionResponse
+import typings.awsSdk2Types.clientsRdsdataserviceMod.ClientConfiguration
 import typings.dataApiClient.anon.Database
 import typings.dataApiClient.anon.DeserializeDate
 import typings.dataApiClient.anon.HydrateColumnNames
@@ -72,7 +72,7 @@ object mod {
     
     // params can be [] or {};
     def query[T](obj: HydrateColumnNames): js.Promise[iDataAPIQueryResult[T]] = js.native
-    /* tslint:disable:no-unnecessary-generics */
+    /* eslint-disable no-unnecessary-generics */
     def query[T](sql: String): js.Promise[iDataAPIQueryResult[T]] = js.native
     def query[T](sql: String, params: js.Array[Any]): js.Promise[iDataAPIQueryResult[T]] = js.native
     def query[T](sql: String, params: Any): js.Promise[iDataAPIQueryResult[T]] = js.native

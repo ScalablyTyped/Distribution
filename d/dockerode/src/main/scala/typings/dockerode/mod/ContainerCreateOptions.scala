@@ -34,7 +34,7 @@ trait ContainerCreateOptions extends StObject {
   
   var Labels: js.UndefOr[StringDictionary[String]] = js.undefined
   
-  var MacAddress: js.UndefOr[Boolean] = js.undefined
+  var MacAddress: js.UndefOr[String] = js.undefined
   
   var NetworkDisabled: js.UndefOr[Boolean] = js.undefined
   
@@ -132,7 +132,7 @@ object ContainerCreateOptions {
     
     inline def setLabelsUndefined: Self = StObject.set(x, "Labels", js.undefined)
     
-    inline def setMacAddress(value: Boolean): Self = StObject.set(x, "MacAddress", value.asInstanceOf[js.Any])
+    inline def setMacAddress(value: String): Self = StObject.set(x, "MacAddress", value.asInstanceOf[js.Any])
     
     inline def setMacAddressUndefined: Self = StObject.set(x, "MacAddress", js.undefined)
     

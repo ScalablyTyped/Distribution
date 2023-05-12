@@ -29,6 +29,10 @@ open class Binary ()
 /* static members */
 object Binary {
   
+  @JSImport("mongodb", "Binary")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /* Excluded from this release type: BSON_BINARY_SUBTYPE_DEFAULT */
   /** Initial buffer default size */
   @JSImport("mongodb", "Binary.BUFFER_SIZE")
@@ -79,4 +83,12 @@ object Binary {
   @JSImport("mongodb", "Binary.SUBTYPE_UUID_OLD")
   @js.native
   val SUBTYPE_UUID_OLD: /* 3 */ scala.Double = js.native
+  
+  /** Creates an Binary instance from a base64 string */
+  inline def createFromBase64(base64: String): typings.bson.mod.Binary = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromBase64")(base64.asInstanceOf[js.Any]).asInstanceOf[typings.bson.mod.Binary]
+  inline def createFromBase64(base64: String, subType: scala.Double): typings.bson.mod.Binary = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromBase64")(base64.asInstanceOf[js.Any], subType.asInstanceOf[js.Any])).asInstanceOf[typings.bson.mod.Binary]
+  
+  /** Creates an Binary instance from a hex digit string */
+  inline def createFromHexString(hex: String): typings.bson.mod.Binary = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromHexString")(hex.asInstanceOf[js.Any]).asInstanceOf[typings.bson.mod.Binary]
+  inline def createFromHexString(hex: String, subType: scala.Double): typings.bson.mod.Binary = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromHexString")(hex.asInstanceOf[js.Any], subType.asInstanceOf[js.Any])).asInstanceOf[typings.bson.mod.Binary]
 }

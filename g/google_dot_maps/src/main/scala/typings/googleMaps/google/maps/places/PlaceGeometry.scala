@@ -6,9 +6,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Defines information about the geometry of a Place.
-  */
 trait PlaceGeometry extends StObject {
   
   /**

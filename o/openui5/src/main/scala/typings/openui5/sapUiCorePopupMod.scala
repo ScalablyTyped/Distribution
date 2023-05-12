@@ -1080,6 +1080,8 @@ object sapUiCorePopupMod {
     def exit(): Unit = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:closed closed} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -1091,6 +1093,8 @@ object sapUiCorePopupMod {
     mParameters: js.Object): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:opened opened} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -1177,6 +1181,50 @@ object sapUiCorePopupMod {
       * animation duration in milliseconds. For `iDuration` == 0 the opening happens synchronously without animation.
       */
     iDuration: js.UndefOr[int],
+      /**
+      * the popup content's reference position for docking
+      */
+    my: js.UndefOr[Dock],
+      /**
+      * the "of" element's reference point for docking to
+      */
+    at: js.UndefOr[Dock],
+      /**
+      * specifies the reference element to which the given content should dock to
+      */
+    of: js.UndefOr[
+          String | typings.openui5.sapUiCoreElementMod.default | Element | jQuery[HTMLElement] | Event
+        ],
+      /**
+      * the offset relative to the docking point, specified as a string with space-separated pixel values (e.g.
+      * "10 0" to move the popup 10 pixels to the right). If the docking of both "my" and "at" are both RTL-sensitive
+      * ("begin" or "end"), this offset is automatically mirrored in the RTL case as well.
+      */
+    offset: js.UndefOr[String],
+      /**
+      * defines how the position of an element should be adjusted in case it overflows the within area in some
+      * direction.
+      */
+    collision: js.UndefOr[Collision],
+      /**
+      * defines the area the popup should be placed in. This affects the collision detection.
+      */
+    within: js.UndefOr[String | typings.openui5.sapUiCoreElementMod.default | Element | Window],
+      /**
+      * defines whether the popup should follow the dock reference when the reference changes its position.
+      */
+    followOf: js.UndefOr[Boolean | js.Function | Null]
+    ): Unit = js.native
+    /**
+      * Opens the popup's content at the position either specified here or beforehand via {@link #setPosition}.
+      * Content must be capable of being positioned via "position:absolute;" All parameters are optional (open()
+      * may be called without any parameters). iDuration may just be omitted, but if any of "at", "of", "offset",
+      * "collision" is given, also the preceding positional parameters ("my", at",...) must be given.
+      *
+      * If the Popup's OpenState is different from "CLOSED" (i.e. if the Popup is already open, opening or closing),
+      * the call is ignored.
+      */
+    def open(
       /**
       * the popup content's reference position for docking
       */

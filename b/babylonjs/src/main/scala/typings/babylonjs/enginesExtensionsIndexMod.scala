@@ -1,6 +1,5 @@
 package typings.babylonjs
 
-import typings.babylonjs.anon.PartialRenderTargetCreati
 import typings.babylonjs.buffersDataBufferMod.DataBuffer
 import typings.babylonjs.buffersStorageBufferMod.StorageBuffer
 import typings.babylonjs.camerasCameraMod.Camera
@@ -260,6 +259,11 @@ object enginesExtensionsIndexMod {
       /** @internal */
       var _onVrDisplayPresentChange: Nullable[js.Function0[Unit]] = js.native
       
+      /**
+        * @internal
+        */
+      def _renderViewStep(view: typings.babylonjs.enginesExtensionsEngineDotviewsMod.EngineView): Boolean = js.native
+      
       /** @internal */
       var _textureFormatInUse: String = js.native
       
@@ -277,7 +281,7 @@ object enginesExtensionsIndexMod {
       
       /**
         * Gets the current engine view
-        * @see https://doc.babylonjs.com/how_to/multi_canvases
+        * @see https://doc.babylonjs.com/features/featuresDeepDive/scene/multiCanvas
         */
       var activeView: Nullable[typings.babylonjs.enginesExtensionsEngineDotviewsMod.EngineView] = js.native
       
@@ -286,7 +290,7 @@ object enginesExtensionsIndexMod {
         * @param algorithmType defines the algorithm to use
         * @param query defines the query to use
         * @returns the current engine
-        * @see https://doc.babylonjs.com/features/occlusionquery
+        * @see https://doc.babylonjs.com/features/featuresDeepDive/occlusionQueries
         */
       def beginOcclusionQuery(algorithmType: Double, query: OcclusionQuery): Boolean = js.native
       
@@ -358,13 +362,13 @@ object enginesExtensionsIndexMod {
         * Call this function to switch to webVR mode
         * Will do nothing if webVR is not supported or if there is no webVR device
         * @param options the webvr options provided to the camera. mainly used for multiview
-        * @see https://doc.babylonjs.com/how_to/webvr_camera
+        * @see https://doc.babylonjs.com/features/featuresDeepDive/cameras/webVRCamera
         */
       def enableVR(options: WebVROptions): Unit = js.native
       
       /**
         * Ends an occlusion query
-        * @see https://doc.babylonjs.com/features/occlusionquery
+        * @see https://doc.babylonjs.com/features/featuresDeepDive/occlusionQueries
         * @param algorithmType defines the algorithm to use
         * @returns the current engine
         */
@@ -1111,7 +1115,7 @@ object enginesExtensionsIndexMod {
       
       /**
         * Create a dynamic uniform buffer
-        * @see https://doc.babylonjs.com/features/webgl2#uniform-buffer-objets
+        * @see https://doc.babylonjs.com/setup/support/webGL2#uniform-buffer-objets
         * @param elements defines the content of the uniform buffer
         * @returns the webGL uniform buffer
         */
@@ -1126,7 +1130,7 @@ object enginesExtensionsIndexMod {
       
       /**
         * Create a multi render target texture
-        * @see https://doc.babylonjs.com/features/webgl2#multiple-render-target
+        * @see https://doc.babylonjs.com/setup/support/webGL2#multiple-render-target
         * @param size defines the size of the texture
         * @param options defines the creation options
         * @param initializeBuffers if set to true, the engine will make an initializing call of drawBuffers
@@ -1389,7 +1393,7 @@ object enginesExtensionsIndexMod {
         * @returns a new render target cube wrapper
         */
       def createRenderTargetCubeTexture(size: Double): RenderTargetWrapper = js.native
-      def createRenderTargetCubeTexture(size: Double, options: PartialRenderTargetCreati): RenderTargetWrapper = js.native
+      def createRenderTargetCubeTexture(size: Double, options: RenderTargetCreationOptions): RenderTargetWrapper = js.native
       
       /**
         * Creates a new render target texture
@@ -1411,7 +1415,7 @@ object enginesExtensionsIndexMod {
       
       /**
         * Create an uniform buffer
-        * @see https://doc.babylonjs.com/features/webgl2#uniform-buffer-objets
+        * @see https://doc.babylonjs.com/setup/support/webGL2#uniform-buffer-objets
         * @param elements defines the content of the uniform buffer
         * @returns the webGL uniform buffer
         */
@@ -1425,7 +1429,7 @@ object enginesExtensionsIndexMod {
       
       /**
         * Gets the current alpha mode
-        * @see https://doc.babylonjs.com/resources/transparency_and_how_meshes_are_rendered
+        * @see https://doc.babylonjs.com/features/featuresDeepDive/materials/advanced/transparent_rendering
         * @returns the current alpha mode
         */
       def getAlphaMode(): Double = js.native
@@ -1483,7 +1487,7 @@ object enginesExtensionsIndexMod {
         * Sets the current alpha mode
         * @param mode defines the mode to use (one of the Engine.ALPHA_XXX)
         * @param noDepthWriteChange defines if depth writing state should remains unchanged (false by default)
-        * @see https://doc.babylonjs.com/resources/transparency_and_how_meshes_are_rendered
+        * @see https://doc.babylonjs.com/features/featuresDeepDive/materials/advanced/transparent_rendering
         */
       def setAlphaMode(mode: Double): Unit = js.native
       def setAlphaMode(mode: Double, noDepthWriteChange: Boolean): Unit = js.native
@@ -1566,7 +1570,7 @@ object enginesExtensionsIndexMod {
       
       /**
         * Update the sample count for a given multiple render target texture
-        * @see https://doc.babylonjs.com/features/webgl2#multisample-render-targets
+        * @see https://doc.babylonjs.com/setup/support/webGL2#multisample-render-targets
         * @param rtWrapper defines the render target wrapper to update
         * @param samples defines the sample count to set
         * @param initializeBuffers if set to true, the engine will make an initializing call of drawBuffers
@@ -1724,7 +1728,7 @@ object enginesExtensionsIndexMod {
       
       /**
         * Updates the sample count of a render target texture
-        * @see https://doc.babylonjs.com/features/webgl2#multisample-render-targets
+        * @see https://doc.babylonjs.com/setup/support/webGL2#multisample-render-targets
         * @param rtWrapper defines the render target wrapper to update
         * @param samples defines the sample count to set
         * @returns the effective sample count (could be 0 if multisample render targets are not supported)
@@ -1745,7 +1749,7 @@ object enginesExtensionsIndexMod {
       
       /**
         * Update an existing uniform buffer
-        * @see https://doc.babylonjs.com/features/webgl2#uniform-buffer-objets
+        * @see https://doc.babylonjs.com/setup/support/webGL2#uniform-buffer-objets
         * @param uniformBuffer defines the target uniform buffer
         * @param elements defines the content to update
         * @param offset defines the offset in the uniform buffer where update should start
@@ -1763,6 +1767,7 @@ object enginesExtensionsIndexMod {
         * @param invertY defines if data must be stored with Y axis inverted
         */
       def updateVideoTexture(texture: Nullable[InternalTexture], video: HTMLVideoElement, invertY: Boolean): Unit = js.native
+      def updateVideoTexture(texture: Nullable[InternalTexture], video: Nullable[ExternalTexture], invertY: Boolean): Unit = js.native
     }
   }
   
@@ -1785,19 +1790,19 @@ object enginesExtensionsIndexMod {
       
       /**
         * Flag to force rendering the mesh even if occluded
-        * @see https://doc.babylonjs.com/features/occlusionquery
+        * @see https://doc.babylonjs.com/features/featuresDeepDive/occlusionQueries
         */
       var forceRenderingWhenOccluded: Boolean
       
       /**
         * Gets or sets whether the mesh is occluded or not, it is used also to set the initial state of the mesh to be occluded or not
-        * @see https://doc.babylonjs.com/features/occlusionquery
+        * @see https://doc.babylonjs.com/features/featuresDeepDive/occlusionQueries
         */
       var isOccluded: Boolean
       
       /**
         * Flag to check the progress status of the query
-        * @see https://doc.babylonjs.com/features/occlusionquery
+        * @see https://doc.babylonjs.com/features/featuresDeepDive/occlusionQueries
         */
       var isOcclusionQueryInProgress: Boolean
       
@@ -1805,14 +1810,14 @@ object enginesExtensionsIndexMod {
         * This property determines the type of occlusion query algorithm to run in WebGl, you can use:
         * * AbstractMesh.OCCLUSION_ALGORITHM_TYPE_ACCURATE which is mapped to GL_ANY_SAMPLES_PASSED.
         * * AbstractMesh.OCCLUSION_ALGORITHM_TYPE_CONSERVATIVE (Default Value) which is mapped to GL_ANY_SAMPLES_PASSED_CONSERVATIVE which is a false positive algorithm that is faster than GL_ANY_SAMPLES_PASSED but less accurate.
-        * @see https://doc.babylonjs.com/features/occlusionquery
+        * @see https://doc.babylonjs.com/features/featuresDeepDive/occlusionQueries
         */
       var occlusionQueryAlgorithmType: Double
       
       /**
         * This number indicates the number of allowed retries before stop the occlusion query, this is useful if the occlusion query is taking long time before to the query result is retrieved, the query result indicates if the object is visible within the scene or not and based on that Babylon.Js engine decides to show or hide the object.
         * The default value is -1 which means don't break the query and wait till the result
-        * @see https://doc.babylonjs.com/features/occlusionquery
+        * @see https://doc.babylonjs.com/features/featuresDeepDive/occlusionQueries
         */
       var occlusionRetryCount: Double
       
@@ -1821,7 +1826,7 @@ object enginesExtensionsIndexMod {
         * * OCCLUSION_TYPE_NONE (Default Value): this option means no occlusion query within the Mesh.
         * * OCCLUSION_TYPE_OPTIMISTIC: this option is means use occlusion query and if occlusionRetryCount is reached and the query is broken show the mesh.
         * * OCCLUSION_TYPE_STRICT: this option is means use occlusion query and if occlusionRetryCount is reached and the query is broken restore the last state of the mesh occlusion if the mesh was visible then show the mesh if was hidden then hide don't show.
-        * @see https://doc.babylonjs.com/features/occlusionquery
+        * @see https://doc.babylonjs.com/features/featuresDeepDive/occlusionQueries
         */
       var occlusionType: Double
     }

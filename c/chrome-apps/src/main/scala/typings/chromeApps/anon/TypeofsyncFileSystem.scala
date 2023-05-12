@@ -16,7 +16,6 @@ trait TypeofsyncFileSystem extends StObject {
   val ConflictResolutionPolicy: LASTWRITEWIN = js.native
   
   /**
-    * @enum
     * 'synced'
     *  - Not conflicting and has no pending local changes.
     * 'pending'
@@ -27,7 +26,6 @@ trait TypeofsyncFileSystem extends StObject {
   val FileStatus: CONFLICTING = js.native
   
   /**
-    * @enum
     * 'initializing'
     *  - The sync service is being initialized (e.g. restoring data from the database, checking connectivity and authenticating to the service etc).
     * 'running'

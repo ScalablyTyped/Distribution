@@ -4,11 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The TransitOptions object to be included in a <code><a
-  * href="#DirectionsRequest">DirectionsRequest</a></code> when the travel mode
-  * is set to TRANSIT.
-  */
 trait TransitOptions extends StObject {
   
   /**

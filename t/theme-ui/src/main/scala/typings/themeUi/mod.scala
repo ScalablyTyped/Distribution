@@ -285,17 +285,17 @@ object mod {
   inline def jsx[P /* <: js.Object */](`type`: FunctionComponent[P], props: Null, children: ReactNode*): FunctionComponentElement[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[FunctionComponentElement[P]]
   inline def jsx[P /* <: js.Object */](`type`: FunctionComponent[P], props: Unit, children: ReactNode*): FunctionComponentElement[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[FunctionComponentElement[P]]
   inline def jsx[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
-    `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116, starting with typings.themeUi.themeUiStrings.a, typings.themeUi.themeUiStrings.abbr, typings.themeUi.themeUiStrings.address */ Any,
+    `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 117, starting with typings.themeUi.themeUiStrings.a, typings.themeUi.themeUiStrings.abbr, typings.themeUi.themeUiStrings.address */ Any,
     props: ClassAttributes[T] & P,
     children: ReactNode*
   ): DetailedReactHTMLElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[DetailedReactHTMLElement[P, T]]
   inline def jsx[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
-    `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116, starting with typings.themeUi.themeUiStrings.a, typings.themeUi.themeUiStrings.abbr, typings.themeUi.themeUiStrings.address */ Any,
+    `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 117, starting with typings.themeUi.themeUiStrings.a, typings.themeUi.themeUiStrings.abbr, typings.themeUi.themeUiStrings.address */ Any,
     props: Null,
     children: ReactNode*
   ): DetailedReactHTMLElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[DetailedReactHTMLElement[P, T]]
   inline def jsx[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
-    `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116, starting with typings.themeUi.themeUiStrings.a, typings.themeUi.themeUiStrings.abbr, typings.themeUi.themeUiStrings.address */ Any,
+    `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 117, starting with typings.themeUi.themeUiStrings.a, typings.themeUi.themeUiStrings.abbr, typings.themeUi.themeUiStrings.address */ Any,
     props: Unit,
     children: ReactNode*
   ): DetailedReactHTMLElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("jsx")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[DetailedReactHTMLElement[P, T]]

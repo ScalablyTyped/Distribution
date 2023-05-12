@@ -1,7 +1,7 @@
 
 # Scala.js typings for html-webpack-plugin
 
-Typings are for version 5.5.0
+Typings are for version 5.5.1
 
 ## Library description:
 Simplifies creation of HTML files to serve your webpack bundles

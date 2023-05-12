@@ -126,6 +126,20 @@ object mod {
     val lowercase: js.UndefOr[Boolean] = js.undefined
     
     /**
+    	Preserve certain characters.
+    	It cannot contain the `separator`.
+    	For example, if you want to slugify URLs, but preserve the HTML fragment `#` character, you could set `preserveCharacters: ['#']`.
+    	@default []
+    	@example
+    	```
+    	import slugify from '@sindresorhus/slugify';
+    	slugify('foo_bar#baz', {preserveCharacters: ['#']});
+    	//=> 'foo-bar#baz'
+    	```
+    	*/
+    val preserveCharacters: js.UndefOr[js.Array[String]] = js.undefined
+    
+    /**
     	If your string starts with an underscore, it will be preserved in the slugified string.
     	Sometimes leading underscores are intentional, for example, filenames representing hidden paths on a website.
     	@default false
@@ -193,6 +207,12 @@ object mod {
       inline def setLowercase(value: Boolean): Self = StObject.set(x, "lowercase", value.asInstanceOf[js.Any])
       
       inline def setLowercaseUndefined: Self = StObject.set(x, "lowercase", js.undefined)
+      
+      inline def setPreserveCharacters(value: js.Array[String]): Self = StObject.set(x, "preserveCharacters", value.asInstanceOf[js.Any])
+      
+      inline def setPreserveCharactersUndefined: Self = StObject.set(x, "preserveCharacters", js.undefined)
+      
+      inline def setPreserveCharactersVarargs(value: String*): Self = StObject.set(x, "preserveCharacters", js.Array(value*))
       
       inline def setPreserveLeadingUnderscore(value: Boolean): Self = StObject.set(x, "preserveLeadingUnderscore", value.asInstanceOf[js.Any])
       

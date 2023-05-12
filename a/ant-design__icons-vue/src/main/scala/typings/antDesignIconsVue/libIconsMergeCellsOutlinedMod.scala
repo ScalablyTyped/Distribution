@@ -16,7 +16,7 @@ object libIconsMergeCellsOutlinedMod extends Shortcut {
   @js.native
   trait MergeCellsOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_MergeCellsOutlinedIconType: String = js.native

@@ -32,6 +32,11 @@ trait ServiceInstance extends StObject {
   var environmentName: ResourceName
   
   /**
+    * The last client request token received.
+    */
+  var lastClientRequestToken: js.UndefOr[String] = js.undefined
+  
+  /**
     * The time when a deployment of the service instance was last attempted.
     */
   var lastDeploymentAttemptedAt: js.Date
@@ -104,6 +109,10 @@ object ServiceInstance {
     inline def setDeploymentStatusMessageUndefined: Self = StObject.set(x, "deploymentStatusMessage", js.undefined)
     
     inline def setEnvironmentName(value: ResourceName): Self = StObject.set(x, "environmentName", value.asInstanceOf[js.Any])
+    
+    inline def setLastClientRequestToken(value: String): Self = StObject.set(x, "lastClientRequestToken", value.asInstanceOf[js.Any])
+    
+    inline def setLastClientRequestTokenUndefined: Self = StObject.set(x, "lastClientRequestToken", js.undefined)
     
     inline def setLastDeploymentAttemptedAt(value: js.Date): Self = StObject.set(x, "lastDeploymentAttemptedAt", value.asInstanceOf[js.Any])
     

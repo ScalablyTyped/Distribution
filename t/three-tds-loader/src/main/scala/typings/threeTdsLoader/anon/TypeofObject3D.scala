@@ -13,9 +13,22 @@ trait TypeofObject3D
   extends StObject
      with Instantiable0[Object3D[BaseEvent]] {
   
-  var DefaultMatrixAutoUpdate: Boolean = js.native
+  /**
+    * The default setting for {@link matrixAutoUpdate} for newly created Object3Ds.
+    * @defaultValue `true`
+    */
+  var DEFAULT_MATRIX_AUTO_UPDATE: Boolean = js.native
   
-  var DefaultMatrixWorldAutoUpdate: Boolean = js.native
+  /**
+    * The default setting for {@link matrixWorldAutoUpdate} for newly created Object3Ds.
+    * @defaultValue `true`
+    */
+  var DEFAULT_MATRIX_WORLD_AUTO_UPDATE: Boolean = js.native
   
-  var DefaultUp: Vector3 = js.native
+  /**
+    * The default {@link up} direction for objects, also used as the default position for {@link THREE.DirectionalLight | DirectionalLight},
+    * {@link THREE.HemisphereLight | HemisphereLight} and {@link THREE.Spotlight | Spotlight} (which creates lights shining from the top down).
+    * @defaultValue `new THREE.Vector3( 0, 1, 0)`
+    */
+  var DEFAULT_UP: Vector3 = js.native
 }

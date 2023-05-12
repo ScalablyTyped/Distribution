@@ -27,6 +27,8 @@ trait SendInvoiceOptions
   var photo_width: js.UndefOr[Double] = js.undefined
   
   var provider_data: js.UndefOr[String] = js.undefined
+  
+  var start_parameter: js.UndefOr[String] = js.undefined
 }
 object SendInvoiceOptions {
   
@@ -77,5 +79,9 @@ object SendInvoiceOptions {
     inline def setProvider_data(value: String): Self = StObject.set(x, "provider_data", value.asInstanceOf[js.Any])
     
     inline def setProvider_dataUndefined: Self = StObject.set(x, "provider_data", js.undefined)
+    
+    inline def setStart_parameter(value: String): Self = StObject.set(x, "start_parameter", value.asInstanceOf[js.Any])
+    
+    inline def setStart_parameterUndefined: Self = StObject.set(x, "start_parameter", js.undefined)
   }
 }

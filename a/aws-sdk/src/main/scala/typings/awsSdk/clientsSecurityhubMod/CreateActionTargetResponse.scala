@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateActionTargetResponse extends StObject {
   
   /**
-    * The ARN for the custom action target.
+    * The Amazon Resource Name (ARN) for the custom action target.
     */
   var ActionTargetArn: NonEmptyString
 }

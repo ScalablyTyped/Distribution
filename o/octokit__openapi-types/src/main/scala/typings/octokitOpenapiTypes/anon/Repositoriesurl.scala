@@ -1,95 +1,82 @@
 package typings.octokitOpenapiTypes.anon
 
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.all
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.selected
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Repositoriesurl extends StObject {
   
-  var description: js.UndefOr[String | Null] = js.undefined
+  var account: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['simple-user'] */ js.Any
   
-  var html_url: js.UndefOr[String] = js.undefined
+  /** @example true */
+  var has_multiple_single_files: js.UndefOr[Boolean] = js.undefined
   
-  var id: js.UndefOr[Double] = js.undefined
+  var permissions: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['app-permissions'] */ js.Any
   
-  var members_url: js.UndefOr[String] = js.undefined
+  /**
+    * Format: uri
+    * @example https://api.github.com/users/octocat/repos
+    */
+  var repositories_url: String
   
-  var name: js.UndefOr[String] = js.undefined
+  /**
+    * @description Describe whether all repositories have been selected or there's a selection involved
+    * @enum {string}
+    */
+  var repository_selection: all | selected
   
-  var node_id: js.UndefOr[String] = js.undefined
+  /** @example config.yaml */
+  var single_file_name: String | Null
   
-  var parent: js.UndefOr[String | Null] = js.undefined
-  
-  var permission: js.UndefOr[String] = js.undefined
-  
-  var privacy: js.UndefOr[String] = js.undefined
-  
-  var repositories_url: js.UndefOr[String] = js.undefined
-  
-  var slug: js.UndefOr[String] = js.undefined
-  
-  var url: js.UndefOr[String] = js.undefined
+  /**
+    * @example [
+    *   "config.yml",
+    *   ".github/issue_TEMPLATE.md"
+    * ]
+    */
+  var single_file_paths: js.UndefOr[js.Array[String]] = js.undefined
 }
 object Repositoriesurl {
   
-  inline def apply(): Repositoriesurl = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(
+    account: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['simple-user'] */ js.Any,
+    permissions: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['app-permissions'] */ js.Any,
+    repositories_url: String,
+    repository_selection: all | selected
+  ): Repositoriesurl = {
+    val __obj = js.Dynamic.literal(account = account.asInstanceOf[js.Any], permissions = permissions.asInstanceOf[js.Any], repositories_url = repositories_url.asInstanceOf[js.Any], repository_selection = repository_selection.asInstanceOf[js.Any], single_file_name = null)
     __obj.asInstanceOf[Repositoriesurl]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: Repositoriesurl] (val x: Self) extends AnyVal {
     
-    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setAccount(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['simple-user'] */ js.Any
+    ): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
     
-    inline def setDescriptionNull: Self = StObject.set(x, "description", null)
+    inline def setHas_multiple_single_files(value: Boolean): Self = StObject.set(x, "has_multiple_single_files", value.asInstanceOf[js.Any])
     
-    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setHas_multiple_single_filesUndefined: Self = StObject.set(x, "has_multiple_single_files", js.undefined)
     
-    inline def setHtml_url(value: String): Self = StObject.set(x, "html_url", value.asInstanceOf[js.Any])
-    
-    inline def setHtml_urlUndefined: Self = StObject.set(x, "html_url", js.undefined)
-    
-    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
-    
-    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
-    
-    inline def setMembers_url(value: String): Self = StObject.set(x, "members_url", value.asInstanceOf[js.Any])
-    
-    inline def setMembers_urlUndefined: Self = StObject.set(x, "members_url", js.undefined)
-    
-    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-    
-    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
-    
-    inline def setNode_id(value: String): Self = StObject.set(x, "node_id", value.asInstanceOf[js.Any])
-    
-    inline def setNode_idUndefined: Self = StObject.set(x, "node_id", js.undefined)
-    
-    inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
-    
-    inline def setParentNull: Self = StObject.set(x, "parent", null)
-    
-    inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
-    
-    inline def setPermission(value: String): Self = StObject.set(x, "permission", value.asInstanceOf[js.Any])
-    
-    inline def setPermissionUndefined: Self = StObject.set(x, "permission", js.undefined)
-    
-    inline def setPrivacy(value: String): Self = StObject.set(x, "privacy", value.asInstanceOf[js.Any])
-    
-    inline def setPrivacyUndefined: Self = StObject.set(x, "privacy", js.undefined)
+    inline def setPermissions(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['app-permissions'] */ js.Any
+    ): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
     
     inline def setRepositories_url(value: String): Self = StObject.set(x, "repositories_url", value.asInstanceOf[js.Any])
     
-    inline def setRepositories_urlUndefined: Self = StObject.set(x, "repositories_url", js.undefined)
+    inline def setRepository_selection(value: all | selected): Self = StObject.set(x, "repository_selection", value.asInstanceOf[js.Any])
     
-    inline def setSlug(value: String): Self = StObject.set(x, "slug", value.asInstanceOf[js.Any])
+    inline def setSingle_file_name(value: String): Self = StObject.set(x, "single_file_name", value.asInstanceOf[js.Any])
     
-    inline def setSlugUndefined: Self = StObject.set(x, "slug", js.undefined)
+    inline def setSingle_file_nameNull: Self = StObject.set(x, "single_file_name", null)
     
-    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setSingle_file_paths(value: js.Array[String]): Self = StObject.set(x, "single_file_paths", value.asInstanceOf[js.Any])
     
-    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setSingle_file_pathsUndefined: Self = StObject.set(x, "single_file_paths", js.undefined)
+    
+    inline def setSingle_file_pathsVarargs(value: String*): Self = StObject.set(x, "single_file_paths", js.Array(value*))
   }
 }

@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Rewritten from type alias, can be one of: 
   - typings.vegaTypings.vegaTypingsStrings.values
   - typings.vegaTypings.vegaTypingsStrings.count
-  - typings.vegaTypings.vegaTypingsStrings.__count__
   - typings.vegaTypings.vegaTypingsStrings.missing
   - typings.vegaTypings.vegaTypingsStrings.valid
   - typings.vegaTypings.vegaTypingsStrings.sum
@@ -32,8 +31,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 */
 trait AggregateOps extends StObject
 object AggregateOps {
-  
-  inline def __count__ : typings.vegaTypings.vegaTypingsStrings.__count__ = "__count__".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.__count__]
   
   inline def argmax: typings.vegaTypings.vegaTypingsStrings.argmax = "argmax".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.argmax]
   

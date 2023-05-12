@@ -9,7 +9,7 @@ trait MessageDeliveryStatusEventConfiguration extends StObject {
   var Sidewalk: js.UndefOr[SidewalkEventNotificationConfigurations] = js.undefined
   
   /**
-    * Denotes whether the wireless device ID device registration state event topic is enabled or disabled.
+    * Denotes whether the wireless device ID message delivery status event topic is enabled or disabled.
     */
   var WirelessDeviceIdEventTopic: js.UndefOr[EventNotificationTopicStatus] = js.undefined
 }

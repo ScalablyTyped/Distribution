@@ -1,6 +1,7 @@
 package typings.node
 
 import typings.node.timersMod.TimerOptions
+import typings.node.timersPromisesMod.Scheduler_
 import typings.std.AsyncIterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,6 +12,10 @@ object nodeColontimersPromisesMod {
   @JSImport("node:timers/promises", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
+  
+  @JSImport("node:timers/promises", "scheduler")
+  @js.native
+  val scheduler: Scheduler_ = js.native
   
   /**
     * ```js
@@ -32,6 +37,8 @@ object nodeColontimersPromisesMod {
   
   /**
     * Returns an async iterator that generates values in an interval of `delay` ms.
+    * If `ref` is `true`, you need to call `next()` of async iterator explicitly
+    * or implicitly to keep the event loop alive.
     *
     * ```js
     * import {

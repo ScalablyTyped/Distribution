@@ -31,7 +31,7 @@ trait DataRequirement
   
   /**
     * Indicates that specific elements of the type are referenced by the knowledge module and must be supported by the consumer in order to obtain an effective evaluation. This does not mean that a value is required for this element, only that the consuming system must understand the element and be able to provide values for it if they are available.
-    * The value of mustSupport SHALL be a FHIRPath resolveable on the type of the DataRequirement. The path SHALL consist only of identifiers, constant indexers, and .resolve() (see the [Simple FHIRPath Profile](fhirpath.html#simple) for full details).
+    * The value of mustSupport SHALL be a FHIRPath resolvable on the type of the DataRequirement. The path SHALL consist only of identifiers, constant indexers, and .resolve() (see the [Simple FHIRPath Profile](fhirpath.html#simple) for full details).
     */
   var mustSupport: js.UndefOr[js.Array[String]] = js.undefined
   
@@ -59,6 +59,11 @@ trait DataRequirement
     * The type of the required data, specified as the type name of a resource. For profiles, this value is set to the type of the base resource of the profile.
     */
   var `type`: String
+  
+  /**
+    * Value filters specify additional constraints on the data for elements other than code-valued or date-valued. Each value filter specifies an additional constraint on the data (i.e. valueFilters are AND'ed, not OR'ed).
+    */
+  var valueFilter: js.UndefOr[js.Array[DataRequirementValueFilter]] = js.undefined
 }
 object DataRequirement {
   
@@ -114,6 +119,12 @@ object DataRequirement {
     inline def setSubjectReferenceUndefined: Self = StObject.set(x, "subjectReference", js.undefined)
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setValueFilter(value: js.Array[DataRequirementValueFilter]): Self = StObject.set(x, "valueFilter", value.asInstanceOf[js.Any])
+    
+    inline def setValueFilterUndefined: Self = StObject.set(x, "valueFilter", js.undefined)
+    
+    inline def setValueFilterVarargs(value: DataRequirementValueFilter*): Self = StObject.set(x, "valueFilter", js.Array(value*))
     
     inline def set_mustSupport(value: js.Array[Element]): Self = StObject.set(x, "_mustSupport", value.asInstanceOf[js.Any])
     

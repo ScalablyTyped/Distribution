@@ -44,6 +44,18 @@ object typesSrcDisplayBaseFactoryMod {
     def reset(canvasAndContext: Any, width: Any, height: Any): Unit = js.native
   }
   
+  @JSImport("pdfjs-dist/types/src/display/base_factory", "BaseFilterFactory")
+  @js.native
+  open class BaseFilterFactory () extends StObject {
+    
+    def addFilter(maps: Any): String = js.native
+    
+    def addHCMFilter(fgColor: Any, bgColor: Any): String = js.native
+    
+    def destroy(): Unit = js.native
+    def destroy(keepHCM: Boolean): Unit = js.native
+  }
+  
   @JSImport("pdfjs-dist/types/src/display/base_factory", "BaseSVGFactory")
   @js.native
   open class BaseSVGFactory () extends StObject {

@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeLaunchConfigurationTemplatesResponse extends StObject {
   
   /**
-    * Request to disconnect Source Server from service by Server ID.
+    * List of items returned by DescribeLaunchConfigurationTemplates.
     */
   var items: js.UndefOr[LaunchConfigurationTemplates] = js.undefined
   
   /**
-    * Request to disconnect Source Server from service by Server ID.
+    * Next pagination token returned from DescribeLaunchConfigurationTemplates.
     */
   var nextToken: js.UndefOr[PaginationToken] = js.undefined
 }

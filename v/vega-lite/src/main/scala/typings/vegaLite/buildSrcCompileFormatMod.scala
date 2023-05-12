@@ -63,8 +63,24 @@ object buildSrcCompileFormatMod {
   inline def guideFormat(
     fieldOrDatumDef: DatumDef[String, PrimitiveValue | DateTime | ExprRef | SignalRef],
     `type`: Type,
+    format: String,
+    formatType: SignalRef,
+    config: Config[ExprRef | SignalRef],
+    omitTimeFormatConfig: Boolean
+  ): String | Signal = (^.asInstanceOf[js.Dynamic].applyDynamic("guideFormat")(fieldOrDatumDef.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], format.asInstanceOf[js.Any], formatType.asInstanceOf[js.Any], config.asInstanceOf[js.Any], omitTimeFormatConfig.asInstanceOf[js.Any])).asInstanceOf[String | Signal]
+  inline def guideFormat(
+    fieldOrDatumDef: DatumDef[String, PrimitiveValue | DateTime | ExprRef | SignalRef],
+    `type`: Type,
     format: Dict[Any],
     formatType: String,
+    config: Config[ExprRef | SignalRef],
+    omitTimeFormatConfig: Boolean
+  ): String | Signal = (^.asInstanceOf[js.Dynamic].applyDynamic("guideFormat")(fieldOrDatumDef.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], format.asInstanceOf[js.Any], formatType.asInstanceOf[js.Any], config.asInstanceOf[js.Any], omitTimeFormatConfig.asInstanceOf[js.Any])).asInstanceOf[String | Signal]
+  inline def guideFormat(
+    fieldOrDatumDef: DatumDef[String, PrimitiveValue | DateTime | ExprRef | SignalRef],
+    `type`: Type,
+    format: Dict[Any],
+    formatType: SignalRef,
     config: Config[ExprRef | SignalRef],
     omitTimeFormatConfig: Boolean
   ): String | Signal = (^.asInstanceOf[js.Dynamic].applyDynamic("guideFormat")(fieldOrDatumDef.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], format.asInstanceOf[js.Any], formatType.asInstanceOf[js.Any], config.asInstanceOf[js.Any], omitTimeFormatConfig.asInstanceOf[js.Any])).asInstanceOf[String | Signal]
@@ -79,8 +95,24 @@ object buildSrcCompileFormatMod {
   inline def guideFormat(
     fieldOrDatumDef: FieldDef[String, Any],
     `type`: Type,
+    format: String,
+    formatType: SignalRef,
+    config: Config[ExprRef | SignalRef],
+    omitTimeFormatConfig: Boolean
+  ): String | Signal = (^.asInstanceOf[js.Dynamic].applyDynamic("guideFormat")(fieldOrDatumDef.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], format.asInstanceOf[js.Any], formatType.asInstanceOf[js.Any], config.asInstanceOf[js.Any], omitTimeFormatConfig.asInstanceOf[js.Any])).asInstanceOf[String | Signal]
+  inline def guideFormat(
+    fieldOrDatumDef: FieldDef[String, Any],
+    `type`: Type,
     format: Dict[Any],
     formatType: String,
+    config: Config[ExprRef | SignalRef],
+    omitTimeFormatConfig: Boolean
+  ): String | Signal = (^.asInstanceOf[js.Dynamic].applyDynamic("guideFormat")(fieldOrDatumDef.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], format.asInstanceOf[js.Any], formatType.asInstanceOf[js.Any], config.asInstanceOf[js.Any], omitTimeFormatConfig.asInstanceOf[js.Any])).asInstanceOf[String | Signal]
+  inline def guideFormat(
+    fieldOrDatumDef: FieldDef[String, Any],
+    `type`: Type,
+    format: Dict[Any],
+    formatType: SignalRef,
     config: Config[ExprRef | SignalRef],
     omitTimeFormatConfig: Boolean
   ): String | Signal = (^.asInstanceOf[js.Dynamic].applyDynamic("guideFormat")(fieldOrDatumDef.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], format.asInstanceOf[js.Any], formatType.asInstanceOf[js.Any], config.asInstanceOf[js.Any], omitTimeFormatConfig.asInstanceOf[js.Any])).asInstanceOf[String | Signal]

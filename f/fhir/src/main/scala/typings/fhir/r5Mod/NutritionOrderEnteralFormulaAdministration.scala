@@ -24,9 +24,9 @@ trait NutritionOrderEnteralFormulaAdministration
   var rateRatio: js.UndefOr[Ratio] = js.undefined
   
   /**
-    * The time period and frequency at which the enteral formula should be delivered to the patient.
+    * Schedule information for an enteral formula.
     */
-  var schedule: js.UndefOr[Timing] = js.undefined
+  var schedule: js.UndefOr[NutritionOrderEnteralFormulaAdministrationSchedule] = js.undefined
 }
 object NutritionOrderEnteralFormulaAdministration {
   
@@ -50,7 +50,7 @@ object NutritionOrderEnteralFormulaAdministration {
     
     inline def setRateRatioUndefined: Self = StObject.set(x, "rateRatio", js.undefined)
     
-    inline def setSchedule(value: Timing): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
+    inline def setSchedule(value: NutritionOrderEnteralFormulaAdministrationSchedule): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
     
     inline def setScheduleUndefined: Self = StObject.set(x, "schedule", js.undefined)
   }

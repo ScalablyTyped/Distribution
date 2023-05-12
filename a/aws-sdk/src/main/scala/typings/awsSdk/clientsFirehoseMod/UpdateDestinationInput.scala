@@ -6,6 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait UpdateDestinationInput extends StObject {
   
+  /**
+    * Describes an update for a destination in the Serverless offering for Amazon OpenSearch Service.
+    */
+  var AmazonOpenSearchServerlessDestinationUpdate: js.UndefOr[typings.awsSdk.clientsFirehoseMod.AmazonOpenSearchServerlessDestinationUpdate] = js.undefined
+  
+  /**
+    * Describes an update for a destination in Amazon OpenSearch Service.
+    */
   var AmazonopensearchserviceDestinationUpdate: js.UndefOr[typings.awsSdk.clientsFirehoseMod.AmazonopensearchserviceDestinationUpdate] = js.undefined
   
   /**
@@ -66,6 +74,10 @@ object UpdateDestinationInput {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: UpdateDestinationInput] (val x: Self) extends AnyVal {
+    
+    inline def setAmazonOpenSearchServerlessDestinationUpdate(value: AmazonOpenSearchServerlessDestinationUpdate): Self = StObject.set(x, "AmazonOpenSearchServerlessDestinationUpdate", value.asInstanceOf[js.Any])
+    
+    inline def setAmazonOpenSearchServerlessDestinationUpdateUndefined: Self = StObject.set(x, "AmazonOpenSearchServerlessDestinationUpdate", js.undefined)
     
     inline def setAmazonopensearchserviceDestinationUpdate(value: AmazonopensearchserviceDestinationUpdate): Self = StObject.set(x, "AmazonopensearchserviceDestinationUpdate", value.asInstanceOf[js.Any])
     

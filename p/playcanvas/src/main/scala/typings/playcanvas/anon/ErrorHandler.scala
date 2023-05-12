@@ -13,6 +13,8 @@ trait ErrorHandler extends StObject {
   
   var glueUrl: js.UndefOr[String] = js.undefined
   
+  var numWorkers: js.UndefOr[Double] = js.undefined
+  
   var wasmUrl: js.UndefOr[String] = js.undefined
 }
 object ErrorHandler {
@@ -36,6 +38,10 @@ object ErrorHandler {
     inline def setGlueUrl(value: String): Self = StObject.set(x, "glueUrl", value.asInstanceOf[js.Any])
     
     inline def setGlueUrlUndefined: Self = StObject.set(x, "glueUrl", js.undefined)
+    
+    inline def setNumWorkers(value: Double): Self = StObject.set(x, "numWorkers", value.asInstanceOf[js.Any])
+    
+    inline def setNumWorkersUndefined: Self = StObject.set(x, "numWorkers", js.undefined)
     
     inline def setWasmUrl(value: String): Self = StObject.set(x, "wasmUrl", value.asInstanceOf[js.Any])
     

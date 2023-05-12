@@ -22,6 +22,11 @@ trait UpdateLaunchConfigurationRequest extends StObject {
   var copyTags: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Enable map auto tagging.
+    */
+  var enableMapAutoTagging: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * Update Launch configuration launch disposition request.
     */
   var launchDisposition: js.UndefOr[LaunchDisposition] = js.undefined
@@ -30,6 +35,11 @@ trait UpdateLaunchConfigurationRequest extends StObject {
     * Update Launch configuration licensing request.
     */
   var licensing: js.UndefOr[Licensing] = js.undefined
+  
+  /**
+    * Launch configuration map auto tagging MPE ID.
+    */
+  var mapAutoTaggingMpeID: js.UndefOr[TagValue] = js.undefined
   
   /**
     * Update Launch configuration name request.
@@ -70,6 +80,10 @@ object UpdateLaunchConfigurationRequest {
     
     inline def setCopyTagsUndefined: Self = StObject.set(x, "copyTags", js.undefined)
     
+    inline def setEnableMapAutoTagging(value: Boolean): Self = StObject.set(x, "enableMapAutoTagging", value.asInstanceOf[js.Any])
+    
+    inline def setEnableMapAutoTaggingUndefined: Self = StObject.set(x, "enableMapAutoTagging", js.undefined)
+    
     inline def setLaunchDisposition(value: LaunchDisposition): Self = StObject.set(x, "launchDisposition", value.asInstanceOf[js.Any])
     
     inline def setLaunchDispositionUndefined: Self = StObject.set(x, "launchDisposition", js.undefined)
@@ -77,6 +91,10 @@ object UpdateLaunchConfigurationRequest {
     inline def setLicensing(value: Licensing): Self = StObject.set(x, "licensing", value.asInstanceOf[js.Any])
     
     inline def setLicensingUndefined: Self = StObject.set(x, "licensing", js.undefined)
+    
+    inline def setMapAutoTaggingMpeID(value: TagValue): Self = StObject.set(x, "mapAutoTaggingMpeID", value.asInstanceOf[js.Any])
+    
+    inline def setMapAutoTaggingMpeIDUndefined: Self = StObject.set(x, "mapAutoTaggingMpeID", js.undefined)
     
     inline def setName(value: SmallBoundedString): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

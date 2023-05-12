@@ -12,6 +12,11 @@ trait GetMapSpritesRequest extends StObject {
   var FileName: GetMapSpritesRequestFileNameString
   
   /**
+    * The optional API key to authorize the request.
+    */
+  var Key: js.UndefOr[ApiKey] = js.undefined
+  
+  /**
     * The map resource associated with the sprite ﬁle.
     */
   var MapName: ResourceName
@@ -27,6 +32,10 @@ object GetMapSpritesRequest {
   implicit open class MutableBuilder[Self <: GetMapSpritesRequest] (val x: Self) extends AnyVal {
     
     inline def setFileName(value: GetMapSpritesRequestFileNameString): Self = StObject.set(x, "FileName", value.asInstanceOf[js.Any])
+    
+    inline def setKey(value: ApiKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+    
+    inline def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
     
     inline def setMapName(value: ResourceName): Self = StObject.set(x, "MapName", value.asInstanceOf[js.Any])
   }

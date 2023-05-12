@@ -2,14 +2,13 @@ package typings.gestalt.mod
 
 import typings.gestalt.gestaltStrings.hidden
 import typings.gestalt.gestaltStrings.visible
-import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait FieldsetProps extends StObject {
   
-  var children: ReactNode
+  var children: Node
   
   var errorMessage: js.UndefOr[String] = js.undefined
   
@@ -29,7 +28,7 @@ object FieldsetProps {
   @scala.inline
   implicit open class MutableBuilder[Self <: FieldsetProps] (val x: Self) extends AnyVal {
     
-    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: Node): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     

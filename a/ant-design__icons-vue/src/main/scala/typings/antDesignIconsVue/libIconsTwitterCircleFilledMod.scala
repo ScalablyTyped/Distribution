@@ -16,7 +16,7 @@ object libIconsTwitterCircleFilledMod extends Shortcut {
   @js.native
   trait TwitterCircleFilledIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_TwitterCircleFilledIconType: String = js.native

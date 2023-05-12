@@ -3,6 +3,7 @@ package typings.three
 import typings.std.WebGLRenderingContext
 import typings.three.srcCoreBufferAttributeMod.BufferAttribute
 import typings.three.srcCoreBufferGeometryMod.BufferGeometry
+import typings.three.srcCoreBufferGeometryMod.NormalBufferAttributes
 import typings.three.srcCoreEventDispatcherMod.Event
 import typings.three.srcCoreObject3DMod.Object3D
 import typings.three.srcRenderersWebglWebGLAttributesMod.WebGLAttributes
@@ -18,10 +19,10 @@ object srcRenderersWebglWebGLGeometriesMod {
   open class WebGLGeometries protected () extends StObject {
     def this(gl: WebGLRenderingContext, attributes: WebGLAttributes, info: WebGLInfo) = this()
     
-    def get(`object`: Object3D[Event], geometry: BufferGeometry): BufferGeometry = js.native
+    def get(`object`: Object3D[Event], geometry: BufferGeometry[NormalBufferAttributes]): BufferGeometry[NormalBufferAttributes] = js.native
     
-    def getWireframeAttribute(geometry: BufferGeometry): BufferAttribute = js.native
+    def getWireframeAttribute(geometry: BufferGeometry[NormalBufferAttributes]): BufferAttribute = js.native
     
-    def update(geometry: BufferGeometry): Unit = js.native
+    def update(geometry: BufferGeometry[NormalBufferAttributes]): Unit = js.native
   }
 }

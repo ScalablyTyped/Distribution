@@ -13,7 +13,7 @@ open class MjmlSelector protected ()
   def this(props: Path) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: Path, context: Any) = this()
 }

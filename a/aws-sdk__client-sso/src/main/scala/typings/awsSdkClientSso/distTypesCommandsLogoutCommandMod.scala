@@ -19,8 +19,14 @@ object distTypesCommandsLogoutCommandMod {
   @JSImport("@aws-sdk/client-sso/dist-types/commands/LogoutCommand", "LogoutCommand")
   @js.native
   open class LogoutCommand protected () extends Command[LogoutCommandInput, LogoutCommandOutput, SSOClientResolvedConfig, Any, Any] {
+    /**
+      * @public
+      */
     def this(input: LogoutCommandInput) = this()
     
+    /**
+      * @internal
+      */
     /* private */ var deserialize: Any = js.native
     
     /**
@@ -36,6 +42,9 @@ object distTypesCommandsLogoutCommandMod {
       options: HttpHandlerOptions
     ): Handler[LogoutCommandInput, LogoutCommandOutput] = js.native
     
+    /**
+      * @internal
+      */
     /* private */ var serialize: Any = js.native
   }
   /* static members */

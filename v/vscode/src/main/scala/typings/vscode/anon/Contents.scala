@@ -1,12 +1,19 @@
 package typings.vscode.anon
 
+import typings.vscode.mod.DataTransferFile
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Contents extends StObject {
   
-  val contents: js.UndefOr[js.typedarray.Uint8Array] = js.undefined
+  /**
+  			 * The initial contents of the new file.
+  			 *
+  			 * If creating a file from a {@link DocumentDropEditProvider drop operation}, you can
+  			 * pass in a {@link DataTransferFile} to improve performance by avoiding extra data copying.
+  			 */
+  val contents: js.UndefOr[js.typedarray.Uint8Array | DataTransferFile] = js.undefined
   
   val ignoreIfExists: js.UndefOr[Boolean] = js.undefined
   
@@ -22,7 +29,7 @@ object Contents {
   @scala.inline
   implicit open class MutableBuilder[Self <: Contents] (val x: Self) extends AnyVal {
     
-    inline def setContents(value: js.typedarray.Uint8Array): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
+    inline def setContents(value: js.typedarray.Uint8Array | DataTransferFile): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
     
     inline def setContentsUndefined: Self = StObject.set(x, "contents", js.undefined)
     

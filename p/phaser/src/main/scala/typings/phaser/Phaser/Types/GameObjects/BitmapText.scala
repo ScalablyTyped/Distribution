@@ -236,9 +236,14 @@ object BitmapText {
     var h: Double
     
     /**
-      * The index of this character within the BitmapText text string.
+      * The index of this character within the BitmapText wrapped text string.
       */
     var i: Double
+    
+    /**
+      * The index of this character within the BitmapText text string.
+      */
+    var idx: Double
     
     /**
       * The line number the character appears on.
@@ -279,6 +284,7 @@ object BitmapText {
       glyph: BitmapFontCharacterData,
       h: Double,
       i: Double,
+      idx: Double,
       line: Double,
       r: Double,
       t: Double,
@@ -286,7 +292,7 @@ object BitmapText {
       x: Double,
       y: Double
     ): BitmapTextCharacter = {
-      val __obj = js.Dynamic.literal(b = b.asInstanceOf[js.Any], char = char.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], glyph = glyph.asInstanceOf[js.Any], h = h.asInstanceOf[js.Any], i = i.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any], t = t.asInstanceOf[js.Any], w = w.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(b = b.asInstanceOf[js.Any], char = char.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], glyph = glyph.asInstanceOf[js.Any], h = h.asInstanceOf[js.Any], i = i.asInstanceOf[js.Any], idx = idx.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any], t = t.asInstanceOf[js.Any], w = w.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[BitmapTextCharacter]
     }
     
@@ -304,6 +310,8 @@ object BitmapText {
       inline def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
       
       inline def setI(value: Double): Self = StObject.set(x, "i", value.asInstanceOf[js.Any])
+      
+      inline def setIdx(value: Double): Self = StObject.set(x, "idx", value.asInstanceOf[js.Any])
       
       inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
       
@@ -511,7 +519,7 @@ object BitmapText {
     var h: Double
     
     /**
-      * The index of the word within the line.
+      * The index of the first character of this word within the entire string. Note: this index factors in spaces, quotes, carriage-returns, etc.
       */
     var i: Double
     
@@ -559,7 +567,7 @@ object BitmapText {
     }
   }
   
-  type DisplayCallback = js.Function1[/* display */ DisplayCallbackConfig, Unit]
+  type DisplayCallback = js.Function1[/* display */ DisplayCallbackConfig, DisplayCallbackConfig]
   
   trait DisplayCallbackConfig extends StObject {
     
@@ -718,6 +726,11 @@ object BitmapText {
     var letterSpacing: Double
     
     /**
+      * Adds / Removes spacing between lines in multi-line text.
+      */
+    var lineSpacing: Double
+    
+    /**
       * The text that this Bitmap Text displays.
       */
     var text: String
@@ -735,6 +748,7 @@ object BitmapText {
       fontSize: Double,
       frameKey: String,
       letterSpacing: Double,
+      lineSpacing: Double,
       name: String,
       origin: js.Object,
       originDotx: Double,
@@ -751,7 +765,7 @@ object BitmapText {
       x: Double,
       y: Double
     ): JSONBitmapText = {
-      val __obj = js.Dynamic.literal(align = align.asInstanceOf[js.Any], alpha = alpha.asInstanceOf[js.Any], blendMode = blendMode.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], flipX = flipX.asInstanceOf[js.Any], flipY = flipY.asInstanceOf[js.Any], font = font.asInstanceOf[js.Any], fontSize = fontSize.asInstanceOf[js.Any], frameKey = frameKey.asInstanceOf[js.Any], letterSpacing = letterSpacing.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any], rotation = rotation.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any], scaleMode = scaleMode.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], textureKey = textureKey.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(align = align.asInstanceOf[js.Any], alpha = alpha.asInstanceOf[js.Any], blendMode = blendMode.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], flipX = flipX.asInstanceOf[js.Any], flipY = flipY.asInstanceOf[js.Any], font = font.asInstanceOf[js.Any], fontSize = fontSize.asInstanceOf[js.Any], frameKey = frameKey.asInstanceOf[js.Any], letterSpacing = letterSpacing.asInstanceOf[js.Any], lineSpacing = lineSpacing.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any], rotation = rotation.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any], scaleMode = scaleMode.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], textureKey = textureKey.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.updateDynamic("origin.x")(originDotx.asInstanceOf[js.Any])
       __obj.updateDynamic("origin.y")(originDoty.asInstanceOf[js.Any])
       __obj.updateDynamic("scale.x")(scaleDotx.asInstanceOf[js.Any])
@@ -770,6 +784,8 @@ object BitmapText {
       inline def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
       
       inline def setLetterSpacing(value: Double): Self = StObject.set(x, "letterSpacing", value.asInstanceOf[js.Any])
+      
+      inline def setLineSpacing(value: Double): Self = StObject.set(x, "lineSpacing", value.asInstanceOf[js.Any])
       
       inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }

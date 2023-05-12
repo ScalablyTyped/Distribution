@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** @typedef {import('./xr-manager.js').XrManager} XrManager */
 /**
   * Depth Sensing provides depth information which is reconstructed using the underlying AR system.
   * It provides the ability to query depth values (CPU path) or access a depth texture (GPU path).
@@ -13,10 +12,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * ```javascript
   * // CPU path
-  * var depthSensing = app.xr.depthSensing;
+  * const depthSensing = app.xr.depthSensing;
   * if (depthSensing.available) {
   *     // get depth in the middle of the screen, value is in meters
-  *     var depth = depthSensing.getDepth(depthSensing.width / 2, depthSensing.height / 2);
+  *     const depth = depthSensing.getDepth(depthSensing.width / 2, depthSensing.height / 2);
   * }
   * ```
   *
@@ -69,7 +68,7 @@ open class XrDepthSensing protected ()
   /**
     * Create a new XrDepthSensing instance.
     *
-    * @param {XrManager} manager - WebXR Manager.
+    * @param {import('./xr-manager.js').XrManager} manager - WebXR Manager.
     * @hideconstructor
     */
   def this(manager: typings.playcanvas.mod.XrManager) = this()

@@ -12,7 +12,7 @@ trait ListTagsForResourceResponse extends StObject {
   var NextMarker: js.UndefOr[typings.awsSdk.clientsWafv2Mod.NextMarker] = js.undefined
   
   /**
-    * The collection of tagging definitions for the resource. 
+    * The collection of tagging definitions for the resource. If you specified a Limit in your request, this might not be the full list. 
     */
   var TagInfoForResource: js.UndefOr[typings.awsSdk.clientsWafv2Mod.TagInfoForResource] = js.undefined
 }

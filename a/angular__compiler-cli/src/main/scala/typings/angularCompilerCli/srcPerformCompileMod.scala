@@ -34,7 +34,7 @@ object srcPerformCompileMod {
   inline def formatDiagnostics(diags: js.Array[Diagnostic]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatDiagnostics")(diags.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def formatDiagnostics(diags: js.Array[Diagnostic], host: FormatDiagnosticsHost): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatDiagnostics")(diags.asInstanceOf[js.Any], host.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def performCompilation(param0: CustomTransformers): PerformCompilationResult = ^.asInstanceOf[js.Dynamic].applyDynamic("performCompilation")(param0.asInstanceOf[js.Any]).asInstanceOf[PerformCompilationResult]
+  inline def performCompilation[CbEmitRes /* <: EmitResult */](param0: CustomTransformers[CbEmitRes]): PerformCompilationResult = ^.asInstanceOf[js.Dynamic].applyDynamic("performCompilation")(param0.asInstanceOf[js.Any]).asInstanceOf[PerformCompilationResult]
   
   inline def readConfiguration(project: String): ParsedConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("readConfiguration")(project.asInstanceOf[js.Any]).asInstanceOf[ParsedConfiguration]
   inline def readConfiguration(project: String, existingOptions: Unit, host: ConfigurationHost): ParsedConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("readConfiguration")(project.asInstanceOf[js.Any], existingOptions.asInstanceOf[js.Any], host.asInstanceOf[js.Any])).asInstanceOf[ParsedConfiguration]

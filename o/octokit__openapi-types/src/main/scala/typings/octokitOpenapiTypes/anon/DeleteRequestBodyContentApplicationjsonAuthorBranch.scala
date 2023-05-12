@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteRequestBodyContentApplicationjsonAuthorBranch extends StObject {
   
   /**
-    * Deletes a file in a repository.
+    * Delete a file
+    * @description Deletes a file in a repository.
     *
     * You can provide an additional `committer` parameter, which is an object containing information about the committer. Or, you can provide an `author` parameter, which is an object containing information about the author.
     *
@@ -20,7 +21,8 @@ trait DeleteRequestBodyContentApplicationjsonAuthorBranch extends StObject {
   var delete: RequestBodyContentApplicationjsonAuthorBranch
   
   /**
-    * Gets the contents of a file or directory in a repository. Specify the file path or directory in `:path`. If you omit
+    * Get repository content
+    * @description Gets the contents of a file or directory in a repository. Specify the file path or directory in `:path`. If you omit
     * `:path`, you will receive the contents of the repository's root directory. See the description below regarding what the API response includes for directories.
     *
     * Files and symlinks support [a custom media type](https://docs.github.com/rest/reference/repos#custom-media-types) for
@@ -61,18 +63,19 @@ trait DeleteRequestBodyContentApplicationjsonAuthorBranch extends StObject {
   var get: ParametersPathOwnerPath
   
   /**
-    * Creates a new file or replaces an existing file in a repository. You must authenticate using an access token with the `workflow` scope to use this endpoint.
+    * Create or update file contents
+    * @description Creates a new file or replaces an existing file in a repository. You must authenticate using an access token with the `workflow` scope to use this endpoint.
     *
     * **Note:** If you use this endpoint and the "[Delete a file](https://docs.github.com/rest/reference/repos/#delete-file)" endpoint in parallel, the concurrent requests will conflict and you will receive errors. You must use these endpoints serially instead.
     */
-  var put: Parameters209
+  var put: Parameters222
 }
 object DeleteRequestBodyContentApplicationjsonAuthorBranch {
   
   inline def apply(
     delete: RequestBodyContentApplicationjsonAuthorBranch,
     get: ParametersPathOwnerPath,
-    put: Parameters209
+    put: Parameters222
   ): DeleteRequestBodyContentApplicationjsonAuthorBranch = {
     val __obj = js.Dynamic.literal(delete = delete.asInstanceOf[js.Any], get = get.asInstanceOf[js.Any], put = put.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteRequestBodyContentApplicationjsonAuthorBranch]
@@ -85,6 +88,6 @@ object DeleteRequestBodyContentApplicationjsonAuthorBranch {
     
     inline def setGet(value: ParametersPathOwnerPath): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     
-    inline def setPut(value: Parameters209): Self = StObject.set(x, "put", value.asInstanceOf[js.Any])
+    inline def setPut(value: Parameters222): Self = StObject.set(x, "put", value.asInstanceOf[js.Any])
   }
 }

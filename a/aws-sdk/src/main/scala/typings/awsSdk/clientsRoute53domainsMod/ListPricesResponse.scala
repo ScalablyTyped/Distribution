@@ -14,12 +14,12 @@ trait ListPricesResponse extends StObject {
   /**
     * A complex type that includes all the pricing information. If you specify a TLD, this array contains only the pricing for that TLD.
     */
-  var Prices: DomainPriceList
+  var Prices: js.UndefOr[DomainPriceList] = js.undefined
 }
 object ListPricesResponse {
   
-  inline def apply(Prices: DomainPriceList): ListPricesResponse = {
-    val __obj = js.Dynamic.literal(Prices = Prices.asInstanceOf[js.Any])
+  inline def apply(): ListPricesResponse = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListPricesResponse]
   }
   
@@ -31,6 +31,8 @@ object ListPricesResponse {
     inline def setNextPageMarkerUndefined: Self = StObject.set(x, "NextPageMarker", js.undefined)
     
     inline def setPrices(value: DomainPriceList): Self = StObject.set(x, "Prices", value.asInstanceOf[js.Any])
+    
+    inline def setPricesUndefined: Self = StObject.set(x, "Prices", js.undefined)
     
     inline def setPricesVarargs(value: DomainPrice*): Self = StObject.set(x, "Prices", js.Array(value*))
   }

@@ -62,7 +62,7 @@ object DOM {
     * The parsed XML object is returned, or `null` if there was an error while parsing the data.
     * @param data The XML source stored in a string.
     */
-  inline def ParseXML(data: String): DOMParser | ActiveXObject = ^.asInstanceOf[js.Dynamic].applyDynamic("ParseXML")(data.asInstanceOf[js.Any]).asInstanceOf[DOMParser | ActiveXObject]
+  inline def ParseXML(data: String): DOMParser | ActiveXObject | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("ParseXML")(data.asInstanceOf[js.Any]).asInstanceOf[DOMParser | ActiveXObject | Null]
   
   /**
     * Attempts to remove the element from its parentNode in the DOM.
@@ -72,6 +72,7 @@ object DOM {
   
   /**
     * Abstracts away the use of RAF or setTimeOut for the core game update loop.
+    * 
     * This is invoked automatically by the Phaser.Game instance.
     */
   @JSImport("phaser", "DOM.RequestAnimationFrame")
@@ -93,6 +94,12 @@ object DOM {
     var callback_Original: FrameRequestCallback = js.native
     
     /**
+      * The delay rate in ms for setTimeOut.
+      */
+    /* CompleteClass */
+    var delay: Double = js.native
+    
+    /**
       * Stops the step from running and clears the callback reference.
       */
     /* CompleteClass */
@@ -111,37 +118,34 @@ object DOM {
     var isSetTimeOut: Boolean = js.native
     
     /**
-      * The previous time the step was called.
-      */
-    /* CompleteClass */
-    var lastTime: Double = js.native
-    
-    /**
       * Starts the requestAnimationFrame or setTimeout process running.
       * @param callback The callback to invoke each step.
       * @param forceSetTimeOut Should it use SetTimeout, even if RAF is available?
-      * @param targetFPS The target fps rate (in ms). Only used when setTimeout is used.
+      * @param delay The setTimeout delay rate in ms.
       */
     /* CompleteClass */
-    override def start(callback: FrameRequestCallback, forceSetTimeOut: Boolean, targetFPS: Double): Unit = js.native
+    override def start(callback: FrameRequestCallback, forceSetTimeOut: Boolean, delay: Double): Unit = js.native
     
     /**
       * The RAF step function.
-      * Updates the local tick value, invokes the callback and schedules another call to requestAnimationFrame.
+      * 
+      * Invokes the callback and schedules another call to requestAnimationFrame.
       */
     /* CompleteClass */
     override def step(time: DOMHighResTimeStamp): Unit = js.native
     
     /**
       * The SetTimeout step function.
-      * Updates the local tick value, invokes the callback and schedules another call to setTimeout.
+      * 
+      * Invokes the callback and schedules another call to setTimeout.
       */
     /* CompleteClass */
     var stepTimeout: js.Function = js.native
     
     /**
       * The RAF step function.
-      * Updates the local tick value, invokes the callback and schedules another call to requestAnimationFrame.
+      * 
+      * Invokes the callback and schedules another call to requestAnimationFrame.
       */
     /* CompleteClass */
     @JSName("step")
@@ -154,22 +158,9 @@ object DOM {
     override def stop(): Unit = js.native
     
     /**
-      * The target FPS rate in ms.
-      * Only used when setTimeout is used instead of RAF.
-      */
-    /* CompleteClass */
-    var target: Double = js.native
-    
-    /**
-      * The most recent timestamp. Either a DOMHighResTimeStamp under RAF or `Date.now` under SetTimeout.
-      */
-    /* CompleteClass */
-    var tick: Double = js.native
-    
-    /**
       * The setTimeout or RAF callback ID used when canceling them.
       */
     /* CompleteClass */
-    var timeOutID: Double = js.native
+    var timeOutID: Double | Null = js.native
   }
 }

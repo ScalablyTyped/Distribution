@@ -462,6 +462,11 @@ object mod {
     def on_zoom(eventName: zoom, callback: js.Function1[/* event */ Any, Unit]): Unit = js.native
     
     /**
+      * The drawflow "canvas" element
+      */
+    var precanvas: HTMLElement = js.native
+    
+    /**
       *
       * @param name Name of module registered.
       * @param component HTML to drawn or vue component.
@@ -560,6 +565,12 @@ object mod {
       */
     def updateNodeDataFromId(id: String, data: Any): Unit = js.native
     def updateNodeDataFromId(id: Double, data: Any): Unit = js.native
+    
+    /**
+      * Nodes should use uuid instead of id
+      * @default false
+      */
+    var useuuid: Boolean = js.native
     
     /**
       * Default zoom

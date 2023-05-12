@@ -3964,8 +3964,8 @@ object libMod {
   @js.native
   val ZoomOutOutlined: ZoomOutOutlinedIconType = js.native
   
-  inline def createFromIconfontCN(): FunctionalComponent[IconFontProps, js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromIconfontCN")().asInstanceOf[FunctionalComponent[IconFontProps, js.Object]]
-  inline def createFromIconfontCN(options: CustomIconOptions): FunctionalComponent[IconFontProps, js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromIconfontCN")(options.asInstanceOf[js.Any]).asInstanceOf[FunctionalComponent[IconFontProps, js.Object]]
+  inline def createFromIconfontCN(): FunctionalComponent[IconFontProps, js.Object, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromIconfontCN")().asInstanceOf[FunctionalComponent[IconFontProps, js.Object, Any]]
+  inline def createFromIconfontCN(options: CustomIconOptions): FunctionalComponent[IconFontProps, js.Object, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromIconfontCN")(options.asInstanceOf[js.Any]).asInstanceOf[FunctionalComponent[IconFontProps, js.Object, Any]]
   
   inline def getTwoToneColor(): TwoToneColor = ^.asInstanceOf[js.Dynamic].applyDynamic("getTwoToneColor")().asInstanceOf[TwoToneColor]
   

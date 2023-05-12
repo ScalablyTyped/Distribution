@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait QuickPickItemButtonEvent[T /* <: QuickPickItem */] extends StObject {
   
   /**
-    * The button that was clicked.
-    */
+  		 * The button that was clicked.
+  		 */
   val button: QuickInputButton
   
   /**
-    * The item that the button belongs to.
-    */
+  		 * The item that the button belongs to.
+  		 */
   val item: T
 }
 object QuickPickItemButtonEvent {

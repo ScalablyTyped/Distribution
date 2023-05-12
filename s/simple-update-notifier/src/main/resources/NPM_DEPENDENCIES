@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "simple-update-notifier" : "1.0.7"
+      "simple-update-notifier" : "1.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "simple-update-notifier" : "1.0.7"
+      "simple-update-notifier" : "1.1.0"
     }
   ],
   "compile-devDependencies" : [

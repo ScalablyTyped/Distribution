@@ -1,5 +1,6 @@
 package typings.blueprintjsCore.anon
 
+import typings.blueprintjsCore.blueprintjsCoreStrings._empty
 import typings.blueprintjsCore.blueprintjsCoreStrings.`additions removals`
 import typings.blueprintjsCore.blueprintjsCoreStrings.`additions text`
 import typings.blueprintjsCore.blueprintjsCoreStrings.`inline`
@@ -7,8 +8,10 @@ import typings.blueprintjsCore.blueprintjsCoreStrings.`removals additions`
 import typings.blueprintjsCore.blueprintjsCoreStrings.`removals text`
 import typings.blueprintjsCore.blueprintjsCoreStrings.`text additions`
 import typings.blueprintjsCore.blueprintjsCoreStrings.`text removals`
+import typings.blueprintjsCore.blueprintjsCoreStrings.`use-credentials`
 import typings.blueprintjsCore.blueprintjsCoreStrings.additions
 import typings.blueprintjsCore.blueprintjsCoreStrings.all
+import typings.blueprintjsCore.blueprintjsCoreStrings.anonymous
 import typings.blueprintjsCore.blueprintjsCoreStrings.ascending
 import typings.blueprintjsCore.blueprintjsCoreStrings.assertive
 import typings.blueprintjsCore.blueprintjsCoreStrings.both
@@ -90,6 +93,7 @@ import typings.react.mod.WheelEvent
 import typings.react.mod.WheelEventHandler
 import typings.std.Element
 import typings.std.Event
+import typings.std.FormData
 import typings.std.HTMLHeadingElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -111,7 +115,7 @@ trait HTMLPropsHTMLHeadingEleme extends StObject {
   // Standard HTML Attributes
   var accessKey: js.UndefOr[String] = js.undefined
   
-  var action: js.UndefOr[String] = js.undefined
+  var action: js.UndefOr[String | (js.Function1[/* formData */ FormData, Unit])] = js.undefined
   
   var allowFullScreen: js.UndefOr[Boolean] = js.undefined
   
@@ -406,7 +410,7 @@ trait HTMLPropsHTMLHeadingEleme extends StObject {
   
   var coords: js.UndefOr[String] = js.undefined
   
-  var crossOrigin: js.UndefOr[String] = js.undefined
+  var crossOrigin: js.UndefOr[anonymous | `use-credentials` | _empty] = js.undefined
   
   var dangerouslySetInnerHTML: js.UndefOr[typings.react.anon.Html] = js.undefined
   
@@ -438,7 +442,7 @@ trait HTMLPropsHTMLHeadingEleme extends StObject {
   
   var form: js.UndefOr[String] = js.undefined
   
-  var formAction: js.UndefOr[String] = js.undefined
+  var formAction: js.UndefOr[String | (js.Function1[/* formData */ FormData, Unit])] = js.undefined
   
   var formEncType: js.UndefOr[String] = js.undefined
   
@@ -743,6 +747,11 @@ trait HTMLPropsHTMLHeadingEleme extends StObject {
   
   var readOnly: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Allows getting a ref to the component instance.
+    * Once the component unmounts, React will set `ref.current` to `null` (or call the ref with `null` if you passed a callback ref).
+    * @see https://react.dev/learn/referencing-values-with-refs#refs-and-the-dom
+    */
   var ref: js.UndefOr[LegacyRef[HTMLHeadingElement]] = js.undefined
   
   var rel: js.UndefOr[String] = js.undefined
@@ -752,6 +761,8 @@ trait HTMLPropsHTMLHeadingEleme extends StObject {
   var resource: js.UndefOr[String] = js.undefined
   
   var results: js.UndefOr[Double] = js.undefined
+  
+  var rev: js.UndefOr[String] = js.undefined
   
   var reversed: js.UndefOr[Boolean] = js.undefined
   
@@ -861,7 +872,9 @@ object HTMLPropsHTMLHeadingEleme {
     
     inline def setAccessKeyUndefined: Self = StObject.set(x, "accessKey", js.undefined)
     
-    inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: String | (js.Function1[/* formData */ FormData, Unit])): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    
+    inline def setActionFunction1(value: /* formData */ FormData => Unit): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
     
     inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
@@ -1175,7 +1188,7 @@ object HTMLPropsHTMLHeadingEleme {
     
     inline def setCoordsUndefined: Self = StObject.set(x, "coords", js.undefined)
     
-    inline def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+    inline def setCrossOrigin(value: anonymous | `use-credentials` | _empty): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
     
     inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
     
@@ -1243,7 +1256,9 @@ object HTMLPropsHTMLHeadingEleme {
     
     inline def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
     
-    inline def setFormAction(value: String): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+    inline def setFormAction(value: String | (js.Function1[/* formData */ FormData, Unit])): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+    
+    inline def setFormActionFunction1(value: /* formData */ FormData => Unit): Self = StObject.set(x, "formAction", js.Any.fromFunction1(value))
     
     inline def setFormActionUndefined: Self = StObject.set(x, "formAction", js.undefined)
     
@@ -1826,6 +1841,10 @@ object HTMLPropsHTMLHeadingEleme {
     inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
     inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+    
+    inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+    
+    inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
     
     inline def setReversed(value: Boolean): Self = StObject.set(x, "reversed", value.asInstanceOf[js.Any])
     

@@ -1,7 +1,7 @@
 
 # Scala.js typings for ret
 
-Typings are for version 0.4.2
+Typings are for version 0.5.0
 
 ## Library description:
 Tokenizes a string that represents a regular expression.

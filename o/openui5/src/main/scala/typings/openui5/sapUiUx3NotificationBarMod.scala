@@ -338,6 +338,8 @@ object sapUiUx3NotificationBarMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:display display} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -350,6 +352,7 @@ object sapUiUx3NotificationBarMod {
     
     /**
       * @SINCE 1.12.2
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:resize resize} to attached listeners.
       *
@@ -362,6 +365,8 @@ object sapUiUx3NotificationBarMod {
     mParameters: Status): this.type = js.native
     
     /**
+      * @SINCE 1.24.5
+      *
       * Gets current value of property {@link #getAlwaysShowToggler alwaysShowToggler}.
       *
       * This property defines if the toggler should be displayed the whole time when the NotificationBar is shown.
@@ -542,6 +547,8 @@ object sapUiUx3NotificationBarMod {
        with ControlSettings {
     
     /**
+      * @SINCE 1.24.5
+      *
       * This property defines if the toggler should be displayed the whole time when the NotificationBar is shown.
       */
     var alwaysShowToggler: js.UndefOr[

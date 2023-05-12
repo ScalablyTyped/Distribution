@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "copy-to-clipboard" : "3.3.2"
+      "copy-to-clipboard" : "3.3.3"
     }
   ],
   "test-dependencies" : [
     {
-      "copy-to-clipboard" : "3.3.2"
+      "copy-to-clipboard" : "3.3.3"
     }
   ],
   "compile-devDependencies" : [

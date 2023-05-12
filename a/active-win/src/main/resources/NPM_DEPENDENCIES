@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "active-win" : "7.7.2"
+      "active-win" : "8.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "active-win" : "7.7.2"
+      "active-win" : "8.1.0"
     }
   ],
   "compile-devDependencies" : [

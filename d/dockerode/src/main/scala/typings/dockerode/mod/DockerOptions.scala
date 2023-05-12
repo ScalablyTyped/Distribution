@@ -1,5 +1,6 @@
 package typings.dockerode.mod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.dockerode.dockerodeStrings.http
 import typings.dockerode.dockerodeStrings.https
 import typings.dockerode.dockerodeStrings.ssh
@@ -16,6 +17,8 @@ trait DockerOptions extends StObject {
   var ca: js.UndefOr[String | (js.Array[Buffer | String]) | Buffer] = js.undefined
   
   var cert: js.UndefOr[String | (js.Array[Buffer | String]) | Buffer] = js.undefined
+  
+  var headers: js.UndefOr[StringDictionary[String]] = js.undefined
   
   var host: js.UndefOr[String] = js.undefined
   
@@ -56,6 +59,10 @@ object DockerOptions {
     inline def setCertUndefined: Self = StObject.set(x, "cert", js.undefined)
     
     inline def setCertVarargs(value: (Buffer | String)*): Self = StObject.set(x, "cert", js.Array(value*))
+    
+    inline def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     

@@ -6,6 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TypeofNextAction extends StObject {
   
+  val CashappHandleRedirectOrDisplayQrCode: Any
+  
   val DisplayBankTransferInstructions: TypeofDisplayBankTransfer
   
   val KonbiniDisplayDetails: TypeofKonbiniDisplayDetai
@@ -15,16 +17,19 @@ trait TypeofNextAction extends StObject {
 object TypeofNextAction {
   
   inline def apply(
+    CashappHandleRedirectOrDisplayQrCode: Any,
     DisplayBankTransferInstructions: TypeofDisplayBankTransfer,
     KonbiniDisplayDetails: TypeofKonbiniDisplayDetai,
     VerifyWithMicrodeposits: Any
   ): TypeofNextAction = {
-    val __obj = js.Dynamic.literal(DisplayBankTransferInstructions = DisplayBankTransferInstructions.asInstanceOf[js.Any], KonbiniDisplayDetails = KonbiniDisplayDetails.asInstanceOf[js.Any], VerifyWithMicrodeposits = VerifyWithMicrodeposits.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(CashappHandleRedirectOrDisplayQrCode = CashappHandleRedirectOrDisplayQrCode.asInstanceOf[js.Any], DisplayBankTransferInstructions = DisplayBankTransferInstructions.asInstanceOf[js.Any], KonbiniDisplayDetails = KonbiniDisplayDetails.asInstanceOf[js.Any], VerifyWithMicrodeposits = VerifyWithMicrodeposits.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofNextAction]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: TypeofNextAction] (val x: Self) extends AnyVal {
+    
+    inline def setCashappHandleRedirectOrDisplayQrCode(value: Any): Self = StObject.set(x, "CashappHandleRedirectOrDisplayQrCode", value.asInstanceOf[js.Any])
     
     inline def setDisplayBankTransferInstructions(value: TypeofDisplayBankTransfer): Self = StObject.set(x, "DisplayBankTransferInstructions", value.asInstanceOf[js.Any])
     

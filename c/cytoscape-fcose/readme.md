@@ -1,7 +1,7 @@
 
 # Scala.js typings for cytoscape-fcose
 
-Typings are for version 2.1
+Typings are for version 2.2
 
 ## Library description:
 The fCoSE layout for Cytoscape.js by Bilkent with fast compound node placement

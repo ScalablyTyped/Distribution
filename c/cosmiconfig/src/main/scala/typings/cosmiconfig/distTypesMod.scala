@@ -19,6 +19,7 @@ object distTypesMod {
   type CosmiconfigResult = typings.cosmiconfig.anon.Config | Null
   
   /* Inlined parent std.Required<cosmiconfig.cosmiconfig.Options> */
+  /* Inlined parent cosmiconfig.cosmiconfig/dist/types.InternalOptions */
   trait ExplorerOptions extends StObject {
     
     var cache: Boolean
@@ -27,6 +28,8 @@ object distTypesMod {
     
     var loaders: Loaders
     
+    var metaConfigFilePath: String | Null
+    
     var packageProp: String | js.Array[String]
     
     var searchPlaces: js.Array[String]
@@ -34,6 +37,8 @@ object distTypesMod {
     var stopDir: String
     
     var transform: Transform
+    
+    var usePackagePropInConfigFiles: js.UndefOr[Boolean] = js.undefined
   }
   object ExplorerOptions {
     
@@ -46,7 +51,7 @@ object distTypesMod {
       stopDir: String,
       transform: /* CosmiconfigResult */ CosmiconfigResult => CosmiconfigResult | js.Promise[CosmiconfigResult]
     ): ExplorerOptions = {
-      val __obj = js.Dynamic.literal(cache = cache.asInstanceOf[js.Any], ignoreEmptySearchPlaces = ignoreEmptySearchPlaces.asInstanceOf[js.Any], loaders = loaders.asInstanceOf[js.Any], packageProp = packageProp.asInstanceOf[js.Any], searchPlaces = searchPlaces.asInstanceOf[js.Any], stopDir = stopDir.asInstanceOf[js.Any], transform = js.Any.fromFunction1(transform))
+      val __obj = js.Dynamic.literal(cache = cache.asInstanceOf[js.Any], ignoreEmptySearchPlaces = ignoreEmptySearchPlaces.asInstanceOf[js.Any], loaders = loaders.asInstanceOf[js.Any], packageProp = packageProp.asInstanceOf[js.Any], searchPlaces = searchPlaces.asInstanceOf[js.Any], stopDir = stopDir.asInstanceOf[js.Any], transform = js.Any.fromFunction1(transform), metaConfigFilePath = null)
       __obj.asInstanceOf[ExplorerOptions]
     }
     
@@ -58,6 +63,10 @@ object distTypesMod {
       inline def setIgnoreEmptySearchPlaces(value: Boolean): Self = StObject.set(x, "ignoreEmptySearchPlaces", value.asInstanceOf[js.Any])
       
       inline def setLoaders(value: Loaders): Self = StObject.set(x, "loaders", value.asInstanceOf[js.Any])
+      
+      inline def setMetaConfigFilePath(value: String): Self = StObject.set(x, "metaConfigFilePath", value.asInstanceOf[js.Any])
+      
+      inline def setMetaConfigFilePathNull: Self = StObject.set(x, "metaConfigFilePath", null)
       
       inline def setPackageProp(value: String | js.Array[String]): Self = StObject.set(x, "packageProp", value.asInstanceOf[js.Any])
       
@@ -72,10 +81,15 @@ object distTypesMod {
       inline def setTransform(
         value: /* CosmiconfigResult */ CosmiconfigResult => CosmiconfigResult | js.Promise[CosmiconfigResult]
       ): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
+      
+      inline def setUsePackagePropInConfigFiles(value: Boolean): Self = StObject.set(x, "usePackagePropInConfigFiles", value.asInstanceOf[js.Any])
+      
+      inline def setUsePackagePropInConfigFilesUndefined: Self = StObject.set(x, "usePackagePropInConfigFiles", js.undefined)
     }
   }
   
   /* Inlined parent std.Required<cosmiconfig.cosmiconfig.OptionsSync> */
+  /* Inlined parent cosmiconfig.cosmiconfig/dist/types.InternalOptions */
   trait ExplorerOptionsSync extends StObject {
     
     var cache: Boolean
@@ -83,6 +97,8 @@ object distTypesMod {
     var ignoreEmptySearchPlaces: Boolean
     
     var loaders: LoadersSync
+    
+    var metaConfigFilePath: String | Null
     
     var packageProp: String | js.Array[String]
     
@@ -93,6 +109,8 @@ object distTypesMod {
     def transform(CosmiconfigResult: CosmiconfigResult): CosmiconfigResult
     @JSName("transform")
     var transform_Original: TransformSync
+    
+    var usePackagePropInConfigFiles: js.UndefOr[Boolean] = js.undefined
   }
   object ExplorerOptionsSync {
     
@@ -105,7 +123,7 @@ object distTypesMod {
       stopDir: String,
       transform: /* CosmiconfigResult */ CosmiconfigResult => CosmiconfigResult
     ): ExplorerOptionsSync = {
-      val __obj = js.Dynamic.literal(cache = cache.asInstanceOf[js.Any], ignoreEmptySearchPlaces = ignoreEmptySearchPlaces.asInstanceOf[js.Any], loaders = loaders.asInstanceOf[js.Any], packageProp = packageProp.asInstanceOf[js.Any], searchPlaces = searchPlaces.asInstanceOf[js.Any], stopDir = stopDir.asInstanceOf[js.Any], transform = js.Any.fromFunction1(transform))
+      val __obj = js.Dynamic.literal(cache = cache.asInstanceOf[js.Any], ignoreEmptySearchPlaces = ignoreEmptySearchPlaces.asInstanceOf[js.Any], loaders = loaders.asInstanceOf[js.Any], packageProp = packageProp.asInstanceOf[js.Any], searchPlaces = searchPlaces.asInstanceOf[js.Any], stopDir = stopDir.asInstanceOf[js.Any], transform = js.Any.fromFunction1(transform), metaConfigFilePath = null)
       __obj.asInstanceOf[ExplorerOptionsSync]
     }
     
@@ -118,6 +136,10 @@ object distTypesMod {
       
       inline def setLoaders(value: LoadersSync): Self = StObject.set(x, "loaders", value.asInstanceOf[js.Any])
       
+      inline def setMetaConfigFilePath(value: String): Self = StObject.set(x, "metaConfigFilePath", value.asInstanceOf[js.Any])
+      
+      inline def setMetaConfigFilePathNull: Self = StObject.set(x, "metaConfigFilePath", null)
+      
       inline def setPackageProp(value: String | js.Array[String]): Self = StObject.set(x, "packageProp", value.asInstanceOf[js.Any])
       
       inline def setPackagePropVarargs(value: String*): Self = StObject.set(x, "packageProp", js.Array(value*))
@@ -129,6 +151,36 @@ object distTypesMod {
       inline def setStopDir(value: String): Self = StObject.set(x, "stopDir", value.asInstanceOf[js.Any])
       
       inline def setTransform(value: /* CosmiconfigResult */ CosmiconfigResult => CosmiconfigResult): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
+      
+      inline def setUsePackagePropInConfigFiles(value: Boolean): Self = StObject.set(x, "usePackagePropInConfigFiles", value.asInstanceOf[js.Any])
+      
+      inline def setUsePackagePropInConfigFilesUndefined: Self = StObject.set(x, "usePackagePropInConfigFiles", js.undefined)
+    }
+  }
+  
+  trait InternalOptions extends StObject {
+    
+    var metaConfigFilePath: String | Null
+    
+    var usePackagePropInConfigFiles: js.UndefOr[Boolean] = js.undefined
+  }
+  object InternalOptions {
+    
+    inline def apply(): InternalOptions = {
+      val __obj = js.Dynamic.literal(metaConfigFilePath = null)
+      __obj.asInstanceOf[InternalOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InternalOptions] (val x: Self) extends AnyVal {
+      
+      inline def setMetaConfigFilePath(value: String): Self = StObject.set(x, "metaConfigFilePath", value.asInstanceOf[js.Any])
+      
+      inline def setMetaConfigFilePathNull: Self = StObject.set(x, "metaConfigFilePath", null)
+      
+      inline def setUsePackagePropInConfigFiles(value: Boolean): Self = StObject.set(x, "usePackagePropInConfigFiles", value.asInstanceOf[js.Any])
+      
+      inline def setUsePackagePropInConfigFilesUndefined: Self = StObject.set(x, "usePackagePropInConfigFiles", js.undefined)
     }
   }
   

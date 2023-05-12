@@ -5,13 +5,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Available only in the v=beta channel: https://goo.gle/3oAthT3.
-  * Delivery Vehicle Location Provider.
-  */
 trait FleetEngineDeliveryVehicleLocationProvider
   extends StObject
-     with LocationProvider {
+     with PollingLocationProvider {
   
   /**
     * ID for the vehicle that this location provider observes. Set this field
@@ -46,10 +42,12 @@ object FleetEngineDeliveryVehicleLocationProvider {
   inline def apply(
     addListener: (String, js.Function) => MapsEventListener,
     deliveryVehicleId: String,
+    isPolling: Boolean,
+    pollingIntervalMillis: Double,
     staleLocationThresholdMillis: Double,
     taskFilterOptions: FleetEngineTaskFilterOptions
   ): FleetEngineDeliveryVehicleLocationProvider = {
-    val __obj = js.Dynamic.literal(addListener = js.Any.fromFunction2(addListener), deliveryVehicleId = deliveryVehicleId.asInstanceOf[js.Any], staleLocationThresholdMillis = staleLocationThresholdMillis.asInstanceOf[js.Any], taskFilterOptions = taskFilterOptions.asInstanceOf[js.Any], shouldShowOutcomeLocations = null, shouldShowTasks = null)
+    val __obj = js.Dynamic.literal(addListener = js.Any.fromFunction2(addListener), deliveryVehicleId = deliveryVehicleId.asInstanceOf[js.Any], isPolling = isPolling.asInstanceOf[js.Any], pollingIntervalMillis = pollingIntervalMillis.asInstanceOf[js.Any], staleLocationThresholdMillis = staleLocationThresholdMillis.asInstanceOf[js.Any], taskFilterOptions = taskFilterOptions.asInstanceOf[js.Any], shouldShowOutcomeLocations = null, shouldShowTasks = null)
     __obj.asInstanceOf[FleetEngineDeliveryVehicleLocationProvider]
   }
   

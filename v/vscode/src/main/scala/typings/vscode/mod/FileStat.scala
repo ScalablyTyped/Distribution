@@ -7,41 +7,41 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FileStat extends StObject {
   
   /**
-    * The creation timestamp in milliseconds elapsed since January 1, 1970 00:00:00 UTC.
-    */
+  		 * The creation timestamp in milliseconds elapsed since January 1, 1970 00:00:00 UTC.
+  		 */
   var ctime: Double
   
   /**
-    * The modification timestamp in milliseconds elapsed since January 1, 1970 00:00:00 UTC.
-    *
-    * *Note:* If the file changed, it is important to provide an updated `mtime` that advanced
-    * from the previous value. Otherwise there may be optimizations in place that will not show
-    * the updated file contents in an editor for example.
-    */
+  		 * The modification timestamp in milliseconds elapsed since January 1, 1970 00:00:00 UTC.
+  		 *
+  		 * *Note:* If the file changed, it is important to provide an updated `mtime` that advanced
+  		 * from the previous value. Otherwise there may be optimizations in place that will not show
+  		 * the updated file contents in an editor for example.
+  		 */
   var mtime: Double
   
   /**
-    * The permissions of the file, e.g. whether the file is readonly.
-    *
-    * *Note:* This value might be a bitmask, e.g. `FilePermission.Readonly | FilePermission.Other`.
-    */
+  		 * The permissions of the file, e.g. whether the file is readonly.
+  		 *
+  		 * *Note:* This value might be a bitmask, e.g. `FilePermission.Readonly | FilePermission.Other`.
+  		 */
   var permissions: js.UndefOr[FilePermission] = js.undefined
   
   /**
-    * The size in bytes.
-    *
-    * *Note:* If the file changed, it is important to provide an updated `size`. Otherwise there
-    * may be optimizations in place that will not show the updated file contents in an editor for
-    * example.
-    */
+  		 * The size in bytes.
+  		 *
+  		 * *Note:* If the file changed, it is important to provide an updated `size`. Otherwise there
+  		 * may be optimizations in place that will not show the updated file contents in an editor for
+  		 * example.
+  		 */
   var size: Double
   
   /**
-    * The type of the file, e.g. is a regular file, a directory, or symbolic link
-    * to a file.
-    *
-    * *Note:* This value might be a bitmask, e.g. `FileType.File | FileType.SymbolicLink`.
-    */
+  		 * The type of the file, e.g. is a regular file, a directory, or symbolic link
+  		 * to a file.
+  		 *
+  		 * *Note:* This value might be a bitmask, e.g. `FileType.File | FileType.SymbolicLink`.
+  		 */
   var `type`: FileType
 }
 object FileStat {

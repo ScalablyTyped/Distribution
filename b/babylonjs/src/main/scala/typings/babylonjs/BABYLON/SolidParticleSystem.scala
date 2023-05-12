@@ -25,13 +25,53 @@ trait SolidParticleSystem
     * @param storage target storage array, if any
     * @internal
     */
-  /* private */ var _addParticle: Any = js.native
+  /* protected */ def _addParticle(
+    idx: Double,
+    id: Double,
+    idxpos: Double,
+    idxind: Double,
+    model: ModelShape,
+    shapeId: Double,
+    idxInShape: Double
+  ): SolidParticle = js.native
+  /* protected */ def _addParticle(
+    idx: Double,
+    id: Double,
+    idxpos: Double,
+    idxind: Double,
+    model: ModelShape,
+    shapeId: Double,
+    idxInShape: Double,
+    bInfo: Unit,
+    storage: Nullable[js.Array[Any]]
+  ): SolidParticle = js.native
+  /* protected */ def _addParticle(
+    idx: Double,
+    id: Double,
+    idxpos: Double,
+    idxind: Double,
+    model: ModelShape,
+    shapeId: Double,
+    idxInShape: Double,
+    bInfo: Nullable[BoundingInfo]
+  ): SolidParticle = js.native
+  /* protected */ def _addParticle(
+    idx: Double,
+    id: Double,
+    idxpos: Double,
+    idxind: Double,
+    model: ModelShape,
+    shapeId: Double,
+    idxInShape: Double,
+    bInfo: Nullable[BoundingInfo],
+    storage: Nullable[js.Array[Any]]
+  ): SolidParticle = js.native
   
-  /* private */ var _alwaysVisible: Any = js.native
+  /* protected */ var _alwaysVisible: Boolean = js.native
   
-  /* private */ var _autoFixFaceOrientation: Any = js.native
+  /* protected */ var _autoFixFaceOrientation: Boolean = js.native
   
-  /* private */ var _autoUpdateSubMeshes: Any = js.native
+  /* protected */ var _autoUpdateSubMeshes: Boolean = js.native
   
   /**
     * If the particle intersection must be computed only with the bounding sphere (no bounding box computation, so faster). (Internal use only)
@@ -45,54 +85,54 @@ trait SolidParticleSystem
     */
   var _bSphereRadiusFactor: Double = js.native
   
-  /* private */ var _camera: Any = js.native
+  /* protected */ var _camera: TargetCamera = js.native
   
-  /* private */ var _color: Any = js.native
+  /* protected */ var _color: Color4 = js.native
   
-  /* private */ var _colors: Any = js.native
+  /* protected */ var _colors: js.Array[Double] = js.native
   
-  /* private */ var _colors32: Any = js.native
+  /* protected */ var _colors32: js.typedarray.Float32Array = js.native
   
-  /* private */ var _computeBoundingBox: Any = js.native
+  /* protected */ var _computeBoundingBox: Boolean = js.native
   
-  /* private */ var _computeParticleColor: Any = js.native
+  /* protected */ var _computeParticleColor: Boolean = js.native
   
-  /* private */ var _computeParticleRotation: Any = js.native
+  /* protected */ var _computeParticleRotation: Boolean = js.native
   
-  /* private */ var _computeParticleTexture: Any = js.native
+  /* protected */ var _computeParticleTexture: Boolean = js.native
   
-  /* private */ var _computeParticleVertex: Any = js.native
+  /* protected */ var _computeParticleVertex: Boolean = js.native
   
-  /* private */ var _copy: Any = js.native
+  /* protected */ var _copy: SolidParticle = js.native
   
-  /* private */ var _defaultMaterial: Any = js.native
+  /* protected */ var _defaultMaterial: Material = js.native
   
-  /* private */ var _depthSort: Any = js.native
+  /* protected */ var _depthSort: Boolean = js.native
   
-  /* private */ var _depthSortFunction: Any = js.native
+  /* protected */ def _depthSortFunction(p1: DepthSortedParticle, p2: DepthSortedParticle): Double = js.native
   
-  /* private */ var _depthSortParticles: Any = js.native
+  /* protected */ var _depthSortParticles: Boolean = js.native
   
-  /* private */ var _expandable: Any = js.native
+  /* protected */ var _expandable: Boolean = js.native
   
   /**
     * Returns an array with unique values of Materials from the passed array
     * @param array the material array to be checked and filtered
     * @internal
     */
-  /* private */ var _filterUniqueMaterialId: Any = js.native
+  /* protected */ def _filterUniqueMaterialId(array: js.Array[Material]): js.Array[Material] = js.native
   
-  /* private */ var _fixedNormal32: Any = js.native
+  /* protected */ var _fixedNormal32: js.typedarray.Float32Array = js.native
   
-  /* private */ var _idxOfId: Any = js.native
+  /* protected */ var _idxOfId: js.Array[Double] = js.native
   
-  /* private */ var _index: Any = js.native
+  /* protected */ var _index: Double = js.native
   
-  /* private */ var _indices: Any = js.native
+  /* protected */ var _indices: js.Array[Double] = js.native
   
-  /* private */ var _indices32: Any = js.native
+  /* protected */ var _indices32: IndicesArray = js.native
   
-  /* private */ var _indicesByMaterial: Any = js.native
+  /* protected */ var _indicesByMaterial: js.Array[Double] = js.native
   
   /**
     * Creates a new particle and modifies the SPS mesh geometry :
@@ -113,21 +153,124 @@ trait SolidParticleSystem
     * @options addShape() passed options
     * @internal
     */
-  /* private */ var _insertNewParticle: Any = js.native
+  /* protected */ def _insertNewParticle(
+    idx: Double,
+    i: Double,
+    modelShape: ModelShape,
+    shape: js.Array[Vector3],
+    meshInd: IndicesArray,
+    meshUV: js.Array[Double],
+    meshCol: js.Array[Double],
+    meshNor: js.Array[Double],
+    bbInfo: Nullable[BoundingInfo],
+    storage: Nullable[js.Array[Any]],
+    options: Any
+  ): Nullable[SolidParticle] = js.native
+  /* protected */ def _insertNewParticle(
+    idx: Double,
+    i: Double,
+    modelShape: ModelShape,
+    shape: js.Array[Vector3],
+    meshInd: IndicesArray,
+    meshUV: js.Array[Double],
+    meshCol: js.Array[Double],
+    meshNor: js.typedarray.Float32Array,
+    bbInfo: Nullable[BoundingInfo],
+    storage: Nullable[js.Array[Any]],
+    options: Any
+  ): Nullable[SolidParticle] = js.native
+  /* protected */ def _insertNewParticle(
+    idx: Double,
+    i: Double,
+    modelShape: ModelShape,
+    shape: js.Array[Vector3],
+    meshInd: IndicesArray,
+    meshUV: js.Array[Double],
+    meshCol: js.typedarray.Float32Array,
+    meshNor: js.Array[Double],
+    bbInfo: Nullable[BoundingInfo],
+    storage: Nullable[js.Array[Any]],
+    options: Any
+  ): Nullable[SolidParticle] = js.native
+  /* protected */ def _insertNewParticle(
+    idx: Double,
+    i: Double,
+    modelShape: ModelShape,
+    shape: js.Array[Vector3],
+    meshInd: IndicesArray,
+    meshUV: js.Array[Double],
+    meshCol: js.typedarray.Float32Array,
+    meshNor: js.typedarray.Float32Array,
+    bbInfo: Nullable[BoundingInfo],
+    storage: Nullable[js.Array[Any]],
+    options: Any
+  ): Nullable[SolidParticle] = js.native
+  /* protected */ def _insertNewParticle(
+    idx: Double,
+    i: Double,
+    modelShape: ModelShape,
+    shape: js.Array[Vector3],
+    meshInd: IndicesArray,
+    meshUV: js.typedarray.Float32Array,
+    meshCol: js.Array[Double],
+    meshNor: js.Array[Double],
+    bbInfo: Nullable[BoundingInfo],
+    storage: Nullable[js.Array[Any]],
+    options: Any
+  ): Nullable[SolidParticle] = js.native
+  /* protected */ def _insertNewParticle(
+    idx: Double,
+    i: Double,
+    modelShape: ModelShape,
+    shape: js.Array[Vector3],
+    meshInd: IndicesArray,
+    meshUV: js.typedarray.Float32Array,
+    meshCol: js.Array[Double],
+    meshNor: js.typedarray.Float32Array,
+    bbInfo: Nullable[BoundingInfo],
+    storage: Nullable[js.Array[Any]],
+    options: Any
+  ): Nullable[SolidParticle] = js.native
+  /* protected */ def _insertNewParticle(
+    idx: Double,
+    i: Double,
+    modelShape: ModelShape,
+    shape: js.Array[Vector3],
+    meshInd: IndicesArray,
+    meshUV: js.typedarray.Float32Array,
+    meshCol: js.typedarray.Float32Array,
+    meshNor: js.Array[Double],
+    bbInfo: Nullable[BoundingInfo],
+    storage: Nullable[js.Array[Any]],
+    options: Any
+  ): Nullable[SolidParticle] = js.native
+  /* protected */ def _insertNewParticle(
+    idx: Double,
+    i: Double,
+    modelShape: ModelShape,
+    shape: js.Array[Vector3],
+    meshInd: IndicesArray,
+    meshUV: js.typedarray.Float32Array,
+    meshCol: js.typedarray.Float32Array,
+    meshNor: js.typedarray.Float32Array,
+    bbInfo: Nullable[BoundingInfo],
+    storage: Nullable[js.Array[Any]],
+    options: Any
+  ): Nullable[SolidParticle] = js.native
   
-  /* private */ var _isNotBuilt: Any = js.native
+  /* protected */ var _isNotBuilt: Boolean = js.native
   
-  /* private */ var _isVisibilityBoxLocked: Any = js.native
+  /* protected */ var _isVisibilityBoxLocked: Boolean = js.native
   
-  /* private */ var _lastParticleId: Any = js.native
+  /* protected */ var _lastParticleId: Double = js.native
   
-  /* private */ var _materialIndexes: Any = js.native
+  /* protected */ var _materialIndexes: js.Array[Double] = js.native
   
-  /* private */ var _materialIndexesById: Any = js.native
+  /* protected */ var _materialIndexesById: Any = js.native
   
-  /* private */ var _materialSortFunction: Any = js.native
+  /* protected */ def _materialSortFunction(p1: DepthSortedParticle, p2: DepthSortedParticle): Double = js.native
   
-  /* private */ var _materials: Any = js.native
+  /* protected */ var _materials: js.Array[Material] = js.native
   
   /**
     * Inserts the shape model geometry in the global SPS mesh by updating the positions, indices, normals, colors, uvs arrays
@@ -150,23 +293,166 @@ trait SolidParticleSystem
     * @model the particle model
     * @internal
     */
-  /* private */ var _meshBuilder: Any = js.native
+  /* protected */ def _meshBuilder(
+    p: Double,
+    ind: Double,
+    shape: js.Array[Vector3],
+    positions: js.Array[Double],
+    meshInd: IndicesArray,
+    indices: js.Array[Double],
+    meshUV: js.Array[Double],
+    uvs: js.Array[Double],
+    meshCol: js.Array[Double],
+    colors: js.Array[Double],
+    meshNor: js.Array[Double],
+    normals: js.Array[Double],
+    idx: Double,
+    idxInShape: Double,
+    options: Any,
+    model: ModelShape
+  ): SolidParticle = js.native
+  /* protected */ def _meshBuilder(
+    p: Double,
+    ind: Double,
+    shape: js.Array[Vector3],
+    positions: js.Array[Double],
+    meshInd: IndicesArray,
+    indices: js.Array[Double],
+    meshUV: js.Array[Double],
+    uvs: js.Array[Double],
+    meshCol: js.Array[Double],
+    colors: js.Array[Double],
+    meshNor: js.typedarray.Float32Array,
+    normals: js.Array[Double],
+    idx: Double,
+    idxInShape: Double,
+    options: Any,
+    model: ModelShape
+  ): SolidParticle = js.native
+  /* protected */ def _meshBuilder(
+    p: Double,
+    ind: Double,
+    shape: js.Array[Vector3],
+    positions: js.Array[Double],
+    meshInd: IndicesArray,
+    indices: js.Array[Double],
+    meshUV: js.Array[Double],
+    uvs: js.Array[Double],
+    meshCol: js.typedarray.Float32Array,
+    colors: js.Array[Double],
+    meshNor: js.Array[Double],
+    normals: js.Array[Double],
+    idx: Double,
+    idxInShape: Double,
+    options: Any,
+    model: ModelShape
+  ): SolidParticle = js.native
+  /* protected */ def _meshBuilder(
+    p: Double,
+    ind: Double,
+    shape: js.Array[Vector3],
+    positions: js.Array[Double],
+    meshInd: IndicesArray,
+    indices: js.Array[Double],
+    meshUV: js.Array[Double],
+    uvs: js.Array[Double],
+    meshCol: js.typedarray.Float32Array,
+    colors: js.Array[Double],
+    meshNor: js.typedarray.Float32Array,
+    normals: js.Array[Double],
+    idx: Double,
+    idxInShape: Double,
+    options: Any,
+    model: ModelShape
+  ): SolidParticle = js.native
+  /* protected */ def _meshBuilder(
+    p: Double,
+    ind: Double,
+    shape: js.Array[Vector3],
+    positions: js.Array[Double],
+    meshInd: IndicesArray,
+    indices: js.Array[Double],
+    meshUV: js.typedarray.Float32Array,
+    uvs: js.Array[Double],
+    meshCol: js.Array[Double],
+    colors: js.Array[Double],
+    meshNor: js.Array[Double],
+    normals: js.Array[Double],
+    idx: Double,
+    idxInShape: Double,
+    options: Any,
+    model: ModelShape
+  ): SolidParticle = js.native
+  /* protected */ def _meshBuilder(
+    p: Double,
+    ind: Double,
+    shape: js.Array[Vector3],
+    positions: js.Array[Double],
+    meshInd: IndicesArray,
+    indices: js.Array[Double],
+    meshUV: js.typedarray.Float32Array,
+    uvs: js.Array[Double],
+    meshCol: js.Array[Double],
+    colors: js.Array[Double],
+    meshNor: js.typedarray.Float32Array,
+    normals: js.Array[Double],
+    idx: Double,
+    idxInShape: Double,
+    options: Any,
+    model: ModelShape
+  ): SolidParticle = js.native
+  /* protected */ def _meshBuilder(
+    p: Double,
+    ind: Double,
+    shape: js.Array[Vector3],
+    positions: js.Array[Double],
+    meshInd: IndicesArray,
+    indices: js.Array[Double],
+    meshUV: js.typedarray.Float32Array,
+    uvs: js.Array[Double],
+    meshCol: js.typedarray.Float32Array,
+    colors: js.Array[Double],
+    meshNor: js.Array[Double],
+    normals: js.Array[Double],
+    idx: Double,
+    idxInShape: Double,
+    options: Any,
+    model: ModelShape
+  ): SolidParticle = js.native
+  /* protected */ def _meshBuilder(
+    p: Double,
+    ind: Double,
+    shape: js.Array[Vector3],
+    positions: js.Array[Double],
+    meshInd: IndicesArray,
+    indices: js.Array[Double],
+    meshUV: js.typedarray.Float32Array,
+    uvs: js.Array[Double],
+    meshCol: js.typedarray.Float32Array,
+    colors: js.Array[Double],
+    meshNor: js.typedarray.Float32Array,
+    normals: js.Array[Double],
+    idx: Double,
+    idxInShape: Double,
+    options: Any,
+    model: ModelShape
+  ): SolidParticle = js.native
   
-  /* private */ var _multimaterial: Any = js.native
+  /* protected */ var _multimaterial: MultiMaterial = js.native
   
-  /* private */ var _multimaterialEnabled: Any = js.native
+  /* protected */ var _multimaterialEnabled: Boolean = js.native
   
-  /* private */ var _mustUnrotateFixedNormals: Any = js.native
+  /* protected */ var _mustUnrotateFixedNormals: Boolean = js.native
   
-  /* private */ var _needs32Bits: Any = js.native
+  /* protected */ var _needs32Bits: Boolean = js.native
   
-  /* private */ var _normals: Any = js.native
+  /* protected */ var _normals: js.Array[Double] = js.native
   
-  /* private */ var _normals32: Any = js.native
+  /* protected */ var _normals32: js.typedarray.Float32Array = js.native
   
-  /* private */ var _particlesIntersect: Any = js.native
+  /* protected */ var _particlesIntersect: Boolean = js.native
   
-  /* private */ var _pickable: Any = js.native
+  /* protected */ var _pickable: Boolean = js.native
   
   /**
     * Returns a shape Vector3 array from positions float array
@@ -174,41 +460,43 @@ trait SolidParticleSystem
     * @returns a vector3 array
     * @internal
     */
-  /* private */ var _posToShape: Any = js.native
+  /* protected */ def _posToShape(positions: js.Array[Double]): js.Array[Vector3] = js.native
+  /* protected */ def _posToShape(positions: js.typedarray.Float32Array): js.Array[Vector3] = js.native
   
-  /* private */ var _positions: Any = js.native
+  /* protected */ var _positions: js.Array[Double] = js.native
   
-  /* private */ var _positions32: Any = js.native
+  /* protected */ var _positions32: js.typedarray.Float32Array = js.native
   
   /**
     * Rebuilds a particle back to its just built status : if needed, recomputes the custom positions and vertices
     * @internal
     */
-  /* private */ var _rebuildParticle: Any = js.native
+  /* protected */ def _rebuildParticle(particle: SolidParticle): Unit = js.native
+  /* protected */ def _rebuildParticle(particle: SolidParticle, reset: Boolean): Unit = js.native
   
-  /* private */ var _recomputeInvisibles: Any = js.native
+  /* protected */ var _recomputeInvisibles: Boolean = js.native
   
   /**
     * Resets the temporary working copy particle
     * @internal
     */
-  /* private */ var _resetCopy: Any = js.native
+  /* protected */ def _resetCopy(): Unit = js.native
   
-  /* private */ var _scene: Any = js.native
+  /* protected */ var _scene: Scene = js.native
   
   /**
     * Sets a new Standard Material as _defaultMaterial if not already set.
     * @internal
     */
-  /* private */ var _setDefaultMaterial: Any = js.native
+  /* protected */ def _setDefaultMaterial(): Material = js.native
   
   /**
     * Sets the material indexes by id materialIndexesById[id] = materialIndex
     * @internal
     */
-  /* private */ var _setMaterialIndexesById: Any = js.native
+  /* protected */ def _setMaterialIndexesById(): Unit = js.native
   
-  /* private */ var _shapeCounter: Any = js.native
+  /* protected */ var _shapeCounter: Double = js.native
   
   /**
     * Sorts the solid particles by material when MultiMaterial is enabled.
@@ -218,23 +506,23 @@ trait SolidParticleSystem
     * @returns the SPS
     * @internal
     */
-  /* private */ var _sortParticlesByMaterial: Any = js.native
+  /* protected */ def _sortParticlesByMaterial(): SolidParticleSystem = js.native
   
-  /* private */ var _tmpVertex: Any = js.native
+  /* protected */ var _tmpVertex: SolidParticleVertex = js.native
   
   /**
     * Unrotate the fixed normals in case the mesh was built with pre-rotated particles, ex : use of positionFunction in addShape()
     * @internal
     */
-  /* private */ var _unrotateFixedNormals: Any = js.native
+  /* protected */ def _unrotateFixedNormals(): Unit = js.native
   
-  /* private */ var _updatable: Any = js.native
+  /* protected */ var _updatable: Boolean = js.native
   
-  /* private */ var _useModelMaterial: Any = js.native
+  /* protected */ var _useModelMaterial: Boolean = js.native
   
-  /* private */ var _uvs: Any = js.native
+  /* protected */ var _uvs: js.Array[Double] = js.native
   
-  /* private */ var _uvs32: Any = js.native
+  /* protected */ var _uvs32: js.typedarray.Float32Array = js.native
   
   /**
     * Returns a shapeUV array from a float uvs (array deep copy)
@@ -242,11 +530,12 @@ trait SolidParticleSystem
     * @returns a shapeUV array
     * @internal
     */
-  /* private */ var _uvsToShapeUV: Any = js.native
+  /* protected */ def _uvsToShapeUV(uvs: js.Array[Double]): js.Array[Double] = js.native
+  /* protected */ def _uvsToShapeUV(uvs: js.typedarray.Float32Array): js.Array[Double] = js.native
   
   /**
     * Adds some particles to the SPS from the model shape. Returns the shape id.
-    * Please read the doc : https://doc.babylonjs.com/how_to/Solid_Particle_System#create-an-immutable-sps
+    * Please read the doc : https://doc.babylonjs.com/features/featuresDeepDive/particles/solid_particle_system/immutable_sps
     * @param mesh is any Mesh object that will be used as a model for the solid particles.
     * @param nb (positive integer) the number of particles to be created from this model
     * @param options {positionFunction} is an optional javascript function to called for each particle on SPS creation.
@@ -447,7 +736,7 @@ trait SolidParticleSystem
   /**
     * This function does nothing. It may be overwritten to set all the particle first values.
     * The SPS doesn't call this function, you may have to call it by your own.
-    * doc : https://doc.babylonjs.com/how_to/Solid_Particle_System#particle-management
+    * doc : https://doc.babylonjs.com/features/featuresDeepDive/particles/solid_particle_system/manage_sps_particles
     */
   def initParticles(): Unit = js.native
   
@@ -460,23 +749,23 @@ trait SolidParticleSystem
   
   /**
     * Gets whether the SPS as always visible or not
-    * doc : https://doc.babylonjs.com/how_to/Solid_Particle_System#sps-visibility
+    * doc : https://doc.babylonjs.com/features/featuresDeepDive/particles/solid_particle_system/sps_visibility
     */
   def isAlwaysVisible: Boolean = js.native
   /**
     * Sets the SPS as always visible or not
-    * doc : https://doc.babylonjs.com/how_to/Solid_Particle_System#sps-visibility
+    * doc : https://doc.babylonjs.com/features/featuresDeepDive/particles/solid_particle_system/sps_visibility
     */
   def isAlwaysVisible_=(`val`: Boolean): Unit = js.native
   
   /**
     * Gets if the SPS visibility box as locked or not. This enables/disables the underlying mesh bounding box updates.
-    * doc : https://doc.babylonjs.com/how_to/Solid_Particle_System#sps-visibility
+    * doc : https://doc.babylonjs.com/features/featuresDeepDive/particles/solid_particle_system/sps_visibility
     */
   def isVisibilityBoxLocked: Boolean = js.native
   /**
     * Sets the SPS visibility box as locked or not. This enables/disables the underlying mesh bounding box updates.
-    * doc : https://doc.babylonjs.com/how_to/Solid_Particle_System#sps-visibility
+    * doc : https://doc.babylonjs.com/features/featuresDeepDive/particles/solid_particle_system/sps_visibility
     */
   def isVisibilityBoxLocked_=(`val`: Boolean): Unit = js.native
   
@@ -527,7 +816,7 @@ trait SolidParticleSystem
     * `idx` is the picked particle index in the `SPS.particles` array
     * `faceId` is the picked face index counted within this particle.
     * It's better to use the method SPS.pickedParticle(pickingInfo) rather than using directly this array.
-    * Please read : https://doc.babylonjs.com/how_to/Solid_Particle_System#pickable-particles
+    * Please read : https://doc.babylonjs.com/features/featuresDeepDive/particles/solid_particle_system/picking_sps
     */
   var pickedBySubMesh: js.Array[js.Array[FaceId]] = js.native
   
@@ -549,7 +838,7 @@ trait SolidParticleSystem
     * This array is the first element of the pickedBySubMesh array : sps.pickBySubMesh[0].
     * It's not pertinent to use it when using a SPS with the support for MultiMaterial enabled.
     * Use the method SPS.pickedParticle(pickingInfo) instead.
-    * Please read : https://doc.babylonjs.com/how_to/Solid_Particle_System#pickable-particles
+    * Please read : https://doc.babylonjs.com/features/featuresDeepDive/particles/solid_particle_system/picking_sps
     */
   var pickedParticles: js.Array[FaceId] = js.native
   
@@ -569,7 +858,7 @@ trait SolidParticleSystem
   /**
     * This function does nothing. It may be overwritten to recycle a particle.
     * The SPS doesn't call this function, you may have to call it by your own.
-    * doc : https://doc.babylonjs.com/how_to/Solid_Particle_System#particle-management
+    * doc : https://doc.babylonjs.com/features/featuresDeepDive/particles/solid_particle_system/manage_sps_particles
     * @param particle The particle to recycle
     * @returns the recycled particle
     */
@@ -577,7 +866,7 @@ trait SolidParticleSystem
   
   /**
     * Visibility helper : Recomputes the visible size according to the mesh bounding box
-    * doc : https://doc.babylonjs.com/how_to/Solid_Particle_System#sps-visibility
+    * doc : https://doc.babylonjs.com/features/featuresDeepDive/particles/solid_particle_system/sps_visibility
     * @returns the SPS.
     */
   def refreshVisibleSize(): SolidParticleSystem = js.native
@@ -623,14 +912,14 @@ trait SolidParticleSystem
     * Visibility helper : Sets the size of a visibility box, this sets the underlying mesh bounding box.
     * @param size the size (float) of the visibility box
     * note : this doesn't lock the SPS mesh bounding box.
-    * doc : https://doc.babylonjs.com/how_to/Solid_Particle_System#sps-visibility
+    * doc : https://doc.babylonjs.com/features/featuresDeepDive/particles/solid_particle_system/sps_visibility
     */
   def setVisibilityBox(size: Double): Unit = js.native
   
   /**
     * Updates a particle : this function should  be overwritten by the user.
     * It is called on each particle by `setParticles()`. This is the place to code each particle behavior.
-    * doc : https://doc.babylonjs.com/how_to/Solid_Particle_System#particle-management
+    * doc : https://doc.babylonjs.com/features/featuresDeepDive/particles/solid_particle_system/manage_sps_particles
     * @example : just set a particle position or velocity and recycle conditions
     * @param particle The particle to update
     * @returns the updated particle
@@ -643,7 +932,7 @@ trait SolidParticleSystem
     * @param particle the current particle
     * @param vertex the current vertex of the current particle : a SolidParticleVertex object
     * @param pt the index of the current vertex in the particle shape
-    * doc : https://doc.babylonjs.com/how_to/Solid_Particle_System#update-each-particle-shape
+    * doc : https://doc.babylonjs.com/features/featuresDeepDive/particles/solid_particle_system/sps_vertices
     * @example : just set a vertex particle position or color
     * @returns the sps
     */
@@ -656,7 +945,7 @@ trait SolidParticleSystem
   
   /**
     * This empty object is intended to store some SPS specific or temporary values in order to lower the Garbage Collector activity.
-    * Please read : https://doc.babylonjs.com/how_to/Solid_Particle_System#garbage-collector-concerns
+    * Please read : https://doc.babylonjs.com/features/featuresDeepDive/particles/solid_particle_system/optimize_sps#limit-garbage-collection
     */
   var vars: Any = js.native
 }

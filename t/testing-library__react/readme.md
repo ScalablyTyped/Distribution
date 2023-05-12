@@ -1,7 +1,7 @@
 
 # Scala.js typings for testing-library__react
 
-Typings are for version 13.4.0
+Typings are for version 14.0.0
 
 ## Library description:
 Simple and complete React DOM testing utilities that encourage good testing practices.

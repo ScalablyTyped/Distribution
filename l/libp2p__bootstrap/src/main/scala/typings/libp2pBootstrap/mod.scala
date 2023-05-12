@@ -1,6 +1,6 @@
 package typings.libp2pBootstrap
 
-import typings.libp2pInterfacePeerDiscovery.mod.PeerDiscovery
+import typings.libp2pInterfacePeerDiscovery.mod.PeerDiscovery_
 import typings.libp2pInterfacePeerStore.mod.PeerStore
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,7 +12,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def bootstrap(init: BootstrapInit): js.Function1[/* components */ BootstrapComponents, PeerDiscovery] = ^.asInstanceOf[js.Dynamic].applyDynamic("bootstrap")(init.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* components */ BootstrapComponents, PeerDiscovery]]
+  inline def bootstrap(init: BootstrapInit): js.Function1[/* components */ BootstrapComponents, PeerDiscovery_] = ^.asInstanceOf[js.Dynamic].applyDynamic("bootstrap")(init.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* components */ BootstrapComponents, PeerDiscovery_]]
   
   trait BootstrapComponents extends StObject {
     

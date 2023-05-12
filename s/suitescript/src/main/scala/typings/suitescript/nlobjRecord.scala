@@ -10,8 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @classDescription Class definition for business records in the system.
   * @return {nlobjRecord}
-  * @constructor
-  *
   * @since 2008.2
   */
 @js.native

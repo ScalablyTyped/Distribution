@@ -19,7 +19,7 @@ trait DataIntegrationSummary extends StObject {
   /**
     * The URI of the data source.
     */
-  var SourceURI: js.UndefOr[NonBlankString] = js.undefined
+  var SourceURI: js.UndefOr[typings.awsSdk.clientsAppintegrationsMod.SourceURI] = js.undefined
 }
 object DataIntegrationSummary {
   
@@ -39,7 +39,7 @@ object DataIntegrationSummary {
     
     inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    inline def setSourceURI(value: NonBlankString): Self = StObject.set(x, "SourceURI", value.asInstanceOf[js.Any])
+    inline def setSourceURI(value: SourceURI): Self = StObject.set(x, "SourceURI", value.asInstanceOf[js.Any])
     
     inline def setSourceURIUndefined: Self = StObject.set(x, "SourceURI", js.undefined)
   }

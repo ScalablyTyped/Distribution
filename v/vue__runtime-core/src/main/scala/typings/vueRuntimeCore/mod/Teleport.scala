@@ -1,5 +1,6 @@
 package typings.vueRuntimeCore.mod
 
+import typings.vueRuntimeCore.anon.Slots0
 import typings.vueRuntimeCore.anon.`0`
 import typings.vueRuntimeCore.vueRuntimeCoreBooleans.`true`
 import org.scalablytyped.runtime.StObject
@@ -11,11 +12,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class Teleport ()
   extends StObject
-     with `0` {
+     with Slots0 {
   
   /* CompleteClass */
   @JSName("$props")
   var $props: VNodeProps & TeleportProps = js.native
+  
+  /* CompleteClass */
+  @JSName("$slots")
+  var $slots: `0` = js.native
 }
 object Teleport {
   

@@ -103,6 +103,8 @@ object declarationInputTypePanInputMod {
     
     var inputButton: js.UndefOr[js.Array[String]] = js.undefined
     
+    var inputKey: js.UndefOr[js.Array[String]] = js.undefined
+    
     var inputType: js.UndefOr[js.Array[String]] = js.undefined
     
     var preventClickOnDrag: js.UndefOr[Boolean] = js.undefined
@@ -136,6 +138,12 @@ object declarationInputTypePanInputMod {
       inline def setInputButtonUndefined: Self = StObject.set(x, "inputButton", js.undefined)
       
       inline def setInputButtonVarargs(value: String*): Self = StObject.set(x, "inputButton", js.Array(value*))
+      
+      inline def setInputKey(value: js.Array[String]): Self = StObject.set(x, "inputKey", value.asInstanceOf[js.Any])
+      
+      inline def setInputKeyUndefined: Self = StObject.set(x, "inputKey", js.undefined)
+      
+      inline def setInputKeyVarargs(value: String*): Self = StObject.set(x, "inputKey", js.Array(value*))
       
       inline def setInputType(value: js.Array[String]): Self = StObject.set(x, "inputType", value.asInstanceOf[js.Any])
       

@@ -1,6 +1,5 @@
 package typings.pixiApp
 
-import typings.pixiApp.libApplicationMod.IApplicationOptions
 import typings.pixiExtensions.mod.ExtensionMetadata
 import typings.std.HTMLElement
 import typings.std.Window
@@ -53,8 +52,7 @@ object libResizePluginMod {
       * @private
       * @param {object} [options] - See application options
       */
-    inline def init(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[Unit]
-    inline def init(options: IApplicationOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def init(options: ResizePluginOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     inline def queueResize(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("queueResize")().asInstanceOf[Unit]
     
@@ -71,6 +69,30 @@ object libResizePluginMod {
     @js.native
     def resizeTo: Window | HTMLElement = js.native
     inline def resizeTo_=(x: Window | HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("resizeTo")(x.asInstanceOf[js.Any])
+  }
+  
+  trait ResizePluginOptions extends StObject {
+    
+    /**
+      * Element to automatically resize stage to.
+      * @memberof PIXI.IApplicationOptions
+      */
+    var resizeTo: js.UndefOr[Window | HTMLElement] = js.undefined
+  }
+  object ResizePluginOptions {
+    
+    inline def apply(): ResizePluginOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ResizePluginOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResizePluginOptions] (val x: Self) extends AnyVal {
+      
+      inline def setResizeTo(value: Window | HTMLElement): Self = StObject.set(x, "resizeTo", value.asInstanceOf[js.Any])
+      
+      inline def setResizeToUndefined: Self = StObject.set(x, "resizeTo", js.undefined)
+    }
   }
   
   /* Inlined std.Pick<@pixi/core.@pixi/core.Renderer, 'resize'> */

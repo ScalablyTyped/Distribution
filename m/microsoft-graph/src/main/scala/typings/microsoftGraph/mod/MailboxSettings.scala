@@ -31,6 +31,10 @@ trait MailboxSettings extends StObject {
   // The default time zone for the user's mailbox.
   var timeZone: js.UndefOr[NullableOption[String]] = js.undefined
   
+  /**
+    * The purpose of the mailbox. Differentiates a mailbox for a single user from a shared mailbox and equipment mailbox in
+    * Exchange Online. Possible values are: user, linked, shared, room, equipment, others, unknownFutureValue. Read-only.
+    */
   var userPurpose: js.UndefOr[NullableOption[UserPurpose]] = js.undefined
   
   // The days of the week and hours in a specific time zone that the user works.

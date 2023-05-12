@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListTagsForResourceResponse extends StObject {
   
   /**
-    * An opaque string that indicates the position at which to begin returning the next list of resource tags.
+    * The opaque string that indicates the position to begin the next list of results in the response.
     */
   var NextToken: js.UndefOr[typings.awsSdk.clientsDatasyncMod.NextToken] = js.undefined
   
   /**
-    * Array of resource tags.
+    * An array of tags applied to the specified resource.
     */
   var Tags: js.UndefOr[OutputTagList] = js.undefined
 }

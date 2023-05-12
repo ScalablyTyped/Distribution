@@ -32,14 +32,14 @@ object enginesProcessorsShaderProcessorMod {
     inline def PreProcess(
       sourceCode: String,
       options: ProcessingOptions,
-      callback: js.Function1[/* migratedCode */ String, Unit],
+      callback: js.Function2[/* migratedCode */ String, /* codeBeforeMigration */ String, Unit],
       engine: ThinEngine
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PreProcess")(sourceCode.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], engine.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     inline def Process(
       sourceCode: String,
       options: ProcessingOptions,
-      callback: js.Function1[/* migratedCode */ String, Unit],
+      callback: js.Function2[/* migratedCode */ String, /* codeBeforeMigration */ String, Unit],
       engine: ThinEngine
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Process")(sourceCode.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], engine.asInstanceOf[js.Any])).asInstanceOf[Unit]
     

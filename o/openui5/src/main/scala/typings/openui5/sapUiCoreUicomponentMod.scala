@@ -256,6 +256,7 @@ object sapUiCoreUicomponentMod {
     
     /**
       * @SINCE 1.15.1
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * A method to be implemented by UIComponents, returning the flag whether to prefix the IDs of controls
       * automatically or not if the controls are created inside the {@link sap.ui.core.UIComponent#createContent}
@@ -283,6 +284,7 @@ object sapUiCoreUicomponentMod {
     
     /**
       * @SINCE 1.44.0
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Returns the content of {@link sap.ui.core.UIComponent#createContent}. If you specified a `rootView` in
       * your metadata or in the descriptor file (manifest.json), you will get the instance of the root view.
@@ -337,6 +339,8 @@ object sapUiCoreUicomponentMod {
     def getUIArea(): typings.openui5.sapUiCoreUiareaMod.default = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Function is called when the rendering of the ComponentContainer is completed.
       *
       * Applications must not call this hook method directly, it is called from ComponentContainer.
@@ -346,6 +350,8 @@ object sapUiCoreUicomponentMod {
     def onAfterRendering(): Unit = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Function is called when the rendering of the ComponentContainer is started.
       *
       * Applications must not call this hook method directly, it is called from ComponentContainer.

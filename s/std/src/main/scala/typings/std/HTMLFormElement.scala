@@ -75,6 +75,12 @@ trait HTMLFormElement
   /* standard dom */
   var noValidate: scala.Boolean = js.native
   
+  /* standard dom */
+  var rel: java.lang.String = js.native
+  
+  /* standard dom */
+  val relList: DOMTokenList = js.native
+  
   /* InferMemberOverrides */
   override def removeEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */

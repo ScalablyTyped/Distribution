@@ -39,7 +39,7 @@ object visual {
       ] = js.native
     
     /** Notifies the IVisual of an update (data, viewmode, size change). */
-    // tslint:disable-next-line:no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
     def update[T](options: typings.powerbiVisualsTools.mod.extensibility.visual.VisualUpdateOptions): Unit = js.native
     def update[T](options: typings.powerbiVisualsTools.mod.extensibility.visual.VisualUpdateOptions, viewModel: T): Unit = js.native
   }

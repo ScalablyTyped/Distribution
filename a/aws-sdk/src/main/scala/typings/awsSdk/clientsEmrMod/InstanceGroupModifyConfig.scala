@@ -12,7 +12,7 @@ trait InstanceGroupModifyConfig extends StObject {
   var Configurations: js.UndefOr[ConfigurationList] = js.undefined
   
   /**
-    * The EC2 InstanceIds to terminate. After you terminate the instances, the instance group will not return to its original requested size.
+    * The Amazon EC2 InstanceIds to terminate. After you terminate the instances, the instance group will not return to its original requested size.
     */
   var EC2InstanceIdsToTerminate: js.UndefOr[EC2InstanceIdsToTerminateList] = js.undefined
   

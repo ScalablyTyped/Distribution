@@ -32,6 +32,12 @@ object acornInts {
   inline def `13`: `13` = 13.asInstanceOf[`13`]
   
   @js.native
+  sealed trait `14`
+    extends StObject
+       with ecmaVersion
+  inline def `14`: `14` = 14.asInstanceOf[`14`]
+  
+  @js.native
   sealed trait `2015`
     extends StObject
        with ecmaVersion
@@ -78,6 +84,12 @@ object acornInts {
     extends StObject
        with ecmaVersion
   inline def `2022`: `2022` = 2022.asInstanceOf[`2022`]
+  
+  @js.native
+  sealed trait `2023`
+    extends StObject
+       with ecmaVersion
+  inline def `2023`: `2023` = 2023.asInstanceOf[`2023`]
   
   @js.native
   sealed trait `3`

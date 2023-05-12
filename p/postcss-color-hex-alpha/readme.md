@@ -1,7 +1,7 @@
 
 # Scala.js typings for postcss-color-hex-alpha
 
-Typings are for version 8.0.4
+Typings are for version 9.0.2
 
 ## Library description:
 Use 4 & 8 character hex color notation in CSS

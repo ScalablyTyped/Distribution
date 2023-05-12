@@ -11,6 +11,8 @@ object distRandomDottestMod {
   @js.native
   val ^ : js.Any = js.native
   
+  inline def testRandom(tc: TestCase): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testRandom")(tc.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
   inline def testUint32(tc: TestCase): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testUint32")(tc.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def testUint53(tc: TestCase): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testUint53")(tc.asInstanceOf[js.Any]).asInstanceOf[Unit]

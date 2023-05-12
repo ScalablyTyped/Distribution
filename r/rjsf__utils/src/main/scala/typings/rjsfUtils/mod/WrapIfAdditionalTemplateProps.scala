@@ -1,13 +1,14 @@
 package typings.rjsfUtils.mod
 
 import typings.react.mod.ReactNode
+import typings.react.mod.StyleHTMLAttributes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The properties that are passed to a WrapIfAdditionalTemplate implementation */
-/* Inlined {  children :react.react.ReactNode} & std.Pick<@rjsf/utils.@rjsf/utils.FieldTemplateProps<T, F>, 'id' | 'classNames' | 'label' | 'required' | 'readonly' | 'disabled' | 'schema' | 'uiSchema' | 'onKeyChange' | 'onDropPropertyClick' | 'registry'> */
-trait WrapIfAdditionalTemplateProps[T, F] extends StObject {
+/* Inlined {  children :react.react.ReactNode} & std.Pick<@rjsf/utils.@rjsf/utils.FieldTemplateProps<T, S, F>, 'id' | 'classNames' | 'style' | 'label' | 'required' | 'readonly' | 'disabled' | 'schema' | 'uiSchema' | 'onKeyChange' | 'onDropPropertyClick' | 'registry'> */
+trait WrapIfAdditionalTemplateProps[T, S /* <: StrictRJSFSchema */, F /* <: FormContextType */] extends StObject {
   
   /** The field or widget component instance for this field row */
   var children: ReactNode
@@ -26,32 +27,34 @@ trait WrapIfAdditionalTemplateProps[T, F] extends StObject {
   
   var readonly: Boolean
   
-  var registry: Registry[T, F]
+  var registry: Registry[T, S, F]
   
   var required: js.UndefOr[Boolean] = js.undefined
   
-  var schema: RJSFSchema
+  var schema: S
   
-  var uiSchema: js.UndefOr[UiSchema[T, F]] = js.undefined
+  var style: js.UndefOr[StyleHTMLAttributes[Any]] = js.undefined
+  
+  var uiSchema: js.UndefOr[UiSchema[T, S, F]] = js.undefined
 }
 object WrapIfAdditionalTemplateProps {
   
-  inline def apply[T, F](
+  inline def apply[T, S /* <: StrictRJSFSchema */, F /* <: FormContextType */](
     disabled: Boolean,
     id: String,
     label: String,
     onDropPropertyClick: /* value */ String => js.Function0[Unit],
     onKeyChange: /* value */ String => js.Function0[Unit],
     readonly: Boolean,
-    registry: Registry[T, F],
-    schema: RJSFSchema
-  ): WrapIfAdditionalTemplateProps[T, F] = {
+    registry: Registry[T, S, F],
+    schema: S
+  ): WrapIfAdditionalTemplateProps[T, S, F] = {
     val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], onDropPropertyClick = js.Any.fromFunction1(onDropPropertyClick), onKeyChange = js.Any.fromFunction1(onKeyChange), readonly = readonly.asInstanceOf[js.Any], registry = registry.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any])
-    __obj.asInstanceOf[WrapIfAdditionalTemplateProps[T, F]]
+    __obj.asInstanceOf[WrapIfAdditionalTemplateProps[T, S, F]]
   }
   
   @scala.inline
-  implicit open class MutableBuilder[Self <: WrapIfAdditionalTemplateProps[?, ?], T, F] (val x: Self & (WrapIfAdditionalTemplateProps[T, F])) extends AnyVal {
+  implicit open class MutableBuilder[Self <: WrapIfAdditionalTemplateProps[?, ?, ?], T, S /* <: StrictRJSFSchema */, F /* <: FormContextType */] (val x: Self & (WrapIfAdditionalTemplateProps[T, S, F])) extends AnyVal {
     
     inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
@@ -73,15 +76,19 @@ object WrapIfAdditionalTemplateProps {
     
     inline def setReadonly(value: Boolean): Self = StObject.set(x, "readonly", value.asInstanceOf[js.Any])
     
-    inline def setRegistry(value: Registry[T, F]): Self = StObject.set(x, "registry", value.asInstanceOf[js.Any])
+    inline def setRegistry(value: Registry[T, S, F]): Self = StObject.set(x, "registry", value.asInstanceOf[js.Any])
     
     inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     
     inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
     
-    inline def setSchema(value: RJSFSchema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+    inline def setSchema(value: S): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
-    inline def setUiSchema(value: UiSchema[T, F]): Self = StObject.set(x, "uiSchema", value.asInstanceOf[js.Any])
+    inline def setStyle(value: StyleHTMLAttributes[Any]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    
+    inline def setUiSchema(value: UiSchema[T, S, F]): Self = StObject.set(x, "uiSchema", value.asInstanceOf[js.Any])
     
     inline def setUiSchemaUndefined: Self = StObject.set(x, "uiSchema", js.undefined)
   }

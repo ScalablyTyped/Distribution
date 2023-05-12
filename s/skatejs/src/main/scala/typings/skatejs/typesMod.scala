@@ -59,10 +59,6 @@ object typesMod {
     
     /* standard dom */
     /* CompleteClass */
-    var ariaColIndexText: String | Null = js.native
-    
-    /* standard dom */
-    /* CompleteClass */
     var ariaColSpan: String | Null = js.native
     
     /* standard dom */
@@ -152,10 +148,6 @@ object typesMod {
     /* standard dom */
     /* CompleteClass */
     var ariaRowIndex: String | Null = js.native
-    
-    /* standard dom */
-    /* CompleteClass */
-    var ariaRowIndexText: String | Null = js.native
     
     /* standard dom */
     /* CompleteClass */
@@ -294,10 +286,6 @@ object typesMod {
     
     /* standard dom */
     /* CompleteClass */
-    var ariaColIndexText: String | Null = js.native
-    
-    /* standard dom */
-    /* CompleteClass */
     var ariaColSpan: String | Null = js.native
     
     /* standard dom */
@@ -387,10 +375,6 @@ object typesMod {
     /* standard dom */
     /* CompleteClass */
     var ariaRowIndex: String | Null = js.native
-    
-    /* standard dom */
-    /* CompleteClass */
-    var ariaRowIndexText: String | Null = js.native
     
     /* standard dom */
     /* CompleteClass */
@@ -492,7 +476,6 @@ object typesMod {
   - typings.std.GlobalEventHandlers because Already inherited
   - typings.std.ElementContentEditable because Already inherited
   - typings.std.ElementCSSInlineStyle because Already inherited
-  - typings.std.DocumentAndElementEventHandlers because Already inherited
   - typings.std.Element because Already inherited
   - js.Object because Already inherited
   - typings.std.HTMLElement because Already inherited
@@ -627,10 +610,6 @@ object typesMod {
     
     /* standard dom */
     /* CompleteClass */
-    var ariaColIndexText: String | Null = js.native
-    
-    /* standard dom */
-    /* CompleteClass */
     var ariaColSpan: String | Null = js.native
     
     /* standard dom */
@@ -720,10 +699,6 @@ object typesMod {
     /* standard dom */
     /* CompleteClass */
     var ariaRowIndex: String | Null = js.native
-    
-    /* standard dom */
-    /* CompleteClass */
-    var ariaRowIndexText: String | Null = js.native
     
     /* standard dom */
     /* CompleteClass */
@@ -848,10 +823,6 @@ object typesMod {
     
     /* standard dom */
     /* CompleteClass */
-    var ariaColIndexText: String | Null = js.native
-    
-    /* standard dom */
-    /* CompleteClass */
     var ariaColSpan: String | Null = js.native
     
     /* standard dom */
@@ -941,10 +912,6 @@ object typesMod {
     /* standard dom */
     /* CompleteClass */
     var ariaRowIndex: String | Null = js.native
-    
-    /* standard dom */
-    /* CompleteClass */
-    var ariaRowIndexText: String | Null = js.native
     
     /* standard dom */
     /* CompleteClass */
@@ -1076,10 +1043,6 @@ object typesMod {
     
     /* standard dom */
     /* CompleteClass */
-    var ariaColIndexText: String | Null = js.native
-    
-    /* standard dom */
-    /* CompleteClass */
     var ariaColSpan: String | Null = js.native
     
     /* standard dom */
@@ -1169,10 +1132,6 @@ object typesMod {
     /* standard dom */
     /* CompleteClass */
     var ariaRowIndex: String | Null = js.native
-    
-    /* standard dom */
-    /* CompleteClass */
-    var ariaRowIndexText: String | Null = js.native
     
     /* standard dom */
     /* CompleteClass */
@@ -1320,10 +1279,6 @@ object typesMod {
     
     /* standard dom */
     /* CompleteClass */
-    var ariaColIndexText: String | Null = js.native
-    
-    /* standard dom */
-    /* CompleteClass */
     var ariaColSpan: String | Null = js.native
     
     /* standard dom */
@@ -1413,10 +1368,6 @@ object typesMod {
     /* standard dom */
     /* CompleteClass */
     var ariaRowIndex: String | Null = js.native
-    
-    /* standard dom */
-    /* CompleteClass */
-    var ariaRowIndexText: String | Null = js.native
     
     /* standard dom */
     /* CompleteClass */

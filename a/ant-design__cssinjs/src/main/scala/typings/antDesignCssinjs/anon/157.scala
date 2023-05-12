@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.AnimationTimingFunction
+import typings.csstype.mod.Property.InsetBlockEnd
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,13 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `157` extends StObject {
   
   var value: js.UndefOr[
-    AnimationTimingFunction | (js.Array[
+    (InsetBlockEnd[Double | String]) | (js.Array[
       (Extract[
         js.UndefOr[
-          AnimationTimingFunction | js.Array[NonNullable[js.UndefOr[AnimationTimingFunction]]]
+          (InsetBlockEnd[Double | String]) | (js.Array[NonNullable[js.UndefOr[InsetBlockEnd[Double | String]]]])
         ], 
         String
-      ]) | NonNullable[js.UndefOr[AnimationTimingFunction]]
+      ]) | (NonNullable[js.UndefOr[InsetBlockEnd[Double | String]]])
     ])
   ] = js.native
 }

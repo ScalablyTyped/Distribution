@@ -65,6 +65,7 @@ type Children = js.Array[Child]
   - typings.awsSdk.awsSdkStrings.UNKNOWN_BUSINESS_VALIDATION
   - typings.awsSdk.awsSdkStrings.MISSING_PAYMENT_INSTRUMENT
   - typings.awsSdk.awsSdkStrings.INVALID_PAYMENT_INSTRUMENT
+  - typings.awsSdk.awsSdkStrings.UPDATE_EXISTING_RESOURCE_POLICY_WITH_TAGS_NOT_SUPPORTED
   - java.lang.String
 */
 type CreateAccountFailureReason = _CreateAccountFailureReason | String
@@ -226,6 +227,12 @@ type PolicyType = _PolicyType | String
 type PolicyTypeStatus = _PolicyTypeStatus | String
 
 type PolicyTypes = js.Array[PolicyTypeSummary]
+
+type ResourcePolicyArn = String
+
+type ResourcePolicyContent = String
+
+type ResourcePolicyId = String
 
 type RoleName = String
 

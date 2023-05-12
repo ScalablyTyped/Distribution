@@ -26,7 +26,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined {None (options : formidable.formidable.Options | undefined): formidable.formidable/Formidable.^,   defaultOptions :formidable.formidable.DefaultOptions,   enabledPlugins :formidable.formidable.EnabledPlugins,   plugins :formidable.formidable.EnabledPlugins,   errors :{  FormidableError :typeof FormidableError} & std.Record<'missingPlugin' | 'pluginFunction' | 'aborted' | 'noParser' | 'uninitializedParser' | 'filenameNotString' | 'maxFieldsSizeExceeded' | 'maxFieldsExceeded' | 'smallerThanMinFileSize' | 'biggerThanMaxFileSize' | 'noEmptyFiles' | 'missingContentType' | 'malformedMultipart' | 'missingMultipartBoundary' | 'unknownTransferEncoding', number>,   File :new (properties : formidable.formidable.File): formidable.formidable/PersistentFile.^,   PersistentFile :new (properties : formidable.formidable.File): formidable.formidable/PersistentFile.^,   VolatileFile :new (properties : formidable.formidable.File): formidable.formidable/PersistentFile.^,   Formidable :{ readonly DEFAULT_OPTIONS :formidable.formidable.DefaultOptions} & new (options : std.Partial<formidable.formidable.Options> | undefined): formidable.formidable/Formidable.^, formidable (options : formidable.formidable.Options | undefined): formidable.formidable/Formidable.^,   IncomingForm :{ readonly DEFAULT_OPTIONS :formidable.formidable.DefaultOptions} & new (options : std.Partial<formidable.formidable.Options> | undefined): formidable.formidable/Formidable.^,   parsers :{  MultipartParser :{stateToString (stateNumber : number): string,   STATES :std.Record<'PARSER_UNINITIALIZED' | 'START' | 'START_BOUNDARY' | 'HEADER_FIELD_START' | 'HEADER_FIELD' | 'HEADER_VALUE_START' | 'HEADER_VALUE' | 'HEADER_VALUE_ALMOST_DONE' | 'HEADERS_ALMOST_DONE' | 'PART_DATA_START' | 'PART_DATA' | 'PART_END' | 'END', number>, new (options : std.Partial<formidable.formidable.Options> | undefined): formidable.formidable/parsers.MultipartParser},   OctetStreamParser :new (options : std.Partial<formidable.formidable.Options> | undefined): formidable.formidable/parsers.OctetStreamParser,   QuerystringParser :new (options : std.Partial<formidable.formidable.Options> | undefined): formidable.formidable/parsers.QuerystringParser,   StreamingQuerystring :new (): formidable.formidable/parsers.StreamingQuerystring,   DummyParser :new (incomingForm : typeof IncomingForm, options : std.Partial<formidable.formidable.Options> | undefined): formidable.formidable/parsers.DummyParser,   JSONParser :new (options : std.Partial<formidable.formidable.Options> | undefined): formidable.formidable/parsers.JSONParser}} & formidable.formidable.MappedParsers */
+/* Inlined {None (options : formidable.formidable.Options | undefined): formidable.formidable/Formidable.^,   defaultOptions :formidable.formidable.DefaultOptions,   enabledPlugins :formidable.formidable.EnabledPlugins,   plugins :formidable.formidable.EnabledPlugins,   errors :{  FormidableError :typeof FormidableError} & std.Record<'missingPlugin' | 'pluginFunction' | 'aborted' | 'noParser' | 'uninitializedParser' | 'filenameNotString' | 'maxFieldsSizeExceeded' | 'maxFieldsExceeded' | 'smallerThanMinFileSize' | 'biggerThanMaxFileSize' | 'noEmptyFiles' | 'missingContentType' | 'malformedMultipart' | 'missingMultipartBoundary' | 'unknownTransferEncoding', number>,   File :new (properties : formidable.formidable.File): formidable.formidable/PersistentFile.^,   PersistentFile :new (properties : formidable.formidable.File): formidable.formidable/PersistentFile.^,   VolatileFile :new (properties : formidable.formidable.File): formidable.formidable/VolatileFile.^,   Formidable :{ readonly DEFAULT_OPTIONS :formidable.formidable.DefaultOptions} & new (options : std.Partial<formidable.formidable.Options> | undefined): formidable.formidable/Formidable.^, formidable (options : formidable.formidable.Options | undefined): formidable.formidable/Formidable.^,   IncomingForm :{ readonly DEFAULT_OPTIONS :formidable.formidable.DefaultOptions} & new (options : std.Partial<formidable.formidable.Options> | undefined): formidable.formidable/Formidable.^,   parsers :{  MultipartParser :{stateToString (stateNumber : number): string,   STATES :std.Record<'PARSER_UNINITIALIZED' | 'START' | 'START_BOUNDARY' | 'HEADER_FIELD_START' | 'HEADER_FIELD' | 'HEADER_VALUE_START' | 'HEADER_VALUE' | 'HEADER_VALUE_ALMOST_DONE' | 'HEADERS_ALMOST_DONE' | 'PART_DATA_START' | 'PART_DATA' | 'PART_END' | 'END', number>, new (options : std.Partial<formidable.formidable.Options> | undefined): formidable.formidable/parsers.MultipartParser},   OctetStreamParser :new (options : std.Partial<formidable.formidable.Options> | undefined): formidable.formidable/parsers.OctetStreamParser,   QuerystringParser :new (options : std.Partial<formidable.formidable.Options> | undefined): formidable.formidable/parsers.QuerystringParser,   StreamingQuerystring :new (): formidable.formidable/parsers.StreamingQuerystring,   DummyParser :new (incomingForm : typeof IncomingForm, options : std.Partial<formidable.formidable.Options> | undefined): formidable.formidable/parsers.DummyParser,   JSONParser :new (options : std.Partial<formidable.formidable.Options> | undefined): formidable.formidable/parsers.JSONParser}} & formidable.formidable.MappedParsers */
 object mod {
   
   inline def apply(): typings.formidable.formidableMod.^ = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[typings.formidable.formidableMod.^]
@@ -285,13 +285,13 @@ object mod {
   @JSImport("formidable", "VolatileFile")
   @js.native
   open class VolatileFile protected ()
-    extends typings.formidable.persistentFileMod.^ {
+    extends typings.formidable.volatileFileMod.^ {
     def this(properties: File) = this()
   }
   @JSImport("formidable", "VolatileFile")
   @js.native
-  def VolatileFile: Instantiable1[/* properties */ File, typings.formidable.persistentFileMod.^] = js.native
-  inline def VolatileFile_=(x: Instantiable1[/* properties */ File, typings.formidable.persistentFileMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VolatileFile")(x.asInstanceOf[js.Any])
+  def VolatileFile: Instantiable1[/* properties */ File, typings.formidable.volatileFileMod.^] = js.native
+  inline def VolatileFile_=(x: Instantiable1[/* properties */ File, typings.formidable.volatileFileMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VolatileFile")(x.asInstanceOf[js.Any])
   
   @JSImport("formidable", "defaultOptions")
   @js.native
@@ -368,8 +368,9 @@ object mod {
     var encoding: BufferEncoding
     
     def fileWriteStreamHandler(): Writable
+    def fileWriteStreamHandler(file: typings.formidable.volatileFileMod.^): Writable
     @JSName("fileWriteStreamHandler")
-    var fileWriteStreamHandler_Original: js.Function0[Writable]
+    var fileWriteStreamHandler_Original: js.Function1[/* file */ js.UndefOr[typings.formidable.volatileFileMod.^], Writable]
     
     def filename(name: String, ext: String, part: Part, form: typings.formidable.formidableMod.^): String
     @JSName("filename")
@@ -411,7 +412,7 @@ object mod {
       allowEmptyFiles: Boolean,
       enabledPlugins: EnabledPlugins,
       encoding: BufferEncoding,
-      fileWriteStreamHandler: () => Writable,
+      fileWriteStreamHandler: /* file */ js.UndefOr[typings.formidable.volatileFileMod.^] => Writable,
       filename: (/* name */ String, /* ext */ String, /* part */ Part, /* form */ typings.formidable.formidableMod.^) => String,
       filter: /* part */ Part => Boolean,
       hashAlgorithm: String | `false`,
@@ -425,7 +426,7 @@ object mod {
       multiples: Boolean,
       uploadDir: String
     ): DefaultOptions = {
-      val __obj = js.Dynamic.literal(allowEmptyFiles = allowEmptyFiles.asInstanceOf[js.Any], enabledPlugins = enabledPlugins.asInstanceOf[js.Any], encoding = encoding.asInstanceOf[js.Any], fileWriteStreamHandler = js.Any.fromFunction0(fileWriteStreamHandler), filename = js.Any.fromFunction4(filename), filter = js.Any.fromFunction1(filter), hashAlgorithm = hashAlgorithm.asInstanceOf[js.Any], keepExtensions = keepExtensions.asInstanceOf[js.Any], maxFields = maxFields.asInstanceOf[js.Any], maxFieldsSize = maxFieldsSize.asInstanceOf[js.Any], maxFileSize = maxFileSize.asInstanceOf[js.Any], maxFiles = maxFiles.asInstanceOf[js.Any], maxTotalFileSize = maxTotalFileSize.asInstanceOf[js.Any], minFileSize = minFileSize.asInstanceOf[js.Any], multiples = multiples.asInstanceOf[js.Any], uploadDir = uploadDir.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(allowEmptyFiles = allowEmptyFiles.asInstanceOf[js.Any], enabledPlugins = enabledPlugins.asInstanceOf[js.Any], encoding = encoding.asInstanceOf[js.Any], fileWriteStreamHandler = js.Any.fromFunction1(fileWriteStreamHandler), filename = js.Any.fromFunction4(filename), filter = js.Any.fromFunction1(filter), hashAlgorithm = hashAlgorithm.asInstanceOf[js.Any], keepExtensions = keepExtensions.asInstanceOf[js.Any], maxFields = maxFields.asInstanceOf[js.Any], maxFieldsSize = maxFieldsSize.asInstanceOf[js.Any], maxFileSize = maxFileSize.asInstanceOf[js.Any], maxFiles = maxFiles.asInstanceOf[js.Any], maxTotalFileSize = maxTotalFileSize.asInstanceOf[js.Any], minFileSize = minFileSize.asInstanceOf[js.Any], multiples = multiples.asInstanceOf[js.Any], uploadDir = uploadDir.asInstanceOf[js.Any])
       __obj.asInstanceOf[DefaultOptions]
     }
     
@@ -438,7 +439,7 @@ object mod {
       
       inline def setEncoding(value: BufferEncoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
-      inline def setFileWriteStreamHandler(value: () => Writable): Self = StObject.set(x, "fileWriteStreamHandler", js.Any.fromFunction0(value))
+      inline def setFileWriteStreamHandler(value: /* file */ js.UndefOr[typings.formidable.volatileFileMod.^] => Writable): Self = StObject.set(x, "fileWriteStreamHandler", js.Any.fromFunction1(value))
       
       inline def setFilename(
         value: (/* name */ String, /* ext */ String, /* part */ Part, /* form */ typings.formidable.formidableMod.^) => String
@@ -610,7 +611,7 @@ object mod {
   /**
     * @link https://github.com/node-formidable/formidable#file
     */
-  /* Inlined parent std.Pick<formidable.formidable.File, 'size' | 'filepath' | 'originalFilename' | 'mimetype' | 'hash'> */
+  /* Inlined parent std.Pick<formidable.formidable.File, 'size' | 'filepath' | 'originalFilename' | 'mimetype' | 'hash' | 'newFilename'> */
   trait FileJSON extends StObject {
     
     var filepath: String
@@ -623,14 +624,16 @@ object mod {
     
     var mtime: js.Date | Null
     
+    var newFilename: String
+    
     var originalFilename: String | Null
     
     var size: Double
   }
   object FileJSON {
     
-    inline def apply(filepath: String, length: Double, size: Double): FileJSON = {
-      val __obj = js.Dynamic.literal(filepath = filepath.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], mimetype = null, mtime = null, originalFilename = null)
+    inline def apply(filepath: String, length: Double, newFilename: String, size: Double): FileJSON = {
+      val __obj = js.Dynamic.literal(filepath = filepath.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], newFilename = newFilename.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], mimetype = null, mtime = null, originalFilename = null)
       __obj.asInstanceOf[FileJSON]
     }
     
@@ -654,6 +657,8 @@ object mod {
       inline def setMtime(value: js.Date): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
       
       inline def setMtimeNull: Self = StObject.set(x, "mtime", null)
+      
+      inline def setNewFilename(value: String): Self = StObject.set(x, "newFilename", value.asInstanceOf[js.Any])
       
       inline def setOriginalFilename(value: String): Self = StObject.set(x, "originalFilename", value.asInstanceOf[js.Any])
       
@@ -778,7 +783,9 @@ object mod {
       *
       * @default null
       */
-    var fileWriteStreamHandler: js.UndefOr[js.Function0[Writable]] = js.undefined
+    var fileWriteStreamHandler: js.UndefOr[
+        js.Function1[/* file */ js.UndefOr[typings.formidable.volatileFileMod.^], Writable]
+      ] = js.undefined
     
     /**
       * Use it to control newFilename. Must return a string. Will be joined with
@@ -895,7 +902,7 @@ object mod {
       
       inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
       
-      inline def setFileWriteStreamHandler(value: () => Writable): Self = StObject.set(x, "fileWriteStreamHandler", js.Any.fromFunction0(value))
+      inline def setFileWriteStreamHandler(value: /* file */ js.UndefOr[typings.formidable.volatileFileMod.^] => Writable): Self = StObject.set(x, "fileWriteStreamHandler", js.Any.fromFunction1(value))
       
       inline def setFileWriteStreamHandlerUndefined: Self = StObject.set(x, "fileWriteStreamHandler", js.undefined)
       

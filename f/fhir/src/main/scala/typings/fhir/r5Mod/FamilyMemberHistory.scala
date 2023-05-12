@@ -138,6 +138,11 @@ trait FamilyMemberHistory
   var note: js.UndefOr[js.Array[Annotation]] = js.undefined
   
   /**
+    * Indicates who or what participated in the activities related to the family member history and how they were involved.
+    */
+  var participant: js.UndefOr[js.Array[FamilyMemberHistoryParticipant]] = js.undefined
+  
+  /**
     * This is not the family member.
     */
   var patient: Reference
@@ -274,6 +279,12 @@ object FamilyMemberHistory {
     inline def setNoteUndefined: Self = StObject.set(x, "note", js.undefined)
     
     inline def setNoteVarargs(value: Annotation*): Self = StObject.set(x, "note", js.Array(value*))
+    
+    inline def setParticipant(value: js.Array[FamilyMemberHistoryParticipant]): Self = StObject.set(x, "participant", value.asInstanceOf[js.Any])
+    
+    inline def setParticipantUndefined: Self = StObject.set(x, "participant", js.undefined)
+    
+    inline def setParticipantVarargs(value: FamilyMemberHistoryParticipant*): Self = StObject.set(x, "participant", js.Array(value*))
     
     inline def setPatient(value: Reference): Self = StObject.set(x, "patient", value.asInstanceOf[js.Any])
     

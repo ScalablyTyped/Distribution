@@ -11,10 +11,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class EmptyAppCheckTokenProvider ()
   extends StObject
-     with J {
+     with X {
   
   /* CompleteClass */
-  override def getToken(): js.Promise[z] = js.native
+  override def getToken(): js.Promise[J] = js.native
   
   /* CompleteClass */
   override def invalidateToken(): Unit = js.native

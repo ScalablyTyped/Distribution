@@ -35,7 +35,7 @@ object distTextureManagerMod {
     
     def getNumUsedTextures(): Double = js.native
     
-    /* private */ var gpgpu: Any = js.native
+    /* private */ val gpgpu: Any = js.native
     
     /* private */ var log: Any = js.native
     

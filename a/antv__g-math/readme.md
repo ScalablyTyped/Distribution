@@ -1,7 +1,7 @@
 
 # Scala.js typings for antv__g-math
 
-Typings are for version 1.7.17
+Typings are for version 1.7.46
 
 ## Library description:
 Geometry util

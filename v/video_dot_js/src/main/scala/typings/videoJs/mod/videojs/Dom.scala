@@ -349,9 +349,6 @@ trait Dom extends StObject {
     *
     * @return - True if the element had the class
     *         - False otherwise.
-    *
-    * @throws {Error}
-    *         Throws an error if `classToCheck` has white space.
     */
   def hasClass(element: Element, classToCheck: String): Boolean = js.native
   

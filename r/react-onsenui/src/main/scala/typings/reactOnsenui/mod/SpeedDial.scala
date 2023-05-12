@@ -12,7 +12,7 @@ open class SpeedDial protected () extends Component[Direction, Any] {
   def this(props: HTMLAttributesidclassName & Direction) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: HTMLAttributesidclassName & Direction, context: Any) = this()
 }

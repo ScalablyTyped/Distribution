@@ -12,7 +12,7 @@ trait EksPodProperties extends StObject {
   var containers: js.UndefOr[EksContainers] = js.undefined
   
   /**
-    * The DNS policy for the pod. The default value is ClusterFirst. If the hostNetwork parameter is not specified, the default is ClusterFirstWithHostNet. ClusterFirst indicates that any DNS query that does not match the configured cluster domain suffix is forwarded to the upstream nameserver inherited from the node. For more information, see Pod's DNS policy in the Kubernetes documentation. Valid values: Default | ClusterFirst | ClusterFirstWithHostNet | None 
+    * The DNS policy for the pod. The default value is ClusterFirst. If the hostNetwork parameter is not specified, the default is ClusterFirstWithHostNet. ClusterFirst indicates that any DNS query that does not match the configured cluster domain suffix is forwarded to the upstream nameserver inherited from the node. For more information, see Pod's DNS policy in the Kubernetes documentation. Valid values: Default | ClusterFirst | ClusterFirstWithHostNet 
     */
   var dnsPolicy: js.UndefOr[String] = js.undefined
   
@@ -20,6 +20,11 @@ trait EksPodProperties extends StObject {
     * Indicates if the pod uses the hosts' network IP address. The default value is true. Setting this to false enables the Kubernetes pod networking model. Most Batch workloads are egress-only and don't require the overhead of IP allocation for each pod for incoming connections. For more information, see Host namespaces and Pod networking in the Kubernetes documentation.
     */
   var hostNetwork: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Metadata about the Kubernetes pod. For more information, see Understanding Kubernetes Objects in the Kubernetes documentation.
+    */
+  var metadata: js.UndefOr[EksMetadata] = js.undefined
   
   /**
     * The name of the service account that's used to run the pod. For more information, see Kubernetes service accounts and Configure a Kubernetes service account to assume an IAM role in the Amazon EKS User Guide and Configure service accounts for pods in the Kubernetes documentation.
@@ -54,6 +59,10 @@ object EksPodProperties {
     inline def setHostNetwork(value: Boolean): Self = StObject.set(x, "hostNetwork", value.asInstanceOf[js.Any])
     
     inline def setHostNetworkUndefined: Self = StObject.set(x, "hostNetwork", js.undefined)
+    
+    inline def setMetadata(value: EksMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
     inline def setServiceAccountName(value: String): Self = StObject.set(x, "serviceAccountName", value.asInstanceOf[js.Any])
     

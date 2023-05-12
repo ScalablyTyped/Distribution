@@ -100,10 +100,10 @@ object geo {
   
   /**
     * An interface to represent a geographic point. Every point in geo space is represented by three coordinates latitude, longitude and optional altitude.
-    * @property lat {H.geo.Latitude} - The latitude coordinate.
-    * @property lng {H.geo.Longitude} - The longitude coordinate.
-    * @property alt {H.geo.Altitude=} - The altitude coordinate.
-    * @property ctx {H.geo.AltitudeContext=} - The altitude context.
+    * lat {H.geo.Latitude} - The latitude coordinate.
+    * lng {H.geo.Longitude} - The longitude coordinate.
+    * alt {H.geo.Altitude=} - The altitude coordinate.
+    * ctx {H.geo.AltitudeContext=} - The altitude context.
     */
   trait IPoint extends StObject {
     
@@ -355,11 +355,11 @@ object geo {
   /**
     * PixelProjection transforms pixel world coordinates at a certain scale (zoom level) to geographical coordinates and vice versa.
     * By default, it uses the Mercator projection to transform geographic points into the 2d plane map points, which are adjusted to the current scale.
-    * @property projection {H.geo.IProjection} - This property indicates the geographical projection that underlies the given PixelProjection.
-    * @property x {number} - This property holds the x-offset in the projection relative to the top-left corner of the screen.
-    * @property y {number} - This property holds the y-offset in the projection relative to the top-left corner of the screen.
-    * @property w {number} - This property holds a value indicating the width of the world in pixels.
-    * @property h {number} - This property holds a value indicating the height of the world in pixels.
+    * projection {H.geo.IProjection} - This property indicates the geographical projection that underlies the given PixelProjection.
+    * x {number} - This property holds the x-offset in the projection relative to the top-left corner of the screen.
+    * y {number} - This property holds the y-offset in the projection relative to the top-left corner of the screen.
+    * w {number} - This property holds a value indicating the width of the world in pixels.
+    * h {number} - This property holds a value indicating the height of the world in pixels.
     */
   @js.native
   trait PixelProjection extends StObject {
@@ -435,10 +435,10 @@ object geo {
   
   /**
     * Class represents a geographical point, which is defined by the latitude, longitude and optional altitude.
-    * @property lat {H.geo.Latitude} - The latitude coordinate.
-    * @property lng {H.geo.Longitude} - The longitude coordinate.
-    * @property alt {H.geo.Altitude} - The altitude coordinate.
-    * @property ctx {H.geo.AltitudeContext} - The altitude context.
+    * lat {H.geo.Latitude} - The latitude coordinate.
+    * lng {H.geo.Longitude} - The longitude coordinate.
+    * alt {H.geo.Altitude} - The altitude coordinate.
+    * ctx {H.geo.AltitudeContext} - The altitude context.
     */
   @js.native
   trait Point

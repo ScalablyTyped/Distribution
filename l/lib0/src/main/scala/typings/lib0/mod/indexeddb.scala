@@ -81,13 +81,19 @@ object indexeddb {
   inline def get(store: IDBObjectStore, key: Double): js.Promise[String | Double | js.typedarray.ArrayBuffer | js.Date | js.Array[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(store.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String | Double | js.typedarray.ArrayBuffer | js.Date | js.Array[Any]]]
   
   inline def getAll(store: IDBObjectStore): js.Promise[js.Array[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAll")(store.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Any]]]
+  inline def getAll(store: IDBObjectStore, range: Unit, limit: Double): js.Promise[js.Array[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAll")(store.asInstanceOf[js.Any], range.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Any]]]
   inline def getAll(store: IDBObjectStore, range: IDBKeyRange): js.Promise[js.Array[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAll")(store.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Any]]]
+  inline def getAll(store: IDBObjectStore, range: IDBKeyRange, limit: Double): js.Promise[js.Array[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAll")(store.asInstanceOf[js.Any], range.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Any]]]
   
   inline def getAllKeys(store: IDBObjectStore): js.Promise[js.Array[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllKeys")(store.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Any]]]
+  inline def getAllKeys(store: IDBObjectStore, range: Unit, limit: Double): js.Promise[js.Array[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAllKeys")(store.asInstanceOf[js.Any], range.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Any]]]
   inline def getAllKeys(store: IDBObjectStore, range: IDBKeyRange): js.Promise[js.Array[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAllKeys")(store.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Any]]]
+  inline def getAllKeys(store: IDBObjectStore, range: IDBKeyRange, limit: Double): js.Promise[js.Array[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAllKeys")(store.asInstanceOf[js.Any], range.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Any]]]
   
   inline def getAllKeysValues(store: IDBObjectStore): js.Promise[js.Array[KeyValuePair]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllKeysValues")(store.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[KeyValuePair]]]
+  inline def getAllKeysValues(store: IDBObjectStore, range: Unit, limit: Double): js.Promise[js.Array[KeyValuePair]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAllKeysValues")(store.asInstanceOf[js.Any], range.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[KeyValuePair]]]
   inline def getAllKeysValues(store: IDBObjectStore, range: IDBKeyRange): js.Promise[js.Array[KeyValuePair]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAllKeysValues")(store.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[KeyValuePair]]]
+  inline def getAllKeysValues(store: IDBObjectStore, range: IDBKeyRange, limit: Double): js.Promise[js.Array[KeyValuePair]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAllKeysValues")(store.asInstanceOf[js.Any], range.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[KeyValuePair]]]
   
   inline def getFirstKey(store: IDBObjectStore): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFirstKey")(store.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
   inline def getFirstKey(store: IDBObjectStore, range: IDBKeyRange): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFirstKey")(store.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
@@ -100,38 +106,46 @@ object indexeddb {
   inline def iterate(
     store: IDBObjectStore,
     keyrange: Null,
-    f: js.Function2[/* arg0 */ Any, /* arg1 */ Any, Unit | Boolean]
+    f: js.Function2[/* arg0 */ Any, /* arg1 */ Any, Unit | Boolean | (js.Promise[Unit | Boolean])]
   ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("iterate")(store.asInstanceOf[js.Any], keyrange.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   inline def iterate(
     store: IDBObjectStore,
     keyrange: Null,
-    f: js.Function2[/* arg0 */ Any, /* arg1 */ Any, Unit | Boolean],
+    f: js.Function2[/* arg0 */ Any, /* arg1 */ Any, Unit | Boolean | (js.Promise[Unit | Boolean])],
     direction: next | prev | nextunique | prevunique
   ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("iterate")(store.asInstanceOf[js.Any], keyrange.asInstanceOf[js.Any], f.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   inline def iterate(
     store: IDBObjectStore,
     keyrange: IDBKeyRange,
-    f: js.Function2[/* arg0 */ Any, /* arg1 */ Any, Unit | Boolean]
+    f: js.Function2[/* arg0 */ Any, /* arg1 */ Any, Unit | Boolean | (js.Promise[Unit | Boolean])]
   ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("iterate")(store.asInstanceOf[js.Any], keyrange.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   inline def iterate(
     store: IDBObjectStore,
     keyrange: IDBKeyRange,
-    f: js.Function2[/* arg0 */ Any, /* arg1 */ Any, Unit | Boolean],
+    f: js.Function2[/* arg0 */ Any, /* arg1 */ Any, Unit | Boolean | (js.Promise[Unit | Boolean])],
     direction: next | prev | nextunique | prevunique
   ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("iterate")(store.asInstanceOf[js.Any], keyrange.asInstanceOf[js.Any], f.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  inline def iterateKeys(store: IDBObjectStore, keyrange: Null, f: js.Function1[/* arg0 */ Any, Unit | Boolean]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("iterateKeys")(store.asInstanceOf[js.Any], keyrange.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   inline def iterateKeys(
     store: IDBObjectStore,
     keyrange: Null,
-    f: js.Function1[/* arg0 */ Any, Unit | Boolean],
+    f: js.Function1[/* arg0 */ Any, Unit | Boolean | (js.Promise[Unit | Boolean])]
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("iterateKeys")(store.asInstanceOf[js.Any], keyrange.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def iterateKeys(
+    store: IDBObjectStore,
+    keyrange: Null,
+    f: js.Function1[/* arg0 */ Any, Unit | Boolean | (js.Promise[Unit | Boolean])],
     direction: next | prev | nextunique | prevunique
   ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("iterateKeys")(store.asInstanceOf[js.Any], keyrange.asInstanceOf[js.Any], f.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  inline def iterateKeys(store: IDBObjectStore, keyrange: IDBKeyRange, f: js.Function1[/* arg0 */ Any, Unit | Boolean]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("iterateKeys")(store.asInstanceOf[js.Any], keyrange.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   inline def iterateKeys(
     store: IDBObjectStore,
     keyrange: IDBKeyRange,
-    f: js.Function1[/* arg0 */ Any, Unit | Boolean],
+    f: js.Function1[/* arg0 */ Any, Unit | Boolean | (js.Promise[Unit | Boolean])]
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("iterateKeys")(store.asInstanceOf[js.Any], keyrange.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def iterateKeys(
+    store: IDBObjectStore,
+    keyrange: IDBKeyRange,
+    f: js.Function1[/* arg0 */ Any, Unit | Boolean | (js.Promise[Unit | Boolean])],
     direction: next | prev | nextunique | prevunique
   ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("iterateKeys")(store.asInstanceOf[js.Any], keyrange.asInstanceOf[js.Any], f.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   

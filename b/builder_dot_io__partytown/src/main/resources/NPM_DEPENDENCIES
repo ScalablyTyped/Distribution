@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@builder.io/partytown" : "0.7.1"
+      "@builder.io/partytown" : "0.8.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@builder.io/partytown" : "0.7.1"
+      "@builder.io/partytown" : "0.8.0"
     }
   ],
   "compile-devDependencies" : [

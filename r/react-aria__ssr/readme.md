@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-aria__ssr
 
-Typings are for version 3.3.0
+Typings are for version 3.6.0
 
 ## Library description:
 Spectrum UI components in React

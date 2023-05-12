@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait FnCallOptions extends StObject {
   
-  def apply(options: BuildOptionswritefalse): BuildResultoutputFilesArr = js.native
-  def apply(options: BuildOptions): BuildResult = js.native
+  def apply(options: BuildOptions): js.Promise[BuildResult[BuildOptions]] = js.native
+  def apply[SpecificOptions /* <: BuildOptions */](options: SpecificOptions): js.Promise[BuildResult[SpecificOptions]] = js.native
 }

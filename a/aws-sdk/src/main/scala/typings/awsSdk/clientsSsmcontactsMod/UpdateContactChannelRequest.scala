@@ -12,7 +12,7 @@ trait UpdateContactChannelRequest extends StObject {
   var ContactChannelId: SsmContactsArn
   
   /**
-    * The details that Incident Manager uses when trying to engage the contact channel. 
+    * The details that Incident Manager uses when trying to engage the contact channel.
     */
   var DeliveryAddress: js.UndefOr[ContactChannelAddress] = js.undefined
   

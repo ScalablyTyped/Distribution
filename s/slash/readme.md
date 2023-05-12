@@ -1,7 +1,7 @@
 
 # Scala.js typings for slash
 
-Typings are for version 5.0.0
+Typings are for version 5.1.0
 
 ## Library description:
 Convert Windows backslash paths to slash paths

@@ -42,6 +42,11 @@ trait Policy extends StObject {
   var PolicyName: ResourceName
   
   /**
+    * Indicates whether the policy is in or out of an admin's policy or Region scope.    ACTIVE - The administrator can manage and delete the policy.    OUT_OF_ADMIN_SCOPE - The administrator can view the policy, but they can't edit or delete the policy. Existing policy protections stay in place. Any new resources that come into scope of the policy won't be protected.  
+    */
+  var PolicyStatus: js.UndefOr[CustomerPolicyStatus] = js.undefined
+  
+  /**
     * A unique identifier for each update to the policy. When issuing a PutPolicy request, the PolicyUpdateToken in the request must match the PolicyUpdateToken of the current policy version. To get the PolicyUpdateToken of the current policy version, use a GetPolicy request.
     */
   var PolicyUpdateToken: js.UndefOr[typings.awsSdk.clientsFmsMod.PolicyUpdateToken] = js.undefined
@@ -115,6 +120,10 @@ object Policy {
     inline def setPolicyIdUndefined: Self = StObject.set(x, "PolicyId", js.undefined)
     
     inline def setPolicyName(value: ResourceName): Self = StObject.set(x, "PolicyName", value.asInstanceOf[js.Any])
+    
+    inline def setPolicyStatus(value: CustomerPolicyStatus): Self = StObject.set(x, "PolicyStatus", value.asInstanceOf[js.Any])
+    
+    inline def setPolicyStatusUndefined: Self = StObject.set(x, "PolicyStatus", js.undefined)
     
     inline def setPolicyUpdateToken(value: PolicyUpdateToken): Self = StObject.set(x, "PolicyUpdateToken", value.asInstanceOf[js.Any])
     

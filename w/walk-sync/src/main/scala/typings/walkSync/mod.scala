@@ -1,7 +1,5 @@
 package typings.walkSync
 
-import typings.minimatch.mod.IMinimatch
-import typings.minimatch.mod.IOptions
 import typings.walkSync.anon.TypeoffsNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,7 +8,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object mod {
   
   inline def apply(baseDir: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].apply(baseDir.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
-  inline def apply(baseDir: String, inputOptions: js.Array[String | IMinimatch]): js.Array[String] = (^.asInstanceOf[js.Dynamic].apply(baseDir.asInstanceOf[js.Any], inputOptions.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def apply(
+    baseDir: String,
+    inputOptions: js.Array[
+      String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IMinimatch */ Any)
+    ]
+  ): js.Array[String] = (^.asInstanceOf[js.Dynamic].apply(baseDir.asInstanceOf[js.Any], inputOptions.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   inline def apply(baseDir: String, inputOptions: Options): js.Array[String] = (^.asInstanceOf[js.Dynamic].apply(baseDir.asInstanceOf[js.Any], inputOptions.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
   @JSImport("walk-sync", JSImport.Namespace)
@@ -38,7 +41,12 @@ object mod {
   }
   
   inline def entries(baseDir: String): js.Array[Entry] = ^.asInstanceOf[js.Dynamic].applyDynamic("entries")(baseDir.asInstanceOf[js.Any]).asInstanceOf[js.Array[Entry]]
-  inline def entries(baseDir: String, inputOptions: js.Array[String | IMinimatch]): js.Array[Entry] = (^.asInstanceOf[js.Dynamic].applyDynamic("entries")(baseDir.asInstanceOf[js.Any], inputOptions.asInstanceOf[js.Any])).asInstanceOf[js.Array[Entry]]
+  inline def entries(
+    baseDir: String,
+    inputOptions: js.Array[
+      String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IMinimatch */ Any)
+    ]
+  ): js.Array[Entry] = (^.asInstanceOf[js.Dynamic].applyDynamic("entries")(baseDir.asInstanceOf[js.Any], inputOptions.asInstanceOf[js.Any])).asInstanceOf[js.Array[Entry]]
   inline def entries(baseDir: String, inputOptions: Options): js.Array[Entry] = (^.asInstanceOf[js.Dynamic].applyDynamic("entries")(baseDir.asInstanceOf[js.Any], inputOptions.asInstanceOf[js.Any])).asInstanceOf[js.Array[Entry]]
   
   trait Options extends StObject {
@@ -47,11 +55,21 @@ object mod {
     
     var fs: js.UndefOr[TypeoffsNode] = js.undefined
     
-    var globOptions: js.UndefOr[IOptions] = js.undefined
+    var globOptions: js.UndefOr[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MinimatchOptions */ Any
+      ] = js.undefined
     
-    var globs: js.UndefOr[js.Array[String | IMinimatch]] = js.undefined
+    var globs: js.UndefOr[
+        js.Array[
+          String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IMinimatch */ Any)
+        ]
+      ] = js.undefined
     
-    var ignore: js.UndefOr[js.Array[String | IMinimatch]] = js.undefined
+    var ignore: js.UndefOr[
+        js.Array[
+          String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IMinimatch */ Any)
+        ]
+      ] = js.undefined
     
     var includeBasePath: js.UndefOr[Boolean] = js.undefined
   }
@@ -73,21 +91,35 @@ object mod {
       
       inline def setFsUndefined: Self = StObject.set(x, "fs", js.undefined)
       
-      inline def setGlobOptions(value: IOptions): Self = StObject.set(x, "globOptions", value.asInstanceOf[js.Any])
+      inline def setGlobOptions(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MinimatchOptions */ Any
+      ): Self = StObject.set(x, "globOptions", value.asInstanceOf[js.Any])
       
       inline def setGlobOptionsUndefined: Self = StObject.set(x, "globOptions", js.undefined)
       
-      inline def setGlobs(value: js.Array[String | IMinimatch]): Self = StObject.set(x, "globs", value.asInstanceOf[js.Any])
+      inline def setGlobs(
+        value: js.Array[
+              String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IMinimatch */ Any)
+            ]
+      ): Self = StObject.set(x, "globs", value.asInstanceOf[js.Any])
       
       inline def setGlobsUndefined: Self = StObject.set(x, "globs", js.undefined)
       
-      inline def setGlobsVarargs(value: (String | IMinimatch)*): Self = StObject.set(x, "globs", js.Array(value*))
+      inline def setGlobsVarargs(
+        value: (String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IMinimatch */ Any))*
+      ): Self = StObject.set(x, "globs", js.Array(value*))
       
-      inline def setIgnore(value: js.Array[String | IMinimatch]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
+      inline def setIgnore(
+        value: js.Array[
+              String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IMinimatch */ Any)
+            ]
+      ): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
       
       inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
       
-      inline def setIgnoreVarargs(value: (String | IMinimatch)*): Self = StObject.set(x, "ignore", js.Array(value*))
+      inline def setIgnoreVarargs(
+        value: (String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IMinimatch */ Any))*
+      ): Self = StObject.set(x, "ignore", js.Array(value*))
       
       inline def setIncludeBasePath(value: Boolean): Self = StObject.set(x, "includeBasePath", value.asInstanceOf[js.Any])
       

@@ -1,7 +1,7 @@
 
 # Scala.js typings for socks-proxy-agent
 
-Typings are for version 7.0.0
+Typings are for version 8.0.1
 
 ## Library description:
 A SOCKS proxy `http.Agent` implementation for HTTP and HTTPS

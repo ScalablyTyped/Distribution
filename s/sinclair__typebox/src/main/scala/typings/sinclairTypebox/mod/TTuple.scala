@@ -20,7 +20,10 @@ trait TTuple[T /* <: js.Array[TSchema] */]
   var minItems: Double = js.native
   
   @JSName("static")
-  var static_TTuple: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: T[K] extends @sinclair/typebox.@sinclair/typebox.TSchema? @sinclair/typebox.@sinclair/typebox.Static<T[K], this['params']> : T[K]} */ js.Any = js.native
+  var static_TTuple: TTupleInfer[
+    T, 
+    /* import warning: importer.ImportType#apply Failed type conversion: this['params'] */ js.Any
+  ] = js.native
   
   var `type`: array = js.native
 }

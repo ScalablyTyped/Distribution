@@ -55,7 +55,7 @@ trait Actions extends StObject {
     * Useful for debugging purposes if you're confused about the order in which commands will execute.
     * @see https://on.cypress.io/catalog-of-events#App-Events
     */
-  def apply(action: commandColonenqueued, fn: js.Function1[/* command */ EnqueuedCommand, Unit]): typings.cypress.Cypress.Cypress = js.native
+  def apply(action: commandColonenqueued, fn: js.Function1[/* command */ EnqueuedCommandAttributes, Unit]): typings.cypress.Cypress.Cypress = js.native
   /**
     * Fires whenever a command begins its retrying routines.
     * This is called on the trailing edge after Cypress has internally
@@ -85,14 +85,14 @@ trait Actions extends StObject {
     * Useful to see how internal cypress commands utilize the {% url 'Cypress.log()' cypress-log %} API.
     * @see https://on.cypress.io/catalog-of-events#App-Events
     */
-  def apply(action: logColonadded, fn: js.Function2[/* log */ Any, /* interactive */ Boolean, Unit]): typings.cypress.Cypress.Cypress = js.native
+  def apply(action: logColonadded, fn: js.Function2[/* attributes */ ObjectLike, /* log */ Any, Unit]): typings.cypress.Cypress.Cypress = js.native
   /**
     * Fires whenever a command's attributes changes.
     * This event is debounced to prevent it from firing too quickly and too often.
     * Useful to see how internal cypress commands utilize the {% url 'Cypress.log()' cypress-log %} API.
     * @see https://on.cypress.io/catalog-of-events#App-Events
     */
-  def apply(action: logColonchanged, fn: js.Function2[/* log */ Any, /* interactive */ Boolean, Unit]): typings.cypress.Cypress.Cypress = js.native
+  def apply(action: logColonchanged, fn: js.Function2[/* attributes */ ObjectLike, /* log */ Any, Unit]): typings.cypress.Cypress.Cypress = js.native
   /**
     * Fires whenever **Cypress** is scrolling your application.
     * This event is fired when Cypress is {% url 'waiting for and calculating

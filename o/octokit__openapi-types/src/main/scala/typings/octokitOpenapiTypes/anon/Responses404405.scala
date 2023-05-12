@@ -8,14 +8,14 @@ trait Responses404405 extends StObject {
   
   var parameters: PathPullnumberRepo
   
-  var requestBody: Content305
+  var requestBody: js.UndefOr[Content320] = js.undefined
   
   var responses: `404405`
 }
 object Responses404405 {
   
-  inline def apply(parameters: PathPullnumberRepo, requestBody: Content305, responses: `404405`): Responses404405 = {
-    val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], requestBody = requestBody.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
+  inline def apply(parameters: PathPullnumberRepo, responses: `404405`): Responses404405 = {
+    val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[Responses404405]
   }
   
@@ -24,7 +24,9 @@ object Responses404405 {
     
     inline def setParameters(value: PathPullnumberRepo): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setRequestBody(value: Content305): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: Content320): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    
+    inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
     
     inline def setResponses(value: `404405`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }

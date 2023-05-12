@@ -12,7 +12,7 @@ trait ListImagePipelinesResponse extends StObject {
   var imagePipelineList: js.UndefOr[ImagePipelineList] = js.undefined
   
   /**
-    * The next token used for paginated responses. When this is not empty, there are additional elements that the service has not included in this request. Use this token with the next request to retrieve additional objects.
+    * The next token used for paginated responses. When this field isn't empty, there are additional elements that the service has'ot included in this request. Use this token with the next request to retrieve additional objects.
     */
   var nextToken: js.UndefOr[PaginationToken] = js.undefined
   

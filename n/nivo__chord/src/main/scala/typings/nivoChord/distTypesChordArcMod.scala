@@ -1,11 +1,13 @@
 package typings.nivoChord
 
+import typings.nivoChord.distTypesTypesMod.ArcAnimatedProps
 import typings.nivoChord.distTypesTypesMod.ArcDatum
 import typings.nivoChord.distTypesTypesMod.ArcGenerator
 import typings.nivoChord.distTypesTypesMod.ArcTooltipComponent
 import typings.nivoChord.distTypesTypesMod.ChordArcMouseHandler
 import typings.react.mod.MemoExoticComponent
 import typings.react.mod.global.JSX.Element
+import typings.reactSpringCore.mod.SpringValues
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +21,7 @@ object distTypesChordArcMod {
   @js.native
   trait ChordArcProps extends StObject {
     
-    var animatedProps: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValues<ArcAnimatedProps> */ Any = js.native
+    var animatedProps: SpringValues[ArcAnimatedProps] = js.native
     
     var arc: ArcDatum = js.native
     

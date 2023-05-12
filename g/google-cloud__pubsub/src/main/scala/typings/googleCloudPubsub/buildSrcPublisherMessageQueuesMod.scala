@@ -45,11 +45,20 @@ object buildSrcPublisherMessageQueuesMod {
     var pending: js.UndefOr[Timer] = js.native
     
     /**
-      * Method to initiate publishing.
+      * Method to initiate publishing. Full drain behaviour depends on whether the
+      * queues are ordered or not.
       *
       * @abstract
       */
     def publish(): Unit = js.native
+    
+    /**
+      * Method to finalize publishing. Does as many publishes as are needed
+      * to finish emptying the queues, and fires a drain event afterward.
+      *
+      * @abstract
+      */
+    def publishDrain(): Unit = js.native
     
     var publisher: Publisher = js.native
     
@@ -107,6 +116,8 @@ object buildSrcPublisherMessageQueuesMod {
     
     def publish(callback: PublishDone): Unit = js.native
     
+    def publishDrain(callback: PublishDone): Unit = js.native
+    
     /**
       * Tells the queue it is ok to continue publishing messages.
       */
@@ -118,9 +129,19 @@ object buildSrcPublisherMessageQueuesMod {
   open class Queue protected () extends MessageQueue {
     def this(publisher: Publisher) = this()
     
+    /**
+      * Cancels any pending publishes and calls _publish immediately.
+      *
+      * @emits Queue#drain when all messages are sent.
+      */
+    def _publishInternal(fullyDrain: Boolean): Unit = js.native
+    def _publishInternal(fullyDrain: Boolean, callback: PublishDone): Unit = js.native
+    
     var batch: MessageBatch = js.native
     
     def publish(callback: PublishDone): Unit = js.native
+    
+    def publishDrain(callback: PublishDone): Unit = js.native
   }
   
   type PublishDone = js.Function1[/* err */ ServiceError | Null, Unit]

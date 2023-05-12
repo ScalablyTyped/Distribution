@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.OverflowBlock
+import typings.csstype.mod.Property.ForcedColorAdjust
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,11 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `409` extends StObject {
   
   var value: js.UndefOr[
-    OverflowBlock | (js.Array[
+    ForcedColorAdjust | (js.Array[
       (Extract[
-        js.UndefOr[OverflowBlock | js.Array[NonNullable[js.UndefOr[OverflowBlock]]]], 
+        js.UndefOr[ForcedColorAdjust | js.Array[NonNullable[js.UndefOr[ForcedColorAdjust]]]], 
         String
-      ]) | NonNullable[js.UndefOr[OverflowBlock]]
+      ]) | NonNullable[js.UndefOr[ForcedColorAdjust]]
     ])
   ] = js.native
 }

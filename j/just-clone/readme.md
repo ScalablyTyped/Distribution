@@ -1,7 +1,7 @@
 
 # Scala.js typings for just-clone
 
-Typings are for version 6.1.1
+Typings are for version 6.2.0
 
 ## Library description:
 deep copies objects and arrays

@@ -12,7 +12,7 @@ trait UpdateTaintsPayload extends StObject {
   var addOrUpdateTaints: js.UndefOr[taintsList] = js.undefined
   
   /**
-    * Kubernetes taints to be removed.
+    * Kubernetes taints to remove.
     */
   var removeTaints: js.UndefOr[taintsList] = js.undefined
 }

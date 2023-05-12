@@ -19,5 +19,5 @@ object typesDecoratorTypecheckerIsBooleanMod {
   inline def IsBoolean_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsBoolean")().asInstanceOf[PropertyDecorator]
   inline def IsBoolean_(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsBoolean")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
-  inline def isBoolean(value: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBoolean")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isBoolean(value: Any): /* is boolean */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBoolean")(value.asInstanceOf[js.Any]).asInstanceOf[/* is boolean */ Boolean]
 }

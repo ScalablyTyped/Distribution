@@ -12,9 +12,6 @@ trait AddUserOptions
   /** Custom data associated with the user (only Mongodb 2.6 or higher) */
   var customData: js.UndefOr[Document] = js.undefined
   
-  /** @deprecated Please use db.command('createUser', ...) instead for this option */
-  var digestPassword: js.UndefOr[Null] = js.undefined
-  
   /** Roles associated with the created user */
   var roles: js.UndefOr[String | (js.Array[RoleSpecification | String]) | RoleSpecification] = js.undefined
 }

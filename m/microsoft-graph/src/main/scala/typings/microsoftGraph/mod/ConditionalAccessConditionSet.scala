@@ -30,6 +30,7 @@ trait ConditionalAccessConditionSet extends StObject {
   // Platforms included in and excluded from the policy.
   var platforms: js.UndefOr[NullableOption[ConditionalAccessPlatforms]] = js.undefined
   
+  // Service principal risk levels included in the policy. Possible values are: low, medium, high, none, unknownFutureValue.
   var servicePrincipalRiskLevels: js.UndefOr[js.Array[RiskLevel]] = js.undefined
   
   /**
@@ -44,7 +45,7 @@ trait ConditionalAccessConditionSet extends StObject {
     */
   var userRiskLevels: js.UndefOr[js.Array[RiskLevel]] = js.undefined
   
-  // Users, groups, and roles included in and excluded from the policy. Required.
+  // Users, groups, and roles included in and excluded from the policy. Either users or clientApplications is required.
   var users: js.UndefOr[NullableOption[ConditionalAccessUsers]] = js.undefined
 }
 object ConditionalAccessConditionSet {

@@ -8,11 +8,11 @@ trait ParametersPathRepo extends StObject {
   
   var parameters: PathRepo
   
-  var responses: `200Content122`
+  var responses: `200Content127`
 }
 object ParametersPathRepo {
   
-  inline def apply(parameters: PathRepo, responses: `200Content122`): ParametersPathRepo = {
+  inline def apply(parameters: PathRepo, responses: `200Content127`): ParametersPathRepo = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersPathRepo]
   }
@@ -22,6 +22,6 @@ object ParametersPathRepo {
     
     inline def setParameters(value: PathRepo): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `200Content122`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `200Content127`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

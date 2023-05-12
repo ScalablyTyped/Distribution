@@ -14,11 +14,9 @@ import typings.babylonjs.materialsTexturesBaseTextureMod.BaseTexture
 import typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture
 import typings.babylonjs.materialsTexturesTextureCreationOptionsMod.RenderTargetCreationOptions
 import typings.babylonjs.mathsMathDotlikeMod.IColor3Like
-import typings.babylonjs.mathsMathDotlikeMod.IMatrixLike
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.DataArray
 import typings.babylonjs.typesMod.Nullable
-import typings.std.WebGLFramebuffer
 import typings.std.WebGLVertexArrayObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -81,11 +79,10 @@ object enginesNativeEngineMod {
       vertexSourceCode: String,
       fragmentSourceCode: String,
       createAsRaw: Boolean,
-      rawVertexSourceCode: String,
-      rawFragmentSourceCode: String,
-      rebuildRebind: Any,
-      defines: Nullable[String],
-      transformFeedbackVaryings: Nullable[js.Array[String]]
+      _rawVertexSourceCode: String,
+      _rawFragmentSourceCode: String,
+      _rebuildRebind: Any,
+      defines: Nullable[String]
     ): Unit = js.native
     
     /* protected */ def _recordVertexArrayObject(
@@ -105,7 +102,7 @@ object enginesNativeEngineMod {
     /**
       * @internal
       */
-    def _releaseFramebufferObjects(framebuffer: Nullable[WebGLFramebuffer]): Unit = js.native
+    def _releaseFramebufferObjects(framebuffer: Nullable[js.typedarray.Uint32Array]): Unit = js.native
     
     /* private */ var _setStencil: Any = js.native
     
@@ -267,6 +264,8 @@ object enginesNativeEngineMod {
     ): InternalTexture = js.native
     
     def createPipelineContext(): IPipelineContext = js.native
+    
+    def createRawShaderProgram(): WebGLProgram = js.native
     
     def createRawTexture(
       data: Nullable[js.typedarray.ArrayBufferView],
@@ -454,6 +453,8 @@ object enginesNativeEngineMod {
     
     def createVertexBuffer(vertices: DataArray, updateable: Boolean): NativeDataBuffer = js.native
     
+    def isAsync(pipelineContext: IPipelineContext): Boolean = js.native
+    
     def recordVertexArrayObject(
       vertexBuffers: StringDictionary[VertexBuffer],
       indexBuffer: Nullable[NativeDataBuffer],
@@ -477,8 +478,6 @@ object enginesNativeEngineMod {
     def setFloatArray3(uniform: WebGLUniformLocation, array: js.typedarray.Float32Array): Boolean = js.native
     
     def setFloatArray4(uniform: WebGLUniformLocation, array: js.typedarray.Float32Array): Boolean = js.native
-    
-    def setMatrix(uniform: WebGLUniformLocation, matrix: IMatrixLike): Unit = js.native
     
     /**
       * Update the content of a dynamic texture
@@ -559,9 +558,14 @@ object enginesNativeEngineMod {
     /**
       * Wraps an external native texture in a Babylon texture.
       * @param texture defines the external texture
+      * @param hasMipMaps defines whether the external texture has mip maps
+      * @param samplingMode defines the sampling mode for the external texture (default: Constants.TEXTURE_TRILINEAR_SAMPLINGMODE)
       * @returns the babylon internal texture
       */
     def wrapNativeTexture(texture: Any): InternalTexture = js.native
+    def wrapNativeTexture(texture: Any, hasMipMaps: Boolean): InternalTexture = js.native
+    def wrapNativeTexture(texture: Any, hasMipMaps: Boolean, samplingMode: Double): InternalTexture = js.native
+    def wrapNativeTexture(texture: Any, hasMipMaps: Unit, samplingMode: Double): InternalTexture = js.native
     
     /**
       * Wraps an external web gl texture in a Babylon texture.

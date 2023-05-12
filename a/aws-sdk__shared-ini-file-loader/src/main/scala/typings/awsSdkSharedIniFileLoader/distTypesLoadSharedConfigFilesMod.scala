@@ -29,6 +29,12 @@ object distTypesLoadSharedConfigFilesMod {
       * defined) or `~/.aws/credentials` otherwise.
       */
     var filepath: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Configuration files are normally cached after the first time they are loaded. When this
+      * property is set, the provider will always reload any configuration files loaded before.
+      */
+    var ignoreCache: js.UndefOr[Boolean] = js.undefined
   }
   object SharedConfigInit {
     
@@ -47,6 +53,10 @@ object distTypesLoadSharedConfigFilesMod {
       inline def setFilepath(value: String): Self = StObject.set(x, "filepath", value.asInstanceOf[js.Any])
       
       inline def setFilepathUndefined: Self = StObject.set(x, "filepath", js.undefined)
+      
+      inline def setIgnoreCache(value: Boolean): Self = StObject.set(x, "ignoreCache", value.asInstanceOf[js.Any])
+      
+      inline def setIgnoreCacheUndefined: Self = StObject.set(x, "ignoreCache", js.undefined)
     }
   }
 }

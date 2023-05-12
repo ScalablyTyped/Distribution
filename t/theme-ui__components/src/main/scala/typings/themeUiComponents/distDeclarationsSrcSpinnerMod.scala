@@ -20,7 +20,7 @@ object distDeclarationsSrcSpinnerMod {
     
     var duration: js.UndefOr[Double] = js.undefined
     
-    var size: js.UndefOr[Double | String] = js.undefined
+    var size: js.UndefOr[Double] = js.undefined
     
     var strokeWidth: js.UndefOr[Double] = js.undefined
     
@@ -40,7 +40,7 @@ object distDeclarationsSrcSpinnerMod {
       
       inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
       
-      inline def setSize(value: Double | String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       

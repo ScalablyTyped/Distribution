@@ -10,17 +10,17 @@ trait TapTarget
      with Component[TapTargetOptions] {
   
   /**
-    * Close Tap Target
+    * Close Tap Target.
     */
   def close(): Unit
   
   /**
-    * If the tap target is open
+    * If the tap target is open.
     */
   var isOpen: Boolean
   
   /**
-    * Open Tap Target
+    * Open Tap Target.
     */
   def open(): Unit
 }

@@ -1,14 +1,11 @@
 package typings.hlsJs.mod
 
-import typings.hlsJs.mod.Events.MEDIA_ATTACHED
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StreamController
-  extends StObject
-     with BaseStreamController {
+trait StreamController extends BaseStreamController {
   
   /* private */ var _bufferInitSegment: Any = js.native
   
@@ -50,9 +47,6 @@ trait StreamController
   
   def currentProgramDateTime: js.Date | Null = js.native
   
-  /* InferMemberOverrides */
-  override def destroy(): Unit = js.native
-  
   /* private */ var doTickIdle: Any = js.native
   
   /* private */ var followingBufferedFrag: Any = js.native
@@ -64,8 +58,6 @@ trait StreamController
   /* private */ var fragPlaying: Any = js.native
   
   /* private */ var gapController: Any = js.native
-  
-  /* private */ var getAppendedFrag: Any = js.native
   
   /* private */ var getBufferedFrag: Any = js.native
   
@@ -110,8 +102,6 @@ trait StreamController
   /* private */ var onManifestLoading: Any = js.native
   
   /* private */ var onManifestParsed: Any = js.native
-  
-  /* protected */ def onMediaAttached(event: MEDIA_ATTACHED, data: MediaAttachedData): Unit = js.native
   
   /* private */ var onMediaPlaying: Any = js.native
   

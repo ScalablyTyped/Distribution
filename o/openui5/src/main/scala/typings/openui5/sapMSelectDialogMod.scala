@@ -516,6 +516,8 @@ object sapMSelectDialogMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:cancel cancel} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -527,6 +529,8 @@ object sapMSelectDialogMod {
     mParameters: js.Object): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:confirm confirm} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -538,6 +542,8 @@ object sapMSelectDialogMod {
     mParameters: SelectedContexts): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:liveChange liveChange} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -549,6 +555,8 @@ object sapMSelectDialogMod {
     mParameters: ItemsBinding): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:search search} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -686,6 +694,13 @@ object sapMSelectDialogMod {
     def getResizable(): Boolean = js.native
     
     /**
+      * Get the internal SearchField's placeholder property
+      *
+      * @returns the current placeholder text
+      */
+    def getSearchPlaceholder(): String = js.native
+    
+    /**
       * @SINCE 1.58
       *
       * Gets current value of property {@link #getShowClearButton showClearButton}.
@@ -766,6 +781,8 @@ object sapMSelectDialogMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Is called after renderer is finished to show the busy state
       *
       * @returns `this` pointer for chaining
@@ -926,6 +943,16 @@ object sapMSelectDialogMod {
       * Value for the resizable property
       */
     bValue: Boolean): this.type = js.native
+    
+    /**
+      * Set the internal SearchField's placeholder property
+      *
+      * @returns `this` pointer for chaining
+      */
+    def setSearchPlaceholder(/**
+      * The placeholder text
+      */
+    sSearchPlaceholder: String): this.type = js.native
     
     /**
       * Sets the Clear button visible state
@@ -1100,6 +1127,14 @@ object sapMSelectDialogMod {
     var search: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
     
     /**
+      * @SINCE 1.110
+      *
+      * Allows overriding the SearchField's default placeholder text. If not set, the word "Search" in the current
+      * local language or English will be used as a placeholder.
+      */
+    var searchPlaceholder: js.UndefOr[String | PropertyBindingInfo] = js.undefined
+    
+    /**
       * @SINCE 1.58
       *
       * This flag controls whether the Clear button is shown. When set to `true`, it provides a way to clear
@@ -1202,6 +1237,10 @@ object sapMSelectDialogMod {
       inline def setResizableUndefined: Self = StObject.set(x, "resizable", js.undefined)
       
       inline def setSearch(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "search", js.Any.fromFunction1(value))
+      
+      inline def setSearchPlaceholder(value: String | PropertyBindingInfo): Self = StObject.set(x, "searchPlaceholder", value.asInstanceOf[js.Any])
+      
+      inline def setSearchPlaceholderUndefined: Self = StObject.set(x, "searchPlaceholder", js.undefined)
       
       inline def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
       

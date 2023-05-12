@@ -1,6 +1,7 @@
 package typings.three.global.THREE
 
 import typings.std.ArrayLike
+import typings.three.srcConstantsMod.InterpolationModes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,13 +16,8 @@ open class KeyframeTrack protected ()
     * @param values
     * @param [interpolation=THREE.InterpolateLinear]
     */
-  def this(name: String, times: ArrayLike[Any], values: ArrayLike[Any]) = this()
-  def this(
-    name: String,
-    times: ArrayLike[Any],
-    values: ArrayLike[Any],
-    interpolation: typings.three.srcConstantsMod.InterpolationModes
-  ) = this()
+  def this(name: String, times: ArrayLike[Double], values: ArrayLike[Any]) = this()
+  def this(name: String, times: ArrayLike[Double], values: ArrayLike[Any], interpolation: InterpolationModes) = this()
 }
 /* static members */
 object KeyframeTrack {

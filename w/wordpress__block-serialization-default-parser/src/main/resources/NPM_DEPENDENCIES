@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@wordpress/block-serialization-default-parser" : "4.33.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@wordpress/block-serialization-default-parser" : "4.33.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

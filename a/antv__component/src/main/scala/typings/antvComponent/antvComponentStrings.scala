@@ -51,6 +51,10 @@ object antvComponentStrings {
   inline def left: left = "left".asInstanceOf[left]
   
   @js.native
+  sealed trait leftward extends StObject
+  inline def leftward: leftward = "leftward".asInstanceOf[leftward]
+  
+  @js.native
   sealed trait middle extends StObject
   inline def middle: middle = "middle".asInstanceOf[middle]
   
@@ -77,6 +81,10 @@ object antvComponentStrings {
     extends StObject
        with TooltipPosition
   inline def right: right = "right".asInstanceOf[right]
+  
+  @js.native
+  sealed trait rightward extends StObject
+  inline def rightward: rightward = "rightward".asInstanceOf[rightward]
   
   @js.native
   sealed trait tail extends StObject

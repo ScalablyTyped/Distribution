@@ -1,16 +1,21 @@
 package typings.rcMotion
 
-import org.scalablytyped.runtime.Shortcut
 import typings.rcMotion.anon.CSSMotionPropsrefRefanyun
+import typings.rcMotion.anon.MotionContextPropschildre
 import typings.rcMotion.esCssmotionlistMod.CSSMotionListProps
 import typings.react.mod.Component
 import typings.react.mod.ComponentClass
 import typings.react.mod.ForwardRefExoticComponent
+import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object mod extends Shortcut {
+object mod {
+  
+  @JSImport("rc-motion", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("rc-motion", JSImport.Default)
   @js.native
@@ -27,8 +32,5 @@ object mod extends Shortcut {
   @js.native
   val CSSMotionList: ComponentClass[CSSMotionListProps, Any] = js.native
   
-  type _To = ForwardRefExoticComponent[CSSMotionPropsrefRefanyun]
-  
-  /* This means you don't have to write `default`, but can instead just say `mod.foo` */
-  override def _to: ForwardRefExoticComponent[CSSMotionPropsrefRefanyun] = default
+  inline def Provider(param0: MotionContextPropschildre): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Provider")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

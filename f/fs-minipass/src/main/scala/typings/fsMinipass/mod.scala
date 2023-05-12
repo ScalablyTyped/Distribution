@@ -4,7 +4,6 @@ import typings.fsMinipass.anon.AutoClose
 import typings.fsMinipass.anon.Fd
 import typings.fsMinipass.fsMinipassBooleans.`false`
 import typings.fsMinipass.fsMinipassBooleans.`true`
-import typings.minipass.mod.Encoding
 import typings.node.bufferMod.global.Buffer
 import typings.node.bufferMod.global.BufferEncoding
 import org.scalablytyped.runtime.StObject
@@ -51,9 +50,16 @@ object mod {
     def end(cb: js.Function0[Unit]): scala.Nothing = js.native
     def end(chunk: Any): scala.Nothing = js.native
     def end(chunk: Any, cb: js.Function0[Unit]): scala.Nothing = js.native
+    def end(
+      chunk: Any,
+      encoding: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Encoding */ Any
+    ): scala.Nothing = js.native
+    def end(
+      chunk: Any,
+      encoding: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Encoding */ Any,
+      cb: js.Function0[Unit]
+    ): scala.Nothing = js.native
     def end(chunk: Any, encoding: Unit, cb: js.Function0[Unit]): scala.Nothing = js.native
-    def end(chunk: Any, encoding: Encoding): scala.Nothing = js.native
-    def end(chunk: Any, encoding: Encoding, cb: js.Function0[Unit]): scala.Nothing = js.native
     
     def fd: Double = js.native
     
@@ -63,9 +69,16 @@ object mod {
     def write(buf: Buffer, enc: BufferEncoding): Boolean = js.native
     def write(chunk: Any): scala.Nothing = js.native
     def write(chunk: Any, cb: js.Function0[Unit]): scala.Nothing = js.native
+    def write(
+      chunk: Any,
+      encoding: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Encoding */ Any
+    ): scala.Nothing = js.native
+    def write(
+      chunk: Any,
+      encoding: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Encoding */ Any,
+      cb: js.Function0[Unit]
+    ): scala.Nothing = js.native
     def write(chunk: Any, encoding: Unit, cb: js.Function0[Unit]): scala.Nothing = js.native
-    def write(chunk: Any, encoding: Encoding): scala.Nothing = js.native
-    def write(chunk: Any, encoding: Encoding, cb: js.Function0[Unit]): scala.Nothing = js.native
   }
   
   @JSImport("fs-minipass", "WriteStreamSync")

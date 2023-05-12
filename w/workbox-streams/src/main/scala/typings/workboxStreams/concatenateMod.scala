@@ -1,7 +1,7 @@
 package typings.workboxStreams
 
-import typings.std.ReadableStream
-import typings.workboxStreams.typesStreamSourceMod.StreamSource
+import typings.workboxStreams.anon.Done
+import typings.workboxStreams.typesMod.StreamSource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,27 +12,18 @@ object concatenateMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def concatenate(sourcePromises: js.Array[js.Promise[StreamSource]]): ConcatenateReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("concatenate")(sourcePromises.asInstanceOf[js.Any]).asInstanceOf[ConcatenateReturn]
-  
-  trait ConcatenateReturn extends StObject {
-    
-    var done: js.Promise[Unit]
-    
-    var stream: ReadableStream[Any]
-  }
-  object ConcatenateReturn {
-    
-    inline def apply(done: js.Promise[Unit], stream: ReadableStream[Any]): ConcatenateReturn = {
-      val __obj = js.Dynamic.literal(done = done.asInstanceOf[js.Any], stream = stream.asInstanceOf[js.Any])
-      __obj.asInstanceOf[ConcatenateReturn]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: ConcatenateReturn] (val x: Self) extends AnyVal {
-      
-      inline def setDone(value: js.Promise[Unit]): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
-      
-      inline def setStream(value: ReadableStream[Any]): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
-    }
-  }
+  /**
+    * Takes multiple source Promises, each of which could resolve to a Response, a
+    * ReadableStream, or a [BodyInit](https://fetch.spec.whatwg.org/#bodyinit).
+    *
+    * Returns an object exposing a ReadableStream with each individual stream's
+    * data returned in sequence, along with a Promise which signals when the
+    * stream is finished (useful for passing to a FetchEvent's waitUntil()).
+    *
+    * @param {Array<Promise<workbox-streams.StreamSource>>} sourcePromises
+    * @return {Object<{done: Promise, stream: ReadableStream}>}
+    *
+    * @memberof workbox-streams
+    */
+  inline def concatenate(sourcePromises: js.Array[js.Promise[StreamSource]]): Done = ^.asInstanceOf[js.Dynamic].applyDynamic("concatenate")(sourcePromises.asInstanceOf[js.Any]).asInstanceOf[Done]
 }

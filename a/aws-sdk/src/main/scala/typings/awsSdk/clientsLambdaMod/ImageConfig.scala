@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ImageConfig extends StObject {
   
   /**
-    * Specifies parameters that you want to pass in with ENTRYPOINT. 
+    * Specifies parameters that you want to pass in with ENTRYPOINT.
     */
   var Command: js.UndefOr[StringList] = js.undefined
   

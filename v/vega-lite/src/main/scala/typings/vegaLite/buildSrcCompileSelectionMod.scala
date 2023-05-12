@@ -16,7 +16,6 @@ import typings.vegaLite.buildSrcUtilMod.Dict
 import typings.vegaLite.vegaLiteStrings.point
 import typings.vegaLite.vegaLiteStrings.scales
 import typings.vegaTypings.typesSpecBindMod.Binding
-import typings.vegaTypings.typesSpecSignalMod.NewSignal
 import typings.vegaTypings.typesSpecSignalMod.Signal
 import typings.vegaTypings.typesSpecStreamMod.Stream
 import org.scalablytyped.runtime.StObject
@@ -90,7 +89,7 @@ object buildSrcCompileSelectionMod {
         js.Function3[
           /* model */ UnitModel, 
           /* selCmpt */ SelectionComponent[T], 
-          /* signals */ js.Array[NewSignal], 
+          /* signals */ js.Array[Signal], 
           js.Array[Signal]
         ]
       ] = js.undefined
@@ -99,8 +98,8 @@ object buildSrcCompileSelectionMod {
         js.Function3[
           /* model */ Model, 
           /* selCmpt */ SelectionComponent[T], 
-          /* signals */ js.Array[NewSignal], 
-          js.Array[NewSignal]
+          /* signals */ js.Array[Signal], 
+          js.Array[Signal]
         ]
       ] = js.undefined
   }
@@ -133,13 +132,13 @@ object buildSrcCompileSelectionMod {
       inline def setParseUndefined: Self = StObject.set(x, "parse", js.undefined)
       
       inline def setSignals(
-        value: (/* model */ UnitModel, /* selCmpt */ SelectionComponent[T], /* signals */ js.Array[NewSignal]) => js.Array[Signal]
+        value: (/* model */ UnitModel, /* selCmpt */ SelectionComponent[T], /* signals */ js.Array[Signal]) => js.Array[Signal]
       ): Self = StObject.set(x, "signals", js.Any.fromFunction3(value))
       
       inline def setSignalsUndefined: Self = StObject.set(x, "signals", js.undefined)
       
       inline def setTopLevelSignals(
-        value: (/* model */ Model, /* selCmpt */ SelectionComponent[T], /* signals */ js.Array[NewSignal]) => js.Array[NewSignal]
+        value: (/* model */ Model, /* selCmpt */ SelectionComponent[T], /* signals */ js.Array[Signal]) => js.Array[Signal]
       ): Self = StObject.set(x, "topLevelSignals", js.Any.fromFunction3(value))
       
       inline def setTopLevelSignalsUndefined: Self = StObject.set(x, "topLevelSignals", js.undefined)

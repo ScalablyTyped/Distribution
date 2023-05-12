@@ -14,6 +14,8 @@ trait FilterField extends StObject {
   
   var name: js.UndefOr[String] = js.undefined
   
+  var operators: js.UndefOr[FilterOperators] = js.undefined
+  
   var previewFormat: js.UndefOr[String] = js.undefined
   
   var `type`: js.UndefOr[String] = js.undefined
@@ -43,6 +45,10 @@ object FilterField {
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setOperators(value: FilterOperators): Self = StObject.set(x, "operators", value.asInstanceOf[js.Any])
+    
+    inline def setOperatorsUndefined: Self = StObject.set(x, "operators", js.undefined)
     
     inline def setPreviewFormat(value: String): Self = StObject.set(x, "previewFormat", value.asInstanceOf[js.Any])
     

@@ -23,25 +23,25 @@ object libFunctionMod {
   
   @JSImport("fp-ts/lib/function", "constFalse")
   @js.native
-  val constFalse: Lazy[Boolean] = js.native
+  val constFalse: LazyArg[Boolean] = js.native
   
   @JSImport("fp-ts/lib/function", "constNull")
   @js.native
-  val constNull: Lazy[Null] = js.native
+  val constNull: LazyArg[Null] = js.native
   
   @JSImport("fp-ts/lib/function", "constTrue")
   @js.native
-  val constTrue: Lazy[Boolean] = js.native
+  val constTrue: LazyArg[Boolean] = js.native
   
   @JSImport("fp-ts/lib/function", "constUndefined")
   @js.native
-  val constUndefined: Lazy[Unit] = js.native
+  val constUndefined: LazyArg[Unit] = js.native
   
   @JSImport("fp-ts/lib/function", "constVoid")
   @js.native
-  val constVoid: Lazy[Unit] = js.native
+  val constVoid: LazyArg[Unit] = js.native
   
-  inline def constant[A](a: A): Lazy[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("constant")(a.asInstanceOf[js.Any]).asInstanceOf[Lazy[A]]
+  inline def constant[A](a: A): LazyArg[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("constant")(a.asInstanceOf[js.Any]).asInstanceOf[LazyArg[A]]
   
   inline def decrement(n: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("decrement")(n.asInstanceOf[js.Any]).asInstanceOf[Double]
   
@@ -380,6 +380,8 @@ object libFunctionMod {
   type FunctionN[A /* <: js.Array[Any] */, B] = js.Function1[/* args */ A, B]
   
   type Lazy[A] = js.Function0[A]
+  
+  type LazyArg[A] = js.Function0[A]
   
   type Predicate[A] = js.Function1[/* a */ A, Boolean]
   

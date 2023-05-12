@@ -12,7 +12,7 @@ open class Swipeable protected ()
   def this(props: SwipeableProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: SwipeableProps, context: Any) = this()
 }

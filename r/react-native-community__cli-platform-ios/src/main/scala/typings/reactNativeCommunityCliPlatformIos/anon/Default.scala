@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Default extends StObject {
   
-  var default: String
+  var default: Unit
   
   var description: String
   
@@ -16,7 +16,7 @@ trait Default extends StObject {
 }
 object Default {
   
-  inline def apply(default: String, description: String, name: String, parse: Unit): Default = {
+  inline def apply(default: Unit, description: String, name: String, parse: Unit): Default = {
     val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], parse = parse.asInstanceOf[js.Any])
     __obj.asInstanceOf[Default]
   }
@@ -24,7 +24,7 @@ object Default {
   @scala.inline
   implicit open class MutableBuilder[Self <: Default] (val x: Self) extends AnyVal {
     
-    inline def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: Unit): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

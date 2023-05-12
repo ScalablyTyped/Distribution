@@ -6,8 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ReferAttributes extends StObject {
   
+  /** action - Action URL */
   var action: js.UndefOr[String] = js.undefined
   
+  /** method - Action URL method */
   var method: js.UndefOr[String] = js.undefined
 }
 object ReferAttributes {

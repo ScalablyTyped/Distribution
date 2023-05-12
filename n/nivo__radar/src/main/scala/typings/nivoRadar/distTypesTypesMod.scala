@@ -21,6 +21,7 @@ import typings.nivoLegends.distTypesTypesMod.LegendDirection
 import typings.nivoLegends.distTypesTypesMod.LegendItemDirection
 import typings.nivoLegends.distTypesTypesMod.LegendProps
 import typings.nivoLegends.distTypesTypesMod.SymbolShape
+import typings.nivoRadar.anon.AnimatedPropstransformstr
 import typings.nivoRadar.anon.Color
 import typings.nivoRadar.anon.Fill
 import typings.nivoRadar.anon.Index
@@ -34,6 +35,7 @@ import typings.react.mod.FC
 import typings.react.mod.FunctionComponent
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
+import typings.reactSpringCore.mod.SpringConfig
 import typings.std.Record
 import typings.std.SVGRectElement
 import org.scalablytyped.runtime.StObject
@@ -215,7 +217,7 @@ object distTypesTypesMod {
     
     var angle: Double
     
-    var animated: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnimatedProps<{  transform :string}> */ Any
+    var animated: AnimatedPropstransformstr
     
     var id: String
     
@@ -228,7 +230,7 @@ object distTypesTypesMod {
     inline def apply(
       anchor: start | middle | end,
       angle: Double,
-      animated: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnimatedProps<{  transform :string}> */ Any,
+      animated: AnimatedPropstransformstr,
       id: String,
       x: Double,
       y: Double
@@ -244,9 +246,7 @@ object distTypesTypesMod {
       
       inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
       
-      inline def setAnimated(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnimatedProps<{  transform :string}> */ Any
-      ): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
+      inline def setAnimated(value: AnimatedPropstransformstr): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -722,7 +722,7 @@ object distTypesTypesMod {
     }
   }
   
-  /* Inlined std.Partial<@nivo/radar.@nivo/radar/dist/types/types.RadarCommonProps<D>> & @nivo/radar.@nivo/radar/dist/types/types.RadarDataProps<D> & @nivo/core.@nivo/core.Dimensions & @nivo/core.@nivo/core.ModernMotionProps & @nivo/core.@nivo/core.SvgDefsAndFill<@nivo/radar.@nivo/radar/dist/types/types.RadarSvgFillMatcherDatum<D>> */
+  /* Inlined std.Partial<@nivo/radar.@nivo/radar/dist/types/types.RadarCommonProps<D>> & @nivo/radar.@nivo/radar/dist/types/types.RadarDataProps<D> & @nivo/core.@nivo/core.Dimensions & @nivo/core.@nivo/core.MotionProps & @nivo/core.@nivo/core.SvgDefsAndFill<@nivo/radar.@nivo/radar/dist/types/types.RadarSvgFillMatcherDatum<D>> */
   trait RadarSvgProps[D /* <: Record[String, Any] */] extends StObject {
     
     var animate: js.UndefOr[Boolean] = js.undefined
@@ -795,9 +795,7 @@ object distTypesTypesMod {
     
     var maxValue: js.UndefOr[Double | auto] = js.undefined
     
-    var motionConfig: js.UndefOr[
-        String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringConfig */ Any)
-      ] = js.undefined
+    var motionConfig: js.UndefOr[String | SpringConfig] = js.undefined
     
     var renderWrapper: js.UndefOr[Boolean] = js.undefined
     
@@ -981,9 +979,7 @@ object distTypesTypesMod {
       
       inline def setMaxValueUndefined: Self = StObject.set(x, "maxValue", js.undefined)
       
-      inline def setMotionConfig(
-        value: String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringConfig */ Any)
-      ): Self = StObject.set(x, "motionConfig", value.asInstanceOf[js.Any])
+      inline def setMotionConfig(value: String | SpringConfig): Self = StObject.set(x, "motionConfig", value.asInstanceOf[js.Any])
       
       inline def setMotionConfigUndefined: Self = StObject.set(x, "motionConfig", js.undefined)
       

@@ -17,6 +17,8 @@ trait PartialIEffectLayerOption extends StObject {
   
   var mainTextureRatio: js.UndefOr[Double] = js.undefined
   
+  var mainTextureType: js.UndefOr[Double] = js.undefined
+  
   var renderingGroupId: js.UndefOr[Double] = js.undefined
 }
 object PartialIEffectLayerOption {
@@ -46,6 +48,10 @@ object PartialIEffectLayerOption {
     inline def setMainTextureRatio(value: Double): Self = StObject.set(x, "mainTextureRatio", value.asInstanceOf[js.Any])
     
     inline def setMainTextureRatioUndefined: Self = StObject.set(x, "mainTextureRatio", js.undefined)
+    
+    inline def setMainTextureType(value: Double): Self = StObject.set(x, "mainTextureType", value.asInstanceOf[js.Any])
+    
+    inline def setMainTextureTypeUndefined: Self = StObject.set(x, "mainTextureType", js.undefined)
     
     inline def setRenderingGroupId(value: Double): Self = StObject.set(x, "renderingGroupId", value.asInstanceOf[js.Any])
     

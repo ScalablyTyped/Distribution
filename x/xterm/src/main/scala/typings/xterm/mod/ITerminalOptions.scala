@@ -15,8 +15,7 @@ trait ITerminalOptions extends StObject {
   
   /**
     * Whether to allow the use of proposed API. When false, any usage of APIs
-    * marked as experimental/proposed will throw an error. This defaults to
-    * true currently, but will change to false in v5.0.
+    * marked as experimental/proposed will throw an error. The default is false.
     */
   var allowProposedApi: js.UndefOr[Boolean] = js.undefined
   
@@ -119,9 +118,14 @@ trait ITerminalOptions extends StObject {
   
   /**
     * The handler for OSC 8 hyperlinks. Links will use the `confirm` browser
-    * API if no link handler is set. Consider the security of users when using
-    * this, there should be some tooltip or prompt when hovering or activating
-    * the link.
+    * API with a strongly worded warning if no link handler is set.
+    *
+    * When setting this, consider the security of users opening these links,
+    * at a minimum there should be a tooltip or a prompt when hovering or
+    * activating the link respectively. An example of what might be possible is
+    * a terminal app writing link in the form `javascript:...` that runs some
+    * javascript, a safe approach to prevent that is to validate the link
+    * starts with http(s)://.
     */
   var linkHandler: js.UndefOr[ILinkHandler | Null] = js.undefined
   
@@ -181,6 +185,12 @@ trait ITerminalOptions extends StObject {
     * on macOS.
     */
   var screenReaderMode: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Whether to scroll to the bottom whenever there is some user input. The
+    * default is true.
+    */
+  var scrollOnUserInput: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The scrolling speed multiplier used for adjusting normal scrolling speed.
@@ -353,6 +363,10 @@ object ITerminalOptions {
     inline def setScreenReaderMode(value: Boolean): Self = StObject.set(x, "screenReaderMode", value.asInstanceOf[js.Any])
     
     inline def setScreenReaderModeUndefined: Self = StObject.set(x, "screenReaderMode", js.undefined)
+    
+    inline def setScrollOnUserInput(value: Boolean): Self = StObject.set(x, "scrollOnUserInput", value.asInstanceOf[js.Any])
+    
+    inline def setScrollOnUserInputUndefined: Self = StObject.set(x, "scrollOnUserInput", js.undefined)
     
     inline def setScrollSensitivity(value: Double): Self = StObject.set(x, "scrollSensitivity", value.asInstanceOf[js.Any])
     

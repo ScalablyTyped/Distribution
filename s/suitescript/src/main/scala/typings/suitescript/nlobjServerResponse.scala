@@ -10,8 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @classDescription Contains the results of a server response to an outbound Http(s) call.
   * @return {nlobjServerResponse}
-  * @constructor
-  *
   * @since 2008.1
   */
 @js.native

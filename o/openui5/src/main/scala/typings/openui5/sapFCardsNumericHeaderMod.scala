@@ -1,5 +1,6 @@
 package typings.openui5
 
+import typings.openui5.anon.Level
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapFCardsBaseHeaderMod.BaseHeaderSettings
 import typings.openui5.sapFLibraryMod.cards.IHeader
@@ -237,6 +238,8 @@ object sapFCardsNumericHeaderMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * This method is a hook for the RenderManager that gets called during the rendering of child Controls.
       * It allows to add, remove and update existing accessibility attributes (ARIA) of those controls.
       */
@@ -248,10 +251,12 @@ object sapFCardsNumericHeaderMod {
       /**
       * The mapping of "aria-" prefixed attributes
       */
-    mAriaProps: js.Object
+    mAriaProps: Level
     ): Unit = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:press press} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -293,6 +298,19 @@ object sapFCardsNumericHeaderMod {
       * @returns Value of property `number`
       */
     def getNumber(): String = js.native
+    
+    /**
+      * @SINCE 1.109
+      *
+      * Gets current value of property {@link #getNumberVisible numberVisible}.
+      *
+      * Whether the main numeric indicator is visible or not
+      *
+      * Default value is `true`.
+      *
+      * @returns Value of property `numberVisible`
+      */
+    def getNumberVisible(): Boolean = js.native
     
     /**
       * Gets current value of property {@link #getScale scale}.
@@ -522,6 +540,25 @@ object sapFCardsNumericHeaderMod {
     sNumber: String): this.type = js.native
     
     /**
+      * @SINCE 1.109
+      *
+      * Sets a new value for property {@link #getNumberVisible numberVisible}.
+      *
+      * Whether the main numeric indicator is visible or not
+      *
+      * When called with a value of `null` or `undefined`, the default value of the property will be restored.
+      *
+      * Default value is `true`.
+      *
+      * @returns Reference to `this` in order to allow method chaining
+      */
+    def setNumberVisible(): this.type = js.native
+    def setNumberVisible(/**
+      * New value for property `numberVisible`
+      */
+    bNumberVisible: Boolean): this.type = js.native
+    
+    /**
       * Sets a new value for property {@link #getScale scale}.
       *
       * Defines the unit of measurement (scaling prefix) for the main indicator. Financial characters can be
@@ -732,6 +769,15 @@ object sapFCardsNumericHeaderMod {
     var number: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
+      * @SINCE 1.109
+      *
+      * Whether the main numeric indicator is visible or not
+      */
+    var numberVisible: js.UndefOr[
+        Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)
+      ] = js.undefined
+    
+    /**
       * Fires when the user presses the control.
       */
     var press: js.UndefOr[js.Function1[/* oEvent */ typings.openui5.sapUiBaseEventMod.default, Unit]] = js.undefined
@@ -830,6 +876,10 @@ object sapFCardsNumericHeaderMod {
       inline def setNumber(value: String | PropertyBindingInfo): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
       
       inline def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
+      
+      inline def setNumberVisible(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "numberVisible", value.asInstanceOf[js.Any])
+      
+      inline def setNumberVisibleUndefined: Self = StObject.set(x, "numberVisible", js.undefined)
       
       inline def setPress(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "press", js.Any.fromFunction1(value))
       

@@ -3,7 +3,6 @@ package typings.angularDevkitSchematics
 import typings.angularDevkitCore.srcVirtualFsHostInterfaceMod.Host
 import typings.angularDevkitCore.srcVirtualFsPathMod.Path_
 import typings.angularDevkitSchematics.srcSinkSinkMod.SimpleSinkBase
-import typings.angularDevkitSchematics.srcUtilityUpdateBufferMod.UpdateBufferBase
 import typings.node.bufferMod.global.Buffer
 import typings.rxjs.mod.Observable_
 import typings.std.Map
@@ -24,13 +23,13 @@ object srcSinkHostMod {
     
     /* protected */ def _deleteFile(path: Path_): Observable_[Unit] = js.native
     
-    /* protected */ var _filesToCreate: Map[Path_, UpdateBufferBase] = js.native
+    /* protected */ var _filesToCreate: Map[Path_, Buffer] = js.native
     
     /* protected */ var _filesToDelete: Set[Path_] = js.native
     
     /* protected */ var _filesToRename: Set[js.Tuple2[Path_, Path_]] = js.native
     
-    /* protected */ var _filesToUpdate: Map[Path_, UpdateBufferBase] = js.native
+    /* protected */ var _filesToUpdate: Map[Path_, Buffer] = js.native
     
     /* protected */ var _force: Boolean = js.native
     

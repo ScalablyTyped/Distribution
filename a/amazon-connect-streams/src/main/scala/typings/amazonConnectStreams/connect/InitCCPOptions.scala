@@ -6,6 +6,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait InitCCPOptions extends StObject {
   
+  /** A timeout in ms that indicates how long streams will wait for the iframed CCP to respond to its SYNCHRONIZE event emissions. These happen continuously from the first time initCCP is called. They should only appear when there is a problem that requires a refresh or a re-login */
+  val ccpAckTimeout: js.UndefOr[Double] = js.undefined
+  
+  /** A timeout in ms that indicates how long streams will wait for the initial ACKNOWLEDGE event from the shared worker while the CCP is still standing itself up. */
+  val ccpLoadTimeout: js.UndefOr[Double] = js.undefined
+  
+  /** A timeout in ms that indicates how long streams will wait to send a new SYNCHRONIZE event to the iframed CCP. These happens continuously from the first time initCCP is called. */
+  val ccpSynTimeout: js.UndefOr[Double] = js.undefined
+  
   /**
     * The URL of the CCP.
     * This is the page you would normally navigate to in order to use the CCP in a standalone page, it is different for each instance.
@@ -44,7 +53,7 @@ trait InitCCPOptions extends StObject {
   /** Allows custom URL to be used to initiate the ccp, as in the case of SAML authentication. */
   val loginUrl: js.UndefOr[String] = js.undefined
   
-  /** Allows you to configure which configuration sections are displayed in the settings tab.  **/
+  /** Allows you to configure which configuration sections are displayed in the settings tab. **/
   val pageOptions: js.UndefOr[PageOptions] = js.undefined
   
   /**
@@ -65,6 +74,18 @@ object InitCCPOptions {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: InitCCPOptions] (val x: Self) extends AnyVal {
+    
+    inline def setCcpAckTimeout(value: Double): Self = StObject.set(x, "ccpAckTimeout", value.asInstanceOf[js.Any])
+    
+    inline def setCcpAckTimeoutUndefined: Self = StObject.set(x, "ccpAckTimeout", js.undefined)
+    
+    inline def setCcpLoadTimeout(value: Double): Self = StObject.set(x, "ccpLoadTimeout", value.asInstanceOf[js.Any])
+    
+    inline def setCcpLoadTimeoutUndefined: Self = StObject.set(x, "ccpLoadTimeout", js.undefined)
+    
+    inline def setCcpSynTimeout(value: Double): Self = StObject.set(x, "ccpSynTimeout", value.asInstanceOf[js.Any])
+    
+    inline def setCcpSynTimeoutUndefined: Self = StObject.set(x, "ccpSynTimeout", js.undefined)
     
     inline def setCcpUrl(value: String): Self = StObject.set(x, "ccpUrl", value.asInstanceOf[js.Any])
     

@@ -17,6 +17,16 @@ trait OpenZFSVolumeConfiguration extends StObject {
   var DataCompressionType: js.UndefOr[OpenZFSDataCompressionType] = js.undefined
   
   /**
+    * A Boolean value indicating whether dependent clone volumes created from intermediate snapshots should be deleted when a volume is restored from snapshot.
+    */
+  var DeleteClonedVolumes: js.UndefOr[Flag] = js.undefined
+  
+  /**
+    * A Boolean value indicating whether snapshots between the current state and the specified snapshot should be deleted when a volume is restored from snapshot.
+    */
+  var DeleteIntermediateSnaphots: js.UndefOr[Flag] = js.undefined
+  
+  /**
     * The configuration object for mounting a Network File System (NFS) file system.
     */
   var NfsExports: js.UndefOr[OpenZFSNfsExports] = js.undefined
@@ -40,6 +50,11 @@ trait OpenZFSVolumeConfiguration extends StObject {
     * The record size of an OpenZFS volume, in kibibytes (KiB). Valid values are 4, 8, 16, 32, 64, 128, 256, 512, or 1024 KiB. The default is 128 KiB. Most workloads should use the default record size. For guidance on when to set a custom record size, see the Amazon FSx for OpenZFS User Guide.
     */
   var RecordSizeKiB: js.UndefOr[IntegerRecordSizeKiB] = js.undefined
+  
+  /**
+    * Specifies the ID of the snapshot to which the volume was restored.
+    */
+  var RestoreToSnapshot: js.UndefOr[SnapshotId] = js.undefined
   
   /**
     * The maximum amount of storage in gibibtyes (GiB) that the volume can use from its parent. You can specify a quota larger than the storage on the parent volume.
@@ -79,6 +94,14 @@ object OpenZFSVolumeConfiguration {
     
     inline def setDataCompressionTypeUndefined: Self = StObject.set(x, "DataCompressionType", js.undefined)
     
+    inline def setDeleteClonedVolumes(value: Flag): Self = StObject.set(x, "DeleteClonedVolumes", value.asInstanceOf[js.Any])
+    
+    inline def setDeleteClonedVolumesUndefined: Self = StObject.set(x, "DeleteClonedVolumes", js.undefined)
+    
+    inline def setDeleteIntermediateSnaphots(value: Flag): Self = StObject.set(x, "DeleteIntermediateSnaphots", value.asInstanceOf[js.Any])
+    
+    inline def setDeleteIntermediateSnaphotsUndefined: Self = StObject.set(x, "DeleteIntermediateSnaphots", js.undefined)
+    
     inline def setNfsExports(value: OpenZFSNfsExports): Self = StObject.set(x, "NfsExports", value.asInstanceOf[js.Any])
     
     inline def setNfsExportsUndefined: Self = StObject.set(x, "NfsExports", js.undefined)
@@ -100,6 +123,10 @@ object OpenZFSVolumeConfiguration {
     inline def setRecordSizeKiB(value: IntegerRecordSizeKiB): Self = StObject.set(x, "RecordSizeKiB", value.asInstanceOf[js.Any])
     
     inline def setRecordSizeKiBUndefined: Self = StObject.set(x, "RecordSizeKiB", js.undefined)
+    
+    inline def setRestoreToSnapshot(value: SnapshotId): Self = StObject.set(x, "RestoreToSnapshot", value.asInstanceOf[js.Any])
+    
+    inline def setRestoreToSnapshotUndefined: Self = StObject.set(x, "RestoreToSnapshot", js.undefined)
     
     inline def setStorageCapacityQuotaGiB(value: IntegerNoMax): Self = StObject.set(x, "StorageCapacityQuotaGiB", value.asInstanceOf[js.Any])
     

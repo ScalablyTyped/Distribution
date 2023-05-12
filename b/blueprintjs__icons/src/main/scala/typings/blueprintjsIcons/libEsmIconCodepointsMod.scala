@@ -1,6 +1,6 @@
 package typings.blueprintjsIcons
 
-import typings.blueprintjsIcons.libEsmGenerated16pxBlueprintIcons16Mod.BlueprintIcons16Id
+import typings.blueprintjsIcons.libEsmGeneratedIcons16pxBlueprintIcons16Mod.BlueprintIcons16Id
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -301,6 +301,11 @@ object libEsmIconCodepointsMod {
     def automaticUpdates: String = js.native
     
     inline def automaticUpdates_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("automatic-updates")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@blueprintjs/icons/lib/esm/iconCodepoints", "IconCodepoints.axle")
+    @js.native
+    def axle: String = js.native
+    inline def axle_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("axle")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/icons/lib/esm/iconCodepoints", "IconCodepoints.backlink")
     @js.native
@@ -640,6 +645,13 @@ object libEsmIconCodepointsMod {
     @JSImport("@blueprintjs/icons/lib/esm/iconCodepoints", "IconCodepoints.cross")
     @js.native
     def cross: String = js.native
+    
+    @JSImport("@blueprintjs/icons/lib/esm/iconCodepoints", "IconCodepoints.cross-circle")
+    @js.native
+    def crossCircle: String = js.native
+    
+    inline def crossCircle_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cross-circle")(x.asInstanceOf[js.Any])
+    
     inline def cross_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cross")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/icons/lib/esm/iconCodepoints", "IconCodepoints.crown")
@@ -1545,6 +1557,11 @@ object libEsmIconCodepointsMod {
     def insert: String = js.native
     inline def insert_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("insert")(x.asInstanceOf[js.Any])
     
+    @JSImport("@blueprintjs/icons/lib/esm/iconCodepoints", "IconCodepoints.intelligence")
+    @js.native
+    def intelligence: String = js.native
+    inline def intelligence_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("intelligence")(x.asInstanceOf[js.Any])
+    
     @JSImport("@blueprintjs/icons/lib/esm/iconCodepoints", "IconCodepoints.intersection")
     @js.native
     def intersection: String = js.native
@@ -1810,6 +1827,11 @@ object libEsmIconCodepointsMod {
     def lock: String = js.native
     inline def lock_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lock")(x.asInstanceOf[js.Any])
     
+    @JSImport("@blueprintjs/icons/lib/esm/iconCodepoints", "IconCodepoints.locomotive")
+    @js.native
+    def locomotive: String = js.native
+    inline def locomotive_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("locomotive")(x.asInstanceOf[js.Any])
+    
     @JSImport("@blueprintjs/icons/lib/esm/iconCodepoints", "IconCodepoints.log-in")
     @js.native
     def logIn: String = js.native
@@ -1942,6 +1964,11 @@ object libEsmIconCodepointsMod {
     inline def modalFilled_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("modal-filled")(x.asInstanceOf[js.Any])
     
     inline def modal_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("modal")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@blueprintjs/icons/lib/esm/iconCodepoints", "IconCodepoints.model")
+    @js.native
+    def model: String = js.native
+    inline def model_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("model")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/icons/lib/esm/iconCodepoints", "IconCodepoints.moon")
     @js.native
@@ -2513,6 +2540,11 @@ object libEsmIconCodepointsMod {
     
     inline def sendTo_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("send-to")(x.asInstanceOf[js.Any])
     
+    @JSImport("@blueprintjs/icons/lib/esm/iconCodepoints", "IconCodepoints.sensor")
+    @js.native
+    def sensor: String = js.native
+    inline def sensor_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sensor")(x.asInstanceOf[js.Any])
+    
     @JSImport("@blueprintjs/icons/lib/esm/iconCodepoints", "IconCodepoints.series-add")
     @js.native
     def seriesAdd: String = js.native
@@ -2763,6 +2795,16 @@ object libEsmIconCodepointsMod {
     @js.native
     def style: String = js.native
     inline def style_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("style")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@blueprintjs/icons/lib/esm/iconCodepoints", "IconCodepoints.subscript")
+    @js.native
+    def subscript: String = js.native
+    inline def subscript_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("subscript")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@blueprintjs/icons/lib/esm/iconCodepoints", "IconCodepoints.superscript")
+    @js.native
+    def superscript: String = js.native
+    inline def superscript_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("superscript")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/icons/lib/esm/iconCodepoints", "IconCodepoints.swap-horizontal")
     @js.native

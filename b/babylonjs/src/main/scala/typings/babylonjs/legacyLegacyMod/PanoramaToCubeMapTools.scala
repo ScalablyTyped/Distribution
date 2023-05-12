@@ -31,6 +31,13 @@ object PanoramaToCubeMapTools {
     * @returns The cubemap data
     */
   inline def ConvertPanoramaToCubemap(float32Array: js.typedarray.Float32Array, inputWidth: Double, inputHeight: Double, size: Double): CubeMapInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("ConvertPanoramaToCubemap")(float32Array.asInstanceOf[js.Any], inputWidth.asInstanceOf[js.Any], inputHeight.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[CubeMapInfo]
+  inline def ConvertPanoramaToCubemap(
+    float32Array: js.typedarray.Float32Array,
+    inputWidth: Double,
+    inputHeight: Double,
+    size: Double,
+    supersample: Boolean
+  ): CubeMapInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("ConvertPanoramaToCubemap")(float32Array.asInstanceOf[js.Any], inputWidth.asInstanceOf[js.Any], inputHeight.asInstanceOf[js.Any], size.asInstanceOf[js.Any], supersample.asInstanceOf[js.Any])).asInstanceOf[CubeMapInfo]
   
   @JSImport("babylonjs/Legacy/legacy", "PanoramaToCubeMapTools.CreateCubemapTexture")
   @js.native

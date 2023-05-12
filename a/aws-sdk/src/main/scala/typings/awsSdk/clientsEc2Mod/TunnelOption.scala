@@ -17,6 +17,11 @@ trait TunnelOption extends StObject {
   var DpdTimeoutSeconds: js.UndefOr[Integer] = js.undefined
   
   /**
+    * Status of tunnel endpoint lifecycle control feature.
+    */
+  var EnableTunnelLifecycleControl: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * The IKE versions that are permitted for the VPN tunnel.
     */
   var IkeVersions: js.UndefOr[IKEVersionsList] = js.undefined
@@ -123,6 +128,10 @@ object TunnelOption {
     inline def setDpdTimeoutSeconds(value: Integer): Self = StObject.set(x, "DpdTimeoutSeconds", value.asInstanceOf[js.Any])
     
     inline def setDpdTimeoutSecondsUndefined: Self = StObject.set(x, "DpdTimeoutSeconds", js.undefined)
+    
+    inline def setEnableTunnelLifecycleControl(value: Boolean): Self = StObject.set(x, "EnableTunnelLifecycleControl", value.asInstanceOf[js.Any])
+    
+    inline def setEnableTunnelLifecycleControlUndefined: Self = StObject.set(x, "EnableTunnelLifecycleControl", js.undefined)
     
     inline def setIkeVersions(value: IKEVersionsList): Self = StObject.set(x, "IkeVersions", value.asInstanceOf[js.Any])
     

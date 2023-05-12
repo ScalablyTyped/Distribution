@@ -17,9 +17,21 @@ trait ManagedSkottieAnimation
   
   def getTextProps(): js.Array[TextProperty] = js.native
   
+  def getTransformProps(): js.Array[TransformProperty] = js.native
+  
   def setColor(key: String, color: InputColor): Boolean = js.native
   
   def setOpacity(key: String, opacity: Double): Boolean = js.native
   
   def setText(key: String, text: String, size: Double): Boolean = js.native
+  
+  def setTransform(
+    key: String,
+    anchor: InputPoint,
+    position: InputPoint,
+    scale: InputVector2,
+    rotation: Double,
+    skew: Double,
+    skew_axis: Double
+  ): Boolean = js.native
 }

@@ -18,6 +18,7 @@ open class CommandFailedEvent () extends StObject {
   
   var failure: js.Error = js.native
   
+  /* Excluded from this release type: name */
   /* Excluded from this release type: __constructor */
   def hasServiceId: Boolean = js.native
   

@@ -34,6 +34,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   ] = js.undefined
   
   /**
+    * Not available
+    */
+  var dataParser: Unit
+  
+  /**
+    * Not available
+    */
+  var dataURL: Unit
+  
+  /**
     * (Highcharts, Highstock, Highmaps, Gantt) An id for the series. This can
     * be used after render time to get a pointer to the series object through
     * `chart.get()`.
@@ -100,8 +110,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object SeriesBulletOptions {
   
-  inline def apply(`type`: String | bullet): SeriesBulletOptions = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(dataParser: Unit, dataURL: Unit, `type`: String | bullet): SeriesBulletOptions = {
+    val __obj = js.Dynamic.literal(dataParser = dataParser.asInstanceOf[js.Any], dataURL = dataURL.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeriesBulletOptions]
   }
@@ -114,6 +124,10 @@ object SeriesBulletOptions {
           (js.Tuple2[Double | String, Double]) | (js.Tuple3[Double | String, Double, Double]) | PointOptionsObject
         ]
     ): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataParser(value: Unit): Self = StObject.set(x, "dataParser", value.asInstanceOf[js.Any])
+    
+    inline def setDataURL(value: Unit): Self = StObject.set(x, "dataURL", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     

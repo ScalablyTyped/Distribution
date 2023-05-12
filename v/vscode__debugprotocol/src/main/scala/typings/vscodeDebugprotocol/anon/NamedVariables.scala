@@ -30,9 +30,7 @@ trait NamedVariables extends StObject {
   /** The new value of the expression. */
   var value: String
   
-  /** If variablesReference is > 0, the value is structured and its children can be retrieved by passing variablesReference to the VariablesRequest.
-  				The value should be less than or equal to 2147483647 (2^31-1).
-  			*/
+  /** If `variablesReference` is > 0, the evaluate result is structured and its children can be retrieved by passing `variablesReference` to the `variables` request as long as execution remains suspended. See 'Lifetime of Object References' in the Overview section for details. */
   var variablesReference: js.UndefOr[Double] = js.undefined
 }
 object NamedVariables {

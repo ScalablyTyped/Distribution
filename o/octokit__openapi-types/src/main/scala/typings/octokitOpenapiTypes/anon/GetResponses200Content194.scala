@@ -6,7 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GetResponses200Content194 extends StObject {
   
-  /** Checks the repository permission of a collaborator. The possible repository permissions are `admin`, `write`, `read`, and `none`. */
+  /**
+    * List CodeQL databases for a repository
+    * @description Lists the CodeQL databases that are available in a repository.
+    *
+    * For private repositories, you must use an access token with the `security_events` scope.
+    * For public repositories, you can use tokens with the `security_events` or `public_repo` scope.
+    * GitHub Apps must have the `contents` read permission to use this endpoint.
+    */
   var get: Responses200Content194
 }
 object GetResponses200Content194 {

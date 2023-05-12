@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class DataTransferItem protected ()
   extends typings.vscode.mod.DataTransferItem {
   /**
-    * @param value Custom data stored on this item. Can be retrieved using {@linkcode DataTransferItem.value}.
-    */
+  		 * @param value Custom data stored on this item. Can be retrieved using {@linkcode DataTransferItem.value}.
+  		 */
   def this(value: Any) = this()
 }

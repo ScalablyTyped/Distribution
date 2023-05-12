@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@expo/spawn-async" : "1.7.0"
+      "@expo/spawn-async" : "1.7.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@expo/spawn-async" : "1.7.0"
+      "@expo/spawn-async" : "1.7.2"
     }
   ],
   "compile-devDependencies" : [

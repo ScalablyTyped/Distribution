@@ -1,7 +1,7 @@
 
 # Scala.js typings for country-flag-icons
 
-Typings are for version 1.5.5
+Typings are for version 1.5.7
 
 ## Library description:
 Vector (*.svg) country flag icons in 3x2 aspect ratio.

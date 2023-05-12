@@ -11,6 +11,18 @@ sealed trait ContactStateType extends StObject
 @js.native
 object ContactStateType extends StObject {
   
+  /** Indicates the contact acw. */
+  @js.native
+  sealed trait ACW
+    extends StObject
+       with ContactStateType
+  
+  /** Indicates the contact has cleared. */
+  @js.native
+  sealed trait CLEARED
+    extends StObject
+       with ContactStateType
+  
   /** Indicates the contact is connected. */
   @js.native
   sealed trait CONNECTED

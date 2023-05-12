@@ -31,8 +31,8 @@ object geomFlatDeflateMod {
     offset: Double,
     coordinatess: js.Array[js.Array[Coordinate]],
     stride: Double,
-    opt_ends: js.Array[Double]
-  ): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("deflateCoordinatesArray")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], coordinatess.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], opt_ends.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    ends: js.Array[Double]
+  ): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("deflateCoordinatesArray")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], coordinatess.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], ends.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
   inline def deflateMultiCoordinatesArray(
     flatCoordinates: js.Array[Double],
@@ -45,6 +45,6 @@ object geomFlatDeflateMod {
     offset: Double,
     coordinatesss: js.Array[js.Array[js.Array[Coordinate]]],
     stride: Double,
-    opt_endss: js.Array[js.Array[Double]]
-  ): js.Array[js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("deflateMultiCoordinatesArray")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], coordinatesss.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], opt_endss.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Array[Double]]]
+    endss: js.Array[js.Array[Double]]
+  ): js.Array[js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("deflateMultiCoordinatesArray")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], coordinatesss.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], endss.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Array[Double]]]
 }

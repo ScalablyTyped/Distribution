@@ -8,18 +8,14 @@ trait Responses200ContentApplicationjsonDownloadcount extends StObject {
   
   var parameters: PathAssetidOwner
   
-  var requestBody: ContentApplicationjsonLabel
+  var requestBody: js.UndefOr[ContentApplicationjsonLabel] = js.undefined
   
   var responses: `200ContentApplicationjsonDownloadcount`
 }
 object Responses200ContentApplicationjsonDownloadcount {
   
-  inline def apply(
-    parameters: PathAssetidOwner,
-    requestBody: ContentApplicationjsonLabel,
-    responses: `200ContentApplicationjsonDownloadcount`
-  ): Responses200ContentApplicationjsonDownloadcount = {
-    val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], requestBody = requestBody.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
+  inline def apply(parameters: PathAssetidOwner, responses: `200ContentApplicationjsonDownloadcount`): Responses200ContentApplicationjsonDownloadcount = {
+    val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[Responses200ContentApplicationjsonDownloadcount]
   }
   
@@ -29,6 +25,8 @@ object Responses200ContentApplicationjsonDownloadcount {
     inline def setParameters(value: PathAssetidOwner): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     inline def setRequestBody(value: ContentApplicationjsonLabel): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    
+    inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
     
     inline def setResponses(value: `200ContentApplicationjsonDownloadcount`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }

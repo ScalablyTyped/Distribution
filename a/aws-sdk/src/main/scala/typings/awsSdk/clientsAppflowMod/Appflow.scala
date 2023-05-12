@@ -11,6 +11,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Appflow extends Service {
   
+  /**
+    * Cancels active runs for a flow. You can cancel all of the active runs for a flow, or you can cancel specific runs by providing their IDs. You can cancel a flow run only when the run is in progress. You can't cancel a run that has already completed or failed. You also can't cancel a run that's scheduled to occur but hasn't started yet. To prevent a scheduled run, you can deactivate the flow with the StopFlow action. You cannot resume a run after you cancel it. When you send your request, the status for each run becomes CancelStarted. When the cancellation completes, the status becomes Canceled.  When you cancel a run, you still incur charges for any data that the run already processed before the cancellation. If the run had already written some data to the flow destination, then that data remains in the destination. If you configured the flow to use a batch API (such as the Salesforce Bulk API 2.0), then the run will finish reading or writing its entire batch of data after the cancellation. For these operations, the data processing charges for Amazon AppFlow apply. For the pricing information, see Amazon AppFlow pricing. 
+    */
+  def cancelFlowExecutions(): Request[CancelFlowExecutionsResponse, AWSError] = js.native
+  def cancelFlowExecutions(callback: js.Function2[/* err */ AWSError, /* data */ CancelFlowExecutionsResponse, Unit]): Request[CancelFlowExecutionsResponse, AWSError] = js.native
+  /**
+    * Cancels active runs for a flow. You can cancel all of the active runs for a flow, or you can cancel specific runs by providing their IDs. You can cancel a flow run only when the run is in progress. You can't cancel a run that has already completed or failed. You also can't cancel a run that's scheduled to occur but hasn't started yet. To prevent a scheduled run, you can deactivate the flow with the StopFlow action. You cannot resume a run after you cancel it. When you send your request, the status for each run becomes CancelStarted. When the cancellation completes, the status becomes Canceled.  When you cancel a run, you still incur charges for any data that the run already processed before the cancellation. If the run had already written some data to the flow destination, then that data remains in the destination. If you configured the flow to use a batch API (such as the Salesforce Bulk API 2.0), then the run will finish reading or writing its entire batch of data after the cancellation. For these operations, the data processing charges for Amazon AppFlow apply. For the pricing information, see Amazon AppFlow pricing. 
+    */
+  def cancelFlowExecutions(params: CancelFlowExecutionsRequest): Request[CancelFlowExecutionsResponse, AWSError] = js.native
+  def cancelFlowExecutions(
+    params: CancelFlowExecutionsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CancelFlowExecutionsResponse, Unit]
+  ): Request[CancelFlowExecutionsResponse, AWSError] = js.native
+  
   @JSName("config")
   var config_Appflow: ConfigBase & ClientConfiguration = js.native
   
@@ -211,12 +225,12 @@ trait Appflow extends Service {
   ): Request[ListTagsForResourceResponse, AWSError] = js.native
   
   /**
-    * Registers a new connector with your Amazon Web Services account. Before you can register the connector, you must deploy lambda in your account.
+    * Registers a new custom connector with your Amazon Web Services account. Before you can register the connector, you must deploy the associated AWS lambda function in your account.
     */
   def registerConnector(): Request[RegisterConnectorResponse, AWSError] = js.native
   def registerConnector(callback: js.Function2[/* err */ AWSError, /* data */ RegisterConnectorResponse, Unit]): Request[RegisterConnectorResponse, AWSError] = js.native
   /**
-    * Registers a new connector with your Amazon Web Services account. Before you can register the connector, you must deploy lambda in your account.
+    * Registers a new custom connector with your Amazon Web Services account. Before you can register the connector, you must deploy the associated AWS lambda function in your account.
     */
   def registerConnector(params: RegisterConnectorRequest): Request[RegisterConnectorResponse, AWSError] = js.native
   def registerConnector(
@@ -267,12 +281,12 @@ trait Appflow extends Service {
   ): Request[TagResourceResponse, AWSError] = js.native
   
   /**
-    * Unregisters the custom connector registered in your account that matches the connectorLabel provided in the request.
+    * Unregisters the custom connector registered in your account that matches the connector label provided in the request.
     */
   def unregisterConnector(): Request[UnregisterConnectorResponse, AWSError] = js.native
   def unregisterConnector(callback: js.Function2[/* err */ AWSError, /* data */ UnregisterConnectorResponse, Unit]): Request[UnregisterConnectorResponse, AWSError] = js.native
   /**
-    * Unregisters the custom connector registered in your account that matches the connectorLabel provided in the request.
+    * Unregisters the custom connector registered in your account that matches the connector label provided in the request.
     */
   def unregisterConnector(params: UnregisterConnectorRequest): Request[UnregisterConnectorResponse, AWSError] = js.native
   def unregisterConnector(
@@ -307,6 +321,20 @@ trait Appflow extends Service {
     params: UpdateConnectorProfileRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateConnectorProfileResponse, Unit]
   ): Request[UpdateConnectorProfileResponse, AWSError] = js.native
+  
+  /**
+    * Updates a custom connector that you've previously registered. This operation updates the connector with one of the following:   The latest version of the AWS Lambda function that's assigned to the connector   A new AWS Lambda function that you specify  
+    */
+  def updateConnectorRegistration(): Request[UpdateConnectorRegistrationResponse, AWSError] = js.native
+  def updateConnectorRegistration(callback: js.Function2[/* err */ AWSError, /* data */ UpdateConnectorRegistrationResponse, Unit]): Request[UpdateConnectorRegistrationResponse, AWSError] = js.native
+  /**
+    * Updates a custom connector that you've previously registered. This operation updates the connector with one of the following:   The latest version of the AWS Lambda function that's assigned to the connector   A new AWS Lambda function that you specify  
+    */
+  def updateConnectorRegistration(params: UpdateConnectorRegistrationRequest): Request[UpdateConnectorRegistrationResponse, AWSError] = js.native
+  def updateConnectorRegistration(
+    params: UpdateConnectorRegistrationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateConnectorRegistrationResponse, Unit]
+  ): Request[UpdateConnectorRegistrationResponse, AWSError] = js.native
   
   /**
     *  Updates an existing flow. 

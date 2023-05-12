@@ -4,7 +4,7 @@ import typings.typescript.mod.AsteriskToken
 import typings.typescript.mod.ExclamationToken
 import typings.typescript.mod.FunctionBody
 import typings.typescript.mod.Identifier
-import typings.typescript.mod.Modifier
+import typings.typescript.mod.ModifierLike
 import typings.typescript.mod.Node
 import typings.typescript.mod.NodeArray
 import typings.typescript.mod.NodeFlags
@@ -27,23 +27,15 @@ trait ClassDeclarationFunctionD extends StObject {
   
   var _functionLikeDeclarationBrand: Any = js.native
   
+  var _jsdocContainerBrand: Any = js.native
+  
+  var _localsContainerBrand: Any = js.native
+  
   var _statementBrand: Any = js.native
   
   val asteriskToken: js.UndefOr[AsteriskToken] = js.native
   
   val body: js.UndefOr[FunctionBody] = js.native
-  
-  /**
-    * @deprecated `decorators` has been removed from `Node` and merged with `modifiers` on the `Node` subtypes that support them.
-    * Use `ts.canHaveDecorators()` to test whether a `Node` can have decorators.
-    * Use `ts.getDecorators()` to get the decorators of a `Node`.
-    *
-    * For example:
-    * ```ts
-    * const decorators = ts.canHaveDecorators(node) ? ts.getDecorators(node) : undefined;
-    * ```
-    */
-  val decorators: Unit = js.native
   
   val end: Double = js.native
   
@@ -99,7 +91,7 @@ trait ClassDeclarationFunctionD extends StObject {
   
   val kind: FunctionDeclaration = js.native
   
-  val modifiers: js.UndefOr[NodeArray[Modifier]] = js.native
+  val modifiers: js.UndefOr[NodeArray[ModifierLike]] = js.native
   
   val name: js.UndefOr[Identifier] = js.native
   

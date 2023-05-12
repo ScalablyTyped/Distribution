@@ -1,7 +1,7 @@
 
 # Scala.js typings for dot-prop
 
-Typings are for version 7.2.0
+Typings are for version 8.0.0
 
 ## Library description:
 Get, set, or delete a property from a nested object using a dot path

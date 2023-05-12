@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeSpeakerEnrollmentJobRequest extends StObject {
   
   /**
-    * The identifier of the domain containing the speaker enrollment job.
+    * The identifier of the domain that contains the speaker enrollment job.
     */
   var DomainId: typings.awsSdk.clientsVoiceidMod.DomainId
   

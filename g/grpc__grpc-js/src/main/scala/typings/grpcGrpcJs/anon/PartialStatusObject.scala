@@ -6,7 +6,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Partial<@grpc/grpc-js.@grpc/grpc-js/build/src/call-stream.StatusObject> */
+/* Inlined std.Partial<@grpc/grpc-js.@grpc/grpc-js/build/src/call-interface.StatusObject> */
 trait PartialStatusObject extends StObject {
   
   var code: js.UndefOr[Status] = js.undefined

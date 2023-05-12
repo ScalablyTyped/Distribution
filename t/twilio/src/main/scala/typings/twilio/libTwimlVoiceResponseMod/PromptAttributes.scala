@@ -6,14 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PromptAttributes extends StObject {
   
+  /** attempt - Current attempt count */
   var attempt: js.UndefOr[js.Array[Double]] = js.undefined
   
+  /** cardType - Type of the credit card */
   var cardType: js.UndefOr[js.Array[PromptCardType]] = js.undefined
   
+  /** errorType - Type of error */
   var errorType: js.UndefOr[js.Array[PromptErrorType]] = js.undefined
   
-  var for_ : js.UndefOr[PromptFor] = js.undefined
+  /** for - Name of the payment source data element */
+  var `for`: js.UndefOr[PromptFor] = js.undefined
   
+  /** requireMatchingInputs - Require customer to input requested information twice and verify matching. */
   var requireMatchingInputs: js.UndefOr[Boolean] = js.undefined
 }
 object PromptAttributes {
@@ -44,9 +49,9 @@ object PromptAttributes {
     
     inline def setErrorTypeVarargs(value: PromptErrorType*): Self = StObject.set(x, "errorType", js.Array(value*))
     
-    inline def setFor_(value: PromptFor): Self = StObject.set(x, "for_", value.asInstanceOf[js.Any])
+    inline def setFor(value: PromptFor): Self = StObject.set(x, "for", value.asInstanceOf[js.Any])
     
-    inline def setFor_Undefined: Self = StObject.set(x, "for_", js.undefined)
+    inline def setForUndefined: Self = StObject.set(x, "for", js.undefined)
     
     inline def setRequireMatchingInputs(value: Boolean): Self = StObject.set(x, "requireMatchingInputs", value.asInstanceOf[js.Any])
     

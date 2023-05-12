@@ -6,16 +6,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * InfoWindowOptions object used to define the properties that can be set on a
-  * InfoWindow.
-  */
 trait InfoWindowOptions extends StObject {
   
   /**
     * AriaLabel to assign to the InfoWindow.
     */
-  var ariaLabel: js.UndefOr[String | Null] = js.undefined
+  var ariaLabel: js.UndefOr[Null | String] = js.undefined
   
   /**
     * Content to display in the InfoWindow. This can be an HTML element, a
@@ -23,14 +19,14 @@ trait InfoWindowOptions extends StObject {
     * sized according to the content. To set an explicit size for the content,
     * set content to be a HTML element with that size.
     */
-  var content: js.UndefOr[String | Null | Element | Text] = js.undefined
+  var content: js.UndefOr[Null | String | Element | Text] = js.undefined
   
   /**
     * Disable panning the map to make the InfoWindow fully visible when it
     * opens.
     * @defaultValue <code>false</code>
     */
-  var disableAutoPan: js.UndefOr[Boolean | Null] = js.undefined
+  var disableAutoPan: js.UndefOr[Null | Boolean] = js.undefined
   
   /**
     * Maximum width of the InfoWindow, regardless of content&#39;s width. This
@@ -39,7 +35,7 @@ trait InfoWindowOptions extends StObject {
     * call <code>close()</code>, <code>setOptions()</code>, and then
     * <code>open()</code>.
     */
-  var maxWidth: js.UndefOr[Double | Null] = js.undefined
+  var maxWidth: js.UndefOr[Null | Double] = js.undefined
   
   /**
     * Minimum width of the InfoWindow, regardless of the content&#39;s width.
@@ -50,7 +46,7 @@ trait InfoWindowOptions extends StObject {
     * call <code>close()</code>, <code>setOptions()</code>, and then
     * <code>open()</code>.
     */
-  var minWidth: js.UndefOr[Double | Null] = js.undefined
+  var minWidth: js.UndefOr[Null | Double] = js.undefined
   
   /**
     * The offset, in pixels, of the tip of the info window from the point on
@@ -58,13 +54,13 @@ trait InfoWindowOptions extends StObject {
     * an InfoWindow is opened with an anchor, the <code>pixelOffset</code> will
     * be calculated from the anchor&#39;s <code>anchorPoint</code> property.
     */
-  var pixelOffset: js.UndefOr[Size | Null] = js.undefined
+  var pixelOffset: js.UndefOr[Null | Size] = js.undefined
   
   /**
     * The LatLng at which to display this InfoWindow. If the InfoWindow is
     * opened with an anchor, the anchor&#39;s position will be used instead.
     */
-  var position: js.UndefOr[LatLng | Null | LatLngLiteral] = js.undefined
+  var position: js.UndefOr[Null | LatLng | LatLngLiteral] = js.undefined
   
   /**
     * All InfoWindows are displayed on the map in order of their zIndex, with
@@ -73,7 +69,7 @@ trait InfoWindowOptions extends StObject {
     * InfoWindows of lower latitudes appearing in front of InfoWindows at
     * higher latitudes. InfoWindows are always displayed in front of markers.
     */
-  var zIndex: js.UndefOr[Double | Null] = js.undefined
+  var zIndex: js.UndefOr[Null | Double] = js.undefined
 }
 object InfoWindowOptions {
   

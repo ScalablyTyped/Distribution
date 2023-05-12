@@ -1,7 +1,7 @@
 
 # Scala.js typings for memjs
 
-Typings are for version 1.2
+Typings are for version 1.3
 
 ## Library description:
 A memcache client for node using the binary protocol and SASL authentication

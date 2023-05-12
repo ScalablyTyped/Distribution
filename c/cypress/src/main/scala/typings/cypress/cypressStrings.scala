@@ -23,6 +23,7 @@ import typings.cypress.Mocha.Interface
 import typings.cypress.Mocha.Reporter
 import typings.cypress.typesNetStubbingMod.InterceptionState
 import typings.cypress.typesNetStubbingMod.Method
+import typings.cypress.typesNetStubbingMod.ResourceType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,6 +39,10 @@ object cypressStrings {
     extends StObject
        with Method
   inline def ACL: ACL = "ACL".asInstanceOf[ACL]
+  
+  @js.native
+  sealed trait AsteriskAsteriskSlashAsteriskDotcyDotts extends StObject
+  inline def AsteriskAsteriskSlashAsteriskDotcyDotts: AsteriskAsteriskSlashAsteriskDotcyDotts = "**/*.cy.ts".asInstanceOf[AsteriskAsteriskSlashAsteriskDotcyDotts]
   
   @js.native
   sealed trait BIND
@@ -445,6 +450,10 @@ object cypressStrings {
   inline def afterEach: afterEach = "afterEach".asInstanceOf[afterEach]
   
   @js.native
+  sealed trait alpha extends StObject
+  inline def alpha: alpha = "alpha".asInstanceOf[alpha]
+  
+  @js.native
   sealed trait alwaysDothaveDotbeenDotcalledOn extends StObject
   inline def alwaysDothaveDotbeenDotcalledOn: alwaysDothaveDotbeenDotcalledOn = "always.have.been.calledOn".asInstanceOf[alwaysDothaveDotbeenDotcalledOn]
   
@@ -503,6 +512,10 @@ object cypressStrings {
   @js.native
   sealed trait area extends StObject
   inline def area: area = "area".asInstanceOf[area]
+  
+  @js.native
+  sealed trait args extends StObject
+  inline def args: args = "args".asInstanceOf[args]
   
   @js.native
   sealed trait array extends StObject
@@ -957,6 +970,10 @@ object cypressStrings {
   inline def center: center = "center".asInstanceOf[center]
   
   @js.native
+  sealed trait chainerId extends StObject
+  inline def chainerId: chainerId = "chainerId".asInstanceOf[chainerId]
+  
+  @js.native
   sealed trait change extends StObject
   inline def change: change = "change".asInstanceOf[change]
   
@@ -1002,6 +1019,18 @@ object cypressStrings {
   @js.native
   sealed trait clear extends StObject
   inline def clear: clear = "clear".asInstanceOf[clear]
+  
+  @js.native
+  sealed trait clearAllCookies extends StObject
+  inline def clearAllCookies: clearAllCookies = "clearAllCookies".asInstanceOf[clearAllCookies]
+  
+  @js.native
+  sealed trait clearAllLocalStorage extends StObject
+  inline def clearAllLocalStorage: clearAllLocalStorage = "clearAllLocalStorage".asInstanceOf[clearAllLocalStorage]
+  
+  @js.native
+  sealed trait clearAllSessionStorage extends StObject
+  inline def clearAllSessionStorage: clearAllSessionStorage = "clearAllSessionStorage".asInstanceOf[clearAllSessionStorage]
   
   @js.native
   sealed trait clearCookie extends StObject
@@ -1076,6 +1105,10 @@ object cypressStrings {
   inline def commandColonstart: commandColonstart = "command:start".asInstanceOf[commandColonstart]
   
   @js.native
+  sealed trait community extends StObject
+  inline def community: community = "community".asInstanceOf[community]
+  
+  @js.native
   sealed trait component
     extends StObject
        with CypressSpecType
@@ -1141,6 +1174,12 @@ object cypressStrings {
   @js.native
   sealed trait `create-react-app` extends StObject
   inline def `create-react-app`: `create-react-app` = "create-react-app".asInstanceOf[`create-react-app`]
+  
+  @js.native
+  sealed trait cspviolationreport
+    extends StObject
+       with ResourceType
+  inline def cspviolationreport: cspviolationreport = "cspviolationreport".asInstanceOf[cspviolationreport]
   
   @js.native
   sealed trait cuechange extends StObject
@@ -1266,6 +1305,7 @@ object cypressStrings {
   sealed trait document
     extends StObject
        with PrevSubject
+       with ResourceType
   inline def document: document = "document".asInstanceOf[document]
   
   @js.native
@@ -1418,12 +1458,16 @@ object cypressStrings {
   inline def experimentalInteractiveRunEvents: experimentalInteractiveRunEvents = "experimentalInteractiveRunEvents".asInstanceOf[experimentalInteractiveRunEvents]
   
   @js.native
+  sealed trait experimentalMemoryManagement extends StObject
+  inline def experimentalMemoryManagement: experimentalMemoryManagement = "experimentalMemoryManagement".asInstanceOf[experimentalMemoryManagement]
+  
+  @js.native
   sealed trait experimentalModifyObstructiveThirdPartyCode extends StObject
   inline def experimentalModifyObstructiveThirdPartyCode: experimentalModifyObstructiveThirdPartyCode = "experimentalModifyObstructiveThirdPartyCode".asInstanceOf[experimentalModifyObstructiveThirdPartyCode]
   
   @js.native
-  sealed trait experimentalSessionAndOrigin extends StObject
-  inline def experimentalSessionAndOrigin: experimentalSessionAndOrigin = "experimentalSessionAndOrigin".asInstanceOf[experimentalSessionAndOrigin]
+  sealed trait experimentalSkipDomainInjection extends StObject
+  inline def experimentalSkipDomainInjection: experimentalSkipDomainInjection = "experimentalSkipDomainInjection".asInstanceOf[experimentalSkipDomainInjection]
   
   @js.native
   sealed trait experimentalSourceRewriting extends StObject
@@ -1456,6 +1500,12 @@ object cypressStrings {
     extends StObject
        with _Duration
   inline def fast: fast = "fast".asInstanceOf[fast]
+  
+  @js.native
+  sealed trait fetch
+    extends StObject
+       with ResourceType
+  inline def fetch: fetch = "fetch".asInstanceOf[fetch]
   
   @js.native
   sealed trait fieldset extends StObject
@@ -1533,6 +1583,12 @@ object cypressStrings {
   inline def focusout: focusout = "focusout".asInstanceOf[focusout]
   
   @js.native
+  sealed trait font
+    extends StObject
+       with ResourceType
+  inline def font: font = "font".asInstanceOf[font]
+  
+  @js.native
   sealed trait footer extends StObject
   inline def footer: footer = "footer".asInstanceOf[footer]
   
@@ -1551,6 +1607,10 @@ object cypressStrings {
   inline def forward: forward = "forward".asInstanceOf[forward]
   
   @js.native
+  sealed trait full extends StObject
+  inline def full: full = "full".asInstanceOf[full]
+  
+  @js.native
   sealed trait fullPage extends StObject
   inline def fullPage: fullPage = "fullPage".asInstanceOf[fullPage]
   
@@ -1565,6 +1625,18 @@ object cypressStrings {
   @js.native
   sealed trait function extends StObject
   inline def function: function = "function".asInstanceOf[function]
+  
+  @js.native
+  sealed trait getAllCookies extends StObject
+  inline def getAllCookies: getAllCookies = "getAllCookies".asInstanceOf[getAllCookies]
+  
+  @js.native
+  sealed trait getAllLocalStorage extends StObject
+  inline def getAllLocalStorage: getAllLocalStorage = "getAllLocalStorage".asInstanceOf[getAllLocalStorage]
+  
+  @js.native
+  sealed trait getAllSessionStorage extends StObject
+  inline def getAllSessionStorage: getAllSessionStorage = "getAllSessionStorage".asInstanceOf[getAllSessionStorage]
   
   @js.native
   sealed trait getCookie extends StObject
@@ -1991,6 +2063,12 @@ object cypressStrings {
   inline def iframe: iframe = "iframe".asInstanceOf[iframe]
   
   @js.native
+  sealed trait image
+    extends StObject
+       with ResourceType
+  inline def image: image = "image".asInstanceOf[image]
+  
+  @js.native
   sealed trait img extends StObject
   inline def img: img = "img".asInstanceOf[img]
   
@@ -2041,6 +2119,10 @@ object cypressStrings {
   @js.native
   sealed trait indexHtmlFile extends StObject
   inline def indexHtmlFile: indexHtmlFile = "indexHtmlFile".asInstanceOf[indexHtmlFile]
+  
+  @js.native
+  sealed trait injected extends StObject
+  inline def injected: injected = "injected".asInstanceOf[injected]
   
   @js.native
   sealed trait input extends StObject
@@ -2235,6 +2317,10 @@ object cypressStrings {
   inline def li: li = "li".asInstanceOf[li]
   
   @js.native
+  sealed trait library extends StObject
+  inline def library: library = "library".asInstanceOf[library]
+  
+  @js.native
   sealed trait linear extends StObject
   inline def linear: linear = "linear".asInstanceOf[linear]
   
@@ -2333,6 +2419,12 @@ object cypressStrings {
   @js.native
   sealed trait main extends StObject
   inline def main: main = "main".asInstanceOf[main]
+  
+  @js.native
+  sealed trait manifest
+    extends StObject
+       with ResourceType
+  inline def manifest: manifest = "manifest".asInstanceOf[manifest]
   
   @js.native
   sealed trait map extends StObject
@@ -3183,6 +3275,10 @@ object cypressStrings {
   inline def notmodified: notmodified = "notmodified".asInstanceOf[notmodified]
   
   @js.native
+  sealed trait now extends StObject
+  inline def now: now = "now".asInstanceOf[now]
+  
+  @js.native
   sealed trait `null` extends StObject
   inline def `null`: `null` = "null".asInstanceOf[`null`]
   
@@ -3247,6 +3343,12 @@ object cypressStrings {
   @js.native
   sealed trait origin extends StObject
   inline def origin: origin = "origin".asInstanceOf[origin]
+  
+  @js.native
+  sealed trait other
+    extends StObject
+       with ResourceType
+  inline def other: other = "other".asInstanceOf[other]
   
   @js.native
   sealed trait output extends StObject
@@ -3324,6 +3426,12 @@ object cypressStrings {
   @js.native
   sealed trait picture extends StObject
   inline def picture: picture = "picture".asInstanceOf[picture]
+  
+  @js.native
+  sealed trait ping
+    extends StObject
+       with ResourceType
+  inline def ping: ping = "ping".asInstanceOf[ping]
   
   @js.native
   sealed trait platform extends StObject
@@ -3470,6 +3578,10 @@ object cypressStrings {
   @js.native
   sealed trait q extends StObject
   inline def q: q = "q".asInstanceOf[q]
+  
+  @js.native
+  sealed trait query extends StObject
+  inline def query: query = "query".asInstanceOf[query]
   
   @js.native
   sealed trait qunit
@@ -3628,10 +3740,6 @@ object cypressStrings {
   inline def root: root = "root".asInstanceOf[root]
   
   @js.native
-  sealed trait route extends StObject
-  inline def route: route = "route".asInstanceOf[route]
-  
-  @js.native
   sealed trait rp extends StObject
   inline def rp: rp = "rp".asInstanceOf[rp]
   
@@ -3688,7 +3796,9 @@ object cypressStrings {
   inline def screenshotsFolder: screenshotsFolder = "screenshotsFolder".asInstanceOf[screenshotsFolder]
   
   @js.native
-  sealed trait script extends StObject
+  sealed trait script
+    extends StObject
+       with ResourceType
   inline def script: script = "script".asInstanceOf[script]
   
   @js.native
@@ -3748,10 +3858,6 @@ object cypressStrings {
   @js.native
   sealed trait selectstart extends StObject
   inline def selectstart: selectstart = "selectstart".asInstanceOf[selectstart]
-  
-  @js.native
-  sealed trait server extends StObject
-  inline def server: server = "server".asInstanceOf[server]
   
   @js.native
   sealed trait session extends StObject
@@ -3874,6 +3980,10 @@ object cypressStrings {
   inline def start: start = "start".asInstanceOf[start]
   
   @js.native
+  sealed trait static extends StObject
+  inline def static: static = "static".asInstanceOf[static]
+  
+  @js.native
   sealed trait strict
     extends StObject
        with SameSiteStatus
@@ -3898,6 +4008,12 @@ object cypressStrings {
   @js.native
   sealed trait style extends StObject
   inline def style: style = "style".asInstanceOf[style]
+  
+  @js.native
+  sealed trait stylesheet
+    extends StObject
+       with ResourceType
+  inline def stylesheet: stylesheet = "stylesheet".asInstanceOf[stylesheet]
   
   @js.native
   sealed trait sub extends StObject
@@ -4229,6 +4345,10 @@ object cypressStrings {
   inline def userAgent: userAgent = "userAgent".asInstanceOf[userAgent]
   
   @js.native
+  sealed trait userInvocationStack extends StObject
+  inline def userInvocationStack: userInvocationStack = "userInvocationStack".asInstanceOf[userInvocationStack]
+  
+  @js.native
   sealed trait `utf-16le`
     extends StObject
        with _Encodings
@@ -4370,6 +4490,12 @@ object cypressStrings {
   inline def webpackConfig: webpackConfig = "webpackConfig".asInstanceOf[webpackConfig]
   
   @js.native
+  sealed trait websocket
+    extends StObject
+       with ResourceType
+  inline def websocket: websocket = "websocket".asInstanceOf[websocket]
+  
+  @js.native
   sealed trait wheel extends StObject
   inline def wheel: wheel = "wheel".asInstanceOf[wheel]
   
@@ -4424,12 +4550,10 @@ object cypressStrings {
   inline def writeFile: writeFile = "writeFile".asInstanceOf[writeFile]
   
   @js.native
-  sealed trait xhrRoute extends StObject
-  inline def xhrRoute: xhrRoute = "xhrRoute".asInstanceOf[xhrRoute]
-  
-  @js.native
-  sealed trait xhrUrl extends StObject
-  inline def xhrUrl: xhrUrl = "xhrUrl".asInstanceOf[xhrUrl]
+  sealed trait xhr
+    extends StObject
+       with ResourceType
+  inline def xhr: xhr = "xhr".asInstanceOf[xhr]
   
   @js.native
   sealed trait xml extends StObject

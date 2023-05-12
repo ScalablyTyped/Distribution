@@ -19,14 +19,18 @@ object enginesWebGLWebGLHardwareTextureMod {
     def this(existingTexture: Unit, context: WebGLRenderingContext) = this()
     def this(existingTexture: Nullable[WebGLTexture], context: WebGLRenderingContext) = this()
     
-    var _MSAARenderBuffer: Nullable[WebGLRenderbuffer] = js.native
+    /* private */ var _MSAARenderBuffers: Any = js.native
     
     /* private */ var _context: Any = js.native
     
     /* private */ var _webGLTexture: Any = js.native
     
+    def addMSAARenderBuffer(buffer: WebGLRenderbuffer): Unit = js.native
+    
     /* CompleteClass */
     override def release(): Unit = js.native
+    
+    def releaseMSAARenderBuffers(): Unit = js.native
     
     /* CompleteClass */
     override def reset(): Unit = js.native

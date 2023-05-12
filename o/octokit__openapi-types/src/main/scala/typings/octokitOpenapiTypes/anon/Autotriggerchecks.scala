@@ -6,7 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Autotriggerchecks extends StObject {
   
-  /** @description Enables or disables automatic creation of CheckSuite events upon pushes to the repository. Enabled by default. See the [`auto_trigger_checks` object](https://docs.github.com/rest/reference/checks#auto_trigger_checks-object) description for details. */
   var auto_trigger_checks: js.UndefOr[js.Array[Setting]] = js.undefined
 }
 object Autotriggerchecks {

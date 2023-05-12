@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** A GotoTarget describes a code location that can be used as a target in the `goto` request.
+/** A `GotoTarget` describes a code location that can be used as a target in the `goto` request.
 		The possible goto targets can be determined via the `gotoTargets` request.
 	*/
 trait GotoTarget extends StObject {
@@ -18,7 +18,7 @@ trait GotoTarget extends StObject {
   /** The end line of the range covered by the goto target. */
   var endLine: js.UndefOr[Double] = js.undefined
   
-  /** Unique identifier for a goto target. This is used in the goto request. */
+  /** Unique identifier for a goto target. This is used in the `goto` request. */
   var id: Double
   
   /** A memory reference for the instruction pointer value represented by this target. */

@@ -4,11 +4,61 @@ import typings.awsSdkTypes.distTypesLoggerMod.LogLevel
 import typings.awsSdkTypes.distTypesMiddlewareMod.Priority
 import typings.awsSdkTypes.distTypesMiddlewareMod.Relation
 import typings.awsSdkTypes.distTypesMiddlewareMod.Step
+import typings.awsSdkTypes.distTypesRetryMod.ExponentialBackoffJitterType
+import typings.awsSdkTypes.distTypesRetryMod.RetryErrorType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object awsSdkTypesStrings {
+  
+  @js.native
+  sealed trait CLIENT_ERROR
+    extends StObject
+       with RetryErrorType
+  inline def CLIENT_ERROR: CLIENT_ERROR = "CLIENT_ERROR".asInstanceOf[CLIENT_ERROR]
+  
+  @js.native
+  sealed trait DECORRELATED
+    extends StObject
+       with ExponentialBackoffJitterType
+  inline def DECORRELATED: DECORRELATED = "DECORRELATED".asInstanceOf[DECORRELATED]
+  
+  @js.native
+  sealed trait DEFAULT
+    extends StObject
+       with ExponentialBackoffJitterType
+  inline def DEFAULT: DEFAULT = "DEFAULT".asInstanceOf[DEFAULT]
+  
+  @js.native
+  sealed trait FULL
+    extends StObject
+       with ExponentialBackoffJitterType
+  inline def FULL: FULL = "FULL".asInstanceOf[FULL]
+  
+  @js.native
+  sealed trait NONE
+    extends StObject
+       with ExponentialBackoffJitterType
+  inline def NONE: NONE = "NONE".asInstanceOf[NONE]
+  
+  @js.native
+  sealed trait SERVER_ERROR
+    extends StObject
+       with RetryErrorType
+  inline def SERVER_ERROR: SERVER_ERROR = "SERVER_ERROR".asInstanceOf[SERVER_ERROR]
+  
+  @js.native
+  sealed trait THROTTLING
+    extends StObject
+       with RetryErrorType
+  inline def THROTTLING: THROTTLING = "THROTTLING".asInstanceOf[THROTTLING]
+  
+  @js.native
+  sealed trait TRANSIENT
+    extends StObject
+       with RetryErrorType
+  inline def TRANSIENT: TRANSIENT = "TRANSIENT".asInstanceOf[TRANSIENT]
   
   @js.native
   sealed trait after

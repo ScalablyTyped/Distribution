@@ -6,15 +6,15 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A circle on the Earth&#39;s surface; also known as a &quot;spherical
-  * cap&quot;.
-  */
 @JSGlobal("google.maps.Circle")
 @js.native
 /**
   * A circle on the Earth&#39;s surface; also known as a &quot;spherical
   * cap&quot;.
+  *
+  * Access by calling `const {Circle} = await
+  * google.maps.importLibrary("maps")`. See
+  * https://developers.google.com/maps/documentation/javascript/libraries.
   */
 open class Circle ()
   extends StObject

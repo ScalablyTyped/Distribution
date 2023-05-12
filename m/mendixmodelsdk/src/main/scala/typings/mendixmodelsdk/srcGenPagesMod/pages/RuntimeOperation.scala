@@ -30,14 +30,32 @@ open class RuntimeOperation protected () extends Element[IModel] {
   ) = this()
   
   /**
+    * In version 9.21.0: introduced
+    */
+  def allowedUserRoleSets: IList[UserRoleSet] = js.native
+  
+  /**
+    * In version 9.21.0: deleted
     * In version 9.18.0: introduced
     */
   def allowedUserRoles: IList[IUserRole] = js.native
   
   def allowedUserRolesQualifiedNames: js.Array[String] = js.native
   
+  /**
+    * In version 9.24.0: introduced
+    */
+  def constants: IList[NamedValue] = js.native
+  
   def operationId: String = js.native
   def operationId_=(newValue: String): Unit = js.native
+  
+  /**
+    * In version 9.24.0: deleted
+    * In version 9.20.0: introduced
+    */
+  def operationName: String = js.native
+  def operationName_=(newValue: String): Unit = js.native
   
   def operationType: String = js.native
   def operationType_=(newValue: String): Unit = js.native

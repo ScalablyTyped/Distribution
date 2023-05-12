@@ -31,6 +31,9 @@ trait CreateMeetingWithAttendeesRequest extends StObject {
     */
   var MeetingHostId: js.UndefOr[ExternalUserIdType] = js.undefined
   
+  /**
+    * The resource target configurations for receiving Amazon Chime SDK meeting and attendee event notifications. The Amazon Chime SDK supports resource targets located in the US East (N. Virginia) AWS Region (us-east-1).
+    */
   var NotificationsConfiguration: js.UndefOr[MeetingNotificationConfiguration] = js.undefined
   
   /**

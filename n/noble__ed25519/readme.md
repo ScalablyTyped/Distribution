@@ -1,7 +1,7 @@
 
 # Scala.js typings for noble__ed25519
 
-Typings are for version 1.7.1
+Typings are for version 2.0.0
 
 ## Library description:
 Fastest JS implementation of ed25519. Independently audited, high-security, 0-dependency EDDSA, X25519 ECDH & ristretto255

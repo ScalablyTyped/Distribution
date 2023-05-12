@@ -1,7 +1,7 @@
 
 # Scala.js typings for verovio
 
-Typings are for version 3.11
+Typings are for version 3.13
 
 ## Library description:
 This is the stable version of the verovio package

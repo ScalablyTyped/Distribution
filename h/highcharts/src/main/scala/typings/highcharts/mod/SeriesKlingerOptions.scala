@@ -54,6 +54,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var `type`: String | klinger
   
   /**
+    * Not available
+    */
+  var useOhlcData: Unit
+  
+  /**
     * (Highcharts, Highstock) When using dual or multiple x axes, this number
     * defines which xAxis the particular series is connected to. It refers to
     * either the axis id or the index of the axis in the xAxis array, with 0
@@ -71,8 +76,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object SeriesKlingerOptions {
   
-  inline def apply(`type`: String | klinger): SeriesKlingerOptions = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(`type`: String | klinger, useOhlcData: Unit): SeriesKlingerOptions = {
+    val __obj = js.Dynamic.literal(useOhlcData = useOhlcData.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeriesKlingerOptions]
   }
@@ -103,6 +108,8 @@ object SeriesKlingerOptions {
     inline def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
     
     inline def setType(value: String | klinger): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setUseOhlcData(value: Unit): Self = StObject.set(x, "useOhlcData", value.asInstanceOf[js.Any])
     
     inline def setXAxis(value: Double | String): Self = StObject.set(x, "xAxis", value.asInstanceOf[js.Any])
     

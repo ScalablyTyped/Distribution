@@ -2,20 +2,20 @@ package typings.angularCli
 
 import typings.angularCli.srcCommandBuilderArchitectBaseCommandModuleMod.MissingTargetChoice
 import typings.angularCli.srcCommandBuilderArchitectCommandModuleMod.ArchitectCommandModule
-import typings.angularCli.srcCommandBuilderCommandModuleMod.CommandContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object srcCommandsE2eCliMod {
   
-  @JSImport("@angular/cli/src/commands/e2e/cli", "E2eCommandModule")
+  @JSImport("@angular/cli/src/commands/e2e/cli", JSImport.Default)
   @js.native
-  open class E2eCommandModule protected () extends ArchitectCommandModule {
-    def this(context: CommandContext) = this()
+  open class default () extends E2eCommandModule
+  
+  @js.native
+  trait E2eCommandModule extends ArchitectCommandModule {
     
-    @JSName("aliases")
-    var aliases_E2eCommandModule: js.Array[String] = js.native
+    var aliases: js.UndefOr[js.Array[String]] = js.native
     
     @JSName("describe")
     var describe_E2eCommandModule: String = js.native

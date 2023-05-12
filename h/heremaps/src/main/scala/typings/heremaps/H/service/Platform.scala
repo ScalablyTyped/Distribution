@@ -59,6 +59,7 @@ trait Platform extends StObject {
   def getEnterpriseRoutingService(opt_options: Options): EnterpriseRoutingService = js.native
   
   /**
+    * @deprecated since 3.1.30.12 - This service is no longer being actively developed.
     * This method returns an instance of H.service.GeocodingService to query the Geocoder API
     * @param opt_options {H.service.GeocodingService.Options=} - an optional set of options for the new geocoding service to connect to
     * @returns {H.service.GeocodingService} - a new geocoding service instance
@@ -94,7 +95,9 @@ trait Platform extends StObject {
     * @returns {H.service.RoutingService}
     */
   def getRoutingService(): RoutingService = js.native
+  def getRoutingService(opt_options: Unit, opt_version: Double): RoutingService = js.native
   def getRoutingService(opt_options: typings.heremaps.H.service.RoutingService.Options): RoutingService = js.native
+  def getRoutingService(opt_options: typings.heremaps.H.service.RoutingService.Options, opt_version: Double): RoutingService = js.native
   
   /**
     * This method returns an instance of {@link H.service.traffic.Service} to query the Traffic API Traffic Incident Data
@@ -133,13 +136,13 @@ object Platform {
   
   /**
     * Options used to create default layers
-    * @property tileSize {number=} - tile size to be queried from the HERE Map Tile API, default is 256
-    * @property ppi {number=} - 'ppi' parameter to use when querying tiles, default is not specified
-    * @property lg {string=} - optional primary language parameter, default is not specified
-    * @property lg2 {string=} - optional secondary language parameter, default is not specified
-    * @property style {string=} - optional 'style' parameter to use when querying map tiles, default is not specified
-    * @property pois {boolean=} - indicates if pois are displayed on the map
-    * @property crossOrigin {(string | boolean=)} - indicates if CORS headers should be used for default layers, if false is specified, CORS headers are not set, defaults to 'anonymous'.
+    * tileSize {number=} - tile size to be queried from the HERE Map Tile API, default is 256
+    * ppi {number=} - 'ppi' parameter to use when querying tiles, default is not specified
+    * lg {string=} - optional primary language parameter, default is not specified
+    * lg2 {string=} - optional secondary language parameter, default is not specified
+    * style {string=} - optional 'style' parameter to use when querying map tiles, default is not specified
+    * pois {boolean=} - indicates if pois are displayed on the map
+    * crossOrigin {(string | boolean=)} - indicates if CORS headers should be used for default layers, if false is specified, CORS headers are not set, defaults to 'anonymous'.
     * Be aware that storing of content is not possible if crossOrigin is not set to true (see H.Map#storeContent).
     */
   trait DefaultLayersOptions extends StObject {
@@ -236,11 +239,11 @@ object Platform {
   }
   
   /**
-    * @property app_id {string} - The application ID to identify the client against the platform (mandatory to provide)
-    * @property app_code {string} - The application code to identify the client against the platform (mandatory to provide)
-    * @property baseUrl {H.service.Url=} - The base URL of the platform, default is http://api.here.com
-    * @property useCIT {boolean=} - Indicates whether the Customer Integration Testing should be used, default is false
-    * @property useHTTPS {boolean=} - Indicates whether secure communication should be used, default is false
+    * app_id {string} - The application ID to identify the client against the platform (mandatory to provide)
+    * app_code {string} - The application code to identify the client against the platform (mandatory to provide)
+    * baseUrl {H.service.Url=} - The base URL of the platform, default is http://api.here.com
+    * useCIT {boolean=} - Indicates whether the Customer Integration Testing should be used, default is false
+    * useHTTPS {boolean=} - Indicates whether secure communication should be used, default is false
     */
   trait Options extends StObject {
     

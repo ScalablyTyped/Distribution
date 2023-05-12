@@ -6,14 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait VirtualAgentAttributes extends StObject {
   
+  /** connectorName - Defines the conversation profile Dialogflow needs to use */
   var connectorName: js.UndefOr[String] = js.undefined
   
+  /** language - Language to be used by Dialogflow to transcribe speech */
   var language: js.UndefOr[String] = js.undefined
   
+  /** sentimentAnalysis - Whether sentiment analysis needs to be enabled or not */
   var sentimentAnalysis: js.UndefOr[Boolean] = js.undefined
   
+  /** statusCallback - URL to post status callbacks from Twilio */
   var statusCallback: js.UndefOr[String] = js.undefined
   
+  /** statusCallbackMethod - HTTP method to use when requesting the status callback URL */
   var statusCallbackMethod: js.UndefOr[String] = js.undefined
 }
 object VirtualAgentAttributes {

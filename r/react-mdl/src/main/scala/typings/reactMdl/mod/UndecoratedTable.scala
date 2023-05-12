@@ -10,7 +10,7 @@ open class UndecoratedTable protected () extends _MDLComponent[UndecoratedTableP
   def this(props: UndecoratedTableProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: UndecoratedTableProps, context: Any) = this()
 }

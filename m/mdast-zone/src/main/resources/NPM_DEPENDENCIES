@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "mdast-zone" : "5.1.0"
+      "mdast-zone" : "5.1.1"
     }
   ],
   "test-dependencies" : [
     {
-      "mdast-zone" : "5.1.0"
+      "mdast-zone" : "5.1.1"
     }
   ],
   "compile-devDependencies" : [

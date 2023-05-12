@@ -29,75 +29,44 @@ object typesModulesZoomMod {
     }
   }
   
+  @js.native
   trait ZoomMethods extends StObject {
     
     /**
       * Disable zoom module
       */
-    def disable(): Unit
+    def disable(): Unit = js.native
     
     /**
       * Enable zoom module
       */
-    def enable(): Unit
+    def enable(): Unit = js.native
     
     /**
       * Whether the zoom module is enabled
       */
-    var enabled: Boolean
+    var enabled: Boolean = js.native
     
     /**
-      * Zoom in image of the currently active slide
+      * Zoom in image of the currently active slide. Optionally accepts custom zoom ratio
       */
-    def in(): Unit
+    def in(): Unit = js.native
+    def in(ratio: Double): Unit = js.native
     
     /**
       * Zoom out image of the currently active slide
       */
-    def out(): Unit
+    def out(): Unit = js.native
     
     /**
       * Current image scale ratio
       */
-    var scale: Double
+    var scale: Double = js.native
     
     /**
       * Toggle image zoom of the currently active slide
       */
-    def toggle(): Unit
-  }
-  object ZoomMethods {
-    
-    inline def apply(
-      disable: () => Unit,
-      enable: () => Unit,
-      enabled: Boolean,
-      in: () => Unit,
-      out: () => Unit,
-      scale: Double,
-      toggle: () => Unit
-    ): ZoomMethods = {
-      val __obj = js.Dynamic.literal(disable = js.Any.fromFunction0(disable), enable = js.Any.fromFunction0(enable), enabled = enabled.asInstanceOf[js.Any], in = js.Any.fromFunction0(in), out = js.Any.fromFunction0(out), scale = scale.asInstanceOf[js.Any], toggle = js.Any.fromFunction0(toggle))
-      __obj.asInstanceOf[ZoomMethods]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: ZoomMethods] (val x: Self) extends AnyVal {
-      
-      inline def setDisable(value: () => Unit): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
-      
-      inline def setEnable(value: () => Unit): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
-      
-      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
-      
-      inline def setIn(value: () => Unit): Self = StObject.set(x, "in", js.Any.fromFunction0(value))
-      
-      inline def setOut(value: () => Unit): Self = StObject.set(x, "out", js.Any.fromFunction0(value))
-      
-      inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
-      
-      inline def setToggle(value: () => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction0(value))
-    }
+    def toggle(): Unit = js.native
   }
   
   trait ZoomOptions extends StObject {

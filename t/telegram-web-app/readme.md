@@ -1,7 +1,7 @@
 
 # Scala.js typings for telegram-web-app
 
-Typings are for version 6.2
+Typings are for version 6.7
 
 ## Library description:
 Telegram Web App API

@@ -84,8 +84,8 @@ object mod {
     
     /* private */ var _runCmd: Any = js.native
     
-    def eval(cmd: String, context: Context, filename: String, callback: ReplCallback): Unit | js.Promise[Any] = js.native
-    def eval(cmd: String, context: Context, filename: Unit, callback: ReplCallback): Unit | js.Promise[Any] = js.native
+    def eval(cmd: String, context: Context, filename: String, callback: ReplCallback): Unit = js.native
+    def eval(cmd: String, context: Context, filename: Unit, callback: ReplCallback): Unit = js.native
     
     def start(): js.Promise[Any] = js.native
     def start(context: Context): js.Promise[Any] = js.native

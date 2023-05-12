@@ -14,7 +14,7 @@ trait DeleteDashboardRequest extends StObject {
   /**
     * The ID for the dashboard.
     */
-  var DashboardId: RestrictiveResourceId
+  var DashboardId: ShortRestrictiveResourceId
   
   /**
     * The version number of the dashboard. If the version number property is provided, only the specified version of the dashboard is deleted.
@@ -23,7 +23,7 @@ trait DeleteDashboardRequest extends StObject {
 }
 object DeleteDashboardRequest {
   
-  inline def apply(AwsAccountId: AwsAccountId, DashboardId: RestrictiveResourceId): DeleteDashboardRequest = {
+  inline def apply(AwsAccountId: AwsAccountId, DashboardId: ShortRestrictiveResourceId): DeleteDashboardRequest = {
     val __obj = js.Dynamic.literal(AwsAccountId = AwsAccountId.asInstanceOf[js.Any], DashboardId = DashboardId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteDashboardRequest]
   }
@@ -33,7 +33,7 @@ object DeleteDashboardRequest {
     
     inline def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
     
-    inline def setDashboardId(value: RestrictiveResourceId): Self = StObject.set(x, "DashboardId", value.asInstanceOf[js.Any])
+    inline def setDashboardId(value: ShortRestrictiveResourceId): Self = StObject.set(x, "DashboardId", value.asInstanceOf[js.Any])
     
     inline def setVersionNumber(value: VersionNumber): Self = StObject.set(x, "VersionNumber", value.asInstanceOf[js.Any])
     

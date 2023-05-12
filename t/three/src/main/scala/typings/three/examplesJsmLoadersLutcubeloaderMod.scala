@@ -37,6 +37,9 @@ object examplesJsmLoadersLutcubeloaderMod {
       onError: js.Function1[/* event */ js.Error, Unit]
     ): Any = js.native
     
+    def loadAsync(url: String): js.Promise[LUTCubeResult] = js.native
+    def loadAsync(url: String, onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit]): js.Promise[LUTCubeResult] = js.native
+    
     def parse(data: String): LUTCubeResult = js.native
   }
   

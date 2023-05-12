@@ -1,56 +1,13 @@
 package typings.backstopjs
 
+import typings.backstopjs.backstopjsStrings.chromium
+import typings.backstopjs.backstopjsStrings.firefox
+import typings.backstopjs.backstopjsStrings.webkit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
-  
-  trait Args extends StObject {
-    
-    var args: js.Array[String]
-    
-    var chromeFlags: js.UndefOr[js.Array[String]] = js.undefined
-    
-    var chromePath: js.UndefOr[String] = js.undefined
-    
-    var ignoreHTTPSErrors: js.UndefOr[Boolean] = js.undefined
-    
-    var waitTimeout: js.UndefOr[Double] = js.undefined
-  }
-  object Args {
-    
-    inline def apply(args: js.Array[String]): Args = {
-      val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Args]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: Args] (val x: Self) extends AnyVal {
-      
-      inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
-      
-      inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value*))
-      
-      inline def setChromeFlags(value: js.Array[String]): Self = StObject.set(x, "chromeFlags", value.asInstanceOf[js.Any])
-      
-      inline def setChromeFlagsUndefined: Self = StObject.set(x, "chromeFlags", js.undefined)
-      
-      inline def setChromeFlagsVarargs(value: String*): Self = StObject.set(x, "chromeFlags", js.Array(value*))
-      
-      inline def setChromePath(value: String): Self = StObject.set(x, "chromePath", value.asInstanceOf[js.Any])
-      
-      inline def setChromePathUndefined: Self = StObject.set(x, "chromePath", js.undefined)
-      
-      inline def setIgnoreHTTPSErrors(value: Boolean): Self = StObject.set(x, "ignoreHTTPSErrors", value.asInstanceOf[js.Any])
-      
-      inline def setIgnoreHTTPSErrorsUndefined: Self = StObject.set(x, "ignoreHTTPSErrors", js.undefined)
-      
-      inline def setWaitTimeout(value: Double): Self = StObject.set(x, "waitTimeout", value.asInstanceOf[js.Any])
-      
-      inline def setWaitTimeoutUndefined: Self = StObject.set(x, "waitTimeout", js.undefined)
-    }
-  }
   
   trait Bitmapsreference extends StObject {
     
@@ -132,6 +89,8 @@ object anon {
     
     var config: js.UndefOr[typings.backstopjs.mod.Config | String] = js.undefined
     
+    var docker: js.UndefOr[Boolean] = js.undefined
+    
     var filter: js.UndefOr[String] = js.undefined
   }
   object Config {
@@ -147,6 +106,10 @@ object anon {
       inline def setConfig(value: typings.backstopjs.mod.Config | String): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
       inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+      
+      inline def setDocker(value: Boolean): Self = StObject.set(x, "docker", value.asInstanceOf[js.Any])
+      
+      inline def setDockerUndefined: Self = StObject.set(x, "docker", js.undefined)
       
       inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
@@ -222,6 +185,116 @@ object anon {
       inline def setTestSuiteName(value: String): Self = StObject.set(x, "testSuiteName", value.asInstanceOf[js.Any])
       
       inline def setTestSuiteNameUndefined: Self = StObject.set(x, "testSuiteName", js.undefined)
+    }
+  }
+  
+  /* Inlined {  browser :'chromium' | 'firefox' | 'webkit' | undefined,   storageState :string | undefined} & backstopjs.backstopjs.CommonEngineOptions */
+  trait browserchromiumfirefoxweb extends StObject {
+    
+    var args: js.Array[String]
+    
+    var browser: js.UndefOr[chromium | firefox | webkit] = js.undefined
+    
+    var chromeFlags: js.UndefOr[js.Array[String]] = js.undefined
+    
+    var chromePath: js.UndefOr[String] = js.undefined
+    
+    var ignoreHTTPSErrors: js.UndefOr[Boolean] = js.undefined
+    
+    var storageState: js.UndefOr[String] = js.undefined
+    
+    var waitTimeout: js.UndefOr[Double] = js.undefined
+  }
+  object browserchromiumfirefoxweb {
+    
+    inline def apply(args: js.Array[String]): browserchromiumfirefoxweb = {
+      val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any])
+      __obj.asInstanceOf[browserchromiumfirefoxweb]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: browserchromiumfirefoxweb] (val x: Self) extends AnyVal {
+      
+      inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      
+      inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value*))
+      
+      inline def setBrowser(value: chromium | firefox | webkit): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
+      
+      inline def setBrowserUndefined: Self = StObject.set(x, "browser", js.undefined)
+      
+      inline def setChromeFlags(value: js.Array[String]): Self = StObject.set(x, "chromeFlags", value.asInstanceOf[js.Any])
+      
+      inline def setChromeFlagsUndefined: Self = StObject.set(x, "chromeFlags", js.undefined)
+      
+      inline def setChromeFlagsVarargs(value: String*): Self = StObject.set(x, "chromeFlags", js.Array(value*))
+      
+      inline def setChromePath(value: String): Self = StObject.set(x, "chromePath", value.asInstanceOf[js.Any])
+      
+      inline def setChromePathUndefined: Self = StObject.set(x, "chromePath", js.undefined)
+      
+      inline def setIgnoreHTTPSErrors(value: Boolean): Self = StObject.set(x, "ignoreHTTPSErrors", value.asInstanceOf[js.Any])
+      
+      inline def setIgnoreHTTPSErrorsUndefined: Self = StObject.set(x, "ignoreHTTPSErrors", js.undefined)
+      
+      inline def setStorageState(value: String): Self = StObject.set(x, "storageState", value.asInstanceOf[js.Any])
+      
+      inline def setStorageStateUndefined: Self = StObject.set(x, "storageState", js.undefined)
+      
+      inline def setWaitTimeout(value: Double): Self = StObject.set(x, "waitTimeout", value.asInstanceOf[js.Any])
+      
+      inline def setWaitTimeoutUndefined: Self = StObject.set(x, "waitTimeout", js.undefined)
+    }
+  }
+  
+  /* Inlined {  browser :never | undefined,   storageState :never | undefined} & backstopjs.backstopjs.CommonEngineOptions */
+  trait browserneverundefinedstor extends StObject {
+    
+    var args: js.Array[String]
+    
+    var browser: js.UndefOr[scala.Nothing] = js.undefined
+    
+    var chromeFlags: js.UndefOr[js.Array[String]] = js.undefined
+    
+    var chromePath: js.UndefOr[String] = js.undefined
+    
+    var ignoreHTTPSErrors: js.UndefOr[Boolean] = js.undefined
+    
+    var storageState: js.UndefOr[scala.Nothing] = js.undefined
+    
+    var waitTimeout: js.UndefOr[Double] = js.undefined
+  }
+  object browserneverundefinedstor {
+    
+    inline def apply(args: js.Array[String]): browserneverundefinedstor = {
+      val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any])
+      __obj.asInstanceOf[browserneverundefinedstor]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: browserneverundefinedstor] (val x: Self) extends AnyVal {
+      
+      inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      
+      inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value*))
+      
+      inline def setChromeFlags(value: js.Array[String]): Self = StObject.set(x, "chromeFlags", value.asInstanceOf[js.Any])
+      
+      inline def setChromeFlagsUndefined: Self = StObject.set(x, "chromeFlags", js.undefined)
+      
+      inline def setChromeFlagsVarargs(value: String*): Self = StObject.set(x, "chromeFlags", js.Array(value*))
+      
+      inline def setChromePath(value: String): Self = StObject.set(x, "chromePath", value.asInstanceOf[js.Any])
+      
+      inline def setChromePathUndefined: Self = StObject.set(x, "chromePath", js.undefined)
+      
+      inline def setIgnoreHTTPSErrors(value: Boolean): Self = StObject.set(x, "ignoreHTTPSErrors", value.asInstanceOf[js.Any])
+      
+      inline def setIgnoreHTTPSErrorsUndefined: Self = StObject.set(x, "ignoreHTTPSErrors", js.undefined)
+      
+      inline def setWaitTimeout(value: Double): Self = StObject.set(x, "waitTimeout", value.asInstanceOf[js.Any])
+      
+      inline def setWaitTimeoutUndefined: Self = StObject.set(x, "waitTimeout", js.undefined)
     }
   }
 }

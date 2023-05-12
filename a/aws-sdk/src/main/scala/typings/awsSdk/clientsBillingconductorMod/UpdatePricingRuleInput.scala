@@ -27,6 +27,11 @@ trait UpdatePricingRuleInput extends StObject {
   var Name: js.UndefOr[PricingRuleName] = js.undefined
   
   /**
+    *  The set of tiering configurations for the pricing rule. 
+    */
+  var Tiering: js.UndefOr[UpdateTieringInput] = js.undefined
+  
+  /**
     *  The new pricing rule type. 
     */
   var Type: js.UndefOr[PricingRuleType] = js.undefined
@@ -54,6 +59,10 @@ object UpdatePricingRuleInput {
     inline def setName(value: PricingRuleName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    
+    inline def setTiering(value: UpdateTieringInput): Self = StObject.set(x, "Tiering", value.asInstanceOf[js.Any])
+    
+    inline def setTieringUndefined: Self = StObject.set(x, "Tiering", js.undefined)
     
     inline def setType(value: PricingRuleType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     

@@ -6,7 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GetParametersQuerySinceSort extends StObject {
   
-  /** By default, Issue Comments are ordered by ascending ID. */
+  /**
+    * List review comments in a repository
+    * @description Lists review comments for all pull requests in a repository. By default, review comments are in ascending order by ID.
+    */
   var get: ParametersQuerySinceSort
 }
 object GetParametersQuerySinceSort {

@@ -6,6 +6,8 @@ import typings.azureMsalCommon.distConfigClientConfigurationMod.AzureCloudOption
 import typings.azureMsalCommon.distConfigClientConfigurationMod.LoggerOptions
 import typings.azureMsalCommon.distNetworkInetworkmoduleMod.INetworkModule
 import typings.azureMsalCommon.distUtilsConstantsMod.AuthenticationScheme
+import typings.azureMsalCommon.distUtilsMsalTypesMod.StringDict
+import typings.node.httpMod.AgentOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -47,6 +49,8 @@ object anon {
     
     var correlationId: js.UndefOr[String] = js.undefined
     
+    var maxAge: js.UndefOr[Double] = js.undefined
+    
     var requestedClaimsHash: js.UndefOr[String] = js.undefined
     
     var resourceRequestMethod: js.UndefOr[String] = js.undefined
@@ -62,6 +66,8 @@ object anon {
     var sshJwk: js.UndefOr[String] = js.undefined
     
     var sshKid: js.UndefOr[String] = js.undefined
+    
+    var tokenQueryParameters: js.UndefOr[StringDict] = js.undefined
   }
   object PartialBaseAuthRequest {
     
@@ -92,6 +98,10 @@ object anon {
       inline def setCorrelationId(value: String): Self = StObject.set(x, "correlationId", value.asInstanceOf[js.Any])
       
       inline def setCorrelationIdUndefined: Self = StObject.set(x, "correlationId", js.undefined)
+      
+      inline def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
+      
+      inline def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
       
       inline def setRequestedClaimsHash(value: String): Self = StObject.set(x, "requestedClaimsHash", value.asInstanceOf[js.Any])
       
@@ -126,6 +136,10 @@ object anon {
       inline def setSshKid(value: String): Self = StObject.set(x, "sshKid", value.asInstanceOf[js.Any])
       
       inline def setSshKidUndefined: Self = StObject.set(x, "sshKid", js.undefined)
+      
+      inline def setTokenQueryParameters(value: StringDict): Self = StObject.set(x, "tokenQueryParameters", value.asInstanceOf[js.Any])
+      
+      inline def setTokenQueryParametersUndefined: Self = StObject.set(x, "tokenQueryParameters", js.undefined)
     }
   }
   
@@ -240,6 +254,8 @@ object anon {
   /* Inlined std.Required<@azure/msal-node.@azure/msal-node/dist/config/Configuration.NodeSystemOptions> */
   trait RequiredNodeSystemOptions extends StObject {
     
+    var customAgentOptions: AgentOptions | typings.node.httpsMod.AgentOptions
+    
     var loggerOptions: LoggerOptions
     
     var networkClient: INetworkModule
@@ -248,13 +264,20 @@ object anon {
   }
   object RequiredNodeSystemOptions {
     
-    inline def apply(loggerOptions: LoggerOptions, networkClient: INetworkModule, proxyUrl: String): RequiredNodeSystemOptions = {
-      val __obj = js.Dynamic.literal(loggerOptions = loggerOptions.asInstanceOf[js.Any], networkClient = networkClient.asInstanceOf[js.Any], proxyUrl = proxyUrl.asInstanceOf[js.Any])
+    inline def apply(
+      customAgentOptions: AgentOptions | typings.node.httpsMod.AgentOptions,
+      loggerOptions: LoggerOptions,
+      networkClient: INetworkModule,
+      proxyUrl: String
+    ): RequiredNodeSystemOptions = {
+      val __obj = js.Dynamic.literal(customAgentOptions = customAgentOptions.asInstanceOf[js.Any], loggerOptions = loggerOptions.asInstanceOf[js.Any], networkClient = networkClient.asInstanceOf[js.Any], proxyUrl = proxyUrl.asInstanceOf[js.Any])
       __obj.asInstanceOf[RequiredNodeSystemOptions]
     }
     
     @scala.inline
     implicit open class MutableBuilder[Self <: RequiredNodeSystemOptions] (val x: Self) extends AnyVal {
+      
+      inline def setCustomAgentOptions(value: AgentOptions | typings.node.httpsMod.AgentOptions): Self = StObject.set(x, "customAgentOptions", value.asInstanceOf[js.Any])
       
       inline def setLoggerOptions(value: LoggerOptions): Self = StObject.set(x, "loggerOptions", value.asInstanceOf[js.Any])
       

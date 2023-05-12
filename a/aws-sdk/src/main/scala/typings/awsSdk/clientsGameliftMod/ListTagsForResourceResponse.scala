@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListTagsForResourceResponse extends StObject {
   
   /**
-    *  The collection of tags that have been assigned to the specified resource. 
+    * The collection of tags assigned to the resource. 
     */
   var Tags: js.UndefOr[TagList] = js.undefined
 }

@@ -21,9 +21,11 @@ object global {
     @js.native
     val isSupported: Boolean = js.native
     
-    @JSGlobal("WordCloud.miniumFontSize")
+    @JSGlobal("WordCloud.minFontSize")
     @js.native
-    def miniumFontSize: Double = js.native
-    inline def miniumFontSize_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("miniumFontSize")(x.asInstanceOf[js.Any])
+    val minFontSize: Double = js.native
+    
+    /** Stop rendering. */
+    inline def stop(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stop")().asInstanceOf[Unit]
   }
 }

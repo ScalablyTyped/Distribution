@@ -14,7 +14,6 @@ trait ICanvasOptions
     * If `null` or 'none' or any other string that is not a modifier key
     * feature is disabled feature disabled.
     * @since 1.6.2
-    * @type String
     * @default
     */
   var altActionKey: js.UndefOr[String] = js.undefined
@@ -28,7 +27,6 @@ trait ICanvasOptions
     * If `null` or 'none' or any other string that is not a modifier key
     * feature is disabled.
     * @since 1.6.5
-    * @type null|String
     * @default
     */
   var altSelectionKey: js.UndefOr[String | Null] = js.undefined
@@ -39,7 +37,6 @@ trait ICanvasOptions
     * If `null` or 'none' or any other string that is not a modifier key
     * feature is disabled feature disabled.
     * @since 1.6.2
-    * @type String
     * @default
     */
   var centeredKey: js.UndefOr[String] = js.undefined
@@ -73,7 +70,6 @@ trait ICanvasOptions
   
   /**
     * Indicates if the canvas can fire middle click events
-    * @type Boolean
     * @since 1.7.8
     * @default
     */
@@ -81,7 +77,6 @@ trait ICanvasOptions
   
   /**
     * Indicates if the canvas can fire right click events
-    * @type Boolean
     * @since 1.6.5
     * @default
     */
@@ -94,7 +89,6 @@ trait ICanvasOptions
   
   /**
     * Canvas height
-    * @type number
     * @default
     */
   var height: js.UndefOr[Double] = js.undefined
@@ -123,7 +117,6 @@ trait ICanvasOptions
   
   /**
     * Cursor value used for disabled elements ( corners with disabled action )
-    * @type String
     * @since 2.0.0
     * @default
     */
@@ -137,7 +130,6 @@ trait ICanvasOptions
   /**
     * Indicates whether objects should remain in current stack position when selected.
     * When false objects are brought to top and rendered as part of the selection group
-    * @type Boolean
     */
   var preserveObjectStacking: js.UndefOr[Boolean] = js.undefined
   
@@ -169,7 +161,6 @@ trait ICanvasOptions
   
   /**
     * Select only shapes that are fully contained in the dragged selection rectangle.
-    * @type Boolean
     * @default
     */
   var selectionFullyContained: js.UndefOr[Boolean] = js.undefined
@@ -181,7 +172,6 @@ trait ICanvasOptions
     * If `null` or empty or containing any other string that is not a modifier key
     * feature is disabled.
     * @since 1.6.2
-    * @type String|Array
     * @default
     */
   var selectionKey: js.UndefOr[String | js.Array[String]] = js.undefined
@@ -198,7 +188,6 @@ trait ICanvasOptions
   
   /**
     * Indicates the angle that an object will lock to while rotating.
-    * @type Number
     * @since 1.6.7
     */
   var snapAngle: js.UndefOr[Double] = js.undefined
@@ -206,7 +195,6 @@ trait ICanvasOptions
   /**
     * Indicates the distance from the snapAngle the rotation will lock to the snapAngle.
     * When `null`, the snapThreshold will default to the snapAngle.
-    * @type null|Number
     * @since 1.6.7
     * @default
     */
@@ -214,7 +202,6 @@ trait ICanvasOptions
   
   /**
     * Indicates if the right click on canvas can output the context menu or not
-    * @type Boolean
     * @since 1.6.5
     * @default
     */
@@ -227,7 +214,6 @@ trait ICanvasOptions
   
   /**
     * Keep track of the subTargets for Mouse Events
-    * @type {Array.<fabric.Object>}
     * @since 3.6.0
     * @default
     */
@@ -239,14 +225,12 @@ trait ICanvasOptions
     * If `null` or 'none' or any other string that is not a modifier key
     * feature is disabled feature disabled.
     * @since 1.6.2
-    * @type String
     */
   var uniScaleKey: js.UndefOr[String] = js.undefined
   
   /**
     * When true, objects can be transformed by one side (unproportionally)
     * when dragged on the corners that normally would not do that.
-    * @type Boolean
     * @default
     * @since fabric 4.0 // changed name and default value
     */
@@ -254,7 +238,6 @@ trait ICanvasOptions
   
   /**
     * Canvas width
-    * @type number
     * @default
     */
   var width: js.UndefOr[Double] = js.undefined

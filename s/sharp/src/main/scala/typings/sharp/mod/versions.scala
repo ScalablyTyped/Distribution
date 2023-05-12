@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** An Object containing the version numbers of libvips and its dependencies. */
+/** An Object containing the version numbers of sharp, libvips and its dependencies. */
 object versions {
   
   @JSImport("sharp", "versions")
@@ -110,6 +110,11 @@ object versions {
   @js.native
   def png: js.UndefOr[String] = js.native
   inline def png_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("png")(x.asInstanceOf[js.Any])
+  
+  @JSImport("sharp", "versions.sharp")
+  @js.native
+  def sharp: js.UndefOr[String] = js.native
+  inline def sharp_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sharp")(x.asInstanceOf[js.Any])
   
   @JSImport("sharp", "versions.svg")
   @js.native

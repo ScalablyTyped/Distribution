@@ -59,7 +59,6 @@ object mod {
     * Pass in an Object containing the struct fields to auto-populate the
     * struct with the data.
     *
-    * @constructor
     */
   @js.native
   trait StructType

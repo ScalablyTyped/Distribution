@@ -48,6 +48,7 @@ type CreateWorkspaceApiKeyRequestSecondsToLiveInteger = Double
   - typings.awsSdk.awsSdkStrings.SITEWISE
   - typings.awsSdk.awsSdkStrings.ATHENA
   - typings.awsSdk.awsSdkStrings.REDSHIFT
+  - typings.awsSdk.awsSdkStrings.TWINMAKER
   - java.lang.String
 */
 type DataSourceType = _DataSourceType | java.lang.String
@@ -87,6 +88,8 @@ type OrganizationalUnit = java.lang.String
 
 type OrganizationalUnitList = js.Array[OrganizationalUnit]
 
+type OverridableConfigurationJson = java.lang.String
+
 type PaginationToken = java.lang.String
 
 type PermissionEntryList = js.Array[PermissionEntry]
@@ -97,6 +100,10 @@ type PermissionEntryList = js.Array[PermissionEntry]
   - java.lang.String
 */
 type PermissionType = _PermissionType | java.lang.String
+
+type PrefixListId = java.lang.String
+
+type PrefixListIds = js.Array[PrefixListId]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ADMIN
@@ -119,11 +126,19 @@ type SSOClientId = java.lang.String
 */
 type SamlConfigurationStatus = _SamlConfigurationStatus | java.lang.String
 
+type SecurityGroupId = java.lang.String
+
+type SecurityGroupIds = js.Array[SecurityGroupId]
+
 type SsoId = java.lang.String
 
 type StackSetName = java.lang.String
 
 type String = java.lang.String
+
+type SubnetId = java.lang.String
+
+type SubnetIds = js.Array[SubnetId]
 
 type TagKey = java.lang.String
 
@@ -156,6 +171,10 @@ type UserList = js.Array[User]
   - java.lang.String
 */
 type UserType = _UserType | java.lang.String
+
+type VpceId = java.lang.String
+
+type VpceIds = js.Array[VpceId]
 
 type WorkspaceId = java.lang.String
 

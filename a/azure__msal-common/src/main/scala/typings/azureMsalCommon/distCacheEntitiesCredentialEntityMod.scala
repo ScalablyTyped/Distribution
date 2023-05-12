@@ -434,11 +434,5 @@ object distCacheEntitiesCredentialEntityMod {
     @js.native
     def generateTargetForCacheKey: Any = js.native
     inline def generateTargetForCacheKey_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("generateTargetForCacheKey")(x.asInstanceOf[js.Any])
-    
-    /**
-      * helper function to return `CredentialType`
-      * @param key
-      */
-    inline def getCredentialType(key: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getCredentialType")(key.asInstanceOf[js.Any]).asInstanceOf[String]
   }
 }

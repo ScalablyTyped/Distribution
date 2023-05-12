@@ -1,13 +1,18 @@
 package typings.luxon
 
 import typings.luxon.anon.Separator
+import typings.luxon.luxonBooleans.`false`
+import typings.luxon.luxonStrings.`Invalid Interval`
 import typings.luxon.srcDatetimeMod.DateTime
 import typings.luxon.srcDatetimeMod.DateTimeOptions
 import typings.luxon.srcDatetimeMod.DiffOptions
+import typings.luxon.srcDatetimeMod.LocaleOptions
 import typings.luxon.srcDatetimeMod.ToISOTimeOptions
 import typings.luxon.srcDurationMod.Duration
 import typings.luxon.srcDurationMod.DurationLike
 import typings.luxon.srcDurationMod.DurationUnit
+import typings.luxon.srcUtilMod.IfInvalid
+import typings.std.Intl.DateTimeFormatOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,24 +26,20 @@ object srcIntervalMod {
     
     /**
       * Return whether this Interval's start is adjacent to the specified Interval's end.
-      *
-      * @param other
       */
-    def abutsEnd(other: Interval): Boolean = js.native
+    def abutsEnd(other: Interval): Boolean | IfInvalid[`false`] = js.native
     
     /**
       * Return whether this Interval's end is adjacent to the specified Interval's start.
-      *
-      * @param other
       */
-    def abutsStart(other: Interval): Boolean = js.native
+    def abutsStart(other: Interval): Boolean | IfInvalid[`false`] = js.native
     
     /**
       * Return whether this Interval contains the specified DateTime.
       *
       * @param dateTime
       */
-    def contains(dateTime: DateTime): Boolean = js.native
+    def contains(dateTime: DateTime): Boolean | IfInvalid[`false`] = js.native
     
     /**
       * Returns the count of minutes, hours, days, months, or years included in the Interval, even in part.
@@ -47,13 +48,11 @@ object srcIntervalMod {
       *
       * @param unit - the unit of time to count. Defaults to 'milliseconds'.
       */
-    def count(): Double = js.native
-    def count(unit: DurationUnit): Double = js.native
+    def count(): Double | IfInvalid[Double] = js.native
+    def count(unit: DurationUnit): Double | IfInvalid[Double] = js.native
     
     /**
-      * Return an Interval representing the span of time in this Interval that doesn't overlap with any of the specified Intervals.
-      *
-      * @param intervals
+      * Return Intervals representing the spans of time in this Interval that not overlap with any of the specified Intervals.
       */
     def difference(intervals: Interval*): js.Array[Interval] = js.native
     
@@ -62,66 +61,60 @@ object srcIntervalMod {
       *
       * @param numberOfParts - The number of Intervals to divide the Interval into.
       */
-    def divideEqually(numberOfParts: Double): js.Array[Interval] = js.native
+    def divideEqually(numberOfParts: Double): js.Array[Interval] | IfInvalid[js.Array[Any]] = js.native
     
     /**
       * Returns the end of the Interval
       */
-    def end: DateTime = js.native
+    def end: DateTime | IfInvalid[Null] = js.native
     
     /**
       * Return whether this Interval engulfs the start and end of the specified Interval.
-      *
-      * @param other
       */
-    def engulfs(other: Interval): Boolean = js.native
+    def engulfs(other: Interval): Boolean | IfInvalid[`false`] = js.native
     
     /**
       * Return whether this Interval has the same start and end as the specified Interval.
-      *
-      * @param other
       */
-    def equals(other: Interval): Boolean = js.native
+    def equals(other: Interval): Boolean | IfInvalid[`false`] = js.native
     
     /**
       * Returns whether this Interval's start and end are both in the same unit of time
       *
       * @param unit - the unit of time to check sameness on
       */
-    def hasSame(unit: DurationUnit): Boolean = js.native
+    def hasSame(unit: DurationUnit): Boolean | IfInvalid[`false`] = js.native
     
     /**
       * Return an Interval representing the intersection of this Interval and the specified Interval.
       * Specifically, the resulting Interval has the maximum start time and the minimum end time of the two Intervals.
-      * Returns null if the intersection is empty, meaning, the intervals don't intersect.
-      *
-      * @param other
+      * Returns null if the intersection is empty, meaning the intervals do not intersect.
       */
     def intersection(other: Interval): Interval | Null = js.native
     
     /**
       * Returns an explanation of why this Interval became invalid, or null if the Interval is valid
       */
-    def invalidExplanation: String = js.native
+    def invalidExplanation: String | Null = js.native
     
     /**
       * Returns an error code if this Interval is invalid, or null if the Interval is valid
       */
-    def invalidReason: String = js.native
+    def invalidReason: String | Null = js.native
     
     /**
       * Return whether this Interval's start is after the specified DateTime.
       *
       * @param dateTime
       */
-    def isAfter(dateTime: DateTime): Boolean = js.native
+    def isAfter(dateTime: DateTime): Boolean | IfInvalid[`false`] = js.native
     
     /**
       * Return whether this Interval's end is before the specified DateTime.
       *
       * @param dateTime
       */
-    def isBefore(dateTime: DateTime): Boolean = js.native
+    def isBefore(dateTime: DateTime): Boolean | IfInvalid[`false`] = js.native
     
     /**
       * Return whether this Interval has the same start and end DateTimes.
@@ -138,13 +131,11 @@ object srcIntervalMod {
       *
       * @param unit - the unit (such as 'hours' or 'days') to return the length in.
       */
-    def length(): Double = js.native
-    def length(unit: DurationUnit): Double = js.native
+    def length(): Double | IfInvalid[Double] = js.native
+    def length(unit: DurationUnit): Double | IfInvalid[Double] = js.native
     
     /**
       * Run mapFn on the interval start and end, returning a new Interval from the resulting DateTimes
-      *
-      * @param mapFn
       *
       * @example
       * Interval.fromDateTimes(dt1, dt2).mapEndpoints(endpoint => endpoint.toUTC())
@@ -155,8 +146,6 @@ object srcIntervalMod {
     
     /**
       * Return whether this Interval overlaps with the specified Interval
-      *
-      * @param other
       */
     def overlaps(other: Interval): Boolean = js.native
     
@@ -175,7 +164,7 @@ object srcIntervalMod {
       *
       * @param dateTimes - the unit of time to count.
       */
-    def splitAt(dateTimes: DateTime*): js.Array[Interval] = js.native
+    def splitAt(dateTimes: DateTime*): js.Array[Interval] | IfInvalid[js.Array[Any]] = js.native
     
     /**
       * Split this Interval into smaller Intervals, each of the specified length.
@@ -183,12 +172,12 @@ object srcIntervalMod {
       *
       * @param duration - The length of each resulting interval.
       */
-    def splitBy(duration: DurationLike): js.Array[Interval] = js.native
+    def splitBy(duration: DurationLike): js.Array[Interval] | IfInvalid[js.Array[Any]] = js.native
     
     /**
       * Returns the start of the Interval
       */
-    def start: DateTime = js.native
+    def start: DateTime | IfInvalid[Null] = js.native
     
     /**
       * Return a Duration representing the time spanned by this interval.
@@ -222,8 +211,8 @@ object srcIntervalMod {
       * @param opts - options
       * @param opts.separator - a separator to place between the start and end representations. Defaults to ' - '.
       */
-    def toFormat(dateFormat: String): String = js.native
-    def toFormat(dateFormat: String, opts: Separator): String = js.native
+    def toFormat(dateFormat: String): String | (IfInvalid[`Invalid Interval`]) = js.native
+    def toFormat(dateFormat: String, opts: Separator): String | (IfInvalid[`Invalid Interval`]) = js.native
     
     /**
       * Returns an ISO 8601-compliant string representation of this Interval.
@@ -231,31 +220,33 @@ object srcIntervalMod {
       *
       * @param opts - The same options as {@link DateTime#toISO}
       */
-    def toISO(): String = js.native
-    def toISO(opts: ToISOTimeOptions): String = js.native
+    def toISO(): String | (IfInvalid[`Invalid Interval`]) = js.native
+    def toISO(opts: ToISOTimeOptions): String | (IfInvalid[`Invalid Interval`]) = js.native
     
     /**
-      * Returns an ISO 8601-compliant string representation of date of this Interval.
+      * Returns an ISO 8601-compliant string representation of the dates in this Interval.
       * The time components are ignored.
       * @see https://en.wikipedia.org/wiki/ISO_8601#Time_intervals
       */
-    def toISODate(): String = js.native
+    def toISODate(): String | (IfInvalid[`Invalid Interval`]) = js.native
     
     /**
-      * Returns an ISO 8601-compliant string representation of time of this Interval.
+      * Returns an ISO 8601-compliant string representation of the times in this Interval.
       * The date components are ignored.
       * @see https://en.wikipedia.org/wiki/ISO_8601#Time_intervals
       *
       * @param opts - The same options as {@link DateTime.toISO}
       */
-    def toISOTime(): String = js.native
-    def toISOTime(opts: ToISOTimeOptions): String = js.native
+    def toISOTime(): String | (IfInvalid[`Invalid Interval`]) = js.native
+    def toISOTime(opts: ToISOTimeOptions): String | (IfInvalid[`Invalid Interval`]) = js.native
+    
+    def toLocaleString(formatOpts: Unit, opts: LocaleOptions): String | (IfInvalid[`Invalid Interval`]) = js.native
+    def toLocaleString(formatOpts: DateTimeFormatOptions): String | (IfInvalid[`Invalid Interval`]) = js.native
+    def toLocaleString(formatOpts: DateTimeFormatOptions, opts: LocaleOptions): String | (IfInvalid[`Invalid Interval`]) = js.native
     
     /**
       * Return an Interval representing the union of this Interval and the specified Interval.
       * Specifically, the resulting Interval has the minimum start time and the maximum end time of the two Intervals.
-      *
-      * @param other
       */
     def union(other: Interval): Interval = js.native
   }
@@ -305,7 +296,7 @@ object srcIntervalMod {
       * Create an invalid Interval.
       *
       * @param reason - simple string of why this Interval is invalid. Should not contain parameters or anything else data-dependent
-      * @param explanation - longer explanation, may include parameters and other useful debugging information. Defaults to null.
+      * @param explanation - longer explanation, may include parameters and other useful debugging information.
       */
     inline def invalid(reason: String): Interval = ^.asInstanceOf[js.Dynamic].applyDynamic("invalid")(reason.asInstanceOf[js.Any]).asInstanceOf[Interval]
     inline def invalid(reason: String, explanation: String): Interval = (^.asInstanceOf[js.Dynamic].applyDynamic("invalid")(reason.asInstanceOf[js.Any], explanation.asInstanceOf[js.Any])).asInstanceOf[Interval]
@@ -318,17 +309,13 @@ object srcIntervalMod {
     inline def isInterval(o: Any): /* is luxon.luxon/src/interval.Interval */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInterval")(o.asInstanceOf[js.Any]).asInstanceOf[/* is luxon.luxon/src/interval.Interval */ Boolean]
     
     /**
-      * Merge an array of Intervals into a equivalent minimal set of Intervals.
+      * Merge an array of Intervals into an equivalent minimal set of Intervals.
       * Combines overlapping and adjacent Intervals.
-      *
-      * @param intervals
       */
     inline def merge(intervals: js.Array[Interval]): js.Array[Interval] = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(intervals.asInstanceOf[js.Any]).asInstanceOf[js.Array[Interval]]
     
     /**
       * Return an array of Intervals representing the spans of time that only appear in one of the specified Intervals.
-      *
-      *  @param intervals
       */
     inline def xor(intervals: js.Array[Interval]): js.Array[Interval] = ^.asInstanceOf[js.Dynamic].applyDynamic("xor")(intervals.asInstanceOf[js.Any]).asInstanceOf[js.Array[Interval]]
   }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for use-gesture__react
 
-Typings are for version 10.2.21
+Typings are for version 10.2.26
 
 ## Library description:
 React target for @use-gesture

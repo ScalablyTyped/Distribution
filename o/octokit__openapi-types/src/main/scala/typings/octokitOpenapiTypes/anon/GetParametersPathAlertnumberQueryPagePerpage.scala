@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetParametersPathAlertnumberQueryPagePerpage extends StObject {
   
   /**
-    * Lists all locations for a given secret scanning alert for an eligible repository.
+    * List locations for a secret scanning alert
+    * @description Lists all locations for a given secret scanning alert for an eligible repository.
     * To use this endpoint, you must be an administrator for the repository or for the organization that owns the repository, and you must use a personal access token with the `repo` scope or `security_events` scope.
     * For public repositories, you may instead use the `public_repo` scope.
     *

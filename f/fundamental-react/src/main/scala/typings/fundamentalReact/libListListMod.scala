@@ -25,6 +25,7 @@ import typings.react.mod.global.JSX.Element
 import typings.std.Event
 import typings.std.HTMLAnchorElement
 import typings.std.HTMLInputElement
+import typings.std.HTMLLIElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -206,15 +207,20 @@ object libListListMod {
     }
   }
   
-  trait ListItemProps extends StObject {
+  trait ListItemProps
+    extends StObject
+       with HTMLAttributes[HTMLLIElement] {
     
-    var children: js.UndefOr[ReactNode] = js.undefined
+    /** Internal use only */
+    var navigation: js.UndefOr[Boolean] = js.undefined
     
-    var className: js.UndefOr[String] = js.undefined
-    
-    var onClick: js.UndefOr[js.Function1[/* repeated */ Any, Any]] = js.undefined
+    @JSName("onClick")
+    var onClick_ListItemProps: js.UndefOr[js.Function1[/* repeated */ Any, Any]] = js.undefined
     
     var selected: js.UndefOr[Boolean] = js.undefined
+    
+    /** URL to navigate to if list item is a link */
+    var url: js.UndefOr[String] = js.undefined
   }
   object ListItemProps {
     
@@ -226,13 +232,9 @@ object libListListMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: ListItemProps] (val x: Self) extends AnyVal {
       
-      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setNavigation(value: Boolean): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
       
-      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
-      
-      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
-      
-      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setNavigationUndefined: Self = StObject.set(x, "navigation", js.undefined)
       
       inline def setOnClick(value: /* repeated */ Any => Any): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
@@ -241,6 +243,10 @@ object libListListMod {
       inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
       
       inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
+      
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
   

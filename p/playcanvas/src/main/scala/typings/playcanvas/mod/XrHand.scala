@@ -26,7 +26,7 @@ trait XrHand extends EventHandler {
   /* private */ var _fingers: Any = js.native
   
   /**
-    * @type {XrInputSource}
+    * @type {import('./xr-input-source.js').XrInputSource}
     * @private
     */
   /* private */ var _inputSource: Any = js.native
@@ -44,7 +44,7 @@ trait XrHand extends EventHandler {
   /* private */ var _jointsById: Any = js.native
   
   /**
-    * @type {XrManager}
+    * @type {import('./xr-manager.js').XrManager}
     * @private
     */
   /* private */ var _manager: Any = js.native

@@ -16,7 +16,7 @@ object libIconsRocketOutlinedMod extends Shortcut {
   @js.native
   trait RocketOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_RocketOutlinedIconType: String = js.native

@@ -6,6 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SDPHeaderExtension extends StObject {
   
+  var atrributes: js.UndefOr[String] = js.undefined
+  
   var direction: js.UndefOr[SDPDirection] = js.undefined
   
   var id: Double
@@ -21,6 +23,10 @@ object SDPHeaderExtension {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: SDPHeaderExtension] (val x: Self) extends AnyVal {
+    
+    inline def setAtrributes(value: String): Self = StObject.set(x, "atrributes", value.asInstanceOf[js.Any])
+    
+    inline def setAtrributesUndefined: Self = StObject.set(x, "atrributes", js.undefined)
     
     inline def setDirection(value: SDPDirection): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     

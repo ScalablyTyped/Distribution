@@ -6,20 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Pusher extends StObject {
   
-  var commit: String
+  var commit: String | Null
   
-  /** Format: date-time */
   var created_at: String
   
   var duration: Double
   
-  var error: `392`
+  var error: `441`
   
-  var pusher: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-simple-user'] */ js.Any
+  /** User */
+  var pusher: Deleted | Null
   
   var status: String
   
-  /** Format: date-time */
   var updated_at: String
   
   /** Format: uri */
@@ -28,16 +27,14 @@ trait Pusher extends StObject {
 object Pusher {
   
   inline def apply(
-    commit: String,
     created_at: String,
     duration: Double,
-    error: `392`,
-    pusher: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-simple-user'] */ js.Any,
+    error: `441`,
     status: String,
     updated_at: String,
     url: String
   ): Pusher = {
-    val __obj = js.Dynamic.literal(commit = commit.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], pusher = pusher.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(created_at = created_at.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], commit = null, pusher = null)
     __obj.asInstanceOf[Pusher]
   }
   
@@ -46,15 +43,17 @@ object Pusher {
     
     inline def setCommit(value: String): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
     
+    inline def setCommitNull: Self = StObject.set(x, "commit", null)
+    
     inline def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
     
     inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    inline def setError(value: `392`): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: `441`): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    inline def setPusher(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-simple-user'] */ js.Any
-    ): Self = StObject.set(x, "pusher", value.asInstanceOf[js.Any])
+    inline def setPusher(value: Deleted): Self = StObject.set(x, "pusher", value.asInstanceOf[js.Any])
+    
+    inline def setPusherNull: Self = StObject.set(x, "pusher", null)
     
     inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

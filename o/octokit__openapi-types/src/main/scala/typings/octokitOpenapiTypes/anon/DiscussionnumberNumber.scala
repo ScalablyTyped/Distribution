@@ -6,10 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DiscussionnumberNumber extends StObject {
   
-  /** The number that identifies the discussion. */
   var discussion_number: Double
   
-  /** The unique identifier of the team. */
   var team_id: Double
 }
 object DiscussionnumberNumber {

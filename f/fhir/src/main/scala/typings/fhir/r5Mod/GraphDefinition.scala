@@ -13,6 +13,10 @@ trait GraphDefinition
      with DomainResource
      with _FhirResource {
   
+  var _copyright: js.UndefOr[Element] = js.undefined
+  
+  var _copyrightLabel: js.UndefOr[Element] = js.undefined
+  
   var _date: js.UndefOr[Element] = js.undefined
   
   var _description: js.UndefOr[Element] = js.undefined
@@ -20,8 +24,6 @@ trait GraphDefinition
   var _experimental: js.UndefOr[Element] = js.undefined
   
   var _name: js.UndefOr[Element] = js.undefined
-  
-  var _profile: js.UndefOr[Element] = js.undefined
   
   var _publisher: js.UndefOr[Element] = js.undefined
   
@@ -31,22 +33,38 @@ trait GraphDefinition
   
   var _status: js.UndefOr[Element] = js.undefined
   
+  var _title: js.UndefOr[Element] = js.undefined
+  
   var _url: js.UndefOr[Element] = js.undefined
   
   var _version: js.UndefOr[Element] = js.undefined
   
+  var _versionAlgorithmString: js.UndefOr[Element] = js.undefined
+  
   /**
     * May be a web site, an email address, a telephone number, etc.
+    * See guidance around (not) making local changes to elements [here](canonicalresource.html#localization).
     */
   var contact: js.UndefOr[js.Array[ContactDetail]] = js.undefined
   
   /**
-    * Note that this is not the same as the resource last-modified-date, since the resource may be a secondary representation of the graph definition. Additional specific dates may be added as extensions or be found by consulting Provenances associated with past versions of the resource.
+    * ...
+    */
+  var copyright: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The (c) symbol should NOT be included in this string. It will be added by software when rendering the notation. Full details about licensing, restrictions, warrantees, etc. goes in the more general 'copyright' element.
+    */
+  var copyrightLabel: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The date is often not tracked until the resource is published, but may be present on draft content. Note that this is not the same as the resource last-modified-date, since the resource may be a secondary representation of the graph definition. Additional specific dates may be added as extensions or be found by consulting Provenances associated with past versions of the resource.
+    * See guidance around (not) making local changes to elements [here](canonicalresource.html#localization).
     */
   var date: js.UndefOr[String] = js.undefined
   
   /**
-    * This description can be used to capture details such as why the graph definition was built, comments about misuse, instructions for clinical use and interpretation, literature references, examples from the paper world, etc. It is not a rendering of the graph definition as conveyed in the 'text' field of the resource itself. This item SHOULD be populated unless the information is available from context (e.g. the language of the graph definition is presumed to be the predominant language in the place the graph definition was created).
+    * This description can be used to capture details such as comments about misuse, instructions for clinical use and interpretation, literature references, examples from the paper world, etc. It is not a rendering of the graph definition as conveyed in the 'text' field of the resource itself. This item SHOULD be populated unless the information is available from context (e.g. the language of the graph definition is presumed to be the predominant language in the place the graph definition was created).
     */
   var description: js.UndefOr[String] = js.undefined
   
@@ -56,7 +74,13 @@ trait GraphDefinition
   var experimental: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * A formal identifier that is used to identify this GraphDefinition when it is represented in other formats, or referenced in a specification, model, design or an instance.
+    */
+  var identifier: js.UndefOr[js.Array[Identifier]] = js.undefined
+  
+  /**
     * It may be possible for the graph definition to be used in jurisdictions other than those for which it was originally designed or intended.
+    * DEPRECATION NOTE: For consistency, implementations are encouraged to migrate to using the new 'jurisdiction' code in the useContext element.  (I.e. useContext.code indicating http://terminology.hl7.org/CodeSystem/usage-context-type#jurisdiction and useContext.valueCodeableConcept indicating the jurisdiction.)
     */
   var jurisdiction: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
@@ -71,9 +95,9 @@ trait GraphDefinition
   var name: String
   
   /**
-    * The code does not include the '$' prefix that is always included in the URL when the operation is invoked.
+    * Potential target for the link.
     */
-  var profile: js.UndefOr[String] = js.undefined
+  var node: js.UndefOr[js.Array[GraphDefinitionNode]] = js.undefined
   
   /**
     * Usually an organization but may be an individual. The publisher (or steward) of the graph definition is the organization or individual primarily responsible for the maintenance and upkeep of the graph definition. This is not necessarily the same individual or organization that developed and initially authored the content. The publisher is the primary point of contact for questions or issues with the graph definition. This item SHOULD be populated unless the information is available from context.
@@ -90,14 +114,20 @@ trait GraphDefinition
   val resourceType_GraphDefinition: typings.fhir.fhirStrings.GraphDefinition
   
   /**
-    * The type of FHIR resource at which instances of this graph start.
+    * The Node at which instances of this graph start. If there is no nominated start, the graph can start at any of the nodes.
     */
-  var start: String
+  var start: js.UndefOr[String] = js.undefined
   
   /**
     * Allows filtering of graph definitions that are appropriate for use versus not.
+    * See guidance around (not) making local changes to elements [here](canonicalresource.html#localization).
     */
   var status: draft | active | retired | unknown
+  
+  /**
+    * This name does not need to be machine-processing friendly and may contain punctuation, white-space, etc.
+    */
+  var title: js.UndefOr[String] = js.undefined
   
   /**
     * Can be a urn:uuid: or a urn:oid: but real http: addresses are preferred.  Multiple instances may share the same URL if they have a distinct version.
@@ -112,14 +142,24 @@ trait GraphDefinition
   var useContext: js.UndefOr[js.Array[UsageContext]] = js.undefined
   
   /**
-    * There may be different graph definition instances that have the same identifier but different versions.  The version can be appended to the url in a reference to allow a reference to a particular business version of the graph definition with the format [url]|[version].
+    * There may be different graph definition instances that have the same identifier but different versions.  The version can be appended to the url in a reference to allow a reference to a particular business version of the graph definition with the format [url]|[version]. The version SHOULD NOT contain a '#' - see [Business Version](resource.html#bv-format).
     */
   var version: js.UndefOr[String] = js.undefined
+  
+  /**
+    * If set as a string, this is a FHIRPath expression that has two additional context variables passed in - %version1 and %version2 and will return a negative number if version1 is newer, a positive number if version2 and a 0 if the version ordering can't be successfully be determined.
+    */
+  var versionAlgorithmCoding: js.UndefOr[Coding] = js.undefined
+  
+  /**
+    * If set as a string, this is a FHIRPath expression that has two additional context variables passed in - %version1 and %version2 and will return a negative number if version1 is newer, a positive number if version2 and a 0 if the version ordering can't be successfully be determined.
+    */
+  var versionAlgorithmString: js.UndefOr[String] = js.undefined
 }
 object GraphDefinition {
   
-  inline def apply(name: String, start: String, status: draft | active | retired | unknown): GraphDefinition = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], resourceType = "GraphDefinition", start = start.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+  inline def apply(name: String, status: draft | active | retired | unknown): GraphDefinition = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], resourceType = "GraphDefinition", status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphDefinition]
   }
   
@@ -132,6 +172,14 @@ object GraphDefinition {
     
     inline def setContactVarargs(value: ContactDetail*): Self = StObject.set(x, "contact", js.Array(value*))
     
+    inline def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
+    
+    inline def setCopyrightLabel(value: String): Self = StObject.set(x, "copyrightLabel", value.asInstanceOf[js.Any])
+    
+    inline def setCopyrightLabelUndefined: Self = StObject.set(x, "copyrightLabel", js.undefined)
+    
+    inline def setCopyrightUndefined: Self = StObject.set(x, "copyright", js.undefined)
+    
     inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
@@ -143,6 +191,12 @@ object GraphDefinition {
     inline def setExperimental(value: Boolean): Self = StObject.set(x, "experimental", value.asInstanceOf[js.Any])
     
     inline def setExperimentalUndefined: Self = StObject.set(x, "experimental", js.undefined)
+    
+    inline def setIdentifier(value: js.Array[Identifier]): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
+    
+    inline def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
+    
+    inline def setIdentifierVarargs(value: Identifier*): Self = StObject.set(x, "identifier", js.Array(value*))
     
     inline def setJurisdiction(value: js.Array[CodeableConcept]): Self = StObject.set(x, "jurisdiction", value.asInstanceOf[js.Any])
     
@@ -158,9 +212,11 @@ object GraphDefinition {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setProfile(value: String): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
+    inline def setNode(value: js.Array[GraphDefinitionNode]): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     
-    inline def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
+    inline def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
+    
+    inline def setNodeVarargs(value: GraphDefinitionNode*): Self = StObject.set(x, "node", js.Array(value*))
     
     inline def setPublisher(value: String): Self = StObject.set(x, "publisher", value.asInstanceOf[js.Any])
     
@@ -174,7 +230,13 @@ object GraphDefinition {
     
     inline def setStart(value: String): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    
     inline def setStatus(value: draft | active | retired | unknown): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
@@ -188,7 +250,23 @@ object GraphDefinition {
     
     inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
+    inline def setVersionAlgorithmCoding(value: Coding): Self = StObject.set(x, "versionAlgorithmCoding", value.asInstanceOf[js.Any])
+    
+    inline def setVersionAlgorithmCodingUndefined: Self = StObject.set(x, "versionAlgorithmCoding", js.undefined)
+    
+    inline def setVersionAlgorithmString(value: String): Self = StObject.set(x, "versionAlgorithmString", value.asInstanceOf[js.Any])
+    
+    inline def setVersionAlgorithmStringUndefined: Self = StObject.set(x, "versionAlgorithmString", js.undefined)
+    
     inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    
+    inline def set_copyright(value: Element): Self = StObject.set(x, "_copyright", value.asInstanceOf[js.Any])
+    
+    inline def set_copyrightLabel(value: Element): Self = StObject.set(x, "_copyrightLabel", value.asInstanceOf[js.Any])
+    
+    inline def set_copyrightLabelUndefined: Self = StObject.set(x, "_copyrightLabel", js.undefined)
+    
+    inline def set_copyrightUndefined: Self = StObject.set(x, "_copyright", js.undefined)
     
     inline def set_date(value: Element): Self = StObject.set(x, "_date", value.asInstanceOf[js.Any])
     
@@ -206,10 +284,6 @@ object GraphDefinition {
     
     inline def set_nameUndefined: Self = StObject.set(x, "_name", js.undefined)
     
-    inline def set_profile(value: Element): Self = StObject.set(x, "_profile", value.asInstanceOf[js.Any])
-    
-    inline def set_profileUndefined: Self = StObject.set(x, "_profile", js.undefined)
-    
     inline def set_publisher(value: Element): Self = StObject.set(x, "_publisher", value.asInstanceOf[js.Any])
     
     inline def set_publisherUndefined: Self = StObject.set(x, "_publisher", js.undefined)
@@ -226,11 +300,19 @@ object GraphDefinition {
     
     inline def set_statusUndefined: Self = StObject.set(x, "_status", js.undefined)
     
+    inline def set_title(value: Element): Self = StObject.set(x, "_title", value.asInstanceOf[js.Any])
+    
+    inline def set_titleUndefined: Self = StObject.set(x, "_title", js.undefined)
+    
     inline def set_url(value: Element): Self = StObject.set(x, "_url", value.asInstanceOf[js.Any])
     
     inline def set_urlUndefined: Self = StObject.set(x, "_url", js.undefined)
     
     inline def set_version(value: Element): Self = StObject.set(x, "_version", value.asInstanceOf[js.Any])
+    
+    inline def set_versionAlgorithmString(value: Element): Self = StObject.set(x, "_versionAlgorithmString", value.asInstanceOf[js.Any])
+    
+    inline def set_versionAlgorithmStringUndefined: Self = StObject.set(x, "_versionAlgorithmString", js.undefined)
     
     inline def set_versionUndefined: Self = StObject.set(x, "_version", js.undefined)
   }

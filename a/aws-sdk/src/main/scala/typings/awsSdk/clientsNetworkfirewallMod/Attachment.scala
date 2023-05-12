@@ -12,9 +12,14 @@ trait Attachment extends StObject {
   var EndpointId: js.UndefOr[typings.awsSdk.clientsNetworkfirewallMod.EndpointId] = js.undefined
   
   /**
-    * The current status of the firewall endpoint in the subnet. This value reflects both the instantiation of the endpoint in the VPC subnet and the sync states that are reported in the Config settings. When this value is READY, the endpoint is available and configured properly to handle network traffic. When the endpoint isn't available for traffic, this value will reflect its state, for example CREATING, DELETING, or FAILED.
+    * The current status of the firewall endpoint in the subnet. This value reflects both the instantiation of the endpoint in the VPC subnet and the sync states that are reported in the Config settings. When this value is READY, the endpoint is available and configured properly to handle network traffic. When the endpoint isn't available for traffic, this value will reflect its state, for example CREATING or DELETING.
     */
   var Status: js.UndefOr[AttachmentStatus] = js.undefined
+  
+  /**
+    * If Network Firewall fails to create or delete the firewall endpoint in the subnet, it populates this with the reason for the error or failure and how to resolve it. A FAILED status indicates a non-recoverable state, and a ERROR status indicates an issue that you can fix. Depending on the error, it can take as many as 15 minutes to populate this field. For more information about the causes for failiure or errors and solutions available for this field, see Troubleshooting firewall endpoint failures in the Network Firewall Developer Guide.
+    */
+  var StatusMessage: js.UndefOr[typings.awsSdk.clientsNetworkfirewallMod.StatusMessage] = js.undefined
   
   /**
     * The unique identifier of the subnet that you've specified to be used for a firewall endpoint. 
@@ -36,6 +41,10 @@ object Attachment {
     inline def setEndpointIdUndefined: Self = StObject.set(x, "EndpointId", js.undefined)
     
     inline def setStatus(value: AttachmentStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    
+    inline def setStatusMessage(value: StatusMessage): Self = StObject.set(x, "StatusMessage", value.asInstanceOf[js.Any])
+    
+    inline def setStatusMessageUndefined: Self = StObject.set(x, "StatusMessage", js.undefined)
     
     inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     

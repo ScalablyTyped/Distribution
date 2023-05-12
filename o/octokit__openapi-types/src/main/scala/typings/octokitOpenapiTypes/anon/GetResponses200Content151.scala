@@ -7,23 +7,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetResponses200Content151 extends StObject {
   
   /**
-    * Get all deployment environments for a workflow run that are waiting for protection rules to pass.
+    * Get GitHub Actions permissions for a repository
+    * @description Gets the GitHub Actions permissions policy for a repository, including whether GitHub Actions is enabled and the actions and reusable workflows allowed to run in the repository.
     *
-    * Anyone with read access to the repository can use this endpoint. If the repository is private, you must use an access token with the `repo` scope. GitHub Apps must have the `actions:read` permission to use this endpoint.
+    * You must authenticate using an access token with the `repo` scope to use this endpoint. GitHub Apps must have the `administration` repository permission to use this API.
     */
   var get: Responses200Content151
   
   /**
-    * Approve or reject pending deployments that are waiting on approval by a required reviewer.
+    * Set GitHub Actions permissions for a repository
+    * @description Sets the GitHub Actions permissions policy for enabling GitHub Actions and allowed actions and reusable workflows in the repository.
     *
-    * Required reviewers with read access to the repository contents and deployments can use this endpoint. Required reviewers must authenticate using an access token with the `repo` scope to use this endpoint.
+    * You must authenticate using an access token with the `repo` scope to use this endpoint. GitHub Apps must have the `administration` repository permission to use this API.
     */
-  var post: RequestBodyContentApplicationjsonComment
+  var put: RequestBodyContentApplicationjsonEnabled
 }
 object GetResponses200Content151 {
   
-  inline def apply(get: Responses200Content151, post: RequestBodyContentApplicationjsonComment): GetResponses200Content151 = {
-    val __obj = js.Dynamic.literal(get = get.asInstanceOf[js.Any], post = post.asInstanceOf[js.Any])
+  inline def apply(get: Responses200Content151, put: RequestBodyContentApplicationjsonEnabled): GetResponses200Content151 = {
+    val __obj = js.Dynamic.literal(get = get.asInstanceOf[js.Any], put = put.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetResponses200Content151]
   }
   
@@ -32,6 +34,6 @@ object GetResponses200Content151 {
     
     inline def setGet(value: Responses200Content151): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     
-    inline def setPost(value: RequestBodyContentApplicationjsonComment): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
+    inline def setPut(value: RequestBodyContentApplicationjsonEnabled): Self = StObject.set(x, "put", value.asInstanceOf[js.Any])
   }
 }

@@ -34,11 +34,25 @@ trait ListFormat extends StObject {
     */
   /* standard es2021.intl */
   def formatToParts(list: js.Iterable[String]): js.Array[TypeValue]
+  
+  /**
+    * Returns a new object with properties reflecting the locale and style
+    * formatting options computed during the construction of the current
+    * `Intl.ListFormat` object.
+    *
+    * [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/ListFormat/resolvedOptions).
+    */
+  /* standard es2021.intl */
+  def resolvedOptions(): ResolvedListFormatOptions
 }
 object ListFormat {
   
-  inline def apply(format: js.Iterable[String] => String, formatToParts: js.Iterable[String] => js.Array[TypeValue]): ListFormat = {
-    val __obj = js.Dynamic.literal(format = js.Any.fromFunction1(format), formatToParts = js.Any.fromFunction1(formatToParts))
+  inline def apply(
+    format: js.Iterable[String] => String,
+    formatToParts: js.Iterable[String] => js.Array[TypeValue],
+    resolvedOptions: () => ResolvedListFormatOptions
+  ): ListFormat = {
+    val __obj = js.Dynamic.literal(format = js.Any.fromFunction1(format), formatToParts = js.Any.fromFunction1(formatToParts), resolvedOptions = js.Any.fromFunction0(resolvedOptions))
     __obj.asInstanceOf[ListFormat]
   }
   
@@ -48,5 +62,7 @@ object ListFormat {
     inline def setFormat(value: js.Iterable[String] => String): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
     
     inline def setFormatToParts(value: js.Iterable[String] => js.Array[TypeValue]): Self = StObject.set(x, "formatToParts", js.Any.fromFunction1(value))
+    
+    inline def setResolvedOptions(value: () => ResolvedListFormatOptions): Self = StObject.set(x, "resolvedOptions", js.Any.fromFunction0(value))
   }
 }

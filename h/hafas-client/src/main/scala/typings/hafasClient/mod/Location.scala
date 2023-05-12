@@ -5,9 +5,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A location object is used by other items to indicate their locations.
-  */
 trait Location extends StObject {
   
   var address: js.UndefOr[String] = js.undefined

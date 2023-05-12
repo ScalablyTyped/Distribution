@@ -140,6 +140,29 @@ trait HostedFields extends StObject {
   def on_validityChange(event: validityChange, handler: js.Function1[/* event */ HostedFieldsEvent, Unit]): Unit = js.native
   
   /**
+    * Removes a supported attribute from a {@link module:braintree-web/hosted-fields~field field}.
+    *
+    * @param options The options for the attribute you wish to remove.
+    * @param options.field The field from which you wish to remove an attribute. Must be a valid {@link module:braintree-web/hosted-fields~fieldOptions fieldOption}.
+    * @param options.attribute The name of the attribute you wish to remove from the field.
+    * @param callback Callback executed on completion, containing an error if one occurred. No data is returned if the attribute is removed successfully.
+    *
+    * @example <caption>Remove the placeholder attribute of a field</caption>
+    * hostedFieldsInstance.removeAttribute({
+    *   field: 'number',
+    *   attribute: 'placeholder'
+    * }, function (attributeErr) {
+    *   if (attributeErr) {
+    *     console.error(attributeErr);
+    *   }
+    * });
+    *
+    * @returns Returns a promise if no callback is provided.
+    */
+  def removeAttribute(options: HostedFieldAttributeOptions): Unit = js.native
+  def removeAttribute(options: HostedFieldAttributeOptions, callback: callback[Any]): Unit = js.native
+  
+  /**
     * Removes a class to a {@link module:braintree-web/hosted-fields~field field}. Useful for updating field styles when events occur elsewhere in your checkout.     *
     * @example
     * hostedFieldsInstance.addClass('number', 'custom-class', function (addClassErr) {
@@ -154,6 +177,43 @@ trait HostedFields extends StObject {
     */
   def removeClass(field: String, classname: String): Unit = js.native
   def removeClass(field: String, classname: String, callback: callback[Any]): Unit = js.native
+  
+  /**
+    * Sets an attribute of a {@link module:braintree-web/hosted-fields~field field}.
+    * Supported attributes are `aria-invalid`, `aria-required`, `disabled`, and `placeholder`.
+    *
+    * @param options The options for the attribute you wish to set.
+    * @param options.field The field to which you wish to add an attribute. Must be a valid {@link module:braintree-web/hosted-fields~fieldOptions fieldOption}.
+    * @param options.attribute The name of the attribute you wish to add to the field.
+    * @param options.value The value for the attribute.
+    * @param callback Callback executed on completion, containing an error if one occurred. No data is returned if the attribute is set successfully.
+    *
+    * @example <caption>Set the placeholder attribute of a field</caption>
+    * hostedFieldsInstance.setAttribute({
+    *   field: 'number',
+    *   attribute: 'placeholder',
+    *   value: '1111 1111 1111 1111'
+    * }, function (attributeErr) {
+    *   if (attributeErr) {
+    *     console.error(attributeErr);
+    *   }
+    * });
+    *
+    * @example <caption>Set the aria-required attribute of a field</caption>
+    * hostedFieldsInstance.setAttribute({
+    *   field: 'number',
+    *   attribute: 'aria-required',
+    *   value: true
+    * }, function (attributeErr) {
+    *   if (attributeErr) {
+    *     console.error(attributeErr);
+    *   }
+    * });
+    *
+    * @returns Returns a promise if no callback is provided.
+    */
+  def setAttribute(options: HostedFieldAttributeOptions): Unit = js.native
+  def setAttribute(options: HostedFieldAttributeOptions, callback: callback[Any]): Unit = js.native
   
   /**
     * Sets the placeholder of a {@link module:braintree-web/hosted-fields~field field}.     *

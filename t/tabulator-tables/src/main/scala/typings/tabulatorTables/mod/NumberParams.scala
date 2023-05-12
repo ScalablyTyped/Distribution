@@ -16,6 +16,9 @@ trait NumberParams
   // range,number
   var min: js.UndefOr[Double] = js.undefined
   
+  /** When the editor is loaded select its text content */
+  var selectContents: js.UndefOr[Boolean] = js.undefined
+  
   var step: js.UndefOr[Double] = js.undefined
   
   var verticalNavigation: js.UndefOr[editor | table] = js.undefined
@@ -37,6 +40,10 @@ object NumberParams {
     inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
     inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+    
+    inline def setSelectContents(value: Boolean): Self = StObject.set(x, "selectContents", value.asInstanceOf[js.Any])
+    
+    inline def setSelectContentsUndefined: Self = StObject.set(x, "selectContents", js.undefined)
     
     inline def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     

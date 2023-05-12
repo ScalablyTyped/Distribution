@@ -1,5 +1,6 @@
 package typings.gestalt
 
+import typings.gestalt.mod.RoundingType
 import typings.gestalt.mod.SignedUpTo12
 import typings.gestalt.mod.UnsignedUpTo12
 import org.scalablytyped.runtime.StObject
@@ -83,6 +84,7 @@ object gestaltInts {
   @js.native
   sealed trait `0`
     extends StObject
+       with RoundingType
        with SignedUpTo12
        with UnsignedUpTo12
   inline def `0`: `0` = 0.asInstanceOf[`0`]
@@ -90,6 +92,7 @@ object gestaltInts {
   @js.native
   sealed trait `1`
     extends StObject
+       with RoundingType
        with SignedUpTo12
        with UnsignedUpTo12
   inline def `1`: `1` = 1.asInstanceOf[`1`]
@@ -118,6 +121,7 @@ object gestaltInts {
   @js.native
   sealed trait `2`
     extends StObject
+       with RoundingType
        with SignedUpTo12
        with UnsignedUpTo12
   inline def `2`: `2` = 2.asInstanceOf[`2`]
@@ -125,6 +129,7 @@ object gestaltInts {
   @js.native
   sealed trait `3`
     extends StObject
+       with RoundingType
        with SignedUpTo12
        with UnsignedUpTo12
   inline def `3`: `3` = 3.asInstanceOf[`3`]
@@ -132,6 +137,7 @@ object gestaltInts {
   @js.native
   sealed trait `4`
     extends StObject
+       with RoundingType
        with SignedUpTo12
        with UnsignedUpTo12
   inline def `4`: `4` = 4.asInstanceOf[`4`]
@@ -139,6 +145,7 @@ object gestaltInts {
   @js.native
   sealed trait `5`
     extends StObject
+       with RoundingType
        with SignedUpTo12
        with UnsignedUpTo12
   inline def `5`: `5` = 5.asInstanceOf[`5`]
@@ -146,6 +153,7 @@ object gestaltInts {
   @js.native
   sealed trait `6`
     extends StObject
+       with RoundingType
        with SignedUpTo12
        with UnsignedUpTo12
   inline def `6`: `6` = 6.asInstanceOf[`6`]
@@ -153,6 +161,7 @@ object gestaltInts {
   @js.native
   sealed trait `7`
     extends StObject
+       with RoundingType
        with SignedUpTo12
        with UnsignedUpTo12
   inline def `7`: `7` = 7.asInstanceOf[`7`]
@@ -160,6 +169,7 @@ object gestaltInts {
   @js.native
   sealed trait `8`
     extends StObject
+       with RoundingType
        with SignedUpTo12
        with UnsignedUpTo12
   inline def `8`: `8` = 8.asInstanceOf[`8`]

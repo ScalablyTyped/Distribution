@@ -1,5 +1,6 @@
 package typings.w3cCssTypedObjectModelLevel1
 
+import typings.std.CSSNumberish
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,14 +14,14 @@ trait CSSMathInvert
 object CSSMathInvert {
   
   inline def apply(
-    add: /* repeated */ CSSNumberOrNumeric => CSSNumericValue,
-    div: /* repeated */ CSSNumberOrNumeric => CSSNumericValue,
-    equals_ : /* repeated */ CSSNumberOrNumeric => Boolean,
-    max: /* repeated */ CSSNumberOrNumeric => CSSNumericValue,
-    min: /* repeated */ CSSNumberOrNumeric => CSSNumericValue,
-    mul: /* repeated */ CSSNumberOrNumeric => CSSNumericValue,
-    operator: CSSMathOperator,
-    sub: /* repeated */ CSSNumberOrNumeric => CSSNumericValue,
+    add: /* repeated */ CSSNumberish => CSSNumericValue,
+    div: /* repeated */ CSSNumberish => CSSNumericValue,
+    equals_ : /* repeated */ CSSNumberish => Boolean,
+    max: /* repeated */ CSSNumberish => CSSNumericValue,
+    min: /* repeated */ CSSNumberish => CSSNumericValue,
+    mul: /* repeated */ CSSNumberish => CSSNumericValue,
+    operator: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSSMathOperator */ Any,
+    sub: /* repeated */ CSSNumberish => CSSNumericValue,
     to: String => CSSUnitValue,
     toSum: /* repeated */ String => CSSMathSum,
     `type`: () => CSSNumericType,

@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeFraudsterRegistrationJobRequest extends StObject {
   
   /**
-    * The identifier for the domain containing the fraudster registration job.
+    * The identifier of the domain that contains the fraudster registration job.
     */
   var DomainId: typings.awsSdk.clientsVoiceidMod.DomainId
   
   /**
-    * The identifier for the fraudster registration job you are describing.
+    * The identifier of the fraudster registration job you are describing.
     */
   var JobId: typings.awsSdk.clientsVoiceidMod.JobId
 }

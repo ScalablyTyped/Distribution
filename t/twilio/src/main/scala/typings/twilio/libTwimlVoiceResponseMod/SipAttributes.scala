@@ -6,32 +6,46 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SipAttributes extends StObject {
   
+  /** amdStatusCallback - The URL we should call to send amd status information to your application */
   var amdStatusCallback: js.UndefOr[String] = js.undefined
   
+  /** amdStatusCallbackMethod - HTTP Method to use with amd_status_callback */
   var amdStatusCallbackMethod: js.UndefOr[String] = js.undefined
   
+  /** machineDetection - Enable machine detection or end of greeting detection */
   var machineDetection: js.UndefOr[String] = js.undefined
   
+  /** machineDetectionSilenceTimeout - Number of milliseconds of initial silence */
   var machineDetectionSilenceTimeout: js.UndefOr[Double] = js.undefined
   
+  /** machineDetectionSpeechEndThreshold - Number of milliseconds of silence after speech activity */
   var machineDetectionSpeechEndThreshold: js.UndefOr[Double] = js.undefined
   
+  /** machineDetectionSpeechThreshold - Number of milliseconds for measuring stick for the length of the speech activity */
   var machineDetectionSpeechThreshold: js.UndefOr[Double] = js.undefined
   
+  /** machineDetectionTimeout - Number of seconds to wait for machine detection */
   var machineDetectionTimeout: js.UndefOr[Double] = js.undefined
   
+  /** method - Action URL method */
   var method: js.UndefOr[String] = js.undefined
   
+  /** password - SIP Password */
   var password: js.UndefOr[String] = js.undefined
   
+  /** statusCallback - Status callback URL */
   var statusCallback: js.UndefOr[String] = js.undefined
   
+  /** statusCallbackEvent - Status callback events */
   var statusCallbackEvent: js.UndefOr[js.Array[SipEvent]] = js.undefined
   
+  /** statusCallbackMethod - Status callback URL method */
   var statusCallbackMethod: js.UndefOr[String] = js.undefined
   
+  /** url - Action URL */
   var url: js.UndefOr[String] = js.undefined
   
+  /** username - SIP Username */
   var username: js.UndefOr[String] = js.undefined
 }
 object SipAttributes {

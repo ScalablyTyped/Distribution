@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeComplianceByConfigRuleRequest extends StObject {
   
   /**
-    * Filters the results by compliance. The allowed values are COMPLIANT and NON_COMPLIANT.
+    * Filters the results by compliance.
     */
   var ComplianceTypes: js.UndefOr[typings.awsSdk.clientsConfigserviceMod.ComplianceTypes] = js.undefined
   

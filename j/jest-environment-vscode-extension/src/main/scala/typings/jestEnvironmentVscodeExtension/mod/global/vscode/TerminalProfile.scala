@@ -12,8 +12,8 @@ open class TerminalProfile protected ()
   extends typings.vscode.mod.TerminalProfile {
   def this(options: ExtensionTerminalOptions) = this()
   /**
-    * Creates a new terminal profile.
-    * @param options The options that the terminal will launch with.
-    */
+  		 * Creates a new terminal profile.
+  		 * @param options The options that the terminal will launch with.
+  		 */
   def this(options: TerminalOptions) = this()
 }

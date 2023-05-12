@@ -74,7 +74,7 @@ trait ImportTableDescription extends StObject {
   /**
     *  The total size of data processed from the source file, in Bytes. 
     */
-  var ProcessedSizeBytes: js.UndefOr[Long] = js.undefined
+  var ProcessedSizeBytes: js.UndefOr[LongObject] = js.undefined
   
   /**
     *  Values for the S3 bucket the source file is imported from. Includes bucket name (required), key prefix (optional) and bucket account owner ID (optional). 
@@ -163,7 +163,7 @@ object ImportTableDescription {
     
     inline def setProcessedItemCountUndefined: Self = StObject.set(x, "ProcessedItemCount", js.undefined)
     
-    inline def setProcessedSizeBytes(value: Long): Self = StObject.set(x, "ProcessedSizeBytes", value.asInstanceOf[js.Any])
+    inline def setProcessedSizeBytes(value: LongObject): Self = StObject.set(x, "ProcessedSizeBytes", value.asInstanceOf[js.Any])
     
     inline def setProcessedSizeBytesUndefined: Self = StObject.set(x, "ProcessedSizeBytes", js.undefined)
     

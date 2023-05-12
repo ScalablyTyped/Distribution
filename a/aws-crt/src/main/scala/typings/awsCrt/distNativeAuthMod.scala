@@ -65,6 +65,15 @@ object distNativeAuthMod {
       */
     inline def newStatic(access_key: StringLike, secret_key: StringLike): AwsCredentialsProvider = (^.asInstanceOf[js.Dynamic].applyDynamic("newStatic")(access_key.asInstanceOf[js.Any], secret_key.asInstanceOf[js.Any])).asInstanceOf[AwsCredentialsProvider]
     inline def newStatic(access_key: StringLike, secret_key: StringLike, session_token: StringLike): AwsCredentialsProvider = (^.asInstanceOf[js.Dynamic].applyDynamic("newStatic")(access_key.asInstanceOf[js.Any], secret_key.asInstanceOf[js.Any], session_token.asInstanceOf[js.Any])).asInstanceOf[AwsCredentialsProvider]
+    
+    /**
+      * Creates a new credentials provider that sources credentials from the the X509 service on AWS IoT Core.
+      *
+      * @param config provider configuration necessary to source credentials via X509
+      *
+      * @returns a new credentials provider that returns credentials sourced from the AWS X509 service
+      */
+    inline def newX509(config: X509CredentialsConfig): AwsCredentialsProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("newX509")(config.asInstanceOf[js.Any]).asInstanceOf[AwsCredentialsProvider]
   }
   
   @js.native
@@ -415,6 +424,59 @@ object distNativeAuthMod {
       inline def setIdentityProviderName(value: String): Self = StObject.set(x, "identityProviderName", value.asInstanceOf[js.Any])
       
       inline def setIdentityProviderToken(value: String): Self = StObject.set(x, "identityProviderToken", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait X509CredentialsConfig extends StObject {
+    
+    /**
+      * X509 service regional endpoint to source credentials from.
+      * This is a per-account value that can be determined via the CLI:
+      * `aws iot describe-endpoint --endpoint-type iot:CredentialProvider`
+      */
+    var endpoint: String
+    
+    /**
+      * Proxy configuration if connecting through an HTTP proxy is desired
+      */
+    var httpProxyOptions: js.UndefOr[HttpProxyOptions] = js.undefined
+    
+    /**
+      * The name of the role alias to fetch credentials through.
+      */
+    var roleAlias: String
+    
+    /**
+      * The name of the IoT thing to use to fetch credentials.
+      */
+    var thingName: String
+    
+    /**
+      * TLS context for secure socket connections.
+      */
+    var tlsContext: ClientTlsContext
+  }
+  object X509CredentialsConfig {
+    
+    inline def apply(endpoint: String, roleAlias: String, thingName: String, tlsContext: ClientTlsContext): X509CredentialsConfig = {
+      val __obj = js.Dynamic.literal(endpoint = endpoint.asInstanceOf[js.Any], roleAlias = roleAlias.asInstanceOf[js.Any], thingName = thingName.asInstanceOf[js.Any], tlsContext = tlsContext.asInstanceOf[js.Any])
+      __obj.asInstanceOf[X509CredentialsConfig]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: X509CredentialsConfig] (val x: Self) extends AnyVal {
+      
+      inline def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
+      
+      inline def setHttpProxyOptions(value: HttpProxyOptions): Self = StObject.set(x, "httpProxyOptions", value.asInstanceOf[js.Any])
+      
+      inline def setHttpProxyOptionsUndefined: Self = StObject.set(x, "httpProxyOptions", js.undefined)
+      
+      inline def setRoleAlias(value: String): Self = StObject.set(x, "roleAlias", value.asInstanceOf[js.Any])
+      
+      inline def setThingName(value: String): Self = StObject.set(x, "thingName", value.asInstanceOf[js.Any])
+      
+      inline def setTlsContext(value: ClientTlsContext): Self = StObject.set(x, "tlsContext", value.asInstanceOf[js.Any])
     }
   }
 }

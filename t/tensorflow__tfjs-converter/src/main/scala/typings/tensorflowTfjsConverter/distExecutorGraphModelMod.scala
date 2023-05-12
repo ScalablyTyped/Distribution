@@ -11,6 +11,7 @@ import typings.tensorflowTfjsCore.distIoTypesMod.ModelJSON
 import typings.tensorflowTfjsCore.distIoTypesMod.SaveConfig
 import typings.tensorflowTfjsCore.distIoTypesMod.SaveResult
 import typings.tensorflowTfjsCore.distModelTypesMod.InferenceModel
+import typings.tensorflowTfjsCore.distModelTypesMod.ModelPredictConfig
 import typings.tensorflowTfjsCore.distTensorMod.Tensor
 import typings.tensorflowTfjsCore.distTensorTypesMod.NamedTensorMap
 import typings.tensorflowTfjsCore.distTypesMod.Rank
@@ -46,6 +47,8 @@ object distExecutorGraphModelMod {
     def this(modelUrl: ModelURL, loadOptions: LoadOptions) = this()
     def this(modelUrl: ModelURL, loadOptions: Unit, tfio: Typeofio) = this()
     def this(modelUrl: ModelURL, loadOptions: LoadOptions, tfio: Typeofio) = this()
+    
+    /* private */ var addStructuredOutputNames: Any = js.native
     
     /* private */ var artifacts: Any = js.native
     
@@ -218,6 +221,53 @@ object distExecutorGraphModelMod {
       */
     def predict(inputs: Tensor[Rank]): Tensor[Rank] | js.Array[Tensor[Rank]] | NamedTensorMap = js.native
     def predict(inputs: NamedTensorMap): Tensor[Rank] | js.Array[Tensor[Rank]] | NamedTensorMap = js.native
+    
+    def predictAsync(inputs: js.Array[Tensor[Rank]]): js.Promise[Tensor[Rank] | js.Array[Tensor[Rank]] | NamedTensorMap] = js.native
+    def predictAsync(inputs: js.Array[Tensor[Rank]], config: ModelPredictConfig): js.Promise[Tensor[Rank] | js.Array[Tensor[Rank]] | NamedTensorMap] = js.native
+    /**
+      * Execute the inference for the input tensors in async fashion, use this
+      * method when your model contains control flow ops.
+      *
+      * @param input The input tensors, when there is single input for the model,
+      * inputs param should be a `tf.Tensor`. For models with mutliple inputs,
+      * inputs params should be in either `tf.Tensor`[] if the input order is
+      * fixed, or otherwise NamedTensorMap format.
+      *
+      * For model with multiple inputs, we recommend you use NamedTensorMap as the
+      * input type, if you use `tf.Tensor`[], the order of the array needs to
+      * follow the
+      * order of inputNodes array. @see {@link GraphModel.inputNodes}
+      *
+      * You can also feed any intermediate nodes using the NamedTensorMap as the
+      * input type. For example, given the graph
+      *    InputNode => Intermediate => OutputNode,
+      * you can execute the subgraph Intermediate => OutputNode by calling
+      *    model.execute('IntermediateNode' : tf.tensor(...));
+      *
+      * This is useful for models that uses tf.dynamic_rnn, where the intermediate
+      * state needs to be fed manually.
+      *
+      * For batch inference execution, the tensors for each input need to be
+      * concatenated together. For example with mobilenet, the required input shape
+      * is [1, 244, 244, 3], which represents the [batch, height, width, channel].
+      * If we are provide a batched data of 100 images, the input tensor should be
+      * in the shape of [100, 244, 244, 3].
+      *
+      * @param config Prediction configuration for specifying the batch size.
+      * Currently the batch size option is ignored for graph model.
+      *
+      * @returns A Promise of inference result tensors. If the model is converted
+      * and it originally had structured_outputs in tensorflow, then a
+      * NamedTensorMap will be returned matching the structured_outputs. If no
+      * structured_outputs are present, the output will be single `tf.Tensor` if
+      * the model has single output node, otherwise Tensor[].
+      *
+      * @doc {heading: 'Models', subheading: 'Classes'}
+      */
+    def predictAsync(inputs: Tensor[Rank]): js.Promise[Tensor[Rank] | js.Array[Tensor[Rank]] | NamedTensorMap] = js.native
+    def predictAsync(inputs: Tensor[Rank], config: ModelPredictConfig): js.Promise[Tensor[Rank] | js.Array[Tensor[Rank]] | NamedTensorMap] = js.native
+    def predictAsync(inputs: NamedTensorMap): js.Promise[Tensor[Rank] | js.Array[Tensor[Rank]] | NamedTensorMap] = js.native
+    def predictAsync(inputs: NamedTensorMap, config: ModelPredictConfig): js.Promise[Tensor[Rank] | js.Array[Tensor[Rank]] | NamedTensorMap] = js.native
     
     /* private */ var resourceIdToCapturedInput: Any = js.native
     

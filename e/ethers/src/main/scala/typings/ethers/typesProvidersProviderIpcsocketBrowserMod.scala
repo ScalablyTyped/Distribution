@@ -1,0 +1,12 @@
+package typings.ethers
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+object typesProvidersProviderIpcsocketBrowserMod {
+  
+  @JSImport("ethers/types/providers/provider-ipcsocket-browser", "IpcSocketProvider")
+  @js.native
+  val IpcSocketProvider: /* undefined */ Any = js.native
+}

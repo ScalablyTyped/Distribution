@@ -1001,6 +1001,10 @@ object awsLambdaStrings {
   inline def `Scheduled Event`: `Scheduled Event` = ("Scheduled Event").asInstanceOf[`Scheduled Event`]
   
   @js.native
+  sealed trait SelfManagedKafka extends StObject
+  inline def SelfManagedKafka: SelfManagedKafka = "SelfManagedKafka".asInstanceOf[SelfManagedKafka]
+  
+  @js.native
   sealed trait Source
     extends StObject
        with CodePipelineActionCategory

@@ -28,7 +28,7 @@ trait ConceptMapGroup
   var target: js.UndefOr[String] = js.undefined
   
   /**
-    * This only applies if the source code has a system value that matches the system defined for the group.
+    * The 'unmapped' element is ignored if a code is specified to have relationship = not-related-to or if ConceptMap.group.element.noMap = true.
     */
   var unmapped: js.UndefOr[ConceptMapGroupUnmapped] = js.undefined
 }

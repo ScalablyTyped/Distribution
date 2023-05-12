@@ -17,15 +17,13 @@ trait Height extends StObject {
   
   var height: js.UndefOr[Double] = js.undefined
   
+  var numberOfVerticalLines: js.UndefOr[Double] = js.undefined
+  
   var rotation: js.UndefOr[Double] = js.undefined
   
   var semiMajorAxis: Double
   
   var semiMinorAxis: Double
-  
-  var stRotation: js.UndefOr[Double] = js.undefined
-  
-  var vertexFormat: js.UndefOr[typings.cesium.mod.VertexFormat] = js.undefined
 }
 object Height {
   
@@ -55,6 +53,10 @@ object Height {
     
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
+    inline def setNumberOfVerticalLines(value: Double): Self = StObject.set(x, "numberOfVerticalLines", value.asInstanceOf[js.Any])
+    
+    inline def setNumberOfVerticalLinesUndefined: Self = StObject.set(x, "numberOfVerticalLines", js.undefined)
+    
     inline def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
     
     inline def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
@@ -62,13 +64,5 @@ object Height {
     inline def setSemiMajorAxis(value: Double): Self = StObject.set(x, "semiMajorAxis", value.asInstanceOf[js.Any])
     
     inline def setSemiMinorAxis(value: Double): Self = StObject.set(x, "semiMinorAxis", value.asInstanceOf[js.Any])
-    
-    inline def setStRotation(value: Double): Self = StObject.set(x, "stRotation", value.asInstanceOf[js.Any])
-    
-    inline def setStRotationUndefined: Self = StObject.set(x, "stRotation", js.undefined)
-    
-    inline def setVertexFormat(value: typings.cesium.mod.VertexFormat): Self = StObject.set(x, "vertexFormat", value.asInstanceOf[js.Any])
-    
-    inline def setVertexFormatUndefined: Self = StObject.set(x, "vertexFormat", js.undefined)
   }
 }

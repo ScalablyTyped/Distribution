@@ -27,6 +27,11 @@ trait CreateResolverEndpointRequest extends StObject {
   var Name: js.UndefOr[typings.awsSdk.clientsRoute53resolverMod.Name] = js.undefined
   
   /**
+    *  For the endpoint type you can choose either IPv4, IPv6. or dual-stack. A dual-stack endpoint means that it will resolve via both IPv4 and IPv6. This endpoint type is applied to all IP addresses. 
+    */
+  var ResolverEndpointType: js.UndefOr[typings.awsSdk.clientsRoute53resolverMod.ResolverEndpointType] = js.undefined
+  
+  /**
     * The ID of one or more security groups that you want to use to control access to this VPC. The security group that you specify must include one or more inbound rules (for inbound Resolver endpoints) or outbound rules (for outbound Resolver endpoints). Inbound and outbound rules must allow TCP and UDP access. For inbound access, open port 53. For outbound access, open the port that you're using for DNS queries on your network.
     */
   var SecurityGroupIds: typings.awsSdk.clientsRoute53resolverMod.SecurityGroupIds
@@ -62,6 +67,10 @@ object CreateResolverEndpointRequest {
     inline def setName(value: Name): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    
+    inline def setResolverEndpointType(value: ResolverEndpointType): Self = StObject.set(x, "ResolverEndpointType", value.asInstanceOf[js.Any])
+    
+    inline def setResolverEndpointTypeUndefined: Self = StObject.set(x, "ResolverEndpointType", js.undefined)
     
     inline def setSecurityGroupIds(value: SecurityGroupIds): Self = StObject.set(x, "SecurityGroupIds", value.asInstanceOf[js.Any])
     

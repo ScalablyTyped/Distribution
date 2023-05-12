@@ -25,14 +25,14 @@ trait SubstanceDefinitionMoiety
   var amountString: js.UndefOr[String] = js.undefined
   
   /**
-    * The measurement type of the quantitative value.
-    */
-  var amountType: js.UndefOr[CodeableConcept] = js.undefined
-  
-  /**
     * Identifier by which this moiety substance is known.
     */
   var identifier: js.UndefOr[Identifier] = js.undefined
+  
+  /**
+    * The measurement type of the quantitative value. In capturing the actual relative amounts of substances or molecular fragments it may be necessary to indicate whether the amount refers to, for example, a mole ratio or weight ratio.
+    */
+  var measurementType: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * Molecular formula for this moiety of this substance, typically using the Hill system.
@@ -77,13 +77,13 @@ object SubstanceDefinitionMoiety {
     
     inline def setAmountStringUndefined: Self = StObject.set(x, "amountString", js.undefined)
     
-    inline def setAmountType(value: CodeableConcept): Self = StObject.set(x, "amountType", value.asInstanceOf[js.Any])
-    
-    inline def setAmountTypeUndefined: Self = StObject.set(x, "amountType", js.undefined)
-    
     inline def setIdentifier(value: Identifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
     inline def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
+    
+    inline def setMeasurementType(value: CodeableConcept): Self = StObject.set(x, "measurementType", value.asInstanceOf[js.Any])
+    
+    inline def setMeasurementTypeUndefined: Self = StObject.set(x, "measurementType", js.undefined)
     
     inline def setMolecularFormula(value: String): Self = StObject.set(x, "molecularFormula", value.asInstanceOf[js.Any])
     

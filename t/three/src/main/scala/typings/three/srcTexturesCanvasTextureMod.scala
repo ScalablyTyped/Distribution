@@ -1,10 +1,11 @@
 package typings.three
 
 import typings.std.TexImageSource
+import typings.three.srcConstantsMod.MagnificationTextureFilter
 import typings.three.srcConstantsMod.Mapping
+import typings.three.srcConstantsMod.MinificationTextureFilter
 import typings.three.srcConstantsMod.PixelFormat
 import typings.three.srcConstantsMod.TextureDataType
-import typings.three.srcConstantsMod.TextureFilter
 import typings.three.srcConstantsMod.Wrapping
 import typings.three.srcTexturesTextureMod.OffscreenCanvas
 import typings.three.srcTexturesTextureMod.Texture
@@ -19,29 +20,34 @@ object srcTexturesCanvasTextureMod {
   @js.native
   open class CanvasTexture protected () extends Texture {
     /**
-      * @param canvas
-      * @param [format=THREE.RGBAFormat]
-      * @param [type=THREE.UnsignedByteType]
-      * @param [mapping=THREE.Texture.DEFAULT_MAPPING]
-      * @param [wrapS=THREE.ClampToEdgeWrapping]
-      * @param [wrapT=THREE.ClampToEdgeWrapping]
-      * @param [magFilter=THREE.LinearFilter]
-      * @param [minFilter=THREE.LinearMipmapLinearFilter]
-      * @param [anisotropy=1]
-      * @param [encoding=THREE.LinearEncoding]
+      * This creates a new {@link THREE.CanvasTexture | CanvasTexture} object.
+      * @param canvas The HTML canvas element from which to load the texture.
+      * @param mapping See {@link Texture.mapping | .mapping}. Default {@link THREE.Texture.DEFAULT_MAPPING}
+      * @param wrapS See {@link Texture.wrapS | .wrapS}. Default {@link THREE.ClampToEdgeWrapping}
+      * @param wrapT See {@link Texture.wrapT | .wrapT}. Default {@link THREE.ClampToEdgeWrapping}
+      * @param magFilter See {@link Texture.magFilter | .magFilter}. Default {@link THREE.LinearFilter}
+      * @param minFilter  See {@link Texture.minFilter | .minFilter}. Default {@link THREE.LinearMipmapLinearFilter}
+      * @param format See {@link Texture.format | .format}. Default {@link THREE.RGBAFormat}
+      * @param type See {@link Texture.type | .type}. Default {@link THREE.UnsignedByteType}
+      * @param anisotropy See {@link Texture.anisotropy | .anisotropy}. Default {@link THREE.Texture.DEFAULT_ANISOTROPY}
       */
     def this(
       canvas: TexImageSource | OffscreenCanvas,
       mapping: js.UndefOr[Mapping],
       wrapS: js.UndefOr[Wrapping],
       wrapT: js.UndefOr[Wrapping],
-      magFilter: js.UndefOr[TextureFilter],
-      minFilter: js.UndefOr[TextureFilter],
+      magFilter: js.UndefOr[MagnificationTextureFilter],
+      minFilter: js.UndefOr[MinificationTextureFilter],
       format: js.UndefOr[PixelFormat],
       `type`: js.UndefOr[TextureDataType],
       anisotropy: js.UndefOr[Double]
     ) = this()
     
+    /**
+      * Read-only flag to check if a given object is of type {@link CanvasTexture}.
+      * @remarks This is a _constant_ value
+      * @defaultValue `true`
+      */
     val isCanvasTexture: `true` = js.native
   }
 }

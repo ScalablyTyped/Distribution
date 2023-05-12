@@ -126,8 +126,8 @@ trait Upgrade extends StObject {
   /**
     * The power of a cookie upgrade, present as `0` on Non-cookie upgrades
     */
-  // The TSLint disable is for the generic, which is a hack required for a multitude of real use-cases
-  // tslint:disable-next-line
+  // The ESLint disable is for the generic, which is a hack required for a multitude of real use-cases
+  // eslint-disable-next-line no-unnecessary-generics
   var power: Double | (js.Function1[/* me */ this.type, Double]) = js.native
   
   var priceFunc: js.UndefOr[js.Function0[Double]] = js.native

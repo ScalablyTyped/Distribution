@@ -15,7 +15,7 @@ trait PushNotifications
   @JSName("addListener")
   def addListener_receivedapnsnotification(
     event: `received-apns-notification`,
-    listener: js.Function1[/* userInfo */ Record[String, Any], Unit]
+    listener: js.Function2[/* event */ Event, /* userInfo */ Record[String, Any], Unit]
   ): this.type = js.native
   
   // Docs: https://electronjs.org/docs/api/push-notifications
@@ -52,13 +52,13 @@ trait PushNotifications
   @JSName("on")
   def on_receivedapnsnotification(
     event: `received-apns-notification`,
-    listener: js.Function1[/* userInfo */ Record[String, Any], Unit]
+    listener: js.Function2[/* event */ Event, /* userInfo */ Record[String, Any], Unit]
   ): this.type = js.native
   
   @JSName("once")
   def once_receivedapnsnotification(
     event: `received-apns-notification`,
-    listener: js.Function1[/* userInfo */ Record[String, Any], Unit]
+    listener: js.Function2[/* event */ Event, /* userInfo */ Record[String, Any], Unit]
   ): this.type = js.native
   
   /**
@@ -112,7 +112,7 @@ trait PushNotifications
   @JSName("removeListener")
   def removeListener_receivedapnsnotification(
     event: `received-apns-notification`,
-    listener: js.Function1[/* userInfo */ Record[String, Any], Unit]
+    listener: js.Function2[/* event */ Event, /* userInfo */ Record[String, Any], Unit]
   ): this.type = js.native
   
   /**

@@ -11,7 +11,7 @@ trait MedicationAdministrationPerformer
   /**
     * Indicates who or what performed the medication administration.
     */
-  var actor: Reference
+  var actor: CodeableReference
   
   /**
     * Distinguishes the type of involvement of the performer in the medication administration.
@@ -20,7 +20,7 @@ trait MedicationAdministrationPerformer
 }
 object MedicationAdministrationPerformer {
   
-  inline def apply(actor: Reference): MedicationAdministrationPerformer = {
+  inline def apply(actor: CodeableReference): MedicationAdministrationPerformer = {
     val __obj = js.Dynamic.literal(actor = actor.asInstanceOf[js.Any])
     __obj.asInstanceOf[MedicationAdministrationPerformer]
   }
@@ -28,7 +28,7 @@ object MedicationAdministrationPerformer {
   @scala.inline
   implicit open class MutableBuilder[Self <: MedicationAdministrationPerformer] (val x: Self) extends AnyVal {
     
-    inline def setActor(value: Reference): Self = StObject.set(x, "actor", value.asInstanceOf[js.Any])
+    inline def setActor(value: CodeableReference): Self = StObject.set(x, "actor", value.asInstanceOf[js.Any])
     
     inline def setFunction(value: CodeableConcept): Self = StObject.set(x, "function", value.asInstanceOf[js.Any])
     

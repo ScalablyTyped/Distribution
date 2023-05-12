@@ -27,8 +27,8 @@ trait AdministrativeUnit
   var scopedRoleMembers: js.UndefOr[NullableOption[js.Array[ScopedRoleMembership]]] = js.undefined
   
   /**
-    * Controls whether the administrative unit and its members are hidden or public. Can be set to HiddenMembership or
-    * Public. If not set, the default behavior is Public. When set to HiddenMembership, only members of the administrative
+    * Controls whether the administrative unit and its members are hidden or public. Can be set to HiddenMembership. If not
+    * set (value is null), the default behavior is public. When set to HiddenMembership, only members of the administrative
     * unit can list other members of the administrative unit.
     */
   var visibility: js.UndefOr[NullableOption[String]] = js.undefined

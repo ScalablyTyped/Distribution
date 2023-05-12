@@ -22,7 +22,7 @@ object distDeclarationsSrcComponentsOptionMod {
   
   inline def default[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](props: OptionProps[Option, IsMulti, Group]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def optionCSS[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](param0: OptionProps[Option, IsMulti, Group]): CSSObjectWithLabel = ^.asInstanceOf[js.Dynamic].applyDynamic("optionCSS")(param0.asInstanceOf[js.Any]).asInstanceOf[CSSObjectWithLabel]
+  inline def optionCSS[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](param0: OptionProps[Option, IsMulti, Group], unstyled: Boolean): CSSObjectWithLabel = (^.asInstanceOf[js.Dynamic].applyDynamic("optionCSS")(param0.asInstanceOf[js.Any], unstyled.asInstanceOf[js.Any])).asInstanceOf[CSSObjectWithLabel]
   
   @js.native
   trait OptionProps[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */]

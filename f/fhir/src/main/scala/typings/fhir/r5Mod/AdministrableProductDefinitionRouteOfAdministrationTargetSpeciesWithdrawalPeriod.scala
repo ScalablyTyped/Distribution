@@ -16,7 +16,7 @@ trait AdministrableProductDefinitionRouteOfAdministrationTargetSpeciesWithdrawal
   var supportingInformation: js.UndefOr[String] = js.undefined
   
   /**
-    * Coded expression for the type of tissue for which the withdrawal period applues, e.g. meat, milk.
+    * Coded expression for the type of tissue for which the withdrawal period applies, e.g. meat, milk.
     */
   var tissue: CodeableConcept
   

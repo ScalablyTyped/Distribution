@@ -4,6 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+	 * Rule severity.
+	 */
 /* Rewritten from type alias, can be one of: 
   - typings.stylelint.stylelintStrings.warning
   - typings.stylelint.stylelintStrings.error

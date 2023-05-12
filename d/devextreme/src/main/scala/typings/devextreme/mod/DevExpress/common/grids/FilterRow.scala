@@ -1,6 +1,5 @@
 package typings.devextreme.mod.DevExpress.common.grids
 
-import typings.devextreme.mod.DevExpress.common.charts.ApplyFilterMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

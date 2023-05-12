@@ -1,12 +1,12 @@
 package typings.hyperformula
 
-import typings.hyperformula.anon.COLUMN
 import typings.hyperformula.typingsCellMod.CellError
 import typings.hyperformula.typingsInterpreterInterpreterMod.Interpreter
 import typings.hyperformula.typingsInterpreterInterpreterStateMod.InterpreterState
 import typings.hyperformula.typingsInterpreterInterpreterValueMod.InternalScalarValue
 import typings.hyperformula.typingsInterpreterInterpreterValueMod.InterpreterValue
 import typings.hyperformula.typingsInterpreterPluginFunctionPluginMod.FunctionPlugin
+import typings.hyperformula.typingsInterpreterPluginFunctionPluginMod.ImplementedFunctions
 import typings.hyperformula.typingsParserAstMod.ProcedureAst
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -36,12 +36,12 @@ object typingsInterpreterPluginInformationPluginMod {
       * Returns number of columns in provided range of cells
       *
       * @param ast
-      * @param _state
+      * @param state
       */
     def columns(ast: ProcedureAst, state: InterpreterState): InternalScalarValue = js.native
     
     /**
-      * Corresponds to INDEX(range;)
+      * Corresponds to INDEX
       *
       * Returns specific position in 2d array.
       *
@@ -186,7 +186,7 @@ object typingsInterpreterPluginInformationPluginMod {
       * Returns number of rows in provided range of cells
       *
       * @param ast
-      * @param _state
+      * @param state
       */
     def rows(ast: ProcedureAst, state: InterpreterState): InternalScalarValue = js.native
     
@@ -197,7 +197,7 @@ object typingsInterpreterPluginInformationPluginMod {
       *
       * @param ast
       * @param state
-      * */
+      */
     def sheet(ast: ProcedureAst, state: InterpreterState): InterpreterValue = js.native
     
     /**
@@ -208,7 +208,7 @@ object typingsInterpreterPluginInformationPluginMod {
       *
       * @param ast
       * @param state
-      * */
+      */
     def sheets(ast: ProcedureAst, state: InterpreterState): InterpreterValue = js.native
   }
   /* static members */
@@ -220,7 +220,7 @@ object typingsInterpreterPluginInformationPluginMod {
     
     @JSImport("hyperformula/typings/interpreter/plugin/InformationPlugin", "InformationPlugin.implementedFunctions")
     @js.native
-    def implementedFunctions: COLUMN = js.native
-    inline def implementedFunctions_=(x: COLUMN): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("implementedFunctions")(x.asInstanceOf[js.Any])
+    def implementedFunctions: ImplementedFunctions = js.native
+    inline def implementedFunctions_=(x: ImplementedFunctions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("implementedFunctions")(x.asInstanceOf[js.Any])
   }
 }

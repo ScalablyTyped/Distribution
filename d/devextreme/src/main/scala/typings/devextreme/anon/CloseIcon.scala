@@ -10,37 +10,37 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CloseIcon extends StObject {
   
   /**
-    * Specifies the icon the FAB displays when the speed dial is opened.
+    * 
     */
   var closeIcon: js.UndefOr[String] = js.undefined
   
   /**
-    * Specifies the direction in which to open the speed dial menu.
+    * 
     */
   var direction: js.UndefOr[FloatingActionButtonDirection] = js.undefined
   
   /**
-    * Specifies the icon the FAB displays when the speed dial is closed.
+    * 
     */
   var icon: js.UndefOr[String] = js.undefined
   
   /**
-    * Specifies the text label displayed inside the FAB.
+    * 
     */
   var label: js.UndefOr[String] = js.undefined
   
   /**
-    * Limits the number of speed dial actions.
+    * 
     */
   var maxSpeedDialActionCount: js.UndefOr[Double] = js.undefined
   
   /**
-    * Positions the FAB on the screen.
+    * 
     */
   var position: js.UndefOr[PositionAlignment | PositionConfig | js.Function] = js.undefined
   
   /**
-    * If true, the background should be shaded when the speed dial menu is open.
+    * 
     */
   var shading: js.UndefOr[Boolean] = js.undefined
 }

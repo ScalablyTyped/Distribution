@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateEnvironmentResponse extends StObject {
   
   /**
-    * The identifier of this environment.
+    * The unique identifier of the runtime environment.
     */
   var environmentId: Identifier
 }

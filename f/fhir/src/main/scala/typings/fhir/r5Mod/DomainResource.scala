@@ -9,7 +9,7 @@ trait DomainResource
      with Resource {
   
   /**
-    * This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again. Contained resources may have profiles and tags In their meta elements, but SHALL NOT have security labels.
+    * This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again. Contained resources may have profiles and tags in their meta elements, but SHALL NOT have security labels.
     */
   var contained: js.UndefOr[js.Array[FhirResource]] = js.undefined
   

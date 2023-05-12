@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.MsScrollLimitYMax
+import typings.csstype.mod.Property.WebkitBorderBeforeWidth
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,13 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `435` extends StObject {
   
   var value: js.UndefOr[
-    (MsScrollLimitYMax[Double | String]) | (js.Array[
+    (WebkitBorderBeforeWidth[Double | String]) | (js.Array[
       (Extract[
         js.UndefOr[
-          (MsScrollLimitYMax[Double | String]) | (js.Array[NonNullable[js.UndefOr[MsScrollLimitYMax[Double | String]]]])
+          (WebkitBorderBeforeWidth[Double | String]) | (js.Array[NonNullable[js.UndefOr[WebkitBorderBeforeWidth[Double | String]]]])
         ], 
         String
-      ]) | (NonNullable[js.UndefOr[MsScrollLimitYMax[Double | String]]])
+      ]) | (NonNullable[js.UndefOr[WebkitBorderBeforeWidth[Double | String]]])
     ])
   ] = js.native
 }

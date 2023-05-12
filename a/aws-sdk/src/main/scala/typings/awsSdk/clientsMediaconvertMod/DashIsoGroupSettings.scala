@@ -22,6 +22,11 @@ trait DashIsoGroupSettings extends StObject {
   var BaseUrl: js.UndefOr[string] = js.undefined
   
   /**
+    * Specify how MediaConvert writes SegmentTimeline in your output DASH manifest. To write a SegmentTimeline in each video Representation: Keep the default value, Basic. To write a common SegmentTimeline in the video AdaptationSet: Choose Compact. Note that MediaConvert will still write a SegmentTimeline in any Representation that does not share a common timeline. To write a video AdaptationSet for each different output framerate, and a common SegmentTimeline in each AdaptationSet: Choose Distinct.
+    */
+  var DashManifestStyle: js.UndefOr[typings.awsSdk.clientsMediaconvertMod.DashManifestStyle] = js.undefined
+  
+  /**
     * Use Destination (Destination) to specify the S3 output location and the output filename base. Destination accepts format identifiers. If you do not specify the base filename in the URI, the service will use the filename of the input file. If your job has multiple inputs, the service uses the filename of the first input file.
     */
   var Destination: js.UndefOr[stringPatternS3] = js.undefined
@@ -67,7 +72,12 @@ trait DashIsoGroupSettings extends StObject {
   var MinFinalSegmentLength: js.UndefOr[doubleMin0Max2147483647] = js.undefined
   
   /**
-    * Specify whether your DASH profile is on-demand or main. When you choose Main profile (MAIN_PROFILE), the service signals  urn:mpeg:dash:profile:isoff-main:2011 in your .mpd DASH manifest. When you choose On-demand (ON_DEMAND_PROFILE), the service signals urn:mpeg:dash:profile:isoff-on-demand:2011 in your .mpd. When you choose On-demand, you must also set the output group setting Segment control (SegmentControl) to Single file (SINGLE_FILE).
+    * Specify how the value for bandwidth is determined for each video Representation in your output MPD manifest. We recommend that you choose a MPD manifest bandwidth type that is compatible with your downstream player configuration. Max: Use the same value that you specify for Max bitrate in the video output, in bits per second. Average: Use the calculated average bitrate of the encoded video output, in bits per second.
+    */
+  var MpdManifestBandwidthType: js.UndefOr[DashIsoMpdManifestBandwidthType] = js.undefined
+  
+  /**
+    * Specify whether your DASH profile is on-demand or main. When you choose Main profile (MAIN_PROFILE), the service signals urn:mpeg:dash:profile:isoff-main:2011 in your .mpd DASH manifest. When you choose On-demand (ON_DEMAND_PROFILE), the service signals urn:mpeg:dash:profile:isoff-on-demand:2011 in your .mpd. When you choose On-demand, you must also set the output group setting Segment control (SegmentControl) to Single file (SINGLE_FILE).
     */
   var MpdProfile: js.UndefOr[DashIsoMpdProfile] = js.undefined
   
@@ -90,6 +100,11 @@ trait DashIsoGroupSettings extends StObject {
     * Specify how you want MediaConvert to determine the segment length. Choose Exact (EXACT) to have the encoder use the exact length that you specify with the setting Segment length (SegmentLength). This might result in extra I-frames. Choose Multiple of GOP (GOP_MULTIPLE) to have the encoder round up the segment lengths to match the next GOP boundary.
     */
   var SegmentLengthControl: js.UndefOr[DashIsoSegmentLengthControl] = js.undefined
+  
+  /**
+    * Specify the video sample composition time offset mode in the output fMP4 TRUN box. For wider player compatibility, set Video composition offsets to Unsigned or leave blank. The earliest presentation time may be greater than zero, and sample composition time offsets will increment using unsigned integers. For strict fMP4 video and audio timing, set Video composition offsets to Signed. The earliest presentation time will be equal to zero, and sample composition time offsets will increment using signed integers.
+    */
+  var VideoCompositionOffsets: js.UndefOr[DashIsoVideoCompositionOffsets] = js.undefined
   
   /**
     * If you get an HTTP error in the 400 range when you play back your DASH output, enable this setting and run your transcoding job again. When you enable this setting, the service writes precise segment durations in the DASH manifest. The segment duration information appears inside the SegmentTimeline element, inside SegmentTemplate at the Representation level. When you don't enable this setting, the service writes approximate segment durations in your DASH manifest.
@@ -119,6 +134,10 @@ object DashIsoGroupSettings {
     inline def setBaseUrl(value: string): Self = StObject.set(x, "BaseUrl", value.asInstanceOf[js.Any])
     
     inline def setBaseUrlUndefined: Self = StObject.set(x, "BaseUrl", js.undefined)
+    
+    inline def setDashManifestStyle(value: DashManifestStyle): Self = StObject.set(x, "DashManifestStyle", value.asInstanceOf[js.Any])
+    
+    inline def setDashManifestStyleUndefined: Self = StObject.set(x, "DashManifestStyle", js.undefined)
     
     inline def setDestination(value: stringPatternS3): Self = StObject.set(x, "Destination", value.asInstanceOf[js.Any])
     
@@ -156,6 +175,10 @@ object DashIsoGroupSettings {
     
     inline def setMinFinalSegmentLengthUndefined: Self = StObject.set(x, "MinFinalSegmentLength", js.undefined)
     
+    inline def setMpdManifestBandwidthType(value: DashIsoMpdManifestBandwidthType): Self = StObject.set(x, "MpdManifestBandwidthType", value.asInstanceOf[js.Any])
+    
+    inline def setMpdManifestBandwidthTypeUndefined: Self = StObject.set(x, "MpdManifestBandwidthType", js.undefined)
+    
     inline def setMpdProfile(value: DashIsoMpdProfile): Self = StObject.set(x, "MpdProfile", value.asInstanceOf[js.Any])
     
     inline def setMpdProfileUndefined: Self = StObject.set(x, "MpdProfile", js.undefined)
@@ -175,6 +198,10 @@ object DashIsoGroupSettings {
     inline def setSegmentLengthControlUndefined: Self = StObject.set(x, "SegmentLengthControl", js.undefined)
     
     inline def setSegmentLengthUndefined: Self = StObject.set(x, "SegmentLength", js.undefined)
+    
+    inline def setVideoCompositionOffsets(value: DashIsoVideoCompositionOffsets): Self = StObject.set(x, "VideoCompositionOffsets", value.asInstanceOf[js.Any])
+    
+    inline def setVideoCompositionOffsetsUndefined: Self = StObject.set(x, "VideoCompositionOffsets", js.undefined)
     
     inline def setWriteSegmentTimelineInRepresentation(value: DashIsoWriteSegmentTimelineInRepresentation): Self = StObject.set(x, "WriteSegmentTimelineInRepresentation", value.asInstanceOf[js.Any])
     

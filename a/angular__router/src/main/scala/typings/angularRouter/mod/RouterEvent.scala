@@ -6,9 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@angular/router", "RouterEvent")
 @js.native
-open class RouterEvent protected ()
-  extends StObject
-     with Event2 {
+open class RouterEvent protected () extends StObject {
   def this(
     /** A unique ID that the router assigns to every router navigation. */
   id: Double,

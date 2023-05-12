@@ -27,8 +27,14 @@ object distTypesCommandsGetFederationTokenCommandMod {
           Any, 
           Any
         ] {
+    /**
+      * @public
+      */
     def this(input: GetFederationTokenCommandInput) = this()
     
+    /**
+      * @internal
+      */
     /* private */ var deserialize: Any = js.native
     
     /**
@@ -44,6 +50,9 @@ object distTypesCommandsGetFederationTokenCommandMod {
       options: HttpHandlerOptions
     ): Handler[GetFederationTokenCommandInput, GetFederationTokenCommandOutput] = js.native
     
+    /**
+      * @internal
+      */
     /* private */ var serialize: Any = js.native
   }
   /* static members */

@@ -1,7 +1,7 @@
 
 # Scala.js typings for it-length
 
-Typings are for version 2.0.0
+Typings are for version 3.0.2
 
 ## Library description:
 Counts the number of items in an async iterable

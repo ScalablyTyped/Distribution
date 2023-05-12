@@ -279,11 +279,15 @@ object sapMTablePersoControllerMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Do some clean up: remove event delegates, etc
       */
     def exit(): Unit = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:personalizationsDone personalizationsDone} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -395,6 +399,8 @@ object sapMTablePersoControllerMod {
     def getTables(): js.Array[ID] = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Initializes the TablePersoController instance after creation.
       */
     def init(): Unit = js.native

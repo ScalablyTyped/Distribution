@@ -9,7 +9,7 @@ import org.scalablytyped.runtime.Instantiable7
 import typings.highcharts.anon.PartialAnimationOptionsOb
 import typings.highcharts.anon.TypeofAST
 import typings.highcharts.anon.TypeofColor
-import typings.highcharts.anon.TypeofHighchartsAddEvent
+import typings.highcharts.anon.TypeofHighcharts
 import typings.highcharts.anon.TypeofSeries
 import typings.highcharts.mod.ASTNode
 import typings.highcharts.mod.AnimationOptionsObject
@@ -23,7 +23,6 @@ import typings.highcharts.mod.CSSObject
 import typings.highcharts.mod.ChartCallbackFunction
 import typings.highcharts.mod.Chart_
 import typings.highcharts.mod.Class
-import typings.highcharts.mod.ColorAxisOptions
 import typings.highcharts.mod.ColorType
 import typings.highcharts.mod.Color_
 import typings.highcharts.mod.Dictionary
@@ -58,7 +57,7 @@ object modulesSankeyMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(highcharts: TypeofHighchartsAddEvent): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(highcharts.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def default(highcharts: TypeofHighcharts): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(highcharts.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   object Highcharts {
     
@@ -250,38 +249,6 @@ object modulesSankeyMod {
         */
       def this(input: ColorType) = this()
     }
-    
-    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
-    @JSImport("highcharts/modules/sankey", "Highcharts.ColorAxis")
-    @js.native
-    open class ColorAxis protected ()
-      extends typings.highcharts.mod.ColorAxis {
-      /**
-        * The ColorAxis object for inclusion in gradient legends.
-        *
-        * @param chart
-        *        The related chart of the color axis.
-        *
-        * @param userOptions
-        *        The color axis options for initialization.
-        */
-      def this(chart: Chart_, userOptions: ColorAxisOptions) = this()
-    }
-    @JSImport("highcharts/modules/sankey", "Highcharts.ColorAxis")
-    @js.native
-    def ColorAxis: Instantiable2[
-        /* chart */ Chart_, 
-        /* userOptions */ ColorAxisOptions, 
-        typings.highcharts.mod.ColorAxis
-      ] = js.native
-    inline def ColorAxis_=(
-      x: Instantiable2[
-          /* chart */ Chart_, 
-          /* userOptions */ ColorAxisOptions, 
-          typings.highcharts.mod.ColorAxis
-        ]
-    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ColorAxis")(x.asInstanceOf[js.Any])
-    
     @JSImport("highcharts/modules/sankey", "Highcharts.Color")
     @js.native
     def Color_ : TypeofColor = js.native
@@ -396,8 +363,7 @@ object modulesSankeyMod {
         * Allows direct access to the Highcharts rendering layer in order to draw
         * primitive shapes like circles, rectangles, paths or text directly on a
         * chart, or independent from any chart. The SVGRenderer represents a
-        * wrapper object for SVG in modern browsers. Through the VMLRenderer, part
-        * of the `oldie.js` module, it also brings vector graphics to IE <= 8.
+        * wrapper object for SVG in modern browsers.
         *
         * An existing chart's renderer can be accessed through Chart.renderer. The
         * renderer can also be used completely decoupled from a chart.
@@ -798,6 +764,8 @@ object modulesSankeyMod {
     
     inline def callout(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("callout")().asInstanceOf[Unit]
     
+    inline def centerImage(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("centerImage")().asInstanceOf[Unit]
+    
     inline def chart(options: Options): Chart_ = ^.asInstanceOf[js.Dynamic].applyDynamic("chart")(options.asInstanceOf[js.Any]).asInstanceOf[Chart_]
     inline def chart(options: Options, callback: ChartCallbackFunction): Chart_ = (^.asInstanceOf[js.Dynamic].applyDynamic("chart")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Chart_]
     inline def chart(renderTo: String, options: Options): Chart_ = (^.asInstanceOf[js.Dynamic].applyDynamic("chart")(renderTo.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Chart_]
@@ -1007,6 +975,8 @@ object modulesSankeyMod {
     
     inline def pick[T](items: (js.UndefOr[T | Null])*): T = ^.asInstanceOf[js.Dynamic].applyDynamic("pick")(items.asInstanceOf[Seq[js.Any]]*).asInstanceOf[T]
     
+    inline def pushUnique(array: js.Array[Any], item: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("pushUnique")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    
     inline def reduce(arr: js.Array[Any], fn: js.Function, initialValue: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(arr.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any])).asInstanceOf[Any]
     
     inline def registerRendererType(
@@ -1090,5 +1060,5 @@ object modulesSankeyMod {
     inline def wrap(obj: Any, method: String, func: WrapProceedFunction): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(obj.asInstanceOf[js.Any], method.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
-  inline def factory(highcharts: TypeofHighchartsAddEvent): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("factory")(highcharts.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def factory(highcharts: TypeofHighcharts): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("factory")(highcharts.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

@@ -1,7 +1,7 @@
 package typings.nivoArcs
 
 import typings.nivoArcs.anon.Arc
-import typings.nivoArcs.anon.InnerRadius
+import typings.nivoArcs.anon.OuterRadius
 import typings.nivoArcs.distTypesTypesMod.ArcGenerator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -13,5 +13,5 @@ object distTypesUseAnimatedArcMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def useAnimatedArc(datumWithArc: Arc, arcGenerator: ArcGenerator): InnerRadius = (^.asInstanceOf[js.Dynamic].applyDynamic("useAnimatedArc")(datumWithArc.asInstanceOf[js.Any], arcGenerator.asInstanceOf[js.Any])).asInstanceOf[InnerRadius]
+  inline def useAnimatedArc(datumWithArc: Arc, arcGenerator: ArcGenerator): OuterRadius = (^.asInstanceOf[js.Dynamic].applyDynamic("useAnimatedArc")(datumWithArc.asInstanceOf[js.Any], arcGenerator.asInstanceOf[js.Any])).asInstanceOf[OuterRadius]
 }

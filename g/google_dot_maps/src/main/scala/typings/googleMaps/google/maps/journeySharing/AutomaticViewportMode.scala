@@ -6,10 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @js.native
 sealed trait AutomaticViewportMode extends StObject
-/**
-  * Available only in the v=beta channel: https://goo.gle/3oAthT3.
-  * Automatic viewport mode.
-  */
 @JSGlobal("google.maps.journeySharing.AutomaticViewportMode")
 @js.native
 object AutomaticViewportMode extends StObject {

@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.StrokeDasharray
+import typings.csstype.mod.Property.ScrollSnapTypeX
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,13 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `495` extends StObject {
   
   var value: js.UndefOr[
-    (StrokeDasharray[Double | String]) | (js.Array[
+    ScrollSnapTypeX | (js.Array[
       (Extract[
-        js.UndefOr[
-          (StrokeDasharray[Double | String]) | (js.Array[NonNullable[js.UndefOr[StrokeDasharray[Double | String]]]])
-        ], 
+        js.UndefOr[ScrollSnapTypeX | js.Array[NonNullable[js.UndefOr[ScrollSnapTypeX]]]], 
         String
-      ]) | (NonNullable[js.UndefOr[StrokeDasharray[Double | String]]])
+      ]) | NonNullable[js.UndefOr[ScrollSnapTypeX]]
     ])
   ] = js.native
 }

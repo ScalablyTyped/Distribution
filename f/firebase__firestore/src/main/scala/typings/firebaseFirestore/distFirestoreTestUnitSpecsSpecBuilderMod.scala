@@ -6,17 +6,19 @@ import typings.firebaseFirestore.anon.Added
 import typings.firebaseFirestore.anon.Affects
 import typings.firebaseFirestore.anon.Config
 import typings.firebaseFirestore.anon.ExpectUserCallback
-import typings.firebaseFirestore.anon.Query
-import typings.firebaseFirestore.anon.ReadTime
+import typings.firebaseFirestore.anon.ExpectedCount
 import typings.firebaseFirestore.anon.RunBackoffTimer
 import typings.firebaseFirestore.distFirestoreSrcApiIndexConfigurationMod.IndexConfiguration
+import typings.firebaseFirestore.distFirestoreSrcCoreQueryMod.Query
 import typings.firebaseFirestore.distFirestoreSrcCoreTargetIdGeneratorMod.TargetIdGenerator
 import typings.firebaseFirestore.distFirestoreSrcCoreTargetMod.Target
 import typings.firebaseFirestore.distFirestoreSrcCoreTypesMod.TargetId
+import typings.firebaseFirestore.distFirestoreSrcLocalTargetDataMod.TargetPurpose
 import typings.firebaseFirestore.distFirestoreSrcModelDocumentKeyMod.DocumentKey
 import typings.firebaseFirestore.distFirestoreSrcModelDocumentMod.Document
 import typings.firebaseFirestore.distFirestoreSrcModelFieldIndexMod.FieldIndex
 import typings.firebaseFirestore.distFirestoreSrcModelObjectValueMod.JsonObject
+import typings.firebaseFirestore.distFirestoreSrcProtosFirestoreProtoApiMod.BloomFilter
 import typings.firebaseFirestore.distFirestoreSrcUtilAsyncQueueMod.TimerId
 import typings.firebaseFirestore.distFirestoreSrcUtilErrorMod.Code
 import typings.firebaseFirestore.distFirestoreSrcUtilObjMapMod.ObjectMap
@@ -118,8 +120,10 @@ object distFirestoreTestUnitSpecsSpecBuilderMod {
     
     def enableNetwork(): this.type = js.native
     
+    def ensureManualLruGC(): this.type = js.native
+    
     /** Overrides the currently expected set of active targets. */
-    def expectActiveTargets(targets: Query*): this.type = js.native
+    def expectActiveTargets(targets: ExpectedCount*): this.type = js.native
     
     /**
       * Expects a document to be in limbo, enqueued for limbo resolution, and
@@ -127,7 +131,7 @@ object distFirestoreTestUnitSpecsSpecBuilderMod {
       */
     def expectEnqueuedLimboDocs(keys: DocumentKey*): this.type = js.native
     
-    def expectEvents(query: typings.firebaseFirestore.distFirestoreSrcCoreQueryMod.Query, events: Added): this.type = js.native
+    def expectEvents(query: Query, events: Added): this.type = js.native
     
     /** Expects indexes to exist (in any order) */
     def expectIndexes(indexes: js.Array[FieldIndex]): this.type = js.native
@@ -141,8 +145,8 @@ object distFirestoreTestUnitSpecsSpecBuilderMod {
     def expectLimboDocs(keys: DocumentKey*): this.type = js.native
     
     /** Registers a query that is active in another tab. */
-    def expectListen(query: typings.firebaseFirestore.distFirestoreSrcCoreQueryMod.Query): this.type = js.native
-    def expectListen(query: typings.firebaseFirestore.distFirestoreSrcCoreQueryMod.Query, resume: ReadTime): this.type = js.native
+    def expectListen(query: Query): this.type = js.native
+    def expectListen(query: Query, resume: ResumeSpec): this.type = js.native
     
     def expectNumActiveClients(num: Double): this.type = js.native
     
@@ -154,7 +158,7 @@ object distFirestoreTestUnitSpecsSpecBuilderMod {
     def expectSnapshotsInSyncEvent(count: Double): this.type = js.native
     
     /** Removes a query that is no longer active in any tab. */
-    def expectUnlisten(query: typings.firebaseFirestore.distFirestoreSrcCoreQueryMod.Query): this.type = js.native
+    def expectUnlisten(query: Query): this.type = js.native
     
     def expectUserCallbacks(docs: Acknowledged): this.type = js.native
     
@@ -207,6 +211,8 @@ object distFirestoreTestUnitSpecsSpecBuilderMod {
     /** Stops failing database operations. */
     def recoverDatabase(): this.type = js.native
     
+    def removeExpectedTargetMapping(query: Query): this.type = js.native
+    
     /* private */ var removeQueryFromActiveTargets: Any = js.native
     
     def restart(): this.type = js.native
@@ -215,7 +221,8 @@ object distFirestoreTestUnitSpecsSpecBuilderMod {
       * Registers a previously active target with the test expectations after a
       * stream disconnect.
       */
-    def restoreListen(query: typings.firebaseFirestore.distFirestoreSrcCoreQueryMod.Query, resumeToken: String): this.type = js.native
+    def restoreListen(query: Query, resumeToken: String): this.type = js.native
+    def restoreListen(query: Query, resumeToken: String, expectedCount: Double): this.type = js.native
     
     /**
       * Run the spec as a test. If persistence is available it will run it with and
@@ -237,12 +244,14 @@ object distFirestoreTestUnitSpecsSpecBuilderMod {
       */
     def toJSON(): Config = js.native
     
+    def triggerLruGC(cacheThreshold: Double): this.type = js.native
+    
     def userAddsSnapshotsInSyncListener(): this.type = js.native
     
     def userDeletes(key: String): this.type = js.native
     
-    def userListens(query: typings.firebaseFirestore.distFirestoreSrcCoreQueryMod.Query): this.type = js.native
-    def userListens(query: typings.firebaseFirestore.distFirestoreSrcCoreQueryMod.Query, resume: ReadTime): this.type = js.native
+    def userListens(query: Query): this.type = js.native
+    def userListens(query: Query, resume: ResumeSpec): this.type = js.native
     
     def userPatches(key: String, value: JsonObject[Any]): this.type = js.native
     
@@ -250,29 +259,25 @@ object distFirestoreTestUnitSpecsSpecBuilderMod {
     
     def userSets(key: String, value: JsonObject[Any]): this.type = js.native
     
-    def userUnlistens(query: typings.firebaseFirestore.distFirestoreSrcCoreQueryMod.Query): this.type = js.native
+    def userUnlistens(query: Query): this.type = js.native
     
     def waitForPendingWrites(): this.type = js.native
     
-    def watchAcks(query: typings.firebaseFirestore.distFirestoreSrcCoreQueryMod.Query): this.type = js.native
+    def watchAcks(query: Query): this.type = js.native
     
-    def watchAcksFull(
-      query: typings.firebaseFirestore.distFirestoreSrcCoreQueryMod.Query,
-      version: TestSnapshotVersion,
-      docs: Document*
-    ): this.type = js.native
+    def watchAcksFull(query: Query, version: TestSnapshotVersion, docs: Document*): this.type = js.native
     
-    def watchCurrents(query: typings.firebaseFirestore.distFirestoreSrcCoreQueryMod.Query, resumeToken: String): this.type = js.native
+    def watchCurrents(query: Query, resumeToken: String): this.type = js.native
     
-    def watchFilters(
-      queries: js.Array[typings.firebaseFirestore.distFirestoreSrcCoreQueryMod.Query],
-      docs: DocumentKey*
-    ): this.type = js.native
+    def watchFilters(queries: js.Array[Query]): this.type = js.native
+    def watchFilters(queries: js.Array[Query], docs: js.Array[DocumentKey]): this.type = js.native
+    def watchFilters(queries: js.Array[Query], docs: js.Array[DocumentKey], bloomFilter: BloomFilter): this.type = js.native
+    def watchFilters(queries: js.Array[Query], docs: Unit, bloomFilter: BloomFilter): this.type = js.native
     
-    def watchRemoves(query: typings.firebaseFirestore.distFirestoreSrcCoreQueryMod.Query): this.type = js.native
-    def watchRemoves(query: typings.firebaseFirestore.distFirestoreSrcCoreQueryMod.Query, cause: RpcError): this.type = js.native
+    def watchRemoves(query: Query): this.type = js.native
+    def watchRemoves(query: Query, cause: RpcError): this.type = js.native
     
-    def watchRemovesDoc(key: DocumentKey, targets: typings.firebaseFirestore.distFirestoreSrcCoreQueryMod.Query*): this.type = js.native
+    def watchRemovesDoc(key: DocumentKey, targets: Query*): this.type = js.native
     
     /**
       * Special helper for limbo documents that acks an unlisten for a limbo doc
@@ -281,26 +286,17 @@ object distFirestoreTestUnitSpecsSpecBuilderMod {
       */
     def watchRemovesLimboTarget(doc: Document): this.type = js.native
     
-    def watchResets(queries: typings.firebaseFirestore.distFirestoreSrcCoreQueryMod.Query*): this.type = js.native
+    def watchResets(queries: Query*): this.type = js.native
     
     def watchSends(targets: Affects, docs: Document*): this.type = js.native
     
     def watchSnapshots(version: TestSnapshotVersion): this.type = js.native
-    def watchSnapshots(
-      version: TestSnapshotVersion,
-      targets: js.Array[typings.firebaseFirestore.distFirestoreSrcCoreQueryMod.Query]
-    ): this.type = js.native
-    def watchSnapshots(
-      version: TestSnapshotVersion,
-      targets: js.Array[typings.firebaseFirestore.distFirestoreSrcCoreQueryMod.Query],
-      resumeToken: String
-    ): this.type = js.native
+    def watchSnapshots(version: TestSnapshotVersion, targets: js.Array[Query]): this.type = js.native
+    def watchSnapshots(version: TestSnapshotVersion, targets: js.Array[Query], resumeToken: String): this.type = js.native
     def watchSnapshots(version: TestSnapshotVersion, targets: Unit, resumeToken: String): this.type = js.native
     
     def watchStreamCloses(error: Code): this.type = js.native
     def watchStreamCloses(error: Code, opts: RunBackoffTimer): this.type = js.native
-    
-    def withGCEnabled(gcEnabled: Boolean): this.type = js.native
     
     def withMaxConcurrentLimboResolutions(): this.type = js.native
     def withMaxConcurrentLimboResolutions(value: Double): this.type = js.native
@@ -337,7 +333,6 @@ object distFirestoreTestUnitSpecsSpecBuilderMod {
   }
   
   inline def client(num: Double): MultiClientSpecBuilder = ^.asInstanceOf[js.Dynamic].applyDynamic("client")(num.asInstanceOf[js.Any]).asInstanceOf[MultiClientSpecBuilder]
-  inline def client(num: Double, withGcEnabled: Boolean): MultiClientSpecBuilder = (^.asInstanceOf[js.Dynamic].applyDynamic("client")(num.asInstanceOf[js.Any], withGcEnabled.asInstanceOf[js.Any])).asInstanceOf[MultiClientSpecBuilder]
   
   inline def spec(): SpecBuilder = ^.asInstanceOf[js.Dynamic].applyDynamic("spec")().asInstanceOf[SpecBuilder]
   
@@ -345,11 +340,15 @@ object distFirestoreTestUnitSpecsSpecBuilderMod {
   
   trait ActiveTargetSpec extends StObject {
     
+    var expectedCount: js.UndefOr[Double] = js.undefined
+    
     var queries: js.Array[SpecQuery]
     
     var readTime: js.UndefOr[TestSnapshotVersion] = js.undefined
     
     var resumeToken: js.UndefOr[String] = js.undefined
+    
+    var targetPurpose: js.UndefOr[TargetPurpose] = js.undefined
   }
   object ActiveTargetSpec {
     
@@ -360,6 +359,10 @@ object distFirestoreTestUnitSpecsSpecBuilderMod {
     
     @scala.inline
     implicit open class MutableBuilder[Self <: ActiveTargetSpec] (val x: Self) extends AnyVal {
+      
+      inline def setExpectedCount(value: Double): Self = StObject.set(x, "expectedCount", value.asInstanceOf[js.Any])
+      
+      inline def setExpectedCountUndefined: Self = StObject.set(x, "expectedCount", js.undefined)
       
       inline def setQueries(value: js.Array[SpecQuery]): Self = StObject.set(x, "queries", value.asInstanceOf[js.Any])
       
@@ -372,8 +375,44 @@ object distFirestoreTestUnitSpecsSpecBuilderMod {
       inline def setResumeToken(value: String): Self = StObject.set(x, "resumeToken", value.asInstanceOf[js.Any])
       
       inline def setResumeTokenUndefined: Self = StObject.set(x, "resumeToken", js.undefined)
+      
+      inline def setTargetPurpose(value: TargetPurpose): Self = StObject.set(x, "targetPurpose", value.asInstanceOf[js.Any])
+      
+      inline def setTargetPurposeUndefined: Self = StObject.set(x, "targetPurpose", js.undefined)
     }
   }
   
   type LimboMap = StringDictionary[TargetId]
+  
+  trait ResumeSpec extends StObject {
+    
+    var expectedCount: js.UndefOr[Double] = js.undefined
+    
+    var readTime: js.UndefOr[TestSnapshotVersion] = js.undefined
+    
+    var resumeToken: js.UndefOr[String] = js.undefined
+  }
+  object ResumeSpec {
+    
+    inline def apply(): ResumeSpec = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ResumeSpec]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResumeSpec] (val x: Self) extends AnyVal {
+      
+      inline def setExpectedCount(value: Double): Self = StObject.set(x, "expectedCount", value.asInstanceOf[js.Any])
+      
+      inline def setExpectedCountUndefined: Self = StObject.set(x, "expectedCount", js.undefined)
+      
+      inline def setReadTime(value: TestSnapshotVersion): Self = StObject.set(x, "readTime", value.asInstanceOf[js.Any])
+      
+      inline def setReadTimeUndefined: Self = StObject.set(x, "readTime", js.undefined)
+      
+      inline def setResumeToken(value: String): Self = StObject.set(x, "resumeToken", value.asInstanceOf[js.Any])
+      
+      inline def setResumeTokenUndefined: Self = StObject.set(x, "resumeToken", js.undefined)
+    }
+  }
 }

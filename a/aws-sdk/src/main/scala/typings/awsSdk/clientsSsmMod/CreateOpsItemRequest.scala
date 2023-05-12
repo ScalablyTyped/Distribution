@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateOpsItemRequest extends StObject {
   
   /**
+    * The target Amazon Web Services account where you want to create an OpsItem. To make this call, your account must be configured to work with OpsItems across accounts. For more information, see Setting up OpsCenter to work with OpsItems across accounts in the Amazon Web Services Systems Manager User Guide.
+    */
+  var AccountId: js.UndefOr[OpsItemAccountId] = js.undefined
+  
+  /**
     * The time a runbook workflow ended. Currently reported only for the OpsItem type /aws/changerequest.
     */
   var ActualEndTime: js.UndefOr[js.Date] = js.undefined
@@ -37,7 +42,7 @@ trait CreateOpsItemRequest extends StObject {
   var OperationalData: js.UndefOr[OpsItemOperationalData] = js.undefined
   
   /**
-    * The type of OpsItem to create. Currently, the only valid values are /aws/changerequest and /aws/issue.
+    * The type of OpsItem to create. Systems Manager supports the following types of OpsItems:    /aws/issue  This type of OpsItem is used for default OpsItems created by OpsCenter.     /aws/changerequest  This type of OpsItem is used by Change Manager for reviewing and approving or rejecting change requests.     /aws/insights  This type of OpsItem is used by OpsCenter for aggregating and reporting on duplicate OpsItems.   
     */
   var OpsItemType: js.UndefOr[typings.awsSdk.clientsSsmMod.OpsItemType] = js.undefined
   
@@ -90,6 +95,10 @@ object CreateOpsItemRequest {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: CreateOpsItemRequest] (val x: Self) extends AnyVal {
+    
+    inline def setAccountId(value: OpsItemAccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
+    
+    inline def setAccountIdUndefined: Self = StObject.set(x, "AccountId", js.undefined)
     
     inline def setActualEndTime(value: js.Date): Self = StObject.set(x, "ActualEndTime", value.asInstanceOf[js.Any])
     

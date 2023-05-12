@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TerminalSplitLocationOptions extends StObject {
   
   /**
-    * The parent terminal to split this terminal beside. This works whether the parent terminal
-    * is in the panel or the editor area.
-    */
+  		 * The parent terminal to split this terminal beside. This works whether the parent terminal
+  		 * is in the panel or the editor area.
+  		 */
   var parentTerminal: Terminal
 }
 object TerminalSplitLocationOptions {

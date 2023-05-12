@@ -1,7 +1,7 @@
 
 # Scala.js typings for fluentui__react-window-provider
 
-Typings are for version 2.2.3
+Typings are for version 2.2.13
 
 ## Library description:
 Utilities for providing and consuming the window/document objects even across portal/iframe/child-window boundaries.

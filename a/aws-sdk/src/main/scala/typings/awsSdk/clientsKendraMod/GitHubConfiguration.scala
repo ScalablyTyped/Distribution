@@ -97,7 +97,7 @@ trait GitHubConfiguration extends StObject {
   var SaaSConfiguration: js.UndefOr[typings.awsSdk.clientsKendraMod.SaaSConfiguration] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of an Secrets Manager secret that contains the key-value pairs required to connect to your GitHub. The secret must contain a JSON structure with the following keys:   githubToken—The access token created in GitHub. For more information on creating a token in GitHub, see Authentication for a GitHub data source.  
+    * The Amazon Resource Name (ARN) of an Secrets Manager secret that contains the key-value pairs required to connect to your GitHub. The secret must contain a JSON structure with the following keys:   personalToken—The access token created in GitHub. For more information on creating a token in GitHub, see Using a GitHub data source.  
     */
   var SecretArn: typings.awsSdk.clientsKendraMod.SecretArn
   

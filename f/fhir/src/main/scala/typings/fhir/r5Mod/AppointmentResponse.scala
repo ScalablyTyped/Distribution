@@ -1,5 +1,6 @@
 package typings.fhir.r5Mod
 
+import typings.fhir.fhirStrings.`entered-in-error`
 import typings.fhir.fhirStrings.`needs-action`
 import typings.fhir.fhirStrings.accepted
 import typings.fhir.fhirStrings.declined
@@ -17,7 +18,13 @@ trait AppointmentResponse
   
   var _end: js.UndefOr[Element] = js.undefined
   
+  var _occurrenceDate: js.UndefOr[Element] = js.undefined
+  
   var _participantStatus: js.UndefOr[Element] = js.undefined
+  
+  var _proposedNewTime: js.UndefOr[Element] = js.undefined
+  
+  var _recurring: js.UndefOr[Element] = js.undefined
   
   var _start: js.UndefOr[Element] = js.undefined
   
@@ -47,9 +54,14 @@ trait AppointmentResponse
   var identifier: js.UndefOr[js.Array[Identifier]] = js.undefined
   
   /**
+    * The original date within a recurring request. This could be used in place of the recurrenceId to be more direct (or where the template is provided through the simple list of dates in `Appointment.occurrenceDate`).
+    */
+  var occurrenceDate: js.UndefOr[String] = js.undefined
+  
+  /**
     * This element is labeled as a modifier because the status contains the code entered-in-error that marks the participant as not currently valid.
     */
-  var participantStatus: accepted | declined | tentative | `needs-action`
+  var participantStatus: accepted | declined | tentative | `needs-action` | `entered-in-error`
   
   /**
     * The role of the participant can be used to declare what the actor will be doing in the scope of the referenced appointment.
@@ -57,6 +69,21 @@ trait AppointmentResponse
     * This value SHALL be the same as specified on the referenced Appointment so that they can be matched, and subsequently updated.
     */
   var participantType: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
+  
+  /**
+    * Indicates that the response is proposing a different time that was initially requested.  The new proposed time will be indicated in the start and end properties.
+    */
+  var proposedNewTime: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * If the recurrence template was defined using the list of occurrenceDates then this property might not be used.
+    */
+  var recurrenceId: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * When a recurring appointment is requested, the participant may choose to respond to each individual occurrence, in which case AppointmentResponse.recurring should be false.  If the participant chooses to respond the same way for all occurrences, they may instead use a single AppointmentResponse with recurring set to true.  These may be combined as the participant chooses.  For example, they may accept all occurrences (recurring = true), but then send a decline for a specific occurrence (recurring=false).
+    */
+  var recurring: js.UndefOr[Boolean] = js.undefined
   
   /** Resource Type Name (for serialization) */
   @JSName("resourceType")
@@ -69,7 +96,10 @@ trait AppointmentResponse
 }
 object AppointmentResponse {
   
-  inline def apply(appointment: Reference, participantStatus: accepted | declined | tentative | `needs-action`): AppointmentResponse = {
+  inline def apply(
+    appointment: Reference,
+    participantStatus: accepted | declined | tentative | `needs-action` | `entered-in-error`
+  ): AppointmentResponse = {
     val __obj = js.Dynamic.literal(appointment = appointment.asInstanceOf[js.Any], participantStatus = participantStatus.asInstanceOf[js.Any], resourceType = "AppointmentResponse")
     __obj.asInstanceOf[AppointmentResponse]
   }
@@ -97,13 +127,29 @@ object AppointmentResponse {
     
     inline def setIdentifierVarargs(value: Identifier*): Self = StObject.set(x, "identifier", js.Array(value*))
     
-    inline def setParticipantStatus(value: accepted | declined | tentative | `needs-action`): Self = StObject.set(x, "participantStatus", value.asInstanceOf[js.Any])
+    inline def setOccurrenceDate(value: String): Self = StObject.set(x, "occurrenceDate", value.asInstanceOf[js.Any])
+    
+    inline def setOccurrenceDateUndefined: Self = StObject.set(x, "occurrenceDate", js.undefined)
+    
+    inline def setParticipantStatus(value: accepted | declined | tentative | `needs-action` | `entered-in-error`): Self = StObject.set(x, "participantStatus", value.asInstanceOf[js.Any])
     
     inline def setParticipantType(value: js.Array[CodeableConcept]): Self = StObject.set(x, "participantType", value.asInstanceOf[js.Any])
     
     inline def setParticipantTypeUndefined: Self = StObject.set(x, "participantType", js.undefined)
     
     inline def setParticipantTypeVarargs(value: CodeableConcept*): Self = StObject.set(x, "participantType", js.Array(value*))
+    
+    inline def setProposedNewTime(value: Boolean): Self = StObject.set(x, "proposedNewTime", value.asInstanceOf[js.Any])
+    
+    inline def setProposedNewTimeUndefined: Self = StObject.set(x, "proposedNewTime", js.undefined)
+    
+    inline def setRecurrenceId(value: Double): Self = StObject.set(x, "recurrenceId", value.asInstanceOf[js.Any])
+    
+    inline def setRecurrenceIdUndefined: Self = StObject.set(x, "recurrenceId", js.undefined)
+    
+    inline def setRecurring(value: Boolean): Self = StObject.set(x, "recurring", value.asInstanceOf[js.Any])
+    
+    inline def setRecurringUndefined: Self = StObject.set(x, "recurring", js.undefined)
     
     inline def setResourceType(value: typings.fhir.fhirStrings.AppointmentResponse): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
@@ -119,9 +165,21 @@ object AppointmentResponse {
     
     inline def set_endUndefined: Self = StObject.set(x, "_end", js.undefined)
     
+    inline def set_occurrenceDate(value: Element): Self = StObject.set(x, "_occurrenceDate", value.asInstanceOf[js.Any])
+    
+    inline def set_occurrenceDateUndefined: Self = StObject.set(x, "_occurrenceDate", js.undefined)
+    
     inline def set_participantStatus(value: Element): Self = StObject.set(x, "_participantStatus", value.asInstanceOf[js.Any])
     
     inline def set_participantStatusUndefined: Self = StObject.set(x, "_participantStatus", js.undefined)
+    
+    inline def set_proposedNewTime(value: Element): Self = StObject.set(x, "_proposedNewTime", value.asInstanceOf[js.Any])
+    
+    inline def set_proposedNewTimeUndefined: Self = StObject.set(x, "_proposedNewTime", js.undefined)
+    
+    inline def set_recurring(value: Element): Self = StObject.set(x, "_recurring", value.asInstanceOf[js.Any])
+    
+    inline def set_recurringUndefined: Self = StObject.set(x, "_recurring", js.undefined)
     
     inline def set_start(value: Element): Self = StObject.set(x, "_start", value.asInstanceOf[js.Any])
     

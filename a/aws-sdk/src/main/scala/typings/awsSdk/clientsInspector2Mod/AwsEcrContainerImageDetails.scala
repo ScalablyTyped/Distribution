@@ -37,7 +37,7 @@ trait AwsEcrContainerImageDetails extends StObject {
   var pushedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The registry the Amazon ECR container image belongs to.
+    * The registry for the Amazon ECR container image.
     */
   var registry: NonEmptyString
   

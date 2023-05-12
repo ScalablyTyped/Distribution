@@ -54,9 +54,9 @@ object dxValidator {
   
   trait ValidatedEvent extends StObject {
     
-    var brokenRule: js.UndefOr[ValidationRule] = js.undefined
+    var brokenRule: js.UndefOr[typings.devextreme.mod.DevExpress.common.ValidationRule] = js.undefined
     
-    var brokenRules: js.UndefOr[ValidationRule] = js.undefined
+    var brokenRules: js.UndefOr[typings.devextreme.mod.DevExpress.common.ValidationRule] = js.undefined
     
     var isValid: js.UndefOr[Boolean] = js.undefined
     
@@ -64,7 +64,7 @@ object dxValidator {
     
     var status: js.UndefOr[ValidationStatus] = js.undefined
     
-    var validationRules: js.UndefOr[js.Array[ValidationRule]] = js.undefined
+    var validationRules: js.UndefOr[js.Array[typings.devextreme.mod.DevExpress.common.ValidationRule]] = js.undefined
     
     var value: js.UndefOr[Any] = js.undefined
   }
@@ -78,11 +78,11 @@ object dxValidator {
     @scala.inline
     implicit open class MutableBuilder[Self <: ValidatedEvent] (val x: Self) extends AnyVal {
       
-      inline def setBrokenRule(value: ValidationRule): Self = StObject.set(x, "brokenRule", value.asInstanceOf[js.Any])
+      inline def setBrokenRule(value: typings.devextreme.mod.DevExpress.common.ValidationRule): Self = StObject.set(x, "brokenRule", value.asInstanceOf[js.Any])
       
       inline def setBrokenRuleUndefined: Self = StObject.set(x, "brokenRule", js.undefined)
       
-      inline def setBrokenRules(value: ValidationRule): Self = StObject.set(x, "brokenRules", value.asInstanceOf[js.Any])
+      inline def setBrokenRules(value: typings.devextreme.mod.DevExpress.common.ValidationRule): Self = StObject.set(x, "brokenRules", value.asInstanceOf[js.Any])
       
       inline def setBrokenRulesUndefined: Self = StObject.set(x, "brokenRules", js.undefined)
       
@@ -98,11 +98,11 @@ object dxValidator {
       
       inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
       
-      inline def setValidationRules(value: js.Array[ValidationRule]): Self = StObject.set(x, "validationRules", value.asInstanceOf[js.Any])
+      inline def setValidationRules(value: js.Array[typings.devextreme.mod.DevExpress.common.ValidationRule]): Self = StObject.set(x, "validationRules", value.asInstanceOf[js.Any])
       
       inline def setValidationRulesUndefined: Self = StObject.set(x, "validationRules", js.undefined)
       
-      inline def setValidationRulesVarargs(value: ValidationRule*): Self = StObject.set(x, "validationRules", js.Array(value*))
+      inline def setValidationRulesVarargs(value: typings.devextreme.mod.DevExpress.common.ValidationRule*): Self = StObject.set(x, "validationRules", js.Array(value*))
       
       inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       

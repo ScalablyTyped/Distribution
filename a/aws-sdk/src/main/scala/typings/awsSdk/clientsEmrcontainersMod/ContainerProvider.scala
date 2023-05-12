@@ -17,7 +17,7 @@ trait ContainerProvider extends StObject {
   var info: js.UndefOr[ContainerInfo] = js.undefined
   
   /**
-    * The type of the container provider. EKS is the only supported type as of now.
+    * The type of the container provider. Amazon EKS is the only supported type as of now.
     */
   var `type`: ContainerProviderType
 }

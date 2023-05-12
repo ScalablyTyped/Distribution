@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "vega-interpreter" : "1.0.4"
+      "vega-interpreter" : "1.0.5"
     }
   ],
   "test-dependencies" : [
     {
-      "vega-interpreter" : "1.0.4"
+      "vega-interpreter" : "1.0.5"
     }
   ],
   "compile-devDependencies" : [

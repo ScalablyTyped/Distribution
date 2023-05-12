@@ -15,6 +15,9 @@ object distTypesCommandsMod {
   @js.native
   open class GetRoleCredentialsCommand protected ()
     extends typings.awsSdkClientSso.distTypesCommandsGetRoleCredentialsCommandMod.GetRoleCredentialsCommand {
+    /**
+      * @public
+      */
     def this(input: GetRoleCredentialsCommandInput) = this()
   }
   /* static members */
@@ -31,6 +34,9 @@ object distTypesCommandsMod {
   @js.native
   open class ListAccountRolesCommand protected ()
     extends typings.awsSdkClientSso.distTypesCommandsListAccountRolesCommandMod.ListAccountRolesCommand {
+    /**
+      * @public
+      */
     def this(input: ListAccountRolesCommandInput) = this()
   }
   /* static members */
@@ -47,6 +53,9 @@ object distTypesCommandsMod {
   @js.native
   open class ListAccountsCommand protected ()
     extends typings.awsSdkClientSso.distTypesCommandsListAccountsCommandMod.ListAccountsCommand {
+    /**
+      * @public
+      */
     def this(input: ListAccountsCommandInput) = this()
   }
   /* static members */
@@ -63,6 +72,9 @@ object distTypesCommandsMod {
   @js.native
   open class LogoutCommand protected ()
     extends typings.awsSdkClientSso.distTypesCommandsLogoutCommandMod.LogoutCommand {
+    /**
+      * @public
+      */
     def this(input: LogoutCommandInput) = this()
   }
   /* static members */

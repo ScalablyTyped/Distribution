@@ -12,25 +12,12 @@ import typings.gestalt.gestaltDoubles.`0.8`
 import typings.gestalt.gestaltDoubles.`0.9`
 import typings.gestalt.gestaltInts.`0`
 import typings.gestalt.gestaltInts.`1`
-import typings.gestalt.gestaltInts.`2`
-import typings.gestalt.gestaltInts.`3`
-import typings.gestalt.gestaltInts.`4`
-import typings.gestalt.gestaltInts.`5`
-import typings.gestalt.gestaltInts.`6`
-import typings.gestalt.gestaltInts.`7`
-import typings.gestalt.gestaltInts.`8`
 import typings.gestalt.gestaltStrings.absolute
-import typings.gestalt.gestaltStrings.around
 import typings.gestalt.gestaltStrings.article
 import typings.gestalt.gestaltStrings.aside
 import typings.gestalt.gestaltStrings.auto
-import typings.gestalt.gestaltStrings.baseline
-import typings.gestalt.gestaltStrings.between
-import typings.gestalt.gestaltStrings.block
 import typings.gestalt.gestaltStrings.brand
-import typings.gestalt.gestaltStrings.center
-import typings.gestalt.gestaltStrings.circle
-import typings.gestalt.gestaltStrings.column
+import typings.gestalt.gestaltStrings.caption
 import typings.gestalt.gestaltStrings.dark
 import typings.gestalt.gestaltStrings.darkWash
 import typings.gestalt.gestaltStrings.default
@@ -40,21 +27,15 @@ import typings.gestalt.gestaltStrings.education
 import typings.gestalt.gestaltStrings.elevationAccent
 import typings.gestalt.gestaltStrings.elevationFloating
 import typings.gestalt.gestaltStrings.elevationRaised
-import typings.gestalt.gestaltStrings.end
 import typings.gestalt.gestaltStrings.errorBase
 import typings.gestalt.gestaltStrings.errorWeak
-import typings.gestalt.gestaltStrings.evenly
 import typings.gestalt.gestaltStrings.figcaption
 import typings.gestalt.gestaltStrings.figure
 import typings.gestalt.gestaltStrings.fixed
-import typings.gestalt.gestaltStrings.flex
 import typings.gestalt.gestaltStrings.footer
-import typings.gestalt.gestaltStrings.grow
 import typings.gestalt.gestaltStrings.header
-import typings.gestalt.gestaltStrings.hidden
 import typings.gestalt.gestaltStrings.infoBase
 import typings.gestalt.gestaltStrings.infoWeak
-import typings.gestalt.gestaltStrings.inlineBlock
 import typings.gestalt.gestaltStrings.inverse
 import typings.gestalt.gestaltStrings.lg
 import typings.gestalt.gestaltStrings.light
@@ -62,38 +43,27 @@ import typings.gestalt.gestaltStrings.lightWash
 import typings.gestalt.gestaltStrings.main
 import typings.gestalt.gestaltStrings.nav
 import typings.gestalt.gestaltStrings.none
-import typings.gestalt.gestaltStrings.pill
 import typings.gestalt.gestaltStrings.primary
 import typings.gestalt.gestaltStrings.raisedBottomShadow
 import typings.gestalt.gestaltStrings.raisedTopShadow
 import typings.gestalt.gestaltStrings.recommendationBase
 import typings.gestalt.gestaltStrings.recommendationWeak
 import typings.gestalt.gestaltStrings.relative
-import typings.gestalt.gestaltStrings.row
-import typings.gestalt.gestaltStrings.scroll
-import typings.gestalt.gestaltStrings.scrollX
-import typings.gestalt.gestaltStrings.scrollY
 import typings.gestalt.gestaltStrings.secondary
 import typings.gestalt.gestaltStrings.section
 import typings.gestalt.gestaltStrings.selected
 import typings.gestalt.gestaltStrings.shadow
 import typings.gestalt.gestaltStrings.shopping
-import typings.gestalt.gestaltStrings.shrink
 import typings.gestalt.gestaltStrings.sm
-import typings.gestalt.gestaltStrings.start
 import typings.gestalt.gestaltStrings.static
-import typings.gestalt.gestaltStrings.stretch
 import typings.gestalt.gestaltStrings.successBase
 import typings.gestalt.gestaltStrings.successWeak
 import typings.gestalt.gestaltStrings.summary
 import typings.gestalt.gestaltStrings.tertiary
 import typings.gestalt.gestaltStrings.transparent
 import typings.gestalt.gestaltStrings.transparentDarkGray
-import typings.gestalt.gestaltStrings.visible
-import typings.gestalt.gestaltStrings.visuallyHidden
 import typings.gestalt.gestaltStrings.warningBase
 import typings.gestalt.gestaltStrings.warningWeak
-import typings.react.mod.ReactNode
 import typings.react.mod.RefAttributes
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
@@ -105,26 +75,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   extends StObject
      with RefAttributes[HTMLDivElement] {
   
-  var alignContent: js.UndefOr[start | end | center | between | around | evenly | stretch] = js.undefined
+  var alignContent: js.UndefOr[AlignContentType] = js.undefined
   
-  var alignItems: js.UndefOr[start | end | center | baseline | stretch] = js.undefined
+  var alignItems: js.UndefOr[AlignItemsType] = js.undefined
   
-  var alignSelf: js.UndefOr[auto | start | end | center | baseline | stretch] = js.undefined
+  var alignSelf: js.UndefOr[auto | AlignItemsType] = js.undefined
   
-  /**
-    * Changes the underlying DOM element when needed for accessibility or SEO reasons. Note that currently only block-level elements are available.
-    *
-    * @default 'div'
-    */
   var as: js.UndefOr[
-    article | aside | details | div | figcaption | figure | footer | header | main | nav | section | summary
+    article | aside | caption | details | div | figcaption | figure | footer | header | main | nav | section | summary
   ] = js.undefined
   
   var borderStyle: js.UndefOr[sm | lg | shadow | raisedTopShadow | raisedBottomShadow | none] = js.undefined
   
   var bottom: js.UndefOr[Boolean] = js.undefined
   
-  var children: js.UndefOr[ReactNode] = js.undefined
+  var children: js.UndefOr[Node] = js.undefined
   
   var color: js.UndefOr[
     darkWash | lightWash | transparent | transparentDarkGray | default | infoBase | infoWeak | errorBase | errorWeak | warningBase | warningWeak | successBase | successWeak | recommendationBase | recommendationWeak | shopping | primary | secondary | tertiary | selected | inverse | brand | education | elevationAccent | elevationFloating | elevationRaised | dark | light
@@ -134,25 +99,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   
   var dangerouslySetInlineStyle: js.UndefOr[Style] = js.undefined
   
-  var direction: js.UndefOr[row | column] = js.undefined
+  var direction: js.UndefOr[DirectionType] = js.undefined
   
-  var display: js.UndefOr[none | flex | block | inlineBlock | visuallyHidden] = js.undefined
+  var display: js.UndefOr[DisplayType] = js.undefined
   
   var fit: js.UndefOr[Boolean] = js.undefined
   
-  var flex: js.UndefOr[grow | shrink | none] = js.undefined
+  var flex: js.UndefOr[FlexType] = js.undefined
   
   var height: js.UndefOr[Double | String] = js.undefined
   
-  var justifyContent: js.UndefOr[start | end | center | between | around | evenly] = js.undefined
+  var justifyContent: js.UndefOr[JustifyContentType] = js.undefined
   
   var left: js.UndefOr[Boolean] = js.undefined
   
+  var lgAlignItems: js.UndefOr[AlignItemsType] = js.undefined
+  
   var lgColumn: js.UndefOr[UnsignedUpTo12] = js.undefined
   
-  var lgDirection: js.UndefOr[row | column] = js.undefined
+  var lgDirection: js.UndefOr[DirectionType] = js.undefined
   
-  var lgDisplay: js.UndefOr[none | flex | block | inlineBlock | visuallyHidden] = js.undefined
+  var lgDisplay: js.UndefOr[DisplayType] = js.undefined
   
   var lgMargin: js.UndefOr[SignedUpTo12 | auto] = js.undefined
   
@@ -184,11 +151,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   
   var maxWidth: js.UndefOr[Double | String] = js.undefined
   
+  var mdAlignItems: js.UndefOr[AlignItemsType] = js.undefined
+  
   var mdColumn: js.UndefOr[UnsignedUpTo12] = js.undefined
   
-  var mdDirection: js.UndefOr[row | column] = js.undefined
+  var mdDirection: js.UndefOr[DirectionType] = js.undefined
   
-  var mdDisplay: js.UndefOr[none | flex | block | inlineBlock | visuallyHidden] = js.undefined
+  var mdDisplay: js.UndefOr[DisplayType] = js.undefined
   
   var mdMargin: js.UndefOr[SignedUpTo12 | auto] = js.undefined
   
@@ -214,7 +183,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     `0` | `0.1` | `0.2` | `0.3` | `0.4` | `0.5` | `0.6` | `0.7` | `0.8` | `0.9` | `1`
   ] = js.undefined
   
-  var overflow: js.UndefOr[visible | hidden | scroll | scrollX | scrollY | auto] = js.undefined
+  var overflow: js.UndefOr[OverflowType] = js.undefined
   
   var padding: js.UndefOr[UnsignedUpTo12] = js.undefined
   
@@ -228,13 +197,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   
   var role: js.UndefOr[String] = js.undefined
   
-  var rounding: js.UndefOr[pill | circle | `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8`] = js.undefined
+  var rounding: js.UndefOr[RoundingType] = js.undefined
+  
+  var smAlignItems: js.UndefOr[AlignItemsType] = js.undefined
   
   var smColumn: js.UndefOr[UnsignedUpTo12] = js.undefined
   
-  var smDirection: js.UndefOr[row | column] = js.undefined
+  var smDirection: js.UndefOr[DirectionType] = js.undefined
   
-  var smDisplay: js.UndefOr[none | flex | block | inlineBlock | visuallyHidden] = js.undefined
+  var smDisplay: js.UndefOr[DisplayType] = js.undefined
   
   var smMargin: js.UndefOr[SignedUpTo12 | auto] = js.undefined
   
@@ -272,20 +243,20 @@ object BoxProps {
   @scala.inline
   implicit open class MutableBuilder[Self <: BoxProps] (val x: Self) extends AnyVal {
     
-    inline def setAlignContent(value: start | end | center | between | around | evenly | stretch): Self = StObject.set(x, "alignContent", value.asInstanceOf[js.Any])
+    inline def setAlignContent(value: AlignContentType): Self = StObject.set(x, "alignContent", value.asInstanceOf[js.Any])
     
     inline def setAlignContentUndefined: Self = StObject.set(x, "alignContent", js.undefined)
     
-    inline def setAlignItems(value: start | end | center | baseline | stretch): Self = StObject.set(x, "alignItems", value.asInstanceOf[js.Any])
+    inline def setAlignItems(value: AlignItemsType): Self = StObject.set(x, "alignItems", value.asInstanceOf[js.Any])
     
     inline def setAlignItemsUndefined: Self = StObject.set(x, "alignItems", js.undefined)
     
-    inline def setAlignSelf(value: auto | start | end | center | baseline | stretch): Self = StObject.set(x, "alignSelf", value.asInstanceOf[js.Any])
+    inline def setAlignSelf(value: auto | AlignItemsType): Self = StObject.set(x, "alignSelf", value.asInstanceOf[js.Any])
     
     inline def setAlignSelfUndefined: Self = StObject.set(x, "alignSelf", js.undefined)
     
     inline def setAs(
-      value: article | aside | details | div | figcaption | figure | footer | header | main | nav | section | summary
+      value: article | aside | caption | details | div | figcaption | figure | footer | header | main | nav | section | summary
     ): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     
     inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
@@ -298,7 +269,7 @@ object BoxProps {
     
     inline def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
     
-    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: Node): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
@@ -316,11 +287,11 @@ object BoxProps {
     
     inline def setDangerouslySetInlineStyleUndefined: Self = StObject.set(x, "dangerouslySetInlineStyle", js.undefined)
     
-    inline def setDirection(value: row | column): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: DirectionType): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
     inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
-    inline def setDisplay(value: none | flex | block | inlineBlock | visuallyHidden): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+    inline def setDisplay(value: DisplayType): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     
     inline def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
     
@@ -328,7 +299,7 @@ object BoxProps {
     
     inline def setFitUndefined: Self = StObject.set(x, "fit", js.undefined)
     
-    inline def setFlex(value: grow | shrink | none): Self = StObject.set(x, "flex", value.asInstanceOf[js.Any])
+    inline def setFlex(value: FlexType): Self = StObject.set(x, "flex", value.asInstanceOf[js.Any])
     
     inline def setFlexUndefined: Self = StObject.set(x, "flex", js.undefined)
     
@@ -336,7 +307,7 @@ object BoxProps {
     
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    inline def setJustifyContent(value: start | end | center | between | around | evenly): Self = StObject.set(x, "justifyContent", value.asInstanceOf[js.Any])
+    inline def setJustifyContent(value: JustifyContentType): Self = StObject.set(x, "justifyContent", value.asInstanceOf[js.Any])
     
     inline def setJustifyContentUndefined: Self = StObject.set(x, "justifyContent", js.undefined)
     
@@ -344,15 +315,19 @@ object BoxProps {
     
     inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
     
+    inline def setLgAlignItems(value: AlignItemsType): Self = StObject.set(x, "lgAlignItems", value.asInstanceOf[js.Any])
+    
+    inline def setLgAlignItemsUndefined: Self = StObject.set(x, "lgAlignItems", js.undefined)
+    
     inline def setLgColumn(value: UnsignedUpTo12): Self = StObject.set(x, "lgColumn", value.asInstanceOf[js.Any])
     
     inline def setLgColumnUndefined: Self = StObject.set(x, "lgColumn", js.undefined)
     
-    inline def setLgDirection(value: row | column): Self = StObject.set(x, "lgDirection", value.asInstanceOf[js.Any])
+    inline def setLgDirection(value: DirectionType): Self = StObject.set(x, "lgDirection", value.asInstanceOf[js.Any])
     
     inline def setLgDirectionUndefined: Self = StObject.set(x, "lgDirection", js.undefined)
     
-    inline def setLgDisplay(value: none | flex | block | inlineBlock | visuallyHidden): Self = StObject.set(x, "lgDisplay", value.asInstanceOf[js.Any])
+    inline def setLgDisplay(value: DisplayType): Self = StObject.set(x, "lgDisplay", value.asInstanceOf[js.Any])
     
     inline def setLgDisplayUndefined: Self = StObject.set(x, "lgDisplay", js.undefined)
     
@@ -416,15 +391,19 @@ object BoxProps {
     
     inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
     
+    inline def setMdAlignItems(value: AlignItemsType): Self = StObject.set(x, "mdAlignItems", value.asInstanceOf[js.Any])
+    
+    inline def setMdAlignItemsUndefined: Self = StObject.set(x, "mdAlignItems", js.undefined)
+    
     inline def setMdColumn(value: UnsignedUpTo12): Self = StObject.set(x, "mdColumn", value.asInstanceOf[js.Any])
     
     inline def setMdColumnUndefined: Self = StObject.set(x, "mdColumn", js.undefined)
     
-    inline def setMdDirection(value: row | column): Self = StObject.set(x, "mdDirection", value.asInstanceOf[js.Any])
+    inline def setMdDirection(value: DirectionType): Self = StObject.set(x, "mdDirection", value.asInstanceOf[js.Any])
     
     inline def setMdDirectionUndefined: Self = StObject.set(x, "mdDirection", js.undefined)
     
-    inline def setMdDisplay(value: none | flex | block | inlineBlock | visuallyHidden): Self = StObject.set(x, "mdDisplay", value.asInstanceOf[js.Any])
+    inline def setMdDisplay(value: DisplayType): Self = StObject.set(x, "mdDisplay", value.asInstanceOf[js.Any])
     
     inline def setMdDisplayUndefined: Self = StObject.set(x, "mdDisplay", js.undefined)
     
@@ -472,7 +451,7 @@ object BoxProps {
     
     inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
-    inline def setOverflow(value: visible | hidden | scroll | scrollX | scrollY | auto): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
+    inline def setOverflow(value: OverflowType): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
     
     inline def setOverflowUndefined: Self = StObject.set(x, "overflow", js.undefined)
     
@@ -500,19 +479,23 @@ object BoxProps {
     
     inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
     
-    inline def setRounding(value: pill | circle | `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8`): Self = StObject.set(x, "rounding", value.asInstanceOf[js.Any])
+    inline def setRounding(value: RoundingType): Self = StObject.set(x, "rounding", value.asInstanceOf[js.Any])
     
     inline def setRoundingUndefined: Self = StObject.set(x, "rounding", js.undefined)
+    
+    inline def setSmAlignItems(value: AlignItemsType): Self = StObject.set(x, "smAlignItems", value.asInstanceOf[js.Any])
+    
+    inline def setSmAlignItemsUndefined: Self = StObject.set(x, "smAlignItems", js.undefined)
     
     inline def setSmColumn(value: UnsignedUpTo12): Self = StObject.set(x, "smColumn", value.asInstanceOf[js.Any])
     
     inline def setSmColumnUndefined: Self = StObject.set(x, "smColumn", js.undefined)
     
-    inline def setSmDirection(value: row | column): Self = StObject.set(x, "smDirection", value.asInstanceOf[js.Any])
+    inline def setSmDirection(value: DirectionType): Self = StObject.set(x, "smDirection", value.asInstanceOf[js.Any])
     
     inline def setSmDirectionUndefined: Self = StObject.set(x, "smDirection", js.undefined)
     
-    inline def setSmDisplay(value: none | flex | block | inlineBlock | visuallyHidden): Self = StObject.set(x, "smDisplay", value.asInstanceOf[js.Any])
+    inline def setSmDisplay(value: DisplayType): Self = StObject.set(x, "smDisplay", value.asInstanceOf[js.Any])
     
     inline def setSmDisplayUndefined: Self = StObject.set(x, "smDisplay", js.undefined)
     

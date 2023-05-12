@@ -1,6 +1,7 @@
 package typings.awsLambda
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.awsLambda.anon.AccessKey
 import typings.awsLambda.anon.Claims
 import typings.awsLambda.anon.ClientCert
 import typings.awsLambda.anon.Method
@@ -26,6 +27,24 @@ object triggerApiGatewayProxyMod {
     var integrationLatency: Double = js.native
     
     var principalId: String = js.native
+  }
+  
+  trait APIGatewayEventRequestContextIAMAuthorizer extends StObject {
+    
+    var iam: AccessKey
+  }
+  object APIGatewayEventRequestContextIAMAuthorizer {
+    
+    inline def apply(iam: AccessKey): APIGatewayEventRequestContextIAMAuthorizer = {
+      val __obj = js.Dynamic.literal(iam = iam.asInstanceOf[js.Any])
+      __obj.asInstanceOf[APIGatewayEventRequestContextIAMAuthorizer]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: APIGatewayEventRequestContextIAMAuthorizer] (val x: Self) extends AnyVal {
+      
+      inline def setIam(value: AccessKey): Self = StObject.set(x, "iam", value.asInstanceOf[js.Any])
+    }
   }
   
   trait APIGatewayEventRequestContextJWTAuthorizer extends StObject {
@@ -372,6 +391,10 @@ object triggerApiGatewayProxyMod {
   
   type APIGatewayProxyEventV2 = APIGatewayProxyEventV2WithRequestContext[APIGatewayEventRequestContextV2]
   
+  type APIGatewayProxyEventV2WithIAMAuthorizer = APIGatewayProxyEventV2WithRequestContext[
+    APIGatewayEventRequestContextV2WithAuthorizer[APIGatewayEventRequestContextIAMAuthorizer]
+  ]
+  
   type APIGatewayProxyEventV2WithJWTAuthorizer = APIGatewayProxyEventV2WithRequestContext[
     APIGatewayEventRequestContextV2WithAuthorizer[APIGatewayEventRequestContextJWTAuthorizer]
   ]
@@ -465,6 +488,8 @@ object triggerApiGatewayProxyMod {
   type APIGatewayProxyHandler = Handler[APIGatewayProxyEvent, APIGatewayProxyResult]
   
   type APIGatewayProxyHandlerV2[T] = Handler[APIGatewayProxyEventV2, APIGatewayProxyResultV2[T]]
+  
+  type APIGatewayProxyHandlerV2WithIAMAuthorizer[T] = Handler[APIGatewayProxyEventV2WithIAMAuthorizer, APIGatewayProxyResultV2[T]]
   
   type APIGatewayProxyHandlerV2WithJWTAuthorizer[T] = Handler[APIGatewayProxyEventV2WithJWTAuthorizer, APIGatewayProxyResultV2[T]]
   

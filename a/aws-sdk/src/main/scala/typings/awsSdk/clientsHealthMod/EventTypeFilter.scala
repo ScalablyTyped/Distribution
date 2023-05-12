@@ -17,7 +17,7 @@ trait EventTypeFilter extends StObject {
   var eventTypeCodes: js.UndefOr[EventTypeCodeList] = js.undefined
   
   /**
-    * The Amazon Web Services services associated with the event. For example, EC2, RDS.
+    * The Amazon Web Services associated with the event. For example, EC2, RDS.
     */
   var services: js.UndefOr[serviceList] = js.undefined
 }

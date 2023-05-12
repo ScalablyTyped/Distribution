@@ -1,5 +1,6 @@
 package typings.devextreme.mod.DevExpress.viz
 
+import typings.devextreme.mod.DevExpress.common.charts.BaseLegendItem
 import typings.devextreme.mod.DevExpress.viz.dxFunnel.Item
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

@@ -48,8 +48,30 @@ object compute {
     def `do`(n: Double, work: DcpURL): js.Promise[JobHandle] = js.native
     def `do`(n: Double, work: DcpURL, arguments: js.Object): js.Promise[JobHandle] = js.native
     
-    def `for`(rangeObject: js.Object, work: String | URL): Job = js.native
-    def `for`(rangeObject: js.Object, work: String | URL, arguments: js.Object): Job = js.native
+    def `for`(start: Double, end: Double, step: Double, work: String | URL): JobHandle = js.native
+    def `for`(start: Double, end: Double, step: Double, work: String | URL, arguments: js.Object): JobHandle = js.native
+    /**
+      * form 2a: for (start, end, step, work, arguments) - start, end, and step are numbers used to create a range object.
+      * Otherwise, this is the same as form 1.
+      * @returns a Promise which will be fulfilled with a JobHandle object.
+      * @param start
+      * @param end
+      * @param step
+      * @param work: Function | string | URL | DcpURL
+      * @param arguments
+      */
+    def `for`(start: Double, end: Double, step: Double, work: js.Object): JobHandle = js.native
+    def `for`(start: Double, end: Double, step: Double, work: js.Object, arguments: js.Object): JobHandle = js.native
+    def `for`(start: Double, end: Double, step: Double, work: DcpURL): JobHandle = js.native
+    def `for`(start: Double, end: Double, step: Double, work: DcpURL, arguments: js.Object): JobHandle = js.native
+    def `for`[T](rangeObject: js.Object, work: String | URL): JobHandle = js.native
+    def `for`[T](rangeObject: js.Object, work: String | URL, arguments: js.Array[T]): JobHandle = js.native
+    def `for`[T](rangeObject: js.Object, work: js.Function2[/* input */ Any, /* repeated */ T, Any]): JobHandle = js.native
+    def `for`[T](
+      rangeObject: js.Object,
+      work: js.Function2[/* input */ Any, /* repeated */ T, Any],
+      arguments: js.Array[T]
+    ): JobHandle = js.native
     /**
       * Form 1: for (rangeObject, work, arguments)
       * This form accepts a range object rangeObject, (see below) and this range object is used as part of the job on the scheduler.
@@ -67,37 +89,27 @@ object compute {
       * without altering the API. This means DCP could process, for example,
       * jobs where the input set is a very long list of video frames and each slice represents one frame.
       * iterableObject could be an Array, ES6 function* generator, or any other type of iterable object.
-      * @returns a Promise which will be fulfilled with a Job object.
-      * @param rangeObject: object | Ranges
-      * @param work: Function | string | URL | DcpURL
-      * @param arguments
+      * @param rangeObject object | Ranges
+      * @param work Function | string | URL | DcpURL
+      * @param arguments An optional Array-like object which contains arguments which are passed to the work function.
+      * @returns A {@link JobHandle}.
       */
-    def `for`(rangeObject: js.Object, work: js.Object): Job = js.native
-    def `for`(rangeObject: js.Object, work: js.Object, arguments: js.Object): Job = js.native
-    def `for`(rangeObject: js.Object, work: DcpURL): Job = js.native
-    def `for`(rangeObject: js.Object, work: DcpURL, arguments: js.Object): Job = js.native
-    def `for`(rangeObject: Ranges, work: String | URL): Job = js.native
-    def `for`(rangeObject: Ranges, work: String | URL, arguments: js.Object): Job = js.native
-    def `for`(rangeObject: Ranges, work: js.Object): Job = js.native
-    def `for`(rangeObject: Ranges, work: js.Object, arguments: js.Object): Job = js.native
-    def `for`(rangeObject: Ranges, work: DcpURL): Job = js.native
-    def `for`(rangeObject: Ranges, work: DcpURL, arguments: js.Object): Job = js.native
-    def `for`(start: Double, end: Double, step: Double, work: String | URL): Job = js.native
-    def `for`(start: Double, end: Double, step: Double, work: String | URL, arguments: js.Object): Job = js.native
-    /**
-      * form 2a: for (start, end, step, work, arguments) - start, end, and step are numbers used to create a range object.
-      * Otherwise, this is the same as form 1.
-      * @returns a Promise which will be fulfilled with a JobHandle object.
-      * @param start
-      * @param end
-      * @param step
-      * @param work: Function | string | URL | DcpURL
-      * @param arguments
-      */
-    def `for`(start: Double, end: Double, step: Double, work: js.Object): Job = js.native
-    def `for`(start: Double, end: Double, step: Double, work: js.Object, arguments: js.Object): Job = js.native
-    def `for`(start: Double, end: Double, step: Double, work: DcpURL): Job = js.native
-    def `for`(start: Double, end: Double, step: Double, work: DcpURL, arguments: js.Object): Job = js.native
+    def `for`[T](rangeObject: js.Object, work: js.Object): JobHandle = js.native
+    def `for`[T](rangeObject: js.Object, work: js.Object, arguments: js.Array[T]): JobHandle = js.native
+    def `for`[T](rangeObject: js.Object, work: DcpURL): JobHandle = js.native
+    def `for`[T](rangeObject: js.Object, work: DcpURL, arguments: js.Array[T]): JobHandle = js.native
+    def `for`[T](rangeObject: Ranges, work: String | URL): JobHandle = js.native
+    def `for`[T](rangeObject: Ranges, work: String | URL, arguments: js.Array[T]): JobHandle = js.native
+    def `for`[T](rangeObject: Ranges, work: js.Function2[/* input */ Any, /* repeated */ T, Any]): JobHandle = js.native
+    def `for`[T](
+      rangeObject: Ranges,
+      work: js.Function2[/* input */ Any, /* repeated */ T, Any],
+      arguments: js.Array[T]
+    ): JobHandle = js.native
+    def `for`[T](rangeObject: Ranges, work: js.Object): JobHandle = js.native
+    def `for`[T](rangeObject: Ranges, work: js.Object, arguments: js.Array[T]): JobHandle = js.native
+    def `for`[T](rangeObject: Ranges, work: DcpURL): JobHandle = js.native
+    def `for`[T](rangeObject: Ranges, work: DcpURL, arguments: js.Array[T]): JobHandle = js.native
     
     /**
       * This async function accepts job Id as its argument and returns information and status of a job specified with jobID.

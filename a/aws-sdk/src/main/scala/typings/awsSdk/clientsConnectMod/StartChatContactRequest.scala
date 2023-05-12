@@ -12,7 +12,7 @@ trait StartChatContactRequest extends StObject {
   var Attributes: js.UndefOr[typings.awsSdk.clientsConnectMod.Attributes] = js.undefined
   
   /**
-    * The total duration of the newly started chat session. If not specified, the chat session duration defaults to 25 hour. The minumum configurable time is 60 minutes. The maximum configurable time is 10,080 minutes (7 days).
+    * The total duration of the newly started chat session. If not specified, the chat session duration defaults to 25 hour. The minimum configurable time is 60 minutes. The maximum configurable time is 10,080 minutes (7 days).
     */
   var ChatDurationInMinutes: js.UndefOr[typings.awsSdk.clientsConnectMod.ChatDurationInMinutes] = js.undefined
   
@@ -32,7 +32,7 @@ trait StartChatContactRequest extends StObject {
   var InitialMessage: js.UndefOr[ChatMessage] = js.undefined
   
   /**
-    * The identifier of the Amazon Connect instance. You can find the instanceId in the ARN of the instance.
+    * The identifier of the Amazon Connect instance. You can find the instance ID in the Amazon Resource Name (ARN) of the instance.
     */
   var InstanceId: typings.awsSdk.clientsConnectMod.InstanceId
   
@@ -42,7 +42,17 @@ trait StartChatContactRequest extends StObject {
   var ParticipantDetails: typings.awsSdk.clientsConnectMod.ParticipantDetails
   
   /**
-    * The supported chat message content types. Content types can be text/plain or both text/plain and text/markdown.
+    * Enable persistent chats. For more information about enabling persistent chat, and for example use cases and how to configure for them, see Enable persistent chat.
+    */
+  var PersistentChat: js.UndefOr[typings.awsSdk.clientsConnectMod.PersistentChat] = js.undefined
+  
+  /**
+    * The unique identifier for an Amazon Connect contact. This identifier is related to the chat starting.  You cannot provide data for both RelatedContactId and PersistentChat.  
+    */
+  var RelatedContactId: js.UndefOr[ContactId] = js.undefined
+  
+  /**
+    * The supported chat message content types. Supported types are text/plain, text/markdown, application/json, application/vnd.amazonaws.connect.message.interactive, and application/vnd.amazonaws.connect.message.interactive.response.  Content types must always contain text/plain. You can then put any other supported type in the list. For example, all the following lists are valid because they contain text/plain: [text/plain, text/markdown, application/json], [text/markdown, text/plain], [text/plain, application/json, application/vnd.amazonaws.connect.message.interactive.response].   The type application/vnd.amazonaws.connect.message.interactive is required to use the Show view flow block. 
     */
   var SupportedMessagingContentTypes: js.UndefOr[typings.awsSdk.clientsConnectMod.SupportedMessagingContentTypes] = js.undefined
 }
@@ -77,6 +87,14 @@ object StartChatContactRequest {
     inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
     inline def setParticipantDetails(value: ParticipantDetails): Self = StObject.set(x, "ParticipantDetails", value.asInstanceOf[js.Any])
+    
+    inline def setPersistentChat(value: PersistentChat): Self = StObject.set(x, "PersistentChat", value.asInstanceOf[js.Any])
+    
+    inline def setPersistentChatUndefined: Self = StObject.set(x, "PersistentChat", js.undefined)
+    
+    inline def setRelatedContactId(value: ContactId): Self = StObject.set(x, "RelatedContactId", value.asInstanceOf[js.Any])
+    
+    inline def setRelatedContactIdUndefined: Self = StObject.set(x, "RelatedContactId", js.undefined)
     
     inline def setSupportedMessagingContentTypes(value: SupportedMessagingContentTypes): Self = StObject.set(x, "SupportedMessagingContentTypes", value.asInstanceOf[js.Any])
     

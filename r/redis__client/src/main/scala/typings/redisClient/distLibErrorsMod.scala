@@ -37,6 +37,21 @@ object distLibErrorsMod {
     var name: String = js.native
   }
   
+  @JSImport("@redis/client/dist/lib/errors", "ClientOfflineError")
+  @js.native
+  open class ClientOfflineError ()
+    extends StObject
+       with Error {
+    
+    /* standard es5 */
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* standard es5 */
+    /* CompleteClass */
+    var name: String = js.native
+  }
+  
   @JSImport("@redis/client/dist/lib/errors", "ConnectionTimeoutError")
   @js.native
   open class ConnectionTimeoutError ()

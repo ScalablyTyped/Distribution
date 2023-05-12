@@ -9,6 +9,8 @@ trait ArrowFunction
   extends StObject
      with Expression
      with FunctionLikeDeclarationBase
+     with LocalsContainer
+     with FlowContainer
      with FunctionLikeDeclaration
      with HasJSDoc
      with HasModifiers
@@ -22,6 +24,5 @@ trait ArrowFunction
   @JSName("kind")
   val kind_ArrowFunction: typings.typescript.mod.SyntaxKind.ArrowFunction = js.native
   
-  @JSName("modifiers")
-  val modifiers_ArrowFunction: js.UndefOr[NodeArray[Modifier]] = js.native
+  val modifiers: js.UndefOr[NodeArray[Modifier]] = js.native
 }

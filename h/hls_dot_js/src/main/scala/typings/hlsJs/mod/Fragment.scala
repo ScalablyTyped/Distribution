@@ -1,5 +1,6 @@
 package typings.hlsJs.mod
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.hlsJs.hlsJsStrings.initSegment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,20 +13,13 @@ open class Fragment protected () extends BaseSegment {
   
   /* private */ var _decryptdata: Any = js.native
   
-  var appendedPTS: js.UndefOr[Double] = js.native
+  def abortRequests(): Unit = js.native
   
   var bitrateTest: Boolean = js.native
   
   var cc: Double = js.native
   
   def clearElementaryStreamInfo(): Unit = js.native
-  
-  /**
-    * Utility method for parseLevelPlaylist to create an initialization vector for a given segment
-    * @param {number} segmentNumber - segment number to generate IV with
-    * @returns {Uint8Array}
-    */
-  def createInitializationVector(segmentNumber: Double): js.typedarray.Uint8Array = js.native
   
   var data: js.UndefOr[js.typedarray.Uint8Array] = js.native
   
@@ -41,15 +35,21 @@ open class Fragment protected () extends BaseSegment {
   
   var endDTS: Double = js.native
   
+  var endList: js.UndefOr[Boolean] = js.native
+  
   var endPTS: js.UndefOr[Double] = js.native
   
   def endProgramDateTime: Double | Null = js.native
   
+  var gap: js.UndefOr[Boolean] = js.native
+  
   var initSegment: Fragment | Null = js.native
+  
+  var keyLoader: Loader[KeyLoaderContext] | Null = js.native
   
   var level: Double = js.native
   
-  var levelkey: js.UndefOr[LevelKey] = js.native
+  var levelkeys: js.UndefOr[StringDictionary[LevelKey]] = js.native
   
   var loader: Loader[FragmentLoaderContext] | Null = js.native
   
@@ -61,14 +61,6 @@ open class Fragment protected () extends BaseSegment {
   
   var rawProgramDateTime: String | Null = js.native
   
-  /**
-    * Utility method for parseLevelPlaylist to get a fragment's decryption data from the currently parsed encryption key data
-    * @param levelkey - a playlist's encryption info
-    * @param segmentNumber - the fragment's segment number
-    * @returns {LevelKey} - an object to be applied as a fragment's decryptdata
-    */
-  def setDecryptDataFromLevelKey(levelkey: LevelKey, segmentNumber: Double): LevelKey = js.native
-  
   def setElementaryStreamInfo(`type`: ElementaryStreamTypes, startPTS: Double, endPTS: Double, startDTS: Double, endDTS: Double): Unit = js.native
   def setElementaryStreamInfo(
     `type`: ElementaryStreamTypes,
@@ -78,6 +70,8 @@ open class Fragment protected () extends BaseSegment {
     endDTS: Double,
     partial: Boolean
   ): Unit = js.native
+  
+  def setKeyFormat(keyFormat: KeySystemFormats): Unit = js.native
   
   var sn: Double | initSegment = js.native
   

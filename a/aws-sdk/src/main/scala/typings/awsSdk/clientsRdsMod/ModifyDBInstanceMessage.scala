@@ -42,7 +42,7 @@ trait ModifyDBInstanceMessage extends StObject {
   var BackupRetentionPeriod: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
-    * Specifies the certificate to associate with the DB instance. This setting doesn't apply to RDS Custom.
+    * Specifies the CA certificate identifier to use for the DB instance’s server certificate. This setting doesn't apply to RDS Custom. For more information, see Using SSL/TLS to encrypt a connection to a DB instance in the Amazon RDS User Guide and  Using SSL/TLS to encrypt a connection to a DB cluster in the Amazon Aurora User Guide.
     */
   var CACertificateIdentifier: js.UndefOr[String] = js.undefined
   
@@ -62,7 +62,7 @@ trait ModifyDBInstanceMessage extends StObject {
   var CopyTagsToSnapshot: js.UndefOr[BooleanOptional] = js.undefined
   
   /**
-    * The new compute and memory capacity of the DB instance, for example db.m4.large. Not all DB instance classes are available in all Amazon Web Services Regions, or for all database engines. For the full list of DB instance classes, and availability for your engine, see DB instance classes in the Amazon RDS User Guide or Aurora DB instance classes in the Amazon Aurora User Guide. If you modify the DB instance class, an outage occurs during the change. The change is applied during the next maintenance window, unless ApplyImmediately is enabled for this request. This setting doesn't apply to RDS Custom for Oracle. Default: Uses existing setting
+    * The new compute and memory capacity of the DB instance, for example db.m4.large. Not all DB instance classes are available in all Amazon Web Services Regions, or for all database engines. For the full list of DB instance classes, and availability for your engine, see DB Instance Class in the Amazon RDS User Guide or Aurora DB instance classes in the Amazon Aurora User Guide. For RDS Custom, see DB instance class support for RDS Custom for Oracle and  DB instance class support for RDS Custom for SQL Server. If you modify the DB instance class, an outage occurs during the change. The change is applied during the next maintenance window, unless you specify ApplyImmediately in your request.  Default: Uses existing setting
     */
   var DBInstanceClass: js.UndefOr[String] = js.undefined
   
@@ -122,7 +122,7 @@ trait ModifyDBInstanceMessage extends StObject {
   var EnablePerformanceInsights: js.UndefOr[BooleanOptional] = js.undefined
   
   /**
-    * The version number of the database engine to upgrade to. Changing this parameter results in an outage and the change is applied during the next maintenance window unless the ApplyImmediately parameter is enabled for this request. For major version upgrades, if a nondefault DB parameter group is currently in use, a new DB parameter group in the DB parameter group family for the new engine version must be specified. The new DB parameter group can be the default for that DB parameter group family. If you specify only a major version, Amazon RDS will update the DB instance to the default minor version if the current minor version is lower. For information about valid engine versions, see CreateDBInstance, or call DescribeDBEngineVersions. In RDS Custom for Oracle, this parameter is supported for read replicas only if they are in the PATCH_DB_FAILURE lifecycle.
+    * The version number of the database engine to upgrade to. Changing this parameter results in an outage and the change is applied during the next maintenance window unless the ApplyImmediately parameter is enabled for this request. For major version upgrades, if a nondefault DB parameter group is currently in use, a new DB parameter group in the DB parameter group family for the new engine version must be specified. The new DB parameter group can be the default for that DB parameter group family. If you specify only a major version, Amazon RDS will update the DB instance to the default minor version if the current minor version is lower. For information about valid engine versions, see CreateDBInstance, or call DescribeDBEngineVersions. If the instance that you're modifying is acting as a read replica, the engine version that you specify must be the same or later than the version that the source DB instance or cluster is running. In RDS Custom for Oracle, this parameter is supported for read replicas only if they are in the PATCH_DB_FAILURE lifecycle.
     */
   var EngineVersion: js.UndefOr[String] = js.undefined
   
@@ -137,9 +137,19 @@ trait ModifyDBInstanceMessage extends StObject {
   var LicenseModel: js.UndefOr[String] = js.undefined
   
   /**
-    * The new password for the master user. The password can include any printable ASCII character except "/", """, or "@". Changing this parameter doesn't result in an outage and the change is asynchronously applied as soon as possible. Between the time of the request and the completion of the request, the MasterUserPassword element exists in the PendingModifiedValues element of the operation response. This setting doesn't apply to RDS Custom.  Amazon Aurora  Not applicable. The password for the master user is managed by the DB cluster. For more information, see ModifyDBCluster. Default: Uses existing setting  MariaDB  Constraints: Must contain from 8 to 41 characters.  Microsoft SQL Server  Constraints: Must contain from 8 to 128 characters.  MySQL  Constraints: Must contain from 8 to 41 characters.  Oracle  Constraints: Must contain from 8 to 30 characters.  PostgreSQL  Constraints: Must contain from 8 to 128 characters.  Amazon RDS API operations never return the password, so this action provides a way to regain access to a primary instance user if the password is lost. This includes restoring privileges that might have been accidentally revoked. 
+    * A value that indicates whether to manage the master user password with Amazon Web Services Secrets Manager. If the DB instance doesn't manage the master user password with Amazon Web Services Secrets Manager, you can turn on this management. In this case, you can't specify MasterUserPassword. If the DB instance already manages the master user password with Amazon Web Services Secrets Manager, and you specify that the master user password is not managed with Amazon Web Services Secrets Manager, then you must specify MasterUserPassword. In this case, RDS deletes the secret and uses the new password for the master user specified by MasterUserPassword. For more information, see Password management with Amazon Web Services Secrets Manager in the Amazon RDS User Guide.  Constraints:   Can't manage the master user password with Amazon Web Services Secrets Manager if MasterUserPassword is specified.  
+    */
+  var ManageMasterUserPassword: js.UndefOr[BooleanOptional] = js.undefined
+  
+  /**
+    * The new password for the master user. The password can include any printable ASCII character except "/", """, or "@". Changing this parameter doesn't result in an outage and the change is asynchronously applied as soon as possible. Between the time of the request and the completion of the request, the MasterUserPassword element exists in the PendingModifiedValues element of the operation response. This setting doesn't apply to RDS Custom.  Amazon Aurora  Not applicable. The password for the master user is managed by the DB cluster. For more information, see ModifyDBCluster. Default: Uses existing setting Constraints: Can't be specified if ManageMasterUserPassword is turned on.  MariaDB  Constraints: Must contain from 8 to 41 characters.  Microsoft SQL Server  Constraints: Must contain from 8 to 128 characters.  MySQL  Constraints: Must contain from 8 to 41 characters.  Oracle  Constraints: Must contain from 8 to 30 characters.  PostgreSQL  Constraints: Must contain from 8 to 128 characters.  Amazon RDS API operations never return the password, so this action provides a way to regain access to a primary instance user if the password is lost. This includes restoring privileges that might have been accidentally revoked. 
     */
   var MasterUserPassword: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The Amazon Web Services KMS key identifier to encrypt a secret that is automatically generated and managed in Amazon Web Services Secrets Manager. This setting is valid only if both of the following conditions are met:   The DB instance doesn't manage the master user password in Amazon Web Services Secrets Manager. If the DB instance already manages the master user password in Amazon Web Services Secrets Manager, you can't change the KMS key used to encrypt the secret.   You are turning on ManageMasterUserPassword to manage the master user password in Amazon Web Services Secrets Manager. If you are turning on ManageMasterUserPassword and don't specify MasterUserSecretKmsKeyId, then the aws/secretsmanager KMS key is used to encrypt the secret. If the secret is in a different Amazon Web Services account, then you can't use the aws/secretsmanager KMS key to encrypt the secret, and you must use a customer managed KMS key.   The Amazon Web Services KMS key identifier is the key ARN, key ID, alias ARN, or alias name for the KMS key. To use a KMS key in a different Amazon Web Services account, specify the key ARN or alias ARN. There is a default KMS key for your Amazon Web Services account. Your Amazon Web Services account has a different default KMS key for each Amazon Web Services Region.
+    */
+  var MasterUserSecretKmsKeyId: js.UndefOr[String] = js.undefined
   
   /**
     * The upper limit in gibibytes (GiB) to which Amazon RDS can automatically scale the storage of the DB instance. For more information about this setting, including limitations that apply to it, see  Managing capacity automatically with Amazon RDS storage autoscaling in the Amazon RDS User Guide. This setting doesn't apply to RDS Custom.
@@ -220,6 +230,11 @@ trait ModifyDBInstanceMessage extends StObject {
     * The number of minutes to pause the automation. When the time period ends, RDS Custom resumes full automation. The minimum value is 60 (default). The maximum value is 1,440.
     */
   var ResumeFullAutomationModeMinutes: js.UndefOr[IntegerOptional] = js.undefined
+  
+  /**
+    * A value that indicates whether to rotate the secret managed by Amazon Web Services Secrets Manager for the master user password. This setting is valid only if the master user password is managed by RDS in Amazon Web Services Secrets Manager for the DB cluster. The secret value contains the updated password. For more information, see Password management with Amazon Web Services Secrets Manager in the Amazon RDS User Guide.  Constraints:   You must apply the change immediately when rotating the master user password.  
+    */
+  var RotateMasterUserPassword: js.UndefOr[BooleanOptional] = js.undefined
   
   /**
     * Specifies the storage throughput value for the DB instance. This setting applies only to the gp3 storage type. This setting doesn't apply to RDS Custom or Amazon Aurora.
@@ -365,9 +380,17 @@ object ModifyDBInstanceMessage {
     
     inline def setLicenseModelUndefined: Self = StObject.set(x, "LicenseModel", js.undefined)
     
+    inline def setManageMasterUserPassword(value: BooleanOptional): Self = StObject.set(x, "ManageMasterUserPassword", value.asInstanceOf[js.Any])
+    
+    inline def setManageMasterUserPasswordUndefined: Self = StObject.set(x, "ManageMasterUserPassword", js.undefined)
+    
     inline def setMasterUserPassword(value: String): Self = StObject.set(x, "MasterUserPassword", value.asInstanceOf[js.Any])
     
     inline def setMasterUserPasswordUndefined: Self = StObject.set(x, "MasterUserPassword", js.undefined)
+    
+    inline def setMasterUserSecretKmsKeyId(value: String): Self = StObject.set(x, "MasterUserSecretKmsKeyId", value.asInstanceOf[js.Any])
+    
+    inline def setMasterUserSecretKmsKeyIdUndefined: Self = StObject.set(x, "MasterUserSecretKmsKeyId", js.undefined)
     
     inline def setMaxAllocatedStorage(value: IntegerOptional): Self = StObject.set(x, "MaxAllocatedStorage", value.asInstanceOf[js.Any])
     
@@ -434,6 +457,10 @@ object ModifyDBInstanceMessage {
     inline def setResumeFullAutomationModeMinutes(value: IntegerOptional): Self = StObject.set(x, "ResumeFullAutomationModeMinutes", value.asInstanceOf[js.Any])
     
     inline def setResumeFullAutomationModeMinutesUndefined: Self = StObject.set(x, "ResumeFullAutomationModeMinutes", js.undefined)
+    
+    inline def setRotateMasterUserPassword(value: BooleanOptional): Self = StObject.set(x, "RotateMasterUserPassword", value.asInstanceOf[js.Any])
+    
+    inline def setRotateMasterUserPasswordUndefined: Self = StObject.set(x, "RotateMasterUserPassword", js.undefined)
     
     inline def setStorageThroughput(value: IntegerOptional): Self = StObject.set(x, "StorageThroughput", value.asInstanceOf[js.Any])
     

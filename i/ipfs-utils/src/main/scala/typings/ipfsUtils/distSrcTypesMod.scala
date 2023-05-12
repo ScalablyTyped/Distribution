@@ -1,8 +1,10 @@
 package typings.ipfsUtils
 
+import typings.ipfsUnixfs.mod.MtimeLike
 import typings.node.streamMod.Readable
 import typings.std.AbortSignal
 import typings.std.AsyncGenerator
+import typings.std.AsyncIterable
 import typings.std.Blob
 import typings.std.BodyInit
 import typings.std.FormData
@@ -202,6 +204,110 @@ object distSrcTypesMod {
       inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
       inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    }
+  }
+  
+  trait GlobSourceOptions extends StObject {
+    
+    /**
+      * follow symlinks
+      */
+    var followSymlinks: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Include .dot files in matched paths
+      */
+    var hidden: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * mode to use - if preserveMode is true this will be ignored
+      */
+    var mode: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * mtime to use - if preserveMtime is true this will be ignored
+      */
+    var mtime: js.UndefOr[MtimeLike] = js.undefined
+    
+    /**
+      * Preserve mode
+      */
+    var preserveMode: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Preserve mtime
+      */
+    var preserveMtime: js.UndefOr[Boolean] = js.undefined
+  }
+  object GlobSourceOptions {
+    
+    inline def apply(): GlobSourceOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[GlobSourceOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GlobSourceOptions] (val x: Self) extends AnyVal {
+      
+      inline def setFollowSymlinks(value: Boolean): Self = StObject.set(x, "followSymlinks", value.asInstanceOf[js.Any])
+      
+      inline def setFollowSymlinksUndefined: Self = StObject.set(x, "followSymlinks", js.undefined)
+      
+      inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+      
+      inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
+      
+      inline def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      
+      inline def setMtime(value: MtimeLike): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
+      
+      inline def setMtimeUndefined: Self = StObject.set(x, "mtime", js.undefined)
+      
+      inline def setPreserveMode(value: Boolean): Self = StObject.set(x, "preserveMode", value.asInstanceOf[js.Any])
+      
+      inline def setPreserveModeUndefined: Self = StObject.set(x, "preserveMode", js.undefined)
+      
+      inline def setPreserveMtime(value: Boolean): Self = StObject.set(x, "preserveMtime", value.asInstanceOf[js.Any])
+      
+      inline def setPreserveMtimeUndefined: Self = StObject.set(x, "preserveMtime", js.undefined)
+    }
+  }
+  
+  trait GlobSourceResult extends StObject {
+    
+    var content: js.UndefOr[AsyncIterable[js.typedarray.Uint8Array]] = js.undefined
+    
+    var mode: js.UndefOr[Double] = js.undefined
+    
+    var mtime: js.UndefOr[MtimeLike] = js.undefined
+    
+    var path: String
+  }
+  object GlobSourceResult {
+    
+    inline def apply(path: String): GlobSourceResult = {
+      val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
+      __obj.asInstanceOf[GlobSourceResult]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GlobSourceResult] (val x: Self) extends AnyVal {
+      
+      inline def setContent(value: AsyncIterable[js.typedarray.Uint8Array]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      
+      inline def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      
+      inline def setMtime(value: MtimeLike): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
+      
+      inline def setMtimeUndefined: Self = StObject.set(x, "mtime", js.undefined)
+      
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     }
   }
   

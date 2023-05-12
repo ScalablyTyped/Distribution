@@ -1,35 +1,51 @@
 package typings.photoshop.domConstantsMod
 
-import typings.photoshop.photoshopStrings.bitDepth1
-import typings.photoshop.photoshopStrings.bitDepth16
-import typings.photoshop.photoshopStrings.bitDepth24
-import typings.photoshop.photoshopStrings.bitDepth32
-import typings.photoshop.photoshopStrings.bitDepth4
-import typings.photoshop.photoshopStrings.bitDepth8
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Rewritten from type alias, can be one of: 
-  - typings.photoshop.photoshopStrings.bitDepth1
-  - typings.photoshop.photoshopStrings.bitDepth4
-  - typings.photoshop.photoshopStrings.bitDepth8
-  - typings.photoshop.photoshopStrings.bitDepth16
-  - typings.photoshop.photoshopStrings.bitDepth24
-  - typings.photoshop.photoshopStrings.bitDepth32
-*/
-trait BMPDepthType extends StObject
-object BMPDepthType {
+@js.native
+sealed trait BMPDepthType extends StObject
+@JSImport("photoshop/dom/Constants", "BMPDepthType")
+@js.native
+object BMPDepthType extends StObject {
   
-  inline def EIGHT: bitDepth8 = "bitDepth8".asInstanceOf[bitDepth8]
+  @JSBracketAccess
+  def apply(value: String): js.UndefOr[BMPDepthType & String] = js.native
   
-  inline def FOUR: bitDepth4 = "bitDepth4".asInstanceOf[bitDepth4]
+  @js.native
+  sealed trait EIGHT
+    extends StObject
+       with BMPDepthType
+  /* "bitDepth8" */ val EIGHT: typings.photoshop.domConstantsMod.BMPDepthType.EIGHT & String = js.native
   
-  inline def ONE: bitDepth1 = "bitDepth1".asInstanceOf[bitDepth1]
+  @js.native
+  sealed trait FOUR
+    extends StObject
+       with BMPDepthType
+  /* "bitDepth4" */ val FOUR: typings.photoshop.domConstantsMod.BMPDepthType.FOUR & String = js.native
   
-  inline def SIXTEEN: bitDepth16 = "bitDepth16".asInstanceOf[bitDepth16]
+  @js.native
+  sealed trait ONE
+    extends StObject
+       with BMPDepthType
+  /* "bitDepth1" */ val ONE: typings.photoshop.domConstantsMod.BMPDepthType.ONE & String = js.native
   
-  inline def THIRTYTWO: bitDepth32 = "bitDepth32".asInstanceOf[bitDepth32]
+  @js.native
+  sealed trait SIXTEEN
+    extends StObject
+       with BMPDepthType
+  /* "bitDepth16" */ val SIXTEEN: typings.photoshop.domConstantsMod.BMPDepthType.SIXTEEN & String = js.native
   
-  inline def TWENTYFOUR: bitDepth24 = "bitDepth24".asInstanceOf[bitDepth24]
+  @js.native
+  sealed trait THIRTYTWO
+    extends StObject
+       with BMPDepthType
+  /* "bitDepth32" */ val THIRTYTWO: typings.photoshop.domConstantsMod.BMPDepthType.THIRTYTWO & String = js.native
+  
+  @js.native
+  sealed trait TWENTYFOUR
+    extends StObject
+       with BMPDepthType
+  /* "bitDepth24" */ val TWENTYFOUR: typings.photoshop.domConstantsMod.BMPDepthType.TWENTYFOUR & String = js.native
 }

@@ -1,6 +1,6 @@
 package typings.blueprintjsTable
 
-import typings.blueprintjsCore.libEsmComponentsMenuMenuItemMod.IMenuItemProps
+import typings.blueprintjsCore.libEsmComponentsMenuMenuItemMod.MenuItemProps
 import typings.blueprintjsTable.libEsmInteractionsMenusMenuContextMod.IMenuContext
 import typings.react.mod.PureComponent
 import org.scalablytyped.runtime.StObject
@@ -16,7 +16,7 @@ object libEsmInteractionsMenusCopyCellsMenuItemMod {
     def this(props: ICopyCellsMenuItemProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: ICopyCellsMenuItemProps, context: Any) = this()
     
@@ -25,7 +25,7 @@ object libEsmInteractionsMenusCopyCellsMenuItemMod {
   
   trait ICopyCellsMenuItemProps
     extends StObject
-       with IMenuItemProps {
+       with MenuItemProps {
     
     /**
       * The `IMenuContext` that launched the menu.

@@ -6,6 +6,7 @@ import typings.azureMsalCommon.distAuthorityOpenIdConfigResponseMod.OpenIdConfig
 import typings.azureMsalCommon.distCacheInterfaceIcachemanagerMod.ICacheManager
 import typings.azureMsalCommon.distConfigClientConfigurationMod.AzureCloudOptions
 import typings.azureMsalCommon.distNetworkInetworkmoduleMod.INetworkModule
+import typings.azureMsalCommon.distTelemetryPerformanceIperformanceclientMod.IPerformanceClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,14 +19,34 @@ open class Authority protected ()
     authority: String,
     networkInterface: INetworkModule,
     cacheManager: ICacheManager,
-    authorityOptions: AuthorityOptions
+    authorityOptions: AuthorityOptions,
+    logger: typings.azureMsalCommon.distLoggerLoggerMod.Logger
   ) = this()
   def this(
     authority: String,
     networkInterface: INetworkModule,
     cacheManager: ICacheManager,
     authorityOptions: AuthorityOptions,
-    proxyUrl: String
+    logger: typings.azureMsalCommon.distLoggerLoggerMod.Logger,
+    performanceClient: IPerformanceClient
+  ) = this()
+  def this(
+    authority: String,
+    networkInterface: INetworkModule,
+    cacheManager: ICacheManager,
+    authorityOptions: AuthorityOptions,
+    logger: typings.azureMsalCommon.distLoggerLoggerMod.Logger,
+    performanceClient: Unit,
+    correlationId: String
+  ) = this()
+  def this(
+    authority: String,
+    networkInterface: INetworkModule,
+    cacheManager: ICacheManager,
+    authorityOptions: AuthorityOptions,
+    logger: typings.azureMsalCommon.distLoggerLoggerMod.Logger,
+    performanceClient: IPerformanceClient,
+    correlationId: String
   ) = this()
 }
 /* static members */
@@ -80,4 +101,15 @@ object Authority {
     * @param azureRegion string
     */
   inline def replaceWithRegionalInformation(metadata: OpenIdConfigResponse, azureRegion: String): OpenIdConfigResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceWithRegionalInformation")(metadata.asInstanceOf[js.Any], azureRegion.asInstanceOf[js.Any])).asInstanceOf[OpenIdConfigResponse]
+  
+  /**
+    * Transform CIAM_AUTHORIY as per the below rules:
+    * If no path segments found and it is a CIAM authority (hostname ends with .ciamlogin.com), then transform it
+    *
+    * NOTE: The transformation path should go away once STS supports CIAM with the format: `tenantIdorDomain.ciamlogin.com`
+    * `ciamlogin.com` can also change in the future and we should accommodate the same
+    *
+    * @param authority
+    */
+  inline def transformCIAMAuthority(authority: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("transformCIAMAuthority")(authority.asInstanceOf[js.Any]).asInstanceOf[String]
 }

@@ -4,7 +4,6 @@ import typings.pdfjsDist.typesSrcDisplayDisplayUtilsMod.PageViewport
 import typings.pdfjsDist.typesSrcDisplayDisplayUtilsMod.StatTimer
 import typings.std.Map
 import typings.std.ReadableStream
-import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,17 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("pdfjs-dist/types/src/display/api", "PDFPageProxy")
 @js.native
 open class PDFPageProxy protected () extends StObject {
-  def this(pageIndex: Any, pageInfo: Any, transport: Any, ownerDocument: Any) = this()
-  def this(pageIndex: Any, pageInfo: Any, transport: Any, ownerDocument: Any, pdfBug: Boolean) = this()
+  def this(pageIndex: Any, pageInfo: Any, transport: Any) = this()
+  def this(pageIndex: Any, pageInfo: Any, transport: Any, pdfBug: Boolean) = this()
   
   /**
     * @private
     */
   /* private */ var _abortOperatorList: Any = js.native
-  
-  var _annotationPromises: Map[Any, Any] = js.native
-  
-  var _bitmaps: Set[Any] = js.native
   
   /**
     * Destroys the page object.
@@ -32,9 +27,7 @@ open class PDFPageProxy protected () extends StObject {
   
   var _intentStates: Map[Any, Any] = js.native
   
-  var _jsActionsPromise: Any = js.native
-  
-  var _ownerDocument: Any = js.native
+  var _maybeCleanupAfterRender: Boolean = js.native
   
   var _pageIndex: Any = js.native
   
@@ -59,15 +52,7 @@ open class PDFPageProxy protected () extends StObject {
   
   var _stats: StatTimer | Null = js.native
   
-  var _structTreePromise: Any = js.native
-  
   var _transport: Any = js.native
-  
-  /**
-    * Attempts to clean up if rendering is in a state where that's possible.
-    * @private
-    */
-  /* private */ var _tryCleanup: Any = js.native
   
   /**
     * Cleans up resources allocated by the page.
@@ -78,8 +63,6 @@ open class PDFPageProxy protected () extends StObject {
     */
   def cleanup(): Boolean = js.native
   def cleanup(resetStats: Boolean): Boolean = js.native
-  
-  var cleanupAfterRender: Boolean = js.native
   
   /** @type {PDFObjects} */
   var commonObjs: PDFObjects = js.native
@@ -143,6 +126,11 @@ open class PDFPageProxy protected () extends StObject {
     */
   def getXfa(): js.Promise[js.Object | Null] = js.native
   
+  /**
+    * @type {boolean} True if only XFA form.
+    */
+  def isPureXfa: Boolean = js.native
+  
   var objs: PDFObjects = js.native
   
   /**
@@ -150,7 +138,7 @@ open class PDFPageProxy protected () extends StObject {
     */
   def pageNumber: Double = js.native
   
-  var pendingCleanup: Boolean = js.native
+  /* private */ var `private`: Any = js.native
   
   /**
     * @type {RefProxy | null} The reference that points to this page.
@@ -164,7 +152,7 @@ open class PDFPageProxy protected () extends StObject {
     * @returns {RenderTask} An object that contains a promise that is
     *   resolved when the page finishes rendering.
     */
-  def render(param0: RenderParameters): RenderTask = js.native
+  def render(param0: RenderParameters, args: Any*): RenderTask = js.native
   
   /**
     * @type {number} The number of degrees the page is rotated clockwise.
@@ -172,9 +160,10 @@ open class PDFPageProxy protected () extends StObject {
   def rotate: Double = js.native
   
   /**
-    * @type {Object} Returns page stats, if enabled; returns `null` otherwise.
+    * @type {StatTimer | null} Returns page stats, if enabled; returns `null`
+    *   otherwise.
     */
-  def stats: js.Object = js.native
+  def stats: StatTimer | Null = js.native
   
   /**
     * NOTE: All occurrences of whitespace will be replaced by

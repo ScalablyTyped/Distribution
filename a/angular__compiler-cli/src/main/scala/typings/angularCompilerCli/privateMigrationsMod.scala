@@ -72,6 +72,34 @@ object privateMigrationsMod {
     def this(host: ReflectionHost, checker: TypeChecker, dependencyTracker: DependencyTracker[SourceFile]) = this()
   }
   
+  @JSImport("@angular/compiler-cli/private/migrations", "PotentialImportKind")
+  @js.native
+  object PotentialImportKind extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[
+        typings.angularCompilerCli.srcNgtscTypecheckApiScopeMod.PotentialImportKind & Double
+      ] = js.native
+    
+    /* 0 */ val NgModule: typings.angularCompilerCli.srcNgtscTypecheckApiScopeMod.PotentialImportKind.NgModule & Double = js.native
+    
+    /* 1 */ val Standalone: typings.angularCompilerCli.srcNgtscTypecheckApiScopeMod.PotentialImportKind.Standalone & Double = js.native
+  }
+  
+  @JSImport("@angular/compiler-cli/private/migrations", "PotentialImportMode")
+  @js.native
+  object PotentialImportMode extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[
+        typings.angularCompilerCli.srcNgtscTypecheckApiScopeMod.PotentialImportMode & Double
+      ] = js.native
+    
+    /* 1 */ val ForceDirect: typings.angularCompilerCli.srcNgtscTypecheckApiScopeMod.PotentialImportMode.ForceDirect & Double = js.native
+    
+    /* 0 */ val Normal: typings.angularCompilerCli.srcNgtscTypecheckApiScopeMod.PotentialImportMode.Normal & Double = js.native
+  }
+  
   @JSImport("@angular/compiler-cli/private/migrations", "Reference")
   @js.native
   open class Reference[T /* <: Node */] protected ()

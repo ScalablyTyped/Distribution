@@ -15,6 +15,13 @@ type AccountId = String
 
 type AccountIds = js.Array[AccountId]
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.TargetTrackingScalingCpu
+  - typings.awsSdk.awsSdkStrings.TargetTrackingScalingMemory
+  - java.lang.String
+*/
+type AutoScalingConfiguration = _AutoScalingConfiguration | String
+
 type AutoScalingGroupArn = String
 
 type AutoScalingGroupArns = js.Array[AutoScalingGroupArn]
@@ -26,6 +33,14 @@ type AutoScalingGroupRecommendationOptions = js.Array[AutoScalingGroupRecommenda
 type AutoScalingGroupRecommendations = js.Array[AutoScalingGroupRecommendation]
 
 type Code = String
+
+type ContainerConfigurations = js.Array[ContainerConfiguration]
+
+type ContainerName = String
+
+type ContainerRecommendations = js.Array[ContainerRecommendation]
+
+type CpuSize = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.AWS_ARM64
@@ -85,6 +100,67 @@ type EBSFinding = _EBSFinding | String
 type EBSMetricName = _EBSMetricName | String
 
 type EBSUtilizationMetrics = js.Array[EBSUtilizationMetric]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.EC2
+  - typings.awsSdk.awsSdkStrings.Fargate_
+  - java.lang.String
+*/
+type ECSServiceLaunchType = _ECSServiceLaunchType | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.Cpu_
+  - typings.awsSdk.awsSdkStrings.Memory_
+  - java.lang.String
+*/
+type ECSServiceMetricName = _ECSServiceMetricName | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.Maximum_
+  - typings.awsSdk.awsSdkStrings.Average_
+  - java.lang.String
+*/
+type ECSServiceMetricStatistic = _ECSServiceMetricStatistic | String
+
+type ECSServiceProjectedMetrics = js.Array[ECSServiceProjectedMetric]
+
+type ECSServiceProjectedUtilizationMetrics = js.Array[ECSServiceProjectedUtilizationMetric]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.Finding_
+  - typings.awsSdk.awsSdkStrings.FindingReasonCode
+  - java.lang.String
+*/
+type ECSServiceRecommendationFilterName = _ECSServiceRecommendationFilterName | String
+
+type ECSServiceRecommendationFilters = js.Array[ECSServiceRecommendationFilter]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.Optimized
+  - typings.awsSdk.awsSdkStrings.Underprovisioned
+  - typings.awsSdk.awsSdkStrings.Overprovisioned
+  - java.lang.String
+*/
+type ECSServiceRecommendationFinding = _ECSServiceRecommendationFinding | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.MemoryOverprovisioned
+  - typings.awsSdk.awsSdkStrings.MemoryUnderprovisioned
+  - typings.awsSdk.awsSdkStrings.CPUOverprovisioned
+  - typings.awsSdk.awsSdkStrings.CPUUnderprovisioned
+  - java.lang.String
+*/
+type ECSServiceRecommendationFindingReasonCode = _ECSServiceRecommendationFindingReasonCode | String
+
+type ECSServiceRecommendationFindingReasonCodes = js.Array[ECSServiceRecommendationFindingReasonCode]
+
+type ECSServiceRecommendationOptions = js.Array[ECSServiceRecommendationOption]
+
+type ECSServiceRecommendations = js.Array[ECSServiceRecommendation]
+
+type ECSServiceRecommendedOptionProjectedMetrics = js.Array[ECSServiceRecommendedOptionProjectedMetric]
+
+type ECSServiceUtilizationMetrics = js.Array[ECSServiceUtilizationMetric]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Active_
@@ -158,6 +234,36 @@ type ExportableAutoScalingGroupFields = js.Array[ExportableAutoScalingGroupField
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.AccountId
+  - typings.awsSdk.awsSdkStrings.ServiceArn
+  - typings.awsSdk.awsSdkStrings.LookbackPeriodInDays
+  - typings.awsSdk.awsSdkStrings.LastRefreshTimestamp
+  - typings.awsSdk.awsSdkStrings.LaunchType
+  - typings.awsSdk.awsSdkStrings.CurrentPerformanceRisk
+  - typings.awsSdk.awsSdkStrings.CurrentServiceConfigurationMemory
+  - typings.awsSdk.awsSdkStrings.CurrentServiceConfigurationCpu
+  - typings.awsSdk.awsSdkStrings.CurrentServiceConfigurationTaskDefinitionArn
+  - typings.awsSdk.awsSdkStrings.CurrentServiceConfigurationAutoScalingConfiguration
+  - typings.awsSdk.awsSdkStrings.CurrentServiceContainerConfigurations
+  - typings.awsSdk.awsSdkStrings.UtilizationMetricsCpuMaximum
+  - typings.awsSdk.awsSdkStrings.UtilizationMetricsMemoryMaximum
+  - typings.awsSdk.awsSdkStrings.Finding_
+  - typings.awsSdk.awsSdkStrings.FindingReasonCodes
+  - typings.awsSdk.awsSdkStrings.RecommendationOptionsMemory
+  - typings.awsSdk.awsSdkStrings.RecommendationOptionsCpu
+  - typings.awsSdk.awsSdkStrings.RecommendationOptionsSavingsOpportunityPercentage
+  - typings.awsSdk.awsSdkStrings.RecommendationOptionsEstimatedMonthlySavingsCurrency
+  - typings.awsSdk.awsSdkStrings.RecommendationOptionsEstimatedMonthlySavingsValue
+  - typings.awsSdk.awsSdkStrings.RecommendationOptionsContainerRecommendations
+  - typings.awsSdk.awsSdkStrings.RecommendationOptionsProjectedUtilizationMetricsCpuMaximum
+  - / * RecommendationOptionsProjectedUtilizationMetricsMemoryMaximum * / java.lang.String
+  - typings.awsSdk.awsSdkStrings.Tags_
+*/
+type ExportableECSServiceField = _ExportableECSServiceField | (/* RecommendationOptionsProjectedUtilizationMetricsMemoryMaximum */ String)
+
+type ExportableECSServiceFields = js.Array[ExportableECSServiceField]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.AccountId
   - typings.awsSdk.awsSdkStrings.InstanceArn
   - typings.awsSdk.awsSdkStrings.InstanceName
   - typings.awsSdk.awsSdkStrings.Finding_
@@ -208,6 +314,9 @@ type ExportableAutoScalingGroupFields = js.Array[ExportableAutoScalingGroupField
   - typings.awsSdk.awsSdkStrings.EffectiveRecommendationPreferencesInferredWorkloadTypes
   - typings.awsSdk.awsSdkStrings.InferredWorkloadTypes
   - typings.awsSdk.awsSdkStrings.RecommendationOptionsMigrationEffort
+  - typings.awsSdk.awsSdkStrings.EffectiveRecommendationPreferencesExternalMetricsSource
+  - typings.awsSdk.awsSdkStrings.InstanceState
+  - typings.awsSdk.awsSdkStrings.Tags_
 */
 type ExportableInstanceField = _ExportableInstanceField | (/* RecommendationOptionsProjectedUtilizationMetricsMemoryMaximum */ String)
 
@@ -238,6 +347,7 @@ type ExportableInstanceFields = js.Array[ExportableInstanceField]
   - typings.awsSdk.awsSdkStrings.RecommendationOptionsSavingsOpportunityPercentage
   - typings.awsSdk.awsSdkStrings.RecommendationOptionsEstimatedMonthlySavingsCurrency
   - typings.awsSdk.awsSdkStrings.RecommendationOptionsEstimatedMonthlySavingsValue
+  - typings.awsSdk.awsSdkStrings.Tags_
 */
 type ExportableLambdaFunctionField = _ExportableLambdaFunctionField | (/* RecommendationOptionsProjectedUtilizationMetricsDurationLowerBound */ String)
 
@@ -272,11 +382,22 @@ type ExportableLambdaFunctionFields = js.Array[ExportableLambdaFunctionField]
   - typings.awsSdk.awsSdkStrings.RecommendationOptionsSavingsOpportunityPercentage
   - typings.awsSdk.awsSdkStrings.RecommendationOptionsEstimatedMonthlySavingsCurrency
   - typings.awsSdk.awsSdkStrings.RecommendationOptionsEstimatedMonthlySavingsValue
+  - typings.awsSdk.awsSdkStrings.RootVolume
+  - typings.awsSdk.awsSdkStrings.Tags_
   - java.lang.String
 */
 type ExportableVolumeField = _ExportableVolumeField | String
 
 type ExportableVolumeFields = js.Array[ExportableVolumeField]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.Datadog
+  - typings.awsSdk.awsSdkStrings.Dynatrace
+  - typings.awsSdk.awsSdkStrings.NewRelic
+  - typings.awsSdk.awsSdkStrings.Instana
+  - java.lang.String
+*/
+type ExternalMetricsSource = _ExternalMetricsSource | String
 
 type FailureReason = String
 
@@ -286,6 +407,7 @@ type FileFormat = Csv_ | String
   - typings.awsSdk.awsSdkStrings.Finding_
   - typings.awsSdk.awsSdkStrings.FindingReasonCodes
   - typings.awsSdk.awsSdkStrings.RecommendationSourceType
+  - typings.awsSdk.awsSdkStrings.InferredWorkloadTypes
   - java.lang.String
 */
 type FilterName = _FilterName | String
@@ -326,6 +448,8 @@ type Identifier = String
 
 type IncludeMemberAccounts = Boolean
 
+type InferredWorkloadSavings = js.Array[InferredWorkloadSaving]
+
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.AmazonEmr
   - typings.awsSdk.awsSdkStrings.ApacheCassandra
@@ -334,6 +458,8 @@ type IncludeMemberAccounts = Boolean
   - typings.awsSdk.awsSdkStrings.Nginx
   - typings.awsSdk.awsSdkStrings.PostgreSql_
   - typings.awsSdk.awsSdkStrings.Redis
+  - typings.awsSdk.awsSdkStrings.Kafka_
+  - typings.awsSdk.awsSdkStrings.SQLServer_
   - java.lang.String
 */
 type InferredWorkloadType = _InferredWorkloadType | String
@@ -377,6 +503,17 @@ type InstanceRecommendationFindingReasonCode = _InstanceRecommendationFindingRea
 type InstanceRecommendationFindingReasonCodes = js.Array[InstanceRecommendationFindingReasonCode]
 
 type InstanceRecommendations = js.Array[InstanceRecommendation]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.pending__
+  - typings.awsSdk.awsSdkStrings.running__
+  - typings.awsSdk.awsSdkStrings.`shutting-down_`
+  - typings.awsSdk.awsSdkStrings.terminated__
+  - typings.awsSdk.awsSdkStrings.stopping__
+  - typings.awsSdk.awsSdkStrings.stopped__
+  - java.lang.String
+*/
+type InstanceState = _InstanceState | String
 
 type InstanceType = String
 
@@ -442,7 +579,7 @@ type LambdaFunctionRecommendationFilters = js.Array[LambdaFunctionRecommendation
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Optimized
   - typings.awsSdk.awsSdkStrings.NotOptimized
-  - typings.awsSdk.awsSdkStrings.Unavailable_
+  - typings.awsSdk.awsSdkStrings.Unavailable__
   - java.lang.String
 */
 type LambdaFunctionRecommendationFinding = _LambdaFunctionRecommendationFinding | String
@@ -469,6 +606,8 @@ type LastUpdatedTimestamp = js.Date
 type LookBackPeriodInDays = Double
 
 type Low = Double
+
+type LowerBoundValue = Double
 
 type MaxResults = Double
 
@@ -527,6 +666,12 @@ type MinSize = Double
 
 type NextToken = String
 
+type NullableCpu = Double
+
+type NullableMemory = Double
+
+type NullableMemoryReservation = Double
+
 type NumberOfInvocations = Double
 
 type NumberOfMemberAccountsOptedIn = Double
@@ -563,6 +708,7 @@ type RecommendationOptions = js.Array[InstanceRecommendationOption]
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.EnhancedInfrastructureMetrics
   - typings.awsSdk.awsSdkStrings.InferredWorkloadTypes
+  - typings.awsSdk.awsSdkStrings.ExternalMetricsPreference
   - java.lang.String
 */
 type RecommendationPreferenceName = _RecommendationPreferenceName | String
@@ -578,6 +724,7 @@ type RecommendationSourceArn = String
   - typings.awsSdk.awsSdkStrings.AutoScalingGroup
   - typings.awsSdk.awsSdkStrings.EbsVolume
   - typings.awsSdk.awsSdkStrings.LambdaFunction
+  - typings.awsSdk.awsSdkStrings.EcsService
   - java.lang.String
 */
 type RecommendationSourceType = _RecommendationSourceType | String
@@ -598,9 +745,12 @@ type ResourceArn = String
   - typings.awsSdk.awsSdkStrings.EbsVolume
   - typings.awsSdk.awsSdkStrings.LambdaFunction
   - typings.awsSdk.awsSdkStrings.NotApplicable
+  - typings.awsSdk.awsSdkStrings.EcsService
   - java.lang.String
 */
 type ResourceType = _ResourceType | String
+
+type RootVolume = Boolean
 
 type SavingsOpportunityPercentage = Double
 
@@ -613,6 +763,10 @@ type SavingsOpportunityPercentage = Double
 type ScopeName = _ScopeName | String
 
 type ScopeValue = String
+
+type ServiceArn = String
+
+type ServiceArns = js.Array[ServiceArn]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Active_
@@ -629,9 +783,19 @@ type Summaries = js.Array[Summary]
 
 type SummaryValue = Double
 
+type TagKey = String
+
+type TagValue = String
+
+type Tags = js.Array[Tag]
+
+type TaskDefinitionArn = String
+
 type Timestamp = js.Date
 
 type Timestamps = js.Array[js.Date]
+
+type UpperBoundValue = Double
 
 type UtilizationMetrics = js.Array[UtilizationMetric]
 

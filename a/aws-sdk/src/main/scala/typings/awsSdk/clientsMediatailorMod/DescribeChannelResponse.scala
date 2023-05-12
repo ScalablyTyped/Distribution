@@ -37,6 +37,11 @@ trait DescribeChannelResponse extends StObject {
   var LastModifiedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
+    * The log configuration for the channel.
+    */
+  var LogConfiguration: LogConfigurationForChannel
+  
+  /**
     * The channel's output properties.
     */
   var Outputs: js.UndefOr[ResponseOutputs] = js.undefined
@@ -58,8 +63,8 @@ trait DescribeChannelResponse extends StObject {
 }
 object DescribeChannelResponse {
   
-  inline def apply(): DescribeChannelResponse = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(LogConfiguration: LogConfigurationForChannel): DescribeChannelResponse = {
+    val __obj = js.Dynamic.literal(LogConfiguration = LogConfiguration.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeChannelResponse]
   }
   
@@ -89,6 +94,8 @@ object DescribeChannelResponse {
     inline def setLastModifiedTime(value: js.Date): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
     
     inline def setLastModifiedTimeUndefined: Self = StObject.set(x, "LastModifiedTime", js.undefined)
+    
+    inline def setLogConfiguration(value: LogConfigurationForChannel): Self = StObject.set(x, "LogConfiguration", value.asInstanceOf[js.Any])
     
     inline def setOutputs(value: ResponseOutputs): Self = StObject.set(x, "Outputs", value.asInstanceOf[js.Any])
     

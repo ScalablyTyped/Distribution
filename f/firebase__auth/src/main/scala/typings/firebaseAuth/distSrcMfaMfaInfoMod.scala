@@ -6,6 +6,7 @@ import typings.firebaseAuth.distSrcModelPublicTypesMod.FactorId
 import typings.firebaseAuth.distSrcModelPublicTypesMod.MultiFactorInfo
 import typings.firebaseAuth.distSrcModelPublicTypesMod.PhoneMultiFactorInfo
 import typings.firebaseAuth.firebaseAuthStrings.phone
+import typings.firebaseAuth.firebaseAuthStrings.totp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,7 +26,7 @@ object distSrcMfaMfaInfoMod {
     
     /** The identifier of the second factor. */
     /* CompleteClass */
-    override val factorId: phone = js.native
+    override val factorId: phone | totp = js.native
     @JSName("factorId")
     val factorId_MultiFactorInfoImpl: FactorId = js.native
     
@@ -55,7 +56,7 @@ object distSrcMfaMfaInfoMod {
     
     /** The identifier of the second factor. */
     /* CompleteClass */
-    override val factorId: phone = js.native
+    override val factorId: phone | totp = js.native
     
     /** The phone number associated with the current second factor. */
     /* CompleteClass */
@@ -73,5 +74,18 @@ object distSrcMfaMfaInfoMod {
     val ^ : js.Any = js.native
     
     inline def _fromServerResponse(_auth: AuthInternal, enrollment: MfaEnrollment): PhoneMultiFactorInfoImpl = (^.asInstanceOf[js.Dynamic].applyDynamic("_fromServerResponse")(_auth.asInstanceOf[js.Any], enrollment.asInstanceOf[js.Any])).asInstanceOf[PhoneMultiFactorInfoImpl]
+  }
+  
+  @JSImport("@firebase/auth/dist/src/mfa/mfa_info", "TotpMultiFactorInfoImpl")
+  @js.native
+  /* private */ open class TotpMultiFactorInfoImpl () extends MultiFactorInfoImpl
+  /* static members */
+  object TotpMultiFactorInfoImpl {
+    
+    @JSImport("@firebase/auth/dist/src/mfa/mfa_info", "TotpMultiFactorInfoImpl")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def _fromServerResponse(_auth: AuthInternal, enrollment: MfaEnrollment): TotpMultiFactorInfoImpl = (^.asInstanceOf[js.Dynamic].applyDynamic("_fromServerResponse")(_auth.asInstanceOf[js.Any], enrollment.asInstanceOf[js.Any])).asInstanceOf[TotpMultiFactorInfoImpl]
   }
 }

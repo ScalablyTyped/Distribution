@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@cesium/engine" : "2.4.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@cesium/engine" : "2.4.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

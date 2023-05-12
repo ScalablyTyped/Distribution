@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AutoMLOutputDataConfig extends StObject {
   
   /**
-    * The Amazon Web Services KMS encryption key ID.
+    * The Key Management Service (KMS) encryption key ID.
     */
   var KmsKeyId: js.UndefOr[typings.awsSdk.clientsSagemakerMod.KmsKeyId] = js.undefined
   

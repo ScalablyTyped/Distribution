@@ -1,5 +1,6 @@
 package typings.openui5
 
+import typings.openui5.anon.Level
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapFCardsBaseHeaderMod.BaseHeaderSettings
 import typings.openui5.sapFLibraryMod.cards.IHeader
@@ -217,6 +218,8 @@ object sapFCardsHeaderMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * This method is a hook for the RenderManager that gets called during the rendering of child Controls.
       * It allows to add, remove and update existing accessibility attributes (ARIA) of those controls.
       */
@@ -228,10 +231,12 @@ object sapFCardsHeaderMod {
       /**
       * The mapping of "aria-" prefixed attributes
       */
-    mAriaProps: js.Object
+    mAriaProps: Level
     ): Unit = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:press press} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining

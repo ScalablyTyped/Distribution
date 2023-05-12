@@ -1,7 +1,7 @@
 
 # Scala.js typings for libp2p__websockets
 
-Typings are for version 5.0.0
+Typings are for version 6.0.1
 
 ## Library description:
 JavaScript implementation of the WebSockets module that libp2p uses and that implements the interface-transport spec

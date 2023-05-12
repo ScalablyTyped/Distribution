@@ -1,7 +1,7 @@
 
 # Scala.js typings for it-stream-types
 
-Typings are for version 1.0.4
+Typings are for version 2.0.1
 
 ## Library description:
 Typescript types for AsyncIterable sink/source/duplex streams

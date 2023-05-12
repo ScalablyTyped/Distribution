@@ -19,7 +19,7 @@ trait DescribeTemplateRequest extends StObject {
   /**
     * The ID for the template.
     */
-  var TemplateId: RestrictiveResourceId
+  var TemplateId: ShortRestrictiveResourceId
   
   /**
     * (Optional) The number for the version to describe. If a VersionNumber parameter value isn't provided, the latest version of the template is described.
@@ -28,7 +28,7 @@ trait DescribeTemplateRequest extends StObject {
 }
 object DescribeTemplateRequest {
   
-  inline def apply(AwsAccountId: AwsAccountId, TemplateId: RestrictiveResourceId): DescribeTemplateRequest = {
+  inline def apply(AwsAccountId: AwsAccountId, TemplateId: ShortRestrictiveResourceId): DescribeTemplateRequest = {
     val __obj = js.Dynamic.literal(AwsAccountId = AwsAccountId.asInstanceOf[js.Any], TemplateId = TemplateId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeTemplateRequest]
   }
@@ -42,7 +42,7 @@ object DescribeTemplateRequest {
     
     inline def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
     
-    inline def setTemplateId(value: RestrictiveResourceId): Self = StObject.set(x, "TemplateId", value.asInstanceOf[js.Any])
+    inline def setTemplateId(value: ShortRestrictiveResourceId): Self = StObject.set(x, "TemplateId", value.asInstanceOf[js.Any])
     
     inline def setVersionNumber(value: VersionNumber): Self = StObject.set(x, "VersionNumber", value.asInstanceOf[js.Any])
     

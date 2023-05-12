@@ -1,6 +1,5 @@
 package typings.luminoWidgets
 
-import typings.luminoAlgorithm.typesIterMod.IIterator
 import typings.luminoWidgets.luminoWidgetsStrings.`split-area`
 import typings.luminoWidgets.luminoWidgetsStrings.`tab-area`
 import typings.luminoWidgets.luminoWidgetsStrings.horizontal
@@ -16,6 +15,7 @@ import typings.luminoWidgets.typesWidgetMod.Widget
 import typings.luminoWidgets.typesWidgetMod.Widget.HiddenMode
 import typings.std.Document
 import typings.std.HTMLDivElement
+import typings.std.IterableIterator
 import typings.std.ShadowRoot
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -146,7 +146,7 @@ object typesDocklayoutMod {
       *
       * @returns A new iterator over the handles in the layout.
       */
-    def handles(): IIterator[HTMLDivElement] = js.native
+    def handles(): IterableIterator[HTMLDivElement] = js.native
     
     /**
       * The method for hiding child widgets.
@@ -155,7 +155,8 @@ object typesDocklayoutMod {
       * If there is only one child widget, `Display` hiding mode will be used
       * regardless of this setting.
       */
-    var hiddenMode: HiddenMode = js.native
+    def hiddenMode: HiddenMode = js.native
+    def hiddenMode_=(v: HiddenMode): Unit = js.native
     
     /**
       * Find the tab area which contains the given client position.
@@ -172,7 +173,7 @@ object typesDocklayoutMod {
     /**
       * Whether the dock layout is empty.
       */
-    val isEmpty: Boolean = js.native
+    def isEmpty: Boolean = js.native
     
     /**
       * Move a handle to the given offset position.
@@ -232,15 +233,16 @@ object typesDocklayoutMod {
       * This iterator yields the widgets corresponding to the current tab
       * of each tab bar in the layout.
       */
-    def selectedWidgets(): IIterator[Widget] = js.native
+    def selectedWidgets(): IterableIterator[Widget] = js.native
     
     /**
       * Get the inter-element spacing for the dock layout.
       */
+    def spacing: Double = js.native
     /**
       * Set the inter-element spacing for the dock layout.
       */
-    var spacing: Double = js.native
+    def spacing_=(value: Double): Unit = js.native
     
     /**
       * Create an iterator over the tab bars in the layout.
@@ -250,7 +252,7 @@ object typesDocklayoutMod {
       * #### Notes
       * This iterator does not include the user widgets.
       */
-    def tabBars(): IIterator[TabBar[Widget]] = js.native
+    def tabBars(): IterableIterator[TabBar[Widget]] = js.native
     
     /**
       * Create an iterator over the user widgets in the layout.
@@ -260,7 +262,7 @@ object typesDocklayoutMod {
       * #### Notes
       * This iterator does not include the generated tab bars.
       */
-    def widgets(): IIterator[Widget] = js.native
+    def widgets(): IterableIterator[Widget] = js.native
   }
   object DockLayout {
     

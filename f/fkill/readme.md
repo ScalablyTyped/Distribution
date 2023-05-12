@@ -1,7 +1,7 @@
 
 # Scala.js typings for fkill
 
-Typings are for version 8.0.1
+Typings are for version 8.1.0
 
 ## Library description:
 Fabulously kill processes. Cross-platform.

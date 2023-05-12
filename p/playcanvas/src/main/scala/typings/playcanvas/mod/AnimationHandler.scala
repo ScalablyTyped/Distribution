@@ -22,6 +22,10 @@ open class AnimationHandler protected ()
   
   def _parseAnimationV4(data: Any): Animation = js.native
   
+  var assets: Any = js.native
+  
+  var device: Any = js.native
+  
   /**
     * Type of the resource the handler handles.
     *
@@ -29,7 +33,7 @@ open class AnimationHandler protected ()
     */
   var handlerType: String = js.native
   
-  def load(url: Any, callback: Any): Unit = js.native
+  def load(url: Any, callback: Any, asset: Any): Unit = js.native
   
   var maxRetries: Double = js.native
   

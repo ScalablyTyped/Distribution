@@ -3,6 +3,7 @@ package typings.sentryUtils
 import typings.sentryTypes.typesStackframeMod.StackFrame
 import typings.sentryTypes.typesStacktraceMod.StackLineParser
 import typings.sentryTypes.typesStacktraceMod.StackParser
+import typings.sentryUtils.typesNodeStackTraceMod.GetModuleFn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,6 +25,4 @@ object typesStacktraceMod {
   inline def stackParserFromStackParserOptions(stackParser: StackParser): StackParser = ^.asInstanceOf[js.Dynamic].applyDynamic("stackParserFromStackParserOptions")(stackParser.asInstanceOf[js.Any]).asInstanceOf[StackParser]
   
   inline def stripSentryFramesAndReverse(stack: js.Array[StackFrame]): js.Array[StackFrame] = ^.asInstanceOf[js.Dynamic].applyDynamic("stripSentryFramesAndReverse")(stack.asInstanceOf[js.Any]).asInstanceOf[js.Array[StackFrame]]
-  
-  type GetModuleFn = js.Function1[/* filename */ js.UndefOr[String], js.UndefOr[String]]
 }

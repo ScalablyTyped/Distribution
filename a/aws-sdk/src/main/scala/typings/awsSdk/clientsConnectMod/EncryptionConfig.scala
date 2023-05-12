@@ -12,7 +12,7 @@ trait EncryptionConfig extends StObject {
   var EncryptionType: typings.awsSdk.clientsConnectMod.EncryptionType
   
   /**
-    * The full ARN of the encryption key.   Be sure to provide the full ARN of the encryption key, not just the ID. 
+    * The full ARN of the encryption key.   Be sure to provide the full ARN of the encryption key, not just the ID. Amazon Connect supports only KMS keys with the default key spec of  SYMMETRIC_DEFAULT .  
     */
   var KeyId: typings.awsSdk.clientsConnectMod.KeyId
 }

@@ -144,10 +144,12 @@ object namespacesScriptingMod {
       var allFrames: js.UndefOr[Boolean] = js.undefined
       
       /**
-        * When the injection has failed, the error is exposed to the caller with this property.
+        * The error property is set when the script execution failed. The value is typically an (Error)
+        * object with a message property, but could be any value (including primitives and undefined)
+        * if the script threw or rejected with such a value.
         * Optional.
         */
-      var error: js.UndefOr[InjectionResultErrorType] = js.undefined
+      var error: js.UndefOr[Any] = js.undefined
       
       /**
         * The frame ID associated with the injection.
@@ -174,7 +176,7 @@ object namespacesScriptingMod {
         
         inline def setAllFramesUndefined: Self = StObject.set(x, "allFrames", js.undefined)
         
-        inline def setError(value: InjectionResultErrorType): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+        inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
         
         inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
         
@@ -183,30 +185,6 @@ object namespacesScriptingMod {
         inline def setResult(value: Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
         
         inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
-      }
-    }
-    
-    /**
-      * When the injection has failed, the error is exposed to the caller with this property.
-      */
-    trait InjectionResultErrorType extends StObject {
-      
-      /**
-        * A message explaining why the injection has failed.
-        */
-      var message: String
-    }
-    object InjectionResultErrorType {
-      
-      inline def apply(message: String): InjectionResultErrorType = {
-        val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
-        __obj.asInstanceOf[InjectionResultErrorType]
-      }
-      
-      @scala.inline
-      implicit open class MutableBuilder[Self <: InjectionResultErrorType] (val x: Self) extends AnyVal {
-        
-        inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       }
     }
     

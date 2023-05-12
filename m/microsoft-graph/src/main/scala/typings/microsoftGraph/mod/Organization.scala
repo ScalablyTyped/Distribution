@@ -42,6 +42,9 @@ trait Organization
     */
   var createdDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
+  // Two-letter ISO 3166 country code indicating the default service usage location of an organization.
+  var defaultUsageLocation: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // The display name for the tenant.
   var displayName: js.UndefOr[NullableOption[String]] = js.undefined
   
@@ -68,6 +71,13 @@ trait Organization
     */
   var onPremisesSyncEnabled: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
+  /**
+    * The type of partnership this tenant has with Microsoft. The possible values are: microsoftSupport, syndicatePartner,
+    * breadthPartner, breadthPartnerDelegatedAdmin, resellerPartnerDelegatedAdmin, valueAddedResellerPartnerDelegatedAdmin,
+    * unknownFutureValue. Nullable. For more information about the possible types, see partnerTenantType values.
+    */
+  var partnerTenantType: js.UndefOr[NullableOption[PartnerTenantType]] = js.undefined
+  
   // Postal code of the address for the organization.
   var postalCode: js.UndefOr[NullableOption[String]] = js.undefined
   
@@ -93,6 +103,12 @@ trait Organization
   // Not nullable.
   var technicalNotificationMails: js.UndefOr[js.Array[String]] = js.undefined
   
+  /**
+    * Not nullable. The tenant type option that was selected when the tenant was created. The possible values are: AAD - An
+    * enterprise identity access management (IAM) service that serves business-to-employee and business-to-business (B2B)
+    * scenarios. AAD B2C A customer identity access management (CIAM) service that serves business-to-consumer (B2C)
+    * scenarios.
+    */
   var tenantType: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The collection of domains associated with this tenant. Not nullable.
@@ -158,6 +174,12 @@ object Organization {
     
     inline def setCreatedDateTimeUndefined: Self = StObject.set(x, "createdDateTime", js.undefined)
     
+    inline def setDefaultUsageLocation(value: NullableOption[String]): Self = StObject.set(x, "defaultUsageLocation", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultUsageLocationNull: Self = StObject.set(x, "defaultUsageLocation", null)
+    
+    inline def setDefaultUsageLocationUndefined: Self = StObject.set(x, "defaultUsageLocation", js.undefined)
+    
     inline def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
     inline def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
@@ -193,6 +215,12 @@ object Organization {
     inline def setOnPremisesSyncEnabledNull: Self = StObject.set(x, "onPremisesSyncEnabled", null)
     
     inline def setOnPremisesSyncEnabledUndefined: Self = StObject.set(x, "onPremisesSyncEnabled", js.undefined)
+    
+    inline def setPartnerTenantType(value: NullableOption[PartnerTenantType]): Self = StObject.set(x, "partnerTenantType", value.asInstanceOf[js.Any])
+    
+    inline def setPartnerTenantTypeNull: Self = StObject.set(x, "partnerTenantType", null)
+    
+    inline def setPartnerTenantTypeUndefined: Self = StObject.set(x, "partnerTenantType", js.undefined)
     
     inline def setPostalCode(value: NullableOption[String]): Self = StObject.set(x, "postalCode", value.asInstanceOf[js.Any])
     

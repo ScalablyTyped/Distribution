@@ -50,6 +50,8 @@ import typings.estree.mod.VariableDeclaration
 import typings.estree.mod.WhileStatement
 import typings.estree.mod.WithStatement
 import typings.estree.mod.YieldExpression
+import typings.std.Set
+import typings.std.WeakMap
 import typings.tapable.mod.AsArray
 import typings.tapable.mod.HookMap
 import typings.tapable.mod.SyncBailHook
@@ -81,6 +83,9 @@ trait JavascriptParser extends Parser {
   
   def blockPreWalkExportNamedDeclaration(): Unit = js.native
   def blockPreWalkExportNamedDeclaration(statement: Any): Unit = js.native
+  
+  def blockPreWalkExpressionStatement(): Unit = js.native
+  def blockPreWalkExpressionStatement(statement: Any): Unit = js.native
   
   def blockPreWalkImportDeclaration(): Unit = js.native
   def blockPreWalkImportDeclaration(statement: Any): Unit = js.native
@@ -143,6 +148,10 @@ trait JavascriptParser extends Parser {
   
   def defineVariable(): Unit = js.native
   def defineVariable(name: Any): Unit = js.native
+  
+  var destructuringAssignmentProperties: WeakMap[Expression, Set[String]] = js.native
+  
+  def destructuringAssignmentPropertiesFor(node: Expression): js.UndefOr[Set[String]] = js.native
   
   def detectMode(): Unit = js.native
   def detectMode(statements: Any): Unit = js.native
@@ -282,6 +291,9 @@ trait JavascriptParser extends Parser {
   def parseString(): Any = js.native
   def parseString(expression: Any): Any = js.native
   
+  def preWalkAssignmentExpression(): Unit = js.native
+  def preWalkAssignmentExpression(expression: Any): Unit = js.native
+  
   def preWalkBlockStatement(): Unit = js.native
   def preWalkBlockStatement(statement: Any): Unit = js.native
   
@@ -327,6 +339,9 @@ trait JavascriptParser extends Parser {
   def preWalkVariableDeclaration(): Unit = js.native
   def preWalkVariableDeclaration(statement: Any): Unit = js.native
   
+  def preWalkVariableDeclarator(): Unit = js.native
+  def preWalkVariableDeclarator(declarator: Any): Unit = js.native
+  
   def preWalkWhileStatement(): Unit = js.native
   def preWalkWhileStatement(statement: Any): Unit = js.native
   
@@ -346,7 +361,7 @@ trait JavascriptParser extends Parser {
   var state: ParserState = js.native
   
   var statementPath: js.Array[
-    UnaryExpression | ThisExpression | ArrayExpression | ObjectExpression | FunctionExpression | ArrowFunctionExpression | YieldExpression | SimpleLiteral | RegExpLiteral | BigIntLiteral | UpdateExpression | BinaryExpression | AssignmentExpression | LogicalExpression | MemberExpression | ConditionalExpression | SimpleCallExpression | NewExpression | SequenceExpression | TemplateLiteral | TaggedTemplateExpression | ClassExpression | MetaProperty | Identifier | AwaitExpression | ImportExpression | ChainExpression | FunctionDeclaration | VariableDeclaration | ClassDeclaration | ExpressionStatement | BlockStatement | StaticBlock | EmptyStatement | DebuggerStatement | WithStatement | ReturnStatement | LabeledStatement | BreakStatement | ContinueStatement | IfStatement | SwitchStatement | ThrowStatement | TryStatement | WhileStatement | DoWhileStatement | ForStatement | ForInStatement | ForOfStatement
+    UnaryExpression | ArrayExpression | ArrowFunctionExpression | AssignmentExpression | AwaitExpression | BinaryExpression | SimpleCallExpression | NewExpression | ChainExpression | ClassExpression | ConditionalExpression | FunctionExpression | Identifier | ImportExpression | SimpleLiteral | RegExpLiteral | BigIntLiteral | LogicalExpression | MemberExpression | MetaProperty | ObjectExpression | SequenceExpression | TaggedTemplateExpression | TemplateLiteral | ThisExpression | UpdateExpression | YieldExpression | FunctionDeclaration | VariableDeclaration | ClassDeclaration | ExpressionStatement | BlockStatement | StaticBlock | EmptyStatement | DebuggerStatement | WithStatement | ReturnStatement | LabeledStatement | BreakStatement | ContinueStatement | IfStatement | SwitchStatement | ThrowStatement | TryStatement | WhileStatement | DoWhileStatement | ForStatement | ForInStatement | ForOfStatement
   ] = js.native
   
   def tagVariable(): Unit = js.native

@@ -1,7 +1,7 @@
 
 # Scala.js typings for hapi__iron
 
-Typings are for version 7.0.0
+Typings are for version 7.0.1
 
 ## Library description:
 Encapsulated tokens (encrypted and mac'ed objects)

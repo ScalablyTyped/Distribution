@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Arguments for `scopes` request. */
 trait ScopesArguments extends StObject {
   
-  /** Retrieve the scopes for this stackframe. */
+  /** Retrieve the scopes for the stack frame identified by `frameId`. The `frameId` must have been obtained in the current suspended state. See 'Lifetime of Object References' in the Overview section for details. */
   var frameId: Double
 }
 object ScopesArguments {

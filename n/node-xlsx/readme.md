@@ -1,7 +1,7 @@
 
 # Scala.js typings for node-xlsx
 
-Typings are for version 0.21.0
+Typings are for version 0.21.2
 
 ## Library description:
 NodeJS Excel files parser & builder

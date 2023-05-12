@@ -18,7 +18,6 @@ import typings.vscodeJsonrpc.libCommonEventsMod.Event
 import typings.vscodeJsonrpc.libCommonMessageReaderMod.MessageReader
 import typings.vscodeJsonrpc.libCommonMessageWriterMod.MessageWriter
 import typings.vscodeJsonrpc.libCommonMessagesMod.Message
-import typings.vscodeJsonrpc.libCommonMessagesMod.MessageSignature
 import typings.vscodeJsonrpc.libCommonMessagesMod.NotificationMessage
 import typings.vscodeJsonrpc.mod.NotificationType
 import typings.vscodeJsonrpc.mod.NotificationType0
@@ -120,15 +119,14 @@ object libCommonConnectionMod {
     @JSName("onError")
     var onError_Original: Event[js.Tuple3[js.Error, js.UndefOr[Message], js.UndefOr[Double]]] = js.native
     
-    def onNotification(method: String, handler: GenericNotificationHandler): Disposable = js.native
     /**
       * Installs a notification handler.
       *
-      * @param methods The message signature or the method name to install the handler for.
+      * @param methods The message method name to install the handler for.
       * @param handler The actual handler.
       * @returns A disposable to remove the handler.
       */
-    def onNotification(method: MessageSignature, handler: GenericNotificationHandler): Disposable = js.native
+    def onNotification(method: String, handler: GenericNotificationHandler): Disposable = js.native
     def onNotification(`type`: NotificationType0, handler: NotificationHandler0): Disposable = js.native
     def onNotification[P](`type`: NotificationType[P], handler: NotificationHandler[P]): Disposable = js.native
     /**
@@ -158,15 +156,14 @@ object libCommonConnectionMod {
     def onProgress[P](`type`: ProgressType[P], token: String, handler: NotificationHandler[P]): Disposable = js.native
     def onProgress[P](`type`: ProgressType[P], token: Double, handler: NotificationHandler[P]): Disposable = js.native
     
-    def onRequest[R, E](method: String, handler: GenericRequestHandler[R, E]): Disposable = js.native
     /**
       * Installs a request handler.
       *
-      * @param methods the message signature or the method name to install a handler for.
+      * @param methods the message method name to install a handler for.
       * @param handler The actual handler.
       * @returns A disposable to remove the handler.
       */
-    def onRequest[R, E](method: MessageSignature, handler: GenericRequestHandler[R, E]): Disposable = js.native
+    def onRequest[R, E](method: String, handler: GenericRequestHandler[R, E]): Disposable = js.native
     def onRequest[R, E](`type`: RequestType0[R, E], handler: RequestHandler0[R, E]): Disposable = js.native
     def onRequest[P, R, E](`type`: RequestType[P, R, E], handler: RequestHandler[P, R, E]): Disposable = js.native
     /**
@@ -209,25 +206,23 @@ object libCommonConnectionMod {
     @JSName("onUnhandledNotification")
     var onUnhandledNotification_Original: Event[NotificationMessage] = js.native
     
-    def sendNotification(method: String): js.Promise[Unit] = js.native
-    def sendNotification(method: String, params: Any): js.Promise[Unit] = js.native
     /**
       * Sends a notification.
       *
-      * @param method the notification's method signature or the method name.
+      * @param method the notification's method name.
       * @returns A promise that resolves when the notification is written to the
       * network layer.
       */
-    def sendNotification(method: MessageSignature): js.Promise[Unit] = js.native
+    def sendNotification(method: String): js.Promise[Unit] = js.native
     /**
       * Sends a notification.
       *
-      * @param method the notification's method signature or the method name.
+      * @param method the notification's method name.
       * @param params the notification's parameters.
       * @returns A promise that resolves when the notification is written to the
       * network layer.
       */
-    def sendNotification(method: MessageSignature, params: Any): js.Promise[Unit] = js.native
+    def sendNotification(method: String, params: Any): js.Promise[Unit] = js.native
     /**
       * Sends a notification.
       *
@@ -261,29 +256,25 @@ object libCommonConnectionMod {
     def sendProgress[P](`type`: ProgressType[P], token: String, value: P): js.Promise[Unit] = js.native
     def sendProgress[P](`type`: ProgressType[P], token: Double, value: P): js.Promise[Unit] = js.native
     
-    def sendRequest[R](method: String): js.Promise[R] = js.native
-    def sendRequest[R](method: String, param: Any): js.Promise[R] = js.native
-    def sendRequest[R](method: String, param: Any, token: CancellationToken): js.Promise[R] = js.native
-    def sendRequest[R](method: String, token: CancellationToken): js.Promise[R] = js.native
     /**
       * Sends a request and returns a promise resolving to the result of the request.
       *
-      * @param method the message signature or the method name.
+      * @param method the method name.
       * @param token An optional cancellation token.
       * @returns A promise resolving to the request's result.
       */
-    def sendRequest[R](method: MessageSignature): js.Promise[R] = js.native
+    def sendRequest[R](method: String): js.Promise[R] = js.native
     /**
       * Sends a request and returns a promise resolving to the result of the request.
       *
-      * @param method the message signature or the method name.
+      * @param method the method name.
       * @param params The request's parameter.
       * @param token An optional cancellation token.
       * @returns A promise resolving to the request's result.
       */
-    def sendRequest[R](method: MessageSignature, param: Any): js.Promise[R] = js.native
-    def sendRequest[R](method: MessageSignature, param: Any, token: CancellationToken): js.Promise[R] = js.native
-    def sendRequest[R](method: MessageSignature, token: CancellationToken): js.Promise[R] = js.native
+    def sendRequest[R](method: String, param: Any): js.Promise[R] = js.native
+    def sendRequest[R](method: String, param: Any, token: CancellationToken): js.Promise[R] = js.native
+    def sendRequest[R](method: String, token: CancellationToken): js.Promise[R] = js.native
     def sendRequest[R, E](`type`: RequestType0[R, E]): js.Promise[R] = js.native
     def sendRequest[R, E](`type`: RequestType0[R, E], token: CancellationToken): js.Promise[R] = js.native
     def sendRequest[P, R, E](`type`: RequestType[P, R, E], params: P): js.Promise[R] = js.native

@@ -1,7 +1,7 @@
 
 # Scala.js typings for suncalc
 
-Typings are for version 1.8
+Typings are for version 1.9
 
 ## Library description:
 A tiny JavaScript library for calculating sun/moon positions and phases.

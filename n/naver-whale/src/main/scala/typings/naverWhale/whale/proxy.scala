@@ -125,7 +125,7 @@ object proxy {
     /** Optional. List of servers to connect to without a proxy server. */
     var bypassList: js.UndefOr[js.Array[String]] = js.undefined
     
-    /** Optional. The proxy server to be used for everthing else or if any of the specific proxyFor... is not specified. */
+    /** Optional. The proxy server to be used for everything else or if any of the specific proxyFor... is not specified. */
     var fallbackProxy: js.UndefOr[typings.chrome.chrome.proxy.ProxyServer] = js.undefined
     
     /** Optional. The proxy server to be used for FTP requests. */

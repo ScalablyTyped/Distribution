@@ -1,6 +1,6 @@
 package typings.reactMosaicComponent
 
-import typings.react.mod.ComponentType
+import typings.react.mod.global.JSX.Element
 import typings.reactMosaicComponent.libInternalTypesMod.MosaicDropTargetPosition
 import typings.reactMosaicComponent.libTypesMod.MosaicBranch
 import typings.reactMosaicComponent.libTypesMod.MosaicPath
@@ -10,9 +10,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object libMosaicDropTargetMod {
   
-  @JSImport("react-mosaic-component/lib/MosaicDropTarget", "MosaicDropTarget")
+  @JSImport("react-mosaic-component/lib/MosaicDropTarget", JSImport.Namespace)
   @js.native
-  val MosaicDropTarget: ComponentType[MosaicDropTargetProps] = js.native
+  val ^ : js.Any = js.native
+  
+  inline def MosaicDropTarget(param0: MosaicDropTargetProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("MosaicDropTarget")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait MosaicDropTargetProps extends StObject {
     

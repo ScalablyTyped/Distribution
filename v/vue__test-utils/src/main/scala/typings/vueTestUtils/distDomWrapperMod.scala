@@ -10,7 +10,7 @@ object distDomWrapperMod {
   
   @JSImport("@vue/test-utils/dist/domWrapper", "DOMWrapper")
   @js.native
-  open class DOMWrapper[NodeType /* <: Node */] protected () extends default[NodeType] {
+  open class DOMWrapper[NodeType /* <: Node */] () extends default[NodeType] {
     def this(element: NodeType) = this()
     
     /* private */ var setChecked: Any = js.native

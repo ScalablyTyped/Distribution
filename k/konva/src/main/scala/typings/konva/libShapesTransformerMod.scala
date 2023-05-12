@@ -101,7 +101,7 @@ object libShapesTransformerMod {
     @JSName("anchorStroke")
     var anchorStroke_Original: GetSet[String, this.type] = js.native
     
-    def attachTo(node: Any): this.type = js.native
+    def attachTo(node: Node[NodeConfig]): this.type = js.native
     
     def borderDash(): js.Array[Double] = js.native
     def borderDash(v: js.Array[Double]): this.type = js.native
@@ -211,10 +211,15 @@ object libShapesTransformerMod {
     @JSName("rotationSnaps")
     var rotationSnaps_Original: GetSet[js.Array[Double], this.type] = js.native
     
-    def setNode(node: Any): this.type = js.native
+    def setNode(node: Node[NodeConfig]): this.type = js.native
     
     def setNodes(): this.type = js.native
     def setNodes(nodes: js.Array[Node[NodeConfig]]): this.type = js.native
+    
+    def shiftBehavior(): String = js.native
+    def shiftBehavior(v: String): this.type = js.native
+    @JSName("shiftBehavior")
+    var shiftBehavior_Original: GetSet[String, this.type] = js.native
     
     def shouldOverdrawWholeArea(): Boolean = js.native
     def shouldOverdrawWholeArea(v: Boolean): this.type = js.native
@@ -298,6 +303,8 @@ object libShapesTransformerMod {
     var rotationSnapTolerance: js.UndefOr[Double] = js.undefined
     
     var rotationSnaps: js.UndefOr[js.Array[Double]] = js.undefined
+    
+    var shiftBehavior: js.UndefOr[String] = js.undefined
     
     var shouldOverdrawWholeArea: js.UndefOr[Boolean] = js.undefined
     
@@ -402,6 +409,10 @@ object libShapesTransformerMod {
       inline def setRotationSnapsUndefined: Self = StObject.set(x, "rotationSnaps", js.undefined)
       
       inline def setRotationSnapsVarargs(value: Double*): Self = StObject.set(x, "rotationSnaps", js.Array(value*))
+      
+      inline def setShiftBehavior(value: String): Self = StObject.set(x, "shiftBehavior", value.asInstanceOf[js.Any])
+      
+      inline def setShiftBehaviorUndefined: Self = StObject.set(x, "shiftBehavior", js.undefined)
       
       inline def setShouldOverdrawWholeArea(value: Boolean): Self = StObject.set(x, "shouldOverdrawWholeArea", value.asInstanceOf[js.Any])
       

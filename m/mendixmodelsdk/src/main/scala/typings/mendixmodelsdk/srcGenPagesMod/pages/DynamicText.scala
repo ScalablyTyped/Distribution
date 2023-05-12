@@ -34,6 +34,12 @@ open class DynamicText protected () extends ConditionallyVisibleWidget {
   def content_=(newValue: ClientTemplate): Unit = js.native
   
   /**
+    * In version 9.24.0: introduced
+    */
+  def nativeAccessibilitySettings: AccessibilitySettings | Null = js.native
+  def nativeAccessibilitySettings_=(newValue: AccessibilitySettings | Null): Unit = js.native
+  
+  /**
     * In version 8.0.0: introduced
     */
   def nativeTextStyle: NativeTextStyle = js.native

@@ -1,5 +1,6 @@
 package typings.swiper
 
+import typings.std.HTMLElement
 import typings.swiper.swiperStrings.container
 import typings.swiper.swiperStrings.slide
 import typings.swiper.typesSwiperClassMod.default
@@ -50,9 +51,9 @@ object typesModulesControllerMod {
     
     /**
       * Pass here another Swiper instance or array with Swiper instances that should be controlled
-      * by this Swiper
+      * by this Swiper. Also accepts string with CSS selector of Swiper element, or HTMLElement of Swiper element
       */
-    var control: js.UndefOr[default | js.Array[default]] = js.undefined
+    var control: js.UndefOr[default | js.Array[default] | String | HTMLElement | Null] = js.undefined
     
     /**
       * Set to `true` and controlling will be in inverse direction
@@ -75,7 +76,9 @@ object typesModulesControllerMod {
       
       inline def setByUndefined: Self = StObject.set(x, "by", js.undefined)
       
-      inline def setControl(value: default | js.Array[default]): Self = StObject.set(x, "control", value.asInstanceOf[js.Any])
+      inline def setControl(value: default | js.Array[default] | String | HTMLElement): Self = StObject.set(x, "control", value.asInstanceOf[js.Any])
+      
+      inline def setControlNull: Self = StObject.set(x, "control", null)
       
       inline def setControlUndefined: Self = StObject.set(x, "control", js.undefined)
       

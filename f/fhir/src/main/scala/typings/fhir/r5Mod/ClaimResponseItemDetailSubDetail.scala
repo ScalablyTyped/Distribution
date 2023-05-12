@@ -19,9 +19,19 @@ trait ClaimResponseItemDetailSubDetail
   var noteNumber: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
+    * The high-level results of the adjudication if adjudication has been performed.
+    */
+  var reviewOutcome: js.UndefOr[ClaimResponseItemReviewOutcome] = js.undefined
+  
+  /**
     * A number to uniquely reference the claim sub-detail entry.
     */
   var subDetailSequence: Double
+  
+  /**
+    * Trace number for tracking purposes. May be defined at the jurisdiction level or between trading partners.
+    */
+  var traceNumber: js.UndefOr[js.Array[Identifier]] = js.undefined
 }
 object ClaimResponseItemDetailSubDetail {
   
@@ -45,6 +55,16 @@ object ClaimResponseItemDetailSubDetail {
     
     inline def setNoteNumberVarargs(value: Double*): Self = StObject.set(x, "noteNumber", js.Array(value*))
     
+    inline def setReviewOutcome(value: ClaimResponseItemReviewOutcome): Self = StObject.set(x, "reviewOutcome", value.asInstanceOf[js.Any])
+    
+    inline def setReviewOutcomeUndefined: Self = StObject.set(x, "reviewOutcome", js.undefined)
+    
     inline def setSubDetailSequence(value: Double): Self = StObject.set(x, "subDetailSequence", value.asInstanceOf[js.Any])
+    
+    inline def setTraceNumber(value: js.Array[Identifier]): Self = StObject.set(x, "traceNumber", value.asInstanceOf[js.Any])
+    
+    inline def setTraceNumberUndefined: Self = StObject.set(x, "traceNumber", js.undefined)
+    
+    inline def setTraceNumberVarargs(value: Identifier*): Self = StObject.set(x, "traceNumber", js.Array(value*))
   }
 }

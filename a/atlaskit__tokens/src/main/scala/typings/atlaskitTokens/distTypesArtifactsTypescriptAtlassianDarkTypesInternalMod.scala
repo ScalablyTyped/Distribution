@@ -175,6 +175,100 @@ object distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod {
     - typings.atlaskitTokens.atlaskitTokensStrings.`colorDotblanketDot[default]`
     - typings.atlaskitTokens.atlaskitTokensStrings.colorDotblanketDotselected
     - typings.atlaskitTokens.atlaskitTokensStrings.colorDotblanketDotdanger
+    - typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotbrandDot[default]`
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotbrandDothovered
+    - typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotneutralDot[default]`
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotneutralDothovered
+    - typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotsuccessDot[default]Dot[default]`
+    - typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotsuccessDot[default]Dothovered`
+    - typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotsuccessDotboldDot[default]`
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotsuccessDotboldDothovered
+    - typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotdangerDot[default]Dot[default]`
+    - typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotdangerDot[default]Dothovered`
+    - typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotdangerDotboldDot[default]`
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotdangerDotboldDothovered
+    - typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotwarningDot[default]Dot[default]`
+    - typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotwarningDot[default]Dothovered`
+    - typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotwarningDotboldDot[default]`
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotwarningDotboldDothovered
+    - typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotinformationDot[default]Dot[default]`
+    - typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotinformationDot[default]Dothovered`
+    - typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotinformationDotboldDot[default]`
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotinformationDotboldDothovered
+    - typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotdiscoveryDot[default]Dot[default]`
+    - typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotdiscoveryDot[default]Dothovered`
+    - typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotdiscoveryDotboldDot[default]`
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotdiscoveryDotboldDothovered
+    - typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotcategoricalDot1Dot[default]`
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotcategoricalDot1Dothovered
+    - typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotcategoricalDot2Dot[default]`
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotcategoricalDot2Dothovered
+    - typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotcategoricalDot3Dot[default]`
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotcategoricalDot3Dothovered
+    - typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotcategoricalDot4Dot[default]`
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotcategoricalDot4Dothovered
+    - typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotcategoricalDot5Dot[default]`
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotcategoricalDot5Dothovered
+    - typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotcategoricalDot6Dot[default]`
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotcategoricalDot6Dothovered
+    - typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotcategoricalDot7Dot[default]`
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotcategoricalDot7Dothovered
+    - typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotcategoricalDot8Dot[default]`
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotcategoricalDot8Dothovered
+    - typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotblueDotboldDot[default]`
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotblueDotboldDothovered
+    - typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotblueDotbolderDot[default]`
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotblueDotbolderDothovered
+    - typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotblueDotboldestDot[default]`
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotblueDotboldestDothovered
+    - typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotredDotboldDot[default]`
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotredDotboldDothovered
+    - typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotredDotbolderDot[default]`
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotredDotbolderDothovered
+    - typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotredDotboldestDot[default]`
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotredDotboldestDothovered
+    - typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotorangeDotboldDot[default]`
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotorangeDotboldDothovered
+    - typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotorangeDotbolderDot[default]`
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotorangeDotbolderDothovered
+    - typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotorangeDotboldestDot[default]`
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotorangeDotboldestDothovered
+    - typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotyellowDotboldDot[default]`
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotyellowDotboldDothovered
+    - typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotyellowDotbolderDot[default]`
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotyellowDotbolderDothovered
+    - typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotyellowDotboldestDot[default]`
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotyellowDotboldestDothovered
+    - typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotgreenDotboldDot[default]`
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotgreenDotboldDothovered
+    - typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotgreenDotbolderDot[default]`
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotgreenDotbolderDothovered
+    - typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotgreenDotboldestDot[default]`
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotgreenDotboldestDothovered
+    - typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDottealDotboldDot[default]`
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDottealDotboldDothovered
+    - typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDottealDotbolderDot[default]`
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDottealDotbolderDothovered
+    - typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDottealDotboldestDot[default]`
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDottealDotboldestDothovered
+    - typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotpurpleDotboldDot[default]`
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotpurpleDotboldDothovered
+    - typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotpurpleDotbolderDot[default]`
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotpurpleDotbolderDothovered
+    - typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotpurpleDotboldestDot[default]`
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotpurpleDotboldestDothovered
+    - typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotmagentaDotboldDot[default]`
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotmagentaDotboldDothovered
+    - typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotmagentaDotbolderDot[default]`
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotmagentaDotbolderDothovered
+    - typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotmagentaDotboldestDot[default]`
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotmagentaDotboldestDothovered
+    - typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotgrayDotboldDot[default]`
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotgrayDotboldDothovered
+    - typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotgrayDotbolderDot[default]`
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotgrayDotbolderDothovered
+    - typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotgrayDotboldestDot[default]`
+    - typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotgrayDotboldestDothovered
     - typings.atlaskitTokens.atlaskitTokensStrings.colorDotinteractionDothovered
     - typings.atlaskitTokens.atlaskitTokensStrings.colorDotinteractionDotpressed
     - typings.atlaskitTokens.atlaskitTokensStrings.`colorDotskeletonDot[default]`
@@ -182,7 +276,9 @@ object distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod {
     - typings.atlaskitTokens.atlaskitTokensStrings.`colorDotlinkDot[default]`
     - typings.atlaskitTokens.atlaskitTokensStrings.colorDotlinkDotpressed
     - typings.atlaskitTokens.atlaskitTokensStrings.elevationDotshadowDotraised
-    - typings.atlaskitTokens.atlaskitTokensStrings.elevationDotshadowDotoverflow
+    - typings.atlaskitTokens.atlaskitTokensStrings.`elevationDotshadowDotoverflowDot[default]`
+    - typings.atlaskitTokens.atlaskitTokensStrings.elevationDotshadowDotoverflowDotspread
+    - typings.atlaskitTokens.atlaskitTokensStrings.elevationDotshadowDotoverflowDotperimeter
     - typings.atlaskitTokens.atlaskitTokensStrings.elevationDotshadowDotoverlay
     - typings.atlaskitTokens.atlaskitTokensStrings.`elevationDotsurfaceDot[default]Dot[default]`
     - typings.atlaskitTokens.atlaskitTokensStrings.`elevationDotsurfaceDot[default]Dothovered`
@@ -434,6 +530,194 @@ object distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod {
     
     inline def colorDotborderDotwarning: typings.atlaskitTokens.atlaskitTokensStrings.colorDotborderDotwarning = "color.border.warning".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotborderDotwarning]
     
+    inline def `colorDotchartDotblueDotboldDot[default]`: typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotblueDotboldDot[default]` = "color.chart.blue.bold.[default]".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotblueDotboldDot[default]`]
+    
+    inline def colorDotchartDotblueDotboldDothovered: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotblueDotboldDothovered = "color.chart.blue.bold.hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotblueDotboldDothovered]
+    
+    inline def `colorDotchartDotblueDotbolderDot[default]`: typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotblueDotbolderDot[default]` = "color.chart.blue.bolder.[default]".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotblueDotbolderDot[default]`]
+    
+    inline def colorDotchartDotblueDotbolderDothovered: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotblueDotbolderDothovered = "color.chart.blue.bolder.hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotblueDotbolderDothovered]
+    
+    inline def `colorDotchartDotblueDotboldestDot[default]`: typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotblueDotboldestDot[default]` = "color.chart.blue.boldest.[default]".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotblueDotboldestDot[default]`]
+    
+    inline def colorDotchartDotblueDotboldestDothovered: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotblueDotboldestDothovered = "color.chart.blue.boldest.hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotblueDotboldestDothovered]
+    
+    inline def `colorDotchartDotbrandDot[default]`: typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotbrandDot[default]` = "color.chart.brand.[default]".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotbrandDot[default]`]
+    
+    inline def colorDotchartDotbrandDothovered: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotbrandDothovered = "color.chart.brand.hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotbrandDothovered]
+    
+    inline def `colorDotchartDotcategoricalDot1Dot[default]`: typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotcategoricalDot1Dot[default]` = "color.chart.categorical.1.[default]".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotcategoricalDot1Dot[default]`]
+    
+    inline def colorDotchartDotcategoricalDot1Dothovered: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotcategoricalDot1Dothovered = "color.chart.categorical.1.hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotcategoricalDot1Dothovered]
+    
+    inline def `colorDotchartDotcategoricalDot2Dot[default]`: typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotcategoricalDot2Dot[default]` = "color.chart.categorical.2.[default]".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotcategoricalDot2Dot[default]`]
+    
+    inline def colorDotchartDotcategoricalDot2Dothovered: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotcategoricalDot2Dothovered = "color.chart.categorical.2.hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotcategoricalDot2Dothovered]
+    
+    inline def `colorDotchartDotcategoricalDot3Dot[default]`: typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotcategoricalDot3Dot[default]` = "color.chart.categorical.3.[default]".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotcategoricalDot3Dot[default]`]
+    
+    inline def colorDotchartDotcategoricalDot3Dothovered: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotcategoricalDot3Dothovered = "color.chart.categorical.3.hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotcategoricalDot3Dothovered]
+    
+    inline def `colorDotchartDotcategoricalDot4Dot[default]`: typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotcategoricalDot4Dot[default]` = "color.chart.categorical.4.[default]".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotcategoricalDot4Dot[default]`]
+    
+    inline def colorDotchartDotcategoricalDot4Dothovered: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotcategoricalDot4Dothovered = "color.chart.categorical.4.hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotcategoricalDot4Dothovered]
+    
+    inline def `colorDotchartDotcategoricalDot5Dot[default]`: typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotcategoricalDot5Dot[default]` = "color.chart.categorical.5.[default]".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotcategoricalDot5Dot[default]`]
+    
+    inline def colorDotchartDotcategoricalDot5Dothovered: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotcategoricalDot5Dothovered = "color.chart.categorical.5.hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotcategoricalDot5Dothovered]
+    
+    inline def `colorDotchartDotcategoricalDot6Dot[default]`: typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotcategoricalDot6Dot[default]` = "color.chart.categorical.6.[default]".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotcategoricalDot6Dot[default]`]
+    
+    inline def colorDotchartDotcategoricalDot6Dothovered: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotcategoricalDot6Dothovered = "color.chart.categorical.6.hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotcategoricalDot6Dothovered]
+    
+    inline def `colorDotchartDotcategoricalDot7Dot[default]`: typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotcategoricalDot7Dot[default]` = "color.chart.categorical.7.[default]".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotcategoricalDot7Dot[default]`]
+    
+    inline def colorDotchartDotcategoricalDot7Dothovered: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotcategoricalDot7Dothovered = "color.chart.categorical.7.hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotcategoricalDot7Dothovered]
+    
+    inline def `colorDotchartDotcategoricalDot8Dot[default]`: typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotcategoricalDot8Dot[default]` = "color.chart.categorical.8.[default]".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotcategoricalDot8Dot[default]`]
+    
+    inline def colorDotchartDotcategoricalDot8Dothovered: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotcategoricalDot8Dothovered = "color.chart.categorical.8.hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotcategoricalDot8Dothovered]
+    
+    inline def `colorDotchartDotdangerDot[default]Dot[default]`: typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotdangerDot[default]Dot[default]` = "color.chart.danger.[default].[default]".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotdangerDot[default]Dot[default]`]
+    
+    inline def `colorDotchartDotdangerDot[default]Dothovered`: typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotdangerDot[default]Dothovered` = "color.chart.danger.[default].hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotdangerDot[default]Dothovered`]
+    
+    inline def `colorDotchartDotdangerDotboldDot[default]`: typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotdangerDotboldDot[default]` = "color.chart.danger.bold.[default]".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotdangerDotboldDot[default]`]
+    
+    inline def colorDotchartDotdangerDotboldDothovered: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotdangerDotboldDothovered = "color.chart.danger.bold.hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotdangerDotboldDothovered]
+    
+    inline def `colorDotchartDotdiscoveryDot[default]Dot[default]`: typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotdiscoveryDot[default]Dot[default]` = "color.chart.discovery.[default].[default]".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotdiscoveryDot[default]Dot[default]`]
+    
+    inline def `colorDotchartDotdiscoveryDot[default]Dothovered`: typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotdiscoveryDot[default]Dothovered` = "color.chart.discovery.[default].hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotdiscoveryDot[default]Dothovered`]
+    
+    inline def `colorDotchartDotdiscoveryDotboldDot[default]`: typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotdiscoveryDotboldDot[default]` = "color.chart.discovery.bold.[default]".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotdiscoveryDotboldDot[default]`]
+    
+    inline def colorDotchartDotdiscoveryDotboldDothovered: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotdiscoveryDotboldDothovered = "color.chart.discovery.bold.hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotdiscoveryDotboldDothovered]
+    
+    inline def `colorDotchartDotgrayDotboldDot[default]`: typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotgrayDotboldDot[default]` = "color.chart.gray.bold.[default]".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotgrayDotboldDot[default]`]
+    
+    inline def colorDotchartDotgrayDotboldDothovered: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotgrayDotboldDothovered = "color.chart.gray.bold.hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotgrayDotboldDothovered]
+    
+    inline def `colorDotchartDotgrayDotbolderDot[default]`: typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotgrayDotbolderDot[default]` = "color.chart.gray.bolder.[default]".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotgrayDotbolderDot[default]`]
+    
+    inline def colorDotchartDotgrayDotbolderDothovered: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotgrayDotbolderDothovered = "color.chart.gray.bolder.hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotgrayDotbolderDothovered]
+    
+    inline def `colorDotchartDotgrayDotboldestDot[default]`: typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotgrayDotboldestDot[default]` = "color.chart.gray.boldest.[default]".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotgrayDotboldestDot[default]`]
+    
+    inline def colorDotchartDotgrayDotboldestDothovered: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotgrayDotboldestDothovered = "color.chart.gray.boldest.hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotgrayDotboldestDothovered]
+    
+    inline def `colorDotchartDotgreenDotboldDot[default]`: typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotgreenDotboldDot[default]` = "color.chart.green.bold.[default]".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotgreenDotboldDot[default]`]
+    
+    inline def colorDotchartDotgreenDotboldDothovered: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotgreenDotboldDothovered = "color.chart.green.bold.hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotgreenDotboldDothovered]
+    
+    inline def `colorDotchartDotgreenDotbolderDot[default]`: typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotgreenDotbolderDot[default]` = "color.chart.green.bolder.[default]".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotgreenDotbolderDot[default]`]
+    
+    inline def colorDotchartDotgreenDotbolderDothovered: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotgreenDotbolderDothovered = "color.chart.green.bolder.hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotgreenDotbolderDothovered]
+    
+    inline def `colorDotchartDotgreenDotboldestDot[default]`: typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotgreenDotboldestDot[default]` = "color.chart.green.boldest.[default]".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotgreenDotboldestDot[default]`]
+    
+    inline def colorDotchartDotgreenDotboldestDothovered: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotgreenDotboldestDothovered = "color.chart.green.boldest.hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotgreenDotboldestDothovered]
+    
+    inline def `colorDotchartDotinformationDot[default]Dot[default]`: typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotinformationDot[default]Dot[default]` = "color.chart.information.[default].[default]".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotinformationDot[default]Dot[default]`]
+    
+    inline def `colorDotchartDotinformationDot[default]Dothovered`: typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotinformationDot[default]Dothovered` = "color.chart.information.[default].hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotinformationDot[default]Dothovered`]
+    
+    inline def `colorDotchartDotinformationDotboldDot[default]`: typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotinformationDotboldDot[default]` = "color.chart.information.bold.[default]".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotinformationDotboldDot[default]`]
+    
+    inline def colorDotchartDotinformationDotboldDothovered: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotinformationDotboldDothovered = "color.chart.information.bold.hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotinformationDotboldDothovered]
+    
+    inline def `colorDotchartDotmagentaDotboldDot[default]`: typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotmagentaDotboldDot[default]` = "color.chart.magenta.bold.[default]".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotmagentaDotboldDot[default]`]
+    
+    inline def colorDotchartDotmagentaDotboldDothovered: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotmagentaDotboldDothovered = "color.chart.magenta.bold.hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotmagentaDotboldDothovered]
+    
+    inline def `colorDotchartDotmagentaDotbolderDot[default]`: typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotmagentaDotbolderDot[default]` = "color.chart.magenta.bolder.[default]".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotmagentaDotbolderDot[default]`]
+    
+    inline def colorDotchartDotmagentaDotbolderDothovered: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotmagentaDotbolderDothovered = "color.chart.magenta.bolder.hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotmagentaDotbolderDothovered]
+    
+    inline def `colorDotchartDotmagentaDotboldestDot[default]`: typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotmagentaDotboldestDot[default]` = "color.chart.magenta.boldest.[default]".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotmagentaDotboldestDot[default]`]
+    
+    inline def colorDotchartDotmagentaDotboldestDothovered: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotmagentaDotboldestDothovered = "color.chart.magenta.boldest.hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotmagentaDotboldestDothovered]
+    
+    inline def `colorDotchartDotneutralDot[default]`: typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotneutralDot[default]` = "color.chart.neutral.[default]".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotneutralDot[default]`]
+    
+    inline def colorDotchartDotneutralDothovered: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotneutralDothovered = "color.chart.neutral.hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotneutralDothovered]
+    
+    inline def `colorDotchartDotorangeDotboldDot[default]`: typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotorangeDotboldDot[default]` = "color.chart.orange.bold.[default]".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotorangeDotboldDot[default]`]
+    
+    inline def colorDotchartDotorangeDotboldDothovered: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotorangeDotboldDothovered = "color.chart.orange.bold.hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotorangeDotboldDothovered]
+    
+    inline def `colorDotchartDotorangeDotbolderDot[default]`: typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotorangeDotbolderDot[default]` = "color.chart.orange.bolder.[default]".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotorangeDotbolderDot[default]`]
+    
+    inline def colorDotchartDotorangeDotbolderDothovered: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotorangeDotbolderDothovered = "color.chart.orange.bolder.hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotorangeDotbolderDothovered]
+    
+    inline def `colorDotchartDotorangeDotboldestDot[default]`: typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotorangeDotboldestDot[default]` = "color.chart.orange.boldest.[default]".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotorangeDotboldestDot[default]`]
+    
+    inline def colorDotchartDotorangeDotboldestDothovered: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotorangeDotboldestDothovered = "color.chart.orange.boldest.hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotorangeDotboldestDothovered]
+    
+    inline def `colorDotchartDotpurpleDotboldDot[default]`: typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotpurpleDotboldDot[default]` = "color.chart.purple.bold.[default]".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotpurpleDotboldDot[default]`]
+    
+    inline def colorDotchartDotpurpleDotboldDothovered: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotpurpleDotboldDothovered = "color.chart.purple.bold.hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotpurpleDotboldDothovered]
+    
+    inline def `colorDotchartDotpurpleDotbolderDot[default]`: typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotpurpleDotbolderDot[default]` = "color.chart.purple.bolder.[default]".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotpurpleDotbolderDot[default]`]
+    
+    inline def colorDotchartDotpurpleDotbolderDothovered: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotpurpleDotbolderDothovered = "color.chart.purple.bolder.hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotpurpleDotbolderDothovered]
+    
+    inline def `colorDotchartDotpurpleDotboldestDot[default]`: typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotpurpleDotboldestDot[default]` = "color.chart.purple.boldest.[default]".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotpurpleDotboldestDot[default]`]
+    
+    inline def colorDotchartDotpurpleDotboldestDothovered: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotpurpleDotboldestDothovered = "color.chart.purple.boldest.hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotpurpleDotboldestDothovered]
+    
+    inline def `colorDotchartDotredDotboldDot[default]`: typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotredDotboldDot[default]` = "color.chart.red.bold.[default]".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotredDotboldDot[default]`]
+    
+    inline def colorDotchartDotredDotboldDothovered: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotredDotboldDothovered = "color.chart.red.bold.hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotredDotboldDothovered]
+    
+    inline def `colorDotchartDotredDotbolderDot[default]`: typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotredDotbolderDot[default]` = "color.chart.red.bolder.[default]".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotredDotbolderDot[default]`]
+    
+    inline def colorDotchartDotredDotbolderDothovered: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotredDotbolderDothovered = "color.chart.red.bolder.hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotredDotbolderDothovered]
+    
+    inline def `colorDotchartDotredDotboldestDot[default]`: typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotredDotboldestDot[default]` = "color.chart.red.boldest.[default]".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotredDotboldestDot[default]`]
+    
+    inline def colorDotchartDotredDotboldestDothovered: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotredDotboldestDothovered = "color.chart.red.boldest.hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotredDotboldestDothovered]
+    
+    inline def `colorDotchartDotsuccessDot[default]Dot[default]`: typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotsuccessDot[default]Dot[default]` = "color.chart.success.[default].[default]".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotsuccessDot[default]Dot[default]`]
+    
+    inline def `colorDotchartDotsuccessDot[default]Dothovered`: typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotsuccessDot[default]Dothovered` = "color.chart.success.[default].hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotsuccessDot[default]Dothovered`]
+    
+    inline def `colorDotchartDotsuccessDotboldDot[default]`: typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotsuccessDotboldDot[default]` = "color.chart.success.bold.[default]".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotsuccessDotboldDot[default]`]
+    
+    inline def colorDotchartDotsuccessDotboldDothovered: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotsuccessDotboldDothovered = "color.chart.success.bold.hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotsuccessDotboldDothovered]
+    
+    inline def `colorDotchartDottealDotboldDot[default]`: typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDottealDotboldDot[default]` = "color.chart.teal.bold.[default]".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDottealDotboldDot[default]`]
+    
+    inline def colorDotchartDottealDotboldDothovered: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDottealDotboldDothovered = "color.chart.teal.bold.hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDottealDotboldDothovered]
+    
+    inline def `colorDotchartDottealDotbolderDot[default]`: typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDottealDotbolderDot[default]` = "color.chart.teal.bolder.[default]".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDottealDotbolderDot[default]`]
+    
+    inline def colorDotchartDottealDotbolderDothovered: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDottealDotbolderDothovered = "color.chart.teal.bolder.hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDottealDotbolderDothovered]
+    
+    inline def `colorDotchartDottealDotboldestDot[default]`: typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDottealDotboldestDot[default]` = "color.chart.teal.boldest.[default]".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDottealDotboldestDot[default]`]
+    
+    inline def colorDotchartDottealDotboldestDothovered: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDottealDotboldestDothovered = "color.chart.teal.boldest.hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDottealDotboldestDothovered]
+    
+    inline def `colorDotchartDotwarningDot[default]Dot[default]`: typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotwarningDot[default]Dot[default]` = "color.chart.warning.[default].[default]".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotwarningDot[default]Dot[default]`]
+    
+    inline def `colorDotchartDotwarningDot[default]Dothovered`: typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotwarningDot[default]Dothovered` = "color.chart.warning.[default].hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotwarningDot[default]Dothovered`]
+    
+    inline def `colorDotchartDotwarningDotboldDot[default]`: typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotwarningDotboldDot[default]` = "color.chart.warning.bold.[default]".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotwarningDotboldDot[default]`]
+    
+    inline def colorDotchartDotwarningDotboldDothovered: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotwarningDotboldDothovered = "color.chart.warning.bold.hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotwarningDotboldDothovered]
+    
+    inline def `colorDotchartDotyellowDotboldDot[default]`: typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotyellowDotboldDot[default]` = "color.chart.yellow.bold.[default]".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotyellowDotboldDot[default]`]
+    
+    inline def colorDotchartDotyellowDotboldDothovered: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotyellowDotboldDothovered = "color.chart.yellow.bold.hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotyellowDotboldDothovered]
+    
+    inline def `colorDotchartDotyellowDotbolderDot[default]`: typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotyellowDotbolderDot[default]` = "color.chart.yellow.bolder.[default]".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotyellowDotbolderDot[default]`]
+    
+    inline def colorDotchartDotyellowDotbolderDothovered: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotyellowDotbolderDothovered = "color.chart.yellow.bolder.hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotyellowDotbolderDothovered]
+    
+    inline def `colorDotchartDotyellowDotboldestDot[default]`: typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotyellowDotboldestDot[default]` = "color.chart.yellow.boldest.[default]".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`colorDotchartDotyellowDotboldestDot[default]`]
+    
+    inline def colorDotchartDotyellowDotboldestDothovered: typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotyellowDotboldestDothovered = "color.chart.yellow.boldest.hovered".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDotchartDotyellowDotboldestDothovered]
+    
     inline def `colorDoticonDot[default]`: typings.atlaskitTokens.atlaskitTokensStrings.`colorDoticonDot[default]` = "color.icon.[default]".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`colorDoticonDot[default]`]
     
     inline def colorDoticonDotaccentDotblue: typings.atlaskitTokens.atlaskitTokensStrings.colorDoticonDotaccentDotblue = "color.icon.accent.blue".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDoticonDotaccentDotblue]
@@ -550,7 +834,11 @@ object distTypesArtifactsTypescriptAtlassianDarkTypesInternalMod {
     
     inline def colorDottextDotwarningDotinverse: typings.atlaskitTokens.atlaskitTokensStrings.colorDottextDotwarningDotinverse = "color.text.warning.inverse".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.colorDottextDotwarningDotinverse]
     
-    inline def elevationDotshadowDotoverflow: typings.atlaskitTokens.atlaskitTokensStrings.elevationDotshadowDotoverflow = "elevation.shadow.overflow".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.elevationDotshadowDotoverflow]
+    inline def `elevationDotshadowDotoverflowDot[default]`: typings.atlaskitTokens.atlaskitTokensStrings.`elevationDotshadowDotoverflowDot[default]` = "elevation.shadow.overflow.[default]".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.`elevationDotshadowDotoverflowDot[default]`]
+    
+    inline def elevationDotshadowDotoverflowDotperimeter: typings.atlaskitTokens.atlaskitTokensStrings.elevationDotshadowDotoverflowDotperimeter = "elevation.shadow.overflow.perimeter".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.elevationDotshadowDotoverflowDotperimeter]
+    
+    inline def elevationDotshadowDotoverflowDotspread: typings.atlaskitTokens.atlaskitTokensStrings.elevationDotshadowDotoverflowDotspread = "elevation.shadow.overflow.spread".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.elevationDotshadowDotoverflowDotspread]
     
     inline def elevationDotshadowDotoverlay: typings.atlaskitTokens.atlaskitTokensStrings.elevationDotshadowDotoverlay = "elevation.shadow.overlay".asInstanceOf[typings.atlaskitTokens.atlaskitTokensStrings.elevationDotshadowDotoverlay]
     

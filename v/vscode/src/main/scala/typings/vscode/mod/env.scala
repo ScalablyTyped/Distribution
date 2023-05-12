@@ -29,6 +29,9 @@ object env {
   @js.native
   val clipboard: Clipboard = js.native
   
+  inline def createTelemetryLogger(sender: TelemetrySender): TelemetryLogger = ^.asInstanceOf[js.Dynamic].applyDynamic("createTelemetryLogger")(sender.asInstanceOf[js.Any]).asInstanceOf[TelemetryLogger]
+  inline def createTelemetryLogger(sender: TelemetrySender, options: TelemetryLoggerOptions): TelemetryLogger = (^.asInstanceOf[js.Dynamic].applyDynamic("createTelemetryLogger")(sender.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[TelemetryLogger]
+  
   @JSImport("vscode", "env.isNewAppInstall")
   @js.native
   val isNewAppInstall: Boolean = js.native
@@ -41,9 +44,17 @@ object env {
   @js.native
   val language: String = js.native
   
+  @JSImport("vscode", "env.logLevel")
+  @js.native
+  val logLevel: LogLevel = js.native
+  
   @JSImport("vscode", "env.machineId")
   @js.native
   val machineId: String = js.native
+  
+  @JSImport("vscode", "env.onDidChangeLogLevel")
+  @js.native
+  val onDidChangeLogLevel: Event[LogLevel] = js.native
   
   @JSImport("vscode", "env.onDidChangeTelemetryEnabled")
   @js.native

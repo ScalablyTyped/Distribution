@@ -1,6 +1,5 @@
 package typings.swiper
 
-import typings.dom7.mod.Dom7Array
 import typings.std.HTMLElement
 import typings.swiper.swiperStrings.bullets
 import typings.swiper.swiperStrings.custom
@@ -64,11 +63,11 @@ object typesModulesPaginationMod {
   trait PaginationMethods extends StObject {
     
     /**
-      * Dom7 array-like collection of pagination bullets
+      * Array of pagination bullets
       * HTML elements. To get specific slide HTMLElement
       * use `swiper.pagination.bullets[1]`.
       */
-    var bullets: Dom7Array
+    var bullets: js.Array[HTMLElement]
     
     /**
       * Destroy pagination
@@ -98,7 +97,7 @@ object typesModulesPaginationMod {
   object PaginationMethods {
     
     inline def apply(
-      bullets: Dom7Array,
+      bullets: js.Array[HTMLElement],
       destroy: () => Unit,
       el: HTMLElement,
       init: () => Unit,
@@ -112,7 +111,9 @@ object typesModulesPaginationMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: PaginationMethods] (val x: Self) extends AnyVal {
       
-      inline def setBullets(value: Dom7Array): Self = StObject.set(x, "bullets", value.asInstanceOf[js.Any])
+      inline def setBullets(value: js.Array[HTMLElement]): Self = StObject.set(x, "bullets", value.asInstanceOf[js.Any])
+      
+      inline def setBulletsVarargs(value: HTMLElement*): Self = StObject.set(x, "bullets", js.Array(value*))
       
       inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
@@ -288,7 +289,7 @@ object typesModulesPaginationMod {
       * });
       * ```
       */
-    var renderBullet: js.UndefOr[js.Function2[/* index */ Double, /* className */ String, Unit]] = js.undefined
+    var renderBullet: js.UndefOr[js.Function2[/* index */ Double, /* className */ String, String]] = js.undefined
     
     /**
       * This parameter is required for `'custom'` pagination type where you have to specify
@@ -307,7 +308,7 @@ object typesModulesPaginationMod {
       * ```
       */
     var renderCustom: js.UndefOr[
-        js.Function3[/* swiper */ default, /* current */ Double, /* total */ Double, Unit]
+        js.Function3[/* swiper */ default, /* current */ Double, /* total */ Double, String]
       ] = js.undefined
     
     /**
@@ -327,7 +328,7 @@ object typesModulesPaginationMod {
       * });
       * ```
       */
-    var renderFraction: js.UndefOr[js.Function2[/* currentClass */ String, /* totalClass */ String, Unit]] = js.undefined
+    var renderFraction: js.UndefOr[js.Function2[/* currentClass */ String, /* totalClass */ String, String]] = js.undefined
     
     /**
       * This parameter allows to customize "progress" pagination. Only for `'progress'` pagination type
@@ -344,7 +345,7 @@ object typesModulesPaginationMod {
       * });
       * ```
       */
-    var renderProgressbar: js.UndefOr[js.Function1[/* progressbarFillClass */ String, Unit]] = js.undefined
+    var renderProgressbar: js.UndefOr[js.Function1[/* progressbarFillClass */ String, String]] = js.undefined
     
     /**
       * CSS class name of the element with total number of "snaps" in "fraction" pagination
@@ -463,19 +464,19 @@ object typesModulesPaginationMod {
       
       inline def setProgressbarOppositeUndefined: Self = StObject.set(x, "progressbarOpposite", js.undefined)
       
-      inline def setRenderBullet(value: (/* index */ Double, /* className */ String) => Unit): Self = StObject.set(x, "renderBullet", js.Any.fromFunction2(value))
+      inline def setRenderBullet(value: (/* index */ Double, /* className */ String) => String): Self = StObject.set(x, "renderBullet", js.Any.fromFunction2(value))
       
       inline def setRenderBulletUndefined: Self = StObject.set(x, "renderBullet", js.undefined)
       
-      inline def setRenderCustom(value: (/* swiper */ default, /* current */ Double, /* total */ Double) => Unit): Self = StObject.set(x, "renderCustom", js.Any.fromFunction3(value))
+      inline def setRenderCustom(value: (/* swiper */ default, /* current */ Double, /* total */ Double) => String): Self = StObject.set(x, "renderCustom", js.Any.fromFunction3(value))
       
       inline def setRenderCustomUndefined: Self = StObject.set(x, "renderCustom", js.undefined)
       
-      inline def setRenderFraction(value: (/* currentClass */ String, /* totalClass */ String) => Unit): Self = StObject.set(x, "renderFraction", js.Any.fromFunction2(value))
+      inline def setRenderFraction(value: (/* currentClass */ String, /* totalClass */ String) => String): Self = StObject.set(x, "renderFraction", js.Any.fromFunction2(value))
       
       inline def setRenderFractionUndefined: Self = StObject.set(x, "renderFraction", js.undefined)
       
-      inline def setRenderProgressbar(value: /* progressbarFillClass */ String => Unit): Self = StObject.set(x, "renderProgressbar", js.Any.fromFunction1(value))
+      inline def setRenderProgressbar(value: /* progressbarFillClass */ String => String): Self = StObject.set(x, "renderProgressbar", js.Any.fromFunction1(value))
       
       inline def setRenderProgressbarUndefined: Self = StObject.set(x, "renderProgressbar", js.undefined)
       

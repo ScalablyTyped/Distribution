@@ -37,4 +37,13 @@ trait Net extends StObject {
     * specified protocol scheme in the `options` object.
     */
   def request(options: ClientRequestConstructorOptions): ClientRequest = js.native
+  
+  /**
+    * Resolves with the resolved IP addresses for the `host`.
+    *
+    * This method will resolve hosts from the default session. To resolve a host from
+    * another session, use ses.resolveHost().
+    */
+  def resolveHost(host: String): js.Promise[ResolvedHost] = js.native
+  def resolveHost(host: String, options: ResolveHostOptions): js.Promise[ResolvedHost] = js.native
 }

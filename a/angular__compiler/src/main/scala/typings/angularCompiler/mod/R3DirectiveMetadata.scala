@@ -32,19 +32,15 @@ trait R3DirectiveMetadata extends StObject {
   var host: R3HostMetadata
   
   /**
+    * Additional directives applied to the directive host.
+    */
+  var hostDirectives: js.Array[R3HostDirectiveMetadata] | Null
+  
+  /**
     * A mapping of inputs from class property names to binding property names, or to a tuple of
     * binding property name and class property name if the names are different.
     */
-  var inputs: StringDictionary[String | (js.Tuple2[String, String])]
-  
-  /**
-    * An expression representing a reference to the directive being compiled, intended for use within
-    * a class definition itself.
-    *
-    * This can differ from the outer `type` if the class is being compiled by ngcc and is inside
-    * an IIFE structure that uses a different name internally.
-    */
-  var internalType: Expression
+  var inputs: StringDictionary[R3InputMetadata]
   
   /**
     * Whether or not the component or directive is standalone.
@@ -113,8 +109,7 @@ object R3DirectiveMetadata {
   inline def apply(
     fullInheritance: Boolean,
     host: R3HostMetadata,
-    inputs: StringDictionary[String | (js.Tuple2[String, String])],
-    internalType: Expression,
+    inputs: StringDictionary[R3InputMetadata],
     isStandalone: Boolean,
     lifecycle: UsesOnChanges,
     name: String,
@@ -126,7 +121,7 @@ object R3DirectiveMetadata {
     usesInheritance: Boolean,
     viewQueries: js.Array[R3QueryMetadata]
   ): R3DirectiveMetadata = {
-    val __obj = js.Dynamic.literal(fullInheritance = fullInheritance.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], inputs = inputs.asInstanceOf[js.Any], internalType = internalType.asInstanceOf[js.Any], isStandalone = isStandalone.asInstanceOf[js.Any], lifecycle = lifecycle.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], outputs = outputs.asInstanceOf[js.Any], queries = queries.asInstanceOf[js.Any], typeArgumentCount = typeArgumentCount.asInstanceOf[js.Any], typeSourceSpan = typeSourceSpan.asInstanceOf[js.Any], usesInheritance = usesInheritance.asInstanceOf[js.Any], viewQueries = viewQueries.asInstanceOf[js.Any], deps = null, exportAs = null, providers = null, selector = null)
+    val __obj = js.Dynamic.literal(fullInheritance = fullInheritance.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], inputs = inputs.asInstanceOf[js.Any], isStandalone = isStandalone.asInstanceOf[js.Any], lifecycle = lifecycle.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], outputs = outputs.asInstanceOf[js.Any], queries = queries.asInstanceOf[js.Any], typeArgumentCount = typeArgumentCount.asInstanceOf[js.Any], typeSourceSpan = typeSourceSpan.asInstanceOf[js.Any], usesInheritance = usesInheritance.asInstanceOf[js.Any], viewQueries = viewQueries.asInstanceOf[js.Any], deps = null, exportAs = null, hostDirectives = null, providers = null, selector = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[R3DirectiveMetadata]
   }
@@ -150,9 +145,13 @@ object R3DirectiveMetadata {
     
     inline def setHost(value: R3HostMetadata): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
-    inline def setInputs(value: StringDictionary[String | (js.Tuple2[String, String])]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
+    inline def setHostDirectives(value: js.Array[R3HostDirectiveMetadata]): Self = StObject.set(x, "hostDirectives", value.asInstanceOf[js.Any])
     
-    inline def setInternalType(value: Expression): Self = StObject.set(x, "internalType", value.asInstanceOf[js.Any])
+    inline def setHostDirectivesNull: Self = StObject.set(x, "hostDirectives", null)
+    
+    inline def setHostDirectivesVarargs(value: R3HostDirectiveMetadata*): Self = StObject.set(x, "hostDirectives", js.Array(value*))
+    
+    inline def setInputs(value: StringDictionary[R3InputMetadata]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
     
     inline def setIsStandalone(value: Boolean): Self = StObject.set(x, "isStandalone", value.asInstanceOf[js.Any])
     

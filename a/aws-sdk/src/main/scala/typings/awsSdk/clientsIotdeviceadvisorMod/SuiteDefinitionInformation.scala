@@ -22,12 +22,12 @@ trait SuiteDefinitionInformation extends StObject {
   var intendedForQualification: js.UndefOr[IntendedForQualificationBoolean] = js.undefined
   
   /**
-    *  Verifies if the test suite is a long duration test. 
+    * Verifies if the test suite is a long duration test.
     */
   var isLongDurationTest: js.UndefOr[IsLongDurationTestBoolean] = js.undefined
   
   /**
-    *  Gets the MQTT protocol that is configured in the suite definition.
+    * Gets the MQTT protocol that is configured in the suite definition.
     */
   var protocol: js.UndefOr[Protocol] = js.undefined
   

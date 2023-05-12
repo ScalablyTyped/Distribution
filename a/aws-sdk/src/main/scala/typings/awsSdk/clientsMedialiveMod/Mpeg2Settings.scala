@@ -93,6 +93,11 @@ trait Mpeg2Settings extends StObject {
   var SubgopLength: js.UndefOr[Mpeg2SubGopLength] = js.undefined
   
   /**
+    * Timecode burn-in settings
+    */
+  var TimecodeBurninSettings: js.UndefOr[typings.awsSdk.clientsMedialiveMod.TimecodeBurninSettings] = js.undefined
+  
+  /**
     * Determines how MediaLive inserts timecodes in the output video. For detailed information about setting up the input and the output for a timecode, see the section on \"MediaLive Features - Timecode configuration\" in the MediaLive User Guide.
   DISABLED: do not include timecodes.
   GOP_TIMECODE: Include timecode metadata in the GOP header.
@@ -164,6 +169,10 @@ object Mpeg2Settings {
     inline def setSubgopLength(value: Mpeg2SubGopLength): Self = StObject.set(x, "SubgopLength", value.asInstanceOf[js.Any])
     
     inline def setSubgopLengthUndefined: Self = StObject.set(x, "SubgopLength", js.undefined)
+    
+    inline def setTimecodeBurninSettings(value: TimecodeBurninSettings): Self = StObject.set(x, "TimecodeBurninSettings", value.asInstanceOf[js.Any])
+    
+    inline def setTimecodeBurninSettingsUndefined: Self = StObject.set(x, "TimecodeBurninSettings", js.undefined)
     
     inline def setTimecodeInsertion(value: Mpeg2TimecodeInsertionBehavior): Self = StObject.set(x, "TimecodeInsertion", value.asInstanceOf[js.Any])
     

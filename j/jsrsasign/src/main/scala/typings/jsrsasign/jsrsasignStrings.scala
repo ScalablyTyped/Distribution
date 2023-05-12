@@ -91,12 +91,16 @@ object jsrsasignStrings {
   inline def authorityInfoAccess: authorityInfoAccess = "authorityInfoAccess".asInstanceOf[authorityInfoAccess]
   
   @js.native
+  sealed trait authorityKeyIdentifier extends StObject
+  inline def authorityKeyIdentifier: authorityKeyIdentifier = "authorityKeyIdentifier".asInstanceOf[authorityKeyIdentifier]
+  
+  @js.native
   sealed trait authorityinfoaccess_ extends StObject
   inline def authorityinfoaccess_ : authorityinfoaccess_ = "authorityinfoaccess".asInstanceOf[authorityinfoaccess_]
   
   @js.native
-  sealed trait authoritykeyidentifier extends StObject
-  inline def authoritykeyidentifier: authoritykeyidentifier = "authoritykeyidentifier".asInstanceOf[authoritykeyidentifier]
+  sealed trait authoritykeyidentifier_ extends StObject
+  inline def authoritykeyidentifier_ : authoritykeyidentifier_ = "authoritykeyidentifier".asInstanceOf[authoritykeyidentifier_]
   
   @js.native
   sealed trait basicConstraints extends StObject
@@ -177,6 +181,18 @@ object jsrsasignStrings {
   @js.native
   sealed trait prn extends StObject
   inline def prn: prn = "prn".asInstanceOf[prn]
+  
+  @js.native
+  sealed trait secp256k1 extends StObject
+  inline def secp256k1: secp256k1 = "secp256k1".asInstanceOf[secp256k1]
+  
+  @js.native
+  sealed trait secp256r1 extends StObject
+  inline def secp256r1: secp256r1 = "secp256r1".asInstanceOf[secp256r1]
+  
+  @js.native
+  sealed trait secp384r1 extends StObject
+  inline def secp384r1: secp384r1 = "secp384r1".asInstanceOf[secp384r1]
   
   @js.native
   sealed trait string extends StObject

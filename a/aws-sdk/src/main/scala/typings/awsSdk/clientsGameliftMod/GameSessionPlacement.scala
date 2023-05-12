@@ -17,7 +17,7 @@ trait GameSessionPlacement extends StObject {
   var EndTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * A set of custom properties for a game session, formatted as key:value pairs. These properties are passed to a game server process in the GameSession object with a request to start a new game session (see Start a Game Session).
+    * A set of custom properties for a game session, formatted as key:value pairs. These properties are passed to a game server process with a request to start a new game session (see Start a Game Session).
     */
   var GameProperties: js.UndefOr[GamePropertyList] = js.undefined
   
@@ -52,7 +52,7 @@ trait GameSessionPlacement extends StObject {
   var GameSessionRegion: js.UndefOr[NonZeroAndMaxString] = js.undefined
   
   /**
-    * The IP address of the game session. To connect to a GameLift game server, an app needs both the IP address and port number. This value is set once the new game session is placed (placement status is FULFILLED). 
+    * The IP address of the game session. To connect to a Amazon GameLift game server, an app needs both the IP address and port number. This value is set once the new game session is placed (placement status is FULFILLED). 
     */
   var IpAddress: js.UndefOr[typings.awsSdk.clientsGameliftMod.IpAddress] = js.undefined
   
@@ -67,7 +67,7 @@ trait GameSessionPlacement extends StObject {
   var MaximumPlayerSessionCount: js.UndefOr[WholeNumber] = js.undefined
   
   /**
-    * A collection of information on player sessions created in response to the game session placement request. These player sessions are created only once a new game session is successfully placed (placement status is FULFILLED). This information includes the player ID (as provided in the placement request) and the corresponding player session ID. Retrieve full player sessions by calling DescribePlayerSessions with the player session ID.
+    * A collection of information on player sessions created in response to the game session placement request. These player sessions are created only once a new game session is successfully placed (placement status is FULFILLED). This information includes the player ID (as provided in the placement request) and the corresponding player session ID.
     */
   var PlacedPlayerSessions: js.UndefOr[PlacedPlayerSessionList] = js.undefined
   
@@ -77,12 +77,12 @@ trait GameSessionPlacement extends StObject {
   var PlacementId: js.UndefOr[IdStringModel] = js.undefined
   
   /**
-    * A set of values, expressed in milliseconds, that indicates the amount of latency that a player experiences when connected to @aws; Regions.
+    * A set of values, expressed in milliseconds, that indicates the amount of latency that a player experiences when connected to Amazon Web Services Regions.
     */
   var PlayerLatencies: js.UndefOr[PlayerLatencyList] = js.undefined
   
   /**
-    * The port number for the game session. To connect to a GameLift game server, an app needs both the IP address and port number. This value is set once the new game session is placed (placement status is FULFILLED).
+    * The port number for the game session. To connect to a Amazon GameLift game server, an app needs both the IP address and port number. This value is set once the new game session is placed (placement status is FULFILLED).
     */
   var Port: js.UndefOr[PortNumber] = js.undefined
   
@@ -92,7 +92,7 @@ trait GameSessionPlacement extends StObject {
   var StartTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * Current status of the game session placement request.    PENDING -- The placement request is currently in the queue waiting to be processed.    FULFILLED -- A new game session and player sessions (if requested) have been successfully created. Values for GameSessionArn and GameSessionRegion are available.     CANCELLED -- The placement request was canceled with a call to StopGameSessionPlacement.    TIMED_OUT -- A new game session was not successfully created before the time limit expired. You can resubmit the placement request as needed.    FAILED -- GameLift is not able to complete the process of placing the game session. Common reasons are the game session terminated before the placement process was completed, or an unexpected internal error.  
+    * Current status of the game session placement request.    PENDING -- The placement request is currently in the queue waiting to be processed.    FULFILLED -- A new game session and player sessions (if requested) have been successfully created. Values for GameSessionArn and GameSessionRegion are available.     CANCELLED -- The placement request was canceled.    TIMED_OUT -- A new game session was not successfully created before the time limit expired. You can resubmit the placement request as needed.    FAILED -- Amazon GameLift is not able to complete the process of placing the game session. Common reasons are the game session terminated before the placement process was completed, or an unexpected internal error.  
     */
   var Status: js.UndefOr[GameSessionPlacementState] = js.undefined
 }

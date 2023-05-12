@@ -1,6 +1,7 @@
 package typings.firebaseFirestore
 
 import org.scalablytyped.runtime.NumberDictionary
+import typings.firebaseFirestore.anon.Target
 import typings.firebaseFirestore.distLiteFirestoreSrcCoreComponentProviderMod.ComponentConfiguration
 import typings.firebaseFirestore.distLiteFirestoreSrcCoreComponentProviderMod.MemoryOfflineComponentProvider
 import typings.firebaseFirestore.distLiteFirestoreSrcCoreComponentProviderMod.MultiTabOfflineComponentProvider
@@ -18,7 +19,6 @@ import typings.firebaseFirestore.distLiteFirestoreSrcLocalSharedClientStateMod.C
 import typings.firebaseFirestore.distLiteFirestoreSrcModelMutationMod.Mutation
 import typings.firebaseFirestore.distLiteFirestoreSrcProtosFirestoreProtoApiMod.ListenRequest
 import typings.firebaseFirestore.distLiteFirestoreSrcProtosFirestoreProtoApiMod.ListenResponse
-import typings.firebaseFirestore.distLiteFirestoreSrcProtosFirestoreProtoApiMod.Target
 import typings.firebaseFirestore.distLiteFirestoreSrcProtosFirestoreProtoApiMod.Timestamp
 import typings.firebaseFirestore.distLiteFirestoreSrcProtosFirestoreProtoApiMod.WriteRequest
 import typings.firebaseFirestore.distLiteFirestoreSrcProtosFirestoreProtoApiMod.WriteResponse
@@ -78,8 +78,8 @@ object distLiteFirestoreTestUnitSpecsSpecTestComponentsMod {
     def ackWrite(commitTime: Timestamp, mutationResults: js.Array[WriteResult]): Unit = js.native
     
     /**
-      * Tracks the currently active watch targets as detected by the mock watch
-      * stream, as a mapping from target ID to query Target.
+      * Tracks the currently active watch targets as detected by the mock watch //
+      * stream, as a mapping from target ID to query Target. //
       */
     var activeTargets: NumberDictionary[Target] = js.native
     
@@ -307,13 +307,13 @@ object distLiteFirestoreTestUnitSpecsSpecTestComponentsMod {
   @JSImport("@firebase/firestore/dist/lite/firestore/test/unit/specs/spec_test_components", "MockMemoryOfflineComponentProvider")
   @js.native
   open class MockMemoryOfflineComponentProvider protected () extends MemoryOfflineComponentProvider {
-    def this(gcEnabled: Boolean) = this()
+    def this(eagerGCEnabled: Boolean) = this()
     
     var connection: MockConnection = js.native
     
     def createGarbageCollectionScheduler(cfg: ComponentConfiguration): Scheduler | Null = js.native
     
-    /* private */ val gcEnabled: Any = js.native
+    /* private */ val eagerGCEnabled: Any = js.native
     
     @JSName("persistence")
     var persistence_MockMemoryOfflineComponentProvider: MockMemoryPersistence = js.native

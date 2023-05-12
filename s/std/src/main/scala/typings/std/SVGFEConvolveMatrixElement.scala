@@ -1,5 +1,9 @@
 package typings.std
 
+import typings.std.stdInts.`0`
+import typings.std.stdInts.`1`
+import typings.std.stdInts.`2`
+import typings.std.stdInts.`3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,16 +16,16 @@ trait SVGFEConvolveMatrixElement
      with SVGFilterPrimitiveStandardAttributes {
   
   /* standard dom */
-  val SVG_EDGEMODE_DUPLICATE: Double = js.native
+  val SVG_EDGEMODE_DUPLICATE: `1` = js.native
   
   /* standard dom */
-  val SVG_EDGEMODE_NONE: Double = js.native
+  val SVG_EDGEMODE_NONE: `3` = js.native
   
   /* standard dom */
-  val SVG_EDGEMODE_UNKNOWN: Double = js.native
+  val SVG_EDGEMODE_UNKNOWN: `0` = js.native
   
   /* standard dom */
-  val SVG_EDGEMODE_WRAP: Double = js.native
+  val SVG_EDGEMODE_WRAP: `2` = js.native
   
   /* InferMemberOverrides */
   override def addEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject): Unit = js.native

@@ -36,6 +36,11 @@ trait CoverageEligibilityRequest
   var enterer: js.UndefOr[Reference] = js.undefined
   
   /**
+    * Information code for an event with a corresponding date or period.
+    */
+  var event: js.UndefOr[js.Array[CoverageEligibilityRequestEvent]] = js.undefined
+  
+  /**
     * Facility where the services are intended to be provided.
     */
   var facility: js.UndefOr[Reference] = js.undefined
@@ -71,7 +76,7 @@ trait CoverageEligibilityRequest
   var priority: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
-    * Typically this field would be 1..1 where this party is responsible for the eligibility request but not necessarily professionally responsible for the provision of the individual products and services listed below.
+    * Typically this field would be 1..1 where this party is accountable for the data content within the claim but is not necessarily the facility, provider group or practitioner who provided the products and services listed within this claim resource. This field is the Billing Provider, for example, a facility, provider group, lab or practitioner.
     */
   var provider: js.UndefOr[Reference] = js.undefined
   
@@ -125,6 +130,12 @@ object CoverageEligibilityRequest {
     inline def setEnterer(value: Reference): Self = StObject.set(x, "enterer", value.asInstanceOf[js.Any])
     
     inline def setEntererUndefined: Self = StObject.set(x, "enterer", js.undefined)
+    
+    inline def setEvent(value: js.Array[CoverageEligibilityRequestEvent]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    
+    inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
+    
+    inline def setEventVarargs(value: CoverageEligibilityRequestEvent*): Self = StObject.set(x, "event", js.Array(value*))
     
     inline def setFacility(value: Reference): Self = StObject.set(x, "facility", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,7 @@ trait RevokeRevisionResponse extends StObject {
   var CreatedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The unique identifier for the data set associated with this revision.
+    * The unique identifier for the data set associated with the data set revision.
     */
   var DataSetId: js.UndefOr[Id] = js.undefined
   

@@ -10,6 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class MergeDeveloperIdentitiesCommand protected ()
   extends typings.awsSdkClientCognitoIdentity.distTypesCommandsMod.MergeDeveloperIdentitiesCommand {
+  /**
+    * @public
+    */
   def this(input: MergeDeveloperIdentitiesCommandInput) = this()
 }
 /* static members */

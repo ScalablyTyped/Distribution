@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jest-regex-util"
-version := "29.2.0-fa4606"
+version := "29.4.3-d2c5e6"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

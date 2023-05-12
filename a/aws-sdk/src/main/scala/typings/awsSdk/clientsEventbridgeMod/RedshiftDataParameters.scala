@@ -12,7 +12,7 @@ trait RedshiftDataParameters extends StObject {
   var Database: typings.awsSdk.clientsEventbridgeMod.Database
   
   /**
-    * The database user name. Required when authenticating using temporary credentials.
+    * The database user name. Required when authenticating using temporary credentials. Do not provide this parameter when connecting to a Redshift Serverless workgroup.
     */
   var DbUser: js.UndefOr[typings.awsSdk.clientsEventbridgeMod.DbUser] = js.undefined
   
@@ -24,7 +24,9 @@ trait RedshiftDataParameters extends StObject {
   /**
     * The SQL statement text to run.
     */
-  var Sql: typings.awsSdk.clientsEventbridgeMod.Sql
+  var Sql: js.UndefOr[typings.awsSdk.clientsEventbridgeMod.Sql] = js.undefined
+  
+  var Sqls: js.UndefOr[typings.awsSdk.clientsEventbridgeMod.Sqls] = js.undefined
   
   /**
     * The name of the SQL statement. You can name the SQL statement when you create it to identify the query.
@@ -38,8 +40,8 @@ trait RedshiftDataParameters extends StObject {
 }
 object RedshiftDataParameters {
   
-  inline def apply(Database: Database, Sql: Sql): RedshiftDataParameters = {
-    val __obj = js.Dynamic.literal(Database = Database.asInstanceOf[js.Any], Sql = Sql.asInstanceOf[js.Any])
+  inline def apply(Database: Database): RedshiftDataParameters = {
+    val __obj = js.Dynamic.literal(Database = Database.asInstanceOf[js.Any])
     __obj.asInstanceOf[RedshiftDataParameters]
   }
   
@@ -57,6 +59,14 @@ object RedshiftDataParameters {
     inline def setSecretManagerArnUndefined: Self = StObject.set(x, "SecretManagerArn", js.undefined)
     
     inline def setSql(value: Sql): Self = StObject.set(x, "Sql", value.asInstanceOf[js.Any])
+    
+    inline def setSqlUndefined: Self = StObject.set(x, "Sql", js.undefined)
+    
+    inline def setSqls(value: Sqls): Self = StObject.set(x, "Sqls", value.asInstanceOf[js.Any])
+    
+    inline def setSqlsUndefined: Self = StObject.set(x, "Sqls", js.undefined)
+    
+    inline def setSqlsVarargs(value: Sql*): Self = StObject.set(x, "Sqls", js.Array(value*))
     
     inline def setStatementName(value: StatementName): Self = StObject.set(x, "StatementName", value.asInstanceOf[js.Any])
     

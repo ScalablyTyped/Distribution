@@ -12,7 +12,7 @@ trait CreateFleetOutput extends StObject {
   var FleetAttributes: js.UndefOr[typings.awsSdk.clientsGameliftMod.FleetAttributes] = js.undefined
   
   /**
-    * The fleet's locations and life-cycle status of each location. For new fleets, the status of all locations is set to NEW. During fleet creation, GameLift updates each location status as instances are deployed there and prepared for game hosting. This list includes an entry for the fleet's home Region. For fleets with no remote locations, only one entry, representing the home Region, is returned.
+    * The fleet's locations and life-cycle status of each location. For new fleets, the status of all locations is set to NEW. During fleet creation, Amazon GameLift updates each location status as instances are deployed there and prepared for game hosting. This list includes an entry for the fleet's home Region. For fleets with no remote locations, only one entry, representing the home Region, is returned.
     */
   var LocationStates: js.UndefOr[LocationStateList] = js.undefined
 }

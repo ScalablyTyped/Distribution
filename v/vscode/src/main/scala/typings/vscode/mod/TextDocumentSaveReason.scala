@@ -14,8 +14,8 @@ object TextDocumentSaveReason extends StObject {
   def apply(value: Double): js.UndefOr[TextDocumentSaveReason & Double] = js.native
   
   /**
-    * Automatic after a delay.
-    */
+  		 * Automatic after a delay.
+  		 */
   @js.native
   sealed trait AfterDelay
     extends StObject
@@ -23,8 +23,8 @@ object TextDocumentSaveReason extends StObject {
   /* 2 */ val AfterDelay: typings.vscode.mod.TextDocumentSaveReason.AfterDelay & Double = js.native
   
   /**
-    * When the editor lost focus.
-    */
+  		 * When the editor lost focus.
+  		 */
   @js.native
   sealed trait FocusOut
     extends StObject
@@ -32,9 +32,9 @@ object TextDocumentSaveReason extends StObject {
   /* 3 */ val FocusOut: typings.vscode.mod.TextDocumentSaveReason.FocusOut & Double = js.native
   
   /**
-    * Manually triggered, e.g. by the user pressing save, by starting debugging,
-    * or by an API call.
-    */
+  		 * Manually triggered, e.g. by the user pressing save, by starting debugging,
+  		 * or by an API call.
+  		 */
   @js.native
   sealed trait Manual
     extends StObject

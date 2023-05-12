@@ -1,7 +1,7 @@
 
 # Scala.js typings for timestamp-nano
 
-Typings are for version 1.0.0
+Typings are for version 1.0.1
 
 ## Library description:
 Timestamp for 64-bit time_t, nanosecond precision and strftime

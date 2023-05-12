@@ -19,7 +19,6 @@ open class NativeFlowCls protected ()
     *     instructions to output to the user. Passed the authorize url.
     * @option {String function()} [prompt] String to output immediately before
     *     waiting for a line from stdin.
-    * @constructor
     */
   def this(options: Any) = this()
   

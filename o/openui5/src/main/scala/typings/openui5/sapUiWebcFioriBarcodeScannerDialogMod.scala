@@ -1,7 +1,7 @@
 package typings.openui5
 
 import typings.openui5.anon.RawBytes
-import typings.openui5.anon.`10`
+import typings.openui5.anon.`12`
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiCoreControlMod.ControlSettings
 import typings.std.Record
@@ -306,6 +306,8 @@ object sapUiWebcFioriBarcodeScannerDialogMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:scanError scanError} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -314,9 +316,11 @@ object sapUiWebcFioriBarcodeScannerDialogMod {
     def fireScanError(/**
       * Parameters to pass along with the event
       */
-    mParameters: `10`): this.type = js.native
+    mParameters: `12`): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:scanSuccess scanSuccess} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining

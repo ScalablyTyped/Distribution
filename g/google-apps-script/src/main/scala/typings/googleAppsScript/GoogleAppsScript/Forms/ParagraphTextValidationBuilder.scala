@@ -31,6 +31,8 @@ trait ParagraphTextValidationBuilder extends StObject {
   def requireTextLengthLessThanOrEqualTo(number: Integer): ParagraphTextValidationBuilder
   
   def requireTextMatchesPattern(pattern: String): ParagraphTextValidationBuilder
+  
+  def setHelpText(text: String): ParagraphTextValidationBuilder
 }
 object ParagraphTextValidationBuilder {
   
@@ -41,9 +43,10 @@ object ParagraphTextValidationBuilder {
     requireTextDoesNotMatchPattern: String => ParagraphTextValidationBuilder,
     requireTextLengthGreaterThanOrEqualTo: Integer => ParagraphTextValidationBuilder,
     requireTextLengthLessThanOrEqualTo: Integer => ParagraphTextValidationBuilder,
-    requireTextMatchesPattern: String => ParagraphTextValidationBuilder
+    requireTextMatchesPattern: String => ParagraphTextValidationBuilder,
+    setHelpText: String => ParagraphTextValidationBuilder
   ): ParagraphTextValidationBuilder = {
-    val __obj = js.Dynamic.literal(build = js.Any.fromFunction0(build), requireTextContainsPattern = js.Any.fromFunction1(requireTextContainsPattern), requireTextDoesNotContainPattern = js.Any.fromFunction1(requireTextDoesNotContainPattern), requireTextDoesNotMatchPattern = js.Any.fromFunction1(requireTextDoesNotMatchPattern), requireTextLengthGreaterThanOrEqualTo = js.Any.fromFunction1(requireTextLengthGreaterThanOrEqualTo), requireTextLengthLessThanOrEqualTo = js.Any.fromFunction1(requireTextLengthLessThanOrEqualTo), requireTextMatchesPattern = js.Any.fromFunction1(requireTextMatchesPattern))
+    val __obj = js.Dynamic.literal(build = js.Any.fromFunction0(build), requireTextContainsPattern = js.Any.fromFunction1(requireTextContainsPattern), requireTextDoesNotContainPattern = js.Any.fromFunction1(requireTextDoesNotContainPattern), requireTextDoesNotMatchPattern = js.Any.fromFunction1(requireTextDoesNotMatchPattern), requireTextLengthGreaterThanOrEqualTo = js.Any.fromFunction1(requireTextLengthGreaterThanOrEqualTo), requireTextLengthLessThanOrEqualTo = js.Any.fromFunction1(requireTextLengthLessThanOrEqualTo), requireTextMatchesPattern = js.Any.fromFunction1(requireTextMatchesPattern), setHelpText = js.Any.fromFunction1(setHelpText))
     __obj.asInstanceOf[ParagraphTextValidationBuilder]
   }
   
@@ -63,5 +66,7 @@ object ParagraphTextValidationBuilder {
     inline def setRequireTextLengthLessThanOrEqualTo(value: Integer => ParagraphTextValidationBuilder): Self = StObject.set(x, "requireTextLengthLessThanOrEqualTo", js.Any.fromFunction1(value))
     
     inline def setRequireTextMatchesPattern(value: String => ParagraphTextValidationBuilder): Self = StObject.set(x, "requireTextMatchesPattern", js.Any.fromFunction1(value))
+    
+    inline def setSetHelpText(value: String => ParagraphTextValidationBuilder): Self = StObject.set(x, "setHelpText", js.Any.fromFunction1(value))
   }
 }

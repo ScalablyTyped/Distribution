@@ -17,7 +17,8 @@ js.Object,
 Props, 
 js.Object, 
 `false`, 
-ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String, js.Object], 
+js.Object, 
 js.Object] */, Props, RawBindings, D, C /* <: ComputedOptions */, M /* <: MethodOptions */]
   extends StObject
      with Instantiable1[/* args (repeated) */ Any, T] {

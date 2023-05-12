@@ -1,7 +1,5 @@
 package typings.webpack.mod
 
-import typings.webpack.anon.Read
-import typings.webpack.anon.Write
 import typings.webpack.anon.namestringundefinedentryO
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -44,7 +42,7 @@ open class AsyncDependenciesBlock protected ()
   var dependencies: js.Array[Dependency] = js.native
   
   /* CompleteClass */
-  override def deserialize(__0: Read): Unit = js.native
+  override def deserialize(__0: ObjectDeserializerContext): Unit = js.native
   
   /* CompleteClass */
   override def getRootBlock(): DependenciesBlock = js.native
@@ -64,7 +62,7 @@ open class AsyncDependenciesBlock protected ()
   var request: js.UndefOr[String] = js.native
   
   /* CompleteClass */
-  override def serialize(__0: Write): Unit = js.native
+  override def serialize(__0: ObjectSerializerContext): Unit = js.native
   
   /* CompleteClass */
   override def updateHash(hash: Hash, context: UpdateHashContextDependency): Unit = js.native

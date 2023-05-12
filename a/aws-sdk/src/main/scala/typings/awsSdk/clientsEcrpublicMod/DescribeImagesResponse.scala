@@ -12,7 +12,7 @@ trait DescribeImagesResponse extends StObject {
   var imageDetails: js.UndefOr[ImageDetailList] = js.undefined
   
   /**
-    * The nextToken value to include in a future DescribeImages request. When the results of a DescribeImages request exceed maxResults, this value can be used to retrieve the next page of results. This value is null when there are no more results to return.
+    * The nextToken value to include in a future DescribeImages request. When the results of a DescribeImages request exceed maxResults, you can use this value to retrieve the next page of results. If there are no more results to return, this value is null.
     */
   var nextToken: js.UndefOr[NextToken] = js.undefined
 }

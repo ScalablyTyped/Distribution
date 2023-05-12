@@ -12,7 +12,7 @@ open class CustomMarker protected ()
   def this(props: MarkerProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: MarkerProps, context: Any) = this()
 }

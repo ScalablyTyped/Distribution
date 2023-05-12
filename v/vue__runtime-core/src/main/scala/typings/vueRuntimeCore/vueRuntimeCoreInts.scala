@@ -20,6 +20,30 @@ object vueRuntimeCoreInts {
   inline def `0`: `0` = 0.asInstanceOf[`0`]
   
   @js.native
+  sealed trait `0x01` extends StObject
+  inline def `0x01`: `0x01` = 0x01.asInstanceOf[`0x01`]
+  
+  @js.native
+  sealed trait `0x02` extends StObject
+  inline def `0x02`: `0x02` = 0x02.asInstanceOf[`0x02`]
+  
+  @js.native
+  sealed trait `0x04` extends StObject
+  inline def `0x04`: `0x04` = 0x04.asInstanceOf[`0x04`]
+  
+  @js.native
+  sealed trait `0x08` extends StObject
+  inline def `0x08`: `0x08` = 0x08.asInstanceOf[`0x08`]
+  
+  @js.native
+  sealed trait `0x10` extends StObject
+  inline def `0x10`: `0x10` = 0x10.asInstanceOf[`0x10`]
+  
+  @js.native
+  sealed trait `0x20` extends StObject
+  inline def `0x20`: `0x20` = 0x20.asInstanceOf[`0x20`]
+  
+  @js.native
   sealed trait `1`
     extends StObject
        with BooleanFlags

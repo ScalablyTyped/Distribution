@@ -19,7 +19,7 @@ object cjsUseIsomorphicEffectMod {
     * @param deps If present, effect will only activate if the values in the list change.
     *
     * @version 16.8.0
-    * @see https://reactjs.org/docs/hooks-reference.html#useeffect
+    * @see https://react.dev/reference/react/useEffect
     */
   /* was `typeof useEffect` */
   inline def default(effect: EffectCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(effect.asInstanceOf[js.Any]).asInstanceOf[Unit]

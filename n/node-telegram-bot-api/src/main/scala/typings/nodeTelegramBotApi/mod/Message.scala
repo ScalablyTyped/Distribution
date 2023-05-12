@@ -20,6 +20,8 @@ trait Message extends StObject {
   
   var chat: Chat
   
+  var chat_shared: js.UndefOr[ChatShared] = js.undefined
+  
   var connected_website: js.UndefOr[String] = js.undefined
   
   var contact: js.UndefOr[Contact] = js.undefined
@@ -35,6 +37,14 @@ trait Message extends StObject {
   var edit_date: js.UndefOr[Double] = js.undefined
   
   var entities: js.UndefOr[js.Array[MessageEntity]] = js.undefined
+  
+  var forum_topic_closed: js.UndefOr[ForumTopicClosed] = js.undefined
+  
+  var forum_topic_created: js.UndefOr[ForumTopicCreated] = js.undefined
+  
+  var forum_topic_edited: js.UndefOr[ForumTopicEdited] = js.undefined
+  
+  var forum_topic_reopened: js.UndefOr[ForumTopicReopened] = js.undefined
   
   var forward_date: js.UndefOr[Double] = js.undefined
   
@@ -52,13 +62,21 @@ trait Message extends StObject {
   
   var game: js.UndefOr[Game] = js.undefined
   
+  var general_forum_topic_hidden: js.UndefOr[GeneralForumTopicHidden] = js.undefined
+  
+  var general_forum_topic_unhidden: js.UndefOr[GeneralForumTopicUnhidden] = js.undefined
+  
   var group_chat_created: js.UndefOr[Boolean] = js.undefined
+  
+  var has_media_spoiler: js.UndefOr[Boolean] = js.undefined
   
   var has_protected_content: js.UndefOr[Boolean] = js.undefined
   
   var invoice: js.UndefOr[Invoice] = js.undefined
   
   var is_automatic_forward: js.UndefOr[Boolean] = js.undefined
+  
+  var is_topic_message: js.UndefOr[Boolean] = js.undefined
   
   var left_chat_member: js.UndefOr[User] = js.undefined
   
@@ -67,6 +85,8 @@ trait Message extends StObject {
   var media_group_id: js.UndefOr[String] = js.undefined
   
   var message_id: Double
+  
+  var message_thread_id: js.UndefOr[Double] = js.undefined
   
   var migrate_from_chat_id: js.UndefOr[Double] = js.undefined
   
@@ -99,6 +119,8 @@ trait Message extends StObject {
   var supergroup_chat_created: js.UndefOr[Boolean] = js.undefined
   
   var text: js.UndefOr[String] = js.undefined
+  
+  var user_shared: js.UndefOr[UserShared] = js.undefined
   
   var venue: js.UndefOr[Venue] = js.undefined
   
@@ -148,6 +170,10 @@ object Message {
     
     inline def setChat(value: Chat): Self = StObject.set(x, "chat", value.asInstanceOf[js.Any])
     
+    inline def setChat_shared(value: ChatShared): Self = StObject.set(x, "chat_shared", value.asInstanceOf[js.Any])
+    
+    inline def setChat_sharedUndefined: Self = StObject.set(x, "chat_shared", js.undefined)
+    
     inline def setConnected_website(value: String): Self = StObject.set(x, "connected_website", value.asInstanceOf[js.Any])
     
     inline def setConnected_websiteUndefined: Self = StObject.set(x, "connected_website", js.undefined)
@@ -179,6 +205,22 @@ object Message {
     inline def setEntitiesUndefined: Self = StObject.set(x, "entities", js.undefined)
     
     inline def setEntitiesVarargs(value: MessageEntity*): Self = StObject.set(x, "entities", js.Array(value*))
+    
+    inline def setForum_topic_closed(value: ForumTopicClosed): Self = StObject.set(x, "forum_topic_closed", value.asInstanceOf[js.Any])
+    
+    inline def setForum_topic_closedUndefined: Self = StObject.set(x, "forum_topic_closed", js.undefined)
+    
+    inline def setForum_topic_created(value: ForumTopicCreated): Self = StObject.set(x, "forum_topic_created", value.asInstanceOf[js.Any])
+    
+    inline def setForum_topic_createdUndefined: Self = StObject.set(x, "forum_topic_created", js.undefined)
+    
+    inline def setForum_topic_edited(value: ForumTopicEdited): Self = StObject.set(x, "forum_topic_edited", value.asInstanceOf[js.Any])
+    
+    inline def setForum_topic_editedUndefined: Self = StObject.set(x, "forum_topic_edited", js.undefined)
+    
+    inline def setForum_topic_reopened(value: ForumTopicReopened): Self = StObject.set(x, "forum_topic_reopened", value.asInstanceOf[js.Any])
+    
+    inline def setForum_topic_reopenedUndefined: Self = StObject.set(x, "forum_topic_reopened", js.undefined)
     
     inline def setForward_date(value: Double): Self = StObject.set(x, "forward_date", value.asInstanceOf[js.Any])
     
@@ -212,9 +254,21 @@ object Message {
     
     inline def setGameUndefined: Self = StObject.set(x, "game", js.undefined)
     
+    inline def setGeneral_forum_topic_hidden(value: GeneralForumTopicHidden): Self = StObject.set(x, "general_forum_topic_hidden", value.asInstanceOf[js.Any])
+    
+    inline def setGeneral_forum_topic_hiddenUndefined: Self = StObject.set(x, "general_forum_topic_hidden", js.undefined)
+    
+    inline def setGeneral_forum_topic_unhidden(value: GeneralForumTopicUnhidden): Self = StObject.set(x, "general_forum_topic_unhidden", value.asInstanceOf[js.Any])
+    
+    inline def setGeneral_forum_topic_unhiddenUndefined: Self = StObject.set(x, "general_forum_topic_unhidden", js.undefined)
+    
     inline def setGroup_chat_created(value: Boolean): Self = StObject.set(x, "group_chat_created", value.asInstanceOf[js.Any])
     
     inline def setGroup_chat_createdUndefined: Self = StObject.set(x, "group_chat_created", js.undefined)
+    
+    inline def setHas_media_spoiler(value: Boolean): Self = StObject.set(x, "has_media_spoiler", value.asInstanceOf[js.Any])
+    
+    inline def setHas_media_spoilerUndefined: Self = StObject.set(x, "has_media_spoiler", js.undefined)
     
     inline def setHas_protected_content(value: Boolean): Self = StObject.set(x, "has_protected_content", value.asInstanceOf[js.Any])
     
@@ -227,6 +281,10 @@ object Message {
     inline def setIs_automatic_forward(value: Boolean): Self = StObject.set(x, "is_automatic_forward", value.asInstanceOf[js.Any])
     
     inline def setIs_automatic_forwardUndefined: Self = StObject.set(x, "is_automatic_forward", js.undefined)
+    
+    inline def setIs_topic_message(value: Boolean): Self = StObject.set(x, "is_topic_message", value.asInstanceOf[js.Any])
+    
+    inline def setIs_topic_messageUndefined: Self = StObject.set(x, "is_topic_message", js.undefined)
     
     inline def setLeft_chat_member(value: User): Self = StObject.set(x, "left_chat_member", value.asInstanceOf[js.Any])
     
@@ -241,6 +299,10 @@ object Message {
     inline def setMedia_group_idUndefined: Self = StObject.set(x, "media_group_id", js.undefined)
     
     inline def setMessage_id(value: Double): Self = StObject.set(x, "message_id", value.asInstanceOf[js.Any])
+    
+    inline def setMessage_thread_id(value: Double): Self = StObject.set(x, "message_thread_id", value.asInstanceOf[js.Any])
+    
+    inline def setMessage_thread_idUndefined: Self = StObject.set(x, "message_thread_id", js.undefined)
     
     inline def setMigrate_from_chat_id(value: Double): Self = StObject.set(x, "migrate_from_chat_id", value.asInstanceOf[js.Any])
     
@@ -311,6 +373,10 @@ object Message {
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    
+    inline def setUser_shared(value: UserShared): Self = StObject.set(x, "user_shared", value.asInstanceOf[js.Any])
+    
+    inline def setUser_sharedUndefined: Self = StObject.set(x, "user_shared", js.undefined)
     
     inline def setVenue(value: Venue): Self = StObject.set(x, "venue", value.asInstanceOf[js.Any])
     

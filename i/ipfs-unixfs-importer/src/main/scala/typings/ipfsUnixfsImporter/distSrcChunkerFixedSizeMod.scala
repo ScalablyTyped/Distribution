@@ -1,7 +1,6 @@
 package typings.ipfsUnixfsImporter
 
-import typings.ipfsUnixfsImporter.distSrcTypesMod.ImporterOptions
-import typings.std.AsyncIterable
+import typings.ipfsUnixfsImporter.distSrcChunkerMod.Chunker
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,8 +11,26 @@ object distSrcChunkerFixedSizeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  /**
-    * @type {import('../types').Chunker}
-    */
-  inline def default(source: AsyncIterable[js.typedarray.Uint8Array], options: ImporterOptions): AsyncIterable[js.typedarray.Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AsyncIterable[js.typedarray.Uint8Array]]
+  inline def fixedSize(): Chunker = ^.asInstanceOf[js.Dynamic].applyDynamic("fixedSize")().asInstanceOf[Chunker]
+  inline def fixedSize(options: FixedSizeOptions): Chunker = ^.asInstanceOf[js.Dynamic].applyDynamic("fixedSize")(options.asInstanceOf[js.Any]).asInstanceOf[Chunker]
+  
+  trait FixedSizeOptions extends StObject {
+    
+    var chunkSize: js.UndefOr[Double] = js.undefined
+  }
+  object FixedSizeOptions {
+    
+    inline def apply(): FixedSizeOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[FixedSizeOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FixedSizeOptions] (val x: Self) extends AnyVal {
+      
+      inline def setChunkSize(value: Double): Self = StObject.set(x, "chunkSize", value.asInstanceOf[js.Any])
+      
+      inline def setChunkSizeUndefined: Self = StObject.set(x, "chunkSize", js.undefined)
+    }
+  }
 }

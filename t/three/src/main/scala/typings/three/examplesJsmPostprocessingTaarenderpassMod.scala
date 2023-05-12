@@ -1,9 +1,9 @@
 package typings.three
 
 import typings.three.examplesJsmPostprocessingSsaarenderpassMod.SSAARenderPass
+import typings.three.srcMathColorMod.ColorRepresentation
 import typings.three.srcThreeMod.Camera
 import typings.three.srcThreeMod.Scene
-import typings.three.srcUtilsMod.ColorRepresentation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

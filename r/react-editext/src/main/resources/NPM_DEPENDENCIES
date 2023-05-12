@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-editext" : "5.1.0"
+      "react-editext" : "6.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "react-editext" : "5.1.0"
+      "react-editext" : "6.0.0"
     }
   ],
   "compile-devDependencies" : [

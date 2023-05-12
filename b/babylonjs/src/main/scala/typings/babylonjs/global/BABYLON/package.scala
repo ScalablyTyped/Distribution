@@ -10,6 +10,7 @@ import typings.babylonjs.BABYLON.EnvironmentTextureInfoV2
 import typings.babylonjs.BABYLON.FloatArray
 import typings.babylonjs.BABYLON.GoldbergCreationOption
 import typings.babylonjs.BABYLON.GoldbergVertexDataOption
+import typings.babylonjs.BABYLON.IClipPlanesHolder
 import typings.babylonjs.BABYLON.ICreateCapsuleOptions
 import typings.babylonjs.BABYLON.IEditablePropertyOption
 import typings.babylonjs.BABYLON.IFileRequest
@@ -79,6 +80,7 @@ import typings.std.HTMLImageElement
 import typings.std.ImageBitmap
 import typings.std.ImageBitmapOptions
 import typings.std.ProgressEvent
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -117,9 +119,125 @@ inline def ApplyPostProcess(
   internalTexture: typings.babylonjs.BABYLON.InternalTexture,
   scene: typings.babylonjs.BABYLON.Scene,
   `type`: Double,
+  samplingMode: Double,
+  format: Double,
+  width: Double
+): js.Promise[typings.babylonjs.BABYLON.InternalTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("ApplyPostProcess")(postProcessName.asInstanceOf[js.Any], internalTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], format.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.InternalTexture]]
+inline def ApplyPostProcess(
+  postProcessName: String,
+  internalTexture: typings.babylonjs.BABYLON.InternalTexture,
+  scene: typings.babylonjs.BABYLON.Scene,
+  `type`: Double,
+  samplingMode: Double,
+  format: Double,
+  width: Double,
+  height: Double
+): js.Promise[typings.babylonjs.BABYLON.InternalTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("ApplyPostProcess")(postProcessName.asInstanceOf[js.Any], internalTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], format.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.InternalTexture]]
+inline def ApplyPostProcess(
+  postProcessName: String,
+  internalTexture: typings.babylonjs.BABYLON.InternalTexture,
+  scene: typings.babylonjs.BABYLON.Scene,
+  `type`: Double,
+  samplingMode: Double,
+  format: Double,
+  width: Unit,
+  height: Double
+): js.Promise[typings.babylonjs.BABYLON.InternalTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("ApplyPostProcess")(postProcessName.asInstanceOf[js.Any], internalTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], format.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.InternalTexture]]
+inline def ApplyPostProcess(
+  postProcessName: String,
+  internalTexture: typings.babylonjs.BABYLON.InternalTexture,
+  scene: typings.babylonjs.BABYLON.Scene,
+  `type`: Double,
+  samplingMode: Double,
+  format: Unit,
+  width: Double
+): js.Promise[typings.babylonjs.BABYLON.InternalTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("ApplyPostProcess")(postProcessName.asInstanceOf[js.Any], internalTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], format.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.InternalTexture]]
+inline def ApplyPostProcess(
+  postProcessName: String,
+  internalTexture: typings.babylonjs.BABYLON.InternalTexture,
+  scene: typings.babylonjs.BABYLON.Scene,
+  `type`: Double,
+  samplingMode: Double,
+  format: Unit,
+  width: Double,
+  height: Double
+): js.Promise[typings.babylonjs.BABYLON.InternalTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("ApplyPostProcess")(postProcessName.asInstanceOf[js.Any], internalTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], format.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.InternalTexture]]
+inline def ApplyPostProcess(
+  postProcessName: String,
+  internalTexture: typings.babylonjs.BABYLON.InternalTexture,
+  scene: typings.babylonjs.BABYLON.Scene,
+  `type`: Double,
+  samplingMode: Double,
+  format: Unit,
+  width: Unit,
+  height: Double
+): js.Promise[typings.babylonjs.BABYLON.InternalTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("ApplyPostProcess")(postProcessName.asInstanceOf[js.Any], internalTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], format.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.InternalTexture]]
+inline def ApplyPostProcess(
+  postProcessName: String,
+  internalTexture: typings.babylonjs.BABYLON.InternalTexture,
+  scene: typings.babylonjs.BABYLON.Scene,
+  `type`: Double,
   samplingMode: Unit,
   format: Double
 ): js.Promise[typings.babylonjs.BABYLON.InternalTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("ApplyPostProcess")(postProcessName.asInstanceOf[js.Any], internalTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.InternalTexture]]
+inline def ApplyPostProcess(
+  postProcessName: String,
+  internalTexture: typings.babylonjs.BABYLON.InternalTexture,
+  scene: typings.babylonjs.BABYLON.Scene,
+  `type`: Double,
+  samplingMode: Unit,
+  format: Double,
+  width: Double
+): js.Promise[typings.babylonjs.BABYLON.InternalTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("ApplyPostProcess")(postProcessName.asInstanceOf[js.Any], internalTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], format.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.InternalTexture]]
+inline def ApplyPostProcess(
+  postProcessName: String,
+  internalTexture: typings.babylonjs.BABYLON.InternalTexture,
+  scene: typings.babylonjs.BABYLON.Scene,
+  `type`: Double,
+  samplingMode: Unit,
+  format: Double,
+  width: Double,
+  height: Double
+): js.Promise[typings.babylonjs.BABYLON.InternalTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("ApplyPostProcess")(postProcessName.asInstanceOf[js.Any], internalTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], format.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.InternalTexture]]
+inline def ApplyPostProcess(
+  postProcessName: String,
+  internalTexture: typings.babylonjs.BABYLON.InternalTexture,
+  scene: typings.babylonjs.BABYLON.Scene,
+  `type`: Double,
+  samplingMode: Unit,
+  format: Double,
+  width: Unit,
+  height: Double
+): js.Promise[typings.babylonjs.BABYLON.InternalTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("ApplyPostProcess")(postProcessName.asInstanceOf[js.Any], internalTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], format.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.InternalTexture]]
+inline def ApplyPostProcess(
+  postProcessName: String,
+  internalTexture: typings.babylonjs.BABYLON.InternalTexture,
+  scene: typings.babylonjs.BABYLON.Scene,
+  `type`: Double,
+  samplingMode: Unit,
+  format: Unit,
+  width: Double
+): js.Promise[typings.babylonjs.BABYLON.InternalTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("ApplyPostProcess")(postProcessName.asInstanceOf[js.Any], internalTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], format.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.InternalTexture]]
+inline def ApplyPostProcess(
+  postProcessName: String,
+  internalTexture: typings.babylonjs.BABYLON.InternalTexture,
+  scene: typings.babylonjs.BABYLON.Scene,
+  `type`: Double,
+  samplingMode: Unit,
+  format: Unit,
+  width: Double,
+  height: Double
+): js.Promise[typings.babylonjs.BABYLON.InternalTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("ApplyPostProcess")(postProcessName.asInstanceOf[js.Any], internalTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], format.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.InternalTexture]]
+inline def ApplyPostProcess(
+  postProcessName: String,
+  internalTexture: typings.babylonjs.BABYLON.InternalTexture,
+  scene: typings.babylonjs.BABYLON.Scene,
+  `type`: Double,
+  samplingMode: Unit,
+  format: Unit,
+  width: Unit,
+  height: Double
+): js.Promise[typings.babylonjs.BABYLON.InternalTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("ApplyPostProcess")(postProcessName.asInstanceOf[js.Any], internalTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], format.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.InternalTexture]]
 inline def ApplyPostProcess(
   postProcessName: String,
   internalTexture: typings.babylonjs.BABYLON.InternalTexture,
@@ -140,9 +258,125 @@ inline def ApplyPostProcess(
   internalTexture: typings.babylonjs.BABYLON.InternalTexture,
   scene: typings.babylonjs.BABYLON.Scene,
   `type`: Unit,
+  samplingMode: Double,
+  format: Double,
+  width: Double
+): js.Promise[typings.babylonjs.BABYLON.InternalTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("ApplyPostProcess")(postProcessName.asInstanceOf[js.Any], internalTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], format.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.InternalTexture]]
+inline def ApplyPostProcess(
+  postProcessName: String,
+  internalTexture: typings.babylonjs.BABYLON.InternalTexture,
+  scene: typings.babylonjs.BABYLON.Scene,
+  `type`: Unit,
+  samplingMode: Double,
+  format: Double,
+  width: Double,
+  height: Double
+): js.Promise[typings.babylonjs.BABYLON.InternalTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("ApplyPostProcess")(postProcessName.asInstanceOf[js.Any], internalTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], format.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.InternalTexture]]
+inline def ApplyPostProcess(
+  postProcessName: String,
+  internalTexture: typings.babylonjs.BABYLON.InternalTexture,
+  scene: typings.babylonjs.BABYLON.Scene,
+  `type`: Unit,
+  samplingMode: Double,
+  format: Double,
+  width: Unit,
+  height: Double
+): js.Promise[typings.babylonjs.BABYLON.InternalTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("ApplyPostProcess")(postProcessName.asInstanceOf[js.Any], internalTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], format.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.InternalTexture]]
+inline def ApplyPostProcess(
+  postProcessName: String,
+  internalTexture: typings.babylonjs.BABYLON.InternalTexture,
+  scene: typings.babylonjs.BABYLON.Scene,
+  `type`: Unit,
+  samplingMode: Double,
+  format: Unit,
+  width: Double
+): js.Promise[typings.babylonjs.BABYLON.InternalTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("ApplyPostProcess")(postProcessName.asInstanceOf[js.Any], internalTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], format.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.InternalTexture]]
+inline def ApplyPostProcess(
+  postProcessName: String,
+  internalTexture: typings.babylonjs.BABYLON.InternalTexture,
+  scene: typings.babylonjs.BABYLON.Scene,
+  `type`: Unit,
+  samplingMode: Double,
+  format: Unit,
+  width: Double,
+  height: Double
+): js.Promise[typings.babylonjs.BABYLON.InternalTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("ApplyPostProcess")(postProcessName.asInstanceOf[js.Any], internalTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], format.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.InternalTexture]]
+inline def ApplyPostProcess(
+  postProcessName: String,
+  internalTexture: typings.babylonjs.BABYLON.InternalTexture,
+  scene: typings.babylonjs.BABYLON.Scene,
+  `type`: Unit,
+  samplingMode: Double,
+  format: Unit,
+  width: Unit,
+  height: Double
+): js.Promise[typings.babylonjs.BABYLON.InternalTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("ApplyPostProcess")(postProcessName.asInstanceOf[js.Any], internalTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], format.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.InternalTexture]]
+inline def ApplyPostProcess(
+  postProcessName: String,
+  internalTexture: typings.babylonjs.BABYLON.InternalTexture,
+  scene: typings.babylonjs.BABYLON.Scene,
+  `type`: Unit,
   samplingMode: Unit,
   format: Double
 ): js.Promise[typings.babylonjs.BABYLON.InternalTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("ApplyPostProcess")(postProcessName.asInstanceOf[js.Any], internalTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.InternalTexture]]
+inline def ApplyPostProcess(
+  postProcessName: String,
+  internalTexture: typings.babylonjs.BABYLON.InternalTexture,
+  scene: typings.babylonjs.BABYLON.Scene,
+  `type`: Unit,
+  samplingMode: Unit,
+  format: Double,
+  width: Double
+): js.Promise[typings.babylonjs.BABYLON.InternalTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("ApplyPostProcess")(postProcessName.asInstanceOf[js.Any], internalTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], format.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.InternalTexture]]
+inline def ApplyPostProcess(
+  postProcessName: String,
+  internalTexture: typings.babylonjs.BABYLON.InternalTexture,
+  scene: typings.babylonjs.BABYLON.Scene,
+  `type`: Unit,
+  samplingMode: Unit,
+  format: Double,
+  width: Double,
+  height: Double
+): js.Promise[typings.babylonjs.BABYLON.InternalTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("ApplyPostProcess")(postProcessName.asInstanceOf[js.Any], internalTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], format.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.InternalTexture]]
+inline def ApplyPostProcess(
+  postProcessName: String,
+  internalTexture: typings.babylonjs.BABYLON.InternalTexture,
+  scene: typings.babylonjs.BABYLON.Scene,
+  `type`: Unit,
+  samplingMode: Unit,
+  format: Double,
+  width: Unit,
+  height: Double
+): js.Promise[typings.babylonjs.BABYLON.InternalTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("ApplyPostProcess")(postProcessName.asInstanceOf[js.Any], internalTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], format.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.InternalTexture]]
+inline def ApplyPostProcess(
+  postProcessName: String,
+  internalTexture: typings.babylonjs.BABYLON.InternalTexture,
+  scene: typings.babylonjs.BABYLON.Scene,
+  `type`: Unit,
+  samplingMode: Unit,
+  format: Unit,
+  width: Double
+): js.Promise[typings.babylonjs.BABYLON.InternalTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("ApplyPostProcess")(postProcessName.asInstanceOf[js.Any], internalTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], format.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.InternalTexture]]
+inline def ApplyPostProcess(
+  postProcessName: String,
+  internalTexture: typings.babylonjs.BABYLON.InternalTexture,
+  scene: typings.babylonjs.BABYLON.Scene,
+  `type`: Unit,
+  samplingMode: Unit,
+  format: Unit,
+  width: Double,
+  height: Double
+): js.Promise[typings.babylonjs.BABYLON.InternalTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("ApplyPostProcess")(postProcessName.asInstanceOf[js.Any], internalTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], format.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.InternalTexture]]
+inline def ApplyPostProcess(
+  postProcessName: String,
+  internalTexture: typings.babylonjs.BABYLON.InternalTexture,
+  scene: typings.babylonjs.BABYLON.Scene,
+  `type`: Unit,
+  samplingMode: Unit,
+  format: Unit,
+  width: Unit,
+  height: Double
+): js.Promise[typings.babylonjs.BABYLON.InternalTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("ApplyPostProcess")(postProcessName.asInstanceOf[js.Any], internalTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], format.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.babylonjs.BABYLON.InternalTexture]]
 
 inline def BabylonLoaderRegistered: Boolean = ^.asInstanceOf[js.Dynamic].selectDynamic("_BabylonLoaderRegistered").asInstanceOf[Boolean]
 inline def BabylonLoaderRegistered_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_BabylonLoaderRegistered")(x.asInstanceOf[js.Any])
@@ -664,8 +898,9 @@ inline def CreateScreenshotUsingRenderTarget(
   antialiasing: js.UndefOr[Boolean],
   fileName: js.UndefOr[String],
   renderSprites: js.UndefOr[Boolean],
-  enableStencilBuffer: js.UndefOr[Boolean]
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateScreenshotUsingRenderTarget")(engine.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], size.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], samples.asInstanceOf[js.Any], antialiasing.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], renderSprites.asInstanceOf[js.Any], enableStencilBuffer.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  enableStencilBuffer: js.UndefOr[Boolean],
+  useLayerMask: js.UndefOr[Boolean]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateScreenshotUsingRenderTarget")(engine.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], size.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], samples.asInstanceOf[js.Any], antialiasing.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], renderSprites.asInstanceOf[js.Any], enableStencilBuffer.asInstanceOf[js.Any], useLayerMask.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
 inline def CreateScreenshotUsingRenderTargetAsync(
   engine: typings.babylonjs.BABYLON.Engine,
@@ -675,8 +910,10 @@ inline def CreateScreenshotUsingRenderTargetAsync(
   samples: js.UndefOr[Double],
   antialiasing: js.UndefOr[Boolean],
   fileName: js.UndefOr[String],
-  renderSprites: js.UndefOr[Boolean]
-): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateScreenshotUsingRenderTargetAsync")(engine.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], size.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], samples.asInstanceOf[js.Any], antialiasing.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], renderSprites.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  renderSprites: js.UndefOr[Boolean],
+  enableStencilBuffer: js.UndefOr[Boolean],
+  useLayerMask: js.UndefOr[Boolean]
+): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateScreenshotUsingRenderTargetAsync")(engine.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], size.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], samples.asInstanceOf[js.Any], antialiasing.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], renderSprites.asInstanceOf[js.Any], enableStencilBuffer.asInstanceOf[js.Any], useLayerMask.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
 
 inline def CreateScreenshotWithResizeAsync(
   engine: typings.babylonjs.BABYLON.Engine,
@@ -1090,6 +1327,8 @@ inline def UploadLevelsAsync(
 
 inline def WarnImport(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("_WarnImport")(name.asInstanceOf[js.Any]).asInstanceOf[String]
 
+inline def addClipPlaneUniforms(uniforms: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addClipPlaneUniforms")(uniforms.asInstanceOf[js.Any]).asInstanceOf[Unit]
+
 inline def allocateAndCopyTypedBuffer(`type`: Double, sizeOrDstBuffer: js.typedarray.ArrayBuffer): js.typedarray.ArrayBufferView = (^.asInstanceOf[js.Dynamic].applyDynamic("allocateAndCopyTypedBuffer")(`type`.asInstanceOf[js.Any], sizeOrDstBuffer.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.ArrayBufferView]
 inline def allocateAndCopyTypedBuffer(`type`: Double, sizeOrDstBuffer: js.typedarray.ArrayBuffer, sizeInBytes: Boolean): js.typedarray.ArrayBufferView = (^.asInstanceOf[js.Dynamic].applyDynamic("allocateAndCopyTypedBuffer")(`type`.asInstanceOf[js.Any], sizeOrDstBuffer.asInstanceOf[js.Any], sizeInBytes.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.ArrayBufferView]
 inline def allocateAndCopyTypedBuffer(
@@ -1113,6 +1352,12 @@ inline def allocateAndCopyTypedBuffer(
   copyBuffer: js.typedarray.ArrayBuffer
 ): js.typedarray.ArrayBufferView = (^.asInstanceOf[js.Dynamic].applyDynamic("allocateAndCopyTypedBuffer")(`type`.asInstanceOf[js.Any], sizeOrDstBuffer.asInstanceOf[js.Any], sizeInBytes.asInstanceOf[js.Any], copyBuffer.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.ArrayBufferView]
 inline def allocateAndCopyTypedBuffer(`type`: Double, sizeOrDstBuffer: Double, sizeInBytes: Unit, copyBuffer: js.typedarray.ArrayBuffer): js.typedarray.ArrayBufferView = (^.asInstanceOf[js.Dynamic].applyDynamic("allocateAndCopyTypedBuffer")(`type`.asInstanceOf[js.Any], sizeOrDstBuffer.asInstanceOf[js.Any], sizeInBytes.asInstanceOf[js.Any], copyBuffer.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.ArrayBufferView]
+
+inline def bindClipPlane(
+  effect: typings.babylonjs.BABYLON.Effect,
+  primaryHolder: IClipPlanesHolder,
+  secondaryHolder: IClipPlanesHolder
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("bindClipPlane")(effect.asInstanceOf[js.Any], primaryHolder.asInstanceOf[js.Any], secondaryHolder.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
 inline def className(name: String): js.Function1[/* target */ js.Object, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("className")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* target */ js.Object, Unit]]
 inline def className(name: String, module: String): js.Function1[/* target */ js.Object, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("className")(name.asInstanceOf[js.Any], module.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* target */ js.Object, Unit]]
@@ -1377,6 +1622,10 @@ inline def makeSyncFunction[TParams /* <: js.Array[Any] */, TReturn](coroutineFa
 inline def makeSyncFunction[TParams /* <: js.Array[Any] */, TReturn](coroutineFactory: js.Function1[/* params */ TParams, Coroutine[TReturn]], abortSignal: AbortSignal): js.Function1[/* params */ TParams, TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("makeSyncFunction")(coroutineFactory.asInstanceOf[js.Any], abortSignal.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* params */ TParams, TReturn]]
 
 inline def normalizeEnvInfo(info: EnvironmentTextureInfo): EnvironmentTextureInfoV2 = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeEnvInfo")(info.asInstanceOf[js.Any]).asInstanceOf[EnvironmentTextureInfoV2]
+
+inline def prepareDefinesForClipPlanes(primaryHolder: IClipPlanesHolder, secondaryHolder: IClipPlanesHolder, defines: Record[String, Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("prepareDefinesForClipPlanes")(primaryHolder.asInstanceOf[js.Any], secondaryHolder.asInstanceOf[js.Any], defines.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+
+inline def prepareStringDefinesForClipPlanes(primaryHolder: IClipPlanesHolder, secondaryHolder: IClipPlanesHolder, defines: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("prepareStringDefinesForClipPlanes")(primaryHolder.asInstanceOf[js.Any], secondaryHolder.asInstanceOf[js.Any], defines.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
 inline def runCoroutine[T](
   coroutine: AsyncCoroutine[T],

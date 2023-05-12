@@ -1,7 +1,7 @@
 
 # Scala.js typings for ipfs-grpc-server
 
-Typings are for version 0.11.0
+Typings are for version 0.12.0
 
 ## Library description:
 A server library for the IPFS gRPC API

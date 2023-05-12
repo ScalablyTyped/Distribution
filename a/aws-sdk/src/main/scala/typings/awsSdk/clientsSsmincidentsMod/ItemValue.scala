@@ -17,6 +17,11 @@ trait ItemValue extends StObject {
   var metricDefinition: js.UndefOr[MetricDefinition] = js.undefined
   
   /**
+    * Details about an incident that is associated with a PagerDuty incident.
+    */
+  var pagerDutyIncidentDetail: js.UndefOr[PagerDutyIncidentDetail] = js.undefined
+  
+  /**
     * The URL, if the related item is a non-Amazon Web Services resource.
     */
   var url: js.UndefOr[Url] = js.undefined
@@ -38,6 +43,10 @@ object ItemValue {
     inline def setMetricDefinition(value: MetricDefinition): Self = StObject.set(x, "metricDefinition", value.asInstanceOf[js.Any])
     
     inline def setMetricDefinitionUndefined: Self = StObject.set(x, "metricDefinition", js.undefined)
+    
+    inline def setPagerDutyIncidentDetail(value: PagerDutyIncidentDetail): Self = StObject.set(x, "pagerDutyIncidentDetail", value.asInstanceOf[js.Any])
+    
+    inline def setPagerDutyIncidentDetailUndefined: Self = StObject.set(x, "pagerDutyIncidentDetail", js.undefined)
     
     inline def setUrl(value: Url): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     

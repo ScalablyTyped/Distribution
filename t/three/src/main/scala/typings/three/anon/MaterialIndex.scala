@@ -6,10 +6,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait MaterialIndex extends StObject {
   
+  /**
+    * Specifies how many vertices (or indices) are included.
+    * @remarks Expects a `Integer`
+    */
   var count: Double
   
+  /**
+    * Specifies the material array index to use.
+    * @remarks Expects a `Integer`
+    */
   var materialIndex: js.UndefOr[Double] = js.undefined
   
+  /**
+    * Specifies the first element in this draw call – the first vertex for non-indexed geometry, otherwise the first triangle index.
+    * @remarks Expects a `Integer`
+    */
   var start: Double
 }
 object MaterialIndex {

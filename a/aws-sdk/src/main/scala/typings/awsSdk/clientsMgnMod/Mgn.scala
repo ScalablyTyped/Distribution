@@ -12,6 +12,59 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Mgn extends Service {
   
   /**
+    * Archive application.
+    */
+  def archiveApplication(): Request[Application, AWSError] = js.native
+  def archiveApplication(callback: js.Function2[/* err */ AWSError, /* data */ Application, Unit]): Request[Application, AWSError] = js.native
+  /**
+    * Archive application.
+    */
+  def archiveApplication(params: ArchiveApplicationRequest): Request[Application, AWSError] = js.native
+  def archiveApplication(
+    params: ArchiveApplicationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ Application, Unit]
+  ): Request[Application, AWSError] = js.native
+  
+  /**
+    * Archive wave.
+    */
+  def archiveWave(): Request[Wave, AWSError] = js.native
+  def archiveWave(callback: js.Function2[/* err */ AWSError, /* data */ Wave, Unit]): Request[Wave, AWSError] = js.native
+  /**
+    * Archive wave.
+    */
+  def archiveWave(params: ArchiveWaveRequest): Request[Wave, AWSError] = js.native
+  def archiveWave(params: ArchiveWaveRequest, callback: js.Function2[/* err */ AWSError, /* data */ Wave, Unit]): Request[Wave, AWSError] = js.native
+  
+  /**
+    * Associate applications to wave.
+    */
+  def associateApplications(): Request[AssociateApplicationsResponse, AWSError] = js.native
+  def associateApplications(callback: js.Function2[/* err */ AWSError, /* data */ AssociateApplicationsResponse, Unit]): Request[AssociateApplicationsResponse, AWSError] = js.native
+  /**
+    * Associate applications to wave.
+    */
+  def associateApplications(params: AssociateApplicationsRequest): Request[AssociateApplicationsResponse, AWSError] = js.native
+  def associateApplications(
+    params: AssociateApplicationsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ AssociateApplicationsResponse, Unit]
+  ): Request[AssociateApplicationsResponse, AWSError] = js.native
+  
+  /**
+    * Associate source servers to application.
+    */
+  def associateSourceServers(): Request[AssociateSourceServersResponse, AWSError] = js.native
+  def associateSourceServers(callback: js.Function2[/* err */ AWSError, /* data */ AssociateSourceServersResponse, Unit]): Request[AssociateSourceServersResponse, AWSError] = js.native
+  /**
+    * Associate source servers to application.
+    */
+  def associateSourceServers(params: AssociateSourceServersRequest): Request[AssociateSourceServersResponse, AWSError] = js.native
+  def associateSourceServers(
+    params: AssociateSourceServersRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ AssociateSourceServersResponse, Unit]
+  ): Request[AssociateSourceServersResponse, AWSError] = js.native
+  
+  /**
     * Allows the user to set the SourceServer.LifeCycle.state property for specific Source Server IDs to one of the following: READY_FOR_TEST or READY_FOR_CUTOVER. This command only works if the Source Server is already launchable (dataReplicationInfo.lagDuration is not null.)
     */
   def changeServerLifeCycleState(): Request[SourceServer, AWSError] = js.native
@@ -29,12 +82,26 @@ trait Mgn extends Service {
   var config_Mgn: ConfigBase & ClientConfiguration = js.native
   
   /**
-    * Creates a new ReplicationConfigurationTemplate.
+    * Create application.
+    */
+  def createApplication(): Request[Application, AWSError] = js.native
+  def createApplication(callback: js.Function2[/* err */ AWSError, /* data */ Application, Unit]): Request[Application, AWSError] = js.native
+  /**
+    * Create application.
+    */
+  def createApplication(params: CreateApplicationRequest): Request[Application, AWSError] = js.native
+  def createApplication(
+    params: CreateApplicationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ Application, Unit]
+  ): Request[Application, AWSError] = js.native
+  
+  /**
+    * Creates a new Launch Configuration Template.
     */
   def createLaunchConfigurationTemplate(): Request[LaunchConfigurationTemplate, AWSError] = js.native
   def createLaunchConfigurationTemplate(callback: js.Function2[/* err */ AWSError, /* data */ LaunchConfigurationTemplate, Unit]): Request[LaunchConfigurationTemplate, AWSError] = js.native
   /**
-    * Creates a new ReplicationConfigurationTemplate.
+    * Creates a new Launch Configuration Template.
     */
   def createLaunchConfigurationTemplate(params: CreateLaunchConfigurationTemplateRequest): Request[LaunchConfigurationTemplate, AWSError] = js.native
   def createLaunchConfigurationTemplate(
@@ -57,6 +124,31 @@ trait Mgn extends Service {
   ): Request[ReplicationConfigurationTemplate, AWSError] = js.native
   
   /**
+    * Create wave.
+    */
+  def createWave(): Request[Wave, AWSError] = js.native
+  def createWave(callback: js.Function2[/* err */ AWSError, /* data */ Wave, Unit]): Request[Wave, AWSError] = js.native
+  /**
+    * Create wave.
+    */
+  def createWave(params: CreateWaveRequest): Request[Wave, AWSError] = js.native
+  def createWave(params: CreateWaveRequest, callback: js.Function2[/* err */ AWSError, /* data */ Wave, Unit]): Request[Wave, AWSError] = js.native
+  
+  /**
+    * Delete application.
+    */
+  def deleteApplication(): Request[DeleteApplicationResponse, AWSError] = js.native
+  def deleteApplication(callback: js.Function2[/* err */ AWSError, /* data */ DeleteApplicationResponse, Unit]): Request[DeleteApplicationResponse, AWSError] = js.native
+  /**
+    * Delete application.
+    */
+  def deleteApplication(params: DeleteApplicationRequest): Request[DeleteApplicationResponse, AWSError] = js.native
+  def deleteApplication(
+    params: DeleteApplicationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteApplicationResponse, Unit]
+  ): Request[DeleteApplicationResponse, AWSError] = js.native
+  
+  /**
     * Deletes a single Job by ID.
     */
   def deleteJob(): Request[DeleteJobResponse, AWSError] = js.native
@@ -71,14 +163,14 @@ trait Mgn extends Service {
   ): Request[DeleteJobResponse, AWSError] = js.native
   
   /**
-    * Creates a new ReplicationConfigurationTemplate.
+    * Deletes a single Launch Configuration Template by ID.
     */
   def deleteLaunchConfigurationTemplate(): Request[DeleteLaunchConfigurationTemplateResponse, AWSError] = js.native
   def deleteLaunchConfigurationTemplate(
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteLaunchConfigurationTemplateResponse, Unit]
   ): Request[DeleteLaunchConfigurationTemplateResponse, AWSError] = js.native
   /**
-    * Creates a new ReplicationConfigurationTemplate.
+    * Deletes a single Launch Configuration Template by ID.
     */
   def deleteLaunchConfigurationTemplate(params: DeleteLaunchConfigurationTemplateRequest): Request[DeleteLaunchConfigurationTemplateResponse, AWSError] = js.native
   def deleteLaunchConfigurationTemplate(
@@ -131,6 +223,20 @@ trait Mgn extends Service {
   ): Request[js.Object, AWSError] = js.native
   
   /**
+    * Delete wave.
+    */
+  def deleteWave(): Request[DeleteWaveResponse, AWSError] = js.native
+  def deleteWave(callback: js.Function2[/* err */ AWSError, /* data */ DeleteWaveResponse, Unit]): Request[DeleteWaveResponse, AWSError] = js.native
+  /**
+    * Delete wave.
+    */
+  def deleteWave(params: DeleteWaveRequest): Request[DeleteWaveResponse, AWSError] = js.native
+  def deleteWave(
+    params: DeleteWaveRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteWaveResponse, Unit]
+  ): Request[DeleteWaveResponse, AWSError] = js.native
+  
+  /**
     * Retrieves detailed job log items with paging.
     */
   def describeJobLogItems(): Request[DescribeJobLogItemsResponse, AWSError] = js.native
@@ -159,14 +265,14 @@ trait Mgn extends Service {
   ): Request[DescribeJobsResponse, AWSError] = js.native
   
   /**
-    * Creates a new ReplicationConfigurationTemplate.
+    * Lists all Launch Configuration Templates, filtered by Launch Configuration Template IDs
     */
   def describeLaunchConfigurationTemplates(): Request[DescribeLaunchConfigurationTemplatesResponse, AWSError] = js.native
   def describeLaunchConfigurationTemplates(
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeLaunchConfigurationTemplatesResponse, Unit]
   ): Request[DescribeLaunchConfigurationTemplatesResponse, AWSError] = js.native
   /**
-    * Creates a new ReplicationConfigurationTemplate.
+    * Lists all Launch Configuration Templates, filtered by Launch Configuration Template IDs
     */
   def describeLaunchConfigurationTemplates(params: DescribeLaunchConfigurationTemplatesRequest): Request[DescribeLaunchConfigurationTemplatesResponse, AWSError] = js.native
   def describeLaunchConfigurationTemplates(
@@ -225,6 +331,34 @@ trait Mgn extends Service {
     params: DescribeVcenterClientsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeVcenterClientsResponse, Unit]
   ): Request[DescribeVcenterClientsResponse, AWSError] = js.native
+  
+  /**
+    * Disassociate applications from wave.
+    */
+  def disassociateApplications(): Request[DisassociateApplicationsResponse, AWSError] = js.native
+  def disassociateApplications(callback: js.Function2[/* err */ AWSError, /* data */ DisassociateApplicationsResponse, Unit]): Request[DisassociateApplicationsResponse, AWSError] = js.native
+  /**
+    * Disassociate applications from wave.
+    */
+  def disassociateApplications(params: DisassociateApplicationsRequest): Request[DisassociateApplicationsResponse, AWSError] = js.native
+  def disassociateApplications(
+    params: DisassociateApplicationsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DisassociateApplicationsResponse, Unit]
+  ): Request[DisassociateApplicationsResponse, AWSError] = js.native
+  
+  /**
+    * Disassociate source servers from application.
+    */
+  def disassociateSourceServers(): Request[DisassociateSourceServersResponse, AWSError] = js.native
+  def disassociateSourceServers(callback: js.Function2[/* err */ AWSError, /* data */ DisassociateSourceServersResponse, Unit]): Request[DisassociateSourceServersResponse, AWSError] = js.native
+  /**
+    * Disassociate source servers from application.
+    */
+  def disassociateSourceServers(params: DisassociateSourceServersRequest): Request[DisassociateSourceServersResponse, AWSError] = js.native
+  def disassociateSourceServers(
+    params: DisassociateSourceServersRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DisassociateSourceServersResponse, Unit]
+  ): Request[DisassociateSourceServersResponse, AWSError] = js.native
   
   /**
     * Disconnects specific Source Servers from Application Migration Service. Data replication is stopped immediately. All AWS resources created by Application Migration Service for enabling the replication of these source servers will be terminated / deleted within 90 minutes. Launched Test or Cutover instances will NOT be terminated. If the agent on the source server has not been prevented from communicating with the Application Migration Service service, then it will receive a command to uninstall itself (within approximately 10 minutes). The following properties of the SourceServer will be changed immediately: dataReplicationInfo.dataReplicationState will be set to DISCONNECTED; The totalStorageBytes property for each of dataReplicationInfo.replicatedDisks will be set to zero; dataReplicationInfo.lagDuration and dataReplicationInfo.lagDuration will be nullified.
@@ -297,6 +431,90 @@ trait Mgn extends Service {
   ): Request[InitializeServiceResponse, AWSError] = js.native
   
   /**
+    * Retrieves all applications or multiple applications by ID.
+    */
+  def listApplications(): Request[ListApplicationsResponse, AWSError] = js.native
+  def listApplications(callback: js.Function2[/* err */ AWSError, /* data */ ListApplicationsResponse, Unit]): Request[ListApplicationsResponse, AWSError] = js.native
+  /**
+    * Retrieves all applications or multiple applications by ID.
+    */
+  def listApplications(params: ListApplicationsRequest): Request[ListApplicationsResponse, AWSError] = js.native
+  def listApplications(
+    params: ListApplicationsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListApplicationsResponse, Unit]
+  ): Request[ListApplicationsResponse, AWSError] = js.native
+  
+  /**
+    * List export errors.
+    */
+  def listExportErrors(): Request[ListExportErrorsResponse, AWSError] = js.native
+  def listExportErrors(callback: js.Function2[/* err */ AWSError, /* data */ ListExportErrorsResponse, Unit]): Request[ListExportErrorsResponse, AWSError] = js.native
+  /**
+    * List export errors.
+    */
+  def listExportErrors(params: ListExportErrorsRequest): Request[ListExportErrorsResponse, AWSError] = js.native
+  def listExportErrors(
+    params: ListExportErrorsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListExportErrorsResponse, Unit]
+  ): Request[ListExportErrorsResponse, AWSError] = js.native
+  
+  /**
+    * List exports.
+    */
+  def listExports(): Request[ListExportsResponse, AWSError] = js.native
+  def listExports(callback: js.Function2[/* err */ AWSError, /* data */ ListExportsResponse, Unit]): Request[ListExportsResponse, AWSError] = js.native
+  /**
+    * List exports.
+    */
+  def listExports(params: ListExportsRequest): Request[ListExportsResponse, AWSError] = js.native
+  def listExports(
+    params: ListExportsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListExportsResponse, Unit]
+  ): Request[ListExportsResponse, AWSError] = js.native
+  
+  /**
+    * List import errors.
+    */
+  def listImportErrors(): Request[ListImportErrorsResponse, AWSError] = js.native
+  def listImportErrors(callback: js.Function2[/* err */ AWSError, /* data */ ListImportErrorsResponse, Unit]): Request[ListImportErrorsResponse, AWSError] = js.native
+  /**
+    * List import errors.
+    */
+  def listImportErrors(params: ListImportErrorsRequest): Request[ListImportErrorsResponse, AWSError] = js.native
+  def listImportErrors(
+    params: ListImportErrorsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListImportErrorsResponse, Unit]
+  ): Request[ListImportErrorsResponse, AWSError] = js.native
+  
+  /**
+    * List imports.
+    */
+  def listImports(): Request[ListImportsResponse, AWSError] = js.native
+  def listImports(callback: js.Function2[/* err */ AWSError, /* data */ ListImportsResponse, Unit]): Request[ListImportsResponse, AWSError] = js.native
+  /**
+    * List imports.
+    */
+  def listImports(params: ListImportsRequest): Request[ListImportsResponse, AWSError] = js.native
+  def listImports(
+    params: ListImportsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListImportsResponse, Unit]
+  ): Request[ListImportsResponse, AWSError] = js.native
+  
+  /**
+    * List source server post migration custom actions.
+    */
+  def listSourceServerActions(): Request[ListSourceServerActionsResponse, AWSError] = js.native
+  def listSourceServerActions(callback: js.Function2[/* err */ AWSError, /* data */ ListSourceServerActionsResponse, Unit]): Request[ListSourceServerActionsResponse, AWSError] = js.native
+  /**
+    * List source server post migration custom actions.
+    */
+  def listSourceServerActions(params: ListSourceServerActionsRequest): Request[ListSourceServerActionsResponse, AWSError] = js.native
+  def listSourceServerActions(
+    params: ListSourceServerActionsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListSourceServerActionsResponse, Unit]
+  ): Request[ListSourceServerActionsResponse, AWSError] = js.native
+  
+  /**
     * List all tags for your Application Migration Service resources.
     */
   def listTagsForResource(): Request[ListTagsForResourceResponse, AWSError] = js.native
@@ -311,6 +529,34 @@ trait Mgn extends Service {
   ): Request[ListTagsForResourceResponse, AWSError] = js.native
   
   /**
+    * List template post migration custom actions.
+    */
+  def listTemplateActions(): Request[ListTemplateActionsResponse, AWSError] = js.native
+  def listTemplateActions(callback: js.Function2[/* err */ AWSError, /* data */ ListTemplateActionsResponse, Unit]): Request[ListTemplateActionsResponse, AWSError] = js.native
+  /**
+    * List template post migration custom actions.
+    */
+  def listTemplateActions(params: ListTemplateActionsRequest): Request[ListTemplateActionsResponse, AWSError] = js.native
+  def listTemplateActions(
+    params: ListTemplateActionsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListTemplateActionsResponse, Unit]
+  ): Request[ListTemplateActionsResponse, AWSError] = js.native
+  
+  /**
+    * Retrieves all waves or multiple waves by ID.
+    */
+  def listWaves(): Request[ListWavesResponse, AWSError] = js.native
+  def listWaves(callback: js.Function2[/* err */ AWSError, /* data */ ListWavesResponse, Unit]): Request[ListWavesResponse, AWSError] = js.native
+  /**
+    * Retrieves all waves or multiple waves by ID.
+    */
+  def listWaves(params: ListWavesRequest): Request[ListWavesResponse, AWSError] = js.native
+  def listWaves(
+    params: ListWavesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListWavesResponse, Unit]
+  ): Request[ListWavesResponse, AWSError] = js.native
+  
+  /**
     * Archives specific Source Servers by setting the SourceServer.isArchived property to true for specified SourceServers by ID. This command only works for SourceServers with a lifecycle. state which equals DISCONNECTED or CUTOVER.
     */
   def markAsArchived(): Request[SourceServer, AWSError] = js.native
@@ -323,6 +569,62 @@ trait Mgn extends Service {
     params: MarkAsArchivedRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ SourceServer, Unit]
   ): Request[SourceServer, AWSError] = js.native
+  
+  /**
+    * Put source server post migration custom action.
+    */
+  def putSourceServerAction(): Request[SourceServerActionDocument, AWSError] = js.native
+  def putSourceServerAction(callback: js.Function2[/* err */ AWSError, /* data */ SourceServerActionDocument, Unit]): Request[SourceServerActionDocument, AWSError] = js.native
+  /**
+    * Put source server post migration custom action.
+    */
+  def putSourceServerAction(params: PutSourceServerActionRequest): Request[SourceServerActionDocument, AWSError] = js.native
+  def putSourceServerAction(
+    params: PutSourceServerActionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ SourceServerActionDocument, Unit]
+  ): Request[SourceServerActionDocument, AWSError] = js.native
+  
+  /**
+    * Put template post migration custom action.
+    */
+  def putTemplateAction(): Request[TemplateActionDocument, AWSError] = js.native
+  def putTemplateAction(callback: js.Function2[/* err */ AWSError, /* data */ TemplateActionDocument, Unit]): Request[TemplateActionDocument, AWSError] = js.native
+  /**
+    * Put template post migration custom action.
+    */
+  def putTemplateAction(params: PutTemplateActionRequest): Request[TemplateActionDocument, AWSError] = js.native
+  def putTemplateAction(
+    params: PutTemplateActionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ TemplateActionDocument, Unit]
+  ): Request[TemplateActionDocument, AWSError] = js.native
+  
+  /**
+    * Remove source server post migration custom action.
+    */
+  def removeSourceServerAction(): Request[RemoveSourceServerActionResponse, AWSError] = js.native
+  def removeSourceServerAction(callback: js.Function2[/* err */ AWSError, /* data */ RemoveSourceServerActionResponse, Unit]): Request[RemoveSourceServerActionResponse, AWSError] = js.native
+  /**
+    * Remove source server post migration custom action.
+    */
+  def removeSourceServerAction(params: RemoveSourceServerActionRequest): Request[RemoveSourceServerActionResponse, AWSError] = js.native
+  def removeSourceServerAction(
+    params: RemoveSourceServerActionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ RemoveSourceServerActionResponse, Unit]
+  ): Request[RemoveSourceServerActionResponse, AWSError] = js.native
+  
+  /**
+    * Remove template post migration custom action.
+    */
+  def removeTemplateAction(): Request[RemoveTemplateActionResponse, AWSError] = js.native
+  def removeTemplateAction(callback: js.Function2[/* err */ AWSError, /* data */ RemoveTemplateActionResponse, Unit]): Request[RemoveTemplateActionResponse, AWSError] = js.native
+  /**
+    * Remove template post migration custom action.
+    */
+  def removeTemplateAction(params: RemoveTemplateActionRequest): Request[RemoveTemplateActionResponse, AWSError] = js.native
+  def removeTemplateAction(
+    params: RemoveTemplateActionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ RemoveTemplateActionResponse, Unit]
+  ): Request[RemoveTemplateActionResponse, AWSError] = js.native
   
   /**
     * Causes the data replication initiation sequence to begin immediately upon next Handshake for specified SourceServer IDs, regardless of when the previous initiation started. This command will not work if the SourceServer is not stalled or is in a DISCONNECTED or STOPPED state.
@@ -351,6 +653,34 @@ trait Mgn extends Service {
     params: StartCutoverRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ StartCutoverResponse, Unit]
   ): Request[StartCutoverResponse, AWSError] = js.native
+  
+  /**
+    * Start export.
+    */
+  def startExport(): Request[StartExportResponse, AWSError] = js.native
+  def startExport(callback: js.Function2[/* err */ AWSError, /* data */ StartExportResponse, Unit]): Request[StartExportResponse, AWSError] = js.native
+  /**
+    * Start export.
+    */
+  def startExport(params: StartExportRequest): Request[StartExportResponse, AWSError] = js.native
+  def startExport(
+    params: StartExportRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ StartExportResponse, Unit]
+  ): Request[StartExportResponse, AWSError] = js.native
+  
+  /**
+    * Start import.
+    */
+  def startImport(): Request[StartImportResponse, AWSError] = js.native
+  def startImport(callback: js.Function2[/* err */ AWSError, /* data */ StartImportResponse, Unit]): Request[StartImportResponse, AWSError] = js.native
+  /**
+    * Start import.
+    */
+  def startImport(params: StartImportRequest): Request[StartImportResponse, AWSError] = js.native
+  def startImport(
+    params: StartImportRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ StartImportResponse, Unit]
+  ): Request[StartImportResponse, AWSError] = js.native
   
   /**
     * Starts replication for SNAPSHOT_SHIPPING agents.
@@ -406,6 +736,31 @@ trait Mgn extends Service {
   ): Request[TerminateTargetInstancesResponse, AWSError] = js.native
   
   /**
+    * Unarchive application.
+    */
+  def unarchiveApplication(): Request[Application, AWSError] = js.native
+  def unarchiveApplication(callback: js.Function2[/* err */ AWSError, /* data */ Application, Unit]): Request[Application, AWSError] = js.native
+  /**
+    * Unarchive application.
+    */
+  def unarchiveApplication(params: UnarchiveApplicationRequest): Request[Application, AWSError] = js.native
+  def unarchiveApplication(
+    params: UnarchiveApplicationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ Application, Unit]
+  ): Request[Application, AWSError] = js.native
+  
+  /**
+    * Unarchive wave.
+    */
+  def unarchiveWave(): Request[Wave, AWSError] = js.native
+  def unarchiveWave(callback: js.Function2[/* err */ AWSError, /* data */ Wave, Unit]): Request[Wave, AWSError] = js.native
+  /**
+    * Unarchive wave.
+    */
+  def unarchiveWave(params: UnarchiveWaveRequest): Request[Wave, AWSError] = js.native
+  def unarchiveWave(params: UnarchiveWaveRequest, callback: js.Function2[/* err */ AWSError, /* data */ Wave, Unit]): Request[Wave, AWSError] = js.native
+  
+  /**
     * Deletes the specified set of tags from the specified set of Application Migration Service resources.
     */
   def untagResource(): Request[js.Object, AWSError] = js.native
@@ -418,6 +773,20 @@ trait Mgn extends Service {
     params: UntagResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Update application.
+    */
+  def updateApplication(): Request[Application, AWSError] = js.native
+  def updateApplication(callback: js.Function2[/* err */ AWSError, /* data */ Application, Unit]): Request[Application, AWSError] = js.native
+  /**
+    * Update application.
+    */
+  def updateApplication(params: UpdateApplicationRequest): Request[Application, AWSError] = js.native
+  def updateApplication(
+    params: UpdateApplicationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ Application, Unit]
+  ): Request[Application, AWSError] = js.native
   
   /**
     * Updates multiple LaunchConfigurations by Source Server ID.
@@ -434,12 +803,12 @@ trait Mgn extends Service {
   ): Request[LaunchConfiguration, AWSError] = js.native
   
   /**
-    * Creates a new ReplicationConfigurationTemplate.
+    * Updates an existing Launch Configuration Template by ID.
     */
   def updateLaunchConfigurationTemplate(): Request[LaunchConfigurationTemplate, AWSError] = js.native
   def updateLaunchConfigurationTemplate(callback: js.Function2[/* err */ AWSError, /* data */ LaunchConfigurationTemplate, Unit]): Request[LaunchConfigurationTemplate, AWSError] = js.native
   /**
-    * Creates a new ReplicationConfigurationTemplate.
+    * Updates an existing Launch Configuration Template by ID.
     */
   def updateLaunchConfigurationTemplate(params: UpdateLaunchConfigurationTemplateRequest): Request[LaunchConfigurationTemplate, AWSError] = js.native
   def updateLaunchConfigurationTemplate(
@@ -488,4 +857,15 @@ trait Mgn extends Service {
     params: UpdateSourceServerReplicationTypeRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ SourceServer, Unit]
   ): Request[SourceServer, AWSError] = js.native
+  
+  /**
+    * Update wave.
+    */
+  def updateWave(): Request[Wave, AWSError] = js.native
+  def updateWave(callback: js.Function2[/* err */ AWSError, /* data */ Wave, Unit]): Request[Wave, AWSError] = js.native
+  /**
+    * Update wave.
+    */
+  def updateWave(params: UpdateWaveRequest): Request[Wave, AWSError] = js.native
+  def updateWave(params: UpdateWaveRequest, callback: js.Function2[/* err */ AWSError, /* data */ Wave, Unit]): Request[Wave, AWSError] = js.native
 }

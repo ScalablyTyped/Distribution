@@ -5,8 +5,8 @@ import typings.angularCore.mod.ɵɵFactoryDeclaration
 import typings.angularForms.angularFormsBooleans.`false`
 import typings.angularForms.angularFormsStrings.`[formGroupName]`
 import typings.angularForms.anon.Host
+import typings.angularForms.anon.Name5
 import typings.angularForms.anon.Self
-import typings.angularForms.anon.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -33,22 +33,24 @@ object FormGroupName {
     FormGroupName, 
     `[formGroupName]`, 
     scala.Nothing, 
-    `2`, 
+    Name5, 
     js.Object, 
     scala.Nothing, 
     scala.Nothing, 
-    `false`
+    `false`, 
+    scala.Nothing
   ] = js.native
   inline def ɵdir_=(
     x: ɵɵDirectiveDeclaration[
       FormGroupName, 
       `[formGroupName]`, 
       scala.Nothing, 
-      `2`, 
+      Name5, 
       js.Object, 
       scala.Nothing, 
       scala.Nothing, 
-      `false`
+      `false`, 
+      scala.Nothing
     ]
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275dir")(x.asInstanceOf[js.Any])
   

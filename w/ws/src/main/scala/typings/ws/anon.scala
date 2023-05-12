@@ -2,11 +2,28 @@ package typings.ws
 
 import typings.node.bufferMod.global.Buffer
 import typings.node.httpMod.IncomingMessage
+import typings.ws.mod._BufferLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
+  
+  trait `0`
+    extends StObject
+       with _BufferLike
+  
+  trait `1`
+    extends StObject
+       with _BufferLike
+  
+  trait `2`
+    extends StObject
+       with _BufferLike
+  
+  trait `3`
+    extends StObject
+       with _BufferLike
   
   trait Binary extends StObject {
     
@@ -142,37 +159,50 @@ object anon {
     }
   }
   
+  @js.native
+  trait ToPrimitive
+    extends StObject
+       with _BufferLike {
+    
+    @JSName(js.Symbol.toPrimitive)
+    var toPrimitive: js.Function1[/* hint */ String, String] = js.native
+  }
+  
   trait TypeofWebSocket extends StObject {
     
     /* standard dom */
-    val CLOSED: Double
+    val CLOSED: typings.ws.wsInts.`3`
     
     /* standard dom */
-    val CLOSING: Double
+    val CLOSING: typings.ws.wsInts.`2`
     
     /* standard dom */
-    val CONNECTING: Double
+    val CONNECTING: typings.ws.wsInts.`0`
     
     /* standard dom */
-    val OPEN: Double
+    val OPEN: typings.ws.wsInts.`1`
   }
   object TypeofWebSocket {
     
-    inline def apply(CLOSED: Double, CLOSING: Double, CONNECTING: Double, OPEN: Double): TypeofWebSocket = {
-      val __obj = js.Dynamic.literal(CLOSED = CLOSED.asInstanceOf[js.Any], CLOSING = CLOSING.asInstanceOf[js.Any], CONNECTING = CONNECTING.asInstanceOf[js.Any], OPEN = OPEN.asInstanceOf[js.Any])
+    inline def apply(): TypeofWebSocket = {
+      val __obj = js.Dynamic.literal(CLOSED = 3, CLOSING = 2, CONNECTING = 0, OPEN = 1)
       __obj.asInstanceOf[TypeofWebSocket]
     }
     
     @scala.inline
     implicit open class MutableBuilder[Self <: TypeofWebSocket] (val x: Self) extends AnyVal {
       
-      inline def setCLOSED(value: Double): Self = StObject.set(x, "CLOSED", value.asInstanceOf[js.Any])
+      inline def setCLOSED(value: typings.ws.wsInts.`3`): Self = StObject.set(x, "CLOSED", value.asInstanceOf[js.Any])
       
-      inline def setCLOSING(value: Double): Self = StObject.set(x, "CLOSING", value.asInstanceOf[js.Any])
+      inline def setCLOSING(value: typings.ws.wsInts.`2`): Self = StObject.set(x, "CLOSING", value.asInstanceOf[js.Any])
       
-      inline def setCONNECTING(value: Double): Self = StObject.set(x, "CONNECTING", value.asInstanceOf[js.Any])
+      inline def setCONNECTING(value: typings.ws.wsInts.`0`): Self = StObject.set(x, "CONNECTING", value.asInstanceOf[js.Any])
       
-      inline def setOPEN(value: Double): Self = StObject.set(x, "OPEN", value.asInstanceOf[js.Any])
+      inline def setOPEN(value: typings.ws.wsInts.`1`): Self = StObject.set(x, "OPEN", value.asInstanceOf[js.Any])
     }
   }
+  
+  trait ValueOf
+    extends StObject
+       with _BufferLike
 }

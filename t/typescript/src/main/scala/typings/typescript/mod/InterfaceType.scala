@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/** Class and interface types (ObjectFlags.Class and ObjectFlags.Interface). */
 trait InterfaceType
   extends StObject
      with ObjectType {

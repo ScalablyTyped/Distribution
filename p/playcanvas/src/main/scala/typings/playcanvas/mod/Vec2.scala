@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * array will be used to populate all components.
   * @param {number} [y] - The y value. Defaults to 0.
   * @example
-  * var v = new pc.Vec2(1, 2);
+  * const v = new pc.Vec2(1, 2);
   */
 open class Vec2 () extends StObject {
   def this(x: js.Array[Double]) = this()
@@ -31,8 +31,8 @@ open class Vec2 () extends StObject {
     * @param {Vec2} rhs - The vector to add to the specified vector.
     * @returns {Vec2} Self for chaining.
     * @example
-    * var a = new pc.Vec2(10, 10);
-    * var b = new pc.Vec2(20, 20);
+    * const a = new pc.Vec2(10, 10);
+    * const b = new pc.Vec2(20, 20);
     *
     * a.add(b);
     *
@@ -48,9 +48,9 @@ open class Vec2 () extends StObject {
     * @param {Vec2} rhs - The second vector operand for the addition.
     * @returns {Vec2} Self for chaining.
     * @example
-    * var a = new pc.Vec2(10, 10);
-    * var b = new pc.Vec2(20, 20);
-    * var r = new pc.Vec2();
+    * const a = new pc.Vec2(10, 10);
+    * const b = new pc.Vec2(20, 20);
+    * const r = new pc.Vec2();
     *
     * r.add2(a, b);
     * // Outputs [30, 30]
@@ -65,7 +65,7 @@ open class Vec2 () extends StObject {
     * @param {number} scalar - The number to add.
     * @returns {Vec2} Self for chaining.
     * @example
-    * var vec = new pc.Vec2(3, 4);
+    * const vec = new pc.Vec2(3, 4);
     *
     * vec.addScalar(2);
     *
@@ -87,8 +87,8 @@ open class Vec2 () extends StObject {
     * @param {Vec2} rhs - A vector to copy to the specified vector.
     * @returns {Vec2} Self for chaining.
     * @example
-    * var src = new pc.Vec2(10, 20);
-    * var dst = new pc.Vec2();
+    * const src = new pc.Vec2(10, 20);
+    * const dst = new pc.Vec2();
     *
     * dst.copy(src);
     *
@@ -103,9 +103,9 @@ open class Vec2 () extends StObject {
     * @param {Vec2} rhs - The second 2-dimensional vector operand of the cross product.
     * @returns {number} The cross product of the two vectors.
     * @example
-    * var right = new pc.Vec2(1, 0);
-    * var up = new pc.Vec2(0, 1);
-    * var crossProduct = right.cross(up);
+    * const right = new pc.Vec2(1, 0);
+    * const up = new pc.Vec2(0, 1);
+    * const crossProduct = right.cross(up);
     *
     * // Prints 1
     * console.log("The result of the cross product is: " + crossProduct);
@@ -118,9 +118,9 @@ open class Vec2 () extends StObject {
     * @param {Vec2} rhs - The second 2-dimensional vector to test.
     * @returns {number} The distance between the two vectors.
     * @example
-    * var v1 = new pc.Vec2(5, 10);
-    * var v2 = new pc.Vec2(10, 20);
-    * var d = v1.distance(v2);
+    * const v1 = new pc.Vec2(5, 10);
+    * const v2 = new pc.Vec2(10, 20);
+    * const d = v1.distance(v2);
     * console.log("The distance between v1 and v2 is: " + d);
     */
   def distance(rhs: Vec2): Double = js.native
@@ -131,8 +131,8 @@ open class Vec2 () extends StObject {
     * @param {Vec2} rhs - The vector to divide the specified vector by.
     * @returns {Vec2} Self for chaining.
     * @example
-    * var a = new pc.Vec2(4, 9);
-    * var b = new pc.Vec2(2, 3);
+    * const a = new pc.Vec2(4, 9);
+    * const b = new pc.Vec2(2, 3);
     *
     * a.div(b);
     *
@@ -148,9 +148,9 @@ open class Vec2 () extends StObject {
     * @param {Vec2} rhs - The divisor vector (the vector dividing the dividend).
     * @returns {Vec2} Self for chaining.
     * @example
-    * var a = new pc.Vec2(4, 9);
-    * var b = new pc.Vec2(2, 3);
-    * var r = new pc.Vec2();
+    * const a = new pc.Vec2(4, 9);
+    * const b = new pc.Vec2(2, 3);
+    * const r = new pc.Vec2();
     *
     * r.div2(a, b);
     * // Outputs [2, 3]
@@ -165,7 +165,7 @@ open class Vec2 () extends StObject {
     * @param {number} scalar - The number to divide by.
     * @returns {Vec2} Self for chaining.
     * @example
-    * var vec = new pc.Vec2(3, 6);
+    * const vec = new pc.Vec2(3, 6);
     *
     * vec.divScalar(3);
     *
@@ -181,9 +181,9 @@ open class Vec2 () extends StObject {
     * @param {Vec2} rhs - The second 2-dimensional vector operand of the dot product.
     * @returns {number} The result of the dot product operation.
     * @example
-    * var v1 = new pc.Vec2(5, 10);
-    * var v2 = new pc.Vec2(10, 20);
-    * var v1dotv2 = v1.dot(v2);
+    * const v1 = new pc.Vec2(5, 10);
+    * const v2 = new pc.Vec2(10, 20);
+    * const v1dotv2 = v1.dot(v2);
     * console.log("The result of the dot product is: " + v1dotv2);
     */
   def dot(rhs: Vec2): Double = js.native
@@ -194,8 +194,8 @@ open class Vec2 () extends StObject {
     * @param {Vec2} rhs - The vector to compare to the specified vector.
     * @returns {boolean} True if the vectors are equal and false otherwise.
     * @example
-    * var a = new pc.Vec2(1, 2);
-    * var b = new pc.Vec2(4, 5);
+    * const a = new pc.Vec2(1, 2);
+    * const b = new pc.Vec2(4, 5);
     * console.log("The two vectors are " + (a.equals(b) ? "equal" : "different"));
     */
   def equals(rhs: Vec2): Boolean = js.native
@@ -212,8 +212,8 @@ open class Vec2 () extends StObject {
     *
     * @returns {number} The magnitude of the specified 2-dimensional vector.
     * @example
-    * var vec = new pc.Vec2(3, 4);
-    * var len = vec.length();
+    * const vec = new pc.Vec2(3, 4);
+    * const len = vec.length();
     * // Outputs 5
     * console.log("The length of the vector is: " + len);
     */
@@ -224,8 +224,8 @@ open class Vec2 () extends StObject {
     *
     * @returns {number} The magnitude of the specified 2-dimensional vector.
     * @example
-    * var vec = new pc.Vec2(3, 4);
-    * var len = vec.lengthSq();
+    * const vec = new pc.Vec2(3, 4);
+    * const len = vec.lengthSq();
     * // Outputs 25
     * console.log("The length squared of the vector is: " + len);
     */
@@ -241,9 +241,9 @@ open class Vec2 () extends StObject {
     * range, the linear interpolant will occur on a ray extrapolated from this line.
     * @returns {Vec2} Self for chaining.
     * @example
-    * var a = new pc.Vec2(0, 0);
-    * var b = new pc.Vec2(10, 10);
-    * var r = new pc.Vec2();
+    * const a = new pc.Vec2(0, 0);
+    * const b = new pc.Vec2(10, 10);
+    * const r = new pc.Vec2();
     *
     * r.lerp(a, b, 0);   // r is equal to a
     * r.lerp(a, b, 0.5); // r is 5, 5
@@ -273,8 +273,8 @@ open class Vec2 () extends StObject {
     * @param {Vec2} rhs - The 2-dimensional vector used as the second multiplicand of the operation.
     * @returns {Vec2} Self for chaining.
     * @example
-    * var a = new pc.Vec2(2, 3);
-    * var b = new pc.Vec2(4, 5);
+    * const a = new pc.Vec2(2, 3);
+    * const b = new pc.Vec2(4, 5);
     *
     * a.mul(b);
     *
@@ -290,9 +290,9 @@ open class Vec2 () extends StObject {
     * @param {Vec2} rhs - The 2-dimensional vector used as the second multiplicand of the operation.
     * @returns {Vec2} Self for chaining.
     * @example
-    * var a = new pc.Vec2(2, 3);
-    * var b = new pc.Vec2(4, 5);
-    * var r = new pc.Vec2();
+    * const a = new pc.Vec2(2, 3);
+    * const b = new pc.Vec2(4, 5);
+    * const r = new pc.Vec2();
     *
     * r.mul2(a, b);
     *
@@ -307,7 +307,7 @@ open class Vec2 () extends StObject {
     * @param {number} scalar - The number to multiply by.
     * @returns {Vec2} Self for chaining.
     * @example
-    * var vec = new pc.Vec2(3, 6);
+    * const vec = new pc.Vec2(3, 6);
     *
     * vec.mulScalar(3);
     *
@@ -322,7 +322,7 @@ open class Vec2 () extends StObject {
     *
     * @returns {Vec2} Self for chaining.
     * @example
-    * var v = new pc.Vec2(25, 0);
+    * const v = new pc.Vec2(25, 0);
     *
     * v.normalize();
     *
@@ -345,7 +345,7 @@ open class Vec2 () extends StObject {
     * @param {number} y - The value to set on the second component of the vector.
     * @returns {Vec2} Self for chaining.
     * @example
-    * var v = new pc.Vec2();
+    * const v = new pc.Vec2();
     * v.set(5, 10);
     *
     * // Outputs 5, 10
@@ -359,8 +359,8 @@ open class Vec2 () extends StObject {
     * @param {Vec2} rhs - The vector to subtract from the specified vector.
     * @returns {Vec2} Self for chaining.
     * @example
-    * var a = new pc.Vec2(10, 10);
-    * var b = new pc.Vec2(20, 20);
+    * const a = new pc.Vec2(10, 10);
+    * const b = new pc.Vec2(20, 20);
     *
     * a.sub(b);
     *
@@ -376,9 +376,9 @@ open class Vec2 () extends StObject {
     * @param {Vec2} rhs - The second vector operand for the subtraction.
     * @returns {Vec2} Self for chaining.
     * @example
-    * var a = new pc.Vec2(10, 10);
-    * var b = new pc.Vec2(20, 20);
-    * var r = new pc.Vec2();
+    * const a = new pc.Vec2(10, 10);
+    * const b = new pc.Vec2(20, 20);
+    * const r = new pc.Vec2();
     *
     * r.sub2(a, b);
     *
@@ -393,7 +393,7 @@ open class Vec2 () extends StObject {
     * @param {number} scalar - The number to subtract.
     * @returns {Vec2} Self for chaining.
     * @example
-    * var vec = new pc.Vec2(3, 4);
+    * const vec = new pc.Vec2(3, 4);
     *
     * vec.subScalar(2);
     *

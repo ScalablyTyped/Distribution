@@ -2,6 +2,7 @@ package typings.devtoolsProtocol.mod.Protocol.Debugger
 
 import typings.devtoolsProtocol.devtoolsProtocolStrings.BlockedByActiveFunction
 import typings.devtoolsProtocol.devtoolsProtocolStrings.BlockedByActiveGenerator
+import typings.devtoolsProtocol.devtoolsProtocolStrings.BlockedByTopLevelEsModuleChange
 import typings.devtoolsProtocol.devtoolsProtocolStrings.CompileError
 import typings.devtoolsProtocol.devtoolsProtocolStrings.Ok
 import typings.devtoolsProtocol.mod.Protocol.Runtime.ExceptionDetails
@@ -43,11 +44,13 @@ trait SetScriptSourceResponse extends StObject {
     * successful live edit while the other enum variants denote why
     * the live edit failed. (SetScriptSourceResponseStatus enum)
     */
-  var status: Ok | CompileError | BlockedByActiveGenerator | BlockedByActiveFunction
+  var status: Ok | CompileError | BlockedByActiveGenerator | BlockedByActiveFunction | BlockedByTopLevelEsModuleChange
 }
 object SetScriptSourceResponse {
   
-  inline def apply(status: Ok | CompileError | BlockedByActiveGenerator | BlockedByActiveFunction): SetScriptSourceResponse = {
+  inline def apply(
+    status: Ok | CompileError | BlockedByActiveGenerator | BlockedByActiveFunction | BlockedByTopLevelEsModuleChange
+  ): SetScriptSourceResponse = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetScriptSourceResponse]
   }
@@ -77,6 +80,8 @@ object SetScriptSourceResponse {
     
     inline def setStackChangedUndefined: Self = StObject.set(x, "stackChanged", js.undefined)
     
-    inline def setStatus(value: Ok | CompileError | BlockedByActiveGenerator | BlockedByActiveFunction): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(
+      value: Ok | CompileError | BlockedByActiveGenerator | BlockedByActiveFunction | BlockedByTopLevelEsModuleChange
+    ): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

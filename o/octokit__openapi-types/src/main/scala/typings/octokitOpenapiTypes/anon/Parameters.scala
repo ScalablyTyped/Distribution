@@ -6,18 +6,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Parameters extends StObject {
   
-  var responses: `200Content0`
+  var parameters: Path
+  
+  var responses: `201`
 }
 object Parameters {
   
-  inline def apply(responses: `200Content0`): Parameters = {
-    val __obj = js.Dynamic.literal(responses = responses.asInstanceOf[js.Any])
+  inline def apply(parameters: Path, responses: `201`): Parameters = {
+    val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[Parameters]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: Parameters] (val x: Self) extends AnyVal {
     
-    inline def setResponses(value: `200Content0`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setParameters(value: Path): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    
+    inline def setResponses(value: `201`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

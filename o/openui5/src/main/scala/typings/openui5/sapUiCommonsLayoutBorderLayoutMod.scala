@@ -132,7 +132,7 @@ object sapUiCommonsLayoutBorderLayoutMod {
     /**
       * Adds controls to the specified area.
       *
-      * @returns `this` to allow method chaining
+      * @returns Reference to `this` for method chaining
       */
     def addContent(/**
       * Specifies the area where controls will be added
@@ -197,7 +197,7 @@ object sapUiCommonsLayoutBorderLayoutMod {
     /**
       * Destroys the content of the specified area.
       *
-      * @returns `this` to allow method chaining
+      * @returns Reference to `this` for method chaining
       */
     def destroyContent(/**
       * Specifies the area whose content will be destroyed
@@ -266,7 +266,7 @@ object sapUiCommonsLayoutBorderLayoutMod {
       * Specifies the area whose data will be returned
       */
     sAreaId: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof layout.BorderLayoutAreaTypes * / any */ String
-    ): js.Object = js.native
+    ): BorderLayoutAreaData = js.native
     /**
       * Returns a JSON-like object that contains all property values of the requested area.
       *
@@ -275,7 +275,7 @@ object sapUiCommonsLayoutBorderLayoutMod {
     def getAreaData(/**
       * Specifies the area whose data will be returned
       */
-    sAreaId: BorderLayoutAreaTypes): js.Object = js.native
+    sAreaId: BorderLayoutAreaTypes): BorderLayoutAreaData = js.native
     
     /**
       * Gets content of aggregation {@link #getBegin begin}.
@@ -406,7 +406,7 @@ object sapUiCommonsLayoutBorderLayoutMod {
     /**
       * Inserts controls to an area at a given index.
       *
-      * @returns `this` to allow method chaining
+      * @returns Reference to `this` for method chaining
       */
     def insertContent(
       /**
@@ -430,7 +430,7 @@ object sapUiCommonsLayoutBorderLayoutMod {
     /**
       * Removes all content from an area.
       *
-      * @returns `this` to allow method chaining
+      * @returns Reference to `this` for method chaining
       */
     def removeAllContent(/**
       * Specifies the area whose content shall be removed
@@ -450,7 +450,7 @@ object sapUiCommonsLayoutBorderLayoutMod {
     /**
       * Removes the content with the given index from an area.
       *
-      * @returns `this` to allow method chaining
+      * @returns Reference to `this` for method chaining
       */
     def removeContent(
       /**
@@ -471,12 +471,12 @@ object sapUiCommonsLayoutBorderLayoutMod {
       /**
       * JSON-like object that contains the values to be set
       */
-    oData: js.Object
+    oData: BorderLayoutAreaData
     ): this.type = js.native
     /**
       * Sets the properties of the specified area with the given values.
       *
-      * @returns `this` to allow method chaining
+      * @returns Reference to `this` for method chaining
       */
     def setAreaData(
       /**
@@ -486,7 +486,7 @@ object sapUiCommonsLayoutBorderLayoutMod {
       /**
       * JSON-like object that contains the values to be set
       */
-    oData: js.Object
+    oData: BorderLayoutAreaData
     ): this.type = js.native
     
     /**
@@ -597,6 +597,65 @@ object sapUiCommonsLayoutBorderLayoutMod {
       * New value for property `width`
       */
     sWidth: CSSSize): this.type = js.native
+  }
+  
+  trait BorderLayoutAreaData extends StObject {
+    
+    /**
+      * The content alignment as CSS value.
+      */
+    var contentAlign: js.UndefOr[String] = js.undefined
+    
+    /**
+      * The overflow mode of the area in horizontal direction as CSS value.
+      */
+    var overflowX: js.UndefOr[String] = js.undefined
+    
+    /**
+      * The overflow mode of the area in vertical direction as CSS value.
+      */
+    var overflowY: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Defines the height or the width. Is not used when the area element is in Center.
+      */
+    var size: js.UndefOr[CSSSize] = js.undefined
+    
+    /**
+      * Invisible controls are not rendered.
+      */
+    var visible: js.UndefOr[Boolean] = js.undefined
+  }
+  object BorderLayoutAreaData {
+    
+    inline def apply(): BorderLayoutAreaData = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[BorderLayoutAreaData]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BorderLayoutAreaData] (val x: Self) extends AnyVal {
+      
+      inline def setContentAlign(value: String): Self = StObject.set(x, "contentAlign", value.asInstanceOf[js.Any])
+      
+      inline def setContentAlignUndefined: Self = StObject.set(x, "contentAlign", js.undefined)
+      
+      inline def setOverflowX(value: String): Self = StObject.set(x, "overflowX", value.asInstanceOf[js.Any])
+      
+      inline def setOverflowXUndefined: Self = StObject.set(x, "overflowX", js.undefined)
+      
+      inline def setOverflowY(value: String): Self = StObject.set(x, "overflowY", value.asInstanceOf[js.Any])
+      
+      inline def setOverflowYUndefined: Self = StObject.set(x, "overflowY", js.undefined)
+      
+      inline def setSize(value: CSSSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      
+      inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+      
+      inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    }
   }
   
   trait BorderLayoutSettings

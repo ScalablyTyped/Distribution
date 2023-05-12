@@ -1,6 +1,8 @@
 package typings.octokitOpenapiTypes.anon
 
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.FILE
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.LEFT
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.LINE
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.RIGHT
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.side
 import org.scalablytyped.runtime.StObject
@@ -34,19 +36,25 @@ trait Commitid extends StObject {
   var position: js.UndefOr[Double] = js.undefined
   
   /**
-    * @description In a split diff view, the side of the diff that the pull request's changes appear on. Can be `LEFT` or `RIGHT`. Use `LEFT` for deletions that appear in red. Use `RIGHT` for additions that appear in green or unchanged lines that appear in white and are shown for context. For a multi-line comment, side represents whether the last line of the comment range is a deletion or addition. For more information, see "[Diff view options](https://docs.github.com/en/articles/about-comparing-branches-in-pull-requests#diff-view-options)" in the GitHub Help documentation.
+    * @description In a split diff view, the side of the diff that the pull request's changes appear on. Can be `LEFT` or `RIGHT`. Use `LEFT` for deletions that appear in red. Use `RIGHT` for additions that appear in green or unchanged lines that appear in white and are shown for context. For a multi-line comment, side represents whether the last line of the comment range is a deletion or addition. For more information, see "[Diff view options](https://docs.github.com/articles/about-comparing-branches-in-pull-requests#diff-view-options)" in the GitHub Help documentation.
     * @enum {string}
     */
   var side: js.UndefOr[LEFT | RIGHT] = js.undefined
   
-  /** @description **Required when using multi-line comments unless using `in_reply_to`**. The `start_line` is the first line in the pull request diff that your multi-line comment applies to. To learn more about multi-line comments, see "[Commenting on a pull request](https://docs.github.com/en/articles/commenting-on-a-pull-request#adding-line-comments-to-a-pull-request)" in the GitHub Help documentation. */
+  /** @description **Required when using multi-line comments unless using `in_reply_to`**. The `start_line` is the first line in the pull request diff that your multi-line comment applies to. To learn more about multi-line comments, see "[Commenting on a pull request](https://docs.github.com/articles/commenting-on-a-pull-request#adding-line-comments-to-a-pull-request)" in the GitHub Help documentation. */
   var start_line: js.UndefOr[Double] = js.undefined
   
   /**
-    * @description **Required when using multi-line comments unless using `in_reply_to`**. The `start_side` is the starting side of the diff that the comment applies to. Can be `LEFT` or `RIGHT`. To learn more about multi-line comments, see "[Commenting on a pull request](https://docs.github.com/en/articles/commenting-on-a-pull-request#adding-line-comments-to-a-pull-request)" in the GitHub Help documentation. See `side` in this table for additional context.
+    * @description **Required when using multi-line comments unless using `in_reply_to`**. The `start_side` is the starting side of the diff that the comment applies to. Can be `LEFT` or `RIGHT`. To learn more about multi-line comments, see "[Commenting on a pull request](https://docs.github.com/articles/commenting-on-a-pull-request#adding-line-comments-to-a-pull-request)" in the GitHub Help documentation. See `side` in this table for additional context.
     * @enum {string}
     */
   var start_side: js.UndefOr[LEFT | RIGHT | side] = js.undefined
+  
+  /**
+    * @description The level at which the comment is targeted.
+    * @enum {string}
+    */
+  var subject_type: js.UndefOr[LINE | FILE] = js.undefined
 }
 object Commitid {
   
@@ -85,5 +93,9 @@ object Commitid {
     inline def setStart_side(value: LEFT | RIGHT | side): Self = StObject.set(x, "start_side", value.asInstanceOf[js.Any])
     
     inline def setStart_sideUndefined: Self = StObject.set(x, "start_side", js.undefined)
+    
+    inline def setSubject_type(value: LINE | FILE): Self = StObject.set(x, "subject_type", value.asInstanceOf[js.Any])
+    
+    inline def setSubject_typeUndefined: Self = StObject.set(x, "subject_type", js.undefined)
   }
 }

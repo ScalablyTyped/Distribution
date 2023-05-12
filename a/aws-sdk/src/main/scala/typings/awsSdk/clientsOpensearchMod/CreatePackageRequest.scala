@@ -22,7 +22,7 @@ trait CreatePackageRequest extends StObject {
   var PackageSource: typings.awsSdk.clientsOpensearchMod.PackageSource
   
   /**
-    * Type of package.
+    * The type of package.
     */
   var PackageType: typings.awsSdk.clientsOpensearchMod.PackageType
 }

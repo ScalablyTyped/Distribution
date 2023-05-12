@@ -1,7 +1,7 @@
 
 # Scala.js typings for postcss-attribute-case-insensitive
 
-Typings are for version 5.0.2
+Typings are for version 6.0.2
 
 ## Library description:
 Enable support for case insensitive attribute matching in selectors

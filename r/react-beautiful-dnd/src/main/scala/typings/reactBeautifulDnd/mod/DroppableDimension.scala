@@ -14,7 +14,7 @@ trait DroppableDimension extends StObject {
   var descriptor: DroppableDescriptor
   
   // The container of the droppable
-  var frame: js.UndefOr[Scrollable] = js.undefined
+  var frame: js.UndefOr[Scrollable | Null] = js.undefined
   
   var isCombineEnabled: Boolean
   
@@ -55,6 +55,8 @@ object DroppableDimension {
     inline def setDescriptor(value: DroppableDescriptor): Self = StObject.set(x, "descriptor", value.asInstanceOf[js.Any])
     
     inline def setFrame(value: Scrollable): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
+    
+    inline def setFrameNull: Self = StObject.set(x, "frame", null)
     
     inline def setFrameUndefined: Self = StObject.set(x, "frame", js.undefined)
     

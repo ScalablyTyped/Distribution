@@ -5,6 +5,7 @@ import typings.babylonjs.GPUDevice
 import typings.babylonjs.GPUFeatureName
 import typings.babylonjs.GPUProgrammableStage
 import typings.babylonjs.GPURenderPassEncoder
+import typings.babylonjs.GPUSupportedLimits
 import typings.babylonjs.GPUTexture
 import typings.babylonjs.WebGLProgram
 import typings.babylonjs.WebGLUniformLocation
@@ -22,7 +23,11 @@ trait WebGPUEngine
   
   /* private */ var _adapter: Any = js.native
   
+  /* private */ var _adapterInfo: Any = js.native
+  
   /* private */ var _adapterSupportedExtensions: Any = js.native
+  
+  /* private */ var _adapterSupportedLimits: Any = js.native
   
   /* private */ var _applyBlendColor: Any = js.native
   
@@ -65,8 +70,6 @@ trait WebGPUEngine
   
   /** @internal */
   var _cacheSampler: WebGPUCacheSampler = js.native
-  
-  /* private */ var _canvas: Any = js.native
   
   /** @internal */
   val _clearDepthValue: /* 1 */ Double = js.native
@@ -145,6 +148,8 @@ trait WebGPUEngine
   var _device: GPUDevice = js.native
   
   /* private */ var _deviceEnabledExtensions: Any = js.native
+  
+  /* private */ var _deviceLimits: Any = js.native
   
   /* private */ var _draw: Any = js.native
   
@@ -452,6 +457,9 @@ trait WebGPUEngine
     */
   def createShaderProgram(): WebGLProgram = js.native
   
+  /** Gets the current limits of the WebGPU device */
+  def currentLimits: GPUSupportedLimits = js.native
+  
   /** @internal */
   def currentSampleCount: Double = js.native
   
@@ -612,6 +620,9 @@ trait WebGPUEngine
   
   /** Gets the supported extensions by the WebGPU adapter */
   def supportedExtensions: Immutable[js.Array[GPUFeatureName]] = js.native
+  
+  /** Gets the supported limits by the WebGPU adapter */
+  def supportedLimits: GPUSupportedLimits = js.native
   
   /**
     * @internal

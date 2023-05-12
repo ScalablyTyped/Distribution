@@ -11,7 +11,7 @@ trait CitationCitedArtifactTitle
   var _text: js.UndefOr[Element] = js.undefined
   
   /**
-    * Used to express the specific language.
+    * Used to express the specific language of the title.
     */
   var language: js.UndefOr[CodeableConcept] = js.undefined
   
@@ -21,7 +21,7 @@ trait CitationCitedArtifactTitle
   var text: String
   
   /**
-    * Used to express the reason or specific aspect for the title.
+    * Used to express the reason for or classification of the title.
     */
   var `type`: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
 }

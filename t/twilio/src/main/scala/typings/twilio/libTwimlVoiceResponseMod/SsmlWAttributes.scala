@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SsmlWAttributes extends StObject {
   
+  /** role - Customize the pronunciation of words by specifying the word’s part of speech or alternate meaning */
   var role: js.UndefOr[String] = js.undefined
 }
 object SsmlWAttributes {

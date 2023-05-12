@@ -1,27 +1,25 @@
 package typings.octokitOpenapiTypes.anon
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `446` extends StObject {
   
-  @JSName("application/json")
-  var applicationSlashjson: Partial[Origin] & Partial[StringDictionary[Any]]
+  var from: Boolean | Null
 }
 object `446` {
   
-  inline def apply(applicationSlashjson: Partial[Origin] & Partial[StringDictionary[Any]]): `446` = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("application/json")(applicationSlashjson.asInstanceOf[js.Any])
+  inline def apply(): `446` = {
+    val __obj = js.Dynamic.literal(from = null)
     __obj.asInstanceOf[`446`]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: `446`] (val x: Self) extends AnyVal {
     
-    inline def setApplicationSlashjson(value: Partial[Origin] & Partial[StringDictionary[Any]]): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
+    inline def setFrom(value: Boolean): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    
+    inline def setFromNull: Self = StObject.set(x, "from", null)
   }
 }

@@ -926,6 +926,10 @@ object ioredisStrings {
   inline def message: message = "message".asInstanceOf[message]
   
   @js.native
+  sealed trait messageBuffer extends StObject
+  inline def messageBuffer: messageBuffer = "messageBuffer".asInstanceOf[messageBuffer]
+  
+  @js.native
   sealed trait monitor extends StObject
   inline def monitor: monitor = "monitor".asInstanceOf[monitor]
   
@@ -940,6 +944,14 @@ object ioredisStrings {
   @js.native
   sealed trait pipeline extends StObject
   inline def pipeline: pipeline = "pipeline".asInstanceOf[pipeline]
+  
+  @js.native
+  sealed trait pmessage extends StObject
+  inline def pmessage: pmessage = "pmessage".asInstanceOf[pmessage]
+  
+  @js.native
+  sealed trait pmessageBuffer extends StObject
+  inline def pmessageBuffer: pmessageBuffer = "pmessageBuffer".asInstanceOf[pmessageBuffer]
   
   @js.native
   sealed trait psubscribe
@@ -986,6 +998,12 @@ object ioredisStrings {
   inline def slaves_ : slaves_ = "slaves".asInstanceOf[slaves_]
   
   @js.native
+  sealed trait ssubscribe
+    extends StObject
+       with AddSet
+  inline def ssubscribe: ssubscribe = "ssubscribe".asInstanceOf[ssubscribe]
+  
+  @js.native
   sealed trait subscribe
     extends StObject
        with AddSet
@@ -994,6 +1012,12 @@ object ioredisStrings {
   @js.native
   sealed trait subscriber extends StObject
   inline def subscriber: subscriber = "subscriber".asInstanceOf[subscriber]
+  
+  @js.native
+  sealed trait sunsubscribe
+    extends StObject
+       with DelSet
+  inline def sunsubscribe: sunsubscribe = "sunsubscribe".asInstanceOf[sunsubscribe]
   
   @js.native
   sealed trait unsubscribe

@@ -1,7 +1,7 @@
 
 # Scala.js typings for csv
 
-Typings are for version 6.2.0
+Typings are for version 6.3.0
 
 ## Library description:
 A mature CSV toolset with simple api, full of options and tested against large datasets.

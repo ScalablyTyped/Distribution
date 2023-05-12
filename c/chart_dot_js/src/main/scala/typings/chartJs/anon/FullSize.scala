@@ -1,6 +1,6 @@
 package typings.chartJs.anon
 
-import typings.chartJs.typesLayoutMod.LayoutPosition
+import typings.chartJs.distTypesLayoutMod.LayoutPosition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

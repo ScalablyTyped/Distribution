@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SpeakerEnrollmentJob extends StObject {
   
   /**
-    * A timestamp showing the creation of the speaker enrollment job.
+    * A timestamp of when the speaker enrollment job was created.
     */
   var CreatedAt: js.UndefOr[js.Date] = js.undefined
   
@@ -22,7 +22,7 @@ trait SpeakerEnrollmentJob extends StObject {
   var DomainId: js.UndefOr[typings.awsSdk.clientsVoiceidMod.DomainId] = js.undefined
   
   /**
-    * A timestamp showing when the speaker enrollment job ended. 
+    * A timestamp of when the speaker enrollment job ended. 
     */
   var EndedAt: js.UndefOr[js.Date] = js.undefined
   

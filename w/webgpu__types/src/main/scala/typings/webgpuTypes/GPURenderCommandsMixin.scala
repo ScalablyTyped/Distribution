@@ -150,6 +150,10 @@ trait GPURenderCommandsMixin extends StObject {
     * @param size - Size in bytes of the vertex data in `buffer`.
     * 	Defaults to the size of the buffer minus the offset.
     */
+  def setVertexBuffer(slot: GPUIndex32): Unit = js.native
+  def setVertexBuffer(slot: GPUIndex32, buffer: Null, offset: Unit, size: GPUSize64): Unit = js.native
+  def setVertexBuffer(slot: GPUIndex32, buffer: Null, offset: GPUSize64): Unit = js.native
+  def setVertexBuffer(slot: GPUIndex32, buffer: Null, offset: GPUSize64, size: GPUSize64): Unit = js.native
   def setVertexBuffer(slot: GPUIndex32, buffer: GPUBuffer): Unit = js.native
   def setVertexBuffer(slot: GPUIndex32, buffer: GPUBuffer, offset: Unit, size: GPUSize64): Unit = js.native
   def setVertexBuffer(slot: GPUIndex32, buffer: GPUBuffer, offset: GPUSize64): Unit = js.native

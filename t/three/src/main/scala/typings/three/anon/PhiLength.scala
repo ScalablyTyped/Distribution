@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PhiLength extends StObject {
   
-  var phiLength: Double
+  val phiLength: Double
   
-  var phiStart: Double
+  val phiStart: Double
   
-  var points: js.Array[Vector2]
+  val points: js.Array[Vector2]
   
-  var segments: Double
+  val segments: Double
 }
 object PhiLength {
   

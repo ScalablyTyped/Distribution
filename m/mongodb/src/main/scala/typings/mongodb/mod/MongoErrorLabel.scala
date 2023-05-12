@@ -8,18 +8,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.mongodb.mongodbStrings.TransientTransactionError
   - typings.mongodb.mongodbStrings.ResetPool
   - typings.mongodb.mongodbStrings.ResumableChangeStreamError
+  - typings.mongodb.mongodbStrings.InterruptInUseConnections
   - typings.mongodb.mongodbStrings.RetryableWriteError
   - typings.mongodb.mongodbStrings.NoWritesPerformed
   - typings.mongodb.mongodbStrings.UnknownTransactionCommitResult
   - typings.mongodb.mongodbStrings.HandshakeError
 */
 trait MongoErrorLabel extends StObject
-/* Inlined std.Readonly<{ readonly RetryableWriteError :'RetryableWriteError',  readonly TransientTransactionError :'TransientTransactionError',  readonly UnknownTransactionCommitResult :'UnknownTransactionCommitResult',  readonly ResumableChangeStreamError :'ResumableChangeStreamError',  readonly HandshakeError :'HandshakeError',  readonly ResetPool :'ResetPool',  readonly NoWritesPerformed :'NoWritesPerformed'}> */
+/* Inlined std.Readonly<{ readonly RetryableWriteError :'RetryableWriteError',  readonly TransientTransactionError :'TransientTransactionError',  readonly UnknownTransactionCommitResult :'UnknownTransactionCommitResult',  readonly ResumableChangeStreamError :'ResumableChangeStreamError',  readonly HandshakeError :'HandshakeError',  readonly ResetPool :'ResetPool',  readonly InterruptInUseConnections :'InterruptInUseConnections',  readonly NoWritesPerformed :'NoWritesPerformed'}> */
 object MongoErrorLabel {
   
   @JSImport("mongodb", "MongoErrorLabel.HandshakeError")
   @js.native
   val HandshakeError: typings.mongodb.mongodbStrings.HandshakeError = js.native
+  
+  @JSImport("mongodb", "MongoErrorLabel.InterruptInUseConnections")
+  @js.native
+  val InterruptInUseConnections: typings.mongodb.mongodbStrings.InterruptInUseConnections = js.native
   
   @JSImport("mongodb", "MongoErrorLabel.NoWritesPerformed")
   @js.native

@@ -1,86 +1,7 @@
 package typings.primereact
 
 import typings.primereact.apiApiMod.InputStyleType
-import typings.primereact.autocompleteAutocompleteMod.AutoCompleteSourceType
-import typings.primereact.avatarAvatarMod.AvatarShapeType
-import typings.primereact.avatarAvatarMod.AvatarSizeType
-import typings.primereact.badgeBadgeMod.BadgeSeverityType
-import typings.primereact.badgeBadgeMod.BadgeSizeType
-import typings.primereact.buttonButtonMod.ButtonPositionType
-import typings.primereact.calendarCalendarMod.CalendarIconPosType
-import typings.primereact.calendarCalendarMod._CalendarVisibleType
-import typings.primereact.carouselCarouselMod.CarouselOrientationType
-import typings.primereact.colorpickerColorpickerMod.ColorPickerFormatType
-import typings.primereact.columnColumnMod.ColumnAlignFrozenType
-import typings.primereact.columnColumnMod.ColumnFilterMatchModeType
-import typings.primereact.columnColumnMod.ColumnFilterOperatorType
-import typings.primereact.columnColumnMod.ColumnSelectionModeType
-import typings.primereact.columnColumnMod._ColumnAlignType
-import typings.primereact.columnColumnMod._ColumnDataType
-import typings.primereact.datatableDatatableMod.DataTableColumnResizeModeType
-import typings.primereact.datatableDatatableMod.DataTableCompareSelectionByType
-import typings.primereact.datatableDatatableMod.DataTableFilterDisplayType
-import typings.primereact.datatableDatatableMod.DataTableFilterMatchModeType
-import typings.primereact.datatableDatatableMod.DataTablePaginatorPositionType
-import typings.primereact.datatableDatatableMod.DataTableResponsiveLayoutType
-import typings.primereact.datatableDatatableMod.DataTableScrollDirectionType
-import typings.primereact.datatableDatatableMod.DataTableSelectType
-import typings.primereact.datatableDatatableMod.DataTableSelectionModeType
-import typings.primereact.datatableDatatableMod.DataTableSizeType
-import typings.primereact.datatableDatatableMod.DataTableSortModeType
-import typings.primereact.datatableDatatableMod.DataTableStateStorageType
-import typings.primereact.dataviewDataviewMod.DataViewPaginatorPositionType
-import typings.primereact.dataviewDataviewMod._DataViewLayoutType
-import typings.primereact.dialogDialogMod.DialogPositionType
-import typings.primereact.dividerDividerMod.DividerAlignType
-import typings.primereact.dividerDividerMod.DividerBorderType
-import typings.primereact.dividerDividerMod.DividerLayoutType
-import typings.primereact.dockDockMod.DockPositionType
-import typings.primereact.fileuploadFileuploadMod.FileUploadModeType
-import typings.primereact.galleriaGalleriaMod.GalleriaPositionType
-import typings.primereact.hooksHooksMod.StorageType
-import typings.primereact.hooksHooksMod._TargetType
 import typings.primereact.keyfilterKeyfilteroptionsMod._KeyFilterType
-import typings.primereact.megamenuMegamenuMod.MegaMenuOrientationType
-import typings.primereact.messageMessageMod.MessageSeverityType
-import typings.primereact.messagesMessagesMod.MessagesSeverityType
-import typings.primereact.multiselectMultiselectMod.MultiSelectDisplayType
-import typings.primereact.organizationchartOrganizationchartMod.OrganizationChartSelectionModeType
-import typings.primereact.progressbarProgressbarMod.ProgressBarModeType
-import typings.primereact.scrolltopScrolltopMod.ScrollTopScrollBehavior
-import typings.primereact.scrolltopScrolltopMod.ScrollTopTargetType
-import typings.primereact.sidebarSidebarMod.SidebarPositionType
-import typings.primereact.skeletonSkeletonMod.SkeletonAnimationType
-import typings.primereact.skeletonSkeletonMod.SkeletonShapeType
-import typings.primereact.sliderSliderMod.SliderOrientationType
-import typings.primereact.speeddialSpeeddialMod.SpeedDialDirectionType
-import typings.primereact.speeddialSpeeddialMod.SpeedDialType
-import typings.primereact.splitterSplitterMod.SplitterLayoutType
-import typings.primereact.splitterSplitterMod.SplitterStateStorageType
-import typings.primereact.styleclassStyleclassMod._StyleClassSelectorType
-import typings.primereact.tagTagMod.TagSeverityType
-import typings.primereact.terminalserviceTerminalserviceMod.TerminalServiceActionType
-import typings.primereact.timelineTimelineMod.TimelineAlignType
-import typings.primereact.timelineTimelineMod.TimelineLayoutType
-import typings.primereact.toastToastMod.ToastPositionType
-import typings.primereact.toastToastMod.ToastSeverityType
-import typings.primereact.togglebuttonTogglebuttonMod.ToggleButtonIconPositionType
-import typings.primereact.tooltipTooltipoptionsMod.TooltipEventType
-import typings.primereact.tooltipTooltipoptionsMod.TooltipPositionType
-import typings.primereact.treeTreeMod.TreeFilterModeType
-import typings.primereact.treeTreeMod.TreeSelectionModeType
-import typings.primereact.treeselectTreeselectMod.TreeSelectDisplayType
-import typings.primereact.treeselectTreeselectMod.TreeSelectFilterModeType
-import typings.primereact.treeselectTreeselectMod.TreeSelectSelectionModeType
-import typings.primereact.treetableTreetableMod.TreeTableColumnResizeModeType
-import typings.primereact.treetableTreetableMod.TreeTableFilterMatchModeType
-import typings.primereact.treetableTreetableMod.TreeTableFilterModeType
-import typings.primereact.treetableTreetableMod.TreeTablePaginatorPositionType
-import typings.primereact.treetableTreetableMod.TreeTableSelectionModeType
-import typings.primereact.treetableTreetableMod.TreeTableSortModeType
-import typings.primereact.virtualscrollerVirtualscrollerMod.VirtualScrollerOrientationType
-import typings.primereact.virtualscrollerVirtualscrollerMod.VirtualScrollerScrollBehavior
-import typings.primereact.virtualscrollerVirtualscrollerMod.VirtualScrollerToType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -88,28 +9,36 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object primereactStrings {
   
   @js.native
-  sealed trait `@grandparent`
-    extends StObject
-       with _StyleClassSelectorType
+  sealed trait default extends StObject
+  inline def default: default = "default".asInstanceOf[default]
+  
+  @js.native
+  sealed trait `12` extends StObject
+  inline def `12`: `12` = "12".asInstanceOf[`12`]
+  
+  @js.native
+  sealed trait `24` extends StObject
+  inline def `24`: `24` = "24".asInstanceOf[`24`]
+  
+  @js.native
+  sealed trait `@grandparent` extends StObject
   inline def `@grandparent`: `@grandparent` = "@grandparent".asInstanceOf[`@grandparent`]
   
   @js.native
-  sealed trait `@next`
-    extends StObject
-       with _StyleClassSelectorType
+  sealed trait `@next` extends StObject
   inline def `@next`: `@next` = "@next".asInstanceOf[`@next`]
   
   @js.native
-  sealed trait `@parent`
-    extends StObject
-       with _StyleClassSelectorType
+  sealed trait `@parent` extends StObject
   inline def `@parent`: `@parent` = "@parent".asInstanceOf[`@parent`]
   
   @js.native
-  sealed trait `@prev`
-    extends StObject
-       with _StyleClassSelectorType
+  sealed trait `@prev` extends StObject
   inline def `@prev`: `@prev` = "@prev".asInstanceOf[`@prev`]
+  
+  @js.native
+  sealed trait _empty extends StObject
+  inline def _empty: _empty = "".asInstanceOf[_empty]
   
   @js.native
   sealed trait additions extends StObject
@@ -124,15 +53,15 @@ object primereactStrings {
   inline def `additions text`: `additions text` = ("additions text").asInstanceOf[`additions text`]
   
   @js.native
-  sealed trait advanced
-    extends StObject
-       with FileUploadModeType
+  sealed trait advanced extends StObject
   inline def advanced: advanced = "advanced".asInstanceOf[advanced]
   
   @js.native
-  sealed trait all
-    extends StObject
-       with DataTableSelectType
+  sealed trait `after-edge` extends StObject
+  inline def `after-edge`: `after-edge` = "after-edge".asInstanceOf[`after-edge`]
+  
+  @js.native
+  sealed trait all extends StObject
   inline def all: all = "all".asInstanceOf[all]
   
   @js.native
@@ -142,22 +71,26 @@ object primereactStrings {
   inline def alpha: alpha = "alpha".asInstanceOf[alpha]
   
   @js.native
+  sealed trait alphabetic extends StObject
+  inline def alphabetic: alphabetic = "alphabetic".asInstanceOf[alphabetic]
+  
+  @js.native
   sealed trait alphanum
     extends StObject
        with _KeyFilterType
   inline def alphanum: alphanum = "alphanum".asInstanceOf[alphanum]
   
   @js.native
-  sealed trait alternate
-    extends StObject
-       with TimelineAlignType
+  sealed trait alternate extends StObject
   inline def alternate: alternate = "alternate".asInstanceOf[alternate]
   
   @js.native
-  sealed trait and
-    extends StObject
-       with ColumnFilterOperatorType
+  sealed trait and extends StObject
   inline def and: and = "and".asInstanceOf[and]
+  
+  @js.native
+  sealed trait anonymous extends StObject
+  inline def anonymous: anonymous = "anonymous".asInstanceOf[anonymous]
   
   @js.native
   sealed trait ascending extends StObject
@@ -168,141 +101,103 @@ object primereactStrings {
   inline def assertive: assertive = "assertive".asInstanceOf[assertive]
   
   @js.native
-  sealed trait auto
-    extends StObject
-       with ScrollTopScrollBehavior
-       with VirtualScrollerScrollBehavior
+  sealed trait auto extends StObject
   inline def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
-  sealed trait basic
-    extends StObject
-       with FileUploadModeType
+  sealed trait baseline extends StObject
+  inline def baseline: baseline = "baseline".asInstanceOf[baseline]
+  
+  @js.native
+  sealed trait basic extends StObject
   inline def basic: basic = "basic".asInstanceOf[basic]
   
   @js.native
-  sealed trait between
-    extends StObject
-       with DataTableFilterMatchModeType
+  sealed trait `before-edge` extends StObject
+  inline def `before-edge`: `before-edge` = "before-edge".asInstanceOf[`before-edge`]
+  
+  @js.native
+  sealed trait `best fit` extends StObject
+  inline def `best fit`: `best fit` = ("best fit").asInstanceOf[`best fit`]
+  
+  @js.native
+  sealed trait between extends StObject
   inline def between: between = "between".asInstanceOf[between]
   
   @js.native
-  sealed trait both
-    extends StObject
-       with DataTablePaginatorPositionType
-       with DataTableScrollDirectionType
-       with DataViewPaginatorPositionType
-       with TooltipEventType
-       with TreeTablePaginatorPositionType
-       with VirtualScrollerOrientationType
+  sealed trait bevel extends StObject
+  inline def bevel: bevel = "bevel".asInstanceOf[bevel]
+  
+  @js.native
+  sealed trait blank extends StObject
+  inline def blank: blank = "blank".asInstanceOf[blank]
+  
+  @js.native
+  sealed trait both extends StObject
   inline def both: both = "both".asInstanceOf[both]
   
   @js.native
-  sealed trait bottom
-    extends StObject
-       with ButtonPositionType
-       with DataTablePaginatorPositionType
-       with DataViewPaginatorPositionType
-       with DialogPositionType
-       with DividerAlignType
-       with DockPositionType
-       with GalleriaPositionType
-       with SidebarPositionType
-       with TimelineAlignType
-       with ToastPositionType
-       with TooltipPositionType
-       with TreeTablePaginatorPositionType
+  sealed trait bottom extends StObject
   inline def bottom: bottom = "bottom".asInstanceOf[bottom]
   
   @js.native
-  sealed trait `bottom-center`
-    extends StObject
-       with ToastPositionType
+  sealed trait `bottom-center` extends StObject
   inline def `bottom-center`: `bottom-center` = "bottom-center".asInstanceOf[`bottom-center`]
   
   @js.native
-  sealed trait `bottom-left`
-    extends StObject
-       with DialogPositionType
-       with ToastPositionType
+  sealed trait `bottom-left` extends StObject
   inline def `bottom-left`: `bottom-left` = "bottom-left".asInstanceOf[`bottom-left`]
   
   @js.native
-  sealed trait `bottom-right`
-    extends StObject
-       with DialogPositionType
-       with ToastPositionType
+  sealed trait `bottom-right` extends StObject
   inline def `bottom-right`: `bottom-right` = "bottom-right".asInstanceOf[`bottom-right`]
+  
+  @js.native
+  sealed trait butt extends StObject
+  inline def butt: butt = "butt".asInstanceOf[butt]
   
   @js.native
   sealed trait button extends StObject
   inline def button: button = "button".asInstanceOf[button]
   
   @js.native
-  sealed trait cell
-    extends StObject
-       with DataTableSelectType
+  sealed trait cell extends StObject
   inline def cell: cell = "cell".asInstanceOf[cell]
   
   @js.native
-  sealed trait center
-    extends StObject
-       with DialogPositionType
-       with DividerAlignType
-       with ToastPositionType
-       with _ColumnAlignType
+  sealed trait center extends StObject
   inline def center: center = "center".asInstanceOf[center]
   
   @js.native
-  sealed trait checkbox
-    extends StObject
-       with DataTableSelectType
-       with DataTableSelectionModeType
-       with TreeSelectSelectionModeType
-       with TreeSelectionModeType
-       with TreeTableSelectionModeType
+  sealed trait central extends StObject
+  inline def central: central = "central".asInstanceOf[central]
+  
+  @js.native
+  sealed trait checkbox extends StObject
   inline def checkbox: checkbox = "checkbox".asInstanceOf[checkbox]
   
   @js.native
-  sealed trait chip
-    extends StObject
-       with MultiSelectDisplayType
-       with TreeSelectDisplayType
+  sealed trait chip extends StObject
   inline def chip: chip = "chip".asInstanceOf[chip]
   
   @js.native
-  sealed trait circle
-    extends StObject
-       with AvatarShapeType
-       with SkeletonShapeType
-       with SpeedDialType
+  sealed trait circle extends StObject
   inline def circle: circle = "circle".asInstanceOf[circle]
   
   @js.native
-  sealed trait clear
-    extends StObject
-       with TerminalServiceActionType
+  sealed trait clear extends StObject
   inline def clear: clear = "clear".asInstanceOf[clear]
   
   @js.native
-  sealed trait comma
-    extends StObject
-       with MultiSelectDisplayType
-       with TreeSelectDisplayType
+  sealed trait comma extends StObject
   inline def comma: comma = "comma".asInstanceOf[comma]
   
   @js.native
-  sealed trait command
-    extends StObject
-       with TerminalServiceActionType
+  sealed trait command extends StObject
   inline def command: command = "command".asInstanceOf[command]
   
   @js.native
-  sealed trait contains
-    extends StObject
-       with ColumnFilterMatchModeType
-       with DataTableFilterMatchModeType
-       with TreeTableFilterMatchModeType
+  sealed trait contains extends StObject
   inline def contains: contains = "contains".asInstanceOf[contains]
   
   @js.native
@@ -310,61 +205,47 @@ object primereactStrings {
   inline def copy: copy = "copy".asInstanceOf[copy]
   
   @js.native
-  sealed trait custom
-    extends StObject
-       with ColumnFilterMatchModeType
-       with DataTableFilterMatchModeType
-       with DataTableStateStorageType
-       with TreeTableFilterMatchModeType
+  sealed trait currency extends StObject
+  inline def currency: currency = "currency".asInstanceOf[currency]
+  
+  @js.native
+  sealed trait current extends StObject
+  inline def current: current = "current".asInstanceOf[current]
+  
+  @js.native
+  sealed trait custom extends StObject
   inline def custom: custom = "custom".asInstanceOf[custom]
   
   @js.native
-  sealed trait danger
-    extends StObject
-       with BadgeSeverityType
-       with TagSeverityType
+  sealed trait danger extends StObject
   inline def danger: danger = "danger".asInstanceOf[danger]
   
   @js.native
-  sealed trait dashed
-    extends StObject
-       with DividerBorderType
+  sealed trait dashed extends StObject
   inline def dashed: dashed = "dashed".asInstanceOf[dashed]
   
   @js.native
-  sealed trait date
-    extends StObject
-       with _ColumnDataType
+  sealed trait date extends StObject
   inline def date: date = "date".asInstanceOf[date]
   
   @js.native
-  sealed trait dateAfter
-    extends StObject
-       with DataTableFilterMatchModeType
+  sealed trait dateAfter extends StObject
   inline def dateAfter: dateAfter = "dateAfter".asInstanceOf[dateAfter]
   
   @js.native
-  sealed trait dateBefore
-    extends StObject
-       with DataTableFilterMatchModeType
+  sealed trait dateBefore extends StObject
   inline def dateBefore: dateBefore = "dateBefore".asInstanceOf[dateBefore]
   
   @js.native
-  sealed trait dateIs
-    extends StObject
-       with DataTableFilterMatchModeType
+  sealed trait dateIs extends StObject
   inline def dateIs: dateIs = "dateIs".asInstanceOf[dateIs]
   
   @js.native
-  sealed trait dateIsNot
-    extends StObject
-       with DataTableFilterMatchModeType
+  sealed trait dateIsNot extends StObject
   inline def dateIsNot: dateIsNot = "dateIsNot".asInstanceOf[dateIsNot]
   
   @js.native
-  sealed trait dateselect
-    extends StObject
-       with _CalendarVisibleType
+  sealed trait dateselect extends StObject
   inline def dateselect: dateselect = "dateselect".asInstanceOf[dateselect]
   
   @js.native
@@ -372,9 +253,7 @@ object primereactStrings {
   inline def decimal: decimal = "decimal".asInstanceOf[decimal]
   
   @js.native
-  sealed trait deepEquals
-    extends StObject
-       with DataTableCompareSelectionByType
+  sealed trait deepEquals extends StObject
   inline def deepEquals: deepEquals = "deepEquals".asInstanceOf[deepEquals]
   
   @js.native
@@ -382,9 +261,7 @@ object primereactStrings {
   inline def descending: descending = "descending".asInstanceOf[descending]
   
   @js.native
-  sealed trait determinate
-    extends StObject
-       with ProgressBarModeType
+  sealed trait determinate extends StObject
   inline def determinate: determinate = "determinate".asInstanceOf[determinate]
   
   @js.native
@@ -392,9 +269,7 @@ object primereactStrings {
   inline def dialog: dialog = "dialog".asInstanceOf[dialog]
   
   @js.native
-  sealed trait document
-    extends StObject
-       with _TargetType
+  sealed trait document extends StObject
   inline def document: document = "document".asInstanceOf[document]
   
   @js.native
@@ -402,34 +277,28 @@ object primereactStrings {
   inline def done: done = "done".asInstanceOf[done]
   
   @js.native
-  sealed trait dotted
-    extends StObject
-       with DividerBorderType
+  sealed trait dotted extends StObject
   inline def dotted: dotted = "dotted".asInstanceOf[dotted]
   
   @js.native
-  sealed trait down
-    extends StObject
-       with SpeedDialDirectionType
+  sealed trait down extends StObject
   inline def down: down = "down".asInstanceOf[down]
   
   @js.native
-  sealed trait `down-left`
-    extends StObject
-       with SpeedDialDirectionType
+  sealed trait `down-left` extends StObject
   inline def `down-left`: `down-left` = "down-left".asInstanceOf[`down-left`]
   
   @js.native
-  sealed trait `down-right`
-    extends StObject
-       with SpeedDialDirectionType
+  sealed trait `down-right` extends StObject
   inline def `down-right`: `down-right` = "down-right".asInstanceOf[`down-right`]
   
   @js.native
-  sealed trait dropdown
-    extends StObject
-       with AutoCompleteSourceType
+  sealed trait dropdown extends StObject
   inline def dropdown: dropdown = "dropdown".asInstanceOf[dropdown]
+  
+  @js.native
+  sealed trait eager extends StObject
+  inline def eager: eager = "eager".asInstanceOf[eager]
   
   @js.native
   sealed trait email
@@ -438,11 +307,7 @@ object primereactStrings {
   inline def email: email = "email".asInstanceOf[email]
   
   @js.native
-  sealed trait endsWith
-    extends StObject
-       with ColumnFilterMatchModeType
-       with DataTableFilterMatchModeType
-       with TreeTableFilterMatchModeType
+  sealed trait endsWith extends StObject
   inline def endsWith: endsWith = "endsWith".asInstanceOf[endsWith]
   
   @js.native
@@ -454,31 +319,23 @@ object primereactStrings {
   inline def environment: environment = "environment".asInstanceOf[environment]
   
   @js.native
-  sealed trait equals
-    extends StObject
-       with ColumnFilterMatchModeType
-       with DataTableCompareSelectionByType
-       with DataTableFilterMatchModeType
-       with TreeTableFilterMatchModeType
+  sealed trait equals extends StObject
   inline def equals: equals = "equals".asInstanceOf[equals]
   
   @js.native
-  sealed trait error
-    extends StObject
-       with MessageSeverityType
-       with MessagesSeverityType
-       with ToastSeverityType
+  sealed trait error extends StObject
   inline def error: error = "error".asInstanceOf[error]
+  
+  @js.native
+  sealed trait evenodd extends StObject
+  inline def evenodd: evenodd = "evenodd".asInstanceOf[evenodd]
   
   @js.native
   sealed trait execute extends StObject
   inline def execute: execute = "execute".asInstanceOf[execute]
   
   @js.native
-  sealed trait expand
-    extends StObject
-       with DataTableColumnResizeModeType
-       with TreeTableColumnResizeModeType
+  sealed trait expand extends StObject
   inline def expand: expand = "expand".asInstanceOf[expand]
   
   @js.native
@@ -488,16 +345,11 @@ object primereactStrings {
   inline def filled: filled = "filled".asInstanceOf[filled]
   
   @js.native
-  sealed trait fit
-    extends StObject
-       with DataTableColumnResizeModeType
-       with TreeTableColumnResizeModeType
+  sealed trait fit extends StObject
   inline def fit: fit = "fit".asInstanceOf[fit]
   
   @js.native
-  sealed trait focus
-    extends StObject
-       with TooltipEventType
+  sealed trait focus extends StObject
   inline def focus: focus = "focus".asInstanceOf[focus]
   
   @js.native
@@ -509,81 +361,57 @@ object primereactStrings {
   inline def grammar: grammar = "grammar".asInstanceOf[grammar]
   
   @js.native
-  sealed trait grid
-    extends StObject
-       with _DataViewLayoutType
+  sealed trait grid extends StObject
   inline def grid: grid = "grid".asInstanceOf[grid]
   
   @js.native
-  sealed trait gt
-    extends StObject
-       with ColumnFilterMatchModeType
-       with DataTableFilterMatchModeType
-       with TreeTableFilterMatchModeType
+  sealed trait gt extends StObject
   inline def gt: gt = "gt".asInstanceOf[gt]
   
   @js.native
-  sealed trait gte
-    extends StObject
-       with ColumnFilterMatchModeType
-       with DataTableFilterMatchModeType
-       with TreeTableFilterMatchModeType
+  sealed trait gte extends StObject
   inline def gte: gte = "gte".asInstanceOf[gte]
+  
+  @js.native
+  sealed trait hanging extends StObject
+  inline def hanging: hanging = "hanging".asInstanceOf[hanging]
+  
+  @js.native
+  sealed trait help extends StObject
+  inline def help: help = "help".asInstanceOf[help]
   
   @js.native
   sealed trait hex
     extends StObject
-       with ColorPickerFormatType
        with _KeyFilterType
   inline def hex: hex = "hex".asInstanceOf[hex]
   
   @js.native
-  sealed trait horizontal
-    extends StObject
-       with CarouselOrientationType
-       with DataTableScrollDirectionType
-       with DividerLayoutType
-       with MegaMenuOrientationType
-       with SliderOrientationType
-       with SplitterLayoutType
-       with TimelineLayoutType
-       with VirtualScrollerOrientationType
+  sealed trait horizontal extends StObject
   inline def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
   
   @js.native
-  sealed trait hover
-    extends StObject
-       with TooltipEventType
+  sealed trait hover extends StObject
   inline def hover: hover = "hover".asInstanceOf[hover]
   
   @js.native
-  sealed trait hsb
-    extends StObject
-       with ColorPickerFormatType
+  sealed trait hsb extends StObject
   inline def hsb: hsb = "hsb".asInstanceOf[hsb]
   
   @js.native
-  sealed trait in
-    extends StObject
-       with ColumnFilterMatchModeType
-       with DataTableFilterMatchModeType
-       with TreeTableFilterMatchModeType
+  sealed trait ideographic extends StObject
+  inline def ideographic: ideographic = "ideographic".asInstanceOf[ideographic]
+  
+  @js.native
+  sealed trait in extends StObject
   inline def in: in = "in".asInstanceOf[in]
   
   @js.native
-  sealed trait indeterminate
-    extends StObject
-       with ProgressBarModeType
+  sealed trait indeterminate extends StObject
   inline def indeterminate: indeterminate = "indeterminate".asInstanceOf[indeterminate]
   
   @js.native
-  sealed trait info
-    extends StObject
-       with BadgeSeverityType
-       with MessageSeverityType
-       with MessagesSeverityType
-       with TagSeverityType
-       with ToastSeverityType
+  sealed trait info extends StObject
   inline def info: info = "info".asInstanceOf[info]
   
   @js.native
@@ -591,13 +419,15 @@ object primereactStrings {
   inline def inherit: inherit = "inherit".asInstanceOf[inherit]
   
   @js.native
+  sealed trait initial extends StObject
+  inline def initial: initial = "initial".asInstanceOf[initial]
+  
+  @js.native
   sealed trait `inline` extends StObject
   inline def `inline`: `inline` = "inline".asInstanceOf[`inline`]
   
   @js.native
-  sealed trait input
-    extends StObject
-       with AutoCompleteSourceType
+  sealed trait input extends StObject
   inline def input: input = "input".asInstanceOf[input]
   
   @js.native
@@ -607,54 +437,43 @@ object primereactStrings {
   inline def int: int = "int".asInstanceOf[int]
   
   @js.native
-  sealed trait large
-    extends StObject
-       with AvatarSizeType
-       with BadgeSizeType
-       with DataTableSizeType
+  sealed trait isolated extends StObject
+  inline def isolated: isolated = "isolated".asInstanceOf[isolated]
+  
+  @js.native
+  sealed trait label extends StObject
+  inline def label: label = "label".asInstanceOf[label]
+  
+  @js.native
+  sealed trait large extends StObject
   inline def large: large = "large".asInstanceOf[large]
   
   @js.native
-  sealed trait left
-    extends StObject
-       with ButtonPositionType
-       with CalendarIconPosType
-       with ColumnAlignFrozenType
-       with DialogPositionType
-       with DividerAlignType
-       with DockPositionType
-       with GalleriaPositionType
-       with SidebarPositionType
-       with SpeedDialDirectionType
-       with TimelineAlignType
-       with ToastPositionType
-       with ToggleButtonIconPositionType
-       with TooltipPositionType
-       with _ColumnAlignType
+  sealed trait `lazy` extends StObject
+  inline def `lazy`: `lazy` = "lazy".asInstanceOf[`lazy`]
+  
+  @js.native
+  sealed trait left extends StObject
   inline def left: left = "left".asInstanceOf[left]
   
   @js.native
-  sealed trait lenient
-    extends StObject
-       with TreeFilterModeType
-       with TreeSelectFilterModeType
-       with TreeTableFilterModeType
+  sealed trait lenient extends StObject
   inline def lenient: lenient = "lenient".asInstanceOf[lenient]
   
   @js.native
-  sealed trait linear
-    extends StObject
-       with SpeedDialType
+  sealed trait linear extends StObject
   inline def linear: linear = "linear".asInstanceOf[linear]
+  
+  @js.native
+  sealed trait linearRGB extends StObject
+  inline def linearRGB: linearRGB = "linearRGB".asInstanceOf[linearRGB]
   
   @js.native
   sealed trait link extends StObject
   inline def link: link = "link".asInstanceOf[link]
   
   @js.native
-  sealed trait list
-    extends StObject
-       with _DataViewLayoutType
+  sealed trait list extends StObject
   inline def list: list = "list".asInstanceOf[list]
   
   @js.native
@@ -662,11 +481,7 @@ object primereactStrings {
   inline def listbox: listbox = "listbox".asInstanceOf[listbox]
   
   @js.native
-  sealed trait local
-    extends StObject
-       with DataTableStateStorageType
-       with SplitterStateStorageType
-       with StorageType
+  sealed trait local extends StObject
   inline def local: local = "local".asInstanceOf[local]
   
   @js.native
@@ -674,26 +489,36 @@ object primereactStrings {
   inline def location: location = "location".asInstanceOf[location]
   
   @js.native
-  sealed trait lt
-    extends StObject
-       with ColumnFilterMatchModeType
-       with DataTableFilterMatchModeType
-       with TreeTableFilterMatchModeType
+  sealed trait lookup extends StObject
+  inline def lookup: lookup = "lookup".asInstanceOf[lookup]
+  
+  @js.native
+  sealed trait lt extends StObject
   inline def lt: lt = "lt".asInstanceOf[lt]
   
   @js.native
-  sealed trait lte
-    extends StObject
-       with ColumnFilterMatchModeType
-       with DataTableFilterMatchModeType
-       with TreeTableFilterMatchModeType
+  sealed trait lte extends StObject
   inline def lte: lte = "lte".asInstanceOf[lte]
   
   @js.native
-  sealed trait menu
-    extends StObject
-       with DataTableFilterDisplayType
+  sealed trait mathematical extends StObject
+  inline def mathematical: mathematical = "mathematical".asInstanceOf[mathematical]
+  
+  @js.native
+  sealed trait medial extends StObject
+  inline def medial: medial = "medial".asInstanceOf[medial]
+  
+  @js.native
+  sealed trait menu extends StObject
   inline def menu: menu = "menu".asInstanceOf[menu]
+  
+  @js.native
+  sealed trait middle extends StObject
+  inline def middle: middle = "middle".asInstanceOf[middle]
+  
+  @js.native
+  sealed trait miter extends StObject
+  inline def miter: miter = "miter".asInstanceOf[miter]
   
   @js.native
   sealed trait mixed extends StObject
@@ -706,20 +531,19 @@ object primereactStrings {
   inline def money: money = "money".asInstanceOf[money]
   
   @js.native
+  sealed trait month extends StObject
+  inline def month: month = "month".asInstanceOf[month]
+  
+  @js.native
+  sealed trait mouse extends StObject
+  inline def mouse: mouse = "mouse".asInstanceOf[mouse]
+  
+  @js.native
   sealed trait move extends StObject
   inline def move: move = "move".asInstanceOf[move]
   
   @js.native
-  sealed trait multiple
-    extends StObject
-       with ColumnSelectionModeType
-       with DataTableSelectionModeType
-       with DataTableSortModeType
-       with OrganizationChartSelectionModeType
-       with TreeSelectSelectionModeType
-       with TreeSelectionModeType
-       with TreeTableSelectionModeType
-       with TreeTableSortModeType
+  sealed trait multiple extends StObject
   inline def multiple: multiple = "multiple".asInstanceOf[multiple]
   
   @js.native
@@ -731,31 +555,23 @@ object primereactStrings {
   inline def no: no = "no".asInstanceOf[no]
   
   @js.native
-  sealed trait none
-    extends StObject
-       with SkeletonAnimationType
+  sealed trait none extends StObject
   inline def none: none = "none".asInstanceOf[none]
   
   @js.native
-  sealed trait normal
-    extends StObject
-       with AvatarSizeType
-       with BadgeSizeType
-       with DataTableSizeType
+  sealed trait nonzero extends StObject
+  inline def nonzero: nonzero = "nonzero".asInstanceOf[nonzero]
+  
+  @js.native
+  sealed trait normal extends StObject
   inline def normal: normal = "normal".asInstanceOf[normal]
   
   @js.native
-  sealed trait notContains
-    extends StObject
-       with DataTableFilterMatchModeType
+  sealed trait notContains extends StObject
   inline def notContains: notContains = "notContains".asInstanceOf[notContains]
   
   @js.native
-  sealed trait notEquals
-    extends StObject
-       with ColumnFilterMatchModeType
-       with DataTableFilterMatchModeType
-       with TreeTableFilterMatchModeType
+  sealed trait notEquals extends StObject
   inline def notEquals: notEquals = "notEquals".asInstanceOf[notEquals]
   
   @js.native
@@ -765,9 +581,7 @@ object primereactStrings {
   inline def num: num = "num".asInstanceOf[num]
   
   @js.native
-  sealed trait numeric
-    extends StObject
-       with _ColumnDataType
+  sealed trait numeric extends StObject
   inline def numeric: numeric = "numeric".asInstanceOf[numeric]
   
   @js.native
@@ -779,10 +593,12 @@ object primereactStrings {
   inline def on: on = "on".asInstanceOf[on]
   
   @js.native
-  sealed trait or
-    extends StObject
-       with ColumnFilterOperatorType
+  sealed trait or extends StObject
   inline def or: or = "or".asInstanceOf[or]
+  
+  @js.native
+  sealed trait orientationChange extends StObject
+  inline def orientationChange: orientationChange = "orientationChange".asInstanceOf[orientationChange]
   
   @js.native
   sealed trait other extends StObject
@@ -795,9 +611,7 @@ object primereactStrings {
   inline def outlined: outlined = "outlined".asInstanceOf[outlined]
   
   @js.native
-  sealed trait outside
-    extends StObject
-       with _CalendarVisibleType
+  sealed trait outside extends StObject
   inline def outside: outside = "outside".asInstanceOf[outside]
   
   @js.native
@@ -809,9 +623,7 @@ object primereactStrings {
   inline def page: page = "page".asInstanceOf[page]
   
   @js.native
-  sealed trait parent
-    extends StObject
-       with ScrollTopTargetType
+  sealed trait parent extends StObject
   inline def parent: parent = "parent".asInstanceOf[parent]
   
   @js.native
@@ -839,27 +651,23 @@ object primereactStrings {
   inline def previous: previous = "previous".asInstanceOf[previous]
   
   @js.native
-  sealed trait `quarter-circle`
-    extends StObject
-       with SpeedDialType
+  sealed trait `quarter-circle` extends StObject
   inline def `quarter-circle`: `quarter-circle` = "quarter-circle".asInstanceOf[`quarter-circle`]
   
   @js.native
-  sealed trait radio
-    extends StObject
-       with DataTableSelectType
+  sealed trait radio extends StObject
   inline def radio: radio = "radio".asInstanceOf[radio]
   
   @js.native
-  sealed trait radiobutton
-    extends StObject
-       with DataTableSelectionModeType
+  sealed trait radiobutton extends StObject
   inline def radiobutton: radiobutton = "radiobutton".asInstanceOf[radiobutton]
   
   @js.native
-  sealed trait rectangle
-    extends StObject
-       with SkeletonShapeType
+  sealed trait range extends StObject
+  inline def range: range = "range".asInstanceOf[range]
+  
+  @js.native
+  sealed trait rectangle extends StObject
   inline def rectangle: rectangle = "rectangle".asInstanceOf[rectangle]
   
   @js.native
@@ -875,51 +683,43 @@ object primereactStrings {
   inline def `removals text`: `removals text` = ("removals text").asInstanceOf[`removals text`]
   
   @js.native
+  sealed trait replace extends StObject
+  inline def replace: replace = "replace".asInstanceOf[replace]
+  
+  @js.native
   sealed trait reset extends StObject
   inline def reset: reset = "reset".asInstanceOf[reset]
   
   @js.native
-  sealed trait response
-    extends StObject
-       with TerminalServiceActionType
+  sealed trait resize extends StObject
+  inline def resize: resize = "resize".asInstanceOf[resize]
+  
+  @js.native
+  sealed trait response extends StObject
   inline def response: response = "response".asInstanceOf[response]
   
   @js.native
-  sealed trait rgb
-    extends StObject
-       with ColorPickerFormatType
+  sealed trait rgb extends StObject
   inline def rgb: rgb = "rgb".asInstanceOf[rgb]
   
   @js.native
-  sealed trait right
-    extends StObject
-       with ButtonPositionType
-       with CalendarIconPosType
-       with ColumnAlignFrozenType
-       with DialogPositionType
-       with DividerAlignType
-       with DockPositionType
-       with GalleriaPositionType
-       with SidebarPositionType
-       with SpeedDialDirectionType
-       with TimelineAlignType
-       with ToastPositionType
-       with ToggleButtonIconPositionType
-       with TooltipPositionType
-       with _ColumnAlignType
+  sealed trait right extends StObject
   inline def right: right = "right".asInstanceOf[right]
   
   @js.native
-  sealed trait row
-    extends StObject
-       with DataTableFilterDisplayType
-       with DataTableSelectType
+  sealed trait round extends StObject
+  inline def round: round = "round".asInstanceOf[round]
+  
+  @js.native
+  sealed trait row extends StObject
   inline def row: row = "row".asInstanceOf[row]
   
   @js.native
-  sealed trait scroll
-    extends StObject
-       with DataTableResponsiveLayoutType
+  sealed trait sRGB extends StObject
+  inline def sRGB: sRGB = "sRGB".asInstanceOf[sRGB]
+  
+  @js.native
+  sealed trait scroll extends StObject
   inline def scroll: scroll = "scroll".asInstanceOf[scroll]
   
   @js.native
@@ -927,13 +727,15 @@ object primereactStrings {
   inline def search: search = "search".asInstanceOf[search]
   
   @js.native
+  sealed trait secondary extends StObject
+  inline def secondary: secondary = "secondary".asInstanceOf[secondary]
+  
+  @js.native
   sealed trait self extends StObject
   inline def self: self = "self".asInstanceOf[self]
   
   @js.native
-  sealed trait `semi-circle`
-    extends StObject
-       with SpeedDialType
+  sealed trait `semi-circle` extends StObject
   inline def `semi-circle`: `semi-circle` = "semi-circle".asInstanceOf[`semi-circle`]
   
   @js.native
@@ -941,43 +743,23 @@ object primereactStrings {
   inline def send: send = "send".asInstanceOf[send]
   
   @js.native
-  sealed trait session
-    extends StObject
-       with DataTableStateStorageType
-       with SplitterStateStorageType
-       with StorageType
+  sealed trait session extends StObject
   inline def session: session = "session".asInstanceOf[session]
   
   @js.native
-  sealed trait single
-    extends StObject
-       with ColumnSelectionModeType
-       with DataTableSelectionModeType
-       with DataTableSortModeType
-       with OrganizationChartSelectionModeType
-       with TreeSelectSelectionModeType
-       with TreeSelectionModeType
-       with TreeTableSelectionModeType
-       with TreeTableSortModeType
+  sealed trait single extends StObject
   inline def single: single = "single".asInstanceOf[single]
   
   @js.native
-  sealed trait small
-    extends StObject
-       with DataTableSizeType
+  sealed trait small extends StObject
   inline def small: small = "small".asInstanceOf[small]
   
   @js.native
-  sealed trait smooth
-    extends StObject
-       with ScrollTopScrollBehavior
-       with VirtualScrollerScrollBehavior
+  sealed trait smooth extends StObject
   inline def smooth: smooth = "smooth".asInstanceOf[smooth]
   
   @js.native
-  sealed trait solid
-    extends StObject
-       with DividerBorderType
+  sealed trait solid extends StObject
   inline def solid: solid = "solid".asInstanceOf[solid]
   
   @js.native
@@ -985,23 +767,19 @@ object primereactStrings {
   inline def spelling: spelling = "spelling".asInstanceOf[spelling]
   
   @js.native
-  sealed trait square
-    extends StObject
-       with AvatarShapeType
+  sealed trait square extends StObject
   inline def square: square = "square".asInstanceOf[square]
   
   @js.native
-  sealed trait stack
-    extends StObject
-       with DataTableResponsiveLayoutType
+  sealed trait stack extends StObject
   inline def stack: stack = "stack".asInstanceOf[stack]
   
   @js.native
-  sealed trait startsWith
-    extends StObject
-       with ColumnFilterMatchModeType
-       with DataTableFilterMatchModeType
-       with TreeTableFilterMatchModeType
+  sealed trait stacked extends StObject
+  inline def stacked: stacked = "stacked".asInstanceOf[stacked]
+  
+  @js.native
+  sealed trait startsWith extends StObject
   inline def startsWith: startsWith = "startsWith".asInstanceOf[startsWith]
   
   @js.native
@@ -1009,11 +787,7 @@ object primereactStrings {
   inline def step: step = "step".asInstanceOf[step]
   
   @js.native
-  sealed trait strict
-    extends StObject
-       with TreeFilterModeType
-       with TreeSelectFilterModeType
-       with TreeTableFilterModeType
+  sealed trait strict extends StObject
   inline def strict: strict = "strict".asInstanceOf[strict]
   
   @js.native
@@ -1021,23 +795,23 @@ object primereactStrings {
   inline def submit: submit = "submit".asInstanceOf[submit]
   
   @js.native
-  sealed trait success
-    extends StObject
-       with BadgeSeverityType
-       with MessageSeverityType
-       with MessagesSeverityType
-       with TagSeverityType
-       with ToastSeverityType
+  sealed trait success extends StObject
   inline def success: success = "success".asInstanceOf[success]
+  
+  @js.native
+  sealed trait sum extends StObject
+  inline def sum: sum = "sum".asInstanceOf[sum]
   
   @js.native
   sealed trait tel extends StObject
   inline def tel: tel = "tel".asInstanceOf[tel]
   
   @js.native
-  sealed trait text
-    extends StObject
-       with _ColumnDataType
+  sealed trait terminal extends StObject
+  inline def terminal: terminal = "terminal".asInstanceOf[terminal]
+  
+  @js.native
+  sealed trait text extends StObject
   inline def text: text = "text".asInstanceOf[text]
   
   @js.native
@@ -1049,56 +823,39 @@ object primereactStrings {
   inline def `text removals`: `text removals` = ("text removals").asInstanceOf[`text removals`]
   
   @js.native
+  sealed trait `text-after-edge` extends StObject
+  inline def `text-after-edge`: `text-after-edge` = "text-after-edge".asInstanceOf[`text-after-edge`]
+  
+  @js.native
+  sealed trait `text-before-edge` extends StObject
+  inline def `text-before-edge`: `text-before-edge` = "text-before-edge".asInstanceOf[`text-before-edge`]
+  
+  @js.native
   sealed trait time extends StObject
   inline def time: time = "time".asInstanceOf[time]
   
   @js.native
-  sealed trait `to-end`
-    extends StObject
-       with VirtualScrollerToType
+  sealed trait `to-end` extends StObject
   inline def `to-end`: `to-end` = "to-end".asInstanceOf[`to-end`]
   
   @js.native
-  sealed trait `to-start`
-    extends StObject
-       with VirtualScrollerToType
+  sealed trait `to-start` extends StObject
   inline def `to-start`: `to-start` = "to-start".asInstanceOf[`to-start`]
   
   @js.native
-  sealed trait top
-    extends StObject
-       with ButtonPositionType
-       with DataTablePaginatorPositionType
-       with DataViewPaginatorPositionType
-       with DialogPositionType
-       with DividerAlignType
-       with DockPositionType
-       with GalleriaPositionType
-       with SidebarPositionType
-       with TimelineAlignType
-       with ToastPositionType
-       with TooltipPositionType
-       with TreeTablePaginatorPositionType
+  sealed trait top extends StObject
   inline def top: top = "top".asInstanceOf[top]
   
   @js.native
-  sealed trait `top-center`
-    extends StObject
-       with ToastPositionType
+  sealed trait `top-center` extends StObject
   inline def `top-center`: `top-center` = "top-center".asInstanceOf[`top-center`]
   
   @js.native
-  sealed trait `top-left`
-    extends StObject
-       with DialogPositionType
-       with ToastPositionType
+  sealed trait `top-left` extends StObject
   inline def `top-left`: `top-left` = "top-left".asInstanceOf[`top-left`]
   
   @js.native
-  sealed trait `top-right`
-    extends StObject
-       with DialogPositionType
-       with ToastPositionType
+  sealed trait `top-right` extends StObject
   inline def `top-right`: `top-right` = "top-right".asInstanceOf[`top-right`]
   
   @js.native
@@ -1106,21 +863,15 @@ object primereactStrings {
   inline def tree: tree = "tree".asInstanceOf[tree]
   
   @js.native
-  sealed trait up
-    extends StObject
-       with SpeedDialDirectionType
+  sealed trait up extends StObject
   inline def up: up = "up".asInstanceOf[up]
   
   @js.native
-  sealed trait `up-left`
-    extends StObject
-       with SpeedDialDirectionType
+  sealed trait `up-left` extends StObject
   inline def `up-left`: `up-left` = "up-left".asInstanceOf[`up-left`]
   
   @js.native
-  sealed trait `up-right`
-    extends StObject
-       with SpeedDialDirectionType
+  sealed trait `up-right` extends StObject
   inline def `up-right`: `up-right` = "up-right".asInstanceOf[`up-right`]
   
   @js.native
@@ -1128,56 +879,40 @@ object primereactStrings {
   inline def url: url = "url".asInstanceOf[url]
   
   @js.native
+  sealed trait `use-credentials` extends StObject
+  inline def `use-credentials`: `use-credentials` = "use-credentials".asInstanceOf[`use-credentials`]
+  
+  @js.native
   sealed trait user extends StObject
   inline def user: user = "user".asInstanceOf[user]
   
   @js.native
-  sealed trait vertical
-    extends StObject
-       with CarouselOrientationType
-       with DataTableScrollDirectionType
-       with DividerLayoutType
-       with MegaMenuOrientationType
-       with SliderOrientationType
-       with SplitterLayoutType
-       with TimelineLayoutType
-       with VirtualScrollerOrientationType
+  sealed trait vertical extends StObject
   inline def vertical: vertical = "vertical".asInstanceOf[vertical]
   
   @js.native
-  sealed trait warn
-    extends StObject
-       with MessageSeverityType
-       with MessagesSeverityType
-       with ToastSeverityType
+  sealed trait warn extends StObject
   inline def warn: warn = "warn".asInstanceOf[warn]
   
   @js.native
-  sealed trait warning
-    extends StObject
-       with BadgeSeverityType
-       with TagSeverityType
+  sealed trait warning extends StObject
   inline def warning: warning = "warning".asInstanceOf[warning]
   
   @js.native
-  sealed trait wave
-    extends StObject
-       with SkeletonAnimationType
+  sealed trait wave extends StObject
   inline def wave: wave = "wave".asInstanceOf[wave]
   
   @js.native
-  sealed trait window
-    extends StObject
-       with ScrollTopTargetType
-       with _TargetType
+  sealed trait window extends StObject
   inline def window: window = "window".asInstanceOf[window]
   
   @js.native
-  sealed trait xlarge
-    extends StObject
-       with AvatarSizeType
-       with BadgeSizeType
+  sealed trait xlarge extends StObject
   inline def xlarge: xlarge = "xlarge".asInstanceOf[xlarge]
+  
+  @js.native
+  sealed trait year extends StObject
+  inline def year: year = "year".asInstanceOf[year]
   
   @js.native
   sealed trait yes extends StObject

@@ -13,7 +13,7 @@ object websocket {
     extends typings.lib0.distWebsocketMod.WebsocketClient {
     /**
       * @param {string} url
-      * @param {object} [opts]
+      * @param {object} opts
       * @param {'arraybuffer' | 'blob' | null} [opts.binaryType] Set `ws.binaryType`
       */
     def this(url: String) = this()

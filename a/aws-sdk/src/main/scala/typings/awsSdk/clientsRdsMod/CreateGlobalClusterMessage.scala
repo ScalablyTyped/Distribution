@@ -27,7 +27,7 @@ trait CreateGlobalClusterMessage extends StObject {
   var EngineVersion: js.UndefOr[String] = js.undefined
   
   /**
-    * The cluster identifier of the new global database cluster.
+    * The cluster identifier of the new global database cluster. This parameter is stored as a lowercase string.
     */
   var GlobalClusterIdentifier: js.UndefOr[String] = js.undefined
   

@@ -8,7 +8,6 @@ import typings.jupyterlabServices.libKernelKernelMod.IManager
 import typings.jupyterlabServices.libKernelManagerMod.KernelManager.IOptions
 import typings.jupyterlabServices.libKernelRestapiMod.IKernelOptions
 import typings.jupyterlabServices.libKernelRestapiMod.IModel
-import typings.luminoAlgorithm.typesIterMod.IIterator
 import typings.luminoPolling.typesPollMod.Poll.Standby
 import typings.luminoSignaling.mod.ISignal
 import org.scalablytyped.runtime.StObject
@@ -142,7 +141,7 @@ object libKernelManagerMod {
       *
       * @returns A new iterator over the running kernels.
       */
-    def running(): IIterator[IModel] = js.native
+    def running(): Any = js.native
     
     /**
       * A signal emitted when the running kernels change.

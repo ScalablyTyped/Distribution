@@ -551,6 +551,11 @@ object ALIAS_KEYS {
   def ImportNamespaceSpecifier: js.UndefOr[js.Array[String]] = js.native
   inline def ImportNamespaceSpecifier_=(x: js.UndefOr[js.Array[String]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ImportNamespaceSpecifier")(x.asInstanceOf[js.Any])
   
+  @JSImport("@babel/types/lib", "ALIAS_KEYS.ImportOrExportDeclaration")
+  @js.native
+  def ImportOrExportDeclaration: js.UndefOr[js.Array[String]] = js.native
+  inline def ImportOrExportDeclaration_=(x: js.UndefOr[js.Array[String]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ImportOrExportDeclaration")(x.asInstanceOf[js.Any])
+  
   @JSImport("@babel/types/lib", "ALIAS_KEYS.ImportSpecifier")
   @js.native
   def ImportSpecifier: js.UndefOr[js.Array[String]] = js.native

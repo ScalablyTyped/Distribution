@@ -19,8 +19,14 @@ object libMediaCanvasRenderTargetMod {
     def this(width: Double, height: Double) = this()
     def this(width: Double, height: Double, resolution: Double) = this()
     
+    /* protected */ var _canvas: ICanvas | Null = js.native
+    
+    /* private */ var _checkDestroyed: Any = js.native
+    
+    /* protected */ var _context: ICanvasRenderingContext2D | Null = js.native
+    
     /** The Canvas object that belongs to this CanvasRenderTarget. */
-    var canvas: ICanvas = js.native
+    def canvas: ICanvas = js.native
     
     /**
       * Clears the canvas that was created by the CanvasRenderTarget class.
@@ -29,7 +35,7 @@ object libMediaCanvasRenderTargetMod {
     def clear(): Unit = js.native
     
     /** A CanvasRenderingContext2D object representing a two-dimensional rendering context. */
-    var context: ICanvasRenderingContext2D = js.native
+    def context: ICanvasRenderingContext2D = js.native
     
     /** Destroys this canvas. */
     def destroy(): Unit = js.native

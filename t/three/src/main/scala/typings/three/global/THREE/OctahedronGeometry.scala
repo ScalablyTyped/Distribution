@@ -7,8 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("THREE.OctahedronGeometry")
 @js.native
 /**
-  * @param [radius=1]
-  * @param [detail=0]
+  * Create a new instance of {@link OctahedronGeometry}
+  * @param radius Radius of the octahedron. Expects a `Float`. Default `1`
+  * @param detail Setting this to a value greater than zero add vertices making it no longer an octahedron. Expects a `Integer`. Default `0`
   */
 open class OctahedronGeometry ()
   extends typings.three.mod.OctahedronGeometry {
@@ -23,5 +24,6 @@ object OctahedronGeometry {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def fromJSON(data: Any): typings.three.srcGeometriesOctahedronGeometryMod.OctahedronGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(data.asInstanceOf[js.Any]).asInstanceOf[typings.three.srcGeometriesOctahedronGeometryMod.OctahedronGeometry]
+  /** @internal */
+  inline def fromJSON(data: js.Object): typings.three.srcGeometriesOctahedronGeometryMod.OctahedronGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(data.asInstanceOf[js.Any]).asInstanceOf[typings.three.srcGeometriesOctahedronGeometryMod.OctahedronGeometry]
 }

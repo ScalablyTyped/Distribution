@@ -100,6 +100,7 @@ import typings.react.mod.WheelEvent
 import typings.react.mod.WheelEventHandler
 import typings.std.Element
 import typings.std.Event
+import typings.std.FormData
 import typings.std.HTMLFormElement
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
@@ -260,7 +261,7 @@ object anon {
     
     var accessKey: js.UndefOr[String] = js.undefined
     
-    var action: js.UndefOr[String] = js.undefined
+    var action: js.UndefOr[String | (js.Function1[/* formData */ FormData, Unit])] = js.undefined
     
     var `aria-activedescendant`: js.UndefOr[String] = js.undefined
     
@@ -750,6 +751,11 @@ object anon {
     
     var radioGroup: js.UndefOr[String] = js.undefined
     
+    /**
+      * Allows getting a ref to the component instance.
+      * Once the component unmounts, React will set `ref.current` to `null` (or call the ref with `null` if you passed a callback ref).
+      * @see https://react.dev/learn/referencing-values-with-refs#refs-and-the-dom
+      */
     var ref: js.UndefOr[Ref[HTMLFormElement]] = js.undefined
     
     var resource: js.UndefOr[String] = js.undefined
@@ -806,7 +812,9 @@ object anon {
       
       inline def setAccessKeyUndefined: Self = StObject.set(x, "accessKey", js.undefined)
       
-      inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      inline def setAction(value: String | (js.Function1[/* formData */ FormData, Unit])): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      
+      inline def setActionFunction1(value: /* formData */ FormData => Unit): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
       
       inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
       

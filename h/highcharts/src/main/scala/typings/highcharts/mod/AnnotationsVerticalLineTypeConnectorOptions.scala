@@ -16,17 +16,7 @@ trait AnnotationsVerticalLineTypeConnectorOptions extends StObject {
     */
   var fill: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
-  /**
-    * (Highstock) The height of the shape.
-    */
-  var height: js.UndefOr[Double] = js.undefined
-  
   var markerEnd: js.UndefOr[String] = js.undefined
-  
-  /**
-    * (Highstock) The radius of the shape.
-    */
-  var r: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock) The radius of the shape in y direction. Used for the ellipse.
@@ -54,17 +44,6 @@ trait AnnotationsVerticalLineTypeConnectorOptions extends StObject {
     * (Highstock) The pixel stroke width of the shape.
     */
   var strokeWidth: js.UndefOr[Double] = js.undefined
-  
-  /**
-    * (Highstock) The type of the shape. Avaliable options are circle, rect and
-    * ellipse.
-    */
-  var `type`: js.UndefOr[String] = js.undefined
-  
-  /**
-    * (Highstock) The width of the shape.
-    */
-  var width: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock) The xAxis index to which the points should be attached. Used
@@ -96,17 +75,9 @@ object AnnotationsVerticalLineTypeConnectorOptions {
     
     inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
     
-    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
-    
-    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
-    
     inline def setMarkerEnd(value: String): Self = StObject.set(x, "markerEnd", value.asInstanceOf[js.Any])
     
     inline def setMarkerEndUndefined: Self = StObject.set(x, "markerEnd", js.undefined)
-    
-    inline def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
-    
-    inline def setRUndefined: Self = StObject.set(x, "r", js.undefined)
     
     inline def setRy(value: Double): Self = StObject.set(x, "ry", value.asInstanceOf[js.Any])
     
@@ -127,14 +98,6 @@ object AnnotationsVerticalLineTypeConnectorOptions {
     inline def setStrokeWidth(value: Double): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
     
     inline def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
-    
-    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-    
-    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
-    
-    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
-    
-    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
     inline def setXAxis(value: Double): Self = StObject.set(x, "xAxis", value.asInstanceOf[js.Any])
     

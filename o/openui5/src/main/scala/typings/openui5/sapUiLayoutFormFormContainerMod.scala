@@ -126,6 +126,7 @@ object sapUiLayoutFormFormContainerMod {
     
     /**
       * @SINCE 1.74.0
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Sets the editable state of the `FormContainer`.
       *

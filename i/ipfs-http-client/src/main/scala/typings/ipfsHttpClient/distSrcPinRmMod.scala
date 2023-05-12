@@ -14,13 +14,13 @@ object distSrcPinRmMod {
   val ^ : js.Any = js.native
   
   inline def createRm(config: Options): js.Function2[
-    /* path */ String | (CID[Any, Double, Double, Version]), 
+    /* ipfsPath */ String | (CID[Any, Double, Double, Version]), 
     /* options */ js.UndefOr[
       (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_pin.RmOptions */ Any) & typings.ipfsHttpClient.distSrcTypesMod.HTTPClientExtraOptions
     ], 
     js.Promise[CID[Any, Double, Double, Version]]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("createRm")(config.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
-    /* path */ String | (CID[Any, Double, Double, Version]), 
+    /* ipfsPath */ String | (CID[Any, Double, Double, Version]), 
     /* options */ js.UndefOr[
       (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_pin.RmOptions */ Any) & typings.ipfsHttpClient.distSrcTypesMod.HTTPClientExtraOptions
     ], 

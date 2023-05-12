@@ -1,6 +1,6 @@
 package typings.openui5
 
-import typings.openui5.anon.`0`
+import typings.openui5.anon.`1`
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
 import typings.openui5.sapUiCommonsLibraryMod.RatingIndicatorVisualMode
@@ -258,6 +258,8 @@ object sapUiCommonsRatingIndicatorMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:change change} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -266,7 +268,7 @@ object sapUiCommonsRatingIndicatorMod {
     def fireChange(/**
       * Parameters to pass along with the event
       */
-    mParameters: `0`): this.type = js.native
+    mParameters: `1`): this.type = js.native
     
     /**
       * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaDescribedBy

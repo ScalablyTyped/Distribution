@@ -16,6 +16,8 @@ trait PlotDatum extends StObject {
   
   var pointNumber: Double
   
+  var text: String
+  
   var x: Datum
   
   var xaxis: LayoutAxis
@@ -31,10 +33,11 @@ object PlotDatum {
     data: PlotData,
     pointIndex: Double,
     pointNumber: Double,
+    text: String,
     xaxis: LayoutAxis,
     yaxis: LayoutAxis
   ): PlotDatum = {
-    val __obj = js.Dynamic.literal(curveNumber = curveNumber.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], pointIndex = pointIndex.asInstanceOf[js.Any], pointNumber = pointNumber.asInstanceOf[js.Any], xaxis = xaxis.asInstanceOf[js.Any], yaxis = yaxis.asInstanceOf[js.Any], customdata = null, x = null, y = null)
+    val __obj = js.Dynamic.literal(curveNumber = curveNumber.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], pointIndex = pointIndex.asInstanceOf[js.Any], pointNumber = pointNumber.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], xaxis = xaxis.asInstanceOf[js.Any], yaxis = yaxis.asInstanceOf[js.Any], customdata = null, x = null, y = null)
     __obj.asInstanceOf[PlotDatum]
   }
   
@@ -52,6 +55,8 @@ object PlotDatum {
     inline def setPointIndex(value: Double): Self = StObject.set(x, "pointIndex", value.asInstanceOf[js.Any])
     
     inline def setPointNumber(value: Double): Self = StObject.set(x, "pointNumber", value.asInstanceOf[js.Any])
+    
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
     inline def setX(value: Datum): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     

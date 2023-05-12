@@ -29,8 +29,6 @@ trait Typeofcookies extends StObject {
   @JSName("remove")
   def remove_Promise(details: Details): js.Promise[Details] = js.native
   
-  def set(details: SetDetails): Unit = js.native
+  def set(details: SetDetails): js.Promise[Cookie | Null] = js.native
   def set(details: SetDetails, callback: js.Function1[/* cookie */ Cookie | Null, Unit]): Unit = js.native
-  @JSName("set")
-  def set_Promise(details: SetDetails): js.Promise[Cookie | Null] = js.native
 }

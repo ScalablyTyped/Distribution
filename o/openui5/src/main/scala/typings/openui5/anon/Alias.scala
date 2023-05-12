@@ -17,9 +17,9 @@ trait Alias extends StObject {
   var client: String
   
   /**
-    * setting this flag to 'true' overrides the already existing origin
+    * setting this flag to `true` overrides the already existing origin
     */
-  var force: String
+  var force: Boolean
   
   /**
     * the system id which will be used as the origin
@@ -28,7 +28,7 @@ trait Alias extends StObject {
 }
 object Alias {
   
-  inline def apply(alias: String, client: String, force: String, system: String): Alias = {
+  inline def apply(alias: String, client: String, force: Boolean, system: String): Alias = {
     val __obj = js.Dynamic.literal(alias = alias.asInstanceOf[js.Any], client = client.asInstanceOf[js.Any], force = force.asInstanceOf[js.Any], system = system.asInstanceOf[js.Any])
     __obj.asInstanceOf[Alias]
   }
@@ -40,7 +40,7 @@ object Alias {
     
     inline def setClient(value: String): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     
-    inline def setForce(value: String): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
+    inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
     
     inline def setSystem(value: String): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
   }

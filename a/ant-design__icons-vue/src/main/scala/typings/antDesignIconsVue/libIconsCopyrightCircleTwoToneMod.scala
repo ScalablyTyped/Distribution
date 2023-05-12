@@ -16,7 +16,7 @@ object libIconsCopyrightCircleTwoToneMod extends Shortcut {
   @js.native
   trait CopyrightCircleTwoToneIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_CopyrightCircleTwoToneIconType: String = js.native

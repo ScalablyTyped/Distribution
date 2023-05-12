@@ -13,7 +13,7 @@ trait FontFace extends StObject {
   var descentOverride: java.lang.String
   
   /* standard dom */
-  var display: java.lang.String
+  var display: FontDisplay
   
   /* standard dom */
   var family: java.lang.String
@@ -46,9 +46,6 @@ trait FontFace extends StObject {
   var variant: java.lang.String
   
   /* standard dom */
-  var variationSettings: java.lang.String
-  
-  /* standard dom */
   var weight: java.lang.String
 }
 object FontFace {
@@ -56,7 +53,7 @@ object FontFace {
   inline def apply(
     ascentOverride: java.lang.String,
     descentOverride: java.lang.String,
-    display: java.lang.String,
+    display: FontDisplay,
     family: java.lang.String,
     featureSettings: java.lang.String,
     lineGapOverride: java.lang.String,
@@ -67,10 +64,9 @@ object FontFace {
     style: java.lang.String,
     unicodeRange: java.lang.String,
     variant: java.lang.String,
-    variationSettings: java.lang.String,
     weight: java.lang.String
   ): FontFace = {
-    val __obj = js.Dynamic.literal(ascentOverride = ascentOverride.asInstanceOf[js.Any], descentOverride = descentOverride.asInstanceOf[js.Any], display = display.asInstanceOf[js.Any], family = family.asInstanceOf[js.Any], featureSettings = featureSettings.asInstanceOf[js.Any], lineGapOverride = lineGapOverride.asInstanceOf[js.Any], load = js.Any.fromFunction0(load), loaded = loaded.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], stretch = stretch.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], unicodeRange = unicodeRange.asInstanceOf[js.Any], variant = variant.asInstanceOf[js.Any], variationSettings = variationSettings.asInstanceOf[js.Any], weight = weight.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(ascentOverride = ascentOverride.asInstanceOf[js.Any], descentOverride = descentOverride.asInstanceOf[js.Any], display = display.asInstanceOf[js.Any], family = family.asInstanceOf[js.Any], featureSettings = featureSettings.asInstanceOf[js.Any], lineGapOverride = lineGapOverride.asInstanceOf[js.Any], load = js.Any.fromFunction0(load), loaded = loaded.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], stretch = stretch.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], unicodeRange = unicodeRange.asInstanceOf[js.Any], variant = variant.asInstanceOf[js.Any], weight = weight.asInstanceOf[js.Any])
     __obj.asInstanceOf[FontFace]
   }
   
@@ -81,7 +77,7 @@ object FontFace {
     
     inline def setDescentOverride(value: java.lang.String): Self = StObject.set(x, "descentOverride", value.asInstanceOf[js.Any])
     
-    inline def setDisplay(value: java.lang.String): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+    inline def setDisplay(value: FontDisplay): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     
     inline def setFamily(value: java.lang.String): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
     
@@ -102,8 +98,6 @@ object FontFace {
     inline def setUnicodeRange(value: java.lang.String): Self = StObject.set(x, "unicodeRange", value.asInstanceOf[js.Any])
     
     inline def setVariant(value: java.lang.String): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
-    
-    inline def setVariationSettings(value: java.lang.String): Self = StObject.set(x, "variationSettings", value.asInstanceOf[js.Any])
     
     inline def setWeight(value: java.lang.String): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
   }

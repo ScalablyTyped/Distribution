@@ -112,7 +112,7 @@ type eventStatusCodeList = js.Array[eventStatusCode]
 type eventType = String
 
 /* Rewritten from type alias, can be one of: 
-  - typings.awsSdk.awsSdkStrings.issue
+  - typings.awsSdk.awsSdkStrings.issue_
   - typings.awsSdk.awsSdkStrings.accountNotification
   - typings.awsSdk.awsSdkStrings.scheduledChange
   - typings.awsSdk.awsSdkStrings.investigation

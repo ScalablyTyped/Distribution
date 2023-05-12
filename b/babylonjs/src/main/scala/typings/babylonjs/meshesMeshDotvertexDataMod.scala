@@ -18,6 +18,7 @@ import typings.babylonjs.anon.Precision
 import typings.babylonjs.anon.Radius
 import typings.babylonjs.anon.SideOrientation
 import typings.babylonjs.anon.Subdivisions
+import typings.babylonjs.anon.Transform
 import typings.babylonjs.mathsMathDotcolorMod.Color4
 import typings.babylonjs.mathsMathDotvectorMod.Matrix
 import typings.babylonjs.mathsMathDotvectorMod.Vector4
@@ -48,14 +49,14 @@ object meshesMeshDotvertexDataMod {
     
     def _mergeCoroutine(
       transform: Unit,
-      vertexDatas: js.Array[js.Tuple2[/* vertexData */ VertexData, /* transform */ js.UndefOr[Matrix]]],
+      vertexDatas: js.Array[Transform],
       use32BitsIndices: Boolean,
       isAsync: Boolean,
       forceCloneIndices: Boolean
     ): Coroutine[VertexData] = js.native
     def _mergeCoroutine(
       transform: Unit,
-      vertexDatas: js.Array[js.Tuple2[/* vertexData */ VertexData, /* transform */ js.UndefOr[Matrix]]],
+      vertexDatas: js.Array[Transform],
       use32BitsIndices: Unit,
       isAsync: Boolean,
       forceCloneIndices: Boolean
@@ -65,14 +66,14 @@ object meshesMeshDotvertexDataMod {
       */
     def _mergeCoroutine(
       transform: Matrix,
-      vertexDatas: js.Array[js.Tuple2[/* vertexData */ VertexData, /* transform */ js.UndefOr[Matrix]]],
+      vertexDatas: js.Array[Transform],
       use32BitsIndices: Boolean,
       isAsync: Boolean,
       forceCloneIndices: Boolean
     ): Coroutine[VertexData] = js.native
     def _mergeCoroutine(
       transform: Matrix,
-      vertexDatas: js.Array[js.Tuple2[/* vertexData */ VertexData, /* transform */ js.UndefOr[Matrix]]],
+      vertexDatas: js.Array[Transform],
       use32BitsIndices: Unit,
       isAsync: Boolean,
       forceCloneIndices: Boolean

@@ -1,7 +1,5 @@
 package typings.lruMemoizer
 
-import typings.lruCache.mod.DeprecatedOptions
-import typings.lruCache.mod.SharedOptions
 import typings.lruMemoizer.lruMemoizerStrings.hit
 import typings.lruMemoizer.lruMemoizerStrings.miss
 import typings.lruMemoizer.lruMemoizerStrings.queue
@@ -11,64 +9,323 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object libUtilMod {
   
-  @js.native
-  trait IBypassFunction[T1, T2, T3, T4, T5, T6] extends StObject {
-    
-    def apply(): Boolean = js.native
-    def apply(arg1: T1): Boolean = js.native
-    def apply(arg1: T1, arg2: T2): Boolean = js.native
-    def apply(arg1: T1, arg2: T2, arg3: T3): Boolean = js.native
-    def apply(arg1: T1, arg2: T2, arg3: T3, arg4: T4): Boolean = js.native
-    def apply(arg1: T1, arg2: T2, arg3: T3, arg4: T4, arg5: T5): Boolean = js.native
-    def apply(arg1: T1, arg2: T2, arg3: T3, arg4: T4, arg5: T5, arg6: T6): Boolean = js.native
-    def apply(rest: Any*): Boolean = js.native
-  }
+  type IBypassFunction0 = js.Function0[Boolean]
   
-  @js.native
-  trait IHashingFunction[T1, T2, T3, T4, T5, T6] extends StObject {
-    
-    def apply(): String = js.native
-    def apply(arg1: T1): String = js.native
-    def apply(arg1: T1, arg2: T2): String = js.native
-    def apply(arg1: T1, arg2: T2, arg3: T3): String = js.native
-    def apply(arg1: T1, arg2: T2, arg3: T3, arg4: T4): String = js.native
-    def apply(arg1: T1, arg2: T2, arg3: T3, arg4: T4, arg5: T5): String = js.native
-    def apply(arg1: T1, arg2: T2, arg3: T3, arg4: T4, arg5: T5, arg6: T6): String = js.native
-    def apply(rest: Any*): String = js.native
-  }
+  type IBypassFunction1[T1] = js.Function1[/* a1 */ T1, Boolean]
   
-  @js.native
-  trait IMaxAgeFunction[T1, T2, T3, T4, T5, T6, TResult] extends StObject {
-    
-    def apply(arg1: T1, arg2: T2, arg3: T3, arg4: T4, arg5: T5, arg6: T6, res: TResult): Double = js.native
-    def apply(arg1: T1, arg2: T2, arg3: T3, arg4: T4, arg5: T5, res: TResult): Double = js.native
-    def apply(arg1: T1, arg2: T2, arg3: T3, arg4: T4, res: TResult): Double = js.native
-    def apply(arg1: T1, arg2: T2, arg3: T3, res: TResult): Double = js.native
-    def apply(arg1: T1, arg2: T2, res: TResult): Double = js.native
-    def apply(arg1: T1, res: TResult): Double = js.native
-    def apply(res: TResult): Double = js.native
-    def apply(rest: Any*): Double = js.native
-  }
+  type IBypassFunction2[T1, T2] = js.Function2[/* a1 */ T1, /* a2 */ T2, Boolean]
   
-  type INodeStyleCallBack[SuccessArg] = js.Function2[/* err */ js.Error, /* result */ js.UndefOr[SuccessArg], Unit]
+  type IBypassFunction3[T1, T2, T3] = js.Function3[/* a1 */ T1, /* a2 */ T2, /* a3 */ T3, Boolean]
   
-  /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped lru-cache.lru-cache.LimitedByCount | lru-cache.lru-cache.LimitedBySize<string, any> | lru-cache.lru-cache.LimitedByTTL
-  - Dropped lru-cache.anon.MaxEntrySize<string, any> | {} */ trait IParamsBase[T1, T2, T3, T4, T5, T6, TResult]
+  type IBypassFunction4[T1, T2, T3, T4] = js.Function4[/* a1 */ T1, /* a2 */ T2, /* a3 */ T3, /* a4 */ T4, Boolean]
+  
+  type IBypassFunction5[T1, T2, T3, T4, T5] = js.Function5[/* a1 */ T1, /* a2 */ T2, /* a3 */ T3, /* a4 */ T4, /* a5 */ T5, Boolean]
+  
+  type IBypassFunction6[T1, T2, T3, T4, T5, T6] = js.Function6[/* a1 */ T1, /* a2 */ T2, /* a3 */ T3, /* a4 */ T4, /* a5 */ T5, /* a6 */ T6, Boolean]
+  
+  type IBypassFunctionPlus = js.Function1[/* repeated */ Any, Boolean]
+  
+  type IHashingFunction0 = js.Function0[String]
+  
+  type IHashingFunction1[T1] = js.Function1[/* a1 */ T1, String]
+  
+  type IHashingFunction2[T1, T2] = js.Function2[/* a1 */ T1, /* a2 */ T2, String]
+  
+  type IHashingFunction3[T1, T2, T3] = js.Function3[/* a1 */ T1, /* a2 */ T2, /* a3 */ T3, String]
+  
+  type IHashingFunction4[T1, T2, T3, T4] = js.Function4[/* a1 */ T1, /* a2 */ T2, /* a3 */ T3, /* a4 */ T4, String]
+  
+  type IHashingFunction5[T1, T2, T3, T4, T5] = js.Function5[/* a1 */ T1, /* a2 */ T2, /* a3 */ T3, /* a4 */ T4, /* a5 */ T5, String]
+  
+  type IHashingFunction6[T1, T2, T3, T4, T5, T6] = js.Function6[/* a1 */ T1, /* a2 */ T2, /* a3 */ T3, /* a4 */ T4, /* a5 */ T5, /* a6 */ T6, String]
+  
+  type IHashingFunctionPlus = js.Function1[/* repeated */ Any, String]
+  
+  type IMaxAgeFunction0[TResult] = js.Function1[/* res */ TResult, Double]
+  
+  type IMaxAgeFunction1[T1, TResult] = js.Function2[/* a1 */ T1, /* res */ TResult, Double]
+  
+  type IMaxAgeFunction2[T1, T2, TResult] = js.Function3[/* a1 */ T1, /* a2 */ T2, /* res */ TResult, Double]
+  
+  type IMaxAgeFunction3[T1, T2, T3, TResult] = js.Function4[/* a1 */ T1, /* a2 */ T2, /* a3 */ T3, /* res */ TResult, Double]
+  
+  type IMaxAgeFunction4[T1, T2, T3, T4, TResult] = js.Function5[/* a1 */ T1, /* a2 */ T2, /* a3 */ T3, /* a4 */ T4, /* res */ TResult, Double]
+  
+  type IMaxAgeFunction5[T1, T2, T3, T4, T5, TResult] = js.Function6[/* a1 */ T1, /* a2 */ T2, /* a3 */ T3, /* a4 */ T4, /* a5 */ T5, /* res */ TResult, Double]
+  
+  type IMaxAgeFunction6[T1, T2, T3, T4, T5, T6, TResult] = js.Function7[
+    /* a1 */ T1, 
+    /* a2 */ T2, 
+    /* a3 */ T3, 
+    /* a4 */ T4, 
+    /* a5 */ T5, 
+    /* a6 */ T6, 
+    /* res */ TResult, 
+    Double
+  ]
+  
+  type IMaxAgeFunctionPlus = js.Function1[/* repeated */ Any, Double]
+  
+  type INodeStyleCallBack[Success] = js.Function2[/* err */ js.Error | Null, /* result */ js.UndefOr[Success], Unit]
+  
+  trait IParamsBase0[TResult]
     extends StObject
-       with SharedOptions[String, Any]
-       with DeprecatedOptions[String, Any] {
+       with IParamsBaseCommons {
+    
+    var bypass: js.UndefOr[IBypassFunction0] = js.undefined
+    
+    def hash(): String
+    @JSName("hash")
+    var hash_Original: IHashingFunction0
+    
+    var itemMaxAge: js.UndefOr[IMaxAgeFunction0[TResult]] = js.undefined
+  }
+  object IParamsBase0 {
+    
+    inline def apply[TResult](hash: () => String): IParamsBase0[TResult] = {
+      val __obj = js.Dynamic.literal(hash = js.Any.fromFunction0(hash))
+      __obj.asInstanceOf[IParamsBase0[TResult]]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IParamsBase0[?], TResult] (val x: Self & IParamsBase0[TResult]) extends AnyVal {
+      
+      inline def setBypass(value: () => Boolean): Self = StObject.set(x, "bypass", js.Any.fromFunction0(value))
+      
+      inline def setBypassUndefined: Self = StObject.set(x, "bypass", js.undefined)
+      
+      inline def setHash(value: () => String): Self = StObject.set(x, "hash", js.Any.fromFunction0(value))
+      
+      inline def setItemMaxAge(value: TResult => Double): Self = StObject.set(x, "itemMaxAge", js.Any.fromFunction1(value))
+      
+      inline def setItemMaxAgeUndefined: Self = StObject.set(x, "itemMaxAge", js.undefined)
+    }
+  }
+  
+  trait IParamsBase1[T1, TResult]
+    extends StObject
+       with IParamsBaseCommons {
+    
+    var bypass: js.UndefOr[IBypassFunction1[T1]] = js.undefined
+    
+    def hash(a1: T1): String
+    @JSName("hash")
+    var hash_Original: IHashingFunction1[T1]
+    
+    var itemMaxAge: js.UndefOr[IMaxAgeFunction1[T1, TResult]] = js.undefined
+  }
+  object IParamsBase1 {
+    
+    inline def apply[T1, TResult](hash: T1 => String): IParamsBase1[T1, TResult] = {
+      val __obj = js.Dynamic.literal(hash = js.Any.fromFunction1(hash))
+      __obj.asInstanceOf[IParamsBase1[T1, TResult]]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IParamsBase1[?, ?], T1, TResult] (val x: Self & (IParamsBase1[T1, TResult])) extends AnyVal {
+      
+      inline def setBypass(value: T1 => Boolean): Self = StObject.set(x, "bypass", js.Any.fromFunction1(value))
+      
+      inline def setBypassUndefined: Self = StObject.set(x, "bypass", js.undefined)
+      
+      inline def setHash(value: T1 => String): Self = StObject.set(x, "hash", js.Any.fromFunction1(value))
+      
+      inline def setItemMaxAge(value: (T1, TResult) => Double): Self = StObject.set(x, "itemMaxAge", js.Any.fromFunction2(value))
+      
+      inline def setItemMaxAgeUndefined: Self = StObject.set(x, "itemMaxAge", js.undefined)
+    }
+  }
+  
+  trait IParamsBase2[T1, T2, TResult]
+    extends StObject
+       with IParamsBaseCommons {
+    
+    var bypass: js.UndefOr[IBypassFunction2[T1, T2]] = js.undefined
+    
+    def hash(a1: T1, a2: T2): String
+    @JSName("hash")
+    var hash_Original: IHashingFunction2[T1, T2]
+    
+    var itemMaxAge: js.UndefOr[IMaxAgeFunction2[T1, T2, TResult]] = js.undefined
+  }
+  object IParamsBase2 {
+    
+    inline def apply[T1, T2, TResult](hash: (T1, T2) => String): IParamsBase2[T1, T2, TResult] = {
+      val __obj = js.Dynamic.literal(hash = js.Any.fromFunction2(hash))
+      __obj.asInstanceOf[IParamsBase2[T1, T2, TResult]]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IParamsBase2[?, ?, ?], T1, T2, TResult] (val x: Self & (IParamsBase2[T1, T2, TResult])) extends AnyVal {
+      
+      inline def setBypass(value: (T1, T2) => Boolean): Self = StObject.set(x, "bypass", js.Any.fromFunction2(value))
+      
+      inline def setBypassUndefined: Self = StObject.set(x, "bypass", js.undefined)
+      
+      inline def setHash(value: (T1, T2) => String): Self = StObject.set(x, "hash", js.Any.fromFunction2(value))
+      
+      inline def setItemMaxAge(value: (T1, T2, TResult) => Double): Self = StObject.set(x, "itemMaxAge", js.Any.fromFunction3(value))
+      
+      inline def setItemMaxAgeUndefined: Self = StObject.set(x, "itemMaxAge", js.undefined)
+    }
+  }
+  
+  trait IParamsBase3[T1, T2, T3, TResult]
+    extends StObject
+       with IParamsBaseCommons {
+    
+    var bypass: js.UndefOr[IBypassFunction3[T1, T2, T3]] = js.undefined
+    
+    def hash(a1: T1, a2: T2, a3: T3): String
+    @JSName("hash")
+    var hash_Original: IHashingFunction3[T1, T2, T3]
+    
+    var itemMaxAge: js.UndefOr[IMaxAgeFunction3[T1, T2, T3, TResult]] = js.undefined
+  }
+  object IParamsBase3 {
+    
+    inline def apply[T1, T2, T3, TResult](hash: (T1, T2, T3) => String): IParamsBase3[T1, T2, T3, TResult] = {
+      val __obj = js.Dynamic.literal(hash = js.Any.fromFunction3(hash))
+      __obj.asInstanceOf[IParamsBase3[T1, T2, T3, TResult]]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IParamsBase3[?, ?, ?, ?], T1, T2, T3, TResult] (val x: Self & (IParamsBase3[T1, T2, T3, TResult])) extends AnyVal {
+      
+      inline def setBypass(value: (T1, T2, T3) => Boolean): Self = StObject.set(x, "bypass", js.Any.fromFunction3(value))
+      
+      inline def setBypassUndefined: Self = StObject.set(x, "bypass", js.undefined)
+      
+      inline def setHash(value: (T1, T2, T3) => String): Self = StObject.set(x, "hash", js.Any.fromFunction3(value))
+      
+      inline def setItemMaxAge(value: (T1, T2, T3, TResult) => Double): Self = StObject.set(x, "itemMaxAge", js.Any.fromFunction4(value))
+      
+      inline def setItemMaxAgeUndefined: Self = StObject.set(x, "itemMaxAge", js.undefined)
+    }
+  }
+  
+  trait IParamsBase4[T1, T2, T3, T4, TResult]
+    extends StObject
+       with IParamsBaseCommons {
+    
+    var bypass: js.UndefOr[IBypassFunction4[T1, T2, T3, T4]] = js.undefined
+    
+    def hash(a1: T1, a2: T2, a3: T3, a4: T4): String
+    @JSName("hash")
+    var hash_Original: IHashingFunction4[T1, T2, T3, T4]
+    
+    var itemMaxAge: js.UndefOr[IMaxAgeFunction4[T1, T2, T3, T4, TResult]] = js.undefined
+  }
+  object IParamsBase4 {
+    
+    inline def apply[T1, T2, T3, T4, TResult](hash: (T1, T2, T3, T4) => String): IParamsBase4[T1, T2, T3, T4, TResult] = {
+      val __obj = js.Dynamic.literal(hash = js.Any.fromFunction4(hash))
+      __obj.asInstanceOf[IParamsBase4[T1, T2, T3, T4, TResult]]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IParamsBase4[?, ?, ?, ?, ?], T1, T2, T3, T4, TResult] (val x: Self & (IParamsBase4[T1, T2, T3, T4, TResult])) extends AnyVal {
+      
+      inline def setBypass(value: (T1, T2, T3, T4) => Boolean): Self = StObject.set(x, "bypass", js.Any.fromFunction4(value))
+      
+      inline def setBypassUndefined: Self = StObject.set(x, "bypass", js.undefined)
+      
+      inline def setHash(value: (T1, T2, T3, T4) => String): Self = StObject.set(x, "hash", js.Any.fromFunction4(value))
+      
+      inline def setItemMaxAge(value: (T1, T2, T3, T4, TResult) => Double): Self = StObject.set(x, "itemMaxAge", js.Any.fromFunction5(value))
+      
+      inline def setItemMaxAgeUndefined: Self = StObject.set(x, "itemMaxAge", js.undefined)
+    }
+  }
+  
+  trait IParamsBase5[T1, T2, T3, T4, T5, TResult]
+    extends StObject
+       with IParamsBaseCommons {
+    
+    var bypass: js.UndefOr[IBypassFunction5[T1, T2, T3, T4, T5]] = js.undefined
+    
+    def hash(a1: T1, a2: T2, a3: T3, a4: T4, a5: T5): String
+    @JSName("hash")
+    var hash_Original: IHashingFunction5[T1, T2, T3, T4, T5]
+    
+    var itemMaxAge: js.UndefOr[IMaxAgeFunction5[T1, T2, T3, T4, T5, TResult]] = js.undefined
+  }
+  object IParamsBase5 {
+    
+    inline def apply[T1, T2, T3, T4, T5, TResult](hash: (T1, T2, T3, T4, T5) => String): IParamsBase5[T1, T2, T3, T4, T5, TResult] = {
+      val __obj = js.Dynamic.literal(hash = js.Any.fromFunction5(hash))
+      __obj.asInstanceOf[IParamsBase5[T1, T2, T3, T4, T5, TResult]]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IParamsBase5[?, ?, ?, ?, ?, ?], T1, T2, T3, T4, T5, TResult] (val x: Self & (IParamsBase5[T1, T2, T3, T4, T5, TResult])) extends AnyVal {
+      
+      inline def setBypass(value: (T1, T2, T3, T4, T5) => Boolean): Self = StObject.set(x, "bypass", js.Any.fromFunction5(value))
+      
+      inline def setBypassUndefined: Self = StObject.set(x, "bypass", js.undefined)
+      
+      inline def setHash(value: (T1, T2, T3, T4, T5) => String): Self = StObject.set(x, "hash", js.Any.fromFunction5(value))
+      
+      inline def setItemMaxAge(value: (T1, T2, T3, T4, T5, TResult) => Double): Self = StObject.set(x, "itemMaxAge", js.Any.fromFunction6(value))
+      
+      inline def setItemMaxAgeUndefined: Self = StObject.set(x, "itemMaxAge", js.undefined)
+    }
+  }
+  
+  trait IParamsBase6[T1, T2, T3, T4, T5, T6, TResult]
+    extends StObject
+       with IParamsBaseCommons {
     
     /**
       * Return true if the result should not be retrieved from the cache.
       */
-    var bypass: js.UndefOr[IBypassFunction[T1, T2, T3, T4, T5, T6]] = js.undefined
+    var bypass: js.UndefOr[IBypassFunction6[T1, T2, T3, T4, T5, T6]] = js.undefined
+    
+    /**
+      * A function to generate the key of the cache.
+      */
+    def hash(a1: T1, a2: T2, a3: T3, a4: T4, a5: T5, a6: T6): String
+    /**
+      * A function to generate the key of the cache.
+      */
+    @JSName("hash")
+    var hash_Original: IHashingFunction6[T1, T2, T3, T4, T5, T6]
+    
+    /**
+      * An optional function to indicate the maxAge of an specific item.
+      */
+    var itemMaxAge: js.UndefOr[IMaxAgeFunction6[T1, T2, T3, T4, T5, T6, TResult]] = js.undefined
+  }
+  object IParamsBase6 {
+    
+    inline def apply[T1, T2, T3, T4, T5, T6, TResult](hash: (T1, T2, T3, T4, T5, T6) => String): IParamsBase6[T1, T2, T3, T4, T5, T6, TResult] = {
+      val __obj = js.Dynamic.literal(hash = js.Any.fromFunction6(hash))
+      __obj.asInstanceOf[IParamsBase6[T1, T2, T3, T4, T5, T6, TResult]]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IParamsBase6[?, ?, ?, ?, ?, ?, ?], T1, T2, T3, T4, T5, T6, TResult] (val x: Self & (IParamsBase6[T1, T2, T3, T4, T5, T6, TResult])) extends AnyVal {
+      
+      inline def setBypass(value: (T1, T2, T3, T4, T5, T6) => Boolean): Self = StObject.set(x, "bypass", js.Any.fromFunction6(value))
+      
+      inline def setBypassUndefined: Self = StObject.set(x, "bypass", js.undefined)
+      
+      inline def setHash(value: (T1, T2, T3, T4, T5, T6) => String): Self = StObject.set(x, "hash", js.Any.fromFunction6(value))
+      
+      inline def setItemMaxAge(value: (T1, T2, T3, T4, T5, T6, TResult) => Double): Self = StObject.set(x, "itemMaxAge", js.Any.fromFunction7(value))
+      
+      inline def setItemMaxAgeUndefined: Self = StObject.set(x, "itemMaxAge", js.undefined)
+    }
+  }
+  
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify LRU.Options<string, any> * / any */ trait IParamsBaseCommons extends StObject {
     
     /**
       * Indicates if the resource should be cloned before is returned.
       */
     @JSName("clone")
-    var clone_FIParamsBase: js.UndefOr[Boolean] = js.undefined
+    var clone_FIParamsBaseCommons: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Disable the cache and executes the load logic directly.
@@ -81,104 +338,21 @@ object libUtilMod {
     var freeze: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * A function to generate the key of the cache.
-      */
-    def hash(): String
-    /**
-      * A function to generate the key of the cache.
-      */
-    def hash(arg1: T1): String
-    /**
-      * A function to generate the key of the cache.
-      */
-    def hash(arg1: T1, arg2: T2): String
-    /**
-      * A function to generate the key of the cache.
-      */
-    def hash(arg1: T1, arg2: T2, arg3: T3): String
-    /**
-      * A function to generate the key of the cache.
-      */
-    def hash(arg1: T1, arg2: T2, arg3: T3, arg4: T4): String
-    /**
-      * A function to generate the key of the cache.
-      */
-    def hash(arg1: T1, arg2: T2, arg3: T3, arg4: T4, arg5: T5): String
-    /**
-      * A function to generate the key of the cache.
-      */
-    def hash(arg1: T1, arg2: T2, arg3: T3, arg4: T4, arg5: T5, arg6: T6): String
-    /**
-      * A function to generate the key of the cache.
-      */
-    def hash(rest: Any*): String
-    /**
-      * A function to generate the key of the cache.
-      */
-    @JSName("hash")
-    var hash_Original: IHashingFunction[T1, T2, T3, T4, T5, T6]
-    
-    /**
-      * An optional function to indicate the maxAge of an specific item.
-      */
-    def itemMaxAge(arg1: T1, arg2: T2, arg3: T3, arg4: T4, arg5: T5, arg6: T6, res: TResult): Double
-    /**
-      * An optional function to indicate the maxAge of an specific item.
-      */
-    def itemMaxAge(arg1: T1, arg2: T2, arg3: T3, arg4: T4, arg5: T5, res: TResult): Double
-    /**
-      * An optional function to indicate the maxAge of an specific item.
-      */
-    def itemMaxAge(arg1: T1, arg2: T2, arg3: T3, arg4: T4, res: TResult): Double
-    /**
-      * An optional function to indicate the maxAge of an specific item.
-      */
-    def itemMaxAge(arg1: T1, arg2: T2, arg3: T3, res: TResult): Double
-    /**
-      * An optional function to indicate the maxAge of an specific item.
-      */
-    def itemMaxAge(arg1: T1, arg2: T2, res: TResult): Double
-    /**
-      * An optional function to indicate the maxAge of an specific item.
-      */
-    def itemMaxAge(arg1: T1, res: TResult): Double
-    /**
-      * An optional function to indicate the maxAge of an specific item.
-      */
-    def itemMaxAge(res: TResult): Double
-    /**
-      * An optional function to indicate the maxAge of an specific item.
-      */
-    def itemMaxAge(rest: Any*): Double
-    /**
-      * An optional function to indicate the maxAge of an specific item.
-      */
-    @JSName("itemMaxAge")
-    var itemMaxAge_Original: IMaxAgeFunction[T1, T2, T3, T4, T5, T6, TResult]
-    
-    /**
       * Do not queue requests if initial call is more than `queueMaxAge` milliseconds old.
       * Instead, invoke `load` again and create a new queue.
       * Defaults to 1000ms.
       */
     var queueMaxAge: js.UndefOr[Double] = js.undefined
   }
-  object IParamsBase {
+  object IParamsBaseCommons {
     
-    inline def apply[T1, T2, T3, T4, T5, T6, TResult](
-      hash: IHashingFunction[T1, T2, T3, T4, T5, T6],
-      itemMaxAge: IMaxAgeFunction[T1, T2, T3, T4, T5, T6, TResult]
-    ): IParamsBase[T1, T2, T3, T4, T5, T6, TResult] = {
-      val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], itemMaxAge = itemMaxAge.asInstanceOf[js.Any])
-      __obj.asInstanceOf[IParamsBase[T1, T2, T3, T4, T5, T6, TResult]]
+    inline def apply(): IParamsBaseCommons = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[IParamsBaseCommons]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: IParamsBase[?, ?, ?, ?, ?, ?, ?], T1, T2, T3, T4, T5, T6, TResult] (val x: Self & (IParamsBase[T1, T2, T3, T4, T5, T6, TResult])) extends AnyVal {
-      
-      inline def setBypass(value: IBypassFunction[T1, T2, T3, T4, T5, T6]): Self = StObject.set(x, "bypass", value.asInstanceOf[js.Any])
-      
-      inline def setBypassUndefined: Self = StObject.set(x, "bypass", js.undefined)
+    implicit open class MutableBuilder[Self <: IParamsBaseCommons] (val x: Self) extends AnyVal {
       
       inline def setClone_(value: Boolean): Self = StObject.set(x, "clone", value.asInstanceOf[js.Any])
       
@@ -192,20 +366,50 @@ object libUtilMod {
       
       inline def setFreezeUndefined: Self = StObject.set(x, "freeze", js.undefined)
       
-      inline def setHash(value: IHashingFunction[T1, T2, T3, T4, T5, T6]): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
-      
-      inline def setItemMaxAge(value: IMaxAgeFunction[T1, T2, T3, T4, T5, T6, TResult]): Self = StObject.set(x, "itemMaxAge", value.asInstanceOf[js.Any])
-      
       inline def setQueueMaxAge(value: Double): Self = StObject.set(x, "queueMaxAge", value.asInstanceOf[js.Any])
       
       inline def setQueueMaxAgeUndefined: Self = StObject.set(x, "queueMaxAge", js.undefined)
     }
   }
   
+  trait IParamsBasePlus
+    extends StObject
+       with IParamsBaseCommons {
+    
+    var bypass: js.UndefOr[IBypassFunctionPlus] = js.undefined
+    
+    def hash(rest: Any*): String
+    @JSName("hash")
+    var hash_Original: IHashingFunctionPlus
+    
+    var itemMaxAge: js.UndefOr[IMaxAgeFunctionPlus] = js.undefined
+  }
+  object IParamsBasePlus {
+    
+    inline def apply(hash: /* repeated */ Any => String): IParamsBasePlus = {
+      val __obj = js.Dynamic.literal(hash = js.Any.fromFunction1(hash))
+      __obj.asInstanceOf[IParamsBasePlus]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IParamsBasePlus] (val x: Self) extends AnyVal {
+      
+      inline def setBypass(value: /* repeated */ Any => Boolean): Self = StObject.set(x, "bypass", js.Any.fromFunction1(value))
+      
+      inline def setBypassUndefined: Self = StObject.set(x, "bypass", js.undefined)
+      
+      inline def setHash(value: /* repeated */ Any => String): Self = StObject.set(x, "hash", js.Any.fromFunction1(value))
+      
+      inline def setItemMaxAge(value: /* repeated */ Any => Double): Self = StObject.set(x, "itemMaxAge", js.Any.fromFunction1(value))
+      
+      inline def setItemMaxAgeUndefined: Self = StObject.set(x, "itemMaxAge", js.undefined)
+    }
+  }
+  
   @js.native
   trait Listener extends StObject {
     
-    def apply(args: Any*): Unit = js.native
+    def apply(as: Any*): Unit = js.native
   }
   
   @js.native
@@ -214,7 +418,14 @@ object libUtilMod {
     /**
       * Delete an item given the parameters.
       */
-    def del[T1, T2, T3, T4, T5, T6](arg1: T1, arg2: T2, arg3: T3, arg4: T4, arg5: T5, arg6: T6): Unit = js.native
+    def del[T1, T2, T3, T4, T5, T6](
+      a1: js.UndefOr[T1],
+      a2: js.UndefOr[T2],
+      a3: js.UndefOr[T3],
+      a4: js.UndefOr[T4],
+      a5: js.UndefOr[T5],
+      a6: js.UndefOr[T6]
+    ): Unit = js.native
     
     /**
       * Returns all keys in the cache.

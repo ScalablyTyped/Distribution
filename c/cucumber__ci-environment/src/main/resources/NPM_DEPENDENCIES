@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@cucumber/ci-environment" : "9.1.0"
+      "@cucumber/ci-environment" : "9.2.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@cucumber/ci-environment" : "9.1.0"
+      "@cucumber/ci-environment" : "9.2.0"
     }
   ],
   "compile-devDependencies" : [

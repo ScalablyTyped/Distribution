@@ -76,7 +76,8 @@ trait Texture
   
   /* private */ var _mimeType: Any = js.native
   
-  /* private */ var _noMipmap: Any = js.native
+  /** @internal */
+  var _noMipmap: Boolean = js.native
   
   /* private */ var _prepareRowForTextureGeneration: Any = js.native
   
@@ -90,7 +91,8 @@ trait Texture
   
   /* private */ var _t2: Any = js.native
   
-  /* private */ var _useSRGBBuffer: Any = js.native
+  /** @internal */
+  var _useSRGBBuffer: js.UndefOr[Boolean] = js.native
   
   /**
     * Checks if the texture has the same transform matrix than another texture
@@ -108,7 +110,7 @@ trait Texture
   
   /**
     * List of inspectable custom properties (used by the Inspector)
-    * @see https://doc.babylonjs.com/how_to/debug_layer#extensibility
+    * @see https://doc.babylonjs.com/toolsAndResources/inspector#extensibility
     */
   var inspectableCustomProperties: Nullable[js.Array[IInspectable]] = js.native
   
@@ -134,13 +136,13 @@ trait Texture
   /**
     * Define an offset on the texture to rotate around the u coordinates of the UVs
     * The angle is defined in radians.
-    * @see https://doc.babylonjs.com/how_to/more_materials
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/materials/using/moreMaterials
     */
   var uAng: Double = js.native
   
   /**
     * Define an offset on the texture to offset the u coordinates of the UVs
-    * @see https://doc.babylonjs.com/how_to/more_materials#offsetting
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/materials/using/moreMaterials#offsetting
     */
   var uOffset: Double = js.native
   
@@ -151,7 +153,7 @@ trait Texture
   
   /**
     * Define an offset on the texture to scale the u coordinates of the UVs
-    * @see https://doc.babylonjs.com/how_to/more_materials#tiling
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/materials/using/moreMaterials#tiling
     */
   var uScale: Double = js.native
   
@@ -169,20 +171,20 @@ trait Texture
   def updateURL(
     url: String,
     buffer: Nullable[
-      String | js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView | HTMLImageElement | Blob
+      String | js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView | HTMLImageElement | Blob | ImageBitmap
     ]
   ): Unit = js.native
   def updateURL(
     url: String,
     buffer: Nullable[
-      String | js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView | HTMLImageElement | Blob
+      String | js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView | HTMLImageElement | Blob | ImageBitmap
     ],
     onLoad: js.Function0[Unit]
   ): Unit = js.native
   def updateURL(
     url: String,
     buffer: Nullable[
-      String | js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView | HTMLImageElement | Blob
+      String | js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView | HTMLImageElement | Blob | ImageBitmap
     ],
     onLoad: js.Function0[Unit],
     forcedExtension: String
@@ -190,7 +192,7 @@ trait Texture
   def updateURL(
     url: String,
     buffer: Nullable[
-      String | js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView | HTMLImageElement | Blob
+      String | js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView | HTMLImageElement | Blob | ImageBitmap
     ],
     onLoad: Unit,
     forcedExtension: String
@@ -204,13 +206,13 @@ trait Texture
   /**
     * Define an offset on the texture to rotate around the v coordinates of the UVs
     * The angle is defined in radians.
-    * @see https://doc.babylonjs.com/how_to/more_materials
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/materials/using/moreMaterials
     */
   var vAng: Double = js.native
   
   /**
     * Define an offset on the texture to offset the v coordinates of the UVs
-    * @see https://doc.babylonjs.com/how_to/more_materials#offsetting
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/materials/using/moreMaterials#offsetting
     */
   var vOffset: Double = js.native
   
@@ -221,14 +223,14 @@ trait Texture
   
   /**
     * Define an offset on the texture to scale the v coordinates of the UVs
-    * @see https://doc.babylonjs.com/how_to/more_materials#tiling
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/materials/using/moreMaterials#tiling
     */
   var vScale: Double = js.native
   
   /**
     * Define an offset on the texture to rotate around the w coordinates of the UVs (in case of 3d texture)
     * The angle is defined in radians.
-    * @see https://doc.babylonjs.com/how_to/more_materials
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/materials/using/moreMaterials
     */
   var wAng: Double = js.native
   

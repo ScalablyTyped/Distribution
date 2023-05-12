@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StartAssessmentRequest extends StObject {
   
   /**
+    * List of criteria for assessment.
+    */
+  var assessmentTargets: js.UndefOr[AssessmentTargets] = js.undefined
+  
+  /**
     *  The S3 bucket used by the collectors to send analysis data to the service. The bucket name must begin with migrationhub-strategy-. 
     */
   var s3bucketForAnalysisData: js.UndefOr[StartAssessmentRequestS3bucketForAnalysisDataString] = js.undefined
@@ -25,6 +30,12 @@ object StartAssessmentRequest {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: StartAssessmentRequest] (val x: Self) extends AnyVal {
+    
+    inline def setAssessmentTargets(value: AssessmentTargets): Self = StObject.set(x, "assessmentTargets", value.asInstanceOf[js.Any])
+    
+    inline def setAssessmentTargetsUndefined: Self = StObject.set(x, "assessmentTargets", js.undefined)
+    
+    inline def setAssessmentTargetsVarargs(value: AssessmentTarget*): Self = StObject.set(x, "assessmentTargets", js.Array(value*))
     
     inline def setS3bucketForAnalysisData(value: StartAssessmentRequestS3bucketForAnalysisDataString): Self = StObject.set(x, "s3bucketForAnalysisData", value.asInstanceOf[js.Any])
     

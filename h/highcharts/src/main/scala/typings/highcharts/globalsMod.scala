@@ -7,5 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object globalsMod {
   
+  @JSImport("highcharts/globals", "ZAxis")
+  @js.native
+  open class ZAxis () extends StObject
+  
   type GlobalSVGElement = SVGElement
 }

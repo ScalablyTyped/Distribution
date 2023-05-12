@@ -1,7 +1,7 @@
 
 # Scala.js typings for ipfs-unixfs
 
-Typings are for version 8.0.0
+Typings are for version 11.0.0
 
 ## Library description:
 JavaScript implementation of IPFS' unixfs (a Unix FileSystem representation on top of a MerkleDAG)

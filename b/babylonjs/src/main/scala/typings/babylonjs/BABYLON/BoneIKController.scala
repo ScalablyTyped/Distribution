@@ -29,6 +29,8 @@ trait BoneIKController extends StObject {
   
   /* private */ var _maxReach: Any = js.native
   
+  /* private */ var _notEnoughInformation: Any = js.native
+  
   /* private */ var _rightHandedSystem: Any = js.native
   
   /* private */ var _setMaxAngle: Any = js.native

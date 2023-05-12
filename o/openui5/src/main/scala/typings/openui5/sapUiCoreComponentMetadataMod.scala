@@ -208,6 +208,7 @@ object sapUiCoreComponentMetadataMod {
     
     /**
       * @SINCE 1.27.1
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Returns the version of the metadata which could be 1 or 2. 1 is for legacy metadata whereas 2 is for
       * the manifest.
@@ -254,6 +255,7 @@ object sapUiCoreComponentMetadataMod {
     
     /**
       * @SINCE 1.33.0
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Returns whether the class of this metadata is a component base class or not.
       *

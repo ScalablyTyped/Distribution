@@ -1,8 +1,7 @@
 package typings.grpcGrpcJs
 
-import typings.grpcGrpcJs.buildSrcCallStreamMod.Call
-import typings.grpcGrpcJs.buildSrcCallStreamMod.StatusObject
-import typings.grpcGrpcJs.buildSrcCallStreamMod.WriteObject
+import typings.grpcGrpcJs.buildSrcCallInterfaceMod.StatusObject
+import typings.grpcGrpcJs.buildSrcCallInterfaceMod.WriteObject
 import typings.grpcGrpcJs.buildSrcMetadataMod.Metadata
 import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
@@ -27,9 +26,6 @@ object buildSrcFilterMod {
     override def receiveTrailers(status: StatusObject): StatusObject = js.native
     
     /* CompleteClass */
-    override def refresh(): Unit = js.native
-    
-    /* CompleteClass */
     override def sendMessage(message: js.Promise[WriteObject]): js.Promise[WriteObject] = js.native
     
     /* CompleteClass */
@@ -44,8 +40,6 @@ object buildSrcFilterMod {
     
     def receiveTrailers(status: StatusObject): StatusObject
     
-    def refresh(): Unit
-    
     def sendMessage(message: js.Promise[WriteObject]): js.Promise[WriteObject]
     
     def sendMetadata(metadata: js.Promise[Metadata]): js.Promise[Metadata]
@@ -56,11 +50,10 @@ object buildSrcFilterMod {
       receiveMessage: js.Promise[Buffer] => js.Promise[Buffer],
       receiveMetadata: Metadata => Metadata,
       receiveTrailers: StatusObject => StatusObject,
-      refresh: () => Unit,
       sendMessage: js.Promise[WriteObject] => js.Promise[WriteObject],
       sendMetadata: js.Promise[Metadata] => js.Promise[Metadata]
     ): Filter = {
-      val __obj = js.Dynamic.literal(receiveMessage = js.Any.fromFunction1(receiveMessage), receiveMetadata = js.Any.fromFunction1(receiveMetadata), receiveTrailers = js.Any.fromFunction1(receiveTrailers), refresh = js.Any.fromFunction0(refresh), sendMessage = js.Any.fromFunction1(sendMessage), sendMetadata = js.Any.fromFunction1(sendMetadata))
+      val __obj = js.Dynamic.literal(receiveMessage = js.Any.fromFunction1(receiveMessage), receiveMetadata = js.Any.fromFunction1(receiveMetadata), receiveTrailers = js.Any.fromFunction1(receiveTrailers), sendMessage = js.Any.fromFunction1(sendMessage), sendMetadata = js.Any.fromFunction1(sendMetadata))
       __obj.asInstanceOf[Filter]
     }
     
@@ -73,8 +66,6 @@ object buildSrcFilterMod {
       
       inline def setReceiveTrailers(value: StatusObject => StatusObject): Self = StObject.set(x, "receiveTrailers", js.Any.fromFunction1(value))
       
-      inline def setRefresh(value: () => Unit): Self = StObject.set(x, "refresh", js.Any.fromFunction0(value))
-      
       inline def setSendMessage(value: js.Promise[WriteObject] => js.Promise[WriteObject]): Self = StObject.set(x, "sendMessage", js.Any.fromFunction1(value))
       
       inline def setSendMetadata(value: js.Promise[Metadata] => js.Promise[Metadata]): Self = StObject.set(x, "sendMetadata", js.Any.fromFunction1(value))
@@ -83,19 +74,19 @@ object buildSrcFilterMod {
   
   trait FilterFactory[T /* <: Filter */] extends StObject {
     
-    def createFilter(callStream: Call): T
+    def createFilter(): T
   }
   object FilterFactory {
     
-    inline def apply[T /* <: Filter */](createFilter: Call => T): FilterFactory[T] = {
-      val __obj = js.Dynamic.literal(createFilter = js.Any.fromFunction1(createFilter))
+    inline def apply[T /* <: Filter */](createFilter: () => T): FilterFactory[T] = {
+      val __obj = js.Dynamic.literal(createFilter = js.Any.fromFunction0(createFilter))
       __obj.asInstanceOf[FilterFactory[T]]
     }
     
     @scala.inline
     implicit open class MutableBuilder[Self <: FilterFactory[?], T /* <: Filter */] (val x: Self & FilterFactory[T]) extends AnyVal {
       
-      inline def setCreateFilter(value: Call => T): Self = StObject.set(x, "createFilter", js.Any.fromFunction1(value))
+      inline def setCreateFilter(value: () => T): Self = StObject.set(x, "createFilter", js.Any.fromFunction0(value))
     }
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListIPSetsResponse extends StObject {
   
   /**
-    * Array of IPSets. This may not be the full list of IPSets that you have defined. See the Limit specification for this request.
+    * Array of IPSets. If you specified a Limit in your request, this might not be the full list. 
     */
   var IPSets: js.UndefOr[IPSetSummaries] = js.undefined
   

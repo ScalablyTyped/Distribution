@@ -31,7 +31,7 @@ trait PointCloudLayerElevationInfo extends StObject {
     *
     * @default meters
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-PointCloudLayer.html#elevationInfo)
+    * [Read more...](global.html#unit)
     */
   var unit: js.UndefOr[feet_ | meters_ | kilometers_ | miles_ | `us-feet` | yards] = js.undefined
 }

@@ -12,7 +12,7 @@ trait SearchPlaceIndexForSuggestionsSummary extends StObject {
   var BiasPosition: js.UndefOr[Position] = js.undefined
   
   /**
-    * The geospatial data provider attached to the place index resource specified in the request. Values can be one of the following:   Esri   Here   For more information about data providers, see Amazon Location Service data providers.
+    * The geospatial data provider attached to the place index resource specified in the request. Values can be one of the following:   Esri   Grab   Here   For more information about data providers, see Amazon Location Service data providers.
     */
   var DataSource: String
   

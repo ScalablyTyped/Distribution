@@ -44,6 +44,7 @@ object mathsMathDotvectorMod {
     
     /**
       * Adds the current matrix with a second one
+      * Example Playground - https://playground.babylonjs.com/#AV9X17#44
       * @param other defines the matrix to add
       * @returns a new matrix as the addition of the current matrix and the given one
       */
@@ -51,6 +52,7 @@ object mathsMathDotvectorMod {
     
     /**
       * add a value at the specified position in the current Matrix
+      * Example Playground - https://playground.babylonjs.com/#AV9X17#47
       * @param index the index of the value within the matrix. between 0 and 15.
       * @param value the value to be added
       * @returns the current updated matrix
@@ -59,6 +61,7 @@ object mathsMathDotvectorMod {
     
     /**
       * Sets the given matrix "result" to the addition of the current matrix and the given one
+      * Example Playground - https://playground.babylonjs.com/#AV9X17#45
       * @param other defines the matrix to add
       * @param result defines the target matrix
       * @returns result input
@@ -67,6 +70,7 @@ object mathsMathDotvectorMod {
     
     /**
       * Adds in place the given matrix to the current matrix
+      * Example Playground - https://playground.babylonjs.com/#AV9X17#46
       * @param other defines the second operand
       * @returns the current updated matrix
       */
@@ -74,6 +78,8 @@ object mathsMathDotvectorMod {
     
     /**
       * Adds the translation vector (using 3 floats) in the current matrix
+      * Example Playground - https://playground.babylonjs.com/#AV9X17#20
+      * Example Playground - https://playground.babylonjs.com/#AV9X17#48
       * @param x defines the 1st component of the translation
       * @param y defines the 2nd component of the translation
       * @param z defines the 3rd component of the translation
@@ -83,12 +89,14 @@ object mathsMathDotvectorMod {
     
     /**
       * Returns the matrix as a Float32Array or Array<number>
+      * Example Playground - https://playground.babylonjs.com/#AV9X17#114
       * @returns the matrix underlying array.
       */
     def asArray(): DeepImmutable[js.typedarray.Float32Array | js.Array[Double]] = js.native
     
     /**
       * Copy the current matrix from the given one
+      * Example Playground - https://playground.babylonjs.com/#AV9X17#21
       * @param other defines the source matrix
       * @returns the current updated matrix
       */
@@ -107,6 +115,7 @@ object mathsMathDotvectorMod {
     
     /**
       * Decomposes the current Matrix into a translation, rotation and scaling components
+      * Example Playground - https://playground.babylonjs.com/#AV9X17#12
       * @param scale defines the scale vector3 given as a reference to update
       * @param rotation defines the rotation quaternion given as a reference to update
       * @param translation defines the translation vector3 given as a reference to update
@@ -132,6 +141,7 @@ object mathsMathDotvectorMod {
     
     /**
       * Decomposes the current Matrix into a translation, rotation and scaling components of the provided node
+      * Example Playground - https://playground.babylonjs.com/#AV9X17#13
       * @param node the node to decompose the matrix to
       * @returns true if operation was successful
       */
@@ -139,6 +149,7 @@ object mathsMathDotvectorMod {
     
     /**
       * Gets the determinant of the matrix
+      * Example Playground - https://playground.babylonjs.com/#AV9X17#34
       * @returns the matrix determinant
       */
     def determinant(): Double = js.native
@@ -177,6 +188,7 @@ object mathsMathDotvectorMod {
     
     /**
       * Gets specific row of the matrix
+      * Example Playground - https://playground.babylonjs.com/#AV9X17#36
       * @param index defines the number of the row to get
       * @returns the index-th row of the current matrix as a new Vector4
       */
@@ -184,6 +196,7 @@ object mathsMathDotvectorMod {
     
     /**
       * Gets specific row of the matrix to ref
+      * Example Playground - https://playground.babylonjs.com/#AV9X17#36
       * @param index defines the number of the row to get
       * @param rowVector vector to store the index-th row of the current matrix
       * @returns result input
@@ -192,12 +205,14 @@ object mathsMathDotvectorMod {
     
     /**
       * Gets the translation value of the current matrix
+      * Example Playground - https://playground.babylonjs.com/#AV9X17#122
       * @returns a new Vector3 as the extracted translation from the matrix
       */
     def getTranslation(): Vector3 = js.native
     
     /**
       * Fill a Vector3 with the extracted translation from the matrix
+      * Example Playground - https://playground.babylonjs.com/#AV9X17#123
       * @param result defines the Vector3 where to store the translation
       * @returns the current matrix
       */
@@ -205,12 +220,14 @@ object mathsMathDotvectorMod {
     
     /**
       * Inverts the current matrix in place
+      * Example Playground - https://playground.babylonjs.com/#AV9X17#118
       * @returns the current inverted matrix
       */
     def invert(): this.type = js.native
     
     /**
       * Sets the given matrix to the current inverted Matrix
+      * Example Playground - https://playground.babylonjs.com/#AV9X17#119
       * @param other defines the target matrix
       * @returns result input
       */
@@ -240,6 +257,7 @@ object mathsMathDotvectorMod {
     
     /**
       * Multiply two matrices
+      * Example Playground - https://playground.babylonjs.com/#AV9X17#15
       * A.multiply(B) means apply B to A so result is B x A
       * @param other defines the second operand
       * @returns a new matrix set with the multiplication result of the current Matrix and the given one
@@ -267,6 +285,7 @@ object mathsMathDotvectorMod {
     /**
       * Sets the given matrix "result" with the multiplication result of the current Matrix and the given one
       * A.multiplyToRef(B, R) means apply B to A and store in R and R = B x A
+      * Example Playground - https://playground.babylonjs.com/#AV9X17#16
       * @param other defines the second operand
       * @param result defines the matrix where to store the multiplication
       * @returns result input
@@ -310,6 +329,7 @@ object mathsMathDotvectorMod {
     
     /**
       * Sets the index-th row of the current matrix to the vector4 values
+      * Example Playground - https://playground.babylonjs.com/#AV9X17#36
       * @param index defines the number of the row to set
       * @param row defines the target vector4
       * @returns the updated current matrix
@@ -318,6 +338,7 @@ object mathsMathDotvectorMod {
     
     /**
       * Sets the index-th row of the current matrix with the given 4 x float values
+      * Example Playground - https://playground.babylonjs.com/#AV9X17#36
       * @param index defines the row index
       * @param x defines the x component to set
       * @param y defines the y component to set
@@ -329,6 +350,7 @@ object mathsMathDotvectorMod {
     
     /**
       * Inserts the translation vector in the current matrix
+      * Example Playground - https://playground.babylonjs.com/#AV9X17#121
       * @param vector3 defines the translation to insert
       * @returns the current updated matrix
       */
@@ -336,6 +358,7 @@ object mathsMathDotvectorMod {
     
     /**
       * Inserts the translation vector (using 3 floats) in the current matrix
+      * Example Playground - https://playground.babylonjs.com/#AV9X17#120
       * @param x defines the 1st component of the translation
       * @param y defines the 2nd component of the translation
       * @param z defines the 3rd component of the translation
@@ -345,12 +368,14 @@ object mathsMathDotvectorMod {
     
     /**
       * Returns the matrix as a Float32Array or Array<number>
+      * Example Playground - https://playground.babylonjs.com/#AV9X17#49
       * @returns the matrix underlying array
       */
     def toArray(): DeepImmutable[js.typedarray.Float32Array | js.Array[Double]] = js.native
     
     /**
       * Writes to the given matrix a normal matrix, computed from this one (using values from identity matrix for fourth row and column).
+      * Example Playground - https://playground.babylonjs.com/#AV9X17#17
       * @param ref matrix to store the result
       */
     def toNormalMatrix[T /* <: Matrix */](ref: T): T = js.native
@@ -367,12 +392,14 @@ object mathsMathDotvectorMod {
     
     /**
       * Compute the transpose of the matrix
+      * Example Playground - https://playground.babylonjs.com/#AV9X17#40
       * @returns the new transposed matrix
       */
     def transpose(): this.type = js.native
     
     /**
       * Compute the transpose of the matrix and store it in a given matrix
+      * Example Playground - https://playground.babylonjs.com/#AV9X17#41
       * @param result defines the target matrix
       * @returns result input
       */
@@ -394,6 +421,7 @@ object mathsMathDotvectorMod {
     
     /**
       * Creates a new matrix composed by merging scale (vector3), rotation (quaternion) and translation (vector3)
+      * Example Playground - https://playground.babylonjs.com/#AV9X17#24
       * @param scale defines the scale vector3
       * @param rotation defines the rotation quaternion
       * @param translation defines the translation vector3
@@ -407,6 +435,7 @@ object mathsMathDotvectorMod {
     
     /**
       * Sets a matrix to a value composed by merging scale (vector3), rotation (quaternion) and translation (vector3)
+      * Example Playground - https://playground.babylonjs.com/#AV9X17#25
       * @param scale defines the scale vector3
       * @param rotation defines the rotation quaternion
       * @param translation defines the translation vector3
@@ -425,6 +454,8 @@ object mathsMathDotvectorMod {
       * * decomposing the the "startValue" and "endValue" matrices into their respective scale, rotation and translation matrices
       * * interpolating for "gradient" (float) the values between each of these decomposed matrices between the start and the end
       * * recomposing a new matrix from these 3 interpolated scale, rotation and translation matrices
+      * Example Playground - https://playground.babylonjs.com/#AV9X17#22
+      * Example Playground - https://playground.babylonjs.com/#AV9X17#51
       * @param startValue defines the first matrix
       * @param endValue defines the second matrix
       * @param gradient defines the gradient between the two matrices
@@ -437,6 +468,8 @@ object mathsMathDotvectorMod {
       * * decomposing the the "startValue" and "endValue" matrices into their respective scale, rotation and translation matrices
       * * interpolating for "gradient" (float) the values between each of these decomposed matrices between the start and the end
       * * recomposing a new matrix from these 3 interpolated scale, rotation and translation matrices
+      * Example Playground - https://playground.babylonjs.com/#AV9X17#23
+      * Example Playground - https://playground.babylonjs.com/#AV9X17#53
       * @param startValue defines the first matrix
       * @param endValue defines the second matrix
       * @param gradient defines the gradient between the two matrices
@@ -447,6 +480,7 @@ object mathsMathDotvectorMod {
     
     /**
       * Creates a matrix from an array
+      * Example Playground - https://playground.babylonjs.com/#AV9X17#42
       * @param array defines the source array
       * @param offset defines an offset in the source array
       * @returns a new Matrix set from the starting index of the given array
@@ -456,6 +490,7 @@ object mathsMathDotvectorMod {
     
     /**
       * Copy the content of an array into a given matrix
+      * Example Playground - https://playground.babylonjs.com/#AV9X17#43
       * @param array defines the source array
       * @param offset defines an offset in the source array
       * @param result defines the target matrix
@@ -465,6 +500,7 @@ object mathsMathDotvectorMod {
     
     /**
       * Stores an array into a matrix after having multiplied each component by a given factor
+      * Example Playground - https://playground.babylonjs.com/#AV9X17#50
       * @param array defines the source array
       * @param offset defines the offset in the source array
       * @param scale defines the scaling factor
@@ -597,6 +633,7 @@ object mathsMathDotvectorMod {
     
     /**
       * Computes a complete transformation matrix
+      * Example Playground - https://playground.babylonjs.com/#AV9X17#113
       * @param viewport defines the viewport to use
       * @param world defines the world matrix
       * @param view defines the view matrix
@@ -629,6 +666,7 @@ object mathsMathDotvectorMod {
     
     /**
       * Creates a new matrix as the invert of a given matrix
+      * Example Playground - https://playground.babylonjs.com/#AV9X17#124
       * @param source defines the source matrix
       * @returns the new matrix
       */
@@ -636,6 +674,7 @@ object mathsMathDotvectorMod {
     
     /**
       * Returns a new Matrix whose values are the interpolated values for "gradient" (float) between the ones of the matrices "startValue" and "endValue".
+      * Example Playground - https://playground.babylonjs.com/#AV9X17#55
       * @param startValue defines the start value
       * @param endValue defines the end value
       * @param gradient defines the gradient factor
@@ -645,6 +684,7 @@ object mathsMathDotvectorMod {
     
     /**
       * Set the given matrix "result" as the interpolated values for "gradient" (float) between the ones of the matrices "startValue" and "endValue".
+      * Example Playground - https://playground.babylonjs.com/#AV9X17#54
       * @param startValue defines the start value
       * @param endValue defines the end value
       * @param gradient defines the gradient factor
@@ -654,8 +694,10 @@ object mathsMathDotvectorMod {
     inline def LerpToRef[T /* <: Matrix */](startValue: DeepImmutable[Matrix], endValue: DeepImmutable[Matrix], gradient: Double, result: T): T = (^.asInstanceOf[js.Dynamic].applyDynamic("LerpToRef")(startValue.asInstanceOf[js.Any], endValue.asInstanceOf[js.Any], gradient.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[T]
     
     /**
-      * Gets a new rotation matrix used to rotate an entity so as it looks at the target vector3, from the eye vector3 position, the up vector3 being oriented like "up"
-      * This function works in left handed mode
+      * Creates a new matrix that transforms vertices from world space to camera space. It takes three vectors as arguments that together describe the position and orientation of the camera.
+      * This function generates a matrix suitable for a left handed coordinate system
+      * Example Playground - https://playground.babylonjs.com/#AV9X17#58
+      * Example Playground - https://playground.babylonjs.com/#AV9X17#59
       * @param eye defines the final position of the entity
       * @param target defines where the entity should look at
       * @param up defines the up vector for the entity
@@ -664,8 +706,10 @@ object mathsMathDotvectorMod {
     inline def LookAtLH(eye: DeepImmutable[Vector3], target: DeepImmutable[Vector3], up: DeepImmutable[Vector3]): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("LookAtLH")(eye.asInstanceOf[js.Any], target.asInstanceOf[js.Any], up.asInstanceOf[js.Any])).asInstanceOf[Matrix]
     
     /**
-      * Sets the given "result" Matrix to a rotation matrix used to rotate an entity so that it looks at the target vector3, from the eye vector3 position, the up vector3 being oriented like "up".
-      * This function works in left handed mode
+      * Sets the given "result" Matrix to a matrix that transforms vertices from world space to camera space. It takes three vectors as arguments that together describe the position and orientation of the camera.
+      * This function generates a matrix suitable for a left handed coordinate system
+      * Example Playground - https://playground.babylonjs.com/#AV9X17#60
+      * Example Playground - https://playground.babylonjs.com/#AV9X17#61
       * @param eye defines the final position of the entity
       * @param target defines where the entity should look at
       * @param up defines the up vector for the entity
@@ -680,8 +724,10 @@ object mathsMathDotvectorMod {
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("LookAtLHToRef")(eye.asInstanceOf[js.Any], target.asInstanceOf[js.Any], up.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
-      * Gets a new rotation matrix used to rotate an entity so as it looks at the target vector3, from the eye vector3 position, the up vector3 being oriented like "up"
-      * This function works in right handed mode
+      * Creates a new matrix that transforms vertices from world space to camera space. It takes three vectors as arguments that together describe the position and orientation of the camera.
+      * This function generates a matrix suitable for a right handed coordinate system
+      * Example Playground - https://playground.babylonjs.com/#AV9X17#62
+      * Example Playground - https://playground.babylonjs.com/#AV9X17#63
       * @param eye defines the final position of the entity
       * @param target defines where the entity should look at
       * @param up defines the up vector for the entity
@@ -690,8 +736,10 @@ object mathsMathDotvectorMod {
     inline def LookAtRH(eye: DeepImmutable[Vector3], target: DeepImmutable[Vector3], up: DeepImmutable[Vector3]): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("LookAtRH")(eye.asInstanceOf[js.Any], target.asInstanceOf[js.Any], up.asInstanceOf[js.Any])).asInstanceOf[Matrix]
     
     /**
-      * Sets the given "result" Matrix to a rotation matrix used to rotate an entity so that it looks at the target vector3, from the eye vector3 position, the up vector3 being oriented like "up".
-      * This function works in right handed mode
+      * Sets the given "result" Matrix to a matrix that transforms vertices from world space to camera space. It takes three vectors as arguments that together describe the position and orientation of the camera.
+      * This function generates a matrix suitable for a right handed coordinate system
+      * Example Playground - https://playground.babylonjs.com/#AV9X17#64
+      * Example Playground - https://playground.babylonjs.com/#AV9X17#65
       * @param eye defines the final position of the entity
       * @param target defines where the entity should look at
       * @param up defines the up vector for the entity
@@ -701,8 +749,9 @@ object mathsMathDotvectorMod {
     inline def LookAtRHToRef[T /* <: Matrix */](eye: DeepImmutable[Vector3], target: DeepImmutable[Vector3], up: DeepImmutable[Vector3], result: T): T = (^.asInstanceOf[js.Dynamic].applyDynamic("LookAtRHToRef")(eye.asInstanceOf[js.Any], target.asInstanceOf[js.Any], up.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[T]
     
     /**
-      * Gets a new rotation matrix used to rotate an entity so as it looks in the direction specified by forward from the eye position, the up direction being oriented like "up".
-      * This function works in left handed mode
+      * Creates a new matrix that transforms vertices from world space to camera space. It takes two vectors as arguments that together describe the orientation of the camera. The position is assumed to be at the origin (0,0,0)
+      * This function generates a matrix suitable for a left handed coordinate system
+      * Example Playground - https://playground.babylonjs.com/#AV9X17#66
       * @param forward defines the forward direction - Must be normalized and orthogonal to up.
       * @param up defines the up vector for the entity - Must be normalized and orthogonal to forward.
       * @returns the new matrix
@@ -710,8 +759,9 @@ object mathsMathDotvectorMod {
     inline def LookDirectionLH(forward: DeepImmutable[Vector3], up: DeepImmutable[Vector3]): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("LookDirectionLH")(forward.asInstanceOf[js.Any], up.asInstanceOf[js.Any])).asInstanceOf[Matrix]
     
     /**
-      * Sets the given "result" Matrix to a rotation matrix used to rotate an entity so that it looks in the direction of forward, the up direction being oriented like "up".
-      * This function works in left handed mode
+      * Sets the given "result" Matrix to a matrix that transforms vertices from world space to camera space. It takes two vectors as arguments that together describe the orientation of the camera. The position is assumed to be at the origin (0,0,0)
+      * This function generates a matrix suitable for a left handed coordinate system
+      * Example Playground - https://playground.babylonjs.com/#AV9X17#67
       * @param forward defines the forward direction - Must be normalized and orthogonal to up.
       * @param up defines the up vector for the entity - Must be normalized and orthogonal to forward.
       * @param result defines the target matrix
@@ -720,8 +770,9 @@ object mathsMathDotvectorMod {
     inline def LookDirectionLHToRef[T /* <: Matrix */](forward: DeepImmutable[Vector3], up: DeepImmutable[Vector3], result: T): T = (^.asInstanceOf[js.Dynamic].applyDynamic("LookDirectionLHToRef")(forward.asInstanceOf[js.Any], up.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[T]
     
     /**
-      * Gets a new rotation matrix used to rotate an entity so as it looks in the direction specified by forward from the eye position, the up Vector3 being oriented like "up".
-      * This function works in right handed mode
+      * Creates a new matrix that transforms vertices from world space to camera space. It takes two vectors as arguments that together describe the orientation of the camera. The position is assumed to be at the origin (0,0,0)
+      * This function generates a matrix suitable for a right handed coordinate system
+      * Example Playground - https://playground.babylonjs.com/#AV9X17#68
       * @param forward defines the forward direction - Must be normalized and orthogonal to up.
       * @param up defines the up vector for the entity - Must be normalized and orthogonal to forward.
       * @returns the new matrix
@@ -729,8 +780,9 @@ object mathsMathDotvectorMod {
     inline def LookDirectionRH(forward: DeepImmutable[Vector3], up: DeepImmutable[Vector3]): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("LookDirectionRH")(forward.asInstanceOf[js.Any], up.asInstanceOf[js.Any])).asInstanceOf[Matrix]
     
     /**
-      * Sets the given "result" Matrix to a rotation matrix used to rotate an entity so that it looks in the direction of forward, the up vector3 being oriented like "up".
-      * This function works in right handed mode
+      * Sets the given "result" Matrix to a matrix that transforms vertices from world space to camera space. It takes two vectors as arguments that together describe the orientation of the camera. The position is assumed to be at the origin (0,0,0)
+      * This function generates a matrix suitable for a right handed coordinate system
+      * Example Playground - https://playground.babylonjs.com/#AV9X17#69
       * @param forward defines the forward direction - Must be normalized and orthogonal to up.
       * @param up defines the up vector for the entity - Must be normalized and orthogonal to forward.
       * @param result defines the target matrix
@@ -740,6 +792,7 @@ object mathsMathDotvectorMod {
     
     /**
       * Create a left-handed orthographic projection matrix
+      * Example Playground - https://playground.babylonjs.com/#AV9X17#70
       * @param width defines the viewport width
       * @param height defines the viewport height
       * @param znear defines the near clip plane
@@ -752,6 +805,7 @@ object mathsMathDotvectorMod {
     
     /**
       * Store a left-handed orthographic projection to a given matrix
+      * Example Playground - https://playground.babylonjs.com/#AV9X17#71
       * @param width defines the viewport width
       * @param height defines the viewport height
       * @param znear defines the near clip plane
@@ -765,6 +819,7 @@ object mathsMathDotvectorMod {
     
     /**
       * Create a left-handed orthographic projection matrix
+      * Example Playground - https://playground.babylonjs.com/#AV9X17#72
       * @param left defines the viewport left coordinate
       * @param right defines the viewport right coordinate
       * @param bottom defines the viewport bottom coordinate
@@ -787,6 +842,7 @@ object mathsMathDotvectorMod {
     
     /**
       * Stores a left-handed orthographic projection into a given matrix
+      * Example Playground - https://playground.babylonjs.com/#AV9X17#73
       * @param left defines the viewport left coordinate
       * @param right defines the viewport right coordinate
       * @param bottom defines the viewport bottom coordinate
@@ -811,6 +867,7 @@ object mathsMathDotvectorMod {
     
     /**
       * Creates a right-handed orthographic projection matrix
+      * Example Playground - https://playground.babylonjs.com/#AV9X17#76
       * @param left defines the viewport left coordinate
       * @param right defines the viewport right coordinate
       * @param bottom defines the viewport bottom coordinate
@@ -833,6 +890,7 @@ object mathsMathDotvectorMod {
     
     /**
       * Stores a right-handed orthographic projection into a given matrix
+      * Example Playground - https://playground.babylonjs.com/#AV9X17#77
       * @param left defines the viewport left coordinate
       * @param right defines the viewport right coordinate
       * @param bottom defines the viewport bottom coordinate
@@ -857,6 +915,7 @@ object mathsMathDotvectorMod {
     
     /**
       * Creates a left-handed perspective projection matrix
+      * Example Playground - https://playground.babylonjs.com/#AV9X17#78
       * @param fov defines the horizontal field of view
       * @param aspect defines the aspect ratio
       * @param znear defines the near clip plane
@@ -923,6 +982,7 @@ object mathsMathDotvectorMod {
     
     /**
       * Stores a left-handed perspective projection into a given matrix
+      * Example Playground - https://playground.babylonjs.com/#AV9X17#81
       * @param fov defines the horizontal field of view
       * @param aspect defines the aspect ratio
       * @param znear defines the near clip plane
@@ -1085,6 +1145,7 @@ object mathsMathDotvectorMod {
     
     /**
       * Creates a right-handed perspective projection matrix
+      * Example Playground - https://playground.babylonjs.com/#AV9X17#83
       * @param fov defines the horizontal field of view
       * @param aspect defines the aspect ratio
       * @param znear defines the near clip plane
@@ -1151,6 +1212,7 @@ object mathsMathDotvectorMod {
     
     /**
       * Stores a right-handed perspective projection into a given matrix
+      * Example Playground - https://playground.babylonjs.com/#AV9X17#84
       * @param fov defines the horizontal field of view
       * @param aspect defines the aspect ratio
       * @param znear defines the near clip plane
@@ -1313,6 +1375,7 @@ object mathsMathDotvectorMod {
     
     /**
       * Stores a left-handed perspective projection into a given matrix with depth reversed
+      * Example Playground - https://playground.babylonjs.com/#AV9X17#89
       * @param fov defines the horizontal field of view
       * @param aspect defines the aspect ratio
       * @param znear defines the near clip plane
@@ -1386,6 +1449,7 @@ object mathsMathDotvectorMod {
     
     /**
       * Stores a right-handed perspective projection into a given matrix
+      * Example Playground - https://playground.babylonjs.com/#AV9X17#90
       * @param fov defines the horizontal field of view
       * @param aspect defines the aspect ratio
       * @param znear defines the near clip plane
@@ -1459,6 +1523,7 @@ object mathsMathDotvectorMod {
     
     /**
       * Stores a perspective projection for WebVR info a given matrix
+      * Example Playground - https://playground.babylonjs.com/#AV9X17#92
       * @param fov defines the field of view
       * @param fov.upDegrees
       * @param fov.downDegrees
@@ -1522,6 +1587,7 @@ object mathsMathDotvectorMod {
     
     /**
       * Creates a left-handed perspective projection matrix
+      * Example Playground - https://playground.babylonjs.com/#AV9X17#85
       * @param width defines the viewport width
       * @param height defines the viewport height
       * @param znear defines the near clip plane
@@ -1551,6 +1617,7 @@ object mathsMathDotvectorMod {
     
     /**
       * Computes a reflection matrix from a plane
+      * Example Playground - https://playground.babylonjs.com/#AV9X17#87
       * @param plane defines the reflection plane
       * @returns a new matrix
       */
@@ -1558,6 +1625,7 @@ object mathsMathDotvectorMod {
     
     /**
       * Computes a reflection matrix from a plane
+      * Example Playground - https://playground.babylonjs.com/#AV9X17#88
       * @param plane defines the reflection plane
       * @param result defines the target matrix
       * @returns result input
@@ -1567,6 +1635,7 @@ object mathsMathDotvectorMod {
     /**
       * Takes normalised vectors and returns a rotation matrix to align "from" with "to".
       * Taken from http://www.iquilezles.org/www/articles/noacos/noacos.htm
+      * Example Playground - https://playground.babylonjs.com/#AV9X17#93
       * @param from defines the vector to align
       * @param to defines the vector to align to
       * @param result defines the target matrix
@@ -1576,6 +1645,7 @@ object mathsMathDotvectorMod {
     
     /**
       * Creates a new rotation matrix for "angle" radians around the given axis
+      * Example Playground - https://playground.babylonjs.com/#AV9X17#96
       * @param axis defines the axis to use
       * @param angle defines the angle (in radians) to use
       * @returns the new matrix
@@ -1584,6 +1654,7 @@ object mathsMathDotvectorMod {
     
     /**
       * Creates a new rotation matrix for "angle" radians around the given axis and stores it in a given matrix
+      * Example Playground - https://playground.babylonjs.com/#AV9X17#94
       * @param axis defines the axis to use
       * @param angle defines the angle (in radians) to use
       * @param result defines the target matrix
@@ -1593,6 +1664,7 @@ object mathsMathDotvectorMod {
     
     /**
       * Creates a new rotation matrix for "angle" radians around the X axis
+      * Example Playground - https://playground.babylonjs.com/#AV9X17#97
       * @param angle defines the angle (in radians) to use
       * @returns the new matrix
       */
@@ -1600,6 +1672,7 @@ object mathsMathDotvectorMod {
     
     /**
       * Creates a new rotation matrix for "angle" radians around the X axis and stores it in a given matrix
+      * Example Playground - https://playground.babylonjs.com/#AV9X17#98
       * @param angle defines the angle (in radians) to use
       * @param result defines the target matrix
       * @returns result input
@@ -1608,6 +1681,7 @@ object mathsMathDotvectorMod {
     
     /**
       * Creates a new rotation matrix for "angle" radians around the Y axis
+      * Example Playground - https://playground.babylonjs.com/#AV9X17#99
       * @param angle defines the angle (in radians) to use
       * @returns the new matrix
       */
@@ -1615,6 +1689,7 @@ object mathsMathDotvectorMod {
     
     /**
       * Creates a new rotation matrix for "angle" radians around the Y axis and stores it in a given matrix
+      * Example Playground - https://playground.babylonjs.com/#AV9X17#100
       * @param angle defines the angle (in radians) to use
       * @param result defines the target matrix
       * @returns result input
@@ -1623,6 +1698,8 @@ object mathsMathDotvectorMod {
     
     /**
       * Creates a rotation matrix
+      * Example Playground - https://playground.babylonjs.com/#AV9X17#103
+      * Example Playground - https://playground.babylonjs.com/#AV9X17#105
       * @param yaw defines the yaw angle in radians (Y axis)
       * @param pitch defines the pitch angle in radians (X axis)
       * @param roll defines the roll angle in radians (Z axis)
@@ -1632,6 +1709,7 @@ object mathsMathDotvectorMod {
     
     /**
       * Creates a rotation matrix and stores it in a given matrix
+      * Example Playground - https://playground.babylonjs.com/#AV9X17#104
       * @param yaw defines the yaw angle in radians (Y axis)
       * @param pitch defines the pitch angle in radians (X axis)
       * @param roll defines the roll angle in radians (Z axis)
@@ -1642,6 +1720,7 @@ object mathsMathDotvectorMod {
     
     /**
       * Creates a new rotation matrix for "angle" radians around the Z axis
+      * Example Playground - https://playground.babylonjs.com/#AV9X17#101
       * @param angle defines the angle (in radians) to use
       * @returns the new matrix
       */
@@ -1649,6 +1728,7 @@ object mathsMathDotvectorMod {
     
     /**
       * Creates a new rotation matrix for "angle" radians around the Z axis and stores it in a given matrix
+      * Example Playground - https://playground.babylonjs.com/#AV9X17#102
       * @param angle defines the angle (in radians) to use
       * @param result defines the target matrix
       * @returns result input
@@ -1657,6 +1737,7 @@ object mathsMathDotvectorMod {
     
     /**
       * Creates a scaling matrix
+      * Example Playground - https://playground.babylonjs.com/#AV9X17#107
       * @param x defines the scale factor on X axis
       * @param y defines the scale factor on Y axis
       * @param z defines the scale factor on Z axis
@@ -1666,6 +1747,7 @@ object mathsMathDotvectorMod {
     
     /**
       * Creates a scaling matrix and stores it in a given matrix
+      * Example Playground - https://playground.babylonjs.com/#AV9X17#108
       * @param x defines the scale factor on X axis
       * @param y defines the scale factor on Y axis
       * @param z defines the scale factor on Z axis
@@ -1676,6 +1758,7 @@ object mathsMathDotvectorMod {
     
     /**
       * Creates a translation matrix
+      * Example Playground - https://playground.babylonjs.com/#AV9X17#109
       * @param x defines the translation on X axis
       * @param y defines the translation on Y axis
       * @param z defines the translationon Z axis
@@ -1685,6 +1768,7 @@ object mathsMathDotvectorMod {
     
     /**
       * Creates a translation matrix and stores it in a given matrix
+      * Example Playground - https://playground.babylonjs.com/#AV9X17#110
       * @param x defines the translation on X axis
       * @param y defines the translation on Y axis
       * @param z defines the translationon Z axis
@@ -1695,6 +1779,7 @@ object mathsMathDotvectorMod {
     
     /**
       * Compute the transpose of a given matrix
+      * Example Playground - https://playground.babylonjs.com/#AV9X17#111
       * @param matrix defines the matrix to transpose
       * @returns the new matrix
       */
@@ -1702,6 +1787,7 @@ object mathsMathDotvectorMod {
     
     /**
       * Compute the transpose of a matrix and store it in a target matrix
+      * Example Playground - https://playground.babylonjs.com/#AV9X17#112
       * @param matrix defines the matrix to transpose
       * @param result defines the target matrix
       * @returns result input
@@ -2010,7 +2096,7 @@ object mathsMathDotvectorMod {
       * Returns a new Vector3 set with the Euler angles translated from the current quaternion
       * Example Playground https://playground.babylonjs.com/#L49EJ7#32
       * @returns a new Vector3 containing the Euler angles
-      * @see https://doc.babylonjs.com/divingDeeper/mesh/transforms/center_origin/rotation_conventions
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/mesh/transforms/center_origin/rotation_conventions
       */
     def toEulerAngles(): Vector3 = js.native
     
@@ -2019,7 +2105,7 @@ object mathsMathDotvectorMod {
       * Example Playground https://playground.babylonjs.com/#L49EJ7#31
       * @param result defines the vector which will be filled with the Euler angles
       * @returns result input
-      * @see https://doc.babylonjs.com/divingDeeper/mesh/transforms/center_origin/rotation_conventions
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/mesh/transforms/center_origin/rotation_conventions
       */
     def toEulerAnglesToRef[T /* <: Vector3 */](result: T): T = js.native
     
@@ -3061,6 +3147,17 @@ object mathsMathDotvectorMod {
     ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("PointInTriangle")(p.asInstanceOf[js.Any], p0.asInstanceOf[js.Any], p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /**
+      * Returns a new Vector2 with random values between min and max
+      * @param min the minimum random value
+      * @param max the maximum random value
+      * @returns a Vector2 with random values between min and max
+      */
+    inline def Random(): Vector2 = ^.asInstanceOf[js.Dynamic].applyDynamic("Random")().asInstanceOf[Vector2]
+    inline def Random(min: Double): Vector2 = ^.asInstanceOf[js.Dynamic].applyDynamic("Random")(min.asInstanceOf[js.Any]).asInstanceOf[Vector2]
+    inline def Random(min: Double, max: Double): Vector2 = (^.asInstanceOf[js.Dynamic].applyDynamic("Random")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Vector2]
+    inline def Random(min: Unit, max: Double): Vector2 = (^.asInstanceOf[js.Dynamic].applyDynamic("Random")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Vector2]
+    
+    /**
       * Gets a new Vector2 set with the transformed coordinates of the given vector by the given transformation matrix
       * Example Playground https://playground.babylonjs.com/#QYBWV4#17
       * @param vector defines the vector to transform
@@ -4084,6 +4181,34 @@ object mathsMathDotvectorMod {
     ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("ProjectToRef")(vector.asInstanceOf[js.Any], world.asInstanceOf[js.Any], transform.asInstanceOf[js.Any], viewport.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[T]
     
     /**
+      * Returns a new Vector3 with random values between min and max
+      * @param min the minimum random value
+      * @param max the maximum random value
+      * @returns a Vector3 with random values between min and max
+      */
+    inline def Random(): Vector3 = ^.asInstanceOf[js.Dynamic].applyDynamic("Random")().asInstanceOf[Vector3]
+    inline def Random(min: Double): Vector3 = ^.asInstanceOf[js.Dynamic].applyDynamic("Random")(min.asInstanceOf[js.Any]).asInstanceOf[Vector3]
+    inline def Random(min: Double, max: Double): Vector3 = (^.asInstanceOf[js.Dynamic].applyDynamic("Random")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Vector3]
+    inline def Random(min: Unit, max: Double): Vector3 = (^.asInstanceOf[js.Dynamic].applyDynamic("Random")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Vector3]
+    
+    /**
+      * Reflects a vector off the plane defined by a normalized normal
+      * @param inDirection defines the vector direction
+      * @param normal defines the normal - Must be normalized
+      * @returns the resulting vector
+      */
+    inline def Reflect[T /* <: Vector3 */](inDirection: DeepImmutable[Vector3], normal: DeepImmutable[Vector3]): Vector3 = (^.asInstanceOf[js.Dynamic].applyDynamic("Reflect")(inDirection.asInstanceOf[js.Any], normal.asInstanceOf[js.Any])).asInstanceOf[Vector3]
+    
+    /**
+      * Reflects a vector off the plane defined by a normalized normal to reference
+      * @param inDirection defines the vector direction
+      * @param normal defines the normal - Must be normalized
+      * @param result defines the Vector3 where to store the result
+      * @returns the resulting vector
+      */
+    inline def ReflectToRef[T /* <: Vector3 */](inDirection: DeepImmutable[Vector3], normal: DeepImmutable[Vector3], ref: T): T = (^.asInstanceOf[js.Dynamic].applyDynamic("ReflectToRef")(inDirection.asInstanceOf[js.Any], normal.asInstanceOf[js.Any], ref.asInstanceOf[js.Any])).asInstanceOf[T]
+    
+    /**
       * Returns a new Vector3 set to (1.0, 0.0, 0.0)
       * Example Playground https://playground.babylonjs.com/#R1F8YU#71
       * @returns a new right Vector3
@@ -4100,7 +4225,7 @@ object mathsMathDotvectorMod {
       * @param axis2 defines the second axis
       * @param axis3 defines the third axis
       * @returns a new Vector3
-      * @see https://doc.babylonjs.com/divingDeeper/mesh/transforms/center_origin/target_align
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/mesh/transforms/center_origin/target_align
       */
     inline def RotationFromAxis[T /* <: Vector3 */](axis1: DeepImmutable[T], axis2: DeepImmutable[Vector3], axis3: DeepImmutable[Vector3]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("RotationFromAxis")(axis1.asInstanceOf[js.Any], axis2.asInstanceOf[js.Any], axis3.asInstanceOf[js.Any])).asInstanceOf[T]
     
@@ -4316,6 +4441,11 @@ object mathsMathDotvectorMod {
     def _DownReadOnly: Any = js.native
     inline def _DownReadOnly_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DownReadOnly")(x.asInstanceOf[js.Any])
     
+    @JSImport("babylonjs/Maths/math.vector", "Vector3._LeftHandedBackwardReadOnly")
+    @js.native
+    def _LeftHandedBackwardReadOnly: Any = js.native
+    inline def _LeftHandedBackwardReadOnly_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_LeftHandedBackwardReadOnly")(x.asInstanceOf[js.Any])
+    
     @JSImport("babylonjs/Maths/math.vector", "Vector3._LeftHandedForwardReadOnly")
     @js.native
     def _LeftHandedForwardReadOnly: Any = js.native
@@ -4325,6 +4455,11 @@ object mathsMathDotvectorMod {
     @js.native
     def _LeftReadOnly: Any = js.native
     inline def _LeftReadOnly_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_LeftReadOnly")(x.asInstanceOf[js.Any])
+    
+    @JSImport("babylonjs/Maths/math.vector", "Vector3._RightHandedBackwardReadOnly")
+    @js.native
+    def _RightHandedBackwardReadOnly: Any = js.native
+    inline def _RightHandedBackwardReadOnly_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_RightHandedBackwardReadOnly")(x.asInstanceOf[js.Any])
     
     @JSImport("babylonjs/Maths/math.vector", "Vector3._RightHandedForwardReadOnly")
     @js.native
@@ -4935,6 +5070,17 @@ object mathsMathDotvectorMod {
       * @returns the new vector
       */
     inline def One(): Vector4 = ^.asInstanceOf[js.Dynamic].applyDynamic("One")().asInstanceOf[Vector4]
+    
+    /**
+      * Returns a new Vector4 with random values between min and max
+      * @param min the minimum random value
+      * @param max the maximum random value
+      * @returns a Vector4 with random values between min and max
+      */
+    inline def Random(): Vector4 = ^.asInstanceOf[js.Dynamic].applyDynamic("Random")().asInstanceOf[Vector4]
+    inline def Random(min: Double): Vector4 = ^.asInstanceOf[js.Dynamic].applyDynamic("Random")(min.asInstanceOf[js.Any]).asInstanceOf[Vector4]
+    inline def Random(min: Double, max: Double): Vector4 = (^.asInstanceOf[js.Dynamic].applyDynamic("Random")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Vector4]
+    inline def Random(min: Unit, max: Double): Vector4 = (^.asInstanceOf[js.Dynamic].applyDynamic("Random")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Vector4]
     
     /**
       * Returns a new Vector4 set with the result of the transformation by the given matrix of the given vector.

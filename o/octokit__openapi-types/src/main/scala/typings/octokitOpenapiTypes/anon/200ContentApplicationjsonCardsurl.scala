@@ -6,25 +6,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `200ContentApplicationjsonCardsurl` extends StObject {
   
-  /** Response */
+  /** @description Response */
   var `200`: ContentApplicationjsonCardsurl
   
-  var `304`: Any
+  var `304`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.anon.Actionsrunnerlabelsreadonly['not_modified'] */ js.Any
   
-  var `401`: Content48
+  var `401`: Content36
   
-  var `403`: Content48
+  var `403`: Content36
   
-  var `404`: Content48
+  var `404`: Content36
 }
 object `200ContentApplicationjsonCardsurl` {
   
   inline def apply(
     `200`: ContentApplicationjsonCardsurl,
-    `304`: Any,
-    `401`: Content48,
-    `403`: Content48,
-    `404`: Content48
+    `304`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.anon.Actionsrunnerlabelsreadonly['not_modified'] */ js.Any,
+    `401`: Content36,
+    `403`: Content36,
+    `404`: Content36
   ): `200ContentApplicationjsonCardsurl` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("200")(`200`.asInstanceOf[js.Any])
@@ -40,12 +40,14 @@ object `200ContentApplicationjsonCardsurl` {
     
     inline def set200(value: ContentApplicationjsonCardsurl): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
     
-    inline def set304(value: Any): Self = StObject.set(x, "304", value.asInstanceOf[js.Any])
+    inline def set304(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.anon.Actionsrunnerlabelsreadonly['not_modified'] */ js.Any
+    ): Self = StObject.set(x, "304", value.asInstanceOf[js.Any])
     
-    inline def set401(value: Content48): Self = StObject.set(x, "401", value.asInstanceOf[js.Any])
+    inline def set401(value: Content36): Self = StObject.set(x, "401", value.asInstanceOf[js.Any])
     
-    inline def set403(value: Content48): Self = StObject.set(x, "403", value.asInstanceOf[js.Any])
+    inline def set403(value: Content36): Self = StObject.set(x, "403", value.asInstanceOf[js.Any])
     
-    inline def set404(value: Content48): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
+    inline def set404(value: Content36): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
   }
 }

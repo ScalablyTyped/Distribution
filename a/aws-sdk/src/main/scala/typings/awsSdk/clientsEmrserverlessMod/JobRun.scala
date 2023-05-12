@@ -17,6 +17,11 @@ trait JobRun extends StObject {
   var arn: JobArn
   
   /**
+    * The aggregate vCPU, memory, and storage that AWS has billed for the job run. The billed resources include a 1-minute minimum usage for workers, plus additional storage over 20 GB per worker. Note that billed resources do not include usage for idle pre-initialized workers.
+    */
+  var billedResourceUtilization: js.UndefOr[ResourceUtilization] = js.undefined
+  
+  /**
     * The configuration settings that are used to override default configuration.
     */
   var configurationOverrides: js.UndefOr[ConfigurationOverrides] = js.undefined
@@ -37,6 +42,11 @@ trait JobRun extends StObject {
   var executionRole: IAMRoleArn
   
   /**
+    * Returns the job run timeout value from the StartJobRun call. If no timeout was specified, then it returns the default timeout of 720 minutes.
+    */
+  var executionTimeoutMinutes: js.UndefOr[Duration] = js.undefined
+  
+  /**
     * The job driver for the job run.
     */
   var jobDriver: JobDriver
@@ -54,7 +64,7 @@ trait JobRun extends StObject {
   var networkConfiguration: js.UndefOr[NetworkConfiguration] = js.undefined
   
   /**
-    * The EMR release version associated with the application your job is running on.
+    * The EMR release associated with the application your job is running on.
     */
   var releaseLabel: ReleaseLabel
   
@@ -79,7 +89,7 @@ trait JobRun extends StObject {
   var totalExecutionDurationSeconds: js.UndefOr[Integer] = js.undefined
   
   /**
-    * The aggregate vCPU, memory, and storage resources used from the time job start executing till the time job is terminated, rounded up to the nearest second.
+    * The aggregate vCPU, memory, and storage resources used from the time the job starts to execute, until the time the job terminates, rounded up to the nearest second.
     */
   var totalResourceUtilization: js.UndefOr[TotalResourceUtilization] = js.undefined
   
@@ -114,6 +124,10 @@ object JobRun {
     
     inline def setArn(value: JobArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
+    inline def setBilledResourceUtilization(value: ResourceUtilization): Self = StObject.set(x, "billedResourceUtilization", value.asInstanceOf[js.Any])
+    
+    inline def setBilledResourceUtilizationUndefined: Self = StObject.set(x, "billedResourceUtilization", js.undefined)
+    
     inline def setConfigurationOverrides(value: ConfigurationOverrides): Self = StObject.set(x, "configurationOverrides", value.asInstanceOf[js.Any])
     
     inline def setConfigurationOverridesUndefined: Self = StObject.set(x, "configurationOverrides", js.undefined)
@@ -123,6 +137,10 @@ object JobRun {
     inline def setCreatedBy(value: RequestIdentityUserArn): Self = StObject.set(x, "createdBy", value.asInstanceOf[js.Any])
     
     inline def setExecutionRole(value: IAMRoleArn): Self = StObject.set(x, "executionRole", value.asInstanceOf[js.Any])
+    
+    inline def setExecutionTimeoutMinutes(value: Duration): Self = StObject.set(x, "executionTimeoutMinutes", value.asInstanceOf[js.Any])
+    
+    inline def setExecutionTimeoutMinutesUndefined: Self = StObject.set(x, "executionTimeoutMinutes", js.undefined)
     
     inline def setJobDriver(value: JobDriver): Self = StObject.set(x, "jobDriver", value.asInstanceOf[js.Any])
     

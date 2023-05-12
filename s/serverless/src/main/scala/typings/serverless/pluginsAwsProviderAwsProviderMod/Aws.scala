@@ -21,7 +21,7 @@ trait Aws extends StObject {
   
   def getStage(): String = js.native
   
-  var naming: StringDictionary[js.Function0[String]] = js.native
+  var naming: StringDictionary[js.Function1[/* param */ js.UndefOr[String], String]] = js.native
   
   def request(service: String, method: String): js.Promise[Any] = js.native
   def request(service: String, method: String, params: js.Object): js.Promise[Any] = js.native

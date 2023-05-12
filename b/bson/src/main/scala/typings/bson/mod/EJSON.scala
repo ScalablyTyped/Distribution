@@ -10,115 +10,94 @@ object EJSON {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def deserialize(ejson: Document): SerializableTypes = ^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(ejson.asInstanceOf[js.Any]).asInstanceOf[SerializableTypes]
-  inline def deserialize(ejson: Document, options: Options): SerializableTypes = (^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(ejson.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[SerializableTypes]
+  @JSImport("bson", "EJSON.deserialize")
+  @js.native
+  def deserialize: js.Function2[/* ejson */ Document, /* options */ js.UndefOr[EJSONOptions], Any] = js.native
+  inline def deserialize(ejson: Document): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(ejson.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def deserialize(ejson: Document, options: EJSONOptions): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(ejson.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def deserialize_=(x: js.Function2[/* ejson */ Document, /* options */ js.UndefOr[EJSONOptions], Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("deserialize")(x.asInstanceOf[js.Any])
   
-  inline def parse(text: String): SerializableTypes = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any]).asInstanceOf[SerializableTypes]
-  inline def parse(text: String, options: Options): SerializableTypes = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[SerializableTypes]
+  @JSImport("bson", "EJSON.parse")
+  @js.native
+  def parse: js.Function2[/* text */ String, /* options */ js.UndefOr[EJSONOptions], Any] = js.native
+  inline def parse(text: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def parse(text: String, options: EJSONOptions): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def parse_=(x: js.Function2[/* text */ String, /* options */ js.UndefOr[EJSONOptions], Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parse")(x.asInstanceOf[js.Any])
   
-  inline def serialize(value: SerializableTypes): Document = ^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(value.asInstanceOf[js.Any]).asInstanceOf[Document]
-  inline def serialize(value: SerializableTypes, options: Options): Document = (^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Document]
+  @JSImport("bson", "EJSON.serialize")
+  @js.native
+  def serialize: js.Function2[/* value */ Any, /* options */ js.UndefOr[EJSONOptions], Document] = js.native
+  inline def serialize(value: Any): Document = ^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(value.asInstanceOf[js.Any]).asInstanceOf[Document]
+  inline def serialize(value: Any, options: EJSONOptions): Document = (^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Document]
+  inline def serialize_=(x: js.Function2[/* value */ Any, /* options */ js.UndefOr[EJSONOptions], Document]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("serialize")(x.asInstanceOf[js.Any])
   
-  inline def stringify(value: SerializableTypes): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def stringify(value: SerializableTypes, replacer: js.Array[scala.Double | String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def stringify(value: SerializableTypes, replacer: js.Array[scala.Double | String], space: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
+  @JSImport("bson", "EJSON.stringify")
+  @js.native
+  def stringify: js.Function4[
+    /* value */ Any, 
+    /* replacer */ js.UndefOr[
+      (js.Array[scala.Double | String]) | (js.ThisFunction2[/* this */ Any, /* key */ String, /* value */ Any, Any]) | EJSONOptions
+    ], 
+    /* space */ js.UndefOr[String | scala.Double], 
+    /* options */ js.UndefOr[EJSONOptions], 
+    String
+  ] = js.native
+  inline def stringify(value: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def stringify(value: Any, replacer: js.Array[scala.Double | String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringify(value: Any, replacer: js.Array[scala.Double | String], space: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringify(value: Any, replacer: js.Array[scala.Double | String], space: String, options: EJSONOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringify(value: Any, replacer: js.Array[scala.Double | String], space: scala.Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringify(value: Any, replacer: js.Array[scala.Double | String], space: scala.Double, options: EJSONOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringify(value: Any, replacer: js.Array[scala.Double | String], space: Unit, options: EJSONOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringify(value: Any, replacer: js.ThisFunction2[/* this */ Any, /* key */ String, /* value */ Any, Any]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def stringify(
-    value: SerializableTypes,
-    replacer: js.Array[scala.Double | String],
-    space: String,
-    options: Options
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def stringify(value: SerializableTypes, replacer: js.Array[scala.Double | String], space: scala.Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def stringify(
-    value: SerializableTypes,
-    replacer: js.Array[scala.Double | String],
-    space: scala.Double,
-    options: Options
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def stringify(value: SerializableTypes, replacer: js.Array[scala.Double | String], space: Unit, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def stringify(
-    value: SerializableTypes,
-    replacer: js.ThisFunction2[/* this */ Any, /* key */ String, /* value */ Any, Any]
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def stringify(
-    value: SerializableTypes,
+    value: Any,
     replacer: js.ThisFunction2[/* this */ Any, /* key */ String, /* value */ Any, Any],
     space: String
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def stringify(
-    value: SerializableTypes,
+    value: Any,
     replacer: js.ThisFunction2[/* this */ Any, /* key */ String, /* value */ Any, Any],
     space: String,
-    options: Options
+    options: EJSONOptions
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def stringify(
-    value: SerializableTypes,
+    value: Any,
     replacer: js.ThisFunction2[/* this */ Any, /* key */ String, /* value */ Any, Any],
     space: scala.Double
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def stringify(
-    value: SerializableTypes,
+    value: Any,
     replacer: js.ThisFunction2[/* this */ Any, /* key */ String, /* value */ Any, Any],
     space: scala.Double,
-    options: Options
+    options: EJSONOptions
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def stringify(
-    value: SerializableTypes,
+    value: Any,
     replacer: js.ThisFunction2[/* this */ Any, /* key */ String, /* value */ Any, Any],
     space: Unit,
-    options: Options
+    options: EJSONOptions
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def stringify(value: SerializableTypes, replacer: Unit, space: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def stringify(value: SerializableTypes, replacer: Unit, space: String, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def stringify(value: SerializableTypes, replacer: Unit, space: scala.Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def stringify(value: SerializableTypes, replacer: Unit, space: scala.Double, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def stringify(value: SerializableTypes, replacer: Unit, space: Unit, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def stringify(value: SerializableTypes, replacer: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def stringify(value: SerializableTypes, replacer: Options, space: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def stringify(value: SerializableTypes, replacer: Options, space: String, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def stringify(value: SerializableTypes, replacer: Options, space: scala.Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def stringify(value: SerializableTypes, replacer: Options, space: scala.Double, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def stringify(value: SerializableTypes, replacer: Options, space: Unit, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  
-  type JSONPrimitive = String | scala.Double | Boolean | Null
-  
-  trait Options extends StObject {
-    
-    /** Output using the Extended JSON v1 spec */
-    var legacy: js.UndefOr[Boolean] = js.undefined
-    
-    /** Enable Extended JSON's `relaxed` mode, which attempts to return native JS types where possible, rather than BSON types */
-    var relaxed: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * Disable Extended JSON's `relaxed` mode, which attempts to return BSON types where possible, rather than native JS types
-      * @deprecated Please use the relaxed property instead
-      */
-    var strict: js.UndefOr[Boolean] = js.undefined
-  }
-  object Options {
-    
-    inline def apply(): Options = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Options]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
-      
-      inline def setLegacy(value: Boolean): Self = StObject.set(x, "legacy", value.asInstanceOf[js.Any])
-      
-      inline def setLegacyUndefined: Self = StObject.set(x, "legacy", js.undefined)
-      
-      inline def setRelaxed(value: Boolean): Self = StObject.set(x, "relaxed", value.asInstanceOf[js.Any])
-      
-      inline def setRelaxedUndefined: Self = StObject.set(x, "relaxed", js.undefined)
-      
-      inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
-      
-      inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
-    }
-  }
-  
-  type SerializableTypes = Document | (js.Array[JSONPrimitive | Document]) | JSONPrimitive
+  inline def stringify(value: Any, replacer: Unit, space: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringify(value: Any, replacer: Unit, space: String, options: EJSONOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringify(value: Any, replacer: Unit, space: scala.Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringify(value: Any, replacer: Unit, space: scala.Double, options: EJSONOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringify(value: Any, replacer: Unit, space: Unit, options: EJSONOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringify(value: Any, replacer: EJSONOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringify(value: Any, replacer: EJSONOptions, space: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringify(value: Any, replacer: EJSONOptions, space: String, options: EJSONOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringify(value: Any, replacer: EJSONOptions, space: scala.Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringify(value: Any, replacer: EJSONOptions, space: scala.Double, options: EJSONOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringify(value: Any, replacer: EJSONOptions, space: Unit, options: EJSONOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringify_=(
+    x: js.Function4[
+      /* value */ Any, 
+      /* replacer */ js.UndefOr[
+        (js.Array[scala.Double | String]) | (js.ThisFunction2[/* this */ Any, /* key */ String, /* value */ Any, Any]) | EJSONOptions
+      ], 
+      /* space */ js.UndefOr[String | scala.Double], 
+      /* options */ js.UndefOr[EJSONOptions], 
+      String
+    ]
+  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stringify")(x.asInstanceOf[js.Any])
 }

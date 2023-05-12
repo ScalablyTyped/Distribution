@@ -12,6 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.shiki.shikiStrings.apex
   - typings.shiki.shikiStrings.apl
   - typings.shiki.shikiStrings.applescript
+  - typings.shiki.shikiStrings.ara
   - typings.shiki.shikiStrings.asm
   - typings.shiki.shikiStrings.astro
   - typings.shiki.shikiStrings.awk
@@ -38,20 +39,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.shiki.shikiStrings.crystal
   - typings.shiki.shikiStrings.csharp
   - typings.shiki.shikiStrings.cNumbersign
+  - typings.shiki.shikiStrings.cs
   - typings.shiki.shikiStrings.css
   - typings.shiki.shikiStrings.cue
   - typings.shiki.shikiStrings.d
   - typings.shiki.shikiStrings.dart
+  - typings.shiki.shikiStrings.dax
   - typings.shiki.shikiStrings.diff
   - typings.shiki.shikiStrings.docker
+  - typings.shiki.shikiStrings.dockerfile
   - typings.shiki.shikiStrings.`dream-maker`
   - typings.shiki.shikiStrings.elixir
   - typings.shiki.shikiStrings.elm
   - typings.shiki.shikiStrings.erb
   - typings.shiki.shikiStrings.erlang
+  - typings.shiki.shikiStrings.erl
   - typings.shiki.shikiStrings.fish
   - typings.shiki.shikiStrings.fsharp
   - typings.shiki.shikiStrings.fNumbersign
+  - typings.shiki.shikiStrings.fs
+  - typings.shiki.shikiStrings.gdresource
+  - typings.shiki.shikiStrings.gdscript
+  - typings.shiki.shikiStrings.gdshader
   - typings.shiki.shikiStrings.gherkin
   - typings.shiki.shikiStrings.`git-commit`
   - typings.shiki.shikiStrings.`git-rebase`
@@ -65,15 +74,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.shiki.shikiStrings.handlebars
   - typings.shiki.shikiStrings.hbs
   - typings.shiki.shikiStrings.haskell
+  - typings.shiki.shikiStrings.hs
   - typings.shiki.shikiStrings.hcl
   - typings.shiki.shikiStrings.hlsl
   - typings.shiki.shikiStrings.html
+  - typings.shiki.shikiStrings.http
+  - typings.shiki.shikiStrings.imba
   - typings.shiki.shikiStrings.ini
+  - typings.shiki.shikiStrings.properties
   - typings.shiki.shikiStrings.java_
   - typings.shiki.shikiStrings.javascript
   - typings.shiki.shikiStrings.js_
   - typings.shiki.shikiStrings.`jinja-html`
+  - typings.shiki.shikiStrings.jison
   - typings.shiki.shikiStrings.json
+  - typings.shiki.shikiStrings.json5
   - typings.shiki.shikiStrings.jsonc
   - typings.shiki.shikiStrings.jsonnet
   - typings.shiki.shikiStrings.jssm
@@ -81,6 +96,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.shiki.shikiStrings.jsx
   - typings.shiki.shikiStrings.julia
   - typings.shiki.shikiStrings.kotlin
+  - typings.shiki.shikiStrings.kusto
+  - typings.shiki.shikiStrings.kql
   - typings.shiki.shikiStrings.latex
   - typings.shiki.shikiStrings.less
   - typings.shiki.shikiStrings.liquid
@@ -107,11 +124,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.shiki.shikiStrings.php
   - typings.shiki.shikiStrings.plsql
   - typings.shiki.shikiStrings.postcss
+  - typings.shiki.shikiStrings.powerquery
   - typings.shiki.shikiStrings.powershell
   - typings.shiki.shikiStrings.ps
   - typings.shiki.shikiStrings.ps1
   - typings.shiki.shikiStrings.prisma
   - typings.shiki.shikiStrings.prolog
+  - typings.shiki.shikiStrings.proto
   - typings.shiki.shikiStrings.pug
   - typings.shiki.shikiStrings.jade
   - typings.shiki.shikiStrings.puppet
@@ -122,6 +141,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.shiki.shikiStrings.raku
   - typings.shiki.shikiStrings.perl6
   - typings.shiki.shikiStrings.razor
+  - typings.shiki.shikiStrings.reg
   - typings.shiki.shikiStrings.rel
   - typings.shiki.shikiStrings.riscv
   - typings.shiki.shikiStrings.rst
@@ -137,9 +157,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.shiki.shikiStrings.shaderlab
   - typings.shiki.shikiStrings.shader
   - typings.shiki.shikiStrings.shellscript
-  - typings.shiki.shikiStrings.shell
   - typings.shiki.shikiStrings.bash
+  - typings.shiki.shikiStrings.console
   - typings.shiki.shikiStrings.sh
+  - typings.shiki.shikiStrings.shell
   - typings.shiki.shikiStrings.zsh
   - typings.shiki.shikiStrings.smalltalk
   - typings.shiki.shikiStrings.solidity
@@ -161,6 +182,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.shiki.shikiStrings.twig
   - typings.shiki.shikiStrings.typescript
   - typings.shiki.shikiStrings.ts
+  - typings.shiki.shikiStrings.v
   - typings.shiki.shikiStrings.vb
   - typings.shiki.shikiStrings.cmd
   - typings.shiki.shikiStrings.verilog
@@ -173,9 +195,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.shiki.shikiStrings.wasm
   - typings.shiki.shikiStrings.wenyan
   - typings.shiki.shikiStrings.文言
+  - typings.shiki.shikiStrings.wgsl
+  - typings.shiki.shikiStrings.wolfram
   - typings.shiki.shikiStrings.xml
   - typings.shiki.shikiStrings.xsl
   - typings.shiki.shikiStrings.yaml
+  - typings.shiki.shikiStrings.yml
   - typings.shiki.shikiStrings.zenscript
 */
 trait Lang extends StObject
@@ -194,6 +219,8 @@ object Lang {
   inline def apl: typings.shiki.shikiStrings.apl = "apl".asInstanceOf[typings.shiki.shikiStrings.apl]
   
   inline def applescript: typings.shiki.shikiStrings.applescript = "applescript".asInstanceOf[typings.shiki.shikiStrings.applescript]
+  
+  inline def ara: typings.shiki.shikiStrings.ara = "ara".asInstanceOf[typings.shiki.shikiStrings.ara]
   
   inline def asm: typings.shiki.shikiStrings.asm = "asm".asInstanceOf[typings.shiki.shikiStrings.asm]
   
@@ -243,9 +270,13 @@ object Lang {
   
   inline def coffee: typings.shiki.shikiStrings.coffee = "coffee".asInstanceOf[typings.shiki.shikiStrings.coffee]
   
+  inline def console: typings.shiki.shikiStrings.console = "console".asInstanceOf[typings.shiki.shikiStrings.console]
+  
   inline def cpp: typings.shiki.shikiStrings.cpp = "cpp".asInstanceOf[typings.shiki.shikiStrings.cpp]
   
   inline def crystal: typings.shiki.shikiStrings.crystal = "crystal".asInstanceOf[typings.shiki.shikiStrings.crystal]
+  
+  inline def cs: typings.shiki.shikiStrings.cs = "cs".asInstanceOf[typings.shiki.shikiStrings.cs]
   
   inline def csharp: typings.shiki.shikiStrings.csharp = "csharp".asInstanceOf[typings.shiki.shikiStrings.csharp]
   
@@ -257,9 +288,13 @@ object Lang {
   
   inline def dart: typings.shiki.shikiStrings.dart = "dart".asInstanceOf[typings.shiki.shikiStrings.dart]
   
+  inline def dax: typings.shiki.shikiStrings.dax = "dax".asInstanceOf[typings.shiki.shikiStrings.dax]
+  
   inline def diff: typings.shiki.shikiStrings.diff = "diff".asInstanceOf[typings.shiki.shikiStrings.diff]
   
   inline def docker: typings.shiki.shikiStrings.docker = "docker".asInstanceOf[typings.shiki.shikiStrings.docker]
+  
+  inline def dockerfile: typings.shiki.shikiStrings.dockerfile = "dockerfile".asInstanceOf[typings.shiki.shikiStrings.dockerfile]
   
   inline def `dream-maker`: typings.shiki.shikiStrings.`dream-maker` = "dream-maker".asInstanceOf[typings.shiki.shikiStrings.`dream-maker`]
   
@@ -269,15 +304,25 @@ object Lang {
   
   inline def erb: typings.shiki.shikiStrings.erb = "erb".asInstanceOf[typings.shiki.shikiStrings.erb]
   
+  inline def erl: typings.shiki.shikiStrings.erl = "erl".asInstanceOf[typings.shiki.shikiStrings.erl]
+  
   inline def erlang: typings.shiki.shikiStrings.erlang = "erlang".asInstanceOf[typings.shiki.shikiStrings.erlang]
   
   inline def fNumbersign: typings.shiki.shikiStrings.fNumbersign = "f#".asInstanceOf[typings.shiki.shikiStrings.fNumbersign]
   
   inline def fish: typings.shiki.shikiStrings.fish = "fish".asInstanceOf[typings.shiki.shikiStrings.fish]
   
+  inline def fs: typings.shiki.shikiStrings.fs = "fs".asInstanceOf[typings.shiki.shikiStrings.fs]
+  
   inline def fsharp: typings.shiki.shikiStrings.fsharp = "fsharp".asInstanceOf[typings.shiki.shikiStrings.fsharp]
   
   inline def fsl: typings.shiki.shikiStrings.fsl = "fsl".asInstanceOf[typings.shiki.shikiStrings.fsl]
+  
+  inline def gdresource: typings.shiki.shikiStrings.gdresource = "gdresource".asInstanceOf[typings.shiki.shikiStrings.gdresource]
+  
+  inline def gdscript: typings.shiki.shikiStrings.gdscript = "gdscript".asInstanceOf[typings.shiki.shikiStrings.gdscript]
+  
+  inline def gdshader: typings.shiki.shikiStrings.gdshader = "gdshader".asInstanceOf[typings.shiki.shikiStrings.gdshader]
   
   inline def gherkin: typings.shiki.shikiStrings.gherkin = "gherkin".asInstanceOf[typings.shiki.shikiStrings.gherkin]
   
@@ -309,7 +354,13 @@ object Lang {
   
   inline def hlsl: typings.shiki.shikiStrings.hlsl = "hlsl".asInstanceOf[typings.shiki.shikiStrings.hlsl]
   
+  inline def hs: typings.shiki.shikiStrings.hs = "hs".asInstanceOf[typings.shiki.shikiStrings.hs]
+  
   inline def html: typings.shiki.shikiStrings.html = "html".asInstanceOf[typings.shiki.shikiStrings.html]
+  
+  inline def http: typings.shiki.shikiStrings.http = "http".asInstanceOf[typings.shiki.shikiStrings.http]
+  
+  inline def imba: typings.shiki.shikiStrings.imba = "imba".asInstanceOf[typings.shiki.shikiStrings.imba]
   
   inline def ini: typings.shiki.shikiStrings.ini = "ini".asInstanceOf[typings.shiki.shikiStrings.ini]
   
@@ -321,9 +372,13 @@ object Lang {
   
   inline def `jinja-html`: typings.shiki.shikiStrings.`jinja-html` = "jinja-html".asInstanceOf[typings.shiki.shikiStrings.`jinja-html`]
   
+  inline def jison: typings.shiki.shikiStrings.jison = "jison".asInstanceOf[typings.shiki.shikiStrings.jison]
+  
   inline def js_ : typings.shiki.shikiStrings.js_ = "js".asInstanceOf[typings.shiki.shikiStrings.js_]
   
   inline def json: typings.shiki.shikiStrings.json = "json".asInstanceOf[typings.shiki.shikiStrings.json]
+  
+  inline def json5: typings.shiki.shikiStrings.json5 = "json5".asInstanceOf[typings.shiki.shikiStrings.json5]
   
   inline def jsonc: typings.shiki.shikiStrings.jsonc = "jsonc".asInstanceOf[typings.shiki.shikiStrings.jsonc]
   
@@ -336,6 +391,10 @@ object Lang {
   inline def julia: typings.shiki.shikiStrings.julia = "julia".asInstanceOf[typings.shiki.shikiStrings.julia]
   
   inline def kotlin: typings.shiki.shikiStrings.kotlin = "kotlin".asInstanceOf[typings.shiki.shikiStrings.kotlin]
+  
+  inline def kql: typings.shiki.shikiStrings.kql = "kql".asInstanceOf[typings.shiki.shikiStrings.kql]
+  
+  inline def kusto: typings.shiki.shikiStrings.kusto = "kusto".asInstanceOf[typings.shiki.shikiStrings.kusto]
   
   inline def latex: typings.shiki.shikiStrings.latex = "latex".asInstanceOf[typings.shiki.shikiStrings.latex]
   
@@ -391,11 +450,17 @@ object Lang {
   
   inline def postcss: typings.shiki.shikiStrings.postcss = "postcss".asInstanceOf[typings.shiki.shikiStrings.postcss]
   
+  inline def powerquery: typings.shiki.shikiStrings.powerquery = "powerquery".asInstanceOf[typings.shiki.shikiStrings.powerquery]
+  
   inline def powershell: typings.shiki.shikiStrings.powershell = "powershell".asInstanceOf[typings.shiki.shikiStrings.powershell]
   
   inline def prisma: typings.shiki.shikiStrings.prisma = "prisma".asInstanceOf[typings.shiki.shikiStrings.prisma]
   
   inline def prolog: typings.shiki.shikiStrings.prolog = "prolog".asInstanceOf[typings.shiki.shikiStrings.prolog]
+  
+  inline def properties: typings.shiki.shikiStrings.properties = "properties".asInstanceOf[typings.shiki.shikiStrings.properties]
+  
+  inline def proto: typings.shiki.shikiStrings.proto = "proto".asInstanceOf[typings.shiki.shikiStrings.proto]
   
   inline def ps: typings.shiki.shikiStrings.ps = "ps".asInstanceOf[typings.shiki.shikiStrings.ps]
   
@@ -420,6 +485,8 @@ object Lang {
   inline def razor: typings.shiki.shikiStrings.razor = "razor".asInstanceOf[typings.shiki.shikiStrings.razor]
   
   inline def rb: typings.shiki.shikiStrings.rb = "rb".asInstanceOf[typings.shiki.shikiStrings.rb]
+  
+  inline def reg: typings.shiki.shikiStrings.reg = "reg".asInstanceOf[typings.shiki.shikiStrings.reg]
   
   inline def rel: typings.shiki.shikiStrings.rel = "rel".asInstanceOf[typings.shiki.shikiStrings.rel]
   
@@ -493,6 +560,8 @@ object Lang {
   
   inline def typescript: typings.shiki.shikiStrings.typescript = "typescript".asInstanceOf[typings.shiki.shikiStrings.typescript]
   
+  inline def v: typings.shiki.shikiStrings.v = "v".asInstanceOf[typings.shiki.shikiStrings.v]
+  
   inline def vb: typings.shiki.shikiStrings.vb = "vb".asInstanceOf[typings.shiki.shikiStrings.vb]
   
   inline def verilog: typings.shiki.shikiStrings.verilog = "verilog".asInstanceOf[typings.shiki.shikiStrings.verilog]
@@ -513,11 +582,17 @@ object Lang {
   
   inline def wenyan: typings.shiki.shikiStrings.wenyan = "wenyan".asInstanceOf[typings.shiki.shikiStrings.wenyan]
   
+  inline def wgsl: typings.shiki.shikiStrings.wgsl = "wgsl".asInstanceOf[typings.shiki.shikiStrings.wgsl]
+  
+  inline def wolfram: typings.shiki.shikiStrings.wolfram = "wolfram".asInstanceOf[typings.shiki.shikiStrings.wolfram]
+  
   inline def xml: typings.shiki.shikiStrings.xml = "xml".asInstanceOf[typings.shiki.shikiStrings.xml]
   
   inline def xsl: typings.shiki.shikiStrings.xsl = "xsl".asInstanceOf[typings.shiki.shikiStrings.xsl]
   
   inline def yaml: typings.shiki.shikiStrings.yaml = "yaml".asInstanceOf[typings.shiki.shikiStrings.yaml]
+  
+  inline def yml: typings.shiki.shikiStrings.yml = "yml".asInstanceOf[typings.shiki.shikiStrings.yml]
   
   inline def zenscript: typings.shiki.shikiStrings.zenscript = "zenscript".asInstanceOf[typings.shiki.shikiStrings.zenscript]
   

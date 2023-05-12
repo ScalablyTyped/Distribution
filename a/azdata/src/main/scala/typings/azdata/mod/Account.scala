@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Account extends StObject {
   
   /**
+    * Specifies if an account should be deleted
+    */
+  var delete: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * Display information for the account
     */
   var displayInfo: AccountDisplayInfo
@@ -35,6 +40,10 @@ object Account {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: Account] (val x: Self) extends AnyVal {
+    
+    inline def setDelete(value: Boolean): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
+    
+    inline def setDeleteUndefined: Self = StObject.set(x, "delete", js.undefined)
     
     inline def setDisplayInfo(value: AccountDisplayInfo): Self = StObject.set(x, "displayInfo", value.asInstanceOf[js.Any])
     

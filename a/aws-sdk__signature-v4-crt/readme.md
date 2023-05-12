@@ -1,7 +1,7 @@
 
 # Scala.js typings for aws-sdk__signature-v4-crt
 
-Typings are for version 3.208.0
+Typings are for version 3.329.0
 
 ## Library description:
 A revision of AWS Signature V4 request signer based on AWS Common Runtime https://github.com/awslabs/aws-crt-nodejs

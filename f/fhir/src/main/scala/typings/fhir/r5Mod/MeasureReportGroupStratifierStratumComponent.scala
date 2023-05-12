@@ -8,12 +8,19 @@ trait MeasureReportGroupStratifierStratumComponent
   extends StObject
      with BackboneElement {
   
+  var _linkId: js.UndefOr[Element] = js.undefined
+  
   var _valueBoolean: js.UndefOr[Element] = js.undefined
   
   /**
     * The code for the stratum component value.
     */
   var code: CodeableConcept
+  
+  /**
+    * The stratifier component from the Measure that corresponds to this stratifier component in the MeasureReport resource.
+    */
+  var linkId: js.UndefOr[String] = js.undefined
   
   /**
     * The stratum component value.
@@ -52,6 +59,10 @@ object MeasureReportGroupStratifierStratumComponent {
     
     inline def setCode(value: CodeableConcept): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
+    inline def setLinkId(value: String): Self = StObject.set(x, "linkId", value.asInstanceOf[js.Any])
+    
+    inline def setLinkIdUndefined: Self = StObject.set(x, "linkId", js.undefined)
+    
     inline def setValueBoolean(value: Boolean): Self = StObject.set(x, "valueBoolean", value.asInstanceOf[js.Any])
     
     inline def setValueBooleanUndefined: Self = StObject.set(x, "valueBoolean", js.undefined)
@@ -71,6 +82,10 @@ object MeasureReportGroupStratifierStratumComponent {
     inline def setValueReference(value: Reference): Self = StObject.set(x, "valueReference", value.asInstanceOf[js.Any])
     
     inline def setValueReferenceUndefined: Self = StObject.set(x, "valueReference", js.undefined)
+    
+    inline def set_linkId(value: Element): Self = StObject.set(x, "_linkId", value.asInstanceOf[js.Any])
+    
+    inline def set_linkIdUndefined: Self = StObject.set(x, "_linkId", js.undefined)
     
     inline def set_valueBoolean(value: Element): Self = StObject.set(x, "_valueBoolean", value.asInstanceOf[js.Any])
     

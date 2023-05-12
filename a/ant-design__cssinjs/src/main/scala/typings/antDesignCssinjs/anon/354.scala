@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.ScrollMarginInline
+import typings.csstype.mod.Property.Widows
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,13 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `354` extends StObject {
   
   var value: js.UndefOr[
-    (ScrollMarginInline[Double | String]) | (js.Array[
-      (Extract[
-        js.UndefOr[
-          (ScrollMarginInline[Double | String]) | (js.Array[NonNullable[js.UndefOr[ScrollMarginInline[Double | String]]]])
-        ], 
-        String
-      ]) | (NonNullable[js.UndefOr[ScrollMarginInline[Double | String]]])
+    Widows | (js.Array[
+      (Extract[js.UndefOr[Widows | js.Array[NonNullable[js.UndefOr[Widows]]]], String]) | NonNullable[js.UndefOr[Widows]]
     ])
   ] = js.native
 }

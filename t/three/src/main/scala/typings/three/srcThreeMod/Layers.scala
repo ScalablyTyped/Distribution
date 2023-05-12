@@ -6,5 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("three/src/Three", "Layers")
 @js.native
+/**
+  * Create a new Layers object, with membership initially set to layer 0.
+  */
 open class Layers ()
   extends typings.three.srcCoreLayersMod.Layers

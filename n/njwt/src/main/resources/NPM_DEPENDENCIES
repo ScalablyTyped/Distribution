@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "njwt" : "1.2.0"
+      "njwt" : "2.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "njwt" : "1.2.0"
+      "njwt" : "2.0.0"
     }
   ],
   "compile-devDependencies" : [

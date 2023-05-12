@@ -24,11 +24,11 @@ trait ListTemplateVersionsRequest extends StObject {
   /**
     * The ID for the template.
     */
-  var TemplateId: RestrictiveResourceId
+  var TemplateId: ShortRestrictiveResourceId
 }
 object ListTemplateVersionsRequest {
   
-  inline def apply(AwsAccountId: AwsAccountId, TemplateId: RestrictiveResourceId): ListTemplateVersionsRequest = {
+  inline def apply(AwsAccountId: AwsAccountId, TemplateId: ShortRestrictiveResourceId): ListTemplateVersionsRequest = {
     val __obj = js.Dynamic.literal(AwsAccountId = AwsAccountId.asInstanceOf[js.Any], TemplateId = TemplateId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListTemplateVersionsRequest]
   }
@@ -46,6 +46,6 @@ object ListTemplateVersionsRequest {
     
     inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    inline def setTemplateId(value: RestrictiveResourceId): Self = StObject.set(x, "TemplateId", value.asInstanceOf[js.Any])
+    inline def setTemplateId(value: ShortRestrictiveResourceId): Self = StObject.set(x, "TemplateId", value.asInstanceOf[js.Any])
   }
 }

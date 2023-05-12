@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CompletionItem extends StObject {
   
   /**
-    * An optional array of additional [text edits](#TextEdit) that are applied when
+    * An optional array of additional {@link TextEdit text edits} that are applied when
     * selecting this completion. Edits must not overlap (including the same insert position)
-    * with the main [edit](#CompletionItem.textEdit) nor with themselves.
+    * with the main {@link CompletionItem.textEdit edit} nor with themselves.
     *
     * Additional text edits should be used to change text unrelated to the current cursor position
     * (for example adding an import statement at the top of the file if the completion item will
@@ -18,9 +18,9 @@ trait CompletionItem extends StObject {
   var additionalTextEdits: js.UndefOr[js.Array[TextEdit]] = js.undefined
   
   /**
-    * An optional [command](#Command) that is executed *after* inserting this completion. *Note* that
+    * An optional {@link Command command} that is executed *after* inserting this completion. *Note* that
     * additional modifications to the current document should be described with the
-    * [additionalTextEdits](#CompletionItem.additionalTextEdits)-property.
+    * {@link CompletionItem.additionalTextEdits additionalTextEdits}-property.
     */
   var command: js.UndefOr[Command] = js.undefined
   
@@ -33,7 +33,7 @@ trait CompletionItem extends StObject {
   
   /**
     * A data entry field that is preserved on a completion item between a
-    * [CompletionRequest](#CompletionRequest) and a [CompletionResolveRequest](#CompletionResolveRequest).
+    * {@link CompletionRequest} and a {@link CompletionResolveRequest}.
     */
   var data: js.UndefOr[LSPAny] = js.undefined
   
@@ -56,14 +56,14 @@ trait CompletionItem extends StObject {
   
   /**
     * A string that should be used when filtering a set of
-    * completion items. When `falsy` the [label](#CompletionItem.label)
+    * completion items. When `falsy` the {@link CompletionItem.label label}
     * is used.
     */
   var filterText: js.UndefOr[String] = js.undefined
   
   /**
     * A string that should be inserted into a document when selecting
-    * this completion. When `falsy` the [label](#CompletionItem.label)
+    * this completion. When `falsy` the {@link CompletionItem.label label}
     * is used.
     *
     * The `insertText` is subject to interpretation by the client side.
@@ -130,7 +130,7 @@ trait CompletionItem extends StObject {
   
   /**
     * A string that should be used when comparing this item
-    * with other items. When `falsy` the [label](#CompletionItem.label)
+    * with other items. When `falsy` the {@link CompletionItem.label label}
     * is used.
     */
   var sortText: js.UndefOr[String] = js.undefined
@@ -143,9 +143,9 @@ trait CompletionItem extends StObject {
   var tags: js.UndefOr[js.Array[CompletionItemTag]] = js.undefined
   
   /**
-    * An [edit](#TextEdit) which is applied to a document when selecting
+    * An {@link TextEdit edit} which is applied to a document when selecting
     * this completion. When an edit is provided the value of
-    * [insertText](#CompletionItem.insertText) is ignored.
+    * {@link CompletionItem.insertText insertText} is ignored.
     *
     * Most editors support two different operations when accepting a completion
     * item. One is to insert a completion text and the other is to replace an

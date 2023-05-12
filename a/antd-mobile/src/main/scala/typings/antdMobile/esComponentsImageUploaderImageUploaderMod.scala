@@ -98,7 +98,7 @@ object esComponentsImageUploaderImageUploaderMod {
     }
   }
   
-  /* Inlined {  defaultValue :std.Array<antd-mobile.antd-mobile/es/components/image-uploader/image-uploader.ImageUploadItem> | undefined,   value :std.Array<antd-mobile.antd-mobile/es/components/image-uploader/image-uploader.ImageUploadItem> | undefined,   onChange :(items : std.Array<antd-mobile.antd-mobile/es/components/image-uploader/image-uploader.ImageUploadItem>): void | undefined,   onUploadQueueChange :(tasks : std.Array<antd-mobile.antd-mobile/es/components/image-uploader/image-uploader.UploadTask>): void | undefined,   accept :string | undefined,   multiple :boolean | undefined,   maxCount :number | undefined,   onCountExceed :(exceed : number): void | undefined,   disableUpload :boolean | undefined,   showUpload :boolean | undefined,   deletable :boolean | undefined,   capture :react.react.InputHTMLAttributes<unknown>['capture'] | undefined,   onPreview :(index : number, item : antd-mobile.antd-mobile/es/components/image-uploader/image-uploader.ImageUploadItem): void | undefined,   beforeUpload :(file : std.File, files : std.Array<std.File>): std.Promise<std.File | null> | std.File | null | undefined, upload (file : std.File): std.Promise<antd-mobile.antd-mobile/es/components/image-uploader/image-uploader.ImageUploadItem>,   onDelete :(item : antd-mobile.antd-mobile/es/components/image-uploader/image-uploader.ImageUploadItem): boolean | std.Promise<boolean> | void | undefined,   preview :boolean | undefined,   showFailed :boolean | undefined,   imageFit :antd-mobile.antd-mobile/es/components/image.ImageProps['fit'] | undefined,   children :react.react.ReactNode | undefined,   renderItem :(originNode : react.react.ReactElement, file : antd-mobile.antd-mobile/es/components/image-uploader/image-uploader.ImageUploadItem, fileList : std.Array<antd-mobile.antd-mobile/es/components/image-uploader/image-uploader.ImageUploadItem>): react.react.ReactNode | undefined} & antd-mobile.antd-mobile/es/utils/native-props.NativeProps<'--cell-size'> */
+  /* Inlined {  defaultValue :std.Array<antd-mobile.antd-mobile/es/components/image-uploader/image-uploader.ImageUploadItem> | undefined,   value :std.Array<antd-mobile.antd-mobile/es/components/image-uploader/image-uploader.ImageUploadItem> | undefined,   columns :antd-mobile.antd-mobile/es/components/grid.GridProps['columns'] | undefined,   onChange :(items : std.Array<antd-mobile.antd-mobile/es/components/image-uploader/image-uploader.ImageUploadItem>): void | undefined,   onUploadQueueChange :(tasks : std.Array<antd-mobile.antd-mobile/es/components/image-uploader/image-uploader.UploadTask>): void | undefined,   accept :string | undefined,   multiple :boolean | undefined,   maxCount :number | undefined,   onCountExceed :(exceed : number): void | undefined,   disableUpload :boolean | undefined,   showUpload :boolean | undefined,   deletable :boolean | undefined,   deleteIcon :react.react.ReactNode | undefined,   capture :react.react.InputHTMLAttributes<unknown>['capture'] | undefined,   onPreview :(index : number, item : antd-mobile.antd-mobile/es/components/image-uploader/image-uploader.ImageUploadItem): void | undefined,   beforeUpload :(file : std.File, files : std.Array<std.File>): std.Promise<std.File | null> | std.File | null | undefined, upload (file : std.File): std.Promise<antd-mobile.antd-mobile/es/components/image-uploader/image-uploader.ImageUploadItem>,   onDelete :(item : antd-mobile.antd-mobile/es/components/image-uploader/image-uploader.ImageUploadItem): boolean | std.Promise<boolean> | void | undefined,   preview :boolean | undefined,   showFailed :boolean | undefined,   imageFit :antd-mobile.antd-mobile/es/components/image.ImageProps['fit'] | undefined,   children :react.react.ReactNode | undefined,   renderItem :(originNode : react.react.ReactElement, file : antd-mobile.antd-mobile/es/components/image-uploader/image-uploader.ImageUploadItem, fileList : std.Array<antd-mobile.antd-mobile/es/components/image-uploader/image-uploader.ImageUploadItem>): react.react.ReactNode | undefined} & antd-mobile.antd-mobile/es/utils/native-props.NativeProps<'--cell-size' | '--gap' | '--gap-vertical' | '--gap-horizontal'> */
   trait ImageUploaderProps extends StObject {
     
     var accept: js.UndefOr[String] = js.undefined
@@ -347,9 +347,13 @@ object esComponentsImageUploaderImageUploaderMod {
     
     var className: js.UndefOr[String] = js.undefined
     
+    var columns: js.UndefOr[Double] = js.undefined
+    
     var defaultValue: js.UndefOr[js.Array[ImageUploadItem]] = js.undefined
     
     var deletable: js.UndefOr[Boolean] = js.undefined
+    
+    var deleteIcon: js.UndefOr[ReactNode] = js.undefined
     
     var disableUpload: js.UndefOr[Boolean] = js.undefined
     
@@ -616,6 +620,10 @@ object esComponentsImageUploaderImageUploaderMod {
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
+      inline def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+      
+      inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
+      
       inline def setDefaultValue(value: js.Array[ImageUploadItem]): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
       inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
@@ -625,6 +633,10 @@ object esComponentsImageUploaderImageUploaderMod {
       inline def setDeletable(value: Boolean): Self = StObject.set(x, "deletable", value.asInstanceOf[js.Any])
       
       inline def setDeletableUndefined: Self = StObject.set(x, "deletable", js.undefined)
+      
+      inline def setDeleteIcon(value: ReactNode): Self = StObject.set(x, "deleteIcon", value.asInstanceOf[js.Any])
+      
+      inline def setDeleteIconUndefined: Self = StObject.set(x, "deleteIcon", js.undefined)
       
       inline def setDisableUpload(value: Boolean): Self = StObject.set(x, "disableUpload", value.asInstanceOf[js.Any])
       

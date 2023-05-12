@@ -251,6 +251,13 @@ trait ITextModel
   def getAllDecorations(ownerId: Unit, filterOutValidation: Boolean): js.Array[IModelDecoration] = js.native
   
   /**
+    * Gets all decorations that render in the glyph margin as an array.
+    * @param ownerId If set, it will ignore decorations belonging to other owners.
+    */
+  def getAllMarginDecorations(): js.Array[IModelDecoration] = js.native
+  def getAllMarginDecorations(ownerId: Double): js.Array[IModelDecoration] = js.native
+  
+  /**
     * Get the alternative version id of the model.
     * This alternative version id is not always incremented,
     * it will return the same values in the case of undo-redo.
@@ -262,6 +269,7 @@ trait ITextModel
     * @param range The range describing what text length to get.
     */
   def getCharacterCountInRange(range: IRange): Double = js.native
+  def getCharacterCountInRange(range: IRange, eol: EndOfLinePreference): Double = js.native
   
   /**
     * Get the options associated with a decoration.
@@ -283,12 +291,74 @@ trait ITextModel
     * @param range The range to search in
     * @param ownerId If set, it will ignore decorations belonging to other owners.
     * @param filterOutValidation If set, it will ignore decorations specific to validation (i.e. warnings, errors).
+    * @param onlyMinimapDecorations If set, it will return only decorations that render in the minimap.
+    * @param onlyMarginDecorations If set, it will return only decorations that render in the glyph margin.
     * @return An array with the decorations
     */
   def getDecorationsInRange(range: IRange): js.Array[IModelDecoration] = js.native
   def getDecorationsInRange(range: IRange, ownerId: Double): js.Array[IModelDecoration] = js.native
   def getDecorationsInRange(range: IRange, ownerId: Double, filterOutValidation: Boolean): js.Array[IModelDecoration] = js.native
+  def getDecorationsInRange(range: IRange, ownerId: Double, filterOutValidation: Boolean, onlyMinimapDecorations: Boolean): js.Array[IModelDecoration] = js.native
+  def getDecorationsInRange(
+    range: IRange,
+    ownerId: Double,
+    filterOutValidation: Boolean,
+    onlyMinimapDecorations: Boolean,
+    onlyMarginDecorations: Boolean
+  ): js.Array[IModelDecoration] = js.native
+  def getDecorationsInRange(
+    range: IRange,
+    ownerId: Double,
+    filterOutValidation: Boolean,
+    onlyMinimapDecorations: Unit,
+    onlyMarginDecorations: Boolean
+  ): js.Array[IModelDecoration] = js.native
+  def getDecorationsInRange(range: IRange, ownerId: Double, filterOutValidation: Unit, onlyMinimapDecorations: Boolean): js.Array[IModelDecoration] = js.native
+  def getDecorationsInRange(
+    range: IRange,
+    ownerId: Double,
+    filterOutValidation: Unit,
+    onlyMinimapDecorations: Boolean,
+    onlyMarginDecorations: Boolean
+  ): js.Array[IModelDecoration] = js.native
+  def getDecorationsInRange(
+    range: IRange,
+    ownerId: Double,
+    filterOutValidation: Unit,
+    onlyMinimapDecorations: Unit,
+    onlyMarginDecorations: Boolean
+  ): js.Array[IModelDecoration] = js.native
   def getDecorationsInRange(range: IRange, ownerId: Unit, filterOutValidation: Boolean): js.Array[IModelDecoration] = js.native
+  def getDecorationsInRange(range: IRange, ownerId: Unit, filterOutValidation: Boolean, onlyMinimapDecorations: Boolean): js.Array[IModelDecoration] = js.native
+  def getDecorationsInRange(
+    range: IRange,
+    ownerId: Unit,
+    filterOutValidation: Boolean,
+    onlyMinimapDecorations: Boolean,
+    onlyMarginDecorations: Boolean
+  ): js.Array[IModelDecoration] = js.native
+  def getDecorationsInRange(
+    range: IRange,
+    ownerId: Unit,
+    filterOutValidation: Boolean,
+    onlyMinimapDecorations: Unit,
+    onlyMarginDecorations: Boolean
+  ): js.Array[IModelDecoration] = js.native
+  def getDecorationsInRange(range: IRange, ownerId: Unit, filterOutValidation: Unit, onlyMinimapDecorations: Boolean): js.Array[IModelDecoration] = js.native
+  def getDecorationsInRange(
+    range: IRange,
+    ownerId: Unit,
+    filterOutValidation: Unit,
+    onlyMinimapDecorations: Boolean,
+    onlyMarginDecorations: Boolean
+  ): js.Array[IModelDecoration] = js.native
+  def getDecorationsInRange(
+    range: IRange,
+    ownerId: Unit,
+    filterOutValidation: Unit,
+    onlyMinimapDecorations: Unit,
+    onlyMarginDecorations: Boolean
+  ): js.Array[IModelDecoration] = js.native
   
   /**
     * Get the end of line sequence predominantly used in the text buffer.
@@ -452,6 +522,7 @@ trait ITextModel
     * @return The text length.
     */
   def getValueLengthInRange(range: IRange): Double = js.native
+  def getValueLengthInRange(range: IRange, eol: EndOfLinePreference): Double = js.native
   
   /**
     * Get the current version id of the model.

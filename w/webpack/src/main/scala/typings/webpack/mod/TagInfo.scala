@@ -4,6 +4,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+  * Helper function for joining two ranges into a single range. This is useful
+  * when working with AST nodes, as it allows you to combine the ranges of child nodes
+  * to create the range of the _parent node_.
+  */
 trait TagInfo extends StObject {
   
   var data: Any

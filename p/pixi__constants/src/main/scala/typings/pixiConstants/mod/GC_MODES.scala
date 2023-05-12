@@ -13,12 +13,20 @@ object GC_MODES extends StObject {
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[GC_MODES & Double] = js.native
   
+  /**
+    * Garbage collection will happen periodically automatically
+    * @default 0
+    */
   @js.native
   sealed trait AUTO
     extends StObject
        with GC_MODES
   /* 0 */ val AUTO: typings.pixiConstants.mod.GC_MODES.AUTO & Double = js.native
   
+  /**
+    * Garbage collection will need to be called manually
+    * @default 1
+    */
   @js.native
   sealed trait MANUAL
     extends StObject

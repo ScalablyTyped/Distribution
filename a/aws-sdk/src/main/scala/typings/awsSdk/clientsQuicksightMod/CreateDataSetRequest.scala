@@ -29,6 +29,11 @@ trait CreateDataSetRequest extends StObject {
   var DataSetUsageConfiguration: js.UndefOr[typings.awsSdk.clientsQuicksightMod.DataSetUsageConfiguration] = js.undefined
   
   /**
+    * The parameter declarations of the dataset.
+    */
+  var DatasetParameters: js.UndefOr[DatasetParameterList] = js.undefined
+  
+  /**
     * The folder that contains fields and nested subfolders for your dataset.
     */
   var FieldFolders: js.UndefOr[FieldFolderMap] = js.undefined
@@ -108,6 +113,12 @@ object CreateDataSetRequest {
     inline def setDataSetUsageConfiguration(value: DataSetUsageConfiguration): Self = StObject.set(x, "DataSetUsageConfiguration", value.asInstanceOf[js.Any])
     
     inline def setDataSetUsageConfigurationUndefined: Self = StObject.set(x, "DataSetUsageConfiguration", js.undefined)
+    
+    inline def setDatasetParameters(value: DatasetParameterList): Self = StObject.set(x, "DatasetParameters", value.asInstanceOf[js.Any])
+    
+    inline def setDatasetParametersUndefined: Self = StObject.set(x, "DatasetParameters", js.undefined)
+    
+    inline def setDatasetParametersVarargs(value: DatasetParameter*): Self = StObject.set(x, "DatasetParameters", js.Array(value*))
     
     inline def setFieldFolders(value: FieldFolderMap): Self = StObject.set(x, "FieldFolders", value.asInstanceOf[js.Any])
     

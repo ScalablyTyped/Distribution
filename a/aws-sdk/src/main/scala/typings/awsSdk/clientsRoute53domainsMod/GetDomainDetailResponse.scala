@@ -19,7 +19,7 @@ trait GetDomainDetailResponse extends StObject {
   /**
     * Provides details about the domain administrative contact.
     */
-  var AdminContact: ContactDetail
+  var AdminContact: js.UndefOr[ContactDetail] = js.undefined
   
   /**
     * Specifies whether contact information is concealed from WHOIS queries. If the value is true, WHOIS ("who is") queries return contact information either for Amazon Registrar (for .com, .net, and .org domains) or for our registrar associate, Gandi (for all other TLDs). If the value is false, WHOIS queries return the information that you entered for the admin contact.
@@ -42,9 +42,14 @@ trait GetDomainDetailResponse extends StObject {
   var DnsSec: js.UndefOr[DNSSec] = js.undefined
   
   /**
+    * A complex type that contains information about the DNSSEC configuration.
+    */
+  var DnssecKeys: js.UndefOr[DnssecKeyList] = js.undefined
+  
+  /**
     * The name of a domain.
     */
-  var DomainName: typings.awsSdk.clientsRoute53domainsMod.DomainName
+  var DomainName: js.UndefOr[typings.awsSdk.clientsRoute53domainsMod.DomainName] = js.undefined
   
   /**
     * The date when the registration for the domain is set to expire. The date and time is in Unix time format and Coordinated Universal time (UTC).
@@ -52,14 +57,14 @@ trait GetDomainDetailResponse extends StObject {
   var ExpirationDate: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The name of the domain.
+    * The name servers of the domain.
     */
-  var Nameservers: NameserverList
+  var Nameservers: js.UndefOr[NameserverList] = js.undefined
   
   /**
     * Provides details about the domain registrant.
     */
-  var RegistrantContact: ContactDetail
+  var RegistrantContact: js.UndefOr[ContactDetail] = js.undefined
   
   /**
     * Specifies whether contact information is concealed from WHOIS queries. If the value is true, WHOIS ("who is") queries return contact information either for Amazon Registrar (for .com, .net, and .org domains) or for our registrar associate, Gandi (for all other TLDs). If the value is false, WHOIS queries return the information that you entered for the registrant contact (domain owner).
@@ -94,7 +99,7 @@ trait GetDomainDetailResponse extends StObject {
   /**
     * Provides details about the domain technical contact.
     */
-  var TechContact: ContactDetail
+  var TechContact: js.UndefOr[ContactDetail] = js.undefined
   
   /**
     * Specifies whether contact information is concealed from WHOIS queries. If the value is true, WHOIS ("who is") queries return contact information either for Amazon Registrar (for .com, .net, and .org domains) or for our registrar associate, Gandi (for all other TLDs). If the value is false, WHOIS queries return the information that you entered for the technical contact.
@@ -113,14 +118,8 @@ trait GetDomainDetailResponse extends StObject {
 }
 object GetDomainDetailResponse {
   
-  inline def apply(
-    AdminContact: ContactDetail,
-    DomainName: DomainName,
-    Nameservers: NameserverList,
-    RegistrantContact: ContactDetail,
-    TechContact: ContactDetail
-  ): GetDomainDetailResponse = {
-    val __obj = js.Dynamic.literal(AdminContact = AdminContact.asInstanceOf[js.Any], DomainName = DomainName.asInstanceOf[js.Any], Nameservers = Nameservers.asInstanceOf[js.Any], RegistrantContact = RegistrantContact.asInstanceOf[js.Any], TechContact = TechContact.asInstanceOf[js.Any])
+  inline def apply(): GetDomainDetailResponse = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetDomainDetailResponse]
   }
   
@@ -136,6 +135,8 @@ object GetDomainDetailResponse {
     inline def setAbuseContactPhoneUndefined: Self = StObject.set(x, "AbuseContactPhone", js.undefined)
     
     inline def setAdminContact(value: ContactDetail): Self = StObject.set(x, "AdminContact", value.asInstanceOf[js.Any])
+    
+    inline def setAdminContactUndefined: Self = StObject.set(x, "AdminContact", js.undefined)
     
     inline def setAdminPrivacy(value: Boolean): Self = StObject.set(x, "AdminPrivacy", value.asInstanceOf[js.Any])
     
@@ -153,7 +154,15 @@ object GetDomainDetailResponse {
     
     inline def setDnsSecUndefined: Self = StObject.set(x, "DnsSec", js.undefined)
     
+    inline def setDnssecKeys(value: DnssecKeyList): Self = StObject.set(x, "DnssecKeys", value.asInstanceOf[js.Any])
+    
+    inline def setDnssecKeysUndefined: Self = StObject.set(x, "DnssecKeys", js.undefined)
+    
+    inline def setDnssecKeysVarargs(value: DnssecKey*): Self = StObject.set(x, "DnssecKeys", js.Array(value*))
+    
     inline def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
+    
+    inline def setDomainNameUndefined: Self = StObject.set(x, "DomainName", js.undefined)
     
     inline def setExpirationDate(value: js.Date): Self = StObject.set(x, "ExpirationDate", value.asInstanceOf[js.Any])
     
@@ -161,9 +170,13 @@ object GetDomainDetailResponse {
     
     inline def setNameservers(value: NameserverList): Self = StObject.set(x, "Nameservers", value.asInstanceOf[js.Any])
     
+    inline def setNameserversUndefined: Self = StObject.set(x, "Nameservers", js.undefined)
+    
     inline def setNameserversVarargs(value: Nameserver*): Self = StObject.set(x, "Nameservers", js.Array(value*))
     
     inline def setRegistrantContact(value: ContactDetail): Self = StObject.set(x, "RegistrantContact", value.asInstanceOf[js.Any])
+    
+    inline def setRegistrantContactUndefined: Self = StObject.set(x, "RegistrantContact", js.undefined)
     
     inline def setRegistrantPrivacy(value: Boolean): Self = StObject.set(x, "RegistrantPrivacy", value.asInstanceOf[js.Any])
     
@@ -192,6 +205,8 @@ object GetDomainDetailResponse {
     inline def setStatusListVarargs(value: DomainStatus*): Self = StObject.set(x, "StatusList", js.Array(value*))
     
     inline def setTechContact(value: ContactDetail): Self = StObject.set(x, "TechContact", value.asInstanceOf[js.Any])
+    
+    inline def setTechContactUndefined: Self = StObject.set(x, "TechContact", js.undefined)
     
     inline def setTechPrivacy(value: Boolean): Self = StObject.set(x, "TechPrivacy", value.asInstanceOf[js.Any])
     

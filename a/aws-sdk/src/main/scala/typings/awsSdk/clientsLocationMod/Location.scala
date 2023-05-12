@@ -157,12 +157,26 @@ trait Location extends Service {
   ): Request[CreateGeofenceCollectionResponse, AWSError] = js.native
   
   /**
-    * Creates a map resource in your AWS account, which provides map tiles of different styles sourced from global location data providers.  If your application is tracking or routing assets you use in your business, such as delivery vehicles or employees, you may only use HERE as your geolocation provider. See section 82 of the AWS service terms for more details. 
+    * Creates an API key resource in your Amazon Web Services account, which lets you grant geo:GetMap* actions for Amazon Location Map resources to the API key bearer.  The API keys feature is in preview. We may add, change, or remove features before announcing general availability. For more information, see Using API keys. 
+    */
+  def createKey(): Request[CreateKeyResponse, AWSError] = js.native
+  def createKey(callback: js.Function2[/* err */ AWSError, /* data */ CreateKeyResponse, Unit]): Request[CreateKeyResponse, AWSError] = js.native
+  /**
+    * Creates an API key resource in your Amazon Web Services account, which lets you grant geo:GetMap* actions for Amazon Location Map resources to the API key bearer.  The API keys feature is in preview. We may add, change, or remove features before announcing general availability. For more information, see Using API keys. 
+    */
+  def createKey(params: CreateKeyRequest): Request[CreateKeyResponse, AWSError] = js.native
+  def createKey(
+    params: CreateKeyRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateKeyResponse, Unit]
+  ): Request[CreateKeyResponse, AWSError] = js.native
+  
+  /**
+    * Creates a map resource in your Amazon Web Services account, which provides map tiles of different styles sourced from global location data providers.  If your application is tracking or routing assets you use in your business, such as delivery vehicles or employees, you must not use Esri as your geolocation provider. See section 82 of the Amazon Web Services service terms for more details. 
     */
   def createMap(): Request[CreateMapResponse, AWSError] = js.native
   def createMap(callback: js.Function2[/* err */ AWSError, /* data */ CreateMapResponse, Unit]): Request[CreateMapResponse, AWSError] = js.native
   /**
-    * Creates a map resource in your AWS account, which provides map tiles of different styles sourced from global location data providers.  If your application is tracking or routing assets you use in your business, such as delivery vehicles or employees, you may only use HERE as your geolocation provider. See section 82 of the AWS service terms for more details. 
+    * Creates a map resource in your Amazon Web Services account, which provides map tiles of different styles sourced from global location data providers.  If your application is tracking or routing assets you use in your business, such as delivery vehicles or employees, you must not use Esri as your geolocation provider. See section 82 of the Amazon Web Services service terms for more details. 
     */
   def createMap(params: CreateMapRequest): Request[CreateMapResponse, AWSError] = js.native
   def createMap(
@@ -171,12 +185,12 @@ trait Location extends Service {
   ): Request[CreateMapResponse, AWSError] = js.native
   
   /**
-    * Creates a place index resource in your AWS account. Use a place index resource to geocode addresses and other text queries by using the SearchPlaceIndexForText operation, and reverse geocode coordinates by using the SearchPlaceIndexForPosition operation, and enable autosuggestions by using the SearchPlaceIndexForSuggestions operation.  If your application is tracking or routing assets you use in your business, such as delivery vehicles or employees, you may only use HERE as your geolocation provider. See section 82 of the AWS service terms for more details. 
+    * Creates a place index resource in your Amazon Web Services account. Use a place index resource to geocode addresses and other text queries by using the SearchPlaceIndexForText operation, and reverse geocode coordinates by using the SearchPlaceIndexForPosition operation, and enable autosuggestions by using the SearchPlaceIndexForSuggestions operation.  If your application is tracking or routing assets you use in your business, such as delivery vehicles or employees, you must not use Esri as your geolocation provider. See section 82 of the Amazon Web Services service terms for more details. 
     */
   def createPlaceIndex(): Request[CreatePlaceIndexResponse, AWSError] = js.native
   def createPlaceIndex(callback: js.Function2[/* err */ AWSError, /* data */ CreatePlaceIndexResponse, Unit]): Request[CreatePlaceIndexResponse, AWSError] = js.native
   /**
-    * Creates a place index resource in your AWS account. Use a place index resource to geocode addresses and other text queries by using the SearchPlaceIndexForText operation, and reverse geocode coordinates by using the SearchPlaceIndexForPosition operation, and enable autosuggestions by using the SearchPlaceIndexForSuggestions operation.  If your application is tracking or routing assets you use in your business, such as delivery vehicles or employees, you may only use HERE as your geolocation provider. See section 82 of the AWS service terms for more details. 
+    * Creates a place index resource in your Amazon Web Services account. Use a place index resource to geocode addresses and other text queries by using the SearchPlaceIndexForText operation, and reverse geocode coordinates by using the SearchPlaceIndexForPosition operation, and enable autosuggestions by using the SearchPlaceIndexForSuggestions operation.  If your application is tracking or routing assets you use in your business, such as delivery vehicles or employees, you must not use Esri as your geolocation provider. See section 82 of the Amazon Web Services service terms for more details. 
     */
   def createPlaceIndex(params: CreatePlaceIndexRequest): Request[CreatePlaceIndexResponse, AWSError] = js.native
   def createPlaceIndex(
@@ -185,12 +199,12 @@ trait Location extends Service {
   ): Request[CreatePlaceIndexResponse, AWSError] = js.native
   
   /**
-    * Creates a route calculator resource in your AWS account. You can send requests to a route calculator resource to estimate travel time, distance, and get directions. A route calculator sources traffic and road network data from your chosen data provider.  If your application is tracking or routing assets you use in your business, such as delivery vehicles or employees, you may only use HERE as your geolocation provider. See section 82 of the AWS service terms for more details. 
+    * Creates a route calculator resource in your Amazon Web Services account. You can send requests to a route calculator resource to estimate travel time, distance, and get directions. A route calculator sources traffic and road network data from your chosen data provider.  If your application is tracking or routing assets you use in your business, such as delivery vehicles or employees, you must not use Esri as your geolocation provider. See section 82 of the Amazon Web Services service terms for more details. 
     */
   def createRouteCalculator(): Request[CreateRouteCalculatorResponse, AWSError] = js.native
   def createRouteCalculator(callback: js.Function2[/* err */ AWSError, /* data */ CreateRouteCalculatorResponse, Unit]): Request[CreateRouteCalculatorResponse, AWSError] = js.native
   /**
-    * Creates a route calculator resource in your AWS account. You can send requests to a route calculator resource to estimate travel time, distance, and get directions. A route calculator sources traffic and road network data from your chosen data provider.  If your application is tracking or routing assets you use in your business, such as delivery vehicles or employees, you may only use HERE as your geolocation provider. See section 82 of the AWS service terms for more details. 
+    * Creates a route calculator resource in your Amazon Web Services account. You can send requests to a route calculator resource to estimate travel time, distance, and get directions. A route calculator sources traffic and road network data from your chosen data provider.  If your application is tracking or routing assets you use in your business, such as delivery vehicles or employees, you must not use Esri as your geolocation provider. See section 82 of the Amazon Web Services service terms for more details. 
     */
   def createRouteCalculator(params: CreateRouteCalculatorRequest): Request[CreateRouteCalculatorResponse, AWSError] = js.native
   def createRouteCalculator(
@@ -199,12 +213,12 @@ trait Location extends Service {
   ): Request[CreateRouteCalculatorResponse, AWSError] = js.native
   
   /**
-    * Creates a tracker resource in your AWS account, which lets you retrieve current and historical location of devices.
+    * Creates a tracker resource in your Amazon Web Services account, which lets you retrieve current and historical location of devices.
     */
   def createTracker(): Request[CreateTrackerResponse, AWSError] = js.native
   def createTracker(callback: js.Function2[/* err */ AWSError, /* data */ CreateTrackerResponse, Unit]): Request[CreateTrackerResponse, AWSError] = js.native
   /**
-    * Creates a tracker resource in your AWS account, which lets you retrieve current and historical location of devices.
+    * Creates a tracker resource in your Amazon Web Services account, which lets you retrieve current and historical location of devices.
     */
   def createTracker(params: CreateTrackerRequest): Request[CreateTrackerResponse, AWSError] = js.native
   def createTracker(
@@ -213,12 +227,12 @@ trait Location extends Service {
   ): Request[CreateTrackerResponse, AWSError] = js.native
   
   /**
-    * Deletes a geofence collection from your AWS account.  This operation deletes the resource permanently. If the geofence collection is the target of a tracker resource, the devices will no longer be monitored. 
+    * Deletes a geofence collection from your Amazon Web Services account.  This operation deletes the resource permanently. If the geofence collection is the target of a tracker resource, the devices will no longer be monitored. 
     */
   def deleteGeofenceCollection(): Request[DeleteGeofenceCollectionResponse, AWSError] = js.native
   def deleteGeofenceCollection(callback: js.Function2[/* err */ AWSError, /* data */ DeleteGeofenceCollectionResponse, Unit]): Request[DeleteGeofenceCollectionResponse, AWSError] = js.native
   /**
-    * Deletes a geofence collection from your AWS account.  This operation deletes the resource permanently. If the geofence collection is the target of a tracker resource, the devices will no longer be monitored. 
+    * Deletes a geofence collection from your Amazon Web Services account.  This operation deletes the resource permanently. If the geofence collection is the target of a tracker resource, the devices will no longer be monitored. 
     */
   def deleteGeofenceCollection(params: DeleteGeofenceCollectionRequest): Request[DeleteGeofenceCollectionResponse, AWSError] = js.native
   def deleteGeofenceCollection(
@@ -227,12 +241,26 @@ trait Location extends Service {
   ): Request[DeleteGeofenceCollectionResponse, AWSError] = js.native
   
   /**
-    * Deletes a map resource from your AWS account.  This operation deletes the resource permanently. If the map is being used in an application, the map may not render. 
+    * Deletes the specified API key. The API key must have been deactivated more than 90 days previously.
+    */
+  def deleteKey(): Request[DeleteKeyResponse, AWSError] = js.native
+  def deleteKey(callback: js.Function2[/* err */ AWSError, /* data */ DeleteKeyResponse, Unit]): Request[DeleteKeyResponse, AWSError] = js.native
+  /**
+    * Deletes the specified API key. The API key must have been deactivated more than 90 days previously.
+    */
+  def deleteKey(params: DeleteKeyRequest): Request[DeleteKeyResponse, AWSError] = js.native
+  def deleteKey(
+    params: DeleteKeyRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteKeyResponse, Unit]
+  ): Request[DeleteKeyResponse, AWSError] = js.native
+  
+  /**
+    * Deletes a map resource from your Amazon Web Services account.  This operation deletes the resource permanently. If the map is being used in an application, the map may not render. 
     */
   def deleteMap(): Request[DeleteMapResponse, AWSError] = js.native
   def deleteMap(callback: js.Function2[/* err */ AWSError, /* data */ DeleteMapResponse, Unit]): Request[DeleteMapResponse, AWSError] = js.native
   /**
-    * Deletes a map resource from your AWS account.  This operation deletes the resource permanently. If the map is being used in an application, the map may not render. 
+    * Deletes a map resource from your Amazon Web Services account.  This operation deletes the resource permanently. If the map is being used in an application, the map may not render. 
     */
   def deleteMap(params: DeleteMapRequest): Request[DeleteMapResponse, AWSError] = js.native
   def deleteMap(
@@ -241,12 +269,12 @@ trait Location extends Service {
   ): Request[DeleteMapResponse, AWSError] = js.native
   
   /**
-    * Deletes a place index resource from your AWS account.  This operation deletes the resource permanently. 
+    * Deletes a place index resource from your Amazon Web Services account.  This operation deletes the resource permanently. 
     */
   def deletePlaceIndex(): Request[DeletePlaceIndexResponse, AWSError] = js.native
   def deletePlaceIndex(callback: js.Function2[/* err */ AWSError, /* data */ DeletePlaceIndexResponse, Unit]): Request[DeletePlaceIndexResponse, AWSError] = js.native
   /**
-    * Deletes a place index resource from your AWS account.  This operation deletes the resource permanently. 
+    * Deletes a place index resource from your Amazon Web Services account.  This operation deletes the resource permanently. 
     */
   def deletePlaceIndex(params: DeletePlaceIndexRequest): Request[DeletePlaceIndexResponse, AWSError] = js.native
   def deletePlaceIndex(
@@ -255,12 +283,12 @@ trait Location extends Service {
   ): Request[DeletePlaceIndexResponse, AWSError] = js.native
   
   /**
-    * Deletes a route calculator resource from your AWS account.  This operation deletes the resource permanently. 
+    * Deletes a route calculator resource from your Amazon Web Services account.  This operation deletes the resource permanently. 
     */
   def deleteRouteCalculator(): Request[DeleteRouteCalculatorResponse, AWSError] = js.native
   def deleteRouteCalculator(callback: js.Function2[/* err */ AWSError, /* data */ DeleteRouteCalculatorResponse, Unit]): Request[DeleteRouteCalculatorResponse, AWSError] = js.native
   /**
-    * Deletes a route calculator resource from your AWS account.  This operation deletes the resource permanently. 
+    * Deletes a route calculator resource from your Amazon Web Services account.  This operation deletes the resource permanently. 
     */
   def deleteRouteCalculator(params: DeleteRouteCalculatorRequest): Request[DeleteRouteCalculatorResponse, AWSError] = js.native
   def deleteRouteCalculator(
@@ -269,12 +297,12 @@ trait Location extends Service {
   ): Request[DeleteRouteCalculatorResponse, AWSError] = js.native
   
   /**
-    * Deletes a tracker resource from your AWS account.  This operation deletes the resource permanently. If the tracker resource is in use, you may encounter an error. Make sure that the target resource isn't a dependency for your applications. 
+    * Deletes a tracker resource from your Amazon Web Services account.  This operation deletes the resource permanently. If the tracker resource is in use, you may encounter an error. Make sure that the target resource isn't a dependency for your applications. 
     */
   def deleteTracker(): Request[DeleteTrackerResponse, AWSError] = js.native
   def deleteTracker(callback: js.Function2[/* err */ AWSError, /* data */ DeleteTrackerResponse, Unit]): Request[DeleteTrackerResponse, AWSError] = js.native
   /**
-    * Deletes a tracker resource from your AWS account.  This operation deletes the resource permanently. If the tracker resource is in use, you may encounter an error. Make sure that the target resource isn't a dependency for your applications. 
+    * Deletes a tracker resource from your Amazon Web Services account.  This operation deletes the resource permanently. If the tracker resource is in use, you may encounter an error. Make sure that the target resource isn't a dependency for your applications. 
     */
   def deleteTracker(params: DeleteTrackerRequest): Request[DeleteTrackerResponse, AWSError] = js.native
   def deleteTracker(
@@ -295,6 +323,20 @@ trait Location extends Service {
     params: DescribeGeofenceCollectionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeGeofenceCollectionResponse, Unit]
   ): Request[DescribeGeofenceCollectionResponse, AWSError] = js.native
+  
+  /**
+    * Retrieves the API key resource details.  The API keys feature is in preview. We may add, change, or remove features before announcing general availability. For more information, see Using API keys. 
+    */
+  def describeKey(): Request[DescribeKeyResponse, AWSError] = js.native
+  def describeKey(callback: js.Function2[/* err */ AWSError, /* data */ DescribeKeyResponse, Unit]): Request[DescribeKeyResponse, AWSError] = js.native
+  /**
+    * Retrieves the API key resource details.  The API keys feature is in preview. We may add, change, or remove features before announcing general availability. For more information, see Using API keys. 
+    */
+  def describeKey(params: DescribeKeyRequest): Request[DescribeKeyResponse, AWSError] = js.native
+  def describeKey(
+    params: DescribeKeyRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeKeyResponse, Unit]
+  ): Request[DescribeKeyResponse, AWSError] = js.native
   
   /**
     * Retrieves the map resource details.
@@ -465,12 +507,12 @@ trait Location extends Service {
   ): Request[GetMapTileResponse, AWSError] = js.native
   
   /**
-    * Finds a place by its unique ID. A PlaceId is returned by other search operations.  A PlaceId is valid only if all of the following are the same in the original search request and the call to GetPlace.   Customer AWS account   AWS Region   Data provider specified in the place index resource   
+    * Finds a place by its unique ID. A PlaceId is returned by other search operations.  A PlaceId is valid only if all of the following are the same in the original search request and the call to GetPlace.   Customer Amazon Web Services account   Amazon Web Services Region   Data provider specified in the place index resource   
     */
   def getPlace(): Request[GetPlaceResponse, AWSError] = js.native
   def getPlace(callback: js.Function2[/* err */ AWSError, /* data */ GetPlaceResponse, Unit]): Request[GetPlaceResponse, AWSError] = js.native
   /**
-    * Finds a place by its unique ID. A PlaceId is returned by other search operations.  A PlaceId is valid only if all of the following are the same in the original search request and the call to GetPlace.   Customer AWS account   AWS Region   Data provider specified in the place index resource   
+    * Finds a place by its unique ID. A PlaceId is returned by other search operations.  A PlaceId is valid only if all of the following are the same in the original search request and the call to GetPlace.   Customer Amazon Web Services account   Amazon Web Services Region   Data provider specified in the place index resource   
     */
   def getPlace(params: GetPlaceRequest): Request[GetPlaceResponse, AWSError] = js.native
   def getPlace(
@@ -493,12 +535,12 @@ trait Location extends Service {
   ): Request[ListDevicePositionsResponse, AWSError] = js.native
   
   /**
-    * Lists geofence collections in your AWS account.
+    * Lists geofence collections in your Amazon Web Services account.
     */
   def listGeofenceCollections(): Request[ListGeofenceCollectionsResponse, AWSError] = js.native
   def listGeofenceCollections(callback: js.Function2[/* err */ AWSError, /* data */ ListGeofenceCollectionsResponse, Unit]): Request[ListGeofenceCollectionsResponse, AWSError] = js.native
   /**
-    * Lists geofence collections in your AWS account.
+    * Lists geofence collections in your Amazon Web Services account.
     */
   def listGeofenceCollections(params: ListGeofenceCollectionsRequest): Request[ListGeofenceCollectionsResponse, AWSError] = js.native
   def listGeofenceCollections(
@@ -521,12 +563,26 @@ trait Location extends Service {
   ): Request[ListGeofencesResponse, AWSError] = js.native
   
   /**
-    * Lists map resources in your AWS account.
+    * Lists API key resources in your Amazon Web Services account.  The API keys feature is in preview. We may add, change, or remove features before announcing general availability. For more information, see Using API keys. 
+    */
+  def listKeys(): Request[ListKeysResponse, AWSError] = js.native
+  def listKeys(callback: js.Function2[/* err */ AWSError, /* data */ ListKeysResponse, Unit]): Request[ListKeysResponse, AWSError] = js.native
+  /**
+    * Lists API key resources in your Amazon Web Services account.  The API keys feature is in preview. We may add, change, or remove features before announcing general availability. For more information, see Using API keys. 
+    */
+  def listKeys(params: ListKeysRequest): Request[ListKeysResponse, AWSError] = js.native
+  def listKeys(
+    params: ListKeysRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListKeysResponse, Unit]
+  ): Request[ListKeysResponse, AWSError] = js.native
+  
+  /**
+    * Lists map resources in your Amazon Web Services account.
     */
   def listMaps(): Request[ListMapsResponse, AWSError] = js.native
   def listMaps(callback: js.Function2[/* err */ AWSError, /* data */ ListMapsResponse, Unit]): Request[ListMapsResponse, AWSError] = js.native
   /**
-    * Lists map resources in your AWS account.
+    * Lists map resources in your Amazon Web Services account.
     */
   def listMaps(params: ListMapsRequest): Request[ListMapsResponse, AWSError] = js.native
   def listMaps(
@@ -535,12 +591,12 @@ trait Location extends Service {
   ): Request[ListMapsResponse, AWSError] = js.native
   
   /**
-    * Lists place index resources in your AWS account.
+    * Lists place index resources in your Amazon Web Services account.
     */
   def listPlaceIndexes(): Request[ListPlaceIndexesResponse, AWSError] = js.native
   def listPlaceIndexes(callback: js.Function2[/* err */ AWSError, /* data */ ListPlaceIndexesResponse, Unit]): Request[ListPlaceIndexesResponse, AWSError] = js.native
   /**
-    * Lists place index resources in your AWS account.
+    * Lists place index resources in your Amazon Web Services account.
     */
   def listPlaceIndexes(params: ListPlaceIndexesRequest): Request[ListPlaceIndexesResponse, AWSError] = js.native
   def listPlaceIndexes(
@@ -549,12 +605,12 @@ trait Location extends Service {
   ): Request[ListPlaceIndexesResponse, AWSError] = js.native
   
   /**
-    * Lists route calculator resources in your AWS account.
+    * Lists route calculator resources in your Amazon Web Services account.
     */
   def listRouteCalculators(): Request[ListRouteCalculatorsResponse, AWSError] = js.native
   def listRouteCalculators(callback: js.Function2[/* err */ AWSError, /* data */ ListRouteCalculatorsResponse, Unit]): Request[ListRouteCalculatorsResponse, AWSError] = js.native
   /**
-    * Lists route calculator resources in your AWS account.
+    * Lists route calculator resources in your Amazon Web Services account.
     */
   def listRouteCalculators(params: ListRouteCalculatorsRequest): Request[ListRouteCalculatorsResponse, AWSError] = js.native
   def listRouteCalculators(
@@ -591,12 +647,12 @@ trait Location extends Service {
   ): Request[ListTrackerConsumersResponse, AWSError] = js.native
   
   /**
-    * Lists tracker resources in your AWS account.
+    * Lists tracker resources in your Amazon Web Services account.
     */
   def listTrackers(): Request[ListTrackersResponse, AWSError] = js.native
   def listTrackers(callback: js.Function2[/* err */ AWSError, /* data */ ListTrackersResponse, Unit]): Request[ListTrackersResponse, AWSError] = js.native
   /**
-    * Lists tracker resources in your AWS account.
+    * Lists tracker resources in your Amazon Web Services account.
     */
   def listTrackers(params: ListTrackersRequest): Request[ListTrackersResponse, AWSError] = js.native
   def listTrackers(
@@ -663,12 +719,12 @@ trait Location extends Service {
   ): Request[SearchPlaceIndexForTextResponse, AWSError] = js.native
   
   /**
-    * Assigns one or more tags (key-value pairs) to the specified Amazon Location Service resource.  &lt;p&gt;Tags can help you organize and categorize your resources. You can also use them to scope user permissions, by granting a user permission to access or change only resources with certain tag values.&lt;/p&gt; &lt;p&gt;You can use the &lt;code&gt;TagResource&lt;/code&gt; operation with an Amazon Location Service resource that already has tags. If you specify a new tag key for the resource, this tag is appended to the tags already associated with the resource. If you specify a tag key that's already associated with the resource, the new tag value that you specify replaces the previous value for that tag. &lt;/p&gt; &lt;p&gt;You can associate up to 50 tags with a resource.&lt;/p&gt; 
+    * Assigns one or more tags (key-value pairs) to the specified Amazon Location Service resource. Tags can help you organize and categorize your resources. You can also use them to scope user permissions, by granting a user permission to access or change only resources with certain tag values. You can use the TagResource operation with an Amazon Location Service resource that already has tags. If you specify a new tag key for the resource, this tag is appended to the tags already associated with the resource. If you specify a tag key that's already associated with the resource, the new tag value that you specify replaces the previous value for that tag.  You can associate up to 50 tags with a resource.
     */
   def tagResource(): Request[TagResourceResponse, AWSError] = js.native
   def tagResource(callback: js.Function2[/* err */ AWSError, /* data */ TagResourceResponse, Unit]): Request[TagResourceResponse, AWSError] = js.native
   /**
-    * Assigns one or more tags (key-value pairs) to the specified Amazon Location Service resource.  &lt;p&gt;Tags can help you organize and categorize your resources. You can also use them to scope user permissions, by granting a user permission to access or change only resources with certain tag values.&lt;/p&gt; &lt;p&gt;You can use the &lt;code&gt;TagResource&lt;/code&gt; operation with an Amazon Location Service resource that already has tags. If you specify a new tag key for the resource, this tag is appended to the tags already associated with the resource. If you specify a tag key that's already associated with the resource, the new tag value that you specify replaces the previous value for that tag. &lt;/p&gt; &lt;p&gt;You can associate up to 50 tags with a resource.&lt;/p&gt; 
+    * Assigns one or more tags (key-value pairs) to the specified Amazon Location Service resource. Tags can help you organize and categorize your resources. You can also use them to scope user permissions, by granting a user permission to access or change only resources with certain tag values. You can use the TagResource operation with an Amazon Location Service resource that already has tags. If you specify a new tag key for the resource, this tag is appended to the tags already associated with the resource. If you specify a tag key that's already associated with the resource, the new tag value that you specify replaces the previous value for that tag.  You can associate up to 50 tags with a resource.
     */
   def tagResource(params: TagResourceRequest): Request[TagResourceResponse, AWSError] = js.native
   def tagResource(
@@ -703,6 +759,20 @@ trait Location extends Service {
     params: UpdateGeofenceCollectionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateGeofenceCollectionResponse, Unit]
   ): Request[UpdateGeofenceCollectionResponse, AWSError] = js.native
+  
+  /**
+    * Updates the specified properties of a given API key resource.  The API keys feature is in preview. We may add, change, or remove features before announcing general availability. For more information, see Using API keys. 
+    */
+  def updateKey(): Request[UpdateKeyResponse, AWSError] = js.native
+  def updateKey(callback: js.Function2[/* err */ AWSError, /* data */ UpdateKeyResponse, Unit]): Request[UpdateKeyResponse, AWSError] = js.native
+  /**
+    * Updates the specified properties of a given API key resource.  The API keys feature is in preview. We may add, change, or remove features before announcing general availability. For more information, see Using API keys. 
+    */
+  def updateKey(params: UpdateKeyRequest): Request[UpdateKeyResponse, AWSError] = js.native
+  def updateKey(
+    params: UpdateKeyRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateKeyResponse, Unit]
+  ): Request[UpdateKeyResponse, AWSError] = js.native
   
   /**
     * Updates the specified properties of a given map resource.

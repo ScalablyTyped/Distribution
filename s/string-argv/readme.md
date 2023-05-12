@@ -1,7 +1,7 @@
 
 # Scala.js typings for string-argv
 
-Typings are for version 0.3.1
+Typings are for version 0.3.2
 
 ## Library description:
 string-argv parses a string into an argument array to mimic process.argv. This is useful when testing Command Line Utilities that you want to pass arguments to.

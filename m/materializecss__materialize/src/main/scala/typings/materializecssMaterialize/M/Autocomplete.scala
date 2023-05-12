@@ -21,6 +21,11 @@ trait Autocomplete
   var count: Double
   
   /**
+    * Instance of the dropdown plugin for this autocomplete.
+    */
+  var dropdown: Dropdown
+  
+  /**
     * Select a specific autocomplete options.
     * @param el Element of the autocomplete option.
     */
@@ -39,6 +44,7 @@ object Autocomplete {
     close: () => Unit,
     count: Double,
     destroy: () => Unit,
+    dropdown: Dropdown,
     el: Element,
     isOpen: Boolean,
     open: () => Unit,
@@ -46,7 +52,7 @@ object Autocomplete {
     selectOption: Element => Unit,
     updateData: AutocompleteData => Unit
   ): Autocomplete = {
-    val __obj = js.Dynamic.literal(activeIndex = activeIndex.asInstanceOf[js.Any], close = js.Any.fromFunction0(close), count = count.asInstanceOf[js.Any], destroy = js.Any.fromFunction0(destroy), el = el.asInstanceOf[js.Any], isOpen = isOpen.asInstanceOf[js.Any], open = js.Any.fromFunction0(open), options = options.asInstanceOf[js.Any], selectOption = js.Any.fromFunction1(selectOption), updateData = js.Any.fromFunction1(updateData))
+    val __obj = js.Dynamic.literal(activeIndex = activeIndex.asInstanceOf[js.Any], close = js.Any.fromFunction0(close), count = count.asInstanceOf[js.Any], destroy = js.Any.fromFunction0(destroy), dropdown = dropdown.asInstanceOf[js.Any], el = el.asInstanceOf[js.Any], isOpen = isOpen.asInstanceOf[js.Any], open = js.Any.fromFunction0(open), options = options.asInstanceOf[js.Any], selectOption = js.Any.fromFunction1(selectOption), updateData = js.Any.fromFunction1(updateData))
     __obj.asInstanceOf[Autocomplete]
   }
   
@@ -56,6 +62,8 @@ object Autocomplete {
     inline def setActiveIndex(value: Double): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
     
     inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    
+    inline def setDropdown(value: Dropdown): Self = StObject.set(x, "dropdown", value.asInstanceOf[js.Any])
     
     inline def setSelectOption(value: Element => Unit): Self = StObject.set(x, "selectOption", js.Any.fromFunction1(value))
     

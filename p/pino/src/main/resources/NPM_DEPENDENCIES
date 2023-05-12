@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "pino" : "8.7.0"
+      "pino" : "8.14.1"
     }
   ],
   "test-dependencies" : [
     {
-      "pino" : "8.7.0"
+      "pino" : "8.14.1"
     }
   ],
   "compile-devDependencies" : [

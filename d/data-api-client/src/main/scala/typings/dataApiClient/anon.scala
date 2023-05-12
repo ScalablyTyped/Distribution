@@ -1,12 +1,12 @@
 package typings.dataApiClient
 
-import typings.awsSdk.clientsRdsdataserviceMod.Id
-import typings.awsSdk.clientsRdsdataserviceMod.RecordsFormatType
-import typings.awsSdk.clientsRdsdataserviceMod.ResultSetOptions
-import typings.awsSdk.clientsRdsdataserviceMod.SqlParameter
-import typings.awsSdk.clientsRdsdataserviceMod.SqlParameterSets
-import typings.awsSdk.clientsRdsdataserviceMod.SqlParametersList
-import typings.awsSdk.clientsRdsdataserviceMod.SqlStatement
+import typings.awsSdk2Types.clientsRdsdataserviceMod.Id
+import typings.awsSdk2Types.clientsRdsdataserviceMod.RecordsFormatType
+import typings.awsSdk2Types.clientsRdsdataserviceMod.ResultSetOptions
+import typings.awsSdk2Types.clientsRdsdataserviceMod.SqlParameter
+import typings.awsSdk2Types.clientsRdsdataserviceMod.SqlParameterSets
+import typings.awsSdk2Types.clientsRdsdataserviceMod.SqlParametersList
+import typings.awsSdk2Types.clientsRdsdataserviceMod.SqlStatement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -139,7 +139,7 @@ object anon {
     }
   }
   
-  /* Inlined std.Omit<aws-sdk.aws-sdk/clients/rdsdataservice.BatchExecuteStatementRequest, data-api-client.data-api-client.OmittedValues> */
+  /* Inlined std.Omit<aws-sdk2-types.aws-sdk2-types/clients/rdsdataservice.BatchExecuteStatementRequest, data-api-client.data-api-client.OmittedValues> */
   trait OmitBatchExecuteStatement extends StObject {
     
     var parameterSets: js.UndefOr[SqlParameterSets] = js.undefined
@@ -172,7 +172,7 @@ object anon {
     }
   }
   
-  /* Inlined std.Omit<aws-sdk.aws-sdk/clients/rdsdataservice.CommitTransactionRequest, data-api-client.data-api-client.OmittedValues> */
+  /* Inlined std.Omit<aws-sdk2-types.aws-sdk2-types/clients/rdsdataservice.CommitTransactionRequest, data-api-client.data-api-client.OmittedValues> */
   trait OmitCommitTransactionRequ extends StObject {
     
     var transactionId: Id
@@ -191,14 +191,14 @@ object anon {
     }
   }
   
-  /* Inlined std.Omit<aws-sdk.aws-sdk/clients/rdsdataservice.ExecuteStatementRequest, data-api-client.data-api-client.OmittedValues> */
+  /* Inlined std.Omit<aws-sdk2-types.aws-sdk2-types/clients/rdsdataservice.ExecuteStatementRequest, data-api-client.data-api-client.OmittedValues> */
   trait OmitExecuteStatementReque extends StObject {
     
-    var continueAfterTimeout: js.UndefOr[typings.awsSdk.clientsRdsdataserviceMod.Boolean] = js.undefined
+    var continueAfterTimeout: js.UndefOr[typings.awsSdk2Types.clientsRdsdataserviceMod.Boolean] = js.undefined
     
     var formatRecordsAs: js.UndefOr[RecordsFormatType] = js.undefined
     
-    var includeResultMetadata: js.UndefOr[typings.awsSdk.clientsRdsdataserviceMod.Boolean] = js.undefined
+    var includeResultMetadata: js.UndefOr[typings.awsSdk2Types.clientsRdsdataserviceMod.Boolean] = js.undefined
     
     var parameters: js.UndefOr[SqlParametersList] = js.undefined
     
@@ -218,7 +218,7 @@ object anon {
     @scala.inline
     implicit open class MutableBuilder[Self <: OmitExecuteStatementReque] (val x: Self) extends AnyVal {
       
-      inline def setContinueAfterTimeout(value: typings.awsSdk.clientsRdsdataserviceMod.Boolean): Self = StObject.set(x, "continueAfterTimeout", value.asInstanceOf[js.Any])
+      inline def setContinueAfterTimeout(value: typings.awsSdk2Types.clientsRdsdataserviceMod.Boolean): Self = StObject.set(x, "continueAfterTimeout", value.asInstanceOf[js.Any])
       
       inline def setContinueAfterTimeoutUndefined: Self = StObject.set(x, "continueAfterTimeout", js.undefined)
       
@@ -226,7 +226,7 @@ object anon {
       
       inline def setFormatRecordsAsUndefined: Self = StObject.set(x, "formatRecordsAs", js.undefined)
       
-      inline def setIncludeResultMetadata(value: typings.awsSdk.clientsRdsdataserviceMod.Boolean): Self = StObject.set(x, "includeResultMetadata", value.asInstanceOf[js.Any])
+      inline def setIncludeResultMetadata(value: typings.awsSdk2Types.clientsRdsdataserviceMod.Boolean): Self = StObject.set(x, "includeResultMetadata", value.asInstanceOf[js.Any])
       
       inline def setIncludeResultMetadataUndefined: Self = StObject.set(x, "includeResultMetadata", js.undefined)
       
@@ -248,7 +248,7 @@ object anon {
     }
   }
   
-  /* Inlined std.Omit<aws-sdk.aws-sdk/clients/rdsdataservice.RollbackTransactionRequest, data-api-client.data-api-client.OmittedValues> */
+  /* Inlined std.Omit<aws-sdk2-types.aws-sdk2-types/clients/rdsdataservice.RollbackTransactionRequest, data-api-client.data-api-client.OmittedValues> */
   trait OmitRollbackTransactionRe extends StObject {
     
     var transactionId: Id

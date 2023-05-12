@@ -53,6 +53,12 @@ open class StaticImageViewer protected () extends ConditionallyVisibleWidget {
   
   def image_=(newValue: IImage | Null): Unit = js.native
   
+  /**
+    * In version 9.24.0: introduced
+    */
+  def nativeAccessibilitySettings: AccessibilitySettings | Null = js.native
+  def nativeAccessibilitySettings_=(newValue: AccessibilitySettings | Null): Unit = js.native
+  
   def responsive: Boolean = js.native
   def responsive_=(newValue: Boolean): Unit = js.native
   

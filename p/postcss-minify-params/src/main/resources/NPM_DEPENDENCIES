@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "postcss-minify-params" : "5.1.4"
+      "postcss-minify-params" : "6.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "postcss-minify-params" : "5.1.4"
+      "postcss-minify-params" : "6.0.0"
     }
   ],
   "compile-devDependencies" : [

@@ -13,6 +13,7 @@ import typings.primereact.primereactStrings.ascending
 import typings.primereact.primereactStrings.assertive
 import typings.primereact.primereactStrings.both
 import typings.primereact.primereactStrings.copy
+import typings.primereact.primereactStrings.danger
 import typings.primereact.primereactStrings.date
 import typings.primereact.primereactStrings.decimal
 import typings.primereact.primereactStrings.descending
@@ -22,7 +23,9 @@ import typings.primereact.primereactStrings.execute
 import typings.primereact.primereactStrings.grammar
 import typings.primereact.primereactStrings.grid
 import typings.primereact.primereactStrings.horizontal
+import typings.primereact.primereactStrings.info
 import typings.primereact.primereactStrings.inherit
+import typings.primereact.primereactStrings.large
 import typings.primereact.primereactStrings.link
 import typings.primereact.primereactStrings.list
 import typings.primereact.primereactStrings.listbox
@@ -32,6 +35,7 @@ import typings.primereact.primereactStrings.mixed
 import typings.primereact.primereactStrings.move
 import typings.primereact.primereactStrings.no
 import typings.primereact.primereactStrings.none
+import typings.primereact.primereactStrings.normal
 import typings.primereact.primereactStrings.numeric
 import typings.primereact.primereactStrings.off
 import typings.primereact.primereactStrings.on
@@ -43,12 +47,15 @@ import typings.primereact.primereactStrings.removals
 import typings.primereact.primereactStrings.search
 import typings.primereact.primereactStrings.spelling
 import typings.primereact.primereactStrings.step
+import typings.primereact.primereactStrings.success
 import typings.primereact.primereactStrings.tel
 import typings.primereact.primereactStrings.text
 import typings.primereact.primereactStrings.time
 import typings.primereact.primereactStrings.tree
 import typings.primereact.primereactStrings.url
 import typings.primereact.primereactStrings.vertical
+import typings.primereact.primereactStrings.warning
+import typings.primereact.primereactStrings.xlarge
 import typings.primereact.primereactStrings.yes
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
@@ -102,10 +109,14 @@ object badgeBadgeMod {
     def this(props: BadgeProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: BadgeProps, context: Any) = this()
     
+    /**
+      * Used to get container element.
+      * @return {HTMLSpanElement} Container element
+      */
     def getElement(): HTMLSpanElement = js.native
   }
   
@@ -218,13 +229,21 @@ object badgeBadgeMod {
     
     var autoCorrect: js.UndefOr[String] = js.undefined
     
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
+    
     var autoSave: js.UndefOr[String] = js.undefined
     
+    /**
+      * Used to get the child elements of the component.
+      * @readonly
+      */
     var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
     var color: js.UndefOr[String] = js.undefined
+    
+    var content: js.UndefOr[String] = js.undefined
     
     var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
@@ -436,17 +455,29 @@ object badgeBadgeMod {
     
     var radioGroup: js.UndefOr[String] = js.undefined
     
+    var rel: js.UndefOr[String] = js.undefined
+    
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
+    
+    var rev: js.UndefOr[String] = js.undefined
     
     var role: js.UndefOr[AriaRole] = js.undefined
     
     var security: js.UndefOr[String] = js.undefined
     
-    var severity: js.UndefOr[BadgeSeverityType] = js.undefined
+    /**
+      * Severity type of the badge.
+      * @defaultValue null
+      */
+    var severity: js.UndefOr[success | info | warning | danger | Null] = js.undefined
     
-    var size: js.UndefOr[BadgeSizeType] = js.undefined
+    /**
+      * Size of the badge, valid options are "large" and "xlarge".
+      * @defaultValue null
+      */
+    var size: js.UndefOr[normal | large | xlarge | Null] = js.undefined
     
     var slot: js.UndefOr[String] = js.undefined
     
@@ -468,7 +499,11 @@ object badgeBadgeMod {
     
     var unselectable: js.UndefOr[on | off] = js.undefined
     
-    var value: js.UndefOr[Any] = js.undefined
+    /**
+      * Value to display inside the badge.
+      *
+      */
+    var value: js.UndefOr[Any | Null] = js.undefined
     
     var vocab: js.UndefOr[String] = js.undefined
   }
@@ -692,6 +727,10 @@ object badgeBadgeMod {
       
       inline def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
       
+      inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+      
+      inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+      
       inline def setAutoSave(value: String): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
       
       inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
@@ -708,9 +747,13 @@ object badgeBadgeMod {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
       inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
       inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
@@ -1132,6 +1175,10 @@ object badgeBadgeMod {
       
       inline def setRadioGroupUndefined: Self = StObject.set(x, "radioGroup", js.undefined)
       
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      
+      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+      
       inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
       inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
@@ -1139,6 +1186,10 @@ object badgeBadgeMod {
       inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+      
+      inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+      
+      inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
       
       inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
@@ -1148,11 +1199,15 @@ object badgeBadgeMod {
       
       inline def setSecurityUndefined: Self = StObject.set(x, "security", js.undefined)
       
-      inline def setSeverity(value: BadgeSeverityType): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
+      inline def setSeverity(value: success | info | warning | danger): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
+      
+      inline def setSeverityNull: Self = StObject.set(x, "severity", null)
       
       inline def setSeverityUndefined: Self = StObject.set(x, "severity", js.undefined)
       
-      inline def setSize(value: BadgeSizeType): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: normal | large | xlarge): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      
+      inline def setSizeNull: Self = StObject.set(x, "size", null)
       
       inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
@@ -1198,44 +1253,13 @@ object badgeBadgeMod {
       
       inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
+      inline def setValueNull: Self = StObject.set(x, "value", null)
+      
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
       inline def setVocab(value: String): Self = StObject.set(x, "vocab", value.asInstanceOf[js.Any])
       
       inline def setVocabUndefined: Self = StObject.set(x, "vocab", js.undefined)
     }
-  }
-  
-  /* Rewritten from type alias, can be one of: 
-    - typings.primereact.primereactStrings.success
-    - typings.primereact.primereactStrings.info
-    - typings.primereact.primereactStrings.warning
-    - typings.primereact.primereactStrings.danger
-  */
-  trait BadgeSeverityType extends StObject
-  object BadgeSeverityType {
-    
-    inline def danger: typings.primereact.primereactStrings.danger = "danger".asInstanceOf[typings.primereact.primereactStrings.danger]
-    
-    inline def info: typings.primereact.primereactStrings.info = "info".asInstanceOf[typings.primereact.primereactStrings.info]
-    
-    inline def success: typings.primereact.primereactStrings.success = "success".asInstanceOf[typings.primereact.primereactStrings.success]
-    
-    inline def warning: typings.primereact.primereactStrings.warning = "warning".asInstanceOf[typings.primereact.primereactStrings.warning]
-  }
-  
-  /* Rewritten from type alias, can be one of: 
-    - typings.primereact.primereactStrings.normal
-    - typings.primereact.primereactStrings.large
-    - typings.primereact.primereactStrings.xlarge
-  */
-  trait BadgeSizeType extends StObject
-  object BadgeSizeType {
-    
-    inline def large: typings.primereact.primereactStrings.large = "large".asInstanceOf[typings.primereact.primereactStrings.large]
-    
-    inline def normal: typings.primereact.primereactStrings.normal = "normal".asInstanceOf[typings.primereact.primereactStrings.normal]
-    
-    inline def xlarge: typings.primereact.primereactStrings.xlarge = "xlarge".asInstanceOf[typings.primereact.primereactStrings.xlarge]
   }
 }

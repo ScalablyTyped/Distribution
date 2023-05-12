@@ -6,7 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ProjectidNumber extends StObject {
   
-  /** The unique identifier of the project. */
   var project_id: Double
 }
 object ProjectidNumber {

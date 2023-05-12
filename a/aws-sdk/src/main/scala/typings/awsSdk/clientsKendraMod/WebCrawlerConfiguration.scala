@@ -12,17 +12,17 @@ trait WebCrawlerConfiguration extends StObject {
   var AuthenticationConfiguration: js.UndefOr[typings.awsSdk.clientsKendraMod.AuthenticationConfiguration] = js.undefined
   
   /**
-    * Specifies the number of levels in a website that you want to crawl. The first level begins from the website seed or starting point URL. For example, if a website has 3 levels – index level (i.e. seed in this example), sections level, and subsections level – and you are only interested in crawling information up to the sections level (i.e. levels 0-1), you can set your depth to 1. The default crawl depth is set to 2.
+    * Specifies the number of levels in a website that you want to crawl. The first level begins from the website seed or starting point URL. For example, if a website has three levels—index level (the seed in this example), sections level, and subsections level—and you are only interested in crawling information up to the sections level (levels 0-1), you can set your depth to 1. The default crawl depth is set to 2.
     */
   var CrawlDepth: js.UndefOr[typings.awsSdk.clientsKendraMod.CrawlDepth] = js.undefined
   
   /**
-    * The maximum size (in MB) of a webpage or attachment to crawl. Files larger than this size (in MB) are skipped/not crawled. The default maximum size of a webpage or attachment is set to 50 MB.
+    * The maximum size (in MB) of a web page or attachment to crawl. Files larger than this size (in MB) are skipped/not crawled. The default maximum size of a web page or attachment is set to 50 MB.
     */
   var MaxContentSizePerPageInMegaBytes: js.UndefOr[typings.awsSdk.clientsKendraMod.MaxContentSizePerPageInMegaBytes] = js.undefined
   
   /**
-    * The maximum number of URLs on a webpage to include when crawling a website. This number is per webpage. As a website’s webpages are crawled, any URLs the webpages link to are also crawled. URLs on a webpage are crawled in order of appearance. The default maximum links per page is 100.
+    * The maximum number of URLs on a web page to include when crawling a website. This number is per web page. As a website’s web pages are crawled, any URLs the web pages link to are also crawled. URLs on a web page are crawled in order of appearance. The default maximum links per page is 100.
     */
   var MaxLinksPerPage: js.UndefOr[typings.awsSdk.clientsKendraMod.MaxLinksPerPage] = js.undefined
   
@@ -47,7 +47,7 @@ trait WebCrawlerConfiguration extends StObject {
   var UrlInclusionPatterns: js.UndefOr[DataSourceInclusionsExclusionsStrings] = js.undefined
   
   /**
-    * Specifies the seed or starting point URLs of the websites or the sitemap URLs of the websites you want to crawl. You can include website subdomains. You can list up to 100 seed URLs and up to three sitemap URLs. You can only crawl websites that use the secure communication protocol, Hypertext Transfer Protocol Secure (HTTPS). If you receive an error when crawling a website, it could be that the website is blocked from crawling.  When selecting websites to index, you must adhere to the Amazon Acceptable Use Policy and all other Amazon terms. Remember that you must only use Amazon Kendra Web Crawler to index your own webpages, or webpages that you have authorization to index. 
+    * Specifies the seed or starting point URLs of the websites or the sitemap URLs of the websites you want to crawl. You can include website subdomains. You can list up to 100 seed URLs and up to three sitemap URLs. You can only crawl websites that use the secure communication protocol, Hypertext Transfer Protocol Secure (HTTPS). If you receive an error when crawling a website, it could be that the website is blocked from crawling.  When selecting websites to index, you must adhere to the Amazon Acceptable Use Policy and all other Amazon terms. Remember that you must only use Amazon Kendra Web Crawler to index your own web pages, or web pages that you have authorization to index. 
     */
   var Urls: typings.awsSdk.clientsKendraMod.Urls
 }

@@ -11,8 +11,6 @@ object distTypesComponentsIconIconMod {
   @js.native
   open class Icon () extends StObject {
     
-    /* private */ var ariaLabel: Any = js.native
-    
     /**
       * The color to use for the background of the item.
       */
@@ -30,8 +28,6 @@ object distTypesComponentsIconIconMod {
       * Specifies whether the icon should horizontally flip when `dir` is `"rtl"`.
       */
     var flipRtl: js.UndefOr[Boolean] = js.native
-    
-    /* private */ var hasAriaHidden: Any = js.native
     
     /**
       * A combination of both `name` and `src`. If a `src` url is detected

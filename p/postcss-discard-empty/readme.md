@@ -1,7 +1,7 @@
 
 # Scala.js typings for postcss-discard-empty
 
-Typings are for version 5.1.1
+Typings are for version 6.0.0
 
 ## Library description:
 Discard empty rules and values with PostCSS.

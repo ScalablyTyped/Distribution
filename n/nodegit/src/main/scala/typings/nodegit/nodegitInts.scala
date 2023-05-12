@@ -319,6 +319,7 @@ object nodegitInts {
        with STATUS
        with STRATEGY
        with TYPE
+       with typings.nodegit.credentialMod.Credential.TYPE
        with typings.nodegit.referenceMod.Reference.TYPE
        with typings.nodegit.certMod.Cert.TYPE
        with typings.nodegit.resetMod.Reset.TYPE
@@ -424,6 +425,7 @@ object nodegitInts {
        with typings.nodegit.submoduleMod.Submodule.STATUS
        with STATUS
        with STRATEGY
+       with typings.nodegit.credentialMod.Credential.TYPE
        with typings.nodegit.credMod.Cred.TYPE
   inline def `16`: `16` = 16.asInstanceOf[`16`]
   
@@ -514,6 +516,7 @@ object nodegitInts {
        with STRATEGY
        with STREAM
        with TYPE
+       with typings.nodegit.credentialMod.Credential.TYPE
        with typings.nodegit.referenceMod.Reference.TYPE
        with typings.nodegit.certMod.Cert.TYPE
        with typings.nodegit.resetMod.Reset.TYPE
@@ -676,6 +679,7 @@ object nodegitInts {
        with typings.nodegit.diffMod.Diff.OPTION
        with typings.nodegit.submoduleMod.Submodule.STATUS
        with STRATEGY
+       with typings.nodegit.credentialMod.Credential.TYPE
        with typings.nodegit.credMod.Cred.TYPE
   inline def `32`: `32` = 32.asInstanceOf[`32`]
   
@@ -744,6 +748,7 @@ object nodegitInts {
        with STRATEGY
        with STREAM
        with TYPE
+       with typings.nodegit.credentialMod.Credential.TYPE
        with typings.nodegit.credMod.Cred.TYPE
        with UPDATE
   inline def `4`: `4` = 4.asInstanceOf[`4`]
@@ -871,6 +876,7 @@ object nodegitInts {
        with typings.nodegit.diffMod.Diff.OPTION
        with typings.nodegit.submoduleMod.Submodule.STATUS
        with STRATEGY
+       with typings.nodegit.credentialMod.Credential.TYPE
        with typings.nodegit.credMod.Cred.TYPE
   inline def `64`: `64` = 64.asInstanceOf[`64`]
   
@@ -941,6 +947,7 @@ object nodegitInts {
        with STATS_FORMAT
        with typings.nodegit.submoduleMod.Submodule.STATUS
        with STATUS
+       with typings.nodegit.credentialMod.Credential.TYPE
        with typings.nodegit.credMod.Cred.TYPE
   inline def `8`: `8` = 8.asInstanceOf[`8`]
   

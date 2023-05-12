@@ -7,9 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Rewritten from type alias, can be one of: 
   - typings.unsplashJs.unsplashJsStrings.relevant
   - typings.unsplashJs.unsplashJsStrings.latest
+  - typings.unsplashJs.unsplashJsStrings.editorial
 */
 trait SearchOrderBy extends StObject
 object SearchOrderBy {
+  
+  inline def editorial: typings.unsplashJs.unsplashJsStrings.editorial = "editorial".asInstanceOf[typings.unsplashJs.unsplashJsStrings.editorial]
   
   inline def latest: typings.unsplashJs.unsplashJsStrings.latest = "latest".asInstanceOf[typings.unsplashJs.unsplashJsStrings.latest]
   

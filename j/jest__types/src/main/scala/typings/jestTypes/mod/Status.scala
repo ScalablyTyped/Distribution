@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.jestTypes.jestTypesStrings.pending
   - typings.jestTypes.jestTypesStrings.todo
   - typings.jestTypes.jestTypesStrings.disabled
+  - typings.jestTypes.jestTypesStrings.focused
 */
 trait Status extends StObject
 object Status {
@@ -18,6 +19,8 @@ object Status {
   inline def disabled: typings.jestTypes.jestTypesStrings.disabled = "disabled".asInstanceOf[typings.jestTypes.jestTypesStrings.disabled]
   
   inline def failed: typings.jestTypes.jestTypesStrings.failed = "failed".asInstanceOf[typings.jestTypes.jestTypesStrings.failed]
+  
+  inline def focused: typings.jestTypes.jestTypesStrings.focused = "focused".asInstanceOf[typings.jestTypes.jestTypesStrings.focused]
   
   inline def passed: typings.jestTypes.jestTypesStrings.passed = "passed".asInstanceOf[typings.jestTypes.jestTypesStrings.passed]
   

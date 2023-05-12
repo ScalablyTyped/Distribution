@@ -6,25 +6,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TypeofPerson extends StObject {
   
-  val FutureRequirements: TypeofFutureRequirements
-  
-  val Requirements: TypeofRequirements
+  val Documents: Any
   
   val Verification: Any
 }
 object TypeofPerson {
   
-  inline def apply(FutureRequirements: TypeofFutureRequirements, Requirements: TypeofRequirements, Verification: Any): TypeofPerson = {
-    val __obj = js.Dynamic.literal(FutureRequirements = FutureRequirements.asInstanceOf[js.Any], Requirements = Requirements.asInstanceOf[js.Any], Verification = Verification.asInstanceOf[js.Any])
+  inline def apply(Documents: Any, Verification: Any): TypeofPerson = {
+    val __obj = js.Dynamic.literal(Documents = Documents.asInstanceOf[js.Any], Verification = Verification.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofPerson]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: TypeofPerson] (val x: Self) extends AnyVal {
     
-    inline def setFutureRequirements(value: TypeofFutureRequirements): Self = StObject.set(x, "FutureRequirements", value.asInstanceOf[js.Any])
-    
-    inline def setRequirements(value: TypeofRequirements): Self = StObject.set(x, "Requirements", value.asInstanceOf[js.Any])
+    inline def setDocuments(value: Any): Self = StObject.set(x, "Documents", value.asInstanceOf[js.Any])
     
     inline def setVerification(value: Any): Self = StObject.set(x, "Verification", value.asInstanceOf[js.Any])
   }

@@ -1,12 +1,13 @@
 package typings.grpcGrpcJs
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.grpcGrpcJs.buildSrcCallStreamMod.StatusObject
+import typings.grpcGrpcJs.buildSrcCallInterfaceMod.StatusObject
 import typings.grpcGrpcJs.buildSrcChannelOptionsMod.ChannelOptions
 import typings.grpcGrpcJs.buildSrcLoadBalancerMod.ChannelControlHelper
 import typings.grpcGrpcJs.buildSrcLoadBalancerMod.LoadBalancer
 import typings.grpcGrpcJs.buildSrcLoadBalancerMod.LoadBalancingConfig
 import typings.grpcGrpcJs.buildSrcResolverMod.ConfigSelector
+import typings.grpcGrpcJs.buildSrcServiceConfigMod.ServiceConfig
 import typings.grpcGrpcJs.buildSrcSubchannelAddressMod.SubchannelAddress
 import typings.grpcGrpcJs.buildSrcUriParserMod.GrpcUri
 import org.scalablytyped.runtime.StObject
@@ -140,7 +141,7 @@ object buildSrcResolvingLoadBalancerMod {
     /* private */ var updateState: Any = js.native
   }
   
-  type ResolutionCallback = js.Function1[/* configSelector */ ConfigSelector, Unit]
+  type ResolutionCallback = js.Function2[/* serviceConfig */ ServiceConfig, /* configSelector */ ConfigSelector, Unit]
   
   type ResolutionFailureCallback = js.Function1[/* status */ StatusObject, Unit]
 }

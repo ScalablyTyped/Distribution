@@ -14,6 +14,7 @@ import typings.yjs.distSrcInternalsMod.YXmlFragment
 import typings.yjs.distSrcInternalsMod.YXmlHook
 import typings.yjs.distSrcInternalsMod.YXmlText
 import typings.yjs.distSrcStructsItemMod.AbstractContent
+import typings.yjs.distSrcTypesYxmlelementMod.ValueTypes
 import typings.yjs.distSrcUtilsDeleteSetMod.DeleteSet
 import typings.yjs.distSrcUtilsDocMod.DocOpts
 import typings.yjs.distSrcUtilsStructStoreMod.StructStore
@@ -25,6 +26,7 @@ import typings.yjs.distSrcUtilsUpdateDecoderMod.UpdateDecoderV2
 import typings.yjs.distSrcUtilsUpdateEncoderMod.DSEncoderV1
 import typings.yjs.distSrcUtilsUpdateEncoderMod.DSEncoderV2
 import typings.yjs.distSrcUtilsUpdateEncoderMod.UpdateEncoderV2
+import typings.yjs.distSrcUtilsUpdatesMod.ObfuscatorOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -87,11 +89,11 @@ object mod {
     
     /**
       * Construct a new YArray containing the specified items.
-      * @template T
+      * @template {Object<string,any>|Array<any>|number|null|string|Uint8Array} T
       * @param {Array<T>} items
       * @return {YArray<T>}
       */
-    inline def from[T_1](items: js.Array[T_1]): typings.yjs.distSrcTypesYarrayMod.YArray[T_1] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(items.asInstanceOf[js.Any]).asInstanceOf[typings.yjs.distSrcTypesYarrayMod.YArray[T_1]]
+    inline def from[T_1 /* <: String | Double | js.Array[Any] | js.typedarray.Uint8Array | StringDictionary[Any] | Null */](items: js.Array[T_1]): typings.yjs.distSrcTypesYarrayMod.YArray[T_1] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(items.asInstanceOf[js.Any]).asInstanceOf[typings.yjs.distSrcTypesYarrayMod.YArray[T_1]]
   }
   
   @JSImport("yjs", "ContentAny")
@@ -178,7 +180,7 @@ object mod {
   @JSImport("yjs", "Doc")
   @js.native
   /**
-    * @param {DocOpts} [opts] configuration
+    * @param {DocOpts} opts configuration
     */
   open class Doc ()
     extends typings.yjs.distSrcInternalsMod.Doc {
@@ -348,7 +350,7 @@ object mod {
   
   @JSImport("yjs", "XmlElement")
   @js.native
-  open class XmlElement () extends YXmlElement {
+  open class XmlElement[KV /* <: StringDictionary[ValueTypes] */] () extends YXmlElement[KV] {
     def this(nodeName: String) = this()
   }
   
@@ -443,7 +445,7 @@ object mod {
       *                                  change was created.
       */
     def this(
-      target: typings.yjs.distSrcTypesYxmlelementMod.YXmlElement,
+      target: typings.yjs.distSrcTypesYxmlelementMod.YXmlElement[StringDictionary[String]],
       subs: Set[String | Null],
       transaction: typings.yjs.distSrcUtilsTransactionMod.Transaction
     ) = this()
@@ -672,6 +674,12 @@ object mod {
     YEncoder: Instantiable0[typings.yjs.distSrcUtilsUpdateEncoderMod.UpdateEncoderV1 | UpdateEncoderV2]
   ): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeUpdatesV2")(updates.asInstanceOf[js.Any], YDecoder.asInstanceOf[js.Any], YEncoder.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   
+  inline def obfuscateUpdate(update: js.typedarray.Uint8Array): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("obfuscateUpdate")(update.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+  inline def obfuscateUpdate(update: js.typedarray.Uint8Array, opts: ObfuscatorOptions): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("obfuscateUpdate")(update.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  
+  inline def obfuscateUpdateV2(update: js.typedarray.Uint8Array): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("obfuscateUpdateV2")(update.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+  inline def obfuscateUpdateV2(update: js.typedarray.Uint8Array, opts: ObfuscatorOptions): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("obfuscateUpdateV2")(update.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+  
   inline def parseUpdateMeta(update: js.typedarray.Uint8Array): From = ^.asInstanceOf[js.Dynamic].applyDynamic("parseUpdateMeta")(update.asInstanceOf[js.Any]).asInstanceOf[From]
   
   inline def parseUpdateMetaV2(update: js.typedarray.Uint8Array): From = ^.asInstanceOf[js.Dynamic].applyDynamic("parseUpdateMetaV2")(update.asInstanceOf[js.Any]).asInstanceOf[From]
@@ -711,27 +719,27 @@ object mod {
   
   inline def snapshot(doc: typings.yjs.distSrcUtilsDocMod.Doc): typings.yjs.distSrcUtilsSnapshotMod.Snapshot_ = ^.asInstanceOf[js.Dynamic].applyDynamic("snapshot")(doc.asInstanceOf[js.Any]).asInstanceOf[typings.yjs.distSrcUtilsSnapshotMod.Snapshot_]
   
-  inline def transact(
+  inline def transact[T](
     doc: typings.yjs.distSrcUtilsDocMod.Doc,
-    f: js.Function1[/* arg0 */ typings.yjs.distSrcUtilsTransactionMod.Transaction, Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("transact")(doc.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def transact(
+    f: js.Function1[/* arg0 */ typings.yjs.distSrcUtilsTransactionMod.Transaction, T]
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("transact")(doc.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def transact[T](
     doc: typings.yjs.distSrcUtilsDocMod.Doc,
-    f: js.Function1[/* arg0 */ typings.yjs.distSrcUtilsTransactionMod.Transaction, Unit],
+    f: js.Function1[/* arg0 */ typings.yjs.distSrcUtilsTransactionMod.Transaction, T],
     origin: Any
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("transact")(doc.asInstanceOf[js.Any], f.asInstanceOf[js.Any], origin.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def transact(
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("transact")(doc.asInstanceOf[js.Any], f.asInstanceOf[js.Any], origin.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def transact[T](
     doc: typings.yjs.distSrcUtilsDocMod.Doc,
-    f: js.Function1[/* arg0 */ typings.yjs.distSrcUtilsTransactionMod.Transaction, Unit],
+    f: js.Function1[/* arg0 */ typings.yjs.distSrcUtilsTransactionMod.Transaction, T],
     origin: Any,
     local: Boolean
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("transact")(doc.asInstanceOf[js.Any], f.asInstanceOf[js.Any], origin.asInstanceOf[js.Any], local.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def transact(
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("transact")(doc.asInstanceOf[js.Any], f.asInstanceOf[js.Any], origin.asInstanceOf[js.Any], local.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def transact[T](
     doc: typings.yjs.distSrcUtilsDocMod.Doc,
-    f: js.Function1[/* arg0 */ typings.yjs.distSrcUtilsTransactionMod.Transaction, Unit],
+    f: js.Function1[/* arg0 */ typings.yjs.distSrcUtilsTransactionMod.Transaction, T],
     origin: Unit,
     local: Boolean
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("transact")(doc.asInstanceOf[js.Any], f.asInstanceOf[js.Any], origin.asInstanceOf[js.Any], local.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("transact")(doc.asInstanceOf[js.Any], f.asInstanceOf[js.Any], origin.asInstanceOf[js.Any], local.asInstanceOf[js.Any])).asInstanceOf[T]
   
   inline def tryGc(
     ds: DeleteSet,

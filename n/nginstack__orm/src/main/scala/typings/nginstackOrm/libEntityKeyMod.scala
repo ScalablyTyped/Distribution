@@ -27,7 +27,7 @@ object libEntityKeyMod {
     override def toJSONSchema(): Any = js.native
     
     /* CompleteClass */
-    override def toJSONString(): String = js.native
+    override def toJSONString(): Any = js.native
     
     /* CompleteClass */
     var value: Double | Null = js.native
@@ -47,7 +47,7 @@ object libEntityKeyMod {
     
     def toJSONSchema(): Any
     
-    def toJSONString(): String
+    def toJSONString(): Any
     
     var value: Double | Null
     
@@ -55,13 +55,7 @@ object libEntityKeyMod {
   }
   object EntityKey {
     
-    inline def apply(
-      classKey: Double,
-      classKey_ : Any,
-      toJSONSchema: () => Any,
-      toJSONString: () => String,
-      value_ : Any
-    ): EntityKey = {
+    inline def apply(classKey: Double, classKey_ : Any, toJSONSchema: () => Any, toJSONString: () => Any, value_ : Any): EntityKey = {
       val __obj = js.Dynamic.literal(classKey = classKey.asInstanceOf[js.Any], classKey_ = classKey_.asInstanceOf[js.Any], toJSONSchema = js.Any.fromFunction0(toJSONSchema), toJSONString = js.Any.fromFunction0(toJSONString), value_ = value_.asInstanceOf[js.Any], value = null)
       __obj.asInstanceOf[EntityKey]
     }
@@ -75,7 +69,7 @@ object libEntityKeyMod {
       
       inline def setToJSONSchema(value: () => Any): Self = StObject.set(x, "toJSONSchema", js.Any.fromFunction0(value))
       
-      inline def setToJSONString(value: () => String): Self = StObject.set(x, "toJSONString", js.Any.fromFunction0(value))
+      inline def setToJSONString(value: () => Any): Self = StObject.set(x, "toJSONString", js.Any.fromFunction0(value))
       
       inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       

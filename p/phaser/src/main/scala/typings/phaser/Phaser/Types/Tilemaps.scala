@@ -2,10 +2,10 @@ package typings.phaser.Phaser.Types
 
 import typings.phaser.Phaser.Display.Color
 import typings.phaser.Phaser.GameObjects.Container
-import typings.phaser.Phaser.GameObjects.GameObject
 import typings.phaser.Phaser.Scene
 import typings.phaser.Phaser.Textures.Texture
 import typings.phaser.Phaser.Tilemaps.LayerData
+import typings.phaser.Phaser.Tilemaps.Orientation
 import typings.phaser.Phaser.Tilemaps.TilemapLayer
 import typings.phaser.Phaser.Tilemaps.Tileset
 import typings.phaser.Phaser.Types.Math.Vector2Like
@@ -18,9 +18,9 @@ object Tilemaps {
   trait CreateFromObjectLayerConfig extends StObject {
     
     /**
-      * A custom class type to convert the objects in to.
+      * A custom class type to convert the objects in to. The default is {@link Phaser.GameObjects.Sprite}. A custom class should resemble Sprite or Image; see {@link Phaser.Types.Tilemaps.CreateFromObjectsClassTypeConstructor}.
       */
-    var classType: js.UndefOr[GameObject] = js.undefined
+    var classType: js.UndefOr[js.Function] = js.undefined
     
     /**
       * Optional Container to which the Game Objects are added.
@@ -28,7 +28,7 @@ object Tilemaps {
     var container: js.UndefOr[Container] = js.undefined
     
     /**
-      * Optional name or index of the frame within the Texture.
+      * Optional name or index of the frame within the Texture. If omitted, the tileset index is used, assuming that spritesheet frames exactly match tileset indices & geometries -- if available.
       */
     var frame: js.UndefOr[String | Double] = js.undefined
     
@@ -43,7 +43,12 @@ object Tilemaps {
     var id: js.UndefOr[Double] = js.undefined
     
     /**
-      * Optional key of a Texture to be used, as stored in the Texture Manager, or a Texture instance.
+      * By default, gid-based objects copy properties and respect the type of the tile at that gid and treat the object as an override. If this is true, they don't, and use only the fields set on the object itself.
+      */
+    var ignoreTileset: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Optional key of a Texture to be used, as stored in the Texture Manager, or a Texture instance. If omitted, the object's gid's tileset key is used if available.
       */
     var key: js.UndefOr[String | Texture] = js.undefined
     
@@ -56,6 +61,11 @@ object Tilemaps {
       * A Scene reference, passed to the Game Objects constructors.
       */
     var scene: js.UndefOr[Scene] = js.undefined
+    
+    /**
+      * An Object Type to convert.
+      */
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object CreateFromObjectLayerConfig {
     
@@ -67,7 +77,7 @@ object Tilemaps {
     @scala.inline
     implicit open class MutableBuilder[Self <: CreateFromObjectLayerConfig] (val x: Self) extends AnyVal {
       
-      inline def setClassType(value: GameObject): Self = StObject.set(x, "classType", value.asInstanceOf[js.Any])
+      inline def setClassType(value: js.Function): Self = StObject.set(x, "classType", value.asInstanceOf[js.Any])
       
       inline def setClassTypeUndefined: Self = StObject.set(x, "classType", js.undefined)
       
@@ -87,6 +97,10 @@ object Tilemaps {
       
       inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
+      inline def setIgnoreTileset(value: Boolean): Self = StObject.set(x, "ignoreTileset", value.asInstanceOf[js.Any])
+      
+      inline def setIgnoreTilesetUndefined: Self = StObject.set(x, "ignoreTileset", js.undefined)
+      
       inline def setKey(value: String | Texture): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
       inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
@@ -98,8 +112,14 @@ object Tilemaps {
       inline def setScene(value: Scene): Self = StObject.set(x, "scene", value.asInstanceOf[js.Any])
       
       inline def setSceneUndefined: Self = StObject.set(x, "scene", js.undefined)
+      
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
+  
+  type CreateFromObjectsClassTypeConstructor = js.Function1[/* scene */ Scene, Unit]
   
   trait DebugStyleOptions extends StObject {
     
@@ -108,21 +128,21 @@ object Tilemaps {
       * rectangle at colliding tile locations. If set to null, colliding tiles will not be drawn.
       */
     @JSName("styleConfig.collidingTileColor")
-    var styleConfigDotcollidingTileColor: js.UndefOr[Color] = js.undefined
+    var styleConfigDotcollidingTileColor: js.UndefOr[Color | Null] = js.undefined
     
     /**
       * Color to use for drawing a line at interesting
       * tile faces. If set to null, interesting tile faces will not be drawn.
       */
     @JSName("styleConfig.faceColor")
-    var styleConfigDotfaceColor: js.UndefOr[Color] = js.undefined
+    var styleConfigDotfaceColor: js.UndefOr[Color | Null] = js.undefined
     
     /**
       * Color to use for drawing a filled rectangle at
       * non-colliding tile locations. If set to null, non-colliding tiles will not be drawn.
       */
     @JSName("styleConfig.tileColor")
-    var styleConfigDottileColor: js.UndefOr[Color] = js.undefined
+    var styleConfigDottileColor: js.UndefOr[Color | Null] = js.undefined
   }
   object DebugStyleOptions {
     
@@ -136,13 +156,19 @@ object Tilemaps {
       
       inline def setStyleConfigDotcollidingTileColor(value: Color): Self = StObject.set(x, "styleConfig.collidingTileColor", value.asInstanceOf[js.Any])
       
+      inline def setStyleConfigDotcollidingTileColorNull: Self = StObject.set(x, "styleConfig.collidingTileColor", null)
+      
       inline def setStyleConfigDotcollidingTileColorUndefined: Self = StObject.set(x, "styleConfig.collidingTileColor", js.undefined)
       
       inline def setStyleConfigDotfaceColor(value: Color): Self = StObject.set(x, "styleConfig.faceColor", value.asInstanceOf[js.Any])
       
+      inline def setStyleConfigDotfaceColorNull: Self = StObject.set(x, "styleConfig.faceColor", null)
+      
       inline def setStyleConfigDotfaceColorUndefined: Self = StObject.set(x, "styleConfig.faceColor", js.undefined)
       
       inline def setStyleConfigDottileColor(value: Color): Self = StObject.set(x, "styleConfig.tileColor", value.asInstanceOf[js.Any])
+      
+      inline def setStyleConfigDottileColorNull: Self = StObject.set(x, "styleConfig.tileColor", null)
       
       inline def setStyleConfigDottileColorUndefined: Self = StObject.set(x, "styleConfig.tileColor", js.undefined)
     }
@@ -508,7 +534,7 @@ object Tilemaps {
     /**
       * The orientation of the map data (i.e. orthogonal, isometric, hexagonal), default 'orthogonal'.
       */
-    var orientation: js.UndefOr[String] = js.undefined
+    var orientation: js.UndefOr[String | Orientation] = js.undefined
     
     /**
       * Map specific properties (can be specified in Tiled).
@@ -607,7 +633,7 @@ object Tilemaps {
       
       inline def setObjectsUndefined: Self = StObject.set(x, "objects", js.undefined)
       
-      inline def setOrientation(value: String): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+      inline def setOrientation(value: String | Orientation): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
       
       inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
       

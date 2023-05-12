@@ -47,6 +47,11 @@ trait ConnectorProfileProperties extends StObject {
   var Marketo: js.UndefOr[MarketoConnectorProfileProperties] = js.undefined
   
   /**
+    * The connector-specific properties required by Salesforce Pardot.
+    */
+  var Pardot: js.UndefOr[PardotConnectorProfileProperties] = js.undefined
+  
+  /**
     *  The connector-specific properties required by Amazon Redshift. 
     */
   var Redshift: js.UndefOr[RedshiftConnectorProfileProperties] = js.undefined
@@ -134,6 +139,10 @@ object ConnectorProfileProperties {
     inline def setMarketo(value: MarketoConnectorProfileProperties): Self = StObject.set(x, "Marketo", value.asInstanceOf[js.Any])
     
     inline def setMarketoUndefined: Self = StObject.set(x, "Marketo", js.undefined)
+    
+    inline def setPardot(value: PardotConnectorProfileProperties): Self = StObject.set(x, "Pardot", value.asInstanceOf[js.Any])
+    
+    inline def setPardotUndefined: Self = StObject.set(x, "Pardot", js.undefined)
     
     inline def setRedshift(value: RedshiftConnectorProfileProperties): Self = StObject.set(x, "Redshift", value.asInstanceOf[js.Any])
     

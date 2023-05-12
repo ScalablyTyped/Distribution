@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "ipfs-grpc-protocol" : "0.7.0"
+      "ipfs-grpc-protocol" : "0.8.0"
     }
   ],
   "test-dependencies" : [
     {
-      "ipfs-grpc-protocol" : "0.7.0"
+      "ipfs-grpc-protocol" : "0.8.0"
     }
   ],
   "compile-devDependencies" : [

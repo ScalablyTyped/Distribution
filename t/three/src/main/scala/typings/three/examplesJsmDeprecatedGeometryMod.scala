@@ -1,5 +1,6 @@
 package typings.three
 
+import typings.three.srcCoreBufferGeometryMod.NormalBufferAttributes
 import typings.three.srcCoreEventDispatcherMod.Event
 import typings.three.srcMaterialsMaterialMod.Material
 import typings.three.srcMathMatrix3Mod.Matrix
@@ -216,7 +217,7 @@ object examplesJsmDeprecatedGeometryMod {
       */
     var faces: js.Array[Face3] = js.native
     
-    def fromBufferGeometry(geometry: BufferGeometry): Geometry = js.native
+    def fromBufferGeometry(geometry: BufferGeometry[NormalBufferAttributes]): Geometry = js.native
     
     /**
       *
@@ -251,7 +252,7 @@ object examplesJsmDeprecatedGeometryMod {
     
     def mergeMesh(
       mesh: Mesh[
-          typings.three.srcCoreBufferGeometryMod.BufferGeometry, 
+          typings.three.srcCoreBufferGeometryMod.BufferGeometry[NormalBufferAttributes], 
           Material | js.Array[Material]
         ]
     ): Unit = js.native
@@ -319,7 +320,7 @@ object examplesJsmDeprecatedGeometryMod {
     
     def sortFacesByMaterialIndex(): Unit = js.native
     
-    def toBufferGeometry(): BufferGeometry = js.native
+    def toBufferGeometry(): BufferGeometry[NormalBufferAttributes] = js.native
     
     def toJSON(): Any = js.native
     
@@ -358,7 +359,7 @@ object examplesJsmDeprecatedGeometryMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def createBufferGeometryFromObject(`object`: Object3D[Event]): BufferGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("createBufferGeometryFromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[BufferGeometry]
+    inline def createBufferGeometryFromObject(`object`: Object3D[Event]): BufferGeometry[NormalBufferAttributes] = ^.asInstanceOf[js.Dynamic].applyDynamic("createBufferGeometryFromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[BufferGeometry[NormalBufferAttributes]]
   }
   
   trait MorphColor extends StObject {

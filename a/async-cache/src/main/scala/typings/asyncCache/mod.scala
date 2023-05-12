@@ -2,8 +2,6 @@ package typings.asyncCache
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Shortcut
-import typings.lruCache.mod.DeprecatedOptions
-import typings.lruCache.mod.SharedOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -52,11 +50,7 @@ object mod extends Shortcut {
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped lru-cache.lru-cache.LimitedByCount | lru-cache.lru-cache.LimitedBySize<string, T> | lru-cache.lru-cache.LimitedByTTL
-  - Dropped lru-cache.anon.MaxEntrySize<string, T> | {} */ trait Options[T]
-    extends StObject
-       with SharedOptions[String, T]
-       with DeprecatedOptions[String, T] {
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify LRUOptions<string, T> * / any */ trait Options[T] extends StObject {
     
     def load(
       key: String,

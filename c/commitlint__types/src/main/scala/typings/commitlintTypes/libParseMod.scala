@@ -168,6 +168,8 @@ object libParseMod {
     
     var commentChar: js.UndefOr[String] = js.undefined
     
+    var fieldPattern: js.UndefOr[js.RegExp] = js.undefined
+    
     var headerCorrespondence: js.UndefOr[js.Array[String]] = js.undefined
     
     var headerPattern: js.UndefOr[js.RegExp] = js.undefined
@@ -197,6 +199,10 @@ object libParseMod {
       inline def setCommentChar(value: String): Self = StObject.set(x, "commentChar", value.asInstanceOf[js.Any])
       
       inline def setCommentCharUndefined: Self = StObject.set(x, "commentChar", js.undefined)
+      
+      inline def setFieldPattern(value: js.RegExp): Self = StObject.set(x, "fieldPattern", value.asInstanceOf[js.Any])
+      
+      inline def setFieldPatternUndefined: Self = StObject.set(x, "fieldPattern", js.undefined)
       
       inline def setHeaderCorrespondence(value: js.Array[String]): Self = StObject.set(x, "headerCorrespondence", value.asInstanceOf[js.Any])
       

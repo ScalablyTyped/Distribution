@@ -6,7 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GetParametersPathDeliveryidHookidOwner extends StObject {
   
-  /** Returns a delivery for a webhook configured in a repository. */
+  /**
+    * Get a delivery for a repository webhook
+    * @description Returns a delivery for a webhook configured in a repository.
+    */
   var get: ParametersPathDeliveryidHookidOwner
 }
 object GetParametersPathDeliveryidHookidOwner {

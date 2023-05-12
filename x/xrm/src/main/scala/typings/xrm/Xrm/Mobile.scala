@@ -11,9 +11,9 @@ trait Mobile extends StObject {
   
   /**
     * Provides methods to create and manage records in the mobile clients while working in the offline mode.
-    * @see {@link https://msdn.microsoft.com/en-us/library/mt787123.aspx External Link: Xrm.Mobile.offline (client-side reference)}
+    * @see {@link https://learn.microsoft.com/en-us/previous-versions/dynamicscrm-2016/developers-guide/mt787123(v=crm.8) External Link: Xrm.Mobile.offline (client-side reference)}
     * @deprecated Use {@link Xrm.WebApi.offline} instead.  Xrm.WebApi.offline is implemented differently than Xrm.Mobile.offline
-    * @see {@link https://docs.microsoft.com/en-us/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#some-client-apis-are-deprecated External Link: Deprecated Client APIs}
+    * @see {@link https://learn.microsoft.com/en-us/power-platform/important-changes-coming#some-client-apis-are-deprecated External Link: Deprecated Client APIs}
     */
   var offline: MobileOffline
 }

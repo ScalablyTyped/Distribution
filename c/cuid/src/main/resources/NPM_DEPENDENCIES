@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "cuid" : "2.1.8"
+      "cuid" : "3.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "cuid" : "2.1.8"
+      "cuid" : "3.0.0"
     }
   ],
   "compile-devDependencies" : [

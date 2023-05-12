@@ -40,6 +40,12 @@ object typesModulesHashNavigationMod {
   trait HashNavigationOptions extends StObject {
     
     /**
+      * Designed to be used with Virtual slides when it is impossible to find slide in DOM by hash (e.g. not yet rendered)
+      *
+      */
+    var getSlideIndex: js.UndefOr[js.Function2[/* swiper */ default, /* hash */ String, Double]] = js.undefined
+    
+    /**
       * Works in addition to hashnav to replace current url state with the
       * new one instead of adding it to history
       *
@@ -64,6 +70,10 @@ object typesModulesHashNavigationMod {
     
     @scala.inline
     implicit open class MutableBuilder[Self <: HashNavigationOptions] (val x: Self) extends AnyVal {
+      
+      inline def setGetSlideIndex(value: (/* swiper */ default, /* hash */ String) => Double): Self = StObject.set(x, "getSlideIndex", js.Any.fromFunction2(value))
+      
+      inline def setGetSlideIndexUndefined: Self = StObject.set(x, "getSlideIndex", js.undefined)
       
       inline def setReplaceState(value: Boolean): Self = StObject.set(x, "replaceState", value.asInstanceOf[js.Any])
       

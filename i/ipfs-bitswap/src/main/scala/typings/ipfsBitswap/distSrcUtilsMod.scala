@@ -1,8 +1,8 @@
 package typings.ipfsBitswap
 
-import typings.ipfsBitswap.anon.DebuggererrorDebugger
 import typings.ipfsBitswap.distSrcMessageEntryMod.BitswapMessageEntry
 import typings.libp2pInterfacePeerId.mod.PeerId
+import typings.libp2pLogger.mod.Logger_
 import typings.std.Map
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -24,10 +24,8 @@ object distSrcUtilsMod {
     b: Map[String, js.typedarray.Uint8Array | BitswapMessageEntry]
   ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isMapEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def logger(): DebuggererrorDebugger = ^.asInstanceOf[js.Dynamic].applyDynamic("logger")().asInstanceOf[DebuggererrorDebugger]
-  inline def logger(id: Unit, subsystem: String): DebuggererrorDebugger = (^.asInstanceOf[js.Dynamic].applyDynamic("logger")(id.asInstanceOf[js.Any], subsystem.asInstanceOf[js.Any])).asInstanceOf[DebuggererrorDebugger]
-  inline def logger(id: PeerId): DebuggererrorDebugger = ^.asInstanceOf[js.Dynamic].applyDynamic("logger")(id.asInstanceOf[js.Any]).asInstanceOf[DebuggererrorDebugger]
-  inline def logger(id: PeerId, subsystem: String): DebuggererrorDebugger = (^.asInstanceOf[js.Dynamic].applyDynamic("logger")(id.asInstanceOf[js.Any], subsystem.asInstanceOf[js.Any])).asInstanceOf[DebuggererrorDebugger]
+  inline def logger(id: PeerId): Logger_ = ^.asInstanceOf[js.Dynamic].applyDynamic("logger")(id.asInstanceOf[js.Any]).asInstanceOf[Logger_]
+  inline def logger(id: PeerId, subsystem: String): Logger_ = (^.asInstanceOf[js.Dynamic].applyDynamic("logger")(id.asInstanceOf[js.Any], subsystem.asInstanceOf[js.Any])).asInstanceOf[Logger_]
   
   inline def pullAllWith[T, E](pred: js.Function2[/* a */ T, /* b */ E, Boolean], list: js.Array[T], values: js.Array[E]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("pullAllWith")(pred.asInstanceOf[js.Any], list.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   

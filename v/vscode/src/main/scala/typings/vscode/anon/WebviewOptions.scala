@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WebviewOptions extends StObject {
   
   /**
-    * Content settings for the webview created for this view.
-    */
+  			 * Content settings for the webview created for this view.
+  			 */
   val webviewOptions: js.UndefOr[RetainContextWhenHidden] = js.undefined
 }
 object WebviewOptions {

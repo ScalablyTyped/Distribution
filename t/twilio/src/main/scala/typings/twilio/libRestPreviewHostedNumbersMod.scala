@@ -1,8 +1,7 @@
 package typings.twilio
 
-import typings.twilio.libRestPreviewHostedNumbersAuthorizationDocumentMod.AuthorizationDocumentContext
+import typings.twilio.libRestPreviewBaseMod.^
 import typings.twilio.libRestPreviewHostedNumbersAuthorizationDocumentMod.AuthorizationDocumentListInstance
-import typings.twilio.libRestPreviewHostedNumbersHostedNumberOrderMod.HostedNumberOrderContext
 import typings.twilio.libRestPreviewHostedNumbersHostedNumberOrderMod.HostedNumberOrderListInstance
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,33 +9,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object libRestPreviewHostedNumbersMod {
   
-  @JSImport("twilio/lib/rest/preview/HostedNumbers", JSImport.Namespace)
+  @JSImport("twilio/lib/rest/preview/HostedNumbers", JSImport.Default)
   @js.native
-  open class ^ protected () extends HostedNumbers {
+  open class default protected () extends HostedNumbers {
     /**
       * Initialize the HostedNumbers version of Preview
       *
-      * @param domain - The twilio domain
+      * @param domain - The Twilio (Twilio.Preview) domain
       */
-    def this(domain: typings.twilio.libRestPreviewMod.^) = this()
+    def this(domain: ^) = this()
   }
   
   @js.native
   trait HostedNumbers
-    extends typings.twilio.libBaseVersionMod.^ {
+    extends typings.twilio.libBaseVersionMod.default {
     
-    /**
-      * @param sid - sid of instance
-      */
-    def authorizationDocuments(sid: String): AuthorizationDocumentContext = js.native
-    @JSName("authorizationDocuments")
-    val authorizationDocuments_Original: AuthorizationDocumentListInstance = js.native
+    /** authorizationDocuments - { Twilio.Preview.HostedNumbers.AuthorizationDocumentListInstance } resource */
+    /* protected */ var _authorizationDocuments: js.UndefOr[AuthorizationDocumentListInstance] = js.native
     
-    /**
-      * @param sid - sid of instance
-      */
-    def hostedNumberOrders(sid: String): HostedNumberOrderContext = js.native
-    @JSName("hostedNumberOrders")
-    val hostedNumberOrders_Original: HostedNumberOrderListInstance = js.native
+    /** hostedNumberOrders - { Twilio.Preview.HostedNumbers.HostedNumberOrderListInstance } resource */
+    /* protected */ var _hostedNumberOrders: js.UndefOr[HostedNumberOrderListInstance] = js.native
+    
+    /** Getter for authorizationDocuments resource */
+    def authorizationDocuments: AuthorizationDocumentListInstance = js.native
+    
+    /** Getter for hostedNumberOrders resource */
+    def hostedNumberOrders: HostedNumberOrderListInstance = js.native
   }
 }

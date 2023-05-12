@@ -10,7 +10,7 @@ trait Self
      with /* k */ StringDictionary[Any] {
   
   /**
-    * Fully qualified link to this API call
+    * Fully qualified link that generated the current response document
     */
   var self: String
 }

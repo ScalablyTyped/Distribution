@@ -6,9 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("GPUOutOfMemoryError")
 @js.native
-open class GPUOutOfMemoryError ()
+open class GPUOutOfMemoryError protected ()
   extends StObject
      with typings.babylonjs.GPUOutOfMemoryError {
+  def this(message: String) = this()
   
   /* CompleteClass */
   override val message: String = js.native

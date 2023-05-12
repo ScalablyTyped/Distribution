@@ -12,8 +12,7 @@ trait ClientSessionOptions
   extends StObject
      with SessionOptions {
   
-  @JSName("createConnection")
-  var createConnection_ClientSessionOptions: js.UndefOr[js.Function2[/* authority */ URL, /* option */ SessionOptions, Duplex]] = js.undefined
+  var createConnection: js.UndefOr[js.Function2[/* authority */ URL, /* option */ SessionOptions, Duplex]] = js.undefined
   
   var maxReservedRemoteStreams: js.UndefOr[Double] = js.undefined
   

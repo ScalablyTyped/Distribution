@@ -16,7 +16,7 @@ object libIconsAlibabaOutlinedMod extends Shortcut {
   @js.native
   trait AlibabaOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_AlibabaOutlinedIconType: String = js.native

@@ -41,6 +41,8 @@ object mod {
     /* private */ var socket: Any = js.native
   }
   
+  inline def createChannel(param0: CreateChannelArgs): Channel = ^.asInstanceOf[js.Dynamic].applyDynamic("createChannel")(param0.asInstanceOf[js.Any]).asInstanceOf[Channel]
+  
   trait CreateChannelArgs extends StObject {
     
     var async: js.UndefOr[Boolean] = js.undefined

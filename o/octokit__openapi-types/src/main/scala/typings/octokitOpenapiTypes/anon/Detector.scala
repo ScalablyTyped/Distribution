@@ -1,7 +1,6 @@
 package typings.octokitOpenapiTypes.anon
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,9 +13,9 @@ trait Detector extends StObject {
   var job: Correlator
   
   /** @description A collection of package manifests, which are a collection of related dependencies declared in a file or representing a logical group of dependencies. */
-  var manifests: js.UndefOr[StringDictionary[Resolved]] = js.undefined
+  var manifests: js.UndefOr[StringDictionary[js.UndefOr[Resolved]]] = js.undefined
   
-  var metadata: js.UndefOr[StringDictionary[Partial[String] & Partial[Double] & Partial[Boolean]]] = js.undefined
+  var metadata: js.UndefOr[StringDictionary[js.UndefOr[String | Double | Boolean | Null]]] = js.undefined
   
   /**
     * @description The repository branch that triggered this snapshot.
@@ -32,7 +31,7 @@ trait Detector extends StObject {
   var scanned: String
   
   /**
-    * @description The commit SHA associated with this dependency snapshot.
+    * @description The commit SHA associated with this dependency snapshot. Maximum length: 40 characters.
     * @example ddc951f4b1293222421f2c8df679786153acf689
     */
   var sha: String
@@ -54,11 +53,11 @@ object Detector {
     
     inline def setJob(value: Correlator): Self = StObject.set(x, "job", value.asInstanceOf[js.Any])
     
-    inline def setManifests(value: StringDictionary[Resolved]): Self = StObject.set(x, "manifests", value.asInstanceOf[js.Any])
+    inline def setManifests(value: StringDictionary[js.UndefOr[Resolved]]): Self = StObject.set(x, "manifests", value.asInstanceOf[js.Any])
     
     inline def setManifestsUndefined: Self = StObject.set(x, "manifests", js.undefined)
     
-    inline def setMetadata(value: StringDictionary[Partial[String] & Partial[Double] & Partial[Boolean]]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: StringDictionary[js.UndefOr[String | Double | Boolean | Null]]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     

@@ -10,8 +10,8 @@ object math {
   
   /**
     * Class represents a 2-dimensional point, defined by x and y coordinates.
-    * @property x {number} - The point's coordinate on X-axis.
-    * @property y {number} - The point's coordinate on Y-axis.
+    * x {number} - The point's coordinate on X-axis.
+    * y {number} - The point's coordinate on Y-axis.
     */
   @JSGlobal("H.math.Point")
   @js.native
@@ -114,8 +114,8 @@ object math {
   
   /**
     * Class for representing sizes consisting of a width and height.
-    * @property w {number} - The size's width value
-    * @property h {number} - The size's height value
+    * w {number} - The size's width value
+    * h {number} - The size's height value
     */
   @JSGlobal("H.math.Size")
   @js.native

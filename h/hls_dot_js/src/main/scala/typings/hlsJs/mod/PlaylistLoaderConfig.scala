@@ -21,8 +21,6 @@ trait PlaylistLoaderConfig extends StObject {
   var manifestLoadingRetryDelay: Double
   
   var manifestLoadingTimeOut: Double
-  
-  var pLoader: js.UndefOr[PlaylistLoaderConstructor] = js.undefined
 }
 object PlaylistLoaderConfig {
   
@@ -58,9 +56,5 @@ object PlaylistLoaderConfig {
     inline def setManifestLoadingRetryDelay(value: Double): Self = StObject.set(x, "manifestLoadingRetryDelay", value.asInstanceOf[js.Any])
     
     inline def setManifestLoadingTimeOut(value: Double): Self = StObject.set(x, "manifestLoadingTimeOut", value.asInstanceOf[js.Any])
-    
-    inline def setPLoader(value: PlaylistLoaderConstructor): Self = StObject.set(x, "pLoader", value.asInstanceOf[js.Any])
-    
-    inline def setPLoaderUndefined: Self = StObject.set(x, "pLoader", js.undefined)
   }
 }

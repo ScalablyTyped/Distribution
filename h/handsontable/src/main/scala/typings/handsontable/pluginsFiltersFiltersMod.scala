@@ -1,6 +1,6 @@
 package typings.handsontable
 
-import typings.handsontable.anon.Col
+import typings.handsontable.anon.DateFormat
 import typings.handsontable.anon.Key
 import typings.handsontable.anon.PhysicalIndex
 import typings.handsontable.coreMod.default
@@ -40,13 +40,13 @@ object pluginsFiltersFiltersMod {
   
   trait CellLikeData extends StObject {
     
-    var meta: Col
+    var meta: DateFormat
     
     var value: String
   }
   object CellLikeData {
     
-    inline def apply(meta: Col, value: String): CellLikeData = {
+    inline def apply(meta: DateFormat, value: String): CellLikeData = {
       val __obj = js.Dynamic.literal(meta = meta.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[CellLikeData]
     }
@@ -54,7 +54,7 @@ object pluginsFiltersFiltersMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: CellLikeData] (val x: Self) extends AnyVal {
       
-      inline def setMeta(value: Col): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+      inline def setMeta(value: DateFormat): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
       
       inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }

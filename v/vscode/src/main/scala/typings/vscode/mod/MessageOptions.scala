@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MessageOptions extends StObject {
   
   /**
-    * Human-readable detail message that is rendered less prominent. _Note_ that detail
-    * is only shown for {@link MessageOptions.modal modal} messages.
-    */
+  		 * Human-readable detail message that is rendered less prominent. _Note_ that detail
+  		 * is only shown for {@link MessageOptions.modal modal} messages.
+  		 */
   var detail: js.UndefOr[String] = js.undefined
   
   /**
-    * Indicates that this message should be modal.
-    */
+  		 * Indicates that this message should be modal.
+  		 */
   var modal: js.UndefOr[Boolean] = js.undefined
 }
 object MessageOptions {

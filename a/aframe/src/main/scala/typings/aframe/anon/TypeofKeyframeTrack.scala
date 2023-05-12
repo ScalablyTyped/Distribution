@@ -12,7 +12,7 @@ trait TypeofKeyframeTrack
   extends StObject
      with Instantiable3[
       /* name */ String, 
-      /* times */ ArrayLike[Any], 
+      /* times */ ArrayLike[Double], 
       /* values */ ArrayLike[Any], 
       KeyframeTrack
     ] {

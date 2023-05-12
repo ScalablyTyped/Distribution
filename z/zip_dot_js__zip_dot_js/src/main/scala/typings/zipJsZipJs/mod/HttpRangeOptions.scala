@@ -17,7 +17,7 @@ trait HttpRangeOptions extends StObject {
   
   /**
     * `true` to rely `XMLHttpRequest` instead of `fetch` to fetch data.
-    * 
+    *
     * @defaultValue false
     */
   var useXHR: js.UndefOr[Boolean] = js.undefined

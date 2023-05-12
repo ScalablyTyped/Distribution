@@ -13,7 +13,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 //#region Constructors
 /**
   * Creates a new Repeater control.
-  * @constructor
   * @param elemnt The DOM element that will host the new control. The Repeater will create an element if this value is null.
   * @param options An object that contains one or more property/value pairs to apply to the new Repeater. Each property of the options object corresponds to one of the object's properties or events. Event names must begin with "on".
   **/

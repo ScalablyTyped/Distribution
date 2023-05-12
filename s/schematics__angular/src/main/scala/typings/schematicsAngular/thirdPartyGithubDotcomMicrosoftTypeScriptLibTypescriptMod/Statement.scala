@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Statement
   extends StObject
-     with Node
      with JSDocContainer {
   
   var _statementBrand: Any = js.native

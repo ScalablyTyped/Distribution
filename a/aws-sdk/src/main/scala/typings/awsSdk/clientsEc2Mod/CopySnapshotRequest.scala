@@ -39,7 +39,7 @@ trait CopySnapshotRequest extends StObject {
   /**
     * When you copy an encrypted source snapshot using the Amazon EC2 Query API, you must supply a pre-signed URL. This parameter is optional for unencrypted snapshots. For more information, see Query requests. The PresignedUrl should use the snapshot source endpoint, the CopySnapshot action, and include the SourceRegion, SourceSnapshotId, and DestinationRegion parameters. The PresignedUrl must be signed using Amazon Web Services Signature Version 4. Because EBS snapshots are stored in Amazon S3, the signing algorithm for this parameter uses the same logic that is described in Authenticating Requests: Using Query Parameters (Amazon Web Services Signature Version 4) in the Amazon Simple Storage Service API Reference. An invalid or improperly signed PresignedUrl will cause the copy operation to fail asynchronously, and the snapshot will move to an error state.
     */
-  var PresignedUrl: js.UndefOr[String] = js.undefined
+  var PresignedUrl: js.UndefOr[CopySnapshotRequestPSU] = js.undefined
   
   /**
     * The ID of the Region that contains the snapshot to be copied.
@@ -90,7 +90,7 @@ object CopySnapshotRequest {
     
     inline def setKmsKeyIdUndefined: Self = StObject.set(x, "KmsKeyId", js.undefined)
     
-    inline def setPresignedUrl(value: String): Self = StObject.set(x, "PresignedUrl", value.asInstanceOf[js.Any])
+    inline def setPresignedUrl(value: CopySnapshotRequestPSU): Self = StObject.set(x, "PresignedUrl", value.asInstanceOf[js.Any])
     
     inline def setPresignedUrlUndefined: Self = StObject.set(x, "PresignedUrl", js.undefined)
     

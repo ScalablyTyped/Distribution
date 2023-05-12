@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@firebase/database-types" : "0.9.17"
+      "@firebase/database-types" : "0.10.4"
     }
   ],
   "test-dependencies" : [
     {
-      "@firebase/database-types" : "0.9.17"
+      "@firebase/database-types" : "0.10.4"
     }
   ],
   "compile-devDependencies" : [

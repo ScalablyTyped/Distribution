@@ -1,6 +1,8 @@
 package typings.chartJs.mod
 
-import typings.chartJs.typesBasicMod.AnyObject
+import typings.chartJs.distTypesBasicMod.AnyObject
+import typings.chartJs.distTypesIndexMod.LineOptions
+import typings.chartJs.distTypesIndexMod.LineProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("chart.js", "LineElement")
 @js.native
 open class LineElementCls protected ()
-  extends StObject
-     with LineElement[LineProps, LineOptions] {
+  extends typings.chartJs.distTypesIndexMod.LineElement[LineProps, LineOptions] {
   def this(cfg: AnyObject) = this()
 }

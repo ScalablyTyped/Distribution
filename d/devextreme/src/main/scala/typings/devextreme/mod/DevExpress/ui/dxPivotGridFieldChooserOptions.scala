@@ -3,7 +3,7 @@ package typings.devextreme.mod.DevExpress.ui
 import typings.devextreme.anon.AllFields
 import typings.devextreme.anon.SearchTimeout
 import typings.devextreme.mod.DevExpress.common.FieldChooserLayout
-import typings.devextreme.mod.DevExpress.common.charts.ApplyChangesMode
+import typings.devextreme.mod.DevExpress.common.grids.ApplyChangesMode
 import typings.devextreme.mod.DevExpress.data.PivotGridDataSource
 import typings.devextreme.mod.DevExpress.ui.dxPivotGridFieldChooser.ContextMenuPreparingEvent
 import org.scalablytyped.runtime.StObject

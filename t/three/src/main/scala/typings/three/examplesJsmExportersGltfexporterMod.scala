@@ -3,6 +3,7 @@ package typings.three
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.ErrorEvent
 import typings.three.srcCoreBufferGeometryMod.BufferGeometry
+import typings.three.srcCoreBufferGeometryMod.NormalBufferAttributes
 import typings.three.srcCoreEventDispatcherMod.Event
 import typings.three.srcThreeMod.AnimationClip
 import typings.three.srcThreeMod.Material
@@ -217,7 +218,7 @@ object examplesJsmExportersGltfexporterMod {
     var writeMesh: js.UndefOr[
         js.Function2[
           /* mesh */ Mesh[
-            BufferGeometry, 
+            BufferGeometry[NormalBufferAttributes], 
             typings.three.srcMaterialsMaterialMod.Material | js.Array[typings.three.srcMaterialsMaterialMod.Material]
           ], 
           /* meshDef */ StringDictionary[Any], 
@@ -255,7 +256,7 @@ object examplesJsmExportersGltfexporterMod {
       
       inline def setWriteMesh(
         value: (/* mesh */ Mesh[
-              BufferGeometry, 
+              BufferGeometry[NormalBufferAttributes], 
               typings.three.srcMaterialsMaterialMod.Material | js.Array[typings.three.srcMaterialsMaterialMod.Material]
             ], /* meshDef */ StringDictionary[Any]) => Unit
       ): Self = StObject.set(x, "writeMesh", js.Any.fromFunction2(value))

@@ -10,6 +10,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
+  inline def apply[LHS, RHS](lhs: LHS, rhs: RHS): js.UndefOr[js.Array[Diff_[LHS, RHS]]] = (^.asInstanceOf[js.Dynamic].apply(lhs.asInstanceOf[js.Any], rhs.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Array[Diff_[LHS, RHS]]]]
+  inline def apply[LHS, RHS](lhs: LHS, rhs: RHS, prefilter: Unit, acc: Accumulator[LHS, RHS]): Accumulator[LHS, RHS] = (^.asInstanceOf[js.Dynamic].apply(lhs.asInstanceOf[js.Any], rhs.asInstanceOf[js.Any], prefilter.asInstanceOf[js.Any], acc.asInstanceOf[js.Any])).asInstanceOf[Accumulator[LHS, RHS]]
+  inline def apply[LHS, RHS](lhs: LHS, rhs: RHS, prefilter: PreFilter[LHS, RHS]): js.UndefOr[js.Array[Diff_[LHS, RHS]]] = (^.asInstanceOf[js.Dynamic].apply(lhs.asInstanceOf[js.Any], rhs.asInstanceOf[js.Any], prefilter.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Array[Diff_[LHS, RHS]]]]
+  inline def apply[LHS, RHS](lhs: LHS, rhs: RHS, prefilter: PreFilter[LHS, RHS], acc: Accumulator[LHS, RHS]): Accumulator[LHS, RHS] = (^.asInstanceOf[js.Dynamic].apply(lhs.asInstanceOf[js.Any], rhs.asInstanceOf[js.Any], prefilter.asInstanceOf[js.Any], acc.asInstanceOf[js.Any])).asInstanceOf[Accumulator[LHS, RHS]]
+  
   @JSImport("deep-diff", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class CacheManager protected ()
   extends typings.azureMsalCommon.distCacheCacheManagerMod.CacheManager {
-  def this(clientId: String, cryptoImpl: ICrypto) = this()
+  def this(clientId: String, cryptoImpl: ICrypto, logger: typings.azureMsalCommon.distLoggerLoggerMod.Logger) = this()
 }
 /* static members */
 object CacheManager {

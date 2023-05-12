@@ -16,7 +16,7 @@ object libIconsFileSearchOutlinedMod extends Shortcut {
   @js.native
   trait FileSearchOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_FileSearchOutlinedIconType: String = js.native

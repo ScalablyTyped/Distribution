@@ -1,16 +1,17 @@
 package typings.firebaseFirestore
 
 import typings.firebaseFirestore.anon.TrackRemovals
+import typings.firebaseFirestore.distLitePackagesFirestoreSrcCoreQueryMod.Query
 import typings.firebaseFirestore.distLitePackagesFirestoreSrcCoreSnapshotVersionMod.SnapshotVersion
 import typings.firebaseFirestore.distLitePackagesFirestoreSrcLocalIndexManagerMod.IndexManager
 import typings.firebaseFirestore.distLitePackagesFirestoreSrcLocalPersistenceMod.Persistence
 import typings.firebaseFirestore.distLitePackagesFirestoreSrcLocalRemoteDocumentChangeBufferMod.RemoteDocumentChangeBuffer
 import typings.firebaseFirestore.distLitePackagesFirestoreSrcModelCollectionsMod.DocumentKeySet_
 import typings.firebaseFirestore.distLitePackagesFirestoreSrcModelCollectionsMod.MutableDocumentMap_
+import typings.firebaseFirestore.distLitePackagesFirestoreSrcModelCollectionsMod.OverlayMap
 import typings.firebaseFirestore.distLitePackagesFirestoreSrcModelDocumentKeyMod.DocumentKey
 import typings.firebaseFirestore.distLitePackagesFirestoreSrcModelDocumentMod.MutableDocument
 import typings.firebaseFirestore.distLitePackagesFirestoreSrcModelFieldIndexMod.IndexOffset
-import typings.firebaseFirestore.distLitePackagesFirestoreSrcModelPathMod.ResourcePath
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,9 +37,9 @@ object distLitePackagesFirestoreTestUnitLocalTestRemoteDocumentCacheMod {
     
     /* private */ val cache: Any = js.native
     
-    def getAllFromCollection(collection: ResourcePath, offset: IndexOffset): js.Promise[MutableDocumentMap_] = js.native
-    
     def getAllFromCollectionGroup(collectionGroup: String, offset: IndexOffset, limit: Double): js.Promise[MutableDocumentMap_] = js.native
+    
+    def getDocumentsMatchingQuery(query: Query, offset: IndexOffset, mutatedDocs: OverlayMap): js.Promise[MutableDocumentMap_] = js.native
     
     def getEntries(documentKeys: DocumentKeySet_): js.Promise[MutableDocumentMap_] = js.native
     

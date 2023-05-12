@@ -16,7 +16,7 @@ object libIconsPicLeftOutlinedMod extends Shortcut {
   @js.native
   trait PicLeftOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_PicLeftOutlinedIconType: String = js.native

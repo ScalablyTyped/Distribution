@@ -1,7 +1,7 @@
 
 # Scala.js typings for storybook__csf
 
-Typings are for version 0.0.1
+Typings are for version 0.1.0
 
 ## Library description:
 Storybook Component Story Format (CSF) utilities

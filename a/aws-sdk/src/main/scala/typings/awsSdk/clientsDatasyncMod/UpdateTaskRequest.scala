@@ -12,12 +12,12 @@ trait UpdateTaskRequest extends StObject {
   var CloudWatchLogGroupArn: js.UndefOr[LogGroupArn] = js.undefined
   
   /**
-    * A list of filter rules that determines which files to exclude from a task. The list should contain a single filter string that consists of the patterns to exclude. The patterns are delimited by "|" (that is, a pipe), for example, "/folder1|/folder2".  
+    * Specifies a list of filter rules that exclude specific data during your transfer. For more information and examples, see Filtering data transferred by DataSync.
     */
   var Excludes: js.UndefOr[FilterList] = js.undefined
   
   /**
-    * A list of filter rules that determines which files to include when running a task. The pattern contains a single filter string that consists of the patterns to include. The patterns are delimited by "|" (that is, a pipe), for example, "/folder1|/folder2".
+    * Specifies a list of filter rules that include specific data during your transfer. For more information and examples, see Filtering data transferred by DataSync.
     */
   var Includes: js.UndefOr[FilterList] = js.undefined
   

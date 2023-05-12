@@ -11,7 +11,6 @@ trait ITextOptions
   
   /**
     * Indicates whether internal text char widths can be cached
-    * @type Boolean
     */
   var caching: js.UndefOr[Boolean] = js.undefined
   
@@ -27,37 +26,31 @@ trait ITextOptions
   
   /**
     * Color of default cursor (when not overwritten by character style)
-    * @type String
     */
   var cursorColor: js.UndefOr[String] = js.undefined
   
   /**
     * Delay between cursor blink (in ms)
-    * @type Number
     */
   var cursorDelay: js.UndefOr[Double] = js.undefined
   
   /**
     * Duration of cursor fadein (in ms)
-    * @type Number
     */
   var cursorDuration: js.UndefOr[Double] = js.undefined
   
   /**
     * Width of cursor (in px)
-    * @type Number
     */
   var cursorWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * Indicates whether a text can be edited
-    * @type Boolean
     */
   var editable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Border color of text object while it's in editing mode
-    * @type String
     */
   var editingBorderColor: js.UndefOr[String] = js.undefined
   
@@ -74,7 +67,6 @@ trait ITextOptions
   
   /**
     * Indicates whether text is in editing mode
-    * @type Boolean
     */
   var isEditing: js.UndefOr[Boolean] = js.undefined
   
@@ -95,25 +87,21 @@ trait ITextOptions
   
   /**
     * Indicates whether text is selected
-    * @type Boolean
     */
   var selected: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Color of text selection
-    * @type String
     */
   var selectionColor: js.UndefOr[String] = js.undefined
   
   /**
     * Index where text selection ends
-    * @type Number
     */
   var selectionEnd: js.UndefOr[Double] = js.undefined
   
   /**
     * Index where text selection starts (or where cursor is when there is no selection)
-    * @type Number
     */
   var selectionStart: js.UndefOr[Double] = js.undefined
   

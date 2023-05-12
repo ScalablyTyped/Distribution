@@ -594,6 +594,8 @@ object buildAndroidMod {
       /* "expo.modules.updates.EXPO_UPDATE_URL" */ val UPDATE_URL: typings.expoConfigPlugins.buildAndroidUpdatesMod.Config.UPDATE_URL & String = js.native
     }
     
+    inline def applyRuntimeVersionFromConfig(config: PickExpoConfigUpdatessdkV, stringsJSON: ResourceXML): ResourceXML = (^.asInstanceOf[js.Dynamic].applyDynamic("applyRuntimeVersionFromConfig")(config.asInstanceOf[js.Any], stringsJSON.asInstanceOf[js.Any])).asInstanceOf[ResourceXML]
+    
     inline def areVersionsSynced(config: PickExpoConfigUpdatesrunt, androidManifest: AndroidManifest): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("areVersionsSynced")(config.asInstanceOf[js.Any], androidManifest.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     inline def ensureBuildGradleContainsConfigurationScript(projectRoot: String, buildGradleContents: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureBuildGradleContainsConfigurationScript")(projectRoot.asInstanceOf[js.Any], buildGradleContents.asInstanceOf[js.Any])).asInstanceOf[String]

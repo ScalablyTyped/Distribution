@@ -18,7 +18,6 @@ open class BaseBrowserFlowCls protected ()
     * @option {String} [redirectUri] The URL that Asana should redirect to once
     *     user authorization is complete. Defaults to the URL configured in
     *     the app, and if none then the current page URL.
-    * @constructor
     */
   def this(options: Any) = this()
   

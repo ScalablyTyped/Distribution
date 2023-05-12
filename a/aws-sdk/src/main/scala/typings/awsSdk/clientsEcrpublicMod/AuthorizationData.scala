@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AuthorizationData extends StObject {
   
   /**
-    * A base64-encoded string that contains authorization data for a public Amazon ECR registry. When the string is decoded, it is presented in the format user:password for public registry authentication using docker login.
+    * A base64-encoded string that contains authorization data for a public Amazon ECR registry. When the string is decoded, it's presented in the format user:password for public registry authentication using docker login.
     */
   var authorizationToken: js.UndefOr[Base64] = js.undefined
   

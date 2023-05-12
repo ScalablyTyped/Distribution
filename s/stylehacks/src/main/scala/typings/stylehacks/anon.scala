@@ -4,11 +4,18 @@ import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import typings.postcss.mod.Result
 import typings.std.Set
+import typings.stylehacks.typesPluginsTrailingSlashCommaMod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
+  
+  @js.native
+  trait `0`
+    extends StObject
+       with Instantiable0[^]
+       with Instantiable1[/* result */ Result, ^]
   
   trait Browsers extends StObject {
     
@@ -65,11 +72,6 @@ object anon {
   @js.native
   trait Instantiable
     extends StObject
-       with Instantiable0[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify trailingSlashComma */ Any
-        ]
-       with Instantiable1[
-          /* result */ Result, 
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify trailingSlashComma */ Any
-        ]
+       with Instantiable0[typings.stylehacks.typesPluginsImportantMod.^]
+       with Instantiable1[/* result */ Result, typings.stylehacks.typesPluginsImportantMod.^]
 }

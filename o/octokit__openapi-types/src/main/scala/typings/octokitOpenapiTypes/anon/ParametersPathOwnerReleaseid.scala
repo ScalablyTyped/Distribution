@@ -8,11 +8,11 @@ trait ParametersPathOwnerReleaseid extends StObject {
   
   var parameters: PathOwnerReleaseid
   
-  var responses: `200553404Content48`
+  var responses: `200621404Content36`
 }
 object ParametersPathOwnerReleaseid {
   
-  inline def apply(parameters: PathOwnerReleaseid, responses: `200553404Content48`): ParametersPathOwnerReleaseid = {
+  inline def apply(parameters: PathOwnerReleaseid, responses: `200621404Content36`): ParametersPathOwnerReleaseid = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersPathOwnerReleaseid]
   }
@@ -22,6 +22,6 @@ object ParametersPathOwnerReleaseid {
     
     inline def setParameters(value: PathOwnerReleaseid): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `200553404Content48`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `200621404Content36`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

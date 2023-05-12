@@ -8,10 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("aframe", "THREE.CapsuleGeometry")
 @js.native
 /**
-  * @param [radius=1] — Radius of the capsule.
-  * @param [length=1] — Length of the middle section.
-  * @param [capSegments=4] — Number of curve segments used to build the caps.
-  * @param [radialSegments=8] — Number of segmented faces around the circumference of the capsule.
+  * Create a new instance of {@link CapsuleGeometry}
+  * @param radius Radius of the capsule. Expects a `Float`. Default `1`
+  * @param length Length of the middle section. Expects a `Float`. Default `1`
+  * @param capSubdivisions Number of curve segments used to build the caps. Expects a `Integer`. Default `4`
+  * @param radialSegments Number of segmented faces around the circumference of the capsule. Expects a `Integer`. Default `8`
   */
 open class CapsuleGeometry ()
   extends typings.three.mod.CapsuleGeometry

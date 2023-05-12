@@ -227,12 +227,12 @@ trait MapTileService
 object MapTileService {
   
   /**
-    * @property maps {Object<string, Object>} -
-    * @property schemes {Object<string, Object>} -
-    * @property tiletypes {Object<string, Object>} -
-    * @property formats {Object<string, Object>} -
-    * @property resolutions {Object<string, Object>} -
-    * @property languages {Object<string, Object>} -
+    * maps {Object<string, Object>} -
+    * schemes {Object<string, Object>} -
+    * tiletypes {Object<string, Object>} -
+    * formats {Object<string, Object>} -
+    * resolutions {Object<string, Object>} -
+    * languages {Object<string, Object>} -
     */
   trait Info extends StObject {
     
@@ -280,10 +280,10 @@ object MapTileService {
   }
   
   /**
-    * @property type {string=} - the type of the map tile service to communicate with, e.g. 'base' (default), 'aerial', etc. (refer to the Map Tile REST API documentation for available types)
-    * @property version {string=} - the map version hash to use for retrieving tiles, default is newest and will be automatically updated
-    * @property subDomain {string=} - the sub-domain of the map tile service relative to the platform's base URL, default is 'maps'
-    * @property path {string=} - the path of the map tile service, default is 'maptile/2.1'
+    * type {string=} - the type of the map tile service to communicate with, e.g. 'base' (default), 'aerial', etc. (refer to the Map Tile REST API documentation for available types)
+    * version {string=} - the map version hash to use for retrieving tiles, default is newest and will be automatically updated
+    * subDomain {string=} - the sub-domain of the map tile service relative to the platform's base URL, default is 'maps'
+    * path {string=} - the path of the map tile service, default is 'maptile/2.1'
     */
   trait Options extends StObject {
     

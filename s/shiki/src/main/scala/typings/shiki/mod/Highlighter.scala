@@ -9,24 +9,40 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Highlighter extends StObject {
   
   /**
+    * Convert ansi-escaped text to HTML tokens.
+    * `theme` must have been loaded.
+    */
+  def ansiToHtml(ansi: String): String = js.native
+  def ansiToHtml(ansi: String, options: AnsiToHtmlOptions): String = js.native
+  
+  /**
+    * Convert ansi-escaped text to themed tokens for custom processing.
+    * `theme` must have been loaded.
+    * You may customize the bundled HTML / SVG renderer or write your own
+    * renderer for another render target.
+    */
+  def ansiToThemedTokens(ansi: String): js.Array[js.Array[IThemedToken]] = js.native
+  def ansiToThemedTokens(ansi: String, theme: StringLiteralUnion[Theme, String]): js.Array[js.Array[IThemedToken]] = js.native
+  
+  /**
     * Convert code to HTML tokens.
     * `lang` and `theme` must have been loaded.
     * @deprecated Please use the `codeToHtml(code, options?)` overload instead.
     */
   def codeToHtml(code: String): String = js.native
-  def codeToHtml(code: String, lang: Unit, theme: Unit, options: HtmlOptions): String = js.native
+  def codeToHtml(code: String, lang: Unit, theme: Unit, options: CodeToHtmlOptions): String = js.native
   def codeToHtml(code: String, lang: Unit, theme: StringLiteralUnion[Theme, String]): String = js.native
-  def codeToHtml(code: String, lang: Unit, theme: StringLiteralUnion[Theme, String], options: HtmlOptions): String = js.native
+  def codeToHtml(code: String, lang: Unit, theme: StringLiteralUnion[Theme, String], options: CodeToHtmlOptions): String = js.native
   def codeToHtml(code: String, lang: StringLiteralUnion[Lang, String]): String = js.native
-  def codeToHtml(code: String, lang: StringLiteralUnion[Lang, String], theme: Unit, options: HtmlOptions): String = js.native
+  def codeToHtml(code: String, lang: StringLiteralUnion[Lang, String], theme: Unit, options: CodeToHtmlOptions): String = js.native
   def codeToHtml(code: String, lang: StringLiteralUnion[Lang, String], theme: StringLiteralUnion[Theme, String]): String = js.native
   def codeToHtml(
     code: String,
     lang: StringLiteralUnion[Lang, String],
     theme: StringLiteralUnion[Theme, String],
-    options: HtmlOptions
+    options: CodeToHtmlOptions
   ): String = js.native
-  def codeToHtml(code: String, options: HtmlOptions): String = js.native
+  def codeToHtml(code: String, options: CodeToHtmlOptions): String = js.native
   
   /**
     * Convert code to themed tokens for custom processing.

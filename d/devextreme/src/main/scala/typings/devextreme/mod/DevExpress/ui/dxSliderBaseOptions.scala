@@ -1,6 +1,7 @@
 package typings.devextreme.mod.DevExpress.ui
 
 import typings.devextreme.anon.ShowMode
+import typings.devextreme.mod.DevExpress.ui.dxSlider.ValueChangeMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,6 +39,11 @@ trait dxSliderBaseOptions[TComponent]
     * Configures a tooltip.
     */
   var tooltip: js.UndefOr[ShowMode] = js.undefined
+  
+  /**
+    * 
+    */
+  var valueChangeMode: js.UndefOr[ValueChangeMode] = js.undefined
 }
 object dxSliderBaseOptions {
   
@@ -72,5 +78,9 @@ object dxSliderBaseOptions {
     inline def setTooltip(value: ShowMode): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
     
     inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
+    
+    inline def setValueChangeMode(value: ValueChangeMode): Self = StObject.set(x, "valueChangeMode", value.asInstanceOf[js.Any])
+    
+    inline def setValueChangeModeUndefined: Self = StObject.set(x, "valueChangeMode", js.undefined)
   }
 }

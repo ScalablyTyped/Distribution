@@ -10,6 +10,7 @@ import typings.hyperformula.typingsConfigMod.Config
 import typings.hyperformula.typingsContentChangesMod.ContentChanges
 import typings.hyperformula.typingsDependencyGraphAddressMappingAddressMappingMod.AddressMapping
 import typings.hyperformula.typingsDependencyGraphArrayMappingMod.ArrayMapping
+import typings.hyperformula.typingsDependencyGraphGraphMod.DependencyQuery
 import typings.hyperformula.typingsDependencyGraphGraphMod.Graph
 import typings.hyperformula.typingsDependencyGraphGraphMod.TopSortResult
 import typings.hyperformula.typingsDependencyGraphMod.ArrayVertex
@@ -89,7 +90,9 @@ object typingsDependencyGraphDependencyGraphMod {
     
     def dependencyQueryAddresses(vertex: Vertex): js.Array[SimpleCellAddress_ | SimpleCellRange_] = js.native
     
-    def dependencyQueryVertices(vertex: Vertex): js.Array[Vertex] = js.native
+    def dependencyQueryVertices(vertex: Vertex): js.Array[js.Tuple2[SimpleCellAddress_ | SimpleCellRange_, Vertex]] = js.native
+    @JSName("dependencyQueryVertices")
+    var dependencyQueryVertices_Original: DependencyQuery[Vertex] = js.native
     
     def ensureNoArrayInRange(range: AbsoluteCellRange): Unit = js.native
     

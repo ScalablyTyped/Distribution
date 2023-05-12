@@ -89,17 +89,17 @@ object Data {
       */
     def has(key: String): Boolean = js.native
     
+    def inc[T /* <: Any */](key: T): this.type = js.native
+    def inc[T /* <: Any */](key: T, data: Double): this.type = js.native
     /**
       * Increase a value for the given key. If the key doesn't already exist in the Data Manager then it is increased from 0.
       * 
       * When the value is first set, a `setdata` event is emitted.
       * @param key The key to increase the value for.
-      * @param data The value to increase for the given key.
+      * @param data The amount to increase the given key by. Pass a negative value to decrease the key. Default 1.
       */
-    def inc(key: String): DataManager = js.native
-    def inc(key: String, data: Any): DataManager = js.native
-    def inc(key: js.Object): DataManager = js.native
-    def inc(key: js.Object, data: Any): DataManager = js.native
+    def inc[T /* <: Any */](key: String): this.type = js.native
+    def inc[T /* <: Any */](key: String, data: Double): this.type = js.native
     
     /**
       * The data list.
@@ -155,6 +155,8 @@ object Data {
       */
     def reset(): this.type = js.native
     
+    def set[T /* <: Any */](key: T): this.type = js.native
+    def set[T /* <: Any */](key: T, data: Any): this.type = js.native
     /**
       * Sets a value for the given key. If the key doesn't already exist in the Data Manager then it is created.
       * 
@@ -188,11 +190,11 @@ object Data {
       * 
       * Please note that the data keys are case-sensitive and must be valid JavaScript Object property strings.
       * This means the keys `gold` and `Gold` are treated as two unique values within the Data Manager.
-      * @param key The key to set the value for. Or an object or key value pairs. If an object the `data` argument is ignored.
+      * @param key The key to set the value for. Or an object of key value pairs. If an object the `data` argument is ignored.
       * @param data The value to set for the given key. If an object is provided as the key this argument is ignored.
       */
-    def set(key: String, data: Any): this.type = js.native
-    def set(key: js.Object, data: Any): this.type = js.native
+    def set[T /* <: Any */](key: String): this.type = js.native
+    def set[T /* <: Any */](key: String, data: Any): this.type = js.native
     
     /**
       * Freeze or unfreeze this Data Manager. A frozen Data Manager will block all attempts
@@ -201,14 +203,14 @@ object Data {
       */
     def setFreeze(value: Boolean): this.type = js.native
     
+    def toggle[T /* <: Any */](key: T): this.type = js.native
     /**
       * Toggle a boolean value for the given key. If the key doesn't already exist in the Data Manager then it is toggled from false.
       * 
       * When the value is first set, a `setdata` event is emitted.
       * @param key The key to toggle the value for.
       */
-    def toggle(key: String): DataManager = js.native
-    def toggle(key: js.Object): DataManager = js.native
+    def toggle[T /* <: Any */](key: String): this.type = js.native
     
     /**
       * The public values list. You can use this to access anything you have stored

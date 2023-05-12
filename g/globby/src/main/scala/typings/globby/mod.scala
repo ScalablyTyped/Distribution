@@ -6,7 +6,7 @@ import typings.fastGlob.outTypesMod.Pattern
 import typings.globby.anon.Extensions
 import typings.globby.anon.OptionsobjectModetrue
 import typings.node.NodeJS.ReadableStream
-import typings.node.nodeColonurlMod.URL
+import typings.std.URL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

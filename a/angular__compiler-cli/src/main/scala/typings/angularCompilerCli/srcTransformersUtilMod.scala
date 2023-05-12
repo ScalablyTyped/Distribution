@@ -11,10 +11,6 @@ object srcTransformersUtilMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("@angular/compiler-cli/src/transformers/util", "GENERATED_FILES")
-  @js.native
-  val GENERATED_FILES: js.RegExp = js.native
-  
   inline def createMessageDiagnostic(messageText: String): Diagnostic = ^.asInstanceOf[js.Dynamic].applyDynamic("createMessageDiagnostic")(messageText.asInstanceOf[js.Any]).asInstanceOf[Diagnostic]
   
   inline def error(msg: String): scala.Nothing = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(msg.asInstanceOf[js.Any]).asInstanceOf[scala.Nothing]

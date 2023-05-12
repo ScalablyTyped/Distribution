@@ -167,6 +167,12 @@ object sqlQueryIdentifierStrings {
   inline def DROP_VIEW: DROP_VIEW = "DROP_VIEW".asInstanceOf[DROP_VIEW]
   
   @js.native
+  sealed trait INFORMATION
+    extends StObject
+       with ExecutionType
+  inline def INFORMATION: INFORMATION = "INFORMATION".asInstanceOf[INFORMATION]
+  
+  @js.native
   sealed trait INSERT
     extends StObject
        with StatementType
@@ -193,6 +199,204 @@ object sqlQueryIdentifierStrings {
     extends StObject
        with StatementType
   inline def SELECT: SELECT = "SELECT".asInstanceOf[SELECT]
+  
+  @js.native
+  sealed trait SHOW_BINARY
+    extends StObject
+       with StatementType
+  inline def SHOW_BINARY: SHOW_BINARY = "SHOW_BINARY".asInstanceOf[SHOW_BINARY]
+  
+  @js.native
+  sealed trait SHOW_BINLOG
+    extends StObject
+       with StatementType
+  inline def SHOW_BINLOG: SHOW_BINLOG = "SHOW_BINLOG".asInstanceOf[SHOW_BINLOG]
+  
+  @js.native
+  sealed trait SHOW_CHARACTER
+    extends StObject
+       with StatementType
+  inline def SHOW_CHARACTER: SHOW_CHARACTER = "SHOW_CHARACTER".asInstanceOf[SHOW_CHARACTER]
+  
+  @js.native
+  sealed trait SHOW_COLLATION
+    extends StObject
+       with StatementType
+  inline def SHOW_COLLATION: SHOW_COLLATION = "SHOW_COLLATION".asInstanceOf[SHOW_COLLATION]
+  
+  @js.native
+  sealed trait SHOW_COLUMNS
+    extends StObject
+       with StatementType
+  inline def SHOW_COLUMNS: SHOW_COLUMNS = "SHOW_COLUMNS".asInstanceOf[SHOW_COLUMNS]
+  
+  @js.native
+  sealed trait SHOW_CREATE
+    extends StObject
+       with StatementType
+  inline def SHOW_CREATE: SHOW_CREATE = "SHOW_CREATE".asInstanceOf[SHOW_CREATE]
+  
+  @js.native
+  sealed trait SHOW_DATABASES
+    extends StObject
+       with StatementType
+  inline def SHOW_DATABASES: SHOW_DATABASES = "SHOW_DATABASES".asInstanceOf[SHOW_DATABASES]
+  
+  @js.native
+  sealed trait SHOW_ENGINE
+    extends StObject
+       with StatementType
+  inline def SHOW_ENGINE: SHOW_ENGINE = "SHOW_ENGINE".asInstanceOf[SHOW_ENGINE]
+  
+  @js.native
+  sealed trait SHOW_ENGINES
+    extends StObject
+       with StatementType
+  inline def SHOW_ENGINES: SHOW_ENGINES = "SHOW_ENGINES".asInstanceOf[SHOW_ENGINES]
+  
+  @js.native
+  sealed trait SHOW_ERRORS
+    extends StObject
+       with StatementType
+  inline def SHOW_ERRORS: SHOW_ERRORS = "SHOW_ERRORS".asInstanceOf[SHOW_ERRORS]
+  
+  @js.native
+  sealed trait SHOW_EVENTS
+    extends StObject
+       with StatementType
+  inline def SHOW_EVENTS: SHOW_EVENTS = "SHOW_EVENTS".asInstanceOf[SHOW_EVENTS]
+  
+  @js.native
+  sealed trait SHOW_FUNCTION
+    extends StObject
+       with StatementType
+  inline def SHOW_FUNCTION: SHOW_FUNCTION = "SHOW_FUNCTION".asInstanceOf[SHOW_FUNCTION]
+  
+  @js.native
+  sealed trait SHOW_GRANTS
+    extends StObject
+       with StatementType
+  inline def SHOW_GRANTS: SHOW_GRANTS = "SHOW_GRANTS".asInstanceOf[SHOW_GRANTS]
+  
+  @js.native
+  sealed trait SHOW_INDEX
+    extends StObject
+       with StatementType
+  inline def SHOW_INDEX: SHOW_INDEX = "SHOW_INDEX".asInstanceOf[SHOW_INDEX]
+  
+  @js.native
+  sealed trait SHOW_KEYS
+    extends StObject
+       with StatementType
+  inline def SHOW_KEYS: SHOW_KEYS = "SHOW_KEYS".asInstanceOf[SHOW_KEYS]
+  
+  @js.native
+  sealed trait SHOW_MASTER
+    extends StObject
+       with StatementType
+  inline def SHOW_MASTER: SHOW_MASTER = "SHOW_MASTER".asInstanceOf[SHOW_MASTER]
+  
+  @js.native
+  sealed trait SHOW_OPEN
+    extends StObject
+       with StatementType
+  inline def SHOW_OPEN: SHOW_OPEN = "SHOW_OPEN".asInstanceOf[SHOW_OPEN]
+  
+  @js.native
+  sealed trait SHOW_PLUGINS
+    extends StObject
+       with StatementType
+  inline def SHOW_PLUGINS: SHOW_PLUGINS = "SHOW_PLUGINS".asInstanceOf[SHOW_PLUGINS]
+  
+  @js.native
+  sealed trait SHOW_PRIVILEGES
+    extends StObject
+       with StatementType
+  inline def SHOW_PRIVILEGES: SHOW_PRIVILEGES = "SHOW_PRIVILEGES".asInstanceOf[SHOW_PRIVILEGES]
+  
+  @js.native
+  sealed trait SHOW_PROCEDURE
+    extends StObject
+       with StatementType
+  inline def SHOW_PROCEDURE: SHOW_PROCEDURE = "SHOW_PROCEDURE".asInstanceOf[SHOW_PROCEDURE]
+  
+  @js.native
+  sealed trait SHOW_PROCESSLIST
+    extends StObject
+       with StatementType
+  inline def SHOW_PROCESSLIST: SHOW_PROCESSLIST = "SHOW_PROCESSLIST".asInstanceOf[SHOW_PROCESSLIST]
+  
+  @js.native
+  sealed trait SHOW_PROFILE
+    extends StObject
+       with StatementType
+  inline def SHOW_PROFILE: SHOW_PROFILE = "SHOW_PROFILE".asInstanceOf[SHOW_PROFILE]
+  
+  @js.native
+  sealed trait SHOW_PROFILES
+    extends StObject
+       with StatementType
+  inline def SHOW_PROFILES: SHOW_PROFILES = "SHOW_PROFILES".asInstanceOf[SHOW_PROFILES]
+  
+  @js.native
+  sealed trait SHOW_RELAYLOG
+    extends StObject
+       with StatementType
+  inline def SHOW_RELAYLOG: SHOW_RELAYLOG = "SHOW_RELAYLOG".asInstanceOf[SHOW_RELAYLOG]
+  
+  @js.native
+  sealed trait SHOW_REPLICA
+    extends StObject
+       with StatementType
+  inline def SHOW_REPLICA: SHOW_REPLICA = "SHOW_REPLICA".asInstanceOf[SHOW_REPLICA]
+  
+  @js.native
+  sealed trait SHOW_REPLICAS
+    extends StObject
+       with StatementType
+  inline def SHOW_REPLICAS: SHOW_REPLICAS = "SHOW_REPLICAS".asInstanceOf[SHOW_REPLICAS]
+  
+  @js.native
+  sealed trait SHOW_SLAVE
+    extends StObject
+       with StatementType
+  inline def SHOW_SLAVE: SHOW_SLAVE = "SHOW_SLAVE".asInstanceOf[SHOW_SLAVE]
+  
+  @js.native
+  sealed trait SHOW_STATUS
+    extends StObject
+       with StatementType
+  inline def SHOW_STATUS: SHOW_STATUS = "SHOW_STATUS".asInstanceOf[SHOW_STATUS]
+  
+  @js.native
+  sealed trait SHOW_TABLE
+    extends StObject
+       with StatementType
+  inline def SHOW_TABLE: SHOW_TABLE = "SHOW_TABLE".asInstanceOf[SHOW_TABLE]
+  
+  @js.native
+  sealed trait SHOW_TABLES
+    extends StObject
+       with StatementType
+  inline def SHOW_TABLES: SHOW_TABLES = "SHOW_TABLES".asInstanceOf[SHOW_TABLES]
+  
+  @js.native
+  sealed trait SHOW_TRIGGERS
+    extends StObject
+       with StatementType
+  inline def SHOW_TRIGGERS: SHOW_TRIGGERS = "SHOW_TRIGGERS".asInstanceOf[SHOW_TRIGGERS]
+  
+  @js.native
+  sealed trait SHOW_VARIABLES
+    extends StObject
+       with StatementType
+  inline def SHOW_VARIABLES: SHOW_VARIABLES = "SHOW_VARIABLES".asInstanceOf[SHOW_VARIABLES]
+  
+  @js.native
+  sealed trait SHOW_WARNINGS
+    extends StObject
+       with StatementType
+  inline def SHOW_WARNINGS: SHOW_WARNINGS = "SHOW_WARNINGS".asInstanceOf[SHOW_WARNINGS]
   
   @js.native
   sealed trait TRUNCATE

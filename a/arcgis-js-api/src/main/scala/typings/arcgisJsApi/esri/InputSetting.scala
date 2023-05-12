@@ -18,7 +18,7 @@ trait InputSetting extends StObject {
   /**
     * The label that replaces either the default "Starting points" or "Barriers" headings depending on what flag type is passed.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-UtilityNetworkTrace.html#InputSetting)
+    * [Read more...](global.html)
     */
   var label: String
   

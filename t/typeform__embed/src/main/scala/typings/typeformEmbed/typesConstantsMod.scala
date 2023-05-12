@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object typesConstantsMod {
   
-  @JSImport("@typeform/embed/types/constants", "FORM_BASE_URL")
+  @JSImport("@typeform/embed/types/constants", "DEFAULT_DOMAIN")
   @js.native
-  val FORM_BASE_URL: /* "https://form.typeform.com" */ String = js.native
+  val DEFAULT_DOMAIN: /* "form.typeform.com" */ String = js.native
   
   @JSImport("@typeform/embed/types/constants", "POPOVER_ATTRIBUTE")
   @js.native

@@ -7,25 +7,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ScrollSpyOptions extends StObject {
   
   /**
-    * Class applied to active elements
+    * Class applied to active elements.
     * @default 'active'
     */
   var activeClass: String
   
   /**
-    * Used to find active element
+    * Used to find active element.
     * @default id => 'a[href="#' + id + '"]'
     */
   def getActiveElement(id: String): String
   
   /**
-    * Offset for centering element when scrolled to
+    * Offset for centering element when scrolled to.
     * @default 200
     */
   var scrollOffset: Double
   
   /**
-    * Throttle of scroll handler
+    * Throttle of scroll handler.
     * @default 100
     */
   var throttle: Double

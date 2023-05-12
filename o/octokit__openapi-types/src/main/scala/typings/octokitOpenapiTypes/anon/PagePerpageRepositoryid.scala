@@ -6,13 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PagePerpageRepositoryid extends StObject {
   
-  /** Page number of the results to fetch. */
   var page: js.UndefOr[Double] = js.undefined
   
-  /** The number of results per page (max 100). */
   var per_page: js.UndefOr[Double] = js.undefined
   
-  /** ID of the Repository to filter on */
   var repository_id: js.UndefOr[Double] = js.undefined
 }
 object PagePerpageRepositoryid {

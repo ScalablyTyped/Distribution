@@ -1,5 +1,6 @@
 package typings.nodegit.mod
 
+import typings.nodegit.resetMod.Reset.TYPE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -67,13 +68,23 @@ object Reset {
   inline def reset(
     repo: typings.nodegit.repositoryMod.Repository,
     target: typings.nodegit.commitMod.Commit,
-    resetType: Double,
+    resetType: TYPE
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("reset")(repo.asInstanceOf[js.Any], target.asInstanceOf[js.Any], resetType.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def reset(
+    repo: typings.nodegit.repositoryMod.Repository,
+    target: typings.nodegit.commitMod.Commit,
+    resetType: TYPE,
     checkoutOpts: typings.nodegit.checkoutOptionsMod.CheckoutOptions
-  ): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("reset")(repo.asInstanceOf[js.Any], target.asInstanceOf[js.Any], resetType.asInstanceOf[js.Any], checkoutOpts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("reset")(repo.asInstanceOf[js.Any], target.asInstanceOf[js.Any], resetType.asInstanceOf[js.Any], checkoutOpts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   inline def reset(
     repo: typings.nodegit.repositoryMod.Repository,
     target: typings.nodegit.tagMod.Tag,
-    resetType: Double,
+    resetType: TYPE
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("reset")(repo.asInstanceOf[js.Any], target.asInstanceOf[js.Any], resetType.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def reset(
+    repo: typings.nodegit.repositoryMod.Repository,
+    target: typings.nodegit.tagMod.Tag,
+    resetType: TYPE,
     checkoutOpts: typings.nodegit.checkoutOptionsMod.CheckoutOptions
-  ): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("reset")(repo.asInstanceOf[js.Any], target.asInstanceOf[js.Any], resetType.asInstanceOf[js.Any], checkoutOpts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("reset")(repo.asInstanceOf[js.Any], target.asInstanceOf[js.Any], resetType.asInstanceOf[js.Any], checkoutOpts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 }

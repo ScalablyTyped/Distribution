@@ -6,7 +6,7 @@ import typings.nivoColors.distTypesScalesOrdinalColorScaleMod.OrdinalColorScaleC
 import typings.nivoCore.anon.Dictkey
 import typings.nivoCore.anon.Id
 import typings.nivoCore.mod.Box
-import typings.nivoCore.mod.ModernMotionProps
+import typings.nivoCore.mod.MotionProps
 import typings.nivoCore.mod.PropertyAccessor
 import typings.nivoCore.mod.Theme
 import typings.nivoCore.mod.ValueFormat
@@ -24,6 +24,8 @@ import typings.react.mod.FunctionComponent
 import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
+import typings.reactSpringCore.mod.SpringConfig
+import typings.reactSpringCore.mod.SpringValues
 import typings.std.CanvasRenderingContext2D
 import typings.std.Element
 import typings.std.Omit
@@ -521,7 +523,7 @@ object distTypesTypesMod {
   
   trait NodeProps[Datum /* <: js.Object */] extends StObject {
     
-    var animatedProps: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValues<NodeAnimatedProps> */ Any
+    var animatedProps: SpringValues[NodeAnimatedProps]
     
     var borderWidth: Double
     
@@ -536,7 +538,7 @@ object distTypesTypesMod {
   object NodeProps {
     
     inline def apply[Datum /* <: js.Object */](
-      animatedProps: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValues<NodeAnimatedProps> */ Any,
+      animatedProps: SpringValues[NodeAnimatedProps],
       borderWidth: Double,
       enableLabel: Boolean,
       enableParentLabel: Boolean,
@@ -550,9 +552,7 @@ object distTypesTypesMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: NodeProps[?], Datum /* <: js.Object */] (val x: Self & NodeProps[Datum]) extends AnyVal {
       
-      inline def setAnimatedProps(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValues<NodeAnimatedProps> */ Any
-      ): Self = StObject.set(x, "animatedProps", value.asInstanceOf[js.Any])
+      inline def setAnimatedProps(value: SpringValues[NodeAnimatedProps]): Self = StObject.set(x, "animatedProps", value.asInstanceOf[js.Any])
       
       inline def setBorderWidth(value: Double): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
       
@@ -639,9 +639,7 @@ object distTypesTypesMod {
     
     var margin: js.UndefOr[Box] = js.undefined
     
-    var motionConfig: js.UndefOr[
-        String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringConfig */ Any)
-      ] = js.undefined
+    var motionConfig: js.UndefOr[String | SpringConfig] = js.undefined
     
     var nodeOpacity: js.UndefOr[Double] = js.undefined
     
@@ -773,9 +771,7 @@ object distTypesTypesMod {
       
       inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
       
-      inline def setMotionConfig(
-        value: String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringConfig */ Any)
-      ): Self = StObject.set(x, "motionConfig", value.asInstanceOf[js.Any])
+      inline def setMotionConfig(value: String | SpringConfig): Self = StObject.set(x, "motionConfig", value.asInstanceOf[js.Any])
       
       inline def setMotionConfigUndefined: Self = StObject.set(x, "motionConfig", js.undefined)
       
@@ -839,7 +835,7 @@ object distTypesTypesMod {
   
   trait TreeMapCommonProps[Datum /* <: js.Object */]
     extends StObject
-       with ModernMotionProps {
+       with MotionProps {
     
     var ariaDescribedBy: js.UndefOr[String] = js.undefined
     
@@ -1141,9 +1137,7 @@ object distTypesTypesMod {
     
     var margin: js.UndefOr[Box] = js.undefined
     
-    var motionConfig: js.UndefOr[
-        String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringConfig */ Any)
-      ] = js.undefined
+    var motionConfig: js.UndefOr[String | SpringConfig] = js.undefined
     
     var nodeComponent: js.UndefOr[NodeComponent[Datum]] = js.undefined
     
@@ -1301,9 +1295,7 @@ object distTypesTypesMod {
       
       inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
       
-      inline def setMotionConfig(
-        value: String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringConfig */ Any)
-      ): Self = StObject.set(x, "motionConfig", value.asInstanceOf[js.Any])
+      inline def setMotionConfig(value: String | SpringConfig): Self = StObject.set(x, "motionConfig", value.asInstanceOf[js.Any])
       
       inline def setMotionConfigUndefined: Self = StObject.set(x, "motionConfig", js.undefined)
       
@@ -1454,9 +1446,7 @@ object distTypesTypesMod {
     
     var margin: js.UndefOr[Box] = js.undefined
     
-    var motionConfig: js.UndefOr[
-        String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringConfig */ Any)
-      ] = js.undefined
+    var motionConfig: js.UndefOr[String | SpringConfig] = js.undefined
     
     var nodeComponent: js.UndefOr[NodeComponent[Datum]] = js.undefined
     
@@ -1626,9 +1616,7 @@ object distTypesTypesMod {
       
       inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
       
-      inline def setMotionConfig(
-        value: String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringConfig */ Any)
-      ): Self = StObject.set(x, "motionConfig", value.asInstanceOf[js.Any])
+      inline def setMotionConfig(value: String | SpringConfig): Self = StObject.set(x, "motionConfig", value.asInstanceOf[js.Any])
       
       inline def setMotionConfigUndefined: Self = StObject.set(x, "motionConfig", js.undefined)
       

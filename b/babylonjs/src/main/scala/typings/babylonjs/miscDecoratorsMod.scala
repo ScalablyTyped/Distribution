@@ -51,6 +51,7 @@ object miscDecoratorsMod {
       * @returns the cloned object
       */
     inline def Clone[T](creationFunction: js.Function0[T], source: T): T = (^.asInstanceOf[js.Dynamic].applyDynamic("Clone")(creationFunction.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def Clone[T](creationFunction: js.Function0[T], source: T, options: CopySourceOptions): T = (^.asInstanceOf[js.Dynamic].applyDynamic("Clone")(creationFunction.asInstanceOf[js.Any], source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T]
     
     /**
       * Instanciates a new object based on a source one (some data will be shared between both object)
@@ -70,6 +71,15 @@ object miscDecoratorsMod {
       */
     inline def Parse[T](creationFunction: js.Function0[T], source: Any, scene: Nullable[Scene]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(creationFunction.asInstanceOf[js.Any], source.asInstanceOf[js.Any], scene.asInstanceOf[js.Any])).asInstanceOf[T]
     inline def Parse[T](creationFunction: js.Function0[T], source: Any, scene: Nullable[Scene], rootUrl: Nullable[String]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(creationFunction.asInstanceOf[js.Any], source.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[T]
+    
+    /**
+      * Given a source json and a destination object in a scene, this function will parse the source and will try to apply its content to the destination object
+      * @param source the source json data
+      * @param destination the destination object
+      * @param scene the scene where the object is
+      * @param rootUrl root url to use to load assets
+      */
+    inline def ParseProperties(source: Any, destination: Any, scene: Nullable[Scene], rootUrl: Nullable[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseProperties")(source.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Static function used to serialized a specific entity
@@ -188,4 +198,24 @@ object miscDecoratorsMod {
   
   inline def serializeAsVector3(): js.Function2[/* target */ Any, /* propertyKey */ String | js.Symbol, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeAsVector3")().asInstanceOf[js.Function2[/* target */ Any, /* propertyKey */ String | js.Symbol, Unit]]
   inline def serializeAsVector3(sourceName: String): js.Function2[/* target */ Any, /* propertyKey */ String | js.Symbol, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeAsVector3")(sourceName.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* target */ Any, /* propertyKey */ String | js.Symbol, Unit]]
+  
+  trait CopySourceOptions extends StObject {
+    
+    var cloneTexturesOnlyOnce: js.UndefOr[Boolean] = js.undefined
+  }
+  object CopySourceOptions {
+    
+    inline def apply(): CopySourceOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[CopySourceOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CopySourceOptions] (val x: Self) extends AnyVal {
+      
+      inline def setCloneTexturesOnlyOnce(value: Boolean): Self = StObject.set(x, "cloneTexturesOnlyOnce", value.asInstanceOf[js.Any])
+      
+      inline def setCloneTexturesOnlyOnceUndefined: Self = StObject.set(x, "cloneTexturesOnlyOnce", js.undefined)
+    }
+  }
 }

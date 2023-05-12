@@ -10,5 +10,7 @@ object distIndexeddbDottestMod {
   @js.native
   val ^ : js.Any = js.native
   
+  inline def testBlocked(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("testBlocked")().asInstanceOf[js.Promise[Unit]]
+  
   inline def testRetrieveElements(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("testRetrieveElements")().asInstanceOf[js.Promise[Unit]]
 }

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "global-dirs" : "3.0.0"
+      "global-dirs" : "3.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "global-dirs" : "3.0.0"
+      "global-dirs" : "3.0.1"
     }
   ],
   "compile-devDependencies" : [

@@ -2,16 +2,20 @@ package typings.ddTrace.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.ddTrace.anon.B3
+import typings.ddTrace.anon.BlockedTemplateHtml
 import typings.ddTrace.anon.Debug
 import typings.ddTrace.anon.Hostname
-import typings.ddTrace.anon.ObfuscatorKeyRegex
+import typings.ddTrace.anon.PollInterval
 import typings.ddTrace.anon.RateLimit
 import typings.ddTrace.ddTraceStrings.async_hooks
 import typings.ddTrace.ddTraceStrings.async_local_storage
 import typings.ddTrace.ddTraceStrings.async_resource
 import typings.ddTrace.ddTraceStrings.debug
+import typings.ddTrace.ddTraceStrings.disabled
 import typings.ddTrace.ddTraceStrings.error
+import typings.ddTrace.ddTraceStrings.full
 import typings.ddTrace.ddTraceStrings.noop
+import typings.ddTrace.ddTraceStrings.service
 import typings.ddTrace.ddTraceStrings.sync
 import typings.node.NodeJS.ErrnoException
 import typings.node.dnsMod.LookupOneOptions
@@ -25,7 +29,24 @@ trait TracerOptions extends StObject {
   /**
     * Configuration of the AppSec protection. Can be a boolean as an alias to `appsec.enabled`.
     */
-  var appsec: js.UndefOr[Boolean | ObfuscatorKeyRegex] = js.undefined
+  var appsec: js.UndefOr[Boolean | BlockedTemplateHtml] = js.undefined
+  
+  /**
+    * Whether to enable client IP collection from relevant IP headers
+    * @default false
+    */
+  var clientIpEnabled: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Custom header name to source the http.client_ip tag from.
+    */
+  var clientIpHeader: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Enables DBM to APM link using tag injection.
+    * @default 'disabled'
+    */
+  var dbmPropagationMode: js.UndefOr[disabled | service | full] = js.undefined
   
   /**
     * Options specific for the Dogstatsd agent.
@@ -119,6 +140,11 @@ trait TracerOptions extends StObject {
   var profiling: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * The selection and priority order of context propagation injection and extraction mechanisms.
+    */
+  var propagationStyle: js.UndefOr[js.Array[String] | PropagationStyle] = js.undefined
+  
+  /**
     * Protocol version to use for requests to the agent. The version configured must be supported by the agent version installed or all traces will be dropped.
     * @default 0.4
     */
@@ -130,6 +156,11 @@ trait TracerOptions extends StObject {
     * Defaults to deferring the decision to the agent.
     */
   var rateLimit: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * Configuration of ASM Remote Configuration
+    */
+  var remoteConfig: js.UndefOr[PollInterval] = js.undefined
   
   /**
     * Whether to report the hostname of the service host. This is used when the agent is deployed on a different host and cannot determine the hostname automatically.
@@ -171,6 +202,11 @@ trait TracerOptions extends StObject {
   var service: js.UndefOr[String] = js.undefined
   
   /**
+    * Provide service name mappings for each plugin.
+    */
+  var serviceMapping: js.UndefOr[StringDictionary[String]] = js.undefined
+  
+  /**
     * Span sampling rules that take effect when the enclosing trace is dropped, to ingest single spans
     * @default []
     */
@@ -209,9 +245,21 @@ object TracerOptions {
   @scala.inline
   implicit open class MutableBuilder[Self <: TracerOptions] (val x: Self) extends AnyVal {
     
-    inline def setAppsec(value: Boolean | ObfuscatorKeyRegex): Self = StObject.set(x, "appsec", value.asInstanceOf[js.Any])
+    inline def setAppsec(value: Boolean | BlockedTemplateHtml): Self = StObject.set(x, "appsec", value.asInstanceOf[js.Any])
     
     inline def setAppsecUndefined: Self = StObject.set(x, "appsec", js.undefined)
+    
+    inline def setClientIpEnabled(value: Boolean): Self = StObject.set(x, "clientIpEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setClientIpEnabledUndefined: Self = StObject.set(x, "clientIpEnabled", js.undefined)
+    
+    inline def setClientIpHeader(value: String): Self = StObject.set(x, "clientIpHeader", value.asInstanceOf[js.Any])
+    
+    inline def setClientIpHeaderUndefined: Self = StObject.set(x, "clientIpHeader", js.undefined)
+    
+    inline def setDbmPropagationMode(value: disabled | service | full): Self = StObject.set(x, "dbmPropagationMode", value.asInstanceOf[js.Any])
+    
+    inline def setDbmPropagationModeUndefined: Self = StObject.set(x, "dbmPropagationMode", js.undefined)
     
     inline def setDogstatsd(value: Hostname): Self = StObject.set(x, "dogstatsd", value.asInstanceOf[js.Any])
     
@@ -275,6 +323,12 @@ object TracerOptions {
     
     inline def setProfilingUndefined: Self = StObject.set(x, "profiling", js.undefined)
     
+    inline def setPropagationStyle(value: js.Array[String] | PropagationStyle): Self = StObject.set(x, "propagationStyle", value.asInstanceOf[js.Any])
+    
+    inline def setPropagationStyleUndefined: Self = StObject.set(x, "propagationStyle", js.undefined)
+    
+    inline def setPropagationStyleVarargs(value: String*): Self = StObject.set(x, "propagationStyle", js.Array(value*))
+    
     inline def setProtocolVersion(value: String): Self = StObject.set(x, "protocolVersion", value.asInstanceOf[js.Any])
     
     inline def setProtocolVersionUndefined: Self = StObject.set(x, "protocolVersion", js.undefined)
@@ -282,6 +336,10 @@ object TracerOptions {
     inline def setRateLimit(value: Double): Self = StObject.set(x, "rateLimit", value.asInstanceOf[js.Any])
     
     inline def setRateLimitUndefined: Self = StObject.set(x, "rateLimit", js.undefined)
+    
+    inline def setRemoteConfig(value: PollInterval): Self = StObject.set(x, "remoteConfig", value.asInstanceOf[js.Any])
+    
+    inline def setRemoteConfigUndefined: Self = StObject.set(x, "remoteConfig", js.undefined)
     
     inline def setReportHostname(value: Boolean): Self = StObject.set(x, "reportHostname", value.asInstanceOf[js.Any])
     
@@ -306,6 +364,10 @@ object TracerOptions {
     inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
     inline def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
+    
+    inline def setServiceMapping(value: StringDictionary[String]): Self = StObject.set(x, "serviceMapping", value.asInstanceOf[js.Any])
+    
+    inline def setServiceMappingUndefined: Self = StObject.set(x, "serviceMapping", js.undefined)
     
     inline def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
     

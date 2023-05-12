@@ -23,7 +23,7 @@ trait VariablesArguments extends StObject {
   /** The index of the first variable to return; if omitted children start at 0. */
   var start: js.UndefOr[Double] = js.undefined
   
-  /** The Variable reference. */
+  /** The variable for which to retrieve its children. The `variablesReference` must have been obtained in the current suspended state. See 'Lifetime of Object References' in the Overview section for details. */
   var variablesReference: Double
 }
 object VariablesArguments {

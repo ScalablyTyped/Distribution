@@ -1,7 +1,7 @@
 
 # Scala.js typings for chevrotain
 
-Typings are for version 10.3.0
+Typings are for version 10.5.0
 
 ## Library description:
 Chevrotain is a high performance fault tolerant javascript parsing DSL for building recursive decent parsers

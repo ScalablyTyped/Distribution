@@ -1,5 +1,6 @@
 package typings.std
 
+import typings.std.stdInts.`0x85B5`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OESVertexArrayObject extends StObject {
   
   /* standard dom */
-  val VERTEX_ARRAY_BINDING_OES: GLenum = js.native
+  val VERTEX_ARRAY_BINDING_OES: `0x85B5` = js.native
   
   /* standard dom */
   def bindVertexArrayOES(): Unit = js.native

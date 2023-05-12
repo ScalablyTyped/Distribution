@@ -34,7 +34,11 @@ object buildSrcAuthAuthclientMod {
     
     var credentials: Credentials = js.native
     
-    /* protected */ var quotaProjectId: js.UndefOr[String] = js.native
+    /**
+      * The quota project ID. The quota project can be used by client libraries for the billing purpose.
+      * See {@link https://cloud.google.com/docs/quota| Working with quotas}
+      */
+    var quotaProjectId: js.UndefOr[String] = js.native
     
     var transporter: DefaultTransporter = js.native
   }

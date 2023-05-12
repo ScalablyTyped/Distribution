@@ -1,7 +1,7 @@
 
 # Scala.js typings for datastore-fs
 
-Typings are for version 8.0.0
+Typings are for version 9.1.1
 
 ## Library description:
 Datastore implementation with file system backend

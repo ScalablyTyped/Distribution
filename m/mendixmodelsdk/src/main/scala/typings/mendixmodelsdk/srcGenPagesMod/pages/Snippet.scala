@@ -23,7 +23,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.mendixmodelsdk.srcGenProjectsMod.projects.IModuleDocument because Already inherited
 - typings.mendixmodelsdk.srcGenProjectsMod.projects.IDocument because Already inherited
 - typings.mendixmodelsdk.srcGenPagesMod.pages.IFormBase because Already inherited
-- typings.mendixmodelsdk.srcGenPagesMod.pages.ISnippet because var conflicts: containerAsFolderBase, id, isLoaded, model, structureTypeName, unit. Inlined entity, entityQualifiedName, `type` */ @JSImport("mendixmodelsdk/src/gen/pages", "pages.Snippet")
+- typings.mendixmodelsdk.srcGenPagesMod.pages.ISnippet because var conflicts: containerAsFolderBase, id, isLoaded, model, structureTypeName, unit. Inlined entity, entityQualifiedName, `type`, parameters */ @JSImport("mendixmodelsdk/src/gen/pages", "pages.Snippet")
 @js.native
 open class Snippet protected () extends FormBase {
   def this(
@@ -37,6 +37,9 @@ open class Snippet protected () extends FormBase {
   @JSName("containerAsFolderBase")
   def containerAsFolderBase_MSnippet: FolderBase = js.native
   
+  /**
+    * In version 9.21.0: deleted
+    */
   def entity: IEntity | Null = js.native
   
   def entityQualifiedName: String | Null = js.native
@@ -44,8 +47,21 @@ open class Snippet protected () extends FormBase {
   val entityQualifiedName_FSnippet: String | Null = js.native
   
   def entity_=(newValue: IEntity | Null): Unit = js.native
+  /**
+    * In version 9.21.0: deleted
+    */
   @JSName("entity")
   val entity_FSnippet: IEntity | Null = js.native
+  
+  /**
+    * In version 9.21.0: introduced
+    */
+  def parameters: IList[SnippetParameter] = js.native
+  /**
+    * In version 9.21.0: introduced
+    */
+  @JSName("parameters")
+  val parameters_FSnippet: IList[ISnippetParameter] = js.native
   
   /**
     * In version 8.4.0: added public

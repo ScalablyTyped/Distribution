@@ -29,6 +29,7 @@ object distSrcTracerMod {
       * Someone delivered a message, stop tracking promises for it
       */
     def deliverMessage(msgIdStr: MsgIdStr): Unit = js.native
+    def deliverMessage(msgIdStr: MsgIdStr, isDuplicate: Boolean): Unit = js.native
     
     /**
       * Returns the number of broken promises for each peer who didn't follow up on an IWANT request.

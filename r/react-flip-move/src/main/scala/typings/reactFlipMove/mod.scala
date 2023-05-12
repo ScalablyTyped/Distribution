@@ -3,6 +3,7 @@ package typings.reactFlipMove
 import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.Component
 import typings.react.mod.ReactElement
+import typings.react.mod.ReactNode
 import typings.reactFlipMove.anon.PartialCSSStyleDeclaratio
 import typings.reactFlipMove.mod.FlipMove.FlipMoveProps
 import typings.std.ClientRect
@@ -80,6 +81,11 @@ object mod {
         * only fires on the initial children.
         */
       var appearAnimation: js.UndefOr[AnimationProp] = js.undefined
+      
+      /**
+        * The children to animate. Each child must have a unique key to work correctly.
+        */
+      var children: js.UndefOr[ReactNode] = js.undefined
       
       var className: js.UndefOr[String] = js.undefined
       
@@ -306,6 +312,10 @@ object mod {
         inline def setAppearAnimation(value: AnimationProp): Self = StObject.set(x, "appearAnimation", value.asInstanceOf[js.Any])
         
         inline def setAppearAnimationUndefined: Self = StObject.set(x, "appearAnimation", js.undefined)
+        
+        inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+        
+        inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
         
         inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
         

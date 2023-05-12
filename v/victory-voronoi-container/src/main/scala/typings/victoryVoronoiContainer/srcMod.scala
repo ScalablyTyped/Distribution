@@ -20,7 +20,7 @@ object srcMod {
     def this(props: VictoryVoronoiContainerProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: VictoryVoronoiContainerProps, context: Any) = this()
   }

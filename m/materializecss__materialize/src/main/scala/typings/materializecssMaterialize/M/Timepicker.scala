@@ -14,18 +14,18 @@ trait Timepicker
      with Component[TimepickerOptions] {
   
   /**
-    * If the time is AM or PM on twelve-hour clock
+    * If the time is AM or PM on twelve-hour clock.
     * @default 'PM'
     */
   var amOrPm: AM | PM
   
   /**
-    * Close timepicker
+    * Close timepicker.
     */
   def close(): Unit
   
   /**
-    * Current view on the timepicker
+    * Current view on the timepicker.
     * @default 'hours'
     */
   var currentView: Views
@@ -36,12 +36,12 @@ trait Timepicker
   var isOpen: Boolean
   
   /**
-    * Open timepicker
+    * Open timepicker.
     */
   def open(): Unit
   
   /**
-    * Show hours or minutes view on timepicker
+    * Show hours or minutes view on timepicker.
     * @param view The name of the view you want to switch to, 'hours' or 'minutes'.
     */
   def showView(view: Views): Unit

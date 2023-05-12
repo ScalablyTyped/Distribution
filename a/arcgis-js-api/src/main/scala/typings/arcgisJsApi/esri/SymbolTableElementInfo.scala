@@ -12,7 +12,7 @@ trait SymbolTableElementInfo
   /**
     * The title of the renderer as displayed in the Legend.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#SymbolTableElementInfo)
+    * [Read more...](global.html)
     */
   var label: String | RampTitle
   

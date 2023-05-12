@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PostRequestBodyContentApplicationjsonArtifacturl extends StObject {
   
   /**
-    * Create a GitHub Pages deployment for a repository.
+    * Create a GitHub Pages deployment
+    * @description Create a GitHub Pages deployment for a repository.
     *
     * Users must have write permissions. GitHub Apps must have the `pages:write` permission to use this endpoint.
     */

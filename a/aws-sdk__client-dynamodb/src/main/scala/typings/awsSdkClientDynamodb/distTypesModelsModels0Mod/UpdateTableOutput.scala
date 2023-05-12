@@ -1,0 +1,28 @@
+package typings.awsSdkClientDynamodb.distTypesModelsModels0Mod
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait UpdateTableOutput extends StObject {
+  
+  /**
+    * <p>Represents the properties of the table.</p>
+    */
+  var TableDescription: js.UndefOr[typings.awsSdkClientDynamodb.distTypesModelsModels0Mod.TableDescription] = js.undefined
+}
+object UpdateTableOutput {
+  
+  inline def apply(): UpdateTableOutput = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[UpdateTableOutput]
+  }
+  
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateTableOutput] (val x: Self) extends AnyVal {
+    
+    inline def setTableDescription(value: TableDescription): Self = StObject.set(x, "TableDescription", value.asInstanceOf[js.Any])
+    
+    inline def setTableDescriptionUndefined: Self = StObject.set(x, "TableDescription", js.undefined)
+  }
+}

@@ -3,6 +3,9 @@ package typings.phaser.global.Phaser
 import typings.phaser.Phaser.GameObjects.GameObject
 import typings.phaser.Phaser.GameObjects.Graphics
 import typings.phaser.Phaser.Geom.Rectangle
+import typings.phaser.Phaser.Textures.DynamicTexture
+import typings.phaser.Phaser.Textures.Frame
+import typings.phaser.Phaser.Textures.Texture
 import typings.phaser.Phaser.Types.Display.ColorObject
 import typings.phaser.Phaser.Types.Display.HSVColorObject
 import typings.phaser.Phaser.Types.Display.InputColorObject
@@ -455,7 +458,7 @@ object Display {
       * The default uniforms for this shader.
       */
     /* CompleteClass */
-    var uniforms: Any = js.native
+    var uniforms: Any | Null = js.native
     
     /**
       * The source code, as a string, of the vertex shader being used.
@@ -487,7 +490,7 @@ object Display {
     /**
       * Returns the unrotated bounds of the Game Object as a rectangle.
       * @param gameObject The Game Object to get the bounds value from.
-      * @param output An object to store the values in.
+      * @param output An object to store the values in. If not provided a new Rectangle will be created.
       */
     inline def GetBounds(gameObject: GameObject): Rectangle | js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("GetBounds")(gameObject.asInstanceOf[js.Any]).asInstanceOf[Rectangle | js.Object]
     inline def GetBounds(gameObject: GameObject, output: js.Object): Rectangle | js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("GetBounds")(gameObject.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[Rectangle | js.Object]
@@ -609,7 +612,7 @@ object Display {
     
     /**
       * The CanvasPool is a global static object, that allows Phaser to recycle and pool 2D Context Canvas DOM elements.
-      * It does not pool WebGL Contexts, because once the context options are set they cannot be modified again, 
+      * It does not pool WebGL Contexts, because once the context options are set they cannot be modified again,
       * which is useless for some of the Phaser pipelines / renderer.
       * 
       * This singleton is instantiated as soon as Phaser loads, before a Phaser.Game instance has even been created.
@@ -743,8 +746,8 @@ object Display {
         * Returns null if no smoothing prefix is available.
         * @param context The context to check.
         */
-      inline def isEnabled(context: CanvasRenderingContext2D): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEnabled")(context.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-      inline def isEnabled(context: WebGLRenderingContext): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEnabled")(context.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+      inline def isEnabled(context: CanvasRenderingContext2D): Boolean | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("isEnabled")(context.asInstanceOf[js.Any]).asInstanceOf[Boolean | Null]
+      inline def isEnabled(context: WebGLRenderingContext): Boolean | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("isEnabled")(context.asInstanceOf[js.Any]).asInstanceOf[Boolean | Null]
     }
     
     /**
@@ -858,7 +861,7 @@ object Display {
     inline def HSLToColor(h: Double, s: Double, l: Double): typings.phaser.Phaser.Display.Color = (^.asInstanceOf[js.Dynamic].applyDynamic("HSLToColor")(h.asInstanceOf[js.Any], s.asInstanceOf[js.Any], l.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.Phaser.Display.Color]
     
     /**
-      * Get HSV color wheel values in an array which will be 360 elements in size.
+      * Generates an HSV color wheel which is an array of 360 Color objects, for each step of the wheel.
       * @param s The saturation, in the range 0 - 1. Default 1.
       * @param v The value, in the range 0 - 1. Default 1.
       */
@@ -1093,6 +1096,96 @@ object Display {
   open class ColorMatrix ()
     extends StObject
        with typings.phaser.Phaser.Display.ColorMatrix
+  object ColorMatrix {
+    
+    /**
+      * A constant array used by the ColorMatrix class for black_white operations.
+      */
+    /* static member */
+    @JSGlobal("Phaser.Display.ColorMatrix.BLACK_WHITE")
+    @js.native
+    val BLACK_WHITE: js.Array[Double] = js.native
+    
+    /**
+      * A constant array used by the ColorMatrix class for brown operations.
+      */
+    /* static member */
+    @JSGlobal("Phaser.Display.ColorMatrix.BROWN")
+    @js.native
+    val BROWN: js.Array[Double] = js.native
+    
+    /**
+      * A constant array used by the ColorMatrix class for desatured luminance operations.
+      */
+    /* static member */
+    @JSGlobal("Phaser.Display.ColorMatrix.DESATURATE_LUMINANCE")
+    @js.native
+    val DESATURATE_LUMINANCE: js.Array[Double] = js.native
+    
+    /**
+      * A constant array used by the ColorMatrix class for kodachrome operations.
+      */
+    /* static member */
+    @JSGlobal("Phaser.Display.ColorMatrix.KODACHROME")
+    @js.native
+    val KODACHROME: js.Array[Double] = js.native
+    
+    /**
+      * A constant array used by the ColorMatrix class for lsd operations.
+      */
+    /* static member */
+    @JSGlobal("Phaser.Display.ColorMatrix.LSD")
+    @js.native
+    val LSD: js.Array[Double] = js.native
+    
+    /**
+      * A constant array used by the ColorMatrix class for negative operations.
+      */
+    /* static member */
+    @JSGlobal("Phaser.Display.ColorMatrix.NEGATIVE")
+    @js.native
+    val NEGATIVE: js.Array[Double] = js.native
+    
+    /**
+      * A constant array used by the ColorMatrix class for polaroid shift operations.
+      */
+    /* static member */
+    @JSGlobal("Phaser.Display.ColorMatrix.POLAROID")
+    @js.native
+    val POLAROID: js.Array[Double] = js.native
+    
+    /**
+      * A constant array used by the ColorMatrix class for sepia operations.
+      */
+    /* static member */
+    @JSGlobal("Phaser.Display.ColorMatrix.SEPIA")
+    @js.native
+    val SEPIA: js.Array[Double] = js.native
+    
+    /**
+      * A constant array used by the ColorMatrix class for shift BGR operations.
+      */
+    /* static member */
+    @JSGlobal("Phaser.Display.ColorMatrix.SHIFT_BGR")
+    @js.native
+    val SHIFT_BGR: js.Array[Double] = js.native
+    
+    /**
+      * A constant array used by the ColorMatrix class for technicolor operations.
+      */
+    /* static member */
+    @JSGlobal("Phaser.Display.ColorMatrix.TECHNICOLOR")
+    @js.native
+    val TECHNICOLOR: js.Array[Double] = js.native
+    
+    /**
+      * A constant array used by the ColorMatrix class for vintage pinhole operations.
+      */
+    /* static member */
+    @JSGlobal("Phaser.Display.ColorMatrix.VINTAGE")
+    @js.native
+    val VINTAGE: js.Array[Double] = js.native
+  }
   
   object Masks {
     
@@ -1101,15 +1194,15 @@ object Display {
       * Unlike the Geometry Mask, which is a clipping path, a Bitmap Mask behaves like an alpha mask,
       * not a clipping path. It is only available when using the WebGL Renderer.
       * 
-      * A Bitmap Mask can use any Game Object to determine the alpha of each pixel of the masked Game Object(s).
+      * A Bitmap Mask can use any Game Object or Dynamic Texture to determine the alpha of each pixel of the masked Game Object(s).
       * For any given point of a masked Game Object's texture, the pixel's alpha will be multiplied by the alpha
       * of the pixel at the same position in the Bitmap Mask's Game Object. The color of the pixel from the
       * Bitmap Mask doesn't matter.
       * 
       * For example, if a pure blue pixel with an alpha of 0.95 is masked with a pure red pixel with an
       * alpha of 0.5, the resulting pixel will be pure blue with an alpha of 0.475. Naturally, this means
-      * that a pixel in the mask with an alpha of 0 will hide the corresponding pixel in all masked Game Objects
-      *  A pixel with an alpha of 1 in the masked Game Object will receive the same alpha as the
+      * that a pixel in the mask with an alpha of 0 will hide the corresponding pixel in all masked Game Objects.
+      * A pixel with an alpha of 1 in the masked Game Object will receive the same alpha as the
       * corresponding pixel in the mask.
       * 
       * Note: You cannot combine Bitmap Masks and Blend Modes on the same Game Object. You can, however,
@@ -1132,10 +1225,21 @@ object Display {
          with typings.phaser.Phaser.Display.Masks.BitmapMask {
       /**
         * 
-        * @param scene The Scene which this Bitmap Mask will be used in.
-        * @param renderable A renderable Game Object that uses a texture, such as a Sprite.
+        * @param scene The Scene to which this mask is being added.
+        * @param maskObject The Game Object or Dynamic Texture that will be used as the mask. If `null` it will generate an Image Game Object using the rest of the arguments.
+        * @param x If creating a Game Object, the horizontal position in the world.
+        * @param y If creating a Game Object, the vertical position in the world.
+        * @param texture If creating a Game Object, the key, or instance of the Texture it will use to render with, as stored in the Texture Manager.
+        * @param frame If creating a Game Object, an optional frame from the Texture this Game Object is rendering with.
         */
-      def this(scene: typings.phaser.Phaser.Scene, renderable: GameObject) = this()
+      def this(
+        scene: typings.phaser.Phaser.Scene,
+        maskObject: js.UndefOr[GameObject | DynamicTexture],
+        x: js.UndefOr[Double],
+        y: js.UndefOr[Double],
+        texture: js.UndefOr[String | Texture],
+        frame: js.UndefOr[String | Double | Frame]
+      ) = this()
     }
     
     /**

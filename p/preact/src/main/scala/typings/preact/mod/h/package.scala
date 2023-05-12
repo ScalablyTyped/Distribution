@@ -34,12 +34,12 @@ inline def apply[T /* <: HTMLElement */](`type`: String, props: Null, children: 
 inline def apply[P](`type`: ComponentType[P], props: Attributes & P, children: ComponentChildren*): VNode[Any] = (^.asInstanceOf[js.Dynamic].apply((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[VNode[Any]]
 inline def apply[P](`type`: ComponentType[P], props: Null, children: ComponentChildren*): VNode[Any] = (^.asInstanceOf[js.Dynamic].apply((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[VNode[Any]]
 inline def apply[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
-  `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 165, starting with typings.preact.preactStrings.a, typings.preact.preactStrings.abbr, typings.preact.preactStrings.address */ Any,
+  `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 174, starting with typings.preact.preactStrings.a, typings.preact.preactStrings.abbr, typings.preact.preactStrings.address */ Any,
   props: ClassAttributes[T] & P,
   children: ComponentChildren*
 ): VNode[Any] = (^.asInstanceOf[js.Dynamic].apply((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[VNode[Any]]
 inline def apply[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
-  `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 165, starting with typings.preact.preactStrings.a, typings.preact.preactStrings.abbr, typings.preact.preactStrings.address */ Any,
+  `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 174, starting with typings.preact.preactStrings.a, typings.preact.preactStrings.abbr, typings.preact.preactStrings.address */ Any,
   props: Null,
   children: ComponentChildren*
 ): VNode[Any] = (^.asInstanceOf[js.Dynamic].apply((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[VNode[Any]]

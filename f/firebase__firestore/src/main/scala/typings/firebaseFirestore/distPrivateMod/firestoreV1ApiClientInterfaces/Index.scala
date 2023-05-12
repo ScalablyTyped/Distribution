@@ -1,6 +1,6 @@
 package typings.firebaseFirestore.distPrivateMod.firestoreV1ApiClientInterfaces
 
-import typings.firebaseFirestore.distPrivateMod.IndexState
+import typings.firebaseFirestore.distPrivateMod.IndexState2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +13,7 @@ trait Index extends StObject {
   
   var name: js.UndefOr[String] = js.undefined
   
-  var state: js.UndefOr[IndexState] = js.undefined
+  var state: js.UndefOr[IndexState2] = js.undefined
 }
 object Index {
   
@@ -39,7 +39,7 @@ object Index {
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    inline def setState(value: IndexState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: IndexState2): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }

@@ -123,4 +123,22 @@ object dxCalendar {
       __obj.asInstanceOf[ValueChangedEvent]
     }
   }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.devextreme.devextremeStrings.auto
+    - typings.devextreme.devextremeStrings.firstDay
+    - typings.devextreme.devextremeStrings.fullWeek
+    - typings.devextreme.devextremeStrings.firstFourDays
+  */
+  trait WeekNumberRule extends StObject
+  object WeekNumberRule {
+    
+    inline def auto: typings.devextreme.devextremeStrings.auto = "auto".asInstanceOf[typings.devextreme.devextremeStrings.auto]
+    
+    inline def firstDay: typings.devextreme.devextremeStrings.firstDay = "firstDay".asInstanceOf[typings.devextreme.devextremeStrings.firstDay]
+    
+    inline def firstFourDays: typings.devextreme.devextremeStrings.firstFourDays = "firstFourDays".asInstanceOf[typings.devextreme.devextremeStrings.firstFourDays]
+    
+    inline def fullWeek: typings.devextreme.devextremeStrings.fullWeek = "fullWeek".asInstanceOf[typings.devextreme.devextremeStrings.fullWeek]
+  }
 }

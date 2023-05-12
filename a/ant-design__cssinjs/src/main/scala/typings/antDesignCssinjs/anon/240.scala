@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.StrokeLinecap
+import typings.csstype.mod.Property.MarginInlineStart
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,11 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `240` extends StObject {
   
   var value: js.UndefOr[
-    StrokeLinecap | (js.Array[
+    (MarginInlineStart[Double | String]) | (js.Array[
       (Extract[
-        js.UndefOr[StrokeLinecap | js.Array[NonNullable[js.UndefOr[StrokeLinecap]]]], 
+        js.UndefOr[
+          (MarginInlineStart[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginInlineStart[Double | String]]]])
+        ], 
         String
-      ]) | NonNullable[js.UndefOr[StrokeLinecap]]
+      ]) | (NonNullable[js.UndefOr[MarginInlineStart[Double | String]]])
     ])
   ] = js.native
 }

@@ -22,9 +22,14 @@ trait GetShardIteratorInput extends StObject {
   var StartingSequenceNumber: js.UndefOr[SequenceNumber] = js.undefined
   
   /**
+    * The ARN of the stream.
+    */
+  var StreamARN: js.UndefOr[typings.awsSdk.clientsKinesisMod.StreamARN] = js.undefined
+  
+  /**
     * The name of the Amazon Kinesis data stream.
     */
-  var StreamName: typings.awsSdk.clientsKinesisMod.StreamName
+  var StreamName: js.UndefOr[typings.awsSdk.clientsKinesisMod.StreamName] = js.undefined
   
   /**
     * The time stamp of the data record from which to start reading. Used with shard iterator type AT_TIMESTAMP. A time stamp is the Unix epoch date with precision in milliseconds. For example, 2016-04-04T19:58:46.480-00:00 or 1459799926.480. If a record with this exact time stamp does not exist, the iterator returned is for the next (later) record. If the time stamp is older than the current trim horizon, the iterator returned is for the oldest untrimmed data record (TRIM_HORIZON).
@@ -33,8 +38,8 @@ trait GetShardIteratorInput extends StObject {
 }
 object GetShardIteratorInput {
   
-  inline def apply(ShardId: ShardId, ShardIteratorType: ShardIteratorType, StreamName: StreamName): GetShardIteratorInput = {
-    val __obj = js.Dynamic.literal(ShardId = ShardId.asInstanceOf[js.Any], ShardIteratorType = ShardIteratorType.asInstanceOf[js.Any], StreamName = StreamName.asInstanceOf[js.Any])
+  inline def apply(ShardId: ShardId, ShardIteratorType: ShardIteratorType): GetShardIteratorInput = {
+    val __obj = js.Dynamic.literal(ShardId = ShardId.asInstanceOf[js.Any], ShardIteratorType = ShardIteratorType.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetShardIteratorInput]
   }
   
@@ -49,7 +54,13 @@ object GetShardIteratorInput {
     
     inline def setStartingSequenceNumberUndefined: Self = StObject.set(x, "StartingSequenceNumber", js.undefined)
     
+    inline def setStreamARN(value: StreamARN): Self = StObject.set(x, "StreamARN", value.asInstanceOf[js.Any])
+    
+    inline def setStreamARNUndefined: Self = StObject.set(x, "StreamARN", js.undefined)
+    
     inline def setStreamName(value: StreamName): Self = StObject.set(x, "StreamName", value.asInstanceOf[js.Any])
+    
+    inline def setStreamNameUndefined: Self = StObject.set(x, "StreamName", js.undefined)
     
     inline def setTimestamp(value: js.Date): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
     

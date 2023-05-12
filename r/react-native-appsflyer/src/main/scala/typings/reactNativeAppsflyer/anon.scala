@@ -229,6 +229,28 @@ object anon {
     }
   }
   
+  trait Deeplinkvalue
+    extends StObject
+       with /* key */ StringDictionary[Any] {
+    
+    var deep_link_value: js.UndefOr[String] = js.undefined
+  }
+  object Deeplinkvalue {
+    
+    inline def apply(): Deeplinkvalue = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Deeplinkvalue]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Deeplinkvalue] (val x: Self) extends AnyVal {
+      
+      inline def setDeep_link_value(value: String): Self = StObject.set(x, "deep_link_value", value.asInstanceOf[js.Any])
+      
+      inline def setDeep_link_valueUndefined: Self = StObject.set(x, "deep_link_value", js.undefined)
+    }
+  }
+  
   trait Dictkey
     extends StObject
        with /* key */ StringDictionary[Any] {

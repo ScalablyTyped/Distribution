@@ -24,7 +24,7 @@ object mod {
     def this(props: ChoroplethProps & Dimensions) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: ChoroplethProps & Dimensions, context: Any) = this()
   }
@@ -36,7 +36,7 @@ object mod {
     def this(props: ChoroplethCanvasProps & Dimensions) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: ChoroplethCanvasProps & Dimensions, context: Any) = this()
   }
@@ -48,7 +48,7 @@ object mod {
     def this(props: GeoMapProps & Dimensions) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: GeoMapProps & Dimensions, context: Any) = this()
   }
@@ -60,7 +60,7 @@ object mod {
     def this(props: GeoMapCanvasProps & Dimensions) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: GeoMapCanvasProps & Dimensions, context: Any) = this()
   }
@@ -72,7 +72,7 @@ object mod {
     def this(props: ChoroplethProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: ChoroplethProps, context: Any) = this()
   }
@@ -84,7 +84,7 @@ object mod {
     def this(props: ChoroplethCanvasProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: ChoroplethCanvasProps, context: Any) = this()
   }
@@ -96,7 +96,7 @@ object mod {
     def this(props: GeoMapProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: GeoMapProps, context: Any) = this()
   }
@@ -108,7 +108,7 @@ object mod {
     def this(props: GeoMapCanvasProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: GeoMapCanvasProps, context: Any) = this()
   }

@@ -1,9 +1,9 @@
 package typings.hapiHapi.anon
 
-import typings.hapiHapi.mod.AppCredentials
-import typings.hapiHapi.mod.AuthArtifacts
-import typings.hapiHapi.mod.AuthCredentials
-import typings.hapiHapi.mod.UserCredentials
+import typings.hapiHapi.libTypesRequestMod.AppCredentials
+import typings.hapiHapi.libTypesRequestMod.AuthArtifacts
+import typings.hapiHapi.libTypesRequestMod.AuthCredentials
+import typings.hapiHapi.libTypesRequestMod.UserCredentials
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

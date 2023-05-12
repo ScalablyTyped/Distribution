@@ -12,12 +12,12 @@ trait Change extends StObject {
   var ChangeName: js.UndefOr[typings.awsSdk.clientsMarketplacecatalogMod.ChangeName] = js.undefined
   
   /**
-    * Change types are single string values that describe your intention for the change. Each change type is unique for each EntityType provided in the change's scope.
+    * Change types are single string values that describe your intention for the change. Each change type is unique for each EntityType provided in the change's scope. For more information on change types available for single-AMI products, see Working with single-AMI products. Also, for more information on change types available for container-based products, see Working with container products.
     */
   var ChangeType: typings.awsSdk.clientsMarketplacecatalogMod.ChangeType
   
   /**
-    * This object contains details specific to the change type of the requested change.
+    * This object contains details specific to the change type of the requested change. For more information on change types available for single-AMI products, see Working with single-AMI products. Also, for more information on change types available for container-based products, see Working with container products.
     */
   var Details: Json
   

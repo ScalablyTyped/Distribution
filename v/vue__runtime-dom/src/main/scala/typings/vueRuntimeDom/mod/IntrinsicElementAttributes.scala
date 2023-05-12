@@ -298,7 +298,6 @@ trait IntrinsicElementAttributes extends StObject {
   
   var sup: HTMLAttributes
   
-  // SVG
   var svg: SVGAttributes
   
   var switch: SVGAttributes

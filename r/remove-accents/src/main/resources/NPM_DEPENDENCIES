@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "remove-accents" : "0.4.3"
+      "remove-accents" : "0.4.4"
     }
   ],
   "test-dependencies" : [
     {
-      "remove-accents" : "0.4.3"
+      "remove-accents" : "0.4.4"
     }
   ],
   "compile-devDependencies" : [

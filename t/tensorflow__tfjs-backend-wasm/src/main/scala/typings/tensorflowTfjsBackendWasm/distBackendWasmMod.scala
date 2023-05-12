@@ -1,7 +1,7 @@
 package typings.tensorflowTfjsBackendWasm
 
 import typings.tensorflowTfjsBackendWasm.anon.Wasm
-import typings.tensorflowTfjsCore.distKernelRegistryMod.TensorInfo
+import typings.tensorflowTfjsCore.distTensorInfoMod.TensorInfo
 import typings.tensorflowTfjsCore.distTypesMod.BackendValues
 import typings.tensorflowTfjsCore.distTypesMod.DataType
 import typings.tensorflowTfjsCore.distTypesMod.TypedArray
@@ -36,6 +36,10 @@ object distBackendWasmMod {
       */
     def makeOutput(shape: js.Array[Double], dtype: DataType): TensorInfo = js.native
     def makeOutput(shape: js.Array[Double], dtype: DataType, memoryOffset: Double): TensorInfo = js.native
+    def makeOutput(shape: js.Array[Double], dtype: DataType, memoryOffset: Double, values: BackendValues): TensorInfo = js.native
+    def makeOutput(shape: js.Array[Double], dtype: DataType, memoryOffset: Unit, values: BackendValues): TensorInfo = js.native
+    
+    def move(dataId: DataId, values: Null, shape: js.Array[Double], dtype: DataType, refCount: Double): Unit = js.native
     
     def readSync(dataId: DataId, start: Double): BackendValues = js.native
     def readSync(dataId: DataId, start: Double, end: Double): BackendValues = js.native
@@ -44,6 +48,8 @@ object distBackendWasmMod {
     def typedArrayFromHeap(param0: TensorInfo): TypedArray = js.native
     
     var wasm: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BackendWasmModule */ Any = js.native
+    
+    def write(values: Null, shape: js.Array[Double], dtype: DataType): DataId = js.native
   }
   
   inline def getThreadsCount(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getThreadsCount")().asInstanceOf[Double]

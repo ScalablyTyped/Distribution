@@ -70,6 +70,8 @@ object anon {
     
     var ALLOW_DATA_ATTR: js.UndefOr[Boolean] = js.undefined
     
+    var ALLOW_SELF_CLOSE_IN_ATTR: js.UndefOr[Boolean] = js.undefined
+    
     var ALLOW_UNKNOWN_PROTOCOLS: js.UndefOr[Boolean] = js.undefined
     
     var CUSTOM_ELEMENT_HANDLING: js.UndefOr[AllowCustomizedBuiltInElements] = js.undefined
@@ -181,6 +183,10 @@ object anon {
       
       inline def setALLOW_DATA_ATTRUndefined: Self = StObject.set(x, "ALLOW_DATA_ATTR", js.undefined)
       
+      inline def setALLOW_SELF_CLOSE_IN_ATTR(value: Boolean): Self = StObject.set(x, "ALLOW_SELF_CLOSE_IN_ATTR", value.asInstanceOf[js.Any])
+      
+      inline def setALLOW_SELF_CLOSE_IN_ATTRUndefined: Self = StObject.set(x, "ALLOW_SELF_CLOSE_IN_ATTR", js.undefined)
+      
       inline def setALLOW_UNKNOWN_PROTOCOLS(value: Boolean): Self = StObject.set(x, "ALLOW_UNKNOWN_PROTOCOLS", value.asInstanceOf[js.Any])
       
       inline def setALLOW_UNKNOWN_PROTOCOLSUndefined: Self = StObject.set(x, "ALLOW_UNKNOWN_PROTOCOLS", js.undefined)
@@ -287,6 +293,8 @@ object anon {
     var ALLOW_ARIA_ATTR: js.UndefOr[Boolean] = js.undefined
     
     var ALLOW_DATA_ATTR: js.UndefOr[Boolean] = js.undefined
+    
+    var ALLOW_SELF_CLOSE_IN_ATTR: js.UndefOr[Boolean] = js.undefined
     
     var ALLOW_UNKNOWN_PROTOCOLS: js.UndefOr[Boolean] = js.undefined
     
@@ -399,6 +407,10 @@ object anon {
       
       inline def setALLOW_DATA_ATTRUndefined: Self = StObject.set(x, "ALLOW_DATA_ATTR", js.undefined)
       
+      inline def setALLOW_SELF_CLOSE_IN_ATTR(value: Boolean): Self = StObject.set(x, "ALLOW_SELF_CLOSE_IN_ATTR", value.asInstanceOf[js.Any])
+      
+      inline def setALLOW_SELF_CLOSE_IN_ATTRUndefined: Self = StObject.set(x, "ALLOW_SELF_CLOSE_IN_ATTR", js.undefined)
+      
       inline def setALLOW_UNKNOWN_PROTOCOLS(value: Boolean): Self = StObject.set(x, "ALLOW_UNKNOWN_PROTOCOLS", value.asInstanceOf[js.Any])
       
       inline def setALLOW_UNKNOWN_PROTOCOLSUndefined: Self = StObject.set(x, "ALLOW_UNKNOWN_PROTOCOLS", js.undefined)
@@ -505,6 +517,8 @@ object anon {
     var ALLOW_ARIA_ATTR: js.UndefOr[Boolean] = js.undefined
     
     var ALLOW_DATA_ATTR: js.UndefOr[Boolean] = js.undefined
+    
+    var ALLOW_SELF_CLOSE_IN_ATTR: js.UndefOr[Boolean] = js.undefined
     
     var ALLOW_UNKNOWN_PROTOCOLS: js.UndefOr[Boolean] = js.undefined
     
@@ -617,6 +631,10 @@ object anon {
       
       inline def setALLOW_DATA_ATTRUndefined: Self = StObject.set(x, "ALLOW_DATA_ATTR", js.undefined)
       
+      inline def setALLOW_SELF_CLOSE_IN_ATTR(value: Boolean): Self = StObject.set(x, "ALLOW_SELF_CLOSE_IN_ATTR", value.asInstanceOf[js.Any])
+      
+      inline def setALLOW_SELF_CLOSE_IN_ATTRUndefined: Self = StObject.set(x, "ALLOW_SELF_CLOSE_IN_ATTR", js.undefined)
+      
       inline def setALLOW_UNKNOWN_PROTOCOLS(value: Boolean): Self = StObject.set(x, "ALLOW_UNKNOWN_PROTOCOLS", value.asInstanceOf[js.Any])
       
       inline def setALLOW_UNKNOWN_PROTOCOLSUndefined: Self = StObject.set(x, "ALLOW_UNKNOWN_PROTOCOLS", js.undefined)
@@ -723,6 +741,8 @@ object anon {
     var ALLOW_ARIA_ATTR: js.UndefOr[Boolean] = js.undefined
     
     var ALLOW_DATA_ATTR: js.UndefOr[Boolean] = js.undefined
+    
+    var ALLOW_SELF_CLOSE_IN_ATTR: js.UndefOr[Boolean] = js.undefined
     
     var ALLOW_UNKNOWN_PROTOCOLS: js.UndefOr[Boolean] = js.undefined
     
@@ -834,6 +854,10 @@ object anon {
       inline def setALLOW_DATA_ATTR(value: Boolean): Self = StObject.set(x, "ALLOW_DATA_ATTR", value.asInstanceOf[js.Any])
       
       inline def setALLOW_DATA_ATTRUndefined: Self = StObject.set(x, "ALLOW_DATA_ATTR", js.undefined)
+      
+      inline def setALLOW_SELF_CLOSE_IN_ATTR(value: Boolean): Self = StObject.set(x, "ALLOW_SELF_CLOSE_IN_ATTR", value.asInstanceOf[js.Any])
+      
+      inline def setALLOW_SELF_CLOSE_IN_ATTRUndefined: Self = StObject.set(x, "ALLOW_SELF_CLOSE_IN_ATTR", js.undefined)
       
       inline def setALLOW_UNKNOWN_PROTOCOLS(value: Boolean): Self = StObject.set(x, "ALLOW_UNKNOWN_PROTOCOLS", value.asInstanceOf[js.Any])
       

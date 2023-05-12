@@ -34,7 +34,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - org.scalablytyped.runtime.NumberDictionary because Inheritance from two classes. Inlined 
 - js.Object because Inheritance from two classes. Inlined 
 - js.Any because Inheritance from two classes. Inlined 
-- typings.std.Uint8Array because Inheritance from two classes. Inlined toStringTag, byteLength, buffer, BYTES_PER_ELEMENT, iterator, byteOffset, length, at, copyWithin, copyWithin, entries, every, every, filter, filter, find, find, findIndex, findIndex, forEach, forEach, join, join, keys, map, map, reduce, reduce, reduce, reduceRight, reduceRight, reduceRight, reverse, set, set, slice, slice, slice, slice, some, some, sort, sort, subarray, subarray, subarray, subarray, values
+- typings.std.Uint8Array because Inheritance from two classes. Inlined toStringTag, byteLength, buffer, BYTES_PER_ELEMENT, iterator, byteOffset, length, at, copyWithin, copyWithin, entries, every, every, filter, filter, find, find, findIndex, findIndex, findLast, findLast, findLastIndex, findLastIndex, findLast_S, findLast_S, forEach, forEach, join, join, keys, map, map, reduce, reduce, reduce, reduceRight, reduceRight, reduceRight, reverse, set, set, slice, slice, slice, slice, some, some, sort, sort, subarray, subarray, subarray, subarray, values
 - js.Object because Inheritance from two classes. Inlined hasOwnProperty, propertyIsEnumerable, valueOf, toLocaleString, isPrototypeOf
 - typings.node.bufferMod.global.Buffer because Inheritance from two classes. Inlined compare, compare, compare, compare, compare, compare, compare, compare, compare, compare, compare, compare, compare, compare, compare, compare, copy, copy, copy, copy, copy, copy, copy, copy, equals, fill, fill, fill, fill, fill, fill, fill, fill, fill, fill, fill, fill, fill, fill, fill, fill, fill, fill, fill, fill, includes, includes, includes, includes, includes, includes, includes, includes, includes, includes, indexOf, indexOf, indexOf, indexOf, indexOf, indexOf, indexOf, indexOf, indexOf, indexOf, lastIndexOf, lastIndexOf, lastIndexOf, lastIndexOf, lastIndexOf, lastIndexOf, lastIndexOf, lastIndexOf, lastIndexOf, lastIndexOf, readBigInt64BE, readBigInt64BE, readBigInt64LE, readBigInt64LE, readBigUInt64BE, readBigUInt64BE, readBigUInt64LE, readBigUInt64LE, readBigUint64BE, readBigUint64BE, readBigUint64LE, readBigUint64LE, readDoubleBE, readDoubleBE, readDoubleLE, readDoubleLE, readFloatBE, readFloatBE, readFloatLE, readFloatLE, readInt16BE, readInt16BE, readInt16LE, readInt16LE, readInt32BE, readInt32BE, readInt32LE, readInt32LE, readInt8, readInt8, readIntBE, readIntLE, readUInt16BE, readUInt16BE, readUInt16LE, readUInt16LE, readUInt32BE, readUInt32BE, readUInt32LE, readUInt32LE, readUInt8, readUInt8, readUIntBE, readUIntLE, readUint16BE, readUint16BE, readUint16LE, readUint16LE, readUint32BE, readUint32BE, readUint32LE, readUint32LE, readUint8, readUint8, readUintBE, readUintLE, swap16, swap32, swap64, toJSON, toString, toString, toString, toString, toString, toString, toString, write, write, write, write, write, write, writeBigInt64BE, writeBigInt64BE, writeBigInt64LE, writeBigInt64LE, writeBigUInt64BE, writeBigUInt64BE, writeBigUInt64LE, writeBigUInt64LE, writeBigUint64BE, writeBigUint64BE, writeBigUint64LE, writeBigUint64LE, writeDoubleBE, writeDoubleBE, writeDoubleLE, writeDoubleLE, writeFloatBE, writeFloatBE, writeFloatLE, writeFloatLE, writeInt16BE, writeInt16BE, writeInt16LE, writeInt16LE, writeInt32BE, writeInt32BE, writeInt32LE, writeInt32LE, writeInt8, writeInt8, writeIntBE, writeIntLE, writeUInt16BE, writeUInt16BE, writeUInt16LE, writeUInt16LE, writeUInt32BE, writeUInt32BE, writeUInt32LE, writeUInt32LE, writeUInt8, writeUInt8, writeUIntBE, writeUIntLE, writeUint16BE, writeUint16BE, writeUint16LE, writeUint16LE, writeUint32BE, writeUint32BE, writeUint32LE, writeUint32LE, writeUint8, writeUint8, writeUintBE, writeUintLE */ @js.native
 trait BinaryRecord
@@ -82,7 +82,7 @@ trait BinaryRecord
     * * `-1` is returned if `target` should come _after_`buf` when sorted.
     *
     * ```js
-    * import { Buffer } from 'buffer';
+    * import { Buffer } from 'node:buffer';
     *
     * const buf1 = Buffer.from('ABC');
     * const buf2 = Buffer.from('BCD');
@@ -106,7 +106,7 @@ trait BinaryRecord
     * The optional `targetStart`, `targetEnd`, `sourceStart`, and `sourceEnd`arguments can be used to limit the comparison to specific ranges within `target`and `buf` respectively.
     *
     * ```js
-    * import { Buffer } from 'buffer';
+    * import { Buffer } from 'node:buffer';
     *
     * const buf1 = Buffer.from([1, 2, 3, 4, 5, 6, 7, 8, 9]);
     * const buf2 = Buffer.from([5, 6, 7, 8, 9, 1, 2, 3, 4]);
@@ -200,7 +200,7 @@ trait BinaryRecord
     * different function arguments.
     *
     * ```js
-    * import { Buffer } from 'buffer';
+    * import { Buffer } from 'node:buffer';
     *
     * // Create two `Buffer` instances.
     * const buf1 = Buffer.allocUnsafe(26);
@@ -221,7 +221,7 @@ trait BinaryRecord
     * ```
     *
     * ```js
-    * import { Buffer } from 'buffer';
+    * import { Buffer } from 'node:buffer';
     *
     * // Create a `Buffer` and copy data from one region to an overlapping region
     * // within the same `Buffer`.
@@ -277,7 +277,7 @@ trait BinaryRecord
     * Returns `true` if both `buf` and `otherBuffer` have exactly the same bytes,`false` otherwise. Equivalent to `buf.compare(otherBuffer) === 0`.
     *
     * ```js
-    * import { Buffer } from 'buffer';
+    * import { Buffer } from 'node:buffer';
     *
     * const buf1 = Buffer.from('ABC');
     * const buf2 = Buffer.from('414243', 'hex');
@@ -313,7 +313,7 @@ trait BinaryRecord
     * the entire `buf` will be filled:
     *
     * ```js
-    * import { Buffer } from 'buffer';
+    * import { Buffer } from 'node:buffer';
     *
     * // Fill a `Buffer` with the ASCII character 'h'.
     *
@@ -321,6 +321,12 @@ trait BinaryRecord
     *
     * console.log(b.toString());
     * // Prints: hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+    *
+    * // Fill a buffer with empty string
+    * const c = Buffer.allocUnsafe(5).fill('');
+    *
+    * console.log(c.fill(''));
+    * // Prints: <Buffer 00 00 00 00 00>
     * ```
     *
     * `value` is coerced to a `uint32` value if it is not a string, `Buffer`, or
@@ -331,7 +337,7 @@ trait BinaryRecord
     * then only the bytes of that character that fit into `buf` are written:
     *
     * ```js
-    * import { Buffer } from 'buffer';
+    * import { Buffer } from 'node:buffer';
     *
     * // Fill a `Buffer` with character that takes up two bytes in UTF-8.
     *
@@ -343,7 +349,7 @@ trait BinaryRecord
     * fill data remains, an exception is thrown:
     *
     * ```js
-    * import { Buffer } from 'buffer';
+    * import { Buffer } from 'node:buffer';
     *
     * const buf = Buffer.allocUnsafe(5);
     *
@@ -355,7 +361,7 @@ trait BinaryRecord
     * // Throws an exception.
     * ```
     * @since v0.5.0
-    * @param value The value with which to fill `buf`.
+    * @param value The value with which to fill `buf`. Empty value (string, Uint8Array, Buffer) is coerced to `0`.
     * @param [offset=0] Number of bytes to skip before starting to fill `buf`.
     * @param [end=buf.length] Where to stop filling `buf` (not inclusive).
     * @param [encoding='utf8'] The encoding for `value` if `value` is a string.
@@ -428,6 +434,49 @@ trait BinaryRecord
     thisArg: Any
   ): Double = js.native
   
+  /* standard es2023.array */
+  def findLast(predicate: js.Function3[/* value */ Double, /* index */ Double, /* array */ this.type, Any]): js.UndefOr[Double] = js.native
+  def findLast(
+    predicate: js.Function3[/* value */ Double, /* index */ Double, /* array */ this.type, Any],
+    thisArg: Any
+  ): js.UndefOr[Double] = js.native
+  
+  /**
+    * Returns the index of the last element in the array where predicate is true, and -1
+    * otherwise.
+    * @param predicate findLastIndex calls predicate once for each element of the array, in descending
+    * order, until it finds one where predicate returns true. If such an element is found,
+    * findLastIndex immediately returns that element index. Otherwise, findLastIndex returns -1.
+    * @param thisArg If provided, it will be used as the this value for each invocation of
+    * predicate. If it is not provided, undefined is used instead.
+    */
+  /* standard es2023.array */
+  def findLastIndex(predicate: js.Function3[/* value */ Double, /* index */ Double, /* array */ this.type, Any]): Double = js.native
+  def findLastIndex(
+    predicate: js.Function3[/* value */ Double, /* index */ Double, /* array */ this.type, Any],
+    thisArg: Any
+  ): Double = js.native
+  
+  /**
+    * Returns the value of the last element in the array where predicate is true, and undefined
+    * otherwise.
+    * @param predicate findLast calls predicate once for each element of the array, in descending
+    * order, until it finds one where predicate returns true. If such an element is found, findLast
+    * immediately returns that element value. Otherwise, findLast returns undefined.
+    * @param thisArg If provided, it will be used as the this value for each invocation of
+    * predicate. If it is not provided, undefined is used instead.
+    */
+  /* standard es2023.array */
+  @JSName("findLast")
+  def findLast_S[S /* <: Double */](
+    predicate: js.Function3[/* value */ Double, /* index */ Double, /* array */ this.type, /* is S */ Boolean]
+  ): js.UndefOr[S] = js.native
+  @JSName("findLast")
+  def findLast_S[S /* <: Double */](
+    predicate: js.Function3[/* value */ Double, /* index */ Double, /* array */ this.type, /* is S */ Boolean],
+    thisArg: Any
+  ): js.UndefOr[S] = js.native
+  
   /**
     * Performs the specified action for each element in an array.
     * @param callbackfn  A function that accepts up to three arguments. forEach calls the
@@ -446,7 +495,7 @@ trait BinaryRecord
     * Equivalent to `buf.indexOf() !== -1`.
     *
     * ```js
-    * import { Buffer } from 'buffer';
+    * import { Buffer } from 'node:buffer';
     *
     * const buf = Buffer.from('this is a buffer');
     *
@@ -492,7 +541,7 @@ trait BinaryRecord
     * value between `0` and `255`.
     *
     * ```js
-    * import { Buffer } from 'buffer';
+    * import { Buffer } from 'node:buffer';
     *
     * const buf = Buffer.from('this is a buffer');
     *
@@ -525,7 +574,7 @@ trait BinaryRecord
     * behavior matches [`String.prototype.indexOf()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/indexOf).
     *
     * ```js
-    * import { Buffer } from 'buffer';
+    * import { Buffer } from 'node:buffer';
     *
     * const b = Buffer.from('abcdef');
     *
@@ -585,7 +634,7 @@ trait BinaryRecord
     * rather than the first occurrence.
     *
     * ```js
-    * import { Buffer } from 'buffer';
+    * import { Buffer } from 'node:buffer';
     *
     * const buf = Buffer.from('this buffer is a buffer');
     *
@@ -620,7 +669,7 @@ trait BinaryRecord
     * This behavior matches [`String.prototype.lastIndexOf()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/lastIndexOf).
     *
     * ```js
-    * import { Buffer } from 'buffer';
+    * import { Buffer } from 'node:buffer';
     *
     * const b = Buffer.from('abcdef');
     *
@@ -707,7 +756,7 @@ trait BinaryRecord
     * This function is also available under the `readBigUint64BE` alias.
     *
     * ```js
-    * import { Buffer } from 'buffer';
+    * import { Buffer } from 'node:buffer';
     *
     * const buf = Buffer.from([0x00, 0x00, 0x00, 0x00, 0xff, 0xff, 0xff, 0xff]);
     *
@@ -726,7 +775,7 @@ trait BinaryRecord
     * This function is also available under the `readBigUint64LE` alias.
     *
     * ```js
-    * import { Buffer } from 'buffer';
+    * import { Buffer } from 'node:buffer';
     *
     * const buf = Buffer.from([0x00, 0x00, 0x00, 0x00, 0xff, 0xff, 0xff, 0xff]);
     *
@@ -757,7 +806,7 @@ trait BinaryRecord
     * Reads a 64-bit, big-endian double from `buf` at the specified `offset`.
     *
     * ```js
-    * import { Buffer } from 'buffer';
+    * import { Buffer } from 'node:buffer';
     *
     * const buf = Buffer.from([1, 2, 3, 4, 5, 6, 7, 8]);
     *
@@ -774,7 +823,7 @@ trait BinaryRecord
     * Reads a 64-bit, little-endian double from `buf` at the specified `offset`.
     *
     * ```js
-    * import { Buffer } from 'buffer';
+    * import { Buffer } from 'node:buffer';
     *
     * const buf = Buffer.from([1, 2, 3, 4, 5, 6, 7, 8]);
     *
@@ -793,7 +842,7 @@ trait BinaryRecord
     * Reads a 32-bit, big-endian float from `buf` at the specified `offset`.
     *
     * ```js
-    * import { Buffer } from 'buffer';
+    * import { Buffer } from 'node:buffer';
     *
     * const buf = Buffer.from([1, 2, 3, 4]);
     *
@@ -810,7 +859,7 @@ trait BinaryRecord
     * Reads a 32-bit, little-endian float from `buf` at the specified `offset`.
     *
     * ```js
-    * import { Buffer } from 'buffer';
+    * import { Buffer } from 'node:buffer';
     *
     * const buf = Buffer.from([1, 2, 3, 4]);
     *
@@ -831,7 +880,7 @@ trait BinaryRecord
     * Integers read from a `Buffer` are interpreted as two's complement signed values.
     *
     * ```js
-    * import { Buffer } from 'buffer';
+    * import { Buffer } from 'node:buffer';
     *
     * const buf = Buffer.from([0, 5]);
     *
@@ -850,7 +899,7 @@ trait BinaryRecord
     * Integers read from a `Buffer` are interpreted as two's complement signed values.
     *
     * ```js
-    * import { Buffer } from 'buffer';
+    * import { Buffer } from 'node:buffer';
     *
     * const buf = Buffer.from([0, 5]);
     *
@@ -871,7 +920,7 @@ trait BinaryRecord
     * Integers read from a `Buffer` are interpreted as two's complement signed values.
     *
     * ```js
-    * import { Buffer } from 'buffer';
+    * import { Buffer } from 'node:buffer';
     *
     * const buf = Buffer.from([0, 0, 0, 5]);
     *
@@ -890,7 +939,7 @@ trait BinaryRecord
     * Integers read from a `Buffer` are interpreted as two's complement signed values.
     *
     * ```js
-    * import { Buffer } from 'buffer';
+    * import { Buffer } from 'node:buffer';
     *
     * const buf = Buffer.from([0, 0, 0, 5]);
     *
@@ -911,7 +960,7 @@ trait BinaryRecord
     * Integers read from a `Buffer` are interpreted as two's complement signed values.
     *
     * ```js
-    * import { Buffer } from 'buffer';
+    * import { Buffer } from 'node:buffer';
     *
     * const buf = Buffer.from([-1, 5]);
     *
@@ -933,7 +982,7 @@ trait BinaryRecord
     * supporting up to 48 bits of accuracy.
     *
     * ```js
-    * import { Buffer } from 'buffer';
+    * import { Buffer } from 'node:buffer';
     *
     * const buf = Buffer.from([0x12, 0x34, 0x56, 0x78, 0x90, 0xab]);
     *
@@ -955,7 +1004,7 @@ trait BinaryRecord
     * supporting up to 48 bits of accuracy.
     *
     * ```js
-    * import { Buffer } from 'buffer';
+    * import { Buffer } from 'node:buffer';
     *
     * const buf = Buffer.from([0x12, 0x34, 0x56, 0x78, 0x90, 0xab]);
     *
@@ -974,7 +1023,7 @@ trait BinaryRecord
     * This function is also available under the `readUint16BE` alias.
     *
     * ```js
-    * import { Buffer } from 'buffer';
+    * import { Buffer } from 'node:buffer';
     *
     * const buf = Buffer.from([0x12, 0x34, 0x56]);
     *
@@ -995,7 +1044,7 @@ trait BinaryRecord
     * This function is also available under the `readUint16LE` alias.
     *
     * ```js
-    * import { Buffer } from 'buffer';
+    * import { Buffer } from 'node:buffer';
     *
     * const buf = Buffer.from([0x12, 0x34, 0x56]);
     *
@@ -1018,7 +1067,7 @@ trait BinaryRecord
     * This function is also available under the `readUint32BE` alias.
     *
     * ```js
-    * import { Buffer } from 'buffer';
+    * import { Buffer } from 'node:buffer';
     *
     * const buf = Buffer.from([0x12, 0x34, 0x56, 0x78]);
     *
@@ -1037,7 +1086,7 @@ trait BinaryRecord
     * This function is also available under the `readUint32LE` alias.
     *
     * ```js
-    * import { Buffer } from 'buffer';
+    * import { Buffer } from 'node:buffer';
     *
     * const buf = Buffer.from([0x12, 0x34, 0x56, 0x78]);
     *
@@ -1058,7 +1107,7 @@ trait BinaryRecord
     * This function is also available under the `readUint8` alias.
     *
     * ```js
-    * import { Buffer } from 'buffer';
+    * import { Buffer } from 'node:buffer';
     *
     * const buf = Buffer.from([1, -2]);
     *
@@ -1082,7 +1131,7 @@ trait BinaryRecord
     * This function is also available under the `readUintBE` alias.
     *
     * ```js
-    * import { Buffer } from 'buffer';
+    * import { Buffer } from 'node:buffer';
     *
     * const buf = Buffer.from([0x12, 0x34, 0x56, 0x78, 0x90, 0xab]);
     *
@@ -1104,7 +1153,7 @@ trait BinaryRecord
     * This function is also available under the `readUintLE` alias.
     *
     * ```js
-    * import { Buffer } from 'buffer';
+    * import { Buffer } from 'node:buffer';
     *
     * const buf = Buffer.from([0x12, 0x34, 0x56, 0x78, 0x90, 0xab]);
     *
@@ -1341,7 +1390,7 @@ trait BinaryRecord
     * byte order _in-place_. Throws `ERR_INVALID_BUFFER_SIZE` if `buf.length` is not a multiple of 2.
     *
     * ```js
-    * import { Buffer } from 'buffer';
+    * import { Buffer } from 'node:buffer';
     *
     * const buf1 = Buffer.from([0x1, 0x2, 0x3, 0x4, 0x5, 0x6, 0x7, 0x8]);
     *
@@ -1363,7 +1412,7 @@ trait BinaryRecord
     * between UTF-16 little-endian and UTF-16 big-endian:
     *
     * ```js
-    * import { Buffer } from 'buffer';
+    * import { Buffer } from 'node:buffer';
     *
     * const buf = Buffer.from('This is little-endian UTF-16', 'utf16le');
     * buf.swap16(); // Convert to big-endian UTF-16 text.
@@ -1378,7 +1427,7 @@ trait BinaryRecord
     * byte order _in-place_. Throws `ERR_INVALID_BUFFER_SIZE` if `buf.length` is not a multiple of 4.
     *
     * ```js
-    * import { Buffer } from 'buffer';
+    * import { Buffer } from 'node:buffer';
     *
     * const buf1 = Buffer.from([0x1, 0x2, 0x3, 0x4, 0x5, 0x6, 0x7, 0x8]);
     *
@@ -1405,7 +1454,7 @@ trait BinaryRecord
     * Throws `ERR_INVALID_BUFFER_SIZE` if `buf.length` is not a multiple of 8.
     *
     * ```js
-    * import { Buffer } from 'buffer';
+    * import { Buffer } from 'node:buffer';
     *
     * const buf1 = Buffer.from([0x1, 0x2, 0x3, 0x4, 0x5, 0x6, 0x7, 0x8]);
     *
@@ -1435,7 +1484,7 @@ trait BinaryRecord
     * In particular, `Buffer.from(buf.toJSON())` works like `Buffer.from(buf)`.
     *
     * ```js
-    * import { Buffer } from 'buffer';
+    * import { Buffer } from 'node:buffer';
     *
     * const buf = Buffer.from([0x1, 0x2, 0x3, 0x4, 0x5]);
     * const json = JSON.stringify(buf);
@@ -1480,7 +1529,7 @@ trait BinaryRecord
     * written. However, partially encoded characters will not be written.
     *
     * ```js
-    * import { Buffer } from 'buffer';
+    * import { Buffer } from 'node:buffer';
     *
     * const buf = Buffer.alloc(256);
     *
@@ -1516,7 +1565,7 @@ trait BinaryRecord
     * `value` is interpreted and written as a two's complement signed integer.
     *
     * ```js
-    * import { Buffer } from 'buffer';
+    * import { Buffer } from 'node:buffer';
     *
     * const buf = Buffer.allocUnsafe(8);
     *
@@ -1539,7 +1588,7 @@ trait BinaryRecord
     * `value` is interpreted and written as a two's complement signed integer.
     *
     * ```js
-    * import { Buffer } from 'buffer';
+    * import { Buffer } from 'node:buffer';
     *
     * const buf = Buffer.allocUnsafe(8);
     *
@@ -1562,7 +1611,7 @@ trait BinaryRecord
     * This function is also available under the `writeBigUint64BE` alias.
     *
     * ```js
-    * import { Buffer } from 'buffer';
+    * import { Buffer } from 'node:buffer';
     *
     * const buf = Buffer.allocUnsafe(8);
     *
@@ -1583,7 +1632,7 @@ trait BinaryRecord
     * Writes `value` to `buf` at the specified `offset` as little-endian
     *
     * ```js
-    * import { Buffer } from 'buffer';
+    * import { Buffer } from 'node:buffer';
     *
     * const buf = Buffer.allocUnsafe(8);
     *
@@ -1621,7 +1670,7 @@ trait BinaryRecord
     * other than a JavaScript number.
     *
     * ```js
-    * import { Buffer } from 'buffer';
+    * import { Buffer } from 'node:buffer';
     *
     * const buf = Buffer.allocUnsafe(8);
     *
@@ -1643,7 +1692,7 @@ trait BinaryRecord
     * other than a JavaScript number.
     *
     * ```js
-    * import { Buffer } from 'buffer';
+    * import { Buffer } from 'node:buffer';
     *
     * const buf = Buffer.allocUnsafe(8);
     *
@@ -1665,7 +1714,7 @@ trait BinaryRecord
     * undefined when `value` is anything other than a JavaScript number.
     *
     * ```js
-    * import { Buffer } from 'buffer';
+    * import { Buffer } from 'node:buffer';
     *
     * const buf = Buffer.allocUnsafe(4);
     *
@@ -1687,7 +1736,7 @@ trait BinaryRecord
     * undefined when `value` is anything other than a JavaScript number.
     *
     * ```js
-    * import { Buffer } from 'buffer';
+    * import { Buffer } from 'node:buffer';
     *
     * const buf = Buffer.allocUnsafe(4);
     *
@@ -1711,7 +1760,7 @@ trait BinaryRecord
     * The `value` is interpreted and written as a two's complement signed integer.
     *
     * ```js
-    * import { Buffer } from 'buffer';
+    * import { Buffer } from 'node:buffer';
     *
     * const buf = Buffer.allocUnsafe(2);
     *
@@ -1735,7 +1784,7 @@ trait BinaryRecord
     * The `value` is interpreted and written as a two's complement signed integer.
     *
     * ```js
-    * import { Buffer } from 'buffer';
+    * import { Buffer } from 'node:buffer';
     *
     * const buf = Buffer.allocUnsafe(2);
     *
@@ -1759,7 +1808,7 @@ trait BinaryRecord
     * The `value` is interpreted and written as a two's complement signed integer.
     *
     * ```js
-    * import { Buffer } from 'buffer';
+    * import { Buffer } from 'node:buffer';
     *
     * const buf = Buffer.allocUnsafe(4);
     *
@@ -1783,7 +1832,7 @@ trait BinaryRecord
     * The `value` is interpreted and written as a two's complement signed integer.
     *
     * ```js
-    * import { Buffer } from 'buffer';
+    * import { Buffer } from 'node:buffer';
     *
     * const buf = Buffer.allocUnsafe(4);
     *
@@ -1808,7 +1857,7 @@ trait BinaryRecord
     * `value` is interpreted and written as a two's complement signed integer.
     *
     * ```js
-    * import { Buffer } from 'buffer';
+    * import { Buffer } from 'node:buffer';
     *
     * const buf = Buffer.allocUnsafe(2);
     *
@@ -1831,7 +1880,7 @@ trait BinaryRecord
     * signed integer.
     *
     * ```js
-    * import { Buffer } from 'buffer';
+    * import { Buffer } from 'node:buffer';
     *
     * const buf = Buffer.allocUnsafe(6);
     *
@@ -1853,7 +1902,7 @@ trait BinaryRecord
     * when `value` is anything other than a signed integer.
     *
     * ```js
-    * import { Buffer } from 'buffer';
+    * import { Buffer } from 'node:buffer';
     *
     * const buf = Buffer.allocUnsafe(6);
     *
@@ -1877,7 +1926,7 @@ trait BinaryRecord
     * This function is also available under the `writeUint16BE` alias.
     *
     * ```js
-    * import { Buffer } from 'buffer';
+    * import { Buffer } from 'node:buffer';
     *
     * const buf = Buffer.allocUnsafe(4);
     *
@@ -1902,7 +1951,7 @@ trait BinaryRecord
     * This function is also available under the `writeUint16LE` alias.
     *
     * ```js
-    * import { Buffer } from 'buffer';
+    * import { Buffer } from 'node:buffer';
     *
     * const buf = Buffer.allocUnsafe(4);
     *
@@ -1927,7 +1976,7 @@ trait BinaryRecord
     * This function is also available under the `writeUint32BE` alias.
     *
     * ```js
-    * import { Buffer } from 'buffer';
+    * import { Buffer } from 'node:buffer';
     *
     * const buf = Buffer.allocUnsafe(4);
     *
@@ -1951,7 +2000,7 @@ trait BinaryRecord
     * This function is also available under the `writeUint32LE` alias.
     *
     * ```js
-    * import { Buffer } from 'buffer';
+    * import { Buffer } from 'node:buffer';
     *
     * const buf = Buffer.allocUnsafe(4);
     *
@@ -1976,7 +2025,7 @@ trait BinaryRecord
     * This function is also available under the `writeUint8` alias.
     *
     * ```js
-    * import { Buffer } from 'buffer';
+    * import { Buffer } from 'node:buffer';
     *
     * const buf = Buffer.allocUnsafe(4);
     *
@@ -2003,7 +2052,7 @@ trait BinaryRecord
     * This function is also available under the `writeUintBE` alias.
     *
     * ```js
-    * import { Buffer } from 'buffer';
+    * import { Buffer } from 'node:buffer';
     *
     * const buf = Buffer.allocUnsafe(6);
     *
@@ -2027,7 +2076,7 @@ trait BinaryRecord
     * This function is also available under the `writeUintLE` alias.
     *
     * ```js
-    * import { Buffer } from 'buffer';
+    * import { Buffer } from 'node:buffer';
     *
     * const buf = Buffer.allocUnsafe(6);
     *

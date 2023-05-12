@@ -13,7 +13,6 @@ trait ClientStatic
   * Constructs a Client with instances of all the resources using the dispatcher.
   * It also keeps a reference to the dispatcher so that way the end user can have
   * access to it.
-  * @class
   * @classdesc A wrapper for the Asana API which is authenticated for one user
   * @param {Dispatcher} dispatcher The request dispatcher to use
   * @param {Object} options        Options to configure the client

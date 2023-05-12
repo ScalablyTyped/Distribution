@@ -12,6 +12,11 @@ trait CreateComponentTypeRequest extends StObject {
   var componentTypeId: ComponentTypeId
   
   /**
+    * A friendly name for the component type.
+    */
+  var componentTypeName: js.UndefOr[ComponentTypeName] = js.undefined
+  
+  /**
     * The description of the component type.
     */
   var description: js.UndefOr[Description] = js.undefined
@@ -37,6 +42,11 @@ trait CreateComponentTypeRequest extends StObject {
   var propertyDefinitions: js.UndefOr[PropertyDefinitionsRequest] = js.undefined
   
   /**
+    * 
+    */
+  var propertyGroups: js.UndefOr[PropertyGroupsRequest] = js.undefined
+  
+  /**
     * Metadata that you can use to manage the component type.
     */
   var tags: js.UndefOr[TagMap] = js.undefined
@@ -57,6 +67,10 @@ object CreateComponentTypeRequest {
   implicit open class MutableBuilder[Self <: CreateComponentTypeRequest] (val x: Self) extends AnyVal {
     
     inline def setComponentTypeId(value: ComponentTypeId): Self = StObject.set(x, "componentTypeId", value.asInstanceOf[js.Any])
+    
+    inline def setComponentTypeName(value: ComponentTypeName): Self = StObject.set(x, "componentTypeName", value.asInstanceOf[js.Any])
+    
+    inline def setComponentTypeNameUndefined: Self = StObject.set(x, "componentTypeName", js.undefined)
     
     inline def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
@@ -79,6 +93,10 @@ object CreateComponentTypeRequest {
     inline def setPropertyDefinitions(value: PropertyDefinitionsRequest): Self = StObject.set(x, "propertyDefinitions", value.asInstanceOf[js.Any])
     
     inline def setPropertyDefinitionsUndefined: Self = StObject.set(x, "propertyDefinitions", js.undefined)
+    
+    inline def setPropertyGroups(value: PropertyGroupsRequest): Self = StObject.set(x, "propertyGroups", value.asInstanceOf[js.Any])
+    
+    inline def setPropertyGroupsUndefined: Self = StObject.set(x, "propertyGroups", js.undefined)
     
     inline def setTags(value: TagMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     

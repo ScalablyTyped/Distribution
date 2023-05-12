@@ -638,6 +638,7 @@ type ObjectSizeLessThanBytes = Double
   - typings.awsSdk.awsSdkStrings.DEEP_ARCHIVE
   - typings.awsSdk.awsSdkStrings.OUTPOSTS
   - typings.awsSdk.awsSdkStrings.GLACIER_IR
+  - typings.awsSdk.awsSdkStrings.SNOW
   - java.lang.String
 */
 type ObjectStorageClass = _ObjectStorageClass | String
@@ -831,6 +832,7 @@ type StartAfter = String
   - typings.awsSdk.awsSdkStrings.DEEP_ARCHIVE
   - typings.awsSdk.awsSdkStrings.OUTPOSTS
   - typings.awsSdk.awsSdkStrings.GLACIER_IR
+  - typings.awsSdk.awsSdkStrings.SNOW
   - java.lang.String
 */
 type StorageClass = _StorageClass | String

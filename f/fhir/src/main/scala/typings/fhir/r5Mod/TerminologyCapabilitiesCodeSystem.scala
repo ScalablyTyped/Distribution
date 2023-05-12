@@ -1,5 +1,10 @@
 package typings.fhir.r5Mod
 
+import typings.fhir.fhirStrings.`not-present`
+import typings.fhir.fhirStrings.complete
+import typings.fhir.fhirStrings.example
+import typings.fhir.fhirStrings.fragment
+import typings.fhir.fhirStrings.supplement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,9 +13,16 @@ trait TerminologyCapabilitiesCodeSystem
   extends StObject
      with BackboneElement {
   
+  var _content: js.UndefOr[Element] = js.undefined
+  
   var _subsumption: js.UndefOr[Element] = js.undefined
   
   var _uri: js.UndefOr[Element] = js.undefined
+  
+  /**
+    * The extent of the content of the code system (the concepts and codes it defines) are represented in this resource instance.
+    */
+  var content: `not-present` | example | fragment | complete | supplement
   
   /**
     * True if subsumption is supported for this version of the code system.
@@ -29,13 +41,15 @@ trait TerminologyCapabilitiesCodeSystem
 }
 object TerminologyCapabilitiesCodeSystem {
   
-  inline def apply(): TerminologyCapabilitiesCodeSystem = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(content: `not-present` | example | fragment | complete | supplement): TerminologyCapabilitiesCodeSystem = {
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
     __obj.asInstanceOf[TerminologyCapabilitiesCodeSystem]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: TerminologyCapabilitiesCodeSystem] (val x: Self) extends AnyVal {
+    
+    inline def setContent(value: `not-present` | example | fragment | complete | supplement): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     inline def setSubsumption(value: Boolean): Self = StObject.set(x, "subsumption", value.asInstanceOf[js.Any])
     
@@ -50,6 +64,10 @@ object TerminologyCapabilitiesCodeSystem {
     inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     
     inline def setVersionVarargs(value: TerminologyCapabilitiesCodeSystemVersion*): Self = StObject.set(x, "version", js.Array(value*))
+    
+    inline def set_content(value: Element): Self = StObject.set(x, "_content", value.asInstanceOf[js.Any])
+    
+    inline def set_contentUndefined: Self = StObject.set(x, "_content", js.undefined)
     
     inline def set_subsumption(value: Element): Self = StObject.set(x, "_subsumption", value.asInstanceOf[js.Any])
     

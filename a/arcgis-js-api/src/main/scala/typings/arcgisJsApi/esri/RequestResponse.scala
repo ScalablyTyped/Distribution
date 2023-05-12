@@ -21,6 +21,13 @@ trait RequestResponse extends StObject {
   var getHeader: js.UndefOr[GetHeader] = js.undefined
   
   /**
+    * _Since 4.26_ The status code of the http response.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#RequestResponse)
+    */
+  var httpStatus: js.UndefOr[Double] = js.undefined
+  
+  /**
     * The options specified by the user in the data request.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#RequestResponse)
@@ -58,6 +65,10 @@ object RequestResponse {
     inline def setGetHeader(value: /* headerName */ String => String): Self = StObject.set(x, "getHeader", js.Any.fromFunction1(value))
     
     inline def setGetHeaderUndefined: Self = StObject.set(x, "getHeader", js.undefined)
+    
+    inline def setHttpStatus(value: Double): Self = StObject.set(x, "httpStatus", value.asInstanceOf[js.Any])
+    
+    inline def setHttpStatusUndefined: Self = StObject.set(x, "httpStatus", js.undefined)
     
     inline def setRequestOptions(value: RequestOptions): Self = StObject.set(x, "requestOptions", value.asInstanceOf[js.Any])
     

@@ -10,11 +10,11 @@ trait RequestBodyResponses extends StObject {
   
   var requestBody: ContentApplicationjsonAccesstoken
   
-  var responses: `8`
+  var responses: `9`
 }
 object RequestBodyResponses {
   
-  inline def apply(parameters: PathClientid, requestBody: ContentApplicationjsonAccesstoken, responses: `8`): RequestBodyResponses = {
+  inline def apply(parameters: PathClientid, requestBody: ContentApplicationjsonAccesstoken, responses: `9`): RequestBodyResponses = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], requestBody = requestBody.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestBodyResponses]
   }
@@ -26,6 +26,6 @@ object RequestBodyResponses {
     
     inline def setRequestBody(value: ContentApplicationjsonAccesstoken): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `8`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `9`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

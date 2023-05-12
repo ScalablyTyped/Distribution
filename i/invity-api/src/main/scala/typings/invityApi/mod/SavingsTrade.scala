@@ -48,6 +48,9 @@ trait SavingsTrade extends StObject {
   
   var paymentMethod: js.UndefOr[SavingsPaymentMethod] = js.undefined
   
+  /** Indicates whether the user needs to be reauthorized in partner's system. Non-persistent value. */
+  var reauthorizationUrl: js.UndefOr[String] = js.undefined
+  
   /** Crypto address where provider sends crypto. */
   var receivingCryptoAddresses: js.UndefOr[js.Array[String]] = js.undefined
   
@@ -138,6 +141,10 @@ object SavingsTrade {
     inline def setPaymentMethod(value: SavingsPaymentMethod): Self = StObject.set(x, "paymentMethod", value.asInstanceOf[js.Any])
     
     inline def setPaymentMethodUndefined: Self = StObject.set(x, "paymentMethod", js.undefined)
+    
+    inline def setReauthorizationUrl(value: String): Self = StObject.set(x, "reauthorizationUrl", value.asInstanceOf[js.Any])
+    
+    inline def setReauthorizationUrlUndefined: Self = StObject.set(x, "reauthorizationUrl", js.undefined)
     
     inline def setReceivingCryptoAddresses(value: js.Array[String]): Self = StObject.set(x, "receivingCryptoAddresses", value.asInstanceOf[js.Any])
     

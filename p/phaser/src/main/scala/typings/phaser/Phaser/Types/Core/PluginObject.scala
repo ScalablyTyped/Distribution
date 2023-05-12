@@ -19,12 +19,12 @@ trait PluginObject extends StObject {
   /**
     * Global plugins to install.
     */
-  var global: js.UndefOr[js.Array[PluginObjectItem]] = js.undefined
+  var global: js.UndefOr[js.Array[PluginObjectItem] | Null] = js.undefined
   
   /**
     * Scene plugins to install.
     */
-  var scene: js.UndefOr[js.Array[PluginObjectItem]] = js.undefined
+  var scene: js.UndefOr[js.Array[PluginObjectItem] | Null] = js.undefined
 }
 object PluginObject {
   
@@ -50,11 +50,15 @@ object PluginObject {
     
     inline def setGlobal(value: js.Array[PluginObjectItem]): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
     
+    inline def setGlobalNull: Self = StObject.set(x, "global", null)
+    
     inline def setGlobalUndefined: Self = StObject.set(x, "global", js.undefined)
     
     inline def setGlobalVarargs(value: PluginObjectItem*): Self = StObject.set(x, "global", js.Array(value*))
     
     inline def setScene(value: js.Array[PluginObjectItem]): Self = StObject.set(x, "scene", value.asInstanceOf[js.Any])
+    
+    inline def setSceneNull: Self = StObject.set(x, "scene", null)
     
     inline def setSceneUndefined: Self = StObject.set(x, "scene", js.undefined)
     

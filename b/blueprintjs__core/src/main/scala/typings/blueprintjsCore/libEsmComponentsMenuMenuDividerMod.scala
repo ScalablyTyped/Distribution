@@ -16,7 +16,7 @@ object libEsmComponentsMenuMenuDividerMod {
     def this(props: MenuDividerProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: MenuDividerProps, context: Any) = this()
   }
@@ -42,6 +42,9 @@ object libEsmComponentsMenuMenuDividerMod {
     
     /** Optional header title. */
     var title: js.UndefOr[ReactNode] = js.undefined
+    
+    /** Optional `id` prop for the header title. */
+    var titleId: js.UndefOr[String] = js.undefined
   }
   object IMenuDividerProps {
     
@@ -54,6 +57,10 @@ object libEsmComponentsMenuMenuDividerMod {
     implicit open class MutableBuilder[Self <: IMenuDividerProps] (val x: Self) extends AnyVal {
       
       inline def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      
+      inline def setTitleId(value: String): Self = StObject.set(x, "titleId", value.asInstanceOf[js.Any])
+      
+      inline def setTitleIdUndefined: Self = StObject.set(x, "titleId", js.undefined)
       
       inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }

@@ -89,10 +89,10 @@ object mod extends Shortcut {
   @js.native
   trait Feathers extends StObject {
     
-    // tslint:disable-next-line no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
     def apply[T](): Application[T] = js.native
     
-    // tslint:disable-next-line no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
     def default[T](): Application[T] = js.native
     
     var SKIP: SkipSymbol = js.native

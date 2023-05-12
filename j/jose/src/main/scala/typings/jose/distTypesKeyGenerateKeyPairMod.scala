@@ -11,8 +11,8 @@ object distTypesKeyGenerateKeyPairMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def generateKeyPair(alg: String): js.Promise[GenerateKeyPairResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(alg.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GenerateKeyPairResult]]
-  inline def generateKeyPair(alg: String, options: GenerateKeyPairOptions): js.Promise[GenerateKeyPairResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(alg.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GenerateKeyPairResult]]
+  inline def generateKeyPair[T /* <: KeyLike */](alg: String): js.Promise[GenerateKeyPairResult[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(alg.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GenerateKeyPairResult[T]]]
+  inline def generateKeyPair[T /* <: KeyLike */](alg: String, options: GenerateKeyPairOptions): js.Promise[GenerateKeyPairResult[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateKeyPair")(alg.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GenerateKeyPairResult[T]]]
   
   trait GenerateKeyPairOptions extends StObject {
     
@@ -23,8 +23,8 @@ object distTypesKeyGenerateKeyPairMod {
     var crv: js.UndefOr[String] = js.undefined
     
     /**
-      * (Web Cryptography API specific) The value to use as
-      * [SubtleCrypto.generateKey()](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/generateKey)
+      * (Only effective in Web Crypto API runtimes) The value to use as
+      * {@link https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/generateKey SubtleCrypto.generateKey()}
       * `extractable` argument. Default is false.
       */
     var extractable: js.UndefOr[Boolean] = js.undefined
@@ -59,27 +59,27 @@ object distTypesKeyGenerateKeyPairMod {
     }
   }
   
-  trait GenerateKeyPairResult extends StObject {
+  trait GenerateKeyPairResult[T /* <: KeyLike */] extends StObject {
     
     /** The generated Private Key. */
-    var privateKey: KeyLike
+    var privateKey: T
     
     /** Public Key corresponding to the generated Private Key. */
-    var publicKey: KeyLike
+    var publicKey: T
   }
   object GenerateKeyPairResult {
     
-    inline def apply(privateKey: KeyLike, publicKey: KeyLike): GenerateKeyPairResult = {
+    inline def apply[T /* <: KeyLike */](privateKey: T, publicKey: T): GenerateKeyPairResult[T] = {
       val __obj = js.Dynamic.literal(privateKey = privateKey.asInstanceOf[js.Any], publicKey = publicKey.asInstanceOf[js.Any])
-      __obj.asInstanceOf[GenerateKeyPairResult]
+      __obj.asInstanceOf[GenerateKeyPairResult[T]]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: GenerateKeyPairResult] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: GenerateKeyPairResult[?], T /* <: KeyLike */] (val x: Self & GenerateKeyPairResult[T]) extends AnyVal {
       
-      inline def setPrivateKey(value: KeyLike): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
+      inline def setPrivateKey(value: T): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
       
-      inline def setPublicKey(value: KeyLike): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
+      inline def setPublicKey(value: T): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
     }
   }
 }

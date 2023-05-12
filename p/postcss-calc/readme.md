@@ -1,7 +1,7 @@
 
 # Scala.js typings for postcss-calc
 
-Typings are for version 8.2.4
+Typings are for version 9.0.1
 
 ## Library description:
 PostCSS plugin to reduce calc()

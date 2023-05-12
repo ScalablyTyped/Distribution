@@ -7,8 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("twilio/lib/jwt/AccessToken", "VideoGrant")
 @js.native
+/**
+  * @param options - ...
+  * @param options.room - The Room name or Room sid.
+  */
 open class VideoGrant ()
   extends Grant[VideoGrantOptions, VideoGrantPayload, video]
      with VideoGrantOptions {
-  def this(opts: VideoGrantOptions) = this()
+  def this(options: VideoGrantOptions) = this()
 }

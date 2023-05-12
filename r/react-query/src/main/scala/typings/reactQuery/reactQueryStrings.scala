@@ -50,6 +50,10 @@ object reactQueryStrings {
   inline def Numbersignfff: Numbersignfff = "#fff".asInstanceOf[Numbersignfff]
   
   @js.native
+  sealed trait _empty extends StObject
+  inline def _empty: _empty = "".asInstanceOf[_empty]
+  
+  @js.native
   sealed trait a extends StObject
   inline def a: a = "a".asInstanceOf[a]
   
@@ -88,6 +92,10 @@ object reactQueryStrings {
   @js.native
   sealed trait always extends StObject
   inline def always: always = "always".asInstanceOf[always]
+  
+  @js.native
+  sealed trait anonymous extends StObject
+  inline def anonymous: anonymous = "anonymous".asInstanceOf[anonymous]
   
   @js.native
   sealed trait area extends StObject
@@ -812,6 +820,10 @@ object reactQueryStrings {
   @js.native
   sealed trait url extends StObject
   inline def url: url = "url".asInstanceOf[url]
+  
+  @js.native
+  sealed trait `use-credentials` extends StObject
+  inline def `use-credentials`: `use-credentials` = "use-credentials".asInstanceOf[`use-credentials`]
   
   @js.native
   sealed trait user extends StObject

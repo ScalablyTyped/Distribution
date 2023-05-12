@@ -10,7 +10,7 @@ import typings.wordpressBlockEditor.mod.EditorSelection
 import typings.wordpressBlockEditor.mod.EditorSettings
 import typings.wordpressBlockEditor.wordpressBlockEditorInts.`-1`
 import typings.wordpressBlockEditor.wordpressBlockEditorInts.`1`
-import typings.wordpressBlocks.mod.BlockInstance
+import typings.wordpressBlocks.BlockInstance
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

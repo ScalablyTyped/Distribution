@@ -13,52 +13,8 @@ object libTextStyleMod {
   @JSImport("@pixi/text/lib/TextStyle", "TextStyle")
   @js.native
   /**
-    * @param {object} [style] - The style parameters
-    * @param {string} [style.align='left'] - Alignment for multiline text ('left', 'center' or 'right'),
-    *  does not affect single line text
-    * @param {boolean} [style.breakWords=false] - Indicates if lines can be wrapped within words, it
-    *  needs wordWrap to be set to true
-    * @param {boolean} [style.dropShadow=false] - Set a drop shadow for the text
-    * @param {number} [style.dropShadowAlpha=1] - Set alpha for the drop shadow
-    * @param {number} [style.dropShadowAngle=Math.PI/6] - Set a angle of the drop shadow
-    * @param {number} [style.dropShadowBlur=0] - Set a shadow blur radius
-    * @param {string|number} [style.dropShadowColor='black'] - A fill style to be used on the dropshadow e.g 'red', '#00FF00'
-    * @param {number} [style.dropShadowDistance=5] - Set a distance of the drop shadow
-    * @param {string|string[]|number|number[]|CanvasGradient|CanvasPattern} [style.fill='black'] - A canvas
-    *  fillstyle that will be used on the text e.g 'red', '#00FF00'. Can be an array to create a gradient
-    *  eg ['#000000','#FFFFFF']
-    * {@link https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/fillStyle|MDN}
-    * @param {number} [style.fillGradientType=PIXI.TEXT_GRADIENT.LINEAR_VERTICAL] - If fill is an array of colours
-    *  to create a gradient, this can change the type/direction of the gradient. See {@link PIXI.TEXT_GRADIENT}
-    * @param {number[]} [style.fillGradientStops] - If fill is an array of colours to create a gradient, this array can set
-    * the stop points (numbers between 0 and 1) for the color, overriding the default behaviour of evenly spacing them.
-    * @param {string|string[]} [style.fontFamily='Arial'] - The font family
-    * @param {number|string} [style.fontSize=26] - The font size (as a number it converts to px, but as a string,
-    *  equivalents are '26px','20pt','160%' or '1.6em')
-    * @param {string} [style.fontStyle='normal'] - The font style ('normal', 'italic' or 'oblique')
-    * @param {string} [style.fontVariant='normal'] - The font variant ('normal' or 'small-caps')
-    * @param {string} [style.fontWeight='normal'] - The font weight ('normal', 'bold', 'bolder', 'lighter' and '100',
-    *  '200', '300', '400', '500', '600', '700', '800' or '900')
-    * @param {number} [style.leading=0] - The space between lines
-    * @param {number} [style.letterSpacing=0] - The amount of spacing between letters, default is 0
-    * @param {number} [style.lineHeight] - The line height, a number that represents the vertical space that a letter uses
-    * @param {string} [style.lineJoin='miter'] - The lineJoin property sets the type of corner created, it can resolve
-    *      spiked text issues. Possible values "miter" (creates a sharp corner), "round" (creates a round corner) or "bevel"
-    *      (creates a squared corner).
-    * @param {number} [style.miterLimit=10] - The miter limit to use when using the 'miter' lineJoin mode. This can reduce
-    *      or increase the spikiness of rendered text.
-    * @param {number} [style.padding=0] - Occasionally some fonts are cropped. Adding some padding will prevent this from
-    *     happening by adding padding to all sides of the text.
-    * @param {string|number} [style.stroke='black'] - A canvas fillstyle that will be used on the text stroke
-    *  e.g 'blue', '#FCFF00'
-    * @param {number} [style.strokeThickness=0] - A number that represents the thickness of the stroke.
-    *  Default is 0 (no stroke)
-    * @param {boolean} [style.trim=false] - Trim transparent borders
-    * @param {string} [style.textBaseline='alphabetic'] - The baseline of the text that is rendered.
-    * @param {string} [style.whiteSpace='pre'] - Determines whether newlines & spaces are collapsed or preserved "normal"
-    *      (collapse, collapse), "pre" (preserve, preserve) | "pre-line" (preserve, collapse). It needs wordWrap to be set to true
-    * @param {boolean} [style.wordWrap=false] - Indicates if word wrap should be used
-    * @param {number} [style.wordWrapWidth=100] - The width at which text will wrap, it needs wordWrap to be set to true
+    * @param style - TextStyle properties to be set on the text. See {@link PIXI.TextStyle.defaultStyle}
+    *       for the default values.
     */
   open class TextStyle ()
     extends StObject
@@ -123,49 +79,60 @@ object libTextStyleMod {
     
     /* protected */ var _wordWrapWidth: Double = js.native
     
+    /**
+      * Alignment for multiline text, does not affect single line text
+      * @type {'left'|'center'|'right'|'justify'}
+      */
     /* CompleteClass */
     var align: TextStyleAlign = js.native
     /**
-      * Alignment for multiline text ('left', 'center' or 'right'), does not affect single line text
+      * Alignment for multiline text, does not affect single line text.
       *
-      * @member {string}
+      * @member {'left'|'center'|'right'|'justify'}
       */
     @JSName("align")
     def align_MTextStyle: TextStyleAlign = js.native
     
+    /** Indicates if lines can be wrapped within words, it needs wordWrap to be set to true */
     /* CompleteClass */
     var breakWords: Boolean = js.native
     /** Indicates if lines can be wrapped within words, it needs wordWrap to be set to true. */
     @JSName("breakWords")
     def breakWords_MTextStyle: Boolean = js.native
     
+    /** Set a drop shadow for the text */
     /* CompleteClass */
     var dropShadow: Boolean = js.native
     
+    /** Set alpha for the drop shadow */
     /* CompleteClass */
     var dropShadowAlpha: Double = js.native
     /** Set alpha for the drop shadow. */
     @JSName("dropShadowAlpha")
     def dropShadowAlpha_MTextStyle: Double = js.native
     
+    /** Set a angle of the drop shadow */
     /* CompleteClass */
     var dropShadowAngle: Double = js.native
     /** Set a angle of the drop shadow. */
     @JSName("dropShadowAngle")
     def dropShadowAngle_MTextStyle: Double = js.native
     
+    /** Set a shadow blur radius */
     /* CompleteClass */
     var dropShadowBlur: Double = js.native
     /** Set a shadow blur radius. */
     @JSName("dropShadowBlur")
     def dropShadowBlur_MTextStyle: Double = js.native
     
+    /** A fill style to be used on the dropshadow e.g., 'red', '#00FF00' */
     /* CompleteClass */
     var dropShadowColor: String | Double = js.native
-    /** A fill style to be used on the dropshadow e.g 'red', '#00FF00'. */
+    /** A fill style to be used on the dropshadow e.g., 'red', '#00FF00'. */
     @JSName("dropShadowColor")
     def dropShadowColor_MTextStyle: Double | String = js.native
     
+    /** Set a distance of the drop shadow */
     /* CompleteClass */
     var dropShadowDistance: Double = js.native
     /** Set a distance of the drop shadow. */
@@ -176,9 +143,20 @@ object libTextStyleMod {
     @JSName("dropShadow")
     def dropShadow_MTextStyle: Boolean = js.native
     
+    /**
+      * A canvas fillstyle that will be used on the text e.g., 'red', '#00FF00'.
+      * Can be an array to create a gradient, e.g., `['#000000','#FFFFFF']`
+      * {@link https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/fillStyle|MDN}
+      * @type {string|string[]|number|number[]|CanvasGradient|CanvasPattern}
+      */
     /* CompleteClass */
     var fill: TextStyleFill = js.native
     
+    /**
+      * If fill is an array of colours to create a gradient, this array can set
+      * the stop points (numbers between 0 and 1) for the color, overriding the
+      * default behaviour of evenly spacing them.
+      */
     /* CompleteClass */
     var fillGradientStops: js.Array[Double] = js.native
     /**
@@ -188,20 +166,25 @@ object libTextStyleMod {
     @JSName("fillGradientStops")
     def fillGradientStops_MTextStyle: js.Array[Double] = js.native
     
+    /**
+      * If fill is an array of colours to create a gradient, this can change the
+      * type/direction of the gradient. See {@link PIXI.TEXT_GRADIENT}
+      * @type {PIXI.TEXT_GRADIENT}
+      */
     /* CompleteClass */
     var fillGradientType: TEXT_GRADIENT = js.native
     /**
       * If fill is an array of colours to create a gradient, this can change the type/direction of the gradient.
       *
-      * @see PIXI.TEXT_GRADIENT
+      * @type {PIXI.TEXT_GRADIENT}
       */
     @JSName("fillGradientType")
     def fillGradientType_MTextStyle: TEXT_GRADIENT = js.native
     
     /**
-      * A canvas fillstyle that will be used on the text e.g 'red', '#00FF00'.
+      * A canvas fillstyle that will be used on the text e.g., 'red', '#00FF00'.
       *
-      * Can be an array to create a gradient eg ['#000000','#FFFFFF']
+      * Can be an array to create a gradient e.g., `['#000000','#FFFFFF']`
       * {@link https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/fillStyle|MDN}
       *
       * @member {string|string[]|number|number[]|CanvasGradient|CanvasPattern}
@@ -209,12 +192,23 @@ object libTextStyleMod {
     @JSName("fill")
     def fill_MTextStyle: TextStyleFill = js.native
     
+    /**
+      * The font family, can be a single font name, or a list of names where the first
+      * is the preferred font.
+      */
     /* CompleteClass */
     var fontFamily: String | js.Array[String] = js.native
-    /** The font family. */
+    /**
+      * The font family, can be a single font name, or a list of names where the first
+      * is the preferred font.
+      */
     @JSName("fontFamily")
     def fontFamily_MTextStyle: String | js.Array[String] = js.native
     
+    /**
+      * The font size (as a number it converts to px, but as a string,
+      * equivalents are '26px','20pt','160%' or '1.6em')
+      */
     /* CompleteClass */
     var fontSize: Double | String = js.native
     /**
@@ -224,68 +218,90 @@ object libTextStyleMod {
     @JSName("fontSize")
     def fontSize_MTextStyle: Double | String = js.native
     
+    /**
+      * The font style.
+      * @type {'normal'|'italic'|'oblique'}
+      */
     /* CompleteClass */
     var fontStyle: TextStyleFontStyle = js.native
     /**
-      * The font style
-      * ('normal', 'italic' or 'oblique')
+      * The font style.
       *
-      * @member {string}
+      * @member {'normal'|'italic'|'oblique'}
       */
     @JSName("fontStyle")
     def fontStyle_MTextStyle: TextStyleFontStyle = js.native
     
+    /**
+      * The font variant.
+      * @type {'normal'|'small-caps'}
+      */
     /* CompleteClass */
     var fontVariant: TextStyleFontVariant = js.native
     /**
-      * The font variant
-      * ('normal' or 'small-caps')
+      * The font variant.
       *
-      * @member {string}
+      * @member {'normal'|'small-caps'}
       */
     @JSName("fontVariant")
     def fontVariant_MTextStyle: TextStyleFontVariant = js.native
     
+    /**
+      * The font weight.
+      * @type {'normal'|'bold'|'bolder'|'lighter'|'100'|'200'|'300'|'400'|'500'|'600'|'700'|'800'|'900'}
+      */
     /* CompleteClass */
     var fontWeight: TextStyleFontWeight = js.native
     /**
-      * The font weight
-      * ('normal', 'bold', 'bolder', 'lighter' and '100', '200', '300', '400', '500', '600', '700', 800' or '900')
+      * The font weight.
       *
-      * @member {string}
+      * @member {'normal'|'bold'|'bolder'|'lighter'|'100'|'200'|'300'|'400'|'500'|'600'|'700'|'800'|'900'}
       */
     @JSName("fontWeight")
     def fontWeight_MTextStyle: TextStyleFontWeight = js.native
     
+    /** The height of the line, a number that represents the vertical space that a letter uses. */
     /* CompleteClass */
     var leading: Double = js.native
     /** The space between lines. */
     @JSName("leading")
     def leading_MTextStyle: Double = js.native
     
+    /** The amount of spacing between letters, default is 0 */
     /* CompleteClass */
     var letterSpacing: Double = js.native
     /** The amount of spacing between letters, default is 0. */
     @JSName("letterSpacing")
     def letterSpacing_MTextStyle: Double = js.native
     
+    /** The line height, a number that represents the vertical space that a letter uses */
     /* CompleteClass */
     var lineHeight: Double = js.native
     /** The line height, a number that represents the vertical space that a letter uses. */
     @JSName("lineHeight")
     def lineHeight_MTextStyle: Double = js.native
     
+    /**
+      * The lineJoin property sets the type of corner created, it can resolve
+      * spiked text issues. Possible values "miter" (creates a sharp corner),
+      * "round" (creates a round corner) or "bevel" (creates a squared corner).
+      * @type {'miter'|'round'|'bevel'}
+      */
     /* CompleteClass */
     var lineJoin: TextStyleLineJoin = js.native
     /**
       * The lineJoin property sets the type of corner created, it can resolve spiked text issues.
       * Default is 'miter' (creates a sharp corner).
       *
-      * @member {string}
+      * @member {'miter'|'round'|'bevel'}
       */
     @JSName("lineJoin")
     def lineJoin_MTextStyle: TextStyleLineJoin = js.native
     
+    /**
+      * The miter limit to use when using the 'miter' lineJoin mode. This can reduce
+      * or increase the spikiness of rendered text.
+      */
     /* CompleteClass */
     var miterLimit: Double = js.native
     /**
@@ -296,6 +312,10 @@ object libTextStyleMod {
     @JSName("miterLimit")
     def miterLimit_MTextStyle: Double = js.native
     
+    /**
+      * Occasionally some fonts are cropped. Adding some padding will prevent this from
+      * happening by adding padding to all sides of the text.
+      */
     /* CompleteClass */
     var padding: Double = js.native
     /**
@@ -308,9 +328,11 @@ object libTextStyleMod {
     /** Resets all properties to the defaults specified in TextStyle.prototype._default */
     def reset(): Unit = js.native
     
+    /** A canvas fillstyle that will be used on the text stroke, e.g., 'blue', '#FCFF00' */
     /* CompleteClass */
     var stroke: String | Double = js.native
     
+    /** A number that represents the thickness of the stroke. A value of 0 will disable stroke. */
     /* CompleteClass */
     var strokeThickness: Double = js.native
     /**
@@ -322,20 +344,23 @@ object libTextStyleMod {
     def strokeThickness_MTextStyle: Double = js.native
     
     /**
-      * A canvas fillstyle that will be used on the text stroke
-      * e.g 'blue', '#FCFF00'
+      * A canvas fillstyle that will be used on the text stroke, e.g., 'blue', '#FCFF00'
       */
     @JSName("stroke")
     def stroke_MTextStyle: String | Double = js.native
     
     var styleID: Double = js.native
     
+    /**
+      * The baseline of the text that is rendered.
+      * @type {'alphabetic'|'top'|'hanging'|'middle'|'ideographic'|'bottom'}
+      */
     /* CompleteClass */
     var textBaseline: TextStyleTextBaseline = js.native
     /**
       * The baseline of the text that is rendered.
       *
-      * @member {string}
+      * @member {'alphabetic'|'top'|'hanging'|'middle'|'ideographic'|'bottom'}
       */
     @JSName("textBaseline")
     def textBaseline_MTextStyle: TextStyleTextBaseline = js.native
@@ -347,12 +372,19 @@ object libTextStyleMod {
       */
     def toFontString(): String = js.native
     
+    /** Trim transparent borders */
     /* CompleteClass */
     var trim: Boolean = js.native
     /** Trim transparent borders. */
     @JSName("trim")
     def trim_MTextStyle: Boolean = js.native
     
+    /**
+      * Determines whether newlines & spaces are collapsed or preserved "normal"
+      * (collapse, collapse), "pre" (preserve, preserve) | "pre-line" (preserve,
+      * collapse). It needs wordWrap to be set to true.
+      * @type {'normal'|'pre'|'pre-line'}
+      */
     /* CompleteClass */
     var whiteSpace: TextStyleWhiteSpace = js.native
     /**
@@ -365,14 +397,16 @@ object libTextStyleMod {
       * 'pre'        | Preserve      |   Preserve
       * 'pre-line'   | Preserve      |   Collapse
       *
-      * @member {string}
+      * @member {'normal'|'pre'|'pre-line'}
       */
     @JSName("whiteSpace")
     def whiteSpace_MTextStyle: TextStyleWhiteSpace = js.native
     
+    /** Indicates if word wrap should be used */
     /* CompleteClass */
     var wordWrap: Boolean = js.native
     
+    /** The width at which text will wrap, it needs wordWrap to be set to true */
     /* CompleteClass */
     var wordWrapWidth: Double = js.native
     /** The width at which text will wrap, it needs wordWrap to be set to true. */
@@ -383,65 +417,160 @@ object libTextStyleMod {
     @JSName("wordWrap")
     def wordWrap_MTextStyle: Boolean = js.native
   }
+  /* static members */
+  object TextStyle {
+    
+    @JSImport("@pixi/text/lib/TextStyle", "TextStyle")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * Default style options used for all TextStyle instances.
+      * @type {PIXI.ITextStyle}
+      */
+    @JSImport("@pixi/text/lib/TextStyle", "TextStyle.defaultStyle")
+    @js.native
+    def defaultStyle: ITextStyle = js.native
+    inline def defaultStyle_=(x: ITextStyle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultStyle")(x.asInstanceOf[js.Any])
+  }
   
   trait ITextStyle extends StObject {
     
+    /**
+      * Alignment for multiline text, does not affect single line text
+      * @type {'left'|'center'|'right'|'justify'}
+      */
     var align: TextStyleAlign
     
+    /** Indicates if lines can be wrapped within words, it needs wordWrap to be set to true */
     var breakWords: Boolean
     
+    /** Set a drop shadow for the text */
     var dropShadow: Boolean
     
+    /** Set alpha for the drop shadow */
     var dropShadowAlpha: Double
     
+    /** Set a angle of the drop shadow */
     var dropShadowAngle: Double
     
+    /** Set a shadow blur radius */
     var dropShadowBlur: Double
     
+    /** A fill style to be used on the dropshadow e.g., 'red', '#00FF00' */
     var dropShadowColor: String | Double
     
+    /** Set a distance of the drop shadow */
     var dropShadowDistance: Double
     
+    /**
+      * A canvas fillstyle that will be used on the text e.g., 'red', '#00FF00'.
+      * Can be an array to create a gradient, e.g., `['#000000','#FFFFFF']`
+      * {@link https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/fillStyle|MDN}
+      * @type {string|string[]|number|number[]|CanvasGradient|CanvasPattern}
+      */
     var fill: TextStyleFill
     
+    /**
+      * If fill is an array of colours to create a gradient, this array can set
+      * the stop points (numbers between 0 and 1) for the color, overriding the
+      * default behaviour of evenly spacing them.
+      */
     var fillGradientStops: js.Array[Double]
     
+    /**
+      * If fill is an array of colours to create a gradient, this can change the
+      * type/direction of the gradient. See {@link PIXI.TEXT_GRADIENT}
+      * @type {PIXI.TEXT_GRADIENT}
+      */
     var fillGradientType: TEXT_GRADIENT
     
+    /**
+      * The font family, can be a single font name, or a list of names where the first
+      * is the preferred font.
+      */
     var fontFamily: String | js.Array[String]
     
+    /**
+      * The font size (as a number it converts to px, but as a string,
+      * equivalents are '26px','20pt','160%' or '1.6em')
+      */
     var fontSize: Double | String
     
+    /**
+      * The font style.
+      * @type {'normal'|'italic'|'oblique'}
+      */
     var fontStyle: TextStyleFontStyle
     
+    /**
+      * The font variant.
+      * @type {'normal'|'small-caps'}
+      */
     var fontVariant: TextStyleFontVariant
     
+    /**
+      * The font weight.
+      * @type {'normal'|'bold'|'bolder'|'lighter'|'100'|'200'|'300'|'400'|'500'|'600'|'700'|'800'|'900'}
+      */
     var fontWeight: TextStyleFontWeight
     
+    /** The height of the line, a number that represents the vertical space that a letter uses. */
     var leading: Double
     
+    /** The amount of spacing between letters, default is 0 */
     var letterSpacing: Double
     
+    /** The line height, a number that represents the vertical space that a letter uses */
     var lineHeight: Double
     
+    /**
+      * The lineJoin property sets the type of corner created, it can resolve
+      * spiked text issues. Possible values "miter" (creates a sharp corner),
+      * "round" (creates a round corner) or "bevel" (creates a squared corner).
+      * @type {'miter'|'round'|'bevel'}
+      */
     var lineJoin: TextStyleLineJoin
     
+    /**
+      * The miter limit to use when using the 'miter' lineJoin mode. This can reduce
+      * or increase the spikiness of rendered text.
+      */
     var miterLimit: Double
     
+    /**
+      * Occasionally some fonts are cropped. Adding some padding will prevent this from
+      * happening by adding padding to all sides of the text.
+      */
     var padding: Double
     
+    /** A canvas fillstyle that will be used on the text stroke, e.g., 'blue', '#FCFF00' */
     var stroke: String | Double
     
+    /** A number that represents the thickness of the stroke. A value of 0 will disable stroke. */
     var strokeThickness: Double
     
+    /**
+      * The baseline of the text that is rendered.
+      * @type {'alphabetic'|'top'|'hanging'|'middle'|'ideographic'|'bottom'}
+      */
     var textBaseline: TextStyleTextBaseline
     
+    /** Trim transparent borders */
     var trim: Boolean
     
+    /**
+      * Determines whether newlines & spaces are collapsed or preserved "normal"
+      * (collapse, collapse), "pre" (preserve, preserve) | "pre-line" (preserve,
+      * collapse). It needs wordWrap to be set to true.
+      * @type {'normal'|'pre'|'pre-line'}
+      */
     var whiteSpace: TextStyleWhiteSpace
     
+    /** Indicates if word wrap should be used */
     var wordWrap: Boolean
     
+    /** The width at which text will wrap, it needs wordWrap to be set to true */
     var wordWrapWidth: Double
   }
   object ITextStyle {

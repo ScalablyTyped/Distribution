@@ -1,5 +1,9 @@
 package typings.std
 
+import typings.std.stdInts.`0`
+import typings.std.stdInts.`1`
+import typings.std.stdInts.`2`
+import typings.std.stdInts.`3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,16 +15,16 @@ trait Range
      with AbstractRange {
   
   /* standard dom */
-  val END_TO_END: Double = js.native
+  val END_TO_END: `2` = js.native
   
   /* standard dom */
-  val END_TO_START: Double = js.native
+  val END_TO_START: `3` = js.native
   
   /* standard dom */
-  val START_TO_END: Double = js.native
+  val START_TO_END: `1` = js.native
   
   /* standard dom */
-  val START_TO_START: Double = js.native
+  val START_TO_START: `0` = js.native
   
   /* standard dom */
   def cloneContents(): DocumentFragment = js.native

@@ -57,7 +57,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined {  defaultVisible :boolean | undefined,   visible :boolean | undefined,   onVisibleChange :(visible : boolean): void | undefined,   getContainer :antd-mobile.antd-mobile/es/utils/render-to-container.GetContainer | undefined,   destroyOnHide :boolean | undefined,   children :react.react.ReactElement,   mode :'dark' | 'light' | undefined,   trigger :'click' | undefined,   placement :antd-mobile.antd-mobile/es/components/popover.DeprecatedPlacement | antd-mobile.antd-mobile/es/components/popover.Placement | undefined,   stopPropagation :std.Array<'click'> | undefined,   content :react.react.ReactNode,   className :string | undefined,   style :react.react.CSSProperties & std.Partial<std.Record<'--z-index', string>> | undefined,   tabIndex :number | undefined} & react.react.AriaAttributes & react.react.RefAttributes<antd-mobile.antd-mobile/es/components/popover/popover.PopoverRef> */
+/* Inlined {  defaultVisible :boolean | undefined,   visible :boolean | undefined,   onVisibleChange :(visible : boolean): void | undefined,   getContainer :antd-mobile.antd-mobile/es/utils/render-to-container.GetContainer | undefined,   destroyOnHide :boolean | undefined,   children :react.react.ReactElement,   mode :'dark' | 'light' | undefined,   trigger :'click' | undefined,   placement :antd-mobile.antd-mobile/es/components/popover.DeprecatedPlacement | antd-mobile.antd-mobile/es/components/popover.Placement | undefined,   stopPropagation :std.Array<'click'> | undefined,   content :react.react.ReactNode,   className :string | undefined,   style :react.react.CSSProperties & std.Partial<std.Record<'--z-index' | '--arrow-size', string>> | undefined,   tabIndex :number | undefined} & react.react.AriaAttributes & react.react.RefAttributes<antd-mobile.antd-mobile/es/components/popover/popover.PopoverRef> */
 trait defaultVisiblebooleanunde extends StObject {
   
   /** Identifies the currently active element when DOM focus is on a composite widget, textbox, group, or application. */
@@ -314,11 +314,16 @@ trait defaultVisiblebooleanunde extends StObject {
   
   var placement: js.UndefOr[DeprecatedPlacement | Placement] = js.undefined
   
+  /**
+    * Allows getting a ref to the component instance.
+    * Once the component unmounts, React will set `ref.current` to `null` (or call the ref with `null` if you passed a callback ref).
+    * @see https://react.dev/learn/referencing-values-with-refs#refs-and-the-dom
+    */
   var ref: js.UndefOr[Ref[PopoverRef]] = js.undefined
   
   var stopPropagation: js.UndefOr[js.Array[click]] = js.undefined
   
-  var style: js.UndefOr[CSSPropertiesPartialRecorAlignmentBaseline] = js.undefined
+  var style: js.UndefOr[CSSPropertiesPartialRecorArrowsize] = js.undefined
   
   var tabIndex: js.UndefOr[Double] = js.undefined
   
@@ -588,7 +593,7 @@ object defaultVisiblebooleanunde {
     
     inline def setStopPropagationVarargs(value: click*): Self = StObject.set(x, "stopPropagation", js.Array(value*))
     
-    inline def setStyle(value: CSSPropertiesPartialRecorAlignmentBaseline): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: CSSPropertiesPartialRecorArrowsize): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     

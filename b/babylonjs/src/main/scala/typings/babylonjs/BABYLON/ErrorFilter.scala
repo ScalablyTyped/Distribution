@@ -11,6 +11,11 @@ sealed trait ErrorFilter extends StObject
 object ErrorFilter extends StObject {
   
   @js.native
+  sealed trait Internal
+    extends StObject
+       with ErrorFilter
+  
+  @js.native
   sealed trait OutOfMemory
     extends StObject
        with ErrorFilter

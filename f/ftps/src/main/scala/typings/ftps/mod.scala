@@ -69,6 +69,8 @@ object mod {
     
     var autoConfirm: js.UndefOr[Boolean] = js.undefined
     
+    var bareCredentials: js.UndefOr[String] = js.undefined
+    
     var cwd: js.UndefOr[String] = js.undefined
     
     var escape: js.UndefOr[Boolean] = js.undefined
@@ -90,6 +92,8 @@ object mod {
     var retryInterval: js.UndefOr[Double] = js.undefined
     
     var retryIntervalMultiplier: js.UndefOr[Double] = js.undefined
+    
+    var sshKeyOptions: js.UndefOr[String] = js.undefined
     
     var sshKeyPath: js.UndefOr[String] = js.undefined
     
@@ -114,6 +118,10 @@ object mod {
       inline def setAutoConfirm(value: Boolean): Self = StObject.set(x, "autoConfirm", value.asInstanceOf[js.Any])
       
       inline def setAutoConfirmUndefined: Self = StObject.set(x, "autoConfirm", js.undefined)
+      
+      inline def setBareCredentials(value: String): Self = StObject.set(x, "bareCredentials", value.asInstanceOf[js.Any])
+      
+      inline def setBareCredentialsUndefined: Self = StObject.set(x, "bareCredentials", js.undefined)
       
       inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
@@ -156,6 +164,10 @@ object mod {
       inline def setRetryIntervalMultiplierUndefined: Self = StObject.set(x, "retryIntervalMultiplier", js.undefined)
       
       inline def setRetryIntervalUndefined: Self = StObject.set(x, "retryInterval", js.undefined)
+      
+      inline def setSshKeyOptions(value: String): Self = StObject.set(x, "sshKeyOptions", value.asInstanceOf[js.Any])
+      
+      inline def setSshKeyOptionsUndefined: Self = StObject.set(x, "sshKeyOptions", js.undefined)
       
       inline def setSshKeyPath(value: String): Self = StObject.set(x, "sshKeyPath", value.asInstanceOf[js.Any])
       

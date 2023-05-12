@@ -34,6 +34,22 @@ trait ɵDirectiveDef[T] extends StObject {
   val features: js.Array[DirectiveDefFeature] | Null
   
   /**
+    * Function that will add the host directives to the list of matches during directive matching.
+    * Patched onto the definition by the `HostDirectivesFeature`.
+    * @param currentDef Definition that has been matched.
+    * @param matchedDefs List of all matches for a specified node. Will be mutated to include the
+    * host directives.
+    * @param hostDirectiveDefs Mapping of directive definitions to their host directive
+    * configuration. Host directives will be added to the map as they're being matched to the node.
+    */
+  var findHostDirectiveDefs: (js.Function3[
+    /* currentDef */ ɵDirectiveDef[Any], 
+    /* matchedDefs */ js.Array[ɵDirectiveDef[Any]], 
+    /* hostDirectiveDefs */ HostDirectiveDefs, 
+    Unit
+  ]) | Null
+  
+  /**
     * Assign static attribute values to a host element.
     *
     * This property will assign static attribute values as well as class and style
@@ -69,6 +85,9 @@ trait ɵDirectiveDef[T] extends StObject {
     * Refreshes host bindings on the associated directive.
     */
   val hostBindings: HostBindingsFunction[T] | Null
+  
+  /** Additional directives to be applied whenever the directive has been matched. */
+  var hostDirectives: js.Array[HostDirectiveDef[Any]] | Null
   
   /**
     * The number of bindings in this directive `hostBindings` (including pure fn bindings).
@@ -137,7 +156,7 @@ object ɵDirectiveDef {
     standalone: Boolean,
     `type`: Type[T]
   ): ɵDirectiveDef[T] = {
-    val __obj = js.Dynamic.literal(declaredInputs = declaredInputs.asInstanceOf[js.Any], hostVars = hostVars.asInstanceOf[js.Any], inputs = inputs.asInstanceOf[js.Any], outputs = outputs.asInstanceOf[js.Any], selectors = selectors.asInstanceOf[js.Any], standalone = standalone.asInstanceOf[js.Any], contentQueries = null, exportAs = null, factory = null, features = null, hostAttrs = null, hostBindings = null, providersResolver = null, setInput = null, viewQuery = null)
+    val __obj = js.Dynamic.literal(declaredInputs = declaredInputs.asInstanceOf[js.Any], hostVars = hostVars.asInstanceOf[js.Any], inputs = inputs.asInstanceOf[js.Any], outputs = outputs.asInstanceOf[js.Any], selectors = selectors.asInstanceOf[js.Any], standalone = standalone.asInstanceOf[js.Any], contentQueries = null, exportAs = null, factory = null, features = null, findHostDirectiveDefs = null, hostAttrs = null, hostBindings = null, hostDirectives = null, providersResolver = null, setInput = null, viewQuery = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ɵDirectiveDef[T]]
   }
@@ -169,6 +188,12 @@ object ɵDirectiveDef {
     
     inline def setFeaturesVarargs(value: DirectiveDefFeature*): Self = StObject.set(x, "features", js.Array(value*))
     
+    inline def setFindHostDirectiveDefs(
+      value: (/* currentDef */ ɵDirectiveDef[Any], /* matchedDefs */ js.Array[ɵDirectiveDef[Any]], /* hostDirectiveDefs */ HostDirectiveDefs) => Unit
+    ): Self = StObject.set(x, "findHostDirectiveDefs", js.Any.fromFunction3(value))
+    
+    inline def setFindHostDirectiveDefsNull: Self = StObject.set(x, "findHostDirectiveDefs", null)
+    
     inline def setHostAttrs(value: TAttributes): Self = StObject.set(x, "hostAttrs", value.asInstanceOf[js.Any])
     
     inline def setHostAttrsNull: Self = StObject.set(x, "hostAttrs", null)
@@ -178,6 +203,12 @@ object ɵDirectiveDef {
     inline def setHostBindings(value: (/* rf */ ɵRenderFlags, T) => Unit): Self = StObject.set(x, "hostBindings", js.Any.fromFunction2(value))
     
     inline def setHostBindingsNull: Self = StObject.set(x, "hostBindings", null)
+    
+    inline def setHostDirectives(value: js.Array[HostDirectiveDef[Any]]): Self = StObject.set(x, "hostDirectives", value.asInstanceOf[js.Any])
+    
+    inline def setHostDirectivesNull: Self = StObject.set(x, "hostDirectives", null)
+    
+    inline def setHostDirectivesVarargs(value: HostDirectiveDef[Any]*): Self = StObject.set(x, "hostDirectives", js.Array(value*))
     
     inline def setHostVars(value: Double): Self = StObject.set(x, "hostVars", value.asInstanceOf[js.Any])
     

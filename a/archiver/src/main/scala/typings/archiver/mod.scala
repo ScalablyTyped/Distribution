@@ -15,12 +15,12 @@ import typings.archiver.archiverStrings.pipe
 import typings.archiver.archiverStrings.progress
 import typings.archiver.archiverStrings.unpipe
 import typings.archiver.archiverStrings.warning
-import typings.glob.mod.IOptions
 import typings.node.bufferMod.global.Buffer
 import typings.node.fsMod.Stats
 import typings.node.streamMod.Readable
 import typings.node.streamMod.Transform
 import typings.node.zlibMod.ZlibOptions
+import typings.readdirGlob.mod.Options
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -97,8 +97,8 @@ object mod {
     
     def glob(pattern: String): this.type = js.native
     def glob(pattern: String, options: Unit, data: PartialEntryData): this.type = js.native
-    def glob(pattern: String, options: IOptions): this.type = js.native
-    def glob(pattern: String, options: IOptions, data: PartialEntryData): this.type = js.native
+    def glob(pattern: String, options: GlobOptions): this.type = js.native
+    def glob(pattern: String, options: GlobOptions, data: PartialEntryData): this.type = js.native
     
     def on(event: close | drain | finish, listener: js.Function0[Unit]): this.type = js.native
     def on(
@@ -230,6 +230,29 @@ object mod {
     inline def tar: typings.archiver.archiverStrings.tar = "tar".asInstanceOf[typings.archiver.archiverStrings.tar]
     
     inline def zip: typings.archiver.archiverStrings.zip = "zip".asInstanceOf[typings.archiver.archiverStrings.zip]
+  }
+  
+  // This library adds `cwd` to the options
+  trait GlobOptions
+    extends StObject
+       with Options {
+    
+    var cwd: js.UndefOr[String] = js.undefined
+  }
+  object GlobOptions {
+    
+    inline def apply(): GlobOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[GlobOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GlobOptions] (val x: Self) extends AnyVal {
+      
+      inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+      
+      inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
+    }
   }
   
   /** NOTE: Mapped type definitions are impossible to translate to Scala.

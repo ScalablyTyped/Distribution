@@ -301,6 +301,8 @@ object sapMGenericTileMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:press press} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -401,6 +403,7 @@ object sapMGenericTileMod {
     
     /**
       * @EXPERIMENTAL (since 1.44.1) - This method's implementation is subject to change
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Provides an interface to the tile's layout information consistent in all modes and content densities.
       *
@@ -616,6 +619,22 @@ object sapMGenericTileMod {
       * @returns Value of property `systemInfo`
       */
     def getSystemInfo(): String = js.native
+    
+    /**
+      * @SINCE 1.113
+      * @EXPERIMENTAL (since 1.113)
+      *
+      * Gets current value of property {@link #getTileBadge tileBadge}.
+      *
+      * Show Badge Information associated with a Tile. Limited to 3 characters. When enabled, the badge information
+      * is displayed inside a folder icon. Display limited only for tile in IconMode in TwoByHalf frameType.
+      * Characters currently trimmed to 3.
+      *
+      * Default value is `empty string`.
+      *
+      * @returns Value of property `tileBadge`
+      */
+    def getTileBadge(): String = js.native
     
     /**
       * Gets content of aggregation {@link #getTileContent tileContent}.
@@ -1114,6 +1133,7 @@ object sapMGenericTileMod {
     
     /**
       * @SINCE 1.46
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Provides an interface to switch on or off the tile's press event. Used in SlideTile for Actions scope.
       */
@@ -1275,6 +1295,28 @@ object sapMGenericTileMod {
     sSystemInfo: String): this.type = js.native
     
     /**
+      * @SINCE 1.113
+      * @EXPERIMENTAL (since 1.113)
+      *
+      * Sets a new value for property {@link #getTileBadge tileBadge}.
+      *
+      * Show Badge Information associated with a Tile. Limited to 3 characters. When enabled, the badge information
+      * is displayed inside a folder icon. Display limited only for tile in IconMode in TwoByHalf frameType.
+      * Characters currently trimmed to 3.
+      *
+      * When called with a value of `null` or `undefined`, the default value of the property will be restored.
+      *
+      * Default value is `empty string`.
+      *
+      * @returns Reference to `this` in order to allow method chaining
+      */
+    def setTileBadge(): this.type = js.native
+    def setTileBadge(/**
+      * New value for property `tileBadge`
+      */
+    sTileBadge: String): this.type = js.native
+    
+    /**
       * @SINCE 1.96
       * @EXPERIMENTAL (since 1.96)
       *
@@ -1377,6 +1419,7 @@ object sapMGenericTileMod {
     
     /**
       * @SINCE 1.46
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Shows the actions scope view of GenericTile without changing the scope. Used in SlideTile for Actions
       * scope.
@@ -1610,6 +1653,16 @@ object sapMGenericTileMod {
     var systemInfo: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
+      * @SINCE 1.113
+      * @EXPERIMENTAL (since 1.113)
+      *
+      * Show Badge Information associated with a Tile. Limited to 3 characters. When enabled, the badge information
+      * is displayed inside a folder icon. Display limited only for tile in IconMode in TwoByHalf frameType.
+      * Characters currently trimmed to 3.
+      */
+    var tileBadge: js.UndefOr[String | PropertyBindingInfo] = js.undefined
+    
+    /**
       * The content of the tile.
       */
     var tileContent: js.UndefOr[
@@ -1792,6 +1845,10 @@ object sapMGenericTileMod {
       inline def setSystemInfo(value: String | PropertyBindingInfo): Self = StObject.set(x, "systemInfo", value.asInstanceOf[js.Any])
       
       inline def setSystemInfoUndefined: Self = StObject.set(x, "systemInfo", js.undefined)
+      
+      inline def setTileBadge(value: String | PropertyBindingInfo): Self = StObject.set(x, "tileBadge", value.asInstanceOf[js.Any])
+      
+      inline def setTileBadgeUndefined: Self = StObject.set(x, "tileBadge", js.undefined)
       
       inline def setTileContent(
         value: js.Array[typings.openui5.sapMTileContentMod.default] | typings.openui5.sapMTileContentMod.default | AggregationBindingInfo | (/* template literal string: {${string}} */ String)

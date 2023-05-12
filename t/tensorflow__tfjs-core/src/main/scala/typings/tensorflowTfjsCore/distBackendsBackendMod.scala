@@ -2,8 +2,8 @@ package typings.tensorflowTfjsCore
 
 import typings.tensorflowTfjsCore.anon.Error
 import typings.tensorflowTfjsCore.anon.Unreliable
+import typings.tensorflowTfjsCore.distTensorInfoMod.DataId
 import typings.tensorflowTfjsCore.distTensorMod.Backend
-import typings.tensorflowTfjsCore.distTensorMod.DataId
 import typings.tensorflowTfjsCore.distTensorMod.DataToGPUOptions
 import typings.tensorflowTfjsCore.distTensorMod.GPUData
 import typings.tensorflowTfjsCore.distTensorMod.Tensor
@@ -11,6 +11,7 @@ import typings.tensorflowTfjsCore.distTypesMod.BackendValues
 import typings.tensorflowTfjsCore.distTypesMod.DataType
 import typings.tensorflowTfjsCore.distTypesMod.Rank
 import typings.tensorflowTfjsCore.distTypesMod.WebGLData
+import typings.tensorflowTfjsCore.distTypesMod.WebGPUData
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreInts.`16`
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreInts.`32`
 import org.scalablytyped.runtime.StObject
@@ -59,7 +60,8 @@ object distBackendsBackendMod {
        with Backend
        with BackendTimer {
     
-    def createTensorFromTexture(values: WebGLData, shape: js.Array[Double], dtype: DataType): Tensor[Rank] = js.native
+    def createTensorFromGPUData(values: WebGLData, shape: js.Array[Double], dtype: DataType): Tensor[Rank] = js.native
+    def createTensorFromGPUData(values: WebGPUData, shape: js.Array[Double], dtype: DataType): Tensor[Rank] = js.native
     
     def dispose(): Unit = js.native
     

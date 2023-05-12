@@ -51,6 +51,42 @@ object identity {
     }
   }
   
+  trait GetAuthTokenResult extends StObject {
+    
+    /**
+      * Optional.
+      * A list of OAuth2 scopes granted to the extension.
+      */
+    var grantedScopes: js.UndefOr[js.Array[String]] = js.undefined
+    
+    /**
+      * Optional.
+      * The specific token associated with the request.
+      */
+    var token: js.UndefOr[String] = js.undefined
+  }
+  object GetAuthTokenResult {
+    
+    inline def apply(): GetAuthTokenResult = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[GetAuthTokenResult]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetAuthTokenResult] (val x: Self) extends AnyVal {
+      
+      inline def setGrantedScopes(value: js.Array[String]): Self = StObject.set(x, "grantedScopes", value.asInstanceOf[js.Any])
+      
+      inline def setGrantedScopesUndefined: Self = StObject.set(x, "grantedScopes", js.undefined)
+      
+      inline def setGrantedScopesVarargs(value: String*): Self = StObject.set(x, "grantedScopes", js.Array(value*))
+      
+      inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+      
+      inline def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
+    }
+  }
+  
   trait ProfileDetails extends StObject {
     
     /**

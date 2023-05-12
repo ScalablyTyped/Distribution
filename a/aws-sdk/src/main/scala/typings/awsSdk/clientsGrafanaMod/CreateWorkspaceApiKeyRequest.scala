@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateWorkspaceApiKeyRequest extends StObject {
   
   /**
-    * Specifies the name of the key to create. Key names must be unique to the workspace.
+    * Specifies the name of the key. Keynames must be unique to the workspace.
     */
   var keyName: ApiKeyName
   
   /**
-    * Specifies the permission level of the key. Valid Values: VIEWER | EDITOR | ADMIN 
+    * Specifies the permission level of the key.  Valid values: VIEWER|EDITOR|ADMIN 
     */
   var keyRole: String
   
@@ -22,7 +22,7 @@ trait CreateWorkspaceApiKeyRequest extends StObject {
   var secondsToLive: CreateWorkspaceApiKeyRequestSecondsToLiveInteger
   
   /**
-    * The ID of the workspace in which to create an API key.
+    * The ID of the workspace to create an API key.
     */
   var workspaceId: WorkspaceId
 }

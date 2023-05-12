@@ -28,6 +28,8 @@ trait SymbolsData extends StObject {
   
   var plusSign: String
   
+  var rangeSign: String
+  
   var superscriptingExponent: String
   
   var timeSeparator: String
@@ -46,10 +48,11 @@ object SymbolsData {
     perMille: String,
     percentSign: String,
     plusSign: String,
+    rangeSign: String,
     superscriptingExponent: String,
     timeSeparator: String
   ): SymbolsData = {
-    val __obj = js.Dynamic.literal(approximatelySign = approximatelySign.asInstanceOf[js.Any], decimal = decimal.asInstanceOf[js.Any], exponential = exponential.asInstanceOf[js.Any], group = group.asInstanceOf[js.Any], infinity = infinity.asInstanceOf[js.Any], list = list.asInstanceOf[js.Any], minusSign = minusSign.asInstanceOf[js.Any], nan = nan.asInstanceOf[js.Any], perMille = perMille.asInstanceOf[js.Any], percentSign = percentSign.asInstanceOf[js.Any], plusSign = plusSign.asInstanceOf[js.Any], superscriptingExponent = superscriptingExponent.asInstanceOf[js.Any], timeSeparator = timeSeparator.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(approximatelySign = approximatelySign.asInstanceOf[js.Any], decimal = decimal.asInstanceOf[js.Any], exponential = exponential.asInstanceOf[js.Any], group = group.asInstanceOf[js.Any], infinity = infinity.asInstanceOf[js.Any], list = list.asInstanceOf[js.Any], minusSign = minusSign.asInstanceOf[js.Any], nan = nan.asInstanceOf[js.Any], perMille = perMille.asInstanceOf[js.Any], percentSign = percentSign.asInstanceOf[js.Any], plusSign = plusSign.asInstanceOf[js.Any], rangeSign = rangeSign.asInstanceOf[js.Any], superscriptingExponent = superscriptingExponent.asInstanceOf[js.Any], timeSeparator = timeSeparator.asInstanceOf[js.Any])
     __obj.asInstanceOf[SymbolsData]
   }
   
@@ -77,6 +80,8 @@ object SymbolsData {
     inline def setPercentSign(value: String): Self = StObject.set(x, "percentSign", value.asInstanceOf[js.Any])
     
     inline def setPlusSign(value: String): Self = StObject.set(x, "plusSign", value.asInstanceOf[js.Any])
+    
+    inline def setRangeSign(value: String): Self = StObject.set(x, "rangeSign", value.asInstanceOf[js.Any])
     
     inline def setSuperscriptingExponent(value: String): Self = StObject.set(x, "superscriptingExponent", value.asInstanceOf[js.Any])
     

@@ -124,6 +124,8 @@ object sapMDateTimePickerMod {
     extends typings.openui5.sapMDatePickerMod.default {
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Apply the correct icon to the used Date control
       */
     def getIconSrc(): Unit = js.native
@@ -185,9 +187,10 @@ object sapMDateTimePickerMod {
       *
       * Gets current value of property {@link #getTimezone timezone}.
       *
-      * The IANA timezone ID, e.g `"Europe/Berlin"`. Date and time are displayed in this timezone. The `value`
-      * property string is treated as if it is formatted in this timezone. The `dateValue` property should not
-      * be used as this could lead to an unpredictable results. Use `getValue()` instead.
+      * The IANA timezone ID, e.g `"Europe/Berlin"`. For display purposes only in combination with `showTimezone`
+      * property. The `value` property is a string representation of a date and time and is not related to the
+      * displayed time zone. The `dateValue` property should not be used as this could lead to unpredictable
+      * results. Use `getValue()` instead.
       *
       * @returns Value of property `timezone`
       */
@@ -273,9 +276,10 @@ object sapMDateTimePickerMod {
       *
       * Sets a new value for property {@link #getTimezone timezone}.
       *
-      * The IANA timezone ID, e.g `"Europe/Berlin"`. Date and time are displayed in this timezone. The `value`
-      * property string is treated as if it is formatted in this timezone. The `dateValue` property should not
-      * be used as this could lead to an unpredictable results. Use `getValue()` instead.
+      * The IANA timezone ID, e.g `"Europe/Berlin"`. For display purposes only in combination with `showTimezone`
+      * property. The `value` property is a string representation of a date and time and is not related to the
+      * displayed time zone. The `dateValue` property should not be used as this could lead to unpredictable
+      * results. Use `getValue()` instead.
       *
       * When called with a value of `null` or `undefined`, the default value of the property will be restored.
       *
@@ -328,9 +332,10 @@ object sapMDateTimePickerMod {
     /**
       * @SINCE 1.99
       *
-      * The IANA timezone ID, e.g `"Europe/Berlin"`. Date and time are displayed in this timezone. The `value`
-      * property string is treated as if it is formatted in this timezone. The `dateValue` property should not
-      * be used as this could lead to an unpredictable results. Use `getValue()` instead.
+      * The IANA timezone ID, e.g `"Europe/Berlin"`. For display purposes only in combination with `showTimezone`
+      * property. The `value` property is a string representation of a date and time and is not related to the
+      * displayed time zone. The `dateValue` property should not be used as this could lead to unpredictable
+      * results. Use `getValue()` instead.
       */
     var timezone: js.UndefOr[String | PropertyBindingInfo] = js.undefined
   }

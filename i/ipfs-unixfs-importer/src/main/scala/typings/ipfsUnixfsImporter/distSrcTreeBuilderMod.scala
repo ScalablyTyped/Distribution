@@ -1,6 +1,8 @@
 package typings.ipfsUnixfsImporter
 
-import typings.std.AsyncIterable
+import typings.ipfsUnixfsImporter.distSrcUtilsPersistMod.PersistOptions
+import typings.ipfsUnixfsImporter.mod.TreeBuilder
+import typings.multiformats.distTypesSrcLinkInterfaceMod.Version
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,27 +13,45 @@ object distSrcTreeBuilderMod {
   @js.native
   val ^ : js.Any = js.native
   
-  /**
-    * @type {TreeBuilder}
-    */
-  inline def default(
-    source: AsyncIterable[typings.ipfsUnixfsImporter.distSrcTypesMod.InProgressImportResult],
-    block: typings.interfaceBlockstore.mod.Blockstore,
-    options: typings.ipfsUnixfsImporter.distSrcTypesMod.ImporterOptions
-  ): AsyncIterable[typings.ipfsUnixfsImporter.distSrcTypesMod.ImportResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(source.asInstanceOf[js.Any], block.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AsyncIterable[typings.ipfsUnixfsImporter.distSrcTypesMod.ImportResult]]
+  inline def defaultTreeBuilder(options: TreeBuilderOptions): TreeBuilder = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultTreeBuilder")(options.asInstanceOf[js.Any]).asInstanceOf[TreeBuilder]
   
-  type Blockstore = typings.interfaceBlockstore.mod.Blockstore
+  trait AddToTreeOptions
+    extends StObject
+       with PersistOptions {
+    
+    var shardSplitThresholdBytes: Double
+  }
+  object AddToTreeOptions {
+    
+    inline def apply(cidVersion: Version, shardSplitThresholdBytes: Double): AddToTreeOptions = {
+      val __obj = js.Dynamic.literal(cidVersion = cidVersion.asInstanceOf[js.Any], shardSplitThresholdBytes = shardSplitThresholdBytes.asInstanceOf[js.Any])
+      __obj.asInstanceOf[AddToTreeOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddToTreeOptions] (val x: Self) extends AnyVal {
+      
+      inline def setShardSplitThresholdBytes(value: Double): Self = StObject.set(x, "shardSplitThresholdBytes", value.asInstanceOf[js.Any])
+    }
+  }
   
-  type ImportResult = typings.ipfsUnixfsImporter.distSrcTypesMod.ImportResult
-  
-  type ImporterOptions = typings.ipfsUnixfsImporter.distSrcTypesMod.ImporterOptions
-  
-  type InProgressImportResult = typings.ipfsUnixfsImporter.distSrcTypesMod.InProgressImportResult
-  
-  type TreeBuilder = js.Function3[
-    /* source */ AsyncIterable[InProgressImportResult], 
-    /* blockstore */ Blockstore, 
-    /* options */ ImporterOptions, 
-    AsyncIterable[ImportResult]
-  ]
+  trait TreeBuilderOptions
+    extends StObject
+       with AddToTreeOptions {
+    
+    var wrapWithDirectory: Boolean
+  }
+  object TreeBuilderOptions {
+    
+    inline def apply(cidVersion: Version, shardSplitThresholdBytes: Double, wrapWithDirectory: Boolean): TreeBuilderOptions = {
+      val __obj = js.Dynamic.literal(cidVersion = cidVersion.asInstanceOf[js.Any], shardSplitThresholdBytes = shardSplitThresholdBytes.asInstanceOf[js.Any], wrapWithDirectory = wrapWithDirectory.asInstanceOf[js.Any])
+      __obj.asInstanceOf[TreeBuilderOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeBuilderOptions] (val x: Self) extends AnyVal {
+      
+      inline def setWrapWithDirectory(value: Boolean): Self = StObject.set(x, "wrapWithDirectory", value.asInstanceOf[js.Any])
+    }
+  }
 }

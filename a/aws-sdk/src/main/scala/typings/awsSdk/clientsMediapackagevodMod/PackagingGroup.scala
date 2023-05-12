@@ -7,11 +7,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PackagingGroup extends StObject {
   
   /**
+    * The approximate asset count of the PackagingGroup.
+    */
+  var ApproximateAssetCount: js.UndefOr[integer] = js.undefined
+  
+  /**
     * The ARN of the PackagingGroup.
     */
   var Arn: js.UndefOr[string] = js.undefined
   
   var Authorization: js.UndefOr[typings.awsSdk.clientsMediapackagevodMod.Authorization] = js.undefined
+  
+  /**
+    * The time the PackagingGroup was created.
+    */
+  var CreatedAt: js.UndefOr[string] = js.undefined
   
   /**
     * The fully qualified domain name for Assets in the PackagingGroup.
@@ -37,6 +47,10 @@ object PackagingGroup {
   @scala.inline
   implicit open class MutableBuilder[Self <: PackagingGroup] (val x: Self) extends AnyVal {
     
+    inline def setApproximateAssetCount(value: integer): Self = StObject.set(x, "ApproximateAssetCount", value.asInstanceOf[js.Any])
+    
+    inline def setApproximateAssetCountUndefined: Self = StObject.set(x, "ApproximateAssetCount", js.undefined)
+    
     inline def setArn(value: string): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
     inline def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
@@ -44,6 +58,10 @@ object PackagingGroup {
     inline def setAuthorization(value: Authorization): Self = StObject.set(x, "Authorization", value.asInstanceOf[js.Any])
     
     inline def setAuthorizationUndefined: Self = StObject.set(x, "Authorization", js.undefined)
+    
+    inline def setCreatedAt(value: string): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
+    
+    inline def setCreatedAtUndefined: Self = StObject.set(x, "CreatedAt", js.undefined)
     
     inline def setDomainName(value: string): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     

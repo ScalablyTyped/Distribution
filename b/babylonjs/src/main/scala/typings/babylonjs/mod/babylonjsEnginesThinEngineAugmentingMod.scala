@@ -3,7 +3,6 @@ package typings.babylonjs.mod
 import typings.babylonjs.HTMLCanvasElement
 import typings.babylonjs.HTMLVideoElement
 import typings.babylonjs.OffscreenCanvas
-import typings.babylonjs.anon.PartialRenderTargetCreati
 import typings.babylonjs.computeComputeEffectMod.IComputeEffectCreationOptions
 import typings.babylonjs.computeIcomputecontextMod.IComputeContext
 import typings.babylonjs.computeIcomputepipelinecontextMod.IComputePipelineContext
@@ -619,7 +618,7 @@ object babylonjsEnginesThinEngineAugmentingMod {
     
     /**
       * Create a dynamic uniform buffer
-      * @see https://doc.babylonjs.com/features/webgl2#uniform-buffer-objets
+      * @see https://doc.babylonjs.com/setup/support/webGL2#uniform-buffer-objets
       * @param elements defines the content of the uniform buffer
       * @returns the webGL uniform buffer
       */
@@ -634,7 +633,7 @@ object babylonjsEnginesThinEngineAugmentingMod {
     
     /**
       * Create a multi render target texture
-      * @see https://doc.babylonjs.com/features/webgl2#multiple-render-target
+      * @see https://doc.babylonjs.com/setup/support/webGL2#multiple-render-target
       * @param size defines the size of the texture
       * @param options defines the creation options
       * @param initializeBuffers if set to true, the engine will make an initializing call of drawBuffers
@@ -1344,7 +1343,7 @@ object babylonjsEnginesThinEngineAugmentingMod {
       * @returns a new render target cube wrapper
       */
     def createRenderTargetCubeTexture(size: Double): typings.babylonjs.enginesRenderTargetWrapperMod.RenderTargetWrapper = js.native
-    def createRenderTargetCubeTexture(size: Double, options: PartialRenderTargetCreati): typings.babylonjs.enginesRenderTargetWrapperMod.RenderTargetWrapper = js.native
+    def createRenderTargetCubeTexture(size: Double, options: RenderTargetCreationOptions): typings.babylonjs.enginesRenderTargetWrapperMod.RenderTargetWrapper = js.native
     
     /**
       * Creates a new render target texture
@@ -1366,7 +1365,7 @@ object babylonjsEnginesThinEngineAugmentingMod {
     
     /**
       * Create an uniform buffer
-      * @see https://doc.babylonjs.com/features/webgl2#uniform-buffer-objets
+      * @see https://doc.babylonjs.com/setup/support/webGL2#uniform-buffer-objets
       * @param elements defines the content of the uniform buffer
       * @returns the webGL uniform buffer
       */
@@ -1380,7 +1379,7 @@ object babylonjsEnginesThinEngineAugmentingMod {
     
     /**
       * Gets the current alpha mode
-      * @see https://doc.babylonjs.com/resources/transparency_and_how_meshes_are_rendered
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/materials/advanced/transparent_rendering
       * @returns the current alpha mode
       */
     def getAlphaMode(): Double = js.native
@@ -1458,7 +1457,7 @@ object babylonjsEnginesThinEngineAugmentingMod {
       * Sets the current alpha mode
       * @param mode defines the mode to use (one of the Engine.ALPHA_XXX)
       * @param noDepthWriteChange defines if depth writing state should remains unchanged (false by default)
-      * @see https://doc.babylonjs.com/resources/transparency_and_how_meshes_are_rendered
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/materials/advanced/transparent_rendering
       */
     def setAlphaMode(mode: Double): Unit = js.native
     def setAlphaMode(mode: Double, noDepthWriteChange: Boolean): Unit = js.native
@@ -1568,7 +1567,7 @@ object babylonjsEnginesThinEngineAugmentingMod {
     
     /**
       * Update the sample count for a given multiple render target texture
-      * @see https://doc.babylonjs.com/features/webgl2#multisample-render-targets
+      * @see https://doc.babylonjs.com/setup/support/webGL2#multisample-render-targets
       * @param rtWrapper defines the render target wrapper to update
       * @param samples defines the sample count to set
       * @param initializeBuffers if set to true, the engine will make an initializing call of drawBuffers
@@ -1733,7 +1732,7 @@ object babylonjsEnginesThinEngineAugmentingMod {
     
     /**
       * Updates the sample count of a render target texture
-      * @see https://doc.babylonjs.com/features/webgl2#multisample-render-targets
+      * @see https://doc.babylonjs.com/setup/support/webGL2#multisample-render-targets
       * @param rtWrapper defines the render target wrapper to update
       * @param samples defines the sample count to set
       * @returns the effective sample count (could be 0 if multisample render targets are not supported)
@@ -1767,7 +1766,7 @@ object babylonjsEnginesThinEngineAugmentingMod {
     
     /**
       * Update an existing uniform buffer
-      * @see https://doc.babylonjs.com/features/webgl2#uniform-buffer-objets
+      * @see https://doc.babylonjs.com/setup/support/webGL2#uniform-buffer-objets
       * @param uniformBuffer defines the target uniform buffer
       * @param elements defines the content to update
       * @param offset defines the offset in the uniform buffer where update should start
@@ -1801,6 +1800,11 @@ object babylonjsEnginesThinEngineAugmentingMod {
     def updateVideoTexture(
       texture: Nullable[typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture],
       video: HTMLVideoElement,
+      invertY: Boolean
+    ): Unit = js.native
+    def updateVideoTexture(
+      texture: Nullable[typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture],
+      video: Nullable[typings.babylonjs.materialsTexturesExternalTextureMod.ExternalTexture],
       invertY: Boolean
     ): Unit = js.native
   }

@@ -25,6 +25,13 @@ trait SearchRecord extends StObject {
     */
   var HyperParameterTuningJob: js.UndefOr[HyperParameterTuningJobSearchEntity] = js.undefined
   
+  var Model: js.UndefOr[ModelDashboardModel] = js.undefined
+  
+  /**
+    * An Amazon SageMaker Model Card that documents details about a machine learning model.
+    */
+  var ModelCard: js.UndefOr[typings.awsSdk.clientsSagemakerMod.ModelCard] = js.undefined
+  
   var ModelPackage: js.UndefOr[typings.awsSdk.clientsSagemakerMod.ModelPackage] = js.undefined
   
   var ModelPackageGroup: js.UndefOr[typings.awsSdk.clientsSagemakerMod.ModelPackageGroup] = js.undefined
@@ -83,6 +90,12 @@ object SearchRecord {
     
     inline def setHyperParameterTuningJobUndefined: Self = StObject.set(x, "HyperParameterTuningJob", js.undefined)
     
+    inline def setModel(value: ModelDashboardModel): Self = StObject.set(x, "Model", value.asInstanceOf[js.Any])
+    
+    inline def setModelCard(value: ModelCard): Self = StObject.set(x, "ModelCard", value.asInstanceOf[js.Any])
+    
+    inline def setModelCardUndefined: Self = StObject.set(x, "ModelCard", js.undefined)
+    
     inline def setModelPackage(value: ModelPackage): Self = StObject.set(x, "ModelPackage", value.asInstanceOf[js.Any])
     
     inline def setModelPackageGroup(value: ModelPackageGroup): Self = StObject.set(x, "ModelPackageGroup", value.asInstanceOf[js.Any])
@@ -90,6 +103,8 @@ object SearchRecord {
     inline def setModelPackageGroupUndefined: Self = StObject.set(x, "ModelPackageGroup", js.undefined)
     
     inline def setModelPackageUndefined: Self = StObject.set(x, "ModelPackage", js.undefined)
+    
+    inline def setModelUndefined: Self = StObject.set(x, "Model", js.undefined)
     
     inline def setPipeline(value: Pipeline): Self = StObject.set(x, "Pipeline", value.asInstanceOf[js.Any])
     

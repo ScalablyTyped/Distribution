@@ -7,16 +7,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SignatureHelpProviderMetadata extends StObject {
   
   /**
-    * List of characters that re-trigger signature help.
-    *
-    * These trigger characters are only active when signature help is already showing. All trigger characters
-    * are also counted as re-trigger characters.
-    */
+  		 * List of characters that re-trigger signature help.
+  		 *
+  		 * These trigger characters are only active when signature help is already showing. All trigger characters
+  		 * are also counted as re-trigger characters.
+  		 */
   val retriggerCharacters: js.Array[String]
   
   /**
-    * List of characters that trigger signature help.
-    */
+  		 * List of characters that trigger signature help.
+  		 */
   val triggerCharacters: js.Array[String]
 }
 object SignatureHelpProviderMetadata {

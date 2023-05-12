@@ -17,7 +17,7 @@ object xRWebXRInputSourceMod {
   open class WebXRInputSource protected () extends StObject {
     /**
       * Creates the input source object
-      * @see https://doc.babylonjs.com/how_to/webxr_controllers_support
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/webXR/webXRInputControllerSupport
       * @param _scene the scene which the controller should be associated to
       * @param inputSource the underlying input source for the controller
       * @param _options options for this controller creation

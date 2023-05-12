@@ -4,12 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A single <code>DirectionsStep</code> in a <code>DirectionsResult</code>.
-  * Some fields may be <code>undefined</code>. Note that though this object is
-  * &quot;JSON-like,&quot; it is not strictly JSON, as it directly includes
-  * <code>LatLng</code> objects.
-  */
 trait DirectionsStep extends StObject {
   
   /**

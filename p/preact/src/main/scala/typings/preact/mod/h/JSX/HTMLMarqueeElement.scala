@@ -28,25 +28,25 @@ trait HTMLMarqueeElement
   override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
   
   var behavior: js.UndefOr[
-    scroll | slide | alternate | (typings.preact.srcJsxMod.JSXInternal.SignalLike[scroll | slide | alternate])
+    scroll | slide | alternate | (typings.preact.srcJsxMod.JSXInternal.SignalLike[js.UndefOr[scroll | slide | alternate]])
   ] = js.native
   
-  var bgColor: js.UndefOr[String | typings.preact.srcJsxMod.JSXInternal.SignalLike[String]] = js.native
+  var bgColor: js.UndefOr[String | typings.preact.srcJsxMod.JSXInternal.SignalLike[js.UndefOr[String]]] = js.native
   
   var direction: js.UndefOr[
-    left | right | up | down | (typings.preact.srcJsxMod.JSXInternal.SignalLike[left | right | up | down])
+    left | right | up | down | (typings.preact.srcJsxMod.JSXInternal.SignalLike[js.UndefOr[left | right | up | down]])
   ] = js.native
   
   var height: js.UndefOr[
-    Double | String | (typings.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    Double | String | (typings.preact.srcJsxMod.JSXInternal.SignalLike[js.UndefOr[Double | String]])
   ] = js.native
   
   var hspace: js.UndefOr[
-    Double | String | (typings.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    Double | String | (typings.preact.srcJsxMod.JSXInternal.SignalLike[js.UndefOr[Double | String]])
   ] = js.native
   
   var loop: js.UndefOr[
-    Double | String | (typings.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    Double | String | (typings.preact.srcJsxMod.JSXInternal.SignalLike[js.UndefOr[Double | String]])
   ] = js.native
   
   /* InferMemberOverrides */
@@ -57,20 +57,20 @@ trait HTMLMarqueeElement
   override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: EventListenerOptions): Unit = js.native
   
   var scrollAmount: js.UndefOr[
-    Double | String | (typings.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    Double | String | (typings.preact.srcJsxMod.JSXInternal.SignalLike[js.UndefOr[Double | String]])
   ] = js.native
   
   var scrollDelay: js.UndefOr[
-    Double | String | (typings.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    Double | String | (typings.preact.srcJsxMod.JSXInternal.SignalLike[js.UndefOr[Double | String]])
   ] = js.native
   
-  var trueSpeed: js.UndefOr[Boolean | typings.preact.srcJsxMod.JSXInternal.SignalLike[Boolean]] = js.native
+  var trueSpeed: js.UndefOr[Boolean | typings.preact.srcJsxMod.JSXInternal.SignalLike[js.UndefOr[Boolean]]] = js.native
   
   var vspace: js.UndefOr[
-    Double | String | (typings.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    Double | String | (typings.preact.srcJsxMod.JSXInternal.SignalLike[js.UndefOr[Double | String]])
   ] = js.native
   
   var width: js.UndefOr[
-    Double | String | (typings.preact.srcJsxMod.JSXInternal.SignalLike[Double | String])
+    Double | String | (typings.preact.srcJsxMod.JSXInternal.SignalLike[js.UndefOr[Double | String]])
   ] = js.native
 }

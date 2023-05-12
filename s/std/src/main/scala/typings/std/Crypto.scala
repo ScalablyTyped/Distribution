@@ -12,7 +12,7 @@ trait Crypto extends StObject {
   
   /** Available only in secure contexts. */
   /* standard dom */
-  def randomUUID(): java.lang.String
+  def randomUUID(): /* template literal string: ${string}-${string}-${string}-${string}-${string} */ java.lang.String
   
   /** Available only in secure contexts. */
   /* standard dom */
@@ -20,7 +20,11 @@ trait Crypto extends StObject {
 }
 object Crypto {
   
-  inline def apply(getRandomValues: Any => Any, randomUUID: () => java.lang.String, subtle: SubtleCrypto): Crypto = {
+  inline def apply(
+    getRandomValues: Any => Any,
+    randomUUID: () => /* template literal string: ${string}-${string}-${string}-${string}-${string} */ java.lang.String,
+    subtle: SubtleCrypto
+  ): Crypto = {
     val __obj = js.Dynamic.literal(getRandomValues = js.Any.fromFunction1(getRandomValues), randomUUID = js.Any.fromFunction0(randomUUID), subtle = subtle.asInstanceOf[js.Any])
     __obj.asInstanceOf[Crypto]
   }
@@ -30,7 +34,9 @@ object Crypto {
     
     inline def setGetRandomValues(value: Any => Any): Self = StObject.set(x, "getRandomValues", js.Any.fromFunction1(value))
     
-    inline def setRandomUUID(value: () => java.lang.String): Self = StObject.set(x, "randomUUID", js.Any.fromFunction0(value))
+    inline def setRandomUUID(
+      value: () => /* template literal string: ${string}-${string}-${string}-${string}-${string} */ java.lang.String
+    ): Self = StObject.set(x, "randomUUID", js.Any.fromFunction0(value))
     
     inline def setSubtle(value: SubtleCrypto): Self = StObject.set(x, "subtle", value.asInstanceOf[js.Any])
   }

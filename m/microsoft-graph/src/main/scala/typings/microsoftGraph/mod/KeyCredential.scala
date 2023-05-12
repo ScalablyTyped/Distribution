@@ -6,7 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait KeyCredential extends StObject {
   
-  // Custom key identifier
+  /**
+    * A 40-character binary type that can be used to identify the credential. Optional. When not provided in the payload,
+    * defaults to the thumbprint of the certificate.
+    */
   var customKeyIdentifier: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Friendly name for the key. Optional.

@@ -1,7 +1,7 @@
 
 # Scala.js typings for kdbush
 
-Typings are for version 3.0
+Typings are for version 4.0.2
 
 ## Library description:
 A very fast static 2D index for points based on kd-tree.
@@ -24,7 +24,7 @@ A very fast static 2D index for points based on kd-tree.
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

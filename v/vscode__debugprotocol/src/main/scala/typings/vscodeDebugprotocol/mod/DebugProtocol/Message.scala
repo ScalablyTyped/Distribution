@@ -13,7 +13,7 @@ trait Message extends StObject {
   		*/
   var format: String
   
-  /** Unique identifier for the message. */
+  /** Unique (within a debug adapter implementation) identifier for the message. The purpose of these error IDs is to help extension authors that have the requirement that every user visible error message needs a corresponding error number, so that users or customer support can find information about the specific error more easily. */
   var id: Double
   
   /** If true send to telemetry. */

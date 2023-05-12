@@ -66,6 +66,18 @@ object mod {
   @js.native
   def arrowDown: Icon = js.native
   
+  @JSImport("@primer/octicons", "arrow-down-left")
+  @js.native
+  def arrowDownLeft: Icon = js.native
+  
+  inline def arrowDownLeft_=(x: Icon): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("arrow-down-left")(x.asInstanceOf[js.Any])
+  
+  @JSImport("@primer/octicons", "arrow-down-right")
+  @js.native
+  def arrowDownRight: Icon = js.native
+  
+  inline def arrowDownRight_=(x: Icon): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("arrow-down-right")(x.asInstanceOf[js.Any])
+  
   inline def arrowDown_=(x: Icon): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("arrow-down")(x.asInstanceOf[js.Any])
   
   @JSImport("@primer/octicons", "arrow-left")
@@ -263,6 +275,13 @@ object mod {
   @JSImport("@primer/octicons", "clock")
   @js.native
   def clock: Icon = js.native
+  
+  @JSImport("@primer/octicons", "clock-fill")
+  @js.native
+  def clockFill: Icon = js.native
+  
+  inline def clockFill_=(x: Icon): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("clock-fill")(x.asInstanceOf[js.Any])
+  
   inline def clock_=(x: Icon): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("clock")(x.asInstanceOf[js.Any])
   
   @JSImport("@primer/octicons", "cloud")
@@ -671,6 +690,12 @@ object mod {
   def filter: Icon = js.native
   inline def filter_=(x: Icon): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("filter")(x.asInstanceOf[js.Any])
   
+  @JSImport("@primer/octicons", "fiscal-host")
+  @js.native
+  def fiscalHost: Icon = js.native
+  
+  inline def fiscalHost_=(x: Icon): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fiscal-host")(x.asInstanceOf[js.Any])
+  
   @JSImport("@primer/octicons", "flame")
   @js.native
   def flame: Icon = js.native
@@ -756,6 +781,11 @@ object mod {
   @js.native
   def globe: Icon = js.native
   inline def globe_=(x: Icon): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("globe")(x.asInstanceOf[js.Any])
+  
+  @JSImport("@primer/octicons", "goal")
+  @js.native
+  def goal: Icon = js.native
+  inline def goal_=(x: Icon): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("goal")(x.asInstanceOf[js.Any])
   
   @JSImport("@primer/octicons", "grabber")
   @js.native
@@ -864,6 +894,18 @@ object mod {
   def issueReopened: Icon = js.native
   
   inline def issueReopened_=(x: Icon): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("issue-reopened")(x.asInstanceOf[js.Any])
+  
+  @JSImport("@primer/octicons", "issue-tracked-by")
+  @js.native
+  def issueTrackedBy: Icon = js.native
+  
+  inline def issueTrackedBy_=(x: Icon): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("issue-tracked-by")(x.asInstanceOf[js.Any])
+  
+  @JSImport("@primer/octicons", "issue-tracked-in")
+  @js.native
+  def issueTrackedIn: Icon = js.native
+  
+  inline def issueTrackedIn_=(x: Icon): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("issue-tracked-in")(x.asInstanceOf[js.Any])
   
   @JSImport("@primer/octicons", "italic")
   @js.native
@@ -1136,6 +1178,19 @@ object mod {
   @JSImport("@primer/octicons", "project")
   @js.native
   def project: Icon = js.native
+  
+  @JSImport("@primer/octicons", "project-roadmap")
+  @js.native
+  def projectRoadmap: Icon = js.native
+  
+  inline def projectRoadmap_=(x: Icon): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("project-roadmap")(x.asInstanceOf[js.Any])
+  
+  @JSImport("@primer/octicons", "project-symlink")
+  @js.native
+  def projectSymlink: Icon = js.native
+  
+  inline def projectSymlink_=(x: Icon): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("project-symlink")(x.asInstanceOf[js.Any])
+  
   inline def project_=(x: Icon): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("project")(x.asInstanceOf[js.Any])
   
   @JSImport("@primer/octicons", "pulse")
@@ -1152,6 +1207,17 @@ object mod {
   @js.native
   def quote: Icon = js.native
   inline def quote_=(x: Icon): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("quote")(x.asInstanceOf[js.Any])
+  
+  @JSImport("@primer/octicons", "read")
+  @js.native
+  def read: Icon = js.native
+  inline def read_=(x: Icon): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("read")(x.asInstanceOf[js.Any])
+  
+  @JSImport("@primer/octicons", "rel-file-path")
+  @js.native
+  def relFilePath: Icon = js.native
+  
+  inline def relFilePath_=(x: Icon): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rel-file-path")(x.asInstanceOf[js.Any])
   
   @JSImport("@primer/octicons", "reply")
   @js.native
@@ -1328,6 +1394,13 @@ object mod {
   @JSImport("@primer/octicons", "skip")
   @js.native
   def skip: Icon = js.native
+  
+  @JSImport("@primer/octicons", "skip-fill")
+  @js.native
+  def skipFill: Icon = js.native
+  
+  inline def skipFill_=(x: Icon): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("skip-fill")(x.asInstanceOf[js.Any])
+  
   inline def skip_=(x: Icon): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("skip")(x.asInstanceOf[js.Any])
   
   @JSImport("@primer/octicons", "sliders")
@@ -1351,6 +1424,18 @@ object mod {
   def sortDesc: Icon = js.native
   
   inline def sortDesc_=(x: Icon): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sort-desc")(x.asInstanceOf[js.Any])
+  
+  @JSImport("@primer/octicons", "sparkle-fill")
+  @js.native
+  def sparkleFill: Icon = js.native
+  
+  inline def sparkleFill_=(x: Icon): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sparkle-fill")(x.asInstanceOf[js.Any])
+  
+  @JSImport("@primer/octicons", "sponsor-tiers")
+  @js.native
+  def sponsorTiers: Icon = js.native
+  
+  inline def sponsorTiers_=(x: Icon): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sponsor-tiers")(x.asInstanceOf[js.Any])
   
   @JSImport("@primer/octicons", "square")
   @js.native
@@ -1520,6 +1605,11 @@ object mod {
   def unfold: Icon = js.native
   inline def unfold_=(x: Icon): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("unfold")(x.asInstanceOf[js.Any])
   
+  @JSImport("@primer/octicons", "unlink")
+  @js.native
+  def unlink: Icon = js.native
+  inline def unlink_=(x: Icon): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("unlink")(x.asInstanceOf[js.Any])
+  
   @JSImport("@primer/octicons", "unlock")
   @js.native
   def unlock: Icon = js.native
@@ -1529,6 +1619,11 @@ object mod {
   @js.native
   def unmute: Icon = js.native
   inline def unmute_=(x: Icon): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("unmute")(x.asInstanceOf[js.Any])
+  
+  @JSImport("@primer/octicons", "unread")
+  @js.native
+  def unread: Icon = js.native
+  inline def unread_=(x: Icon): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("unread")(x.asInstanceOf[js.Any])
   
   @JSImport("@primer/octicons", "unverified")
   @js.native
@@ -1756,6 +1851,8 @@ object mod {
     - typings.primerOcticons.primerOcticonsStrings.archive
     - typings.primerOcticons.primerOcticonsStrings.`arrow-both`
     - typings.primerOcticons.primerOcticonsStrings.`arrow-down`
+    - typings.primerOcticons.primerOcticonsStrings.`arrow-down-left`
+    - typings.primerOcticons.primerOcticonsStrings.`arrow-down-right`
     - typings.primerOcticons.primerOcticonsStrings.`arrow-left`
     - typings.primerOcticons.primerOcticonsStrings.`arrow-right`
     - typings.primerOcticons.primerOcticonsStrings.`arrow-switch`
@@ -1791,6 +1888,7 @@ object mod {
     - typings.primerOcticons.primerOcticonsStrings.circle
     - typings.primerOcticons.primerOcticonsStrings.`circle-slash`
     - typings.primerOcticons.primerOcticonsStrings.clock
+    - typings.primerOcticons.primerOcticonsStrings.`clock-fill`
     - typings.primerOcticons.primerOcticonsStrings.cloud
     - typings.primerOcticons.primerOcticonsStrings.`cloud-offline`
     - typings.primerOcticons.primerOcticonsStrings.code
@@ -1861,6 +1959,7 @@ object mod {
     - typings.primerOcticons.primerOcticonsStrings.`file-symlink-file`
     - typings.primerOcticons.primerOcticonsStrings.`file-zip`
     - typings.primerOcticons.primerOcticonsStrings.filter
+    - typings.primerOcticons.primerOcticonsStrings.`fiscal-host`
     - typings.primerOcticons.primerOcticonsStrings.flame
     - typings.primerOcticons.primerOcticonsStrings.fold
     - typings.primerOcticons.primerOcticonsStrings.`fold-down`
@@ -1876,6 +1975,7 @@ object mod {
     - typings.primerOcticons.primerOcticonsStrings.`git-pull-request-closed`
     - typings.primerOcticons.primerOcticonsStrings.`git-pull-request-draft`
     - typings.primerOcticons.primerOcticonsStrings.globe
+    - typings.primerOcticons.primerOcticonsStrings.goal
     - typings.primerOcticons.primerOcticonsStrings.grabber
     - typings.primerOcticons.primerOcticonsStrings.graph
     - typings.primerOcticons.primerOcticonsStrings.hash
@@ -1896,6 +1996,8 @@ object mod {
     - typings.primerOcticons.primerOcticonsStrings.`issue-draft`
     - typings.primerOcticons.primerOcticonsStrings.`issue-opened`
     - typings.primerOcticons.primerOcticonsStrings.`issue-reopened`
+    - typings.primerOcticons.primerOcticonsStrings.`issue-tracked-by`
+    - typings.primerOcticons.primerOcticonsStrings.`issue-tracked-in`
     - typings.primerOcticons.primerOcticonsStrings.italic
     - typings.primerOcticons.primerOcticonsStrings.iterations
     - typings.primerOcticons.primerOcticonsStrings.`kebab-horizontal`
@@ -1947,9 +2049,13 @@ object mod {
     - typings.primerOcticons.primerOcticonsStrings.plus
     - typings.primerOcticons.primerOcticonsStrings.`plus-circle`
     - typings.primerOcticons.primerOcticonsStrings.project
+    - typings.primerOcticons.primerOcticonsStrings.`project-roadmap`
+    - typings.primerOcticons.primerOcticonsStrings.`project-symlink`
     - typings.primerOcticons.primerOcticonsStrings.pulse
     - typings.primerOcticons.primerOcticonsStrings.question
     - typings.primerOcticons.primerOcticonsStrings.quote
+    - typings.primerOcticons.primerOcticonsStrings.read
+    - typings.primerOcticons.primerOcticonsStrings.`rel-file-path`
     - typings.primerOcticons.primerOcticonsStrings.reply
     - typings.primerOcticons.primerOcticonsStrings.repo
     - typings.primerOcticons.primerOcticonsStrings.`repo-clone`
@@ -1981,10 +2087,13 @@ object mod {
     - typings.primerOcticons.primerOcticonsStrings.`sign-out`
     - typings.primerOcticons.primerOcticonsStrings.`single-select`
     - typings.primerOcticons.primerOcticonsStrings.skip
+    - typings.primerOcticons.primerOcticonsStrings.`skip-fill`
     - typings.primerOcticons.primerOcticonsStrings.sliders
     - typings.primerOcticons.primerOcticonsStrings.smiley
     - typings.primerOcticons.primerOcticonsStrings.`sort-asc`
     - typings.primerOcticons.primerOcticonsStrings.`sort-desc`
+    - typings.primerOcticons.primerOcticonsStrings.`sparkle-fill`
+    - typings.primerOcticons.primerOcticonsStrings.`sponsor-tiers`
     - typings.primerOcticons.primerOcticonsStrings.square
     - typings.primerOcticons.primerOcticonsStrings.`square-fill`
     - typings.primerOcticons.primerOcticonsStrings.squirrel
@@ -2016,8 +2125,10 @@ object mod {
     - typings.primerOcticons.primerOcticonsStrings.trophy
     - typings.primerOcticons.primerOcticonsStrings.typography
     - typings.primerOcticons.primerOcticonsStrings.unfold
+    - typings.primerOcticons.primerOcticonsStrings.unlink
     - typings.primerOcticons.primerOcticonsStrings.unlock
     - typings.primerOcticons.primerOcticonsStrings.unmute
+    - typings.primerOcticons.primerOcticonsStrings.unread
     - typings.primerOcticons.primerOcticonsStrings.unverified
     - typings.primerOcticons.primerOcticonsStrings.upload
     - typings.primerOcticons.primerOcticonsStrings.verified
@@ -2050,6 +2161,10 @@ object mod {
     inline def `arrow-both`: typings.primerOcticons.primerOcticonsStrings.`arrow-both` = "arrow-both".asInstanceOf[typings.primerOcticons.primerOcticonsStrings.`arrow-both`]
     
     inline def `arrow-down`: typings.primerOcticons.primerOcticonsStrings.`arrow-down` = "arrow-down".asInstanceOf[typings.primerOcticons.primerOcticonsStrings.`arrow-down`]
+    
+    inline def `arrow-down-left`: typings.primerOcticons.primerOcticonsStrings.`arrow-down-left` = "arrow-down-left".asInstanceOf[typings.primerOcticons.primerOcticonsStrings.`arrow-down-left`]
+    
+    inline def `arrow-down-right`: typings.primerOcticons.primerOcticonsStrings.`arrow-down-right` = "arrow-down-right".asInstanceOf[typings.primerOcticons.primerOcticonsStrings.`arrow-down-right`]
     
     inline def `arrow-left`: typings.primerOcticons.primerOcticonsStrings.`arrow-left` = "arrow-left".asInstanceOf[typings.primerOcticons.primerOcticonsStrings.`arrow-left`]
     
@@ -2120,6 +2235,8 @@ object mod {
     inline def `circle-slash`: typings.primerOcticons.primerOcticonsStrings.`circle-slash` = "circle-slash".asInstanceOf[typings.primerOcticons.primerOcticonsStrings.`circle-slash`]
     
     inline def clock: typings.primerOcticons.primerOcticonsStrings.clock = "clock".asInstanceOf[typings.primerOcticons.primerOcticonsStrings.clock]
+    
+    inline def `clock-fill`: typings.primerOcticons.primerOcticonsStrings.`clock-fill` = "clock-fill".asInstanceOf[typings.primerOcticons.primerOcticonsStrings.`clock-fill`]
     
     inline def cloud: typings.primerOcticons.primerOcticonsStrings.cloud = "cloud".asInstanceOf[typings.primerOcticons.primerOcticonsStrings.cloud]
     
@@ -2261,6 +2378,8 @@ object mod {
     
     inline def filter: typings.primerOcticons.primerOcticonsStrings.filter = "filter".asInstanceOf[typings.primerOcticons.primerOcticonsStrings.filter]
     
+    inline def `fiscal-host`: typings.primerOcticons.primerOcticonsStrings.`fiscal-host` = "fiscal-host".asInstanceOf[typings.primerOcticons.primerOcticonsStrings.`fiscal-host`]
+    
     inline def flame: typings.primerOcticons.primerOcticonsStrings.flame = "flame".asInstanceOf[typings.primerOcticons.primerOcticonsStrings.flame]
     
     inline def fold: typings.primerOcticons.primerOcticonsStrings.fold = "fold".asInstanceOf[typings.primerOcticons.primerOcticonsStrings.fold]
@@ -2290,6 +2409,8 @@ object mod {
     inline def `git-pull-request-draft`: typings.primerOcticons.primerOcticonsStrings.`git-pull-request-draft` = "git-pull-request-draft".asInstanceOf[typings.primerOcticons.primerOcticonsStrings.`git-pull-request-draft`]
     
     inline def globe: typings.primerOcticons.primerOcticonsStrings.globe = "globe".asInstanceOf[typings.primerOcticons.primerOcticonsStrings.globe]
+    
+    inline def goal: typings.primerOcticons.primerOcticonsStrings.goal = "goal".asInstanceOf[typings.primerOcticons.primerOcticonsStrings.goal]
     
     inline def grabber: typings.primerOcticons.primerOcticonsStrings.grabber = "grabber".asInstanceOf[typings.primerOcticons.primerOcticonsStrings.grabber]
     
@@ -2330,6 +2451,10 @@ object mod {
     inline def `issue-opened`: typings.primerOcticons.primerOcticonsStrings.`issue-opened` = "issue-opened".asInstanceOf[typings.primerOcticons.primerOcticonsStrings.`issue-opened`]
     
     inline def `issue-reopened`: typings.primerOcticons.primerOcticonsStrings.`issue-reopened` = "issue-reopened".asInstanceOf[typings.primerOcticons.primerOcticonsStrings.`issue-reopened`]
+    
+    inline def `issue-tracked-by`: typings.primerOcticons.primerOcticonsStrings.`issue-tracked-by` = "issue-tracked-by".asInstanceOf[typings.primerOcticons.primerOcticonsStrings.`issue-tracked-by`]
+    
+    inline def `issue-tracked-in`: typings.primerOcticons.primerOcticonsStrings.`issue-tracked-in` = "issue-tracked-in".asInstanceOf[typings.primerOcticons.primerOcticonsStrings.`issue-tracked-in`]
     
     inline def italic: typings.primerOcticons.primerOcticonsStrings.italic = "italic".asInstanceOf[typings.primerOcticons.primerOcticonsStrings.italic]
     
@@ -2431,11 +2556,19 @@ object mod {
     
     inline def project: typings.primerOcticons.primerOcticonsStrings.project = "project".asInstanceOf[typings.primerOcticons.primerOcticonsStrings.project]
     
+    inline def `project-roadmap`: typings.primerOcticons.primerOcticonsStrings.`project-roadmap` = "project-roadmap".asInstanceOf[typings.primerOcticons.primerOcticonsStrings.`project-roadmap`]
+    
+    inline def `project-symlink`: typings.primerOcticons.primerOcticonsStrings.`project-symlink` = "project-symlink".asInstanceOf[typings.primerOcticons.primerOcticonsStrings.`project-symlink`]
+    
     inline def pulse: typings.primerOcticons.primerOcticonsStrings.pulse = "pulse".asInstanceOf[typings.primerOcticons.primerOcticonsStrings.pulse]
     
     inline def question: typings.primerOcticons.primerOcticonsStrings.question = "question".asInstanceOf[typings.primerOcticons.primerOcticonsStrings.question]
     
     inline def quote: typings.primerOcticons.primerOcticonsStrings.quote = "quote".asInstanceOf[typings.primerOcticons.primerOcticonsStrings.quote]
+    
+    inline def read: typings.primerOcticons.primerOcticonsStrings.read = "read".asInstanceOf[typings.primerOcticons.primerOcticonsStrings.read]
+    
+    inline def `rel-file-path`: typings.primerOcticons.primerOcticonsStrings.`rel-file-path` = "rel-file-path".asInstanceOf[typings.primerOcticons.primerOcticonsStrings.`rel-file-path`]
     
     inline def reply: typings.primerOcticons.primerOcticonsStrings.reply = "reply".asInstanceOf[typings.primerOcticons.primerOcticonsStrings.reply]
     
@@ -2499,6 +2632,8 @@ object mod {
     
     inline def skip: typings.primerOcticons.primerOcticonsStrings.skip = "skip".asInstanceOf[typings.primerOcticons.primerOcticonsStrings.skip]
     
+    inline def `skip-fill`: typings.primerOcticons.primerOcticonsStrings.`skip-fill` = "skip-fill".asInstanceOf[typings.primerOcticons.primerOcticonsStrings.`skip-fill`]
+    
     inline def sliders: typings.primerOcticons.primerOcticonsStrings.sliders = "sliders".asInstanceOf[typings.primerOcticons.primerOcticonsStrings.sliders]
     
     inline def smiley: typings.primerOcticons.primerOcticonsStrings.smiley = "smiley".asInstanceOf[typings.primerOcticons.primerOcticonsStrings.smiley]
@@ -2506,6 +2641,10 @@ object mod {
     inline def `sort-asc`: typings.primerOcticons.primerOcticonsStrings.`sort-asc` = "sort-asc".asInstanceOf[typings.primerOcticons.primerOcticonsStrings.`sort-asc`]
     
     inline def `sort-desc`: typings.primerOcticons.primerOcticonsStrings.`sort-desc` = "sort-desc".asInstanceOf[typings.primerOcticons.primerOcticonsStrings.`sort-desc`]
+    
+    inline def `sparkle-fill`: typings.primerOcticons.primerOcticonsStrings.`sparkle-fill` = "sparkle-fill".asInstanceOf[typings.primerOcticons.primerOcticonsStrings.`sparkle-fill`]
+    
+    inline def `sponsor-tiers`: typings.primerOcticons.primerOcticonsStrings.`sponsor-tiers` = "sponsor-tiers".asInstanceOf[typings.primerOcticons.primerOcticonsStrings.`sponsor-tiers`]
     
     inline def square: typings.primerOcticons.primerOcticonsStrings.square = "square".asInstanceOf[typings.primerOcticons.primerOcticonsStrings.square]
     
@@ -2569,9 +2708,13 @@ object mod {
     
     inline def unfold: typings.primerOcticons.primerOcticonsStrings.unfold = "unfold".asInstanceOf[typings.primerOcticons.primerOcticonsStrings.unfold]
     
+    inline def unlink: typings.primerOcticons.primerOcticonsStrings.unlink = "unlink".asInstanceOf[typings.primerOcticons.primerOcticonsStrings.unlink]
+    
     inline def unlock: typings.primerOcticons.primerOcticonsStrings.unlock = "unlock".asInstanceOf[typings.primerOcticons.primerOcticonsStrings.unlock]
     
     inline def unmute: typings.primerOcticons.primerOcticonsStrings.unmute = "unmute".asInstanceOf[typings.primerOcticons.primerOcticonsStrings.unmute]
+    
+    inline def unread: typings.primerOcticons.primerOcticonsStrings.unread = "unread".asInstanceOf[typings.primerOcticons.primerOcticonsStrings.unread]
     
     inline def unverified: typings.primerOcticons.primerOcticonsStrings.unverified = "unverified".asInstanceOf[typings.primerOcticons.primerOcticonsStrings.unverified]
     

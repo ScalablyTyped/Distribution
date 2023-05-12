@@ -85,10 +85,36 @@ object distTypesTransformersRootTransformerMod {
     
     def processToken(): Unit = js.native
     
+    def shiftMappings(mappings: js.Array[js.UndefOr[Double]], prefixLength: Double): js.Array[js.UndefOr[Double]] = js.native
+    
     /* private */ var tokens: Any = js.native
     
-    def transform(): String = js.native
+    def transform(): RootTransformerResult = js.native
     
     /* private */ var transformers: Any = js.native
+  }
+  
+  trait RootTransformerResult extends StObject {
+    
+    var code: String
+    
+    var mappings: js.Array[js.UndefOr[Double]]
+  }
+  object RootTransformerResult {
+    
+    inline def apply(code: String, mappings: js.Array[js.UndefOr[Double]]): RootTransformerResult = {
+      val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], mappings = mappings.asInstanceOf[js.Any])
+      __obj.asInstanceOf[RootTransformerResult]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RootTransformerResult] (val x: Self) extends AnyVal {
+      
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      
+      inline def setMappings(value: js.Array[js.UndefOr[Double]]): Self = StObject.set(x, "mappings", value.asInstanceOf[js.Any])
+      
+      inline def setMappingsVarargs(value: js.UndefOr[Double]*): Self = StObject.set(x, "mappings", js.Array(value*))
+    }
   }
 }

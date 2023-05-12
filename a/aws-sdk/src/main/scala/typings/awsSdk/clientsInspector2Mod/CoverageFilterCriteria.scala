@@ -27,6 +27,21 @@ trait CoverageFilterCriteria extends StObject {
   var ecrRepositoryName: js.UndefOr[CoverageStringFilterList] = js.undefined
   
   /**
+    * Returns coverage statistics for AWS Lambda functions filtered by function names.
+    */
+  var lambdaFunctionName: js.UndefOr[CoverageStringFilterList] = js.undefined
+  
+  /**
+    * Returns coverage statistics for AWS Lambda functions filtered by runtime.
+    */
+  var lambdaFunctionRuntime: js.UndefOr[CoverageStringFilterList] = js.undefined
+  
+  /**
+    * Returns coverage statistics for AWS Lambda functions filtered by tag.
+    */
+  var lambdaFunctionTags: js.UndefOr[CoverageMapFilterList] = js.undefined
+  
+  /**
     * An array of Amazon Web Services resource IDs to return coverage statistics for.
     */
   var resourceId: js.UndefOr[CoverageStringFilterList] = js.undefined
@@ -84,6 +99,24 @@ object CoverageFilterCriteria {
     inline def setEcrRepositoryNameUndefined: Self = StObject.set(x, "ecrRepositoryName", js.undefined)
     
     inline def setEcrRepositoryNameVarargs(value: CoverageStringFilter*): Self = StObject.set(x, "ecrRepositoryName", js.Array(value*))
+    
+    inline def setLambdaFunctionName(value: CoverageStringFilterList): Self = StObject.set(x, "lambdaFunctionName", value.asInstanceOf[js.Any])
+    
+    inline def setLambdaFunctionNameUndefined: Self = StObject.set(x, "lambdaFunctionName", js.undefined)
+    
+    inline def setLambdaFunctionNameVarargs(value: CoverageStringFilter*): Self = StObject.set(x, "lambdaFunctionName", js.Array(value*))
+    
+    inline def setLambdaFunctionRuntime(value: CoverageStringFilterList): Self = StObject.set(x, "lambdaFunctionRuntime", value.asInstanceOf[js.Any])
+    
+    inline def setLambdaFunctionRuntimeUndefined: Self = StObject.set(x, "lambdaFunctionRuntime", js.undefined)
+    
+    inline def setLambdaFunctionRuntimeVarargs(value: CoverageStringFilter*): Self = StObject.set(x, "lambdaFunctionRuntime", js.Array(value*))
+    
+    inline def setLambdaFunctionTags(value: CoverageMapFilterList): Self = StObject.set(x, "lambdaFunctionTags", value.asInstanceOf[js.Any])
+    
+    inline def setLambdaFunctionTagsUndefined: Self = StObject.set(x, "lambdaFunctionTags", js.undefined)
+    
+    inline def setLambdaFunctionTagsVarargs(value: CoverageMapFilter*): Self = StObject.set(x, "lambdaFunctionTags", js.Array(value*))
     
     inline def setResourceId(value: CoverageStringFilterList): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
     

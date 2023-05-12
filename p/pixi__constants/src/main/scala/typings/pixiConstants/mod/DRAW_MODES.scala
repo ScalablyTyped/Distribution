@@ -13,42 +13,70 @@ object DRAW_MODES extends StObject {
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[DRAW_MODES & Double] = js.native
   
+  /**
+    *  To draw a series of unconnected line segments (individual lines).
+    * @default 1
+    */
   @js.native
   sealed trait LINES
     extends StObject
        with DRAW_MODES
   /* 1 */ val LINES: typings.pixiConstants.mod.DRAW_MODES.LINES & Double = js.native
   
+  /**
+    *  To draw a series of connected line segments. It also joins the first and last vertices to form a loop.
+    * @default 2
+    */
   @js.native
   sealed trait LINE_LOOP
     extends StObject
        with DRAW_MODES
   /* 2 */ val LINE_LOOP: typings.pixiConstants.mod.DRAW_MODES.LINE_LOOP & Double = js.native
   
+  /**
+    * To draw a series of connected line segments.
+    * @default 3
+    */
   @js.native
   sealed trait LINE_STRIP
     extends StObject
        with DRAW_MODES
   /* 3 */ val LINE_STRIP: typings.pixiConstants.mod.DRAW_MODES.LINE_STRIP & Double = js.native
   
+  /**
+    * To draw a series of points.
+    * @default 0
+    */
   @js.native
   sealed trait POINTS
     extends StObject
        with DRAW_MODES
   /* 0 */ val POINTS: typings.pixiConstants.mod.DRAW_MODES.POINTS & Double = js.native
   
+  /**
+    * To draw a series of separate triangles.
+    * @default 4
+    */
   @js.native
   sealed trait TRIANGLES
     extends StObject
        with DRAW_MODES
   /* 4 */ val TRIANGLES: typings.pixiConstants.mod.DRAW_MODES.TRIANGLES & Double = js.native
   
+  /**
+    * To draw a series of connected triangles sharing the first vertex in a fan-like fashion.
+    * @default 6
+    */
   @js.native
   sealed trait TRIANGLE_FAN
     extends StObject
        with DRAW_MODES
   /* 6 */ val TRIANGLE_FAN: typings.pixiConstants.mod.DRAW_MODES.TRIANGLE_FAN & Double = js.native
   
+  /**
+    * To draw a series of connected triangles in strip fashion.
+    * @default 5
+    */
   @js.native
   sealed trait TRIANGLE_STRIP
     extends StObject

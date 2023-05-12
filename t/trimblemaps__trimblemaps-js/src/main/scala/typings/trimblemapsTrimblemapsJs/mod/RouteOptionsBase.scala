@@ -156,6 +156,8 @@ trait RouteOptionsBase extends StObject {
   
   var hosUseCycleReset: js.UndefOr[Boolean] = js.undefined
   
+  var hubRouting: js.UndefOr[Boolean] = js.undefined
+  
   var includeTrimblePlaceIDs: js.UndefOr[Boolean] = js.undefined
   
   // TrailerCfg.Engine
@@ -539,6 +541,10 @@ object RouteOptionsBase {
     inline def setHosUseCycleReset(value: Boolean): Self = StObject.set(x, "hosUseCycleReset", value.asInstanceOf[js.Any])
     
     inline def setHosUseCycleResetUndefined: Self = StObject.set(x, "hosUseCycleReset", js.undefined)
+    
+    inline def setHubRouting(value: Boolean): Self = StObject.set(x, "hubRouting", value.asInstanceOf[js.Any])
+    
+    inline def setHubRoutingUndefined: Self = StObject.set(x, "hubRouting", js.undefined)
     
     inline def setIncludeTrimblePlaceIDs(value: Boolean): Self = StObject.set(x, "includeTrimblePlaceIDs", value.asInstanceOf[js.Any])
     

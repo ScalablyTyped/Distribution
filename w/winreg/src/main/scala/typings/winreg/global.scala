@@ -22,9 +22,6 @@ object global {
         * Creates a registry object, which provides access to a single registry key.
         * Note: This class is returned by a call to ```require('winreg')```.
         *
-        * @public
-        * @class
-        *
         * @param {@link Options} options - the options
         *
         * @example
@@ -38,7 +35,6 @@ object global {
       
       /**
         * The registry hive architecture ('x86' or 'x64').
-        * @readonly
         */
       /* CompleteClass */
       var arch: String = js.native
@@ -94,21 +90,18 @@ object global {
       
       /**
         * The hive id.
-        * @readonly
         */
       /* CompleteClass */
       var hive: String = js.native
       
       /**
         * The hostname.
-        * @readonly
         */
       /* CompleteClass */
       var host: String = js.native
       
       /**
         * The registry key name.
-        * @readonly
         */
       /* CompleteClass */
       var key: String = js.native
@@ -135,14 +128,12 @@ object global {
       
       /**
         * Creates a new {@link Registry} instance that points to the parent registry key.
-        * @readonly
         */
       /* CompleteClass */
       var parent: Registry = js.native
       
       /**
         * The full path to the registry key.
-        * @readonly
         */
       /* CompleteClass */
       var path: String = js.native

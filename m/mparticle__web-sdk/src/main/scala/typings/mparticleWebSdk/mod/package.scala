@@ -21,6 +21,8 @@ inline def getAppVersion: GetAppVersion_ = ^.asInstanceOf[js.Dynamic].selectDyna
 
 inline def getDeviceId: GetDeviceId_ = ^.asInstanceOf[js.Dynamic].selectDynamic("getDeviceId").asInstanceOf[GetDeviceId_]
 
+inline def getEnvironment: GetEnvironment_ = ^.asInstanceOf[js.Dynamic].selectDynamic("getEnvironment").asInstanceOf[GetEnvironment_]
+
 inline def getInstance(): mParticleInstance = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[mParticleInstance]
 inline def getInstance(instanceName: String): mParticleInstance = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(instanceName.asInstanceOf[js.Any]).asInstanceOf[mParticleInstance]
 
@@ -136,6 +138,8 @@ type CreateTransactionAttributes = js.Function6[
 /* tax */ js.UndefOr[Double], 
 TransactionAttributes]
 
+type Dictionary[V] = Record[String, V]
+
 type EndSession_ = js.Function0[Unit]
 
 type GDPRConsentState = StringDictionary[PrivacyConsentState]
@@ -147,6 +151,8 @@ type GetAppVersion_ = js.Function0[String]
 type GetCurrentUser = js.Function0[User]
 
 type GetDeviceId_ = js.Function0[String]
+
+type GetEnvironment_ = js.Function0[String]
 
 type GetIntegrationAttributes_ = js.Function1[/* integrationId */ Double, Record[String, Any]]
 
@@ -262,6 +268,8 @@ type Logout = js.Function2[
 /* identityApiData */ js.UndefOr[IdentityApiData | js.Object | Null], 
 /* callback */ js.UndefOr[IdentityCallback], 
 Unit]
+
+type MPForwarder = Dictionary[Any]
 
 type MPID = String
 

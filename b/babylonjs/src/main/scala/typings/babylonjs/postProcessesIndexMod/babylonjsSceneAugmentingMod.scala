@@ -14,8 +14,8 @@ object babylonjsSceneAugmentingMod {
     
     /**
       * Gets the postprocess render pipeline manager
-      * @see https://doc.babylonjs.com/how_to/how_to_use_postprocessrenderpipeline
-      * @see https://doc.babylonjs.com/how_to/using_default_rendering_pipeline
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/postProcesses/postProcessRenderPipeline
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/postProcesses/defaultRenderingPipeline
       */
     val postProcessRenderPipelineManager: typings.babylonjs.postProcessesRenderPipelinePostProcessRenderPipelineManagerMod.PostProcessRenderPipelineManager
   }

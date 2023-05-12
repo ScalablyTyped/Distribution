@@ -6,20 +6,20 @@ import typings.leaflet.mod.LatLngExpression
 import typings.leaflet.mod.MarkerOptions
 import typings.leaflet.mod.Marker_
 import typings.svelteLeafletjs.mod.MarkerEventKeys
-import typings.svelteLeafletjs.svelteLeafletjsStrings.onadd
-import typings.svelteLeafletjs.svelteLeafletjsStrings.onclick
-import typings.svelteLeafletjs.svelteLeafletjsStrings.oncontextmenu
-import typings.svelteLeafletjs.svelteLeafletjsStrings.ondblclick
-import typings.svelteLeafletjs.svelteLeafletjsStrings.ondrag
-import typings.svelteLeafletjs.svelteLeafletjsStrings.ondragend
-import typings.svelteLeafletjs.svelteLeafletjsStrings.ondragstart
-import typings.svelteLeafletjs.svelteLeafletjsStrings.onmousedown
-import typings.svelteLeafletjs.svelteLeafletjsStrings.onmouseout
-import typings.svelteLeafletjs.svelteLeafletjsStrings.onmouseover
-import typings.svelteLeafletjs.svelteLeafletjsStrings.onmove
-import typings.svelteLeafletjs.svelteLeafletjsStrings.onpopupclose
-import typings.svelteLeafletjs.svelteLeafletjsStrings.onpopupopen
-import typings.svelteLeafletjs.svelteLeafletjsStrings.onremove
+import typings.svelteLeafletjs.svelteLeafletjsStrings.add
+import typings.svelteLeafletjs.svelteLeafletjsStrings.click
+import typings.svelteLeafletjs.svelteLeafletjsStrings.contextmenu
+import typings.svelteLeafletjs.svelteLeafletjsStrings.dblclick
+import typings.svelteLeafletjs.svelteLeafletjsStrings.drag
+import typings.svelteLeafletjs.svelteLeafletjsStrings.dragend
+import typings.svelteLeafletjs.svelteLeafletjsStrings.dragstart
+import typings.svelteLeafletjs.svelteLeafletjsStrings.mousedown
+import typings.svelteLeafletjs.svelteLeafletjsStrings.mouseout
+import typings.svelteLeafletjs.svelteLeafletjsStrings.mouseover
+import typings.svelteLeafletjs.svelteLeafletjsStrings.move
+import typings.svelteLeafletjs.svelteLeafletjsStrings.popupclose
+import typings.svelteLeafletjs.svelteLeafletjsStrings.popupopen
+import typings.svelteLeafletjs.svelteLeafletjsStrings.remove
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -55,7 +55,7 @@ object GetMarker {
     inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
     inline def setEventsVarargs(
-      value: (ondragstart | ondrag | ondblclick | oncontextmenu | onremove | onmouseout | onadd | onclick | onmove | onmouseover | ondragend | onpopupopen | onpopupclose | onmousedown)*
+      value: (click | dblclick | mousedown | mouseover | mouseout | contextmenu | dragstart | drag | dragend | move | add | remove | popupopen | popupclose)*
     ): Self = StObject.set(x, "events", js.Array(value*))
     
     inline def setGetMarker(value: () => Marker_[Any]): Self = StObject.set(x, "getMarker", js.Any.fromFunction0(value))

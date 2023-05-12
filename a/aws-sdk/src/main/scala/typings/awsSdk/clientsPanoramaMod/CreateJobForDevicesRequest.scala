@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateJobForDevicesRequest extends StObject {
   
   /**
-    * IDs of target devices.
+    * ID of target device.
     */
   var DeviceIds: DeviceIdList
   

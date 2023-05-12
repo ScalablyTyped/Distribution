@@ -8,12 +8,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object libFromJSONMod extends Shortcut {
   
-  @JSImport("postcss/lib/fromJSON", JSImport.Default)
+  @JSImport("postcss/lib/fromJSON", JSImport.Namespace)
   @js.native
-  val default: JSONHydrator = js.native
+  val ^ : FromJSON = js.native
   
-  type _To = JSONHydrator
+  @js.native
+  trait FromJSON
+    extends StObject
+       with JSONHydrator {
+    
+    def default(data: js.Array[js.Object]): js.Array[typings.postcss.libNodeMod.default] = js.native
+    def default(data: js.Object): typings.postcss.libNodeMod.default = js.native
+    @JSName("default")
+    var default_Original: FromJSON = js.native
+  }
   
-  /* This means you don't have to write `default`, but can instead just say `libFromJSONMod.foo` */
-  override def _to: JSONHydrator = default
+  type _To = FromJSON
+  
+  /* This means you don't have to write `^`, but can instead just say `libFromJSONMod.foo` */
+  override def _to: FromJSON = ^
 }

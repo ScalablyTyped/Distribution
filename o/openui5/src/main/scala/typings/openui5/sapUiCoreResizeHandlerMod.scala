@@ -1,76 +1,49 @@
 package typings.openui5
 
-import org.scalablytyped.runtime.Shortcut
+import typings.openui5.sap.ClassInfo
 import typings.std.Element
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object sapUiCoreResizeHandlerMod extends Shortcut {
+object sapUiCoreResizeHandlerMod {
   
   @JSImport("sap/ui/core/ResizeHandler", JSImport.Default)
   @js.native
-  val default: ResizeHandler = js.native
-  
-  /**
-    * The resize handling API provides firing of resize events on all browsers by regularly checking the width
-    * and height of registered DOM elements or controls and firing events accordingly.
-    *
-    * **Note**: The public usage of the constructor is deprecated since 1.103.0. Please use the static module
-    * export directly.
-    */
-  @js.native
-  trait ResizeHandler extends StObject {
+  open class default ()
+    extends typings.openui5.sapUiBaseObjectMod.default
+  /* static members */
+  object default {
+    
+    @JSImport("sap/ui/core/ResizeHandler", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Deregisters a previously registered handler for resize events with the given registration ID.
       */
-    def deregister(
+    inline def deregister(
       /**
       * The registration ID of the handler to deregister. The ID was provided by function {@link sap.ui.core.ResizeHandler.register}
       * when the handler was registered.
       */
     sId: String
-    ): Unit = js.native
+    ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deregister")(sId.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
-      * Creates a new subclass of class sap.ui.core.ResizeHandler with name `sClassName` and enriches it with
-      * the information contained in `oClassInfo`.
+      * @deprecated (since 1.110) - As the class nature of ResizeHandler is deprecated since 1.103, the `extend`
+      * method shouldn't be called either
       *
-      * `oClassInfo` might contain the same kind of information as described in {@link sap.ui.base.Object.extend}.
+      * Creates a new subclass of class `sap.ui.core.ResizeHandler`.
       *
       * @returns Created class / constructor function
       */
-    def extend(/**
+    inline def extend[T /* <: Record[String, Any] */](/**
       * Name of the class being created
       */
-    sClassName: String): js.Function = js.native
-    def extend(
-      /**
-      * Name of the class being created
-      */
-    sClassName: String,
-      /**
-      * Object literal with information about the class
-      */
-    oClassInfo: js.Object
-    ): js.Function = js.native
-    def extend(
-      /**
-      * Name of the class being created
-      */
-    sClassName: String,
-      /**
-      * Object literal with information about the class
-      */
-    oClassInfo: js.Object,
-      /**
-      * Constructor function for the metadata object; if not given, it defaults to the metadata implementation
-      * used by this class
-      */
-    FNMetaImpl: js.Function
-    ): js.Function = js.native
-    def extend(
+    sClassName: String): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(sClassName.asInstanceOf[js.Any]).asInstanceOf[js.Function]
+    inline def extend[T /* <: Record[String, Any] */](
       /**
       * Name of the class being created
       */
@@ -84,16 +57,44 @@ object sapUiCoreResizeHandlerMod extends Shortcut {
       * used by this class
       */
     FNMetaImpl: js.Function
-    ): js.Function = js.native
+    ): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(sClassName.asInstanceOf[js.Any], oClassInfo.asInstanceOf[js.Any], FNMetaImpl.asInstanceOf[js.Any])).asInstanceOf[js.Function]
+    inline def extend[T /* <: Record[String, Any] */](
+      /**
+      * Name of the class being created
+      */
+    sClassName: String,
+      /**
+      * Object literal with information about the class
+      */
+    oClassInfo: ClassInfo[T, ResizeHandler]
+    ): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(sClassName.asInstanceOf[js.Any], oClassInfo.asInstanceOf[js.Any])).asInstanceOf[js.Function]
+    inline def extend[T /* <: Record[String, Any] */](
+      /**
+      * Name of the class being created
+      */
+    sClassName: String,
+      /**
+      * Object literal with information about the class
+      */
+    oClassInfo: ClassInfo[T, ResizeHandler],
+      /**
+      * Constructor function for the metadata object; if not given, it defaults to the metadata implementation
+      * used by this class
+      */
+    FNMetaImpl: js.Function
+    ): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(sClassName.asInstanceOf[js.Any], oClassInfo.asInstanceOf[js.Any], FNMetaImpl.asInstanceOf[js.Any])).asInstanceOf[js.Function]
     
     /**
-      * Returns a metadata object for class sap.ui.core.ResizeHandler.
+      * @deprecated (since 1.110) - As the class nature of ResizeHandler is deprecated since 1.103, the `getMetadata`
+      * method shouldn't be called either
+      *
+      * Returns a metadata object for class `sap.ui.core.ResizeHandler`.
       *
       * @returns Metadata object describing this class
       */
-    def getMetadata(): typings.openui5.sapUiBaseMetadataMod.default = js.native
+    inline def getMetadata(): typings.openui5.sapUiBaseMetadataMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("getMetadata")().asInstanceOf[typings.openui5.sapUiBaseMetadataMod.default]
     
-    def register(
+    inline def register(
       /**
       * The control or the DOM reference for which the given event handler should be registered (beside the window)
       */
@@ -103,8 +104,8 @@ object sapUiCoreResizeHandlerMod extends Shortcut {
       * object is passed as first argument to the event handler. See the description of this function for more
       * details about the available parameters of this event.
       */
-    fHandler: js.Function
-    ): String | Null = js.native
+    fnHandler: js.Function
+    ): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(oRef.asInstanceOf[js.Any], fnHandler.asInstanceOf[js.Any])).asInstanceOf[String | Null]
     /**
       * Registers the given event handler for resize events on the given DOM element or control.
       *
@@ -127,7 +128,7 @@ object sapUiCoreResizeHandlerMod extends Shortcut {
       * @returns A registration ID which can be used for deregistering the event handler, see {@link sap.ui.core.ResizeHandler.deregister}.
       * If the UI5 framework is not yet initialized `null` is returned.
       */
-    def register(
+    inline def register(
       /**
       * The control or the DOM reference for which the given event handler should be registered (beside the window)
       */
@@ -137,12 +138,9 @@ object sapUiCoreResizeHandlerMod extends Shortcut {
       * object is passed as first argument to the event handler. See the description of this function for more
       * details about the available parameters of this event.
       */
-    fHandler: js.Function
-    ): String | Null = js.native
+    fnHandler: js.Function
+    ): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(oRef.asInstanceOf[js.Any], fnHandler.asInstanceOf[js.Any])).asInstanceOf[String | Null]
   }
   
-  type _To = ResizeHandler
-  
-  /* This means you don't have to write `default`, but can instead just say `sapUiCoreResizeHandlerMod.foo` */
-  override def _to: ResizeHandler = default
+  type ResizeHandler = typings.openui5.sapUiBaseObjectMod.default
 }

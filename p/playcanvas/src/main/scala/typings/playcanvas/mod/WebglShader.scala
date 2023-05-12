@@ -16,7 +16,7 @@ trait WebglShader extends StObject {
   /**
     * Compiles an individual shader.
     *
-    * @param {WebglGraphicsDevice} device - The graphics device.
+    * @param {import('./webgl-graphics-device.js').WebglGraphicsDevice} device - The graphics device.
     * @param {string} src - The shader source code.
     * @param {boolean} isVertexShader - True if the shader is a vertex shader, false if it is a
     * fragment shader.
@@ -28,8 +28,8 @@ trait WebglShader extends StObject {
   /**
     * Check the compilation status of a shader.
     *
-    * @param {WebglGraphicsDevice} device - The graphics device.
-    * @param {Shader} shader - The shader to query.
+    * @param {import('./webgl-graphics-device.js').WebglGraphicsDevice} device - The graphics device.
+    * @param {import('../shader.js').Shader} shader - The shader to query.
     * @param {WebGLShader} glShader - The WebGL shader.
     * @param {string} source - The shader source code.
     * @param {string} shaderType - The shader type. Can be 'vertex' or 'fragment'.
@@ -45,7 +45,7 @@ trait WebglShader extends StObject {
     * @param {string} src - The shader source code.
     * @param {string} infoLog - The info log returned from WebGL on a failed shader compilation.
     * @returns {Array} An array where the first element is the 10 lines of code around the first
-    * detected error, and the second element an object storing the error messsage, line number and
+    * detected error, and the second element an object storing the error message, line number and
     * complete shader source.
     * @private
     */
@@ -54,21 +54,30 @@ trait WebglShader extends StObject {
   var attributes: js.Array[Any]
   
   /**
-    * Compile and link a shader program.
+    * Compile shader programs.
     *
-    * @param {WebglGraphicsDevice} device - The graphics device.
-    * @param {Shader} shader - The shader to compile.
+    * @param {import('./webgl-graphics-device.js').WebglGraphicsDevice} device - The graphics device.
+    * @param {import('../shader.js').Shader} shader - The shader to compile.
     */
-  def compileAndLink(device: WebglGraphicsDevice, shader: Shader): Unit
+  def compile(device: WebglGraphicsDevice, shader: Shader): Unit
   
   var compileDuration: Double
   
   /**
     * Free the WebGL resources associated with a shader.
     *
-    * @param {Shader} shader - The shader to free.
+    * @param {import('../shader.js').Shader} shader - The shader to free.
     */
   def destroy(shader: Shader): Unit
+  
+  /**
+    * Link the shader, and extract its attributes and uniform information.
+    *
+    * @param {import('./webgl-graphics-device.js').WebglGraphicsDevice} device - The graphics device.
+    * @param {import('../shader.js').Shader} shader - The shader to query.
+    * @returns {boolean} True if the shader was successfully queried and false otherwise.
+    */
+  def finalize(device: WebglGraphicsDevice, shader: Shader): Boolean
   
   var glFragmentShader: WebGLShader
   
@@ -79,24 +88,23 @@ trait WebglShader extends StObject {
   def init(): Unit
   
   /**
+    * Link shader programs. This is called at a later stage, to allow many shaders to compile in parallel.
+    *
+    * @param {import('./webgl-graphics-device.js').WebglGraphicsDevice} device - The graphics device.
+    * @param {import('../shader.js').Shader} shader - The shader to compile.
+    */
+  def link(device: WebglGraphicsDevice, shader: Shader): Unit
+  
+  /**
     * Dispose the shader when the context has been lost.
     */
   def loseContext(): Unit
   
   /**
-    * Extract attribute and uniform information from a successfully linked shader.
-    *
-    * @param {WebglGraphicsDevice} device - The graphics device.
-    * @param {Shader} shader - The shader to query.
-    * @returns {boolean} True if the shader was successfully queried and false otherwise.
-    */
-  def postLink(device: WebglGraphicsDevice, shader: Shader): Boolean
-  
-  /**
     * Restore shader after the context has been obtained.
     *
-    * @param {WebglGraphicsDevice} device - The graphics device.
-    * @param {Shader} shader - The shader to restore.
+    * @param {import('./webgl-graphics-device.js').WebglGraphicsDevice} device - The graphics device.
+    * @param {import('../shader.js').Shader} shader - The shader to restore.
     */
   def restoreContext(device: WebglGraphicsDevice, shader: Shader): Unit
   
@@ -111,20 +119,22 @@ object WebglShader {
     _isCompiled: Any,
     _processError: Any,
     attributes: js.Array[Any],
-    compileAndLink: (WebglGraphicsDevice, Shader) => Unit,
+    compile: (WebglGraphicsDevice, Shader) => Unit,
     compileDuration: Double,
     destroy: Shader => Unit,
+    finalize_ : (WebglGraphicsDevice, Shader) => Boolean,
     glFragmentShader: WebGLShader,
     glProgram: WebGLProgram,
     glVertexShader: WebGLShader,
     init: () => Unit,
+    link: (WebglGraphicsDevice, Shader) => Unit,
     loseContext: () => Unit,
-    postLink: (WebglGraphicsDevice, Shader) => Boolean,
     restoreContext: (WebglGraphicsDevice, Shader) => Unit,
     samplers: js.Array[Any],
     uniforms: js.Array[Any]
   ): WebglShader = {
-    val __obj = js.Dynamic.literal(_compileShaderSource = _compileShaderSource.asInstanceOf[js.Any], _isCompiled = _isCompiled.asInstanceOf[js.Any], _processError = _processError.asInstanceOf[js.Any], attributes = attributes.asInstanceOf[js.Any], compileAndLink = js.Any.fromFunction2(compileAndLink), compileDuration = compileDuration.asInstanceOf[js.Any], destroy = js.Any.fromFunction1(destroy), glFragmentShader = glFragmentShader.asInstanceOf[js.Any], glProgram = glProgram.asInstanceOf[js.Any], glVertexShader = glVertexShader.asInstanceOf[js.Any], init = js.Any.fromFunction0(init), loseContext = js.Any.fromFunction0(loseContext), postLink = js.Any.fromFunction2(postLink), restoreContext = js.Any.fromFunction2(restoreContext), samplers = samplers.asInstanceOf[js.Any], uniforms = uniforms.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(_compileShaderSource = _compileShaderSource.asInstanceOf[js.Any], _isCompiled = _isCompiled.asInstanceOf[js.Any], _processError = _processError.asInstanceOf[js.Any], attributes = attributes.asInstanceOf[js.Any], compile = js.Any.fromFunction2(compile), compileDuration = compileDuration.asInstanceOf[js.Any], destroy = js.Any.fromFunction1(destroy), glFragmentShader = glFragmentShader.asInstanceOf[js.Any], glProgram = glProgram.asInstanceOf[js.Any], glVertexShader = glVertexShader.asInstanceOf[js.Any], init = js.Any.fromFunction0(init), link = js.Any.fromFunction2(link), loseContext = js.Any.fromFunction0(loseContext), restoreContext = js.Any.fromFunction2(restoreContext), samplers = samplers.asInstanceOf[js.Any], uniforms = uniforms.asInstanceOf[js.Any])
+    __obj.updateDynamic("finalize")(js.Any.fromFunction2(finalize_))
     __obj.asInstanceOf[WebglShader]
   }
   
@@ -135,11 +145,13 @@ object WebglShader {
     
     inline def setAttributesVarargs(value: Any*): Self = StObject.set(x, "attributes", js.Array(value*))
     
-    inline def setCompileAndLink(value: (WebglGraphicsDevice, Shader) => Unit): Self = StObject.set(x, "compileAndLink", js.Any.fromFunction2(value))
+    inline def setCompile(value: (WebglGraphicsDevice, Shader) => Unit): Self = StObject.set(x, "compile", js.Any.fromFunction2(value))
     
     inline def setCompileDuration(value: Double): Self = StObject.set(x, "compileDuration", value.asInstanceOf[js.Any])
     
     inline def setDestroy(value: Shader => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction1(value))
+    
+    inline def setFinalize_(value: (WebglGraphicsDevice, Shader) => Boolean): Self = StObject.set(x, "finalize", js.Any.fromFunction2(value))
     
     inline def setGlFragmentShader(value: WebGLShader): Self = StObject.set(x, "glFragmentShader", value.asInstanceOf[js.Any])
     
@@ -149,9 +161,9 @@ object WebglShader {
     
     inline def setInit(value: () => Unit): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
     
-    inline def setLoseContext(value: () => Unit): Self = StObject.set(x, "loseContext", js.Any.fromFunction0(value))
+    inline def setLink(value: (WebglGraphicsDevice, Shader) => Unit): Self = StObject.set(x, "link", js.Any.fromFunction2(value))
     
-    inline def setPostLink(value: (WebglGraphicsDevice, Shader) => Boolean): Self = StObject.set(x, "postLink", js.Any.fromFunction2(value))
+    inline def setLoseContext(value: () => Unit): Self = StObject.set(x, "loseContext", js.Any.fromFunction0(value))
     
     inline def setRestoreContext(value: (WebglGraphicsDevice, Shader) => Unit): Self = StObject.set(x, "restoreContext", js.Any.fromFunction2(value))
     

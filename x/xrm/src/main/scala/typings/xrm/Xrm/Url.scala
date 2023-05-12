@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /**
   * An definition module for URL-based, CRM component parameters.
-  * @see {@link http://msdn.microsoft.com/en-us/library/gg328483.aspx External Link: Open forms, views, dialogs, and reports with a URL}
+  * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/open-forms-views-dialogs-reports-url External Link: Open forms, views, dialogs, and reports with a URL}
   */
 object Url {
   
@@ -31,7 +31,7 @@ object Url {
     * Interface for defining parameters of a request to open a dialog with rundialog.aspx (as with
     * window.open).  Useful for parsing the keys and values into a string of the format:
     * "&key=value".
-    * @see {@link http://msdn.microsoft.com/en-us/library/gg328483.aspx External Link: Open forms, views, dialogs, and reports with a URL}
+    * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/open-forms-views-dialogs-reports-url External Link: Open forms, views, dialogs, and reports with a URL}
     */
   trait DialogOpenParameters extends StObject {
     
@@ -73,7 +73,7 @@ object Url {
     * Interface for defining parameters on a request to open a form with main.aspx (as with
     * window.open). Useful for parsing the keys and values into a string of the format:
     * "&key=value".
-    * @see {@link http://msdn.microsoft.com/en-us/library/gg328483.aspx External Link: Open forms, views, dialogs, and reports with a URL}
+    * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/open-forms-views-dialogs-reports-url External Link: Open forms, views, dialogs, and reports with a URL}
     * @remarks  A member for "pagetype" is not provided.  The value "entityrecord" is required in
     *           the URL, for forms. Example:  "pagetype=entityrecord"
     */
@@ -175,7 +175,7 @@ object Url {
     * window.open).  Useful for parsing out the keys and values into a string of the format:
     * "&key=value"
     *
-    * @see {@link http://msdn.microsoft.com/en-us/library/gg328483.aspx External Link: Open forms, views, dialogs, and reports with a URL}
+    * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/open-forms-views-dialogs-reports-url External Link: Open forms, views, dialogs, and reports with a URL}
     */
   trait ReportOpenParameters extends StObject {
     
@@ -222,7 +222,7 @@ object Url {
     * Interface for defining parameters on a request to open a view with main.aspx (as with
     * window.open). Useful for parsing the keys and values into a string of the format:
     * "&key=value".
-    * @see {@link http://msdn.microsoft.com/en-us/library/gg328483.aspx External Link: Open forms, views, dialogs, and reports with a URL}
+    * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/open-forms-views-dialogs-reports-url External Link: Open forms, views, dialogs, and reports with a URL}
     * @remarks  A member for "pagetype" is not provided.  The value "entitylist" is required in
     *           the URL, for views. Example:  "pagetype=entitylist"
     */

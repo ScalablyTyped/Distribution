@@ -1,7 +1,7 @@
 
 # Scala.js typings for fs-extra
 
-Typings are for version 9.0
+Typings are for version 11.0
 
 ## Library description:
 fs-extra contains methods that aren't included in the vanilla Node.js fs package. Such as recursive mkdir, copy, and remove.

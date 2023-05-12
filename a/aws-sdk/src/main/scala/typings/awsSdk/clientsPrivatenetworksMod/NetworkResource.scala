@@ -57,6 +57,11 @@ trait NetworkResource extends StObject {
   var position: js.UndefOr[Position] = js.undefined
   
   /**
+    * Information about a request to return the network resource.
+    */
+  var returnInformation: js.UndefOr[ReturnInformation] = js.undefined
+  
+  /**
     * The serial number of the network resource.
     */
   var serialNumber: js.UndefOr[String] = js.undefined
@@ -132,6 +137,10 @@ object NetworkResource {
     inline def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
     inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    
+    inline def setReturnInformation(value: ReturnInformation): Self = StObject.set(x, "returnInformation", value.asInstanceOf[js.Any])
+    
+    inline def setReturnInformationUndefined: Self = StObject.set(x, "returnInformation", js.undefined)
     
     inline def setSerialNumber(value: String): Self = StObject.set(x, "serialNumber", value.asInstanceOf[js.Any])
     

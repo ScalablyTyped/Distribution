@@ -10,5 +10,8 @@ object esmUseLocalizationMod {
   @JSImport("@fluent/react/esm/use_localization", "useLocalization")
   @js.native
   val useLocalization: typings.fluentReact.esmUseLocalizationMod.useLocalization = js.native
+  /**
+    * The `useLocalization` hook returns the FluentContext
+    */
   type useLocalization = js.Function0[L10n]
 }

@@ -1,20 +1,8 @@
 package typings.stylelintWebpackPlugin
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.postcss.libProcessorMod.default
-import typings.postcss.mod.Plugin
-import typings.postcss.mod.PluginCreator
 import typings.stylelint.mod.Config
 import typings.stylelint.mod.CustomSyntax
-import typings.stylelint.mod.Formatter
-import typings.stylelint.mod.InternalApi
-import typings.stylelint.mod.LinterOptions
-import typings.stylelint.mod.LinterResult
-import typings.stylelint.mod.PostcssPluginOptions
-import typings.stylelintWebpackPlugin.anon.CheckAgainstRule
-import typings.stylelintWebpackPlugin.anon.PickLinterOptionscwdconfi
-import typings.stylelintWebpackPlugin.anon.Rule
-import typings.stylelintWebpackPlugin.typesOptionsMod.FormatterType
 import typings.stylelintWebpackPlugin.typesOptionsMod.OutputReport
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -36,49 +24,52 @@ object typesGetStylelintMod {
   
   type AsyncTask = js.Function0[js.Promise[Unit]]
   
+  type Formatter = typings.stylelint.mod.Formatter
+  
+  type FormatterType = typings.stylelint.mod.FormatterType
+  
   type LintResult = typings.stylelint.mod.LintResult
   
   type LintTask = js.Function1[/* files */ String | js.Array[String], js.Promise[js.Array[LintResult]]]
   
   trait Linter extends StObject {
     
-    var api: InternalApi
-    
     def cleanup(): js.Promise[Unit]
     @JSName("cleanup")
     var cleanup_Original: AsyncTask
+    
+    def isPathIgnored(stylelint: Stylelint, filePath: String): js.Promise[Boolean]
+    @JSName("isPathIgnored")
+    var isPathIgnored_Original: isPathIgnored
     
     def lintFiles(files: String): js.Promise[js.Array[LintResult]]
     def lintFiles(files: js.Array[String]): js.Promise[js.Array[LintResult]]
     @JSName("lintFiles")
     var lintFiles_Original: LintTask
     
-    def stylelint(): Plugin | default
-    def stylelint(opts: PostcssPluginOptions): Plugin | default
-    @JSName("stylelint")
-    var stylelint_Original: Stylelint
+    var stylelint: Stylelint
     
     var threads: Double
   }
   object Linter {
     
     inline def apply(
-      api: InternalApi,
       cleanup: () => js.Promise[Unit],
+      isPathIgnored: (/* stylelint */ Stylelint, /* filePath */ String) => js.Promise[Boolean],
       lintFiles: /* files */ String | js.Array[String] => js.Promise[js.Array[LintResult]],
       stylelint: Stylelint,
       threads: Double
     ): Linter = {
-      val __obj = js.Dynamic.literal(api = api.asInstanceOf[js.Any], cleanup = js.Any.fromFunction0(cleanup), lintFiles = js.Any.fromFunction1(lintFiles), stylelint = stylelint.asInstanceOf[js.Any], threads = threads.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(cleanup = js.Any.fromFunction0(cleanup), isPathIgnored = js.Any.fromFunction2(isPathIgnored), lintFiles = js.Any.fromFunction1(lintFiles), stylelint = stylelint.asInstanceOf[js.Any], threads = threads.asInstanceOf[js.Any])
       __obj.asInstanceOf[Linter]
     }
     
     @scala.inline
     implicit open class MutableBuilder[Self <: Linter] (val x: Self) extends AnyVal {
       
-      inline def setApi(value: InternalApi): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
-      
       inline def setCleanup(value: () => js.Promise[Unit]): Self = StObject.set(x, "cleanup", js.Any.fromFunction0(value))
+      
+      inline def setIsPathIgnored(value: (/* stylelint */ Stylelint, /* filePath */ String) => js.Promise[Boolean]): Self = StObject.set(x, "isPathIgnored", js.Any.fromFunction2(value))
       
       inline def setLintFiles(value: /* files */ String | js.Array[String] => js.Promise[js.Array[LintResult]]): Self = StObject.set(x, "lintFiles", js.Any.fromFunction1(value))
       
@@ -87,6 +78,10 @@ object typesGetStylelintMod {
       inline def setThreads(value: Double): Self = StObject.set(x, "threads", value.asInstanceOf[js.Any])
     }
   }
+  
+  type LinterOptions = typings.stylelint.mod.LinterOptions
+  
+  type LinterResult = typings.stylelint.mod.LinterResult
   
   /* Inlined stylelint-webpack-plugin.stylelint-webpack-plugin/types/options.Options */
   trait Options extends StObject {
@@ -133,7 +128,7 @@ object typesGetStylelintMod {
     
     var fix: js.UndefOr[Boolean] = js.undefined
     
-    var formatter: js.UndefOr[FormatterType] = js.undefined
+    var formatter: js.UndefOr[typings.stylelintWebpackPlugin.typesOptionsMod.FormatterType] = js.undefined
     
     var globbyOptions: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify GlobbyOptions */ Any
@@ -153,6 +148,8 @@ object typesGetStylelintMod {
     
     var quiet: js.UndefOr[Boolean] = js.undefined
     
+    var quietDeprecationWarnings: js.UndefOr[Boolean] = js.undefined
+    
     var reportDescriptionlessDisables: js.UndefOr[Boolean] = js.undefined
     
     var reportInvalidScopeDisables: js.UndefOr[Boolean] = js.undefined
@@ -160,8 +157,6 @@ object typesGetStylelintMod {
     var reportNeedlessDisables: js.UndefOr[Boolean] = js.undefined
     
     var stylelintPath: js.UndefOr[String] = js.undefined
-    
-    var syntax: js.UndefOr[String] = js.undefined
     
     var threads: js.UndefOr[Double | Boolean] = js.undefined
   }
@@ -265,7 +260,7 @@ object typesGetStylelintMod {
       
       inline def setFixUndefined: Self = StObject.set(x, "fix", js.undefined)
       
-      inline def setFormatter(value: FormatterType): Self = StObject.set(x, "formatter", value.asInstanceOf[js.Any])
+      inline def setFormatter(value: typings.stylelintWebpackPlugin.typesOptionsMod.FormatterType): Self = StObject.set(x, "formatter", value.asInstanceOf[js.Any])
       
       inline def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
       
@@ -305,6 +300,10 @@ object typesGetStylelintMod {
       
       inline def setQuiet(value: Boolean): Self = StObject.set(x, "quiet", value.asInstanceOf[js.Any])
       
+      inline def setQuietDeprecationWarnings(value: Boolean): Self = StObject.set(x, "quietDeprecationWarnings", value.asInstanceOf[js.Any])
+      
+      inline def setQuietDeprecationWarningsUndefined: Self = StObject.set(x, "quietDeprecationWarnings", js.undefined)
+      
       inline def setQuietUndefined: Self = StObject.set(x, "quiet", js.undefined)
       
       inline def setReportDescriptionlessDisables(value: Boolean): Self = StObject.set(x, "reportDescriptionlessDisables", value.asInstanceOf[js.Any])
@@ -323,35 +322,35 @@ object typesGetStylelintMod {
       
       inline def setStylelintPathUndefined: Self = StObject.set(x, "stylelintPath", js.undefined)
       
-      inline def setSyntax(value: String): Self = StObject.set(x, "syntax", value.asInstanceOf[js.Any])
-      
-      inline def setSyntaxUndefined: Self = StObject.set(x, "syntax", js.undefined)
-      
       inline def setThreads(value: Double | Boolean): Self = StObject.set(x, "threads", value.asInstanceOf[js.Any])
       
       inline def setThreadsUndefined: Self = StObject.set(x, "threads", js.undefined)
     }
   }
   
-  @js.native
-  trait Stylelint
-    extends StObject
-       with PluginCreator[PostcssPluginOptions] {
+  trait Stylelint extends StObject {
     
-    def createLinter(options: LinterOptions): InternalApi = js.native
+    var formatters: StringDictionary[typings.stylelint.mod.Formatter]
     
-    def createPlugin(ruleName: String, plugin: typings.stylelint.mod.Plugin): Rule = js.native
+    def lint(options: LinterOptions): js.Promise[LinterResult]
+  }
+  object Stylelint {
     
-    var formatters: StringDictionary[Formatter] = js.native
+    inline def apply(
+      formatters: StringDictionary[typings.stylelint.mod.Formatter],
+      lint: LinterOptions => js.Promise[LinterResult]
+    ): Stylelint = {
+      val __obj = js.Dynamic.literal(formatters = formatters.asInstanceOf[js.Any], lint = js.Any.fromFunction1(lint))
+      __obj.asInstanceOf[Stylelint]
+    }
     
-    def lint(options: LinterOptions): js.Promise[LinterResult] = js.native
-    
-    def resolveConfig(filePath: String): js.Promise[js.UndefOr[Config]] = js.native
-    def resolveConfig(filePath: String, options: PickLinterOptionscwdconfi): js.Promise[js.UndefOr[Config]] = js.native
-    
-    var rules: StringDictionary[typings.stylelint.mod.Rule[Any, Any]] = js.native
-    
-    var utils: CheckAgainstRule = js.native
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Stylelint] (val x: Self) extends AnyVal {
+      
+      inline def setFormatters(value: StringDictionary[typings.stylelint.mod.Formatter]): Self = StObject.set(x, "formatters", value.asInstanceOf[js.Any])
+      
+      inline def setLint(value: LinterOptions => js.Promise[LinterResult]): Self = StObject.set(x, "lint", js.Any.fromFunction1(value))
+    }
   }
   
   @js.native
@@ -363,4 +362,6 @@ object typesGetStylelintMod {
     @JSName("lintFiles")
     var lintFiles_Original: LintTask = js.native
   }
+  
+  type isPathIgnored = js.Function2[/* stylelint */ Stylelint, /* filePath */ String, js.Promise[Boolean]]
 }

@@ -111,8 +111,10 @@ trait Surface
     * draw multiple frames, e.g. of an animation.
     *
     * Node users should call getCanvas() and work with that canvas directly.
+    *
+    * Returns the animation id.
     */
-  def requestAnimationFrame(drawFrame: js.Function1[/* _ */ Canvas, Unit]): Unit = js.native
+  def requestAnimationFrame(drawFrame: js.Function1[/* _ */ Canvas, Unit]): Double = js.native
   
   /**
     * If this surface is GPU-backed, return the sample count of the surface.

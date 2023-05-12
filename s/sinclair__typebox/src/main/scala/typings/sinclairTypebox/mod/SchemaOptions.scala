@@ -22,7 +22,7 @@ trait SchemaOptions
   /** Description of this schema */
   var description: js.UndefOr[String] = js.undefined
   
-  /** Example values matching this schema. */
+  /** Example values matching this schema */
   var examples: js.UndefOr[Any] = js.undefined
   
   /** Title of this schema */

@@ -36,7 +36,7 @@ trait MedicationAdministrationDosage
   var route: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
-    * If the use case requires attributes from the BodySite resource (e.g. to identify and track separately) then use the standard extension [bodySite](extension-bodysite.html).  May be a summary code, or a reference to a very precise definition of the location, or both.
+    * If the use case requires attributes from the BodySite resource (e.g. to identify and track separately) then use the standard extension [http://hl7.org/fhir/StructureDefinition/bodySite](http://hl7.org/fhir/extensions/StructureDefinition-bodySite.html).  May be a summary code, or a reference to a very precise definition of the location, or both.
     */
   var site: js.UndefOr[CodeableConcept] = js.undefined
   

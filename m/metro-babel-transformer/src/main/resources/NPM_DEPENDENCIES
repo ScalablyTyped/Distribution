@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "metro-babel-transformer" : "0.76.4"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "metro-babel-transformer" : "0.76.4"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -1,6 +1,5 @@
 package typings.wdioUtils
 
-import typings.std.Record
 import typings.wdioUtils.anon.FnCall
 import typings.wdioUtils.buildShimMod.Retries
 import org.scalablytyped.runtime.StObject
@@ -63,26 +62,6 @@ object buildTestFrameworkTypesMod {
   
   type HookFnArgs[T] = js.Function1[/* ctx */ T, js.Tuple2[Any, T]]
   
-  trait JasmineContext extends StObject {
-    
-    var failedExpectations: js.Array[Record[String, Any]]
-  }
-  object JasmineContext {
-    
-    inline def apply(failedExpectations: js.Array[Record[String, Any]]): JasmineContext = {
-      val __obj = js.Dynamic.literal(failedExpectations = failedExpectations.asInstanceOf[js.Any])
-      __obj.asInstanceOf[JasmineContext]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: JasmineContext] (val x: Self) extends AnyVal {
-      
-      inline def setFailedExpectations(value: js.Array[Record[String, Any]]): Self = StObject.set(x, "failedExpectations", value.asInstanceOf[js.Any])
-      
-      inline def setFailedExpectationsVarargs(value: (Record[String, Any])*): Self = StObject.set(x, "failedExpectations", js.Array(value*))
-    }
-  }
-  
   type SpecArguments = js.Array[js.Function] | (js.Tuple2[js.Function | String, Double | js.Function]) | (js.Tuple3[String, js.Function, Double])
   
   trait SpecFunction extends StObject {
@@ -130,16 +109,6 @@ object buildTestFrameworkTypesMod {
     def executeHooksWithArgs[T](hookName: String, hooks: Unit, args: js.Array[Any]): js.Promise[js.Array[js.Error | T]]
     @JSName("executeHooksWithArgs")
     var executeHooksWithArgs_Original: FnCall
-    
-    def runSync(fn: js.Function, repeatTest: Any, args: js.Array[Any]): js.Function2[/* resolve */ js.Function, /* reject */ js.Function, Any]
-    @JSName("runSync")
-    var runSync_Original: js.ThisFunction3[
-        /* this */ Any, 
-        /* fn */ js.Function, 
-        /* repeatTest */ Any, 
-        /* args */ js.Array[Any], 
-        js.Function2[/* resolve */ js.Function, /* reject */ js.Function, Any]
-      ]
   }
   object WrapperMethods {
     
@@ -151,16 +120,9 @@ object buildTestFrameworkTypesMod {
           /* args */ js.UndefOr[js.Array[Any]], 
           js.Promise[Any]
         ],
-      executeHooksWithArgs: FnCall,
-      runSync: js.ThisFunction3[
-          /* this */ Any, 
-          /* fn */ js.Function, 
-          /* repeatTest */ Any, 
-          /* args */ js.Array[Any], 
-          js.Function2[/* resolve */ js.Function, /* reject */ js.Function, Any]
-        ]
+      executeHooksWithArgs: FnCall
     ): WrapperMethods = {
-      val __obj = js.Dynamic.literal(executeAsync = executeAsync.asInstanceOf[js.Any], executeHooksWithArgs = executeHooksWithArgs.asInstanceOf[js.Any], runSync = runSync.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(executeAsync = executeAsync.asInstanceOf[js.Any], executeHooksWithArgs = executeHooksWithArgs.asInstanceOf[js.Any])
       __obj.asInstanceOf[WrapperMethods]
     }
     
@@ -178,16 +140,6 @@ object buildTestFrameworkTypesMod {
       ): Self = StObject.set(x, "executeAsync", value.asInstanceOf[js.Any])
       
       inline def setExecuteHooksWithArgs(value: FnCall): Self = StObject.set(x, "executeHooksWithArgs", value.asInstanceOf[js.Any])
-      
-      inline def setRunSync(
-        value: js.ThisFunction3[
-              /* this */ Any, 
-              /* fn */ js.Function, 
-              /* repeatTest */ Any, 
-              /* args */ js.Array[Any], 
-              js.Function2[/* resolve */ js.Function, /* reject */ js.Function, Any]
-            ]
-      ): Self = StObject.set(x, "runSync", value.asInstanceOf[js.Any])
     }
   }
 }

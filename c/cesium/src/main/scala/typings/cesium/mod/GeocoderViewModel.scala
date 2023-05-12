@@ -46,6 +46,11 @@ open class GeocoderViewModel protected () extends StObject {
   var flightDuration: js.UndefOr[Double] = js.native
   
   /**
+    * @returns true if the object has been destroyed, false otherwise.
+    */
+  def isDestroyed(): Boolean = js.native
+  
+  /**
     * Gets a value indicating whether a search is currently in progress.  This property is observable.
     */
   var isSearchInProgress: Boolean = js.native

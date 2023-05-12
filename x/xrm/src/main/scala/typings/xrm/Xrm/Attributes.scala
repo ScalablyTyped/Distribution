@@ -2,11 +2,11 @@ package typings.xrm.Xrm
 
 import typings.xrm.Xrm.Collection.ItemCollection
 import typings.xrm.Xrm.Controls.BooleanControl
-import typings.xrm.Xrm.Controls.Control
 import typings.xrm.Xrm.Controls.DateControl
 import typings.xrm.Xrm.Controls.LookupControl
 import typings.xrm.Xrm.Controls.NumberControl
 import typings.xrm.Xrm.Controls.OptionSetControl
+import typings.xrm.Xrm.Controls.StandardControl
 import typings.xrm.Xrm.Controls.StringControl
 import typings.xrm.Xrm.Events.Attribute.ChangeEventHandler
 import org.scalablytyped.runtime.StObject
@@ -15,8 +15,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /**
   * A collection of types and methods for working with formContext attributes.
-  * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/attributes External Link: Attributes (Client API reference)}
-  * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/collections External Link: Collections (Client API reference)}
+  * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/reference/attributes External Link: Attributes (Client API reference)}
+  * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/reference/collections External Link: Collections (Client API reference)}
   */
 object Attributes {
   
@@ -34,9 +34,9 @@ object Attributes {
     
     /**
       * A collection of all the controls on the form that interface with this attribute.
-      * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/collections External Link: Collections (Client API reference)}
+      * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/reference/collections External Link: Collections (Client API reference)}
       */
-    var controls: ItemCollection[Control] = js.native
+    var controls: ItemCollection[StandardControl] = js.native
     
     /**
       * Fire all "on change" event handlers.
@@ -133,7 +133,7 @@ object Attributes {
       * Sets a value for a column to determine whether it is valid or invalid with a message
       * @param isValid Specify false to set the column value to invalid and true to set the value to valid.
       * @param message The message to display.
-      * @see {@link https://docs.microsoft.com/en-us/powerapps/developer/model-driven-apps/clientapi/reference/attributes/setisvalid External Link: setIsValid (Client API reference)}
+      * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/reference/attributes/setisvalid External Link: setIsValid (Client API reference)}
       */
     def setIsValid(isValid: Boolean): Unit = js.native
     def setIsValid(isValid: Boolean, message: String): Unit = js.native
@@ -265,7 +265,7 @@ object Attributes {
     
     /**
       * A collection of all the controls on the form that interface with this attribute.
-      * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/collections External Link: Collections (Client API reference)}
+      * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/reference/collections External Link: Collections (Client API reference)}
       */
     @JSName("controls")
     var controls_BooleanAttribute: ItemCollection[BooleanControl] = js.native
@@ -283,7 +283,7 @@ object Attributes {
     
     /**
       * A collection of all the controls on the form that interface with this attribute.
-      * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/collections External Link: Collections (Client API reference)}
+      * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/reference/collections External Link: Collections (Client API reference)}
       */
     @JSName("controls")
     var controls_DateAttribute: ItemCollection[DateControl] = js.native
@@ -306,11 +306,11 @@ object Attributes {
   }
   
   /**
-    * Common interface for enumeration attributes (OptionSet and Boolean).
+    * Common interface for enumeration attributes (MultiOptionSet, OptionSet and Boolean).
     * @see {@link Attribute}
     */
   @js.native
-  trait EnumAttribute[T /* <: Double | Boolean */]
+  trait EnumAttribute[T /* <: js.Array[Double] | Double | Boolean */]
     extends StObject
        with Attribute[T] {
     
@@ -318,7 +318,7 @@ object Attributes {
       * Gets the initial value of the attribute.
       * @returns The initial value.
       * @remarks Valid for OptionSet and boolean attribute types
-      * @see {@link https://docs.microsoft.com/power-apps/developer/model-driven-apps/clientapi/reference/attributes/getinitialvalue External Link: getInitialValue (Client API reference)}
+      * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/reference/attributes/getinitialvalue External Link: getInitialValue (Client API reference)}
       */
     def getInitialValue(): T | Null = js.native
   }
@@ -351,7 +351,7 @@ object Attributes {
     
     /**
       * A collection of all the controls on the form that interface with this attribute.
-      * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/collections External Link: Collections (Client API reference)}
+      * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/reference/collections External Link: Collections (Client API reference)}
       */
     @JSName("controls")
     var controls_LookupAttribute: ItemCollection[LookupControl] = js.native
@@ -361,6 +361,54 @@ object Attributes {
       * @returns true the attribute is a PartyList, otherwise false.
       */
     def getIsPartyList(): Boolean = js.native
+  }
+  
+  /**
+    * Interface an OptionSet attribute.
+    * @see {@link EnumAttribute}
+    */
+  @js.native
+  trait MultiSelectOptionSetAttribute
+    extends StObject
+       with EnumAttribute[js.Array[Double]] {
+    
+    /**
+      * A collection of all the controls on the form that interface with this attribute.
+      * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/collections External Link: Collections (Client API reference)}
+      */
+    @JSName("controls")
+    var controls_MultiSelectOptionSetAttribute: ItemCollection[OptionSetControl] = js.native
+    
+    /**
+      * Gets the option matching a label.
+      * @param label The label of the option desired.
+      * @returns The option.
+      */
+    def getOption(label: String): OptionSetValue = js.native
+    /**
+      * Gets the option matching a value.
+      * @param value The enumeration value of the option desired.
+      * @returns The option.
+      */
+    def getOption(value: Double): OptionSetValue = js.native
+    
+    /**
+      * Gets all of the options.
+      * @returns An array of options.
+      */
+    def getOptions(): js.Array[OptionSetValue] = js.native
+    
+    /**
+      * Gets selected option.
+      * @returns The selected option.
+      */
+    def getSelectedOption(): js.Array[OptionSetValue] = js.native
+    
+    /**
+      * Gets the label of the currently selected option.
+      * @returns The current value's label.
+      */
+    def getText(): js.Array[String] = js.native
   }
   
   /**
@@ -374,7 +422,7 @@ object Attributes {
     
     /**
       * A collection of all the controls on the form that interface with this attribute.
-      * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/collections External Link: Collections (Client API reference)}
+      * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/reference/collections External Link: Collections (Client API reference)}
       */
     @JSName("controls")
     var controls_NumberAttribute: ItemCollection[NumberControl] = js.native
@@ -400,7 +448,7 @@ object Attributes {
     /**
       * Sets the number of digits allowed to the right of the decimal point.
       * @param precision Number of digits allowed to the right of the decimal point.
-      * @see {@link https://docs.microsoft.com/en-us/powerapps/developer/model-driven-apps/clientapi/reference/attributes/setPrecision External Link: setPrecision (Client API reference)}
+      * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/reference/attributes/setprecision External Link: setPrecision (Client API reference)}
       */
     def setPrecision(precision: Double): Unit = js.native
   }
@@ -416,7 +464,7 @@ object Attributes {
     
     /**
       * A collection of all the controls on the form that interface with this attribute.
-      * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/collections External Link: Collections (Client API reference)}
+      * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/reference/collections External Link: Collections (Client API reference)}
       */
     @JSName("controls")
     var controls_OptionSetAttribute: ItemCollection[OptionSetControl] = js.native
@@ -502,7 +550,7 @@ object Attributes {
     
     /**
       * A collection of all the controls on the form that interface with this attribute.
-      * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/collections External Link: Collections (Client API reference)}
+      * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/reference/collections External Link: Collections (Client API reference)}
       */
     @JSName("controls")
     var controls_StringAttribute: ItemCollection[StringControl] = js.native

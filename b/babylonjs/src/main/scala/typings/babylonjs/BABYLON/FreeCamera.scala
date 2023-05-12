@@ -64,7 +64,7 @@ trait FreeCamera
   /**
     * Define the collision ellipsoid of the camera.
     * This is helpful to simulate a camera body like the player body around the camera
-    * @see https://doc.babylonjs.com/babylon101/cameras,_mesh_collisions_and_gravity#arcrotatecamera
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/cameras/camera_collisions#arcrotatecamera
     */
   var ellipsoid: Vector3 = js.native
   
@@ -106,6 +106,12 @@ trait FreeCamera
   def keysRight_=(value: js.Array[Double]): Unit = js.native
   
   /**
+    * Gets or Set the list of keyboard keys used to control the down rotation move of the camera.
+    */
+  def keysRotateDown: js.Array[Double] = js.native
+  def keysRotateDown_=(value: js.Array[Double]): Unit = js.native
+  
+  /**
     * Gets or Set the list of keyboard keys used to control the left rotation move of the camera.
     */
   def keysRotateLeft: js.Array[Double] = js.native
@@ -116,6 +122,12 @@ trait FreeCamera
     */
   def keysRotateRight: js.Array[Double] = js.native
   def keysRotateRight_=(value: js.Array[Double]): Unit = js.native
+  
+  /**
+    * Gets or Set the list of keyboard keys used to control the up rotation move of the camera.
+    */
+  def keysRotateUp: js.Array[Double] = js.native
+  def keysRotateUp_=(value: js.Array[Double]): Unit = js.native
   
   /**
     * Gets or Set the list of keyboard keys used to control the forward move of the camera.

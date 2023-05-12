@@ -15,7 +15,7 @@ object glviewnativeMod {
     def this(props: GLViewNativeProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: GLViewNativeProps, context: Any) = this()
     

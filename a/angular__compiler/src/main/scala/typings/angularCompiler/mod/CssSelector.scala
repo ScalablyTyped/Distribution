@@ -44,9 +44,6 @@ open class CssSelector () extends StObject {
   
   def getAttrs(): js.Array[String] = js.native
   
-  /** Gets a template string for an element that matches the selector. */
-  def getMatchingElementTemplate(): String = js.native
-  
   def hasElementSelector(): Boolean = js.native
   
   def isElementSelector(): Boolean = js.native

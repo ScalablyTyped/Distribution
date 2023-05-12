@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@wojtekmaj/react-datetimerange-picker" : "5.0.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@wojtekmaj/react-datetimerange-picker" : "5.0.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

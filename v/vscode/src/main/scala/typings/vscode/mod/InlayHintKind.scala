@@ -14,8 +14,8 @@ object InlayHintKind extends StObject {
   def apply(value: Double): js.UndefOr[InlayHintKind & Double] = js.native
   
   /**
-    * An inlay hint that is for a parameter.
-    */
+  		 * An inlay hint that is for a parameter.
+  		 */
   @js.native
   sealed trait Parameter
     extends StObject
@@ -23,8 +23,8 @@ object InlayHintKind extends StObject {
   /* 2 */ val Parameter: typings.vscode.mod.InlayHintKind.Parameter & Double = js.native
   
   /**
-    * An inlay hint that for a type annotation.
-    */
+  		 * An inlay hint that for a type annotation.
+  		 */
   @js.native
   sealed trait Type
     extends StObject

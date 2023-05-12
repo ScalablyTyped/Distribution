@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@rollup/plugin-babel" : "6.0.2"
+      "@rollup/plugin-babel" : "6.0.3"
     }
   ],
   "test-dependencies" : [
     {
-      "@rollup/plugin-babel" : "6.0.2"
+      "@rollup/plugin-babel" : "6.0.3"
     }
   ],
   "compile-devDependencies" : [

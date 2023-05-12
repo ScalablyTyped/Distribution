@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Middleware extends StObject {
   
-  def fn(middlewareArguments: MiddlewareArguments): Promisable[MiddlewareReturn]
+  def fn(state: MiddlewareState): Promisable[MiddlewareReturn]
   
   var name: String
   
@@ -14,7 +14,7 @@ trait Middleware extends StObject {
 }
 object Middleware {
   
-  inline def apply(fn: MiddlewareArguments => Promisable[MiddlewareReturn], name: String): Middleware = {
+  inline def apply(fn: MiddlewareState => Promisable[MiddlewareReturn], name: String): Middleware = {
     val __obj = js.Dynamic.literal(fn = js.Any.fromFunction1(fn), name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Middleware]
   }
@@ -22,7 +22,7 @@ object Middleware {
   @scala.inline
   implicit open class MutableBuilder[Self <: Middleware] (val x: Self) extends AnyVal {
     
-    inline def setFn(value: MiddlewareArguments => Promisable[MiddlewareReturn]): Self = StObject.set(x, "fn", js.Any.fromFunction1(value))
+    inline def setFn(value: MiddlewareState => Promisable[MiddlewareReturn]): Self = StObject.set(x, "fn", js.Any.fromFunction1(value))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

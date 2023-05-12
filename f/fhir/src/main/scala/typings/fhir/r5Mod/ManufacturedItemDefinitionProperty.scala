@@ -12,6 +12,8 @@ trait ManufacturedItemDefinitionProperty
   
   var _valueDate: js.UndefOr[Element] = js.undefined
   
+  var _valueMarkdown: js.UndefOr[Element] = js.undefined
+  
   /**
     * A code expressing the type of characteristic.
     */
@@ -40,7 +42,17 @@ trait ManufacturedItemDefinitionProperty
   /**
     * A value for the characteristic.
     */
+  var valueMarkdown: js.UndefOr[String] = js.undefined
+  
+  /**
+    * A value for the characteristic.
+    */
   var valueQuantity: js.UndefOr[Quantity] = js.undefined
+  
+  /**
+    * A value for the characteristic.
+    */
+  var valueReference: js.UndefOr[Reference] = js.undefined
 }
 object ManufacturedItemDefinitionProperty {
   
@@ -71,9 +83,17 @@ object ManufacturedItemDefinitionProperty {
     
     inline def setValueDateUndefined: Self = StObject.set(x, "valueDate", js.undefined)
     
+    inline def setValueMarkdown(value: String): Self = StObject.set(x, "valueMarkdown", value.asInstanceOf[js.Any])
+    
+    inline def setValueMarkdownUndefined: Self = StObject.set(x, "valueMarkdown", js.undefined)
+    
     inline def setValueQuantity(value: Quantity): Self = StObject.set(x, "valueQuantity", value.asInstanceOf[js.Any])
     
     inline def setValueQuantityUndefined: Self = StObject.set(x, "valueQuantity", js.undefined)
+    
+    inline def setValueReference(value: Reference): Self = StObject.set(x, "valueReference", value.asInstanceOf[js.Any])
+    
+    inline def setValueReferenceUndefined: Self = StObject.set(x, "valueReference", js.undefined)
     
     inline def set_valueBoolean(value: Element): Self = StObject.set(x, "_valueBoolean", value.asInstanceOf[js.Any])
     
@@ -82,5 +102,9 @@ object ManufacturedItemDefinitionProperty {
     inline def set_valueDate(value: Element): Self = StObject.set(x, "_valueDate", value.asInstanceOf[js.Any])
     
     inline def set_valueDateUndefined: Self = StObject.set(x, "_valueDate", js.undefined)
+    
+    inline def set_valueMarkdown(value: Element): Self = StObject.set(x, "_valueMarkdown", value.asInstanceOf[js.Any])
+    
+    inline def set_valueMarkdownUndefined: Self = StObject.set(x, "_valueMarkdown", js.undefined)
   }
 }

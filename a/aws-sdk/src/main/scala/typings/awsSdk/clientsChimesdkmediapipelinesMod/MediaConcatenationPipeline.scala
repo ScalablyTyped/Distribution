@@ -27,7 +27,7 @@ trait MediaConcatenationPipeline extends StObject {
   var Sinks: js.UndefOr[ConcatenationSinkList] = js.undefined
   
   /**
-    * The data sources being concatnated.
+    * The data sources being concatenated.
     */
   var Sources: js.UndefOr[ConcatenationSourceList] = js.undefined
   

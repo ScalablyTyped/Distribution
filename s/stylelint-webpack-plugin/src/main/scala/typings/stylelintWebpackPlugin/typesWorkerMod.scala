@@ -1,18 +1,8 @@
 package typings.stylelintWebpackPlugin
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.postcss.mod.PluginCreator
 import typings.stylelint.mod.Config
 import typings.stylelint.mod.CustomSyntax
-import typings.stylelint.mod.Formatter
-import typings.stylelint.mod.InternalApi
-import typings.stylelint.mod.LinterOptions
-import typings.stylelint.mod.LinterResult
-import typings.stylelint.mod.Plugin
-import typings.stylelint.mod.PostcssPluginOptions
-import typings.stylelintWebpackPlugin.anon.CheckAgainstRule
-import typings.stylelintWebpackPlugin.anon.PickLinterOptionscwdconfi
-import typings.stylelintWebpackPlugin.anon.Rule
+import typings.stylelintWebpackPlugin.typesGetStylelintMod.LinterOptions
 import typings.stylelintWebpackPlugin.typesOptionsMod.FormatterType
 import typings.stylelintWebpackPlugin.typesOptionsMod.OutputReport
 import org.scalablytyped.runtime.StObject
@@ -86,6 +76,8 @@ object typesWorkerMod {
     
     var quiet: js.UndefOr[Boolean] = js.undefined
     
+    var quietDeprecationWarnings: js.UndefOr[Boolean] = js.undefined
+    
     var reportDescriptionlessDisables: js.UndefOr[Boolean] = js.undefined
     
     var reportInvalidScopeDisables: js.UndefOr[Boolean] = js.undefined
@@ -93,8 +85,6 @@ object typesWorkerMod {
     var reportNeedlessDisables: js.UndefOr[Boolean] = js.undefined
     
     var stylelintPath: js.UndefOr[String] = js.undefined
-    
-    var syntax: js.UndefOr[String] = js.undefined
     
     var threads: js.UndefOr[Double | Boolean] = js.undefined
   }
@@ -238,6 +228,10 @@ object typesWorkerMod {
       
       inline def setQuiet(value: Boolean): Self = StObject.set(x, "quiet", value.asInstanceOf[js.Any])
       
+      inline def setQuietDeprecationWarnings(value: Boolean): Self = StObject.set(x, "quietDeprecationWarnings", value.asInstanceOf[js.Any])
+      
+      inline def setQuietDeprecationWarningsUndefined: Self = StObject.set(x, "quietDeprecationWarnings", js.undefined)
+      
       inline def setQuietUndefined: Self = StObject.set(x, "quiet", js.undefined)
       
       inline def setReportDescriptionlessDisables(value: Boolean): Self = StObject.set(x, "reportDescriptionlessDisables", value.asInstanceOf[js.Any])
@@ -256,36 +250,13 @@ object typesWorkerMod {
       
       inline def setStylelintPathUndefined: Self = StObject.set(x, "stylelintPath", js.undefined)
       
-      inline def setSyntax(value: String): Self = StObject.set(x, "syntax", value.asInstanceOf[js.Any])
-      
-      inline def setSyntaxUndefined: Self = StObject.set(x, "syntax", js.undefined)
-      
       inline def setThreads(value: Double | Boolean): Self = StObject.set(x, "threads", value.asInstanceOf[js.Any])
       
       inline def setThreadsUndefined: Self = StObject.set(x, "threads", js.undefined)
     }
   }
   
-  @js.native
-  trait Stylelint
-    extends StObject
-       with PluginCreator[PostcssPluginOptions] {
-    
-    def createLinter(options: LinterOptions): InternalApi = js.native
-    
-    def createPlugin(ruleName: String, plugin: Plugin): Rule = js.native
-    
-    var formatters: StringDictionary[Formatter] = js.native
-    
-    def lint(options: LinterOptions): js.Promise[LinterResult] = js.native
-    
-    def resolveConfig(filePath: String): js.Promise[js.UndefOr[Config]] = js.native
-    def resolveConfig(filePath: String, options: PickLinterOptionscwdconfi): js.Promise[js.UndefOr[Config]] = js.native
-    
-    var rules: StringDictionary[typings.stylelint.mod.Rule[Any, Any]] = js.native
-    
-    var utils: CheckAgainstRule = js.native
-  }
+  type Stylelint = typings.stylelintWebpackPlugin.typesGetStylelintMod.Stylelint
   
   type StylelintOptions = LinterOptions
 }

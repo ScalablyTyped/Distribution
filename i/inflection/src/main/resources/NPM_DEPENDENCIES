@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "inflection" : "2.0.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "inflection" : "2.0.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

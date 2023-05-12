@@ -12,7 +12,7 @@ open class Link protected ()
   def this(props: LinkProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: LinkProps, context: Any) = this()
 }

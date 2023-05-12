@@ -63,8 +63,8 @@ open class Color () extends StObject {
     * @param {Color} rhs - A color to copy to the specified color.
     * @returns {Color} Self for chaining.
     * @example
-    * var src = new pc.Color(1, 0, 0, 1);
-    * var dst = new pc.Color();
+    * const src = new pc.Color(1, 0, 0, 1);
+    * const dst = new pc.Color();
     *
     * dst.copy(src);
     *
@@ -78,8 +78,8 @@ open class Color () extends StObject {
     * @param {Color} rhs - The color to compare to the specified color.
     * @returns {boolean} True if the colors are equal and false otherwise.
     * @example
-    * var a = new pc.Color(1, 0, 0, 1);
-    * var b = new pc.Color(1, 1, 0, 1);
+    * const a = new pc.Color(1, 0, 0, 1);
+    * const b = new pc.Color(1, 1, 0, 1);
     * console.log("The two colors are " + (a.equals(b) ? "equal" : "different"));
     */
   def equals(rhs: Color): Boolean = js.native
@@ -111,9 +111,9 @@ open class Color () extends StObject {
     * range, the linear interpolant will occur on a ray extrapolated from this line.
     * @returns {Color} Self for chaining.
     * @example
-    * var a = new pc.Color(0, 0, 0);
-    * var b = new pc.Color(1, 1, 0.5);
-    * var r = new pc.Color();
+    * const a = new pc.Color(0, 0, 0);
+    * const b = new pc.Color(1, 1, 0.5);
+    * const r = new pc.Color();
     *
     * r.lerp(a, b, 0);   // r is equal to a
     * r.lerp(a, b, 0.5); // r is 0.5, 0.5, 0.25
@@ -148,7 +148,7 @@ open class Color () extends StObject {
     * @param {boolean} alpha - If true, the output string will include the alpha value.
     * @returns {string} The color in string form.
     * @example
-    * var c = new pc.Color(1, 1, 1);
+    * const c = new pc.Color(1, 1, 1);
     * // Outputs #ffffffff
     * console.log(c.toString());
     */

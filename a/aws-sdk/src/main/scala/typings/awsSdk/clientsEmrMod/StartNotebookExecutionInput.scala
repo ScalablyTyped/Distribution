@@ -7,9 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StartNotebookExecutionInput extends StObject {
   
   /**
-    * The unique identifier of the EMR Notebook to use for notebook execution.
+    * The unique identifier of the Amazon EMR Notebook to use for notebook execution.
     */
-  var EditorId: XmlStringMaxLen256
+  var EditorId: js.UndefOr[XmlStringMaxLen256] = js.undefined
+  
+  /**
+    * The environment variables associated with the notebook execution.
+    */
+  var EnvironmentVariables: js.UndefOr[EnvironmentVariablesMap] = js.undefined
   
   /**
     * Specifies the execution engine (cluster) that runs the notebook execution.
@@ -22,22 +27,37 @@ trait StartNotebookExecutionInput extends StObject {
   var NotebookExecutionName: js.UndefOr[XmlStringMaxLen256] = js.undefined
   
   /**
-    * The unique identifier of the Amazon EC2 security group to associate with the EMR Notebook for this notebook execution.
+    * The unique identifier of the Amazon EC2 security group to associate with the Amazon EMR Notebook for this notebook execution.
     */
   var NotebookInstanceSecurityGroupId: js.UndefOr[XmlStringMaxLen256] = js.undefined
   
   /**
-    * Input parameters in JSON format passed to the EMR Notebook at runtime for execution.
+    * Input parameters in JSON format passed to the Amazon EMR Notebook at runtime for execution.
     */
   var NotebookParams: js.UndefOr[XmlString] = js.undefined
   
   /**
-    * The path and file name of the notebook file for this execution, relative to the path specified for the EMR Notebook. For example, if you specify a path of s3://MyBucket/MyNotebooks when you create an EMR Notebook for a notebook with an ID of e-ABCDEFGHIJK1234567890ABCD (the EditorID of this request), and you specify a RelativePath of my_notebook_executions/notebook_execution.ipynb, the location of the file for the notebook execution is s3://MyBucket/MyNotebooks/e-ABCDEFGHIJK1234567890ABCD/my_notebook_executions/notebook_execution.ipynb.
+    * The Amazon S3 location for the notebook execution input.
     */
-  var RelativePath: XmlString
+  var NotebookS3Location: js.UndefOr[NotebookS3LocationFromInput] = js.undefined
   
   /**
-    * The name or ARN of the IAM role that is used as the service role for Amazon EMR (the EMR role) for the notebook execution.
+    * The output format for the notebook execution.
+    */
+  var OutputNotebookFormat: js.UndefOr[typings.awsSdk.clientsEmrMod.OutputNotebookFormat] = js.undefined
+  
+  /**
+    * The Amazon S3 location for the notebook execution output.
+    */
+  var OutputNotebookS3Location: js.UndefOr[OutputNotebookS3LocationFromInput] = js.undefined
+  
+  /**
+    * The path and file name of the notebook file for this execution, relative to the path specified for the Amazon EMR Notebook. For example, if you specify a path of s3://MyBucket/MyNotebooks when you create an Amazon EMR Notebook for a notebook with an ID of e-ABCDEFGHIJK1234567890ABCD (the EditorID of this request), and you specify a RelativePath of my_notebook_executions/notebook_execution.ipynb, the location of the file for the notebook execution is s3://MyBucket/MyNotebooks/e-ABCDEFGHIJK1234567890ABCD/my_notebook_executions/notebook_execution.ipynb.
+    */
+  var RelativePath: js.UndefOr[XmlString] = js.undefined
+  
+  /**
+    * The name or ARN of the IAM role that is used as the service role for Amazon EMR (the Amazon EMR role) for the notebook execution.
     */
   var ServiceRole: XmlString
   
@@ -48,13 +68,8 @@ trait StartNotebookExecutionInput extends StObject {
 }
 object StartNotebookExecutionInput {
   
-  inline def apply(
-    EditorId: XmlStringMaxLen256,
-    ExecutionEngine: ExecutionEngineConfig,
-    RelativePath: XmlString,
-    ServiceRole: XmlString
-  ): StartNotebookExecutionInput = {
-    val __obj = js.Dynamic.literal(EditorId = EditorId.asInstanceOf[js.Any], ExecutionEngine = ExecutionEngine.asInstanceOf[js.Any], RelativePath = RelativePath.asInstanceOf[js.Any], ServiceRole = ServiceRole.asInstanceOf[js.Any])
+  inline def apply(ExecutionEngine: ExecutionEngineConfig, ServiceRole: XmlString): StartNotebookExecutionInput = {
+    val __obj = js.Dynamic.literal(ExecutionEngine = ExecutionEngine.asInstanceOf[js.Any], ServiceRole = ServiceRole.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartNotebookExecutionInput]
   }
   
@@ -62,6 +77,12 @@ object StartNotebookExecutionInput {
   implicit open class MutableBuilder[Self <: StartNotebookExecutionInput] (val x: Self) extends AnyVal {
     
     inline def setEditorId(value: XmlStringMaxLen256): Self = StObject.set(x, "EditorId", value.asInstanceOf[js.Any])
+    
+    inline def setEditorIdUndefined: Self = StObject.set(x, "EditorId", js.undefined)
+    
+    inline def setEnvironmentVariables(value: EnvironmentVariablesMap): Self = StObject.set(x, "EnvironmentVariables", value.asInstanceOf[js.Any])
+    
+    inline def setEnvironmentVariablesUndefined: Self = StObject.set(x, "EnvironmentVariables", js.undefined)
     
     inline def setExecutionEngine(value: ExecutionEngineConfig): Self = StObject.set(x, "ExecutionEngine", value.asInstanceOf[js.Any])
     
@@ -77,7 +98,21 @@ object StartNotebookExecutionInput {
     
     inline def setNotebookParamsUndefined: Self = StObject.set(x, "NotebookParams", js.undefined)
     
+    inline def setNotebookS3Location(value: NotebookS3LocationFromInput): Self = StObject.set(x, "NotebookS3Location", value.asInstanceOf[js.Any])
+    
+    inline def setNotebookS3LocationUndefined: Self = StObject.set(x, "NotebookS3Location", js.undefined)
+    
+    inline def setOutputNotebookFormat(value: OutputNotebookFormat): Self = StObject.set(x, "OutputNotebookFormat", value.asInstanceOf[js.Any])
+    
+    inline def setOutputNotebookFormatUndefined: Self = StObject.set(x, "OutputNotebookFormat", js.undefined)
+    
+    inline def setOutputNotebookS3Location(value: OutputNotebookS3LocationFromInput): Self = StObject.set(x, "OutputNotebookS3Location", value.asInstanceOf[js.Any])
+    
+    inline def setOutputNotebookS3LocationUndefined: Self = StObject.set(x, "OutputNotebookS3Location", js.undefined)
+    
     inline def setRelativePath(value: XmlString): Self = StObject.set(x, "RelativePath", value.asInstanceOf[js.Any])
+    
+    inline def setRelativePathUndefined: Self = StObject.set(x, "RelativePath", js.undefined)
     
     inline def setServiceRole(value: XmlString): Self = StObject.set(x, "ServiceRole", value.asInstanceOf[js.Any])
     

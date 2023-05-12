@@ -12,7 +12,7 @@ trait ListMobileSdkReleasesResponse extends StObject {
   var NextMarker: js.UndefOr[typings.awsSdk.clientsWafv2Mod.NextMarker] = js.undefined
   
   /**
-    * High level information for the available SDK releases. 
+    * The high level information for the available SDK releases. If you specified a Limit in your request, this might not be the full list. 
     */
   var ReleaseSummaries: js.UndefOr[typings.awsSdk.clientsWafv2Mod.ReleaseSummaries] = js.undefined
 }

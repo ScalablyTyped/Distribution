@@ -688,7 +688,7 @@ object mod {
       *
       * @param name Name of the registered force.
       */
-    // tslint:disable-next-line:no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
     @JSName("force")
     def force_F_Union[F /* <: Force[NodeDatum, LinkDatum] */](name: String): js.UndefOr[F] = js.native
     

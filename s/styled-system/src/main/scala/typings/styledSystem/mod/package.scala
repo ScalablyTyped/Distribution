@@ -181,7 +181,7 @@ inline def size: styleFn = ^.asInstanceOf[js.Dynamic].selectDynamic("size").asIn
 
 inline def space: styleFn = ^.asInstanceOf[js.Dynamic].selectDynamic("space").asInstanceOf[styleFn]
 
-inline def style[N, S](// tslint:disable-next-line no-unnecessary-generics
+inline def style[N, S](// eslint-disable-next-line no-unnecessary-generics
 args: LowLevelStyleFunctionArguments[N, S]): styleFn = ^.asInstanceOf[js.Dynamic].applyDynamic("style")(args.asInstanceOf[js.Any]).asInstanceOf[styleFn]
 
 inline def styles: StylesProps = ^.asInstanceOf[js.Dynamic].selectDynamic("styles").asInstanceOf[StylesProps]
@@ -200,7 +200,7 @@ inline def top: styleFn = ^.asInstanceOf[js.Dynamic].selectDynamic("top").asInst
 
 inline def typography: styleFn = ^.asInstanceOf[js.Dynamic].selectDynamic("typography").asInstanceOf[styleFn]
 
-inline def variant[TStyle, K /* <: String */, TPropName](// tslint:disable-next-line no-unnecessary-generics
+inline def variant[TStyle, K /* <: String */, TPropName](// eslint-disable-next-line no-unnecessary-generics
 props: VariantArgs[TStyle, K, TPropName]): js.Function1[/* repeated */ Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("variant")(props.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ Any, Any]]
 
 inline def verticalAlign: styleFn = ^.asInstanceOf[js.Dynamic].selectDynamic("verticalAlign").asInstanceOf[styleFn]

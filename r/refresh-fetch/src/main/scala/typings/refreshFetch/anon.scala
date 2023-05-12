@@ -9,7 +9,7 @@ object anon {
   
   trait Body[ResponseBody] extends StObject {
     
-    /* tslint:disable-next-line no-unnecessary-generics */
+    /* eslint-disable-next-line no-unnecessary-generics */
     var body: ResponseBody
     
     var response: Response

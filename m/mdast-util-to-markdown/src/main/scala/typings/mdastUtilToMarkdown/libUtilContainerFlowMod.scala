@@ -1,5 +1,6 @@
 package typings.mdastUtilToMarkdown
 
+import typings.mdastUtilToMarkdown.anon.`0`
 import typings.mdastUtilToMarkdown.mdastUtilToMarkdownStrings.children
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,16 +12,16 @@ object libUtilContainerFlowMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def containerFlow(parent: Parent, context: Context, safeOptions: TrackFields): String = (^.asInstanceOf[js.Dynamic].applyDynamic("containerFlow")(parent.asInstanceOf[js.Any], context.asInstanceOf[js.Any], safeOptions.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def containerFlow(parent: typings.mdastUtilToMarkdown.libTypesMod.Parent & `0`, state: State, info: TrackFields): String = (^.asInstanceOf[js.Dynamic].applyDynamic("containerFlow")(parent.asInstanceOf[js.Any], state.asInstanceOf[js.Any], info.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  type Context = typings.mdastUtilToMarkdown.libTypesMod.Context
-  
-  type Join = typings.mdastUtilToMarkdown.libTypesMod.Join
+  type FlowContent = typings.mdastUtilToMarkdown.libTypesMod.FlowContent
   
   type Node = typings.mdastUtilToMarkdown.libTypesMod.Node
   
   /* Inlined mdast-util-to-markdown.mdast-util-to-markdown/lib/types.Parent */
   type Parent = children
+  
+  type State = typings.mdastUtilToMarkdown.libTypesMod.State
   
   type TrackFields = typings.mdastUtilToMarkdown.libTypesMod.TrackFields
 }

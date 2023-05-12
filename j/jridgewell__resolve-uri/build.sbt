@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jridgewell__resolve-uri"
-version := "3.1.0-92434f"
+version := "3.1.1-8ee763"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -69,7 +69,7 @@ object global {
     ): this.type = js.native
     
     def select2(): JQuery[TElement] = js.native
-    // tslint:disable-next-line:no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
     def select2[Result, RemoteResult](options: Options[Result, RemoteResult]): JQuery[TElement] = js.native
     @JSName("select2")
     var select2_Original: Select2Plugin[TElement] = js.native

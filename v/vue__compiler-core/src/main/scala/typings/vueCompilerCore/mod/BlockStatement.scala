@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait BlockStatement
   extends StObject
-     with Node2
+     with Node
      with SSRCodegenNode {
   
   var body: js.Array[JSChildNode | IfStatement]

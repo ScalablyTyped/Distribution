@@ -16,7 +16,7 @@ object libIconsAppstoreAddOutlinedMod extends Shortcut {
   @js.native
   trait AppstoreAddOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_AppstoreAddOutlinedIconType: String = js.native

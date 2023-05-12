@@ -11,9 +11,6 @@ object helpersDataMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def cellMethodLookupFactory(methodName: String): js.Function2[/* row */ Double, /* col */ Double, js.Function1[/* prop */ String, Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("cellMethodLookupFactory")(methodName.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* row */ Double, /* col */ Double, js.Function1[/* prop */ String, Any]]]
-  inline def cellMethodLookupFactory(methodName: String, allowUndefined: Boolean): js.Function2[/* row */ Double, /* col */ Double, js.Function1[/* prop */ String, Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("cellMethodLookupFactory")(methodName.asInstanceOf[js.Any], allowUndefined.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* row */ Double, /* col */ Double, js.Function1[/* prop */ String, Any]]]
-  
   inline def countFirstRowKeys(data: js.Array[CellValue]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("countFirstRowKeys")(data.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   inline def createEmptySpreadsheetData(rows: Double, columns: Double): js.Array[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createEmptySpreadsheetData")(rows.asInstanceOf[js.Any], columns.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Array[String]]]

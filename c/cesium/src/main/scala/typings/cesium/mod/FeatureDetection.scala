@@ -57,4 +57,11 @@ object FeatureDetection {
     * @returns true if the browsers supports Web Workers, false if not.
     */
   inline def supportsWebWorkers(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("supportsWebWorkers")().asInstanceOf[Boolean]
+  
+  /**
+    * Detects whether the current browser supports a WebGL2 rendering context for the specified scene.
+    * @param scene - the Cesium scene specifying the rendering context
+    * @returns true if the browser supports a WebGL2 rendering context, false if not.
+    */
+  inline def supportsWebgl2(scene: Scene): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("supportsWebgl2")(scene.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

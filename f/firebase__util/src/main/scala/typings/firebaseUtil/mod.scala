@@ -4,6 +4,8 @@ import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StringDictionary
 import typings.firebaseUtil.anon.`0`
 import typings.firebaseUtil.firebaseUtilStrings.anonymous
+import typings.firebaseUtil.firebaseUtilStrings.browser
+import typings.firebaseUtil.firebaseUtilStrings.node
 import typings.std.Error
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -45,6 +47,21 @@ object mod {
     @js.native
     def SDK_VERSION: String = js.native
     inline def SDK_VERSION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SDK_VERSION")(x.asInstanceOf[js.Any])
+  }
+  
+  @JSImport("@firebase/util", "DecodeBase64StringError")
+  @js.native
+  open class DecodeBase64StringError ()
+    extends StObject
+       with Error {
+    
+    /* standard es5 */
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* standard es5 */
+    /* CompleteClass */
+    var name: String = js.native
   }
   
   @JSImport("@firebase/util", "Deferred")
@@ -242,6 +259,8 @@ object mod {
   inline def getDefaultEmulatorHost(productName: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultEmulatorHost")(productName.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
   
   inline def getDefaultEmulatorHostnameAndPort(productName: String): js.UndefOr[js.Tuple2[/* hostname */ String, /* port */ Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultEmulatorHostnameAndPort")(productName.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Tuple2[/* hostname */ String, /* port */ Double]]]
+  
+  inline def getDefaults(): js.UndefOr[FirebaseDefaults] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaults")().asInstanceOf[js.UndefOr[FirebaseDefaults]]
   
   inline def getExperimentalSetting[T /* <: ExperimentalKey */](name: T): /* import warning: importer.ImportType#apply Failed type conversion: @firebase/util.@firebase/util.FirebaseDefaults[/ * template literal string: _${T} * / string] */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getExperimentalSetting")(name.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: @firebase/util.@firebase/util.FirebaseDefaults[/ * template literal string: _${T} * / string] */ js.Any]
   
@@ -511,6 +530,12 @@ object mod {
     var config: js.UndefOr[Record[String, String]] = js.undefined
     
     var emulatorHosts: js.UndefOr[Record[String, String]] = js.undefined
+    
+    /**
+      * Override Firebase's runtime environment detection and
+      * force the SDK to act as if it were in the specified environment.
+      */
+    var forceEnvironment: js.UndefOr[browser | node] = js.undefined
   }
   object FirebaseDefaults {
     
@@ -529,6 +554,10 @@ object mod {
       inline def setEmulatorHosts(value: Record[String, String]): Self = StObject.set(x, "emulatorHosts", value.asInstanceOf[js.Any])
       
       inline def setEmulatorHostsUndefined: Self = StObject.set(x, "emulatorHosts", js.undefined)
+      
+      inline def setForceEnvironment(value: browser | node): Self = StObject.set(x, "forceEnvironment", value.asInstanceOf[js.Any])
+      
+      inline def setForceEnvironmentUndefined: Self = StObject.set(x, "forceEnvironment", js.undefined)
       
       inline def set_authIdTokenMaxAge(value: Double): Self = StObject.set(x, "_authIdTokenMaxAge", value.asInstanceOf[js.Any])
       

@@ -1,6 +1,6 @@
 package typings.openui5
 
-import typings.openui5.anon.`6`
+import typings.openui5.anon.`8`
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
 import typings.openui5.sapUiCoreElementMod.ElementSettings
@@ -221,6 +221,8 @@ object sapUiUnifiedMenuItemBaseMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:select select} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -229,7 +231,7 @@ object sapUiUnifiedMenuItemBaseMod {
     def fireSelect(/**
       * Parameters to pass along with the event
       */
-    mParameters: `6`): this.type = js.native
+    mParameters: `8`): this.type = js.native
     
     /**
       * Gets current value of property {@link #getEnabled enabled}.
@@ -274,6 +276,8 @@ object sapUiUnifiedMenuItemBaseMod {
     def getVisible(): Boolean = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Changes the visual hover state of the menu item.
       *
       * Subclasses may override this function.
@@ -290,6 +294,8 @@ object sapUiUnifiedMenuItemBaseMod {
     ): Unit = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Informs the item that the item HTML is now applied to the DOM.
       *
       * Subclasses may override this function.
@@ -297,6 +303,8 @@ object sapUiUnifiedMenuItemBaseMod {
     def onAfterRendering(): Unit = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Event handler which is called whenever the submenu of the item is opened or closed.
       *
       * Subclasses may override this function.
@@ -307,6 +315,8 @@ object sapUiUnifiedMenuItemBaseMod {
     bOpened: Boolean): Unit = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Produces the HTML of an item and writes it to render-output-buffer during the rendering of the corresponding
       * menu.
       *

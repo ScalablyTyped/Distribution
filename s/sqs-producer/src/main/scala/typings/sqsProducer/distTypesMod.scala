@@ -1,19 +1,13 @@
 package typings.sqsProducer
 
-import typings.awsSdk.clientsSqsMod.MessageBodyAttributeMap
-import typings.awsSdk.clientsSqsMod.SendMessageBatchRequestEntry
+import org.scalablytyped.runtime.StringDictionary
+import typings.awsSdkClientSqs.distTypesModelsModels0Mod.MessageAttributeValue
+import typings.awsSdkClientSqs.mod.SQSClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object distTypesMod {
-  
-  @JSImport("sqs-producer/dist/types", JSImport.Namespace)
-  @js.native
-  val ^ : js.Any = js.native
-  
-  inline def toEntry(message: String): SendMessageBatchRequestEntry = ^.asInstanceOf[js.Dynamic].applyDynamic("toEntry")(message.asInstanceOf[js.Any]).asInstanceOf[SendMessageBatchRequestEntry]
-  inline def toEntry(message: Message): SendMessageBatchRequestEntry = ^.asInstanceOf[js.Dynamic].applyDynamic("toEntry")(message.asInstanceOf[js.Any]).asInstanceOf[SendMessageBatchRequestEntry]
   
   trait Message extends StObject {
     
@@ -27,7 +21,7 @@ object distTypesMod {
     
     var id: String
     
-    var messageAttributes: js.UndefOr[MessageBodyAttributeMap] = js.undefined
+    var messageAttributes: js.UndefOr[StringDictionary[MessageAttributeValue]] = js.undefined
   }
   object Message {
     
@@ -55,9 +49,45 @@ object distTypesMod {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      inline def setMessageAttributes(value: MessageBodyAttributeMap): Self = StObject.set(x, "messageAttributes", value.asInstanceOf[js.Any])
+      inline def setMessageAttributes(value: StringDictionary[MessageAttributeValue]): Self = StObject.set(x, "messageAttributes", value.asInstanceOf[js.Any])
       
       inline def setMessageAttributesUndefined: Self = StObject.set(x, "messageAttributes", js.undefined)
+    }
+  }
+  
+  trait ProducerOptions extends StObject {
+    
+    var batchSize: js.UndefOr[Double] = js.undefined
+    
+    var queueUrl: String
+    
+    var region: js.UndefOr[String] = js.undefined
+    
+    var sqs: js.UndefOr[SQSClient] = js.undefined
+  }
+  object ProducerOptions {
+    
+    inline def apply(queueUrl: String): ProducerOptions = {
+      val __obj = js.Dynamic.literal(queueUrl = queueUrl.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ProducerOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProducerOptions] (val x: Self) extends AnyVal {
+      
+      inline def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
+      
+      inline def setBatchSizeUndefined: Self = StObject.set(x, "batchSize", js.undefined)
+      
+      inline def setQueueUrl(value: String): Self = StObject.set(x, "queueUrl", value.asInstanceOf[js.Any])
+      
+      inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+      
+      inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
+      
+      inline def setSqs(value: SQSClient): Self = StObject.set(x, "sqs", value.asInstanceOf[js.Any])
+      
+      inline def setSqsUndefined: Self = StObject.set(x, "sqs", js.undefined)
     }
   }
 }

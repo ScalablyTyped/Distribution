@@ -7,52 +7,65 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("yup", "ValidationError")
 @js.native
-class ValidationError protected ()
+open class ValidationError protected ()
   extends StObject
      with Error {
-  def this(errors: String, value: js.Any, path: String) = this()
-  def this(errors: js.Array[String], value: js.Any, path: String) = this()
-  def this(errors: String, value: js.Any, path: String, `type`: js.Any) = this()
-  def this(errors: js.Array[String], value: js.Any, path: String, `type`: js.Any) = this()
+  def this(errorOrErrors: String) = this()
+  def this(errorOrErrors: js.Array[ValidationError]) = this()
+  def this(errorOrErrors: ValidationError) = this()
+  def this(errorOrErrors: String, value: Any) = this()
+  def this(errorOrErrors: js.Array[ValidationError], value: Any) = this()
+  def this(errorOrErrors: ValidationError, value: Any) = this()
+  def this(errorOrErrors: String, value: Any, field: String) = this()
+  def this(errorOrErrors: String, value: Unit, field: String) = this()
+  def this(errorOrErrors: js.Array[ValidationError], value: Any, field: String) = this()
+  def this(errorOrErrors: js.Array[ValidationError], value: Unit, field: String) = this()
+  def this(errorOrErrors: ValidationError, value: Any, field: String) = this()
+  def this(errorOrErrors: ValidationError, value: Unit, field: String) = this()
+  def this(errorOrErrors: String, value: Any, field: String, `type`: String) = this()
+  def this(errorOrErrors: String, value: Any, field: Unit, `type`: String) = this()
+  def this(errorOrErrors: String, value: Unit, field: String, `type`: String) = this()
+  def this(errorOrErrors: String, value: Unit, field: Unit, `type`: String) = this()
+  def this(errorOrErrors: js.Array[ValidationError], value: Any, field: String, `type`: String) = this()
+  def this(errorOrErrors: js.Array[ValidationError], value: Any, field: Unit, `type`: String) = this()
+  def this(errorOrErrors: js.Array[ValidationError], value: Unit, field: String, `type`: String) = this()
+  def this(errorOrErrors: js.Array[ValidationError], value: Unit, field: Unit, `type`: String) = this()
+  def this(errorOrErrors: ValidationError, value: Any, field: String, `type`: String) = this()
+  def this(errorOrErrors: ValidationError, value: Any, field: Unit, `type`: String) = this()
+  def this(errorOrErrors: ValidationError, value: Unit, field: String, `type`: String) = this()
+  def this(errorOrErrors: ValidationError, value: Unit, field: Unit, `type`: String) = this()
   
-  /**
-    * array of error messages
-    */
   var errors: js.Array[String] = js.native
   
-  /**
-    * In the case of aggregate errors, inner is an array of ValidationErrors throw earlier in the validation chain.
-    */
   var inner: js.Array[ValidationError] = js.native
   
+  /* standard es5 */
   /* CompleteClass */
   var message: String = js.native
   
+  /* standard es5 */
   /* CompleteClass */
   var name: String = js.native
   
-  var params: js.UndefOr[js.Object] = js.native
+  var params: js.UndefOr[Params] = js.native
   
-  /**
-    * A string, indicating where there error was thrown. path is empty at the root level.
-    */
-  var path: String = js.native
+  var path: js.UndefOr[String] = js.native
   
-  var `type`: js.Any = js.native
+  var `type`: js.UndefOr[String] = js.native
   
-  var value: js.Any = js.native
+  var value: Any = js.native
 }
-/* static members */
 object ValidationError {
   
   @JSImport("yup", "ValidationError")
   @js.native
   val ^ : js.Any = js.native
   
-  inline def formatError(message: String): String | (js.Function1[/* params */ js.UndefOr[js.Any], String]) = ^.asInstanceOf[js.Dynamic].applyDynamic("formatError")(message.asInstanceOf[js.Any]).asInstanceOf[String | (js.Function1[/* params */ js.UndefOr[js.Any], String])]
-  inline def formatError(message: String, params: js.Any): String | (js.Function1[/* params */ js.UndefOr[js.Any], String]) = (^.asInstanceOf[js.Dynamic].applyDynamic("formatError")(message.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[String | (js.Function1[/* params */ js.UndefOr[js.Any], String])]
-  inline def formatError(message: js.Function1[/* params */ js.UndefOr[js.Any], String]): String | (js.Function1[/* params */ js.UndefOr[js.Any], String]) = ^.asInstanceOf[js.Dynamic].applyDynamic("formatError")(message.asInstanceOf[js.Any]).asInstanceOf[String | (js.Function1[/* params */ js.UndefOr[js.Any], String])]
-  inline def formatError(message: js.Function1[/* params */ js.UndefOr[js.Any], String], params: js.Any): String | (js.Function1[/* params */ js.UndefOr[js.Any], String]) = (^.asInstanceOf[js.Dynamic].applyDynamic("formatError")(message.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[String | (js.Function1[/* params */ js.UndefOr[js.Any], String])]
+  /* static member */
+  inline def formatError(message: String, params: Params): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("formatError")(message.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def formatError(message: js.Function1[/* params */ Params, String], params: Params): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("formatError")(message.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def formatError(message: Any, params: Params): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("formatError")(message.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Any]
   
-  inline def isError(err: js.Any): /* is yup.yup.ValidationError */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isError")(err.asInstanceOf[js.Any]).asInstanceOf[/* is yup.yup.ValidationError */ Boolean]
+  /* static member */
+  inline def isError(err: Any): /* is yup.yup.ValidationError */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isError")(err.asInstanceOf[js.Any]).asInstanceOf[/* is yup.yup.ValidationError */ Boolean]
 }

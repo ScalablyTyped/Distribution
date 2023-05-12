@@ -1,13 +1,12 @@
 package typings.firebaseFirestore
 
+import typings.firebaseFirestore.anon.Offline
 import typings.firebaseFirestore.anon.PartialObserverViewSnapsh
 import typings.firebaseFirestore.anon.PartialObservervoid
-import typings.firebaseFirestore.anon.`0`
 import typings.firebaseFirestore.distFirestoreSrcApiBundleMod.LoadBundleTask
 import typings.firebaseFirestore.distFirestoreSrcApiCredentialsMod.CredentialsProvider
-import typings.firebaseFirestore.distFirestoreSrcApiMod.AbstractUserDataWriter
-import typings.firebaseFirestore.distFirestoreSrcApiMod.AggregateQuerySnapshot
 import typings.firebaseFirestore.distFirestoreSrcAuthUserMod.User
+import typings.firebaseFirestore.distFirestoreSrcCoreAggregateMod.Aggregate
 import typings.firebaseFirestore.distFirestoreSrcCoreBundleMod.NamedQuery
 import typings.firebaseFirestore.distFirestoreSrcCoreComponentProviderMod.ComponentConfiguration
 import typings.firebaseFirestore.distFirestoreSrcCoreComponentProviderMod.OfflineComponentProvider
@@ -24,9 +23,14 @@ import typings.firebaseFirestore.distFirestoreSrcCoreViewSnapshotMod.ViewSnapsho
 import typings.firebaseFirestore.distFirestoreSrcLocalLocalStoreMod.LocalStore
 import typings.firebaseFirestore.distFirestoreSrcModelDocumentKeyMod.DocumentKey
 import typings.firebaseFirestore.distFirestoreSrcModelDocumentMod.Document
+import typings.firebaseFirestore.distFirestoreSrcModelFieldIndexMod.FieldIndex
 import typings.firebaseFirestore.distFirestoreSrcModelMutationMod.Mutation
+import typings.firebaseFirestore.distFirestoreSrcProtosFirestoreProtoApiMod.ApiClientObjectMap
+import typings.firebaseFirestore.distFirestoreSrcProtosFirestoreProtoApiMod.Value
 import typings.firebaseFirestore.distFirestoreSrcUtilAsyncQueueMod.AsyncQueue
+import typings.firebaseFirestore.distFirestoreSrcUtilErrorMod.FirestoreError
 import typings.firebaseFirestoreTypes.mod.GetOptions
+import typings.std.DOMException
 import typings.std.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -56,6 +60,12 @@ object distFirestoreSrcCoreFirestoreClientMod {
       databaseInfo: DatabaseInfo
     ) = this()
     
+    var _offlineComponents: js.UndefOr[OfflineComponentProvider] = js.native
+    
+    var _onlineComponents: js.UndefOr[OnlineComponentProvider] = js.native
+    
+    var _uninitializedComponentsProvider: js.UndefOr[Offline] = js.native
+    
     /* private */ var appCheckCredentialListener: Any = js.native
     
     /* private */ var appCheckCredentials: Any = js.native
@@ -80,10 +90,6 @@ object distFirestoreSrcCoreFirestoreClientMod {
     
     def getConfiguration(): js.Promise[ComponentConfiguration] = js.native
     
-    var offlineComponents: js.UndefOr[OfflineComponentProvider] = js.native
-    
-    var onlineComponents: js.UndefOr[OnlineComponentProvider] = js.native
-    
     def setAppCheckTokenChangeListener(listener: js.Function2[/* appCheckToken */ String, /* user */ User, js.Promise[Unit]]): Unit = js.native
     
     def setCredentialChangeListener(listener: js.Function1[/* user */ User, js.Promise[Unit]]): Unit = js.native
@@ -93,8 +99,8 @@ object distFirestoreSrcCoreFirestoreClientMod {
     /* private */ var user: Any = js.native
     
     /**
-      * Checks that the client has not been terminated. Ensures that other methods on
-      * this class cannot be called after the client is terminated.
+      * Checks that the client has not been terminated. Ensures that other methods on //
+      * this class cannot be called after the client is terminated. //
       */
     def verifyNotTerminated(): Unit = js.native
   }
@@ -102,6 +108,9 @@ object distFirestoreSrcCoreFirestoreClientMod {
   @JSImport("@firebase/firestore/dist/firestore/src/core/firestore_client", "MAX_CONCURRENT_LIMBO_RESOLUTIONS")
   @js.native
   val MAX_CONCURRENT_LIMBO_RESOLUTIONS: /* 100 */ Double = js.native
+  
+  inline def canFallbackFromIndexedDbError(error: FirestoreError): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("canFallbackFromIndexedDbError")(error.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def canFallbackFromIndexedDbError(error: DOMException): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("canFallbackFromIndexedDbError")(error.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def firestoreClientAddSnapshotsInSyncListener(client: FirestoreClient, observer: PartialObservervoid): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("firestoreClientAddSnapshotsInSyncListener")(client.asInstanceOf[js.Any], observer.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   
@@ -137,11 +146,9 @@ object distFirestoreSrcCoreFirestoreClientMod {
     resultTask: LoadBundleTask
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("firestoreClientLoadBundle")(client.asInstanceOf[js.Any], databaseId.asInstanceOf[js.Any], data.asInstanceOf[js.Any], resultTask.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def firestoreClientRunCountQuery(
-    client: FirestoreClient,
-    query: typings.firebaseFirestore.distFirestoreSrcLiteApiReferenceMod.Query[Any],
-    userDataWriter: AbstractUserDataWriter
-  ): js.Promise[AggregateQuerySnapshot[`0`]] = (^.asInstanceOf[js.Dynamic].applyDynamic("firestoreClientRunCountQuery")(client.asInstanceOf[js.Any], query.asInstanceOf[js.Any], userDataWriter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[AggregateQuerySnapshot[`0`]]]
+  inline def firestoreClientRunAggregateQuery(client: FirestoreClient, query: Query, aggregates: js.Array[Aggregate]): js.Promise[ApiClientObjectMap[Value]] = (^.asInstanceOf[js.Dynamic].applyDynamic("firestoreClientRunAggregateQuery")(client.asInstanceOf[js.Any], query.asInstanceOf[js.Any], aggregates.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ApiClientObjectMap[Value]]]
+  
+  inline def firestoreClientSetIndexConfiguration(client: FirestoreClient, indexes: js.Array[FieldIndex]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("firestoreClientSetIndexConfiguration")(client.asInstanceOf[js.Any], indexes.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   inline def firestoreClientTransaction[T](
     client: FirestoreClient,

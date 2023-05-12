@@ -59,6 +59,7 @@ trait LegacyOptions[Props, D, C /* <: ComputedOptions */, M /* <: MethodOptions 
         js.Object, 
         `false`, 
         js.Object, 
+        js.Object, 
         IntersectionMixin[Mixin] & IntersectionMixin[Extends], 
         (UnwrapMixinsType[IntersectionMixin[Mixin] & IntersectionMixin[Extends], P]) & EnsureNonVoid[Props], 
         (UnwrapMixinsType[IntersectionMixin[Mixin] & IntersectionMixin[Extends], B]) & EnsureNonVoid[js.Object], 
@@ -88,6 +89,7 @@ trait LegacyOptions[Props, D, C /* <: ComputedOptions */, M /* <: MethodOptions 
         Props, 
         js.Object, 
         `false`, 
+        js.Object, 
         js.Object, 
         IntersectionMixin[Mixin] & IntersectionMixin[Extends], 
         (UnwrapMixinsType[IntersectionMixin[Mixin] & IntersectionMixin[Extends], P]) & EnsureNonVoid[Props], 
@@ -208,6 +210,7 @@ object LegacyOptions {
             js.Object, 
             `false`, 
             js.Object, 
+            js.Object, 
             IntersectionMixin[Mixin] & IntersectionMixin[Extends], 
             (UnwrapMixinsType[IntersectionMixin[Mixin] & IntersectionMixin[Extends], P]) & EnsureNonVoid[Props], 
             (UnwrapMixinsType[IntersectionMixin[Mixin] & IntersectionMixin[Extends], B]) & EnsureNonVoid[js.Object], 
@@ -237,6 +240,7 @@ object LegacyOptions {
             Props, 
             js.Object, 
             `false`, 
+            js.Object, 
             js.Object, 
             IntersectionMixin[Mixin] & IntersectionMixin[Extends], 
             (UnwrapMixinsType[IntersectionMixin[Mixin] & IntersectionMixin[Extends], P]) & EnsureNonVoid[Props], 
@@ -284,7 +288,8 @@ object LegacyOptions {
           js.Object, 
           js.Object, 
           `false`, 
-          ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+          ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String, js.Object], 
+          js.Object, 
           js.Object
         ]) | Null, /* info */ String) => Boolean | Unit
     ): Self = StObject.set(x, "errorCaptured", js.Any.fromFunction3(value))

@@ -1,7 +1,7 @@
 package typings.angularCompilerCli
 
+import typings.angularCompilerCli.angularCompilerCliStrings.`experimental-local`
 import typings.angularCompilerCli.angularCompilerCliStrings.full
-import typings.angularCompilerCli.angularCompilerCliStrings.ngtsc
 import typings.angularCompilerCli.angularCompilerCliStrings.partial
 import typings.angularCompilerCli.anon.Checks
 import org.scalablytyped.runtime.StObject
@@ -140,7 +140,6 @@ object srcNgtscCoreApiSrcPublicOptionsMod {
     /**
       * Render `$localize` messages with legacy format ids.
       *
-      * This is only active if we are building with `enableIvy: true`.
       * The default value for now is `true`.
       *
       * Use this option when use are using the `$localize` based localization messages but
@@ -336,7 +335,7 @@ object srcNgtscCoreApiSrcPublicOptionsMod {
     
     /**
       * Whether the compiler should avoid generating code for classes that haven't been exported.
-      * This is only active when building with `enableIvy: true`. Defaults to `true`.
+      * Defaults to `true`.
       */
     var compileNonExportedClasses: js.UndefOr[Boolean] = js.undefined
     
@@ -362,61 +361,6 @@ object srcNgtscCoreApiSrcPublicOptionsMod {
       inline def setDisableTypeScriptVersionCheck(value: Boolean): Self = StObject.set(x, "disableTypeScriptVersionCheck", value.asInstanceOf[js.Any])
       
       inline def setDisableTypeScriptVersionCheckUndefined: Self = StObject.set(x, "disableTypeScriptVersionCheck", js.undefined)
-    }
-  }
-  
-  trait NgcCompatibilityOptions extends StObject {
-    
-    /**
-      * Tells the compiler to generate definitions using the Render3 style code generation.
-      * This option defaults to `true`.
-      *
-      * Acceptable values are as follows:
-      *
-      * `false` - run ngc normally
-      * `true` - run the ngtsc compiler instead of the normal ngc compiler
-      * `ngtsc` - alias for `true`
-      */
-    var enableIvy: js.UndefOr[Boolean | ngtsc] = js.undefined
-    
-    /**
-      * Controls whether ngtsc will emit `.ngfactory.js` shims for each compiled `.ts` file.
-      *
-      * These shims support legacy imports from `ngfactory` files, by exporting a factory shim
-      * for each component or NgModule in the original `.ts` file.
-      */
-    var generateNgFactoryShims: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * Controls whether ngtsc will emit `.ngsummary.js` shims for each compiled `.ts` file.
-      *
-      * These shims support legacy imports from `ngsummary` files, by exporting an empty object
-      * for each NgModule in the original `.ts` file. The only purpose of summaries is to feed them to
-      * `TestBed`, which is a no-op in Ivy.
-      */
-    var generateNgSummaryShims: js.UndefOr[Boolean] = js.undefined
-  }
-  object NgcCompatibilityOptions {
-    
-    inline def apply(): NgcCompatibilityOptions = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[NgcCompatibilityOptions]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: NgcCompatibilityOptions] (val x: Self) extends AnyVal {
-      
-      inline def setEnableIvy(value: Boolean | ngtsc): Self = StObject.set(x, "enableIvy", value.asInstanceOf[js.Any])
-      
-      inline def setEnableIvyUndefined: Self = StObject.set(x, "enableIvy", js.undefined)
-      
-      inline def setGenerateNgFactoryShims(value: Boolean): Self = StObject.set(x, "generateNgFactoryShims", value.asInstanceOf[js.Any])
-      
-      inline def setGenerateNgFactoryShimsUndefined: Self = StObject.set(x, "generateNgFactoryShims", js.undefined)
-      
-      inline def setGenerateNgSummaryShims(value: Boolean): Self = StObject.set(x, "generateNgSummaryShims", value.asInstanceOf[js.Any])
-      
-      inline def setGenerateNgSummaryShimsUndefined: Self = StObject.set(x, "generateNgSummaryShims", js.undefined)
     }
   }
   
@@ -612,10 +556,13 @@ object srcNgtscCoreApiSrcPublicOptionsMod {
       * Specifies the compilation mode to use. The following modes are available:
       * - 'full': generates fully AOT compiled code using Ivy instructions.
       * - 'partial': generates code in a stable, but intermediate form suitable for publication to NPM.
+      * - 'experimental-local': generates code based on each individual source file without using its
+      * dependencies. This mode is suitable only for fast edit/refresh during development. It will be
+      * eventually replaced by the value `local` once the feature is ready to be public.
       *
       * The default value is 'full'.
       */
-    var compilationMode: js.UndefOr[full | partial] = js.undefined
+    var compilationMode: js.UndefOr[full | partial | `experimental-local`] = js.undefined
   }
   object TargetOptions {
     
@@ -627,7 +574,7 @@ object srcNgtscCoreApiSrcPublicOptionsMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: TargetOptions] (val x: Self) extends AnyVal {
       
-      inline def setCompilationMode(value: full | partial): Self = StObject.set(x, "compilationMode", value.asInstanceOf[js.Any])
+      inline def setCompilationMode(value: full | partial | `experimental-local`): Self = StObject.set(x, "compilationMode", value.asInstanceOf[js.Any])
       
       inline def setCompilationModeUndefined: Self = StObject.set(x, "compilationMode", js.undefined)
     }

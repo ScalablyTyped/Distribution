@@ -12,7 +12,7 @@ trait PolicyQualifierInfo extends StObject {
   var PolicyQualifierId: typings.awsSdk.clientsAcmpcaMod.PolicyQualifierId
   
   /**
-    * Defines the qualifier type. ACM Private CA supports the use of a URI for a CPS qualifier in this field.
+    * Defines the qualifier type. Amazon Web Services Private CA supports the use of a URI for a CPS qualifier in this field.
     */
   var Qualifier: typings.awsSdk.clientsAcmpcaMod.Qualifier
 }

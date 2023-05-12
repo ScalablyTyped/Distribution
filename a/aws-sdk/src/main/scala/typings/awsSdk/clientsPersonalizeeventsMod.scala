@@ -72,7 +72,7 @@ object clientsPersonalizeeventsMod {
     var eventValue: js.UndefOr[FloatType] = js.undefined
     
     /**
-      * A list of item IDs that represents the sequence of items you have shown the user. For example, ["itemId1", "itemId2", "itemId3"].
+      * A list of item IDs that represents the sequence of items you have shown the user. For example, ["itemId1", "itemId2", "itemId3"]. Provide a list of items to manually record impressions data for an event. For more information on recording impressions data, see Recording impressions data. 
       */
     var impression: js.UndefOr[Impression] = js.undefined
     
@@ -82,12 +82,17 @@ object clientsPersonalizeeventsMod {
     var itemId: js.UndefOr[ItemId] = js.undefined
     
     /**
+      * Contains information about the metric attribution associated with an event. For more information about metric attributions, see Measuring impact of recommendations.
+      */
+    var metricAttribution: js.UndefOr[MetricAttribution] = js.undefined
+    
+    /**
       * A string map of event-specific data that you might choose to record. For example, if a user rates a movie on your site, other than movie ID (itemId) and rating (eventValue) , you might also send the number of movie ratings made by the user. Each item in the map consists of a key-value pair. For example,  {"numberOfRatings": "12"}  The keys use camel case names that match the fields in the Interactions schema. In the above example, the numberOfRatings would match the 'NUMBER_OF_RATINGS' field defined in the Interactions schema.
       */
     var properties: js.UndefOr[EventPropertiesJSON] = js.undefined
     
     /**
-      * The ID of the recommendation.
+      * The ID of the list of recommendations that contains the item the user interacted with. Provide a recommendationId to have Amazon Personalize implicitly record the recommendations you show your user as impressions data. Or provide a recommendationId if you use a metric attribution to measure the impact of recommendations.   For more information on recording impressions data, see Recording impressions data. For more information on creating a metric attribution see Measuring impact of recommendations. 
       */
     var recommendationId: js.UndefOr[RecommendationId] = js.undefined
     
@@ -126,6 +131,10 @@ object clientsPersonalizeeventsMod {
       
       inline def setItemIdUndefined: Self = StObject.set(x, "itemId", js.undefined)
       
+      inline def setMetricAttribution(value: MetricAttribution): Self = StObject.set(x, "metricAttribution", value.asInstanceOf[js.Any])
+      
+      inline def setMetricAttributionUndefined: Self = StObject.set(x, "metricAttribution", js.undefined)
+      
       inline def setProperties(value: EventPropertiesJSON): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
       inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
@@ -137,6 +146,8 @@ object clientsPersonalizeeventsMod {
       inline def setSentAt(value: js.Date): Self = StObject.set(x, "sentAt", value.asInstanceOf[js.Any])
     }
   }
+  
+  type EventAttributionSource = String
   
   type EventList = js.Array[Event]
   
@@ -181,6 +192,27 @@ object clientsPersonalizeeventsMod {
   type ItemList = js.Array[Item]
   
   type ItemProperties = String
+  
+  trait MetricAttribution extends StObject {
+    
+    /**
+      * The source of the event, such as a third party.
+      */
+    var eventAttributionSource: EventAttributionSource
+  }
+  object MetricAttribution {
+    
+    inline def apply(eventAttributionSource: EventAttributionSource): MetricAttribution = {
+      val __obj = js.Dynamic.literal(eventAttributionSource = eventAttributionSource.asInstanceOf[js.Any])
+      __obj.asInstanceOf[MetricAttribution]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MetricAttribution] (val x: Self) extends AnyVal {
+      
+      inline def setEventAttributionSource(value: EventAttributionSource): Self = StObject.set(x, "eventAttributionSource", value.asInstanceOf[js.Any])
+    }
+  }
   
   @js.native
   trait PersonalizeEvents extends Service {

@@ -1,7 +1,7 @@
 
 # Scala.js typings for aws-sdk__md5-js
 
-Typings are for version 3.208.0
+Typings are for version 3.329.0
 
 ## Library description:
 [![NPM version](https://img.shields.io/npm/v/@aws-sdk/md5-js/latest.svg)](https://www.npmjs.com/package/@aws-sdk/md5-js) [![NPM downloads](https://img.shields.io/npm/dm/@aws-sdk/md5-js.svg)](https://www.npmjs.com/package/@aws-sdk/md5-js)

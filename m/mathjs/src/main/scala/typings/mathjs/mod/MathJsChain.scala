@@ -25,7 +25,7 @@ trait MathJsChain[TValue] extends StObject {
     * Calculate the absolute value of a number. For matrices, the function
     * is evaluated element wise.
     */
-  def abs(): MathJsChain[Double] = js.native
+  def abs[T /* <: MathType */](): MathJsChain[T] = js.native
   
   /*************************************************************************
     * Trigonometry functions
@@ -34,40 +34,40 @@ trait MathJsChain[TValue] extends StObject {
     * Calculate the inverse cosine of a value. For matrices, the function
     * is evaluated element wise.
     */
-  def acos(): MathJsChain[Double] = js.native
+  def acos[T /* <: Double | BigNumber | Complex | MathCollection */](): MathJsChain[T] = js.native
   
   /**
     * Calculate the hyperbolic arccos of a value, defined as acosh(x) =
     * ln(sqrt(x^2 - 1) + x). For matrices, the function is evaluated
     * element wise.
     */
-  def acosh(): MathJsChain[Double] = js.native
+  def acosh[T /* <: Double | BigNumber | Complex | MathCollection */](): MathJsChain[T] = js.native
   
   /**
     * Calculate the inverse cotangent of a value. For matrices, the
     * function is evaluated element wise.
     */
-  def acot(): MathJsChain[Double] = js.native
+  def acot[T /* <: Double | BigNumber | Complex | MathCollection */](): MathJsChain[T] = js.native
   
   /**
     * Calculate the hyperbolic arccotangent of a value, defined as acoth(x)
     * = (ln((x+1)/x) + ln(x/(x-1))) / 2. For matrices, the function is
     * evaluated element wise.
     */
-  def acoth(): MathJsChain[Double] = js.native
+  def acoth[T /* <: Double | BigNumber | Complex | MathCollection */](): MathJsChain[T] = js.native
   
   /**
     * Calculate the inverse cosecant of a value. For matrices, the function
     * is evaluated element wise.
     */
-  def acsc(): MathJsChain[Double] = js.native
+  def acsc[T /* <: Double | BigNumber | Complex | MathCollection */](): MathJsChain[T] = js.native
   
   /**
     * Calculate the hyperbolic arccosecant of a value, defined as acsch(x)
     * = ln(1/x + sqrt(1/x^2 + 1)). For matrices, the function is evaluated
     * element wise.
     */
-  def acsch(): MathJsChain[Double] = js.native
+  def acsch[T /* <: Double | BigNumber | Complex | MathCollection */](): MathJsChain[T] = js.native
   
   def add(y: js.Array[js.Array[MathNumericType] | MathNumericType]): MathJsChain[js.Array[MathNumericType]] = js.native
   /**
@@ -124,48 +124,47 @@ trait MathJsChain[TValue] extends StObject {
     * Calculate the inverse secant of a value. For matrices, the function
     * is evaluated element wise.
     */
-  def asec(): MathJsChain[Double] = js.native
+  def asec[T /* <: Double | BigNumber | Complex | MathCollection */](): MathJsChain[T] = js.native
   
   /**
     * Calculate the hyperbolic arcsecant of a value, defined as asech(x) =
     * ln(sqrt(1/x^2 - 1) + 1/x). For matrices, the function is evaluated
     * element wise.
     */
-  def asech(): MathJsChain[Double] = js.native
+  def asech[T /* <: Double | BigNumber | Complex | MathCollection */](): MathJsChain[T] = js.native
   
   /**
     * Calculate the inverse sine of a value. For matrices, the function is
     * evaluated element wise.
     */
-  def asin(): MathJsChain[Double] = js.native
+  def asin[T /* <: Double | BigNumber | Complex | MathCollection */](): MathJsChain[T] = js.native
   
   /**
     * Calculate the hyperbolic arcsine of a value, defined as asinh(x) =
     * ln(x + sqrt(x^2 + 1)). For matrices, the function is evaluated
     * element wise.
     */
-  def asinh(): MathJsChain[Double] = js.native
+  def asinh[T /* <: Double | BigNumber | Complex | MathCollection */](): MathJsChain[T] = js.native
   
   /**
     * Calculate the inverse tangent of a value. For matrices, the function
     * is evaluated element wise.
     */
-  def atan(): MathJsChain[Double] = js.native
+  def atan[T /* <: Double | BigNumber | Complex | MathCollection */](): MathJsChain[T] = js.native
   
   /**
     * Calculate the inverse tangent function with two arguments, y/x. By
     * providing two arguments, the right quadrant of the computed angle can
     * be determined. For matrices, the function is evaluated element wise.
     */
-  def atan2(x: Double): MathJsChain[Double] = js.native
-  def atan2(x: MathCollection): MathJsChain[MathCollection] = js.native
+  def atan2[T /* <: Double | BigNumber | Complex | MathCollection */](x: Double): MathJsChain[T] = js.native
   
   /**
     * Calculate the hyperbolic arctangent of a value, defined as atanh(x) =
     * ln((1 + x)/(1 - x)) / 2. For matrices, the function is evaluated
     * element wise.
     */
-  def atanh(): MathJsChain[Double] = js.native
+  def atanh[T /* <: Double | BigNumber | Complex | MathCollection */](): MathJsChain[T] = js.native
   
   /*************************************************************************
     * Combinatorics functions
@@ -207,8 +206,9 @@ trait MathJsChain[TValue] extends StObject {
     * element wise. For units, the function is evaluated on the best prefix
     * base.
     */
-  def bitNot(): MathJsChain[Double] = js.native
+  def bitNot[T /* <: Double | BigNumber | MathCollection */](): MathJsChain[T] = js.native
   
+  def bitOr(y: js.Array[js.Array[MathNumericType] | MathNumericType]): MathJsChain[js.Array[MathNumericType]] = js.native
   /**
     * Bitwise OR two values, x | y. For matrices, the function is evaluated
     * element wise. For units, the function is evaluated on the lowest
@@ -216,8 +216,7 @@ trait MathJsChain[TValue] extends StObject {
     * @param y Second value to or
     */
   def bitOr(y: Double): MathJsChain[Double] = js.native
-  def bitOr(y: BigNumber): MathJsChain[BigNumber] = js.native
-  def bitOr(y: MathArray): MathJsChain[MathArray] = js.native
+  def bitOr(y: Decimal): MathJsChain[Decimal] = js.native
   def bitOr(y: Matrix): MathJsChain[Matrix] = js.native
   
   /**
@@ -251,8 +250,8 @@ trait MathJsChain[TValue] extends StObject {
     * a number or complex number. If true, all complex roots are returned,
     * if false (default) the principal root is returned.
     */
-  def cbrt(): MathJsChain[Double] = js.native
-  def cbrt(allRoots: Boolean): MathJsChain[Double] = js.native
+  def cbrt[T /* <: Double | BigNumber | Complex | Unit */](): MathJsChain[T] = js.native
+  def cbrt[T /* <: Double | BigNumber | Complex | Unit */](allRoots: Boolean): MathJsChain[T] = js.native
   
   // Rounding functions grouped for similarity
   /**
@@ -261,10 +260,10 @@ trait MathJsChain[TValue] extends StObject {
     * function is evaluated element wise.
     * @param n Number of decimals Default value: 0.
     */
-  def ceil(): MathJsChain[MathNumericType] = js.native
-  def ceil(n: Double): MathJsChain[MathNumericType] = js.native
-  def ceil(n: BigNumber): MathJsChain[MathNumericType] = js.native
-  def ceil(n: MathCollection): MathJsChain[MathNumericType] = js.native
+  def ceil[T /* <: MathNumericType | MathCollection */](): MathJsChain[T] = js.native
+  def ceil[T /* <: MathNumericType | MathCollection */](n: Double): MathJsChain[T] = js.native
+  def ceil[T /* <: MathNumericType | MathCollection */](n: BigNumber): MathJsChain[T] = js.native
+  def ceil[T /* <: MathNumericType | MathCollection */](n: MathCollection): MathJsChain[T] = js.native
   
   /*************************************************************************
     * Probability functions
@@ -357,26 +356,26 @@ trait MathJsChain[TValue] extends StObject {
     * Calculate the cosine of a value. For matrices, the function is
     * evaluated element wise.
     */
-  def cos(): MathJsChain[Double] = js.native
+  def cos[T /* <: Double | BigNumber | Complex | MathCollection */](): MathJsChain[T] = js.native
   
   /**
     * Calculate the hyperbolic cosine of a value, defined as cosh(x) = 1/2
     * * (exp(x) + exp(-x)). For matrices, the function is evaluated element
     * wise.
     */
-  def cosh(): MathJsChain[Double] = js.native
+  def cosh[T /* <: Double | BigNumber | Complex | MathCollection */](): MathJsChain[T] = js.native
   
   /**
     * Calculate the cotangent of a value. cot(x) is defined as 1 / tan(x).
     * For matrices, the function is evaluated element wise.
     */
-  def cot(): MathJsChain[Double] = js.native
+  def cot[T /* <: Double | BigNumber | Complex | MathCollection */](): MathJsChain[T] = js.native
   
   /**
     * Calculate the hyperbolic cotangent of a value, defined as coth(x) = 1
     * / tanh(x). For matrices, the function is evaluated element wise.
     */
-  def coth(): MathJsChain[Double] = js.native
+  def coth[T /* <: Double | BigNumber | Complex | MathCollection */](): MathJsChain[T] = js.native
   
   /**
     * Count the number of elements of a matrix, array or string.
@@ -412,33 +411,33 @@ trait MathJsChain[TValue] extends StObject {
     * * b2 - a2 * b1 ]
     * @param y Second vector
     */
-  def cross(y: MathCollection): MathJsChain[Matrix | MathArray] = js.native
+  def cross(y: MathCollection): MathJsChain[MathCollection] = js.native
   
   /**
     * Calculate the cosecant of a value, defined as csc(x) = 1/sin(x). For
     * matrices, the function is evaluated element wise.
     */
-  def csc(): MathJsChain[Double] = js.native
+  def csc[T /* <: Double | BigNumber | Complex | MathCollection */](): MathJsChain[T] = js.native
   
   /**
     * Calculate the hyperbolic cosecant of a value, defined as csch(x) = 1
     * / sinh(x). For matrices, the function is evaluated element wise.
     */
-  def csch(): MathJsChain[Double] = js.native
+  def csch[T /* <: Double | BigNumber | Complex | MathCollection */](): MathJsChain[T] = js.native
   
   // End of rounding group
   /**
     * Compute the cube of a value, x * x * x. For matrices, the function is
     * evaluated element wise.
     */
-  def cube(): MathJsChain[Double] = js.native
+  def cube[T /* <: MathNumericType | Unit */](): MathJsChain[T] = js.native
   
   /**
     * Test element wise whether two matrices are equal. The function
     * accepts both matrices and scalar values.
     * @param y Second amtrix to compare
     */
-  def deepEqual(y: MathType): MathJsChain[Double | BigNumber | Fraction | Complex | Unit | MathCollection] = js.native
+  def deepEqual(y: MathType): MathJsChain[MathType] = js.native
   
   def derivative(variable: String): MathJsChain[MathNode] = js.native
   def derivative(variable: String, options: typings.mathjs.anon.Simplify): MathJsChain[MathNode] = js.native
@@ -471,10 +470,10 @@ trait MathJsChain[TValue] extends StObject {
     */
   def diag(): MathJsChain[Matrix] = js.native
   def diag(format: String): MathJsChain[Matrix] = js.native
-  def diag(k: Double): MathJsChain[Matrix | MathArray] = js.native
-  def diag(k: Double, format: String): MathJsChain[Matrix | MathArray] = js.native
-  def diag(k: BigNumber): MathJsChain[Matrix | MathArray] = js.native
-  def diag(k: BigNumber, format: String): MathJsChain[Matrix | MathArray] = js.native
+  def diag(k: Double): MathJsChain[MathCollection] = js.native
+  def diag(k: Double, format: String): MathJsChain[MathCollection] = js.native
+  def diag(k: BigNumber): MathJsChain[MathCollection] = js.native
+  def diag(k: BigNumber, format: String): MathJsChain[MathCollection] = js.native
   
   /*************************************************************************
     * Geometry functions
@@ -511,25 +510,35 @@ trait MathJsChain[TValue] extends StObject {
     */
   def dot(y: MathCollection): MathJsChain[Double] = js.native
   
+  def dotDivide(y: MathNumericType | MathType): MathJsChain[Unit] = js.native
+  def dotDivide(y: js.Array[js.Array[MathNumericType] | MathNumericType]): MathJsChain[js.Array[MathNumericType]] = js.native
+  def dotDivide(y: Matrix): MathJsChain[Matrix] = js.native
+  def dotDivide(y: Unit): MathJsChain[Unit] = js.native
   /**
     * Divide two matrices element wise. The function accepts both matrices
     * and scalar values.
     * @param y Denominator
     */
-  def dotDivide(y: MathType): MathJsChain[MathType] = js.native
+  @JSName("dotDivide")
+  def dotDivide_T[T /* <: MathCollection */](y: MathType): MathJsChain[T] = js.native
   
+  def dotMultiply(y: MathNumericType | MathType): MathJsChain[Unit] = js.native
+  def dotMultiply(y: js.Array[js.Array[MathNumericType] | MathNumericType]): MathJsChain[js.Array[MathNumericType]] = js.native
+  def dotMultiply(y: Matrix): MathJsChain[Matrix] = js.native
+  def dotMultiply(y: Unit): MathJsChain[Unit] = js.native
   /**
     * Multiply two matrices element wise. The function accepts both
     * matrices and scalar values.
     * @param y Right hand value
     */
-  def dotMultiply(y: MathType): MathJsChain[MathType] = js.native
+  @JSName("dotMultiply")
+  def dotMultiply_T[T /* <: MathCollection */](y: MathType): MathJsChain[T] = js.native
   
   /**
     * Calculates the power of x to y element wise.
     * @param y The exponent
     */
-  def dotPow(y: MathType): MathJsChain[MathType] = js.native
+  def dotPow[T /* <: MathType */](y: MathType): MathJsChain[T] = js.native
   
   def equal(y: String): MathJsChain[Boolean | MathCollection] = js.native
   /**
@@ -575,7 +584,7 @@ trait MathJsChain[TValue] extends StObject {
     * Calculate the exponent of a value. For matrices, the function is
     * evaluated element wise.
     */
-  def exp(): MathJsChain[Double] = js.native
+  def exp[T /* <: Double | BigNumber | Complex */](): MathJsChain[T] = js.native
   
   /**
     * Compute the matrix exponential, expm(A) = e^A. The matrix must be
@@ -590,7 +599,7 @@ trait MathJsChain[TValue] extends StObject {
     * Calculate the value of subtracting 1 from the exponential value. For
     * matrices, the function is evaluated element wise.
     */
-  def expm1(): MathJsChain[Double] = js.native
+  def expm1[T /* <: Double | BigNumber | Complex */](): MathJsChain[T] = js.native
   
   /**
     * Compute the factorial of a value Factorial only supports an integer
@@ -606,21 +615,21 @@ trait MathJsChain[TValue] extends StObject {
     test: js.Function3[
       /* value */ Any, 
       /* index */ Any, 
-      /* matrix */ Matrix | MathArray | js.Array[String], 
+      /* matrix */ MathCollection | js.Array[String], 
       Boolean
     ]
-  ): MathJsChain[Matrix | MathArray] = js.native
-  def filter(test: js.RegExp): MathJsChain[Matrix | MathArray] = js.native
+  ): MathJsChain[MathCollection] = js.native
+  def filter(test: js.RegExp): MathJsChain[MathCollection] = js.native
   
   /**
     * Round a value towards zero. For matrices, the function is evaluated
     * element wise.
     * @param n Number of decimals Default value: 0.
     */
-  def fix(): MathJsChain[MathNumericType] = js.native
-  def fix(n: Double): MathJsChain[MathNumericType] = js.native
-  def fix(n: BigNumber): MathJsChain[MathNumericType] = js.native
-  def fix(n: MathCollection): MathJsChain[MathNumericType] = js.native
+  def fix[T /* <: MathNumericType | MathCollection */](): MathJsChain[T] = js.native
+  def fix[T /* <: MathNumericType | MathCollection */](n: Double): MathJsChain[T] = js.native
+  def fix[T /* <: MathNumericType | MathCollection */](n: BigNumber): MathJsChain[T] = js.native
+  def fix[T /* <: MathNumericType | MathCollection */](n: MathCollection): MathJsChain[T] = js.native
   
   /**
     * Flatten a multi dimensional matrix into a single dimensional matrix.
@@ -632,19 +641,19 @@ trait MathJsChain[TValue] extends StObject {
     * evaluated element wise.
     * @param n Number of decimals Default value: 0.
     */
-  def floor(): MathJsChain[MathNumericType] = js.native
-  def floor(n: Double): MathJsChain[MathNumericType] = js.native
-  def floor(n: BigNumber): MathJsChain[MathNumericType] = js.native
-  def floor(n: MathCollection): MathJsChain[MathNumericType] = js.native
+  def floor[T /* <: MathNumericType | MathCollection */](): MathJsChain[T] = js.native
+  def floor[T /* <: MathNumericType | MathCollection */](n: Double): MathJsChain[T] = js.native
+  def floor[T /* <: MathNumericType | MathCollection */](n: BigNumber): MathJsChain[T] = js.native
+  def floor[T /* <: MathNumericType | MathCollection */](n: MathCollection): MathJsChain[T] = js.native
   
   /**
     * Iterate over all elements of a matrix/array, and executes the given
     * callback function.
     */
-  def forEach[T /* <: Matrix | MathArray */](
+  def forEach[T /* <: MathCollection */](
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
   callback: js.Function3[/* value */ Any, /* index */ Any, /* matrix */ T, scala.Unit]
-  ): MathJsChain[T] = js.native
+  ): scala.Unit = js.native
   
   /*************************************************************************
     * String functions
@@ -732,7 +741,7 @@ trait MathJsChain[TValue] extends StObject {
     * Calculate the greatest common divisor for two or more values or
     * arrays. For matrices, the function is evaluated element wise.
     */
-  def gcd(args: (BigNumber | Double | Fraction | MathArray | Matrix)*): MathJsChain[Double] = js.native
+  def gcd[T /* <: Double | BigNumber | Fraction | Matrix */](args: T*): MathJsChain[T] = js.native
   
   /**
     * Retrieve help on a function or data type. Help files are retrieved
@@ -746,21 +755,21 @@ trait MathJsChain[TValue] extends StObject {
     * matrix input, the hypotenusa is calculated for all values in the
     * matrix.
     */
-  def hypot(): MathJsChain[Double] = js.native
+  def hypot[T /* <: Double | BigNumber */](): MathJsChain[T] = js.native
   
   /**
     * Create a 2-dimensional identity matrix with size m x n or n x n. The
     * matrix has ones on the diagonal and zeros elsewhere.
     * @param format The Matrix storage format
     */
-  def identity(): MathJsChain[Matrix | MathArray | Double] = js.native
-  def identity(format: String): MathJsChain[Matrix | MathArray | Double] = js.native
+  def identity(): MathJsChain[MathCollection | Double] = js.native
+  def identity(format: String): MathJsChain[MathCollection | Double] = js.native
   /**
     * @param n The y dimension for the matrix
     * @param format The Matrix storage format
     */
-  def identity(n: Double): MathJsChain[Matrix | MathArray | Double] = js.native
-  def identity(n: Double, format: String): MathJsChain[Matrix | MathArray | Double] = js.native
+  def identity(n: Double): MathJsChain[MathCollection | Double] = js.native
+  def identity(n: Double, format: String): MathJsChain[MathCollection | Double] = js.native
   
   /**
     * Get the imaginary part of a complex number. For a complex number a +
@@ -790,6 +799,7 @@ trait MathJsChain[TValue] extends StObject {
     * @param z Co-ordinates of second end-point of second line OR null if
     * the calculation is for line and plane
     */
+  def intersect(x: MathCollection, y: MathCollection): MathJsChain[MathArray] = js.native
   def intersect(x: MathCollection, y: MathCollection, z: MathCollection): MathJsChain[MathArray] = js.native
   
   /**
@@ -853,12 +863,11 @@ trait MathJsChain[TValue] extends StObject {
     */
   def kldivergence(p: MathCollection): MathJsChain[Double] = js.native
   
-  def kron(y: MathArray): MathJsChain[Matrix] = js.native
   /**
     * Calculate the kronecker product of two matrices or vectors
     * @param y Second vector
     */
-  def kron(y: Matrix): MathJsChain[Matrix] = js.native
+  def kron(y: MathCollection): MathJsChain[Matrix] = js.native
   
   def larger(y: String): MathJsChain[Boolean | MathCollection] = js.native
   /**
@@ -882,6 +891,7 @@ trait MathJsChain[TValue] extends StObject {
     */
   def largerEq(y: MathType): MathJsChain[Boolean | MathCollection] = js.native
   
+  def lcm(b: js.Array[js.Array[MathNumericType] | MathNumericType]): MathJsChain[js.Array[MathNumericType]] = js.native
   /**
     * Calculate the least common multiple for two or more values or arrays.
     * lcm is defined as: lcm(a, b) = abs(a * b) / gcd(a, b) For matrices,
@@ -889,8 +899,7 @@ trait MathJsChain[TValue] extends StObject {
     * @param b An integer number
     */
   def lcm(b: Double): MathJsChain[Double] = js.native
-  def lcm(b: BigNumber): MathJsChain[BigNumber] = js.native
-  def lcm(b: MathArray): MathJsChain[MathArray] = js.native
+  def lcm(b: Decimal): MathJsChain[Decimal] = js.native
   def lcm(b: Matrix): MathJsChain[Matrix] = js.native
   
   /**
@@ -917,7 +926,7 @@ trait MathJsChain[TValue] extends StObject {
     * Calculate the 10-base of a value. This is the same as calculating
     * log(x, 10). For matrices, the function is evaluated element wise.
     */
-  def log10(): MathJsChain[Double] = js.native
+  def log10[T /* <: Double | BigNumber | Complex | MathCollection */](): MathJsChain[T] = js.native
   
   /**
     * Calculate the logarithm of a value+1. For matrices, the function is
@@ -932,15 +941,14 @@ trait MathJsChain[TValue] extends StObject {
     * Calculate the 2-base of a value. This is the same as calculating
     * log(x, 2). For matrices, the function is evaluated element wise.
     */
-  def log2(): MathJsChain[Double] = js.native
+  def log2[T /* <: Double | BigNumber | Complex | MathCollection */](): MathJsChain[T] = js.native
   
-  def lsolve(b: MathArray): MathJsChain[Matrix] = js.native
   /**
     * Solves the linear equation system by forwards substitution. Matrix
     * must be a lower triangular matrix.
     * @param b A column vector with the b values
     */
-  def lsolve(b: Matrix): MathJsChain[Matrix] = js.native
+  def lsolve(b: MathCollection): MathJsChain[Matrix] = js.native
   
   /**
     * Calculate the Matrix LU decomposition with partial pivoting. Matrix A
@@ -949,10 +957,6 @@ trait MathJsChain[TValue] extends StObject {
     */
   def lup(): MathJsChain[LUDecomposition] = js.native
   
-  def lusolve(b: MathArray): MathJsChain[Matrix] = js.native
-  def lusolve(b: MathArray, order: Double): MathJsChain[Matrix] = js.native
-  def lusolve(b: MathArray, order: Double, threshold: Double): MathJsChain[Matrix] = js.native
-  def lusolve(b: MathArray, order: scala.Unit, threshold: Double): MathJsChain[Matrix] = js.native
   /**
     * Solves the linear system A * x = b where A is an [n x n] matrix and b
     * is a [n] column vector.
@@ -962,10 +966,19 @@ trait MathJsChain[TValue] extends StObject {
     * @param threshold Partial pivoting threshold (1 for partial pivoting),
     * see slu for details. Matrix must be a SparseMatrix.
     */
-  def lusolve(b: Matrix): MathJsChain[Matrix] = js.native
-  def lusolve(b: Matrix, order: Double): MathJsChain[Matrix] = js.native
-  def lusolve(b: Matrix, order: Double, threshold: Double): MathJsChain[Matrix] = js.native
-  def lusolve(b: Matrix, order: scala.Unit, threshold: Double): MathJsChain[Matrix] = js.native
+  def lusolve(b: MathCollection): MathJsChain[Matrix] = js.native
+  def lusolve(b: MathCollection, order: Double): MathJsChain[Matrix] = js.native
+  def lusolve(b: MathCollection, order: Double, threshold: Double): MathJsChain[Matrix] = js.native
+  def lusolve(b: MathCollection, order: scala.Unit, threshold: Double): MathJsChain[Matrix] = js.native
+  
+  /**
+    * Solves the Continuous-time Lyapunov equation AP+PA'=Q for P, where Q is a positive semidefinite
+    * matrix.
+    * https://en.wikipedia.org/wiki/Lyapunov_equation
+    * @param Q  Matrix Q
+    * @returns  Matrix P solution to the Continuous-time Lyapunov equation AP+PA'=Q
+    */
+  def lyap(Q: MathCollection): MathJsChain[MathCollection] = js.native
   
   /*************************************************************************
     * Statistics functions
@@ -985,7 +998,7 @@ trait MathJsChain[TValue] extends StObject {
     * parameters: the value of the element, the index of the element, and
     * the Matrix/array being traversed.
     */
-  def map[T /* <: Matrix | MathArray */](
+  def map[T /* <: MathCollection */](
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
   callback: js.Function3[/* value */ Any, /* index */ Any, /* matrix */ T, MathType | String]
   ): MathJsChain[T] = js.native
@@ -1082,7 +1095,7 @@ trait MathJsChain[TValue] extends StObject {
     * @param y The second value to multiply
     */
   @JSName("multiply")
-  def multiply_T[T /* <: Matrix | MathArray */](y: MathType): MathJsChain[T] = js.native
+  def multiply_T[T /* <: MathCollection */](y: MathType): MathJsChain[T] = js.native
   
   /**
     * Calculate the norm of a number, vector or matrix. The second
@@ -1395,22 +1408,30 @@ trait MathJsChain[TValue] extends StObject {
     * is evaluated element wise.
     * @param n Number of decimals Default value: 0.
     */
-  def round(): MathJsChain[MathNumericType] = js.native
-  def round(n: Double): MathJsChain[MathNumericType] = js.native
-  def round(n: BigNumber): MathJsChain[MathNumericType] = js.native
-  def round(n: MathCollection): MathJsChain[MathNumericType] = js.native
+  def round[T /* <: MathNumericType | MathCollection */](): MathJsChain[T] = js.native
+  def round[T /* <: MathNumericType | MathCollection */](n: Double): MathJsChain[T] = js.native
+  def round[T /* <: MathNumericType | MathCollection */](n: BigNumber): MathJsChain[T] = js.native
+  def round[T /* <: MathNumericType | MathCollection */](n: MathCollection): MathJsChain[T] = js.native
+  
+  /**
+    * Performs a real Schur decomposition of the real matrix A = UTU' where U is orthogonal
+    * and T is upper quasi-triangular.
+    * https://en.wikipedia.org/wiki/Schur_decomposition
+    * @returns Object containing both matrix U and T of the Schur Decomposition A=UTU'
+    */
+  def schur(): SchurDecomposition = js.native
   
   /**
     * Calculate the secant of a value, defined as sec(x) = 1/cos(x). For
     * matrices, the function is evaluated element wise.
     */
-  def sec(): MathJsChain[Double] = js.native
+  def sec[T /* <: Double | BigNumber | Complex | MathCollection */](): MathJsChain[T] = js.native
   
   /**
     * Calculate the hyperbolic secant of a value, defined as sech(x) = 1 /
     * cosh(x). For matrices, the function is evaluated element wise.
     */
-  def sech(): MathJsChain[Double] = js.native
+  def sech[T /* <: Double | BigNumber | Complex | MathCollection */](): MathJsChain[T] = js.native
   
   /*************************************************************************
     * Set functions
@@ -1458,7 +1479,7 @@ trait MathJsChain[TValue] extends StObject {
     * operation.
     * @param a A multiset
     */
-  def setMultiplicity(e: MathJsChain[Double | BigNumber | Fraction | Complex], a: MathCollection): MathJsChain[Double] = js.native
+  def setMultiplicity(e: MathJsChain[MathNumericType], a: MathCollection): MathJsChain[Double] = js.native
   
   /**
     * Create the powerset of a (multi)set. (The powerset contains very
@@ -1496,7 +1517,7 @@ trait MathJsChain[TValue] extends StObject {
     * @param x The number for which to determine the sign
     * @returns The sign of x
     */
-  def sign(): MathJsChain[Double] = js.native
+  def sign[T /* <: MathType */](): MathJsChain[T] = js.native
   
   /**
     * Simplify an expression tree.
@@ -1530,14 +1551,14 @@ trait MathJsChain[TValue] extends StObject {
     * Calculate the sine of a value. For matrices, the function is
     * evaluated element wise.
     */
-  def sin(): MathJsChain[Double] = js.native
+  def sin[T /* <: Double | BigNumber | Complex | MathCollection */](): MathJsChain[T] = js.native
   
   /**
     * Calculate the hyperbolic sine of a value, defined as sinh(x) = 1/2 *
     * (exp(x) - exp(-x)). For matrices, the function is evaluated element
     * wise.
     */
-  def sinh(): MathJsChain[Double] = js.native
+  def sinh[T /* <: Double | BigNumber | Complex | MathCollection */](): MathJsChain[T] = js.native
   
   /**
     * Calculate the size of a matrix or scalar.
@@ -1583,7 +1604,7 @@ trait MathJsChain[TValue] extends StObject {
     */
   def smallerEq(y: MathType): MathJsChain[Boolean | MathCollection] = js.native
   
-  def sort[T /* <: Matrix | MathArray */](// eslint-disable-next-line @typescript-eslint/no-explicit-any
+  def sort[T /* <: MathCollection */](// eslint-disable-next-line @typescript-eslint/no-explicit-any
   compare: asc | desc | natural): MathJsChain[T] = js.native
   /**
     * Sort the items in a matrix
@@ -1591,7 +1612,7 @@ trait MathJsChain[TValue] extends StObject {
     * is called as compare(a, b), and must return 1 when a > b, -1 when a <
     * b, and 0 when a == b. Default value: ‘asc’
     */
-  def sort[T /* <: Matrix | MathArray */](
+  def sort[T /* <: MathCollection */](
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
   compare: js.Function2[/* a */ Any, /* b */ Any, Double]
   ): MathJsChain[T] = js.native
@@ -1617,7 +1638,7 @@ trait MathJsChain[TValue] extends StObject {
     * Calculate the square root of a value. For matrices, the function is
     * evaluated element wise.
     */
-  def sqrt(): MathJsChain[Double] = js.native
+  def sqrt[T /* <: Double | BigNumber | Complex | MathCollection | Unit */](): MathJsChain[T] = js.native
   
   /**
     * Calculate the principal square root of a square matrix. The principal
@@ -1629,7 +1650,7 @@ trait MathJsChain[TValue] extends StObject {
     * Compute the square of a value, x * x. For matrices, the function is
     * evaluated element wise.
     */
-  def square(): MathJsChain[Double] = js.native
+  def square[T /* <: MathType */](): MathJsChain[T] = js.native
   
   /**
     * Squeeze a matrix, remove inner and outer singleton dimensions from a
@@ -1735,7 +1756,6 @@ trait MathJsChain[TValue] extends StObject {
   def subtract(y: Decimal): MathJsChain[Decimal] = js.native
   def subtract(y: Complex): MathJsChain[Complex] = js.native
   def subtract(y: Fraction): MathJsChain[Fraction] = js.native
-  def subtract(y: MathType): MathJsChain[MathType] = js.native
   def subtract(y: Matrix): MathJsChain[Matrix] = js.native
   def subtract(y: Unit): MathJsChain[Unit] = js.native
   
@@ -1750,14 +1770,14 @@ trait MathJsChain[TValue] extends StObject {
     * Calculate the tangent of a value. tan(x) is equal to sin(x) / cos(x).
     * For matrices, the function is evaluated element wise.
     */
-  def tan(): MathJsChain[Double] = js.native
+  def tan[T /* <: Double | BigNumber | Complex | MathCollection */](): MathJsChain[T] = js.native
   
   /**
     * Calculate the hyperbolic tangent of a value, defined as tanh(x) =
     * (exp(2 * x) - 1) / (exp(2 * x) + 1). For matrices, the function is
     * evaluated element wise.
     */
-  def tanh(): MathJsChain[Double] = js.native
+  def tanh[T /* <: Double | BigNumber | Complex | MathCollection */](): MathJsChain[T] = js.native
   
   def to(unit: String): MathJsChain[Unit | MathCollection] = js.native
   /*************************************************************************
@@ -1795,14 +1815,14 @@ trait MathJsChain[TValue] extends StObject {
     * strings will be converted to a number. For complex numbers, both real
     * and complex value are inverted.
     */
-  def unaryMinus(): MathJsChain[Double] = js.native
+  def unaryMinus[T /* <: MathType */](): MathJsChain[T] = js.native
   
   /**
     * Unary plus operation. Boolean values and strings will be converted to
     * a number, numeric values will be returned as is. For matrices, the
     * function is evaluated element wise.
     */
-  def unaryPlus(): MathJsChain[Double] = js.native
+  def unaryPlus[T /* <: String | MathType */](): MathJsChain[T] = js.native
   
   def unequal(y: String): MathJsChain[Boolean | MathCollection] = js.native
   /**
@@ -1827,13 +1847,12 @@ trait MathJsChain[TValue] extends StObject {
   def unit(): MathJsChain[Unit] = js.native
   def unit(unit: String): MathJsChain[Unit] = js.native
   
-  def usolve(b: MathArray): MathJsChain[Matrix] = js.native
   /**
     * Solves the linear equation system by backward substitution. Matrix
     * must be an upper triangular matrix. U * x = b
     * @param b A column vector with the b values
     */
-  def usolve(b: Matrix): MathJsChain[Matrix] = js.native
+  def usolve(b: MathCollection): MathJsChain[Matrix] = js.native
   
   /**
     * Compute the variance of a matrix or a list with values. In case of a

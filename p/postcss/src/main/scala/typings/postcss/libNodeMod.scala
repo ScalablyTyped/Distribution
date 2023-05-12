@@ -5,22 +5,29 @@ import typings.postcss.anon.PickWarningOptionswordindEndIndex
 import typings.postcss.libWarningMod.WarningOptions
 import typings.postcss.mod.Stringifier
 import typings.postcss.mod.Syntax
+import typings.std.Document
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libNodeMod {
   
-  /* note: abstract class */ @JSImport("postcss/lib/node", JSImport.Default)
+  // eslint-disable-next-line @typescript-eslint/no-shadow
+  @JSImport("postcss/lib/node", JSImport.Namespace)
   @js.native
-  /**
-    * @param defaults Value for node properties.
-    */
-  open class default ()
+  open class ^ () extends Node
+  
+  // eslint-disable-next-line @typescript-eslint/no-shadow
+  @JSImport("postcss/lib/node", JSImport.Default)
+  @js.native
+  open class default () extends Node
+  
+  // eslint-disable-next-line @typescript-eslint/no-shadow
+  @JSImport("postcss/lib/node", "Node")
+  @js.native
+  open class Node ()
     extends StObject
-       with Node {
-    def this(defaults: js.Object) = this()
-  }
+       with Node_
   
   /* Rewritten from type alias, can be one of: 
     - typings.postcss.libAtRuleMod.default
@@ -70,11 +77,90 @@ object libNodeMod {
     }
   }
   
+  trait NodeErrorOptions extends StObject {
+    
+    /**
+      * An ending index inside a node's string that should be highlighted as
+      * source of error.
+      */
+    var endIndex: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * An index inside a node's string that should be highlighted as source
+      * of error.
+      */
+    var index: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * Plugin name that created this error. PostCSS will set it automatically.
+      */
+    var plugin: js.UndefOr[String] = js.undefined
+    
+    /**
+      * A word inside a node's string, that should be highlighted as source
+      * of error.
+      */
+    var word: js.UndefOr[String] = js.undefined
+  }
+  object NodeErrorOptions {
+    
+    inline def apply(): NodeErrorOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[NodeErrorOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeErrorOptions] (val x: Self) extends AnyVal {
+      
+      inline def setEndIndex(value: Double): Self = StObject.set(x, "endIndex", value.asInstanceOf[js.Any])
+      
+      inline def setEndIndexUndefined: Self = StObject.set(x, "endIndex", js.undefined)
+      
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      
+      inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+      
+      inline def setPlugin(value: String): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
+      
+      inline def setPluginUndefined: Self = StObject.set(x, "plugin", js.undefined)
+      
+      inline def setWord(value: String): Self = StObject.set(x, "word", value.asInstanceOf[js.Any])
+      
+      inline def setWordUndefined: Self = StObject.set(x, "word", js.undefined)
+    }
+  }
+  
+  trait NodeProps extends StObject {
+    
+    var source: js.UndefOr[Source] = js.undefined
+  }
+  object NodeProps {
+    
+    inline def apply(): NodeProps = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[NodeProps]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeProps] (val x: Self) extends AnyVal {
+      
+      inline def setSource(value: Source): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      
+      inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    }
+  }
+  
+  /**
+    * All node classes inherit the following common methods.
+    *
+    * You should not extend this classes to create AST for selector or value
+    * parser.
+    */
   @js.native
-  trait Node extends StObject {
+  trait Node_ extends StObject {
     
     def after(newNode: String): this.type = js.native
-    def after(newNode: js.Array[Node]): this.type = js.native
+    def after(newNode: js.Array[typings.std.Node]): this.type = js.native
     def after(newNode: ChildProps): this.type = js.native
     /**
       * Insert new node after current node to current node’s parent.
@@ -88,7 +174,7 @@ object libNodeMod {
       * @param newNode New node.
       * @return This node for methods chain.
       */
-    def after(newNode: Node): this.type = js.native
+    def after(newNode: typings.std.Node): this.type = js.native
     
     /**
       * Assigns properties to the current node.
@@ -103,7 +189,7 @@ object libNodeMod {
     def assign(overrides: js.Object): this.type = js.native
     
     def before(newNode: String): this.type = js.native
-    def before(newNode: js.Array[Node]): this.type = js.native
+    def before(newNode: js.Array[typings.std.Node]): this.type = js.native
     def before(newNode: ChildProps): this.type = js.native
     /**
       * Insert new node before current node to current node’s parent.
@@ -117,7 +203,7 @@ object libNodeMod {
       * @param newNode New node.
       * @return This node for methods chain.
       */
-    def before(newNode: Node): this.type = js.native
+    def before(newNode: typings.std.Node): this.type = js.native
     
     /**
       * Clear the code style properties for the node and its children.
@@ -214,9 +300,7 @@ object libNodeMod {
       * root.nodes[0].parent === root
       * ```
       */
-    var parent: js.UndefOr[
-        typings.postcss.libDocumentMod.default | typings.postcss.libContainerMod.default[ChildNode]
-      ] = js.native
+    var parent: js.UndefOr[Document | typings.postcss.libContainerMod.default[typings.std.ChildNode]] = js.native
     
     /**
       * Get the position for a word or an index inside the node.
@@ -434,79 +518,6 @@ object libNodeMod {
       */
     def warn(result: typings.postcss.libResultMod.default, text: String): typings.postcss.libWarningMod.default = js.native
     def warn(result: typings.postcss.libResultMod.default, text: String, opts: WarningOptions): typings.postcss.libWarningMod.default = js.native
-  }
-  
-  trait NodeErrorOptions extends StObject {
-    
-    /**
-      * An ending index inside a node's string that should be highlighted as
-      * source of error.
-      */
-    var endIndex: js.UndefOr[Double] = js.undefined
-    
-    /**
-      * An index inside a node's string that should be highlighted as source
-      * of error.
-      */
-    var index: js.UndefOr[Double] = js.undefined
-    
-    /**
-      * Plugin name that created this error. PostCSS will set it automatically.
-      */
-    var plugin: js.UndefOr[String] = js.undefined
-    
-    /**
-      * A word inside a node's string, that should be highlighted as source
-      * of error.
-      */
-    var word: js.UndefOr[String] = js.undefined
-  }
-  object NodeErrorOptions {
-    
-    inline def apply(): NodeErrorOptions = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[NodeErrorOptions]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: NodeErrorOptions] (val x: Self) extends AnyVal {
-      
-      inline def setEndIndex(value: Double): Self = StObject.set(x, "endIndex", value.asInstanceOf[js.Any])
-      
-      inline def setEndIndexUndefined: Self = StObject.set(x, "endIndex", js.undefined)
-      
-      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
-      
-      inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
-      
-      inline def setPlugin(value: String): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
-      
-      inline def setPluginUndefined: Self = StObject.set(x, "plugin", js.undefined)
-      
-      inline def setWord(value: String): Self = StObject.set(x, "word", value.asInstanceOf[js.Any])
-      
-      inline def setWordUndefined: Self = StObject.set(x, "word", js.undefined)
-    }
-  }
-  
-  trait NodeProps extends StObject {
-    
-    var source: js.UndefOr[Source] = js.undefined
-  }
-  object NodeProps {
-    
-    inline def apply(): NodeProps = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[NodeProps]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: NodeProps] (val x: Self) extends AnyVal {
-      
-      inline def setSource(value: Source): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
-      
-      inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
-    }
   }
   
   trait Position extends StObject {

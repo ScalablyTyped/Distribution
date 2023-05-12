@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@react-native-windows/fs" : "0.70.0"
+      "@react-native-windows/fs" : "0.71.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@react-native-windows/fs" : "0.70.0"
+      "@react-native-windows/fs" : "0.71.2"
     }
   ],
   "compile-devDependencies" : [

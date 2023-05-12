@@ -1,7 +1,11 @@
 package typings.rcPicker
 
 import typings.rcPicker.esInterfaceMod.DisabledTimes
+import typings.rcPicker.esInterfaceMod.IntRange
 import typings.rcPicker.esInterfaceMod.PanelSharedProps
+import typings.rcPicker.rcPickerInts.`1`
+import typings.rcPicker.rcPickerInts.`23`
+import typings.rcPicker.rcPickerInts.`59`
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -34,11 +38,11 @@ object esPanelsTimePanelMod {
     
     var hideDisabledOptions: js.UndefOr[Boolean] = js.undefined
     
-    var hourStep: js.UndefOr[Double] = js.undefined
+    var hourStep: js.UndefOr[IntRange[`1`, `23`]] = js.undefined
     
-    var minuteStep: js.UndefOr[Double] = js.undefined
+    var minuteStep: js.UndefOr[IntRange[`1`, `59`]] = js.undefined
     
-    var secondStep: js.UndefOr[Double] = js.undefined
+    var secondStep: js.UndefOr[IntRange[`1`, `59`]] = js.undefined
     
     var showHour: js.UndefOr[Boolean] = js.undefined
     
@@ -88,15 +92,15 @@ object esPanelsTimePanelMod {
       
       inline def setHideDisabledOptionsUndefined: Self = StObject.set(x, "hideDisabledOptions", js.undefined)
       
-      inline def setHourStep(value: Double): Self = StObject.set(x, "hourStep", value.asInstanceOf[js.Any])
+      inline def setHourStep(value: IntRange[`1`, `23`]): Self = StObject.set(x, "hourStep", value.asInstanceOf[js.Any])
       
       inline def setHourStepUndefined: Self = StObject.set(x, "hourStep", js.undefined)
       
-      inline def setMinuteStep(value: Double): Self = StObject.set(x, "minuteStep", value.asInstanceOf[js.Any])
+      inline def setMinuteStep(value: IntRange[`1`, `59`]): Self = StObject.set(x, "minuteStep", value.asInstanceOf[js.Any])
       
       inline def setMinuteStepUndefined: Self = StObject.set(x, "minuteStep", js.undefined)
       
-      inline def setSecondStep(value: Double): Self = StObject.set(x, "secondStep", value.asInstanceOf[js.Any])
+      inline def setSecondStep(value: IntRange[`1`, `59`]): Self = StObject.set(x, "secondStep", value.asInstanceOf[js.Any])
       
       inline def setSecondStepUndefined: Self = StObject.set(x, "secondStep", js.undefined)
       

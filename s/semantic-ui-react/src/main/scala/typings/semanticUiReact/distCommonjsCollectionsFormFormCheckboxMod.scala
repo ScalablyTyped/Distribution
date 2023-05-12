@@ -40,6 +40,9 @@ import typings.react.mod.UIEvent
 import typings.react.mod.UIEventHandler
 import typings.react.mod.WheelEvent
 import typings.react.mod.WheelEventHandler
+import typings.react.reactStrings._empty
+import typings.react.reactStrings.`use-credentials`
+import typings.react.reactStrings.anonymous
 import typings.react.reactStrings.decimal
 import typings.react.reactStrings.done
 import typings.react.reactStrings.email
@@ -67,6 +70,7 @@ import typings.semanticUiReact.semanticUiReactStrings.checkbox
 import typings.semanticUiReact.semanticUiReactStrings.radio
 import typings.std.Element
 import typings.std.Event
+import typings.std.FormData
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -95,9 +99,9 @@ object distCommonjsCollectionsFormFormCheckboxMod extends Shortcut {
   - scala.AnyRef because Inheritance from two classes. Inlined 
   - typings.react.mod.DOMAttributes because var conflicts: children, onChange, onClick, onMouseDown, onMouseUp. Inlined onKeyDown, onPlaying, onMouseOver, onMouseMove, onPointerCancel, onDragStart, onMouseEnter, onDragEnter, onPointerOver, onDragLeave, onMouseOut, onVolumeChange, onSelect, onAnimationStart, onLoadedData, onTouchStart, onInput, onCompositionStart, onScroll, onDragEnd, onLoadStart, dangerouslySetInnerHTML, onFocus, onContextMenu, onError, onTouchMove, onTouchEnd, onDrag, onEnded, onAnimationIteration, onWaiting, onCompositionEnd, onDoubleClick, onEmptied, onStalled, onKeyPress, onPointerLeave, onAuxClick, onWheel, onPointerUp, onProgress, onBlur, onPointerMove, onPause, onDrop, onReset, onPointerDown, onDragOver, onTimeUpdate, onDurationChange, onSubmit, onSuspend, onTransitionEnd, onCanPlay, onDragExit, onEncrypted, onPlay, onPointerOut, onCopy, onAbort, onInvalid, onCompositionUpdate, onTouchCancel, onResize, onCanPlayThrough, onLoad, onLoadedMetadata, onSeeked, onPointerEnter, onBeforeInput, onAnimationEnd, onCut, onSeeking, onPaste, onMouseLeave, onRateChange, onKeyUp
   - js.Any because Inheritance from two classes. Inlined 
-  - typings.react.mod.HTMLAttributes because var conflicts: children, className, defaultChecked, id, onChange, onClick, onMouseDown, onMouseUp, tabIndex. Inlined contextMenu, vocab, typeof, inputMode, is, about, accessKey, nonce, itemScope, style, security, defaultValue, autoSave, prefix, resource, suppressHydrationWarning, itemType, spellCheck, slot, autoCapitalize, placeholder, radioGroup, lang, color, suppressContentEditableWarning, translate, itemID, dir, draggable, contentEditable, itemRef, hidden, inlist, property, unselectable, role, datatype, itemProp, title, autoCorrect, results
+  - typings.react.mod.HTMLAttributes because var conflicts: children, className, content, defaultChecked, id, onChange, onClick, onMouseDown, onMouseUp, tabIndex. Inlined contextMenu, vocab, typeof, inputMode, is, about, accessKey, nonce, itemScope, style, security, defaultValue, autoSave, prefix, resource, suppressHydrationWarning, itemType, spellCheck, slot, autoCapitalize, rev, placeholder, rel, radioGroup, lang, color, suppressContentEditableWarning, translate, itemID, dir, draggable, contentEditable, itemRef, hidden, inlist, property, autoFocus, unselectable, role, datatype, itemProp, title, autoCorrect, results
   - js.Object because Inheritance from two classes. Inlined hasOwnProperty, propertyIsEnumerable, valueOf, toLocaleString, isPrototypeOf
-  - typings.react.mod.InputHTMLAttributes because Inheritance from two classes. Inlined formAction, alt, src, max, multiple, height, enterKeyHint, min, capture, size, maxLength, formEncType, pattern, form, accept, step, minLength, formMethod, formTarget, autoFocus, crossOrigin, onChange_InputHTMLAttributes, formNoValidate, list, autoComplete
+  - typings.react.mod.InputHTMLAttributes because Inheritance from two classes. Inlined formAction, alt, src, max, multiple, height, enterKeyHint, min, capture, size, maxLength, formEncType, pattern, form, accept, step, minLength, formMethod, formTarget, crossOrigin, onChange_InputHTMLAttributes, formNoValidate, list, autoComplete
   - typings.semanticUiReact.distCommonjsModulesCheckboxCheckboxMod.StrictCheckboxProps because Inheritance from two classes. Inlined checked, defaultChecked, defaultIndeterminate, fitted, indeterminate, name, onChange, onClick, onMouseDown, onMouseUp, radio, readOnly, slider, tabIndex, toggle, value */ trait StrictFormCheckboxProps
     extends StObject
        with StrictFormFieldProps
@@ -135,7 +139,7 @@ object distCommonjsCollectionsFormFormCheckboxMod extends Shortcut {
     
     var contextMenu: js.UndefOr[String] = js.undefined
     
-    var crossOrigin: js.UndefOr[String] = js.undefined
+    var crossOrigin: js.UndefOr[anonymous | `use-credentials` | _empty] = js.undefined
     
     var dangerouslySetInnerHTML: js.UndefOr[Html] = js.undefined
     
@@ -160,7 +164,7 @@ object distCommonjsCollectionsFormFormCheckboxMod extends Shortcut {
     
     var form: js.UndefOr[String] = js.undefined
     
-    var formAction: js.UndefOr[String] = js.undefined
+    var formAction: js.UndefOr[String | (js.Function1[/* formData */ FormData, Unit])] = js.undefined
     
     var formEncType: js.UndefOr[String] = js.undefined
     
@@ -460,9 +464,13 @@ object distCommonjsCollectionsFormFormCheckboxMod extends Shortcut {
     /** A checkbox can be read-only and unable to change states. */
     var readOnly: js.UndefOr[Boolean] = js.undefined
     
+    var rel: js.UndefOr[String] = js.undefined
+    
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
+    
+    var rev: js.UndefOr[String] = js.undefined
     
     // <command>, <menuitem>
     // WAI-ARIA
@@ -578,7 +586,7 @@ object distCommonjsCollectionsFormFormCheckboxMod extends Shortcut {
       
       inline def setContextMenuUndefined: Self = StObject.set(x, "contextMenu", js.undefined)
       
-      inline def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+      inline def setCrossOrigin(value: anonymous | `use-credentials` | _empty): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
       
       inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
       
@@ -622,7 +630,9 @@ object distCommonjsCollectionsFormFormCheckboxMod extends Shortcut {
       
       inline def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
       
-      inline def setFormAction(value: String): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+      inline def setFormAction(value: String | (js.Function1[/* formData */ FormData, Unit])): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+      
+      inline def setFormActionFunction1(value: /* formData */ FormData => Unit): Self = StObject.set(x, "formAction", js.Any.fromFunction1(value))
       
       inline def setFormActionUndefined: Self = StObject.set(x, "formAction", js.undefined)
       
@@ -1084,6 +1094,10 @@ object distCommonjsCollectionsFormFormCheckboxMod extends Shortcut {
       
       inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
       
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      
+      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+      
       inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
       inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
@@ -1091,6 +1105,10 @@ object distCommonjsCollectionsFormFormCheckboxMod extends Shortcut {
       inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+      
+      inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+      
+      inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
       
       inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       

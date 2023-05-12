@@ -89,6 +89,9 @@ trait SpecStep extends StObject {
   /** Shut down the client and close it network connection. */
   var shutdown: js.UndefOr[`true`] = js.undefined
   
+  /** Trigger a GC event with given cache threshold in bytes. */
+  var triggerLruGC: js.UndefOr[Double] = js.undefined
+  
   /** Perform a user initiated delete */
   var userDelete: js.UndefOr[SpecUserDelete] = js.undefined
   
@@ -225,6 +228,10 @@ object SpecStep {
     inline def setShutdown(value: `true`): Self = StObject.set(x, "shutdown", value.asInstanceOf[js.Any])
     
     inline def setShutdownUndefined: Self = StObject.set(x, "shutdown", js.undefined)
+    
+    inline def setTriggerLruGC(value: Double): Self = StObject.set(x, "triggerLruGC", value.asInstanceOf[js.Any])
+    
+    inline def setTriggerLruGCUndefined: Self = StObject.set(x, "triggerLruGC", js.undefined)
     
     inline def setUserDelete(value: SpecUserDelete): Self = StObject.set(x, "userDelete", value.asInstanceOf[js.Any])
     

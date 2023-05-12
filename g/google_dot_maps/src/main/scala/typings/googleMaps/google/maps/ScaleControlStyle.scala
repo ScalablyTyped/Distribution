@@ -6,9 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @js.native
 sealed trait ScaleControlStyle extends StObject
-/**
-  * Identifiers for scale control ids.
-  */
 @JSGlobal("google.maps.ScaleControlStyle")
 @js.native
 object ScaleControlStyle extends StObject {

@@ -12,7 +12,7 @@ trait CancelImageCreationResponse extends StObject {
   var clientToken: js.UndefOr[ClientToken] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the image whose creation has been cancelled.
+    * The ARN of the image whose creation this request canceled.
     */
   var imageBuildVersionArn: js.UndefOr[ImageBuildVersionArn] = js.undefined
   

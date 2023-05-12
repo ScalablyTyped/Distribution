@@ -1,11 +1,5 @@
 package typings.arcgisJsApi.esri
 
-import typings.arcgisJsApi.arcgisJsApiStrings.`junction-edge-from-connectivity`
-import typings.arcgisJsApi.arcgisJsApiStrings.`junction-edge-to-connectivity`
-import typings.arcgisJsApi.arcgisJsApiStrings.`junction-midspan-connectivity`
-import typings.arcgisJsApi.arcgisJsApiStrings.attachment
-import typings.arcgisJsApi.arcgisJsApiStrings.connectivity
-import typings.arcgisJsApi.arcgisJsApiStrings.containment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +15,7 @@ trait QueryAssociationsParameters
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-QueryAssociationsParameters.html#elements)
     */
-  var elements: js.Array[Any] = js.native
+  var elements: js.Array[NetworkElement] = js.native
   
   /**
     * The geodatabase version to execute the function against.
@@ -51,5 +45,5 @@ trait QueryAssociationsParameters
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networks-support-QueryAssociationsParameters.html#types)
     */
-  var types: connectivity | attachment | containment | `junction-edge-from-connectivity` | `junction-midspan-connectivity` | js.Array[`junction-edge-to-connectivity`] = js.native
+  var types: js.Array[String] = js.native
 }

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "csv" : "6.2.0"
+      "csv" : "6.3.0"
     }
   ],
   "test-dependencies" : [
     {
-      "csv" : "6.2.0"
+      "csv" : "6.3.0"
     }
   ],
   "compile-devDependencies" : [

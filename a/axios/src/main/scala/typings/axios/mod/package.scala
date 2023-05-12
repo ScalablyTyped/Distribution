@@ -1,19 +1,39 @@
 package typings.axios.mod
 
-import typings.axios.anon.Setcookie
-import typings.std.Partial
+import org.scalablytyped.runtime.StringDictionary
+import typings.axios.mod.^
 import typings.std.Record
-import typings.std.RegExpExecArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type AxiosAdapter = js.Function1[/* config */ AxiosRequestConfig[Any], js.Promise[AxiosResponse[Any, Any]]]
+inline def all[T](values: js.Array[T | js.Promise[T]]): js.Promise[js.Array[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(values.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[T]]]
 
-type AxiosHeaderGetter = js.Function1[
-js.UndefOr[AxiosHeaderMatcher | js.RegExp], 
-AxiosHeaderValue | Null | RegExpExecArray]
+inline def formToJSON(form: GenericFormData): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("formToJSON")(form.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+inline def formToJSON(form: GenericHTMLFormElement): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("formToJSON")(form.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+
+inline def isAxiosError[T, D](payload: Any): /* is axios.axios.AxiosError<T, D> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAxiosError")(payload.asInstanceOf[js.Any]).asInstanceOf[/* is axios.axios.AxiosError<T, D> */ Boolean]
+
+inline def isCancel(value: Any): /* is axios.axios.Cancel */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCancel")(value.asInstanceOf[js.Any]).asInstanceOf[/* is axios.axios.Cancel */ Boolean]
+
+inline def spread[T, R](callback: js.Function1[/* repeated */ T, R]): js.Function1[/* array */ js.Array[T], R] = ^.asInstanceOf[js.Dynamic].applyDynamic("spread")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* array */ js.Array[T], R]]
+
+inline def toFormData(sourceObj: js.Object): GenericFormData = ^.asInstanceOf[js.Dynamic].applyDynamic("toFormData")(sourceObj.asInstanceOf[js.Any]).asInstanceOf[GenericFormData]
+inline def toFormData(sourceObj: js.Object, targetFormData: Unit, options: FormSerializerOptions): GenericFormData = (^.asInstanceOf[js.Dynamic].applyDynamic("toFormData")(sourceObj.asInstanceOf[js.Any], targetFormData.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[GenericFormData]
+inline def toFormData(sourceObj: js.Object, targetFormData: GenericFormData): GenericFormData = (^.asInstanceOf[js.Dynamic].applyDynamic("toFormData")(sourceObj.asInstanceOf[js.Any], targetFormData.asInstanceOf[js.Any])).asInstanceOf[GenericFormData]
+inline def toFormData(sourceObj: js.Object, targetFormData: GenericFormData, options: FormSerializerOptions): GenericFormData = (^.asInstanceOf[js.Dynamic].applyDynamic("toFormData")(sourceObj.asInstanceOf[js.Any], targetFormData.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[GenericFormData]
+
+type AxiosAdapter = js.Function1[/* config */ InternalAxiosRequestConfig[Any], js.Promise[AxiosResponse[Any, Any]]]
+
+type AxiosAdapterConfig = AxiosAdapter | AxiosAdapterName
+
+/* Rewritten from type alias, can be one of: 
+  - typings.axios.axiosStrings.xhr
+  - typings.axios.axiosStrings.http
+  - java.lang.String
+*/
+type AxiosAdapterName = _AxiosAdapterName | String
 
 type AxiosHeaderMatcher = js.ThisFunction3[
 /* this */ AxiosHeaders, 
@@ -22,39 +42,41 @@ type AxiosHeaderMatcher = js.ThisFunction3[
 /* headers */ RawAxiosHeaders, 
 Boolean]
 
-type AxiosHeaderSetter = js.Function2[
-/* value */ AxiosHeaderValue, 
-/* rewrite */ js.UndefOr[Boolean | AxiosHeaderMatcher], 
-AxiosHeaders]
-
-type AxiosHeaderTester = js.Function1[/* matcher */ js.UndefOr[AxiosHeaderMatcher], Boolean]
-
 type AxiosHeaderValue = AxiosHeaders | String | js.Array[String] | Double | Boolean | Null
 
 type AxiosPromise[T] = js.Promise[AxiosResponse[T, Any]]
 
-type AxiosRequestHeaders = (Partial[RawAxiosHeaders & MethodsHeaders & CommonHeaders]) & AxiosHeaders
-
 type AxiosRequestTransformer = js.ThisFunction2[
-/* this */ AxiosRequestConfig[Any], 
+/* this */ InternalAxiosRequestConfig[Any], 
 /* data */ Any, 
 /* headers */ AxiosRequestHeaders, 
 Any]
 
-type AxiosResponseHeaders = RawAxiosResponseHeaders & AxiosHeaders
-
 type AxiosResponseTransformer = js.ThisFunction3[
-/* this */ AxiosRequestConfig[Any], 
+/* this */ InternalAxiosRequestConfig[Any], 
 /* data */ Any, 
 /* headers */ AxiosResponseHeaders, 
 /* status */ js.UndefOr[Double], 
 Any]
+
+type BrowserProgressEvent = Any
 
 type Canceler = js.Function3[
 /* message */ js.UndefOr[String], 
 /* config */ js.UndefOr[AxiosRequestConfig[Any]], 
 /* request */ js.UndefOr[Any], 
 Unit]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.axios.mod.AxiosHeaderValue
+  - typings.axios.axiosStrings.textSlashhtml
+  - typings.axios.axiosStrings.textSlashplain
+  - typings.axios.axiosStrings.`multipartSlashform-data`
+  - typings.axios.axiosStrings.applicationSlashjson
+  - typings.axios.axiosStrings.`applicationSlashx-www-form-urlencoded`
+  - typings.axios.axiosStrings.`applicationSlashoctet-stream`
+*/
+type ContentType = _ContentType | AxiosHeaderValue
 
 type CustomParamsSerializer = js.Function2[
 /* params */ Record[String, Any], 
@@ -71,11 +93,9 @@ type Milliseconds = Double
 
 type ParamEncoder = js.Function2[/* value */ Any, /* defaultEncoder */ js.Function1[/* value */ Any, Any], Any]
 
-type RawAxiosHeaders = Record[String, AxiosHeaderValue]
+type RawAxiosHeaders = StringDictionary[AxiosHeaderValue]
 
-type RawAxiosRequestHeaders = Partial[RawAxiosHeaders & MethodsHeaders & CommonHeaders]
-
-type RawAxiosResponseHeaders = Partial[(Record[String, String]) & Setcookie]
+type RawAxiosRequestConfig[D] = AxiosRequestConfig[D]
 
 type SerializerVisitor = js.ThisFunction4[
 /* this */ GenericFormData, 

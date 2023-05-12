@@ -8,21 +8,11 @@ import typings.awsSdkClientSsoOidc.anon.ExceptionOptionTypeInvali
 import typings.awsSdkClientSsoOidc.anon.ExceptionOptionTypeSlowDo
 import typings.awsSdkClientSsoOidc.anon.ExceptionOptionTypeUnauth
 import typings.awsSdkClientSsoOidc.anon.ExceptionOptionTypeUnsupp
-import typings.awsSdkClientSsoOidc.distTypesModelsModels0Mod.CreateTokenRequest
-import typings.awsSdkClientSsoOidc.distTypesModelsModels0Mod.CreateTokenResponse
-import typings.awsSdkClientSsoOidc.distTypesModelsModels0Mod.RegisterClientRequest
-import typings.awsSdkClientSsoOidc.distTypesModelsModels0Mod.RegisterClientResponse
-import typings.awsSdkClientSsoOidc.distTypesModelsModels0Mod.StartDeviceAuthorizationRequest
-import typings.awsSdkClientSsoOidc.distTypesModelsModels0Mod.StartDeviceAuthorizationResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object distTypesModelsMod {
-  
-  @JSImport("@aws-sdk/client-sso-oidc/dist-types/models", JSImport.Namespace)
-  @js.native
-  val ^ : js.Any = js.native
   
   @JSImport("@aws-sdk/client-sso-oidc/dist-types/models", "AccessDeniedException")
   @js.native
@@ -43,10 +33,6 @@ object distTypesModelsMod {
       */
     def this(opts: ExceptionOptionTypeAuthor) = this()
   }
-  
-  inline def CreateTokenRequestFilterSensitiveLog(obj: CreateTokenRequest): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateTokenRequestFilterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[Any]
-  
-  inline def CreateTokenResponseFilterSensitiveLog(obj: CreateTokenResponse): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateTokenResponseFilterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   @JSImport("@aws-sdk/client-sso-oidc/dist-types/models", "ExpiredTokenException")
   @js.native
@@ -118,10 +104,6 @@ object distTypesModelsMod {
     def this(opts: ExceptionOptionTypeInvali) = this()
   }
   
-  inline def RegisterClientRequestFilterSensitiveLog(obj: RegisterClientRequest): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("RegisterClientRequestFilterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[Any]
-  
-  inline def RegisterClientResponseFilterSensitiveLog(obj: RegisterClientResponse): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("RegisterClientResponseFilterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[Any]
-  
   @JSImport("@aws-sdk/client-sso-oidc/dist-types/models", "SlowDownException")
   @js.native
   open class SlowDownException protected ()
@@ -131,10 +113,6 @@ object distTypesModelsMod {
       */
     def this(opts: ExceptionOptionTypeSlowDo) = this()
   }
-  
-  inline def StartDeviceAuthorizationRequestFilterSensitiveLog(obj: StartDeviceAuthorizationRequest): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("StartDeviceAuthorizationRequestFilterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[Any]
-  
-  inline def StartDeviceAuthorizationResponseFilterSensitiveLog(obj: StartDeviceAuthorizationResponse): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("StartDeviceAuthorizationResponseFilterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   @JSImport("@aws-sdk/client-sso-oidc/dist-types/models", "UnauthorizedClientException")
   @js.native

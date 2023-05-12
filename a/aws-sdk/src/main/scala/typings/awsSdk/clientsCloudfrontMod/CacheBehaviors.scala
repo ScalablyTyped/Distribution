@@ -12,7 +12,7 @@ trait CacheBehaviors extends StObject {
   var Items: js.UndefOr[CacheBehaviorList] = js.undefined
   
   /**
-    * The number of cache behaviors for this distribution. 
+    * The number of cache behaviors for this distribution.
     */
   var Quantity: integer
 }

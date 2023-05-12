@@ -1,7 +1,7 @@
 
 # Scala.js typings for tesseract_dot_js
 
-Typings are for version 3.0.3
+Typings are for version 4.0.5
 
 ## Library description:
 Pure Javascript Multilingual OCR

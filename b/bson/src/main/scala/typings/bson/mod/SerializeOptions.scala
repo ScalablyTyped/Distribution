@@ -6,17 +6,30 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SerializeOptions extends StObject {
   
-  /** the serializer will check if keys are valid. */
+  /**
+    * the serializer will check if keys are valid.
+    * @defaultValue `false`
+    */
   var checkKeys: js.UndefOr[Boolean] = js.undefined
   
-  /** serialize will not emit undefined fields **(default:true)** */
+  /**
+    * serialize will not emit undefined fields
+    * note that the driver sets this to `false`
+    * @defaultValue `true`
+    */
   var ignoreUndefined: js.UndefOr[Boolean] = js.undefined
   
   /* Excluded from this release type: minInternalBufferSize */
-  /** the index in the buffer where we wish to start serializing into */
+  /**
+    * the index in the buffer where we wish to start serializing into
+    * @defaultValue `0`
+    */
   var index: js.UndefOr[scala.Double] = js.undefined
   
-  /** serialize the javascript functions **(default:false)**. */
+  /**
+    * serialize the javascript functions
+    * @defaultValue `false`
+    */
   var serializeFunctions: js.UndefOr[Boolean] = js.undefined
 }
 object SerializeOptions {

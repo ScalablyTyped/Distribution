@@ -81,6 +81,13 @@ trait TNode extends StObject {
   var classesWithoutHost: String | Null
   
   /**
+    * Offset from the `directiveStart` at which the component (one at most) of the node is stored.
+    * Set to -1 if no components have been applied to the node. Component index can be found using
+    * `directiveStart + componentOffset`.
+    */
+  var componentOffset: Double
+  
+  /**
     * Stores final exclusive index of the directives.
     *
     * The area right behind the `directiveStart-directiveEnd` range is used to allocate the
@@ -89,11 +96,7 @@ trait TNode extends StObject {
     */
   var directiveEnd: Double
   
-  /**
-    * Stores starting index of the directives.
-    *
-    * NOTE: The first directive is always component (if present).
-    */
+  /** Stores starting index of the directives. */
   var directiveStart: Double
   
   /**
@@ -269,6 +272,12 @@ trait TNode extends StObject {
   var parent: TElementNode | TContainerNode | Null
   
   /**
+    * The previous sibling node.
+    * This simplifies operations when we need a pointer to the previous node.
+    */
+  var prev: TNode | Null
+  
+  /**
     * List of projected TNodes for a given component host element OR index into the said nodes.
     *
     * For easier discussion assume this example:
@@ -411,26 +420,14 @@ trait TNode extends StObject {
   var stylesWithoutHost: String | Null
   
   /**
-    * The TView or TViews attached to this node.
-    *
-    * If this TNode corresponds to an LContainer with inline views, the container will
-    * need to store separate static data for each of its view blocks (TView[]). Otherwise,
-    * nodes in inline views with the same index as nodes in their parent views will overwrite
-    * each other, as they are in the same template.
-    *
-    * Each index in this array corresponds to the static data for a certain
-    * view. So if you had V(0) and V(1) in a container, you might have:
-    *
-    * [
-    *   [{tagName: 'div', attrs: ...}, null],     // V(0) TView
-    *   [{tagName: 'button', attrs ...}, null]    // V(1) TView
+    * The TView attached to this node.
     *
     * If this TNode corresponds to an LContainer with a template (e.g. structural
     * directive), the template's TView will be stored here.
     *
-    * If this TNode corresponds to an element, tViews will be null .
+    * If this TNode corresponds to an element, tView will be `null`.
     */
-  var tViews: TView | js.Array[TView] | Null
+  var tView: TView | Null
   
   /** The type of the TNode. See TNodeType. */
   var `type`: TNodeType
@@ -448,6 +445,7 @@ object TNode {
   
   inline def apply(
     classBindings: TStylingRange,
+    componentOffset: Double,
     directiveEnd: Double,
     directiveStart: Double,
     directiveStylingLast: Double,
@@ -459,7 +457,7 @@ object TNode {
     `type`: TNodeType,
     value: Any
   ): TNode = {
-    val __obj = js.Dynamic.literal(classBindings = classBindings.asInstanceOf[js.Any], directiveEnd = directiveEnd.asInstanceOf[js.Any], directiveStart = directiveStart.asInstanceOf[js.Any], directiveStylingLast = directiveStylingLast.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], injectorIndex = injectorIndex.asInstanceOf[js.Any], providerIndexes = providerIndexes.asInstanceOf[js.Any], styleBindings = styleBindings.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], attrs = null, child = null, classes = null, classesWithoutHost = null, inputs = null, insertBeforeIndex = null, localNames = null, mergedAttrs = null, next = null, outputs = null, parent = null, projection = null, projectionNext = null, propertyBindings = null, styles = null, stylesWithoutHost = null, tViews = null)
+    val __obj = js.Dynamic.literal(classBindings = classBindings.asInstanceOf[js.Any], componentOffset = componentOffset.asInstanceOf[js.Any], directiveEnd = directiveEnd.asInstanceOf[js.Any], directiveStart = directiveStart.asInstanceOf[js.Any], directiveStylingLast = directiveStylingLast.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], injectorIndex = injectorIndex.asInstanceOf[js.Any], providerIndexes = providerIndexes.asInstanceOf[js.Any], styleBindings = styleBindings.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], attrs = null, child = null, classes = null, classesWithoutHost = null, inputs = null, insertBeforeIndex = null, localNames = null, mergedAttrs = null, next = null, outputs = null, parent = null, prev = null, projection = null, projectionNext = null, propertyBindings = null, styles = null, stylesWithoutHost = null, tView = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TNode]
   }
@@ -486,6 +484,8 @@ object TNode {
     inline def setClassesWithoutHost(value: String): Self = StObject.set(x, "classesWithoutHost", value.asInstanceOf[js.Any])
     
     inline def setClassesWithoutHostNull: Self = StObject.set(x, "classesWithoutHost", null)
+    
+    inline def setComponentOffset(value: Double): Self = StObject.set(x, "componentOffset", value.asInstanceOf[js.Any])
     
     inline def setDirectiveEnd(value: Double): Self = StObject.set(x, "directiveEnd", value.asInstanceOf[js.Any])
     
@@ -541,6 +541,10 @@ object TNode {
     
     inline def setParentNull: Self = StObject.set(x, "parent", null)
     
+    inline def setPrev(value: TNode): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
+    
+    inline def setPrevNull: Self = StObject.set(x, "prev", null)
+    
     inline def setProjection(value: (js.Array[TNode | js.Array[RNode]]) | Double): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
     
     inline def setProjectionNext(value: TNode): Self = StObject.set(x, "projectionNext", value.asInstanceOf[js.Any])
@@ -581,11 +585,9 @@ object TNode {
     
     inline def setStylesWithoutHostNull: Self = StObject.set(x, "stylesWithoutHost", null)
     
-    inline def setTViews(value: TView | js.Array[TView]): Self = StObject.set(x, "tViews", value.asInstanceOf[js.Any])
+    inline def setTView(value: TView): Self = StObject.set(x, "tView", value.asInstanceOf[js.Any])
     
-    inline def setTViewsNull: Self = StObject.set(x, "tViews", null)
-    
-    inline def setTViewsVarargs(value: TView*): Self = StObject.set(x, "tViews", js.Array(value*))
+    inline def setTViewNull: Self = StObject.set(x, "tView", null)
     
     inline def setType(value: TNodeType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

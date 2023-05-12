@@ -7,57 +7,57 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Operation extends StObject {
   
   /**
-    * 
+    * The end time of the operation.
     */
   var EndTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * 
+    * The ID of the operation.
     */
   var Id: js.UndefOr[OperationId] = js.undefined
   
   /**
-    * 
+    * The time at which the operation was last updated.
     */
   var LastUpdatedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * 
+    * The properties of the operation.
     */
   var Properties: js.UndefOr[OperationProperties] = js.undefined
   
   /**
-    * 
+    * The Amazon Resource Name (ARN) of the operation.
     */
   var ResourceArn: js.UndefOr[Arn] = js.undefined
   
   /**
-    * 
+    * The resource ID of the operation.
     */
   var ResourceId: js.UndefOr[typings.awsSdk.clientsSsmsapMod.ResourceId] = js.undefined
   
   /**
-    * 
+    * The resource type of the operation.
     */
   var ResourceType: js.UndefOr[typings.awsSdk.clientsSsmsapMod.ResourceType] = js.undefined
   
   /**
-    * 
+    * The start time of the operation.
     */
   var StartTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * 
+    * The status of the operation.
     */
   var Status: js.UndefOr[OperationStatus] = js.undefined
   
   /**
-    * 
+    * The status message of the operation.
     */
   var StatusMessage: js.UndefOr[String] = js.undefined
   
   /**
-    * 
+    * The type of the operation.
     */
   var Type: js.UndefOr[OperationType] = js.undefined
 }

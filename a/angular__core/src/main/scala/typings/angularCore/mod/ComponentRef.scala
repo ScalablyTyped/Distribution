@@ -24,7 +24,7 @@ open class ComponentRef[C] () extends StObject {
   def destroy(): Unit = js.native
   
   /**
-    * The [host view](guide/glossary#view-tree) defined by the template
+    * The [host view](guide/glossary#view-hierarchy) defined by the template
     * for this component instance.
     */
   def hostView: ViewRef = js.native

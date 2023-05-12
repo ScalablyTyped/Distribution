@@ -8,7 +8,7 @@ trait TaskRouterGrantPayload extends StObject {
   
   var role: js.UndefOr[String] = js.undefined
   
-  var worker_id: js.UndefOr[String] = js.undefined
+  var worker_sid: js.UndefOr[String] = js.undefined
   
   var workspace_sid: js.UndefOr[String] = js.undefined
 }
@@ -26,9 +26,9 @@ object TaskRouterGrantPayload {
     
     inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
     
-    inline def setWorker_id(value: String): Self = StObject.set(x, "worker_id", value.asInstanceOf[js.Any])
+    inline def setWorker_sid(value: String): Self = StObject.set(x, "worker_sid", value.asInstanceOf[js.Any])
     
-    inline def setWorker_idUndefined: Self = StObject.set(x, "worker_id", js.undefined)
+    inline def setWorker_sidUndefined: Self = StObject.set(x, "worker_sid", js.undefined)
     
     inline def setWorkspace_sid(value: String): Self = StObject.set(x, "workspace_sid", value.asInstanceOf[js.Any])
     

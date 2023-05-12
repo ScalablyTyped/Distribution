@@ -46,8 +46,6 @@ trait InternalResolveOptions extends StObject {
   
   var shouldExternalize: js.UndefOr[js.Function1[/* id */ String, js.UndefOr[Boolean]]] = js.undefined
   
-  var skipPackageJson: js.UndefOr[Boolean] = js.undefined
-  
   var ssrConfig: js.UndefOr[SSROptions] = js.undefined
   
   var ssrOptimizeCheck: js.UndefOr[Boolean] = js.undefined
@@ -135,10 +133,6 @@ object InternalResolveOptions {
     inline def setShouldExternalize(value: /* id */ String => js.UndefOr[Boolean]): Self = StObject.set(x, "shouldExternalize", js.Any.fromFunction1(value))
     
     inline def setShouldExternalizeUndefined: Self = StObject.set(x, "shouldExternalize", js.undefined)
-    
-    inline def setSkipPackageJson(value: Boolean): Self = StObject.set(x, "skipPackageJson", value.asInstanceOf[js.Any])
-    
-    inline def setSkipPackageJsonUndefined: Self = StObject.set(x, "skipPackageJson", js.undefined)
     
     inline def setSsrConfig(value: SSROptions): Self = StObject.set(x, "ssrConfig", value.asInstanceOf[js.Any])
     

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "postcss-pseudo-class-any-link" : "8.0.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "postcss-pseudo-class-any-link" : "8.0.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -5,7 +5,6 @@ import typings.appBuilderLib.outPackagerApiMod.PackagerOptions
 import typings.builderUtil.outArchMod.Arch
 import typings.electronPublish.mod.PublishOptions
 import typings.std.Map
-import typings.yargs.mod.Argv
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +20,9 @@ object outBuilderMod {
   
   inline def coerceTypes(host: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("coerceTypes")(host.asInstanceOf[js.Any]).asInstanceOf[Any]
   
-  inline def configureBuildCommand(yargs: Argv[js.Object]): Argv[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("configureBuildCommand")(yargs.asInstanceOf[js.Any]).asInstanceOf[Argv[js.Object]]
+  inline def configureBuildCommand(
+    yargs: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify yargs.Argv */ Any
+  ): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("configureBuildCommand")(yargs.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   inline def createTargets(platforms: js.Array[Platform]): Map[Platform, Map[Arch, js.Array[String]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createTargets")(platforms.asInstanceOf[js.Any]).asInstanceOf[Map[Platform, Map[Arch, js.Array[String]]]]
   inline def createTargets(platforms: js.Array[Platform], `type`: String): Map[Platform, Map[Arch, js.Array[String]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createTargets")(platforms.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Map[Platform, Map[Arch, js.Array[String]]]]
@@ -29,7 +30,7 @@ object outBuilderMod {
   inline def createTargets(platforms: js.Array[Platform], `type`: Null, arch: String): Map[Platform, Map[Arch, js.Array[String]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createTargets")(platforms.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], arch.asInstanceOf[js.Any])).asInstanceOf[Map[Platform, Map[Arch, js.Array[String]]]]
   inline def createTargets(platforms: js.Array[Platform], `type`: Unit, arch: String): Map[Platform, Map[Arch, js.Array[String]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createTargets")(platforms.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], arch.asInstanceOf[js.Any])).asInstanceOf[Map[Platform, Map[Arch, js.Array[String]]]]
   
-  inline def createYargs(): Argv[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("createYargs")().asInstanceOf[Argv[Any]]
+  inline def createYargs(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createYargs")().asInstanceOf[Any]
   
   inline def normalizeOptions(args: CliOptions): BuildOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeOptions")(args.asInstanceOf[js.Any]).asInstanceOf[BuildOptions]
   

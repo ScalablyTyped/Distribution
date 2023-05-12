@@ -24,6 +24,25 @@ object examplesJsmNodesCoreInputNodeMod {
     
     var isInputNode: `true` = js.native
     
+    var precision: Precision | Null = js.native
+    
+    def setPrecision(precision: Precision): this.type = js.native
+    
     var value: NodeValueOption = js.native
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.three.threeStrings.low
+    - typings.three.threeStrings.medium
+    - typings.three.threeStrings.high
+  */
+  trait Precision extends StObject
+  object Precision {
+    
+    inline def high: typings.three.threeStrings.high = "high".asInstanceOf[typings.three.threeStrings.high]
+    
+    inline def low: typings.three.threeStrings.low = "low".asInstanceOf[typings.three.threeStrings.low]
+    
+    inline def medium: typings.three.threeStrings.medium = "medium".asInstanceOf[typings.three.threeStrings.medium]
   }
 }

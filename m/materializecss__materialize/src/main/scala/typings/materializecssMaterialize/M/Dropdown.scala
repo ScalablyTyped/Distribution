@@ -10,42 +10,42 @@ trait Dropdown
      with Component[DropdownOptions] {
   
   /**
-    * Close dropdown
+    * Close dropdown.
     */
   def close(): Unit
   
   /**
-    * The DOM element of the dropdown
+    * The DOM element of the dropdown.
     */
   var dropdownEl: Element
   
   /**
-    * The index of the item focused
+    * The index of the item focused.
     */
   var focusedIndex: Double
   
   /**
-    * ID of the dropdown element
+    * ID of the dropdown element.
     */
   var id: String
   
   /**
-    * If the dropdown is open
+    * If the dropdown is open.
     */
   var isOpen: Boolean
   
   /**
-    * If the dropdown content is scrollable
+    * If the dropdown content is scrollable.
     */
   var isScrollable: Boolean
   
   /**
-    * Open dropdown
+    * Open dropdown.
     */
   def open(): Unit
   
   /**
-    * While dropdown is open, you can recalculate its dimensions if its contents have changed
+    * While dropdown is open, you can recalculate its dimensions if its contents have changed.
     */
   def recalculateDimensions(): Unit
 }

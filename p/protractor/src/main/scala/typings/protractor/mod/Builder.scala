@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 // region Constructors
 /**
-  * @constructor
   */
 open class Builder ()
   extends typings.seleniumWebdriver.mod.Builder

@@ -169,7 +169,7 @@ trait CMCD extends StObject {
     *
     * If the streaming format being requested is unknown, then this key MUST NOT be used.
     */
-  var sf: js.UndefOr[CMCDStreamingFormat] = js.undefined
+  var sf: js.UndefOr[/* "h" */ String] = js.undefined
   
   /**
     * Session ID
@@ -276,7 +276,7 @@ object CMCD {
     
     inline def setRtpUndefined: Self = StObject.set(x, "rtp", js.undefined)
     
-    inline def setSf(value: CMCDStreamingFormat): Self = StObject.set(x, "sf", value.asInstanceOf[js.Any])
+    inline def setSf(value: /* "h" */ String): Self = StObject.set(x, "sf", value.asInstanceOf[js.Any])
     
     inline def setSfUndefined: Self = StObject.set(x, "sf", js.undefined)
     

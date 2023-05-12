@@ -5,68 +5,58 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Available only in the v=beta channel: https://goo.gle/3oAthT3.
-  * VehicleJourneySegment type
-  */
 trait VehicleJourneySegment extends StObject {
   
   /**
     * The travel distance from the previous stop to this stop, in meters.
     */
-  var distanceMeters: Double | Null
+  var drivingDistanceMeters: Double | Null
   
   /**
-    * The travel time from the previous stop to this stop, in milliseconds.
+    * The travel time from the previous stop this stop, in milliseconds.
     */
-  var durationMillis: Double | Null
+  var drivingDurationMillis: Double | Null
   
   /**
-    * The extra travel time due to the durations of the stop&#39;s tasks, in
-    * milliseconds.
-    */
-  var extraDurationMillis: Double | Null
-  
-  /**
-    * The actual stop location.
-    */
-  var location: LatLngLiteral | Null
-  
-  /**
-    * The path from the previous stop to this stop.
+    * The path from the previous waypoint (or the vehicle&#39;s current
+    * location, if this waypoint is the first in the list of waypoints) to this
+    * waypoint.
     */
   var path: js.Array[LatLngLiteral] | Null
+  
+  /**
+    * The stops to be served by this vehicle.
+    */
+  var stop: js.Array[DeliveryVehicleStop] | Null
 }
 object VehicleJourneySegment {
   
   inline def apply(): VehicleJourneySegment = {
-    val __obj = js.Dynamic.literal(distanceMeters = null, durationMillis = null, extraDurationMillis = null, location = null, path = null)
+    val __obj = js.Dynamic.literal(drivingDistanceMeters = null, drivingDurationMillis = null, path = null, stop = null)
     __obj.asInstanceOf[VehicleJourneySegment]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: VehicleJourneySegment] (val x: Self) extends AnyVal {
     
-    inline def setDistanceMeters(value: Double): Self = StObject.set(x, "distanceMeters", value.asInstanceOf[js.Any])
+    inline def setDrivingDistanceMeters(value: Double): Self = StObject.set(x, "drivingDistanceMeters", value.asInstanceOf[js.Any])
     
-    inline def setDistanceMetersNull: Self = StObject.set(x, "distanceMeters", null)
+    inline def setDrivingDistanceMetersNull: Self = StObject.set(x, "drivingDistanceMeters", null)
     
-    inline def setDurationMillis(value: Double): Self = StObject.set(x, "durationMillis", value.asInstanceOf[js.Any])
+    inline def setDrivingDurationMillis(value: Double): Self = StObject.set(x, "drivingDurationMillis", value.asInstanceOf[js.Any])
     
-    inline def setDurationMillisNull: Self = StObject.set(x, "durationMillis", null)
-    
-    inline def setExtraDurationMillis(value: Double): Self = StObject.set(x, "extraDurationMillis", value.asInstanceOf[js.Any])
-    
-    inline def setExtraDurationMillisNull: Self = StObject.set(x, "extraDurationMillis", null)
-    
-    inline def setLocation(value: LatLngLiteral): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
-    
-    inline def setLocationNull: Self = StObject.set(x, "location", null)
+    inline def setDrivingDurationMillisNull: Self = StObject.set(x, "drivingDurationMillis", null)
     
     inline def setPath(value: js.Array[LatLngLiteral]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     inline def setPathNull: Self = StObject.set(x, "path", null)
     
     inline def setPathVarargs(value: LatLngLiteral*): Self = StObject.set(x, "path", js.Array(value*))
+    
+    inline def setStop(value: js.Array[DeliveryVehicleStop]): Self = StObject.set(x, "stop", value.asInstanceOf[js.Any])
+    
+    inline def setStopNull: Self = StObject.set(x, "stop", null)
+    
+    inline def setStopVarargs(value: DeliveryVehicleStop*): Self = StObject.set(x, "stop", js.Array(value*))
   }
 }

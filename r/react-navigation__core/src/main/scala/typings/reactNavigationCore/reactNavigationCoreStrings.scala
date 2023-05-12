@@ -35,10 +35,6 @@ object reactNavigationCoreStrings {
   inline def children: children = "children".asInstanceOf[children]
   
   @js.native
-  sealed trait defaultScreenOptions extends StObject
-  inline def defaultScreenOptions: defaultScreenOptions = "defaultScreenOptions".asInstanceOf[defaultScreenOptions]
-  
-  @js.native
   sealed trait dispatch extends StObject
   inline def dispatch: dispatch = "dispatch".asInstanceOf[dispatch]
   

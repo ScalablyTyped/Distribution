@@ -10,7 +10,7 @@ open class Button protected () extends _MDLComponent[StandardButtonProps] {
   def this(props: StandardButtonProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: StandardButtonProps, context: Any) = this()
 }

@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TreeViewSelectionChangeEvent[T] extends StObject {
   
   /**
-    * Selected elements.
-    */
+  		 * Selected elements.
+  		 */
   val selection: js.Array[T]
 }
 object TreeViewSelectionChangeEvent {

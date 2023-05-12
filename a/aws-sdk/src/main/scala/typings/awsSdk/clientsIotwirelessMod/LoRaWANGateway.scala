@@ -18,6 +18,11 @@ trait LoRaWANGateway extends StObject {
   
   var JoinEuiFilters: js.UndefOr[typings.awsSdk.clientsIotwirelessMod.JoinEuiFilters] = js.undefined
   
+  /**
+    * The MaxEIRP value.
+    */
+  var MaxEirp: js.UndefOr[GatewayMaxEirp] = js.undefined
+  
   var NetIdFilters: js.UndefOr[typings.awsSdk.clientsIotwirelessMod.NetIdFilters] = js.undefined
   
   /**
@@ -50,6 +55,10 @@ object LoRaWANGateway {
     inline def setJoinEuiFiltersUndefined: Self = StObject.set(x, "JoinEuiFilters", js.undefined)
     
     inline def setJoinEuiFiltersVarargs(value: JoinEuiRange*): Self = StObject.set(x, "JoinEuiFilters", js.Array(value*))
+    
+    inline def setMaxEirp(value: GatewayMaxEirp): Self = StObject.set(x, "MaxEirp", value.asInstanceOf[js.Any])
+    
+    inline def setMaxEirpUndefined: Self = StObject.set(x, "MaxEirp", js.undefined)
     
     inline def setNetIdFilters(value: NetIdFilters): Self = StObject.set(x, "NetIdFilters", value.asInstanceOf[js.Any])
     

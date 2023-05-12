@@ -28,6 +28,7 @@ import typings.antdMobile.antdMobileStrings.menu
 import typings.antdMobile.antdMobileStrings.mixed
 import typings.antdMobile.antdMobileStrings.move
 import typings.antdMobile.antdMobileStrings.none
+import typings.antdMobile.antdMobileStrings.now
 import typings.antdMobile.antdMobileStrings.off
 import typings.antdMobile.antdMobileStrings.other
 import typings.antdMobile.antdMobileStrings.page
@@ -42,6 +43,8 @@ import typings.antdMobile.antdMobileStrings.tree
 import typings.antdMobile.antdMobileStrings.vertical
 import typings.antdMobile.esComponentsDatePickerDatePickerUtilsMod.DatePickerFilter
 import typings.antdMobile.esComponentsDatePickerDatePickerUtilsMod.Precision
+import typings.antdMobile.esComponentsDatePickerUtilMod.PickerDate
+import typings.antdMobile.esComponentsDatePickerViewDatePickerViewMod.RenderLabel
 import typings.antdMobile.esUtilsRenderToContainerMod.GetContainer
 import typings.antdMobile.esUtilsWithStopPropagationMod.PropagationEvent
 import typings.react.mod.Booleanish
@@ -166,7 +169,7 @@ trait OmitDatePickerPropsvaluev extends StObject {
   
   var confirmText: js.UndefOr[ReactNode] = js.undefined
   
-  var defaultValue: js.UndefOr[js.Date | Null] = js.undefined
+  var defaultValue: js.UndefOr[PickerDate | Null] = js.undefined
   
   var destroyOnClose: js.UndefOr[Boolean] = js.undefined
   
@@ -180,9 +183,9 @@ trait OmitDatePickerPropsvaluev extends StObject {
   
   var loadingContent: js.UndefOr[ReactNode] = js.undefined
   
-  var max: js.UndefOr[js.Date] = js.undefined
+  var max: js.UndefOr[PickerDate] = js.undefined
   
-  var min: js.UndefOr[js.Date] = js.undefined
+  var min: js.UndefOr[PickerDate] = js.undefined
   
   var mouseWheel: js.UndefOr[Boolean] = js.undefined
   
@@ -194,19 +197,21 @@ trait OmitDatePickerPropsvaluev extends StObject {
   
   var onClose: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onConfirm: js.UndefOr[js.Function1[/* value */ js.Date, Unit]] = js.undefined
+  var onConfirm: js.UndefOr[js.Function1[/* value */ PickerDate, Unit]] = js.undefined
   
-  var onSelect: js.UndefOr[js.Function1[/* value */ js.Date, Unit]] = js.undefined
+  var onSelect: js.UndefOr[js.Function1[/* value */ PickerDate, Unit]] = js.undefined
   
   var precision: js.UndefOr[Precision] = js.undefined
   
-  var renderLabel: js.UndefOr[js.Function2[/* type */ Precision, /* data */ Double, ReactNode]] = js.undefined
+  var renderLabel: js.UndefOr[RenderLabel] = js.undefined
   
   var stopPropagation: js.UndefOr[js.Array[PropagationEvent]] = js.undefined
   
   var style: js.UndefOr[CSSPropertiesPartialRecorAlignSelf] = js.undefined
   
   var tabIndex: js.UndefOr[Double] = js.undefined
+  
+  var tillNow: js.UndefOr[Boolean] = js.undefined
   
   var title: js.UndefOr[ReactNode] = js.undefined
 }
@@ -438,7 +443,7 @@ object OmitDatePickerPropsvaluev {
     
     inline def setConfirmTextUndefined: Self = StObject.set(x, "confirmText", js.undefined)
     
-    inline def setDefaultValue(value: js.Date): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: PickerDate): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
     inline def setDefaultValueNull: Self = StObject.set(x, "defaultValue", null)
     
@@ -472,11 +477,11 @@ object OmitDatePickerPropsvaluev {
     
     inline def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
     
-    inline def setMax(value: js.Date): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: PickerDate): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
     inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
-    inline def setMin(value: js.Date): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: PickerDate): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
     inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
@@ -496,11 +501,11 @@ object OmitDatePickerPropsvaluev {
     
     inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
     
-    inline def setOnConfirm(value: /* value */ js.Date => Unit): Self = StObject.set(x, "onConfirm", js.Any.fromFunction1(value))
+    inline def setOnConfirm(value: /* value */ PickerDate => Unit): Self = StObject.set(x, "onConfirm", js.Any.fromFunction1(value))
     
     inline def setOnConfirmUndefined: Self = StObject.set(x, "onConfirm", js.undefined)
     
-    inline def setOnSelect(value: /* value */ js.Date => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
+    inline def setOnSelect(value: /* value */ PickerDate => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
     
     inline def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
     
@@ -508,7 +513,7 @@ object OmitDatePickerPropsvaluev {
     
     inline def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
     
-    inline def setRenderLabel(value: (/* type */ Precision, /* data */ Double) => ReactNode): Self = StObject.set(x, "renderLabel", js.Any.fromFunction2(value))
+    inline def setRenderLabel(value: (/* type */ Precision | now, /* data */ Double) => ReactNode): Self = StObject.set(x, "renderLabel", js.Any.fromFunction2(value))
     
     inline def setRenderLabelUndefined: Self = StObject.set(x, "renderLabel", js.undefined)
     
@@ -525,6 +530,10 @@ object OmitDatePickerPropsvaluev {
     inline def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
     
     inline def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
+    
+    inline def setTillNow(value: Boolean): Self = StObject.set(x, "tillNow", value.asInstanceOf[js.Any])
+    
+    inline def setTillNowUndefined: Self = StObject.set(x, "tillNow", js.undefined)
     
     inline def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     

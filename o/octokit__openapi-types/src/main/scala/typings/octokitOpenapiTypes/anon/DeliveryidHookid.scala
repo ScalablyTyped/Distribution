@@ -8,10 +8,8 @@ trait DeliveryidHookid extends StObject {
   
   var delivery_id: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['delivery-id'] */ js.Any
   
-  /** The unique identifier of the hook. */
   var hook_id: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['hook-id'] */ js.Any
   
-  /** The organization name. The name is not case sensitive. */
   @JSName("org")
   var org_ : /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['org'] */ js.Any
 }

@@ -126,6 +126,8 @@ object sapMActionListItemMod {
     extends typings.openui5.sapMListItemBaseMod.default {
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Determines item specific mode.
       *
       * ActionListItems are not selectable because they are command controls (like Button or Link), so triggering

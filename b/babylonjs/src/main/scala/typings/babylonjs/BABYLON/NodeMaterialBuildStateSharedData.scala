@@ -100,9 +100,7 @@ trait NodeMaterialBuildStateSharedData extends StObject {
   /**
     * Input blocks
     */
-  var textureBlocks: js.Array[
-    ImageSourceBlock | TextureBlock | ReflectionTextureBaseBlock | RefractionBlock | CurrentScreenBlock | ParticleTextureBlock
-  ]
+  var textureBlocks: js.Array[NodeMaterialTextureBlocks]
   
   /** List of emitted variables */
   var variableNames: org.scalablytyped.runtime.StringDictionary[Double]
@@ -142,9 +140,7 @@ object NodeMaterialBuildStateSharedData {
     repeatableContentBlocks: js.Array[NodeMaterialBlock],
     scene: Scene,
     temps: js.Array[String],
-    textureBlocks: js.Array[
-      ImageSourceBlock | TextureBlock | ReflectionTextureBaseBlock | RefractionBlock | CurrentScreenBlock | ParticleTextureBlock
-    ],
+    textureBlocks: js.Array[NodeMaterialTextureBlocks],
     variableNames: org.scalablytyped.runtime.StringDictionary[Double],
     varyingDeclaration: String,
     varyings: js.Array[String],
@@ -217,15 +213,9 @@ object NodeMaterialBuildStateSharedData {
     
     inline def setTempsVarargs(value: String*): Self = StObject.set(x, "temps", js.Array(value*))
     
-    inline def setTextureBlocks(
-      value: js.Array[
-          ImageSourceBlock | TextureBlock | ReflectionTextureBaseBlock | RefractionBlock | CurrentScreenBlock | ParticleTextureBlock
-        ]
-    ): Self = StObject.set(x, "textureBlocks", value.asInstanceOf[js.Any])
+    inline def setTextureBlocks(value: js.Array[NodeMaterialTextureBlocks]): Self = StObject.set(x, "textureBlocks", value.asInstanceOf[js.Any])
     
-    inline def setTextureBlocksVarargs(
-      value: (ImageSourceBlock | TextureBlock | ReflectionTextureBaseBlock | RefractionBlock | CurrentScreenBlock | ParticleTextureBlock)*
-    ): Self = StObject.set(x, "textureBlocks", js.Array(value*))
+    inline def setTextureBlocksVarargs(value: NodeMaterialTextureBlocks*): Self = StObject.set(x, "textureBlocks", js.Array(value*))
     
     inline def setVariableNames(value: org.scalablytyped.runtime.StringDictionary[Double]): Self = StObject.set(x, "variableNames", value.asInstanceOf[js.Any])
     

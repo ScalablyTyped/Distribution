@@ -99,8 +99,8 @@ object geomFlatSimplifyMod {
     stride: Double,
     squaredTolerance: Double,
     highQuality: Boolean,
-    opt_simplifiedFlatCoordinates: js.Array[Double]
-  ): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("simplifyLineString")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], end.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], squaredTolerance.asInstanceOf[js.Any], highQuality.asInstanceOf[js.Any], opt_simplifiedFlatCoordinates.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    simplifiedFlatCoordinates: js.Array[Double]
+  ): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("simplifyLineString")(flatCoordinates.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], end.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], squaredTolerance.asInstanceOf[js.Any], highQuality.asInstanceOf[js.Any], simplifiedFlatCoordinates.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
   inline def snap(value: Double, tolerance: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("snap")(value.asInstanceOf[js.Any], tolerance.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

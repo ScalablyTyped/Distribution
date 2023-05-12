@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeregisterApplicationInput extends StObject {
   
   /**
-    * 
+    * The ID of the application.
     */
   var ApplicationId: typings.awsSdk.clientsSsmsapMod.ApplicationId
 }

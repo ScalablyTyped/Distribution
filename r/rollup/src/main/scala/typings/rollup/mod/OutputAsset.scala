@@ -9,11 +9,13 @@ trait OutputAsset
      with PreRenderedAsset {
   
   var fileName: String
+  
+  var needsCodeReference: Boolean
 }
 object OutputAsset {
   
-  inline def apply(fileName: String, source: String | js.typedarray.Uint8Array): OutputAsset = {
-    val __obj = js.Dynamic.literal(fileName = fileName.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
+  inline def apply(fileName: String, needsCodeReference: Boolean, source: String | js.typedarray.Uint8Array): OutputAsset = {
+    val __obj = js.Dynamic.literal(fileName = fileName.asInstanceOf[js.Any], needsCodeReference = needsCodeReference.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("asset")
     __obj.asInstanceOf[OutputAsset]
   }
@@ -22,5 +24,7 @@ object OutputAsset {
   implicit open class MutableBuilder[Self <: OutputAsset] (val x: Self) extends AnyVal {
     
     inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+    
+    inline def setNeedsCodeReference(value: Boolean): Self = StObject.set(x, "needsCodeReference", value.asInstanceOf[js.Any])
   }
 }

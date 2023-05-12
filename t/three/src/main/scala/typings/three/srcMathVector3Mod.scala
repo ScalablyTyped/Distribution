@@ -4,6 +4,7 @@ import typings.std.ArrayLike
 import typings.three.srcCamerasCameraMod.Camera
 import typings.three.srcCoreBufferAttributeMod.BufferAttribute
 import typings.three.srcCoreInterleavedBufferAttributeMod.InterleavedBufferAttribute
+import typings.three.srcMathColorMod.Color
 import typings.three.srcMathCylindricalMod.Cylindrical
 import typings.three.srcMathEulerMod.Euler
 import typings.three.srcMathMatrix3Mod.Matrix3
@@ -268,6 +269,12 @@ object srcMathVector3Mod {
     
     /* CompleteClass */
     override def setComponent(index: Double, value: Double): this.type = js.native
+    
+    /**
+      * Sets this vector's {@link x}, {@link y} and {@link z} components from the r, g, and b components of the specified
+      * {@link Color | color}.
+      */
+    def setFromColor(color: Color): this.type = js.native
     
     def setFromCylindrical(s: Cylindrical): this.type = js.native
     

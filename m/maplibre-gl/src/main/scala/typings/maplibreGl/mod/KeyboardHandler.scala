@@ -1,6 +1,6 @@
 package typings.maplibreGl.mod
 
-import typings.maplibreGl.anon.`3`
+import typings.maplibreGl.anon.`6`
 import typings.std.KeyboardEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -77,7 +77,7 @@ open class KeyboardHandler () extends StObject {
   	 */
   def isEnabled(): Boolean = js.native
   
-  def keydown(e: KeyboardEvent): `3` = js.native
+  def keydown(e: KeyboardEvent): `6` = js.native
   
   def reset(): scala.Unit = js.native
 }

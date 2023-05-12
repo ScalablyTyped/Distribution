@@ -6,13 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RepoWorkflowid extends StObject {
   
-  /** The account owner of the repository. The name is not case sensitive. */
   var owner: String
   
-  /** The name of the repository. The name is not case sensitive. */
   var repo: String
   
-  /** The ID of the workflow. You can also pass the workflow file name as a string. */
   var workflow_id: Double | String
 }
 object RepoWorkflowid {

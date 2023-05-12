@@ -11,12 +11,15 @@ trait BookingAppointment
   // Additional information that is sent to the customer when an appointment is confirmed.
   var additionalInformation: js.UndefOr[NullableOption[String]] = js.undefined
   
+  // The URL of the meeting to join anonymously.
+  var anonymousJoinWebUrl: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // The time zone of the customer. For a list of possible values, see dateTimeTimeZone.
   var customerTimeZone: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
-    * It lists down the customer properties for an appointment. An appointment will contain a list of customer information
-    * and each unit will indicate the properties of a customer who is part of that appointment. Optional.
+    * A collection of customer properties for an appointment. An appointment will contain a list of customer information and
+    * each unit will indicate the properties of a customer who is part of that appointment. Optional.
     */
   var customers: js.UndefOr[js.Array[BookingCustomerInformationBase]] = js.undefined
   
@@ -118,6 +121,12 @@ object BookingAppointment {
     inline def setAdditionalInformationNull: Self = StObject.set(x, "additionalInformation", null)
     
     inline def setAdditionalInformationUndefined: Self = StObject.set(x, "additionalInformation", js.undefined)
+    
+    inline def setAnonymousJoinWebUrl(value: NullableOption[String]): Self = StObject.set(x, "anonymousJoinWebUrl", value.asInstanceOf[js.Any])
+    
+    inline def setAnonymousJoinWebUrlNull: Self = StObject.set(x, "anonymousJoinWebUrl", null)
+    
+    inline def setAnonymousJoinWebUrlUndefined: Self = StObject.set(x, "anonymousJoinWebUrl", js.undefined)
     
     inline def setCustomerTimeZone(value: NullableOption[String]): Self = StObject.set(x, "customerTimeZone", value.asInstanceOf[js.Any])
     

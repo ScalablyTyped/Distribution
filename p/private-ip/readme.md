@@ -1,7 +1,7 @@
 
 # Scala.js typings for private-ip
 
-Typings are for version 2.3.4
+Typings are for version 3.0.0
 
 ## Library description:
 Check if IP address is private.

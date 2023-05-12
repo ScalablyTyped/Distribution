@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("three/src/Three", "Uniform")
 @js.native
-open class Uniform protected ()
-  extends typings.three.srcCoreUniformMod.Uniform {
-  def this(value: Any) = this()
+open class Uniform[T] protected ()
+  extends typings.three.srcCoreUniformMod.Uniform[T] {
   /**
-    * @deprecated
+    * Create a new instance of {@link THREE.Uniform | Uniform}
+    * @param value An object containing the value to set up the uniform. It's type must be one of the Uniform Types described above.
     */
-  def this(`type`: String, value: Any) = this()
+  def this(value: T) = this()
 }

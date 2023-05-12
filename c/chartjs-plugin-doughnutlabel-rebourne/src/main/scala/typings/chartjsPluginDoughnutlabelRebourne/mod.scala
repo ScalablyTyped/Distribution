@@ -1,11 +1,11 @@
 package typings.chartjsPluginDoughnutlabelRebourne
 
 import org.scalablytyped.runtime.Shortcut
+import typings.chartJs.distTypesBasicMod.AnyObject
+import typings.chartJs.distTypesIndexMod.ChartType
+import typings.chartJs.distTypesIndexMod.DefaultDataPoint
+import typings.chartJs.distTypesIndexMod.Plugin
 import typings.chartJs.mod.Chart
-import typings.chartJs.mod.ChartType
-import typings.chartJs.mod.DefaultDataPoint
-import typings.chartJs.mod.Plugin
-import typings.chartJs.typesBasicMod.AnyObject
 import typings.chartjsPluginDoughnutlabelRebourne.chartjsPluginDoughnutlabelRebourneStrings.afterBuildTicks
 import typings.chartjsPluginDoughnutlabelRebourne.chartjsPluginDoughnutlabelRebourneStrings.afterDataLimits
 import typings.chartjsPluginDoughnutlabelRebourne.chartjsPluginDoughnutlabelRebourneStrings.afterDatasetDraw
@@ -35,7 +35,7 @@ import typings.chartjsPluginDoughnutlabelRebourne.chartjsPluginDoughnutlabelRebo
 import typings.chartjsPluginDoughnutlabelRebourne.chartjsPluginDoughnutlabelRebourneStrings.beforeRender
 import typings.chartjsPluginDoughnutlabelRebourne.chartjsPluginDoughnutlabelRebourneStrings.beforeTooltipDraw
 import typings.chartjsPluginDoughnutlabelRebourne.chartjsPluginDoughnutlabelRebourneStrings.beforeUpdate
-import typings.chartjsPluginDoughnutlabelRebourne.chartjsPluginDoughnutlabelRebourneStrings.destroy
+import typings.chartjsPluginDoughnutlabelRebourne.chartjsPluginDoughnutlabelRebourneStrings.defaults
 import typings.chartjsPluginDoughnutlabelRebourne.chartjsPluginDoughnutlabelRebourneStrings.doughnut
 import typings.chartjsPluginDoughnutlabelRebourne.chartjsPluginDoughnutlabelRebourneStrings.id
 import typings.chartjsPluginDoughnutlabelRebourne.chartjsPluginDoughnutlabelRebourneStrings.inherit
@@ -162,7 +162,7 @@ object mod extends Shortcut {
     /** Which plugin core api to use to draw labels */
     var api: js.UndefOr[
         Exclude[
-          /* keyof chart.js.chart.js.Plugin<chart.js.chart.js.ChartType, chart.js.chart.js/types/basic.AnyObject> */ id | install | start | stop | beforeInit | afterInit | beforeUpdate | afterUpdate | beforeElementsUpdate | reset | beforeDatasetsUpdate | afterDatasetsUpdate | beforeDatasetUpdate | afterDatasetUpdate | beforeLayout | beforeDataLimits | afterDataLimits | beforeBuildTicks | afterBuildTicks | afterLayout | beforeRender | afterRender | beforeDraw | afterDraw | beforeDatasetsDraw | afterDatasetsDraw | beforeDatasetDraw | afterDatasetDraw | beforeEvent | afterEvent | resize | beforeDestroy | destroy | afterDestroy | uninstall | beforeTooltipDraw | afterTooltipDraw, 
+          /* keyof chart.js.chart.js/dist/types/index.Plugin<chart.js.chart.js/dist/types/index.ChartType, chart.js.chart.js/dist/types/basic.AnyObject> */ id | install | start | stop | beforeInit | afterInit | beforeUpdate | afterUpdate | beforeElementsUpdate | reset | beforeDatasetsUpdate | afterDatasetsUpdate | beforeDatasetUpdate | afterDatasetUpdate | beforeLayout | beforeDataLimits | afterDataLimits | beforeBuildTicks | afterBuildTicks | afterLayout | beforeRender | afterRender | beforeDraw | afterDraw | beforeDatasetsDraw | afterDatasetsDraw | beforeDatasetDraw | afterDatasetDraw | beforeEvent | afterEvent | resize | beforeDestroy | afterDestroy | uninstall | defaults | beforeTooltipDraw | afterTooltipDraw, 
           id
         ]
       ] = js.undefined
@@ -193,7 +193,7 @@ object mod extends Shortcut {
       
       inline def setApi(
         value: Exclude[
-              /* keyof chart.js.chart.js.Plugin<chart.js.chart.js.ChartType, chart.js.chart.js/types/basic.AnyObject> */ id | install | start | stop | beforeInit | afterInit | beforeUpdate | afterUpdate | beforeElementsUpdate | reset | beforeDatasetsUpdate | afterDatasetsUpdate | beforeDatasetUpdate | afterDatasetUpdate | beforeLayout | beforeDataLimits | afterDataLimits | beforeBuildTicks | afterBuildTicks | afterLayout | beforeRender | afterRender | beforeDraw | afterDraw | beforeDatasetsDraw | afterDatasetsDraw | beforeDatasetDraw | afterDatasetDraw | beforeEvent | afterEvent | resize | beforeDestroy | destroy | afterDestroy | uninstall | beforeTooltipDraw | afterTooltipDraw, 
+              /* keyof chart.js.chart.js/dist/types/index.Plugin<chart.js.chart.js/dist/types/index.ChartType, chart.js.chart.js/dist/types/basic.AnyObject> */ id | install | start | stop | beforeInit | afterInit | beforeUpdate | afterUpdate | beforeElementsUpdate | reset | beforeDatasetsUpdate | afterDatasetsUpdate | beforeDatasetUpdate | afterDatasetUpdate | beforeLayout | beforeDataLimits | afterDataLimits | beforeBuildTicks | afterBuildTicks | afterLayout | beforeRender | afterRender | beforeDraw | afterDraw | beforeDatasetsDraw | afterDatasetsDraw | beforeDatasetDraw | afterDatasetDraw | beforeEvent | afterEvent | resize | beforeDestroy | afterDestroy | uninstall | defaults | beforeTooltipDraw | afterTooltipDraw, 
               id
             ]
       ): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])

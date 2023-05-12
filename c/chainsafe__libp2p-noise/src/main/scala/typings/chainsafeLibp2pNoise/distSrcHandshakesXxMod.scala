@@ -1,10 +1,10 @@
 package typings.chainsafeLibp2pNoise
 
-import typings.chainsafeLibp2pNoise.anon.Plaintext
 import typings.chainsafeLibp2pNoise.distSrcCryptoMod.ICryptoInterface
 import typings.chainsafeLibp2pNoise.distSrcHandshakeMod.MessageBuffer
 import typings.chainsafeLibp2pNoise.distSrcHandshakeMod.NoiseSession
 import typings.chainsafeLibp2pNoise.distSrcHandshakesAbstractHandshakeMod.AbstractHandshake
+import typings.chainsafeLibp2pNoise.distSrcHandshakesAbstractHandshakeMod.DecryptedResult
 import typings.chainsafeLibp2pNoise.distSrcLibp2pMod.KeyPair
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -29,7 +29,7 @@ object distSrcHandshakesXxMod {
     
     /* private */ var readMessageC: Any = js.native
     
-    def recvMessage(session: NoiseSession, message: MessageBuffer): Plaintext = js.native
+    def recvMessage(session: NoiseSession, message: MessageBuffer): DecryptedResult = js.native
     
     def sendMessage(session: NoiseSession, message: js.typedarray.Uint8Array): MessageBuffer = js.native
     def sendMessage(session: NoiseSession, message: js.typedarray.Uint8Array, ephemeral: KeyPair): MessageBuffer = js.native

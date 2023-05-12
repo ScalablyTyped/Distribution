@@ -1,7 +1,7 @@
 
 # Scala.js typings for fastify__busboy
 
-Typings are for version 1.1.0
+Typings are for version 1.2.1
 
 ## Library description:
 A streaming parser for HTML form data for node.js

@@ -11,10 +11,6 @@ object revealJsStrings {
   inline def default: default = "default".asInstanceOf[default]
   
   @js.native
-  sealed trait DOMContentLoaded extends StObject
-  inline def DOMContentLoaded: DOMContentLoaded = "DOMContentLoaded".asInstanceOf[DOMContentLoaded]
-  
-  @js.native
   sealed trait _empty extends StObject
   inline def _empty: _empty = "".asInstanceOf[_empty]
   
@@ -407,14 +403,6 @@ object revealJsStrings {
   inline def pointerleave: pointerleave = "pointerleave".asInstanceOf[pointerleave]
   
   @js.native
-  sealed trait pointerlockchange extends StObject
-  inline def pointerlockchange: pointerlockchange = "pointerlockchange".asInstanceOf[pointerlockchange]
-  
-  @js.native
-  sealed trait pointerlockerror extends StObject
-  inline def pointerlockerror: pointerlockerror = "pointerlockerror".asInstanceOf[pointerlockerror]
-  
-  @js.native
   sealed trait pointermove extends StObject
   inline def pointermove: pointermove = "pointermove".asInstanceOf[pointermove]
   
@@ -441,10 +429,6 @@ object revealJsStrings {
   @js.native
   sealed trait ratechange extends StObject
   inline def ratechange: ratechange = "ratechange".asInstanceOf[ratechange]
-  
-  @js.native
-  sealed trait readystatechange extends StObject
-  inline def readystatechange: readystatechange = "readystatechange".asInstanceOf[readystatechange]
   
   @js.native
   sealed trait repeat extends StObject
@@ -561,10 +545,6 @@ object revealJsStrings {
   @js.native
   sealed trait transitionstart extends StObject
   inline def transitionstart: transitionstart = "transitionstart".asInstanceOf[transitionstart]
-  
-  @js.native
-  sealed trait visibilitychange extends StObject
-  inline def visibilitychange: visibilitychange = "visibilitychange".asInstanceOf[visibilitychange]
   
   @js.native
   sealed trait visible extends StObject

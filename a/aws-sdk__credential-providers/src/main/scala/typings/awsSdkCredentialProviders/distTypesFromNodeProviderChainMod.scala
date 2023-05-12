@@ -2,7 +2,7 @@ package typings.awsSdkCredentialProviders
 
 import typings.awsSdkClientSts.distTypesStsclientMod.STSClientConfig
 import typings.awsSdkCredentialProviderNode.distTypesDefaultProviderMod.DefaultProviderInit
-import typings.awsSdkTypes.distTypesCredentialsMod.CredentialProvider
+import typings.awsSdkTypes.distTypesIdentityAwsCredentialIdentityMod.AwsCredentialIdentityProvider
 import typings.awsSdkTypes.distTypesMiddlewareMod.Pluggable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,8 +14,8 @@ object distTypesFromNodeProviderChainMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def fromNodeProviderChain(): CredentialProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNodeProviderChain")().asInstanceOf[CredentialProvider]
-  inline def fromNodeProviderChain(init: fromNodeProviderChainInit): CredentialProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNodeProviderChain")(init.asInstanceOf[js.Any]).asInstanceOf[CredentialProvider]
+  inline def fromNodeProviderChain(): AwsCredentialIdentityProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNodeProviderChain")().asInstanceOf[AwsCredentialIdentityProvider]
+  inline def fromNodeProviderChain(init: fromNodeProviderChainInit): AwsCredentialIdentityProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNodeProviderChain")(init.asInstanceOf[js.Any]).asInstanceOf[AwsCredentialIdentityProvider]
   
   trait fromNodeProviderChainInit
     extends StObject

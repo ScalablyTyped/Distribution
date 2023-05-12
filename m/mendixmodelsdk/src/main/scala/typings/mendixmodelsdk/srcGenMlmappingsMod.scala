@@ -2,6 +2,7 @@ package typings.mendixmodelsdk
 
 import typings.mendixmodelsdk.srcGenBaseModelMod.IModel
 import typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.AttributeType
+import typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.IAttribute
 import typings.mendixmodelsdk.srcGenDomainmodelsMod.domainmodels.IEntity
 import typings.mendixmodelsdk.srcGenProjectsMod.projects.Document
 import typings.mendixmodelsdk.srcGenProjectsMod.projects.FolderBase
@@ -75,6 +76,15 @@ object srcGenMlmappingsMod {
         */
       def mlModelMappings: MLModelMappings | Null = js.native
       def mlModelMappings_=(newValue: MLModelMappings | Null): Unit = js.native
+      
+      /**
+        * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
+        *
+        * @ignore
+        *
+        * In version 9.22.0: introduced
+        */
+      def mlModelMetadata: IList[MLModelMetadata] = js.native
     }
     object MLMappingDocument {
       
@@ -265,6 +275,71 @@ object srcGenMlmappingsMod {
       *
       * @ignore
       *
+      * In version 9.22.0: introduced
+      */
+    @JSImport("mendixmodelsdk/src/gen/mlmappings", "mlmappings.MLModelMetadata")
+    @js.native
+    open class MLModelMetadata protected () extends Element[IModel] {
+      def this(
+        model: AbstractModel,
+        structureTypeName: String,
+        id: String,
+        isPartial: Boolean,
+        unit: ModelUnit[IAbstractModel],
+        container: AbstractElement[IAbstractModel, Container]
+      ) = this()
+      
+      def containerAsMLMappingDocument: MLMappingDocument = js.native
+      
+      def name: String = js.native
+      def name_=(newValue: String): Unit = js.native
+      
+      def value: String = js.native
+      def value_=(newValue: String): Unit = js.native
+    }
+    object MLModelMetadata {
+      
+      @JSImport("mendixmodelsdk/src/gen/mlmappings", "mlmappings.MLModelMetadata")
+      @js.native
+      val ^ : js.Any = js.native
+      
+      /**
+        * Creates and returns a new MLModelMetadata instance in the SDK and on the server.
+        * Expects one argument: the IModel object the instance will "live on".
+        * After creation, assign or add this instance to a property that accepts this kind of objects.
+        */
+      /* static member */
+      inline def create(model: IModel): MLModelMetadata = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[MLModelMetadata]
+      
+      /**
+        * Creates and returns a new MLModelMetadata instance in the SDK and on the server.
+        * The new MLModelMetadata will be automatically stored in the 'mlModelMetadata' property
+        * of the parent MLMappingDocument element passed as argument.
+        *
+        * Warning! Can only be used on models with the following Mendix meta model versions:
+        *  9.22.0 and higher
+        */
+      /* static member */
+      inline def createIn(container: MLMappingDocument): MLModelMetadata = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[MLModelMetadata]
+      
+      /* static member */
+      @JSImport("mendixmodelsdk/src/gen/mlmappings", "mlmappings.MLModelMetadata.structureTypeName")
+      @js.native
+      def structureTypeName: String = js.native
+      inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+      
+      /* static member */
+      @JSImport("mendixmodelsdk/src/gen/mlmappings", "mlmappings.MLModelMetadata.versionInfo")
+      @js.native
+      def versionInfo: StructureVersionInfo = js.native
+      inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    }
+    
+    /**
+      * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
+      *
+      * @ignore
+      *
       * In version 9.17.0: introduced
       */
     @JSImport("mendixmodelsdk/src/gen/mlmappings", "mlmappings.TensorDimension")
@@ -304,10 +379,21 @@ object srcGenMlmappingsMod {
         * of the parent TensorMappingElement element passed as argument.
         *
         * Warning! Can only be used on models with the following Mendix meta model versions:
-        *  9.17.0 and higher
+        *  9.17.0 to 9.20.0
         */
       /* static member */
       inline def createInTensorMappingElementUnderAttributeShape(container: TensorMappingElement): TensorDimension = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTensorMappingElementUnderAttributeShape")(container.asInstanceOf[js.Any]).asInstanceOf[TensorDimension]
+      
+      /**
+        * Creates and returns a new TensorDimension instance in the SDK and on the server.
+        * The new TensorDimension will be automatically stored in the 'staticTensorShape' property
+        * of the parent TensorMappingElement element passed as argument.
+        *
+        * Warning! Can only be used on models with the following Mendix meta model versions:
+        *  9.21.0 and higher
+        */
+      /* static member */
+      inline def createInTensorMappingElementUnderStaticTensorShape(container: TensorMappingElement): TensorDimension = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTensorMappingElementUnderStaticTensorShape")(container.asInstanceOf[js.Any]).asInstanceOf[TensorDimension]
       
       /**
         * Creates and returns a new TensorDimension instance in the SDK and on the server.
@@ -352,20 +438,46 @@ object srcGenMlmappingsMod {
         container: AbstractElement[IAbstractModel, Container]
       ) = this()
       
+      /**
+        * In version 9.21.0: introduced
+        */
+      def attribute: IAttribute | Null = js.native
+      
+      /**
+        * In version 9.21.0: deleted
+        */
       def attributeName: String = js.native
       def attributeName_=(newValue: String): Unit = js.native
+      
+      def attributeQualifiedName: String | Null = js.native
       
       /**
         * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
         *
         * @ignore
+        *
+        * In version 9.21.0: deleted
         */
       def attributeShape: IList[TensorDimension] = js.native
       
+      /**
+        * In version 9.21.0: deleted
+        */
       def attributeType: AttributeType | Null = js.native
       def attributeType_=(newValue: AttributeType | Null): Unit = js.native
       
+      def attribute_=(newValue: IAttribute | Null): Unit = js.native
+      
       def containerAsMLModelEntityMappings: MLModelEntityMappings = js.native
+      
+      /**
+        * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
+        *
+        * @ignore
+        *
+        * In version 9.21.0: introduced
+        */
+      def staticTensorShape: IList[TensorDimension] = js.native
       
       def tensorName: String = js.native
       def tensorName_=(newValue: String): Unit = js.native

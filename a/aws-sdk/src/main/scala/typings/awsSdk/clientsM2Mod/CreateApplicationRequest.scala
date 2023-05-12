@@ -27,6 +27,11 @@ trait CreateApplicationRequest extends StObject {
   var engineType: EngineType
   
   /**
+    * The identifier of a customer managed key.
+    */
+  var kmsKeyId: js.UndefOr[String] = js.undefined
+  
+  /**
     * The unique identifier of the application.
     */
   var name: EntityName
@@ -57,6 +62,10 @@ object CreateApplicationRequest {
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     inline def setEngineType(value: EngineType): Self = StObject.set(x, "engineType", value.asInstanceOf[js.Any])
+    
+    inline def setKmsKeyId(value: String): Self = StObject.set(x, "kmsKeyId", value.asInstanceOf[js.Any])
+    
+    inline def setKmsKeyIdUndefined: Self = StObject.set(x, "kmsKeyId", js.undefined)
     
     inline def setName(value: EntityName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

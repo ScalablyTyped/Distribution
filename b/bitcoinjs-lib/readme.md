@@ -1,7 +1,7 @@
 
 # Scala.js typings for bitcoinjs-lib
 
-Typings are for version 6.0.2
+Typings are for version 6.1.0
 
 ## Library description:
 Client-side Bitcoin JavaScript library

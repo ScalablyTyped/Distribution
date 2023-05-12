@@ -2,6 +2,7 @@ package typings.firebaseUtil
 
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StringDictionary
+import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,6 +12,21 @@ object distSrcCryptMod {
   @JSImport("@firebase/util/dist/src/crypt", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
+  
+  @JSImport("@firebase/util/dist/src/crypt", "DecodeBase64StringError")
+  @js.native
+  open class DecodeBase64StringError ()
+    extends StObject
+       with Error {
+    
+    /* standard es5 */
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* standard es5 */
+    /* CompleteClass */
+    var name: String = js.native
+  }
   
   @JSImport("@firebase/util/dist/src/crypt", "base64")
   @js.native

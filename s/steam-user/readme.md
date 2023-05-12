@@ -1,7 +1,7 @@
 
 # Scala.js typings for steam-user
 
-Typings are for version 4.23
+Typings are for version 4.26
 
 ## Library description:
 Steam client for Individual and AnonUser Steam account types

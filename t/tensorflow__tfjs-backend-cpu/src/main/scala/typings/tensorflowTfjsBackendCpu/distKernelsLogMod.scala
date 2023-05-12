@@ -19,5 +19,5 @@ object distKernelsLogMod {
   
   @JSImport("@tensorflow/tfjs-backend-cpu/dist/kernels/Log", "logImpl")
   @js.native
-  val logImpl: SimpleUnaryImpl = js.native
+  val logImpl: SimpleUnaryImpl[Double, Double] = js.native
 }

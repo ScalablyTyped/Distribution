@@ -47,6 +47,11 @@ trait DescribeLaunchTemplateVersionsRequest extends StObject {
   var NextToken: js.UndefOr[String] = js.undefined
   
   /**
+    * If true, and if a Systems Manager parameter is specified for ImageId, the AMI ID is displayed in the response for imageId. If false, and if a Systems Manager parameter is specified for ImageId, the parameter is displayed in the response for imageId.  For more information, see Use a Systems Manager parameter instead of an AMI ID in the Amazon Elastic Compute Cloud User Guide. Default: false 
+    */
+  var ResolveAlias: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * One or more versions of the launch template. Valid values depend on whether you are describing a specified launch template (by ID or name) or all launch templates in your account. To describe one or more versions of a specified launch template, valid values are $Latest, $Default, and numbers. To describe all launch templates in your account that are defined as the latest version, the valid value is $Latest. To describe all launch templates in your account that are defined as the default version, the valid value is $Default. You can specify $Latest and $Default in the same request. You cannot specify numbers.
     */
   var Versions: js.UndefOr[VersionStringList] = js.undefined
@@ -94,6 +99,10 @@ object DescribeLaunchTemplateVersionsRequest {
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    
+    inline def setResolveAlias(value: Boolean): Self = StObject.set(x, "ResolveAlias", value.asInstanceOf[js.Any])
+    
+    inline def setResolveAliasUndefined: Self = StObject.set(x, "ResolveAlias", js.undefined)
     
     inline def setVersions(value: VersionStringList): Self = StObject.set(x, "Versions", value.asInstanceOf[js.Any])
     

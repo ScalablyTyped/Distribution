@@ -27,9 +27,24 @@ trait RecoveryPointByResource extends StObject {
   var EncryptionKeyArn: js.UndefOr[ARN] = js.undefined
   
   /**
+    * This is a boolean value indicating this is a parent (composite) recovery point.
+    */
+  var IsParent: js.UndefOr[scala.Boolean] = js.undefined
+  
+  /**
+    * This is the Amazon Resource Name (ARN) of the parent (composite) recovery point.
+    */
+  var ParentRecoveryPointArn: js.UndefOr[ARN] = js.undefined
+  
+  /**
     * An Amazon Resource Name (ARN) that uniquely identifies a recovery point; for example, arn:aws:backup:us-east-1:123456789012:recovery-point:1EB3B5E7-9EB0-435A-A80B-108B488B0D45.
     */
   var RecoveryPointArn: js.UndefOr[ARN] = js.undefined
+  
+  /**
+    * This is the non-unique name of the resource that belongs to the specified backup.
+    */
+  var ResourceName: js.UndefOr[String] = js.undefined
   
   /**
     * A status code specifying the state of the recovery point.
@@ -67,9 +82,21 @@ object RecoveryPointByResource {
     
     inline def setEncryptionKeyArnUndefined: Self = StObject.set(x, "EncryptionKeyArn", js.undefined)
     
+    inline def setIsParent(value: scala.Boolean): Self = StObject.set(x, "IsParent", value.asInstanceOf[js.Any])
+    
+    inline def setIsParentUndefined: Self = StObject.set(x, "IsParent", js.undefined)
+    
+    inline def setParentRecoveryPointArn(value: ARN): Self = StObject.set(x, "ParentRecoveryPointArn", value.asInstanceOf[js.Any])
+    
+    inline def setParentRecoveryPointArnUndefined: Self = StObject.set(x, "ParentRecoveryPointArn", js.undefined)
+    
     inline def setRecoveryPointArn(value: ARN): Self = StObject.set(x, "RecoveryPointArn", value.asInstanceOf[js.Any])
     
     inline def setRecoveryPointArnUndefined: Self = StObject.set(x, "RecoveryPointArn", js.undefined)
+    
+    inline def setResourceName(value: String): Self = StObject.set(x, "ResourceName", value.asInstanceOf[js.Any])
+    
+    inline def setResourceNameUndefined: Self = StObject.set(x, "ResourceName", js.undefined)
     
     inline def setStatus(value: RecoveryPointStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     

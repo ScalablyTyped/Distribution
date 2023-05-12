@@ -1,13 +1,18 @@
 package typings.octokitOpenapiTypes.anon
 
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings._empty
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.action_required
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.cancelled
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.completed
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.failure
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.in_progress
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.neutral
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.pending
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.queued_
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.requested
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.skipped
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.stale
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.startup_failure
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.success
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.timed_out
 import org.scalablytyped.runtime.StObject
@@ -16,79 +21,81 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Headcommit extends StObject {
   
-  /** @example d6fde92930d4715a2b49857d24b940956b26d2d3 */
   var after: String | Null
   
-  var app: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-integration'] */ js.Any
+  /**
+    * App
+    * @description GitHub apps are a new way to extend GitHub. They can be installed directly on organizations and user accounts and granted access to specific repositories. They come with granular permissions and built-in webhooks. GitHub apps are first class actors within GitHub.
+    */
+  var app: CreatedatDescription
   
-  /** @example 146e867f55c26428e5f9fade55a9bbf5e95a7912 */
   var before: String | Null
   
+  /** Format: uri */
   var check_runs_url: String
   
   /**
-    * @example neutral
+    * @description The summary conclusion for all check runs that are part of the check suite. Can be one of `success`, `failure`, `neutral`, `cancelled`, `timed_out`, `action_required` or `stale`. This value will be `null` until the check run has `completed`.
     * @enum {string|null}
     */
-  var conclusion: success | failure | neutral | cancelled | skipped | timed_out | action_required | Null
+  var conclusion: success | failure | neutral | cancelled | timed_out | action_required | stale | _empty | skipped | startup_failure | Null
   
   /** Format: date-time */
-  var created_at: String | Null
+  var created_at: String
   
-  /** @example master */
+  /** @description The head branch name the changes are on. */
   var head_branch: String | Null
   
-  var head_commit: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['simple-commit'] */ js.Any
+  /** SimpleCommit */
+  var head_commit: Treeid
   
-  /**
-    * @description The SHA of the head commit that is being checked.
-    * @example 009b8a3a9ccbb128af87f9b1c0f4c62e8a304f6d
-    */
+  /** @description The SHA of the head commit that is being checked. */
   var head_sha: String
   
-  /** @example 5 */
   var id: Double
   
   var latest_check_runs_count: Double
   
-  /** @example MDEwOkNoZWNrU3VpdGU1 */
   var node_id: String
   
-  var pull_requests: (js.Array[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['pull-request-minimal'] */ js.Any
-  ]) | Null
-  
-  var repository: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['minimal-repository'] */ js.Any
+  /** @description An array of pull requests that match this check suite. A pull request matches a check suite if they have the same `head_sha` and `head_branch`. When the check suite's `head_branch` is in a forked repository it will be `null` and the `pull_requests` array will be empty. */
+  var pull_requests: js.Array[NumberUrl]
   
   var rerequestable: js.UndefOr[Boolean] = js.undefined
   
   var runs_rerequestable: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * @example completed
+    * @description The summary status for all check runs that are part of the check suite. Can be `requested`, `in_progress`, or `completed`.
     * @enum {string|null}
     */
-  var status: queued_ | in_progress | completed | Null
+  var status: requested | in_progress | completed | queued_ | _empty | pending | Null
   
   /** Format: date-time */
-  var updated_at: String | Null
+  var updated_at: String
   
-  /** @example https://api.github.com/repos/github/hello-world/check-suites/5 */
-  var url: String | Null
+  /**
+    * Format: uri
+    * @description URL that points to the check suite API resource.
+    */
+  var url: String
 }
 object Headcommit {
   
   inline def apply(
-    app: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-integration'] */ js.Any,
+    app: CreatedatDescription,
     check_runs_url: String,
-    head_commit: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['simple-commit'] */ js.Any,
+    created_at: String,
+    head_commit: Treeid,
     head_sha: String,
     id: Double,
     latest_check_runs_count: Double,
     node_id: String,
-    repository: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['minimal-repository'] */ js.Any
+    pull_requests: js.Array[NumberUrl],
+    updated_at: String,
+    url: String
   ): Headcommit = {
-    val __obj = js.Dynamic.literal(app = app.asInstanceOf[js.Any], check_runs_url = check_runs_url.asInstanceOf[js.Any], head_commit = head_commit.asInstanceOf[js.Any], head_sha = head_sha.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], latest_check_runs_count = latest_check_runs_count.asInstanceOf[js.Any], node_id = node_id.asInstanceOf[js.Any], repository = repository.asInstanceOf[js.Any], after = null, before = null, conclusion = null, created_at = null, head_branch = null, pull_requests = null, status = null, updated_at = null, url = null)
+    val __obj = js.Dynamic.literal(app = app.asInstanceOf[js.Any], check_runs_url = check_runs_url.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], head_commit = head_commit.asInstanceOf[js.Any], head_sha = head_sha.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], latest_check_runs_count = latest_check_runs_count.asInstanceOf[js.Any], node_id = node_id.asInstanceOf[js.Any], pull_requests = pull_requests.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], after = null, before = null, conclusion = null, head_branch = null, status = null)
     __obj.asInstanceOf[Headcommit]
   }
   
@@ -99,9 +106,7 @@ object Headcommit {
     
     inline def setAfterNull: Self = StObject.set(x, "after", null)
     
-    inline def setApp(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-integration'] */ js.Any
-    ): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
+    inline def setApp(value: CreatedatDescription): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
     
     inline def setBefore(value: String): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
     
@@ -109,21 +114,19 @@ object Headcommit {
     
     inline def setCheck_runs_url(value: String): Self = StObject.set(x, "check_runs_url", value.asInstanceOf[js.Any])
     
-    inline def setConclusion(value: success | failure | neutral | cancelled | skipped | timed_out | action_required): Self = StObject.set(x, "conclusion", value.asInstanceOf[js.Any])
+    inline def setConclusion(
+      value: success | failure | neutral | cancelled | timed_out | action_required | stale | _empty | skipped | startup_failure
+    ): Self = StObject.set(x, "conclusion", value.asInstanceOf[js.Any])
     
     inline def setConclusionNull: Self = StObject.set(x, "conclusion", null)
     
     inline def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
     
-    inline def setCreated_atNull: Self = StObject.set(x, "created_at", null)
-    
     inline def setHead_branch(value: String): Self = StObject.set(x, "head_branch", value.asInstanceOf[js.Any])
     
     inline def setHead_branchNull: Self = StObject.set(x, "head_branch", null)
     
-    inline def setHead_commit(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['simple-commit'] */ js.Any
-    ): Self = StObject.set(x, "head_commit", value.asInstanceOf[js.Any])
+    inline def setHead_commit(value: Treeid): Self = StObject.set(x, "head_commit", value.asInstanceOf[js.Any])
     
     inline def setHead_sha(value: String): Self = StObject.set(x, "head_sha", value.asInstanceOf[js.Any])
     
@@ -133,21 +136,9 @@ object Headcommit {
     
     inline def setNode_id(value: String): Self = StObject.set(x, "node_id", value.asInstanceOf[js.Any])
     
-    inline def setPull_requests(
-      value: js.Array[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['pull-request-minimal'] */ js.Any
-        ]
-    ): Self = StObject.set(x, "pull_requests", value.asInstanceOf[js.Any])
+    inline def setPull_requests(value: js.Array[NumberUrl]): Self = StObject.set(x, "pull_requests", value.asInstanceOf[js.Any])
     
-    inline def setPull_requestsNull: Self = StObject.set(x, "pull_requests", null)
-    
-    inline def setPull_requestsVarargs(
-      value: (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['pull-request-minimal'] */ js.Any)*
-    ): Self = StObject.set(x, "pull_requests", js.Array(value*))
-    
-    inline def setRepository(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['minimal-repository'] */ js.Any
-    ): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
+    inline def setPull_requestsVarargs(value: NumberUrl*): Self = StObject.set(x, "pull_requests", js.Array(value*))
     
     inline def setRerequestable(value: Boolean): Self = StObject.set(x, "rerequestable", value.asInstanceOf[js.Any])
     
@@ -157,16 +148,12 @@ object Headcommit {
     
     inline def setRuns_rerequestableUndefined: Self = StObject.set(x, "runs_rerequestable", js.undefined)
     
-    inline def setStatus(value: queued_ | in_progress | completed): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: requested | in_progress | completed | queued_ | _empty | pending): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     inline def setStatusNull: Self = StObject.set(x, "status", null)
     
     inline def setUpdated_at(value: String): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])
     
-    inline def setUpdated_atNull: Self = StObject.set(x, "updated_at", null)
-    
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
-    
-    inline def setUrlNull: Self = StObject.set(x, "url", null)
   }
 }

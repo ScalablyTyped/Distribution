@@ -21,10 +21,11 @@ trait ClassComponent
         Any, 
         js.Object, 
         `false`, 
-        ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+        ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String, js.Object], 
+        js.Object, 
         js.Object
       ]
     ] {
   
-  var __vccOpts: ComponentOptions[js.Object, Any, Any, Any, Any, Any, Any, Any] = js.native
+  var __vccOpts: ComponentOptions[js.Object, Any, Any, Any, Any, Any, Any, Any, Any] = js.native
 }

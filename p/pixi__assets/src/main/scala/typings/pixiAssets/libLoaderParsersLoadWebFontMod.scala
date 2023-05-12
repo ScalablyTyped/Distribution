@@ -2,6 +2,7 @@ package typings.pixiAssets
 
 import typings.pixiAssets.libLoaderParsersLoaderParserMod.LoaderParser
 import typings.std.FontFace
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +17,7 @@ object libLoaderParsersLoadWebFontMod {
   
   @JSImport("@pixi/assets/lib/loader/parsers/loadWebFont", "loadWebFont")
   @js.native
-  val loadWebFont: LoaderParser[FontFace | js.Array[FontFace], Any] = js.native
+  val loadWebFont: LoaderParser[FontFace | js.Array[FontFace], Any, Record[String, Any]] = js.native
   
   trait LoadFontData extends StObject {
     

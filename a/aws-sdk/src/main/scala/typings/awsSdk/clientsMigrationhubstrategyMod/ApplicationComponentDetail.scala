@@ -32,6 +32,11 @@ trait ApplicationComponentDetail extends StObject {
   var appType: js.UndefOr[AppType] = js.undefined
   
   /**
+    * The error in the analysis of the source code or database.
+    */
+  var appUnitError: js.UndefOr[AppUnitError] = js.undefined
+  
+  /**
     *  The ID of the server that the application component is running on. 
     */
   var associatedServerId: js.UndefOr[ServerId] = js.undefined
@@ -92,6 +97,21 @@ trait ApplicationComponentDetail extends StObject {
   var resourceSubType: js.UndefOr[ResourceSubType] = js.undefined
   
   /**
+    * A list of the analysis results.
+    */
+  var resultList: js.UndefOr[ResultList] = js.undefined
+  
+  /**
+    * The status of the application unit.
+    */
+  var runtimeStatus: js.UndefOr[RuntimeAnalysisStatus] = js.undefined
+  
+  /**
+    * The status message for the application unit.
+    */
+  var runtimeStatusMessage: js.UndefOr[StatusMessage] = js.undefined
+  
+  /**
     *  Details about the source code repository associated with the application component. 
     */
   var sourceCodeRepositories: js.UndefOr[SourceCodeRepositories] = js.undefined
@@ -130,6 +150,10 @@ object ApplicationComponentDetail {
     inline def setAppType(value: AppType): Self = StObject.set(x, "appType", value.asInstanceOf[js.Any])
     
     inline def setAppTypeUndefined: Self = StObject.set(x, "appType", js.undefined)
+    
+    inline def setAppUnitError(value: AppUnitError): Self = StObject.set(x, "appUnitError", value.asInstanceOf[js.Any])
+    
+    inline def setAppUnitErrorUndefined: Self = StObject.set(x, "appUnitError", js.undefined)
     
     inline def setAssociatedServerId(value: ServerId): Self = StObject.set(x, "associatedServerId", value.asInstanceOf[js.Any])
     
@@ -180,6 +204,20 @@ object ApplicationComponentDetail {
     inline def setResourceSubType(value: ResourceSubType): Self = StObject.set(x, "resourceSubType", value.asInstanceOf[js.Any])
     
     inline def setResourceSubTypeUndefined: Self = StObject.set(x, "resourceSubType", js.undefined)
+    
+    inline def setResultList(value: ResultList): Self = StObject.set(x, "resultList", value.asInstanceOf[js.Any])
+    
+    inline def setResultListUndefined: Self = StObject.set(x, "resultList", js.undefined)
+    
+    inline def setResultListVarargs(value: Result*): Self = StObject.set(x, "resultList", js.Array(value*))
+    
+    inline def setRuntimeStatus(value: RuntimeAnalysisStatus): Self = StObject.set(x, "runtimeStatus", value.asInstanceOf[js.Any])
+    
+    inline def setRuntimeStatusMessage(value: StatusMessage): Self = StObject.set(x, "runtimeStatusMessage", value.asInstanceOf[js.Any])
+    
+    inline def setRuntimeStatusMessageUndefined: Self = StObject.set(x, "runtimeStatusMessage", js.undefined)
+    
+    inline def setRuntimeStatusUndefined: Self = StObject.set(x, "runtimeStatus", js.undefined)
     
     inline def setSourceCodeRepositories(value: SourceCodeRepositories): Self = StObject.set(x, "sourceCodeRepositories", value.asInstanceOf[js.Any])
     

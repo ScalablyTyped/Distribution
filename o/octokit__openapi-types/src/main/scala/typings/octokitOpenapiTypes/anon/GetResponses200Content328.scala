@@ -7,12 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetResponses200Content328 extends StObject {
   
   /**
-    * Returns the `total` number of commits authored by the contributor. In addition, the response includes a Weekly Hash (`weeks` array) with the following information:
+    * Get a repository README
+    * @description Gets the preferred README for a repository.
     *
-    * *   `w` - Start of the week, given as a [Unix timestamp](http://en.wikipedia.org/wiki/Unix_time).
-    * *   `a` - Number of additions
-    * *   `d` - Number of deletions
-    * *   `c` - Number of commits
+    * READMEs support [custom media types](https://docs.github.com/rest/reference/repos#custom-media-types) for retrieving the raw content or rendered HTML.
     */
   var get: Responses200Content328
 }

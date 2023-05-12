@@ -6,6 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait JoystickOption extends StObject {
   
+  var board: js.UndefOr[Board] = js.undefined
+  
   var invert: js.UndefOr[Boolean] = js.undefined
   
   var invertX: js.UndefOr[Boolean] = js.undefined
@@ -23,6 +25,10 @@ object JoystickOption {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: JoystickOption] (val x: Self) extends AnyVal {
+    
+    inline def setBoard(value: Board): Self = StObject.set(x, "board", value.asInstanceOf[js.Any])
+    
+    inline def setBoardUndefined: Self = StObject.set(x, "board", js.undefined)
     
     inline def setInvert(value: Boolean): Self = StObject.set(x, "invert", value.asInstanceOf[js.Any])
     

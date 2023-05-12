@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@atlaskit/primitives" : "0.9.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@atlaskit/primitives" : "0.9.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

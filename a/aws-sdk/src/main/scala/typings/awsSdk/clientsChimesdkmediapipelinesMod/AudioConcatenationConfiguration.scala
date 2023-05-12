@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AudioConcatenationConfiguration extends StObject {
   
   /**
-    * Enables the name object, where name is the name of the configuration object, such as AudioConcatenation.
+    * Enables or disables the configuration object.
     */
   var State: AudioArtifactsConcatenationState
 }

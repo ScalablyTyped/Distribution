@@ -12,6 +12,7 @@ import typings.devtoolsProtocol.devtoolsProtocolStrings.exception
 import typings.devtoolsProtocol.devtoolsProtocolStrings.instrumentation
 import typings.devtoolsProtocol.devtoolsProtocolStrings.other_
 import typings.devtoolsProtocol.devtoolsProtocolStrings.promiseRejection
+import typings.devtoolsProtocol.devtoolsProtocolStrings.step
 import typings.devtoolsProtocol.mod.Protocol.Runtime.StackTrace
 import typings.devtoolsProtocol.mod.Protocol.Runtime.StackTraceId
 import org.scalablytyped.runtime.StObject
@@ -53,13 +54,13 @@ trait PausedEvent extends StObject {
   /**
     * Pause reason. (PausedEventReason enum)
     */
-  var reason: ambiguous | assert | CSPViolation | debugCommand | DOM | EventListener | exception | instrumentation | OOM | other_ | promiseRejection | XHR
+  var reason: ambiguous | assert | CSPViolation | debugCommand | DOM | EventListener | exception | instrumentation | OOM | other_ | promiseRejection | XHR | step
 }
 object PausedEvent {
   
   inline def apply(
     callFrames: js.Array[CallFrame],
-    reason: ambiguous | assert | CSPViolation | debugCommand | DOM | EventListener | exception | instrumentation | OOM | other_ | promiseRejection | XHR
+    reason: ambiguous | assert | CSPViolation | debugCommand | DOM | EventListener | exception | instrumentation | OOM | other_ | promiseRejection | XHR | step
   ): PausedEvent = {
     val __obj = js.Dynamic.literal(callFrames = callFrames.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any])
     __obj.asInstanceOf[PausedEvent]
@@ -95,7 +96,7 @@ object PausedEvent {
     inline def setHitBreakpointsVarargs(value: String*): Self = StObject.set(x, "hitBreakpoints", js.Array(value*))
     
     inline def setReason(
-      value: ambiguous | assert | CSPViolation | debugCommand | DOM | EventListener | exception | instrumentation | OOM | other_ | promiseRejection | XHR
+      value: ambiguous | assert | CSPViolation | debugCommand | DOM | EventListener | exception | instrumentation | OOM | other_ | promiseRejection | XHR | step
     ): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
   }
 }

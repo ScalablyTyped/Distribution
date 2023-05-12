@@ -6,22 +6,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `507` extends StObject {
   
-  @JSName("application/json")
-  var applicationSlashjson: js.Array[Securityadvisory]
+  var page: js.UndefOr[Double] = js.undefined
+  
+  var per_page: js.UndefOr[Double] = js.undefined
 }
 object `507` {
   
-  inline def apply(applicationSlashjson: js.Array[Securityadvisory]): `507` = {
+  inline def apply(): `507` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("application/json")(applicationSlashjson.asInstanceOf[js.Any])
     __obj.asInstanceOf[`507`]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: `507`] (val x: Self) extends AnyVal {
     
-    inline def setApplicationSlashjson(value: js.Array[Securityadvisory]): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
+    inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
-    inline def setApplicationSlashjsonVarargs(value: Securityadvisory*): Self = StObject.set(x, "application/json", js.Array(value*))
+    inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
+    
+    inline def setPer_page(value: Double): Self = StObject.set(x, "per_page", value.asInstanceOf[js.Any])
+    
+    inline def setPer_pageUndefined: Self = StObject.set(x, "per_page", js.undefined)
   }
 }

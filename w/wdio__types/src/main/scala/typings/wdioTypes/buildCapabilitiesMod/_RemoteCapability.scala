@@ -7,8 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait _RemoteCapability extends StObject
 object _RemoteCapability {
   
-  inline def DesiredCapabilities(): typings.wdioTypes.buildCapabilitiesMod.DesiredCapabilities = {
+  inline def DesiredCapabilities(Object: js.Object): typings.wdioTypes.buildCapabilitiesMod.DesiredCapabilities = {
     val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, Object)
     __obj.asInstanceOf[typings.wdioTypes.buildCapabilitiesMod.DesiredCapabilities]
   }
   

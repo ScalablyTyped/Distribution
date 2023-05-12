@@ -31,7 +31,7 @@ trait Formatter extends StObject {
   @JSName("format")
   var format_Original: FormatFunction
   
-  def init(services: Services, i18nextOptions: InitOptions): Unit
+  def init(services: Services, i18nextOptions: InitOptions[js.Object]): Unit
 }
 object Formatter {
   
@@ -43,7 +43,7 @@ object Formatter {
       js.Function1[/* value */ Any, String]
     ]) => Unit,
     format: (/* value */ Any, /* format */ js.UndefOr[String], /* lng */ js.UndefOr[String], /* options */ js.UndefOr[InterpolationOptions & StringMap]) => String,
-    init: (Services, InitOptions) => Unit
+    init: (Services, InitOptions[js.Object]) => Unit
   ): Formatter = {
     val __obj = js.Dynamic.literal(add = js.Any.fromFunction2(add), addCached = js.Any.fromFunction2(addCached), format = js.Any.fromFunction4(format), init = js.Any.fromFunction2(init))
     __obj.asInstanceOf[Formatter]
@@ -68,6 +68,6 @@ object Formatter {
       value: (/* value */ Any, /* format */ js.UndefOr[String], /* lng */ js.UndefOr[String], /* options */ js.UndefOr[InterpolationOptions & StringMap]) => String
     ): Self = StObject.set(x, "format", js.Any.fromFunction4(value))
     
-    inline def setInit(value: (Services, InitOptions) => Unit): Self = StObject.set(x, "init", js.Any.fromFunction2(value))
+    inline def setInit(value: (Services, InitOptions[js.Object]) => Unit): Self = StObject.set(x, "init", js.Any.fromFunction2(value))
   }
 }

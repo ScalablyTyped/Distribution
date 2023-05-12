@@ -22,9 +22,17 @@ object keysLogTypesMod {
   @js.native
   val DEVTOOLS_SCRIPT_EXECUTION: Double = js.native
   
+  @JSImport("@nginstack/engine/keys/LogTypes", "EMAIL_SENT_SUCCESSFULLY")
+  @js.native
+  val EMAIL_SENT_SUCCESSFULLY: Double = js.native
+  
   @JSImport("@nginstack/engine/keys/LogTypes", "ERROR_EVENT")
   @js.native
   val ERROR_EVENT: Double = js.native
+  
+  @JSImport("@nginstack/engine/keys/LogTypes", "ERROR_SENDING_EMAIL")
+  @js.native
+  val ERROR_SENDING_EMAIL: Double = js.native
   
   @JSImport("@nginstack/engine/keys/LogTypes", "INSERT")
   @js.native
@@ -69,6 +77,10 @@ object keysLogTypesMod {
   @JSImport("@nginstack/engine/keys/LogTypes", "REMOTE_LOGIN_FAIL")
   @js.native
   val REMOTE_LOGIN_FAIL: Double = js.native
+  
+  @JSImport("@nginstack/engine/keys/LogTypes", "TRANSACTION_LOG_DEACTIVATION")
+  @js.native
+  val TRANSACTION_LOG_DEACTIVATION: Double = js.native
   
   @JSImport("@nginstack/engine/keys/LogTypes", "UPDATE")
   @js.native

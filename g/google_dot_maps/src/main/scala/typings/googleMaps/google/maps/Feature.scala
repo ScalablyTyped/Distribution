@@ -4,13 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Available only in the v=beta channel: https://goo.gle/3oAthT3.
-  * An interface representing a vector map tile feature. These are inputs to
-  * the <code>FeatureStyleFunction</code>. Do not save a reference to a
-  * particular <code>Feature</code> object because the reference will not be
-  * stable.
-  */
 trait Feature extends StObject {
   
   /**

@@ -1,10 +1,15 @@
 package typings.react
 
+import typings.react.anon.UNDEFINEDVOIDONLY
 import typings.react.mod.ExoticComponent
 import typings.react.mod.ReactElement
+import typings.react.mod.ReactNode
+import typings.react.mod._ReactNode
 import typings.react.reactStrings.backwards
 import typings.react.reactStrings.forwards
 import typings.std.Exclude
+import typings.std.FormData
+import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +27,43 @@ object experimentalMod {
     @js.native
     val SuspenseList: ExoticComponent[SuspenseListProps] = js.native
     
-    inline def experimentalUseEvent[T /* <: js.Function */](event: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("experimental_useEvent")(event.asInstanceOf[js.Any]).asInstanceOf[T]
+    inline def experimentalUseEffectEvent[T /* <: js.Function */](event: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("experimental_useEffectEvent")(event.asInstanceOf[js.Any]).asInstanceOf[T]
+    
+    trait DO_NOT_USE_OR_YOU_WILL_BE_FIRED_EXPERIMENTAL_FORM_ACTIONS extends StObject {
+      
+      def functions(formData: FormData): Unit
+    }
+    object DO_NOT_USE_OR_YOU_WILL_BE_FIRED_EXPERIMENTAL_FORM_ACTIONS {
+      
+      inline def apply(functions: FormData => Unit): DO_NOT_USE_OR_YOU_WILL_BE_FIRED_EXPERIMENTAL_FORM_ACTIONS = {
+        val __obj = js.Dynamic.literal(functions = js.Any.fromFunction1(functions))
+        __obj.asInstanceOf[DO_NOT_USE_OR_YOU_WILL_BE_FIRED_EXPERIMENTAL_FORM_ACTIONS]
+      }
+      
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DO_NOT_USE_OR_YOU_WILL_BE_FIRED_EXPERIMENTAL_FORM_ACTIONS] (val x: Self) extends AnyVal {
+        
+        inline def setFunctions(value: FormData => Unit): Self = StObject.set(x, "functions", js.Any.fromFunction1(value))
+      }
+    }
+    
+    trait DO_NOT_USE_OR_YOU_WILL_BE_FIRED_EXPERIMENTAL_REACT_NODES extends StObject {
+      
+      var promises: PromiseLikeOfReactNode
+    }
+    object DO_NOT_USE_OR_YOU_WILL_BE_FIRED_EXPERIMENTAL_REACT_NODES {
+      
+      inline def apply(promises: PromiseLikeOfReactNode): DO_NOT_USE_OR_YOU_WILL_BE_FIRED_EXPERIMENTAL_REACT_NODES = {
+        val __obj = js.Dynamic.literal(promises = promises.asInstanceOf[js.Any])
+        __obj.asInstanceOf[DO_NOT_USE_OR_YOU_WILL_BE_FIRED_EXPERIMENTAL_REACT_NODES]
+      }
+      
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DO_NOT_USE_OR_YOU_WILL_BE_FIRED_EXPERIMENTAL_REACT_NODES] (val x: Self) extends AnyVal {
+        
+        inline def setPromises(value: PromiseLikeOfReactNode): Self = StObject.set(x, "promises", value.asInstanceOf[js.Any])
+      }
+    }
     
     trait DirectionalSuspenseListProps
       extends StObject
@@ -93,6 +134,25 @@ object experimentalMod {
         inline def setRevealOrderUndefined: Self = StObject.set(x, "revealOrder", js.undefined)
       }
     }
+    
+    // Need an interface to not cause ReactNode to be a self-referential type.
+    /** 
+    NOTE: Rewritten from type alias:
+    {{{
+    type PromiseLikeOfReactNode = std.PromiseLike<react.react.ReactNode>
+    }}}
+    to avoid circular code involving: 
+    - react.react.PromiseLikeOfReactNode
+    - react.react.ReactFragment
+    - react.react.ReactNode
+    - react.react.ReactNodeArray
+    - react.react/experimental.react.PromiseLikeOfReactNode
+    */
+    @js.native
+    trait PromiseLikeOfReactNode
+      extends StObject
+         with PromiseLike[ReactNode]
+         with _ReactNode
     
     trait SuspenseListCommonProps extends StObject {
       
@@ -188,5 +248,12 @@ object experimentalMod {
         inline def setUnstable_expectedLoadTimeUndefined: Self = StObject.set(x, "unstable_expectedLoadTime", js.undefined)
       }
     }
+    
+    type TransitionStartFunction = js.Function1[
+        /* callback */ js.Function0[js.Promise[typings.react.mod.VoidOrUndefinedOnly]], 
+        Unit
+      ]
   }
+  
+  type VoidOrUndefinedOnly = Unit | UNDEFINEDVOIDONLY
 }

@@ -12,7 +12,7 @@ trait DescribeDataSourceResponse extends StObject {
   var Configuration: js.UndefOr[DataSourceConfiguration] = js.undefined
   
   /**
-    * The Unix timestamp of when the data source connector was created.
+    * The Unix timestamp when the data source connector was created.
     */
   var CreatedAt: js.UndefOr[js.Date] = js.undefined
   
@@ -72,7 +72,7 @@ trait DescribeDataSourceResponse extends StObject {
   var Type: js.UndefOr[DataSourceType] = js.undefined
   
   /**
-    * The Unix timestamp of when the data source connector was last updated.
+    * The Unix timestamp when the data source connector was last updated.
     */
   var UpdatedAt: js.UndefOr[js.Date] = js.undefined
   

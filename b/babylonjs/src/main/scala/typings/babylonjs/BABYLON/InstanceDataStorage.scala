@@ -13,6 +13,8 @@ trait InstanceDataStorage extends StObject {
   
   var batchCacheReplacementModeInFrozenMode: InstancesBatch
   
+  var forceMatrixUpdates: Boolean
+  
   var hardwareInstancedRendering: Boolean
   
   var instancesBuffer: Nullable[Buffer]
@@ -48,6 +50,7 @@ object InstanceDataStorage {
   inline def apply(
     batchCache: InstancesBatch,
     batchCacheReplacementModeInFrozenMode: InstancesBatch,
+    forceMatrixUpdates: Boolean,
     hardwareInstancedRendering: Boolean,
     instancesBufferSize: Double,
     instancesData: js.typedarray.Float32Array,
@@ -60,7 +63,7 @@ object InstanceDataStorage {
     sideOrientation: Double,
     visibleInstances: Any
   ): InstanceDataStorage = {
-    val __obj = js.Dynamic.literal(batchCache = batchCache.asInstanceOf[js.Any], batchCacheReplacementModeInFrozenMode = batchCacheReplacementModeInFrozenMode.asInstanceOf[js.Any], hardwareInstancedRendering = hardwareInstancedRendering.asInstanceOf[js.Any], instancesBufferSize = instancesBufferSize.asInstanceOf[js.Any], instancesData = instancesData.asInstanceOf[js.Any], instancesPreviousData = instancesPreviousData.asInstanceOf[js.Any], isFrozen = isFrozen.asInstanceOf[js.Any], manualUpdate = manualUpdate.asInstanceOf[js.Any], overridenInstanceCount = overridenInstanceCount.asInstanceOf[js.Any], previousManualUpdate = previousManualUpdate.asInstanceOf[js.Any], previousRenderId = previousRenderId.asInstanceOf[js.Any], sideOrientation = sideOrientation.asInstanceOf[js.Any], visibleInstances = visibleInstances.asInstanceOf[js.Any], instancesBuffer = null, instancesPreviousBuffer = null, masterMeshPreviousWorldMatrix = null, previousBatch = null)
+    val __obj = js.Dynamic.literal(batchCache = batchCache.asInstanceOf[js.Any], batchCacheReplacementModeInFrozenMode = batchCacheReplacementModeInFrozenMode.asInstanceOf[js.Any], forceMatrixUpdates = forceMatrixUpdates.asInstanceOf[js.Any], hardwareInstancedRendering = hardwareInstancedRendering.asInstanceOf[js.Any], instancesBufferSize = instancesBufferSize.asInstanceOf[js.Any], instancesData = instancesData.asInstanceOf[js.Any], instancesPreviousData = instancesPreviousData.asInstanceOf[js.Any], isFrozen = isFrozen.asInstanceOf[js.Any], manualUpdate = manualUpdate.asInstanceOf[js.Any], overridenInstanceCount = overridenInstanceCount.asInstanceOf[js.Any], previousManualUpdate = previousManualUpdate.asInstanceOf[js.Any], previousRenderId = previousRenderId.asInstanceOf[js.Any], sideOrientation = sideOrientation.asInstanceOf[js.Any], visibleInstances = visibleInstances.asInstanceOf[js.Any], instancesBuffer = null, instancesPreviousBuffer = null, masterMeshPreviousWorldMatrix = null, previousBatch = null)
     __obj.asInstanceOf[InstanceDataStorage]
   }
   
@@ -70,6 +73,8 @@ object InstanceDataStorage {
     inline def setBatchCache(value: InstancesBatch): Self = StObject.set(x, "batchCache", value.asInstanceOf[js.Any])
     
     inline def setBatchCacheReplacementModeInFrozenMode(value: InstancesBatch): Self = StObject.set(x, "batchCacheReplacementModeInFrozenMode", value.asInstanceOf[js.Any])
+    
+    inline def setForceMatrixUpdates(value: Boolean): Self = StObject.set(x, "forceMatrixUpdates", value.asInstanceOf[js.Any])
     
     inline def setHardwareInstancedRendering(value: Boolean): Self = StObject.set(x, "hardwareInstancedRendering", value.asInstanceOf[js.Any])
     

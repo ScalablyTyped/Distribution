@@ -32,7 +32,7 @@ trait OracleSettings extends StObject {
   var ArchivedLogDestId: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
-    * When this field is set to Y, DMS only accesses the archived redo logs. If the archived redo logs are stored on Oracle ASM only, the DMS user account needs to be granted ASM privileges.
+    * When this field is set to Y, DMS only accesses the archived redo logs. If the archived redo logs are stored on Automatic Storage Management (ASM) only, the DMS user account needs to be granted ASM privileges.
     */
   var ArchivedLogsOnly: js.UndefOr[BooleanOptional] = js.undefined
   
@@ -55,6 +55,11 @@ trait OracleSettings extends StObject {
     * Specifies whether the length of a character column is in bytes or in characters. To indicate that the character column length is in characters, set this attribute to CHAR. Otherwise, the character column length is in bytes. Example: charLengthSemantics=CHAR; 
     */
   var CharLengthSemantics: js.UndefOr[typings.awsSdk.clientsDmsMod.CharLengthSemantics] = js.undefined
+  
+  /**
+    * When true, converts timestamps with the timezone datatype to their UTC value.
+    */
+  var ConvertTimestampWithZoneToUTC: js.UndefOr[BooleanOptional] = js.undefined
   
   /**
     * Database name for the endpoint.
@@ -137,12 +142,12 @@ trait OracleSettings extends StObject {
   var SecretsManagerAccessRoleArn: js.UndefOr[String] = js.undefined
   
   /**
-    * Required only if your Oracle endpoint uses Advanced Storage Manager (ASM). The full ARN of the IAM role that specifies DMS as the trusted entity and grants the required permissions to access the SecretsManagerOracleAsmSecret. This SecretsManagerOracleAsmSecret has the secret value that allows access to the Oracle ASM of the endpoint.  You can specify one of two sets of values for these permissions. You can specify the values for this setting and SecretsManagerOracleAsmSecretId. Or you can specify clear-text values for AsmUserName, AsmPassword, and AsmServerName. You can't specify both. For more information on creating this SecretsManagerOracleAsmSecret and the SecretsManagerOracleAsmAccessRoleArn and SecretsManagerOracleAsmSecretId required to access it, see Using secrets to access Database Migration Service resources in the Database Migration Service User Guide. 
+    * Required only if your Oracle endpoint uses Automatic Storage Management (ASM). The full ARN of the IAM role that specifies DMS as the trusted entity and grants the required permissions to access the SecretsManagerOracleAsmSecret. This SecretsManagerOracleAsmSecret has the secret value that allows access to the Oracle ASM of the endpoint.  You can specify one of two sets of values for these permissions. You can specify the values for this setting and SecretsManagerOracleAsmSecretId. Or you can specify clear-text values for AsmUserName, AsmPassword, and AsmServerName. You can't specify both. For more information on creating this SecretsManagerOracleAsmSecret and the SecretsManagerOracleAsmAccessRoleArn and SecretsManagerOracleAsmSecretId required to access it, see Using secrets to access Database Migration Service resources in the Database Migration Service User Guide. 
     */
   var SecretsManagerOracleAsmAccessRoleArn: js.UndefOr[String] = js.undefined
   
   /**
-    * Required only if your Oracle endpoint uses Advanced Storage Manager (ASM). The full ARN, partial ARN, or friendly name of the SecretsManagerOracleAsmSecret that contains the Oracle ASM connection details for the Oracle endpoint.
+    * Required only if your Oracle endpoint uses Automatic Storage Management (ASM). The full ARN, partial ARN, or friendly name of the SecretsManagerOracleAsmSecret that contains the Oracle ASM connection details for the Oracle endpoint.
     */
   var SecretsManagerOracleAsmSecretId: js.UndefOr[String] = js.undefined
   
@@ -162,7 +167,7 @@ trait OracleSettings extends StObject {
   var SecurityDbEncryptionName: js.UndefOr[String] = js.undefined
   
   /**
-    * Fully qualified domain name of the endpoint.
+    * Fully qualified domain name of the endpoint. For an Amazon RDS Oracle instance, this is the output of DescribeDBInstances, in the  Endpoint.Address field.
     */
   var ServerName: js.UndefOr[String] = js.undefined
   
@@ -260,6 +265,10 @@ object OracleSettings {
     inline def setCharLengthSemantics(value: CharLengthSemantics): Self = StObject.set(x, "CharLengthSemantics", value.asInstanceOf[js.Any])
     
     inline def setCharLengthSemanticsUndefined: Self = StObject.set(x, "CharLengthSemantics", js.undefined)
+    
+    inline def setConvertTimestampWithZoneToUTC(value: BooleanOptional): Self = StObject.set(x, "ConvertTimestampWithZoneToUTC", value.asInstanceOf[js.Any])
+    
+    inline def setConvertTimestampWithZoneToUTCUndefined: Self = StObject.set(x, "ConvertTimestampWithZoneToUTC", js.undefined)
     
     inline def setDatabaseName(value: String): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
     

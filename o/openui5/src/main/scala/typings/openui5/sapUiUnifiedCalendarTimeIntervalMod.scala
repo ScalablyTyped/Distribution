@@ -457,14 +457,16 @@ object sapUiUnifiedCalendarTimeIntervalMod {
     /**
       * Displays an item in the `CalendarTimeInterval` but doesn't set the focus.
       *
-      * @returns `this` to allow method chaining
+      * @returns Reference to `this` for method chaining
       */
     def displayDate(/**
       * JavaScript date object for displayed item.
       */
-    oDate: js.Object): typings.openui5.sapUiUnifiedCalendarMod.default = js.native
+    oDate: js.Date): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:cancel cancel} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -476,6 +478,8 @@ object sapUiUnifiedCalendarTimeIntervalMod {
     mParameters: js.Object): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:select select} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -488,6 +492,7 @@ object sapUiUnifiedCalendarTimeIntervalMod {
     
     /**
       * @SINCE 1.34.0
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:startDateChange startDateChange} to attached listeners.
       *
@@ -502,12 +507,12 @@ object sapUiUnifiedCalendarTimeIntervalMod {
     /**
       * Sets the focused item of the `CalendarTimeInterval`.
       *
-      * @returns `this` to allow method chaining
+      * @returns Reference to `this` for method chaining
       */
     def focusDate(/**
-      * JavaScript date object for focused item.
+      * JavaScript date object for focused item
       */
-    oDate: js.Object): typings.openui5.sapUiUnifiedCalendarMod.default = js.native
+    oDate: js.Date): this.type = js.native
     
     /**
       * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy
@@ -882,44 +887,26 @@ object sapUiUnifiedCalendarTimeIntervalMod {
     ): this.type = js.native
     
     /**
-      * @SINCE 1.38.0
+      * Set maximum date that can be shown and selected in the Calendar.
       *
-      * Sets a new value for property {@link #getMaxDate maxDate}.
-      *
-      * Maximum date that can be shown and selected in the Calendar. This must be a JavaScript date object.
-      *
-      * **Note:** If the `maxDate` is set to be before the `minDate`, the `minDate` is set to the begin of the
-      * month of the `maxDate`.
-      *
-      * When called with a value of `null` or `undefined`, the default value of the property will be restored.
-      *
-      * @returns Reference to `this` in order to allow method chaining
+      * @returns Reference to `this` for method chaining
       */
     def setMaxDate(): this.type = js.native
     def setMaxDate(/**
-      * New value for property `maxDate`
+      * Max date as a JS Date object
       */
-    oMaxDate: js.Object): this.type = js.native
+    oDate: js.Date): this.type = js.native
     
     /**
-      * @SINCE 1.38.0
+      * Set minimum date that can be shown and selected in the Calendar.
       *
-      * Sets a new value for property {@link #getMinDate minDate}.
-      *
-      * Minimum date that can be shown and selected in the Calendar. This must be a JavaScript date object.
-      *
-      * **Note:** If the `minDate` is set to be after the `maxDate`, the `maxDate` is set to the end of the month
-      * of the `minDate`.
-      *
-      * When called with a value of `null` or `undefined`, the default value of the property will be restored.
-      *
-      * @returns Reference to `this` in order to allow method chaining
+      * @returns Reference to `this` for method chaining
       */
     def setMinDate(): this.type = js.native
     def setMinDate(/**
-      * New value for property `minDate`
+      * Min date as a JS Date object
       */
-    oMinDate: js.Object): this.type = js.native
+    oDate: js.Date): this.type = js.native
     
     /**
       * @SINCE 1.34.0
@@ -960,19 +947,14 @@ object sapUiUnifiedCalendarTimeIntervalMod {
     bSingleSelection: Boolean): this.type = js.native
     
     /**
-      * Sets a new value for property {@link #getStartDate startDate}.
+      * Sets start date for the interval.
       *
-      * Start date of the Interval as JavaScript Date object. The time interval corresponding to this Date and
-      * `items` and `intervalMinutes` will be the first time in the displayed row.
-      *
-      * When called with a value of `null` or `undefined`, the default value of the property will be restored.
-      *
-      * @returns Reference to `this` in order to allow method chaining
+      * @returns Reference to `this` for method chaining
       */
     def setStartDate(/**
-      * New value for property `startDate`
+      * A JavaScript date
       */
-    oStartDate: js.Object): this.type = js.native
+    oStartDate: js.Date): this.type = js.native
     
     /**
       * Sets a new value for property {@link #getWidth width}.

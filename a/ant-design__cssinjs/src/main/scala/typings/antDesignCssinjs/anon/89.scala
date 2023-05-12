@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.PageBreakAfter
+import typings.csstype.mod.Property.MsContentZoomLimitMax
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,11 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `89` extends StObject {
   
   var value: js.UndefOr[
-    PageBreakAfter | (js.Array[
+    MsContentZoomLimitMax | (js.Array[
       (Extract[
-        js.UndefOr[PageBreakAfter | js.Array[NonNullable[js.UndefOr[PageBreakAfter]]]], 
+        js.UndefOr[MsContentZoomLimitMax | js.Array[NonNullable[js.UndefOr[MsContentZoomLimitMax]]]], 
         String
-      ]) | NonNullable[js.UndefOr[PageBreakAfter]]
+      ]) | NonNullable[js.UndefOr[MsContentZoomLimitMax]]
     ])
   ] = js.native
 }

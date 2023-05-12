@@ -27,7 +27,7 @@ trait MatchingBucket extends StObject {
   var classifiableSizeInBytes: js.UndefOr[long] = js.undefined
   
   /**
-    * Specifies the error code for an error that prevented Amazon Macie from retrieving and processing information about the bucket and the bucket's objects. If this value is ACCESS_DENIED, Macie doesn't have permission to retrieve the information. For example, the bucket has a restrictive bucket policy and Amazon S3 denied the request. If this value is null, Macie was able to retrieve and process the information.
+    * The error code for an error that prevented Amazon Macie from retrieving and processing information about the bucket and the bucket's objects. If this value is ACCESS_DENIED, Macie doesn't have permission to retrieve the information. For example, the bucket has a restrictive bucket policy and Amazon S3 denied the request. If this value is null, Macie was able to retrieve and process the information.
     */
   var errorCode: js.UndefOr[BucketMetadataErrorCode] = js.undefined
   
@@ -42,14 +42,24 @@ trait MatchingBucket extends StObject {
   var jobDetails: js.UndefOr[JobDetails] = js.undefined
   
   /**
+    * The date and time, in UTC and extended ISO 8601 format, when Amazon Macie most recently analyzed data in the bucket while performing automated sensitive data discovery for your account. This value is null if automated sensitive data discovery is currently disabled for your account.
+    */
+  var lastAutomatedDiscoveryTime: js.UndefOr[js.Date] = js.undefined
+  
+  /**
     * The total number of objects in the bucket.
     */
   var objectCount: js.UndefOr[long] = js.undefined
   
   /**
-    * The total number of objects that are in the bucket, grouped by server-side encryption type. This includes a grouping that reports the total number of objects that aren't encrypted or use client-side encryption.
+    * The total number of objects in the bucket, grouped by server-side encryption type. This includes a grouping that reports the total number of objects that aren't encrypted or use client-side encryption.
     */
   var objectCountByEncryptionType: js.UndefOr[ObjectCountByEncryptionType] = js.undefined
+  
+  /**
+    * The current sensitivity score for the bucket, ranging from -1 (classification error) to 100 (sensitive). This value is null if automated sensitive data discovery is currently disabled for your account.
+    */
+  var sensitivityScore: js.UndefOr[integer] = js.undefined
   
   /**
     * The total storage size, in bytes, of the bucket. If versioning is enabled for the bucket, Amazon Macie calculates this value based on the size of the latest version of each object in the bucket. This value doesn't reflect the storage size of all versions of each object in the bucket.
@@ -109,6 +119,10 @@ object MatchingBucket {
     
     inline def setJobDetailsUndefined: Self = StObject.set(x, "jobDetails", js.undefined)
     
+    inline def setLastAutomatedDiscoveryTime(value: js.Date): Self = StObject.set(x, "lastAutomatedDiscoveryTime", value.asInstanceOf[js.Any])
+    
+    inline def setLastAutomatedDiscoveryTimeUndefined: Self = StObject.set(x, "lastAutomatedDiscoveryTime", js.undefined)
+    
     inline def setObjectCount(value: long): Self = StObject.set(x, "objectCount", value.asInstanceOf[js.Any])
     
     inline def setObjectCountByEncryptionType(value: ObjectCountByEncryptionType): Self = StObject.set(x, "objectCountByEncryptionType", value.asInstanceOf[js.Any])
@@ -116,6 +130,10 @@ object MatchingBucket {
     inline def setObjectCountByEncryptionTypeUndefined: Self = StObject.set(x, "objectCountByEncryptionType", js.undefined)
     
     inline def setObjectCountUndefined: Self = StObject.set(x, "objectCount", js.undefined)
+    
+    inline def setSensitivityScore(value: integer): Self = StObject.set(x, "sensitivityScore", value.asInstanceOf[js.Any])
+    
+    inline def setSensitivityScoreUndefined: Self = StObject.set(x, "sensitivityScore", js.undefined)
     
     inline def setSizeInBytes(value: long): Self = StObject.set(x, "sizeInBytes", value.asInstanceOf[js.Any])
     

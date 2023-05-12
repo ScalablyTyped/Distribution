@@ -9,30 +9,74 @@ object treenodeTreenodeMod {
   
   trait TreeNode extends StObject {
     
+    /**
+      * Used to get the child elements of the component.
+      * @readonly
+      */
     var children: js.UndefOr[js.Array[TreeNode]] = js.undefined
     
+    /**
+      * Style class of the node.
+      */
     var className: js.UndefOr[String] = js.undefined
     
+    /**
+      * Data represented by the node.
+      */
     var data: js.UndefOr[Any] = js.undefined
     
+    /**
+      * Whether the node is draggable when dragdrop is enabled.
+      * @defaultValue true
+      */
     var draggable: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Whether the node is droppable when dragdrop is enabled.
+      * @defaultValue true
+      */
     var droppable: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Visibility of node.
+      */
     var expanded: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Icon of the node to display next to content.
+      */
     var icon: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconType<TreeNode> */ Any
       ] = js.undefined
     
+    /**
+      * Unique identifier of the element.
+      */
+    var id: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Unique key of the node.
+      */
     var key: js.UndefOr[String | Double] = js.undefined
     
+    /**
+      * Label of the node.
+      */
     var label: js.UndefOr[String] = js.undefined
     
+    /**
+      * Specifies if the node has children. Used in lazy loading.
+      */
     var leaf: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Whether the node is selectable when selection mode is enabled.
+      */
     var selectable: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Inline style of the node.
+      */
     var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object TreeNode {
@@ -76,6 +120,10 @@ object treenodeTreenodeMod {
       ): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
       inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+      
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
       inline def setKey(value: String | Double): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       

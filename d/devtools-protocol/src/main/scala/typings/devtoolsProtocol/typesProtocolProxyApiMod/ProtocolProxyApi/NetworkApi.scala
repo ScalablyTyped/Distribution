@@ -174,6 +174,7 @@ trait NetworkApi extends StObject {
   /**
     * Returns all browser cookies. Depending on the backend support, will return detailed cookie
     * information in the `cookies` field.
+    * Deprecated. Use Storage.getCookies instead.
     */
   def getAllCookies(): js.Promise[GetAllCookiesResponse] = js.native
   

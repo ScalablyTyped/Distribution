@@ -12,15 +12,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class TreeComponentItem protected ()
   extends typings.vscode.mod.TreeItem {
   /**
-    * @param label A human-readable string describing this item
-    * @param collapsibleState {@link TreeItemCollapsibleState} of the tree item. Default is {@link TreeItemCollapsibleState.None}
-    */
+  		 * @param label A human-readable string describing this item
+  		 * @param collapsibleState {@link TreeItemCollapsibleState} of the tree item. Default is {@link TreeItemCollapsibleState.None}
+  		 */
   def this(label: String) = this()
   def this(label: TreeItemLabel) = this()
   /**
-    * @param resourceUri The {@link Uri} of the resource representing this item.
-    * @param collapsibleState {@link TreeItemCollapsibleState} of the tree item. Default is {@link TreeItemCollapsibleState.None}
-    */
+  		 * @param resourceUri The {@link Uri} of the resource representing this item.
+  		 * @param collapsibleState {@link TreeItemCollapsibleState} of the tree item. Default is {@link TreeItemCollapsibleState.None}
+  		 */
   def this(resourceUri: Uri) = this()
   def this(label: String, collapsibleState: TreeItemCollapsibleState) = this()
   def this(label: TreeItemLabel, collapsibleState: TreeItemCollapsibleState) = this()

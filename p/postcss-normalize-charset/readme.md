@@ -1,7 +1,7 @@
 
 # Scala.js typings for postcss-normalize-charset
 
-Typings are for version 5.1.0
+Typings are for version 6.0.0
 
 ## Library description:
 Add necessary or remove extra charset with PostCSS

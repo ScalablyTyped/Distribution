@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ForNode
   extends StObject
-     with Node2
-     with ParentNode2
+     with Node
+     with ParentNode
      with TemplateChildNode {
   
   var children: js.Array[TemplateChildNode]

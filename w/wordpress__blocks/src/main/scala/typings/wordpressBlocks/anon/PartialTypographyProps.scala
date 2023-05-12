@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Partial<@wordpress/blocks.@wordpress/blocks.TypographyProps> */
+/* Inlined std.Partial<@wordpress/blocks.TypographyProps> */
 trait PartialTypographyProps extends StObject {
   
   var fontSize: js.UndefOr[Boolean] = js.undefined

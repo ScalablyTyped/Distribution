@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.ScrollBehavior
+import typings.csstype.mod.Property.FillRule
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,11 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `450` extends StObject {
   
   var value: js.UndefOr[
-    ScrollBehavior | (js.Array[
-      (Extract[
-        js.UndefOr[ScrollBehavior | js.Array[NonNullable[js.UndefOr[ScrollBehavior]]]], 
-        String
-      ]) | NonNullable[js.UndefOr[ScrollBehavior]]
+    FillRule | (js.Array[
+      (Extract[js.UndefOr[FillRule | js.Array[NonNullable[js.UndefOr[FillRule]]]], String]) | NonNullable[js.UndefOr[FillRule]]
     ])
   ] = js.native
 }

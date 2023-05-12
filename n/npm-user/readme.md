@@ -1,7 +1,7 @@
 
 # Scala.js typings for npm-user
 
-Typings are for version 5.0.0
+Typings are for version 5.0.1
 
 ## Library description:
 Get user info of an npm user

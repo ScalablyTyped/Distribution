@@ -19,7 +19,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait TypeoffileSystem extends StObject {
   
-  /** @enum */
   val ChildChangeType: CHANGED = js.native
   
   /**
@@ -41,7 +40,6 @@ trait TypeoffileSystem extends StObject {
     *    permission under 'fileSystem'. If the application has the 'write' permission under
     *    'fileSystem', the returned DirectoryEntry will be writable; otherwise it will be read-only.
     *    New in Chrome 31.
-    * @enum
     */
   val ChooseEntryType: OPENDIRECTORY = js.native
   

@@ -49,6 +49,8 @@ trait Worker2 extends StObject {
   def getStderr(): ReadableStream
   
   def getStdout(): ReadableStream
+  
+  def start(): js.Promise[Unit]
 }
 object Worker2 {
   
@@ -61,9 +63,10 @@ object Worker2 {
     _workerPool: Any,
     end: () => js.Promise[PoolExitResult],
     getStderr: () => ReadableStream,
-    getStdout: () => ReadableStream
+    getStdout: () => ReadableStream,
+    start: () => js.Promise[Unit]
   ): Worker2 = {
-    val __obj = js.Dynamic.literal(_bindExposedWorkerMethods = _bindExposedWorkerMethods.asInstanceOf[js.Any], _callFunctionWithArgs = _callFunctionWithArgs.asInstanceOf[js.Any], _ending = _ending.asInstanceOf[js.Any], _farm = _farm.asInstanceOf[js.Any], _options = _options.asInstanceOf[js.Any], _workerPool = _workerPool.asInstanceOf[js.Any], end = js.Any.fromFunction0(end), getStderr = js.Any.fromFunction0(getStderr), getStdout = js.Any.fromFunction0(getStdout))
+    val __obj = js.Dynamic.literal(_bindExposedWorkerMethods = _bindExposedWorkerMethods.asInstanceOf[js.Any], _callFunctionWithArgs = _callFunctionWithArgs.asInstanceOf[js.Any], _ending = _ending.asInstanceOf[js.Any], _farm = _farm.asInstanceOf[js.Any], _options = _options.asInstanceOf[js.Any], _workerPool = _workerPool.asInstanceOf[js.Any], end = js.Any.fromFunction0(end), getStderr = js.Any.fromFunction0(getStderr), getStdout = js.Any.fromFunction0(getStdout), start = js.Any.fromFunction0(start))
     __obj.asInstanceOf[Worker2]
   }
   
@@ -75,6 +78,8 @@ object Worker2 {
     inline def setGetStderr(value: () => ReadableStream): Self = StObject.set(x, "getStderr", js.Any.fromFunction0(value))
     
     inline def setGetStdout(value: () => ReadableStream): Self = StObject.set(x, "getStdout", js.Any.fromFunction0(value))
+    
+    inline def setStart(value: () => js.Promise[Unit]): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
     
     inline def set_bindExposedWorkerMethods(value: Any): Self = StObject.set(x, "_bindExposedWorkerMethods", value.asInstanceOf[js.Any])
     

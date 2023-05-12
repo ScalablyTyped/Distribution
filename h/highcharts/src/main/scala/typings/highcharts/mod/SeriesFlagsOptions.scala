@@ -11,6 +11,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
      with PlotFlagsOptions {
   
   /**
+    * Not available
+    */
+  var borderRadius: Unit
+  
+  /**
+    * Not available
+    */
+  var colorByPoint: Unit
+  
+  /**
     * (Highstock) An array of data points for the series. For the `flags`
     * series type, points can be given in the following ways:
     *
@@ -20,6 +30,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * not available. (see online documentation for example)
     */
   var data: js.UndefOr[js.Array[PointOptionsObject]] = js.undefined
+  
+  /**
+    * Not available
+    */
+  var dataParser: Unit
+  
+  /**
+    * Not available
+    */
+  var dataURL: Unit
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) An id for the series. This can
@@ -56,6 +76,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var name: js.UndefOr[String] = js.undefined
   
   /**
+    * Not available
+    */
+  var pointPadding: Unit
+  
+  /**
+    * Not available
+    */
+  var pointWidth: Unit
+  
+  /**
     * (Highcharts, Highstock) This option allows grouping series in a stacked
     * chart. The stack option can be a string or anything else, as long as the
     * grouped series' stack options match each other after conversion into a
@@ -69,6 +99,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * unknown sources.
     */
   var `type`: String | flags
+  
+  /**
+    * Not available
+    */
+  var useOhlcData: Unit
   
   /**
     * (Highcharts, Highstock) When using dual or multiple x axes, this number
@@ -88,8 +123,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object SeriesFlagsOptions {
   
-  inline def apply(`type`: String | flags): SeriesFlagsOptions = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(
+    borderRadius: Unit,
+    colorByPoint: Unit,
+    dataParser: Unit,
+    dataURL: Unit,
+    pointPadding: Unit,
+    pointWidth: Unit,
+    `type`: String | flags,
+    useOhlcData: Unit
+  ): SeriesFlagsOptions = {
+    val __obj = js.Dynamic.literal(borderRadius = borderRadius.asInstanceOf[js.Any], colorByPoint = colorByPoint.asInstanceOf[js.Any], dataParser = dataParser.asInstanceOf[js.Any], dataURL = dataURL.asInstanceOf[js.Any], pointPadding = pointPadding.asInstanceOf[js.Any], pointWidth = pointWidth.asInstanceOf[js.Any], useOhlcData = useOhlcData.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeriesFlagsOptions]
   }
@@ -97,7 +141,15 @@ object SeriesFlagsOptions {
   @scala.inline
   implicit open class MutableBuilder[Self <: SeriesFlagsOptions] (val x: Self) extends AnyVal {
     
+    inline def setBorderRadius(value: Unit): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
+    
+    inline def setColorByPoint(value: Unit): Self = StObject.set(x, "colorByPoint", value.asInstanceOf[js.Any])
+    
     inline def setData(value: js.Array[PointOptionsObject]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataParser(value: Unit): Self = StObject.set(x, "dataParser", value.asInstanceOf[js.Any])
+    
+    inline def setDataURL(value: Unit): Self = StObject.set(x, "dataURL", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
@@ -125,11 +177,17 @@ object SeriesFlagsOptions {
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
+    inline def setPointPadding(value: Unit): Self = StObject.set(x, "pointPadding", value.asInstanceOf[js.Any])
+    
+    inline def setPointWidth(value: Unit): Self = StObject.set(x, "pointWidth", value.asInstanceOf[js.Any])
+    
     inline def setStack(value: Double | String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
     
     inline def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
     
     inline def setType(value: String | flags): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setUseOhlcData(value: Unit): Self = StObject.set(x, "useOhlcData", value.asInstanceOf[js.Any])
     
     inline def setXAxis(value: Double | String): Self = StObject.set(x, "xAxis", value.asInstanceOf[js.Any])
     

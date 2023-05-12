@@ -1,17 +1,18 @@
 package typings.pixiAssets
 
 import typings.pixiAssets.anon.Format
-import typings.pixiAssets.anon.Parsers
-import typings.pixiAssets.anon.PreferOrders
 import typings.pixiAssets.libCacheCacheMod.CacheClass
 import typings.pixiAssets.libDetectionsMod.FormatDetectionParser
 import typings.pixiAssets.libLoaderLoaderMod.Loader
+import typings.pixiAssets.libLoaderParsersTexturesLoadTexturesMod.LoadTextureConfig
 import typings.pixiAssets.libLoaderTypesMod.LoadAsset
+import typings.pixiAssets.libResolverResolverMod.BundleIdentifierOptions
 import typings.pixiAssets.libResolverResolverMod.Resolver
 import typings.pixiAssets.libResolverTypesMod.ResolveAsset
 import typings.pixiAssets.libResolverTypesMod.ResolverAssetsArray
 import typings.pixiAssets.libResolverTypesMod.ResolverAssetsObject
 import typings.pixiAssets.libResolverTypesMod.ResolverManifest
+import typings.std.Partial
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -184,8 +185,8 @@ object libAssetsMod {
       * @param keys - The key or keys for the assets that you want to access
       * @returns - The assets or hash of assets requested
       */
-    def get[T](keys: String): T | (Record[String, T]) = js.native
-    def get[T](keys: js.Array[String]): T | (Record[String, T]) = js.native
+    def get[T](keys: String): T = js.native
+    def get[T](keys: js.Array[String]): Record[String, T] = js.native
     
     /**
       * Best practice is to call this function before any loading commences
@@ -221,12 +222,12 @@ object libAssetsMod {
       * (0.0 - 1.0) of the assets loaded.
       * @returns - the assets that were loaded, either a single asset or a hash of assets
       */
-    def load[T](urls: String): js.Promise[T | (Record[String, T])] = js.native
-    def load[T](urls: String, onProgress: ProgressCallback): js.Promise[T | (Record[String, T])] = js.native
-    def load[T](urls: js.Array[LoadAsset[Any] | String]): js.Promise[T | (Record[String, T])] = js.native
-    def load[T](urls: js.Array[LoadAsset[Any] | String], onProgress: ProgressCallback): js.Promise[T | (Record[String, T])] = js.native
-    def load[T](urls: LoadAsset[Any]): js.Promise[T | (Record[String, T])] = js.native
-    def load[T](urls: LoadAsset[Any], onProgress: ProgressCallback): js.Promise[T | (Record[String, T])] = js.native
+    def load[T](urls: String): js.Promise[T] = js.native
+    def load[T](urls: String, onProgress: ProgressCallback): js.Promise[T] = js.native
+    def load[T](urls: js.Array[LoadAsset[Any] | String]): js.Promise[Record[String, T]] = js.native
+    def load[T](urls: js.Array[LoadAsset[Any] | String], onProgress: ProgressCallback): js.Promise[Record[String, T]] = js.native
+    def load[T](urls: LoadAsset[Any]): js.Promise[T] = js.native
+    def load[T](urls: LoadAsset[Any], onProgress: ProgressCallback): js.Promise[T] = js.native
     
     /**
       * Bundles are a way to load multiple assets at once.
@@ -274,9 +275,10 @@ object libAssetsMod {
       * // Load another bundle...
       * gameScreenAssets = await Assets.loadBundle('game-screen');
       * @param bundleIds - the bundle id or ids to load
-      * @param onProgress - optional function that is called when progress on asset loading is made.
+      * @param onProgress - Optional function that is called when progress on asset loading is made.
       * The function is passed a single parameter, `progress`, which represents the percentage (0.0 - 1.0)
-      * of the assets loaded.
+      * of the assets loaded. Do not use this function to detect when assets are complete and available,
+      * instead use the Promise returned by this function.
       * @returns all the bundles assets or a hash of assets for each bundle specified
       */
     def loadBundle(bundleIds: String): js.Promise[Any] = js.native
@@ -291,6 +293,13 @@ object libAssetsMod {
     var loader: Loader = js.native
     
     /**
+      * @deprecated since 7.2.0
+      * @see {@link Assets.setPreferences}
+      */
+    def preferWorkers: Boolean = js.native
+    def preferWorkers_=(value: Boolean): Unit = js.native
+    
+    /**
       * Only intended for development purposes.
       * This will wipe the resolver and caches.
       * You will need to reinitialize the Asset
@@ -299,6 +308,12 @@ object libAssetsMod {
     
     /** the resolver to map various urls */
     var resolver: Resolver = js.native
+    
+    /**
+      * General setter for preferences. This is a helper function to set preferences on all parsers.
+      * @param preferences - the preferences to set
+      */
+    def setPreferences(preferences: Partial[AssetsPreferences]): Unit = js.native
     
     /**
       * Unload an asset or assets. As the Assets class is responsible for creating the assets via the `load` function
@@ -357,8 +372,11 @@ object libAssetsMod {
     /** a base path for any assets loaded */
     var basePath: js.UndefOr[String] = js.undefined
     
-    /** loader options to configure the loader with, currently only parsers! */
-    var loader: js.UndefOr[Parsers] = js.undefined
+    /** advanced - override how bundlesIds are generated */
+    var bundleIdentifier: js.UndefOr[BundleIdentifierOptions] = js.undefined
+    
+    /** a default URL parameter string to append to all assets loaded */
+    var defaultSearchParams: js.UndefOr[String | (Record[String, Any])] = js.undefined
     
     /**
       * a manifest to tell the asset loader upfront what all your assets are
@@ -366,8 +384,8 @@ object libAssetsMod {
       */
     var manifest: js.UndefOr[String | ResolverManifest] = js.undefined
     
-    /** resolver specific options */
-    var resolver: js.UndefOr[PreferOrders] = js.undefined
+    /** Optional loader preferences */
+    var preferences: js.UndefOr[Partial[AssetsPreferences]] = js.undefined
     
     /**
       * optional preferences for which textures preferences you have when resolving assets
@@ -390,21 +408,37 @@ object libAssetsMod {
       
       inline def setBasePathUndefined: Self = StObject.set(x, "basePath", js.undefined)
       
-      inline def setLoader(value: Parsers): Self = StObject.set(x, "loader", value.asInstanceOf[js.Any])
+      inline def setBundleIdentifier(value: BundleIdentifierOptions): Self = StObject.set(x, "bundleIdentifier", value.asInstanceOf[js.Any])
       
-      inline def setLoaderUndefined: Self = StObject.set(x, "loader", js.undefined)
+      inline def setBundleIdentifierUndefined: Self = StObject.set(x, "bundleIdentifier", js.undefined)
+      
+      inline def setDefaultSearchParams(value: String | (Record[String, Any])): Self = StObject.set(x, "defaultSearchParams", value.asInstanceOf[js.Any])
+      
+      inline def setDefaultSearchParamsUndefined: Self = StObject.set(x, "defaultSearchParams", js.undefined)
       
       inline def setManifest(value: String | ResolverManifest): Self = StObject.set(x, "manifest", value.asInstanceOf[js.Any])
       
       inline def setManifestUndefined: Self = StObject.set(x, "manifest", js.undefined)
       
-      inline def setResolver(value: PreferOrders): Self = StObject.set(x, "resolver", value.asInstanceOf[js.Any])
+      inline def setPreferences(value: Partial[AssetsPreferences]): Self = StObject.set(x, "preferences", value.asInstanceOf[js.Any])
       
-      inline def setResolverUndefined: Self = StObject.set(x, "resolver", js.undefined)
+      inline def setPreferencesUndefined: Self = StObject.set(x, "preferences", js.undefined)
       
       inline def setTexturePreference(value: Format): Self = StObject.set(x, "texturePreference", value.asInstanceOf[js.Any])
       
       inline def setTexturePreferenceUndefined: Self = StObject.set(x, "texturePreference", js.undefined)
+    }
+  }
+  
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify GlobalMixins.AssetsPreferences * / any */ trait AssetsPreferences
+    extends StObject
+       with LoadTextureConfig
+  object AssetsPreferences {
+    
+    inline def apply(preferCreateImageBitmap: Boolean, preferWorkers: Boolean): AssetsPreferences = {
+      val __obj = js.Dynamic.literal(preferCreateImageBitmap = preferCreateImageBitmap.asInstanceOf[js.Any], preferWorkers = preferWorkers.asInstanceOf[js.Any], crossOrigin = null)
+      __obj.asInstanceOf[AssetsPreferences]
     }
   }
   

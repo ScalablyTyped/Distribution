@@ -39,7 +39,7 @@ object mod {
     def this(props: CalendarProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: CalendarProps, context: Any) = this()
   }
@@ -51,7 +51,7 @@ object mod {
     def this(props: DateRangeProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: DateRangeProps, context: Any) = this()
   }
@@ -63,7 +63,7 @@ object mod {
     def this(props: DateRangePickerProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: DateRangePickerProps, context: Any) = this()
   }
@@ -75,7 +75,7 @@ object mod {
     def this(props: DefinedRangeProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: DefinedRangeProps, context: Any) = this()
   }

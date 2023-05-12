@@ -2,6 +2,7 @@ package typings.three
 
 import typings.three.examplesJsmLinesLineSegmentsGeometryMod.LineSegmentsGeometry
 import typings.three.srcCoreBufferGeometryMod.BufferGeometry
+import typings.three.srcCoreBufferGeometryMod.NormalBufferAttributes
 import typings.three.srcMaterialsMaterialMod.Material
 import typings.three.srcThreeMod.Line
 import typings.three.threeBooleans.`true`
@@ -15,7 +16,7 @@ object examplesJsmLinesLineGeometryMod {
   @js.native
   open class LineGeometry () extends LineSegmentsGeometry {
     
-    def fromLine(line: Line[BufferGeometry, Material | js.Array[Material]]): this.type = js.native
+    def fromLine(line: Line[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]]): this.type = js.native
     
     val isLineGeometry: `true` = js.native
   }

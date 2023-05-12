@@ -9,7 +9,7 @@ trait ParsedTsconfig extends StObject {
   /**
     * Note that the case of the config path has not yet been normalized, as no files have been imported into the project yet
     */
-  var extendedConfigPath: js.UndefOr[java.lang.String] = js.undefined
+  var extendedConfigPath: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
   
   var options: js.UndefOr[CompilerOptions] = js.undefined
   
@@ -29,9 +29,11 @@ object ParsedTsconfig {
   @scala.inline
   implicit open class MutableBuilder[Self <: ParsedTsconfig] (val x: Self) extends AnyVal {
     
-    inline def setExtendedConfigPath(value: java.lang.String): Self = StObject.set(x, "extendedConfigPath", value.asInstanceOf[js.Any])
+    inline def setExtendedConfigPath(value: java.lang.String | js.Array[java.lang.String]): Self = StObject.set(x, "extendedConfigPath", value.asInstanceOf[js.Any])
     
     inline def setExtendedConfigPathUndefined: Self = StObject.set(x, "extendedConfigPath", js.undefined)
+    
+    inline def setExtendedConfigPathVarargs(value: java.lang.String*): Self = StObject.set(x, "extendedConfigPath", js.Array(value*))
     
     inline def setOptions(value: CompilerOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     

@@ -31,9 +31,16 @@ trait CSSModulesOptions extends StObject {
   var hashPrefix: js.UndefOr[String] = js.undefined
   
   /**
-    * default: null
+    * default: undefined
     */
-  var localsConvention: js.UndefOr[camelCase | camelCaseOnly | dashes | dashesOnly | Null] = js.undefined
+  var localsConvention: js.UndefOr[
+    camelCase | camelCaseOnly | dashes | dashesOnly | (js.Function3[
+      /* originalClassName */ String, 
+      /* generatedClassName */ String, 
+      /* inputFile */ String, 
+      String
+    ])
+  ] = js.undefined
   
   var scopeBehaviour: js.UndefOr[global | local] = js.undefined
 }
@@ -69,9 +76,18 @@ object CSSModulesOptions {
     
     inline def setHashPrefixUndefined: Self = StObject.set(x, "hashPrefix", js.undefined)
     
-    inline def setLocalsConvention(value: camelCase | camelCaseOnly | dashes | dashesOnly): Self = StObject.set(x, "localsConvention", value.asInstanceOf[js.Any])
+    inline def setLocalsConvention(
+      value: camelCase | camelCaseOnly | dashes | dashesOnly | (js.Function3[
+          /* originalClassName */ String, 
+          /* generatedClassName */ String, 
+          /* inputFile */ String, 
+          String
+        ])
+    ): Self = StObject.set(x, "localsConvention", value.asInstanceOf[js.Any])
     
-    inline def setLocalsConventionNull: Self = StObject.set(x, "localsConvention", null)
+    inline def setLocalsConventionFunction3(
+      value: (/* originalClassName */ String, /* generatedClassName */ String, /* inputFile */ String) => String
+    ): Self = StObject.set(x, "localsConvention", js.Any.fromFunction3(value))
     
     inline def setLocalsConventionUndefined: Self = StObject.set(x, "localsConvention", js.undefined)
     

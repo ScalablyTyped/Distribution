@@ -25,4 +25,8 @@ object keysConfigsMod {
   @JSImport("@nginstack/web-framework/keys/Configs", "SECURITY")
   @js.native
   val SECURITY: Double = js.native
+  
+  @JSImport("@nginstack/web-framework/keys/Configs", "SESSION")
+  @js.native
+  val SESSION: Double = js.native
 }

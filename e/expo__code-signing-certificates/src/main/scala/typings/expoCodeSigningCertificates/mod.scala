@@ -1,6 +1,7 @@
 package typings.expoCodeSigningCertificates
 
 import typings.expoCodeSigningCertificates.anon.PrivateKeyPEM
+import typings.node.bufferMod.global.Buffer
 import typings.nodeForge.mod.pki.Certificate
 import typings.nodeForge.mod.pki.CertificateRequest
 import typings.nodeForge.mod.pki.rsa.KeyPair
@@ -50,7 +51,7 @@ object mod {
   
   inline def generateSelfSignedCodeSigningCertificate(param0: GenerateParameters): Certificate = ^.asInstanceOf[js.Dynamic].applyDynamic("generateSelfSignedCodeSigningCertificate")(param0.asInstanceOf[js.Any]).asInstanceOf[Certificate]
   
-  inline def signStringRSASHA256AndVerify(privateKey: PrivateKey, certificate: Certificate, stringToSign: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("signStringRSASHA256AndVerify")(privateKey.asInstanceOf[js.Any], certificate.asInstanceOf[js.Any], stringToSign.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def signBufferRSASHA256AndVerify(privateKey: PrivateKey, certificate: Certificate, bufferToSign: Buffer): String = (^.asInstanceOf[js.Dynamic].applyDynamic("signBufferRSASHA256AndVerify")(privateKey.asInstanceOf[js.Any], certificate.asInstanceOf[js.Any], bufferToSign.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def validateSelfSignedCertificate(certificate: Certificate, keyPair: KeyPair): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validateSelfSignedCertificate")(certificate.asInstanceOf[js.Any], keyPair.asInstanceOf[js.Any])).asInstanceOf[Unit]
   

@@ -140,6 +140,9 @@ object task {
   
   inline def flap[A](a: A): js.Function1[/* fab */ Task_[js.Function1[/* a */ A, Any]], Task_[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("flap")(a.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fab */ Task_[js.Function1[/* a */ A, Any]], Task_[Any]]]
   
+  inline def flatMap[A, B](f: js.Function1[/* a */ A, Task_[B]]): js.Function1[/* ma */ Task_[A], Task_[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatMap")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ Task_[A], Task_[B]]]
+  inline def flatMap[A, B](ma: Task_[A], f: js.Function1[/* a */ A, Task_[B]]): Task_[B] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatMap")(ma.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[Task_[B]]
+  
   inline def flatten[A](mma: Task_[Task_[A]]): Task_[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(mma.asInstanceOf[js.Any]).asInstanceOf[Task_[A]]
   
   inline def fromIO[A](fa: IO_[A]): Task_[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIO")(fa.asInstanceOf[js.Any]).asInstanceOf[Task_[A]]
@@ -177,6 +180,9 @@ object task {
   inline def sequenceArray[A](arr: js.Array[Task_[A]]): Task_[js.Array[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("sequenceArray")(arr.asInstanceOf[js.Any]).asInstanceOf[Task_[js.Array[A]]]
   
   inline def sequenceSeqArray[A](arr: js.Array[Task_[A]]): Task_[js.Array[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("sequenceSeqArray")(arr.asInstanceOf[js.Any]).asInstanceOf[Task_[js.Array[A]]]
+  
+  inline def tap[A, _underscore](f: js.Function1[/* a */ A, Task_[_underscore]]): js.Function1[/* self */ Task_[A], Task_[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("tap")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* self */ Task_[A], Task_[A]]]
+  inline def tap[A, _underscore](self: Task_[A], f: js.Function1[/* a */ A, Task_[_underscore]]): Task_[A] = (^.asInstanceOf[js.Dynamic].applyDynamic("tap")(self.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[Task_[A]]
   
   @JSImport("fp-ts", "task.task")
   @js.native

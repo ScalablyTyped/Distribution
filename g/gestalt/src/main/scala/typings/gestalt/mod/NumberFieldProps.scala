@@ -1,123 +1,64 @@
 package typings.gestalt.mod
 
-import typings.gestalt.anon.EventFocusEventValue
-import typings.gestalt.anon.EventKeyboardEventValue
-import typings.gestalt.anon.EventSyntheticEventValue
-import typings.gestalt.gestaltStrings.done
-import typings.gestalt.gestaltStrings.enter
-import typings.gestalt.gestaltStrings.go
+import typings.gestalt.anon.`1`
 import typings.gestalt.gestaltStrings.lg
 import typings.gestalt.gestaltStrings.md
-import typings.gestalt.gestaltStrings.next
 import typings.gestalt.gestaltStrings.off
 import typings.gestalt.gestaltStrings.on
-import typings.gestalt.gestaltStrings.previous
-import typings.gestalt.gestaltStrings.search
-import typings.gestalt.gestaltStrings.send
-import typings.react.mod.ReactNode
+import typings.react.mod.FocusEvent
+import typings.react.mod.KeyboardEvent
+import typings.react.mod.SyntheticEvent
+import typings.std.Element
+import typings.std.Event
+import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait NumberFieldProps extends StObject {
   
-  /**
-    * Indicate if autocomplete should be available to the input.
-    */
   var autoComplete: js.UndefOr[on | off] = js.undefined
   
-  /**
-    * Indicate if the input is disabled
-    * @default false
-    */
   var disabled: js.UndefOr[Boolean] = js.undefined
   
-  /**
-    *  Optionally specify the action label to present for the enter key on virtual keyboards.
-    */
-  var enterKeyHint: js.UndefOr[enter | done | go | next | previous | search | send] = js.undefined
+  var errorMessage: js.UndefOr[Node] = js.undefined
   
-  /**
-    * For most cases, pass a string with a helpful error message (be sure to localize!).
-    * In certain instances it can be useful to make some text clickable; to suppor this you may instead pass a React.Node to wrap text in Link or TapArea.
-    */
-  var errorMessage: js.UndefOr[ReactNode] = js.undefined
-  
-  /**
-    * More information about how to complete the form field
-    */
   var helperText: js.UndefOr[String] = js.undefined
   
-  /**
-    * A unique identifier for the input
-    */
   var id: String
   
-  /**
-    * The label for the input. Be sure to localize the text.
-    */
   var label: js.UndefOr[String] = js.undefined
   
-  /**
-    * The upper bound of valid input, inclusive.
-    */
   var max: js.UndefOr[Double] = js.undefined
   
-  /**
-    * The lower bound of valid input, inclusive.
-    */
   var min: js.UndefOr[Double] = js.undefined
   
-  /**
-    * An unique name for the input
-    */
+  var mobileEnterKeyHint: js.UndefOr[MobileEnterKeyHintType] = js.undefined
+  
   var name: js.UndefOr[String] = js.undefined
   
-  /**
-    * Callback triggered when the user blurs the input.
-    */
-  var onBlur: js.UndefOr[js.Function1[/* args */ EventFocusEventValue, Unit]] = js.undefined
+  var onBlur: js.UndefOr[AbstractEventHandler[FocusEvent[HTMLInputElement, Element], `1`]] = js.undefined
   
-  /**
-    * Callback triggered when the value of the input changes, whether by keyboard entry or the input's arrows.
-    */
-  def onChange(args: EventSyntheticEventValue): Unit
+  var onChange: AbstractEventHandler[SyntheticEvent[HTMLInputElement, Event], `1`]
   
-  /**
-    * Callback triggered when the user focuses the input.
-    */
-  var onFocus: js.UndefOr[js.Function1[/* args */ EventFocusEventValue, Unit]] = js.undefined
+  var onFocus: js.UndefOr[AbstractEventHandler[FocusEvent[HTMLInputElement, Element], `1`]] = js.undefined
   
-  /**
-    * Callback triggered when the user presses any key while the input is focused.
-    */
-  var onKeyDown: js.UndefOr[js.Function1[/* args */ EventKeyboardEventValue, Unit]] = js.undefined
+  var onKeyDown: js.UndefOr[AbstractEventHandler[KeyboardEvent[HTMLInputElement], `1`]] = js.undefined
   
-  /**
-    * Placeholder text shown when the user has not yes input a value.
-    */
   var placeholder: js.UndefOr[String] = js.undefined
   
-  /**
-    * md: 40px, lg: 48px
-    *
-    * @default "md"
-    */
   var size: js.UndefOr[md | lg] = js.undefined
   
-  /**
-    * Indicates the amount the value will increase or decrease when using the input's arrows.
-    */
   var step: js.UndefOr[Double] = js.undefined
   
-  /**
-    * The current value of the input.
-    */
   var value: js.UndefOr[Double] = js.undefined
 }
 object NumberFieldProps {
   
-  inline def apply(id: String, onChange: EventSyntheticEventValue => Unit): NumberFieldProps = {
+  inline def apply(
+    id: String,
+    onChange: /* arg */ `1` & (typings.gestalt.anon.Event[SyntheticEvent[HTMLInputElement, Event]]) => Unit
+  ): NumberFieldProps = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], onChange = js.Any.fromFunction1(onChange))
     __obj.asInstanceOf[NumberFieldProps]
   }
@@ -133,11 +74,7 @@ object NumberFieldProps {
     
     inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    inline def setEnterKeyHint(value: enter | done | go | next | previous | search | send): Self = StObject.set(x, "enterKeyHint", value.asInstanceOf[js.Any])
-    
-    inline def setEnterKeyHintUndefined: Self = StObject.set(x, "enterKeyHint", js.undefined)
-    
-    inline def setErrorMessage(value: ReactNode): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: Node): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
     inline def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
     
@@ -159,21 +96,27 @@ object NumberFieldProps {
     
     inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
+    inline def setMobileEnterKeyHint(value: MobileEnterKeyHintType): Self = StObject.set(x, "mobileEnterKeyHint", value.asInstanceOf[js.Any])
+    
+    inline def setMobileEnterKeyHintUndefined: Self = StObject.set(x, "mobileEnterKeyHint", js.undefined)
+    
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    inline def setOnBlur(value: /* args */ EventFocusEventValue => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+    inline def setOnBlur(value: /* arg */ `1` & (typings.gestalt.anon.Event[FocusEvent[HTMLInputElement, Element]]) => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
     
     inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
     
-    inline def setOnChange(value: EventSyntheticEventValue => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+    inline def setOnChange(
+      value: /* arg */ `1` & (typings.gestalt.anon.Event[SyntheticEvent[HTMLInputElement, Event]]) => Unit
+    ): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     
-    inline def setOnFocus(value: /* args */ EventFocusEventValue => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+    inline def setOnFocus(value: /* arg */ `1` & (typings.gestalt.anon.Event[FocusEvent[HTMLInputElement, Element]]) => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
     
     inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
     
-    inline def setOnKeyDown(value: /* args */ EventKeyboardEventValue => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
+    inline def setOnKeyDown(value: /* arg */ `1` & typings.gestalt.anon.Event[KeyboardEvent[HTMLInputElement]] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
     
     inline def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
     

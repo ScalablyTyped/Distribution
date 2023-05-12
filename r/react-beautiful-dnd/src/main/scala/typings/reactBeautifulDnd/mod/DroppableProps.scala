@@ -1,6 +1,7 @@
 package typings.reactBeautifulDnd.mod
 
 import typings.react.mod.ReactElement
+import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ trait DroppableProps extends StObject {
   
   var droppableId: DroppableId
   
-  var getContainerForClone: js.UndefOr[js.Function0[ReactElement]] = js.undefined
+  var getContainerForClone: js.UndefOr[js.Function0[HTMLElement]] = js.undefined
   
   var ignoreContainerClipping: js.UndefOr[Boolean] = js.undefined
   
@@ -45,7 +46,7 @@ object DroppableProps {
     
     inline def setDroppableId(value: DroppableId): Self = StObject.set(x, "droppableId", value.asInstanceOf[js.Any])
     
-    inline def setGetContainerForClone(value: () => ReactElement): Self = StObject.set(x, "getContainerForClone", js.Any.fromFunction0(value))
+    inline def setGetContainerForClone(value: () => HTMLElement): Self = StObject.set(x, "getContainerForClone", js.Any.fromFunction0(value))
     
     inline def setGetContainerForCloneUndefined: Self = StObject.set(x, "getContainerForClone", js.undefined)
     

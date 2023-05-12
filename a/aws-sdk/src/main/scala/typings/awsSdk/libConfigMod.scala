@@ -73,7 +73,7 @@ object libConfigMod {
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.awsSdk.libConfigServicePlaceholdersMod.ConfigurationServicePlaceholders because Inheritance from two classes. Inlined acm, apigateway, applicationautoscaling, appstream, autoscaling, batch, budgets, clouddirectory, cloudformation, cloudfront, cloudhsm, cloudsearch, cloudsearchdomain, cloudtrail, cloudwatch, cloudwatchevents, cloudwatchlogs, codebuild, codecommit, codedeploy, codepipeline, cognitoidentity, cognitoidentityserviceprovider, cognitosync, configservice, cur, datapipeline, devicefarm, directconnect, directoryservice, discovery, dms, dynamodb, dynamodbstreams, ec2, ecr, ecs, efs, elasticache, elasticbeanstalk, elb, elbv2, emr, es, elastictranscoder, firehose, gamelift, glacier, health, iam, importexport, inspector, iot, iotdata, kinesis, kinesisanalytics, kms, lambda, lexruntime, lightsail, machinelearning, marketplacecommerceanalytics, marketplacemetering, mturk, mobileanalytics, opsworks, opsworkscm, organizations, pinpoint, polly, rds, redshift, rekognition, resourcegroupstaggingapi, route53, route53domains, s3, s3control, servicecatalog, ses, shield, simpledb, sms, snowball, sns, sqs, ssm, storagegateway, stepfunctions, sts, support, swf, xray, waf, wafregional, workdocs, workspaces, codestar, lexmodelbuildingservice, marketplaceentitlementservice, athena, greengrass, dax, migrationhub, cloudhsmv2, glue, mobile, pricing, costexplorer, mediaconvert, medialive, mediapackage, mediastore, mediastoredata, appsync, guardduty, mq, comprehend, iotjobsdataplane, kinesisvideoarchivedmedia, kinesisvideomedia, kinesisvideo, sagemakerruntime, sagemaker, translate, resourcegroups, alexaforbusiness, cloud9, serverlessapplicationrepository, servicediscovery, workmail, autoscalingplans, transcribeservice, connect, acmpca, fms, secretsmanager, iotanalytics, iot1clickdevicesservice, iot1clickprojects, pi, neptune, mediatailor, eks, macie, dlm, signer, chime, pinpointemail, ram, route53resolver, pinpointsmsvoice, quicksight, rdsdataservice, amplify, datasync, robomaker, transfer, globalaccelerator, comprehendmedical, kinesisanalyticsv2, mediaconnect, fsx, securityhub, appmesh, licensemanager, kafka, apigatewaymanagementapi, apigatewayv2, docdb, backup, worklink, textract, managedblockchain, mediapackagevod, groundstation, iotthingsgraph, iotevents, ioteventsdata, personalize, personalizeevents, personalizeruntime, applicationinsights, servicequotas, ec2instanceconnect, eventbridge, lakeformation, forecastservice, forecastqueryservice, qldb, qldbsession, workmailmessageflow, codestarnotifications, savingsplans, sso, ssooidc, marketplacecatalog, dataexchange, sesv2, migrationhubconfig, connectparticipant, appconfig, iotsecuretunneling, wafv2, elasticinference, imagebuilder, schemas, accessanalyzer, codegurureviewer, codeguruprofiler, computeoptimizer, frauddetector, kendra, networkmanager, outposts, augmentedairuntime, ebs, kinesisvideosignalingchannels, detective, codestarconnections, synthetics, iotsitewise, macie2, codeartifact, honeycode, ivs, braket, identitystore, appflow, redshiftdata, ssoadmin, timestreamquery, timestreamwrite, s3outposts, databrew, servicecatalogappregistry, networkfirewall, mwaa, amplifybackend, appintegrations, connectcontactlens, devopsguru, ecrpublic, lookoutvision, sagemakerfeaturestoreruntime, customerprofiles, auditmanager, emrcontainers, healthlake, sagemakeredge, amp, greengrassv2, iotdeviceadvisor, iotfleethub, iotwireless, location, wellarchitected, lexmodelsv2, lexruntimev2, fis, lookoutmetrics, mgn, lookoutequipment, nimble, finspace, finspacedata, ssmcontacts, ssmincidents, applicationcostprofiler, apprunner, proton, route53recoverycluster, route53recoverycontrolconfig, route53recoveryreadiness, chimesdkidentity, chimesdkmessaging, snowdevicemanagement, memorydb, opensearch, kafkaconnect, voiceid, wisdom, account, cloudcontrol, grafana, panorama, chimesdkmeetings, resiliencehub, migrationhubstrategy, appconfigdata, drs, migrationhubrefactorspaces, evidently, inspector2, rbin, rum, backupgateway, iottwinmaker, workspacesweb, amplifyuibuilder, keyspaces, billingconductor, gamesparks, pinpointsmsvoicev2, ivschat, chimesdkmediapipelines, emrserverless, m2, connectcampaigns, redshiftserverless, rolesanywhere, licensemanagerusersubscriptions, backupstorage, privatenetworks, supportapp, controltower, iotfleetwise, migrationhuborchestrator, connectcases, resourceexplorer2, scheduler, ssmsap */ @js.native
+  - typings.awsSdk.libConfigServicePlaceholdersMod.ConfigurationServicePlaceholders because Inheritance from two classes. Inlined acm, apigateway, applicationautoscaling, appstream, autoscaling, batch, budgets, clouddirectory, cloudformation, cloudfront, cloudhsm, cloudsearch, cloudsearchdomain, cloudtrail, cloudwatch, cloudwatchevents, cloudwatchlogs, codebuild, codecommit, codedeploy, codepipeline, cognitoidentity, cognitoidentityserviceprovider, cognitosync, configservice, cur, datapipeline, devicefarm, directconnect, directoryservice, discovery, dms, dynamodb, dynamodbstreams, ec2, ecr, ecs, efs, elasticache, elasticbeanstalk, elb, elbv2, emr, es, elastictranscoder, firehose, gamelift, glacier, health, iam, importexport, inspector, iot, iotdata, kinesis, kinesisanalytics, kms, lambda, lexruntime, lightsail, machinelearning, marketplacecommerceanalytics, marketplacemetering, mturk, mobileanalytics, opsworks, opsworkscm, organizations, pinpoint, polly, rds, redshift, rekognition, resourcegroupstaggingapi, route53, route53domains, s3, s3control, servicecatalog, ses, shield, simpledb, sms, snowball, sns, sqs, ssm, storagegateway, stepfunctions, sts, support, swf, xray, waf, wafregional, workdocs, workspaces, codestar, lexmodelbuildingservice, marketplaceentitlementservice, athena, greengrass, dax, migrationhub, cloudhsmv2, glue, mobile, pricing, costexplorer, mediaconvert, medialive, mediapackage, mediastore, mediastoredata, appsync, guardduty, mq, comprehend, iotjobsdataplane, kinesisvideoarchivedmedia, kinesisvideomedia, kinesisvideo, sagemakerruntime, sagemaker, translate, resourcegroups, alexaforbusiness, cloud9, serverlessapplicationrepository, servicediscovery, workmail, autoscalingplans, transcribeservice, connect, acmpca, fms, secretsmanager, iotanalytics, iot1clickdevicesservice, iot1clickprojects, pi, neptune, mediatailor, eks, macie, dlm, signer, chime, pinpointemail, ram, route53resolver, pinpointsmsvoice, quicksight, rdsdataservice, amplify, datasync, robomaker, transfer, globalaccelerator, comprehendmedical, kinesisanalyticsv2, mediaconnect, fsx, securityhub, appmesh, licensemanager, kafka, apigatewaymanagementapi, apigatewayv2, docdb, backup, worklink, textract, managedblockchain, mediapackagevod, groundstation, iotthingsgraph, iotevents, ioteventsdata, personalize, personalizeevents, personalizeruntime, applicationinsights, servicequotas, ec2instanceconnect, eventbridge, lakeformation, forecastservice, forecastqueryservice, qldb, qldbsession, workmailmessageflow, codestarnotifications, savingsplans, sso, ssooidc, marketplacecatalog, dataexchange, sesv2, migrationhubconfig, connectparticipant, appconfig, iotsecuretunneling, wafv2, elasticinference, imagebuilder, schemas, accessanalyzer, codegurureviewer, codeguruprofiler, computeoptimizer, frauddetector, kendra, networkmanager, outposts, augmentedairuntime, ebs, kinesisvideosignalingchannels, detective, codestarconnections, synthetics, iotsitewise, macie2, codeartifact, honeycode, ivs, braket, identitystore, appflow, redshiftdata, ssoadmin, timestreamquery, timestreamwrite, s3outposts, databrew, servicecatalogappregistry, networkfirewall, mwaa, amplifybackend, appintegrations, connectcontactlens, devopsguru, ecrpublic, lookoutvision, sagemakerfeaturestoreruntime, customerprofiles, auditmanager, emrcontainers, healthlake, sagemakeredge, amp, greengrassv2, iotdeviceadvisor, iotfleethub, iotwireless, location, wellarchitected, lexmodelsv2, lexruntimev2, fis, lookoutmetrics, mgn, lookoutequipment, nimble, finspace, finspacedata, ssmcontacts, ssmincidents, applicationcostprofiler, apprunner, proton, route53recoverycluster, route53recoverycontrolconfig, route53recoveryreadiness, chimesdkidentity, chimesdkmessaging, snowdevicemanagement, memorydb, opensearch, kafkaconnect, voiceid, wisdom, account, cloudcontrol, grafana, panorama, chimesdkmeetings, resiliencehub, migrationhubstrategy, appconfigdata, drs, migrationhubrefactorspaces, evidently, inspector2, rbin, rum, backupgateway, iottwinmaker, workspacesweb, amplifyuibuilder, keyspaces, billingconductor, gamesparks, pinpointsmsvoicev2, ivschat, chimesdkmediapipelines, emrserverless, m2, connectcampaigns, redshiftserverless, rolesanywhere, licensemanagerusersubscriptions, backupstorage, privatenetworks, supportapp, controltower, iotfleetwise, migrationhuborchestrator, connectcases, resourceexplorer2, scheduler, chimesdkvoice, iotroborunner, ssmsap, oam, arczonalshift, omics, opensearchserverless, securitylake, simspaceweaver, docdbelastic, sagemakergeospatial, codecatalyst, pipes, sagemakermetrics, kinesisvideowebrtcstorage, licensemanagerlinuxsubscriptions, kendraranking, cleanrooms, cloudtraildata, tnb, internetmonitor, ivsrealtime, vpclattice, osis */ @js.native
   trait GlobalConfigInstance
     extends Config
        with APIVersions {
@@ -124,6 +124,8 @@ object libConfigMod {
     
     var appsync: js.UndefOr[typings.awsSdk.clientsAppsyncMod.ClientConfiguration] = js.native
     
+    var arczonalshift: js.UndefOr[typings.awsSdk.clientsArczonalshiftMod.ClientConfiguration] = js.native
+    
     var athena: js.UndefOr[typings.awsSdk.clientsAthenaMod.ClientConfiguration] = js.native
     
     var auditmanager: js.UndefOr[typings.awsSdk.clientsAuditmanagerMod.ClientConfiguration] = js.native
@@ -158,6 +160,10 @@ object libConfigMod {
     
     var chimesdkmessaging: js.UndefOr[typings.awsSdk.clientsChimesdkmessagingMod.ClientConfiguration] = js.native
     
+    var chimesdkvoice: js.UndefOr[typings.awsSdk.clientsChimesdkvoiceMod.ClientConfiguration] = js.native
+    
+    var cleanrooms: js.UndefOr[typings.awsSdk.clientsCleanroomsMod.ClientConfiguration] = js.native
+    
     var cloud9: js.UndefOr[typings.awsSdk.clientsCloud9Mod.ClientConfiguration] = js.native
     
     var cloudcontrol: js.UndefOr[typings.awsSdk.clientsCloudcontrolMod.ClientConfiguration] = js.native
@@ -178,6 +184,8 @@ object libConfigMod {
     
     var cloudtrail: js.UndefOr[typings.awsSdk.clientsCloudtrailMod.ClientConfiguration] = js.native
     
+    var cloudtraildata: js.UndefOr[typings.awsSdk.clientsCloudtraildataMod.ClientConfiguration] = js.native
+    
     var cloudwatch: js.UndefOr[typings.awsSdk.clientsCloudwatchMod.ClientConfiguration] = js.native
     
     var cloudwatchevents: js.UndefOr[typings.awsSdk.clientsCloudwatcheventsMod.ClientConfiguration] = js.native
@@ -187,6 +195,8 @@ object libConfigMod {
     var codeartifact: js.UndefOr[typings.awsSdk.clientsCodeartifactMod.ClientConfiguration] = js.native
     
     var codebuild: js.UndefOr[typings.awsSdk.clientsCodebuildMod.ClientConfiguration] = js.native
+    
+    var codecatalyst: js.UndefOr[typings.awsSdk.clientsCodecatalystMod.ClientConfiguration] = js.native
     
     var codecommit: js.UndefOr[typings.awsSdk.clientsCodecommitMod.ClientConfiguration] = js.native
     
@@ -263,6 +273,8 @@ object libConfigMod {
     var dms: js.UndefOr[typings.awsSdk.clientsDmsMod.ClientConfiguration] = js.native
     
     var docdb: js.UndefOr[typings.awsSdk.clientsDocdbMod.ClientConfiguration] = js.native
+    
+    var docdbelastic: js.UndefOr[typings.awsSdk.clientsDocdbelasticMod.ClientConfiguration] = js.native
     
     var drs: js.UndefOr[typings.awsSdk.clientsDrsMod.ClientConfiguration] = js.native
     
@@ -366,6 +378,8 @@ object libConfigMod {
     
     var inspector2: js.UndefOr[typings.awsSdk.clientsInspector2Mod.ClientConfiguration] = js.native
     
+    var internetmonitor: js.UndefOr[typings.awsSdk.clientsInternetmonitorMod.ClientConfiguration] = js.native
+    
     var iot: js.UndefOr[typings.awsSdk.clientsIotMod.ClientConfiguration] = js.native
     
     var iot1clickdevicesservice: js.UndefOr[typings.awsSdk.clientsIot1clickdevicesserviceMod.ClientConfiguration] = js.native
@@ -388,6 +402,8 @@ object libConfigMod {
     
     var iotjobsdataplane: js.UndefOr[typings.awsSdk.clientsIotjobsdataplaneMod.ClientConfiguration] = js.native
     
+    var iotroborunner: js.UndefOr[typings.awsSdk.clientsIotroborunnerMod.ClientConfiguration] = js.native
+    
     var iotsecuretunneling: js.UndefOr[typings.awsSdk.clientsIotsecuretunnelingMod.ClientConfiguration] = js.native
     
     var iotsitewise: js.UndefOr[typings.awsSdk.clientsIotsitewiseMod.ClientConfiguration] = js.native
@@ -402,11 +418,15 @@ object libConfigMod {
     
     var ivschat: js.UndefOr[typings.awsSdk.clientsIvschatMod.ClientConfiguration] = js.native
     
+    var ivsrealtime: js.UndefOr[typings.awsSdk.clientsIvsrealtimeMod.ClientConfiguration] = js.native
+    
     var kafka: js.UndefOr[typings.awsSdk.clientsKafkaMod.ClientConfiguration] = js.native
     
     var kafkaconnect: js.UndefOr[typings.awsSdk.clientsKafkaconnectMod.ClientConfiguration] = js.native
     
     var kendra: js.UndefOr[typings.awsSdk.clientsKendraMod.ClientConfiguration] = js.native
+    
+    var kendraranking: js.UndefOr[typings.awsSdk.clientsKendrarankingMod.ClientConfiguration] = js.native
     
     var keyspaces: js.UndefOr[typings.awsSdk.clientsKeyspacesMod.ClientConfiguration] = js.native
     
@@ -424,6 +444,8 @@ object libConfigMod {
     
     var kinesisvideosignalingchannels: js.UndefOr[typings.awsSdk.clientsKinesisvideosignalingchannelsMod.ClientConfiguration] = js.native
     
+    var kinesisvideowebrtcstorage: js.UndefOr[typings.awsSdk.clientsKinesisvideowebrtcstorageMod.ClientConfiguration] = js.native
+    
     var kms: js.UndefOr[typings.awsSdk.clientsKmsMod.ClientConfiguration] = js.native
     
     var lakeformation: js.UndefOr[typings.awsSdk.clientsLakeformationMod.ClientConfiguration] = js.native
@@ -439,6 +461,8 @@ object libConfigMod {
     var lexruntimev2: js.UndefOr[typings.awsSdk.clientsLexruntimev2Mod.ClientConfiguration] = js.native
     
     var licensemanager: js.UndefOr[typings.awsSdk.clientsLicensemanagerMod.ClientConfiguration] = js.native
+    
+    var licensemanagerlinuxsubscriptions: js.UndefOr[typings.awsSdk.clientsLicensemanagerlinuxsubscriptionsMod.ClientConfiguration] = js.native
     
     var licensemanagerusersubscriptions: js.UndefOr[typings.awsSdk.clientsLicensemanagerusersubscriptionsMod.ClientConfiguration] = js.native
     
@@ -518,13 +542,21 @@ object libConfigMod {
     
     var nimble: js.UndefOr[typings.awsSdk.clientsNimbleMod.ClientConfiguration] = js.native
     
+    var oam: js.UndefOr[typings.awsSdk.clientsOamMod.ClientConfiguration] = js.native
+    
+    var omics: js.UndefOr[typings.awsSdk.clientsOmicsMod.ClientConfiguration] = js.native
+    
     var opensearch: js.UndefOr[typings.awsSdk.clientsOpensearchMod.ClientConfiguration] = js.native
+    
+    var opensearchserverless: js.UndefOr[typings.awsSdk.clientsOpensearchserverlessMod.ClientConfiguration] = js.native
     
     var opsworks: js.UndefOr[typings.awsSdk.clientsOpsworksMod.ClientConfiguration] = js.native
     
     var opsworkscm: js.UndefOr[typings.awsSdk.clientsOpsworkscmMod.ClientConfiguration] = js.native
     
     var organizations: js.UndefOr[typings.awsSdk.clientsOrganizationsMod.ClientConfiguration] = js.native
+    
+    var osis: js.UndefOr[typings.awsSdk.clientsOsisMod.ClientConfiguration] = js.native
     
     var outposts: js.UndefOr[typings.awsSdk.clientsOutpostsMod.ClientConfiguration] = js.native
     
@@ -545,6 +577,8 @@ object libConfigMod {
     var pinpointsmsvoice: js.UndefOr[typings.awsSdk.clientsPinpointsmsvoiceMod.ClientConfiguration] = js.native
     
     var pinpointsmsvoicev2: js.UndefOr[typings.awsSdk.clientsPinpointsmsvoicev2Mod.ClientConfiguration] = js.native
+    
+    var pipes: js.UndefOr[typings.awsSdk.clientsPipesMod.ClientConfiguration] = js.native
     
     var polly: js.UndefOr[typings.awsSdk.clientsPollyMod.ClientConfiguration] = js.native
     
@@ -614,6 +648,10 @@ object libConfigMod {
     
     var sagemakerfeaturestoreruntime: js.UndefOr[typings.awsSdk.clientsSagemakerfeaturestoreruntimeMod.ClientConfiguration] = js.native
     
+    var sagemakergeospatial: js.UndefOr[typings.awsSdk.clientsSagemakergeospatialMod.ClientConfiguration] = js.native
+    
+    var sagemakermetrics: js.UndefOr[typings.awsSdk.clientsSagemakermetricsMod.ClientConfiguration] = js.native
+    
     var sagemakerruntime: js.UndefOr[typings.awsSdk.clientsSagemakerruntimeMod.ClientConfiguration] = js.native
     
     var savingsplans: js.UndefOr[typings.awsSdk.clientsSavingsplansMod.ClientConfiguration] = js.native
@@ -625,6 +663,8 @@ object libConfigMod {
     var secretsmanager: js.UndefOr[typings.awsSdk.clientsSecretsmanagerMod.ClientConfiguration] = js.native
     
     var securityhub: js.UndefOr[typings.awsSdk.clientsSecurityhubMod.ClientConfiguration] = js.native
+    
+    var securitylake: js.UndefOr[typings.awsSdk.clientsSecuritylakeMod.ClientConfiguration] = js.native
     
     var serverlessapplicationrepository: js.UndefOr[typings.awsSdk.clientsServerlessapplicationrepositoryMod.ClientConfiguration] = js.native
     
@@ -645,6 +685,8 @@ object libConfigMod {
     var signer: js.UndefOr[typings.awsSdk.clientsSignerMod.ClientConfiguration] = js.native
     
     var simpledb: js.UndefOr[typings.awsSdk.clientsSimpledbMod.ClientConfiguration] = js.native
+    
+    var simspaceweaver: js.UndefOr[typings.awsSdk.clientsSimspaceweaverMod.ClientConfiguration] = js.native
     
     var sms: js.UndefOr[typings.awsSdk.clientsSmsMod.ClientConfiguration] = js.native
     
@@ -690,6 +732,8 @@ object libConfigMod {
     
     var timestreamwrite: js.UndefOr[typings.awsSdk.clientsTimestreamwriteMod.ClientConfiguration] = js.native
     
+    var tnb: js.UndefOr[typings.awsSdk.clientsTnbMod.ClientConfiguration] = js.native
+    
     var transcribeservice: js.UndefOr[typings.awsSdk.clientsTranscribeserviceMod.ClientConfiguration] = js.native
     
     var transfer: js.UndefOr[typings.awsSdk.clientsTransferMod.ClientConfiguration] = js.native
@@ -697,6 +741,8 @@ object libConfigMod {
     var translate: js.UndefOr[typings.awsSdk.clientsTranslateMod.ClientConfiguration] = js.native
     
     var voiceid: js.UndefOr[typings.awsSdk.clientsVoiceidMod.ClientConfiguration] = js.native
+    
+    var vpclattice: js.UndefOr[typings.awsSdk.clientsVpclatticeMod.ClientConfiguration] = js.native
     
     var waf: js.UndefOr[typings.awsSdk.clientsWafMod.ClientConfiguration] = js.native
     

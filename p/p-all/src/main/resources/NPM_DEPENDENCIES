@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "p-all" : "4.0.0"
+      "p-all" : "5.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "p-all" : "4.0.0"
+      "p-all" : "5.0.0"
     }
   ],
   "compile-devDependencies" : [

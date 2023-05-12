@@ -1,5 +1,6 @@
 package typings.babylonjs.BABYLON
 
+import typings.babylonjs.XRCPUDepthInformation
 import typings.babylonjs.XRFrame
 import typings.babylonjs.XRHitTestResult
 import typings.babylonjs.XRHitTestSource
@@ -12,6 +13,7 @@ import typings.babylonjs.XRSession
 import typings.babylonjs.XRSpace
 import typings.babylonjs.XRTransientInputHitTestResult
 import typings.babylonjs.XRTransientInputHitTestSource
+import typings.babylonjs.XRView
 import typings.babylonjs.XRViewerPose
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -34,6 +36,7 @@ trait INativeXRFrame
 object INativeXRFrame {
   
   inline def apply(
+    getDepthInformation: XRView => js.UndefOr[XRCPUDepthInformation],
     getHitTestResults: XRHitTestSource => js.Array[XRHitTestResult],
     getHitTestResultsForTransientInput: XRTransientInputHitTestSource => js.Array[XRTransientInputHitTestResult],
     getLightEstimate: XRLightProbe => XRLightEstimate,
@@ -42,7 +45,7 @@ object INativeXRFrame {
     getViewerPose: XRReferenceSpace => js.UndefOr[XRViewerPose],
     session: XRSession
   ): INativeXRFrame = {
-    val __obj = js.Dynamic.literal(getHitTestResults = js.Any.fromFunction1(getHitTestResults), getHitTestResultsForTransientInput = js.Any.fromFunction1(getHitTestResultsForTransientInput), getLightEstimate = js.Any.fromFunction1(getLightEstimate), getPose = js.Any.fromFunction2(getPose), getPoseData = js.Any.fromFunction4(getPoseData), getViewerPose = js.Any.fromFunction1(getViewerPose), session = session.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(getDepthInformation = js.Any.fromFunction1(getDepthInformation), getHitTestResults = js.Any.fromFunction1(getHitTestResults), getHitTestResultsForTransientInput = js.Any.fromFunction1(getHitTestResultsForTransientInput), getLightEstimate = js.Any.fromFunction1(getLightEstimate), getPose = js.Any.fromFunction2(getPose), getPoseData = js.Any.fromFunction4(getPoseData), getViewerPose = js.Any.fromFunction1(getViewerPose), session = session.asInstanceOf[js.Any])
     __obj.asInstanceOf[INativeXRFrame]
   }
   

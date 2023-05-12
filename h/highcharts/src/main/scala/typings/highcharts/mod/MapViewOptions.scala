@@ -14,6 +14,18 @@ trait MapViewOptions extends StObject {
   var center: js.UndefOr[LonLatArray] = js.undefined
   
   /**
+    * (Highmaps) Fit the map to a geometry object consisting of individual
+    * points or polygons. This is practical for responsive maps where we want
+    * to focus on a specific area regardless of map size - unlike setting
+    * `center` and `zoom`, where the view doesn't scale with different map
+    * sizes.
+    *
+    * The geometry can be combined with the padding option to avoid touching
+    * the edges of the chart.
+    */
+  var fitToGeometry: js.UndefOr[js.Object] = js.undefined
+  
+  /**
     * (Highmaps) Generic options for the placement and appearance of map insets
     * like non-contiguous territories.
     */
@@ -42,6 +54,9 @@ trait MapViewOptions extends StObject {
     * (Highmaps) The padding inside the plot area when auto fitting to the map
     * bounds. A number signifies pixels, and a percentage is relative to the
     * plot area size.
+    *
+    * An array sets individual padding for the sides in the order [top, right,
+    * bottom, left].
     */
   var padding: js.UndefOr[Double | String | (js.Array[Double | String])] = js.undefined
   
@@ -77,6 +92,10 @@ object MapViewOptions {
     inline def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
     
     inline def setCenterVarargs(value: Double*): Self = StObject.set(x, "center", js.Array(value*))
+    
+    inline def setFitToGeometry(value: js.Object): Self = StObject.set(x, "fitToGeometry", value.asInstanceOf[js.Any])
+    
+    inline def setFitToGeometryUndefined: Self = StObject.set(x, "fitToGeometry", js.undefined)
     
     inline def setInsetOptions(value: MapViewInsetOptions): Self = StObject.set(x, "insetOptions", value.asInstanceOf[js.Any])
     

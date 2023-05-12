@@ -1,11 +1,8 @@
 package typings.contractProxyKit.anon
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.ethers.mod.ethers.utils.Interface
-import typings.ethersprojectAbi.libAbiCoderMod.AbiCoder
-import typings.ethersprojectAbi.libFragmentsMod.ErrorFragment
-import typings.ethersprojectAbi.libFragmentsMod.EventFragment
-import typings.ethersprojectAbi.libFragmentsMod.FunctionFragment
+import typings.ethers.mod.ethers.Interface
+import typings.ethers.typesAbiInterfaceMod.InterfaceAbi
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,16 +10,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait TypeofInterface
   extends StObject
-     with Instantiable1[/* fragments */ String, Interface] {
+     with Instantiable1[/* fragments */ InterfaceAbi, Interface] {
   
-  def getAbiCoder(): AbiCoder = js.native
-  
-  def getAddress(address: String): String = js.native
-  
-  def getEventTopic(eventFragment: EventFragment): String = js.native
-  
-  def getSighash(fragment: ErrorFragment): String = js.native
-  def getSighash(fragment: FunctionFragment): String = js.native
-  
-  def isInterface(value: Any): /* is @ethersproject/abi.@ethersproject/abi/lib/interface.Interface */ Boolean = js.native
+  def from(value: typings.ethers.typesAbiInterfaceMod.Interface): typings.ethers.typesAbiInterfaceMod.Interface = js.native
+  /**
+    *  Creates a new [[Interface]] from the ABI %%value%%.
+    *
+    *  The %%value%% may be provided as an existing [[Interface]] object,
+    *  a JSON-encoded ABI or any Human-Readable ABI format.
+    */
+  def from(value: InterfaceAbi): typings.ethers.typesAbiInterfaceMod.Interface = js.native
 }

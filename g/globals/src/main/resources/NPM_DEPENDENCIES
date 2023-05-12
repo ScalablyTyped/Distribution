@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "globals" : "13.17.0"
+      "globals" : "13.20.0"
     }
   ],
   "test-dependencies" : [
     {
-      "globals" : "13.17.0"
+      "globals" : "13.20.0"
     }
   ],
   "compile-devDependencies" : [

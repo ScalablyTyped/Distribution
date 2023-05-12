@@ -36,6 +36,8 @@ object distLibServiceMod {
     
     /* private */ var RecordSRV: Any = js.native
     
+    /* private */ var RecordSubtypePTR: Any = js.native
+    
     /* private */ var RecordTXT: Any = js.native
     
     var activated: Boolean = js.native

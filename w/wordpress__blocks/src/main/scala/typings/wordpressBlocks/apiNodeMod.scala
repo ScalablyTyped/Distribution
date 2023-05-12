@@ -32,6 +32,8 @@ object apiNodeMod {
       * @throws {TypeError} If non-element/text node is passed.
       *
       * @param domNode - DOM node to convert.
+      *
+      * @deprecated since 11.17.0. Use the html source instead.
       */
     inline def fromDOM(domNode: Node): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDOM")(domNode.asInstanceOf[js.Any]).asInstanceOf[Element]
     
@@ -41,6 +43,8 @@ object apiNodeMod {
       *
       * @param node - Block node to test
       * @param type - Node to type to test against.
+      *
+      * @deprecated since 11.17.0. Use the html source instead.
       */
     inline def isNodeOfType_type(
       node: Element,
@@ -52,6 +56,8 @@ object apiNodeMod {
       * matching the selector result.
       *
       * @param selector - DOM selector.
+      *
+      * @deprecated since 11.17.0. Use the html source instead.
       */
     /* was `typeof children.matcher` */
     inline def matcher(selector: String): js.Function1[/* domNode */ Node & ParentNode, js.Array[ReactChild]] = ^.asInstanceOf[js.Dynamic].applyDynamic("matcher")(selector.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* domNode */ Node & ParentNode, js.Array[ReactChild]]]
@@ -60,6 +66,8 @@ object apiNodeMod {
       * Given a block node, returns its HTML string representation.
       *
       * @param node - Block node to convert to string.
+      *
+      * @deprecated since 11.17.0. Use the html source instead.
       */
     inline def toHTML(node: ReactChild): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toHTML")(node.asInstanceOf[js.Any]).asInstanceOf[String]
   }

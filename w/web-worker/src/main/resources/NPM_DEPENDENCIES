@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "web-worker" : "1.2.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "web-worker" : "1.2.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

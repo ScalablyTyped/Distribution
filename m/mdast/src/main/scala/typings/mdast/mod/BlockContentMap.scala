@@ -20,7 +20,7 @@ trait BlockContentMap extends StObject {
   
   var table: Table
   
-  var thematicbreak: ThematicBreak
+  var thematicBreak: ThematicBreak
 }
 object BlockContentMap {
   
@@ -32,9 +32,9 @@ object BlockContentMap {
     list: typings.mdast.mod.List,
     paragraph: Paragraph,
     table: Table,
-    thematicbreak: ThematicBreak
+    thematicBreak: ThematicBreak
   ): BlockContentMap = {
-    val __obj = js.Dynamic.literal(blockquote = blockquote.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], heading = heading.asInstanceOf[js.Any], html = html.asInstanceOf[js.Any], list = list.asInstanceOf[js.Any], paragraph = paragraph.asInstanceOf[js.Any], table = table.asInstanceOf[js.Any], thematicbreak = thematicbreak.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(blockquote = blockquote.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], heading = heading.asInstanceOf[js.Any], html = html.asInstanceOf[js.Any], list = list.asInstanceOf[js.Any], paragraph = paragraph.asInstanceOf[js.Any], table = table.asInstanceOf[js.Any], thematicBreak = thematicBreak.asInstanceOf[js.Any])
     __obj.asInstanceOf[BlockContentMap]
   }
   
@@ -55,6 +55,6 @@ object BlockContentMap {
     
     inline def setTable(value: Table): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
     
-    inline def setThematicbreak(value: ThematicBreak): Self = StObject.set(x, "thematicbreak", value.asInstanceOf[js.Any])
+    inline def setThematicBreak(value: ThematicBreak): Self = StObject.set(x, "thematicBreak", value.asInstanceOf[js.Any])
   }
 }

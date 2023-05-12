@@ -7,11 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Rewritten from type alias, can be one of: 
   - typings.floatingUiCore.floatingUiCoreStrings.viewport
   - typings.floatingUiCore.floatingUiCoreStrings.document
+  - typings.floatingUiCore.srcTypesMod.Rect
 */
 trait RootBoundary extends StObject
-object RootBoundary {
-  
-  inline def document: typings.floatingUiCore.floatingUiCoreStrings.document = "document".asInstanceOf[typings.floatingUiCore.floatingUiCoreStrings.document]
-  
-  inline def viewport: typings.floatingUiCore.floatingUiCoreStrings.viewport = "viewport".asInstanceOf[typings.floatingUiCore.floatingUiCoreStrings.viewport]
-}

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "locate-path" : "7.1.1"
+      "locate-path" : "7.2.0"
     }
   ],
   "test-dependencies" : [
     {
-      "locate-path" : "7.1.1"
+      "locate-path" : "7.2.0"
     }
   ],
   "compile-devDependencies" : [

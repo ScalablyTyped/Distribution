@@ -16,7 +16,7 @@ object libIconsUpSquareFilledMod extends Shortcut {
   @js.native
   trait UpSquareFilledIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_UpSquareFilledIconType: String = js.native

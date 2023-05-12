@@ -4,11 +4,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ServerInfo extends StObject {
+trait ServerInfo
+  extends StObject
+     with RealtimeDataUpdatedAt {
   
   var hciVersion: js.UndefOr[String] = js.undefined
-  
-  var realtimeDataUpdatedAt: js.UndefOr[Double] = js.undefined
   
   var serverTime: js.UndefOr[String | Double] = js.undefined
   
@@ -29,10 +29,6 @@ object ServerInfo {
     inline def setHciVersion(value: String): Self = StObject.set(x, "hciVersion", value.asInstanceOf[js.Any])
     
     inline def setHciVersionUndefined: Self = StObject.set(x, "hciVersion", js.undefined)
-    
-    inline def setRealtimeDataUpdatedAt(value: Double): Self = StObject.set(x, "realtimeDataUpdatedAt", value.asInstanceOf[js.Any])
-    
-    inline def setRealtimeDataUpdatedAtUndefined: Self = StObject.set(x, "realtimeDataUpdatedAt", js.undefined)
     
     inline def setServerTime(value: String | Double): Self = StObject.set(x, "serverTime", value.asInstanceOf[js.Any])
     

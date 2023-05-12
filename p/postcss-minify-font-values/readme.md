@@ -1,7 +1,7 @@
 
 # Scala.js typings for postcss-minify-font-values
 
-Typings are for version 5.1.0
+Typings are for version 6.0.0
 
 ## Library description:
 Minify font declarations with PostCSS

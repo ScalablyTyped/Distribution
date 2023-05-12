@@ -10,16 +10,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * The SpatialStyle class represents a style with which spatial objects like polylines and polygons are drawn. A SpatialStyle instance is always treated as immutable to avoid inconstiencies
   * and must not modified.
-  * @property strokeColor {string} - The color of the stroke in CSS syntax, default is 'rgba(0, 85, 170, 0.6)'.
-  * @property fillColor {string} - The filling color in CSS syntax, default is 'rgba(0, 85, 170, 0.4)'.
-  * @property lineWidth {number} - The width of the line in pixels, default is 2.
-  * @property lineCap {H.map.SpatialStyle.LineCap} - The style of the end caps for a line, default is 'round'.
-  * @property lineJoin {H.map.SpatialStyle.LineJoin} - The type of corner created, when two lines meet, default is 'miter'.
-  * @property miterLimit {number} - The miter length is the distance between the inner corner and the outer corner where two lines meet. The default is 10.
-  * @property lineDash {Array<number>} - The line dash pattern as an even numbered list of distances to alternately produce a line and a space. The default is [].
-  * @property lineDashOffset {number} - The phase offset of the line dash pattern The default is 0.
-  * @property MAX_LINE_WIDTH {number} - This constant represents the maximum line width which can be used for rendering.
-  * @property DEFAULT_STYLE {H.map.SpatialStyle} - This static member defines the default style for spatial objects on the map. It's value is
+  * strokeColor {string} - The color of the stroke in CSS syntax, default is 'rgba(0, 85, 170, 0.6)'.
+  * fillColor {string} - The filling color in CSS syntax, default is 'rgba(0, 85, 170, 0.4)'.
+  * lineWidth {number} - The width of the line in pixels, default is 2.
+  * lineCap {H.map.SpatialStyle.LineCap} - The style of the end caps for a line, default is 'round'.
+  * lineJoin {H.map.SpatialStyle.LineJoin} - The type of corner created, when two lines meet, default is 'miter'.
+  * miterLimit {number} - The miter length is the distance between the inner corner and the outer corner where two lines meet. The default is 10.
+  * lineDash {Array<number>} - The line dash pattern as an even numbered list of distances to alternately produce a line and a space. The default is [].
+  * lineDashOffset {number} - The phase offset of the line dash pattern The default is 0.
+  * MAX_LINE_WIDTH {number} - This constant represents the maximum line width which can be used for rendering.
+  * DEFAULT_STYLE {H.map.SpatialStyle} - This static member defines the default style for spatial objects on the map. It's value is
   * { strokeColor: '#05A', fillColor: 'rgba(0, 85, 170, 0.4)', lineWidth: 1, lineCap: 'round', lineJoin: 'miter', miterLimit: 10, lineDash: [], lineDashOffset: 0 }
   */
 @js.native
@@ -49,7 +49,11 @@ trait SpatialStyle extends StObject {
   
   var lineDashOffset: Double = js.native
   
+  var lineHeadCap: js.UndefOr[LineCap] = js.native
+  
   var lineJoin: LineJoin = js.native
+  
+  var lineTailCap: js.UndefOr[LineCap] = js.native
   
   var lineWidth: Double = js.native
   
@@ -103,15 +107,15 @@ object SpatialStyle {
   
   /**
     * Options used to initialize a style. If a property is not set, the default value from H.map.SpatialStyle is taken.
-    * @property strokeColor {string=} - The color of the stroke in CSS syntax.
-    * @property fillColor {string=} - The color of the stroke in CSS syntax.
-    * @property lineWidth {number=} - The width of the line in pixels, default is 2. The maximum supported line width is 100.
-    * @property lineCap {H.map.SpatialStyle.LineCap=} - The style of the end caps for a line.
-    * @property lineJoin {H.map.SpatialStyle.LineJoin=} - The type of corner created, when two lines meet.
-    * @property miterLimit {number=} - The miter limit in pixel, default is 10. The maximum supported miter limit is 100
-    * @property lineDash {Array<number>} - The line dash pattern as an even numbered list of distances to alternately produce a line and a space. If the browser doesn't support this feature
+    * strokeColor {string=} - The color of the stroke in CSS syntax.
+    * fillColor {string=} - The color of the stroke in CSS syntax.
+    * lineWidth {number=} - The width of the line in pixels, default is 2. The maximum supported line width is 100.
+    * lineCap {H.map.SpatialStyle.LineCap=} - The style of the end caps for a line.
+    * lineJoin {H.map.SpatialStyle.LineJoin=} - The type of corner created, when two lines meet.
+    * miterLimit {number=} - The miter limit in pixel, default is 10. The maximum supported miter limit is 100
+    * lineDash {Array<number>} - The line dash pattern as an even numbered list of distances to alternately produce a line and a space. If the browser doesn't support this feature
     * this style property is ignored.
-    * @property lineDashOffset {number=} - The phase offset of the line dash pattern
+    * lineDashOffset {number=} - The phase offset of the line dash pattern
     */
   trait Options extends StObject {
     
@@ -123,7 +127,11 @@ object SpatialStyle {
     
     var lineDashOffset: js.UndefOr[Double] = js.undefined
     
+    var lineHeadCap: js.UndefOr[LineCap] = js.undefined
+    
     var lineJoin: js.UndefOr[LineJoin] = js.undefined
+    
+    var lineTailCap: js.UndefOr[LineCap] = js.undefined
     
     var lineWidth: js.UndefOr[Double] = js.undefined
     
@@ -159,9 +167,17 @@ object SpatialStyle {
       
       inline def setLineDashVarargs(value: Double*): Self = StObject.set(x, "lineDash", js.Array(value*))
       
+      inline def setLineHeadCap(value: LineCap): Self = StObject.set(x, "lineHeadCap", value.asInstanceOf[js.Any])
+      
+      inline def setLineHeadCapUndefined: Self = StObject.set(x, "lineHeadCap", js.undefined)
+      
       inline def setLineJoin(value: LineJoin): Self = StObject.set(x, "lineJoin", value.asInstanceOf[js.Any])
       
       inline def setLineJoinUndefined: Self = StObject.set(x, "lineJoin", js.undefined)
+      
+      inline def setLineTailCap(value: LineCap): Self = StObject.set(x, "lineTailCap", value.asInstanceOf[js.Any])
+      
+      inline def setLineTailCapUndefined: Self = StObject.set(x, "lineTailCap", js.undefined)
       
       inline def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
       

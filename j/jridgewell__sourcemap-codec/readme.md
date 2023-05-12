@@ -1,7 +1,7 @@
 
 # Scala.js typings for jridgewell__sourcemap-codec
 
-Typings are for version 1.4.14
+Typings are for version 1.4.15
 
 ## Library description:
 Encode/decode sourcemap mappings

@@ -1,7 +1,7 @@
 
 # Scala.js typings for libp2p__interface-registrar
 
-Typings are for version 2.0.3
+Typings are for version 2.0.12
 
 ## Library description:
 Registrar interface for libp2p

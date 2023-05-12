@@ -16,8 +16,8 @@ trait DeprecatedLifecycle[P, S] extends StObject {
     * prevents this from being invoked.
     *
     * @deprecated 16.3, use componentDidMount or the constructor instead
-    * @see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#initializing-state
-    * @see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path
+    * @see https://legacy.reactjs.org/blog/2018/03/27/update-on-async-rendering.html#initializing-state
+    * @see https://legacy.reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path
     */
   var UNSAFE_componentWillMount: js.UndefOr[js.Function0[Unit]] = js.undefined
   
@@ -34,8 +34,8 @@ trait DeprecatedLifecycle[P, S] extends StObject {
     * prevents this from being invoked.
     *
     * @deprecated 16.3, use static getDerivedStateFromProps instead
-    * @see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#updating-state-based-on-props
-    * @see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path
+    * @see https://legacy.reactjs.org/blog/2018/03/27/update-on-async-rendering.html#updating-state-based-on-props
+    * @see https://legacy.reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path
     */
   var UNSAFE_componentWillReceiveProps: js.UndefOr[js.Function2[/* nextProps */ P, /* nextContext */ Any, Unit]] = js.undefined
   
@@ -50,8 +50,8 @@ trait DeprecatedLifecycle[P, S] extends StObject {
     * prevents this from being invoked.
     *
     * @deprecated 16.3, use getSnapshotBeforeUpdate instead
-    * @see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#reading-dom-properties-before-an-update
-    * @see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path
+    * @see https://legacy.reactjs.org/blog/2018/03/27/update-on-async-rendering.html#reading-dom-properties-before-an-update
+    * @see https://legacy.reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path
     */
   var UNSAFE_componentWillUpdate: js.UndefOr[js.Function3[/* nextProps */ P, /* nextState */ S, /* nextContext */ Any, Unit]] = js.undefined
   
@@ -63,8 +63,8 @@ trait DeprecatedLifecycle[P, S] extends StObject {
     * prevents this from being invoked.
     *
     * @deprecated 16.3, use componentDidMount or the constructor instead; will stop working in React 17
-    * @see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#initializing-state
-    * @see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path
+    * @see https://legacy.reactjs.org/blog/2018/03/27/update-on-async-rendering.html#initializing-state
+    * @see https://legacy.reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path
     */
   var componentWillMount: js.UndefOr[js.Function0[Unit]] = js.undefined
   
@@ -79,8 +79,8 @@ trait DeprecatedLifecycle[P, S] extends StObject {
     * prevents this from being invoked.
     *
     * @deprecated 16.3, use static getDerivedStateFromProps instead; will stop working in React 17
-    * @see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#updating-state-based-on-props
-    * @see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path
+    * @see https://legacy.reactjs.org/blog/2018/03/27/update-on-async-rendering.html#updating-state-based-on-props
+    * @see https://legacy.reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path
     */
   var componentWillReceiveProps: js.UndefOr[js.Function2[/* nextProps */ P, /* nextContext */ Any, Unit]] = js.undefined
   
@@ -93,8 +93,8 @@ trait DeprecatedLifecycle[P, S] extends StObject {
     * prevents this from being invoked.
     *
     * @deprecated 16.3, use getSnapshotBeforeUpdate instead; will stop working in React 17
-    * @see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#reading-dom-properties-before-an-update
-    * @see https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path
+    * @see https://legacy.reactjs.org/blog/2018/03/27/update-on-async-rendering.html#reading-dom-properties-before-an-update
+    * @see https://legacy.reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path
     */
   var componentWillUpdate: js.UndefOr[js.Function3[/* nextProps */ P, /* nextState */ S, /* nextContext */ Any, Unit]] = js.undefined
 }

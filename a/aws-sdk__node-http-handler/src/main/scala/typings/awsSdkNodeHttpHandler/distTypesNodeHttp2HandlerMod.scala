@@ -25,12 +25,7 @@ object distTypesNodeHttp2HandlerMod {
     
     /* private */ val configProvider: Any = js.native
     
-    /**
-      * Delete a session from the connection pool.
-      * @param authority The authority of the session to delete.
-      * @param session The session to delete.
-      */
-    /* private */ var deleteSessionFromCache: Any = js.native
+    /* private */ val connectionManager: Any = js.native
     
     /**
       * Destroys a session.
@@ -41,33 +36,30 @@ object distTypesNodeHttp2HandlerMod {
     @JSName("destroy")
     def destroy_MNodeHttp2Handler(): Unit = js.native
     
-    /**
-      * Returns a session for the given URL.
-      *
-      * @param authority The URL to create a session for.
-      * @param disableConcurrentStreams If true, a new session will be created for each request.
-      * @returns A session for the given URL.
-      */
-    /* private */ var getSession: Any = js.native
-    
     def handle(request: typings.awsSdkProtocolHttp.mod.HttpRequest): js.Promise[Response] = js.native
     def handle(request: typings.awsSdkProtocolHttp.mod.HttpRequest, param1: HttpHandlerOptions): js.Promise[Response] = js.native
     
     @JSName("metadata")
     val metadata_NodeHttp2Handler: HandlerProtocol = js.native
-    
-    /* private */ var sessionCache: Any = js.native
   }
   
   trait NodeHttp2HandlerOptions extends StObject {
     
     /**
       * Disables processing concurrent streams on a ClientHttp2Session instance. When set
-      * to true, the handler will create a new session instance for each request to a URL.
+      * to true, a new session instance is created for each request to a URL.
       * **Default:** false.
       * https://nodejs.org/api/http2.html#http2_class_clienthttp2session
       */
     var disableConcurrentStreams: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Maximum number of concurrent Http2Stream instances per ClientHttp2Session. Each session
+      * may have up to 2^31-1 Http2Stream instances over its lifetime.
+      * This value must be greater than or equal to 0.
+      * https://nodejs.org/api/http2.html#class-http2stream
+      */
+    var maxConcurrentStreams: js.UndefOr[Double] = js.undefined
     
     /**
       * The maximum time in milliseconds that a stream may remain idle before it
@@ -95,6 +87,10 @@ object distTypesNodeHttp2HandlerMod {
       inline def setDisableConcurrentStreams(value: Boolean): Self = StObject.set(x, "disableConcurrentStreams", value.asInstanceOf[js.Any])
       
       inline def setDisableConcurrentStreamsUndefined: Self = StObject.set(x, "disableConcurrentStreams", js.undefined)
+      
+      inline def setMaxConcurrentStreams(value: Double): Self = StObject.set(x, "maxConcurrentStreams", value.asInstanceOf[js.Any])
+      
+      inline def setMaxConcurrentStreamsUndefined: Self = StObject.set(x, "maxConcurrentStreams", js.undefined)
       
       inline def setRequestTimeout(value: Double): Self = StObject.set(x, "requestTimeout", value.asInstanceOf[js.Any])
       

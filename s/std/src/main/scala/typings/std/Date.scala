@@ -45,7 +45,7 @@ trait Date extends StObject {
   /* standard es5 */
   def getSeconds(): Double = js.native
   
-  /** Gets the time value in milliseconds. */
+  /** Returns the stored time value in milliseconds since midnight, January 1, 1970 UTC. */
   /* standard es5 */
   def getTime(): Double = js.native
   

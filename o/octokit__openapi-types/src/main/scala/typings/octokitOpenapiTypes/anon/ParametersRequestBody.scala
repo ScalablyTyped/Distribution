@@ -8,14 +8,14 @@ trait ParametersRequestBody extends StObject {
   
   var parameters: PathInstallationid
   
-  var requestBody: ContentApplicationjsonPermissions
+  var requestBody: js.UndefOr[ContentApplicationjsonPermissions] = js.undefined
   
   var responses: `401`
 }
 object ParametersRequestBody {
   
-  inline def apply(parameters: PathInstallationid, requestBody: ContentApplicationjsonPermissions, responses: `401`): ParametersRequestBody = {
-    val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], requestBody = requestBody.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
+  inline def apply(parameters: PathInstallationid, responses: `401`): ParametersRequestBody = {
+    val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersRequestBody]
   }
   
@@ -25,6 +25,8 @@ object ParametersRequestBody {
     inline def setParameters(value: PathInstallationid): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     inline def setRequestBody(value: ContentApplicationjsonPermissions): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    
+    inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
     
     inline def setResponses(value: `401`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }

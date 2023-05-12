@@ -10,7 +10,7 @@ open class LabelSeries protected () extends AbstractSeries[LabelSeriesProps] {
   def this(props: LabelSeriesProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: LabelSeriesProps, context: Any) = this()
 }

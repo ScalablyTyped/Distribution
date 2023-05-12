@@ -6,7 +6,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** @typedef {import('./graphics-device.js').GraphicsDevice} GraphicsDevice */
 /**
   * A vertex format is a descriptor that defines the layout of vertex data inside a
   * {@link VertexBuffer}.
@@ -58,10 +57,11 @@ open class VertexFormat protected () extends StObject {
   /**
     * Create a new VertexFormat instance.
     *
-    * @param {GraphicsDevice} graphicsDevice - The graphics device used to manage this vertex format.
+    * @param {import('./graphics-device.js').GraphicsDevice} graphicsDevice - The graphics device
+    * used to manage this vertex format.
     * @param {object[]} description - An array of vertex attribute descriptions.
-    * @param {string} description[].semantic - The meaning of the vertex element. This is used to link
-    * the vertex data to a shader input. Can be:
+    * @param {string} description[].semantic - The meaning of the vertex element. This is used to
+    * link the vertex data to a shader input. Can be:
     *
     * - {@link SEMANTIC_POSITION}
     * - {@link SEMANTIC_NORMAL}
@@ -103,12 +103,12 @@ open class VertexFormat protected () extends StObject {
     * vertex format will be interleaved. (example: PNCPNCPNCPNC).
     * @example
     * // Specify 3-component positions (x, y, z)
-    * var vertexFormat = new pc.VertexFormat(graphicsDevice, [
+    * const vertexFormat = new pc.VertexFormat(graphicsDevice, [
     *     { semantic: pc.SEMANTIC_POSITION, components: 3, type: pc.TYPE_FLOAT32 }
     * ]);
     * @example
     * // Specify 2-component positions (x, y), a texture coordinate (u, v) and a vertex color (r, g, b, a)
-    * var vertexFormat = new pc.VertexFormat(graphicsDevice, [
+    * const vertexFormat = new pc.VertexFormat(graphicsDevice, [
     *     { semantic: pc.SEMANTIC_POSITION, components: 2, type: pc.TYPE_FLOAT32 },
     *     { semantic: pc.SEMANTIC_TEXCOORD0, components: 2, type: pc.TYPE_FLOAT32 },
     *     { semantic: pc.SEMANTIC_COLOR, components: 4, type: pc.TYPE_UINT8, normalize: true }
@@ -128,6 +128,8 @@ open class VertexFormat protected () extends StObject {
   
   var batchingHash: Double = js.native
   
+  var device: GraphicsDevice = js.native
+  
   def elements: js.Array[DataType] = js.native
   
   var hasColor: Boolean = js.native
@@ -138,13 +140,22 @@ open class VertexFormat protected () extends StObject {
   
   var hasUv1: Boolean = js.native
   
+  var instancing: Boolean = js.native
+  
   var interleaved: Boolean = js.native
   
-  var renderingingHash: Double = js.native
+  var renderingHash: Double = js.native
   
-  var renderingingHashString: String = js.native
+  var renderingHashString: String = js.native
   
   var size: Double = js.native
+  
+  /**
+    * Applies any changes made to the VertexFormat's properties.
+    *
+    * @private
+    */
+  /* private */ var update: Any = js.native
   
   var vertexCount: Double = js.native
   
@@ -166,4 +177,15 @@ object VertexFormat {
   def defaultInstancingFormat: Any = js.native
   
   inline def defaultInstancingFormat_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_defaultInstancingFormat")(x.asInstanceOf[js.Any])
+  
+  /**
+    * The {@link VertexFormat} used to store matrices of type {@link Mat4} for hardware instancing.
+    *
+    * @param {import('./graphics-device.js').GraphicsDevice} graphicsDevice - The graphics device
+    * used to create this vertex format.
+    *
+    * @returns {VertexFormat} The default instancing vertex format.
+    */
+  /* static member */
+  inline def getDefaultInstancingFormat(graphicsDevice: GraphicsDevice): VertexFormat = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultInstancingFormat")(graphicsDevice.asInstanceOf[js.Any]).asInstanceOf[VertexFormat]
 }

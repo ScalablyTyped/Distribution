@@ -14,12 +14,10 @@ trait JQuery extends StObject {
     * @param options An optional object that allow you to change the default configuration options
     */
   /**
-    * @constructor
     */
   def dynatable(): JQuery
   def dynatable(options: Options): JQuery
   /**
-    * @constructor
     */
   @JSName("dynatable")
   var dynatable_Original: Dynatable

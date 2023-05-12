@@ -62,7 +62,7 @@ object libRenderTextureGenerateTextureSystemMod {
     /** The resolution / device pixel ratio of the texture being generated. Optional defaults to Renderer resolution. */
     var resolution: js.UndefOr[Double] = js.undefined
     
-    /** The scale mode of the texture. Optional, defaults to `PIXI.settings.SCALE_MODE`. */
+    /** The scale mode of the texture. Optional, defaults to `PIXI.BaseTexture.defaultOptions.scaleMode`. */
     var scaleMode: js.UndefOr[SCALE_MODES] = js.undefined
   }
   object IGenerateTextureOptions {

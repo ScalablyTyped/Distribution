@@ -62,11 +62,11 @@ object esComponentsPickerViewPickerViewMod {
     
     var label: ReactNode
     
-    var value: String
+    var value: String | Double
   }
   object PickerColumnItem {
     
-    inline def apply(value: String): PickerColumnItem = {
+    inline def apply(value: String | Double): PickerColumnItem = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[PickerColumnItem]
     }
@@ -82,11 +82,11 @@ object esComponentsPickerViewPickerViewMod {
       
       inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
-  type PickerValue = String | Null
+  type PickerValue = String | Double | Null
   
   trait PickerValueExtend extends StObject {
     

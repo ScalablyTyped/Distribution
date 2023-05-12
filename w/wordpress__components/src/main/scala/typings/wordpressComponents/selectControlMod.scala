@@ -13,7 +13,7 @@ object selectControlMod {
   
   object default {
     
-    inline def apply[T /* <: String | js.Array[String] */](// tslint:disable-next-line:no-unnecessary-generics
+    inline def apply[T /* <: String | js.Array[String] */](// eslint-disable-next-line no-unnecessary-generics
     props: Props[T]): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("@wordpress/components/select-control", JSImport.Default)

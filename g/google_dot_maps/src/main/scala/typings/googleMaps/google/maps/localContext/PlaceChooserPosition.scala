@@ -6,10 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @js.native
 sealed trait PlaceChooserPosition extends StObject
-/**
-  * Available only in the v=beta channel: https://goo.gle/3oAthT3.
-  * Display positions for the place chooser.
-  */
 @JSGlobal("google.maps.localContext.PlaceChooserPosition")
 @js.native
 object PlaceChooserPosition extends StObject {

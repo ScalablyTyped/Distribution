@@ -42,7 +42,7 @@ trait CreateUserRequest extends StObject {
   var ServerId: typings.awsSdk.clientsTransferMod.ServerId
   
   /**
-    * The public portion of the Secure Shell (SSH) key used to authenticate the user to the server. Transfer Family accepts RSA, ECDSA, and ED25519 keys.
+    * The public portion of the Secure Shell (SSH) key used to authenticate the user to the server. The three standard SSH public key format elements are &lt;key type&gt;, &lt;body base64&gt;, and an optional &lt;comment&gt;, with spaces between each element. Transfer Family accepts RSA, ECDSA, and ED25519 keys.   For RSA keys, the key type is ssh-rsa.   For ED25519 keys, the key type is ssh-ed25519.   For ECDSA keys, the key type is either ecdsa-sha2-nistp256, ecdsa-sha2-nistp384, or ecdsa-sha2-nistp521, depending on the size of the key you generated.  
     */
   var SshPublicKeyBody: js.UndefOr[typings.awsSdk.clientsTransferMod.SshPublicKeyBody] = js.undefined
   

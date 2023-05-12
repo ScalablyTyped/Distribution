@@ -6,7 +6,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Options for the Modal
+  * Options for the Modal.
   */
 trait ModalOptions extends StObject {
   
@@ -17,7 +17,7 @@ trait ModalOptions extends StObject {
   var dismissible: Boolean
   
   /**
-    * Ending top offset
+    * Ending top offset.
     * @default '10%'
     */
   var endingTop: String
@@ -29,25 +29,25 @@ trait ModalOptions extends StObject {
   var inDuration: Double
   
   /**
-    * Callback function called after modal is closed
+    * Callback function called after modal is closed.
     * @default null
     */
   def onCloseEnd(el: Element): Unit
   
   /**
-    * Callback function called before modal is closed
+    * Callback function called before modal is closed.
     * @default null
     */
   def onCloseStart(el: Element): Unit
   
   /**
-    * Callback function called after modal is opened
+    * Callback function called after modal is opened.
     * @default null
     */
   def onOpenEnd(el: Element): Unit
   
   /**
-    * Callback function called before modal is opened
+    * Callback function called before modal is opened.
     * @default null
     */
   def onOpenStart(el: Element): Unit
@@ -65,13 +65,13 @@ trait ModalOptions extends StObject {
   var outDuration: Double
   
   /**
-    * Prevent page from scrolling while modal is open
+    * Prevent page from scrolling while modal is open.
     * @default true
     */
   var preventScrolling: Boolean
   
   /**
-    * Starting top offset
+    * Starting top offset.
     * @default '4%'
     */
   var startingTop: String

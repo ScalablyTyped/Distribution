@@ -36,7 +36,7 @@ trait ageUtilsGetAgeExpressionsParams extends StObject {
   /**
     * The desired units of the age result.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-support-ageUtils.html#getAgeExpressions)
+    * [Read more...](global.html#unit)
     */
   var unit: js.UndefOr[years | months | days | hours | minutes | seconds] = js.undefined
 }

@@ -25,6 +25,8 @@ object typesScriptOptionsMod {
     
     var `data-sdk-integration-source`: js.UndefOr[String] = js.undefined
     
+    var `data-uid`: js.UndefOr[String] = js.undefined
+    
     var `data-user-id-token`: js.UndefOr[String] = js.undefined
   }
   object PayPalScriptDataAttributes {
@@ -68,6 +70,10 @@ object typesScriptOptionsMod {
       inline def `setData-sdk-integration-source`(value: String): Self = StObject.set(x, "data-sdk-integration-source", value.asInstanceOf[js.Any])
       
       inline def `setData-sdk-integration-sourceUndefined`: Self = StObject.set(x, "data-sdk-integration-source", js.undefined)
+      
+      inline def `setData-uid`(value: String): Self = StObject.set(x, "data-uid", value.asInstanceOf[js.Any])
+      
+      inline def `setData-uidUndefined`: Self = StObject.set(x, "data-uid", js.undefined)
       
       inline def `setData-user-id-token`(value: String): Self = StObject.set(x, "data-user-id-token", value.asInstanceOf[js.Any])
       

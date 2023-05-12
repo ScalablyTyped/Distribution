@@ -6,44 +6,64 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ConferenceAttributes extends StObject {
   
+  /** beep - Play beep when joining */
   var beep: js.UndefOr[ConferenceBeep] = js.undefined
   
+  /** coach - Call coach */
   var coach: js.UndefOr[String] = js.undefined
   
+  /** endConferenceOnExit - End the conferenceon exit */
   var endConferenceOnExit: js.UndefOr[Boolean] = js.undefined
   
+  /** eventCallbackUrl - Event callback URL */
   var eventCallbackUrl: js.UndefOr[String] = js.undefined
   
+  /** jitterBufferSize - Size of jitter buffer for participant */
   var jitterBufferSize: js.UndefOr[ConferenceJitterBufferSize] = js.undefined
   
+  /** maxParticipants - Maximum number of participants */
   var maxParticipants: js.UndefOr[Double] = js.undefined
   
+  /** muted - Join the conference muted */
   var muted: js.UndefOr[Boolean] = js.undefined
   
+  /** participantLabel - A label for participant */
   var participantLabel: js.UndefOr[String] = js.undefined
   
+  /** record - Record the conference */
   var record: js.UndefOr[ConferenceRecord] = js.undefined
   
+  /** recordingStatusCallback - Recording status callback URL */
   var recordingStatusCallback: js.UndefOr[String] = js.undefined
   
+  /** recordingStatusCallbackEvent - Recording status callback events */
   var recordingStatusCallbackEvent: js.UndefOr[js.Array[ConferenceRecordingEvent]] = js.undefined
   
+  /** recordingStatusCallbackMethod - Recording status callback URL method */
   var recordingStatusCallbackMethod: js.UndefOr[String] = js.undefined
   
+  /** region - Conference region */
   var region: js.UndefOr[ConferenceRegion] = js.undefined
   
+  /** startConferenceOnEnter - Start the conference on enter */
   var startConferenceOnEnter: js.UndefOr[Boolean] = js.undefined
   
+  /** statusCallback - Status callback URL */
   var statusCallback: js.UndefOr[String] = js.undefined
   
+  /** statusCallbackEvent - Events to call status callback URL */
   var statusCallbackEvent: js.UndefOr[js.Array[ConferenceEvent]] = js.undefined
   
+  /** statusCallbackMethod - Status callback URL method */
   var statusCallbackMethod: js.UndefOr[String] = js.undefined
   
+  /** trim - Trim the conference recording */
   var trim: js.UndefOr[ConferenceTrim] = js.undefined
   
+  /** waitMethod - Wait URL method */
   var waitMethod: js.UndefOr[String] = js.undefined
   
+  /** waitUrl - Wait URL */
   var waitUrl: js.UndefOr[String] = js.undefined
 }
 object ConferenceAttributes {

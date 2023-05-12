@@ -28,7 +28,11 @@ trait ActivityDefinition
   
   var _approvalDate: js.UndefOr[Element] = js.undefined
   
+  var _asNeededBoolean: js.UndefOr[Element] = js.undefined
+  
   var _copyright: js.UndefOr[Element] = js.undefined
+  
+  var _copyrightLabel: js.UndefOr[Element] = js.undefined
   
   var _date: js.UndefOr[Element] = js.undefined
   
@@ -48,6 +52,10 @@ trait ActivityDefinition
   
   var _name: js.UndefOr[Element] = js.undefined
   
+  var _observationRequirement: js.UndefOr[js.Array[Element]] = js.undefined
+  
+  var _observationResultRequirement: js.UndefOr[js.Array[Element]] = js.undefined
+  
   var _priority: js.UndefOr[Element] = js.undefined
   
   var _profile: js.UndefOr[Element] = js.undefined
@@ -55,6 +63,8 @@ trait ActivityDefinition
   var _publisher: js.UndefOr[Element] = js.undefined
   
   var _purpose: js.UndefOr[Element] = js.undefined
+  
+  var _specimenRequirement: js.UndefOr[js.Array[Element]] = js.undefined
   
   var _status: js.UndefOr[Element] = js.undefined
   
@@ -72,10 +82,23 @@ trait ActivityDefinition
   
   var _version: js.UndefOr[Element] = js.undefined
   
+  var _versionAlgorithmString: js.UndefOr[Element] = js.undefined
+  
   /**
     * The 'date' element may be more recent than the approval date because of minor changes or editorial corrections.
+    * See guidance around (not) making local changes to elements [here](canonicalresource.html#localization).
     */
   var approvalDate: js.UndefOr[String] = js.undefined
+  
+  /**
+    * If a CodeableConcept is present, it indicates the pre-condition for performing the service.  For example "pain", "on flare-up", etc.
+    */
+  var asNeededBoolean: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * If a CodeableConcept is present, it indicates the pre-condition for performing the service.  For example "pain", "on flare-up", etc.
+    */
+  var asNeededCodeableConcept: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * An individiual or organization primarily involved in the creation and maintenance of the content.
@@ -94,26 +117,33 @@ trait ActivityDefinition
   
   /**
     * May be a web site, an email address, a telephone number, etc.
+    * See guidance around (not) making local changes to elements [here](canonicalresource.html#localization).
     */
   var contact: js.UndefOr[js.Array[ContactDetail]] = js.undefined
   
   /**
-    * A copyright statement relating to the activity definition and/or its contents. Copyright statements are generally legal restrictions on the use and publishing of the activity definition.
+    * The short copyright declaration (e.g. (c) '2015+ xyz organization' should be sent in the copyrightLabel element.
     */
   var copyright: js.UndefOr[String] = js.undefined
   
   /**
-    * Note that this is not the same as the resource last-modified-date, since the resource may be a secondary representation of the activity definition. Additional specific dates may be added as extensions or be found by consulting Provenances associated with past versions of the resource.
+    * The (c) symbol should NOT be included in this string. It will be added by software when rendering the notation. Full details about licensing, restrictions, warrantees, etc. goes in the more general 'copyright' element.
+    */
+  var copyrightLabel: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The date is often not tracked until the resource is published, but may be present on draft content. Note that this is not the same as the resource last-modified-date, since the resource may be a secondary representation of the activity definition. Additional specific dates may be added as extensions or be found by consulting Provenances associated with past versions of the resource.
+    * See guidance around (not) making local changes to elements [here](canonicalresource.html#localization).
     */
   var date: js.UndefOr[String] = js.undefined
   
   /**
-    * This description can be used to capture details such as why the activity definition was built, comments about misuse, instructions for clinical use and interpretation, literature references, examples from the paper world, etc. It is not a rendering of the activity definition as conveyed in the 'text' field of the resource itself. This item SHOULD be populated unless the information is available from context (e.g. the language of the activity definition is presumed to be the predominant language in the place the activity definition was created).
+    * This description can be used to capture details such as comments about misuse, instructions for clinical use and interpretation, literature references, examples from the paper world, etc. It is not a rendering of the activity definition as conveyed in the 'text' field of the resource itself. This item SHOULD be populated unless the information is available from context (e.g. the language of the activity definition is presumed to be the predominant language in the place the activity definition was created).
     */
   var description: js.UndefOr[String] = js.undefined
   
   /**
-    * This element is not intended to be used to communicate a decision support response to cancel an order in progress. That should be done with the "remove" type of a PlanDefinition or RequestGroup.
+    * This element is not intended to be used to communicate a decision support response to cancel an order in progress. That should be done with the "remove" type of a PlanDefinition or RequestOrchestration.
     */
   var doNotPerform: js.UndefOr[Boolean] = js.undefined
   
@@ -133,12 +163,13 @@ trait ActivityDefinition
   var editor: js.UndefOr[js.Array[ContactDetail]] = js.undefined
   
   /**
-    * The effective period for a activity definition  determines when the content is applicable for usage and is independent of publication and review dates. For example, a measure intended to be used for the year 2016 might be published in 2015.
+    * The effective period for an activity definition  determines when the content is applicable for usage and is independent of publication and review dates. For example, a activity intended to be used for the year 2016 might be published in 2015.
+    * See guidance around (not) making local changes to elements [here](canonicalresource.html#localization).
     */
   var effectivePeriod: js.UndefOr[Period] = js.undefined
   
   /**
-    * An individual or organization responsible for officially endorsing the content for use in some setting.
+    * See guidance around (not) making local changes to elements [here](canonicalresource.html#localization).
     */
   var endorser: js.UndefOr[js.Array[ContactDetail]] = js.undefined
   
@@ -161,16 +192,18 @@ trait ActivityDefinition
   
   /**
     * It may be possible for the activity definition to be used in jurisdictions other than those for which it was originally designed or intended.
+    * DEPRECATION NOTE: For consistency, implementations are encouraged to migrate to using the new 'jurisdiction' code in the useContext element.  (I.e. useContext.code indicating http://terminology.hl7.org/CodeSystem/usage-context-type#jurisdiction and useContext.valueCodeableConcept indicating the jurisdiction.)
     */
   var jurisdiction: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
   /**
-    * May determine what types of extensions are permitted.
+    * The kind element may only specify Request resource types to facilitate considering user input as part of processing the result of any automated clinical reasoning processes. To support creation of event resources, such as Observations, RiskAssessments, and DetectedIssues, use a Task resource with the focus of the task set to the event resource to be created. Note that the kind of resource to be created may determine what types of extensions are permitted.
     */
   var kind: js.UndefOr[String] = js.undefined
   
   /**
     * If specified, this date follows the original approval date.
+    * See guidance around (not) making local changes to elements [here](canonicalresource.html#localization).
     */
   var lastReviewDate: js.UndefOr[String] = js.undefined
   
@@ -192,12 +225,12 @@ trait ActivityDefinition
   /**
     * Defines observation requirements for the action to be performed, such as body weight or surface area.
     */
-  var observationRequirement: js.UndefOr[js.Array[Reference]] = js.undefined
+  var observationRequirement: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Defines the observations that are expected to be produced by the action.
     */
-  var observationResultRequirement: js.UndefOr[js.Array[Reference]] = js.undefined
+  var observationResultRequirement: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Indicates who should participate in performing the action described.
@@ -249,32 +282,33 @@ trait ActivityDefinition
   val resourceType_ActivityDefinition: typings.fhir.fhirStrings.ActivityDefinition
   
   /**
-    * An individual or organization primarily responsible for review of some aspect of the content.
+    * See guidance around (not) making local changes to elements [here](canonicalresource.html#localization).
     */
   var reviewer: js.UndefOr[js.Array[ContactDetail]] = js.undefined
   
   /**
     * Defines specimen requirements for the action to be performed, such as required specimens for a lab test.
     */
-  var specimenRequirement: js.UndefOr[js.Array[Reference]] = js.undefined
+  var specimenRequirement: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Allows filtering of activity definitions that are appropriate for use versus not.
+    * See guidance around (not) making local changes to elements [here](canonicalresource.html#localization).
     */
   var status: draft | active | retired | unknown
   
   /**
-    * A code, group definition, or canonical reference that describes  or identifies the intended subject of the activity being defined.  Canonical references are allowed to support the definition of protocols for drug and substance quality specifications, and is allowed to reference a MedicinalProductDefinition, SubstanceDefinition, AdministrableProductDefinition, ManufacturedItemDefinition, or PackagedProductDefinition resource.
+    * Note that the choice of canonical for the subject element was introduced in R4B to support pharmaceutical quality use cases. To ensure as much backwards-compatibility as possible, it is recommended to only use the new canonical type with these use cases.
     */
   var subjectCanonical: js.UndefOr[String] = js.undefined
   
   /**
-    * A code, group definition, or canonical reference that describes  or identifies the intended subject of the activity being defined.  Canonical references are allowed to support the definition of protocols for drug and substance quality specifications, and is allowed to reference a MedicinalProductDefinition, SubstanceDefinition, AdministrableProductDefinition, ManufacturedItemDefinition, or PackagedProductDefinition resource.
+    * Note that the choice of canonical for the subject element was introduced in R4B to support pharmaceutical quality use cases. To ensure as much backwards-compatibility as possible, it is recommended to only use the new canonical type with these use cases.
     */
   var subjectCodeableConcept: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
-    * A code, group definition, or canonical reference that describes  or identifies the intended subject of the activity being defined.  Canonical references are allowed to support the definition of protocols for drug and substance quality specifications, and is allowed to reference a MedicinalProductDefinition, SubstanceDefinition, AdministrableProductDefinition, ManufacturedItemDefinition, or PackagedProductDefinition resource.
+    * Note that the choice of canonical for the subject element was introduced in R4B to support pharmaceutical quality use cases. To ensure as much backwards-compatibility as possible, it is recommended to only use the new canonical type with these use cases.
     */
   var subjectReference: js.UndefOr[Reference] = js.undefined
   
@@ -284,22 +318,22 @@ trait ActivityDefinition
   var subtitle: js.UndefOr[String] = js.undefined
   
   /**
-    * The intent of the timing element is to provide timing when the action should be performed. As a definitional resource, this timing is interpreted as part of an apply operation so that the timing of the result actions in a CarePlan or RequestGroup, for example, would be specified by evaluating the timing definition in the context of the apply and setting the resulting timing on the appropriate elements of the target resource. If the timing is an Age, the activity is expected to be performed when the subject is the given Age. When the timing is a Duration, the activity is expected to be performed within the specified duration from the apply. When the timing is a Range, it may be a range of Ages or Durations, providing a range for the expected timing of the resulting activity. When the timing is a Timing, it is establishing a schedule for the timing of the resulting activity.
+    * The intent of the timing element is to provide timing when the action should be performed. As a definitional resource, this timing is interpreted as part of an apply operation so that the timing of the result actions in a CarePlan or RequestOrchestration, for example, would be specified by evaluating the timing definition in the context of the apply and setting the resulting timing on the appropriate elements of the target resource. If the timing is an Age, the activity is expected to be performed when the subject is the given Age. When the timing is a Duration, the activity is expected to be performed within the specified duration from the apply. When the timing is a Range, it may be a range of Ages or Durations, providing a range for the expected timing of the resulting activity. When the timing is a Timing, it is establishing a schedule for the timing of the resulting activity.
     */
   var timingAge: js.UndefOr[Age] = js.undefined
   
   /**
-    * The intent of the timing element is to provide timing when the action should be performed. As a definitional resource, this timing is interpreted as part of an apply operation so that the timing of the result actions in a CarePlan or RequestGroup, for example, would be specified by evaluating the timing definition in the context of the apply and setting the resulting timing on the appropriate elements of the target resource. If the timing is an Age, the activity is expected to be performed when the subject is the given Age. When the timing is a Duration, the activity is expected to be performed within the specified duration from the apply. When the timing is a Range, it may be a range of Ages or Durations, providing a range for the expected timing of the resulting activity. When the timing is a Timing, it is establishing a schedule for the timing of the resulting activity.
+    * The intent of the timing element is to provide timing when the action should be performed. As a definitional resource, this timing is interpreted as part of an apply operation so that the timing of the result actions in a CarePlan or RequestOrchestration, for example, would be specified by evaluating the timing definition in the context of the apply and setting the resulting timing on the appropriate elements of the target resource. If the timing is an Age, the activity is expected to be performed when the subject is the given Age. When the timing is a Duration, the activity is expected to be performed within the specified duration from the apply. When the timing is a Range, it may be a range of Ages or Durations, providing a range for the expected timing of the resulting activity. When the timing is a Timing, it is establishing a schedule for the timing of the resulting activity.
     */
   var timingDuration: js.UndefOr[Duration] = js.undefined
   
   /**
-    * The intent of the timing element is to provide timing when the action should be performed. As a definitional resource, this timing is interpreted as part of an apply operation so that the timing of the result actions in a CarePlan or RequestGroup, for example, would be specified by evaluating the timing definition in the context of the apply and setting the resulting timing on the appropriate elements of the target resource. If the timing is an Age, the activity is expected to be performed when the subject is the given Age. When the timing is a Duration, the activity is expected to be performed within the specified duration from the apply. When the timing is a Range, it may be a range of Ages or Durations, providing a range for the expected timing of the resulting activity. When the timing is a Timing, it is establishing a schedule for the timing of the resulting activity.
+    * The intent of the timing element is to provide timing when the action should be performed. As a definitional resource, this timing is interpreted as part of an apply operation so that the timing of the result actions in a CarePlan or RequestOrchestration, for example, would be specified by evaluating the timing definition in the context of the apply and setting the resulting timing on the appropriate elements of the target resource. If the timing is an Age, the activity is expected to be performed when the subject is the given Age. When the timing is a Duration, the activity is expected to be performed within the specified duration from the apply. When the timing is a Range, it may be a range of Ages or Durations, providing a range for the expected timing of the resulting activity. When the timing is a Timing, it is establishing a schedule for the timing of the resulting activity.
     */
   var timingRange: js.UndefOr[Range] = js.undefined
   
   /**
-    * The intent of the timing element is to provide timing when the action should be performed. As a definitional resource, this timing is interpreted as part of an apply operation so that the timing of the result actions in a CarePlan or RequestGroup, for example, would be specified by evaluating the timing definition in the context of the apply and setting the resulting timing on the appropriate elements of the target resource. If the timing is an Age, the activity is expected to be performed when the subject is the given Age. When the timing is a Duration, the activity is expected to be performed within the specified duration from the apply. When the timing is a Range, it may be a range of Ages or Durations, providing a range for the expected timing of the resulting activity. When the timing is a Timing, it is establishing a schedule for the timing of the resulting activity.
+    * The intent of the timing element is to provide timing when the action should be performed. As a definitional resource, this timing is interpreted as part of an apply operation so that the timing of the result actions in a CarePlan or RequestOrchestration, for example, would be specified by evaluating the timing definition in the context of the apply and setting the resulting timing on the appropriate elements of the target resource. If the timing is an Age, the activity is expected to be performed when the subject is the given Age. When the timing is a Duration, the activity is expected to be performed within the specified duration from the apply. When the timing is a Range, it may be a range of Ages or Durations, providing a range for the expected timing of the resulting activity. When the timing is a Timing, it is establishing a schedule for the timing of the resulting activity.
     */
   var timingTiming: js.UndefOr[Timing] = js.undefined
   
@@ -309,7 +343,7 @@ trait ActivityDefinition
   var title: js.UndefOr[String] = js.undefined
   
   /**
-    * Descriptive topics related to the content of the activity. Topics provide a high-level categorization of the activity that can be useful for filtering and searching.
+    * DEPRECATION NOTE: For consistency, implementations are encouraged to migrate to using the new 'topic' code in the useContext element.  (I.e. useContext.code indicating http://terminology.hl7.org/CodeSystem/usage-context-type#topic and useContext.valueCodeableConcept indicating the topic)
     */
   var topic: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
@@ -336,9 +370,19 @@ trait ActivityDefinition
   var useContext: js.UndefOr[js.Array[UsageContext]] = js.undefined
   
   /**
-    * There may be different activity definition instances that have the same identifier but different versions.  The version can be appended to the url in a reference to allow a reference to a particular business version of the activity definition with the format [url]|[version].
+    * There may be different activity definition instances that have the same identifier but different versions.  The version can be appended to the url in a reference to allow a reference to a particular business version of the activity definition with the format [url]|[version]. The version SHOULD NOT contain a '#' - see [Business Version](resource.html#bv-format).
     */
   var version: js.UndefOr[String] = js.undefined
+  
+  /**
+    * If set as a string, this is a FHIRPath expression that has two additional context variables passed in - %version1 and %version2 and will return a negative number if version1 is newer, a positive number if version2 and a 0 if the version ordering can't be successfully be determined.
+    */
+  var versionAlgorithmCoding: js.UndefOr[Coding] = js.undefined
+  
+  /**
+    * If set as a string, this is a FHIRPath expression that has two additional context variables passed in - %version1 and %version2 and will return a negative number if version1 is newer, a positive number if version2 and a 0 if the version ordering can't be successfully be determined.
+    */
+  var versionAlgorithmString: js.UndefOr[String] = js.undefined
 }
 object ActivityDefinition {
   
@@ -353,6 +397,14 @@ object ActivityDefinition {
     inline def setApprovalDate(value: String): Self = StObject.set(x, "approvalDate", value.asInstanceOf[js.Any])
     
     inline def setApprovalDateUndefined: Self = StObject.set(x, "approvalDate", js.undefined)
+    
+    inline def setAsNeededBoolean(value: Boolean): Self = StObject.set(x, "asNeededBoolean", value.asInstanceOf[js.Any])
+    
+    inline def setAsNeededBooleanUndefined: Self = StObject.set(x, "asNeededBoolean", js.undefined)
+    
+    inline def setAsNeededCodeableConcept(value: CodeableConcept): Self = StObject.set(x, "asNeededCodeableConcept", value.asInstanceOf[js.Any])
+    
+    inline def setAsNeededCodeableConceptUndefined: Self = StObject.set(x, "asNeededCodeableConcept", js.undefined)
     
     inline def setAuthor(value: js.Array[ContactDetail]): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     
@@ -377,6 +429,10 @@ object ActivityDefinition {
     inline def setContactVarargs(value: ContactDetail*): Self = StObject.set(x, "contact", js.Array(value*))
     
     inline def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
+    
+    inline def setCopyrightLabel(value: String): Self = StObject.set(x, "copyrightLabel", value.asInstanceOf[js.Any])
+    
+    inline def setCopyrightLabelUndefined: Self = StObject.set(x, "copyrightLabel", js.undefined)
     
     inline def setCopyrightUndefined: Self = StObject.set(x, "copyright", js.undefined)
     
@@ -464,17 +520,17 @@ object ActivityDefinition {
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    inline def setObservationRequirement(value: js.Array[Reference]): Self = StObject.set(x, "observationRequirement", value.asInstanceOf[js.Any])
+    inline def setObservationRequirement(value: js.Array[String]): Self = StObject.set(x, "observationRequirement", value.asInstanceOf[js.Any])
     
     inline def setObservationRequirementUndefined: Self = StObject.set(x, "observationRequirement", js.undefined)
     
-    inline def setObservationRequirementVarargs(value: Reference*): Self = StObject.set(x, "observationRequirement", js.Array(value*))
+    inline def setObservationRequirementVarargs(value: String*): Self = StObject.set(x, "observationRequirement", js.Array(value*))
     
-    inline def setObservationResultRequirement(value: js.Array[Reference]): Self = StObject.set(x, "observationResultRequirement", value.asInstanceOf[js.Any])
+    inline def setObservationResultRequirement(value: js.Array[String]): Self = StObject.set(x, "observationResultRequirement", value.asInstanceOf[js.Any])
     
     inline def setObservationResultRequirementUndefined: Self = StObject.set(x, "observationResultRequirement", js.undefined)
     
-    inline def setObservationResultRequirementVarargs(value: Reference*): Self = StObject.set(x, "observationResultRequirement", js.Array(value*))
+    inline def setObservationResultRequirementVarargs(value: String*): Self = StObject.set(x, "observationResultRequirement", js.Array(value*))
     
     inline def setParticipant(value: js.Array[ActivityDefinitionParticipant]): Self = StObject.set(x, "participant", value.asInstanceOf[js.Any])
     
@@ -524,11 +580,11 @@ object ActivityDefinition {
     
     inline def setReviewerVarargs(value: ContactDetail*): Self = StObject.set(x, "reviewer", js.Array(value*))
     
-    inline def setSpecimenRequirement(value: js.Array[Reference]): Self = StObject.set(x, "specimenRequirement", value.asInstanceOf[js.Any])
+    inline def setSpecimenRequirement(value: js.Array[String]): Self = StObject.set(x, "specimenRequirement", value.asInstanceOf[js.Any])
     
     inline def setSpecimenRequirementUndefined: Self = StObject.set(x, "specimenRequirement", js.undefined)
     
-    inline def setSpecimenRequirementVarargs(value: Reference*): Self = StObject.set(x, "specimenRequirement", js.Array(value*))
+    inline def setSpecimenRequirementVarargs(value: String*): Self = StObject.set(x, "specimenRequirement", js.Array(value*))
     
     inline def setStatus(value: draft | active | retired | unknown): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
@@ -594,13 +650,29 @@ object ActivityDefinition {
     
     inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
+    inline def setVersionAlgorithmCoding(value: Coding): Self = StObject.set(x, "versionAlgorithmCoding", value.asInstanceOf[js.Any])
+    
+    inline def setVersionAlgorithmCodingUndefined: Self = StObject.set(x, "versionAlgorithmCoding", js.undefined)
+    
+    inline def setVersionAlgorithmString(value: String): Self = StObject.set(x, "versionAlgorithmString", value.asInstanceOf[js.Any])
+    
+    inline def setVersionAlgorithmStringUndefined: Self = StObject.set(x, "versionAlgorithmString", js.undefined)
+    
     inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     
     inline def set_approvalDate(value: Element): Self = StObject.set(x, "_approvalDate", value.asInstanceOf[js.Any])
     
     inline def set_approvalDateUndefined: Self = StObject.set(x, "_approvalDate", js.undefined)
     
+    inline def set_asNeededBoolean(value: Element): Self = StObject.set(x, "_asNeededBoolean", value.asInstanceOf[js.Any])
+    
+    inline def set_asNeededBooleanUndefined: Self = StObject.set(x, "_asNeededBoolean", js.undefined)
+    
     inline def set_copyright(value: Element): Self = StObject.set(x, "_copyright", value.asInstanceOf[js.Any])
+    
+    inline def set_copyrightLabel(value: Element): Self = StObject.set(x, "_copyrightLabel", value.asInstanceOf[js.Any])
+    
+    inline def set_copyrightLabelUndefined: Self = StObject.set(x, "_copyrightLabel", js.undefined)
     
     inline def set_copyrightUndefined: Self = StObject.set(x, "_copyright", js.undefined)
     
@@ -642,6 +714,18 @@ object ActivityDefinition {
     
     inline def set_nameUndefined: Self = StObject.set(x, "_name", js.undefined)
     
+    inline def set_observationRequirement(value: js.Array[Element]): Self = StObject.set(x, "_observationRequirement", value.asInstanceOf[js.Any])
+    
+    inline def set_observationRequirementUndefined: Self = StObject.set(x, "_observationRequirement", js.undefined)
+    
+    inline def set_observationRequirementVarargs(value: Element*): Self = StObject.set(x, "_observationRequirement", js.Array(value*))
+    
+    inline def set_observationResultRequirement(value: js.Array[Element]): Self = StObject.set(x, "_observationResultRequirement", value.asInstanceOf[js.Any])
+    
+    inline def set_observationResultRequirementUndefined: Self = StObject.set(x, "_observationResultRequirement", js.undefined)
+    
+    inline def set_observationResultRequirementVarargs(value: Element*): Self = StObject.set(x, "_observationResultRequirement", js.Array(value*))
+    
     inline def set_priority(value: Element): Self = StObject.set(x, "_priority", value.asInstanceOf[js.Any])
     
     inline def set_priorityUndefined: Self = StObject.set(x, "_priority", js.undefined)
@@ -657,6 +741,12 @@ object ActivityDefinition {
     inline def set_purpose(value: Element): Self = StObject.set(x, "_purpose", value.asInstanceOf[js.Any])
     
     inline def set_purposeUndefined: Self = StObject.set(x, "_purpose", js.undefined)
+    
+    inline def set_specimenRequirement(value: js.Array[Element]): Self = StObject.set(x, "_specimenRequirement", value.asInstanceOf[js.Any])
+    
+    inline def set_specimenRequirementUndefined: Self = StObject.set(x, "_specimenRequirement", js.undefined)
+    
+    inline def set_specimenRequirementVarargs(value: Element*): Self = StObject.set(x, "_specimenRequirement", js.Array(value*))
     
     inline def set_status(value: Element): Self = StObject.set(x, "_status", value.asInstanceOf[js.Any])
     
@@ -687,6 +777,10 @@ object ActivityDefinition {
     inline def set_usageUndefined: Self = StObject.set(x, "_usage", js.undefined)
     
     inline def set_version(value: Element): Self = StObject.set(x, "_version", value.asInstanceOf[js.Any])
+    
+    inline def set_versionAlgorithmString(value: Element): Self = StObject.set(x, "_versionAlgorithmString", value.asInstanceOf[js.Any])
+    
+    inline def set_versionAlgorithmStringUndefined: Self = StObject.set(x, "_versionAlgorithmString", js.undefined)
     
     inline def set_versionUndefined: Self = StObject.set(x, "_version", js.undefined)
   }

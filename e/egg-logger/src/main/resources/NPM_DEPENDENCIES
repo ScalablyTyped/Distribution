@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "egg-logger" : "2.9.1"
+      "egg-logger" : "3.3.0"
     }
   ],
   "test-dependencies" : [
     {
-      "egg-logger" : "2.9.1"
+      "egg-logger" : "3.3.0"
     }
   ],
   "compile-devDependencies" : [

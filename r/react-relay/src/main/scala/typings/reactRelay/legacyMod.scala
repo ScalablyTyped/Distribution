@@ -38,6 +38,7 @@ import typings.relayRuntime.libStoreRelayStoreTypesMod.RelayContext
 import typings.relayRuntime.libStoreRelayStoreTypesMod.StoreUpdater
 import typings.relayRuntime.libSubscriptionRequestSubscriptionMod.GraphQLSubscriptionConfig
 import typings.relayRuntime.libUtilReaderNodeMod.ReaderFragment
+import typings.relayRuntime.libUtilReaderNodeMod.ReaderInlineDataFragment
 import typings.relayRuntime.libUtilRelayConcreteNodeMod.ConcreteRequest
 import typings.relayRuntime.libUtilRelayRuntimeTypesMod.DataID
 import typings.relayRuntime.libUtilRelayRuntimeTypesMod.Disposable
@@ -110,7 +111,7 @@ object legacyMod {
   
   inline def commitMutation[TOperation /* <: MutationParameters */](
     environment: Environment,
-    // tslint:disable-next-line no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
   config: MutationConfig[TOperation]
   ): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("commitMutation")(environment.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Disposable]
   
@@ -194,7 +195,7 @@ object legacyMod {
   
   inline def requestSubscription[TSubscription /* <: OperationType */](
     environment: Environment,
-    // tslint:disable-next-line no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
   config: GraphQLSubscriptionConfig[TSubscription]
   ): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("requestSubscription")(environment.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Disposable]
   
@@ -236,7 +237,7 @@ object legacyMod {
       
       inline def setQuery(value: GraphQLTaggedNode): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
-      inline def setQueryFunction0(value: () => ReaderFragment | ConcreteRequest): Self = StObject.set(x, "query", js.Any.fromFunction0(value))
+      inline def setQueryFunction0(value: () => ReaderFragment | ConcreteRequest | ReaderInlineDataFragment): Self = StObject.set(x, "query", js.Any.fromFunction0(value))
     }
   }
   
@@ -276,7 +277,7 @@ object legacyMod {
   
   type ContainerProps[Props] = MappedFragmentProps[Pick[Props, Exclude[/* keyof Props */ String, relay]]]
   
-  type PropsWithoutRelay[C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.reactRelay.reactRelayStrings.a, typings.reactRelay.reactRelayStrings.abbr, typings.reactRelay.reactRelayStrings.address */ Any */] = LibraryManagedAttributes[C, Omit[ComponentProps[C], relay]]
+  type PropsWithoutRelay[C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177, starting with typings.reactRelay.reactRelayStrings.a, typings.reactRelay.reactRelayStrings.abbr, typings.reactRelay.reactRelayStrings.address */ Any */] = LibraryManagedAttributes[C, Omit[ComponentProps[C], relay]]
   
   trait QueryRendererProps[TOperation /* <: OperationType */] extends StObject {
     
@@ -306,7 +307,7 @@ object legacyMod {
       
       inline def setQuery(value: GraphQLTaggedNode): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
-      inline def setQueryFunction0(value: () => ReaderFragment | ConcreteRequest): Self = StObject.set(x, "query", js.Any.fromFunction0(value))
+      inline def setQueryFunction0(value: () => ReaderFragment | ConcreteRequest | ReaderInlineDataFragment): Self = StObject.set(x, "query", js.Any.fromFunction0(value))
       
       inline def setQueryNull: Self = StObject.set(x, "query", null)
       

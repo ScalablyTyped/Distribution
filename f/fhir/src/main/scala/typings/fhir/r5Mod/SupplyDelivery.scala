@@ -23,12 +23,12 @@ trait SupplyDelivery
   var basedOn: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
-    * Identification of the facility/location where the Supply was shipped to, as part of the dispense event.
+    * Identification of the facility/location where the delivery was shipped to.
     */
   var destination: js.UndefOr[Reference] = js.undefined
   
   /**
-    * This identifier is typically assigned by the dispenser, and may be used to reference the delivery when exchanging information about it with other systems.
+    * This identifier is typically assigned by the supplier, and may be used to reference the delivery when exchanging information about it with other systems.
     */
   var identifier: js.UndefOr[js.Array[Identifier]] = js.undefined
   
@@ -59,7 +59,7 @@ trait SupplyDelivery
   var patient: js.UndefOr[Reference] = js.undefined
   
   /**
-    * Identifies the person who picked up the Supply.
+    * Identifies the individual or organization that received the delivery.
     */
   var receiver: js.UndefOr[js.Array[Reference]] = js.undefined
   
@@ -75,15 +75,15 @@ trait SupplyDelivery
   /**
     * The item that is being delivered or has been supplied.
     */
-  var suppliedItem: js.UndefOr[SupplyDeliverySuppliedItem] = js.undefined
+  var suppliedItem: js.UndefOr[js.Array[SupplyDeliverySuppliedItem]] = js.undefined
   
   /**
-    * The individual responsible for dispensing the medication, supplier or device.
+    * The individual or organization responsible for supplying the delivery.
     */
   var supplier: js.UndefOr[Reference] = js.undefined
   
   /**
-    * Indicates the type of dispensing event that is performed. Examples include: Trial Fill, Completion of Trial, Partial Fill, Emergency Fill, Samples, etc.
+    * Indicates the type of supply being provided.  Examples include: Medication, Device, Biologically Derived Product.
     */
   var `type`: js.UndefOr[CodeableConcept] = js.undefined
 }
@@ -147,9 +147,11 @@ object SupplyDelivery {
     
     inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    inline def setSuppliedItem(value: SupplyDeliverySuppliedItem): Self = StObject.set(x, "suppliedItem", value.asInstanceOf[js.Any])
+    inline def setSuppliedItem(value: js.Array[SupplyDeliverySuppliedItem]): Self = StObject.set(x, "suppliedItem", value.asInstanceOf[js.Any])
     
     inline def setSuppliedItemUndefined: Self = StObject.set(x, "suppliedItem", js.undefined)
+    
+    inline def setSuppliedItemVarargs(value: SupplyDeliverySuppliedItem*): Self = StObject.set(x, "suppliedItem", js.Array(value*))
     
     inline def setSupplier(value: Reference): Self = StObject.set(x, "supplier", value.asInstanceOf[js.Any])
     

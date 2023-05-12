@@ -491,6 +491,26 @@ object materialGridListStrings {
   inline def contain: contain = "contain".asInstanceOf[contain]
   
   @js.native
+  sealed trait containIntrinsicBlockSize extends StObject
+  inline def containIntrinsicBlockSize: containIntrinsicBlockSize = "containIntrinsicBlockSize".asInstanceOf[containIntrinsicBlockSize]
+  
+  @js.native
+  sealed trait containIntrinsicHeight extends StObject
+  inline def containIntrinsicHeight: containIntrinsicHeight = "containIntrinsicHeight".asInstanceOf[containIntrinsicHeight]
+  
+  @js.native
+  sealed trait containIntrinsicInlineSize extends StObject
+  inline def containIntrinsicInlineSize: containIntrinsicInlineSize = "containIntrinsicInlineSize".asInstanceOf[containIntrinsicInlineSize]
+  
+  @js.native
+  sealed trait containIntrinsicSize extends StObject
+  inline def containIntrinsicSize: containIntrinsicSize = "containIntrinsicSize".asInstanceOf[containIntrinsicSize]
+  
+  @js.native
+  sealed trait containIntrinsicWidth extends StObject
+  inline def containIntrinsicWidth: containIntrinsicWidth = "containIntrinsicWidth".asInstanceOf[containIntrinsicWidth]
+  
+  @js.native
   sealed trait container extends StObject
   inline def container: container = "container".asInstanceOf[container]
   
@@ -505,6 +525,10 @@ object materialGridListStrings {
   @js.native
   sealed trait content extends StObject
   inline def content: content = "content".asInstanceOf[content]
+  
+  @js.native
+  sealed trait contentVisibility extends StObject
+  inline def contentVisibility: contentVisibility = "contentVisibility".asInstanceOf[contentVisibility]
   
   @js.native
   sealed trait counterIncrement extends StObject
@@ -965,6 +989,10 @@ object materialGridListStrings {
   @js.native
   sealed trait maskType extends StObject
   inline def maskType: maskType = "maskType".asInstanceOf[maskType]
+  
+  @js.native
+  sealed trait mathStyle extends StObject
+  inline def mathStyle: mathStyle = "mathStyle".asInstanceOf[mathStyle]
   
   @js.native
   sealed trait maxBlockSize extends StObject

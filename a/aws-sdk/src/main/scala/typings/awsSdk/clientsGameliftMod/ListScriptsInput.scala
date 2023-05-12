@@ -12,7 +12,7 @@ trait ListScriptsInput extends StObject {
   var Limit: js.UndefOr[PositiveInteger] = js.undefined
   
   /**
-    * A token that indicates the start of the next sequential page of results. Use the token that is returned with a previous call to this operation. To start at the beginning of the result set, do not specify a value.
+    * A token that indicates the start of the next sequential page of results. Use the token that is returned with a previous call to this operation. To start at the beginning of the result set, don't specify a value.
     */
   var NextToken: js.UndefOr[NonEmptyString] = js.undefined
 }

@@ -1,18 +1,21 @@
 package typings.angularCompilerCli.anon
 
+import typings.typescript.mod.CancellationToken
 import typings.typescript.mod.CompilerOptions
 import typings.typescript.mod.CreateSourceFileOptions
 import typings.typescript.mod.FileReference
-import typings.typescript.mod.ModuleKind.CommonJS
-import typings.typescript.mod.ModuleKind.ESNext
 import typings.typescript.mod.ModuleResolutionCache
 import typings.typescript.mod.ParsedCommandLine
 import typings.typescript.mod.Path
+import typings.typescript.mod.ResolutionMode
 import typings.typescript.mod.ResolvedModule
+import typings.typescript.mod.ResolvedModuleWithFailedLookupLocations
 import typings.typescript.mod.ResolvedProjectReference
 import typings.typescript.mod.ResolvedTypeReferenceDirective
+import typings.typescript.mod.ResolvedTypeReferenceDirectiveWithFailedLookupLocations
 import typings.typescript.mod.ScriptTarget
 import typings.typescript.mod.SourceFile
+import typings.typescript.mod.StringLiteralLike
 import typings.typescript.mod.WriteFileCallback
 import typings.typescript.mod.WriteFileCallbackData
 import org.scalablytyped.runtime.StObject
@@ -33,7 +36,7 @@ trait CompilerHostPartialUnifie extends StObject {
     js.Function2[/* importedFilePath */ String, /* containingFilePath */ String, String]
   ] = js.native
   
-  var getCancellationToken: js.UndefOr[js.Function0[typings.typescript.mod.CancellationToken]] = js.native
+  var getCancellationToken: js.UndefOr[js.Function0[CancellationToken]] = js.native
   
   def getCanonicalFileName(fileName: String): String = js.native
   
@@ -128,6 +131,19 @@ trait CompilerHostPartialUnifie extends StObject {
     */
   var realpath: js.UndefOr[js.Function1[/* path */ String, String]] = js.native
   
+  var resolveModuleNameLiterals: js.UndefOr[
+    js.Function6[
+      /* moduleLiterals */ js.Array[StringLiteralLike], 
+      /* containingFile */ String, 
+      /* redirectedReference */ js.UndefOr[ResolvedProjectReference], 
+      /* options */ CompilerOptions, 
+      /* containingSourceFile */ SourceFile, 
+      /* reusedNames */ js.UndefOr[js.Array[StringLiteralLike]], 
+      js.Array[ResolvedModuleWithFailedLookupLocations]
+    ]
+  ] = js.native
+  
+  /** @deprecated supply resolveModuleNameLiterals instead for resolution that can handle newer resolution modes like nodenext */
   var resolveModuleNames: js.UndefOr[
     js.Function6[
       /* moduleNames */ js.Array[String], 
@@ -140,7 +156,21 @@ trait CompilerHostPartialUnifie extends StObject {
     ]
   ] = js.native
   
+  var resolveTypeReferenceDirectiveReferences: js.UndefOr[
+    js.Function6[
+      /* typeDirectiveReferences */ js.Array[FileReference | String], 
+      /* containingFile */ String, 
+      /* redirectedReference */ js.UndefOr[ResolvedProjectReference], 
+      /* options */ CompilerOptions, 
+      /* containingSourceFile */ js.UndefOr[SourceFile], 
+      /* reusedNames */ js.UndefOr[js.Array[FileReference | String]], 
+      js.Array[ResolvedTypeReferenceDirectiveWithFailedLookupLocations]
+    ]
+  ] = js.native
+  
   /**
+    * @deprecated supply resolveTypeReferenceDirectiveReferences instead for resolution that can handle newer resolution modes like nodenext
+    *
     * This method is a companion for 'resolveModuleNames' and is used to resolve 'types' references to actual type declaration files
     */
   var resolveTypeReferenceDirectives: js.UndefOr[
@@ -149,7 +179,7 @@ trait CompilerHostPartialUnifie extends StObject {
       /* containingFile */ String, 
       /* redirectedReference */ js.UndefOr[ResolvedProjectReference], 
       /* options */ CompilerOptions, 
-      /* containingFileMode */ js.UndefOr[ESNext | CommonJS], 
+      /* containingFileMode */ js.UndefOr[ResolutionMode], 
       js.Array[js.UndefOr[ResolvedTypeReferenceDirective]]
     ]
   ] = js.native

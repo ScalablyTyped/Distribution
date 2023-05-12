@@ -16,7 +16,7 @@ object libIconsEyeInvisibleFilledMod extends Shortcut {
   @js.native
   trait EyeInvisibleFilledIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_EyeInvisibleFilledIconType: String = js.native

@@ -9,7 +9,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Partial<chart.js.chart.js.FontSpec> */
+/* Inlined std.Partial<chart.js.chart.js/dist/types/index.FontSpec> */
 trait PartialFontSpec extends StObject {
   
   var family: js.UndefOr[String] = js.undefined

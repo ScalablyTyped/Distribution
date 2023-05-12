@@ -9,12 +9,12 @@ trait PhysicsUpdraftEventData extends StObject {
   /**
     * A cylinder used for the updraft event
     */
-  var cylinder: Mesh
+  var cylinder: js.UndefOr[Mesh] = js.undefined
 }
 object PhysicsUpdraftEventData {
   
-  inline def apply(cylinder: Mesh): PhysicsUpdraftEventData = {
-    val __obj = js.Dynamic.literal(cylinder = cylinder.asInstanceOf[js.Any])
+  inline def apply(): PhysicsUpdraftEventData = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PhysicsUpdraftEventData]
   }
   
@@ -22,5 +22,7 @@ object PhysicsUpdraftEventData {
   implicit open class MutableBuilder[Self <: PhysicsUpdraftEventData] (val x: Self) extends AnyVal {
     
     inline def setCylinder(value: Mesh): Self = StObject.set(x, "cylinder", value.asInstanceOf[js.Any])
+    
+    inline def setCylinderUndefined: Self = StObject.set(x, "cylinder", js.undefined)
   }
 }

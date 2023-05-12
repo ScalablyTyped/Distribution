@@ -16,7 +16,7 @@ trait StateConfig[TContext, TEvent /* <: EventObject */] extends StObject {
   
   var _sessionid: String | Null
   
-  var actions: js.UndefOr[js.Array[ActionObject[TContext, TEvent]]] = js.undefined
+  var actions: js.UndefOr[js.Array[ActionObject[TContext, TEvent, TEvent, BaseActionObject]]] = js.undefined
   
   /**
     * @deprecated
@@ -67,11 +67,11 @@ object StateConfig {
   @scala.inline
   implicit open class MutableBuilder[Self <: StateConfig[?, ?], TContext, TEvent /* <: EventObject */] (val x: Self & (StateConfig[TContext, TEvent])) extends AnyVal {
     
-    inline def setActions(value: js.Array[ActionObject[TContext, TEvent]]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+    inline def setActions(value: js.Array[ActionObject[TContext, TEvent, TEvent, BaseActionObject]]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
     inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
     
-    inline def setActionsVarargs(value: (ActionObject[TContext, TEvent])*): Self = StObject.set(x, "actions", js.Array(value*))
+    inline def setActionsVarargs(value: (ActionObject[TContext, TEvent, TEvent, BaseActionObject])*): Self = StObject.set(x, "actions", js.Array(value*))
     
     inline def setActivities(value: ActivityMap): Self = StObject.set(x, "activities", value.asInstanceOf[js.Any])
     

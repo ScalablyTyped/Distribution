@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "nuka-carousel" : "5.4.1"
+      "nuka-carousel" : "6.0.3"
     }
   ],
   "test-dependencies" : [
     {
-      "nuka-carousel" : "5.4.1"
+      "nuka-carousel" : "6.0.3"
     }
   ],
   "compile-devDependencies" : [

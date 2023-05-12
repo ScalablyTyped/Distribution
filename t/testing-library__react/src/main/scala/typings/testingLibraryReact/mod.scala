@@ -70,7 +70,7 @@ object mod {
   
   @JSImport("@testing-library/react", "act")
   @js.native
-  val act: /* import warning: importer.ImportType#apply Failed type conversion: {None (callback : (): react-dom.react-dom/test-utils.VoidOrUndefinedOnly): std.Promise<void>, None <T>(callback : (): T | std.Promise<T>): std.Promise<T>} extends undefined ? (callback : (): void): void : {None (callback : (): react-dom.react-dom/test-utils.VoidOrUndefinedOnly): std.Promise<void>, None <T>(callback : (): T | std.Promise<T>): std.Promise<T>} */ js.Any = js.native
+  val act: /* import warning: importer.ImportType#apply Failed type conversion: {None <T>(callback : (): T | std.Promise<T>): std.Promise<T>, None (callback : (): react-dom.react-dom/test-utils.VoidOrUndefinedOnly): void} extends undefined ? (callback : (): void): void : {None <T>(callback : (): T | std.Promise<T>): std.Promise<T>, None (callback : (): react-dom.react-dom/test-utils.VoidOrUndefinedOnly): void} */ js.Any = js.native
   
   inline def buildQueries[Arguments /* <: js.Array[Any] */](
     queryAllBy: GetAllBy[Arguments],

@@ -1,10 +1,8 @@
 package typings.twilio
 
-import typings.twilio.libRestPreviewWirelessCommandMod.CommandContext
+import typings.twilio.libRestPreviewBaseMod.^
 import typings.twilio.libRestPreviewWirelessCommandMod.CommandListInstance
-import typings.twilio.libRestPreviewWirelessRatePlanMod.RatePlanContext
 import typings.twilio.libRestPreviewWirelessRatePlanMod.RatePlanListInstance
-import typings.twilio.libRestPreviewWirelessSimMod.SimContext
 import typings.twilio.libRestPreviewWirelessSimMod.SimListInstance
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,40 +10,37 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object libRestPreviewWirelessMod {
   
-  @JSImport("twilio/lib/rest/preview/Wireless", JSImport.Namespace)
+  @JSImport("twilio/lib/rest/preview/Wireless", JSImport.Default)
   @js.native
-  open class ^ protected () extends Wireless {
+  open class default protected () extends Wireless {
     /**
       * Initialize the Wireless version of Preview
       *
-      * @param domain - The twilio domain
+      * @param domain - The Twilio (Twilio.Preview) domain
       */
-    def this(domain: typings.twilio.libRestPreviewMod.^) = this()
+    def this(domain: ^) = this()
   }
   
   @js.native
   trait Wireless
-    extends typings.twilio.libBaseVersionMod.^ {
+    extends typings.twilio.libBaseVersionMod.default {
     
-    /**
-      * @param sid - sid of instance
-      */
-    def commands(sid: String): CommandContext = js.native
-    @JSName("commands")
-    val commands_Original: CommandListInstance = js.native
+    /** commands - { Twilio.Preview.Wireless.CommandListInstance } resource */
+    /* protected */ var _commands: js.UndefOr[CommandListInstance] = js.native
     
-    /**
-      * @param sid - sid of instance
-      */
-    def ratePlans(sid: String): RatePlanContext = js.native
-    @JSName("ratePlans")
-    val ratePlans_Original: RatePlanListInstance = js.native
+    /** ratePlans - { Twilio.Preview.Wireless.RatePlanListInstance } resource */
+    /* protected */ var _ratePlans: js.UndefOr[RatePlanListInstance] = js.native
     
-    /**
-      * @param sid - sid of instance
-      */
-    def sims(sid: String): SimContext = js.native
-    @JSName("sims")
-    val sims_Original: SimListInstance = js.native
+    /** sims - { Twilio.Preview.Wireless.SimListInstance } resource */
+    /* protected */ var _sims: js.UndefOr[SimListInstance] = js.native
+    
+    /** Getter for commands resource */
+    def commands: CommandListInstance = js.native
+    
+    /** Getter for ratePlans resource */
+    def ratePlans: RatePlanListInstance = js.native
+    
+    /** Getter for sims resource */
+    def sims: SimListInstance = js.native
   }
 }

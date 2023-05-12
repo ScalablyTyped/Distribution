@@ -7,6 +7,7 @@ import typings.three.anon.Animation
 import typings.three.examplesJsmAnimationCcdiksolverMod.CCDIKSolver
 import typings.three.examplesJsmAnimationMmdphysicsMod.MMDPhysics
 import typings.three.srcCoreBufferGeometryMod.BufferGeometry
+import typings.three.srcCoreBufferGeometryMod.NormalBufferAttributes
 import typings.three.srcCoreEventDispatcherMod.Event
 import typings.three.srcMaterialsMaterialMod.Material
 import typings.three.srcThreeMod.AnimationClip
@@ -47,13 +48,16 @@ object examplesJsmAnimationMmdanimationhelperMod {
   @JSImport("three/examples/jsm/animation/MMDAnimationHelper", "GrantSolver")
   @js.native
   open class GrantSolver protected () extends StObject {
-    def this(mesh: SkinnedMesh[BufferGeometry, Material | js.Array[Material]], grants: js.Array[js.Object]) = this()
+    def this(
+      mesh: SkinnedMesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]],
+      grants: js.Array[js.Object]
+    ) = this()
     
     def addGrantRotation(bone: Bone, q: Quaternion, ratio: Double): this.type = js.native
     
     var grants: js.Array[js.Object] = js.native
     
-    var mesh: SkinnedMesh[BufferGeometry, Material | js.Array[Material]] = js.native
+    var mesh: SkinnedMesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]] = js.native
     
     def update(): this.type = js.native
     
@@ -69,9 +73,9 @@ object examplesJsmAnimationMmdanimationhelperMod {
     def add(`object`: Audio[GainNode], params: MMDAnimationHelperAddParameter): this.type = js.native
     def add(`object`: Camera): this.type = js.native
     def add(`object`: Camera, params: MMDAnimationHelperAddParameter): this.type = js.native
-    def add(`object`: SkinnedMesh[BufferGeometry, Material | js.Array[Material]]): this.type = js.native
+    def add(`object`: SkinnedMesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]]): this.type = js.native
     def add(
-      `object`: SkinnedMesh[BufferGeometry, Material | js.Array[Material]],
+      `object`: SkinnedMesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]],
       params: MMDAnimationHelperAddParameter
     ): this.type = js.native
     
@@ -85,7 +89,7 @@ object examplesJsmAnimationMmdanimationhelperMod {
     
     var configuration: Afterglow = js.native
     
-    def createGrantSolver(mesh: SkinnedMesh[BufferGeometry, Material | js.Array[Material]]): GrantSolver = js.native
+    def createGrantSolver(mesh: SkinnedMesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]]): GrantSolver = js.native
     
     def enable(key: String, enabled: Boolean): this.type = js.native
     
@@ -93,25 +97,30 @@ object examplesJsmAnimationMmdanimationhelperMod {
     
     var masterPhysics: Null = js.native
     
-    var meshes: js.Array[SkinnedMesh[BufferGeometry, Material | js.Array[Material]]] = js.native
+    var meshes: js.Array[
+        SkinnedMesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]]
+      ] = js.native
     
     var objects: WeakMap[
-        (SkinnedMesh[BufferGeometry, Material | js.Array[Material]]) | Camera | AudioManager, 
+        (SkinnedMesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]]) | Camera | AudioManager, 
         MMDAnimationHelperMixer
       ] = js.native
     
-    def onBeforePhysics(mesh: SkinnedMesh[BufferGeometry, Material | js.Array[Material]]): Unit = js.native
+    def onBeforePhysics(mesh: SkinnedMesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]]): Unit = js.native
     
-    def pose(mesh: SkinnedMesh[BufferGeometry, Material | js.Array[Material]], vpd: js.Object): this.type = js.native
     def pose(
-      mesh: SkinnedMesh[BufferGeometry, Material | js.Array[Material]],
+      mesh: SkinnedMesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]],
+      vpd: js.Object
+    ): this.type = js.native
+    def pose(
+      mesh: SkinnedMesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]],
       vpd: js.Object,
       params: MMDAnimationHelperPoseParameter
     ): this.type = js.native
     
     def remove(`object`: Audio[GainNode]): this.type = js.native
     def remove(`object`: Camera): this.type = js.native
-    def remove(`object`: SkinnedMesh[BufferGeometry, Material | js.Array[Material]]): this.type = js.native
+    def remove(`object`: SkinnedMesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]]): this.type = js.native
     
     var sharedPhysics: Boolean = js.native
     

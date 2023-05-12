@@ -60,7 +60,6 @@ object srcEngineMod {
     
     /**
       * @description Словарь ударений. Его можно редактировать в рантайме.
-      * @type {API.StressDictionary}
       */
     val sd: typings.russianNounsJs.srcStressDictionaryMod.default = js.native
   }

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "jss-plugin-extend" : "10.9.2"
+      "jss-plugin-extend" : "10.10.0"
     }
   ],
   "test-dependencies" : [
     {
-      "jss-plugin-extend" : "10.9.2"
+      "jss-plugin-extend" : "10.10.0"
     }
   ],
   "compile-devDependencies" : [

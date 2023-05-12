@@ -7,25 +7,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
-  trait Data extends StObject {
+  trait Data[T] extends StObject {
     
-    var data: js.Array[Any]
+    var data: js.Array[T]
     
     var name: String
   }
   object Data {
     
-    inline def apply(data: js.Array[Any], name: String): Data = {
+    inline def apply[T](data: js.Array[T], name: String): Data[T] = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Data]
+      __obj.asInstanceOf[Data[T]]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: Data[?], T] (val x: Self & Data[T]) extends AnyVal {
       
-      inline def setData(value: js.Array[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Array[T]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      inline def setDataVarargs(value: Any*): Self = StObject.set(x, "data", js.Array(value*))
+      inline def setDataVarargs(value: T*): Self = StObject.set(x, "data", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

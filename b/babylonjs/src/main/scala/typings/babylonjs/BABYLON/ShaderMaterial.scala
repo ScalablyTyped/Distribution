@@ -57,6 +57,8 @@ trait ShaderMaterial
   
   /* private */ var _textures: Any = js.native
   
+  /* private */ var _uints: Any = js.native
+  
   /* private */ var _uniformBuffers: Any = js.native
   
   /* private */ var _vectors2: Any = js.native
@@ -260,6 +262,14 @@ trait ShaderMaterial
     * @returns the material itself allowing "fluent" like uniform updates
     */
   def setTextureSampler(name: String, sampler: TextureSampler): ShaderMaterial = js.native
+  
+  /**
+    * Set a unsigned int in the shader.
+    * @param name Define the name of the uniform as defined in the shader
+    * @param value Define the value to give to the uniform
+    * @return the material itself allowing "fluent" like uniform updates
+    */
+  def setUInt(name: String, value: Double): ShaderMaterial = js.native
   
   /**
     * Set a uniform buffer in the shader

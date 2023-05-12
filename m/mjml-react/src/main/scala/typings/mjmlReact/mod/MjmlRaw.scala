@@ -13,7 +13,7 @@ open class MjmlRaw protected ()
   def this(props: `0`) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: `0`, context: Any) = this()
 }

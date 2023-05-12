@@ -1,6 +1,6 @@
 package typings.ink
 
-import org.scalablytyped.runtime.Shortcut
+import typings.chalk.sourceVendorAnsiStylesMod.ForegroundColorName
 import typings.ink.inkStrings.`truncate-end`
 import typings.ink.inkStrings.`truncate-middle`
 import typings.ink.inkStrings.`truncate-start`
@@ -8,33 +8,27 @@ import typings.ink.inkStrings.end
 import typings.ink.inkStrings.middle
 import typings.ink.inkStrings.truncate
 import typings.ink.inkStrings.wrap
-import typings.react.mod.FC
 import typings.react.mod.ReactNode
+import typings.react.mod.global.JSX.Element
 import typings.typeFest.sourceLiteralUnionMod.LiteralUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object buildComponentsTextMod extends Shortcut {
+object buildComponentsTextMod {
   
-  /**
-    * This component can display text, and change its style to make it colorful, bold, underline, italic or strikethrough.
-    */
-  @JSImport("ink/build/components/Text", JSImport.Default)
+  @JSImport("ink/build/components/Text", JSImport.Namespace)
   @js.native
-  val default: FC[Props] = js.native
+  val ^ : js.Any = js.native
+  
+  inline def default(param0: Props): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(param0.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
   
   trait Props extends StObject {
     
     /**
       * Same as `color`, but for background.
       */
-    val backgroundColor: js.UndefOr[
-        LiteralUnion[
-          /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ForegroundColor */ Any, 
-          String
-        ]
-      ] = js.undefined
+    val backgroundColor: js.UndefOr[LiteralUnion[ForegroundColorName, String]] = js.undefined
     
     /**
       * Make the text bold.
@@ -46,12 +40,7 @@ object buildComponentsTextMod extends Shortcut {
     /**
       * Change text color. Ink uses chalk under the hood, so all its functionality is supported.
       */
-    val color: js.UndefOr[
-        LiteralUnion[
-          /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ForegroundColor */ Any, 
-          String
-        ]
-      ] = js.undefined
+    val color: js.UndefOr[LiteralUnion[ForegroundColorName, String]] = js.undefined
     
     /**
       * Dim the color (emit a small amount of light).
@@ -97,12 +86,7 @@ object buildComponentsTextMod extends Shortcut {
     @scala.inline
     implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
       
-      inline def setBackgroundColor(
-        value: LiteralUnion[
-              /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ForegroundColor */ Any, 
-              String
-            ]
-      ): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+      inline def setBackgroundColor(value: LiteralUnion[ForegroundColorName, String]): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
       inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
       
@@ -114,12 +98,7 @@ object buildComponentsTextMod extends Shortcut {
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      inline def setColor(
-        value: LiteralUnion[
-              /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ForegroundColor */ Any, 
-              String
-            ]
-      ): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: LiteralUnion[ForegroundColorName, String]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
@@ -148,9 +127,4 @@ object buildComponentsTextMod extends Shortcut {
       inline def setWrapUndefined: Self = StObject.set(x, "wrap", js.undefined)
     }
   }
-  
-  type _To = FC[Props]
-  
-  /* This means you don't have to write `default`, but can instead just say `buildComponentsTextMod.foo` */
-  override def _to: FC[Props] = default
 }

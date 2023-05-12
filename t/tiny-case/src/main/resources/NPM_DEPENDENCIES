@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "tiny-case" : "1.0.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "tiny-case" : "1.0.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

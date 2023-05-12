@@ -35,6 +35,7 @@ import typings.semanticUiReact.semanticUiReactStrings.twitter
 import typings.semanticUiReact.semanticUiReactStrings.vertical
 import typings.semanticUiReact.semanticUiReactStrings.vk
 import typings.semanticUiReact.semanticUiReactStrings.youtube
+import typings.std.FocusOptions
 import typings.std.HTMLButtonElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -68,6 +69,7 @@ object distCommonjsElementsButtonButtonMod {
     extends Component[ButtonProps, js.Object, Any] {
     
     def focus(): Unit = js.native
+    def focus(options: FocusOptions): Unit = js.native
   }
   
   type ButtonProps = StrictButtonProps
@@ -104,7 +106,8 @@ object distCommonjsElementsButtonButtonMod {
     var compact: js.UndefOr[Boolean] = js.undefined
     
     /** Shorthand for primary content. */
-    var content: js.UndefOr[SemanticShorthandContent] = js.undefined
+    @JSName("content")
+    var content_StrictButtonProps: js.UndefOr[SemanticShorthandContent] = js.undefined
     
     /** A button can be aligned to the left or right of its container. */
     var floated: js.UndefOr[SemanticFLOATS] = js.undefined

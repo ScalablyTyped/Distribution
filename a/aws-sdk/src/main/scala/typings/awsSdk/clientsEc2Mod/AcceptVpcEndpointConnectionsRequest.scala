@@ -17,7 +17,7 @@ trait AcceptVpcEndpointConnectionsRequest extends StObject {
   var ServiceId: VpcEndpointServiceId
   
   /**
-    * The IDs of one or more interface VPC endpoints.
+    * The IDs of the interface VPC endpoints.
     */
   var VpcEndpointIds: VpcEndpointIdList
 }

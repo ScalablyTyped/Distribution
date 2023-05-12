@@ -2,8 +2,8 @@ package typings.aframe.mod
 
 import typings.std.EventListener
 import typings.std.HTMLCanvasElement
-import typings.three.mod.Camera
-import typings.three.mod.WebGLRenderer
+import typings.three.buildThreeDotmoduleDotminMod.Camera
+import typings.three.buildThreeDotmoduleDotminMod.WebGLRenderer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,7 +31,7 @@ trait Scene
   var isMobile: Boolean = js.native
   
   @JSName("object3D")
-  var object3D_Scene: typings.three.mod.Scene = js.native
+  var object3D_Scene: typings.three.buildThreeDotmoduleDotminMod.Scene = js.native
   
   def reload(): Unit = js.native
   

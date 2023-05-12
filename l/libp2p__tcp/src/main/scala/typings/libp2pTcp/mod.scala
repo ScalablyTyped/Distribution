@@ -1,9 +1,12 @@
 package typings.libp2pTcp
 
+import typings.libp2pInterfaceMetrics.mod.CounterGroup
+import typings.libp2pInterfaceMetrics.mod.Metrics
 import typings.libp2pInterfaceTransport.mod.CreateListenerOptions
 import typings.libp2pInterfaceTransport.mod.DialOptions
 import typings.libp2pInterfaceTransport.mod.Transport
 import typings.libp2pInterfaceTransport.mod.Upgrader
+import typings.libp2pTcp.distSrcListenerMod.CloseServerOnMaxConnectionsOpts
 import typings.multiformatsMultiaddr.mod.AbortOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,8 +18,28 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def tcp(): js.Function1[/* components */ js.UndefOr[Any], Transport] = ^.asInstanceOf[js.Dynamic].applyDynamic("tcp")().asInstanceOf[js.Function1[/* components */ js.UndefOr[Any], Transport]]
-  inline def tcp(init: TCPOptions): js.Function1[/* components */ js.UndefOr[Any], Transport] = ^.asInstanceOf[js.Dynamic].applyDynamic("tcp")(init.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* components */ js.UndefOr[Any], Transport]]
+  inline def tcp(): js.Function1[/* components */ js.UndefOr[TCPComponents], Transport] = ^.asInstanceOf[js.Dynamic].applyDynamic("tcp")().asInstanceOf[js.Function1[/* components */ js.UndefOr[TCPComponents], Transport]]
+  inline def tcp(init: TCPOptions): js.Function1[/* components */ js.UndefOr[TCPComponents], Transport] = ^.asInstanceOf[js.Dynamic].applyDynamic("tcp")(init.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* components */ js.UndefOr[TCPComponents], Transport]]
+  
+  trait TCPComponents extends StObject {
+    
+    var metrics: js.UndefOr[Metrics] = js.undefined
+  }
+  object TCPComponents {
+    
+    inline def apply(): TCPComponents = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[TCPComponents]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TCPComponents] (val x: Self) extends AnyVal {
+      
+      inline def setMetrics(value: Metrics): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
+      
+      inline def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
+    }
+  }
   
   trait TCPCreateListenerOptions
     extends StObject
@@ -72,7 +95,37 @@ object mod {
     }
   }
   
+  trait TCPMetrics extends StObject {
+    
+    var dialerEvents: CounterGroup
+  }
+  object TCPMetrics {
+    
+    inline def apply(dialerEvents: CounterGroup): TCPMetrics = {
+      val __obj = js.Dynamic.literal(dialerEvents = dialerEvents.asInstanceOf[js.Any])
+      __obj.asInstanceOf[TCPMetrics]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TCPMetrics] (val x: Self) extends AnyVal {
+      
+      inline def setDialerEvents(value: CounterGroup): Self = StObject.set(x, "dialerEvents", value.asInstanceOf[js.Any])
+    }
+  }
+  
   trait TCPOptions extends StObject {
+    
+    /**
+      * Parameter to specify the maximum length of the queue of pending connections
+      * https://nodejs.org/dist/latest-v18.x/docs/api/net.html#serverlisten
+      */
+    var backlog: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * Close server (stop listening for new connections) if connections exceed a limit.
+      * Open server (start listening for new connections) if connections fall below a limit.
+      */
+    var closeServerOnMaxConnections: js.UndefOr[CloseServerOnMaxConnectionsOpts] = js.undefined
     
     /**
       * An optional number in ms that is used as an inactivity timeout after which the socket will be closed
@@ -104,6 +157,14 @@ object mod {
     
     @scala.inline
     implicit open class MutableBuilder[Self <: TCPOptions] (val x: Self) extends AnyVal {
+      
+      inline def setBacklog(value: Double): Self = StObject.set(x, "backlog", value.asInstanceOf[js.Any])
+      
+      inline def setBacklogUndefined: Self = StObject.set(x, "backlog", js.undefined)
+      
+      inline def setCloseServerOnMaxConnections(value: CloseServerOnMaxConnectionsOpts): Self = StObject.set(x, "closeServerOnMaxConnections", value.asInstanceOf[js.Any])
+      
+      inline def setCloseServerOnMaxConnectionsUndefined: Self = StObject.set(x, "closeServerOnMaxConnections", js.undefined)
       
       inline def setInboundSocketInactivityTimeout(value: Double): Self = StObject.set(x, "inboundSocketInactivityTimeout", value.asInstanceOf[js.Any])
       

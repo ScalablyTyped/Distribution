@@ -155,6 +155,9 @@ object omnibox {
       */
     var content: String
     
+    /** Whether the suggest result can be deleted by the user. */
+    var deletable: js.UndefOr[Boolean] = js.undefined
+    
     /**
       * The text that is displayed in the URL dropdown. Can contain XML-style markup for styling. The supported tags are 'url' (for a literal URL), 'match' (for highlighting text that matched what the user's query), and 'dim' (for dim helper text). The styles can be nested, eg. <dim><match>dimmed match</match></dim>. You must escape the five predefined entities to display them as text: stackoverflow.com/a/1091953/89484
       */
@@ -183,6 +186,10 @@ object omnibox {
     implicit open class MutableBuilder[Self <: SuggestResult] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
+      inline def setDeletable(value: Boolean): Self = StObject.set(x, "deletable", value.asInstanceOf[js.Any])
+      
+      inline def setDeletableUndefined: Self = StObject.set(x, "deletable", js.undefined)
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       

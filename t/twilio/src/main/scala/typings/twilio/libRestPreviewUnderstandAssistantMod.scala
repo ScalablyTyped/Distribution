@@ -1,7 +1,8 @@
 package typings.twilio
 
+import typings.std.Record
+import typings.twilio.anon.CallbackEvents
 import typings.twilio.libBasePageMod.TwilioResponsePayload
-import typings.twilio.libInterfacesMod.SerializableClass
 import typings.twilio.libRestPreviewUnderstandAssistantAssistantFallbackActionsMod.AssistantFallbackActionsContext
 import typings.twilio.libRestPreviewUnderstandAssistantAssistantFallbackActionsMod.AssistantFallbackActionsListInstance
 import typings.twilio.libRestPreviewUnderstandAssistantAssistantInitiationActionsMod.AssistantInitiationActionsContext
@@ -18,383 +19,253 @@ import typings.twilio.libRestPreviewUnderstandAssistantStyleSheetMod.StyleSheetC
 import typings.twilio.libRestPreviewUnderstandAssistantStyleSheetMod.StyleSheetListInstance
 import typings.twilio.libRestPreviewUnderstandAssistantTaskMod.TaskContext
 import typings.twilio.libRestPreviewUnderstandAssistantTaskMod.TaskListInstance
+import typings.twilio.libRestPreviewUnderstandMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libRestPreviewUnderstandAssistantMod {
   
-  @JSImport("twilio/lib/rest/preview/understand/assistant", JSImport.Namespace)
+  @JSImport("twilio/lib/rest/preview/understand/assistant", "AssistantContextImpl")
   @js.native
-  val ^ : js.Any = js.native
-  
-  @JSImport("twilio/lib/rest/preview/understand/assistant", "AssistantContext")
-  @js.native
-  open class AssistantContext protected () extends StObject {
-    /**
-      * Initialize the AssistantContext
-      *
-      * PLEASE NOTE that this class contains preview products that are subject to
-      * change. Use them with caution. If you currently do not have developer preview
-      * access, please contact help@twilio.com.
-      *
-      * @param version - Version of the resource
-      * @param sid - A 34 character string that uniquely identifies this resource.
-      */
-    def this(version: typings.twilio.libRestPreviewUnderstandMod.^, sid: String) = this()
+  open class AssistantContextImpl protected ()
+    extends StObject
+       with AssistantContext {
+    def this(_version: default, sid: String) = this()
     
-    /**
-      * @param sid - sid of instance
-      */
-    def assistantFallbackActions(sid: String): AssistantFallbackActionsContext = js.native
-    @JSName("assistantFallbackActions")
-    var assistantFallbackActions_Original: AssistantFallbackActionsListInstance = js.native
+    /* protected */ var _assistantFallbackActions: js.UndefOr[AssistantFallbackActionsListInstance] = js.native
     
-    /**
-      * @param sid - sid of instance
-      */
-    def assistantInitiationActions(sid: String): AssistantInitiationActionsContext = js.native
-    @JSName("assistantInitiationActions")
-    var assistantInitiationActions_Original: AssistantInitiationActionsListInstance = js.native
+    /* protected */ var _assistantInitiationActions: js.UndefOr[AssistantInitiationActionsListInstance] = js.native
     
-    /**
-      * @param sid - sid of instance
-      */
-    def dialogues(sid: String): DialogueContext = js.native
-    @JSName("dialogues")
-    var dialogues_Original: DialogueListInstance = js.native
+    /* protected */ var _dialogues: js.UndefOr[DialogueListInstance] = js.native
     
-    /**
-      * fetch a AssistantInstance
-      *
-      * @param callback - Callback to handle processed record
-      */
-    def fetch(): js.Promise[AssistantInstance] = js.native
-    def fetch(callback: js.Function2[/* error */ js.Error | Null, /* items */ AssistantInstance, Any]): js.Promise[AssistantInstance] = js.native
+    /* protected */ var _fieldTypes: js.UndefOr[FieldTypeListInstance] = js.native
     
-    /**
-      * @param sid - sid of instance
-      */
-    def fieldTypes(sid: String): FieldTypeContext = js.native
-    @JSName("fieldTypes")
-    var fieldTypes_Original: FieldTypeListInstance = js.native
+    /* protected */ var _modelBuilds: js.UndefOr[ModelBuildListInstance] = js.native
     
-    /**
-      * @param sid - sid of instance
-      */
-    def modelBuilds(sid: String): ModelBuildContext = js.native
-    @JSName("modelBuilds")
-    var modelBuilds_Original: ModelBuildListInstance = js.native
+    /* protected */ var _queries: js.UndefOr[QueryListInstance] = js.native
     
-    /**
-      * @param sid - sid of instance
-      */
-    def queries(sid: String): QueryContext = js.native
-    @JSName("queries")
-    var queries_Original: QueryListInstance = js.native
+    /* protected */ var _solution: AssistantContextSolution = js.native
     
-    /**
-      * remove a AssistantInstance
-      *
-      * @param callback - Callback to handle processed record
-      */
-    def remove(): js.Promise[Boolean] = js.native
-    def remove(callback: js.Function2[/* error */ js.Error | Null, /* items */ AssistantInstance, Any]): js.Promise[Boolean] = js.native
+    /* protected */ var _styleSheet: js.UndefOr[StyleSheetListInstance] = js.native
     
-    /**
-      * @param sid - sid of instance
-      */
-    def styleSheet(sid: String): StyleSheetContext = js.native
-    @JSName("styleSheet")
-    var styleSheet_Original: StyleSheetListInstance = js.native
+    /* protected */ var _tasks: js.UndefOr[TaskListInstance] = js.native
     
-    /**
-      * @param sid - sid of instance
-      */
-    def tasks(sid: String): TaskContext = js.native
-    @JSName("tasks")
-    var tasks_Original: TaskListInstance = js.native
+    /* protected */ var _uri: String = js.native
     
-    /**
-      * Provide a user-friendly representation
-      */
-    def toJSON(): Any = js.native
+    /* protected */ var _version: default = js.native
     
-    /**
-      * update a AssistantInstance
-      *
-      * @param callback - Callback to handle processed record
-      */
-    def update(): js.Promise[AssistantInstance] = js.native
-    def update(callback: js.Function2[/* error */ js.Error | Null, /* items */ AssistantInstance, Any]): js.Promise[AssistantInstance] = js.native
+    def dialogues: DialogueListInstance = js.native
+    
+    def fieldTypes: FieldTypeListInstance = js.native
+    
+    def modelBuilds: ModelBuildListInstance = js.native
+    
+    def queries: QueryListInstance = js.native
+    
+    def tasks: TaskListInstance = js.native
+    
     def update(
-      opts: Unit,
-      callback: js.Function2[/* error */ js.Error | Null, /* items */ AssistantInstance, Any]
+      params: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[AssistantInstance], Any],
+      callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[AssistantInstance], Any]
     ): js.Promise[AssistantInstance] = js.native
-    def update(opts: AssistantInstanceUpdateOptions): js.Promise[AssistantInstance] = js.native
     def update(
-      opts: AssistantInstanceUpdateOptions,
-      callback: js.Function2[/* error */ js.Error | Null, /* items */ AssistantInstance, Any]
+      params: Unit,
+      callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[AssistantInstance], Any]
     ): js.Promise[AssistantInstance] = js.native
   }
   
   @JSImport("twilio/lib/rest/preview/understand/assistant", "AssistantInstance")
   @js.native
-  open class AssistantInstance protected () extends SerializableClass {
+  open class AssistantInstance protected () extends StObject {
+    def this(_version: default, payload: AssistantResource) = this()
+    def this(_version: default, payload: AssistantResource, sid: String) = this()
+    
+    /* protected */ var _context: js.UndefOr[AssistantContext] = js.native
+    
+    /* private */ def _proxy: Any = js.native
+    
+    /* protected */ var _solution: AssistantContextSolution = js.native
+    
+    /* protected */ var _version: default = js.native
+    
     /**
-      * Initialize the AssistantContext
-      *
-      * PLEASE NOTE that this class contains preview products that are subject to
-      * change. Use them with caution. If you currently do not have developer preview
-      * access, please contact help@twilio.com.
-      *
-      * @param version - Version of the resource
-      * @param payload - The instance payload
-      * @param sid - A 34 character string that uniquely identifies this resource.
+      * The unique ID of the Account that created this Assistant.
       */
-    def this(version: typings.twilio.libRestPreviewUnderstandMod.^, payload: AssistantPayload, sid: String) = this()
-    
-    /* private */ var _proxy: AssistantContext = js.native
-    
     var accountSid: String = js.native
     
     /**
-      * Access the assistantFallbackActions
+      * Access the assistantFallbackActions.
       */
     def assistantFallbackActions(): AssistantFallbackActionsListInstance = js.native
     
     /**
-      * Access the assistantInitiationActions
+      * Access the assistantInitiationActions.
       */
     def assistantInitiationActions(): AssistantInitiationActionsListInstance = js.native
     
+    /**
+      * Space-separated list of callback events that will trigger callbacks.
+      */
     var callbackEvents: String = js.native
     
+    /**
+      * A user-provided URL to send event callbacks to.
+      */
     var callbackUrl: String = js.native
     
+    /**
+      * The date that this resource was created
+      */
     var dateCreated: js.Date = js.native
     
+    /**
+      * The date that this resource was last updated
+      */
     var dateUpdated: js.Date = js.native
     
     /**
-      * Access the dialogues
+      * Access the dialogues.
       */
     def dialogues(): DialogueListInstance = js.native
     
     /**
-      * fetch a AssistantInstance
+      * Fetch a AssistantInstance
       *
       * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed AssistantInstance
       */
     def fetch(): js.Promise[AssistantInstance] = js.native
-    def fetch(callback: js.Function2[/* error */ js.Error | Null, /* items */ this.type, Any]): js.Promise[AssistantInstance] = js.native
+    def fetch(callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[this.type], Any]): js.Promise[AssistantInstance] = js.native
     
     /**
-      * Access the fieldTypes
+      * Access the fieldTypes.
       */
     def fieldTypes(): FieldTypeListInstance = js.native
     
+    /**
+      * A text description for the Assistant. It is non-unique and can up to 255 characters long.
+      */
     var friendlyName: String = js.native
     
+    /**
+      * The unique ID (Sid) of the latest model build. Null if no model has been built.
+      */
     var latestModelBuildSid: String = js.native
     
-    var links: String = js.native
+    var links: Record[String, String] = js.native
     
+    /**
+      * A boolean that specifies whether queries should be logged for 30 days further training. If false, no queries will be stored, if true, queries will be stored for 30 days and deleted thereafter.
+      */
     var logQueries: Boolean = js.native
     
     /**
-      * Access the modelBuilds
+      * Access the modelBuilds.
       */
     def modelBuilds(): ModelBuildListInstance = js.native
     
     /**
-      * Access the queries
+      * Access the queries.
       */
     def queries(): QueryListInstance = js.native
     
     /**
-      * remove a AssistantInstance
+      * Remove a AssistantInstance
       *
       * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed boolean
       */
     def remove(): js.Promise[Boolean] = js.native
-    def remove(callback: js.Function2[/* error */ js.Error | Null, /* items */ this.type, Any]): js.Promise[Boolean] = js.native
+    def remove(callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[Boolean], Any]): js.Promise[Boolean] = js.native
     
+    /**
+      * A 34 character string that uniquely identifies this resource.
+      */
     var sid: String = js.native
     
     /**
-      * Access the styleSheet
+      * Access the styleSheet.
       */
     def styleSheet(): StyleSheetListInstance = js.native
     
     /**
-      * Access the tasks
+      * Access the tasks.
       */
     def tasks(): TaskListInstance = js.native
     
+    /**
+      * Provide a user-friendly representation
+      *
+      * @returns Object
+      */
+    def toJSON(): CallbackEvents = js.native
+    
+    /**
+      * A user-provided string that uniquely identifies this resource as an alternative to the sid. You can use the unique name in the URL path. Unique up to 64 characters long.
+      */
     var uniqueName: String = js.native
     
     /**
-      * update a AssistantInstance
+      * Update a AssistantInstance
       *
       * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed AssistantInstance
       */
     def update(): js.Promise[AssistantInstance] = js.native
-    def update(callback: js.Function2[/* error */ js.Error | Null, /* items */ this.type, Any]): js.Promise[AssistantInstance] = js.native
-    def update(opts: Unit, callback: js.Function2[/* error */ js.Error | Null, /* items */ this.type, Any]): js.Promise[AssistantInstance] = js.native
-    def update(opts: AssistantInstanceUpdateOptions): js.Promise[AssistantInstance] = js.native
+    def update(callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[this.type], Any]): js.Promise[AssistantInstance] = js.native
+    /**
+      * Update a AssistantInstance
+      *
+      * @param params - Parameter for request
+      * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed AssistantInstance
+      */
+    def update(params: AssistantContextUpdateOptions): js.Promise[AssistantInstance] = js.native
     def update(
-      opts: AssistantInstanceUpdateOptions,
-      callback: js.Function2[/* error */ js.Error | Null, /* items */ this.type, Any]
+      params: AssistantContextUpdateOptions,
+      callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[this.type], Any]
     ): js.Promise[AssistantInstance] = js.native
     
     var url: String = js.native
   }
   
-  /**
-    * Initialize the AssistantList
-    *
-    * PLEASE NOTE that this class contains preview products that are subject to
-    * change. Use them with caution. If you currently do not have developer preview
-    * access, please contact help@twilio.com.
-    *
-    * @param version - Version of the resource
-    */
-  inline def AssistantList(version: typings.twilio.libRestPreviewUnderstandMod.^): AssistantListInstance = ^.asInstanceOf[js.Dynamic].applyDynamic("AssistantList")(version.asInstanceOf[js.Any]).asInstanceOf[AssistantListInstance]
-  
-  @JSImport("twilio/lib/rest/preview/understand/assistant", "AssistantPage")
-  @js.native
-  open class AssistantPage protected ()
-    extends typings.twilio.libBasePageMod.^[
-          typings.twilio.libRestPreviewUnderstandMod.^, 
-          AssistantPayload, 
-          AssistantResource, 
-          AssistantInstance
-        ] {
-    /**
-      * Initialize the AssistantPage
-      *
-      * PLEASE NOTE that this class contains preview products that are subject to
-      * change. Use them with caution. If you currently do not have developer preview
-      * access, please contact help@twilio.com.
-      *
-      * @param version - Version of the resource
-      * @param response - Response from the API
-      * @param solution - Path solution
-      */
-    def this(
-      version: typings.twilio.libRestPreviewUnderstandMod.^,
-      response: typings.twilio.libHttpResponseMod.^[String],
-      solution: AssistantSolution
-    ) = this()
-    
-    /**
-      * Build an instance of AssistantInstance
-      *
-      * @param payload - Payload response from the API
-      */
-    def getInstance(payload: AssistantPayload): AssistantInstance = js.native
-    
-    /**
-      * Provide a user-friendly representation
-      */
-    def toJSON(): Any = js.native
-  }
-  
-  /**
-    * Options to pass to update
-    *
-    * @property callbackEvents - Space-separated list of callback events that will trigger callbacks.
-    * @property callbackUrl - A user-provided URL to send event callbacks to.
-    * @property fallbackActions - The JSON actions to be executed when the user's input is not recognized as matching any Task.
-    * @property friendlyName - A text description for the Assistant. It is non-unique and can up to 255 characters long.
-    * @property initiationActions - The JSON actions to be executed on inbound phone calls when the Assistant has to say something first.
-    * @property logQueries - A boolean that specifies whether queries should be logged for 30 days further training. If false, no queries will be stored, if true, queries will be stored for 30 days and deleted thereafter. Defaults to true if no value is provided.
-    * @property styleSheet - The JSON object that holds the style sheet for the assistant
-    * @property uniqueName - A user-provided string that uniquely identifies this resource as an alternative to the sid. Unique up to 64 characters long.
-    */
-  trait AssistantInstanceUpdateOptions extends StObject {
-    
-    var callbackEvents: js.UndefOr[String] = js.undefined
-    
-    var callbackUrl: js.UndefOr[String] = js.undefined
-    
-    var fallbackActions: js.UndefOr[js.Object] = js.undefined
-    
-    var friendlyName: js.UndefOr[String] = js.undefined
-    
-    var initiationActions: js.UndefOr[js.Object] = js.undefined
-    
-    var logQueries: js.UndefOr[Boolean] = js.undefined
-    
-    var styleSheet: js.UndefOr[js.Object] = js.undefined
-    
-    var uniqueName: js.UndefOr[String] = js.undefined
-  }
-  object AssistantInstanceUpdateOptions {
-    
-    inline def apply(): AssistantInstanceUpdateOptions = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[AssistantInstanceUpdateOptions]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: AssistantInstanceUpdateOptions] (val x: Self) extends AnyVal {
-      
-      inline def setCallbackEvents(value: String): Self = StObject.set(x, "callbackEvents", value.asInstanceOf[js.Any])
-      
-      inline def setCallbackEventsUndefined: Self = StObject.set(x, "callbackEvents", js.undefined)
-      
-      inline def setCallbackUrl(value: String): Self = StObject.set(x, "callbackUrl", value.asInstanceOf[js.Any])
-      
-      inline def setCallbackUrlUndefined: Self = StObject.set(x, "callbackUrl", js.undefined)
-      
-      inline def setFallbackActions(value: js.Object): Self = StObject.set(x, "fallbackActions", value.asInstanceOf[js.Any])
-      
-      inline def setFallbackActionsUndefined: Self = StObject.set(x, "fallbackActions", js.undefined)
-      
-      inline def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
-      
-      inline def setFriendlyNameUndefined: Self = StObject.set(x, "friendlyName", js.undefined)
-      
-      inline def setInitiationActions(value: js.Object): Self = StObject.set(x, "initiationActions", value.asInstanceOf[js.Any])
-      
-      inline def setInitiationActionsUndefined: Self = StObject.set(x, "initiationActions", js.undefined)
-      
-      inline def setLogQueries(value: Boolean): Self = StObject.set(x, "logQueries", value.asInstanceOf[js.Any])
-      
-      inline def setLogQueriesUndefined: Self = StObject.set(x, "logQueries", js.undefined)
-      
-      inline def setStyleSheet(value: js.Object): Self = StObject.set(x, "styleSheet", value.asInstanceOf[js.Any])
-      
-      inline def setStyleSheetUndefined: Self = StObject.set(x, "styleSheet", js.undefined)
-      
-      inline def setUniqueName(value: String): Self = StObject.set(x, "uniqueName", value.asInstanceOf[js.Any])
-      
-      inline def setUniqueNameUndefined: Self = StObject.set(x, "uniqueName", js.undefined)
-    }
-  }
-  
   @js.native
   trait AssistantListInstance extends StObject {
     
-    /**
-      * @param sid - sid of instance
-      */
     def apply(sid: String): AssistantContext = js.native
     
+    var _solution: AssistantSolution = js.native
+    
+    var _uri: String = js.native
+    
+    var _version: default = js.native
+    
     /**
-      * create a AssistantInstance
+      * Create a AssistantInstance
       *
       * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed AssistantInstance
       */
     def create(): js.Promise[AssistantInstance] = js.native
-    def create(callback: js.Function2[/* error */ js.Error | Null, /* item */ AssistantInstance, Any]): js.Promise[AssistantInstance] = js.native
-    def create(opts: Unit, callback: js.Function2[/* error */ js.Error | Null, /* item */ AssistantInstance, Any]): js.Promise[AssistantInstance] = js.native
-    def create(opts: AssistantListInstanceCreateOptions): js.Promise[AssistantInstance] = js.native
+    def create(callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[AssistantInstance], Any]): js.Promise[AssistantInstance] = js.native
+    /**
+      * Create a AssistantInstance
+      *
+      * @param params - Parameter for request
+      * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed AssistantInstance
+      */
+    def create(params: AssistantListInstanceCreateOptions): js.Promise[AssistantInstance] = js.native
     def create(
-      opts: AssistantListInstanceCreateOptions,
-      callback: js.Function2[/* error */ js.Error | Null, /* item */ AssistantInstance, Any]
+      params: AssistantListInstanceCreateOptions,
+      callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[AssistantInstance], Any]
     ): js.Promise[AssistantInstance] = js.native
     
     /**
@@ -409,7 +280,8 @@ object libRestPreviewUnderstandAssistantMod {
       * If a function is passed as the first argument, it will be used as the callback
       * function.
       *
-      * @param callback - Function to process each record
+      * @param { AssistantListInstanceEachOptions } [params] - Options for request
+      * @param { function } [callback] - Function to process each record
       */
     def each(): Unit = js.native
     def each(
@@ -419,17 +291,9 @@ object libRestPreviewUnderstandAssistantMod {
           Unit
         ]
     ): Unit = js.native
+    def each(params: AssistantListInstanceEachOptions): Unit = js.native
     def each(
-      opts: Unit,
-      callback: js.Function2[
-          /* item */ AssistantInstance, 
-          /* done */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
-          Unit
-        ]
-    ): Unit = js.native
-    def each(opts: AssistantListInstanceEachOptions): Unit = js.native
-    def each(
-      opts: AssistantListInstanceEachOptions,
+      params: AssistantListInstanceEachOptions,
       callback: js.Function2[
           /* item */ AssistantInstance, 
           /* done */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
@@ -437,11 +301,6 @@ object libRestPreviewUnderstandAssistantMod {
         ]
     ): Unit = js.native
     
-    /**
-      * Constructs a assistant
-      *
-      * @param sid - A 34 character string that uniquely identifies this resource.
-      */
     def get(sid: String): AssistantContext = js.native
     
     /**
@@ -449,20 +308,12 @@ object libRestPreviewUnderstandAssistantMod {
       *
       * The request is executed immediately.
       *
-      * If a function is passed as the first argument, it will be used as the callback
-      * function.
-      *
-      * @param callback - Callback to handle list of records
+      * @param { string } [targetUrl] - API-generated URL for the requested results page
+      * @param { function } [callback] - Callback to handle list of records
       */
-    def getPage(): js.Promise[AssistantPage] = js.native
-    def getPage(callback: js.Function2[/* error */ js.Error | Null, /* items */ AssistantPage, Any]): js.Promise[AssistantPage] = js.native
     def getPage(targetUrl: String): js.Promise[AssistantPage] = js.native
     def getPage(
       targetUrl: String,
-      callback: js.Function2[/* error */ js.Error | Null, /* items */ AssistantPage, Any]
-    ): js.Promise[AssistantPage] = js.native
-    def getPage(
-      targetUrl: Unit,
       callback: js.Function2[/* error */ js.Error | Null, /* items */ AssistantPage, Any]
     ): js.Promise[AssistantPage] = js.native
     
@@ -472,17 +323,14 @@ object libRestPreviewUnderstandAssistantMod {
       * If a function is passed as the first argument, it will be used as the callback
       * function.
       *
-      * @param callback - Callback to handle list of records
+      * @param { AssistantListInstanceOptions } [params] - Options for request
+      * @param { function } [callback] - Callback to handle list of records
       */
     def list(): js.Promise[js.Array[AssistantInstance]] = js.native
     def list(callback: js.Function2[/* error */ js.Error | Null, /* items */ js.Array[AssistantInstance], Any]): js.Promise[js.Array[AssistantInstance]] = js.native
+    def list(params: AssistantListInstanceOptions): js.Promise[js.Array[AssistantInstance]] = js.native
     def list(
-      opts: Unit,
-      callback: js.Function2[/* error */ js.Error | Null, /* items */ js.Array[AssistantInstance], Any]
-    ): js.Promise[js.Array[AssistantInstance]] = js.native
-    def list(opts: AssistantListInstanceOptions): js.Promise[js.Array[AssistantInstance]] = js.native
-    def list(
-      opts: AssistantListInstanceOptions,
+      params: AssistantListInstanceOptions,
       callback: js.Function2[/* error */ js.Error | Null, /* items */ js.Array[AssistantInstance], Any]
     ): js.Promise[js.Array[AssistantInstance]] = js.native
     
@@ -494,14 +342,14 @@ object libRestPreviewUnderstandAssistantMod {
       * If a function is passed as the first argument, it will be used as the callback
       * function.
       *
-      * @param callback - Callback to handle list of records
+      * @param { AssistantListInstancePageOptions } [params] - Options for request
+      * @param { function } [callback] - Callback to handle list of records
       */
     def page(): js.Promise[AssistantPage] = js.native
     def page(callback: js.Function2[/* error */ js.Error | Null, /* items */ AssistantPage, Any]): js.Promise[AssistantPage] = js.native
-    def page(opts: Unit, callback: js.Function2[/* error */ js.Error | Null, /* items */ AssistantPage, Any]): js.Promise[AssistantPage] = js.native
-    def page(opts: AssistantListInstancePageOptions): js.Promise[AssistantPage] = js.native
+    def page(params: AssistantListInstancePageOptions): js.Promise[AssistantPage] = js.native
     def page(
-      opts: AssistantListInstancePageOptions,
+      params: AssistantListInstancePageOptions,
       callback: js.Function2[/* error */ js.Error | Null, /* items */ AssistantPage, Any]
     ): js.Promise[AssistantPage] = js.native
     
@@ -510,35 +358,234 @@ object libRestPreviewUnderstandAssistantMod {
       */
     def toJSON(): Any = js.native
   }
-  
-  /**
-    * Options to pass to create
-    *
-    * @property callbackEvents - Space-separated list of callback events that will trigger callbacks.
-    * @property callbackUrl - A user-provided URL to send event callbacks to.
-    * @property fallbackActions - The JSON actions to be executed when the user's input is not recognized as matching any Task.
-    * @property friendlyName - A text description for the Assistant. It is non-unique and can up to 255 characters long.
-    * @property initiationActions - The JSON actions to be executed on inbound phone calls when the Assistant has to say something first.
-    * @property logQueries - A boolean that specifies whether queries should be logged for 30 days further training. If false, no queries will be stored, if true, queries will be stored for 30 days and deleted thereafter. Defaults to true if no value is provided.
-    * @property styleSheet - The JSON object that holds the style sheet for the assistant
-    * @property uniqueName - A user-provided string that uniquely identifies this resource as an alternative to the sid. Unique up to 64 characters long.
-    */
-  trait AssistantListInstanceCreateOptions extends StObject {
+  object AssistantListInstance {
     
+    @JSImport("twilio/lib/rest/preview/understand/assistant", "AssistantListInstance")
+    @js.native
+    def apply(version: default): AssistantListInstance = js.native
+  }
+  
+  @JSImport("twilio/lib/rest/preview/understand/assistant", "AssistantPage")
+  @js.native
+  open class AssistantPage protected ()
+    extends typings.twilio.libBasePageMod.default[default, AssistantPayload, AssistantResource, AssistantInstance] {
+    /**
+      * Initialize the AssistantPage
+      *
+      * @param version - Version of the resource
+      * @param response - Response from the API
+      * @param solution - Path solution
+      */
+    def this(
+      version: default,
+      response: typings.twilio.libHttpResponseMod.default[String],
+      solution: AssistantSolution
+    ) = this()
+    
+    /**
+      * Build an instance of AssistantInstance
+      *
+      * @param payload - Payload response from the API
+      */
+    def getInstance(payload: AssistantResource): AssistantInstance = js.native
+  }
+  
+  @js.native
+  trait AssistantContext extends StObject {
+    
+    def assistantFallbackActions(): AssistantFallbackActionsContext = js.native
+    @JSName("assistantFallbackActions")
+    var assistantFallbackActions_Original: AssistantFallbackActionsListInstance = js.native
+    
+    def assistantInitiationActions(): AssistantInitiationActionsContext = js.native
+    @JSName("assistantInitiationActions")
+    var assistantInitiationActions_Original: AssistantInitiationActionsListInstance = js.native
+    
+    def dialogues(sid: String): DialogueContext = js.native
+    @JSName("dialogues")
+    var dialogues_Original: DialogueListInstance = js.native
+    
+    /**
+      * Fetch a AssistantInstance
+      *
+      * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed AssistantInstance
+      */
+    def fetch(): js.Promise[AssistantInstance] = js.native
+    def fetch(callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[AssistantInstance], Any]): js.Promise[AssistantInstance] = js.native
+    
+    def fieldTypes(sid: String): FieldTypeContext = js.native
+    @JSName("fieldTypes")
+    var fieldTypes_Original: FieldTypeListInstance = js.native
+    
+    def modelBuilds(sid: String): ModelBuildContext = js.native
+    @JSName("modelBuilds")
+    var modelBuilds_Original: ModelBuildListInstance = js.native
+    
+    def queries(sid: String): QueryContext = js.native
+    @JSName("queries")
+    var queries_Original: QueryListInstance = js.native
+    
+    /**
+      * Remove a AssistantInstance
+      *
+      * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed boolean
+      */
+    def remove(): js.Promise[Boolean] = js.native
+    def remove(callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[Boolean], Any]): js.Promise[Boolean] = js.native
+    
+    def styleSheet(): StyleSheetContext = js.native
+    @JSName("styleSheet")
+    var styleSheet_Original: StyleSheetListInstance = js.native
+    
+    def tasks(sid: String): TaskContext = js.native
+    @JSName("tasks")
+    var tasks_Original: TaskListInstance = js.native
+    
+    /**
+      * Provide a user-friendly representation
+      */
+    def toJSON(): Any = js.native
+    
+    /**
+      * Update a AssistantInstance
+      *
+      * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed AssistantInstance
+      */
+    def update(): js.Promise[AssistantInstance] = js.native
+    def update(callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[AssistantInstance], Any]): js.Promise[AssistantInstance] = js.native
+    /**
+      * Update a AssistantInstance
+      *
+      * @param params - Parameter for request
+      * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed AssistantInstance
+      */
+    def update(params: AssistantContextUpdateOptions): js.Promise[AssistantInstance] = js.native
+    def update(
+      params: AssistantContextUpdateOptions,
+      callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[AssistantInstance], Any]
+    ): js.Promise[AssistantInstance] = js.native
+  }
+  
+  trait AssistantContextSolution extends StObject {
+    
+    var sid: String
+  }
+  object AssistantContextSolution {
+    
+    inline def apply(sid: String): AssistantContextSolution = {
+      val __obj = js.Dynamic.literal(sid = sid.asInstanceOf[js.Any])
+      __obj.asInstanceOf[AssistantContextSolution]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AssistantContextSolution] (val x: Self) extends AnyVal {
+      
+      inline def setSid(value: String): Self = StObject.set(x, "sid", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait AssistantContextUpdateOptions extends StObject {
+    
+    /** Space-separated list of callback events that will trigger callbacks. */
     var callbackEvents: js.UndefOr[String] = js.undefined
     
+    /** A user-provided URL to send event callbacks to. */
     var callbackUrl: js.UndefOr[String] = js.undefined
     
-    var fallbackActions: js.UndefOr[js.Object] = js.undefined
+    /** The JSON actions to be executed when the user\\\'s input is not recognized as matching any Task. */
+    var fallbackActions: js.UndefOr[Any] = js.undefined
     
+    /** A text description for the Assistant. It is non-unique and can up to 255 characters long. */
     var friendlyName: js.UndefOr[String] = js.undefined
     
-    var initiationActions: js.UndefOr[js.Object] = js.undefined
+    /** The JSON actions to be executed on inbound phone calls when the Assistant has to say something first. */
+    var initiationActions: js.UndefOr[Any] = js.undefined
     
+    /** A boolean that specifies whether queries should be logged for 30 days further training. If false, no queries will be stored, if true, queries will be stored for 30 days and deleted thereafter. Defaults to true if no value is provided. */
     var logQueries: js.UndefOr[Boolean] = js.undefined
     
-    var styleSheet: js.UndefOr[js.Object] = js.undefined
+    /** The JSON object that holds the style sheet for the assistant */
+    var styleSheet: js.UndefOr[Any] = js.undefined
     
+    /** A user-provided string that uniquely identifies this resource as an alternative to the sid. Unique up to 64 characters long. */
+    var uniqueName: js.UndefOr[String] = js.undefined
+  }
+  object AssistantContextUpdateOptions {
+    
+    inline def apply(): AssistantContextUpdateOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[AssistantContextUpdateOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AssistantContextUpdateOptions] (val x: Self) extends AnyVal {
+      
+      inline def setCallbackEvents(value: String): Self = StObject.set(x, "callbackEvents", value.asInstanceOf[js.Any])
+      
+      inline def setCallbackEventsUndefined: Self = StObject.set(x, "callbackEvents", js.undefined)
+      
+      inline def setCallbackUrl(value: String): Self = StObject.set(x, "callbackUrl", value.asInstanceOf[js.Any])
+      
+      inline def setCallbackUrlUndefined: Self = StObject.set(x, "callbackUrl", js.undefined)
+      
+      inline def setFallbackActions(value: Any): Self = StObject.set(x, "fallbackActions", value.asInstanceOf[js.Any])
+      
+      inline def setFallbackActionsUndefined: Self = StObject.set(x, "fallbackActions", js.undefined)
+      
+      inline def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
+      
+      inline def setFriendlyNameUndefined: Self = StObject.set(x, "friendlyName", js.undefined)
+      
+      inline def setInitiationActions(value: Any): Self = StObject.set(x, "initiationActions", value.asInstanceOf[js.Any])
+      
+      inline def setInitiationActionsUndefined: Self = StObject.set(x, "initiationActions", js.undefined)
+      
+      inline def setLogQueries(value: Boolean): Self = StObject.set(x, "logQueries", value.asInstanceOf[js.Any])
+      
+      inline def setLogQueriesUndefined: Self = StObject.set(x, "logQueries", js.undefined)
+      
+      inline def setStyleSheet(value: Any): Self = StObject.set(x, "styleSheet", value.asInstanceOf[js.Any])
+      
+      inline def setStyleSheetUndefined: Self = StObject.set(x, "styleSheet", js.undefined)
+      
+      inline def setUniqueName(value: String): Self = StObject.set(x, "uniqueName", value.asInstanceOf[js.Any])
+      
+      inline def setUniqueNameUndefined: Self = StObject.set(x, "uniqueName", js.undefined)
+    }
+  }
+  
+  trait AssistantListInstanceCreateOptions extends StObject {
+    
+    /** Space-separated list of callback events that will trigger callbacks. */
+    var callbackEvents: js.UndefOr[String] = js.undefined
+    
+    /** A user-provided URL to send event callbacks to. */
+    var callbackUrl: js.UndefOr[String] = js.undefined
+    
+    /** The JSON actions to be executed when the user\\\'s input is not recognized as matching any Task. */
+    var fallbackActions: js.UndefOr[Any] = js.undefined
+    
+    /** A text description for the Assistant. It is non-unique and can up to 255 characters long. */
+    var friendlyName: js.UndefOr[String] = js.undefined
+    
+    /** The JSON actions to be executed on inbound phone calls when the Assistant has to say something first. */
+    var initiationActions: js.UndefOr[Any] = js.undefined
+    
+    /** A boolean that specifies whether queries should be logged for 30 days further training. If false, no queries will be stored, if true, queries will be stored for 30 days and deleted thereafter. Defaults to true if no value is provided. */
+    var logQueries: js.UndefOr[Boolean] = js.undefined
+    
+    /** The JSON object that holds the style sheet for the assistant */
+    var styleSheet: js.UndefOr[Any] = js.undefined
+    
+    /** A user-provided string that uniquely identifies this resource as an alternative to the sid. Unique up to 64 characters long. */
     var uniqueName: js.UndefOr[String] = js.undefined
   }
   object AssistantListInstanceCreateOptions {
@@ -559,7 +606,7 @@ object libRestPreviewUnderstandAssistantMod {
       
       inline def setCallbackUrlUndefined: Self = StObject.set(x, "callbackUrl", js.undefined)
       
-      inline def setFallbackActions(value: js.Object): Self = StObject.set(x, "fallbackActions", value.asInstanceOf[js.Any])
+      inline def setFallbackActions(value: Any): Self = StObject.set(x, "fallbackActions", value.asInstanceOf[js.Any])
       
       inline def setFallbackActionsUndefined: Self = StObject.set(x, "fallbackActions", js.undefined)
       
@@ -567,7 +614,7 @@ object libRestPreviewUnderstandAssistantMod {
       
       inline def setFriendlyNameUndefined: Self = StObject.set(x, "friendlyName", js.undefined)
       
-      inline def setInitiationActions(value: js.Object): Self = StObject.set(x, "initiationActions", value.asInstanceOf[js.Any])
+      inline def setInitiationActions(value: Any): Self = StObject.set(x, "initiationActions", value.asInstanceOf[js.Any])
       
       inline def setInitiationActionsUndefined: Self = StObject.set(x, "initiationActions", js.undefined)
       
@@ -575,7 +622,7 @@ object libRestPreviewUnderstandAssistantMod {
       
       inline def setLogQueriesUndefined: Self = StObject.set(x, "logQueries", js.undefined)
       
-      inline def setStyleSheet(value: js.Object): Self = StObject.set(x, "styleSheet", value.asInstanceOf[js.Any])
+      inline def setStyleSheet(value: Any): Self = StObject.set(x, "styleSheet", value.asInstanceOf[js.Any])
       
       inline def setStyleSheetUndefined: Self = StObject.set(x, "styleSheet", js.undefined)
       
@@ -585,26 +632,9 @@ object libRestPreviewUnderstandAssistantMod {
     }
   }
   
-  /**
-    * Options to pass to each
-    *
-    * @property callback -
-    *                         Function to process each record. If this and a positional
-    *                         callback are passed, this one will be used
-    * @property done - Function to be called upon completion of streaming
-    * @property limit -
-    *                         Upper limit for the number of records to return.
-    *                         each() guarantees never to return more than limit.
-    *                         Default is no limit
-    * @property pageSize -
-    *                         Number of records to fetch per request,
-    *                         when not set will use the default value of 50 records.
-    *                         If no pageSize is defined but a limit is defined,
-    *                         each() will attempt to read the limit with the most efficient
-    *                         page size, i.e. min(limit, 1000)
-    */
   trait AssistantListInstanceEachOptions extends StObject {
     
+    /** Function to process each record. If this and a positional callback are passed, this one will be used */
     var callback: js.UndefOr[
         js.Function2[
           /* item */ AssistantInstance, 
@@ -613,10 +643,13 @@ object libRestPreviewUnderstandAssistantMod {
         ]
       ] = js.undefined
     
+    /** Function to be called upon completion of streaming */
     var done: js.UndefOr[js.Function] = js.undefined
     
+    /** Upper limit for the number of records to return. each() guarantees never to return more than limit. Default is no limit */
     var limit: js.UndefOr[Double] = js.undefined
     
+    /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
     var pageSize: js.UndefOr[Double] = js.undefined
   }
   object AssistantListInstanceEachOptions {
@@ -649,24 +682,12 @@ object libRestPreviewUnderstandAssistantMod {
     }
   }
   
-  /**
-    * Options to pass to list
-    *
-    * @property limit -
-    *                         Upper limit for the number of records to return.
-    *                         list() guarantees never to return more than limit.
-    *                         Default is no limit
-    * @property pageSize -
-    *                         Number of records to fetch per request,
-    *                         when not set will use the default value of 50 records.
-    *                         If no page_size is defined but a limit is defined,
-    *                         list() will attempt to read the limit with the most
-    *                         efficient page size, i.e. min(limit, 1000)
-    */
   trait AssistantListInstanceOptions extends StObject {
     
+    /** Upper limit for the number of records to return. list() guarantees never to return more than limit. Default is no limit */
     var limit: js.UndefOr[Double] = js.undefined
     
+    /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
     var pageSize: js.UndefOr[Double] = js.undefined
   }
   object AssistantListInstanceOptions {
@@ -689,19 +710,15 @@ object libRestPreviewUnderstandAssistantMod {
     }
   }
   
-  /**
-    * Options to pass to page
-    *
-    * @property pageNumber - Page Number, this value is simply for client state
-    * @property pageSize - Number of records to return, defaults to 50
-    * @property pageToken - PageToken provided by the API
-    */
   trait AssistantListInstancePageOptions extends StObject {
     
+    /** Page Number, this value is simply for client state */
     var pageNumber: js.UndefOr[Double] = js.undefined
     
+    /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
     var pageSize: js.UndefOr[Double] = js.undefined
     
+    /** PageToken provided by the API */
     var pageToken: js.UndefOr[String] = js.undefined
   }
   object AssistantListInstancePageOptions {
@@ -730,32 +747,31 @@ object libRestPreviewUnderstandAssistantMod {
   
   trait AssistantPayload
     extends StObject
-       with AssistantResource
-       with TwilioResponsePayload
+       with TwilioResponsePayload {
+    
+    var assistants: js.Array[AssistantResource]
+  }
   object AssistantPayload {
     
     inline def apply(
-      account_sid: String,
-      callback_events: String,
-      callback_url: String,
-      date_created: js.Date,
-      date_updated: js.Date,
+      assistants: js.Array[AssistantResource],
       first_page_uri: String,
-      friendly_name: String,
-      latest_model_build_sid: String,
-      links: String,
-      log_queries: Boolean,
       next_page_uri: String,
       page: Double,
       page_size: Double,
       previous_page_uri: String,
-      sid: String,
-      unique_name: String,
-      uri: String,
-      url: String
+      uri: String
     ): AssistantPayload = {
-      val __obj = js.Dynamic.literal(account_sid = account_sid.asInstanceOf[js.Any], callback_events = callback_events.asInstanceOf[js.Any], callback_url = callback_url.asInstanceOf[js.Any], date_created = date_created.asInstanceOf[js.Any], date_updated = date_updated.asInstanceOf[js.Any], first_page_uri = first_page_uri.asInstanceOf[js.Any], friendly_name = friendly_name.asInstanceOf[js.Any], latest_model_build_sid = latest_model_build_sid.asInstanceOf[js.Any], links = links.asInstanceOf[js.Any], log_queries = log_queries.asInstanceOf[js.Any], next_page_uri = next_page_uri.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any], page_size = page_size.asInstanceOf[js.Any], previous_page_uri = previous_page_uri.asInstanceOf[js.Any], sid = sid.asInstanceOf[js.Any], unique_name = unique_name.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(assistants = assistants.asInstanceOf[js.Any], first_page_uri = first_page_uri.asInstanceOf[js.Any], next_page_uri = next_page_uri.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any], page_size = page_size.asInstanceOf[js.Any], previous_page_uri = previous_page_uri.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
       __obj.asInstanceOf[AssistantPayload]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AssistantPayload] (val x: Self) extends AnyVal {
+      
+      inline def setAssistants(value: js.Array[AssistantResource]): Self = StObject.set(x, "assistants", value.asInstanceOf[js.Any])
+      
+      inline def setAssistantsVarargs(value: AssistantResource*): Self = StObject.set(x, "assistants", js.Array(value*))
     }
   }
   
@@ -775,7 +791,7 @@ object libRestPreviewUnderstandAssistantMod {
     
     var latest_model_build_sid: String
     
-    var links: String
+    var links: Record[String, String]
     
     var log_queries: Boolean
     
@@ -795,7 +811,7 @@ object libRestPreviewUnderstandAssistantMod {
       date_updated: js.Date,
       friendly_name: String,
       latest_model_build_sid: String,
-      links: String,
+      links: Record[String, String],
       log_queries: Boolean,
       sid: String,
       unique_name: String,
@@ -822,7 +838,7 @@ object libRestPreviewUnderstandAssistantMod {
       
       inline def setLatest_model_build_sid(value: String): Self = StObject.set(x, "latest_model_build_sid", value.asInstanceOf[js.Any])
       
-      inline def setLinks(value: String): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
+      inline def setLinks(value: Record[String, String]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
       
       inline def setLog_queries(value: Boolean): Self = StObject.set(x, "log_queries", value.asInstanceOf[js.Any])
       

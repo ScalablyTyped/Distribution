@@ -4,6 +4,8 @@ import org.scalablytyped.runtime.Instantiable4
 import typings.std.WebGLTexture
 import typings.tensorflowTfjsCore.anon.Indices
 import typings.tensorflowTfjsCore.distOpsConvUtilMod.ExplicitPadding
+import typings.tensorflowTfjsCore.distTensorInfoMod.DataId
+import typings.tensorflowTfjsCore.distTensorInfoMod.TensorInfo
 import typings.tensorflowTfjsCore.distTypesMod.BackendValues
 import typings.tensorflowTfjsCore.distTypesMod.DataType
 import typings.tensorflowTfjsCore.distTypesMod.DataValues
@@ -53,7 +55,9 @@ object distTensorMod {
   
   @JSImport("@tensorflow/tfjs-core/dist/tensor", "Tensor")
   @js.native
-  open class Tensor[R /* <: Rank */] protected () extends StObject {
+  open class Tensor[R /* <: Rank */] protected ()
+    extends StObject
+       with TensorInfo {
     def this(
       shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
       dtype: DataType,
@@ -705,10 +709,7 @@ object distTensorMod {
       */
     def data(): js.Promise[js.typedarray.Float32Array] = js.native
     
-    /**
-      * Id of the bucket holding the data for this tensor. Multiple arrays can
-      * point to the same bucket (e.g. when calling array.reshape()).
-      */
+    /* CompleteClass */
     var dataId: DataId = js.native
     
     /**
@@ -748,12 +749,10 @@ object distTensorMod {
       *        texShape: [number, number] // [height, width]
       *     }
       *
-      *     For WebGPU backend, a GPUData contains the new buffer and
-      *     its information.
+      *     For WebGPU backend, a GPUData contains the new buffer.
       *     {
       *        tensorRef: The tensor that is associated with this buffer,
       *        buffer: GPUBuffer,
-      *        bufSize: number
       *     }
       *
       *     Remember to dispose the GPUData after it is used by
@@ -874,8 +873,8 @@ object distTensorMod {
     def dot[T /* <: Tensor[Rank] */](b: Tensor[Rank]): Tensor[Rank] = js.native
     def dot[T /* <: Tensor[Rank] */](b: TensorLike): Tensor[Rank] = js.native
     
-    /** The data type for the array. */
-    val dtype: DataType = js.native
+    /* CompleteClass */
+    var dtype: DataType = js.native
     
     def elu[T /* <: Tensor[Rank] */](): T = js.native
     
@@ -909,8 +908,12 @@ object distTensorMod {
     
     def gather[T /* <: Tensor[Rank] */](indices: Tensor[Rank]): T = js.native
     def gather[T /* <: Tensor[Rank] */](indices: Tensor[Rank], axis: Double): T = js.native
+    def gather[T /* <: Tensor[Rank] */](indices: Tensor[Rank], axis: Double, batchDims: Double): T = js.native
+    def gather[T /* <: Tensor[Rank] */](indices: Tensor[Rank], axis: Unit, batchDims: Double): T = js.native
     def gather[T /* <: Tensor[Rank] */](indices: TensorLike): T = js.native
     def gather[T /* <: Tensor[Rank] */](indices: TensorLike, axis: Double): T = js.native
+    def gather[T /* <: Tensor[Rank] */](indices: TensorLike, axis: Double, batchDims: Double): T = js.native
+    def gather[T /* <: Tensor[Rank] */](indices: TensorLike, axis: Unit, batchDims: Double): T = js.native
     
     def greater[T /* <: Tensor[Rank] */](b: Tensor[Rank]): T = js.native
     def greater[T /* <: Tensor[Rank] */](b: TensorLike): T = js.native
@@ -1540,8 +1543,11 @@ object distTensorMod {
       dataFormat: NHWC | NCHW
     ): T = js.native
     
+    /* CompleteClass */
+    var shape: js.Array[Double] = js.native
     /** The shape of the tensor. */
-    val shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any = js.native
+    @JSName("shape")
+    val shape_Tensor: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any = js.native
     
     def sigmoid[T /* <: Tensor[Rank] */](): T = js.native
     
@@ -2040,8 +2046,6 @@ object distTensorMod {
   
   trait Backend extends StObject
   
-  type DataId = js.Object
-  
   type DataToGPUOptions = DataToGPUWebGLOption
   
   trait DataToGPUWebGLOption extends StObject {
@@ -2066,8 +2070,6 @@ object distTensorMod {
   
   trait GPUData extends StObject {
     
-    var bufSize: js.UndefOr[Double] = js.undefined
-    
     var buffer: js.UndefOr[GPUBuffer] = js.undefined
     
     var tensorRef: Tensor[Rank]
@@ -2085,10 +2087,6 @@ object distTensorMod {
     
     @scala.inline
     implicit open class MutableBuilder[Self <: GPUData] (val x: Self) extends AnyVal {
-      
-      inline def setBufSize(value: Double): Self = StObject.set(x, "bufSize", value.asInstanceOf[js.Any])
-      
-      inline def setBufSizeUndefined: Self = StObject.set(x, "bufSize", js.undefined)
       
       inline def setBuffer(value: GPUBuffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       

@@ -17,7 +17,7 @@ trait GetApplicationVersionResponse extends StObject {
   var creationTime: js.Date
   
   /**
-    * The content of the application definition. This is a JSON object that contains the resource configuration/definitions that identify an application.
+    * The content of the application definition. This is a JSON object that contains the resource configuration and definitions that identify an application.
     */
   var definitionContent: StringFree65000
   

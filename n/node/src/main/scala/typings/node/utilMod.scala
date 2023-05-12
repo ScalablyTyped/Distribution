@@ -9,11 +9,13 @@ import typings.node.anon.Index
 import typings.node.anon.Kind
 import typings.node.anon.Positionals
 import typings.node.anon.Stream
+import typings.node.anon.ToString
 import typings.node.anon.Values
 import typings.node.nodeStrings.boolean
 import typings.node.nodeStrings.get
 import typings.node.nodeStrings.set
 import typings.node.nodeStrings.string
+import typings.std.IterableIterator
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -24,6 +26,91 @@ object utilMod {
   @JSImport("util", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
+  
+  @JSImport("util", "MIMEParams")
+  @js.native
+  open class MIMEParams () extends StObject {
+    
+    /**
+      * Remove all name-value pairs whose name is `name`.
+      */
+    def delete(name: String): Unit = js.native
+    
+    /**
+      * Returns an iterator over each of the name-value pairs in the parameters.
+      */
+    def entries(): IterableIterator[js.Tuple2[/* name */ String, /* value */ String]] = js.native
+    
+    /**
+      * Returns the value of the first name-value pair whose name is `name`.
+      * If there are no such pairs, `null` is returned.
+      */
+    def get(name: String): String | Null = js.native
+    
+    /**
+      * Returns `true` if there is at least one name-value pair whose name is `name`.
+      */
+    def has(name: String): Boolean = js.native
+    
+    /**
+      * Returns an iterator over each of the name-value pairs in the parameters.
+      */
+    @JSName(js.Symbol.iterator)
+    var iterator: js.Function0[IterableIterator[js.Tuple2[/* name */ String, /* value */ String]]] = js.native
+    
+    /**
+      * Returns an iterator over the names of each name-value pair.
+      */
+    def keys(): IterableIterator[String] = js.native
+    
+    /**
+      * Sets the value in the `MIMEParams` object associated with `name` to `value`.
+      * If there are any pre-existing name-value pairs whose names are `name`,
+      * set the first such pair's value to `value`.
+      */
+    def set(name: String, value: String): Unit = js.native
+    
+    /**
+      * Returns an iterator over the values of each name-value pair.
+      */
+    def values(): IterableIterator[String] = js.native
+  }
+  
+  @JSImport("util", "MIMEType")
+  @js.native
+  open class MIMEType protected () extends StObject {
+    /**
+      * Creates a new MIMEType object by parsing the input.
+      *
+      * A `TypeError` will be thrown if the `input` is not a valid MIME.
+      * Note that an effort will be made to coerce the given values into strings.
+      * @param input The input MIME to parse.
+      */
+    def this(input: String) = this()
+    def this(input: ToString) = this()
+    
+    /**
+      * Gets the essence of the MIME.
+      *
+      * Use `mime.type` or `mime.subtype` to alter the MIME.
+      */
+    val essence: String = js.native
+    
+    /**
+      * Gets the `MIMEParams` object representing the parameters of the MIME.
+      */
+    val params: MIMEParams = js.native
+    
+    /**
+      * Gets and sets the subtype portion of the MIME.
+      */
+    var subtype: String = js.native
+    
+    /**
+      * Gets and sets the type portion of the MIME.
+      */
+    var `type`: String = js.native
+  }
   
   @JSImport("util", "TextDecoder")
   @js.native
@@ -38,7 +125,7 @@ object utilMod {
       * internally and emitted after the next call to `textDecoder.decode()`.
       *
       * If `textDecoder.fatal` is `true`, decoding errors that occur will result in a`TypeError` being thrown.
-      * @param input An `ArrayBuffer`, `DataView` or `TypedArray` instance containing the encoded data.
+      * @param input An `ArrayBuffer`, `DataView`, or `TypedArray` instance containing the encoded data.
       */
     def decode(): String = js.native
     def decode(input: js.typedarray.ArrayBuffer): String = js.native
@@ -98,6 +185,8 @@ object utilMod {
       */
     val encoding: String = js.native
   }
+  
+  inline def aborted(signal: AbortSignal, resource: Any): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("aborted")(signal.asInstanceOf[js.Any], resource.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   inline def callbackify(fn: js.Function0[js.Promise[Unit]]): js.Function1[/* callback */ js.Function1[/* err */ ErrnoException, Unit], Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("callbackify")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* callback */ js.Function1[/* err */ ErrnoException, Unit], Unit]]
   inline def callbackify[T1](fn: js.Function1[/* arg1 */ T1, js.Promise[Unit]]): js.Function2[/* arg1 */ T1, /* callback */ js.Function1[/* err */ ErrnoException, Unit], Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("callbackify")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* arg1 */ T1, /* callback */ js.Function1[/* err */ ErrnoException, Unit], Unit]]
@@ -506,6 +595,7 @@ object utilMod {
   
   inline def log(string: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(string.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
+  inline def parseArgs[T /* <: ParseArgsConfig */](): ParsedResults[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseArgs")().asInstanceOf[ParsedResults[T]]
   inline def parseArgs[T /* <: ParseArgsConfig */](config: T): ParsedResults[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseArgs")(config.asInstanceOf[js.Any]).asInstanceOf[ParsedResults[T]]
   
   object promisify {
@@ -589,7 +679,7 @@ object utilMod {
   
   inline def transferableAbortSignal(signal: AbortSignal): AbortSignal = ^.asInstanceOf[js.Dynamic].applyDynamic("transferableAbortSignal")(signal.asInstanceOf[js.Any]).asInstanceOf[AbortSignal]
   
-  type CustomInspectFunction = js.Function2[/* depth */ Double, /* options */ InspectOptionsStylized, String]
+  type CustomInspectFunction = js.Function2[/* depth */ Double, /* options */ InspectOptionsStylized, Any]
   
   /* Rewritten from type alias, can be one of: 
     - typings.node.utilMod.CustomPromisifySymbol[TCustom]
@@ -688,8 +778,17 @@ object utilMod {
   
   trait InspectOptions extends StObject {
     
+    /**
+      * The length at which input values are split across multiple lines.
+      * Set to `Infinity` to format the input as a single line
+      * (in combination with `compact` set to `true` or any number >= `1`).
+      * @default 80
+      */
     var breakLength: js.UndefOr[Double] = js.undefined
     
+    /**
+      * If `true`, the output is styled with ANSI color codes. Colors are customizable.
+      */
     var colors: js.UndefOr[Boolean] = js.undefined
     
     /**
@@ -700,13 +799,20 @@ object utilMod {
       * `breakLength`. Short array elements are also grouped together. Note that no
       * text will be reduced below 16 characters, no matter the `breakLength` size.
       * For more information, see the example below.
-      * @default `true`
+      * @default true
       */
     var compact: js.UndefOr[Boolean | Double] = js.undefined
     
+    /**
+      * If `false`, `[util.inspect.custom](depth, opts, inspect)` functions are not invoked.
+      * @default true
+      */
     var customInspect: js.UndefOr[Boolean] = js.undefined
     
     /**
+      * Specifies the number of times to recurse while formatting object.
+      * This is useful for inspecting large objects.
+      * To recurse up to the maximum call stack size pass `Infinity` or `null`.
       * @default 2
       */
     var depth: js.UndefOr[Double | Null] = js.undefined
@@ -717,10 +823,16 @@ object utilMod {
       * to be inspected. If set to `'set'` only getters having a corresponding
       * setter are going to be inspected. This might cause side effects depending on
       * the getter function.
-      * @default `false`
+      * @default false
       */
     var getters: js.UndefOr[get | set | Boolean] = js.undefined
     
+    /**
+      * Specifies the maximum number of `Array`, `TypedArray`, `WeakMap`, and `WeakSet` elements
+      * to include when formatting. Set to `null` or `Infinity` to show all elements.
+      * Set to `0` or negative to show no elements.
+      * @default 100
+      */
     var maxArrayLength: js.UndefOr[Double | Null] = js.undefined
     
     /**
@@ -731,10 +843,31 @@ object utilMod {
       */
     var maxStringLength: js.UndefOr[Double | Null] = js.undefined
     
+    /**
+      * If set to `true`, an underscore is used to separate every three digits in all bigints and numbers.
+      * @default false
+      */
+    var numericSeparator: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * If `true`, object's non-enumerable symbols and properties are included in the formatted result.
+      * `WeakMap` and `WeakSet` entries are also included as well as user defined prototype properties (excluding method properties).
+      * @default false
+      */
     var showHidden: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * If `true`, `Proxy` inspection includes the target and handler objects.
+      * @default false
+      */
     var showProxy: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * If set to `true` or a function, all properties of an object, and `Set` and `Map`
+      * entries are sorted in the resulting string.
+      * If set to `true` the default sort is used.
+      * If set to a function, it is used as a compare function.
+      */
     var sorted: js.UndefOr[Boolean | (js.Function2[/* a */ String, /* b */ String, Double])] = js.undefined
   }
   object InspectOptions {
@@ -784,6 +917,10 @@ object utilMod {
       inline def setMaxStringLengthNull: Self = StObject.set(x, "maxStringLength", null)
       
       inline def setMaxStringLengthUndefined: Self = StObject.set(x, "maxStringLength", js.undefined)
+      
+      inline def setNumericSeparator(value: Boolean): Self = StObject.set(x, "numericSeparator", value.asInstanceOf[js.Any])
+      
+      inline def setNumericSeparatorUndefined: Self = StObject.set(x, "numericSeparator", js.undefined)
       
       inline def setShowHidden(value: Boolean): Self = StObject.set(x, "showHidden", value.asInstanceOf[js.Any])
       
@@ -843,14 +980,33 @@ object utilMod {
   
   trait ParseArgsConfig extends StObject {
     
+    /**
+      * Whether this command accepts positional arguments.
+      */
     var allowPositionals: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Array of argument strings.
+      */
     var args: js.UndefOr[js.Array[String]] = js.undefined
     
+    /**
+      * Used to describe arguments known to the parser.
+      */
     var options: js.UndefOr[ParseArgsOptionsConfig] = js.undefined
     
+    /**
+      * Should an error be thrown when unknown arguments are encountered,
+      * or when arguments are passed that do not match the `type` configured in `options`.
+      * @default true
+      */
     var strict: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Return the parsed tokens. This is useful for extending the built-in behavior,
+      * from adding additional checks through to reprocessing the tokens in different ways.
+      * @default false
+      */
     var tokens: js.UndefOr[Boolean] = js.undefined
   }
   object ParseArgsConfig {
@@ -890,14 +1046,29 @@ object utilMod {
   trait ParseArgsOptionConfig extends StObject {
     
     /**
+      * The default option value when it is not set by args.
+      * It must be of the same type as the the `type` property.
+      * When `multiple` is `true`, it must be an array.
       * @since v18.11.0
       */
     var default: js.UndefOr[String | Boolean | (js.Array[Boolean | String])] = js.undefined
     
+    /**
+      * Whether this option can be provided multiple times.
+      * If `true`, all values will be collected in an array.
+      * If `false`, values for the option are last-wins.
+      * @default false.
+      */
     var multiple: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * A single character alias for the option.
+      */
     var short: js.UndefOr[String] = js.undefined
     
+    /**
+      * Type of argument.
+      */
     var `type`: string | boolean
   }
   object ParseArgsOptionConfig {

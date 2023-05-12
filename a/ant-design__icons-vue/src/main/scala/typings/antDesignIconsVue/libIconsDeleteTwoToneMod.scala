@@ -16,7 +16,7 @@ object libIconsDeleteTwoToneMod extends Shortcut {
   @js.native
   trait DeleteTwoToneIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_DeleteTwoToneIconType: String = js.native

@@ -1,6 +1,6 @@
 package typings.cfcsCore
 
-import typings.cfcsCore.declarationReactiveReactiveSubscribeMod.ReactiveSubscribe
+import typings.cfcsCore.declarationReactiveDecoratorsReactiveSubscribeMod.ReactiveSubscribe
 import typings.cfcsCore.declarationReactiveTypesMod.ReactiveEventCallback
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -9,9 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
-  trait Destroy[State /* <: Record[String, Any] */, Instance /* <: ReactiveSubscribe[Record[String, Any]] */] extends StObject {
+  trait Destroy[Events /* <: Record[String, Any] */, State /* <: Record[String, Any] */, Instance /* <: ReactiveSubscribe[Record[String, Any]] */] extends StObject {
     
     def destroy(): Unit
+    
+    def events(): js.Array[/* keyof Events */ String]
     
     def init(): Unit
     
@@ -29,8 +31,9 @@ object anon {
   }
   object Destroy {
     
-    inline def apply[State /* <: Record[String, Any] */, Instance /* <: ReactiveSubscribe[Record[String, Any]] */](
+    inline def apply[Events /* <: Record[String, Any] */, State /* <: Record[String, Any] */, Instance /* <: ReactiveSubscribe[Record[String, Any]] */](
       destroy: () => Unit,
+      events: () => js.Array[/* keyof Events */ String],
       init: () => Unit,
       instance: () => Instance,
       methods: () => Any,
@@ -38,15 +41,17 @@ object anon {
       off: (String, ReactiveEventCallback[Any, Any]) => Unit,
       on: (String, ReactiveEventCallback[Any, Any]) => Unit,
       state: () => State
-    ): Destroy[State, Instance] = {
-      val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), init = js.Any.fromFunction0(init), instance = js.Any.fromFunction0(instance), methods = js.Any.fromFunction0(methods), mounted = js.Any.fromFunction0(mounted), off = js.Any.fromFunction2(off), on = js.Any.fromFunction2(on), state = js.Any.fromFunction0(state))
-      __obj.asInstanceOf[Destroy[State, Instance]]
+    ): Destroy[Events, State, Instance] = {
+      val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), events = js.Any.fromFunction0(events), init = js.Any.fromFunction0(init), instance = js.Any.fromFunction0(instance), methods = js.Any.fromFunction0(methods), mounted = js.Any.fromFunction0(mounted), off = js.Any.fromFunction2(off), on = js.Any.fromFunction2(on), state = js.Any.fromFunction0(state))
+      __obj.asInstanceOf[Destroy[Events, State, Instance]]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: Destroy[?, ?], State /* <: Record[String, Any] */, Instance /* <: ReactiveSubscribe[Record[String, Any]] */] (val x: Self & (Destroy[State, Instance])) extends AnyVal {
+    implicit open class MutableBuilder[Self <: Destroy[?, ?, ?], Events /* <: Record[String, Any] */, State /* <: Record[String, Any] */, Instance /* <: ReactiveSubscribe[Record[String, Any]] */] (val x: Self & (Destroy[Events, State, Instance])) extends AnyVal {
       
       inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      
+      inline def setEvents(value: () => js.Array[/* keyof Events */ String]): Self = StObject.set(x, "events", js.Any.fromFunction0(value))
       
       inline def setInit(value: () => Unit): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
       

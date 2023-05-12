@@ -19,6 +19,14 @@ object globaloffensiveStrings {
   inline def connectionStatus: connectionStatus = "connectionStatus".asInstanceOf[connectionStatus]
   
   @js.native
+  sealed trait craftingComplete extends StObject
+  inline def craftingComplete: craftingComplete = "craftingComplete".asInstanceOf[craftingComplete]
+  
+  @js.native
+  sealed trait debug extends StObject
+  inline def debug: debug = "debug".asInstanceOf[debug]
+  
+  @js.native
   sealed trait disconnectedFromGC extends StObject
   inline def disconnectedFromGC: disconnectedFromGC = "disconnectedFromGC".asInstanceOf[disconnectedFromGC]
   

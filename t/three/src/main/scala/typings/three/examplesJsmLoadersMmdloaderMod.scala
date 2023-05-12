@@ -4,6 +4,7 @@ import typings.std.ErrorEvent
 import typings.std.EventTarget
 import typings.std.ProgressEvent
 import typings.three.srcCoreBufferGeometryMod.BufferGeometry
+import typings.three.srcCoreBufferGeometryMod.NormalBufferAttributes
 import typings.three.srcMaterialsMaterialMod.Material
 import typings.three.srcThreeMod.AnimationClip
 import typings.three.srcThreeMod.Camera
@@ -28,22 +29,34 @@ object examplesJsmLoadersMmdloaderMod {
     
     def load(
       url: String,
-      onLoad: js.Function1[/* mesh */ SkinnedMesh[BufferGeometry, Material | js.Array[Material]], Unit]
+      onLoad: js.Function1[
+          /* mesh */ SkinnedMesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]], 
+          Unit
+        ]
     ): Unit = js.native
     def load(
       url: String,
-      onLoad: js.Function1[/* mesh */ SkinnedMesh[BufferGeometry, Material | js.Array[Material]], Unit],
+      onLoad: js.Function1[
+          /* mesh */ SkinnedMesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]], 
+          Unit
+        ],
       onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit]
     ): Unit = js.native
     def load(
       url: String,
-      onLoad: js.Function1[/* mesh */ SkinnedMesh[BufferGeometry, Material | js.Array[Material]], Unit],
+      onLoad: js.Function1[
+          /* mesh */ SkinnedMesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]], 
+          Unit
+        ],
       onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit],
       onError: js.Function1[/* event */ ErrorEvent, Unit]
     ): Unit = js.native
     def load(
       url: String,
-      onLoad: js.Function1[/* mesh */ SkinnedMesh[BufferGeometry, Material | js.Array[Material]], Unit],
+      onLoad: js.Function1[
+          /* mesh */ SkinnedMesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]], 
+          Unit
+        ],
       onProgress: Unit,
       onError: js.Function1[/* event */ ErrorEvent, Unit]
     ): Unit = js.native
@@ -52,7 +65,7 @@ object examplesJsmLoadersMmdloaderMod {
       url: String,
       `object`: Camera,
       onLoad: js.Function1[
-          /* object */ (SkinnedMesh[BufferGeometry, Material | js.Array[Material]]) | AnimationClip, 
+          /* object */ (SkinnedMesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]]) | AnimationClip, 
           Unit
         ]
     ): Unit = js.native
@@ -60,7 +73,7 @@ object examplesJsmLoadersMmdloaderMod {
       url: String,
       `object`: Camera,
       onLoad: js.Function1[
-          /* object */ (SkinnedMesh[BufferGeometry, Material | js.Array[Material]]) | AnimationClip, 
+          /* object */ (SkinnedMesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]]) | AnimationClip, 
           Unit
         ],
       onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit]
@@ -69,7 +82,7 @@ object examplesJsmLoadersMmdloaderMod {
       url: String,
       `object`: Camera,
       onLoad: js.Function1[
-          /* object */ (SkinnedMesh[BufferGeometry, Material | js.Array[Material]]) | AnimationClip, 
+          /* object */ (SkinnedMesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]]) | AnimationClip, 
           Unit
         ],
       onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit],
@@ -79,7 +92,7 @@ object examplesJsmLoadersMmdloaderMod {
       url: String,
       `object`: Camera,
       onLoad: js.Function1[
-          /* object */ (SkinnedMesh[BufferGeometry, Material | js.Array[Material]]) | AnimationClip, 
+          /* object */ (SkinnedMesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]]) | AnimationClip, 
           Unit
         ],
       onProgress: Unit,
@@ -87,26 +100,26 @@ object examplesJsmLoadersMmdloaderMod {
     ): Unit = js.native
     def loadAnimation(
       url: String,
-      `object`: SkinnedMesh[BufferGeometry, Material | js.Array[Material]],
+      `object`: SkinnedMesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]],
       onLoad: js.Function1[
-          /* object */ (SkinnedMesh[BufferGeometry, Material | js.Array[Material]]) | AnimationClip, 
+          /* object */ (SkinnedMesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]]) | AnimationClip, 
           Unit
         ]
     ): Unit = js.native
     def loadAnimation(
       url: String,
-      `object`: SkinnedMesh[BufferGeometry, Material | js.Array[Material]],
+      `object`: SkinnedMesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]],
       onLoad: js.Function1[
-          /* object */ (SkinnedMesh[BufferGeometry, Material | js.Array[Material]]) | AnimationClip, 
+          /* object */ (SkinnedMesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]]) | AnimationClip, 
           Unit
         ],
       onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit]
     ): Unit = js.native
     def loadAnimation(
       url: String,
-      `object`: SkinnedMesh[BufferGeometry, Material | js.Array[Material]],
+      `object`: SkinnedMesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]],
       onLoad: js.Function1[
-          /* object */ (SkinnedMesh[BufferGeometry, Material | js.Array[Material]]) | AnimationClip, 
+          /* object */ (SkinnedMesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]]) | AnimationClip, 
           Unit
         ],
       onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit],
@@ -114,14 +127,21 @@ object examplesJsmLoadersMmdloaderMod {
     ): Unit = js.native
     def loadAnimation(
       url: String,
-      `object`: SkinnedMesh[BufferGeometry, Material | js.Array[Material]],
+      `object`: SkinnedMesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]],
       onLoad: js.Function1[
-          /* object */ (SkinnedMesh[BufferGeometry, Material | js.Array[Material]]) | AnimationClip, 
+          /* object */ (SkinnedMesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]]) | AnimationClip, 
           Unit
         ],
       onProgress: Unit,
       onError: js.Function1[/* event */ ErrorEvent, Unit]
     ): Unit = js.native
+    
+    def loadAsync(url: String): js.Promise[
+        SkinnedMesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]]
+      ] = js.native
+    def loadAsync(url: String, onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit]): js.Promise[
+        SkinnedMesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]]
+      ] = js.native
     
     def loadPMD(url: String, onLoad: js.Function1[/* object */ js.Object, Unit]): Unit = js.native
     def loadPMD(
@@ -262,11 +282,14 @@ object examplesJsmLoadersMmdloaderMod {
     
     var animation: AnimationClip
     
-    var mesh: SkinnedMesh[BufferGeometry, Material | js.Array[Material]]
+    var mesh: SkinnedMesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]]
   }
   object MMDLoaderAnimationObject {
     
-    inline def apply(animation: AnimationClip, mesh: SkinnedMesh[BufferGeometry, Material | js.Array[Material]]): MMDLoaderAnimationObject = {
+    inline def apply(
+      animation: AnimationClip,
+      mesh: SkinnedMesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]]
+    ): MMDLoaderAnimationObject = {
       val __obj = js.Dynamic.literal(animation = animation.asInstanceOf[js.Any], mesh = mesh.asInstanceOf[js.Any])
       __obj.asInstanceOf[MMDLoaderAnimationObject]
     }
@@ -276,7 +299,7 @@ object examplesJsmLoadersMmdloaderMod {
       
       inline def setAnimation(value: AnimationClip): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
-      inline def setMesh(value: SkinnedMesh[BufferGeometry, Material | js.Array[Material]]): Self = StObject.set(x, "mesh", value.asInstanceOf[js.Any])
+      inline def setMesh(value: SkinnedMesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]]): Self = StObject.set(x, "mesh", value.asInstanceOf[js.Any])
     }
   }
 }

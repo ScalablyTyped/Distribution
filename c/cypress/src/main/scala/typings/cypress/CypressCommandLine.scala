@@ -6,6 +6,7 @@ import typings.cypress.Cypress.TestingType
 import typings.cypress.anon.Absolute
 import typings.cypress.anon.EndedAt
 import typings.cypress.anon.PartialCypressRunOptions
+import typings.cypress.cypressBooleans.`false`
 import typings.cypress.cypressStrings.failed
 import typings.cypress.cypressStrings.finished
 import org.scalablytyped.runtime.StObject
@@ -291,6 +292,11 @@ object CypressCommandLine {
        with CypressCommonOptions {
     
     /**
+      * Specify the number of failures to cancel a run being recorded to the Cloud or false to disable auto-cancellation.
+      */
+    var autoCancelAfterFailures: Double | `false`
+    
+    /**
       * Specify browser to run tests in, either by name or by filesystem path
       */
     var browser: String
@@ -368,6 +374,7 @@ object CypressCommandLine {
   object CypressRunOptions {
     
     inline def apply(
+      autoCancelAfterFailures: Double | `false`,
       browser: String,
       ciBuildId: String,
       config: ConfigOptions[Any],
@@ -389,12 +396,14 @@ object CypressCommandLine {
       tag: String,
       testingType: TestingType
     ): CypressRunOptions = {
-      val __obj = js.Dynamic.literal(browser = browser.asInstanceOf[js.Any], ciBuildId = ciBuildId.asInstanceOf[js.Any], config = config.asInstanceOf[js.Any], configFile = configFile.asInstanceOf[js.Any], env = env.asInstanceOf[js.Any], group = group.asInstanceOf[js.Any], headed = headed.asInstanceOf[js.Any], headless = headless.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], noExit = noExit.asInstanceOf[js.Any], parallel = parallel.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any], quiet = quiet.asInstanceOf[js.Any], record = record.asInstanceOf[js.Any], reporter = reporter.asInstanceOf[js.Any], reporterOptions = reporterOptions.asInstanceOf[js.Any], spec = spec.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any], testingType = testingType.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(autoCancelAfterFailures = autoCancelAfterFailures.asInstanceOf[js.Any], browser = browser.asInstanceOf[js.Any], ciBuildId = ciBuildId.asInstanceOf[js.Any], config = config.asInstanceOf[js.Any], configFile = configFile.asInstanceOf[js.Any], env = env.asInstanceOf[js.Any], group = group.asInstanceOf[js.Any], headed = headed.asInstanceOf[js.Any], headless = headless.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], noExit = noExit.asInstanceOf[js.Any], parallel = parallel.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any], quiet = quiet.asInstanceOf[js.Any], record = record.asInstanceOf[js.Any], reporter = reporter.asInstanceOf[js.Any], reporterOptions = reporterOptions.asInstanceOf[js.Any], spec = spec.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any], testingType = testingType.asInstanceOf[js.Any])
       __obj.asInstanceOf[CypressRunOptions]
     }
     
     @scala.inline
     implicit open class MutableBuilder[Self <: CypressRunOptions] (val x: Self) extends AnyVal {
+      
+      inline def setAutoCancelAfterFailures(value: Double | `false`): Self = StObject.set(x, "autoCancelAfterFailures", value.asInstanceOf[js.Any])
       
       inline def setBrowser(value: String): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
       
@@ -619,6 +628,8 @@ object CypressCommandLine {
     
     var shouldUploadVideo: Boolean
     
+    var skippedSpec: Boolean
+    
     /**
       * information about the spec test file.
       */
@@ -640,11 +651,12 @@ object CypressCommandLine {
       reporter: String,
       reporterStats: js.Object,
       shouldUploadVideo: Boolean,
+      skippedSpec: Boolean,
       spec: Absolute,
       stats: EndedAt,
       tests: js.Array[TestResult]
     ): RunResult = {
-      val __obj = js.Dynamic.literal(hooks = hooks.asInstanceOf[js.Any], reporter = reporter.asInstanceOf[js.Any], reporterStats = reporterStats.asInstanceOf[js.Any], shouldUploadVideo = shouldUploadVideo.asInstanceOf[js.Any], spec = spec.asInstanceOf[js.Any], stats = stats.asInstanceOf[js.Any], tests = tests.asInstanceOf[js.Any], error = null, video = null)
+      val __obj = js.Dynamic.literal(hooks = hooks.asInstanceOf[js.Any], reporter = reporter.asInstanceOf[js.Any], reporterStats = reporterStats.asInstanceOf[js.Any], shouldUploadVideo = shouldUploadVideo.asInstanceOf[js.Any], skippedSpec = skippedSpec.asInstanceOf[js.Any], spec = spec.asInstanceOf[js.Any], stats = stats.asInstanceOf[js.Any], tests = tests.asInstanceOf[js.Any], error = null, video = null)
       __obj.asInstanceOf[RunResult]
     }
     
@@ -664,6 +676,8 @@ object CypressCommandLine {
       inline def setReporterStats(value: js.Object): Self = StObject.set(x, "reporterStats", value.asInstanceOf[js.Any])
       
       inline def setShouldUploadVideo(value: Boolean): Self = StObject.set(x, "shouldUploadVideo", value.asInstanceOf[js.Any])
+      
+      inline def setSkippedSpec(value: Boolean): Self = StObject.set(x, "skippedSpec", value.asInstanceOf[js.Any])
       
       inline def setSpec(value: Absolute): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
       

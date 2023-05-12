@@ -27,7 +27,27 @@ trait CreateNatGatewayRequest extends StObject {
   var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The subnet in which to create the NAT gateway.
+    * The private IPv4 address to assign to the NAT gateway. If you don't provide an address, a private IPv4 address will be automatically assigned.
+    */
+  var PrivateIpAddress: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Secondary EIP allocation IDs. For more information about secondary addresses, see Create a NAT gateway in the Amazon Virtual Private Cloud User Guide.
+    */
+  var SecondaryAllocationIds: js.UndefOr[AllocationIdList] = js.undefined
+  
+  /**
+    * [Private NAT gateway only] The number of secondary private IPv4 addresses you want to assign to the NAT gateway. For more information about secondary addresses, see Create a NAT gateway in the Amazon Virtual Private Cloud User Guide.
+    */
+  var SecondaryPrivateIpAddressCount: js.UndefOr[PrivateIpAddressCount] = js.undefined
+  
+  /**
+    * Secondary private IPv4 addresses. For more information about secondary addresses, see Create a NAT gateway in the Amazon Virtual Private Cloud User Guide.
+    */
+  var SecondaryPrivateIpAddresses: js.UndefOr[IpList] = js.undefined
+  
+  /**
+    * The ID of the subnet in which to create the NAT gateway.
     */
   var SubnetId: typings.awsSdk.clientsEc2Mod.SubnetId
   
@@ -61,6 +81,26 @@ object CreateNatGatewayRequest {
     inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
     inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    
+    inline def setPrivateIpAddress(value: String): Self = StObject.set(x, "PrivateIpAddress", value.asInstanceOf[js.Any])
+    
+    inline def setPrivateIpAddressUndefined: Self = StObject.set(x, "PrivateIpAddress", js.undefined)
+    
+    inline def setSecondaryAllocationIds(value: AllocationIdList): Self = StObject.set(x, "SecondaryAllocationIds", value.asInstanceOf[js.Any])
+    
+    inline def setSecondaryAllocationIdsUndefined: Self = StObject.set(x, "SecondaryAllocationIds", js.undefined)
+    
+    inline def setSecondaryAllocationIdsVarargs(value: AllocationId*): Self = StObject.set(x, "SecondaryAllocationIds", js.Array(value*))
+    
+    inline def setSecondaryPrivateIpAddressCount(value: PrivateIpAddressCount): Self = StObject.set(x, "SecondaryPrivateIpAddressCount", value.asInstanceOf[js.Any])
+    
+    inline def setSecondaryPrivateIpAddressCountUndefined: Self = StObject.set(x, "SecondaryPrivateIpAddressCount", js.undefined)
+    
+    inline def setSecondaryPrivateIpAddresses(value: IpList): Self = StObject.set(x, "SecondaryPrivateIpAddresses", value.asInstanceOf[js.Any])
+    
+    inline def setSecondaryPrivateIpAddressesUndefined: Self = StObject.set(x, "SecondaryPrivateIpAddresses", js.undefined)
+    
+    inline def setSecondaryPrivateIpAddressesVarargs(value: String*): Self = StObject.set(x, "SecondaryPrivateIpAddresses", js.Array(value*))
     
     inline def setSubnetId(value: SubnetId): Self = StObject.set(x, "SubnetId", value.asInstanceOf[js.Any])
     

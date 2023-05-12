@@ -26,25 +26,26 @@ trait DataLabelsOptions extends StObject {
     * (Highcharts, Highstock, Gantt) Enable or disable the initial animation
     * when a series is displayed for the `dataLabels`. The animation can also
     * be set as a configuration object. Please note that this option only
-    * applies to the initial animation. For other animations, see
-    * chart.animation and the animation parameter under the API methods. The
-    * following properties are supported:
+    * applies to the initial animation.
+    *
+    * For other animations, see chart.animation and the animation parameter
+    * under the API methods. The following properties are supported:
     *
     * - `defer`: The animation delay time in milliseconds.
     */
   var animation: js.UndefOr[
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 58, starting with scala.Boolean, typings.highcharts.mod.SeriesArcdiagramDataDataLabelsAnimationOptions, typings.highcharts.mod.SeriesAreaDataDataLabelsAnimationOptions */ Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 56, starting with scala.Boolean, typings.highcharts.mod.SeriesAreaDataDataLabelsAnimationOptions, typings.highcharts.mod.SeriesArearangeDataDataLabelsAnimationOptions */ Any
   ] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) The background color or gradient for the
-    * data label.
+    * data label. Setting it to `auto` will use the point's color.
     */
   var backgroundColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) The border color for the data label.
-    * Defaults to `undefined`.
+    * Setting it to `auto` will use the point's color. Defaults to `undefined`.
     */
   var borderColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
@@ -96,10 +97,9 @@ trait DataLabelsOptions extends StObject {
     * (Highcharts, Highstock, Gantt) Whether to defer displaying the data
     * labels until the initial series animation has finished. Setting to
     * `false` renders the data label immediately. If set to `true` inherits the
-    * defer time set in plotOptions.series.animation. If set to a number, a
-    * defer time is specified in milliseconds.
+    * defer time set in plotOptions.series.animation.
     */
-  var defer: js.UndefOr[Boolean | Double] = js.undefined
+  var defer: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) Enable or disable the data labels.
@@ -310,7 +310,7 @@ object DataLabelsOptions {
     inline def setAllowOverlapUndefined: Self = StObject.set(x, "allowOverlap", js.undefined)
     
     inline def setAnimation(
-      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 58, starting with scala.Boolean, typings.highcharts.mod.SeriesArcdiagramDataDataLabelsAnimationOptions, typings.highcharts.mod.SeriesAreaDataDataLabelsAnimationOptions */ Any
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 56, starting with scala.Boolean, typings.highcharts.mod.SeriesAreaDataDataLabelsAnimationOptions, typings.highcharts.mod.SeriesArearangeDataDataLabelsAnimationOptions */ Any
     ): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
     inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
@@ -343,7 +343,7 @@ object DataLabelsOptions {
     
     inline def setCropUndefined: Self = StObject.set(x, "crop", js.undefined)
     
-    inline def setDefer(value: Boolean | Double): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
+    inline def setDefer(value: Boolean): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
     
     inline def setDeferUndefined: Self = StObject.set(x, "defer", js.undefined)
     

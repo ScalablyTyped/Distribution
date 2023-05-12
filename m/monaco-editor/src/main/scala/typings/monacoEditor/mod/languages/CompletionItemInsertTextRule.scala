@@ -31,4 +31,10 @@ object CompletionItemInsertTextRule extends StObject {
     extends StObject
        with CompletionItemInsertTextRule
   /* 1 */ val KeepWhitespace: typings.monacoEditor.mod.languages.CompletionItemInsertTextRule.KeepWhitespace & Double = js.native
+  
+  @js.native
+  sealed trait None
+    extends StObject
+       with CompletionItemInsertTextRule
+  /* 0 */ val None: typings.monacoEditor.mod.languages.CompletionItemInsertTextRule.None & Double = js.native
 }

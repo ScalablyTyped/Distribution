@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "p-map" : "5.5.0"
+      "p-map" : "6.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "p-map" : "5.5.0"
+      "p-map" : "6.0.0"
     }
   ],
   "compile-devDependencies" : [

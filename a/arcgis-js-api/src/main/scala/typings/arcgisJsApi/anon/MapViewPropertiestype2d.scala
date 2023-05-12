@@ -23,10 +23,10 @@ import typings.arcgisJsApi.esri.DefaultUIProperties
 import typings.arcgisJsApi.esri.Error
 import typings.arcgisJsApi.esri.ExtentProperties
 import typings.arcgisJsApi.esri.GraphicProperties
+import typings.arcgisJsApi.esri.HighlightOptions
 import typings.arcgisJsApi.esri.LayerViewProperties
 import typings.arcgisJsApi.esri.MapProperties
 import typings.arcgisJsApi.esri.MapViewConstraints
-import typings.arcgisJsApi.esri.MapViewHighlightOptionsProperties
 import typings.arcgisJsApi.esri.NavigationProperties
 import typings.arcgisJsApi.esri.PopupProperties
 import typings.arcgisJsApi.esri.SpatialReferenceProperties
@@ -142,7 +142,7 @@ trait MapViewPropertiestype2d extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#highlightOptions)
     */
-  var highlightOptions: js.UndefOr[MapViewHighlightOptionsProperties] = js.undefined
+  var highlightOptions: js.UndefOr[HighlightOptions] = js.undefined
   
   /**
     * A collection containing a hierarchical list of all the created [LayerViews](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-LayerView.html) of the [operational layers](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html#layers) in the map.
@@ -336,7 +336,7 @@ object MapViewPropertiestype2d {
     
     inline def setHeightBreakpointUndefined: Self = StObject.set(x, "heightBreakpoint", js.undefined)
     
-    inline def setHighlightOptions(value: MapViewHighlightOptionsProperties): Self = StObject.set(x, "highlightOptions", value.asInstanceOf[js.Any])
+    inline def setHighlightOptions(value: HighlightOptions): Self = StObject.set(x, "highlightOptions", value.asInstanceOf[js.Any])
     
     inline def setHighlightOptionsUndefined: Self = StObject.set(x, "highlightOptions", js.undefined)
     

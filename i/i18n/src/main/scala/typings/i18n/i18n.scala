@@ -115,6 +115,11 @@ object i18n {
     var objectNotation: js.UndefOr[Boolean] = js.undefined
     
     /**
+      * Parser can be any object that responds to .parse & .stringify
+      */
+    var parser: js.UndefOr[ParserOptions] = js.undefined
+    
+    /**
       * Setting prefix of json files name (in case you use different locale files naming scheme (webapp-en.json), rather then just en.json)
       * @default ""
       */
@@ -245,6 +250,10 @@ object i18n {
       
       inline def setObjectNotationUndefined: Self = StObject.set(x, "objectNotation", js.undefined)
       
+      inline def setParser(value: ParserOptions): Self = StObject.set(x, "parser", value.asInstanceOf[js.Any])
+      
+      inline def setParserUndefined: Self = StObject.set(x, "parser", js.undefined)
+      
       inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
       inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
@@ -342,6 +351,16 @@ object i18n {
   }
   
   type LocaleCatalog = StringDictionary[String | Plurals]
+  
+  @js.native
+  trait ParserOptions extends StObject {
+    
+    def parse(src: String): Any = js.native
+    def parse(src: String, options: Any): Any = js.native
+    
+    def stringify(value: Any): String = js.native
+    def stringify(value: Any, options: Any): String = js.native
+  }
   
   trait PluralOptions extends StObject {
     

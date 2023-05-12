@@ -25,10 +25,12 @@ trait TestReport
   
   var _status: js.UndefOr[Element] = js.undefined
   
+  var _testScript: js.UndefOr[Element] = js.undefined
+  
   var _tester: js.UndefOr[Element] = js.undefined
   
   /**
-    * Identifier for the TestScript assigned for external purposes outside the context of FHIR.
+    * Identifier for the TestReport assigned for external purposes outside the context of FHIR.
     */
   var identifier: js.UndefOr[Identifier] = js.undefined
   
@@ -85,7 +87,7 @@ trait TestReport
   /**
     * Ideally this is an absolute URL that is used to identify the version-specific TestScript that was executed, matching the `TestScript.url`.
     */
-  var testScript: Reference
+  var testScript: String
   
   /**
     * Usually an organization, but may be an individual. This item SHOULD be populated unless the information is available from context.
@@ -97,7 +99,7 @@ object TestReport {
   inline def apply(
     result: pass | fail | pending,
     status: completed | `in-progress` | waiting | stopped | `entered-in-error`,
-    testScript: Reference
+    testScript: String
   ): TestReport = {
     val __obj = js.Dynamic.literal(resourceType = "TestReport", result = result.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], testScript = testScript.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestReport]
@@ -144,7 +146,7 @@ object TestReport {
     
     inline def setTest(value: js.Array[TestReportTest]): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
     
-    inline def setTestScript(value: Reference): Self = StObject.set(x, "testScript", value.asInstanceOf[js.Any])
+    inline def setTestScript(value: String): Self = StObject.set(x, "testScript", value.asInstanceOf[js.Any])
     
     inline def setTestUndefined: Self = StObject.set(x, "test", js.undefined)
     
@@ -169,6 +171,10 @@ object TestReport {
     inline def set_status(value: Element): Self = StObject.set(x, "_status", value.asInstanceOf[js.Any])
     
     inline def set_statusUndefined: Self = StObject.set(x, "_status", js.undefined)
+    
+    inline def set_testScript(value: Element): Self = StObject.set(x, "_testScript", value.asInstanceOf[js.Any])
+    
+    inline def set_testScriptUndefined: Self = StObject.set(x, "_testScript", js.undefined)
     
     inline def set_tester(value: Element): Self = StObject.set(x, "_tester", value.asInstanceOf[js.Any])
     

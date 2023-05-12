@@ -22,7 +22,7 @@ object mod {
     def this(props: EditTextProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: EditTextProps, context: Any) = this()
   }
@@ -34,7 +34,7 @@ object mod {
     def this(props: EditTextareaProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: EditTextareaProps, context: Any) = this()
   }

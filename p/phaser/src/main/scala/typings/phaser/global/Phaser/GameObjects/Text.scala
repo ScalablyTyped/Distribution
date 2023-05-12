@@ -29,7 +29,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * ```
   * 
   * You can only display fonts that are currently loaded and available to the browser: therefore fonts must
-  * be pre-loaded. Phaser does not do ths for you, so you will require the use of a 3rd party font loader,
+  * be pre-loaded. Phaser does not do this for you, so you will require the use of a 3rd party font loader,
   * or have the fonts ready available in the CSS on the page in which your Phaser game resides.
   * 
   * See {@link http://www.jordanm.co.uk/tinytype this compatibility table} for the available default fonts
@@ -70,7 +70,7 @@ open class Text protected ()
   ) = this()
   
   /**
-    * The depth of this Game Object within the Scene.
+    * The depth of this Game Object within the Scene. Ensure this value is only ever set to a number data-type.
     * 
     * The depth is also known as the 'z-index' in some environments, and allows you to change the rendering order
     * of Game Objects, without actually moving their position in the display list.
@@ -149,7 +149,7 @@ open class Text protected ()
     * value will always render in front of one with a lower value.
     * 
     * Setting the depth will queue a depth sort event within the Scene.
-    * @param value The depth of this Game Object.
+    * @param value The depth of this Game Object. Ensure this value is only ever a number data-type.
     */
   /* CompleteClass */
   override def setDepth(value: Double): this.type = js.native

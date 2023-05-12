@@ -8,18 +8,14 @@ trait Responses200ContentApplicationjsonInvitee extends StObject {
   
   var parameters: PathInvitationidOwnerRepo
   
-  var requestBody: ContentApplicationjson254
+  var requestBody: js.UndefOr[ContentApplicationjson269] = js.undefined
   
   var responses: `200ContentApplicationjsonInvitee`
 }
 object Responses200ContentApplicationjsonInvitee {
   
-  inline def apply(
-    parameters: PathInvitationidOwnerRepo,
-    requestBody: ContentApplicationjson254,
-    responses: `200ContentApplicationjsonInvitee`
-  ): Responses200ContentApplicationjsonInvitee = {
-    val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], requestBody = requestBody.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
+  inline def apply(parameters: PathInvitationidOwnerRepo, responses: `200ContentApplicationjsonInvitee`): Responses200ContentApplicationjsonInvitee = {
+    val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[Responses200ContentApplicationjsonInvitee]
   }
   
@@ -28,7 +24,9 @@ object Responses200ContentApplicationjsonInvitee {
     
     inline def setParameters(value: PathInvitationidOwnerRepo): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setRequestBody(value: ContentApplicationjson254): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: ContentApplicationjson269): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    
+    inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
     
     inline def setResponses(value: `200ContentApplicationjsonInvitee`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }

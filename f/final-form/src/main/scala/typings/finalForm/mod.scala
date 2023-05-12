@@ -256,7 +256,7 @@ object mod {
     
     var modified: js.UndefOr[Boolean] = js.undefined
     
-    var modifiedSinceLastSubmit: js.UndefOr[`false`] = js.undefined
+    var modifiedSinceLastSubmit: js.UndefOr[Boolean] = js.undefined
     
     var pristine: js.UndefOr[Boolean] = js.undefined
     
@@ -322,7 +322,7 @@ object mod {
       
       inline def setModified(value: Boolean): Self = StObject.set(x, "modified", value.asInstanceOf[js.Any])
       
-      inline def setModifiedSinceLastSubmit(value: `false`): Self = StObject.set(x, "modifiedSinceLastSubmit", value.asInstanceOf[js.Any])
+      inline def setModifiedSinceLastSubmit(value: Boolean): Self = StObject.set(x, "modifiedSinceLastSubmit", value.asInstanceOf[js.Any])
       
       inline def setModifiedSinceLastSubmitUndefined: Self = StObject.set(x, "modifiedSinceLastSubmit", js.undefined)
       
@@ -372,7 +372,7 @@ object mod {
   
   type FieldValidator[FieldValue] = js.Function3[
     /* value */ FieldValue, 
-    /* allValues */ js.UndefOr[js.Object], 
+    /* allValues */ js.Object, 
     /* meta */ js.UndefOr[FieldState[FieldValue]], 
     Any | js.Promise[Any]
   ]

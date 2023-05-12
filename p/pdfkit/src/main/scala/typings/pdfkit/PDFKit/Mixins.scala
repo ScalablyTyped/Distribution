@@ -125,9 +125,11 @@ object Mixins {
     }
   }
   
+  type BoundingBox = js.Tuple4[Double, Double, Double, Double]
+  
   // The color forms accepted by PDFKit:
   //     example:   "red"                  [R, G, B]                  [C, M, Y, K]
-  type ColorValue = String | PDFGradient | (js.Tuple3[Double, Double, Double]) | (js.Tuple4[Double, Double, Double, Double])
+  type ColorValue = String | PDFGradient | (js.Tuple2[PDFTilingPattern, TilingPatternColorValue]) | (js.Tuple3[Double, Double, Double]) | (js.Tuple4[Double, Double, Double, Double])
   
   trait ImageOption extends StObject {
     
@@ -1151,6 +1153,8 @@ object Mixins {
     
     def opacity(opacity: Double): this.type = js.native
     
+    def pattern(bbox: BoundingBox, xStep: Double, yStep: Double, stream: String): PDFTilingPattern = js.native
+    
     def radialGradient(x1: Double, y1: Double, r1: Double, x2: Double, y2: Double, r2: Double): PDFRadialGradient = js.native
     
     def strokeColor(color: ColorValue): this.type = js.native
@@ -1608,4 +1612,8 @@ object Mixins {
       inline def setWordSpacingUndefined: Self = StObject.set(x, "wordSpacing", js.undefined)
     }
   }
+  
+  // The color forms accepted by PDFKit Tiling Pattern:
+  //     example:   "red"                  [R, G, B]                  [C, M, Y, K]
+  type TilingPatternColorValue = String | PDFGradient | (js.Tuple3[Double, Double, Double]) | (js.Tuple4[Double, Double, Double, Double])
 }

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@aws-sdk/client-sts" : "3.211.0"
+      "@aws-sdk/client-sts" : "3.332.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@aws-sdk/client-sts" : "3.211.0"
+      "@aws-sdk/client-sts" : "3.332.0"
     }
   ],
   "compile-devDependencies" : [

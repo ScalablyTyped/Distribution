@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CustomLineItemVersionListElement extends StObject {
   
   /**
+    *  A list of custom line item Amazon Resource Names (ARNs) to retrieve information. 
+    */
+  var Arn: js.UndefOr[CustomLineItemArn] = js.undefined
+  
+  /**
     * The number of resources that are associated with the custom line item.
     */
   var AssociationSize: js.UndefOr[NumberOfAssociations] = js.undefined
@@ -57,6 +62,11 @@ trait CustomLineItemVersionListElement extends StObject {
     * The start billing period of the custom line item version.
     */
   var StartBillingPeriod: js.UndefOr[BillingPeriod] = js.undefined
+  
+  /**
+    *  The inclusive start time. 
+    */
+  var StartTime: js.UndefOr[Instant] = js.undefined
 }
 object CustomLineItemVersionListElement {
   
@@ -67,6 +77,10 @@ object CustomLineItemVersionListElement {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: CustomLineItemVersionListElement] (val x: Self) extends AnyVal {
+    
+    inline def setArn(value: CustomLineItemArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    
+    inline def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
     inline def setAssociationSize(value: NumberOfAssociations): Self = StObject.set(x, "AssociationSize", value.asInstanceOf[js.Any])
     
@@ -111,5 +125,9 @@ object CustomLineItemVersionListElement {
     inline def setStartBillingPeriod(value: BillingPeriod): Self = StObject.set(x, "StartBillingPeriod", value.asInstanceOf[js.Any])
     
     inline def setStartBillingPeriodUndefined: Self = StObject.set(x, "StartBillingPeriod", js.undefined)
+    
+    inline def setStartTime(value: Instant): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    
+    inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
   }
 }

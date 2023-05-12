@@ -1,5 +1,6 @@
 package typings.trimblemapsTrimblemapsJs.global.TrimbleMaps
 
+import typings.trimblemapsTrimblemapsJs.mod.ContentOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,4 +8,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("TrimbleMaps.WeatherRadar")
 @js.native
 open class WeatherRadar ()
-  extends typings.trimblemapsTrimblemapsJs.mod.WeatherRadar
+  extends typings.trimblemapsTrimblemapsJs.mod.WeatherRadar {
+  def this(options: ContentOptions) = this()
+}

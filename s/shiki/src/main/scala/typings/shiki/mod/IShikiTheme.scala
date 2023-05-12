@@ -4,8 +4,7 @@ import typings.shiki.shikiStrings.css
 import typings.shiki.shikiStrings.dark
 import typings.shiki.shikiStrings.light
 import typings.std.Record
-import typings.vscodeTextmate.mod.IRawTheme
-import typings.vscodeTextmate.mod.IRawThemeSetting
+import typings.vscodeTextmate.releaseThemeMod.IRawTheme
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -42,19 +41,19 @@ trait IShikiTheme
   var name_IShikiTheme: String
   
   /**
+    * @description tokenColors of the theme file
+    */
+  @JSName("settings")
+  var settings_IShikiTheme: js.Array[Any]
+  
+  /**
     * @description light/dark theme
     */
   var `type`: light | dark | css
 }
 object IShikiTheme {
   
-  inline def apply(
-    bg: String,
-    fg: String,
-    name: String,
-    settings: js.Array[IRawThemeSetting],
-    `type`: light | dark | css
-  ): IShikiTheme = {
+  inline def apply(bg: String, fg: String, name: String, settings: js.Array[Any], `type`: light | dark | css): IShikiTheme = {
     val __obj = js.Dynamic.literal(bg = bg.asInstanceOf[js.Any], fg = fg.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], settings = settings.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IShikiTheme]
@@ -76,6 +75,10 @@ object IShikiTheme {
     inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setSettings(value: js.Array[Any]): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
+    
+    inline def setSettingsVarargs(value: Any*): Self = StObject.set(x, "settings", js.Array(value*))
     
     inline def setType(value: light | dark | css): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

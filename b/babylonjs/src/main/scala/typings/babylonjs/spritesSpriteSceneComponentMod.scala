@@ -208,9 +208,9 @@ object spritesSpriteSceneComponentMod {
       
       /**
         * All of the sprite managers added to this scene
-        * @see https://doc.babylonjs.com/babylon101/sprites
+        * @see https://doc.babylonjs.com/features/featuresDeepDive/sprites
         */
-      var spriteManagers: js.Array[ISpriteManager] = js.native
+      var spriteManagers: js.UndefOr[js.Array[ISpriteManager]] = js.native
     }
   }
 }

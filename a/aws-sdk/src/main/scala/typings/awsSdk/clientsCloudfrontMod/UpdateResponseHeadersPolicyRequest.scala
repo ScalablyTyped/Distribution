@@ -12,7 +12,7 @@ trait UpdateResponseHeadersPolicyRequest extends StObject {
   var Id: String
   
   /**
-    * The version of the response headers policy that you are updating. The version is returned in the cache policy’s ETag field in the response to GetResponseHeadersPolicyConfig.
+    * The version of the response headers policy that you are updating. The version is returned in the cache policy's ETag field in the response to GetResponseHeadersPolicyConfig.
     */
   var IfMatch: js.UndefOr[String] = js.undefined
   

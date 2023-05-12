@@ -1,6 +1,7 @@
 package typings.devextreme.mod.DevExpress.ui
 
 import typings.devextreme.mod.DevExpress.common.EditorStyle
+import typings.devextreme.mod.DevExpress.common.Position
 import typings.devextreme.mod.DevExpress.common.ValidationMessageMode
 import typings.devextreme.mod.DevExpress.common.ValidationStatus
 import typings.devextreme.mod.DevExpress.events.NativeEventInfo
@@ -52,6 +53,11 @@ trait EditorOptions[TComponent]
   var validationMessageMode: js.UndefOr[ValidationMessageMode] = js.undefined
   
   /**
+    * 
+    */
+  var validationMessagePosition: js.UndefOr[Position] = js.undefined
+  
+  /**
     * Indicates or specifies the current validation status.
     */
   var validationStatus: js.UndefOr[ValidationStatus] = js.undefined
@@ -100,6 +106,10 @@ object EditorOptions {
     inline def setValidationMessageMode(value: ValidationMessageMode): Self = StObject.set(x, "validationMessageMode", value.asInstanceOf[js.Any])
     
     inline def setValidationMessageModeUndefined: Self = StObject.set(x, "validationMessageMode", js.undefined)
+    
+    inline def setValidationMessagePosition(value: Position): Self = StObject.set(x, "validationMessagePosition", value.asInstanceOf[js.Any])
+    
+    inline def setValidationMessagePositionUndefined: Self = StObject.set(x, "validationMessagePosition", js.undefined)
     
     inline def setValidationStatus(value: ValidationStatus): Self = StObject.set(x, "validationStatus", value.asInstanceOf[js.Any])
     

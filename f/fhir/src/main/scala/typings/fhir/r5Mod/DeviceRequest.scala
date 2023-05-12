@@ -29,6 +29,8 @@ trait DeviceRequest
      with DomainResource
      with _FhirResource {
   
+  var _asNeeded: js.UndefOr[Element] = js.undefined
+  
   var _authoredOn: js.UndefOr[Element] = js.undefined
   
   var _doNotPerform: js.UndefOr[Element] = js.undefined
@@ -44,6 +46,16 @@ trait DeviceRequest
   var _priority: js.UndefOr[Element] = js.undefined
   
   var _status: js.UndefOr[Element] = js.undefined
+  
+  /**
+    * This status is to indicate whether the request is a PRN or may be given as needed.
+    */
+  var asNeeded: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * The reason for using the device.
+    */
+  var asNeededFor: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * When the request transitioned to being actionable.
@@ -71,7 +83,7 @@ trait DeviceRequest
   var encounter: js.UndefOr[Reference] = js.undefined
   
   /**
-    * Composite request this is part of.
+    * A shared identifier common to multiple independent Request instances that were activated/authorized more or less simultaneously by a single author.  The presence of the same identifier on each request ties those requests together and may have business ramifications in terms of reporting of results, billing, etc.  E.g. a requisition number shared by a set of lab tests ordered together, or a prescription number shared by all meds ordered at one time.
     */
   var groupIdentifier: js.UndefOr[Identifier] = js.undefined
   
@@ -128,17 +140,7 @@ trait DeviceRequest
   /**
     * The desired individual or entity to provide the device to the subject of the request (e.g., patient, location).
     */
-  var performer: js.UndefOr[Reference] = js.undefined
-  
-  /**
-    * The desired kind of individual or entity to provide the device to the subject of the request (e.g., patient, location).
-    */
-  var performerType: js.UndefOr[CodeableConcept] = js.undefined
-  
-  /**
-    * The request takes the place of the referenced completed or terminated request(s).
-    */
-  var priorRequest: js.UndefOr[js.Array[Reference]] = js.undefined
+  var performer: js.UndefOr[CodeableReference] = js.undefined
   
   /**
     * Indicates how quickly the request should be addressed with respect to other requests.
@@ -163,6 +165,11 @@ trait DeviceRequest
   var relevantHistory: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
+    * The request takes the place of the referenced completed or terminated request(s).
+    */
+  var replaces: js.UndefOr[js.Array[Reference]] = js.undefined
+  
+  /**
     * The individual or entity who initiated the request and has responsibility for its activation.
     */
   var requester: js.UndefOr[Reference] = js.undefined
@@ -172,7 +179,7 @@ trait DeviceRequest
   val resourceType_DeviceRequest: typings.fhir.fhirStrings.DeviceRequest
   
   /**
-    * This element is labeled as a modifier because the status contains the codes cancelled and entered-in-error that mark the request as not currently valid.
+    * This element is labeled as a modifier because the status contains the codes revoked and entered-in-error that mark the request as not currently valid.
     */
   var status: js.UndefOr[draft | active | `on-hold` | revoked | completed | `entered-in-error` | unknown] = js.undefined
   
@@ -199,6 +206,14 @@ object DeviceRequest {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: DeviceRequest] (val x: Self) extends AnyVal {
+    
+    inline def setAsNeeded(value: Boolean): Self = StObject.set(x, "asNeeded", value.asInstanceOf[js.Any])
+    
+    inline def setAsNeededFor(value: CodeableConcept): Self = StObject.set(x, "asNeededFor", value.asInstanceOf[js.Any])
+    
+    inline def setAsNeededForUndefined: Self = StObject.set(x, "asNeededFor", js.undefined)
+    
+    inline def setAsNeededUndefined: Self = StObject.set(x, "asNeeded", js.undefined)
     
     inline def setAuthoredOn(value: String): Self = StObject.set(x, "authoredOn", value.asInstanceOf[js.Any])
     
@@ -276,19 +291,9 @@ object DeviceRequest {
     
     inline def setParameterVarargs(value: DeviceRequestParameter*): Self = StObject.set(x, "parameter", js.Array(value*))
     
-    inline def setPerformer(value: Reference): Self = StObject.set(x, "performer", value.asInstanceOf[js.Any])
-    
-    inline def setPerformerType(value: CodeableConcept): Self = StObject.set(x, "performerType", value.asInstanceOf[js.Any])
-    
-    inline def setPerformerTypeUndefined: Self = StObject.set(x, "performerType", js.undefined)
+    inline def setPerformer(value: CodeableReference): Self = StObject.set(x, "performer", value.asInstanceOf[js.Any])
     
     inline def setPerformerUndefined: Self = StObject.set(x, "performer", js.undefined)
-    
-    inline def setPriorRequest(value: js.Array[Reference]): Self = StObject.set(x, "priorRequest", value.asInstanceOf[js.Any])
-    
-    inline def setPriorRequestUndefined: Self = StObject.set(x, "priorRequest", js.undefined)
-    
-    inline def setPriorRequestVarargs(value: Reference*): Self = StObject.set(x, "priorRequest", js.Array(value*))
     
     inline def setPriority(value: routine | urgent | asap | stat): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
@@ -310,6 +315,12 @@ object DeviceRequest {
     
     inline def setRelevantHistoryVarargs(value: Reference*): Self = StObject.set(x, "relevantHistory", js.Array(value*))
     
+    inline def setReplaces(value: js.Array[Reference]): Self = StObject.set(x, "replaces", value.asInstanceOf[js.Any])
+    
+    inline def setReplacesUndefined: Self = StObject.set(x, "replaces", js.undefined)
+    
+    inline def setReplacesVarargs(value: Reference*): Self = StObject.set(x, "replaces", js.Array(value*))
+    
     inline def setRequester(value: Reference): Self = StObject.set(x, "requester", value.asInstanceOf[js.Any])
     
     inline def setRequesterUndefined: Self = StObject.set(x, "requester", js.undefined)
@@ -327,6 +338,10 @@ object DeviceRequest {
     inline def setSupportingInfoUndefined: Self = StObject.set(x, "supportingInfo", js.undefined)
     
     inline def setSupportingInfoVarargs(value: Reference*): Self = StObject.set(x, "supportingInfo", js.Array(value*))
+    
+    inline def set_asNeeded(value: Element): Self = StObject.set(x, "_asNeeded", value.asInstanceOf[js.Any])
+    
+    inline def set_asNeededUndefined: Self = StObject.set(x, "_asNeeded", js.undefined)
     
     inline def set_authoredOn(value: Element): Self = StObject.set(x, "_authoredOn", value.asInstanceOf[js.Any])
     

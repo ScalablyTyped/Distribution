@@ -1,32 +1,29 @@
 package typings.octokitOpenapiTypes.anon
 
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.maintainer
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.member_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `117` extends StObject {
   
-  /**
-    * @description The role that this user should have in the team.
-    * @default member
-    * @enum {string}
-    */
-  var role: js.UndefOr[member_ | maintainer] = js.undefined
+  @JSName("application/json")
+  var applicationSlashjson: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['team-discussion-comment'] */ js.Any
 }
 object `117` {
   
-  inline def apply(): `117` = {
+  inline def apply(
+    applicationSlashjson: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['team-discussion-comment'] */ js.Any
+  ): `117` = {
     val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("application/json")(applicationSlashjson.asInstanceOf[js.Any])
     __obj.asInstanceOf[`117`]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: `117`] (val x: Self) extends AnyVal {
     
-    inline def setRole(value: member_ | maintainer): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
-    
-    inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+    inline def setApplicationSlashjson(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['team-discussion-comment'] */ js.Any
+    ): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
   }
 }

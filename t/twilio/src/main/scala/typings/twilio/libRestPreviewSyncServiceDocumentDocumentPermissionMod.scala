@@ -1,236 +1,140 @@
 package typings.twilio
 
+import typings.twilio.anon.DocumentSid
 import typings.twilio.libBasePageMod.TwilioResponsePayload
-import typings.twilio.libInterfacesMod.SerializableClass
+import typings.twilio.libRestPreviewSyncMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libRestPreviewSyncServiceDocumentDocumentPermissionMod {
   
-  @JSImport("twilio/lib/rest/preview/sync/service/document/documentPermission", JSImport.Namespace)
+  @JSImport("twilio/lib/rest/preview/sync/service/document/documentPermission", "DocumentPermissionContextImpl")
   @js.native
-  val ^ : js.Any = js.native
-  
-  @JSImport("twilio/lib/rest/preview/sync/service/document/documentPermission", "DocumentPermissionContext")
-  @js.native
-  open class DocumentPermissionContext protected () extends StObject {
-    /**
-      * Initialize the DocumentPermissionContext
-      *
-      * PLEASE NOTE that this class contains preview products that are subject to
-      * change. Use them with caution. If you currently do not have developer preview
-      * access, please contact help@twilio.com.
-      *
-      * @param version - Version of the resource
-      * @param serviceSid - The service_sid
-      * @param documentSid - Sync Document SID or unique name.
-      * @param identity - Identity of the user to whom the Sync Document Permission applies.
-      */
-    def this(
-      version: typings.twilio.libRestPreviewSyncMod.^,
-      serviceSid: String,
-      documentSid: String,
-      identity: String
-    ) = this()
+  open class DocumentPermissionContextImpl protected ()
+    extends StObject
+       with DocumentPermissionContext {
+    def this(_version: default, serviceSid: String, documentSid: String, identity: String) = this()
     
-    /**
-      * fetch a DocumentPermissionInstance
-      *
-      * @param callback - Callback to handle processed record
-      */
-    def fetch(): js.Promise[DocumentPermissionInstance] = js.native
-    def fetch(callback: js.Function2[/* error */ js.Error | Null, /* items */ DocumentPermissionInstance, Any]): js.Promise[DocumentPermissionInstance] = js.native
+    /* protected */ var _solution: DocumentPermissionContextSolution = js.native
     
-    /**
-      * remove a DocumentPermissionInstance
-      *
-      * @param callback - Callback to handle processed record
-      */
-    def remove(): js.Promise[Boolean] = js.native
-    def remove(callback: js.Function2[/* error */ js.Error | Null, /* items */ DocumentPermissionInstance, Any]): js.Promise[Boolean] = js.native
+    /* protected */ var _uri: String = js.native
     
-    /**
-      * Provide a user-friendly representation
-      */
-    def toJSON(): Any = js.native
-    
-    /**
-      * update a DocumentPermissionInstance
-      *
-      * @param opts - Options for request
-      * @param callback - Callback to handle processed record
-      */
-    def update(opts: DocumentPermissionInstanceUpdateOptions): js.Promise[DocumentPermissionInstance] = js.native
-    def update(
-      opts: DocumentPermissionInstanceUpdateOptions,
-      callback: js.Function2[/* error */ js.Error | Null, /* items */ DocumentPermissionInstance, Any]
-    ): js.Promise[DocumentPermissionInstance] = js.native
+    /* protected */ var _version: default = js.native
   }
   
   @JSImport("twilio/lib/rest/preview/sync/service/document/documentPermission", "DocumentPermissionInstance")
   @js.native
-  open class DocumentPermissionInstance protected () extends SerializableClass {
-    /**
-      * Initialize the DocumentPermissionContext
-      *
-      * PLEASE NOTE that this class contains preview products that are subject to
-      * change. Use them with caution. If you currently do not have developer preview
-      * access, please contact help@twilio.com.
-      *
-      * @param version - Version of the resource
-      * @param payload - The instance payload
-      * @param serviceSid - Sync Service Instance SID.
-      * @param documentSid - Sync Document SID.
-      * @param identity - Identity of the user to whom the Sync Document Permission applies.
-      */
+  open class DocumentPermissionInstance protected () extends StObject {
+    def this(_version: default, payload: DocumentPermissionResource, serviceSid: String, documentSid: String) = this()
     def this(
-      version: typings.twilio.libRestPreviewSyncMod.^,
-      payload: DocumentPermissionPayload,
+      _version: default,
+      payload: DocumentPermissionResource,
       serviceSid: String,
       documentSid: String,
       identity: String
     ) = this()
     
-    /* private */ var _proxy: DocumentPermissionContext = js.native
+    /* protected */ var _context: js.UndefOr[DocumentPermissionContext] = js.native
     
+    /* private */ def _proxy: Any = js.native
+    
+    /* protected */ var _solution: DocumentPermissionContextSolution = js.native
+    
+    /* protected */ var _version: default = js.native
+    
+    /**
+      * The unique SID identifier of the Twilio Account.
+      */
     var accountSid: String = js.native
     
+    /**
+      * The unique SID identifier of the Sync Document to which the Permission applies.
+      */
     var documentSid: String = js.native
     
     /**
-      * fetch a DocumentPermissionInstance
+      * Fetch a DocumentPermissionInstance
       *
       * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed DocumentPermissionInstance
       */
     def fetch(): js.Promise[DocumentPermissionInstance] = js.native
-    def fetch(callback: js.Function2[/* error */ js.Error | Null, /* items */ this.type, Any]): js.Promise[DocumentPermissionInstance] = js.native
+    def fetch(callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[this.type], Any]): js.Promise[DocumentPermissionInstance] = js.native
     
+    /**
+      * Arbitrary string identifier representing a human user associated with an FPA token, assigned by the developer.
+      */
     var identity: String = js.native
     
+    /**
+      * Boolean flag specifying whether the identity can delete the Sync Document.
+      */
     var manage: Boolean = js.native
     
+    /**
+      * Boolean flag specifying whether the identity can read the Sync Document.
+      */
     var read: Boolean = js.native
     
     /**
-      * remove a DocumentPermissionInstance
+      * Remove a DocumentPermissionInstance
       *
       * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed boolean
       */
     def remove(): js.Promise[Boolean] = js.native
-    def remove(callback: js.Function2[/* error */ js.Error | Null, /* items */ this.type, Any]): js.Promise[Boolean] = js.native
+    def remove(callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[Boolean], Any]): js.Promise[Boolean] = js.native
     
+    /**
+      * The unique SID identifier of the Sync Service Instance.
+      */
     var serviceSid: String = js.native
     
     /**
-      * update a DocumentPermissionInstance
+      * Provide a user-friendly representation
       *
-      * @param opts - Options for request
-      * @param callback - Callback to handle processed record
+      * @returns Object
       */
-    def update(opts: DocumentPermissionInstanceUpdateOptions): js.Promise[DocumentPermissionInstance] = js.native
+    def toJSON(): DocumentSid = js.native
+    
+    /**
+      * Update a DocumentPermissionInstance
+      *
+      * @param params - Parameter for request
+      * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed DocumentPermissionInstance
+      */
+    def update(params: DocumentPermissionContextUpdateOptions): js.Promise[DocumentPermissionInstance] = js.native
     def update(
-      opts: DocumentPermissionInstanceUpdateOptions,
-      callback: js.Function2[/* error */ js.Error | Null, /* items */ this.type, Any]
+      params: DocumentPermissionContextUpdateOptions,
+      callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[this.type], Any]
     ): js.Promise[DocumentPermissionInstance] = js.native
     
+    /**
+      * Contains an absolute URL for this Sync Document Permission.
+      */
     var url: String = js.native
     
+    /**
+      * Boolean flag specifying whether the identity can update the Sync Document.
+      */
     var write: Boolean = js.native
-  }
-  
-  /**
-    * Initialize the DocumentPermissionList
-    *
-    * PLEASE NOTE that this class contains preview products that are subject to
-    * change. Use them with caution. If you currently do not have developer preview
-    * access, please contact help@twilio.com.
-    *
-    * @param version - Version of the resource
-    * @param serviceSid - Sync Service Instance SID.
-    * @param documentSid - Sync Document SID.
-    */
-  inline def DocumentPermissionList(version: typings.twilio.libRestPreviewSyncMod.^, serviceSid: String, documentSid: String): DocumentPermissionListInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("DocumentPermissionList")(version.asInstanceOf[js.Any], serviceSid.asInstanceOf[js.Any], documentSid.asInstanceOf[js.Any])).asInstanceOf[DocumentPermissionListInstance]
-  
-  @JSImport("twilio/lib/rest/preview/sync/service/document/documentPermission", "DocumentPermissionPage")
-  @js.native
-  open class DocumentPermissionPage protected ()
-    extends typings.twilio.libBasePageMod.^[
-          typings.twilio.libRestPreviewSyncMod.^, 
-          DocumentPermissionPayload, 
-          DocumentPermissionResource, 
-          DocumentPermissionInstance
-        ] {
-    /**
-      * Initialize the DocumentPermissionPage
-      *
-      * PLEASE NOTE that this class contains preview products that are subject to
-      * change. Use them with caution. If you currently do not have developer preview
-      * access, please contact help@twilio.com.
-      *
-      * @param version - Version of the resource
-      * @param response - Response from the API
-      * @param solution - Path solution
-      */
-    def this(
-      version: typings.twilio.libRestPreviewSyncMod.^,
-      response: typings.twilio.libHttpResponseMod.^[String],
-      solution: DocumentPermissionSolution
-    ) = this()
-    
-    /**
-      * Build an instance of DocumentPermissionInstance
-      *
-      * @param payload - Payload response from the API
-      */
-    def getInstance(payload: DocumentPermissionPayload): DocumentPermissionInstance = js.native
-    
-    /**
-      * Provide a user-friendly representation
-      */
-    def toJSON(): Any = js.native
-  }
-  
-  /**
-    * Options to pass to update
-    *
-    * @property manage - Manage access.
-    * @property read - Read access.
-    * @property write - Write access.
-    */
-  trait DocumentPermissionInstanceUpdateOptions extends StObject {
-    
-    var manage: Boolean
-    
-    var read: Boolean
-    
-    var write: Boolean
-  }
-  object DocumentPermissionInstanceUpdateOptions {
-    
-    inline def apply(manage: Boolean, read: Boolean, write: Boolean): DocumentPermissionInstanceUpdateOptions = {
-      val __obj = js.Dynamic.literal(manage = manage.asInstanceOf[js.Any], read = read.asInstanceOf[js.Any], write = write.asInstanceOf[js.Any])
-      __obj.asInstanceOf[DocumentPermissionInstanceUpdateOptions]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: DocumentPermissionInstanceUpdateOptions] (val x: Self) extends AnyVal {
-      
-      inline def setManage(value: Boolean): Self = StObject.set(x, "manage", value.asInstanceOf[js.Any])
-      
-      inline def setRead(value: Boolean): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
-      
-      inline def setWrite(value: Boolean): Self = StObject.set(x, "write", value.asInstanceOf[js.Any])
-    }
   }
   
   @js.native
   trait DocumentPermissionListInstance extends StObject {
     
-    /**
-      * @param sid - sid of instance
-      */
-    def apply(sid: String): DocumentPermissionContext = js.native
+    def apply(identity: String): DocumentPermissionContext = js.native
+    
+    var _solution: DocumentPermissionSolution = js.native
+    
+    var _uri: String = js.native
+    
+    var _version: default = js.native
     
     /**
       * Streams DocumentPermissionInstance records from the API.
@@ -244,7 +148,8 @@ object libRestPreviewSyncServiceDocumentDocumentPermissionMod {
       * If a function is passed as the first argument, it will be used as the callback
       * function.
       *
-      * @param callback - Function to process each record
+      * @param { DocumentPermissionListInstanceEachOptions } [params] - Options for request
+      * @param { function } [callback] - Function to process each record
       */
     def each(): Unit = js.native
     def each(
@@ -254,17 +159,9 @@ object libRestPreviewSyncServiceDocumentDocumentPermissionMod {
           Unit
         ]
     ): Unit = js.native
+    def each(params: DocumentPermissionListInstanceEachOptions): Unit = js.native
     def each(
-      opts: Unit,
-      callback: js.Function2[
-          /* item */ DocumentPermissionInstance, 
-          /* done */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
-          Unit
-        ]
-    ): Unit = js.native
-    def each(opts: DocumentPermissionListInstanceEachOptions): Unit = js.native
-    def each(
-      opts: DocumentPermissionListInstanceEachOptions,
+      params: DocumentPermissionListInstanceEachOptions,
       callback: js.Function2[
           /* item */ DocumentPermissionInstance, 
           /* done */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
@@ -272,33 +169,19 @@ object libRestPreviewSyncServiceDocumentDocumentPermissionMod {
         ]
     ): Unit = js.native
     
-    /**
-      * Constructs a document_permission
-      *
-      * @param identity - Identity of the user to whom the Sync Document Permission applies.
-      */
     def get(identity: String): DocumentPermissionContext = js.native
     
     /**
-      * Retrieve a single target page of DocumentPermissionInstance records from the
-      * API.
+      * Retrieve a single target page of DocumentPermissionInstance records from the API.
       *
       * The request is executed immediately.
       *
-      * If a function is passed as the first argument, it will be used as the callback
-      * function.
-      *
-      * @param callback - Callback to handle list of records
+      * @param { string } [targetUrl] - API-generated URL for the requested results page
+      * @param { function } [callback] - Callback to handle list of records
       */
-    def getPage(): js.Promise[DocumentPermissionPage] = js.native
-    def getPage(callback: js.Function2[/* error */ js.Error | Null, /* items */ DocumentPermissionPage, Any]): js.Promise[DocumentPermissionPage] = js.native
     def getPage(targetUrl: String): js.Promise[DocumentPermissionPage] = js.native
     def getPage(
       targetUrl: String,
-      callback: js.Function2[/* error */ js.Error | Null, /* items */ DocumentPermissionPage, Any]
-    ): js.Promise[DocumentPermissionPage] = js.native
-    def getPage(
-      targetUrl: Unit,
       callback: js.Function2[/* error */ js.Error | Null, /* items */ DocumentPermissionPage, Any]
     ): js.Promise[DocumentPermissionPage] = js.native
     
@@ -308,19 +191,16 @@ object libRestPreviewSyncServiceDocumentDocumentPermissionMod {
       * If a function is passed as the first argument, it will be used as the callback
       * function.
       *
-      * @param callback - Callback to handle list of records
+      * @param { DocumentPermissionListInstanceOptions } [params] - Options for request
+      * @param { function } [callback] - Callback to handle list of records
       */
     def list(): js.Promise[js.Array[DocumentPermissionInstance]] = js.native
     def list(
       callback: js.Function2[/* error */ js.Error | Null, /* items */ js.Array[DocumentPermissionInstance], Any]
     ): js.Promise[js.Array[DocumentPermissionInstance]] = js.native
+    def list(params: DocumentPermissionListInstanceOptions): js.Promise[js.Array[DocumentPermissionInstance]] = js.native
     def list(
-      opts: Unit,
-      callback: js.Function2[/* error */ js.Error | Null, /* items */ js.Array[DocumentPermissionInstance], Any]
-    ): js.Promise[js.Array[DocumentPermissionInstance]] = js.native
-    def list(opts: DocumentPermissionListInstanceOptions): js.Promise[js.Array[DocumentPermissionInstance]] = js.native
-    def list(
-      opts: DocumentPermissionListInstanceOptions,
+      params: DocumentPermissionListInstanceOptions,
       callback: js.Function2[/* error */ js.Error | Null, /* items */ js.Array[DocumentPermissionInstance], Any]
     ): js.Promise[js.Array[DocumentPermissionInstance]] = js.native
     
@@ -332,17 +212,14 @@ object libRestPreviewSyncServiceDocumentDocumentPermissionMod {
       * If a function is passed as the first argument, it will be used as the callback
       * function.
       *
-      * @param callback - Callback to handle list of records
+      * @param { DocumentPermissionListInstancePageOptions } [params] - Options for request
+      * @param { function } [callback] - Callback to handle list of records
       */
     def page(): js.Promise[DocumentPermissionPage] = js.native
     def page(callback: js.Function2[/* error */ js.Error | Null, /* items */ DocumentPermissionPage, Any]): js.Promise[DocumentPermissionPage] = js.native
+    def page(params: DocumentPermissionListInstancePageOptions): js.Promise[DocumentPermissionPage] = js.native
     def page(
-      opts: Unit,
-      callback: js.Function2[/* error */ js.Error | Null, /* items */ DocumentPermissionPage, Any]
-    ): js.Promise[DocumentPermissionPage] = js.native
-    def page(opts: DocumentPermissionListInstancePageOptions): js.Promise[DocumentPermissionPage] = js.native
-    def page(
-      opts: DocumentPermissionListInstancePageOptions,
+      params: DocumentPermissionListInstancePageOptions,
       callback: js.Function2[/* error */ js.Error | Null, /* items */ DocumentPermissionPage, Any]
     ): js.Promise[DocumentPermissionPage] = js.native
     
@@ -351,27 +228,146 @@ object libRestPreviewSyncServiceDocumentDocumentPermissionMod {
       */
     def toJSON(): Any = js.native
   }
+  object DocumentPermissionListInstance {
+    
+    @JSImport("twilio/lib/rest/preview/sync/service/document/documentPermission", "DocumentPermissionListInstance")
+    @js.native
+    def apply(version: default, serviceSid: String, documentSid: String): DocumentPermissionListInstance = js.native
+  }
   
-  /**
-    * Options to pass to each
-    *
-    * @property callback -
-    *                         Function to process each record. If this and a positional
-    *                         callback are passed, this one will be used
-    * @property done - Function to be called upon completion of streaming
-    * @property limit -
-    *                         Upper limit for the number of records to return.
-    *                         each() guarantees never to return more than limit.
-    *                         Default is no limit
-    * @property pageSize -
-    *                         Number of records to fetch per request,
-    *                         when not set will use the default value of 50 records.
-    *                         If no pageSize is defined but a limit is defined,
-    *                         each() will attempt to read the limit with the most efficient
-    *                         page size, i.e. min(limit, 1000)
-    */
+  @JSImport("twilio/lib/rest/preview/sync/service/document/documentPermission", "DocumentPermissionPage")
+  @js.native
+  open class DocumentPermissionPage protected ()
+    extends typings.twilio.libBasePageMod.default[
+          default, 
+          DocumentPermissionPayload, 
+          DocumentPermissionResource, 
+          DocumentPermissionInstance
+        ] {
+    /**
+      * Initialize the DocumentPermissionPage
+      *
+      * @param version - Version of the resource
+      * @param response - Response from the API
+      * @param solution - Path solution
+      */
+    def this(
+      version: default,
+      response: typings.twilio.libHttpResponseMod.default[String],
+      solution: DocumentPermissionSolution
+    ) = this()
+    
+    /**
+      * Build an instance of DocumentPermissionInstance
+      *
+      * @param payload - Payload response from the API
+      */
+    def getInstance(payload: DocumentPermissionResource): DocumentPermissionInstance = js.native
+  }
+  
+  @js.native
+  trait DocumentPermissionContext extends StObject {
+    
+    /**
+      * Fetch a DocumentPermissionInstance
+      *
+      * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed DocumentPermissionInstance
+      */
+    def fetch(): js.Promise[DocumentPermissionInstance] = js.native
+    def fetch(
+      callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[DocumentPermissionInstance], Any]
+    ): js.Promise[DocumentPermissionInstance] = js.native
+    
+    /**
+      * Remove a DocumentPermissionInstance
+      *
+      * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed boolean
+      */
+    def remove(): js.Promise[Boolean] = js.native
+    def remove(callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[Boolean], Any]): js.Promise[Boolean] = js.native
+    
+    /**
+      * Provide a user-friendly representation
+      */
+    def toJSON(): Any = js.native
+    
+    /**
+      * Update a DocumentPermissionInstance
+      *
+      * @param params - Parameter for request
+      * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed DocumentPermissionInstance
+      */
+    def update(params: DocumentPermissionContextUpdateOptions): js.Promise[DocumentPermissionInstance] = js.native
+    def update(
+      params: DocumentPermissionContextUpdateOptions,
+      callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[DocumentPermissionInstance], Any]
+    ): js.Promise[DocumentPermissionInstance] = js.native
+  }
+  
+  trait DocumentPermissionContextSolution extends StObject {
+    
+    var documentSid: String
+    
+    var identity: String
+    
+    var serviceSid: String
+  }
+  object DocumentPermissionContextSolution {
+    
+    inline def apply(documentSid: String, identity: String, serviceSid: String): DocumentPermissionContextSolution = {
+      val __obj = js.Dynamic.literal(documentSid = documentSid.asInstanceOf[js.Any], identity = identity.asInstanceOf[js.Any], serviceSid = serviceSid.asInstanceOf[js.Any])
+      __obj.asInstanceOf[DocumentPermissionContextSolution]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DocumentPermissionContextSolution] (val x: Self) extends AnyVal {
+      
+      inline def setDocumentSid(value: String): Self = StObject.set(x, "documentSid", value.asInstanceOf[js.Any])
+      
+      inline def setIdentity(value: String): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
+      
+      inline def setServiceSid(value: String): Self = StObject.set(x, "serviceSid", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait DocumentPermissionContextUpdateOptions extends StObject {
+    
+    /** Boolean flag specifying whether the identity can delete the Sync Document. */
+    var manage: Boolean
+    
+    /** Boolean flag specifying whether the identity can read the Sync Document. */
+    var read: Boolean
+    
+    /** Boolean flag specifying whether the identity can update the Sync Document. */
+    var write: Boolean
+  }
+  object DocumentPermissionContextUpdateOptions {
+    
+    inline def apply(manage: Boolean, read: Boolean, write: Boolean): DocumentPermissionContextUpdateOptions = {
+      val __obj = js.Dynamic.literal(manage = manage.asInstanceOf[js.Any], read = read.asInstanceOf[js.Any], write = write.asInstanceOf[js.Any])
+      __obj.asInstanceOf[DocumentPermissionContextUpdateOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DocumentPermissionContextUpdateOptions] (val x: Self) extends AnyVal {
+      
+      inline def setManage(value: Boolean): Self = StObject.set(x, "manage", value.asInstanceOf[js.Any])
+      
+      inline def setRead(value: Boolean): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
+      
+      inline def setWrite(value: Boolean): Self = StObject.set(x, "write", value.asInstanceOf[js.Any])
+    }
+  }
+  
   trait DocumentPermissionListInstanceEachOptions extends StObject {
     
+    /** Function to process each record. If this and a positional callback are passed, this one will be used */
     var callback: js.UndefOr[
         js.Function2[
           /* item */ DocumentPermissionInstance, 
@@ -380,10 +376,13 @@ object libRestPreviewSyncServiceDocumentDocumentPermissionMod {
         ]
       ] = js.undefined
     
+    /** Function to be called upon completion of streaming */
     var done: js.UndefOr[js.Function] = js.undefined
     
+    /** Upper limit for the number of records to return. each() guarantees never to return more than limit. Default is no limit */
     var limit: js.UndefOr[Double] = js.undefined
     
+    /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
     var pageSize: js.UndefOr[Double] = js.undefined
   }
   object DocumentPermissionListInstanceEachOptions {
@@ -416,24 +415,12 @@ object libRestPreviewSyncServiceDocumentDocumentPermissionMod {
     }
   }
   
-  /**
-    * Options to pass to list
-    *
-    * @property limit -
-    *                         Upper limit for the number of records to return.
-    *                         list() guarantees never to return more than limit.
-    *                         Default is no limit
-    * @property pageSize -
-    *                         Number of records to fetch per request,
-    *                         when not set will use the default value of 50 records.
-    *                         If no page_size is defined but a limit is defined,
-    *                         list() will attempt to read the limit with the most
-    *                         efficient page size, i.e. min(limit, 1000)
-    */
   trait DocumentPermissionListInstanceOptions extends StObject {
     
+    /** Upper limit for the number of records to return. list() guarantees never to return more than limit. Default is no limit */
     var limit: js.UndefOr[Double] = js.undefined
     
+    /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
     var pageSize: js.UndefOr[Double] = js.undefined
   }
   object DocumentPermissionListInstanceOptions {
@@ -456,19 +443,15 @@ object libRestPreviewSyncServiceDocumentDocumentPermissionMod {
     }
   }
   
-  /**
-    * Options to pass to page
-    *
-    * @property pageNumber - Page Number, this value is simply for client state
-    * @property pageSize - Number of records to return, defaults to 50
-    * @property pageToken - PageToken provided by the API
-    */
   trait DocumentPermissionListInstancePageOptions extends StObject {
     
+    /** Page Number, this value is simply for client state */
     var pageNumber: js.UndefOr[Double] = js.undefined
     
+    /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
     var pageSize: js.UndefOr[Double] = js.undefined
     
+    /** PageToken provided by the API */
     var pageToken: js.UndefOr[String] = js.undefined
   }
   object DocumentPermissionListInstancePageOptions {
@@ -497,28 +480,31 @@ object libRestPreviewSyncServiceDocumentDocumentPermissionMod {
   
   trait DocumentPermissionPayload
     extends StObject
-       with DocumentPermissionResource
-       with TwilioResponsePayload
+       with TwilioResponsePayload {
+    
+    var permissions: js.Array[DocumentPermissionResource]
+  }
   object DocumentPermissionPayload {
     
     inline def apply(
-      account_sid: String,
-      document_sid: String,
       first_page_uri: String,
-      identity: String,
-      manage: Boolean,
       next_page_uri: String,
       page: Double,
       page_size: Double,
+      permissions: js.Array[DocumentPermissionResource],
       previous_page_uri: String,
-      read: Boolean,
-      service_sid: String,
-      uri: String,
-      url: String,
-      write: Boolean
+      uri: String
     ): DocumentPermissionPayload = {
-      val __obj = js.Dynamic.literal(account_sid = account_sid.asInstanceOf[js.Any], document_sid = document_sid.asInstanceOf[js.Any], first_page_uri = first_page_uri.asInstanceOf[js.Any], identity = identity.asInstanceOf[js.Any], manage = manage.asInstanceOf[js.Any], next_page_uri = next_page_uri.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any], page_size = page_size.asInstanceOf[js.Any], previous_page_uri = previous_page_uri.asInstanceOf[js.Any], read = read.asInstanceOf[js.Any], service_sid = service_sid.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], write = write.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(first_page_uri = first_page_uri.asInstanceOf[js.Any], next_page_uri = next_page_uri.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any], page_size = page_size.asInstanceOf[js.Any], permissions = permissions.asInstanceOf[js.Any], previous_page_uri = previous_page_uri.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
       __obj.asInstanceOf[DocumentPermissionPayload]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DocumentPermissionPayload] (val x: Self) extends AnyVal {
+      
+      inline def setPermissions(value: js.Array[DocumentPermissionResource]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
+      
+      inline def setPermissionsVarargs(value: DocumentPermissionResource*): Self = StObject.set(x, "permissions", js.Array(value*))
     }
   }
   
@@ -579,14 +565,14 @@ object libRestPreviewSyncServiceDocumentDocumentPermissionMod {
   
   trait DocumentPermissionSolution extends StObject {
     
-    var documentSid: js.UndefOr[String] = js.undefined
+    var documentSid: String
     
-    var serviceSid: js.UndefOr[String] = js.undefined
+    var serviceSid: String
   }
   object DocumentPermissionSolution {
     
-    inline def apply(): DocumentPermissionSolution = {
-      val __obj = js.Dynamic.literal()
+    inline def apply(documentSid: String, serviceSid: String): DocumentPermissionSolution = {
+      val __obj = js.Dynamic.literal(documentSid = documentSid.asInstanceOf[js.Any], serviceSid = serviceSid.asInstanceOf[js.Any])
       __obj.asInstanceOf[DocumentPermissionSolution]
     }
     
@@ -595,11 +581,7 @@ object libRestPreviewSyncServiceDocumentDocumentPermissionMod {
       
       inline def setDocumentSid(value: String): Self = StObject.set(x, "documentSid", value.asInstanceOf[js.Any])
       
-      inline def setDocumentSidUndefined: Self = StObject.set(x, "documentSid", js.undefined)
-      
       inline def setServiceSid(value: String): Self = StObject.set(x, "serviceSid", value.asInstanceOf[js.Any])
-      
-      inline def setServiceSidUndefined: Self = StObject.set(x, "serviceSid", js.undefined)
     }
   }
 }

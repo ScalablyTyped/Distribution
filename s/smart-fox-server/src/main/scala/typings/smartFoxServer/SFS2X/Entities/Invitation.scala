@@ -13,19 +13,19 @@ object Invitation {
   
   trait SFSInvitation extends StObject {
     
-    /** @type {number} Indicates the id of the invitation. */
+    /** Indicates the id of the invitation. */
     var id: Double
     
-    /** @type {SFSUser} Returns the SFSUser object corresponding to the user who received the invitation. */
+    /** Returns the SFSUser object corresponding to the user who received the invitation. */
     var invitee: SFSUser
     
-    /** @type {SFSUser} Returns the SFSUser object corresponding to the user who sent the invitation. */
+    /** Returns the SFSUser object corresponding to the user who sent the invitation. */
     var inviter: SFSUser
     
-    /** @type {Object} Returns an object containing a custom set of parameters. */
+    /** Returns an object containing a custom set of parameters. */
     var params: js.Object
     
-    /** @type {number} Returns the number of seconds available to the invitee to reply to the invitation, after which the invitation expires. */
+    /** Returns the number of seconds available to the invitee to reply to the invitation, after which the invitation expires. */
     var secondsForAnswer: Double
   }
   object SFSInvitation {

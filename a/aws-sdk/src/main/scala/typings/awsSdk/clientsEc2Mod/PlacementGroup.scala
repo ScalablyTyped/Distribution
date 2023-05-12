@@ -27,7 +27,7 @@ trait PlacementGroup extends StObject {
   var PartitionCount: js.UndefOr[Integer] = js.undefined
   
   /**
-    *  The spread level for the placement group. Only Outpost placement groups can be spread across hosts. 
+    * The spread level for the placement group. Only Outpost placement groups can be spread across hosts.
     */
   var SpreadLevel: js.UndefOr[typings.awsSdk.clientsEc2Mod.SpreadLevel] = js.undefined
   

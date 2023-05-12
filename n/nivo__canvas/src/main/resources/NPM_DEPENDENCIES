@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@nivo/canvas" : "0.83.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@nivo/canvas" : "0.83.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -15,7 +15,15 @@ object distSrcFilesNormaliseCandidateSingleMod {
   inline def normaliseCandidateSingle(
     input: ImportCandidate,
     normaliseContent: js.Function1[/* content */ ToContent, js.Promise[AsyncIterable[js.typedarray.Uint8Array]]]
-  ): AsyncGenerator[typings.ipfsUnixfsImporter.distSrcTypesMod.ImportCandidate, Unit, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("normaliseCandidateSingle")(input.asInstanceOf[js.Any], normaliseContent.asInstanceOf[js.Any])).asInstanceOf[AsyncGenerator[typings.ipfsUnixfsImporter.distSrcTypesMod.ImportCandidate, Unit, Any]]
+  ): AsyncGenerator[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_types.ImportCandidate */ Any, 
+    Unit, 
+    Any
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("normaliseCandidateSingle")(input.asInstanceOf[js.Any], normaliseContent.asInstanceOf[js.Any])).asInstanceOf[AsyncGenerator[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_types.ImportCandidate */ Any, 
+    Unit, 
+    Any
+  ]]
   
   type ImportCandidate = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_utils.ImportCandidate */ Any
   

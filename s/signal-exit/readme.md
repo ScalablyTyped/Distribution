@@ -1,7 +1,7 @@
 
 # Scala.js typings for signal-exit
 
-Typings are for version 3.0
+Typings are for version 4.0.2
 
 ## Library description:
 when you want to fire an event no matter how a process exits.
@@ -24,7 +24,7 @@ when you want to fire an event no matter how a process exits.
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

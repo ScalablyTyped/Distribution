@@ -1,7 +1,7 @@
 
 # Scala.js typings for aws-sdk__credential-provider-web-identity
 
-Typings are for version 3.208.0
+Typings are for version 3.329.0
 
 ## Library description:
 AWS credential provider that calls STS assumeRole for temporary AWS credentials

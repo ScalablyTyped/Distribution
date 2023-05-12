@@ -13,64 +13,38 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object libRuleMod {
   
+  @JSImport("postcss/lib/rule", JSImport.Namespace)
+  @js.native
+  open class ^ () extends Rule_
+  
+  /**
+    * Represents a CSS rule: a selector followed by a declaration block.
+    *
+    * ```js
+    * Once (root, { Rule }) {
+    *   let a = new Rule({ selector: 'a' })
+    *   a.append(…)
+    *   root.append(a)
+    * }
+    * ```
+    *
+    * ```js
+    * const root = postcss.parse('a{}')
+    * const rule = root.first
+    * rule.type       //=> 'rule'
+    * rule.toString() //=> 'a{}'
+    * ```
+    */
   @JSImport("postcss/lib/rule", JSImport.Default)
   @js.native
   open class default ()
-    extends Rule
+    extends Rule_
        with AnyNode
        with ChildNode {
     def this(defaults: RuleProps) = this()
   }
   
-  @js.native
-  trait Rule
-    extends typings.postcss.libContainerMod.default[ChildNode] {
-    
-    def assign(overrides: RuleProps): this.type = js.native
-    
-    def clone(overrides: PartialRuleProps): this.type = js.native
-    
-    def cloneAfter(overrides: PartialRuleProps): this.type = js.native
-    
-    def cloneBefore(overrides: PartialRuleProps): this.type = js.native
-    
-    @JSName("parent")
-    var parent_Rule: js.UndefOr[typings.postcss.libContainerMod.default[ChildNode]] = js.native
-    
-    @JSName("raws")
-    var raws_Rule: RuleRaws = js.native
-    
-    /**
-      * The rule’s full selector represented as a string.
-      *
-      * ```js
-      * const root = postcss.parse('a, b { }')
-      * const rule = root.first
-      * rule.selector //=> 'a, b'
-      * ```
-      */
-    var selector: String = js.native
-    
-    /**
-      * An array containing the rule’s individual selectors.
-      * Groups of selectors are split at commas.
-      *
-      * ```js
-      * const root = postcss.parse('a, b { }')
-      * const rule = root.first
-      *
-      * rule.selector  //=> 'a, b'
-      * rule.selectors //=> ['a', 'b']
-      *
-      * rule.selectors = ['a', 'strong']
-      * rule.selector //=> 'a, strong'
-      * ```
-      */
-    var selectors: js.Array[String] = js.native
-    
-    @JSName("type")
-    var type_Rule: rule = js.native
-  }
+  type Rule = Rule_
   
   trait RuleProps
     extends StObject
@@ -180,5 +154,73 @@ object libRuleMod {
       
       inline def setSemicolonUndefined: Self = StObject.set(x, "semicolon", js.undefined)
     }
+  }
+  
+  /**
+    * Represents a CSS rule: a selector followed by a declaration block.
+    *
+    * ```js
+    * Once (root, { Rule }) {
+    *   let a = new Rule({ selector: 'a' })
+    *   a.append(…)
+    *   root.append(a)
+    * }
+    * ```
+    *
+    * ```js
+    * const root = postcss.parse('a{}')
+    * const rule = root.first
+    * rule.type       //=> 'rule'
+    * rule.toString() //=> 'a{}'
+    * ```
+    */
+  @js.native
+  trait Rule_
+    extends typings.postcss.libContainerMod.default[typings.std.ChildNode] {
+    
+    def assign(overrides: js.Object): this.type = js.native
+    def assign(overrides: RuleProps): this.type = js.native
+    
+    def clone(overrides: PartialRuleProps): this.type = js.native
+    
+    def cloneAfter(): this.type = js.native
+    def cloneAfter(overrides: PartialRuleProps): this.type = js.native
+    
+    def cloneBefore(): this.type = js.native
+    def cloneBefore(overrides: PartialRuleProps): this.type = js.native
+    
+    var parent: js.UndefOr[typings.postcss.libContainerMod.default[typings.std.ChildNode]] = js.native
+    
+    var raws: RuleRaws = js.native
+    
+    /**
+      * The rule’s full selector represented as a string.
+      *
+      * ```js
+      * const root = postcss.parse('a, b { }')
+      * const rule = root.first
+      * rule.selector //=> 'a, b'
+      * ```
+      */
+    var selector: String = js.native
+    
+    /**
+      * An array containing the rule’s individual selectors.
+      * Groups of selectors are split at commas.
+      *
+      * ```js
+      * const root = postcss.parse('a, b { }')
+      * const rule = root.first
+      *
+      * rule.selector  //=> 'a, b'
+      * rule.selectors //=> ['a', 'b']
+      *
+      * rule.selectors = ['a', 'strong']
+      * rule.selector //=> 'a, strong'
+      * ```
+      */
+    var selectors: js.Array[String] = js.native
+    
+    var `type`: rule = js.native
   }
 }

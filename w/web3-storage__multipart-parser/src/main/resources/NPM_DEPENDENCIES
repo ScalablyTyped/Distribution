@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@web3-storage/multipart-parser" : "1.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@web3-storage/multipart-parser" : "1.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -1,7 +1,7 @@
 package typings.angularDevkitArchitect
 
-import typings.angularDevkitArchitect.anon.Analytics
 import typings.angularDevkitArchitect.anon.CurrentDirectory
+import typings.angularDevkitArchitect.anon.Logger
 import typings.angularDevkitArchitect.srcApiMod.BuilderRun
 import typings.angularDevkitArchitect.srcApiMod.Target
 import typings.angularDevkitCore.srcJsonUtilsMod.JsonObject
@@ -15,7 +15,7 @@ object srcScheduleByNameMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def scheduleByName(name: String, buildOptions: JsonObject, options: Analytics): js.Promise[BuilderRun] = (^.asInstanceOf[js.Dynamic].applyDynamic("scheduleByName")(name.asInstanceOf[js.Any], buildOptions.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BuilderRun]]
+  inline def scheduleByName(name: String, buildOptions: JsonObject, options: CurrentDirectory): js.Promise[BuilderRun] = (^.asInstanceOf[js.Dynamic].applyDynamic("scheduleByName")(name.asInstanceOf[js.Any], buildOptions.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BuilderRun]]
   
-  inline def scheduleByTarget(target: Target, overrides: JsonObject, options: CurrentDirectory): js.Promise[BuilderRun] = (^.asInstanceOf[js.Dynamic].applyDynamic("scheduleByTarget")(target.asInstanceOf[js.Any], overrides.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BuilderRun]]
+  inline def scheduleByTarget(target: Target, overrides: JsonObject, options: Logger): js.Promise[BuilderRun] = (^.asInstanceOf[js.Dynamic].applyDynamic("scheduleByTarget")(target.asInstanceOf[js.Any], overrides.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BuilderRun]]
 }

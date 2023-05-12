@@ -16,7 +16,7 @@ open class Surface[T] protected () extends Component[SurfaceProps, SurfaceState,
   def this(props: SurfaceProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: SurfaceProps, context: Any) = this()
   

@@ -51,7 +51,7 @@ object global {
       * When absent, the full expression will be parsed.
       * A negative index can be used, indicating an offset from the end of the sequence.
       */
-    // tslint:disable-next-line no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
     inline def full[T](): String = ^.asInstanceOf[js.Dynamic].applyDynamic("full")().asInstanceOf[String]
     /**
       * Gets the string representation of the entire resultant expression.
@@ -65,7 +65,7 @@ object global {
       * When absent, the full expression will be parsed.
       * A negative index can be used, indicating an offset from the end of the sequence.
       */
-    // tslint:disable-next-line no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
     inline def full[T](func: js.Function1[/* obj */ T, Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("full")(func.asInstanceOf[js.Any]).asInstanceOf[String]
     inline def full[T](func: js.Function1[/* obj */ T, Any], periodIndex: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("full")(func.asInstanceOf[js.Any], periodIndex.asInstanceOf[js.Any])).asInstanceOf[String]
     inline def full[T](periodIndex: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("full")(periodIndex.asInstanceOf[js.Any]).asInstanceOf[String]
@@ -105,7 +105,7 @@ object global {
       * When absent, the full expression will be parsed.
       * A negative index can be used, indicating an offset from the end of the sequence.
       */
-    // tslint:disable-next-line no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
     inline def split[T](func: js.Function1[/* obj */ T, Any]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("split")(func.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
     inline def split[T](func: js.Function1[/* obj */ T, Any], periodIndex: Double): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("split")(func.asInstanceOf[js.Any], periodIndex.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
     
@@ -126,7 +126,7 @@ object global {
       *
       * @param func A function returning an array of expressions to be parsed, excluding the parameter's identifier.
       */
-    // tslint:disable-next-line no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
     inline def toArray[T](func: js.Function1[/* obj */ T, js.Array[Any]]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("toArray")(func.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   }
 }

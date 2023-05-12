@@ -5,9 +5,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A region is a group of stations, for example a metropolitan area or a geographical or cultural region.
-  */
 trait Region extends StObject {
   
   var id: String

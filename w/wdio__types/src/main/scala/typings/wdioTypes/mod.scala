@@ -82,6 +82,8 @@ object mod {
     
     object WebdriverIO {
       
+      trait BrowserRunnerOptions extends StObject
+      
       type Config = Testrunner
       
       type CucumberOpts = StringDictionary[Any]

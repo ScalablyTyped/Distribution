@@ -65,14 +65,16 @@ object CascadedShadowGenerator {
     */
   @JSImport("babylonjs/Legacy/legacy", "CascadedShadowGenerator.MAX_CASCADES_COUNT")
   @js.native
-  val MAX_CASCADES_COUNT: Double = js.native
+  def MAX_CASCADES_COUNT: Double = js.native
+  inline def MAX_CASCADES_COUNT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MAX_CASCADES_COUNT")(x.asInstanceOf[js.Any])
   
   /**
     * Defines the minimum number of cascades used by the CSM.
     */
   @JSImport("babylonjs/Legacy/legacy", "CascadedShadowGenerator.MIN_CASCADES_COUNT")
   @js.native
-  val MIN_CASCADES_COUNT: Double = js.native
+  def MIN_CASCADES_COUNT: Double = js.native
+  inline def MIN_CASCADES_COUNT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MIN_CASCADES_COUNT")(x.asInstanceOf[js.Any])
   
   /**
     * Parses a serialized ShadowGenerator and returns a new ShadowGenerator.

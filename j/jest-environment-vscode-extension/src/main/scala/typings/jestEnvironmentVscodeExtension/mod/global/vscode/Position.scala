@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class Position protected ()
   extends typings.vscode.mod.Position {
   /**
-    * @param line A zero-based line value.
-    * @param character A zero-based character value.
-    */
+  		 * @param line A zero-based line value.
+  		 * @param character A zero-based character value.
+  		 */
   def this(line: Double, character: Double) = this()
 }

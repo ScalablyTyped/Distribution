@@ -1,7 +1,11 @@
 package typings.react.mod
 
+import typings.react.reactStrings._empty
+import typings.react.reactStrings.`use-credentials`
+import typings.react.reactStrings.anonymous
 import typings.react.reactStrings.environment
 import typings.react.reactStrings.user
+import typings.std.FormData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +21,7 @@ trait AllHTMLAttributes[T]
   
   var acceptCharset: js.UndefOr[String] = js.undefined
   
-  var action: js.UndefOr[String] = js.undefined
+  var action: js.UndefOr[String | (js.Function1[/* formData */ FormData, Unit])] = js.undefined
   
   var allowFullScreen: js.UndefOr[Boolean] = js.undefined
   
@@ -30,8 +34,6 @@ trait AllHTMLAttributes[T]
   var async: js.UndefOr[Boolean] = js.undefined
   
   var autoComplete: js.UndefOr[String] = js.undefined
-  
-  var autoFocus: js.UndefOr[Boolean] = js.undefined
   
   var autoPlay: js.UndefOr[Boolean] = js.undefined
   
@@ -55,13 +57,11 @@ trait AllHTMLAttributes[T]
   
   var cols: js.UndefOr[Double] = js.undefined
   
-  var content: js.UndefOr[String] = js.undefined
-  
   var controls: js.UndefOr[Boolean] = js.undefined
   
   var coords: js.UndefOr[String] = js.undefined
   
-  var crossOrigin: js.UndefOr[String] = js.undefined
+  var crossOrigin: js.UndefOr[anonymous | `use-credentials` | _empty] = js.undefined
   
   var data: js.UndefOr[String] = js.undefined
   
@@ -77,7 +77,7 @@ trait AllHTMLAttributes[T]
   
   var form: js.UndefOr[String] = js.undefined
   
-  var formAction: js.UndefOr[String] = js.undefined
+  var formAction: js.UndefOr[String | (js.Function1[/* formData */ FormData, Unit])] = js.undefined
   
   var formEncType: js.UndefOr[String] = js.undefined
   
@@ -161,8 +161,6 @@ trait AllHTMLAttributes[T]
   
   var readOnly: js.UndefOr[Boolean] = js.undefined
   
-  var rel: js.UndefOr[String] = js.undefined
-  
   var required: js.UndefOr[Boolean] = js.undefined
   
   var reversed: js.UndefOr[Boolean] = js.undefined
@@ -237,7 +235,9 @@ object AllHTMLAttributes {
     
     inline def setAcceptUndefined: Self = StObject.set(x, "accept", js.undefined)
     
-    inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: String | (js.Function1[/* formData */ FormData, Unit])): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    
+    inline def setActionFunction1(value: /* formData */ FormData => Unit): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
     
     inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
@@ -264,10 +264,6 @@ object AllHTMLAttributes {
     inline def setAutoComplete(value: String): Self = StObject.set(x, "autoComplete", value.asInstanceOf[js.Any])
     
     inline def setAutoCompleteUndefined: Self = StObject.set(x, "autoComplete", js.undefined)
-    
-    inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
-    
-    inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
     
     inline def setAutoPlay(value: Boolean): Self = StObject.set(x, "autoPlay", value.asInstanceOf[js.Any])
     
@@ -313,10 +309,6 @@ object AllHTMLAttributes {
     
     inline def setColsUndefined: Self = StObject.set(x, "cols", js.undefined)
     
-    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
-    
-    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
-    
     inline def setControls(value: Boolean): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
     
     inline def setControlsUndefined: Self = StObject.set(x, "controls", js.undefined)
@@ -325,7 +317,7 @@ object AllHTMLAttributes {
     
     inline def setCoordsUndefined: Self = StObject.set(x, "coords", js.undefined)
     
-    inline def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+    inline def setCrossOrigin(value: anonymous | `use-credentials` | _empty): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
     
     inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
     
@@ -359,7 +351,9 @@ object AllHTMLAttributes {
     
     inline def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
     
-    inline def setFormAction(value: String): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+    inline def setFormAction(value: String | (js.Function1[/* formData */ FormData, Unit])): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+    
+    inline def setFormActionFunction1(value: /* formData */ FormData => Unit): Self = StObject.set(x, "formAction", js.Any.fromFunction1(value))
     
     inline def setFormActionUndefined: Self = StObject.set(x, "formAction", js.undefined)
     
@@ -528,10 +522,6 @@ object AllHTMLAttributes {
     inline def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
     inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
-    
-    inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
-    
-    inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
     
     inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     

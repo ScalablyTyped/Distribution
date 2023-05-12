@@ -16,7 +16,7 @@ trait ChargeItemDefinitionPropertyGroup
   /**
     * The price for a ChargeItem may be calculated as a base price with surcharges/deductions that apply in certain conditions. A ChargeItemDefinition resource that defines the prices, factors and conditions that apply to a billing code is currently under development. The priceComponent element can be used to offer transparency to the recipient of the Invoice of how the prices have been calculated.
     */
-  var priceComponent: js.UndefOr[js.Array[ChargeItemDefinitionPropertyGroupPriceComponent]] = js.undefined
+  var priceComponent: js.UndefOr[js.Array[MonetaryComponent]] = js.undefined
 }
 object ChargeItemDefinitionPropertyGroup {
   
@@ -34,10 +34,10 @@ object ChargeItemDefinitionPropertyGroup {
     
     inline def setApplicabilityVarargs(value: ChargeItemDefinitionApplicability*): Self = StObject.set(x, "applicability", js.Array(value*))
     
-    inline def setPriceComponent(value: js.Array[ChargeItemDefinitionPropertyGroupPriceComponent]): Self = StObject.set(x, "priceComponent", value.asInstanceOf[js.Any])
+    inline def setPriceComponent(value: js.Array[MonetaryComponent]): Self = StObject.set(x, "priceComponent", value.asInstanceOf[js.Any])
     
     inline def setPriceComponentUndefined: Self = StObject.set(x, "priceComponent", js.undefined)
     
-    inline def setPriceComponentVarargs(value: ChargeItemDefinitionPropertyGroupPriceComponent*): Self = StObject.set(x, "priceComponent", js.Array(value*))
+    inline def setPriceComponentVarargs(value: MonetaryComponent*): Self = StObject.set(x, "priceComponent", js.Array(value*))
   }
 }

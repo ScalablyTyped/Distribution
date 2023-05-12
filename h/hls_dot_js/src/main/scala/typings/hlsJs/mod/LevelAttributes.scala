@@ -1,5 +1,11 @@
 package typings.hlsJs.mod
 
+import typings.hlsJs.hlsJsStrings.HLG
+import typings.hlsJs.hlsJsStrings.NONE
+import typings.hlsJs.hlsJsStrings.PQ
+import typings.hlsJs.hlsJsStrings.SDR
+import typings.hlsJs.hlsJsStrings.`TYPE-0`
+import typings.hlsJs.hlsJsStrings.`TYPE-1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,39 +13,35 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait LevelAttributes extends AttrList {
   
-  var AUDIO: js.UndefOr[String] = js.native
+  var `ALLOWED-CPC`: js.UndefOr[String] = js.native
   
-  var AUTOSELECT: js.UndefOr[String] = js.native
+  var AUDIO: js.UndefOr[String] = js.native
   
   var `AVERAGE-BANDWIDTH`: js.UndefOr[String] = js.native
   
   var BANDWIDTH: js.UndefOr[String] = js.native
   
-  var BYTERANGE: js.UndefOr[String] = js.native
-  
-  var CHARACTERISTICS: js.UndefOr[String] = js.native
-  
   var `CLOSED-CAPTIONS`: js.UndefOr[String] = js.native
   
   var CODECS: js.UndefOr[String] = js.native
   
-  var DEFAULT: js.UndefOr[String] = js.native
-  
-  var FORCED: js.UndefOr[String] = js.native
-  
   var `FRAME-RATE`: js.UndefOr[String] = js.native
   
-  var LANGUAGE: js.UndefOr[String] = js.native
+  var `HDCP-LEVEL`: js.UndefOr[`TYPE-0` | `TYPE-1` | NONE] = js.native
   
-  var NAME: js.UndefOr[String] = js.native
-  
-  var `PROGRAM-ID`: js.UndefOr[String] = js.native
+  var `PATHWAY-ID`: js.UndefOr[String] = js.native
   
   var RESOLUTION: js.UndefOr[String] = js.native
   
+  var SCORE: js.UndefOr[String] = js.native
+  
+  var `STABLE-VARIANT-ID`: js.UndefOr[String] = js.native
+  
   var SUBTITLES: js.UndefOr[String] = js.native
   
-  var TYPE: js.UndefOr[String] = js.native
+  var `SUPPLEMENTAL-CODECS`: js.UndefOr[String] = js.native
   
-  var URI: js.UndefOr[String] = js.native
+  var VIDEO: js.UndefOr[String] = js.native
+  
+  var `VIDEO-RANGE`: js.UndefOr[SDR | HLG | PQ] = js.native
 }

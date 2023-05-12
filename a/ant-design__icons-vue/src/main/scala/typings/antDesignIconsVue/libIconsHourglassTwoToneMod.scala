@@ -16,7 +16,7 @@ object libIconsHourglassTwoToneMod extends Shortcut {
   @js.native
   trait HourglassTwoToneIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_HourglassTwoToneIconType: String = js.native

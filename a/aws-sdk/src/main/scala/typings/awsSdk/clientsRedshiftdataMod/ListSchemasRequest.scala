@@ -22,7 +22,7 @@ trait ListSchemasRequest extends StObject {
   var Database: String
   
   /**
-    * The database user name. This parameter is required when connecting to a cluster and authenticating using temporary credentials. 
+    * The database user name. This parameter is required when connecting to a cluster as a database user and authenticating using temporary credentials. 
     */
   var DbUser: js.UndefOr[String] = js.undefined
   
@@ -47,7 +47,7 @@ trait ListSchemasRequest extends StObject {
   var SecretArn: js.UndefOr[typings.awsSdk.clientsRedshiftdataMod.SecretArn] = js.undefined
   
   /**
-    * The serverless workgroup name. This parameter is required when connecting to a serverless workgroup and authenticating using either Secrets Manager or temporary credentials.
+    * The serverless workgroup name or Amazon Resource Name (ARN). This parameter is required when connecting to a serverless workgroup and authenticating using either Secrets Manager or temporary credentials.
     */
   var WorkgroupName: js.UndefOr[WorkgroupNameString] = js.undefined
 }

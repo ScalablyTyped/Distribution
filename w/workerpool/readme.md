@@ -1,7 +1,7 @@
 
 # Scala.js typings for workerpool
 
-Typings are for version 6.1
+Typings are for version 6.4
 
 ## Library description:
 Offload tasks to a pool of workers on node.js and in the browser

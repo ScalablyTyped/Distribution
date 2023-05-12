@@ -12,9 +12,14 @@ trait DomainSettingsForUpdate extends StObject {
   var ExecutionRoleIdentityConfig: js.UndefOr[typings.awsSdk.clientsSagemakerMod.ExecutionRoleIdentityConfig] = js.undefined
   
   /**
-    * A collection of RStudioServerPro Domain-level app settings to update.
+    * A collection of RStudioServerPro Domain-level app settings to update. A single RStudioServerPro application is created for a domain.
     */
   var RStudioServerProDomainSettingsForUpdate: js.UndefOr[typings.awsSdk.clientsSagemakerMod.RStudioServerProDomainSettingsForUpdate] = js.undefined
+  
+  /**
+    * The security groups for the Amazon Virtual Private Cloud that the Domain uses for communication between Domain-level apps and user apps.
+    */
+  var SecurityGroupIds: js.UndefOr[DomainSecurityGroupIds] = js.undefined
 }
 object DomainSettingsForUpdate {
   
@@ -33,5 +38,11 @@ object DomainSettingsForUpdate {
     inline def setRStudioServerProDomainSettingsForUpdate(value: RStudioServerProDomainSettingsForUpdate): Self = StObject.set(x, "RStudioServerProDomainSettingsForUpdate", value.asInstanceOf[js.Any])
     
     inline def setRStudioServerProDomainSettingsForUpdateUndefined: Self = StObject.set(x, "RStudioServerProDomainSettingsForUpdate", js.undefined)
+    
+    inline def setSecurityGroupIds(value: DomainSecurityGroupIds): Self = StObject.set(x, "SecurityGroupIds", value.asInstanceOf[js.Any])
+    
+    inline def setSecurityGroupIdsUndefined: Self = StObject.set(x, "SecurityGroupIds", js.undefined)
+    
+    inline def setSecurityGroupIdsVarargs(value: SecurityGroupId*): Self = StObject.set(x, "SecurityGroupIds", js.Array(value*))
   }
 }

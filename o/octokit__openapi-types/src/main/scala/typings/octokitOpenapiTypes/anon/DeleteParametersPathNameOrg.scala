@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteParametersPathNameOrg extends StObject {
   
   /**
-    * Remove a custom label from a self-hosted runner configured
+    * Remove a custom label from a self-hosted runner for an organization
+    * @description Remove a custom label from a self-hosted runner configured
     * in an organization. Returns the remaining labels from the runner.
     *
     * This endpoint returns a `404 Not Found` status if the custom label is not

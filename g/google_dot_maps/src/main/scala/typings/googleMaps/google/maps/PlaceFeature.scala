@@ -4,27 +4,22 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Available only in the v=beta channel: https://goo.gle/3oAthT3.
-  * An interface representing a feature with a place ID which includes features
-  * of type {@link google.maps.FeatureType.ADMINISTRATIVE_AREA_LEVEL_1}, {@link
-  * google.maps.FeatureType.ADMINISTRATIVE_AREA_LEVEL_2}, {@link
-  * google.maps.FeatureType.ADMINISTRATIVE_AREA_LEVEL_3}, {@link
-  * google.maps.FeatureType.ADMINISTRATIVE_AREA_LEVEL_4}, {@link
-  * google.maps.FeatureType.COUNTRY}, {@link
-  * google.maps.FeatureType.LOCALITY}, {@link
-  * google.maps.FeatureType.NEIGHBORHOOD}, {@link
-  * google.maps.FeatureType.POSTAL_CODE}, and {@link
-  * google.maps.FeatureType.SUBLOCALITY_LEVEL_1}.
-  */
 trait PlaceFeature
   extends StObject
      with Feature {
   
   /**
-    * The display name.
+    * Fetches a <code>Place</code> for this <code>PlaceFeature</code>. In the
+    * resulting <code>Place</code> object, the <code>id</code> and the
+    * <code>displayName</code> properties will be populated. The display name
+    * will be in the language the end user sees on the map. (Additional fields
+    * can be subsequently requested via <code>Place.fetchFields()</code>
+    * subject to normal Places API enablement and billing.) Do not call this
+    * from a <code>FeatureStyleFunction</code> since only synchronous
+    * FeatureStyleFunctions are supported. The promise is rejected if there was
+    * an error fetching the <code>Place</code>.
     */
-  var displayName: String
+  def fetchPlace(): js.Promise[typings.googleMaps.google.maps.places.Place]
   
   /**
     * The {@link google.maps.places.PlaceResult.place_id}.
@@ -33,15 +28,19 @@ trait PlaceFeature
 }
 object PlaceFeature {
   
-  inline def apply(displayName: String, featureType: FeatureType, placeId: String): PlaceFeature = {
-    val __obj = js.Dynamic.literal(displayName = displayName.asInstanceOf[js.Any], featureType = featureType.asInstanceOf[js.Any], placeId = placeId.asInstanceOf[js.Any])
+  inline def apply(
+    featureType: FeatureType,
+    fetchPlace: () => js.Promise[typings.googleMaps.google.maps.places.Place],
+    placeId: String
+  ): PlaceFeature = {
+    val __obj = js.Dynamic.literal(featureType = featureType.asInstanceOf[js.Any], fetchPlace = js.Any.fromFunction0(fetchPlace), placeId = placeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlaceFeature]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: PlaceFeature] (val x: Self) extends AnyVal {
     
-    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setFetchPlace(value: () => js.Promise[typings.googleMaps.google.maps.places.Place]): Self = StObject.set(x, "fetchPlace", js.Any.fromFunction0(value))
     
     inline def setPlaceId(value: String): Self = StObject.set(x, "placeId", value.asInstanceOf[js.Any])
   }

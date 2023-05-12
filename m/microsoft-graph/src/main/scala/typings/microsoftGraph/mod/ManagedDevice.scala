@@ -8,7 +8,12 @@ trait ManagedDevice
   extends StObject
      with Entity {
   
-  // Code that allows the Activation Lock on a device to be bypassed. This property is read-only.
+  /**
+    * The code that allows the Activation Lock on managed device to be bypassed. Default, is Null (Non-Default property) for
+    * this property when returned as part of managedDevice entity in LIST call. Individual GET call with select query options
+    * is needed to retrieve actual values. Supports: $select. $Search is not supported. Read-only. This property is
+    * read-only.
+    */
   var activationLockBypassCode: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Android security patch level. This property is read-only.
@@ -82,7 +87,12 @@ trait ManagedDevice
   // Enrollment time of the device. This property is read-only.
   var enrolledDateTime: js.UndefOr[String] = js.undefined
   
-  // Ethernet MAC. This property is read-only.
+  /**
+    * Indicates Ethernet MAC Address of the device. Default, is Null (Non-Default property) for this property when returned
+    * as part of managedDevice entity. Individual get call with select query options is needed to retrieve actual values.
+    * Example: deviceManagement/managedDevices({managedDeviceId})?$select=ethernetMacAddress Supports: $select. $Search is
+    * not supported. Read-only. This property is read-only.
+    */
   var ethernetMacAddress: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
@@ -102,10 +112,14 @@ trait ManagedDevice
   // Last time the device contacted Exchange. This property is read-only.
   var exchangeLastSuccessfulSyncDateTime: js.UndefOr[String] = js.undefined
   
-  // Free Storage in Bytes. This property is read-only.
+  // Free Storage in Bytes. Default value is 0. Read-only. This property is read-only.
   var freeStorageSpaceInBytes: js.UndefOr[Double] = js.undefined
   
-  // Integrated Circuit Card Identifier, it is A SIM card's unique identification number. This property is read-only.
+  /**
+    * Integrated Circuit Card Identifier, it is A SIM card's unique identification number. Return default value null in LIST
+    * managedDevices. Real value only returned in singel device GET call with device id and included in select parameter.
+    * Supports: $select. $Search is not supported. Read-only. This property is read-only.
+    */
   var iccid: js.UndefOr[NullableOption[String]] = js.undefined
   
   // IMEI. This property is read-only.
@@ -136,6 +150,9 @@ trait ManagedDevice
     */
   var managementAgent: js.UndefOr[ManagementAgentType] = js.undefined
   
+  // Reports device management certificate expiration date. This property is read-only.
+  var managementCertificateExpirationDate: js.UndefOr[String] = js.undefined
+  
   // Manufacturer of the device. This property is read-only.
   var manufacturer: js.UndefOr[NullableOption[String]] = js.undefined
   
@@ -145,7 +162,10 @@ trait ManagedDevice
   // Model of the device. This property is read-only.
   var model: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // Notes on the device created by IT Admin
+  /**
+    * Notes on the device created by IT Admin. Return default value null in LIST managedDevices. Real value only returned in
+    * singel device GET call with device id and included in select parameter. Supports: $select. $Search is not supported.
+    */
   var notes: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Operating system of the device. Windows, iOS, etc. This property is read-only.
@@ -164,7 +184,11 @@ trait ManagedDevice
   // Phone number of the device. This property is read-only.
   var phoneNumber: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // Total Memory in Bytes. This property is read-only.
+  /**
+    * Total Memory in Bytes. Return default value 0 in LIST managedDevices. Real value only returned in singel device GET
+    * call with device id and included in select parameter. Supports: $select. Default value is 0. Read-only. This property
+    * is read-only.
+    */
   var physicalMemoryInBytes: js.UndefOr[Double] = js.undefined
   
   // An error string that identifies issues when creating Remote Assistance session objects. This property is read-only.
@@ -172,6 +196,9 @@ trait ManagedDevice
   
   // Url that allows a Remote Assistance session to be established with the device. This property is read-only.
   var remoteAssistanceSessionUrl: js.UndefOr[NullableOption[String]] = js.undefined
+  
+  // Reports if the managed iOS device is user approval enrollment. This property is read-only.
+  var requireUserEnrollmentApproval: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // SerialNumber. This property is read-only.
   var serialNumber: js.UndefOr[NullableOption[String]] = js.undefined
@@ -182,7 +209,11 @@ trait ManagedDevice
   // Total Storage in Bytes. This property is read-only.
   var totalStorageSpaceInBytes: js.UndefOr[Double] = js.undefined
   
-  // Unique Device Identifier for iOS and macOS devices. This property is read-only.
+  /**
+    * Unique Device Identifier for iOS and macOS devices. Return default value null in LIST managedDevices. Real value only
+    * returned in singel device GET call with device id and included in select parameter. Supports: $select. $Search is not
+    * supported. Read-only. This property is read-only.
+    */
   var udid: js.UndefOr[NullableOption[String]] = js.undefined
   
   // User display name. This property is read-only.
@@ -193,6 +224,9 @@ trait ManagedDevice
   
   // Device user principal name. This property is read-only.
   var userPrincipalName: js.UndefOr[NullableOption[String]] = js.undefined
+  
+  // The primary users associated with the managed device.
+  var users: js.UndefOr[NullableOption[js.Array[User]]] = js.undefined
   
   // Wi-Fi MAC. This property is read-only.
   var wiFiMacAddress: js.UndefOr[NullableOption[String]] = js.undefined
@@ -391,6 +425,10 @@ object ManagedDevice {
     
     inline def setManagementAgentUndefined: Self = StObject.set(x, "managementAgent", js.undefined)
     
+    inline def setManagementCertificateExpirationDate(value: String): Self = StObject.set(x, "managementCertificateExpirationDate", value.asInstanceOf[js.Any])
+    
+    inline def setManagementCertificateExpirationDateUndefined: Self = StObject.set(x, "managementCertificateExpirationDate", js.undefined)
+    
     inline def setManufacturer(value: NullableOption[String]): Self = StObject.set(x, "manufacturer", value.asInstanceOf[js.Any])
     
     inline def setManufacturerNull: Self = StObject.set(x, "manufacturer", null)
@@ -453,6 +491,12 @@ object ManagedDevice {
     
     inline def setRemoteAssistanceSessionUrlUndefined: Self = StObject.set(x, "remoteAssistanceSessionUrl", js.undefined)
     
+    inline def setRequireUserEnrollmentApproval(value: NullableOption[Boolean]): Self = StObject.set(x, "requireUserEnrollmentApproval", value.asInstanceOf[js.Any])
+    
+    inline def setRequireUserEnrollmentApprovalNull: Self = StObject.set(x, "requireUserEnrollmentApproval", null)
+    
+    inline def setRequireUserEnrollmentApprovalUndefined: Self = StObject.set(x, "requireUserEnrollmentApproval", js.undefined)
+    
     inline def setSerialNumber(value: NullableOption[String]): Self = StObject.set(x, "serialNumber", value.asInstanceOf[js.Any])
     
     inline def setSerialNumberNull: Self = StObject.set(x, "serialNumber", null)
@@ -492,6 +536,14 @@ object ManagedDevice {
     inline def setUserPrincipalNameNull: Self = StObject.set(x, "userPrincipalName", null)
     
     inline def setUserPrincipalNameUndefined: Self = StObject.set(x, "userPrincipalName", js.undefined)
+    
+    inline def setUsers(value: NullableOption[js.Array[User]]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
+    
+    inline def setUsersNull: Self = StObject.set(x, "users", null)
+    
+    inline def setUsersUndefined: Self = StObject.set(x, "users", js.undefined)
+    
+    inline def setUsersVarargs(value: User*): Self = StObject.set(x, "users", js.Array(value*))
     
     inline def setWiFiMacAddress(value: NullableOption[String]): Self = StObject.set(x, "wiFiMacAddress", value.asInstanceOf[js.Any])
     

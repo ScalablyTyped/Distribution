@@ -22,13 +22,17 @@ trait OmitRollupOptionspluginsi extends StObject {
   
   var acorn: js.UndefOr[Record[String, Any]] = js.undefined
   
-  var acornInjectPlugins: js.UndefOr[js.Array[js.Function0[Any]] | js.Function0[Any]] = js.undefined
+  var acornInjectPlugins: js.UndefOr[
+    (js.Array[js.Function1[/* repeated */ Any, Any]]) | (js.Function1[/* repeated */ Any, Any])
+  ] = js.undefined
   
-  var cache: js.UndefOr[`false` | RollupCache] = js.undefined
+  var cache: js.UndefOr[Boolean | RollupCache] = js.undefined
   
   var context: js.UndefOr[String] = js.undefined
   
   var experimentalCacheExpiry: js.UndefOr[Double] = js.undefined
+  
+  var experimentalLogSideEffects: js.UndefOr[Boolean] = js.undefined
   
   var external: js.UndefOr[ExternalOption] = js.undefined
   
@@ -72,17 +76,17 @@ object OmitRollupOptionspluginsi {
     
     inline def setAcorn(value: Record[String, Any]): Self = StObject.set(x, "acorn", value.asInstanceOf[js.Any])
     
-    inline def setAcornInjectPlugins(value: js.Array[js.Function0[Any]] | js.Function0[Any]): Self = StObject.set(x, "acornInjectPlugins", value.asInstanceOf[js.Any])
+    inline def setAcornInjectPlugins(value: (js.Array[js.Function1[/* repeated */ Any, Any]]) | (js.Function1[/* repeated */ Any, Any])): Self = StObject.set(x, "acornInjectPlugins", value.asInstanceOf[js.Any])
     
-    inline def setAcornInjectPluginsFunction0(value: () => Any): Self = StObject.set(x, "acornInjectPlugins", js.Any.fromFunction0(value))
+    inline def setAcornInjectPluginsFunction1(value: /* repeated */ Any => Any): Self = StObject.set(x, "acornInjectPlugins", js.Any.fromFunction1(value))
     
     inline def setAcornInjectPluginsUndefined: Self = StObject.set(x, "acornInjectPlugins", js.undefined)
     
-    inline def setAcornInjectPluginsVarargs(value: js.Function0[Any]*): Self = StObject.set(x, "acornInjectPlugins", js.Array(value*))
+    inline def setAcornInjectPluginsVarargs(value: (js.Function1[/* repeated */ Any, Any])*): Self = StObject.set(x, "acornInjectPlugins", js.Array(value*))
     
     inline def setAcornUndefined: Self = StObject.set(x, "acorn", js.undefined)
     
-    inline def setCache(value: `false` | RollupCache): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+    inline def setCache(value: Boolean | RollupCache): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     
     inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
     
@@ -93,6 +97,10 @@ object OmitRollupOptionspluginsi {
     inline def setExperimentalCacheExpiry(value: Double): Self = StObject.set(x, "experimentalCacheExpiry", value.asInstanceOf[js.Any])
     
     inline def setExperimentalCacheExpiryUndefined: Self = StObject.set(x, "experimentalCacheExpiry", js.undefined)
+    
+    inline def setExperimentalLogSideEffects(value: Boolean): Self = StObject.set(x, "experimentalLogSideEffects", value.asInstanceOf[js.Any])
+    
+    inline def setExperimentalLogSideEffectsUndefined: Self = StObject.set(x, "experimentalLogSideEffects", js.undefined)
     
     inline def setExternal(value: ExternalOption): Self = StObject.set(x, "external", value.asInstanceOf[js.Any])
     

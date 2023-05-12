@@ -48,9 +48,24 @@ trait Claim
   var diagnosis: js.UndefOr[js.Array[ClaimDiagnosis]] = js.undefined
   
   /**
+    * For example DRG (Diagnosis Related Group) or a bundled billing code. A patient may have a diagnosis of a Myocardial Infarction and a DRG for HeartAttack would be assigned. The Claim item (and possible subsequent claims) would refer to the DRG for those line items that were for services related to the heart attack event.
+    */
+  var diagnosisRelatedGroup: js.UndefOr[CodeableConcept] = js.undefined
+  
+  /**
+    * This will typically be the encounter the event occurred within, but some activities may be initiated prior to or after the official completion of an encounter but still be tied to the context of the encounter.
+    */
+  var encounter: js.UndefOr[js.Array[Reference]] = js.undefined
+  
+  /**
     * Individual who created the claim, predetermination or preauthorization.
     */
   var enterer: js.UndefOr[Reference] = js.undefined
+  
+  /**
+    * Information code for an event with a corresponding date or period.
+    */
+  var event: js.UndefOr[js.Array[ClaimEvent]] = js.undefined
   
   /**
     * Facility where the services were provided.
@@ -70,7 +85,7 @@ trait Claim
   /**
     * All insurance coverages for the patient which may be applicable for reimbursement, of the products and services listed in the claim, are typically provided in the claim to allow insurers to confirm the ordering of the insurance coverages relative to local 'coordination of benefit' rules. One coverage (and only one) with 'focal=true' is to be used in the adjudication of this claim. Coverages appearing before the focal Coverage in the list, and where 'Coverage.subrogation=false', should provide a reference to the ClaimResponse containing the adjudication results of the prior claim.
     */
-  var insurance: js.Array[ClaimInsurance]
+  var insurance: js.UndefOr[js.Array[ClaimInsurance]] = js.undefined
   
   /**
     * The Insurer who is target of the request.
@@ -93,19 +108,24 @@ trait Claim
   var patient: Reference
   
   /**
+    * The amount paid by the patient, in total at the claim claim level or specifically for the item and detail level, to the provider for goods and services.
+    */
+  var patientPaid: js.UndefOr[Money] = js.undefined
+  
+  /**
     * Often providers agree to receive the benefits payable to reduce the near-term costs to the patient. The insurer may decline to pay the provider and choose to pay the subscriber instead.
     */
   var payee: js.UndefOr[ClaimPayee] = js.undefined
   
   /**
-    * Prescription to support the dispensing of pharmacy, device or vision products.
+    * Prescription is the document/authorization given to the claim author for them to provide products and services for which consideration (reimbursement) is sought. Could be a RX for medications, an 'order' for oxygen or wheelchair or physiotherapy treatments.
     */
   var prescription: js.UndefOr[Reference] = js.undefined
   
   /**
-    * If a claim processor is unable to complete the processing as per the priority then they should generate and error and not process the request.
+    * If a claim processor is unable to complete the processing as per the priority then they should generate an error and not process the request.
     */
-  var priority: CodeableConcept
+  var priority: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * Procedures performed on the patient relevant to the billing items with the claim.
@@ -113,9 +133,9 @@ trait Claim
   var procedure: js.UndefOr[js.Array[ClaimProcedure]] = js.undefined
   
   /**
-    * Typically this field would be 1..1 where this party is responsible for the claim but not necessarily professionally responsible for the provision of the individual products and services listed below.
+    * Typically this field would be 1..1 where this party is accountable for the data content within the claim but is not necessarily the facility, provider group or practitioner who provided the products and services listed within this claim resource. This field is the Billing Provider, for example, a facility, provider group, lab or practitioner.
     */
-  var provider: Reference
+  var provider: js.UndefOr[Reference] = js.undefined
   
   /**
     * The referral resource which lists the date, practitioner, reason and other supporting information.
@@ -152,12 +172,17 @@ trait Claim
   var total: js.UndefOr[Money] = js.undefined
   
   /**
-    * The majority of jurisdictions use: oral, pharmacy, vision, professional and institutional, or variants on those terms, as the general styles of claims. The valueset is extensible to accommodate other jurisdictional requirements.
+    * Trace number for tracking purposes. May be defined at the jurisdiction level or between trading partners.
+    */
+  var traceNumber: js.UndefOr[js.Array[Identifier]] = js.undefined
+  
+  /**
+    * The code system provides oral, pharmacy, vision, professional and institutional claim types. Those supported depends on the requirements of the jurisdiction. The valueset is extensible to accommodate other types of claims as required by the jurisdiction.
     */
   var `type`: CodeableConcept
   
   /**
-    * A code to indicate whether the nature of the request is: to request adjudication of products and services previously rendered; or requesting authorization and adjudication for provision in the future; or requesting the non-binding adjudication of the listed products and services which could be provided in the future.
+    * A code to indicate whether the nature of the request is: Claim - A request to an Insurer to adjudicate the supplied charges for health care goods and services under the identified policy and to pay the determined Benefit amount, if any; Preauthorization - A request to an Insurer to adjudicate the supplied proposed future charges for health care goods and services under the identified policy and to approve the services and provide the expected benefit amounts and potentially to reserve funds to pay the benefits when Claims for the indicated services are later submitted; or, Pre-determination - A request to an Insurer to adjudicate the supplied 'what if' charges for health care goods and services under the identified policy and report back what the Benefit payable would be had the services actually been provided.
     */
   var use: claim_ | preauthorization | predetermination
 }
@@ -165,15 +190,12 @@ object Claim {
   
   inline def apply(
     created: String,
-    insurance: js.Array[ClaimInsurance],
     patient: Reference,
-    priority: CodeableConcept,
-    provider: Reference,
     status: active | cancelled | draft | `entered-in-error`,
     `type`: CodeableConcept,
     use: claim_ | preauthorization | predetermination
   ): Claim = {
-    val __obj = js.Dynamic.literal(created = created.asInstanceOf[js.Any], insurance = insurance.asInstanceOf[js.Any], patient = patient.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any], provider = provider.asInstanceOf[js.Any], resourceType = "Claim", status = status.asInstanceOf[js.Any], use = use.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(created = created.asInstanceOf[js.Any], patient = patient.asInstanceOf[js.Any], resourceType = "Claim", status = status.asInstanceOf[js.Any], use = use.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Claim]
   }
@@ -199,13 +221,29 @@ object Claim {
     
     inline def setDiagnosis(value: js.Array[ClaimDiagnosis]): Self = StObject.set(x, "diagnosis", value.asInstanceOf[js.Any])
     
+    inline def setDiagnosisRelatedGroup(value: CodeableConcept): Self = StObject.set(x, "diagnosisRelatedGroup", value.asInstanceOf[js.Any])
+    
+    inline def setDiagnosisRelatedGroupUndefined: Self = StObject.set(x, "diagnosisRelatedGroup", js.undefined)
+    
     inline def setDiagnosisUndefined: Self = StObject.set(x, "diagnosis", js.undefined)
     
     inline def setDiagnosisVarargs(value: ClaimDiagnosis*): Self = StObject.set(x, "diagnosis", js.Array(value*))
     
+    inline def setEncounter(value: js.Array[Reference]): Self = StObject.set(x, "encounter", value.asInstanceOf[js.Any])
+    
+    inline def setEncounterUndefined: Self = StObject.set(x, "encounter", js.undefined)
+    
+    inline def setEncounterVarargs(value: Reference*): Self = StObject.set(x, "encounter", js.Array(value*))
+    
     inline def setEnterer(value: Reference): Self = StObject.set(x, "enterer", value.asInstanceOf[js.Any])
     
     inline def setEntererUndefined: Self = StObject.set(x, "enterer", js.undefined)
+    
+    inline def setEvent(value: js.Array[ClaimEvent]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    
+    inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
+    
+    inline def setEventVarargs(value: ClaimEvent*): Self = StObject.set(x, "event", js.Array(value*))
     
     inline def setFacility(value: Reference): Self = StObject.set(x, "facility", value.asInstanceOf[js.Any])
     
@@ -222,6 +260,8 @@ object Claim {
     inline def setIdentifierVarargs(value: Identifier*): Self = StObject.set(x, "identifier", js.Array(value*))
     
     inline def setInsurance(value: js.Array[ClaimInsurance]): Self = StObject.set(x, "insurance", value.asInstanceOf[js.Any])
+    
+    inline def setInsuranceUndefined: Self = StObject.set(x, "insurance", js.undefined)
     
     inline def setInsuranceVarargs(value: ClaimInsurance*): Self = StObject.set(x, "insurance", js.Array(value*))
     
@@ -241,6 +281,10 @@ object Claim {
     
     inline def setPatient(value: Reference): Self = StObject.set(x, "patient", value.asInstanceOf[js.Any])
     
+    inline def setPatientPaid(value: Money): Self = StObject.set(x, "patientPaid", value.asInstanceOf[js.Any])
+    
+    inline def setPatientPaidUndefined: Self = StObject.set(x, "patientPaid", js.undefined)
+    
     inline def setPayee(value: ClaimPayee): Self = StObject.set(x, "payee", value.asInstanceOf[js.Any])
     
     inline def setPayeeUndefined: Self = StObject.set(x, "payee", js.undefined)
@@ -251,6 +295,8 @@ object Claim {
     
     inline def setPriority(value: CodeableConcept): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
+    inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+    
     inline def setProcedure(value: js.Array[ClaimProcedure]): Self = StObject.set(x, "procedure", value.asInstanceOf[js.Any])
     
     inline def setProcedureUndefined: Self = StObject.set(x, "procedure", js.undefined)
@@ -258,6 +304,8 @@ object Claim {
     inline def setProcedureVarargs(value: ClaimProcedure*): Self = StObject.set(x, "procedure", js.Array(value*))
     
     inline def setProvider(value: Reference): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
+    
+    inline def setProviderUndefined: Self = StObject.set(x, "provider", js.undefined)
     
     inline def setReferral(value: Reference): Self = StObject.set(x, "referral", value.asInstanceOf[js.Any])
     
@@ -286,6 +334,12 @@ object Claim {
     inline def setTotal(value: Money): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     
     inline def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
+    
+    inline def setTraceNumber(value: js.Array[Identifier]): Self = StObject.set(x, "traceNumber", value.asInstanceOf[js.Any])
+    
+    inline def setTraceNumberUndefined: Self = StObject.set(x, "traceNumber", js.undefined)
+    
+    inline def setTraceNumberVarargs(value: Identifier*): Self = StObject.set(x, "traceNumber", js.Array(value*))
     
     inline def setType(value: CodeableConcept): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

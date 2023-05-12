@@ -64,9 +64,9 @@ object PDFWorker {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("pdfjs-dist/types/src/display/api", "PDFWorker.__#17@#workerPorts")
+  @JSImport("pdfjs-dist/types/src/display/api", "PDFWorker.__#21@#workerPorts")
   @js.native
-  val `__Numbersign17@NumbersignworkerPorts`: WeakMap[js.Object, Any] = js.native
+  val `__Numbersign21@NumbersignworkerPorts`: WeakMap[js.Object, Any] = js.native
   
   /**
     * @param {PDFWorkerParameters} params - The worker initialization parameters.

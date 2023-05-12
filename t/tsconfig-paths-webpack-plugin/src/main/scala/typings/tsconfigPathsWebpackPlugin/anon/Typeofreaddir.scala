@@ -4,7 +4,7 @@ import typings.node.NodeJS.ErrnoException
 import typings.node.anon.Encoding
 import typings.node.anon.ObjectEncodingOptionswith
 import typings.node.anon.ObjectEncodingOptionswithEncoding
-import typings.node.anon.WithFileTypes
+import typings.node.anon.Recursive
 import typings.node.bufferMod.global.Buffer
 import typings.node.bufferMod.global.BufferEncoding
 import typings.node.fsMod.Dirent
@@ -48,7 +48,7 @@ trait Typeofreaddir extends StObject {
   ): Unit = js.native
   def apply(
     path: PathLike,
-    options: WithFileTypes,
+    options: Recursive,
     callback: js.Function2[/* err */ ErrnoException | Null, /* files */ js.Array[String], Unit]
   ): Unit = js.native
   def apply(

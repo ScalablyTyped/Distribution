@@ -38,7 +38,7 @@ trait GPUPrimitiveState extends StObject {
   var topology: js.UndefOr[GPUPrimitiveTopology] = js.undefined
   
   /**
-    * If true, indicates that depth clipping is disabled. See [[#depth-clip-control]] for additional details.
+    * If true, indicates that depth clipping is disabled.
     * Requires the {@link GPUFeatureName#"depth-clip-control"} feature to be enabled.
     */
   var unclippedDepth: js.UndefOr[Boolean] = js.undefined

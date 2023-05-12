@@ -5,10 +5,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Available only in the v=beta channel: https://goo.gle/3oAthT3.
-  * The details for a trip returned by Fleet Engine.
-  */
 trait Trip extends StObject {
   
   /**
@@ -36,12 +32,12 @@ trait Trip extends StObject {
     * In the format &quot;providers/{provider_id}/trips/{trip_id}&quot;. The
     * trip_id must be a unique identifier.
     */
-  var name: String | Null
+  var name: String
   
   /**
     * Number of passengers on this trip; does not include the driver.
     */
-  var passengerCount: Double | Null
+  var passengerCount: Double
   
   /**
     * The estimated future time when the passengers will be picked up, or the
@@ -63,7 +59,7 @@ trait Trip extends StObject {
     * An array of waypoints indicating the path from the current location to
     * the drop-off point.
     */
-  var remainingWaypoints: js.Array[VehicleWaypoint] | Null
+  var remainingWaypoints: js.Array[VehicleWaypoint]
   
   /**
     * Current status of the trip. Possible values are UNKNOWN_TRIP_STATUS, NEW,
@@ -71,24 +67,31 @@ trait Trip extends StObject {
     * ARRIVED_AT_INTERMEDIATE_DESTINATION, ENROUTE_TO_INTERMEDIATE_DESTINATION,
     * ENROUTE_TO_DROPOFF, COMPLETE, or CANCELED.
     */
-  var status: String | Null
+  var status: String
   
   /**
     * The type of the trip. Possible values are UNKNOWN_TRIP_TYPE, SHARED or
     * EXCLUSIVE.
     */
-  var `type`: String | Null
+  var `type`: String
   
   /**
     * ID of the vehicle making this trip.
     */
-  var vehicleId: String | Null
+  var vehicleId: String
 }
 object Trip {
   
-  inline def apply(): Trip = {
-    val __obj = js.Dynamic.literal(actualDropOffLocation = null, actualPickupLocation = null, dropOffTime = null, latestVehicleLocationUpdate = null, name = null, passengerCount = null, pickupTime = null, plannedDropOffLocation = null, plannedPickupLocation = null, remainingWaypoints = null, status = null, vehicleId = null)
-    __obj.updateDynamic("type")(null)
+  inline def apply(
+    name: String,
+    passengerCount: Double,
+    remainingWaypoints: js.Array[VehicleWaypoint],
+    status: String,
+    `type`: String,
+    vehicleId: String
+  ): Trip = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], passengerCount = passengerCount.asInstanceOf[js.Any], remainingWaypoints = remainingWaypoints.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], vehicleId = vehicleId.asInstanceOf[js.Any], actualDropOffLocation = null, actualPickupLocation = null, dropOffTime = null, latestVehicleLocationUpdate = null, pickupTime = null, plannedDropOffLocation = null, plannedPickupLocation = null)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Trip]
   }
   
@@ -113,11 +116,7 @@ object Trip {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setNameNull: Self = StObject.set(x, "name", null)
-    
     inline def setPassengerCount(value: Double): Self = StObject.set(x, "passengerCount", value.asInstanceOf[js.Any])
-    
-    inline def setPassengerCountNull: Self = StObject.set(x, "passengerCount", null)
     
     inline def setPickupTime(value: js.Date): Self = StObject.set(x, "pickupTime", value.asInstanceOf[js.Any])
     
@@ -133,20 +132,12 @@ object Trip {
     
     inline def setRemainingWaypoints(value: js.Array[VehicleWaypoint]): Self = StObject.set(x, "remainingWaypoints", value.asInstanceOf[js.Any])
     
-    inline def setRemainingWaypointsNull: Self = StObject.set(x, "remainingWaypoints", null)
-    
     inline def setRemainingWaypointsVarargs(value: VehicleWaypoint*): Self = StObject.set(x, "remainingWaypoints", js.Array(value*))
     
     inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    inline def setStatusNull: Self = StObject.set(x, "status", null)
-    
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    inline def setTypeNull: Self = StObject.set(x, "type", null)
-    
     inline def setVehicleId(value: String): Self = StObject.set(x, "vehicleId", value.asInstanceOf[js.Any])
-    
-    inline def setVehicleIdNull: Self = StObject.set(x, "vehicleId", null)
   }
 }

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "it-pipe" : "2.0.4"
+      "it-pipe" : "3.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "it-pipe" : "2.0.4"
+      "it-pipe" : "3.0.1"
     }
   ],
   "compile-devDependencies" : [

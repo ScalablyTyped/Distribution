@@ -4,7 +4,7 @@ import typings.node.NodeJS.ErrnoException
 import typings.node.dnsMod.LookupOneOptions
 import typings.node.netMod.LookupFunction
 import typings.undici.mod.Agent
-import typings.undici.typesConnectorMod.BuildOptions
+import typings.undici.typesConnectorMod.buildConnector.BuildOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

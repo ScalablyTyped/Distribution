@@ -1,7 +1,7 @@
 
 # Scala.js typings for newrelic
 
-Typings are for version 7.0
+Typings are for version 9.13
 
 ## Library description:
 New Relic agent

@@ -1,11 +1,15 @@
 package typings.firebaseAuth
 
-import typings.firebaseAuth.anon.PartialServerErrorMapServCORSUNSUPPORTED
+import typings.firebaseAuth.anon.PartialServerErrorMapServCREDENTIALMISMATCH
 import typings.firebaseAuth.anon.TenantId
 import typings.firebaseAuth.distNodeSrcCoreErrorsMod.AuthErrorCode
 import typings.firebaseAuth.distNodeSrcCoreUtilDelayMod.Delay
 import typings.firebaseAuth.distNodeSrcModelIdTokenMod.IdTokenResponse
 import typings.firebaseAuth.distNodeSrcModelPublicTypesMod.Auth
+import typings.firebaseAuth.firebaseAuthStrings.CLIENT_TYPE_ANDROID
+import typings.firebaseAuth.firebaseAuthStrings.CLIENT_TYPE_IOS
+import typings.firebaseAuth.firebaseAuthStrings.CLIENT_TYPE_WEB
+import typings.firebaseAuth.firebaseAuthStrings.RECAPTCHA_ENTERPRISE
 import typings.firebaseAuth.firebaseAuthStrings.Slashv1SlashaccountsColoncreateAuthUri
 import typings.firebaseAuth.firebaseAuthStrings.Slashv1SlashaccountsColondelete
 import typings.firebaseAuth.firebaseAuthStrings.Slashv1SlashaccountsColonlookup
@@ -26,11 +30,16 @@ import typings.firebaseAuth.firebaseAuthStrings.Slashv2SlashaccountsSlashmfaEnro
 import typings.firebaseAuth.firebaseAuthStrings.Slashv2SlashaccountsSlashmfaEnrollmentColonwithdraw
 import typings.firebaseAuth.firebaseAuthStrings.Slashv2SlashaccountsSlashmfaSignInColonfinalize
 import typings.firebaseAuth.firebaseAuthStrings.Slashv2SlashaccountsSlashmfaSignInColonstart
+import typings.firebaseAuth.firebaseAuthStrings.Slashv2SlashrecaptchaConfig
 import typings.firebaseAuth.firebaseAuthStrings.`Content-Type`
 import typings.firebaseAuth.firebaseAuthStrings.`X-Client-Version`
+import typings.firebaseAuth.firebaseAuthStrings.`X-Firebase-AppCheck`
 import typings.firebaseAuth.firebaseAuthStrings.`X-Firebase-Client`
 import typings.firebaseAuth.firebaseAuthStrings.`X-Firebase-Locale`
 import typings.firebaseAuth.firebaseAuthStrings.`X-Firebase-gmpid`
+import typings.firebaseAuth.firebaseAuthStrings.getOobCode
+import typings.firebaseAuth.firebaseAuthStrings.signInWithPassword
+import typings.firebaseAuth.firebaseAuthStrings.signUpPassword
 import typings.firebaseUtil.mod.FirebaseError
 import typings.std.Response
 import org.scalablytyped.runtime.StObject
@@ -60,19 +69,19 @@ object distNodeSrcApiMod {
     method: HttpMethod,
     path: Endpoint,
     request: T,
-    customErrorMap: PartialServerErrorMapServCORSUNSUPPORTED
+    customErrorMap: PartialServerErrorMapServCREDENTIALMISMATCH
   ): js.Promise[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("_performApiRequest")(auth.asInstanceOf[js.Any], method.asInstanceOf[js.Any], path.asInstanceOf[js.Any], request.asInstanceOf[js.Any], customErrorMap.asInstanceOf[js.Any])).asInstanceOf[js.Promise[V]]
   inline def performApiRequest[T, V](
     auth: Auth,
     method: HttpMethod,
     path: Endpoint,
     request: Unit,
-    customErrorMap: PartialServerErrorMapServCORSUNSUPPORTED
+    customErrorMap: PartialServerErrorMapServCREDENTIALMISMATCH
   ): js.Promise[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("_performApiRequest")(auth.asInstanceOf[js.Any], method.asInstanceOf[js.Any], path.asInstanceOf[js.Any], request.asInstanceOf[js.Any], customErrorMap.asInstanceOf[js.Any])).asInstanceOf[js.Promise[V]]
   
   inline def performFetchWithErrorHandling[V](
     auth: Auth,
-    customErrorMap: PartialServerErrorMapServCORSUNSUPPORTED,
+    customErrorMap: PartialServerErrorMapServCREDENTIALMISMATCH,
     fetchFn: js.Function0[js.Promise[Response]]
   ): js.Promise[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("_performFetchWithErrorHandling")(auth.asInstanceOf[js.Any], customErrorMap.asInstanceOf[js.Any], fetchFn.asInstanceOf[js.Any])).asInstanceOf[js.Promise[V]]
   
@@ -83,14 +92,14 @@ object distNodeSrcApiMod {
     method: HttpMethod,
     path: Endpoint,
     request: T,
-    customErrorMap: PartialServerErrorMapServCORSUNSUPPORTED
+    customErrorMap: PartialServerErrorMapServCREDENTIALMISMATCH
   ): js.Promise[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("_performSignInRequest")(auth.asInstanceOf[js.Any], method.asInstanceOf[js.Any], path.asInstanceOf[js.Any], request.asInstanceOf[js.Any], customErrorMap.asInstanceOf[js.Any])).asInstanceOf[js.Promise[V]]
   inline def performSignInRequest[T, V /* <: IdTokenResponse */](
     auth: Auth,
     method: HttpMethod,
     path: Endpoint,
     request: Unit,
-    customErrorMap: PartialServerErrorMapServCORSUNSUPPORTED
+    customErrorMap: PartialServerErrorMapServCREDENTIALMISMATCH
   ): js.Promise[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("_performSignInRequest")(auth.asInstanceOf[js.Any], method.asInstanceOf[js.Any], path.asInstanceOf[js.Any], request.asInstanceOf[js.Any], customErrorMap.asInstanceOf[js.Any])).asInstanceOf[js.Promise[V]]
   
   /* Rewritten from type alias, can be one of: 
@@ -114,6 +123,7 @@ object distNodeSrcApiMod {
     - typings.firebaseAuth.firebaseAuthStrings.Slashv2SlashaccountsSlashmfaSignInColonfinalize
     - typings.firebaseAuth.firebaseAuthStrings.Slashv2SlashaccountsSlashmfaEnrollmentColonwithdraw
     - typings.firebaseAuth.firebaseAuthStrings.Slashv1Slashprojects
+    - typings.firebaseAuth.firebaseAuthStrings.Slashv2SlashrecaptchaConfig
   */
   trait Endpoint extends StObject
   object Endpoint {
@@ -129,6 +139,8 @@ object distNodeSrcApiMod {
     inline def GET_ACCOUNT_INFO: Slashv1SlashaccountsColonlookup = "/v1/accounts:lookup".asInstanceOf[Slashv1SlashaccountsColonlookup]
     
     inline def GET_PROJECT_CONFIG: Slashv1Slashprojects = "/v1/projects".asInstanceOf[Slashv1Slashprojects]
+    
+    inline def GET_RECAPTCHA_CONFIG: Slashv2SlashrecaptchaConfig = "/v2/recaptchaConfig".asInstanceOf[Slashv2SlashrecaptchaConfig]
     
     inline def GET_RECAPTCHA_PARAM: Slashv1SlashrecaptchaParams = "/v1/recaptchaParams".asInstanceOf[Slashv1SlashrecaptchaParams]
     
@@ -165,6 +177,7 @@ object distNodeSrcApiMod {
     - typings.firebaseAuth.firebaseAuthStrings.`X-Client-Version`
     - typings.firebaseAuth.firebaseAuthStrings.`X-Firebase-gmpid`
     - typings.firebaseAuth.firebaseAuthStrings.`X-Firebase-Client`
+    - typings.firebaseAuth.firebaseAuthStrings.`X-Firebase-AppCheck`
   */
   trait HttpHeader extends StObject
   object HttpHeader {
@@ -172,6 +185,8 @@ object distNodeSrcApiMod {
     inline def CONTENT_TYPE: `Content-Type` = "Content-Type".asInstanceOf[`Content-Type`]
     
     inline def X_CLIENT_VERSION: `X-Client-Version` = "X-Client-Version".asInstanceOf[`X-Client-Version`]
+    
+    inline def X_FIREBASE_APP_CHECK: `X-Firebase-AppCheck` = "X-Firebase-AppCheck".asInstanceOf[`X-Firebase-AppCheck`]
     
     inline def X_FIREBASE_CLIENT: `X-Firebase-Client` = "X-Firebase-Client".asInstanceOf[`X-Firebase-Client`]
     
@@ -219,4 +234,40 @@ object distNodeSrcApiMod {
       inline def setPhoneNumberUndefined: Self = StObject.set(x, "phoneNumber", js.undefined)
     }
   }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.firebaseAuth.firebaseAuthStrings.signInWithPassword
+    - typings.firebaseAuth.firebaseAuthStrings.getOobCode
+    - typings.firebaseAuth.firebaseAuthStrings.signUpPassword
+  */
+  trait RecaptchaActionName extends StObject
+  object RecaptchaActionName {
+    
+    inline def GET_OOB_CODE: getOobCode = "getOobCode".asInstanceOf[getOobCode]
+    
+    inline def SIGN_IN_WITH_PASSWORD: signInWithPassword = "signInWithPassword".asInstanceOf[signInWithPassword]
+    
+    inline def SIGN_UP_PASSWORD: signUpPassword = "signUpPassword".asInstanceOf[signUpPassword]
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.firebaseAuth.firebaseAuthStrings.CLIENT_TYPE_WEB
+    - typings.firebaseAuth.firebaseAuthStrings.CLIENT_TYPE_ANDROID
+    - typings.firebaseAuth.firebaseAuthStrings.CLIENT_TYPE_IOS
+  */
+  trait RecaptchaClientType extends StObject
+  object RecaptchaClientType {
+    
+    inline def ANDROID: CLIENT_TYPE_ANDROID = "CLIENT_TYPE_ANDROID".asInstanceOf[CLIENT_TYPE_ANDROID]
+    
+    inline def IOS: CLIENT_TYPE_IOS = "CLIENT_TYPE_IOS".asInstanceOf[CLIENT_TYPE_IOS]
+    
+    inline def WEB: CLIENT_TYPE_WEB = "CLIENT_TYPE_WEB".asInstanceOf[CLIENT_TYPE_WEB]
+  }
+  
+  object RecaptchaVersion {
+    
+    inline def ENTERPRISE: RECAPTCHA_ENTERPRISE = "RECAPTCHA_ENTERPRISE".asInstanceOf[RECAPTCHA_ENTERPRISE]
+  }
+  type RecaptchaVersion = RECAPTCHA_ENTERPRISE
 }

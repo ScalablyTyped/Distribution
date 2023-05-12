@@ -10,5 +10,6 @@ object srcUtilGetIdMod {
   @js.native
   val ^ : js.Any = js.native
   
+  inline def default(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[String]
   inline def default(prefix: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(prefix.asInstanceOf[js.Any]).asInstanceOf[String]
 }

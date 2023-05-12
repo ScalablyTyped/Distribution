@@ -12,9 +12,9 @@ trait GraphSearchStreaming
   /**
     * Specifies list of IDs to search.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphSearchStreaming.html#globalIdsFilter)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-GraphSearchStreaming.html#idsFilter)
     */
-  var globalIdsFilter: js.Array[String] = js.native
+  var idsFilter: js.Array[String] = js.native
   
   /**
     * Specifies list of names of [entity types](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-EntityType.html#name) or [relationship types](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-knowledgeGraph-RelationshipType.html#name) to search.

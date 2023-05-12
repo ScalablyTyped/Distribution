@@ -1,7 +1,7 @@
 
 # Scala.js typings for sinclair__typebox
 
-Typings are for version 0.24.42
+Typings are for version 0.28.9
 
 ## Library description:
 JSONSchema Type Builder with Static Type Resolution for TypeScript

@@ -4,7 +4,6 @@ import typings.jupyterlabServices.anon.OmitIOptionsserverSettingModel
 import typings.jupyterlabServices.libServerconnectionMod.ServerConnection.ISettings
 import typings.jupyterlabServices.libTerminalRestapiMod.IModel
 import typings.jupyterlabServices.libTerminalTerminalMod.ITerminal.IOptions
-import typings.luminoAlgorithm.typesIterMod.IIterator
 import typings.luminoCoreutils.typesJsonMod.JSONPrimitive
 import typings.luminoDisposable.mod.IObservableDisposable
 import typings.luminoSignaling.mod.ISignal
@@ -63,7 +62,7 @@ object libTerminalTerminalMod {
       *
       * @returns A new iterator over the running terminals.
       */
-    def running(): IIterator[IModel] = js.native
+    def running(): Any = js.native
     
     /**
       * A signal emitted when the running terminals change.

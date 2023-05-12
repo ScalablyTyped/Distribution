@@ -26,11 +26,9 @@ object AxisSetExtremesEventObject {
     min: Double,
     preventDefault: js.Function,
     target: SVGElement,
-    trigger: String | AxisExtremesTriggerValue,
-    userMax: Double,
-    userMin: Double
+    trigger: String | AxisExtremesTriggerValue
   ): AxisSetExtremesEventObject = {
-    val __obj = js.Dynamic.literal(dataMax = dataMax.asInstanceOf[js.Any], dataMin = dataMin.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], preventDefault = preventDefault.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], trigger = trigger.asInstanceOf[js.Any], userMax = userMax.asInstanceOf[js.Any], userMin = userMin.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(dataMax = dataMax.asInstanceOf[js.Any], dataMin = dataMin.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], preventDefault = preventDefault.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], trigger = trigger.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("setExtremes")
     __obj.asInstanceOf[AxisSetExtremesEventObject]
   }

@@ -20,6 +20,11 @@ trait PhysicsHitData extends StObject {
     * The force applied at the contact point
     */
   var force: Vector3
+  
+  /**
+    * For an instanced physics body (mesh with thin instances), the index of the thin instance the hit applies to
+    */
+  var instanceIndex: js.UndefOr[Double] = js.undefined
 }
 object PhysicsHitData {
   
@@ -36,5 +41,9 @@ object PhysicsHitData {
     inline def setDistanceFromOrigin(value: Double): Self = StObject.set(x, "distanceFromOrigin", value.asInstanceOf[js.Any])
     
     inline def setForce(value: Vector3): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
+    
+    inline def setInstanceIndex(value: Double): Self = StObject.set(x, "instanceIndex", value.asInstanceOf[js.Any])
+    
+    inline def setInstanceIndexUndefined: Self = StObject.set(x, "instanceIndex", js.undefined)
   }
 }

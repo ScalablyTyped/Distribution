@@ -386,6 +386,7 @@ object sapMPageMod {
     
     /**
       * @SINCE 1.12.2
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:navButtonPress navButtonPress} to attached listeners.
       *
@@ -399,6 +400,7 @@ object sapMPageMod {
     
     /**
       * @deprecated (since 1.12.2) - the navButtonPress event is replacing this event
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:navButtonTap navButtonTap} to attached listeners.
       *

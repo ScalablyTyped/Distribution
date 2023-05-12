@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.AnimationFillMode
+import typings.csstype.mod.Property.AnimationDirection
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,11 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `111` extends StObject {
   
   var value: js.UndefOr[
-    AnimationFillMode | (js.Array[
+    AnimationDirection | (js.Array[
       (Extract[
-        js.UndefOr[AnimationFillMode | js.Array[NonNullable[js.UndefOr[AnimationFillMode]]]], 
+        js.UndefOr[AnimationDirection | js.Array[NonNullable[js.UndefOr[AnimationDirection]]]], 
         String
-      ]) | NonNullable[js.UndefOr[AnimationFillMode]]
+      ]) | NonNullable[js.UndefOr[AnimationDirection]]
     ])
   ] = js.native
 }

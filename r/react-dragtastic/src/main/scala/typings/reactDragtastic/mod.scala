@@ -17,7 +17,7 @@ object mod {
     def this(props: DragComponentProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: DragComponentProps, context: Any) = this()
   }
@@ -28,7 +28,7 @@ object mod {
     def this(props: DragStateProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: DragStateProps, context: Any) = this()
   }
@@ -39,7 +39,7 @@ object mod {
     def this(props: DraggableProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: DraggableProps, context: Any) = this()
   }
@@ -50,7 +50,7 @@ object mod {
     def this(props: DroppableProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: DroppableProps, context: Any) = this()
   }

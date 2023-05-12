@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "sql-query-identifier" : "2.4.4"
+      "sql-query-identifier" : "2.5.0"
     }
   ],
   "test-dependencies" : [
     {
-      "sql-query-identifier" : "2.4.4"
+      "sql-query-identifier" : "2.5.0"
     }
   ],
   "compile-devDependencies" : [

@@ -186,16 +186,20 @@ trait Color4 extends StObject {
   
   /**
     * Computes a new Color4 converted from the current one to gamma space
+    * @param exact defines if the conversion will be done in an exact way which is slower but more accurate (default is false)
     * @returns a new Color4 object
     */
   def toGammaSpace(): Color4 = js.native
+  def toGammaSpace(exact: Boolean): Color4 = js.native
   
   /**
     * Converts the Color4 values to gamma space and stores the result in "convertedColor"
     * @param convertedColor defines the Color4 object where to store the gamma space version
+    * @param exact defines if the conversion will be done in an exact way which is slower but more accurate (default is false)
     * @returns the unmodified Color4
     */
   def toGammaSpaceToRef(convertedColor: Color4): Color4 = js.native
+  def toGammaSpaceToRef(convertedColor: Color4, exact: Boolean): Color4 = js.native
   
   /**
     * Compute the Color4 hexadecimal code as a string
@@ -207,14 +211,18 @@ trait Color4 extends StObject {
   
   /**
     * Computes a new Color4 converted from the current one to linear space
+    * @param exact defines if the conversion will be done in an exact way which is slower but more accurate (default is false)
     * @returns a new Color4 object
     */
   def toLinearSpace(): Color4 = js.native
+  def toLinearSpace(exact: Boolean): Color4 = js.native
   
   /**
     * Converts the Color4 values to linear space and stores the result in "convertedColor"
     * @param convertedColor defines the Color4 object where to store the linear space version
+    * @param exact defines if the conversion will be done in an exact way which is slower but more accurate (default is false)
     * @returns the unmodified Color4
     */
   def toLinearSpaceToRef(convertedColor: Color4): Color4 = js.native
+  def toLinearSpaceToRef(convertedColor: Color4, exact: Boolean): Color4 = js.native
 }

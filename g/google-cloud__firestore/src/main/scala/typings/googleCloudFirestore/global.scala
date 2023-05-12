@@ -4,6 +4,7 @@ import typings.googleCloudFirestore.FirebaseFirestore.AggregateSpec
 import typings.googleCloudFirestore.FirebaseFirestore.AggregateSpecData
 import typings.googleCloudFirestore.FirebaseFirestore.GrpcStatus
 import typings.googleCloudFirestore.FirebaseFirestore.Settings
+import typings.googleCloudFirestore.FirebaseFirestore.WhereFilterOp
 import typings.googleCloudFirestore.anon.TypeofFirestoreClient
 import typings.googleCloudFirestore.googleCloudFirestoreStrings.create
 import typings.googleCloudFirestore.googleCloudFirestoreStrings.delete
@@ -292,6 +293,115 @@ object global {
         * update().
         */
       inline def serverTimestamp(): typings.googleCloudFirestore.FirebaseFirestore.FieldValue = ^.asInstanceOf[js.Dynamic].applyDynamic("serverTimestamp")().asInstanceOf[typings.googleCloudFirestore.FirebaseFirestore.FieldValue]
+    }
+    
+    /* note: abstract class */ @JSGlobal("FirebaseFirestore.Filter")
+    @js.native
+    open class Filter ()
+      extends StObject
+         with typings.googleCloudFirestore.FirebaseFirestore.Filter
+    /* static members */
+    object Filter {
+      
+      @JSGlobal("FirebaseFirestore.Filter")
+      @js.native
+      val ^ : js.Any = js.native
+      
+      /**
+        * Creates and returns a new [Filter]{@link Filter} that is a
+        * conjunction of the given {@link Filter}s. A conjunction filter includes
+        * a document if it satisfies any of the given {@link Filter}s.
+        *
+        * The returned Filter can be applied to [Query.where()]{@link Query#where},
+        * [Filter.or()]{@link Filter#or}, or [Filter.and()]{@link Filter#and}. When
+        * applied to a [Query]{@link Query} it requires that documents must satisfy
+        * one of the provided {@link Filter}s.
+        *
+        * @param {...Filter} filters  Optional. The {@link Filter}s
+        * for OR operation. These must be created with calls to {@link Filter#where},
+        * {@link Filter#or}, or {@link Filter#and}.
+        * @returns {Filter} The created {@link Filter}.
+        *
+        * @example
+        * ```
+        * let collectionRef = firestore.collection('col');
+        *
+        * // doc.foo == 'bar' && doc.baz > 0
+        * let orFilter = Filter.and(Filter.where('foo', '==', 'bar'), Filter.where('baz', '>', 0));
+        *
+        * collectionRef.where(orFilter).get().then(querySnapshot => {
+        *   querySnapshot.forEach(documentSnapshot => {
+        *     console.log(`Found document at ${documentSnapshot.ref.path}`);
+        *   });
+        * });
+        * ```
+        */
+      inline def and(filters: typings.googleCloudFirestore.FirebaseFirestore.Filter*): typings.googleCloudFirestore.FirebaseFirestore.Filter = ^.asInstanceOf[js.Dynamic].applyDynamic("and")(filters.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.googleCloudFirestore.FirebaseFirestore.Filter]
+      
+      /**
+        * Creates and returns a new [Filter]{@link Filter} that is a
+        * disjunction of the given {@link Filter}s. A disjunction filter includes
+        * a document if it satisfies any of the given {@link Filter}s.
+        *
+        * The returned Filter can be applied to [Query.where()]{@link Query#where},
+        * [Filter.or()]{@link Filter#or}, or [Filter.and()]{@link Filter#and}. When
+        * applied to a [Query]{@link Query} it requires that documents must satisfy
+        * one of the provided {@link Filter}s.
+        *
+        * @param {...Filter} filters  Optional. The {@link Filter}s
+        * for OR operation. These must be created with calls to {@link Filter#where},
+        * {@link Filter#or}, or {@link Filter#and}.
+        * @returns {Filter} The created {@link Filter}.
+        *
+        * @example
+        * ```
+        * let collectionRef = firestore.collection('col');
+        *
+        * // doc.foo == 'bar' || doc.baz > 0
+        * let orFilter = Filter.or(Filter.where('foo', '==', 'bar'), Filter.where('baz', '>', 0));
+        *
+        * collectionRef.where(orFilter).get().then(querySnapshot => {
+        *   querySnapshot.forEach(documentSnapshot => {
+        *     console.log(`Found document at ${documentSnapshot.ref.path}`);
+        *   });
+        * });
+        * ```
+        */
+      inline def or(filters: typings.googleCloudFirestore.FirebaseFirestore.Filter*): typings.googleCloudFirestore.FirebaseFirestore.Filter = ^.asInstanceOf[js.Dynamic].applyDynamic("or")(filters.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.googleCloudFirestore.FirebaseFirestore.Filter]
+      
+      /**
+        * Creates and returns a new [Filter]{@link Filter}, which can be
+        * applied to [Query.where()]{@link Query#where}, [Filter.or()]{@link Filter#or},
+        * or [Filter.and()]{@link Filter#and}. When applied to a [Query]{@link Query}
+        * it requires that documents must contain the specified field and that its value should
+        * satisfy the relation constraint provided.
+        *
+        * Returns a new Filter that can be used to constrain the value of a Document property.
+        *
+        * @param {string|FieldPath} fieldPath The name of a property value to compare.
+        * @param {string} opStr A comparison operation in the form of a string
+        * (e.g., "<").
+        * @param {*} value The value to which to compare the field for inclusion in
+        * a query.
+        * @returns {Filter} The created Filter.
+        *
+        * @example
+        * ```
+        * let collectionRef = firestore.collection('col');
+        *
+        * collectionRef.where(Filter.where('foo', '==', 'bar')).get().then(querySnapshot => {
+        *   querySnapshot.forEach(documentSnapshot => {
+        *     console.log(`Found document at ${documentSnapshot.ref.path}`);
+        *   });
+        * });
+        * ```
+        */
+      inline def where(fieldPath: String, opStr: WhereFilterOp, value: Any): typings.googleCloudFirestore.FirebaseFirestore.Filter = (^.asInstanceOf[js.Dynamic].applyDynamic("where")(fieldPath.asInstanceOf[js.Any], opStr.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[typings.googleCloudFirestore.FirebaseFirestore.Filter]
+      inline def where(
+        fieldPath: typings.googleCloudFirestore.FirebaseFirestore.FieldPath,
+        opStr: WhereFilterOp,
+        value: Any
+      ): typings.googleCloudFirestore.FirebaseFirestore.Filter = (^.asInstanceOf[js.Dynamic].applyDynamic("where")(fieldPath.asInstanceOf[js.Any], opStr.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[typings.googleCloudFirestore.FirebaseFirestore.Filter]
     }
     
     @JSGlobal("FirebaseFirestore.Firestore")

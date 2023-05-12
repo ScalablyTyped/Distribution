@@ -47,19 +47,51 @@ object mod {
     }
   }
   
+  trait Paged[T] extends StObject {
+    
+    /**
+      * The link to the next page of items
+      */
+    var nextLink: js.UndefOr[String] = js.undefined
+    
+    /**
+      * The T items on this page
+      */
+    var value: js.Array[T]
+  }
+  object Paged {
+    
+    inline def apply[T](value: js.Array[T]): Paged[T] = {
+      val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Paged[T]]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Paged[?], T] (val x: Self & Paged[T]) extends AnyVal {
+      
+      inline def setNextLink(value: String): Self = StObject.set(x, "nextLink", value.asInstanceOf[js.Any])
+      
+      inline def setNextLinkUndefined: Self = StObject.set(x, "nextLink", js.undefined)
+      
+      inline def setValue(value: js.Array[T]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      
+      inline def setValueVarargs(value: T*): Self = StObject.set(x, "value", js.Array(value*))
+    }
+  }
+  
   @js.native
-  trait PagedAsyncIterableIterator[T, PageT, PageSettingsT] extends StObject {
+  trait PagedAsyncIterableIterator[TElement, TPage, TPageSettings] extends StObject {
     
     /**
       * Return an AsyncIterableIterator that works a page at a time
       */
-    def byPage(): AsyncIterableIterator[PageT] = js.native
-    def byPage(settings: PageSettingsT): AsyncIterableIterator[PageT] = js.native
+    def byPage(): AsyncIterableIterator[TPage] = js.native
+    def byPage(settings: TPageSettings): AsyncIterableIterator[TPage] = js.native
     
     /**
       * The next method, part of the iteration protocol
       */
-    def next(): js.Promise[IteratorResult[T, Any]] = js.native
+    def next(): js.Promise[IteratorResult[TElement, Any]] = js.native
   }
   
   @js.native
@@ -81,7 +113,12 @@ object mod {
     /**
       * A method that returns a page of results.
       */
-    def getPage(pageLink: TLink): js.Promise[NextPageLink[TPage, TLink]] = js.native
-    def getPage(pageLink: TLink, maxPageSize: Double): js.Promise[NextPageLink[TPage, TLink]] = js.native
+    def getPage(pageLink: TLink): js.Promise[js.UndefOr[NextPageLink[TPage, TLink]]] = js.native
+    def getPage(pageLink: TLink, maxPageSize: Double): js.Promise[js.UndefOr[NextPageLink[TPage, TLink]]] = js.native
+    
+    /**
+      * A function to extract elements from a page.
+      */
+    var toElements: js.UndefOr[js.Function1[/* page */ TPage, js.Array[Any]]] = js.native
   }
 }

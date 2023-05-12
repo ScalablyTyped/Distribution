@@ -42,6 +42,7 @@ object srcUtilMod {
   
   inline def frame[T](fn: js.Function1[/* arg */ T, Unit]): js.Function1[/* arg */ T, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("frame")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* arg */ T, Unit]]
   
+  inline def getId(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getId")().asInstanceOf[String]
   inline def getId(prefix: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getId")(prefix.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def ignoreSilenceMode(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ignoreSilenceMode")().asInstanceOf[Unit]

@@ -187,7 +187,7 @@ object Diagnostic {
   ): Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], message.asInstanceOf[js.Any], severity.asInstanceOf[js.Any], code.asInstanceOf[js.Any], source.asInstanceOf[js.Any], relatedInformation.asInstanceOf[js.Any])).asInstanceOf[Diagnostic]
   
   /**
-    * Checks whether the given literal conforms to the [Diagnostic](#Diagnostic) interface.
+    * Checks whether the given literal conforms to the {@link Diagnostic} interface.
     */
   inline def is(value: Any): /* is vscode-languageserver-types.vscode-languageserver-types.Diagnostic */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.Diagnostic */ Boolean]
   

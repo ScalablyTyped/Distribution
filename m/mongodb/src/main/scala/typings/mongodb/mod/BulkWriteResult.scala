@@ -11,13 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class BulkWriteResult () extends StObject {
   
   /** Number of documents deleted. */
-  def deletedCount: scala.Double = js.native
+  val deletedCount: scala.Double = js.native
   
-  /** Returns an array of all inserted ids */
+  /**
+    * Returns an array of all inserted ids
+    * @deprecated Use insertedIds instead.
+    */
   def getInsertedIds(): js.Array[Document] = js.native
-  
-  /** Retrieve lastOp if available */
-  def getLastOp(): js.UndefOr[Document] = js.native
   
   /** Returns raw internal result */
   def getRawResponse(): Document = js.native
@@ -25,7 +25,10 @@ open class BulkWriteResult () extends StObject {
   /** Returns the upserted id at the given index */
   def getUpsertedIdAt(index: scala.Double): js.UndefOr[Document] = js.native
   
-  /** Returns an array of all upserted ids */
+  /**
+    * Returns an array of all upserted ids
+    * @deprecated Use upsertedIds instead.
+    */
   def getUpsertedIds(): js.Array[Document] = js.native
   
   /** Retrieve the write concern error if one exists */
@@ -43,46 +46,71 @@ open class BulkWriteResult () extends StObject {
   /** Returns true if the bulk operation contains a write error */
   def hasWriteErrors(): Boolean = js.native
   
-  /* Excluded from this release type: __constructor */
   /** Number of documents inserted. */
-  def insertedCount: scala.Double = js.native
+  val insertedCount: scala.Double = js.native
   
   /** Inserted document generated Id's, hash key is the index of the originating operation */
-  def insertedIds: NumberDictionary[Any] = js.native
+  val insertedIds: NumberDictionary[Any] = js.native
   
   def isOk(): Boolean = js.native
   
   /** Number of documents matched for update. */
-  def matchedCount: scala.Double = js.native
+  val matchedCount: scala.Double = js.native
   
   /** Number of documents modified. */
-  def modifiedCount: scala.Double = js.native
+  val modifiedCount: scala.Double = js.native
   
-  /** The number of inserted documents */
+  /**
+    * The number of inserted documents
+    * @deprecated Use insertedCount instead.
+    */
   def nInserted: scala.Double = js.native
   
-  /** Number of matched documents */
+  /**
+    * Number of matched documents
+    * @deprecated Use matchedCount instead.
+    */
   def nMatched: scala.Double = js.native
   
-  /** Number of documents updated physically on disk */
+  /**
+    * Number of documents updated physically on disk
+    * @deprecated Use modifiedCount instead.
+    */
   def nModified: scala.Double = js.native
   
-  /** Number of removed documents */
+  /**
+    * Number of removed documents
+    * @deprecated Use deletedCount instead.
+    */
   def nRemoved: scala.Double = js.native
   
-  /** Number of upserted documents */
+  /**
+    * Number of upserted documents
+    * @deprecated User upsertedCount instead.
+    */
   def nUpserted: scala.Double = js.native
   
+  /* Excluded from this release type: __constructor */
   /** Evaluates to true if the bulk operation correctly executes */
   def ok: scala.Double = js.native
   
-  var result: BulkResult = js.native
-  
-  def toJSON(): BulkResult = js.native
+  /* private */ val result: Any = js.native
   
   /** Number of documents upserted. */
-  def upsertedCount: scala.Double = js.native
+  val upsertedCount: scala.Double = js.native
   
   /** Upserted document generated Id's, hash key is the index of the originating operation */
-  def upsertedIds: NumberDictionary[Any] = js.native
+  val upsertedIds: NumberDictionary[Any] = js.native
+}
+/* static members */
+object BulkWriteResult {
+  
+  @JSImport("mongodb", "BulkWriteResult")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("mongodb", "BulkWriteResult.generateIdMap")
+  @js.native
+  def generateIdMap: Any = js.native
+  inline def generateIdMap_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("generateIdMap")(x.asInstanceOf[js.Any])
 }

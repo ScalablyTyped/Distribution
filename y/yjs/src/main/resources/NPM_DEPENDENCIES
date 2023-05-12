@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "yjs" : "13.5.42"
+      "yjs" : "13.6.1"
     }
   ],
   "test-dependencies" : [
     {
-      "yjs" : "13.5.42"
+      "yjs" : "13.6.1"
     }
   ],
   "compile-devDependencies" : [

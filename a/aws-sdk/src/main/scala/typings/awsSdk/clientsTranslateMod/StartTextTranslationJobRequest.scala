@@ -42,12 +42,12 @@ trait StartTextTranslationJobRequest extends StObject {
   var Settings: js.UndefOr[TranslationSettings] = js.undefined
   
   /**
-    * The language code of the input language. For a list of language codes, see Supported languages. Amazon Translate does not automatically detect a source language during batch translation jobs.
+    * The language code of the input language. Specify the language if all input documents share the same language. If you don't know the language of the source files, or your input documents contains different source languages, select auto. Amazon Translate auto detects the source language for each input document. For a list of supported language codes, see Supported languages.
     */
   var SourceLanguageCode: LanguageCodeString
   
   /**
-    * The target languages of the translation job. Enter up to 10 language codes. Each input file is translated into each target language. Each language code is two or five characters long. For a list of language codes, see Supported languages.
+    * The target languages of the translation job. Enter up to 10 language codes. Each input file is translated into each target language. Each language code is 2 or 5 characters long. For a list of language codes, see Supported languages.
     */
   var TargetLanguageCodes: TargetLanguageCodeStringList
   

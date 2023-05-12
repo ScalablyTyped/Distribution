@@ -17,7 +17,7 @@ trait DescribeVpcEndpointServicesResult extends StObject {
   var ServiceDetails: js.UndefOr[ServiceDetailSet] = js.undefined
   
   /**
-    * A list of supported services.
+    * The supported services.
     */
   var ServiceNames: js.UndefOr[ValueStringList] = js.undefined
 }

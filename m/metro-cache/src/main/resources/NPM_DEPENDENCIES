@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "metro-cache" : "0.76.4"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "metro-cache" : "0.76.4"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

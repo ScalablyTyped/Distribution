@@ -7,6 +7,7 @@ import typings.babylonjs.enginesEngineMod.Engine
 import typings.babylonjs.enginesRenderTargetWrapperMod.RenderTargetWrapper
 import typings.babylonjs.materialsEffectMod.Effect
 import typings.babylonjs.materialsNodeNodeMaterialMod.NodeMaterial
+import typings.babylonjs.materialsShaderLanguageMod.ShaderLanguage
 import typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture
 import typings.babylonjs.mathsMathDotcolorMod.Color4
 import typings.babylonjs.mathsMathDotvectorMod.Vector2
@@ -59,7 +60,8 @@ object postProcessesPostProcessMod {
       vertexUrl: js.UndefOr[String],
       indexParameters: js.UndefOr[Any],
       blockCompilation: js.UndefOr[Boolean],
-      textureFormat: js.UndefOr[Double]
+      textureFormat: js.UndefOr[Double],
+      shaderLanguage: js.UndefOr[ShaderLanguage]
     ) = this()
     
     /* private */ var _camera: Any = js.native
@@ -133,6 +135,8 @@ object postProcessesPostProcessMod {
     /* private */ var _scaleRatio: Any = js.native
     
     /* protected */ var _scene: Scene = js.native
+    
+    /* private */ var _shaderLanguage: Any = js.native
     
     /* private */ var _shareOutputWithPostProcess: Any = js.native
     
@@ -238,6 +242,12 @@ object postProcessesPostProcessMod {
     var externalTextureSamplerBinding: Boolean = js.native
     
     /**
+      * If clearing the buffer should be forced in autoClear mode, even when alpha mode is enabled (default: false).
+      * By default, the buffer will only be cleared if alpha mode is disabled (and autoClear is true).
+      */
+    var forceAutoClearInAlphaMode: Boolean = js.native
+    
+    /**
       * Force the postprocess to be applied without taking in account viewport
       */
     var forceFullscreenViewport: Boolean = js.native
@@ -286,7 +296,7 @@ object postProcessesPostProcessMod {
     
     /**
       * List of inspectable custom properties (used by the Inspector)
-      * @see https://doc.babylonjs.com/how_to/debug_layer#extensibility
+      * @see https://doc.babylonjs.com/toolsAndResources/inspector#extensibility
       */
     var inspectableCustomProperties: js.Array[IInspectable] = js.native
     
@@ -479,9 +489,95 @@ object postProcessesPostProcessMod {
     inline def Parse(parsedPostProcess: Any, scene: Scene, rootUrl: String): Nullable[PostProcess] = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedPostProcess.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Nullable[PostProcess]]
     
     /**
+      * Registers a shader code processing with a post process name.
+      * @param postProcessName name of the post process. Use null for the fallback shader code processing. This is the shader code processing that will be used in case no specific shader code processing has been associated to a post process name
+      * @param customShaderCodeProcessing shader code processing to associate to the post process name
+      * @returns
+      */
+    inline def RegisterShaderCodeProcessing(postProcessName: Nullable[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("RegisterShaderCodeProcessing")(postProcessName.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def RegisterShaderCodeProcessing(
+      postProcessName: Nullable[String],
+      customShaderCodeProcessing: PostProcessCustomShaderCodeProcessing
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("RegisterShaderCodeProcessing")(postProcessName.asInstanceOf[js.Any], customShaderCodeProcessing.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    @JSImport("babylonjs/PostProcesses/postProcess", "PostProcess._CustomShaderCodeProcessing")
+    @js.native
+    def _CustomShaderCodeProcessing: Any = js.native
+    inline def _CustomShaderCodeProcessing_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CustomShaderCodeProcessing")(x.asInstanceOf[js.Any])
+    
+    @JSImport("babylonjs/PostProcesses/postProcess", "PostProcess._GetShaderCodeProcessing")
+    @js.native
+    def _GetShaderCodeProcessing: Any = js.native
+    inline def _GetShaderCodeProcessing_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_GetShaderCodeProcessing")(x.asInstanceOf[js.Any])
+    
+    /**
       * @internal
       */
     inline def _Parse(parsedPostProcess: Any, targetCamera: Camera, scene: Scene, rootUrl: String): Nullable[PostProcess] = (^.asInstanceOf[js.Dynamic].applyDynamic("_Parse")(parsedPostProcess.asInstanceOf[js.Any], targetCamera.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Nullable[PostProcess]]
+  }
+  
+  trait PostProcessCustomShaderCodeProcessing extends StObject {
+    
+    /**
+      * If provided, will be called when binding inputs to the shader code to allow the user to add custom bindings
+      */
+    var bindCustomBindings: js.UndefOr[js.Function2[/* postProcessName */ String, /* effect */ Effect, Unit]] = js.undefined
+    
+    /**
+      * If provided, will be called before creating the effect to collect additional custom bindings (defines, uniforms, samplers)
+      */
+    var defineCustomBindings: js.UndefOr[
+        js.Function4[
+          /* postProcessName */ String, 
+          /* defines */ Nullable[String], 
+          /* uniforms */ js.Array[String], 
+          /* samplers */ js.Array[String], 
+          Nullable[String]
+        ]
+      ] = js.undefined
+    
+    /**
+      * If provided, will be called two times with the vertex and fragment code so that this code can be updated after the #include have been processed
+      */
+    var processCodeAfterIncludes: js.UndefOr[
+        js.Function3[/* postProcessName */ String, /* shaderType */ String, /* code */ String, String]
+      ] = js.undefined
+    
+    /**
+      * If provided, will be called two times with the vertex and fragment code so that this code can be updated before it is compiled by the GPU
+      */
+    var processFinalCode: js.UndefOr[
+        js.Function3[/* postProcessName */ String, /* shaderType */ String, /* code */ String, String]
+      ] = js.undefined
+  }
+  object PostProcessCustomShaderCodeProcessing {
+    
+    inline def apply(): PostProcessCustomShaderCodeProcessing = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[PostProcessCustomShaderCodeProcessing]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PostProcessCustomShaderCodeProcessing] (val x: Self) extends AnyVal {
+      
+      inline def setBindCustomBindings(value: (/* postProcessName */ String, /* effect */ Effect) => Unit): Self = StObject.set(x, "bindCustomBindings", js.Any.fromFunction2(value))
+      
+      inline def setBindCustomBindingsUndefined: Self = StObject.set(x, "bindCustomBindings", js.undefined)
+      
+      inline def setDefineCustomBindings(
+        value: (/* postProcessName */ String, /* defines */ Nullable[String], /* uniforms */ js.Array[String], /* samplers */ js.Array[String]) => Nullable[String]
+      ): Self = StObject.set(x, "defineCustomBindings", js.Any.fromFunction4(value))
+      
+      inline def setDefineCustomBindingsUndefined: Self = StObject.set(x, "defineCustomBindings", js.undefined)
+      
+      inline def setProcessCodeAfterIncludes(value: (/* postProcessName */ String, /* shaderType */ String, /* code */ String) => String): Self = StObject.set(x, "processCodeAfterIncludes", js.Any.fromFunction3(value))
+      
+      inline def setProcessCodeAfterIncludesUndefined: Self = StObject.set(x, "processCodeAfterIncludes", js.undefined)
+      
+      inline def setProcessFinalCode(value: (/* postProcessName */ String, /* shaderType */ String, /* code */ String) => String): Self = StObject.set(x, "processFinalCode", js.Any.fromFunction3(value))
+      
+      inline def setProcessFinalCodeUndefined: Self = StObject.set(x, "processFinalCode", js.undefined)
+    }
   }
   
   trait PostProcessOptions extends StObject {

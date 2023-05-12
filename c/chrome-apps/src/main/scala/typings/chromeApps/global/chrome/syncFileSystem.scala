@@ -78,7 +78,6 @@ object syncFileSystem {
   }
   
   /**
-    * @enum
     * 'synced'
     *  - Not conflicting and has no pending local changes.
     * 'pending'
@@ -109,7 +108,6 @@ object syncFileSystem {
   }
   
   /**
-    * @enum
     * 'initializing'
     *  - The sync service is being initialized (e.g. restoring data from the database, checking connectivity and authenticating to the service etc).
     * 'running'

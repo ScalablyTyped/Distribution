@@ -47,6 +47,11 @@ trait Host extends StObject {
   var HostId: js.UndefOr[String] = js.undefined
   
   /**
+    * Indicates whether host maintenance is enabled or disabled for the Dedicated Host.
+    */
+  var HostMaintenance: js.UndefOr[typings.awsSdk.clientsEc2Mod.HostMaintenance] = js.undefined
+  
+  /**
     * The hardware specifications of the Dedicated Host.
     */
   var HostProperties: js.UndefOr[typings.awsSdk.clientsEc2Mod.HostProperties] = js.undefined
@@ -137,6 +142,10 @@ object Host {
     inline def setHostId(value: String): Self = StObject.set(x, "HostId", value.asInstanceOf[js.Any])
     
     inline def setHostIdUndefined: Self = StObject.set(x, "HostId", js.undefined)
+    
+    inline def setHostMaintenance(value: HostMaintenance): Self = StObject.set(x, "HostMaintenance", value.asInstanceOf[js.Any])
+    
+    inline def setHostMaintenanceUndefined: Self = StObject.set(x, "HostMaintenance", js.undefined)
     
     inline def setHostProperties(value: HostProperties): Self = StObject.set(x, "HostProperties", value.asInstanceOf[js.Any])
     

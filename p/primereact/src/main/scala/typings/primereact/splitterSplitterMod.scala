@@ -26,6 +26,7 @@ import typings.primereact.primereactStrings.inherit
 import typings.primereact.primereactStrings.link
 import typings.primereact.primereactStrings.list
 import typings.primereact.primereactStrings.listbox
+import typings.primereact.primereactStrings.local
 import typings.primereact.primereactStrings.location
 import typings.primereact.primereactStrings.menu
 import typings.primereact.primereactStrings.mixed
@@ -41,6 +42,7 @@ import typings.primereact.primereactStrings.polite
 import typings.primereact.primereactStrings.popup
 import typings.primereact.primereactStrings.removals
 import typings.primereact.primereactStrings.search
+import typings.primereact.primereactStrings.session
 import typings.primereact.primereactStrings.spelling
 import typings.primereact.primereactStrings.step
 import typings.primereact.primereactStrings.tel
@@ -102,10 +104,14 @@ object splitterSplitterMod {
     def this(props: SplitterProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: SplitterProps, context: Any) = this()
     
+    /**
+      * Used to get container element.
+      * @return {HTMLDivElement} Container element
+      */
     def getElement(): HTMLDivElement = js.native
   }
   
@@ -115,33 +121,41 @@ object splitterSplitterMod {
     def this(props: SplitterPanelProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: SplitterPanelProps, context: Any) = this()
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.primereact.primereactStrings.vertical
-    - typings.primereact.primereactStrings.horizontal
-  */
-  trait SplitterLayoutType extends StObject
-  object SplitterLayoutType {
-    
-    inline def horizontal: typings.primereact.primereactStrings.horizontal = "horizontal".asInstanceOf[typings.primereact.primereactStrings.horizontal]
-    
-    inline def vertical: typings.primereact.primereactStrings.vertical = "vertical".asInstanceOf[typings.primereact.primereactStrings.vertical]
-  }
-  
+  /**
+    * Defines valid properties in SplitterPanel component.
+    * @group Properties
+    */
   trait SplitterPanelProps extends StObject {
     
+    /**
+      * Used to get the child elements of the component.
+      * @readonly
+      */
     var children: js.UndefOr[ReactNode] = js.undefined
     
+    /**
+      * ClassName of the component.
+      */
     var className: js.UndefOr[String] = js.undefined
     
+    /**
+      * Minimum size of the element relative to 100%.
+      */
     var minSize: js.UndefOr[Double] = js.undefined
     
+    /**
+      * Size of the element relative to 100%.
+      */
     var size: js.UndefOr[Double] = js.undefined
     
+    /**
+      * Inline style of the component.
+      */
     var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object SplitterPanelProps {
@@ -285,13 +299,21 @@ object splitterSplitterMod {
     
     var autoCorrect: js.UndefOr[String] = js.undefined
     
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
+    
     var autoSave: js.UndefOr[String] = js.undefined
     
+    /**
+      * Used to get the child elements of the component.
+      * @readonly
+      */
     var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
     var color: js.UndefOr[String] = js.undefined
+    
+    var content: js.UndefOr[String] = js.undefined
     
     var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
@@ -309,6 +331,10 @@ object splitterSplitterMod {
     
     var draggable: js.UndefOr[Booleanish] = js.undefined
     
+    /**
+      * Size of the divider in pixels.
+      * @defaultValue 4
+      */
     var gutterSize: js.UndefOr[Double] = js.undefined
     
     var hidden: js.UndefOr[Boolean] = js.undefined
@@ -335,7 +361,11 @@ object splitterSplitterMod {
     
     var lang: js.UndefOr[String] = js.undefined
     
-    var layout: js.UndefOr[SplitterLayoutType] = js.undefined
+    /**
+      * Orientation of the panels, valid values are "horizontal" and "vertical".
+      * @defaultValue horizontal
+      */
+    var layout: js.UndefOr[vertical | horizontal] = js.undefined
     
     var nonce: js.UndefOr[String] = js.undefined
     
@@ -467,7 +497,11 @@ object splitterSplitterMod {
     
     var onResize: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
-    var onResizeEnd: js.UndefOr[js.Function1[/* e */ SplitterResizeEndParams, Unit]] = js.undefined
+    /**
+      * Callback to invoke when resize ends.
+      * @param {SplitterResizeEndEvent} event - Custom resize end event.
+      */
+    var onResizeEnd: js.UndefOr[js.Function1[/* event */ SplitterResizeEndEvent, Unit]] = js.undefined
     
     var onScroll: js.UndefOr[UIEventHandler[HTMLDivElement]] = js.undefined
     
@@ -509,9 +543,13 @@ object splitterSplitterMod {
     
     var radioGroup: js.UndefOr[String] = js.undefined
     
+    var rel: js.UndefOr[String] = js.undefined
+    
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
+    
+    var rev: js.UndefOr[String] = js.undefined
     
     var role: js.UndefOr[AriaRole] = js.undefined
     
@@ -521,9 +559,16 @@ object splitterSplitterMod {
     
     var spellCheck: js.UndefOr[Booleanish] = js.undefined
     
+    /**
+      * Storage identifier of a stateful Splitter.
+      */
     var stateKey: js.UndefOr[String] = js.undefined
     
-    var stateStorage: js.UndefOr[SplitterStateStorageType] = js.undefined
+    /**
+      * Defines where a stateful splitter keeps its state, valid values are "session" for sessionStorage and "local" for localStorage.
+      * @defaultValue session
+      */
+    var stateStorage: js.UndefOr[session | local] = js.undefined
     
     var style: js.UndefOr[CSSProperties] = js.undefined
     
@@ -763,6 +808,10 @@ object splitterSplitterMod {
       
       inline def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
       
+      inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+      
+      inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+      
       inline def setAutoSave(value: String): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
       
       inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
@@ -779,9 +828,13 @@ object splitterSplitterMod {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
       inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
       inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
@@ -867,7 +920,7 @@ object splitterSplitterMod {
       
       inline def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
       
-      inline def setLayout(value: SplitterLayoutType): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+      inline def setLayout(value: vertical | horizontal): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
       
       inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
       
@@ -1129,7 +1182,7 @@ object splitterSplitterMod {
       
       inline def setOnResize(value: SyntheticEvent[HTMLDivElement, Event] => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
       
-      inline def setOnResizeEnd(value: /* e */ SplitterResizeEndParams => Unit): Self = StObject.set(x, "onResizeEnd", js.Any.fromFunction1(value))
+      inline def setOnResizeEnd(value: /* event */ SplitterResizeEndEvent => Unit): Self = StObject.set(x, "onResizeEnd", js.Any.fromFunction1(value))
       
       inline def setOnResizeEndUndefined: Self = StObject.set(x, "onResizeEnd", js.undefined)
       
@@ -1215,6 +1268,10 @@ object splitterSplitterMod {
       
       inline def setRadioGroupUndefined: Self = StObject.set(x, "radioGroup", js.undefined)
       
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      
+      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+      
       inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
       inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
@@ -1222,6 +1279,10 @@ object splitterSplitterMod {
       inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+      
+      inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+      
+      inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
       
       inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
@@ -1243,7 +1304,7 @@ object splitterSplitterMod {
       
       inline def setStateKeyUndefined: Self = StObject.set(x, "stateKey", js.undefined)
       
-      inline def setStateStorage(value: SplitterStateStorageType): Self = StObject.set(x, "stateStorage", value.asInstanceOf[js.Any])
+      inline def setStateStorage(value: session | local): Self = StObject.set(x, "stateStorage", value.asInstanceOf[js.Any])
       
       inline def setStateStorageUndefined: Self = StObject.set(x, "stateStorage", js.undefined)
       
@@ -1285,21 +1346,32 @@ object splitterSplitterMod {
     }
   }
   
-  trait SplitterResizeEndParams extends StObject {
+  /**
+    * Custom resize end event.
+    * @see {@link SplitterProps.onResizeEnd}
+    * @event
+    */
+  trait SplitterResizeEndEvent extends StObject {
     
+    /**
+      * Browser event.
+      */
     var originalEvent: SyntheticEvent[Element, Event]
     
+    /**
+      * Sizes of the panels as an array.
+      */
     var sizes: js.Array[Double]
   }
-  object SplitterResizeEndParams {
+  object SplitterResizeEndEvent {
     
-    inline def apply(originalEvent: SyntheticEvent[Element, Event], sizes: js.Array[Double]): SplitterResizeEndParams = {
+    inline def apply(originalEvent: SyntheticEvent[Element, Event], sizes: js.Array[Double]): SplitterResizeEndEvent = {
       val __obj = js.Dynamic.literal(originalEvent = originalEvent.asInstanceOf[js.Any], sizes = sizes.asInstanceOf[js.Any])
-      __obj.asInstanceOf[SplitterResizeEndParams]
+      __obj.asInstanceOf[SplitterResizeEndEvent]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: SplitterResizeEndParams] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: SplitterResizeEndEvent] (val x: Self) extends AnyVal {
       
       inline def setOriginalEvent(value: SyntheticEvent[Element, Event]): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
@@ -1307,17 +1379,5 @@ object splitterSplitterMod {
       
       inline def setSizesVarargs(value: Double*): Self = StObject.set(x, "sizes", js.Array(value*))
     }
-  }
-  
-  /* Rewritten from type alias, can be one of: 
-    - typings.primereact.primereactStrings.session
-    - typings.primereact.primereactStrings.local
-  */
-  trait SplitterStateStorageType extends StObject
-  object SplitterStateStorageType {
-    
-    inline def local: typings.primereact.primereactStrings.local = "local".asInstanceOf[typings.primereact.primereactStrings.local]
-    
-    inline def session: typings.primereact.primereactStrings.session = "session".asInstanceOf[typings.primereact.primereactStrings.session]
   }
 }

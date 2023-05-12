@@ -20,6 +20,8 @@ trait PartialTabsProps extends StObject {
   
   var defaultSelectedTabId: js.UndefOr[TabId] = js.undefined
   
+  var fill: js.UndefOr[Boolean] = js.undefined
+  
   var id: js.UndefOr[TabId] = js.undefined
   
   var large: js.UndefOr[Boolean] = js.undefined
@@ -64,6 +66,10 @@ object PartialTabsProps {
     inline def setDefaultSelectedTabId(value: TabId): Self = StObject.set(x, "defaultSelectedTabId", value.asInstanceOf[js.Any])
     
     inline def setDefaultSelectedTabIdUndefined: Self = StObject.set(x, "defaultSelectedTabId", js.undefined)
+    
+    inline def setFill(value: Boolean): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+    
+    inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
     
     inline def setId(value: TabId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

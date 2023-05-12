@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetResponses200401403404 extends StObject {
   
   /**
-    * Lists package versions for a public package owned by a specified user.
+    * List package versions for a package owned by a user
+    * @description Lists package versions for a public package owned by a specified user.
     *
-    * To use this endpoint, you must authenticate using an access token with the `packages:read` scope.
-    * If `package_type` is not `container`, your token must also include the `repo` scope.
+    * To use this endpoint, you must authenticate using an access token with the `read:packages` scope. If the `package_type` belongs to a GitHub Packages registry that only supports repository-scoped permissions, your token must also include the `repo` scope. For the list of GitHub Packages registries that only support repository-scoped permissions, see "[About permissions for GitHub Packages](https://docs.github.com/packages/learn-github-packages/about-permissions-for-github-packages#permissions-for-repository-scoped-packages)."
     */
   var get: Responses200401403404
 }

@@ -6,45 +6,30 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TypeofAccount extends StObject {
   
-  val Capabilities: Any
+  val AccountHolder: Any
   
-  val Company: TypeofCompany
+  val Balance: Any
   
-  val Controller: Any
+  val BalanceRefresh: Any
   
-  val FutureRequirements: TypeofFutureRequirements
-  
-  val Requirements: TypeofRequirements
-  
-  val Settings: TypeofSettings
+  val OwnershipRefresh: Any
 }
 object TypeofAccount {
   
-  inline def apply(
-    Capabilities: Any,
-    Company: TypeofCompany,
-    Controller: Any,
-    FutureRequirements: TypeofFutureRequirements,
-    Requirements: TypeofRequirements,
-    Settings: TypeofSettings
-  ): TypeofAccount = {
-    val __obj = js.Dynamic.literal(Capabilities = Capabilities.asInstanceOf[js.Any], Company = Company.asInstanceOf[js.Any], Controller = Controller.asInstanceOf[js.Any], FutureRequirements = FutureRequirements.asInstanceOf[js.Any], Requirements = Requirements.asInstanceOf[js.Any], Settings = Settings.asInstanceOf[js.Any])
+  inline def apply(AccountHolder: Any, Balance: Any, BalanceRefresh: Any, OwnershipRefresh: Any): TypeofAccount = {
+    val __obj = js.Dynamic.literal(AccountHolder = AccountHolder.asInstanceOf[js.Any], Balance = Balance.asInstanceOf[js.Any], BalanceRefresh = BalanceRefresh.asInstanceOf[js.Any], OwnershipRefresh = OwnershipRefresh.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofAccount]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: TypeofAccount] (val x: Self) extends AnyVal {
     
-    inline def setCapabilities(value: Any): Self = StObject.set(x, "Capabilities", value.asInstanceOf[js.Any])
+    inline def setAccountHolder(value: Any): Self = StObject.set(x, "AccountHolder", value.asInstanceOf[js.Any])
     
-    inline def setCompany(value: TypeofCompany): Self = StObject.set(x, "Company", value.asInstanceOf[js.Any])
+    inline def setBalance(value: Any): Self = StObject.set(x, "Balance", value.asInstanceOf[js.Any])
     
-    inline def setController(value: Any): Self = StObject.set(x, "Controller", value.asInstanceOf[js.Any])
+    inline def setBalanceRefresh(value: Any): Self = StObject.set(x, "BalanceRefresh", value.asInstanceOf[js.Any])
     
-    inline def setFutureRequirements(value: TypeofFutureRequirements): Self = StObject.set(x, "FutureRequirements", value.asInstanceOf[js.Any])
-    
-    inline def setRequirements(value: TypeofRequirements): Self = StObject.set(x, "Requirements", value.asInstanceOf[js.Any])
-    
-    inline def setSettings(value: TypeofSettings): Self = StObject.set(x, "Settings", value.asInstanceOf[js.Any])
+    inline def setOwnershipRefresh(value: Any): Self = StObject.set(x, "OwnershipRefresh", value.asInstanceOf[js.Any])
   }
 }

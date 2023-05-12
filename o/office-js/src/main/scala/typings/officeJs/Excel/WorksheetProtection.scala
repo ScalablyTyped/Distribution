@@ -40,7 +40,7 @@ trait WorksheetProtection
   /**
     * Specifies if the password can be used to unlock worksheet protection.
     This method doesn't change the worksheet protection state.
-    If a password is inputted but no password is required to unlock worksheet protection, this method will return false.
+    If a password is input but no password is required to unlock worksheet protection, this method will return false.
     *
     * @remarks
     * [Api set: ExcelApiOnline 1.1]

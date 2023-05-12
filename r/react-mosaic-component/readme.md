@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-mosaic-component
 
-Typings are for version 5.3.0
+Typings are for version 6.0.1
 
 ## Library description:
 A React Tiling Window Manager

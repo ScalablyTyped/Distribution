@@ -1,7 +1,7 @@
 
 # Scala.js typings for query-selector-shadow-dom
 
-Typings are for version 1.0.0
+Typings are for version 1.0.1
 
 ## Library description:
 use querySelector syntax to search for nodes inside of (nested) shadow roots

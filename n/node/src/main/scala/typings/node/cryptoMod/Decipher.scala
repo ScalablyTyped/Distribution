@@ -23,11 +23,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Example: Using `Decipher` objects as streams:
   *
   * ```js
-  * import { Buffer } from 'buffer';
+  * import { Buffer } from 'node:buffer';
   * const {
   *   scryptSync,
-  *   createDecipheriv
-  * } = await import('crypto');
+  *   createDecipheriv,
+  * } = await import('node:crypto');
   *
   * const algorithm = 'aes-192-cbc';
   * const password = 'Password used to generate key';
@@ -42,6 +42,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * let decrypted = '';
   * decipher.on('readable', () => {
+  *   let chunk;
   *   while (null !== (chunk = decipher.read())) {
   *     decrypted += chunk.toString('utf8');
   *   }
@@ -64,12 +65,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * import {
   *   createReadStream,
   *   createWriteStream,
-  * } from 'fs';
-  * import { Buffer } from 'buffer';
+  * } from 'node:fs';
+  * import { Buffer } from 'node:buffer';
   * const {
   *   scryptSync,
-  *   createDecipheriv
-  * } = await import('crypto');
+  *   createDecipheriv,
+  * } = await import('node:crypto');
   *
   * const algorithm = 'aes-192-cbc';
   * const password = 'Password used to generate key';
@@ -89,11 +90,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Example: Using the `decipher.update()` and `decipher.final()` methods:
   *
   * ```js
-  * import { Buffer } from 'buffer';
+  * import { Buffer } from 'node:buffer';
   * const {
   *   scryptSync,
-  *   createDecipheriv
-  * } = await import('crypto');
+  *   createDecipheriv,
+  * } = await import('node:crypto');
   *
   * const algorithm = 'aes-192-cbc';
   * const password = 'Password used to generate key';

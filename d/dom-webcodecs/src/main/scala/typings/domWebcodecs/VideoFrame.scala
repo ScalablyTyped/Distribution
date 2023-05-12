@@ -30,9 +30,9 @@ trait VideoFrame extends StObject {
   
   val duration: Double | Null = js.native
   
-  val format: VideoPixelFormat | Null = js.native
+  val format: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VideoPixelFormat */ Any) | Null = js.native
   
-  val timestamp: Double | Null = js.native
+  val timestamp: Double = js.native
   
   val visibleRect: DOMRectReadOnly | Null = js.native
 }

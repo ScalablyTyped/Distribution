@@ -47,11 +47,11 @@ object mod {
     
     def edgeCount(): Double = js.native
     
-    def getCluster(id: String): Graph_ = js.native
+    def getCluster(id: String): js.UndefOr[Graph_] = js.native
     
     def getEdgeAttribut(name: String): Any = js.native
     
-    def getNode(id: String): Node = js.native
+    def getNode(id: String): js.UndefOr[Node] = js.native
     
     def getNodeAttribut(name: String): Any = js.native
     
@@ -89,13 +89,13 @@ object mod {
   
   trait HasAttributes extends StObject {
     
-    def get(name: String): PossibleValue
+    def get(name: String): js.UndefOr[PossibleValue]
     
     def set(name: String, value: PossibleValue): Unit
   }
   object HasAttributes {
     
-    inline def apply(get: String => PossibleValue, set: (String, PossibleValue) => Unit): HasAttributes = {
+    inline def apply(get: String => js.UndefOr[PossibleValue], set: (String, PossibleValue) => Unit): HasAttributes = {
       val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), set = js.Any.fromFunction2(set))
       __obj.asInstanceOf[HasAttributes]
     }
@@ -103,7 +103,7 @@ object mod {
     @scala.inline
     implicit open class MutableBuilder[Self <: HasAttributes] (val x: Self) extends AnyVal {
       
-      inline def setGet(value: String => PossibleValue): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      inline def setGet(value: String => js.UndefOr[PossibleValue]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
       inline def setSet(value: (String, PossibleValue) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
     }
@@ -117,7 +117,7 @@ object mod {
   }
   object Node {
     
-    inline def apply(get: String => PossibleValue, id: String, set: (String, PossibleValue) => Unit): Node = {
+    inline def apply(get: String => js.UndefOr[PossibleValue], id: String, set: (String, PossibleValue) => Unit): Node = {
       val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), id = id.asInstanceOf[js.Any], set = js.Any.fromFunction2(set))
       __obj.asInstanceOf[Node]
     }

@@ -12,6 +12,11 @@ trait UpdateRoomRequest extends StObject {
   var identifier: RoomIdentifier
   
   /**
+    * Array of logging-configuration identifiers attached to the room.
+    */
+  var loggingConfigurationIdentifiers: js.UndefOr[LoggingConfigurationIdentifierList] = js.undefined
+  
+  /**
     * The maximum number of characters in a single message. Messages are expected to be UTF-8 encoded and this limit applies specifically to rune/code-point count, not number of bytes. Default: 500.
     */
   var maximumMessageLength: js.UndefOr[RoomMaxMessageLength] = js.undefined
@@ -42,6 +47,12 @@ object UpdateRoomRequest {
   implicit open class MutableBuilder[Self <: UpdateRoomRequest] (val x: Self) extends AnyVal {
     
     inline def setIdentifier(value: RoomIdentifier): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
+    
+    inline def setLoggingConfigurationIdentifiers(value: LoggingConfigurationIdentifierList): Self = StObject.set(x, "loggingConfigurationIdentifiers", value.asInstanceOf[js.Any])
+    
+    inline def setLoggingConfigurationIdentifiersUndefined: Self = StObject.set(x, "loggingConfigurationIdentifiers", js.undefined)
+    
+    inline def setLoggingConfigurationIdentifiersVarargs(value: LoggingConfigurationIdentifier*): Self = StObject.set(x, "loggingConfigurationIdentifiers", js.Array(value*))
     
     inline def setMaximumMessageLength(value: RoomMaxMessageLength): Self = StObject.set(x, "maximumMessageLength", value.asInstanceOf[js.Any])
     

@@ -6,8 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ColumnRowFilter extends StObject {
   
+  /**
+    * A string containing the name of the column.
+    */
   var ColumnName: js.UndefOr[NameString] = js.undefined
   
+  /**
+    * A string containing the row-level filter expression.
+    */
   var RowFilterExpression: js.UndefOr[PredicateString] = js.undefined
 }
 object ColumnRowFilter {

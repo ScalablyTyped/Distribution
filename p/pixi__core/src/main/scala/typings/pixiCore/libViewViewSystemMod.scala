@@ -1,5 +1,6 @@
 package typings.pixiCore
 
+import typings.pixiCore.anon.AutoDensity
 import typings.pixiCore.libIrendererMod.IRenderer
 import typings.pixiCore.libSystemIsystemMod.ISystem
 import typings.pixiExtensions.mod.ExtensionMetadata
@@ -15,7 +16,7 @@ object libViewViewSystemMod {
   @js.native
   open class ViewSystem protected ()
     extends StObject
-       with ISystem[ViewOptions, Boolean] {
+       with ISystem[ViewSystemOptions, Boolean] {
     def this(renderer: IRenderer[ICanvas]) = this()
     
     /**
@@ -42,7 +43,7 @@ object libViewViewSystemMod {
       * @param {PIXI.ViewOptions} options - the options for the view
       */
     @JSName("init")
-    def init_MViewSystem(options: ViewOptions): Unit = js.native
+    def init_MViewSystem(options: ViewSystemOptions): Unit = js.native
     
     /* private */ var renderer: Any = js.native
     
@@ -71,44 +72,71 @@ object libViewViewSystemMod {
   /* static members */
   object ViewSystem {
     
+    @JSImport("@pixi/core/lib/view/ViewSystem", "ViewSystem")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /** @ignore */
+    @JSImport("@pixi/core/lib/view/ViewSystem", "ViewSystem.defaultOptions")
+    @js.native
+    def defaultOptions: AutoDensity = js.native
+    inline def defaultOptions_=(x: AutoDensity): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultOptions")(x.asInstanceOf[js.Any])
+    
     /** @ignore */
     @JSImport("@pixi/core/lib/view/ViewSystem", "ViewSystem.extension")
     @js.native
     val `extension`: ExtensionMetadata = js.native
   }
   
-  trait ViewOptions extends StObject {
+  trait ViewSystemOptions extends StObject {
     
-    /** Resizes renderer view in CSS pixels to allow for resolutions other than 1. */
+    /**
+      * Whether the CSS dimensions of the renderer's view should be resized automatically.
+      * @memberof PIXI.IRendererOptions
+      */
     var autoDensity: js.UndefOr[Boolean] = js.undefined
     
-    /** The height of the screen. */
-    var height: Double
+    /**
+      * The height of the renderer's view.
+      * @memberof PIXI.IRendererOptions
+      */
+    var height: js.UndefOr[Double] = js.undefined
     
-    /** The resolution / device pixel ratio of the renderer. */
+    /**
+      * The resolution / device pixel ratio of the renderer.
+      * @memberof PIXI.IRendererOptions
+      */
     var resolution: js.UndefOr[Double] = js.undefined
     
-    /** The canvas to use as a view, optional. */
+    /**
+      * The canvas to use as the view. If omitted, a new canvas will be created.
+      * @memberof PIXI.IRendererOptions
+      */
     var view: js.UndefOr[ICanvas] = js.undefined
     
-    /** The width of the screen. */
-    var width: Double
+    /**
+      * The width of the renderer's view.
+      * @memberof PIXI.IRendererOptions
+      */
+    var width: js.UndefOr[Double] = js.undefined
   }
-  object ViewOptions {
+  object ViewSystemOptions {
     
-    inline def apply(height: Double, width: Double): ViewOptions = {
-      val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-      __obj.asInstanceOf[ViewOptions]
+    inline def apply(): ViewSystemOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ViewSystemOptions]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: ViewOptions] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: ViewSystemOptions] (val x: Self) extends AnyVal {
       
       inline def setAutoDensity(value: Boolean): Self = StObject.set(x, "autoDensity", value.asInstanceOf[js.Any])
       
       inline def setAutoDensityUndefined: Self = StObject.set(x, "autoDensity", js.undefined)
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
       inline def setResolution(value: Double): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
       
@@ -119,6 +147,8 @@ object libViewViewSystemMod {
       inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
       
       inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
 }

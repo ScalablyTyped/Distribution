@@ -1,5 +1,6 @@
 package typings.floatingUiDom
 
+import typings.floatingUiCore.anon.Fn
 import typings.floatingUiCore.anon.PartialLimitShiftOptions
 import typings.floatingUiCore.anon.PartialOptionsOptions
 import typings.floatingUiCore.anon.PartialOptionsOptionsAltBoundary
@@ -8,19 +9,28 @@ import typings.floatingUiCore.anon.PartialOptionsOptionsBoundary
 import typings.floatingUiCore.anon.PartialOptionsOptionsCrossAxis
 import typings.floatingUiCore.anon.PartialOptionsPadding
 import typings.floatingUiCore.srcMiddlewareArrowMod.Options
+import typings.floatingUiCore.srcTypesMod.ClientRectObject
 import typings.floatingUiCore.srcTypesMod.ComputePositionReturn
+import typings.floatingUiCore.srcTypesMod.Dimensions
+import typings.floatingUiCore.srcTypesMod.ElementRects
 import typings.floatingUiCore.srcTypesMod.Middleware
-import typings.floatingUiCore.srcTypesMod.MiddlewareArguments
+import typings.floatingUiCore.srcTypesMod.MiddlewareState
+import typings.floatingUiCore.srcTypesMod.Rect
 import typings.floatingUiCore.srcTypesMod.SideObject
+import typings.floatingUiDom.anon.Boundary
+import typings.floatingUiDom.anon.Floating
+import typings.floatingUiDom.anon.OffsetParent
 import typings.floatingUiDom.anon.PartialComputePositionCon
 import typings.floatingUiDom.anon.PartialOptions
+import typings.floatingUiDom.anon.X
 import typings.floatingUiDom.srcTypesMod.FloatingElement
-import typings.floatingUiDom.srcTypesMod.Platform_
+import typings.floatingUiDom.srcTypesMod.Promisable
 import typings.floatingUiDom.srcTypesMod.ReferenceElement
+import typings.floatingUiDom.srcUtilsGetOverflowAncestorsMod.OverflowAncestors
 import typings.floatingUiDom.srcUtilsIsMod.global.Window
 import typings.std.Element
+import typings.std.HTMLElement
 import typings.std.Node
-import typings.std.VisualViewport
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -47,30 +57,105 @@ object srcMod {
   inline def computePosition(reference: ReferenceElement, floating: FloatingElement): js.Promise[ComputePositionReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("computePosition")(reference.asInstanceOf[js.Any], floating.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ComputePositionReturn]]
   inline def computePosition(reference: ReferenceElement, floating: FloatingElement, options: PartialComputePositionCon): js.Promise[ComputePositionReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("computePosition")(reference.asInstanceOf[js.Any], floating.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ComputePositionReturn]]
   
-  inline def detectOverflow(middlewareArguments: MiddlewareArguments): js.Promise[SideObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("detectOverflow")(middlewareArguments.asInstanceOf[js.Any]).asInstanceOf[js.Promise[SideObject]]
-  inline def detectOverflow(middlewareArguments: MiddlewareArguments, options: typings.floatingUiCore.anon.PartialOptions): js.Promise[SideObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("detectOverflow")(middlewareArguments.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SideObject]]
+  inline def detectOverflow(state: MiddlewareState): js.Promise[SideObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("detectOverflow")(state.asInstanceOf[js.Any]).asInstanceOf[js.Promise[SideObject]]
+  inline def detectOverflow(state: MiddlewareState, options: typings.floatingUiCore.anon.PartialOptions): js.Promise[SideObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("detectOverflow")(state.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SideObject]]
   
   inline def flip(): Middleware = ^.asInstanceOf[js.Dynamic].applyDynamic("flip")().asInstanceOf[Middleware]
   inline def flip(options: PartialOptionsOptionsAltBoundary): Middleware = ^.asInstanceOf[js.Dynamic].applyDynamic("flip")(options.asInstanceOf[js.Any]).asInstanceOf[Middleware]
   
-  inline def getOverflowAncestors(node: Node): js.Array[Element | Window | VisualViewport] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOverflowAncestors")(node.asInstanceOf[js.Any]).asInstanceOf[js.Array[Element | Window | VisualViewport]]
-  inline def getOverflowAncestors(node: Node, list: js.Array[Element | Window]): js.Array[Element | Window | VisualViewport] = (^.asInstanceOf[js.Dynamic].applyDynamic("getOverflowAncestors")(node.asInstanceOf[js.Any], list.asInstanceOf[js.Any])).asInstanceOf[js.Array[Element | Window | VisualViewport]]
+  inline def getOverflowAncestors(node: Node): OverflowAncestors = ^.asInstanceOf[js.Dynamic].applyDynamic("getOverflowAncestors")(node.asInstanceOf[js.Any]).asInstanceOf[OverflowAncestors]
+  inline def getOverflowAncestors(node: Node, list: OverflowAncestors): OverflowAncestors = (^.asInstanceOf[js.Dynamic].applyDynamic("getOverflowAncestors")(node.asInstanceOf[js.Any], list.asInstanceOf[js.Any])).asInstanceOf[OverflowAncestors]
   
   inline def hide(): Middleware = ^.asInstanceOf[js.Dynamic].applyDynamic("hide")().asInstanceOf[Middleware]
-  inline def hide(param0: PartialOptionsOptionsBoundary): Middleware = ^.asInstanceOf[js.Dynamic].applyDynamic("hide")(param0.asInstanceOf[js.Any]).asInstanceOf[Middleware]
+  inline def hide(options: PartialOptionsOptionsBoundary): Middleware = ^.asInstanceOf[js.Dynamic].applyDynamic("hide")(options.asInstanceOf[js.Any]).asInstanceOf[Middleware]
   
   inline def `inline`(): Middleware = ^.asInstanceOf[js.Dynamic].applyDynamic("inline")().asInstanceOf[Middleware]
   inline def `inline`(options: PartialOptionsPadding): Middleware = ^.asInstanceOf[js.Dynamic].applyDynamic("inline")(options.asInstanceOf[js.Any]).asInstanceOf[Middleware]
   
-  inline def limitShift(): typings.floatingUiCore.anon.Options = ^.asInstanceOf[js.Dynamic].applyDynamic("limitShift")().asInstanceOf[typings.floatingUiCore.anon.Options]
-  inline def limitShift(options: PartialLimitShiftOptions): typings.floatingUiCore.anon.Options = ^.asInstanceOf[js.Dynamic].applyDynamic("limitShift")(options.asInstanceOf[js.Any]).asInstanceOf[typings.floatingUiCore.anon.Options]
+  inline def limitShift(): Fn = ^.asInstanceOf[js.Dynamic].applyDynamic("limitShift")().asInstanceOf[Fn]
+  inline def limitShift(options: PartialLimitShiftOptions): Fn = ^.asInstanceOf[js.Dynamic].applyDynamic("limitShift")(options.asInstanceOf[js.Any]).asInstanceOf[Fn]
   
   inline def offset(): Middleware = ^.asInstanceOf[js.Dynamic].applyDynamic("offset")().asInstanceOf[Middleware]
   inline def offset(value: typings.floatingUiCore.srcMiddlewareOffsetMod.Options): Middleware = ^.asInstanceOf[js.Dynamic].applyDynamic("offset")(value.asInstanceOf[js.Any]).asInstanceOf[Middleware]
   
-  @JSImport("@floating-ui/dom/src", "platform")
-  @js.native
-  val platform: Platform_ = js.native
+  /* Inlined std.Required<@floating-ui/dom.@floating-ui/dom/src/types.Platform> */
+  object platform {
+    
+    @JSImport("@floating-ui/dom/src", "platform")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("@floating-ui/dom/src", "platform.convertOffsetParentRelativeRectToViewportRelativeRect")
+    @js.native
+    def convertOffsetParentRelativeRectToViewportRelativeRect: js.Function1[/* args */ OffsetParent, Promisable[Rect]] = js.native
+    inline def convertOffsetParentRelativeRectToViewportRelativeRect(args: OffsetParent): Promisable[Rect] = ^.asInstanceOf[js.Dynamic].applyDynamic("convertOffsetParentRelativeRectToViewportRelativeRect")(args.asInstanceOf[js.Any]).asInstanceOf[Promisable[Rect]]
+    inline def convertOffsetParentRelativeRectToViewportRelativeRect_=(x: js.Function1[/* args */ OffsetParent, Promisable[Rect]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("convertOffsetParentRelativeRectToViewportRelativeRect")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@floating-ui/dom/src", "platform.getClientRects")
+    @js.native
+    def getClientRects: js.Function1[/* element */ Element, Promisable[js.Array[ClientRectObject]]] = js.native
+    inline def getClientRects(element: Element): Promisable[js.Array[ClientRectObject]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getClientRects")(element.asInstanceOf[js.Any]).asInstanceOf[Promisable[js.Array[ClientRectObject]]]
+    inline def getClientRects_=(x: js.Function1[/* element */ Element, Promisable[js.Array[ClientRectObject]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getClientRects")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@floating-ui/dom/src", "platform.getClippingRect")
+    @js.native
+    def getClippingRect: js.Function1[/* args */ Boundary, Promisable[Rect]] = js.native
+    inline def getClippingRect(args: Boundary): Promisable[Rect] = ^.asInstanceOf[js.Dynamic].applyDynamic("getClippingRect")(args.asInstanceOf[js.Any]).asInstanceOf[Promisable[Rect]]
+    inline def getClippingRect_=(x: js.Function1[/* args */ Boundary, Promisable[Rect]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getClippingRect")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@floating-ui/dom/src", "platform.getDimensions")
+    @js.native
+    def getDimensions: js.Function1[/* element */ Element, Promisable[Dimensions]] = js.native
+    inline def getDimensions(element: Element): Promisable[Dimensions] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDimensions")(element.asInstanceOf[js.Any]).asInstanceOf[Promisable[Dimensions]]
+    inline def getDimensions_=(x: js.Function1[/* element */ Element, Promisable[Dimensions]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getDimensions")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@floating-ui/dom/src", "platform.getDocumentElement")
+    @js.native
+    def getDocumentElement: js.Function1[/* element */ Element, Promisable[HTMLElement]] = js.native
+    inline def getDocumentElement(element: Element): Promisable[HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDocumentElement")(element.asInstanceOf[js.Any]).asInstanceOf[Promisable[HTMLElement]]
+    inline def getDocumentElement_=(x: js.Function1[/* element */ Element, Promisable[HTMLElement]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getDocumentElement")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@floating-ui/dom/src", "platform.getElementRects")
+    @js.native
+    def getElementRects: js.Function1[/* args */ Floating, Promisable[ElementRects]] = js.native
+    inline def getElementRects(args: Floating): Promisable[ElementRects] = ^.asInstanceOf[js.Dynamic].applyDynamic("getElementRects")(args.asInstanceOf[js.Any]).asInstanceOf[Promisable[ElementRects]]
+    inline def getElementRects_=(x: js.Function1[/* args */ Floating, Promisable[ElementRects]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getElementRects")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@floating-ui/dom/src", "platform.getOffsetParent")
+    @js.native
+    def getOffsetParent: js.Function2[
+        /* element */ Element, 
+        /* polyfill */ js.UndefOr[js.Function1[/* element */ HTMLElement, Element | Null]], 
+        Promisable[Element | Window]
+      ] = js.native
+    inline def getOffsetParent(element: Element): Promisable[Element | Window] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOffsetParent")(element.asInstanceOf[js.Any]).asInstanceOf[Promisable[Element | Window]]
+    inline def getOffsetParent(element: Element, polyfill: js.Function1[/* element */ HTMLElement, Element | Null]): Promisable[Element | Window] = (^.asInstanceOf[js.Dynamic].applyDynamic("getOffsetParent")(element.asInstanceOf[js.Any], polyfill.asInstanceOf[js.Any])).asInstanceOf[Promisable[Element | Window]]
+    inline def getOffsetParent_=(
+      x: js.Function2[
+          /* element */ Element, 
+          /* polyfill */ js.UndefOr[js.Function1[/* element */ HTMLElement, Element | Null]], 
+          Promisable[Element | Window]
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getOffsetParent")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@floating-ui/dom/src", "platform.getScale")
+    @js.native
+    def getScale: js.Function1[/* element */ HTMLElement, Promisable[X]] = js.native
+    inline def getScale(element: HTMLElement): Promisable[X] = ^.asInstanceOf[js.Dynamic].applyDynamic("getScale")(element.asInstanceOf[js.Any]).asInstanceOf[Promisable[X]]
+    inline def getScale_=(x: js.Function1[/* element */ HTMLElement, Promisable[X]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getScale")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@floating-ui/dom/src", "platform.isElement")
+    @js.native
+    def isElement: js.Function1[/* value */ Any, Promisable[Boolean]] = js.native
+    inline def isElement(value: Any): Promisable[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isElement")(value.asInstanceOf[js.Any]).asInstanceOf[Promisable[Boolean]]
+    inline def isElement_=(x: js.Function1[/* value */ Any, Promisable[Boolean]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isElement")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@floating-ui/dom/src", "platform.isRTL")
+    @js.native
+    def isRTL: js.Function1[/* element */ Element, Promisable[Boolean]] = js.native
+    inline def isRTL(element: Element): Promisable[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isRTL")(element.asInstanceOf[js.Any]).asInstanceOf[Promisable[Boolean]]
+    inline def isRTL_=(x: js.Function1[/* element */ Element, Promisable[Boolean]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isRTL")(x.asInstanceOf[js.Any])
+  }
   
   inline def shift(): Middleware = ^.asInstanceOf[js.Dynamic].applyDynamic("shift")().asInstanceOf[Middleware]
   inline def shift(options: PartialOptionsOptionsCrossAxis): Middleware = ^.asInstanceOf[js.Dynamic].applyDynamic("shift")(options.asInstanceOf[js.Any]).asInstanceOf[Middleware]

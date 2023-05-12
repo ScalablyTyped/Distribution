@@ -31,5 +31,10 @@ object distTypesDateTimeFormatDateTimeFormatMod {
       locale: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 54, starting with typings.wixDesignSystemsLocaleUtils.wixDesignSystemsLocaleUtilsStrings.en, typings.wixDesignSystemsLocaleUtils.wixDesignSystemsLocaleUtilsStrings.`en-US`, typings.wixDesignSystemsLocaleUtils.wixDesignSystemsLocaleUtilsStrings.`en-GB` */ Any,
       date: js.Date
     ): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getShortTime")(locale.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
+    
+    inline def getYear(
+      locale: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 54, starting with typings.wixDesignSystemsLocaleUtils.wixDesignSystemsLocaleUtilsStrings.en, typings.wixDesignSystemsLocaleUtils.wixDesignSystemsLocaleUtilsStrings.`en-US`, typings.wixDesignSystemsLocaleUtils.wixDesignSystemsLocaleUtilsStrings.`en-GB` */ Any,
+      date: js.Date
+    ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getYear")(locale.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[String]
   }
 }

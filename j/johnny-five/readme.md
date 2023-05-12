@@ -1,7 +1,7 @@
 
 # Scala.js typings for johnny-five
 
-Typings are for version 1.3.0
+Typings are for version 2.1
 
 ## Library description:
 The JavaScript Robotics and Hardware Programming Framework. Use with: Arduino (all models), Electric Imp, Beagle Bone, Intel Galileo & Edison, Linino One, Pinoccio, pcDuino3, Raspberry Pi, Particle/Spark Core & Photon, Tessel 2, TI Launchpad and more!

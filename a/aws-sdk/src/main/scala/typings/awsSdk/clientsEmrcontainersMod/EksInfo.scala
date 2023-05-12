@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EksInfo extends StObject {
   
   /**
-    * The namespaces of the EKS cluster.
+    * The namespaces of the Amazon EKS cluster.
     */
   var namespace: js.UndefOr[KubernetesNamespace] = js.undefined
 }

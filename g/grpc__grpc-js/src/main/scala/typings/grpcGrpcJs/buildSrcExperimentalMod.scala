@@ -6,7 +6,7 @@ import typings.grpcGrpcJs.anon.PartialSuccessRateEjectio
 import typings.grpcGrpcJs.buildSrcAdminMod.GetHandlers
 import typings.grpcGrpcJs.buildSrcAdminMod.GetServiceDefinition
 import typings.grpcGrpcJs.buildSrcBackoffTimeoutMod.BackoffOptions
-import typings.grpcGrpcJs.buildSrcCallStreamMod.StatusObject
+import typings.grpcGrpcJs.buildSrcCallInterfaceMod.StatusObject
 import typings.grpcGrpcJs.buildSrcConstantsMod.LogVerbosity
 import typings.grpcGrpcJs.buildSrcDurationMod.Duration
 import typings.grpcGrpcJs.buildSrcFilterMod.Filter

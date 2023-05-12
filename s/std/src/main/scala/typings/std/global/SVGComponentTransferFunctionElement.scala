@@ -1,5 +1,11 @@
 package typings.std.global
 
+import typings.std.stdInts.`0`
+import typings.std.stdInts.`1`
+import typings.std.stdInts.`2`
+import typings.std.stdInts.`3`
+import typings.std.stdInts.`4`
+import typings.std.stdInts.`5`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,10 +41,6 @@ open class SVGComponentTransferFunctionElement ()
   /* standard dom */
   /* CompleteClass */
   var ariaColIndex: java.lang.String | Null = js.native
-  
-  /* standard dom */
-  /* CompleteClass */
-  var ariaColIndexText: java.lang.String | Null = js.native
   
   /* standard dom */
   /* CompleteClass */
@@ -134,10 +136,6 @@ open class SVGComponentTransferFunctionElement ()
   
   /* standard dom */
   /* CompleteClass */
-  var ariaRowIndexText: java.lang.String | Null = js.native
-  
-  /* standard dom */
-  /* CompleteClass */
   var ariaRowSpan: java.lang.String | Null = js.native
   
   /* standard dom */
@@ -199,30 +197,30 @@ object SVGComponentTransferFunctionElement {
   /* standard dom */
   @JSGlobal("SVGComponentTransferFunctionElement.SVG_FECOMPONENTTRANSFER_TYPE_DISCRETE")
   @js.native
-  val SVG_FECOMPONENTTRANSFER_TYPE_DISCRETE: Double = js.native
+  val SVG_FECOMPONENTTRANSFER_TYPE_DISCRETE: `3` = js.native
   
   /* standard dom */
   @JSGlobal("SVGComponentTransferFunctionElement.SVG_FECOMPONENTTRANSFER_TYPE_GAMMA")
   @js.native
-  val SVG_FECOMPONENTTRANSFER_TYPE_GAMMA: Double = js.native
+  val SVG_FECOMPONENTTRANSFER_TYPE_GAMMA: `5` = js.native
   
   /* standard dom */
   @JSGlobal("SVGComponentTransferFunctionElement.SVG_FECOMPONENTTRANSFER_TYPE_IDENTITY")
   @js.native
-  val SVG_FECOMPONENTTRANSFER_TYPE_IDENTITY: Double = js.native
+  val SVG_FECOMPONENTTRANSFER_TYPE_IDENTITY: `1` = js.native
   
   /* standard dom */
   @JSGlobal("SVGComponentTransferFunctionElement.SVG_FECOMPONENTTRANSFER_TYPE_LINEAR")
   @js.native
-  val SVG_FECOMPONENTTRANSFER_TYPE_LINEAR: Double = js.native
+  val SVG_FECOMPONENTTRANSFER_TYPE_LINEAR: `4` = js.native
   
   /* standard dom */
   @JSGlobal("SVGComponentTransferFunctionElement.SVG_FECOMPONENTTRANSFER_TYPE_TABLE")
   @js.native
-  val SVG_FECOMPONENTTRANSFER_TYPE_TABLE: Double = js.native
+  val SVG_FECOMPONENTTRANSFER_TYPE_TABLE: `2` = js.native
   
   /* standard dom */
   @JSGlobal("SVGComponentTransferFunctionElement.SVG_FECOMPONENTTRANSFER_TYPE_UNKNOWN")
   @js.native
-  val SVG_FECOMPONENTTRANSFER_TYPE_UNKNOWN: Double = js.native
+  val SVG_FECOMPONENTTRANSFER_TYPE_UNKNOWN: `0` = js.native
 }

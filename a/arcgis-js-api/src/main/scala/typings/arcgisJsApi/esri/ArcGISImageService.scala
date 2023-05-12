@@ -224,6 +224,46 @@ trait ArcGISImageService extends StObject {
   var interpolation: nearest | bilinear | cubic | majority = js.native
   
   /**
+    * Calculates the area and perimeter of a given geometry on an image service.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#measureAreaAndPerimeter)
+    */
+  def measureAreaAndPerimeter(parameters: ImageAreaParameters): js.Promise[ImageAreaResult] = js.native
+  def measureAreaAndPerimeter(parameters: ImageAreaParametersProperties): js.Promise[ImageAreaResult] = js.native
+  def measureAreaAndPerimeter(parameters: ImageAreaParametersProperties, requestOptions: Any): js.Promise[ImageAreaResult] = js.native
+  def measureAreaAndPerimeter(parameters: ImageAreaParameters, requestOptions: Any): js.Promise[ImageAreaResult] = js.native
+  
+  /**
+    * Calculates the distance and angle between two points on an image service.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#measureDistanceAndAngle)
+    */
+  def measureDistanceAndAngle(parameters: ImageDistanceParameters): js.Promise[ImageDistanceResult] = js.native
+  def measureDistanceAndAngle(parameters: ImageDistanceParametersProperties): js.Promise[ImageDistanceResult] = js.native
+  def measureDistanceAndAngle(parameters: ImageDistanceParametersProperties, requestOptions: Any): js.Promise[ImageDistanceResult] = js.native
+  def measureDistanceAndAngle(parameters: ImageDistanceParameters, requestOptions: Any): js.Promise[ImageDistanceResult] = js.native
+  
+  /**
+    * Calculates the height of an object between two points on an image service if the sensor info is available.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#measureHeight)
+    */
+  def measureHeight(parameters: ImageHeightParameters): js.Promise[ImageHeightResult] = js.native
+  def measureHeight(parameters: ImageHeightParametersProperties): js.Promise[ImageHeightResult] = js.native
+  def measureHeight(parameters: ImageHeightParametersProperties, requestOptions: Any): js.Promise[ImageHeightResult] = js.native
+  def measureHeight(parameters: ImageHeightParameters, requestOptions: Any): js.Promise[ImageHeightResult] = js.native
+  
+  /**
+    * Returns the location for a given point or centroid of a given area on an image service.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#measurePointOrCentroid)
+    */
+  def measurePointOrCentroid(parameters: ImagePointParameters): js.Promise[ImagePointResult] = js.native
+  def measurePointOrCentroid(parameters: ImagePointParametersProperties): js.Promise[ImagePointResult] = js.native
+  def measurePointOrCentroid(parameters: ImagePointParametersProperties, requestOptions: Any): js.Promise[ImagePointResult] = js.native
+  def measurePointOrCentroid(parameters: ImagePointParameters, requestOptions: Any): js.Promise[ImagePointResult] = js.native
+  
+  /**
     * Defines how overlapping images should be mosaicked.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#mosaicRule)

@@ -17,6 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.devtoolsProtocol.devtoolsProtocolStrings.cache_storage
   - typings.devtoolsProtocol.devtoolsProtocolStrings.interest_groups
   - typings.devtoolsProtocol.devtoolsProtocolStrings.shared_storage
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.storage_buckets
   - typings.devtoolsProtocol.devtoolsProtocolStrings.all
   - typings.devtoolsProtocol.devtoolsProtocolStrings.other_
 */
@@ -46,6 +47,8 @@ object StorageType {
   inline def shader_cache: typings.devtoolsProtocol.devtoolsProtocolStrings.shader_cache = "shader_cache".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.shader_cache]
   
   inline def shared_storage: typings.devtoolsProtocol.devtoolsProtocolStrings.shared_storage = "shared_storage".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.shared_storage]
+  
+  inline def storage_buckets: typings.devtoolsProtocol.devtoolsProtocolStrings.storage_buckets = "storage_buckets".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.storage_buckets]
   
   inline def websql: typings.devtoolsProtocol.devtoolsProtocolStrings.websql = "websql".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.websql]
 }

@@ -27,6 +27,11 @@ trait UpdateAddonRequest extends StObject {
   var clusterName: ClusterName
   
   /**
+    * The set of configuration values for the add-on that's created. The values that you provide are validated against the schema in DescribeAddonConfiguration.
+    */
+  var configurationValues: js.UndefOr[String] = js.undefined
+  
+  /**
     * How to resolve field value conflicts for an Amazon EKS add-on if you've changed a value from the Amazon EKS default value. Conflicts are handled based on the option you choose:    None – Amazon EKS doesn't change the value. The update might fail.    Overwrite – Amazon EKS overwrites the changed value back to the Amazon EKS default value.    Preserve – Amazon EKS preserves the value. If you choose this option, we recommend that you test any field and value changes on a non-production cluster before updating the add-on on your production cluster.  
     */
   var resolveConflicts: js.UndefOr[ResolveConflicts] = js.undefined
@@ -57,6 +62,10 @@ object UpdateAddonRequest {
     inline def setClientRequestTokenUndefined: Self = StObject.set(x, "clientRequestToken", js.undefined)
     
     inline def setClusterName(value: ClusterName): Self = StObject.set(x, "clusterName", value.asInstanceOf[js.Any])
+    
+    inline def setConfigurationValues(value: String): Self = StObject.set(x, "configurationValues", value.asInstanceOf[js.Any])
+    
+    inline def setConfigurationValuesUndefined: Self = StObject.set(x, "configurationValues", js.undefined)
     
     inline def setResolveConflicts(value: ResolveConflicts): Self = StObject.set(x, "resolveConflicts", value.asInstanceOf[js.Any])
     

@@ -4,12 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The element-level status about a particular origin-destination pairing
-  * returned by the <code>DistanceMatrixService</code> upon completion of a
-  * distance matrix request. These values are specified as strings, for
-  * example, <code>'OK'</code>.
-  */
 @JSGlobal("google.maps.DistanceMatrixElementStatus")
 @js.native
 object DistanceMatrixElementStatus extends StObject {

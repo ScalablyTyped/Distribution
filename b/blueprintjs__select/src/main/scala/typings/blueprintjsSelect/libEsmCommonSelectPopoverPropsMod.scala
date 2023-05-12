@@ -26,6 +26,9 @@ object libEsmCommonSelectPopoverPropsMod {
       * Note that `content` cannot be changed, but you may apply some props to the content wrapper element
       * with `popoverContentProps`. Likewise, `targetProps` is no longer supported as it was in Blueprint v4, but you
       * may use `popoverTargetProps` instead.
+      *
+      * N.B. `disabled` is supported here, as this can be distinct from disabling the entire select button / input
+      * control element. There are some cases where we only want to disable the popover interaction.
       */
     var popoverProps: js.UndefOr[PartialOmitPopover2PropsD] = js.undefined
     

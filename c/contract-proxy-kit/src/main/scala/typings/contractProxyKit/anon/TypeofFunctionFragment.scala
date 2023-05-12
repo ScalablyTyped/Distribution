@@ -1,8 +1,12 @@
 package typings.contractProxyKit.anon
 
-import org.scalablytyped.runtime.Instantiable2
-import typings.ethers.mod.ethers.utils.FunctionFragment
-import typings.ethersprojectAbi.libFragmentsMod.JsonFragment
+import org.scalablytyped.runtime.Instantiable5
+import typings.contractProxyKit.contractProxyKitStrings.nonpayable
+import typings.contractProxyKit.contractProxyKitStrings.payable
+import typings.contractProxyKit.contractProxyKitStrings.pure
+import typings.contractProxyKit.contractProxyKitStrings.view
+import typings.ethers.mod.ethers.FunctionFragment
+import typings.ethers.typesAbiFragmentsMod.ParamType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,16 +14,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait TypeofFunctionFragment
   extends StObject
-     with Instantiable2[/* constructorGuard */ Any, /* params */ Any, FunctionFragment] {
+     with Instantiable5[
+      /* guard */ Any, 
+      /* name */ String, 
+      /* stateMutability */ payable | nonpayable | view | pure, 
+      /* inputs */ js.Array[ParamType], 
+      /* outputs */ js.Array[ParamType], 
+      FunctionFragment
+    ] {
   
-  def from(value: String): typings.ethersprojectAbi.libFragmentsMod.FunctionFragment = js.native
-  def from(value: typings.ethersprojectAbi.libFragmentsMod.FunctionFragment): typings.ethersprojectAbi.libFragmentsMod.FunctionFragment = js.native
-  def from(value: JsonFragment): typings.ethersprojectAbi.libFragmentsMod.FunctionFragment = js.native
+  def from(obj: Any): typings.ethers.typesAbiFragmentsMod.FunctionFragment = js.native
   
-  def fromObject(value: typings.ethersprojectAbi.libFragmentsMod.FunctionFragment): typings.ethersprojectAbi.libFragmentsMod.FunctionFragment = js.native
-  def fromObject(value: JsonFragment): typings.ethersprojectAbi.libFragmentsMod.FunctionFragment = js.native
+  def getSelector(name: String): String = js.native
+  def getSelector(name: String, params: js.Array[Any]): String = js.native
   
-  def fromString(value: String): typings.ethersprojectAbi.libFragmentsMod.FunctionFragment = js.native
-  
-  def isFunctionFragment(value: Any): /* is @ethersproject/abi.@ethersproject/abi/lib/fragments.FunctionFragment */ Boolean = js.native
+  def isFragment(value: Any): /* is ethers.ethers/types/abi/fragments.FunctionFragment */ Boolean = js.native
 }

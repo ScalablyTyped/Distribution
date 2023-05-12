@@ -15,7 +15,8 @@ trait Excludeownerprojects extends StObject {
     */
   var created_at: String
   
-  var exclude: js.UndefOr[js.Array[Any]] = js.undefined
+  /** @description Exclude related items from being returned in the response in order to improve performance of the request. The array can include any of: `"repositories"`. */
+  var exclude: js.UndefOr[js.Array[String]] = js.undefined
   
   var exclude_attachments: Boolean
   
@@ -42,6 +43,7 @@ trait Excludeownerprojects extends StObject {
   
   var owner: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-simple-user'] */ js.Any
   
+  /** @description The repositories included in the migration. Only returned for export migrations. */
   var repositories: js.Array[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['repository'] */ js.Any
   ]
@@ -96,11 +98,11 @@ object Excludeownerprojects {
     
     inline def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
     
-    inline def setExclude(value: js.Array[Any]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
+    inline def setExclude(value: js.Array[String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
     
     inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
     
-    inline def setExcludeVarargs(value: Any*): Self = StObject.set(x, "exclude", js.Array(value*))
+    inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "exclude", js.Array(value*))
     
     inline def setExclude_attachments(value: Boolean): Self = StObject.set(x, "exclude_attachments", value.asInstanceOf[js.Any])
     

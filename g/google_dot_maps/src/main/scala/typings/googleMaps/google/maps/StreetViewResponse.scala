@@ -4,10 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The response resolved for a Promise from {@link
-  * google.maps.StreetViewService.getPanorama}.
-  */
 trait StreetViewResponse extends StObject {
   
   /**

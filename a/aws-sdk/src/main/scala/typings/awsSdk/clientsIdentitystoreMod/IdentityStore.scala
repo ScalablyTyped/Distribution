@@ -43,12 +43,12 @@ trait IdentityStore extends Service {
   ): Request[CreateGroupMembershipResponse, AWSError] = js.native
   
   /**
-    * Creates a new user within the specified identity store.
+    * Creates a user within the specified identity store.
     */
   def createUser(): Request[CreateUserResponse, AWSError] = js.native
   def createUser(callback: js.Function2[/* err */ AWSError, /* data */ CreateUserResponse, Unit]): Request[CreateUserResponse, AWSError] = js.native
   /**
-    * Creates a new user within the specified identity store.
+    * Creates a user within the specified identity store.
     */
   def createUser(params: CreateUserRequest): Request[CreateUserResponse, AWSError] = js.native
   def createUser(

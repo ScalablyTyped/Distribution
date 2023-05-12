@@ -1,13 +1,20 @@
 package typings.three.srcConstantsMod
 
-import typings.three.srcConstantsMod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-sealed trait AnimationActionLoopStyles extends StObject
+/* Rewritten from type alias, can be one of: 
+  - typings.three.threeInts.`2200`
+  - typings.three.threeInts.`2201`
+  - typings.three.threeInts.`2202`
+*/
+trait AnimationActionLoopStyles extends StObject
 object AnimationActionLoopStyles {
   
-  inline def apply(value: scala.Nothing): js.UndefOr[AnimationActionLoopStyles & scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("AnimationActionLoopStyles")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[AnimationActionLoopStyles & scala.Nothing]]
+  inline def `2200`: typings.three.threeInts.`2200` = 2200.asInstanceOf[typings.three.threeInts.`2200`]
+  
+  inline def `2201`: typings.three.threeInts.`2201` = 2201.asInstanceOf[typings.three.threeInts.`2201`]
+  
+  inline def `2202`: typings.three.threeInts.`2202` = 2202.asInstanceOf[typings.three.threeInts.`2202`]
 }

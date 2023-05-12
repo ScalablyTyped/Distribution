@@ -8,10 +8,8 @@ trait FileshaOwner extends StObject {
   
   var file_sha: String
   
-  /** The account owner of the repository. The name is not case sensitive. */
   var owner: String
   
-  /** The name of the repository. The name is not case sensitive. */
   var repo: String
 }
 object FileshaOwner {

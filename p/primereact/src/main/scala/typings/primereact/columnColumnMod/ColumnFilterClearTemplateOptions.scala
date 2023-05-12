@@ -6,10 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ColumnFilterClearTemplateOptions extends StObject {
   
+  /**
+    * Field name of the column.
+    */
   var field: String
   
+  /**
+    * Callback function to clear the filters.
+    */
   def filterClearCallback(): Unit
   
+  /**
+    * Object containing column filter model options.
+    */
   var filterModel: ColumnFilterModelOptions
 }
 object ColumnFilterClearTemplateOptions {

@@ -1,7 +1,7 @@
 package typings.pixiTextBitmap
 
 import typings.pixiTextBitmap.libBitmapFontDataMod.BitmapFontData
-import typings.std.XMLDocument
+import typings.std.Document
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -54,7 +54,7 @@ object libFormatsMod {
       * @param xml
       * @returns - Data to use for BitmapFont
       */
-    inline def parse(xml: XMLDocument): BitmapFontData = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(xml.asInstanceOf[js.Any]).asInstanceOf[BitmapFontData]
+    inline def parse(xml: Document): BitmapFontData = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(xml.asInstanceOf[js.Any]).asInstanceOf[BitmapFontData]
     
     /**
       * Check if resource refers to xml font data.

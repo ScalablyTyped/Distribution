@@ -458,6 +458,7 @@ object sapMP13nColumnsPanelMod {
     /**
       * @SINCE 1.26.0
       * @deprecated (since 1.50) - replaced by extended event {@link sap.m.P13nColumnsPanel#event:changeColumnsItems}
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:addColumnsItem addColumnsItem} to attached listeners.
       *
@@ -471,6 +472,7 @@ object sapMP13nColumnsPanelMod {
     
     /**
       * @SINCE 1.26.7
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:changeColumnsItems changeColumnsItems} to attached listeners.
       *
@@ -485,6 +487,7 @@ object sapMP13nColumnsPanelMod {
     /**
       * @SINCE 1.26.7
       * @deprecated (since 1.50) - the event `setData` is obsolete.
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:setData setData} to attached listeners.
       *

@@ -6,7 +6,8 @@ import typings.blueprintjsCore.blueprintjsCoreStrings.submit
 import typings.blueprintjsCore.libEsmCommonAlignmentMod.Alignment
 import typings.blueprintjsCore.libEsmCommonIntentMod.Intent
 import typings.blueprintjsCore.libEsmCommonPropsMod.MaybeElement
-import typings.blueprintjsIcons.libEsmGenerated16pxBlueprintIcons16Mod.BlueprintIcons16Id
+import typings.blueprintjsIcons.libEsmGeneratedIcons16pxBlueprintIcons16Mod.BlueprintIcons16Id
+import typings.react.mod.FocusEvent
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactNode
@@ -50,6 +51,8 @@ object libEsmComponentsDialogDialogStepButtonMod {
     var minimal: js.UndefOr[Boolean] = js.undefined
     
     var onClick: js.UndefOr[js.Function1[/* event */ MouseEvent[HTMLElement, NativeMouseEvent], Unit]] = js.undefined
+    
+    var onFocus: js.UndefOr[js.Function1[/* event */ FocusEvent[HTMLElement, typings.std.Element], Unit]] = js.undefined
     
     var outlined: js.UndefOr[Boolean] = js.undefined
     
@@ -123,6 +126,10 @@ object libEsmComponentsDialogDialogStepButtonMod {
       inline def setOnClick(value: /* event */ MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
       inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      
+      inline def setOnFocus(value: /* event */ FocusEvent[HTMLElement, typings.std.Element] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      
+      inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
       inline def setOutlined(value: Boolean): Self = StObject.set(x, "outlined", value.asInstanceOf[js.Any])
       

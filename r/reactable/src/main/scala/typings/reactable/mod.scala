@@ -16,7 +16,7 @@ object mod {
     def this(props: TableComponentProperties[T]) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: TableComponentProperties[T], context: Any) = this()
   }
@@ -28,7 +28,7 @@ object mod {
     def this(props: TdProperties) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: TdProperties, context: Any) = this()
   }
@@ -40,7 +40,7 @@ object mod {
     def this(props: js.Object) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: js.Object, context: Any) = this()
   }
@@ -52,7 +52,7 @@ object mod {
     def this(props: ThProperties) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: ThProperties, context: Any) = this()
   }
@@ -64,7 +64,7 @@ object mod {
     def this(props: js.Object) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: js.Object, context: Any) = this()
   }
@@ -76,7 +76,7 @@ object mod {
     def this(props: TrProperties[T]) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: TrProperties[T], context: Any) = this()
   }

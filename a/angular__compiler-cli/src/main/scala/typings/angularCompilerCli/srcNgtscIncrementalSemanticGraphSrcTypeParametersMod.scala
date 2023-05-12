@@ -1,7 +1,6 @@
 package typings.angularCompilerCli
 
-import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.ClassDeclaration
-import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.DeclarationNode
+import typings.angularCompilerCli.anon.ClassDeclarationDeclarati
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +16,7 @@ object srcNgtscIncrementalSemanticGraphSrcTypeParametersMod {
   inline def areTypeParametersEqual(current: js.Array[SemanticTypeParameter], previous: js.Array[SemanticTypeParameter]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("areTypeParametersEqual")(current.asInstanceOf[js.Any], previous.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   inline def areTypeParametersEqual(current: Null, previous: js.Array[SemanticTypeParameter]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("areTypeParametersEqual")(current.asInstanceOf[js.Any], previous.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def extractSemanticTypeParameters(node: ClassDeclaration[DeclarationNode]): js.Array[SemanticTypeParameter] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("extractSemanticTypeParameters")(node.asInstanceOf[js.Any]).asInstanceOf[js.Array[SemanticTypeParameter] | Null]
+  inline def extractSemanticTypeParameters(node: ClassDeclarationDeclarati): js.Array[SemanticTypeParameter] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("extractSemanticTypeParameters")(node.asInstanceOf[js.Any]).asInstanceOf[js.Array[SemanticTypeParameter] | Null]
   
   trait SemanticTypeParameter extends StObject {
     

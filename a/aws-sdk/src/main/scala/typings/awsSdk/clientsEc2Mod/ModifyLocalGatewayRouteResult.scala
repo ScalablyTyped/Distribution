@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ModifyLocalGatewayRouteResult extends StObject {
   
+  /**
+    * Information about the local gateway route table.
+    */
   var Route: js.UndefOr[LocalGatewayRoute] = js.undefined
 }
 object ModifyLocalGatewayRouteResult {

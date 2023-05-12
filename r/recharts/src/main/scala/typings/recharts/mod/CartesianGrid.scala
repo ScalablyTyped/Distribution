@@ -12,7 +12,7 @@ open class CartesianGrid protected ()
   def this(props: CartesianGridProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: CartesianGridProps, context: Any) = this()
 }

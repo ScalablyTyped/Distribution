@@ -38,11 +38,14 @@ object typesHyperlinkrendererMod {
     /* Rewritten from type alias, can be one of: 
       - typings.luminoDatagrid.luminoDatagridStrings.left
       - typings.luminoDatagrid.luminoDatagridStrings.right
+      - typings.luminoDatagrid.luminoDatagridStrings.none
     */
     trait ElideDirection extends StObject
     object ElideDirection {
       
       inline def left: typings.luminoDatagrid.luminoDatagridStrings.left = "left".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.left]
+      
+      inline def none: typings.luminoDatagrid.luminoDatagridStrings.none = "none".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.none]
       
       inline def right: typings.luminoDatagrid.luminoDatagridStrings.right = "right".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.right]
     }

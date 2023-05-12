@@ -5,6 +5,9 @@ import typings.blueprintjsCore.libEsmComponentsPopoverPopoverSharedPropsMod.Popo
 import typings.blueprintjsPopover2.anon.PartialTooltip2PropsDefau
 import typings.blueprintjsPopover2.blueprintjsPopover2Strings.`hover-target`
 import typings.blueprintjsPopover2.blueprintjsPopover2Strings.hover
+import typings.blueprintjsPopover2.libEsmPopover2SharedPropsMod.DefaultPopover2TargetHTMLProps
+import typings.blueprintjsPopover2.libEsmPopover2SharedPropsMod.Popover2ClickTargetHandlers
+import typings.blueprintjsPopover2.libEsmPopover2SharedPropsMod.Popover2HoverTargetHandlers
 import typings.blueprintjsPopover2.libEsmPopover2SharedPropsMod.Popover2TargetProps
 import typings.blueprintjsPopover2.libEsmPopover2SharedPropsMod.PopperCustomModifer
 import typings.blueprintjsPopover2.libEsmPopover2SharedPropsMod.PopperModifierOverrides
@@ -26,16 +29,16 @@ object libEsmTooltip2Mod {
   
   @JSImport("@blueprintjs/popover2/lib/esm/tooltip2", "Tooltip2")
   @js.native
-  open class Tooltip2[T] protected ()
+  open class Tooltip2[T /* <: DefaultPopover2TargetHTMLProps */] protected ()
     extends PureComponent[Tooltip2Props[T], js.Object, Any] {
     def this(props: Tooltip2Props[T]) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: Tooltip2Props[T], context: Any) = this()
     
-    /* private */ var popover: Any = js.native
+    /* private */ var popoverRef: Any = js.native
     
     /* private */ var renderPopover: Any = js.native
     
@@ -61,7 +64,7 @@ object libEsmTooltip2Mod {
   
   /* Inlined parent std.Omit<@blueprintjs/popover2.@blueprintjs/popover2/lib/esm/popover2SharedProps.Popover2SharedProps<TProps>, 'shouldReturnFocusOnClose'> */
   /* Inlined parent @blueprintjs/core.@blueprintjs/core.IntentProps */
-  trait ITooltip2Props[TProps] extends StObject {
+  trait ITooltip2Props[TProps /* <: DefaultPopover2TargetHTMLProps */] extends StObject {
     
     var autoFocus: js.UndefOr[Boolean] = js.undefined
     
@@ -74,6 +77,14 @@ object libEsmTooltip2Mod {
     var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Whether to use a compact appearance, which reduces the visual padding around
+      * tooltip content.
+      *
+      * @default false
+      */
+    var compact: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The content that will be displayed inside of the tooltip.
@@ -163,12 +174,19 @@ object libEsmTooltip2Mod {
     
     var position: js.UndefOr[PopoverPosition] = js.undefined
     
-    var renderTarget: js.UndefOr[js.Function1[/* props */ Popover2TargetProps & TProps, Element]] = js.undefined
+    var renderTarget: js.UndefOr[
+        js.Function1[
+          /* props */ Popover2TargetProps & Popover2HoverTargetHandlers[TProps] & Popover2ClickTargetHandlers[TProps], 
+          Element
+        ]
+      ] = js.undefined
     
     var rootBoundary: js.UndefOr[RootBoundary] = js.undefined
     
+    var targetProps: js.UndefOr[TProps] = js.undefined
+    
     var targetTagName: js.UndefOr[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.blueprintjsPopover2.blueprintjsPopover2Strings.a, typings.blueprintjsPopover2.blueprintjsPopover2Strings.abbr, typings.blueprintjsPopover2.blueprintjsPopover2Strings.address */ Any
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177, starting with typings.blueprintjsPopover2.blueprintjsPopover2Strings.a, typings.blueprintjsPopover2.blueprintjsPopover2Strings.abbr, typings.blueprintjsPopover2.blueprintjsPopover2Strings.address */ Any
       ] = js.undefined
     
     /**
@@ -186,13 +204,13 @@ object libEsmTooltip2Mod {
   }
   object ITooltip2Props {
     
-    inline def apply[TProps](content: Element | String): ITooltip2Props[TProps] = {
+    inline def apply[TProps /* <: DefaultPopover2TargetHTMLProps */](content: Element | String): ITooltip2Props[TProps] = {
       val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
       __obj.asInstanceOf[ITooltip2Props[TProps]]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: ITooltip2Props[?], TProps] (val x: Self & ITooltip2Props[TProps]) extends AnyVal {
+    implicit open class MutableBuilder[Self <: ITooltip2Props[?], TProps /* <: DefaultPopover2TargetHTMLProps */] (val x: Self & ITooltip2Props[TProps]) extends AnyVal {
       
       inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
       
@@ -219,6 +237,10 @@ object libEsmTooltip2Mod {
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      
+      inline def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
+      
+      inline def setCompactUndefined: Self = StObject.set(x, "compact", js.undefined)
       
       inline def setContent(value: Element | String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -342,7 +364,9 @@ object libEsmTooltip2Mod {
       
       inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
       
-      inline def setRenderTarget(value: /* props */ Popover2TargetProps & TProps => Element): Self = StObject.set(x, "renderTarget", js.Any.fromFunction1(value))
+      inline def setRenderTarget(
+        value: /* props */ Popover2TargetProps & Popover2HoverTargetHandlers[TProps] & Popover2ClickTargetHandlers[TProps] => Element
+      ): Self = StObject.set(x, "renderTarget", js.Any.fromFunction1(value))
       
       inline def setRenderTargetUndefined: Self = StObject.set(x, "renderTarget", js.undefined)
       
@@ -350,8 +374,12 @@ object libEsmTooltip2Mod {
       
       inline def setRootBoundaryUndefined: Self = StObject.set(x, "rootBoundary", js.undefined)
       
+      inline def setTargetProps(value: TProps): Self = StObject.set(x, "targetProps", value.asInstanceOf[js.Any])
+      
+      inline def setTargetPropsUndefined: Self = StObject.set(x, "targetProps", js.undefined)
+      
       inline def setTargetTagName(
-        value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.blueprintjsPopover2.blueprintjsPopover2Strings.a, typings.blueprintjsPopover2.blueprintjsPopover2Strings.abbr, typings.blueprintjsPopover2.blueprintjsPopover2Strings.address */ Any
+        value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177, starting with typings.blueprintjsPopover2.blueprintjsPopover2Strings.a, typings.blueprintjsPopover2.blueprintjsPopover2Strings.abbr, typings.blueprintjsPopover2.blueprintjsPopover2Strings.address */ Any
       ): Self = StObject.set(x, "targetTagName", value.asInstanceOf[js.Any])
       
       inline def setTargetTagNameUndefined: Self = StObject.set(x, "targetTagName", js.undefined)
@@ -366,5 +394,5 @@ object libEsmTooltip2Mod {
     }
   }
   
-  type Tooltip2Props[TProps] = ITooltip2Props[TProps]
+  type Tooltip2Props[TProps /* <: DefaultPopover2TargetHTMLProps */] = ITooltip2Props[TProps]
 }

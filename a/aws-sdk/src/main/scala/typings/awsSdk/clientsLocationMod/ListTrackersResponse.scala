@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListTrackersResponse extends StObject {
   
   /**
-    * Contains tracker resources in your AWS account. Details include tracker name, description and timestamps for when the tracker was created and last updated.
+    * Contains tracker resources in your Amazon Web Services account. Details include tracker name, description and timestamps for when the tracker was created and last updated.
     */
   var Entries: ListTrackersResponseEntryList
   

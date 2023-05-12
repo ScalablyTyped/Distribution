@@ -1,7 +1,7 @@
 
 # Scala.js typings for html-to-pdfmake
 
-Typings are for version 2.1
+Typings are for version 2.4
 
 ## Library description:
 Convert HTML code to PDFMake

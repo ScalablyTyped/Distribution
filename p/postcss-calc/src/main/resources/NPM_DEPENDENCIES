@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "postcss-calc" : "8.2.4"
+      "postcss-calc" : "9.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "postcss-calc" : "8.2.4"
+      "postcss-calc" : "9.0.1"
     }
   ],
   "compile-devDependencies" : [

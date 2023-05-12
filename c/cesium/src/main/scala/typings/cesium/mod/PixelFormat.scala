@@ -59,6 +59,24 @@ object PixelFormat extends StObject {
   /* WebGLConstants.LUMINANCE_ALPHA */ val LUMINANCE_ALPHA: typings.cesium.mod.PixelFormat.LUMINANCE_ALPHA & scala.Nothing = js.native
   
   /**
+    * A pixel format containing a red channel
+    */
+  @js.native
+  sealed trait RED
+    extends StObject
+       with PixelFormat
+  /* WebGLConstants.RED */ val RED: typings.cesium.mod.PixelFormat.RED & scala.Nothing = js.native
+  
+  /**
+    * A pixel format containing red and green channels.
+    */
+  @js.native
+  sealed trait RG
+    extends StObject
+       with PixelFormat
+  /* WebGLConstants.RG */ val RG: typings.cesium.mod.PixelFormat.RG & scala.Nothing = js.native
+  
+  /**
     * A pixel format containing red, green, and blue channels.
     */
   @js.native

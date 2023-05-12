@@ -22,7 +22,7 @@ trait EnableFastLaunchRequest extends StObject {
   var LaunchTemplate: js.UndefOr[FastLaunchLaunchTemplateSpecificationRequest] = js.undefined
   
   /**
-    * The maximum number of parallel instances to launch for creating resources. Value must be 6 or greater. 
+    * The maximum number of instances that Amazon EC2 can launch at the same time to create pre-provisioned snapshots for Windows faster launching. Value must be 6 or greater.
     */
   var MaxParallelLaunches: js.UndefOr[Integer] = js.undefined
   

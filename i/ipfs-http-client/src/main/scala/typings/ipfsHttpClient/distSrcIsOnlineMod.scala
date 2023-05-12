@@ -11,7 +11,7 @@ object distSrcIsOnlineMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def createIsOnline(options: Options): js.Function1[/* options */ js.UndefOr[Any], Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("createIsOnline")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* options */ js.UndefOr[Any], Boolean]]
+  inline def createIsOnline(options: Options): js.Function0[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("createIsOnline")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Boolean]]
   
   type HTTPClientExtraOptions = typings.ipfsHttpClient.distSrcTypesMod.HTTPClientExtraOptions
   

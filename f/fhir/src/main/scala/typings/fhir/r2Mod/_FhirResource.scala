@@ -82,7 +82,7 @@ import typings.fhir.fhirStrings.rejected
 import typings.fhir.fhirStrings.replaced
 import typings.fhir.fhirStrings.reprocess
 import typings.fhir.fhirStrings.requested
-import typings.fhir.fhirStrings.requirements
+import typings.fhir.fhirStrings.requirements_
 import typings.fhir.fhirStrings.resource
 import typings.fhir.fhirStrings.retired
 import typings.fhir.fhirStrings.review
@@ -220,7 +220,7 @@ object _FhirResource {
     date: String,
     fhirVersion: String,
     format: js.Array[String],
-    kind: instance | capability | requirements
+    kind: instance | capability | requirements_
   ): typings.fhir.r2Mod.Conformance = {
     val __obj = js.Dynamic.literal(acceptUnknown = acceptUnknown.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any], fhirVersion = fhirVersion.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], resourceType = "Conformance")
     __obj.asInstanceOf[typings.fhir.r2Mod.Conformance]

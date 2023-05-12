@@ -58,6 +58,8 @@ object libConfigServicePlaceholdersMod {
     
     var appsync: js.UndefOr[typings.awsSdk.clientsAppsyncMod.ClientConfiguration] = js.native
     
+    var arczonalshift: js.UndefOr[typings.awsSdk.clientsArczonalshiftMod.ClientConfiguration] = js.native
+    
     var athena: js.UndefOr[typings.awsSdk.clientsAthenaMod.ClientConfiguration] = js.native
     
     var auditmanager: js.UndefOr[typings.awsSdk.clientsAuditmanagerMod.ClientConfiguration] = js.native
@@ -92,6 +94,10 @@ object libConfigServicePlaceholdersMod {
     
     var chimesdkmessaging: js.UndefOr[typings.awsSdk.clientsChimesdkmessagingMod.ClientConfiguration] = js.native
     
+    var chimesdkvoice: js.UndefOr[typings.awsSdk.clientsChimesdkvoiceMod.ClientConfiguration] = js.native
+    
+    var cleanrooms: js.UndefOr[typings.awsSdk.clientsCleanroomsMod.ClientConfiguration] = js.native
+    
     var cloud9: js.UndefOr[typings.awsSdk.clientsCloud9Mod.ClientConfiguration] = js.native
     
     var cloudcontrol: js.UndefOr[typings.awsSdk.clientsCloudcontrolMod.ClientConfiguration] = js.native
@@ -112,6 +118,8 @@ object libConfigServicePlaceholdersMod {
     
     var cloudtrail: js.UndefOr[typings.awsSdk.clientsCloudtrailMod.ClientConfiguration] = js.native
     
+    var cloudtraildata: js.UndefOr[typings.awsSdk.clientsCloudtraildataMod.ClientConfiguration] = js.native
+    
     var cloudwatch: js.UndefOr[typings.awsSdk.clientsCloudwatchMod.ClientConfiguration] = js.native
     
     var cloudwatchevents: js.UndefOr[typings.awsSdk.clientsCloudwatcheventsMod.ClientConfiguration] = js.native
@@ -121,6 +129,8 @@ object libConfigServicePlaceholdersMod {
     var codeartifact: js.UndefOr[typings.awsSdk.clientsCodeartifactMod.ClientConfiguration] = js.native
     
     var codebuild: js.UndefOr[typings.awsSdk.clientsCodebuildMod.ClientConfiguration] = js.native
+    
+    var codecatalyst: js.UndefOr[typings.awsSdk.clientsCodecatalystMod.ClientConfiguration] = js.native
     
     var codecommit: js.UndefOr[typings.awsSdk.clientsCodecommitMod.ClientConfiguration] = js.native
     
@@ -197,6 +207,8 @@ object libConfigServicePlaceholdersMod {
     var dms: js.UndefOr[typings.awsSdk.clientsDmsMod.ClientConfiguration] = js.native
     
     var docdb: js.UndefOr[typings.awsSdk.clientsDocdbMod.ClientConfiguration] = js.native
+    
+    var docdbelastic: js.UndefOr[typings.awsSdk.clientsDocdbelasticMod.ClientConfiguration] = js.native
     
     var drs: js.UndefOr[typings.awsSdk.clientsDrsMod.ClientConfiguration] = js.native
     
@@ -300,6 +312,8 @@ object libConfigServicePlaceholdersMod {
     
     var inspector2: js.UndefOr[typings.awsSdk.clientsInspector2Mod.ClientConfiguration] = js.native
     
+    var internetmonitor: js.UndefOr[typings.awsSdk.clientsInternetmonitorMod.ClientConfiguration] = js.native
+    
     var iot: js.UndefOr[typings.awsSdk.clientsIotMod.ClientConfiguration] = js.native
     
     var iot1clickdevicesservice: js.UndefOr[typings.awsSdk.clientsIot1clickdevicesserviceMod.ClientConfiguration] = js.native
@@ -322,6 +336,8 @@ object libConfigServicePlaceholdersMod {
     
     var iotjobsdataplane: js.UndefOr[typings.awsSdk.clientsIotjobsdataplaneMod.ClientConfiguration] = js.native
     
+    var iotroborunner: js.UndefOr[typings.awsSdk.clientsIotroborunnerMod.ClientConfiguration] = js.native
+    
     var iotsecuretunneling: js.UndefOr[typings.awsSdk.clientsIotsecuretunnelingMod.ClientConfiguration] = js.native
     
     var iotsitewise: js.UndefOr[typings.awsSdk.clientsIotsitewiseMod.ClientConfiguration] = js.native
@@ -336,11 +352,15 @@ object libConfigServicePlaceholdersMod {
     
     var ivschat: js.UndefOr[typings.awsSdk.clientsIvschatMod.ClientConfiguration] = js.native
     
+    var ivsrealtime: js.UndefOr[typings.awsSdk.clientsIvsrealtimeMod.ClientConfiguration] = js.native
+    
     var kafka: js.UndefOr[typings.awsSdk.clientsKafkaMod.ClientConfiguration] = js.native
     
     var kafkaconnect: js.UndefOr[typings.awsSdk.clientsKafkaconnectMod.ClientConfiguration] = js.native
     
     var kendra: js.UndefOr[typings.awsSdk.clientsKendraMod.ClientConfiguration] = js.native
+    
+    var kendraranking: js.UndefOr[typings.awsSdk.clientsKendrarankingMod.ClientConfiguration] = js.native
     
     var keyspaces: js.UndefOr[typings.awsSdk.clientsKeyspacesMod.ClientConfiguration] = js.native
     
@@ -358,6 +378,8 @@ object libConfigServicePlaceholdersMod {
     
     var kinesisvideosignalingchannels: js.UndefOr[typings.awsSdk.clientsKinesisvideosignalingchannelsMod.ClientConfiguration] = js.native
     
+    var kinesisvideowebrtcstorage: js.UndefOr[typings.awsSdk.clientsKinesisvideowebrtcstorageMod.ClientConfiguration] = js.native
+    
     var kms: js.UndefOr[typings.awsSdk.clientsKmsMod.ClientConfiguration] = js.native
     
     var lakeformation: js.UndefOr[typings.awsSdk.clientsLakeformationMod.ClientConfiguration] = js.native
@@ -373,6 +395,8 @@ object libConfigServicePlaceholdersMod {
     var lexruntimev2: js.UndefOr[typings.awsSdk.clientsLexruntimev2Mod.ClientConfiguration] = js.native
     
     var licensemanager: js.UndefOr[typings.awsSdk.clientsLicensemanagerMod.ClientConfiguration] = js.native
+    
+    var licensemanagerlinuxsubscriptions: js.UndefOr[typings.awsSdk.clientsLicensemanagerlinuxsubscriptionsMod.ClientConfiguration] = js.native
     
     var licensemanagerusersubscriptions: js.UndefOr[typings.awsSdk.clientsLicensemanagerusersubscriptionsMod.ClientConfiguration] = js.native
     
@@ -452,13 +476,21 @@ object libConfigServicePlaceholdersMod {
     
     var nimble: js.UndefOr[typings.awsSdk.clientsNimbleMod.ClientConfiguration] = js.native
     
+    var oam: js.UndefOr[typings.awsSdk.clientsOamMod.ClientConfiguration] = js.native
+    
+    var omics: js.UndefOr[typings.awsSdk.clientsOmicsMod.ClientConfiguration] = js.native
+    
     var opensearch: js.UndefOr[typings.awsSdk.clientsOpensearchMod.ClientConfiguration] = js.native
+    
+    var opensearchserverless: js.UndefOr[typings.awsSdk.clientsOpensearchserverlessMod.ClientConfiguration] = js.native
     
     var opsworks: js.UndefOr[typings.awsSdk.clientsOpsworksMod.ClientConfiguration] = js.native
     
     var opsworkscm: js.UndefOr[typings.awsSdk.clientsOpsworkscmMod.ClientConfiguration] = js.native
     
     var organizations: js.UndefOr[typings.awsSdk.clientsOrganizationsMod.ClientConfiguration] = js.native
+    
+    var osis: js.UndefOr[typings.awsSdk.clientsOsisMod.ClientConfiguration] = js.native
     
     var outposts: js.UndefOr[typings.awsSdk.clientsOutpostsMod.ClientConfiguration] = js.native
     
@@ -479,6 +511,8 @@ object libConfigServicePlaceholdersMod {
     var pinpointsmsvoice: js.UndefOr[typings.awsSdk.clientsPinpointsmsvoiceMod.ClientConfiguration] = js.native
     
     var pinpointsmsvoicev2: js.UndefOr[typings.awsSdk.clientsPinpointsmsvoicev2Mod.ClientConfiguration] = js.native
+    
+    var pipes: js.UndefOr[typings.awsSdk.clientsPipesMod.ClientConfiguration] = js.native
     
     var polly: js.UndefOr[typings.awsSdk.clientsPollyMod.ClientConfiguration] = js.native
     
@@ -548,6 +582,10 @@ object libConfigServicePlaceholdersMod {
     
     var sagemakerfeaturestoreruntime: js.UndefOr[typings.awsSdk.clientsSagemakerfeaturestoreruntimeMod.ClientConfiguration] = js.native
     
+    var sagemakergeospatial: js.UndefOr[typings.awsSdk.clientsSagemakergeospatialMod.ClientConfiguration] = js.native
+    
+    var sagemakermetrics: js.UndefOr[typings.awsSdk.clientsSagemakermetricsMod.ClientConfiguration] = js.native
+    
     var sagemakerruntime: js.UndefOr[typings.awsSdk.clientsSagemakerruntimeMod.ClientConfiguration] = js.native
     
     var savingsplans: js.UndefOr[typings.awsSdk.clientsSavingsplansMod.ClientConfiguration] = js.native
@@ -559,6 +597,8 @@ object libConfigServicePlaceholdersMod {
     var secretsmanager: js.UndefOr[typings.awsSdk.clientsSecretsmanagerMod.ClientConfiguration] = js.native
     
     var securityhub: js.UndefOr[typings.awsSdk.clientsSecurityhubMod.ClientConfiguration] = js.native
+    
+    var securitylake: js.UndefOr[typings.awsSdk.clientsSecuritylakeMod.ClientConfiguration] = js.native
     
     var serverlessapplicationrepository: js.UndefOr[typings.awsSdk.clientsServerlessapplicationrepositoryMod.ClientConfiguration] = js.native
     
@@ -579,6 +619,8 @@ object libConfigServicePlaceholdersMod {
     var signer: js.UndefOr[typings.awsSdk.clientsSignerMod.ClientConfiguration] = js.native
     
     var simpledb: js.UndefOr[typings.awsSdk.clientsSimpledbMod.ClientConfiguration] = js.native
+    
+    var simspaceweaver: js.UndefOr[typings.awsSdk.clientsSimspaceweaverMod.ClientConfiguration] = js.native
     
     var sms: js.UndefOr[typings.awsSdk.clientsSmsMod.ClientConfiguration] = js.native
     
@@ -624,6 +666,8 @@ object libConfigServicePlaceholdersMod {
     
     var timestreamwrite: js.UndefOr[typings.awsSdk.clientsTimestreamwriteMod.ClientConfiguration] = js.native
     
+    var tnb: js.UndefOr[typings.awsSdk.clientsTnbMod.ClientConfiguration] = js.native
+    
     var transcribeservice: js.UndefOr[typings.awsSdk.clientsTranscribeserviceMod.ClientConfiguration] = js.native
     
     var transfer: js.UndefOr[typings.awsSdk.clientsTransferMod.ClientConfiguration] = js.native
@@ -631,6 +675,8 @@ object libConfigServicePlaceholdersMod {
     var translate: js.UndefOr[typings.awsSdk.clientsTranslateMod.ClientConfiguration] = js.native
     
     var voiceid: js.UndefOr[typings.awsSdk.clientsVoiceidMod.ClientConfiguration] = js.native
+    
+    var vpclattice: js.UndefOr[typings.awsSdk.clientsVpclatticeMod.ClientConfiguration] = js.native
     
     var waf: js.UndefOr[typings.awsSdk.clientsWafMod.ClientConfiguration] = js.native
     
@@ -705,6 +751,8 @@ object libConfigServicePlaceholdersMod {
     
     var appsync: js.UndefOr[typings.awsSdk.clientsAppsyncMod.apiVersion] = js.undefined
     
+    var arczonalshift: js.UndefOr[typings.awsSdk.clientsArczonalshiftMod.apiVersion] = js.undefined
+    
     var athena: js.UndefOr[typings.awsSdk.clientsAthenaMod.apiVersion] = js.undefined
     
     var auditmanager: js.UndefOr[typings.awsSdk.clientsAuditmanagerMod.apiVersion] = js.undefined
@@ -739,6 +787,10 @@ object libConfigServicePlaceholdersMod {
     
     var chimesdkmessaging: js.UndefOr[typings.awsSdk.clientsChimesdkmessagingMod.apiVersion] = js.undefined
     
+    var chimesdkvoice: js.UndefOr[typings.awsSdk.clientsChimesdkvoiceMod.apiVersion] = js.undefined
+    
+    var cleanrooms: js.UndefOr[typings.awsSdk.clientsCleanroomsMod.apiVersion] = js.undefined
+    
     var cloud9: js.UndefOr[typings.awsSdk.clientsCloud9Mod.apiVersion] = js.undefined
     
     var cloudcontrol: js.UndefOr[typings.awsSdk.clientsCloudcontrolMod.apiVersion] = js.undefined
@@ -759,6 +811,8 @@ object libConfigServicePlaceholdersMod {
     
     var cloudtrail: js.UndefOr[typings.awsSdk.clientsCloudtrailMod.apiVersion] = js.undefined
     
+    var cloudtraildata: js.UndefOr[typings.awsSdk.clientsCloudtraildataMod.apiVersion] = js.undefined
+    
     var cloudwatch: js.UndefOr[typings.awsSdk.clientsCloudwatchMod.apiVersion] = js.undefined
     
     var cloudwatchevents: js.UndefOr[typings.awsSdk.clientsCloudwatcheventsMod.apiVersion] = js.undefined
@@ -768,6 +822,8 @@ object libConfigServicePlaceholdersMod {
     var codeartifact: js.UndefOr[typings.awsSdk.clientsCodeartifactMod.apiVersion] = js.undefined
     
     var codebuild: js.UndefOr[typings.awsSdk.clientsCodebuildMod.apiVersion] = js.undefined
+    
+    var codecatalyst: js.UndefOr[typings.awsSdk.clientsCodecatalystMod.apiVersion] = js.undefined
     
     var codecommit: js.UndefOr[typings.awsSdk.clientsCodecommitMod.apiVersion] = js.undefined
     
@@ -844,6 +900,8 @@ object libConfigServicePlaceholdersMod {
     var dms: js.UndefOr[typings.awsSdk.clientsDmsMod.apiVersion] = js.undefined
     
     var docdb: js.UndefOr[typings.awsSdk.clientsDocdbMod.apiVersion] = js.undefined
+    
+    var docdbelastic: js.UndefOr[typings.awsSdk.clientsDocdbelasticMod.apiVersion] = js.undefined
     
     var drs: js.UndefOr[typings.awsSdk.clientsDrsMod.apiVersion] = js.undefined
     
@@ -947,6 +1005,8 @@ object libConfigServicePlaceholdersMod {
     
     var inspector2: js.UndefOr[typings.awsSdk.clientsInspector2Mod.apiVersion] = js.undefined
     
+    var internetmonitor: js.UndefOr[typings.awsSdk.clientsInternetmonitorMod.apiVersion] = js.undefined
+    
     var iot: js.UndefOr[typings.awsSdk.clientsIotMod.apiVersion] = js.undefined
     
     var iot1clickdevicesservice: js.UndefOr[typings.awsSdk.clientsIot1clickdevicesserviceMod.apiVersion] = js.undefined
@@ -969,6 +1029,8 @@ object libConfigServicePlaceholdersMod {
     
     var iotjobsdataplane: js.UndefOr[typings.awsSdk.clientsIotjobsdataplaneMod.apiVersion] = js.undefined
     
+    var iotroborunner: js.UndefOr[typings.awsSdk.clientsIotroborunnerMod.apiVersion] = js.undefined
+    
     var iotsecuretunneling: js.UndefOr[typings.awsSdk.clientsIotsecuretunnelingMod.apiVersion] = js.undefined
     
     var iotsitewise: js.UndefOr[typings.awsSdk.clientsIotsitewiseMod.apiVersion] = js.undefined
@@ -983,11 +1045,15 @@ object libConfigServicePlaceholdersMod {
     
     var ivschat: js.UndefOr[typings.awsSdk.clientsIvschatMod.apiVersion] = js.undefined
     
+    var ivsrealtime: js.UndefOr[typings.awsSdk.clientsIvsrealtimeMod.apiVersion] = js.undefined
+    
     var kafka: js.UndefOr[typings.awsSdk.clientsKafkaMod.apiVersion] = js.undefined
     
     var kafkaconnect: js.UndefOr[typings.awsSdk.clientsKafkaconnectMod.apiVersion] = js.undefined
     
     var kendra: js.UndefOr[typings.awsSdk.clientsKendraMod.apiVersion] = js.undefined
+    
+    var kendraranking: js.UndefOr[typings.awsSdk.clientsKendrarankingMod.apiVersion] = js.undefined
     
     var keyspaces: js.UndefOr[typings.awsSdk.clientsKeyspacesMod.apiVersion] = js.undefined
     
@@ -1005,6 +1071,8 @@ object libConfigServicePlaceholdersMod {
     
     var kinesisvideosignalingchannels: js.UndefOr[typings.awsSdk.clientsKinesisvideosignalingchannelsMod.apiVersion] = js.undefined
     
+    var kinesisvideowebrtcstorage: js.UndefOr[typings.awsSdk.clientsKinesisvideowebrtcstorageMod.apiVersion] = js.undefined
+    
     var kms: js.UndefOr[typings.awsSdk.clientsKmsMod.apiVersion] = js.undefined
     
     var lakeformation: js.UndefOr[typings.awsSdk.clientsLakeformationMod.apiVersion] = js.undefined
@@ -1020,6 +1088,8 @@ object libConfigServicePlaceholdersMod {
     var lexruntimev2: js.UndefOr[typings.awsSdk.clientsLexruntimev2Mod.apiVersion] = js.undefined
     
     var licensemanager: js.UndefOr[typings.awsSdk.clientsLicensemanagerMod.apiVersion] = js.undefined
+    
+    var licensemanagerlinuxsubscriptions: js.UndefOr[typings.awsSdk.clientsLicensemanagerlinuxsubscriptionsMod.apiVersion] = js.undefined
     
     var licensemanagerusersubscriptions: js.UndefOr[typings.awsSdk.clientsLicensemanagerusersubscriptionsMod.apiVersion] = js.undefined
     
@@ -1099,13 +1169,21 @@ object libConfigServicePlaceholdersMod {
     
     var nimble: js.UndefOr[typings.awsSdk.clientsNimbleMod.apiVersion] = js.undefined
     
+    var oam: js.UndefOr[typings.awsSdk.clientsOamMod.apiVersion] = js.undefined
+    
+    var omics: js.UndefOr[typings.awsSdk.clientsOmicsMod.apiVersion] = js.undefined
+    
     var opensearch: js.UndefOr[typings.awsSdk.clientsOpensearchMod.apiVersion] = js.undefined
+    
+    var opensearchserverless: js.UndefOr[typings.awsSdk.clientsOpensearchserverlessMod.apiVersion] = js.undefined
     
     var opsworks: js.UndefOr[typings.awsSdk.clientsOpsworksMod.apiVersion] = js.undefined
     
     var opsworkscm: js.UndefOr[typings.awsSdk.clientsOpsworkscmMod.apiVersion] = js.undefined
     
     var organizations: js.UndefOr[typings.awsSdk.clientsOrganizationsMod.apiVersion] = js.undefined
+    
+    var osis: js.UndefOr[typings.awsSdk.clientsOsisMod.apiVersion] = js.undefined
     
     var outposts: js.UndefOr[typings.awsSdk.clientsOutpostsMod.apiVersion] = js.undefined
     
@@ -1126,6 +1204,8 @@ object libConfigServicePlaceholdersMod {
     var pinpointsmsvoice: js.UndefOr[typings.awsSdk.clientsPinpointsmsvoiceMod.apiVersion] = js.undefined
     
     var pinpointsmsvoicev2: js.UndefOr[typings.awsSdk.clientsPinpointsmsvoicev2Mod.apiVersion] = js.undefined
+    
+    var pipes: js.UndefOr[typings.awsSdk.clientsPipesMod.apiVersion] = js.undefined
     
     var polly: js.UndefOr[typings.awsSdk.clientsPollyMod.apiVersion] = js.undefined
     
@@ -1195,6 +1275,10 @@ object libConfigServicePlaceholdersMod {
     
     var sagemakerfeaturestoreruntime: js.UndefOr[typings.awsSdk.clientsSagemakerfeaturestoreruntimeMod.apiVersion] = js.undefined
     
+    var sagemakergeospatial: js.UndefOr[typings.awsSdk.clientsSagemakergeospatialMod.apiVersion] = js.undefined
+    
+    var sagemakermetrics: js.UndefOr[typings.awsSdk.clientsSagemakermetricsMod.apiVersion] = js.undefined
+    
     var sagemakerruntime: js.UndefOr[typings.awsSdk.clientsSagemakerruntimeMod.apiVersion] = js.undefined
     
     var savingsplans: js.UndefOr[typings.awsSdk.clientsSavingsplansMod.apiVersion] = js.undefined
@@ -1206,6 +1290,8 @@ object libConfigServicePlaceholdersMod {
     var secretsmanager: js.UndefOr[typings.awsSdk.clientsSecretsmanagerMod.apiVersion] = js.undefined
     
     var securityhub: js.UndefOr[typings.awsSdk.clientsSecurityhubMod.apiVersion] = js.undefined
+    
+    var securitylake: js.UndefOr[typings.awsSdk.clientsSecuritylakeMod.apiVersion] = js.undefined
     
     var serverlessapplicationrepository: js.UndefOr[typings.awsSdk.clientsServerlessapplicationrepositoryMod.apiVersion] = js.undefined
     
@@ -1226,6 +1312,8 @@ object libConfigServicePlaceholdersMod {
     var signer: js.UndefOr[typings.awsSdk.clientsSignerMod.apiVersion] = js.undefined
     
     var simpledb: js.UndefOr[typings.awsSdk.clientsSimpledbMod.apiVersion] = js.undefined
+    
+    var simspaceweaver: js.UndefOr[typings.awsSdk.clientsSimspaceweaverMod.apiVersion] = js.undefined
     
     var sms: js.UndefOr[typings.awsSdk.clientsSmsMod.apiVersion] = js.undefined
     
@@ -1271,6 +1359,8 @@ object libConfigServicePlaceholdersMod {
     
     var timestreamwrite: js.UndefOr[typings.awsSdk.clientsTimestreamwriteMod.apiVersion] = js.undefined
     
+    var tnb: js.UndefOr[typings.awsSdk.clientsTnbMod.apiVersion] = js.undefined
+    
     var transcribeservice: js.UndefOr[typings.awsSdk.clientsTranscribeserviceMod.apiVersion] = js.undefined
     
     var transfer: js.UndefOr[typings.awsSdk.clientsTransferMod.apiVersion] = js.undefined
@@ -1278,6 +1368,8 @@ object libConfigServicePlaceholdersMod {
     var translate: js.UndefOr[typings.awsSdk.clientsTranslateMod.apiVersion] = js.undefined
     
     var voiceid: js.UndefOr[typings.awsSdk.clientsVoiceidMod.apiVersion] = js.undefined
+    
+    var vpclattice: js.UndefOr[typings.awsSdk.clientsVpclatticeMod.apiVersion] = js.undefined
     
     var waf: js.UndefOr[typings.awsSdk.clientsWafMod.apiVersion] = js.undefined
     
@@ -1405,6 +1497,10 @@ object libConfigServicePlaceholdersMod {
       
       inline def setAppsyncUndefined: Self = StObject.set(x, "appsync", js.undefined)
       
+      inline def setArczonalshift(value: typings.awsSdk.clientsArczonalshiftMod.apiVersion): Self = StObject.set(x, "arczonalshift", value.asInstanceOf[js.Any])
+      
+      inline def setArczonalshiftUndefined: Self = StObject.set(x, "arczonalshift", js.undefined)
+      
       inline def setAthena(value: typings.awsSdk.clientsAthenaMod.apiVersion): Self = StObject.set(x, "athena", value.asInstanceOf[js.Any])
       
       inline def setAthenaUndefined: Self = StObject.set(x, "athena", js.undefined)
@@ -1473,6 +1569,14 @@ object libConfigServicePlaceholdersMod {
       
       inline def setChimesdkmessagingUndefined: Self = StObject.set(x, "chimesdkmessaging", js.undefined)
       
+      inline def setChimesdkvoice(value: typings.awsSdk.clientsChimesdkvoiceMod.apiVersion): Self = StObject.set(x, "chimesdkvoice", value.asInstanceOf[js.Any])
+      
+      inline def setChimesdkvoiceUndefined: Self = StObject.set(x, "chimesdkvoice", js.undefined)
+      
+      inline def setCleanrooms(value: typings.awsSdk.clientsCleanroomsMod.apiVersion): Self = StObject.set(x, "cleanrooms", value.asInstanceOf[js.Any])
+      
+      inline def setCleanroomsUndefined: Self = StObject.set(x, "cleanrooms", js.undefined)
+      
       inline def setCloud9(value: typings.awsSdk.clientsCloud9Mod.apiVersion): Self = StObject.set(x, "cloud9", value.asInstanceOf[js.Any])
       
       inline def setCloud9Undefined: Self = StObject.set(x, "cloud9", js.undefined)
@@ -1513,6 +1617,10 @@ object libConfigServicePlaceholdersMod {
       
       inline def setCloudtrailUndefined: Self = StObject.set(x, "cloudtrail", js.undefined)
       
+      inline def setCloudtraildata(value: typings.awsSdk.clientsCloudtraildataMod.apiVersion): Self = StObject.set(x, "cloudtraildata", value.asInstanceOf[js.Any])
+      
+      inline def setCloudtraildataUndefined: Self = StObject.set(x, "cloudtraildata", js.undefined)
+      
       inline def setCloudwatch(value: typings.awsSdk.clientsCloudwatchMod.apiVersion): Self = StObject.set(x, "cloudwatch", value.asInstanceOf[js.Any])
       
       inline def setCloudwatchUndefined: Self = StObject.set(x, "cloudwatch", js.undefined)
@@ -1532,6 +1640,10 @@ object libConfigServicePlaceholdersMod {
       inline def setCodebuild(value: typings.awsSdk.clientsCodebuildMod.apiVersion): Self = StObject.set(x, "codebuild", value.asInstanceOf[js.Any])
       
       inline def setCodebuildUndefined: Self = StObject.set(x, "codebuild", js.undefined)
+      
+      inline def setCodecatalyst(value: typings.awsSdk.clientsCodecatalystMod.apiVersion): Self = StObject.set(x, "codecatalyst", value.asInstanceOf[js.Any])
+      
+      inline def setCodecatalystUndefined: Self = StObject.set(x, "codecatalyst", js.undefined)
       
       inline def setCodecommit(value: typings.awsSdk.clientsCodecommitMod.apiVersion): Self = StObject.set(x, "codecommit", value.asInstanceOf[js.Any])
       
@@ -1684,6 +1796,10 @@ object libConfigServicePlaceholdersMod {
       inline def setDocdb(value: typings.awsSdk.clientsDocdbMod.apiVersion): Self = StObject.set(x, "docdb", value.asInstanceOf[js.Any])
       
       inline def setDocdbUndefined: Self = StObject.set(x, "docdb", js.undefined)
+      
+      inline def setDocdbelastic(value: typings.awsSdk.clientsDocdbelasticMod.apiVersion): Self = StObject.set(x, "docdbelastic", value.asInstanceOf[js.Any])
+      
+      inline def setDocdbelasticUndefined: Self = StObject.set(x, "docdbelastic", js.undefined)
       
       inline def setDrs(value: typings.awsSdk.clientsDrsMod.apiVersion): Self = StObject.set(x, "drs", value.asInstanceOf[js.Any])
       
@@ -1889,6 +2005,10 @@ object libConfigServicePlaceholdersMod {
       
       inline def setInspectorUndefined: Self = StObject.set(x, "inspector", js.undefined)
       
+      inline def setInternetmonitor(value: typings.awsSdk.clientsInternetmonitorMod.apiVersion): Self = StObject.set(x, "internetmonitor", value.asInstanceOf[js.Any])
+      
+      inline def setInternetmonitorUndefined: Self = StObject.set(x, "internetmonitor", js.undefined)
+      
       inline def setIot(value: typings.awsSdk.clientsIotMod.apiVersion): Self = StObject.set(x, "iot", value.asInstanceOf[js.Any])
       
       inline def setIot1clickdevicesservice(value: typings.awsSdk.clientsIot1clickdevicesserviceMod.apiVersion): Self = StObject.set(x, "iot1clickdevicesservice", value.asInstanceOf[js.Any])
@@ -1933,6 +2053,10 @@ object libConfigServicePlaceholdersMod {
       
       inline def setIotjobsdataplaneUndefined: Self = StObject.set(x, "iotjobsdataplane", js.undefined)
       
+      inline def setIotroborunner(value: typings.awsSdk.clientsIotroborunnerMod.apiVersion): Self = StObject.set(x, "iotroborunner", value.asInstanceOf[js.Any])
+      
+      inline def setIotroborunnerUndefined: Self = StObject.set(x, "iotroborunner", js.undefined)
+      
       inline def setIotsecuretunneling(value: typings.awsSdk.clientsIotsecuretunnelingMod.apiVersion): Self = StObject.set(x, "iotsecuretunneling", value.asInstanceOf[js.Any])
       
       inline def setIotsecuretunnelingUndefined: Self = StObject.set(x, "iotsecuretunneling", js.undefined)
@@ -1961,6 +2085,10 @@ object libConfigServicePlaceholdersMod {
       
       inline def setIvschatUndefined: Self = StObject.set(x, "ivschat", js.undefined)
       
+      inline def setIvsrealtime(value: typings.awsSdk.clientsIvsrealtimeMod.apiVersion): Self = StObject.set(x, "ivsrealtime", value.asInstanceOf[js.Any])
+      
+      inline def setIvsrealtimeUndefined: Self = StObject.set(x, "ivsrealtime", js.undefined)
+      
       inline def setKafka(value: typings.awsSdk.clientsKafkaMod.apiVersion): Self = StObject.set(x, "kafka", value.asInstanceOf[js.Any])
       
       inline def setKafkaUndefined: Self = StObject.set(x, "kafka", js.undefined)
@@ -1972,6 +2100,10 @@ object libConfigServicePlaceholdersMod {
       inline def setKendra(value: typings.awsSdk.clientsKendraMod.apiVersion): Self = StObject.set(x, "kendra", value.asInstanceOf[js.Any])
       
       inline def setKendraUndefined: Self = StObject.set(x, "kendra", js.undefined)
+      
+      inline def setKendraranking(value: typings.awsSdk.clientsKendrarankingMod.apiVersion): Self = StObject.set(x, "kendraranking", value.asInstanceOf[js.Any])
+      
+      inline def setKendrarankingUndefined: Self = StObject.set(x, "kendraranking", js.undefined)
       
       inline def setKeyspaces(value: typings.awsSdk.clientsKeyspacesMod.apiVersion): Self = StObject.set(x, "keyspaces", value.asInstanceOf[js.Any])
       
@@ -2005,6 +2137,10 @@ object libConfigServicePlaceholdersMod {
       
       inline def setKinesisvideosignalingchannelsUndefined: Self = StObject.set(x, "kinesisvideosignalingchannels", js.undefined)
       
+      inline def setKinesisvideowebrtcstorage(value: typings.awsSdk.clientsKinesisvideowebrtcstorageMod.apiVersion): Self = StObject.set(x, "kinesisvideowebrtcstorage", value.asInstanceOf[js.Any])
+      
+      inline def setKinesisvideowebrtcstorageUndefined: Self = StObject.set(x, "kinesisvideowebrtcstorage", js.undefined)
+      
       inline def setKms(value: typings.awsSdk.clientsKmsMod.apiVersion): Self = StObject.set(x, "kms", value.asInstanceOf[js.Any])
       
       inline def setKmsUndefined: Self = StObject.set(x, "kms", js.undefined)
@@ -2036,6 +2172,10 @@ object libConfigServicePlaceholdersMod {
       inline def setLicensemanager(value: typings.awsSdk.clientsLicensemanagerMod.apiVersion): Self = StObject.set(x, "licensemanager", value.asInstanceOf[js.Any])
       
       inline def setLicensemanagerUndefined: Self = StObject.set(x, "licensemanager", js.undefined)
+      
+      inline def setLicensemanagerlinuxsubscriptions(value: typings.awsSdk.clientsLicensemanagerlinuxsubscriptionsMod.apiVersion): Self = StObject.set(x, "licensemanagerlinuxsubscriptions", value.asInstanceOf[js.Any])
+      
+      inline def setLicensemanagerlinuxsubscriptionsUndefined: Self = StObject.set(x, "licensemanagerlinuxsubscriptions", js.undefined)
       
       inline def setLicensemanagerusersubscriptions(value: typings.awsSdk.clientsLicensemanagerusersubscriptionsMod.apiVersion): Self = StObject.set(x, "licensemanagerusersubscriptions", value.asInstanceOf[js.Any])
       
@@ -2193,9 +2333,21 @@ object libConfigServicePlaceholdersMod {
       
       inline def setNimbleUndefined: Self = StObject.set(x, "nimble", js.undefined)
       
+      inline def setOam(value: typings.awsSdk.clientsOamMod.apiVersion): Self = StObject.set(x, "oam", value.asInstanceOf[js.Any])
+      
+      inline def setOamUndefined: Self = StObject.set(x, "oam", js.undefined)
+      
+      inline def setOmics(value: typings.awsSdk.clientsOmicsMod.apiVersion): Self = StObject.set(x, "omics", value.asInstanceOf[js.Any])
+      
+      inline def setOmicsUndefined: Self = StObject.set(x, "omics", js.undefined)
+      
       inline def setOpensearch(value: typings.awsSdk.clientsOpensearchMod.apiVersion): Self = StObject.set(x, "opensearch", value.asInstanceOf[js.Any])
       
       inline def setOpensearchUndefined: Self = StObject.set(x, "opensearch", js.undefined)
+      
+      inline def setOpensearchserverless(value: typings.awsSdk.clientsOpensearchserverlessMod.apiVersion): Self = StObject.set(x, "opensearchserverless", value.asInstanceOf[js.Any])
+      
+      inline def setOpensearchserverlessUndefined: Self = StObject.set(x, "opensearchserverless", js.undefined)
       
       inline def setOpsworks(value: typings.awsSdk.clientsOpsworksMod.apiVersion): Self = StObject.set(x, "opsworks", value.asInstanceOf[js.Any])
       
@@ -2208,6 +2360,10 @@ object libConfigServicePlaceholdersMod {
       inline def setOrganizations(value: typings.awsSdk.clientsOrganizationsMod.apiVersion): Self = StObject.set(x, "organizations", value.asInstanceOf[js.Any])
       
       inline def setOrganizationsUndefined: Self = StObject.set(x, "organizations", js.undefined)
+      
+      inline def setOsis(value: typings.awsSdk.clientsOsisMod.apiVersion): Self = StObject.set(x, "osis", value.asInstanceOf[js.Any])
+      
+      inline def setOsisUndefined: Self = StObject.set(x, "osis", js.undefined)
       
       inline def setOutposts(value: typings.awsSdk.clientsOutpostsMod.apiVersion): Self = StObject.set(x, "outposts", value.asInstanceOf[js.Any])
       
@@ -2248,6 +2404,10 @@ object libConfigServicePlaceholdersMod {
       inline def setPinpointsmsvoicev2(value: typings.awsSdk.clientsPinpointsmsvoicev2Mod.apiVersion): Self = StObject.set(x, "pinpointsmsvoicev2", value.asInstanceOf[js.Any])
       
       inline def setPinpointsmsvoicev2Undefined: Self = StObject.set(x, "pinpointsmsvoicev2", js.undefined)
+      
+      inline def setPipes(value: typings.awsSdk.clientsPipesMod.apiVersion): Self = StObject.set(x, "pipes", value.asInstanceOf[js.Any])
+      
+      inline def setPipesUndefined: Self = StObject.set(x, "pipes", js.undefined)
       
       inline def setPolly(value: typings.awsSdk.clientsPollyMod.apiVersion): Self = StObject.set(x, "polly", value.asInstanceOf[js.Any])
       
@@ -2385,6 +2545,14 @@ object libConfigServicePlaceholdersMod {
       
       inline def setSagemakerfeaturestoreruntimeUndefined: Self = StObject.set(x, "sagemakerfeaturestoreruntime", js.undefined)
       
+      inline def setSagemakergeospatial(value: typings.awsSdk.clientsSagemakergeospatialMod.apiVersion): Self = StObject.set(x, "sagemakergeospatial", value.asInstanceOf[js.Any])
+      
+      inline def setSagemakergeospatialUndefined: Self = StObject.set(x, "sagemakergeospatial", js.undefined)
+      
+      inline def setSagemakermetrics(value: typings.awsSdk.clientsSagemakermetricsMod.apiVersion): Self = StObject.set(x, "sagemakermetrics", value.asInstanceOf[js.Any])
+      
+      inline def setSagemakermetricsUndefined: Self = StObject.set(x, "sagemakermetrics", js.undefined)
+      
       inline def setSagemakerruntime(value: typings.awsSdk.clientsSagemakerruntimeMod.apiVersion): Self = StObject.set(x, "sagemakerruntime", value.asInstanceOf[js.Any])
       
       inline def setSagemakerruntimeUndefined: Self = StObject.set(x, "sagemakerruntime", js.undefined)
@@ -2408,6 +2576,10 @@ object libConfigServicePlaceholdersMod {
       inline def setSecurityhub(value: typings.awsSdk.clientsSecurityhubMod.apiVersion): Self = StObject.set(x, "securityhub", value.asInstanceOf[js.Any])
       
       inline def setSecurityhubUndefined: Self = StObject.set(x, "securityhub", js.undefined)
+      
+      inline def setSecuritylake(value: typings.awsSdk.clientsSecuritylakeMod.apiVersion): Self = StObject.set(x, "securitylake", value.asInstanceOf[js.Any])
+      
+      inline def setSecuritylakeUndefined: Self = StObject.set(x, "securitylake", js.undefined)
       
       inline def setServerlessapplicationrepository(value: typings.awsSdk.clientsServerlessapplicationrepositoryMod.apiVersion): Self = StObject.set(x, "serverlessapplicationrepository", value.asInstanceOf[js.Any])
       
@@ -2448,6 +2620,10 @@ object libConfigServicePlaceholdersMod {
       inline def setSimpledb(value: typings.awsSdk.clientsSimpledbMod.apiVersion): Self = StObject.set(x, "simpledb", value.asInstanceOf[js.Any])
       
       inline def setSimpledbUndefined: Self = StObject.set(x, "simpledb", js.undefined)
+      
+      inline def setSimspaceweaver(value: typings.awsSdk.clientsSimspaceweaverMod.apiVersion): Self = StObject.set(x, "simspaceweaver", value.asInstanceOf[js.Any])
+      
+      inline def setSimspaceweaverUndefined: Self = StObject.set(x, "simspaceweaver", js.undefined)
       
       inline def setSms(value: typings.awsSdk.clientsSmsMod.apiVersion): Self = StObject.set(x, "sms", value.asInstanceOf[js.Any])
       
@@ -2537,6 +2713,10 @@ object libConfigServicePlaceholdersMod {
       
       inline def setTimestreamwriteUndefined: Self = StObject.set(x, "timestreamwrite", js.undefined)
       
+      inline def setTnb(value: typings.awsSdk.clientsTnbMod.apiVersion): Self = StObject.set(x, "tnb", value.asInstanceOf[js.Any])
+      
+      inline def setTnbUndefined: Self = StObject.set(x, "tnb", js.undefined)
+      
       inline def setTranscribeservice(value: typings.awsSdk.clientsTranscribeserviceMod.apiVersion): Self = StObject.set(x, "transcribeservice", value.asInstanceOf[js.Any])
       
       inline def setTranscribeserviceUndefined: Self = StObject.set(x, "transcribeservice", js.undefined)
@@ -2552,6 +2732,10 @@ object libConfigServicePlaceholdersMod {
       inline def setVoiceid(value: typings.awsSdk.clientsVoiceidMod.apiVersion): Self = StObject.set(x, "voiceid", value.asInstanceOf[js.Any])
       
       inline def setVoiceidUndefined: Self = StObject.set(x, "voiceid", js.undefined)
+      
+      inline def setVpclattice(value: typings.awsSdk.clientsVpclatticeMod.apiVersion): Self = StObject.set(x, "vpclattice", value.asInstanceOf[js.Any])
+      
+      inline def setVpclatticeUndefined: Self = StObject.set(x, "vpclattice", js.undefined)
       
       inline def setWaf(value: typings.awsSdk.clientsWafMod.apiVersion): Self = StObject.set(x, "waf", value.asInstanceOf[js.Any])
       

@@ -1,7 +1,7 @@
 
 # Scala.js typings for ant-design__icons
 
-Typings are for version 4.7.0
+Typings are for version 5.0.1
 
 ## Library description:
 [![NPM version](https://img.shields.io/npm/v/@ant-design/icons.svg?style=flat)](https://npmjs.org/package/@ant-design/icons) [![NPM downloads](http://img.shields.io/npm/dm/@ant-design/icons.svg?style=flat)](https://npmjs.org/package/@ant-design/icons)

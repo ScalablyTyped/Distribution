@@ -5,12 +5,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A station is a larger building or area that can be identified by a name.
-  * It is usually represented by a single node on a public transport map.
-  * Whereas a stop usually specifies a location, a station often is a broader area
-  * that may span across multiple levels or buildings.
-  */
 trait Station extends StObject {
   
   var distance: js.UndefOr[Double] = js.undefined

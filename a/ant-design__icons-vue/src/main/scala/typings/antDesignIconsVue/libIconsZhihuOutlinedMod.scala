@@ -16,7 +16,7 @@ object libIconsZhihuOutlinedMod extends Shortcut {
   @js.native
   trait ZhihuOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_ZhihuOutlinedIconType: String = js.native

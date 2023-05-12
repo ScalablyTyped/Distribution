@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateLongTermPricingRequest extends StObject {
   
   /**
-    * snowballty Specifies whether the current long-term pricing type for the device should be renewed.
+    * Specifies whether the current long-term pricing type for the device should be renewed.
     */
   var IsLongTermPricingAutoRenew: js.UndefOr[JavaBoolean] = js.undefined
   

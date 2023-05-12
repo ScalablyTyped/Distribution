@@ -1,7 +1,7 @@
 
 # Scala.js typings for twilio-video
 
-Typings are for version 2.25.0
+Typings are for version 2.27.0
 
 ## Library description:
 Twilio Video JavaScript Library

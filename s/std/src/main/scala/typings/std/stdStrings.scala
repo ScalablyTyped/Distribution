@@ -253,6 +253,14 @@ object stdStrings {
   inline def KeyboardEvent: KeyboardEvent = "KeyboardEvent".asInstanceOf[KeyboardEvent]
   
   @js.native
+  sealed trait MIDIConnectionEvent extends StObject
+  inline def MIDIConnectionEvent: MIDIConnectionEvent = "MIDIConnectionEvent".asInstanceOf[MIDIConnectionEvent]
+  
+  @js.native
+  sealed trait MIDIMessageEvent extends StObject
+  inline def MIDIMessageEvent: MIDIMessageEvent = "MIDIMessageEvent".asInstanceOf[MIDIMessageEvent]
+  
+  @js.native
   sealed trait MediaEncryptedEvent extends StObject
   inline def MediaEncryptedEvent: MediaEncryptedEvent = "MediaEncryptedEvent".asInstanceOf[MediaEncryptedEvent]
   
@@ -551,6 +559,10 @@ object stdStrings {
   inline def abort: abort = "abort".asInstanceOf[abort]
   
   @js.native
+  sealed trait accessor extends StObject
+  inline def accessor: accessor = "accessor".asInstanceOf[accessor]
+  
+  @js.native
   sealed trait accumulate
     extends StObject
        with CompositeOperation
@@ -695,6 +707,14 @@ object stdStrings {
   inline def animationstart: animationstart = "animationstart".asInstanceOf[animationstart]
   
   @js.native
+  sealed trait annotation extends StObject
+  inline def annotation: annotation = "annotation".asInstanceOf[annotation]
+  
+  @js.native
+  sealed trait `annotation-xml` extends StObject
+  inline def `annotation-xml`: `annotation-xml` = "annotation-xml".asInstanceOf[`annotation-xml`]
+  
+  @js.native
   sealed trait answer
     extends StObject
        with RTCSdpType
@@ -817,6 +837,7 @@ object stdStrings {
        with CanvasTextRendering
        with CompositeOperationOrAuto
        with FillMode
+       with FontDisplay
        with FullscreenNavigationUI
        with NotificationDirection
        with PositionAlignSetting
@@ -952,6 +973,12 @@ object stdStrings {
        with BinaryType
        with XMLHttpRequestResponseType
   inline def blob: blob = "blob".asInstanceOf[blob]
+  
+  @js.native
+  sealed trait block
+    extends StObject
+       with FontDisplay
+  inline def block: block = "block".asInstanceOf[block]
   
   @js.native
   sealed trait blocked extends StObject
@@ -1148,6 +1175,10 @@ object stdStrings {
   inline def `clamped-max`: `clamped-max` = "clamped-max".asInstanceOf[`clamped-max`]
   
   @js.native
+  sealed trait `class` extends StObject
+  inline def `class`: `class` = "class".asInstanceOf[`class`]
+  
+  @js.native
   sealed trait classic
     extends StObject
        with WorkerType
@@ -1169,6 +1200,7 @@ object stdStrings {
   sealed trait closed
     extends StObject
        with AudioContextState
+       with MIDIPortConnectionState
        with RTCDataChannelState
        with RTCDtlsTransportState
        with RTCIceConnectionState
@@ -1285,6 +1317,7 @@ object stdStrings {
   @js.native
   sealed trait connected
     extends StObject
+       with MIDIPortDeviceState
        with RTCDtlsTransportState
        with RTCIceConnectionState
        with RTCIceTransportState
@@ -1604,6 +1637,7 @@ object stdStrings {
   @js.native
   sealed trait disconnected
     extends StObject
+       with MIDIPortDeviceState
        with RTCIceConnectionState
        with RTCIceTransportState
        with RTCPeerConnectionState
@@ -1930,6 +1964,12 @@ object stdStrings {
   inline def failed: failed = "failed".asInstanceOf[failed]
   
   @js.native
+  sealed trait fallback
+    extends StObject
+       with FontDisplay
+  inline def fallback: fallback = "fallback".asInstanceOf[fallback]
+  
+  @js.native
   sealed trait `false`
     extends StObject
        with LocaleCollationCaseFirst
@@ -2040,6 +2080,10 @@ object stdStrings {
     extends StObject
        with LDMLPluralRule
   inline def few: few = "few".asInstanceOf[few]
+  
+  @js.native
+  sealed trait field extends StObject
+  inline def field: field = "field".asInstanceOf[field]
   
   @js.native
   sealed trait fieldset extends StObject
@@ -2166,6 +2210,12 @@ object stdStrings {
   inline def frameset: frameset = "frameset".asInstanceOf[frameset]
   
   @js.native
+  sealed trait `from-image`
+    extends StObject
+       with ImageOrientation
+  inline def `from-image`: `from-image` = "from-image".asInstanceOf[`from-image`]
+  
+  @js.native
   sealed trait frozen
     extends StObject
        with RTCStatsIceCandidatePairState
@@ -2227,6 +2277,10 @@ object stdStrings {
     extends StObject
        with CanvasTextRendering
   inline def geometricPrecision: geometricPrecision = "geometricPrecision".asInstanceOf[geometricPrecision]
+  
+  @js.native
+  sealed trait getter extends StObject
+  inline def getter: getter = "getter".asInstanceOf[getter]
   
   @js.native
   sealed trait global
@@ -2448,6 +2502,10 @@ object stdStrings {
   inline def html: html = "html".asInstanceOf[html]
   
   @js.native
+  sealed trait httpColonSlashSlashwwwDotw3DotorgSlash1998SlashMathSlashMathML extends StObject
+  inline def httpColonSlashSlashwwwDotw3DotorgSlash1998SlashMathSlashMathML: httpColonSlashSlashwwwDotw3DotorgSlash1998SlashMathSlashMathML = "http://www.w3.org/1998/Math/MathML".asInstanceOf[httpColonSlashSlashwwwDotw3DotorgSlash1998SlashMathSlashMathML]
+  
+  @js.native
   sealed trait httpColonSlashSlashwwwDotw3DotorgSlash1999Slashxhtml extends StObject
   inline def httpColonSlashSlashwwwDotw3DotorgSlash1999Slashxhtml: httpColonSlashSlashwwwDotw3DotorgSlash1999Slashxhtml = "http://www.w3.org/1999/xhtml".asInstanceOf[httpColonSlashSlashwwwDotw3DotorgSlash1999Slashxhtml]
   
@@ -2608,7 +2666,9 @@ object stdStrings {
   inline def inprogress: inprogress = "inprogress".asInstanceOf[inprogress]
   
   @js.native
-  sealed trait input extends StObject
+  sealed trait input
+    extends StObject
+       with MIDIPortType
   inline def input: input = "input".asInstanceOf[input]
   
   @js.native
@@ -3005,6 +3065,10 @@ object stdStrings {
   inline def luminosity: luminosity = "luminosity".asInstanceOf[luminosity]
   
   @js.native
+  sealed trait maction extends StObject
+  inline def maction: maction = "maction".asInstanceOf[maction]
+  
+  @js.native
   sealed trait main extends StObject
   inline def main: main = "main".asInstanceOf[main]
   
@@ -3061,6 +3125,10 @@ object stdStrings {
   inline def mask: mask = "mask".asInstanceOf[mask]
   
   @js.native
+  sealed trait math extends StObject
+  inline def math: math = "math".asInstanceOf[math]
+  
+  @js.native
   sealed trait max
     extends StObject
        with ChannelCountMode
@@ -3114,6 +3182,10 @@ object stdStrings {
   inline def menuitem: menuitem = "menuitem".asInstanceOf[menuitem]
   
   @js.native
+  sealed trait merror extends StObject
+  inline def merror: merror = "merror".asInstanceOf[merror]
+  
+  @js.native
   sealed trait message extends StObject
   inline def message: message = "message".asInstanceOf[message]
   
@@ -3136,10 +3208,26 @@ object stdStrings {
   inline def meter: meter = "meter".asInstanceOf[meter]
   
   @js.native
+  sealed trait method extends StObject
+  inline def method: method = "method".asInstanceOf[method]
+  
+  @js.native
+  sealed trait mfrac extends StObject
+  inline def mfrac: mfrac = "mfrac".asInstanceOf[mfrac]
+  
+  @js.native
+  sealed trait mi extends StObject
+  inline def mi: mi = "mi".asInstanceOf[mi]
+  
+  @js.native
   sealed trait middle
     extends StObject
        with CanvasTextBaseline
   inline def middle: middle = "middle".asInstanceOf[middle]
+  
+  @js.native
+  sealed trait midimessage extends StObject
+  inline def midimessage: midimessage = "midimessage".asInstanceOf[midimessage]
   
   @js.native
   sealed trait minusSign
@@ -3167,6 +3255,18 @@ object stdStrings {
     extends StObject
        with CanvasLineJoin
   inline def miter: miter = "miter".asInstanceOf[miter]
+  
+  @js.native
+  sealed trait mmultiscripts extends StObject
+  inline def mmultiscripts: mmultiscripts = "mmultiscripts".asInstanceOf[mmultiscripts]
+  
+  @js.native
+  sealed trait mn extends StObject
+  inline def mn: mn = "mn".asInstanceOf[mn]
+  
+  @js.native
+  sealed trait mo extends StObject
+  inline def mo: mo = "mo".asInstanceOf[mo]
   
   @js.native
   sealed trait module
@@ -3227,8 +3327,76 @@ object stdStrings {
   inline def move: move = "move".asInstanceOf[move]
   
   @js.native
+  sealed trait mover extends StObject
+  inline def mover: mover = "mover".asInstanceOf[mover]
+  
+  @js.native
+  sealed trait mpadded extends StObject
+  inline def mpadded: mpadded = "mpadded".asInstanceOf[mpadded]
+  
+  @js.native
   sealed trait mpath extends StObject
   inline def mpath: mpath = "mpath".asInstanceOf[mpath]
+  
+  @js.native
+  sealed trait mphantom extends StObject
+  inline def mphantom: mphantom = "mphantom".asInstanceOf[mphantom]
+  
+  @js.native
+  sealed trait mprescripts extends StObject
+  inline def mprescripts: mprescripts = "mprescripts".asInstanceOf[mprescripts]
+  
+  @js.native
+  sealed trait mroot extends StObject
+  inline def mroot: mroot = "mroot".asInstanceOf[mroot]
+  
+  @js.native
+  sealed trait mrow extends StObject
+  inline def mrow: mrow = "mrow".asInstanceOf[mrow]
+  
+  @js.native
+  sealed trait ms extends StObject
+  inline def ms: ms = "ms".asInstanceOf[ms]
+  
+  @js.native
+  sealed trait mspace extends StObject
+  inline def mspace: mspace = "mspace".asInstanceOf[mspace]
+  
+  @js.native
+  sealed trait msqrt extends StObject
+  inline def msqrt: msqrt = "msqrt".asInstanceOf[msqrt]
+  
+  @js.native
+  sealed trait mstyle extends StObject
+  inline def mstyle: mstyle = "mstyle".asInstanceOf[mstyle]
+  
+  @js.native
+  sealed trait msub extends StObject
+  inline def msub: msub = "msub".asInstanceOf[msub]
+  
+  @js.native
+  sealed trait msubsup extends StObject
+  inline def msubsup: msubsup = "msubsup".asInstanceOf[msubsup]
+  
+  @js.native
+  sealed trait msup extends StObject
+  inline def msup: msup = "msup".asInstanceOf[msup]
+  
+  @js.native
+  sealed trait mtable extends StObject
+  inline def mtable: mtable = "mtable".asInstanceOf[mtable]
+  
+  @js.native
+  sealed trait mtd extends StObject
+  inline def mtd: mtd = "mtd".asInstanceOf[mtd]
+  
+  @js.native
+  sealed trait mtext extends StObject
+  inline def mtext: mtext = "mtext".asInstanceOf[mtext]
+  
+  @js.native
+  sealed trait mtr extends StObject
+  inline def mtr: mtr = "mtr".asInstanceOf[mtr]
   
   @js.native
   sealed trait multicol extends StObject
@@ -3239,6 +3407,14 @@ object stdStrings {
     extends StObject
        with GlobalCompositeOperation
   inline def multiply: multiply = "multiply".asInstanceOf[multiply]
+  
+  @js.native
+  sealed trait munder extends StObject
+  inline def munder: munder = "munder".asInstanceOf[munder]
+  
+  @js.native
+  sealed trait munderover extends StObject
+  inline def munderover: munderover = "munderover".asInstanceOf[munderover]
   
   @js.native
   sealed trait mute extends StObject
@@ -3404,7 +3580,6 @@ object stdStrings {
        with ColorSpaceConversion
        with DisplayNamesFallback
        with FillMode
-       with ImageOrientation
        with MediaSessionPlaybackState
        with OverSampleType
        with PremultiplyAlpha
@@ -3522,6 +3697,7 @@ object stdStrings {
   @js.native
   sealed trait open
     extends StObject
+       with MIDIPortConnectionState
        with RTCDataChannelState
        with ReadyState
        with ShadowRootMode
@@ -3551,6 +3727,7 @@ object stdStrings {
   sealed trait optional
     extends StObject
        with CredentialMediationRequirement
+       with FontDisplay
        with MediaKeysRequirement
   inline def optional: optional = "optional".asInstanceOf[optional]
   
@@ -3589,7 +3766,9 @@ object stdStrings {
   inline def `outbound-rtp`: `outbound-rtp` = "outbound-rtp".asInstanceOf[`outbound-rtp`]
   
   @js.native
-  sealed trait output extends StObject
+  sealed trait output
+    extends StObject
+       with MIDIPortType
   inline def output: output = "output".asInstanceOf[output]
   
   @js.native
@@ -3702,6 +3881,7 @@ object stdStrings {
   sealed trait pending
     extends StObject
        with IDBRequestReadyState
+       with MIDIPortConnectionState
   inline def pending: pending = "pending".asInstanceOf[pending]
   
   @js.native
@@ -4412,6 +4592,10 @@ object stdStrings {
   inline def selectstart: selectstart = "selectstart".asInstanceOf[selectstart]
   
   @js.native
+  sealed trait semantics extends StObject
+  inline def semantics: semantics = "semantics".asInstanceOf[semantics]
+  
+  @js.native
   sealed trait `semi-condensed`
     extends StObject
        with CanvasFontStretch
@@ -4448,6 +4632,10 @@ object stdStrings {
   @js.native
   sealed trait set extends StObject
   inline def set: set = "set".asInstanceOf[set]
+  
+  @js.native
+  sealed trait setter extends StObject
+  inline def setter: setter = "setter".asInstanceOf[setter]
   
   @js.native
   sealed trait shared
@@ -4806,6 +4994,12 @@ object stdStrings {
   @js.native
   sealed trait svg extends StObject
   inline def svg: svg = "svg".asInstanceOf[svg]
+  
+  @js.native
+  sealed trait swap
+    extends StObject
+       with FontDisplay
+  inline def swap: swap = "swap".asInstanceOf[swap]
   
   @js.native
   sealed trait switch extends StObject

@@ -2,7 +2,7 @@ package typings.hyperformula
 
 import typings.hyperformula.typingsCellMod.CellError
 import typings.hyperformula.typingsCellMod.CellValueDetailedType
-import typings.hyperformula.typingsInterpreterSimpleRangeValueMod.SimpleRangeValue
+import typings.hyperformula.typingsSimpleRangeValueMod.SimpleRangeValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

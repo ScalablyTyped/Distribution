@@ -7,6 +7,7 @@ import typings.ddTrace.ddTraceInts.`2`
 import typings.ddTrace.ddTraceStrings._dd1DotsrDoteausr
 import typings.ddTrace.ddTraceStrings._ddDotmeasured
 import typings.ddTrace.ddTraceStrings.agent
+import typings.ddTrace.ddTraceStrings.agent_proxy
 import typings.ddTrace.ddTraceStrings.client
 import typings.ddTrace.ddTraceStrings.consumer
 import typings.ddTrace.ddTraceStrings.datadog
@@ -20,6 +21,7 @@ import typings.ddTrace.ddTraceStrings.httpDotroute
 import typings.ddTrace.ddTraceStrings.httpDotstatus_code
 import typings.ddTrace.ddTraceStrings.httpDoturl
 import typings.ddTrace.ddTraceStrings.httpDotuseragent
+import typings.ddTrace.ddTraceStrings.jest_worker
 import typings.ddTrace.ddTraceStrings.log
 import typings.ddTrace.ddTraceStrings.manualDotdrop
 import typings.ddTrace.ddTraceStrings.manualDotkeep
@@ -48,10 +50,20 @@ object extMod {
     def AGENT: agent = js.native
     inline def AGENT_=(x: agent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AGENT")(x.asInstanceOf[js.Any])
     
+    @JSImport("dd-trace/ext", "exporters.AGENT_PROXY")
+    @js.native
+    def AGENT_PROXY: agent_proxy = js.native
+    inline def AGENT_PROXY_=(x: agent_proxy): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AGENT_PROXY")(x.asInstanceOf[js.Any])
+    
     @JSImport("dd-trace/ext", "exporters.DATADOG")
     @js.native
     def DATADOG: datadog = js.native
     inline def DATADOG_=(x: datadog): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DATADOG")(x.asInstanceOf[js.Any])
+    
+    @JSImport("dd-trace/ext", "exporters.JEST_WORKER")
+    @js.native
+    def JEST_WORKER: jest_worker = js.native
+    inline def JEST_WORKER_=(x: jest_worker): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("JEST_WORKER")(x.asInstanceOf[js.Any])
     
     @JSImport("dd-trace/ext", "exporters.LOG")
     @js.native

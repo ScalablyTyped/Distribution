@@ -2,6 +2,7 @@ package typings.nivoLegends.anon
 
 import typings.propTypes.mod.InferProps
 import typings.propTypes.mod.Validator
+import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,11 +11,11 @@ trait On extends StObject {
   
   var on: Validator[String]
   
-  var style: Validator[InferProps[ItemBackground]]
+  var style: Validator[NonNullable[InferProps[ItemBackground]]]
 }
 object On {
   
-  inline def apply(on: Validator[String], style: Validator[InferProps[ItemBackground]]): On = {
+  inline def apply(on: Validator[String], style: Validator[NonNullable[InferProps[ItemBackground]]]): On = {
     val __obj = js.Dynamic.literal(on = on.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
     __obj.asInstanceOf[On]
   }
@@ -24,6 +25,6 @@ object On {
     
     inline def setOn(value: Validator[String]): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
     
-    inline def setStyle(value: Validator[InferProps[ItemBackground]]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: Validator[NonNullable[InferProps[ItemBackground]]]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
   }
 }

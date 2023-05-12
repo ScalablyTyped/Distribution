@@ -7,18 +7,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EnterAction extends StObject {
   
   /**
-    * Describes text to be appended after the new line and after the indentation.
-    */
+  		 * Describes text to be appended after the new line and after the indentation.
+  		 */
   var appendText: js.UndefOr[String] = js.undefined
   
   /**
-    * Describe what to do with the indentation.
-    */
+  		 * Describe what to do with the indentation.
+  		 */
   var indentAction: IndentAction
   
   /**
-    * Describes the number of characters to remove from the new line's indentation.
-    */
+  		 * Describes the number of characters to remove from the new line's indentation.
+  		 */
   var removeText: js.UndefOr[Double] = js.undefined
 }
 object EnterAction {

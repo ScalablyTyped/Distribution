@@ -1,7 +1,7 @@
 
 # Scala.js typings for focus-lock
 
-Typings are for version 0.11.3
+Typings are for version 0.11.6
 
 ## Library description:
 DOM trap for a focus

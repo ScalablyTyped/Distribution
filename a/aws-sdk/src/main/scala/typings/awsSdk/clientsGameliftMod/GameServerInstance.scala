@@ -22,7 +22,7 @@ trait GameServerInstance extends StObject {
   var InstanceId: js.UndefOr[GameServerInstanceId] = js.undefined
   
   /**
-    *  Current status of the game server instance.     ACTIVE -- The instance is viable for hosting game servers.     DRAINING -- The instance is not viable for hosting game servers. Existing game servers are in the process of ending, and new game servers are not started on this instance unless no other resources are available. When the instance is put in DRAINING, a new instance is started up to replace it. Once the instance has no UTILIZED game servers, it will be terminated in favor of the new instance.    SPOT_TERMINATING -- The instance is in the process of shutting down due to a Spot instance interruption. No new game servers are started on this instance.  
+    * Current status of the game server instance
     */
   var InstanceStatus: js.UndefOr[GameServerInstanceStatus] = js.undefined
 }

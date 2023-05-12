@@ -35,7 +35,7 @@ object IExpandedMonarchLanguageRule {
     
     inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
-    inline def setActionVarargs(value: (IExpandedMonarchLanguageAction | IShortMonarchLanguageAction)*): Self = StObject.set(x, "action", js.Array(value*))
+    inline def setActionVarargs(value: (IShortMonarchLanguageAction | IExpandedMonarchLanguageAction)*): Self = StObject.set(x, "action", js.Array(value*))
     
     inline def setInclude(value: String): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
     

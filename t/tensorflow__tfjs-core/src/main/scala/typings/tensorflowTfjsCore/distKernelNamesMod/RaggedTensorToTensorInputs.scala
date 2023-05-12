@@ -1,11 +1,11 @@
 package typings.tensorflowTfjsCore.distKernelNamesMod
 
-import typings.tensorflowTfjsCore.distKernelRegistryMod.TensorInfo
+import typings.tensorflowTfjsCore.distTensorInfoMod.TensorInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Pick<@tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/kernel_registry.NamedTensorInfoMap, 'shape' | 'values' | 'defaultValue'> & {  rowPartitionTensors :std.Array<@tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/kernel_registry.TensorInfo>} */
+/* Inlined std.Pick<@tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/kernel_registry.NamedTensorInfoMap, 'shape' | 'values' | 'defaultValue'> & {  rowPartitionTensors :std.Array<@tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/tensor_info.TensorInfo>} */
 trait RaggedTensorToTensorInputs extends StObject {
   
   var defaultValue: js.UndefOr[scala.Any] = js.undefined

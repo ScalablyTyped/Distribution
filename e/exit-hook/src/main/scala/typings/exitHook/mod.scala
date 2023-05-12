@@ -10,9 +10,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(onExit: js.Function0[Unit]): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(onExit.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
+  inline def default(onExit: js.Function1[/* signal */ Double, Unit]): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(onExit.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
   
-  inline def asyncExitHook(onExit: js.Function0[Unit | js.Promise[Unit]], options: Options): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("asyncExitHook")(onExit.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  inline def asyncExitHook(onExit: js.Function1[/* signal */ Double, Unit | js.Promise[Unit]], options: Options): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("asyncExitHook")(onExit.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   
   inline def gracefulExit(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("gracefulExit")().asInstanceOf[Unit]
   inline def gracefulExit(signal: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("gracefulExit")(signal.asInstanceOf[js.Any]).asInstanceOf[Unit]

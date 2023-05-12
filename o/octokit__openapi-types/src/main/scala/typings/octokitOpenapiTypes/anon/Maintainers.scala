@@ -1,6 +1,8 @@
 package typings.octokitOpenapiTypes.anon
 
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.closed
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.notifications_disabled
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.notifications_enabled
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.pull
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.push
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.secret
@@ -19,6 +21,15 @@ trait Maintainers extends StObject {
   /** @description The name of the team. */
   var name: String
   
+  /**
+    * @description The notification setting the team has chosen. The options are:
+    *  * `notifications_enabled` - team members receive notifications when the team is @mentioned.
+    *  * `notifications_disabled` - no one receives notifications.
+    * Default: `notifications_enabled`
+    * @enum {string}
+    */
+  var notification_setting: js.UndefOr[notifications_enabled | notifications_disabled] = js.undefined
+  
   /** @description The ID of a team to set as the parent team. */
   var parent_team_id: js.UndefOr[Double] = js.undefined
   
@@ -32,11 +43,11 @@ trait Maintainers extends StObject {
   /**
     * @description The level of privacy this team should have. The options are:
     * **For a non-nested team:**
-    * \* `secret` - only visible to organization owners and members of this team.
-    * \* `closed` - visible to all members of this organization.
+    *  * `secret` - only visible to organization owners and members of this team.
+    *  * `closed` - visible to all members of this organization.
     * Default: `secret`
     * **For a parent or child team:**
-    * \* `closed` - visible to all members of this organization.
+    *  * `closed` - visible to all members of this organization.
     * Default for child team: `closed`
     * @enum {string}
     */
@@ -66,6 +77,10 @@ object Maintainers {
     inline def setMaintainersVarargs(value: String*): Self = StObject.set(x, "maintainers", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNotification_setting(value: notifications_enabled | notifications_disabled): Self = StObject.set(x, "notification_setting", value.asInstanceOf[js.Any])
+    
+    inline def setNotification_settingUndefined: Self = StObject.set(x, "notification_setting", js.undefined)
     
     inline def setParent_team_id(value: Double): Self = StObject.set(x, "parent_team_id", value.asInstanceOf[js.Any])
     

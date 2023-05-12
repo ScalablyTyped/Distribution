@@ -1,75 +1,52 @@
 package typings.workboxStrategies
 
-import typings.std.CacheQueryOptions
-import typings.std.RequestInit
-import typings.std.Response
-import typings.workboxCore.typesWorkboxPluginMod.WorkboxPlugin
-import typings.workboxRouting.typesRouteHandlerMod.RouteHandlerCallback
-import typings.workboxRouting.typesRouteHandlerMod.RouteHandlerCallbackContext
-import typings.workboxRouting.typesRouteHandlerMod.RouteHandlerObject
-import typings.workboxStrategies.typesMakeRequestCallbackMod.MakeRequestCallback
-import typings.workboxStrategies.typesMakeRequestCallbackMod.MakeRequestCallbackOptions
+import typings.workboxStrategies.strategyMod.Strategy
+import typings.workboxStrategies.strategyMod.StrategyOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cacheFirstMod {
   
+  /**
+    * An implementation of a [cache-first](https://developer.chrome.com/docs/workbox/caching-strategies-overview/#cache-first-falling-back-to-network)
+    * request strategy.
+    *
+    * A cache first strategy is useful for assets that have been revisioned,
+    * such as URLs like `/styles/example.a8f5f1.css`, since they
+    * can be cached for long periods of time.
+    *
+    * If the network request fails, and there is no cache match, this will throw
+    * a `WorkboxError` exception.
+    *
+    * @extends workbox-strategies.Strategy
+    * @memberof workbox-strategies
+    */
   @JSImport("workbox-strategies/CacheFirst", "CacheFirst")
   @js.native
-  open class CacheFirst ()
-    extends StObject
-       with RouteHandlerObject {
-    def this(options: CacheFirstOptions) = this()
-    
-    /* CompleteClass */
-    override def handle(context: RouteHandlerCallbackContext): js.Promise[Response] = js.native
-    /* CompleteClass */
-    @JSName("handle")
-    var handle_Original: RouteHandlerCallback = js.native
-    
-    def makeRequest(options: MakeRequestCallbackOptions): js.Promise[Response] = js.native
-    @JSName("makeRequest")
-    var makeRequest_Original: MakeRequestCallback = js.native
-  }
-  
-  trait CacheFirstOptions extends StObject {
-    
-    var cacheName: js.UndefOr[String] = js.undefined
-    
-    var fetchOptions: js.UndefOr[RequestInit] = js.undefined
-    
-    var matchOptions: js.UndefOr[CacheQueryOptions] = js.undefined
-    
-    var plugins: js.UndefOr[js.Array[WorkboxPlugin]] = js.undefined
-  }
-  object CacheFirstOptions {
-    
-    inline def apply(): CacheFirstOptions = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[CacheFirstOptions]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: CacheFirstOptions] (val x: Self) extends AnyVal {
-      
-      inline def setCacheName(value: String): Self = StObject.set(x, "cacheName", value.asInstanceOf[js.Any])
-      
-      inline def setCacheNameUndefined: Self = StObject.set(x, "cacheName", js.undefined)
-      
-      inline def setFetchOptions(value: RequestInit): Self = StObject.set(x, "fetchOptions", value.asInstanceOf[js.Any])
-      
-      inline def setFetchOptionsUndefined: Self = StObject.set(x, "fetchOptions", js.undefined)
-      
-      inline def setMatchOptions(value: CacheQueryOptions): Self = StObject.set(x, "matchOptions", value.asInstanceOf[js.Any])
-      
-      inline def setMatchOptionsUndefined: Self = StObject.set(x, "matchOptions", js.undefined)
-      
-      inline def setPlugins(value: js.Array[WorkboxPlugin]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
-      
-      inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
-      
-      inline def setPluginsVarargs(value: WorkboxPlugin*): Self = StObject.set(x, "plugins", js.Array(value*))
-    }
+  /**
+    * Creates a new instance of the strategy and sets all documented option
+    * properties as public instance properties.
+    *
+    * Note: if a custom strategy class extends the base Strategy class and does
+    * not need more than these properties, it does not need to define its own
+    * constructor.
+    *
+    * @param {Object} [options]
+    * @param {string} [options.cacheName] Cache name to store and retrieve
+    * requests. Defaults to the cache names provided by
+    * {@link workbox-core.cacheNames}.
+    * @param {Array<Object>} [options.plugins] [Plugins]{@link https://developers.google.com/web/tools/workbox/guides/using-plugins}
+    * to use in conjunction with this caching strategy.
+    * @param {Object} [options.fetchOptions] Values passed along to the
+    * [`init`](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/fetch#Parameters)
+    * of [non-navigation](https://github.com/GoogleChrome/workbox/issues/1796)
+    * `fetch()` requests made by this strategy.
+    * @param {Object} [options.matchOptions] The
+    * [`CacheQueryOptions`]{@link https://w3c.github.io/ServiceWorker/#dictdef-cachequeryoptions}
+    * for any `cache.match()` or `cache.put()` calls made by this strategy.
+    */
+  open class CacheFirst () extends Strategy {
+    def this(options: StrategyOptions) = this()
   }
 }

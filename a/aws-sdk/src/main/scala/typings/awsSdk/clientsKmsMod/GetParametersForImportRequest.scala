@@ -12,7 +12,7 @@ trait GetParametersForImportRequest extends StObject {
   var KeyId: KeyIdType
   
   /**
-    * The algorithm you will use to encrypt the key material before importing it with ImportKeyMaterial. For more information, see Encrypt the Key Material in the Key Management Service Developer Guide.
+    * The algorithm you will use to encrypt the key material before using the ImportKeyMaterial operation to import it. For more information, see Encrypt the key material in the Key Management Service Developer Guide.  The RSAES_PKCS1_V1_5 wrapping algorithm is deprecated. We recommend that you begin using a different wrapping algorithm immediately. KMS will end support for RSAES_PKCS1_V1_5 by October 1, 2023 pursuant to cryptographic key management guidance from the National Institute of Standards and Technology (NIST). 
     */
   var WrappingAlgorithm: AlgorithmSpec
   

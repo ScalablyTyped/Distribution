@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.WebkitMaskPositionY
+import typings.csstype.mod.Property.LineBreak
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,13 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `134` extends StObject {
   
   var value: js.UndefOr[
-    (WebkitMaskPositionY[Double | String]) | (js.Array[
-      (Extract[
-        js.UndefOr[
-          (WebkitMaskPositionY[Double | String]) | (js.Array[NonNullable[js.UndefOr[WebkitMaskPositionY[Double | String]]]])
-        ], 
-        String
-      ]) | (NonNullable[js.UndefOr[WebkitMaskPositionY[Double | String]]])
+    LineBreak | (js.Array[
+      (Extract[js.UndefOr[LineBreak | js.Array[NonNullable[js.UndefOr[LineBreak]]]], String]) | NonNullable[js.UndefOr[LineBreak]]
     ])
   ] = js.native
 }

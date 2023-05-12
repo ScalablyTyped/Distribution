@@ -17,6 +17,11 @@ trait MediaPipeline extends StObject {
   var MediaConcatenationPipeline: js.UndefOr[typings.awsSdk.clientsChimesdkmediapipelinesMod.MediaConcatenationPipeline] = js.undefined
   
   /**
+    * The media insights pipeline of a media pipeline.
+    */
+  var MediaInsightsPipeline: js.UndefOr[typings.awsSdk.clientsChimesdkmediapipelinesMod.MediaInsightsPipeline] = js.undefined
+  
+  /**
     * The connector pipeline of the media pipeline.
     */
   var MediaLiveConnectorPipeline: js.UndefOr[typings.awsSdk.clientsChimesdkmediapipelinesMod.MediaLiveConnectorPipeline] = js.undefined
@@ -38,6 +43,10 @@ object MediaPipeline {
     inline def setMediaConcatenationPipeline(value: MediaConcatenationPipeline): Self = StObject.set(x, "MediaConcatenationPipeline", value.asInstanceOf[js.Any])
     
     inline def setMediaConcatenationPipelineUndefined: Self = StObject.set(x, "MediaConcatenationPipeline", js.undefined)
+    
+    inline def setMediaInsightsPipeline(value: MediaInsightsPipeline): Self = StObject.set(x, "MediaInsightsPipeline", value.asInstanceOf[js.Any])
+    
+    inline def setMediaInsightsPipelineUndefined: Self = StObject.set(x, "MediaInsightsPipeline", js.undefined)
     
     inline def setMediaLiveConnectorPipeline(value: MediaLiveConnectorPipeline): Self = StObject.set(x, "MediaLiveConnectorPipeline", value.asInstanceOf[js.Any])
     

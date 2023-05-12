@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.PlaceSelf
+import typings.csstype.mod.Property.MozOutlineRadiusBottomright
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,8 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `479` extends StObject {
   
   var value: js.UndefOr[
-    PlaceSelf | (js.Array[
-      (Extract[js.UndefOr[PlaceSelf | js.Array[NonNullable[js.UndefOr[PlaceSelf]]]], String]) | NonNullable[js.UndefOr[PlaceSelf]]
+    (MozOutlineRadiusBottomright[Double | String]) | (js.Array[
+      (Extract[
+        js.UndefOr[
+          (MozOutlineRadiusBottomright[Double | String]) | (js.Array[NonNullable[js.UndefOr[MozOutlineRadiusBottomright[Double | String]]]])
+        ], 
+        String
+      ]) | (NonNullable[js.UndefOr[MozOutlineRadiusBottomright[Double | String]]])
     ])
   ] = js.native
 }

@@ -10,7 +10,7 @@ open class DecorativeAxis protected () extends AbstractSeries[DecorativeAxisProp
   def this(props: DecorativeAxisProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: DecorativeAxisProps, context: Any) = this()
 }

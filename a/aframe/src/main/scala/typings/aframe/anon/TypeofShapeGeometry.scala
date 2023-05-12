@@ -11,5 +11,6 @@ trait TypeofShapeGeometry
   extends StObject
      with Instantiable0[ShapeGeometry] {
   
-  def fromJSON(data: Any): typings.three.srcGeometriesShapeGeometryMod.ShapeGeometry = js.native
+  /** @internal */
+  def fromJSON(data: js.Object): typings.three.srcGeometriesShapeGeometryMod.ShapeGeometry = js.native
 }

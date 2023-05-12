@@ -1,7 +1,7 @@
 package typings.vimeoPlayer
 
-import typings.vimeoPlayer.mod.TrackKind
-import typings.vimeoPlayer.mod.VimeoVideoQuality
+import typings.vimeoPlayer.mod.Vimeo.Player.TrackKind
+import typings.vimeoPlayer.mod.Vimeo.Player.VimeoVideoQuality
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -49,42 +49,6 @@ object vimeoPlayerStrings {
     extends StObject
        with VimeoVideoQuality
   inline def `720p`: `720p` = "720p".asInstanceOf[`720p`]
-  
-  @js.native
-  sealed trait ContrastError extends StObject
-  inline def ContrastError: ContrastError = "ContrastError".asInstanceOf[ContrastError]
-  
-  @js.native
-  sealed trait InvalidCuePoint extends StObject
-  inline def InvalidCuePoint: InvalidCuePoint = "InvalidCuePoint".asInstanceOf[InvalidCuePoint]
-  
-  @js.native
-  sealed trait InvalidTrackError extends StObject
-  inline def InvalidTrackError: InvalidTrackError = "InvalidTrackError".asInstanceOf[InvalidTrackError]
-  
-  @js.native
-  sealed trait InvalidTrackLanguageError extends StObject
-  inline def InvalidTrackLanguageError: InvalidTrackLanguageError = "InvalidTrackLanguageError".asInstanceOf[InvalidTrackLanguageError]
-  
-  @js.native
-  sealed trait PasswordError extends StObject
-  inline def PasswordError: PasswordError = "PasswordError".asInstanceOf[PasswordError]
-  
-  @js.native
-  sealed trait PrivacyError extends StObject
-  inline def PrivacyError: PrivacyError = "PrivacyError".asInstanceOf[PrivacyError]
-  
-  @js.native
-  sealed trait RangeError extends StObject
-  inline def RangeError: RangeError = "RangeError".asInstanceOf[RangeError]
-  
-  @js.native
-  sealed trait TypeError extends StObject
-  inline def TypeError: TypeError = "TypeError".asInstanceOf[TypeError]
-  
-  @js.native
-  sealed trait UnsupportedError extends StObject
-  inline def UnsupportedError: UnsupportedError = "UnsupportedError".asInstanceOf[UnsupportedError]
   
   @js.native
   sealed trait auto

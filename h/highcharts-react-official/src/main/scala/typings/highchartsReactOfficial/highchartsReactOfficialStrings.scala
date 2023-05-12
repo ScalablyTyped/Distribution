@@ -31,10 +31,6 @@ object highchartsReactOfficialStrings {
   inline def Color: Color = "Color".asInstanceOf[Color]
   
   @js.native
-  sealed trait ColorAxis extends StObject
-  inline def ColorAxis: ColorAxis = "ColorAxis".asInstanceOf[ColorAxis]
-  
-  @js.native
   sealed trait Legend extends StObject
   inline def Legend: Legend = "Legend".asInstanceOf[Legend]
   
@@ -105,6 +101,10 @@ object highchartsReactOfficialStrings {
   @js.native
   sealed trait callout extends StObject
   inline def callout: callout = "callout".asInstanceOf[callout]
+  
+  @js.native
+  sealed trait centerImage extends StObject
+  inline def centerImage: centerImage = "centerImage".asInstanceOf[centerImage]
   
   @js.native
   sealed trait chart_ extends StObject
@@ -277,6 +277,10 @@ object highchartsReactOfficialStrings {
   @js.native
   sealed trait pick extends StObject
   inline def pick: pick = "pick".asInstanceOf[pick]
+  
+  @js.native
+  sealed trait pushUnique extends StObject
+  inline def pushUnique: pushUnique = "pushUnique".asInstanceOf[pushUnique]
   
   @js.native
   sealed trait reduce extends StObject

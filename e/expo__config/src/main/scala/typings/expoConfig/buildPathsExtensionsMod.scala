@@ -17,9 +17,6 @@ object buildPathsExtensionsMod {
   
   inline def getLanguageExtensionsInOrder(param0: LanguageOptions): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLanguageExtensionsInOrder")(param0.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
-  inline def getManagedExtensions(platforms: js.Array[String]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getManagedExtensions")(platforms.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
-  inline def getManagedExtensions(platforms: js.Array[String], languageOptions: LanguageOptions): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getManagedExtensions")(platforms.asInstanceOf[js.Any], languageOptions.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
-  
   trait LanguageOptions extends StObject {
     
     var isModern: Boolean

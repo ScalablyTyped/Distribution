@@ -23,6 +23,8 @@ trait Loader[T /* <: LoaderContext */] extends StObject {
     */
   var getCacheAge: js.UndefOr[js.Function0[Double | Null]] = js.undefined
   
+  var getResponseHeader: js.UndefOr[js.Function1[/* name */ String, String | Null]] = js.undefined
+  
   def load(context: LoaderContext, config: LoaderConfiguration, callbacks: LoaderCallbacks[T]): Unit
   
   var stats: LoaderStats
@@ -52,6 +54,10 @@ object Loader {
     inline def setGetCacheAge(value: () => Double | Null): Self = StObject.set(x, "getCacheAge", js.Any.fromFunction0(value))
     
     inline def setGetCacheAgeUndefined: Self = StObject.set(x, "getCacheAge", js.undefined)
+    
+    inline def setGetResponseHeader(value: /* name */ String => String | Null): Self = StObject.set(x, "getResponseHeader", js.Any.fromFunction1(value))
+    
+    inline def setGetResponseHeaderUndefined: Self = StObject.set(x, "getResponseHeader", js.undefined)
     
     inline def setLoad(value: (LoaderContext, LoaderConfiguration, LoaderCallbacks[T]) => Unit): Self = StObject.set(x, "load", js.Any.fromFunction3(value))
     

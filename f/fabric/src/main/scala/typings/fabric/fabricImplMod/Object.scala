@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.fabric.anon.Br
 import typings.fabric.anon.E
 import typings.fabric.anon.Mb
+import typings.fabric.anon.Objects
 import typings.fabric.anon.PropertySet
 import typings.fabric.anon.ScaleX
 import typings.fabric.anon.Top
@@ -36,7 +37,6 @@ open class Object ()
   def this(options: IObjectOptions) = this()
   
   /**
-    * @private
     * @param {CanvasRenderingContext2D} ctx Context to render on
     * @param {Object} filler fabric.Pattern or fabric.Gradient
     * @return {Object} offset.offsetX offset for text rendering
@@ -50,7 +50,6 @@ open class Object ()
   
   /**
     * Determines which corner has been clicked
-    * @private
     * @param {Object} pointer The pointer indicating the mouse position
     * @return {String|Boolean} corner code (tl, tr, bl, br, etc.), or false if nothing is found
     */
@@ -58,14 +57,12 @@ open class Object ()
   
   /**
     * Returns the instance of the control visibility set for this object.
-    * @private
     * @returns {Object}
     */
   def _getControlsVisibility(): Mb = js.native
   
   /**
     * Returns the top, left coordinates
-    * @private
     * @return {fabric.Point}
     */
   def _getLeftTopCoords(): Point = js.native
@@ -90,44 +87,37 @@ open class Object ()
   def _getTransformedDimensions(skewX: Unit, skewY: Double): X = js.native
   
   /**
-    * @private
     * @param {CanvasRenderingContext2D} ctx Context to render on
     */
   def _removeShadow(ctx: CanvasRenderingContext2D): Unit = js.native
   
   /**
-    * @private
     * @param {CanvasRenderingContext2D} ctx Context to render on
     */
   def _render(ctx: CanvasRenderingContext2D): Unit = js.native
   
   /**
-    * @private
     * @param {CanvasRenderingContext2D} ctx Context to render on
     */
   def _renderFill(ctx: CanvasRenderingContext2D): Unit = js.native
   
   /**
-    * @private
     * @param {CanvasRenderingContext2D} ctx Context to render on
     */
   def _renderPaintInOrder(ctx: CanvasRenderingContext2D): Unit = js.native
   
   /**
     * @param ctx
-    * @private
     */
   def _renderStroke(ctx: CanvasRenderingContext2D): Unit = js.native
   
   /**
-    * @private
     * @param {String} key
     * @param {*} value
     */
   def _set(key: String, value: Any): Object = js.native
   
   /**
-    * @private
     * Sets line dash
     * @param {CanvasRenderingContext2D} ctx Context to set the dash line on
     * @param {Array} dashArray array representing dashes
@@ -800,8 +790,8 @@ open class Object ()
     * Returns a JSON representation of an instance
     * @param [propertiesToInclude] Any properties that you might want to additionally include in the output
     */
-  def toJSON(): Any = js.native
-  def toJSON(propertiesToInclude: js.Array[String]): Any = js.native
+  def toJSON(): Objects = js.native
+  def toJSON(propertiesToInclude: js.Array[String]): Objects = js.native
   
   /**
     * Returns the point in local coordinates
@@ -919,7 +909,6 @@ object Object {
     * @param {fabric.Object} Original object
     * @param {Function} Callback when complete
     * @param {Object} Extra parameters for fabric.Object
-    * @private
     * @return {fabric.Object}
     */
   inline def _fromObject(className: String, `object`: Object): Object = (^.asInstanceOf[js.Dynamic].applyDynamic("_fromObject")(className.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[Object]

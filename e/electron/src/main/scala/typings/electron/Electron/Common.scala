@@ -54,6 +54,8 @@ object Common {
   
   type Clipboard = typings.electron.Electron.Clipboard
   
+  type CloseOpts = typings.electron.Electron.CloseOpts
+  
   type Config = typings.electron.Electron.Config
   
   type ConfigureHostResolverOptions = typings.electron.Electron.ConfigureHostResolverOptions
@@ -96,6 +98,8 @@ object Common {
   
   type DevicePermissionHandlerHandlerDetails = typings.electron.Electron.DevicePermissionHandlerHandlerDetails
   
+  type DevtoolsOpenUrlEvent = typings.electron.Electron.DevtoolsOpenUrlEvent
+  
   type DidChangeThemeColorEvent = typings.electron.Electron.DidChangeThemeColorEvent
   
   type DidCreateWindowDetails = typings.electron.Electron.DidCreateWindowDetails
@@ -118,9 +122,13 @@ object Common {
   
   type DisplayBalloonOptions = typings.electron.Electron.DisplayBalloonOptions
   
+  type DisplayMediaRequestHandlerHandlerRequest = typings.electron.Electron.DisplayMediaRequestHandlerHandlerRequest
+  
   type EditFlags = typings.electron.Electron.EditFlags
   
   type EnableNetworkEmulationOptions = typings.electron.Electron.EnableNetworkEmulationOptions
+  
+  type Env = typings.electron.Electron.Env
   
   type Event = typings.electron.Electron.Event
   
@@ -139,6 +147,8 @@ object Common {
   type FindInPageOptions = typings.electron.Electron.FindInPageOptions
   
   type FocusOptions = typings.electron.Electron.FocusOptions
+  
+  type ForkOptions = typings.electron.Electron.ForkOptions
   
   type FoundInPageEvent = typings.electron.Electron.FoundInPageEvent
   
@@ -242,10 +252,6 @@ object Common {
   
   type NativeImage_ = typings.electron.Electron.NativeImage_
   
-  type NewWindowEvent = typings.electron.Electron.NewWindowEvent
-  
-  type NewWindowWebContentsEvent = typings.electron.Electron.NewWindowWebContentsEvent
-  
   type NotificationAction = typings.electron.Electron.NotificationAction
   
   type NotificationConstructorOptions = typings.electron.Electron.NotificationConstructorOptions
@@ -279,6 +285,8 @@ object Common {
   type OpenExternalOptions = typings.electron.Electron.OpenExternalOptions
   
   type Options = typings.electron.Electron.Options
+  
+  type Opts = typings.electron.Electron.Opts
   
   type PageFaviconUpdatedEvent = typings.electron.Electron.PageFaviconUpdatedEvent
   
@@ -334,6 +342,8 @@ object Common {
   
   type Provider = typings.electron.Electron.Provider
   
+  type PurchaseProductOpts = typings.electron.Electron.PurchaseProductOpts
+  
   type ReadBookmark = typings.electron.Electron.ReadBookmark
   
   type Rectangle = typings.electron.Electron.Rectangle
@@ -349,6 +359,12 @@ object Common {
   type Request = typings.electron.Electron.Request
   
   type ResizeOptions = typings.electron.Electron.ResizeOptions
+  
+  type ResolveHostOptions = typings.electron.Electron.ResolveHostOptions
+  
+  type ResolvedEndpoint = typings.electron.Electron.ResolvedEndpoint
+  
+  type ResolvedHost = typings.electron.Electron.ResolvedHost
   
   type ResourceUsage = typings.electron.Electron.ResourceUsage
   
@@ -370,7 +386,11 @@ object Common {
   
   type SelectHidDeviceDetails = typings.electron.Electron.SelectHidDeviceDetails
   
+  type SelectUsbDeviceDetails = typings.electron.Electron.SelectUsbDeviceDetails
+  
   type SerialPort = typings.electron.Electron.SerialPort
+  
+  type SerialPortRevokedDetails = typings.electron.Electron.SerialPortRevokedDetails
   
   type ServiceWorkerInfo = typings.electron.Electron.ServiceWorkerInfo
   
@@ -389,6 +409,8 @@ object Common {
   type SourcesOptions = typings.electron.Electron.SourcesOptions
   
   type StartLoggingOptions = typings.electron.Electron.StartLoggingOptions
+  
+  type Streams = typings.electron.Electron.Streams
   
   type SystemMemoryInfo = typings.electron.Electron.SystemMemoryInfo
   
@@ -436,6 +458,8 @@ object Common {
   
   type Transaction = typings.electron.Electron.Transaction
   
+  type USBDevice = typings.electron.Electron.USBDevice
+  
   type UpdateTargetUrlEvent = typings.electron.Electron.UpdateTargetUrlEvent
   
   type UploadData = typings.electron.Electron.UploadData
@@ -446,7 +470,15 @@ object Common {
   
   type UploadRawData = typings.electron.Electron.UploadRawData
   
+  type UsbDeviceAddedDetails = typings.electron.Electron.UsbDeviceAddedDetails
+  
+  type UsbDeviceRemovedDetails = typings.electron.Electron.UsbDeviceRemovedDetails
+  
+  type UsbDeviceRevokedDetails = typings.electron.Electron.UsbDeviceRevokedDetails
+  
   type UserDefaultTypes = typings.electron.Electron.UserDefaultTypes
+  
+  type Video = typings.electron.Electron.Video
   
   type VisibleOnAllWorkspacesOptions = typings.electron.Electron.VisibleOnAllWorkspacesOptions
   

@@ -6,5 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("three/src/Three", "Scene")
 @js.native
+/**
+  * Create a new {@link Scene} object.
+  */
 open class Scene ()
   extends typings.three.srcScenesSceneMod.Scene

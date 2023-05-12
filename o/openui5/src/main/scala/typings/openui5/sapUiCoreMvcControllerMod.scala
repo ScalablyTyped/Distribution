@@ -279,6 +279,8 @@ object sapUiCoreMvcControllerMod {
       ] = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * This method is called every time the View is rendered, after the HTML is placed in the DOM-Tree. It can
       * be used to apply additional changes to the DOM after the Renderer has finished. (Even though this method
       * is declared as "abstract", it does not need to be defined in controllers, if the method does not exist,
@@ -289,6 +291,8 @@ object sapUiCoreMvcControllerMod {
     def onAfterRendering(): Unit = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * This method is called every time the View is rendered, before the Renderer is called and the HTML is
       * placed in the DOM-Tree. It can be used to perform clean-up-tasks before re-rendering. (Even though this
       * method is declared as "abstract", it does not need to be defined in controllers, if the method does not
@@ -299,6 +303,8 @@ object sapUiCoreMvcControllerMod {
     def onBeforeRendering(): Unit = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * This method is called upon desctuction of the View. The controller should perform its internal destruction
       * in this hook. It is only called once per View instance, unlike the onBeforeRendering and onAfterRendering
       * hooks. (Even though this method is declared as "abstract", it does not need to be defined in controllers,
@@ -307,6 +313,8 @@ object sapUiCoreMvcControllerMod {
     def onExit(): Unit = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * This method is called upon initialization of the View. The controller can perform its internal setup
       * in this hook. It is only called once per View instance, unlike the onBeforeRendering and onAfterRendering
       * hooks. (Even though this method is declared as "abstract", it does not need to be defined in controllers,

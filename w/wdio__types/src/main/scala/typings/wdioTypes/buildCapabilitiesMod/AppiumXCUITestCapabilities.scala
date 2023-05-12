@@ -30,6 +30,9 @@ trait AppiumXCUITestCapabilities extends StObject {
   @JSName("appium:appInstallStrategy")
   var appiumColonappInstallStrategy: js.UndefOr[String] = js.undefined
   
+  @JSName("appium:appName")
+  var appiumColonappName: js.UndefOr[String] = js.undefined
+  
   @JSName("appium:appPushTimeout")
   var appiumColonappPushTimeout: js.UndefOr[Double] = js.undefined
   
@@ -38,6 +41,9 @@ trait AppiumXCUITestCapabilities extends StObject {
   
   @JSName("appium:autoDismissAlerts")
   var appiumColonautoDismissAlerts: js.UndefOr[Boolean] = js.undefined
+  
+  @JSName("appium:autoGrantPermissions")
+  var appiumColonautoGrantPermissions: js.UndefOr[Boolean] = js.undefined
   
   @JSName("appium:bootstrapPath")
   var appiumColonbootstrapPath: js.UndefOr[String] = js.undefined
@@ -102,6 +108,9 @@ trait AppiumXCUITestCapabilities extends StObject {
   @JSName("appium:includeSafariInWebviews")
   var appiumColonincludeSafariInWebviews: js.UndefOr[Boolean] = js.undefined
   
+  @JSName("appium:interKeyDelay")
+  var appiumColoninterKeyDelay: js.UndefOr[Double] = js.undefined
+  
   @JSName("appium:iosInstallPause")
   var appiumColoniosInstallPause: js.UndefOr[Double] = js.undefined
   
@@ -122,6 +131,9 @@ trait AppiumXCUITestCapabilities extends StObject {
   
   @JSName("appium:keychainsExcludePatterns")
   var appiumColonkeychainsExcludePatterns: js.UndefOr[String] = js.undefined
+  
+  @JSName("appium:launchTimeout")
+  var appiumColonlaunchTimeout: js.UndefOr[Double] = js.undefined
   
   @JSName("appium:launchWithIDB")
   var appiumColonlaunchWithIDB: js.UndefOr[Boolean] = js.undefined
@@ -144,6 +156,9 @@ trait AppiumXCUITestCapabilities extends StObject {
   @JSName("appium:mjpegServerPort")
   var appiumColonmjpegServerPort: js.UndefOr[Double] = js.undefined
   
+  @JSName("appium:nativeInstrumentsLib")
+  var appiumColonnativeInstrumentsLib: js.UndefOr[Boolean] = js.undefined
+  
   @JSName("appium:nativeTyping")
   var appiumColonnativeTyping: js.UndefOr[Boolean] = js.undefined
   
@@ -154,7 +169,7 @@ trait AppiumXCUITestCapabilities extends StObject {
   var appiumColonnativeWebTapStrict: js.UndefOr[Boolean] = js.undefined
   
   @JSName("appium:otherApps")
-  var appiumColonotherApps: js.UndefOr[String] = js.undefined
+  var appiumColonotherApps: js.UndefOr[String | js.Array[String]] = js.undefined
   
   @JSName("appium:permissions")
   var appiumColonpermissions: js.UndefOr[String] = js.undefined
@@ -228,6 +243,12 @@ trait AppiumXCUITestCapabilities extends StObject {
   @JSName("appium:screenshotQuality")
   var appiumColonscreenshotQuality: js.UndefOr[Double] = js.undefined
   
+  @JSName("appium:screenshotWaitTimeout")
+  var appiumColonscreenshotWaitTimeout: js.UndefOr[Double] = js.undefined
+  
+  @JSName("appium:sendKeyStrategy")
+  var appiumColonsendKeyStrategy: js.UndefOr[String] = js.undefined
+  
   @JSName("appium:shouldTerminateApp")
   var appiumColonshouldTerminateApp: js.UndefOr[Boolean] = js.undefined
   
@@ -296,6 +317,9 @@ trait AppiumXCUITestCapabilities extends StObject {
   
   @JSName("appium:useXctestrunFile")
   var appiumColonuseXctestrunFile: js.UndefOr[Boolean] = js.undefined
+  
+  @JSName("appium:waitForAppScript")
+  var appiumColonwaitForAppScript: js.UndefOr[String] = js.undefined
   
   @JSName("appium:waitForIdleTimeout")
   var appiumColonwaitForIdleTimeout: js.UndefOr[Double] = js.undefined
@@ -386,6 +410,10 @@ object AppiumXCUITestCapabilities {
     
     inline def setAppiumColonappInstallStrategyUndefined: Self = StObject.set(x, "appium:appInstallStrategy", js.undefined)
     
+    inline def setAppiumColonappName(value: String): Self = StObject.set(x, "appium:appName", value.asInstanceOf[js.Any])
+    
+    inline def setAppiumColonappNameUndefined: Self = StObject.set(x, "appium:appName", js.undefined)
+    
     inline def setAppiumColonappPushTimeout(value: Double): Self = StObject.set(x, "appium:appPushTimeout", value.asInstanceOf[js.Any])
     
     inline def setAppiumColonappPushTimeoutUndefined: Self = StObject.set(x, "appium:appPushTimeout", js.undefined)
@@ -399,6 +427,10 @@ object AppiumXCUITestCapabilities {
     inline def setAppiumColonautoDismissAlerts(value: Boolean): Self = StObject.set(x, "appium:autoDismissAlerts", value.asInstanceOf[js.Any])
     
     inline def setAppiumColonautoDismissAlertsUndefined: Self = StObject.set(x, "appium:autoDismissAlerts", js.undefined)
+    
+    inline def setAppiumColonautoGrantPermissions(value: Boolean): Self = StObject.set(x, "appium:autoGrantPermissions", value.asInstanceOf[js.Any])
+    
+    inline def setAppiumColonautoGrantPermissionsUndefined: Self = StObject.set(x, "appium:autoGrantPermissions", js.undefined)
     
     inline def setAppiumColonbootstrapPath(value: String): Self = StObject.set(x, "appium:bootstrapPath", value.asInstanceOf[js.Any])
     
@@ -484,6 +516,10 @@ object AppiumXCUITestCapabilities {
     
     inline def setAppiumColonincludeSafariInWebviewsUndefined: Self = StObject.set(x, "appium:includeSafariInWebviews", js.undefined)
     
+    inline def setAppiumColoninterKeyDelay(value: Double): Self = StObject.set(x, "appium:interKeyDelay", value.asInstanceOf[js.Any])
+    
+    inline def setAppiumColoninterKeyDelayUndefined: Self = StObject.set(x, "appium:interKeyDelay", js.undefined)
+    
     inline def setAppiumColoniosInstallPause(value: Double): Self = StObject.set(x, "appium:iosInstallPause", value.asInstanceOf[js.Any])
     
     inline def setAppiumColoniosInstallPauseUndefined: Self = StObject.set(x, "appium:iosInstallPause", js.undefined)
@@ -511,6 +547,10 @@ object AppiumXCUITestCapabilities {
     inline def setAppiumColonkeychainsExcludePatterns(value: String): Self = StObject.set(x, "appium:keychainsExcludePatterns", value.asInstanceOf[js.Any])
     
     inline def setAppiumColonkeychainsExcludePatternsUndefined: Self = StObject.set(x, "appium:keychainsExcludePatterns", js.undefined)
+    
+    inline def setAppiumColonlaunchTimeout(value: Double): Self = StObject.set(x, "appium:launchTimeout", value.asInstanceOf[js.Any])
+    
+    inline def setAppiumColonlaunchTimeoutUndefined: Self = StObject.set(x, "appium:launchTimeout", js.undefined)
     
     inline def setAppiumColonlaunchWithIDB(value: Boolean): Self = StObject.set(x, "appium:launchWithIDB", value.asInstanceOf[js.Any])
     
@@ -540,6 +580,10 @@ object AppiumXCUITestCapabilities {
     
     inline def setAppiumColonmjpegServerPortUndefined: Self = StObject.set(x, "appium:mjpegServerPort", js.undefined)
     
+    inline def setAppiumColonnativeInstrumentsLib(value: Boolean): Self = StObject.set(x, "appium:nativeInstrumentsLib", value.asInstanceOf[js.Any])
+    
+    inline def setAppiumColonnativeInstrumentsLibUndefined: Self = StObject.set(x, "appium:nativeInstrumentsLib", js.undefined)
+    
     inline def setAppiumColonnativeTyping(value: Boolean): Self = StObject.set(x, "appium:nativeTyping", value.asInstanceOf[js.Any])
     
     inline def setAppiumColonnativeTypingUndefined: Self = StObject.set(x, "appium:nativeTyping", js.undefined)
@@ -552,9 +596,11 @@ object AppiumXCUITestCapabilities {
     
     inline def setAppiumColonnativeWebTapUndefined: Self = StObject.set(x, "appium:nativeWebTap", js.undefined)
     
-    inline def setAppiumColonotherApps(value: String): Self = StObject.set(x, "appium:otherApps", value.asInstanceOf[js.Any])
+    inline def setAppiumColonotherApps(value: String | js.Array[String]): Self = StObject.set(x, "appium:otherApps", value.asInstanceOf[js.Any])
     
     inline def setAppiumColonotherAppsUndefined: Self = StObject.set(x, "appium:otherApps", js.undefined)
+    
+    inline def setAppiumColonotherAppsVarargs(value: String*): Self = StObject.set(x, "appium:otherApps", js.Array(value*))
     
     inline def setAppiumColonpermissions(value: String): Self = StObject.set(x, "appium:permissions", value.asInstanceOf[js.Any])
     
@@ -652,6 +698,14 @@ object AppiumXCUITestCapabilities {
     
     inline def setAppiumColonscreenshotQualityUndefined: Self = StObject.set(x, "appium:screenshotQuality", js.undefined)
     
+    inline def setAppiumColonscreenshotWaitTimeout(value: Double): Self = StObject.set(x, "appium:screenshotWaitTimeout", value.asInstanceOf[js.Any])
+    
+    inline def setAppiumColonscreenshotWaitTimeoutUndefined: Self = StObject.set(x, "appium:screenshotWaitTimeout", js.undefined)
+    
+    inline def setAppiumColonsendKeyStrategy(value: String): Self = StObject.set(x, "appium:sendKeyStrategy", value.asInstanceOf[js.Any])
+    
+    inline def setAppiumColonsendKeyStrategyUndefined: Self = StObject.set(x, "appium:sendKeyStrategy", js.undefined)
+    
     inline def setAppiumColonshouldTerminateApp(value: Boolean): Self = StObject.set(x, "appium:shouldTerminateApp", value.asInstanceOf[js.Any])
     
     inline def setAppiumColonshouldTerminateAppUndefined: Self = StObject.set(x, "appium:shouldTerminateApp", js.undefined)
@@ -743,6 +797,10 @@ object AppiumXCUITestCapabilities {
     inline def setAppiumColonuseXctestrunFile(value: Boolean): Self = StObject.set(x, "appium:useXctestrunFile", value.asInstanceOf[js.Any])
     
     inline def setAppiumColonuseXctestrunFileUndefined: Self = StObject.set(x, "appium:useXctestrunFile", js.undefined)
+    
+    inline def setAppiumColonwaitForAppScript(value: String): Self = StObject.set(x, "appium:waitForAppScript", value.asInstanceOf[js.Any])
+    
+    inline def setAppiumColonwaitForAppScriptUndefined: Self = StObject.set(x, "appium:waitForAppScript", js.undefined)
     
     inline def setAppiumColonwaitForIdleTimeout(value: Double): Self = StObject.set(x, "appium:waitForIdleTimeout", value.asInstanceOf[js.Any])
     

@@ -12,22 +12,22 @@ trait Principal extends StObject {
   var creationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * Indicates whether the principal belongs to the same organization in Organizations as the Amazon Web Services account that owns the resource share.
+    * Indicates the relationship between the Amazon Web Services account the principal belongs to and the account that owns the resource share:    True – The two accounts belong to same organization.    False – The two accounts do not belong to the same organization.  
     */
   var external: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The ID of the principal.
+    * The ID of the principal that can be associated with a resource share.
     */
   var id: js.UndefOr[String] = js.undefined
   
   /**
-    * The date and time when the association was last updated.
+    * The date and time when the association between the resource share and the principal was last updated.
     */
   var lastUpdatedTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The Amazon Resoure Name (ARN) of a resource share the principal is associated with.
+    * The Amazon Resource Name (ARN) of a resource share the principal is associated with.
     */
   var resourceShareArn: js.UndefOr[String] = js.undefined
 }

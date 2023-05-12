@@ -147,6 +147,182 @@ object materialsTexturesEquiRectangularCubeTextureMod {
             js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
           ]
     ) = this()
+    def this(
+      url: String,
+      scene: Scene,
+      size: Double,
+      noMipmap: Boolean,
+      gammaSpace: Boolean,
+      onLoad: Unit,
+      onError: Unit,
+      supersample: Boolean
+    ) = this()
+    def this(
+      url: String,
+      scene: Scene,
+      size: Double,
+      noMipmap: Boolean,
+      gammaSpace: Boolean,
+      onLoad: Unit,
+      onError: Nullable[
+            js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
+          ],
+      supersample: Boolean
+    ) = this()
+    def this(
+      url: String,
+      scene: Scene,
+      size: Double,
+      noMipmap: Boolean,
+      gammaSpace: Boolean,
+      onLoad: Nullable[js.Function0[Unit]],
+      onError: Unit,
+      supersample: Boolean
+    ) = this()
+    def this(
+      url: String,
+      scene: Scene,
+      size: Double,
+      noMipmap: Boolean,
+      gammaSpace: Boolean,
+      onLoad: Nullable[js.Function0[Unit]],
+      onError: Nullable[
+            js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
+          ],
+      supersample: Boolean
+    ) = this()
+    def this(
+      url: String,
+      scene: Scene,
+      size: Double,
+      noMipmap: Boolean,
+      gammaSpace: Unit,
+      onLoad: Unit,
+      onError: Unit,
+      supersample: Boolean
+    ) = this()
+    def this(
+      url: String,
+      scene: Scene,
+      size: Double,
+      noMipmap: Boolean,
+      gammaSpace: Unit,
+      onLoad: Unit,
+      onError: Nullable[
+            js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
+          ],
+      supersample: Boolean
+    ) = this()
+    def this(
+      url: String,
+      scene: Scene,
+      size: Double,
+      noMipmap: Boolean,
+      gammaSpace: Unit,
+      onLoad: Nullable[js.Function0[Unit]],
+      onError: Unit,
+      supersample: Boolean
+    ) = this()
+    def this(
+      url: String,
+      scene: Scene,
+      size: Double,
+      noMipmap: Boolean,
+      gammaSpace: Unit,
+      onLoad: Nullable[js.Function0[Unit]],
+      onError: Nullable[
+            js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
+          ],
+      supersample: Boolean
+    ) = this()
+    def this(
+      url: String,
+      scene: Scene,
+      size: Double,
+      noMipmap: Unit,
+      gammaSpace: Boolean,
+      onLoad: Unit,
+      onError: Unit,
+      supersample: Boolean
+    ) = this()
+    def this(
+      url: String,
+      scene: Scene,
+      size: Double,
+      noMipmap: Unit,
+      gammaSpace: Boolean,
+      onLoad: Unit,
+      onError: Nullable[
+            js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
+          ],
+      supersample: Boolean
+    ) = this()
+    def this(
+      url: String,
+      scene: Scene,
+      size: Double,
+      noMipmap: Unit,
+      gammaSpace: Boolean,
+      onLoad: Nullable[js.Function0[Unit]],
+      onError: Unit,
+      supersample: Boolean
+    ) = this()
+    def this(
+      url: String,
+      scene: Scene,
+      size: Double,
+      noMipmap: Unit,
+      gammaSpace: Boolean,
+      onLoad: Nullable[js.Function0[Unit]],
+      onError: Nullable[
+            js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
+          ],
+      supersample: Boolean
+    ) = this()
+    def this(
+      url: String,
+      scene: Scene,
+      size: Double,
+      noMipmap: Unit,
+      gammaSpace: Unit,
+      onLoad: Unit,
+      onError: Unit,
+      supersample: Boolean
+    ) = this()
+    def this(
+      url: String,
+      scene: Scene,
+      size: Double,
+      noMipmap: Unit,
+      gammaSpace: Unit,
+      onLoad: Unit,
+      onError: Nullable[
+            js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
+          ],
+      supersample: Boolean
+    ) = this()
+    def this(
+      url: String,
+      scene: Scene,
+      size: Double,
+      noMipmap: Unit,
+      gammaSpace: Unit,
+      onLoad: Nullable[js.Function0[Unit]],
+      onError: Unit,
+      supersample: Boolean
+    ) = this()
+    def this(
+      url: String,
+      scene: Scene,
+      size: Double,
+      noMipmap: Unit,
+      gammaSpace: Unit,
+      onLoad: Nullable[js.Function0[Unit]],
+      onError: Nullable[
+            js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
+          ],
+      supersample: Boolean
+    ) = this()
     
     /** The buffer of the image. */
     /* private */ var _buffer: Any = js.native
@@ -181,6 +357,9 @@ object materialsTexturesEquiRectangularCubeTextureMod {
     
     /** The size of the cubemap. */
     /* private */ var _size: Any = js.native
+    
+    /** Whether to supersample the input image */
+    /* private */ var _supersample: Any = js.native
     
     /** The width of the input image. */
     /* private */ var _width: Any = js.native

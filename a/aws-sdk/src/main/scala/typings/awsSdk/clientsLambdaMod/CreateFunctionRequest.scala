@@ -22,7 +22,7 @@ trait CreateFunctionRequest extends StObject {
   var CodeSigningConfigArn: js.UndefOr[typings.awsSdk.clientsLambdaMod.CodeSigningConfigArn] = js.undefined
   
   /**
-    * A dead letter queue configuration that specifies the queue or topic where Lambda sends asynchronous events when they fail processing. For more information, see Dead Letter Queues.
+    * A dead-letter queue configuration that specifies the queue or topic where Lambda sends asynchronous events when they fail processing. For more information, see Dead-letter queues.
     */
   var DeadLetterConfig: js.UndefOr[typings.awsSdk.clientsLambdaMod.DeadLetterConfig] = js.undefined
   
@@ -37,7 +37,7 @@ trait CreateFunctionRequest extends StObject {
   var Environment: js.UndefOr[typings.awsSdk.clientsLambdaMod.Environment] = js.undefined
   
   /**
-    * The size of the function’s /tmp directory in MB. The default value is 512, but can be any whole number between 512 and 10240 MB.
+    * The size of the function's /tmp directory in MB. The default value is 512, but can be any whole number between 512 and 10,240 MB.
     */
   var EphemeralStorage: js.UndefOr[typings.awsSdk.clientsLambdaMod.EphemeralStorage] = js.undefined
   
@@ -47,12 +47,12 @@ trait CreateFunctionRequest extends StObject {
   var FileSystemConfigs: js.UndefOr[FileSystemConfigList] = js.undefined
   
   /**
-    * The name of the Lambda function.  Name formats     Function name - my-function.    Function ARN - arn:aws:lambda:us-west-2:123456789012:function:my-function.    Partial ARN - 123456789012:function:my-function.   The length constraint applies only to the full ARN. If you specify only the function name, it is limited to 64 characters in length.
+    * The name of the Lambda function.  Name formats     Function name – my-function.    Function ARN – arn:aws:lambda:us-west-2:123456789012:function:my-function.    Partial ARN – 123456789012:function:my-function.   The length constraint applies only to the full ARN. If you specify only the function name, it is limited to 64 characters in length.
     */
   var FunctionName: typings.awsSdk.clientsLambdaMod.FunctionName
   
   /**
-    * The name of the method within your code that Lambda calls to execute your function. Handler is required if the deployment package is a .zip file archive. The format includes the file name. It can also include namespaces and other qualifiers, depending on the runtime. For more information, see Programming Model.
+    * The name of the method within your code that Lambda calls to run your function. Handler is required if the deployment package is a .zip file archive. The format includes the file name. It can also include namespaces and other qualifiers, depending on the runtime. For more information, see Lambda programming model.
     */
   var Handler: js.UndefOr[typings.awsSdk.clientsLambdaMod.Handler] = js.undefined
   
@@ -62,7 +62,7 @@ trait CreateFunctionRequest extends StObject {
   var ImageConfig: js.UndefOr[typings.awsSdk.clientsLambdaMod.ImageConfig] = js.undefined
   
   /**
-    * The ARN of the Amazon Web Services Key Management Service (KMS) key that's used to encrypt your function's environment variables. If it's not provided, Lambda uses a default service key.
+    * The ARN of the Key Management Service (KMS) customer managed key that's used to encrypt your function's environment variables. When Lambda SnapStart is activated, this key is also used to encrypt your function's snapshot. If you don't provide a customer managed key, Lambda uses a default service key.
     */
   var KMSKeyArn: js.UndefOr[typings.awsSdk.clientsLambdaMod.KMSKeyArn] = js.undefined
   
@@ -77,7 +77,7 @@ trait CreateFunctionRequest extends StObject {
   var MemorySize: js.UndefOr[typings.awsSdk.clientsLambdaMod.MemorySize] = js.undefined
   
   /**
-    * The type of deployment package. Set to Image for container image and set Zip for ZIP archive.
+    * The type of deployment package. Set to Image for container image and set to Zip for .zip file archive.
     */
   var PackageType: js.UndefOr[typings.awsSdk.clientsLambdaMod.PackageType] = js.undefined
   
@@ -92,9 +92,14 @@ trait CreateFunctionRequest extends StObject {
   var Role: RoleArn
   
   /**
-    * The identifier of the function's runtime. Runtime is required if the deployment package is a .zip file archive. 
+    * The identifier of the function's runtime. Runtime is required if the deployment package is a .zip file archive. The following list includes deprecated runtimes. For more information, see Runtime deprecation policy.
     */
   var Runtime: js.UndefOr[typings.awsSdk.clientsLambdaMod.Runtime] = js.undefined
+  
+  /**
+    * The function's SnapStart setting.
+    */
+  var SnapStart: js.UndefOr[typings.awsSdk.clientsLambdaMod.SnapStart] = js.undefined
   
   /**
     * A list of tags to apply to the function.
@@ -102,7 +107,7 @@ trait CreateFunctionRequest extends StObject {
   var Tags: js.UndefOr[typings.awsSdk.clientsLambdaMod.Tags] = js.undefined
   
   /**
-    * The amount of time (in seconds) that Lambda allows a function to run before stopping it. The default is 3 seconds. The maximum allowed value is 900 seconds. For additional information, see Lambda execution environment.
+    * The amount of time (in seconds) that Lambda allows a function to run before stopping it. The default is 3 seconds. The maximum allowed value is 900 seconds. For more information, see Lambda execution environment.
     */
   var Timeout: js.UndefOr[typings.awsSdk.clientsLambdaMod.Timeout] = js.undefined
   
@@ -112,7 +117,7 @@ trait CreateFunctionRequest extends StObject {
   var TracingConfig: js.UndefOr[typings.awsSdk.clientsLambdaMod.TracingConfig] = js.undefined
   
   /**
-    * For network connectivity to Amazon Web Services resources in a VPC, specify a list of security groups and subnets in the VPC. When you connect a function to a VPC, it can only access resources and the internet through that VPC. For more information, see VPC Settings.
+    * For network connectivity to Amazon Web Services resources in a VPC, specify a list of security groups and subnets in the VPC. When you connect a function to a VPC, it can access resources and the internet only through that VPC. For more information, see Configuring a Lambda function to access resources in a VPC.
     */
   var VpcConfig: js.UndefOr[typings.awsSdk.clientsLambdaMod.VpcConfig] = js.undefined
 }
@@ -197,6 +202,10 @@ object CreateFunctionRequest {
     inline def setRuntime(value: Runtime): Self = StObject.set(x, "Runtime", value.asInstanceOf[js.Any])
     
     inline def setRuntimeUndefined: Self = StObject.set(x, "Runtime", js.undefined)
+    
+    inline def setSnapStart(value: SnapStart): Self = StObject.set(x, "SnapStart", value.asInstanceOf[js.Any])
+    
+    inline def setSnapStartUndefined: Self = StObject.set(x, "SnapStart", js.undefined)
     
     inline def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     

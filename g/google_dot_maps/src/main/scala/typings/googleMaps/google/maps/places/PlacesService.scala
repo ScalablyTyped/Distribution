@@ -4,10 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Contains methods related to searching for places and retrieving details
-  * about a place.
-  */
 trait PlacesService extends StObject {
   
   /**

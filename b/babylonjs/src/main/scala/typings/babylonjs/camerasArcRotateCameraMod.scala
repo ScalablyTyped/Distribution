@@ -159,7 +159,7 @@ object camerasArcRotateCameraMod {
     
     /**
       * Gets the auto rotation behavior of the camera if it has been enabled.
-      * @see https://doc.babylonjs.com/how_to/camera_behaviors#autorotation-behavior
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/behaviors/cameraBehaviors#autorotation-behavior
       */
     def autoRotationBehavior: Nullable[AutoRotationBehavior] = js.native
     
@@ -170,20 +170,20 @@ object camerasArcRotateCameraMod {
     
     /**
       * Gets the bouncing behavior of the camera if it has been enabled.
-      * @see https://doc.babylonjs.com/how_to/camera_behaviors#bouncing-behavior
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/behaviors/cameraBehaviors#bouncing-behavior
       */
     def bouncingBehavior: Nullable[BouncingBehavior] = js.native
     
     /**
       * Defines whether the camera should check collision with the objects oh the scene.
-      * @see https://doc.babylonjs.com/babylon101/cameras,_mesh_collisions_and_gravity#how-can-i-do-this
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/cameras/camera_collisions#how-can-i-do-this-
       */
     var checkCollisions: Boolean = js.native
     
     /**
       * Defines the collision radius of the camera.
       * This simulates a sphere around the camera.
-      * @see https://doc.babylonjs.com/babylon101/cameras,_mesh_collisions_and_gravity#arcrotatecamera
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/cameras/camera_collisions#arcrotatecamera
       */
     var collisionRadius: Vector3 = js.native
     
@@ -200,7 +200,7 @@ object camerasArcRotateCameraMod {
     
     /**
       * Gets the framing behavior of the camera if it has been enabled.
-      * @see https://doc.babylonjs.com/how_to/camera_behaviors#framing-behavior
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/behaviors/cameraBehaviors#framing-behavior
       */
     def framingBehavior: Nullable[FramingBehavior] = js.native
     
@@ -272,7 +272,7 @@ object camerasArcRotateCameraMod {
       * Minimum allowed angle on the latitudinal axis.
       * This can help limiting how the Camera is able to move in the scene.
       */
-    var lowerBetaLimit: Double = js.native
+    var lowerBetaLimit: Nullable[Double] = js.native
     
     /**
       * Minimum allowed distance of the camera to the target (The camera can not get closer).
@@ -444,7 +444,7 @@ object camerasArcRotateCameraMod {
       * Maximum allowed angle on the latitudinal axis.
       * This can help limiting how the Camera is able to move in the scene.
       */
-    var upperBetaLimit: Double = js.native
+    var upperBetaLimit: Nullable[Double] = js.native
     
     /**
       * Maximum allowed distance of the camera to the target (The camera can not get further).
@@ -454,21 +454,21 @@ object camerasArcRotateCameraMod {
     
     /**
       * Defines if the auto rotation behavior of the camera is enabled on the camera.
-      * @see https://doc.babylonjs.com/how_to/camera_behaviors#autorotation-behavior
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/behaviors/cameraBehaviors#autorotation-behavior
       */
     def useAutoRotationBehavior: Boolean = js.native
     def useAutoRotationBehavior_=(value: Boolean): Unit = js.native
     
     /**
       * Defines if the bouncing behavior of the camera is enabled on the camera.
-      * @see https://doc.babylonjs.com/how_to/camera_behaviors#bouncing-behavior
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/behaviors/cameraBehaviors#bouncing-behavior
       */
     def useBouncingBehavior: Boolean = js.native
     def useBouncingBehavior_=(value: Boolean): Unit = js.native
     
     /**
       * Defines if the framing behavior of the camera is enabled on the camera.
-      * @see https://doc.babylonjs.com/how_to/camera_behaviors#framing-behavior
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/behaviors/cameraBehaviors#framing-behavior
       */
     def useFramingBehavior: Boolean = js.native
     def useFramingBehavior_=(value: Boolean): Unit = js.native

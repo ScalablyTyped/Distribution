@@ -7,23 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetResponses200ContentApplicationjsonRunners extends StObject {
   
   /**
-    * Lists the self-hosted runners that are in a specific enterprise group.
+    * List self-hosted runners for an organization
+    * @description Lists all self-hosted runners configured in an organization.
     *
-    * You must authenticate using an access token with the `manage_runners:enterprise` scope to use this endpoint.
+    * You must authenticate using an access token with the `admin:org` scope to use this endpoint.
     */
   var get: Responses200ContentApplicationjsonRunners
-  
-  /**
-    * Replaces the list of self-hosted runners that are part of an enterprise runner group.
-    *
-    * You must authenticate using an access token with the `manage_runners:enterprise` scope to use this endpoint.
-    */
-  var put: RequestBodyContentApplicationjsonRunnersArray
 }
 object GetResponses200ContentApplicationjsonRunners {
   
-  inline def apply(get: Responses200ContentApplicationjsonRunners, put: RequestBodyContentApplicationjsonRunnersArray): GetResponses200ContentApplicationjsonRunners = {
-    val __obj = js.Dynamic.literal(get = get.asInstanceOf[js.Any], put = put.asInstanceOf[js.Any])
+  inline def apply(get: Responses200ContentApplicationjsonRunners): GetResponses200ContentApplicationjsonRunners = {
+    val __obj = js.Dynamic.literal(get = get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetResponses200ContentApplicationjsonRunners]
   }
   
@@ -31,7 +25,5 @@ object GetResponses200ContentApplicationjsonRunners {
   implicit open class MutableBuilder[Self <: GetResponses200ContentApplicationjsonRunners] (val x: Self) extends AnyVal {
     
     inline def setGet(value: Responses200ContentApplicationjsonRunners): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
-    
-    inline def setPut(value: RequestBodyContentApplicationjsonRunnersArray): Self = StObject.set(x, "put", value.asInstanceOf[js.Any])
   }
 }

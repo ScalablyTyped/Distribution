@@ -110,6 +110,16 @@ object distRandomMod {
     def boolean(): Boolean = js.native
     
     /**
+      * Returns an item chosen uniformly at trandom from the given array.
+      *
+      * Convence wrapper around `random.uniformInt()`
+      *
+      * @param {Array<T>} [array] - Lower bound (integer, inclusive)
+      * @return {T | undefined}
+      */
+    def choice[T](array: js.Array[T]): js.UndefOr[T] = js.native
+    
+    /**
       * Creates a new `Random` instance, optionally specifying parameters to
       * set a new seed.
       *

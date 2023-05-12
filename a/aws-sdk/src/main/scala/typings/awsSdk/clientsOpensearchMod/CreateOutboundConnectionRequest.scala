@@ -12,6 +12,11 @@ trait CreateOutboundConnectionRequest extends StObject {
   var ConnectionAlias: typings.awsSdk.clientsOpensearchMod.ConnectionAlias
   
   /**
+    * The connection mode.
+    */
+  var ConnectionMode: js.UndefOr[typings.awsSdk.clientsOpensearchMod.ConnectionMode] = js.undefined
+  
+  /**
     * Name and Region of the source (local) domain.
     */
   var LocalDomainInfo: DomainInformationContainer
@@ -36,6 +41,10 @@ object CreateOutboundConnectionRequest {
   implicit open class MutableBuilder[Self <: CreateOutboundConnectionRequest] (val x: Self) extends AnyVal {
     
     inline def setConnectionAlias(value: ConnectionAlias): Self = StObject.set(x, "ConnectionAlias", value.asInstanceOf[js.Any])
+    
+    inline def setConnectionMode(value: ConnectionMode): Self = StObject.set(x, "ConnectionMode", value.asInstanceOf[js.Any])
+    
+    inline def setConnectionModeUndefined: Self = StObject.set(x, "ConnectionMode", js.undefined)
     
     inline def setLocalDomainInfo(value: DomainInformationContainer): Self = StObject.set(x, "LocalDomainInfo", value.asInstanceOf[js.Any])
     

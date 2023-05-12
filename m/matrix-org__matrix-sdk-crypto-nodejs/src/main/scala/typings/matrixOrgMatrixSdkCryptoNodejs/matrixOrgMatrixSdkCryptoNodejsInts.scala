@@ -4,7 +4,8 @@ import typings.matrixOrgMatrixSdkCryptoNodejs.mod.DeviceKeyAlgorithmName
 import typings.matrixOrgMatrixSdkCryptoNodejs.mod.EncryptionAlgorithm
 import typings.matrixOrgMatrixSdkCryptoNodejs.mod.HistoryVisibility
 import typings.matrixOrgMatrixSdkCryptoNodejs.mod.RequestType
-import typings.matrixOrgMatrixSdkCryptoNodejs.mod.VerificationState
+import typings.matrixOrgMatrixSdkCryptoNodejs.mod.ShieldColor
+import typings.matrixOrgMatrixSdkCryptoNodejs.mod.StoreType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +19,8 @@ object matrixOrgMatrixSdkCryptoNodejsInts {
        with EncryptionAlgorithm
        with HistoryVisibility
        with RequestType
-       with VerificationState
+       with ShieldColor
+       with StoreType
   inline def `0`: `0` = 0.asInstanceOf[`0`]
   
   @js.native
@@ -28,7 +30,8 @@ object matrixOrgMatrixSdkCryptoNodejsInts {
        with EncryptionAlgorithm
        with HistoryVisibility
        with RequestType
-       with VerificationState
+       with ShieldColor
+       with StoreType
   inline def `1`: `1` = 1.asInstanceOf[`1`]
   
   @js.native
@@ -37,7 +40,7 @@ object matrixOrgMatrixSdkCryptoNodejsInts {
        with DeviceKeyAlgorithmName
        with HistoryVisibility
        with RequestType
-       with VerificationState
+       with ShieldColor
   inline def `2`: `2` = 2.asInstanceOf[`2`]
   
   @js.native

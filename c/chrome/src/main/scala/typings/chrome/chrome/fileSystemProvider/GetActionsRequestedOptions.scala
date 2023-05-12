@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GetActionsRequestedOptions extends StObject {
   
-  /** The path of the entry to return the list of actions for. */
-  var entryPath: String
+  /** List of paths of entries for the list of actions. */
+  var entryPaths: js.Array[String]
   
   /** The identifier of the file system related to this operation. */
   var fileSystemId: String
@@ -17,15 +17,17 @@ trait GetActionsRequestedOptions extends StObject {
 }
 object GetActionsRequestedOptions {
   
-  inline def apply(entryPath: String, fileSystemId: String, requestId: Double): GetActionsRequestedOptions = {
-    val __obj = js.Dynamic.literal(entryPath = entryPath.asInstanceOf[js.Any], fileSystemId = fileSystemId.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any])
+  inline def apply(entryPaths: js.Array[String], fileSystemId: String, requestId: Double): GetActionsRequestedOptions = {
+    val __obj = js.Dynamic.literal(entryPaths = entryPaths.asInstanceOf[js.Any], fileSystemId = fileSystemId.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetActionsRequestedOptions]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: GetActionsRequestedOptions] (val x: Self) extends AnyVal {
     
-    inline def setEntryPath(value: String): Self = StObject.set(x, "entryPath", value.asInstanceOf[js.Any])
+    inline def setEntryPaths(value: js.Array[String]): Self = StObject.set(x, "entryPaths", value.asInstanceOf[js.Any])
+    
+    inline def setEntryPathsVarargs(value: String*): Self = StObject.set(x, "entryPaths", js.Array(value*))
     
     inline def setFileSystemId(value: String): Self = StObject.set(x, "fileSystemId", value.asInstanceOf[js.Any])
     

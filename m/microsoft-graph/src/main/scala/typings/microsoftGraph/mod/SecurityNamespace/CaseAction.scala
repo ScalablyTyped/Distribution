@@ -14,6 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.microsoftGraph.microsoftGraphStrings.addToReviewSet
   - typings.microsoftGraph.microsoftGraphStrings.holdUpdate
   - typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue_
+  - typings.microsoftGraph.microsoftGraphStrings.purgeData
 */
 trait CaseAction extends StObject
 object CaseAction {
@@ -31,6 +32,8 @@ object CaseAction {
   inline def holdUpdate: typings.microsoftGraph.microsoftGraphStrings.holdUpdate = "holdUpdate".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.holdUpdate]
   
   inline def index: typings.microsoftGraph.microsoftGraphStrings.index = "index".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.index]
+  
+  inline def purgeData: typings.microsoftGraph.microsoftGraphStrings.purgeData = "purgeData".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.purgeData]
   
   inline def unknownFutureValue: unknownFutureValue_ = "unknownFutureValue".asInstanceOf[unknownFutureValue_]
 }

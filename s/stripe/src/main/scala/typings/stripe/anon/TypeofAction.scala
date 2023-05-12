@@ -8,12 +8,18 @@ trait TypeofAction extends StObject {
   
   val ProcessPaymentIntent: TypeofProcessPaymentInten
   
+  val RefundPayment: Any
+  
   val SetReaderDisplay: TypeofSetReaderDisplay
 }
 object TypeofAction {
   
-  inline def apply(ProcessPaymentIntent: TypeofProcessPaymentInten, SetReaderDisplay: TypeofSetReaderDisplay): TypeofAction = {
-    val __obj = js.Dynamic.literal(ProcessPaymentIntent = ProcessPaymentIntent.asInstanceOf[js.Any], SetReaderDisplay = SetReaderDisplay.asInstanceOf[js.Any])
+  inline def apply(
+    ProcessPaymentIntent: TypeofProcessPaymentInten,
+    RefundPayment: Any,
+    SetReaderDisplay: TypeofSetReaderDisplay
+  ): TypeofAction = {
+    val __obj = js.Dynamic.literal(ProcessPaymentIntent = ProcessPaymentIntent.asInstanceOf[js.Any], RefundPayment = RefundPayment.asInstanceOf[js.Any], SetReaderDisplay = SetReaderDisplay.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofAction]
   }
   
@@ -21,6 +27,8 @@ object TypeofAction {
   implicit open class MutableBuilder[Self <: TypeofAction] (val x: Self) extends AnyVal {
     
     inline def setProcessPaymentIntent(value: TypeofProcessPaymentInten): Self = StObject.set(x, "ProcessPaymentIntent", value.asInstanceOf[js.Any])
+    
+    inline def setRefundPayment(value: Any): Self = StObject.set(x, "RefundPayment", value.asInstanceOf[js.Any])
     
     inline def setSetReaderDisplay(value: TypeofSetReaderDisplay): Self = StObject.set(x, "SetReaderDisplay", value.asInstanceOf[js.Any])
   }

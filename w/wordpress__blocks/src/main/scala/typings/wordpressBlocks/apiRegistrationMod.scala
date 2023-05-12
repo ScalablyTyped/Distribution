@@ -4,13 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Partial
 import typings.std.Record
 import typings.wordpressBlocks.anon.Icon
-import typings.wordpressBlocks.mod.Block
-import typings.wordpressBlocks.mod.BlockAttributes
-import typings.wordpressBlocks.mod.BlockConfiguration
-import typings.wordpressBlocks.mod.BlockInstance
-import typings.wordpressBlocks.mod.BlockStyle
-import typings.wordpressBlocks.mod.BlockVariation
-import typings.wordpressBlocks.mod.BlockVariationScope
 import typings.wordpressBlocks.wordpressBlocksStrings.align
 import typings.wordpressBlocks.wordpressBlocksStrings.alignWide
 import typings.wordpressBlocks.wordpressBlocksStrings.anchor

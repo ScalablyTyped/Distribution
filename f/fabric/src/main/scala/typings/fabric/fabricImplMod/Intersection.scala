@@ -48,5 +48,5 @@ object Intersection {
   /**
     * Checks if polygon intersects rectangle
     */
-  inline def intersectPolygonRectangle(points: js.Array[Point], r1: Double, r2: Double): Intersection = (^.asInstanceOf[js.Dynamic].applyDynamic("intersectPolygonRectangle")(points.asInstanceOf[js.Any], r1.asInstanceOf[js.Any], r2.asInstanceOf[js.Any])).asInstanceOf[Intersection]
+  inline def intersectPolygonRectangle(points: js.Array[Point], r1: Point, r2: Point): Intersection = (^.asInstanceOf[js.Dynamic].applyDynamic("intersectPolygonRectangle")(points.asInstanceOf[js.Any], r1.asInstanceOf[js.Any], r2.asInstanceOf[js.Any])).asInstanceOf[Intersection]
 }

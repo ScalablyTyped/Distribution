@@ -1,5 +1,9 @@
 package typings.reactGridLayout
 
+import typings.reactGridLayout.reactGridLayoutInts.`0`
+import typings.reactGridLayout.reactGridLayoutInts.`1`
+import typings.reactGridLayout.reactGridLayoutInts.`2`
+import typings.reactGridLayout.reactGridLayoutInts.`3`
 import typings.std.DOMHighResTimeStamp
 import typings.std.EventTarget
 import org.scalablytyped.runtime.StObject
@@ -65,16 +69,16 @@ object anon {
   trait layerXnumberlayerYnumberE extends StObject {
     
     /* standard dom */
-    val AT_TARGET: Double = js.native
+    val AT_TARGET: `2` = js.native
     
     /* standard dom */
-    val BUBBLING_PHASE: Double = js.native
+    val BUBBLING_PHASE: `3` = js.native
     
     /* standard dom */
-    val CAPTURING_PHASE: Double = js.native
+    val CAPTURING_PHASE: `1` = js.native
     
     /* standard dom */
-    val NONE: Double = js.native
+    val NONE: `0` = js.native
     
     /** Returns true or false depending on how event was initialized. True if event goes through its target's ancestors in reverse tree order, and false otherwise. */
     /* standard dom */

@@ -1,5 +1,6 @@
 package typings.pixiApp
 
+import typings.pixiColor.libColorMod.ColorSource
 import typings.pixiCore.libAutoDetectRendererMod.IRendererOptionsAuto
 import typings.pixiCore.libIrendererMod.IRenderer
 import typings.pixiCore.mod.Rectangle
@@ -7,6 +8,8 @@ import typings.pixiDisplay.libDisplayObjectMod.DisplayObject
 import typings.pixiDisplay.libDisplayObjectMod.IDestroyOptions
 import typings.pixiDisplay.mod.Container
 import typings.pixiSettings.libIcanvasMod.ICanvas
+import typings.std.Partial
+import typings.std.WebGLPowerPreference
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,42 +20,10 @@ object libApplicationMod {
   - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify GlobalMixins.Application * / any */ @JSImport("@pixi/app/lib/Application", "Application")
   @js.native
   /**
-    * @param {object} [options] - The optional renderer parameters.
-    * @param {boolean} [options.autoStart=true] - Automatically starts the rendering after the construction.
-    *     **Note**: Setting this parameter to false does NOT stop the shared ticker even if you set
-    *     options.sharedTicker to true in case that it is already started. Stop it by your own.
-    * @param {number} [options.width=800] - The width of the renderers view.
-    * @param {number} [options.height=600] - The height of the renderers view.
-    * @param {PIXI.ICanvas} [options.view] - The canvas to use as a view, optional.
-    * @param {boolean} [options.useContextAlpha=true] - Pass-through value for canvas' context `alpha` property.
-    *   If you want to set transparency, please use `backgroundAlpha`. This option is for cases where the
-    *   canvas needs to be opaque, possibly for performance reasons on some older devices.
-    * @param {boolean} [options.autoDensity=false] - Resizes renderer view in CSS pixels to allow for
-    *   resolutions other than 1.
-    * @param {boolean} [options.antialias=false] - Sets antialias
-    * @param {boolean} [options.preserveDrawingBuffer=false] - Enables drawing buffer preservation, enable this if you
-    *  need to call toDataURL on the WebGL context.
-    * @param {number} [options.resolution=PIXI.settings.RESOLUTION] - The resolution / device pixel ratio of the renderer.
-    * @param {boolean} [options.forceCanvas=false] - prevents selection of WebGL renderer, even if such is present, this
-    *   option only is available when using **pixi.js-legacy** or **@pixi/canvas-renderer** modules, otherwise
-    *   it is ignored.
-    * @param {number|string} [options.backgroundColor=0x000000] - The background color of the rendered area
-    *  (shown if not transparent). Also, accepts hex strings or color names (e.g., 'white').
-    * @param {number|string} [options.background] - Alias for `options.backgroundColor`.
-    * @param {number} [options.backgroundAlpha=1] - Value from 0 (fully transparent) to 1 (fully opaque).
-    * @param {boolean} [options.clearBeforeRender=true] - This sets if the renderer will clear the canvas or
-    *   not before the new render pass.
-    * @param {string} [options.powerPreference] - Parameter passed to webgl context, set to "high-performance"
-    *  for devices with dual graphics card. **(WebGL only)**.
-    * @param {boolean} [options.sharedTicker=false] - `true` to use PIXI.Ticker.shared, `false` to create new ticker.
-    *  If set to false, you cannot register a handler to occur before anything that runs on the shared ticker.
-    *  The system ticker will always run before both the shared ticker and the app ticker.
-    * @param {boolean} [options.sharedLoader=false] - `true` to use PIXI.Loader.shared, `false` to create new Loader.
-    * @param {Window|HTMLElement} [options.resizeTo] - Element to automatically resize stage to.
-    * @param {boolean} [options.hello=false] - Logs renderer type and version.
+    * @param options - The optional application and renderer parameters.
     */
   open class Application[VIEW /* <: ICanvas */] () extends StObject {
-    def this(options: IApplicationOptions) = this()
+    def this(options: Partial[IApplicationOptions]) = this()
     
     /**
       * Destroy and don't use after this.
@@ -122,8 +93,17 @@ object libApplicationMod {
        with IRendererOptionsAuto
   object IApplicationOptions {
     
-    inline def apply(): IApplicationOptions = {
-      val __obj = js.Dynamic.literal()
+    inline def apply(
+      antialias: Boolean,
+      backgroundAlpha: Double,
+      backgroundColor: ColorSource,
+      clearBeforeRender: Boolean,
+      hello: Boolean,
+      powerPreference: WebGLPowerPreference,
+      premultipliedAlpha: Boolean,
+      preserveDrawingBuffer: Boolean
+    ): IApplicationOptions = {
+      val __obj = js.Dynamic.literal(antialias = antialias.asInstanceOf[js.Any], backgroundAlpha = backgroundAlpha.asInstanceOf[js.Any], backgroundColor = backgroundColor.asInstanceOf[js.Any], clearBeforeRender = clearBeforeRender.asInstanceOf[js.Any], hello = hello.asInstanceOf[js.Any], powerPreference = powerPreference.asInstanceOf[js.Any], premultipliedAlpha = premultipliedAlpha.asInstanceOf[js.Any], preserveDrawingBuffer = preserveDrawingBuffer.asInstanceOf[js.Any], context = null)
       __obj.asInstanceOf[IApplicationOptions]
     }
   }
@@ -138,11 +118,11 @@ object libApplicationMod {
       * Passes in `options` as the only argument, which are Application constructor options.
       * @param {object} options - Application options.
       */
-    def init(options: IApplicationOptions): Unit
+    def init(options: Partial[IApplicationOptions]): Unit
   }
   object IApplicationPlugin {
     
-    inline def apply(destroy: () => Unit, init: IApplicationOptions => Unit): IApplicationPlugin = {
+    inline def apply(destroy: () => Unit, init: Partial[IApplicationOptions] => Unit): IApplicationPlugin = {
       val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), init = js.Any.fromFunction1(init))
       __obj.asInstanceOf[IApplicationPlugin]
     }
@@ -152,7 +132,7 @@ object libApplicationMod {
       
       inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
-      inline def setInit(value: IApplicationOptions => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
+      inline def setInit(value: Partial[IApplicationOptions] => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
     }
   }
 }

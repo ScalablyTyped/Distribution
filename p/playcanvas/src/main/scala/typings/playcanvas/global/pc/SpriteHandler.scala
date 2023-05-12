@@ -16,7 +16,7 @@ open class SpriteHandler protected ()
   /**
     * Create a new SpriteHandler instance.
     *
-    * @param {AppBase} app - The running {@link AppBase}.
+    * @param {import('../app-base.js').AppBase} app - The running {@link AppBase}.
     * @hideconstructor
     */
   def this(app: typings.playcanvas.mod.AppBase) = this()

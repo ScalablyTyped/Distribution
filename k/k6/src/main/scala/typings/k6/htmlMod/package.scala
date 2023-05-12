@@ -10,6 +10,6 @@ inline def parseHTML(html: String): Selection = ^.asInstanceOf[js.Dynamic].apply
 
 type Handler = js.Function2[/* index */ Double, /* element */ Element, Unit]
 
-type Mapper = js.Function2[/* index */ Double, /* element */ Element, Any]
+type Mapper = js.Function2[/* index */ Double, /* selection */ Selection, Any]
 
 type Tester = js.Function2[/* index */ Double, /* element */ Element, Boolean]

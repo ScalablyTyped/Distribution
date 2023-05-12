@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.BreakAfter
+import typings.csstype.mod.Property.PaddingTop
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,8 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `417` extends StObject {
   
   var value: js.UndefOr[
-    BreakAfter | (js.Array[
-      (Extract[js.UndefOr[BreakAfter | js.Array[NonNullable[js.UndefOr[BreakAfter]]]], String]) | NonNullable[js.UndefOr[BreakAfter]]
+    (PaddingTop[Double | String]) | (js.Array[
+      (Extract[
+        js.UndefOr[
+          (PaddingTop[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingTop[Double | String]]]])
+        ], 
+        String
+      ]) | (NonNullable[js.UndefOr[PaddingTop[Double | String]]])
     ])
   ] = js.native
 }

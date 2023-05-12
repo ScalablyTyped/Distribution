@@ -17,6 +17,7 @@ object mod {
   @js.native
   open class Validator protected () extends Script {
     def this(code: String) = this()
+    def this(code: String, options: String) = this()
     def this(code: String, options: ScriptOptions) = this()
     
     var sandbox: Context = js.native

@@ -6,7 +6,9 @@ import typings.relayRuntime.libStoreRelayStoreTypesMod.Environment
 import typings.relayRuntime.libStoreRelayStoreTypesMod.RecordSourceSelectorProxy
 import typings.relayRuntime.libStoreRelayStoreTypesMod.SelectorStoreUpdater
 import typings.relayRuntime.libUtilReaderNodeMod.ReaderFragment
+import typings.relayRuntime.libUtilReaderNodeMod.ReaderInlineDataFragment
 import typings.relayRuntime.libUtilRelayConcreteNodeMod.ConcreteRequest
+import typings.relayRuntime.libUtilRelayRuntimeTypesMod.CacheConfig
 import typings.relayRuntime.libUtilRelayRuntimeTypesMod.Disposable
 import typings.relayRuntime.libUtilRelayRuntimeTypesMod.OperationType
 import org.scalablytyped.runtime.StObject
@@ -21,11 +23,13 @@ object libSubscriptionRequestSubscriptionMod {
   
   inline def requestSubscription[TSubscription /* <: OperationType */](
     environment: Environment,
-    // tslint:disable-next-line no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
   config: GraphQLSubscriptionConfig[TSubscription]
   ): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("requestSubscription")(environment.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Disposable]
   
   trait GraphQLSubscriptionConfig[TSubscription /* <: OperationType */] extends StObject {
+    
+    var cacheConfig: js.UndefOr[CacheConfig] = js.undefined
     
     var configs: js.UndefOr[js.Array[DeclarativeMutationConfig]] = js.undefined
     
@@ -65,6 +69,10 @@ object libSubscriptionRequestSubscriptionMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: GraphQLSubscriptionConfig[?], TSubscription /* <: OperationType */] (val x: Self & GraphQLSubscriptionConfig[TSubscription]) extends AnyVal {
       
+      inline def setCacheConfig(value: CacheConfig): Self = StObject.set(x, "cacheConfig", value.asInstanceOf[js.Any])
+      
+      inline def setCacheConfigUndefined: Self = StObject.set(x, "cacheConfig", js.undefined)
+      
       inline def setConfigs(value: js.Array[DeclarativeMutationConfig]): Self = StObject.set(x, "configs", value.asInstanceOf[js.Any])
       
       inline def setConfigsUndefined: Self = StObject.set(x, "configs", js.undefined)
@@ -89,7 +97,7 @@ object libSubscriptionRequestSubscriptionMod {
       
       inline def setSubscription(value: GraphQLTaggedNode): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
       
-      inline def setSubscriptionFunction0(value: () => ReaderFragment | ConcreteRequest): Self = StObject.set(x, "subscription", js.Any.fromFunction0(value))
+      inline def setSubscriptionFunction0(value: () => ReaderFragment | ConcreteRequest | ReaderInlineDataFragment): Self = StObject.set(x, "subscription", js.Any.fromFunction0(value))
       
       inline def setUpdater(
         value: (/* store */ RecordSourceSelectorProxy[

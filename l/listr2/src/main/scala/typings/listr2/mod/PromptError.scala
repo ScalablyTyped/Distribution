@@ -5,13 +5,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** The internal error handling mechanism for prompts only. */
+/**
+  * Internal error handling mechanism for Listr prompts to identify the failing cause is coming from a prompt.
+  *
+  * @see {@link https://listr2.kilic.dev/task/prompts.html}
+  */
 @JSImport("listr2", "PromptError")
 @js.native
-open class PromptError protected ()
+open class PromptError ()
   extends StObject
-     with Error {
-  def this(message: String) = this()
+     with Error
+     with ListrTaskPrompt {
   
   /* standard es5 */
   /* CompleteClass */

@@ -13,4 +13,8 @@ object multiformatsMurmur3Strings {
   @js.native
   sealed trait `murmur3-32` extends StObject
   inline def `murmur3-32`: `murmur3-32` = "murmur3-32".asInstanceOf[`murmur3-32`]
+  
+  @js.native
+  sealed trait `murmur3-x64-64` extends StObject
+  inline def `murmur3-x64-64`: `murmur3-x64-64` = "murmur3-x64-64".asInstanceOf[`murmur3-x64-64`]
 }

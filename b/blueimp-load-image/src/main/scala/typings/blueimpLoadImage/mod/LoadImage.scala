@@ -52,4 +52,19 @@ trait LoadImage extends StObject {
   def parseMetaData(file: File, options: ParseOptions, data: ImageHead): js.Promise[MetaData] = js.native
   @JSName("parseMetaData")
   var parseMetaData_Original: ParseMetadata = js.native
+  
+  // Replaces the image head of a JPEG blob with the given one
+  def replaceHead(blob: Blob, head: js.typedarray.ArrayBuffer): js.Promise[Blob | Null] = js.native
+  // Replaces the image head of a JPEG blob with the given one
+  def replaceHead(blob: Blob, head: js.typedarray.ArrayBuffer, callback: js.Function1[/* blob */ Blob | Null, Unit]): Unit = js.native
+  def replaceHead(blob: Blob, head: js.typedarray.Uint8Array): js.Promise[Blob | Null] = js.native
+  def replaceHead(blob: Blob, head: js.typedarray.Uint8Array, callback: js.Function1[/* blob */ Blob | Null, Unit]): Unit = js.native
+  // Replaces the image head of a JPEG blob with the given one
+  @JSName("replaceHead")
+  var replaceHead_Original: ReplaceHead = js.native
+  
+  def writeExifData(buffer: js.typedarray.ArrayBuffer, data: MetaData, id: String, value: ExifTagValue): js.typedarray.ArrayBuffer | js.typedarray.Uint8Array = js.native
+  def writeExifData(buffer: js.typedarray.ArrayBuffer, data: MetaData, id: Double, value: ExifTagValue): js.typedarray.ArrayBuffer | js.typedarray.Uint8Array = js.native
+  def writeExifData(buffer: js.typedarray.Uint8Array, data: MetaData, id: String, value: ExifTagValue): js.typedarray.ArrayBuffer | js.typedarray.Uint8Array = js.native
+  def writeExifData(buffer: js.typedarray.Uint8Array, data: MetaData, id: Double, value: ExifTagValue): js.typedarray.ArrayBuffer | js.typedarray.Uint8Array = js.native
 }

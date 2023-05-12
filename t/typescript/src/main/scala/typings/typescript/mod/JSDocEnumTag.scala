@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait JSDocEnumTag
   extends StObject
      with JSDocTag
-     with Declaration {
+     with Declaration
+     with LocalsContainer {
   
   @JSName("kind")
   val kind_JSDocEnumTag: typings.typescript.mod.SyntaxKind.JSDocEnumTag = js.native

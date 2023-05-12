@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**  Constructs a new HTTP header object with the given values.*/
 open class HttpHeaders () extends StObject {
   def this(headers: String) = this()
-  def this(headers: StringDictionary[String | js.Array[String]]) = this()
+  def this(headers: StringDictionary[String | Double | (js.Array[String | Double])]) = this()
   
   /**
     * Appends a new value to the existing set of values for a header

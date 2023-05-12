@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "is-type-of" : "1.4.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "is-type-of" : "1.4.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

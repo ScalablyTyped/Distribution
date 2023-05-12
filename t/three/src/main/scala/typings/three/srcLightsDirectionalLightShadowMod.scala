@@ -1,6 +1,5 @@
 package typings.three
 
-import typings.three.srcCamerasCameraMod.Camera
 import typings.three.srcCamerasOrthographicCameraMod.OrthographicCamera
 import typings.three.srcLightsLightShadowMod.LightShadow
 import typings.three.threeBooleans.`true`
@@ -12,12 +11,16 @@ object srcLightsDirectionalLightShadowMod {
   
   @JSImport("three/src/lights/DirectionalLightShadow", "DirectionalLightShadow")
   @js.native
-  open class DirectionalLightShadow protected () extends LightShadow {
-    def this(camera: Camera) = this()
+  /**
+    * Create a new instance of {@link DirectionalLightShadow}
+    */
+  open class DirectionalLightShadow () extends LightShadow[OrthographicCamera] {
     
-    @JSName("camera")
-    var camera_DirectionalLightShadow: OrthographicCamera = js.native
-    
+    /**
+      * Read-only flag to check if a given object is of type {@link DirectionalLightShadow}.
+      * @remarks This is a _constant_ value
+      * @defaultValue `true`
+      */
     val isDirectionalLightShadow: `true` = js.native
   }
 }

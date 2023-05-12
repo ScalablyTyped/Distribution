@@ -3,6 +3,7 @@ package typings.mangopay2NodejsSdk.mod.models
 import typings.mangopay2NodejsSdk.mod.models.^
 import typings.mangopay2NodejsSdk.typingsEnumsMod.enums.IBankAccountType
 import typings.mangopay2NodejsSdk.typingsEnumsMod.enums.IDeclaredUboStatus
+import typings.mangopay2NodejsSdk.typingsEnumsMod.enums.IDepositStatus
 import typings.mangopay2NodejsSdk.typingsEnumsMod.enums.IKycDocumentStatus
 import typings.mangopay2NodejsSdk.typingsEnumsMod.enums.IKycDocumentType
 import typings.mangopay2NodejsSdk.typingsEnumsMod.enums.ILegalPersonType
@@ -10,6 +11,7 @@ import typings.mangopay2NodejsSdk.typingsEnumsMod.enums.IMandateStatus
 import typings.mangopay2NodejsSdk.typingsEnumsMod.enums.IPayInExecutionType
 import typings.mangopay2NodejsSdk.typingsEnumsMod.enums.IPayInPaymentType
 import typings.mangopay2NodejsSdk.typingsEnumsMod.enums.IPayOutPaymentType
+import typings.mangopay2NodejsSdk.typingsEnumsMod.enums.IPaymentStatus
 import typings.mangopay2NodejsSdk.typingsEnumsMod.enums.IPersonType
 import typings.mangopay2NodejsSdk.typingsEnumsMod.enums.IPlatformType
 import typings.mangopay2NodejsSdk.typingsEnumsMod.enums.IUboDeclarationRefusedReasonType
@@ -26,6 +28,8 @@ inline def BankAccountType: IBankAccountType = ^.asInstanceOf[js.Dynamic].select
 
 inline def DeclaredUboStatus: IDeclaredUboStatus = ^.asInstanceOf[js.Dynamic].selectDynamic("DeclaredUboStatus").asInstanceOf[IDeclaredUboStatus]
 
+inline def DepositStatus: IDepositStatus = ^.asInstanceOf[js.Dynamic].selectDynamic("DepositStatus").asInstanceOf[IDepositStatus]
+
 inline def KycDocumentStatus: IKycDocumentStatus = ^.asInstanceOf[js.Dynamic].selectDynamic("KycDocumentStatus").asInstanceOf[IKycDocumentStatus]
 
 inline def KycDocumentType: IKycDocumentType = ^.asInstanceOf[js.Dynamic].selectDynamic("KycDocumentType").asInstanceOf[IKycDocumentType]
@@ -39,6 +43,8 @@ inline def PayInExecutionType: IPayInExecutionType = ^.asInstanceOf[js.Dynamic].
 inline def PayInPaymentType: IPayInPaymentType = ^.asInstanceOf[js.Dynamic].selectDynamic("PayInPaymentType").asInstanceOf[IPayInPaymentType]
 
 inline def PayOutPaymentType: IPayOutPaymentType = ^.asInstanceOf[js.Dynamic].selectDynamic("PayOutPaymentType").asInstanceOf[IPayOutPaymentType]
+
+inline def PaymentStatus: IPaymentStatus = ^.asInstanceOf[js.Dynamic].selectDynamic("PaymentStatus").asInstanceOf[IPaymentStatus]
 
 inline def PersonType: IPersonType = ^.asInstanceOf[js.Dynamic].selectDynamic("PersonType").asInstanceOf[IPersonType]
 

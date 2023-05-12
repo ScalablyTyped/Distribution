@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeVolumesModificationsResult extends StObject {
   
   /**
-    * Token for pagination, null if there are no more results 
+    * The token to include in another request to get the next page of items. This value is null if there are no more items to return.
     */
   var NextToken: js.UndefOr[String] = js.undefined
   

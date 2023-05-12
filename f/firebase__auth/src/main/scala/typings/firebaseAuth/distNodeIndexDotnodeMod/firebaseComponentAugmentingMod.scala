@@ -1,0 +1,28 @@
+package typings.firebaseAuth.distNodeIndexDotnodeMod
+
+import typings.firebaseAuth.distNodeSrcModelPublicTypesMod.Auth
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+/* augmented module */
+object firebaseComponentAugmentingMod {
+  
+  trait NameServiceMapping extends StObject {
+    
+    var auth: Auth
+  }
+  object NameServiceMapping {
+    
+    inline def apply(auth: Auth): NameServiceMapping = {
+      val __obj = js.Dynamic.literal(auth = auth.asInstanceOf[js.Any])
+      __obj.asInstanceOf[NameServiceMapping]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NameServiceMapping] (val x: Self) extends AnyVal {
+      
+      inline def setAuth(value: Auth): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    }
+  }
+}

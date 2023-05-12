@@ -1,7 +1,7 @@
 
 # Scala.js typings for html-tags
 
-Typings are for version 3.2.0
+Typings are for version 3.3.1
 
 ## Library description:
 List of standard HTML tags

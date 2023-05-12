@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@firebase/app-check-compat" : "0.2.17"
+      "@firebase/app-check-compat" : "0.3.6"
     }
   ],
   "test-dependencies" : [
     {
-      "@firebase/app-check-compat" : "0.2.17"
+      "@firebase/app-check-compat" : "0.3.6"
     }
   ],
   "compile-devDependencies" : [

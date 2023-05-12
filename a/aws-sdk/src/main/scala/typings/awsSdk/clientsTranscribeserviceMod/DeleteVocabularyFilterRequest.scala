@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteVocabularyFilterRequest extends StObject {
   
   /**
-    * The name of the custom vocabulary filter you want to delete. Vocabulary filter names are case sensitive.
+    * The name of the custom vocabulary filter you want to delete. Custom vocabulary filter names are case sensitive.
     */
   var VocabularyFilterName: typings.awsSdk.clientsTranscribeserviceMod.VocabularyFilterName
 }

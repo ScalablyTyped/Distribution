@@ -1,7 +1,7 @@
 
 # Scala.js typings for html-tag-names
 
-Typings are for version 2.0.1
+Typings are for version 2.1.0
 
 ## Library description:
 List of known HTML tag names

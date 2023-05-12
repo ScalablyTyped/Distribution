@@ -27,19 +27,24 @@ trait CreateAppRequest extends StObject {
   var ResourceSpec: js.UndefOr[typings.awsSdk.clientsSagemakerMod.ResourceSpec] = js.undefined
   
   /**
+    * The name of the space. If this value is not set, then UserProfileName must be set.
+    */
+  var SpaceName: js.UndefOr[typings.awsSdk.clientsSagemakerMod.SpaceName] = js.undefined
+  
+  /**
     * Each tag consists of a key and an optional value. Tag keys must be unique per resource.
     */
   var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
-    * The user profile name.
+    * The user profile name. If this value is not set, then SpaceName must be set.
     */
-  var UserProfileName: typings.awsSdk.clientsSagemakerMod.UserProfileName
+  var UserProfileName: js.UndefOr[typings.awsSdk.clientsSagemakerMod.UserProfileName] = js.undefined
 }
 object CreateAppRequest {
   
-  inline def apply(AppName: AppName, AppType: AppType, DomainId: DomainId, UserProfileName: UserProfileName): CreateAppRequest = {
-    val __obj = js.Dynamic.literal(AppName = AppName.asInstanceOf[js.Any], AppType = AppType.asInstanceOf[js.Any], DomainId = DomainId.asInstanceOf[js.Any], UserProfileName = UserProfileName.asInstanceOf[js.Any])
+  inline def apply(AppName: AppName, AppType: AppType, DomainId: DomainId): CreateAppRequest = {
+    val __obj = js.Dynamic.literal(AppName = AppName.asInstanceOf[js.Any], AppType = AppType.asInstanceOf[js.Any], DomainId = DomainId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateAppRequest]
   }
   
@@ -56,6 +61,10 @@ object CreateAppRequest {
     
     inline def setResourceSpecUndefined: Self = StObject.set(x, "ResourceSpec", js.undefined)
     
+    inline def setSpaceName(value: SpaceName): Self = StObject.set(x, "SpaceName", value.asInstanceOf[js.Any])
+    
+    inline def setSpaceNameUndefined: Self = StObject.set(x, "SpaceName", js.undefined)
+    
     inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
     inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
@@ -63,5 +72,7 @@ object CreateAppRequest {
     inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value*))
     
     inline def setUserProfileName(value: UserProfileName): Self = StObject.set(x, "UserProfileName", value.asInstanceOf[js.Any])
+    
+    inline def setUserProfileNameUndefined: Self = StObject.set(x, "UserProfileName", js.undefined)
   }
 }

@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateLaunchProfileMemberRequest extends StObject {
   
   /**
-    * Unique, case-sensitive identifier that you provide to ensure the idempotency of the request. If you don’t specify a client token, the AWS SDK automatically generates a client token and uses it for the request to ensure idempotency.
+    * Unique, case-sensitive identifier that you provide to ensure the idempotency of the request. If you don’t specify a client token, the Amazon Web Services SDK automatically generates a client token and uses it for the request to ensure idempotency.
     */
   var clientToken: js.UndefOr[ClientToken] = js.undefined
   
   /**
-    * The Launch Profile ID.
+    * The ID of the launch profile used to control access from the streaming session.
     */
   var launchProfileId: String
   

@@ -1,7 +1,7 @@
 
 # Scala.js typings for vscode__debugprotocol
 
-Typings are for version 1.57.0
+Typings are for version 1.59.0
 
 ## Library description:
 Npm module with declarations for the Visual Studio Code debug protocol

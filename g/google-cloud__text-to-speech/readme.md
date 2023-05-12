@@ -1,7 +1,7 @@
 
 # Scala.js typings for google-cloud__text-to-speech
 
-Typings are for version 4.0.4
+Typings are for version 4.2.2
 
 ## Library description:
 Cloud Text-to-Speech API client for Node.js

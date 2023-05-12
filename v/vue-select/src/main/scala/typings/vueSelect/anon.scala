@@ -359,11 +359,12 @@ object anon {
     }
   }
   
-  /* Inlined std.Record<vue-select.vue-select.ChildComponentName, / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VueConstructor * / any | vue.vue.ComponentOptions</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Vue * / any, any, any, any, any, any, any, any>> */
+  /* Inlined std.Record<vue-select.vue-select.ChildComponentName, / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VueConstructor * / any | vue.vue.ComponentOptions</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Vue * / any, any, any, any, any, any, any, any, any>> */
   trait RecordChildComponentNameaDeselect extends StObject {
     
     var Deselect: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VueConstructor */ Any) | (ComponentOptions[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Vue */ Any, 
+        Any, 
         Any, 
         Any, 
         Any, 
@@ -375,6 +376,7 @@ object anon {
     
     var OpenIndicator: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VueConstructor */ Any) | (ComponentOptions[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Vue */ Any, 
+        Any, 
         Any, 
         Any, 
         Any, 
@@ -395,10 +397,12 @@ object anon {
           Any, 
           Any, 
           Any, 
+          Any, 
           Any
         ]),
       OpenIndicator: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VueConstructor */ Any) | (ComponentOptions[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Vue */ Any, 
+          Any, 
           Any, 
           Any, 
           Any, 
@@ -424,6 +428,7 @@ object anon {
               Any, 
               Any, 
               Any, 
+              Any, 
               Any
             ])
       ): Self = StObject.set(x, "Deselect", value.asInstanceOf[js.Any])
@@ -431,6 +436,7 @@ object anon {
       inline def setOpenIndicator(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VueConstructor */ Any) | (ComponentOptions[
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Vue */ Any, 
+              Any, 
               Any, 
               Any, 
               Any, 

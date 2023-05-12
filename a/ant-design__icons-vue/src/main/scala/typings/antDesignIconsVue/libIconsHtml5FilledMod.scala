@@ -16,7 +16,7 @@ object libIconsHtml5FilledMod extends Shortcut {
   @js.native
   trait Html5FilledIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_Html5FilledIconType: String = js.native

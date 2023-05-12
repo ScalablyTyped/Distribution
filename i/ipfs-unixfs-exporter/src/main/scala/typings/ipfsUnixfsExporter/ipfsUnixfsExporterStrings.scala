@@ -25,4 +25,36 @@ object ipfsUnixfsExporterStrings {
   @js.native
   sealed trait raw extends StObject
   inline def raw: raw = "raw".asInstanceOf[raw]
+  
+  @js.native
+  sealed trait unixfsColonexporterColonprogressColonidentity extends StObject
+  inline def unixfsColonexporterColonprogressColonidentity: unixfsColonexporterColonprogressColonidentity = "unixfs:exporter:progress:identity".asInstanceOf[unixfsColonexporterColonprogressColonidentity]
+  
+  @js.native
+  sealed trait unixfsColonexporterColonprogressColonraw extends StObject
+  inline def unixfsColonexporterColonprogressColonraw: unixfsColonexporterColonprogressColonraw = "unixfs:exporter:progress:raw".asInstanceOf[unixfsColonexporterColonprogressColonraw]
+  
+  @js.native
+  sealed trait unixfsColonexporterColonprogressColonunixfsColonfile extends StObject
+  inline def unixfsColonexporterColonprogressColonunixfsColonfile: unixfsColonexporterColonprogressColonunixfsColonfile = "unixfs:exporter:progress:unixfs:file".asInstanceOf[unixfsColonexporterColonprogressColonunixfsColonfile]
+  
+  @js.native
+  sealed trait unixfsColonexporterColonprogressColonunixfsColonraw extends StObject
+  inline def unixfsColonexporterColonprogressColonunixfsColonraw: unixfsColonexporterColonprogressColonunixfsColonraw = "unixfs:exporter:progress:unixfs:raw".asInstanceOf[unixfsColonexporterColonprogressColonunixfsColonraw]
+  
+  @js.native
+  sealed trait unixfsColonexporterColonwalkColondirectory extends StObject
+  inline def unixfsColonexporterColonwalkColondirectory: unixfsColonexporterColonwalkColondirectory = "unixfs:exporter:walk:directory".asInstanceOf[unixfsColonexporterColonwalkColondirectory]
+  
+  @js.native
+  sealed trait unixfsColonexporterColonwalkColonfile extends StObject
+  inline def unixfsColonexporterColonwalkColonfile: unixfsColonexporterColonwalkColonfile = "unixfs:exporter:walk:file".asInstanceOf[unixfsColonexporterColonwalkColonfile]
+  
+  @js.native
+  sealed trait `unixfsColonexporterColonwalkColonhamt-sharded-directory` extends StObject
+  inline def `unixfsColonexporterColonwalkColonhamt-sharded-directory`: `unixfsColonexporterColonwalkColonhamt-sharded-directory` = "unixfs:exporter:walk:hamt-sharded-directory".asInstanceOf[`unixfsColonexporterColonwalkColonhamt-sharded-directory`]
+  
+  @js.native
+  sealed trait unixfsColonexporterColonwalkColonraw extends StObject
+  inline def unixfsColonexporterColonwalkColonraw: unixfsColonexporterColonwalkColonraw = "unixfs:exporter:walk:raw".asInstanceOf[unixfsColonexporterColonwalkColonraw]
 }

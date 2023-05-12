@@ -1,7 +1,7 @@
 package typings.pixiCore
 
+import typings.pixiColor.libColorMod.ColorSource
 import typings.pixiConstants.mod.MSAA_QUALITY
-import typings.pixiConstants.mod.RENDERER_TYPE.WEBGL
 import typings.pixiCore.libBackgroundBackgroundSystemMod.BackgroundSystem
 import typings.pixiCore.libBatchBatchSystemMod.BatchSystem
 import typings.pixiCore.libContextContextSystemMod.ContextSystem
@@ -36,6 +36,7 @@ import typings.pixiExtensions.mod.ExtensionMetadata
 import typings.pixiMath.mod.Rectangle
 import typings.pixiSettings.libIcanvasMod.ICanvas
 import typings.pixiUtils.libTypesMod.Dict
+import typings.std.Partial
 import typings.std.Record
 import typings.std.WebGLPowerPreference
 import org.scalablytyped.runtime.StObject
@@ -48,36 +49,10 @@ object libRendererMod {
   - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify GlobalMixins.Renderer * / any */ @JSImport("@pixi/core/lib/Renderer", "Renderer")
   @js.native
   /**
-    * @param [options] - The optional renderer parameters.
-    * @param {number} [options.width=800] - The width of the screen.
-    * @param {number} [options.height=600] - The height of the screen.
-    * @param {PIXI.ICanvas} [options.view] - The canvas to use as a view, optional.
-    * @param {boolean} [options.useContextAlpha=true] - Pass-through value for canvas' context `alpha` property.
-    *   If you want to set transparency, please use `backgroundAlpha`. This option is for cases where the
-    *   canvas needs to be opaque, possibly for performance reasons on some older devices.
-    * @param {boolean} [options.autoDensity=false] - Resizes renderer view in CSS pixels to allow for
-    *   resolutions other than 1.
-    * @param {boolean} [options.antialias=false] - Sets antialias. If not available natively then FXAA
-    *  antialiasing is used.
-    * @param {number} [options.resolution=PIXI.settings.RESOLUTION] - The resolution / device pixel ratio of the renderer.
-    * @param {boolean} [options.clearBeforeRender=true] - This sets if the renderer will clear
-    *  the canvas or not before the new render pass. If you wish to set this to false, you *must* set
-    *  preserveDrawingBuffer to `true`.
-    * @param {boolean} [options.preserveDrawingBuffer=false] - Enables drawing buffer preservation,
-    *  enable this if you need to call toDataURL on the WebGL context.
-    * @param {number|string} [options.backgroundColor=0x000000] - The background color of the rendered area
-    *  (shown if not transparent). Also, accepts hex strings or color names (e.g., 'white').
-    * @param {number|string} [options.background] - Alias for `options.backgroundColor`.
-    * @param {number} [options.backgroundAlpha=1] - Value from 0 (fully transparent) to 1 (fully opaque).
-    * @param {string} [options.powerPreference] - Parameter passed to WebGL context, set to "high-performance"
-    *  for devices with dual graphics card.
-    * @param {object} [options.context] - If WebGL context already exists, all parameters must be taken from it.
-    * @param {object} [options.blit] - if rendering to a renderTexture, set to true if you want to run blit after
-    * the render. defaults to false.
-    * @param {boolean} [options.hello=false] - Logs renderer type and version.
+    * @param {PIXI.IRendererOptions} [options] - See {@link PIXI.settings.RENDER_OPTIONS} for defaults.
     */
   open class Renderer () extends IRenderer[ICanvas] {
-    def this(options: IRendererOptions) = this()
+    def this(options: Partial[IRendererOptions]) = this()
     
     /** Unique UID assigned to the renderer's WebGL context. */
     var CONTEXT_UID: Double = js.native
@@ -101,13 +76,8 @@ object libRendererMod {
     val _view: ViewSystem = js.native
     
     /** Whether CSS dimensions of canvas view should be resized to screen dimensions automatically. */
-    def autoDensity: Boolean = js.native
-    
-    /**
-      * background system instance
-      * @readonly
-      */
-    val background: BackgroundSystem = js.native
+    @JSName("autoDensity")
+    def autoDensity_MRenderer: Boolean = js.native
     
     /**
       * The background color alpha. Setting this to 0 will make the canvas transparent.
@@ -125,8 +95,15 @@ object libRendererMod {
       * @member {number}
       * @deprecated since 7.0.0
       */
-    def backgroundColor: Double = js.native
-    def backgroundColor_=(value: Double): Unit = js.native
+    def backgroundColor: ColorSource = js.native
+    def backgroundColor_=(value: ColorSource): Unit = js.native
+    
+    /**
+      * background system instance
+      * @readonly
+      */
+    @JSName("background")
+    val background_Renderer: BackgroundSystem = js.native
     
     /**
       * Batch system instance
@@ -321,7 +298,7 @@ object libRendererMod {
       * @see PIXI.RENDERER_TYPE
       */
     @JSName("type")
-    val type_Renderer: WEBGL = js.native
+    val type_Renderer: String | Double = js.native
     
     /**
       * Pass-thru setting for the canvas' context `alpha` property. This is typically
@@ -382,6 +359,6 @@ object libRendererMod {
       * @private
       */
     inline def test(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("test")().asInstanceOf[Boolean]
-    inline def test(options: IRendererOptions): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("test")(options.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def test(options: Partial[IRendererOptions]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("test")(options.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
 }

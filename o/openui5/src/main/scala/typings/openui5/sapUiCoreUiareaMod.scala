@@ -303,6 +303,8 @@ object sapUiCoreUiareaMod {
     def getRootNode(): Element = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Returns this UI area. Needed to stop recursive calls from an element to its parent.
       *
       * @returns this
@@ -372,6 +374,8 @@ object sapUiCoreUiareaMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Checks whether the control is still valid (is in the DOM)
       *
       * @returns True if the control is still in the active DOM

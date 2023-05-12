@@ -17,7 +17,7 @@ object Constants {
   
   /**
     * Nothing
-    * @see https://doc.babylonjs.com/how_to/how_to_use_actions#triggers
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/events/actions#triggers
     */
   @JSImport("babylonjs/index", "Constants.ACTION_NothingTrigger")
   @js.native
@@ -25,7 +25,7 @@ object Constants {
   
   /**
     * On center pick
-    * @see https://doc.babylonjs.com/how_to/how_to_use_actions#triggers
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/events/actions#triggers
     */
   @JSImport("babylonjs/index", "Constants.ACTION_OnCenterPickTrigger")
   @js.native
@@ -33,7 +33,7 @@ object Constants {
   
   /**
     * On double pick
-    * @see https://doc.babylonjs.com/how_to/how_to_use_actions#triggers
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/events/actions#triggers
     */
   @JSImport("babylonjs/index", "Constants.ACTION_OnDoublePickTrigger")
   @js.native
@@ -41,7 +41,7 @@ object Constants {
   
   /**
     * On every frame
-    * @see https://doc.babylonjs.com/how_to/how_to_use_actions#triggers
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/events/actions#triggers
     */
   @JSImport("babylonjs/index", "Constants.ACTION_OnEveryFrameTrigger")
   @js.native
@@ -49,7 +49,7 @@ object Constants {
   
   /**
     * On intersection enter
-    * @see https://doc.babylonjs.com/how_to/how_to_use_actions#triggers
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/events/actions#triggers
     */
   @JSImport("babylonjs/index", "Constants.ACTION_OnIntersectionEnterTrigger")
   @js.native
@@ -57,7 +57,7 @@ object Constants {
   
   /**
     * On intersection exit
-    * @see https://doc.babylonjs.com/how_to/how_to_use_actions#triggers
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/events/actions#triggers
     */
   @JSImport("babylonjs/index", "Constants.ACTION_OnIntersectionExitTrigger")
   @js.native
@@ -65,7 +65,7 @@ object Constants {
   
   /**
     * On key down
-    * @see https://doc.babylonjs.com/how_to/how_to_use_actions#triggers
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/events/actions#triggers
     */
   @JSImport("babylonjs/index", "Constants.ACTION_OnKeyDownTrigger")
   @js.native
@@ -73,7 +73,7 @@ object Constants {
   
   /**
     * On key up
-    * @see https://doc.babylonjs.com/how_to/how_to_use_actions#triggers
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/events/actions#triggers
     */
   @JSImport("babylonjs/index", "Constants.ACTION_OnKeyUpTrigger")
   @js.native
@@ -81,7 +81,7 @@ object Constants {
   
   /**
     * On left pick
-    * @see https://doc.babylonjs.com/how_to/how_to_use_actions#triggers
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/events/actions#triggers
     */
   @JSImport("babylonjs/index", "Constants.ACTION_OnLeftPickTrigger")
   @js.native
@@ -89,7 +89,7 @@ object Constants {
   
   /**
     * On long press
-    * @see https://doc.babylonjs.com/how_to/how_to_use_actions#triggers
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/events/actions#triggers
     */
   @JSImport("babylonjs/index", "Constants.ACTION_OnLongPressTrigger")
   @js.native
@@ -97,7 +97,7 @@ object Constants {
   
   /**
     * On pick down
-    * @see https://doc.babylonjs.com/how_to/how_to_use_actions#triggers
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/events/actions#triggers
     */
   @JSImport("babylonjs/index", "Constants.ACTION_OnPickDownTrigger")
   @js.native
@@ -106,7 +106,7 @@ object Constants {
   /**
     * On pick out.
     * This trigger will only be raised if you also declared a OnPickDown
-    * @see https://doc.babylonjs.com/how_to/how_to_use_actions#triggers
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/events/actions#triggers
     */
   @JSImport("babylonjs/index", "Constants.ACTION_OnPickOutTrigger")
   @js.native
@@ -114,7 +114,7 @@ object Constants {
   
   /**
     * On pick
-    * @see https://doc.babylonjs.com/how_to/how_to_use_actions#triggers
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/events/actions#triggers
     */
   @JSImport("babylonjs/index", "Constants.ACTION_OnPickTrigger")
   @js.native
@@ -122,7 +122,7 @@ object Constants {
   
   /**
     * On pick up
-    * @see https://doc.babylonjs.com/how_to/how_to_use_actions#triggers
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/events/actions#triggers
     */
   @JSImport("babylonjs/index", "Constants.ACTION_OnPickUpTrigger")
   @js.native
@@ -130,7 +130,7 @@ object Constants {
   
   /**
     * On pointer out
-    * @see https://doc.babylonjs.com/how_to/how_to_use_actions#triggers
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/events/actions#triggers
     */
   @JSImport("babylonjs/index", "Constants.ACTION_OnPointerOutTrigger")
   @js.native
@@ -138,7 +138,7 @@ object Constants {
   
   /**
     * On pointer over
-    * @see https://doc.babylonjs.com/how_to/how_to_use_actions#triggers
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/events/actions#triggers
     */
   @JSImport("babylonjs/index", "Constants.ACTION_OnPointerOverTrigger")
   @js.native
@@ -146,7 +146,7 @@ object Constants {
   
   /**
     * On right pick
-    * @see https://doc.babylonjs.com/how_to/how_to_use_actions#triggers
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/events/actions#triggers
     */
   @JSImport("babylonjs/index", "Constants.ACTION_OnRightPickTrigger")
   @js.native
@@ -1206,6 +1206,11 @@ object Constants {
   @js.native
   val TEXTUREFORMAT_R_INTEGER: Double = js.native
   
+  /** Stencil 8 bits */
+  @JSImport("babylonjs/index", "Constants.TEXTUREFORMAT_STENCIL8")
+  @js.native
+  val TEXTUREFORMAT_STENCIL8: Double = js.native
+  
   /** BYTE */
   @JSImport("babylonjs/index", "Constants.TEXTURETYPE_BYTE")
   @js.native
@@ -1296,6 +1301,21 @@ object Constants {
   @js.native
   val TEXTURETYPE_UNSIGNED_SHORT_5_6_5: Double = js.native
   
+  /** 2D Texture target*/
+  @JSImport("babylonjs/index", "Constants.TEXTURE_2D")
+  @js.native
+  val TEXTURE_2D: Double = js.native
+  
+  /** 2D Array Texture target */
+  @JSImport("babylonjs/index", "Constants.TEXTURE_2D_ARRAY")
+  @js.native
+  val TEXTURE_2D_ARRAY: Double = js.native
+  
+  /** 3D Texture target */
+  @JSImport("babylonjs/index", "Constants.TEXTURE_3D")
+  @js.native
+  val TEXTURE_3D: Double = js.native
+  
   /** Bilinear is mag = linear and min = linear and no mip */
   @JSImport("babylonjs/index", "Constants.TEXTURE_BILINEAR_SAMPLINGMODE")
   @js.native
@@ -1310,6 +1330,16 @@ object Constants {
   @JSImport("babylonjs/index", "Constants.TEXTURE_CREATIONFLAG_STORAGE")
   @js.native
   val TEXTURE_CREATIONFLAG_STORAGE: Double = js.native
+  
+  /** Cube Map Texture target */
+  @JSImport("babylonjs/index", "Constants.TEXTURE_CUBE_MAP")
+  @js.native
+  val TEXTURE_CUBE_MAP: Double = js.native
+  
+  /** Cube Map Array Texture target */
+  @JSImport("babylonjs/index", "Constants.TEXTURE_CUBE_MAP_ARRAY")
+  @js.native
+  val TEXTURE_CUBE_MAP_ARRAY: Double = js.native
   
   /** Cubic coordinates mode */
   @JSImport("babylonjs/index", "Constants.TEXTURE_CUBIC_MODE")

@@ -20,6 +20,11 @@ object typesMetadataValidationMetadataArgsMod {
     var constraints: js.UndefOr[js.Array[Any]] = js.undefined
     
     /**
+      * Validator name.
+      */
+    var name: js.UndefOr[String] = js.undefined
+    
+    /**
       * Property of the object to be validated.
       */
     var propertyName: String
@@ -64,6 +69,10 @@ object typesMetadataValidationMetadataArgsMod {
       inline def setConstraintsUndefined: Self = StObject.set(x, "constraints", js.undefined)
       
       inline def setConstraintsVarargs(value: Any*): Self = StObject.set(x, "constraints", js.Array(value*))
+      
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
       inline def setPropertyName(value: String): Self = StObject.set(x, "propertyName", value.asInstanceOf[js.Any])
       

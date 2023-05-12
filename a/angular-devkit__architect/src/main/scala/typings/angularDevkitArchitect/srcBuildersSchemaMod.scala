@@ -7,7 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object srcBuildersSchemaMod {
   
-  trait Builder extends StObject {
+  trait Builder
+    extends StObject
+       with /* property */ StringDictionary[Any] {
     
     /**
       * The builder class module.
@@ -53,7 +55,9 @@ object srcBuildersSchemaMod {
     }
   }
   
-  trait Schema extends StObject {
+  trait Schema
+    extends StObject
+       with /* property */ StringDictionary[Any] {
     
     /**
       * Link to schema.

@@ -27,7 +27,7 @@ trait InventoryReport
   var countType: snapshot | difference
   
   /**
-    * Identifiers for the InventoryReport.
+    * Business identifier for the InventoryReport.
     */
   var identifier: js.UndefOr[js.Array[Identifier]] = js.undefined
   
@@ -39,7 +39,7 @@ trait InventoryReport
   /**
     * A note associated with the InventoryReport.
     */
-  var note: js.UndefOr[Annotation] = js.undefined
+  var note: js.UndefOr[js.Array[Annotation]] = js.undefined
   
   /**
     * What type of operation is being performed - addition or subtraction.
@@ -103,9 +103,11 @@ object InventoryReport {
     
     inline def setInventoryListingVarargs(value: InventoryReportInventoryListing*): Self = StObject.set(x, "inventoryListing", js.Array(value*))
     
-    inline def setNote(value: Annotation): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
+    inline def setNote(value: js.Array[Annotation]): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
     
     inline def setNoteUndefined: Self = StObject.set(x, "note", js.undefined)
+    
+    inline def setNoteVarargs(value: Annotation*): Self = StObject.set(x, "note", js.Array(value*))
     
     inline def setOperationType(value: CodeableConcept): Self = StObject.set(x, "operationType", value.asInstanceOf[js.Any])
     

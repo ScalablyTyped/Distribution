@@ -141,6 +141,8 @@ object materialsPbrPbrMaterialMod {
       */
     def cameraToneMappingEnabled_=(value: Boolean): Unit = js.native
     
+    def clone(name: String, cloneTexturesOnlyOnce: Boolean): PBRMaterial = js.native
+    
     /**
       * Intensity of the direct lights e.g. the four lights available in your scene.
       * This impacts both the direct diffuse and specular highlights.

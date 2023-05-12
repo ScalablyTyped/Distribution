@@ -21,6 +21,9 @@ trait DepthTextureCreationOptions extends StObject {
   /** Specifies if the created texture is a cube texture */
   var isCube: js.UndefOr[Boolean] = js.undefined
   
+  /** Label of the texture (used for debugging only) */
+  var label: js.UndefOr[String] = js.undefined
+  
   /** Specifies the sample count of the depth/stencil texture texture */
   var samples: js.UndefOr[Double] = js.undefined
 }
@@ -53,6 +56,10 @@ object DepthTextureCreationOptions {
     inline def setIsCube(value: Boolean): Self = StObject.set(x, "isCube", value.asInstanceOf[js.Any])
     
     inline def setIsCubeUndefined: Self = StObject.set(x, "isCube", js.undefined)
+    
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     inline def setSamples(value: Double): Self = StObject.set(x, "samples", value.asInstanceOf[js.Any])
     

@@ -10,6 +10,8 @@ object libUtilsMod {
   @js.native
   val ^ : js.Any = js.native
   
+  inline def coercePotentiallyNull(value: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("coercePotentiallyNull")(value.asInstanceOf[js.Any]).asInstanceOf[Any]
+  
   inline def comparable(value: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("comparable")(value.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   inline def equals_(a: Any, b: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]

@@ -18,25 +18,8 @@ open class BulkOperationBase () extends StObject {
   
   def bsonOptions: BSONSerializeOptions = js.native
   
-  /** @deprecated Callbacks are deprecated and will be removed in the next major version. See [mongodb-legacy](https://github.com/mongodb-js/nodejs-mongodb-legacy) for migration assistance */
-  def execute(): js.Promise[BulkWriteResult] | Unit = js.native
-  def execute(options: Unit, callback: Callback[BulkWriteResult]): js.Promise[BulkWriteResult] | Unit = js.native
-  def execute(options: BulkWriteOptions): js.Promise[BulkWriteResult] | Unit = js.native
-  def execute(options: BulkWriteOptions, callback: Callback[BulkWriteResult]): js.Promise[BulkWriteResult] | Unit = js.native
-  def execute(options: Callback[BulkWriteResult]): js.Promise[BulkWriteResult] | Unit = js.native
-  def execute(options: Callback[BulkWriteResult], callback: Callback[BulkWriteResult]): js.Promise[BulkWriteResult] | Unit = js.native
-  @JSName("execute")
-  def execute_Promise(): js.Promise[BulkWriteResult] = js.native
-  @JSName("execute")
-  def execute_Promise(options: BulkWriteOptions): js.Promise[BulkWriteResult] = js.native
-  /** @deprecated Callbacks are deprecated and will be removed in the next major version. See [mongodb-legacy](https://github.com/mongodb-js/nodejs-mongodb-legacy) for migration assistance */
-  @JSName("execute")
-  def execute_Unit(callback: Callback[BulkWriteResult]): Unit = js.native
-  @JSName("execute")
-  def execute_Unit(options: Unit, callback: Callback[BulkWriteResult]): Unit = js.native
-  /** @deprecated Callbacks are deprecated and will be removed in the next major version. See [mongodb-legacy](https://github.com/mongodb-js/nodejs-mongodb-legacy) for migration assistance */
-  @JSName("execute")
-  def execute_Unit(options: BulkWriteOptions, callback: Callback[BulkWriteResult]): Unit = js.native
+  def execute(): js.Promise[BulkWriteResult] = js.native
+  def execute(options: BulkWriteOptions): js.Promise[BulkWriteResult] = js.native
   
   /**
     * Builds a find operation for an update/updateOne/delete/deleteOne/replaceOne.

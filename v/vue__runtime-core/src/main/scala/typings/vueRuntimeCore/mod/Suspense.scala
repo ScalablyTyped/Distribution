@@ -1,6 +1,7 @@
 package typings.vueRuntimeCore.mod
 
-import typings.vueRuntimeCore.anon.`1`
+import typings.vueRuntimeCore.anon.Fallback
+import typings.vueRuntimeCore.anon.Props
 import typings.vueRuntimeCore.vueRuntimeCoreBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,11 +12,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class Suspense ()
   extends StObject
-     with `1` {
+     with Props {
   
   /* CompleteClass */
   @JSName("$props")
   var $props: VNodeProps & SuspenseProps = js.native
+  
+  /* CompleteClass */
+  @JSName("$slots")
+  var $slots: Fallback = js.native
 }
 object Suspense {
   

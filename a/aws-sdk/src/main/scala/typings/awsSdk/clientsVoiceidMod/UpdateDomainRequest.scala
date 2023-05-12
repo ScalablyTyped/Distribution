@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateDomainRequest extends StObject {
   
   /**
-    * A brief description of the domain.
+    * A brief description about this domain.
     */
   var Description: js.UndefOr[typings.awsSdk.clientsVoiceidMod.Description] = js.undefined
   

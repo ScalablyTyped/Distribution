@@ -5,61 +5,68 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.typescript.mod.ParameterDeclaration
-  - typings.typescript.mod.CallSignatureDeclaration
-  - typings.typescript.mod.ClassStaticBlockDeclaration
-  - typings.typescript.mod.ConstructSignatureDeclaration
-  - typings.typescript.mod.MethodSignature
-  - typings.typescript.mod.PropertySignature
+  - typings.typescript.mod.AccessorDeclaration
   - typings.typescript.mod.ArrowFunction
-  - typings.typescript.mod.ParenthesizedExpression
-  - typings.typescript.mod.SpreadAssignment
-  - typings.typescript.mod.ShorthandPropertyAssignment
-  - typings.typescript.mod.PropertyAssignment
-  - typings.typescript.mod.FunctionExpression
-  - typings.typescript.mod.EmptyStatement
-  - typings.typescript.mod.DebuggerStatement
+  - typings.typescript.mod.BinaryExpression
   - typings.typescript.mod.Block
-  - typings.typescript.mod.VariableStatement
-  - typings.typescript.mod.ExpressionStatement
-  - typings.typescript.mod.IfStatement
+  - typings.typescript.mod.BreakStatement
+  - typings.typescript.mod.CallSignatureDeclaration
+  - typings.typescript.mod.CaseClause
+  - typings.typescript.mod.ClassLikeDeclaration
+  - typings.typescript.mod.ClassStaticBlockDeclaration
+  - typings.typescript.mod.ConstructorDeclaration
+  - typings.typescript.mod.ConstructorTypeNode
+  - typings.typescript.mod.ConstructSignatureDeclaration
+  - typings.typescript.mod.ContinueStatement
+  - typings.typescript.mod.DebuggerStatement
   - typings.typescript.mod.DoStatement
-  - typings.typescript.mod.WhileStatement
-  - typings.typescript.mod.ForStatement
+  - typings.typescript.mod.ElementAccessExpression
+  - typings.typescript.mod.EmptyStatement
+  - typings.typescript.mod.EndOfFileToken
+  - typings.typescript.mod.EnumDeclaration
+  - typings.typescript.mod.EnumMember
+  - typings.typescript.mod.ExportAssignment
+  - typings.typescript.mod.ExportDeclaration
+  - typings.typescript.mod.ExportSpecifier
+  - typings.typescript.mod.ExpressionStatement
   - typings.typescript.mod.ForInStatement
   - typings.typescript.mod.ForOfStatement
-  - typings.typescript.mod.BreakStatement
-  - typings.typescript.mod.ContinueStatement
-  - typings.typescript.mod.ReturnStatement
-  - typings.typescript.mod.WithStatement
-  - typings.typescript.mod.SwitchStatement
+  - typings.typescript.mod.ForStatement
+  - typings.typescript.mod.FunctionDeclaration
+  - typings.typescript.mod.FunctionExpression
+  - typings.typescript.mod.FunctionTypeNode
+  - typings.typescript.mod.Identifier
+  - typings.typescript.mod.IfStatement
+  - typings.typescript.mod.ImportDeclaration
+  - typings.typescript.mod.ImportEqualsDeclaration
+  - typings.typescript.mod.IndexSignatureDeclaration
+  - typings.typescript.mod.InterfaceDeclaration
+  - typings.typescript.mod.JSDocFunctionType
+  - typings.typescript.mod.JSDocSignature
   - typings.typescript.mod.LabeledStatement
+  - typings.typescript.mod.MethodDeclaration
+  - typings.typescript.mod.MethodSignature
+  - typings.typescript.mod.ModuleDeclaration
+  - typings.typescript.mod.NamedTupleMember
+  - typings.typescript.mod.NamespaceExportDeclaration
+  - typings.typescript.mod.ObjectLiteralExpression
+  - typings.typescript.mod.ParameterDeclaration
+  - typings.typescript.mod.ParenthesizedExpression
+  - typings.typescript.mod.PropertyAccessExpression
+  - typings.typescript.mod.PropertyAssignment
+  - typings.typescript.mod.PropertyDeclaration
+  - typings.typescript.mod.PropertySignature
+  - typings.typescript.mod.ReturnStatement
+  - typings.typescript.mod.ShorthandPropertyAssignment
+  - typings.typescript.mod.SpreadAssignment
+  - typings.typescript.mod.SwitchStatement
   - typings.typescript.mod.ThrowStatement
   - typings.typescript.mod.TryStatement
-  - typings.typescript.mod.FunctionDeclaration
-  - typings.typescript.mod.ConstructorDeclaration
-  - typings.typescript.mod.MethodDeclaration
-  - typings.typescript.mod.VariableDeclaration
-  - typings.typescript.mod.PropertyDeclaration
-  - typings.typescript.mod.AccessorDeclaration
-  - typings.typescript.mod.ClassLikeDeclaration
-  - typings.typescript.mod.InterfaceDeclaration
   - typings.typescript.mod.TypeAliasDeclaration
-  - typings.typescript.mod.EnumMember
-  - typings.typescript.mod.EnumDeclaration
-  - typings.typescript.mod.ModuleDeclaration
-  - typings.typescript.mod.ImportEqualsDeclaration
-  - typings.typescript.mod.ImportDeclaration
-  - typings.typescript.mod.NamespaceExportDeclaration
-  - typings.typescript.mod.ExportAssignment
-  - typings.typescript.mod.IndexSignatureDeclaration
-  - typings.typescript.mod.FunctionTypeNode
-  - typings.typescript.mod.ConstructorTypeNode
-  - typings.typescript.mod.JSDocFunctionType
-  - typings.typescript.mod.ExportDeclaration
-  - typings.typescript.mod.NamedTupleMember
-  - typings.typescript.mod.ExportSpecifier
-  - typings.typescript.mod.CaseClause
-  - typings.typescript.mod.EndOfFileToken
+  - typings.typescript.mod.TypeParameterDeclaration
+  - typings.typescript.mod.VariableDeclaration
+  - typings.typescript.mod.VariableStatement
+  - typings.typescript.mod.WhileStatement
+  - typings.typescript.mod.WithStatement
 */
 trait HasJSDoc extends StObject

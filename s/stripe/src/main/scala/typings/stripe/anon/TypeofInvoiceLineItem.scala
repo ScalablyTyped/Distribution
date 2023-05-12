@@ -7,11 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TypeofInvoiceLineItem extends StObject {
   
   val ProrationDetails: Any
+  
+  val TaxAmount: Any
 }
 object TypeofInvoiceLineItem {
   
-  inline def apply(ProrationDetails: Any): TypeofInvoiceLineItem = {
-    val __obj = js.Dynamic.literal(ProrationDetails = ProrationDetails.asInstanceOf[js.Any])
+  inline def apply(ProrationDetails: Any, TaxAmount: Any): TypeofInvoiceLineItem = {
+    val __obj = js.Dynamic.literal(ProrationDetails = ProrationDetails.asInstanceOf[js.Any], TaxAmount = TaxAmount.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofInvoiceLineItem]
   }
   
@@ -19,5 +21,7 @@ object TypeofInvoiceLineItem {
   implicit open class MutableBuilder[Self <: TypeofInvoiceLineItem] (val x: Self) extends AnyVal {
     
     inline def setProrationDetails(value: Any): Self = StObject.set(x, "ProrationDetails", value.asInstanceOf[js.Any])
+    
+    inline def setTaxAmount(value: Any): Self = StObject.set(x, "TaxAmount", value.asInstanceOf[js.Any])
   }
 }

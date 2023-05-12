@@ -12,7 +12,7 @@ trait CreateGroupOutput extends StObject {
   var Group: js.UndefOr[typings.awsSdk.clientsResourcegroupsMod.Group] = js.undefined
   
   /**
-    * The service configuration associated with the resource group. For details about the syntax of a service configuration, see Service configurations for resource groups.
+    * The service configuration associated with the resource group. For details about the syntax of a service configuration, see Service configurations for Resource Groups.
     */
   var GroupConfiguration: js.UndefOr[typings.awsSdk.clientsResourcegroupsMod.GroupConfiguration] = js.undefined
   

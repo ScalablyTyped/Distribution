@@ -1,51 +1,75 @@
 package typings.photoshop.domConstantsMod
 
-import typings.photoshop.photoshopStrings.`type`
-import typings.photoshop.photoshopStrings.clippingPath
-import typings.photoshop.photoshopStrings.content
-import typings.photoshop.photoshopStrings.entire
-import typings.photoshop.photoshopStrings.layerStyle
-import typings.photoshop.photoshopStrings.linked
-import typings.photoshop.photoshopStrings.placed
-import typings.photoshop.photoshopStrings.shape
-import typings.photoshop.photoshopStrings.vectorMask
-import typings.photoshop.photoshopStrings.video
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Rewritten from type alias, can be one of: 
-  - typings.photoshop.photoshopStrings.entire
-  - typings.photoshop.photoshopStrings.content
-  - typings.photoshop.photoshopStrings.clippingPath
-  - typings.photoshop.photoshopStrings.linked
-  - typings.photoshop.photoshopStrings.shape
-  - typings.photoshop.photoshopStrings.`type`
-  - typings.photoshop.photoshopStrings.vectorMask
-  - typings.photoshop.photoshopStrings.placed
-  - typings.photoshop.photoshopStrings.video
-  - typings.photoshop.photoshopStrings.layerStyle
-*/
-trait RasterizeType extends StObject
-object RasterizeType {
+@js.native
+sealed trait RasterizeType extends StObject
+@JSImport("photoshop/dom/Constants", "RasterizeType")
+@js.native
+object RasterizeType extends StObject {
   
-  inline def ENTIRELAYER: entire = "entire".asInstanceOf[entire]
+  @JSBracketAccess
+  def apply(value: String): js.UndefOr[RasterizeType & String] = js.native
   
-  inline def FILLCONTENT: content = "content".asInstanceOf[content]
+  @js.native
+  sealed trait ENTIRELAYER
+    extends StObject
+       with RasterizeType
+  /* "entire" */ val ENTIRELAYER: typings.photoshop.domConstantsMod.RasterizeType.ENTIRELAYER & String = js.native
   
-  inline def LAYERCLIPPINGPATH: clippingPath = "clippingPath".asInstanceOf[clippingPath]
+  @js.native
+  sealed trait FILLCONTENT
+    extends StObject
+       with RasterizeType
+  /* "content" */ val FILLCONTENT: typings.photoshop.domConstantsMod.RasterizeType.FILLCONTENT & String = js.native
   
-  inline def LAYERSTYLE: layerStyle = "layerStyle".asInstanceOf[layerStyle]
+  @js.native
+  sealed trait LAYERCLIPPINGPATH
+    extends StObject
+       with RasterizeType
+  /* "clippingPath" */ val LAYERCLIPPINGPATH: typings.photoshop.domConstantsMod.RasterizeType.LAYERCLIPPINGPATH & String = js.native
   
-  inline def LINKEDLAYERS: linked = "linked".asInstanceOf[linked]
+  @js.native
+  sealed trait LAYERSTYLE
+    extends StObject
+       with RasterizeType
+  /* "layerStyle" */ val LAYERSTYLE: typings.photoshop.domConstantsMod.RasterizeType.LAYERSTYLE & String = js.native
   
-  inline def PLACED: placed = "placed".asInstanceOf[placed]
+  @js.native
+  sealed trait LINKEDLAYERS
+    extends StObject
+       with RasterizeType
+  /* "linked" */ val LINKEDLAYERS: typings.photoshop.domConstantsMod.RasterizeType.LINKEDLAYERS & String = js.native
   
-  inline def SHAPE: shape = "shape".asInstanceOf[shape]
+  @js.native
+  sealed trait PLACED
+    extends StObject
+       with RasterizeType
+  /* "placed" */ val PLACED: typings.photoshop.domConstantsMod.RasterizeType.PLACED & String = js.native
   
-  inline def TEXTCONTENTS: `type` = "type".asInstanceOf[`type`]
+  @js.native
+  sealed trait SHAPE
+    extends StObject
+       with RasterizeType
+  /* "shape" */ val SHAPE: typings.photoshop.domConstantsMod.RasterizeType.SHAPE & String = js.native
   
-  inline def VECTORMASK: vectorMask = "vectorMask".asInstanceOf[vectorMask]
+  @js.native
+  sealed trait TEXTCONTENTS
+    extends StObject
+       with RasterizeType
+  /* "type" */ val TEXTCONTENTS: typings.photoshop.domConstantsMod.RasterizeType.TEXTCONTENTS & String = js.native
   
-  inline def VIDEO: video = "video".asInstanceOf[video]
+  @js.native
+  sealed trait VECTORMASK
+    extends StObject
+       with RasterizeType
+  /* "vectorMask" */ val VECTORMASK: typings.photoshop.domConstantsMod.RasterizeType.VECTORMASK & String = js.native
+  
+  @js.native
+  sealed trait VIDEO
+    extends StObject
+       with RasterizeType
+  /* "video" */ val VIDEO: typings.photoshop.domConstantsMod.RasterizeType.VIDEO & String = js.native
 }

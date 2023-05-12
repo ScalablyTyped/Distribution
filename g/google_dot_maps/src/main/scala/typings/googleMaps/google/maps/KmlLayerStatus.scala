@@ -6,11 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @js.native
 sealed trait KmlLayerStatus extends StObject
-/**
-  * The status returned by <code>KmlLayer</code> on the completion of loading a
-  * document. Specify these by value, or by using the constant&#39;s name. For
-  * example, <code>'OK'</code> or <code>google.maps.KmlLayerStatus.OK</code>.
-  */
 @JSGlobal("google.maps.KmlLayerStatus")
 @js.native
 object KmlLayerStatus extends StObject {

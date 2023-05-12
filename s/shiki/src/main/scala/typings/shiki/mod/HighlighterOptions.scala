@@ -20,13 +20,13 @@ trait HighlighterOptions extends StObject {
   
   /**
     * The theme to load upfront.
+    *
+    * Default to: 'nord'
     */
   var theme: js.UndefOr[IThemeRegistration] = js.undefined
   
   /**
     * A list of themes to load upfront.
-    *
-    * Default to: `['dark-plus', 'light-plus']`
     */
   var themes: js.UndefOr[js.Array[IThemeRegistration]] = js.undefined
 }

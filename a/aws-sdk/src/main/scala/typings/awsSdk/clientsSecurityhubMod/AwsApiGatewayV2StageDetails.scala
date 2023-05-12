@@ -27,7 +27,7 @@ trait AwsApiGatewayV2StageDetails extends StObject {
   var ClientCertificateId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * Indicates when the stage was created. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces. For example, 2020-03-22T13:22:13.933Z.
+    * Indicates when the stage was created. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces, and date and time should be separated by T. For example, 2020-03-22T13:22:13.933Z.
     */
   var CreatedDate: js.UndefOr[NonEmptyString] = js.undefined
   
@@ -52,7 +52,7 @@ trait AwsApiGatewayV2StageDetails extends StObject {
   var LastDeploymentStatusMessage: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * Indicates when the stage was most recently updated. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces. For example, 2020-03-22T13:22:13.933Z.
+    * Indicates when the stage was most recently updated. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces, and date and time should be separated by T. For example, 2020-03-22T13:22:13.933Z.
     */
   var LastUpdatedDate: js.UndefOr[NonEmptyString] = js.undefined
   

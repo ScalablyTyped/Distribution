@@ -9,6 +9,7 @@ import typings.electron.anon.TypeofNativeImage
 import typings.electron.anon.TypeofNotification
 import typings.electron.anon.TypeofSession
 import typings.electron.anon.TypeofTouchBar
+import typings.electron.anon.TypeofUtilityProcess
 import typings.electron.anon.TypeofWebContents
 import typings.electron.anon.TypeofWebFrameMain
 import org.scalablytyped.runtime.StObject
@@ -94,6 +95,8 @@ trait RemoteMainInterface extends StObject {
   
   var systemPreferences: SystemPreferences
   
+  var utilityProcess: TypeofUtilityProcess & Instantiable0[UtilityProcess_]
+  
   var webContents: TypeofWebContents & Instantiable0[WebContents_]
   
   var webFrameMain: TypeofWebFrameMain & Instantiable0[WebFrameMain_]
@@ -133,10 +136,11 @@ object RemoteMainInterface {
     session: TypeofSession & Instantiable0[Session_],
     shell: Shell,
     systemPreferences: SystemPreferences,
+    utilityProcess: TypeofUtilityProcess & Instantiable0[UtilityProcess_],
     webContents: TypeofWebContents & Instantiable0[WebContents_],
     webFrameMain: TypeofWebFrameMain & Instantiable0[WebFrameMain_]
   ): RemoteMainInterface = {
-    val __obj = js.Dynamic.literal(BrowserView = BrowserView.asInstanceOf[js.Any], BrowserWindow = BrowserWindow.asInstanceOf[js.Any], Menu = Menu.asInstanceOf[js.Any], MenuItem = MenuItem.asInstanceOf[js.Any], MessageChannelMain = MessageChannelMain.asInstanceOf[js.Any], Notification = Notification.asInstanceOf[js.Any], ShareMenu = ShareMenu.asInstanceOf[js.Any], TouchBar = TouchBar.asInstanceOf[js.Any], Tray = Tray.asInstanceOf[js.Any], app = app.asInstanceOf[js.Any], autoUpdater = autoUpdater.asInstanceOf[js.Any], clipboard = clipboard.asInstanceOf[js.Any], contentTracing = contentTracing.asInstanceOf[js.Any], crashReporter = crashReporter.asInstanceOf[js.Any], desktopCapturer = desktopCapturer.asInstanceOf[js.Any], dialog = dialog.asInstanceOf[js.Any], globalShortcut = globalShortcut.asInstanceOf[js.Any], inAppPurchase = inAppPurchase.asInstanceOf[js.Any], ipcMain = ipcMain.asInstanceOf[js.Any], nativeImage = nativeImage.asInstanceOf[js.Any], nativeTheme = nativeTheme.asInstanceOf[js.Any], net = net.asInstanceOf[js.Any], netLog = netLog.asInstanceOf[js.Any], powerMonitor = powerMonitor.asInstanceOf[js.Any], powerSaveBlocker = powerSaveBlocker.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], pushNotifications = pushNotifications.asInstanceOf[js.Any], safeStorage = safeStorage.asInstanceOf[js.Any], screen = screen.asInstanceOf[js.Any], session = session.asInstanceOf[js.Any], shell = shell.asInstanceOf[js.Any], systemPreferences = systemPreferences.asInstanceOf[js.Any], webContents = webContents.asInstanceOf[js.Any], webFrameMain = webFrameMain.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(BrowserView = BrowserView.asInstanceOf[js.Any], BrowserWindow = BrowserWindow.asInstanceOf[js.Any], Menu = Menu.asInstanceOf[js.Any], MenuItem = MenuItem.asInstanceOf[js.Any], MessageChannelMain = MessageChannelMain.asInstanceOf[js.Any], Notification = Notification.asInstanceOf[js.Any], ShareMenu = ShareMenu.asInstanceOf[js.Any], TouchBar = TouchBar.asInstanceOf[js.Any], Tray = Tray.asInstanceOf[js.Any], app = app.asInstanceOf[js.Any], autoUpdater = autoUpdater.asInstanceOf[js.Any], clipboard = clipboard.asInstanceOf[js.Any], contentTracing = contentTracing.asInstanceOf[js.Any], crashReporter = crashReporter.asInstanceOf[js.Any], desktopCapturer = desktopCapturer.asInstanceOf[js.Any], dialog = dialog.asInstanceOf[js.Any], globalShortcut = globalShortcut.asInstanceOf[js.Any], inAppPurchase = inAppPurchase.asInstanceOf[js.Any], ipcMain = ipcMain.asInstanceOf[js.Any], nativeImage = nativeImage.asInstanceOf[js.Any], nativeTheme = nativeTheme.asInstanceOf[js.Any], net = net.asInstanceOf[js.Any], netLog = netLog.asInstanceOf[js.Any], powerMonitor = powerMonitor.asInstanceOf[js.Any], powerSaveBlocker = powerSaveBlocker.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], pushNotifications = pushNotifications.asInstanceOf[js.Any], safeStorage = safeStorage.asInstanceOf[js.Any], screen = screen.asInstanceOf[js.Any], session = session.asInstanceOf[js.Any], shell = shell.asInstanceOf[js.Any], systemPreferences = systemPreferences.asInstanceOf[js.Any], utilityProcess = utilityProcess.asInstanceOf[js.Any], webContents = webContents.asInstanceOf[js.Any], webFrameMain = webFrameMain.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoteMainInterface]
   }
   
@@ -210,6 +214,8 @@ object RemoteMainInterface {
     inline def setTouchBar(value: TypeofTouchBar & (Instantiable1[/* options */ TouchBarConstructorOptions, TouchBar])): Self = StObject.set(x, "TouchBar", value.asInstanceOf[js.Any])
     
     inline def setTray(value: Instantiable2[/* image */ NativeImage_ | String, /* guid */ js.UndefOr[String], Tray]): Self = StObject.set(x, "Tray", value.asInstanceOf[js.Any])
+    
+    inline def setUtilityProcess(value: TypeofUtilityProcess & Instantiable0[UtilityProcess_]): Self = StObject.set(x, "utilityProcess", value.asInstanceOf[js.Any])
     
     inline def setWebContents(value: TypeofWebContents & Instantiable0[WebContents_]): Self = StObject.set(x, "webContents", value.asInstanceOf[js.Any])
     

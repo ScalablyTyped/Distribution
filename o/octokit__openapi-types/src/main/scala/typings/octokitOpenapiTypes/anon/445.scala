@@ -6,20 +6,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `445` extends StObject {
   
-  /** Response */
-  var `200`: ContentApplicationjsonContactemail
+  var contexts: js.Array[Octicon]
 }
 object `445` {
   
-  inline def apply(`200`: ContentApplicationjsonContactemail): `445` = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("200")(`200`.asInstanceOf[js.Any])
+  inline def apply(contexts: js.Array[Octicon]): `445` = {
+    val __obj = js.Dynamic.literal(contexts = contexts.asInstanceOf[js.Any])
     __obj.asInstanceOf[`445`]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: `445`] (val x: Self) extends AnyVal {
     
-    inline def set200(value: ContentApplicationjsonContactemail): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
+    inline def setContexts(value: js.Array[Octicon]): Self = StObject.set(x, "contexts", value.asInstanceOf[js.Any])
+    
+    inline def setContextsVarargs(value: Octicon*): Self = StObject.set(x, "contexts", js.Array(value*))
   }
 }

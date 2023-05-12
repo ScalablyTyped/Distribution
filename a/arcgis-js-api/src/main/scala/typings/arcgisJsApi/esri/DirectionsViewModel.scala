@@ -163,7 +163,7 @@ trait DirectionsViewModel
   def saveAs(portalItem: js.Promise[PortalItem], options: DirectionsViewModelSaveAsOptions): js.Promise[PortalItem] = js.native
   
   /**
-    * The selected travel mode.
+    * The travel mode that will be used by [getDirections()](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions-DirectionsViewModel.html#getDirections) when requesting the route and directions.
     *
     * @default null
     *
@@ -178,7 +178,7 @@ trait DirectionsViewModel
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions-DirectionsViewModel.html#serviceDescription)
     */
-  val serviceDescription: DirectionsViewModelServiceDescription = js.native
+  val serviceDescription: ServiceDescription = js.native
   
   /**
     * The current state of the view model.
@@ -215,7 +215,7 @@ trait DirectionsViewModel
   val timeAttribute: DirectionsViewModelTimeAttribute = js.native
   
   /**
-    * Array of objects containing properties specific to either an ArcGIS service or organization's travel modes.
+    * An array of available [travel modes](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-TravelMode.html) from the associated [RouteLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions-DirectionsViewModel.html#layer)'s routing service (see [RouteLayer.url](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-RouteLayer.html#url)).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions-DirectionsViewModel.html#travelModes)
     */

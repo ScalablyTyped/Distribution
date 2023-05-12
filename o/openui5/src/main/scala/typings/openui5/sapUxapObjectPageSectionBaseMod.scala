@@ -161,6 +161,8 @@ object sapUxapObjectPageSectionBaseMod {
     def getImportance(): Importance | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Importance * / any */ String) = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Returns the control name text.
       *
       * To be overwritten by the specific control method.
@@ -239,15 +241,6 @@ object sapUxapObjectPageSectionBaseMod {
     sImportance: Importance): this.type = js.native
     
     /**
-      * Returns the DOM Element that should get the focus.
-      *
-      * To be overwritten by the specific control method.
-      *
-      * @returns this for chaining
-      */
-    def setInvisibleTextLabelValue(): this.type = js.native
-    
-    /**
       * Sets a new value for property {@link #getTitle title}.
       *
       * Defines the title of the respective section/subsection.
@@ -296,6 +289,16 @@ object sapUxapObjectPageSectionBaseMod {
       * New value for property `titleLevel`
       */
     sTitleLevel: TitleLevel): this.type = js.native
+    
+    /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
+      * Performs the update of the invisible text label. This method is called for example when the section title
+      * is changed.
+      *
+      * @returns this for chaining
+      */
+    def updateInvisibleTextLabelValue(): this.type = js.native
   }
   
   trait ObjectPageSectionBaseSettings

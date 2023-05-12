@@ -6,13 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @js.native
 sealed trait DistanceMatrixStatus extends StObject
-/**
-  * The top-level status about the request in general returned by the
-  * <code>DistanceMatrixService</code> upon completion of a distance matrix
-  * request. Specify these by value, or by using the constant&#39;s name. For
-  * example, <code>'OK'</code> or
-  * <code>google.maps.DistanceMatrixStatus.OK</code>.
-  */
 @JSGlobal("google.maps.DistanceMatrixStatus")
 @js.native
 object DistanceMatrixStatus extends StObject {

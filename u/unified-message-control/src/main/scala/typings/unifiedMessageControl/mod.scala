@@ -5,9 +5,8 @@ import typings.unifiedMessageControl.unifiedMessageControlBooleans.`false`
 import typings.unifiedMessageControl.unifiedMessageControlBooleans.`true`
 import typings.unist.mod.Data
 import typings.unist.mod.NodeData
-import typings.unistUtilIs.mod.Props
-import typings.unistUtilIs.mod.TestFunctionAnything
-import typings.unistUtilIs.mod.Type
+import typings.unistUtilIs.libMod.Props
+import typings.unistUtilIs.libMod.TestFunctionAnything
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -190,15 +189,11 @@ object mod {
       
       inline def setTest(value: Test): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
       
-      inline def setTestFunction3(
-        value: (/* node */ typings.unistUtilIs.mod.Node, /* index */ js.UndefOr[Double | Null], /* parent */ js.UndefOr[typings.unistUtilIs.mod.Parent | Null]) => Boolean | Unit
-      ): Self = StObject.set(x, "test", js.Any.fromFunction3(value))
-      
       inline def setTestNull: Self = StObject.set(x, "test", null)
       
       inline def setTestUndefined: Self = StObject.set(x, "test", js.undefined)
       
-      inline def setTestVarargs(value: (Type | Props | TestFunctionAnything)*): Self = StObject.set(x, "test", js.Array(value*))
+      inline def setTestVarargs(value: (String | Props | TestFunctionAnything)*): Self = StObject.set(x, "test", js.Array(value*))
     }
   }
   

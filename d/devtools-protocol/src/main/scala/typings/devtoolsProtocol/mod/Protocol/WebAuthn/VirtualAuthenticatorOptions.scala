@@ -39,6 +39,13 @@ trait VirtualAuthenticatorOptions extends StObject {
   var hasMinPinLength: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * If set to true, the authenticator will support the prf extension.
+    * https://w3c.github.io/webauthn/#prf-extension
+    * Defaults to false.
+    */
+  var hasPrf: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * Defaults to false.
     */
   var hasResidentKey: js.UndefOr[Boolean] = js.undefined
@@ -87,6 +94,10 @@ object VirtualAuthenticatorOptions {
     inline def setHasMinPinLength(value: Boolean): Self = StObject.set(x, "hasMinPinLength", value.asInstanceOf[js.Any])
     
     inline def setHasMinPinLengthUndefined: Self = StObject.set(x, "hasMinPinLength", js.undefined)
+    
+    inline def setHasPrf(value: Boolean): Self = StObject.set(x, "hasPrf", value.asInstanceOf[js.Any])
+    
+    inline def setHasPrfUndefined: Self = StObject.set(x, "hasPrf", js.undefined)
     
     inline def setHasResidentKey(value: Boolean): Self = StObject.set(x, "hasResidentKey", value.asInstanceOf[js.Any])
     

@@ -1,11 +1,11 @@
 package typings.slate.distInterfacesEditorMod
 
-import typings.slate.distInterfacesCustomTypesMod.ExtendedType
 import typings.slate.distInterfacesEditorMod.^
 import typings.slate.distInterfacesNodeMod.Node
 import typings.slate.distInterfacesPathMod.Path
 import typings.slate.distInterfacesRangeMod.Range
 import typings.slate.distInterfacesTextMod.Text
+import typings.slate.distTypesCustomTypesMod.ExtendedType
 import typings.slate.slateStrings.text_
 import typings.std.Omit
 import typings.std.Partial

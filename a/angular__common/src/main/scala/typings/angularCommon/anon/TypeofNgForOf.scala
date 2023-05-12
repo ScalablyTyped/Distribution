@@ -29,7 +29,8 @@ trait TypeofNgForOf extends StObject {
     js.Object, 
     scala.Nothing, 
     scala.Nothing, 
-    `true`
+    `true`, 
+    scala.Nothing
   ]
   
   /* static member */
@@ -47,7 +48,8 @@ object TypeofNgForOf {
       js.Object, 
       scala.Nothing, 
       scala.Nothing, 
-      `true`
+      `true`, 
+      scala.Nothing
     ],
     ɵfac: ɵɵFactoryDeclaration[typings.angularCommon.mod.NgForOf[Any, Any], scala.Nothing]
   ): TypeofNgForOf = {
@@ -71,7 +73,8 @@ object TypeofNgForOf {
           js.Object, 
           scala.Nothing, 
           scala.Nothing, 
-          `true`
+          `true`, 
+          scala.Nothing
         ]
     ): Self = StObject.set(x, "\u0275dir", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,7 @@ object libIconsTrophyFilledMod extends Shortcut {
   @js.native
   trait TrophyFilledIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_TrophyFilledIconType: String = js.native

@@ -1,7 +1,9 @@
 package typings.arcgisJsApi.esri
 
+import typings.arcgisJsApi.anon.FeatureLayerPropertiestyp
 import typings.arcgisJsApi.anon.MapViewPropertiestype2d
 import typings.arcgisJsApi.anon.SceneViewPropertiestype3d
+import typings.arcgisJsApi.anon.SubtypeSublayertypesubtyp
 import typings.arcgisJsApi.arcgisJsApiStrings.all
 import typings.arcgisJsApi.arcgisJsApiStrings.sequential
 import org.scalablytyped.runtime.StObject
@@ -58,7 +60,7 @@ trait FeatureFormProperties
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm.html#layer)
     */
-  var layer: js.UndefOr[FeatureLayerProperties] = js.undefined
+  var layer: js.UndefOr[FeatureLayerPropertiestyp | SubtypeSublayertypesubtyp] = js.undefined
   
   /**
     * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) or [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
@@ -104,7 +106,7 @@ object FeatureFormProperties {
     
     inline def setHeadingLevelUndefined: Self = StObject.set(x, "headingLevel", js.undefined)
     
-    inline def setLayer(value: FeatureLayerProperties): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+    inline def setLayer(value: FeatureLayerPropertiestyp | SubtypeSublayertypesubtyp): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
     inline def setLayerUndefined: Self = StObject.set(x, "layer", js.undefined)
     

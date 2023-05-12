@@ -9,13 +9,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DatepickerOptions extends StObject {
   
   /**
-    * Automatically close picker when date is selected
+    * Automatically close picker when date is selected.
     * @default false
     */
   var autoClose: Boolean
   
   /**
-    * Specify a DOM element to render the calendar in, by default it will be placed before the input
+    * Specify a DOM element OR selector for a DOM element to render
+    * the calendar in, by default it will be placed before the input.
     * @default null
     */
   var container: Element | Null
@@ -39,7 +40,8 @@ trait DatepickerOptions extends StObject {
   var disableWeekends: Boolean
   
   /**
-    * An array of string returned by `Date.toDateString()`, indicating there are events in the specified days.
+    * An array of string returned by `Date.toDateString()`,
+    * indicating there are events in the specified days.
     * @default []
     */
   var events: js.Array[String]
@@ -51,13 +53,15 @@ trait DatepickerOptions extends StObject {
   var firstDay: Double
   
   /**
-    * The date output format for the input field value.
+    * The date output format for the input field value
+    * or a function taking the date and outputting the
+    * formatted date string.
     * @default 'mmm dd, yyyy'
     */
-  var format: String
+  var format: String | (js.Function1[/* d */ js.Date, String])
   
   /**
-    * Internationalization options
+    * Internationalization options.
     */
   var i18n: PartialInternationalizati
   
@@ -80,25 +84,26 @@ trait DatepickerOptions extends StObject {
   var minDate: js.Date | Null
   
   /**
-    * Callback function when Datepicker is closed
+    * Callback function when Datepicker is closed.
     * @default null
     */
   var onClose: (js.ThisFunction0[/* this */ Datepicker, Unit]) | Null
   
   /**
-    * Callback function when Datepicker HTML is refreshed
+    * Callback function when Datepicker HTML is refreshed.
     * @default null
     */
   var onDraw: (js.ThisFunction0[/* this */ Datepicker, Unit]) | Null
   
   /**
-    * Callback function when Datepicker is opened
+    * Callback function when Datepicker is opened.
     * @default null
     */
   var onOpen: (js.ThisFunction0[/* this */ Datepicker, Unit]) | Null
   
   /**
-    * Callback function when date is selected, first parameter is the newly selected date.
+    * Callback function when date is selected,
+    * first parameter is the newly selected date.
     * @default null
     */
   var onSelect: (js.ThisFunction1[/* this */ Datepicker, /* selectedDate */ js.Date, Unit]) | Null
@@ -110,19 +115,20 @@ trait DatepickerOptions extends StObject {
   var parse: (js.Function2[/* value */ String, /* format */ String, js.Date]) | Null
   
   /**
-    * Make the `defaultDate` the initial selected value
+    * Make the `defaultDate` the initial selected value.
     * @default false
     */
   var setDefaultDate: Boolean
   
   /**
-    * Show the clear button in the datepicker
+    * Show the clear button in the datepicker.
     * @default false
     */
   var showClearBtn: Boolean
   
   /**
-    * Render days of the calendar grid that fall in the next or previous month.
+    * Render days of the calendar grid that fall in the next
+    * or previous month.
     * @default false
     */
   var showDaysInNextAndPreviousMonths: Boolean
@@ -138,6 +144,12 @@ trait DatepickerOptions extends StObject {
     * @default 10
     */
   var yearRange: Double | js.Array[Double]
+  
+  /**
+    * Sort year range in reverse order.
+    * @default false
+    */
+  var yearRangeReverse: Boolean
 }
 object DatepickerOptions {
   
@@ -146,16 +158,17 @@ object DatepickerOptions {
     disableWeekends: Boolean,
     events: js.Array[String],
     firstDay: Double,
-    format: String,
+    format: String | (js.Function1[/* d */ js.Date, String]),
     i18n: PartialInternationalizati,
     isRTL: Boolean,
     setDefaultDate: Boolean,
     showClearBtn: Boolean,
     showDaysInNextAndPreviousMonths: Boolean,
     showMonthAfterYear: Boolean,
-    yearRange: Double | js.Array[Double]
+    yearRange: Double | js.Array[Double],
+    yearRangeReverse: Boolean
   ): DatepickerOptions = {
-    val __obj = js.Dynamic.literal(autoClose = autoClose.asInstanceOf[js.Any], disableWeekends = disableWeekends.asInstanceOf[js.Any], events = events.asInstanceOf[js.Any], firstDay = firstDay.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], i18n = i18n.asInstanceOf[js.Any], isRTL = isRTL.asInstanceOf[js.Any], setDefaultDate = setDefaultDate.asInstanceOf[js.Any], showClearBtn = showClearBtn.asInstanceOf[js.Any], showDaysInNextAndPreviousMonths = showDaysInNextAndPreviousMonths.asInstanceOf[js.Any], showMonthAfterYear = showMonthAfterYear.asInstanceOf[js.Any], yearRange = yearRange.asInstanceOf[js.Any], container = null, defaultDate = null, disableDayFn = null, maxDate = null, minDate = null, onClose = null, onDraw = null, onOpen = null, onSelect = null, parse = null)
+    val __obj = js.Dynamic.literal(autoClose = autoClose.asInstanceOf[js.Any], disableWeekends = disableWeekends.asInstanceOf[js.Any], events = events.asInstanceOf[js.Any], firstDay = firstDay.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], i18n = i18n.asInstanceOf[js.Any], isRTL = isRTL.asInstanceOf[js.Any], setDefaultDate = setDefaultDate.asInstanceOf[js.Any], showClearBtn = showClearBtn.asInstanceOf[js.Any], showDaysInNextAndPreviousMonths = showDaysInNextAndPreviousMonths.asInstanceOf[js.Any], showMonthAfterYear = showMonthAfterYear.asInstanceOf[js.Any], yearRange = yearRange.asInstanceOf[js.Any], yearRangeReverse = yearRangeReverse.asInstanceOf[js.Any], container = null, defaultDate = null, disableDayFn = null, maxDate = null, minDate = null, onClose = null, onDraw = null, onOpen = null, onSelect = null, parse = null)
     __obj.asInstanceOf[DatepickerOptions]
   }
   
@@ -184,7 +197,9 @@ object DatepickerOptions {
     
     inline def setFirstDay(value: Double): Self = StObject.set(x, "firstDay", value.asInstanceOf[js.Any])
     
-    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: String | (js.Function1[/* d */ js.Date, String])): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    
+    inline def setFormatFunction1(value: /* d */ js.Date => String): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
     
     inline def setI18n(value: PartialInternationalizati): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])
     
@@ -227,6 +242,8 @@ object DatepickerOptions {
     inline def setShowMonthAfterYear(value: Boolean): Self = StObject.set(x, "showMonthAfterYear", value.asInstanceOf[js.Any])
     
     inline def setYearRange(value: Double | js.Array[Double]): Self = StObject.set(x, "yearRange", value.asInstanceOf[js.Any])
+    
+    inline def setYearRangeReverse(value: Boolean): Self = StObject.set(x, "yearRangeReverse", value.asInstanceOf[js.Any])
     
     inline def setYearRangeVarargs(value: Double*): Self = StObject.set(x, "yearRange", js.Array(value*))
   }

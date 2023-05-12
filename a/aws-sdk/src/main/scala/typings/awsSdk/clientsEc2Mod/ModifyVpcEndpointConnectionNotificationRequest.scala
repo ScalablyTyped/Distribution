@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ModifyVpcEndpointConnectionNotificationRequest extends StObject {
   
   /**
-    * One or more events for the endpoint. Valid values are Accept, Connect, Delete, and Reject.
+    * The events for the endpoint. Valid values are Accept, Connect, Delete, and Reject.
     */
   var ConnectionEvents: js.UndefOr[ValueStringList] = js.undefined
   

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ResourceCreationLimitPolicy extends StObject {
   
   /**
-    * The maximum number of game sessions that an individual can create during the policy period. 
+    * A policy that puts limits on the number of game sessions that a player can create within a specified span of time. With this policy, you can control players' ability to consume available resources. The policy is evaluated when a player tries to create a new game session. On receiving a CreateGameSession request, Amazon GameLift checks that the player (identified by CreatorId) has created fewer than game session limit in the specified time period.
     */
   var NewGameSessionsPerCreator: js.UndefOr[WholeNumber] = js.undefined
   

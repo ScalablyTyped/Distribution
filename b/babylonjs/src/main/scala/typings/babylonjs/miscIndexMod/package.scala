@@ -61,9 +61,125 @@ inline def ApplyPostProcess(
   internalTexture: InternalTexture,
   scene: Scene,
   `type`: Double,
+  samplingMode: Double,
+  format: Double,
+  width: Double
+): js.Promise[InternalTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("ApplyPostProcess")(postProcessName.asInstanceOf[js.Any], internalTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], format.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[js.Promise[InternalTexture]]
+inline def ApplyPostProcess(
+  postProcessName: String,
+  internalTexture: InternalTexture,
+  scene: Scene,
+  `type`: Double,
+  samplingMode: Double,
+  format: Double,
+  width: Double,
+  height: Double
+): js.Promise[InternalTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("ApplyPostProcess")(postProcessName.asInstanceOf[js.Any], internalTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], format.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[js.Promise[InternalTexture]]
+inline def ApplyPostProcess(
+  postProcessName: String,
+  internalTexture: InternalTexture,
+  scene: Scene,
+  `type`: Double,
+  samplingMode: Double,
+  format: Double,
+  width: Unit,
+  height: Double
+): js.Promise[InternalTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("ApplyPostProcess")(postProcessName.asInstanceOf[js.Any], internalTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], format.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[js.Promise[InternalTexture]]
+inline def ApplyPostProcess(
+  postProcessName: String,
+  internalTexture: InternalTexture,
+  scene: Scene,
+  `type`: Double,
+  samplingMode: Double,
+  format: Unit,
+  width: Double
+): js.Promise[InternalTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("ApplyPostProcess")(postProcessName.asInstanceOf[js.Any], internalTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], format.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[js.Promise[InternalTexture]]
+inline def ApplyPostProcess(
+  postProcessName: String,
+  internalTexture: InternalTexture,
+  scene: Scene,
+  `type`: Double,
+  samplingMode: Double,
+  format: Unit,
+  width: Double,
+  height: Double
+): js.Promise[InternalTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("ApplyPostProcess")(postProcessName.asInstanceOf[js.Any], internalTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], format.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[js.Promise[InternalTexture]]
+inline def ApplyPostProcess(
+  postProcessName: String,
+  internalTexture: InternalTexture,
+  scene: Scene,
+  `type`: Double,
+  samplingMode: Double,
+  format: Unit,
+  width: Unit,
+  height: Double
+): js.Promise[InternalTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("ApplyPostProcess")(postProcessName.asInstanceOf[js.Any], internalTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], format.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[js.Promise[InternalTexture]]
+inline def ApplyPostProcess(
+  postProcessName: String,
+  internalTexture: InternalTexture,
+  scene: Scene,
+  `type`: Double,
   samplingMode: Unit,
   format: Double
 ): js.Promise[InternalTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("ApplyPostProcess")(postProcessName.asInstanceOf[js.Any], internalTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[js.Promise[InternalTexture]]
+inline def ApplyPostProcess(
+  postProcessName: String,
+  internalTexture: InternalTexture,
+  scene: Scene,
+  `type`: Double,
+  samplingMode: Unit,
+  format: Double,
+  width: Double
+): js.Promise[InternalTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("ApplyPostProcess")(postProcessName.asInstanceOf[js.Any], internalTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], format.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[js.Promise[InternalTexture]]
+inline def ApplyPostProcess(
+  postProcessName: String,
+  internalTexture: InternalTexture,
+  scene: Scene,
+  `type`: Double,
+  samplingMode: Unit,
+  format: Double,
+  width: Double,
+  height: Double
+): js.Promise[InternalTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("ApplyPostProcess")(postProcessName.asInstanceOf[js.Any], internalTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], format.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[js.Promise[InternalTexture]]
+inline def ApplyPostProcess(
+  postProcessName: String,
+  internalTexture: InternalTexture,
+  scene: Scene,
+  `type`: Double,
+  samplingMode: Unit,
+  format: Double,
+  width: Unit,
+  height: Double
+): js.Promise[InternalTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("ApplyPostProcess")(postProcessName.asInstanceOf[js.Any], internalTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], format.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[js.Promise[InternalTexture]]
+inline def ApplyPostProcess(
+  postProcessName: String,
+  internalTexture: InternalTexture,
+  scene: Scene,
+  `type`: Double,
+  samplingMode: Unit,
+  format: Unit,
+  width: Double
+): js.Promise[InternalTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("ApplyPostProcess")(postProcessName.asInstanceOf[js.Any], internalTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], format.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[js.Promise[InternalTexture]]
+inline def ApplyPostProcess(
+  postProcessName: String,
+  internalTexture: InternalTexture,
+  scene: Scene,
+  `type`: Double,
+  samplingMode: Unit,
+  format: Unit,
+  width: Double,
+  height: Double
+): js.Promise[InternalTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("ApplyPostProcess")(postProcessName.asInstanceOf[js.Any], internalTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], format.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[js.Promise[InternalTexture]]
+inline def ApplyPostProcess(
+  postProcessName: String,
+  internalTexture: InternalTexture,
+  scene: Scene,
+  `type`: Double,
+  samplingMode: Unit,
+  format: Unit,
+  width: Unit,
+  height: Double
+): js.Promise[InternalTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("ApplyPostProcess")(postProcessName.asInstanceOf[js.Any], internalTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], format.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[js.Promise[InternalTexture]]
 inline def ApplyPostProcess(
   postProcessName: String,
   internalTexture: InternalTexture,
@@ -84,9 +200,125 @@ inline def ApplyPostProcess(
   internalTexture: InternalTexture,
   scene: Scene,
   `type`: Unit,
+  samplingMode: Double,
+  format: Double,
+  width: Double
+): js.Promise[InternalTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("ApplyPostProcess")(postProcessName.asInstanceOf[js.Any], internalTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], format.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[js.Promise[InternalTexture]]
+inline def ApplyPostProcess(
+  postProcessName: String,
+  internalTexture: InternalTexture,
+  scene: Scene,
+  `type`: Unit,
+  samplingMode: Double,
+  format: Double,
+  width: Double,
+  height: Double
+): js.Promise[InternalTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("ApplyPostProcess")(postProcessName.asInstanceOf[js.Any], internalTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], format.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[js.Promise[InternalTexture]]
+inline def ApplyPostProcess(
+  postProcessName: String,
+  internalTexture: InternalTexture,
+  scene: Scene,
+  `type`: Unit,
+  samplingMode: Double,
+  format: Double,
+  width: Unit,
+  height: Double
+): js.Promise[InternalTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("ApplyPostProcess")(postProcessName.asInstanceOf[js.Any], internalTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], format.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[js.Promise[InternalTexture]]
+inline def ApplyPostProcess(
+  postProcessName: String,
+  internalTexture: InternalTexture,
+  scene: Scene,
+  `type`: Unit,
+  samplingMode: Double,
+  format: Unit,
+  width: Double
+): js.Promise[InternalTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("ApplyPostProcess")(postProcessName.asInstanceOf[js.Any], internalTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], format.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[js.Promise[InternalTexture]]
+inline def ApplyPostProcess(
+  postProcessName: String,
+  internalTexture: InternalTexture,
+  scene: Scene,
+  `type`: Unit,
+  samplingMode: Double,
+  format: Unit,
+  width: Double,
+  height: Double
+): js.Promise[InternalTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("ApplyPostProcess")(postProcessName.asInstanceOf[js.Any], internalTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], format.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[js.Promise[InternalTexture]]
+inline def ApplyPostProcess(
+  postProcessName: String,
+  internalTexture: InternalTexture,
+  scene: Scene,
+  `type`: Unit,
+  samplingMode: Double,
+  format: Unit,
+  width: Unit,
+  height: Double
+): js.Promise[InternalTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("ApplyPostProcess")(postProcessName.asInstanceOf[js.Any], internalTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], format.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[js.Promise[InternalTexture]]
+inline def ApplyPostProcess(
+  postProcessName: String,
+  internalTexture: InternalTexture,
+  scene: Scene,
+  `type`: Unit,
   samplingMode: Unit,
   format: Double
 ): js.Promise[InternalTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("ApplyPostProcess")(postProcessName.asInstanceOf[js.Any], internalTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[js.Promise[InternalTexture]]
+inline def ApplyPostProcess(
+  postProcessName: String,
+  internalTexture: InternalTexture,
+  scene: Scene,
+  `type`: Unit,
+  samplingMode: Unit,
+  format: Double,
+  width: Double
+): js.Promise[InternalTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("ApplyPostProcess")(postProcessName.asInstanceOf[js.Any], internalTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], format.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[js.Promise[InternalTexture]]
+inline def ApplyPostProcess(
+  postProcessName: String,
+  internalTexture: InternalTexture,
+  scene: Scene,
+  `type`: Unit,
+  samplingMode: Unit,
+  format: Double,
+  width: Double,
+  height: Double
+): js.Promise[InternalTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("ApplyPostProcess")(postProcessName.asInstanceOf[js.Any], internalTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], format.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[js.Promise[InternalTexture]]
+inline def ApplyPostProcess(
+  postProcessName: String,
+  internalTexture: InternalTexture,
+  scene: Scene,
+  `type`: Unit,
+  samplingMode: Unit,
+  format: Double,
+  width: Unit,
+  height: Double
+): js.Promise[InternalTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("ApplyPostProcess")(postProcessName.asInstanceOf[js.Any], internalTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], format.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[js.Promise[InternalTexture]]
+inline def ApplyPostProcess(
+  postProcessName: String,
+  internalTexture: InternalTexture,
+  scene: Scene,
+  `type`: Unit,
+  samplingMode: Unit,
+  format: Unit,
+  width: Double
+): js.Promise[InternalTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("ApplyPostProcess")(postProcessName.asInstanceOf[js.Any], internalTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], format.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[js.Promise[InternalTexture]]
+inline def ApplyPostProcess(
+  postProcessName: String,
+  internalTexture: InternalTexture,
+  scene: Scene,
+  `type`: Unit,
+  samplingMode: Unit,
+  format: Unit,
+  width: Double,
+  height: Double
+): js.Promise[InternalTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("ApplyPostProcess")(postProcessName.asInstanceOf[js.Any], internalTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], format.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[js.Promise[InternalTexture]]
+inline def ApplyPostProcess(
+  postProcessName: String,
+  internalTexture: InternalTexture,
+  scene: Scene,
+  `type`: Unit,
+  samplingMode: Unit,
+  format: Unit,
+  width: Unit,
+  height: Double
+): js.Promise[InternalTexture] = (^.asInstanceOf[js.Dynamic].applyDynamic("ApplyPostProcess")(postProcessName.asInstanceOf[js.Any], internalTexture.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], samplingMode.asInstanceOf[js.Any], format.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[js.Promise[InternalTexture]]
 
 inline def CreateEnvTextureAsync(texture: BaseTexture): js.Promise[js.typedarray.ArrayBuffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateEnvTextureAsync")(texture.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.typedarray.ArrayBuffer]]
 inline def CreateEnvTextureAsync(texture: BaseTexture, options: CreateEnvTextureOptions): js.Promise[js.typedarray.ArrayBuffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateEnvTextureAsync")(texture.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.typedarray.ArrayBuffer]]
@@ -206,8 +438,9 @@ inline def CreateScreenshotUsingRenderTarget(
   antialiasing: js.UndefOr[Boolean],
   fileName: js.UndefOr[String],
   renderSprites: js.UndefOr[Boolean],
-  enableStencilBuffer: js.UndefOr[Boolean]
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateScreenshotUsingRenderTarget")(engine.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], size.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], samples.asInstanceOf[js.Any], antialiasing.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], renderSprites.asInstanceOf[js.Any], enableStencilBuffer.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  enableStencilBuffer: js.UndefOr[Boolean],
+  useLayerMask: js.UndefOr[Boolean]
+): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateScreenshotUsingRenderTarget")(engine.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], size.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], samples.asInstanceOf[js.Any], antialiasing.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], renderSprites.asInstanceOf[js.Any], enableStencilBuffer.asInstanceOf[js.Any], useLayerMask.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
 inline def CreateScreenshotUsingRenderTargetAsync(
   engine: Engine,
@@ -217,8 +450,10 @@ inline def CreateScreenshotUsingRenderTargetAsync(
   samples: js.UndefOr[Double],
   antialiasing: js.UndefOr[Boolean],
   fileName: js.UndefOr[String],
-  renderSprites: js.UndefOr[Boolean]
-): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateScreenshotUsingRenderTargetAsync")(engine.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], size.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], samples.asInstanceOf[js.Any], antialiasing.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], renderSprites.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  renderSprites: js.UndefOr[Boolean],
+  enableStencilBuffer: js.UndefOr[Boolean],
+  useLayerMask: js.UndefOr[Boolean]
+): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateScreenshotUsingRenderTargetAsync")(engine.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], size.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any], samples.asInstanceOf[js.Any], antialiasing.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], renderSprites.asInstanceOf[js.Any], enableStencilBuffer.asInstanceOf[js.Any], useLayerMask.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
 
 inline def CreateScreenshotWithResizeAsync(engine: Engine, camera: Camera, width: Double, height: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateScreenshotWithResizeAsync")(engine.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 inline def CreateScreenshotWithResizeAsync(engine: Engine, camera: Camera, width: Double, height: Double, mimeType: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateScreenshotWithResizeAsync")(engine.asInstanceOf[js.Any], camera.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], mimeType.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]

@@ -3,6 +3,7 @@ package typings.webextensionPolyfill.namespacesRuntimeMod.Runtime
 import typings.std.Window
 import typings.webextensionPolyfill.namespacesEventsMod.Events.Event
 import typings.webextensionPolyfill.namespacesManifestMod.Manifest.WebExtensionManifest
+import typings.webextensionPolyfill.webextensionPolyfillBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -120,9 +121,19 @@ trait Static extends StObject {
     *
     * @param message Optional. The message sent by the calling script.
     * @param sender
+    * @param sendResponse Function to call (at most once) when you have a response. This is an alternative to returning a
+    * Promise. The argument should be any JSON-ifiable object. If you have more than one <code>onMessage</code>
+    * listener in the same document, then only one may send a response. This function becomes invalid when the event listener
+    * returns, unless you return true from the event listener to indicate you wish to send a response asynchronously (this
+    * will keep the message channel open to the other end until <code>sendResponse</code> is called).
     */
   var onMessage: Event[
-    js.Function2[/* message */ Any, /* sender */ MessageSender, js.Promise[Any] | Unit]
+    js.Function3[
+      /* message */ Any, 
+      /* sender */ MessageSender, 
+      /* sendResponse */ js.Function0[Unit], 
+      js.Promise[Any] | `true` | Unit
+    ]
   ] = js.native
   
   /**
@@ -130,9 +141,19 @@ trait Static extends StObject {
     *
     * @param message Optional. The message sent by the calling script.
     * @param sender
+    * @param sendResponse Function to call (at most once) when you have a response. This is an alternative to returning a
+    * Promise. The argument should be any JSON-ifiable object. If you have more than one <code>onMessage</code>
+    * listener in the same document, then only one may send a response. This function becomes invalid when the event listener
+    * returns, unless you return true from the event listener to indicate you wish to send a response asynchronously (this
+    * will keep the message channel open to the other end until <code>sendResponse</code> is called).
     */
   var onMessageExternal: Event[
-    js.Function2[/* message */ Any, /* sender */ MessageSender, js.Promise[Any] | Unit]
+    js.Function3[
+      /* message */ Any, 
+      /* sender */ MessageSender, 
+      /* sendResponse */ js.Function0[Unit], 
+      js.Promise[Any] | `true` | Unit
+    ]
   ] = js.native
   
   /**

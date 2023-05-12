@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** Properties of a breakpoint passed to the setInstructionBreakpoints request */
+/** Properties of a breakpoint passed to the `setInstructionBreakpoints` request */
 trait InstructionBreakpoint extends StObject {
   
   /** An expression for conditional breakpoints.
@@ -19,7 +19,7 @@ trait InstructionBreakpoint extends StObject {
   var hitCondition: js.UndefOr[String] = js.undefined
   
   /** The instruction reference of the breakpoint.
-  			This should be a memory or instruction pointer reference from an EvaluateResponse, Variable, StackFrame, GotoTarget, or Breakpoint.
+  			This should be a memory or instruction pointer reference from an `EvaluateResponse`, `Variable`, `StackFrame`, `GotoTarget`, or `Breakpoint`.
   		*/
   var instructionReference: String
   

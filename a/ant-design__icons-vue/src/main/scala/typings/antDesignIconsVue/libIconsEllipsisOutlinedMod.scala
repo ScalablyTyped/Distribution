@@ -16,7 +16,7 @@ object libIconsEllipsisOutlinedMod extends Shortcut {
   @js.native
   trait EllipsisOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_EllipsisOutlinedIconType: String = js.native

@@ -17,6 +17,11 @@ trait ModifyUserMessage extends StObject {
   var AppendAccessString: js.UndefOr[AccessString] = js.undefined
   
   /**
+    * Specifies how to authenticate the user.
+    */
+  var AuthenticationMode: js.UndefOr[typings.awsSdk.clientsElasticacheMod.AuthenticationMode] = js.undefined
+  
+  /**
     * Indicates no password is required for the user.
     */
   var NoPasswordRequired: js.UndefOr[BooleanOptional] = js.undefined
@@ -48,6 +53,10 @@ object ModifyUserMessage {
     inline def setAppendAccessString(value: AccessString): Self = StObject.set(x, "AppendAccessString", value.asInstanceOf[js.Any])
     
     inline def setAppendAccessStringUndefined: Self = StObject.set(x, "AppendAccessString", js.undefined)
+    
+    inline def setAuthenticationMode(value: AuthenticationMode): Self = StObject.set(x, "AuthenticationMode", value.asInstanceOf[js.Any])
+    
+    inline def setAuthenticationModeUndefined: Self = StObject.set(x, "AuthenticationMode", js.undefined)
     
     inline def setNoPasswordRequired(value: BooleanOptional): Self = StObject.set(x, "NoPasswordRequired", value.asInstanceOf[js.Any])
     

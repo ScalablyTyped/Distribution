@@ -1,13 +1,20 @@
 organization := "org.scalablytyped"
 name := "azure-kusto-data"
-version := "0.2-dt-20200923Z-24b58c"
-scalaVersion := "3.0.1"
+version := "5.0.4-005fd7"
+scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "adal-node" % "0.2.1-549ff4",
-  "org.scalablytyped" %%% "node" % "14.14-dt-20201119Z-11c649",
-  "org.scalablytyped" %%% "std" % "4.1-f7e8ab")
+  "org.scalablytyped" %%% "axios" % "1.4.0-2899cc",
+  "org.scalablytyped" %%% "azure__abort-controller" % "1.1.0-13e53f",
+  "org.scalablytyped" %%% "azure__core-auth" % "1.4.0-049513",
+  "org.scalablytyped" %%% "azure__core-client" % "1.7.2-9bdb95",
+  "org.scalablytyped" %%% "azure__core-rest-pipeline" % "1.10.3-6aa772",
+  "org.scalablytyped" %%% "azure__core-tracing" % "1.0.1-5b30d4",
+  "org.scalablytyped" %%% "azure__identity" % "3.2.0-b0d9b7",
+  "org.scalablytyped" %%% "azure__logger" % "1.0.4-2ccd1b",
+  "org.scalablytyped" %%% "node" % "20.1-dt-20230511Z-0320fc",
+  "org.scalablytyped" %%% "std" % "5.0-e63739")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

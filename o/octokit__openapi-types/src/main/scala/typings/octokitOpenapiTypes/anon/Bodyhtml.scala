@@ -1,5 +1,6 @@
 package typings.octokitOpenapiTypes.anon
 
+import typings.octokitOpenapiTypes.mod.OneOf
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.completed
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.not_planned
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.reopened
@@ -54,6 +55,7 @@ trait Bodyhtml extends StObject {
   /** Format: uri */
   var html_url: String
   
+  /** Format: int64 */
   var id: Double
   
   /**
@@ -63,7 +65,7 @@ trait Bodyhtml extends StObject {
     *   "registration"
     * ]
     */
-  var labels: js.Array[String | ColorDefault]
+  var labels: js.Array[OneOf[js.Tuple2[String, Default]]]
   
   var labels_url: String
   
@@ -141,7 +143,7 @@ object Bodyhtml {
     events_url: String,
     html_url: String,
     id: Double,
-    labels: js.Array[String | ColorDefault],
+    labels: js.Array[OneOf[js.Tuple2[String, Default]]],
     labels_url: String,
     locked: Boolean,
     milestone: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-milestone'] */ js.Any,
@@ -229,9 +231,9 @@ object Bodyhtml {
     
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    inline def setLabels(value: js.Array[String | ColorDefault]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: js.Array[OneOf[js.Tuple2[String, Default]]]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    inline def setLabelsVarargs(value: (String | ColorDefault)*): Self = StObject.set(x, "labels", js.Array(value*))
+    inline def setLabelsVarargs(value: (OneOf[js.Tuple2[String, Default]])*): Self = StObject.set(x, "labels", js.Array(value*))
     
     inline def setLabels_url(value: String): Self = StObject.set(x, "labels_url", value.asInstanceOf[js.Any])
     

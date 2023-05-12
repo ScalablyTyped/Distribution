@@ -1,11 +1,13 @@
 package typings.angularCompilerCli
 
 import typings.angularCompiler.mod.Type
+import typings.angularCompilerCli.anon.ClassDeclarationDeclarati
+import typings.angularCompilerCli.srcNgtscImportsMod.ReferenceEmitter
 import typings.angularCompilerCli.srcNgtscImportsSrcCoreMod.ImportRewriter
-import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.ClassDeclaration
-import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.DeclarationNode
+import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.ReflectionHost
 import typings.angularCompilerCli.srcNgtscTransformSrcApiMod.DtsTransform
 import typings.angularCompilerCli.srcNgtscTranslatorMod.ImportManager
+import typings.typescript.mod.ClassDeclaration
 import typings.typescript.mod.ClassElement
 import typings.typescript.mod.SourceFile
 import typings.typescript.mod.TransformerFactory
@@ -40,20 +42,33 @@ object srcNgtscTransformSrcDeclarationMod {
     extends StObject
        with DtsTransform {
     
-    def addFields(decl: ClassDeclaration[DeclarationNode], fields: js.Array[IvyDeclarationField]): Unit = js.native
+    def addFields(decl: ClassDeclarationDeclarati, fields: js.Array[IvyDeclarationField]): Unit = js.native
     
     /* private */ var declarationFields: Any = js.native
     
     @JSName("transformClass")
     def transformClass_MIvyDeclarationDtsTransform(
-      clazz: typings.typescript.mod.ClassDeclaration,
+      clazz: ClassDeclaration,
       members: js.Array[ClassElement],
+      reflector: ReflectionHost,
+      refEmitter: ReferenceEmitter,
       imports: ImportManager
-    ): typings.typescript.mod.ClassDeclaration = js.native
+    ): ClassDeclaration = js.native
   }
   
-  inline def declarationTransformFactory(transformRegistry: DtsTransformRegistry, importRewriter: ImportRewriter): TransformerFactory[SourceFile] = (^.asInstanceOf[js.Dynamic].applyDynamic("declarationTransformFactory")(transformRegistry.asInstanceOf[js.Any], importRewriter.asInstanceOf[js.Any])).asInstanceOf[TransformerFactory[SourceFile]]
-  inline def declarationTransformFactory(transformRegistry: DtsTransformRegistry, importRewriter: ImportRewriter, importPrefix: String): TransformerFactory[SourceFile] = (^.asInstanceOf[js.Dynamic].applyDynamic("declarationTransformFactory")(transformRegistry.asInstanceOf[js.Any], importRewriter.asInstanceOf[js.Any], importPrefix.asInstanceOf[js.Any])).asInstanceOf[TransformerFactory[SourceFile]]
+  inline def declarationTransformFactory(
+    transformRegistry: DtsTransformRegistry,
+    reflector: ReflectionHost,
+    refEmitter: ReferenceEmitter,
+    importRewriter: ImportRewriter
+  ): TransformerFactory[SourceFile] = (^.asInstanceOf[js.Dynamic].applyDynamic("declarationTransformFactory")(transformRegistry.asInstanceOf[js.Any], reflector.asInstanceOf[js.Any], refEmitter.asInstanceOf[js.Any], importRewriter.asInstanceOf[js.Any])).asInstanceOf[TransformerFactory[SourceFile]]
+  inline def declarationTransformFactory(
+    transformRegistry: DtsTransformRegistry,
+    reflector: ReflectionHost,
+    refEmitter: ReferenceEmitter,
+    importRewriter: ImportRewriter,
+    importPrefix: String
+  ): TransformerFactory[SourceFile] = (^.asInstanceOf[js.Dynamic].applyDynamic("declarationTransformFactory")(transformRegistry.asInstanceOf[js.Any], reflector.asInstanceOf[js.Any], refEmitter.asInstanceOf[js.Any], importRewriter.asInstanceOf[js.Any], importPrefix.asInstanceOf[js.Any])).asInstanceOf[TransformerFactory[SourceFile]]
   
   trait IvyDeclarationField extends StObject {
     

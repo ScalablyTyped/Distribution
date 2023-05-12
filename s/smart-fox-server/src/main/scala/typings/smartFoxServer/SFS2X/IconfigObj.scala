@@ -6,19 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IconfigObj extends StObject {
   
-  /** @type {boolean} Indicates whether the client-server messages console debug should be enabled or not. */
+  /** Indicates whether the client-server messages console debug should be enabled or not. */
   var debug: js.UndefOr[Boolean] = js.undefined
   
-  /** @type {string} The IP address or host name of the SmartFoxServer 2X instance to connect to. */
+  /** The IP address or host name of the SmartFoxServer 2X instance to connect to. */
   var host: js.UndefOr[String] = js.undefined
   
-  /** @type {number} The TCP port of the SmartFoxServer 2X instance to connect to. */
+  /** The TCP port of the SmartFoxServer 2X instance to connect to. */
   var port: js.UndefOr[Double] = js.undefined
   
-  /** @type {boolean} Use an encrypted SSL connection. */
+  /** Use an encrypted SSL connection. */
   var useSSL: js.UndefOr[Boolean] = js.undefined
   
-  /** @type {string} The Zone of the SmartFoxServer 2X instance to join during the login process. */
+  /** The Zone of the SmartFoxServer 2X instance to join during the login process. */
   var zone: js.UndefOr[String] = js.undefined
 }
 object IconfigObj {

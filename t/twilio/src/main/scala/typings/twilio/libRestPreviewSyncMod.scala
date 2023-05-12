@@ -1,6 +1,6 @@
 package typings.twilio
 
-import typings.twilio.libRestPreviewSyncServiceMod.ServiceContext
+import typings.twilio.libRestPreviewBaseMod.^
 import typings.twilio.libRestPreviewSyncServiceMod.ServiceListInstance
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -8,26 +8,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object libRestPreviewSyncMod {
   
-  @JSImport("twilio/lib/rest/preview/Sync", JSImport.Namespace)
+  @JSImport("twilio/lib/rest/preview/Sync", JSImport.Default)
   @js.native
-  open class ^ protected () extends Sync {
+  open class default protected () extends Sync {
     /**
       * Initialize the Sync version of Preview
       *
-      * @param domain - The twilio domain
+      * @param domain - The Twilio (Twilio.Preview) domain
       */
-    def this(domain: typings.twilio.libRestPreviewMod.^) = this()
+    def this(domain: ^) = this()
   }
   
   @js.native
   trait Sync
-    extends typings.twilio.libBaseVersionMod.^ {
+    extends typings.twilio.libBaseVersionMod.default {
     
-    /**
-      * @param sid - sid of instance
-      */
-    def services(sid: String): ServiceContext = js.native
-    @JSName("services")
-    val services_Original: ServiceListInstance = js.native
+    /** services - { Twilio.Preview.Sync.ServiceListInstance } resource */
+    /* protected */ var _services: js.UndefOr[ServiceListInstance] = js.native
+    
+    /** Getter for services resource */
+    def services: ServiceListInstance = js.native
   }
 }

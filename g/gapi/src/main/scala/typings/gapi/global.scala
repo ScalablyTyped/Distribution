@@ -94,6 +94,8 @@ object global {
       inline def load(name: String, version: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
       inline def load(name: String, version: String, callback: js.Function0[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
       inline def load(name: String, version: String, callback: js.Function0[Any], url: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def load(urlOrObject: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(urlOrObject.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+      inline def load(urlOrObject: js.Object): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(urlOrObject.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
       
       inline def request(args: RequestOptions): typings.gapi.gapi.client.HttpRequest[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("request")(args.asInstanceOf[js.Any]).asInstanceOf[typings.gapi.gapi.client.HttpRequest[Any]]
       

@@ -113,6 +113,20 @@ trait WorkSpaces extends Service {
   ): Request[CreateIpGroupResult, AWSError] = js.native
   
   /**
+    * Creates a standby WorkSpace in a secondary Region.
+    */
+  def createStandbyWorkspaces(): Request[CreateStandbyWorkspacesResult, AWSError] = js.native
+  def createStandbyWorkspaces(callback: js.Function2[/* err */ AWSError, /* data */ CreateStandbyWorkspacesResult, Unit]): Request[CreateStandbyWorkspacesResult, AWSError] = js.native
+  /**
+    * Creates a standby WorkSpace in a secondary Region.
+    */
+  def createStandbyWorkspaces(params: CreateStandbyWorkspacesRequest): Request[CreateStandbyWorkspacesResult, AWSError] = js.native
+  def createStandbyWorkspaces(
+    params: CreateStandbyWorkspacesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateStandbyWorkspacesResult, Unit]
+  ): Request[CreateStandbyWorkspacesResult, AWSError] = js.native
+  
+  /**
     * Creates the specified tags for the specified WorkSpaces resource.
     */
   def createTags(): Request[CreateTagsResult, AWSError] = js.native
@@ -127,12 +141,12 @@ trait WorkSpaces extends Service {
   ): Request[CreateTagsResult, AWSError] = js.native
   
   /**
-    * Creates a new updated WorkSpace image based on the specified source image. The new updated WorkSpace image has the latest drivers and other updates required by the Amazon WorkSpaces components. To determine which WorkSpace images need to be updated with the latest Amazon WorkSpaces requirements, use  DescribeWorkspaceImages.    Only Windows 10, Windows Sever 2016, and Windows Server 2019 WorkSpace images can be programmatically updated at this time.   Microsoft Windows updates and other application updates are not included in the update process.   The source WorkSpace image is not deleted. You can delete the source image after you've verified your new updated image and created a new bundle.    
+    * Creates a new updated WorkSpace image based on the specified source image. The new updated WorkSpace image has the latest drivers and other updates required by the Amazon WorkSpaces components. To determine which WorkSpace images need to be updated with the latest Amazon WorkSpaces requirements, use  DescribeWorkspaceImages.    Only Windows 10, Windows Server 2016, and Windows Server 2019 WorkSpace images can be programmatically updated at this time.   Microsoft Windows updates and other application updates are not included in the update process.   The source WorkSpace image is not deleted. You can delete the source image after you've verified your new updated image and created a new bundle.    
     */
   def createUpdatedWorkspaceImage(): Request[CreateUpdatedWorkspaceImageResult, AWSError] = js.native
   def createUpdatedWorkspaceImage(callback: js.Function2[/* err */ AWSError, /* data */ CreateUpdatedWorkspaceImageResult, Unit]): Request[CreateUpdatedWorkspaceImageResult, AWSError] = js.native
   /**
-    * Creates a new updated WorkSpace image based on the specified source image. The new updated WorkSpace image has the latest drivers and other updates required by the Amazon WorkSpaces components. To determine which WorkSpace images need to be updated with the latest Amazon WorkSpaces requirements, use  DescribeWorkspaceImages.    Only Windows 10, Windows Sever 2016, and Windows Server 2019 WorkSpace images can be programmatically updated at this time.   Microsoft Windows updates and other application updates are not included in the update process.   The source WorkSpace image is not deleted. You can delete the source image after you've verified your new updated image and created a new bundle.    
+    * Creates a new updated WorkSpace image based on the specified source image. The new updated WorkSpace image has the latest drivers and other updates required by the Amazon WorkSpaces components. To determine which WorkSpace images need to be updated with the latest Amazon WorkSpaces requirements, use  DescribeWorkspaceImages.    Only Windows 10, Windows Server 2016, and Windows Server 2019 WorkSpace images can be programmatically updated at this time.   Microsoft Windows updates and other application updates are not included in the update process.   The source WorkSpace image is not deleted. You can delete the source image after you've verified your new updated image and created a new bundle.    
     */
   def createUpdatedWorkspaceImage(params: CreateUpdatedWorkspaceImageRequest): Request[CreateUpdatedWorkspaceImageResult, AWSError] = js.native
   def createUpdatedWorkspaceImage(
@@ -567,12 +581,12 @@ trait WorkSpaces extends Service {
   ): Request[ImportClientBrandingResult, AWSError] = js.native
   
   /**
-    * Imports the specified Windows 10 Bring Your Own License (BYOL) or Windows Server 2016 BYOL image into Amazon WorkSpaces. The image must be an already licensed Amazon EC2 image that is in your Amazon Web Services account, and you must own the image. For more information about creating BYOL images, see  Bring Your Own Windows Desktop Licenses.
+    * Imports the specified Windows 10 or 11 Bring Your Own License (BYOL) image into Amazon WorkSpaces. The image must be an already licensed Amazon EC2 image that is in your Amazon Web Services account, and you must own the image. For more information about creating BYOL images, see  Bring Your Own Windows Desktop Licenses.
     */
   def importWorkspaceImage(): Request[ImportWorkspaceImageResult, AWSError] = js.native
   def importWorkspaceImage(callback: js.Function2[/* err */ AWSError, /* data */ ImportWorkspaceImageResult, Unit]): Request[ImportWorkspaceImageResult, AWSError] = js.native
   /**
-    * Imports the specified Windows 10 Bring Your Own License (BYOL) or Windows Server 2016 BYOL image into Amazon WorkSpaces. The image must be an already licensed Amazon EC2 image that is in your Amazon Web Services account, and you must own the image. For more information about creating BYOL images, see  Bring Your Own Windows Desktop Licenses.
+    * Imports the specified Windows 10 or 11 Bring Your Own License (BYOL) image into Amazon WorkSpaces. The image must be an already licensed Amazon EC2 image that is in your Amazon Web Services account, and you must own the image. For more information about creating BYOL images, see  Bring Your Own Windows Desktop Licenses.
     */
   def importWorkspaceImage(params: ImportWorkspaceImageRequest): Request[ImportWorkspaceImageResult, AWSError] = js.native
   def importWorkspaceImage(

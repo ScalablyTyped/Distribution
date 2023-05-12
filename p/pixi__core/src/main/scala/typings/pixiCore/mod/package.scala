@@ -14,6 +14,7 @@ import typings.pixiSettings.libIcanvasMod.ICanvas
 import typings.pixiSettings.libSettingsMod.ISettings
 import typings.pixiSettings.libUtilsIsMobileMod.isMobileResult
 import typings.pixiUtils.libTypesMod.Dict
+import typings.std.Partial
 import typings.std.WebGL2RenderingContext
 import typings.std.WebGLRenderingContext
 import org.scalablytyped.runtime.StObject
@@ -34,7 +35,7 @@ inline def RAD_TO_DEG: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("RAD_TO
 inline def VERSION: /* "$_VERSION" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("VERSION").asInstanceOf[/* "$_VERSION" */ String]
 
 inline def autoDetectRenderer[VIEW /* <: ICanvas */](): IRenderer[VIEW] = ^.asInstanceOf[js.Dynamic].applyDynamic("autoDetectRenderer")().asInstanceOf[IRenderer[VIEW]]
-inline def autoDetectRenderer[VIEW /* <: ICanvas */](options: IRendererOptionsAuto): IRenderer[VIEW] = ^.asInstanceOf[js.Dynamic].applyDynamic("autoDetectRenderer")(options.asInstanceOf[js.Any]).asInstanceOf[IRenderer[VIEW]]
+inline def autoDetectRenderer[VIEW /* <: ICanvas */](options: Partial[IRendererOptionsAuto]): IRenderer[VIEW] = ^.asInstanceOf[js.Dynamic].applyDynamic("autoDetectRenderer")(options.asInstanceOf[js.Any]).asInstanceOf[IRenderer[VIEW]]
 
 inline def autoDetectResource[R /* <: typings.pixiCore.libTexturesResourcesResourceMod.Resource */, RO](source: Any): R = ^.asInstanceOf[js.Dynamic].applyDynamic("autoDetectResource")(source.asInstanceOf[js.Any]).asInstanceOf[R]
 inline def autoDetectResource[R /* <: typings.pixiCore.libTexturesResourcesResourceMod.Resource */, RO](source: Any, options: RO): R = (^.asInstanceOf[js.Dynamic].applyDynamic("autoDetectResource")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[R]
@@ -57,6 +58,10 @@ inline def getUBOData(uniforms: Dict[Any], uniformData: Dict[Any]): js.Array[Any
 
 inline def isMobile: isMobileResult = ^.asInstanceOf[js.Dynamic].selectDynamic("isMobile").asInstanceOf[isMobileResult]
 
-inline def settings: ISettings = ^.asInstanceOf[js.Dynamic].selectDynamic("settings").asInstanceOf[ISettings]
+inline def settings: ISettings & (Partial[
+/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify GlobalMixins.Settings */ Any]) = ^.asInstanceOf[js.Dynamic].selectDynamic("settings").asInstanceOf[ISettings & (Partial[
+/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify GlobalMixins.Settings */ Any])]
 
 inline def uniformParsers: js.Array[IUniformParser] = ^.asInstanceOf[js.Dynamic].selectDynamic("uniformParsers").asInstanceOf[js.Array[IUniformParser]]
+
+inline def unsafeEvalSupported(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("unsafeEvalSupported")().asInstanceOf[Boolean]

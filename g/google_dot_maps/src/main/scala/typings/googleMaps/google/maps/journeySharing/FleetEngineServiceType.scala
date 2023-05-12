@@ -6,10 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @js.native
 sealed trait FleetEngineServiceType extends StObject
-/**
-  * Available only in the v=beta channel: https://goo.gle/3oAthT3.
-  * Types of Fleet Engine services.
-  */
 @JSGlobal("google.maps.journeySharing.FleetEngineServiceType")
 @js.native
 object FleetEngineServiceType extends StObject {

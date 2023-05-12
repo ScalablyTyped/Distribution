@@ -25,7 +25,7 @@ trait Category extends StObject {
   			*/
   var category: js.UndefOr[console | important | stdout | stderr | telemetry | String] = js.undefined
   
-  /** The source location's column where the output was produced. */
+  /** The position in `line` where the output was produced. It is measured in UTF-16 code units and the client capability `columnsStartAt1` determines whether it is 0- or 1-based. */
   var column: js.UndefOr[Double] = js.undefined
   
   /** Additional data to report. For the `telemetry` category the data is sent to telemetry, for the other categories the data is shown in JSON format. */
@@ -37,7 +37,7 @@ trait Category extends StObject {
   				'startCollapsed': Start a new group in collapsed mode. Subsequent output events are members of the group and should be shown indented (as soon as the group is expanded).
   				The `output` attribute becomes the name of the group and is not indented.
   				'end': End the current group and decrease the indentation of subsequent output events.
-  				A nonempty `output` attribute is shown as the unindented end of the group.
+  				A non-empty `output` attribute is shown as the unindented end of the group.
   			*/
   var group: js.UndefOr[start | startCollapsed | end] = js.undefined
   
@@ -50,7 +50,7 @@ trait Category extends StObject {
   /** The source location where the output was produced. */
   var source: js.UndefOr[typings.vscodeDebugprotocol.mod.DebugProtocol.Source] = js.undefined
   
-  /** If an attribute `variablesReference` exists and its value is > 0, the output contains objects which can be retrieved by passing `variablesReference` to the `variables` request. The value should be less than or equal to 2147483647 (2^31-1). */
+  /** If an attribute `variablesReference` exists and its value is > 0, the output contains objects which can be retrieved by passing `variablesReference` to the `variables` request as long as execution remains suspended. See 'Lifetime of Object References' in the Overview section for details. */
   var variablesReference: js.UndefOr[Double] = js.undefined
 }
 object Category {

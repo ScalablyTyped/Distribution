@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@react-spring/types" : "9.5.5"
+      "@react-spring/types" : "9.7.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@react-spring/types" : "9.5.5"
+      "@react-spring/types" : "9.7.2"
     }
   ],
   "compile-devDependencies" : [

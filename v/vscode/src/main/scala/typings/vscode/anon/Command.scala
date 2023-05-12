@@ -8,21 +8,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Command extends StObject {
   
   /**
-    * Command that displays the documentation to the user.
-    *
-    * This can display the documentation directly in the editor or open a website using {@linkcode env.openExternal};
-    *
-    * The title of this documentation code action is taken from {@linkcode Command.title}
-    */
+  			 * Command that displays the documentation to the user.
+  			 *
+  			 * This can display the documentation directly in the editor or open a website using {@linkcode env.openExternal};
+  			 *
+  			 * The title of this documentation code action is taken from {@linkcode Command.title}
+  			 */
   val command: typings.vscode.mod.Command
   
   /**
-    * The kind of the code action being documented.
-    *
-    * If the kind is generic, such as `CodeActionKind.Refactor`, the documentation will be shown whenever any
-    * refactorings are returned. If the kind if more specific, such as `CodeActionKind.RefactorExtract`, the
-    * documentation will only be shown when extract refactoring code actions are returned.
-    */
+  			 * The kind of the code action being documented.
+  			 *
+  			 * If the kind is generic, such as `CodeActionKind.Refactor`, the documentation will be shown whenever any
+  			 * refactorings are returned. If the kind if more specific, such as `CodeActionKind.RefactorExtract`, the
+  			 * documentation will only be shown when extract refactoring code actions are returned.
+  			 */
   val kind: CodeActionKind
 }
 object Command {

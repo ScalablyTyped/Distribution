@@ -40,12 +40,12 @@ trait ServiceCatalog extends Service {
   ): Request[AssociateBudgetWithResourceOutput, AWSError] = js.native
   
   /**
-    * Associates the specified principal ARN with the specified portfolio.
+    * Associates the specified principal ARN with the specified portfolio. If you share the portfolio with principal name sharing enabled, the PrincipalARN association is included in the share.  The PortfolioID, PrincipalARN, and PrincipalType parameters are required.  You can associate a maximum of 10 Principals with a portfolio using PrincipalType as IAM_PATTERN   When you associate a principal with portfolio, a potential privilege escalation path may occur when that portfolio is then shared with other accounts. For a user in a recipient account who is not an Service Catalog Admin, but still has the ability to create Principals (Users/Groups/Roles), that user could create a role that matches a principal name association for the portfolio. Although this user may not know which principal names are associated through Service Catalog, they may be able to guess the user. If this potential escalation path is a concern, then Service Catalog recommends using PrincipalType as IAM. With this configuration, the PrincipalARN must already exist in the recipient account before it can be associated.  
     */
   def associatePrincipalWithPortfolio(): Request[AssociatePrincipalWithPortfolioOutput, AWSError] = js.native
   def associatePrincipalWithPortfolio(callback: js.Function2[/* err */ AWSError, /* data */ AssociatePrincipalWithPortfolioOutput, Unit]): Request[AssociatePrincipalWithPortfolioOutput, AWSError] = js.native
   /**
-    * Associates the specified principal ARN with the specified portfolio.
+    * Associates the specified principal ARN with the specified portfolio. If you share the portfolio with principal name sharing enabled, the PrincipalARN association is included in the share.  The PortfolioID, PrincipalARN, and PrincipalType parameters are required.  You can associate a maximum of 10 Principals with a portfolio using PrincipalType as IAM_PATTERN   When you associate a principal with portfolio, a potential privilege escalation path may occur when that portfolio is then shared with other accounts. For a user in a recipient account who is not an Service Catalog Admin, but still has the ability to create Principals (Users/Groups/Roles), that user could create a role that matches a principal name association for the portfolio. Although this user may not know which principal names are associated through Service Catalog, they may be able to guess the user. If this potential escalation path is a concern, then Service Catalog recommends using PrincipalType as IAM. With this configuration, the PrincipalARN must already exist in the recipient account before it can be associated.  
     */
   def associatePrincipalWithPortfolio(params: AssociatePrincipalWithPortfolioInput): Request[AssociatePrincipalWithPortfolioOutput, AWSError] = js.native
   def associatePrincipalWithPortfolio(
@@ -199,12 +199,12 @@ trait ServiceCatalog extends Service {
   ): Request[CreatePortfolioOutput, AWSError] = js.native
   
   /**
-    * Shares the specified portfolio with the specified account or organization node. Shares to an organization node can only be created by the management account of an organization or by a delegated administrator. You can share portfolios to an organization, an organizational unit, or a specific account. Note that if a delegated admin is de-registered, they can no longer create portfolio shares.  AWSOrganizationsAccess must be enabled in order to create a portfolio share to an organization node. You can't share a shared resource, including portfolios that contain a shared product. If the portfolio share with the specified account or organization node already exists, this action will have no effect and will not return an error. To update an existing share, you must use the  UpdatePortfolioShare API instead.
+    * Shares the specified portfolio with the specified account or organization node. Shares to an organization node can only be created by the management account of an organization or by a delegated administrator. You can share portfolios to an organization, an organizational unit, or a specific account. Note that if a delegated admin is de-registered, they can no longer create portfolio shares.  AWSOrganizationsAccess must be enabled in order to create a portfolio share to an organization node. You can't share a shared resource, including portfolios that contain a shared product. If the portfolio share with the specified account or organization node already exists, this action will have no effect and will not return an error. To update an existing share, you must use the  UpdatePortfolioShare API instead.   When you associate a principal with portfolio, a potential privilege escalation path may occur when that portfolio is then shared with other accounts. For a user in a recipient account who is not an Service Catalog Admin, but still has the ability to create Principals (Users/Groups/Roles), that user could create a role that matches a principal name association for the portfolio. Although this user may not know which principal names are associated through Service Catalog, they may be able to guess the user. If this potential escalation path is a concern, then Service Catalog recommends using PrincipalType as IAM. With this configuration, the PrincipalARN must already exist in the recipient account before it can be associated.  
     */
   def createPortfolioShare(): Request[CreatePortfolioShareOutput, AWSError] = js.native
   def createPortfolioShare(callback: js.Function2[/* err */ AWSError, /* data */ CreatePortfolioShareOutput, Unit]): Request[CreatePortfolioShareOutput, AWSError] = js.native
   /**
-    * Shares the specified portfolio with the specified account or organization node. Shares to an organization node can only be created by the management account of an organization or by a delegated administrator. You can share portfolios to an organization, an organizational unit, or a specific account. Note that if a delegated admin is de-registered, they can no longer create portfolio shares.  AWSOrganizationsAccess must be enabled in order to create a portfolio share to an organization node. You can't share a shared resource, including portfolios that contain a shared product. If the portfolio share with the specified account or organization node already exists, this action will have no effect and will not return an error. To update an existing share, you must use the  UpdatePortfolioShare API instead.
+    * Shares the specified portfolio with the specified account or organization node. Shares to an organization node can only be created by the management account of an organization or by a delegated administrator. You can share portfolios to an organization, an organizational unit, or a specific account. Note that if a delegated admin is de-registered, they can no longer create portfolio shares.  AWSOrganizationsAccess must be enabled in order to create a portfolio share to an organization node. You can't share a shared resource, including portfolios that contain a shared product. If the portfolio share with the specified account or organization node already exists, this action will have no effect and will not return an error. To update an existing share, you must use the  UpdatePortfolioShare API instead.   When you associate a principal with portfolio, a potential privilege escalation path may occur when that portfolio is then shared with other accounts. For a user in a recipient account who is not an Service Catalog Admin, but still has the ability to create Principals (Users/Groups/Roles), that user could create a role that matches a principal name association for the portfolio. Although this user may not know which principal names are associated through Service Catalog, they may be able to guess the user. If this potential escalation path is a concern, then Service Catalog recommends using PrincipalType as IAM. With this configuration, the PrincipalARN must already exist in the recipient account before it can be associated.  
     */
   def createPortfolioShare(params: CreatePortfolioShareInput): Request[CreatePortfolioShareOutput, AWSError] = js.native
   def createPortfolioShare(
@@ -465,12 +465,12 @@ trait ServiceCatalog extends Service {
   ): Request[DescribePortfolioSharesOutput, AWSError] = js.native
   
   /**
-    * Gets information about the specified product.
+    * Gets information about the specified product.   Running this operation with administrator access results in a failure. DescribeProductAsAdmin should be used instead.  
     */
   def describeProduct(): Request[DescribeProductOutput, AWSError] = js.native
   def describeProduct(callback: js.Function2[/* err */ AWSError, /* data */ DescribeProductOutput, Unit]): Request[DescribeProductOutput, AWSError] = js.native
   /**
-    * Gets information about the specified product.
+    * Gets information about the specified product.   Running this operation with administrator access results in a failure. DescribeProductAsAdmin should be used instead.  
     */
   def describeProduct(params: DescribeProductInput): Request[DescribeProductOutput, AWSError] = js.native
   def describeProduct(
@@ -649,14 +649,14 @@ trait ServiceCatalog extends Service {
   ): Request[DisassociateBudgetFromResourceOutput, AWSError] = js.native
   
   /**
-    * Disassociates a previously associated principal ARN from a specified portfolio.
+    * Disassociates a previously associated principal ARN from a specified portfolio. The PrincipalType and PrincipalARN must match the AssociatePrincipalWithPortfolio call request details. For example, to disassociate an association created with a PrincipalARN of PrincipalType IAM you must use the PrincipalType IAM when calling DisassociatePrincipalFromPortfolio.  For portfolios that have been shared with principal name sharing enabled: after disassociating a principal, share recipient accounts will no longer be able to provision products in this portfolio using a role matching the name of the associated principal. 
     */
   def disassociatePrincipalFromPortfolio(): Request[DisassociatePrincipalFromPortfolioOutput, AWSError] = js.native
   def disassociatePrincipalFromPortfolio(
     callback: js.Function2[/* err */ AWSError, /* data */ DisassociatePrincipalFromPortfolioOutput, Unit]
   ): Request[DisassociatePrincipalFromPortfolioOutput, AWSError] = js.native
   /**
-    * Disassociates a previously associated principal ARN from a specified portfolio.
+    * Disassociates a previously associated principal ARN from a specified portfolio. The PrincipalType and PrincipalARN must match the AssociatePrincipalWithPortfolio call request details. For example, to disassociate an association created with a PrincipalARN of PrincipalType IAM you must use the PrincipalType IAM when calling DisassociatePrincipalFromPortfolio.  For portfolios that have been shared with principal name sharing enabled: after disassociating a principal, share recipient accounts will no longer be able to provision products in this portfolio using a role matching the name of the associated principal. 
     */
   def disassociatePrincipalFromPortfolio(params: DisassociatePrincipalFromPortfolioInput): Request[DisassociatePrincipalFromPortfolioOutput, AWSError] = js.native
   def disassociatePrincipalFromPortfolio(
@@ -793,12 +793,12 @@ trait ServiceCatalog extends Service {
   ): Request[GetProvisionedProductOutputsOutput, AWSError] = js.native
   
   /**
-    * Requests the import of a resource as a Amazon Web Services Service Catalog provisioned product that is associated to a Amazon Web Services Service Catalog product and provisioning artifact. Once imported, all supported Amazon Web Services Service Catalog governance actions are supported on the provisioned product. Resource import only supports CloudFormation stack ARNs. CloudFormation StackSets and non-root nested stacks are not supported. The CloudFormation stack must have one of the following statuses to be imported: CREATE_COMPLETE, UPDATE_COMPLETE, UPDATE_ROLLBACK_COMPLETE, IMPORT_COMPLETE, IMPORT_ROLLBACK_COMPLETE. Import of the resource requires that the CloudFormation stack template matches the associated Amazon Web Services Service Catalog product provisioning artifact.  The user or role that performs this operation must have the cloudformation:GetTemplate and cloudformation:DescribeStacks IAM policy permissions. 
+    *  Requests the import of a resource as an Service Catalog provisioned product that is associated to an Service Catalog product and provisioning artifact. Once imported, all supported governance actions are supported on the provisioned product.   Resource import only supports CloudFormation stack ARNs. CloudFormation StackSets, and non-root nested stacks are not supported.   The CloudFormation stack must have one of the following statuses to be imported: CREATE_COMPLETE, UPDATE_COMPLETE, UPDATE_ROLLBACK_COMPLETE, IMPORT_COMPLETE, and IMPORT_ROLLBACK_COMPLETE.   Import of the resource requires that the CloudFormation stack template matches the associated Service Catalog product provisioning artifact.    When you import an existing CloudFormation stack into a portfolio, constraints that are associated with the product aren't applied during the import process. The constraints are applied after you call UpdateProvisionedProduct for the provisioned product.    The user or role that performs this operation must have the cloudformation:GetTemplate and cloudformation:DescribeStacks IAM policy permissions. 
     */
   def importAsProvisionedProduct(): Request[ImportAsProvisionedProductOutput, AWSError] = js.native
   def importAsProvisionedProduct(callback: js.Function2[/* err */ AWSError, /* data */ ImportAsProvisionedProductOutput, Unit]): Request[ImportAsProvisionedProductOutput, AWSError] = js.native
   /**
-    * Requests the import of a resource as a Amazon Web Services Service Catalog provisioned product that is associated to a Amazon Web Services Service Catalog product and provisioning artifact. Once imported, all supported Amazon Web Services Service Catalog governance actions are supported on the provisioned product. Resource import only supports CloudFormation stack ARNs. CloudFormation StackSets and non-root nested stacks are not supported. The CloudFormation stack must have one of the following statuses to be imported: CREATE_COMPLETE, UPDATE_COMPLETE, UPDATE_ROLLBACK_COMPLETE, IMPORT_COMPLETE, IMPORT_ROLLBACK_COMPLETE. Import of the resource requires that the CloudFormation stack template matches the associated Amazon Web Services Service Catalog product provisioning artifact.  The user or role that performs this operation must have the cloudformation:GetTemplate and cloudformation:DescribeStacks IAM policy permissions. 
+    *  Requests the import of a resource as an Service Catalog provisioned product that is associated to an Service Catalog product and provisioning artifact. Once imported, all supported governance actions are supported on the provisioned product.   Resource import only supports CloudFormation stack ARNs. CloudFormation StackSets, and non-root nested stacks are not supported.   The CloudFormation stack must have one of the following statuses to be imported: CREATE_COMPLETE, UPDATE_COMPLETE, UPDATE_ROLLBACK_COMPLETE, IMPORT_COMPLETE, and IMPORT_ROLLBACK_COMPLETE.   Import of the resource requires that the CloudFormation stack template matches the associated Service Catalog product provisioning artifact.    When you import an existing CloudFormation stack into a portfolio, constraints that are associated with the product aren't applied during the import process. The constraints are applied after you call UpdateProvisionedProduct for the provisioned product.    The user or role that performs this operation must have the cloudformation:GetTemplate and cloudformation:DescribeStacks IAM policy permissions. 
     */
   def importAsProvisionedProduct(params: ImportAsProvisionedProductInput): Request[ImportAsProvisionedProductOutput, AWSError] = js.native
   def importAsProvisionedProduct(
@@ -849,12 +849,12 @@ trait ServiceCatalog extends Service {
   ): Request[ListConstraintsForPortfolioOutput, AWSError] = js.native
   
   /**
-    * Lists the paths to the specified product. A path is how the user has access to a specified product, and is necessary when provisioning a product. A path also determines the constraints put on the product.
+    *  Lists the paths to the specified product. A path describes how the user gets access to a specified product and is necessary when provisioning a product. A path also determines the constraints that are put on a product. A path is dependent on a specific product, porfolio, and principal.    When provisioning a product that's been added to a portfolio, you must grant your user, group, or role access to the portfolio. For more information, see Granting users access in the Service Catalog User Guide.  
     */
   def listLaunchPaths(): Request[ListLaunchPathsOutput, AWSError] = js.native
   def listLaunchPaths(callback: js.Function2[/* err */ AWSError, /* data */ ListLaunchPathsOutput, Unit]): Request[ListLaunchPathsOutput, AWSError] = js.native
   /**
-    * Lists the paths to the specified product. A path is how the user has access to a specified product, and is necessary when provisioning a product. A path also determines the constraints put on the product.
+    *  Lists the paths to the specified product. A path describes how the user gets access to a specified product and is necessary when provisioning a product. A path also determines the constraints that are put on a product. A path is dependent on a specific product, porfolio, and principal.    When provisioning a product that's been added to a portfolio, you must grant your user, group, or role access to the portfolio. For more information, see Granting users access in the Service Catalog User Guide.  
     */
   def listLaunchPaths(params: ListLaunchPathsInput): Request[ListLaunchPathsOutput, AWSError] = js.native
   def listLaunchPaths(
@@ -919,12 +919,12 @@ trait ServiceCatalog extends Service {
   ): Request[ListPortfoliosForProductOutput, AWSError] = js.native
   
   /**
-    * Lists all principal ARNs associated with the specified portfolio.
+    * Lists all PrincipalARNs and corresponding PrincipalTypes associated with the specified portfolio.
     */
   def listPrincipalsForPortfolio(): Request[ListPrincipalsForPortfolioOutput, AWSError] = js.native
   def listPrincipalsForPortfolio(callback: js.Function2[/* err */ AWSError, /* data */ ListPrincipalsForPortfolioOutput, Unit]): Request[ListPrincipalsForPortfolioOutput, AWSError] = js.native
   /**
-    * Lists all principal ARNs associated with the specified portfolio.
+    * Lists all PrincipalARNs and corresponding PrincipalTypes associated with the specified portfolio.
     */
   def listPrincipalsForPortfolio(params: ListPrincipalsForPortfolioInput): Request[ListPrincipalsForPortfolioOutput, AWSError] = js.native
   def listPrincipalsForPortfolio(
@@ -1065,12 +1065,84 @@ trait ServiceCatalog extends Service {
   ): Request[ListTagOptionsOutput, AWSError] = js.native
   
   /**
-    * Provisions the specified product. A provisioned product is a resourced instance of a product. For example, provisioning a product based on a CloudFormation template launches a CloudFormation stack and its underlying resources. You can check the status of this request using DescribeRecord. If the request contains a tag key with an empty list of values, there is a tag conflict for that key. Do not include conflicted keys as tags, or this causes the error "Parameter validation failed: Missing required parameter in Tags[N]:Value".
+    *  Notifies the result of the provisioning engine execution. 
+    */
+  def notifyProvisionProductEngineWorkflowResult(): Request[NotifyProvisionProductEngineWorkflowResultOutput, AWSError] = js.native
+  def notifyProvisionProductEngineWorkflowResult(
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ NotifyProvisionProductEngineWorkflowResultOutput, 
+      Unit
+    ]
+  ): Request[NotifyProvisionProductEngineWorkflowResultOutput, AWSError] = js.native
+  /**
+    *  Notifies the result of the provisioning engine execution. 
+    */
+  def notifyProvisionProductEngineWorkflowResult(params: NotifyProvisionProductEngineWorkflowResultInput): Request[NotifyProvisionProductEngineWorkflowResultOutput, AWSError] = js.native
+  def notifyProvisionProductEngineWorkflowResult(
+    params: NotifyProvisionProductEngineWorkflowResultInput,
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ NotifyProvisionProductEngineWorkflowResultOutput, 
+      Unit
+    ]
+  ): Request[NotifyProvisionProductEngineWorkflowResultOutput, AWSError] = js.native
+  
+  /**
+    *  Notifies the result of the terminate engine execution. 
+    */
+  def notifyTerminateProvisionedProductEngineWorkflowResult(): Request[NotifyTerminateProvisionedProductEngineWorkflowResultOutput, AWSError] = js.native
+  def notifyTerminateProvisionedProductEngineWorkflowResult(
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ NotifyTerminateProvisionedProductEngineWorkflowResultOutput, 
+      Unit
+    ]
+  ): Request[NotifyTerminateProvisionedProductEngineWorkflowResultOutput, AWSError] = js.native
+  /**
+    *  Notifies the result of the terminate engine execution. 
+    */
+  def notifyTerminateProvisionedProductEngineWorkflowResult(params: NotifyTerminateProvisionedProductEngineWorkflowResultInput): Request[NotifyTerminateProvisionedProductEngineWorkflowResultOutput, AWSError] = js.native
+  def notifyTerminateProvisionedProductEngineWorkflowResult(
+    params: NotifyTerminateProvisionedProductEngineWorkflowResultInput,
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ NotifyTerminateProvisionedProductEngineWorkflowResultOutput, 
+      Unit
+    ]
+  ): Request[NotifyTerminateProvisionedProductEngineWorkflowResultOutput, AWSError] = js.native
+  
+  /**
+    *  Notifies the result of the update engine execution. 
+    */
+  def notifyUpdateProvisionedProductEngineWorkflowResult(): Request[NotifyUpdateProvisionedProductEngineWorkflowResultOutput, AWSError] = js.native
+  def notifyUpdateProvisionedProductEngineWorkflowResult(
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ NotifyUpdateProvisionedProductEngineWorkflowResultOutput, 
+      Unit
+    ]
+  ): Request[NotifyUpdateProvisionedProductEngineWorkflowResultOutput, AWSError] = js.native
+  /**
+    *  Notifies the result of the update engine execution. 
+    */
+  def notifyUpdateProvisionedProductEngineWorkflowResult(params: NotifyUpdateProvisionedProductEngineWorkflowResultInput): Request[NotifyUpdateProvisionedProductEngineWorkflowResultOutput, AWSError] = js.native
+  def notifyUpdateProvisionedProductEngineWorkflowResult(
+    params: NotifyUpdateProvisionedProductEngineWorkflowResultInput,
+    callback: js.Function2[
+      /* err */ AWSError, 
+      /* data */ NotifyUpdateProvisionedProductEngineWorkflowResultOutput, 
+      Unit
+    ]
+  ): Request[NotifyUpdateProvisionedProductEngineWorkflowResultOutput, AWSError] = js.native
+  
+  /**
+    *  Provisions the specified product.   A provisioned product is a resourced instance of a product. For example, provisioning a product that's based on an CloudFormation template launches an CloudFormation stack and its underlying resources. You can check the status of this request using DescribeRecord.   If the request contains a tag key with an empty list of values, there's a tag conflict for that key. Don't include conflicted keys as tags, or this will cause the error "Parameter validation failed: Missing required parameter in Tags[N]:Value".    When provisioning a product that's been added to a portfolio, you must grant your user, group, or role access to the portfolio. For more information, see Granting users access in the Service Catalog User Guide.  
     */
   def provisionProduct(): Request[ProvisionProductOutput, AWSError] = js.native
   def provisionProduct(callback: js.Function2[/* err */ AWSError, /* data */ ProvisionProductOutput, Unit]): Request[ProvisionProductOutput, AWSError] = js.native
   /**
-    * Provisions the specified product. A provisioned product is a resourced instance of a product. For example, provisioning a product based on a CloudFormation template launches a CloudFormation stack and its underlying resources. You can check the status of this request using DescribeRecord. If the request contains a tag key with an empty list of values, there is a tag conflict for that key. Do not include conflicted keys as tags, or this causes the error "Parameter validation failed: Missing required parameter in Tags[N]:Value".
+    *  Provisions the specified product.   A provisioned product is a resourced instance of a product. For example, provisioning a product that's based on an CloudFormation template launches an CloudFormation stack and its underlying resources. You can check the status of this request using DescribeRecord.   If the request contains a tag key with an empty list of values, there's a tag conflict for that key. Don't include conflicted keys as tags, or this will cause the error "Parameter validation failed: Missing required parameter in Tags[N]:Value".    When provisioning a product that's been added to a portfolio, you must grant your user, group, or role access to the portfolio. For more information, see Granting users access in the Service Catalog User Guide.  
     */
   def provisionProduct(params: ProvisionProductInput): Request[ProvisionProductOutput, AWSError] = js.native
   def provisionProduct(
@@ -1135,12 +1207,12 @@ trait ServiceCatalog extends Service {
   ): Request[SearchProductsAsAdminOutput, AWSError] = js.native
   
   /**
-    * Gets information about the provisioned products that meet the specified criteria.  To ensure a complete list of provisioned products and remove duplicate products, use sort-by createdTime.  Here is a CLI example:     aws servicecatalog search-provisioned-products --sort-by createdTime   
+    * Gets information about the provisioned products that meet the specified criteria.
     */
   def searchProvisionedProducts(): Request[SearchProvisionedProductsOutput, AWSError] = js.native
   def searchProvisionedProducts(callback: js.Function2[/* err */ AWSError, /* data */ SearchProvisionedProductsOutput, Unit]): Request[SearchProvisionedProductsOutput, AWSError] = js.native
   /**
-    * Gets information about the provisioned products that meet the specified criteria.  To ensure a complete list of provisioned products and remove duplicate products, use sort-by createdTime.  Here is a CLI example:     aws servicecatalog search-provisioned-products --sort-by createdTime   
+    * Gets information about the provisioned products that meet the specified criteria.
     */
   def searchProvisionedProducts(params: SearchProvisionedProductsInput): Request[SearchProvisionedProductsOutput, AWSError] = js.native
   def searchProvisionedProducts(
@@ -1191,12 +1263,12 @@ trait ServiceCatalog extends Service {
   ): Request[UpdatePortfolioOutput, AWSError] = js.native
   
   /**
-    * Updates the specified portfolio share. You can use this API to enable or disable TagOptions sharing for an existing portfolio share.  The portfolio share cannot be updated if the  CreatePortfolioShare operation is IN_PROGRESS, as the share is not available to recipient entities. In this case, you must wait for the portfolio share to be COMPLETED. You must provide the accountId or organization node in the input, but not both. If the portfolio is shared to both an external account and an organization node, and both shares need to be updated, you must invoke UpdatePortfolioShare separately for each share type.  This API cannot be used for removing the portfolio share. You must use DeletePortfolioShare API for that action. 
+    * Updates the specified portfolio share. You can use this API to enable or disable TagOptions sharing or Principal sharing for an existing portfolio share.  The portfolio share cannot be updated if the CreatePortfolioShare operation is IN_PROGRESS, as the share is not available to recipient entities. In this case, you must wait for the portfolio share to be COMPLETED. You must provide the accountId or organization node in the input, but not both. If the portfolio is shared to both an external account and an organization node, and both shares need to be updated, you must invoke UpdatePortfolioShare separately for each share type.  This API cannot be used for removing the portfolio share. You must use DeletePortfolioShare API for that action.   When you associate a principal with portfolio, a potential privilege escalation path may occur when that portfolio is then shared with other accounts. For a user in a recipient account who is not an Service Catalog Admin, but still has the ability to create Principals (Users/Groups/Roles), that user could create a role that matches a principal name association for the portfolio. Although this user may not know which principal names are associated through Service Catalog, they may be able to guess the user. If this potential escalation path is a concern, then Service Catalog recommends using PrincipalType as IAM. With this configuration, the PrincipalARN must already exist in the recipient account before it can be associated.  
     */
   def updatePortfolioShare(): Request[UpdatePortfolioShareOutput, AWSError] = js.native
   def updatePortfolioShare(callback: js.Function2[/* err */ AWSError, /* data */ UpdatePortfolioShareOutput, Unit]): Request[UpdatePortfolioShareOutput, AWSError] = js.native
   /**
-    * Updates the specified portfolio share. You can use this API to enable or disable TagOptions sharing for an existing portfolio share.  The portfolio share cannot be updated if the  CreatePortfolioShare operation is IN_PROGRESS, as the share is not available to recipient entities. In this case, you must wait for the portfolio share to be COMPLETED. You must provide the accountId or organization node in the input, but not both. If the portfolio is shared to both an external account and an organization node, and both shares need to be updated, you must invoke UpdatePortfolioShare separately for each share type.  This API cannot be used for removing the portfolio share. You must use DeletePortfolioShare API for that action. 
+    * Updates the specified portfolio share. You can use this API to enable or disable TagOptions sharing or Principal sharing for an existing portfolio share.  The portfolio share cannot be updated if the CreatePortfolioShare operation is IN_PROGRESS, as the share is not available to recipient entities. In this case, you must wait for the portfolio share to be COMPLETED. You must provide the accountId or organization node in the input, but not both. If the portfolio is shared to both an external account and an organization node, and both shares need to be updated, you must invoke UpdatePortfolioShare separately for each share type.  This API cannot be used for removing the portfolio share. You must use DeletePortfolioShare API for that action.   When you associate a principal with portfolio, a potential privilege escalation path may occur when that portfolio is then shared with other accounts. For a user in a recipient account who is not an Service Catalog Admin, but still has the ability to create Principals (Users/Groups/Roles), that user could create a role that matches a principal name association for the portfolio. Although this user may not know which principal names are associated through Service Catalog, they may be able to guess the user. If this potential escalation path is a concern, then Service Catalog recommends using PrincipalType as IAM. With this configuration, the PrincipalARN must already exist in the recipient account before it can be associated.  
     */
   def updatePortfolioShare(params: UpdatePortfolioShareInput): Request[UpdatePortfolioShareOutput, AWSError] = js.native
   def updatePortfolioShare(

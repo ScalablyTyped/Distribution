@@ -1,7 +1,6 @@
 package typings.angularCompilerCli.anon
 
 import typings.typescript.mod.Identifier
-import typings.typescript.mod.ModifierLike
 import typings.typescript.mod.Node
 import typings.typescript.mod.NodeArray
 import typings.typescript.mod.NodeFlags
@@ -17,18 +16,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeclarationnameIdentifier extends StObject {
   
   var _declarationBrand: Any = js.native
-  
-  /**
-    * @deprecated `decorators` has been removed from `Node` and merged with `modifiers` on the `Node` subtypes that support them.
-    * Use `ts.canHaveDecorators()` to test whether a `Node` can have decorators.
-    * Use `ts.getDecorators()` to get the decorators of a `Node`.
-    *
-    * For example:
-    * ```ts
-    * const decorators = ts.canHaveDecorators(node) ? ts.getDecorators(node) : undefined;
-    * ```
-    */
-  val decorators: Unit = js.native
   
   val end: Double = js.native
   
@@ -81,18 +68,6 @@ trait DeclarationnameIdentifier extends StObject {
   def getWidth(sourceFile: SourceFileLike): Double = js.native
   
   val kind: SyntaxKind = js.native
-  
-  /**
-    * @deprecated `modifiers` has been removed from `Node` and moved to the `Node` subtypes that support them.
-    * Use `ts.canHaveModifiers()` to test whether a `Node` can have modifiers.
-    * Use `ts.getModifiers()` to get the modifiers of a `Node`.
-    *
-    * For example:
-    * ```ts
-    * const modifiers = ts.canHaveModifiers(node) ? ts.getModifiers(node) : undefined;
-    * ```
-    */
-  val modifiers: js.UndefOr[NodeArray[ModifierLike]] = js.native
   
   var name: Identifier = js.native
   

@@ -12,34 +12,43 @@ object domObjectsColorsMod {
     
     /**
       * The black color value, as percentage.
-      * @default
+      * @default 0
       * @range 0.0..100.0
+      * @minVersion 23.0
       */
     def black: Double = js.native
     def black_=(b: Double): Unit = js.native
     
     /**
       * The cyan color value, as percentage.
-      * @default
+      * @default 0
       * @range 0.0..100.0
+      * @minVersion 23.0
       */
     def cyan: Double = js.native
     def cyan_=(c: Double): Unit = js.native
     
     /**
       * The magenta color value, as percentage.
-      * @default
+      * @default 0
       * @range 0.0..100.0
+      * @minVersion 23.0
       */
     def magenta: Double = js.native
     def magenta_=(m: Double): Unit = js.native
     
-    def typename: String = js.native
+    /**
+      * The class name of the referenced object: *"CMYKColor"*.
+      * @minVersion 23.0
+      */
+    def typename: typings.photoshop.photoshopStrings.CMYKColor = js.native
     
     /**
       * The yellow color value, as percentage.
-      * @default
+      * @default 0
       * @range 0.0..100.0
+      *
+      * @minVersion 23.0
       */
     def yellow: Double = js.native
     def yellow_=(y: Double): Unit = js.native
@@ -54,11 +63,16 @@ object domObjectsColorsMod {
       *
       * @default 0
       * @range 0..100
+      * @minVersion 23.0
       */
     def gray: Double = js.native
     def gray_=(g: Double): Unit = js.native
     
-    def typename: String = js.native
+    /**
+      * The class name of the referenced object: *"GrayColor"*.
+      * @minVersion 23.0
+      */
+    def typename: typings.photoshop.photoshopStrings.GrayColor = js.native
   }
   
   @JSImport("photoshop/dom/objects/Colors", "HSBColor")
@@ -70,6 +84,7 @@ object domObjectsColorsMod {
       *
       * @default 100
       * @range 0..100
+      * @minVersion 23.0
       */
     def brightness: Double = js.native
     def brightness_=(b: Double): Unit = js.native
@@ -79,6 +94,7 @@ object domObjectsColorsMod {
       *
       * @default 360
       * @range 0..360
+      * @minVersion 23.0
       */
     def hue: Double = js.native
     def hue_=(h: Double): Unit = js.native
@@ -88,11 +104,16 @@ object domObjectsColorsMod {
       *
       * @default 0
       * @range 0..100
+      * @minVersion 23.0
       */
     def saturation: Double = js.native
     def saturation_=(s: Double): Unit = js.native
     
-    def typename: String = js.native
+    /**
+      * The class name of the referenced object: *"HSBColor"*.
+      * @minVersion 23.0
+      */
+    def typename: typings.photoshop.photoshopStrings.HSBColor = js.native
   }
   
   @JSImport("photoshop/dom/objects/Colors", "LabColor")
@@ -104,6 +125,7 @@ object domObjectsColorsMod {
       *
       * @default 0
       * @range -128..127
+      * @minVersion 23.0
       */
     def a: Double = js.native
     def a_=(a: Double): Unit = js.native
@@ -113,6 +135,7 @@ object domObjectsColorsMod {
       *
       * @default 0
       * @range -128..127
+      * @minVersion 23.0
       */
     def b: Double = js.native
     def b_=(b: Double): Unit = js.native
@@ -122,18 +145,27 @@ object domObjectsColorsMod {
       *
       * @default 100
       * @range 0..100
+      * @minVersion 23.0
       */
     def l: Double = js.native
     def l_=(l: Double): Unit = js.native
     
-    def typename: String = js.native
+    /**
+      * The class name of the referenced object: *"LabColor"*.
+      * @minVersion 23.0
+      */
+    def typename: typings.photoshop.photoshopStrings.LabColor = js.native
   }
   
   @JSImport("photoshop/dom/objects/Colors", "NoColor")
   @js.native
   open class NoColor () extends StObject {
     
-    def typename: String = js.native
+    /**
+      * The class name of the referenced object: *"NoColor"*.
+      * @minVersion 23.0
+      */
+    def typename: typings.photoshop.photoshopStrings.NoColor = js.native
   }
   
   @JSImport("photoshop/dom/objects/Colors", "RGBColor")
@@ -145,6 +177,7 @@ object domObjectsColorsMod {
       *
       * @default 255
       * @range 0..255
+      * @minVersion 23.0
       */
     def blue: Double = js.native
     def blue_=(b: Double): Unit = js.native
@@ -154,12 +187,18 @@ object domObjectsColorsMod {
       *
       * @default 255
       * @range 0..255
+      * @minVersion 23.0
       */
     def green: Double = js.native
     def green_=(g: Double): Unit = js.native
     
     /**
-      * The hexadecimal representation of the color in uppercase.
+      * The hexadecimal representation of the color.
+      *
+      * Ex. returns *FF9801*, but accepts *#ff9801* or *FF9801*.
+      *
+      * @default "FFFFFF"
+      * @minVersion 23.0
       */
     def hexValue: String = js.native
     def hexValue_=(value: String): Unit = js.native
@@ -169,10 +208,15 @@ object domObjectsColorsMod {
       *
       * @default 255
       * @range 0..255
+      * @minVersion 23.0
       */
     def red: Double = js.native
     def red_=(r: Double): Unit = js.native
     
-    def typename: String = js.native
+    /**
+      * The class name of the referenced object: *"RGBColor"*.
+      * @minVersion 23.0
+      */
+    def typename: typings.photoshop.photoshopStrings.RGBColor = js.native
   }
 }

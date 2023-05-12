@@ -1,6 +1,8 @@
 package typings.rcPicker
 
 import typings.rcPicker.esGenerateMod.GenerateConfig
+import typings.rcPicker.esInterfaceMod.CellRender
+import typings.rcPicker.esInterfaceMod.CellRenderInfo
 import typings.rcPicker.esInterfaceMod.Locale
 import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
@@ -18,9 +20,11 @@ object esPanelsDatePanelDateBodyMod {
   
   trait DateBodyPassProps[DateType] extends StObject {
     
-    var dateRender: js.UndefOr[DateRender[DateType]] = js.undefined
+    var cellRender: js.UndefOr[CellRender[DateType, DateType]] = js.undefined
     
     var disabledDate: js.UndefOr[js.Function1[/* date */ DateType, Boolean]] = js.undefined
+    
+    var isSameCell: js.UndefOr[js.Function2[/* current */ DateType, /* target */ DateType, Boolean]] = js.undefined
     
     var prefixColumn: js.UndefOr[js.Function1[/* date */ DateType, ReactNode]] = js.undefined
     
@@ -36,13 +40,17 @@ object esPanelsDatePanelDateBodyMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: DateBodyPassProps[?], DateType] (val x: Self & DateBodyPassProps[DateType]) extends AnyVal {
       
-      inline def setDateRender(value: (DateType, DateType) => ReactNode): Self = StObject.set(x, "dateRender", js.Any.fromFunction2(value))
+      inline def setCellRender(value: (DateType, /* info */ CellRenderInfo[DateType]) => ReactNode): Self = StObject.set(x, "cellRender", js.Any.fromFunction2(value))
       
-      inline def setDateRenderUndefined: Self = StObject.set(x, "dateRender", js.undefined)
+      inline def setCellRenderUndefined: Self = StObject.set(x, "cellRender", js.undefined)
       
       inline def setDisabledDate(value: /* date */ DateType => Boolean): Self = StObject.set(x, "disabledDate", js.Any.fromFunction1(value))
       
       inline def setDisabledDateUndefined: Self = StObject.set(x, "disabledDate", js.undefined)
+      
+      inline def setIsSameCell(value: (/* current */ DateType, /* target */ DateType) => Boolean): Self = StObject.set(x, "isSameCell", js.Any.fromFunction2(value))
+      
+      inline def setIsSameCellUndefined: Self = StObject.set(x, "isSameCell", js.undefined)
       
       inline def setPrefixColumn(value: /* date */ DateType => ReactNode): Self = StObject.set(x, "prefixColumn", js.Any.fromFunction1(value))
       

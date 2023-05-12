@@ -13,5 +13,9 @@ object AuthorityType extends StObject {
   
   /* 1 */ val Adfs: typings.azureMsalCommon.distAuthorityAuthorityTypeMod.AuthorityType.Adfs & Double = js.native
   
+  /* 3 */ val Ciam: typings.azureMsalCommon.distAuthorityAuthorityTypeMod.AuthorityType.Ciam & Double = js.native
+  
   /* 0 */ val Default: typings.azureMsalCommon.distAuthorityAuthorityTypeMod.AuthorityType.Default & Double = js.native
+  
+  /* 2 */ val Dsts: typings.azureMsalCommon.distAuthorityAuthorityTypeMod.AuthorityType.Dsts & Double = js.native
 }

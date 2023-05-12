@@ -1,6 +1,7 @@
 package typings.babylonjs.anon
 
 import typings.babylonjs.XRDOMOverlayInit
+import typings.babylonjs.XRDepthStateInit
 import typings.babylonjs.XRTrackedImageInit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -8,6 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /* Inlined std.Partial<babylonjs.XRSessionInit> */
 trait PartialXRSessionInit extends StObject {
+  
+  var depthSensing: js.UndefOr[XRDepthStateInit] = js.undefined
   
   var domOverlay: js.UndefOr[XRDOMOverlayInit] = js.undefined
   
@@ -26,6 +29,10 @@ object PartialXRSessionInit {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: PartialXRSessionInit] (val x: Self) extends AnyVal {
+    
+    inline def setDepthSensing(value: XRDepthStateInit): Self = StObject.set(x, "depthSensing", value.asInstanceOf[js.Any])
+    
+    inline def setDepthSensingUndefined: Self = StObject.set(x, "depthSensing", js.undefined)
     
     inline def setDomOverlay(value: XRDOMOverlayInit): Self = StObject.set(x, "domOverlay", value.asInstanceOf[js.Any])
     

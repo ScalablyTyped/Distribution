@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distResponseExternalTokenResponseMod {
   
-  /* Inlined std.Pick<@azure/msal-common.@azure/msal-common/dist/response/ServerAuthorizationTokenResponse.ServerAuthorizationTokenResponse, 'token_type' | 'scope' | 'expires_in' | 'id_token'> & {  access_token :string | undefined,   client_info :string | undefined} */
+  /* Inlined std.Pick<@azure/msal-common.@azure/msal-common/dist/response/ServerAuthorizationTokenResponse.ServerAuthorizationTokenResponse, 'token_type' | 'scope' | 'expires_in' | 'id_token' | 'refresh_token'> & {  access_token :string | undefined,   client_info :string | undefined} */
   trait ExternalTokenResponse extends StObject {
     
     var access_token: js.UndefOr[String] = js.undefined
@@ -17,6 +17,8 @@ object distResponseExternalTokenResponseMod {
     var expires_in: js.UndefOr[Double] = js.undefined
     
     var id_token: js.UndefOr[String] = js.undefined
+    
+    var refresh_token: js.UndefOr[String] = js.undefined
     
     var scope: js.UndefOr[String] = js.undefined
     
@@ -47,6 +49,10 @@ object distResponseExternalTokenResponseMod {
       inline def setId_token(value: String): Self = StObject.set(x, "id_token", value.asInstanceOf[js.Any])
       
       inline def setId_tokenUndefined: Self = StObject.set(x, "id_token", js.undefined)
+      
+      inline def setRefresh_token(value: String): Self = StObject.set(x, "refresh_token", value.asInstanceOf[js.Any])
+      
+      inline def setRefresh_tokenUndefined: Self = StObject.set(x, "refresh_token", js.undefined)
       
       inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       

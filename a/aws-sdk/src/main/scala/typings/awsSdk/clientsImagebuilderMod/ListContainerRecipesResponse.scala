@@ -12,7 +12,7 @@ trait ListContainerRecipesResponse extends StObject {
   var containerRecipeSummaryList: js.UndefOr[ContainerRecipeSummaryList] = js.undefined
   
   /**
-    * The next token field is used for paginated responses. When this is not empty, there are additional container recipes that the service has not included in this response. Use this token with the next request to retrieve additional list items.
+    * The next token used for paginated responses. When this field isn't empty, there are additional elements that the service has'ot included in this request. Use this token with the next request to retrieve additional objects.
     */
   var nextToken: js.UndefOr[NonEmptyString] = js.undefined
   

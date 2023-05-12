@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.plotlyJs.anon.PartialPlotDataAutobinx
   - typings.plotlyJs.anon.PartialBoxPlotData
   - typings.plotlyJs.anon.PartialViolinData
-  - typings.plotlyJs.anon.PartialOhclData
+  - typings.plotlyJs.anon.PartialOhlcData
   - typings.plotlyJs.anon.PartialCandlestickData
   - typings.plotlyJs.anon.PartialPieData
 */
@@ -25,9 +25,9 @@ object Data {
     __obj.asInstanceOf[typings.plotlyJs.anon.PartialCandlestickData]
   }
   
-  inline def PartialOhclData(): typings.plotlyJs.anon.PartialOhclData = {
+  inline def PartialOhlcData(): typings.plotlyJs.anon.PartialOhlcData = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[typings.plotlyJs.anon.PartialOhclData]
+    __obj.asInstanceOf[typings.plotlyJs.anon.PartialOhlcData]
   }
   
   inline def PartialPieData(): typings.plotlyJs.anon.PartialPieData = {

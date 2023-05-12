@@ -2,7 +2,6 @@ package typings.postcss
 
 import typings.postcss.libContainerMod.ContainerProps
 import typings.postcss.libNodeMod.AnyNode
-import typings.postcss.libRootMod.RootProps
 import typings.postcss.mod.ProcessOptions
 import typings.postcss.postcssStrings.document
 import typings.std.Record
@@ -12,46 +11,33 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object libDocumentMod {
   
+  @JSImport("postcss/lib/document", JSImport.Namespace)
+  @js.native
+  open class ^ () extends Document_
+  
+  /**
+    * Represents a file and contains all its parsed nodes.
+    *
+    * **Experimental:** some aspects of this node could change within minor
+    * or patch version releases.
+    *
+    * ```js
+    * const document = htmlParser(
+    *   '<html><style>a{color:black}</style><style>b{z-index:2}</style>'
+    * )
+    * document.type         //=> 'document'
+    * document.nodes.length //=> 2
+    * ```
+    */
   @JSImport("postcss/lib/document", JSImport.Default)
   @js.native
   open class default ()
-    extends Document
+    extends Document_
        with AnyNode {
     def this(defaults: DocumentProps) = this()
   }
   
-  type ChildNode = typings.postcss.libRootMod.default
-  
-  type ChildProps = RootProps
-  
-  @js.native
-  trait Document
-    extends typings.postcss.libContainerMod.default[typings.postcss.libRootMod.default] {
-    
-    @JSName("parent")
-    var parent_Document: Unit = js.native
-    
-    /**
-      * Returns a `Result` instance representing the document’s CSS roots.
-      *
-      * ```js
-      * const root1 = postcss.parse(css1, { from: 'a.css' })
-      * const root2 = postcss.parse(css2, { from: 'b.css' })
-      * const document = postcss.document()
-      * document.append(root1)
-      * document.append(root2)
-      * const result = document.toResult({ to: 'all.css', map: true })
-      * ```
-      *
-      * @param opts Options.
-      * @return Result with current document’s CSS.
-      */
-    def toResult(): typings.postcss.libResultMod.default = js.native
-    def toResult(options: ProcessOptions): typings.postcss.libResultMod.default = js.native
-    
-    @JSName("type")
-    var type_Document: document = js.native
-  }
+  type Document = Document_
   
   trait DocumentProps
     extends StObject
@@ -88,5 +74,46 @@ object libDocumentMod {
       
       inline def setRawsUndefined: Self = StObject.set(x, "raws", js.undefined)
     }
+  }
+  
+  /**
+    * Represents a file and contains all its parsed nodes.
+    *
+    * **Experimental:** some aspects of this node could change within minor
+    * or patch version releases.
+    *
+    * ```js
+    * const document = htmlParser(
+    *   '<html><style>a{color:black}</style><style>b{z-index:2}</style>'
+    * )
+    * document.type         //=> 'document'
+    * document.nodes.length //=> 2
+    * ```
+    */
+  @js.native
+  trait Document_
+    extends typings.postcss.libContainerMod.default[typings.postcss.libRootMod.default] {
+    
+    var parent: Unit = js.native
+    
+    /**
+      * Returns a `Result` instance representing the document’s CSS roots.
+      *
+      * ```js
+      * const root1 = postcss.parse(css1, { from: 'a.css' })
+      * const root2 = postcss.parse(css2, { from: 'b.css' })
+      * const document = postcss.document()
+      * document.append(root1)
+      * document.append(root2)
+      * const result = document.toResult({ to: 'all.css', map: true })
+      * ```
+      *
+      * @param opts Options.
+      * @return Result with current document’s CSS.
+      */
+    def toResult(): typings.postcss.libResultMod.default = js.native
+    def toResult(options: ProcessOptions): typings.postcss.libResultMod.default = js.native
+    
+    var `type`: document = js.native
   }
 }

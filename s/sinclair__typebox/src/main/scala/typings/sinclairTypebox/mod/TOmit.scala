@@ -1,24 +1,15 @@
 package typings.sinclairTypebox.mod
 
-import typings.std.Omit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/** NOTE: Conditional type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+  * You'll have to cast your way around this structure, unfortunately.
+  * TS definition: {{{
+  T extends @sinclair/typebox.@sinclair/typebox.TRecursive<infer S> ? @sinclair/typebox.@sinclair/typebox.TRecursive<@sinclair/typebox.@sinclair/typebox.TOmit<S, K>> : T extends @sinclair/typebox.@sinclair/typebox.TIntersect<infer S> ? @sinclair/typebox.@sinclair/typebox.TIntersect<@sinclair/typebox.@sinclair/typebox.TOmitArray<S, K>> : T extends @sinclair/typebox.@sinclair/typebox.TUnion<infer S> ? @sinclair/typebox.@sinclair/typebox.TUnion<@sinclair/typebox.@sinclair/typebox.TOmitArray<S, K>> : T extends @sinclair/typebox.@sinclair/typebox.TObject<infer S> ? @sinclair/typebox.@sinclair/typebox.TObject<@sinclair/typebox.@sinclair/typebox.TOmitProperties<S, K>> : T
+  }}}
+  */
 @js.native
-trait TOmit[T /* <: TObject[TProperties] */, Properties /* <: js.Array[ObjectPropertyKeys[T]] */]
-  extends StObject
-     with TObject[TProperties] {
-  
-  @JSName("properties")
-  var properties_TOmit: /* import warning: importer.ImportType#apply Failed type conversion: T extends @sinclair/typebox.@sinclair/typebox.TObject<@sinclair/typebox.@sinclair/typebox.TProperties> ? std.Omit<T['properties'], Properties[number]> : never */ js.Any = js.native
-  
-  @JSName("static")
-  var static_TOmit: Omit[
-    Static[
-      T, 
-      /* import warning: importer.ImportType#apply Failed type conversion: this['params'] */ js.Any
-    ], 
-    /* import warning: importer.ImportType#apply Failed type conversion: Properties[number] */ js.Any
-  ] = js.native
-}
+trait TOmit[T /* <: TSchema */, K /* <: /* keyof any */ String */] extends StObject

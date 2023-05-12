@@ -189,6 +189,8 @@ trait FieldProps[T]
   
   var autoCorrect: js.UndefOr[String] = js.native
   
+  var autoFocus: js.UndefOr[Boolean] = js.native
+  
   var autoSave: js.UndefOr[String] = js.native
   
   var autofocus: Boolean = js.native
@@ -198,6 +200,8 @@ trait FieldProps[T]
   var className: js.UndefOr[String] = js.native
   
   var color: js.UndefOr[String] = js.native
+  
+  var content: js.UndefOr[String] = js.native
   
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
   
@@ -430,11 +434,15 @@ trait FieldProps[T]
   
   var registry: Definitions = js.native
   
+  var rel: js.UndefOr[String] = js.native
+  
   var required: Boolean = js.native
   
   var resource: js.UndefOr[String] = js.native
   
   var results: js.UndefOr[Double] = js.native
+  
+  var rev: js.UndefOr[String] = js.native
   
   var role: js.UndefOr[AriaRole] = js.native
   

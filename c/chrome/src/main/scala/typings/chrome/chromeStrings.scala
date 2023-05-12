@@ -11,6 +11,7 @@ import typings.chrome.chrome.downloads.DownloadState
 import typings.chrome.chrome.downloads.FilenameConflictAction
 import typings.chrome.chrome.idle.IdleState
 import typings.chrome.chrome.input.ime.AssistiveWindowButton
+import typings.chrome.chrome.input.ime.AutoCapitalizeType
 import typings.chrome.chrome.loginState.ProfileType
 import typings.chrome.chrome.loginState.SessionState
 import typings.chrome.chrome.notifications.TemplateType
@@ -485,6 +486,12 @@ object chromeStrings {
   inline def certificateProvider: certificateProvider = "certificateProvider".asInstanceOf[certificateProvider]
   
   @js.native
+  sealed trait characters
+    extends StObject
+       with AutoCapitalizeType
+  inline def characters: characters = "characters".asInstanceOf[characters]
+  
+  @js.native
   sealed trait checkbox
     extends StObject
        with ContextItemType
@@ -657,6 +664,18 @@ object chromeStrings {
   inline def downloads: downloads = "downloads".asInstanceOf[downloads]
   
   @js.native
+  sealed trait downloadsDotshelf
+    extends StObject
+       with ManifestPermissions
+  inline def downloadsDotshelf: downloadsDotshelf = "downloads.shelf".asInstanceOf[downloadsDotshelf]
+  
+  @js.native
+  sealed trait downloadsDotui
+    extends StObject
+       with ManifestPermissions
+  inline def downloadsDotui: downloadsDotui = "downloads.ui".asInstanceOf[downloadsDotui]
+  
+  @js.native
   sealed trait editable
     extends StObject
        with ContextType
@@ -711,6 +730,12 @@ object chromeStrings {
   @js.native
   sealed trait fantasy extends StObject
   inline def fantasy: fantasy = "fantasy".asInstanceOf[fantasy]
+  
+  @js.native
+  sealed trait favicon
+    extends StObject
+       with ManifestPermissions
+  inline def favicon: favicon = "favicon".asInstanceOf[favicon]
   
   @js.native
   sealed trait fenced_frame extends StObject
@@ -1052,6 +1077,12 @@ object chromeStrings {
   inline def off: off = "off".asInstanceOf[off]
   
   @js.native
+  sealed trait offscreen
+    extends StObject
+       with ManifestPermissions
+  inline def offscreen: offscreen = "offscreen".asInstanceOf[offscreen]
+  
+  @js.native
   sealed trait one extends StObject
   inline def one: one = "one".asInstanceOf[one]
   
@@ -1283,6 +1314,12 @@ object chromeStrings {
   @js.native
   sealed trait sentence extends StObject
   inline def sentence: sentence = "sentence".asInstanceOf[sentence]
+  
+  @js.native
+  sealed trait sentences
+    extends StObject
+       with AutoCapitalizeType
+  inline def sentences: sentences = "sentences".asInstanceOf[sentences]
   
   @js.native
   sealed trait separator
@@ -1541,6 +1578,12 @@ object chromeStrings {
   @js.native
   sealed trait word extends StObject
   inline def word: word = "word".asInstanceOf[word]
+  
+  @js.native
+  sealed trait words
+    extends StObject
+       with AutoCapitalizeType
+  inline def words: words = "words".asInstanceOf[words]
   
   @js.native
   sealed trait `x86-32`

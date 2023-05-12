@@ -33,7 +33,8 @@ trait Protectionrules extends StObject {
   /** @example MDExOkVudmlyb25tZW50NTY3ODA0Mjg= */
   var node_id: String
   
-  var protection_rules: js.UndefOr[js.Array[Partialidnumbernodeidstri]] = js.undefined
+  /** @description Built-in deployment protection rules for the environment. */
+  var protection_rules: js.UndefOr[js.Array[Waittimer | IdNodeid | NodeidType]] = js.undefined
   
   /**
     * Format: date-time
@@ -79,11 +80,11 @@ object Protectionrules {
     
     inline def setNode_id(value: String): Self = StObject.set(x, "node_id", value.asInstanceOf[js.Any])
     
-    inline def setProtection_rules(value: js.Array[Partialidnumbernodeidstri]): Self = StObject.set(x, "protection_rules", value.asInstanceOf[js.Any])
+    inline def setProtection_rules(value: js.Array[Waittimer | IdNodeid | NodeidType]): Self = StObject.set(x, "protection_rules", value.asInstanceOf[js.Any])
     
     inline def setProtection_rulesUndefined: Self = StObject.set(x, "protection_rules", js.undefined)
     
-    inline def setProtection_rulesVarargs(value: Partialidnumbernodeidstri*): Self = StObject.set(x, "protection_rules", js.Array(value*))
+    inline def setProtection_rulesVarargs(value: (Waittimer | IdNodeid | NodeidType)*): Self = StObject.set(x, "protection_rules", js.Array(value*))
     
     inline def setUpdated_at(value: String): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])
     

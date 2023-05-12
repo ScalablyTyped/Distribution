@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "reapop" : "4.2.0"
+      "reapop" : "4.2.1"
     }
   ],
   "test-dependencies" : [
     {
-      "reapop" : "4.2.0"
+      "reapop" : "4.2.1"
     }
   ],
   "compile-devDependencies" : [

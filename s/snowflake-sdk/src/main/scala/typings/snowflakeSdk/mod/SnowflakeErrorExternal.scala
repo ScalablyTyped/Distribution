@@ -1,6 +1,7 @@
 package typings.snowflakeSdk.mod
 
 import typings.std.Error
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,11 +15,11 @@ trait SnowflakeErrorExternal
   
   var code: js.UndefOr[ErrorCode] = js.undefined
   
-  var data: js.UndefOr[js.Object] = js.undefined
+  var data: js.UndefOr[Record[String, Any]] = js.undefined
   
   var isFatal: js.UndefOr[Boolean] = js.undefined
   
-  var response: js.UndefOr[js.Object] = js.undefined
+  var response: js.UndefOr[Record[String, Any]] = js.undefined
   
   var responseBody: js.UndefOr[String] = js.undefined
   
@@ -42,7 +43,7 @@ object SnowflakeErrorExternal {
     
     inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
-    inline def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Record[String, Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
@@ -50,7 +51,7 @@ object SnowflakeErrorExternal {
     
     inline def setIsFatalUndefined: Self = StObject.set(x, "isFatal", js.undefined)
     
-    inline def setResponse(value: js.Object): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: Record[String, Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     
     inline def setResponseBody(value: String): Self = StObject.set(x, "responseBody", value.asInstanceOf[js.Any])
     

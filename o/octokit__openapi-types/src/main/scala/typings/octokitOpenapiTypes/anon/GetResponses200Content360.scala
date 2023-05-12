@@ -6,16 +6,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GetResponses200Content360 extends StObject {
   
-  /** Lists the current user's GPG keys. Requires that you are authenticated via Basic Auth or via OAuth with at least `read:gpg_key` [scope](https://docs.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/). */
+  /**
+    * Get top referral paths
+    * @description Get the top 10 popular contents over the last 14 days.
+    */
   var get: Responses200Content360
-  
-  /** Adds a GPG key to the authenticated user's GitHub account. Requires that you are authenticated via Basic Auth, or OAuth with at least `write:gpg_key` [scope](https://docs.github.com/apps/building-oauth-apps/understanding-scopes-for-oauth-apps/). */
-  var post: RequestBodyContentApplicationjsonArmoredpublickey
 }
 object GetResponses200Content360 {
   
-  inline def apply(get: Responses200Content360, post: RequestBodyContentApplicationjsonArmoredpublickey): GetResponses200Content360 = {
-    val __obj = js.Dynamic.literal(get = get.asInstanceOf[js.Any], post = post.asInstanceOf[js.Any])
+  inline def apply(get: Responses200Content360): GetResponses200Content360 = {
+    val __obj = js.Dynamic.literal(get = get.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetResponses200Content360]
   }
   
@@ -23,7 +23,5 @@ object GetResponses200Content360 {
   implicit open class MutableBuilder[Self <: GetResponses200Content360] (val x: Self) extends AnyVal {
     
     inline def setGet(value: Responses200Content360): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
-    
-    inline def setPost(value: RequestBodyContentApplicationjsonArmoredpublickey): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
   }
 }

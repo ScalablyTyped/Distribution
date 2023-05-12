@@ -1,7 +1,7 @@
 
 # Scala.js typings for wasm-feature-detect
 
-Typings are for version 1.2.11
+Typings are for version 1.5.1
 
 ## Library description:
 A small library to detect which features of WebAssembly are supported in your current browser.

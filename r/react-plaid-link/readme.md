@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-plaid-link
 
-Typings are for version 3.3.2
+Typings are for version 3.4.0
 
 ## Library description:
 A React component for Plaid Link

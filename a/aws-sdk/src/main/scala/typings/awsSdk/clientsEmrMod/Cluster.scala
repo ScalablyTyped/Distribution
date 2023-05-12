@@ -12,7 +12,7 @@ trait Cluster extends StObject {
   var Applications: js.UndefOr[ApplicationList] = js.undefined
   
   /**
-    * An IAM role for automatic scaling policies. The default role is EMR_AutoScaling_DefaultRole. The IAM role provides permissions that the automatic scaling feature requires to launch and terminate EC2 instances in an instance group.
+    * An IAM role for automatic scaling policies. The default role is EMR_AutoScaling_DefaultRole. The IAM role provides permissions that the automatic scaling feature requires to launch and terminate Amazon EC2 instances in an instance group.
     */
   var AutoScalingRole: js.UndefOr[XmlString] = js.undefined
   
@@ -27,22 +27,22 @@ trait Cluster extends StObject {
   var ClusterArn: js.UndefOr[ArnType] = js.undefined
   
   /**
-    * Applies only to Amazon EMR releases 4.x and later. The list of Configurations supplied to the EMR cluster.
+    * Applies only to Amazon EMR releases 4.x and later. The list of configurations that are supplied to the Amazon EMR cluster.
     */
   var Configurations: js.UndefOr[ConfigurationList] = js.undefined
   
   /**
-    * Available only in Amazon EMR version 5.7.0 and later. The ID of a custom Amazon EBS-backed Linux AMI if the cluster uses a custom AMI.
+    * Available only in Amazon EMR releases 5.7.0 and later. The ID of a custom Amazon EBS-backed Linux AMI if the cluster uses a custom AMI.
     */
   var CustomAmiId: js.UndefOr[XmlStringMaxLen256] = js.undefined
   
   /**
-    * The size, in GiB, of the Amazon EBS root device volume of the Linux AMI that is used for each EC2 instance. Available in Amazon EMR version 4.x and later.
+    * The size, in GiB, of the Amazon EBS root device volume of the Linux AMI that is used for each Amazon EC2 instance. Available in Amazon EMR releases 4.x and later.
     */
   var EbsRootVolumeSize: js.UndefOr[Integer] = js.undefined
   
   /**
-    * Provides information about the EC2 instances in a cluster grouped by category. For example, key name, subnet ID, IAM instance profile, and so on.
+    * Provides information about the Amazon EC2 instances in a cluster grouped by category. For example, key name, subnet ID, IAM instance profile, and so on.
     */
   var Ec2InstanceAttributes: js.UndefOr[typings.awsSdk.clientsEmrMod.Ec2InstanceAttributes] = js.undefined
   
@@ -52,7 +52,7 @@ trait Cluster extends StObject {
   var Id: js.UndefOr[ClusterId] = js.undefined
   
   /**
-    *  The instance fleet configuration is available only in Amazon EMR versions 4.8.0 and later, excluding 5.0.x versions.  The instance group configuration of the cluster. A value of INSTANCE_GROUP indicates a uniform instance group configuration. A value of INSTANCE_FLEET indicates an instance fleets configuration.
+    *  The instance fleet configuration is available only in Amazon EMR releases 4.8.0 and later, excluding 5.0.x versions.  The instance group configuration of the cluster. A value of INSTANCE_GROUP indicates a uniform instance group configuration. A value of INSTANCE_FLEET indicates an instance fleets configuration.
     */
   var InstanceCollectionType: js.UndefOr[typings.awsSdk.clientsEmrMod.InstanceCollectionType] = js.undefined
   
@@ -62,7 +62,7 @@ trait Cluster extends StObject {
   var KerberosAttributes: js.UndefOr[typings.awsSdk.clientsEmrMod.KerberosAttributes] = js.undefined
   
   /**
-    *  The KMS key used for encrypting log files. This attribute is only available with EMR version 5.30.0 and later, excluding EMR 6.0.0. 
+    *  The KMS key used for encrypting log files. This attribute is only available with Amazon EMR 5.30.0 and later, excluding Amazon EMR 6.0.0. 
     */
   var LogEncryptionKmsKeyId: js.UndefOr[String] = js.undefined
   
@@ -82,7 +82,7 @@ trait Cluster extends StObject {
   var Name: js.UndefOr[String] = js.undefined
   
   /**
-    * An approximation of the cost of the cluster, represented in m1.small/hours. This value is incremented one time for every hour an m1.small instance runs. Larger instances are weighted more, so an EC2 instance that is roughly four times more expensive would result in the normalized instance hours being incremented by four. This result is only an approximation and does not reflect the actual billing rate.
+    * An approximation of the cost of the cluster, represented in m1.small/hours. This value is incremented one time for every hour an m1.small instance runs. Larger instances are weighted more, so an Amazon EC2 instance that is roughly four times more expensive would result in the normalized instance hours being incremented by four. This result is only an approximation and does not reflect the actual billing rate.
     */
   var NormalizedInstanceHours: js.UndefOr[Integer] = js.undefined
   
@@ -107,7 +107,7 @@ trait Cluster extends StObject {
   var ReleaseLabel: js.UndefOr[String] = js.undefined
   
   /**
-    * Applies only when CustomAmiID is used. Specifies the type of updates that are applied from the Amazon Linux AMI package repositories when an instance boots using the AMI.
+    * Applies only when CustomAmiID is used. Specifies the type of updates that the Amazon Linux AMI package repositories apply when an instance boots using the AMI.
     */
   var RepoUpgradeOnBoot: js.UndefOr[typings.awsSdk.clientsEmrMod.RepoUpgradeOnBoot] = js.undefined
   
@@ -122,7 +122,7 @@ trait Cluster extends StObject {
   var RunningAmiVersion: js.UndefOr[String] = js.undefined
   
   /**
-    * The way that individual Amazon EC2 instances terminate when an automatic scale-in activity occurs or an instance group is resized. TERMINATE_AT_INSTANCE_HOUR indicates that Amazon EMR terminates nodes at the instance-hour boundary, regardless of when the request to terminate the instance was submitted. This option is only available with Amazon EMR 5.1.0 and later and is the default for clusters created using that version. TERMINATE_AT_TASK_COMPLETION indicates that Amazon EMR adds nodes to a deny list and drains tasks from nodes before terminating the Amazon EC2 instances, regardless of the instance-hour boundary. With either behavior, Amazon EMR removes the least active nodes first and blocks instance termination if it could lead to HDFS corruption. TERMINATE_AT_TASK_COMPLETION is available only in Amazon EMR version 4.1.0 and later, and is the default for versions of Amazon EMR earlier than 5.1.0.
+    * The way that individual Amazon EC2 instances terminate when an automatic scale-in activity occurs or an instance group is resized. TERMINATE_AT_INSTANCE_HOUR indicates that Amazon EMR terminates nodes at the instance-hour boundary, regardless of when the request to terminate the instance was submitted. This option is only available with Amazon EMR 5.1.0 and later and is the default for clusters created using that version. TERMINATE_AT_TASK_COMPLETION indicates that Amazon EMR adds nodes to a deny list and drains tasks from nodes before terminating the Amazon EC2 instances, regardless of the instance-hour boundary. With either behavior, Amazon EMR removes the least active nodes first and blocks instance termination if it could lead to HDFS corruption. TERMINATE_AT_TASK_COMPLETION is available only in Amazon EMR releases 4.1.0 and later, and is the default for versions of Amazon EMR earlier than 5.1.0.
     */
   var ScaleDownBehavior: js.UndefOr[typings.awsSdk.clientsEmrMod.ScaleDownBehavior] = js.undefined
   
@@ -152,12 +152,12 @@ trait Cluster extends StObject {
   var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
-    * Indicates whether Amazon EMR will lock the cluster to prevent the EC2 instances from being terminated by an API call or user intervention, or in the event of a cluster error.
+    * Indicates whether Amazon EMR will lock the cluster to prevent the Amazon EC2 instances from being terminated by an API call or user intervention, or in the event of a cluster error.
     */
   var TerminationProtected: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Indicates whether the cluster is visible to IAM principals in the Amazon Web Services account associated with the cluster. When true, IAM principals in the Amazon Web Services account can perform EMR cluster actions on the cluster that their IAM policies allow. When false, only the IAM principal that created the cluster and the Amazon Web Services account root user can perform EMR actions, regardless of IAM permissions policies attached to other IAM principals. The default value is true if a value is not provided when creating a cluster using the EMR API RunJobFlow command, the CLI create-cluster command, or the Amazon Web Services Management Console.
+    * Indicates whether the cluster is visible to IAM principals in the Amazon Web Services account associated with the cluster. When true, IAM principals in the Amazon Web Services account can perform Amazon EMR cluster actions on the cluster that their IAM policies allow. When false, only the IAM principal that created the cluster and the Amazon Web Services account root user can perform Amazon EMR actions, regardless of IAM permissions policies attached to other IAM principals. The default value is true if a value is not provided when creating a cluster using the Amazon EMR API RunJobFlow command, the CLI create-cluster command, or the Amazon Web Services Management Console.
     */
   var VisibleToAllUsers: js.UndefOr[Boolean] = js.undefined
 }

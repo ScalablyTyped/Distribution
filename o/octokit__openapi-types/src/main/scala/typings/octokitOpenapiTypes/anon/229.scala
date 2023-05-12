@@ -6,22 +6,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `229` extends StObject {
   
-  @JSName("application/json")
-  var applicationSlashjson: Defaultbranchonly | Null
+  var name: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['manifest-path'] */ js.Any
+  ] = js.undefined
 }
 object `229` {
   
   inline def apply(): `229` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("application/json")(null)
     __obj.asInstanceOf[`229`]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: `229`] (val x: Self) extends AnyVal {
     
-    inline def setApplicationSlashjson(value: Defaultbranchonly): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
+    inline def setName(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['manifest-path'] */ js.Any
+    ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setApplicationSlashjsonNull: Self = StObject.set(x, "application/json", null)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

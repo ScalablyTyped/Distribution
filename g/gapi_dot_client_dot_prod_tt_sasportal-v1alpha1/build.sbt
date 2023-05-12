@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gapi_dot_client_dot_prod_tt_sasportal-v1alpha1"
-version := "0.0-dt-20220912Z-52889c"
+version := "0.0-dt-20230214Z-52889c"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

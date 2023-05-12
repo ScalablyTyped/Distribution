@@ -1,7 +1,6 @@
 package typings.mysql2
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.mysql2.mysql2Booleans.`true`
 import typings.mysql2.mysql2Strings.connection
 import typings.mysql2.typingsMysqlLibConnectionMod.ConnectionOptions
 import typings.mysql2.typingsMysqlLibProtocolPacketsFieldPacketMod.FieldPacket
@@ -12,6 +11,7 @@ import typings.mysql2.typingsMysqlLibProtocolSequencesQueryMod.QueryError
 import typings.mysql2.typingsMysqlLibProtocolSequencesQueryMod.QueryOptions
 import typings.node.NodeJS.ErrnoException
 import typings.node.eventsMod.EventEmitter
+import typings.std.PromiseConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -30,9 +30,61 @@ object typingsMysqlLibPoolMod {
     def end(): Unit = js.native
     def end(callback: js.Function2[/* err */ ErrnoException | Null, /* repeated */ Any, Any]): Unit = js.native
     
+    def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](options: QueryOptions): typings.mysql2.typingsMysqlLibProtocolSequencesQueryMod.^ = js.native
+    def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](
+      options: QueryOptions,
+      callback: js.Function3[
+          /* err */ QueryError | Null, 
+          /* result */ T, 
+          /* fields */ js.UndefOr[js.Array[FieldPacket]], 
+          Any
+        ]
+    ): typings.mysql2.typingsMysqlLibProtocolSequencesQueryMod.^ = js.native
+    def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](options: QueryOptions, values: js.Array[Any]): typings.mysql2.typingsMysqlLibProtocolSequencesQueryMod.^ = js.native
+    def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](
+      options: QueryOptions,
+      values: js.Array[Any],
+      callback: js.Function3[/* err */ QueryError | Null, /* result */ T, /* fields */ js.Array[FieldPacket], Any]
+    ): typings.mysql2.typingsMysqlLibProtocolSequencesQueryMod.^ = js.native
+    def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](options: QueryOptions, values: StringDictionary[Any]): typings.mysql2.typingsMysqlLibProtocolSequencesQueryMod.^ = js.native
+    def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](
+      options: QueryOptions,
+      values: StringDictionary[Any],
+      callback: js.Function3[/* err */ QueryError | Null, /* result */ T, /* fields */ js.Array[FieldPacket], Any]
+    ): typings.mysql2.typingsMysqlLibProtocolSequencesQueryMod.^ = js.native
+    def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](options: QueryOptions, values: Any): typings.mysql2.typingsMysqlLibProtocolSequencesQueryMod.^ = js.native
+    def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](
+      options: QueryOptions,
+      values: Any,
+      callback: js.Function3[/* err */ QueryError | Null, /* result */ T, /* fields */ js.Array[FieldPacket], Any]
+    ): typings.mysql2.typingsMysqlLibProtocolSequencesQueryMod.^ = js.native
+    def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](sql: String): typings.mysql2.typingsMysqlLibProtocolSequencesQueryMod.^ = js.native
+    def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](
+      sql: String,
+      callback: js.Function3[/* err */ QueryError | Null, /* result */ T, /* fields */ js.Array[FieldPacket], Any]
+    ): typings.mysql2.typingsMysqlLibProtocolSequencesQueryMod.^ = js.native
+    def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](sql: String, values: js.Array[Any]): typings.mysql2.typingsMysqlLibProtocolSequencesQueryMod.^ = js.native
+    def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](
+      sql: String,
+      values: js.Array[Any],
+      callback: js.Function3[/* err */ QueryError | Null, /* result */ T, /* fields */ js.Array[FieldPacket], Any]
+    ): typings.mysql2.typingsMysqlLibProtocolSequencesQueryMod.^ = js.native
+    def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](sql: String, values: StringDictionary[Any]): typings.mysql2.typingsMysqlLibProtocolSequencesQueryMod.^ = js.native
+    def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](
+      sql: String,
+      values: StringDictionary[Any],
+      callback: js.Function3[/* err */ QueryError | Null, /* result */ T, /* fields */ js.Array[FieldPacket], Any]
+    ): typings.mysql2.typingsMysqlLibProtocolSequencesQueryMod.^ = js.native
+    def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](sql: String, values: Any): typings.mysql2.typingsMysqlLibProtocolSequencesQueryMod.^ = js.native
+    def execute[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](
+      sql: String,
+      values: Any,
+      callback: js.Function3[/* err */ QueryError | Null, /* result */ T, /* fields */ js.Array[FieldPacket], Any]
+    ): typings.mysql2.typingsMysqlLibProtocolSequencesQueryMod.^ = js.native
+    
     def getConnection(
       callback: js.Function2[
-          /* err */ ErrnoException, 
+          /* err */ ErrnoException | Null, 
           /* connection */ typings.mysql2.typingsMysqlLibPoolConnectionMod.^, 
           Any
         ]
@@ -44,6 +96,9 @@ object typingsMysqlLibPoolMod {
       event: connection,
       listener: js.Function1[/* connection */ typings.mysql2.typingsMysqlLibPoolConnectionMod.^, Any]
     ): this.type = js.native
+    
+    def promise(): Any = js.native
+    def promise(promiseImpl: PromiseConstructor): Any = js.native
     
     def query[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](options: QueryOptions): typings.mysql2.typingsMysqlLibProtocolSequencesQueryMod.^ = js.native
     def query[T /* <: (js.Array[js.Array[RowDataPacket] | OkPacket | RowDataPacket]) | OkPacket | ResultSetHeader */](
@@ -117,12 +172,22 @@ object typingsMysqlLibPoolMod {
       * Enable keep-alive on the socket.  It's disabled by default, but the
       * user can enable it and supply an initial delay.
       */
-    var enableKeepAlive: js.UndefOr[`true`] = js.undefined
+    var enableKeepAlive: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * The idle connections timeout, in milliseconds. (Default: 60000)
+      */
+    var idleTimeout: js.UndefOr[Double] = js.undefined
     
     /**
       * If keep-alive is enabled users can supply an initial delay.
       */
     var keepAliveInitialDelay: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * The minimum number of idle connections. (Default: 10)
+      */
+    var maxIdle: js.UndefOr[Double] = js.undefined
     
     /**
       * The maximum number of connection requests the pool will queue before returning an error from getConnection. If set to 0, there
@@ -155,13 +220,21 @@ object typingsMysqlLibPoolMod {
       
       inline def setConnectionLimitUndefined: Self = StObject.set(x, "connectionLimit", js.undefined)
       
-      inline def setEnableKeepAlive(value: `true`): Self = StObject.set(x, "enableKeepAlive", value.asInstanceOf[js.Any])
+      inline def setEnableKeepAlive(value: Boolean): Self = StObject.set(x, "enableKeepAlive", value.asInstanceOf[js.Any])
       
       inline def setEnableKeepAliveUndefined: Self = StObject.set(x, "enableKeepAlive", js.undefined)
+      
+      inline def setIdleTimeout(value: Double): Self = StObject.set(x, "idleTimeout", value.asInstanceOf[js.Any])
+      
+      inline def setIdleTimeoutUndefined: Self = StObject.set(x, "idleTimeout", js.undefined)
       
       inline def setKeepAliveInitialDelay(value: Double): Self = StObject.set(x, "keepAliveInitialDelay", value.asInstanceOf[js.Any])
       
       inline def setKeepAliveInitialDelayUndefined: Self = StObject.set(x, "keepAliveInitialDelay", js.undefined)
+      
+      inline def setMaxIdle(value: Double): Self = StObject.set(x, "maxIdle", value.asInstanceOf[js.Any])
+      
+      inline def setMaxIdleUndefined: Self = StObject.set(x, "maxIdle", js.undefined)
       
       inline def setQueueLimit(value: Double): Self = StObject.set(x, "queueLimit", value.asInstanceOf[js.Any])
       

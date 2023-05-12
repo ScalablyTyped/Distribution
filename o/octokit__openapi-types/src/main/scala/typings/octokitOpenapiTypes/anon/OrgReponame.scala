@@ -6,14 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait OrgReponame extends StObject {
   
-  /** The unique identifier of the migration. */
   var migration_id: Double
   
-  /** The organization name. The name is not case sensitive. */
   @JSName("org")
   var org_ : String
   
-  /** repo_name parameter */
   var repo_name: String
 }
 object OrgReponame {

@@ -6,7 +6,7 @@ import typings.std.Record
 import typings.wordpressBlockEditor.anon.PartialBlockInstancekstri
 import typings.wordpressBlockEditor.anon.PartialEditorSettings
 import typings.wordpressBlockEditor.mod.EditorBlockListSettings
-import typings.wordpressBlocks.mod.BlockInstance
+import typings.wordpressBlocks.BlockInstance
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

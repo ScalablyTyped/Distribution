@@ -7,6 +7,7 @@ import typings.angularCompilerCli.srcTransformersApiMod.CompilerHost
 import typings.angularCompilerCli.srcTransformersApiMod.CompilerOptions
 import typings.angularCompilerCli.srcTransformersApiMod.TsEmitCallback
 import typings.typescript.mod.Diagnostic
+import typings.typescript.mod.EmitResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,37 +46,37 @@ object srcPerformWatchMod {
     /* 2 */ val CreateDeleteDir: typings.angularCompilerCli.srcPerformWatchMod.FileChangeEvent.CreateDeleteDir & Double = js.native
   }
   
-  inline def createPerformWatchHost(
+  inline def createPerformWatchHost[CbEmitRes /* <: EmitResult */](
     configFileName: String,
     reportDiagnostics: js.Function1[/* diagnostics */ js.Array[Diagnostic], Unit]
-  ): PerformWatchHost = (^.asInstanceOf[js.Dynamic].applyDynamic("createPerformWatchHost")(configFileName.asInstanceOf[js.Any], reportDiagnostics.asInstanceOf[js.Any])).asInstanceOf[PerformWatchHost]
-  inline def createPerformWatchHost(
+  ): PerformWatchHost[EmitResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("createPerformWatchHost")(configFileName.asInstanceOf[js.Any], reportDiagnostics.asInstanceOf[js.Any])).asInstanceOf[PerformWatchHost[EmitResult]]
+  inline def createPerformWatchHost[CbEmitRes /* <: EmitResult */](
     configFileName: String,
     reportDiagnostics: js.Function1[/* diagnostics */ js.Array[Diagnostic], Unit],
     existingOptions: Unit,
-    createEmitCallback: js.Function1[/* options */ CompilerOptions, js.UndefOr[TsEmitCallback]]
-  ): PerformWatchHost = (^.asInstanceOf[js.Dynamic].applyDynamic("createPerformWatchHost")(configFileName.asInstanceOf[js.Any], reportDiagnostics.asInstanceOf[js.Any], existingOptions.asInstanceOf[js.Any], createEmitCallback.asInstanceOf[js.Any])).asInstanceOf[PerformWatchHost]
-  inline def createPerformWatchHost(
+    createEmitCallback: js.Function1[/* options */ CompilerOptions, js.UndefOr[TsEmitCallback[CbEmitRes]]]
+  ): PerformWatchHost[EmitResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("createPerformWatchHost")(configFileName.asInstanceOf[js.Any], reportDiagnostics.asInstanceOf[js.Any], existingOptions.asInstanceOf[js.Any], createEmitCallback.asInstanceOf[js.Any])).asInstanceOf[PerformWatchHost[EmitResult]]
+  inline def createPerformWatchHost[CbEmitRes /* <: EmitResult */](
     configFileName: String,
     reportDiagnostics: js.Function1[/* diagnostics */ js.Array[Diagnostic], Unit],
     existingOptions: typings.typescript.mod.CompilerOptions
-  ): PerformWatchHost = (^.asInstanceOf[js.Dynamic].applyDynamic("createPerformWatchHost")(configFileName.asInstanceOf[js.Any], reportDiagnostics.asInstanceOf[js.Any], existingOptions.asInstanceOf[js.Any])).asInstanceOf[PerformWatchHost]
-  inline def createPerformWatchHost(
+  ): PerformWatchHost[EmitResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("createPerformWatchHost")(configFileName.asInstanceOf[js.Any], reportDiagnostics.asInstanceOf[js.Any], existingOptions.asInstanceOf[js.Any])).asInstanceOf[PerformWatchHost[EmitResult]]
+  inline def createPerformWatchHost[CbEmitRes /* <: EmitResult */](
     configFileName: String,
     reportDiagnostics: js.Function1[/* diagnostics */ js.Array[Diagnostic], Unit],
     existingOptions: typings.typescript.mod.CompilerOptions,
-    createEmitCallback: js.Function1[/* options */ CompilerOptions, js.UndefOr[TsEmitCallback]]
-  ): PerformWatchHost = (^.asInstanceOf[js.Dynamic].applyDynamic("createPerformWatchHost")(configFileName.asInstanceOf[js.Any], reportDiagnostics.asInstanceOf[js.Any], existingOptions.asInstanceOf[js.Any], createEmitCallback.asInstanceOf[js.Any])).asInstanceOf[PerformWatchHost]
+    createEmitCallback: js.Function1[/* options */ CompilerOptions, js.UndefOr[TsEmitCallback[CbEmitRes]]]
+  ): PerformWatchHost[EmitResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("createPerformWatchHost")(configFileName.asInstanceOf[js.Any], reportDiagnostics.asInstanceOf[js.Any], existingOptions.asInstanceOf[js.Any], createEmitCallback.asInstanceOf[js.Any])).asInstanceOf[PerformWatchHost[EmitResult]]
   
-  inline def performWatchCompilation(host: PerformWatchHost): FirstCompileResult = ^.asInstanceOf[js.Dynamic].applyDynamic("performWatchCompilation")(host.asInstanceOf[js.Any]).asInstanceOf[FirstCompileResult]
+  inline def performWatchCompilation(host: PerformWatchHost[EmitResult]): FirstCompileResult = ^.asInstanceOf[js.Dynamic].applyDynamic("performWatchCompilation")(host.asInstanceOf[js.Any]).asInstanceOf[FirstCompileResult]
   
-  trait PerformWatchHost extends StObject {
+  trait PerformWatchHost[CbEmitRes /* <: EmitResult */] extends StObject {
     
     def clearTimeout(timeoutId: Any): Unit
     
     def createCompilerHost(options: CompilerOptions): CompilerHost
     
-    def createEmitCallback(options: CompilerOptions): js.UndefOr[TsEmitCallback]
+    def createEmitCallback(options: CompilerOptions): js.UndefOr[TsEmitCallback[CbEmitRes]]
     
     def onFileChange(
       options: CompilerOptions,
@@ -91,27 +92,27 @@ object srcPerformWatchMod {
   }
   object PerformWatchHost {
     
-    inline def apply(
+    inline def apply[CbEmitRes /* <: EmitResult */](
       clearTimeout: Any => Unit,
       createCompilerHost: CompilerOptions => CompilerHost,
-      createEmitCallback: CompilerOptions => js.UndefOr[TsEmitCallback],
+      createEmitCallback: CompilerOptions => js.UndefOr[TsEmitCallback[CbEmitRes]],
       onFileChange: (CompilerOptions, js.Function2[/* event */ FileChangeEvent, /* fileName */ String, Unit], js.Function0[Unit]) => `0`,
       readConfiguration: () => ParsedConfiguration,
       reportDiagnostics: js.Array[Diagnostic] => Unit,
       setTimeout: (js.Function0[Unit], Double) => Any
-    ): PerformWatchHost = {
+    ): PerformWatchHost[CbEmitRes] = {
       val __obj = js.Dynamic.literal(clearTimeout = js.Any.fromFunction1(clearTimeout), createCompilerHost = js.Any.fromFunction1(createCompilerHost), createEmitCallback = js.Any.fromFunction1(createEmitCallback), onFileChange = js.Any.fromFunction3(onFileChange), readConfiguration = js.Any.fromFunction0(readConfiguration), reportDiagnostics = js.Any.fromFunction1(reportDiagnostics), setTimeout = js.Any.fromFunction2(setTimeout))
-      __obj.asInstanceOf[PerformWatchHost]
+      __obj.asInstanceOf[PerformWatchHost[CbEmitRes]]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: PerformWatchHost] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: PerformWatchHost[?], CbEmitRes /* <: EmitResult */] (val x: Self & PerformWatchHost[CbEmitRes]) extends AnyVal {
       
       inline def setClearTimeout(value: Any => Unit): Self = StObject.set(x, "clearTimeout", js.Any.fromFunction1(value))
       
       inline def setCreateCompilerHost(value: CompilerOptions => CompilerHost): Self = StObject.set(x, "createCompilerHost", js.Any.fromFunction1(value))
       
-      inline def setCreateEmitCallback(value: CompilerOptions => js.UndefOr[TsEmitCallback]): Self = StObject.set(x, "createEmitCallback", js.Any.fromFunction1(value))
+      inline def setCreateEmitCallback(value: CompilerOptions => js.UndefOr[TsEmitCallback[CbEmitRes]]): Self = StObject.set(x, "createEmitCallback", js.Any.fromFunction1(value))
       
       inline def setOnFileChange(
         value: (CompilerOptions, js.Function2[/* event */ FileChangeEvent, /* fileName */ String, Unit], js.Function0[Unit]) => `0`

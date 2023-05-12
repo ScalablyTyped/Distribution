@@ -104,8 +104,8 @@ object libDefaultPropsMod {
     
     @JSImport("react-alice-carousel/lib/defaultProps", "defaultProps.innerWidth")
     @js.native
-    def innerWidth: Double = js.native
-    inline def innerWidth_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("innerWidth")(x.asInstanceOf[js.Any])
+    def innerWidth: /* undefined */ Any = js.native
+    inline def innerWidth_=(x: /* undefined */ Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("innerWidth")(x.asInstanceOf[js.Any])
     
     @JSImport("react-alice-carousel/lib/defaultProps", "defaultProps.items")
     @js.native

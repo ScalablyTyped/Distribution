@@ -17,7 +17,7 @@ trait JourneyResponse extends StObject {
   var ApplicationId: string
   
   /**
-    * The time when journey will stop sending messages. QuietTime should be configured first and SendingSchedule should be set to true.
+    * The time when a journey will not send messages. QuietTime should be configured first and SendingSchedule should be set to true.
     */
   var ClosedDays: js.UndefOr[typings.awsSdk.clientsPinpointMod.ClosedDays] = js.undefined
   
@@ -57,7 +57,7 @@ trait JourneyResponse extends StObject {
   var Name: string
   
   /**
-    * The time when journey allow to send messages. QuietTime should be configured first and SendingSchedule should be set to true.
+    * The time when a journey can send messages. QuietTime should be configured first and SendingSchedule should be set to true.
     */
   var OpenHours: js.UndefOr[typings.awsSdk.clientsPinpointMod.OpenHours] = js.undefined
   
@@ -72,7 +72,7 @@ trait JourneyResponse extends StObject {
   var RefreshFrequency: js.UndefOr[string] = js.undefined
   
   /**
-    * Specifies whether a journey should be refreshed on segment update.
+    * Indicates whether the journey participants should be refreshed when a segment is updated.
     */
   var RefreshOnSegmentUpdate: js.UndefOr[boolean] = js.undefined
   
@@ -82,7 +82,7 @@ trait JourneyResponse extends StObject {
   var Schedule: js.UndefOr[JourneySchedule] = js.undefined
   
   /**
-    * Indicates if journey have Advance Quiet Time (OpenHours and ClosedDays). This flag should be set to true in order to allow (OpenHours and ClosedDays)
+    * Indicates if journey has Advance Quiet Time enabled. This flag should be set to true in order to allow using OpenHours and ClosedDays.
     */
   var SendingSchedule: js.UndefOr[boolean] = js.undefined
   
@@ -102,7 +102,7 @@ trait JourneyResponse extends StObject {
   var State: js.UndefOr[typings.awsSdk.clientsPinpointMod.State] = js.undefined
   
   /**
-    * Specifies whether endpoints in quiet hours should enter a wait till the end of their quiet hours.
+    * Indicates whether endpoints in quiet hours should enter a wait activity until quiet hours have elapsed.
     */
   var WaitForQuietTime: js.UndefOr[boolean] = js.undefined
   

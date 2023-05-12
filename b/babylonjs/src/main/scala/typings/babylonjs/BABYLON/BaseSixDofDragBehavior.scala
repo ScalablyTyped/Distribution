@@ -38,6 +38,8 @@ trait BaseSixDofDragBehavior
   
   /* private */ var _pointerUpdateXR: Any = js.native
   
+  /* protected */ def _reattachCameraControls(): Unit = js.native
+  
   /* protected */ def _resetVirtualMeshesPosition(): Unit = js.native
   
   /* protected */ var _scene: Scene = js.native

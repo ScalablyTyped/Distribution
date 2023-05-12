@@ -19,7 +19,7 @@ inline def Function: FunctionC = ^.asInstanceOf[js.Dynamic].selectDynamic("Funct
 inline def Int: BrandC[NumberC, IntBrand] = ^.asInstanceOf[js.Dynamic].selectDynamic("Int").asInstanceOf[BrandC[NumberC, IntBrand]]
 type Int = Branded[Double, IntBrand]
 
-inline def Integer: RefinementC[NumberC] = ^.asInstanceOf[js.Dynamic].selectDynamic("Integer").asInstanceOf[RefinementC[NumberC]]
+inline def Integer: RefinementC[NumberC, Double] = ^.asInstanceOf[js.Dynamic].selectDynamic("Integer").asInstanceOf[RefinementC[NumberC, Double]]
 
 inline def UnknownArray: UnknownArrayC = ^.asInstanceOf[js.Dynamic].selectDynamic("UnknownArray").asInstanceOf[UnknownArrayC]
 
@@ -112,8 +112,11 @@ inline def record[D /* <: Mixed_ */, C /* <: Mixed_ */](domain: D, codomain: C, 
 
 inline def recursion[A, O, I, C /* <: Type_[A, O, I] */](name: String, definition: js.Function1[/* self */ C, C]): RecursiveType[C, A, O, I] = (^.asInstanceOf[js.Dynamic].applyDynamic("recursion")(name.asInstanceOf[js.Any], definition.asInstanceOf[js.Any])).asInstanceOf[RecursiveType[C, A, O, I]]
 
-inline def refinement[C /* <: Any_ */](codec: C, predicate: Predicate[TypeOf[C]]): RefinementC[C] = (^.asInstanceOf[js.Dynamic].applyDynamic("refinement")(codec.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[RefinementC[C]]
-inline def refinement[C /* <: Any_ */](codec: C, predicate: Predicate[TypeOf[C]], name: String): RefinementC[C] = (^.asInstanceOf[js.Dynamic].applyDynamic("refinement")(codec.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[RefinementC[C]]
+inline def refinement[C /* <: Any_ */](codec: C, predicate: Predicate[TypeOf[C]]): RefinementC[C, TypeOf[C]] = (^.asInstanceOf[js.Dynamic].applyDynamic("refinement")(codec.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[RefinementC[C, TypeOf[C]]]
+inline def refinement[C /* <: Any_ */](codec: C, predicate: Predicate[TypeOf[C]], name: String): RefinementC[C, TypeOf[C]] = (^.asInstanceOf[js.Dynamic].applyDynamic("refinement")(codec.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[RefinementC[C, TypeOf[C]]]
+
+inline def refinement_CB[C /* <: Any_ */, B /* <: TypeOf[C] */](codec: C, refinement: Refinement[TypeOf[C], B]): RefinementC[C, B] = (^.asInstanceOf[js.Dynamic].applyDynamic("refinement")(codec.asInstanceOf[js.Any], refinement.asInstanceOf[js.Any])).asInstanceOf[RefinementC[C, B]]
+inline def refinement_CB[C /* <: Any_ */, B /* <: TypeOf[C] */](codec: C, refinement: Refinement[TypeOf[C], B], name: String): RefinementC[C, B] = (^.asInstanceOf[js.Dynamic].applyDynamic("refinement")(codec.asInstanceOf[js.Any], refinement.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[RefinementC[C, B]]
 
 inline def strict[P /* <: Props */](props: P): ExactC[TypeC[P]] = ^.asInstanceOf[js.Dynamic].applyDynamic("strict")(props.asInstanceOf[js.Any]).asInstanceOf[ExactC[TypeC[P]]]
 inline def strict[P /* <: Props */](props: P, name: String): ExactC[TypeC[P]] = (^.asInstanceOf[js.Dynamic].applyDynamic("strict")(props.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[ExactC[TypeC[P]]]
@@ -248,7 +251,7 @@ C,
 /* import warning: importer.ImportType#apply Failed type conversion: {[ K in io-ts.io-ts.OutputOf<D> ]: io-ts.io-ts.OutputOf<C>} */ js.Any, 
 Any]
 
-type RefinementC[C /* <: Any_ */] = RefinementType[C, TypeOf[C], OutputOf[C], InputOf[C]]
+type RefinementC[C /* <: Any_ */, B] = RefinementType[C, B, OutputOf[C], InputOf[C]]
 
 type StrictC[P /* <: Props */] = StrictType[
 P, 

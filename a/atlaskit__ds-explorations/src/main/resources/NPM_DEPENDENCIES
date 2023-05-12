@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@atlaskit/ds-explorations" : "2.1.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@atlaskit/ds-explorations" : "2.1.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -20,6 +20,7 @@ import typings.redisSearch.distCommandsMod.VectorAlgorithms.FLAT
 import typings.redisSearch.distCommandsMod.VectorAlgorithms.HNSW
 import typings.redisSearch.distCommandsMod.^
 import typings.redisSearch.distCommandsSearchMod.SearchOptions
+import typings.std.PropertyKey
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -49,11 +50,11 @@ type CreateSchemaField[T /* <: SchemaFieldTypes */, E] = T | (Type[T] & E)
 
 type CreateSchemaFlatVectorField = CreateSchemaVectorField[FLAT, BLOCKSIZE]
 
-type CreateSchemaGeoField = CreateSchemaCommonField[GEO, Record[String, scala.Nothing]]
+type CreateSchemaGeoField = CreateSchemaCommonField[GEO, Record[PropertyKey, Any]]
 
 type CreateSchemaHNSWVectorField = CreateSchemaVectorField[HNSW, EFCONSTRUCTION]
 
-type CreateSchemaNumericField = CreateSchemaCommonField[NUMERIC, Record[String, scala.Nothing]]
+type CreateSchemaNumericField = CreateSchemaCommonField[NUMERIC, Record[PropertyKey, Any]]
 
 type CreateSchemaTagField = CreateSchemaCommonField[TAG, CASESENSITIVE]
 
@@ -81,4 +82,4 @@ type PropertyName = /* template literal string: ${@|$.}${string} */ String
 type RediSearchSchema = StringDictionary[
 CreateSchemaTextField | CreateSchemaNumericField | CreateSchemaGeoField | CreateSchemaTagField | CreateSchemaFlatVectorField | CreateSchemaHNSWVectorField]
 
-type SortByProperty = PropertyName | BY
+type SortByProperty = String | BY

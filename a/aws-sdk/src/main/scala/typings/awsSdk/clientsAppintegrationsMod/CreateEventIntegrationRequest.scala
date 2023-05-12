@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateEventIntegrationRequest extends StObject {
   
   /**
-    * A unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
+    * A unique, case-sensitive identifier that you provide to ensure the idempotency of the request. If not provided, the Amazon Web Services SDK populates this field. For more information about idempotency, see Making retries safe with idempotent APIs.
     */
   var ClientToken: js.UndefOr[IdempotencyToken] = js.undefined
   
@@ -32,7 +32,7 @@ trait CreateEventIntegrationRequest extends StObject {
   var Name: typings.awsSdk.clientsAppintegrationsMod.Name
   
   /**
-    * One or more tags.
+    * The tags used to organize, track, or control access for this resource. For example, { "tags": {"key1":"value1", "key2":"value2"} }.
     */
   var Tags: js.UndefOr[TagMap] = js.undefined
 }

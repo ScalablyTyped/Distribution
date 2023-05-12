@@ -61,7 +61,7 @@ object materialsTexturesProceduralsProceduralTextureSceneComponentMod {
       
       /**
         * The list of procedural textures added to the scene
-        * @see https://doc.babylonjs.com/how_to/how_to_use_procedural_textures
+        * @see https://doc.babylonjs.com/features/featuresDeepDive/materials/using/proceduralTextures
         */
       var proceduralTextures: js.Array[ProceduralTexture]
     }

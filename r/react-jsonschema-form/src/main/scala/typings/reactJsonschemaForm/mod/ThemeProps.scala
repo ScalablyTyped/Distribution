@@ -83,7 +83,7 @@ trait ThemeProps[T] extends StObject {
   var showErrorList: js.UndefOr[Boolean] = js.undefined
   
   var tagName: js.UndefOr[
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177, starting with typings.reactJsonschemaForm.reactJsonschemaFormStrings.a, typings.reactJsonschemaForm.reactJsonschemaFormStrings.abbr, typings.reactJsonschemaForm.reactJsonschemaFormStrings.address */ Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 178, starting with typings.reactJsonschemaForm.reactJsonschemaFormStrings.a, typings.reactJsonschemaForm.reactJsonschemaFormStrings.abbr, typings.reactJsonschemaForm.reactJsonschemaFormStrings.address */ Any
   ] = js.undefined
   
   var target: js.UndefOr[String] = js.undefined
@@ -237,7 +237,7 @@ object ThemeProps {
     inline def setShowErrorListUndefined: Self = StObject.set(x, "showErrorList", js.undefined)
     
     inline def setTagName(
-      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177, starting with typings.reactJsonschemaForm.reactJsonschemaFormStrings.a, typings.reactJsonschemaForm.reactJsonschemaFormStrings.abbr, typings.reactJsonschemaForm.reactJsonschemaFormStrings.address */ Any
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 178, starting with typings.reactJsonschemaForm.reactJsonschemaFormStrings.a, typings.reactJsonschemaForm.reactJsonschemaFormStrings.abbr, typings.reactJsonschemaForm.reactJsonschemaFormStrings.address */ Any
     ): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
     
     inline def setTagNameUndefined: Self = StObject.set(x, "tagName", js.undefined)

@@ -15,6 +15,11 @@ trait RegistrationConfig extends StObject {
     * The minimum similarity score between the new and old fraudsters in order to consider the new fraudster a duplicate.
     */
   var FraudsterSimilarityThreshold: js.UndefOr[Score] = js.undefined
+  
+  /**
+    * The identifiers of watchlists that a fraudster is registered to. If a watchlist isn't provided, the fraudsters are registered to the default watchlist. 
+    */
+  var WatchlistIds: js.UndefOr[RegistrationConfigWatchlistIds] = js.undefined
 }
 object RegistrationConfig {
   
@@ -33,5 +38,11 @@ object RegistrationConfig {
     inline def setFraudsterSimilarityThreshold(value: Score): Self = StObject.set(x, "FraudsterSimilarityThreshold", value.asInstanceOf[js.Any])
     
     inline def setFraudsterSimilarityThresholdUndefined: Self = StObject.set(x, "FraudsterSimilarityThreshold", js.undefined)
+    
+    inline def setWatchlistIds(value: RegistrationConfigWatchlistIds): Self = StObject.set(x, "WatchlistIds", value.asInstanceOf[js.Any])
+    
+    inline def setWatchlistIdsUndefined: Self = StObject.set(x, "WatchlistIds", js.undefined)
+    
+    inline def setWatchlistIdsVarargs(value: WatchlistId*): Self = StObject.set(x, "WatchlistIds", js.Array(value*))
   }
 }

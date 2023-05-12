@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Leg of journey
-  */
 trait Leg extends StObject {
   
   var alternatives: js.UndefOr[js.Array[Alternative]] = js.undefined

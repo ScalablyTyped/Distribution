@@ -1,46 +1,34 @@
 package typings.devextreme.mod.DevExpress.ui
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.devextreme.anon.ComponentRow
-import typings.devextreme.anon.Y
+import typings.devextreme.anon.Filtering
 import typings.devextreme.devextremeStrings.pdf_
 import typings.devextreme.devextremeStrings.xlsx
-import typings.devextreme.mod.DevExpress.common.DataType
-import typings.devextreme.mod.DevExpress.common.DragDirection
-import typings.devextreme.mod.DevExpress.common.DragHighlight
+import typings.devextreme.mod.DevExpress.DOMComponent.OptionChangedEventInfo
+import typings.devextreme.mod.DevExpress.common.Draggable
 import typings.devextreme.mod.DevExpress.common.HorizontalAlignment
-import typings.devextreme.mod.DevExpress.common.HorizontalEdge
 import typings.devextreme.mod.DevExpress.common.Mode
-import typings.devextreme.mod.DevExpress.common.ScrollbarMode
 import typings.devextreme.mod.DevExpress.common.SelectAllMode
-import typings.devextreme.mod.DevExpress.common.SingleMultipleOrNone
 import typings.devextreme.mod.DevExpress.common.SortOrder
-import typings.devextreme.mod.DevExpress.common.charts.DataRenderMode
-import typings.devextreme.mod.DevExpress.common.charts.FilterOperation
-import typings.devextreme.mod.DevExpress.common.charts.FilterType
-import typings.devextreme.mod.DevExpress.common.charts.GridsEditMode
-import typings.devextreme.mod.DevExpress.common.charts.GridsEditRefreshMode
-import typings.devextreme.mod.DevExpress.common.charts.GroupExpandMode
-import typings.devextreme.mod.DevExpress.common.charts.NewRowPosition
-import typings.devextreme.mod.DevExpress.common.charts.SelectedFilterOperation
-import typings.devextreme.mod.DevExpress.common.charts.SelectionColumnDisplayMode
-import typings.devextreme.mod.DevExpress.common.charts.StartEditAction
-import typings.devextreme.mod.DevExpress.common.charts.SummaryType
+import typings.devextreme.mod.DevExpress.common.Sortable
+import typings.devextreme.mod.DevExpress.common.grids.ColumnResizeMode
+import typings.devextreme.mod.DevExpress.common.grids.GroupExpandMode
+import typings.devextreme.mod.DevExpress.common.grids.NewRowPosition
+import typings.devextreme.mod.DevExpress.common.grids.SelectionColumnDisplayMode
+import typings.devextreme.mod.DevExpress.common.grids.SummaryType
 import typings.devextreme.mod.DevExpress.core.DeepPartial
 import typings.devextreme.mod.DevExpress.core.DxElement_
-import typings.devextreme.mod.DevExpress.core.UserDefinedElement
 import typings.devextreme.mod.DevExpress.core.template
+import typings.devextreme.mod.DevExpress.data.DataSource.DataSourceLike
 import typings.devextreme.mod.DevExpress.events.Cancelable
 import typings.devextreme.mod.DevExpress.events.ChangedOptionInfo
 import typings.devextreme.mod.DevExpress.events.DxEvent
 import typings.devextreme.mod.DevExpress.events.EventInfo
 import typings.devextreme.mod.DevExpress.events.InitializedEventInfo
 import typings.devextreme.mod.DevExpress.events.NativeEventInfo
-import typings.devextreme.mod.DevExpress.excelExporter.DataGridCell
-import typings.devextreme.mod.DevExpress.exporter.ExcelFont
 import typings.devextreme.mod.DevExpress.ui.dxDataGrid.Column
 import typings.devextreme.mod.DevExpress.ui.dxDataGrid.Row
-import typings.std.Blob
-import typings.std.Element
 import typings.std.HTMLElement
 import typings.std.KeyboardEvent
 import typings.std.MouseEvent
@@ -55,7 +43,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait dxDataGrid[TRowData, TKey]
   extends StObject
      with Widget[dxDataGridOptions[TRowData, TKey]]
-     with GridBase[TRowData, TKey] {
+     with typings.devextreme.mod.DevExpress.common.grids.GridBase[TRowData, TKey] {
   
   def addColumn(columnOptions: String): Unit = js.native
   /**
@@ -94,12 +82,6 @@ trait dxDataGrid[TRowData, TKey]
     * Expands a group or a master row with a specific key.
     */
   def expandRow(key: TKey): js.Promise[Unit] = js.native
-  
-  /**
-    * Exports grid data to Excel.
-    * @deprecated Use exportDataGrid instead.
-    */
-  def exportToExcel(selectionOnly: Boolean): Unit = js.native
   
   /**
     * Sets focus on the UI component.
@@ -151,7 +133,7 @@ object dxDataGrid {
   trait AdaptiveDetailRowPreparingEvent[TRowData, TKey]
     extends StObject
        with EventInfo[dxDataGrid[TRowData, TKey]]
-       with AdaptiveDetailRowPreparingInfo
+       with typings.devextreme.mod.DevExpress.common.grids.AdaptiveDetailRowPreparingInfo
   object AdaptiveDetailRowPreparingEvent {
     
     inline def apply[TRowData, TKey](component: dxDataGrid[TRowData, TKey], element: DxElement_[HTMLElement], formOptions: Any): AdaptiveDetailRowPreparingEvent[TRowData, TKey] = {
@@ -160,23 +142,7 @@ object dxDataGrid {
     }
   }
   
-  trait AdaptiveDetailRowPreparingInfo extends StObject {
-    
-    val formOptions: Any
-  }
-  object AdaptiveDetailRowPreparingInfo {
-    
-    inline def apply(formOptions: Any): AdaptiveDetailRowPreparingInfo = {
-      val __obj = js.Dynamic.literal(formOptions = formOptions.asInstanceOf[js.Any])
-      __obj.asInstanceOf[AdaptiveDetailRowPreparingInfo]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: AdaptiveDetailRowPreparingInfo] (val x: Self) extends AnyVal {
-      
-      inline def setFormOptions(value: Any): Self = StObject.set(x, "formOptions", value.asInstanceOf[js.Any])
-    }
-  }
+  type AdaptiveDetailRowPreparingInfo = typings.devextreme.mod.DevExpress.common.grids.AdaptiveDetailRowPreparingInfo
   
   trait CellClickEvent[TRowData, TKey]
     extends StObject
@@ -519,604 +485,11 @@ object dxDataGrid {
   
   type Column[TRowData, TKey] = dxDataGridColumn[TRowData, TKey]
   
-  trait ColumnBase[TRowData] extends StObject {
-    
-    /**
-      * Aligns the content of the column.
-      */
-    var alignment: js.UndefOr[HorizontalAlignment] = js.undefined
-    
-    /**
-      * Specifies whether a user can edit values in the column at runtime. By default, inherits the value of the editing.allowUpdating property.
-      */
-    var allowEditing: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * Specifies whether data can be filtered by this column. Applies only if filterRow.visible is true.
-      */
-    var allowFiltering: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * Specifies whether a user can fix the column at runtime. Applies only if columnFixing.enabled is true.
-      */
-    var allowFixing: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * Specifies whether the header filter can be used to filter data by this column. Applies only if headerFilter.visible is true. By default, inherits the value of the allowFiltering property.
-      */
-    var allowHeaderFiltering: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * Specifies whether a user can hide the column using the column chooser at runtime. Applies only if columnChooser.enabled is true.
-      */
-    var allowHiding: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * Specifies whether this column can be used in column reordering at runtime. Applies only if allowColumnReordering is true.
-      */
-    var allowReordering: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * Specifies whether a user can resize the column at runtime. Applies only if allowColumnResizing is true.
-      */
-    var allowResizing: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * Specifies whether this column can be searched. Applies only if searchPanel.visible is true. Inherits the value of the allowFiltering property by default.
-      */
-    var allowSearch: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * Specifies whether a user can sort rows by this column at runtime. Applies only if sorting.mode differs from &apos;none&apos;.
-      */
-    var allowSorting: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * Calculates custom cell values. Use this function to create an unbound data column.
-      */
-    var calculateCellValue: js.UndefOr[js.Function1[/* rowData */ TRowData, Any]] = js.undefined
-    
-    /**
-      * Calculates custom display values for column cells. Requires specifying the dataField or calculateCellValue property. Used in lookup optimization.
-      */
-    var calculateDisplayValue: js.UndefOr[String | (js.Function1[/* rowData */ TRowData, Any])] = js.undefined
-    
-    /**
-      * Specifies the column&apos;s custom rules to filter data.
-      */
-    var calculateFilterExpression: js.UndefOr[
-        js.Function3[
-          /* filterValue */ Any, 
-          /* selectedFilterOperation */ String, 
-          /* target */ String, 
-          String | js.Array[Any] | js.Function
-        ]
-      ] = js.undefined
-    
-    /**
-      * Calculates custom values used to sort this column.
-      */
-    var calculateSortValue: js.UndefOr[String | (js.Function1[/* rowData */ TRowData, Any])] = js.undefined
-    
-    /**
-      * Specifies a caption for the column.
-      */
-    var caption: js.UndefOr[String] = js.undefined
-    
-    /**
-      * Specifies a CSS class to be applied to the column.
-      */
-    var cssClass: js.UndefOr[String] = js.undefined
-    
-    /**
-      * Customizes the text displayed in column cells.
-      */
-    var customizeText: js.UndefOr[
-        js.Function1[
-          /* cellInfo */ typings.devextreme.mod.DevExpress.common.grids.ColumnCustomizeTextArg, 
-          String
-        ]
-      ] = js.undefined
-    
-    /**
-      * Binds the column to a field of the dataSource.
-      */
-    var dataField: js.UndefOr[String] = js.undefined
-    
-    /**
-      * Casts column values to a specific data type.
-      */
-    var dataType: js.UndefOr[DataType] = js.undefined
-    
-    var defaultCalculateCellValue: js.UndefOr[js.Function1[/* rowData */ Any, Any]] = js.undefined
-    
-    var defaultCalculateFilterExpression: js.UndefOr[
-        js.Function3[
-          /* filterValue */ Any, 
-          /* selectedFilterOperation */ String, 
-          /* target */ String, 
-          String | js.Array[Any] | js.Function
-        ]
-      ] = js.undefined
-    
-    var defaultSetCellValue: js.UndefOr[
-        js.Function3[
-          /* newData */ DeepPartial[Any], 
-          /* value */ Any, 
-          /* currentRowData */ Any, 
-          Unit | PromiseLike[Unit]
-        ]
-      ] = js.undefined
-    
-    /**
-      * Configures the default UI component used for editing and filtering in the filter row.
-      */
-    var editorOptions: js.UndefOr[Any] = js.undefined
-    
-    /**
-      * Specifies whether HTML tags are displayed as plain text or applied to the values of the column.
-      */
-    var encodeHtml: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * In a boolean column, replaces all false items with a specified text. Applies only if showEditorAlways property is false.
-      */
-    var falseText: js.UndefOr[String] = js.undefined
-    
-    /**
-      * Specifies available filter operations. Applies if allowFiltering is true and the filterRow and/or filterPanel are visible.
-      */
-    var filterOperations: js.UndefOr[js.Array[FilterOperation | String]] = js.undefined
-    
-    /**
-      * Specifies whether a user changes the current filter by including (selecting) or excluding (clearing the selection of) values. Applies only if headerFilter.visible and allowHeaderFiltering are true.
-      */
-    var filterType: js.UndefOr[FilterType] = js.undefined
-    
-    /**
-      * Specifies the column&apos;s filter value displayed in the filter row.
-      */
-    var filterValue: js.UndefOr[Any] = js.undefined
-    
-    /**
-      * Specifies values selected in the column&apos;s header filter.
-      */
-    var filterValues: js.UndefOr[js.Array[Any]] = js.undefined
-    
-    /**
-      * Fixes the column.
-      */
-    var fixed: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * Specifies the UI component&apos;s edge to which the column is fixed. Applies only if columns[].fixed is true.
-      */
-    var fixedPosition: js.UndefOr[HorizontalEdge] = js.undefined
-    
-    /**
-      * Configures the form item that the column produces in the editing state. Applies only if editing.mode is &apos;form&apos; or &apos;popup&apos;.
-      */
-    var formItem: js.UndefOr[dxFormSimpleItem] = js.undefined
-    
-    /**
-      * Formats a value before it is displayed in a column cell.
-      */
-    var format: js.UndefOr[Format] = js.undefined
-    
-    /**
-      * Specifies data settings for the header filter.
-      */
-    var headerFilter: js.UndefOr[typings.devextreme.mod.DevExpress.common.grids.ColumnHeaderFilter] = js.undefined
-    
-    /**
-      * Specifies the order in which columns are hidden when the UI component adapts to the screen or container size. Ignored if allowColumnResizing is true and columnResizingMode is &apos;widget&apos;.
-      */
-    var hidingPriority: js.UndefOr[Double] = js.undefined
-    
-    /**
-      * Specifies whether the column organizes other columns into bands.
-      */
-    var isBand: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * Specifies properties of a lookup column.
-      */
-    var lookup: js.UndefOr[typings.devextreme.mod.DevExpress.common.grids.ColumnLookup] = js.undefined
-    
-    /**
-      * Specifies the minimum width of the column.
-      */
-    var minWidth: js.UndefOr[Double] = js.undefined
-    
-    /**
-      * Specifies the column&apos;s unique identifier. If not set in code, this value is inherited from the dataField.
-      */
-    var name: js.UndefOr[String] = js.undefined
-    
-    /**
-      * Specifies the band column that owns the current column. Accepts the index of the band column in the columns array.
-      */
-    var ownerBand: js.UndefOr[Double] = js.undefined
-    
-    /**
-      * Specifies whether to render the column after other columns and elements. Use if column cells have a complex template. Requires the width property specified.
-      */
-    var renderAsync: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * Specifies a filter operation that applies when users use the filter row to filter the column.
-      */
-    var selectedFilterOperation: js.UndefOr[SelectedFilterOperation] = js.undefined
-    
-    /**
-      * Specifies a function to be invoked after the user has edited a cell value, but before it will be saved in the data source.
-      */
-    var setCellValue: js.UndefOr[
-        js.Function3[
-          /* newData */ DeepPartial[TRowData], 
-          /* value */ Any, 
-          /* currentRowData */ TRowData, 
-          Unit | PromiseLike[Unit]
-        ]
-      ] = js.undefined
-    
-    /**
-      * Specifies whether the column displays its values using editors.
-      */
-    var showEditorAlways: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * Specifies whether the column chooser can contain the column header.
-      */
-    var showInColumnChooser: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * Specifies the index according to which columns participate in sorting.
-      */
-    var sortIndex: js.UndefOr[Double] = js.undefined
-    
-    /**
-      * Specifies the sort order of column values.
-      */
-    var sortOrder: js.UndefOr[SortOrder] = js.undefined
-    
-    /**
-      * Specifies a custom comparison function for sorting. Applies only when sorting is performed on the client.
-      */
-    var sortingMethod: js.UndefOr[js.Function2[/* value1 */ Any, /* value2 */ Any, Double]] = js.undefined
-    
-    /**
-      * In a boolean column, replaces all true items with a specified text. Applies only if showEditorAlways property is false.
-      */
-    var trueText: js.UndefOr[String] = js.undefined
-    
-    /**
-      * Specifies validation rules to be checked when cell values are updated.
-      */
-    var validationRules: js.UndefOr[
-        js.Array[
-          RequiredRule | NumericRule | RangeRule | StringLengthRule | CustomRule | CompareRule | PatternRule | EmailRule | AsyncRule
-        ]
-      ] = js.undefined
-    
-    /**
-      * Specifies whether the column is visible, that is, occupies space in the table.
-      */
-    var visible: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * Specifies the position of the column regarding other columns in the resulting UI component.
-      */
-    var visibleIndex: js.UndefOr[Double] = js.undefined
-    
-    /**
-      * Specifies the column&apos;s width in pixels or as a percentage. Ignored if it is less than minWidth.
-      */
-    var width: js.UndefOr[Double | String] = js.undefined
-  }
-  object ColumnBase {
-    
-    inline def apply[TRowData](): ColumnBase[TRowData] = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[ColumnBase[TRowData]]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: ColumnBase[?], TRowData] (val x: Self & ColumnBase[TRowData]) extends AnyVal {
-      
-      inline def setAlignment(value: HorizontalAlignment): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
-      
-      inline def setAlignmentUndefined: Self = StObject.set(x, "alignment", js.undefined)
-      
-      inline def setAllowEditing(value: Boolean): Self = StObject.set(x, "allowEditing", value.asInstanceOf[js.Any])
-      
-      inline def setAllowEditingUndefined: Self = StObject.set(x, "allowEditing", js.undefined)
-      
-      inline def setAllowFiltering(value: Boolean): Self = StObject.set(x, "allowFiltering", value.asInstanceOf[js.Any])
-      
-      inline def setAllowFilteringUndefined: Self = StObject.set(x, "allowFiltering", js.undefined)
-      
-      inline def setAllowFixing(value: Boolean): Self = StObject.set(x, "allowFixing", value.asInstanceOf[js.Any])
-      
-      inline def setAllowFixingUndefined: Self = StObject.set(x, "allowFixing", js.undefined)
-      
-      inline def setAllowHeaderFiltering(value: Boolean): Self = StObject.set(x, "allowHeaderFiltering", value.asInstanceOf[js.Any])
-      
-      inline def setAllowHeaderFilteringUndefined: Self = StObject.set(x, "allowHeaderFiltering", js.undefined)
-      
-      inline def setAllowHiding(value: Boolean): Self = StObject.set(x, "allowHiding", value.asInstanceOf[js.Any])
-      
-      inline def setAllowHidingUndefined: Self = StObject.set(x, "allowHiding", js.undefined)
-      
-      inline def setAllowReordering(value: Boolean): Self = StObject.set(x, "allowReordering", value.asInstanceOf[js.Any])
-      
-      inline def setAllowReorderingUndefined: Self = StObject.set(x, "allowReordering", js.undefined)
-      
-      inline def setAllowResizing(value: Boolean): Self = StObject.set(x, "allowResizing", value.asInstanceOf[js.Any])
-      
-      inline def setAllowResizingUndefined: Self = StObject.set(x, "allowResizing", js.undefined)
-      
-      inline def setAllowSearch(value: Boolean): Self = StObject.set(x, "allowSearch", value.asInstanceOf[js.Any])
-      
-      inline def setAllowSearchUndefined: Self = StObject.set(x, "allowSearch", js.undefined)
-      
-      inline def setAllowSorting(value: Boolean): Self = StObject.set(x, "allowSorting", value.asInstanceOf[js.Any])
-      
-      inline def setAllowSortingUndefined: Self = StObject.set(x, "allowSorting", js.undefined)
-      
-      inline def setCalculateCellValue(value: /* rowData */ TRowData => Any): Self = StObject.set(x, "calculateCellValue", js.Any.fromFunction1(value))
-      
-      inline def setCalculateCellValueUndefined: Self = StObject.set(x, "calculateCellValue", js.undefined)
-      
-      inline def setCalculateDisplayValue(value: String | (js.Function1[/* rowData */ TRowData, Any])): Self = StObject.set(x, "calculateDisplayValue", value.asInstanceOf[js.Any])
-      
-      inline def setCalculateDisplayValueFunction1(value: /* rowData */ TRowData => Any): Self = StObject.set(x, "calculateDisplayValue", js.Any.fromFunction1(value))
-      
-      inline def setCalculateDisplayValueUndefined: Self = StObject.set(x, "calculateDisplayValue", js.undefined)
-      
-      inline def setCalculateFilterExpression(
-        value: (/* filterValue */ Any, /* selectedFilterOperation */ String, /* target */ String) => String | js.Array[Any] | js.Function
-      ): Self = StObject.set(x, "calculateFilterExpression", js.Any.fromFunction3(value))
-      
-      inline def setCalculateFilterExpressionUndefined: Self = StObject.set(x, "calculateFilterExpression", js.undefined)
-      
-      inline def setCalculateSortValue(value: String | (js.Function1[/* rowData */ TRowData, Any])): Self = StObject.set(x, "calculateSortValue", value.asInstanceOf[js.Any])
-      
-      inline def setCalculateSortValueFunction1(value: /* rowData */ TRowData => Any): Self = StObject.set(x, "calculateSortValue", js.Any.fromFunction1(value))
-      
-      inline def setCalculateSortValueUndefined: Self = StObject.set(x, "calculateSortValue", js.undefined)
-      
-      inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
-      
-      inline def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
-      
-      inline def setCssClass(value: String): Self = StObject.set(x, "cssClass", value.asInstanceOf[js.Any])
-      
-      inline def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
-      
-      inline def setCustomizeText(
-        value: /* cellInfo */ typings.devextreme.mod.DevExpress.common.grids.ColumnCustomizeTextArg => String
-      ): Self = StObject.set(x, "customizeText", js.Any.fromFunction1(value))
-      
-      inline def setCustomizeTextUndefined: Self = StObject.set(x, "customizeText", js.undefined)
-      
-      inline def setDataField(value: String): Self = StObject.set(x, "dataField", value.asInstanceOf[js.Any])
-      
-      inline def setDataFieldUndefined: Self = StObject.set(x, "dataField", js.undefined)
-      
-      inline def setDataType(value: DataType): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
-      
-      inline def setDataTypeUndefined: Self = StObject.set(x, "dataType", js.undefined)
-      
-      inline def setDefaultCalculateCellValue(value: /* rowData */ Any => Any): Self = StObject.set(x, "defaultCalculateCellValue", js.Any.fromFunction1(value))
-      
-      inline def setDefaultCalculateCellValueUndefined: Self = StObject.set(x, "defaultCalculateCellValue", js.undefined)
-      
-      inline def setDefaultCalculateFilterExpression(
-        value: (/* filterValue */ Any, /* selectedFilterOperation */ String, /* target */ String) => String | js.Array[Any] | js.Function
-      ): Self = StObject.set(x, "defaultCalculateFilterExpression", js.Any.fromFunction3(value))
-      
-      inline def setDefaultCalculateFilterExpressionUndefined: Self = StObject.set(x, "defaultCalculateFilterExpression", js.undefined)
-      
-      inline def setDefaultSetCellValue(
-        value: (/* newData */ DeepPartial[Any], /* value */ Any, /* currentRowData */ Any) => Unit | PromiseLike[Unit]
-      ): Self = StObject.set(x, "defaultSetCellValue", js.Any.fromFunction3(value))
-      
-      inline def setDefaultSetCellValueUndefined: Self = StObject.set(x, "defaultSetCellValue", js.undefined)
-      
-      inline def setEditorOptions(value: Any): Self = StObject.set(x, "editorOptions", value.asInstanceOf[js.Any])
-      
-      inline def setEditorOptionsUndefined: Self = StObject.set(x, "editorOptions", js.undefined)
-      
-      inline def setEncodeHtml(value: Boolean): Self = StObject.set(x, "encodeHtml", value.asInstanceOf[js.Any])
-      
-      inline def setEncodeHtmlUndefined: Self = StObject.set(x, "encodeHtml", js.undefined)
-      
-      inline def setFalseText(value: String): Self = StObject.set(x, "falseText", value.asInstanceOf[js.Any])
-      
-      inline def setFalseTextUndefined: Self = StObject.set(x, "falseText", js.undefined)
-      
-      inline def setFilterOperations(value: js.Array[FilterOperation | String]): Self = StObject.set(x, "filterOperations", value.asInstanceOf[js.Any])
-      
-      inline def setFilterOperationsUndefined: Self = StObject.set(x, "filterOperations", js.undefined)
-      
-      inline def setFilterOperationsVarargs(value: (FilterOperation | String)*): Self = StObject.set(x, "filterOperations", js.Array(value*))
-      
-      inline def setFilterType(value: FilterType): Self = StObject.set(x, "filterType", value.asInstanceOf[js.Any])
-      
-      inline def setFilterTypeUndefined: Self = StObject.set(x, "filterType", js.undefined)
-      
-      inline def setFilterValue(value: Any): Self = StObject.set(x, "filterValue", value.asInstanceOf[js.Any])
-      
-      inline def setFilterValueUndefined: Self = StObject.set(x, "filterValue", js.undefined)
-      
-      inline def setFilterValues(value: js.Array[Any]): Self = StObject.set(x, "filterValues", value.asInstanceOf[js.Any])
-      
-      inline def setFilterValuesUndefined: Self = StObject.set(x, "filterValues", js.undefined)
-      
-      inline def setFilterValuesVarargs(value: Any*): Self = StObject.set(x, "filterValues", js.Array(value*))
-      
-      inline def setFixed(value: Boolean): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
-      
-      inline def setFixedPosition(value: HorizontalEdge): Self = StObject.set(x, "fixedPosition", value.asInstanceOf[js.Any])
-      
-      inline def setFixedPositionUndefined: Self = StObject.set(x, "fixedPosition", js.undefined)
-      
-      inline def setFixedUndefined: Self = StObject.set(x, "fixed", js.undefined)
-      
-      inline def setFormItem(value: dxFormSimpleItem): Self = StObject.set(x, "formItem", value.asInstanceOf[js.Any])
-      
-      inline def setFormItemUndefined: Self = StObject.set(x, "formItem", js.undefined)
-      
-      inline def setFormat(value: Format): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
-      
-      inline def setFormatFunction1(value: js.Date | Double => String): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
-      
-      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
-      
-      inline def setHeaderFilter(value: typings.devextreme.mod.DevExpress.common.grids.ColumnHeaderFilter): Self = StObject.set(x, "headerFilter", value.asInstanceOf[js.Any])
-      
-      inline def setHeaderFilterUndefined: Self = StObject.set(x, "headerFilter", js.undefined)
-      
-      inline def setHidingPriority(value: Double): Self = StObject.set(x, "hidingPriority", value.asInstanceOf[js.Any])
-      
-      inline def setHidingPriorityUndefined: Self = StObject.set(x, "hidingPriority", js.undefined)
-      
-      inline def setIsBand(value: Boolean): Self = StObject.set(x, "isBand", value.asInstanceOf[js.Any])
-      
-      inline def setIsBandUndefined: Self = StObject.set(x, "isBand", js.undefined)
-      
-      inline def setLookup(value: typings.devextreme.mod.DevExpress.common.grids.ColumnLookup): Self = StObject.set(x, "lookup", value.asInstanceOf[js.Any])
-      
-      inline def setLookupUndefined: Self = StObject.set(x, "lookup", js.undefined)
-      
-      inline def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
-      
-      inline def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
-      
-      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-      
-      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
-      
-      inline def setOwnerBand(value: Double): Self = StObject.set(x, "ownerBand", value.asInstanceOf[js.Any])
-      
-      inline def setOwnerBandUndefined: Self = StObject.set(x, "ownerBand", js.undefined)
-      
-      inline def setRenderAsync(value: Boolean): Self = StObject.set(x, "renderAsync", value.asInstanceOf[js.Any])
-      
-      inline def setRenderAsyncUndefined: Self = StObject.set(x, "renderAsync", js.undefined)
-      
-      inline def setSelectedFilterOperation(value: SelectedFilterOperation): Self = StObject.set(x, "selectedFilterOperation", value.asInstanceOf[js.Any])
-      
-      inline def setSelectedFilterOperationUndefined: Self = StObject.set(x, "selectedFilterOperation", js.undefined)
-      
-      inline def setSetCellValue(
-        value: (/* newData */ DeepPartial[TRowData], /* value */ Any, /* currentRowData */ TRowData) => Unit | PromiseLike[Unit]
-      ): Self = StObject.set(x, "setCellValue", js.Any.fromFunction3(value))
-      
-      inline def setSetCellValueUndefined: Self = StObject.set(x, "setCellValue", js.undefined)
-      
-      inline def setShowEditorAlways(value: Boolean): Self = StObject.set(x, "showEditorAlways", value.asInstanceOf[js.Any])
-      
-      inline def setShowEditorAlwaysUndefined: Self = StObject.set(x, "showEditorAlways", js.undefined)
-      
-      inline def setShowInColumnChooser(value: Boolean): Self = StObject.set(x, "showInColumnChooser", value.asInstanceOf[js.Any])
-      
-      inline def setShowInColumnChooserUndefined: Self = StObject.set(x, "showInColumnChooser", js.undefined)
-      
-      inline def setSortIndex(value: Double): Self = StObject.set(x, "sortIndex", value.asInstanceOf[js.Any])
-      
-      inline def setSortIndexUndefined: Self = StObject.set(x, "sortIndex", js.undefined)
-      
-      inline def setSortOrder(value: SortOrder): Self = StObject.set(x, "sortOrder", value.asInstanceOf[js.Any])
-      
-      inline def setSortOrderUndefined: Self = StObject.set(x, "sortOrder", js.undefined)
-      
-      inline def setSortingMethod(value: (/* value1 */ Any, /* value2 */ Any) => Double): Self = StObject.set(x, "sortingMethod", js.Any.fromFunction2(value))
-      
-      inline def setSortingMethodUndefined: Self = StObject.set(x, "sortingMethod", js.undefined)
-      
-      inline def setTrueText(value: String): Self = StObject.set(x, "trueText", value.asInstanceOf[js.Any])
-      
-      inline def setTrueTextUndefined: Self = StObject.set(x, "trueText", js.undefined)
-      
-      inline def setValidationRules(
-        value: js.Array[
-              RequiredRule | NumericRule | RangeRule | StringLengthRule | CustomRule | CompareRule | PatternRule | EmailRule | AsyncRule
-            ]
-      ): Self = StObject.set(x, "validationRules", value.asInstanceOf[js.Any])
-      
-      inline def setValidationRulesUndefined: Self = StObject.set(x, "validationRules", js.undefined)
-      
-      inline def setValidationRulesVarargs(
-        value: (RequiredRule | NumericRule | RangeRule | StringLengthRule | CustomRule | CompareRule | PatternRule | EmailRule | AsyncRule)*
-      ): Self = StObject.set(x, "validationRules", js.Array(value*))
-      
-      inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
-      
-      inline def setVisibleIndex(value: Double): Self = StObject.set(x, "visibleIndex", value.asInstanceOf[js.Any])
-      
-      inline def setVisibleIndexUndefined: Self = StObject.set(x, "visibleIndex", js.undefined)
-      
-      inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
-      
-      inline def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
-      
-      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
-    }
-  }
+  type ColumnBase[TRowData] = typings.devextreme.mod.DevExpress.common.grids.ColumnBase[TRowData]
   
   type ColumnButton[TRowData, TKey] = dxDataGridColumnButton[TRowData, TKey]
   
-  trait ColumnButtonBase extends StObject {
-    
-    /**
-      * Specifies a CSS class to be applied to the button.
-      */
-    var cssClass: js.UndefOr[String] = js.undefined
-    
-    /**
-      * Specifies the text for the hint that appears when the button is hovered over or long-pressed.
-      */
-    var hint: js.UndefOr[String] = js.undefined
-    
-    /**
-      * Specifies the button&apos;s icon.
-      */
-    var icon: js.UndefOr[String] = js.undefined
-    
-    /**
-      * Specifies the button&apos;s text. Applies only if the button&apos;s icon is not specified.
-      */
-    var text: js.UndefOr[String] = js.undefined
-  }
-  object ColumnButtonBase {
-    
-    inline def apply(): ColumnButtonBase = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[ColumnButtonBase]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: ColumnButtonBase] (val x: Self) extends AnyVal {
-      
-      inline def setCssClass(value: String): Self = StObject.set(x, "cssClass", value.asInstanceOf[js.Any])
-      
-      inline def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
-      
-      inline def setHint(value: String): Self = StObject.set(x, "hint", value.asInstanceOf[js.Any])
-      
-      inline def setHintUndefined: Self = StObject.set(x, "hint", js.undefined)
-      
-      inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
-      
-      inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
-      
-      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
-      
-      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
-    }
-  }
+  type ColumnButtonBase = typings.devextreme.mod.DevExpress.common.grids.ColumnButtonBase
   
   trait ColumnButtonClickEvent[TRowData, TKey]
     extends StObject
@@ -1483,18 +856,6 @@ object dxDataGrid {
   
   type ColumnLookup = typings.devextreme.mod.DevExpress.common.grids.ColumnLookup
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.devextreme.devextremeStrings.nextColumn
-    - typings.devextreme.devextremeStrings.widget
-  */
-  trait ColumnResizeMode extends StObject
-  object ColumnResizeMode {
-    
-    inline def nextColumn: typings.devextreme.devextremeStrings.nextColumn = "nextColumn".asInstanceOf[typings.devextreme.devextremeStrings.nextColumn]
-    
-    inline def widget: typings.devextreme.devextremeStrings.widget = "widget".asInstanceOf[typings.devextreme.devextremeStrings.widget]
-  }
-  
   type ContentReadyEvent[TRowData, TKey] = EventInfo[dxDataGrid[TRowData, TKey]]
   
   trait ContextMenuPreparingEvent[TRowData, TKey]
@@ -1602,32 +963,14 @@ object dxDataGrid {
     }
   }
   
-  type DataChange = typings.devextreme.mod.DevExpress.common.grids.DataChange[Any, Any]
+  type DataChange[TRowData, TKey] = typings.devextreme.mod.DevExpress.common.grids.DataChange[TRowData, TKey]
   
-  trait DataChangeInfo[TRowData, TKey] extends StObject {
-    
-    val changes: js.Array[typings.devextreme.mod.DevExpress.common.grids.DataChange[TRowData, TKey]]
-  }
-  object DataChangeInfo {
-    
-    inline def apply[TRowData, TKey](changes: js.Array[typings.devextreme.mod.DevExpress.common.grids.DataChange[TRowData, TKey]]): DataChangeInfo[TRowData, TKey] = {
-      val __obj = js.Dynamic.literal(changes = changes.asInstanceOf[js.Any])
-      __obj.asInstanceOf[DataChangeInfo[TRowData, TKey]]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: DataChangeInfo[?, ?], TRowData, TKey] (val x: Self & (DataChangeInfo[TRowData, TKey])) extends AnyVal {
-      
-      inline def setChanges(value: js.Array[typings.devextreme.mod.DevExpress.common.grids.DataChange[TRowData, TKey]]): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
-      
-      inline def setChangesVarargs(value: (typings.devextreme.mod.DevExpress.common.grids.DataChange[TRowData, TKey])*): Self = StObject.set(x, "changes", js.Array(value*))
-    }
-  }
+  type DataChangeInfo[TRowData, TKey] = typings.devextreme.mod.DevExpress.common.grids.DataChangeInfo[TRowData, TKey]
   
   trait DataErrorOccurredEvent[TRowData, TKey]
     extends StObject
        with EventInfo[dxDataGrid[TRowData, TKey]]
-       with DataErrorOccurredInfo
+       with typings.devextreme.mod.DevExpress.common.grids.DataErrorOccurredInfo
   object DataErrorOccurredEvent {
     
     inline def apply[TRowData, TKey](component: dxDataGrid[TRowData, TKey], element: DxElement_[HTMLElement]): DataErrorOccurredEvent[TRowData, TKey] = {
@@ -1636,25 +979,7 @@ object dxDataGrid {
     }
   }
   
-  trait DataErrorOccurredInfo extends StObject {
-    
-    val error: js.UndefOr[js.Error] = js.undefined
-  }
-  object DataErrorOccurredInfo {
-    
-    inline def apply(): DataErrorOccurredInfo = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[DataErrorOccurredInfo]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: DataErrorOccurredInfo] (val x: Self) extends AnyVal {
-      
-      inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
-      
-      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
-    }
-  }
+  type DataErrorOccurredInfo = typings.devextreme.mod.DevExpress.common.grids.DataErrorOccurredInfo
   
   /* Rewritten from type alias, can be one of: 
     - typings.devextreme.devextremeStrings.adaptive
@@ -1821,99 +1146,16 @@ object dxDataGrid {
   
   type DisposingEvent[TRowData, TKey] = EventInfo[dxDataGrid[TRowData, TKey]]
   
-  trait DragDropInfo extends StObject {
-    
-    val dropInsideItem: Boolean
-  }
-  object DragDropInfo {
-    
-    inline def apply(dropInsideItem: Boolean): DragDropInfo = {
-      val __obj = js.Dynamic.literal(dropInsideItem = dropInsideItem.asInstanceOf[js.Any])
-      __obj.asInstanceOf[DragDropInfo]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: DragDropInfo] (val x: Self) extends AnyVal {
-      
-      inline def setDropInsideItem(value: Boolean): Self = StObject.set(x, "dropInsideItem", value.asInstanceOf[js.Any])
-    }
-  }
+  type DragDropInfo = typings.devextreme.mod.DevExpress.common.grids.DragDropInfo
   
-  trait DragReorderInfo extends StObject {
-    
-    val dropInsideItem: Boolean
-    
-    var promise: js.UndefOr[PromiseLike[Unit]] = js.undefined
-  }
-  object DragReorderInfo {
-    
-    inline def apply(dropInsideItem: Boolean): DragReorderInfo = {
-      val __obj = js.Dynamic.literal(dropInsideItem = dropInsideItem.asInstanceOf[js.Any])
-      __obj.asInstanceOf[DragReorderInfo]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: DragReorderInfo] (val x: Self) extends AnyVal {
-      
-      inline def setDropInsideItem(value: Boolean): Self = StObject.set(x, "dropInsideItem", value.asInstanceOf[js.Any])
-      
-      inline def setPromise(value: PromiseLike[Unit]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
-      
-      inline def setPromiseUndefined: Self = StObject.set(x, "promise", js.undefined)
-    }
-  }
+  type DragReorderInfo = typings.devextreme.mod.DevExpress.common.grids.DragReorderInfo
   
-  trait DragStartEventInfo[T /* <: GridBase[TRowData, TKey] */, TRowData, TKey] extends StObject {
-    
-    val component: T
-    
-    val event: DxEvent[PointerEvent | MouseEvent | TouchEvent]
-    
-    val fromData: js.UndefOr[Any] = js.undefined
-    
-    val fromIndex: Double
-    
-    var itemData: js.UndefOr[TRowData] = js.undefined
-    
-    val itemElement: DxElement_[HTMLElement]
-  }
-  object DragStartEventInfo {
-    
-    inline def apply[T /* <: GridBase[TRowData, TKey] */, TRowData, TKey](
-      component: T,
-      event: DxEvent[PointerEvent | MouseEvent | TouchEvent],
-      fromIndex: Double,
-      itemElement: DxElement_[HTMLElement]
-    ): DragStartEventInfo[T, TRowData, TKey] = {
-      val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], fromIndex = fromIndex.asInstanceOf[js.Any], itemElement = itemElement.asInstanceOf[js.Any])
-      __obj.asInstanceOf[DragStartEventInfo[T, TRowData, TKey]]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: DragStartEventInfo[?, ?, ?], T /* <: GridBase[TRowData, TKey] */, TRowData, TKey] (val x: Self & (DragStartEventInfo[T, TRowData, TKey])) extends AnyVal {
-      
-      inline def setComponent(value: T): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
-      
-      inline def setEvent(value: DxEvent[PointerEvent | MouseEvent | TouchEvent]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
-      
-      inline def setFromData(value: Any): Self = StObject.set(x, "fromData", value.asInstanceOf[js.Any])
-      
-      inline def setFromDataUndefined: Self = StObject.set(x, "fromData", js.undefined)
-      
-      inline def setFromIndex(value: Double): Self = StObject.set(x, "fromIndex", value.asInstanceOf[js.Any])
-      
-      inline def setItemData(value: TRowData): Self = StObject.set(x, "itemData", value.asInstanceOf[js.Any])
-      
-      inline def setItemDataUndefined: Self = StObject.set(x, "itemData", js.undefined)
-      
-      inline def setItemElement(value: DxElement_[HTMLElement]): Self = StObject.set(x, "itemElement", value.asInstanceOf[js.Any])
-    }
-  }
+  type DragStartEventInfo[TRowData] = typings.devextreme.mod.DevExpress.common.grids.DragStartEventInfo[TRowData]
   
   trait EditCanceledEvent[TRowData, TKey]
     extends StObject
        with EventInfo[dxDataGrid[TRowData, TKey]]
-       with DataChangeInfo[TRowData, TKey]
+       with typings.devextreme.mod.DevExpress.common.grids.DataChangeInfo[TRowData, TKey]
   object EditCanceledEvent {
     
     inline def apply[TRowData, TKey](
@@ -1930,7 +1172,7 @@ object dxDataGrid {
     extends StObject
        with Cancelable
        with EventInfo[dxDataGrid[TRowData, TKey]]
-       with DataChangeInfo[TRowData, TKey]
+       with typings.devextreme.mod.DevExpress.common.grids.DataChangeInfo[TRowData, TKey]
   object EditCancelingEvent {
     
     inline def apply[TRowData, TKey](
@@ -1945,7 +1187,7 @@ object dxDataGrid {
   
   trait Editing[TRowData, TKey]
     extends StObject
-       with EditingBase[TRowData, TKey] {
+       with typings.devextreme.mod.DevExpress.common.grids.EditingBase[TRowData, TKey] {
     
     /**
       * Specifies whether a user can add new rows.
@@ -2009,131 +1251,7 @@ object dxDataGrid {
     }
   }
   
-  trait EditingBase[TRowData, TKey] extends StObject {
-    
-    /**
-      * An array of pending row changes.
-      */
-    var changes: js.UndefOr[
-        js.Array[typings.devextreme.mod.DevExpress.common.grids.DataChange[TRowData, TKey]]
-      ] = js.undefined
-    
-    /**
-      * Specifies if confirmation is required when a user deletes a row.
-      */
-    var confirmDelete: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * The name of a column being edited. Applies only if editing.mode is &apos;cell&apos; or &apos;batch&apos;.
-      */
-    var editColumnName: js.UndefOr[String] = js.undefined
-    
-    /**
-      * The key(s) of a row being edited.
-      */
-    var editRowKey: js.UndefOr[TKey] = js.undefined
-    
-    /**
-      * Configures the form. Used only if editing.mode is &apos;form&apos; or &apos;popup&apos;.
-      */
-    var form: js.UndefOr[dxFormOptions] = js.undefined
-    
-    /**
-      * Specifies how a user edits data.
-      */
-    var mode: js.UndefOr[GridsEditMode] = js.undefined
-    
-    /**
-      * Configures the popup. Used only if editing.mode is &apos;popup&apos;.
-      */
-    var popup: js.UndefOr[typings.devextreme.mod.DevExpress.ui.dxPopup.Properties] = js.undefined
-    
-    /**
-      * Specifies operations that are performed after saving changes.
-      */
-    var refreshMode: js.UndefOr[GridsEditRefreshMode] = js.undefined
-    
-    /**
-      * Specifies whether to select text in a cell when a user starts editing.
-      */
-    var selectTextOnEditStart: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * Specifies whether a single or double click should switch a cell to the editing state. Applies if editing.mode is &apos;cell&apos; or &apos;batch&apos;.
-      */
-    var startEditAction: js.UndefOr[StartEditAction] = js.undefined
-    
-    /**
-      * Contains properties that specify texts for editing-related UI elements.
-      */
-    var texts: js.UndefOr[EditingTextsBase] = js.undefined
-    
-    /**
-      * Specifies whether the edit column uses icons instead of links.
-      */
-    var useIcons: js.UndefOr[Boolean] = js.undefined
-  }
-  object EditingBase {
-    
-    inline def apply[TRowData, TKey](): EditingBase[TRowData, TKey] = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[EditingBase[TRowData, TKey]]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: EditingBase[?, ?], TRowData, TKey] (val x: Self & (EditingBase[TRowData, TKey])) extends AnyVal {
-      
-      inline def setChanges(value: js.Array[typings.devextreme.mod.DevExpress.common.grids.DataChange[TRowData, TKey]]): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
-      
-      inline def setChangesUndefined: Self = StObject.set(x, "changes", js.undefined)
-      
-      inline def setChangesVarargs(value: (typings.devextreme.mod.DevExpress.common.grids.DataChange[TRowData, TKey])*): Self = StObject.set(x, "changes", js.Array(value*))
-      
-      inline def setConfirmDelete(value: Boolean): Self = StObject.set(x, "confirmDelete", value.asInstanceOf[js.Any])
-      
-      inline def setConfirmDeleteUndefined: Self = StObject.set(x, "confirmDelete", js.undefined)
-      
-      inline def setEditColumnName(value: String): Self = StObject.set(x, "editColumnName", value.asInstanceOf[js.Any])
-      
-      inline def setEditColumnNameUndefined: Self = StObject.set(x, "editColumnName", js.undefined)
-      
-      inline def setEditRowKey(value: TKey): Self = StObject.set(x, "editRowKey", value.asInstanceOf[js.Any])
-      
-      inline def setEditRowKeyUndefined: Self = StObject.set(x, "editRowKey", js.undefined)
-      
-      inline def setForm(value: dxFormOptions): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
-      
-      inline def setFormUndefined: Self = StObject.set(x, "form", js.undefined)
-      
-      inline def setMode(value: GridsEditMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
-      
-      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
-      
-      inline def setPopup(value: typings.devextreme.mod.DevExpress.ui.dxPopup.Properties): Self = StObject.set(x, "popup", value.asInstanceOf[js.Any])
-      
-      inline def setPopupUndefined: Self = StObject.set(x, "popup", js.undefined)
-      
-      inline def setRefreshMode(value: GridsEditRefreshMode): Self = StObject.set(x, "refreshMode", value.asInstanceOf[js.Any])
-      
-      inline def setRefreshModeUndefined: Self = StObject.set(x, "refreshMode", js.undefined)
-      
-      inline def setSelectTextOnEditStart(value: Boolean): Self = StObject.set(x, "selectTextOnEditStart", value.asInstanceOf[js.Any])
-      
-      inline def setSelectTextOnEditStartUndefined: Self = StObject.set(x, "selectTextOnEditStart", js.undefined)
-      
-      inline def setStartEditAction(value: StartEditAction): Self = StObject.set(x, "startEditAction", value.asInstanceOf[js.Any])
-      
-      inline def setStartEditActionUndefined: Self = StObject.set(x, "startEditAction", js.undefined)
-      
-      inline def setTexts(value: EditingTextsBase): Self = StObject.set(x, "texts", value.asInstanceOf[js.Any])
-      
-      inline def setTextsUndefined: Self = StObject.set(x, "texts", js.undefined)
-      
-      inline def setUseIcons(value: Boolean): Self = StObject.set(x, "useIcons", value.asInstanceOf[js.Any])
-      
-      inline def setUseIconsUndefined: Self = StObject.set(x, "useIcons", js.undefined)
-    }
-  }
+  type EditingBase[TRowData, TKey] = typings.devextreme.mod.DevExpress.common.grids.EditingBase[TRowData, TKey]
   
   trait EditingStartEvent[TRowData, TKey]
     extends StObject
@@ -2166,118 +1284,7 @@ object dxDataGrid {
     }
   }
   
-  trait EditingTextsBase extends StObject {
-    
-    /**
-      * Specifies text for a hint that appears when a user pauses on the global &apos;Add&apos; button. Applies only if editing.allowAdding is true.
-      */
-    var addRow: js.UndefOr[String] = js.undefined
-    
-    /**
-      * Specifies text for a hint that appears when a user pauses on the &apos;Discard&apos; button. Applies only if editing.mode is &apos;batch&apos;.
-      */
-    var cancelAllChanges: js.UndefOr[String] = js.undefined
-    
-    /**
-      * Specifies text for a button that cancels changes in a row. Applies only if editing.allowUpdating is true and editing.mode is &apos;row&apos;.
-      */
-    var cancelRowChanges: js.UndefOr[String] = js.undefined
-    
-    /**
-      * Specifies a message that prompts a user to confirm deletion.
-      */
-    var confirmDeleteMessage: js.UndefOr[String] = js.undefined
-    
-    /**
-      * Specifies a title for the window that asks a user to confirm deletion.
-      */
-    var confirmDeleteTitle: js.UndefOr[String] = js.undefined
-    
-    /**
-      * Specifies text for buttons that delete rows. Applies only if allowDeleting is true.
-      */
-    var deleteRow: js.UndefOr[String] = js.undefined
-    
-    /**
-      * Specifies text for buttons that switch rows into the editing state. Applies only if allowUpdating is true.
-      */
-    var editRow: js.UndefOr[String] = js.undefined
-    
-    /**
-      * Specifies text for a hint that appears when a user pauses on the global &apos;Save&apos; button. Applies only if editing.mode is &apos;batch&apos;.
-      */
-    var saveAllChanges: js.UndefOr[String] = js.undefined
-    
-    /**
-      * Specifies text for a button that saves changes made in a row. Applies only if allowUpdating is true.
-      */
-    var saveRowChanges: js.UndefOr[String] = js.undefined
-    
-    /**
-      * Specifies text for buttons that recover deleted rows. Applies only if allowDeleting is true and editing.mode is &apos;batch&apos;.
-      */
-    var undeleteRow: js.UndefOr[String] = js.undefined
-    
-    /**
-      * Specifies text for a hint appearing when a user pauses on the button that cancels changes in a cell. Applies only if editing.mode is &apos;cell&apos; and data validation is enabled.
-      */
-    var validationCancelChanges: js.UndefOr[String] = js.undefined
-  }
-  object EditingTextsBase {
-    
-    inline def apply(): EditingTextsBase = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[EditingTextsBase]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: EditingTextsBase] (val x: Self) extends AnyVal {
-      
-      inline def setAddRow(value: String): Self = StObject.set(x, "addRow", value.asInstanceOf[js.Any])
-      
-      inline def setAddRowUndefined: Self = StObject.set(x, "addRow", js.undefined)
-      
-      inline def setCancelAllChanges(value: String): Self = StObject.set(x, "cancelAllChanges", value.asInstanceOf[js.Any])
-      
-      inline def setCancelAllChangesUndefined: Self = StObject.set(x, "cancelAllChanges", js.undefined)
-      
-      inline def setCancelRowChanges(value: String): Self = StObject.set(x, "cancelRowChanges", value.asInstanceOf[js.Any])
-      
-      inline def setCancelRowChangesUndefined: Self = StObject.set(x, "cancelRowChanges", js.undefined)
-      
-      inline def setConfirmDeleteMessage(value: String): Self = StObject.set(x, "confirmDeleteMessage", value.asInstanceOf[js.Any])
-      
-      inline def setConfirmDeleteMessageUndefined: Self = StObject.set(x, "confirmDeleteMessage", js.undefined)
-      
-      inline def setConfirmDeleteTitle(value: String): Self = StObject.set(x, "confirmDeleteTitle", value.asInstanceOf[js.Any])
-      
-      inline def setConfirmDeleteTitleUndefined: Self = StObject.set(x, "confirmDeleteTitle", js.undefined)
-      
-      inline def setDeleteRow(value: String): Self = StObject.set(x, "deleteRow", value.asInstanceOf[js.Any])
-      
-      inline def setDeleteRowUndefined: Self = StObject.set(x, "deleteRow", js.undefined)
-      
-      inline def setEditRow(value: String): Self = StObject.set(x, "editRow", value.asInstanceOf[js.Any])
-      
-      inline def setEditRowUndefined: Self = StObject.set(x, "editRow", js.undefined)
-      
-      inline def setSaveAllChanges(value: String): Self = StObject.set(x, "saveAllChanges", value.asInstanceOf[js.Any])
-      
-      inline def setSaveAllChangesUndefined: Self = StObject.set(x, "saveAllChanges", js.undefined)
-      
-      inline def setSaveRowChanges(value: String): Self = StObject.set(x, "saveRowChanges", value.asInstanceOf[js.Any])
-      
-      inline def setSaveRowChangesUndefined: Self = StObject.set(x, "saveRowChanges", js.undefined)
-      
-      inline def setUndeleteRow(value: String): Self = StObject.set(x, "undeleteRow", value.asInstanceOf[js.Any])
-      
-      inline def setUndeleteRowUndefined: Self = StObject.set(x, "undeleteRow", js.undefined)
-      
-      inline def setValidationCancelChanges(value: String): Self = StObject.set(x, "validationCancelChanges", value.asInstanceOf[js.Any])
-      
-      inline def setValidationCancelChangesUndefined: Self = StObject.set(x, "validationCancelChanges", js.undefined)
-    }
-  }
+  type EditingTextsBase = typings.devextreme.mod.DevExpress.common.grids.EditingTextsBase
   
   trait EditorPreparedEvent[TRowData, TKey]
     extends StObject
@@ -2454,198 +1461,6 @@ object dxDataGrid {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.devextreme.devextremeStrings.center
-    - typings.devextreme.devextremeStrings.centerContinuous
-    - typings.devextreme.devextremeStrings.distributed
-    - typings.devextreme.devextremeStrings.fill
-    - typings.devextreme.devextremeStrings.general
-    - typings.devextreme.devextremeStrings.justify
-    - typings.devextreme.devextremeStrings.left
-    - typings.devextreme.devextremeStrings.right
-  */
-  trait ExcelCellHorizontalAlignment extends StObject
-  object ExcelCellHorizontalAlignment {
-    
-    inline def center: typings.devextreme.devextremeStrings.center = "center".asInstanceOf[typings.devextreme.devextremeStrings.center]
-    
-    inline def centerContinuous: typings.devextreme.devextremeStrings.centerContinuous = "centerContinuous".asInstanceOf[typings.devextreme.devextremeStrings.centerContinuous]
-    
-    inline def distributed: typings.devextreme.devextremeStrings.distributed = "distributed".asInstanceOf[typings.devextreme.devextremeStrings.distributed]
-    
-    inline def fill: typings.devextreme.devextremeStrings.fill = "fill".asInstanceOf[typings.devextreme.devextremeStrings.fill]
-    
-    inline def general: typings.devextreme.devextremeStrings.general = "general".asInstanceOf[typings.devextreme.devextremeStrings.general]
-    
-    inline def justify: typings.devextreme.devextremeStrings.justify = "justify".asInstanceOf[typings.devextreme.devextremeStrings.justify]
-    
-    inline def left: typings.devextreme.devextremeStrings.left = "left".asInstanceOf[typings.devextreme.devextremeStrings.left]
-    
-    inline def right: typings.devextreme.devextremeStrings.right = "right".asInstanceOf[typings.devextreme.devextremeStrings.right]
-  }
-  
-  trait ExcelCellInfo[TRowData, TKey] extends StObject {
-    
-    var backgroundColor: js.UndefOr[String] = js.undefined
-    
-    val component: dxDataGrid[TRowData, TKey]
-    
-    var fillPatternColor: js.UndefOr[String] = js.undefined
-    
-    var fillPatternType: js.UndefOr[ExcelCellPatternType] = js.undefined
-    
-    var font: js.UndefOr[ExcelFont] = js.undefined
-    
-    var gridCell: js.UndefOr[DataGridCell] = js.undefined
-    
-    var horizontalAlignment: js.UndefOr[ExcelCellHorizontalAlignment] = js.undefined
-    
-    var numberFormat: js.UndefOr[String] = js.undefined
-    
-    val value: js.UndefOr[String | Double | js.Date] = js.undefined
-    
-    var verticalAlignment: js.UndefOr[ExcelCellVerticalAlignment] = js.undefined
-    
-    var wrapTextEnabled: js.UndefOr[Boolean] = js.undefined
-  }
-  object ExcelCellInfo {
-    
-    inline def apply[TRowData, TKey](component: dxDataGrid[TRowData, TKey]): ExcelCellInfo[TRowData, TKey] = {
-      val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any])
-      __obj.asInstanceOf[ExcelCellInfo[TRowData, TKey]]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: ExcelCellInfo[?, ?], TRowData, TKey] (val x: Self & (ExcelCellInfo[TRowData, TKey])) extends AnyVal {
-      
-      inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
-      
-      inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
-      
-      inline def setComponent(value: dxDataGrid[TRowData, TKey]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
-      
-      inline def setFillPatternColor(value: String): Self = StObject.set(x, "fillPatternColor", value.asInstanceOf[js.Any])
-      
-      inline def setFillPatternColorUndefined: Self = StObject.set(x, "fillPatternColor", js.undefined)
-      
-      inline def setFillPatternType(value: ExcelCellPatternType): Self = StObject.set(x, "fillPatternType", value.asInstanceOf[js.Any])
-      
-      inline def setFillPatternTypeUndefined: Self = StObject.set(x, "fillPatternType", js.undefined)
-      
-      inline def setFont(value: ExcelFont): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
-      
-      inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
-      
-      inline def setGridCell(value: DataGridCell): Self = StObject.set(x, "gridCell", value.asInstanceOf[js.Any])
-      
-      inline def setGridCellUndefined: Self = StObject.set(x, "gridCell", js.undefined)
-      
-      inline def setHorizontalAlignment(value: ExcelCellHorizontalAlignment): Self = StObject.set(x, "horizontalAlignment", value.asInstanceOf[js.Any])
-      
-      inline def setHorizontalAlignmentUndefined: Self = StObject.set(x, "horizontalAlignment", js.undefined)
-      
-      inline def setNumberFormat(value: String): Self = StObject.set(x, "numberFormat", value.asInstanceOf[js.Any])
-      
-      inline def setNumberFormatUndefined: Self = StObject.set(x, "numberFormat", js.undefined)
-      
-      inline def setValue(value: String | Double | js.Date): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
-      
-      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
-      
-      inline def setVerticalAlignment(value: ExcelCellVerticalAlignment): Self = StObject.set(x, "verticalAlignment", value.asInstanceOf[js.Any])
-      
-      inline def setVerticalAlignmentUndefined: Self = StObject.set(x, "verticalAlignment", js.undefined)
-      
-      inline def setWrapTextEnabled(value: Boolean): Self = StObject.set(x, "wrapTextEnabled", value.asInstanceOf[js.Any])
-      
-      inline def setWrapTextEnabledUndefined: Self = StObject.set(x, "wrapTextEnabled", js.undefined)
-    }
-  }
-  
-  /* Rewritten from type alias, can be one of: 
-    - typings.devextreme.devextremeStrings.darkDown
-    - typings.devextreme.devextremeStrings.darkGray
-    - typings.devextreme.devextremeStrings.darkGrid
-    - typings.devextreme.devextremeStrings.darkHorizontal
-    - typings.devextreme.devextremeStrings.darkTrellis
-    - typings.devextreme.devextremeStrings.darkUp
-    - typings.devextreme.devextremeStrings.darkVertical
-    - typings.devextreme.devextremeStrings.gray0625
-    - typings.devextreme.devextremeStrings.gray125
-    - typings.devextreme.devextremeStrings.lightDown
-    - typings.devextreme.devextremeStrings.lightGray
-    - typings.devextreme.devextremeStrings.lightGrid
-    - typings.devextreme.devextremeStrings.lightHorizontal
-    - typings.devextreme.devextremeStrings.lightTrellis
-    - typings.devextreme.devextremeStrings.lightUp
-    - typings.devextreme.devextremeStrings.lightVertical
-    - typings.devextreme.devextremeStrings.mediumGray
-    - typings.devextreme.devextremeStrings.none
-    - typings.devextreme.devextremeStrings.solid
-  */
-  trait ExcelCellPatternType extends StObject
-  object ExcelCellPatternType {
-    
-    inline def darkDown: typings.devextreme.devextremeStrings.darkDown = "darkDown".asInstanceOf[typings.devextreme.devextremeStrings.darkDown]
-    
-    inline def darkGray: typings.devextreme.devextremeStrings.darkGray = "darkGray".asInstanceOf[typings.devextreme.devextremeStrings.darkGray]
-    
-    inline def darkGrid: typings.devextreme.devextremeStrings.darkGrid = "darkGrid".asInstanceOf[typings.devextreme.devextremeStrings.darkGrid]
-    
-    inline def darkHorizontal: typings.devextreme.devextremeStrings.darkHorizontal = "darkHorizontal".asInstanceOf[typings.devextreme.devextremeStrings.darkHorizontal]
-    
-    inline def darkTrellis: typings.devextreme.devextremeStrings.darkTrellis = "darkTrellis".asInstanceOf[typings.devextreme.devextremeStrings.darkTrellis]
-    
-    inline def darkUp: typings.devextreme.devextremeStrings.darkUp = "darkUp".asInstanceOf[typings.devextreme.devextremeStrings.darkUp]
-    
-    inline def darkVertical: typings.devextreme.devextremeStrings.darkVertical = "darkVertical".asInstanceOf[typings.devextreme.devextremeStrings.darkVertical]
-    
-    inline def gray0625: typings.devextreme.devextremeStrings.gray0625 = "gray0625".asInstanceOf[typings.devextreme.devextremeStrings.gray0625]
-    
-    inline def gray125: typings.devextreme.devextremeStrings.gray125 = "gray125".asInstanceOf[typings.devextreme.devextremeStrings.gray125]
-    
-    inline def lightDown: typings.devextreme.devextremeStrings.lightDown = "lightDown".asInstanceOf[typings.devextreme.devextremeStrings.lightDown]
-    
-    inline def lightGray: typings.devextreme.devextremeStrings.lightGray = "lightGray".asInstanceOf[typings.devextreme.devextremeStrings.lightGray]
-    
-    inline def lightGrid: typings.devextreme.devextremeStrings.lightGrid = "lightGrid".asInstanceOf[typings.devextreme.devextremeStrings.lightGrid]
-    
-    inline def lightHorizontal: typings.devextreme.devextremeStrings.lightHorizontal = "lightHorizontal".asInstanceOf[typings.devextreme.devextremeStrings.lightHorizontal]
-    
-    inline def lightTrellis: typings.devextreme.devextremeStrings.lightTrellis = "lightTrellis".asInstanceOf[typings.devextreme.devextremeStrings.lightTrellis]
-    
-    inline def lightUp: typings.devextreme.devextremeStrings.lightUp = "lightUp".asInstanceOf[typings.devextreme.devextremeStrings.lightUp]
-    
-    inline def lightVertical: typings.devextreme.devextremeStrings.lightVertical = "lightVertical".asInstanceOf[typings.devextreme.devextremeStrings.lightVertical]
-    
-    inline def mediumGray: typings.devextreme.devextremeStrings.mediumGray = "mediumGray".asInstanceOf[typings.devextreme.devextremeStrings.mediumGray]
-    
-    inline def none: typings.devextreme.devextremeStrings.none = "none".asInstanceOf[typings.devextreme.devextremeStrings.none]
-    
-    inline def solid: typings.devextreme.devextremeStrings.solid = "solid".asInstanceOf[typings.devextreme.devextremeStrings.solid]
-  }
-  
-  /* Rewritten from type alias, can be one of: 
-    - typings.devextreme.devextremeStrings.bottom
-    - typings.devextreme.devextremeStrings.center
-    - typings.devextreme.devextremeStrings.distributed
-    - typings.devextreme.devextremeStrings.justify
-    - typings.devextreme.devextremeStrings.top
-  */
-  trait ExcelCellVerticalAlignment extends StObject
-  object ExcelCellVerticalAlignment {
-    
-    inline def bottom: typings.devextreme.devextremeStrings.bottom = "bottom".asInstanceOf[typings.devextreme.devextremeStrings.bottom]
-    
-    inline def center: typings.devextreme.devextremeStrings.center = "center".asInstanceOf[typings.devextreme.devextremeStrings.center]
-    
-    inline def distributed: typings.devextreme.devextremeStrings.distributed = "distributed".asInstanceOf[typings.devextreme.devextremeStrings.distributed]
-    
-    inline def justify: typings.devextreme.devextremeStrings.justify = "justify".asInstanceOf[typings.devextreme.devextremeStrings.justify]
-    
-    inline def top: typings.devextreme.devextremeStrings.top = "top".asInstanceOf[typings.devextreme.devextremeStrings.top]
-  }
-  
   trait ExplicitTypes[TRowData, TKey] extends StObject {
     
     var AdaptiveDetailRowPreparingEvent: typings.devextreme.mod.DevExpress.ui.dxDataGrid.AdaptiveDetailRowPreparingEvent[TRowData, TKey]
@@ -2698,17 +1513,11 @@ object dxDataGrid {
     
     var EditorPreparingEvent: typings.devextreme.mod.DevExpress.ui.dxDataGrid.EditorPreparingEvent[TRowData, TKey]
     
-    var ExcelCellInfo: typings.devextreme.mod.DevExpress.ui.dxDataGrid.ExcelCellInfo[TRowData, TKey]
-    
-    var Export: typings.devextreme.mod.DevExpress.ui.dxDataGrid.Export[TRowData, TKey]
+    var Export: typings.devextreme.mod.DevExpress.ui.dxDataGrid.Export
     
     var ExportTexts: typings.devextreme.mod.DevExpress.ui.dxDataGrid.ExportTexts
     
-    var ExportedEvent: typings.devextreme.mod.DevExpress.ui.dxDataGrid.ExportedEvent[TRowData, TKey]
-    
     var ExportingEvent: typings.devextreme.mod.DevExpress.ui.dxDataGrid.ExportingEvent[TRowData, TKey]
-    
-    var FileSavingEvent: typings.devextreme.mod.DevExpress.ui.dxDataGrid.FileSavingEvent[TRowData, TKey]
     
     var FocusedCellChangedEvent: typings.devextreme.mod.DevExpress.ui.dxDataGrid.FocusedCellChangedEvent[TRowData, TKey]
     
@@ -2764,7 +1573,7 @@ object dxDataGrid {
     
     var RowDraggingStartEvent: typings.devextreme.mod.DevExpress.ui.dxDataGrid.RowDraggingStartEvent[TRowData, TKey]
     
-    var RowDraggingTemplateData: typings.devextreme.mod.DevExpress.ui.dxDataGrid.RowDraggingTemplateData[TRowData]
+    var RowDraggingTemplateData: typings.devextreme.mod.DevExpress.common.grids.RowDraggingTemplateData[TRowData]
     
     var RowExpandedEvent: typings.devextreme.mod.DevExpress.ui.dxDataGrid.RowExpandedEvent[TRowData, TKey]
     
@@ -2842,12 +1651,9 @@ object dxDataGrid {
       EditingStartEvent: EditingStartEvent[TRowData, TKey],
       EditorPreparedEvent: EditorPreparedEvent[TRowData, TKey],
       EditorPreparingEvent: EditorPreparingEvent[TRowData, TKey],
-      ExcelCellInfo: ExcelCellInfo[TRowData, TKey],
-      Export: Export[TRowData, TKey],
+      Export: Export,
       ExportTexts: ExportTexts,
-      ExportedEvent: ExportedEvent[TRowData, TKey],
       ExportingEvent: ExportingEvent[TRowData, TKey],
-      FileSavingEvent: FileSavingEvent[TRowData, TKey],
       FocusedCellChangedEvent: FocusedCellChangedEvent[TRowData, TKey],
       FocusedCellChangingEvent: FocusedCellChangingEvent[TRowData, TKey],
       FocusedRowChangedEvent: FocusedRowChangedEvent[TRowData, TKey],
@@ -2875,7 +1681,7 @@ object dxDataGrid {
       RowDraggingRemoveEvent: RowDraggingRemoveEvent[TRowData, TKey],
       RowDraggingReorderEvent: RowDraggingReorderEvent[TRowData, TKey],
       RowDraggingStartEvent: RowDraggingStartEvent[TRowData, TKey],
-      RowDraggingTemplateData: RowDraggingTemplateData[TRowData],
+      RowDraggingTemplateData: typings.devextreme.mod.DevExpress.common.grids.RowDraggingTemplateData[TRowData],
       RowExpandedEvent: RowExpandedEvent[TRowData, TKey],
       RowExpandingEvent: RowExpandingEvent[TRowData, TKey],
       RowInsertedEvent: RowInsertedEvent[TRowData, TKey],
@@ -2901,7 +1707,7 @@ object dxDataGrid {
       ToolbarItem: ToolbarItem,
       ToolbarPreparingEvent: ToolbarPreparingEvent[TRowData, TKey]
     ): ExplicitTypes[TRowData, TKey] = {
-      val __obj = js.Dynamic.literal(AdaptiveDetailRowPreparingEvent = AdaptiveDetailRowPreparingEvent.asInstanceOf[js.Any], CellClickEvent = CellClickEvent.asInstanceOf[js.Any], CellDblClickEvent = CellDblClickEvent.asInstanceOf[js.Any], CellHoverChangedEvent = CellHoverChangedEvent.asInstanceOf[js.Any], CellPreparedEvent = CellPreparedEvent.asInstanceOf[js.Any], Column = Column.asInstanceOf[js.Any], ColumnButton = ColumnButton.asInstanceOf[js.Any], ColumnButtonClickEvent = ColumnButtonClickEvent.asInstanceOf[js.Any], ColumnButtonTemplateData = ColumnButtonTemplateData.asInstanceOf[js.Any], ColumnCellTemplateData = ColumnCellTemplateData.asInstanceOf[js.Any], ColumnEditCellTemplateData = ColumnEditCellTemplateData.asInstanceOf[js.Any], ColumnGroupCellTemplateData = ColumnGroupCellTemplateData.asInstanceOf[js.Any], ColumnHeaderCellTemplateData = ColumnHeaderCellTemplateData.asInstanceOf[js.Any], ContentReadyEvent = ContentReadyEvent.asInstanceOf[js.Any], ContextMenuPreparingEvent = ContextMenuPreparingEvent.asInstanceOf[js.Any], CustomSummaryInfo = CustomSummaryInfo.asInstanceOf[js.Any], DataErrorOccurredEvent = DataErrorOccurredEvent.asInstanceOf[js.Any], DataRowTemplateData = DataRowTemplateData.asInstanceOf[js.Any], DisposingEvent = DisposingEvent.asInstanceOf[js.Any], EditCanceledEvent = EditCanceledEvent.asInstanceOf[js.Any], EditCancelingEvent = EditCancelingEvent.asInstanceOf[js.Any], Editing = Editing.asInstanceOf[js.Any], EditingStartEvent = EditingStartEvent.asInstanceOf[js.Any], EditorPreparedEvent = EditorPreparedEvent.asInstanceOf[js.Any], EditorPreparingEvent = EditorPreparingEvent.asInstanceOf[js.Any], ExcelCellInfo = ExcelCellInfo.asInstanceOf[js.Any], Export = Export.asInstanceOf[js.Any], ExportTexts = ExportTexts.asInstanceOf[js.Any], ExportedEvent = ExportedEvent.asInstanceOf[js.Any], ExportingEvent = ExportingEvent.asInstanceOf[js.Any], FileSavingEvent = FileSavingEvent.asInstanceOf[js.Any], FocusedCellChangedEvent = FocusedCellChangedEvent.asInstanceOf[js.Any], FocusedCellChangingEvent = FocusedCellChangingEvent.asInstanceOf[js.Any], FocusedRowChangedEvent = FocusedRowChangedEvent.asInstanceOf[js.Any], FocusedRowChangingEvent = FocusedRowChangingEvent.asInstanceOf[js.Any], GroupData = GroupData.asInstanceOf[js.Any], GroupPanel = GroupPanel.asInstanceOf[js.Any], Grouping = Grouping.asInstanceOf[js.Any], GroupingTexts = GroupingTexts.asInstanceOf[js.Any], InitNewRowEvent = InitNewRowEvent.asInstanceOf[js.Any], InitializedEvent = InitializedEvent.asInstanceOf[js.Any], KeyDownEvent = KeyDownEvent.asInstanceOf[js.Any], MasterDetail = MasterDetail.asInstanceOf[js.Any], MasterDetailTemplateData = MasterDetailTemplateData.asInstanceOf[js.Any], OptionChangedEvent = OptionChangedEvent.asInstanceOf[js.Any], Properties = Properties.asInstanceOf[js.Any], Row = Row.asInstanceOf[js.Any], RowClickEvent = RowClickEvent.asInstanceOf[js.Any], RowCollapsedEvent = RowCollapsedEvent.asInstanceOf[js.Any], RowCollapsingEvent = RowCollapsingEvent.asInstanceOf[js.Any], RowDblClickEvent = RowDblClickEvent.asInstanceOf[js.Any], RowDraggingAddEvent = RowDraggingAddEvent.asInstanceOf[js.Any], RowDraggingChangeEvent = RowDraggingChangeEvent.asInstanceOf[js.Any], RowDraggingEndEvent = RowDraggingEndEvent.asInstanceOf[js.Any], RowDraggingMoveEvent = RowDraggingMoveEvent.asInstanceOf[js.Any], RowDraggingRemoveEvent = RowDraggingRemoveEvent.asInstanceOf[js.Any], RowDraggingReorderEvent = RowDraggingReorderEvent.asInstanceOf[js.Any], RowDraggingStartEvent = RowDraggingStartEvent.asInstanceOf[js.Any], RowDraggingTemplateData = RowDraggingTemplateData.asInstanceOf[js.Any], RowExpandedEvent = RowExpandedEvent.asInstanceOf[js.Any], RowExpandingEvent = RowExpandingEvent.asInstanceOf[js.Any], RowInsertedEvent = RowInsertedEvent.asInstanceOf[js.Any], RowInsertingEvent = RowInsertingEvent.asInstanceOf[js.Any], RowPreparedEvent = RowPreparedEvent.asInstanceOf[js.Any], RowRemovedEvent = RowRemovedEvent.asInstanceOf[js.Any], RowRemovingEvent = RowRemovingEvent.asInstanceOf[js.Any], RowTemplateData = RowTemplateData.asInstanceOf[js.Any], RowUpdatedEvent = RowUpdatedEvent.asInstanceOf[js.Any], RowUpdatingEvent = RowUpdatingEvent.asInstanceOf[js.Any], RowValidatingEvent = RowValidatingEvent.asInstanceOf[js.Any], SavedEvent = SavedEvent.asInstanceOf[js.Any], SavingEvent = SavingEvent.asInstanceOf[js.Any], Scrolling = Scrolling.asInstanceOf[js.Any], Selection = Selection.asInstanceOf[js.Any], SelectionChangedEvent = SelectionChangedEvent.asInstanceOf[js.Any], Summary = Summary.asInstanceOf[js.Any], SummaryGroupItem = SummaryGroupItem.asInstanceOf[js.Any], SummaryItemTextInfo = SummaryItemTextInfo.asInstanceOf[js.Any], SummaryTexts = SummaryTexts.asInstanceOf[js.Any], SummaryTotalItem = SummaryTotalItem.asInstanceOf[js.Any], Toolbar = Toolbar.asInstanceOf[js.Any], ToolbarItem = ToolbarItem.asInstanceOf[js.Any], ToolbarPreparingEvent = ToolbarPreparingEvent.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(AdaptiveDetailRowPreparingEvent = AdaptiveDetailRowPreparingEvent.asInstanceOf[js.Any], CellClickEvent = CellClickEvent.asInstanceOf[js.Any], CellDblClickEvent = CellDblClickEvent.asInstanceOf[js.Any], CellHoverChangedEvent = CellHoverChangedEvent.asInstanceOf[js.Any], CellPreparedEvent = CellPreparedEvent.asInstanceOf[js.Any], Column = Column.asInstanceOf[js.Any], ColumnButton = ColumnButton.asInstanceOf[js.Any], ColumnButtonClickEvent = ColumnButtonClickEvent.asInstanceOf[js.Any], ColumnButtonTemplateData = ColumnButtonTemplateData.asInstanceOf[js.Any], ColumnCellTemplateData = ColumnCellTemplateData.asInstanceOf[js.Any], ColumnEditCellTemplateData = ColumnEditCellTemplateData.asInstanceOf[js.Any], ColumnGroupCellTemplateData = ColumnGroupCellTemplateData.asInstanceOf[js.Any], ColumnHeaderCellTemplateData = ColumnHeaderCellTemplateData.asInstanceOf[js.Any], ContentReadyEvent = ContentReadyEvent.asInstanceOf[js.Any], ContextMenuPreparingEvent = ContextMenuPreparingEvent.asInstanceOf[js.Any], CustomSummaryInfo = CustomSummaryInfo.asInstanceOf[js.Any], DataErrorOccurredEvent = DataErrorOccurredEvent.asInstanceOf[js.Any], DataRowTemplateData = DataRowTemplateData.asInstanceOf[js.Any], DisposingEvent = DisposingEvent.asInstanceOf[js.Any], EditCanceledEvent = EditCanceledEvent.asInstanceOf[js.Any], EditCancelingEvent = EditCancelingEvent.asInstanceOf[js.Any], Editing = Editing.asInstanceOf[js.Any], EditingStartEvent = EditingStartEvent.asInstanceOf[js.Any], EditorPreparedEvent = EditorPreparedEvent.asInstanceOf[js.Any], EditorPreparingEvent = EditorPreparingEvent.asInstanceOf[js.Any], Export = Export.asInstanceOf[js.Any], ExportTexts = ExportTexts.asInstanceOf[js.Any], ExportingEvent = ExportingEvent.asInstanceOf[js.Any], FocusedCellChangedEvent = FocusedCellChangedEvent.asInstanceOf[js.Any], FocusedCellChangingEvent = FocusedCellChangingEvent.asInstanceOf[js.Any], FocusedRowChangedEvent = FocusedRowChangedEvent.asInstanceOf[js.Any], FocusedRowChangingEvent = FocusedRowChangingEvent.asInstanceOf[js.Any], GroupData = GroupData.asInstanceOf[js.Any], GroupPanel = GroupPanel.asInstanceOf[js.Any], Grouping = Grouping.asInstanceOf[js.Any], GroupingTexts = GroupingTexts.asInstanceOf[js.Any], InitNewRowEvent = InitNewRowEvent.asInstanceOf[js.Any], InitializedEvent = InitializedEvent.asInstanceOf[js.Any], KeyDownEvent = KeyDownEvent.asInstanceOf[js.Any], MasterDetail = MasterDetail.asInstanceOf[js.Any], MasterDetailTemplateData = MasterDetailTemplateData.asInstanceOf[js.Any], OptionChangedEvent = OptionChangedEvent.asInstanceOf[js.Any], Properties = Properties.asInstanceOf[js.Any], Row = Row.asInstanceOf[js.Any], RowClickEvent = RowClickEvent.asInstanceOf[js.Any], RowCollapsedEvent = RowCollapsedEvent.asInstanceOf[js.Any], RowCollapsingEvent = RowCollapsingEvent.asInstanceOf[js.Any], RowDblClickEvent = RowDblClickEvent.asInstanceOf[js.Any], RowDraggingAddEvent = RowDraggingAddEvent.asInstanceOf[js.Any], RowDraggingChangeEvent = RowDraggingChangeEvent.asInstanceOf[js.Any], RowDraggingEndEvent = RowDraggingEndEvent.asInstanceOf[js.Any], RowDraggingMoveEvent = RowDraggingMoveEvent.asInstanceOf[js.Any], RowDraggingRemoveEvent = RowDraggingRemoveEvent.asInstanceOf[js.Any], RowDraggingReorderEvent = RowDraggingReorderEvent.asInstanceOf[js.Any], RowDraggingStartEvent = RowDraggingStartEvent.asInstanceOf[js.Any], RowDraggingTemplateData = RowDraggingTemplateData.asInstanceOf[js.Any], RowExpandedEvent = RowExpandedEvent.asInstanceOf[js.Any], RowExpandingEvent = RowExpandingEvent.asInstanceOf[js.Any], RowInsertedEvent = RowInsertedEvent.asInstanceOf[js.Any], RowInsertingEvent = RowInsertingEvent.asInstanceOf[js.Any], RowPreparedEvent = RowPreparedEvent.asInstanceOf[js.Any], RowRemovedEvent = RowRemovedEvent.asInstanceOf[js.Any], RowRemovingEvent = RowRemovingEvent.asInstanceOf[js.Any], RowTemplateData = RowTemplateData.asInstanceOf[js.Any], RowUpdatedEvent = RowUpdatedEvent.asInstanceOf[js.Any], RowUpdatingEvent = RowUpdatingEvent.asInstanceOf[js.Any], RowValidatingEvent = RowValidatingEvent.asInstanceOf[js.Any], SavedEvent = SavedEvent.asInstanceOf[js.Any], SavingEvent = SavingEvent.asInstanceOf[js.Any], Scrolling = Scrolling.asInstanceOf[js.Any], Selection = Selection.asInstanceOf[js.Any], SelectionChangedEvent = SelectionChangedEvent.asInstanceOf[js.Any], Summary = Summary.asInstanceOf[js.Any], SummaryGroupItem = SummaryGroupItem.asInstanceOf[js.Any], SummaryItemTextInfo = SummaryItemTextInfo.asInstanceOf[js.Any], SummaryTexts = SummaryTexts.asInstanceOf[js.Any], SummaryTotalItem = SummaryTotalItem.asInstanceOf[js.Any], Toolbar = Toolbar.asInstanceOf[js.Any], ToolbarItem = ToolbarItem.asInstanceOf[js.Any], ToolbarPreparingEvent = ToolbarPreparingEvent.asInstanceOf[js.Any])
       __obj.asInstanceOf[ExplicitTypes[TRowData, TKey]]
     }
     
@@ -2958,17 +1764,11 @@ object dxDataGrid {
       
       inline def setEditorPreparingEvent(value: EditorPreparingEvent[TRowData, TKey]): Self = StObject.set(x, "EditorPreparingEvent", value.asInstanceOf[js.Any])
       
-      inline def setExcelCellInfo(value: ExcelCellInfo[TRowData, TKey]): Self = StObject.set(x, "ExcelCellInfo", value.asInstanceOf[js.Any])
-      
-      inline def setExport(value: Export[TRowData, TKey]): Self = StObject.set(x, "Export", value.asInstanceOf[js.Any])
+      inline def setExport(value: Export): Self = StObject.set(x, "Export", value.asInstanceOf[js.Any])
       
       inline def setExportTexts(value: ExportTexts): Self = StObject.set(x, "ExportTexts", value.asInstanceOf[js.Any])
       
-      inline def setExportedEvent(value: ExportedEvent[TRowData, TKey]): Self = StObject.set(x, "ExportedEvent", value.asInstanceOf[js.Any])
-      
       inline def setExportingEvent(value: ExportingEvent[TRowData, TKey]): Self = StObject.set(x, "ExportingEvent", value.asInstanceOf[js.Any])
-      
-      inline def setFileSavingEvent(value: FileSavingEvent[TRowData, TKey]): Self = StObject.set(x, "FileSavingEvent", value.asInstanceOf[js.Any])
       
       inline def setFocusedCellChangedEvent(value: FocusedCellChangedEvent[TRowData, TKey]): Self = StObject.set(x, "FocusedCellChangedEvent", value.asInstanceOf[js.Any])
       
@@ -3024,7 +1824,7 @@ object dxDataGrid {
       
       inline def setRowDraggingStartEvent(value: RowDraggingStartEvent[TRowData, TKey]): Self = StObject.set(x, "RowDraggingStartEvent", value.asInstanceOf[js.Any])
       
-      inline def setRowDraggingTemplateData(value: RowDraggingTemplateData[TRowData]): Self = StObject.set(x, "RowDraggingTemplateData", value.asInstanceOf[js.Any])
+      inline def setRowDraggingTemplateData(value: typings.devextreme.mod.DevExpress.common.grids.RowDraggingTemplateData[TRowData]): Self = StObject.set(x, "RowDraggingTemplateData", value.asInstanceOf[js.Any])
       
       inline def setRowExpandedEvent(value: RowExpandedEvent[TRowData, TKey]): Self = StObject.set(x, "RowExpandedEvent", value.asInstanceOf[js.Any])
       
@@ -3076,7 +1876,7 @@ object dxDataGrid {
     }
   }
   
-  trait Export[TRowData, TKey] extends StObject {
+  trait Export extends StObject {
     
     /**
       * Allows users to export selected rows only.
@@ -3084,50 +1884,14 @@ object dxDataGrid {
     var allowExportSelectedData: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * Customizes an Excel cell after it is created.
-      * @deprecated Since v20.1, we recommend ExcelJS-based export which does not use this property.
-      */
-    var customizeExcelCell: js.UndefOr[js.Function1[/* options */ ExcelCellInfo[TRowData, TKey], Unit]] = js.undefined
-    
-    /**
       * Adds the Export button to the DataGrid&apos;s toolbar.
       */
     var enabled: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * Specifies whether to enable Excel filtering for the exported data in the resulting XLSX file.
-      * @deprecated Since v20.1, we recommend ExcelJS-based export which does not use this property.
-      */
-    var excelFilterEnabled: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * Specifies whether to enable word wrapping for exported data in the resulting XLSX file.
-      * @deprecated Since v20.1, we recommend ExcelJS-based export which does not use this property.
-      */
-    var excelWrapTextEnabled: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * Specifies a default name for the file to which grid data is exported.
-      * @deprecated Since v20.1, we recommend ExcelJS-based export which does not use this property.
-      */
-    var fileName: js.UndefOr[String] = js.undefined
-    
-    /**
       * 
       */
     var formats: js.UndefOr[js.Array[xlsx | pdf_ | String]] = js.undefined
-    
-    /**
-      * Specifies whether Excel should hide warnings if there are errors in the exported document.
-      * @deprecated Since v20.1, we recommend ExcelJS-based export which does not use this property.
-      */
-    var ignoreExcelErrors: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * Specifies the URL of the server-side proxy that streams the resulting file to the end user to enable exporting in the Safari browser.
-      * @deprecated Since v10, Safari browser supports API for saving files, and this property is no longer required.
-      */
-    var proxyUrl: js.UndefOr[String] = js.undefined
     
     /**
       * Configures the texts of export commands, buttons, and hints.
@@ -3136,51 +1900,27 @@ object dxDataGrid {
   }
   object Export {
     
-    inline def apply[TRowData, TKey](): Export[TRowData, TKey] = {
+    inline def apply(): Export = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Export[TRowData, TKey]]
+      __obj.asInstanceOf[Export]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: Export[?, ?], TRowData, TKey] (val x: Self & (Export[TRowData, TKey])) extends AnyVal {
+    implicit open class MutableBuilder[Self <: Export] (val x: Self) extends AnyVal {
       
       inline def setAllowExportSelectedData(value: Boolean): Self = StObject.set(x, "allowExportSelectedData", value.asInstanceOf[js.Any])
       
       inline def setAllowExportSelectedDataUndefined: Self = StObject.set(x, "allowExportSelectedData", js.undefined)
       
-      inline def setCustomizeExcelCell(value: /* options */ ExcelCellInfo[TRowData, TKey] => Unit): Self = StObject.set(x, "customizeExcelCell", js.Any.fromFunction1(value))
-      
-      inline def setCustomizeExcelCellUndefined: Self = StObject.set(x, "customizeExcelCell", js.undefined)
-      
       inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
       inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
-      
-      inline def setExcelFilterEnabled(value: Boolean): Self = StObject.set(x, "excelFilterEnabled", value.asInstanceOf[js.Any])
-      
-      inline def setExcelFilterEnabledUndefined: Self = StObject.set(x, "excelFilterEnabled", js.undefined)
-      
-      inline def setExcelWrapTextEnabled(value: Boolean): Self = StObject.set(x, "excelWrapTextEnabled", value.asInstanceOf[js.Any])
-      
-      inline def setExcelWrapTextEnabledUndefined: Self = StObject.set(x, "excelWrapTextEnabled", js.undefined)
-      
-      inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
-      
-      inline def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
       
       inline def setFormats(value: js.Array[xlsx | pdf_ | String]): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
       
       inline def setFormatsUndefined: Self = StObject.set(x, "formats", js.undefined)
       
       inline def setFormatsVarargs(value: (xlsx | pdf_ | String)*): Self = StObject.set(x, "formats", js.Array(value*))
-      
-      inline def setIgnoreExcelErrors(value: Boolean): Self = StObject.set(x, "ignoreExcelErrors", value.asInstanceOf[js.Any])
-      
-      inline def setIgnoreExcelErrorsUndefined: Self = StObject.set(x, "ignoreExcelErrors", js.undefined)
-      
-      inline def setProxyUrl(value: String): Self = StObject.set(x, "proxyUrl", value.asInstanceOf[js.Any])
-      
-      inline def setProxyUrlUndefined: Self = StObject.set(x, "proxyUrl", js.undefined)
       
       inline def setTexts(value: ExportTexts): Self = StObject.set(x, "texts", value.asInstanceOf[js.Any])
       
@@ -3229,8 +1969,6 @@ object dxDataGrid {
     }
   }
   
-  type ExportedEvent[TRowData, TKey] = EventInfo[dxDataGrid[TRowData, TKey]]
-  
   trait ExportingEvent[TRowData, TKey]
     extends StObject
        with Cancelable
@@ -3267,121 +2005,9 @@ object dxDataGrid {
     }
   }
   
-  trait FileSavingEvent[TRowData, TKey]
-    extends StObject
-       with Cancelable {
-    
-    val component: dxDataGrid[TRowData, TKey]
-    
-    val data: Blob
-    
-    val element: DxElement_[HTMLElement]
-    
-    var fileName: js.UndefOr[String] = js.undefined
-    
-    var format: js.UndefOr[String] = js.undefined
-  }
-  object FileSavingEvent {
-    
-    inline def apply[TRowData, TKey](component: dxDataGrid[TRowData, TKey], data: Blob, element: DxElement_[HTMLElement]): FileSavingEvent[TRowData, TKey] = {
-      val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], element = element.asInstanceOf[js.Any])
-      __obj.asInstanceOf[FileSavingEvent[TRowData, TKey]]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: FileSavingEvent[?, ?], TRowData, TKey] (val x: Self & (FileSavingEvent[TRowData, TKey])) extends AnyVal {
-      
-      inline def setComponent(value: dxDataGrid[TRowData, TKey]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
-      
-      inline def setData(value: Blob): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
-      
-      inline def setElement(value: DxElement_[HTMLElement]): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
-      
-      inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
-      
-      inline def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
-      
-      inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
-      
-      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
-    }
-  }
+  type FilterPanel[TRowData, TKey] = typings.devextreme.mod.DevExpress.common.grids.FilterPanel[dxDataGrid[Any, Any], TRowData, TKey]
   
-  trait FilterPanel[T /* <: GridBase[TRowData, TKey] */, TRowData, TKey] extends StObject {
-    
-    /**
-      * Customizes the filter expression&apos;s text representation.
-      */
-    var customizeText: js.UndefOr[js.Function1[/* e */ FilterPanelCustomizeTextArg[T], String]] = js.undefined
-    
-    /**
-      * Specifies whether the filter expression is applied.
-      */
-    var filterEnabled: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * Specifies texts for the filter panel&apos;s elements.
-      */
-    var texts: js.UndefOr[typings.devextreme.mod.DevExpress.common.grids.FilterPanelTexts] = js.undefined
-    
-    /**
-      * Specifies whether the filter panel is visible.
-      */
-    var visible: js.UndefOr[Boolean] = js.undefined
-  }
-  object FilterPanel {
-    
-    inline def apply[T /* <: GridBase[TRowData, TKey] */, TRowData, TKey](): FilterPanel[T, TRowData, TKey] = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[FilterPanel[T, TRowData, TKey]]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: FilterPanel[?, ?, ?], T /* <: GridBase[TRowData, TKey] */, TRowData, TKey] (val x: Self & (FilterPanel[T, TRowData, TKey])) extends AnyVal {
-      
-      inline def setCustomizeText(value: /* e */ FilterPanelCustomizeTextArg[T] => String): Self = StObject.set(x, "customizeText", js.Any.fromFunction1(value))
-      
-      inline def setCustomizeTextUndefined: Self = StObject.set(x, "customizeText", js.undefined)
-      
-      inline def setFilterEnabled(value: Boolean): Self = StObject.set(x, "filterEnabled", value.asInstanceOf[js.Any])
-      
-      inline def setFilterEnabledUndefined: Self = StObject.set(x, "filterEnabled", js.undefined)
-      
-      inline def setTexts(value: typings.devextreme.mod.DevExpress.common.grids.FilterPanelTexts): Self = StObject.set(x, "texts", value.asInstanceOf[js.Any])
-      
-      inline def setTextsUndefined: Self = StObject.set(x, "texts", js.undefined)
-      
-      inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
-      
-      inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
-    }
-  }
-  
-  trait FilterPanelCustomizeTextArg[T] extends StObject {
-    
-    val component: T
-    
-    val filterValue: Any
-    
-    val text: String
-  }
-  object FilterPanelCustomizeTextArg {
-    
-    inline def apply[T](component: T, filterValue: Any, text: String): FilterPanelCustomizeTextArg[T] = {
-      val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], filterValue = filterValue.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
-      __obj.asInstanceOf[FilterPanelCustomizeTextArg[T]]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: FilterPanelCustomizeTextArg[?], T] (val x: Self & FilterPanelCustomizeTextArg[T]) extends AnyVal {
-      
-      inline def setComponent(value: T): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
-      
-      inline def setFilterValue(value: Any): Self = StObject.set(x, "filterValue", value.asInstanceOf[js.Any])
-      
-      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
-    }
-  }
+  type FilterPanelCustomizeTextArg = typings.devextreme.mod.DevExpress.common.grids.FilterPanelCustomizeTextArg[dxDataGrid[Any, Any]]
   
   type FilterPanelTexts = typings.devextreme.mod.DevExpress.common.grids.FilterPanelTexts
   
@@ -3819,39 +2445,14 @@ object dxDataGrid {
   
   type HeaderFilter = typings.devextreme.mod.DevExpress.common.grids.HeaderFilter
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.devextreme.devextremeStrings.day
-    - typings.devextreme.devextremeStrings.hour
-    - typings.devextreme.devextremeStrings.minute
-    - typings.devextreme.devextremeStrings.month
-    - typings.devextreme.devextremeStrings.quarter
-    - typings.devextreme.devextremeStrings.second
-    - typings.devextreme.devextremeStrings.year
-  */
-  trait HeaderFilterGroupInterval extends StObject
-  object HeaderFilterGroupInterval {
-    
-    inline def day: typings.devextreme.devextremeStrings.day = "day".asInstanceOf[typings.devextreme.devextremeStrings.day]
-    
-    inline def hour: typings.devextreme.devextremeStrings.hour = "hour".asInstanceOf[typings.devextreme.devextremeStrings.hour]
-    
-    inline def minute: typings.devextreme.devextremeStrings.minute = "minute".asInstanceOf[typings.devextreme.devextremeStrings.minute]
-    
-    inline def month: typings.devextreme.devextremeStrings.month = "month".asInstanceOf[typings.devextreme.devextremeStrings.month]
-    
-    inline def quarter: typings.devextreme.devextremeStrings.quarter = "quarter".asInstanceOf[typings.devextreme.devextremeStrings.quarter]
-    
-    inline def second: typings.devextreme.devextremeStrings.second = "second".asInstanceOf[typings.devextreme.devextremeStrings.second]
-    
-    inline def year: typings.devextreme.devextremeStrings.year = "year".asInstanceOf[typings.devextreme.devextremeStrings.year]
-  }
+  type HeaderFilterGroupInterval = typings.devextreme.mod.DevExpress.common.grids.HeaderFilterGroupInterval
   
   type HeaderFilterTexts = typings.devextreme.mod.DevExpress.common.grids.HeaderFilterTexts
   
   trait InitNewRowEvent[TRowData, TKey]
     extends StObject
        with EventInfo[dxDataGrid[TRowData, TKey]]
-       with NewRowInfo[TRowData]
+       with typings.devextreme.mod.DevExpress.common.grids.NewRowInfo[TRowData]
   object InitNewRowEvent {
     
     inline def apply[TRowData, TKey](component: dxDataGrid[TRowData, TKey], data: TRowData, element: DxElement_[HTMLElement]): InitNewRowEvent[TRowData, TKey] = {
@@ -3865,7 +2466,7 @@ object dxDataGrid {
   trait KeyDownEvent[TRowData, TKey]
     extends StObject
        with NativeEventInfo[dxDataGrid[TRowData, TKey], KeyboardEvent]
-       with KeyDownInfo
+       with typings.devextreme.mod.DevExpress.common.grids.KeyDownInfo
   object KeyDownEvent {
     
     inline def apply[TRowData, TKey](component: dxDataGrid[TRowData, TKey], element: DxElement_[HTMLElement], handled: Boolean): KeyDownEvent[TRowData, TKey] = {
@@ -3874,23 +2475,7 @@ object dxDataGrid {
     }
   }
   
-  trait KeyDownInfo extends StObject {
-    
-    var handled: Boolean
-  }
-  object KeyDownInfo {
-    
-    inline def apply(handled: Boolean): KeyDownInfo = {
-      val __obj = js.Dynamic.literal(handled = handled.asInstanceOf[js.Any])
-      __obj.asInstanceOf[KeyDownInfo]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: KeyDownInfo] (val x: Self) extends AnyVal {
-      
-      inline def setHandled(value: Boolean): Self = StObject.set(x, "handled", value.asInstanceOf[js.Any])
-    }
-  }
+  type KeyDownInfo = typings.devextreme.mod.DevExpress.common.grids.KeyDownInfo
   
   type KeyboardNavigation = typings.devextreme.mod.DevExpress.common.grids.KeyboardNavigation
   
@@ -3981,29 +2566,7 @@ object dxDataGrid {
     }
   }
   
-  trait NewRowInfo[TRowData] extends StObject {
-    
-    var data: TRowData
-    
-    var promise: js.UndefOr[PromiseLike[Unit]] = js.undefined
-  }
-  object NewRowInfo {
-    
-    inline def apply[TRowData](data: TRowData): NewRowInfo[TRowData] = {
-      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
-      __obj.asInstanceOf[NewRowInfo[TRowData]]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: NewRowInfo[?], TRowData] (val x: Self & NewRowInfo[TRowData]) extends AnyVal {
-      
-      inline def setData(value: TRowData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
-      
-      inline def setPromise(value: PromiseLike[Unit]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
-      
-      inline def setPromiseUndefined: Self = StObject.set(x, "promise", js.undefined)
-    }
-  }
+  type NewRowInfo[TRowData] = typings.devextreme.mod.DevExpress.common.grids.NewRowInfo[TRowData]
   
   trait OptionChangedEvent[TRowData, TKey]
     extends StObject
@@ -4024,48 +2587,1249 @@ object dxDataGrid {
   
   type Pager = typings.devextreme.mod.DevExpress.common.grids.Pager
   
-  trait PagingBase extends StObject {
+  type PagingBase = typings.devextreme.mod.DevExpress.common.grids.PagingBase
+  
+  /* Inlined devextreme.devextreme.DevExpress.ui.dxDataGridOptions<TRowData, TKey> */
+  trait Properties[TRowData, TKey] extends StObject {
+    
+    var accessKey: js.UndefOr[String] = js.undefined
+    
+    var activeStateEnabled: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * Enables paging.
+      * Specifies whether a user can reorder columns.
       */
-    var enabled: js.UndefOr[Boolean] = js.undefined
+    var allowColumnReordering: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * Specifies the page to be displayed using a zero-based index.
+      * Specifies whether a user can resize columns.
       */
-    var pageIndex: js.UndefOr[Double] = js.undefined
+    var allowColumnResizing: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * Specifies the page size.
+      * Automatically scrolls to the focused row when the focusedRowKey is changed.
       */
-    var pageSize: js.UndefOr[Double] = js.undefined
+    var autoNavigateToFocusedRow: js.UndefOr[Boolean] = js.undefined
+    
+    var bindingOptions: js.UndefOr[StringDictionary[Any]] = js.undefined
+    
+    /**
+      * Specifies whether data should be cached.
+      */
+    var cacheEnabled: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Enables a hint that appears when a user hovers the mouse pointer over a cell with truncated content.
+      */
+    var cellHintEnabled: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Specifies whether columns should adjust their widths to the content.
+      */
+    var columnAutoWidth: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Configures the column chooser.
+      */
+    var columnChooser: js.UndefOr[typings.devextreme.mod.DevExpress.common.grids.ColumnChooser] = js.undefined
+    
+    /**
+      * Configures column fixing.
+      */
+    var columnFixing: js.UndefOr[typings.devextreme.mod.DevExpress.common.grids.ColumnFixing] = js.undefined
+    
+    /**
+      * Specifies whether the UI component should hide columns to adapt to the screen or container size. Ignored if allowColumnResizing is true and columnResizingMode is &apos;widget&apos;.
+      */
+    var columnHidingEnabled: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Specifies the minimum width of columns.
+      */
+    var columnMinWidth: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * Specifies how the UI component resizes columns. Applies only if allowColumnResizing is true.
+      */
+    var columnResizingMode: js.UndefOr[ColumnResizeMode] = js.undefined
+    
+    /**
+      * Specifies the width for all data columns. Has a lower priority than the column.width property.
+      */
+    var columnWidth: js.UndefOr[Double | Mode] = js.undefined
+    
+    /**
+      * Overridden.
+      */
+    /**
+      * An array of grid columns.
+      */
+    var columns: js.UndefOr[
+        js.Array[typings.devextreme.mod.DevExpress.common.grids.ColumnBase[TRowData] | String]
+      ] = js.undefined
+    
+    /**
+      * Customizes columns after they are created.
+      */
+    var customizeColumns: js.UndefOr[js.Function1[/* columns */ js.Array[Column[TRowData, TKey]], Unit]] = js.undefined
+    
+    /**
+      * Specifies a custom template for data rows.
+      */
+    var dataRowTemplate: js.UndefOr[
+        template | (js.Function2[
+          /* rowElement */ DxElement_[HTMLElement], 
+          /* rowInfo */ DataRowTemplateData[TRowData, TKey], 
+          Any
+        ])
+      ] = js.undefined
+    
+    /**
+      * Binds the UI component to data.
+      */
+    var dataSource: js.UndefOr[(DataSourceLike[TRowData, TKey]) | Null] = js.undefined
+    
+    /**
+      * Specifies the format in which date-time values should be sent to the server.
+      */
+    var dateSerializationFormat: js.UndefOr[String] = js.undefined
+    
+    var disabled: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Overriden.
+      */
+    /**
+      * Configures editing.
+      */
+    var editing: js.UndefOr[typings.devextreme.mod.DevExpress.common.grids.EditingBase[TRowData, TKey]] = js.undefined
+    
+    var elementAttr: js.UndefOr[StringDictionary[Any]] = js.undefined
+    
+    /**
+      * Indicates whether to show the error row.
+      */
+    var errorRowEnabled: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Configures client-side exporting.
+      */
+    var `export`: js.UndefOr[Export] = js.undefined
+    
+    /**
+      * Configures the integrated filter builder.
+      */
+    var filterBuilder: js.UndefOr[typings.devextreme.mod.DevExpress.ui.dxFilterBuilder.Properties] = js.undefined
+    
+    /**
+      * Configures the popup in which the integrated filter builder is shown.
+      */
+    var filterBuilderPopup: js.UndefOr[typings.devextreme.mod.DevExpress.ui.dxPopup.Properties] = js.undefined
+    
+    /**
+      * Configures the filter panel.
+      */
+    var filterPanel: js.UndefOr[
+        typings.devextreme.mod.DevExpress.common.grids.FilterPanel[dxDataGrid[TRowData, TKey], TRowData, TKey]
+      ] = js.undefined
+    
+    /**
+      * Configures the filter row.
+      */
+    var filterRow: js.UndefOr[typings.devextreme.mod.DevExpress.common.grids.FilterRow] = js.undefined
+    
+    /**
+      * Specifies whether to synchronize the filter row, header filter, and filter builder. The synchronized filter expression is stored in the filterValue property.
+      */
+    var filterSyncEnabled: js.UndefOr[Boolean | Mode] = js.undefined
+    
+    /**
+      * Specifies a filter expression.
+      */
+    var filterValue: js.UndefOr[String | js.Array[Any] | js.Function] = js.undefined
+    
+    /**
+      * The index of the column that contains the focused data cell. This index is taken from the columns array.
+      */
+    var focusedColumnIndex: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * Specifies whether the focused row feature is enabled.
+      */
+    var focusedRowEnabled: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Specifies or indicates the focused data row&apos;s index.
+      */
+    var focusedRowIndex: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * Specifies initially or currently focused grid row&apos;s key.
+      */
+    var focusedRowKey: js.UndefOr[TKey] = js.undefined
+    
+    /**
+      * Configures the group panel.
+      */
+    var groupPanel: js.UndefOr[GroupPanel] = js.undefined
+    
+    /**
+      * Configures grouping.
+      */
+    var grouping: js.UndefOr[Grouping] = js.undefined
+    
+    /**
+      * Configures the header filter feature.
+      */
+    var headerFilter: js.UndefOr[typings.devextreme.mod.DevExpress.common.grids.HeaderFilter] = js.undefined
+    
+    var height: js.UndefOr[Double | String | (js.Function0[Double | String])] = js.undefined
+    
+    /**
+      * Specifies whether to highlight rows and cells with edited data. repaintChangesOnly should be true.
+      */
+    var highlightChanges: js.UndefOr[Boolean] = js.undefined
+    
+    var hint: js.UndefOr[String] = js.undefined
+    
+    var hoverStateEnabled: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Specifies the key property (or properties) that provide(s) key values to access data items. Each key value must be unique. This property applies only if data is a simple array.
+      */
+    var keyExpr: js.UndefOr[String | js.Array[String]] = js.undefined
+    
+    /**
+      * Configures keyboard navigation.
+      */
+    var keyboardNavigation: js.UndefOr[typings.devextreme.mod.DevExpress.common.grids.KeyboardNavigation] = js.undefined
+    
+    /**
+      * Configures the load panel.
+      */
+    var loadPanel: js.UndefOr[typings.devextreme.mod.DevExpress.common.grids.LoadPanel] = js.undefined
+    
+    /**
+      * Allows you to build a master-detail interface in the grid.
+      */
+    var masterDetail: js.UndefOr[MasterDetail[TRowData, TKey]] = js.undefined
+    
+    /**
+      * Specifies a text string shown when the widget does not display any data.
+      */
+    var noDataText: js.UndefOr[String] = js.undefined
+    
+    /**
+      * A function that is executed before an adaptive detail row is rendered.
+      */
+    var onAdaptiveDetailRowPreparing: js.UndefOr[
+        js.Function1[
+          /* e */ (EventInfo[dxDataGrid[TRowData, TKey]]) & typings.devextreme.mod.DevExpress.common.grids.AdaptiveDetailRowPreparingInfo, 
+          Unit
+        ]
+      ] = js.undefined
+    
+    /**
+      * A function that is executed when a cell is clicked or tapped. Executed before onRowClick.
+      */
+    var onCellClick: js.UndefOr[js.Function1[/* e */ CellClickEvent[TRowData, TKey], Unit]] = js.undefined
+    
+    /**
+      * A function that is executed when a cell is double-clicked or double-tapped. Executed before onRowDblClick.
+      */
+    var onCellDblClick: js.UndefOr[js.Function1[/* e */ CellDblClickEvent[TRowData, TKey], Unit]] = js.undefined
+    
+    /**
+      * A function that is executed after the pointer enters or leaves a cell.
+      */
+    var onCellHoverChanged: js.UndefOr[js.Function1[/* e */ CellHoverChangedEvent[TRowData, TKey], Unit]] = js.undefined
+    
+    /**
+      * A function that is executed after a grid cell is created.
+      */
+    var onCellPrepared: js.UndefOr[js.Function1[/* e */ CellPreparedEvent[TRowData, TKey], Unit]] = js.undefined
+    
+    var onContentReady: js.UndefOr[js.Function1[/* e */ EventInfo[dxDataGrid[TRowData, TKey]], Unit]] = js.undefined
+    
+    /**
+      * A function that is executed before the context menu is rendered.
+      */
+    var onContextMenuPreparing: js.UndefOr[js.Function1[/* e */ ContextMenuPreparingEvent[TRowData, TKey], Unit]] = js.undefined
+    
+    /**
+      * A function that is executed when an error occurs in the data source.
+      */
+    var onDataErrorOccurred: js.UndefOr[
+        js.Function1[
+          /* e */ (EventInfo[dxDataGrid[TRowData, TKey]]) & typings.devextreme.mod.DevExpress.common.grids.DataErrorOccurredInfo, 
+          Unit
+        ]
+      ] = js.undefined
+    
+    var onDisposing: js.UndefOr[js.Function1[/* e */ EventInfo[dxDataGrid[TRowData, TKey]], Unit]] = js.undefined
+    
+    /**
+      * A function that is executed after row changes are discarded.
+      */
+    var onEditCanceled: js.UndefOr[
+        js.Function1[
+          /* e */ (EventInfo[dxDataGrid[TRowData, TKey]]) & (typings.devextreme.mod.DevExpress.common.grids.DataChangeInfo[TRowData, TKey]), 
+          Unit
+        ]
+      ] = js.undefined
+    
+    /**
+      * A function that is executed when the edit operation is canceled, but row changes are not yet discarded.
+      */
+    var onEditCanceling: js.UndefOr[
+        js.Function1[
+          /* e */ Cancelable & (EventInfo[dxDataGrid[TRowData, TKey]]) & (typings.devextreme.mod.DevExpress.common.grids.DataChangeInfo[TRowData, TKey]), 
+          Unit
+        ]
+      ] = js.undefined
+    
+    /**
+      * A function that is executed before a cell or row switches to the editing state.
+      */
+    var onEditingStart: js.UndefOr[js.Function1[/* e */ EditingStartEvent[TRowData, TKey], Unit]] = js.undefined
+    
+    /**
+      * A function that is executed after an editor is created. Not executed for cells with an editCellTemplate.
+      */
+    var onEditorPrepared: js.UndefOr[js.Function1[/* options */ EditorPreparedEvent[TRowData, TKey], Unit]] = js.undefined
+    
+    /**
+      * A function used to customize a cell&apos;s editor. Not executed for cells with an editCellTemplate.
+      */
+    var onEditorPreparing: js.UndefOr[js.Function1[/* e */ EditorPreparingEvent[TRowData, TKey], Unit]] = js.undefined
+    
+    /**
+      * A function that is executed before data is exported.
+      */
+    var onExporting: js.UndefOr[js.Function1[/* e */ ExportingEvent[TRowData, TKey], Unit]] = js.undefined
+    
+    /**
+      * A function that is executed after the focused cell changes. Applies only to cells in data or group rows.
+      */
+    var onFocusedCellChanged: js.UndefOr[js.Function1[/* e */ FocusedCellChangedEvent[TRowData, TKey], Unit]] = js.undefined
+    
+    /**
+      * A function that is executed before the focused cell changes. Applies only to cells in data or group rows.
+      */
+    var onFocusedCellChanging: js.UndefOr[js.Function1[/* e */ FocusedCellChangingEvent[TRowData, TKey], Unit]] = js.undefined
+    
+    /**
+      * A function that is executed after the focused row changes. Applies only to data or group rows. focusedRowEnabled should be true.
+      */
+    var onFocusedRowChanged: js.UndefOr[js.Function1[/* e */ FocusedRowChangedEvent[TRowData, TKey], Unit]] = js.undefined
+    
+    /**
+      * A function that is executed before the focused row changes. Applies only to data or group rows. focusedRowEnabled should be true.
+      */
+    var onFocusedRowChanging: js.UndefOr[js.Function1[/* e */ FocusedRowChangingEvent[TRowData, TKey], Unit]] = js.undefined
+    
+    /**
+      * A function that is executed before a new row is added to the UI component.
+      */
+    var onInitNewRow: js.UndefOr[
+        js.Function1[
+          /* e */ (EventInfo[dxDataGrid[TRowData, TKey]]) & typings.devextreme.mod.DevExpress.common.grids.NewRowInfo[TRowData], 
+          Unit
+        ]
+      ] = js.undefined
+    
+    var onInitialized: js.UndefOr[js.Function1[/* e */ InitializedEventInfo[dxDataGrid[TRowData, TKey]], Unit]] = js.undefined
+    
+    /**
+      * A function that is executed when the UI component is in focus and a key has been pressed down.
+      */
+    var onKeyDown: js.UndefOr[
+        js.Function1[
+          /* e */ (NativeEventInfo[dxDataGrid[TRowData, TKey], KeyboardEvent]) & typings.devextreme.mod.DevExpress.common.grids.KeyDownInfo, 
+          Unit
+        ]
+      ] = js.undefined
+    
+    var onOptionChanged: js.UndefOr[js.Function1[/* e */ OptionChangedEventInfo[dxDataGrid[TRowData, TKey]], Unit]] = js.undefined
+    
+    /**
+      * A function that is executed when a row is clicked or tapped.
+      */
+    var onRowClick: js.UndefOr[js.Function1[/* e */ RowClickEvent[TRowData, TKey], Unit]] = js.undefined
+    
+    /**
+      * A function that is executed after a row is collapsed.
+      */
+    var onRowCollapsed: js.UndefOr[
+        js.Function1[
+          /* e */ (EventInfo[dxDataGrid[TRowData, TKey]]) & typings.devextreme.mod.DevExpress.common.grids.RowKeyInfo[TKey], 
+          Unit
+        ]
+      ] = js.undefined
+    
+    /**
+      * A function that is executed before a row is collapsed.
+      */
+    var onRowCollapsing: js.UndefOr[
+        js.Function1[
+          /* e */ Cancelable & (EventInfo[dxDataGrid[TRowData, TKey]]) & typings.devextreme.mod.DevExpress.common.grids.RowKeyInfo[TKey], 
+          Unit
+        ]
+      ] = js.undefined
+    
+    /**
+      * A function that is executed when a row is double-clicked or double-tapped. Executed after onCellDblClick.
+      */
+    var onRowDblClick: js.UndefOr[js.Function1[/* e */ RowDblClickEvent[TRowData, TKey], Unit]] = js.undefined
+    
+    /**
+      * A function that is executed after a row is expanded.
+      */
+    var onRowExpanded: js.UndefOr[
+        js.Function1[
+          /* e */ (EventInfo[dxDataGrid[TRowData, TKey]]) & typings.devextreme.mod.DevExpress.common.grids.RowKeyInfo[TKey], 
+          Unit
+        ]
+      ] = js.undefined
+    
+    /**
+      * A function that is executed before a row is expanded.
+      */
+    var onRowExpanding: js.UndefOr[
+        js.Function1[
+          /* e */ Cancelable & (EventInfo[dxDataGrid[TRowData, TKey]]) & typings.devextreme.mod.DevExpress.common.grids.RowKeyInfo[TKey], 
+          Unit
+        ]
+      ] = js.undefined
+    
+    /**
+      * A function that is executed after a new row has been inserted into the data source.
+      */
+    var onRowInserted: js.UndefOr[
+        js.Function1[
+          /* e */ (EventInfo[dxDataGrid[TRowData, TKey]]) & (typings.devextreme.mod.DevExpress.common.grids.RowInsertedInfo[TRowData, TKey]), 
+          Unit
+        ]
+      ] = js.undefined
+    
+    /**
+      * A function that is executed before a new row is inserted into the data source.
+      */
+    var onRowInserting: js.UndefOr[
+        js.Function1[
+          /* e */ (EventInfo[dxDataGrid[TRowData, TKey]]) & typings.devextreme.mod.DevExpress.common.grids.RowInsertingInfo[TRowData], 
+          Unit
+        ]
+      ] = js.undefined
+    
+    /**
+      * A function that is executed after a row is created.
+      */
+    var onRowPrepared: js.UndefOr[js.Function1[/* e */ RowPreparedEvent[TRowData, TKey], Unit]] = js.undefined
+    
+    /**
+      * A function that is executed after a row has been removed from the data source.
+      */
+    var onRowRemoved: js.UndefOr[
+        js.Function1[
+          /* e */ (EventInfo[dxDataGrid[TRowData, TKey]]) & (typings.devextreme.mod.DevExpress.common.grids.RowRemovedInfo[TRowData, TKey]), 
+          Unit
+        ]
+      ] = js.undefined
+    
+    /**
+      * A function that is executed before a row is removed from the data source.
+      */
+    var onRowRemoving: js.UndefOr[
+        js.Function1[
+          /* e */ (EventInfo[dxDataGrid[TRowData, TKey]]) & (typings.devextreme.mod.DevExpress.common.grids.RowRemovingInfo[TRowData, TKey]), 
+          Unit
+        ]
+      ] = js.undefined
+    
+    /**
+      * A function that is executed after a row has been updated in the data source.
+      */
+    var onRowUpdated: js.UndefOr[
+        js.Function1[
+          /* e */ (EventInfo[dxDataGrid[TRowData, TKey]]) & (typings.devextreme.mod.DevExpress.common.grids.RowUpdatedInfo[TRowData, TKey]), 
+          Unit
+        ]
+      ] = js.undefined
+    
+    /**
+      * A function that is executed before a row is updated in the data source.
+      */
+    var onRowUpdating: js.UndefOr[
+        js.Function1[
+          /* e */ (EventInfo[dxDataGrid[TRowData, TKey]]) & (typings.devextreme.mod.DevExpress.common.grids.RowUpdatingInfo[TRowData, TKey]), 
+          Unit
+        ]
+      ] = js.undefined
+    
+    /**
+      * A function that is executed after cells in a row are validated against validation rules.
+      */
+    var onRowValidating: js.UndefOr[
+        js.Function1[
+          /* e */ (EventInfo[dxDataGrid[TRowData, TKey]]) & (typings.devextreme.mod.DevExpress.common.grids.RowValidatingInfo[TRowData, TKey]), 
+          Unit
+        ]
+      ] = js.undefined
+    
+    /**
+      * A function that is executed after row changes are saved.
+      */
+    var onSaved: js.UndefOr[
+        js.Function1[
+          /* e */ (EventInfo[dxDataGrid[TRowData, TKey]]) & (typings.devextreme.mod.DevExpress.common.grids.DataChangeInfo[TRowData, TKey]), 
+          Unit
+        ]
+      ] = js.undefined
+    
+    /**
+      * A function that is executed before pending row changes are saved.
+      */
+    var onSaving: js.UndefOr[
+        js.Function1[
+          /* e */ (EventInfo[dxDataGrid[TRowData, TKey]]) & (typings.devextreme.mod.DevExpress.common.grids.SavingInfo[TRowData, TKey]), 
+          Unit
+        ]
+      ] = js.undefined
+    
+    /**
+      * A function that is executed after selecting a row or clearing its selection.
+      */
+    var onSelectionChanged: js.UndefOr[
+        js.Function1[
+          /* e */ (EventInfo[dxDataGrid[TRowData, TKey]]) & (typings.devextreme.mod.DevExpress.common.grids.SelectionChangedInfo[TRowData, TKey]), 
+          Unit
+        ]
+      ] = js.undefined
+    
+    /**
+      * A function that is executed before the toolbar is created.
+      */
+    var onToolbarPreparing: js.UndefOr[
+        js.Function1[
+          /* e */ (EventInfo[dxDataGrid[TRowData, TKey]]) & typings.devextreme.mod.DevExpress.common.grids.ToolbarPreparingInfo, 
+          Unit
+        ]
+      ] = js.undefined
+    
+    /**
+      * Configures the pager.
+      */
+    var pager: js.UndefOr[typings.devextreme.mod.DevExpress.common.grids.Pager] = js.undefined
+    
+    /**
+      * Configures paging.
+      */
+    var paging: js.UndefOr[typings.devextreme.mod.DevExpress.common.grids.PagingBase] = js.undefined
+    
+    /**
+      * Notifies the DataGrid of the server&apos;s data processing operations.
+      */
+    var remoteOperations: js.UndefOr[Boolean | Filtering | Mode] = js.undefined
+    
+    /**
+      * Specifies whether to render the filter row, command columns, and columns with showEditorAlways set to true after other elements.
+      */
+    var renderAsync: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Specifies whether to repaint only those cells whose data changed.
+      */
+    var repaintChangesOnly: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Specifies whether rows should be shaded differently.
+      */
+    var rowAlternationEnabled: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Configures row reordering using drag and drop gestures.
+      */
+    var rowDragging: js.UndefOr[
+        typings.devextreme.mod.DevExpress.common.grids.RowDragging[dxDataGrid[TRowData, TKey], TRowData, TKey]
+      ] = js.undefined
+    
+    /**
+      * Specifies a custom template for rows.
+      * @deprecated 
+      */
+    var rowTemplate: js.UndefOr[
+        template | (js.Function2[
+          /* rowElement */ DxElement_[HTMLElement], 
+          /* rowInfo */ RowTemplateData[TRowData, TKey], 
+          Any
+        ])
+      ] = js.undefined
+    
+    var rtlEnabled: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * 
+      */
+    /**
+      * Configures scrolling.
+      */
+    var scrolling: js.UndefOr[typings.devextreme.mod.DevExpress.common.grids.ScrollingBase] = js.undefined
+    
+    /**
+      * Configures the search panel.
+      */
+    var searchPanel: js.UndefOr[typings.devextreme.mod.DevExpress.common.grids.SearchPanel] = js.undefined
+    
+    /**
+      * Allows you to select rows or determine which rows are selected.
+      */
+    var selectedRowKeys: js.UndefOr[js.Array[TKey]] = js.undefined
+    
+    /**
+      * 
+      */
+    /**
+      * Configures runtime selection.
+      */
+    var selection: js.UndefOr[typings.devextreme.mod.DevExpress.common.grids.SelectionBase] = js.undefined
+    
+    /**
+      * Specifies filters for the rows that must be selected initially. Applies only if selection.deferred is true.
+      */
+    var selectionFilter: js.UndefOr[String | js.Array[Any] | js.Function] = js.undefined
+    
+    /**
+      * Specifies whether the outer borders of the UI component are visible.
+      */
+    var showBorders: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Specifies whether column headers are visible.
+      */
+    var showColumnHeaders: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Specifies whether vertical lines that separate one column from another are visible.
+      */
+    var showColumnLines: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Specifies whether horizontal lines that separate one row from another are visible.
+      */
+    var showRowLines: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Allows you to sort groups according to the values of group summary items.
+      */
+    var sortByGroupSummaryInfo: js.UndefOr[js.Array[dxDataGridSortByGroupSummaryInfoItem]] = js.undefined
+    
+    /**
+      * Configures runtime sorting.
+      */
+    var sorting: js.UndefOr[typings.devextreme.mod.DevExpress.common.grids.Sorting] = js.undefined
+    
+    /**
+      * Configures state storing.
+      */
+    var stateStoring: js.UndefOr[typings.devextreme.mod.DevExpress.common.grids.StateStoring] = js.undefined
+    
+    /**
+      * Specifies the properties of the grid summary.
+      */
+    var summary: js.UndefOr[Summary[TRowData, TKey]] = js.undefined
+    
+    /**
+      * 
+      */
+    var syncLookupFilterValues: js.UndefOr[Boolean] = js.undefined
+    
+    var tabIndex: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * Configures the toolbar.
+      */
+    var toolbar: js.UndefOr[Toolbar] = js.undefined
+    
+    /**
+      * Specifies whether to enable two-way data binding.
+      */
+    var twoWayBindingEnabled: js.UndefOr[Boolean] = js.undefined
+    
+    var visible: js.UndefOr[Boolean] = js.undefined
+    
+    var width: js.UndefOr[Double | String | (js.Function0[Double | String])] = js.undefined
+    
+    /**
+      * Specifies whether text that does not fit into a column should be wrapped.
+      */
+    var wordWrapEnabled: js.UndefOr[Boolean] = js.undefined
   }
-  object PagingBase {
+  object Properties {
     
-    inline def apply(): PagingBase = {
+    inline def apply[TRowData, TKey](): Properties[TRowData, TKey] = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[PagingBase]
+      __obj.asInstanceOf[Properties[TRowData, TKey]]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: PagingBase] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: Properties[?, ?], TRowData, TKey] (val x: Self & (Properties[TRowData, TKey])) extends AnyVal {
       
-      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setAccessKey(value: String): Self = StObject.set(x, "accessKey", value.asInstanceOf[js.Any])
       
-      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      inline def setAccessKeyUndefined: Self = StObject.set(x, "accessKey", js.undefined)
       
-      inline def setPageIndex(value: Double): Self = StObject.set(x, "pageIndex", value.asInstanceOf[js.Any])
+      inline def setActiveStateEnabled(value: Boolean): Self = StObject.set(x, "activeStateEnabled", value.asInstanceOf[js.Any])
       
-      inline def setPageIndexUndefined: Self = StObject.set(x, "pageIndex", js.undefined)
+      inline def setActiveStateEnabledUndefined: Self = StObject.set(x, "activeStateEnabled", js.undefined)
       
-      inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+      inline def setAllowColumnReordering(value: Boolean): Self = StObject.set(x, "allowColumnReordering", value.asInstanceOf[js.Any])
       
-      inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
+      inline def setAllowColumnReorderingUndefined: Self = StObject.set(x, "allowColumnReordering", js.undefined)
+      
+      inline def setAllowColumnResizing(value: Boolean): Self = StObject.set(x, "allowColumnResizing", value.asInstanceOf[js.Any])
+      
+      inline def setAllowColumnResizingUndefined: Self = StObject.set(x, "allowColumnResizing", js.undefined)
+      
+      inline def setAutoNavigateToFocusedRow(value: Boolean): Self = StObject.set(x, "autoNavigateToFocusedRow", value.asInstanceOf[js.Any])
+      
+      inline def setAutoNavigateToFocusedRowUndefined: Self = StObject.set(x, "autoNavigateToFocusedRow", js.undefined)
+      
+      inline def setBindingOptions(value: StringDictionary[Any]): Self = StObject.set(x, "bindingOptions", value.asInstanceOf[js.Any])
+      
+      inline def setBindingOptionsUndefined: Self = StObject.set(x, "bindingOptions", js.undefined)
+      
+      inline def setCacheEnabled(value: Boolean): Self = StObject.set(x, "cacheEnabled", value.asInstanceOf[js.Any])
+      
+      inline def setCacheEnabledUndefined: Self = StObject.set(x, "cacheEnabled", js.undefined)
+      
+      inline def setCellHintEnabled(value: Boolean): Self = StObject.set(x, "cellHintEnabled", value.asInstanceOf[js.Any])
+      
+      inline def setCellHintEnabledUndefined: Self = StObject.set(x, "cellHintEnabled", js.undefined)
+      
+      inline def setColumnAutoWidth(value: Boolean): Self = StObject.set(x, "columnAutoWidth", value.asInstanceOf[js.Any])
+      
+      inline def setColumnAutoWidthUndefined: Self = StObject.set(x, "columnAutoWidth", js.undefined)
+      
+      inline def setColumnChooser(value: typings.devextreme.mod.DevExpress.common.grids.ColumnChooser): Self = StObject.set(x, "columnChooser", value.asInstanceOf[js.Any])
+      
+      inline def setColumnChooserUndefined: Self = StObject.set(x, "columnChooser", js.undefined)
+      
+      inline def setColumnFixing(value: typings.devextreme.mod.DevExpress.common.grids.ColumnFixing): Self = StObject.set(x, "columnFixing", value.asInstanceOf[js.Any])
+      
+      inline def setColumnFixingUndefined: Self = StObject.set(x, "columnFixing", js.undefined)
+      
+      inline def setColumnHidingEnabled(value: Boolean): Self = StObject.set(x, "columnHidingEnabled", value.asInstanceOf[js.Any])
+      
+      inline def setColumnHidingEnabledUndefined: Self = StObject.set(x, "columnHidingEnabled", js.undefined)
+      
+      inline def setColumnMinWidth(value: Double): Self = StObject.set(x, "columnMinWidth", value.asInstanceOf[js.Any])
+      
+      inline def setColumnMinWidthUndefined: Self = StObject.set(x, "columnMinWidth", js.undefined)
+      
+      inline def setColumnResizingMode(value: ColumnResizeMode): Self = StObject.set(x, "columnResizingMode", value.asInstanceOf[js.Any])
+      
+      inline def setColumnResizingModeUndefined: Self = StObject.set(x, "columnResizingMode", js.undefined)
+      
+      inline def setColumnWidth(value: Double | Mode): Self = StObject.set(x, "columnWidth", value.asInstanceOf[js.Any])
+      
+      inline def setColumnWidthUndefined: Self = StObject.set(x, "columnWidth", js.undefined)
+      
+      inline def setColumns(value: js.Array[typings.devextreme.mod.DevExpress.common.grids.ColumnBase[TRowData] | String]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+      
+      inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
+      
+      inline def setColumnsVarargs(value: (typings.devextreme.mod.DevExpress.common.grids.ColumnBase[TRowData] | String)*): Self = StObject.set(x, "columns", js.Array(value*))
+      
+      inline def setCustomizeColumns(value: /* columns */ js.Array[Column[TRowData, TKey]] => Unit): Self = StObject.set(x, "customizeColumns", js.Any.fromFunction1(value))
+      
+      inline def setCustomizeColumnsUndefined: Self = StObject.set(x, "customizeColumns", js.undefined)
+      
+      inline def setDataRowTemplate(
+        value: template | (js.Function2[
+              /* rowElement */ DxElement_[HTMLElement], 
+              /* rowInfo */ DataRowTemplateData[TRowData, TKey], 
+              Any
+            ])
+      ): Self = StObject.set(x, "dataRowTemplate", value.asInstanceOf[js.Any])
+      
+      inline def setDataRowTemplateFunction2(
+        value: (/* rowElement */ DxElement_[HTMLElement], /* rowInfo */ DataRowTemplateData[TRowData, TKey]) => Any
+      ): Self = StObject.set(x, "dataRowTemplate", js.Any.fromFunction2(value))
+      
+      inline def setDataRowTemplateUndefined: Self = StObject.set(x, "dataRowTemplate", js.undefined)
+      
+      inline def setDataSource(value: DataSourceLike[TRowData, TKey]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+      
+      inline def setDataSourceNull: Self = StObject.set(x, "dataSource", null)
+      
+      inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
+      
+      inline def setDataSourceVarargs(value: TRowData*): Self = StObject.set(x, "dataSource", js.Array(value*))
+      
+      inline def setDateSerializationFormat(value: String): Self = StObject.set(x, "dateSerializationFormat", value.asInstanceOf[js.Any])
+      
+      inline def setDateSerializationFormatUndefined: Self = StObject.set(x, "dateSerializationFormat", js.undefined)
+      
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      
+      inline def setEditing(value: typings.devextreme.mod.DevExpress.common.grids.EditingBase[TRowData, TKey]): Self = StObject.set(x, "editing", value.asInstanceOf[js.Any])
+      
+      inline def setEditingUndefined: Self = StObject.set(x, "editing", js.undefined)
+      
+      inline def setElementAttr(value: StringDictionary[Any]): Self = StObject.set(x, "elementAttr", value.asInstanceOf[js.Any])
+      
+      inline def setElementAttrUndefined: Self = StObject.set(x, "elementAttr", js.undefined)
+      
+      inline def setErrorRowEnabled(value: Boolean): Self = StObject.set(x, "errorRowEnabled", value.asInstanceOf[js.Any])
+      
+      inline def setErrorRowEnabledUndefined: Self = StObject.set(x, "errorRowEnabled", js.undefined)
+      
+      inline def setExport(value: Export): Self = StObject.set(x, "export", value.asInstanceOf[js.Any])
+      
+      inline def setExportUndefined: Self = StObject.set(x, "export", js.undefined)
+      
+      inline def setFilterBuilder(value: typings.devextreme.mod.DevExpress.ui.dxFilterBuilder.Properties): Self = StObject.set(x, "filterBuilder", value.asInstanceOf[js.Any])
+      
+      inline def setFilterBuilderPopup(value: typings.devextreme.mod.DevExpress.ui.dxPopup.Properties): Self = StObject.set(x, "filterBuilderPopup", value.asInstanceOf[js.Any])
+      
+      inline def setFilterBuilderPopupUndefined: Self = StObject.set(x, "filterBuilderPopup", js.undefined)
+      
+      inline def setFilterBuilderUndefined: Self = StObject.set(x, "filterBuilder", js.undefined)
+      
+      inline def setFilterPanel(
+        value: typings.devextreme.mod.DevExpress.common.grids.FilterPanel[dxDataGrid[TRowData, TKey], TRowData, TKey]
+      ): Self = StObject.set(x, "filterPanel", value.asInstanceOf[js.Any])
+      
+      inline def setFilterPanelUndefined: Self = StObject.set(x, "filterPanel", js.undefined)
+      
+      inline def setFilterRow(value: typings.devextreme.mod.DevExpress.common.grids.FilterRow): Self = StObject.set(x, "filterRow", value.asInstanceOf[js.Any])
+      
+      inline def setFilterRowUndefined: Self = StObject.set(x, "filterRow", js.undefined)
+      
+      inline def setFilterSyncEnabled(value: Boolean | Mode): Self = StObject.set(x, "filterSyncEnabled", value.asInstanceOf[js.Any])
+      
+      inline def setFilterSyncEnabledUndefined: Self = StObject.set(x, "filterSyncEnabled", js.undefined)
+      
+      inline def setFilterValue(value: String | js.Array[Any] | js.Function): Self = StObject.set(x, "filterValue", value.asInstanceOf[js.Any])
+      
+      inline def setFilterValueUndefined: Self = StObject.set(x, "filterValue", js.undefined)
+      
+      inline def setFilterValueVarargs(value: Any*): Self = StObject.set(x, "filterValue", js.Array(value*))
+      
+      inline def setFocusedColumnIndex(value: Double): Self = StObject.set(x, "focusedColumnIndex", value.asInstanceOf[js.Any])
+      
+      inline def setFocusedColumnIndexUndefined: Self = StObject.set(x, "focusedColumnIndex", js.undefined)
+      
+      inline def setFocusedRowEnabled(value: Boolean): Self = StObject.set(x, "focusedRowEnabled", value.asInstanceOf[js.Any])
+      
+      inline def setFocusedRowEnabledUndefined: Self = StObject.set(x, "focusedRowEnabled", js.undefined)
+      
+      inline def setFocusedRowIndex(value: Double): Self = StObject.set(x, "focusedRowIndex", value.asInstanceOf[js.Any])
+      
+      inline def setFocusedRowIndexUndefined: Self = StObject.set(x, "focusedRowIndex", js.undefined)
+      
+      inline def setFocusedRowKey(value: TKey): Self = StObject.set(x, "focusedRowKey", value.asInstanceOf[js.Any])
+      
+      inline def setFocusedRowKeyUndefined: Self = StObject.set(x, "focusedRowKey", js.undefined)
+      
+      inline def setGroupPanel(value: GroupPanel): Self = StObject.set(x, "groupPanel", value.asInstanceOf[js.Any])
+      
+      inline def setGroupPanelUndefined: Self = StObject.set(x, "groupPanel", js.undefined)
+      
+      inline def setGrouping(value: Grouping): Self = StObject.set(x, "grouping", value.asInstanceOf[js.Any])
+      
+      inline def setGroupingUndefined: Self = StObject.set(x, "grouping", js.undefined)
+      
+      inline def setHeaderFilter(value: typings.devextreme.mod.DevExpress.common.grids.HeaderFilter): Self = StObject.set(x, "headerFilter", value.asInstanceOf[js.Any])
+      
+      inline def setHeaderFilterUndefined: Self = StObject.set(x, "headerFilter", js.undefined)
+      
+      inline def setHeight(value: Double | String | (js.Function0[Double | String])): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      
+      inline def setHeightFunction0(value: () => Double | String): Self = StObject.set(x, "height", js.Any.fromFunction0(value))
+      
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      
+      inline def setHighlightChanges(value: Boolean): Self = StObject.set(x, "highlightChanges", value.asInstanceOf[js.Any])
+      
+      inline def setHighlightChangesUndefined: Self = StObject.set(x, "highlightChanges", js.undefined)
+      
+      inline def setHint(value: String): Self = StObject.set(x, "hint", value.asInstanceOf[js.Any])
+      
+      inline def setHintUndefined: Self = StObject.set(x, "hint", js.undefined)
+      
+      inline def setHoverStateEnabled(value: Boolean): Self = StObject.set(x, "hoverStateEnabled", value.asInstanceOf[js.Any])
+      
+      inline def setHoverStateEnabledUndefined: Self = StObject.set(x, "hoverStateEnabled", js.undefined)
+      
+      inline def setKeyExpr(value: String | js.Array[String]): Self = StObject.set(x, "keyExpr", value.asInstanceOf[js.Any])
+      
+      inline def setKeyExprUndefined: Self = StObject.set(x, "keyExpr", js.undefined)
+      
+      inline def setKeyExprVarargs(value: String*): Self = StObject.set(x, "keyExpr", js.Array(value*))
+      
+      inline def setKeyboardNavigation(value: typings.devextreme.mod.DevExpress.common.grids.KeyboardNavigation): Self = StObject.set(x, "keyboardNavigation", value.asInstanceOf[js.Any])
+      
+      inline def setKeyboardNavigationUndefined: Self = StObject.set(x, "keyboardNavigation", js.undefined)
+      
+      inline def setLoadPanel(value: typings.devextreme.mod.DevExpress.common.grids.LoadPanel): Self = StObject.set(x, "loadPanel", value.asInstanceOf[js.Any])
+      
+      inline def setLoadPanelUndefined: Self = StObject.set(x, "loadPanel", js.undefined)
+      
+      inline def setMasterDetail(value: MasterDetail[TRowData, TKey]): Self = StObject.set(x, "masterDetail", value.asInstanceOf[js.Any])
+      
+      inline def setMasterDetailUndefined: Self = StObject.set(x, "masterDetail", js.undefined)
+      
+      inline def setNoDataText(value: String): Self = StObject.set(x, "noDataText", value.asInstanceOf[js.Any])
+      
+      inline def setNoDataTextUndefined: Self = StObject.set(x, "noDataText", js.undefined)
+      
+      inline def setOnAdaptiveDetailRowPreparing(
+        value: /* e */ (EventInfo[dxDataGrid[TRowData, TKey]]) & typings.devextreme.mod.DevExpress.common.grids.AdaptiveDetailRowPreparingInfo => Unit
+      ): Self = StObject.set(x, "onAdaptiveDetailRowPreparing", js.Any.fromFunction1(value))
+      
+      inline def setOnAdaptiveDetailRowPreparingUndefined: Self = StObject.set(x, "onAdaptiveDetailRowPreparing", js.undefined)
+      
+      inline def setOnCellClick(value: /* e */ CellClickEvent[TRowData, TKey] => Unit): Self = StObject.set(x, "onCellClick", js.Any.fromFunction1(value))
+      
+      inline def setOnCellClickUndefined: Self = StObject.set(x, "onCellClick", js.undefined)
+      
+      inline def setOnCellDblClick(value: /* e */ CellDblClickEvent[TRowData, TKey] => Unit): Self = StObject.set(x, "onCellDblClick", js.Any.fromFunction1(value))
+      
+      inline def setOnCellDblClickUndefined: Self = StObject.set(x, "onCellDblClick", js.undefined)
+      
+      inline def setOnCellHoverChanged(value: /* e */ CellHoverChangedEvent[TRowData, TKey] => Unit): Self = StObject.set(x, "onCellHoverChanged", js.Any.fromFunction1(value))
+      
+      inline def setOnCellHoverChangedUndefined: Self = StObject.set(x, "onCellHoverChanged", js.undefined)
+      
+      inline def setOnCellPrepared(value: /* e */ CellPreparedEvent[TRowData, TKey] => Unit): Self = StObject.set(x, "onCellPrepared", js.Any.fromFunction1(value))
+      
+      inline def setOnCellPreparedUndefined: Self = StObject.set(x, "onCellPrepared", js.undefined)
+      
+      inline def setOnContentReady(value: /* e */ EventInfo[dxDataGrid[TRowData, TKey]] => Unit): Self = StObject.set(x, "onContentReady", js.Any.fromFunction1(value))
+      
+      inline def setOnContentReadyUndefined: Self = StObject.set(x, "onContentReady", js.undefined)
+      
+      inline def setOnContextMenuPreparing(value: /* e */ ContextMenuPreparingEvent[TRowData, TKey] => Unit): Self = StObject.set(x, "onContextMenuPreparing", js.Any.fromFunction1(value))
+      
+      inline def setOnContextMenuPreparingUndefined: Self = StObject.set(x, "onContextMenuPreparing", js.undefined)
+      
+      inline def setOnDataErrorOccurred(
+        value: /* e */ (EventInfo[dxDataGrid[TRowData, TKey]]) & typings.devextreme.mod.DevExpress.common.grids.DataErrorOccurredInfo => Unit
+      ): Self = StObject.set(x, "onDataErrorOccurred", js.Any.fromFunction1(value))
+      
+      inline def setOnDataErrorOccurredUndefined: Self = StObject.set(x, "onDataErrorOccurred", js.undefined)
+      
+      inline def setOnDisposing(value: /* e */ EventInfo[dxDataGrid[TRowData, TKey]] => Unit): Self = StObject.set(x, "onDisposing", js.Any.fromFunction1(value))
+      
+      inline def setOnDisposingUndefined: Self = StObject.set(x, "onDisposing", js.undefined)
+      
+      inline def setOnEditCanceled(
+        value: /* e */ (EventInfo[dxDataGrid[TRowData, TKey]]) & (typings.devextreme.mod.DevExpress.common.grids.DataChangeInfo[TRowData, TKey]) => Unit
+      ): Self = StObject.set(x, "onEditCanceled", js.Any.fromFunction1(value))
+      
+      inline def setOnEditCanceledUndefined: Self = StObject.set(x, "onEditCanceled", js.undefined)
+      
+      inline def setOnEditCanceling(
+        value: /* e */ Cancelable & (EventInfo[dxDataGrid[TRowData, TKey]]) & (typings.devextreme.mod.DevExpress.common.grids.DataChangeInfo[TRowData, TKey]) => Unit
+      ): Self = StObject.set(x, "onEditCanceling", js.Any.fromFunction1(value))
+      
+      inline def setOnEditCancelingUndefined: Self = StObject.set(x, "onEditCanceling", js.undefined)
+      
+      inline def setOnEditingStart(value: /* e */ EditingStartEvent[TRowData, TKey] => Unit): Self = StObject.set(x, "onEditingStart", js.Any.fromFunction1(value))
+      
+      inline def setOnEditingStartUndefined: Self = StObject.set(x, "onEditingStart", js.undefined)
+      
+      inline def setOnEditorPrepared(value: /* options */ EditorPreparedEvent[TRowData, TKey] => Unit): Self = StObject.set(x, "onEditorPrepared", js.Any.fromFunction1(value))
+      
+      inline def setOnEditorPreparedUndefined: Self = StObject.set(x, "onEditorPrepared", js.undefined)
+      
+      inline def setOnEditorPreparing(value: /* e */ EditorPreparingEvent[TRowData, TKey] => Unit): Self = StObject.set(x, "onEditorPreparing", js.Any.fromFunction1(value))
+      
+      inline def setOnEditorPreparingUndefined: Self = StObject.set(x, "onEditorPreparing", js.undefined)
+      
+      inline def setOnExporting(value: /* e */ ExportingEvent[TRowData, TKey] => Unit): Self = StObject.set(x, "onExporting", js.Any.fromFunction1(value))
+      
+      inline def setOnExportingUndefined: Self = StObject.set(x, "onExporting", js.undefined)
+      
+      inline def setOnFocusedCellChanged(value: /* e */ FocusedCellChangedEvent[TRowData, TKey] => Unit): Self = StObject.set(x, "onFocusedCellChanged", js.Any.fromFunction1(value))
+      
+      inline def setOnFocusedCellChangedUndefined: Self = StObject.set(x, "onFocusedCellChanged", js.undefined)
+      
+      inline def setOnFocusedCellChanging(value: /* e */ FocusedCellChangingEvent[TRowData, TKey] => Unit): Self = StObject.set(x, "onFocusedCellChanging", js.Any.fromFunction1(value))
+      
+      inline def setOnFocusedCellChangingUndefined: Self = StObject.set(x, "onFocusedCellChanging", js.undefined)
+      
+      inline def setOnFocusedRowChanged(value: /* e */ FocusedRowChangedEvent[TRowData, TKey] => Unit): Self = StObject.set(x, "onFocusedRowChanged", js.Any.fromFunction1(value))
+      
+      inline def setOnFocusedRowChangedUndefined: Self = StObject.set(x, "onFocusedRowChanged", js.undefined)
+      
+      inline def setOnFocusedRowChanging(value: /* e */ FocusedRowChangingEvent[TRowData, TKey] => Unit): Self = StObject.set(x, "onFocusedRowChanging", js.Any.fromFunction1(value))
+      
+      inline def setOnFocusedRowChangingUndefined: Self = StObject.set(x, "onFocusedRowChanging", js.undefined)
+      
+      inline def setOnInitNewRow(
+        value: /* e */ (EventInfo[dxDataGrid[TRowData, TKey]]) & typings.devextreme.mod.DevExpress.common.grids.NewRowInfo[TRowData] => Unit
+      ): Self = StObject.set(x, "onInitNewRow", js.Any.fromFunction1(value))
+      
+      inline def setOnInitNewRowUndefined: Self = StObject.set(x, "onInitNewRow", js.undefined)
+      
+      inline def setOnInitialized(value: /* e */ InitializedEventInfo[dxDataGrid[TRowData, TKey]] => Unit): Self = StObject.set(x, "onInitialized", js.Any.fromFunction1(value))
+      
+      inline def setOnInitializedUndefined: Self = StObject.set(x, "onInitialized", js.undefined)
+      
+      inline def setOnKeyDown(
+        value: /* e */ (NativeEventInfo[dxDataGrid[TRowData, TKey], KeyboardEvent]) & typings.devextreme.mod.DevExpress.common.grids.KeyDownInfo => Unit
+      ): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
+      
+      inline def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
+      
+      inline def setOnOptionChanged(value: /* e */ OptionChangedEventInfo[dxDataGrid[TRowData, TKey]] => Unit): Self = StObject.set(x, "onOptionChanged", js.Any.fromFunction1(value))
+      
+      inline def setOnOptionChangedUndefined: Self = StObject.set(x, "onOptionChanged", js.undefined)
+      
+      inline def setOnRowClick(value: /* e */ RowClickEvent[TRowData, TKey] => Unit): Self = StObject.set(x, "onRowClick", js.Any.fromFunction1(value))
+      
+      inline def setOnRowClickUndefined: Self = StObject.set(x, "onRowClick", js.undefined)
+      
+      inline def setOnRowCollapsed(
+        value: /* e */ (EventInfo[dxDataGrid[TRowData, TKey]]) & typings.devextreme.mod.DevExpress.common.grids.RowKeyInfo[TKey] => Unit
+      ): Self = StObject.set(x, "onRowCollapsed", js.Any.fromFunction1(value))
+      
+      inline def setOnRowCollapsedUndefined: Self = StObject.set(x, "onRowCollapsed", js.undefined)
+      
+      inline def setOnRowCollapsing(
+        value: /* e */ Cancelable & (EventInfo[dxDataGrid[TRowData, TKey]]) & typings.devextreme.mod.DevExpress.common.grids.RowKeyInfo[TKey] => Unit
+      ): Self = StObject.set(x, "onRowCollapsing", js.Any.fromFunction1(value))
+      
+      inline def setOnRowCollapsingUndefined: Self = StObject.set(x, "onRowCollapsing", js.undefined)
+      
+      inline def setOnRowDblClick(value: /* e */ RowDblClickEvent[TRowData, TKey] => Unit): Self = StObject.set(x, "onRowDblClick", js.Any.fromFunction1(value))
+      
+      inline def setOnRowDblClickUndefined: Self = StObject.set(x, "onRowDblClick", js.undefined)
+      
+      inline def setOnRowExpanded(
+        value: /* e */ (EventInfo[dxDataGrid[TRowData, TKey]]) & typings.devextreme.mod.DevExpress.common.grids.RowKeyInfo[TKey] => Unit
+      ): Self = StObject.set(x, "onRowExpanded", js.Any.fromFunction1(value))
+      
+      inline def setOnRowExpandedUndefined: Self = StObject.set(x, "onRowExpanded", js.undefined)
+      
+      inline def setOnRowExpanding(
+        value: /* e */ Cancelable & (EventInfo[dxDataGrid[TRowData, TKey]]) & typings.devextreme.mod.DevExpress.common.grids.RowKeyInfo[TKey] => Unit
+      ): Self = StObject.set(x, "onRowExpanding", js.Any.fromFunction1(value))
+      
+      inline def setOnRowExpandingUndefined: Self = StObject.set(x, "onRowExpanding", js.undefined)
+      
+      inline def setOnRowInserted(
+        value: /* e */ (EventInfo[dxDataGrid[TRowData, TKey]]) & (typings.devextreme.mod.DevExpress.common.grids.RowInsertedInfo[TRowData, TKey]) => Unit
+      ): Self = StObject.set(x, "onRowInserted", js.Any.fromFunction1(value))
+      
+      inline def setOnRowInsertedUndefined: Self = StObject.set(x, "onRowInserted", js.undefined)
+      
+      inline def setOnRowInserting(
+        value: /* e */ (EventInfo[dxDataGrid[TRowData, TKey]]) & typings.devextreme.mod.DevExpress.common.grids.RowInsertingInfo[TRowData] => Unit
+      ): Self = StObject.set(x, "onRowInserting", js.Any.fromFunction1(value))
+      
+      inline def setOnRowInsertingUndefined: Self = StObject.set(x, "onRowInserting", js.undefined)
+      
+      inline def setOnRowPrepared(value: /* e */ RowPreparedEvent[TRowData, TKey] => Unit): Self = StObject.set(x, "onRowPrepared", js.Any.fromFunction1(value))
+      
+      inline def setOnRowPreparedUndefined: Self = StObject.set(x, "onRowPrepared", js.undefined)
+      
+      inline def setOnRowRemoved(
+        value: /* e */ (EventInfo[dxDataGrid[TRowData, TKey]]) & (typings.devextreme.mod.DevExpress.common.grids.RowRemovedInfo[TRowData, TKey]) => Unit
+      ): Self = StObject.set(x, "onRowRemoved", js.Any.fromFunction1(value))
+      
+      inline def setOnRowRemovedUndefined: Self = StObject.set(x, "onRowRemoved", js.undefined)
+      
+      inline def setOnRowRemoving(
+        value: /* e */ (EventInfo[dxDataGrid[TRowData, TKey]]) & (typings.devextreme.mod.DevExpress.common.grids.RowRemovingInfo[TRowData, TKey]) => Unit
+      ): Self = StObject.set(x, "onRowRemoving", js.Any.fromFunction1(value))
+      
+      inline def setOnRowRemovingUndefined: Self = StObject.set(x, "onRowRemoving", js.undefined)
+      
+      inline def setOnRowUpdated(
+        value: /* e */ (EventInfo[dxDataGrid[TRowData, TKey]]) & (typings.devextreme.mod.DevExpress.common.grids.RowUpdatedInfo[TRowData, TKey]) => Unit
+      ): Self = StObject.set(x, "onRowUpdated", js.Any.fromFunction1(value))
+      
+      inline def setOnRowUpdatedUndefined: Self = StObject.set(x, "onRowUpdated", js.undefined)
+      
+      inline def setOnRowUpdating(
+        value: /* e */ (EventInfo[dxDataGrid[TRowData, TKey]]) & (typings.devextreme.mod.DevExpress.common.grids.RowUpdatingInfo[TRowData, TKey]) => Unit
+      ): Self = StObject.set(x, "onRowUpdating", js.Any.fromFunction1(value))
+      
+      inline def setOnRowUpdatingUndefined: Self = StObject.set(x, "onRowUpdating", js.undefined)
+      
+      inline def setOnRowValidating(
+        value: /* e */ (EventInfo[dxDataGrid[TRowData, TKey]]) & (typings.devextreme.mod.DevExpress.common.grids.RowValidatingInfo[TRowData, TKey]) => Unit
+      ): Self = StObject.set(x, "onRowValidating", js.Any.fromFunction1(value))
+      
+      inline def setOnRowValidatingUndefined: Self = StObject.set(x, "onRowValidating", js.undefined)
+      
+      inline def setOnSaved(
+        value: /* e */ (EventInfo[dxDataGrid[TRowData, TKey]]) & (typings.devextreme.mod.DevExpress.common.grids.DataChangeInfo[TRowData, TKey]) => Unit
+      ): Self = StObject.set(x, "onSaved", js.Any.fromFunction1(value))
+      
+      inline def setOnSavedUndefined: Self = StObject.set(x, "onSaved", js.undefined)
+      
+      inline def setOnSaving(
+        value: /* e */ (EventInfo[dxDataGrid[TRowData, TKey]]) & (typings.devextreme.mod.DevExpress.common.grids.SavingInfo[TRowData, TKey]) => Unit
+      ): Self = StObject.set(x, "onSaving", js.Any.fromFunction1(value))
+      
+      inline def setOnSavingUndefined: Self = StObject.set(x, "onSaving", js.undefined)
+      
+      inline def setOnSelectionChanged(
+        value: /* e */ (EventInfo[dxDataGrid[TRowData, TKey]]) & (typings.devextreme.mod.DevExpress.common.grids.SelectionChangedInfo[TRowData, TKey]) => Unit
+      ): Self = StObject.set(x, "onSelectionChanged", js.Any.fromFunction1(value))
+      
+      inline def setOnSelectionChangedUndefined: Self = StObject.set(x, "onSelectionChanged", js.undefined)
+      
+      inline def setOnToolbarPreparing(
+        value: /* e */ (EventInfo[dxDataGrid[TRowData, TKey]]) & typings.devextreme.mod.DevExpress.common.grids.ToolbarPreparingInfo => Unit
+      ): Self = StObject.set(x, "onToolbarPreparing", js.Any.fromFunction1(value))
+      
+      inline def setOnToolbarPreparingUndefined: Self = StObject.set(x, "onToolbarPreparing", js.undefined)
+      
+      inline def setPager(value: typings.devextreme.mod.DevExpress.common.grids.Pager): Self = StObject.set(x, "pager", value.asInstanceOf[js.Any])
+      
+      inline def setPagerUndefined: Self = StObject.set(x, "pager", js.undefined)
+      
+      inline def setPaging(value: typings.devextreme.mod.DevExpress.common.grids.PagingBase): Self = StObject.set(x, "paging", value.asInstanceOf[js.Any])
+      
+      inline def setPagingUndefined: Self = StObject.set(x, "paging", js.undefined)
+      
+      inline def setRemoteOperations(value: Boolean | Filtering | Mode): Self = StObject.set(x, "remoteOperations", value.asInstanceOf[js.Any])
+      
+      inline def setRemoteOperationsUndefined: Self = StObject.set(x, "remoteOperations", js.undefined)
+      
+      inline def setRenderAsync(value: Boolean): Self = StObject.set(x, "renderAsync", value.asInstanceOf[js.Any])
+      
+      inline def setRenderAsyncUndefined: Self = StObject.set(x, "renderAsync", js.undefined)
+      
+      inline def setRepaintChangesOnly(value: Boolean): Self = StObject.set(x, "repaintChangesOnly", value.asInstanceOf[js.Any])
+      
+      inline def setRepaintChangesOnlyUndefined: Self = StObject.set(x, "repaintChangesOnly", js.undefined)
+      
+      inline def setRowAlternationEnabled(value: Boolean): Self = StObject.set(x, "rowAlternationEnabled", value.asInstanceOf[js.Any])
+      
+      inline def setRowAlternationEnabledUndefined: Self = StObject.set(x, "rowAlternationEnabled", js.undefined)
+      
+      inline def setRowDragging(
+        value: typings.devextreme.mod.DevExpress.common.grids.RowDragging[dxDataGrid[TRowData, TKey], TRowData, TKey]
+      ): Self = StObject.set(x, "rowDragging", value.asInstanceOf[js.Any])
+      
+      inline def setRowDraggingUndefined: Self = StObject.set(x, "rowDragging", js.undefined)
+      
+      inline def setRowTemplate(
+        value: template | (js.Function2[
+              /* rowElement */ DxElement_[HTMLElement], 
+              /* rowInfo */ RowTemplateData[TRowData, TKey], 
+              Any
+            ])
+      ): Self = StObject.set(x, "rowTemplate", value.asInstanceOf[js.Any])
+      
+      inline def setRowTemplateFunction2(
+        value: (/* rowElement */ DxElement_[HTMLElement], /* rowInfo */ RowTemplateData[TRowData, TKey]) => Any
+      ): Self = StObject.set(x, "rowTemplate", js.Any.fromFunction2(value))
+      
+      inline def setRowTemplateUndefined: Self = StObject.set(x, "rowTemplate", js.undefined)
+      
+      inline def setRtlEnabled(value: Boolean): Self = StObject.set(x, "rtlEnabled", value.asInstanceOf[js.Any])
+      
+      inline def setRtlEnabledUndefined: Self = StObject.set(x, "rtlEnabled", js.undefined)
+      
+      inline def setScrolling(value: typings.devextreme.mod.DevExpress.common.grids.ScrollingBase): Self = StObject.set(x, "scrolling", value.asInstanceOf[js.Any])
+      
+      inline def setScrollingUndefined: Self = StObject.set(x, "scrolling", js.undefined)
+      
+      inline def setSearchPanel(value: typings.devextreme.mod.DevExpress.common.grids.SearchPanel): Self = StObject.set(x, "searchPanel", value.asInstanceOf[js.Any])
+      
+      inline def setSearchPanelUndefined: Self = StObject.set(x, "searchPanel", js.undefined)
+      
+      inline def setSelectedRowKeys(value: js.Array[TKey]): Self = StObject.set(x, "selectedRowKeys", value.asInstanceOf[js.Any])
+      
+      inline def setSelectedRowKeysUndefined: Self = StObject.set(x, "selectedRowKeys", js.undefined)
+      
+      inline def setSelectedRowKeysVarargs(value: TKey*): Self = StObject.set(x, "selectedRowKeys", js.Array(value*))
+      
+      inline def setSelection(value: typings.devextreme.mod.DevExpress.common.grids.SelectionBase): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
+      
+      inline def setSelectionFilter(value: String | js.Array[Any] | js.Function): Self = StObject.set(x, "selectionFilter", value.asInstanceOf[js.Any])
+      
+      inline def setSelectionFilterUndefined: Self = StObject.set(x, "selectionFilter", js.undefined)
+      
+      inline def setSelectionFilterVarargs(value: Any*): Self = StObject.set(x, "selectionFilter", js.Array(value*))
+      
+      inline def setSelectionUndefined: Self = StObject.set(x, "selection", js.undefined)
+      
+      inline def setShowBorders(value: Boolean): Self = StObject.set(x, "showBorders", value.asInstanceOf[js.Any])
+      
+      inline def setShowBordersUndefined: Self = StObject.set(x, "showBorders", js.undefined)
+      
+      inline def setShowColumnHeaders(value: Boolean): Self = StObject.set(x, "showColumnHeaders", value.asInstanceOf[js.Any])
+      
+      inline def setShowColumnHeadersUndefined: Self = StObject.set(x, "showColumnHeaders", js.undefined)
+      
+      inline def setShowColumnLines(value: Boolean): Self = StObject.set(x, "showColumnLines", value.asInstanceOf[js.Any])
+      
+      inline def setShowColumnLinesUndefined: Self = StObject.set(x, "showColumnLines", js.undefined)
+      
+      inline def setShowRowLines(value: Boolean): Self = StObject.set(x, "showRowLines", value.asInstanceOf[js.Any])
+      
+      inline def setShowRowLinesUndefined: Self = StObject.set(x, "showRowLines", js.undefined)
+      
+      inline def setSortByGroupSummaryInfo(value: js.Array[dxDataGridSortByGroupSummaryInfoItem]): Self = StObject.set(x, "sortByGroupSummaryInfo", value.asInstanceOf[js.Any])
+      
+      inline def setSortByGroupSummaryInfoUndefined: Self = StObject.set(x, "sortByGroupSummaryInfo", js.undefined)
+      
+      inline def setSortByGroupSummaryInfoVarargs(value: dxDataGridSortByGroupSummaryInfoItem*): Self = StObject.set(x, "sortByGroupSummaryInfo", js.Array(value*))
+      
+      inline def setSorting(value: typings.devextreme.mod.DevExpress.common.grids.Sorting): Self = StObject.set(x, "sorting", value.asInstanceOf[js.Any])
+      
+      inline def setSortingUndefined: Self = StObject.set(x, "sorting", js.undefined)
+      
+      inline def setStateStoring(value: typings.devextreme.mod.DevExpress.common.grids.StateStoring): Self = StObject.set(x, "stateStoring", value.asInstanceOf[js.Any])
+      
+      inline def setStateStoringUndefined: Self = StObject.set(x, "stateStoring", js.undefined)
+      
+      inline def setSummary(value: Summary[TRowData, TKey]): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
+      
+      inline def setSummaryUndefined: Self = StObject.set(x, "summary", js.undefined)
+      
+      inline def setSyncLookupFilterValues(value: Boolean): Self = StObject.set(x, "syncLookupFilterValues", value.asInstanceOf[js.Any])
+      
+      inline def setSyncLookupFilterValuesUndefined: Self = StObject.set(x, "syncLookupFilterValues", js.undefined)
+      
+      inline def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
+      
+      inline def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
+      
+      inline def setToolbar(value: Toolbar): Self = StObject.set(x, "toolbar", value.asInstanceOf[js.Any])
+      
+      inline def setToolbarUndefined: Self = StObject.set(x, "toolbar", js.undefined)
+      
+      inline def setTwoWayBindingEnabled(value: Boolean): Self = StObject.set(x, "twoWayBindingEnabled", value.asInstanceOf[js.Any])
+      
+      inline def setTwoWayBindingEnabledUndefined: Self = StObject.set(x, "twoWayBindingEnabled", js.undefined)
+      
+      inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+      
+      inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+      
+      inline def setWidth(value: Double | String | (js.Function0[Double | String])): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      
+      inline def setWidthFunction0(value: () => Double | String): Self = StObject.set(x, "width", js.Any.fromFunction0(value))
+      
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      
+      inline def setWordWrapEnabled(value: Boolean): Self = StObject.set(x, "wordWrapEnabled", value.asInstanceOf[js.Any])
+      
+      inline def setWordWrapEnabledUndefined: Self = StObject.set(x, "wordWrapEnabled", js.undefined)
     }
   }
-  
-  type Properties[TRowData, TKey] = dxDataGridOptions[TRowData, TKey]
   
   trait Row[TRowData, TKey] extends StObject {
     
@@ -4253,7 +4017,7 @@ object dxDataGrid {
   trait RowCollapsedEvent[TRowData, TKey]
     extends StObject
        with EventInfo[dxDataGrid[TRowData, TKey]]
-       with RowKeyInfo[TKey]
+       with typings.devextreme.mod.DevExpress.common.grids.RowKeyInfo[TKey]
   object RowCollapsedEvent {
     
     inline def apply[TRowData, TKey](component: dxDataGrid[TRowData, TKey], element: DxElement_[HTMLElement], key: TKey): RowCollapsedEvent[TRowData, TKey] = {
@@ -4266,7 +4030,7 @@ object dxDataGrid {
     extends StObject
        with Cancelable
        with EventInfo[dxDataGrid[TRowData, TKey]]
-       with RowKeyInfo[TKey]
+       with typings.devextreme.mod.DevExpress.common.grids.RowKeyInfo[TKey]
   object RowCollapsingEvent {
     
     inline def apply[TRowData, TKey](component: dxDataGrid[TRowData, TKey], element: DxElement_[HTMLElement], key: TKey): RowCollapsingEvent[TRowData, TKey] = {
@@ -4357,339 +4121,18 @@ object dxDataGrid {
     }
   }
   
-  trait RowDragging[T /* <: GridBase[TRowData, TKey] */, TRowData, TKey] extends StObject {
-    
-    /**
-      * Allows users to drop a row inside another row.
-      */
-    var allowDropInsideItem: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * Allows row reordering using drag and drop gestures.
-      */
-    var allowReordering: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * Enables automatic scrolling while dragging a row beyond the viewport.
-      */
-    var autoScroll: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * Specifies a DOM element that limits the dragging area.
-      */
-    var boundary: js.UndefOr[String | UserDefinedElement[Element]] = js.undefined
-    
-    /**
-      * Specifies a custom container in which the draggable row should be rendered.
-      */
-    var container: js.UndefOr[String | UserDefinedElement[Element]] = js.undefined
-    
-    /**
-      * Specifies the cursor offset from the dragged row.
-      */
-    var cursorOffset: js.UndefOr[String | Y] = js.undefined
-    
-    /**
-      * A container for custom data.
-      */
-    var data: js.UndefOr[Any] = js.undefined
-    
-    /**
-      * Specifies the directions in which a row can be dragged.
-      */
-    var dragDirection: js.UndefOr[DragDirection] = js.undefined
-    
-    /**
-      * Specifies custom markup to be shown instead of the item being dragged.
-      */
-    var dragTemplate: js.UndefOr[
-        template | (js.Function2[
-          /* dragInfo */ RowDraggingTemplateData[TRowData], 
-          /* containerElement */ DxElement_[HTMLElement], 
-          String | UserDefinedElement[Element]
-        ])
-      ] = js.undefined
-    
-    /**
-      * Specifies how to highlight the row&apos;s drop position.
-      */
-    var dropFeedbackMode: js.UndefOr[DragHighlight] = js.undefined
-    
-    /**
-      * Specifies a CSS selector for draggable rows.
-      */
-    var filter: js.UndefOr[String] = js.undefined
-    
-    /**
-      * Allows you to group several UI components so that users can drag and drop rows between them.
-      */
-    var group: js.UndefOr[String] = js.undefined
-    
-    /**
-      * Specifies a CSS selector (ID or class) for the element(s) that should act as the drag handle(s).
-      */
-    var handle: js.UndefOr[String] = js.undefined
-    
-    /**
-      * A function that is called when a new row is added.
-      */
-    var onAdd: js.UndefOr[
-        js.Function1[/* e */ (RowDraggingEventInfo[T, TRowData, TKey]) & DragDropInfo, Unit]
-      ] = js.undefined
-    
-    /**
-      * A function that is called when the dragged row&apos;s position is changed.
-      */
-    var onDragChange: js.UndefOr[
-        js.Function1[
-          /* e */ Cancelable & (RowDraggingEventInfo[T, TRowData, TKey]) & DragDropInfo, 
-          Unit
-        ]
-      ] = js.undefined
-    
-    /**
-      * A function that is called when the drag gesture is finished.
-      */
-    var onDragEnd: js.UndefOr[
-        js.Function1[
-          /* e */ Cancelable & (RowDraggingEventInfo[T, TRowData, TKey]) & DragDropInfo, 
-          Unit
-        ]
-      ] = js.undefined
-    
-    /**
-      * A function that is called every time a draggable row is moved.
-      */
-    var onDragMove: js.UndefOr[
-        js.Function1[
-          /* e */ Cancelable & (RowDraggingEventInfo[T, TRowData, TKey]) & DragDropInfo, 
-          Unit
-        ]
-      ] = js.undefined
-    
-    /**
-      * A function that is called when the drag gesture is initialized.
-      */
-    var onDragStart: js.UndefOr[js.Function1[/* e */ Cancelable & (DragStartEventInfo[T, TRowData, TKey]), Unit]] = js.undefined
-    
-    /**
-      * A function that is called when a draggable row is removed.
-      */
-    var onRemove: js.UndefOr[js.Function1[/* e */ RowDraggingEventInfo[T, TRowData, TKey], Unit]] = js.undefined
-    
-    /**
-      * A function that is called when the draggable rows are reordered.
-      */
-    var onReorder: js.UndefOr[
-        js.Function1[
-          /* e */ (RowDraggingEventInfo[dxDataGrid[TRowData, TKey], TRowData, TKey]) & DragReorderInfo, 
-          Unit
-        ]
-      ] = js.undefined
-    
-    /**
-      * Specifies the distance in pixels from the edge of viewport at which scrolling should start. Applies only if autoScroll is true.
-      */
-    var scrollSensitivity: js.UndefOr[Double] = js.undefined
-    
-    /**
-      * Specifies the scrolling speed when dragging a row beyond the viewport. Applies only if autoScroll is true.
-      */
-    var scrollSpeed: js.UndefOr[Double] = js.undefined
-    
-    /**
-      * Shows or hides row dragging icons.
-      */
-    var showDragIcons: js.UndefOr[Boolean] = js.undefined
-  }
-  object RowDragging {
-    
-    inline def apply[T /* <: GridBase[TRowData, TKey] */, TRowData, TKey](): RowDragging[T, TRowData, TKey] = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[RowDragging[T, TRowData, TKey]]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: RowDragging[?, ?, ?], T /* <: GridBase[TRowData, TKey] */, TRowData, TKey] (val x: Self & (RowDragging[T, TRowData, TKey])) extends AnyVal {
-      
-      inline def setAllowDropInsideItem(value: Boolean): Self = StObject.set(x, "allowDropInsideItem", value.asInstanceOf[js.Any])
-      
-      inline def setAllowDropInsideItemUndefined: Self = StObject.set(x, "allowDropInsideItem", js.undefined)
-      
-      inline def setAllowReordering(value: Boolean): Self = StObject.set(x, "allowReordering", value.asInstanceOf[js.Any])
-      
-      inline def setAllowReorderingUndefined: Self = StObject.set(x, "allowReordering", js.undefined)
-      
-      inline def setAutoScroll(value: Boolean): Self = StObject.set(x, "autoScroll", value.asInstanceOf[js.Any])
-      
-      inline def setAutoScrollUndefined: Self = StObject.set(x, "autoScroll", js.undefined)
-      
-      inline def setBoundary(value: String | UserDefinedElement[Element]): Self = StObject.set(x, "boundary", value.asInstanceOf[js.Any])
-      
-      inline def setBoundaryUndefined: Self = StObject.set(x, "boundary", js.undefined)
-      
-      inline def setContainer(value: String | UserDefinedElement[Element]): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
-      
-      inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
-      
-      inline def setCursorOffset(value: String | Y): Self = StObject.set(x, "cursorOffset", value.asInstanceOf[js.Any])
-      
-      inline def setCursorOffsetUndefined: Self = StObject.set(x, "cursorOffset", js.undefined)
-      
-      inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
-      
-      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
-      
-      inline def setDragDirection(value: DragDirection): Self = StObject.set(x, "dragDirection", value.asInstanceOf[js.Any])
-      
-      inline def setDragDirectionUndefined: Self = StObject.set(x, "dragDirection", js.undefined)
-      
-      inline def setDragTemplate(
-        value: template | (js.Function2[
-              /* dragInfo */ RowDraggingTemplateData[TRowData], 
-              /* containerElement */ DxElement_[HTMLElement], 
-              String | UserDefinedElement[Element]
-            ])
-      ): Self = StObject.set(x, "dragTemplate", value.asInstanceOf[js.Any])
-      
-      inline def setDragTemplateFunction2(
-        value: (/* dragInfo */ RowDraggingTemplateData[TRowData], /* containerElement */ DxElement_[HTMLElement]) => String | UserDefinedElement[Element]
-      ): Self = StObject.set(x, "dragTemplate", js.Any.fromFunction2(value))
-      
-      inline def setDragTemplateUndefined: Self = StObject.set(x, "dragTemplate", js.undefined)
-      
-      inline def setDropFeedbackMode(value: DragHighlight): Self = StObject.set(x, "dropFeedbackMode", value.asInstanceOf[js.Any])
-      
-      inline def setDropFeedbackModeUndefined: Self = StObject.set(x, "dropFeedbackMode", js.undefined)
-      
-      inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
-      
-      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
-      
-      inline def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
-      
-      inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
-      
-      inline def setHandle(value: String): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
-      
-      inline def setHandleUndefined: Self = StObject.set(x, "handle", js.undefined)
-      
-      inline def setOnAdd(value: /* e */ (RowDraggingEventInfo[T, TRowData, TKey]) & DragDropInfo => Unit): Self = StObject.set(x, "onAdd", js.Any.fromFunction1(value))
-      
-      inline def setOnAddUndefined: Self = StObject.set(x, "onAdd", js.undefined)
-      
-      inline def setOnDragChange(value: /* e */ Cancelable & (RowDraggingEventInfo[T, TRowData, TKey]) & DragDropInfo => Unit): Self = StObject.set(x, "onDragChange", js.Any.fromFunction1(value))
-      
-      inline def setOnDragChangeUndefined: Self = StObject.set(x, "onDragChange", js.undefined)
-      
-      inline def setOnDragEnd(value: /* e */ Cancelable & (RowDraggingEventInfo[T, TRowData, TKey]) & DragDropInfo => Unit): Self = StObject.set(x, "onDragEnd", js.Any.fromFunction1(value))
-      
-      inline def setOnDragEndUndefined: Self = StObject.set(x, "onDragEnd", js.undefined)
-      
-      inline def setOnDragMove(value: /* e */ Cancelable & (RowDraggingEventInfo[T, TRowData, TKey]) & DragDropInfo => Unit): Self = StObject.set(x, "onDragMove", js.Any.fromFunction1(value))
-      
-      inline def setOnDragMoveUndefined: Self = StObject.set(x, "onDragMove", js.undefined)
-      
-      inline def setOnDragStart(value: /* e */ Cancelable & (DragStartEventInfo[T, TRowData, TKey]) => Unit): Self = StObject.set(x, "onDragStart", js.Any.fromFunction1(value))
-      
-      inline def setOnDragStartUndefined: Self = StObject.set(x, "onDragStart", js.undefined)
-      
-      inline def setOnRemove(value: /* e */ RowDraggingEventInfo[T, TRowData, TKey] => Unit): Self = StObject.set(x, "onRemove", js.Any.fromFunction1(value))
-      
-      inline def setOnRemoveUndefined: Self = StObject.set(x, "onRemove", js.undefined)
-      
-      inline def setOnReorder(
-        value: /* e */ (RowDraggingEventInfo[dxDataGrid[TRowData, TKey], TRowData, TKey]) & DragReorderInfo => Unit
-      ): Self = StObject.set(x, "onReorder", js.Any.fromFunction1(value))
-      
-      inline def setOnReorderUndefined: Self = StObject.set(x, "onReorder", js.undefined)
-      
-      inline def setScrollSensitivity(value: Double): Self = StObject.set(x, "scrollSensitivity", value.asInstanceOf[js.Any])
-      
-      inline def setScrollSensitivityUndefined: Self = StObject.set(x, "scrollSensitivity", js.undefined)
-      
-      inline def setScrollSpeed(value: Double): Self = StObject.set(x, "scrollSpeed", value.asInstanceOf[js.Any])
-      
-      inline def setScrollSpeedUndefined: Self = StObject.set(x, "scrollSpeed", js.undefined)
-      
-      inline def setShowDragIcons(value: Boolean): Self = StObject.set(x, "showDragIcons", value.asInstanceOf[js.Any])
-      
-      inline def setShowDragIconsUndefined: Self = StObject.set(x, "showDragIcons", js.undefined)
-    }
-  }
+  type RowDragging[TRowData, TKey] = typings.devextreme.mod.DevExpress.common.grids.RowDragging[dxDataGrid[Any, Any], TRowData, TKey]
   
-  trait RowDraggingAddEvent[TRowData, TKey]
-    extends StObject
-       with RowDraggingEventInfo[dxDataGrid[TRowData, TKey], TRowData, TKey]
-       with DragDropInfo
-  object RowDraggingAddEvent {
+  /* Inlined devextreme.devextreme.DevExpress.common.ReducedNativeEventInfo<devextreme.devextreme.DevExpress.ui.dxDataGrid<TRowData, TKey>> & devextreme.devextreme.DevExpress.common.grids.RowDraggingEventInfo<TRowData> & devextreme.devextreme.DevExpress.common.grids.DragDropInfo */
+  trait RowDraggingAddEvent[TRowData, TKey] extends StObject {
     
-    inline def apply[TRowData, TKey](
-      component: dxDataGrid[TRowData, TKey],
-      dropInsideItem: Boolean,
-      event: DxEvent[PointerEvent | MouseEvent | TouchEvent],
-      fromComponent: dxSortable | dxDraggable,
-      fromIndex: Double,
-      itemElement: DxElement_[HTMLElement],
-      toComponent: dxSortable | dxDraggable,
-      toIndex: Double
-    ): RowDraggingAddEvent[TRowData, TKey] = {
-      val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], dropInsideItem = dropInsideItem.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], fromComponent = fromComponent.asInstanceOf[js.Any], fromIndex = fromIndex.asInstanceOf[js.Any], itemElement = itemElement.asInstanceOf[js.Any], toComponent = toComponent.asInstanceOf[js.Any], toIndex = toIndex.asInstanceOf[js.Any])
-      __obj.asInstanceOf[RowDraggingAddEvent[TRowData, TKey]]
-    }
-  }
-  
-  trait RowDraggingChangeEvent[TRowData, TKey]
-    extends StObject
-       with Cancelable
-       with RowDraggingEventInfo[dxDataGrid[TRowData, TKey], TRowData, TKey]
-       with DragDropInfo
-  object RowDraggingChangeEvent {
+    var component: dxDataGrid[TRowData, TKey]
     
-    inline def apply[TRowData, TKey](
-      component: dxDataGrid[TRowData, TKey],
-      dropInsideItem: Boolean,
-      event: DxEvent[PointerEvent | MouseEvent | TouchEvent],
-      fromComponent: dxSortable | dxDraggable,
-      fromIndex: Double,
-      itemElement: DxElement_[HTMLElement],
-      toComponent: dxSortable | dxDraggable,
-      toIndex: Double
-    ): RowDraggingChangeEvent[TRowData, TKey] = {
-      val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], dropInsideItem = dropInsideItem.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], fromComponent = fromComponent.asInstanceOf[js.Any], fromIndex = fromIndex.asInstanceOf[js.Any], itemElement = itemElement.asInstanceOf[js.Any], toComponent = toComponent.asInstanceOf[js.Any], toIndex = toIndex.asInstanceOf[js.Any])
-      __obj.asInstanceOf[RowDraggingChangeEvent[TRowData, TKey]]
-    }
-  }
-  
-  trait RowDraggingEndEvent[TRowData, TKey]
-    extends StObject
-       with Cancelable
-       with RowDraggingEventInfo[dxDataGrid[TRowData, TKey], TRowData, TKey]
-       with DragDropInfo
-  object RowDraggingEndEvent {
+    val dropInsideItem: Boolean
     
-    inline def apply[TRowData, TKey](
-      component: dxDataGrid[TRowData, TKey],
-      dropInsideItem: Boolean,
-      event: DxEvent[PointerEvent | MouseEvent | TouchEvent],
-      fromComponent: dxSortable | dxDraggable,
-      fromIndex: Double,
-      itemElement: DxElement_[HTMLElement],
-      toComponent: dxSortable | dxDraggable,
-      toIndex: Double
-    ): RowDraggingEndEvent[TRowData, TKey] = {
-      val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], dropInsideItem = dropInsideItem.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], fromComponent = fromComponent.asInstanceOf[js.Any], fromIndex = fromIndex.asInstanceOf[js.Any], itemElement = itemElement.asInstanceOf[js.Any], toComponent = toComponent.asInstanceOf[js.Any], toIndex = toIndex.asInstanceOf[js.Any])
-      __obj.asInstanceOf[RowDraggingEndEvent[TRowData, TKey]]
-    }
-  }
-  
-  trait RowDraggingEventInfo[T /* <: GridBase[TRowData, TKey] */, TRowData, TKey] extends StObject {
+    var event: DxEvent[PointerEvent | MouseEvent | TouchEvent]
     
-    val component: T
-    
-    val event: DxEvent[PointerEvent | MouseEvent | TouchEvent]
-    
-    val fromComponent: dxSortable | dxDraggable
+    val fromComponent: Sortable | Draggable
     
     val fromData: js.UndefOr[Any] = js.undefined
     
@@ -4699,35 +4142,38 @@ object dxDataGrid {
     
     val itemElement: DxElement_[HTMLElement]
     
-    val toComponent: dxSortable | dxDraggable
+    val toComponent: Sortable | Draggable
     
     val toData: js.UndefOr[Any] = js.undefined
     
     val toIndex: Double
   }
-  object RowDraggingEventInfo {
+  object RowDraggingAddEvent {
     
-    inline def apply[T /* <: GridBase[TRowData, TKey] */, TRowData, TKey](
-      component: T,
+    inline def apply[TRowData, TKey](
+      component: dxDataGrid[TRowData, TKey],
+      dropInsideItem: Boolean,
       event: DxEvent[PointerEvent | MouseEvent | TouchEvent],
-      fromComponent: dxSortable | dxDraggable,
+      fromComponent: Sortable | Draggable,
       fromIndex: Double,
       itemElement: DxElement_[HTMLElement],
-      toComponent: dxSortable | dxDraggable,
+      toComponent: Sortable | Draggable,
       toIndex: Double
-    ): RowDraggingEventInfo[T, TRowData, TKey] = {
-      val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], fromComponent = fromComponent.asInstanceOf[js.Any], fromIndex = fromIndex.asInstanceOf[js.Any], itemElement = itemElement.asInstanceOf[js.Any], toComponent = toComponent.asInstanceOf[js.Any], toIndex = toIndex.asInstanceOf[js.Any])
-      __obj.asInstanceOf[RowDraggingEventInfo[T, TRowData, TKey]]
+    ): RowDraggingAddEvent[TRowData, TKey] = {
+      val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], dropInsideItem = dropInsideItem.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], fromComponent = fromComponent.asInstanceOf[js.Any], fromIndex = fromIndex.asInstanceOf[js.Any], itemElement = itemElement.asInstanceOf[js.Any], toComponent = toComponent.asInstanceOf[js.Any], toIndex = toIndex.asInstanceOf[js.Any])
+      __obj.asInstanceOf[RowDraggingAddEvent[TRowData, TKey]]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: RowDraggingEventInfo[?, ?, ?], T /* <: GridBase[TRowData, TKey] */, TRowData, TKey] (val x: Self & (RowDraggingEventInfo[T, TRowData, TKey])) extends AnyVal {
+    implicit open class MutableBuilder[Self <: RowDraggingAddEvent[?, ?], TRowData, TKey] (val x: Self & (RowDraggingAddEvent[TRowData, TKey])) extends AnyVal {
       
-      inline def setComponent(value: T): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: dxDataGrid[TRowData, TKey]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      
+      inline def setDropInsideItem(value: Boolean): Self = StObject.set(x, "dropInsideItem", value.asInstanceOf[js.Any])
       
       inline def setEvent(value: DxEvent[PointerEvent | MouseEvent | TouchEvent]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
-      inline def setFromComponent(value: dxSortable | dxDraggable): Self = StObject.set(x, "fromComponent", value.asInstanceOf[js.Any])
+      inline def setFromComponent(value: Sortable | Draggable): Self = StObject.set(x, "fromComponent", value.asInstanceOf[js.Any])
       
       inline def setFromData(value: Any): Self = StObject.set(x, "fromData", value.asInstanceOf[js.Any])
       
@@ -4741,7 +4187,7 @@ object dxDataGrid {
       
       inline def setItemElement(value: DxElement_[HTMLElement]): Self = StObject.set(x, "itemElement", value.asInstanceOf[js.Any])
       
-      inline def setToComponent(value: dxSortable | dxDraggable): Self = StObject.set(x, "toComponent", value.asInstanceOf[js.Any])
+      inline def setToComponent(value: Sortable | Draggable): Self = StObject.set(x, "toComponent", value.asInstanceOf[js.Any])
       
       inline def setToData(value: Any): Self = StObject.set(x, "toData", value.asInstanceOf[js.Any])
       
@@ -4751,55 +4197,414 @@ object dxDataGrid {
     }
   }
   
-  trait RowDraggingMoveEvent[TRowData, TKey]
-    extends StObject
-       with Cancelable
-       with RowDraggingEventInfo[dxDataGrid[TRowData, TKey], TRowData, TKey]
-       with DragDropInfo
+  /* Inlined devextreme.devextreme.DevExpress.events.Cancelable & devextreme.devextreme.DevExpress.common.ReducedNativeEventInfo<devextreme.devextreme.DevExpress.ui.dxDataGrid<TRowData, TKey>> & devextreme.devextreme.DevExpress.common.grids.RowDraggingEventInfo<TRowData> & devextreme.devextreme.DevExpress.common.grids.DragDropInfo */
+  trait RowDraggingChangeEvent[TRowData, TKey] extends StObject {
+    
+    var cancel: js.UndefOr[Boolean] = js.undefined
+    
+    var component: dxDataGrid[TRowData, TKey]
+    
+    val dropInsideItem: Boolean
+    
+    var event: DxEvent[PointerEvent | MouseEvent | TouchEvent]
+    
+    val fromComponent: Sortable | Draggable
+    
+    val fromData: js.UndefOr[Any] = js.undefined
+    
+    val fromIndex: Double
+    
+    val itemData: js.UndefOr[TRowData] = js.undefined
+    
+    val itemElement: DxElement_[HTMLElement]
+    
+    val toComponent: Sortable | Draggable
+    
+    val toData: js.UndefOr[Any] = js.undefined
+    
+    val toIndex: Double
+  }
+  object RowDraggingChangeEvent {
+    
+    inline def apply[TRowData, TKey](
+      component: dxDataGrid[TRowData, TKey],
+      dropInsideItem: Boolean,
+      event: DxEvent[PointerEvent | MouseEvent | TouchEvent],
+      fromComponent: Sortable | Draggable,
+      fromIndex: Double,
+      itemElement: DxElement_[HTMLElement],
+      toComponent: Sortable | Draggable,
+      toIndex: Double
+    ): RowDraggingChangeEvent[TRowData, TKey] = {
+      val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], dropInsideItem = dropInsideItem.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], fromComponent = fromComponent.asInstanceOf[js.Any], fromIndex = fromIndex.asInstanceOf[js.Any], itemElement = itemElement.asInstanceOf[js.Any], toComponent = toComponent.asInstanceOf[js.Any], toIndex = toIndex.asInstanceOf[js.Any])
+      __obj.asInstanceOf[RowDraggingChangeEvent[TRowData, TKey]]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowDraggingChangeEvent[?, ?], TRowData, TKey] (val x: Self & (RowDraggingChangeEvent[TRowData, TKey])) extends AnyVal {
+      
+      inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+      
+      inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+      
+      inline def setComponent(value: dxDataGrid[TRowData, TKey]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      
+      inline def setDropInsideItem(value: Boolean): Self = StObject.set(x, "dropInsideItem", value.asInstanceOf[js.Any])
+      
+      inline def setEvent(value: DxEvent[PointerEvent | MouseEvent | TouchEvent]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      
+      inline def setFromComponent(value: Sortable | Draggable): Self = StObject.set(x, "fromComponent", value.asInstanceOf[js.Any])
+      
+      inline def setFromData(value: Any): Self = StObject.set(x, "fromData", value.asInstanceOf[js.Any])
+      
+      inline def setFromDataUndefined: Self = StObject.set(x, "fromData", js.undefined)
+      
+      inline def setFromIndex(value: Double): Self = StObject.set(x, "fromIndex", value.asInstanceOf[js.Any])
+      
+      inline def setItemData(value: TRowData): Self = StObject.set(x, "itemData", value.asInstanceOf[js.Any])
+      
+      inline def setItemDataUndefined: Self = StObject.set(x, "itemData", js.undefined)
+      
+      inline def setItemElement(value: DxElement_[HTMLElement]): Self = StObject.set(x, "itemElement", value.asInstanceOf[js.Any])
+      
+      inline def setToComponent(value: Sortable | Draggable): Self = StObject.set(x, "toComponent", value.asInstanceOf[js.Any])
+      
+      inline def setToData(value: Any): Self = StObject.set(x, "toData", value.asInstanceOf[js.Any])
+      
+      inline def setToDataUndefined: Self = StObject.set(x, "toData", js.undefined)
+      
+      inline def setToIndex(value: Double): Self = StObject.set(x, "toIndex", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  /* Inlined devextreme.devextreme.DevExpress.events.Cancelable & devextreme.devextreme.DevExpress.common.ReducedNativeEventInfo<devextreme.devextreme.DevExpress.ui.dxDataGrid<TRowData, TKey>> & devextreme.devextreme.DevExpress.common.grids.RowDraggingEventInfo<TRowData> & devextreme.devextreme.DevExpress.common.grids.DragDropInfo */
+  trait RowDraggingEndEvent[TRowData, TKey] extends StObject {
+    
+    var cancel: js.UndefOr[Boolean] = js.undefined
+    
+    var component: dxDataGrid[TRowData, TKey]
+    
+    val dropInsideItem: Boolean
+    
+    var event: DxEvent[PointerEvent | MouseEvent | TouchEvent]
+    
+    val fromComponent: Sortable | Draggable
+    
+    val fromData: js.UndefOr[Any] = js.undefined
+    
+    val fromIndex: Double
+    
+    val itemData: js.UndefOr[TRowData] = js.undefined
+    
+    val itemElement: DxElement_[HTMLElement]
+    
+    val toComponent: Sortable | Draggable
+    
+    val toData: js.UndefOr[Any] = js.undefined
+    
+    val toIndex: Double
+  }
+  object RowDraggingEndEvent {
+    
+    inline def apply[TRowData, TKey](
+      component: dxDataGrid[TRowData, TKey],
+      dropInsideItem: Boolean,
+      event: DxEvent[PointerEvent | MouseEvent | TouchEvent],
+      fromComponent: Sortable | Draggable,
+      fromIndex: Double,
+      itemElement: DxElement_[HTMLElement],
+      toComponent: Sortable | Draggable,
+      toIndex: Double
+    ): RowDraggingEndEvent[TRowData, TKey] = {
+      val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], dropInsideItem = dropInsideItem.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], fromComponent = fromComponent.asInstanceOf[js.Any], fromIndex = fromIndex.asInstanceOf[js.Any], itemElement = itemElement.asInstanceOf[js.Any], toComponent = toComponent.asInstanceOf[js.Any], toIndex = toIndex.asInstanceOf[js.Any])
+      __obj.asInstanceOf[RowDraggingEndEvent[TRowData, TKey]]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowDraggingEndEvent[?, ?], TRowData, TKey] (val x: Self & (RowDraggingEndEvent[TRowData, TKey])) extends AnyVal {
+      
+      inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+      
+      inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+      
+      inline def setComponent(value: dxDataGrid[TRowData, TKey]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      
+      inline def setDropInsideItem(value: Boolean): Self = StObject.set(x, "dropInsideItem", value.asInstanceOf[js.Any])
+      
+      inline def setEvent(value: DxEvent[PointerEvent | MouseEvent | TouchEvent]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      
+      inline def setFromComponent(value: Sortable | Draggable): Self = StObject.set(x, "fromComponent", value.asInstanceOf[js.Any])
+      
+      inline def setFromData(value: Any): Self = StObject.set(x, "fromData", value.asInstanceOf[js.Any])
+      
+      inline def setFromDataUndefined: Self = StObject.set(x, "fromData", js.undefined)
+      
+      inline def setFromIndex(value: Double): Self = StObject.set(x, "fromIndex", value.asInstanceOf[js.Any])
+      
+      inline def setItemData(value: TRowData): Self = StObject.set(x, "itemData", value.asInstanceOf[js.Any])
+      
+      inline def setItemDataUndefined: Self = StObject.set(x, "itemData", js.undefined)
+      
+      inline def setItemElement(value: DxElement_[HTMLElement]): Self = StObject.set(x, "itemElement", value.asInstanceOf[js.Any])
+      
+      inline def setToComponent(value: Sortable | Draggable): Self = StObject.set(x, "toComponent", value.asInstanceOf[js.Any])
+      
+      inline def setToData(value: Any): Self = StObject.set(x, "toData", value.asInstanceOf[js.Any])
+      
+      inline def setToDataUndefined: Self = StObject.set(x, "toData", js.undefined)
+      
+      inline def setToIndex(value: Double): Self = StObject.set(x, "toIndex", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  type RowDraggingEventInfo[TRowData] = typings.devextreme.mod.DevExpress.common.grids.RowDraggingEventInfo[TRowData]
+  
+  /* Inlined devextreme.devextreme.DevExpress.events.Cancelable & devextreme.devextreme.DevExpress.common.ReducedNativeEventInfo<devextreme.devextreme.DevExpress.ui.dxDataGrid<TRowData, TKey>> & devextreme.devextreme.DevExpress.common.grids.RowDraggingEventInfo<TRowData> & devextreme.devextreme.DevExpress.common.grids.DragDropInfo */
+  trait RowDraggingMoveEvent[TRowData, TKey] extends StObject {
+    
+    var cancel: js.UndefOr[Boolean] = js.undefined
+    
+    var component: dxDataGrid[TRowData, TKey]
+    
+    val dropInsideItem: Boolean
+    
+    var event: DxEvent[PointerEvent | MouseEvent | TouchEvent]
+    
+    val fromComponent: Sortable | Draggable
+    
+    val fromData: js.UndefOr[Any] = js.undefined
+    
+    val fromIndex: Double
+    
+    val itemData: js.UndefOr[TRowData] = js.undefined
+    
+    val itemElement: DxElement_[HTMLElement]
+    
+    val toComponent: Sortable | Draggable
+    
+    val toData: js.UndefOr[Any] = js.undefined
+    
+    val toIndex: Double
+  }
   object RowDraggingMoveEvent {
     
     inline def apply[TRowData, TKey](
       component: dxDataGrid[TRowData, TKey],
       dropInsideItem: Boolean,
       event: DxEvent[PointerEvent | MouseEvent | TouchEvent],
-      fromComponent: dxSortable | dxDraggable,
+      fromComponent: Sortable | Draggable,
       fromIndex: Double,
       itemElement: DxElement_[HTMLElement],
-      toComponent: dxSortable | dxDraggable,
+      toComponent: Sortable | Draggable,
       toIndex: Double
     ): RowDraggingMoveEvent[TRowData, TKey] = {
       val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], dropInsideItem = dropInsideItem.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], fromComponent = fromComponent.asInstanceOf[js.Any], fromIndex = fromIndex.asInstanceOf[js.Any], itemElement = itemElement.asInstanceOf[js.Any], toComponent = toComponent.asInstanceOf[js.Any], toIndex = toIndex.asInstanceOf[js.Any])
       __obj.asInstanceOf[RowDraggingMoveEvent[TRowData, TKey]]
     }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowDraggingMoveEvent[?, ?], TRowData, TKey] (val x: Self & (RowDraggingMoveEvent[TRowData, TKey])) extends AnyVal {
+      
+      inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+      
+      inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+      
+      inline def setComponent(value: dxDataGrid[TRowData, TKey]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      
+      inline def setDropInsideItem(value: Boolean): Self = StObject.set(x, "dropInsideItem", value.asInstanceOf[js.Any])
+      
+      inline def setEvent(value: DxEvent[PointerEvent | MouseEvent | TouchEvent]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      
+      inline def setFromComponent(value: Sortable | Draggable): Self = StObject.set(x, "fromComponent", value.asInstanceOf[js.Any])
+      
+      inline def setFromData(value: Any): Self = StObject.set(x, "fromData", value.asInstanceOf[js.Any])
+      
+      inline def setFromDataUndefined: Self = StObject.set(x, "fromData", js.undefined)
+      
+      inline def setFromIndex(value: Double): Self = StObject.set(x, "fromIndex", value.asInstanceOf[js.Any])
+      
+      inline def setItemData(value: TRowData): Self = StObject.set(x, "itemData", value.asInstanceOf[js.Any])
+      
+      inline def setItemDataUndefined: Self = StObject.set(x, "itemData", js.undefined)
+      
+      inline def setItemElement(value: DxElement_[HTMLElement]): Self = StObject.set(x, "itemElement", value.asInstanceOf[js.Any])
+      
+      inline def setToComponent(value: Sortable | Draggable): Self = StObject.set(x, "toComponent", value.asInstanceOf[js.Any])
+      
+      inline def setToData(value: Any): Self = StObject.set(x, "toData", value.asInstanceOf[js.Any])
+      
+      inline def setToDataUndefined: Self = StObject.set(x, "toData", js.undefined)
+      
+      inline def setToIndex(value: Double): Self = StObject.set(x, "toIndex", value.asInstanceOf[js.Any])
+    }
   }
   
-  type RowDraggingRemoveEvent[TRowData, TKey] = RowDraggingEventInfo[dxDataGrid[TRowData, TKey], TRowData, TKey]
+  /* Inlined devextreme.devextreme.DevExpress.common.ReducedNativeEventInfo<devextreme.devextreme.DevExpress.ui.dxDataGrid<TRowData, TKey>> & devextreme.devextreme.DevExpress.common.grids.RowDraggingEventInfo<TRowData> */
+  trait RowDraggingRemoveEvent[TRowData, TKey] extends StObject {
+    
+    var component: dxDataGrid[TRowData, TKey]
+    
+    var event: DxEvent[PointerEvent | MouseEvent | TouchEvent]
+    
+    val fromComponent: Sortable | Draggable
+    
+    val fromData: js.UndefOr[Any] = js.undefined
+    
+    val fromIndex: Double
+    
+    val itemData: js.UndefOr[TRowData] = js.undefined
+    
+    val itemElement: DxElement_[HTMLElement]
+    
+    val toComponent: Sortable | Draggable
+    
+    val toData: js.UndefOr[Any] = js.undefined
+    
+    val toIndex: Double
+  }
+  object RowDraggingRemoveEvent {
+    
+    inline def apply[TRowData, TKey](
+      component: dxDataGrid[TRowData, TKey],
+      event: DxEvent[PointerEvent | MouseEvent | TouchEvent],
+      fromComponent: Sortable | Draggable,
+      fromIndex: Double,
+      itemElement: DxElement_[HTMLElement],
+      toComponent: Sortable | Draggable,
+      toIndex: Double
+    ): RowDraggingRemoveEvent[TRowData, TKey] = {
+      val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], fromComponent = fromComponent.asInstanceOf[js.Any], fromIndex = fromIndex.asInstanceOf[js.Any], itemElement = itemElement.asInstanceOf[js.Any], toComponent = toComponent.asInstanceOf[js.Any], toIndex = toIndex.asInstanceOf[js.Any])
+      __obj.asInstanceOf[RowDraggingRemoveEvent[TRowData, TKey]]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowDraggingRemoveEvent[?, ?], TRowData, TKey] (val x: Self & (RowDraggingRemoveEvent[TRowData, TKey])) extends AnyVal {
+      
+      inline def setComponent(value: dxDataGrid[TRowData, TKey]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      
+      inline def setEvent(value: DxEvent[PointerEvent | MouseEvent | TouchEvent]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      
+      inline def setFromComponent(value: Sortable | Draggable): Self = StObject.set(x, "fromComponent", value.asInstanceOf[js.Any])
+      
+      inline def setFromData(value: Any): Self = StObject.set(x, "fromData", value.asInstanceOf[js.Any])
+      
+      inline def setFromDataUndefined: Self = StObject.set(x, "fromData", js.undefined)
+      
+      inline def setFromIndex(value: Double): Self = StObject.set(x, "fromIndex", value.asInstanceOf[js.Any])
+      
+      inline def setItemData(value: TRowData): Self = StObject.set(x, "itemData", value.asInstanceOf[js.Any])
+      
+      inline def setItemDataUndefined: Self = StObject.set(x, "itemData", js.undefined)
+      
+      inline def setItemElement(value: DxElement_[HTMLElement]): Self = StObject.set(x, "itemElement", value.asInstanceOf[js.Any])
+      
+      inline def setToComponent(value: Sortable | Draggable): Self = StObject.set(x, "toComponent", value.asInstanceOf[js.Any])
+      
+      inline def setToData(value: Any): Self = StObject.set(x, "toData", value.asInstanceOf[js.Any])
+      
+      inline def setToDataUndefined: Self = StObject.set(x, "toData", js.undefined)
+      
+      inline def setToIndex(value: Double): Self = StObject.set(x, "toIndex", value.asInstanceOf[js.Any])
+    }
+  }
   
-  trait RowDraggingReorderEvent[TRowData, TKey]
-    extends StObject
-       with RowDraggingEventInfo[dxDataGrid[TRowData, TKey], TRowData, TKey]
-       with DragReorderInfo
+  /* Inlined devextreme.devextreme.DevExpress.common.ReducedNativeEventInfo<devextreme.devextreme.DevExpress.ui.dxDataGrid<TRowData, TKey>> & devextreme.devextreme.DevExpress.common.grids.RowDraggingEventInfo<TRowData> & devextreme.devextreme.DevExpress.common.grids.DragReorderInfo */
+  trait RowDraggingReorderEvent[TRowData, TKey] extends StObject {
+    
+    var component: dxDataGrid[TRowData, TKey]
+    
+    val dropInsideItem: Boolean
+    
+    var event: DxEvent[PointerEvent | MouseEvent | TouchEvent]
+    
+    val fromComponent: Sortable | Draggable
+    
+    val fromData: js.UndefOr[Any] = js.undefined
+    
+    val fromIndex: Double
+    
+    val itemData: js.UndefOr[TRowData] = js.undefined
+    
+    val itemElement: DxElement_[HTMLElement]
+    
+    var promise: js.UndefOr[PromiseLike[Unit]] = js.undefined
+    
+    val toComponent: Sortable | Draggable
+    
+    val toData: js.UndefOr[Any] = js.undefined
+    
+    val toIndex: Double
+  }
   object RowDraggingReorderEvent {
     
     inline def apply[TRowData, TKey](
       component: dxDataGrid[TRowData, TKey],
       dropInsideItem: Boolean,
       event: DxEvent[PointerEvent | MouseEvent | TouchEvent],
-      fromComponent: dxSortable | dxDraggable,
+      fromComponent: Sortable | Draggable,
       fromIndex: Double,
       itemElement: DxElement_[HTMLElement],
-      toComponent: dxSortable | dxDraggable,
+      toComponent: Sortable | Draggable,
       toIndex: Double
     ): RowDraggingReorderEvent[TRowData, TKey] = {
       val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], dropInsideItem = dropInsideItem.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], fromComponent = fromComponent.asInstanceOf[js.Any], fromIndex = fromIndex.asInstanceOf[js.Any], itemElement = itemElement.asInstanceOf[js.Any], toComponent = toComponent.asInstanceOf[js.Any], toIndex = toIndex.asInstanceOf[js.Any])
       __obj.asInstanceOf[RowDraggingReorderEvent[TRowData, TKey]]
     }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowDraggingReorderEvent[?, ?], TRowData, TKey] (val x: Self & (RowDraggingReorderEvent[TRowData, TKey])) extends AnyVal {
+      
+      inline def setComponent(value: dxDataGrid[TRowData, TKey]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      
+      inline def setDropInsideItem(value: Boolean): Self = StObject.set(x, "dropInsideItem", value.asInstanceOf[js.Any])
+      
+      inline def setEvent(value: DxEvent[PointerEvent | MouseEvent | TouchEvent]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      
+      inline def setFromComponent(value: Sortable | Draggable): Self = StObject.set(x, "fromComponent", value.asInstanceOf[js.Any])
+      
+      inline def setFromData(value: Any): Self = StObject.set(x, "fromData", value.asInstanceOf[js.Any])
+      
+      inline def setFromDataUndefined: Self = StObject.set(x, "fromData", js.undefined)
+      
+      inline def setFromIndex(value: Double): Self = StObject.set(x, "fromIndex", value.asInstanceOf[js.Any])
+      
+      inline def setItemData(value: TRowData): Self = StObject.set(x, "itemData", value.asInstanceOf[js.Any])
+      
+      inline def setItemDataUndefined: Self = StObject.set(x, "itemData", js.undefined)
+      
+      inline def setItemElement(value: DxElement_[HTMLElement]): Self = StObject.set(x, "itemElement", value.asInstanceOf[js.Any])
+      
+      inline def setPromise(value: PromiseLike[Unit]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
+      
+      inline def setPromiseUndefined: Self = StObject.set(x, "promise", js.undefined)
+      
+      inline def setToComponent(value: Sortable | Draggable): Self = StObject.set(x, "toComponent", value.asInstanceOf[js.Any])
+      
+      inline def setToData(value: Any): Self = StObject.set(x, "toData", value.asInstanceOf[js.Any])
+      
+      inline def setToDataUndefined: Self = StObject.set(x, "toData", js.undefined)
+      
+      inline def setToIndex(value: Double): Self = StObject.set(x, "toIndex", value.asInstanceOf[js.Any])
+    }
   }
   
-  trait RowDraggingStartEvent[TRowData, TKey]
-    extends StObject
-       with Cancelable
-       with DragStartEventInfo[dxDataGrid[TRowData, TKey], TRowData, TKey]
+  /* Inlined devextreme.devextreme.DevExpress.events.Cancelable & devextreme.devextreme.DevExpress.common.ReducedNativeEventInfo<devextreme.devextreme.DevExpress.ui.dxDataGrid<TRowData, TKey>> & devextreme.devextreme.DevExpress.common.grids.DragStartEventInfo<TRowData> */
+  trait RowDraggingStartEvent[TRowData, TKey] extends StObject {
+    
+    var cancel: js.UndefOr[Boolean] = js.undefined
+    
+    var component: dxDataGrid[TRowData, TKey]
+    
+    var event: DxEvent[PointerEvent | MouseEvent | TouchEvent]
+    
+    val fromData: js.UndefOr[Any] = js.undefined
+    
+    val fromIndex: Double
+    
+    var itemData: js.UndefOr[TRowData] = js.undefined
+    
+    val itemElement: DxElement_[HTMLElement]
+  }
   object RowDraggingStartEvent {
     
     inline def apply[TRowData, TKey](
@@ -4811,36 +4616,40 @@ object dxDataGrid {
       val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], fromIndex = fromIndex.asInstanceOf[js.Any], itemElement = itemElement.asInstanceOf[js.Any])
       __obj.asInstanceOf[RowDraggingStartEvent[TRowData, TKey]]
     }
-  }
-  
-  type RowDraggingTemplateData[TRowData] = RowDraggingTemplateDataModel[TRowData]
-  
-  trait RowDraggingTemplateDataModel[TRowData] extends StObject {
-    
-    val itemData: TRowData
-    
-    val itemElement: DxElement_[HTMLElement]
-  }
-  object RowDraggingTemplateDataModel {
-    
-    inline def apply[TRowData](itemData: TRowData, itemElement: DxElement_[HTMLElement]): RowDraggingTemplateDataModel[TRowData] = {
-      val __obj = js.Dynamic.literal(itemData = itemData.asInstanceOf[js.Any], itemElement = itemElement.asInstanceOf[js.Any])
-      __obj.asInstanceOf[RowDraggingTemplateDataModel[TRowData]]
-    }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: RowDraggingTemplateDataModel[?], TRowData] (val x: Self & RowDraggingTemplateDataModel[TRowData]) extends AnyVal {
+    implicit open class MutableBuilder[Self <: RowDraggingStartEvent[?, ?], TRowData, TKey] (val x: Self & (RowDraggingStartEvent[TRowData, TKey])) extends AnyVal {
+      
+      inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+      
+      inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+      
+      inline def setComponent(value: dxDataGrid[TRowData, TKey]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      
+      inline def setEvent(value: DxEvent[PointerEvent | MouseEvent | TouchEvent]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      
+      inline def setFromData(value: Any): Self = StObject.set(x, "fromData", value.asInstanceOf[js.Any])
+      
+      inline def setFromDataUndefined: Self = StObject.set(x, "fromData", js.undefined)
+      
+      inline def setFromIndex(value: Double): Self = StObject.set(x, "fromIndex", value.asInstanceOf[js.Any])
       
       inline def setItemData(value: TRowData): Self = StObject.set(x, "itemData", value.asInstanceOf[js.Any])
+      
+      inline def setItemDataUndefined: Self = StObject.set(x, "itemData", js.undefined)
       
       inline def setItemElement(value: DxElement_[HTMLElement]): Self = StObject.set(x, "itemElement", value.asInstanceOf[js.Any])
     }
   }
   
+  type RowDraggingTemplateData = typings.devextreme.mod.DevExpress.common.grids.RowDraggingTemplateData[Any]
+  
+  type RowDraggingTemplateDataModel = typings.devextreme.mod.DevExpress.common.grids.RowDraggingTemplateData[Any]
+  
   trait RowExpandedEvent[TRowData, TKey]
     extends StObject
        with EventInfo[dxDataGrid[TRowData, TKey]]
-       with RowKeyInfo[TKey]
+       with typings.devextreme.mod.DevExpress.common.grids.RowKeyInfo[TKey]
   object RowExpandedEvent {
     
     inline def apply[TRowData, TKey](component: dxDataGrid[TRowData, TKey], element: DxElement_[HTMLElement], key: TKey): RowExpandedEvent[TRowData, TKey] = {
@@ -4853,7 +4662,7 @@ object dxDataGrid {
     extends StObject
        with Cancelable
        with EventInfo[dxDataGrid[TRowData, TKey]]
-       with RowKeyInfo[TKey]
+       with typings.devextreme.mod.DevExpress.common.grids.RowKeyInfo[TKey]
   object RowExpandingEvent {
     
     inline def apply[TRowData, TKey](component: dxDataGrid[TRowData, TKey], element: DxElement_[HTMLElement], key: TKey): RowExpandingEvent[TRowData, TKey] = {
@@ -4865,7 +4674,7 @@ object dxDataGrid {
   trait RowInsertedEvent[TRowData, TKey]
     extends StObject
        with EventInfo[dxDataGrid[TRowData, TKey]]
-       with RowInsertedInfo[TRowData, TKey]
+       with typings.devextreme.mod.DevExpress.common.grids.RowInsertedInfo[TRowData, TKey]
   object RowInsertedEvent {
     
     inline def apply[TRowData, TKey](
@@ -4880,36 +4689,12 @@ object dxDataGrid {
     }
   }
   
-  trait RowInsertedInfo[TRowData, TKey] extends StObject {
-    
-    val data: TRowData
-    
-    val error: js.Error
-    
-    val key: TKey
-  }
-  object RowInsertedInfo {
-    
-    inline def apply[TRowData, TKey](data: TRowData, error: js.Error, key: TKey): RowInsertedInfo[TRowData, TKey] = {
-      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
-      __obj.asInstanceOf[RowInsertedInfo[TRowData, TKey]]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: RowInsertedInfo[?, ?], TRowData, TKey] (val x: Self & (RowInsertedInfo[TRowData, TKey])) extends AnyVal {
-      
-      inline def setData(value: TRowData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
-      
-      inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
-      
-      inline def setKey(value: TKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
-    }
-  }
+  type RowInsertedInfo[TRowData, TKey] = typings.devextreme.mod.DevExpress.common.grids.RowInsertedInfo[TRowData, TKey]
   
   trait RowInsertingEvent[TRowData, TKey]
     extends StObject
        with EventInfo[dxDataGrid[TRowData, TKey]]
-       with RowInsertingInfo[TRowData]
+       with typings.devextreme.mod.DevExpress.common.grids.RowInsertingInfo[TRowData]
   object RowInsertingEvent {
     
     inline def apply[TRowData, TKey](
@@ -4923,45 +4708,9 @@ object dxDataGrid {
     }
   }
   
-  trait RowInsertingInfo[TRowData] extends StObject {
-    
-    var cancel: Boolean | PromiseLike[Unit]
-    
-    var data: TRowData
-  }
-  object RowInsertingInfo {
-    
-    inline def apply[TRowData](cancel: Boolean | PromiseLike[Unit], data: TRowData): RowInsertingInfo[TRowData] = {
-      val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any])
-      __obj.asInstanceOf[RowInsertingInfo[TRowData]]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: RowInsertingInfo[?], TRowData] (val x: Self & RowInsertingInfo[TRowData]) extends AnyVal {
-      
-      inline def setCancel(value: Boolean | PromiseLike[Unit]): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
-      
-      inline def setData(value: TRowData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
-    }
-  }
+  type RowInsertingInfo[TRowData] = typings.devextreme.mod.DevExpress.common.grids.RowInsertingInfo[TRowData]
   
-  trait RowKeyInfo[TKey] extends StObject {
-    
-    val key: TKey
-  }
-  object RowKeyInfo {
-    
-    inline def apply[TKey](key: TKey): RowKeyInfo[TKey] = {
-      val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
-      __obj.asInstanceOf[RowKeyInfo[TKey]]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: RowKeyInfo[?], TKey] (val x: Self & RowKeyInfo[TKey]) extends AnyVal {
-      
-      inline def setKey(value: TKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
-    }
-  }
+  type RowKeyInfo[TKey] = typings.devextreme.mod.DevExpress.common.grids.RowKeyInfo[TKey]
   
   trait RowPreparedEvent[TRowData, TKey]
     extends StObject
@@ -5048,7 +4797,7 @@ object dxDataGrid {
   trait RowRemovedEvent[TRowData, TKey]
     extends StObject
        with EventInfo[dxDataGrid[TRowData, TKey]]
-       with RowRemovedInfo[TRowData, TKey]
+       with typings.devextreme.mod.DevExpress.common.grids.RowRemovedInfo[TRowData, TKey]
   object RowRemovedEvent {
     
     inline def apply[TRowData, TKey](
@@ -5063,36 +4812,12 @@ object dxDataGrid {
     }
   }
   
-  trait RowRemovedInfo[TRowData, TKey] extends StObject {
-    
-    val data: TRowData
-    
-    val error: js.Error
-    
-    val key: TKey
-  }
-  object RowRemovedInfo {
-    
-    inline def apply[TRowData, TKey](data: TRowData, error: js.Error, key: TKey): RowRemovedInfo[TRowData, TKey] = {
-      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
-      __obj.asInstanceOf[RowRemovedInfo[TRowData, TKey]]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: RowRemovedInfo[?, ?], TRowData, TKey] (val x: Self & (RowRemovedInfo[TRowData, TKey])) extends AnyVal {
-      
-      inline def setData(value: TRowData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
-      
-      inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
-      
-      inline def setKey(value: TKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
-    }
-  }
+  type RowRemovedInfo[TRowData, TKey] = typings.devextreme.mod.DevExpress.common.grids.RowRemovedInfo[TRowData, TKey]
   
   trait RowRemovingEvent[TRowData, TKey]
     extends StObject
        with EventInfo[dxDataGrid[TRowData, TKey]]
-       with RowRemovingInfo[TRowData, TKey]
+       with typings.devextreme.mod.DevExpress.common.grids.RowRemovingInfo[TRowData, TKey]
   object RowRemovingEvent {
     
     inline def apply[TRowData, TKey](
@@ -5107,31 +4832,7 @@ object dxDataGrid {
     }
   }
   
-  trait RowRemovingInfo[TRowData, TKey] extends StObject {
-    
-    var cancel: Boolean | PromiseLike[Unit]
-    
-    val data: TRowData
-    
-    val key: TKey
-  }
-  object RowRemovingInfo {
-    
-    inline def apply[TRowData, TKey](cancel: Boolean | PromiseLike[Unit], data: TRowData, key: TKey): RowRemovingInfo[TRowData, TKey] = {
-      val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
-      __obj.asInstanceOf[RowRemovingInfo[TRowData, TKey]]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: RowRemovingInfo[?, ?], TRowData, TKey] (val x: Self & (RowRemovingInfo[TRowData, TKey])) extends AnyVal {
-      
-      inline def setCancel(value: Boolean | PromiseLike[Unit]): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
-      
-      inline def setData(value: TRowData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
-      
-      inline def setKey(value: TKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
-    }
-  }
+  type RowRemovingInfo[TRowData, TKey] = typings.devextreme.mod.DevExpress.common.grids.RowRemovingInfo[TRowData, TKey]
   
   trait RowTemplateData[TRowData, TKey] extends StObject {
     
@@ -5208,7 +4909,7 @@ object dxDataGrid {
   trait RowUpdatedEvent[TRowData, TKey]
     extends StObject
        with EventInfo[dxDataGrid[TRowData, TKey]]
-       with RowUpdatedInfo[TRowData, TKey]
+       with typings.devextreme.mod.DevExpress.common.grids.RowUpdatedInfo[TRowData, TKey]
   object RowUpdatedEvent {
     
     inline def apply[TRowData, TKey](
@@ -5223,36 +4924,12 @@ object dxDataGrid {
     }
   }
   
-  trait RowUpdatedInfo[TRowData, TKey] extends StObject {
-    
-    val data: TRowData
-    
-    val error: js.Error
-    
-    val key: TKey
-  }
-  object RowUpdatedInfo {
-    
-    inline def apply[TRowData, TKey](data: TRowData, error: js.Error, key: TKey): RowUpdatedInfo[TRowData, TKey] = {
-      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
-      __obj.asInstanceOf[RowUpdatedInfo[TRowData, TKey]]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: RowUpdatedInfo[?, ?], TRowData, TKey] (val x: Self & (RowUpdatedInfo[TRowData, TKey])) extends AnyVal {
-      
-      inline def setData(value: TRowData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
-      
-      inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
-      
-      inline def setKey(value: TKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
-    }
-  }
+  type RowUpdatedInfo[TRowData, TKey] = typings.devextreme.mod.DevExpress.common.grids.RowUpdatedInfo[TRowData, TKey]
   
   trait RowUpdatingEvent[TRowData, TKey]
     extends StObject
        with EventInfo[dxDataGrid[TRowData, TKey]]
-       with RowUpdatingInfo[TRowData, TKey]
+       with typings.devextreme.mod.DevExpress.common.grids.RowUpdatingInfo[TRowData, TKey]
   object RowUpdatingEvent {
     
     inline def apply[TRowData, TKey](
@@ -5268,46 +4945,16 @@ object dxDataGrid {
     }
   }
   
-  trait RowUpdatingInfo[TRowData, TKey] extends StObject {
-    
-    var cancel: Boolean | PromiseLike[Unit]
-    
-    val key: TKey
-    
-    var newData: DeepPartial[TRowData]
-    
-    val oldData: TRowData
-  }
-  object RowUpdatingInfo {
-    
-    inline def apply[TRowData, TKey](cancel: Boolean | PromiseLike[Unit], key: TKey, newData: DeepPartial[TRowData], oldData: TRowData): RowUpdatingInfo[TRowData, TKey] = {
-      val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], newData = newData.asInstanceOf[js.Any], oldData = oldData.asInstanceOf[js.Any])
-      __obj.asInstanceOf[RowUpdatingInfo[TRowData, TKey]]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: RowUpdatingInfo[?, ?], TRowData, TKey] (val x: Self & (RowUpdatingInfo[TRowData, TKey])) extends AnyVal {
-      
-      inline def setCancel(value: Boolean | PromiseLike[Unit]): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
-      
-      inline def setKey(value: TKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
-      
-      inline def setNewData(value: DeepPartial[TRowData]): Self = StObject.set(x, "newData", value.asInstanceOf[js.Any])
-      
-      inline def setOldData(value: TRowData): Self = StObject.set(x, "oldData", value.asInstanceOf[js.Any])
-    }
-  }
+  type RowUpdatingInfo[TRowData, TKey] = typings.devextreme.mod.DevExpress.common.grids.RowUpdatingInfo[TRowData, TKey]
   
   trait RowValidatingEvent[TRowData, TKey]
     extends StObject
        with EventInfo[dxDataGrid[TRowData, TKey]]
-       with RowValidatingInfo[TRowData, TKey]
+       with typings.devextreme.mod.DevExpress.common.grids.RowValidatingInfo[TRowData, TKey]
   object RowValidatingEvent {
     
     inline def apply[TRowData, TKey](
-      brokenRules: js.Array[
-          RequiredRule | NumericRule | RangeRule | StringLengthRule | CustomRule | CompareRule | PatternRule | EmailRule | AsyncRule
-        ],
+      brokenRules: js.Array[typings.devextreme.mod.DevExpress.common.ValidationRule],
       component: dxDataGrid[TRowData, TKey],
       element: DxElement_[HTMLElement],
       errorText: String,
@@ -5321,73 +4968,12 @@ object dxDataGrid {
     }
   }
   
-  trait RowValidatingInfo[TRowData, TKey] extends StObject {
-    
-    val brokenRules: js.Array[
-        RequiredRule | NumericRule | RangeRule | StringLengthRule | CustomRule | CompareRule | PatternRule | EmailRule | AsyncRule
-      ]
-    
-    var errorText: String
-    
-    var isValid: Boolean
-    
-    val key: TKey
-    
-    val newData: DeepPartial[TRowData]
-    
-    val oldData: TRowData
-    
-    var promise: js.UndefOr[PromiseLike[Unit]] = js.undefined
-  }
-  object RowValidatingInfo {
-    
-    inline def apply[TRowData, TKey](
-      brokenRules: js.Array[
-          RequiredRule | NumericRule | RangeRule | StringLengthRule | CustomRule | CompareRule | PatternRule | EmailRule | AsyncRule
-        ],
-      errorText: String,
-      isValid: Boolean,
-      key: TKey,
-      newData: DeepPartial[TRowData],
-      oldData: TRowData
-    ): RowValidatingInfo[TRowData, TKey] = {
-      val __obj = js.Dynamic.literal(brokenRules = brokenRules.asInstanceOf[js.Any], errorText = errorText.asInstanceOf[js.Any], isValid = isValid.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], newData = newData.asInstanceOf[js.Any], oldData = oldData.asInstanceOf[js.Any])
-      __obj.asInstanceOf[RowValidatingInfo[TRowData, TKey]]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: RowValidatingInfo[?, ?], TRowData, TKey] (val x: Self & (RowValidatingInfo[TRowData, TKey])) extends AnyVal {
-      
-      inline def setBrokenRules(
-        value: js.Array[
-              RequiredRule | NumericRule | RangeRule | StringLengthRule | CustomRule | CompareRule | PatternRule | EmailRule | AsyncRule
-            ]
-      ): Self = StObject.set(x, "brokenRules", value.asInstanceOf[js.Any])
-      
-      inline def setBrokenRulesVarargs(
-        value: (RequiredRule | NumericRule | RangeRule | StringLengthRule | CustomRule | CompareRule | PatternRule | EmailRule | AsyncRule)*
-      ): Self = StObject.set(x, "brokenRules", js.Array(value*))
-      
-      inline def setErrorText(value: String): Self = StObject.set(x, "errorText", value.asInstanceOf[js.Any])
-      
-      inline def setIsValid(value: Boolean): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
-      
-      inline def setKey(value: TKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
-      
-      inline def setNewData(value: DeepPartial[TRowData]): Self = StObject.set(x, "newData", value.asInstanceOf[js.Any])
-      
-      inline def setOldData(value: TRowData): Self = StObject.set(x, "oldData", value.asInstanceOf[js.Any])
-      
-      inline def setPromise(value: PromiseLike[Unit]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
-      
-      inline def setPromiseUndefined: Self = StObject.set(x, "promise", js.undefined)
-    }
-  }
+  type RowValidatingInfo[TRowData, TKey] = typings.devextreme.mod.DevExpress.common.grids.RowValidatingInfo[TRowData, TKey]
   
   trait SavedEvent[TRowData, TKey]
     extends StObject
        with EventInfo[dxDataGrid[TRowData, TKey]]
-       with DataChangeInfo[TRowData, TKey]
+       with typings.devextreme.mod.DevExpress.common.grids.DataChangeInfo[TRowData, TKey]
   object SavedEvent {
     
     inline def apply[TRowData, TKey](
@@ -5403,7 +4989,7 @@ object dxDataGrid {
   trait SavingEvent[TRowData, TKey]
     extends StObject
        with EventInfo[dxDataGrid[TRowData, TKey]]
-       with SavingInfo[TRowData, TKey]
+       with typings.devextreme.mod.DevExpress.common.grids.SavingInfo[TRowData, TKey]
   object SavingEvent {
     
     inline def apply[TRowData, TKey](
@@ -5417,216 +5003,13 @@ object dxDataGrid {
     }
   }
   
-  trait SavingInfo[TRowData, TKey] extends StObject {
-    
-    var cancel: Boolean
-    
-    var changes: js.Array[typings.devextreme.mod.DevExpress.common.grids.DataChange[TRowData, TKey]]
-    
-    var promise: js.UndefOr[PromiseLike[Unit]] = js.undefined
-  }
-  object SavingInfo {
-    
-    inline def apply[TRowData, TKey](
-      cancel: Boolean,
-      changes: js.Array[typings.devextreme.mod.DevExpress.common.grids.DataChange[TRowData, TKey]]
-    ): SavingInfo[TRowData, TKey] = {
-      val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], changes = changes.asInstanceOf[js.Any])
-      __obj.asInstanceOf[SavingInfo[TRowData, TKey]]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: SavingInfo[?, ?], TRowData, TKey] (val x: Self & (SavingInfo[TRowData, TKey])) extends AnyVal {
-      
-      inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
-      
-      inline def setChanges(value: js.Array[typings.devextreme.mod.DevExpress.common.grids.DataChange[TRowData, TKey]]): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
-      
-      inline def setChangesVarargs(value: (typings.devextreme.mod.DevExpress.common.grids.DataChange[TRowData, TKey])*): Self = StObject.set(x, "changes", js.Array(value*))
-      
-      inline def setPromise(value: PromiseLike[Unit]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
-      
-      inline def setPromiseUndefined: Self = StObject.set(x, "promise", js.undefined)
-    }
-  }
+  type SavingInfo[TRowData, TKey] = typings.devextreme.mod.DevExpress.common.grids.SavingInfo[TRowData, TKey]
   
-  /* Inlined devextreme.devextreme.DevExpress.core.Skip<devextreme.devextreme.DevExpress.ui.dxScrollable<devextreme.devextreme.DevExpress.ui.dxScrollable.Properties>, '_templateManager' | '_cancelOptionChange' | '_getTemplate' | '_invalidate' | '_refresh' | '_notifyOptionChanged' | '_createElement'> */
-  trait Scrollable extends StObject {
-    
-    @JSName("$element")
-    def $element(): UserDefinedElement[Element]
-    @JSName("$element")
-    var $element_Original: js.Function0[UserDefinedElement[Element]]
-    
-    def beginUpdate(): Unit
-    @JSName("beginUpdate")
-    var beginUpdate_Original: js.Function0[Unit]
-    
-    def clientHeight(): Double
-    @JSName("clientHeight")
-    var clientHeight_Original: js.Function0[Double]
-    
-    def clientWidth(): Double
-    @JSName("clientWidth")
-    var clientWidth_Original: js.Function0[Double]
-    
-    def content(): DxElement_[HTMLElement]
-    @JSName("content")
-    var content_Original: js.Function0[DxElement_[HTMLElement]]
-    
-    def dispose(): Unit
-    @JSName("dispose")
-    var dispose_Original: js.Function0[Unit]
-    
-    def element(): DxElement_[HTMLElement]
-    @JSName("element")
-    var element_Original: js.Function0[DxElement_[HTMLElement]]
-    
-    def endUpdate(): Unit
-    @JSName("endUpdate")
-    var endUpdate_Original: js.Function0[Unit]
-    
-    def instance(): this.type
-    @JSName("instance")
-    var instance_Original: js.Function0[this.type]
-    
-    def off(eventName: String): this.type
-    @JSName("off")
-    var off_Original: js.Function1[/* eventName */ String, this.type]
-    
-    def on(eventName: String, eventHandler: js.Function): this.type
-    @JSName("on")
-    var on_Original: js.Function2[/* eventName */ String, /* eventHandler */ js.Function, this.type]
-    
-    def option(): typings.devextreme.mod.DevExpress.ui.dxScrollable.Properties
-    @JSName("option")
-    var option_Original: js.Function0[typings.devextreme.mod.DevExpress.ui.dxScrollable.Properties]
-    
-    def resetOption(optionName: String): Unit
-    @JSName("resetOption")
-    var resetOption_Original: js.Function1[/* optionName */ String, Unit]
-    
-    def scrollBy(distance: Any): Unit
-    def scrollBy(distance: Double): Unit
-    @JSName("scrollBy")
-    var scrollBy_Original: js.Function1[/* distance */ Double | Any, Unit]
-    
-    def scrollHeight(): Double
-    @JSName("scrollHeight")
-    var scrollHeight_Original: js.Function0[Double]
-    
-    def scrollLeft(): Double
-    @JSName("scrollLeft")
-    var scrollLeft_Original: js.Function0[Double]
-    
-    def scrollOffset(): Any
-    @JSName("scrollOffset")
-    var scrollOffset_Original: js.Function0[Any]
-    
-    def scrollTo(targetLocation: Any): Unit
-    def scrollTo(targetLocation: Double): Unit
-    
-    def scrollToElement(element: UserDefinedElement[Element]): Unit
-    @JSName("scrollToElement")
-    var scrollToElement_Original: js.Function1[/* element */ UserDefinedElement[Element], Unit]
-    
-    @JSName("scrollTo")
-    var scrollTo_Original: js.Function1[/* targetLocation */ Double | Any, Unit]
-    
-    def scrollTop(): Double
-    @JSName("scrollTop")
-    var scrollTop_Original: js.Function0[Double]
-    
-    def scrollWidth(): Double
-    @JSName("scrollWidth")
-    var scrollWidth_Original: js.Function0[Double]
-    
-    def update(): js.Promise[Unit]
-    @JSName("update")
-    var update_Original: js.Function0[js.Promise[Unit]]
-  }
-  object Scrollable {
-    
-    inline def apply(
-      $element: () => UserDefinedElement[Element],
-      beginUpdate: () => Unit,
-      clientHeight: () => Double,
-      clientWidth: () => Double,
-      content: () => DxElement_[HTMLElement],
-      dispose: () => Unit,
-      element: () => DxElement_[HTMLElement],
-      endUpdate: () => Unit,
-      instance: () => Scrollable,
-      off: /* eventName */ String => Scrollable,
-      on: (/* eventName */ String, /* eventHandler */ js.Function) => Scrollable,
-      option: () => typings.devextreme.mod.DevExpress.ui.dxScrollable.Properties,
-      resetOption: /* optionName */ String => Unit,
-      scrollBy: /* distance */ Double | Any => Unit,
-      scrollHeight: () => Double,
-      scrollLeft: () => Double,
-      scrollOffset: () => Any,
-      scrollTo: /* targetLocation */ Double | Any => Unit,
-      scrollToElement: /* element */ UserDefinedElement[Element] => Unit,
-      scrollTop: () => Double,
-      scrollWidth: () => Double,
-      update: () => js.Promise[Unit]
-    ): Scrollable = {
-      val __obj = js.Dynamic.literal($element = js.Any.fromFunction0($element), beginUpdate = js.Any.fromFunction0(beginUpdate), clientHeight = js.Any.fromFunction0(clientHeight), clientWidth = js.Any.fromFunction0(clientWidth), content = js.Any.fromFunction0(content), dispose = js.Any.fromFunction0(dispose), element = js.Any.fromFunction0(element), endUpdate = js.Any.fromFunction0(endUpdate), instance = js.Any.fromFunction0(instance), off = js.Any.fromFunction1(off), on = js.Any.fromFunction2(on), option = js.Any.fromFunction0(option), resetOption = js.Any.fromFunction1(resetOption), scrollBy = js.Any.fromFunction1(scrollBy), scrollHeight = js.Any.fromFunction0(scrollHeight), scrollLeft = js.Any.fromFunction0(scrollLeft), scrollOffset = js.Any.fromFunction0(scrollOffset), scrollTo = js.Any.fromFunction1(scrollTo), scrollToElement = js.Any.fromFunction1(scrollToElement), scrollTop = js.Any.fromFunction0(scrollTop), scrollWidth = js.Any.fromFunction0(scrollWidth), update = js.Any.fromFunction0(update))
-      __obj.asInstanceOf[Scrollable]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: Scrollable] (val x: Self) extends AnyVal {
-      
-      inline def set$element(value: () => UserDefinedElement[Element]): Self = StObject.set(x, "$element", js.Any.fromFunction0(value))
-      
-      inline def setBeginUpdate(value: () => Unit): Self = StObject.set(x, "beginUpdate", js.Any.fromFunction0(value))
-      
-      inline def setClientHeight(value: () => Double): Self = StObject.set(x, "clientHeight", js.Any.fromFunction0(value))
-      
-      inline def setClientWidth(value: () => Double): Self = StObject.set(x, "clientWidth", js.Any.fromFunction0(value))
-      
-      inline def setContent(value: () => DxElement_[HTMLElement]): Self = StObject.set(x, "content", js.Any.fromFunction0(value))
-      
-      inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
-      
-      inline def setElement(value: () => DxElement_[HTMLElement]): Self = StObject.set(x, "element", js.Any.fromFunction0(value))
-      
-      inline def setEndUpdate(value: () => Unit): Self = StObject.set(x, "endUpdate", js.Any.fromFunction0(value))
-      
-      inline def setInstance(value: () => Scrollable): Self = StObject.set(x, "instance", js.Any.fromFunction0(value))
-      
-      inline def setOff(value: /* eventName */ String => Scrollable): Self = StObject.set(x, "off", js.Any.fromFunction1(value))
-      
-      inline def setOn(value: (/* eventName */ String, /* eventHandler */ js.Function) => Scrollable): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
-      
-      inline def setOption(value: () => typings.devextreme.mod.DevExpress.ui.dxScrollable.Properties): Self = StObject.set(x, "option", js.Any.fromFunction0(value))
-      
-      inline def setResetOption(value: /* optionName */ String => Unit): Self = StObject.set(x, "resetOption", js.Any.fromFunction1(value))
-      
-      inline def setScrollBy(value: /* distance */ Double | Any => Unit): Self = StObject.set(x, "scrollBy", js.Any.fromFunction1(value))
-      
-      inline def setScrollHeight(value: () => Double): Self = StObject.set(x, "scrollHeight", js.Any.fromFunction0(value))
-      
-      inline def setScrollLeft(value: () => Double): Self = StObject.set(x, "scrollLeft", js.Any.fromFunction0(value))
-      
-      inline def setScrollOffset(value: () => Any): Self = StObject.set(x, "scrollOffset", js.Any.fromFunction0(value))
-      
-      inline def setScrollTo(value: /* targetLocation */ Double | Any => Unit): Self = StObject.set(x, "scrollTo", js.Any.fromFunction1(value))
-      
-      inline def setScrollToElement(value: /* element */ UserDefinedElement[Element] => Unit): Self = StObject.set(x, "scrollToElement", js.Any.fromFunction1(value))
-      
-      inline def setScrollTop(value: () => Double): Self = StObject.set(x, "scrollTop", js.Any.fromFunction0(value))
-      
-      inline def setScrollWidth(value: () => Double): Self = StObject.set(x, "scrollWidth", js.Any.fromFunction0(value))
-      
-      inline def setUpdate(value: () => js.Promise[Unit]): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
-    }
-  }
+  type Scrollable = typings.devextreme.mod.DevExpress.common.Scrollable
   
   trait Scrolling
     extends StObject
-       with ScrollingBase {
+       with typings.devextreme.mod.DevExpress.common.grids.ScrollingBase {
     
     /**
       * Specifies the scrolling mode.
@@ -5649,97 +5032,13 @@ object dxDataGrid {
     }
   }
   
-  trait ScrollingBase extends StObject {
-    
-    /**
-      * Specifies the rendering mode for columns. Applies when columns are left outside the viewport. Requires the columnWidth, columnAutoWidth, or width (for all columns) property specified.
-      */
-    var columnRenderingMode: js.UndefOr[DataRenderMode] = js.undefined
-    
-    /**
-      * Specifies whether the UI component should load adjacent pages. Applies only if scrolling.mode is &apos;virtual&apos; or &apos;infinite&apos;.
-      */
-    var preloadEnabled: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * Specifies whether to render rows after a user stops scrolling or at the same time as the user scrolls the widget.
-      */
-    var renderAsync: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * Specifies the rendering mode for loaded rows.
-      */
-    var rowRenderingMode: js.UndefOr[DataRenderMode] = js.undefined
-    
-    /**
-      * Specifies whether a user can scroll the content with a swipe gesture. Applies only if useNative is false.
-      */
-    var scrollByContent: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * Specifies whether a user can scroll the content with the scrollbar. Applies only if useNative is false.
-      */
-    var scrollByThumb: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * Specifies when to show scrollbars. Applies only if useNative is false.
-      */
-    var showScrollbar: js.UndefOr[ScrollbarMode] = js.undefined
-    
-    /**
-      * Specifies whether the widget should use native or simulated scrolling.
-      */
-    var useNative: js.UndefOr[Boolean | Mode] = js.undefined
-  }
-  object ScrollingBase {
-    
-    inline def apply(): ScrollingBase = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[ScrollingBase]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: ScrollingBase] (val x: Self) extends AnyVal {
-      
-      inline def setColumnRenderingMode(value: DataRenderMode): Self = StObject.set(x, "columnRenderingMode", value.asInstanceOf[js.Any])
-      
-      inline def setColumnRenderingModeUndefined: Self = StObject.set(x, "columnRenderingMode", js.undefined)
-      
-      inline def setPreloadEnabled(value: Boolean): Self = StObject.set(x, "preloadEnabled", value.asInstanceOf[js.Any])
-      
-      inline def setPreloadEnabledUndefined: Self = StObject.set(x, "preloadEnabled", js.undefined)
-      
-      inline def setRenderAsync(value: Boolean): Self = StObject.set(x, "renderAsync", value.asInstanceOf[js.Any])
-      
-      inline def setRenderAsyncUndefined: Self = StObject.set(x, "renderAsync", js.undefined)
-      
-      inline def setRowRenderingMode(value: DataRenderMode): Self = StObject.set(x, "rowRenderingMode", value.asInstanceOf[js.Any])
-      
-      inline def setRowRenderingModeUndefined: Self = StObject.set(x, "rowRenderingMode", js.undefined)
-      
-      inline def setScrollByContent(value: Boolean): Self = StObject.set(x, "scrollByContent", value.asInstanceOf[js.Any])
-      
-      inline def setScrollByContentUndefined: Self = StObject.set(x, "scrollByContent", js.undefined)
-      
-      inline def setScrollByThumb(value: Boolean): Self = StObject.set(x, "scrollByThumb", value.asInstanceOf[js.Any])
-      
-      inline def setScrollByThumbUndefined: Self = StObject.set(x, "scrollByThumb", js.undefined)
-      
-      inline def setShowScrollbar(value: ScrollbarMode): Self = StObject.set(x, "showScrollbar", value.asInstanceOf[js.Any])
-      
-      inline def setShowScrollbarUndefined: Self = StObject.set(x, "showScrollbar", js.undefined)
-      
-      inline def setUseNative(value: Boolean | Mode): Self = StObject.set(x, "useNative", value.asInstanceOf[js.Any])
-      
-      inline def setUseNativeUndefined: Self = StObject.set(x, "useNative", js.undefined)
-    }
-  }
+  type ScrollingBase = typings.devextreme.mod.DevExpress.common.grids.ScrollingBase
   
   type SearchPanel = typings.devextreme.mod.DevExpress.common.grids.SearchPanel
   
   trait Selection
     extends StObject
-       with SelectionBase {
+       with typings.devextreme.mod.DevExpress.common.grids.SelectionBase {
     
     /**
       * Makes selection deferred.
@@ -5780,42 +5079,12 @@ object dxDataGrid {
     }
   }
   
-  trait SelectionBase extends StObject {
-    
-    /**
-      * Allows users to simultaneously select all or current page rows (depending on the selectAllMode).
-      */
-    var allowSelectAll: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * Specifies the selection mode.
-      */
-    var mode: js.UndefOr[SingleMultipleOrNone] = js.undefined
-  }
-  object SelectionBase {
-    
-    inline def apply(): SelectionBase = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[SelectionBase]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: SelectionBase] (val x: Self) extends AnyVal {
-      
-      inline def setAllowSelectAll(value: Boolean): Self = StObject.set(x, "allowSelectAll", value.asInstanceOf[js.Any])
-      
-      inline def setAllowSelectAllUndefined: Self = StObject.set(x, "allowSelectAll", js.undefined)
-      
-      inline def setMode(value: SingleMultipleOrNone): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
-      
-      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
-    }
-  }
+  type SelectionBase = typings.devextreme.mod.DevExpress.common.grids.SelectionBase
   
   trait SelectionChangedEvent[TRowData, TKey]
     extends StObject
        with EventInfo[dxDataGrid[TRowData, TKey]]
-       with SelectionChangedInfo[TRowData, TKey]
+       with typings.devextreme.mod.DevExpress.common.grids.SelectionChangedInfo[TRowData, TKey]
   object SelectionChangedEvent {
     
     inline def apply[TRowData, TKey](
@@ -5831,48 +5100,7 @@ object dxDataGrid {
     }
   }
   
-  trait SelectionChangedInfo[TRowData, TKey] extends StObject {
-    
-    val currentDeselectedRowKeys: js.Array[TKey]
-    
-    val currentSelectedRowKeys: js.Array[TKey]
-    
-    val selectedRowKeys: js.Array[TKey]
-    
-    val selectedRowsData: js.Array[TRowData]
-  }
-  object SelectionChangedInfo {
-    
-    inline def apply[TRowData, TKey](
-      currentDeselectedRowKeys: js.Array[TKey],
-      currentSelectedRowKeys: js.Array[TKey],
-      selectedRowKeys: js.Array[TKey],
-      selectedRowsData: js.Array[TRowData]
-    ): SelectionChangedInfo[TRowData, TKey] = {
-      val __obj = js.Dynamic.literal(currentDeselectedRowKeys = currentDeselectedRowKeys.asInstanceOf[js.Any], currentSelectedRowKeys = currentSelectedRowKeys.asInstanceOf[js.Any], selectedRowKeys = selectedRowKeys.asInstanceOf[js.Any], selectedRowsData = selectedRowsData.asInstanceOf[js.Any])
-      __obj.asInstanceOf[SelectionChangedInfo[TRowData, TKey]]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: SelectionChangedInfo[?, ?], TRowData, TKey] (val x: Self & (SelectionChangedInfo[TRowData, TKey])) extends AnyVal {
-      
-      inline def setCurrentDeselectedRowKeys(value: js.Array[TKey]): Self = StObject.set(x, "currentDeselectedRowKeys", value.asInstanceOf[js.Any])
-      
-      inline def setCurrentDeselectedRowKeysVarargs(value: TKey*): Self = StObject.set(x, "currentDeselectedRowKeys", js.Array(value*))
-      
-      inline def setCurrentSelectedRowKeys(value: js.Array[TKey]): Self = StObject.set(x, "currentSelectedRowKeys", value.asInstanceOf[js.Any])
-      
-      inline def setCurrentSelectedRowKeysVarargs(value: TKey*): Self = StObject.set(x, "currentSelectedRowKeys", js.Array(value*))
-      
-      inline def setSelectedRowKeys(value: js.Array[TKey]): Self = StObject.set(x, "selectedRowKeys", value.asInstanceOf[js.Any])
-      
-      inline def setSelectedRowKeysVarargs(value: TKey*): Self = StObject.set(x, "selectedRowKeys", js.Array(value*))
-      
-      inline def setSelectedRowsData(value: js.Array[TRowData]): Self = StObject.set(x, "selectedRowsData", value.asInstanceOf[js.Any])
-      
-      inline def setSelectedRowsDataVarargs(value: TRowData*): Self = StObject.set(x, "selectedRowsData", js.Array(value*))
-    }
-  }
+  type SelectionChangedInfo[TRowData, TKey] = typings.devextreme.mod.DevExpress.common.grids.SelectionChangedInfo[TRowData, TKey]
   
   type Sorting = typings.devextreme.mod.DevExpress.common.grids.Sorting
   
@@ -6352,36 +5580,20 @@ object dxDataGrid {
   trait ToolbarPreparingEvent[TRowData, TKey]
     extends StObject
        with EventInfo[dxDataGrid[TRowData, TKey]]
-       with ToolbarPreparingInfo
+       with typings.devextreme.mod.DevExpress.common.grids.ToolbarPreparingInfo
   object ToolbarPreparingEvent {
     
     inline def apply[TRowData, TKey](
       component: dxDataGrid[TRowData, TKey],
       element: DxElement_[HTMLElement],
-      toolbarOptions: dxToolbarOptions[Any, Any]
+      toolbarOptions: typings.devextreme.mod.DevExpress.ui.dxToolbar.Properties[Any, Any]
     ): ToolbarPreparingEvent[TRowData, TKey] = {
       val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], element = element.asInstanceOf[js.Any], toolbarOptions = toolbarOptions.asInstanceOf[js.Any])
       __obj.asInstanceOf[ToolbarPreparingEvent[TRowData, TKey]]
     }
   }
   
-  trait ToolbarPreparingInfo extends StObject {
-    
-    var toolbarOptions: dxToolbarOptions[Any, Any]
-  }
-  object ToolbarPreparingInfo {
-    
-    inline def apply(toolbarOptions: dxToolbarOptions[Any, Any]): ToolbarPreparingInfo = {
-      val __obj = js.Dynamic.literal(toolbarOptions = toolbarOptions.asInstanceOf[js.Any])
-      __obj.asInstanceOf[ToolbarPreparingInfo]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: ToolbarPreparingInfo] (val x: Self) extends AnyVal {
-      
-      inline def setToolbarOptions(value: dxToolbarOptions[Any, Any]): Self = StObject.set(x, "toolbarOptions", value.asInstanceOf[js.Any])
-    }
-  }
+  type ToolbarPreparingInfo = typings.devextreme.mod.DevExpress.common.grids.ToolbarPreparingInfo
   
   trait dxDataGridSortByGroupSummaryInfoItem extends StObject {
     

@@ -29,8 +29,6 @@ object meteorAlanningColonrolesMod {
       *     Roles.userIsInRole(user, 'support-staff') // => true
       *     Roles.userIsInRole(user, 'admin') // => false
       *
-      * @property GLOBAL_GROUP
-      * @type String
       * @static
       * @final
       */
@@ -240,8 +238,6 @@ object meteorAlanningColonrolesMod {
       *
       *     `Roles.subscription.ready()` // => `true` if user roles have been loaded
       *
-      * @property subscription
-      * @type Object
       * @for Roles
       */
     @JSImport("meteor/alanning:roles", "Roles.subscription")

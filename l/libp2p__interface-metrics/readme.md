@@ -1,7 +1,7 @@
 
 # Scala.js typings for libp2p__interface-metrics
 
-Typings are for version 3.0.0
+Typings are for version 4.0.8
 
 ## Library description:
 Metrics interface for libp2p

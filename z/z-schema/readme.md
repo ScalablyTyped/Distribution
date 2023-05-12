@@ -1,7 +1,7 @@
 
 # Scala.js typings for z-schema
 
-Typings are for version 5.0.4
+Typings are for version 6.0.1
 
 ## Library description:
 JSON schema validator

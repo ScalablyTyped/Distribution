@@ -12,7 +12,7 @@ open class TransformFeedbackSystem protected ()
   /**
     * @param renderer - The renderer this System works for.
     */
-  def this(renderer: Renderer) = this()
+  def this(renderer: typings.pixiCore.libRendererMod.Renderer) = this()
 }
 /* static members */
 object TransformFeedbackSystem {

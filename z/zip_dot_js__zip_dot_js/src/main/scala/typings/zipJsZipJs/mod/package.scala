@@ -69,7 +69,7 @@ inline def terminateWorkers(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("t
   */
 type CodecStream = TransformStream[Any, Any]
 
-/** 
+/**
   * Represents a URL stored into a `string`.
   */
 // deno-lint-ignore no-empty-interface

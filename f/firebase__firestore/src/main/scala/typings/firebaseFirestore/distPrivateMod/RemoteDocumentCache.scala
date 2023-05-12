@@ -16,19 +16,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RemoteDocumentCache extends StObject {
   
   /**
-    * Returns the documents from the provided collection.
-    *
-    * @param collection - The collection to read.
-    * @param offset - The offset to start the scan at (exclusive).
-    * @returns The set of matching documents.
-    */
-  def getAllFromCollection(
-    transaction: PersistenceTransaction,
-    collection: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify _ResourcePath */ Any,
-    offset: IndexOffset
-  ): PersistencePromise[MutableDocumentMap] = js.native
-  
-  /**
     * Looks up the next `limit` documents for a collection group based on the
     * provided offset. The ordering is based on the document's read time and key.
     *
@@ -38,6 +25,15 @@ trait RemoteDocumentCache extends StObject {
     * @returns The set of matching documents.
     */
   def getAllFromCollectionGroup(transaction: PersistenceTransaction, collectionGroup: String, offset: IndexOffset, limit: Double): PersistencePromise[MutableDocumentMap] = js.native
+  
+  /**
+    * Returns the documents matching the given query
+    *
+    * @param query - The query to match documents against.
+    * @param offset - The offset to start the scan at (exclusive).
+    * @returns The set of matching documents.
+    */
+  def getDocumentsMatchingQuery(transaction: PersistenceTransaction, query: Query2, offset: IndexOffset, mutatedDocs: OverlayMap): PersistencePromise[MutableDocumentMap] = js.native
   
   /**
     * Looks up a set of entries in the cache.

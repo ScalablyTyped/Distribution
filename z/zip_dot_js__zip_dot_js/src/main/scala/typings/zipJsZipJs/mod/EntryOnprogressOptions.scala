@@ -11,7 +11,7 @@ trait EntryOnprogressOptions extends StObject {
   
   /**
     * The function called each time an entry is read/written.
-    * 
+    *
     * @param progress The entry index.
     * @param total The total number of entries.
     * @param entry The entry being read/written.

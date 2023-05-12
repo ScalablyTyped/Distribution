@@ -29,6 +29,22 @@ trait Drs extends Service {
   ): Request[CreateExtendedSourceServerResponse, AWSError] = js.native
   
   /**
+    * Creates a new Launch Configuration Template.
+    */
+  def createLaunchConfigurationTemplate(): Request[CreateLaunchConfigurationTemplateResponse, AWSError] = js.native
+  def createLaunchConfigurationTemplate(
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateLaunchConfigurationTemplateResponse, Unit]
+  ): Request[CreateLaunchConfigurationTemplateResponse, AWSError] = js.native
+  /**
+    * Creates a new Launch Configuration Template.
+    */
+  def createLaunchConfigurationTemplate(params: CreateLaunchConfigurationTemplateRequest): Request[CreateLaunchConfigurationTemplateResponse, AWSError] = js.native
+  def createLaunchConfigurationTemplate(
+    params: CreateLaunchConfigurationTemplateRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateLaunchConfigurationTemplateResponse, Unit]
+  ): Request[CreateLaunchConfigurationTemplateResponse, AWSError] = js.native
+  
+  /**
     * Creates a new ReplicationConfigurationTemplate.
     */
   def createReplicationConfigurationTemplate(): Request[ReplicationConfigurationTemplate, AWSError] = js.native
@@ -55,6 +71,22 @@ trait Drs extends Service {
     params: DeleteJobRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteJobResponse, Unit]
   ): Request[DeleteJobResponse, AWSError] = js.native
+  
+  /**
+    * Deletes a single Launch Configuration Template by ID.
+    */
+  def deleteLaunchConfigurationTemplate(): Request[DeleteLaunchConfigurationTemplateResponse, AWSError] = js.native
+  def deleteLaunchConfigurationTemplate(
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteLaunchConfigurationTemplateResponse, Unit]
+  ): Request[DeleteLaunchConfigurationTemplateResponse, AWSError] = js.native
+  /**
+    * Deletes a single Launch Configuration Template by ID.
+    */
+  def deleteLaunchConfigurationTemplate(params: DeleteLaunchConfigurationTemplateRequest): Request[DeleteLaunchConfigurationTemplateResponse, AWSError] = js.native
+  def deleteLaunchConfigurationTemplate(
+    params: DeleteLaunchConfigurationTemplateRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteLaunchConfigurationTemplateResponse, Unit]
+  ): Request[DeleteLaunchConfigurationTemplateResponse, AWSError] = js.native
   
   /**
     * Deletes a single Recovery Instance by ID. This deletes the Recovery Instance resource from Elastic Disaster Recovery. The Recovery Instance must be disconnected first in order to delete it.
@@ -127,6 +159,22 @@ trait Drs extends Service {
     params: DescribeJobsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeJobsResponse, Unit]
   ): Request[DescribeJobsResponse, AWSError] = js.native
+  
+  /**
+    * Lists all Launch Configuration Templates, filtered by Launch Configuration Template IDs
+    */
+  def describeLaunchConfigurationTemplates(): Request[DescribeLaunchConfigurationTemplatesResponse, AWSError] = js.native
+  def describeLaunchConfigurationTemplates(
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeLaunchConfigurationTemplatesResponse, Unit]
+  ): Request[DescribeLaunchConfigurationTemplatesResponse, AWSError] = js.native
+  /**
+    * Lists all Launch Configuration Templates, filtered by Launch Configuration Template IDs
+    */
+  def describeLaunchConfigurationTemplates(params: DescribeLaunchConfigurationTemplatesRequest): Request[DescribeLaunchConfigurationTemplatesResponse, AWSError] = js.native
+  def describeLaunchConfigurationTemplates(
+    params: DescribeLaunchConfigurationTemplatesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeLaunchConfigurationTemplatesResponse, Unit]
+  ): Request[DescribeLaunchConfigurationTemplatesResponse, AWSError] = js.native
   
   /**
     * Lists all Recovery Instances or multiple Recovery Instances by ID.
@@ -323,18 +371,32 @@ trait Drs extends Service {
   ): Request[ListTagsForResourceResponse, AWSError] = js.native
   
   /**
-    * Causes the data replication initiation sequence to begin immediately upon next Handshake for the specified Source Server ID, regardless of when the previous initiation started. This command will work only if the Source Server is stalled or is in a DISCONNECTED or STOPPED state.
+    * WARNING: RetryDataReplication is deprecated. Causes the data replication initiation sequence to begin immediately upon next Handshake for the specified Source Server ID, regardless of when the previous initiation started. This command will work only if the Source Server is stalled or is in a DISCONNECTED or STOPPED state. 
     */
   def retryDataReplication(): Request[SourceServer, AWSError] = js.native
   def retryDataReplication(callback: js.Function2[/* err */ AWSError, /* data */ SourceServer, Unit]): Request[SourceServer, AWSError] = js.native
   /**
-    * Causes the data replication initiation sequence to begin immediately upon next Handshake for the specified Source Server ID, regardless of when the previous initiation started. This command will work only if the Source Server is stalled or is in a DISCONNECTED or STOPPED state.
+    * WARNING: RetryDataReplication is deprecated. Causes the data replication initiation sequence to begin immediately upon next Handshake for the specified Source Server ID, regardless of when the previous initiation started. This command will work only if the Source Server is stalled or is in a DISCONNECTED or STOPPED state. 
     */
   def retryDataReplication(params: RetryDataReplicationRequest): Request[SourceServer, AWSError] = js.native
   def retryDataReplication(
     params: RetryDataReplicationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ SourceServer, Unit]
   ): Request[SourceServer, AWSError] = js.native
+  
+  /**
+    * Start replication to origin / target region - applies only to protected instances that originated in EC2. For recovery instances on target region - starts replication back to origin region. For failback instances on origin region - starts replication to target region to re-protect them. 
+    */
+  def reverseReplication(): Request[ReverseReplicationResponse, AWSError] = js.native
+  def reverseReplication(callback: js.Function2[/* err */ AWSError, /* data */ ReverseReplicationResponse, Unit]): Request[ReverseReplicationResponse, AWSError] = js.native
+  /**
+    * Start replication to origin / target region - applies only to protected instances that originated in EC2. For recovery instances on target region - starts replication back to origin region. For failback instances on origin region - starts replication to target region to re-protect them. 
+    */
+  def reverseReplication(params: ReverseReplicationRequest): Request[ReverseReplicationResponse, AWSError] = js.native
+  def reverseReplication(
+    params: ReverseReplicationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ReverseReplicationResponse, Unit]
+  ): Request[ReverseReplicationResponse, AWSError] = js.native
   
   /**
     * Initiates a Job for launching the machine that is being failed back to from the specified Recovery Instance. This will run conversion on the failback client and will reboot your machine, thus completing the failback process.
@@ -365,6 +427,20 @@ trait Drs extends Service {
   ): Request[StartRecoveryResponse, AWSError] = js.native
   
   /**
+    * Starts replication for a stopped Source Server. This action would make the Source Server protected again and restart billing for it.
+    */
+  def startReplication(): Request[StartReplicationResponse, AWSError] = js.native
+  def startReplication(callback: js.Function2[/* err */ AWSError, /* data */ StartReplicationResponse, Unit]): Request[StartReplicationResponse, AWSError] = js.native
+  /**
+    * Starts replication for a stopped Source Server. This action would make the Source Server protected again and restart billing for it.
+    */
+  def startReplication(params: StartReplicationRequest): Request[StartReplicationResponse, AWSError] = js.native
+  def startReplication(
+    params: StartReplicationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ StartReplicationResponse, Unit]
+  ): Request[StartReplicationResponse, AWSError] = js.native
+  
+  /**
     * Stops the failback process for a specified Recovery Instance. This changes the Failback State of the Recovery Instance back to FAILBACK_NOT_STARTED.
     */
   def stopFailback(): Request[js.Object, AWSError] = js.native
@@ -377,6 +453,20 @@ trait Drs extends Service {
     params: StopFailbackRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Stops replication for a Source Server. This action would make the Source Server unprotected, delete its existing snapshots and stop billing for it.
+    */
+  def stopReplication(): Request[StopReplicationResponse, AWSError] = js.native
+  def stopReplication(callback: js.Function2[/* err */ AWSError, /* data */ StopReplicationResponse, Unit]): Request[StopReplicationResponse, AWSError] = js.native
+  /**
+    * Stops replication for a Source Server. This action would make the Source Server unprotected, delete its existing snapshots and stop billing for it.
+    */
+  def stopReplication(params: StopReplicationRequest): Request[StopReplicationResponse, AWSError] = js.native
+  def stopReplication(
+    params: StopReplicationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ StopReplicationResponse, Unit]
+  ): Request[StopReplicationResponse, AWSError] = js.native
   
   /**
     * Adds or overwrites only the specified tags for the specified Elastic Disaster Recovery resource or resources. When you specify an existing tag key, the value is overwritten with the new value. Each resource can have a maximum of 50 tags. Each tag consists of a key and optional value.
@@ -444,6 +534,22 @@ trait Drs extends Service {
     params: UpdateLaunchConfigurationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ LaunchConfiguration, Unit]
   ): Request[LaunchConfiguration, AWSError] = js.native
+  
+  /**
+    * Updates an existing Launch Configuration Template by ID.
+    */
+  def updateLaunchConfigurationTemplate(): Request[UpdateLaunchConfigurationTemplateResponse, AWSError] = js.native
+  def updateLaunchConfigurationTemplate(
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateLaunchConfigurationTemplateResponse, Unit]
+  ): Request[UpdateLaunchConfigurationTemplateResponse, AWSError] = js.native
+  /**
+    * Updates an existing Launch Configuration Template by ID.
+    */
+  def updateLaunchConfigurationTemplate(params: UpdateLaunchConfigurationTemplateRequest): Request[UpdateLaunchConfigurationTemplateResponse, AWSError] = js.native
+  def updateLaunchConfigurationTemplate(
+    params: UpdateLaunchConfigurationTemplateRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateLaunchConfigurationTemplateResponse, Unit]
+  ): Request[UpdateLaunchConfigurationTemplateResponse, AWSError] = js.native
   
   /**
     * Allows you to update a ReplicationConfiguration by Source Server ID.

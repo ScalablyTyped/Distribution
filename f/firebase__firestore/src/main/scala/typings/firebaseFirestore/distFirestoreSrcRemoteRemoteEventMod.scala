@@ -2,10 +2,11 @@ package typings.firebaseFirestore
 
 import typings.firebaseFirestore.distFirestoreSrcCoreSnapshotVersionMod.SnapshotVersion
 import typings.firebaseFirestore.distFirestoreSrcCoreTypesMod.TargetId
+import typings.firebaseFirestore.distFirestoreSrcLocalTargetDataMod.TargetPurpose
 import typings.firebaseFirestore.distFirestoreSrcModelCollectionsMod.DocumentKeySet_
 import typings.firebaseFirestore.distFirestoreSrcModelCollectionsMod.MutableDocumentMap_
 import typings.firebaseFirestore.distFirestoreSrcUtilByteStringMod.ByteString
-import typings.firebaseFirestore.distFirestoreSrcUtilSortedSetMod.SortedSet
+import typings.firebaseFirestore.distFirestoreSrcUtilSortedMapMod.SortedMap
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -26,10 +27,11 @@ object distFirestoreSrcRemoteRemoteEventMod {
       */
     targetChanges: Map[TargetId, TargetChange],
       /**
-      * A set of targets that is known to be inconsistent. Listens for these
-      * targets should be re-established without resume tokens.
+      * A map of targets that is known to be inconsistent, and the purpose for
+      * re-listening. Listens for these targets should be re-established without
+      * resume tokens.
       */
-    targetMismatches: SortedSet[TargetId],
+    targetMismatches: SortedMap[TargetId, TargetPurpose],
       /**
       * A set of which documents have changed or been deleted, along with the
       * doc's new values (if not deleted).
@@ -63,10 +65,11 @@ object distFirestoreSrcRemoteRemoteEventMod {
     val targetChanges: Map[TargetId, TargetChange] = js.native
     
     /**
-      * A set of targets that is known to be inconsistent. Listens for these
-      * targets should be re-established without resume tokens.
+      * A map of targets that is known to be inconsistent, and the purpose for
+      * re-listening. Listens for these targets should be re-established without
+      * resume tokens.
       */
-    val targetMismatches: SortedSet[TargetId] = js.native
+    val targetMismatches: SortedMap[TargetId, TargetPurpose] = js.native
   }
   /* static members */
   object RemoteEvent {

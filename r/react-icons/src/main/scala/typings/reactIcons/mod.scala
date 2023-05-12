@@ -2,7 +2,7 @@ package typings.reactIcons
 
 import typings.react.mod.Context
 import typings.react.mod.global.JSX.Element
-import typings.reactIcons.anon.IconBasePropsattrundefine
+import typings.reactIcons.anon.IconBasePropsattrRecordst
 import typings.reactIcons.libEsmIconBaseMod.IconBaseProps
 import typings.reactIcons.libEsmIconBaseMod.IconTree
 import typings.reactIcons.libEsmIconsManifestMod.IconManifest
@@ -22,7 +22,7 @@ object mod {
   
   inline def GenIcon(data: IconTree): js.Function1[/* props */ IconBaseProps, Element] = ^.asInstanceOf[js.Dynamic].applyDynamic("GenIcon")(data.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* props */ IconBaseProps, Element]]
   
-  inline def IconBase(props: IconBasePropsattrundefine): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("IconBase")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def IconBase(props: IconBasePropsattrRecordst): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("IconBase")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("react-icons", "IconContext")
   @js.native

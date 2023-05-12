@@ -17,7 +17,7 @@ open class I18n protected () extends EventHandler {
   /**
     * Create a new I18n instance.
     *
-    * @param {AppBase} app - The application.
+    * @param {import('../app-base.js').AppBase} app - The application.
     */
   def this(app: AppBase) = this()
   
@@ -101,7 +101,7 @@ open class I18n protected () extends EventHandler {
     * @returns {string} The locale found or if no locale is available returns the default en-US
     * locale.
     * @example
-    * var locale = this.app.i18n.getText('en-US');
+    * const locale = this.app.i18n.getText('en-US');
     */
   def findAvailableLocale(desiredLocale: String): String = js.native
   
@@ -118,7 +118,7 @@ open class I18n protected () extends EventHandler {
     * will return the localization key.
     * @example
     * // manually replace {number} in the resulting translation with our number
-    * var localized = this.app.i18n.getPluralText('{number} apples', number).replace("{number}", number);
+    * const localized = this.app.i18n.getPluralText('{number} apples', number).replace("{number}", number);
     */
   def getPluralText(key: String, n: Double): String = js.native
   def getPluralText(key: String, n: Double, locale: String): String = js.native
@@ -133,8 +133,8 @@ open class I18n protected () extends EventHandler {
     * then it will return the en-US translation. If no translation exists for that key then it will
     * return the localization key.
     * @example
-    * var localized = this.app.i18n.getText('localization-key');
-    * var localizedFrench = this.app.i18n.getText('localization-key', 'fr-FR');
+    * const localized = this.app.i18n.getText('localization-key');
+    * const localizedFrench = this.app.i18n.getText('localization-key', 'fr-FR');
     */
   def getText(key: String): String = js.native
   def getText(key: String, locale: String): String = js.native
@@ -172,8 +172,8 @@ object I18n {
     * locale.
     * @example
     * // With a defined dictionary of locales
-    * var availableLocales = { en: 'en-US', fr: 'fr-FR' };
-    * var locale = pc.I18n.getText('en-US', availableLocales);
+    * const availableLocales = { en: 'en-US', fr: 'fr-FR' };
+    * const locale = pc.I18n.getText('en-US', availableLocales);
     * // returns 'en'
     * @ignore
     */

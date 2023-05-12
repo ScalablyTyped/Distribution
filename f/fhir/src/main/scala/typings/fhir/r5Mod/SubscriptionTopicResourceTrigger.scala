@@ -40,7 +40,7 @@ trait SubscriptionTopicResourceTrigger
   var resource: String
   
   /**
-    * The FHIR RESTful interaction which can be used to trigger a notification for the SubscriptionTopic. Multiple values are considered OR joined (e.g., CREATE or UPDATE).
+    * The FHIR RESTful interaction which can be used to trigger a notification for the SubscriptionTopic. Multiple values are considered OR joined (e.g., CREATE or UPDATE). If not present, all supported interactions are assumed.
     */
   var supportedInteraction: js.UndefOr[js.Array[create | update | delete_]] = js.undefined
 }

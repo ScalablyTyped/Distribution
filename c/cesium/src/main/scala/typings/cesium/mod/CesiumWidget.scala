@@ -1,6 +1,7 @@
 package typings.cesium.mod
 
 import typings.cesium.anon.BlurActiveElementOnCanvasFocus
+import typings.cesium.cesiumBooleans.`false`
 import typings.std.Element
 import typings.std.HTMLCanvasElement
 import org.scalablytyped.runtime.StObject
@@ -14,6 +15,14 @@ open class CesiumWidget protected () extends StObject {
   def this(container: Element) = this()
   def this(container: String, options: BlurActiveElementOnCanvasFocus) = this()
   def this(container: Element, options: BlurActiveElementOnCanvasFocus) = this()
+  def this(container: String, options: Unit, baseLayer: `false`) = this()
+  def this(container: String, options: Unit, baseLayer: ImageryLayer) = this()
+  def this(container: String, options: BlurActiveElementOnCanvasFocus, baseLayer: `false`) = this()
+  def this(container: String, options: BlurActiveElementOnCanvasFocus, baseLayer: ImageryLayer) = this()
+  def this(container: Element, options: Unit, baseLayer: `false`) = this()
+  def this(container: Element, options: Unit, baseLayer: ImageryLayer) = this()
+  def this(container: Element, options: BlurActiveElementOnCanvasFocus, baseLayer: `false`) = this()
+  def this(container: Element, options: BlurActiveElementOnCanvasFocus, baseLayer: ImageryLayer) = this()
   
   /**
     * Gets the camera.
@@ -39,6 +48,11 @@ open class CesiumWidget protected () extends StObject {
     * Gets the credit container.
     */
   val creditContainer: Element = js.native
+  
+  /**
+    * Manages the list of credits to display on screen and in the lightbox.
+    */
+  var creditDisplay: CreditDisplay = js.native
   
   /**
     * Gets the credit viewport

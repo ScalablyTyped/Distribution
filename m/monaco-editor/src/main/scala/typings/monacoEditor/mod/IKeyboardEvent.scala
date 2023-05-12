@@ -11,6 +11,8 @@ trait IKeyboardEvent extends StObject {
   
   val _standardKeyboardEventBrand: `true`
   
+  val altGraphKey: Boolean
+  
   val altKey: Boolean
   
   val browserEvent: KeyboardEvent
@@ -36,6 +38,7 @@ trait IKeyboardEvent extends StObject {
 object IKeyboardEvent {
   
   inline def apply(
+    altGraphKey: Boolean,
     altKey: Boolean,
     browserEvent: KeyboardEvent,
     code: String,
@@ -48,13 +51,15 @@ object IKeyboardEvent {
     stopPropagation: () => Unit,
     target: HTMLElement
   ): IKeyboardEvent = {
-    val __obj = js.Dynamic.literal(_standardKeyboardEventBrand = true, altKey = altKey.asInstanceOf[js.Any], browserEvent = browserEvent.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], ctrlKey = ctrlKey.asInstanceOf[js.Any], keyCode = keyCode.asInstanceOf[js.Any], metaKey = metaKey.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), shiftKey = shiftKey.asInstanceOf[js.Any], stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(_standardKeyboardEventBrand = true, altGraphKey = altGraphKey.asInstanceOf[js.Any], altKey = altKey.asInstanceOf[js.Any], browserEvent = browserEvent.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], ctrlKey = ctrlKey.asInstanceOf[js.Any], keyCode = keyCode.asInstanceOf[js.Any], metaKey = metaKey.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), shiftKey = shiftKey.asInstanceOf[js.Any], stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any])
     __obj.updateDynamic("equals")(js.Any.fromFunction1(equals_))
     __obj.asInstanceOf[IKeyboardEvent]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: IKeyboardEvent] (val x: Self) extends AnyVal {
+    
+    inline def setAltGraphKey(value: Boolean): Self = StObject.set(x, "altGraphKey", value.asInstanceOf[js.Any])
     
     inline def setAltKey(value: Boolean): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
     

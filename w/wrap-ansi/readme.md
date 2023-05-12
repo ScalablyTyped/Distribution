@@ -1,7 +1,7 @@
 
 # Scala.js typings for wrap-ansi
 
-Typings are for version 8.0
+Typings are for version 8.1.0
 
 ## Library description:
 Wordwrap a string with ANSI escape codes
@@ -24,7 +24,7 @@ Wordwrap a string with ANSI escape codes
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

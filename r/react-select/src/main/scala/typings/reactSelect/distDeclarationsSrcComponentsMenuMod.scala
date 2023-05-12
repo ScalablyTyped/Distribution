@@ -47,7 +47,7 @@ object distDeclarationsSrcComponentsMenuMod {
   
   inline def MenuPlacer[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](props: MenuPlacerProps[Option, IsMulti, Group]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuPlacer")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  inline def MenuPortal[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](param0: MenuPortalProps[Option, IsMulti, Group]): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuPortal")(param0.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+  inline def MenuPortal[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](props: MenuPortalProps[Option, IsMulti, Group]): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("MenuPortal")(props.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
   
   object NoOptionsMessage {
     
@@ -65,15 +65,15 @@ object distDeclarationsSrcComponentsMenuMod {
   
   inline def getMenuPlacement(param0: PlacementArgs): CalculatedMenuPlacementAndHeight = ^.asInstanceOf[js.Dynamic].applyDynamic("getMenuPlacement")(param0.asInstanceOf[js.Any]).asInstanceOf[CalculatedMenuPlacementAndHeight]
   
-  inline def loadingMessageCSS[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](param0: NoticeProps[Option, IsMulti, Group]): CSSObjectWithLabel = ^.asInstanceOf[js.Dynamic].applyDynamic("loadingMessageCSS")(param0.asInstanceOf[js.Any]).asInstanceOf[CSSObjectWithLabel]
+  inline def loadingMessageCSS[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](param0: NoticeProps[Option, IsMulti, Group], unstyled: Boolean): CSSObjectWithLabel = (^.asInstanceOf[js.Dynamic].applyDynamic("loadingMessageCSS")(param0.asInstanceOf[js.Any], unstyled.asInstanceOf[js.Any])).asInstanceOf[CSSObjectWithLabel]
   
-  inline def menuCSS[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](param0: MenuProps[Option, IsMulti, Group]): CSSObjectWithLabel = ^.asInstanceOf[js.Dynamic].applyDynamic("menuCSS")(param0.asInstanceOf[js.Any]).asInstanceOf[CSSObjectWithLabel]
+  inline def menuCSS[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](param0: MenuProps[Option, IsMulti, Group], unstyled: Boolean): CSSObjectWithLabel = (^.asInstanceOf[js.Dynamic].applyDynamic("menuCSS")(param0.asInstanceOf[js.Any], unstyled.asInstanceOf[js.Any])).asInstanceOf[CSSObjectWithLabel]
   
-  inline def menuListCSS[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](param0: MenuListProps[Option, IsMulti, Group]): CSSObjectWithLabel = ^.asInstanceOf[js.Dynamic].applyDynamic("menuListCSS")(param0.asInstanceOf[js.Any]).asInstanceOf[CSSObjectWithLabel]
+  inline def menuListCSS[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](param0: MenuListProps[Option, IsMulti, Group], unstyled: Boolean): CSSObjectWithLabel = (^.asInstanceOf[js.Dynamic].applyDynamic("menuListCSS")(param0.asInstanceOf[js.Any], unstyled.asInstanceOf[js.Any])).asInstanceOf[CSSObjectWithLabel]
   
   inline def menuPortalCSS(param0: PortalStyleArgs): CSSObjectWithLabel = ^.asInstanceOf[js.Dynamic].applyDynamic("menuPortalCSS")(param0.asInstanceOf[js.Any]).asInstanceOf[CSSObjectWithLabel]
   
-  inline def noOptionsMessageCSS[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](param0: NoticeProps[Option, IsMulti, Group]): CSSObjectWithLabel = ^.asInstanceOf[js.Dynamic].applyDynamic("noOptionsMessageCSS")(param0.asInstanceOf[js.Any]).asInstanceOf[CSSObjectWithLabel]
+  inline def noOptionsMessageCSS[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](param0: NoticeProps[Option, IsMulti, Group], unstyled: Boolean): CSSObjectWithLabel = (^.asInstanceOf[js.Dynamic].applyDynamic("noOptionsMessageCSS")(param0.asInstanceOf[js.Any], unstyled.asInstanceOf[js.Any])).asInstanceOf[CSSObjectWithLabel]
   
   trait CalculatedMenuPlacementAndHeight extends StObject {
     

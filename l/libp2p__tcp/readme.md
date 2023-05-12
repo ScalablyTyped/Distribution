@@ -1,7 +1,7 @@
 
 # Scala.js typings for libp2p__tcp
 
-Typings are for version 5.0.1
+Typings are for version 7.0.1
 
 ## Library description:
 A TCP transport for libp2p

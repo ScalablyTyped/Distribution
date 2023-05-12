@@ -1,6 +1,6 @@
 package typings.openui5.anon
 
-import typings.openui5.sapUiUnifiedMenuItemBaseMod.default
+import typings.openui5.sapUiTableColumnMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `5` extends StObject {
   
   /**
-    * The action (item) which was selected by the user.
+    * grouped column.
     */
-  var item: js.UndefOr[default] = js.undefined
+  var column: js.UndefOr[default] = js.undefined
 }
 object `5` {
   
@@ -22,8 +22,8 @@ object `5` {
   @scala.inline
   implicit open class MutableBuilder[Self <: `5`] (val x: Self) extends AnyVal {
     
-    inline def setItem(value: default): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setColumn(value: default): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
-    inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+    inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
   }
 }

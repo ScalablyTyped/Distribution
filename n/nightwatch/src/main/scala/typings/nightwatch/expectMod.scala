@@ -32,6 +32,11 @@ object expectMod {
     def elements(property: Definition): ExpectElements = js.native
     
     /**
+      * Expect assertions operating on a page-object section, specified by '`@section_name`'.
+      */
+    def section(property: Definition): ExpectSection = js.native
+    
+    /**
       * Retrieves the page title value in order to be used for performing equal, match or contains assertions on it.
       */
     def title(): ExpectTitle = js.native
@@ -521,6 +526,11 @@ object expectMod {
   }
   
   type ExpectMatch[T] = js.Function1[/* regexp */ js.RegExp, Awaitable[T, NightwatchExpectResult]]
+  
+  @js.native
+  trait ExpectSection
+    extends StObject
+       with ExpectElement
   
   type ExpectStartWith[T] = js.Function1[/* value */ String, Awaitable[T, NightwatchExpectResult]]
   

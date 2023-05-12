@@ -1,27 +1,24 @@
 package typings.awsSdkClientCognitoIdentity.distTypesModelsModels0Mod
 
+import typings.awsSdkClientCognitoIdentity.awsSdkClientCognitoIdentityStrings.AccessDenied
+import typings.awsSdkClientCognitoIdentity.awsSdkClientCognitoIdentityStrings.InternalServerError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-sealed trait ErrorCode extends StObject
-@JSImport("@aws-sdk/client-cognito-identity/dist-types/models/models_0", "ErrorCode")
-@js.native
-object ErrorCode extends StObject {
+/* Inlined { readonly ACCESS_DENIED :'AccessDenied',  readonly INTERNAL_SERVER_ERROR :'InternalServerError'}[keyof { readonly ACCESS_DENIED :'AccessDenied',  readonly INTERNAL_SERVER_ERROR :'InternalServerError'}] */
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdkClientCognitoIdentity.awsSdkClientCognitoIdentityStrings.AccessDenied
+  - typings.awsSdkClientCognitoIdentity.awsSdkClientCognitoIdentityStrings.InternalServerError
+*/
+trait ErrorCode extends StObject
+object ErrorCode {
   
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ErrorCode & String] = js.native
-  
+  @JSImport("@aws-sdk/client-cognito-identity/dist-types/models/models_0", "ErrorCode.ACCESS_DENIED")
   @js.native
-  sealed trait ACCESS_DENIED
-    extends StObject
-       with ErrorCode
-  /* "AccessDenied" */ val ACCESS_DENIED: typings.awsSdkClientCognitoIdentity.distTypesModelsModels0Mod.ErrorCode.ACCESS_DENIED & String = js.native
+  val ACCESS_DENIED: AccessDenied = js.native
   
+  @JSImport("@aws-sdk/client-cognito-identity/dist-types/models/models_0", "ErrorCode.INTERNAL_SERVER_ERROR")
   @js.native
-  sealed trait INTERNAL_SERVER_ERROR
-    extends StObject
-       with ErrorCode
-  /* "InternalServerError" */ val INTERNAL_SERVER_ERROR: typings.awsSdkClientCognitoIdentity.distTypesModelsModels0Mod.ErrorCode.INTERNAL_SERVER_ERROR & String = js.native
+  val INTERNAL_SERVER_ERROR: InternalServerError = js.native
 }

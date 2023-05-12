@@ -1,6 +1,5 @@
 package typings.phaser.global.Phaser
 
-import typings.phaser.ArcadePhysicsCallback
 import typings.phaser.MatterJS.Body
 import typings.phaser.MatterJS.BodyType
 import typings.phaser.MatterJS.ConstraintType
@@ -9,13 +8,13 @@ import typings.phaser.Phaser.GameObjects.GameObject
 import typings.phaser.Phaser.Geom.Rectangle
 import typings.phaser.Phaser.Input.Pointer
 import typings.phaser.Phaser.Math.Vector2
-import typings.phaser.Phaser.Textures.Frame
 import typings.phaser.Phaser.Textures.Texture
 import typings.phaser.Phaser.Tilemaps.Tile
 import typings.phaser.Phaser.Tilemaps.TilemapLayer
 import typings.phaser.Phaser.Types.GameObjects.Group.GroupConfig
 import typings.phaser.Phaser.Types.GameObjects.Group.GroupCreateConfig
 import typings.phaser.Phaser.Types.Physics.Arcade.ArcadeColliderType
+import typings.phaser.Phaser.Types.Physics.Arcade.ArcadePhysicsCallback
 import typings.phaser.Phaser.Types.Physics.Arcade.ArcadeWorldConfig
 import typings.phaser.Phaser.Types.Physics.Arcade.GameObjectWithBody
 import typings.phaser.Phaser.Types.Physics.Arcade.PhysicsGroupConfig
@@ -70,8 +69,9 @@ object Physics {
       /**
         * 
         * @param world The Arcade Physics simulation this Body belongs to.
-        * @param gameObject The Game Object this Body belongs to.
+        * @param gameObject The Game Object this Body belongs to. As of Phaser 3.60 this is now optional.
         */
+      def this(world: typings.phaser.Phaser.Physics.Arcade.World) = this()
       def this(world: typings.phaser.Phaser.Physics.Arcade.World, gameObject: GameObject) = this()
     }
     
@@ -116,6 +116,12 @@ object Physics {
       /* CompleteClass */
       var callbackContext: js.Object = js.native
       
+      /* CompleteClass */
+      override def collideCallback(object1: Tile, object2: Tile): Unit = js.native
+      /* CompleteClass */
+      override def collideCallback(object1: Tile, object2: GameObjectWithBody): Unit = js.native
+      /* CompleteClass */
+      override def collideCallback(object1: GameObjectWithBody, object2: Tile): Unit = js.native
       /**
         * The callback to invoke when the two objects collide.
         */
@@ -158,6 +164,12 @@ object Physics {
       /* CompleteClass */
       var overlapOnly: Boolean = js.native
       
+      /* CompleteClass */
+      override def processCallback(object1: Tile, object2: Tile): Unit = js.native
+      /* CompleteClass */
+      override def processCallback(object1: Tile, object2: GameObjectWithBody): Unit = js.native
+      /* CompleteClass */
+      override def processCallback(object1: GameObjectWithBody, object2: Tile): Unit = js.native
       /**
         * If a processCallback exists it must return true or collision checking will be skipped.
         */
@@ -216,7 +228,7 @@ object Physics {
         */
       @JSGlobal("Phaser.Physics.Arcade.Events.COLLIDE")
       @js.native
-      val COLLIDE: Any = js.native
+      val COLLIDE: String = js.native
       
       /**
         * The Arcade Physics World Overlap Event.
@@ -232,7 +244,7 @@ object Physics {
         */
       @JSGlobal("Phaser.Physics.Arcade.Events.OVERLAP")
       @js.native
-      val OVERLAP: Any = js.native
+      val OVERLAP: String = js.native
       
       /**
         * The Arcade Physics World Pause Event.
@@ -243,7 +255,7 @@ object Physics {
         */
       @JSGlobal("Phaser.Physics.Arcade.Events.PAUSE")
       @js.native
-      val PAUSE: Any = js.native
+      val PAUSE: String = js.native
       
       /**
         * The Arcade Physics World Resume Event.
@@ -254,7 +266,7 @@ object Physics {
         */
       @JSGlobal("Phaser.Physics.Arcade.Events.RESUME")
       @js.native
-      val RESUME: Any = js.native
+      val RESUME: String = js.native
       
       /**
         * The Arcade Physics Tile Collide Event.
@@ -270,7 +282,7 @@ object Physics {
         */
       @JSGlobal("Phaser.Physics.Arcade.Events.TILE_COLLIDE")
       @js.native
-      val TILE_COLLIDE: Any = js.native
+      val TILE_COLLIDE: String = js.native
       
       /**
         * The Arcade Physics Tile Overlap Event.
@@ -286,7 +298,7 @@ object Physics {
         */
       @JSGlobal("Phaser.Physics.Arcade.Events.TILE_OVERLAP")
       @js.native
-      val TILE_OVERLAP: Any = js.native
+      val TILE_OVERLAP: String = js.native
       
       /**
         * The Arcade Physics World Bounds Event.
@@ -300,7 +312,7 @@ object Physics {
         */
       @JSGlobal("Phaser.Physics.Arcade.Events.WORLD_BOUNDS")
       @js.native
-      val WORLD_BOUNDS: Any = js.native
+      val WORLD_BOUNDS: String = js.native
       
       /**
         * The Arcade Physics World Step Event.
@@ -314,7 +326,7 @@ object Physics {
         */
       @JSGlobal("Phaser.Physics.Arcade.Events.WORLD_STEP")
       @js.native
-      val WORLD_STEP: Any = js.native
+      val WORLD_STEP: String = js.native
     }
     
     /**
@@ -552,7 +564,7 @@ object Physics {
       var debugShowVelocity: Boolean = js.native
       
       /**
-        * The depth of this Game Object within the Scene.
+        * The depth of this Game Object within the Scene. Ensure this value is only ever set to a number data-type.
         * 
         * The depth is also known as the 'z-index' in some environments, and allows you to change the rendering order
         * of Game Objects, without actually moving their position in the display list.
@@ -564,26 +576,6 @@ object Physics {
         */
       /* CompleteClass */
       var depth: Double = js.native
-      
-      /**
-        * The displayed height of this Game Object.
-        * 
-        * This value takes into account the scale factor.
-        * 
-        * Setting this value will adjust the Game Object's scale property.
-        */
-      /* CompleteClass */
-      var displayHeight: Double = js.native
-      
-      /**
-        * The displayed width of this Game Object.
-        * 
-        * This value takes into account the scale factor.
-        * 
-        * Setting this value will adjust the Game Object's scale property.
-        */
-      /* CompleteClass */
-      var displayWidth: Double = js.native
       
       /**
         * The horizontally flipped state of the Game Object.
@@ -604,16 +596,6 @@ object Physics {
         */
       /* CompleteClass */
       var flipY: Boolean = js.native
-      
-      /**
-        * The native (un-scaled) height of this Game Object.
-        * 
-        * Changing this value will not change the size that the Game Object is rendered in-game.
-        * For that you need to either set the scale of the Game Object (`setScale`) or use
-        * the `displayHeight` property.
-        */
-      /* CompleteClass */
-      var height: Double = js.native
       
       /**
         * Resets the horizontal and vertical flipped state of this Game Object back to their default un-flipped state.
@@ -679,20 +661,10 @@ object Physics {
         * value will always render in front of one with a lower value.
         * 
         * Setting the depth will queue a depth sort event within the Scene.
-        * @param value The depth of this Game Object.
+        * @param value The depth of this Game Object. Ensure this value is only ever a number data-type.
         */
       /* CompleteClass */
       override def setDepth(value: Double): this.type = js.native
-      
-      /**
-        * Sets the display size of this Game Object.
-        * 
-        * Calling this will adjust the scale.
-        * @param width The width of this Game Object.
-        * @param height The height of this Game Object.
-        */
-      /* CompleteClass */
-      override def setDisplaySize(width: Double, height: Double): this.type = js.native
       
       /**
         * Sets the horizontal and vertical flipped state of this Game Object.
@@ -743,21 +715,6 @@ object Physics {
       override def setSize(width: Double, height: Double): this.type = js.native
       
       /**
-        * Sets the size of this Game Object to be that of the given Frame.
-        * 
-        * This will not change the size that the Game Object is rendered in-game.
-        * For that you need to either set the scale of the Game Object (`setScale`) or call the
-        * `setDisplaySize` method, which is the same thing as changing the scale but allows you
-        * to do so by giving pixel values.
-        * 
-        * If you have enabled this Game Object for input, changing the size will _not_ change the
-        * size of the hit area. To do this you should adjust the `input.hitArea` object directly.
-        * @param frame The frame to base the size of this Game Object on.
-        */
-      /* CompleteClass */
-      override def setSizeToFrame(frame: Frame): this.type = js.native
-      
-      /**
         * Sets the visibility of this Game Object.
         * 
         * An invisible Game Object will skip rendering, but will still process update logic.
@@ -789,16 +746,6 @@ object Physics {
         */
       /* CompleteClass */
       var visible: Boolean = js.native
-      
-      /**
-        * The native (un-scaled) width of this Game Object.
-        * 
-        * Changing this value will not change the size that the Game Object is rendered in-game.
-        * For that you need to either set the scale of the Game Object (`setScale`) or use
-        * the `displayWidth` property.
-        */
-      /* CompleteClass */
-      var width: Double = js.native
     }
     
     /**
@@ -819,6 +766,7 @@ object Physics {
       * @param body2 The second Body to separate.
       * @param overlapOnly If `true`, the bodies will only have their overlap data set and no separation will take place.
       * @param bias A value to add to the delta value during overlap checking. Used to prevent sprite tunneling.
+      * @param overlap If given then this value will be used as the overlap and no check will be run.
       */
     inline def SeparateX(
       body1: typings.phaser.Phaser.Physics.Arcade.Body,
@@ -826,6 +774,13 @@ object Physics {
       overlapOnly: Boolean,
       bias: Double
     ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("SeparateX")(body1.asInstanceOf[js.Any], body2.asInstanceOf[js.Any], overlapOnly.asInstanceOf[js.Any], bias.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def SeparateX(
+      body1: typings.phaser.Phaser.Physics.Arcade.Body,
+      body2: typings.phaser.Phaser.Physics.Arcade.Body,
+      overlapOnly: Boolean,
+      bias: Double,
+      overlap: Double
+    ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("SeparateX")(body1.asInstanceOf[js.Any], body2.asInstanceOf[js.Any], overlapOnly.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], overlap.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /**
       * Separates two overlapping bodies on the Y-axis (vertically).
@@ -837,6 +792,7 @@ object Physics {
       * @param body2 The second Body to separate.
       * @param overlapOnly If `true`, the bodies will only have their overlap data set and no separation will take place.
       * @param bias A value to add to the delta value during overlap checking. Used to prevent sprite tunneling.
+      * @param overlap If given then this value will be used as the overlap and no check will be run.
       */
     inline def SeparateY(
       body1: typings.phaser.Phaser.Physics.Arcade.Body,
@@ -844,6 +800,13 @@ object Physics {
       overlapOnly: Boolean,
       bias: Double
     ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("SeparateY")(body1.asInstanceOf[js.Any], body2.asInstanceOf[js.Any], overlapOnly.asInstanceOf[js.Any], bias.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def SeparateY(
+      body1: typings.phaser.Phaser.Physics.Arcade.Body,
+      body2: typings.phaser.Phaser.Physics.Arcade.Body,
+      overlapOnly: Boolean,
+      bias: Double,
+      overlap: Double
+    ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("SeparateY")(body1.asInstanceOf[js.Any], body2.asInstanceOf[js.Any], overlapOnly.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], overlap.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /**
       * An Arcade Physics Sprite is a Sprite with an Arcade Physics body and related components.
@@ -891,7 +854,7 @@ object Physics {
       var debugShowVelocity: Boolean = js.native
       
       /**
-        * The depth of this Game Object within the Scene.
+        * The depth of this Game Object within the Scene. Ensure this value is only ever set to a number data-type.
         * 
         * The depth is also known as the 'z-index' in some environments, and allows you to change the rendering order
         * of Game Objects, without actually moving their position in the display list.
@@ -903,26 +866,6 @@ object Physics {
         */
       /* CompleteClass */
       var depth: Double = js.native
-      
-      /**
-        * The displayed height of this Game Object.
-        * 
-        * This value takes into account the scale factor.
-        * 
-        * Setting this value will adjust the Game Object's scale property.
-        */
-      /* CompleteClass */
-      var displayHeight: Double = js.native
-      
-      /**
-        * The displayed width of this Game Object.
-        * 
-        * This value takes into account the scale factor.
-        * 
-        * Setting this value will adjust the Game Object's scale property.
-        */
-      /* CompleteClass */
-      var displayWidth: Double = js.native
       
       /**
         * The horizontally flipped state of the Game Object.
@@ -943,16 +886,6 @@ object Physics {
         */
       /* CompleteClass */
       var flipY: Boolean = js.native
-      
-      /**
-        * The native (un-scaled) height of this Game Object.
-        * 
-        * Changing this value will not change the size that the Game Object is rendered in-game.
-        * For that you need to either set the scale of the Game Object (`setScale`) or use
-        * the `displayHeight` property.
-        */
-      /* CompleteClass */
-      var height: Double = js.native
       
       /**
         * Resets the horizontal and vertical flipped state of this Game Object back to their default un-flipped state.
@@ -1018,20 +951,10 @@ object Physics {
         * value will always render in front of one with a lower value.
         * 
         * Setting the depth will queue a depth sort event within the Scene.
-        * @param value The depth of this Game Object.
+        * @param value The depth of this Game Object. Ensure this value is only ever a number data-type.
         */
       /* CompleteClass */
       override def setDepth(value: Double): this.type = js.native
-      
-      /**
-        * Sets the display size of this Game Object.
-        * 
-        * Calling this will adjust the scale.
-        * @param width The width of this Game Object.
-        * @param height The height of this Game Object.
-        */
-      /* CompleteClass */
-      override def setDisplaySize(width: Double, height: Double): this.type = js.native
       
       /**
         * Sets the horizontal and vertical flipped state of this Game Object.
@@ -1082,21 +1005,6 @@ object Physics {
       override def setSize(width: Double, height: Double): this.type = js.native
       
       /**
-        * Sets the size of this Game Object to be that of the given Frame.
-        * 
-        * This will not change the size that the Game Object is rendered in-game.
-        * For that you need to either set the scale of the Game Object (`setScale`) or call the
-        * `setDisplaySize` method, which is the same thing as changing the scale but allows you
-        * to do so by giving pixel values.
-        * 
-        * If you have enabled this Game Object for input, changing the size will _not_ change the
-        * size of the hit area. To do this you should adjust the `input.hitArea` object directly.
-        * @param frame The frame to base the size of this Game Object on.
-        */
-      /* CompleteClass */
-      override def setSizeToFrame(frame: Frame): this.type = js.native
-      
-      /**
         * Sets the visibility of this Game Object.
         * 
         * An invisible Game Object will skip rendering, but will still process update logic.
@@ -1128,16 +1036,6 @@ object Physics {
         */
       /* CompleteClass */
       var visible: Boolean = js.native
-      
-      /**
-        * The native (un-scaled) width of this Game Object.
-        * 
-        * Changing this value will not change the size that the Game Object is rendered in-game.
-        * For that you need to either set the scale of the Game Object (`setScale`) or use
-        * the `displayWidth` property.
-        */
-      /* CompleteClass */
-      var width: Double = js.native
     }
     
     /**
@@ -1158,8 +1056,9 @@ object Physics {
       /**
         * 
         * @param world The Arcade Physics simulation this Static Body belongs to.
-        * @param gameObject The Game Object this Static Body belongs to.
+        * @param gameObject The Game Object this Body belongs to. As of Phaser 3.60 this is now optional.
         */
+      def this(world: typings.phaser.Phaser.Physics.Arcade.World) = this()
       def this(world: typings.phaser.Phaser.Physics.Arcade.World, gameObject: GameObject) = this()
     }
     
@@ -1407,19 +1306,19 @@ object Physics {
         */
       @JSGlobal("Phaser.Physics.Matter.Events.AFTER_ADD")
       @js.native
-      val AFTER_ADD: Any = js.native
+      val AFTER_ADD: String = js.native
       
       /**
         * The Matter Physics After Remove Event.
         * 
-        * This event is dispatched by a Matter Physics World instance at the end of the process when a 
+        * This event is dispatched by a Matter Physics World instance at the end of the process when a
         * Body or Constraint was removed from the world.
         * 
         * Listen to it from a Scene using: `this.matter.world.on('afterremove', listener)`.
         */
       @JSGlobal("Phaser.Physics.Matter.Events.AFTER_REMOVE")
       @js.native
-      val AFTER_REMOVE: Any = js.native
+      val AFTER_REMOVE: String = js.native
       
       /**
         * The Matter Physics After Update Event.
@@ -1430,7 +1329,7 @@ object Physics {
         */
       @JSGlobal("Phaser.Physics.Matter.Events.AFTER_UPDATE")
       @js.native
-      val AFTER_UPDATE: Any = js.native
+      val AFTER_UPDATE: String = js.native
       
       /**
         * The Matter Physics Before Add Event.
@@ -1442,19 +1341,19 @@ object Physics {
         */
       @JSGlobal("Phaser.Physics.Matter.Events.BEFORE_ADD")
       @js.native
-      val BEFORE_ADD: Any = js.native
+      val BEFORE_ADD: String = js.native
       
       /**
         * The Matter Physics Before Remove Event.
         * 
-        * This event is dispatched by a Matter Physics World instance at the start of the process when a 
+        * This event is dispatched by a Matter Physics World instance at the start of the process when a
         * Body or Constraint is being removed from the world.
         * 
         * Listen to it from a Scene using: `this.matter.world.on('beforeremove', listener)`.
         */
       @JSGlobal("Phaser.Physics.Matter.Events.BEFORE_REMOVE")
       @js.native
-      val BEFORE_REMOVE: Any = js.native
+      val BEFORE_REMOVE: String = js.native
       
       /**
         * The Matter Physics Before Update Event.
@@ -1465,7 +1364,7 @@ object Physics {
         */
       @JSGlobal("Phaser.Physics.Matter.Events.BEFORE_UPDATE")
       @js.native
-      val BEFORE_UPDATE: Any = js.native
+      val BEFORE_UPDATE: String = js.native
       
       /**
         * The Matter Physics Collision Active Event.
@@ -1477,7 +1376,7 @@ object Physics {
         */
       @JSGlobal("Phaser.Physics.Matter.Events.COLLISION_ACTIVE")
       @js.native
-      val COLLISION_ACTIVE: Any = js.native
+      val COLLISION_ACTIVE: String = js.native
       
       /**
         * The Matter Physics Collision End Event.
@@ -1489,7 +1388,7 @@ object Physics {
         */
       @JSGlobal("Phaser.Physics.Matter.Events.COLLISION_END")
       @js.native
-      val COLLISION_END: Any = js.native
+      val COLLISION_END: String = js.native
       
       /**
         * The Matter Physics Collision Start Event.
@@ -1501,7 +1400,7 @@ object Physics {
         */
       @JSGlobal("Phaser.Physics.Matter.Events.COLLISION_START")
       @js.native
-      val COLLISION_START: Any = js.native
+      val COLLISION_START: String = js.native
       
       /**
         * The Matter Physics Drag Event.
@@ -1513,7 +1412,7 @@ object Physics {
         */
       @JSGlobal("Phaser.Physics.Matter.Events.DRAG")
       @js.native
-      val DRAG: Any = js.native
+      val DRAG: String = js.native
       
       /**
         * The Matter Physics Drag End Event.
@@ -1525,7 +1424,7 @@ object Physics {
         */
       @JSGlobal("Phaser.Physics.Matter.Events.DRAG_END")
       @js.native
-      val DRAG_END: Any = js.native
+      val DRAG_END: String = js.native
       
       /**
         * The Matter Physics Drag Start Event.
@@ -1537,7 +1436,7 @@ object Physics {
         */
       @JSGlobal("Phaser.Physics.Matter.Events.DRAG_START")
       @js.native
-      val DRAG_START: Any = js.native
+      val DRAG_START: String = js.native
       
       /**
         * The Matter Physics World Pause Event.
@@ -1548,7 +1447,7 @@ object Physics {
         */
       @JSGlobal("Phaser.Physics.Matter.Events.PAUSE")
       @js.native
-      val PAUSE: Any = js.native
+      val PAUSE: String = js.native
       
       /**
         * The Matter Physics World Resume Event.
@@ -1559,7 +1458,7 @@ object Physics {
         */
       @JSGlobal("Phaser.Physics.Matter.Events.RESUME")
       @js.native
-      val RESUME: Any = js.native
+      val RESUME: String = js.native
       
       /**
         * The Matter Physics Sleep End Event.
@@ -1570,7 +1469,7 @@ object Physics {
         */
       @JSGlobal("Phaser.Physics.Matter.Events.SLEEP_END")
       @js.native
-      val SLEEP_END: Any = js.native
+      val SLEEP_END: String = js.native
       
       /**
         * The Matter Physics Sleep Start Event.
@@ -1581,7 +1480,7 @@ object Physics {
         */
       @JSGlobal("Phaser.Physics.Matter.Events.SLEEP_START")
       @js.native
-      val SLEEP_START: Any = js.native
+      val SLEEP_START: String = js.native
     }
     
     /**
@@ -1716,7 +1615,7 @@ object Physics {
         * @param force A Vector that specifies the force to apply.
         */
       /* CompleteClass */
-      override def applyForce(force: Vector2): GameObject = js.native
+      override def applyForce(force: Vector2): this.type = js.native
       
       /**
         * Applies a force to a body from a given position.
@@ -1724,7 +1623,7 @@ object Physics {
         * @param force A Vector that specifies the force to apply.
         */
       /* CompleteClass */
-      override def applyForceFrom(position: Vector2, force: Vector2): GameObject = js.native
+      override def applyForceFrom(position: Vector2, force: Vector2): this.type = js.native
       
       /**
         * The body's center of mass.
@@ -1737,7 +1636,7 @@ object Physics {
       override val centerOfMass: Vector2 = js.native
       
       /**
-        * The depth of this Game Object within the Scene.
+        * The depth of this Game Object within the Scene. Ensure this value is only ever set to a number data-type.
         * 
         * The depth is also known as the 'z-index' in some environments, and allows you to change the rendering order
         * of Game Objects, without actually moving their position in the display list.
@@ -1749,26 +1648,6 @@ object Physics {
         */
       /* CompleteClass */
       var depth: Double = js.native
-      
-      /**
-        * The displayed height of this Game Object.
-        * 
-        * This value takes into account the scale factor.
-        * 
-        * Setting this value will adjust the Game Object's scale property.
-        */
-      /* CompleteClass */
-      var displayHeight: Double = js.native
-      
-      /**
-        * The displayed width of this Game Object.
-        * 
-        * This value takes into account the scale factor.
-        * 
-        * Setting this value will adjust the Game Object's scale property.
-        */
-      /* CompleteClass */
-      var displayWidth: Double = js.native
       
       /**
         * The horizontally flipped state of the Game Object.
@@ -1789,16 +1668,6 @@ object Physics {
         */
       /* CompleteClass */
       var flipY: Boolean = js.native
-      
-      /**
-        * The native (un-scaled) height of this Game Object.
-        * 
-        * Changing this value will not change the size that the Game Object is rendered in-game.
-        * For that you need to either set the scale of the Game Object (`setScale`) or use
-        * the `displayHeight` property.
-        */
-      /* CompleteClass */
-      var height: Double = js.native
       
       /**
         * Is the body belonging to this Game Object a sensor or not?
@@ -1823,14 +1692,14 @@ object Physics {
         * @param value A Number that defines the restitution (elasticity) of the body. The value is always positive and is in the range (0, 1). A value of 0 means collisions may be perfectly inelastic and no bouncing may occur. A value of 0.8 means the body may bounce back with approximately 80% of its kinetic energy. Note that collision response is based on pairs of bodies, and that restitution values are combined with the following formula: `Math.max(bodyA.restitution, bodyB.restitution)`
         */
       /* CompleteClass */
-      override def setBounce(value: Double): GameObject = js.native
+      override def setBounce(value: Double): this.type = js.native
       
       /**
         * Sets density of the body.
         * @param value The new density of the body.
         */
       /* CompleteClass */
-      override def setDensity(value: Double): GameObject = js.native
+      override def setDensity(value: Double): this.type = js.native
       
       /**
         * The depth of this Game Object within the Scene.
@@ -1842,20 +1711,10 @@ object Physics {
         * value will always render in front of one with a lower value.
         * 
         * Setting the depth will queue a depth sort event within the Scene.
-        * @param value The depth of this Game Object.
+        * @param value The depth of this Game Object. Ensure this value is only ever a number data-type.
         */
       /* CompleteClass */
       override def setDepth(value: Double): this.type = js.native
-      
-      /**
-        * Sets the display size of this Game Object.
-        * 
-        * Calling this will adjust the scale.
-        * @param width The width of this Game Object.
-        * @param height The height of this Game Object.
-        */
-      /* CompleteClass */
-      override def setDisplaySize(width: Double, height: Double): this.type = js.native
       
       /**
         * Sets the horizontal and vertical flipped state of this Game Object.
@@ -1892,14 +1751,14 @@ object Physics {
         * @param value Set to true to ignore the effect of world gravity, or false to not ignore it.
         */
       /* CompleteClass */
-      override def setIgnoreGravity(value: Boolean): GameObject = js.native
+      override def setIgnoreGravity(value: Boolean): this.type = js.native
       
       /**
         * Sets the mass of the Game Object's Matter Body.
         * @param value The new mass of the body.
         */
       /* CompleteClass */
-      override def setMass(value: Double): GameObject = js.native
+      override def setMass(value: Double): this.type = js.native
       
       /**
         * Set the body belonging to this Game Object to be a sensor.
@@ -1907,45 +1766,14 @@ object Physics {
         * @param value `true` to set the body as a sensor, or `false` to disable it.
         */
       /* CompleteClass */
-      override def setSensor(value: Boolean): GameObject = js.native
-      
-      /**
-        * Sets the internal size of this Game Object, as used for frame or physics body creation.
-        * 
-        * This will not change the size that the Game Object is rendered in-game.
-        * For that you need to either set the scale of the Game Object (`setScale`) or call the
-        * `setDisplaySize` method, which is the same thing as changing the scale but allows you
-        * to do so by giving pixel values.
-        * 
-        * If you have enabled this Game Object for input, changing the size will _not_ change the
-        * size of the hit area. To do this you should adjust the `input.hitArea` object directly.
-        * @param width The width of this Game Object.
-        * @param height The height of this Game Object.
-        */
-      /* CompleteClass */
-      override def setSize(width: Double, height: Double): this.type = js.native
-      
-      /**
-        * Sets the size of this Game Object to be that of the given Frame.
-        * 
-        * This will not change the size that the Game Object is rendered in-game.
-        * For that you need to either set the scale of the Game Object (`setScale`) or call the
-        * `setDisplaySize` method, which is the same thing as changing the scale but allows you
-        * to do so by giving pixel values.
-        * 
-        * If you have enabled this Game Object for input, changing the size will _not_ change the
-        * size of the hit area. To do this you should adjust the `input.hitArea` object directly.
-        * @param frame The frame to base the size of this Game Object on.
-        */
-      /* CompleteClass */
-      override def setSizeToFrame(frame: Frame): this.type = js.native
+      override def setSensor(value: Boolean): this.type = js.native
       
       /**
         * Changes the physics body to be either static `true` or dynamic `false`.
         * @param value `true` to set the body as being static, or `false` to make it dynamic.
         */
       /* CompleteClass */
-      override def setStatic(value: Boolean): GameObject = js.native
+      override def setStatic(value: Boolean): this.type = js.native
       
       /**
         * Sets the visibility of this Game Object.
@@ -1963,7 +1791,7 @@ object Physics {
         * @param speed A speed value to be applied to a directional force.
         */
       /* CompleteClass */
-      override def thrust(speed: Double): GameObject = js.native
+      override def thrust(speed: Double): this.type = js.native
       
       /**
         * Apply thrust to the back position of the body.
@@ -1972,7 +1800,7 @@ object Physics {
         * @param speed A speed value to be applied to a directional force.
         */
       /* CompleteClass */
-      override def thrustBack(speed: Double): GameObject = js.native
+      override def thrustBack(speed: Double): this.type = js.native
       
       /**
         * Apply thrust to the left position of the body.
@@ -1981,7 +1809,7 @@ object Physics {
         * @param speed A speed value to be applied to a directional force.
         */
       /* CompleteClass */
-      override def thrustLeft(speed: Double): GameObject = js.native
+      override def thrustLeft(speed: Double): this.type = js.native
       
       /**
         * Apply thrust to the right position of the body.
@@ -1990,7 +1818,7 @@ object Physics {
         * @param speed A speed value to be applied to a directional force.
         */
       /* CompleteClass */
-      override def thrustRight(speed: Double): GameObject = js.native
+      override def thrustRight(speed: Double): this.type = js.native
       
       /**
         * Toggles the horizontal flipped state of this Game Object.
@@ -2015,16 +1843,6 @@ object Physics {
         */
       /* CompleteClass */
       var visible: Boolean = js.native
-      
-      /**
-        * The native (un-scaled) width of this Game Object.
-        * 
-        * Changing this value will not change the size that the Game Object is rendered in-game.
-        * For that you need to either set the scale of the Game Object (`setScale`) or use
-        * the `displayWidth` property.
-        */
-      /* CompleteClass */
-      var width: Double = js.native
     }
     
     /**
@@ -2256,7 +2074,7 @@ object Physics {
         * The body that is currently being dragged, if any.
         */
       /* CompleteClass */
-      var body: BodyType = js.native
+      var body: BodyType | Null = js.native
       
       /**
         * The Camera the Pointer was interacting with when the input
@@ -2317,7 +2135,7 @@ object Physics {
         * The part of the body that was clicked on to start the drag.
         */
       /* CompleteClass */
-      var part: BodyType = js.native
+      var part: BodyType | Null = js.native
       
       /**
         * A reference to the Input Pointer that activated this Constraint.
@@ -2471,7 +2289,7 @@ object Physics {
         * @param force A Vector that specifies the force to apply.
         */
       /* CompleteClass */
-      override def applyForce(force: Vector2): GameObject = js.native
+      override def applyForce(force: Vector2): this.type = js.native
       
       /**
         * Applies a force to a body from a given position.
@@ -2479,7 +2297,7 @@ object Physics {
         * @param force A Vector that specifies the force to apply.
         */
       /* CompleteClass */
-      override def applyForceFrom(position: Vector2, force: Vector2): GameObject = js.native
+      override def applyForceFrom(position: Vector2, force: Vector2): this.type = js.native
       
       /**
         * The body's center of mass.
@@ -2492,7 +2310,7 @@ object Physics {
       override val centerOfMass: Vector2 = js.native
       
       /**
-        * The depth of this Game Object within the Scene.
+        * The depth of this Game Object within the Scene. Ensure this value is only ever set to a number data-type.
         * 
         * The depth is also known as the 'z-index' in some environments, and allows you to change the rendering order
         * of Game Objects, without actually moving their position in the display list.
@@ -2504,26 +2322,6 @@ object Physics {
         */
       /* CompleteClass */
       var depth: Double = js.native
-      
-      /**
-        * The displayed height of this Game Object.
-        * 
-        * This value takes into account the scale factor.
-        * 
-        * Setting this value will adjust the Game Object's scale property.
-        */
-      /* CompleteClass */
-      var displayHeight: Double = js.native
-      
-      /**
-        * The displayed width of this Game Object.
-        * 
-        * This value takes into account the scale factor.
-        * 
-        * Setting this value will adjust the Game Object's scale property.
-        */
-      /* CompleteClass */
-      var displayWidth: Double = js.native
       
       /**
         * The horizontally flipped state of the Game Object.
@@ -2544,16 +2342,6 @@ object Physics {
         */
       /* CompleteClass */
       var flipY: Boolean = js.native
-      
-      /**
-        * The native (un-scaled) height of this Game Object.
-        * 
-        * Changing this value will not change the size that the Game Object is rendered in-game.
-        * For that you need to either set the scale of the Game Object (`setScale`) or use
-        * the `displayHeight` property.
-        */
-      /* CompleteClass */
-      var height: Double = js.native
       
       /**
         * Is the body belonging to this Game Object a sensor or not?
@@ -2578,14 +2366,14 @@ object Physics {
         * @param value A Number that defines the restitution (elasticity) of the body. The value is always positive and is in the range (0, 1). A value of 0 means collisions may be perfectly inelastic and no bouncing may occur. A value of 0.8 means the body may bounce back with approximately 80% of its kinetic energy. Note that collision response is based on pairs of bodies, and that restitution values are combined with the following formula: `Math.max(bodyA.restitution, bodyB.restitution)`
         */
       /* CompleteClass */
-      override def setBounce(value: Double): GameObject = js.native
+      override def setBounce(value: Double): this.type = js.native
       
       /**
         * Sets density of the body.
         * @param value The new density of the body.
         */
       /* CompleteClass */
-      override def setDensity(value: Double): GameObject = js.native
+      override def setDensity(value: Double): this.type = js.native
       
       /**
         * The depth of this Game Object within the Scene.
@@ -2597,20 +2385,10 @@ object Physics {
         * value will always render in front of one with a lower value.
         * 
         * Setting the depth will queue a depth sort event within the Scene.
-        * @param value The depth of this Game Object.
+        * @param value The depth of this Game Object. Ensure this value is only ever a number data-type.
         */
       /* CompleteClass */
       override def setDepth(value: Double): this.type = js.native
-      
-      /**
-        * Sets the display size of this Game Object.
-        * 
-        * Calling this will adjust the scale.
-        * @param width The width of this Game Object.
-        * @param height The height of this Game Object.
-        */
-      /* CompleteClass */
-      override def setDisplaySize(width: Double, height: Double): this.type = js.native
       
       /**
         * Sets the horizontal and vertical flipped state of this Game Object.
@@ -2647,14 +2425,14 @@ object Physics {
         * @param value Set to true to ignore the effect of world gravity, or false to not ignore it.
         */
       /* CompleteClass */
-      override def setIgnoreGravity(value: Boolean): GameObject = js.native
+      override def setIgnoreGravity(value: Boolean): this.type = js.native
       
       /**
         * Sets the mass of the Game Object's Matter Body.
         * @param value The new mass of the body.
         */
       /* CompleteClass */
-      override def setMass(value: Double): GameObject = js.native
+      override def setMass(value: Double): this.type = js.native
       
       /**
         * Set the body belonging to this Game Object to be a sensor.
@@ -2662,45 +2440,14 @@ object Physics {
         * @param value `true` to set the body as a sensor, or `false` to disable it.
         */
       /* CompleteClass */
-      override def setSensor(value: Boolean): GameObject = js.native
-      
-      /**
-        * Sets the internal size of this Game Object, as used for frame or physics body creation.
-        * 
-        * This will not change the size that the Game Object is rendered in-game.
-        * For that you need to either set the scale of the Game Object (`setScale`) or call the
-        * `setDisplaySize` method, which is the same thing as changing the scale but allows you
-        * to do so by giving pixel values.
-        * 
-        * If you have enabled this Game Object for input, changing the size will _not_ change the
-        * size of the hit area. To do this you should adjust the `input.hitArea` object directly.
-        * @param width The width of this Game Object.
-        * @param height The height of this Game Object.
-        */
-      /* CompleteClass */
-      override def setSize(width: Double, height: Double): this.type = js.native
-      
-      /**
-        * Sets the size of this Game Object to be that of the given Frame.
-        * 
-        * This will not change the size that the Game Object is rendered in-game.
-        * For that you need to either set the scale of the Game Object (`setScale`) or call the
-        * `setDisplaySize` method, which is the same thing as changing the scale but allows you
-        * to do so by giving pixel values.
-        * 
-        * If you have enabled this Game Object for input, changing the size will _not_ change the
-        * size of the hit area. To do this you should adjust the `input.hitArea` object directly.
-        * @param frame The frame to base the size of this Game Object on.
-        */
-      /* CompleteClass */
-      override def setSizeToFrame(frame: Frame): this.type = js.native
+      override def setSensor(value: Boolean): this.type = js.native
       
       /**
         * Changes the physics body to be either static `true` or dynamic `false`.
         * @param value `true` to set the body as being static, or `false` to make it dynamic.
         */
       /* CompleteClass */
-      override def setStatic(value: Boolean): GameObject = js.native
+      override def setStatic(value: Boolean): this.type = js.native
       
       /**
         * Sets the visibility of this Game Object.
@@ -2718,7 +2465,7 @@ object Physics {
         * @param speed A speed value to be applied to a directional force.
         */
       /* CompleteClass */
-      override def thrust(speed: Double): GameObject = js.native
+      override def thrust(speed: Double): this.type = js.native
       
       /**
         * Apply thrust to the back position of the body.
@@ -2727,7 +2474,7 @@ object Physics {
         * @param speed A speed value to be applied to a directional force.
         */
       /* CompleteClass */
-      override def thrustBack(speed: Double): GameObject = js.native
+      override def thrustBack(speed: Double): this.type = js.native
       
       /**
         * Apply thrust to the left position of the body.
@@ -2736,7 +2483,7 @@ object Physics {
         * @param speed A speed value to be applied to a directional force.
         */
       /* CompleteClass */
-      override def thrustLeft(speed: Double): GameObject = js.native
+      override def thrustLeft(speed: Double): this.type = js.native
       
       /**
         * Apply thrust to the right position of the body.
@@ -2745,7 +2492,7 @@ object Physics {
         * @param speed A speed value to be applied to a directional force.
         */
       /* CompleteClass */
-      override def thrustRight(speed: Double): GameObject = js.native
+      override def thrustRight(speed: Double): this.type = js.native
       
       /**
         * Toggles the horizontal flipped state of this Game Object.
@@ -2770,16 +2517,6 @@ object Physics {
         */
       /* CompleteClass */
       var visible: Boolean = js.native
-      
-      /**
-        * The native (un-scaled) width of this Game Object.
-        * 
-        * Changing this value will not change the size that the Game Object is rendered in-game.
-        * For that you need to either set the scale of the Game Object (`setScale`) or use
-        * the `displayWidth` property.
-        */
-      /* CompleteClass */
-      var width: Double = js.native
     }
     
     /**
@@ -2835,28 +2572,28 @@ object Physics {
         * @param value A Number that defines the restitution (elasticity) of the body. The value is always positive and is in the range (0, 1). A value of 0 means collisions may be perfectly inelastic and no bouncing may occur. A value of 0.8 means the body may bounce back with approximately 80% of its kinetic energy. Note that collision response is based on pairs of bodies, and that restitution values are combined with the following formula: `Math.max(bodyA.restitution, bodyB.restitution)`
         */
       /* CompleteClass */
-      override def setBounce(value: Double): GameObject = js.native
+      override def setBounce(value: Double): this.type = js.native
       
       /**
         * Sets density of the body.
         * @param value The new density of the body.
         */
       /* CompleteClass */
-      override def setDensity(value: Double): GameObject = js.native
+      override def setDensity(value: Double): this.type = js.native
       
       /**
         * A togglable function for ignoring world gravity in real-time on the current body.
         * @param value Set to true to ignore the effect of world gravity, or false to not ignore it.
         */
       /* CompleteClass */
-      override def setIgnoreGravity(value: Boolean): GameObject = js.native
+      override def setIgnoreGravity(value: Boolean): this.type = js.native
       
       /**
         * Sets the mass of the Game Object's Matter Body.
         * @param value The new mass of the body.
         */
       /* CompleteClass */
-      override def setMass(value: Double): GameObject = js.native
+      override def setMass(value: Double): this.type = js.native
       
       /**
         * Set the body belonging to this Game Object to be a sensor.
@@ -2864,14 +2601,14 @@ object Physics {
         * @param value `true` to set the body as a sensor, or `false` to disable it.
         */
       /* CompleteClass */
-      override def setSensor(value: Boolean): GameObject = js.native
+      override def setSensor(value: Boolean): this.type = js.native
       
       /**
         * Changes the physics body to be either static `true` or dynamic `false`.
         * @param value `true` to set the body as being static, or `false` to make it dynamic.
         */
       /* CompleteClass */
-      override def setStatic(value: Boolean): GameObject = js.native
+      override def setStatic(value: Boolean): this.type = js.native
     }
     
     /**

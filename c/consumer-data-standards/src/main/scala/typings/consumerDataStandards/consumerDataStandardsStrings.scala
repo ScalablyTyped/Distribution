@@ -1,6 +1,7 @@
 package typings.consumerDataStandards
 
 import typings.consumerDataStandards.bankingMod.BankingProductCategory
+import typings.consumerDataStandards.telcoMod.TelcoPlanType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,6 +27,14 @@ object consumerDataStandardsStrings {
   @js.native
   sealed trait `5_YEAR` extends StObject
   inline def `5_YEAR`: `5_YEAR` = "5_YEAR".asInstanceOf[`5_YEAR`]
+  
+  @js.native
+  sealed trait `A128CBC-HS256` extends StObject
+  inline def `A128CBC-HS256`: `A128CBC-HS256` = "A128CBC-HS256".asInstanceOf[`A128CBC-HS256`]
+  
+  @js.native
+  sealed trait A256GCM extends StObject
+  inline def A256GCM: A256GCM = "A256GCM".asInstanceOf[A256GCM]
   
   @js.native
   sealed trait ABN extends StObject
@@ -148,6 +157,10 @@ object consumerDataStandardsStrings {
   inline def BPAY: BPAY = "BPAY".asInstanceOf[BPAY]
   
   @js.native
+  sealed trait BROADBAND extends StObject
+  inline def BROADBAND: BROADBAND = "BROADBAND".asInstanceOf[BROADBAND]
+  
+  @js.native
   sealed trait BUNDLE_BONUS extends StObject
   inline def BUNDLE_BONUS: BUNDLE_BONUS = "BUNDLE_BONUS".asInstanceOf[BUNDLE_BONUS]
   
@@ -242,6 +255,10 @@ object consumerDataStandardsStrings {
   inline def COMPLEMENTARY_PRODUCT_DISCOUNTS: COMPLEMENTARY_PRODUCT_DISCOUNTS = "COMPLEMENTARY_PRODUCT_DISCOUNTS".asInstanceOf[COMPLEMENTARY_PRODUCT_DISCOUNTS]
   
   @js.native
+  sealed trait CONCESSION extends StObject
+  inline def CONCESSION: CONCESSION = "CONCESSION".asInstanceOf[CONCESSION]
+  
+  @js.native
   sealed trait CONDITIONAL extends StObject
   inline def CONDITIONAL: CONDITIONAL = "CONDITIONAL".asInstanceOf[CONDITIONAL]
   
@@ -292,6 +309,10 @@ object consumerDataStandardsStrings {
   inline def DAILY: DAILY = "DAILY".asInstanceOf[DAILY]
   
   @js.native
+  sealed trait DATA extends StObject
+  inline def DATA: DATA = "DATA".asInstanceOf[DATA]
+  
+  @js.native
   sealed trait DAY extends StObject
   inline def DAY: DAY = "DAY".asInstanceOf[DAY]
   
@@ -318,6 +339,10 @@ object consumerDataStandardsStrings {
   @js.native
   sealed trait DEPOSITS extends StObject
   inline def DEPOSITS: DEPOSITS = "DEPOSITS".asInstanceOf[DEPOSITS]
+  
+  @js.native
+  sealed trait DEVICE extends StObject
+  inline def DEVICE: DEVICE = "DEVICE".asInstanceOf[DEVICE]
   
   @js.native
   sealed trait DE_ENERGISED extends StObject
@@ -404,8 +429,16 @@ object consumerDataStandardsStrings {
   inline def EMPLOYMENT_STATUS: EMPLOYMENT_STATUS = "EMPLOYMENT_STATUS".asInstanceOf[EMPLOYMENT_STATUS]
   
   @js.native
+  sealed trait ENTERTAINMENT extends StObject
+  inline def ENTERTAINMENT: ENTERTAINMENT = "ENTERTAINMENT".asInstanceOf[ENTERTAINMENT]
+  
+  @js.native
   sealed trait ENVIRONMENTAL extends StObject
   inline def ENVIRONMENTAL: ENVIRONMENTAL = "ENVIRONMENTAL".asInstanceOf[ENVIRONMENTAL]
+  
+  @js.native
+  sealed trait EQUIPMENT extends StObject
+  inline def EQUIPMENT: EQUIPMENT = "EQUIPMENT".asInstanceOf[EQUIPMENT]
   
   @js.native
   sealed trait ES256 extends StObject
@@ -564,6 +597,10 @@ object consumerDataStandardsStrings {
   inline def GOVERNMENT_ENTITY: GOVERNMENT_ENTITY = "GOVERNMENT_ENTITY".asInstanceOf[GOVERNMENT_ENTITY]
   
   @js.native
+  sealed trait GRANT extends StObject
+  inline def GRANT: GRANT = "GRANT".asInstanceOf[GRANT]
+  
+  @js.native
   sealed trait GREENFIELD extends StObject
   inline def GREENFIELD: GREENFIELD = "GREENFIELD".asInstanceOf[GREENFIELD]
   
@@ -586,6 +623,10 @@ object consumerDataStandardsStrings {
   @js.native
   sealed trait GUARANTOR extends StObject
   inline def GUARANTOR: GUARANTOR = "GUARANTOR".asInstanceOf[GUARANTOR]
+  
+  @js.native
+  sealed trait HANDSET extends StObject
+  inline def HANDSET: HANDSET = "HANDSET".asInstanceOf[HANDSET]
   
   @js.native
   sealed trait HIGH extends StObject
@@ -702,6 +743,12 @@ object consumerDataStandardsStrings {
   inline def LEASES: LEASES = "LEASES".asInstanceOf[LEASES]
   
   @js.native
+  sealed trait LIMITED
+    extends StObject
+       with TelcoPlanType
+  inline def LIMITED: LIMITED = "LIMITED".asInstanceOf[LIMITED]
+  
+  @js.native
   sealed trait LNSP extends StObject
   inline def LNSP: LNSP = "LNSP".asInstanceOf[LNSP]
   
@@ -724,6 +771,10 @@ object consumerDataStandardsStrings {
   @js.native
   sealed trait MAIL extends StObject
   inline def MAIL: MAIL = "MAIL".asInstanceOf[MAIL]
+  
+  @js.native
+  sealed trait MANY_PARTY extends StObject
+  inline def MANY_PARTY: MANY_PARTY = "MANY_PARTY".asInstanceOf[MANY_PARTY]
   
   @js.native
   sealed trait MARGIN_LOANS
@@ -764,8 +815,18 @@ object consumerDataStandardsStrings {
   inline def MEMBERSHIP: MEMBERSHIP = "MEMBERSHIP".asInstanceOf[MEMBERSHIP]
   
   @js.native
+  sealed trait MESSAGING extends StObject
+  inline def MESSAGING: MESSAGING = "MESSAGING".asInstanceOf[MESSAGING]
+  
+  @js.native
   sealed trait METER extends StObject
   inline def METER: METER = "METER".asInstanceOf[METER]
+  
+  @js.native
+  sealed trait METERED
+    extends StObject
+       with TelcoPlanType
+  inline def METERED: METERED = "METERED".asInstanceOf[METERED]
   
   @js.native
   sealed trait METERING extends StObject
@@ -904,6 +965,10 @@ object consumerDataStandardsStrings {
   inline def ON: ON = "ON".asInstanceOf[ON]
   
   @js.native
+  sealed trait ONE_PARTY extends StObject
+  inline def ONE_PARTY: ONE_PARTY = "ONE_PARTY".asInstanceOf[ONE_PARTY]
+  
+  @js.native
   sealed trait ONGOING extends StObject
   inline def ONGOING: ONGOING = "ONGOING".asInstanceOf[ONGOING]
   
@@ -1026,6 +1091,10 @@ object consumerDataStandardsStrings {
   inline def PERIODIC: PERIODIC = "PERIODIC".asInstanceOf[PERIODIC]
   
   @js.native
+  sealed trait PERSONAL extends StObject
+  inline def PERSONAL: PERSONAL = "PERSONAL".asInstanceOf[PERSONAL]
+  
+  @js.native
   sealed trait PERS_LOANS
     extends StObject
        with BankingProductCategory
@@ -1044,8 +1113,16 @@ object consumerDataStandardsStrings {
   inline def POSTED: POSTED = "POSTED".asInstanceOf[POSTED]
   
   @js.native
+  sealed trait POST_PAID extends StObject
+  inline def POST_PAID: POST_PAID = "POST_PAID".asInstanceOf[POST_PAID]
+  
+  @js.native
   sealed trait PREMIUM extends StObject
   inline def PREMIUM: PREMIUM = "PREMIUM".asInstanceOf[PREMIUM]
+  
+  @js.native
+  sealed trait PRE_PAID extends StObject
+  inline def PRE_PAID: PRE_PAID = "PRE_PAID".asInstanceOf[PRE_PAID]
   
   @js.native
   sealed trait PRINCIPAL_AND_INTEREST extends StObject
@@ -1090,6 +1167,10 @@ object consumerDataStandardsStrings {
   @js.native
   sealed trait REACTIVE_IMPORT extends StObject
   inline def REACTIVE_IMPORT: REACTIVE_IMPORT = "REACTIVE_IMPORT".asInstanceOf[REACTIVE_IMPORT]
+  
+  @js.native
+  sealed trait REBATE extends StObject
+  inline def REBATE: REBATE = "REBATE".asInstanceOf[REBATE]
   
   @js.native
   sealed trait RECONNECTION extends StObject
@@ -1164,6 +1245,14 @@ object consumerDataStandardsStrings {
   inline def ROLLED_OVER: ROLLED_OVER = "ROLLED_OVER".asInstanceOf[ROLLED_OVER]
   
   @js.native
+  sealed trait `RSA-OAEP` extends StObject
+  inline def `RSA-OAEP`: `RSA-OAEP` = "RSA-OAEP".asInstanceOf[`RSA-OAEP`]
+  
+  @js.native
+  sealed trait `RSA-OAEP-256` extends StObject
+  inline def `RSA-OAEP-256`: `RSA-OAEP-256` = "RSA-OAEP-256".asInstanceOf[`RSA-OAEP-256`]
+  
+  @js.native
   sealed trait SA extends StObject
   inline def SA: SA = "SA".asInstanceOf[SA]
   
@@ -1182,6 +1271,10 @@ object consumerDataStandardsStrings {
   @js.native
   sealed trait SENIOR_CARD extends StObject
   inline def SENIOR_CARD: SENIOR_CARD = "SENIOR_CARD".asInstanceOf[SENIOR_CARD]
+  
+  @js.native
+  sealed trait SERVICE extends StObject
+  inline def SERVICE: SERVICE = "SERVICE".asInstanceOf[SERVICE]
   
   @js.native
   sealed trait SERVICE_CHARGE extends StObject
@@ -1222,6 +1315,10 @@ object consumerDataStandardsStrings {
   @js.native
   sealed trait SMALL_BUSINESS extends StObject
   inline def SMALL_BUSINESS: SMALL_BUSINESS = "SMALL_BUSINESS".asInstanceOf[SMALL_BUSINESS]
+  
+  @js.native
+  sealed trait SOFTWARE extends StObject
+  inline def SOFTWARE: SOFTWARE = "SOFTWARE".asInstanceOf[SOFTWARE]
   
   @js.native
   sealed trait SOLAR extends StObject
@@ -1270,6 +1367,10 @@ object consumerDataStandardsStrings {
   @js.native
   sealed trait STUDENT extends StObject
   inline def STUDENT: STUDENT = "STUDENT".asInstanceOf[STUDENT]
+  
+  @js.native
+  sealed trait SUBSCRIPTION extends StObject
+  inline def SUBSCRIPTION: SUBSCRIPTION = "SUBSCRIPTION".asInstanceOf[SUBSCRIPTION]
   
   @js.native
   sealed trait SUBSTITUTE extends StObject
@@ -1364,6 +1465,10 @@ object consumerDataStandardsStrings {
   inline def TUE: TUE = "TUE".asInstanceOf[TUE]
   
   @js.native
+  sealed trait TWO_PARTY extends StObject
+  inline def TWO_PARTY: TWO_PARTY = "TWO_PARTY".asInstanceOf[TWO_PARTY]
+  
+  @js.native
   sealed trait UMCP extends StObject
   inline def UMCP: UMCP = "UMCP".asInstanceOf[UMCP]
   
@@ -1380,6 +1485,12 @@ object consumerDataStandardsStrings {
   inline def UNLIMITED_TXNS: UNLIMITED_TXNS = "UNLIMITED_TXNS".asInstanceOf[UNLIMITED_TXNS]
   
   @js.native
+  sealed trait UNMETERED
+    extends StObject
+       with TelcoPlanType
+  inline def UNMETERED: UNMETERED = "UNMETERED".asInstanceOf[UNMETERED]
+  
+  @js.native
   sealed trait UNRESTRICTED extends StObject
   inline def UNRESTRICTED: UNRESTRICTED = "UNRESTRICTED".asInstanceOf[UNRESTRICTED]
   
@@ -1388,8 +1499,18 @@ object consumerDataStandardsStrings {
   inline def UNSPECIFIED: UNSPECIFIED = "UNSPECIFIED".asInstanceOf[UNSPECIFIED]
   
   @js.native
+  sealed trait UNSUPPORTED
+    extends StObject
+       with TelcoPlanType
+  inline def UNSUPPORTED: UNSUPPORTED = "UNSUPPORTED".asInstanceOf[UNSUPPORTED]
+  
+  @js.native
   sealed trait UPFRONT extends StObject
   inline def UPFRONT: UPFRONT = "UPFRONT".asInstanceOf[UPFRONT]
+  
+  @js.native
+  sealed trait UPFRONT_PAID extends StObject
+  inline def UPFRONT_PAID: UPFRONT_PAID = "UPFRONT_PAID".asInstanceOf[UPFRONT_PAID]
   
   @js.native
   sealed trait USAGE extends StObject
@@ -1410,6 +1531,14 @@ object consumerDataStandardsStrings {
   @js.native
   sealed trait VISA extends StObject
   inline def VISA: VISA = "VISA".asInstanceOf[VISA]
+  
+  @js.native
+  sealed trait VOICE extends StObject
+  inline def VOICE: VOICE = "VOICE".asInstanceOf[VOICE]
+  
+  @js.native
+  sealed trait VOUCHER extends StObject
+  inline def VOUCHER: VOUCHER = "VOUCHER".asInstanceOf[VOUCHER]
   
   @js.native
   sealed trait WED extends StObject
@@ -1480,12 +1609,20 @@ object consumerDataStandardsStrings {
   inline def client_credentials: client_credentials = "client_credentials".asInstanceOf[client_credentials]
   
   @js.native
+  sealed trait code extends StObject
+  inline def code: code = "code".asInstanceOf[code]
+  
+  @js.native
   sealed trait `code id_token` extends StObject
   inline def `code id_token`: `code id_token` = ("code id_token").asInstanceOf[`code id_token`]
   
   @js.native
   sealed trait creditCard extends StObject
   inline def creditCard: creditCard = "creditCard".asInstanceOf[creditCard]
+  
+  @js.native
+  sealed trait `data-recipient-software-product` extends StObject
+  inline def `data-recipient-software-product`: `data-recipient-software-product` = "data-recipient-software-product".asInstanceOf[`data-recipient-software-product`]
   
   @js.native
   sealed trait demandCharges extends StObject

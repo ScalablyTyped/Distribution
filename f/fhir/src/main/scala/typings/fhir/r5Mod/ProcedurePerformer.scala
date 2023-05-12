@@ -19,9 +19,14 @@ trait ProcedurePerformer
   var function: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
-    * The organization the device or practitioner was acting on behalf of.
+    * Organization, Patient, RelatedPerson, Device, CareTeam, and HealthcareService can be associated with multiple organizations. This element indicates which organization they were acting on behalf of when performing the action.
     */
   var onBehalfOf: js.UndefOr[Reference] = js.undefined
+  
+  /**
+    * Time period during which the performer performed the procedure.
+    */
+  var period: js.UndefOr[Period] = js.undefined
 }
 object ProcedurePerformer {
   
@@ -42,5 +47,9 @@ object ProcedurePerformer {
     inline def setOnBehalfOf(value: Reference): Self = StObject.set(x, "onBehalfOf", value.asInstanceOf[js.Any])
     
     inline def setOnBehalfOfUndefined: Self = StObject.set(x, "onBehalfOf", js.undefined)
+    
+    inline def setPeriod(value: Period): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
+    
+    inline def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
   }
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for hapi-auth-jwt2
 
-Typings are for version 10.2.0
+Typings are for version 10.4.0
 
 ## Library description:
 Hapi.js Authentication Plugin/Scheme using JSON Web Tokens (JWT)

@@ -27,7 +27,7 @@ trait DescribeCompilationJobResponse extends StObject {
   var CompilationJobStatus: typings.awsSdk.clientsSagemakerMod.CompilationJobStatus
   
   /**
-    * The time when the model compilation job started the CompilationJob instances.  You are billed for the time between this timestamp and the timestamp in the DescribeCompilationJobResponse$CompilationEndTime field. In Amazon CloudWatch Logs, the start time might be later than this time. That's because it takes time to download the compilation job, which depends on the size of the compilation job container. 
+    * The time when the model compilation job started the CompilationJob instances.  You are billed for the time between this timestamp and the timestamp in the CompilationEndTime field. In Amazon CloudWatch Logs, the start time might be later than this time. That's because it takes time to download the compilation job, which depends on the size of the compilation job container. 
     */
   var CompilationStartTime: js.UndefOr[js.Date] = js.undefined
   

@@ -6,6 +6,7 @@ import typings.fileType.coreMod.MimeType
 import typings.fileType.coreMod.ReadableStreamWithFileType
 import typings.fileType.coreMod.StreamOptions
 import typings.node.nodeColonstreamMod.Readable
+import typings.std.Blob
 import typings.std.ReadonlySet
 import typings.strtok3.libTypesMod.ITokenizer
 import org.scalablytyped.runtime.StObject
@@ -17,6 +18,8 @@ object mod {
   @JSImport("file-type", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
+  
+  inline def fileTypeFromBlob(blob: Blob): js.Promise[js.UndefOr[FileTypeResult]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fileTypeFromBlob")(blob.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[FileTypeResult]]]
   
   inline def fileTypeFromBuffer(buffer: js.typedarray.ArrayBuffer): js.Promise[js.UndefOr[FileTypeResult]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fileTypeFromBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[FileTypeResult]]]
   inline def fileTypeFromBuffer(buffer: js.typedarray.Uint8Array): js.Promise[js.UndefOr[FileTypeResult]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fileTypeFromBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[FileTypeResult]]]

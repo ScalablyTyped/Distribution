@@ -17,9 +17,9 @@ trait GetAssetPropertyValueHistoryRequest extends StObject {
   var endDate: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The maximum number of results to return for each paginated request. Default: 100
+    * The maximum number of results to return for each paginated request. A result set is returned in the two cases, whichever occurs first.   The size of the result set is equal to 4 MB.   The number of data points in the result set is equal to the value of maxResults. The maximum value of maxResults is 20000.  
     */
-  var maxResults: js.UndefOr[MaxResults] = js.undefined
+  var maxResults: js.UndefOr[GetAssetPropertyValueHistoryMaxResults] = js.undefined
   
   /**
     * The token to be used for the next set of paginated results.
@@ -69,7 +69,7 @@ object GetAssetPropertyValueHistoryRequest {
     
     inline def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
     
-    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: GetAssetPropertyValueHistoryMaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
     inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     

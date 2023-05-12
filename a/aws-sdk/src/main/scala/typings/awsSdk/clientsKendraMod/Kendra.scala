@@ -54,6 +54,20 @@ trait Kendra extends Service {
   ): Request[BatchDeleteDocumentResponse, AWSError] = js.native
   
   /**
+    * Removes one or more sets of featured results. Features results are placed above all other results for certain queries. If there's an exact match of a query, then one or more specific documents are featured in the search results.
+    */
+  def batchDeleteFeaturedResultsSet(): Request[BatchDeleteFeaturedResultsSetResponse, AWSError] = js.native
+  def batchDeleteFeaturedResultsSet(callback: js.Function2[/* err */ AWSError, /* data */ BatchDeleteFeaturedResultsSetResponse, Unit]): Request[BatchDeleteFeaturedResultsSetResponse, AWSError] = js.native
+  /**
+    * Removes one or more sets of featured results. Features results are placed above all other results for certain queries. If there's an exact match of a query, then one or more specific documents are featured in the search results.
+    */
+  def batchDeleteFeaturedResultsSet(params: BatchDeleteFeaturedResultsSetRequest): Request[BatchDeleteFeaturedResultsSetResponse, AWSError] = js.native
+  def batchDeleteFeaturedResultsSet(
+    params: BatchDeleteFeaturedResultsSetRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ BatchDeleteFeaturedResultsSetResponse, Unit]
+  ): Request[BatchDeleteFeaturedResultsSetResponse, AWSError] = js.native
+  
+  /**
     * Returns the indexing status for one or more documents submitted with the  BatchPutDocument API. When you use the BatchPutDocument API, documents are indexed asynchronously. You can use the BatchGetDocumentStatus API to get the current status of a list of documents so that you can determine if they have been successfully indexed. You can also use the BatchGetDocumentStatus API to check the status of the  BatchDeleteDocument API. When a document is deleted from the index, Amazon Kendra returns NOT_FOUND as the status.
     */
   def batchGetDocumentStatus(): Request[BatchGetDocumentStatusResponse, AWSError] = js.native
@@ -115,12 +129,12 @@ trait Kendra extends Service {
   ): Request[CreateAccessControlConfigurationResponse, AWSError] = js.native
   
   /**
-    * Creates a data source connector that you want to use with an Amazon Kendra index. You specify a name, data source connector type and description for your data source. You also specify configuration information for the data source connector.  CreateDataSource is a synchronous operation. The operation returns 200 if the data source was successfully created. Otherwise, an exception is raised. Amazon S3 and custom data sources are the only supported data sources in the Amazon Web Services GovCloud (US-West) region. For an example of creating an index and data source using the Python SDK, see Getting started with Python SDK. For an example of creating an index and data source using the Java SDK, see Getting started with Java SDK.
+    * Creates a data source connector that you want to use with an Amazon Kendra index. You specify a name, data source connector type and description for your data source. You also specify configuration information for the data source connector.  CreateDataSource is a synchronous operation. The operation returns 200 if the data source was successfully created. Otherwise, an exception is raised. For an example of creating an index and data source using the Python SDK, see Getting started with Python SDK. For an example of creating an index and data source using the Java SDK, see Getting started with Java SDK.
     */
   def createDataSource(): Request[CreateDataSourceResponse, AWSError] = js.native
   def createDataSource(callback: js.Function2[/* err */ AWSError, /* data */ CreateDataSourceResponse, Unit]): Request[CreateDataSourceResponse, AWSError] = js.native
   /**
-    * Creates a data source connector that you want to use with an Amazon Kendra index. You specify a name, data source connector type and description for your data source. You also specify configuration information for the data source connector.  CreateDataSource is a synchronous operation. The operation returns 200 if the data source was successfully created. Otherwise, an exception is raised. Amazon S3 and custom data sources are the only supported data sources in the Amazon Web Services GovCloud (US-West) region. For an example of creating an index and data source using the Python SDK, see Getting started with Python SDK. For an example of creating an index and data source using the Java SDK, see Getting started with Java SDK.
+    * Creates a data source connector that you want to use with an Amazon Kendra index. You specify a name, data source connector type and description for your data source. You also specify configuration information for the data source connector.  CreateDataSource is a synchronous operation. The operation returns 200 if the data source was successfully created. Otherwise, an exception is raised. For an example of creating an index and data source using the Python SDK, see Getting started with Python SDK. For an example of creating an index and data source using the Java SDK, see Getting started with Java SDK.
     */
   def createDataSource(params: CreateDataSourceRequest): Request[CreateDataSourceResponse, AWSError] = js.native
   def createDataSource(
@@ -143,18 +157,32 @@ trait Kendra extends Service {
   ): Request[CreateExperienceResponse, AWSError] = js.native
   
   /**
-    * Creates an new set of frequently asked question (FAQ) questions and answers. Adding FAQs to an index is an asynchronous operation. For an example of adding an FAQ to an index using Python and Java SDKs, see Using your FAQ file.
+    * Creates a set of frequently ask questions (FAQs) using a specified FAQ file stored in an Amazon S3 bucket. Adding FAQs to an index is an asynchronous operation. For an example of adding an FAQ to an index using Python and Java SDKs, see Using your FAQ file.
     */
   def createFaq(): Request[CreateFaqResponse, AWSError] = js.native
   def createFaq(callback: js.Function2[/* err */ AWSError, /* data */ CreateFaqResponse, Unit]): Request[CreateFaqResponse, AWSError] = js.native
   /**
-    * Creates an new set of frequently asked question (FAQ) questions and answers. Adding FAQs to an index is an asynchronous operation. For an example of adding an FAQ to an index using Python and Java SDKs, see Using your FAQ file.
+    * Creates a set of frequently ask questions (FAQs) using a specified FAQ file stored in an Amazon S3 bucket. Adding FAQs to an index is an asynchronous operation. For an example of adding an FAQ to an index using Python and Java SDKs, see Using your FAQ file.
     */
   def createFaq(params: CreateFaqRequest): Request[CreateFaqResponse, AWSError] = js.native
   def createFaq(
     params: CreateFaqRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateFaqResponse, Unit]
   ): Request[CreateFaqResponse, AWSError] = js.native
+  
+  /**
+    * Creates a set of featured results to display at the top of the search results page. Featured results are placed above all other results for certain queries. You map specific queries to specific documents for featuring in the results. If a query contains an exact match, then one or more specific documents are featured in the search results. You can create up to 50 sets of featured results per index. You can request to increase this limit by contacting Support.
+    */
+  def createFeaturedResultsSet(): Request[CreateFeaturedResultsSetResponse, AWSError] = js.native
+  def createFeaturedResultsSet(callback: js.Function2[/* err */ AWSError, /* data */ CreateFeaturedResultsSetResponse, Unit]): Request[CreateFeaturedResultsSetResponse, AWSError] = js.native
+  /**
+    * Creates a set of featured results to display at the top of the search results page. Featured results are placed above all other results for certain queries. You map specific queries to specific documents for featuring in the results. If a query contains an exact match, then one or more specific documents are featured in the search results. You can create up to 50 sets of featured results per index. You can request to increase this limit by contacting Support.
+    */
+  def createFeaturedResultsSet(params: CreateFeaturedResultsSetRequest): Request[CreateFeaturedResultsSetResponse, AWSError] = js.native
+  def createFeaturedResultsSet(
+    params: CreateFeaturedResultsSetRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateFeaturedResultsSetResponse, Unit]
+  ): Request[CreateFeaturedResultsSetResponse, AWSError] = js.native
   
   /**
     * Creates an Amazon Kendra index. Index creation is an asynchronous API. To determine if index creation has completed, check the Status field returned from a call to DescribeIndex. The Status field is set to ACTIVE when the index is ready to use. Once the index is active you can index your documents using the BatchPutDocument API or using one of the supported data sources. For an example of creating an index and data source using the Python SDK, see Getting started with Python SDK. For an example of creating an index and data source using the Java SDK, see Getting started with Java SDK.
@@ -365,6 +393,20 @@ trait Kendra extends Service {
     params: DescribeFaqRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeFaqResponse, Unit]
   ): Request[DescribeFaqResponse, AWSError] = js.native
+  
+  /**
+    * Gets information about a set of featured results. Features results are placed above all other results for certain queries. If there's an exact match of a query, then one or more specific documents are featured in the search results.
+    */
+  def describeFeaturedResultsSet(): Request[DescribeFeaturedResultsSetResponse, AWSError] = js.native
+  def describeFeaturedResultsSet(callback: js.Function2[/* err */ AWSError, /* data */ DescribeFeaturedResultsSetResponse, Unit]): Request[DescribeFeaturedResultsSetResponse, AWSError] = js.native
+  /**
+    * Gets information about a set of featured results. Features results are placed above all other results for certain queries. If there's an exact match of a query, then one or more specific documents are featured in the search results.
+    */
+  def describeFeaturedResultsSet(params: DescribeFeaturedResultsSetRequest): Request[DescribeFeaturedResultsSetResponse, AWSError] = js.native
+  def describeFeaturedResultsSet(
+    params: DescribeFeaturedResultsSetRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeFeaturedResultsSetResponse, Unit]
+  ): Request[DescribeFeaturedResultsSetResponse, AWSError] = js.native
   
   /**
     * Gets information about an existing Amazon Kendra index.
@@ -601,6 +643,20 @@ trait Kendra extends Service {
   ): Request[ListFaqsResponse, AWSError] = js.native
   
   /**
+    * Lists all your sets of featured results for a given index. Features results are placed above all other results for certain queries. If there's an exact match of a query, then one or more specific documents are featured in the search results.
+    */
+  def listFeaturedResultsSets(): Request[ListFeaturedResultsSetsResponse, AWSError] = js.native
+  def listFeaturedResultsSets(callback: js.Function2[/* err */ AWSError, /* data */ ListFeaturedResultsSetsResponse, Unit]): Request[ListFeaturedResultsSetsResponse, AWSError] = js.native
+  /**
+    * Lists all your sets of featured results for a given index. Features results are placed above all other results for certain queries. If there's an exact match of a query, then one or more specific documents are featured in the search results.
+    */
+  def listFeaturedResultsSets(params: ListFeaturedResultsSetsRequest): Request[ListFeaturedResultsSetsResponse, AWSError] = js.native
+  def listFeaturedResultsSets(
+    params: ListFeaturedResultsSetsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListFeaturedResultsSetsResponse, Unit]
+  ): Request[ListFeaturedResultsSetsResponse, AWSError] = js.native
+  
+  /**
     * Provides a list of groups that are mapped to users before a given ordering or timestamp identifier.  ListGroupsOlderThanOrderingId is currently not supported in the Amazon Web Services GovCloud (US-West) region.
     */
   def listGroupsOlderThanOrderingId(): Request[ListGroupsOlderThanOrderingIdResponse, AWSError] = js.native
@@ -673,12 +729,12 @@ trait Kendra extends Service {
   ): Request[ListThesauriResponse, AWSError] = js.native
   
   /**
-    * Maps users to their groups so that you only need to provide the user ID when you issue the query. You can also map sub groups to groups. For example, the group "Company Intellectual Property Teams" includes sub groups "Research" and "Engineering". These sub groups include their own list of users or people who work in these teams. Only users who work in research and engineering, and therefore belong in the intellectual property group, can see top-secret company documents in their search results. This is useful for user context filtering, where search results are filtered based on the user or their group access to documents. For more information, see Filtering on user context. If more than five PUT actions for a group are currently processing, a validation exception is thrown.  PutPrincipalMapping is currently not supported in the Amazon Web Services GovCloud (US-West) region.
+    * Maps users to their groups so that you only need to provide the user ID when you issue the query. You can also map sub groups to groups. For example, the group "Company Intellectual Property Teams" includes sub groups "Research" and "Engineering". These sub groups include their own list of users or people who work in these teams. Only users who work in research and engineering, and therefore belong in the intellectual property group, can see top-secret company documents in their search results. This is useful for user context filtering, where search results are filtered based on the user or their group access to documents. For more information, see Filtering on user context. If more than five PUT actions for a group are currently processing, a validation exception is thrown.
     */
   def putPrincipalMapping(): Request[js.Object, AWSError] = js.native
   def putPrincipalMapping(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Maps users to their groups so that you only need to provide the user ID when you issue the query. You can also map sub groups to groups. For example, the group "Company Intellectual Property Teams" includes sub groups "Research" and "Engineering". These sub groups include their own list of users or people who work in these teams. Only users who work in research and engineering, and therefore belong in the intellectual property group, can see top-secret company documents in their search results. This is useful for user context filtering, where search results are filtered based on the user or their group access to documents. For more information, see Filtering on user context. If more than five PUT actions for a group are currently processing, a validation exception is thrown.  PutPrincipalMapping is currently not supported in the Amazon Web Services GovCloud (US-West) region.
+    * Maps users to their groups so that you only need to provide the user ID when you issue the query. You can also map sub groups to groups. For example, the group "Company Intellectual Property Teams" includes sub groups "Research" and "Engineering". These sub groups include their own list of users or people who work in these teams. Only users who work in research and engineering, and therefore belong in the intellectual property group, can see top-secret company documents in their search results. This is useful for user context filtering, where search results are filtered based on the user or their group access to documents. For more information, see Filtering on user context. If more than five PUT actions for a group are currently processing, a validation exception is thrown.
     */
   def putPrincipalMapping(params: PutPrincipalMappingRequest): Request[js.Object, AWSError] = js.native
   def putPrincipalMapping(
@@ -687,12 +743,12 @@ trait Kendra extends Service {
   ): Request[js.Object, AWSError] = js.native
   
   /**
-    * Searches an active index. Use this API to search your documents using query. The Query API enables to do faceted search and to filter results based on document attributes. It also enables you to provide user context that Amazon Kendra uses to enforce document access control in the search results. Amazon Kendra searches your index for text content and question and answer (FAQ) content. By default the response contains three types of results.   Relevant passages   Matching FAQs   Relevant documents   You can specify that the query return only one type of result using the QueryResultTypeConfig parameter. Each query returns the 100 most relevant results. 
+    * Searches an active index. Use this API to search your documents using query. The Query API enables to do faceted search and to filter results based on document attributes. It also enables you to provide user context that Amazon Kendra uses to enforce document access control in the search results. Amazon Kendra searches your index for text content and question and answer (FAQ) content. By default the response contains three types of results.   Relevant passages   Matching FAQs   Relevant documents   You can specify that the query return only one type of result using the QueryResultTypeFilter parameter. Each query returns the 100 most relevant results. 
     */
   def query(): Request[QueryResult, AWSError] = js.native
   def query(callback: js.Function2[/* err */ AWSError, /* data */ QueryResult, Unit]): Request[QueryResult, AWSError] = js.native
   /**
-    * Searches an active index. Use this API to search your documents using query. The Query API enables to do faceted search and to filter results based on document attributes. It also enables you to provide user context that Amazon Kendra uses to enforce document access control in the search results. Amazon Kendra searches your index for text content and question and answer (FAQ) content. By default the response contains three types of results.   Relevant passages   Matching FAQs   Relevant documents   You can specify that the query return only one type of result using the QueryResultTypeConfig parameter. Each query returns the 100 most relevant results. 
+    * Searches an active index. Use this API to search your documents using query. The Query API enables to do faceted search and to filter results based on document attributes. It also enables you to provide user context that Amazon Kendra uses to enforce document access control in the search results. Amazon Kendra searches your index for text content and question and answer (FAQ) content. By default the response contains three types of results.   Relevant passages   Matching FAQs   Relevant documents   You can specify that the query return only one type of result using the QueryResultTypeFilter parameter. Each query returns the 100 most relevant results. 
     */
   def query(params: QueryRequest): Request[QueryResult, AWSError] = js.native
   def query(params: QueryRequest, callback: js.Function2[/* err */ AWSError, /* data */ QueryResult, Unit]): Request[QueryResult, AWSError] = js.native
@@ -812,6 +868,20 @@ trait Kendra extends Service {
   ): Request[js.Object, AWSError] = js.native
   
   /**
+    * Updates a set of featured results. Features results are placed above all other results for certain queries. You map specific queries to specific documents for featuring in the results. If a query contains an exact match of a query, then one or more specific documents are featured in the search results.
+    */
+  def updateFeaturedResultsSet(): Request[UpdateFeaturedResultsSetResponse, AWSError] = js.native
+  def updateFeaturedResultsSet(callback: js.Function2[/* err */ AWSError, /* data */ UpdateFeaturedResultsSetResponse, Unit]): Request[UpdateFeaturedResultsSetResponse, AWSError] = js.native
+  /**
+    * Updates a set of featured results. Features results are placed above all other results for certain queries. You map specific queries to specific documents for featuring in the results. If a query contains an exact match of a query, then one or more specific documents are featured in the search results.
+    */
+  def updateFeaturedResultsSet(params: UpdateFeaturedResultsSetRequest): Request[UpdateFeaturedResultsSetResponse, AWSError] = js.native
+  def updateFeaturedResultsSet(
+    params: UpdateFeaturedResultsSetRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateFeaturedResultsSetResponse, Unit]
+  ): Request[UpdateFeaturedResultsSetResponse, AWSError] = js.native
+  
+  /**
     * Updates an existing Amazon Kendra index.
     */
   def updateIndex(): Request[js.Object, AWSError] = js.native
@@ -837,12 +907,12 @@ trait Kendra extends Service {
   ): Request[js.Object, AWSError] = js.native
   
   /**
-    * Updates the settings of query suggestions for an index. Amazon Kendra supports partial updates, so you only need to provide the fields you want to update. If an update is currently processing (i.e. 'happening'), you need to wait for the update to finish before making another update. Updates to query suggestions settings might not take effect right away. The time for your updated settings to take effect depends on the updates made and the number of search queries in your index. You can still enable/disable query suggestions at any time.  UpdateQuerySuggestionsConfig is currently not supported in the Amazon Web Services GovCloud (US-West) region.
+    * Updates the settings of query suggestions for an index. Amazon Kendra supports partial updates, so you only need to provide the fields you want to update. If an update is currently processing, you need to wait for the update to finish before making another update. Updates to query suggestions settings might not take effect right away. The time for your updated settings to take effect depends on the updates made and the number of search queries in your index. You can still enable/disable query suggestions at any time.  UpdateQuerySuggestionsConfig is currently not supported in the Amazon Web Services GovCloud (US-West) region.
     */
   def updateQuerySuggestionsConfig(): Request[js.Object, AWSError] = js.native
   def updateQuerySuggestionsConfig(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Updates the settings of query suggestions for an index. Amazon Kendra supports partial updates, so you only need to provide the fields you want to update. If an update is currently processing (i.e. 'happening'), you need to wait for the update to finish before making another update. Updates to query suggestions settings might not take effect right away. The time for your updated settings to take effect depends on the updates made and the number of search queries in your index. You can still enable/disable query suggestions at any time.  UpdateQuerySuggestionsConfig is currently not supported in the Amazon Web Services GovCloud (US-West) region.
+    * Updates the settings of query suggestions for an index. Amazon Kendra supports partial updates, so you only need to provide the fields you want to update. If an update is currently processing, you need to wait for the update to finish before making another update. Updates to query suggestions settings might not take effect right away. The time for your updated settings to take effect depends on the updates made and the number of search queries in your index. You can still enable/disable query suggestions at any time.  UpdateQuerySuggestionsConfig is currently not supported in the Amazon Web Services GovCloud (US-West) region.
     */
   def updateQuerySuggestionsConfig(params: UpdateQuerySuggestionsConfigRequest): Request[js.Object, AWSError] = js.native
   def updateQuerySuggestionsConfig(

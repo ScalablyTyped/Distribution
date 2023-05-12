@@ -1,7 +1,7 @@
 
 # Scala.js typings for sucrase
 
-Typings are for version 3.28.0
+Typings are for version 3.32.0
 
 ## Library description:
 Super-fast alternative to Babel for when you can target modern JS runtimes

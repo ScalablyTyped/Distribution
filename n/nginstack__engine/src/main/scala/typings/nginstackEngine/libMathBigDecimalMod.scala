@@ -135,7 +135,9 @@ object libMathBigDecimalMod {
     def pow(value: Double): BigDecimal = js.native
     def pow(value: BigDecimal): BigDecimal = js.native
     
-    def quantize(): BigDecimal = js.native
+    def quantize(value: String): BigDecimal = js.native
+    def quantize(value: Double): BigDecimal = js.native
+    def quantize(value: BigDecimal): BigDecimal = js.native
     
     def sqrt(): BigDecimal = js.native
     
@@ -143,6 +145,6 @@ object libMathBigDecimalMod {
     def times(value: Double): BigDecimal = js.native
     def times(value: BigDecimal): BigDecimal = js.native
     
-    def toDecimalPlaces(): BigDecimal = js.native
+    def toDecimalPlaces(places: Double): BigDecimal = js.native
   }
 }

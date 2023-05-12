@@ -1,7 +1,7 @@
 
 # Scala.js typings for hast-to-hyperscript
 
-Typings are for version 10.0.1
+Typings are for version 10.0.3
 
 ## Library description:
 Legacy hast utility to transform to something else

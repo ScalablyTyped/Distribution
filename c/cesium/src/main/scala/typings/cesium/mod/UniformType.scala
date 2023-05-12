@@ -110,7 +110,7 @@ object UniformType extends StObject {
   sealed trait MAT3
     extends StObject
        with UniformType
-  /* "mat2" */ val MAT3: typings.cesium.mod.UniformType.MAT3 & String = js.native
+  /* "mat3" */ val MAT3: typings.cesium.mod.UniformType.MAT3 & String = js.native
   
   /**
     * A 3x3 matrix of floating point values.

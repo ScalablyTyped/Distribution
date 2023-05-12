@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Connection extends StObject {
   
   /**
-    * The authorization type specified for the connection.
+    * The authorization type specified for the connection.  OAUTH tokens are refreshed when a 401 or 407 response is returned. 
     */
   var AuthorizationType: js.UndefOr[ConnectionAuthorizationType] = js.undefined
   

@@ -5,7 +5,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Partial<@wordpress/blocks.@wordpress/blocks.Category> */
+/* Inlined std.Partial<@wordpress/blocks.@wordpress/blocks/api/categories.Category> */
 trait PartialCategory extends StObject {
   
   var icon: js.UndefOr[Element | typings.wordpressComponents.dashiconMod.Dashicon.Icon | Null] = js.undefined

@@ -125,6 +125,8 @@ object sapUiAppApplicationMod {
     extends typings.openui5.sapUiCoreComponentMod.default {
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Creates and returns the root component. Override this method in your application implementation, if you
       * want to override the default creation by metadata.
       *

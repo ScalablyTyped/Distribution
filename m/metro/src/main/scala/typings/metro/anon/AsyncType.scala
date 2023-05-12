@@ -1,7 +1,7 @@
 package typings.metro.anon
 
-import typings.babelCodeFrame.mod.SourceLocation
-import typings.metro.deltaBundlerTypesMod.AsyncDependencyType
+import typings.metro.srcDeltaBundlerTypesMod.AsyncDependencyType
+import typings.metro.srcModuleGraphWorkerCollectDependenciesMod.RequireContextParams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,12 +13,20 @@ trait AsyncType extends StObject {
     */
   val asyncType: AsyncDependencyType | Null
   
+  /** Context for requiring a collection of modules. */
+  val contextParams: js.UndefOr[RequireContextParams] = js.undefined
+  
   /**
     * The dependency is enclosed in a try/catch block.
     */
   val isOptional: js.UndefOr[Boolean] = js.undefined
   
-  val locs: js.Array[SourceLocation]
+  /**
+    * A locally unique key for this dependency within the current module.
+    */
+  val key: String
+  
+  val locs: js.Array[End]
   
   /**
     * The condition for splitting on this dependency edge.
@@ -27,8 +35,8 @@ trait AsyncType extends StObject {
 }
 object AsyncType {
   
-  inline def apply(locs: js.Array[SourceLocation]): AsyncType = {
-    val __obj = js.Dynamic.literal(locs = locs.asInstanceOf[js.Any], asyncType = null)
+  inline def apply(key: String, locs: js.Array[End]): AsyncType = {
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], locs = locs.asInstanceOf[js.Any], asyncType = null)
     __obj.asInstanceOf[AsyncType]
   }
   
@@ -39,13 +47,19 @@ object AsyncType {
     
     inline def setAsyncTypeNull: Self = StObject.set(x, "asyncType", null)
     
+    inline def setContextParams(value: RequireContextParams): Self = StObject.set(x, "contextParams", value.asInstanceOf[js.Any])
+    
+    inline def setContextParamsUndefined: Self = StObject.set(x, "contextParams", js.undefined)
+    
     inline def setIsOptional(value: Boolean): Self = StObject.set(x, "isOptional", value.asInstanceOf[js.Any])
     
     inline def setIsOptionalUndefined: Self = StObject.set(x, "isOptional", js.undefined)
     
-    inline def setLocs(value: js.Array[SourceLocation]): Self = StObject.set(x, "locs", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    inline def setLocsVarargs(value: SourceLocation*): Self = StObject.set(x, "locs", js.Array(value*))
+    inline def setLocs(value: js.Array[End]): Self = StObject.set(x, "locs", value.asInstanceOf[js.Any])
+    
+    inline def setLocsVarargs(value: End*): Self = StObject.set(x, "locs", js.Array(value*))
     
     inline def setSplitCondition(value: MobileConfigName): Self = StObject.set(x, "splitCondition", value.asInstanceOf[js.Any])
     

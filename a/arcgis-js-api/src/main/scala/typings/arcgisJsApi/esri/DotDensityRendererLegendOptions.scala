@@ -9,7 +9,7 @@ trait DotDensityRendererLegendOptions extends StObject {
   /**
     * Indicates the unit of the data being visualized.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#legendOptions)
+    * [Read more...](global.html#unit)
     */
   var unit: js.UndefOr[String] = js.undefined
 }

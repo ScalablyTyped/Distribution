@@ -6,16 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CommentidOwnerPullnumber extends StObject {
   
-  /** The unique identifier of the comment. */
   var comment_id: Double
   
-  /** The account owner of the repository. The name is not case sensitive. */
   var owner: String
   
-  /** The number that identifies the pull request. */
   var pull_number: Double
   
-  /** The name of the repository. The name is not case sensitive. */
   var repo: String
 }
 object CommentidOwnerPullnumber {

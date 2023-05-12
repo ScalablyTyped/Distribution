@@ -320,6 +320,8 @@ object sapUiWebcMainTextAreaMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:change change} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -331,6 +333,8 @@ object sapUiWebcMainTextAreaMod {
     mParameters: js.Object): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:input input} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining

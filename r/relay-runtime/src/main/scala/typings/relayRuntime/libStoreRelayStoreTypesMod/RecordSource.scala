@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RecordSource extends StObject {
   
-  // tslint:disable-next-line:no-unnecessary-generics
+  // eslint-disable-next-line no-unnecessary-generics
   def get[T /* <: js.Object */](dataID: DataID): js.UndefOr[Record[T] | Null]
   
   def getRecordIDs(): js.Array[DataID]

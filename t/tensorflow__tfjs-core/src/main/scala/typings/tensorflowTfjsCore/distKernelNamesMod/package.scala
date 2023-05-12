@@ -1,7 +1,7 @@
 package typings.tensorflowTfjsCore.distKernelNamesMod
 
 import typings.tensorflowTfjsCore.distKernelNamesMod.^
-import typings.tensorflowTfjsCore.distKernelRegistryMod.TensorInfo
+import typings.tensorflowTfjsCore.distTensorInfoMod.TensorInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -48,6 +48,8 @@ inline def BatchMatMul: /* "BatchMatMul" */ String = ^.asInstanceOf[js.Dynamic].
 inline def BatchToSpaceND: /* "BatchToSpaceND" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("BatchToSpaceND").asInstanceOf[/* "BatchToSpaceND" */ String]
 
 inline def Bincount: /* "Bincount" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Bincount").asInstanceOf[/* "Bincount" */ String]
+
+inline def BitwiseAnd: /* "BitwiseAnd" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("BitwiseAnd").asInstanceOf[/* "BitwiseAnd" */ String]
 
 inline def BroadcastArgs: /* "BroadcastArgs" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("BroadcastArgs").asInstanceOf[/* "BroadcastArgs" */ String]
 
@@ -189,6 +191,8 @@ inline def LogicalXor: /* "LogicalXor" */ String = ^.asInstanceOf[js.Dynamic].se
 
 inline def LowerBound: /* "LowerBound" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("LowerBound").asInstanceOf[/* "LowerBound" */ String]
 
+inline def MatrixBandPart: /* "MatrixBandPart" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("MatrixBandPart").asInstanceOf[/* "MatrixBandPart" */ String]
+
 inline def Max: /* "Max" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Max").asInstanceOf[/* "Max" */ String]
 
 inline def MaxPool: /* "MaxPool" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("MaxPool").asInstanceOf[/* "MaxPool" */ String]
@@ -321,6 +325,8 @@ inline def Square: /* "Square" */ String = ^.asInstanceOf[js.Dynamic].selectDyna
 
 inline def SquaredDifference: /* "SquaredDifference" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("SquaredDifference").asInstanceOf[/* "SquaredDifference" */ String]
 
+inline def StaticRegexReplace: /* "StaticRegexReplace" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("StaticRegexReplace").asInstanceOf[/* "StaticRegexReplace" */ String]
+
 inline def Step: /* "Step" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Step").asInstanceOf[/* "Step" */ String]
 
 inline def StridedSlice: /* "StridedSlice" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("StridedSlice").asInstanceOf[/* "StridedSlice" */ String]
@@ -338,6 +344,8 @@ inline def Sum: /* "Sum" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("S
 inline def Tan: /* "Tan" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Tan").asInstanceOf[/* "Tan" */ String]
 
 inline def Tanh: /* "Tanh" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Tanh").asInstanceOf[/* "Tanh" */ String]
+
+inline def TensorScatterUpdate: /* "TensorScatterUpdate" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("TensorScatterUpdate").asInstanceOf[/* "TensorScatterUpdate" */ String]
 
 inline def Tile: /* "Tile" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("Tile").asInstanceOf[/* "Tile" */ String]
 

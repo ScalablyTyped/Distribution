@@ -16,7 +16,7 @@ object libIconsFlagFilledMod extends Shortcut {
   @js.native
   trait FlagFilledIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_FlagFilledIconType: String = js.native

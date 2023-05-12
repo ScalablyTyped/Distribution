@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "web3-bzz" : "1.8.1"
+      "web3-bzz" : "1.10.0"
     }
   ],
   "test-dependencies" : [
     {
-      "web3-bzz" : "1.8.1"
+      "web3-bzz" : "1.10.0"
     }
   ],
   "compile-devDependencies" : [

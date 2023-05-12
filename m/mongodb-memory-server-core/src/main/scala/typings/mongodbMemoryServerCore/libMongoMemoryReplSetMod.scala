@@ -11,7 +11,6 @@ import typings.mongodbMemoryServerCore.libUtilMongoInstanceMod.StorageEngine
 import typings.mongodbMemoryServerCore.libUtilUtilsMod.Cleanup
 import typings.node.childProcessMod.SpawnOptions
 import typings.node.eventsMod.EventEmitter
-import typings.tmp.mod.DirResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -67,7 +66,7 @@ object libMongoMemoryReplSetMod {
     /* protected */ var _instanceOpts: js.Array[MongoMemoryInstanceOptsBase] = js.native
     
     /** TMPDIR for the keyfile, when auth is used */
-    /* protected */ var _keyfiletmp: js.UndefOr[DirResult] = js.native
+    /* protected */ var _keyfiletmp: js.UndefOr[String] = js.native
     
     /* protected */ var _ranCreateAuth: Boolean = js.native
     
@@ -128,7 +127,7 @@ object libMongoMemoryReplSetMod {
       * Ensure "_keyfiletmp" is defined
       * @returns the ensured "_keyfiletmp" value
       */
-    /* protected */ def ensureKeyFile(): js.Promise[DirResult] = js.native
+    /* protected */ def ensureKeyFile(): js.Promise[String] = js.native
     
     /**
       * Returns instance options suitable for a MongoMemoryServer.

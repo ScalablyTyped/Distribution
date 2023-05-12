@@ -17,14 +17,19 @@ trait SplitShardInput extends StObject {
   var ShardToSplit: ShardId
   
   /**
+    * The ARN of the stream.
+    */
+  var StreamARN: js.UndefOr[typings.awsSdk.clientsKinesisMod.StreamARN] = js.undefined
+  
+  /**
     * The name of the stream for the shard split.
     */
-  var StreamName: typings.awsSdk.clientsKinesisMod.StreamName
+  var StreamName: js.UndefOr[typings.awsSdk.clientsKinesisMod.StreamName] = js.undefined
 }
 object SplitShardInput {
   
-  inline def apply(NewStartingHashKey: HashKey, ShardToSplit: ShardId, StreamName: StreamName): SplitShardInput = {
-    val __obj = js.Dynamic.literal(NewStartingHashKey = NewStartingHashKey.asInstanceOf[js.Any], ShardToSplit = ShardToSplit.asInstanceOf[js.Any], StreamName = StreamName.asInstanceOf[js.Any])
+  inline def apply(NewStartingHashKey: HashKey, ShardToSplit: ShardId): SplitShardInput = {
+    val __obj = js.Dynamic.literal(NewStartingHashKey = NewStartingHashKey.asInstanceOf[js.Any], ShardToSplit = ShardToSplit.asInstanceOf[js.Any])
     __obj.asInstanceOf[SplitShardInput]
   }
   
@@ -35,6 +40,12 @@ object SplitShardInput {
     
     inline def setShardToSplit(value: ShardId): Self = StObject.set(x, "ShardToSplit", value.asInstanceOf[js.Any])
     
+    inline def setStreamARN(value: StreamARN): Self = StObject.set(x, "StreamARN", value.asInstanceOf[js.Any])
+    
+    inline def setStreamARNUndefined: Self = StObject.set(x, "StreamARN", js.undefined)
+    
     inline def setStreamName(value: StreamName): Self = StObject.set(x, "StreamName", value.asInstanceOf[js.Any])
+    
+    inline def setStreamNameUndefined: Self = StObject.set(x, "StreamName", js.undefined)
   }
 }

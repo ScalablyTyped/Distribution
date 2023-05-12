@@ -52,7 +52,7 @@ object DocumentSymbol {
   ): typings.vscodeLanguageserverTypes.mod.DocumentSymbol = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], detail.asInstanceOf[js.Any], kind.asInstanceOf[js.Any], range.asInstanceOf[js.Any], selectionRange.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[typings.vscodeLanguageserverTypes.mod.DocumentSymbol]
   
   /**
-    * Checks whether the given literal conforms to the [DocumentSymbol](#DocumentSymbol) interface.
+    * Checks whether the given literal conforms to the {@link DocumentSymbol} interface.
     */
   inline def is(value: Any): /* is vscode-languageserver-types.vscode-languageserver-types.DocumentSymbol */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.DocumentSymbol */ Boolean]
 }

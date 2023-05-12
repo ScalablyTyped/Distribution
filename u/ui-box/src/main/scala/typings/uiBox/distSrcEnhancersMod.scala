@@ -358,6 +358,25 @@ object distSrcEnhancersMod {
     val propValidators: PropValidators = js.native
   }
   
+  object selectors {
+    
+    @JSImport("ui-box/dist/src/enhancers", "selectors.propAliases")
+    @js.native
+    val propAliases: PropAliases = js.native
+    
+    @JSImport("ui-box/dist/src/enhancers", "selectors.propEnhancers")
+    @js.native
+    val propEnhancers: PropEnhancers = js.native
+    
+    @JSImport("ui-box/dist/src/enhancers", "selectors.propTypes")
+    @js.native
+    val propTypes: PropTypesMapping = js.native
+    
+    @JSImport("ui-box/dist/src/enhancers", "selectors.propValidators")
+    @js.native
+    val propValidators: PropValidators = js.native
+  }
+  
   object spacing {
     
     @JSImport("ui-box/dist/src/enhancers", "spacing.propAliases")
@@ -373,6 +392,25 @@ object distSrcEnhancersMod {
     val propTypes: PropTypesMapping = js.native
     
     @JSImport("ui-box/dist/src/enhancers", "spacing.propValidators")
+    @js.native
+    val propValidators: PropValidators = js.native
+  }
+  
+  object svg {
+    
+    @JSImport("ui-box/dist/src/enhancers", "svg.propAliases")
+    @js.native
+    val propAliases: PropAliases = js.native
+    
+    @JSImport("ui-box/dist/src/enhancers", "svg.propEnhancers")
+    @js.native
+    val propEnhancers: PropEnhancers = js.native
+    
+    @JSImport("ui-box/dist/src/enhancers", "svg.propTypes")
+    @js.native
+    val propTypes: PropTypesMapping = js.native
+    
+    @JSImport("ui-box/dist/src/enhancers", "svg.propValidators")
     @js.native
     val propValidators: PropValidators = js.native
   }

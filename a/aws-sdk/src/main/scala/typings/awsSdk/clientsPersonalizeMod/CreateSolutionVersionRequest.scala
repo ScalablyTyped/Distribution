@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateSolutionVersionRequest extends StObject {
   
   /**
+    * The name of the solution version.
+    */
+  var name: js.UndefOr[Name] = js.undefined
+  
+  /**
     * The Amazon Resource Name (ARN) of the solution containing the training configuration information.
     */
   var solutionArn: Arn
@@ -30,6 +35,10 @@ object CreateSolutionVersionRequest {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: CreateSolutionVersionRequest] (val x: Self) extends AnyVal {
+    
+    inline def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     inline def setSolutionArn(value: Arn): Self = StObject.set(x, "solutionArn", value.asInstanceOf[js.Any])
     

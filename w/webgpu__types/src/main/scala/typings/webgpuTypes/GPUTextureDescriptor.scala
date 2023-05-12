@@ -60,7 +60,6 @@ trait GPUTextureDescriptor
     * Two {@link GPUTextureFormat}s `format` and `viewFormat` are <dfn dfn for=>texture view format compatible</dfn> if:
     * - `format` equals `viewFormat`, or
     * - `format` and `viewFormat` differ only in whether they are `srgb` formats (have the `-srgb` suffix).
-    * Issue(gpuweb/gpuweb#168): Define larger compatibility classes.
     * </div>
     */
   var viewFormats: js.UndefOr[js.Iterable[GPUTextureFormat]] = js.undefined

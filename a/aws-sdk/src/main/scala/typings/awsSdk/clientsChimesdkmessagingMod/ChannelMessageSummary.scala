@@ -12,6 +12,11 @@ trait ChannelMessageSummary extends StObject {
   var Content: js.UndefOr[typings.awsSdk.clientsChimesdkmessagingMod.Content] = js.undefined
   
   /**
+    * The content type of the channel messsage listed in the summary.
+    */
+  var ContentType: js.UndefOr[typings.awsSdk.clientsChimesdkmessagingMod.ContentType] = js.undefined
+  
+  /**
     * The time at which the message summary was created.
     */
   var CreatedTimestamp: js.UndefOr[js.Date] = js.undefined
@@ -72,6 +77,10 @@ object ChannelMessageSummary {
   implicit open class MutableBuilder[Self <: ChannelMessageSummary] (val x: Self) extends AnyVal {
     
     inline def setContent(value: Content): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
+    
+    inline def setContentType(value: ContentType): Self = StObject.set(x, "ContentType", value.asInstanceOf[js.Any])
+    
+    inline def setContentTypeUndefined: Self = StObject.set(x, "ContentType", js.undefined)
     
     inline def setContentUndefined: Self = StObject.set(x, "Content", js.undefined)
     

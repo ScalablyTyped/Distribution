@@ -1,5 +1,6 @@
 package typings.octokitOpenapiTypes.anon
 
+import typings.octokitOpenapiTypes.mod.OneOf
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.closed
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.completed
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.not_planned
@@ -11,35 +12,35 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Milestone extends StObject {
   
-  /** @description Login for the user that this issue should be assigned to. **This field is deprecated.** */
+  /** @description Username to assign to this issue. **This field is deprecated.** */
   var assignee: js.UndefOr[String | Null] = js.undefined
   
-  /** @description Logins for Users to assign to this issue. Pass one or more user logins to _replace_ the set of assignees on this Issue. Send an empty array (`[]`) to clear all assignees from the Issue. _NOTE: Only users with push access can set assignees for new issues. Assignees are silently dropped otherwise._ */
+  /** @description Usernames to assign to this issue. Pass one or more user logins to _replace_ the set of assignees on this issue. Send an empty array (`[]`) to clear all assignees from the issue. Only users with push access can set assignees for new issues. Without push access to the repository, assignee changes are silently dropped. */
   var assignees: js.UndefOr[js.Array[String]] = js.undefined
   
   /** @description The contents of the issue. */
   var body: js.UndefOr[String | Null] = js.undefined
   
-  /** @description Labels to associate with this issue. Pass one or more Labels to _replace_ the set of Labels on this Issue. Send an empty array (`[]`) to clear all Labels from the Issue. _NOTE: Only users with push access can set labels for issues. Labels are silently dropped otherwise._ */
-  var labels: js.UndefOr[js.Array[String | Color]] = js.undefined
+  /** @description Labels to associate with this issue. Pass one or more labels to _replace_ the set of labels on this issue. Send an empty array (`[]`) to clear all labels from the issue. Only users with push access can set labels for issues. Without push access to the repository, label changes are silently dropped. */
+  var labels: js.UndefOr[js.Array[OneOf[js.Tuple2[String, Color]]]] = js.undefined
   
-  var milestone: js.UndefOr[String | Double | Null] = js.undefined
+  var milestone: js.UndefOr[String | Double] = js.undefined
   
   /**
-    * @description State of the issue. Either `open` or `closed`.
+    * @description The open or closed state of the issue.
     * @enum {string}
     */
   var state: js.UndefOr[open | closed] = js.undefined
   
   /**
-    * @description The reason for the current state
+    * @description The reason for the state change. Ignored unless `state` is changed.
     * @example not_planned
     * @enum {string|null}
     */
   var state_reason: js.UndefOr[completed | not_planned | reopened | Null] = js.undefined
   
   /** @description The title of the issue. */
-  var title: js.UndefOr[String | Double | Null] = js.undefined
+  var title: js.UndefOr[String | Double] = js.undefined
 }
 object Milestone {
   
@@ -69,15 +70,13 @@ object Milestone {
     
     inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
-    inline def setLabels(value: js.Array[String | Color]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: js.Array[OneOf[js.Tuple2[String, Color]]]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    inline def setLabelsVarargs(value: (String | Color)*): Self = StObject.set(x, "labels", js.Array(value*))
+    inline def setLabelsVarargs(value: (OneOf[js.Tuple2[String, Color]])*): Self = StObject.set(x, "labels", js.Array(value*))
     
     inline def setMilestone(value: String | Double): Self = StObject.set(x, "milestone", value.asInstanceOf[js.Any])
-    
-    inline def setMilestoneNull: Self = StObject.set(x, "milestone", null)
     
     inline def setMilestoneUndefined: Self = StObject.set(x, "milestone", js.undefined)
     
@@ -92,8 +91,6 @@ object Milestone {
     inline def setState_reasonUndefined: Self = StObject.set(x, "state_reason", js.undefined)
     
     inline def setTitle(value: String | Double): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
-    
-    inline def setTitleNull: Self = StObject.set(x, "title", null)
     
     inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }

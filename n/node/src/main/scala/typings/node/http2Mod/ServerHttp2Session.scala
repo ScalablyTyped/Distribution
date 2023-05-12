@@ -35,7 +35,7 @@ trait ServerHttp2Session extends StObject {
     * Submits an `ALTSVC` frame (as defined by [RFC 7838](https://tools.ietf.org/html/rfc7838)) to the connected client.
     *
     * ```js
-    * const http2 = require('http2');
+    * const http2 = require('node:http2');
     *
     * const server = http2.createServer();
     * server.on('session', (session) => {
@@ -124,7 +124,7 @@ trait ServerHttp2Session extends StObject {
     * authoritative responses.
     *
     * ```js
-    * const http2 = require('http2');
+    * const http2 = require('node:http2');
     * const options = getSecureOptionsSomehow();
     * const server = http2.createSecureServer(options);
     * server.on('stream', (stream) => {
@@ -150,7 +150,7 @@ trait ServerHttp2Session extends StObject {
     * server using the `http2.createSecureServer()` method:
     *
     * ```js
-    * const http2 = require('http2');
+    * const http2 = require('node:http2');
     * const options = getSecureOptionsSomehow();
     * options.origins = ['https://example.com', 'https://example.org'];
     * const server = http2.createSecureServer(options);

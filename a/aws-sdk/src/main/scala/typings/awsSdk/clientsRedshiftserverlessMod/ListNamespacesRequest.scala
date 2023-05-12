@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListNamespacesRequest extends StObject {
   
   /**
-    * An optional parameter that specifies the maximum number of results to return. You can use nextToken to get the next page of results.
+    * An optional parameter that specifies the maximum number of results to return. You can use nextToken to display the next page of results.
     */
   var maxResults: js.UndefOr[ListNamespacesRequestMaxResultsInteger] = js.undefined
   
   /**
-    * If your initial ListNamespaces operation returns a nextToken, you can include the returned nextToken in subsequent ListNamespaces operations, which returns results in the next page.
+    * If your initial ListNamespaces operation returns a nextToken, you can include the returned nextToken in following ListNamespaces operations, which returns results in the next page.
     */
   var nextToken: js.UndefOr[String] = js.undefined
 }

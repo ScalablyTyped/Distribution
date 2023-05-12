@@ -1,5 +1,7 @@
 package typings.auth0Js.mod
 
+import typings.auth0Js.auth0JsStrings.code
+import typings.auth0Js.auth0JsStrings.link
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,7 +18,7 @@ trait PasswordlessVerifyOptions
   
   var responseMode: js.UndefOr[String] = js.undefined
   
-  var send: js.UndefOr[String] = js.undefined
+  var send: js.UndefOr[link | code] = js.undefined
   
   var verificationCode: String
 }
@@ -44,7 +46,7 @@ object PasswordlessVerifyOptions {
     
     inline def setResponseModeUndefined: Self = StObject.set(x, "responseMode", js.undefined)
     
-    inline def setSend(value: String): Self = StObject.set(x, "send", value.asInstanceOf[js.Any])
+    inline def setSend(value: link | code): Self = StObject.set(x, "send", value.asInstanceOf[js.Any])
     
     inline def setSendUndefined: Self = StObject.set(x, "send", js.undefined)
     

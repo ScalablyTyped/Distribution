@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined react.react.WeakValidationMap<{  activeKey :string | null | undefined,   defaultActiveKey :string | null | undefined,   closeOnMaskClick :boolean | undefined,   closeOnClickAway :boolean | undefined,   onChange :(key : string | null): void | undefined,   arrow :react.react.ReactNode | undefined,   className :string | undefined,   style :react.react.CSSProperties & std.Partial<std.Record<never, string>> | undefined,   tabIndex :number | undefined,   children :react.react.ReactNode | undefined} & react.react.AriaAttributes & react.react.RefAttributes<antd-mobile.antd-mobile/es/components/dropdown/dropdown.DropdownRef>> */
+/* Inlined react.react.WeakValidationMap<{  activeKey :string | null | undefined,   defaultActiveKey :string | null | undefined,   closeOnMaskClick :boolean | undefined,   closeOnClickAway :boolean | undefined,   onChange :(key : string | null): void | undefined,   arrow :react.react.ReactNode | undefined,   getContainer :antd-mobile.antd-mobile/es/utils/render-to-container.GetContainer | undefined,   className :string | undefined,   style :react.react.CSSProperties & std.Partial<std.Record<never, string>> | undefined,   tabIndex :number | undefined,   children :react.react.ReactNode | undefined} & react.react.AriaAttributes & react.react.RefAttributes<antd-mobile.antd-mobile/es/components/dropdown/dropdown.DropdownRef>> */
 trait WeakValidationMapactiveKe extends StObject {
   
   var activeKey: js.UndefOr[
@@ -225,6 +225,10 @@ trait WeakValidationMapactiveKe extends StObject {
   
   var defaultActiveKey: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: null extends string | null | undefined ? react.react.Validator<string | null | undefined | null | undefined> : undefined extends string | null | undefined ? react.react.Validator<string | null | undefined | null | undefined> : react.react.Validator<string | null | undefined> */ js.Any
+  ] = js.undefined
+  
+  var getContainer: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: null extends antd-mobile.antd-mobile/es/utils/render-to-container.GetContainer | undefined ? react.react.Validator<antd-mobile.antd-mobile/es/utils/render-to-container.GetContainer | undefined | null | undefined> : undefined extends antd-mobile.antd-mobile/es/utils/render-to-container.GetContainer | undefined ? react.react.Validator<antd-mobile.antd-mobile/es/utils/render-to-container.GetContainer | undefined | null | undefined> : react.react.Validator<antd-mobile.antd-mobile/es/utils/render-to-container.GetContainer | undefined> */ js.Any
   ] = js.undefined
   
   var key: js.UndefOr[
@@ -586,6 +590,12 @@ object WeakValidationMapactiveKe {
     ): Self = StObject.set(x, "defaultActiveKey", value.asInstanceOf[js.Any])
     
     inline def setDefaultActiveKeyUndefined: Self = StObject.set(x, "defaultActiveKey", js.undefined)
+    
+    inline def setGetContainer(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: null extends antd-mobile.antd-mobile/es/utils/render-to-container.GetContainer | undefined ? react.react.Validator<antd-mobile.antd-mobile/es/utils/render-to-container.GetContainer | undefined | null | undefined> : undefined extends antd-mobile.antd-mobile/es/utils/render-to-container.GetContainer | undefined ? react.react.Validator<antd-mobile.antd-mobile/es/utils/render-to-container.GetContainer | undefined | null | undefined> : react.react.Validator<antd-mobile.antd-mobile/es/utils/render-to-container.GetContainer | undefined> */ js.Any
+    ): Self = StObject.set(x, "getContainer", value.asInstanceOf[js.Any])
+    
+    inline def setGetContainerUndefined: Self = StObject.set(x, "getContainer", js.undefined)
     
     inline def setKey(
       value: /* import warning: importer.ImportType#apply Failed type conversion: null extends react.react.Key | null | undefined ? react.react.Validator<react.react.Key | null | undefined | null | undefined> : undefined extends react.react.Key | null | undefined ? react.react.Validator<react.react.Key | null | undefined | null | undefined> : react.react.Validator<react.react.Key | null | undefined> */ js.Any

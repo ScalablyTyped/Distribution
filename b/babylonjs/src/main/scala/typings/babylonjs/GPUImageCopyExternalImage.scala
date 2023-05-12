@@ -11,11 +11,11 @@ trait GPUImageCopyExternalImage extends StObject {
   
   var origin: js.UndefOr[GPUOrigin2D] = js.undefined
   
-  var source: ImageBitmap | HTMLCanvasElement | OffscreenCanvas
+  var source: ImageBitmap | HTMLVideoElement | HTMLCanvasElement | OffscreenCanvas
 }
 object GPUImageCopyExternalImage {
   
-  inline def apply(source: ImageBitmap | HTMLCanvasElement | OffscreenCanvas): GPUImageCopyExternalImage = {
+  inline def apply(source: ImageBitmap | HTMLVideoElement | HTMLCanvasElement | OffscreenCanvas): GPUImageCopyExternalImage = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
     __obj.asInstanceOf[GPUImageCopyExternalImage]
   }
@@ -31,6 +31,6 @@ object GPUImageCopyExternalImage {
     
     inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
     
-    inline def setSource(value: ImageBitmap | HTMLCanvasElement | OffscreenCanvas): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: ImageBitmap | HTMLVideoElement | HTMLCanvasElement | OffscreenCanvas): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
   }
 }

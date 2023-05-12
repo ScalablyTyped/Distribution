@@ -25,4 +25,8 @@ object soapStrings {
   @js.native
   sealed trait soapError extends StObject
   inline def soapError: soapError = "soapError".asInstanceOf[soapError]
+  
+  @js.native
+  sealed trait wssecurity extends StObject
+  inline def wssecurity: wssecurity = "wssecurity".asInstanceOf[wssecurity]
 }

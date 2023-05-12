@@ -247,44 +247,22 @@ object mod {
     inline def parse_=(x: Text): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parse")(x.asInstanceOf[js.Any])
     
     /**
-      * Runs a Python script and returns collected messages
-      * @param  {string}   scriptPath   The path to the script to execute
-      * @param  {Options}   options  The execution options
-      * @param  {Function} callback The callback function to invoke with the script results
-      * @return {PythonShell}       The PythonShell instance
+      * Runs a Python script and returns collected messages as a promise.
+      * If the promise is rejected, the err will probably be of type PythonShellErrorWithLogs
+      * @param scriptPath   The path to the script to execute
+      * @param options  The execution options
       */
-    inline def run(scriptPath: String): PythonShell = ^.asInstanceOf[js.Dynamic].applyDynamic("run")(scriptPath.asInstanceOf[js.Any]).asInstanceOf[PythonShell]
-    inline def run(
-      scriptPath: String,
-      options: Unit,
-      callback: js.Function2[/* err */ js.UndefOr[PythonShellError], /* output */ js.UndefOr[js.Array[Any]], Any]
-    ): PythonShell = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(scriptPath.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[PythonShell]
-    inline def run(scriptPath: String, options: Options): PythonShell = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(scriptPath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PythonShell]
-    inline def run(
-      scriptPath: String,
-      options: Options,
-      callback: js.Function2[/* err */ js.UndefOr[PythonShellError], /* output */ js.UndefOr[js.Array[Any]], Any]
-    ): PythonShell = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(scriptPath.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[PythonShell]
+    inline def run(scriptPath: String): js.Promise[js.Array[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("run")(scriptPath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Any]]]
+    inline def run(scriptPath: String, options: Options): js.Promise[js.Array[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(scriptPath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Any]]]
     
     /**
-      * Runs the inputted string of python code and returns collected messages. DO NOT ALLOW UNTRUSTED USER INPUT HERE!
-      * @param  {string}   code   The python code to execute
-      * @param  {Options}   options  The execution options
-      * @param  {Function} callback The callback function to invoke with the script results
-      * @return {PythonShell}       The PythonShell instance
+      * Runs the inputted string of python code and returns collected messages as a promise. DO NOT ALLOW UNTRUSTED USER INPUT HERE!
+      * @param code   The python code to execute
+      * @param options  The execution options
+      * @return a promise with the output from the python script
       */
-    inline def runString(code: String): PythonShell = ^.asInstanceOf[js.Dynamic].applyDynamic("runString")(code.asInstanceOf[js.Any]).asInstanceOf[PythonShell]
-    inline def runString(
-      code: String,
-      options: Unit,
-      callback: js.Function2[/* err */ PythonShellError, /* output */ js.UndefOr[js.Array[Any]], Any]
-    ): PythonShell = (^.asInstanceOf[js.Dynamic].applyDynamic("runString")(code.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[PythonShell]
-    inline def runString(code: String, options: Options): PythonShell = (^.asInstanceOf[js.Dynamic].applyDynamic("runString")(code.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PythonShell]
-    inline def runString(
-      code: String,
-      options: Options,
-      callback: js.Function2[/* err */ PythonShellError, /* output */ js.UndefOr[js.Array[Any]], Any]
-    ): PythonShell = (^.asInstanceOf[js.Dynamic].applyDynamic("runString")(code.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[PythonShell]
+    inline def runString(code: String): js.Promise[js.Array[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("runString")(code.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Any]]]
+    inline def runString(code: String, options: Options): js.Promise[js.Array[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("runString")(code.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Any]]]
   }
   
   @JSImport("python-shell", "PythonShellError")
@@ -304,6 +282,13 @@ object mod {
     var name: String = js.native
     
     var traceback: String | Buffer = js.native
+  }
+  
+  @JSImport("python-shell", "PythonShellErrorWithLogs")
+  @js.native
+  open class PythonShellErrorWithLogs () extends PythonShellError {
+    
+    var logs: js.Array[Any] = js.native
   }
   
   trait Options

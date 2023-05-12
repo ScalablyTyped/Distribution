@@ -16,7 +16,7 @@ object libIconsAliwangwangOutlinedMod extends Shortcut {
   @js.native
   trait AliwangwangOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_AliwangwangOutlinedIconType: String = js.native

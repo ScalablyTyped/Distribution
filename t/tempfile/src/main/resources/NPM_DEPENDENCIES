@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "tempfile" : "4.0.0"
+      "tempfile" : "5.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "tempfile" : "4.0.0"
+      "tempfile" : "5.0.0"
     }
   ],
   "compile-devDependencies" : [

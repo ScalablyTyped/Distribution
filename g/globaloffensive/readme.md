@@ -1,7 +1,7 @@
 
 # Scala.js typings for globaloffensive
 
-Typings are for version 2.2
+Typings are for version 2.3
 
 ## Library description:
 Exposes a simple API for interacting with the Counter-Strike: Global Offensive game coordinator

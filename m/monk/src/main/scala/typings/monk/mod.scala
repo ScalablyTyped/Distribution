@@ -1,11 +1,8 @@
 package typings.monk
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.bson.mod.Document
-import typings.bson.mod.ObjectId
 import typings.mongodb.mod.ClientSession
 import typings.mongodb.mod.CollStats
-import typings.mongodb.mod.MapReduceOptions
 import typings.monk.anon.Close
 import typings.monk.anon.Collection
 import typings.monk.anon.Id
@@ -344,12 +341,12 @@ object mod {
     def mapReduce[TKey, TValue](
       map: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CollectionMapFunction<T> */ Any,
       reduce: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CollectionReduceFunction<TKey, TValue> */ Any,
-      options: MapReduceOptions[ObjectId, Document]
+      options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MapReduceOptions */ Any
     ): js.Promise[Any] = js.native
     def mapReduce[TKey, TValue](
       map: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CollectionMapFunction<T> */ Any,
       reduce: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CollectionReduceFunction<TKey, TValue> */ Any,
-      options: MapReduceOptions[ObjectId, Document],
+      options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MapReduceOptions */ Any,
       callback: Callback[Any]
     ): Unit = js.native
     

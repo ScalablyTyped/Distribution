@@ -32,7 +32,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined parent @nivo/line.Omit<@nivo/line.@nivo/line.LineProps, 'layers'> */
+/* Inlined parent @nivo/line.@nivo/line.Omit<@nivo/line.@nivo/line.LineProps, 'layers'> */
 trait LineCanvasProps extends StObject {
   
   var areaBaselineValue: js.UndefOr[DatumValue] = js.undefined

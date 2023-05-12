@@ -215,6 +215,8 @@ object sapUiWebcFioriShellBarItemMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:click click} to attached listeners.
       *
       * Listeners may prevent the default action of this event by calling the `preventDefault` method on the

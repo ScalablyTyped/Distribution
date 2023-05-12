@@ -19,6 +19,8 @@ import typings.awsSdk.libCredentialsTemporaryCredentialsMod.TemporaryCredentials
 import typings.awsSdk.libCredentialsWebIdentityCredentialsMod.WebIdentityCredentials.WebIdentityCredentialsOptions
 import typings.awsSdk.libMetadataServiceMod.MetadataServiceOptions
 import typings.awsSdk.libServiceMod.ServiceConfigurationOptions
+import typings.awsSdk.libTokenMod.TokenOptions
+import typings.awsSdk.libTokenSsoTokenProviderMod.SSOTokenProviderOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -299,6 +301,16 @@ object globalMod {
     def this(params: SAMLCredentialsParams) = this()
   }
   
+  @JSImport("aws-sdk/global", "SSOTokenProvider")
+  @js.native
+  /**
+    * Creates a new SSOTokenProvider object.
+    */
+  open class SSOTokenProvider ()
+    extends typings.awsSdk.libCoreMod.SSOTokenProvider {
+    def this(options: SSOTokenProviderOptions) = this()
+  }
+  
   @JSImport("aws-sdk/global", "Service")
   @js.native
   /**
@@ -329,6 +341,16 @@ object globalMod {
     def this(options: SsoCredentialsOptions) = this()
   }
   
+  @JSImport("aws-sdk/global", "StaticTokenProvider")
+  @js.native
+  /**
+    * Creates a new StaticTokenProvider object.
+    */
+  open class StaticTokenProvider ()
+    extends typings.awsSdk.libCoreMod.StaticTokenProvider {
+    def this(options: TokenOptions) = this()
+  }
+  
   @JSImport("aws-sdk/global", "TemporaryCredentials")
   @js.native
   /**
@@ -349,6 +371,30 @@ object globalMod {
     ) = this()
   }
   
+  @JSImport("aws-sdk/global", "Token")
+  @js.native
+  open class Token protected ()
+    extends typings.awsSdk.libCoreMod.Token {
+    /**
+      * Creates a Token object with a given set of token information as an options hash.
+      *
+      * @param {object} options - An option hash containing a set of token information.
+      */
+    def this(options: TokenOptions) = this()
+  }
+  /* static members */
+  object Token {
+    
+    @JSImport("aws-sdk/global", "Token")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("aws-sdk/global", "Token.expiryWindow")
+    @js.native
+    def expiryWindow: Double = js.native
+    inline def expiryWindow_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("expiryWindow")(x.asInstanceOf[js.Any])
+  }
+  
   @JSImport("aws-sdk/global", "TokenFileWebIdentityCredentials")
   @js.native
   /**
@@ -358,6 +404,28 @@ object globalMod {
   open class TokenFileWebIdentityCredentials ()
     extends typings.awsSdk.libCoreMod.TokenFileWebIdentityCredentials {
     def this(clientConfig: typings.awsSdk.libConfigBaseMod.ConfigurationOptions) = this()
+  }
+  
+  @JSImport("aws-sdk/global", "TokenProviderChain")
+  @js.native
+  /**
+    * Creates a new TokenProviderChain with a default set of providers specified by defaultProviders.
+    */
+  open class TokenProviderChain ()
+    extends typings.awsSdk.libCoreMod.TokenProviderChain {
+    def this(providers: js.Array[typings.awsSdk.libTokenTokenProviderChainMod.provider]) = this()
+  }
+  /* static members */
+  object TokenProviderChain {
+    
+    @JSImport("aws-sdk/global", "TokenProviderChain")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("aws-sdk/global", "TokenProviderChain.defaultProviders")
+    @js.native
+    def defaultProviders: js.Array[typings.awsSdk.libTokenTokenProviderChainMod.provider] = js.native
+    inline def defaultProviders_=(x: js.Array[typings.awsSdk.libTokenTokenProviderChainMod.provider]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProviders")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("aws-sdk/global", "WebIdentityCredentials")

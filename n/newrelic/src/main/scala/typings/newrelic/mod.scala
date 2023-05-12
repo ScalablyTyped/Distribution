@@ -73,6 +73,8 @@ object mod {
   
   inline def recordCustomEvent(eventType: String, attributes: StringDictionary[Boolean | Double | String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("recordCustomEvent")(eventType.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
+  inline def recordLogEvent(logEvent: LogEvent): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("recordLogEvent")(logEvent.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
   inline def recordMetric(name: String, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("recordMetric")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def recordMetric(name: String, value: Metric): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("recordMetric")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
@@ -84,6 +86,8 @@ object mod {
   inline def setLambdaHandler[T /* <: js.Function1[/* repeated */ Any, Any] */](handler: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("setLambdaHandler")(handler.asInstanceOf[js.Any]).asInstanceOf[T]
   
   inline def setTransactionName(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setTransactionName")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  inline def setUserID(userID: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setUserID")(userID.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def shutdown(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("shutdown")().asInstanceOf[Unit]
   inline def shutdown(cb: js.Function1[/* error */ js.UndefOr[js.Error], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("shutdown")(cb.asInstanceOf[js.Any]).asInstanceOf[Unit]
@@ -210,6 +214,54 @@ object mod {
       inline def setTraceDotid(value: String): Self = StObject.set(x, "trace.id", value.asInstanceOf[js.Any])
       
       inline def setTraceDotidUndefined: Self = StObject.set(x, "trace.id", js.undefined)
+    }
+  }
+  
+  trait LogEvent extends StObject {
+    
+    /**
+      * Error associated to this log event. Ignored if missing.
+      */
+    var error: js.UndefOr[js.Error] = js.undefined
+    
+    /**
+      * The log level severity. If this key is missing, it will default to "UNKNOWN"
+      */
+    var level: js.UndefOr[String] = js.undefined
+    
+    /**
+      * The log message
+      */
+    var message: String
+    
+    /**
+      * ECMAScript epoch number denoting the time that this log message was produced. If this key is missing, it will default to the output of `Date.now()`
+      */
+    var timestamp: js.UndefOr[Double] = js.undefined
+  }
+  object LogEvent {
+    
+    inline def apply(message: String): LogEvent = {
+      val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
+      __obj.asInstanceOf[LogEvent]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LogEvent] (val x: Self) extends AnyVal {
+      
+      inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      
+      inline def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      
+      inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+      
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      
+      inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+      
+      inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
     }
   }
   

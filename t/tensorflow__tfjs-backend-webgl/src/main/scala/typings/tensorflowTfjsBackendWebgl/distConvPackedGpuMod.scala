@@ -1,6 +1,6 @@
 package typings.tensorflowTfjsBackendWebgl
 
-import typings.tensorflowTfjsBackendWebgl.anon.Type
+import typings.tensorflowTfjsBackendWebgl.anon.NameType
 import typings.tensorflowTfjsBackendWebgl.distGpgpuMathMod.GPGPUProgram
 import typings.tensorflowTfjsCore.distOpsConvUtilMod.Conv2DInfo
 import org.scalablytyped.runtime.StObject
@@ -80,7 +80,7 @@ object distConvPackedGpuMod {
     ) = this()
     
     @JSName("customUniforms")
-    var customUniforms_Conv2DPackedProgram: js.Array[Type] = js.native
+    var customUniforms_Conv2DPackedProgram: js.Array[NameType] = js.native
     
     @JSName("enableShapeUniforms")
     var enableShapeUniforms_Conv2DPackedProgram: Boolean = js.native

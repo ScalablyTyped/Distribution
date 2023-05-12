@@ -64,7 +64,7 @@ trait GameObject
     * every game frame. This method is passed two parameters: `delta` and `time`.
     * 
     * If you wish to run your own logic within `preUpdate` then you should always call
-    * `preUpdate.super(delta, time)` within it, or it may fail to process required operations,
+    * `super.preUpdate(delta, time)` within it, or it may fail to process required operations,
     * such as Sprite animations.
     */
   def addToUpdateList(): this.type = js.native
@@ -82,7 +82,7 @@ trait GameObject
   /**
     * If this Game Object is enabled for Arcade or Matter Physics then this property will contain a reference to a Physics Body.
     */
-  var body: Body | StaticBody | BodyType = js.native
+  var body: Body | StaticBody | BodyType | Null = js.native
   
   /**
     * A bitmask that controls if this Game Object is drawn by a Camera or not.
@@ -165,6 +165,8 @@ trait GameObject
     */
   var ignoreDestroy: Boolean = js.native
   
+  def incData[T /* <: Any */](key: T): this.type = js.native
+  def incData[T /* <: Any */](key: T, data: Any): this.type = js.native
   /**
     * Increase a value for the given key within this Game Objects Data Manager. If the key doesn't already exist in the Data Manager then it is increased from 0.
     * 
@@ -177,16 +179,14 @@ trait GameObject
     * @param key The key to increase the value for.
     * @param data The value to increase for the given key.
     */
-  def incData(key: String): this.type = js.native
-  def incData(key: String, data: Any): this.type = js.native
-  def incData(key: js.Object): this.type = js.native
-  def incData(key: js.Object, data: Any): this.type = js.native
+  def incData[T /* <: Any */](key: String): this.type = js.native
+  def incData[T /* <: Any */](key: String, data: Any): this.type = js.native
   
   /**
     * If this Game Object is enabled for input then this property will contain an InteractiveObject instance.
     * Not usually set directly. Instead call `GameObject.setInteractive()`.
     */
-  var input: InteractiveObject = js.native
+  var input: InteractiveObject | Null = js.native
   
   /**
     * The name of this Game Object.
@@ -280,6 +280,8 @@ trait GameObject
     */
   def setActive(value: Boolean): this.type = js.native
   
+  def setData[T /* <: Any */](key: T): this.type = js.native
+  def setData[T /* <: Any */](key: T, data: Any): this.type = js.native
   /**
     * Allows you to store a key value pair within this Game Objects Data Manager.
     * 
@@ -321,10 +323,8 @@ trait GameObject
     * @param key The key to set the value for. Or an object of key value pairs. If an object the `data` argument is ignored.
     * @param data The value to set for the given key. If an object is provided as the key this argument is ignored.
     */
-  def setData(key: String): this.type = js.native
-  def setData(key: String, data: Any): this.type = js.native
-  def setData(key: js.Object): this.type = js.native
-  def setData(key: js.Object, data: Any): this.type = js.native
+  def setData[T /* <: Any */](key: String): this.type = js.native
+  def setData[T /* <: Any */](key: String, data: Any): this.type = js.native
   
   /**
     * Adds a Data Manager component to this Game Object.
@@ -404,6 +404,7 @@ trait GameObject
     */
   def toJSON(): JSONGameObject = js.native
   
+  def toggleData[T /* <: Any */](key: T): this.type = js.native
   /**
     * Toggle a boolean value for the given key within this Game Objects Data Manager. If the key doesn't already exist in the Data Manager then it is toggled from false.
     * 
@@ -415,8 +416,7 @@ trait GameObject
     * When the value is first set, a `setdata` event is emitted from this Game Object.
     * @param key The key to toggle the value for.
     */
-  def toggleData(key: String): this.type = js.native
-  def toggleData(key: js.Object): this.type = js.native
+  def toggleData[T /* <: Any */](key: String): this.type = js.native
   
   /**
     * A textual representation of this Game Object, i.e. `sprite`.

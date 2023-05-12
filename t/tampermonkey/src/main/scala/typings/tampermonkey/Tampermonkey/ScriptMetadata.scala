@@ -16,23 +16,25 @@ trait ScriptMetadata extends StObject {
   
   var author: String | Null
   
-  /**
-    * Idk what this is, nothing I did changed this from any empty array
-    * and it's not documented anywhere
-    */
-  var blockers: js.Array[Any]
+  var blockers: js.Array[String]
   
   var copyright: String | Null
   
+  var deleted: js.UndefOr[Double] = js.undefined
+  
   var description: String | Null
   
-  var description_i18n: Record[String, String]
+  var description_i18n: (Record[String, String]) | Null
   
   var downloadURL: String | Null
+  
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   var evilness: Double
   
   var excludes: js.Array[String]
+  
+  var fileURL: js.UndefOr[String | Null] = js.undefined
   
   var grant: js.Array[String]
   
@@ -52,7 +54,7 @@ trait ScriptMetadata extends StObject {
   
   var name: String
   
-  var name_i18n: Record[String, String]
+  var name_i18n: (Record[String, String]) | Null
   
   var namespace: String | Null
   
@@ -69,7 +71,9 @@ trait ScriptMetadata extends StObject {
   
   var supportURL: String | Null
   
-  var sync: Imported
+  var sync: js.UndefOr[Imported] = js.undefined
+  
+  var system: js.UndefOr[Boolean] = js.undefined
   
   var unwrap: Boolean
   
@@ -79,14 +83,13 @@ trait ScriptMetadata extends StObject {
   
   var version: String
   
-  var webRequest: js.Array[String]
+  var webRequest: js.Array[WebRequestRule] | Null
 }
 object ScriptMetadata {
   
   inline def apply(
     antifeatures: Record[String, Record[String, String]],
-    blockers: js.Array[Any],
-    description_i18n: Record[String, String],
+    blockers: js.Array[String],
     evilness: Double,
     excludes: js.Array[String],
     grant: js.Array[String],
@@ -95,18 +98,15 @@ object ScriptMetadata {
     lastModified: Double,
     matches: js.Array[String],
     name: String,
-    name_i18n: Record[String, String],
     options: ScriptSettings,
     position: Double,
     resources: js.Array[ScriptResource],
     `run-at`: String,
-    sync: Imported,
     unwrap: Boolean,
     uuid: String,
-    version: String,
-    webRequest: js.Array[String]
+    version: String
   ): ScriptMetadata = {
-    val __obj = js.Dynamic.literal(antifeatures = antifeatures.asInstanceOf[js.Any], blockers = blockers.asInstanceOf[js.Any], description_i18n = description_i18n.asInstanceOf[js.Any], evilness = evilness.asInstanceOf[js.Any], excludes = excludes.asInstanceOf[js.Any], grant = grant.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], includes = includes.asInstanceOf[js.Any], lastModified = lastModified.asInstanceOf[js.Any], matches = matches.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], name_i18n = name_i18n.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], resources = resources.asInstanceOf[js.Any], sync = sync.asInstanceOf[js.Any], unwrap = unwrap.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any], webRequest = webRequest.asInstanceOf[js.Any], author = null, copyright = null, description = null, downloadURL = null, homepage = null, icon = null, icon64 = null, namespace = null, supportURL = null, updateURL = null)
+    val __obj = js.Dynamic.literal(antifeatures = antifeatures.asInstanceOf[js.Any], blockers = blockers.asInstanceOf[js.Any], evilness = evilness.asInstanceOf[js.Any], excludes = excludes.asInstanceOf[js.Any], grant = grant.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], includes = includes.asInstanceOf[js.Any], lastModified = lastModified.asInstanceOf[js.Any], matches = matches.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], resources = resources.asInstanceOf[js.Any], unwrap = unwrap.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any], author = null, copyright = null, description = null, description_i18n = null, downloadURL = null, homepage = null, icon = null, icon64 = null, name_i18n = null, namespace = null, supportURL = null, updateURL = null, webRequest = null)
     __obj.updateDynamic("run-at")(`run-at`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScriptMetadata]
   }
@@ -120,13 +120,17 @@ object ScriptMetadata {
     
     inline def setAuthorNull: Self = StObject.set(x, "author", null)
     
-    inline def setBlockers(value: js.Array[Any]): Self = StObject.set(x, "blockers", value.asInstanceOf[js.Any])
+    inline def setBlockers(value: js.Array[String]): Self = StObject.set(x, "blockers", value.asInstanceOf[js.Any])
     
-    inline def setBlockersVarargs(value: Any*): Self = StObject.set(x, "blockers", js.Array(value*))
+    inline def setBlockersVarargs(value: String*): Self = StObject.set(x, "blockers", js.Array(value*))
     
     inline def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
     
     inline def setCopyrightNull: Self = StObject.set(x, "copyright", null)
+    
+    inline def setDeleted(value: Double): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
+    
+    inline def setDeletedUndefined: Self = StObject.set(x, "deleted", js.undefined)
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
@@ -134,15 +138,27 @@ object ScriptMetadata {
     
     inline def setDescription_i18n(value: Record[String, String]): Self = StObject.set(x, "description_i18n", value.asInstanceOf[js.Any])
     
+    inline def setDescription_i18nNull: Self = StObject.set(x, "description_i18n", null)
+    
     inline def setDownloadURL(value: String): Self = StObject.set(x, "downloadURL", value.asInstanceOf[js.Any])
     
     inline def setDownloadURLNull: Self = StObject.set(x, "downloadURL", null)
+    
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
     inline def setEvilness(value: Double): Self = StObject.set(x, "evilness", value.asInstanceOf[js.Any])
     
     inline def setExcludes(value: js.Array[String]): Self = StObject.set(x, "excludes", value.asInstanceOf[js.Any])
     
     inline def setExcludesVarargs(value: String*): Self = StObject.set(x, "excludes", js.Array(value*))
+    
+    inline def setFileURL(value: String): Self = StObject.set(x, "fileURL", value.asInstanceOf[js.Any])
+    
+    inline def setFileURLNull: Self = StObject.set(x, "fileURL", null)
+    
+    inline def setFileURLUndefined: Self = StObject.set(x, "fileURL", js.undefined)
     
     inline def setGrant(value: js.Array[String]): Self = StObject.set(x, "grant", value.asInstanceOf[js.Any])
     
@@ -176,6 +192,8 @@ object ScriptMetadata {
     
     inline def setName_i18n(value: Record[String, String]): Self = StObject.set(x, "name_i18n", value.asInstanceOf[js.Any])
     
+    inline def setName_i18nNull: Self = StObject.set(x, "name_i18n", null)
+    
     inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
     
     inline def setNamespaceNull: Self = StObject.set(x, "namespace", null)
@@ -196,6 +214,12 @@ object ScriptMetadata {
     
     inline def setSync(value: Imported): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
     
+    inline def setSyncUndefined: Self = StObject.set(x, "sync", js.undefined)
+    
+    inline def setSystem(value: Boolean): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
+    
+    inline def setSystemUndefined: Self = StObject.set(x, "system", js.undefined)
+    
     inline def setUnwrap(value: Boolean): Self = StObject.set(x, "unwrap", value.asInstanceOf[js.Any])
     
     inline def setUpdateURL(value: String): Self = StObject.set(x, "updateURL", value.asInstanceOf[js.Any])
@@ -206,8 +230,10 @@ object ScriptMetadata {
     
     inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    inline def setWebRequest(value: js.Array[String]): Self = StObject.set(x, "webRequest", value.asInstanceOf[js.Any])
+    inline def setWebRequest(value: js.Array[WebRequestRule]): Self = StObject.set(x, "webRequest", value.asInstanceOf[js.Any])
     
-    inline def setWebRequestVarargs(value: String*): Self = StObject.set(x, "webRequest", js.Array(value*))
+    inline def setWebRequestNull: Self = StObject.set(x, "webRequest", null)
+    
+    inline def setWebRequestVarargs(value: WebRequestRule*): Self = StObject.set(x, "webRequest", js.Array(value*))
   }
 }

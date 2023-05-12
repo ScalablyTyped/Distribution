@@ -12,6 +12,7 @@ trait ExportNamedDeclaration_
      with BaseNode
      with Declaration
      with ExportDeclaration
+     with ImportOrExportDeclaration
      with ModuleDeclaration
      with Node
      with Standardized

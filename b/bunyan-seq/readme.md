@@ -1,7 +1,7 @@
 
 # Scala.js typings for bunyan-seq
 
-Typings are for version 0.11.0
+Typings are for version 1.0.0
 
 ## Library description:
 A Bunyan stream that sends log events to Seq

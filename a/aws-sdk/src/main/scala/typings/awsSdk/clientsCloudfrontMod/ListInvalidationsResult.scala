@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListInvalidationsResult extends StObject {
   
   /**
-    * Information about invalidation batches. 
+    * Information about invalidation batches.
     */
   var InvalidationList: js.UndefOr[typings.awsSdk.clientsCloudfrontMod.InvalidationList] = js.undefined
 }

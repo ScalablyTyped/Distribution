@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RestoreDBInstanceToPointInTimeMessage extends StObject {
   
   /**
+    * The amount of storage (in gibibytes) to allocate initially for the DB instance. Follow the allocation rules specified in CreateDBInstance.  Be sure to allocate enough storage for your new DB instance so that the restore operation can succeed. You can also allocate additional storage for future growth. 
+    */
+  var AllocatedStorage: js.UndefOr[IntegerOptional] = js.undefined
+  
+  /**
     * A value that indicates whether minor version upgrades are applied automatically to the DB instance during the maintenance window. This setting doesn't apply to RDS Custom.
     */
   var AutoMinorVersionUpgrade: js.UndefOr[BooleanOptional] = js.undefined
@@ -202,6 +207,10 @@ object RestoreDBInstanceToPointInTimeMessage {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: RestoreDBInstanceToPointInTimeMessage] (val x: Self) extends AnyVal {
+    
+    inline def setAllocatedStorage(value: IntegerOptional): Self = StObject.set(x, "AllocatedStorage", value.asInstanceOf[js.Any])
+    
+    inline def setAllocatedStorageUndefined: Self = StObject.set(x, "AllocatedStorage", js.undefined)
     
     inline def setAutoMinorVersionUpgrade(value: BooleanOptional): Self = StObject.set(x, "AutoMinorVersionUpgrade", value.asInstanceOf[js.Any])
     

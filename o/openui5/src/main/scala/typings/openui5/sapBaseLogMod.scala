@@ -154,9 +154,10 @@ object sapBaseLogMod extends Shortcut {
       */
     sMessage: String,
       /**
-      * Details about the message, might be omitted
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged with
+      * the stack.
       */
-    sDetails: String
+    vDetails: String
     ): Unit = js.native
     def debug(
       /**
@@ -164,9 +165,10 @@ object sapBaseLogMod extends Shortcut {
       */
     sMessage: String,
       /**
-      * Details about the message, might be omitted
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged with
+      * the stack.
       */
-    sDetails: String,
+    vDetails: String,
       /**
       * Name of the component that produced the log entry
       */
@@ -178,9 +180,10 @@ object sapBaseLogMod extends Shortcut {
       */
     sMessage: String,
       /**
-      * Details about the message, might be omitted
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged with
+      * the stack.
       */
-    sDetails: String,
+    vDetails: String,
       /**
       * Name of the component that produced the log entry
       */
@@ -199,9 +202,10 @@ object sapBaseLogMod extends Shortcut {
       */
     sMessage: String,
       /**
-      * Details about the message, might be omitted
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged with
+      * the stack.
       */
-    sDetails: String,
+    vDetails: String,
       /**
       * Name of the component that produced the log entry
       */
@@ -220,9 +224,21 @@ object sapBaseLogMod extends Shortcut {
       */
     sMessage: String,
       /**
-      * Details about the message, might be omitted
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged with
+      * the stack.
       */
-    sDetails: Unit,
+    vDetails: js.Error
+    ): Unit = js.native
+    def debug(
+      /**
+      * Message text to display
+      */
+    sMessage: String,
+      /**
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged with
+      * the stack.
+      */
+    vDetails: js.Error,
       /**
       * Name of the component that produced the log entry
       */
@@ -234,9 +250,10 @@ object sapBaseLogMod extends Shortcut {
       */
     sMessage: String,
       /**
-      * Details about the message, might be omitted
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged with
+      * the stack.
       */
-    sDetails: Unit,
+    vDetails: js.Error,
       /**
       * Name of the component that produced the log entry
       */
@@ -255,9 +272,69 @@ object sapBaseLogMod extends Shortcut {
       */
     sMessage: String,
       /**
-      * Details about the message, might be omitted
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged with
+      * the stack.
       */
-    sDetails: Unit,
+    vDetails: js.Error,
+      /**
+      * Name of the component that produced the log entry
+      */
+    sComponent: Unit,
+      /**
+      * Callback that returns an additional support object to be logged in support mode. This function is only
+      * called if support info mode is turned on with `logSupportInfo(true)`. To avoid negative effects regarding
+      * execution times and memory consumption, the returned object should be a simple immutable JSON object
+      * with mostly static and stable content.
+      */
+    fnSupportInfo: js.Function
+    ): Unit = js.native
+    def debug(
+      /**
+      * Message text to display
+      */
+    sMessage: String,
+      /**
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged with
+      * the stack.
+      */
+    vDetails: Unit,
+      /**
+      * Name of the component that produced the log entry
+      */
+    sComponent: String
+    ): Unit = js.native
+    def debug(
+      /**
+      * Message text to display
+      */
+    sMessage: String,
+      /**
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged with
+      * the stack.
+      */
+    vDetails: Unit,
+      /**
+      * Name of the component that produced the log entry
+      */
+    sComponent: String,
+      /**
+      * Callback that returns an additional support object to be logged in support mode. This function is only
+      * called if support info mode is turned on with `logSupportInfo(true)`. To avoid negative effects regarding
+      * execution times and memory consumption, the returned object should be a simple immutable JSON object
+      * with mostly static and stable content.
+      */
+    fnSupportInfo: js.Function
+    ): Unit = js.native
+    def debug(
+      /**
+      * Message text to display
+      */
+    sMessage: String,
+      /**
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged with
+      * the stack.
+      */
+    vDetails: Unit,
       /**
       * Name of the component that produced the log entry
       */
@@ -284,9 +361,10 @@ object sapBaseLogMod extends Shortcut {
       */
     sMessage: String,
       /**
-      * Details about the message, might be omitted
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged together
+      * with its stacktrace.
       */
-    sDetails: String
+    vDetails: String
     ): Unit = js.native
     def error(
       /**
@@ -294,9 +372,10 @@ object sapBaseLogMod extends Shortcut {
       */
     sMessage: String,
       /**
-      * Details about the message, might be omitted
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged together
+      * with its stacktrace.
       */
-    sDetails: String,
+    vDetails: String,
       /**
       * Name of the component that produced the log entry
       */
@@ -308,9 +387,10 @@ object sapBaseLogMod extends Shortcut {
       */
     sMessage: String,
       /**
-      * Details about the message, might be omitted
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged together
+      * with its stacktrace.
       */
-    sDetails: String,
+    vDetails: String,
       /**
       * Name of the component that produced the log entry
       */
@@ -329,9 +409,10 @@ object sapBaseLogMod extends Shortcut {
       */
     sMessage: String,
       /**
-      * Details about the message, might be omitted
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged together
+      * with its stacktrace.
       */
-    sDetails: String,
+    vDetails: String,
       /**
       * Name of the component that produced the log entry
       */
@@ -350,9 +431,21 @@ object sapBaseLogMod extends Shortcut {
       */
     sMessage: String,
       /**
-      * Details about the message, might be omitted
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged together
+      * with its stacktrace.
       */
-    sDetails: Unit,
+    vDetails: js.Error
+    ): Unit = js.native
+    def error(
+      /**
+      * Message text to display
+      */
+    sMessage: String,
+      /**
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged together
+      * with its stacktrace.
+      */
+    vDetails: js.Error,
       /**
       * Name of the component that produced the log entry
       */
@@ -364,9 +457,10 @@ object sapBaseLogMod extends Shortcut {
       */
     sMessage: String,
       /**
-      * Details about the message, might be omitted
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged together
+      * with its stacktrace.
       */
-    sDetails: Unit,
+    vDetails: js.Error,
       /**
       * Name of the component that produced the log entry
       */
@@ -385,9 +479,69 @@ object sapBaseLogMod extends Shortcut {
       */
     sMessage: String,
       /**
-      * Details about the message, might be omitted
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged together
+      * with its stacktrace.
       */
-    sDetails: Unit,
+    vDetails: js.Error,
+      /**
+      * Name of the component that produced the log entry
+      */
+    sComponent: Unit,
+      /**
+      * Callback that returns an additional support object to be logged in support mode. This function is only
+      * called if support info mode is turned on with `logSupportInfo(true)`. To avoid negative effects regarding
+      * execution times and memory consumption, the returned object should be a simple immutable JSON object
+      * with mostly static and stable content.
+      */
+    fnSupportInfo: js.Function
+    ): Unit = js.native
+    def error(
+      /**
+      * Message text to display
+      */
+    sMessage: String,
+      /**
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged together
+      * with its stacktrace.
+      */
+    vDetails: Unit,
+      /**
+      * Name of the component that produced the log entry
+      */
+    sComponent: String
+    ): Unit = js.native
+    def error(
+      /**
+      * Message text to display
+      */
+    sMessage: String,
+      /**
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged together
+      * with its stacktrace.
+      */
+    vDetails: Unit,
+      /**
+      * Name of the component that produced the log entry
+      */
+    sComponent: String,
+      /**
+      * Callback that returns an additional support object to be logged in support mode. This function is only
+      * called if support info mode is turned on with `logSupportInfo(true)`. To avoid negative effects regarding
+      * execution times and memory consumption, the returned object should be a simple immutable JSON object
+      * with mostly static and stable content.
+      */
+    fnSupportInfo: js.Function
+    ): Unit = js.native
+    def error(
+      /**
+      * Message text to display
+      */
+    sMessage: String,
+      /**
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged together
+      * with its stacktrace.
+      */
+    vDetails: Unit,
       /**
       * Name of the component that produced the log entry
       */
@@ -414,9 +568,10 @@ object sapBaseLogMod extends Shortcut {
       */
     sMessage: String,
       /**
-      * Details about the message, might be omitted
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged together
+      * with its stacktrace.
       */
-    sDetails: String
+    vDetails: String
     ): Unit = js.native
     def fatal(
       /**
@@ -424,9 +579,10 @@ object sapBaseLogMod extends Shortcut {
       */
     sMessage: String,
       /**
-      * Details about the message, might be omitted
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged together
+      * with its stacktrace.
       */
-    sDetails: String,
+    vDetails: String,
       /**
       * Name of the component that produced the log entry
       */
@@ -438,9 +594,10 @@ object sapBaseLogMod extends Shortcut {
       */
     sMessage: String,
       /**
-      * Details about the message, might be omitted
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged together
+      * with its stacktrace.
       */
-    sDetails: String,
+    vDetails: String,
       /**
       * Name of the component that produced the log entry
       */
@@ -459,9 +616,10 @@ object sapBaseLogMod extends Shortcut {
       */
     sMessage: String,
       /**
-      * Details about the message, might be omitted
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged together
+      * with its stacktrace.
       */
-    sDetails: String,
+    vDetails: String,
       /**
       * Name of the component that produced the log entry
       */
@@ -480,9 +638,21 @@ object sapBaseLogMod extends Shortcut {
       */
     sMessage: String,
       /**
-      * Details about the message, might be omitted
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged together
+      * with its stacktrace.
       */
-    sDetails: Unit,
+    vDetails: js.Error
+    ): Unit = js.native
+    def fatal(
+      /**
+      * Message text to display
+      */
+    sMessage: String,
+      /**
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged together
+      * with its stacktrace.
+      */
+    vDetails: js.Error,
       /**
       * Name of the component that produced the log entry
       */
@@ -494,9 +664,10 @@ object sapBaseLogMod extends Shortcut {
       */
     sMessage: String,
       /**
-      * Details about the message, might be omitted
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged together
+      * with its stacktrace.
       */
-    sDetails: Unit,
+    vDetails: js.Error,
       /**
       * Name of the component that produced the log entry
       */
@@ -515,9 +686,69 @@ object sapBaseLogMod extends Shortcut {
       */
     sMessage: String,
       /**
-      * Details about the message, might be omitted
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged together
+      * with its stacktrace.
       */
-    sDetails: Unit,
+    vDetails: js.Error,
+      /**
+      * Name of the component that produced the log entry
+      */
+    sComponent: Unit,
+      /**
+      * Callback that returns an additional support object to be logged in support mode. This function is only
+      * called if support info mode is turned on with `logSupportInfo(true)`. To avoid negative effects regarding
+      * execution times and memory consumption, the returned object should be a simple immutable JSON object
+      * with mostly static and stable content.
+      */
+    fnSupportInfo: js.Function
+    ): Unit = js.native
+    def fatal(
+      /**
+      * Message text to display
+      */
+    sMessage: String,
+      /**
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged together
+      * with its stacktrace.
+      */
+    vDetails: Unit,
+      /**
+      * Name of the component that produced the log entry
+      */
+    sComponent: String
+    ): Unit = js.native
+    def fatal(
+      /**
+      * Message text to display
+      */
+    sMessage: String,
+      /**
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged together
+      * with its stacktrace.
+      */
+    vDetails: Unit,
+      /**
+      * Name of the component that produced the log entry
+      */
+    sComponent: String,
+      /**
+      * Callback that returns an additional support object to be logged in support mode. This function is only
+      * called if support info mode is turned on with `logSupportInfo(true)`. To avoid negative effects regarding
+      * execution times and memory consumption, the returned object should be a simple immutable JSON object
+      * with mostly static and stable content.
+      */
+    fnSupportInfo: js.Function
+    ): Unit = js.native
+    def fatal(
+      /**
+      * Message text to display
+      */
+    sMessage: String,
+      /**
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged together
+      * with its stacktrace.
+      */
+    vDetails: Unit,
       /**
       * Name of the component that produced the log entry
       */
@@ -596,9 +827,10 @@ object sapBaseLogMod extends Shortcut {
       */
     sMessage: String,
       /**
-      * Details about the message, might be omitted
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged with
+      * the stack.
       */
-    sDetails: String
+    vDetails: String
     ): Unit = js.native
     def info(
       /**
@@ -606,9 +838,10 @@ object sapBaseLogMod extends Shortcut {
       */
     sMessage: String,
       /**
-      * Details about the message, might be omitted
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged with
+      * the stack.
       */
-    sDetails: String,
+    vDetails: String,
       /**
       * Name of the component that produced the log entry
       */
@@ -620,9 +853,10 @@ object sapBaseLogMod extends Shortcut {
       */
     sMessage: String,
       /**
-      * Details about the message, might be omitted
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged with
+      * the stack.
       */
-    sDetails: String,
+    vDetails: String,
       /**
       * Name of the component that produced the log entry
       */
@@ -641,9 +875,10 @@ object sapBaseLogMod extends Shortcut {
       */
     sMessage: String,
       /**
-      * Details about the message, might be omitted
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged with
+      * the stack.
       */
-    sDetails: String,
+    vDetails: String,
       /**
       * Name of the component that produced the log entry
       */
@@ -662,9 +897,21 @@ object sapBaseLogMod extends Shortcut {
       */
     sMessage: String,
       /**
-      * Details about the message, might be omitted
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged with
+      * the stack.
       */
-    sDetails: Unit,
+    vDetails: js.Error
+    ): Unit = js.native
+    def info(
+      /**
+      * Message text to display
+      */
+    sMessage: String,
+      /**
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged with
+      * the stack.
+      */
+    vDetails: js.Error,
       /**
       * Name of the component that produced the log entry
       */
@@ -676,9 +923,10 @@ object sapBaseLogMod extends Shortcut {
       */
     sMessage: String,
       /**
-      * Details about the message, might be omitted
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged with
+      * the stack.
       */
-    sDetails: Unit,
+    vDetails: js.Error,
       /**
       * Name of the component that produced the log entry
       */
@@ -697,9 +945,69 @@ object sapBaseLogMod extends Shortcut {
       */
     sMessage: String,
       /**
-      * Details about the message, might be omitted
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged with
+      * the stack.
       */
-    sDetails: Unit,
+    vDetails: js.Error,
+      /**
+      * Name of the component that produced the log entry
+      */
+    sComponent: Unit,
+      /**
+      * Callback that returns an additional support object to be logged in support mode. This function is only
+      * called if support info mode is turned on with `logSupportInfo(true)`. To avoid negative effects regarding
+      * execution times and memory consumption, the returned object should be a simple immutable JSON object
+      * with mostly static and stable content.
+      */
+    fnSupportInfo: js.Function
+    ): Unit = js.native
+    def info(
+      /**
+      * Message text to display
+      */
+    sMessage: String,
+      /**
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged with
+      * the stack.
+      */
+    vDetails: Unit,
+      /**
+      * Name of the component that produced the log entry
+      */
+    sComponent: String
+    ): Unit = js.native
+    def info(
+      /**
+      * Message text to display
+      */
+    sMessage: String,
+      /**
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged with
+      * the stack.
+      */
+    vDetails: Unit,
+      /**
+      * Name of the component that produced the log entry
+      */
+    sComponent: String,
+      /**
+      * Callback that returns an additional support object to be logged in support mode. This function is only
+      * called if support info mode is turned on with `logSupportInfo(true)`. To avoid negative effects regarding
+      * execution times and memory consumption, the returned object should be a simple immutable JSON object
+      * with mostly static and stable content.
+      */
+    fnSupportInfo: js.Function
+    ): Unit = js.native
+    def info(
+      /**
+      * Message text to display
+      */
+    sMessage: String,
+      /**
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged with
+      * the stack.
+      */
+    vDetails: Unit,
       /**
       * Name of the component that produced the log entry
       */
@@ -756,7 +1064,7 @@ object sapBaseLogMod extends Shortcut {
     oListener: js.Object): Unit = js.native
     
     /**
-      * Defines the maximum `sap.base.log.Level` of log entries that will be recorded. Log entries with a higher
+      * Defines the maximum `sap/base/Log.Level` of log entries that will be recorded. Log entries with a higher
       * (less important) log level will be omitted from the log. When a component name is given, the log level
       * will be configured for that component only, otherwise the log level for the default component of this
       * logger is set. For the global logger, the global default level is set.
@@ -792,9 +1100,10 @@ object sapBaseLogMod extends Shortcut {
       */
     sMessage: String,
       /**
-      * Details about the message, might be omitted
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged with
+      * the stack.
       */
-    sDetails: String
+    vDetails: String
     ): Unit = js.native
     def trace(
       /**
@@ -802,9 +1111,10 @@ object sapBaseLogMod extends Shortcut {
       */
     sMessage: String,
       /**
-      * Details about the message, might be omitted
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged with
+      * the stack.
       */
-    sDetails: String,
+    vDetails: String,
       /**
       * Name of the component that produced the log entry
       */
@@ -816,9 +1126,10 @@ object sapBaseLogMod extends Shortcut {
       */
     sMessage: String,
       /**
-      * Details about the message, might be omitted
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged with
+      * the stack.
       */
-    sDetails: String,
+    vDetails: String,
       /**
       * Name of the component that produced the log entry
       */
@@ -837,9 +1148,10 @@ object sapBaseLogMod extends Shortcut {
       */
     sMessage: String,
       /**
-      * Details about the message, might be omitted
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged with
+      * the stack.
       */
-    sDetails: String,
+    vDetails: String,
       /**
       * Name of the component that produced the log entry
       */
@@ -858,9 +1170,21 @@ object sapBaseLogMod extends Shortcut {
       */
     sMessage: String,
       /**
-      * Details about the message, might be omitted
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged with
+      * the stack.
       */
-    sDetails: Unit,
+    vDetails: js.Error
+    ): Unit = js.native
+    def trace(
+      /**
+      * Message text to display
+      */
+    sMessage: String,
+      /**
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged with
+      * the stack.
+      */
+    vDetails: js.Error,
       /**
       * Name of the component that produced the log entry
       */
@@ -872,9 +1196,10 @@ object sapBaseLogMod extends Shortcut {
       */
     sMessage: String,
       /**
-      * Details about the message, might be omitted
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged with
+      * the stack.
       */
-    sDetails: Unit,
+    vDetails: js.Error,
       /**
       * Name of the component that produced the log entry
       */
@@ -893,9 +1218,69 @@ object sapBaseLogMod extends Shortcut {
       */
     sMessage: String,
       /**
-      * Details about the message, might be omitted
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged with
+      * the stack.
       */
-    sDetails: Unit,
+    vDetails: js.Error,
+      /**
+      * Name of the component that produced the log entry
+      */
+    sComponent: Unit,
+      /**
+      * Callback that returns an additional support object to be logged in support mode. This function is only
+      * called if support info mode is turned on with `logSupportInfo(true)`. To avoid negative effects regarding
+      * execution times and memory consumption, the returned object should be a simple immutable JSON object
+      * with mostly static and stable content.
+      */
+    fnSupportInfo: js.Function
+    ): Unit = js.native
+    def trace(
+      /**
+      * Message text to display
+      */
+    sMessage: String,
+      /**
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged with
+      * the stack.
+      */
+    vDetails: Unit,
+      /**
+      * Name of the component that produced the log entry
+      */
+    sComponent: String
+    ): Unit = js.native
+    def trace(
+      /**
+      * Message text to display
+      */
+    sMessage: String,
+      /**
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged with
+      * the stack.
+      */
+    vDetails: Unit,
+      /**
+      * Name of the component that produced the log entry
+      */
+    sComponent: String,
+      /**
+      * Callback that returns an additional support object to be logged in support mode. This function is only
+      * called if support info mode is turned on with `logSupportInfo(true)`. To avoid negative effects regarding
+      * execution times and memory consumption, the returned object should be a simple immutable JSON object
+      * with mostly static and stable content.
+      */
+    fnSupportInfo: js.Function
+    ): Unit = js.native
+    def trace(
+      /**
+      * Message text to display
+      */
+    sMessage: String,
+      /**
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged with
+      * the stack.
+      */
+    vDetails: Unit,
       /**
       * Name of the component that produced the log entry
       */
@@ -922,9 +1307,10 @@ object sapBaseLogMod extends Shortcut {
       */
     sMessage: String,
       /**
-      * Details about the message, might be omitted
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged together
+      * with its stacktrace.
       */
-    sDetails: String
+    vDetails: String
     ): Unit = js.native
     def warning(
       /**
@@ -932,9 +1318,10 @@ object sapBaseLogMod extends Shortcut {
       */
     sMessage: String,
       /**
-      * Details about the message, might be omitted
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged together
+      * with its stacktrace.
       */
-    sDetails: String,
+    vDetails: String,
       /**
       * Name of the component that produced the log entry
       */
@@ -946,9 +1333,10 @@ object sapBaseLogMod extends Shortcut {
       */
     sMessage: String,
       /**
-      * Details about the message, might be omitted
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged together
+      * with its stacktrace.
       */
-    sDetails: String,
+    vDetails: String,
       /**
       * Name of the component that produced the log entry
       */
@@ -967,9 +1355,10 @@ object sapBaseLogMod extends Shortcut {
       */
     sMessage: String,
       /**
-      * Details about the message, might be omitted
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged together
+      * with its stacktrace.
       */
-    sDetails: String,
+    vDetails: String,
       /**
       * Name of the component that produced the log entry
       */
@@ -988,9 +1377,21 @@ object sapBaseLogMod extends Shortcut {
       */
     sMessage: String,
       /**
-      * Details about the message, might be omitted
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged together
+      * with its stacktrace.
       */
-    sDetails: Unit,
+    vDetails: js.Error
+    ): Unit = js.native
+    def warning(
+      /**
+      * Message text to display
+      */
+    sMessage: String,
+      /**
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged together
+      * with its stacktrace.
+      */
+    vDetails: js.Error,
       /**
       * Name of the component that produced the log entry
       */
@@ -1002,9 +1403,10 @@ object sapBaseLogMod extends Shortcut {
       */
     sMessage: String,
       /**
-      * Details about the message, might be omitted
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged together
+      * with its stacktrace.
       */
-    sDetails: Unit,
+    vDetails: js.Error,
       /**
       * Name of the component that produced the log entry
       */
@@ -1023,9 +1425,69 @@ object sapBaseLogMod extends Shortcut {
       */
     sMessage: String,
       /**
-      * Details about the message, might be omitted
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged together
+      * with its stacktrace.
       */
-    sDetails: Unit,
+    vDetails: js.Error,
+      /**
+      * Name of the component that produced the log entry
+      */
+    sComponent: Unit,
+      /**
+      * Callback that returns an additional support object to be logged in support mode. This function is only
+      * called if support info mode is turned on with `logSupportInfo(true)`. To avoid negative effects regarding
+      * execution times and memory consumption, the returned object should be a simple immutable JSON object
+      * with mostly static and stable content.
+      */
+    fnSupportInfo: js.Function
+    ): Unit = js.native
+    def warning(
+      /**
+      * Message text to display
+      */
+    sMessage: String,
+      /**
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged together
+      * with its stacktrace.
+      */
+    vDetails: Unit,
+      /**
+      * Name of the component that produced the log entry
+      */
+    sComponent: String
+    ): Unit = js.native
+    def warning(
+      /**
+      * Message text to display
+      */
+    sMessage: String,
+      /**
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged together
+      * with its stacktrace.
+      */
+    vDetails: Unit,
+      /**
+      * Name of the component that produced the log entry
+      */
+    sComponent: String,
+      /**
+      * Callback that returns an additional support object to be logged in support mode. This function is only
+      * called if support info mode is turned on with `logSupportInfo(true)`. To avoid negative effects regarding
+      * execution times and memory consumption, the returned object should be a simple immutable JSON object
+      * with mostly static and stable content.
+      */
+    fnSupportInfo: js.Function
+    ): Unit = js.native
+    def warning(
+      /**
+      * Message text to display
+      */
+    sMessage: String,
+      /**
+      * Optional details about the message, might be omitted. Can be an Error object which will be logged together
+      * with its stacktrace.
+      */
+    vDetails: Unit,
       /**
       * Name of the component that produced the log entry
       */

@@ -3,41 +3,41 @@ package typings.svelteLeafletjs.anon
 import typings.leaflet.mod.MapOptions
 import typings.leaflet.mod.Map_
 import typings.svelteLeafletjs.mod.MapEventKeys
-import typings.svelteLeafletjs.svelteLeafletjsStrings.onautopanstart
-import typings.svelteLeafletjs.svelteLeafletjsStrings.onbaselayerchange
-import typings.svelteLeafletjs.svelteLeafletjsStrings.onblur
-import typings.svelteLeafletjs.svelteLeafletjsStrings.onclick
-import typings.svelteLeafletjs.svelteLeafletjsStrings.oncontextmenu
-import typings.svelteLeafletjs.svelteLeafletjsStrings.ondblclick
-import typings.svelteLeafletjs.svelteLeafletjsStrings.ondrag
-import typings.svelteLeafletjs.svelteLeafletjsStrings.ondragend
-import typings.svelteLeafletjs.svelteLeafletjsStrings.ondragstart
-import typings.svelteLeafletjs.svelteLeafletjsStrings.onfocus
-import typings.svelteLeafletjs.svelteLeafletjsStrings.onlayeradd
-import typings.svelteLeafletjs.svelteLeafletjsStrings.onlayerremove
-import typings.svelteLeafletjs.svelteLeafletjsStrings.onload
-import typings.svelteLeafletjs.svelteLeafletjsStrings.onlocationerror
-import typings.svelteLeafletjs.svelteLeafletjsStrings.onlocationfound
-import typings.svelteLeafletjs.svelteLeafletjsStrings.onmousedown
-import typings.svelteLeafletjs.svelteLeafletjsStrings.onmousemove
-import typings.svelteLeafletjs.svelteLeafletjsStrings.onmouseout
-import typings.svelteLeafletjs.svelteLeafletjsStrings.onmouseover
-import typings.svelteLeafletjs.svelteLeafletjsStrings.onmouseup
-import typings.svelteLeafletjs.svelteLeafletjsStrings.onmove
-import typings.svelteLeafletjs.svelteLeafletjsStrings.onmoveend
-import typings.svelteLeafletjs.svelteLeafletjsStrings.onmovestart
-import typings.svelteLeafletjs.svelteLeafletjsStrings.onoverlayadd
-import typings.svelteLeafletjs.svelteLeafletjsStrings.onoverlayremove
-import typings.svelteLeafletjs.svelteLeafletjsStrings.onpopupclose
-import typings.svelteLeafletjs.svelteLeafletjsStrings.onpopupopen
-import typings.svelteLeafletjs.svelteLeafletjsStrings.onpreclick
-import typings.svelteLeafletjs.svelteLeafletjsStrings.onresize
-import typings.svelteLeafletjs.svelteLeafletjsStrings.onunload
-import typings.svelteLeafletjs.svelteLeafletjsStrings.onviewreset
-import typings.svelteLeafletjs.svelteLeafletjsStrings.onzoom
-import typings.svelteLeafletjs.svelteLeafletjsStrings.onzoomend
-import typings.svelteLeafletjs.svelteLeafletjsStrings.onzoomlevelschange
-import typings.svelteLeafletjs.svelteLeafletjsStrings.onzoomstart
+import typings.svelteLeafletjs.svelteLeafletjsStrings.autopanstart
+import typings.svelteLeafletjs.svelteLeafletjsStrings.baselayerchange
+import typings.svelteLeafletjs.svelteLeafletjsStrings.blur
+import typings.svelteLeafletjs.svelteLeafletjsStrings.click
+import typings.svelteLeafletjs.svelteLeafletjsStrings.contextmenu
+import typings.svelteLeafletjs.svelteLeafletjsStrings.dblclick
+import typings.svelteLeafletjs.svelteLeafletjsStrings.drag
+import typings.svelteLeafletjs.svelteLeafletjsStrings.dragend
+import typings.svelteLeafletjs.svelteLeafletjsStrings.dragstart
+import typings.svelteLeafletjs.svelteLeafletjsStrings.focus
+import typings.svelteLeafletjs.svelteLeafletjsStrings.layeradd
+import typings.svelteLeafletjs.svelteLeafletjsStrings.layerremove
+import typings.svelteLeafletjs.svelteLeafletjsStrings.load
+import typings.svelteLeafletjs.svelteLeafletjsStrings.locationerror
+import typings.svelteLeafletjs.svelteLeafletjsStrings.locationfound
+import typings.svelteLeafletjs.svelteLeafletjsStrings.mousedown
+import typings.svelteLeafletjs.svelteLeafletjsStrings.mousemove
+import typings.svelteLeafletjs.svelteLeafletjsStrings.mouseout
+import typings.svelteLeafletjs.svelteLeafletjsStrings.mouseover
+import typings.svelteLeafletjs.svelteLeafletjsStrings.mouseup
+import typings.svelteLeafletjs.svelteLeafletjsStrings.move
+import typings.svelteLeafletjs.svelteLeafletjsStrings.moveend
+import typings.svelteLeafletjs.svelteLeafletjsStrings.movestart
+import typings.svelteLeafletjs.svelteLeafletjsStrings.overlayadd
+import typings.svelteLeafletjs.svelteLeafletjsStrings.overlayremove
+import typings.svelteLeafletjs.svelteLeafletjsStrings.popupclose
+import typings.svelteLeafletjs.svelteLeafletjsStrings.popupopen
+import typings.svelteLeafletjs.svelteLeafletjsStrings.preclick
+import typings.svelteLeafletjs.svelteLeafletjsStrings.resize
+import typings.svelteLeafletjs.svelteLeafletjsStrings.unload
+import typings.svelteLeafletjs.svelteLeafletjsStrings.viewreset
+import typings.svelteLeafletjs.svelteLeafletjsStrings.zoom
+import typings.svelteLeafletjs.svelteLeafletjsStrings.zoomend
+import typings.svelteLeafletjs.svelteLeafletjsStrings.zoomlevelschange
+import typings.svelteLeafletjs.svelteLeafletjsStrings.zoomstart
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -65,7 +65,7 @@ object Events {
     inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
     inline def setEventsVarargs(
-      value: (onlocationfound | ondragstart | onzoomlevelschange | onzoom | ondrag | ondblclick | onbaselayerchange | oncontextmenu | onoverlayadd | onmouseout | onviewreset | onoverlayremove | onzoomstart | onlayerremove | onclick | onresize | onmovestart | onfocus | onmouseup | onmoveend | onmove | onmouseover | onpreclick | onzoomend | onautopanstart | onblur | onload | ondragend | onlocationerror | onpopupopen | onmousemove | onpopupclose | onunload | onlayeradd | onmousedown)*
+      value: (click | dblclick | mousedown | mouseup | mouseover | mouseout | mousemove | contextmenu | focus | blur | preclick | load | unload | viewreset | move | movestart | moveend | dragstart | drag | dragend | zoomstart | zoom | zoomend | zoomlevelschange | resize | autopanstart | layeradd | layerremove | baselayerchange | overlayadd | overlayremove | locationfound | locationerror | popupopen | popupclose)*
     ): Self = StObject.set(x, "events", js.Array(value*))
     
     inline def setGetMap(value: () => Map_): Self = StObject.set(x, "getMap", js.Any.fromFunction0(value))

@@ -62,7 +62,7 @@ trait MenuItemConstructorOptions extends StObject {
   
   /**
     * default is `true`, and when `false` will prevent the accelerator from triggering
-    * the item if the item is not visible`.
+    * the item if the item is not visible.
     *
     * @platform darwin
     */

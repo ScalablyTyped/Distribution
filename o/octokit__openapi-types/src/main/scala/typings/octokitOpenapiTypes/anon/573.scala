@@ -6,28 +6,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `573` extends StObject {
   
-  var incomplete_results: Boolean
-  
-  var items: js.Array[Createdby]
-  
-  var total_count: Double
+  @JSName("application/json")
+  var applicationSlashjson: js.Array[Contributions]
 }
 object `573` {
   
-  inline def apply(incomplete_results: Boolean, items: js.Array[Createdby], total_count: Double): `573` = {
-    val __obj = js.Dynamic.literal(incomplete_results = incomplete_results.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], total_count = total_count.asInstanceOf[js.Any])
+  inline def apply(applicationSlashjson: js.Array[Contributions]): `573` = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("application/json")(applicationSlashjson.asInstanceOf[js.Any])
     __obj.asInstanceOf[`573`]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: `573`] (val x: Self) extends AnyVal {
     
-    inline def setIncomplete_results(value: Boolean): Self = StObject.set(x, "incomplete_results", value.asInstanceOf[js.Any])
+    inline def setApplicationSlashjson(value: js.Array[Contributions]): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
     
-    inline def setItems(value: js.Array[Createdby]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
-    
-    inline def setItemsVarargs(value: Createdby*): Self = StObject.set(x, "items", js.Array(value*))
-    
-    inline def setTotal_count(value: Double): Self = StObject.set(x, "total_count", value.asInstanceOf[js.Any])
+    inline def setApplicationSlashjsonVarargs(value: Contributions*): Self = StObject.set(x, "application/json", js.Array(value*))
   }
 }

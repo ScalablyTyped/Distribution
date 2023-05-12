@@ -11,9 +11,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class Map protected ()
   extends StObject
      with typings.googleMaps.google.maps.Map {
+  /**
+    * Access by calling `const {Map} = await
+    * google.maps.importLibrary("maps")`. See
+    * https://developers.google.com/maps/documentation/javascript/libraries.
+    * @param mapDiv The map will render to fill this element.
+    * @param opts Options
+    */
   def this(mapDiv: HTMLElement) = this()
   def this(mapDiv: HTMLElement, opts: MapOptions) = this()
 }
+/* static members */
 object Map {
   
   /**
@@ -22,7 +30,6 @@ object Map {
     * used for features which require cloud configuration (such as Cloud
     * Styling).
     */
-  /* static member */
   @JSGlobal("google.maps.Map.DEMO_MAP_ID")
   @js.native
   val DEMO_MAP_ID: String = js.native

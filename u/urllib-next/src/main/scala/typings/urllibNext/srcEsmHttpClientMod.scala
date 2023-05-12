@@ -24,10 +24,13 @@ object srcEsmHttpClientMod {
   open class HttpClient () extends EventEmitter {
     def this(clientOptions: ClientOptions) = this()
     
+    def curl[T](url: RequestURL): js.Promise[HttpClientResponse[T]] = js.native
+    def curl[T](url: RequestURL, options: RequestOptions): js.Promise[HttpClientResponse[T]] = js.native
+    
     /* private */ var `private`: Any = js.native
     
-    def request(url: RequestURL): js.Promise[HttpClientResponse] = js.native
-    def request(url: RequestURL, options: RequestOptions): js.Promise[HttpClientResponse] = js.native
+    def request[T](url: RequestURL): js.Promise[HttpClientResponse[T]] = js.native
+    def request[T](url: RequestURL, options: RequestOptions): js.Promise[HttpClientResponse[T]] = js.native
   }
   
   trait ClientOptions extends StObject {

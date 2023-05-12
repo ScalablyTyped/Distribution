@@ -1,9 +1,7 @@
 package typings.chainsafeLibp2pNoise
 
-import typings.chainsafeLibp2pNoise.anon.Plaintext
 import typings.chainsafeLibp2pNoise.distSrcCryptoMod.ICryptoInterface
 import typings.chainsafeLibp2pNoise.distSrcHandshakeInterfaceMod.IHandshake
-import typings.chainsafeLibp2pNoise.distSrcHandshakeMod.NoiseSession
 import typings.chainsafeLibp2pNoise.distSrcHandshakesXxMod.XX
 import typings.chainsafeLibp2pNoise.distSrcLibp2pMod.KeyPair
 import typings.chainsafeLibp2pNoise.distSrcProtoPayloadMod.NoiseExtensions
@@ -26,7 +24,7 @@ object distSrcHandshakeXxMod {
       prologue: js.typedarray.Uint8Array,
       crypto: ICryptoInterface,
       staticKeypair: KeyPair,
-      connection: ProtobufStream
+      connection: ProtobufStream[Any]
     ) = this()
     def this(
       isInitiator: Boolean,
@@ -34,7 +32,7 @@ object distSrcHandshakeXxMod {
       prologue: js.typedarray.Uint8Array,
       crypto: ICryptoInterface,
       staticKeypair: KeyPair,
-      connection: ProtobufStream,
+      connection: ProtobufStream[Any],
       remotePeer: PeerId
     ) = this()
     def this(
@@ -43,7 +41,7 @@ object distSrcHandshakeXxMod {
       prologue: js.typedarray.Uint8Array,
       crypto: ICryptoInterface,
       staticKeypair: KeyPair,
-      connection: ProtobufStream,
+      connection: ProtobufStream[Any],
       remotePeer: Unit,
       handshake: XX
     ) = this()
@@ -53,18 +51,12 @@ object distSrcHandshakeXxMod {
       prologue: js.typedarray.Uint8Array,
       crypto: ICryptoInterface,
       staticKeypair: KeyPair,
-      connection: ProtobufStream,
+      connection: ProtobufStream[Any],
       remotePeer: PeerId,
       handshake: XX
     ) = this()
     
-    /* protected */ var connection: ProtobufStream = js.native
-    
-    /* CompleteClass */
-    override def decrypt(ciphertext: js.typedarray.Uint8Array, session: NoiseSession): Plaintext = js.native
-    
-    /* CompleteClass */
-    override def encrypt(plaintext: js.typedarray.Uint8Array, session: NoiseSession): js.typedarray.Uint8Array = js.native
+    /* protected */ var connection: ProtobufStream[Any] = js.native
     
     def exchange(): js.Promise[Unit] = js.native
     
@@ -81,15 +73,6 @@ object distSrcHandshakeXxMod {
     /* private */ val prologue: Any = js.native
     
     def propose(): js.Promise[Unit] = js.native
-    
-    /* CompleteClass */
-    var remoteExtensions: NoiseExtensions = js.native
-    
-    /* CompleteClass */
-    var remotePeer: PeerId = js.native
-    
-    /* CompleteClass */
-    var session: NoiseSession = js.native
     
     /* protected */ def setRemoteNoiseExtension(): Unit = js.native
     /* protected */ def setRemoteNoiseExtension(e: NoiseExtensions): Unit = js.native

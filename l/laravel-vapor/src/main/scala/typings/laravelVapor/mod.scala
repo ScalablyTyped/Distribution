@@ -19,6 +19,9 @@ object mod extends Shortcut {
     
     def store(file: File): js.Promise[Any] = js.native
     def store(file: File, options: VaporStoreOptions): js.Promise[Any] = js.native
+    
+    def withBaseAssetUrl(): Unit = js.native
+    def withBaseAssetUrl(url: String): Unit = js.native
   }
   
   trait VaporStoreOptions extends StObject {

@@ -10,18 +10,18 @@ open class DebugAdapterServer protected ()
   extends StObject
      with DebugAdapterDescriptor {
   /**
-    * Create a description for a debug adapter running as a socket based server.
-    */
+  		 * Create a description for a debug adapter running as a socket based server.
+  		 */
   def this(port: Double) = this()
   def this(port: Double, host: String) = this()
   
   /**
-    * The host.
-    */
+  		 * The host.
+  		 */
   val host: js.UndefOr[String] = js.native
   
   /**
-    * The port.
-    */
+  		 * The port.
+  		 */
   val port: Double = js.native
 }

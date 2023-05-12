@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListFindingsResponse extends StObject {
   
   /**
-    * An array of strings, where each string is the unique identifier for a finding that meets the filter criteria specified in the request.
+    * An array of strings, where each string is the unique identifier for a finding that matches the filter criteria specified in the request.
     */
   var findingIds: js.UndefOr[listOfString] = js.undefined
   

@@ -47,9 +47,21 @@ object mod {
   @js.native
   val P2P: Mafmt = js.native
   
+  @JSImport("@multiformats/mafmt", "P2PWebRTCDirect")
+  @js.native
+  val P2PWebRTCDirect: Mafmt = js.native
+  
+  @JSImport("@multiformats/mafmt", "P2PWebRTCStar")
+  @js.native
+  val P2PWebRTCStar: Mafmt = js.native
+  
   @JSImport("@multiformats/mafmt", "QUIC")
   @js.native
   val QUIC: Mafmt = js.native
+  
+  @JSImport("@multiformats/mafmt", "QUICV1")
+  @js.native
+  val QUICV1: Mafmt = js.native
   
   @JSImport("@multiformats/mafmt", "Reliable")
   @js.native
@@ -71,13 +83,13 @@ object mod {
   @js.native
   val UTP: Mafmt = js.native
   
+  @JSImport("@multiformats/mafmt", "WebRTC")
+  @js.native
+  val WebRTC: Mafmt = js.native
+  
   @JSImport("@multiformats/mafmt", "WebRTCDirect")
   @js.native
   val WebRTCDirect: Mafmt = js.native
-  
-  @JSImport("@multiformats/mafmt", "WebRTCStar")
-  @js.native
-  val WebRTCStar: Mafmt = js.native
   
   @JSImport("@multiformats/mafmt", "WebSocketStar")
   @js.native
@@ -90,6 +102,10 @@ object mod {
   @JSImport("@multiformats/mafmt", "WebSocketsSecure")
   @js.native
   val WebSocketsSecure: Mafmt = js.native
+  
+  @JSImport("@multiformats/mafmt", "WebTransport")
+  @js.native
+  val WebTransport: Mafmt = js.native
   
   trait Mafmt extends StObject {
     

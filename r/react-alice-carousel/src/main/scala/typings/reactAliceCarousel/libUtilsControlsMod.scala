@@ -14,16 +14,24 @@ object libUtilsControlsMod {
   
   inline def checkIsTheLastDotIndex(index: Double, infinite: Boolean, dotsLength: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("checkIsTheLastDotIndex")(index.asInstanceOf[js.Any], infinite.asInstanceOf[js.Any], dotsLength.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def getDotsNavigationLength(itemsCount: Double, itemsInSlide: Double, hasDotForEachSlide: Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getDotsNavigationLength")(itemsCount.asInstanceOf[js.Any], itemsInSlide.asInstanceOf[js.Any], hasDotForEachSlide.asInstanceOf[js.Any])).asInstanceOf[Double]
-  inline def getDotsNavigationLength(itemsCount: Double, itemsInSlide: Unit, hasDotForEachSlide: Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getDotsNavigationLength")(itemsCount.asInstanceOf[js.Any], itemsInSlide.asInstanceOf[js.Any], hasDotForEachSlide.asInstanceOf[js.Any])).asInstanceOf[Double]
-  inline def getDotsNavigationLength(itemsCount: Unit, itemsInSlide: Double, hasDotForEachSlide: Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getDotsNavigationLength")(itemsCount.asInstanceOf[js.Any], itemsInSlide.asInstanceOf[js.Any], hasDotForEachSlide.asInstanceOf[js.Any])).asInstanceOf[Double]
-  inline def getDotsNavigationLength(itemsCount: Unit, itemsInSlide: Unit, hasDotForEachSlide: Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getDotsNavigationLength")(itemsCount.asInstanceOf[js.Any], itemsInSlide.asInstanceOf[js.Any], hasDotForEachSlide.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getDotsNavigationLength(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getDotsNavigationLength")().asInstanceOf[Double]
+  inline def getDotsNavigationLength(itemsCount: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getDotsNavigationLength")(itemsCount.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def getDotsNavigationLength(itemsCount: Double, itemsInSlide: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getDotsNavigationLength")(itemsCount.asInstanceOf[js.Any], itemsInSlide.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getDotsNavigationLength(itemsCount: Double, itemsInSlide: Double, hasDotForEachSlide: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getDotsNavigationLength")(itemsCount.asInstanceOf[js.Any], itemsInSlide.asInstanceOf[js.Any], hasDotForEachSlide.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getDotsNavigationLength(itemsCount: Double, itemsInSlide: Unit, hasDotForEachSlide: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getDotsNavigationLength")(itemsCount.asInstanceOf[js.Any], itemsInSlide.asInstanceOf[js.Any], hasDotForEachSlide.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getDotsNavigationLength(itemsCount: Unit, itemsInSlide: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getDotsNavigationLength")(itemsCount.asInstanceOf[js.Any], itemsInSlide.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getDotsNavigationLength(itemsCount: Unit, itemsInSlide: Double, hasDotForEachSlide: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getDotsNavigationLength")(itemsCount.asInstanceOf[js.Any], itemsInSlide.asInstanceOf[js.Any], hasDotForEachSlide.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getDotsNavigationLength(itemsCount: Unit, itemsInSlide: Unit, hasDotForEachSlide: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getDotsNavigationLength")(itemsCount.asInstanceOf[js.Any], itemsInSlide.asInstanceOf[js.Any], hasDotForEachSlide.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   inline def getItemIndexForDotNavigation(index: Double, isTheLastIndex: Boolean, slidesLength: Double, itemsInSlide: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getItemIndexForDotNavigation")(index.asInstanceOf[js.Any], isTheLastIndex.asInstanceOf[js.Any], slidesLength.asInstanceOf[js.Any], itemsInSlide.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  inline def hasDotForEachSlide(autoWidth: Any, controlsStrategy: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("hasDotForEachSlide")(autoWidth.asInstanceOf[js.Any], controlsStrategy.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def hasDotForEachSlide(autoWidth: Boolean): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasDotForEachSlide")(autoWidth.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def hasDotForEachSlide(autoWidth: Boolean, controlsStrategy: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasDotForEachSlide")(autoWidth.asInstanceOf[js.Any], controlsStrategy.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def isStrategy(strategy: Any, value: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("isStrategy")(strategy.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def isStrategy(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStrategy")().asInstanceOf[Boolean]
+  inline def isStrategy(strategy: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStrategy")(strategy.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isStrategy(strategy: String, value: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isStrategy")(strategy.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isStrategy(strategy: Unit, value: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isStrategy")(strategy.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   inline def shouldCancelAutoPlayOnAction(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("shouldCancelAutoPlayOnAction")().asInstanceOf[Boolean]
   inline def shouldCancelAutoPlayOnAction(strategy: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("shouldCancelAutoPlayOnAction")(strategy.asInstanceOf[js.Any]).asInstanceOf[Boolean]

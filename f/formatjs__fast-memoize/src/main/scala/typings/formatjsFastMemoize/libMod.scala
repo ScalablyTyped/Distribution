@@ -11,8 +11,8 @@ object libMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default[F /* <: Func */](fn: F): F | (js.Function1[/* arg */ Any, Any]) = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(fn.asInstanceOf[js.Any]).asInstanceOf[F | (js.Function1[/* arg */ Any, Any])]
-  inline def default[F /* <: Func */](fn: F, options: Options[F]): F | (js.Function1[/* arg */ Any, Any]) = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(fn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[F | (js.Function1[/* arg */ Any, Any])]
+  inline def memoize[F /* <: Func */](fn: F): F | (js.Function1[/* arg */ Any, Any]) = ^.asInstanceOf[js.Dynamic].applyDynamic("memoize")(fn.asInstanceOf[js.Any]).asInstanceOf[F | (js.Function1[/* arg */ Any, Any])]
+  inline def memoize[F /* <: Func */](fn: F, options: Options[F]): F | (js.Function1[/* arg */ Any, Any]) = (^.asInstanceOf[js.Dynamic].applyDynamic("memoize")(fn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[F | (js.Function1[/* arg */ Any, Any])]
   
   @JSImport("@formatjs/fast-memoize/lib", "strategies")
   @js.native
@@ -40,26 +40,13 @@ object libMod {
   
   type CacheCreateFunc[K, V] = js.Function0[DefaultCache[K, V]]
   
+  @js.native
   trait DefaultCache[K, V] extends StObject {
     
-    def get(key: K): V
+    def get(key: K): js.UndefOr[V] = js.native
     
-    def set(key: K, value: V): Unit
-  }
-  object DefaultCache {
-    
-    inline def apply[K, V](get: K => V, set: (K, V) => Unit): DefaultCache[K, V] = {
-      val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), set = js.Any.fromFunction2(set))
-      __obj.asInstanceOf[DefaultCache[K, V]]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: DefaultCache[?, ?], K, V] (val x: Self & (DefaultCache[K, V])) extends AnyVal {
-      
-      inline def setGet(value: K => V): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
-      
-      inline def setSet(value: (K, V) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
-    }
+    def set(key: K): Unit = js.native
+    def set(key: K, value: V): Unit = js.native
   }
   
   @js.native

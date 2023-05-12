@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.BorderRightStyle
+import typings.csstype.mod.Property.MarginLeft
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,11 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `483` extends StObject {
   
   var value: js.UndefOr[
-    BorderRightStyle | (js.Array[
+    (MarginLeft[Double | String]) | (js.Array[
       (Extract[
-        js.UndefOr[BorderRightStyle | js.Array[NonNullable[js.UndefOr[BorderRightStyle]]]], 
+        js.UndefOr[
+          (MarginLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginLeft[Double | String]]]])
+        ], 
         String
-      ]) | NonNullable[js.UndefOr[BorderRightStyle]]
+      ]) | (NonNullable[js.UndefOr[MarginLeft[Double | String]]])
     ])
   ] = js.native
 }

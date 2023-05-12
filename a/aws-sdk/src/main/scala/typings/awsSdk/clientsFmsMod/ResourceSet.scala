@@ -27,6 +27,11 @@ trait ResourceSet extends StObject {
   var Name: typings.awsSdk.clientsFmsMod.Name
   
   /**
+    * Indicates whether the resource set is in or out of an admin's Region scope.    ACTIVE - The administrator can manage and delete the resource set.    OUT_OF_ADMIN_SCOPE - The administrator can view the resource set, but they can't edit or delete the resource set. Existing protections stay in place. Any new resource that come into scope of the resource set won't be protected.  
+    */
+  var ResourceSetStatus: js.UndefOr[typings.awsSdk.clientsFmsMod.ResourceSetStatus] = js.undefined
+  
+  /**
     * Determines the resources that can be associated to the resource set. Depending on your setting for max results and the number of resource sets, a single call might not return the full list.
     */
   var ResourceTypeList: typings.awsSdk.clientsFmsMod.ResourceTypeList
@@ -59,6 +64,10 @@ object ResourceSet {
     inline def setLastUpdateTimeUndefined: Self = StObject.set(x, "LastUpdateTime", js.undefined)
     
     inline def setName(value: Name): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    
+    inline def setResourceSetStatus(value: ResourceSetStatus): Self = StObject.set(x, "ResourceSetStatus", value.asInstanceOf[js.Any])
+    
+    inline def setResourceSetStatusUndefined: Self = StObject.set(x, "ResourceSetStatus", js.undefined)
     
     inline def setResourceTypeList(value: ResourceTypeList): Self = StObject.set(x, "ResourceTypeList", value.asInstanceOf[js.Any])
     

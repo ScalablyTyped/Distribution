@@ -112,6 +112,12 @@ object vueCompilerCoreStrings {
   inline def isNativeTag: isNativeTag = "isNativeTag".asInstanceOf[isNativeTag]
   
   @js.native
+  sealed trait `literal-const`
+    extends StObject
+       with BindingTypes
+  inline def `literal-const`: `literal-const` = "literal-const".asInstanceOf[`literal-const`]
+  
+  @js.native
   sealed trait module extends StObject
   inline def module: module = "module".asInstanceOf[module]
   

@@ -17,7 +17,7 @@ trait ServiceUpdateMessage
   // The zip file that contains all attachments for a message.
   var attachmentsArchive: js.UndefOr[NullableOption[Any]] = js.undefined
   
-  // The content type and content of the service message body.
+  // The content type and content of the service message body. The supported value for the contentType property is html.
   var body: js.UndefOr[ItemBody] = js.undefined
   
   // The service message category. Possible values are: preventOrFixIssue, planForChange, stayInformed, unknownFutureValue.

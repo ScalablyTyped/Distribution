@@ -38,11 +38,6 @@ object buildSrcAuthAwsrequestsignerMod {
     /* private */ val region: Any = js.native
   }
   
-  /**
-    * Interface defining AWS security credentials.
-    * These are either determined from AWS security_credentials endpoint or
-    * AWS environment variables.
-    */
   trait AwsSecurityCredentials extends StObject {
     
     var accessKeyId: String

@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Rewritten from type alias, can be one of: 
   - typings.wdioTypes.wdioTypesStrings.webdriver
   - typings.wdioTypes.wdioTypesStrings.devtools
-  - typings.wdioTypes.wdioTypesStrings.`DotSlashprotocol-stub`
+  - typings.wdioTypes.wdioTypesStrings.`DotSlashprotocol-stubDotjs`
 */
 trait SupportedProtocols extends StObject
 object SupportedProtocols {
   
-  inline def `DotSlashprotocol-stub`: typings.wdioTypes.wdioTypesStrings.`DotSlashprotocol-stub` = "./protocol-stub".asInstanceOf[typings.wdioTypes.wdioTypesStrings.`DotSlashprotocol-stub`]
+  inline def `DotSlashprotocol-stubDotjs`: typings.wdioTypes.wdioTypesStrings.`DotSlashprotocol-stubDotjs` = "./protocol-stub.js".asInstanceOf[typings.wdioTypes.wdioTypesStrings.`DotSlashprotocol-stubDotjs`]
   
   inline def devtools: typings.wdioTypes.wdioTypesStrings.devtools = "devtools".asInstanceOf[typings.wdioTypes.wdioTypesStrings.devtools]
   

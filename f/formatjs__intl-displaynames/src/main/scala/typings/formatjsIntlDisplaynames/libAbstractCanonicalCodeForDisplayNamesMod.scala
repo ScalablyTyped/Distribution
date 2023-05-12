@@ -1,6 +1,8 @@
 package typings.formatjsIntlDisplaynames
 
+import typings.formatjsIntlDisplaynames.formatjsIntlDisplaynamesStrings.calendar
 import typings.formatjsIntlDisplaynames.formatjsIntlDisplaynamesStrings.currency
+import typings.formatjsIntlDisplaynames.formatjsIntlDisplaynamesStrings.dateTimeField
 import typings.formatjsIntlDisplaynames.formatjsIntlDisplaynamesStrings.language
 import typings.formatjsIntlDisplaynames.formatjsIntlDisplaynamesStrings.region
 import typings.formatjsIntlDisplaynames.formatjsIntlDisplaynamesStrings.script
@@ -14,5 +16,5 @@ object libAbstractCanonicalCodeForDisplayNamesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def CanonicalCodeForDisplayNames(`type`: language | region | script | currency, code: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("CanonicalCodeForDisplayNames")(`type`.asInstanceOf[js.Any], code.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def CanonicalCodeForDisplayNames(`type`: language | region | script | calendar | dateTimeField | currency, code: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("CanonicalCodeForDisplayNames")(`type`.asInstanceOf[js.Any], code.asInstanceOf[js.Any])).asInstanceOf[String]
 }

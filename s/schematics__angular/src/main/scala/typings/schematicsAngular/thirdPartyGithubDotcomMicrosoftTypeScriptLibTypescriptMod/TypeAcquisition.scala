@@ -13,12 +13,6 @@ trait TypeAcquisition
   
   var enable: js.UndefOr[Boolean] = js.undefined
   
-  /**
-    * @deprecated typingOptions.enableAutoDiscovery
-    * Use typeAcquisition.enable instead.
-    */
-  var enableAutoDiscovery: js.UndefOr[Boolean] = js.undefined
-  
   var exclude: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   
   var include: js.UndefOr[js.Array[java.lang.String]] = js.undefined
@@ -38,10 +32,6 @@ object TypeAcquisition {
     inline def setDisableFilenameBasedTypeAcquisitionUndefined: Self = StObject.set(x, "disableFilenameBasedTypeAcquisition", js.undefined)
     
     inline def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
-    
-    inline def setEnableAutoDiscovery(value: Boolean): Self = StObject.set(x, "enableAutoDiscovery", value.asInstanceOf[js.Any])
-    
-    inline def setEnableAutoDiscoveryUndefined: Self = StObject.set(x, "enableAutoDiscovery", js.undefined)
     
     inline def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
     

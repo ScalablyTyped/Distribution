@@ -1,5 +1,6 @@
 package typings.aframe.mod.THREE
 
+import typings.three.srcCoreBufferGeometryMod.NormalOrGLBufferAttributes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("aframe", "THREE.BufferGeometry")
 @js.native
 /**
-  * This creates a new BufferGeometry. It also sets several properties to an default value.
+  * This creates a new {@link THREE.BufferGeometry | BufferGeometry} object.
   */
-open class BufferGeometry ()
-  extends typings.three.mod.BufferGeometry
+open class BufferGeometry[Attributes /* <: NormalOrGLBufferAttributes */] ()
+  extends typings.three.mod.BufferGeometry[Attributes]

@@ -117,12 +117,7 @@ trait Group
   /**
     * A function to be called when adding or creating group members.
     */
-  def createCallback(item: GameObject): Unit = js.native
-  /**
-    * A function to be called when adding or creating group members.
-    */
-  @JSName("createCallback")
-  var createCallback_Original: GroupCallback = js.native
+  var createCallback: GroupCallback | Null = js.native
   
   /**
     * A helper for {@link Phaser.GameObjects.Group#createMultiple}.
@@ -144,12 +139,7 @@ trait Group
   /**
     * A function to be called when creating several group members at once.
     */
-  def createMultipleCallback(items: js.Array[GameObject]): Unit = js.native
-  /**
-    * A function to be called when creating several group members at once.
-    */
-  @JSName("createMultipleCallback")
-  var createMultipleCallback_Original: GroupMultipleCreateCallback = js.native
+  var createMultipleCallback: GroupMultipleCreateCallback | Null = js.native
   
   /**
     * A default texture frame to use when creating new group members.
@@ -181,54 +171,54 @@ trait Group
     * @param frame A texture frame assigned to a new Game Object (if one is created). Default defaultFrame.
     * @param visible The {@link Phaser.GameObjects.Components.Visible#visible} state of a new Game Object (if one is created). Default true.
     */
-  def get(): Any = js.native
-  def get(x: Double): Any = js.native
-  def get(x: Double, y: Double): Any = js.native
-  def get(x: Double, y: Double, key: String): Any = js.native
-  def get(x: Double, y: Double, key: String, frame: String): Any = js.native
-  def get(x: Double, y: Double, key: String, frame: String, visible: Boolean): Any = js.native
-  def get(x: Double, y: Double, key: String, frame: Double): Any = js.native
-  def get(x: Double, y: Double, key: String, frame: Double, visible: Boolean): Any = js.native
-  def get(x: Double, y: Double, key: String, frame: Unit, visible: Boolean): Any = js.native
-  def get(x: Double, y: Double, key: Unit, frame: String): Any = js.native
-  def get(x: Double, y: Double, key: Unit, frame: String, visible: Boolean): Any = js.native
-  def get(x: Double, y: Double, key: Unit, frame: Double): Any = js.native
-  def get(x: Double, y: Double, key: Unit, frame: Double, visible: Boolean): Any = js.native
-  def get(x: Double, y: Double, key: Unit, frame: Unit, visible: Boolean): Any = js.native
-  def get(x: Double, y: Unit, key: String): Any = js.native
-  def get(x: Double, y: Unit, key: String, frame: String): Any = js.native
-  def get(x: Double, y: Unit, key: String, frame: String, visible: Boolean): Any = js.native
-  def get(x: Double, y: Unit, key: String, frame: Double): Any = js.native
-  def get(x: Double, y: Unit, key: String, frame: Double, visible: Boolean): Any = js.native
-  def get(x: Double, y: Unit, key: String, frame: Unit, visible: Boolean): Any = js.native
-  def get(x: Double, y: Unit, key: Unit, frame: String): Any = js.native
-  def get(x: Double, y: Unit, key: Unit, frame: String, visible: Boolean): Any = js.native
-  def get(x: Double, y: Unit, key: Unit, frame: Double): Any = js.native
-  def get(x: Double, y: Unit, key: Unit, frame: Double, visible: Boolean): Any = js.native
-  def get(x: Double, y: Unit, key: Unit, frame: Unit, visible: Boolean): Any = js.native
-  def get(x: Unit, y: Double): Any = js.native
-  def get(x: Unit, y: Double, key: String): Any = js.native
-  def get(x: Unit, y: Double, key: String, frame: String): Any = js.native
-  def get(x: Unit, y: Double, key: String, frame: String, visible: Boolean): Any = js.native
-  def get(x: Unit, y: Double, key: String, frame: Double): Any = js.native
-  def get(x: Unit, y: Double, key: String, frame: Double, visible: Boolean): Any = js.native
-  def get(x: Unit, y: Double, key: String, frame: Unit, visible: Boolean): Any = js.native
-  def get(x: Unit, y: Double, key: Unit, frame: String): Any = js.native
-  def get(x: Unit, y: Double, key: Unit, frame: String, visible: Boolean): Any = js.native
-  def get(x: Unit, y: Double, key: Unit, frame: Double): Any = js.native
-  def get(x: Unit, y: Double, key: Unit, frame: Double, visible: Boolean): Any = js.native
-  def get(x: Unit, y: Double, key: Unit, frame: Unit, visible: Boolean): Any = js.native
-  def get(x: Unit, y: Unit, key: String): Any = js.native
-  def get(x: Unit, y: Unit, key: String, frame: String): Any = js.native
-  def get(x: Unit, y: Unit, key: String, frame: String, visible: Boolean): Any = js.native
-  def get(x: Unit, y: Unit, key: String, frame: Double): Any = js.native
-  def get(x: Unit, y: Unit, key: String, frame: Double, visible: Boolean): Any = js.native
-  def get(x: Unit, y: Unit, key: String, frame: Unit, visible: Boolean): Any = js.native
-  def get(x: Unit, y: Unit, key: Unit, frame: String): Any = js.native
-  def get(x: Unit, y: Unit, key: Unit, frame: String, visible: Boolean): Any = js.native
-  def get(x: Unit, y: Unit, key: Unit, frame: Double): Any = js.native
-  def get(x: Unit, y: Unit, key: Unit, frame: Double, visible: Boolean): Any = js.native
-  def get(x: Unit, y: Unit, key: Unit, frame: Unit, visible: Boolean): Any = js.native
+  def get(): Any | Null = js.native
+  def get(x: Double): Any | Null = js.native
+  def get(x: Double, y: Double): Any | Null = js.native
+  def get(x: Double, y: Double, key: String): Any | Null = js.native
+  def get(x: Double, y: Double, key: String, frame: String): Any | Null = js.native
+  def get(x: Double, y: Double, key: String, frame: String, visible: Boolean): Any | Null = js.native
+  def get(x: Double, y: Double, key: String, frame: Double): Any | Null = js.native
+  def get(x: Double, y: Double, key: String, frame: Double, visible: Boolean): Any | Null = js.native
+  def get(x: Double, y: Double, key: String, frame: Unit, visible: Boolean): Any | Null = js.native
+  def get(x: Double, y: Double, key: Unit, frame: String): Any | Null = js.native
+  def get(x: Double, y: Double, key: Unit, frame: String, visible: Boolean): Any | Null = js.native
+  def get(x: Double, y: Double, key: Unit, frame: Double): Any | Null = js.native
+  def get(x: Double, y: Double, key: Unit, frame: Double, visible: Boolean): Any | Null = js.native
+  def get(x: Double, y: Double, key: Unit, frame: Unit, visible: Boolean): Any | Null = js.native
+  def get(x: Double, y: Unit, key: String): Any | Null = js.native
+  def get(x: Double, y: Unit, key: String, frame: String): Any | Null = js.native
+  def get(x: Double, y: Unit, key: String, frame: String, visible: Boolean): Any | Null = js.native
+  def get(x: Double, y: Unit, key: String, frame: Double): Any | Null = js.native
+  def get(x: Double, y: Unit, key: String, frame: Double, visible: Boolean): Any | Null = js.native
+  def get(x: Double, y: Unit, key: String, frame: Unit, visible: Boolean): Any | Null = js.native
+  def get(x: Double, y: Unit, key: Unit, frame: String): Any | Null = js.native
+  def get(x: Double, y: Unit, key: Unit, frame: String, visible: Boolean): Any | Null = js.native
+  def get(x: Double, y: Unit, key: Unit, frame: Double): Any | Null = js.native
+  def get(x: Double, y: Unit, key: Unit, frame: Double, visible: Boolean): Any | Null = js.native
+  def get(x: Double, y: Unit, key: Unit, frame: Unit, visible: Boolean): Any | Null = js.native
+  def get(x: Unit, y: Double): Any | Null = js.native
+  def get(x: Unit, y: Double, key: String): Any | Null = js.native
+  def get(x: Unit, y: Double, key: String, frame: String): Any | Null = js.native
+  def get(x: Unit, y: Double, key: String, frame: String, visible: Boolean): Any | Null = js.native
+  def get(x: Unit, y: Double, key: String, frame: Double): Any | Null = js.native
+  def get(x: Unit, y: Double, key: String, frame: Double, visible: Boolean): Any | Null = js.native
+  def get(x: Unit, y: Double, key: String, frame: Unit, visible: Boolean): Any | Null = js.native
+  def get(x: Unit, y: Double, key: Unit, frame: String): Any | Null = js.native
+  def get(x: Unit, y: Double, key: Unit, frame: String, visible: Boolean): Any | Null = js.native
+  def get(x: Unit, y: Double, key: Unit, frame: Double): Any | Null = js.native
+  def get(x: Unit, y: Double, key: Unit, frame: Double, visible: Boolean): Any | Null = js.native
+  def get(x: Unit, y: Double, key: Unit, frame: Unit, visible: Boolean): Any | Null = js.native
+  def get(x: Unit, y: Unit, key: String): Any | Null = js.native
+  def get(x: Unit, y: Unit, key: String, frame: String): Any | Null = js.native
+  def get(x: Unit, y: Unit, key: String, frame: String, visible: Boolean): Any | Null = js.native
+  def get(x: Unit, y: Unit, key: String, frame: Double): Any | Null = js.native
+  def get(x: Unit, y: Unit, key: String, frame: Double, visible: Boolean): Any | Null = js.native
+  def get(x: Unit, y: Unit, key: String, frame: Unit, visible: Boolean): Any | Null = js.native
+  def get(x: Unit, y: Unit, key: Unit, frame: String): Any | Null = js.native
+  def get(x: Unit, y: Unit, key: Unit, frame: String, visible: Boolean): Any | Null = js.native
+  def get(x: Unit, y: Unit, key: Unit, frame: Double): Any | Null = js.native
+  def get(x: Unit, y: Unit, key: Unit, frame: Double, visible: Boolean): Any | Null = js.native
+  def get(x: Unit, y: Unit, key: Unit, frame: Unit, visible: Boolean): Any | Null = js.native
   
   /**
     * All members of the group.
@@ -257,7 +247,7 @@ trait Group
     key: js.UndefOr[String],
     frame: js.UndefOr[String | Double],
     visible: js.UndefOr[Boolean]
-  ): Any = js.native
+  ): Any | Null = js.native
   
   /**
     * Scans the group for the first member that has an {@link Phaser.GameObjects.GameObject#active} state set to `true`,
@@ -328,7 +318,7 @@ trait Group
     key: js.UndefOr[String],
     frame: js.UndefOr[String | Double],
     visible: js.UndefOr[Boolean]
-  ): Any = js.native
+  ): Any | Null = js.native
   
   /**
     * Scans the Group for the last member that has an {@link Phaser.GameObjects.GameObject#active} state matching the argument,
@@ -352,7 +342,7 @@ trait Group
     key: js.UndefOr[String],
     frame: js.UndefOr[String | Double],
     visible: js.UndefOr[Boolean]
-  ): Any = js.native
+  ): Any | Null = js.native
   
   /**
     * Scans the Group for the last nth member that has an {@link Phaser.GameObjects.GameObject#active} state matching the argument,
@@ -378,7 +368,7 @@ trait Group
     key: js.UndefOr[String],
     frame: js.UndefOr[String | Double],
     visible: js.UndefOr[Boolean]
-  ): Any = js.native
+  ): Any | Null = js.native
   
   /**
     * The number of members of the group.
@@ -557,12 +547,7 @@ trait Group
   /**
     * A function to be called when removing group members.
     */
-  def removeCallback(item: GameObject): Unit = js.native
-  /**
-    * A function to be called when removing group members.
-    */
-  @JSName("removeCallback")
-  var removeCallback_Original: GroupCallback = js.native
+  var removeCallback: GroupCallback | Null = js.native
   
   /**
     * Sets the rotation of each group member.

@@ -2,8 +2,11 @@ package typings.expressValidator
 
 import typings.expressValidator.anon.RequiredOnly
 import typings.expressValidator.srcBaseMod.FieldInstance
+import typings.expressValidator.srcBaseMod.FieldValidationError
 import typings.expressValidator.srcBaseMod.Location
 import typings.expressValidator.srcBaseMod.Meta
+import typings.expressValidator.srcBaseMod.Request
+import typings.expressValidator.srcBaseMod.UnknownFieldInstance
 import typings.expressValidator.srcBaseMod.ValidationError
 import typings.expressValidator.srcContextItemsContextItemMod.ContextItem
 import org.scalablytyped.runtime.StObject
@@ -19,22 +22,25 @@ object srcContextMod {
       fields: js.Array[String],
       locations: js.Array[Location],
       stack: js.Array[ContextItem],
-      optional: Optional
+      optional: Optional,
+      bail: Boolean
     ) = this()
     def this(
       fields: js.Array[String],
       locations: js.Array[Location],
       stack: js.Array[ContextItem],
       optional: Optional,
+      bail: Boolean,
       message: Any
     ) = this()
     
     /* private */ val _errors: Any = js.native
     
-    def addError(message: Any, nestedErrors: js.Array[ValidationError]): Unit = js.native
-    def addError(message: Any, value: Any, meta: Meta): Unit = js.native
+    def addError(opts: AddErrorOptions): Unit = js.native
     
     def addFieldInstances(instances: js.Array[FieldInstance]): Unit = js.native
+    
+    val bail: Boolean = js.native
     
     /* private */ val dataMap: Any = js.native
     
@@ -57,22 +63,71 @@ object srcContextMod {
   }
   
   /* Rewritten from type alias, can be one of: 
-    - typings.expressValidator.anon.Nullable
+    - typings.expressValidator.anon.Message
+    - typings.expressValidator.anon.Fields
+    - typings.expressValidator.anon.NestedErrors
+    - typings.expressValidator.anon.Type
+  */
+  trait AddErrorOptions extends StObject
+  object AddErrorOptions {
+    
+    inline def Fields(fields: js.Array[UnknownFieldInstance], req: Request): typings.expressValidator.anon.Fields = {
+      val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], req = req.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("unknown_fields")
+      __obj.asInstanceOf[typings.expressValidator.anon.Fields]
+    }
+    
+    inline def Message(meta: Meta, value: Any): typings.expressValidator.anon.Message = {
+      val __obj = js.Dynamic.literal(meta = meta.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("field")
+      __obj.asInstanceOf[typings.expressValidator.anon.Message]
+    }
+    
+    inline def NestedErrors(nestedErrors: js.Array[FieldValidationError], req: Request): typings.expressValidator.anon.NestedErrors = {
+      val __obj = js.Dynamic.literal(nestedErrors = nestedErrors.asInstanceOf[js.Any], req = req.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("alternative")
+      __obj.asInstanceOf[typings.expressValidator.anon.NestedErrors]
+    }
+    
+    inline def Type(nestedErrors: js.Array[js.Array[FieldValidationError]], req: Request): typings.expressValidator.anon.Type = {
+      val __obj = js.Dynamic.literal(nestedErrors = nestedErrors.asInstanceOf[js.Any], req = req.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("alternative_grouped")
+      __obj.asInstanceOf[typings.expressValidator.anon.Type]
+    }
+  }
+  
+  /* Rewritten from type alias, can be one of: 
     - typings.expressValidator.expressValidatorBooleans.`false`
+    - typings.expressValidator.expressValidatorStrings.undefined
+    - typings.expressValidator.expressValidatorStrings.`null`
+    - typings.expressValidator.expressValidatorStrings.falsy
   */
   trait Optional extends StObject
+  object Optional {
+    
+    inline def `false`: typings.expressValidator.expressValidatorBooleans.`false` = false.asInstanceOf[typings.expressValidator.expressValidatorBooleans.`false`]
+    
+    inline def falsy: typings.expressValidator.expressValidatorStrings.falsy = "falsy".asInstanceOf[typings.expressValidator.expressValidatorStrings.falsy]
+    
+    inline def `null`: typings.expressValidator.expressValidatorStrings.`null` = "null".asInstanceOf[typings.expressValidator.expressValidatorStrings.`null`]
+    
+    inline def undefined: typings.expressValidator.expressValidatorStrings.undefined = "undefined".asInstanceOf[typings.expressValidator.expressValidatorStrings.undefined]
+  }
   
   /* Inlined std.Pick<express-validator.express-validator/src/context.Context, std.Exclude<keyof express-validator.express-validator/src/context.Context, 'setData' | 'addFieldInstances' | 'addError'>> */
   trait ReadonlyContext extends StObject {
     
     var _errors: Any
     
+    var bail: Boolean
+    
     @JSName("constructor")
-    var constructor_Original: js.Function5[
+    var constructor_Original: js.Function6[
         /* fields */ js.Array[String], 
         /* locations */ js.Array[Location], 
         /* stack */ js.Array[ContextItem], 
         /* optional */ Optional, 
+        /* bail */ Boolean, 
         /* message */ js.UndefOr[Any], 
         Any
       ]
@@ -102,7 +157,8 @@ object srcContextMod {
     
     inline def apply(
       _errors: Any,
-      constructor: (/* fields */ js.Array[String], /* locations */ js.Array[Location], /* stack */ js.Array[ContextItem], /* optional */ Optional, /* message */ js.UndefOr[Any]) => Any,
+      bail: Boolean,
+      constructor: (/* fields */ js.Array[String], /* locations */ js.Array[Location], /* stack */ js.Array[ContextItem], /* optional */ Optional, /* bail */ Boolean, /* message */ js.UndefOr[Any]) => Any,
       dataMap: Any,
       errors: () => js.Array[ValidationError],
       fields: js.Array[String],
@@ -111,16 +167,18 @@ object srcContextMod {
       optional: Optional,
       stack: js.Array[ContextItem]
     ): ReadonlyContext = {
-      val __obj = js.Dynamic.literal(_errors = _errors.asInstanceOf[js.Any], constructor = js.Any.fromFunction5(constructor), dataMap = dataMap.asInstanceOf[js.Any], errors = js.Any.fromFunction0(errors), fields = fields.asInstanceOf[js.Any], getData = js.Any.fromFunction1(getData), locations = locations.asInstanceOf[js.Any], optional = optional.asInstanceOf[js.Any], stack = stack.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(_errors = _errors.asInstanceOf[js.Any], bail = bail.asInstanceOf[js.Any], constructor = js.Any.fromFunction6(constructor), dataMap = dataMap.asInstanceOf[js.Any], errors = js.Any.fromFunction0(errors), fields = fields.asInstanceOf[js.Any], getData = js.Any.fromFunction1(getData), locations = locations.asInstanceOf[js.Any], optional = optional.asInstanceOf[js.Any], stack = stack.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReadonlyContext]
     }
     
     @scala.inline
     implicit open class MutableBuilder[Self <: ReadonlyContext] (val x: Self) extends AnyVal {
       
+      inline def setBail(value: Boolean): Self = StObject.set(x, "bail", value.asInstanceOf[js.Any])
+      
       inline def setConstructor(
-        value: (/* fields */ js.Array[String], /* locations */ js.Array[Location], /* stack */ js.Array[ContextItem], /* optional */ Optional, /* message */ js.UndefOr[Any]) => Any
-      ): Self = StObject.set(x, "constructor", js.Any.fromFunction5(value))
+        value: (/* fields */ js.Array[String], /* locations */ js.Array[Location], /* stack */ js.Array[ContextItem], /* optional */ Optional, /* bail */ Boolean, /* message */ js.UndefOr[Any]) => Any
+      ): Self = StObject.set(x, "constructor", js.Any.fromFunction6(value))
       
       inline def setDataMap(value: Any): Self = StObject.set(x, "dataMap", value.asInstanceOf[js.Any])
       

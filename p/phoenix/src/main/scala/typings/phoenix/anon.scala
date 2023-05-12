@@ -58,11 +58,19 @@ object anon {
     var binaryType: js.UndefOr[BinaryType] = js.undefined
     
     var decode: js.UndefOr[
-        js.Function2[/* payload */ String, /* callback */ js.Function1[/* decoded */ Any, Unit], Unit]
+        js.Function2[
+          /* payload */ String, 
+          /* callback */ js.Function1[/* decoded */ Any, Unit | js.Promise[Unit]], 
+          Unit
+        ]
       ] = js.undefined
     
     var encode: js.UndefOr[
-        js.Function2[/* payload */ js.Object, /* callback */ js.Function1[/* encoded */ Any, Unit], Unit]
+        js.Function2[
+          /* payload */ js.Object, 
+          /* callback */ js.Function1[/* encoded */ Any, Unit | js.Promise[Unit]], 
+          Unit
+        ]
       ] = js.undefined
     
     var heartbeatIntervalMs: js.UndefOr[Double] = js.undefined
@@ -97,11 +105,15 @@ object anon {
       
       inline def setBinaryTypeUndefined: Self = StObject.set(x, "binaryType", js.undefined)
       
-      inline def setDecode(value: (/* payload */ String, /* callback */ js.Function1[/* decoded */ Any, Unit]) => Unit): Self = StObject.set(x, "decode", js.Any.fromFunction2(value))
+      inline def setDecode(
+        value: (/* payload */ String, /* callback */ js.Function1[/* decoded */ Any, Unit | js.Promise[Unit]]) => Unit
+      ): Self = StObject.set(x, "decode", js.Any.fromFunction2(value))
       
       inline def setDecodeUndefined: Self = StObject.set(x, "decode", js.undefined)
       
-      inline def setEncode(value: (/* payload */ js.Object, /* callback */ js.Function1[/* encoded */ Any, Unit]) => Unit): Self = StObject.set(x, "encode", js.Any.fromFunction2(value))
+      inline def setEncode(
+        value: (/* payload */ js.Object, /* callback */ js.Function1[/* encoded */ Any, Unit | js.Promise[Unit]]) => Unit
+      ): Self = StObject.set(x, "encode", js.Any.fromFunction2(value))
       
       inline def setEncodeUndefined: Self = StObject.set(x, "encode", js.undefined)
       

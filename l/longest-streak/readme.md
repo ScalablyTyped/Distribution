@@ -1,7 +1,7 @@
 
 # Scala.js typings for longest-streak
 
-Typings are for version 3.0.1
+Typings are for version 3.1.0
 
 ## Library description:
 Count the longest repeating streak of a substring

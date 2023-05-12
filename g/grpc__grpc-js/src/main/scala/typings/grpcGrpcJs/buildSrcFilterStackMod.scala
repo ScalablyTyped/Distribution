@@ -1,8 +1,7 @@
 package typings.grpcGrpcJs
 
-import typings.grpcGrpcJs.buildSrcCallStreamMod.Call
-import typings.grpcGrpcJs.buildSrcCallStreamMod.StatusObject
-import typings.grpcGrpcJs.buildSrcCallStreamMod.WriteObject
+import typings.grpcGrpcJs.buildSrcCallInterfaceMod.StatusObject
+import typings.grpcGrpcJs.buildSrcCallInterfaceMod.WriteObject
 import typings.grpcGrpcJs.buildSrcFilterMod.Filter
 import typings.grpcGrpcJs.buildSrcFilterMod.FilterFactory
 import typings.grpcGrpcJs.buildSrcMetadataMod.Metadata
@@ -36,9 +35,6 @@ object buildSrcFilterStackMod {
     override def receiveTrailers(status: StatusObject): StatusObject = js.native
     
     /* CompleteClass */
-    override def refresh(): Unit = js.native
-    
-    /* CompleteClass */
     override def sendMessage(message: js.Promise[WriteObject]): js.Promise[WriteObject] = js.native
     
     /* CompleteClass */
@@ -53,7 +49,7 @@ object buildSrcFilterStackMod {
     def this(factories: js.Array[FilterFactory[Filter]]) = this()
     
     /* CompleteClass */
-    override def createFilter(callStream: Call): FilterStack = js.native
+    override def createFilter(): FilterStack = js.native
     
     /* private */ val factories: Any = js.native
     

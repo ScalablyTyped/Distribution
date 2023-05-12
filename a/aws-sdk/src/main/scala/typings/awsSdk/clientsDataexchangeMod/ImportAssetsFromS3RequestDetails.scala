@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ImportAssetsFromS3RequestDetails extends StObject {
   
   /**
-    * Is a list of S3 bucket and object key pairs.
+    * Is a list of Amazon S3 bucket and object key pairs.
     */
   var AssetSources: ListOfAssetSourceEntry
   

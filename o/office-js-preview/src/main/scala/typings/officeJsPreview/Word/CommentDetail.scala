@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A structure for the ID and reply IDs of this comment.
   *
   * @remarks
-  * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+  * [Api set: WordApi BETA (PREVIEW ONLY)]
   * @beta
   */
 trait CommentDetail extends StObject {
@@ -17,7 +17,7 @@ trait CommentDetail extends StObject {
     * Represents the ID of this comment.
     *
     * @remarks
-    * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+    * [Api set: WordApi BETA (PREVIEW ONLY)]
     * @beta
     */
   var id: String
@@ -26,7 +26,7 @@ trait CommentDetail extends StObject {
     * Represents the IDs of the replies to this comment.
     *
     * @remarks
-    * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+    * [Api set: WordApi BETA (PREVIEW ONLY)]
     * @beta
     */
   var replyIds: js.Array[String]

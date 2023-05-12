@@ -2,7 +2,7 @@ package typings.inferno
 
 import typings.inferno.anon.Children
 import typings.inferno.distCoreTypesMod.Inferno.ExoticComponent
-import typings.inferno.distCoreTypesMod.Inferno.InfernoNode
+import typings.inferno.distCoreTypesMod.InfernoNode
 import typings.inferno.distCoreTypesMod.VNode
 import typings.std.DocumentFragment
 import typings.std.Element

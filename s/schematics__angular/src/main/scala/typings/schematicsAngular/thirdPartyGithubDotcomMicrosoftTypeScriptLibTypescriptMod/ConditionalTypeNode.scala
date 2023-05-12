@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ConditionalTypeNode
   extends StObject
-     with TypeNode {
+     with TypeNode
+     with LocalsContainer {
   
   val checkType: TypeNode = js.native
   

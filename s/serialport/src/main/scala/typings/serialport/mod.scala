@@ -321,8 +321,6 @@ object mod {
     
     val isOpen: Boolean = js.native
     
-    def on(event: String, callback: js.Function1[/* data */ js.UndefOr[Any], Unit]): this.type = js.native
-    
     def open(): Unit = js.native
     def open(callback: ErrorCallback): Unit = js.native
     

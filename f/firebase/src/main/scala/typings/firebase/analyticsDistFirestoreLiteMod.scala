@@ -7,6 +7,8 @@ import typings.firebaseFirestore.distLiteMod.AggregateSpec
 import typings.firebaseFirestore.distLiteMod.DocumentData
 import typings.firebaseFirestore.distLiteMod.OrderByDirection
 import typings.firebaseFirestore.distLiteMod.PartialWithFieldValue
+import typings.firebaseFirestore.distLiteMod.QueryFilterConstraint
+import typings.firebaseFirestore.distLiteMod.QueryNonFilterConstraint
 import typings.firebaseFirestore.distLiteMod.SetOptions
 import typings.firebaseFirestore.distLiteMod.Settings
 import typings.firebaseFirestore.distLiteMod.TransactionOptions
@@ -117,6 +119,11 @@ object analyticsDistFirestoreLiteMod {
     def this(latitude: Double, longitude: Double) = this()
   }
   
+  @JSImport("firebase/analytics/dist/firestore/lite", "QueryCompositeFilterConstraint")
+  @js.native
+  open class QueryCompositeFilterConstraint ()
+    extends typings.firebaseFirestore.liteMod.QueryCompositeFilterConstraint
+  
   /* note: abstract class */ @JSImport("firebase/analytics/dist/firestore/lite", "QueryConstraint")
   @js.native
   open class QueryConstraint ()
@@ -127,10 +134,35 @@ object analyticsDistFirestoreLiteMod {
   /* protected */ open class QueryDocumentSnapshot[T] ()
     extends typings.firebaseFirestore.liteMod.QueryDocumentSnapshot[T]
   
+  @JSImport("firebase/analytics/dist/firestore/lite", "QueryEndAtConstraint")
+  @js.native
+  open class QueryEndAtConstraint ()
+    extends typings.firebaseFirestore.liteMod.QueryEndAtConstraint
+  
+  @JSImport("firebase/analytics/dist/firestore/lite", "QueryFieldFilterConstraint")
+  @js.native
+  open class QueryFieldFilterConstraint ()
+    extends typings.firebaseFirestore.liteMod.QueryFieldFilterConstraint
+  
+  @JSImport("firebase/analytics/dist/firestore/lite", "QueryLimitConstraint")
+  @js.native
+  open class QueryLimitConstraint ()
+    extends typings.firebaseFirestore.liteMod.QueryLimitConstraint
+  
+  @JSImport("firebase/analytics/dist/firestore/lite", "QueryOrderByConstraint")
+  @js.native
+  open class QueryOrderByConstraint ()
+    extends typings.firebaseFirestore.liteMod.QueryOrderByConstraint
+  
   @JSImport("firebase/analytics/dist/firestore/lite", "QuerySnapshot")
   @js.native
   /* private */ open class QuerySnapshot[T] ()
     extends typings.firebaseFirestore.liteMod.QuerySnapshot[T]
+  
+  @JSImport("firebase/analytics/dist/firestore/lite", "QueryStartAtConstraint")
+  @js.native
+  open class QueryStartAtConstraint ()
+    extends typings.firebaseFirestore.liteMod.QueryStartAtConstraint
   
   @JSImport("firebase/analytics/dist/firestore/lite", "Query")
   @js.native
@@ -214,6 +246,8 @@ object analyticsDistFirestoreLiteMod {
     right: typings.firebaseFirestore.distLiteMod.AggregateQuerySnapshot[T]
   ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("aggregateQuerySnapshotEqual")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
+  inline def and(queryConstraints: QueryFilterConstraint*): typings.firebaseFirestore.distLiteMod.QueryCompositeFilterConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("and")(queryConstraints.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.firebaseFirestore.distLiteMod.QueryCompositeFilterConstraint]
+  
   inline def arrayRemove(elements: Any*): typings.firebaseFirestore.distLiteMod.FieldValue = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayRemove")(elements.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.firebaseFirestore.distLiteMod.FieldValue]
   
   inline def arrayUnion(elements: Any*): typings.firebaseFirestore.distLiteMod.FieldValue = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayUnion")(elements.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.firebaseFirestore.distLiteMod.FieldValue]
@@ -263,11 +297,11 @@ object analyticsDistFirestoreLiteMod {
   
   inline def documentId(): typings.firebaseFirestore.distLiteMod.FieldPath = ^.asInstanceOf[js.Dynamic].applyDynamic("documentId")().asInstanceOf[typings.firebaseFirestore.distLiteMod.FieldPath]
   
-  inline def endAt(fieldValues: Any*): typings.firebaseFirestore.distLiteMod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("endAt")(fieldValues.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.firebaseFirestore.distLiteMod.QueryConstraint]
-  inline def endAt(snapshot: typings.firebaseFirestore.distLiteMod.DocumentSnapshot[Any]): typings.firebaseFirestore.distLiteMod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("endAt")(snapshot.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseFirestore.distLiteMod.QueryConstraint]
+  inline def endAt(fieldValues: Any*): typings.firebaseFirestore.distLiteMod.QueryEndAtConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("endAt")(fieldValues.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.firebaseFirestore.distLiteMod.QueryEndAtConstraint]
+  inline def endAt(snapshot: typings.firebaseFirestore.distLiteMod.DocumentSnapshot[Any]): typings.firebaseFirestore.distLiteMod.QueryEndAtConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("endAt")(snapshot.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseFirestore.distLiteMod.QueryEndAtConstraint]
   
-  inline def endBefore(fieldValues: Any*): typings.firebaseFirestore.distLiteMod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("endBefore")(fieldValues.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.firebaseFirestore.distLiteMod.QueryConstraint]
-  inline def endBefore(snapshot: typings.firebaseFirestore.distLiteMod.DocumentSnapshot[Any]): typings.firebaseFirestore.distLiteMod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("endBefore")(snapshot.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseFirestore.distLiteMod.QueryConstraint]
+  inline def endBefore(fieldValues: Any*): typings.firebaseFirestore.distLiteMod.QueryEndAtConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("endBefore")(fieldValues.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.firebaseFirestore.distLiteMod.QueryEndAtConstraint]
+  inline def endBefore(snapshot: typings.firebaseFirestore.distLiteMod.DocumentSnapshot[Any]): typings.firebaseFirestore.distLiteMod.QueryEndAtConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("endBefore")(snapshot.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseFirestore.distLiteMod.QueryEndAtConstraint]
   
   inline def getCount(query: typings.firebaseFirestore.distLiteMod.Query_[Any]): js.Promise[typings.firebaseFirestore.distLiteMod.AggregateQuerySnapshot[Count]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCount")(query.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.firebaseFirestore.distLiteMod.AggregateQuerySnapshot[Count]]]
   
@@ -282,15 +316,22 @@ object analyticsDistFirestoreLiteMod {
   
   inline def initializeFirestore(app: FirebaseApp, settings: Settings): typings.firebaseFirestore.distLiteMod.Firestore = (^.asInstanceOf[js.Dynamic].applyDynamic("initializeFirestore")(app.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseFirestore.distLiteMod.Firestore]
   
-  inline def limit(limit: Double): typings.firebaseFirestore.distLiteMod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("limit")(limit.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseFirestore.distLiteMod.QueryConstraint]
+  inline def limit(limit: Double): typings.firebaseFirestore.distLiteMod.QueryLimitConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("limit")(limit.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseFirestore.distLiteMod.QueryLimitConstraint]
   
-  inline def limitToLast(limit: Double): typings.firebaseFirestore.distLiteMod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("limitToLast")(limit.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseFirestore.distLiteMod.QueryConstraint]
+  inline def limitToLast(limit: Double): typings.firebaseFirestore.distLiteMod.QueryLimitConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("limitToLast")(limit.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseFirestore.distLiteMod.QueryLimitConstraint]
   
-  inline def orderBy(fieldPath: String): typings.firebaseFirestore.distLiteMod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("orderBy")(fieldPath.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseFirestore.distLiteMod.QueryConstraint]
-  inline def orderBy(fieldPath: String, directionStr: OrderByDirection): typings.firebaseFirestore.distLiteMod.QueryConstraint = (^.asInstanceOf[js.Dynamic].applyDynamic("orderBy")(fieldPath.asInstanceOf[js.Any], directionStr.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseFirestore.distLiteMod.QueryConstraint]
-  inline def orderBy(fieldPath: typings.firebaseFirestore.distLiteMod.FieldPath): typings.firebaseFirestore.distLiteMod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("orderBy")(fieldPath.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseFirestore.distLiteMod.QueryConstraint]
-  inline def orderBy(fieldPath: typings.firebaseFirestore.distLiteMod.FieldPath, directionStr: OrderByDirection): typings.firebaseFirestore.distLiteMod.QueryConstraint = (^.asInstanceOf[js.Dynamic].applyDynamic("orderBy")(fieldPath.asInstanceOf[js.Any], directionStr.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseFirestore.distLiteMod.QueryConstraint]
+  inline def or(queryConstraints: QueryFilterConstraint*): typings.firebaseFirestore.distLiteMod.QueryCompositeFilterConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("or")(queryConstraints.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.firebaseFirestore.distLiteMod.QueryCompositeFilterConstraint]
   
+  inline def orderBy(fieldPath: String): typings.firebaseFirestore.distLiteMod.QueryOrderByConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("orderBy")(fieldPath.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseFirestore.distLiteMod.QueryOrderByConstraint]
+  inline def orderBy(fieldPath: String, directionStr: OrderByDirection): typings.firebaseFirestore.distLiteMod.QueryOrderByConstraint = (^.asInstanceOf[js.Dynamic].applyDynamic("orderBy")(fieldPath.asInstanceOf[js.Any], directionStr.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseFirestore.distLiteMod.QueryOrderByConstraint]
+  inline def orderBy(fieldPath: typings.firebaseFirestore.distLiteMod.FieldPath): typings.firebaseFirestore.distLiteMod.QueryOrderByConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("orderBy")(fieldPath.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseFirestore.distLiteMod.QueryOrderByConstraint]
+  inline def orderBy(fieldPath: typings.firebaseFirestore.distLiteMod.FieldPath, directionStr: OrderByDirection): typings.firebaseFirestore.distLiteMod.QueryOrderByConstraint = (^.asInstanceOf[js.Dynamic].applyDynamic("orderBy")(fieldPath.asInstanceOf[js.Any], directionStr.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseFirestore.distLiteMod.QueryOrderByConstraint]
+  
+  inline def query[T](
+    query: typings.firebaseFirestore.distLiteMod.Query_[T],
+    compositeFilter: typings.firebaseFirestore.distLiteMod.QueryCompositeFilterConstraint,
+    queryConstraints: QueryNonFilterConstraint*
+  ): typings.firebaseFirestore.distLiteMod.Query_[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("query")((scala.List(query.asInstanceOf[js.Any], compositeFilter.asInstanceOf[js.Any])).`++`(queryConstraints.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[typings.firebaseFirestore.distLiteMod.Query_[T]]
   inline def query[T](
     query: typings.firebaseFirestore.distLiteMod.Query_[T],
     queryConstraints: typings.firebaseFirestore.distLiteMod.QueryConstraint*
@@ -356,11 +397,11 @@ object analyticsDistFirestoreLiteMod {
     right: typings.firebaseFirestore.distLiteMod.QuerySnapshot[T]
   ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("snapshotEqual")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def startAfter(fieldValues: Any*): typings.firebaseFirestore.distLiteMod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("startAfter")(fieldValues.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.firebaseFirestore.distLiteMod.QueryConstraint]
-  inline def startAfter(snapshot: typings.firebaseFirestore.distLiteMod.DocumentSnapshot[Any]): typings.firebaseFirestore.distLiteMod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("startAfter")(snapshot.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseFirestore.distLiteMod.QueryConstraint]
+  inline def startAfter(fieldValues: Any*): typings.firebaseFirestore.distLiteMod.QueryStartAtConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("startAfter")(fieldValues.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.firebaseFirestore.distLiteMod.QueryStartAtConstraint]
+  inline def startAfter(snapshot: typings.firebaseFirestore.distLiteMod.DocumentSnapshot[Any]): typings.firebaseFirestore.distLiteMod.QueryStartAtConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("startAfter")(snapshot.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseFirestore.distLiteMod.QueryStartAtConstraint]
   
-  inline def startAt(fieldValues: Any*): typings.firebaseFirestore.distLiteMod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("startAt")(fieldValues.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.firebaseFirestore.distLiteMod.QueryConstraint]
-  inline def startAt(snapshot: typings.firebaseFirestore.distLiteMod.DocumentSnapshot[Any]): typings.firebaseFirestore.distLiteMod.QueryConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("startAt")(snapshot.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseFirestore.distLiteMod.QueryConstraint]
+  inline def startAt(fieldValues: Any*): typings.firebaseFirestore.distLiteMod.QueryStartAtConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("startAt")(fieldValues.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typings.firebaseFirestore.distLiteMod.QueryStartAtConstraint]
+  inline def startAt(snapshot: typings.firebaseFirestore.distLiteMod.DocumentSnapshot[Any]): typings.firebaseFirestore.distLiteMod.QueryStartAtConstraint = ^.asInstanceOf[js.Dynamic].applyDynamic("startAt")(snapshot.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseFirestore.distLiteMod.QueryStartAtConstraint]
   
   inline def terminate(firestore: typings.firebaseFirestore.distLiteMod.Firestore): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("terminate")(firestore.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
@@ -378,8 +419,8 @@ object analyticsDistFirestoreLiteMod {
   ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateDoc")((scala.List(reference.asInstanceOf[js.Any], field.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).`++`(moreFieldsAndValues.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Promise[Unit]]
   inline def updateDoc[T](reference: typings.firebaseFirestore.distLiteMod.DocumentReference[T], data: UpdateData[T]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateDoc")(reference.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  inline def where(fieldPath: String, opStr: WhereFilterOp, value: Any): typings.firebaseFirestore.distLiteMod.QueryConstraint = (^.asInstanceOf[js.Dynamic].applyDynamic("where")(fieldPath.asInstanceOf[js.Any], opStr.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseFirestore.distLiteMod.QueryConstraint]
-  inline def where(fieldPath: typings.firebaseFirestore.distLiteMod.FieldPath, opStr: WhereFilterOp, value: Any): typings.firebaseFirestore.distLiteMod.QueryConstraint = (^.asInstanceOf[js.Dynamic].applyDynamic("where")(fieldPath.asInstanceOf[js.Any], opStr.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseFirestore.distLiteMod.QueryConstraint]
+  inline def where(fieldPath: String, opStr: WhereFilterOp, value: Any): typings.firebaseFirestore.distLiteMod.QueryFieldFilterConstraint = (^.asInstanceOf[js.Dynamic].applyDynamic("where")(fieldPath.asInstanceOf[js.Any], opStr.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseFirestore.distLiteMod.QueryFieldFilterConstraint]
+  inline def where(fieldPath: typings.firebaseFirestore.distLiteMod.FieldPath, opStr: WhereFilterOp, value: Any): typings.firebaseFirestore.distLiteMod.QueryFieldFilterConstraint = (^.asInstanceOf[js.Dynamic].applyDynamic("where")(fieldPath.asInstanceOf[js.Any], opStr.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseFirestore.distLiteMod.QueryFieldFilterConstraint]
   
   inline def writeBatch(firestore: typings.firebaseFirestore.distLiteMod.Firestore): typings.firebaseFirestore.distLiteMod.WriteBatch_ = ^.asInstanceOf[js.Dynamic].applyDynamic("writeBatch")(firestore.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseFirestore.distLiteMod.WriteBatch_]
 }

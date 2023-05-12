@@ -14,8 +14,8 @@ object DocumentHighlightKind extends StObject {
   def apply(value: Double): js.UndefOr[DocumentHighlightKind & Double] = js.native
   
   /**
-    * Read-access of a symbol, like reading a variable.
-    */
+  		 * Read-access of a symbol, like reading a variable.
+  		 */
   @js.native
   sealed trait Read
     extends StObject
@@ -23,8 +23,8 @@ object DocumentHighlightKind extends StObject {
   /* 1 */ val Read: typings.vscode.mod.DocumentHighlightKind.Read & Double = js.native
   
   /**
-    * A textual occurrence.
-    */
+  		 * A textual occurrence.
+  		 */
   @js.native
   sealed trait Text
     extends StObject
@@ -32,8 +32,8 @@ object DocumentHighlightKind extends StObject {
   /* 0 */ val Text: typings.vscode.mod.DocumentHighlightKind.Text & Double = js.native
   
   /**
-    * Write-access of a symbol, like writing to a variable.
-    */
+  		 * Write-access of a symbol, like writing to a variable.
+  		 */
   @js.native
   sealed trait Write
     extends StObject

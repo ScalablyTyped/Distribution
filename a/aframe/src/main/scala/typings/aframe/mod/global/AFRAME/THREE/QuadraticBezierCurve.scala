@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("AFRAME.THREE.QuadraticBezierCurve")
 @js.native
-open class QuadraticBezierCurve protected ()
-  extends typings.three.mod.QuadraticBezierCurve {
-  def this(
-    v0: typings.three.srcMathVector2Mod.Vector2,
-    v1: typings.three.srcMathVector2Mod.Vector2,
-    v2: typings.three.srcMathVector2Mod.Vector2
-  ) = this()
-}
+/**
+  * This constructor creates a new {@link QuadraticBezierCurve}.
+  * @param v0 The start point. Default is `new THREE.Vector2()`.
+  * @param v1 The control point. Default is `new THREE.Vector2()`.
+  * @param v2 The end point. Default is `new THREE.Vector2()`.
+  */
+open class QuadraticBezierCurve ()
+  extends typings.three.mod.QuadraticBezierCurve

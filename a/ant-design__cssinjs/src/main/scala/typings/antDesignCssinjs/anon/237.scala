@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.MsScrollSnapY
+import typings.csstype.mod.Property.BorderBlockStyle
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,11 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `237` extends StObject {
   
   var value: js.UndefOr[
-    MsScrollSnapY | (js.Array[
+    BorderBlockStyle | (js.Array[
       (Extract[
-        js.UndefOr[MsScrollSnapY | js.Array[NonNullable[js.UndefOr[MsScrollSnapY]]]], 
+        js.UndefOr[BorderBlockStyle | js.Array[NonNullable[js.UndefOr[BorderBlockStyle]]]], 
         String
-      ]) | NonNullable[js.UndefOr[MsScrollSnapY]]
+      ]) | NonNullable[js.UndefOr[BorderBlockStyle]]
     ])
   ] = js.native
 }

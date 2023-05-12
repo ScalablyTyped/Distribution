@@ -54,6 +54,7 @@ object mod {
     	The maximum number of fraction digits to display.
     	If neither `minimumFractionDigits` or `maximumFractionDigits` are set, the default behavior is to round to 3 significant digits.
     	@default undefined
+    	@example
     	```
     	import prettyBytes from 'pretty-bytes';
     	// Show the number with at most 1 fractional digit
@@ -69,6 +70,7 @@ object mod {
     	The minimum number of fraction digits to display.
     	If neither `minimumFractionDigits` or `maximumFractionDigits` are set, the default behavior is to round to 3 significant digits.
     	@default undefined
+    	@example
     	```
     	import prettyBytes from 'pretty-bytes';
     	// Show the number with at least 3 fractional digits
@@ -85,6 +87,20 @@ object mod {
     	@default false
     	*/
     val signed: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+    	Put a space between the number and unit.
+    	@default true
+    	@example
+    	```
+    	import prettyBytes from 'pretty-bytes';
+    	prettyBytes(1920, {space: false});
+    	//=> '1.9kB'
+    	prettyBytes(1920);
+    	//=> '1.92 kB'
+    	```
+    	*/
+    val space: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -121,6 +137,10 @@ object mod {
       inline def setSigned(value: Boolean): Self = StObject.set(x, "signed", value.asInstanceOf[js.Any])
       
       inline def setSignedUndefined: Self = StObject.set(x, "signed", js.undefined)
+      
+      inline def setSpace(value: Boolean): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
+      
+      inline def setSpaceUndefined: Self = StObject.set(x, "space", js.undefined)
     }
   }
 }

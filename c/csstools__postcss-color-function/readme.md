@@ -1,7 +1,7 @@
 
 # Scala.js typings for csstools__postcss-color-function
 
-Typings are for version 1.1.1
+Typings are for version 2.2.1
 
 ## Library description:
 Use the color() function in CSS

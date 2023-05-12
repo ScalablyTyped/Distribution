@@ -37,7 +37,7 @@ object OptionalVersionedTextDocumentIdentifier {
   inline def create(uri: DocumentUri, version: integer): OptionalVersionedTextDocumentIdentifier = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(uri.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[OptionalVersionedTextDocumentIdentifier]
   
   /**
-    * Checks whether the given literal conforms to the [OptionalVersionedTextDocumentIdentifier](#OptionalVersionedTextDocumentIdentifier) interface.
+    * Checks whether the given literal conforms to the {@link OptionalVersionedTextDocumentIdentifier} interface.
     */
   inline def is(value: Any): /* is vscode-languageserver-types.vscode-languageserver-types.OptionalVersionedTextDocumentIdentifier */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.OptionalVersionedTextDocumentIdentifier */ Boolean]
   

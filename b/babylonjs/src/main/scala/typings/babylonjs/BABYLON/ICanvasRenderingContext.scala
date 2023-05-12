@@ -300,7 +300,7 @@ trait ICanvasRenderingContext extends StObject {
   /**
     * Color or style to use for the lines around shapes. Default #000 (black).
     */
-  var strokeStyle: String = js.native
+  var strokeStyle: String | ICanvasGradient = js.native
   
   /**
     * Draws (strokes) a given text at the given (x, y) position.

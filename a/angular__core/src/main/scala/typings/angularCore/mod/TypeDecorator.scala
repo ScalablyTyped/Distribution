@@ -13,6 +13,7 @@ trait TypeDecorator extends StObject {
   def apply(target: js.Object, propertyKey: js.Symbol): Unit = js.native
   def apply(target: js.Object, propertyKey: js.Symbol, parameterIndex: Double): Unit = js.native
   def apply(target: js.Object, propertyKey: Unit, parameterIndex: Double): Unit = js.native
+  def apply(target: Any, context: Any): Unit = js.native
   /**
     * Invoke as decorator.
     */

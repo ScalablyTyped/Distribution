@@ -1,6 +1,7 @@
 
 # Scala.js typings for gulp-if
 
+Typings are for version 3.0
 
 ## Library description:
 Conditionally run a task

@@ -13,6 +13,12 @@ trait SeriesAccessibilityOptionsObject extends StObject {
   var description: js.UndefOr[String] = js.undefined
   
   /**
+    * (Highstock) Format to use for describing the data series group to
+    * assistive technology - including screen readers.
+    */
+  var descriptionFormat: js.UndefOr[String] = js.undefined
+  
+  /**
     * (Highstock) Enable/disable accessibility functionality for a specific
     * series.
     */
@@ -33,7 +39,7 @@ trait SeriesAccessibilityOptionsObject extends StObject {
     * (Highstock) Point accessibility options for a series.
     */
   var point: js.UndefOr[
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.highcharts.mod.PlotAbandsAccessibilityPointOptions, typings.highcharts.mod.PlotAdAccessibilityPointOptions, typings.highcharts.mod.PlotAoAccessibilityPointOptions */ Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116, starting with typings.highcharts.mod.PlotAbandsAccessibilityPointOptions, typings.highcharts.mod.PlotAdAccessibilityPointOptions, typings.highcharts.mod.PlotAoAccessibilityPointOptions */ Any
   ] = js.undefined
 }
 object SeriesAccessibilityOptionsObject {
@@ -47,6 +53,10 @@ object SeriesAccessibilityOptionsObject {
   implicit open class MutableBuilder[Self <: SeriesAccessibilityOptionsObject] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setDescriptionFormat(value: String): Self = StObject.set(x, "descriptionFormat", value.asInstanceOf[js.Any])
+    
+    inline def setDescriptionFormatUndefined: Self = StObject.set(x, "descriptionFormat", js.undefined)
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
@@ -63,7 +73,7 @@ object SeriesAccessibilityOptionsObject {
     inline def setKeyboardNavigationUndefined: Self = StObject.set(x, "keyboardNavigation", js.undefined)
     
     inline def setPoint(
-      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 113, starting with typings.highcharts.mod.PlotAbandsAccessibilityPointOptions, typings.highcharts.mod.PlotAdAccessibilityPointOptions, typings.highcharts.mod.PlotAoAccessibilityPointOptions */ Any
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116, starting with typings.highcharts.mod.PlotAbandsAccessibilityPointOptions, typings.highcharts.mod.PlotAdAccessibilityPointOptions, typings.highcharts.mod.PlotAoAccessibilityPointOptions */ Any
     ): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
     
     inline def setPointUndefined: Self = StObject.set(x, "point", js.undefined)

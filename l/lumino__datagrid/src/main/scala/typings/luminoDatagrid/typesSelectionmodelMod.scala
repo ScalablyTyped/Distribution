@@ -1,6 +1,5 @@
 package typings.luminoDatagrid
 
-import typings.luminoAlgorithm.typesIterMod.IIterator
 import typings.luminoDatagrid.typesDatamodelMod.DataModel
 import typings.luminoDatagrid.typesDatamodelMod.DataModel.ChangedArgs
 import typings.luminoDatagrid.typesSelectionmodelMod.SelectionModel.CursorMoveDirection
@@ -9,6 +8,7 @@ import typings.luminoDatagrid.typesSelectionmodelMod.SelectionModel.SelectArgs
 import typings.luminoDatagrid.typesSelectionmodelMod.SelectionModel.Selection
 import typings.luminoDatagrid.typesSelectionmodelMod.SelectionModel.SelectionMode
 import typings.luminoSignaling.mod.ISignal
+import typings.std.IterableIterator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,7 +32,7 @@ object typesSelectionmodelMod {
     /**
       * A signal emitted when the selection model has changed.
       */
-    val changed: ISignal[this.type, Unit] = js.native
+    def changed: ISignal[this.type, Unit] = js.native
     
     /**
       * Clear all selections in the selection model.
@@ -154,13 +154,14 @@ object typesSelectionmodelMod {
     /**
       * Get the selection mode for the model.
       */
+    def selectionMode: SelectionMode = js.native
     /**
       * Set the selection mode for the model.
       *
       * #### Notes
       * This will clear the selection model.
       */
-    var selectionMode: SelectionMode = js.native
+    def selectionMode_=(value: SelectionMode): Unit = js.native
     
     /**
       * Get an iterator of the selections in the model.
@@ -170,7 +171,7 @@ object typesSelectionmodelMod {
       * #### Notes
       * The data grid will render the selections in order.
       */
-    def selections(): IIterator[Selection] = js.native
+    def selections(): IterableIterator[Selection] = js.native
   }
   object SelectionModel {
     

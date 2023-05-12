@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ContainerInfo extends StObject {
   
   /**
-    * The information about the EKS cluster.
+    * The information about the Amazon EKS cluster.
     */
   var eksInfo: js.UndefOr[EksInfo] = js.undefined
 }

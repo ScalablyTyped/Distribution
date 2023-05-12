@@ -6,11 +6,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("bson", "MaxKey")
 @js.native
-open class MaxKey () extends StObject {
-  
-  var _bsontype: typings.bson.bsonStrings.MaxKey = js.native
-  
-  /* Excluded from this release type: toExtendedJSON */
-  /* Excluded from this release type: fromExtendedJSON */
-  def inspect(): String = js.native
-}
+open class MaxKey () extends BSONValue

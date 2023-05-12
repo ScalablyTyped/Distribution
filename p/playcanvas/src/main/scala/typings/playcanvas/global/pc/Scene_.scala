@@ -4,11 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** @typedef {import('../framework/entity.js').Entity} Entity */
-/** @typedef {import('../platform/graphics/graphics-device.js').GraphicsDevice} GraphicsDevice */
-/** @typedef {import('../platform/graphics/texture.js').Texture} Texture */
-/** @typedef {import('./composition/layer-composition.js').LayerComposition} LayerComposition */
-/** @typedef {import('./layer.js').Layer} Layer */
 /**
   * A scene is graphical representation of an environment. It manages the scene hierarchy, all
   * graphical objects, lights, and scene-wide properties.
@@ -22,7 +17,8 @@ open class Scene_ protected ()
   /**
     * Create a new Scene instance.
     *
-    * @param {GraphicsDevice} graphicsDevice - The graphics device used to manage this scene.
+    * @param {import('../platform/graphics/graphics-device.js').GraphicsDevice} graphicsDevice -
+    * The graphics device used to manage this scene.
     * @hideconstructor
     */
   def this(graphicsDevice: typings.playcanvas.mod.GraphicsDevice) = this()

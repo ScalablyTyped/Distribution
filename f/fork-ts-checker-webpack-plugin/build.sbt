@@ -1,23 +1,23 @@
 organization := "org.scalablytyped"
 name := "fork-ts-checker-webpack-plugin"
-version := "7.2.13-c5e28b"
+version := "8.0.0-acd531"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "ajv" % "8.11.2-e03df2",
-  "org.scalablytyped" %%% "estree" % "1.0-dt-20220712Z-6dfb17",
-  "org.scalablytyped" %%% "events" % "3.0-dt-20211202Z-c3a2f0",
-  "org.scalablytyped" %%% "json-schema" % "7.0-dt-20220325Z-64302b",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-874609",
-  "org.scalablytyped" %%% "node-abort-controller" % "3.0.1-d2c792",
-  "org.scalablytyped" %%% "re2" % "1.17.7-31fc73",
-  "org.scalablytyped" %%% "schema-utils" % "4.0.0-21a261",
-  "org.scalablytyped" %%% "std" % "4.9-ecb5eb",
-  "org.scalablytyped" %%% "tapable" % "2.2.1-7a5e1e",
-  "org.scalablytyped" %%% "typescript" % "4.9.3-94f598",
-  "org.scalablytyped" %%% "uri-js" % "4.4.1-8d8221",
-  "org.scalablytyped" %%% "webpack" % "5.75.0-5aadf4")
+  "org.scalablytyped" %%% "ajv" % "8.12.0-6bf940",
+  "org.scalablytyped" %%% "estree" % "1.0-dt-20230419Z-f51b02",
+  "org.scalablytyped" %%% "events" % "3.0-dt-20211202Z-a59c9e",
+  "org.scalablytyped" %%% "json-schema" % "7.0-dt-20220325Z-c415ea",
+  "org.scalablytyped" %%% "node" % "20.1-dt-20230511Z-0320fc",
+  "org.scalablytyped" %%% "node-abort-controller" % "3.1.1-9387dd",
+  "org.scalablytyped" %%% "re2" % "1.18.0-0ff8d6",
+  "org.scalablytyped" %%% "schema-utils" % "4.0.1-eeb615",
+  "org.scalablytyped" %%% "std" % "5.0-e63739",
+  "org.scalablytyped" %%% "tapable" % "2.2.1-b557e4",
+  "org.scalablytyped" %%% "typescript" % "5.0.4-f7d5cf",
+  "org.scalablytyped" %%% "uri-js" % "4.4.1-347272",
+  "org.scalablytyped" %%% "webpack" % "5.82.1-fe40a3")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

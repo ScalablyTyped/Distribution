@@ -54,6 +54,9 @@ object distCoreComputedvalueMod {
     /* private */ var equals_ : Any = js.native
     
     /* CompleteClass */
+    override def get(): T = js.native
+    
+    /* CompleteClass */
     var isBeingObserved_ : Boolean = js.native
     
     var isComputing_ : Boolean = js.native
@@ -83,6 +86,9 @@ object distCoreComputedvalueMod {
     
     var newObserving_ : js.Array[IObservable] | Null = js.native
     
+    def observe_(listener: js.Function1[/* change */ IComputedDidChange[T], Unit]): Lambda = js.native
+    def observe_(listener: js.Function1[/* change */ IComputedDidChange[T], Unit], fireImmediately: Boolean): Lambda = js.native
+    
     /* CompleteClass */
     var observers_ : Set[IDerivation] = js.native
     
@@ -107,6 +113,9 @@ object distCoreComputedvalueMod {
     var runId_ : Double = js.native
     
     var scope_ : js.UndefOr[js.Object] = js.native
+    
+    /* CompleteClass */
+    override def set(value: T): Unit = js.native
     
     var setter_ : js.UndefOr[js.Function1[/* value */ T, Unit]] = js.native
     
@@ -170,15 +179,26 @@ object distCoreComputedvalueMod {
     }
   }
   
-  @js.native
   trait IComputedValue[T] extends StObject {
     
-    def get(): T = js.native
+    def get(): T
     
-    def observe_(listener: js.Function1[/* change */ IComputedDidChange[T], Unit]): Lambda = js.native
-    def observe_(listener: js.Function1[/* change */ IComputedDidChange[T], Unit], fireImmediately: Boolean): Lambda = js.native
+    def set(value: T): Unit
+  }
+  object IComputedValue {
     
-    def set(value: T): Unit = js.native
+    inline def apply[T](get: () => T, set: T => Unit): IComputedValue[T] = {
+      val __obj = js.Dynamic.literal(get = js.Any.fromFunction0(get), set = js.Any.fromFunction1(set))
+      __obj.asInstanceOf[IComputedValue[T]]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IComputedValue[?], T] (val x: Self & IComputedValue[T]) extends AnyVal {
+      
+      inline def setGet(value: () => T): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
+      
+      inline def setSet(value: T => Unit): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
+    }
   }
   
   trait IComputedValueOptions[T] extends StObject {

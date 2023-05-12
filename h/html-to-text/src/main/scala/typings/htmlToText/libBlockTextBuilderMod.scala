@@ -1,5 +1,10 @@
 package typings.htmlToText
 
+import typings.htmlToText.anon.Formatters
+import typings.htmlToText.anon.Prefix
+import typings.htmlToText.anon.TrailingLineBreaks
+import typings.htmlToText.htmlToTextStrings.left
+import typings.htmlToText.htmlToTextStrings.right
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,12 +39,18 @@ object libBlockTextBuilderMod {
       */
     def addInline(str: String): Unit = js.native
     def addInline(str: String, addInlineOptions: AddInlineOptions): Unit = js.native
-    def addInline(str: String, noWordTransform: Boolean): Unit = js.native
     
     /**
       * Add a line break into currently built block.
       */
     def addLineBreak(): Unit = js.native
+    
+    /**
+      * Add a string inline into the currently built block.
+      *
+      * Use this for markup elements that don't have to adhere to text layout rules.
+      */
+    def addLiteral(str: String): Unit = js.native
     
     /**
       * Allow to break line in case directly following text will not fit.
@@ -56,39 +67,28 @@ object libBlockTextBuilderMod {
       */
     def closeBlock(): Unit = js.native
     def closeBlock(closeBlockOptions: CloseBlockOptions): Unit = js.native
-    def closeBlock(trailingLineBreaks: Double): Unit = js.native
-    def closeBlock(trailingLineBreaks: Double, blockTransform: BlockTransformer): Unit = js.native
-    def closeBlock(trailingLineBreaks: Unit, blockTransform: BlockTransformer): Unit = js.native
+    
+    /**
+      * Finalize currently built list, add it's content to the parent block.
+      */
+    def closeList(param0: TrailingLineBreaks): Unit = js.native
+    
+    /**
+      * Finalize currently built list item, add it's content to the parent list.
+      */
+    def closeListItem(): Unit = js.native
     
     /**
       * Finalize currently built table and add the rendered text to the parent block.
       */
     def closeTable(): Unit = js.native
     def closeTable(closeTableOptions: CloseTableOptions): Unit = js.native
-    def closeTable(colSpacing: Double): Unit = js.native
-    def closeTable(colSpacing: Double, rowSpacing: Double): Unit = js.native
-    def closeTable(colSpacing: Double, rowSpacing: Double, leadingLineBreaks: Double): Unit = js.native
-    def closeTable(colSpacing: Double, rowSpacing: Double, leadingLineBreaks: Double, trailingLineBreaks: Double): Unit = js.native
-    def closeTable(colSpacing: Double, rowSpacing: Double, leadingLineBreaks: Unit, trailingLineBreaks: Double): Unit = js.native
-    def closeTable(colSpacing: Double, rowSpacing: Unit, leadingLineBreaks: Double): Unit = js.native
-    def closeTable(colSpacing: Double, rowSpacing: Unit, leadingLineBreaks: Double, trailingLineBreaks: Double): Unit = js.native
-    def closeTable(colSpacing: Double, rowSpacing: Unit, leadingLineBreaks: Unit, trailingLineBreaks: Double): Unit = js.native
-    def closeTable(colSpacing: Unit, rowSpacing: Double): Unit = js.native
-    def closeTable(colSpacing: Unit, rowSpacing: Double, leadingLineBreaks: Double): Unit = js.native
-    def closeTable(colSpacing: Unit, rowSpacing: Double, leadingLineBreaks: Double, trailingLineBreaks: Double): Unit = js.native
-    def closeTable(colSpacing: Unit, rowSpacing: Double, leadingLineBreaks: Unit, trailingLineBreaks: Double): Unit = js.native
-    def closeTable(colSpacing: Unit, rowSpacing: Unit, leadingLineBreaks: Double): Unit = js.native
-    def closeTable(colSpacing: Unit, rowSpacing: Unit, leadingLineBreaks: Double, trailingLineBreaks: Double): Unit = js.native
-    def closeTable(colSpacing: Unit, rowSpacing: Unit, leadingLineBreaks: Unit, trailingLineBreaks: Double): Unit = js.native
     
     /**
       * Finalize currently built table cell and add it to parent table row's cells.
       */
     def closeTableCell(): Unit = js.native
     def closeTableCell(closeTableCellOptions: CloseTableCellOptions): Unit = js.native
-    def closeTableCell(colspan: Double): Unit = js.native
-    def closeTableCell(colspan: Double, rowspan: Double): Unit = js.native
-    def closeTableCell(colspan: Unit, rowspan: Double): Unit = js.native
     
     /**
       * Finalize currently built table row and add it to parent table's rows.
@@ -99,14 +99,18 @@ object libBlockTextBuilderMod {
       * Start building a new block.
       */
     def openBlock(): Unit = js.native
-    def openBlock(leadingLineBreaks: Double): Unit = js.native
-    def openBlock(leadingLineBreaks: Double, reservedLineLength: Double): Unit = js.native
-    def openBlock(leadingLineBreaks: Double, reservedLineLength: Double, isPre: Boolean): Unit = js.native
-    def openBlock(leadingLineBreaks: Double, reservedLineLength: Unit, isPre: Boolean): Unit = js.native
-    def openBlock(leadingLineBreaks: Unit, reservedLineLength: Double): Unit = js.native
-    def openBlock(leadingLineBreaks: Unit, reservedLineLength: Double, isPre: Boolean): Unit = js.native
-    def openBlock(leadingLineBreaks: Unit, reservedLineLength: Unit, isPre: Boolean): Unit = js.native
     def openBlock(openBlockOptions: OpenBlockOptions): Unit = js.native
+    
+    /**
+      * Start building a new list.
+      */
+    def openList(): Unit = js.native
+    def openList(openListOptions: OpenListOptions): Unit = js.native
+    
+    /**
+      * Start building a new list item.
+      */
+    def openListItem(param0: Prefix): Unit = js.native
     
     /**
       * Start building a table.
@@ -117,13 +121,20 @@ object libBlockTextBuilderMod {
       * Start building a table cell.
       */
     def openTableCell(): Unit = js.native
-    def openTableCell(maxColumnWidth: Double): Unit = js.native
     def openTableCell(openTableCellOptions: OpenTableCellOptions): Unit = js.native
     
     /**
       * Start building a table row.
       */
     def openTableRow(): Unit = js.native
+    
+    /**
+      * Speciallized access to formatters, including default ones.  It is recommended to
+      * use the css style selectors.  If formatting depends on actual content, this
+      * provides access to user and default formatters.  Setting of options is left up
+      * to the caller.  See the test driver for sample usage.
+      */
+    var options: Formatters = js.native
     
     /**
       * Remove a function from the word transformations stack.
@@ -138,6 +149,16 @@ object libBlockTextBuilderMod {
       * Word transformations applied before wrapping.
       */
     def pushWordTransform(wordTransform: js.Function1[/* str */ String, String]): Unit = js.native
+    
+    /**
+      * Ignore wordwrap option in followup inline additions and disable automatic wrapping.
+      */
+    def startNoWrap(): Unit = js.native
+    
+    /**
+      * Return automatic wrapping to behavior defined by options.
+      */
+    def stopNoWrap(): Unit = js.native
   }
   
   type BlockTransformer = js.Function1[/* str */ String, String]
@@ -196,35 +217,29 @@ object libBlockTextBuilderMod {
   
   trait CloseTableOptions extends StObject {
     
-    var colSpacing: js.UndefOr[Double] = js.undefined
-    
     var leadingLineBreaks: js.UndefOr[Double] = js.undefined
     
-    var rowSpacing: js.UndefOr[Double] = js.undefined
+    def tableToString(cells: js.Array[js.Array[TablePrinterCell]]): String
+    @JSName("tableToString")
+    var tableToString_Original: TablePrinter
     
     var trailingLineBreaks: js.UndefOr[Double] = js.undefined
   }
   object CloseTableOptions {
     
-    inline def apply(): CloseTableOptions = {
-      val __obj = js.Dynamic.literal()
+    inline def apply(tableToString: /* cells */ js.Array[js.Array[TablePrinterCell]] => String): CloseTableOptions = {
+      val __obj = js.Dynamic.literal(tableToString = js.Any.fromFunction1(tableToString))
       __obj.asInstanceOf[CloseTableOptions]
     }
     
     @scala.inline
     implicit open class MutableBuilder[Self <: CloseTableOptions] (val x: Self) extends AnyVal {
       
-      inline def setColSpacing(value: Double): Self = StObject.set(x, "colSpacing", value.asInstanceOf[js.Any])
-      
-      inline def setColSpacingUndefined: Self = StObject.set(x, "colSpacing", js.undefined)
-      
       inline def setLeadingLineBreaks(value: Double): Self = StObject.set(x, "leadingLineBreaks", value.asInstanceOf[js.Any])
       
       inline def setLeadingLineBreaksUndefined: Self = StObject.set(x, "leadingLineBreaks", js.undefined)
       
-      inline def setRowSpacing(value: Double): Self = StObject.set(x, "rowSpacing", value.asInstanceOf[js.Any])
-      
-      inline def setRowSpacingUndefined: Self = StObject.set(x, "rowSpacing", js.undefined)
+      inline def setTableToString(value: /* cells */ js.Array[js.Array[TablePrinterCell]] => String): Self = StObject.set(x, "tableToString", js.Any.fromFunction1(value))
       
       inline def setTrailingLineBreaks(value: Double): Self = StObject.set(x, "trailingLineBreaks", value.asInstanceOf[js.Any])
       
@@ -264,6 +279,44 @@ object libBlockTextBuilderMod {
     }
   }
   
+  trait OpenListOptions extends StObject {
+    
+    var interRowLineBreaks: js.UndefOr[Double] = js.undefined
+    
+    var leadingLineBreaks: js.UndefOr[Double] = js.undefined
+    
+    var maxPrefixLength: js.UndefOr[Double] = js.undefined
+    
+    var prefixAlign: js.UndefOr[left | right] = js.undefined
+  }
+  object OpenListOptions {
+    
+    inline def apply(): OpenListOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[OpenListOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OpenListOptions] (val x: Self) extends AnyVal {
+      
+      inline def setInterRowLineBreaks(value: Double): Self = StObject.set(x, "interRowLineBreaks", value.asInstanceOf[js.Any])
+      
+      inline def setInterRowLineBreaksUndefined: Self = StObject.set(x, "interRowLineBreaks", js.undefined)
+      
+      inline def setLeadingLineBreaks(value: Double): Self = StObject.set(x, "leadingLineBreaks", value.asInstanceOf[js.Any])
+      
+      inline def setLeadingLineBreaksUndefined: Self = StObject.set(x, "leadingLineBreaks", js.undefined)
+      
+      inline def setMaxPrefixLength(value: Double): Self = StObject.set(x, "maxPrefixLength", value.asInstanceOf[js.Any])
+      
+      inline def setMaxPrefixLengthUndefined: Self = StObject.set(x, "maxPrefixLength", js.undefined)
+      
+      inline def setPrefixAlign(value: left | right): Self = StObject.set(x, "prefixAlign", value.asInstanceOf[js.Any])
+      
+      inline def setPrefixAlignUndefined: Self = StObject.set(x, "prefixAlign", js.undefined)
+    }
+  }
+  
   trait OpenTableCellOptions extends StObject {
     
     var maxColumnWidth: js.UndefOr[Double] = js.undefined
@@ -281,6 +334,34 @@ object libBlockTextBuilderMod {
       inline def setMaxColumnWidth(value: Double): Self = StObject.set(x, "maxColumnWidth", value.asInstanceOf[js.Any])
       
       inline def setMaxColumnWidthUndefined: Self = StObject.set(x, "maxColumnWidth", js.undefined)
+    }
+  }
+  
+  type TablePrinter = js.Function1[/* cells */ js.Array[js.Array[TablePrinterCell]], String]
+  
+  trait TablePrinterCell extends StObject {
+    
+    var colspan: Double
+    
+    var rowspan: Double
+    
+    var text: String
+  }
+  object TablePrinterCell {
+    
+    inline def apply(colspan: Double, rowspan: Double, text: String): TablePrinterCell = {
+      val __obj = js.Dynamic.literal(colspan = colspan.asInstanceOf[js.Any], rowspan = rowspan.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
+      __obj.asInstanceOf[TablePrinterCell]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TablePrinterCell] (val x: Self) extends AnyVal {
+      
+      inline def setColspan(value: Double): Self = StObject.set(x, "colspan", value.asInstanceOf[js.Any])
+      
+      inline def setRowspan(value: Double): Self = StObject.set(x, "rowspan", value.asInstanceOf[js.Any])
+      
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -1,6 +1,6 @@
 package typings.reactMosaicComponent
 
-import typings.blueprintjsIcons.libEsmGenerated16pxBlueprintIcons16Mod.BlueprintIcons16Id
+import typings.blueprintjsIcons.libEsmGeneratedIcons16pxBlueprintIcons16Mod.BlueprintIcons16Id
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactElement
@@ -123,14 +123,14 @@ object anon {
     
     var className: js.UndefOr[String] = js.undefined
     
-    var icon: /* keyof react-mosaic-component.anon.TypeofIconNames */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1130, starting with typings.reactMosaicComponent.reactMosaicComponentStrings.FUNCTION, typings.reactMosaicComponent.reactMosaicComponentStrings.ADD, typings.reactMosaicComponent.reactMosaicComponentStrings.AIRPLANE */ Any
+    var icon: /* keyof react-mosaic-component.anon.TypeofIconNames */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1146, starting with typings.reactMosaicComponent.reactMosaicComponentStrings.FUNCTION, typings.reactMosaicComponent.reactMosaicComponentStrings.ADD, typings.reactMosaicComponent.reactMosaicComponentStrings.AIRPLANE */ Any
     
     var size: js.UndefOr[standard | large] = js.undefined
   }
   object Icon {
     
     inline def apply(
-      icon: /* keyof react-mosaic-component.anon.TypeofIconNames */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1130, starting with typings.reactMosaicComponent.reactMosaicComponentStrings.FUNCTION, typings.reactMosaicComponent.reactMosaicComponentStrings.ADD, typings.reactMosaicComponent.reactMosaicComponentStrings.AIRPLANE */ Any
+      icon: /* keyof react-mosaic-component.anon.TypeofIconNames */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1146, starting with typings.reactMosaicComponent.reactMosaicComponentStrings.FUNCTION, typings.reactMosaicComponent.reactMosaicComponentStrings.ADD, typings.reactMosaicComponent.reactMosaicComponentStrings.AIRPLANE */ Any
     ): Icon = {
       val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any])
       __obj.asInstanceOf[Icon]
@@ -144,7 +144,7 @@ object anon {
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
       inline def setIcon(
-        value: /* keyof react-mosaic-component.anon.TypeofIconNames */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1130, starting with typings.reactMosaicComponent.reactMosaicComponentStrings.FUNCTION, typings.reactMosaicComponent.reactMosaicComponentStrings.ADD, typings.reactMosaicComponent.reactMosaicComponentStrings.AIRPLANE */ Any
+        value: /* keyof react-mosaic-component.anon.TypeofIconNames */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1146, starting with typings.reactMosaicComponent.reactMosaicComponentStrings.FUNCTION, typings.reactMosaicComponent.reactMosaicComponentStrings.ADD, typings.reactMosaicComponent.reactMosaicComponentStrings.AIRPLANE */ Any
       ): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
       inline def setSize(value: standard | large): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
@@ -457,6 +457,8 @@ object anon {
     
     var AUTOMATIC_UPDATES: BlueprintIcons16Id
     
+    var AXLE: BlueprintIcons16Id
+    
     var Add: BlueprintIcons16Id
     
     var AddClip: BlueprintIcons16Id
@@ -554,6 +556,8 @@ object anon {
     var At: BlueprintIcons16Id
     
     var AutomaticUpdates: BlueprintIcons16Id
+    
+    var Axle: BlueprintIcons16Id
     
     var BACKLINK: BlueprintIcons16Id
     
@@ -711,6 +715,8 @@ object anon {
     
     var CROSS: BlueprintIcons16Id
     
+    var CROSS_CIRCLE: BlueprintIcons16Id
+    
     var CROWN: BlueprintIcons16Id
     
     var CUBE: BlueprintIcons16Id
@@ -816,6 +822,8 @@ object anon {
     var CreditCard: BlueprintIcons16Id
     
     var Cross: BlueprintIcons16Id
+    
+    var CrossCircle: BlueprintIcons16Id
     
     var Crown: BlueprintIcons16Id
     
@@ -1415,6 +1423,8 @@ object anon {
     
     var INSERT: BlueprintIcons16Id
     
+    var INTELLIGENCE: BlueprintIcons16Id
+    
     var INTERSECTION: BlueprintIcons16Id
     
     var IP_ADDRESS: BlueprintIcons16Id
@@ -1454,6 +1464,8 @@ object anon {
     var InnerJoin: BlueprintIcons16Id
     
     var Insert: BlueprintIcons16Id
+    
+    var Intelligence: BlueprintIcons16Id
     
     var Intersection: BlueprintIcons16Id
     
@@ -1571,6 +1583,8 @@ object anon {
     
     var LOCK: BlueprintIcons16Id
     
+    var LOCOMOTIVE: BlueprintIcons16Id
+    
     var LOG_IN: BlueprintIcons16Id
     
     var LOG_OUT: BlueprintIcons16Id
@@ -1633,6 +1647,8 @@ object anon {
     
     var Lock: BlueprintIcons16Id
     
+    var Locomotive: BlueprintIcons16Id
+    
     var LogIn: BlueprintIcons16Id
     
     var LogOut: BlueprintIcons16Id
@@ -1678,6 +1694,8 @@ object anon {
     var MODAL: BlueprintIcons16Id
     
     var MODAL_FILLED: BlueprintIcons16Id
+    
+    var MODEL: BlueprintIcons16Id
     
     var MOON: BlueprintIcons16Id
     
@@ -1732,6 +1750,8 @@ object anon {
     var Modal: BlueprintIcons16Id
     
     var ModalFilled: BlueprintIcons16Id
+    
+    var Model: BlueprintIcons16Id
     
     var Moon: BlueprintIcons16Id
     
@@ -2103,6 +2123,8 @@ object anon {
     
     var SEND_TO_MAP: BlueprintIcons16Id
     
+    var SENSOR: BlueprintIcons16Id
+    
     var SERIES_ADD: BlueprintIcons16Id
     
     var SERIES_CONFIGURATION: BlueprintIcons16Id
@@ -2191,6 +2213,10 @@ object anon {
     
     var STYLE: BlueprintIcons16Id
     
+    var SUBSCRIPT: BlueprintIcons16Id
+    
+    var SUPERSCRIPT: BlueprintIcons16Id
+    
     var SWAP_HORIZONTAL: BlueprintIcons16Id
     
     var SWAP_VERTICAL: BlueprintIcons16Id
@@ -2240,6 +2266,8 @@ object anon {
     var SendToGraph: BlueprintIcons16Id
     
     var SendToMap: BlueprintIcons16Id
+    
+    var Sensor: BlueprintIcons16Id
     
     var SeriesAdd: BlueprintIcons16Id
     
@@ -2328,6 +2356,10 @@ object anon {
     var Strikethrough: BlueprintIcons16Id
     
     var Style: BlueprintIcons16Id
+    
+    var Subscript: BlueprintIcons16Id
+    
+    var Superscript: BlueprintIcons16Id
     
     var SwapHorizontal: BlueprintIcons16Id
     
@@ -2722,6 +2754,8 @@ object anon {
       
       inline def setAUTOMATIC_UPDATES(value: BlueprintIcons16Id): Self = StObject.set(x, "AUTOMATIC_UPDATES", value.asInstanceOf[js.Any])
       
+      inline def setAXLE(value: BlueprintIcons16Id): Self = StObject.set(x, "AXLE", value.asInstanceOf[js.Any])
+      
       inline def setAddClip(value: BlueprintIcons16Id): Self = StObject.set(x, "AddClip", value.asInstanceOf[js.Any])
       
       inline def setAddColumnLeft(value: BlueprintIcons16Id): Self = StObject.set(x, "AddColumnLeft", value.asInstanceOf[js.Any])
@@ -2930,6 +2964,8 @@ object anon {
       
       inline def setCROSS(value: BlueprintIcons16Id): Self = StObject.set(x, "CROSS", value.asInstanceOf[js.Any])
       
+      inline def setCROSS_CIRCLE(value: BlueprintIcons16Id): Self = StObject.set(x, "CROSS_CIRCLE", value.asInstanceOf[js.Any])
+      
       inline def setCROWN(value: BlueprintIcons16Id): Self = StObject.set(x, "CROWN", value.asInstanceOf[js.Any])
       
       inline def setCUBE(value: BlueprintIcons16Id): Self = StObject.set(x, "CUBE", value.asInstanceOf[js.Any])
@@ -2989,6 +3025,8 @@ object anon {
       inline def setColumnLayout(value: BlueprintIcons16Id): Self = StObject.set(x, "ColumnLayout", value.asInstanceOf[js.Any])
       
       inline def setCreditCard(value: BlueprintIcons16Id): Self = StObject.set(x, "CreditCard", value.asInstanceOf[js.Any])
+      
+      inline def setCrossCircle(value: BlueprintIcons16Id): Self = StObject.set(x, "CrossCircle", value.asInstanceOf[js.Any])
       
       inline def setCubeAdd(value: BlueprintIcons16Id): Self = StObject.set(x, "CubeAdd", value.asInstanceOf[js.Any])
       
@@ -3462,6 +3500,8 @@ object anon {
       
       inline def setINSERT(value: BlueprintIcons16Id): Self = StObject.set(x, "INSERT", value.asInstanceOf[js.Any])
       
+      inline def setINTELLIGENCE(value: BlueprintIcons16Id): Self = StObject.set(x, "INTELLIGENCE", value.asInstanceOf[js.Any])
+      
       inline def setINTERSECTION(value: BlueprintIcons16Id): Self = StObject.set(x, "INTERSECTION", value.asInstanceOf[js.Any])
       
       inline def setIP_ADDRESS(value: BlueprintIcons16Id): Self = StObject.set(x, "IP_ADDRESS", value.asInstanceOf[js.Any])
@@ -3602,6 +3642,8 @@ object anon {
       
       inline def setLOCK(value: BlueprintIcons16Id): Self = StObject.set(x, "LOCK", value.asInstanceOf[js.Any])
       
+      inline def setLOCOMOTIVE(value: BlueprintIcons16Id): Self = StObject.set(x, "LOCOMOTIVE", value.asInstanceOf[js.Any])
+      
       inline def setLOG_IN(value: BlueprintIcons16Id): Self = StObject.set(x, "LOG_IN", value.asInstanceOf[js.Any])
       
       inline def setLOG_OUT(value: BlueprintIcons16Id): Self = StObject.set(x, "LOG_OUT", value.asInstanceOf[js.Any])
@@ -3685,6 +3727,8 @@ object anon {
       inline def setMODAL(value: BlueprintIcons16Id): Self = StObject.set(x, "MODAL", value.asInstanceOf[js.Any])
       
       inline def setMODAL_FILLED(value: BlueprintIcons16Id): Self = StObject.set(x, "MODAL_FILLED", value.asInstanceOf[js.Any])
+      
+      inline def setMODEL(value: BlueprintIcons16Id): Self = StObject.set(x, "MODEL", value.asInstanceOf[js.Any])
       
       inline def setMOON(value: BlueprintIcons16Id): Self = StObject.set(x, "MOON", value.asInstanceOf[js.Any])
       
@@ -3996,6 +4040,8 @@ object anon {
       
       inline def setSEND_TO_MAP(value: BlueprintIcons16Id): Self = StObject.set(x, "SEND_TO_MAP", value.asInstanceOf[js.Any])
       
+      inline def setSENSOR(value: BlueprintIcons16Id): Self = StObject.set(x, "SENSOR", value.asInstanceOf[js.Any])
+      
       inline def setSERIES_ADD(value: BlueprintIcons16Id): Self = StObject.set(x, "SERIES_ADD", value.asInstanceOf[js.Any])
       
       inline def setSERIES_CONFIGURATION(value: BlueprintIcons16Id): Self = StObject.set(x, "SERIES_CONFIGURATION", value.asInstanceOf[js.Any])
@@ -4083,6 +4129,10 @@ object anon {
       inline def setSTRIKETHROUGH(value: BlueprintIcons16Id): Self = StObject.set(x, "STRIKETHROUGH", value.asInstanceOf[js.Any])
       
       inline def setSTYLE(value: BlueprintIcons16Id): Self = StObject.set(x, "STYLE", value.asInstanceOf[js.Any])
+      
+      inline def setSUBSCRIPT(value: BlueprintIcons16Id): Self = StObject.set(x, "SUBSCRIPT", value.asInstanceOf[js.Any])
+      
+      inline def setSUPERSCRIPT(value: BlueprintIcons16Id): Self = StObject.set(x, "SUPERSCRIPT", value.asInstanceOf[js.Any])
       
       inline def setSWAP_HORIZONTAL(value: BlueprintIcons16Id): Self = StObject.set(x, "SWAP_HORIZONTAL", value.asInstanceOf[js.Any])
       

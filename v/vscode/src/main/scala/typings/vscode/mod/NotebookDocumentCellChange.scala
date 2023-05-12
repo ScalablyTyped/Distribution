@@ -8,31 +8,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NotebookDocumentCellChange extends StObject {
   
   /**
-    * The affected cell.
-    */
+  		 * The affected cell.
+  		 */
   val cell: NotebookCell
   
   /**
-    * The document of the cell or `undefined` when it did not change.
-    *
-    * *Note* that you should use the {@link workspace.onDidChangeTextDocument onDidChangeTextDocument}-event
-    * for detailed change information, like what edits have been performed.
-    */
+  		 * The document of the cell or `undefined` when it did not change.
+  		 *
+  		 * *Note* that you should use the {@link workspace.onDidChangeTextDocument onDidChangeTextDocument}-event
+  		 * for detailed change information, like what edits have been performed.
+  		 */
   val document: js.UndefOr[TextDocument] = js.undefined
   
   /**
-    * The new execution summary of the cell or `undefined` when it did not change.
-    */
+  		 * The new execution summary of the cell or `undefined` when it did not change.
+  		 */
   val executionSummary: js.UndefOr[NotebookCellExecutionSummary] = js.undefined
   
   /**
-    * The new metadata of the cell or `undefined` when it did not change.
-    */
+  		 * The new metadata of the cell or `undefined` when it did not change.
+  		 */
   val metadata: js.UndefOr[StringDictionary[Any]] = js.undefined
   
   /**
-    * The new outputs of the cell or `undefined` when they did not change.
-    */
+  		 * The new outputs of the cell or `undefined` when they did not change.
+  		 */
   val outputs: js.UndefOr[js.Array[NotebookCellOutput]] = js.undefined
 }
 object NotebookDocumentCellChange {

@@ -26,6 +26,10 @@ object typesRuntimeInternalUtilsMod {
   
   inline def computeSlots(slots: Any): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("compute_slots")(slots.asInstanceOf[js.Any]).asInstanceOf[js.Object]
   
+  @JSImport("svelte/types/runtime/internal/utils", "contenteditable_truthy_values")
+  @js.native
+  val contenteditableTruthyValues: js.Array[String | Double | Boolean] = js.native
+  
   inline def createSlot(definition: Any, ctx: Any, DollarDollarscope: Any, fn: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("create_slot")(definition.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], DollarDollarscope.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def excludeInternalProps(props: Any): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("exclude_internal_props")(props.asInstanceOf[js.Any]).asInstanceOf[js.Object]
@@ -61,6 +65,9 @@ object typesRuntimeInternalUtilsMod {
   inline def safeNotEqual(a: Any, b: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("safe_not_equal")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   inline def setStoreValue(store: Any, ret: Any, value: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("set_store_value")(store.asInstanceOf[js.Any], ret.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Any]
+  
+  inline def splitCssUnit(value: String): js.Tuple2[Double, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("split_css_unit")(value.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[Double, String]]
+  inline def splitCssUnit(value: Double): js.Tuple2[Double, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("split_css_unit")(value.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[Double, String]]
   
   inline def srcUrlEqual(element_src: Any, url: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("src_url_equal")(element_src.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   

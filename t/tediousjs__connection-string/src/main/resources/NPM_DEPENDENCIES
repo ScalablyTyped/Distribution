@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@tediousjs/connection-string" : "0.4.1"
+      "@tediousjs/connection-string" : "0.4.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@tediousjs/connection-string" : "0.4.1"
+      "@tediousjs/connection-string" : "0.4.2"
     }
   ],
   "compile-devDependencies" : [

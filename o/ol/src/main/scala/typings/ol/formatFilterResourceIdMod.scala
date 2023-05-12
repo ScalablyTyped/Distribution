@@ -6,12 +6,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object formatFilterResourceIdMod {
   
-  /* note: abstract class */ @JSImport("ol/format/filter/ResourceId", JSImport.Default)
+  /**
+    * @classdesc
+    *
+    * @abstract
+    */
+  @JSImport("ol/format/filter/ResourceId", JSImport.Default)
   @js.native
-  open class default protected ()
-    extends typings.ol.formatFilterFilterMod.default {
-    def this(rid: String) = this()
-  }
+  open class default () extends ResourceId
   
-  type ResourceId = typings.ol.formatFilterFilterMod.default
+  /**
+    * @classdesc
+    *
+    * @abstract
+    */
+  @js.native
+  trait ResourceId
+    extends typings.ol.formatFilterFilterMod.default {
+    
+    /**
+      * @type {!string}
+      */
+    var rid: String = js.native
+  }
 }

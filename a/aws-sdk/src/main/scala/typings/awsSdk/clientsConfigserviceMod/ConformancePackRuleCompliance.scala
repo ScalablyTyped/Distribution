@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ConformancePackRuleCompliance extends StObject {
   
   /**
-    * Compliance of the Config rule. The allowed values are COMPLIANT, NON_COMPLIANT, and INSUFFICIENT_DATA.
+    * Compliance of the Config rule.
     */
   var ComplianceType: js.UndefOr[ConformancePackComplianceType] = js.undefined
   

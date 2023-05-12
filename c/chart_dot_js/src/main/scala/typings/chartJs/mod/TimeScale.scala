@@ -1,21 +1,12 @@
 package typings.chartJs.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.chartJs.typesBasicMod.AnyObject
+import typings.chartJs.distTypesBasicMod.AnyObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TimeScale[O /* <: TimeScaleOptions */] extends Scale[O] {
-  
-  def getDataTimestamps(): js.Array[Double] = js.native
-  
-  def getLabelTimestamps(): js.Array[String] = js.native
-  
-  def normalize(values: js.Array[Double]): js.Array[Double] = js.native
-}
-/* Inlined chart.js.chart.js.ChartComponent & {  prototype :chart.js.chart.js.TimeScale<chart.js.chart.js.TimeScaleOptions>, new <O extends chart.js.chart.js.TimeScaleOptions = chart.js.chart.js.TimeScaleOptions>(cfg : chart.js.chart.js/types/basic.AnyObject): chart.js.chart.js.TimeScale<O>} */
+/* Inlined chart.js.chart.js/dist/types/index.ChartComponent & {  prototype :chart.js.chart.js/dist/types/index.TimeScale<chart.js.chart.js/dist/types/index.TimeScaleOptions>, new <O extends chart.js.chart.js/dist/types/index.TimeScaleOptions = chart.js.chart.js/dist/types/index.TimeScaleOptions>(cfg : chart.js.chart.js/dist/types/basic.AnyObject): chart.js.chart.js/dist/types/index.TimeScale<O>} */
 object TimeScale {
   
   @JSImport("chart.js", "TimeScale")

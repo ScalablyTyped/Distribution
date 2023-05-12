@@ -12,6 +12,7 @@ open class DateTimeFormatterBuilder () extends StObject {
   
   def appendFraction(field: TemporalField, minWidth: Double, maxWidth: Double, decimalPoint: Boolean): DateTimeFormatterBuilder = js.native
   
+  def appendInstant(): DateTimeFormatterBuilder = js.native
   def appendInstant(fractionalDigits: Double): DateTimeFormatterBuilder = js.native
   
   def appendLiteral(literal: Any): DateTimeFormatterBuilder = js.native

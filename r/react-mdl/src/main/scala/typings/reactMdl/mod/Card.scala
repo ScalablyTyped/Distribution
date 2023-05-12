@@ -10,7 +10,7 @@ open class Card protected () extends _MDLComponent[CardProps] {
   def this(props: CardProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: CardProps, context: Any) = this()
 }

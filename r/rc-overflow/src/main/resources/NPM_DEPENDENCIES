@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "rc-overflow" : "1.2.8"
+      "rc-overflow" : "1.3.0"
     }
   ],
   "test-dependencies" : [
     {
-      "rc-overflow" : "1.2.8"
+      "rc-overflow" : "1.3.0"
     }
   ],
   "compile-devDependencies" : [

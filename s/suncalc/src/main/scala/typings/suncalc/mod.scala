@@ -23,6 +23,7 @@ object mod {
   inline def getPosition(timeAndDate: js.Date, latitude: Double, longitude: Double): GetSunPositionResult = (^.asInstanceOf[js.Dynamic].applyDynamic("getPosition")(timeAndDate.asInstanceOf[js.Any], latitude.asInstanceOf[js.Any], longitude.asInstanceOf[js.Any])).asInstanceOf[GetSunPositionResult]
   
   inline def getTimes(date: js.Date, latitude: Double, longitude: Double): GetTimesResult = (^.asInstanceOf[js.Dynamic].applyDynamic("getTimes")(date.asInstanceOf[js.Any], latitude.asInstanceOf[js.Any], longitude.asInstanceOf[js.Any])).asInstanceOf[GetTimesResult]
+  inline def getTimes(date: js.Date, latitude: Double, longitude: Double, height: Double): GetTimesResult = (^.asInstanceOf[js.Dynamic].applyDynamic("getTimes")(date.asInstanceOf[js.Any], latitude.asInstanceOf[js.Any], longitude.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[GetTimesResult]
   
   trait GetMoonIlluminationResult extends StObject {
     

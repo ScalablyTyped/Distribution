@@ -55,7 +55,7 @@ object mod {
     def this(props: P) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: P, context: Any) = this()
   }
@@ -67,7 +67,7 @@ object mod {
     def this(props: BaseFieldArrayProps[P, FieldValue]) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: BaseFieldArrayProps[P, FieldValue], context: Any) = this()
   }
@@ -79,7 +79,7 @@ object mod {
     def this(props: BaseFieldsProps[P] & P) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: BaseFieldsProps[P] & P, context: Any) = this()
   }
@@ -91,7 +91,7 @@ object mod {
     def this(props: FormProps[FormData, P, ErrorType]) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: FormProps[FormData, P, ErrorType], context: Any) = this()
   }
@@ -107,7 +107,7 @@ object mod {
     def this(props: FormSectionProps[P] & P) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: FormSectionProps[P] & P, context: Any) = this()
   }
@@ -119,7 +119,7 @@ object mod {
     def this(props: FormProps[FormData, P, ErrorType]) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: FormProps[FormData, P, ErrorType], context: Any) = this()
   }

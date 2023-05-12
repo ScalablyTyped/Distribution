@@ -80,8 +80,24 @@ object mendixmodelsdkStrings {
   inline def AppServices$MsdVersion: AppServices$MsdVersion = "AppServices$MsdVersion".asInstanceOf[AppServices$MsdVersion]
   
   @js.native
+  sealed trait BusinessEvents$BusinessEventDefinition extends StObject
+  inline def BusinessEvents$BusinessEventDefinition: BusinessEvents$BusinessEventDefinition = "BusinessEvents$BusinessEventDefinition".asInstanceOf[BusinessEvents$BusinessEventDefinition]
+  
+  @js.native
+  sealed trait BusinessEvents$Channel extends StObject
+  inline def BusinessEvents$Channel: BusinessEvents$Channel = "BusinessEvents$Channel".asInstanceOf[BusinessEvents$Channel]
+  
+  @js.native
   sealed trait BusinessEvents$ConsumedBusinessEvent extends StObject
   inline def BusinessEvents$ConsumedBusinessEvent: BusinessEvents$ConsumedBusinessEvent = "BusinessEvents$ConsumedBusinessEvent".asInstanceOf[BusinessEvents$ConsumedBusinessEvent]
+  
+  @js.native
+  sealed trait BusinessEvents$Message extends StObject
+  inline def BusinessEvents$Message: BusinessEvents$Message = "BusinessEvents$Message".asInstanceOf[BusinessEvents$Message]
+  
+  @js.native
+  sealed trait BusinessEvents$MessageAttribute extends StObject
+  inline def BusinessEvents$MessageAttribute: BusinessEvents$MessageAttribute = "BusinessEvents$MessageAttribute".asInstanceOf[BusinessEvents$MessageAttribute]
   
   @js.native
   sealed trait BusinessEvents$PublishedChannel extends StObject
@@ -94,6 +110,10 @@ object mendixmodelsdkStrings {
   @js.native
   sealed trait BusinessEvents$PublishedMessageAttribute extends StObject
   inline def BusinessEvents$PublishedMessageAttribute: BusinessEvents$PublishedMessageAttribute = "BusinessEvents$PublishedMessageAttribute".asInstanceOf[BusinessEvents$PublishedMessageAttribute]
+  
+  @js.native
+  sealed trait BusinessEvents$ServiceOperation extends StObject
+  inline def BusinessEvents$ServiceOperation: BusinessEvents$ServiceOperation = "BusinessEvents$ServiceOperation".asInstanceOf[BusinessEvents$ServiceOperation]
   
   @js.native
   sealed trait CHANGE extends StObject
@@ -170,6 +190,10 @@ object mendixmodelsdkStrings {
   @js.native
   sealed trait CodeActions$VoidType extends StObject
   inline def CodeActions$VoidType: CodeActions$VoidType = "CodeActions$VoidType".asInstanceOf[CodeActions$VoidType]
+  
+  @js.native
+  sealed trait CustomIcons$CustomIcon extends StObject
+  inline def CustomIcons$CustomIcon: CustomIcons$CustomIcon = "CustomIcons$CustomIcon".asInstanceOf[CustomIcons$CustomIcon]
   
   @js.native
   sealed trait CustomWidgets$CustomWidget extends StObject
@@ -330,6 +354,42 @@ object mendixmodelsdkStrings {
   @js.native
   sealed trait DataTypes$VoidType extends StObject
   inline def DataTypes$VoidType: DataTypes$VoidType = "DataTypes$VoidType".asInstanceOf[DataTypes$VoidType]
+  
+  @js.native
+  sealed trait DatabaseConnector$ColumnMapping extends StObject
+  inline def DatabaseConnector$ColumnMapping: DatabaseConnector$ColumnMapping = "DatabaseConnector$ColumnMapping".asInstanceOf[DatabaseConnector$ColumnMapping]
+  
+  @js.native
+  sealed trait DatabaseConnector$ConnectionDetails extends StObject
+  inline def DatabaseConnector$ConnectionDetails: DatabaseConnector$ConnectionDetails = "DatabaseConnector$ConnectionDetails".asInstanceOf[DatabaseConnector$ConnectionDetails]
+  
+  @js.native
+  sealed trait DatabaseConnector$DatabaseQuery extends StObject
+  inline def DatabaseConnector$DatabaseQuery: DatabaseConnector$DatabaseQuery = "DatabaseConnector$DatabaseQuery".asInstanceOf[DatabaseConnector$DatabaseQuery]
+  
+  @js.native
+  sealed trait DatabaseConnector$ExecuteDatabaseQueryAction extends StObject
+  inline def DatabaseConnector$ExecuteDatabaseQueryAction: DatabaseConnector$ExecuteDatabaseQueryAction = "DatabaseConnector$ExecuteDatabaseQueryAction".asInstanceOf[DatabaseConnector$ExecuteDatabaseQueryAction]
+  
+  @js.native
+  sealed trait DatabaseConnector$LimitedLengthSqlDataType extends StObject
+  inline def DatabaseConnector$LimitedLengthSqlDataType: DatabaseConnector$LimitedLengthSqlDataType = "DatabaseConnector$LimitedLengthSqlDataType".asInstanceOf[DatabaseConnector$LimitedLengthSqlDataType]
+  
+  @js.native
+  sealed trait DatabaseConnector$QueryParameter extends StObject
+  inline def DatabaseConnector$QueryParameter: DatabaseConnector$QueryParameter = "DatabaseConnector$QueryParameter".asInstanceOf[DatabaseConnector$QueryParameter]
+  
+  @js.native
+  sealed trait DatabaseConnector$QueryParameterMapping extends StObject
+  inline def DatabaseConnector$QueryParameterMapping: DatabaseConnector$QueryParameterMapping = "DatabaseConnector$QueryParameterMapping".asInstanceOf[DatabaseConnector$QueryParameterMapping]
+  
+  @js.native
+  sealed trait DatabaseConnector$SimpleSqlDataType extends StObject
+  inline def DatabaseConnector$SimpleSqlDataType: DatabaseConnector$SimpleSqlDataType = "DatabaseConnector$SimpleSqlDataType".asInstanceOf[DatabaseConnector$SimpleSqlDataType]
+  
+  @js.native
+  sealed trait DatabaseConnector$TableMapping extends StObject
+  inline def DatabaseConnector$TableMapping: DatabaseConnector$TableMapping = "DatabaseConnector$TableMapping".asInstanceOf[DatabaseConnector$TableMapping]
   
   @js.native
   sealed trait DocumentTemplates$ConditionSettings extends StObject
@@ -572,6 +632,10 @@ object mendixmodelsdkStrings {
   inline def DomainModels$MemberAccess: DomainModels$MemberAccess = "DomainModels$MemberAccess".asInstanceOf[DomainModels$MemberAccess]
   
   @js.native
+  sealed trait DomainModels$MultiLanguageAttributeType extends StObject
+  inline def DomainModels$MultiLanguageAttributeType: DomainModels$MultiLanguageAttributeType = "DomainModels$MultiLanguageAttributeType".asInstanceOf[DomainModels$MultiLanguageAttributeType]
+  
+  @js.native
   sealed trait DomainModels$NoGeneralization extends StObject
   inline def DomainModels$NoGeneralization: DomainModels$NoGeneralization = "DomainModels$NoGeneralization".asInstanceOf[DomainModels$NoGeneralization]
   
@@ -610,6 +674,22 @@ object mendixmodelsdkStrings {
   @js.native
   sealed trait Enumerations$EnumerationValue extends StObject
   inline def Enumerations$EnumerationValue: Enumerations$EnumerationValue = "Enumerations$EnumerationValue".asInstanceOf[Enumerations$EnumerationValue]
+  
+  @js.native
+  sealed trait ExcelDataImporter$ColumnAttributeMapping extends StObject
+  inline def ExcelDataImporter$ColumnAttributeMapping: ExcelDataImporter$ColumnAttributeMapping = "ExcelDataImporter$ColumnAttributeMapping".asInstanceOf[ExcelDataImporter$ColumnAttributeMapping]
+  
+  @js.native
+  sealed trait ExcelDataImporter$IndexReference extends StObject
+  inline def ExcelDataImporter$IndexReference: ExcelDataImporter$IndexReference = "ExcelDataImporter$IndexReference".asInstanceOf[ExcelDataImporter$IndexReference]
+  
+  @js.native
+  sealed trait ExcelDataImporter$NameReference extends StObject
+  inline def ExcelDataImporter$NameReference: ExcelDataImporter$NameReference = "ExcelDataImporter$NameReference".asInstanceOf[ExcelDataImporter$NameReference]
+  
+  @js.native
+  sealed trait ExcelDataImporter$Sheet extends StObject
+  inline def ExcelDataImporter$Sheet: ExcelDataImporter$Sheet = "ExcelDataImporter$Sheet".asInstanceOf[ExcelDataImporter$Sheet]
   
   @js.native
   sealed trait ExportMappings$ExportObjectMappingElement extends StObject
@@ -824,6 +904,10 @@ object mendixmodelsdkStrings {
   @js.native
   sealed trait MLMappings$MLModelMappings extends StObject
   inline def MLMappings$MLModelMappings: MLMappings$MLModelMappings = "MLMappings$MLModelMappings".asInstanceOf[MLMappings$MLModelMappings]
+  
+  @js.native
+  sealed trait MLMappings$MLModelMetadata extends StObject
+  inline def MLMappings$MLModelMetadata: MLMappings$MLModelMetadata = "MLMappings$MLModelMetadata".asInstanceOf[MLMappings$MLModelMetadata]
   
   @js.native
   sealed trait MLMappings$TensorDimension extends StObject
@@ -1182,6 +1266,14 @@ object mendixmodelsdkStrings {
   inline def Microflows$ListOperationAction: Microflows$ListOperationAction = "Microflows$ListOperationAction".asInstanceOf[Microflows$ListOperationAction]
   
   @js.native
+  sealed trait Microflows$ListRange extends StObject
+  inline def Microflows$ListRange: Microflows$ListRange = "Microflows$ListRange".asInstanceOf[Microflows$ListRange]
+  
+  @js.native
+  sealed trait Microflows$LockWorkflowAction extends StObject
+  inline def Microflows$LockWorkflowAction: Microflows$LockWorkflowAction = "Microflows$LockWorkflowAction".asInstanceOf[Microflows$LockWorkflowAction]
+  
+  @js.native
   sealed trait Microflows$LogMessageAction extends StObject
   inline def Microflows$LogMessageAction: Microflows$LogMessageAction = "Microflows$LogMessageAction".asInstanceOf[Microflows$LogMessageAction]
   
@@ -1274,6 +1366,10 @@ object mendixmodelsdkStrings {
   inline def Microflows$OpenWorkflowAction: Microflows$OpenWorkflowAction = "Microflows$OpenWorkflowAction".asInstanceOf[Microflows$OpenWorkflowAction]
   
   @js.native
+  sealed trait Microflows$ParameterMapping extends StObject
+  inline def Microflows$ParameterMapping: Microflows$ParameterMapping = "Microflows$ParameterMapping".asInstanceOf[Microflows$ParameterMapping]
+  
+  @js.native
   sealed trait Microflows$PauseOperation extends StObject
   inline def Microflows$PauseOperation: Microflows$PauseOperation = "Microflows$PauseOperation".asInstanceOf[Microflows$PauseOperation]
   
@@ -1292,6 +1388,10 @@ object mendixmodelsdkStrings {
   @js.native
   sealed trait Microflows$RestCallAction extends StObject
   inline def Microflows$RestCallAction: Microflows$RestCallAction = "Microflows$RestCallAction".asInstanceOf[Microflows$RestCallAction]
+  
+  @js.native
+  sealed trait Microflows$RestOperationCallAction extends StObject
+  inline def Microflows$RestOperationCallAction: Microflows$RestOperationCallAction = "Microflows$RestOperationCallAction".asInstanceOf[Microflows$RestOperationCallAction]
   
   @js.native
   sealed trait Microflows$RestartOperation extends StObject
@@ -1414,6 +1514,10 @@ object mendixmodelsdkStrings {
   inline def Microflows$Union: Microflows$Union = "Microflows$Union".asInstanceOf[Microflows$Union]
   
   @js.native
+  sealed trait Microflows$UnlockWorkflowAction extends StObject
+  inline def Microflows$UnlockWorkflowAction: Microflows$UnlockWorkflowAction = "Microflows$UnlockWorkflowAction".asInstanceOf[Microflows$UnlockWorkflowAction]
+  
+  @js.native
   sealed trait Microflows$UnpauseOperation extends StObject
   inline def Microflows$UnpauseOperation: Microflows$UnpauseOperation = "Microflows$UnpauseOperation".asInstanceOf[Microflows$UnpauseOperation]
   
@@ -1500,6 +1604,10 @@ object mendixmodelsdkStrings {
   @js.native
   sealed trait Navigation$RoleBasedNativeHomePage extends StObject
   inline def Navigation$RoleBasedNativeHomePage: Navigation$RoleBasedNativeHomePage = "Navigation$RoleBasedNativeHomePage".asInstanceOf[Navigation$RoleBasedNativeHomePage]
+  
+  @js.native
+  sealed trait Pages$AccessibilitySettings extends StObject
+  inline def Pages$AccessibilitySettings: Pages$AccessibilitySettings = "Pages$AccessibilitySettings".asInstanceOf[Pages$AccessibilitySettings]
   
   @js.native
   sealed trait Pages$ActionButton extends StObject
@@ -1742,6 +1850,10 @@ object mendixmodelsdkStrings {
   inline def Pages$HorizontalSplitPane: Pages$HorizontalSplitPane = "Pages$HorizontalSplitPane".asInstanceOf[Pages$HorizontalSplitPane]
   
   @js.native
+  sealed trait Pages$IconCollectionIcon extends StObject
+  inline def Pages$IconCollectionIcon: Pages$IconCollectionIcon = "Pages$IconCollectionIcon".asInstanceOf[Pages$IconCollectionIcon]
+  
+  @js.native
   sealed trait Pages$ImageIcon extends StObject
   inline def Pages$ImageIcon: Pages$ImageIcon = "Pages$ImageIcon".asInstanceOf[Pages$ImageIcon]
   
@@ -1860,6 +1972,10 @@ object mendixmodelsdkStrings {
   @js.native
   sealed trait Pages$MicroflowSource extends StObject
   inline def Pages$MicroflowSource: Pages$MicroflowSource = "Pages$MicroflowSource".asInstanceOf[Pages$MicroflowSource]
+  
+  @js.native
+  sealed trait Pages$NamedValue extends StObject
+  inline def Pages$NamedValue: Pages$NamedValue = "Pages$NamedValue".asInstanceOf[Pages$NamedValue]
   
   @js.native
   sealed trait Pages$NanoflowParameterMapping extends StObject
@@ -2066,6 +2182,14 @@ object mendixmodelsdkStrings {
   inline def Pages$SnippetCallWidget: Pages$SnippetCallWidget = "Pages$SnippetCallWidget".asInstanceOf[Pages$SnippetCallWidget]
   
   @js.native
+  sealed trait Pages$SnippetParameter extends StObject
+  inline def Pages$SnippetParameter: Pages$SnippetParameter = "Pages$SnippetParameter".asInstanceOf[Pages$SnippetParameter]
+  
+  @js.native
+  sealed trait Pages$SnippetParameterMapping extends StObject
+  inline def Pages$SnippetParameterMapping: Pages$SnippetParameterMapping = "Pages$SnippetParameterMapping".asInstanceOf[Pages$SnippetParameterMapping]
+  
+  @js.native
   sealed trait Pages$StaticImageViewer extends StObject
   inline def Pages$StaticImageViewer: Pages$StaticImageViewer = "Pages$StaticImageViewer".asInstanceOf[Pages$StaticImageViewer]
   
@@ -2128,6 +2252,10 @@ object mendixmodelsdkStrings {
   @js.native
   sealed trait Pages$Title extends StObject
   inline def Pages$Title: Pages$Title = "Pages$Title".asInstanceOf[Pages$Title]
+  
+  @js.native
+  sealed trait Pages$UserRoleSet extends StObject
+  inline def Pages$UserRoleSet: Pages$UserRoleSet = "Pages$UserRoleSet".asInstanceOf[Pages$UserRoleSet]
   
   @js.native
   sealed trait Pages$UserTaskTemplateType extends StObject
@@ -2250,6 +2378,22 @@ object mendixmodelsdkStrings {
   inline def Rest$CorsConfiguration: Rest$CorsConfiguration = "Rest$CorsConfiguration".asInstanceOf[Rest$CorsConfiguration]
   
   @js.native
+  sealed trait Rest$HttpHeader extends StObject
+  inline def Rest$HttpHeader: Rest$HttpHeader = "Rest$HttpHeader".asInstanceOf[Rest$HttpHeader]
+  
+  @js.native
+  sealed trait Rest$ImplicitExportMapping extends StObject
+  inline def Rest$ImplicitExportMapping: Rest$ImplicitExportMapping = "Rest$ImplicitExportMapping".asInstanceOf[Rest$ImplicitExportMapping]
+  
+  @js.native
+  sealed trait Rest$ImplicitRequestHandling extends StObject
+  inline def Rest$ImplicitRequestHandling: Rest$ImplicitRequestHandling = "Rest$ImplicitRequestHandling".asInstanceOf[Rest$ImplicitRequestHandling]
+  
+  @js.native
+  sealed trait Rest$InteractiveRestOperation extends StObject
+  inline def Rest$InteractiveRestOperation: Rest$InteractiveRestOperation = "Rest$InteractiveRestOperation".asInstanceOf[Rest$InteractiveRestOperation]
+  
+  @js.native
   sealed trait Rest$MetadataReference extends StObject
   inline def Rest$MetadataReference: Rest$MetadataReference = "Rest$MetadataReference".asInstanceOf[Rest$MetadataReference]
   
@@ -2274,8 +2418,20 @@ object mendixmodelsdkStrings {
   inline def Rest$ODataRemoteEntitySource: Rest$ODataRemoteEntitySource = "Rest$ODataRemoteEntitySource".asInstanceOf[Rest$ODataRemoteEntitySource]
   
   @js.native
+  sealed trait Rest$OperationParameter extends StObject
+  inline def Rest$OperationParameter: Rest$OperationParameter = "Rest$OperationParameter".asInstanceOf[Rest$OperationParameter]
+  
+  @js.native
   sealed trait Rest$PublishedODataContract extends StObject
   inline def Rest$PublishedODataContract: Rest$PublishedODataContract = "Rest$PublishedODataContract".asInstanceOf[Rest$PublishedODataContract]
+  
+  @js.native
+  sealed trait Rest$PublishedODataEnumeration extends StObject
+  inline def Rest$PublishedODataEnumeration: Rest$PublishedODataEnumeration = "Rest$PublishedODataEnumeration".asInstanceOf[Rest$PublishedODataEnumeration]
+  
+  @js.native
+  sealed trait Rest$PublishedODataEnumerationValue extends StObject
+  inline def Rest$PublishedODataEnumerationValue: Rest$PublishedODataEnumerationValue = "Rest$PublishedODataEnumerationValue".asInstanceOf[Rest$PublishedODataEnumerationValue]
   
   @js.native
   sealed trait Rest$PublishedODataMicroflow extends StObject
@@ -2308,6 +2464,10 @@ object mendixmodelsdkStrings {
   @js.native
   sealed trait Rest$ServiceFeed extends StObject
   inline def Rest$ServiceFeed: Rest$ServiceFeed = "Rest$ServiceFeed".asInstanceOf[Rest$ServiceFeed]
+  
+  @js.native
+  sealed trait Rest$StringWithParameters extends StObject
+  inline def Rest$StringWithParameters: Rest$StringWithParameters = "Rest$StringWithParameters".asInstanceOf[Rest$StringWithParameters]
   
   @js.native
   sealed trait ScheduledEvents$DaySchedule extends StObject
@@ -2392,6 +2552,10 @@ object mendixmodelsdkStrings {
   @js.native
   sealed trait Settings$CustomSetting extends StObject
   inline def Settings$CustomSetting: Settings$CustomSetting = "Settings$CustomSetting".asInstanceOf[Settings$CustomSetting]
+  
+  @js.native
+  sealed trait Settings$DistributionSettings extends StObject
+  inline def Settings$DistributionSettings: Settings$DistributionSettings = "Settings$DistributionSettings".asInstanceOf[Settings$DistributionSettings]
   
   @js.native
   sealed trait Settings$IntegrationProjectSettingsPart extends StObject
@@ -2520,6 +2684,14 @@ object mendixmodelsdkStrings {
   inline def WebServices$WsdlEntry: WebServices$WsdlEntry = "WebServices$WsdlEntry".asInstanceOf[WebServices$WsdlEntry]
   
   @js.native
+  sealed trait Workflows$AbsoluteAmountUserInput extends StObject
+  inline def Workflows$AbsoluteAmountUserInput: Workflows$AbsoluteAmountUserInput = "Workflows$AbsoluteAmountUserInput".asInstanceOf[Workflows$AbsoluteAmountUserInput]
+  
+  @js.native
+  sealed trait Workflows$AllUserInput extends StObject
+  inline def Workflows$AllUserInput: Workflows$AllUserInput = "Workflows$AllUserInput".asInstanceOf[Workflows$AllUserInput]
+  
+  @js.native
   sealed trait Workflows$Annotation extends StObject
   inline def Workflows$Annotation: Workflows$Annotation = "Workflows$Annotation".asInstanceOf[Workflows$Annotation]
   
@@ -2534,6 +2706,10 @@ object mendixmodelsdkStrings {
   @js.native
   sealed trait Workflows$CallWorkflowActivity extends StObject
   inline def Workflows$CallWorkflowActivity: Workflows$CallWorkflowActivity = "Workflows$CallWorkflowActivity".asInstanceOf[Workflows$CallWorkflowActivity]
+  
+  @js.native
+  sealed trait Workflows$ConsensusCompletionCriteria extends StObject
+  inline def Workflows$ConsensusCompletionCriteria: Workflows$ConsensusCompletionCriteria = "Workflows$ConsensusCompletionCriteria".asInstanceOf[Workflows$ConsensusCompletionCriteria]
   
   @js.native
   sealed trait Workflows$EmptyUserSource extends StObject
@@ -2576,6 +2752,10 @@ object mendixmodelsdkStrings {
   inline def Workflows$MicroflowEventHandler: Workflows$MicroflowEventHandler = "Workflows$MicroflowEventHandler".asInstanceOf[Workflows$MicroflowEventHandler]
   
   @js.native
+  sealed trait Workflows$MultiInputCompletion extends StObject
+  inline def Workflows$MultiInputCompletion: Workflows$MultiInputCompletion = "Workflows$MultiInputCompletion".asInstanceOf[Workflows$MultiInputCompletion]
+  
+  @js.native
   sealed trait Workflows$NoEvent extends StObject
   inline def Workflows$NoEvent: Workflows$NoEvent = "Workflows$NoEvent".asInstanceOf[Workflows$NoEvent]
   
@@ -2600,12 +2780,24 @@ object mendixmodelsdkStrings {
   inline def Workflows$Parameter: Workflows$Parameter = "Workflows$Parameter".asInstanceOf[Workflows$Parameter]
   
   @js.native
+  sealed trait Workflows$PercentageAmountUserInput extends StObject
+  inline def Workflows$PercentageAmountUserInput: Workflows$PercentageAmountUserInput = "Workflows$PercentageAmountUserInput".asInstanceOf[Workflows$PercentageAmountUserInput]
+  
+  @js.native
+  sealed trait Workflows$SingleInputCompletion extends StObject
+  inline def Workflows$SingleInputCompletion: Workflows$SingleInputCompletion = "Workflows$SingleInputCompletion".asInstanceOf[Workflows$SingleInputCompletion]
+  
+  @js.native
   sealed trait Workflows$UserTask extends StObject
   inline def Workflows$UserTask: Workflows$UserTask = "Workflows$UserTask".asInstanceOf[Workflows$UserTask]
   
   @js.native
   sealed trait Workflows$UserTaskOutcome extends StObject
   inline def Workflows$UserTaskOutcome: Workflows$UserTaskOutcome = "Workflows$UserTaskOutcome".asInstanceOf[Workflows$UserTaskOutcome]
+  
+  @js.native
+  sealed trait Workflows$VetoCompletionCriteria extends StObject
+  inline def Workflows$VetoCompletionCriteria: Workflows$VetoCompletionCriteria = "Workflows$VetoCompletionCriteria".asInstanceOf[Workflows$VetoCompletionCriteria]
   
   @js.native
   sealed trait Workflows$VoidConditionOutcome extends StObject

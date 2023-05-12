@@ -12,7 +12,7 @@ trait CancelImageCreationRequest extends StObject {
   var clientToken: ClientToken
   
   /**
-    * The Amazon Resource Name (ARN) of the image whose creation you want to cancel.
+    * The Amazon Resource Name (ARN) of the image that you want to cancel creation for.
     */
   var imageBuildVersionArn: ImageBuildVersionArn
 }

@@ -21,6 +21,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var data: js.UndefOr[js.Array[XrangePointOptionsObject]] = js.undefined
   
   /**
+    * Not available
+    */
+  var depth: Unit
+  
+  /**
+    * Not available
+    */
+  var edgeColor: Unit
+  
+  /**
+    * Not available
+    */
+  var edgeWidth: Unit
+  
+  /**
     * (Highcharts, Highstock, Highmaps, Gantt) An id for the series. This can
     * be used after render time to get a pointer to the series object through
     * `chart.get()`.
@@ -87,8 +102,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object SeriesXrangeOptions {
   
-  inline def apply(`type`: String | xrange): SeriesXrangeOptions = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(depth: Unit, edgeColor: Unit, edgeWidth: Unit, `type`: String | xrange): SeriesXrangeOptions = {
+    val __obj = js.Dynamic.literal(depth = depth.asInstanceOf[js.Any], edgeColor = edgeColor.asInstanceOf[js.Any], edgeWidth = edgeWidth.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeriesXrangeOptions]
   }
@@ -101,6 +116,12 @@ object SeriesXrangeOptions {
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     inline def setDataVarargs(value: XrangePointOptionsObject*): Self = StObject.set(x, "data", js.Array(value*))
+    
+    inline def setDepth(value: Unit): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
+    
+    inline def setEdgeColor(value: Unit): Self = StObject.set(x, "edgeColor", value.asInstanceOf[js.Any])
+    
+    inline def setEdgeWidth(value: Unit): Self = StObject.set(x, "edgeWidth", value.asInstanceOf[js.Any])
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

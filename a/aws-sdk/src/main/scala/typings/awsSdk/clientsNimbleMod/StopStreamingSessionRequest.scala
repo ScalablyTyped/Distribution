@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StopStreamingSessionRequest extends StObject {
   
   /**
-    * Unique, case-sensitive identifier that you provide to ensure the idempotency of the request. If you don’t specify a client token, the AWS SDK automatically generates a client token and uses it for the request to ensure idempotency.
+    * Unique, case-sensitive identifier that you provide to ensure the idempotency of the request. If you don’t specify a client token, the Amazon Web Services SDK automatically generates a client token and uses it for the request to ensure idempotency.
     */
   var clientToken: js.UndefOr[ClientToken] = js.undefined
   
@@ -20,6 +20,11 @@ trait StopStreamingSessionRequest extends StObject {
     * The studioId for the StopStreamingSessionRequest.
     */
   var studioId: String
+  
+  /**
+    * Adds additional instructions to a streaming session stop action to either retain the EBS volumes or delete the EBS volumes.
+    */
+  var volumeRetentionMode: js.UndefOr[VolumeRetentionMode] = js.undefined
 }
 object StopStreamingSessionRequest {
   
@@ -38,5 +43,9 @@ object StopStreamingSessionRequest {
     inline def setSessionId(value: String): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
     
     inline def setStudioId(value: String): Self = StObject.set(x, "studioId", value.asInstanceOf[js.Any])
+    
+    inline def setVolumeRetentionMode(value: VolumeRetentionMode): Self = StObject.set(x, "volumeRetentionMode", value.asInstanceOf[js.Any])
+    
+    inline def setVolumeRetentionModeUndefined: Self = StObject.set(x, "volumeRetentionMode", js.undefined)
   }
 }

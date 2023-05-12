@@ -11,6 +11,9 @@ object sapUiCoreRoutingHashChangerBaseMod {
   
   @JSImport("sap/ui/core/routing/HashChangerBase", JSImport.Default)
   @js.native
+  /**
+    * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+    */
   open class default () extends HashChangerBase
   /* static members */
   object default {
@@ -20,6 +23,8 @@ object sapUiCoreRoutingHashChangerBaseMod {
     val ^ : js.Any = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Creates a new subclass of class sap.ui.core.routing.HashChangerBase with name `sClassName` and enriches
       * it with the information contained in `oClassInfo`.
       *
@@ -73,6 +78,8 @@ object sapUiCoreRoutingHashChangerBaseMod {
     ): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(sClassName.asInstanceOf[js.Any], oClassInfo.asInstanceOf[js.Any], FNMetaImpl.asInstanceOf[js.Any])).asInstanceOf[js.Function]
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Returns a metadata object for class sap.ui.core.routing.HashChangerBase.
       *
       * @returns Metadata object describing this class
@@ -95,6 +102,8 @@ object sapUiCoreRoutingHashChangerBaseMod {
     sDirection: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof routing.HistoryDirection * / any */ String
     ): Unit = js.native
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Replaces the hash with a certain value. When using the replace function, no browser history entry is
       * written. If you want to have an entry in the browser history, please use the {@link #setHash} function.
       *
@@ -115,6 +124,8 @@ object sapUiCoreRoutingHashChangerBaseMod {
     ): Unit = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Sets the hash to a certain value. When using this function, a browser history entry is written. If you
       * do not want to have an entry in the browser history, please use the {@link #replaceHash} function.
       */

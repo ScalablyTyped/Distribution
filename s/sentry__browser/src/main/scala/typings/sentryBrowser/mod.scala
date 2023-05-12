@@ -1,6 +1,7 @@
 package typings.sentryBrowser
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.sentryBrowser.anon.Dsn
 import typings.sentryBrowser.anon.PartialBreadcrumbsOptions
 import typings.sentryBrowser.anon.PartialLinkedErrorsOption
 import typings.sentryBrowser.anon.PartialTryCatchOptions
@@ -16,6 +17,8 @@ import typings.sentryBrowser.typesClientMod.BrowserClientOptions
 import typings.sentryBrowser.typesClientMod.BrowserOptions
 import typings.sentryBrowser.typesHelpersMod.ReportDialogOptions
 import typings.sentryBrowser.typesIntegrationsGlobalhandlersMod.GlobalHandlersIntegrations
+import typings.sentryBrowser.typesProfilingJsSelfProfilingMod.global.Window
+import typings.sentryBrowser.typesTransportsOfflineMod.BrowserOfflineTransportOptions
 import typings.sentryBrowser.typesTransportsTypesMod.BrowserTransportOptions
 import typings.sentryBrowser.typesTransportsUtilsMod.FetchImpl
 import typings.sentryCore.anon.FnCall
@@ -28,8 +31,16 @@ import typings.sentryCore.anon.FnCallNameContext
 import typings.sentryCore.anon.FnCallUser
 import typings.sentryCore.anon.PartialInboundFiltersOpti
 import typings.sentryCore.typesHubMod.Carrier
+import typings.sentryCore.typesTracingSpanMod.Span
+import typings.sentryCore.typesTracingSpanMod.SpanStatusType
+import typings.sentryCore.typesTransportsMultiplexedMod.Matcher
+import typings.sentryInternalTracing.anon.PartialBrowserTracingOpti
+import typings.sentryInternalTracing.anon.PartialRequestInstrumenta
+import typings.sentryInternalTracing.typesBrowserRequestMod.RequestInstrumentationOptions
+import typings.sentryReplay.typesTypesMod.ReplayConfiguration
 import typings.sentryTypes.typesBreadcrumbMod.Breadcrumb
 import typings.sentryTypes.typesClientMod.Client
+import typings.sentryTypes.typesEnvelopeMod.EventEnvelope
 import typings.sentryTypes.typesEventMod.Event
 import typings.sentryTypes.typesEventMod.EventHint
 import typings.sentryTypes.typesEventprocessorMod.EventProcessor
@@ -43,17 +54,20 @@ import typings.sentryTypes.typesSeverityMod.SeverityLevel
 import typings.sentryTypes.typesStacktraceMod.StackLineParser
 import typings.sentryTypes.typesStacktraceMod.StackParser
 import typings.sentryTypes.typesTransactionMod.CustomSamplingContext
+import typings.sentryTypes.typesTransactionMod.TraceparentData
+import typings.sentryTypes.typesTransactionMod.Transaction
 import typings.sentryTypes.typesTransactionMod.TransactionContext
 import typings.sentryTypes.typesTransportMod.BaseTransportOptions
 import typings.sentryTypes.typesTransportMod.InternalBaseTransportOptions
 import typings.sentryTypes.typesTransportMod.Transport
+import typings.sentryTypes.typesTransportMod.TransportMakeRequestResponse
 import typings.sentryTypes.typesTransportMod.TransportRequestExecutor
 import typings.sentryTypes.typesUserMod.User
+import typings.sentryTypes.typesUserMod.UserFeedback
 import typings.sentryUtils.typesPromisebufferMod.PromiseBuffer
 import typings.sentryUtils.typesWorldwideMod.InternalGlobal
 import typings.std.PromiseLike
 import typings.std.ReturnType
-import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -99,6 +113,18 @@ object mod {
       * @param options Configuration options for this SDK.
       */
     def this(options: BrowserClientOptions) = this()
+  }
+  
+  @JSImport("@sentry/browser", "BrowserProfilingIntegration")
+  @js.native
+  open class BrowserProfilingIntegration ()
+    extends typings.sentryBrowser.typesProfilingIntegrationMod.BrowserProfilingIntegration
+  
+  @JSImport("@sentry/browser", "BrowserTracing")
+  @js.native
+  open class BrowserTracing ()
+    extends typings.sentryInternalTracing.mod.BrowserTracing {
+    def this(_options: PartialBrowserTracingOpti) = this()
   }
   
   @JSImport("@sentry/browser", "Dedupe")
@@ -377,9 +403,31 @@ object mod {
     inline def id_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("id")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("@sentry/browser", "Replay")
+  @js.native
+  open class Replay ()
+    extends typings.sentryReplay.mod.Replay {
+    def this(param0: ReplayConfiguration) = this()
+  }
+  /* static members */
+  object Replay {
+    
+    @JSImport("@sentry/browser", "Replay")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * @inheritDoc
+      */
+    @JSImport("@sentry/browser", "Replay.id")
+    @js.native
+    def id: String = js.native
+    inline def id_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("id")(x.asInstanceOf[js.Any])
+  }
+  
   @JSImport("@sentry/browser", "SDK_VERSION")
   @js.native
-  val SDK_VERSION: /* "7.19.0" */ String = js.native
+  val SDK_VERSION: /* "7.51.2" */ String = js.native
   
   @JSImport("@sentry/browser", "Scope")
   @js.native
@@ -448,6 +496,8 @@ object mod {
   
   inline def addGlobalEventProcessor(callback: EventProcessor): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addGlobalEventProcessor")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
+  inline def addTracingExtensions(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addTracingExtensions")().asInstanceOf[Unit]
+  
   inline def captureEvent(event: Event): ReturnType[FnCallEventHint] = ^.asInstanceOf[js.Dynamic].applyDynamic("captureEvent")(event.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FnCallEventHint]]
   inline def captureEvent(event: Event, hint: EventHint): ReturnType[FnCallEventHint] = (^.asInstanceOf[js.Dynamic].applyDynamic("captureEvent")(event.asInstanceOf[js.Any], hint.asInstanceOf[js.Any])).asInstanceOf[ReturnType[FnCallEventHint]]
   
@@ -458,6 +508,8 @@ object mod {
   inline def captureMessage(message: String, captureContext: CaptureContext): ReturnType[FnCallMessageLevelHint] = (^.asInstanceOf[js.Dynamic].applyDynamic("captureMessage")(message.asInstanceOf[js.Any], captureContext.asInstanceOf[js.Any])).asInstanceOf[ReturnType[FnCallMessageLevelHint]]
   inline def captureMessage(message: String, captureContext: Severity): ReturnType[FnCallMessageLevelHint] = (^.asInstanceOf[js.Dynamic].applyDynamic("captureMessage")(message.asInstanceOf[js.Any], captureContext.asInstanceOf[js.Any])).asInstanceOf[ReturnType[FnCallMessageLevelHint]]
   inline def captureMessage(message: String, captureContext: SeverityLevel): ReturnType[FnCallMessageLevelHint] = (^.asInstanceOf[js.Dynamic].applyDynamic("captureMessage")(message.asInstanceOf[js.Any], captureContext.asInstanceOf[js.Any])).asInstanceOf[ReturnType[FnCallMessageLevelHint]]
+  
+  inline def captureUserFeedback(feedback: UserFeedback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("captureUserFeedback")(feedback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("@sentry/browser", "chromeStackLineParser")
   @js.native
@@ -472,14 +524,20 @@ object mod {
   inline def createTransport(
     options: InternalBaseTransportOptions,
     makeRequest: TransportRequestExecutor,
-    buffer: PromiseBuffer[Unit]
+    buffer: PromiseBuffer[Unit | TransportMakeRequestResponse]
   ): Transport = (^.asInstanceOf[js.Dynamic].applyDynamic("createTransport")(options.asInstanceOf[js.Any], makeRequest.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[Transport]
+  
+  inline def createUserFeedbackEnvelope(feedback: UserFeedback, param1: Dsn): EventEnvelope = (^.asInstanceOf[js.Dynamic].applyDynamic("createUserFeedbackEnvelope")(feedback.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[EventEnvelope]
   
   @JSImport("@sentry/browser", "defaultIntegrations")
   @js.native
   val defaultIntegrations: js.Array[
     typings.sentryBrowser.typesIntegrationsMod.GlobalHandlers | typings.sentryBrowser.typesIntegrationsMod.TryCatch | typings.sentryBrowser.typesIntegrationsMod.Breadcrumbs | typings.sentryBrowser.typesIntegrationsMod.LinkedErrors | typings.sentryBrowser.typesIntegrationsMod.HttpContext | typings.sentryBrowser.typesIntegrationsMod.Dedupe | typings.sentryCore.mod.Integrations.InboundFilters | typings.sentryCore.mod.Integrations.FunctionToString
   ] = js.native
+  
+  @JSImport("@sentry/browser", "defaultRequestInstrumentationOptions")
+  @js.native
+  val defaultRequestInstrumentationOptions: RequestInstrumentationOptions = js.native
   
   @JSImport("@sentry/browser", "defaultStackLineParsers")
   @js.native
@@ -488,6 +546,44 @@ object mod {
   @JSImport("@sentry/browser", "defaultStackParser")
   @js.native
   val defaultStackParser: StackParser = js.native
+  
+  inline def eventFromException(stackParser: StackParser, exception: Any): PromiseLike[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("eventFromException")(stackParser.asInstanceOf[js.Any], exception.asInstanceOf[js.Any])).asInstanceOf[PromiseLike[Event]]
+  inline def eventFromException(stackParser: StackParser, exception: Any, hint: Unit, attachStacktrace: Boolean): PromiseLike[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("eventFromException")(stackParser.asInstanceOf[js.Any], exception.asInstanceOf[js.Any], hint.asInstanceOf[js.Any], attachStacktrace.asInstanceOf[js.Any])).asInstanceOf[PromiseLike[Event]]
+  inline def eventFromException(stackParser: StackParser, exception: Any, hint: EventHint): PromiseLike[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("eventFromException")(stackParser.asInstanceOf[js.Any], exception.asInstanceOf[js.Any], hint.asInstanceOf[js.Any])).asInstanceOf[PromiseLike[Event]]
+  inline def eventFromException(stackParser: StackParser, exception: Any, hint: EventHint, attachStacktrace: Boolean): PromiseLike[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("eventFromException")(stackParser.asInstanceOf[js.Any], exception.asInstanceOf[js.Any], hint.asInstanceOf[js.Any], attachStacktrace.asInstanceOf[js.Any])).asInstanceOf[PromiseLike[Event]]
+  
+  inline def eventFromMessage(stackParser: StackParser, message: String): PromiseLike[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("eventFromMessage")(stackParser.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[PromiseLike[Event]]
+  inline def eventFromMessage(stackParser: StackParser, message: String, level: Unit, hint: Unit, attachStacktrace: Boolean): PromiseLike[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("eventFromMessage")(stackParser.asInstanceOf[js.Any], message.asInstanceOf[js.Any], level.asInstanceOf[js.Any], hint.asInstanceOf[js.Any], attachStacktrace.asInstanceOf[js.Any])).asInstanceOf[PromiseLike[Event]]
+  inline def eventFromMessage(stackParser: StackParser, message: String, level: Unit, hint: EventHint): PromiseLike[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("eventFromMessage")(stackParser.asInstanceOf[js.Any], message.asInstanceOf[js.Any], level.asInstanceOf[js.Any], hint.asInstanceOf[js.Any])).asInstanceOf[PromiseLike[Event]]
+  inline def eventFromMessage(stackParser: StackParser, message: String, level: Unit, hint: EventHint, attachStacktrace: Boolean): PromiseLike[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("eventFromMessage")(stackParser.asInstanceOf[js.Any], message.asInstanceOf[js.Any], level.asInstanceOf[js.Any], hint.asInstanceOf[js.Any], attachStacktrace.asInstanceOf[js.Any])).asInstanceOf[PromiseLike[Event]]
+  inline def eventFromMessage(stackParser: StackParser, message: String, level: Severity): PromiseLike[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("eventFromMessage")(stackParser.asInstanceOf[js.Any], message.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[PromiseLike[Event]]
+  inline def eventFromMessage(stackParser: StackParser, message: String, level: SeverityLevel): PromiseLike[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("eventFromMessage")(stackParser.asInstanceOf[js.Any], message.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[PromiseLike[Event]]
+  inline def eventFromMessage(
+    stackParser: StackParser,
+    message: String,
+    level: SeverityLevel,
+    hint: Unit,
+    attachStacktrace: Boolean
+  ): PromiseLike[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("eventFromMessage")(stackParser.asInstanceOf[js.Any], message.asInstanceOf[js.Any], level.asInstanceOf[js.Any], hint.asInstanceOf[js.Any], attachStacktrace.asInstanceOf[js.Any])).asInstanceOf[PromiseLike[Event]]
+  inline def eventFromMessage(stackParser: StackParser, message: String, level: SeverityLevel, hint: EventHint): PromiseLike[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("eventFromMessage")(stackParser.asInstanceOf[js.Any], message.asInstanceOf[js.Any], level.asInstanceOf[js.Any], hint.asInstanceOf[js.Any])).asInstanceOf[PromiseLike[Event]]
+  inline def eventFromMessage(
+    stackParser: StackParser,
+    message: String,
+    level: SeverityLevel,
+    hint: EventHint,
+    attachStacktrace: Boolean
+  ): PromiseLike[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("eventFromMessage")(stackParser.asInstanceOf[js.Any], message.asInstanceOf[js.Any], level.asInstanceOf[js.Any], hint.asInstanceOf[js.Any], attachStacktrace.asInstanceOf[js.Any])).asInstanceOf[PromiseLike[Event]]
+  inline def eventFromMessage(stackParser: StackParser, message: String, level: Severity, hint: Unit, attachStacktrace: Boolean): PromiseLike[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("eventFromMessage")(stackParser.asInstanceOf[js.Any], message.asInstanceOf[js.Any], level.asInstanceOf[js.Any], hint.asInstanceOf[js.Any], attachStacktrace.asInstanceOf[js.Any])).asInstanceOf[PromiseLike[Event]]
+  inline def eventFromMessage(stackParser: StackParser, message: String, level: Severity, hint: EventHint): PromiseLike[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("eventFromMessage")(stackParser.asInstanceOf[js.Any], message.asInstanceOf[js.Any], level.asInstanceOf[js.Any], hint.asInstanceOf[js.Any])).asInstanceOf[PromiseLike[Event]]
+  inline def eventFromMessage(
+    stackParser: StackParser,
+    message: String,
+    level: Severity,
+    hint: EventHint,
+    attachStacktrace: Boolean
+  ): PromiseLike[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("eventFromMessage")(stackParser.asInstanceOf[js.Any], message.asInstanceOf[js.Any], level.asInstanceOf[js.Any], hint.asInstanceOf[js.Any], attachStacktrace.asInstanceOf[js.Any])).asInstanceOf[PromiseLike[Event]]
+  
+  inline def extractTraceparentData(traceparent: String): js.UndefOr[TraceparentData] = ^.asInstanceOf[js.Dynamic].applyDynamic("extractTraceparentData")(traceparent.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[TraceparentData]]
   
   inline def flush(): PromiseLike[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("flush")().asInstanceOf[PromiseLike[Boolean]]
   inline def flush(timeout: Double): PromiseLike[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("flush")(timeout.asInstanceOf[js.Any]).asInstanceOf[PromiseLike[Boolean]]
@@ -498,6 +594,9 @@ object mod {
   @js.native
   val geckoStackLineParser: StackLineParser = js.native
   
+  inline def getActiveTransaction[T /* <: Transaction */](): js.UndefOr[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("getActiveTransaction")().asInstanceOf[js.UndefOr[T]]
+  inline def getActiveTransaction[T /* <: Transaction */](maybeHub: typings.sentryCore.typesHubMod.Hub): js.UndefOr[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("getActiveTransaction")(maybeHub.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[T]]
+  
   inline def getCurrentHub(): typings.sentryCore.typesHubMod.Hub = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentHub")().asInstanceOf[typings.sentryCore.typesHubMod.Hub]
   
   inline def getHubFromCarrier(carrier: Carrier): typings.sentryCore.typesHubMod.Hub = ^.asInstanceOf[js.Dynamic].applyDynamic("getHubFromCarrier")(carrier.asInstanceOf[js.Any]).asInstanceOf[typings.sentryCore.typesHubMod.Hub]
@@ -505,16 +604,26 @@ object mod {
   inline def init(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[Unit]
   inline def init(options: BrowserOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
+  inline def instrumentOutgoingRequests(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("instrumentOutgoingRequests")().asInstanceOf[Unit]
+  inline def instrumentOutgoingRequests(_options: PartialRequestInstrumenta): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("instrumentOutgoingRequests")(_options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
   inline def lastEventId(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("lastEventId")().asInstanceOf[js.UndefOr[String]]
+  
+  inline def makeBrowserOfflineTransport[T /* <: InternalBaseTransportOptions */](createTransport: js.Function1[/* options */ T, Transport]): js.Function1[/* options */ T & BrowserOfflineTransportOptions, Transport] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeBrowserOfflineTransport")(createTransport.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* options */ T & BrowserOfflineTransportOptions, Transport]]
   
   inline def makeFetchTransport(options: BrowserTransportOptions): Transport = ^.asInstanceOf[js.Dynamic].applyDynamic("makeFetchTransport")(options.asInstanceOf[js.Any]).asInstanceOf[Transport]
   inline def makeFetchTransport(options: BrowserTransportOptions, nativeFetch: FetchImpl): Transport = (^.asInstanceOf[js.Dynamic].applyDynamic("makeFetchTransport")(options.asInstanceOf[js.Any], nativeFetch.asInstanceOf[js.Any])).asInstanceOf[Transport]
   
   inline def makeMain(hub: typings.sentryCore.typesHubMod.Hub): typings.sentryCore.typesHubMod.Hub = ^.asInstanceOf[js.Dynamic].applyDynamic("makeMain")(hub.asInstanceOf[js.Any]).asInstanceOf[typings.sentryCore.typesHubMod.Hub]
   
+  inline def makeMultiplexedTransport[TO /* <: BaseTransportOptions */](createTransport: js.Function1[/* options */ TO, Transport], matcher: Matcher): js.Function1[/* options */ TO, Transport] = (^.asInstanceOf[js.Dynamic].applyDynamic("makeMultiplexedTransport")(createTransport.asInstanceOf[js.Any], matcher.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* options */ TO, Transport]]
+  
   inline def makeXHRTransport(options: BrowserTransportOptions): Transport = ^.asInstanceOf[js.Dynamic].applyDynamic("makeXHRTransport")(options.asInstanceOf[js.Any]).asInstanceOf[Transport]
   
   inline def onLoad(callback: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onLoad")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  inline def onProfilingStartRouteTransaction(): js.UndefOr[Transaction] = ^.asInstanceOf[js.Dynamic].applyDynamic("onProfilingStartRouteTransaction")().asInstanceOf[js.UndefOr[Transaction]]
+  inline def onProfilingStartRouteTransaction(transaction: Transaction): js.UndefOr[Transaction] = ^.asInstanceOf[js.Dynamic].applyDynamic("onProfilingStartRouteTransaction")(transaction.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Transaction]]
   
   @JSImport("@sentry/browser", "opera10StackLineParser")
   @js.native
@@ -543,8 +652,17 @@ object mod {
   inline def showReportDialog(options: ReportDialogOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showReportDialog")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   inline def showReportDialog(options: ReportDialogOptions, hub: typings.sentryCore.mod.Hub): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("showReportDialog")(options.asInstanceOf[js.Any], hub.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
+  inline def spanStatusfromHttpCode(httpStatus: Double): SpanStatusType = ^.asInstanceOf[js.Dynamic].applyDynamic("spanStatusfromHttpCode")(httpStatus.asInstanceOf[js.Any]).asInstanceOf[SpanStatusType]
+  
   inline def startTransaction(context: TransactionContext): ReturnType[FnCallContextCustomSamplingContext] = ^.asInstanceOf[js.Dynamic].applyDynamic("startTransaction")(context.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FnCallContextCustomSamplingContext]]
   inline def startTransaction(context: TransactionContext, customSamplingContext: CustomSamplingContext): ReturnType[FnCallContextCustomSamplingContext] = (^.asInstanceOf[js.Dynamic].applyDynamic("startTransaction")(context.asInstanceOf[js.Any], customSamplingContext.asInstanceOf[js.Any])).asInstanceOf[ReturnType[FnCallContextCustomSamplingContext]]
+  
+  inline def trace[T](context: TransactionContext, callback: js.Function1[/* span */ js.UndefOr[Span], T]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("trace")(context.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def trace[T](
+    context: TransactionContext,
+    callback: js.Function1[/* span */ js.UndefOr[Span], T],
+    onError: js.Function1[/* error */ Any, Unit]
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("trace")(context.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[T]
   
   @JSImport("@sentry/browser", "winjsStackLineParser")
   @js.native

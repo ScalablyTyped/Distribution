@@ -1,6 +1,7 @@
 package typings.openui5
 
 import typings.openui5.anon.ContentWidth
+import typings.openui5.anon.`23`
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapMLibraryMod.P13nPopupMode
 import typings.openui5.sapMLibraryMod.p13n.IContent
@@ -259,6 +260,8 @@ object sapMP13nPopupMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:close close} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -267,7 +270,7 @@ object sapMP13nPopupMod {
     def fireClose(/**
       * Parameters to pass along with the event
       */
-    mParameters: js.Object): this.type = js.native
+    mParameters: `23`): this.type = js.native
     
     /**
       * Gets content of aggregation {@link #getAdditionalButtons additionalButtons}.
@@ -288,7 +291,7 @@ object sapMP13nPopupMod {
     def getMode(): P13nPopupMode | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof P13nPopupMode * / any */ String) = js.native
     
     /**
-      * Removes the current panels in the `panels` aggregation.
+      * Returns the current panels in the `panels` aggregation.
       *
       * @returns An array of panel instances
       */

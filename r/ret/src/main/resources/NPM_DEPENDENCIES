@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "ret" : "0.4.2"
+      "ret" : "0.5.0"
     }
   ],
   "test-dependencies" : [
     {
-      "ret" : "0.4.2"
+      "ret" : "0.5.0"
     }
   ],
   "compile-devDependencies" : [

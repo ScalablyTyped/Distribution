@@ -8,8 +8,6 @@ object buildAndroidMod {
   
   trait AndroidDependencyConfig extends StObject {
     
-    var androidMkPath: js.UndefOr[String | Null] = js.undefined
-    
     var buildTypes: js.Array[String]
     
     var cmakeListsPath: js.UndefOr[String | Null] = js.undefined
@@ -40,12 +38,6 @@ object buildAndroidMod {
     
     @scala.inline
     implicit open class MutableBuilder[Self <: AndroidDependencyConfig] (val x: Self) extends AnyVal {
-      
-      inline def setAndroidMkPath(value: String): Self = StObject.set(x, "androidMkPath", value.asInstanceOf[js.Any])
-      
-      inline def setAndroidMkPathNull: Self = StObject.set(x, "androidMkPath", null)
-      
-      inline def setAndroidMkPathUndefined: Self = StObject.set(x, "androidMkPath", js.undefined)
       
       inline def setBuildTypes(value: js.Array[String]): Self = StObject.set(x, "buildTypes", value.asInstanceOf[js.Any])
       
@@ -85,8 +77,6 @@ object buildAndroidMod {
   
   trait AndroidDependencyParams extends StObject {
     
-    var androidMkPath: js.UndefOr[String | Null] = js.undefined
-    
     var buildTypes: js.UndefOr[js.Array[String]] = js.undefined
     
     var cmakeListsPath: js.UndefOr[String | Null] = js.undefined
@@ -116,12 +106,6 @@ object buildAndroidMod {
     
     @scala.inline
     implicit open class MutableBuilder[Self <: AndroidDependencyParams] (val x: Self) extends AnyVal {
-      
-      inline def setAndroidMkPath(value: String): Self = StObject.set(x, "androidMkPath", value.asInstanceOf[js.Any])
-      
-      inline def setAndroidMkPathNull: Self = StObject.set(x, "androidMkPath", null)
-      
-      inline def setAndroidMkPathUndefined: Self = StObject.set(x, "androidMkPath", js.undefined)
       
       inline def setBuildTypes(value: js.Array[String]): Self = StObject.set(x, "buildTypes", value.asInstanceOf[js.Any])
       
@@ -184,6 +168,8 @@ object buildAndroidMod {
     var packageName: String
     
     var sourceDir: String
+    
+    var unstable_reactLegacyComponentNames: js.UndefOr[js.Array[String] | Null] = js.undefined
   }
   object AndroidProjectConfig {
     
@@ -204,6 +190,14 @@ object buildAndroidMod {
       inline def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
       
       inline def setSourceDir(value: String): Self = StObject.set(x, "sourceDir", value.asInstanceOf[js.Any])
+      
+      inline def setUnstable_reactLegacyComponentNames(value: js.Array[String]): Self = StObject.set(x, "unstable_reactLegacyComponentNames", value.asInstanceOf[js.Any])
+      
+      inline def setUnstable_reactLegacyComponentNamesNull: Self = StObject.set(x, "unstable_reactLegacyComponentNames", null)
+      
+      inline def setUnstable_reactLegacyComponentNamesUndefined: Self = StObject.set(x, "unstable_reactLegacyComponentNames", js.undefined)
+      
+      inline def setUnstable_reactLegacyComponentNamesVarargs(value: String*): Self = StObject.set(x, "unstable_reactLegacyComponentNames", js.Array(value*))
     }
   }
   
@@ -218,6 +212,8 @@ object buildAndroidMod {
     var packageName: js.UndefOr[String] = js.undefined
     
     var sourceDir: js.UndefOr[String] = js.undefined
+    
+    var unstable_reactLegacyComponentNames: js.UndefOr[js.Array[String] | Null] = js.undefined
   }
   object AndroidProjectParams {
     
@@ -248,6 +244,14 @@ object buildAndroidMod {
       inline def setSourceDir(value: String): Self = StObject.set(x, "sourceDir", value.asInstanceOf[js.Any])
       
       inline def setSourceDirUndefined: Self = StObject.set(x, "sourceDir", js.undefined)
+      
+      inline def setUnstable_reactLegacyComponentNames(value: js.Array[String]): Self = StObject.set(x, "unstable_reactLegacyComponentNames", value.asInstanceOf[js.Any])
+      
+      inline def setUnstable_reactLegacyComponentNamesNull: Self = StObject.set(x, "unstable_reactLegacyComponentNames", null)
+      
+      inline def setUnstable_reactLegacyComponentNamesUndefined: Self = StObject.set(x, "unstable_reactLegacyComponentNames", js.undefined)
+      
+      inline def setUnstable_reactLegacyComponentNamesVarargs(value: String*): Self = StObject.set(x, "unstable_reactLegacyComponentNames", js.Array(value*))
     }
   }
 }

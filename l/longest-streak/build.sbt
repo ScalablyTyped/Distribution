@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "longest-streak"
-version := "3.0.1-7f2f75"
+version := "3.1.0-ecadfb"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

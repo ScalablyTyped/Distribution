@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ProcessorParameter extends StObject {
   
   /**
-    * The name of the parameter.
+    * The name of the parameter. Currently the following default values are supported: 3 for NumberOfRetries and 60 for the BufferIntervalInSeconds. The BufferSizeInMBs ranges between 0.2 MB and up to 3MB. The default buffering hint is 1MB for all destinations, except Splunk. For Splunk, the default buffering hint is 256 KB. 
     */
   var ParameterName: ProcessorParameterName
   

@@ -54,10 +54,6 @@ trait RuntimeServerConfigOptions extends StObject {
   var spec: Spec | Null
   
   var specs: js.Array[Spec]
-  
-  var xhrRoute: String
-  
-  var xhrUrl: String
 }
 object RuntimeServerConfigOptions {
   
@@ -80,11 +76,9 @@ object RuntimeServerConfigOptions {
     reporterUrl: String,
     socketIoCookie: String,
     socketIoRoute: String,
-    specs: js.Array[Spec],
-    xhrRoute: String,
-    xhrUrl: String
+    specs: js.Array[Spec]
   ): RuntimeServerConfigOptions = {
-    val __obj = js.Dynamic.literal(autoOpen = autoOpen.asInstanceOf[js.Any], browser = browser.asInstanceOf[js.Any], browserUrl = browserUrl.asInstanceOf[js.Any], clientRoute = clientRoute.asInstanceOf[js.Any], cypressEnv = cypressEnv.asInstanceOf[js.Any], isNewProject = isNewProject.asInstanceOf[js.Any], isTextTerminal = isTextTerminal.asInstanceOf[js.Any], morgan = morgan.asInstanceOf[js.Any], parentTestsFolder = parentTestsFolder.asInstanceOf[js.Any], parentTestsFolderDisplay = parentTestsFolderDisplay.asInstanceOf[js.Any], projectName = projectName.asInstanceOf[js.Any], proxyUrl = proxyUrl.asInstanceOf[js.Any], remote = remote.asInstanceOf[js.Any], report = report.asInstanceOf[js.Any], reporterRoute = reporterRoute.asInstanceOf[js.Any], reporterUrl = reporterUrl.asInstanceOf[js.Any], socketIoCookie = socketIoCookie.asInstanceOf[js.Any], socketIoRoute = socketIoRoute.asInstanceOf[js.Any], specs = specs.asInstanceOf[js.Any], xhrRoute = xhrRoute.asInstanceOf[js.Any], xhrUrl = xhrUrl.asInstanceOf[js.Any], socketId = null, spec = null)
+    val __obj = js.Dynamic.literal(autoOpen = autoOpen.asInstanceOf[js.Any], browser = browser.asInstanceOf[js.Any], browserUrl = browserUrl.asInstanceOf[js.Any], clientRoute = clientRoute.asInstanceOf[js.Any], cypressEnv = cypressEnv.asInstanceOf[js.Any], isNewProject = isNewProject.asInstanceOf[js.Any], isTextTerminal = isTextTerminal.asInstanceOf[js.Any], morgan = morgan.asInstanceOf[js.Any], parentTestsFolder = parentTestsFolder.asInstanceOf[js.Any], parentTestsFolderDisplay = parentTestsFolderDisplay.asInstanceOf[js.Any], projectName = projectName.asInstanceOf[js.Any], proxyUrl = proxyUrl.asInstanceOf[js.Any], remote = remote.asInstanceOf[js.Any], report = report.asInstanceOf[js.Any], reporterRoute = reporterRoute.asInstanceOf[js.Any], reporterUrl = reporterUrl.asInstanceOf[js.Any], socketIoCookie = socketIoCookie.asInstanceOf[js.Any], socketIoRoute = socketIoRoute.asInstanceOf[js.Any], specs = specs.asInstanceOf[js.Any], socketId = null, spec = null)
     __obj.asInstanceOf[RuntimeServerConfigOptions]
   }
   
@@ -138,9 +132,5 @@ object RuntimeServerConfigOptions {
     inline def setSpecs(value: js.Array[Spec]): Self = StObject.set(x, "specs", value.asInstanceOf[js.Any])
     
     inline def setSpecsVarargs(value: Spec*): Self = StObject.set(x, "specs", js.Array(value*))
-    
-    inline def setXhrRoute(value: String): Self = StObject.set(x, "xhrRoute", value.asInstanceOf[js.Any])
-    
-    inline def setXhrUrl(value: String): Self = StObject.set(x, "xhrUrl", value.asInstanceOf[js.Any])
   }
 }

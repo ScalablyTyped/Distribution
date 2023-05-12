@@ -30,6 +30,15 @@ object WasmModule {
   val ^ : js.Any = js.native
   
   /**
+    * Get a wasm module's configuration.
+    *
+    * @param {string} moduleName - Name of the module.
+    * @returns {object | undefined} The previously set configuration.
+    */
+  /* static member */
+  inline def getConfig(moduleName: String): js.UndefOr[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("getConfig")(moduleName.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Object]]
+  
+  /**
     * Get a wasm module instance. The instance will be created if necessary and returned
     * in the second parameter to callback.
     *
@@ -49,6 +58,8 @@ object WasmModule {
     * @param {string} [config.wasmUrl] - URL of the wasm script.
     * @param {string} [config.fallbackUrl] - URL of the fallback script to use when wasm modules
     * aren't supported.
+    * @param {number} [config.numWorkers] - For modules running on worker threads, the number of
+    * threads to use. Default value is based on module implementation.
     * @param {ModuleErrorCallback} [config.errorHandler] - Function to be called if the module fails
     * to download.
     */

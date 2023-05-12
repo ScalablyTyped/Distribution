@@ -4,11 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * An elevation request sent by the <code>ElevationService</code> containing
-  * the list of discrete coordinates (<code>LatLng</code>s) for which to return
-  * elevation data.
-  */
 trait LocationElevationRequest extends StObject {
   
   /**

@@ -1,20 +1,20 @@
 package typings.chartJs
 
-import typings.chartJs.mod.Align
-import typings.chartJs.mod.ChartType
-import typings.chartJs.mod.DecimationAlgorithm
-import typings.chartJs.mod.EasingFunction
-import typings.chartJs.mod.InteractionAxis
-import typings.chartJs.mod.InteractionMode
-import typings.chartJs.mod.ScaleType
-import typings.chartJs.mod.TextAlign
-import typings.chartJs.mod.TooltipPositioner
-import typings.chartJs.mod.TooltipXAlignment
-import typings.chartJs.mod.TooltipYAlignment
-import typings.chartJs.mod._FillTarget
-import typings.chartJs.mod._PointStyle
-import typings.chartJs.typesAdaptersMod.TimeUnit
-import typings.chartJs.typesLayoutMod._LayoutPosition
+import typings.chartJs.distCoreCoreDotadaptersMod.TimeUnit
+import typings.chartJs.distHelpersHelpersDoteasingMod.EasingFunction
+import typings.chartJs.distTypesIndexMod.Align
+import typings.chartJs.distTypesIndexMod.ChartType
+import typings.chartJs.distTypesIndexMod.DecimationAlgorithm
+import typings.chartJs.distTypesIndexMod.InteractionAxis
+import typings.chartJs.distTypesIndexMod.InteractionMode
+import typings.chartJs.distTypesIndexMod.ScaleType
+import typings.chartJs.distTypesIndexMod.TextAlign
+import typings.chartJs.distTypesIndexMod.TooltipPositioner
+import typings.chartJs.distTypesIndexMod.TooltipXAlignment
+import typings.chartJs.distTypesIndexMod.TooltipYAlignment
+import typings.chartJs.distTypesIndexMod._FillTarget
+import typings.chartJs.distTypesIndexMod._PointStyle
+import typings.chartJs.distTypesLayoutMod._LayoutPosition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,6 +24,10 @@ object chartJsStrings {
   @js.native
   sealed trait default extends StObject
   inline def default: default = "default".asInstanceOf[default]
+  
+  @js.native
+  sealed trait Object extends StObject
+  inline def Object: Object = "Object".asInstanceOf[Object]
   
   @js.native
   sealed trait abort extends StObject
@@ -705,6 +709,10 @@ object chartJsStrings {
   @js.native
   sealed trait oblique extends StObject
   inline def oblique: oblique = "oblique".asInstanceOf[oblique]
+  
+  @js.native
+  sealed trait options extends StObject
+  inline def options: options = "options".asInstanceOf[options]
   
   @js.native
   sealed trait origin

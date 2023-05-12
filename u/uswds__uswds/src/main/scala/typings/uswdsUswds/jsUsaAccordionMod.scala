@@ -24,8 +24,6 @@ object jsUsaAccordionMod extends Shortcut {
     /**
       * Get an Array of button elements belonging directly to the given
       * accordion element.
-      * @param accordion
-      * @return buttons
       */
     def getButtons(accordion: HTMLElement): js.Array[HTMLButtonElement] = js.native
     
@@ -43,11 +41,6 @@ object jsUsaAccordionMod extends Shortcut {
     /**
       * Toggle a button's "pressed" state, optionally providing a target
       * state.
-      *
-      * @param button
-      * @param expanded If no state is provided, the current
-      * state will be toggled (from false to true, and vice-versa).
-      * @return the resulting state
       */
     def toggle(button: HTMLButtonElement): Boolean = js.native
     def toggle(button: HTMLButtonElement, expanded: Boolean): Boolean = js.native

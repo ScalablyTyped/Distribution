@@ -121,6 +121,8 @@ type EksContainerVolumeMounts = js.Array[EksContainerVolumeMount]
 
 type EksContainers = js.Array[EksContainer]
 
+type EksLabelsMap = StringDictionary[String]
+
 type EksLimits = StringDictionary[Quantity]
 
 type EksRequests = StringDictionary[Quantity]

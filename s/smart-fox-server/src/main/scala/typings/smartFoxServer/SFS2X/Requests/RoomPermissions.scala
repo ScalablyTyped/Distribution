@@ -6,16 +6,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RoomPermissions extends StObject {
   
-  /** @type {boolean} Sets whether changing the Room name after its creation is allowed or not. */
+  /** Sets whether changing the Room name after its creation is allowed or not. */
   var allowNameChange: Boolean
   
-  /** @type {boolean} Sets whether changing (or removing) the Room password after its creation is allowed or not. */
+  /** Sets whether changing (or removing) the Room password after its creation is allowed or not. */
   var allowPasswordStateChange: Boolean
   
-  /** @type {boolean} Sets whether users inside the Room are allowed to send public messages or not. */
+  /** Sets whether users inside the Room are allowed to send public messages or not. */
   var allowPublicMessages: Boolean
   
-  /** @type {boolean} Sets whether the Room capacity can be changed after its creation or not. */
+  /** Sets whether the Room capacity can be changed after its creation or not. */
   var aloowResizing: Boolean
 }
 object RoomPermissions {

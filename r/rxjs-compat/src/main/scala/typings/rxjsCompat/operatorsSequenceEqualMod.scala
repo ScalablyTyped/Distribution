@@ -1,6 +1,6 @@
 package typings.rxjsCompat
 
-import typings.rxjs.distTypesInternalObservableMod.Observable
+import typings.rxjs.distTypesInternalTypesMod.ObservableInput
 import typings.rxjs.distTypesInternalTypesMod.OperatorFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,6 +12,6 @@ object operatorsSequenceEqualMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def sequenceEqual[T](compareTo: Observable[T]): OperatorFunction[T, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("sequenceEqual")(compareTo.asInstanceOf[js.Any]).asInstanceOf[OperatorFunction[T, Boolean]]
-  inline def sequenceEqual[T](compareTo: Observable[T], comparator: js.Function2[/* a */ T, /* b */ T, Boolean]): OperatorFunction[T, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("sequenceEqual")(compareTo.asInstanceOf[js.Any], comparator.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, Boolean]]
+  inline def sequenceEqual[T](compareTo: ObservableInput[T]): OperatorFunction[T, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("sequenceEqual")(compareTo.asInstanceOf[js.Any]).asInstanceOf[OperatorFunction[T, Boolean]]
+  inline def sequenceEqual[T](compareTo: ObservableInput[T], comparator: js.Function2[/* a */ T, /* b */ T, Boolean]): OperatorFunction[T, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("sequenceEqual")(compareTo.asInstanceOf[js.Any], comparator.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, Boolean]]
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for just-safe-set
 
-Typings are for version 4.1.1
+Typings are for version 4.2.1
 
 ## Library description:
 set value at property, create intermediate properties if necessary

@@ -12,7 +12,7 @@ trait CreateFleetLocationsInput extends StObject {
   var FleetId: FleetIdOrArn
   
   /**
-    * A list of locations to deploy additional instances to and manage as part of the fleet. You can add any GameLift-supported Amazon Web Services Region as a remote location, in the form of an Amazon Web Services Region code such as us-west-2. 
+    * A list of locations to deploy additional instances to and manage as part of the fleet. You can add any Amazon GameLift-supported Amazon Web Services Region as a remote location, in the form of an Amazon Web Services Region code such as us-west-2. 
     */
   var Locations: LocationConfigurationList
 }

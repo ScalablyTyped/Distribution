@@ -3,6 +3,7 @@ package typings.pdfjsDist
 import org.scalablytyped.runtime.StringDictionary
 import typings.pdfjsDist.pdfjsDistDoubles.`0.35`
 import typings.pdfjsDist.pdfjsDistDoubles.`1.35`
+import typings.pdfjsDist.pdfjsDistInts.`10000000`
 import typings.pdfjsDist.pdfjsDistStrings.pdfjs_internal_editor_
 import typings.std.URL
 import org.scalablytyped.runtime.StObject
@@ -460,6 +461,10 @@ object typesSrcSharedUtilMod {
     val WIDGET: Double = js.native
   }
   
+  @JSImport("pdfjs-dist/types/src/shared/util", "BASELINE_FACTOR")
+  @js.native
+  val BASELINE_FACTOR: Double = js.native
+  
   @JSImport("pdfjs-dist/types/src/shared/util", "BaseException")
   @js.native
   val BaseException: Any = js.native
@@ -506,57 +511,6 @@ object typesSrcSharedUtilMod {
   @js.native
   open class FeatureTest () extends StObject
   
-  object FontType {
-    
-    @JSImport("pdfjs-dist/types/src/shared/util", "FontType.CIDFONTTYPE0")
-    @js.native
-    val CIDFONTTYPE0: String = js.native
-    
-    @JSImport("pdfjs-dist/types/src/shared/util", "FontType.CIDFONTTYPE0C")
-    @js.native
-    val CIDFONTTYPE0C: String = js.native
-    
-    @JSImport("pdfjs-dist/types/src/shared/util", "FontType.CIDFONTTYPE2")
-    @js.native
-    val CIDFONTTYPE2: String = js.native
-    
-    @JSImport("pdfjs-dist/types/src/shared/util", "FontType.MMTYPE1")
-    @js.native
-    val MMTYPE1: String = js.native
-    
-    @JSImport("pdfjs-dist/types/src/shared/util", "FontType.OPENTYPE")
-    @js.native
-    val OPENTYPE: String = js.native
-    
-    @JSImport("pdfjs-dist/types/src/shared/util", "FontType.TRUETYPE")
-    @js.native
-    val TRUETYPE: String = js.native
-    
-    @JSImport("pdfjs-dist/types/src/shared/util", "FontType.TYPE0")
-    @js.native
-    val TYPE0: String = js.native
-    
-    @JSImport("pdfjs-dist/types/src/shared/util", "FontType.TYPE1")
-    @js.native
-    val TYPE1: String = js.native
-    
-    @JSImport("pdfjs-dist/types/src/shared/util", "FontType.TYPE1C")
-    @js.native
-    val TYPE1C: String = js.native
-    
-    @JSImport("pdfjs-dist/types/src/shared/util", "FontType.TYPE1STANDARD")
-    @js.native
-    val TYPE1STANDARD: String = js.native
-    
-    @JSImport("pdfjs-dist/types/src/shared/util", "FontType.TYPE3")
-    @js.native
-    val TYPE3: String = js.native
-    
-    @JSImport("pdfjs-dist/types/src/shared/util", "FontType.UNKNOWN")
-    @js.native
-    val UNKNOWN: String = js.native
-  }
-  
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped any */ @JSImport("pdfjs-dist/types/src/shared/util", "FormatError")
   @js.native
@@ -601,6 +555,10 @@ object typesSrcSharedUtilMod {
   @JSImport("pdfjs-dist/types/src/shared/util", "LINE_FACTOR")
   @js.native
   val LINE_FACTOR: `1.35` = js.native
+  
+  @JSImport("pdfjs-dist/types/src/shared/util", "MAX_IMAGE_SIZE_TO_CACHE")
+  @js.native
+  val MAX_IMAGE_SIZE_TO_CACHE: `10000000` = js.native
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped any */ @JSImport("pdfjs-dist/types/src/shared/util", "MissingPDFException")
@@ -1034,6 +992,33 @@ object typesSrcSharedUtilMod {
     val PRINT_HIGH_QUALITY: Double = js.native
   }
   
+  @JSImport("pdfjs-dist/types/src/shared/util", "PromiseCapability")
+  @js.native
+  open class PromiseCapability () extends StObject {
+    
+    /* private */ var `private`: Any = js.native
+    
+    /**
+      * @type {Promise<any>} The Promise object.
+      */
+    var promise: js.Promise[Any] = js.native
+    
+    /**
+      * @type {function} Rejects the Promise.
+      */
+    var reject: js.Function = js.native
+    
+    /**
+      * @type {function} Fulfills the Promise.
+      */
+    var resolve: js.Function = js.native
+    
+    /**
+      * @type {boolean} If the Promise has been fulfilled/rejected.
+      */
+    def settled: Boolean = js.native
+  }
+  
   object RenderingIntentFlag {
     
     @JSImport("pdfjs-dist/types/src/shared/util", "RenderingIntentFlag.ANNOTATIONS_DISABLE")
@@ -1063,49 +1048,10 @@ object typesSrcSharedUtilMod {
     @JSImport("pdfjs-dist/types/src/shared/util", "RenderingIntentFlag.PRINT_2")
     @js.native
     val PRINT_2: Double = js.native
-  }
-  
-  object StreamType {
     
-    @JSImport("pdfjs-dist/types/src/shared/util", "StreamType.A85")
+    @JSImport("pdfjs-dist/types/src/shared/util", "RenderingIntentFlag.SAVE")
     @js.native
-    val A85: String = js.native
-    
-    @JSImport("pdfjs-dist/types/src/shared/util", "StreamType.AHX")
-    @js.native
-    val AHX: String = js.native
-    
-    @JSImport("pdfjs-dist/types/src/shared/util", "StreamType.CCF")
-    @js.native
-    val CCF: String = js.native
-    
-    @JSImport("pdfjs-dist/types/src/shared/util", "StreamType.DCT")
-    @js.native
-    val DCT: String = js.native
-    
-    @JSImport("pdfjs-dist/types/src/shared/util", "StreamType.FLATE")
-    @js.native
-    val FLATE: String = js.native
-    
-    @JSImport("pdfjs-dist/types/src/shared/util", "StreamType.JBIG")
-    @js.native
-    val JBIG: String = js.native
-    
-    @JSImport("pdfjs-dist/types/src/shared/util", "StreamType.JPX")
-    @js.native
-    val JPX: String = js.native
-    
-    @JSImport("pdfjs-dist/types/src/shared/util", "StreamType.LZW")
-    @js.native
-    val LZW: String = js.native
-    
-    @JSImport("pdfjs-dist/types/src/shared/util", "StreamType.RLX")
-    @js.native
-    val RLX: String = js.native
-    
-    @JSImport("pdfjs-dist/types/src/shared/util", "StreamType.UNKNOWN_1")
-    @js.native
-    val UNKNOWN_1: String = js.native
+    val SAVE: Double = js.native
   }
   
   object TextRenderingMode {
@@ -1149,89 +1095,6 @@ object typesSrcSharedUtilMod {
     @JSImport("pdfjs-dist/types/src/shared/util", "TextRenderingMode.STROKE_ADD_TO_PATH")
     @js.native
     val STROKE_ADD_TO_PATH: Double = js.native
-  }
-  
-  object UNSUPPORTED_FEATURES {
-    
-    @JSImport("pdfjs-dist/types/src/shared/util", "UNSUPPORTED_FEATURES.errorColorSpace")
-    @js.native
-    val errorColorSpace: String = js.native
-    
-    @JSImport("pdfjs-dist/types/src/shared/util", "UNSUPPORTED_FEATURES.errorContentSubStream")
-    @js.native
-    val errorContentSubStream: String = js.native
-    
-    @JSImport("pdfjs-dist/types/src/shared/util", "UNSUPPORTED_FEATURES.errorExtGState")
-    @js.native
-    val errorExtGState: String = js.native
-    
-    @JSImport("pdfjs-dist/types/src/shared/util", "UNSUPPORTED_FEATURES.errorFontBuildPath")
-    @js.native
-    val errorFontBuildPath: String = js.native
-    
-    @JSImport("pdfjs-dist/types/src/shared/util", "UNSUPPORTED_FEATURES.errorFontGetPath")
-    @js.native
-    val errorFontGetPath: String = js.native
-    
-    @JSImport("pdfjs-dist/types/src/shared/util", "UNSUPPORTED_FEATURES.errorFontLoadNative")
-    @js.native
-    val errorFontLoadNative: String = js.native
-    
-    @JSImport("pdfjs-dist/types/src/shared/util", "UNSUPPORTED_FEATURES.errorFontLoadType3")
-    @js.native
-    val errorFontLoadType3: String = js.native
-    
-    @JSImport("pdfjs-dist/types/src/shared/util", "UNSUPPORTED_FEATURES.errorFontMissing")
-    @js.native
-    val errorFontMissing: String = js.native
-    
-    @JSImport("pdfjs-dist/types/src/shared/util", "UNSUPPORTED_FEATURES.errorFontState")
-    @js.native
-    val errorFontState: String = js.native
-    
-    @JSImport("pdfjs-dist/types/src/shared/util", "UNSUPPORTED_FEATURES.errorFontToUnicode")
-    @js.native
-    val errorFontToUnicode: String = js.native
-    
-    @JSImport("pdfjs-dist/types/src/shared/util", "UNSUPPORTED_FEATURES.errorFontTranslate")
-    @js.native
-    val errorFontTranslate: String = js.native
-    
-    @JSImport("pdfjs-dist/types/src/shared/util", "UNSUPPORTED_FEATURES.errorMarkedContent")
-    @js.native
-    val errorMarkedContent: String = js.native
-    
-    @JSImport("pdfjs-dist/types/src/shared/util", "UNSUPPORTED_FEATURES.errorOperatorList")
-    @js.native
-    val errorOperatorList: String = js.native
-    
-    @JSImport("pdfjs-dist/types/src/shared/util", "UNSUPPORTED_FEATURES.errorTilingPattern")
-    @js.native
-    val errorTilingPattern: String = js.native
-    
-    @JSImport("pdfjs-dist/types/src/shared/util", "UNSUPPORTED_FEATURES.errorXObject")
-    @js.native
-    val errorXObject: String = js.native
-    
-    @JSImport("pdfjs-dist/types/src/shared/util", "UNSUPPORTED_FEATURES.forms")
-    @js.native
-    val forms: String = js.native
-    
-    @JSImport("pdfjs-dist/types/src/shared/util", "UNSUPPORTED_FEATURES.javaScript")
-    @js.native
-    val javaScript: String = js.native
-    
-    @JSImport("pdfjs-dist/types/src/shared/util", "UNSUPPORTED_FEATURES.shadingPattern")
-    @js.native
-    val shadingPattern: String = js.native
-    
-    @JSImport("pdfjs-dist/types/src/shared/util", "UNSUPPORTED_FEATURES.signatures")
-    @js.native
-    val signatures: String = js.native
-    
-    @JSImport("pdfjs-dist/types/src/shared/util", "UNSUPPORTED_FEATURES.smask")
-    @js.native
-    val smask: String = js.native
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
@@ -1304,17 +1167,9 @@ object typesSrcSharedUtilMod {
     val WARNINGS: Double = js.native
   }
   
-  inline def arrayByteLength(arr: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayByteLength")(arr.asInstanceOf[js.Any]).asInstanceOf[Double]
-  inline def arrayByteLength(arr: js.Array[Any]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayByteLength")(arr.asInstanceOf[js.Any]).asInstanceOf[Double]
-  inline def arrayByteLength(arr: js.typedarray.Uint8Array): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayByteLength")(arr.asInstanceOf[js.Any]).asInstanceOf[Double]
-  
-  inline def arraysToBytes(arr: js.Array[js.Array[Any] | js.typedarray.Uint8Array | String]): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("arraysToBytes")(arr.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
-  
   inline def assert(cond: Any, msg: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assert")(cond.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def bytesToString(bytes: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bytesToString")(bytes.asInstanceOf[js.Any]).asInstanceOf[String]
-  
-  inline def createPromiseCapability(): PromiseCapability = ^.asInstanceOf[js.Dynamic].applyDynamic("createPromiseCapability")().asInstanceOf[PromiseCapability]
   
   inline def createValidAbsoluteUrl(url: String): URL | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("createValidAbsoluteUrl")(url.asInstanceOf[js.Any]).asInstanceOf[URL | Null]
   inline def createValidAbsoluteUrl(url: String, baseUrl: String): URL | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("createValidAbsoluteUrl")(url.asInstanceOf[js.Any], baseUrl.asInstanceOf[js.Any])).asInstanceOf[URL | Null]
@@ -1329,8 +1184,6 @@ object typesSrcSharedUtilMod {
   inline def createValidAbsoluteUrl(url: URL, baseUrl: URL): URL | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("createValidAbsoluteUrl")(url.asInstanceOf[js.Any], baseUrl.asInstanceOf[js.Any])).asInstanceOf[URL | Null]
   inline def createValidAbsoluteUrl(url: URL, baseUrl: URL, options: js.Object): URL | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("createValidAbsoluteUrl")(url.asInstanceOf[js.Any], baseUrl.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[URL | Null]
   
-  inline def escapeString(str: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeString")(str.asInstanceOf[js.Any]).asInstanceOf[Any]
-  
   inline def getModificationDate(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getModificationDate")().asInstanceOf[String]
   inline def getModificationDate(date: js.Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getModificationDate")(date.asInstanceOf[js.Any]).asInstanceOf[String]
   
@@ -1342,7 +1195,7 @@ object typesSrcSharedUtilMod {
   
   inline def isArrayEqual(arr1: Any, arr2: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isArrayEqual")(arr1.asInstanceOf[js.Any], arr2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def isAscii(str: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAscii")(str.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def normalizeUnicode(str: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeUnicode")(str.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   inline def objectFromMap(map: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("objectFromMap")(map.asInstanceOf[js.Any]).asInstanceOf[Any]
   
@@ -1351,14 +1204,13 @@ object typesSrcSharedUtilMod {
   inline def setVerbosityLevel(level: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setVerbosityLevel")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def shadow(obj: Any, prop: Any, value: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("shadow")(obj.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def shadow(obj: Any, prop: Any, value: Any, nonSerializable: Boolean): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("shadow")(obj.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any], nonSerializable.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def string32(value: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("string32")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def stringToBytes(str: Any): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("stringToBytes")(str.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
   
   inline def stringToPDFString(str: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringToPDFString")(str.asInstanceOf[js.Any]).asInstanceOf[String]
-  
-  inline def stringToUTF16BEString(str: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringToUTF16BEString")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def stringToUTF8String(str: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringToUTF8String")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
@@ -1367,46 +1219,4 @@ object typesSrcSharedUtilMod {
   inline def utf8StringToString(str: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("utf8StringToString")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def warn(msg: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warn")(msg.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  
-  trait PromiseCapability extends StObject {
-    
-    /**
-      * - A Promise object.
-      */
-    var promise: js.Promise[Any]
-    
-    /**
-      * - Rejects the Promise.
-      */
-    var reject: js.Function
-    
-    /**
-      * - Fulfills the Promise.
-      */
-    var resolve: js.Function
-    
-    /**
-      * - If the Promise has been fulfilled/rejected.
-      */
-    var settled: Boolean
-  }
-  object PromiseCapability {
-    
-    inline def apply(promise: js.Promise[Any], reject: js.Function, resolve: js.Function, settled: Boolean): PromiseCapability = {
-      val __obj = js.Dynamic.literal(promise = promise.asInstanceOf[js.Any], reject = reject.asInstanceOf[js.Any], resolve = resolve.asInstanceOf[js.Any], settled = settled.asInstanceOf[js.Any])
-      __obj.asInstanceOf[PromiseCapability]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: PromiseCapability] (val x: Self) extends AnyVal {
-      
-      inline def setPromise(value: js.Promise[Any]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
-      
-      inline def setReject(value: js.Function): Self = StObject.set(x, "reject", value.asInstanceOf[js.Any])
-      
-      inline def setResolve(value: js.Function): Self = StObject.set(x, "resolve", value.asInstanceOf[js.Any])
-      
-      inline def setSettled(value: Boolean): Self = StObject.set(x, "settled", value.asInstanceOf[js.Any])
-    }
-  }
 }

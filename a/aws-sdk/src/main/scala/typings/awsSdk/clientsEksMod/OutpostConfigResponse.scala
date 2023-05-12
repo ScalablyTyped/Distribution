@@ -12,6 +12,11 @@ trait OutpostConfigResponse extends StObject {
   var controlPlaneInstanceType: String
   
   /**
+    * An object representing the placement configuration for all the control plane instances of your local Amazon EKS cluster on an Amazon Web Services Outpost. For more information, see Capacity considerations in the Amazon EKS User Guide.
+    */
+  var controlPlanePlacement: js.UndefOr[ControlPlanePlacementResponse] = js.undefined
+  
+  /**
     * The ARN of the Outpost that you specified for use with your local Amazon EKS cluster on Outposts.
     */
   var outpostArns: StringList
@@ -27,6 +32,10 @@ object OutpostConfigResponse {
   implicit open class MutableBuilder[Self <: OutpostConfigResponse] (val x: Self) extends AnyVal {
     
     inline def setControlPlaneInstanceType(value: String): Self = StObject.set(x, "controlPlaneInstanceType", value.asInstanceOf[js.Any])
+    
+    inline def setControlPlanePlacement(value: ControlPlanePlacementResponse): Self = StObject.set(x, "controlPlanePlacement", value.asInstanceOf[js.Any])
+    
+    inline def setControlPlanePlacementUndefined: Self = StObject.set(x, "controlPlanePlacement", js.undefined)
     
     inline def setOutpostArns(value: StringList): Self = StObject.set(x, "outpostArns", value.asInstanceOf[js.Any])
     

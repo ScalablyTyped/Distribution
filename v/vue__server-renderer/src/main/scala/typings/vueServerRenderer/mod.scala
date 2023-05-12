@@ -83,6 +83,18 @@ object mod {
     context: SSRContext
   ): ReadableStream[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("renderToWebStream")(input.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReadableStream[Any]]
   
+  inline def renderVNode(
+    push: PushFn,
+    vnode: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VNode */ Any,
+    parentComponent: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ComponentInternalInstance */ Any
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderVNode")(push.asInstanceOf[js.Any], vnode.asInstanceOf[js.Any], parentComponent.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def renderVNode(
+    push: PushFn,
+    vnode: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VNode */ Any,
+    parentComponent: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ComponentInternalInstance */ Any,
+    slotScopeId: String
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderVNode")(push.asInstanceOf[js.Any], vnode.asInstanceOf[js.Any], parentComponent.asInstanceOf[js.Any], slotScopeId.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   inline def ssrGetDirectiveProps_false(
     instance: ComponentPublicInstance[
       js.Object, 
@@ -94,7 +106,8 @@ object mod {
       js.Object, 
       js.Object, 
       `false`, 
-      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String, js.Object], 
+      js.Object, 
       js.Object
     ],
     dir: Directive[Any, Any]
@@ -110,7 +123,8 @@ object mod {
       js.Object, 
       js.Object, 
       `false`, 
-      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String, js.Object], 
+      js.Object, 
       js.Object
     ],
     dir: Directive[Any, Any],
@@ -127,7 +141,8 @@ object mod {
       js.Object, 
       js.Object, 
       `false`, 
-      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String, js.Object], 
+      js.Object, 
       js.Object
     ],
     dir: Directive[Any, Any],
@@ -145,7 +160,8 @@ object mod {
       js.Object, 
       js.Object, 
       `false`, 
-      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String, js.Object], 
+      js.Object, 
       js.Object
     ],
     dir: Directive[Any, Any],
@@ -164,7 +180,8 @@ object mod {
       js.Object, 
       js.Object, 
       `false`, 
-      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String, js.Object], 
+      js.Object, 
       js.Object
     ],
     dir: Directive[Any, Any],
@@ -183,7 +200,8 @@ object mod {
       js.Object, 
       js.Object, 
       `false`, 
-      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String, js.Object], 
+      js.Object, 
       js.Object
     ],
     dir: Directive[Any, Any],
@@ -201,7 +219,8 @@ object mod {
       js.Object, 
       js.Object, 
       `false`, 
-      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String, js.Object], 
+      js.Object, 
       js.Object
     ],
     dir: Directive[Any, Any],
@@ -220,7 +239,8 @@ object mod {
       js.Object, 
       js.Object, 
       `false`, 
-      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String, js.Object], 
+      js.Object, 
       js.Object
     ],
     dir: Directive[Any, Any],

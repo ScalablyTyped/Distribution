@@ -82,6 +82,11 @@ trait UpdateServiceRequest extends StObject {
   var service: String
   
   /**
+    * The configuration for this service to discover and connect to services, and be discovered by, and connected from, other services within a namespace. Tasks that run in a namespace can use short names to connect to services in the namespace. Tasks can connect to services across all of the clusters in the namespace. Tasks connect through a managed proxy container that collects logs and metrics for increased visibility. Only the tasks that Amazon ECS services create are supported with Service Connect. For more information, see Service Connect in the Amazon Elastic Container Service Developer Guide.
+    */
+  var serviceConnectConfiguration: js.UndefOr[ServiceConnectConfiguration] = js.undefined
+  
+  /**
     * The details for the service discovery registries to assign to this service. For more information, see Service Discovery. When you add, update, or remove the service registries configuration, Amazon ECS starts new tasks with the updated service registries configuration, and then stops the old tasks when the new tasks are running. You can remove existing serviceRegistries by passing an empty list.
     */
   var serviceRegistries: js.UndefOr[ServiceRegistries] = js.undefined
@@ -166,6 +171,10 @@ object UpdateServiceRequest {
     inline def setPropagateTagsUndefined: Self = StObject.set(x, "propagateTags", js.undefined)
     
     inline def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
+    
+    inline def setServiceConnectConfiguration(value: ServiceConnectConfiguration): Self = StObject.set(x, "serviceConnectConfiguration", value.asInstanceOf[js.Any])
+    
+    inline def setServiceConnectConfigurationUndefined: Self = StObject.set(x, "serviceConnectConfiguration", js.undefined)
     
     inline def setServiceRegistries(value: ServiceRegistries): Self = StObject.set(x, "serviceRegistries", value.asInstanceOf[js.Any])
     

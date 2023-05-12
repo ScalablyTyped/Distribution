@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-youtube
 
-Typings are for version 10.0.0
+Typings are for version 10.1.0
 
 ## Library description:
 React.js powered YouTube player component

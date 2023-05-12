@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "styleq"
-version := "0.1.2-202892"
+version := "0.1.3-f33791"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

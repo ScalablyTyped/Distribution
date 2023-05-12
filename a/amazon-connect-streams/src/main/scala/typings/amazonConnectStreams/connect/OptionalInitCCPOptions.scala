@@ -6,6 +6,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait OptionalInitCCPOptions extends StObject {
   
+  /** A timeout in ms that indicates how long streams will wait for the iframed CCP to respond to its SYNCHRONIZE event emissions. These happen continuously from the first time initCCP is called. They should only appear when there is a problem that requires a refresh or a re-login */
+  val ccpAckTimeout: js.UndefOr[Double] = js.undefined
+  
+  /** A timeout in ms that indicates how long streams will wait for the initial ACKNOWLEDGE event from the shared worker while the CCP is still standing itself up. */
+  val ccpLoadTimeout: js.UndefOr[Double] = js.undefined
+  
+  /** A timeout in ms that indicates how long streams will wait to send a new SYNCHRONIZE event to the iframed CCP. These happens continuously from the first time initCCP is called. */
+  val ccpSynTimeout: js.UndefOr[Double] = js.undefined
+  
   /** Allows you to specify ringtone settings for Chat. */
   val chat: js.UndefOr[ChatOptions] = js.undefined
   
@@ -53,6 +62,18 @@ object OptionalInitCCPOptions {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: OptionalInitCCPOptions] (val x: Self) extends AnyVal {
+    
+    inline def setCcpAckTimeout(value: Double): Self = StObject.set(x, "ccpAckTimeout", value.asInstanceOf[js.Any])
+    
+    inline def setCcpAckTimeoutUndefined: Self = StObject.set(x, "ccpAckTimeout", js.undefined)
+    
+    inline def setCcpLoadTimeout(value: Double): Self = StObject.set(x, "ccpLoadTimeout", value.asInstanceOf[js.Any])
+    
+    inline def setCcpLoadTimeoutUndefined: Self = StObject.set(x, "ccpLoadTimeout", js.undefined)
+    
+    inline def setCcpSynTimeout(value: Double): Self = StObject.set(x, "ccpSynTimeout", value.asInstanceOf[js.Any])
+    
+    inline def setCcpSynTimeoutUndefined: Self = StObject.set(x, "ccpSynTimeout", js.undefined)
     
     inline def setChat(value: ChatOptions): Self = StObject.set(x, "chat", value.asInstanceOf[js.Any])
     

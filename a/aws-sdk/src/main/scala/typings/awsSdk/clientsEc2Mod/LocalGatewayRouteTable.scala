@@ -41,6 +41,9 @@ trait LocalGatewayRouteTable extends StObject {
     */
   var State: js.UndefOr[String] = js.undefined
   
+  /**
+    * Information about the state change.
+    */
   var StateReason: js.UndefOr[typings.awsSdk.clientsEc2Mod.StateReason] = js.undefined
   
   /**

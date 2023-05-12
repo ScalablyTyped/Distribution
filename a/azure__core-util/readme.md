@@ -1,7 +1,7 @@
 
 # Scala.js typings for azure__core-util
 
-Typings are for version 1.1.0
+Typings are for version 1.3.2
 
 
 

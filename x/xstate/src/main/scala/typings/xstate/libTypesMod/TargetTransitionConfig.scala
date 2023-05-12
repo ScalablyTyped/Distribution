@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TargetTransitionConfig[TContext, TEvent /* <: EventObject */]
   extends StObject
-     with TransitionConfig[TContext, TEvent] {
+     with TransitionConfig[TContext, TEvent, TEvent] {
   
   @JSName("target")
   var target_TargetTransitionConfig: TransitionTarget[TContext, TEvent]

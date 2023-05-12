@@ -1,69 +1,59 @@
 package typings.svelteLeafletjs.mod
 
-import typings.svelteLeafletjs.svelteLeafletjsStrings.onadd
-import typings.svelteLeafletjs.svelteLeafletjsStrings.onautopanstart
-import typings.svelteLeafletjs.svelteLeafletjsStrings.onbaselayerchange
-import typings.svelteLeafletjs.svelteLeafletjsStrings.onblur
-import typings.svelteLeafletjs.svelteLeafletjsStrings.onclick
-import typings.svelteLeafletjs.svelteLeafletjsStrings.oncontextmenu
-import typings.svelteLeafletjs.svelteLeafletjsStrings.ondblclick
-import typings.svelteLeafletjs.svelteLeafletjsStrings.ondrag
-import typings.svelteLeafletjs.svelteLeafletjsStrings.ondragend
-import typings.svelteLeafletjs.svelteLeafletjsStrings.ondragstart
-import typings.svelteLeafletjs.svelteLeafletjsStrings.onfocus
-import typings.svelteLeafletjs.svelteLeafletjsStrings.onlayeradd
-import typings.svelteLeafletjs.svelteLeafletjsStrings.onlayerremove
-import typings.svelteLeafletjs.svelteLeafletjsStrings.onload
-import typings.svelteLeafletjs.svelteLeafletjsStrings.onloading
-import typings.svelteLeafletjs.svelteLeafletjsStrings.onlocationerror
-import typings.svelteLeafletjs.svelteLeafletjsStrings.onlocationfound
-import typings.svelteLeafletjs.svelteLeafletjsStrings.onmousedown
-import typings.svelteLeafletjs.svelteLeafletjsStrings.onmousemove
-import typings.svelteLeafletjs.svelteLeafletjsStrings.onmouseout
-import typings.svelteLeafletjs.svelteLeafletjsStrings.onmouseover
-import typings.svelteLeafletjs.svelteLeafletjsStrings.onmouseup
-import typings.svelteLeafletjs.svelteLeafletjsStrings.onmove
-import typings.svelteLeafletjs.svelteLeafletjsStrings.onmoveend
-import typings.svelteLeafletjs.svelteLeafletjsStrings.onmovestart
-import typings.svelteLeafletjs.svelteLeafletjsStrings.onoverlayadd
-import typings.svelteLeafletjs.svelteLeafletjsStrings.onoverlayremove
-import typings.svelteLeafletjs.svelteLeafletjsStrings.onpopupclose
-import typings.svelteLeafletjs.svelteLeafletjsStrings.onpopupopen
-import typings.svelteLeafletjs.svelteLeafletjsStrings.onpreclick
-import typings.svelteLeafletjs.svelteLeafletjsStrings.onremove
-import typings.svelteLeafletjs.svelteLeafletjsStrings.onresize
-import typings.svelteLeafletjs.svelteLeafletjsStrings.ontileerror
-import typings.svelteLeafletjs.svelteLeafletjsStrings.ontileload
-import typings.svelteLeafletjs.svelteLeafletjsStrings.ontileloadstart
-import typings.svelteLeafletjs.svelteLeafletjsStrings.ontileunload
-import typings.svelteLeafletjs.svelteLeafletjsStrings.onunload
-import typings.svelteLeafletjs.svelteLeafletjsStrings.onviewreset
-import typings.svelteLeafletjs.svelteLeafletjsStrings.onzoom
-import typings.svelteLeafletjs.svelteLeafletjsStrings.onzoomend
-import typings.svelteLeafletjs.svelteLeafletjsStrings.onzoomlevelschange
-import typings.svelteLeafletjs.svelteLeafletjsStrings.onzoomstart
+import typings.svelteLeafletjs.svelteLeafletjsStrings.add
+import typings.svelteLeafletjs.svelteLeafletjsStrings.autopanstart
+import typings.svelteLeafletjs.svelteLeafletjsStrings.baselayerchange
+import typings.svelteLeafletjs.svelteLeafletjsStrings.blur
+import typings.svelteLeafletjs.svelteLeafletjsStrings.click
+import typings.svelteLeafletjs.svelteLeafletjsStrings.contextmenu
+import typings.svelteLeafletjs.svelteLeafletjsStrings.dblclick
+import typings.svelteLeafletjs.svelteLeafletjsStrings.drag
+import typings.svelteLeafletjs.svelteLeafletjsStrings.dragend
+import typings.svelteLeafletjs.svelteLeafletjsStrings.dragstart
+import typings.svelteLeafletjs.svelteLeafletjsStrings.focus
+import typings.svelteLeafletjs.svelteLeafletjsStrings.layeradd
+import typings.svelteLeafletjs.svelteLeafletjsStrings.layerremove
+import typings.svelteLeafletjs.svelteLeafletjsStrings.load
+import typings.svelteLeafletjs.svelteLeafletjsStrings.loading
+import typings.svelteLeafletjs.svelteLeafletjsStrings.locationerror
+import typings.svelteLeafletjs.svelteLeafletjsStrings.locationfound
+import typings.svelteLeafletjs.svelteLeafletjsStrings.mousedown
+import typings.svelteLeafletjs.svelteLeafletjsStrings.mousemove
+import typings.svelteLeafletjs.svelteLeafletjsStrings.mouseout
+import typings.svelteLeafletjs.svelteLeafletjsStrings.mouseover
+import typings.svelteLeafletjs.svelteLeafletjsStrings.mouseup
+import typings.svelteLeafletjs.svelteLeafletjsStrings.move
+import typings.svelteLeafletjs.svelteLeafletjsStrings.moveend
+import typings.svelteLeafletjs.svelteLeafletjsStrings.movestart
+import typings.svelteLeafletjs.svelteLeafletjsStrings.overlayadd
+import typings.svelteLeafletjs.svelteLeafletjsStrings.overlayremove
+import typings.svelteLeafletjs.svelteLeafletjsStrings.popupclose
+import typings.svelteLeafletjs.svelteLeafletjsStrings.popupopen
+import typings.svelteLeafletjs.svelteLeafletjsStrings.preclick
+import typings.svelteLeafletjs.svelteLeafletjsStrings.remove
+import typings.svelteLeafletjs.svelteLeafletjsStrings.resize
+import typings.svelteLeafletjs.svelteLeafletjsStrings.tileerror
+import typings.svelteLeafletjs.svelteLeafletjsStrings.tileload
+import typings.svelteLeafletjs.svelteLeafletjsStrings.tileloadstart
+import typings.svelteLeafletjs.svelteLeafletjsStrings.tileunload
+import typings.svelteLeafletjs.svelteLeafletjsStrings.unload
+import typings.svelteLeafletjs.svelteLeafletjsStrings.viewreset
+import typings.svelteLeafletjs.svelteLeafletjsStrings.zoom
+import typings.svelteLeafletjs.svelteLeafletjsStrings.zoomend
+import typings.svelteLeafletjs.svelteLeafletjsStrings.zoomlevelschange
+import typings.svelteLeafletjs.svelteLeafletjsStrings.zoomstart
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-/** This is technically not required since we know every property is a function, but TS doesn't know that */
-/** NOTE: Conditional type definitions are impossible to translate to Scala.
-  * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
-  * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
-  * TS definition: {{{
-  T extends (args : any): any ? T : never
-  }}}
-  */
-type AssertIsFunction[T] = T
-
 type MapEventKeys = js.Array[
-onlocationfound | ondragstart | onzoomlevelschange | onzoom | ondrag | ondblclick | onbaselayerchange | oncontextmenu | onoverlayadd | onmouseout | onviewreset | onoverlayremove | onzoomstart | onlayerremove | onclick | onresize | onmovestart | onfocus | onmouseup | onmoveend | onmove | onmouseover | onpreclick | onzoomend | onautopanstart | onblur | onload | ondragend | onlocationerror | onpopupopen | onmousemove | onpopupclose | onunload | onlayeradd | onmousedown]
+click | dblclick | mousedown | mouseup | mouseover | mouseout | mousemove | contextmenu | focus | blur | preclick | load | unload | viewreset | move | movestart | moveend | dragstart | drag | dragend | zoomstart | zoom | zoomend | zoomlevelschange | resize | autopanstart | layeradd | layerremove | baselayerchange | overlayadd | overlayremove | locationfound | locationerror | popupopen | popupclose]
 
 type MarkerEventKeys = js.Array[
-ondragstart | ondrag | ondblclick | oncontextmenu | onremove | onmouseout | onadd | onclick | onmove | onmouseover | ondragend | onpopupopen | onpopupclose | onmousedown]
+click | dblclick | mousedown | mouseover | mouseout | contextmenu | dragstart | drag | dragend | move | add | remove | popupopen | popupclose]
 
 type PathEventKeys = js.Array[
-ondblclick | oncontextmenu | onremove | onmouseout | onadd | onclick | onmouseover | onpopupopen | onpopupclose | onmousedown]
+click | dblclick | mousedown | mouseover | mouseout | contextmenu | add | remove | popupopen | popupclose]
 
-type TileLayerEventKeys = js.Array[ontileloadstart | ontileerror | ontileload | onloading | onload | ontileunload]
+type TileLayerEventKeys = js.Array[loading | load | tileloadstart | tileload | tileunload | tileerror]

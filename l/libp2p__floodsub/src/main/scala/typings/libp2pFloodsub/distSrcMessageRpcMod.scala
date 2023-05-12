@@ -1,5 +1,14 @@
 package typings.libp2pFloodsub
 
+import typings.libp2pFloodsub.anon.PartialControlGraft
+import typings.libp2pFloodsub.anon.PartialControlIHave
+import typings.libp2pFloodsub.anon.PartialControlIWant
+import typings.libp2pFloodsub.anon.PartialControlMessage
+import typings.libp2pFloodsub.anon.PartialControlPrune
+import typings.libp2pFloodsub.anon.PartialMessage
+import typings.libp2pFloodsub.anon.PartialPeerInfo
+import typings.libp2pFloodsub.anon.PartialRPC
+import typings.libp2pFloodsub.anon.PartialSubOpts
 import typings.libp2pFloodsub.distSrcMessageRpcMod.RPC.Message
 import typings.libp2pFloodsub.distSrcMessageRpcMod.RPC.SubOpts
 import typings.protonsRuntime.distSrcCodecMod.Codec
@@ -30,7 +39,7 @@ object distSrcMessageRpcMod {
     inline def decode(buf: js.typedarray.Uint8Array): ControlGraft = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(buf.asInstanceOf[js.Any]).asInstanceOf[ControlGraft]
     inline def decode(buf: Uint8ArrayList): ControlGraft = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(buf.asInstanceOf[js.Any]).asInstanceOf[ControlGraft]
     
-    inline def encode(obj: ControlGraft): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+    inline def encode(obj: PartialControlGraft): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
     
     @scala.inline
     implicit open class MutableBuilder[Self <: ControlGraft] (val x: Self) extends AnyVal {
@@ -63,7 +72,7 @@ object distSrcMessageRpcMod {
     inline def decode(buf: js.typedarray.Uint8Array): ControlIHave = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(buf.asInstanceOf[js.Any]).asInstanceOf[ControlIHave]
     inline def decode(buf: Uint8ArrayList): ControlIHave = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(buf.asInstanceOf[js.Any]).asInstanceOf[ControlIHave]
     
-    inline def encode(obj: ControlIHave): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+    inline def encode(obj: PartialControlIHave): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
     
     @scala.inline
     implicit open class MutableBuilder[Self <: ControlIHave] (val x: Self) extends AnyVal {
@@ -98,7 +107,7 @@ object distSrcMessageRpcMod {
     inline def decode(buf: js.typedarray.Uint8Array): ControlIWant = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(buf.asInstanceOf[js.Any]).asInstanceOf[ControlIWant]
     inline def decode(buf: Uint8ArrayList): ControlIWant = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(buf.asInstanceOf[js.Any]).asInstanceOf[ControlIWant]
     
-    inline def encode(obj: ControlIWant): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+    inline def encode(obj: PartialControlIWant): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
     
     @scala.inline
     implicit open class MutableBuilder[Self <: ControlIWant] (val x: Self) extends AnyVal {
@@ -140,7 +149,7 @@ object distSrcMessageRpcMod {
     inline def decode(buf: js.typedarray.Uint8Array): ControlMessage = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(buf.asInstanceOf[js.Any]).asInstanceOf[ControlMessage]
     inline def decode(buf: Uint8ArrayList): ControlMessage = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(buf.asInstanceOf[js.Any]).asInstanceOf[ControlMessage]
     
-    inline def encode(obj: ControlMessage): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+    inline def encode(obj: PartialControlMessage): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
     
     @scala.inline
     implicit open class MutableBuilder[Self <: ControlMessage] (val x: Self) extends AnyVal {
@@ -187,7 +196,7 @@ object distSrcMessageRpcMod {
     inline def decode(buf: js.typedarray.Uint8Array): ControlPrune = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(buf.asInstanceOf[js.Any]).asInstanceOf[ControlPrune]
     inline def decode(buf: Uint8ArrayList): ControlPrune = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(buf.asInstanceOf[js.Any]).asInstanceOf[ControlPrune]
     
-    inline def encode(obj: ControlPrune): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+    inline def encode(obj: PartialControlPrune): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
     
     @scala.inline
     implicit open class MutableBuilder[Self <: ControlPrune] (val x: Self) extends AnyVal {
@@ -228,7 +237,7 @@ object distSrcMessageRpcMod {
     inline def decode(buf: js.typedarray.Uint8Array): PeerInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(buf.asInstanceOf[js.Any]).asInstanceOf[PeerInfo]
     inline def decode(buf: Uint8ArrayList): PeerInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(buf.asInstanceOf[js.Any]).asInstanceOf[PeerInfo]
     
-    inline def encode(obj: PeerInfo): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+    inline def encode(obj: PartialPeerInfo): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
     
     @scala.inline
     implicit open class MutableBuilder[Self <: PeerInfo] (val x: Self) extends AnyVal {
@@ -292,7 +301,7 @@ object distSrcMessageRpcMod {
       inline def decode(buf: js.typedarray.Uint8Array): Message = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(buf.asInstanceOf[js.Any]).asInstanceOf[Message]
       inline def decode(buf: Uint8ArrayList): Message = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(buf.asInstanceOf[js.Any]).asInstanceOf[Message]
       
-      inline def encode(obj: Message): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+      inline def encode(obj: PartialMessage): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
       
       @scala.inline
       implicit open class MutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
@@ -345,7 +354,7 @@ object distSrcMessageRpcMod {
       inline def decode(buf: js.typedarray.Uint8Array): SubOpts = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(buf.asInstanceOf[js.Any]).asInstanceOf[SubOpts]
       inline def decode(buf: Uint8ArrayList): SubOpts = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(buf.asInstanceOf[js.Any]).asInstanceOf[SubOpts]
       
-      inline def encode(obj: SubOpts): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+      inline def encode(obj: PartialSubOpts): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
       
       @scala.inline
       implicit open class MutableBuilder[Self <: SubOpts] (val x: Self) extends AnyVal {
@@ -365,7 +374,7 @@ object distSrcMessageRpcMod {
     inline def decode(buf: js.typedarray.Uint8Array): RPC = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(buf.asInstanceOf[js.Any]).asInstanceOf[RPC]
     inline def decode(buf: Uint8ArrayList): RPC = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(buf.asInstanceOf[js.Any]).asInstanceOf[RPC]
     
-    inline def encode(obj: RPC): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+    inline def encode(obj: PartialRPC): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
     
     @scala.inline
     implicit open class MutableBuilder[Self <: RPC] (val x: Self) extends AnyVal {

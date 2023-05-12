@@ -1,7 +1,8 @@
 package typings.three
 
-import typings.three.anon.BevelEnabled
+import typings.three.anon.Options
 import typings.three.examplesJsmLoadersFontLoaderMod.Font
+import typings.three.srcGeometriesExtrudeGeometryMod.ExtrudeGeometryOptions
 import typings.three.srcThreeMod.ExtrudeGeometry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,35 +13,60 @@ object examplesJsmGeometriesTextGeometryMod {
   @JSImport("three/examples/jsm/geometries/TextGeometry", "TextBufferGeometry")
   @js.native
   open class TextBufferGeometry protected () extends TextGeometry {
+    /**
+      * Create a new instance of {@link TextGeometry}
+      * @param text The text that needs to be shown.
+      * @param parameters Object that can contain the following parameters. @see {@link TextGeometryParameters} for defaults.
+      */
+    def this(text: String) = this()
     def this(text: String, parameters: TextGeometryParameters) = this()
   }
   
   @JSImport("three/examples/jsm/geometries/TextGeometry", "TextGeometry")
   @js.native
   open class TextGeometry protected () extends ExtrudeGeometry {
+    /**
+      * Create a new instance of {@link TextGeometry}
+      * @param text The text that needs to be shown.
+      * @param parameters Object that can contain the following parameters. @see {@link TextGeometryParameters} for defaults.
+      */
+    def this(text: String) = this()
     def this(text: String, parameters: TextGeometryParameters) = this()
     
-    var parameters: BevelEnabled = js.native
+    /**
+      * An object with a property for each of the constructor parameters.
+      * @remarks Any modification after instantiation does not change the geometry.
+      */
+    @JSName("parameters")
+    val parameters_TextGeometry: Options = js.native
+    
+    /**
+      * A Read-only _string_ to check if `this` object type.
+      * @remarks Sub-classes will update this value.
+      * @defaultValue `TextGeometry`
+      */
+    @JSName("type")
+    val type_TextGeometry: String | typings.three.threeStrings.TextGeometry = js.native
   }
   
-  trait TextGeometryParameters extends StObject {
-    
-    var bevelEnabled: js.UndefOr[Boolean] = js.undefined
-    
-    var bevelOffset: js.UndefOr[Double] = js.undefined
-    
-    var bevelSegments: js.UndefOr[Double] = js.undefined
-    
-    var bevelSize: js.UndefOr[Double] = js.undefined
-    
-    var bevelThickness: js.UndefOr[Double] = js.undefined
-    
-    var curveSegments: js.UndefOr[Double] = js.undefined
+  trait TextGeometryParameters
+    extends StObject
+       with ExtrudeGeometryOptions {
     
     var font: Font
     
+    /**
+      * Thickness to extrude text.
+      * Expects a `Float`.
+      * @defaultValue `50`
+      */
     var height: js.UndefOr[Double] = js.undefined
     
+    /**
+      * Size of the text
+      * Expects a `Float`.
+      * @defaultValue `100`
+      */
     var size: js.UndefOr[Double] = js.undefined
   }
   object TextGeometryParameters {
@@ -52,30 +78,6 @@ object examplesJsmGeometriesTextGeometryMod {
     
     @scala.inline
     implicit open class MutableBuilder[Self <: TextGeometryParameters] (val x: Self) extends AnyVal {
-      
-      inline def setBevelEnabled(value: Boolean): Self = StObject.set(x, "bevelEnabled", value.asInstanceOf[js.Any])
-      
-      inline def setBevelEnabledUndefined: Self = StObject.set(x, "bevelEnabled", js.undefined)
-      
-      inline def setBevelOffset(value: Double): Self = StObject.set(x, "bevelOffset", value.asInstanceOf[js.Any])
-      
-      inline def setBevelOffsetUndefined: Self = StObject.set(x, "bevelOffset", js.undefined)
-      
-      inline def setBevelSegments(value: Double): Self = StObject.set(x, "bevelSegments", value.asInstanceOf[js.Any])
-      
-      inline def setBevelSegmentsUndefined: Self = StObject.set(x, "bevelSegments", js.undefined)
-      
-      inline def setBevelSize(value: Double): Self = StObject.set(x, "bevelSize", value.asInstanceOf[js.Any])
-      
-      inline def setBevelSizeUndefined: Self = StObject.set(x, "bevelSize", js.undefined)
-      
-      inline def setBevelThickness(value: Double): Self = StObject.set(x, "bevelThickness", value.asInstanceOf[js.Any])
-      
-      inline def setBevelThicknessUndefined: Self = StObject.set(x, "bevelThickness", js.undefined)
-      
-      inline def setCurveSegments(value: Double): Self = StObject.set(x, "curveSegments", value.asInstanceOf[js.Any])
-      
-      inline def setCurveSegmentsUndefined: Self = StObject.set(x, "curveSegments", js.undefined)
       
       inline def setFont(value: Font): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
       

@@ -14,6 +14,8 @@ trait ResolvedId
   var external: Boolean | absolute
   
   var id: String
+  
+  var resolvedBy: String
 }
 object ResolvedId {
   
@@ -23,9 +25,10 @@ object ResolvedId {
     id: String,
     meta: CustomPluginOptions,
     moduleSideEffects: Boolean | `no-treeshake`,
+    resolvedBy: String,
     syntheticNamedExports: Boolean | String
   ): ResolvedId = {
-    val __obj = js.Dynamic.literal(assertions = assertions.asInstanceOf[js.Any], external = external.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], moduleSideEffects = moduleSideEffects.asInstanceOf[js.Any], syntheticNamedExports = syntheticNamedExports.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(assertions = assertions.asInstanceOf[js.Any], external = external.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], moduleSideEffects = moduleSideEffects.asInstanceOf[js.Any], resolvedBy = resolvedBy.asInstanceOf[js.Any], syntheticNamedExports = syntheticNamedExports.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResolvedId]
   }
   
@@ -35,5 +38,7 @@ object ResolvedId {
     inline def setExternal(value: Boolean | absolute): Self = StObject.set(x, "external", value.asInstanceOf[js.Any])
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setResolvedBy(value: String): Self = StObject.set(x, "resolvedBy", value.asInstanceOf[js.Any])
   }
 }

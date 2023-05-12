@@ -1,6 +1,5 @@
 package typings.devextreme.mod.DevExpress.common.charts
 
-import typings.devextreme.mod.DevExpress.viz._VizTimeInterval
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 */
 trait TimeInterval
   extends StObject
-     with _VizTimeInterval
+     with _TimeIntervalConfig
 object TimeInterval {
   
   inline def day: typings.devextreme.devextremeStrings.day = "day".asInstanceOf[typings.devextreme.devextremeStrings.day]

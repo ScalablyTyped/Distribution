@@ -7,8 +7,13 @@ import typings.rcMotion.esInterfaceMod.MotionEvent
 import typings.rcMotion.esInterfaceMod.MotionEventHandler
 import typings.rcMotion.esInterfaceMod.MotionPrepareEventHandler
 import typings.rcMotion.esUtilDiffMod.DiffStatus
+import typings.rcMotion.rcMotionInts.`0`
+import typings.rcMotion.rcMotionInts.`1`
+import typings.rcMotion.rcMotionInts.`2`
+import typings.rcMotion.rcMotionInts.`3`
 import typings.react.mod.CSSProperties
 import typings.react.mod.ReactElement
+import typings.react.mod.ReactNode
 import typings.react.mod.Ref
 import typings.std.DOMHighResTimeStamp
 import typings.std.EventTarget
@@ -27,16 +32,16 @@ object anon {
        with MotionEvent {
     
     /* standard dom */
-    val AT_TARGET: Double = js.native
+    val AT_TARGET: `2` = js.native
     
     /* standard dom */
-    val BUBBLING_PHASE: Double = js.native
+    val BUBBLING_PHASE: `3` = js.native
     
     /* standard dom */
-    val CAPTURING_PHASE: Double = js.native
+    val CAPTURING_PHASE: `1` = js.native
     
     /* standard dom */
-    val NONE: Double = js.native
+    val NONE: `0` = js.native
     
     /* standard dom */
     val animationName: String = js.native
@@ -233,6 +238,7 @@ object anon {
     
     var onAppearEnd: js.UndefOr[MotionEndEventHandler] = js.undefined
     
+    /** Prepare phase is used for measure element info. It will always trigger even motion is off */
     var onAppearPrepare: js.UndefOr[MotionPrepareEventHandler] = js.undefined
     
     var onAppearStart: js.UndefOr[MotionEventHandler] = js.undefined
@@ -241,6 +247,7 @@ object anon {
     
     var onEnterEnd: js.UndefOr[MotionEndEventHandler] = js.undefined
     
+    /** Prepare phase is used for measure element info. It will always trigger even motion is off */
     var onEnterPrepare: js.UndefOr[MotionPrepareEventHandler] = js.undefined
     
     var onEnterStart: js.UndefOr[MotionEventHandler] = js.undefined
@@ -249,6 +256,7 @@ object anon {
     
     var onLeaveEnd: js.UndefOr[MotionEndEventHandler] = js.undefined
     
+    /** Prepare phase is used for measure element info. It will always trigger even motion is off */
     var onLeavePrepare: js.UndefOr[MotionPrepareEventHandler] = js.undefined
     
     var onLeaveStart: js.UndefOr[MotionEventHandler] = js.undefined
@@ -510,6 +518,33 @@ object anon {
     }
   }
   
+  /* Inlined rc-motion.rc-motion/es/context.MotionContextProps & {  children :react.react.ReactNode | undefined} */
+  trait MotionContextPropschildre extends StObject {
+    
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
+    var motion: js.UndefOr[Boolean] = js.undefined
+  }
+  object MotionContextPropschildre {
+    
+    inline def apply(): MotionContextPropschildre = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[MotionContextPropschildre]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MotionContextPropschildre] (val x: Self) extends AnyVal {
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
+      inline def setMotion(value: Boolean): Self = StObject.set(x, "motion", value.asInstanceOf[js.Any])
+      
+      inline def setMotionUndefined: Self = StObject.set(x, "motion", js.undefined)
+    }
+  }
+  
   trait Status extends StObject {
     
     var key: String
@@ -541,16 +576,16 @@ object anon {
        with MotionEvent {
     
     /* standard dom */
-    val AT_TARGET: Double = js.native
+    val AT_TARGET: `2` = js.native
     
     /* standard dom */
-    val BUBBLING_PHASE: Double = js.native
+    val BUBBLING_PHASE: `3` = js.native
     
     /* standard dom */
-    val CAPTURING_PHASE: Double = js.native
+    val CAPTURING_PHASE: `1` = js.native
     
     /* standard dom */
-    val NONE: Double = js.native
+    val NONE: `0` = js.native
     
     /** Returns true or false depending on how event was initialized. True if event goes through its target's ancestors in reverse tree order, and false otherwise. */
     /* standard dom */

@@ -6,19 +6,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `200ContentApplicationjsonMarketplacependingchange` extends StObject {
   
-  /** Response */
+  /** @description Response */
   var `200`: ContentApplicationjsonMarketplacependingchange
   
-  var `401`: Content48
+  var `401`: Content36
   
-  /** Not Found when the account has not purchased the listing */
+  /** @description Not Found when the account has not purchased the listing */
   var `404`: ContentApplicationjsonDocumentationurlMessage
 }
 object `200ContentApplicationjsonMarketplacependingchange` {
   
   inline def apply(
     `200`: ContentApplicationjsonMarketplacependingchange,
-    `401`: Content48,
+    `401`: Content36,
     `404`: ContentApplicationjsonDocumentationurlMessage
   ): `200ContentApplicationjsonMarketplacependingchange` = {
     val __obj = js.Dynamic.literal()
@@ -33,7 +33,7 @@ object `200ContentApplicationjsonMarketplacependingchange` {
     
     inline def set200(value: ContentApplicationjsonMarketplacependingchange): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
     
-    inline def set401(value: Content48): Self = StObject.set(x, "401", value.asInstanceOf[js.Any])
+    inline def set401(value: Content36): Self = StObject.set(x, "401", value.asInstanceOf[js.Any])
     
     inline def set404(value: ContentApplicationjsonDocumentationurlMessage): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
   }

@@ -2,7 +2,7 @@ package typings.awsSdkCredentialProviderCognitoIdentity
 
 import typings.awsSdkClientCognitoIdentity.mod.CognitoIdentityClient
 import typings.awsSdkCredentialProviderCognitoIdentity.distTypesCognitoProviderParametersMod.CognitoProviderParameters
-import typings.awsSdkTypes.distTypesCredentialsMod.Credentials
+import typings.awsSdkTypes.distTypesIdentityAwsCredentialIdentityMod.AwsCredentialIdentity
 import typings.awsSdkTypes.distTypesUtilMod.Provider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -20,7 +20,7 @@ object distTypesFromCognitoIdentityMod {
   
   trait CognitoIdentityCredentials
     extends StObject
-       with Credentials {
+       with AwsCredentialIdentity {
     
     /**
       * The Cognito ID returned by the last call to AWS.CognitoIdentity.getOpenIdToken().

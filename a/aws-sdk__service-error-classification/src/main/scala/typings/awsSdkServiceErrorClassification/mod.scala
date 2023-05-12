@@ -15,6 +15,8 @@ object mod {
   
   inline def isRetryableByTrait(error: SdkError): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRetryableByTrait")(error.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
+  inline def isServerError(error: SdkError): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isServerError")(error.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
   inline def isThrottlingError(error: SdkError): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isThrottlingError")(error.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def isTransientError(error: SdkError): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTransientError")(error.asInstanceOf[js.Any]).asInstanceOf[Boolean]

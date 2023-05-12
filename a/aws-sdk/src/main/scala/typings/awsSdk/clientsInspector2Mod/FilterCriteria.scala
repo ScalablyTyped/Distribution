@@ -67,6 +67,11 @@ trait FilterCriteria extends StObject {
   var ecrImageTags: js.UndefOr[StringFilterList] = js.undefined
   
   /**
+    * Filters the list of AWS Lambda findings by the availability of exploits.
+    */
+  var exploitAvailable: js.UndefOr[StringFilterList] = js.undefined
+  
+  /**
     * Details on the finding ARNs used to filter findings.
     */
   var findingArn: js.UndefOr[StringFilterList] = js.undefined
@@ -95,6 +100,31 @@ trait FilterCriteria extends StObject {
     * The Amazon Inspector score to filter on.
     */
   var inspectorScore: js.UndefOr[NumberFilterList] = js.undefined
+  
+  /**
+    * Filters the list of AWS Lambda functions by execution role.
+    */
+  var lambdaFunctionExecutionRoleArn: js.UndefOr[StringFilterList] = js.undefined
+  
+  /**
+    * Filters the list of AWS Lambda functions by the date and time that a user last updated the configuration, in ISO 8601 format 
+    */
+  var lambdaFunctionLastModifiedAt: js.UndefOr[DateFilterList] = js.undefined
+  
+  /**
+    * Filters the list of AWS Lambda functions by the function's  layers. A Lambda function can have up to five layers.
+    */
+  var lambdaFunctionLayers: js.UndefOr[StringFilterList] = js.undefined
+  
+  /**
+    * Filters the list of AWS Lambda functions by the name of the function.
+    */
+  var lambdaFunctionName: js.UndefOr[StringFilterList] = js.undefined
+  
+  /**
+    * Filters the list of AWS Lambda functions by the runtime environment for the Lambda function.
+    */
+  var lambdaFunctionRuntime: js.UndefOr[StringFilterList] = js.undefined
   
   /**
     * Details on the date and time a finding was last seen used to filter findings.
@@ -248,6 +278,12 @@ object FilterCriteria {
     
     inline def setEcrImageTagsVarargs(value: StringFilter*): Self = StObject.set(x, "ecrImageTags", js.Array(value*))
     
+    inline def setExploitAvailable(value: StringFilterList): Self = StObject.set(x, "exploitAvailable", value.asInstanceOf[js.Any])
+    
+    inline def setExploitAvailableUndefined: Self = StObject.set(x, "exploitAvailable", js.undefined)
+    
+    inline def setExploitAvailableVarargs(value: StringFilter*): Self = StObject.set(x, "exploitAvailable", js.Array(value*))
+    
     inline def setFindingArn(value: StringFilterList): Self = StObject.set(x, "findingArn", value.asInstanceOf[js.Any])
     
     inline def setFindingArnUndefined: Self = StObject.set(x, "findingArn", js.undefined)
@@ -283,6 +319,36 @@ object FilterCriteria {
     inline def setInspectorScoreUndefined: Self = StObject.set(x, "inspectorScore", js.undefined)
     
     inline def setInspectorScoreVarargs(value: NumberFilter*): Self = StObject.set(x, "inspectorScore", js.Array(value*))
+    
+    inline def setLambdaFunctionExecutionRoleArn(value: StringFilterList): Self = StObject.set(x, "lambdaFunctionExecutionRoleArn", value.asInstanceOf[js.Any])
+    
+    inline def setLambdaFunctionExecutionRoleArnUndefined: Self = StObject.set(x, "lambdaFunctionExecutionRoleArn", js.undefined)
+    
+    inline def setLambdaFunctionExecutionRoleArnVarargs(value: StringFilter*): Self = StObject.set(x, "lambdaFunctionExecutionRoleArn", js.Array(value*))
+    
+    inline def setLambdaFunctionLastModifiedAt(value: DateFilterList): Self = StObject.set(x, "lambdaFunctionLastModifiedAt", value.asInstanceOf[js.Any])
+    
+    inline def setLambdaFunctionLastModifiedAtUndefined: Self = StObject.set(x, "lambdaFunctionLastModifiedAt", js.undefined)
+    
+    inline def setLambdaFunctionLastModifiedAtVarargs(value: DateFilter*): Self = StObject.set(x, "lambdaFunctionLastModifiedAt", js.Array(value*))
+    
+    inline def setLambdaFunctionLayers(value: StringFilterList): Self = StObject.set(x, "lambdaFunctionLayers", value.asInstanceOf[js.Any])
+    
+    inline def setLambdaFunctionLayersUndefined: Self = StObject.set(x, "lambdaFunctionLayers", js.undefined)
+    
+    inline def setLambdaFunctionLayersVarargs(value: StringFilter*): Self = StObject.set(x, "lambdaFunctionLayers", js.Array(value*))
+    
+    inline def setLambdaFunctionName(value: StringFilterList): Self = StObject.set(x, "lambdaFunctionName", value.asInstanceOf[js.Any])
+    
+    inline def setLambdaFunctionNameUndefined: Self = StObject.set(x, "lambdaFunctionName", js.undefined)
+    
+    inline def setLambdaFunctionNameVarargs(value: StringFilter*): Self = StObject.set(x, "lambdaFunctionName", js.Array(value*))
+    
+    inline def setLambdaFunctionRuntime(value: StringFilterList): Self = StObject.set(x, "lambdaFunctionRuntime", value.asInstanceOf[js.Any])
+    
+    inline def setLambdaFunctionRuntimeUndefined: Self = StObject.set(x, "lambdaFunctionRuntime", js.undefined)
+    
+    inline def setLambdaFunctionRuntimeVarargs(value: StringFilter*): Self = StObject.set(x, "lambdaFunctionRuntime", js.Array(value*))
     
     inline def setLastObservedAt(value: DateFilterList): Self = StObject.set(x, "lastObservedAt", value.asInstanceOf[js.Any])
     

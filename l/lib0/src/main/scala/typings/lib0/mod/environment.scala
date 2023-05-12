@@ -35,4 +35,8 @@ object environment {
   @JSImport("lib0", "environment.production")
   @js.native
   val production: Boolean = js.native
+  
+  @JSImport("lib0", "environment.supportsColor")
+  @js.native
+  val supportsColor: Boolean = js.native
 }

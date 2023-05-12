@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TapTargetOptions extends StObject {
   
   /**
-    * Callback function called when Tap Target is closed
+    * Callback function called when Tap Target is closed.
     * @default null
     */
   def onClose(origin: Element): Unit
   
   /**
-    * Callback function called when Tap Target is opened
+    * Callback function called when Tap Target is opened.
     * @default null
     */
   def onOpen(origin: Element): Unit

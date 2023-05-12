@@ -6,34 +6,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Assetsurl extends StObject {
   
-  var assets: js.Array[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['release-asset'] */ js.Any
-  ]
+  var assets: js.Array[BrowserdownloadurlContenttype]
   
   /** Format: uri */
   var assets_url: String
   
-  var author: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['simple-user'] */ js.Any
+  /** User */
+  var author: Deleted | Null
   
-  var body: js.UndefOr[String | Null] = js.undefined
-  
-  var body_html: js.UndefOr[String] = js.undefined
-  
-  var body_text: js.UndefOr[String] = js.undefined
+  var body: String | Null
   
   /** Format: date-time */
-  var created_at: String
+  var created_at: String | Null
   
-  /**
-    * Format: uri
-    * @description The URL of the release discussion.
-    */
+  /** Format: uri */
   var discussion_url: js.UndefOr[String] = js.undefined
   
-  /**
-    * @description true to create a draft (unpublished) release, false to create a published one.
-    * @example false
-    */
+  /** @description Whether the release is a draft or published */
   var draft: Boolean
   
   /** Format: uri */
@@ -41,40 +30,29 @@ trait Assetsurl extends StObject {
   
   var id: Double
   
-  var mentions_count: js.UndefOr[Double] = js.undefined
-  
   var name: String | Null
   
   var node_id: String
   
-  /**
-    * @description Whether to identify the release as a prerelease or a full release.
-    * @example false
-    */
+  /** @description Whether the release is identified as a prerelease or a full release. */
   var prerelease: Boolean
   
   /** Format: date-time */
   var published_at: String | Null
   
-  var reactions: js.UndefOr[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['reaction-rollup'] */ js.Any
-  ] = js.undefined
+  /** Reactions */
+  var reactions: js.UndefOr[Eyes] = js.undefined
   
-  /**
-    * @description The name of the tag.
-    * @example v1.0.0
-    */
+  /** @description The name of the tag. */
   var tag_name: String
   
   /** Format: uri */
   var tarball_url: String | Null
   
-  /**
-    * @description Specifies the commitish value that determines where the Git tag is created from.
-    * @example master
-    */
+  /** @description Specifies the commitish value that determines where the Git tag is created from. */
   var target_commitish: String
   
+  /** Format: uri-template */
   var upload_url: String
   
   /** Format: uri */
@@ -86,12 +64,8 @@ trait Assetsurl extends StObject {
 object Assetsurl {
   
   inline def apply(
-    assets: js.Array[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['release-asset'] */ js.Any
-    ],
+    assets: js.Array[BrowserdownloadurlContenttype],
     assets_url: String,
-    author: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['simple-user'] */ js.Any,
-    created_at: String,
     draft: Boolean,
     html_url: String,
     id: Double,
@@ -102,44 +76,30 @@ object Assetsurl {
     upload_url: String,
     url: String
   ): Assetsurl = {
-    val __obj = js.Dynamic.literal(assets = assets.asInstanceOf[js.Any], assets_url = assets_url.asInstanceOf[js.Any], author = author.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], draft = draft.asInstanceOf[js.Any], html_url = html_url.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], node_id = node_id.asInstanceOf[js.Any], prerelease = prerelease.asInstanceOf[js.Any], tag_name = tag_name.asInstanceOf[js.Any], target_commitish = target_commitish.asInstanceOf[js.Any], upload_url = upload_url.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], name = null, published_at = null, tarball_url = null, zipball_url = null)
+    val __obj = js.Dynamic.literal(assets = assets.asInstanceOf[js.Any], assets_url = assets_url.asInstanceOf[js.Any], draft = draft.asInstanceOf[js.Any], html_url = html_url.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], node_id = node_id.asInstanceOf[js.Any], prerelease = prerelease.asInstanceOf[js.Any], tag_name = tag_name.asInstanceOf[js.Any], target_commitish = target_commitish.asInstanceOf[js.Any], upload_url = upload_url.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], author = null, body = null, created_at = null, name = null, published_at = null, tarball_url = null, zipball_url = null)
     __obj.asInstanceOf[Assetsurl]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: Assetsurl] (val x: Self) extends AnyVal {
     
-    inline def setAssets(
-      value: js.Array[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['release-asset'] */ js.Any
-        ]
-    ): Self = StObject.set(x, "assets", value.asInstanceOf[js.Any])
+    inline def setAssets(value: js.Array[BrowserdownloadurlContenttype]): Self = StObject.set(x, "assets", value.asInstanceOf[js.Any])
     
-    inline def setAssetsVarargs(
-      value: (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['release-asset'] */ js.Any)*
-    ): Self = StObject.set(x, "assets", js.Array(value*))
+    inline def setAssetsVarargs(value: BrowserdownloadurlContenttype*): Self = StObject.set(x, "assets", js.Array(value*))
     
     inline def setAssets_url(value: String): Self = StObject.set(x, "assets_url", value.asInstanceOf[js.Any])
     
-    inline def setAuthor(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['simple-user'] */ js.Any
-    ): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
+    inline def setAuthor(value: Deleted): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
+    
+    inline def setAuthorNull: Self = StObject.set(x, "author", null)
     
     inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     inline def setBodyNull: Self = StObject.set(x, "body", null)
     
-    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
-    
-    inline def setBody_html(value: String): Self = StObject.set(x, "body_html", value.asInstanceOf[js.Any])
-    
-    inline def setBody_htmlUndefined: Self = StObject.set(x, "body_html", js.undefined)
-    
-    inline def setBody_text(value: String): Self = StObject.set(x, "body_text", value.asInstanceOf[js.Any])
-    
-    inline def setBody_textUndefined: Self = StObject.set(x, "body_text", js.undefined)
-    
     inline def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
+    
+    inline def setCreated_atNull: Self = StObject.set(x, "created_at", null)
     
     inline def setDiscussion_url(value: String): Self = StObject.set(x, "discussion_url", value.asInstanceOf[js.Any])
     
@@ -150,10 +110,6 @@ object Assetsurl {
     inline def setHtml_url(value: String): Self = StObject.set(x, "html_url", value.asInstanceOf[js.Any])
     
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
-    
-    inline def setMentions_count(value: Double): Self = StObject.set(x, "mentions_count", value.asInstanceOf[js.Any])
-    
-    inline def setMentions_countUndefined: Self = StObject.set(x, "mentions_count", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
@@ -167,9 +123,7 @@ object Assetsurl {
     
     inline def setPublished_atNull: Self = StObject.set(x, "published_at", null)
     
-    inline def setReactions(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['reaction-rollup'] */ js.Any
-    ): Self = StObject.set(x, "reactions", value.asInstanceOf[js.Any])
+    inline def setReactions(value: Eyes): Self = StObject.set(x, "reactions", value.asInstanceOf[js.Any])
     
     inline def setReactionsUndefined: Self = StObject.set(x, "reactions", js.undefined)
     

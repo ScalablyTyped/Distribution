@@ -1,6 +1,6 @@
 package typings.openui5
 
-import typings.openui5.anon.Control
+import typings.openui5.anon.ControlDefault
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +26,7 @@ object sapMP13nGroupControllerMod {
       /**
       * Initial settings for the new control
       */
-    mSettings: Control
+    mSettings: ControlDefault
     ) = this()
     def this(
       /**
@@ -36,7 +36,7 @@ object sapMP13nGroupControllerMod {
       /**
       * Initial settings for the new control
       */
-    mSettings: Control
+    mSettings: ControlDefault
     ) = this()
   }
   

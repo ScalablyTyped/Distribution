@@ -7,11 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `406` extends StObject {
   
   @JSName("application/json")
-  var applicationSlashjson: js.Array[Collectiondate]
+  var applicationSlashjson: js.Array[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['ssh-signing-key'] */ js.Any
+  ]
 }
 object `406` {
   
-  inline def apply(applicationSlashjson: js.Array[Collectiondate]): `406` = {
+  inline def apply(
+    applicationSlashjson: js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['ssh-signing-key'] */ js.Any
+    ]
+  ): `406` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("application/json")(applicationSlashjson.asInstanceOf[js.Any])
     __obj.asInstanceOf[`406`]
@@ -20,8 +26,14 @@ object `406` {
   @scala.inline
   implicit open class MutableBuilder[Self <: `406`] (val x: Self) extends AnyVal {
     
-    inline def setApplicationSlashjson(value: js.Array[Collectiondate]): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
+    inline def setApplicationSlashjson(
+      value: js.Array[
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['ssh-signing-key'] */ js.Any
+        ]
+    ): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
     
-    inline def setApplicationSlashjsonVarargs(value: Collectiondate*): Self = StObject.set(x, "application/json", js.Array(value*))
+    inline def setApplicationSlashjsonVarargs(
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['ssh-signing-key'] */ js.Any)*
+    ): Self = StObject.set(x, "application/json", js.Array(value*))
   }
 }

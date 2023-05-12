@@ -1,7 +1,7 @@
 
 # Scala.js typings for use-resize-observer
 
-Typings are for version 9.0.2
+Typings are for version 9.1.0
 
 ## Library description:
 A React hook that allows you to use a ResizeObserver to measure an element's size.

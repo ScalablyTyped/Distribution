@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "html-tags" : "3.2.0"
+      "html-tags" : "3.3.1"
     }
   ],
   "test-dependencies" : [
     {
-      "html-tags" : "3.2.0"
+      "html-tags" : "3.3.1"
     }
   ],
   "compile-devDependencies" : [

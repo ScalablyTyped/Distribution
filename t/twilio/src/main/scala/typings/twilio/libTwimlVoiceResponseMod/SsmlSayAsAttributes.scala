@@ -6,9 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SsmlSayAsAttributes extends StObject {
   
-  var `interpret-as`: js.UndefOr[SsmlSayAsInterpretAs] = js.undefined
+  /** format - Specify the format of the date when interpret-as is set to date */
+  var format: js.UndefOr[SsmlSayAsFormat] = js.undefined
   
-  var role: js.UndefOr[SsmlSayAsRole] = js.undefined
+  /** interpret-as - Specify the type of words are spoken */
+  var `interpret-as`: js.UndefOr[SsmlSayAsInterpretAs] = js.undefined
 }
 object SsmlSayAsAttributes {
   
@@ -20,12 +22,12 @@ object SsmlSayAsAttributes {
   @scala.inline
   implicit open class MutableBuilder[Self <: SsmlSayAsAttributes] (val x: Self) extends AnyVal {
     
+    inline def setFormat(value: SsmlSayAsFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    
     inline def `setInterpret-as`(value: SsmlSayAsInterpretAs): Self = StObject.set(x, "interpret-as", value.asInstanceOf[js.Any])
     
     inline def `setInterpret-asUndefined`: Self = StObject.set(x, "interpret-as", js.undefined)
-    
-    inline def setRole(value: SsmlSayAsRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
-    
-    inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
   }
 }

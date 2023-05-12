@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@ckeditor/ckeditor5-highlight" : "37.1.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@ckeditor/ckeditor5-highlight" : "37.1.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

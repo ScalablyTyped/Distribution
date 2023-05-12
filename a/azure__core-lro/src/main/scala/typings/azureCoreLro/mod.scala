@@ -163,6 +163,9 @@ object mod {
     
     /* private */ var resolve: Any = js.native
     
+    /** controls whether to throw an error if the operation failed or was canceled. */
+    /* protected */ var resolveOnUnsuccessful: Boolean = js.native
+    
     /**
       * Starts a loop that will break only if the poller is done
       * or if the poller is stopped.
@@ -222,6 +225,11 @@ object mod {
     var processResult: js.UndefOr[js.Function2[/* result */ Any, /* state */ TState, TResult]] = js.undefined
     
     /**
+      * Control whether to throw an exception if the operation failed or was canceled.
+      */
+    var resolveOnUnsuccessful: js.UndefOr[Boolean] = js.undefined
+    
+    /**
       * The potential location of the result of the LRO if specified by the LRO extension in the swagger.
       */
     var resourceLocationConfig: js.UndefOr[LroResourceLocationConfig] = js.undefined
@@ -259,6 +267,10 @@ object mod {
       inline def setProcessResult(value: (/* result */ Any, /* state */ TState) => TResult): Self = StObject.set(x, "processResult", js.Any.fromFunction2(value))
       
       inline def setProcessResultUndefined: Self = StObject.set(x, "processResult", js.undefined)
+      
+      inline def setResolveOnUnsuccessful(value: Boolean): Self = StObject.set(x, "resolveOnUnsuccessful", value.asInstanceOf[js.Any])
+      
+      inline def setResolveOnUnsuccessfulUndefined: Self = StObject.set(x, "resolveOnUnsuccessful", js.undefined)
       
       inline def setResourceLocationConfig(value: LroResourceLocationConfig): Self = StObject.set(x, "resourceLocationConfig", value.asInstanceOf[js.Any])
       
@@ -328,6 +340,11 @@ object mod {
     var processResult: js.UndefOr[js.Function2[/* result */ Any, /* state */ TState, TResult]] = js.undefined
     
     /**
+      * Control whether to throw an exception if the operation failed or was canceled.
+      */
+    var resolveOnUnsuccessful: js.UndefOr[Boolean] = js.undefined
+    
+    /**
       * A serialized poller which can be used to resume an existing paused Long-Running-Operation.
       */
     var resumeFrom: js.UndefOr[String] = js.undefined
@@ -362,6 +379,10 @@ object mod {
       inline def setProcessResult(value: (/* result */ Any, /* state */ TState) => TResult): Self = StObject.set(x, "processResult", js.Any.fromFunction2(value))
       
       inline def setProcessResultUndefined: Self = StObject.set(x, "processResult", js.undefined)
+      
+      inline def setResolveOnUnsuccessful(value: Boolean): Self = StObject.set(x, "resolveOnUnsuccessful", value.asInstanceOf[js.Any])
+      
+      inline def setResolveOnUnsuccessfulUndefined: Self = StObject.set(x, "resolveOnUnsuccessful", js.undefined)
       
       inline def setResumeFrom(value: String): Self = StObject.set(x, "resumeFrom", value.asInstanceOf[js.Any])
       

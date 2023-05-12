@@ -9,6 +9,7 @@ import typings.firebaseAnalytics.firebaseAnalyticsStrings.config
 import typings.firebaseAnalytics.firebaseAnalyticsStrings.consent
 import typings.firebaseAnalytics.firebaseAnalyticsStrings.default
 import typings.firebaseAnalytics.firebaseAnalyticsStrings.event
+import typings.firebaseAnalytics.firebaseAnalyticsStrings.get
 import typings.firebaseAnalytics.firebaseAnalyticsStrings.set
 import typings.firebaseAnalytics.firebaseAnalyticsStrings.update
 import org.scalablytyped.runtime.StObject
@@ -17,6 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait WrappedGtag extends StObject {
   
+  def gtagCore(command: String, args: Any*): Unit
   def gtagCore(command: consent, subCommand: default | update, consentSettings: ConsentSettings): Unit
   @JSName("gtagCore")
   var gtagCore_Original: Gtag
@@ -37,8 +39,16 @@ trait WrappedGtag extends StObject {
   @JSName("gtagCore")
   def gtagCore_event(command: event, eventName: String, eventParams: EventParams): Unit
   @JSName("gtagCore")
+  def gtagCore_get(
+    command: get,
+    measurementId: String,
+    fieldName: String,
+    callback: js.Function1[/* repeated */ Any, Unit]
+  ): Unit
+  @JSName("gtagCore")
   def gtagCore_set(command: set, config: CustomParams): Unit
   
+  def wrappedGtag(command: String, args: Any*): Unit
   def wrappedGtag(command: consent, subCommand: default | update, consentSettings: ConsentSettings): Unit
   @JSName("wrappedGtag")
   var wrappedGtag_Original: Gtag
@@ -58,6 +68,13 @@ trait WrappedGtag extends StObject {
   def wrappedGtag_event(command: event, eventName: String, eventParams: CustomParams): Unit
   @JSName("wrappedGtag")
   def wrappedGtag_event(command: event, eventName: String, eventParams: EventParams): Unit
+  @JSName("wrappedGtag")
+  def wrappedGtag_get(
+    command: get,
+    measurementId: String,
+    fieldName: String,
+    callback: js.Function1[/* repeated */ Any, Unit]
+  ): Unit
   @JSName("wrappedGtag")
   def wrappedGtag_set(command: set, config: CustomParams): Unit
 }

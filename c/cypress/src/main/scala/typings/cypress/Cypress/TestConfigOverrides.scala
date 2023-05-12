@@ -7,7 +7,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined parent std.Partial<std.Pick<cypress.Cypress.ConfigOptions<any>, 'animationDistanceThreshold' | 'blockHosts' | 'defaultCommandTimeout' | 'env' | 'execTimeout' | 'includeShadowDom' | 'numTestsKeptInMemory' | 'pageLoadTimeout' | 'redirectionLimit' | 'requestTimeout' | 'responseTimeout' | 'retries' | 'screenshotOnRunFailure' | 'slowTestThreshold' | 'scrollBehavior' | 'taskTimeout' | 'viewportHeight' | 'viewportWidth' | 'waitForAnimations' | 'experimentalSessionAndOrigin'>> */
+/* Inlined parent std.Partial<std.Pick<cypress.Cypress.ConfigOptions<any>, 'animationDistanceThreshold' | 'blockHosts' | 'defaultCommandTimeout' | 'env' | 'execTimeout' | 'includeShadowDom' | 'numTestsKeptInMemory' | 'pageLoadTimeout' | 'redirectionLimit' | 'requestTimeout' | 'responseTimeout' | 'retries' | 'screenshotOnRunFailure' | 'slowTestThreshold' | 'scrollBehavior' | 'taskTimeout' | 'viewportHeight' | 'viewportWidth' | 'waitForAnimations'>> */
 /* Inlined parent std.Partial<std.Pick<cypress.Cypress.ResolvedConfigOptions<any>, 'baseUrl'>> */
 trait TestConfigOverrides extends StObject {
   
@@ -24,8 +24,6 @@ trait TestConfigOverrides extends StObject {
   var env: js.UndefOr[StringDictionary[Any]] = js.undefined
   
   var execTimeout: js.UndefOr[Double] = js.undefined
-  
-  var experimentalSessionAndOrigin: js.UndefOr[Boolean] = js.undefined
   
   var includeShadowDom: js.UndefOr[Boolean] = js.undefined
   
@@ -102,10 +100,6 @@ object TestConfigOverrides {
     inline def setExecTimeout(value: Double): Self = StObject.set(x, "execTimeout", value.asInstanceOf[js.Any])
     
     inline def setExecTimeoutUndefined: Self = StObject.set(x, "execTimeout", js.undefined)
-    
-    inline def setExperimentalSessionAndOrigin(value: Boolean): Self = StObject.set(x, "experimentalSessionAndOrigin", value.asInstanceOf[js.Any])
-    
-    inline def setExperimentalSessionAndOriginUndefined: Self = StObject.set(x, "experimentalSessionAndOrigin", js.undefined)
     
     inline def setIncludeShadowDom(value: Boolean): Self = StObject.set(x, "includeShadowDom", value.asInstanceOf[js.Any])
     

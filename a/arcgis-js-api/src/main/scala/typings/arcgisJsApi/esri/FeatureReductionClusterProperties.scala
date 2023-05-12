@@ -60,6 +60,15 @@ trait FeatureReductionClusterProperties extends StObject {
   var labelsVisible: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Defines the maximum [view scale](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#scale) at which clustering is enabled.
+    *
+    * @default 0
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureReductionCluster.html#maxScale)
+    */
+  var maxScale: js.UndefOr[Double] = js.undefined
+  
+  /**
     * Indicates whether to display the cluster popup.
     *
     * @default true
@@ -133,6 +142,10 @@ object FeatureReductionClusterProperties {
     inline def setLabelsVisible(value: Boolean): Self = StObject.set(x, "labelsVisible", value.asInstanceOf[js.Any])
     
     inline def setLabelsVisibleUndefined: Self = StObject.set(x, "labelsVisible", js.undefined)
+    
+    inline def setMaxScale(value: Double): Self = StObject.set(x, "maxScale", value.asInstanceOf[js.Any])
+    
+    inline def setMaxScaleUndefined: Self = StObject.set(x, "maxScale", js.undefined)
     
     inline def setPopupEnabled(value: Boolean): Self = StObject.set(x, "popupEnabled", value.asInstanceOf[js.Any])
     

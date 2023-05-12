@@ -12,7 +12,7 @@ trait Components_[TEvent /* <: js.Object */, TResource /* <: js.Object */] exten
   
   var agenda: js.UndefOr[Date[TEvent]] = js.undefined
   
-  var dateCellWrapper: js.UndefOr[ComponentType[js.Object]] = js.undefined
+  var dateCellWrapper: js.UndefOr[ComponentType[DateCellWrapperProps]] = js.undefined
   
   var day: js.UndefOr[Header[TEvent]] = js.undefined
   
@@ -59,7 +59,7 @@ object Components_ {
     
     inline def setAgendaUndefined: Self = StObject.set(x, "agenda", js.undefined)
     
-    inline def setDateCellWrapper(value: ComponentType[js.Object]): Self = StObject.set(x, "dateCellWrapper", value.asInstanceOf[js.Any])
+    inline def setDateCellWrapper(value: ComponentType[DateCellWrapperProps]): Self = StObject.set(x, "dateCellWrapper", value.asInstanceOf[js.Any])
     
     inline def setDateCellWrapperUndefined: Self = StObject.set(x, "dateCellWrapper", js.undefined)
     

@@ -12,7 +12,7 @@ trait DescribeIndexResponse extends StObject {
   var CapacityUnits: js.UndefOr[CapacityUnitsConfiguration] = js.undefined
   
   /**
-    * The Unix datetime that the index was created.
+    * The Unix timestamp when the index was created.
     */
   var CreatedAt: js.UndefOr[js.Date] = js.undefined
   
@@ -67,7 +67,7 @@ trait DescribeIndexResponse extends StObject {
   var Status: js.UndefOr[IndexStatus] = js.undefined
   
   /**
-    * The Unix datetime that the index was last updated.
+    * The Unix when the index was last updated.
     */
   var UpdatedAt: js.UndefOr[js.Date] = js.undefined
   

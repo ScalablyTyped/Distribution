@@ -19,6 +19,8 @@ trait TokenClaimskeystringstrin
     */
   var aud: js.UndefOr[String] = js.undefined
   
+  var auth_time: js.UndefOr[Double] = js.undefined
+  
   var cloud_instance_host_name: js.UndefOr[String] = js.undefined
   
   var cnf: js.UndefOr[Kid] = js.undefined
@@ -76,6 +78,13 @@ trait TokenClaimskeystringstrin
   var sub: js.UndefOr[String] = js.undefined
   
   /**
+    * 	Region of the resource tenant
+    */
+  var tenant_region_scope: js.UndefOr[String] = js.undefined
+  
+  var tenant_region_sub_scope: js.UndefOr[String] = js.undefined
+  
+  /**
     * Users' tenant or '9188040d-6c67-4c5b-b112-36a304b66dad' for personal accounts.
     */
   var tid: js.UndefOr[String] = js.undefined
@@ -113,6 +122,10 @@ object TokenClaimskeystringstrin {
     inline def setAud(value: String): Self = StObject.set(x, "aud", value.asInstanceOf[js.Any])
     
     inline def setAudUndefined: Self = StObject.set(x, "aud", js.undefined)
+    
+    inline def setAuth_time(value: Double): Self = StObject.set(x, "auth_time", value.asInstanceOf[js.Any])
+    
+    inline def setAuth_timeUndefined: Self = StObject.set(x, "auth_time", js.undefined)
     
     inline def setCloud_instance_host_name(value: String): Self = StObject.set(x, "cloud_instance_host_name", value.asInstanceOf[js.Any])
     
@@ -193,6 +206,14 @@ object TokenClaimskeystringstrin {
     inline def setSub(value: String): Self = StObject.set(x, "sub", value.asInstanceOf[js.Any])
     
     inline def setSubUndefined: Self = StObject.set(x, "sub", js.undefined)
+    
+    inline def setTenant_region_scope(value: String): Self = StObject.set(x, "tenant_region_scope", value.asInstanceOf[js.Any])
+    
+    inline def setTenant_region_scopeUndefined: Self = StObject.set(x, "tenant_region_scope", js.undefined)
+    
+    inline def setTenant_region_sub_scope(value: String): Self = StObject.set(x, "tenant_region_sub_scope", value.asInstanceOf[js.Any])
+    
+    inline def setTenant_region_sub_scopeUndefined: Self = StObject.set(x, "tenant_region_sub_scope", js.undefined)
     
     inline def setTid(value: String): Self = StObject.set(x, "tid", value.asInstanceOf[js.Any])
     

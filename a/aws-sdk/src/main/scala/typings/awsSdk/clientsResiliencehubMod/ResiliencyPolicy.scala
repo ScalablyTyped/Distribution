@@ -27,7 +27,7 @@ trait ResiliencyPolicy extends StObject {
   var policy: js.UndefOr[DisruptionPolicy] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the resiliency policy. The format for this ARN is: arn:partition:resiliencehub:region:account:resiliency-policy/policy-id. For more information about ARNs, see  Amazon Resource Names (ARNs) in the AWS General Reference.
+    * The Amazon Resource Name (ARN) of the resiliency policy. The format for this ARN is: arn:partition:resiliencehub:region:account:resiliency-policy/policy-id. For more information about ARNs, see  Amazon Resource Names (ARNs) in the AWS General Reference guide.
     */
   var policyArn: js.UndefOr[Arn] = js.undefined
   

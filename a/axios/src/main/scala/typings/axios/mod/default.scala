@@ -28,49 +28,49 @@ object default extends Shortcut {
     def this(
       message: String,
       code: String,
-      config: AxiosRequestConfig[/* import warning: RewrittenClass.unapply cls was tparam D */ Any]
+      config: InternalAxiosRequestConfig[/* import warning: RewrittenClass.unapply cls was tparam D */ Any]
     ) = this()
     def this(
       message: String,
       code: Unit,
-      config: AxiosRequestConfig[/* import warning: RewrittenClass.unapply cls was tparam D */ Any]
+      config: InternalAxiosRequestConfig[/* import warning: RewrittenClass.unapply cls was tparam D */ Any]
     ) = this()
     def this(
       message: Unit,
       code: String,
-      config: AxiosRequestConfig[/* import warning: RewrittenClass.unapply cls was tparam D */ Any]
+      config: InternalAxiosRequestConfig[/* import warning: RewrittenClass.unapply cls was tparam D */ Any]
     ) = this()
     def this(
       message: Unit,
       code: Unit,
-      config: AxiosRequestConfig[/* import warning: RewrittenClass.unapply cls was tparam D */ Any]
+      config: InternalAxiosRequestConfig[/* import warning: RewrittenClass.unapply cls was tparam D */ Any]
     ) = this()
     def this(message: String, code: String, config: Unit, request: Any) = this()
     def this(
       message: String,
       code: String,
-      config: AxiosRequestConfig[/* import warning: RewrittenClass.unapply cls was tparam D */ Any],
+      config: InternalAxiosRequestConfig[/* import warning: RewrittenClass.unapply cls was tparam D */ Any],
       request: Any
     ) = this()
     def this(message: String, code: Unit, config: Unit, request: Any) = this()
     def this(
       message: String,
       code: Unit,
-      config: AxiosRequestConfig[/* import warning: RewrittenClass.unapply cls was tparam D */ Any],
+      config: InternalAxiosRequestConfig[/* import warning: RewrittenClass.unapply cls was tparam D */ Any],
       request: Any
     ) = this()
     def this(message: Unit, code: String, config: Unit, request: Any) = this()
     def this(
       message: Unit,
       code: String,
-      config: AxiosRequestConfig[/* import warning: RewrittenClass.unapply cls was tparam D */ Any],
+      config: InternalAxiosRequestConfig[/* import warning: RewrittenClass.unapply cls was tparam D */ Any],
       request: Any
     ) = this()
     def this(message: Unit, code: Unit, config: Unit, request: Any) = this()
     def this(
       message: Unit,
       code: Unit,
-      config: AxiosRequestConfig[/* import warning: RewrittenClass.unapply cls was tparam D */ Any],
+      config: InternalAxiosRequestConfig[/* import warning: RewrittenClass.unapply cls was tparam D */ Any],
       request: Any
     ) = this()
     def this(
@@ -96,7 +96,7 @@ object default extends Shortcut {
     def this(
       message: String,
       code: String,
-      config: AxiosRequestConfig[/* import warning: RewrittenClass.unapply cls was tparam D */ Any],
+      config: InternalAxiosRequestConfig[/* import warning: RewrittenClass.unapply cls was tparam D */ Any],
       request: Any,
       response: AxiosResponse[
             /* import warning: RewrittenClass.unapply cls was tparam T */ Any, 
@@ -106,7 +106,7 @@ object default extends Shortcut {
     def this(
       message: String,
       code: String,
-      config: AxiosRequestConfig[/* import warning: RewrittenClass.unapply cls was tparam D */ Any],
+      config: InternalAxiosRequestConfig[/* import warning: RewrittenClass.unapply cls was tparam D */ Any],
       request: Unit,
       response: AxiosResponse[
             /* import warning: RewrittenClass.unapply cls was tparam T */ Any, 
@@ -136,7 +136,7 @@ object default extends Shortcut {
     def this(
       message: String,
       code: Unit,
-      config: AxiosRequestConfig[/* import warning: RewrittenClass.unapply cls was tparam D */ Any],
+      config: InternalAxiosRequestConfig[/* import warning: RewrittenClass.unapply cls was tparam D */ Any],
       request: Any,
       response: AxiosResponse[
             /* import warning: RewrittenClass.unapply cls was tparam T */ Any, 
@@ -146,7 +146,7 @@ object default extends Shortcut {
     def this(
       message: String,
       code: Unit,
-      config: AxiosRequestConfig[/* import warning: RewrittenClass.unapply cls was tparam D */ Any],
+      config: InternalAxiosRequestConfig[/* import warning: RewrittenClass.unapply cls was tparam D */ Any],
       request: Unit,
       response: AxiosResponse[
             /* import warning: RewrittenClass.unapply cls was tparam T */ Any, 
@@ -176,7 +176,7 @@ object default extends Shortcut {
     def this(
       message: Unit,
       code: String,
-      config: AxiosRequestConfig[/* import warning: RewrittenClass.unapply cls was tparam D */ Any],
+      config: InternalAxiosRequestConfig[/* import warning: RewrittenClass.unapply cls was tparam D */ Any],
       request: Any,
       response: AxiosResponse[
             /* import warning: RewrittenClass.unapply cls was tparam T */ Any, 
@@ -186,7 +186,7 @@ object default extends Shortcut {
     def this(
       message: Unit,
       code: String,
-      config: AxiosRequestConfig[/* import warning: RewrittenClass.unapply cls was tparam D */ Any],
+      config: InternalAxiosRequestConfig[/* import warning: RewrittenClass.unapply cls was tparam D */ Any],
       request: Unit,
       response: AxiosResponse[
             /* import warning: RewrittenClass.unapply cls was tparam T */ Any, 
@@ -216,7 +216,7 @@ object default extends Shortcut {
     def this(
       message: Unit,
       code: Unit,
-      config: AxiosRequestConfig[/* import warning: RewrittenClass.unapply cls was tparam D */ Any],
+      config: InternalAxiosRequestConfig[/* import warning: RewrittenClass.unapply cls was tparam D */ Any],
       request: Any,
       response: AxiosResponse[
             /* import warning: RewrittenClass.unapply cls was tparam T */ Any, 
@@ -226,13 +226,21 @@ object default extends Shortcut {
     def this(
       message: Unit,
       code: Unit,
-      config: AxiosRequestConfig[/* import warning: RewrittenClass.unapply cls was tparam D */ Any],
+      config: InternalAxiosRequestConfig[/* import warning: RewrittenClass.unapply cls was tparam D */ Any],
       request: Unit,
       response: AxiosResponse[
             /* import warning: RewrittenClass.unapply cls was tparam T */ Any, 
             /* import warning: RewrittenClass.unapply cls was tparam D */ Any
           ]
     ) = this()
+  }
+  
+  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+  @JSImport("axios", "default.AxiosHeaders")
+  @js.native
+  open class AxiosHeadersCls () extends AxiosHeaders {
+    def this(headers: AxiosHeaders) = this()
+    def this(headers: RawAxiosHeaders) = this()
   }
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
@@ -258,6 +266,11 @@ object default extends Shortcut {
     /* CompleteClass */
     override def throwIfRequested(): Unit = js.native
   }
+  
+  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+  @JSImport("axios", "default.CanceledError")
+  @js.native
+  open class CanceledErrorCls[T] () extends CanceledError[T]
   
   type _To = AxiosStatic
   

@@ -16,6 +16,7 @@ trait Call
     */
   var callChainId: js.UndefOr[NullableOption[String]] = js.undefined
   
+  // Contains the optional features for the call.
   var callOptions: js.UndefOr[NullableOption[CallOptions]] = js.undefined
   
   // The routing information on how the call was retargeted. Read-only.
@@ -27,9 +28,12 @@ trait Call
   // The chat information. Required information for joining a meeting.
   var chatInfo: js.UndefOr[NullableOption[ChatInfo]] = js.undefined
   
+  var contentSharingSessions: js.UndefOr[NullableOption[js.Array[ContentSharingSession]]] = js.undefined
+  
   // The direction of the call. The possible value are incoming or outgoing. Read-only.
   var direction: js.UndefOr[NullableOption[CallDirection]] = js.undefined
   
+  // Call context associated with an incoming call.
   var incomingContext: js.UndefOr[NullableOption[IncomingContext]] = js.undefined
   
   // The media configuration. Required.
@@ -38,7 +42,7 @@ trait Call
   // Read-only. The call media state.
   var mediaState: js.UndefOr[NullableOption[CallMediaState]] = js.undefined
   
-  // The meeting information that's required for joining a meeting.
+  // The meeting information. Required information for meeting scenarios.
   var meetingInfo: js.UndefOr[NullableOption[MeetingInfo]] = js.undefined
   
   var myParticipantId: js.UndefOr[NullableOption[String]] = js.undefined
@@ -47,22 +51,32 @@ trait Call
   
   var participants: js.UndefOr[NullableOption[js.Array[Participant]]] = js.undefined
   
+  // The list of requested modalities. Possible values are: unknown, audio, video, videoBasedScreenSharing, data.
   var requestedModalities: js.UndefOr[NullableOption[js.Array[Modality]]] = js.undefined
   
+  // The result information. For example can hold termination reason. Read-only.
   var resultInfo: js.UndefOr[NullableOption[ResultInfo]] = js.undefined
   
+  // The originator of the call.
   var source: js.UndefOr[NullableOption[ParticipantInfo]] = js.undefined
   
+  /**
+    * The call state. Possible values are: incoming, establishing, ringing, established, hold, transferring,
+    * transferAccepted, redirecting, terminating, terminated. Read-only.
+    */
   var state: js.UndefOr[NullableOption[CallState]] = js.undefined
   
+  // The subject of the conversation.
   var subject: js.UndefOr[NullableOption[String]] = js.undefined
   
+  // The targets of the call. Required information for creating peer to peer call.
   var targets: js.UndefOr[NullableOption[js.Array[InvitationParticipantInfo]]] = js.undefined
   
   var tenantId: js.UndefOr[NullableOption[String]] = js.undefined
   
   var toneInfo: js.UndefOr[NullableOption[ToneInfo]] = js.undefined
   
+  // The transcription information for the call. Read-only.
   var transcription: js.UndefOr[NullableOption[CallTranscriptionInfo]] = js.undefined
 }
 object Call {
@@ -112,6 +126,14 @@ object Call {
     inline def setChatInfoNull: Self = StObject.set(x, "chatInfo", null)
     
     inline def setChatInfoUndefined: Self = StObject.set(x, "chatInfo", js.undefined)
+    
+    inline def setContentSharingSessions(value: NullableOption[js.Array[ContentSharingSession]]): Self = StObject.set(x, "contentSharingSessions", value.asInstanceOf[js.Any])
+    
+    inline def setContentSharingSessionsNull: Self = StObject.set(x, "contentSharingSessions", null)
+    
+    inline def setContentSharingSessionsUndefined: Self = StObject.set(x, "contentSharingSessions", js.undefined)
+    
+    inline def setContentSharingSessionsVarargs(value: ContentSharingSession*): Self = StObject.set(x, "contentSharingSessions", js.Array(value*))
     
     inline def setDirection(value: NullableOption[CallDirection]): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     

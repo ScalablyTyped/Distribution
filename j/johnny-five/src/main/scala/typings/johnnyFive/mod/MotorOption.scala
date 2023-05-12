@@ -10,6 +10,8 @@ trait MotorOption extends StObject {
   
   var bits: js.UndefOr[Any] = js.undefined
   
+  var board: js.UndefOr[Board] = js.undefined
+  
   var controller: js.UndefOr[String] = js.undefined
   
   var current: js.UndefOr[SensorOption] = js.undefined
@@ -37,6 +39,10 @@ object MotorOption {
     inline def setBits(value: Any): Self = StObject.set(x, "bits", value.asInstanceOf[js.Any])
     
     inline def setBitsUndefined: Self = StObject.set(x, "bits", js.undefined)
+    
+    inline def setBoard(value: Board): Self = StObject.set(x, "board", value.asInstanceOf[js.Any])
+    
+    inline def setBoardUndefined: Self = StObject.set(x, "board", js.undefined)
     
     inline def setController(value: String): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
     

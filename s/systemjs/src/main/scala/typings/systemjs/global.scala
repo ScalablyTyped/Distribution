@@ -44,7 +44,7 @@ object global {
       */
     inline def get(moduleId: String): Module | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(moduleId.asInstanceOf[js.Any]).asInstanceOf[Module | Null]
     
-    // tslint:disable-next-line no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
     inline def get_T[T](moduleId: String): T | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(moduleId.asInstanceOf[js.Any]).asInstanceOf[T | Null]
     
     /**

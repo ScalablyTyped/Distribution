@@ -17,7 +17,7 @@ trait UpdateContactRequest extends StObject {
   var DisplayName: js.UndefOr[ContactName] = js.undefined
   
   /**
-    * A list of stages. A contact has an engagement plan with stages for specified contact channels. An escalation plan uses these stages to contact specified contacts. 
+    * A list of stages. A contact has an engagement plan with stages for specified contact channels. An escalation plan uses these stages to contact specified contacts.
     */
   var Plan: js.UndefOr[typings.awsSdk.clientsSsmcontactsMod.Plan] = js.undefined
 }

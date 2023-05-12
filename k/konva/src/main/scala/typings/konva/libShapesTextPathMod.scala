@@ -2,6 +2,7 @@ package typings.konva
 
 import typings.konva.anon.HeightWidth
 import typings.konva.anon.P0
+import typings.konva.libContextMod.Context
 import typings.konva.libShapeMod.Shape
 import typings.konva.libShapeMod.ShapeConfig
 import typings.konva.libTypesMod.GetSet
@@ -19,13 +20,19 @@ object libShapesTextPathMod {
     
     def _getContextFont(): Any = js.native
     
-    def _getTextSize(text: Any): HeightWidth = js.native
+    def _getPointAtLength(length: Double): Any = js.native
     
-    def _hitFunc(context: Any): Unit = js.native
+    def _getTextPathLength(): Double = js.native
     
-    def _sceneFunc(context: Any): Unit = js.native
+    def _getTextSize(text: String): HeightWidth = js.native
     
-    def _setTextData(): Unit = js.native
+    def _hitFunc(context: Context): Unit = js.native
+    
+    def _readDataAttribute(): Unit = js.native
+    
+    def _sceneFunc(context: Context): Unit = js.native
+    
+    def _setTextData(): Any = js.native
     
     def align(): String = js.native
     def align(v: String): this.type = js.native
@@ -80,7 +87,9 @@ object libShapesTextPathMod {
     
     var partialText: String = js.native
     
-    def setText(text: Any): Any = js.native
+    var pathLength: Double = js.native
+    
+    def setText(text: String): Any = js.native
     
     def text(): String = js.native
     def text(v: String): this.type = js.native

@@ -1,7 +1,7 @@
 
 # Scala.js typings for wordpress__redux-routine
 
-Typings are for version 3.4
+Typings are for version 4.33.0
 
 ## Library description:
 Redux middleware for generator coroutines.
@@ -24,7 +24,7 @@ Redux middleware for generator coroutines.
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

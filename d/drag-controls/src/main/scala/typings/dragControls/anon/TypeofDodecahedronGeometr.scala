@@ -11,5 +11,6 @@ trait TypeofDodecahedronGeometr
   extends StObject
      with Instantiable0[DodecahedronGeometry] {
   
-  def fromJSON(data: Any): typings.three.srcGeometriesDodecahedronGeometryMod.DodecahedronGeometry = js.native
+  /** @internal */
+  def fromJSON(data: js.Object): typings.three.srcGeometriesDodecahedronGeometryMod.DodecahedronGeometry = js.native
 }

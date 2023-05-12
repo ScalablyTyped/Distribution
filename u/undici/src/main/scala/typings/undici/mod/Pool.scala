@@ -1,7 +1,7 @@
 package typings.undici.mod
 
 import typings.node.urlMod.URL_
-import typings.undici.typesPoolMod.Options
+import typings.undici.typesPoolMod.Pool.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("undici", "Pool")
 @js.native
 open class Pool protected ()
-  extends typings.undici.typesPoolMod.^ {
+  extends typings.undici.typesPoolMod.default {
   def this(url: String) = this()
   def this(url: URL_) = this()
   def this(url: String, options: Options) = this()

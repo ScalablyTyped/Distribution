@@ -8,7 +8,6 @@ trait Targetuser extends StObject {
   
   var target_user: String
   
-  /** The handle for the GitHub user account. */
   var username: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['username'] */ js.Any
 }
 object Targetuser {

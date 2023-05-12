@@ -17,7 +17,7 @@ trait SearchRequest extends StObject {
   var NextToken: js.UndefOr[typings.awsSdk.clientsSagemakerMod.NextToken] = js.undefined
   
   /**
-    * The name of the Amazon SageMaker resource to search for.
+    * The name of the SageMaker resource to search for.
     */
   var Resource: ResourceType
   

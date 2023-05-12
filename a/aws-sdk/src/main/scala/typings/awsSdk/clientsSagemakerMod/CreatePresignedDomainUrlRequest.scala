@@ -22,6 +22,11 @@ trait CreatePresignedDomainUrlRequest extends StObject {
   var SessionExpirationDurationInSeconds: js.UndefOr[typings.awsSdk.clientsSagemakerMod.SessionExpirationDurationInSeconds] = js.undefined
   
   /**
+    * The name of the space.
+    */
+  var SpaceName: js.UndefOr[typings.awsSdk.clientsSagemakerMod.SpaceName] = js.undefined
+  
+  /**
     * The name of the UserProfile to sign-in as.
     */
   var UserProfileName: typings.awsSdk.clientsSagemakerMod.UserProfileName
@@ -45,6 +50,10 @@ object CreatePresignedDomainUrlRequest {
     inline def setSessionExpirationDurationInSeconds(value: SessionExpirationDurationInSeconds): Self = StObject.set(x, "SessionExpirationDurationInSeconds", value.asInstanceOf[js.Any])
     
     inline def setSessionExpirationDurationInSecondsUndefined: Self = StObject.set(x, "SessionExpirationDurationInSeconds", js.undefined)
+    
+    inline def setSpaceName(value: SpaceName): Self = StObject.set(x, "SpaceName", value.asInstanceOf[js.Any])
+    
+    inline def setSpaceNameUndefined: Self = StObject.set(x, "SpaceName", js.undefined)
     
     inline def setUserProfileName(value: UserProfileName): Self = StObject.set(x, "UserProfileName", value.asInstanceOf[js.Any])
   }

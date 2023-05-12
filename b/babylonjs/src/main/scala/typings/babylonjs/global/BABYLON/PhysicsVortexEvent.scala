@@ -24,3 +24,21 @@ open class PhysicsVortexEvent protected ()
     _options: typings.babylonjs.BABYLON.PhysicsVortexEventOptions
   ) = this()
 }
+object PhysicsVortexEvent {
+  
+  @JSGlobal("BABYLON.PhysicsVortexEvent")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @JSGlobal("BABYLON.PhysicsVortexEvent.hitData")
+  @js.native
+  def hitData: Any = js.native
+  inline def hitData_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hitData")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSGlobal("BABYLON.PhysicsVortexEvent.originOnPlane")
+  @js.native
+  def originOnPlane: Any = js.native
+  inline def originOnPlane_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("originOnPlane")(x.asInstanceOf[js.Any])
+}

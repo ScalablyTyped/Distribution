@@ -51,6 +51,8 @@ trait StackSet extends StObject {
     */
   var PermissionModel: js.UndefOr[PermissionModels] = js.undefined
   
+  var Regions: js.UndefOr[RegionList] = js.undefined
+  
   /**
     * The Amazon Resource Name (ARN) of the stack set.
     */
@@ -137,6 +139,12 @@ object StackSet {
     inline def setPermissionModel(value: PermissionModels): Self = StObject.set(x, "PermissionModel", value.asInstanceOf[js.Any])
     
     inline def setPermissionModelUndefined: Self = StObject.set(x, "PermissionModel", js.undefined)
+    
+    inline def setRegions(value: RegionList): Self = StObject.set(x, "Regions", value.asInstanceOf[js.Any])
+    
+    inline def setRegionsUndefined: Self = StObject.set(x, "Regions", js.undefined)
+    
+    inline def setRegionsVarargs(value: Region*): Self = StObject.set(x, "Regions", js.Array(value*))
     
     inline def setStackSetARN(value: StackSetARN): Self = StObject.set(x, "StackSetARN", value.asInstanceOf[js.Any])
     

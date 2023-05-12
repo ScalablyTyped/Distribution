@@ -13,7 +13,7 @@ trait InstancingData extends StObject {
   
   var count: Double
   
-  /** @type {VertexBuffer|null} */
+  /** @type {import('../platform/graphics/vertex-buffer.js').VertexBuffer|null} */
   var vertexBuffer: VertexBuffer | Null
 }
 object InstancingData {

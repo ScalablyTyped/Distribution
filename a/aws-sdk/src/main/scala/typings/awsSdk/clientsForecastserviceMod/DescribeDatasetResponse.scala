@@ -37,7 +37,7 @@ trait DescribeDatasetResponse extends StObject {
   var Domain: js.UndefOr[typings.awsSdk.clientsForecastserviceMod.Domain] = js.undefined
   
   /**
-    * The AWS Key Management Service (KMS) key and the AWS Identity and Access Management (IAM) role that Amazon Forecast can assume to access the key.
+    * The Key Management Service (KMS) key and the Identity and Access Management (IAM) role that Amazon Forecast can assume to access the key.
     */
   var EncryptionConfig: js.UndefOr[typings.awsSdk.clientsForecastserviceMod.EncryptionConfig] = js.undefined
   

@@ -1,5 +1,6 @@
 package typings.angularCommon.httpMod
 
+import typings.angularCommon.mod.XhrFactory
 import typings.angularCore.mod.ɵɵFactoryDeclaration
 import typings.angularCore.mod.ɵɵInjectableDeclaration
 import org.scalablytyped.runtime.StObject
@@ -9,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@angular/common/http", "HttpXhrBackend")
 @js.native
 open class HttpXhrBackend protected () extends HttpBackend {
-  def this(xhrFactory: typings.angularCommon.mod.XhrFactory) = this()
+  def this(xhrFactory: XhrFactory) = this()
   
   /* private */ var xhrFactory: Any = js.native
 }

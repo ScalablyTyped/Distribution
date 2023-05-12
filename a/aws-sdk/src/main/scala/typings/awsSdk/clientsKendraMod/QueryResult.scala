@@ -12,7 +12,12 @@ trait QueryResult extends StObject {
   var FacetResults: js.UndefOr[FacetResultList] = js.undefined
   
   /**
-    * The unique identifier for the search. You use QueryId to identify the search when using the feedback API.
+    * The list of featured result items. Featured results are displayed at the top of the search results page, placed above all other results for certain queries. If there's an exact match of a query, then certain documents are featured in the search results.
+    */
+  var FeaturedResultsItems: js.UndefOr[FeaturedResultsItemList] = js.undefined
+  
+  /**
+    * The identifier for the search. You use QueryId to identify the search when using the feedback API.
     */
   var QueryId: js.UndefOr[typings.awsSdk.clientsKendraMod.QueryId] = js.undefined
   
@@ -51,6 +56,12 @@ object QueryResult {
     inline def setFacetResultsUndefined: Self = StObject.set(x, "FacetResults", js.undefined)
     
     inline def setFacetResultsVarargs(value: FacetResult*): Self = StObject.set(x, "FacetResults", js.Array(value*))
+    
+    inline def setFeaturedResultsItems(value: FeaturedResultsItemList): Self = StObject.set(x, "FeaturedResultsItems", value.asInstanceOf[js.Any])
+    
+    inline def setFeaturedResultsItemsUndefined: Self = StObject.set(x, "FeaturedResultsItems", js.undefined)
+    
+    inline def setFeaturedResultsItemsVarargs(value: FeaturedResultsItem*): Self = StObject.set(x, "FeaturedResultsItems", js.Array(value*))
     
     inline def setQueryId(value: QueryId): Self = StObject.set(x, "QueryId", value.asInstanceOf[js.Any])
     

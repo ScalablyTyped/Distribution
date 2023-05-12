@@ -551,6 +551,7 @@ object sapUiUnifiedCalendarRowMod {
     
     /**
       * @SINCE 1.38.0
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:intervalSelect intervalSelect} to attached listeners.
       *
@@ -563,6 +564,8 @@ object sapUiUnifiedCalendarRowMod {
     mParameters: EndDate): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:leaveRow leaveRow} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -574,6 +577,8 @@ object sapUiUnifiedCalendarRowMod {
     mParameters: Type): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:select select} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -585,6 +590,8 @@ object sapUiUnifiedCalendarRowMod {
     mParameters: Appointment): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:startDateChange startDateChange} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -598,7 +605,7 @@ object sapUiUnifiedCalendarRowMod {
     /**
       * Focus the given `CalendarAppointment` in the `CalendarRow`.
       *
-      * @returns `this` to allow method chaining
+      * @returns Reference to `this` for method chaining
       */
     def focusAppointment(
       /**
@@ -610,12 +617,12 @@ object sapUiUnifiedCalendarRowMod {
     /**
       * Focus the `CalendarAppointment` in the `CalendarRow` that is nearest to the given date.
       *
-      * @returns `this` to allow method chaining
+      * @returns Reference to `this` for method chaining
       */
     def focusNearestAppointment(/**
       * Javascript Date object.
       */
-    oDate: js.Object): this.type = js.native
+    oDate: js.Date): this.type = js.native
     
     /**
       * @SINCE 1.81.0
@@ -925,7 +932,7 @@ object sapUiUnifiedCalendarRowMod {
       * are used in one container (e.g. `PlanningCalendar`), it is better if the container triggers the resize
       * check once and then calls this function of each `CalendarRow`.
       *
-      * @returns `this` to allow method chaining
+      * @returns Reference to `this` for method chaining
       */
     def handleResize(/**
       * The event object of the resize handler.
@@ -1455,18 +1462,15 @@ object sapUiUnifiedCalendarRowMod {
     bShowSubIntervals: Boolean): this.type = js.native
     
     /**
-      * Sets a new value for property {@link #getStartDate startDate}.
+      * Set the start date of the row.
       *
-      * Start date, as JavaScript Date object, of the row. As default, the current date is used.
-      *
-      * When called with a value of `null` or `undefined`, the default value of the property will be restored.
-      *
-      * @returns Reference to `this` in order to allow method chaining
+      * @returns Reference to `this` for method chaining
       */
+    def setStartDate(): this.type = js.native
     def setStartDate(/**
-      * New value for property `startDate`
+      * Start date, as JavaScript Date object, of the row
       */
-    oStartDate: js.Object): this.type = js.native
+    oStartDate: js.Date): this.type = js.native
     
     /**
       * Sets a new value for property {@link #getUpdateCurrentTime updateCurrentTime}.
@@ -1512,7 +1516,7 @@ object sapUiUnifiedCalendarRowMod {
       * (e.G. `PlanningCalendar`), it is better if the container triggers the interval once and then calls this
       * function of each `CalendarRow`.
       *
-      * @returns `this` to allow method chaining
+      * @returns Reference to `this` for method chaining
       */
     def updateCurrentTimeVisualization(): this.type = js.native
   }

@@ -6,8 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Count extends StObject {
   
+  /** @defaultValue `-1` */
   var count: Double
   
+  /** @defaultValue `0` */
   var offset: Double
 }
 object Count {

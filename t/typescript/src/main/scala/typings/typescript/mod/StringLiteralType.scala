@@ -15,7 +15,7 @@ object StringLiteralType {
   
   inline def apply(
     flags: TypeFlags,
-    freshType: LiteralType,
+    freshType: FreshableType,
     getApparentProperties: () => js.Array[Symbol],
     getBaseTypes: () => js.UndefOr[js.Array[BaseType]],
     getCallSignatures: () => js.Array[Signature],
@@ -39,7 +39,7 @@ object StringLiteralType {
     isTypeParameter: () => /* is typescript.typescript.TypeParameter */ Boolean,
     isUnion: () => /* is typescript.typescript.UnionType */ Boolean,
     isUnionOrIntersection: () => /* is typescript.typescript.UnionOrIntersectionType */ Boolean,
-    regularType: LiteralType,
+    regularType: FreshableType,
     symbol: Symbol,
     value: java.lang.String
   ): StringLiteralType = {

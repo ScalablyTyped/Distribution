@@ -9,7 +9,7 @@ trait GetFederationTokenRequest extends StObject {
   /**
     * <p>The duration, in seconds, that the session should last. Acceptable durations for
     *          federation sessions range from 900 seconds (15 minutes) to 129,600 seconds (36 hours), with
-    *          43,200 seconds (12 hours) as the default. Sessions obtained using Amazon Web Services account root user
+    *          43,200 seconds (12 hours) as the default. Sessions obtained using root user
     *          credentials are restricted to a maximum of 3,600 seconds (one hour). If the specified
     *          duration is longer than one hour, the session obtained by using root user credentials
     *          defaults to one hour.</p>
@@ -30,8 +30,8 @@ trait GetFederationTokenRequest extends StObject {
     * <p>An IAM policy in JSON format that you want to use as an inline session policy.</p>
     *          <p>You must pass an inline or managed <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html#policies_session">session policy</a> to
     *          this operation. You can pass a single JSON policy document to use as an inline session
-    *          policy. You can also specify up to 10 managed policies to use as managed session
-    *          policies.</p>
+    *          policy. You can also specify up to 10 managed policy Amazon Resource Names (ARNs) to use as
+    *          managed session policies.</p>
     *          <p>This parameter is optional. However, if you do not pass any session policies, then the
     *          resulting federated user session has no permissions.</p>
     *          <p>When you pass session policies, the session permissions are the intersection of the
@@ -50,14 +50,12 @@ trait GetFederationTokenRequest extends StObject {
     *          character to the end of the valid character list (\\u0020 through \\u00FF). It can also
     *          include the tab (\\u0009), linefeed (\\u000A), and carriage return (\\u000D)
     *          characters.</p>
-    *
     *          <note>
-    *             <p>An Amazon Web Services conversion compresses the passed session policies and session tags into a
-    *             packed binary format that has a separate limit. Your request can fail for this limit
-    *             even if your plaintext meets the other requirements. The <code>PackedPolicySize</code>
-    *             response element indicates by percentage how close the policies and tags for your
-    *             request are to the upper size limit.
-    *             </p>
+    *             <p>An Amazon Web Services conversion compresses the passed inline session policy, managed policy ARNs,
+    *             and session tags into a packed binary format that has a separate limit. Your request can
+    *             fail for this limit even if your plaintext meets the other requirements. The
+    *                <code>PackedPolicySize</code> response element indicates by percentage how close the
+    *             policies and tags for your request are to the upper size limit.</p>
     *          </note>
     */
   var Policy: js.UndefOr[String] = js.undefined
@@ -68,12 +66,11 @@ trait GetFederationTokenRequest extends StObject {
     *          is requesting federated access.</p>
     *          <p>You must pass an inline or managed <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html#policies_session">session policy</a> to
     *          this operation. You can pass a single JSON policy document to use as an inline session
-    *          policy. You can also specify up to 10 managed policies to use as managed session policies.
-    *          The plaintext that you use for both inline and managed session policies can't exceed 2,048
-    *          characters. You can provide up to 10 managed policy ARNs. For more information about ARNs,
-    *          see <a href="https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html">Amazon
-    *             Resource Names (ARNs) and Amazon Web Services Service Namespaces</a> in the
-    *          Amazon Web Services General Reference.</p>
+    *          policy. You can also specify up to 10 managed policy Amazon Resource Names (ARNs) to use as
+    *          managed session policies. The plaintext that you use for both inline and managed session
+    *          policies can't exceed 2,048 characters. You can provide up to 10 managed policy ARNs. For
+    *          more information about ARNs, see <a href="https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html">Amazon Resource Names (ARNs) and Amazon Web Services
+    *             Service Namespaces</a> in the Amazon Web Services General Reference.</p>
     *          <p>This parameter is optional. However, if you do not pass any session policies, then the
     *          resulting federated user session has no permissions.</p>
     *          <p>When you pass session policies, the session permissions are the intersection of the
@@ -87,14 +84,12 @@ trait GetFederationTokenRequest extends StObject {
     *             <code>Principal</code> element of the policy, the session has the permissions allowed by
     *          the policy. These permissions are granted in addition to the permissions that are granted
     *          by the session policies.</p>
-    *
     *          <note>
-    *             <p>An Amazon Web Services conversion compresses the passed session policies and session tags into a
-    *             packed binary format that has a separate limit. Your request can fail for this limit
-    *             even if your plaintext meets the other requirements. The <code>PackedPolicySize</code>
-    *             response element indicates by percentage how close the policies and tags for your
-    *             request are to the upper size limit.
-    *             </p>
+    *             <p>An Amazon Web Services conversion compresses the passed inline session policy, managed policy ARNs,
+    *             and session tags into a packed binary format that has a separate limit. Your request can
+    *             fail for this limit even if your plaintext meets the other requirements. The
+    *                <code>PackedPolicySize</code> response element indicates by percentage how close the
+    *             policies and tags for your request are to the upper size limit.</p>
     *          </note>
     */
   var PolicyArns: js.UndefOr[js.Array[PolicyDescriptorType]] = js.undefined
@@ -107,16 +102,13 @@ trait GetFederationTokenRequest extends StObject {
     *          tag keys can’t exceed 128 characters and the values can’t exceed 256 characters. For these
     *          and additional limits, see <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_iam-limits.html#reference_iam-limits-entity-length">IAM
     *             and STS Character Limits</a> in the <i>IAM User Guide</i>.</p>
-    *
     *          <note>
-    *             <p>An Amazon Web Services conversion compresses the passed session policies and session tags into a
-    *             packed binary format that has a separate limit. Your request can fail for this limit
-    *             even if your plaintext meets the other requirements. The <code>PackedPolicySize</code>
-    *             response element indicates by percentage how close the policies and tags for your
-    *             request are to the upper size limit.
-    *             </p>
+    *             <p>An Amazon Web Services conversion compresses the passed inline session policy, managed policy ARNs,
+    *             and session tags into a packed binary format that has a separate limit. Your request can
+    *             fail for this limit even if your plaintext meets the other requirements. The
+    *                <code>PackedPolicySize</code> response element indicates by percentage how close the
+    *             policies and tags for your request are to the upper size limit.</p>
     *          </note>
-    *
     *          <p>You can pass a session tag with the same key as a tag that is already attached to the
     *          user you are federating. When you do, session tags override a user tag with the same key. </p>
     *          <p>Tag key–value pairs are not case sensitive, but case is preserved. This means that you

@@ -9,7 +9,8 @@ trait ExportDeclaration
   extends StObject
      with DeclarationStatement
      with HasJSDoc
-     with HasModifiers {
+     with HasModifiers
+     with TypeOnlyCompatibleAliasDeclaration {
   
   val assertClause: js.UndefOr[AssertClause] = js.native
   
@@ -21,8 +22,7 @@ trait ExportDeclaration
   @JSName("kind")
   val kind_ExportDeclaration: typings.schematicsAngular.thirdPartyGithubDotcomMicrosoftTypeScriptLibTypescriptMod.SyntaxKind.ExportDeclaration = js.native
   
-  @JSName("modifiers")
-  val modifiers_ExportDeclaration: js.UndefOr[NodeArray[Modifier]] = js.native
+  val modifiers: js.UndefOr[NodeArray[ModifierLike]] = js.native
   
   /** If this is not a StringLiteral it will be a grammar error. */
   val moduleSpecifier: js.UndefOr[Expression] = js.native

@@ -1,18 +1,12 @@
 package typings.chartJs.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.chartJs.typesBasicMod.AnyObject
-import typings.chartJs.typesElementMod.Element
+import typings.chartJs.distTypesBasicMod.AnyObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BarElement[T /* <: BarProps */, O /* <: BarOptions */]
-  extends StObject
-     with Element[T, O]
-     with VisualElement
-/* Inlined chart.js.chart.js.ChartComponent & {  prototype :chart.js.chart.js.BarElement<chart.js.chart.js.BarProps, chart.js.chart.js.BarOptions>, new (cfg : chart.js.chart.js/types/basic.AnyObject): chart.js.chart.js.BarElement<chart.js.chart.js.BarProps, chart.js.chart.js.BarOptions>} */
+/* Inlined chart.js.chart.js/dist/types/index.ChartComponent & {  prototype :chart.js.chart.js/dist/types/index.BarElement<chart.js.chart.js/dist/types/index.BarProps, chart.js.chart.js/dist/types/index.BarOptions>, new (cfg : chart.js.chart.js/dist/types/basic.AnyObject): chart.js.chart.js/dist/types/index.BarElement<chart.js.chart.js/dist/types/index.BarProps, chart.js.chart.js/dist/types/index.BarOptions>} */
 object BarElement {
   
   @JSImport("chart.js", "BarElement")

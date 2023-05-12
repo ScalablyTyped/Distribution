@@ -17,7 +17,7 @@ trait BatchPutDocumentResponseFailedDocument extends StObject {
   var ErrorMessage: js.UndefOr[typings.awsSdk.clientsKendraMod.ErrorMessage] = js.undefined
   
   /**
-    * The unique identifier of the document.
+    * The identifier of the document.
     */
   var Id: js.UndefOr[DocumentId] = js.undefined
 }

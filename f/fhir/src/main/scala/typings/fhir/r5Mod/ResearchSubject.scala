@@ -13,26 +13,26 @@ trait ResearchSubject
      with DomainResource
      with _FhirResource {
   
-  var _actualArm: js.UndefOr[Element] = js.undefined
+  var _actualComparisonGroup: js.UndefOr[Element] = js.undefined
   
-  var _assignedArm: js.UndefOr[Element] = js.undefined
+  var _assignedComparisonGroup: js.UndefOr[Element] = js.undefined
   
   var _status: js.UndefOr[Element] = js.undefined
   
   /**
     * The name of the arm in the study the subject actually followed as part of this study.
     */
-  var actualArm: js.UndefOr[String] = js.undefined
+  var actualComparisonGroup: js.UndefOr[String] = js.undefined
   
   /**
     * Maybe this is really PlanDefinition.
     */
-  var assignedArm: js.UndefOr[String] = js.undefined
+  var assignedComparisonGroup: js.UndefOr[String] = js.undefined
   
   /**
     * A record of the patient's informed agreement to participate in the study.
     */
-  var consent: js.UndefOr[Reference] = js.undefined
+  var consent: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
     * Identifiers assigned to this research subject for a study.
@@ -79,17 +79,19 @@ object ResearchSubject {
   @scala.inline
   implicit open class MutableBuilder[Self <: ResearchSubject] (val x: Self) extends AnyVal {
     
-    inline def setActualArm(value: String): Self = StObject.set(x, "actualArm", value.asInstanceOf[js.Any])
+    inline def setActualComparisonGroup(value: String): Self = StObject.set(x, "actualComparisonGroup", value.asInstanceOf[js.Any])
     
-    inline def setActualArmUndefined: Self = StObject.set(x, "actualArm", js.undefined)
+    inline def setActualComparisonGroupUndefined: Self = StObject.set(x, "actualComparisonGroup", js.undefined)
     
-    inline def setAssignedArm(value: String): Self = StObject.set(x, "assignedArm", value.asInstanceOf[js.Any])
+    inline def setAssignedComparisonGroup(value: String): Self = StObject.set(x, "assignedComparisonGroup", value.asInstanceOf[js.Any])
     
-    inline def setAssignedArmUndefined: Self = StObject.set(x, "assignedArm", js.undefined)
+    inline def setAssignedComparisonGroupUndefined: Self = StObject.set(x, "assignedComparisonGroup", js.undefined)
     
-    inline def setConsent(value: Reference): Self = StObject.set(x, "consent", value.asInstanceOf[js.Any])
+    inline def setConsent(value: js.Array[Reference]): Self = StObject.set(x, "consent", value.asInstanceOf[js.Any])
     
     inline def setConsentUndefined: Self = StObject.set(x, "consent", js.undefined)
+    
+    inline def setConsentVarargs(value: Reference*): Self = StObject.set(x, "consent", js.Array(value*))
     
     inline def setIdentifier(value: js.Array[Identifier]): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
@@ -115,13 +117,13 @@ object ResearchSubject {
     
     inline def setSubject(value: Reference): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     
-    inline def set_actualArm(value: Element): Self = StObject.set(x, "_actualArm", value.asInstanceOf[js.Any])
+    inline def set_actualComparisonGroup(value: Element): Self = StObject.set(x, "_actualComparisonGroup", value.asInstanceOf[js.Any])
     
-    inline def set_actualArmUndefined: Self = StObject.set(x, "_actualArm", js.undefined)
+    inline def set_actualComparisonGroupUndefined: Self = StObject.set(x, "_actualComparisonGroup", js.undefined)
     
-    inline def set_assignedArm(value: Element): Self = StObject.set(x, "_assignedArm", value.asInstanceOf[js.Any])
+    inline def set_assignedComparisonGroup(value: Element): Self = StObject.set(x, "_assignedComparisonGroup", value.asInstanceOf[js.Any])
     
-    inline def set_assignedArmUndefined: Self = StObject.set(x, "_assignedArm", js.undefined)
+    inline def set_assignedComparisonGroupUndefined: Self = StObject.set(x, "_assignedComparisonGroup", js.undefined)
     
     inline def set_status(value: Element): Self = StObject.set(x, "_status", value.asInstanceOf[js.Any])
     

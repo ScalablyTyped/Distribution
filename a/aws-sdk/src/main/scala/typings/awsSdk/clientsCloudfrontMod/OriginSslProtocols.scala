@@ -12,7 +12,7 @@ trait OriginSslProtocols extends StObject {
   var Items: SslProtocolsList
   
   /**
-    * The number of SSL/TLS protocols that you want to allow CloudFront to use when establishing an HTTPS connection with this origin. 
+    * The number of SSL/TLS protocols that you want to allow CloudFront to use when establishing an HTTPS connection with this origin.
     */
   var Quantity: integer
 }

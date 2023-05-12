@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "mrmime" : "1.0.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "mrmime" : "1.0.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

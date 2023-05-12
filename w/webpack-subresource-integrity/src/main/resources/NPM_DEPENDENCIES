@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "webpack-subresource-integrity" : "5.1.0"
+      "webpack-subresource-integrity" : "5.2.0-rc.1"
     }
   ],
   "test-dependencies" : [
     {
-      "webpack-subresource-integrity" : "5.1.0"
+      "webpack-subresource-integrity" : "5.2.0-rc.1"
     }
   ],
   "compile-devDependencies" : [

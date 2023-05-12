@@ -2,6 +2,7 @@ package typings.rcVirtualList
 
 import typings.rcVirtualList.anon.Ref
 import typings.rcVirtualList.anon.Style
+import typings.rcVirtualList.esFillerMod.InnerProps
 import typings.rcVirtualList.esInterfaceMod.RenderFunc
 import typings.rcVirtualList.rcVirtualListStrings.`additions removals`
 import typings.rcVirtualList.rcVirtualListStrings.`additions text`
@@ -219,6 +220,8 @@ object esListMod {
     
     var autoCorrect: js.UndefOr[String] = js.undefined
     
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
+    
     var autoSave: js.UndefOr[String] = js.undefined
     
     var children: RenderFunc[T]
@@ -228,6 +231,8 @@ object esListMod {
     var color: js.UndefOr[String] = js.undefined
     
     var component: js.UndefOr[String | FC[Any] | (ComponentClass[Any, ComponentState])] = js.undefined
+    
+    var content: js.UndefOr[String] = js.undefined
     
     var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
@@ -257,6 +262,9 @@ object esListMod {
     var id: js.UndefOr[String] = js.undefined
     
     var inlist: js.UndefOr[Any] = js.undefined
+    
+    /** Inject to inner container props. Only use when you need pass aria related data */
+    var innerProps: js.UndefOr[InnerProps] = js.undefined
     
     var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
     
@@ -453,9 +461,13 @@ object esListMod {
     
     var radioGroup: js.UndefOr[String] = js.undefined
     
+    var rel: js.UndefOr[String] = js.undefined
+    
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
+    
+    var rev: js.UndefOr[String] = js.undefined
     
     var role: js.UndefOr[AriaRole] = js.undefined
     
@@ -710,6 +722,10 @@ object esListMod {
       
       inline def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
       
+      inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+      
+      inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+      
       inline def setAutoSave(value: String): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
       
       inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
@@ -728,9 +744,13 @@ object esListMod {
       
       inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
       
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
       inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
       inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
@@ -785,6 +805,10 @@ object esListMod {
       inline def setInlist(value: Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
       
       inline def setInlistUndefined: Self = StObject.set(x, "inlist", js.undefined)
+      
+      inline def setInnerProps(value: InnerProps): Self = StObject.set(x, "innerProps", value.asInstanceOf[js.Any])
+      
+      inline def setInnerPropsUndefined: Self = StObject.set(x, "innerProps", js.undefined)
       
       inline def setInputMode(value: none | text | tel | url | email | numeric | decimal | search): Self = StObject.set(x, "inputMode", value.asInstanceOf[js.Any])
       
@@ -1174,6 +1198,10 @@ object esListMod {
       
       inline def setRadioGroupUndefined: Self = StObject.set(x, "radioGroup", js.undefined)
       
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      
+      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+      
       inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
       inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
@@ -1181,6 +1209,10 @@ object esListMod {
       inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+      
+      inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+      
+      inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
       
       inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       

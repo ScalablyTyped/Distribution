@@ -39,7 +39,7 @@ trait OsData extends StObject {
   
   var servicepack: String
   
-  var uefi: Boolean
+  var uefi: Boolean | Null
 }
 object OsData {
   
@@ -56,10 +56,9 @@ object OsData {
     platform: String,
     release: String,
     serial: String,
-    servicepack: String,
-    uefi: Boolean
+    servicepack: String
   ): OsData = {
-    val __obj = js.Dynamic.literal(arch = arch.asInstanceOf[js.Any], build = build.asInstanceOf[js.Any], codename = codename.asInstanceOf[js.Any], codepage = codepage.asInstanceOf[js.Any], distro = distro.asInstanceOf[js.Any], fqdn = fqdn.asInstanceOf[js.Any], hostname = hostname.asInstanceOf[js.Any], kernel = kernel.asInstanceOf[js.Any], logofile = logofile.asInstanceOf[js.Any], platform = platform.asInstanceOf[js.Any], release = release.asInstanceOf[js.Any], serial = serial.asInstanceOf[js.Any], servicepack = servicepack.asInstanceOf[js.Any], uefi = uefi.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(arch = arch.asInstanceOf[js.Any], build = build.asInstanceOf[js.Any], codename = codename.asInstanceOf[js.Any], codepage = codepage.asInstanceOf[js.Any], distro = distro.asInstanceOf[js.Any], fqdn = fqdn.asInstanceOf[js.Any], hostname = hostname.asInstanceOf[js.Any], kernel = kernel.asInstanceOf[js.Any], logofile = logofile.asInstanceOf[js.Any], platform = platform.asInstanceOf[js.Any], release = release.asInstanceOf[js.Any], serial = serial.asInstanceOf[js.Any], servicepack = servicepack.asInstanceOf[js.Any], uefi = null)
     __obj.asInstanceOf[OsData]
   }
   
@@ -105,5 +104,7 @@ object OsData {
     inline def setServicepack(value: String): Self = StObject.set(x, "servicepack", value.asInstanceOf[js.Any])
     
     inline def setUefi(value: Boolean): Self = StObject.set(x, "uefi", value.asInstanceOf[js.Any])
+    
+    inline def setUefiNull: Self = StObject.set(x, "uefi", null)
   }
 }

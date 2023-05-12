@@ -12,10 +12,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Task extends StObject {
   
-  def autoAssign(tasks: js.Array[OnfleetTask]): js.Promise[Any] = js.native
+  def autoAssign(tasks: AutomaticallyAssignTaskProps): js.Promise[AutomaticallyAssignTaskResult] = js.native
   
-  // TODO need to confirm response
-  def batchCreate(tasks: js.Array[CreateTaskProps]): js.Promise[js.Array[OnfleetTask]] = js.native
+  def batchCreate(tasks: CreateMultipleTasksProps): js.Promise[CreateMultipleTasksResult] = js.native
+  
+  def batchCreateAsync(tasks: CreateMultipleTasksProps): js.Promise[CreateAsyncMultipleTaskResult] = js.native
   
   def clone(id: String): js.Promise[OnfleetTask] = js.native
   
@@ -29,6 +30,8 @@ trait Task extends StObject {
   def get(queryOrId: String): js.Promise[GetTaskResult] = js.native
   def get(queryOrId: String, queryKey: TaskQueryKey): js.Promise[GetTaskResult] = js.native
   def get(queryParams: TaskQueryParam): js.Promise[GetManyTaskResult] = js.native
+  
+  def getBatch(jobId: String): js.Promise[getBatchResult] = js.native
   
   def matchMetadata(obj: js.Array[OnfleetMetadata]): js.Promise[js.Array[MatchMetadataResult]] = js.native
   @JSName("matchMetadata")

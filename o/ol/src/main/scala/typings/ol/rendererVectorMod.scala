@@ -24,39 +24,39 @@ object rendererVectorMod {
     feature: FeatureLike,
     style: typings.ol.styleStyleMod.default,
     squaredTolerance: Double,
-    listener: js.Function1[/* p0 */ typings.ol.eventsEventMod.default, Unit]
+    listener: js.Function1[/* arg0 */ typings.ol.eventsEventMod.default, Unit]
   ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("renderFeature")(replayGroup.asInstanceOf[js.Any], feature.asInstanceOf[js.Any], style.asInstanceOf[js.Any], squaredTolerance.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   inline def renderFeature(
     replayGroup: default,
     feature: FeatureLike,
     style: typings.ol.styleStyleMod.default,
     squaredTolerance: Double,
-    listener: js.Function1[/* p0 */ typings.ol.eventsEventMod.default, Unit],
-    opt_transform: Unit,
-    opt_declutterBuilderGroup: default
-  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("renderFeature")(replayGroup.asInstanceOf[js.Any], feature.asInstanceOf[js.Any], style.asInstanceOf[js.Any], squaredTolerance.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], opt_transform.asInstanceOf[js.Any], opt_declutterBuilderGroup.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    listener: js.Function1[/* arg0 */ typings.ol.eventsEventMod.default, Unit],
+    transform: Unit,
+    declutterBuilderGroup: default
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("renderFeature")(replayGroup.asInstanceOf[js.Any], feature.asInstanceOf[js.Any], style.asInstanceOf[js.Any], squaredTolerance.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], transform.asInstanceOf[js.Any], declutterBuilderGroup.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   inline def renderFeature(
     replayGroup: default,
     feature: FeatureLike,
     style: typings.ol.styleStyleMod.default,
     squaredTolerance: Double,
-    listener: js.Function1[/* p0 */ typings.ol.eventsEventMod.default, Unit],
-    opt_transform: TransformFunction
-  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("renderFeature")(replayGroup.asInstanceOf[js.Any], feature.asInstanceOf[js.Any], style.asInstanceOf[js.Any], squaredTolerance.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], opt_transform.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    listener: js.Function1[/* arg0 */ typings.ol.eventsEventMod.default, Unit],
+    transform: TransformFunction
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("renderFeature")(replayGroup.asInstanceOf[js.Any], feature.asInstanceOf[js.Any], style.asInstanceOf[js.Any], squaredTolerance.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], transform.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   inline def renderFeature(
     replayGroup: default,
     feature: FeatureLike,
     style: typings.ol.styleStyleMod.default,
     squaredTolerance: Double,
-    listener: js.Function1[/* p0 */ typings.ol.eventsEventMod.default, Unit],
-    opt_transform: TransformFunction,
-    opt_declutterBuilderGroup: default
-  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("renderFeature")(replayGroup.asInstanceOf[js.Any], feature.asInstanceOf[js.Any], style.asInstanceOf[js.Any], squaredTolerance.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], opt_transform.asInstanceOf[js.Any], opt_declutterBuilderGroup.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    listener: js.Function1[/* arg0 */ typings.ol.eventsEventMod.default, Unit],
+    transform: TransformFunction,
+    declutterBuilderGroup: default
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("renderFeature")(replayGroup.asInstanceOf[js.Any], feature.asInstanceOf[js.Any], style.asInstanceOf[js.Any], squaredTolerance.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], transform.asInstanceOf[js.Any], declutterBuilderGroup.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   type FeatureCallback[T] = js.Function3[
-    /* p0 */ FeatureLike, 
-    /* p1 */ typings.ol.layerLayerMod.default[typings.ol.sourceSourceMod.default], 
-    /* p2 */ typings.ol.geomSimpleGeometryMod.default, 
+    /* arg0 */ FeatureLike, 
+    /* arg1 */ typings.ol.layerLayerMod.default[typings.ol.sourceSourceMod.default, /* ol.ol/layer/Layer.default<any> */ Any], 
+    /* arg2 */ typings.ol.geomSimpleGeometryMod.default, 
     T
   ]
 }

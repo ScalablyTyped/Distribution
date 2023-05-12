@@ -1,7 +1,12 @@
 package typings.firebaseFirestore
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.firebaseFirestore.distFirestoreSrcCoreAggregateMod.AggregateType
 import typings.firebaseFirestore.distFirestoreSrcLiteApiReferenceMod.Query
+import typings.firebaseFirestore.distFirestoreSrcLiteApiUserDataWriterMod.AbstractUserDataWriter
+import typings.firebaseFirestore.distFirestoreSrcModelPathMod.FieldPath
+import typings.firebaseFirestore.distFirestoreSrcProtosFirestoreProtoApiMod.ApiClientObjectMap
+import typings.firebaseFirestore.distFirestoreSrcProtosFirestoreProtoApiMod.Value
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,19 +15,34 @@ object distFirestoreSrcLiteApiAggregateTypesMod {
   
   @JSImport("@firebase/firestore/dist/firestore/src/lite-api/aggregate_types", "AggregateField")
   @js.native
+  /**
+    * Create a new AggregateField<T>
+    * @param _aggregateType Specifies the type of aggregation operation to perform.
+    * @param _internalFieldPath Optionally specifies the field that is aggregated.
+    * @internal
+    */
   open class AggregateField[T] () extends StObject {
+    def this(_aggregateType: AggregateType) = this()
+    def this(_aggregateType: Unit, _internalFieldPath: FieldPath) = this()
+    def this(_aggregateType: AggregateType, _internalFieldPath: FieldPath) = this()
+    
+    val _aggregateType: AggregateType = js.native
+    
+    val _internalFieldPath: js.UndefOr[FieldPath] = js.native
     
     /** A type string to uniquely identify instances of this class. */
-    var `type`: String = js.native
+    val `type`: /* "AggregateField" */ String = js.native
   }
   
   @JSImport("@firebase/firestore/dist/firestore/src/lite-api/aggregate_types", "AggregateQuerySnapshot")
   @js.native
   open class AggregateQuerySnapshot[T /* <: AggregateSpec */] protected () extends StObject {
     /** @hideconstructor */
-    def this(query: Query[Any], _data: AggregateSpecData[T]) = this()
+    def this(query: Query[Any], _userDataWriter: AbstractUserDataWriter, _data: ApiClientObjectMap[Value]) = this()
     
     /* private */ val _data: Any = js.native
+    
+    /* private */ val _userDataWriter: Any = js.native
     
     /**
       * Returns the results of the aggregations performed over the underlying
@@ -47,7 +67,7 @@ object distFirestoreSrcLiteApiAggregateTypesMod {
     val `type`: /* "AggregateQuerySnapshot" */ String = js.native
   }
   
-  type AggregateFieldType = AggregateField[Double]
+  type AggregateFieldType = AggregateField[Double | Null]
   
   type AggregateSpec = StringDictionary[AggregateFieldType]
   

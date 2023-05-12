@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListRulesRequest extends StObject {
   
   /**
+    * The lock state of the retention rules to list. Only retention rules with the specified lock state are returned.
+    */
+  var LockState: js.UndefOr[typings.awsSdk.clientsRbinMod.LockState] = js.undefined
+  
+  /**
     * The maximum number of results to return with a single call. To retrieve the remaining results, make another call with the returned NextToken value.
     */
   var MaxResults: js.UndefOr[typings.awsSdk.clientsRbinMod.MaxResults] = js.undefined
@@ -35,6 +40,10 @@ object ListRulesRequest {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: ListRulesRequest] (val x: Self) extends AnyVal {
+    
+    inline def setLockState(value: LockState): Self = StObject.set(x, "LockState", value.asInstanceOf[js.Any])
+    
+    inline def setLockStateUndefined: Self = StObject.set(x, "LockState", js.undefined)
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

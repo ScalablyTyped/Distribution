@@ -13,7 +13,6 @@ trait JSTree
   
   /**
     * appends HTML content to the tree. Used internally.
-    * @private
     * @name _append_html_data(obj, data)
     * @param  {mixed} obj the node to append to
     * @param  {String} data the HTML string to parse and append
@@ -24,7 +23,6 @@ trait JSTree
   
   /**
     * appends JSON content to the tree. Used internally.
-    * @private
     * @name _append_json_data(obj, data)
     * @param  {mixed} dom the node to append to
     * @param  {String} data the JSON object to parse and append
@@ -37,7 +35,6 @@ trait JSTree
   /**
     * Cascades checked state to a node and all its descendants. This function does NOT affect hidden and disabled nodes (or their descendants).
     * However if these unaffected nodes are already selected their ids will be included in the returned array.
-    * @private
     * @param {string} id the node ID
     * @param {bool} checkedState should the nodes be checked or not
     * @returns {Array} Array of all node id's (in this tree branch) that are checked.
@@ -53,7 +50,6 @@ trait JSTree
   
   /**
     * gets the first child of a DOM node. Used internally.
-    * @private
     * @name _firstChild(dom)
     * @param  {DOMElement} dom
     * @return {DOMElement}
@@ -64,7 +60,6 @@ trait JSTree
   
   /**
     * handles the actual loading of a node. Used only internally.
-    * @private
     * @name _load_node(obj [, callback])
     * @param  {mixed} obj
     * @param  {function} callback a function to be executed once loading is complete, the function is executed in the instance's scope and receives one argument - a boolean status
@@ -75,7 +70,6 @@ trait JSTree
   
   /**
     * load an array of nodes (will also load unavailable nodes as soon as they appear in the structure). Used internally.
-    * @private
     * @name _load_nodes(nodes [, callback])
     * @param  {array} nodes
     * @param  {function} callback a function to be executed once loading is complete, the function is executed in the instance's scope and receives one argument - the array passed to _load_nodes
@@ -107,7 +101,6 @@ trait JSTree
   
   /**
     * gets the next sibling of a DOM node. Used internally.
-    * @private
     * @name _nextSibling(dom)
     * @param  {DOMElement} dom
     * @return {DOMElement}
@@ -116,7 +109,6 @@ trait JSTree
   
   /**
     * adds a node to the list of nodes to redraw. Used only internally.
-    * @private
     * @name _node_changed(obj)
     * @param  {mixed} obj
     */
@@ -126,14 +118,12 @@ trait JSTree
     * opens every parent of a node (node should be loaded)
     * @name _open_to(obj)
     * @param {mixed} obj the node to reveal
-    * @private
     */
   def _open_to(obj: Any): Unit = js.native
   
   /**
     * parses a node from a JSON object (used when dealing with flat data, which has no nesting of children,
     * but has id and parent properties) and appends it to the in memory tree model. Used internally.
-    * @private
     * @name _parse_model_from_flat_json(d [, p, ps])
     * @param  {Object} d the JSON object to parse
     * @param  {String} p the parent ID
@@ -147,7 +137,6 @@ trait JSTree
   
   /**
     * parses a node from a jQuery object and appends them to the in memory tree model. Used internally.
-    * @private
     * @name _parse_model_from_html(d [, p, ps])
     * @param  {jQuery} d the jQuery object to parse
     * @param  {String} p the parent ID
@@ -161,7 +150,6 @@ trait JSTree
   
   /**
     * parses a node from a JSON object and appends it to the in memory tree model. Used internally.
-    * @private
     * @name _parse_model_from_json(d [, p, ps])
     * @param  {Object} d the JSON object to parse
     * @param  {String} p the parent ID
@@ -175,7 +163,6 @@ trait JSTree
   
   /**
     * gets the previous sibling of a DOM node. Used internally.
-    * @private
     * @name _previousSibling(dom)
     * @param  {DOMElement} dom
     * @return {DOMElement}
@@ -184,7 +171,6 @@ trait JSTree
   
   /**
     * redraws all nodes that need to be redrawn. Used internally.
-    * @private
     * @name _redraw()
     * @trigger redraw.jstree
     */
@@ -192,7 +178,6 @@ trait JSTree
   
   /**
     * opens nodes that need to be opened to reveal the search results. Used only internally.
-    * @private
     * @name _search_open(d)
     * @param {Array} d an array of node IDs
     * @plugin search
@@ -208,13 +193,11 @@ trait JSTree
     * @param {Number} i the object of items to show
     * @plugin contextmenu
     * @trigger show_contextmenu.jstree
-    * @private
     */
   def _show_contextmenu(obj: Any, x: Double, y: Double, i: Double): Unit = js.native
   
   /**
     * set the undetermined state where and if necessary. Used internally.
-    * @private
     * @name _undetermined()
     * @plugin checkbox
     */
@@ -222,7 +205,6 @@ trait JSTree
   
   /**
     * called when a node is selected by the user. Used internally.
-    * @private
     * @name activate_node(obj, e)
     * @param {mixed} obj the node
     * @param {Object} e the related event
@@ -232,7 +214,6 @@ trait JSTree
   
   /**
     * bind all events. Used internally.
-    * @private
     * @name bind()
     */
   def bind(): Any = js.native
@@ -246,7 +227,6 @@ trait JSTree
   
   /**
     * check if an operation is premitted on the tree. Used internally.
-    * @private
     * @name check(chk, obj, par, pos)
     * @param  {String} chk the operation to check, can be "create_node", "rename_node", "delete_node", "copy_node" or "move_node"
     * @param  {mixed} obj the node
@@ -602,7 +582,6 @@ trait JSTree
   
   /**
     * removes the hover state from a nodecalled when a node is no longer hovered by the user. Used internally.
-    * @private
     * @name dehover_node(obj)
     * @param {mixed} obj
     * @trigger dehover_node.jstree
@@ -666,7 +645,6 @@ trait JSTree
   
   /**
     * redraws a single node's children. Used internally.
-    * @private
     * @name draw_children(node)
     * @param {mixed} node the node whose children will be redrawn
     */
@@ -764,7 +742,6 @@ trait JSTree
   
   /**
     * trigger an event. Used internally.
-    * @private
     * @name trigger(ev [, data])
     * @param  {String} ev the name of the event to trigger
     * @param  {Object} data additional data to pass with the event
@@ -782,7 +759,6 @@ trait JSTree
   
   /**
     * returns the jQuery extended main UL node inside the instance container. Used internally.
-    * @private
     * @name get_container_ul()
     * @return {jQuery}
     */
@@ -894,14 +870,12 @@ trait JSTree
   /**
     * gets the current state of the tree so that it can be restored later with `set_state(state)`. Used internally.
     * @name get_state()
-    * @private
     * @return {Object}
     */
   def get_state(): Any = js.native
   
   /**
     * gets string replacements (localization). Used internally.
-    * @private
     * @name get_string(key)
     * @param  {String} key
     * @return {String}
@@ -1027,7 +1001,6 @@ trait JSTree
   
   /**
     * applies the hover state on a node, called when a node is hovered by the user. Used internally.
-    * @private
     * @name hover_node(obj)
     * @param {mixed} obj
     * @trigger hover_node.jstree
@@ -1038,7 +1011,6 @@ trait JSTree
   def init(el: JQuery, options: Any): Unit = js.native
   /**
     * used to decorate an instance with a plugin. Used internally.
-    * @private
     * @name init(el, options)
     * @param {DOMElement|jQuery|String} el the element we are transforming
     * @param {Object} options options for this instance
@@ -1410,7 +1382,6 @@ trait JSTree
   
   /**
     * used to decorate an instance with a plugin. Used internally.
-    * @private
     * @name plugin(deco [, opts])
     * @param  {String} deco the plugin to decorate with
     * @param  {Object} opts options for the plugin
@@ -1429,7 +1400,6 @@ trait JSTree
   
   /**
     * redraws a single node. Used internally.
-    * @private
     * @name redraw_node(node, deep, is_callback, force_render)
     * @param {mixed} node the node to redraw
     * @param {Boolean} deep should child nodes be redrawn too
@@ -1693,7 +1663,6 @@ trait JSTree
   /**
     * sets the state of the tree. Used internally.
     * @name set_state(state [, callback])
-    * @private
     * @param {Object} state the state to restore
     * @param {Function} callback an optional function to execute once the state is restored.
     * @trigger set_state.jstree
@@ -1702,7 +1671,6 @@ trait JSTree
   
   /**
     * set the text value of a node. Used internally, please use `rename_node(obj, val)`.
-    * @private
     * @name set_text(obj, val)
     * @param  {mixed} obj the node, you can pass an array to set the text on multiple nodes
     * @param  {String} val the new text value
@@ -1828,7 +1796,6 @@ trait JSTree
     */
   /**
     * used to sort a node's children
-    * @private
     * @name sort(obj [, deep])
     * @param  {mixed} obj the node
     * @param {Boolean} deep if set to `true` nodes are sorted recursively.
@@ -1840,7 +1807,6 @@ trait JSTree
   
   /**
     * part of the destroying of an instance. Used internally.
-    * @private
     * @name teardown()
     */
   def teardown(): Unit = js.native
@@ -1885,7 +1851,6 @@ trait JSTree
   
   /**
     * part of the destroying of an instance. Used internally.
-    * @private
     * @name unbind()
     */
   def unbind(): Any = js.native

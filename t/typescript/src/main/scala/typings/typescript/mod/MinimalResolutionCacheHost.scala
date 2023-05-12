@@ -4,6 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+  * Used by services to specify the minimum host area required to set up source files under any compilation settings
+  */
 trait MinimalResolutionCacheHost
   extends StObject
      with ModuleResolutionHost {

@@ -20,7 +20,7 @@ trait Commentsurl extends StObject {
   
   var description: String | Null
   
-  var files: StringDictionary[Filename]
+  var files: StringDictionary[js.UndefOr[Rawurl]]
   
   var forks: js.UndefOr[js.Array[Any]] = js.undefined
   
@@ -63,7 +63,7 @@ object Commentsurl {
     comments_url: String,
     commits_url: String,
     created_at: String,
-    files: StringDictionary[Filename],
+    files: StringDictionary[js.UndefOr[Rawurl]],
     forks_url: String,
     git_pull_url: String,
     git_push_url: String,
@@ -93,7 +93,7 @@ object Commentsurl {
     
     inline def setDescriptionNull: Self = StObject.set(x, "description", null)
     
-    inline def setFiles(value: StringDictionary[Filename]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+    inline def setFiles(value: StringDictionary[js.UndefOr[Rawurl]]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
     inline def setForks(value: js.Array[Any]): Self = StObject.set(x, "forks", value.asInstanceOf[js.Any])
     

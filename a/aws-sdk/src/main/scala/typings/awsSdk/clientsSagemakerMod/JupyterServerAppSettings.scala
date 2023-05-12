@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait JupyterServerAppSettings extends StObject {
   
   /**
+    * A list of Git repositories that SageMaker automatically displays to users for cloning in the JupyterServer application.
+    */
+  var CodeRepositories: js.UndefOr[typings.awsSdk.clientsSagemakerMod.CodeRepositories] = js.undefined
+  
+  /**
     * The default instance type and the Amazon Resource Name (ARN) of the default SageMaker image used by the JupyterServer app. If you use the LifecycleConfigArns parameter, then this parameter is also required.
     */
   var DefaultResourceSpec: js.UndefOr[ResourceSpec] = js.undefined
@@ -25,6 +30,12 @@ object JupyterServerAppSettings {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: JupyterServerAppSettings] (val x: Self) extends AnyVal {
+    
+    inline def setCodeRepositories(value: CodeRepositories): Self = StObject.set(x, "CodeRepositories", value.asInstanceOf[js.Any])
+    
+    inline def setCodeRepositoriesUndefined: Self = StObject.set(x, "CodeRepositories", js.undefined)
+    
+    inline def setCodeRepositoriesVarargs(value: CodeRepository*): Self = StObject.set(x, "CodeRepositories", js.Array(value*))
     
     inline def setDefaultResourceSpec(value: ResourceSpec): Self = StObject.set(x, "DefaultResourceSpec", value.asInstanceOf[js.Any])
     

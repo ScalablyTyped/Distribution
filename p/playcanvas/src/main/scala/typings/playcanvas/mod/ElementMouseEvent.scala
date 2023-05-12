@@ -16,10 +16,10 @@ open class ElementMouseEvent protected () extends ElementInputEvent {
     * Create an instance of an ElementMouseEvent.
     *
     * @param {MouseEvent} event - The MouseEvent that was originally raised.
-    * @param {ElementComponent} element - The ElementComponent that this event was originally
-    * raised on.
-    * @param {CameraComponent} camera - The CameraComponent that this event was originally raised
-    * via.
+    * @param {import('../components/element/component.js').ElementComponent} element - The
+    * ElementComponent that this event was originally raised on.
+    * @param {import('../components/camera/component.js').CameraComponent} camera - The
+    * CameraComponent that this event was originally raised via.
     * @param {number} x - The x coordinate.
     * @param {number} y - The y coordinate.
     * @param {number} lastX - The last x coordinate.

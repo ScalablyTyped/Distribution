@@ -15,12 +15,26 @@ trait TimestreamWrite extends Service {
   var config_TimestreamWrite: ConfigBase & ClientConfiguration = js.native
   
   /**
-    * Creates a new Timestream database. If the KMS key is not specified, the database will be encrypted with a Timestream managed KMS key located in your account. Refer to Amazon Web Services managed KMS keys for more info. Service quotas apply. See code sample for details. 
+    * Creates a new Timestream batch load task. A batch load task processes data from a CSV source in an S3 location and writes to a Timestream table. A mapping from source to target is defined in a batch load task. Errors and events are written to a report at an S3 location. For the report, if the KMS key is not specified, the batch load task will be encrypted with a Timestream managed KMS key located in your account. For more information, see Amazon Web Services managed keys. Service quotas apply. For details, see code sample.
+    */
+  def createBatchLoadTask(): Request[CreateBatchLoadTaskResponse, AWSError] = js.native
+  def createBatchLoadTask(callback: js.Function2[/* err */ AWSError, /* data */ CreateBatchLoadTaskResponse, Unit]): Request[CreateBatchLoadTaskResponse, AWSError] = js.native
+  /**
+    * Creates a new Timestream batch load task. A batch load task processes data from a CSV source in an S3 location and writes to a Timestream table. A mapping from source to target is defined in a batch load task. Errors and events are written to a report at an S3 location. For the report, if the KMS key is not specified, the batch load task will be encrypted with a Timestream managed KMS key located in your account. For more information, see Amazon Web Services managed keys. Service quotas apply. For details, see code sample.
+    */
+  def createBatchLoadTask(params: CreateBatchLoadTaskRequest): Request[CreateBatchLoadTaskResponse, AWSError] = js.native
+  def createBatchLoadTask(
+    params: CreateBatchLoadTaskRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateBatchLoadTaskResponse, Unit]
+  ): Request[CreateBatchLoadTaskResponse, AWSError] = js.native
+  
+  /**
+    * Creates a new Timestream database. If the KMS key is not specified, the database will be encrypted with a Timestream managed KMS key located in your account. For more information, see Amazon Web Services managed keys. Service quotas apply. For details, see code sample. 
     */
   def createDatabase(): Request[CreateDatabaseResponse, AWSError] = js.native
   def createDatabase(callback: js.Function2[/* err */ AWSError, /* data */ CreateDatabaseResponse, Unit]): Request[CreateDatabaseResponse, AWSError] = js.native
   /**
-    * Creates a new Timestream database. If the KMS key is not specified, the database will be encrypted with a Timestream managed KMS key located in your account. Refer to Amazon Web Services managed KMS keys for more info. Service quotas apply. See code sample for details. 
+    * Creates a new Timestream database. If the KMS key is not specified, the database will be encrypted with a Timestream managed KMS key located in your account. For more information, see Amazon Web Services managed keys. Service quotas apply. For details, see code sample. 
     */
   def createDatabase(params: CreateDatabaseRequest): Request[CreateDatabaseResponse, AWSError] = js.native
   def createDatabase(
@@ -29,12 +43,12 @@ trait TimestreamWrite extends Service {
   ): Request[CreateDatabaseResponse, AWSError] = js.native
   
   /**
-    * The CreateTable operation adds a new table to an existing database in your account. In an Amazon Web Services account, table names must be at least unique within each Region if they are in the same database. You may have identical table names in the same Region if the tables are in separate databases. While creating the table, you must specify the table name, database name, and the retention properties. Service quotas apply. See code sample for details. 
+    * Adds a new table to an existing database in your account. In an Amazon Web Services account, table names must be at least unique within each Region if they are in the same database. You might have identical table names in the same Region if the tables are in separate databases. While creating the table, you must specify the table name, database name, and the retention properties. Service quotas apply. See code sample for details. 
     */
   def createTable(): Request[CreateTableResponse, AWSError] = js.native
   def createTable(callback: js.Function2[/* err */ AWSError, /* data */ CreateTableResponse, Unit]): Request[CreateTableResponse, AWSError] = js.native
   /**
-    * The CreateTable operation adds a new table to an existing database in your account. In an Amazon Web Services account, table names must be at least unique within each Region if they are in the same database. You may have identical table names in the same Region if the tables are in separate databases. While creating the table, you must specify the table name, database name, and the retention properties. Service quotas apply. See code sample for details. 
+    * Adds a new table to an existing database in your account. In an Amazon Web Services account, table names must be at least unique within each Region if they are in the same database. You might have identical table names in the same Region if the tables are in separate databases. While creating the table, you must specify the table name, database name, and the retention properties. Service quotas apply. See code sample for details. 
     */
   def createTable(params: CreateTableRequest): Request[CreateTableResponse, AWSError] = js.native
   def createTable(
@@ -43,12 +57,12 @@ trait TimestreamWrite extends Service {
   ): Request[CreateTableResponse, AWSError] = js.native
   
   /**
-    * Deletes a given Timestream database. This is an irreversible operation. After a database is deleted, the time series data from its tables cannot be recovered.   All tables in the database must be deleted first, or a ValidationException error will be thrown.  Due to the nature of distributed retries, the operation can return either success or a ResourceNotFoundException. Clients should consider them equivalent.  See code sample for details.
+    * Deletes a given Timestream database. This is an irreversible operation. After a database is deleted, the time-series data from its tables cannot be recovered.   All tables in the database must be deleted first, or a ValidationException error will be thrown.  Due to the nature of distributed retries, the operation can return either success or a ResourceNotFoundException. Clients should consider them equivalent.  See code sample for details.
     */
   def deleteDatabase(): Request[js.Object, AWSError] = js.native
   def deleteDatabase(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Deletes a given Timestream database. This is an irreversible operation. After a database is deleted, the time series data from its tables cannot be recovered.   All tables in the database must be deleted first, or a ValidationException error will be thrown.  Due to the nature of distributed retries, the operation can return either success or a ResourceNotFoundException. Clients should consider them equivalent.  See code sample for details.
+    * Deletes a given Timestream database. This is an irreversible operation. After a database is deleted, the time-series data from its tables cannot be recovered.   All tables in the database must be deleted first, or a ValidationException error will be thrown.  Due to the nature of distributed retries, the operation can return either success or a ResourceNotFoundException. Clients should consider them equivalent.  See code sample for details.
     */
   def deleteDatabase(params: DeleteDatabaseRequest): Request[js.Object, AWSError] = js.native
   def deleteDatabase(
@@ -57,15 +71,29 @@ trait TimestreamWrite extends Service {
   ): Request[js.Object, AWSError] = js.native
   
   /**
-    * Deletes a given Timestream table. This is an irreversible operation. After a Timestream database table is deleted, the time series data stored in the table cannot be recovered.   Due to the nature of distributed retries, the operation can return either success or a ResourceNotFoundException. Clients should consider them equivalent.  See code sample for details.
+    * Deletes a given Timestream table. This is an irreversible operation. After a Timestream database table is deleted, the time-series data stored in the table cannot be recovered.   Due to the nature of distributed retries, the operation can return either success or a ResourceNotFoundException. Clients should consider them equivalent.  See code sample for details.
     */
   def deleteTable(): Request[js.Object, AWSError] = js.native
   def deleteTable(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Deletes a given Timestream table. This is an irreversible operation. After a Timestream database table is deleted, the time series data stored in the table cannot be recovered.   Due to the nature of distributed retries, the operation can return either success or a ResourceNotFoundException. Clients should consider them equivalent.  See code sample for details.
+    * Deletes a given Timestream table. This is an irreversible operation. After a Timestream database table is deleted, the time-series data stored in the table cannot be recovered.   Due to the nature of distributed retries, the operation can return either success or a ResourceNotFoundException. Clients should consider them equivalent.  See code sample for details.
     */
   def deleteTable(params: DeleteTableRequest): Request[js.Object, AWSError] = js.native
   def deleteTable(params: DeleteTableRequest, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Returns information about the batch load task, including configurations, mappings, progress, and other details. Service quotas apply. See code sample for details.
+    */
+  def describeBatchLoadTask(): Request[DescribeBatchLoadTaskResponse, AWSError] = js.native
+  def describeBatchLoadTask(callback: js.Function2[/* err */ AWSError, /* data */ DescribeBatchLoadTaskResponse, Unit]): Request[DescribeBatchLoadTaskResponse, AWSError] = js.native
+  /**
+    * Returns information about the batch load task, including configurations, mappings, progress, and other details. Service quotas apply. See code sample for details.
+    */
+  def describeBatchLoadTask(params: DescribeBatchLoadTaskRequest): Request[DescribeBatchLoadTaskResponse, AWSError] = js.native
+  def describeBatchLoadTask(
+    params: DescribeBatchLoadTaskRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeBatchLoadTaskResponse, Unit]
+  ): Request[DescribeBatchLoadTaskResponse, AWSError] = js.native
   
   /**
     * Returns information about the database, including the database name, time that the database was created, and the total number of tables found within the database. Service quotas apply. See code sample for details.
@@ -82,12 +110,12 @@ trait TimestreamWrite extends Service {
   ): Request[DescribeDatabaseResponse, AWSError] = js.native
   
   /**
-    * DescribeEndpoints returns a list of available endpoints to make Timestream API calls against. This API is available through both Write and Query. Because the Timestream SDKs are designed to transparently work with the service’s architecture, including the management and mapping of the service endpoints, it is not recommended that you use this API unless:   You are using VPC endpoints (Amazon Web Services PrivateLink) with Timestream    Your application uses a programming language that does not yet have SDK support   You require better control over the client-side implementation   For detailed information on how and when to use and implement DescribeEndpoints, see The Endpoint Discovery Pattern.
+    * Returns a list of available endpoints to make Timestream API calls against. This API operation is available through both the Write and Query APIs. Because the Timestream SDKs are designed to transparently work with the service’s architecture, including the management and mapping of the service endpoints, we don't recommend that you use this API operation unless:   You are using VPC endpoints (Amazon Web Services PrivateLink) with Timestream    Your application uses a programming language that does not yet have SDK support   You require better control over the client-side implementation   For detailed information on how and when to use and implement DescribeEndpoints, see The Endpoint Discovery Pattern.
     */
   def describeEndpoints(): Request[DescribeEndpointsResponse, AWSError] = js.native
   def describeEndpoints(callback: js.Function2[/* err */ AWSError, /* data */ DescribeEndpointsResponse, Unit]): Request[DescribeEndpointsResponse, AWSError] = js.native
   /**
-    * DescribeEndpoints returns a list of available endpoints to make Timestream API calls against. This API is available through both Write and Query. Because the Timestream SDKs are designed to transparently work with the service’s architecture, including the management and mapping of the service endpoints, it is not recommended that you use this API unless:   You are using VPC endpoints (Amazon Web Services PrivateLink) with Timestream    Your application uses a programming language that does not yet have SDK support   You require better control over the client-side implementation   For detailed information on how and when to use and implement DescribeEndpoints, see The Endpoint Discovery Pattern.
+    * Returns a list of available endpoints to make Timestream API calls against. This API operation is available through both the Write and Query APIs. Because the Timestream SDKs are designed to transparently work with the service’s architecture, including the management and mapping of the service endpoints, we don't recommend that you use this API operation unless:   You are using VPC endpoints (Amazon Web Services PrivateLink) with Timestream    Your application uses a programming language that does not yet have SDK support   You require better control over the client-side implementation   For detailed information on how and when to use and implement DescribeEndpoints, see The Endpoint Discovery Pattern.
     */
   def describeEndpoints(params: DescribeEndpointsRequest): Request[DescribeEndpointsResponse, AWSError] = js.native
   def describeEndpoints(
@@ -110,6 +138,20 @@ trait TimestreamWrite extends Service {
   ): Request[DescribeTableResponse, AWSError] = js.native
   
   /**
+    * Provides a list of batch load tasks, along with the name, status, when the task is resumable until, and other details. See code sample for details.
+    */
+  def listBatchLoadTasks(): Request[ListBatchLoadTasksResponse, AWSError] = js.native
+  def listBatchLoadTasks(callback: js.Function2[/* err */ AWSError, /* data */ ListBatchLoadTasksResponse, Unit]): Request[ListBatchLoadTasksResponse, AWSError] = js.native
+  /**
+    * Provides a list of batch load tasks, along with the name, status, when the task is resumable until, and other details. See code sample for details.
+    */
+  def listBatchLoadTasks(params: ListBatchLoadTasksRequest): Request[ListBatchLoadTasksResponse, AWSError] = js.native
+  def listBatchLoadTasks(
+    params: ListBatchLoadTasksRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListBatchLoadTasksResponse, Unit]
+  ): Request[ListBatchLoadTasksResponse, AWSError] = js.native
+  
+  /**
     * Returns a list of your Timestream databases. Service quotas apply. See code sample for details. 
     */
   def listDatabases(): Request[ListDatabasesResponse, AWSError] = js.native
@@ -124,12 +166,12 @@ trait TimestreamWrite extends Service {
   ): Request[ListDatabasesResponse, AWSError] = js.native
   
   /**
-    * A list of tables, along with the name, status and retention properties of each table. See code sample for details. 
+    * Provides a list of tables, along with the name, status, and retention properties of each table. See code sample for details. 
     */
   def listTables(): Request[ListTablesResponse, AWSError] = js.native
   def listTables(callback: js.Function2[/* err */ AWSError, /* data */ ListTablesResponse, Unit]): Request[ListTablesResponse, AWSError] = js.native
   /**
-    * A list of tables, along with the name, status and retention properties of each table. See code sample for details. 
+    * Provides a list of tables, along with the name, status, and retention properties of each table. See code sample for details. 
     */
   def listTables(params: ListTablesRequest): Request[ListTablesResponse, AWSError] = js.native
   def listTables(
@@ -138,12 +180,12 @@ trait TimestreamWrite extends Service {
   ): Request[ListTablesResponse, AWSError] = js.native
   
   /**
-    *  List all tags on a Timestream resource. 
+    *  Lists all tags on a Timestream resource. 
     */
   def listTagsForResource(): Request[ListTagsForResourceResponse, AWSError] = js.native
   def listTagsForResource(callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResponse, Unit]): Request[ListTagsForResourceResponse, AWSError] = js.native
   /**
-    *  List all tags on a Timestream resource. 
+    *  Lists all tags on a Timestream resource. 
     */
   def listTagsForResource(params: ListTagsForResourceRequest): Request[ListTagsForResourceResponse, AWSError] = js.native
   def listTagsForResource(
@@ -152,12 +194,26 @@ trait TimestreamWrite extends Service {
   ): Request[ListTagsForResourceResponse, AWSError] = js.native
   
   /**
-    *  Associate a set of tags with a Timestream resource. You can then activate these user-defined tags so that they appear on the Billing and Cost Management console for cost allocation tracking. 
+    *  
+    */
+  def resumeBatchLoadTask(): Request[ResumeBatchLoadTaskResponse, AWSError] = js.native
+  def resumeBatchLoadTask(callback: js.Function2[/* err */ AWSError, /* data */ ResumeBatchLoadTaskResponse, Unit]): Request[ResumeBatchLoadTaskResponse, AWSError] = js.native
+  /**
+    *  
+    */
+  def resumeBatchLoadTask(params: ResumeBatchLoadTaskRequest): Request[ResumeBatchLoadTaskResponse, AWSError] = js.native
+  def resumeBatchLoadTask(
+    params: ResumeBatchLoadTaskRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ResumeBatchLoadTaskResponse, Unit]
+  ): Request[ResumeBatchLoadTaskResponse, AWSError] = js.native
+  
+  /**
+    *  Associates a set of tags with a Timestream resource. You can then activate these user-defined tags so that they appear on the Billing and Cost Management console for cost allocation tracking. 
     */
   def tagResource(): Request[TagResourceResponse, AWSError] = js.native
   def tagResource(callback: js.Function2[/* err */ AWSError, /* data */ TagResourceResponse, Unit]): Request[TagResourceResponse, AWSError] = js.native
   /**
-    *  Associate a set of tags with a Timestream resource. You can then activate these user-defined tags so that they appear on the Billing and Cost Management console for cost allocation tracking. 
+    *  Associates a set of tags with a Timestream resource. You can then activate these user-defined tags so that they appear on the Billing and Cost Management console for cost allocation tracking. 
     */
   def tagResource(params: TagResourceRequest): Request[TagResourceResponse, AWSError] = js.native
   def tagResource(
@@ -208,12 +264,12 @@ trait TimestreamWrite extends Service {
   ): Request[UpdateTableResponse, AWSError] = js.native
   
   /**
-    * The WriteRecords operation enables you to write your time series data into Timestream. You can specify a single data point or a batch of data points to be inserted into the system. Timestream offers you with a flexible schema that auto detects the column names and data types for your Timestream tables based on the dimension names and data types of the data points you specify when invoking writes into the database. Timestream support eventual consistency read semantics. This means that when you query data immediately after writing a batch of data into Timestream, the query results might not reflect the results of a recently completed write operation. The results may also include some stale data. If you repeat the query request after a short time, the results should return the latest data. Service quotas apply.  See code sample for details.  Upserts  You can use the Version parameter in a WriteRecords request to update data points. Timestream tracks a version number with each record. Version defaults to 1 when not specified for the record in the request. Timestream will update an existing record’s measure value along with its Version upon receiving a write request with a higher Version number for that record. Upon receiving an update request where the measure value is the same as that of the existing record, Timestream still updates Version, if it is greater than the existing value of Version. You can update a data point as many times as desired, as long as the value of Version continuously increases.   For example, suppose you write a new record without indicating Version in the request. Timestream will store this record, and set Version to 1. Now, suppose you try to update this record with a WriteRecords request of the same record with a different measure value but, like before, do not provide Version. In this case, Timestream will reject this update with a RejectedRecordsException since the updated record’s version is not greater than the existing value of Version. However, if you were to resend the update request with Version set to 2, Timestream would then succeed in updating the record’s value, and the Version would be set to 2. Next, suppose you sent a WriteRecords request with this same record and an identical measure value, but with Version set to 3. In this case, Timestream would only update Version to 3. Any further updates would need to send a version number greater than 3, or the update requests would receive a RejectedRecordsException. 
+    * Enables you to write your time-series data into Timestream. You can specify a single data point or a batch of data points to be inserted into the system. Timestream offers you a flexible schema that auto detects the column names and data types for your Timestream tables based on the dimension names and data types of the data points you specify when invoking writes into the database.  Timestream supports eventual consistency read semantics. This means that when you query data immediately after writing a batch of data into Timestream, the query results might not reflect the results of a recently completed write operation. The results may also include some stale data. If you repeat the query request after a short time, the results should return the latest data. Service quotas apply.  See code sample for details.  Upserts  You can use the Version parameter in a WriteRecords request to update data points. Timestream tracks a version number with each record. Version defaults to 1 when it's not specified for the record in the request. Timestream updates an existing record’s measure value along with its Version when it receives a write request with a higher Version number for that record. When it receives an update request where the measure value is the same as that of the existing record, Timestream still updates Version, if it is greater than the existing value of Version. You can update a data point as many times as desired, as long as the value of Version continuously increases.   For example, suppose you write a new record without indicating Version in the request. Timestream stores this record, and set Version to 1. Now, suppose you try to update this record with a WriteRecords request of the same record with a different measure value but, like before, do not provide Version. In this case, Timestream will reject this update with a RejectedRecordsException since the updated record’s version is not greater than the existing value of Version.  However, if you were to resend the update request with Version set to 2, Timestream would then succeed in updating the record’s value, and the Version would be set to 2. Next, suppose you sent a WriteRecords request with this same record and an identical measure value, but with Version set to 3. In this case, Timestream would only update Version to 3. Any further updates would need to send a version number greater than 3, or the update requests would receive a RejectedRecordsException. 
     */
   def writeRecords(): Request[WriteRecordsResponse, AWSError] = js.native
   def writeRecords(callback: js.Function2[/* err */ AWSError, /* data */ WriteRecordsResponse, Unit]): Request[WriteRecordsResponse, AWSError] = js.native
   /**
-    * The WriteRecords operation enables you to write your time series data into Timestream. You can specify a single data point or a batch of data points to be inserted into the system. Timestream offers you with a flexible schema that auto detects the column names and data types for your Timestream tables based on the dimension names and data types of the data points you specify when invoking writes into the database. Timestream support eventual consistency read semantics. This means that when you query data immediately after writing a batch of data into Timestream, the query results might not reflect the results of a recently completed write operation. The results may also include some stale data. If you repeat the query request after a short time, the results should return the latest data. Service quotas apply.  See code sample for details.  Upserts  You can use the Version parameter in a WriteRecords request to update data points. Timestream tracks a version number with each record. Version defaults to 1 when not specified for the record in the request. Timestream will update an existing record’s measure value along with its Version upon receiving a write request with a higher Version number for that record. Upon receiving an update request where the measure value is the same as that of the existing record, Timestream still updates Version, if it is greater than the existing value of Version. You can update a data point as many times as desired, as long as the value of Version continuously increases.   For example, suppose you write a new record without indicating Version in the request. Timestream will store this record, and set Version to 1. Now, suppose you try to update this record with a WriteRecords request of the same record with a different measure value but, like before, do not provide Version. In this case, Timestream will reject this update with a RejectedRecordsException since the updated record’s version is not greater than the existing value of Version. However, if you were to resend the update request with Version set to 2, Timestream would then succeed in updating the record’s value, and the Version would be set to 2. Next, suppose you sent a WriteRecords request with this same record and an identical measure value, but with Version set to 3. In this case, Timestream would only update Version to 3. Any further updates would need to send a version number greater than 3, or the update requests would receive a RejectedRecordsException. 
+    * Enables you to write your time-series data into Timestream. You can specify a single data point or a batch of data points to be inserted into the system. Timestream offers you a flexible schema that auto detects the column names and data types for your Timestream tables based on the dimension names and data types of the data points you specify when invoking writes into the database.  Timestream supports eventual consistency read semantics. This means that when you query data immediately after writing a batch of data into Timestream, the query results might not reflect the results of a recently completed write operation. The results may also include some stale data. If you repeat the query request after a short time, the results should return the latest data. Service quotas apply.  See code sample for details.  Upserts  You can use the Version parameter in a WriteRecords request to update data points. Timestream tracks a version number with each record. Version defaults to 1 when it's not specified for the record in the request. Timestream updates an existing record’s measure value along with its Version when it receives a write request with a higher Version number for that record. When it receives an update request where the measure value is the same as that of the existing record, Timestream still updates Version, if it is greater than the existing value of Version. You can update a data point as many times as desired, as long as the value of Version continuously increases.   For example, suppose you write a new record without indicating Version in the request. Timestream stores this record, and set Version to 1. Now, suppose you try to update this record with a WriteRecords request of the same record with a different measure value but, like before, do not provide Version. In this case, Timestream will reject this update with a RejectedRecordsException since the updated record’s version is not greater than the existing value of Version.  However, if you were to resend the update request with Version set to 2, Timestream would then succeed in updating the record’s value, and the Version would be set to 2. Next, suppose you sent a WriteRecords request with this same record and an identical measure value, but with Version set to 3. In this case, Timestream would only update Version to 3. Any further updates would need to send a version number greater than 3, or the update requests would receive a RejectedRecordsException. 
     */
   def writeRecords(params: WriteRecordsRequest): Request[WriteRecordsResponse, AWSError] = js.native
   def writeRecords(

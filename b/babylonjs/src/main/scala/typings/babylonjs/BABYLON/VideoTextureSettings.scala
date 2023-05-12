@@ -22,6 +22,12 @@ trait VideoTextureSettings extends StObject {
   var format: js.UndefOr[Double] = js.undefined
   
   /**
+    * Notify babylon to not modify any video settings and not control the video's playback.
+    * Set this to true if you are controlling the way the video is being played, stopped and paused.
+    */
+  var independentVideoSource: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * Applies `loop` to video, if specified
     */
   var loop: js.UndefOr[Boolean] = js.undefined
@@ -55,6 +61,10 @@ object VideoTextureSettings {
     inline def setFormat(value: Double): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
     inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    
+    inline def setIndependentVideoSource(value: Boolean): Self = StObject.set(x, "independentVideoSource", value.asInstanceOf[js.Any])
+    
+    inline def setIndependentVideoSourceUndefined: Self = StObject.set(x, "independentVideoSource", js.undefined)
     
     inline def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
     

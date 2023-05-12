@@ -6,16 +6,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `200ContentApplicationjsonFingerprint` extends StObject {
   
-  /** Response */
+  /** @description Response */
   var `200`: ContentApplicationjsonFingerprint
   
-  var `404`: Content48
+  var `404`: Content36
   
-  var `422`: Content397
+  var `422`: Content346
 }
 object `200ContentApplicationjsonFingerprint` {
   
-  inline def apply(`200`: ContentApplicationjsonFingerprint, `404`: Content48, `422`: Content397): `200ContentApplicationjsonFingerprint` = {
+  inline def apply(`200`: ContentApplicationjsonFingerprint, `404`: Content36, `422`: Content346): `200ContentApplicationjsonFingerprint` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("200")(`200`.asInstanceOf[js.Any])
     __obj.updateDynamic("404")(`404`.asInstanceOf[js.Any])
@@ -28,8 +28,8 @@ object `200ContentApplicationjsonFingerprint` {
     
     inline def set200(value: ContentApplicationjsonFingerprint): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
     
-    inline def set404(value: Content48): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
+    inline def set404(value: Content36): Self = StObject.set(x, "404", value.asInstanceOf[js.Any])
     
-    inline def set422(value: Content397): Self = StObject.set(x, "422", value.asInstanceOf[js.Any])
+    inline def set422(value: Content346): Self = StObject.set(x, "422", value.asInstanceOf[js.Any])
   }
 }

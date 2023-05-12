@@ -1,5 +1,9 @@
 package typings.eventsource
 
+import typings.eventsource.eventsourceInts.`0`
+import typings.eventsource.eventsourceInts.`1`
+import typings.eventsource.eventsourceInts.`2`
+import typings.eventsource.eventsourceInts.`3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,13 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Event extends StObject {
   
-  val AT_TARGET: Double = js.native
+  val AT_TARGET: `2` = js.native
   
-  val BUBBLING_PHASE: Double = js.native
+  val BUBBLING_PHASE: `3` = js.native
   
-  val CAPTURING_PHASE: Double = js.native
+  val CAPTURING_PHASE: `1` = js.native
   
-  val NONE: Double = js.native
+  val NONE: `0` = js.native
   
   /**
     * Returns true or false depending on how event was initialized. True if event goes through its target's ancestors in reverse tree order, and false otherwise.

@@ -40,6 +40,7 @@ import typings.react.mod.UIEventHandler
 import typings.react.mod.WheelEvent
 import typings.react.mod.WheelEventHandler
 import typings.reactMdButton.typesButtonThemeClassNamesMod.ButtonThemeProps
+import typings.reactMdForm.reactMdFormStrings._empty
 import typings.reactMdForm.reactMdFormStrings.`additions removals`
 import typings.reactMdForm.reactMdFormStrings.`additions text`
 import typings.reactMdForm.reactMdFormStrings.`inline`
@@ -47,8 +48,10 @@ import typings.reactMdForm.reactMdFormStrings.`removals additions`
 import typings.reactMdForm.reactMdFormStrings.`removals text`
 import typings.reactMdForm.reactMdFormStrings.`text additions`
 import typings.reactMdForm.reactMdFormStrings.`text removals`
+import typings.reactMdForm.reactMdFormStrings.`use-credentials`
 import typings.reactMdForm.reactMdFormStrings.additions
 import typings.reactMdForm.reactMdFormStrings.all
+import typings.reactMdForm.reactMdFormStrings.anonymous
 import typings.reactMdForm.reactMdFormStrings.ascending
 import typings.reactMdForm.reactMdFormStrings.assertive
 import typings.reactMdForm.reactMdFormStrings.both
@@ -100,6 +103,7 @@ import typings.reactMdForm.reactMdFormStrings.vertical
 import typings.reactMdForm.reactMdFormStrings.yes
 import typings.std.Element
 import typings.std.Event
+import typings.std.FormData
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -112,7 +116,7 @@ object typesFileInputFileInputMod {
   val FileInput: ForwardRefExoticComponent[FileInputProps & RefAttributes[HTMLInputElement]] = js.native
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.reactMdForm.typesFileInputFileInputMod.InputAttributes because var conflicts: className, disabled. Inlined checked, translate, inlist, formAction, `aria-activedescendant`, onMouseEnter, max, onLoadedData, unselectable, placeholder, `aria-multiselectable`, title, slot, pattern, onClick, width, onTouchStart, onDrop, `aria-grabbed`, children, onDragOver, autoSave, onAnimationIteration, spellCheck, role, `aria-multiline`, about, dir, onPlaying, `aria-current`, height, itemType, `aria-relevant`, `aria-placeholder`, autoCorrect, onPointerMove, `aria-label`, `aria-rowcount`, onPaste, `aria-busy`, resource, onSeeked, tabIndex, onError, onTimeUpdate, `aria-roledescription`, color, onEnded, onPointerCancel, autoCapitalize, inputMode, onCompositionUpdate, onMouseMove, size, onSelect, onStalled, onPointerOut, onAuxClick, `aria-autocomplete`, onCopy, `aria-live`, `aria-keyshortcuts`, onDurationChange, `aria-orientation`, onVolumeChange, lang, `aria-owns`, `aria-atomic`, `aria-dropeffect`, min, property, style, is, onLoadedMetadata, `aria-labelledby`, formMethod, onTransitionEnd, onMouseOver, onChange, datatype, onDragStart, onSeeking, `aria-flowto`, onAnimationEnd, onCanPlay, `aria-readonly`, onMouseOut, onKeyDown, `aria-pressed`, onMouseLeave, contextMenu, accept, onProgress, `aria-level`, contentEditable, autoComplete, enterKeyHint, onPointerLeave, onMouseUp, multiple, onInput, itemRef, autoFocus, capture, results, accessKey, `aria-haspopup`, `aria-posinset`, step, onInvalid, `aria-required`, vocab, `aria-describedby`, onSuspend, formEncType, onLoad, onTouchCancel, formNoValidate, onAnimationStart, onTouchMove, onPointerEnter, src, `aria-controls`, `aria-modal`, onDragEnter, formTarget, onPointerOver, required, onWaiting, onReset, `aria-selected`, onPlay, onKeyUp, onMouseDown, radioGroup, onSubmit, onBeforeInput, readOnly, nonce, `aria-disabled`, `aria-sort`, onCompositionStart, itemProp, security, `aria-valuemin`, dangerouslySetInnerHTML, `aria-colcount`, onFocus, onCanPlayThrough, `aria-invalid`, onBlur, onDoubleClick, `aria-valuemax`, `aria-details`, onContextMenu, maxLength, suppressHydrationWarning, `aria-setsize`, onDragLeave, onTouchEnd, onPause, `aria-checked`, defaultChecked, `aria-valuetext`, prefix, onEmptied, name, form, list, onPointerUp, onCompositionEnd, `aria-colspan`, hidden, `aria-errormessage`, onScroll, crossOrigin, onPointerDown, `aria-colindex`, onCut, alt, suppressContentEditableWarning, `aria-hidden`, onAbort, onDragExit, `aria-valuenow`, id, onWheel, typeof, onDrag, `aria-expanded`, minLength, onResize, draggable, onEncrypted, onDragEnd, `aria-rowindex`, itemScope, onRateChange, onKeyPress, onLoadStart, itemID, `aria-rowspan` */ trait FileInputProps
+  - typings.reactMdForm.typesFileInputFileInputMod.InputAttributes because var conflicts: className, disabled. Inlined checked, translate, inlist, formAction, `aria-activedescendant`, onMouseEnter, max, onLoadedData, unselectable, placeholder, `aria-multiselectable`, title, slot, pattern, onClick, width, onTouchStart, onDrop, `aria-grabbed`, children, onDragOver, autoSave, onAnimationIteration, spellCheck, role, `aria-multiline`, about, dir, onPlaying, `aria-current`, height, itemType, `aria-relevant`, `aria-placeholder`, autoCorrect, onPointerMove, `aria-label`, `aria-rowcount`, onPaste, `aria-busy`, resource, onSeeked, tabIndex, onError, onTimeUpdate, `aria-roledescription`, color, onEnded, onPointerCancel, autoCapitalize, inputMode, onCompositionUpdate, onMouseMove, size, onSelect, onStalled, onPointerOut, onAuxClick, `aria-autocomplete`, onCopy, `aria-live`, `aria-keyshortcuts`, onDurationChange, `aria-orientation`, onVolumeChange, lang, `aria-owns`, `aria-atomic`, `aria-dropeffect`, min, property, style, is, onLoadedMetadata, `aria-labelledby`, formMethod, onTransitionEnd, onMouseOver, onChange, datatype, onDragStart, onSeeking, `aria-flowto`, onAnimationEnd, onCanPlay, `aria-readonly`, onMouseOut, onKeyDown, `aria-pressed`, onMouseLeave, contextMenu, accept, onProgress, `aria-level`, contentEditable, autoComplete, enterKeyHint, onPointerLeave, onMouseUp, multiple, onInput, itemRef, autoFocus, capture, results, accessKey, `aria-haspopup`, `aria-posinset`, step, onInvalid, `aria-required`, vocab, `aria-describedby`, onSuspend, formEncType, onLoad, onTouchCancel, formNoValidate, onAnimationStart, onTouchMove, onPointerEnter, src, `aria-controls`, rel, `aria-modal`, onDragEnter, formTarget, onPointerOver, required, onWaiting, onReset, `aria-selected`, onPlay, onKeyUp, onMouseDown, radioGroup, onSubmit, onBeforeInput, content, readOnly, nonce, `aria-disabled`, `aria-sort`, onCompositionStart, itemProp, security, `aria-valuemin`, dangerouslySetInnerHTML, `aria-colcount`, onFocus, onCanPlayThrough, `aria-invalid`, onBlur, onDoubleClick, `aria-valuemax`, `aria-details`, onContextMenu, maxLength, suppressHydrationWarning, rev, `aria-setsize`, onDragLeave, onTouchEnd, onPause, `aria-checked`, defaultChecked, `aria-valuetext`, prefix, onEmptied, name, form, list, onPointerUp, onCompositionEnd, `aria-colspan`, hidden, `aria-errormessage`, onScroll, crossOrigin, onPointerDown, `aria-colindex`, onCut, alt, suppressContentEditableWarning, `aria-hidden`, onAbort, onDragExit, `aria-valuenow`, id, onWheel, typeof, onDrag, `aria-expanded`, minLength, onResize, draggable, onEncrypted, onDragEnd, `aria-rowindex`, itemScope, onRateChange, onKeyPress, onLoadStart, itemID, `aria-rowspan` */ trait FileInputProps
     extends StObject
        with ButtonThemeProps {
     
@@ -246,11 +250,13 @@ object typesFileInputFileInputMod {
     
     var color: js.UndefOr[String] = js.undefined
     
+    var content: js.UndefOr[String] = js.undefined
+    
     var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
     var contextMenu: js.UndefOr[String] = js.undefined
     
-    var crossOrigin: js.UndefOr[String] = js.undefined
+    var crossOrigin: js.UndefOr[anonymous | `use-credentials` | _empty] = js.undefined
     
     var dangerouslySetInnerHTML: js.UndefOr[Html] = js.undefined
     
@@ -285,7 +291,7 @@ object typesFileInputFileInputMod {
     
     var form: js.UndefOr[String] = js.undefined
     
-    var formAction: js.UndefOr[String] = js.undefined
+    var formAction: js.UndefOr[String | (js.Function1[/* formData */ FormData, Unit])] = js.undefined
     
     var formEncType: js.UndefOr[String] = js.undefined
     
@@ -525,11 +531,15 @@ object typesFileInputFileInputMod {
     
     var readOnly: js.UndefOr[Boolean] = js.undefined
     
+    var rel: js.UndefOr[String] = js.undefined
+    
     var required: js.UndefOr[Boolean] = js.undefined
     
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
+    
+    var rev: js.UndefOr[String] = js.undefined
     
     var role: js.UndefOr[AriaRole] = js.undefined
     
@@ -821,15 +831,19 @@ object typesFileInputFileInputMod {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
       inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
       inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
       inline def setContextMenuUndefined: Self = StObject.set(x, "contextMenu", js.undefined)
       
-      inline def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+      inline def setCrossOrigin(value: anonymous | `use-credentials` | _empty): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
       
       inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
       
@@ -867,7 +881,9 @@ object typesFileInputFileInputMod {
       
       inline def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
       
-      inline def setFormAction(value: String): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+      inline def setFormAction(value: String | (js.Function1[/* formData */ FormData, Unit])): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+      
+      inline def setFormActionFunction1(value: /* formData */ FormData => Unit): Self = StObject.set(x, "formAction", js.Any.fromFunction1(value))
       
       inline def setFormActionUndefined: Self = StObject.set(x, "formAction", js.undefined)
       
@@ -1321,6 +1337,10 @@ object typesFileInputFileInputMod {
       
       inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
       
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      
+      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+      
       inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
       
       inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
@@ -1332,6 +1352,10 @@ object typesFileInputFileInputMod {
       inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+      
+      inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+      
+      inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
       
       inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
@@ -1532,11 +1556,13 @@ object typesFileInputFileInputMod {
     
     var color: js.UndefOr[String] = js.undefined
     
+    var content: js.UndefOr[String] = js.undefined
+    
     var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
     var contextMenu: js.UndefOr[String] = js.undefined
     
-    var crossOrigin: js.UndefOr[String] = js.undefined
+    var crossOrigin: js.UndefOr[anonymous | `use-credentials` | _empty] = js.undefined
     
     var dangerouslySetInnerHTML: js.UndefOr[Html] = js.undefined
     
@@ -1554,7 +1580,7 @@ object typesFileInputFileInputMod {
     
     var form: js.UndefOr[String] = js.undefined
     
-    var formAction: js.UndefOr[String] = js.undefined
+    var formAction: js.UndefOr[String | (js.Function1[/* formData */ FormData, Unit])] = js.undefined
     
     var formEncType: js.UndefOr[String] = js.undefined
     
@@ -1776,11 +1802,15 @@ object typesFileInputFileInputMod {
     
     var readOnly: js.UndefOr[Boolean] = js.undefined
     
+    var rel: js.UndefOr[String] = js.undefined
+    
     var required: js.UndefOr[Boolean] = js.undefined
     
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
+    
+    var rev: js.UndefOr[String] = js.undefined
     
     var role: js.UndefOr[AriaRole] = js.undefined
     
@@ -2076,15 +2106,19 @@ object typesFileInputFileInputMod {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
       inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
       inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
       inline def setContextMenuUndefined: Self = StObject.set(x, "contextMenu", js.undefined)
       
-      inline def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+      inline def setCrossOrigin(value: anonymous | `use-credentials` | _empty): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
       
       inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
       
@@ -2118,7 +2152,9 @@ object typesFileInputFileInputMod {
       
       inline def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
       
-      inline def setFormAction(value: String): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+      inline def setFormAction(value: String | (js.Function1[/* formData */ FormData, Unit])): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+      
+      inline def setFormActionFunction1(value: /* formData */ FormData => Unit): Self = StObject.set(x, "formAction", js.Any.fromFunction1(value))
       
       inline def setFormActionUndefined: Self = StObject.set(x, "formAction", js.undefined)
       
@@ -2564,6 +2600,10 @@ object typesFileInputFileInputMod {
       
       inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
       
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      
+      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+      
       inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
       
       inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
@@ -2575,6 +2615,10 @@ object typesFileInputFileInputMod {
       inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+      
+      inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+      
+      inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
       
       inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       

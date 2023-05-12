@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "vscode-textmate" : "7.0.1"
+      "vscode-textmate" : "9.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "vscode-textmate" : "7.0.1"
+      "vscode-textmate" : "9.0.0"
     }
   ],
   "compile-devDependencies" : [

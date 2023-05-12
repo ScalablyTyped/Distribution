@@ -73,6 +73,8 @@ object mod extends Shortcut {
     
     var hlsConfig: js.UndefOr[Any] = js.undefined
     
+    var image: js.UndefOr[String] = js.undefined
+    
     var loop: js.UndefOr[Boolean] = js.undefined
     
     var mute: js.UndefOr[Boolean] = js.undefined
@@ -160,6 +162,10 @@ object mod extends Shortcut {
       inline def setHlsConfig(value: Any): Self = StObject.set(x, "hlsConfig", value.asInstanceOf[js.Any])
       
       inline def setHlsConfigUndefined: Self = StObject.set(x, "hlsConfig", js.undefined)
+      
+      inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+      
+      inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
       
       inline def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
       

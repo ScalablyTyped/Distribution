@@ -2,6 +2,10 @@ package typings.std.global
 
 import typings.std.Event
 import typings.std.EventInit
+import typings.std.stdInts.`0`
+import typings.std.stdInts.`1`
+import typings.std.stdInts.`2`
+import typings.std.stdInts.`3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,20 +25,20 @@ object Event_ {
   /* standard dom */
   @JSGlobal("Event.AT_TARGET")
   @js.native
-  val AT_TARGET: Double = js.native
+  val AT_TARGET: `2` = js.native
   
   /* standard dom */
   @JSGlobal("Event.BUBBLING_PHASE")
   @js.native
-  val BUBBLING_PHASE: Double = js.native
+  val BUBBLING_PHASE: `3` = js.native
   
   /* standard dom */
   @JSGlobal("Event.CAPTURING_PHASE")
   @js.native
-  val CAPTURING_PHASE: Double = js.native
+  val CAPTURING_PHASE: `1` = js.native
   
   /* standard dom */
   @JSGlobal("Event.NONE")
   @js.native
-  val NONE: Double = js.native
+  val NONE: `0` = js.native
 }

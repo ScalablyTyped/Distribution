@@ -162,6 +162,24 @@ object runtime {
     responseCallback: js.Function1[/* response */ Response, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendMessage")(extensionId.asInstanceOf[js.Any], message.asInstanceOf[js.Any], options.asInstanceOf[js.Any], responseCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def sendMessage[M, R](extensionId: String, message: M, responseCallback: js.Function1[/* response */ R, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendMessage")(extensionId.asInstanceOf[js.Any], message.asInstanceOf[js.Any], responseCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def sendMessage[M, R](extensionId: Null, message: M): js.Promise[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendMessage")(extensionId.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[js.Promise[R]]
+  inline def sendMessage[Message, Response](extensionId: Null, message: Message, options: MessageOptions): js.Promise[Response] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendMessage")(extensionId.asInstanceOf[js.Any], message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Response]]
+  inline def sendMessage[Message, Response](
+    extensionId: Null,
+    message: Message,
+    options: MessageOptions,
+    responseCallback: js.Function1[/* response */ Response, Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendMessage")(extensionId.asInstanceOf[js.Any], message.asInstanceOf[js.Any], options.asInstanceOf[js.Any], responseCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def sendMessage[M, R](extensionId: Null, message: M, responseCallback: js.Function1[/* response */ R, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendMessage")(extensionId.asInstanceOf[js.Any], message.asInstanceOf[js.Any], responseCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def sendMessage[M, R](extensionId: Unit, message: M): js.Promise[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendMessage")(extensionId.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[js.Promise[R]]
+  inline def sendMessage[Message, Response](extensionId: Unit, message: Message, options: MessageOptions): js.Promise[Response] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendMessage")(extensionId.asInstanceOf[js.Any], message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Response]]
+  inline def sendMessage[Message, Response](
+    extensionId: Unit,
+    message: Message,
+    options: MessageOptions,
+    responseCallback: js.Function1[/* response */ Response, Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendMessage")(extensionId.asInstanceOf[js.Any], message.asInstanceOf[js.Any], options.asInstanceOf[js.Any], responseCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def sendMessage[M, R](extensionId: Unit, message: M, responseCallback: js.Function1[/* response */ R, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendMessage")(extensionId.asInstanceOf[js.Any], message.asInstanceOf[js.Any], responseCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   inline def sendMessage[M, R](message: M): js.Promise[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("sendMessage")(message.asInstanceOf[js.Any]).asInstanceOf[js.Promise[R]]
   inline def sendMessage[M, R](message: M, options: MessageOptions): js.Promise[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendMessage")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[R]]
   inline def sendMessage[M, R](message: M, options: MessageOptions, responseCallback: js.Function1[/* response */ R, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendMessage")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any], responseCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]

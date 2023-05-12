@@ -1,9 +1,9 @@
 package typings.reactSpringCore.anon
 
-import typings.reactSpringCore.distDeclarationsSrcControllerMod.Controller
-import typings.reactSpringCore.distDeclarationsSrcSpringValueMod.SpringValue
-import typings.reactSpringCore.distDeclarationsSrcTypesObjectsMod.AnimationResult
-import typings.reactSpringTypes.utilMod.Lookup
+import typings.reactSpringCore.mod.AnimationResult
+import typings.reactSpringCore.mod.Controller
+import typings.reactSpringCore.mod.SpringValue
+import typings.reactSpringTypes.mod.Lookup
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

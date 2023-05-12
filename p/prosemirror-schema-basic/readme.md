@@ -1,7 +1,7 @@
 
 # Scala.js typings for prosemirror-schema-basic
 
-Typings are for version 1.2.0
+Typings are for version 1.2.1
 
 ## Library description:
 Basic schema elements for ProseMirror

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListDistributionsByWebACLIdResult extends StObject {
   
   /**
-    * The DistributionList type. 
+    * The DistributionList type.
     */
   var DistributionList: js.UndefOr[typings.awsSdk.clientsCloudfrontMod.DistributionList] = js.undefined
 }

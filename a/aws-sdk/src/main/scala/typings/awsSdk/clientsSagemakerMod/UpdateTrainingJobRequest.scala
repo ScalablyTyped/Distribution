@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateTrainingJobRequest extends StObject {
   
   /**
-    * Configuration information for Debugger system monitoring, framework profiling, and storage paths.
+    * Configuration information for Amazon SageMaker Debugger system monitoring, framework profiling, and storage paths.
     */
   var ProfilerConfig: js.UndefOr[ProfilerConfigForUpdate] = js.undefined
   
   /**
-    * Configuration information for Debugger rules for profiling system and framework metrics.
+    * Configuration information for Amazon SageMaker Debugger rules for profiling system and framework metrics.
     */
   var ProfilerRuleConfigurations: js.UndefOr[typings.awsSdk.clientsSagemakerMod.ProfilerRuleConfigurations] = js.undefined
   

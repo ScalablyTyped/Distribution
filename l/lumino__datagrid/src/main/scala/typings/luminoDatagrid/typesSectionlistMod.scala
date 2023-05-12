@@ -50,7 +50,7 @@ object typesSectionlistMod {
       * #### Complexity
       * Constant.
       */
-    val count: Double = js.native
+    def count: Double = js.native
     
     /**
       * Get the default size of sections in the list.
@@ -58,13 +58,14 @@ object typesSectionlistMod {
       * #### Complexity
       * Constant.
       */
+    def defaultSize: Double = js.native
     /**
       * Set the default size of sections in the list.
       *
       * #### Complexity
       * Linear on the number of resized sections.
       */
-    var defaultSize: Double = js.native
+    def defaultSize_=(value: Double): Unit = js.native
     
     /**
       * Find the extent of the section at the given index.
@@ -118,7 +119,7 @@ object typesSectionlistMod {
       * #### Complexity
       * Constant.
       */
-    val length: Double = js.native
+    def length: Double = js.native
     
     /**
       * Get the minimum size of sections in the list.
@@ -126,13 +127,14 @@ object typesSectionlistMod {
       * #### Complexity
       * Constant.
       */
+    def minimumSize: Double = js.native
     /**
       * Set the minimum size of sections in the list.
       *
       * #### Complexity
       * Linear on the number of resized sections.
       */
-    var minimumSize: Double = js.native
+    def minimumSize_=(value: Double): Unit = js.native
     
     /**
       * Move sections within the list.

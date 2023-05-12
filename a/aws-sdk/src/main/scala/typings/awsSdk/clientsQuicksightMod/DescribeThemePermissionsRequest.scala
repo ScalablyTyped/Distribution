@@ -14,11 +14,11 @@ trait DescribeThemePermissionsRequest extends StObject {
   /**
     * The ID for the theme that you want to describe permissions for.
     */
-  var ThemeId: RestrictiveResourceId
+  var ThemeId: ShortRestrictiveResourceId
 }
 object DescribeThemePermissionsRequest {
   
-  inline def apply(AwsAccountId: AwsAccountId, ThemeId: RestrictiveResourceId): DescribeThemePermissionsRequest = {
+  inline def apply(AwsAccountId: AwsAccountId, ThemeId: ShortRestrictiveResourceId): DescribeThemePermissionsRequest = {
     val __obj = js.Dynamic.literal(AwsAccountId = AwsAccountId.asInstanceOf[js.Any], ThemeId = ThemeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeThemePermissionsRequest]
   }
@@ -28,6 +28,6 @@ object DescribeThemePermissionsRequest {
     
     inline def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
     
-    inline def setThemeId(value: RestrictiveResourceId): Self = StObject.set(x, "ThemeId", value.asInstanceOf[js.Any])
+    inline def setThemeId(value: ShortRestrictiveResourceId): Self = StObject.set(x, "ThemeId", value.asInstanceOf[js.Any])
   }
 }

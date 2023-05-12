@@ -30,8 +30,7 @@ object distPluginWebpack5Mod {
     inline def NS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NS")(x.asInstanceOf[js.Any])
   }
   
-  /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped webpack.anon.Apply | (this : webpack.webpack.Resolver, arg1 : webpack.webpack.Resolver): void */ trait VueLoaderPlugin extends StObject {
+  trait VueLoaderPlugin extends StObject {
     
     @JSName("apply")
     def apply(compiler: Compiler): Unit

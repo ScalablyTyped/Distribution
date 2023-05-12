@@ -244,6 +244,7 @@ object sapMObjectStatusMod {
     
     /**
       * @SINCE 1.54
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:press press} to attached listeners.
       *
@@ -336,6 +337,17 @@ object sapMObjectStatusMod {
       * @returns Value of property `state`
       */
     def getState(): String = js.native
+    
+    /**
+      * @SINCE 1.110
+      *
+      * Gets current value of property {@link #getStateAnnouncementText stateAnnouncementText}.
+      *
+      * Еnables overriding of the default state announcement.
+      *
+      * @returns Value of property `stateAnnouncementText`
+      */
+    def getStateAnnouncementText(): String = js.native
     
     /**
       * Gets current value of property {@link #getText text}.
@@ -508,6 +520,22 @@ object sapMObjectStatusMod {
     ): this.type = js.native
     
     /**
+      * @SINCE 1.110
+      *
+      * Sets a new value for property {@link #getStateAnnouncementText stateAnnouncementText}.
+      *
+      * Еnables overriding of the default state announcement.
+      *
+      * When called with a value of `null` or `undefined`, the default value of the property will be restored.
+      *
+      * @returns Reference to `this` in order to allow method chaining
+      */
+    def setStateAnnouncementText(/**
+      * New value for property `stateAnnouncementText`
+      */
+    sStateAnnouncementText: String): this.type = js.native
+    
+    /**
       * Sets a new value for property {@link #getText text}.
       *
       * Defines the ObjectStatus text.
@@ -580,6 +608,8 @@ object sapMObjectStatusMod {
     
     /**
       * Association to controls / IDs, which describe this control (see WAI-ARIA attribute aria-describedby).
+      *
+      * **Note:** The additional description will take effect only if `active` property is set to `true`.
       */
     var ariaDescribedBy: js.UndefOr[js.Array[typings.openui5.sapUiCoreControlMod.default | String]] = js.undefined
     
@@ -628,6 +658,13 @@ object sapMObjectStatusMod {
       * version 1.66 the `state` property also accepts values from enum type `sap.ui.core.IndicationColor`.
       */
     var state: js.UndefOr[String | PropertyBindingInfo] = js.undefined
+    
+    /**
+      * @SINCE 1.110
+      *
+      * Еnables overriding of the default state announcement.
+      */
+    var stateAnnouncementText: js.UndefOr[String | PropertyBindingInfo] = js.undefined
     
     /**
       * Defines the ObjectStatus text.
@@ -691,6 +728,10 @@ object sapMObjectStatusMod {
       inline def setPressUndefined: Self = StObject.set(x, "press", js.undefined)
       
       inline def setState(value: String | PropertyBindingInfo): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      
+      inline def setStateAnnouncementText(value: String | PropertyBindingInfo): Self = StObject.set(x, "stateAnnouncementText", value.asInstanceOf[js.Any])
+      
+      inline def setStateAnnouncementTextUndefined: Self = StObject.set(x, "stateAnnouncementText", js.undefined)
       
       inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
       

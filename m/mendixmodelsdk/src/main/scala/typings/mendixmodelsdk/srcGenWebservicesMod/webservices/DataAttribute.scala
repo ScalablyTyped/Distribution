@@ -44,6 +44,12 @@ open class DataAttribute protected () extends DataMember {
   def description_=(newValue: String): Unit = js.native
   
   /**
+    * In version 9.21.0: introduced
+    */
+  def enumerationAsString: Boolean = js.native
+  def enumerationAsString_=(newValue: Boolean): Unit = js.native
+  
+  /**
     * In version 9.18.0: introduced
     */
   def filterable: Boolean = js.native

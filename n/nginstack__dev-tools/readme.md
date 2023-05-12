@@ -1,7 +1,7 @@
 
 # Scala.js typings for nginstack__dev-tools
 
-Typings are for version 65.0
+Typings are for version 71.0
 
 ## Library description:
 Nginstack DevTools Library. See the [nginstack site](nginstack.com) for more information.

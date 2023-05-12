@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TrialComponentSource extends StObject {
   
   /**
-    * The source ARN.
+    * The source Amazon Resource Name (ARN).
     */
   var SourceArn: TrialComponentSourceArn
   

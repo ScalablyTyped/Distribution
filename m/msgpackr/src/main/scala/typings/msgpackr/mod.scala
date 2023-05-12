@@ -1,6 +1,9 @@
 package typings.msgpackr
 
 import typings.msgpackr.anon.AllowHalfOpen
+import typings.msgpackr.msgpackrStrings.bigint
+import typings.msgpackr.msgpackrStrings.number
+import typings.msgpackr.msgpackrStrings.string
 import typings.node.bufferMod.global.Buffer
 import typings.node.streamMod.Transform
 import org.scalablytyped.runtime.StObject
@@ -183,9 +186,14 @@ object mod {
     
     var getStructures: js.UndefOr[js.Function0[js.Array[js.Object]]] = js.undefined
     
+    /** @deprecated use int64AsType: 'number' */
     var int64AsNumber: js.UndefOr[Boolean] = js.undefined
     
+    var int64AsType: js.UndefOr[bigint | number | string] = js.undefined
+    
     var largeBigIntToFloat: js.UndefOr[Boolean] = js.undefined
+    
+    var mapAsEmptyObject: js.UndefOr[Boolean] = js.undefined
     
     var mapsAsObjects: js.UndefOr[Boolean] = js.undefined
     
@@ -198,6 +206,10 @@ object mod {
     var onInvalidDate: js.UndefOr[js.Function0[Any]] = js.undefined
     
     var saveStructures: js.UndefOr[js.Function1[/* structures */ js.Array[js.Object], Boolean | Unit]] = js.undefined
+    
+    var sequential: js.UndefOr[Boolean] = js.undefined
+    
+    var setAsEmptyObject: js.UndefOr[Boolean] = js.undefined
     
     var shouldShareStructure: js.UndefOr[js.Function1[/* keys */ js.Array[String], Boolean]] = js.undefined
     
@@ -243,9 +255,17 @@ object mod {
       
       inline def setInt64AsNumberUndefined: Self = StObject.set(x, "int64AsNumber", js.undefined)
       
+      inline def setInt64AsType(value: bigint | number | string): Self = StObject.set(x, "int64AsType", value.asInstanceOf[js.Any])
+      
+      inline def setInt64AsTypeUndefined: Self = StObject.set(x, "int64AsType", js.undefined)
+      
       inline def setLargeBigIntToFloat(value: Boolean): Self = StObject.set(x, "largeBigIntToFloat", value.asInstanceOf[js.Any])
       
       inline def setLargeBigIntToFloatUndefined: Self = StObject.set(x, "largeBigIntToFloat", js.undefined)
+      
+      inline def setMapAsEmptyObject(value: Boolean): Self = StObject.set(x, "mapAsEmptyObject", value.asInstanceOf[js.Any])
+      
+      inline def setMapAsEmptyObjectUndefined: Self = StObject.set(x, "mapAsEmptyObject", js.undefined)
       
       inline def setMapsAsObjects(value: Boolean): Self = StObject.set(x, "mapsAsObjects", value.asInstanceOf[js.Any])
       
@@ -270,6 +290,14 @@ object mod {
       inline def setSaveStructures(value: /* structures */ js.Array[js.Object] => Boolean | Unit): Self = StObject.set(x, "saveStructures", js.Any.fromFunction1(value))
       
       inline def setSaveStructuresUndefined: Self = StObject.set(x, "saveStructures", js.undefined)
+      
+      inline def setSequential(value: Boolean): Self = StObject.set(x, "sequential", value.asInstanceOf[js.Any])
+      
+      inline def setSequentialUndefined: Self = StObject.set(x, "sequential", js.undefined)
+      
+      inline def setSetAsEmptyObject(value: Boolean): Self = StObject.set(x, "setAsEmptyObject", value.asInstanceOf[js.Any])
+      
+      inline def setSetAsEmptyObjectUndefined: Self = StObject.set(x, "setAsEmptyObject", js.undefined)
       
       inline def setShouldShareStructure(value: /* keys */ js.Array[String] => Boolean): Self = StObject.set(x, "shouldShareStructure", js.Any.fromFunction1(value))
       

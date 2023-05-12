@@ -14,6 +14,4 @@ object libHandleHtmlMod {
   inline def html(node: HTML_): String = ^.asInstanceOf[js.Dynamic].applyDynamic("html")(node.asInstanceOf[js.Any]).asInstanceOf[String]
   
   type HTML_ = HTML
-  
-  type Handle = typings.mdastUtilToMarkdown.libTypesMod.Handle
 }

@@ -67,6 +67,11 @@ trait CreateIpamPoolRequest extends StObject {
   var Locale: js.UndefOr[String] = js.undefined
   
   /**
+    * The IP address source for pools in the public scope. Only used for provisioning IP address CIDRs to pools in the public scope. Default is byoip. For more information, see Create IPv6 pools in the Amazon VPC IPAM User Guide. By default, you can add only one Amazon-provided IPv6 CIDR block to a top-level IPv6 pool if PublicIpSource is amazon. For information on increasing the default limit, see  Quotas for your IPAM in the Amazon VPC IPAM User Guide.
+    */
+  var PublicIpSource: js.UndefOr[IpamPoolPublicIpSource] = js.undefined
+  
+  /**
     * Determines if the pool is publicly advertisable. This option is not available for pools with AddressFamily set to ipv4.
     */
   var PubliclyAdvertisable: js.UndefOr[Boolean] = js.undefined
@@ -136,6 +141,10 @@ object CreateIpamPoolRequest {
     inline def setLocale(value: String): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
     
     inline def setLocaleUndefined: Self = StObject.set(x, "Locale", js.undefined)
+    
+    inline def setPublicIpSource(value: IpamPoolPublicIpSource): Self = StObject.set(x, "PublicIpSource", value.asInstanceOf[js.Any])
+    
+    inline def setPublicIpSourceUndefined: Self = StObject.set(x, "PublicIpSource", js.undefined)
     
     inline def setPubliclyAdvertisable(value: Boolean): Self = StObject.set(x, "PubliclyAdvertisable", value.asInstanceOf[js.Any])
     

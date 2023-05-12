@@ -12,7 +12,7 @@ trait CreateMediaCapturePipelineRequest extends StObject {
   var ChimeSdkMeetingConfiguration: js.UndefOr[typings.awsSdk.clientsChimeMod.ChimeSdkMeetingConfiguration] = js.undefined
   
   /**
-    * The token assigned to the client making the pipeline request.
+    * The unique identifier for the client request. The token makes the API request idempotent. Use a different token for different media pipeline requests.
     */
   var ClientRequestToken: js.UndefOr[typings.awsSdk.clientsChimeMod.ClientRequestToken] = js.undefined
   

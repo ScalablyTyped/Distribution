@@ -20,4 +20,8 @@ object HeaderNames extends StObject {
   /* "Retry-After" */ val RETRY_AFTER: typings.azureMsalCommon.distUtilsConstantsMod.HeaderNames.RETRY_AFTER & String = js.native
   
   /* "WWW-Authenticate" */ val WWWAuthenticate: typings.azureMsalCommon.distUtilsConstantsMod.HeaderNames.WWWAuthenticate & String = js.native
+  
+  /* "x-ms-httpver" */ val X_MS_HTTP_VERSION: typings.azureMsalCommon.distUtilsConstantsMod.HeaderNames.X_MS_HTTP_VERSION & String = js.native
+  
+  /* "x-ms-request-id" */ val X_MS_REQUEST_ID: typings.azureMsalCommon.distUtilsConstantsMod.HeaderNames.X_MS_REQUEST_ID & String = js.native
 }

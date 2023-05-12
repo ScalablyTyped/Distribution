@@ -4,10 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A profile is a specific customisation for each endpoint.
-  * It parses data from the API differently, add additional information, or enable non-default methods.
-  */
 trait Profile extends StObject {
   
   var endpoint: String

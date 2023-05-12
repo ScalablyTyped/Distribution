@@ -5,19 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typings.esbuildWasm.esbuildWasmStrings.js_
-  - typings.esbuildWasm.esbuildWasmStrings.jsx
-  - typings.esbuildWasm.esbuildWasmStrings.ts
-  - typings.esbuildWasm.esbuildWasmStrings.tsx
-  - typings.esbuildWasm.esbuildWasmStrings.css
-  - typings.esbuildWasm.esbuildWasmStrings.json
-  - typings.esbuildWasm.esbuildWasmStrings.text
   - typings.esbuildWasm.esbuildWasmStrings.base64
-  - typings.esbuildWasm.esbuildWasmStrings.file
-  - typings.esbuildWasm.esbuildWasmStrings.dataurl
   - typings.esbuildWasm.esbuildWasmStrings.binary
   - typings.esbuildWasm.esbuildWasmStrings.copy
+  - typings.esbuildWasm.esbuildWasmStrings.css
+  - typings.esbuildWasm.esbuildWasmStrings.dataurl
   - typings.esbuildWasm.esbuildWasmStrings.default
+  - typings.esbuildWasm.esbuildWasmStrings.empty
+  - typings.esbuildWasm.esbuildWasmStrings.file
+  - typings.esbuildWasm.esbuildWasmStrings.js_
+  - typings.esbuildWasm.esbuildWasmStrings.json
+  - typings.esbuildWasm.esbuildWasmStrings.jsx
+  - typings.esbuildWasm.esbuildWasmStrings.text
+  - typings.esbuildWasm.esbuildWasmStrings.ts
+  - typings.esbuildWasm.esbuildWasmStrings.tsx
 */
 trait Loader extends StObject
 object Loader {
@@ -33,6 +34,8 @@ object Loader {
   inline def css: typings.esbuildWasm.esbuildWasmStrings.css = "css".asInstanceOf[typings.esbuildWasm.esbuildWasmStrings.css]
   
   inline def dataurl: typings.esbuildWasm.esbuildWasmStrings.dataurl = "dataurl".asInstanceOf[typings.esbuildWasm.esbuildWasmStrings.dataurl]
+  
+  inline def empty: typings.esbuildWasm.esbuildWasmStrings.empty = "empty".asInstanceOf[typings.esbuildWasm.esbuildWasmStrings.empty]
   
   inline def file: typings.esbuildWasm.esbuildWasmStrings.file = "file".asInstanceOf[typings.esbuildWasm.esbuildWasmStrings.file]
   

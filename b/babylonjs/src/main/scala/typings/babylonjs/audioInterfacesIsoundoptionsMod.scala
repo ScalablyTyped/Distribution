@@ -15,7 +15,7 @@ object audioInterfacesIsoundoptionsMod {
     
     /**
       * Define the distance attenuation model the sound will follow.
-      * @see https://doc.babylonjs.com/how_to/playing_sounds_and_music#creating-a-spatial-3d-sound
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/audio/playingSoundsMusic#creating-a-spatial-3d-sound
       */
     var distanceModel: js.UndefOr[String] = js.undefined
     
@@ -46,13 +46,13 @@ object audioInterfacesIsoundoptionsMod {
     
     /**
       * Define the reference distance the sound should be heard perfectly.
-      * @see https://doc.babylonjs.com/how_to/playing_sounds_and_music#creating-a-spatial-3d-sound
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/audio/playingSoundsMusic#creating-a-spatial-3d-sound
       */
     var refDistance: js.UndefOr[Double] = js.undefined
     
     /**
       * Define the roll off factor of spatial sounds.
-      * @see https://doc.babylonjs.com/how_to/playing_sounds_and_music#creating-a-spatial-3d-sound
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/audio/playingSoundsMusic#creating-a-spatial-3d-sound
       */
     var rolloffFactor: js.UndefOr[Double] = js.undefined
     

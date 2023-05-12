@@ -41,6 +41,7 @@ import typings.ddTrace.mod.plugins.oracledb
 import typings.ddTrace.mod.plugins.paperplane
 import typings.ddTrace.mod.plugins.pg
 import typings.ddTrace.mod.plugins.pino
+import typings.ddTrace.mod.plugins.playwright
 import typings.ddTrace.mod.plugins.redis
 import typings.ddTrace.mod.plugins.restify
 import typings.ddTrace.mod.plugins.rhea
@@ -137,6 +138,8 @@ trait Plugins_ extends StObject {
   
   var pino: typings.ddTrace.mod.plugins.pino
   
+  var playwright: typings.ddTrace.mod.plugins.playwright
+  
   var redis: typings.ddTrace.mod.plugins.redis
   
   var restify: typings.ddTrace.mod.plugins.restify
@@ -195,6 +198,7 @@ object Plugins_ {
     paperplane: paperplane,
     pg: pg,
     pino: pino,
+    playwright: playwright,
     redis: redis,
     restify: restify,
     rhea: rhea,
@@ -203,7 +207,7 @@ object Plugins_ {
     tedious: tedious,
     winston: winston
   ): Plugins_ = {
-    val __obj = js.Dynamic.literal(amqp10 = amqp10.asInstanceOf[js.Any], amqplib = amqplib.asInstanceOf[js.Any], bunyan = bunyan.asInstanceOf[js.Any], connect = connect.asInstanceOf[js.Any], couchbase = couchbase.asInstanceOf[js.Any], cucumber = cucumber.asInstanceOf[js.Any], cypress = cypress.asInstanceOf[js.Any], dns = dns.asInstanceOf[js.Any], elasticsearch = elasticsearch.asInstanceOf[js.Any], express = express.asInstanceOf[js.Any], fastify = fastify.asInstanceOf[js.Any], graphql = graphql.asInstanceOf[js.Any], grpc = grpc.asInstanceOf[js.Any], hapi = hapi.asInstanceOf[js.Any], http = http.asInstanceOf[js.Any], http2 = http2.asInstanceOf[js.Any], ioredis = ioredis.asInstanceOf[js.Any], jest = jest.asInstanceOf[js.Any], kafkajs = kafkajs.asInstanceOf[js.Any], knex = knex.asInstanceOf[js.Any], koa = koa.asInstanceOf[js.Any], mariadb = mariadb.asInstanceOf[js.Any], memcached = memcached.asInstanceOf[js.Any], mocha = mocha.asInstanceOf[js.Any], moleculer = moleculer.asInstanceOf[js.Any], mongoose = mongoose.asInstanceOf[js.Any], mysql = mysql.asInstanceOf[js.Any], mysql2 = mysql2.asInstanceOf[js.Any], net = net.asInstanceOf[js.Any], next = next.asInstanceOf[js.Any], opensearch = opensearch.asInstanceOf[js.Any], oracledb = oracledb.asInstanceOf[js.Any], paperplane = paperplane.asInstanceOf[js.Any], pg = pg.asInstanceOf[js.Any], pino = pino.asInstanceOf[js.Any], redis = redis.asInstanceOf[js.Any], restify = restify.asInstanceOf[js.Any], rhea = rhea.asInstanceOf[js.Any], router = router.asInstanceOf[js.Any], sharedb = sharedb.asInstanceOf[js.Any], tedious = tedious.asInstanceOf[js.Any], winston = winston.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(amqp10 = amqp10.asInstanceOf[js.Any], amqplib = amqplib.asInstanceOf[js.Any], bunyan = bunyan.asInstanceOf[js.Any], connect = connect.asInstanceOf[js.Any], couchbase = couchbase.asInstanceOf[js.Any], cucumber = cucumber.asInstanceOf[js.Any], cypress = cypress.asInstanceOf[js.Any], dns = dns.asInstanceOf[js.Any], elasticsearch = elasticsearch.asInstanceOf[js.Any], express = express.asInstanceOf[js.Any], fastify = fastify.asInstanceOf[js.Any], graphql = graphql.asInstanceOf[js.Any], grpc = grpc.asInstanceOf[js.Any], hapi = hapi.asInstanceOf[js.Any], http = http.asInstanceOf[js.Any], http2 = http2.asInstanceOf[js.Any], ioredis = ioredis.asInstanceOf[js.Any], jest = jest.asInstanceOf[js.Any], kafkajs = kafkajs.asInstanceOf[js.Any], knex = knex.asInstanceOf[js.Any], koa = koa.asInstanceOf[js.Any], mariadb = mariadb.asInstanceOf[js.Any], memcached = memcached.asInstanceOf[js.Any], mocha = mocha.asInstanceOf[js.Any], moleculer = moleculer.asInstanceOf[js.Any], mongoose = mongoose.asInstanceOf[js.Any], mysql = mysql.asInstanceOf[js.Any], mysql2 = mysql2.asInstanceOf[js.Any], net = net.asInstanceOf[js.Any], next = next.asInstanceOf[js.Any], opensearch = opensearch.asInstanceOf[js.Any], oracledb = oracledb.asInstanceOf[js.Any], paperplane = paperplane.asInstanceOf[js.Any], pg = pg.asInstanceOf[js.Any], pino = pino.asInstanceOf[js.Any], playwright = playwright.asInstanceOf[js.Any], redis = redis.asInstanceOf[js.Any], restify = restify.asInstanceOf[js.Any], rhea = rhea.asInstanceOf[js.Any], router = router.asInstanceOf[js.Any], sharedb = sharedb.asInstanceOf[js.Any], tedious = tedious.asInstanceOf[js.Any], winston = winston.asInstanceOf[js.Any])
     __obj.updateDynamic("aws-sdk")(`aws-sdk`.asInstanceOf[js.Any])
     __obj.updateDynamic("cassandra-driver")(`cassandra-driver`.asInstanceOf[js.Any])
     __obj.updateDynamic("generic-pool")(`generic-pool`.asInstanceOf[js.Any])
@@ -297,6 +301,8 @@ object Plugins_ {
     inline def setPg(value: pg): Self = StObject.set(x, "pg", value.asInstanceOf[js.Any])
     
     inline def setPino(value: pino): Self = StObject.set(x, "pino", value.asInstanceOf[js.Any])
+    
+    inline def setPlaywright(value: playwright): Self = StObject.set(x, "playwright", value.asInstanceOf[js.Any])
     
     inline def setRedis(value: redis): Self = StObject.set(x, "redis", value.asInstanceOf[js.Any])
     

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "rc-motion" : "2.6.2"
+      "rc-motion" : "2.7.3"
     }
   ],
   "test-dependencies" : [
     {
-      "rc-motion" : "2.6.2"
+      "rc-motion" : "2.7.3"
     }
   ],
   "compile-devDependencies" : [

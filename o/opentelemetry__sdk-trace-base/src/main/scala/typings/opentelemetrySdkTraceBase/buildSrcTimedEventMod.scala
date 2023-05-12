@@ -13,6 +13,9 @@ object buildSrcTimedEventMod {
     /** The attributes of the event. */
     var attributes: js.UndefOr[SpanAttributes] = js.undefined
     
+    /** Count of attributes of the event that were dropped due to collection limits */
+    var droppedAttributesCount: js.UndefOr[Double] = js.undefined
+    
     /** The name of the event. */
     var name: String
     
@@ -31,6 +34,10 @@ object buildSrcTimedEventMod {
       inline def setAttributes(value: SpanAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
       inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+      
+      inline def setDroppedAttributesCount(value: Double): Self = StObject.set(x, "droppedAttributesCount", value.asInstanceOf[js.Any])
+      
+      inline def setDroppedAttributesCountUndefined: Self = StObject.set(x, "droppedAttributesCount", js.undefined)
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

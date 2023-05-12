@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @classDescription Class definition for columns used on lists and list portlets.
   * @return {nlobjColumn}
-  * @constructor
   */
 @js.native
 trait nlobjColumn

@@ -1,5 +1,6 @@
 package typings.angularCore.mod
 
+import typings.angularCore.anon.InjectOptionsoptionalfals
 import typings.angularCore.anon.Name
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -22,8 +23,30 @@ open class Injector () extends StObject {
     */
   def get[T](token: ProviderToken[T]): T = js.native
   def get[T](token: ProviderToken[T], notFoundValue: T): T = js.native
-  def get[T](token: ProviderToken[T], notFoundValue: T, flags: InjectFlags): T = js.native
-  def get[T](token: ProviderToken[T], notFoundValue: Unit, flags: InjectFlags): T = js.native
+  def get[T](token: ProviderToken[T], notFoundValue: T, options: InjectFlags): T = js.native
+  def get[T](token: ProviderToken[T], notFoundValue: T, options: InjectOptions): T = js.native
+  /**
+    * Retrieves an instance from the injector based on the provided token.
+    * @returns The instance from the injector if defined, otherwise the `notFoundValue`.
+    * @throws When the `notFoundValue` is `undefined` or `Injector.THROW_IF_NOT_FOUND`.
+    */
+  def get[T](token: ProviderToken[T], notFoundValue: Null, options: InjectOptions): T | Null = js.native
+  /**
+    * Internal note on the `options?: InjectOptions|InjectFlags` override of the `get`
+    * method: consider dropping the `InjectFlags` part in one of the major versions.
+    * It can **not** be done in minor/patch, since it's breaking for custom injectors
+    * that only implement the old `InjectorFlags` interface.
+    */
+  /**
+    * Retrieves an instance from the injector based on the provided token.
+    * @returns The instance from the injector if defined, otherwise the `notFoundValue`.
+    * @throws When the `notFoundValue` is `undefined` or `Injector.THROW_IF_NOT_FOUND`.
+    */
+  def get[T](token: ProviderToken[T], notFoundValue: Unit, options: InjectOptionsoptionalfals): T = js.native
+  def get[T](token: ProviderToken[T], notFoundValue: Unit, options: InjectFlags): T = js.native
+  def get[T](token: ProviderToken[T], notFoundValue: Unit, options: InjectOptions): T | Null = js.native
+  @JSName("get")
+  def get_T_T[T](token: ProviderToken[T], notFoundValue: Unit, options: InjectOptions): T = js.native
 }
 /* static members */
 object Injector {

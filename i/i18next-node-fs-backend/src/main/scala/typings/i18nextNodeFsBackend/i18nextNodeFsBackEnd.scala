@@ -38,25 +38,21 @@ object i18nextNodeFsBackEnd {
     
     /**
       * @summary Path to post missing resources
-      * @type {string}
       */
     var addPath: String
     
     /**
       * @summary jsonIndent to use when storing json files
-      * @type {number}
       */
     var jsonIndent: Double
     
     /**
       * @summary Path where resources get loaded from.
-      * @type {string}
       */
     var loadPath: String
     
     /**
       * @summary custom parser
-      * @type {function}
       */
     var parse: js.UndefOr[js.Function1[/* data */ Any, Any]] = js.undefined
   }

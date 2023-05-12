@@ -15,19 +15,20 @@ trait TypeofNgTemplateOutlet
   extends StObject
      with Instantiable1[
       /* _viewContainerRef */ ViewContainerRef, 
-      typings.angularCommon.mod.NgTemplateOutlet
+      typings.angularCommon.mod.NgTemplateOutlet[js.Object]
     ] {
   
   var ɵdir: ɵɵDirectiveDeclaration[
-    typings.angularCommon.mod.NgTemplateOutlet, 
+    typings.angularCommon.mod.NgTemplateOutlet[Any], 
     `[ngTemplateOutlet]`, 
     scala.Nothing, 
     NgTemplateOutlet, 
     js.Object, 
     scala.Nothing, 
     scala.Nothing, 
-    `true`
+    `true`, 
+    scala.Nothing
   ] = js.native
   
-  var ɵfac: ɵɵFactoryDeclaration[typings.angularCommon.mod.NgTemplateOutlet, scala.Nothing] = js.native
+  var ɵfac: ɵɵFactoryDeclaration[typings.angularCommon.mod.NgTemplateOutlet[Any], scala.Nothing] = js.native
 }

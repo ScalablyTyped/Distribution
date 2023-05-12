@@ -38,6 +38,8 @@ trait Task
   
   var _description: js.UndefOr[Element] = js.undefined
   
+  var _doNotPerform: js.UndefOr[Element] = js.undefined
+  
   var _instantiatesCanonical: js.UndefOr[Element] = js.undefined
   
   var _instantiatesUri: js.UndefOr[Element] = js.undefined
@@ -56,7 +58,7 @@ trait Task
   var authoredOn: js.UndefOr[String] = js.undefined
   
   /**
-    * BasedOn refers to a higher-level authorization that triggered the creation of the task.  It references a "request" resource such as a ServiceRequest, MedicationRequest, ServiceRequest, CarePlan, etc. which is distinct from the "request" resource the task is seeking to fulfill.  This latter resource is referenced by FocusOn.  For example, based on a ServiceRequest (= BasedOn), a task is created to fulfill a procedureRequest ( = FocusOn ) to collect a specimen from a patient.
+    * Task.basedOn is never the same as Task.focus.  Task.basedOn will typically not be present for 'please fulfill' Tasks as a distinct authorization is rarely needed to request fulfillment.  If the Task is seeking fulfillment of an order, the order to be fulfilled is always communicated using `focus`, never basedOn.  However, authorization may be needed to perform other types of Task actions.  As an example of when both would be present, a Task seeking suspension of a prescription might have a Task.basedOn pointing to the ServiceRequest ordering surgery (which is the driver for suspending the MedicationRequest - which would be the Task.focus).
     */
   var basedOn: js.UndefOr[js.Array[Reference]] = js.undefined
   
@@ -74,6 +76,13 @@ trait Task
     * A free-text description of what is to be performed.
     */
   var description: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The attributes provided with the Task qualify what is not to be done. For example, if a requestedPeriod is provided, the 'do not' request only applies within the specified time. If a requestedPerformer is specified then the 'do not' request only applies to performers of that type. Qualifiers include: code, subject, occurrence, requestedPerformer and performer.
+    * In some cases, the Request.code may pre-coordinate prohibition into the requested action. E.g. 'NPO' (nothing by mouth), 'DNR' (do not recussitate). If this happens, doNotPerform SHALL NOT be set to true. I.e. The resource shall not have double negation. (E.g. 'Do not DNR').
+    * doNotPerform should ONLY be used with Tasks that are tightly bounded in time or process phase.  E.g. 'Do not fulfill the midnight dose of medication X tonight due to the early morning scheduled procedure, where the nurse could reasonably check off 'Med X not given at midnight as instructed'.  Similarly, a decision support proposal that a patient should not be given a standard intake questionnaire (because the patient is cognitively impaired) would be marked as 'complete' or 'rejected' when the clinician preps the CarePlan or order set after reviewing the decision support results.  If there is a need to create a standing order to not do something that can't be satisfied by a single 'non-action', but rather an ongoing refusal to perform the function, MedicationRequest, ServiceRequest or some other form of authorization should be used.
+    */
+  var doNotPerform: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The healthcare event  (e.g. a patient and healthcare provider interaction) during which this task was created.
@@ -96,7 +105,7 @@ trait Task
   var `for`: js.UndefOr[Reference] = js.undefined
   
   /**
-    * An identifier that links together multiple tasks and other requests that were created in the same context.
+    * A shared identifier common to multiple independent Task and Request instances that were activated/authorized more or less simultaneously by a single author.  The presence of the same identifier on each request ties those requests together and may have business ramifications in terms of reporting of results, billing, etc.  E.g. a requisition number shared by a set of lab tests ordered together, or a prescription number shared by all meds ordered at one time.
     */
   var groupIdentifier: js.UndefOr[Identifier] = js.undefined
   
@@ -137,7 +146,7 @@ trait Task
   var lastModified: js.UndefOr[String] = js.undefined
   
   /**
-    * Principal physical location where the this task is performed.
+    * This should only be specified when the Task to be/being performed happens or is expected to happen primarily within the bounds of a single Location.  Other locations (e.g. source, destination, etc.) would either be reflected on the 'basedOn' Request or be conveyed as distinct Task.input values.
     */
   var location: js.UndefOr[Reference] = js.undefined
   
@@ -162,9 +171,9 @@ trait Task
   var partOf: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
-    * The kind of participant that should perform the task.
+    * The entity who performed the requested task.
     */
-  var performerType: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
+  var performer: js.UndefOr[js.Array[TaskPerformer]] = js.undefined
   
   /**
     * Indicates how quickly the Task should be addressed with respect to other requests.
@@ -172,19 +181,24 @@ trait Task
   var priority: js.UndefOr[routine | urgent | asap | stat] = js.undefined
   
   /**
-    * This should only be included if there is no focus or if it differs from the reason indicated on the focus.
+    * This will typically not be present for Tasks with a code of 'please fulfill' as, for those, the reason for action is conveyed on the Request pointed to by Task.focus.  Some types of tasks will not need a 'reason'.  E.g. a request to discharge a patient can be inferred to be 'because the patient is ready' and this would not need a reason to be stated on the Task.
     */
-  var reasonCode: js.UndefOr[CodeableConcept] = js.undefined
-  
-  /**
-    * Tasks might be justified based on an Observation, a Condition, a past or planned procedure, etc.   This should only be included if there is no focus or if it differs from the reason indicated on the focus.    Use the CodeableConcept text element in `Task.reasonCode` if the data is free (uncoded) text.
-    */
-  var reasonReference: js.UndefOr[Reference] = js.undefined
+  var reason: js.UndefOr[js.Array[CodeableReference]] = js.undefined
   
   /**
     * This element does not point to the Provenance associated with the *current* version of the resource - as it would be created after this version existed.  The Provenance for the current version can be retrieved with a _revinclude.
     */
   var relevantHistory: js.UndefOr[js.Array[Reference]] = js.undefined
+  
+  /**
+    * The kind of participant or specific participant that should perform the task.
+    */
+  var requestedPerformer: js.UndefOr[js.Array[CodeableReference]] = js.undefined
+  
+  /**
+    * This is typically used when the Task is *not* seeking fulfillment of a focus Request, as in that case the period would be specified on the Request and/or in the Task.restriction.period.  Instead, it is used for stand-alone tasks.
+    */
+  var requestedPeriod: js.UndefOr[Period] = js.undefined
   
   /**
     * The creator of the task.
@@ -196,7 +210,7 @@ trait Task
   val resourceType_Task: typings.fhir.fhirStrings.Task
   
   /**
-    * If the Task.focus is a request resource and the task is seeking fulfillment (i.e. is asking for the request to be actioned), this element identifies any limitations on what parts of the referenced request should be actioned.
+    * Task.restriction can only be present if the Task is seeking fulfillment of another Request resource, and the restriction identifies what subset of the authorization conveyed by the request is supposed to be fulfilled by this Task. A possible example could be a standing order (the request) covering a significant time period and/or individuals, while the Task seeks fulfillment for only a subset of that time-period and a single individual.
     */
   var restriction: js.UndefOr[TaskRestriction] = js.undefined
   
@@ -208,7 +222,7 @@ trait Task
   /**
     * This applies to the current status.  Look at the history of the task to see reasons for past statuses.
     */
-  var statusReason: js.UndefOr[CodeableConcept] = js.undefined
+  var statusReason: js.UndefOr[CodeableReference] = js.undefined
 }
 object Task {
   
@@ -244,6 +258,10 @@ object Task {
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    
+    inline def setDoNotPerform(value: Boolean): Self = StObject.set(x, "doNotPerform", value.asInstanceOf[js.Any])
+    
+    inline def setDoNotPerformUndefined: Self = StObject.set(x, "doNotPerform", js.undefined)
     
     inline def setEncounter(value: Reference): Self = StObject.set(x, "encounter", value.asInstanceOf[js.Any])
     
@@ -325,29 +343,37 @@ object Task {
     
     inline def setPartOfVarargs(value: Reference*): Self = StObject.set(x, "partOf", js.Array(value*))
     
-    inline def setPerformerType(value: js.Array[CodeableConcept]): Self = StObject.set(x, "performerType", value.asInstanceOf[js.Any])
+    inline def setPerformer(value: js.Array[TaskPerformer]): Self = StObject.set(x, "performer", value.asInstanceOf[js.Any])
     
-    inline def setPerformerTypeUndefined: Self = StObject.set(x, "performerType", js.undefined)
+    inline def setPerformerUndefined: Self = StObject.set(x, "performer", js.undefined)
     
-    inline def setPerformerTypeVarargs(value: CodeableConcept*): Self = StObject.set(x, "performerType", js.Array(value*))
+    inline def setPerformerVarargs(value: TaskPerformer*): Self = StObject.set(x, "performer", js.Array(value*))
     
     inline def setPriority(value: routine | urgent | asap | stat): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
     inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     
-    inline def setReasonCode(value: CodeableConcept): Self = StObject.set(x, "reasonCode", value.asInstanceOf[js.Any])
+    inline def setReason(value: js.Array[CodeableReference]): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    inline def setReasonCodeUndefined: Self = StObject.set(x, "reasonCode", js.undefined)
+    inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
     
-    inline def setReasonReference(value: Reference): Self = StObject.set(x, "reasonReference", value.asInstanceOf[js.Any])
-    
-    inline def setReasonReferenceUndefined: Self = StObject.set(x, "reasonReference", js.undefined)
+    inline def setReasonVarargs(value: CodeableReference*): Self = StObject.set(x, "reason", js.Array(value*))
     
     inline def setRelevantHistory(value: js.Array[Reference]): Self = StObject.set(x, "relevantHistory", value.asInstanceOf[js.Any])
     
     inline def setRelevantHistoryUndefined: Self = StObject.set(x, "relevantHistory", js.undefined)
     
     inline def setRelevantHistoryVarargs(value: Reference*): Self = StObject.set(x, "relevantHistory", js.Array(value*))
+    
+    inline def setRequestedPerformer(value: js.Array[CodeableReference]): Self = StObject.set(x, "requestedPerformer", value.asInstanceOf[js.Any])
+    
+    inline def setRequestedPerformerUndefined: Self = StObject.set(x, "requestedPerformer", js.undefined)
+    
+    inline def setRequestedPerformerVarargs(value: CodeableReference*): Self = StObject.set(x, "requestedPerformer", js.Array(value*))
+    
+    inline def setRequestedPeriod(value: Period): Self = StObject.set(x, "requestedPeriod", value.asInstanceOf[js.Any])
+    
+    inline def setRequestedPeriodUndefined: Self = StObject.set(x, "requestedPeriod", js.undefined)
     
     inline def setRequester(value: Reference): Self = StObject.set(x, "requester", value.asInstanceOf[js.Any])
     
@@ -363,7 +389,7 @@ object Task {
       value: draft | requested | received | accepted | rejected | ready | cancelled | `in-progress` | `on-hold` | failed | completed | `entered-in-error`
     ): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    inline def setStatusReason(value: CodeableConcept): Self = StObject.set(x, "statusReason", value.asInstanceOf[js.Any])
+    inline def setStatusReason(value: CodeableReference): Self = StObject.set(x, "statusReason", value.asInstanceOf[js.Any])
     
     inline def setStatusReasonUndefined: Self = StObject.set(x, "statusReason", js.undefined)
     
@@ -374,6 +400,10 @@ object Task {
     inline def set_description(value: Element): Self = StObject.set(x, "_description", value.asInstanceOf[js.Any])
     
     inline def set_descriptionUndefined: Self = StObject.set(x, "_description", js.undefined)
+    
+    inline def set_doNotPerform(value: Element): Self = StObject.set(x, "_doNotPerform", value.asInstanceOf[js.Any])
+    
+    inline def set_doNotPerformUndefined: Self = StObject.set(x, "_doNotPerform", js.undefined)
     
     inline def set_instantiatesCanonical(value: Element): Self = StObject.set(x, "_instantiatesCanonical", value.asInstanceOf[js.Any])
     

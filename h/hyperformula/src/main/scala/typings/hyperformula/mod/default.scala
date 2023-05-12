@@ -6,6 +6,7 @@ import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable3
 import org.scalablytyped.runtime.StringDictionary
 import typings.hyperformula.anon.PartialConfigParams
+import typings.hyperformula.typingsAbsoluteCellRangeMod.AbsoluteCellRange
 import typings.hyperformula.typingsCellContentParserMod.CellContentParser
 import typings.hyperformula.typingsCellMod.CellValueNoNumber.BOOLEAN
 import typings.hyperformula.typingsCellMod.CellValueNoNumber.EMPTY
@@ -16,6 +17,7 @@ import typings.hyperformula.typingsCellMod.SimpleCellAddress_
 import typings.hyperformula.typingsCellValueMod.CellValue
 import typings.hyperformula.typingsConfigMod.Config
 import typings.hyperformula.typingsCrudOperationsMod.CrudOperations
+import typings.hyperformula.typingsDependencyGraphFormulaCellVertexMod.FormulaVertex
 import typings.hyperformula.typingsDependencyGraphMod.DependencyGraph
 import typings.hyperformula.typingsEvaluatorMod.Evaluator
 import typings.hyperformula.typingsExporterMod.Exporter
@@ -24,6 +26,7 @@ import typings.hyperformula.typingsI18nTranslationPackageMod.RawTranslationPacka
 import typings.hyperformula.typingsInterpreterFunctionRegistryMod.FunctionRegistry
 import typings.hyperformula.typingsInterpreterFunctionRegistryMod.FunctionTranslationsPackage
 import typings.hyperformula.typingsInterpreterInterpreterMod.Interpreter
+import typings.hyperformula.typingsInterpreterInterpreterValueMod.InternalScalarValue
 import typings.hyperformula.typingsInterpreterInterpreterValueMod.NumberType.NUMBER_CURRENCY
 import typings.hyperformula.typingsInterpreterInterpreterValueMod.NumberType.NUMBER_DATE
 import typings.hyperformula.typingsInterpreterInterpreterValueMod.NumberType.NUMBER_DATETIME
@@ -47,7 +50,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** @internal */
+/**
+  * Aggregate class for default export
+  */
 @JSImport("hyperformula", JSImport.Default)
 @js.native
 open class default ()
@@ -57,6 +62,50 @@ object default {
   @JSImport("hyperformula", JSImport.Default)
   @js.native
   val ^ : js.Any = js.native
+  
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("hyperformula", "default.ArraySize")
+  @js.native
+  open class ArraySize protected ()
+    extends typings.hyperformula.typingsArraySizeMod.ArraySize {
+    def this(width: Double, height: Double) = this()
+    def this(width: Double, height: Double, isRef: Boolean) = this()
+  }
+  /* static member */
+  /* was `typeof ArraySize` */
+  object ArraySize {
+    
+    @JSImport("hyperformula", "default.ArraySize")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def error(): typings.hyperformula.typingsArraySizeMod.ArraySize = ^.asInstanceOf[js.Dynamic].applyDynamic("error")().asInstanceOf[typings.hyperformula.typingsArraySizeMod.ArraySize]
+    
+    inline def fromArray[T](array: js.Array[js.Array[T]]): typings.hyperformula.typingsArraySizeMod.ArraySize = ^.asInstanceOf[js.Dynamic].applyDynamic("fromArray")(array.asInstanceOf[js.Any]).asInstanceOf[typings.hyperformula.typingsArraySizeMod.ArraySize]
+    
+    inline def scalar(): typings.hyperformula.typingsArraySizeMod.ArraySize = ^.asInstanceOf[js.Dynamic].applyDynamic("scalar")().asInstanceOf[typings.hyperformula.typingsArraySizeMod.ArraySize]
+  }
+  
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("hyperformula", "default.CellError")
+  @js.native
+  open class CellError protected ()
+    extends typings.hyperformula.typingsCellMod.CellError {
+    def this(`type`: typings.hyperformula.typingsCellMod.ErrorType) = this()
+    def this(`type`: typings.hyperformula.typingsCellMod.ErrorType, message: String) = this()
+    def this(`type`: typings.hyperformula.typingsCellMod.ErrorType, message: String, root: FormulaVertex) = this()
+    def this(`type`: typings.hyperformula.typingsCellMod.ErrorType, message: Unit, root: FormulaVertex) = this()
+  }
+  /* static member */
+  /* was `typeof CellError` */
+  object CellError {
+    
+    @JSImport("hyperformula", "default.CellError")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def parsingError(): typings.hyperformula.typingsCellMod.CellError = ^.asInstanceOf[js.Dynamic].applyDynamic("parsingError")().asInstanceOf[typings.hyperformula.typingsCellMod.CellError]
+  }
   
   /* static member */
   /* was `typeof CellType` */
@@ -353,6 +402,15 @@ object default {
     ]
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ExportedNamedExpressionChange")(x.asInstanceOf[js.Any])
   
+  /* static member */
+  /* was `typeof FunctionArgumentType` */
+  @JSImport("hyperformula", "default.FunctionArgumentType")
+  @js.native
+  def FunctionArgumentType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof FunctionArgumentType */ Any = js.native
+  inline def FunctionArgumentType_=(
+    x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof FunctionArgumentType */ Any
+  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FunctionArgumentType")(x.asInstanceOf[js.Any])
+  
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("hyperformula", "default.FunctionPlugin")
   @js.native
@@ -479,7 +537,7 @@ object default {
       * ```js
       * // data represented as an array
       * const sheetData = [
-      *  ['0', '=SUM(1,2,3)', '52'],
+      *  ['0', '=SUM(1, 2, 3)', '52'],
       *  ['=SUM(A1:C1)', '', '=A1'],
       *  ['2', '=SUM(A1:C1)', '91'],
       * ];
@@ -524,12 +582,12 @@ object default {
       * const sheetData = {
       *  'Sheet1': [
       *    ['1', '', '=Sheet2!$A1'],
-      *    ['', '2', '=SUM(1,2,3)'],
+      *    ['', '2', '=SUM(1, 2, 3)'],
       *    ['=Sheet2!$A2', '2', ''],
       *   ],
       *  'Sheet2': [
       *    ['', '4', '=Sheet1!$B1'],
-      *    ['', '8', '=SUM(9,3,3)'],
+      *    ['', '8', '=SUM(9, 3, 3)'],
       *    ['=Sheet1!$B1', '2', ''],
       *   ],
       * };
@@ -673,7 +731,9 @@ object default {
     /**
       * Registers all functions in a given plugin with optional translations.
       *
-      * Note: This method does not affect the existing HyperFormula instances.
+      * Note: FunctionPlugins must be registered prior to the creation of HyperFormula instances in which they are used.
+      * HyperFormula instances created prior to the registration of a FunctionPlugin are unable to access the FunctionPlugin.
+      * Registering a FunctionPlugin with [[custom-functions]] requires the translations parameter.
       *
       * @param {FunctionPluginDefinition} plugin - plugin class
       * @param {FunctionTranslationsPackage} translations - optional package of function names translations
@@ -696,7 +756,9 @@ object default {
     inline def registerFunctionPlugin(plugin: FunctionPluginDefinition, translations: FunctionTranslationsPackage): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerFunctionPlugin")(plugin.asInstanceOf[js.Any], translations.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
-      * Registers language from under given code string.
+      * Registers language under given code string.
+      *
+      * For more information, see the [Localizing functions guide](/guide/localizing-functions.md).
       *
       * @param {string} languageCode - code string of the translation package
       * @param {RawTranslationPackage} languagePackage - translation package to be registered
@@ -708,8 +770,8 @@ object default {
       * @example
       * ```js
       * // return registered language
-      * HyperFormula.registerLanguage('plPL', plPL);
-      * const engine = HyperFormula.buildEmpty({language: 'plPL'});
+      * HyperFormula.registerLanguage('enUS', enUS);
+      * const engine = HyperFormula.buildEmpty({language: 'enUS'});
       * ```
       *
       * @category Static Methods
@@ -1115,6 +1177,173 @@ object default {
   @js.native
   def SheetSizeLimitExceededError: Instantiable0[typings.hyperformula.typingsErrorsMod.SheetSizeLimitExceededError] = js.native
   inline def SheetSizeLimitExceededError_=(x: Instantiable0[typings.hyperformula.typingsErrorsMod.SheetSizeLimitExceededError]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SheetSizeLimitExceededError")(x.asInstanceOf[js.Any])
+  
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("hyperformula", "default.SimpleRangeValue")
+  @js.native
+  /**
+    * In most cases, it's more convenient to create a `SimpleRangeValue` object
+    * by calling one of the [static factory methods](#fromrange).
+    */
+  open class SimpleRangeValue ()
+    extends typings.hyperformula.typingsSimpleRangeValueMod.SimpleRangeValue {
+    def this(_data: js.Array[js.Array[InternalScalarValue]]) = this()
+    def this(
+      _data: js.Array[js.Array[InternalScalarValue]],
+      /**
+      * A property that represents the address of the range.
+      */
+    range: AbsoluteCellRange
+    ) = this()
+    def this(
+      _data: Unit,
+      /**
+      * A property that represents the address of the range.
+      */
+    range: AbsoluteCellRange
+    ) = this()
+    def this(
+      _data: js.Array[js.Array[InternalScalarValue]],
+      /**
+      * A property that represents the address of the range.
+      */
+    range: Unit,
+      dependencyGraph: DependencyGraph
+    ) = this()
+    def this(
+      _data: js.Array[js.Array[InternalScalarValue]],
+      /**
+      * A property that represents the address of the range.
+      */
+    range: AbsoluteCellRange,
+      dependencyGraph: DependencyGraph
+    ) = this()
+    def this(
+      _data: Unit,
+      /**
+      * A property that represents the address of the range.
+      */
+    range: Unit,
+      dependencyGraph: DependencyGraph
+    ) = this()
+    def this(
+      _data: Unit,
+      /**
+      * A property that represents the address of the range.
+      */
+    range: AbsoluteCellRange,
+      dependencyGraph: DependencyGraph
+    ) = this()
+    def this(
+      _data: js.Array[js.Array[InternalScalarValue]],
+      /**
+      * A property that represents the address of the range.
+      */
+    range: Unit,
+      dependencyGraph: Unit,
+      _hasOnlyNumbers: Boolean
+    ) = this()
+    def this(
+      _data: js.Array[js.Array[InternalScalarValue]],
+      /**
+      * A property that represents the address of the range.
+      */
+    range: Unit,
+      dependencyGraph: DependencyGraph,
+      _hasOnlyNumbers: Boolean
+    ) = this()
+    def this(
+      _data: js.Array[js.Array[InternalScalarValue]],
+      /**
+      * A property that represents the address of the range.
+      */
+    range: AbsoluteCellRange,
+      dependencyGraph: Unit,
+      _hasOnlyNumbers: Boolean
+    ) = this()
+    def this(
+      _data: js.Array[js.Array[InternalScalarValue]],
+      /**
+      * A property that represents the address of the range.
+      */
+    range: AbsoluteCellRange,
+      dependencyGraph: DependencyGraph,
+      _hasOnlyNumbers: Boolean
+    ) = this()
+    def this(
+      _data: Unit,
+      /**
+      * A property that represents the address of the range.
+      */
+    range: Unit,
+      dependencyGraph: Unit,
+      _hasOnlyNumbers: Boolean
+    ) = this()
+    def this(
+      _data: Unit,
+      /**
+      * A property that represents the address of the range.
+      */
+    range: Unit,
+      dependencyGraph: DependencyGraph,
+      _hasOnlyNumbers: Boolean
+    ) = this()
+    def this(
+      _data: Unit,
+      /**
+      * A property that represents the address of the range.
+      */
+    range: AbsoluteCellRange,
+      dependencyGraph: Unit,
+      _hasOnlyNumbers: Boolean
+    ) = this()
+    def this(
+      _data: Unit,
+      /**
+      * A property that represents the address of the range.
+      */
+    range: AbsoluteCellRange,
+      dependencyGraph: DependencyGraph,
+      _hasOnlyNumbers: Boolean
+    ) = this()
+  }
+  /* static member */
+  /* was `typeof SimpleRangeValue` */
+  object SimpleRangeValue {
+    
+    @JSImport("hyperformula", "default.SimpleRangeValue")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * A factory method. Returns a `SimpleRangeValue` object with the provided range address and the provided data.
+      */
+    inline def fromRange(
+      data: js.Array[js.Array[InternalScalarValue]],
+      range: AbsoluteCellRange,
+      dependencyGraph: DependencyGraph
+    ): typings.hyperformula.typingsSimpleRangeValueMod.SimpleRangeValue = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRange")(data.asInstanceOf[js.Any], range.asInstanceOf[js.Any], dependencyGraph.asInstanceOf[js.Any])).asInstanceOf[typings.hyperformula.typingsSimpleRangeValueMod.SimpleRangeValue]
+    
+    /**
+      * A factory method. Returns a `SimpleRangeValue` object that contains a single value.
+      */
+    inline def fromScalar(scalar: InternalScalarValue): typings.hyperformula.typingsSimpleRangeValueMod.SimpleRangeValue = ^.asInstanceOf[js.Dynamic].applyDynamic("fromScalar")(scalar.asInstanceOf[js.Any]).asInstanceOf[typings.hyperformula.typingsSimpleRangeValueMod.SimpleRangeValue]
+    
+    /**
+      * A factory method. Returns a `SimpleRangeValue` object with the provided numeric data.
+      */
+    inline def onlyNumbers(data: js.Array[js.Array[Double]]): typings.hyperformula.typingsSimpleRangeValueMod.SimpleRangeValue = ^.asInstanceOf[js.Dynamic].applyDynamic("onlyNumbers")(data.asInstanceOf[js.Any]).asInstanceOf[typings.hyperformula.typingsSimpleRangeValueMod.SimpleRangeValue]
+    
+    /**
+      * A factory method. Returns a `SimpleRangeValue` object with the provided range address.
+      */
+    inline def onlyRange(range: AbsoluteCellRange, dependencyGraph: DependencyGraph): typings.hyperformula.typingsSimpleRangeValueMod.SimpleRangeValue = (^.asInstanceOf[js.Dynamic].applyDynamic("onlyRange")(range.asInstanceOf[js.Any], dependencyGraph.asInstanceOf[js.Any])).asInstanceOf[typings.hyperformula.typingsSimpleRangeValueMod.SimpleRangeValue]
+    
+    /**
+      * A factory method. Returns a `SimpleRangeValue` object with the provided data.
+      */
+    inline def onlyValues(data: js.Array[js.Array[InternalScalarValue]]): typings.hyperformula.typingsSimpleRangeValueMod.SimpleRangeValue = ^.asInstanceOf[js.Dynamic].applyDynamic("onlyValues")(data.asInstanceOf[js.Any]).asInstanceOf[typings.hyperformula.typingsSimpleRangeValueMod.SimpleRangeValue]
+  }
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("hyperformula", "default.SourceLocationHasArrayError")

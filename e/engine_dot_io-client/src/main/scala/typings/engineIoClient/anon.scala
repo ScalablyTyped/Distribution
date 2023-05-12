@@ -11,6 +11,8 @@ object anon {
   /* Inlined std.Partial<engine.io-client.engine.io-client/build/esm/socket.SocketOptions> */
   trait PartialSocketOptions extends StObject {
     
+    var addTrailingSlash: js.UndefOr[Boolean] = js.undefined
+    
     var agent: js.UndefOr[String | Boolean] = js.undefined
     
     var autoUnref: js.UndefOr[Boolean] = js.undefined
@@ -42,8 +44,6 @@ object anon {
     var perMessageDeflate: js.UndefOr[Threshold] = js.undefined
     
     var pfx: js.UndefOr[String] = js.undefined
-    
-    var policyPost: js.UndefOr[Double] = js.undefined
     
     var port: js.UndefOr[String | Double] = js.undefined
     
@@ -82,6 +82,10 @@ object anon {
     
     @scala.inline
     implicit open class MutableBuilder[Self <: PartialSocketOptions] (val x: Self) extends AnyVal {
+      
+      inline def setAddTrailingSlash(value: Boolean): Self = StObject.set(x, "addTrailingSlash", value.asInstanceOf[js.Any])
+      
+      inline def setAddTrailingSlashUndefined: Self = StObject.set(x, "addTrailingSlash", js.undefined)
       
       inline def setAgent(value: String | Boolean): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       
@@ -148,10 +152,6 @@ object anon {
       inline def setPfx(value: String): Self = StObject.set(x, "pfx", value.asInstanceOf[js.Any])
       
       inline def setPfxUndefined: Self = StObject.set(x, "pfx", js.undefined)
-      
-      inline def setPolicyPost(value: Double): Self = StObject.set(x, "policyPost", value.asInstanceOf[js.Any])
-      
-      inline def setPolicyPostUndefined: Self = StObject.set(x, "policyPost", js.undefined)
       
       inline def setPort(value: String | Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
@@ -240,6 +240,25 @@ object anon {
     // tslint:disable-next-line void-return
     def apply(callback: js.Function1[/* args */ Unit, Unit]): Timeout = js.native
     def apply(callback: js.Function1[/* args */ Unit, Unit], ms: Double): Timeout = js.native
+    /**
+      * Schedules execution of a one-time `callback` after `delay` milliseconds.
+      *
+      * The `callback` will likely not be invoked in precisely `delay` milliseconds.
+      * Node.js makes no guarantees about the exact timing of when callbacks will fire,
+      * nor of their ordering. The callback will be called as close as possible to the
+      * time specified.
+      *
+      * When `delay` is larger than `2147483647` or less than `1`, the `delay`will be set to `1`. Non-integer delays are truncated to an integer.
+      *
+      * If `callback` is not a function, a `TypeError` will be thrown.
+      *
+      * This method has a custom variant for promises that is available using `timersPromises.setTimeout()`.
+      * @since v0.0.1
+      * @param callback The function to call when the timer elapses.
+      * @param [delay=1] The number of milliseconds to wait before calling the `callback`.
+      * @param args Optional arguments to pass when the `callback` is called.
+      * @return for use with {@link clearTimeout}
+      */
     def apply[TArgs /* <: js.Array[Any] */](
       callback: js.Function1[/* args */ TArgs, Unit],
       ms: Double,

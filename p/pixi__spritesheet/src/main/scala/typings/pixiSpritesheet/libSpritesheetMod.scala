@@ -2,6 +2,7 @@ package typings.pixiSpritesheet
 
 import typings.pixiCore.libTexturesResourcesAutoDetectResourceMod.IAutoDetectOptions
 import typings.pixiCore.libTexturesResourcesResourceMod.Resource
+import typings.pixiCore.libTexturesTextureMod.ITextureBorders
 import typings.pixiCore.mod.BaseTexture
 import typings.pixiCore.mod.Texture
 import typings.pixiMath.libIpointdataMod.IPointData
@@ -173,6 +174,8 @@ object libSpritesheetMod {
     
     var anchor: js.UndefOr[IPointData] = js.undefined
     
+    var borders: js.UndefOr[ITextureBorders] = js.undefined
+    
     var frame: H
     
     var rotated: js.UndefOr[Boolean] = js.undefined
@@ -196,6 +199,10 @@ object libSpritesheetMod {
       inline def setAnchor(value: IPointData): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
       
       inline def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
+      
+      inline def setBorders(value: ITextureBorders): Self = StObject.set(x, "borders", value.asInstanceOf[js.Any])
+      
+      inline def setBordersUndefined: Self = StObject.set(x, "borders", js.undefined)
       
       inline def setFrame(value: H): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
       

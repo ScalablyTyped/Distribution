@@ -12,8 +12,6 @@ trait WebViewHTMLAttributes[T]
   
   var allowpopups: js.UndefOr[Boolean] = js.undefined
   
-  var autoFocus: js.UndefOr[Boolean] = js.undefined
-  
   var autosize: js.UndefOr[Boolean] = js.undefined
   
   var blinkfeatures: js.UndefOr[String] = js.undefined
@@ -59,10 +57,6 @@ object WebViewHTMLAttributes {
     inline def setAllowpopups(value: Boolean): Self = StObject.set(x, "allowpopups", value.asInstanceOf[js.Any])
     
     inline def setAllowpopupsUndefined: Self = StObject.set(x, "allowpopups", js.undefined)
-    
-    inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
-    
-    inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
     
     inline def setAutosize(value: Boolean): Self = StObject.set(x, "autosize", value.asInstanceOf[js.Any])
     

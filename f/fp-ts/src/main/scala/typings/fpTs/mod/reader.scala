@@ -186,6 +186,9 @@ object reader {
   
   inline def flap[A](a: A): js.Function1[/* fab */ Reader_[Any, js.Function1[/* a */ A, Any]], Reader_[Any, Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("flap")(a.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fab */ Reader_[Any, js.Function1[/* a */ A, Any]], Reader_[Any, Any]]]
   
+  inline def flatMap[A, R2, B](f: js.Function1[/* a */ A, Reader_[R2, B]]): js.Function1[/* ma */ Reader_[Any, A], Reader_[Any & R2, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatMap")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ Reader_[Any, A], Reader_[Any & R2, B]]]
+  inline def flatMap[R1, A, R2, B](ma: Reader_[R1, A], f: js.Function1[/* a */ A, Reader_[R2, B]]): Reader_[R1 & R2, B] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatMap")(ma.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[Reader_[R1 & R2, B]]
+  
   inline def flatten[R, A](mma: Reader_[R, Reader_[R, A]]): Reader_[R, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(mma.asInstanceOf[js.Any]).asInstanceOf[Reader_[R, A]]
   
   inline def flattenW[R1, R2, A](mma: Reader_[R1, Reader_[R2, A]]): Reader_[R1 & R2, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("flattenW")(mma.asInstanceOf[js.Any]).asInstanceOf[Reader_[R1 & R2, A]]
@@ -248,6 +251,9 @@ object reader {
   ] = js.native
   
   inline def sequenceArray[R, A](arr: js.Array[Reader_[R, A]]): Reader_[R, js.Array[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("sequenceArray")(arr.asInstanceOf[js.Any]).asInstanceOf[Reader_[R, js.Array[A]]]
+  
+  inline def tap[A, R2, _underscore](f: js.Function1[/* a */ A, Reader_[R2, _underscore]]): js.Function1[/* self */ Reader_[Any, A], Reader_[R2 & Any, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("tap")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* self */ Reader_[Any, A], Reader_[R2 & Any, A]]]
+  inline def tap[R1, A, R2, _underscore](self: Reader_[R1, A], f: js.Function1[/* a */ A, Reader_[R2, _underscore]]): Reader_[R1 & R2, A] = (^.asInstanceOf[js.Dynamic].applyDynamic("tap")(self.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[Reader_[R1 & R2, A]]
   
   inline def traverseArray[R, A, B](f: js.Function1[/* a */ A, Reader_[R, B]]): js.Function1[/* as */ js.Array[A], Reader_[R, js.Array[B]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("traverseArray")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* as */ js.Array[A], Reader_[R, js.Array[B]]]]
   

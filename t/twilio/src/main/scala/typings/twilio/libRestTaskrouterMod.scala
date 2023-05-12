@@ -8,21 +8,15 @@ object libRestTaskrouterMod {
   
   @JSImport("twilio/lib/rest/Taskrouter", JSImport.Namespace)
   @js.native
-  open class ^ protected () extends Taskrouter {
-    /**
-      * Initialize taskrouter domain
-      *
-      * @param twilio - The twilio client
-      */
-    def this(twilio: typings.twilio.libRestTwilioMod.^) = this()
-  }
+  open class ^ () extends Taskrouter
   
   @js.native
   trait Taskrouter
-    extends typings.twilio.libBaseDomainMod.^ {
+    extends typings.twilio.libRestTaskrouterBaseMod.^ {
     
-    val v1: typings.twilio.libRestTaskrouterV1Mod.^ = js.native
-    
-    val workspaces: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WorkspaceListInstance */ Any = js.native
+    /**
+      * @deprecated - Use v1.workspaces instead
+      */
+    def workspaces: Any = js.native
   }
 }

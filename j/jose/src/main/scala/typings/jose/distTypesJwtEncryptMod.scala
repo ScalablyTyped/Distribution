@@ -37,27 +37,31 @@ object distTypesJwtEncryptMod {
     /**
       * Encrypts and returns the JWT.
       *
-      * @param key Public Key or Secret to encrypt the JWT with.
+      * @param key Public Key or Secret to encrypt the JWT with. See
+      *   {@link https://github.com/panva/jose/issues/210#jwe-alg Algorithm Key Requirements}.
       * @param options JWE Encryption options.
       */
     def encrypt(key: KeyLike): js.Promise[String] = js.native
     def encrypt(key: KeyLike, options: EncryptOptions): js.Promise[String] = js.native
     
     /**
-      * Replicates the "aud" (Audience) Claim as a JWE Protected Header Parameter as per
-      * [RFC7519#section-5.3](https://www.rfc-editor.org/rfc/rfc7519#section-5.3).
+      * Replicates the "aud" (Audience) Claim as a JWE Protected Header Parameter.
+      *
+      * @see {@link https://www.rfc-editor.org/rfc/rfc7519#section-5.3 RFC7519#section-5.3}
       */
     def replicateAudienceAsHeader(): this.type = js.native
     
     /**
-      * Replicates the "iss" (Issuer) Claim as a JWE Protected Header Parameter as per
-      * [RFC7519#section-5.3](https://www.rfc-editor.org/rfc/rfc7519#section-5.3).
+      * Replicates the "iss" (Issuer) Claim as a JWE Protected Header Parameter.
+      *
+      * @see {@link https://www.rfc-editor.org/rfc/rfc7519#section-5.3 RFC7519#section-5.3}
       */
     def replicateIssuerAsHeader(): this.type = js.native
     
     /**
-      * Replicates the "sub" (Subject) Claim as a JWE Protected Header Parameter as per
-      * [RFC7519#section-5.3](https://www.rfc-editor.org/rfc/rfc7519#section-5.3).
+      * Replicates the "sub" (Subject) Claim as a JWE Protected Header Parameter.
+      *
+      * @see {@link https://www.rfc-editor.org/rfc/rfc7519#section-5.3 RFC7519#section-5.3}
       */
     def replicateSubjectAsHeader(): this.type = js.native
     

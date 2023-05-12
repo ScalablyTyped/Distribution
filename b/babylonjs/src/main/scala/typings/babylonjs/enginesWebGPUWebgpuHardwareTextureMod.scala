@@ -64,11 +64,13 @@ object enginesWebGPUWebgpuHardwareTextureMod {
     
     var format: GPUTextureFormat = js.native
     
-    def msaaTexture: Nullable[GPUTexture] = js.native
-    def msaaTexture_=(texture: Nullable[GPUTexture]): Unit = js.native
+    def getMSAATexture(): Nullable[GPUTexture] = js.native
+    def getMSAATexture(index: Double): Nullable[GPUTexture] = js.native
     
     /* CompleteClass */
     override def release(): Unit = js.native
+    
+    def releaseMSAATexture(): Unit = js.native
     
     /* CompleteClass */
     override def reset(): Unit = js.native
@@ -76,6 +78,9 @@ object enginesWebGPUWebgpuHardwareTextureMod {
     /* CompleteClass */
     override def set(hardwareTexture: Any): Unit = js.native
     def set(hardwareTexture: GPUTexture): Unit = js.native
+    
+    def setMSAATexture(texture: GPUTexture): Unit = js.native
+    def setMSAATexture(texture: GPUTexture, index: Double): Unit = js.native
     
     /* CompleteClass */
     override def setUsage(textureSource: Double, generateMipMaps: Boolean, isCube: Boolean, width: Double, height: Double): Unit = js.native

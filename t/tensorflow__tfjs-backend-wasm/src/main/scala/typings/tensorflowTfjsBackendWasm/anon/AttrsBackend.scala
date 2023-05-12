@@ -1,23 +1,23 @@
 package typings.tensorflowTfjsBackendWasm.anon
 
 import typings.tensorflowTfjsBackendWasm.distBackendWasmMod.BackendWasm
-import typings.tensorflowTfjsCore.distKernelNamesMod.CumsumAttrs
-import typings.tensorflowTfjsCore.distKernelNamesMod.CumsumInputs
+import typings.tensorflowTfjsCore.distKernelNamesMod.CastAttrs
+import typings.tensorflowTfjsCore.distKernelNamesMod.CastInputs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait AttrsBackend extends StObject {
   
-  var attrs: CumsumAttrs
+  var attrs: CastAttrs
   
   var backend: BackendWasm
   
-  var inputs: CumsumInputs
+  var inputs: CastInputs
 }
 object AttrsBackend {
   
-  inline def apply(attrs: CumsumAttrs, backend: BackendWasm, inputs: CumsumInputs): AttrsBackend = {
+  inline def apply(attrs: CastAttrs, backend: BackendWasm, inputs: CastInputs): AttrsBackend = {
     val __obj = js.Dynamic.literal(attrs = attrs.asInstanceOf[js.Any], backend = backend.asInstanceOf[js.Any], inputs = inputs.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttrsBackend]
   }
@@ -25,10 +25,10 @@ object AttrsBackend {
   @scala.inline
   implicit open class MutableBuilder[Self <: AttrsBackend] (val x: Self) extends AnyVal {
     
-    inline def setAttrs(value: CumsumAttrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
+    inline def setAttrs(value: CastAttrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     
     inline def setBackend(value: BackendWasm): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
     
-    inline def setInputs(value: CumsumInputs): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
+    inline def setInputs(value: CastInputs): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
   }
 }

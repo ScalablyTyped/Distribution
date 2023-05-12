@@ -12,10 +12,12 @@ import typings.phaser.Phaser.Types.Loader.FileTypes.AsepriteFileConfig
 import typings.phaser.Phaser.Types.Loader.FileTypes.AtlasJSONFileConfig
 import typings.phaser.Phaser.Types.Loader.FileTypes.AtlasXMLFileConfig
 import typings.phaser.Phaser.Types.Loader.FileTypes.AudioFileConfig
+import typings.phaser.Phaser.Types.Loader.FileTypes.AudioFileURLConfig
 import typings.phaser.Phaser.Types.Loader.FileTypes.AudioSpriteFileConfig
 import typings.phaser.Phaser.Types.Loader.FileTypes.BinaryFileConfig
 import typings.phaser.Phaser.Types.Loader.FileTypes.BitmapFontFileConfig
 import typings.phaser.Phaser.Types.Loader.FileTypes.CSSFileConfig
+import typings.phaser.Phaser.Types.Loader.FileTypes.CompressedTextureFileConfig
 import typings.phaser.Phaser.Types.Loader.FileTypes.GLSLFileConfig
 import typings.phaser.Phaser.Types.Loader.FileTypes.HTMLFileConfig
 import typings.phaser.Phaser.Types.Loader.FileTypes.HTMLTextureFileConfig
@@ -39,6 +41,7 @@ import typings.phaser.Phaser.Types.Loader.FileTypes.TilemapImpactFileConfig
 import typings.phaser.Phaser.Types.Loader.FileTypes.TilemapJSONFileConfig
 import typings.phaser.Phaser.Types.Loader.FileTypes.UnityAtlasFileConfig
 import typings.phaser.Phaser.Types.Loader.FileTypes.VideoFileConfig
+import typings.phaser.Phaser.Types.Loader.FileTypes.VideoFileURLConfig
 import typings.phaser.Phaser.Types.Loader.FileTypes.XMLFileConfig
 import typings.phaser.Phaser.Types.Loader.XHRSettingsObject
 import org.scalablytyped.runtime.StObject
@@ -370,7 +373,16 @@ trait LoaderPlugin
     * its events to know when it's safe to use the asset. Please see the Phaser.Loader.LoaderPlugin class for more details.
     * 
     * Phaser expects the atlas data to be provided in a JSON file, using either the JSON Hash or JSON Array format.
-    * These files are created by software such as Texture Packer, Shoebox and Adobe Flash / Animate.
+    * 
+    * These files are created by software such as:
+    * 
+    * * [Texture Packer](https://www.codeandweb.com/texturepacker/tutorials/how-to-create-sprite-sheets-for-phaser3?source=photonstorm)
+    * * [Shoebox](https://renderhjs.net/shoebox/)
+    * * [Gamma Texture Packer](https://gammafp.com/tool/atlas-packer/)
+    * * [Adobe Flash / Animate](https://www.adobe.com/uk/products/animate.html)
+    * * [Free Texture Packer](http://free-tex-packer.com/)
+    * * [Leshy SpriteSheet Tool](https://www.leshylabs.com/apps/sstool/)
+    * 
     * If you are using Texture Packer and have enabled multi-atlas support, then please use the Phaser Multi Atlas loader
     * instead of this one.
     * 
@@ -605,52 +617,12 @@ trait LoaderPlugin
     * @param config An object containing an `instances` property for HTML5Audio. Defaults to 1.
     * @param xhrSettings An XHR Settings configuration object. Used in replacement of the Loaders default XHR Settings.
     */
-  def audio(key: String): this.type = js.native
-  def audio(key: String, urls: String): this.type = js.native
-  def audio(key: String, urls: String, config: Any): this.type = js.native
-  def audio(key: String, urls: String, config: Any, xhrSettings: XHRSettingsObject): this.type = js.native
-  def audio(key: String, urls: String, config: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
-  def audio(key: String, urls: js.Array[String]): this.type = js.native
-  def audio(key: String, urls: js.Array[String], config: Any): this.type = js.native
-  def audio(key: String, urls: js.Array[String], config: Any, xhrSettings: XHRSettingsObject): this.type = js.native
-  def audio(key: String, urls: js.Array[String], config: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
-  def audio(key: String, urls: Unit, config: Any): this.type = js.native
-  def audio(key: String, urls: Unit, config: Any, xhrSettings: XHRSettingsObject): this.type = js.native
-  def audio(key: String, urls: Unit, config: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
-  def audio(key: js.Array[AudioFileConfig]): this.type = js.native
-  def audio(key: js.Array[AudioFileConfig], urls: String): this.type = js.native
-  def audio(key: js.Array[AudioFileConfig], urls: String, config: Any): this.type = js.native
-  def audio(key: js.Array[AudioFileConfig], urls: String, config: Any, xhrSettings: XHRSettingsObject): this.type = js.native
-  def audio(key: js.Array[AudioFileConfig], urls: String, config: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
-  def audio(key: js.Array[AudioFileConfig], urls: js.Array[String]): this.type = js.native
-  def audio(key: js.Array[AudioFileConfig], urls: js.Array[String], config: Any): this.type = js.native
   def audio(
-    key: js.Array[AudioFileConfig],
-    urls: js.Array[String],
-    config: Any,
-    xhrSettings: XHRSettingsObject
+    key: String | AudioFileConfig | js.Array[AudioFileConfig],
+    urls: js.UndefOr[String | (js.Array[AudioFileURLConfig | String]) | AudioFileURLConfig],
+    config: js.UndefOr[Any],
+    xhrSettings: js.UndefOr[XHRSettingsObject]
   ): this.type = js.native
-  def audio(
-    key: js.Array[AudioFileConfig],
-    urls: js.Array[String],
-    config: Unit,
-    xhrSettings: XHRSettingsObject
-  ): this.type = js.native
-  def audio(key: js.Array[AudioFileConfig], urls: Unit, config: Any): this.type = js.native
-  def audio(key: js.Array[AudioFileConfig], urls: Unit, config: Any, xhrSettings: XHRSettingsObject): this.type = js.native
-  def audio(key: js.Array[AudioFileConfig], urls: Unit, config: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
-  def audio(key: AudioFileConfig): this.type = js.native
-  def audio(key: AudioFileConfig, urls: String): this.type = js.native
-  def audio(key: AudioFileConfig, urls: String, config: Any): this.type = js.native
-  def audio(key: AudioFileConfig, urls: String, config: Any, xhrSettings: XHRSettingsObject): this.type = js.native
-  def audio(key: AudioFileConfig, urls: String, config: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
-  def audio(key: AudioFileConfig, urls: js.Array[String]): this.type = js.native
-  def audio(key: AudioFileConfig, urls: js.Array[String], config: Any): this.type = js.native
-  def audio(key: AudioFileConfig, urls: js.Array[String], config: Any, xhrSettings: XHRSettingsObject): this.type = js.native
-  def audio(key: AudioFileConfig, urls: js.Array[String], config: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
-  def audio(key: AudioFileConfig, urls: Unit, config: Any): this.type = js.native
-  def audio(key: AudioFileConfig, urls: Unit, config: Any, xhrSettings: XHRSettingsObject): this.type = js.native
-  def audio(key: AudioFileConfig, urls: Unit, config: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
   
   /**
     * Adds a JSON based Audio Sprite, or array of audio sprites, to the current load queue.
@@ -1472,6 +1444,10 @@ trait LoaderPlugin
     * The normal map file is subject to the same conditions as the image file with regard to the path, baseURL, CORs and XHR Settings.
     * Normal maps are a WebGL only feature.
     * 
+    * In Phaser 3.60 a new property was added that allows you to control how images are loaded. By default, images are loaded via XHR as Blobs.
+    * However, you can set `loader.imageLoadType: "HTMLImageElement"` in the Game Configuration and instead, the Loader will load all images
+    * via the Image tag instead.
+    * 
     * Note: The ability to load this type of file will only be available if the Image File type has been built into Phaser.
     * It is available in the default build but can be excluded from custom builds.
     * @param key The key to use for this file, or a file configuration object, or array of them.
@@ -1496,6 +1472,11 @@ trait LoaderPlugin
   def image(key: ImageFileConfig, url: js.Array[String]): this.type = js.native
   def image(key: ImageFileConfig, url: js.Array[String], xhrSettings: XHRSettingsObject): this.type = js.native
   def image(key: ImageFileConfig, url: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  
+  /**
+    * Optional load type for image files. `XHR` is the default. Set to `HTMLImageElement` to load images using the Image tag instead.
+    */
+  var imageLoadType: String = js.native
   
   /**
     * Files are stored in this Set while they're in the process of being loaded.
@@ -1656,6 +1637,14 @@ trait LoaderPlugin
     * Also clears down the Sets, puts progress to 1 and clears the deletion queue.
     */
   def loadComplete(): Unit = js.native
+  
+  /**
+    * An array of all schemes that the Loader considers as being 'local'.
+    * 
+    * This is populated by the `Phaser.Core.Config#loaderLocalScheme` game configuration setting and defaults to
+    * `[ 'file://', 'capacitor://' ]`. Additional local schemes can be added to this array as needed.
+    */
+  var localSchemes: js.Array[String] = js.native
   
   /**
     * The number of concurrent / parallel resources to try and fetch at once.
@@ -2535,6 +2524,15 @@ trait LoaderPlugin
     * }
     * ```
     * 
+    * If the script file contains a module, then you should specify that using the 'type' parameter:
+    * 
+    * ```javascript
+    * function preload ()
+    * {
+    *     this.load.script('aliens', 'lib/aliens.js', 'module');
+    * }
+    * ```
+    * 
     * The file is **not** loaded right away. It is added to a queue ready to be loaded either when the loader starts,
     * or if it's already running, when the next free load slot becomes available. This happens automatically if you
     * are calling this from within the Scene's `preload` method, or a related callback. Because the file is queued
@@ -2550,7 +2548,8 @@ trait LoaderPlugin
     * ```javascript
     * this.load.script({
     *     key: 'aliens',
-    *     url: 'lib/aliens.js'
+    *     url: 'lib/aliens.js',
+    *     type: 'script' // or 'module'
     * });
     * ```
     * 
@@ -2571,20 +2570,33 @@ trait LoaderPlugin
     * It is available in the default build but can be excluded from custom builds.
     * @param key The key to use for this file, or a file configuration object, or array of them.
     * @param url The absolute or relative URL to load this file from. If undefined or `null` it will be set to `<key>.js`, i.e. if `key` was "alien" then the URL will be "alien.js".
+    * @param type The script type. Should be either 'script' for classic JavaScript, or 'module' if the file contains an exported module. Default 'script'.
     * @param xhrSettings An XHR Settings configuration object. Used in replacement of the Loaders default XHR Settings.
     */
   def script(key: String): this.type = js.native
   def script(key: String, url: String): this.type = js.native
-  def script(key: String, url: String, xhrSettings: XHRSettingsObject): this.type = js.native
-  def script(key: String, url: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def script(key: String, url: String, `type`: String): this.type = js.native
+  def script(key: String, url: String, `type`: String, xhrSettings: XHRSettingsObject): this.type = js.native
+  def script(key: String, url: String, `type`: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def script(key: String, url: Unit, `type`: String): this.type = js.native
+  def script(key: String, url: Unit, `type`: String, xhrSettings: XHRSettingsObject): this.type = js.native
+  def script(key: String, url: Unit, `type`: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
   def script(key: js.Array[ScriptFileConfig]): this.type = js.native
   def script(key: js.Array[ScriptFileConfig], url: String): this.type = js.native
-  def script(key: js.Array[ScriptFileConfig], url: String, xhrSettings: XHRSettingsObject): this.type = js.native
-  def script(key: js.Array[ScriptFileConfig], url: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def script(key: js.Array[ScriptFileConfig], url: String, `type`: String): this.type = js.native
+  def script(key: js.Array[ScriptFileConfig], url: String, `type`: String, xhrSettings: XHRSettingsObject): this.type = js.native
+  def script(key: js.Array[ScriptFileConfig], url: String, `type`: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def script(key: js.Array[ScriptFileConfig], url: Unit, `type`: String): this.type = js.native
+  def script(key: js.Array[ScriptFileConfig], url: Unit, `type`: String, xhrSettings: XHRSettingsObject): this.type = js.native
+  def script(key: js.Array[ScriptFileConfig], url: Unit, `type`: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
   def script(key: ScriptFileConfig): this.type = js.native
   def script(key: ScriptFileConfig, url: String): this.type = js.native
-  def script(key: ScriptFileConfig, url: String, xhrSettings: XHRSettingsObject): this.type = js.native
-  def script(key: ScriptFileConfig, url: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def script(key: ScriptFileConfig, url: String, `type`: String): this.type = js.native
+  def script(key: ScriptFileConfig, url: String, `type`: String, xhrSettings: XHRSettingsObject): this.type = js.native
+  def script(key: ScriptFileConfig, url: String, `type`: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def script(key: ScriptFileConfig, url: Unit, `type`: String): this.type = js.native
+  def script(key: ScriptFileConfig, url: Unit, `type`: String, xhrSettings: XHRSettingsObject): this.type = js.native
+  def script(key: ScriptFileConfig, url: Unit, `type`: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
   
   /**
     * Adds an array of Script files to the current load queue.
@@ -3447,6 +3459,155 @@ trait LoaderPlugin
   def text(key: TextFileConfig, url: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
   
   /**
+    * Adds a Compressed Texture file to the current load queue. This feature is WebGL only.
+    * 
+    * This method takes a key and a configuration object, which lists the different formats
+    * and files associated with them.
+    * 
+    * The texture format object should be ordered in GPU priority order, with IMG as the last entry.
+    * 
+    * You can call this method from within your Scene's `preload`, along with any other files you wish to load:
+    * 
+    * ```javascript
+    * preload ()
+    * {
+    *     this.load.texture('yourPic', {
+    *         ASTC: { type: 'PVR', textureURL: 'pic-astc-4x4.pvr' },
+    *         PVRTC: { type: 'PVR', textureURL: 'pic-pvrtc-4bpp-rgba.pvr' },
+    *         S3TC: { type: 'PVR', textureURL: 'pic-dxt5.pvr' },
+    *         IMG: { textureURL: 'pic.png' }
+    *     });
+    * ```
+    * 
+    * If you wish to load a texture atlas, provide the `atlasURL` property:
+    * 
+    * ```javascript
+    * preload ()
+    * {
+    *     const path = 'assets/compressed';
+    * 
+    *     this.load.texture('yourAtlas', {
+    *         'ASTC': { type: 'PVR', textureURL: `${path}/textures-astc-4x4.pvr`, atlasURL: `${path}/textures.json` },
+    *         'PVRTC': { type: 'PVR', textureURL: `${path}/textures-pvrtc-4bpp-rgba.pvr`, atlasURL: `${path}/textures-pvrtc-4bpp-rgba.json` },
+    *         'S3TC': { type: 'PVR', textureURL: `${path}/textures-dxt5.pvr`, atlasURL: `${path}/textures-dxt5.json` },
+    *         'IMG': { textureURL: `${path}/textures.png`, atlasURL: `${path}/textures.json` }
+    *     });
+    * }
+    * ```
+    * 
+    * If you wish to load a Multi Atlas, as exported from Texture Packer Pro, use the `multiAtlasURL` property instead:
+    * 
+    * ```javascript
+    * preload ()
+    * {
+    *     const path = 'assets/compressed';
+    * 
+    *     this.load.texture('yourAtlas', {
+    *         'ASTC': { type: 'PVR', atlasURL: `${path}/textures.json` },
+    *         'PVRTC': { type: 'PVR', atlasURL: `${path}/textures-pvrtc-4bpp-rgba.json` },
+    *         'S3TC': { type: 'PVR', atlasURL: `${path}/textures-dxt5.json` },
+    *         'IMG': { atlasURL: `${path}/textures.json` }
+    *     });
+    * }
+    * ```
+    * 
+    * When loading a Multi Atlas you do not need to specify the `textureURL` property as it will be read from the JSON file.
+    * 
+    * Instead of passing arguments you can pass a configuration object, such as:
+    * 
+    * ```javascript
+    * this.load.texture({
+    *     key: 'yourPic',
+    *     url: {
+    *         ASTC: { type: 'PVR', textureURL: 'pic-astc-4x4.pvr' },
+    *         PVRTC: { type: 'PVR', textureURL: 'pic-pvrtc-4bpp-rgba.pvr' },
+    *         S3TC: { type: 'PVR', textureURL: 'pic-dxt5.pvr' },
+    *         IMG: { textureURL: 'pic.png' }
+    *    }
+    * });
+    * ```
+    * 
+    * See the documentation for `Phaser.Types.Loader.FileTypes.CompressedTextureFileConfig` for more details.
+    * 
+    * The number of formats you provide to this function is up to you, but you should ensure you
+    * cover the primary platforms where appropriate.
+    * 
+    * The 'IMG' entry is a fallback to a JPG or PNG, should the browser be unable to load any of the other
+    * formats presented to this function. You should really always include this, although it is optional.
+    * 
+    * Phaser supports loading both the PVR and KTX container formats. Within those, it can parse
+    * the following texture compression formats:
+    * 
+    * ETC
+    * ETC1
+    * ATC
+    * ASTC
+    * BPTC
+    * RGTC
+    * PVRTC
+    * S3TC
+    * S3TCSRGB
+    * 
+    * For more information about the benefits of compressed textures please see the
+    * following articles:
+    * 
+    * Texture Compression in 2020 (https://aras-p.info/blog/2020/12/08/Texture-Compression-in-2020/)
+    * Compressed GPU Texture Formats (https://themaister.net/blog/2020/08/12/compressed-gpu-texture-formats-a-review-and-compute-shader-decoders-part-1/)
+    * 
+    * To create compressed texture files use a 3rd party application such as:
+    * 
+    * Texture Packer (https://www.codeandweb.com/texturepacker/tutorials/how-to-create-sprite-sheets-for-phaser3?utm_source=ad&utm_medium=banner&utm_campaign=phaser-2018-10-16)
+    * PVRTexTool (https://developer.imaginationtech.com/pvrtextool/) - available for Windows, macOS and Linux.
+    * Mali Texture Compression Tool (https://developer.arm.com/tools-and-software/graphics-and-gaming/mali-texture-compression-tool)
+    * ASTC Encoder (https://github.com/ARM-software/astc-encoder)
+    * 
+    * ASTCs must have a Channel Type of Unsigned Normalized Bytes (UNorm) and a Linear RGB Color Space.
+    * 
+    * The file is **not** loaded right away. It is added to a queue ready to be loaded either when the loader starts,
+    * or if it's already running, when the next free load slot becomes available. This happens automatically if you
+    * are calling this from within the Scene's `preload` method, or a related callback. Because the file is queued
+    * it means you cannot use the file immediately after calling this method, but must wait for the file to complete.
+    * The typical flow for a Phaser Scene is that you load assets in the Scene's `preload` method and then when the
+    * Scene's `create` method is called you are guaranteed that all of those assets are ready for use and have been
+    * loaded.
+    * 
+    * The key must be a unique String. It is used to add the file to the global Texture Manager upon a successful load.
+    * The key should be unique both in terms of files being loaded and files already present in the Texture Manager.
+    * Loading a file using a key that is already taken will result in a warning. If you wish to replace an existing file
+    * then remove it from the Texture Manager first, before loading a new one.
+    * 
+    * If you have specified a prefix in the loader, via `Loader.setPrefix` then this value will be prepended to this files
+    * key. For example, if the prefix was `LEVEL1.` and the key was `Data` the final key will be `LEVEL1.Data` and
+    * this is what you would use to retrieve the text from the Texture Manager.
+    * 
+    * The URL can be relative or absolute. If the URL is relative the `Loader.baseURL` and `Loader.path` values will be prepended to it.
+    * 
+    * Unlike other file loaders in Phaser, the URLs must include the file extension.
+    * 
+    * Note: The ability to load this type of file will only be available if the Compressed Texture File type has been built into Phaser.
+    * It is available in the default build but can be excluded from custom builds.
+    * @param key The key to use for this file, or a file configuration object, or array of them.
+    * @param url The compressed texture configuration object. Not required if passing a config object as the `key` parameter.
+    * @param xhrSettings An XHR Settings configuration object. Used in replacement of the Loaders default XHR Settings.
+    */
+  def texture(key: String): this.type = js.native
+  def texture(key: String, url: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def texture(key: String, url: CompressedTextureFileConfig): this.type = js.native
+  def texture(key: String, url: CompressedTextureFileConfig, xhrSettings: XHRSettingsObject): this.type = js.native
+  def texture(key: js.Array[CompressedTextureFileConfig]): this.type = js.native
+  def texture(key: js.Array[CompressedTextureFileConfig], url: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def texture(key: js.Array[CompressedTextureFileConfig], url: CompressedTextureFileConfig): this.type = js.native
+  def texture(
+    key: js.Array[CompressedTextureFileConfig],
+    url: CompressedTextureFileConfig,
+    xhrSettings: XHRSettingsObject
+  ): this.type = js.native
+  def texture(key: CompressedTextureFileConfig): this.type = js.native
+  def texture(key: CompressedTextureFileConfig, url: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def texture(key: CompressedTextureFileConfig, url: CompressedTextureFileConfig): this.type = js.native
+  def texture(key: CompressedTextureFileConfig, url: CompressedTextureFileConfig, xhrSettings: XHRSettingsObject): this.type = js.native
+  
+  /**
     * A reference to the global Texture Manager.
     */
   var textureManager: TextureManager = js.native
@@ -3844,7 +4005,6 @@ trait LoaderPlugin
     * this.load.video({
     *     key: 'intro',
     *     url: [ 'video/level1.mp4', 'video/level1.webm', 'video/level1.mov' ],
-    *     asBlob: false,
     *     noAudio: true
     * });
     * ```
@@ -3864,19 +4024,32 @@ trait LoaderPlugin
     * It is available in the default build but can be excluded from custom builds.
     * @param key The key to use for this file, or a file configuration object, or array of them.
     * @param urls The absolute or relative URL to load the video files from.
-    * @param loadEvent The load event to listen for when _not_ loading as a blob. Either `loadeddata`, `canplay` or `canplaythrough`. Default 'loadeddata'.
-    * @param asBlob Load the video as a data blob, or stream it via the Video element? Default false.
     * @param noAudio Does the video have an audio track? If not you can enable auto-playing on it. Default false.
-    * @param xhrSettings An XHR Settings configuration object. Used in replacement of the Loaders default XHR Settings.
     */
-  def video(
-    key: String | VideoFileConfig | js.Array[VideoFileConfig],
-    urls: js.UndefOr[String | js.Array[String]],
-    loadEvent: js.UndefOr[String],
-    asBlob: js.UndefOr[Boolean],
-    noAudio: js.UndefOr[Boolean],
-    xhrSettings: js.UndefOr[XHRSettingsObject]
-  ): this.type = js.native
+  def video(key: String): this.type = js.native
+  def video(key: String, urls: String): this.type = js.native
+  def video(key: String, urls: String, noAudio: Boolean): this.type = js.native
+  def video(key: String, urls: js.Array[String | VideoFileURLConfig]): this.type = js.native
+  def video(key: String, urls: js.Array[String | VideoFileURLConfig], noAudio: Boolean): this.type = js.native
+  def video(key: String, urls: Unit, noAudio: Boolean): this.type = js.native
+  def video(key: String, urls: VideoFileURLConfig): this.type = js.native
+  def video(key: String, urls: VideoFileURLConfig, noAudio: Boolean): this.type = js.native
+  def video(key: js.Array[VideoFileConfig]): this.type = js.native
+  def video(key: js.Array[VideoFileConfig], urls: String): this.type = js.native
+  def video(key: js.Array[VideoFileConfig], urls: String, noAudio: Boolean): this.type = js.native
+  def video(key: js.Array[VideoFileConfig], urls: js.Array[String | VideoFileURLConfig]): this.type = js.native
+  def video(key: js.Array[VideoFileConfig], urls: js.Array[String | VideoFileURLConfig], noAudio: Boolean): this.type = js.native
+  def video(key: js.Array[VideoFileConfig], urls: Unit, noAudio: Boolean): this.type = js.native
+  def video(key: js.Array[VideoFileConfig], urls: VideoFileURLConfig): this.type = js.native
+  def video(key: js.Array[VideoFileConfig], urls: VideoFileURLConfig, noAudio: Boolean): this.type = js.native
+  def video(key: VideoFileConfig): this.type = js.native
+  def video(key: VideoFileConfig, urls: String): this.type = js.native
+  def video(key: VideoFileConfig, urls: String, noAudio: Boolean): this.type = js.native
+  def video(key: VideoFileConfig, urls: js.Array[String | VideoFileURLConfig]): this.type = js.native
+  def video(key: VideoFileConfig, urls: js.Array[String | VideoFileURLConfig], noAudio: Boolean): this.type = js.native
+  def video(key: VideoFileConfig, urls: Unit, noAudio: Boolean): this.type = js.native
+  def video(key: VideoFileConfig, urls: VideoFileURLConfig): this.type = js.native
+  def video(key: VideoFileConfig, urls: VideoFileURLConfig, noAudio: Boolean): this.type = js.native
   
   /**
     * xhr specific global settings (can be overridden on a per-file basis)

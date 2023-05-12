@@ -1,6 +1,7 @@
 package typings.fluentuiStyleUtilities
 
 import typings.fluentuiMergeStyles.libIrawstyleMod.IRawStyle
+import typings.fluentuiMergeStyles.libIrawstylebaseMod.ICSSRule
 import typings.fluentuiStyleUtilities.fluentuiStyleUtilitiesStrings.absolute
 import typings.fluentuiStyleUtilities.fluentuiStyleUtilitiesStrings.relative
 import org.scalablytyped.runtime.StObject
@@ -44,6 +45,12 @@ object libInterfacesIgetfocusstylesMod {
       * @defaultvalue theme.palette.neutralSecondary
       */
     var outlineColor: js.UndefOr[String] = js.undefined
+    
+    /**
+      * If default pointer events should be overridden.
+      * @defaultvalue undefined
+      */
+    var pointerEvents: js.UndefOr[ICSSRule | String] = js.undefined
     
     /**
       * The positioning applied to the container.
@@ -91,6 +98,10 @@ object libInterfacesIgetfocusstylesMod {
       inline def setOutlineColor(value: String): Self = StObject.set(x, "outlineColor", value.asInstanceOf[js.Any])
       
       inline def setOutlineColorUndefined: Self = StObject.set(x, "outlineColor", js.undefined)
+      
+      inline def setPointerEvents(value: ICSSRule | String): Self = StObject.set(x, "pointerEvents", value.asInstanceOf[js.Any])
+      
+      inline def setPointerEventsUndefined: Self = StObject.set(x, "pointerEvents", js.undefined)
       
       inline def setPosition(value: relative | absolute): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       

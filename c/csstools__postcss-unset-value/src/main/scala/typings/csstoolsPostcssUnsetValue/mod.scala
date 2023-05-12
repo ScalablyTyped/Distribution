@@ -19,12 +19,13 @@ object mod extends Shortcut {
   
   trait pluginOptions extends StObject {
     
-    var preserve: Boolean
+    /** Preserve the original notation. default: false */
+    var preserve: js.UndefOr[Boolean] = js.undefined
   }
   object pluginOptions {
     
-    inline def apply(preserve: Boolean): pluginOptions = {
-      val __obj = js.Dynamic.literal(preserve = preserve.asInstanceOf[js.Any])
+    inline def apply(): pluginOptions = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[pluginOptions]
     }
     
@@ -32,6 +33,8 @@ object mod extends Shortcut {
     implicit open class MutableBuilder[Self <: pluginOptions] (val x: Self) extends AnyVal {
       
       inline def setPreserve(value: Boolean): Self = StObject.set(x, "preserve", value.asInstanceOf[js.Any])
+      
+      inline def setPreserveUndefined: Self = StObject.set(x, "preserve", js.undefined)
     }
   }
 }

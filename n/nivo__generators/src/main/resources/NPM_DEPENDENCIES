@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@nivo/generators" : "0.80.0"
+      "@nivo/generators" : "0.83.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@nivo/generators" : "0.80.0"
+      "@nivo/generators" : "0.83.0"
     }
   ],
   "compile-devDependencies" : [

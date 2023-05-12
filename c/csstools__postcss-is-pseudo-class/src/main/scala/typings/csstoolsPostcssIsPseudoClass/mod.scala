@@ -20,12 +20,25 @@ object mod extends Shortcut {
   
   trait pluginOptions extends StObject {
     
+    /**
+      * Warn on complex selectors in `:is` pseudo class functions.
+      * default: _not set_
+      */
     var onComplexSelector: js.UndefOr[warning] = js.undefined
     
+    /**
+      * Warn when pseudo elements are used in `:is` pseudo class functions.
+      * default: _not set_
+      */
     var onPseudoElement: js.UndefOr[warning] = js.undefined
     
+    /** Preserve the original notation. default: false */
     var preserve: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Change the selector used to adjust specificity.
+      * default: `does-not-exist`.
+      */
     var specificityMatchingName: js.UndefOr[String] = js.undefined
   }
   object pluginOptions {

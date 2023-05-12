@@ -130,25 +130,30 @@ object sapMPopoverMod {
     inline def getMetadata(): typings.openui5.sapUiCoreElementMetadataMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("getMetadata")().asInstanceOf[typings.openui5.sapUiCoreElementMetadataMod.default]
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Calculate outerHeight of the element; used as hook for SVG elements
+      *
+      * @returns The outer height of the element
       */
     inline def outerHeight(/**
       * An Element for which outerHeight will be calculated.
       */
-    oElement: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("outerHeight")(oElement.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    oElement: HTMLElement): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("outerHeight")(oElement.asInstanceOf[js.Any]).asInstanceOf[Double]
     inline def outerHeight(
       /**
       * An Element for which outerHeight will be calculated.
       */
     oElement: HTMLElement,
       /**
-      * Determines if the margins should be included in the calculated outerHeight * @returns {number} The outer
-      * height of the element
+      * Determines if the margins should be included in the calculated outerHeight
       */
     bIncludeMargin: Boolean
-    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("outerHeight")(oElement.asInstanceOf[js.Any], bIncludeMargin.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("outerHeight")(oElement.asInstanceOf[js.Any], bIncludeMargin.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Calculate outerWidth of the element; used as hook for SVG elements
       *
       * @returns The outer width of the element
@@ -175,22 +180,28 @@ object sapMPopoverMod {
        with PopupInterface {
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Hook called after adjusment of the Popover position.
       */
     def _afterAdjustPositionAndArrowHook(): Unit = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Hook called before adjusment of the Popover position.
       */
     def _beforeAdjustPositionAndArrowHook(): Unit = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * If customHeader is set, this will return the customHeaer. Otherwise it creates a header and put the title
       * and buttons if needed inside, and finally return this newly create header.
       *
       * @returns The created header
       */
-    def _getAnyHeader(): js.Object = js.native
+    def _getAnyHeader(): typings.openui5.sapUiCoreControlMod.default | typings.openui5.sapMBarMod.default = js.native
     
     def addAriaDescribedBy(
       /**
@@ -640,6 +651,8 @@ object sapMPopoverMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:afterClose afterClose} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -651,6 +664,8 @@ object sapMPopoverMod {
     mParameters: OpenBy): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:afterOpen afterOpen} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -662,6 +677,8 @@ object sapMPopoverMod {
     mParameters: OpenBy): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:beforeClose beforeClose} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -673,6 +690,8 @@ object sapMPopoverMod {
     mParameters: OpenBy): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:beforeOpen beforeOpen} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -766,9 +785,7 @@ object sapMPopoverMod {
     def getCustomHeader(): typings.openui5.sapUiCoreControlMod.default = js.native
     
     /**
-      * @deprecated (since 1.15.0) - This property is deprecated. Please use properties verticalScrolling and
-      * horizontalScrolling instead. If you still use this property it will be mapped on the new properties verticalScrolling
-      * and horizontalScrolling.
+      * @deprecated (since 1.15.0)
       *
       * Gets current value of property {@link #getEnableScrolling enableScrolling}.
       *
@@ -922,7 +939,8 @@ object sapMPopoverMod {
     /**
       * Gets current value of property {@link #getShowHeader showHeader}.
       *
-      * If a header should be shown at the top of the popover.
+      * If a header should be shown at the top of the popover. Note:* The heading level of the popover is H1.
+      * Headings in the popover content should start with H2 heading level.
       *
       * Default value is `true`.
       *
@@ -1037,9 +1055,34 @@ object sapMPopoverMod {
       * This is the control to which the Popover will be placed. It can be not only a UI5 control, but also an
       * existing DOM reference. The side of the placement depends on the placement property set in the Popover.
       */
-    oControl: js.Object,
+    oControl: typings.openui5.sapUiCoreControlMod.default
+    ): this.type = js.native
+    def openBy(
       /**
-      * Indicates whether popover should be managed by InstanceManager or not
+      * This is the control to which the Popover will be placed. It can be not only a UI5 control, but also an
+      * existing DOM reference. The side of the placement depends on the placement property set in the Popover.
+      */
+    oControl: typings.openui5.sapUiCoreControlMod.default,
+      /**
+      * Indicates whether popover should be managed by InstanceManager or not.
+      */
+    bSkipInstanceManager: Boolean
+    ): this.type = js.native
+    def openBy(
+      /**
+      * This is the control to which the Popover will be placed. It can be not only a UI5 control, but also an
+      * existing DOM reference. The side of the placement depends on the placement property set in the Popover.
+      */
+    oControl: HTMLElement
+    ): this.type = js.native
+    def openBy(
+      /**
+      * This is the control to which the Popover will be placed. It can be not only a UI5 control, but also an
+      * existing DOM reference. The side of the placement depends on the placement property set in the Popover.
+      */
+    oControl: HTMLElement,
+      /**
+      * Indicates whether popover should be managed by InstanceManager or not.
       */
     bSkipInstanceManager: Boolean
     ): this.type = js.native
@@ -1140,6 +1183,8 @@ object sapMPopoverMod {
     oBeginButton: typings.openui5.sapUiCoreControlMod.default): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Setter for property `bounce`.
       *
       * Default value is empty
@@ -1225,9 +1270,7 @@ object sapMPopoverMod {
     oCustomHeader: typings.openui5.sapUiCoreControlMod.default): this.type = js.native
     
     /**
-      * @deprecated (since 1.15.0) - This property is deprecated. Please use properties verticalScrolling and
-      * horizontalScrolling instead. If you still use this property it will be mapped on the new properties verticalScrolling
-      * and horizontalScrolling.
+      * @deprecated (since 1.15.0)
       *
       * Sets a new value for property {@link #getEnableScrolling enableScrolling}.
       *
@@ -1260,6 +1303,7 @@ object sapMPopoverMod {
     
     /**
       * @SINCE 1.16.8
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * The followOf feature closes the Popover when the position of the control that opened the Popover changes
       * by at least 32 pixels (on desktop browsers). This may lead to unwanted closing of the Popover.
@@ -1490,7 +1534,8 @@ object sapMPopoverMod {
     /**
       * Sets a new value for property {@link #getShowHeader showHeader}.
       *
-      * If a header should be shown at the top of the popover.
+      * If a header should be shown at the top of the popover. Note:* The heading level of the popover is H1.
+      * Headings in the popover content should start with H2 heading level.
       *
       * When called with a value of `null` or `undefined`, the default value of the property will be restored.
       *
@@ -1688,9 +1733,7 @@ object sapMPopoverMod {
     var customHeader: js.UndefOr[typings.openui5.sapUiCoreControlMod.default] = js.undefined
     
     /**
-      * @deprecated (since 1.15.0) - This property is deprecated. Please use properties verticalScrolling and
-      * horizontalScrolling instead. If you still use this property it will be mapped on the new properties verticalScrolling
-      * and horizontalScrolling.
+      * @deprecated (since 1.15.0)
       *
       * This property is deprecated. Please use properties verticalScrolling and horizontalScrolling instead.
       * If you still use this property it will be mapped on the new properties verticalScrolling and horizontalScrolling.
@@ -1805,7 +1848,8 @@ object sapMPopoverMod {
       ] = js.undefined
     
     /**
-      * If a header should be shown at the top of the popover.
+      * If a header should be shown at the top of the popover. *Note:* The heading level of the popover is H1.
+      * Headings in the popover content should start with H2 heading level.
       */
     var showHeader: js.UndefOr[
         Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)

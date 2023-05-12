@@ -7,7 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object srcInputSchemaMod {
   
-  trait Schema extends StObject {
+  trait Schema
+    extends StObject
+       with /* property */ StringDictionary[Any] {
     
     var currentDirectory: String
     
@@ -49,7 +51,9 @@ object srcInputSchemaMod {
     }
   }
   
-  trait Target extends StObject {
+  trait Target
+    extends StObject
+       with /* property */ StringDictionary[Any] {
     
     var configuration: js.UndefOr[String] = js.undefined
     

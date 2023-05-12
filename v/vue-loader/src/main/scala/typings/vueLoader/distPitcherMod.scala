@@ -1,5 +1,6 @@
 package typings.vueLoader
 
+import typings.webpack.mod.LoaderDefinitionFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ object distPitcherMod {
   
   @JSImport("vue-loader/dist/pitcher", JSImport.Default)
   @js.native
-  val default: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.loader.Loader */ Any = js.native
+  val default: LoaderDefinitionFunction[js.Object, js.Object] = js.native
   
   inline def pitch(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("pitch")().asInstanceOf[js.UndefOr[String]]
 }

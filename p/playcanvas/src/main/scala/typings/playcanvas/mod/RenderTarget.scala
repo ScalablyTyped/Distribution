@@ -11,20 +11,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("playcanvas", "RenderTarget")
 @js.native
 open class RenderTarget protected () extends StObject {
+  def this(options: Unit, args: Any*) = this()
   /**
     * Creates a new RenderTarget instance. A color buffer or a depth buffer must be set.
     *
-    * @param {object} options - Object for passing optional arguments.
+    * @param {object} [options] - Object for passing optional arguments.
     * @param {boolean} [options.autoResolve] - If samples > 1, enables or disables automatic MSAA
     * resolve after rendering to this RT (see {@link RenderTarget#resolve}). Defaults to true.
-    * @param {Texture} [options.colorBuffer] - The texture that this render target will treat as a
-    * rendering surface.
+    * @param {import('./texture.js').Texture} [options.colorBuffer] - The texture that this render
+    * target will treat as a rendering surface.
     * @param {boolean} [options.depth] - If set to true, depth buffer will be created. Defaults to
     * true. Ignored if depthBuffer is defined.
-    * @param {Texture} [options.depthBuffer] - The texture that this render target will treat as a
-    * depth/stencil surface (WebGL2 only). If set, the 'depth' and 'stencil' properties are
-    * ignored. Texture must have {@link PIXELFORMAT_DEPTH} or {@link PIXELFORMAT_DEPTHSTENCIL}
-    * format.
+    * @param {import('./texture.js').Texture} [options.depthBuffer] - The texture that this render
+    * target will treat as a depth/stencil surface (WebGL2 only). If set, the 'depth' and
+    * 'stencil' properties are ignored. Texture must have {@link PIXELFORMAT_DEPTH} or
+    * {@link PIXELFORMAT_DEPTHSTENCIL} format.
     * @param {number} [options.face] - If the colorBuffer parameter is a cubemap, use this option
     * to specify the face of the cubemap to render to. Can be:
     *
@@ -45,12 +46,12 @@ open class RenderTarget protected () extends StObject {
     * Defaults to false. Ignored if depthBuffer is defined or depth is false.
     * @example
     * // Create a 512x512x24-bit render target with a depth buffer
-    * var colorBuffer = new pc.Texture(graphicsDevice, {
+    * const colorBuffer = new pc.Texture(graphicsDevice, {
     *     width: 512,
     *     height: 512,
-    *     format: pc.PIXELFORMAT_R8_G8_B8
+    *     format: pc.PIXELFORMAT_RGB8
     * });
-    * var renderTarget = new pc.RenderTarget({
+    * const renderTarget = new pc.RenderTarget({
     *     colorBuffer: colorBuffer,
     *     depth: true
     * });
@@ -76,7 +77,7 @@ open class RenderTarget protected () extends StObject {
   
   var _face: Double = js.native
   
-  var _samples: Double = js.native
+  var _samples: Any = js.native
   
   var _stencil: Boolean = js.native
   
@@ -85,7 +86,7 @@ open class RenderTarget protected () extends StObject {
   /**
     * Color buffer set up on the render target.
     *
-    * @type {Texture}
+    * @type {import('./texture.js').Texture}
     */
   def colorBuffer: Texture = js.native
   
@@ -114,7 +115,7 @@ open class RenderTarget protected () extends StObject {
     * Depth buffer set up on the render target. Only available, if depthBuffer was set in
     * constructor. Not available if depth property was used instead.
     *
-    * @type {Texture}
+    * @type {import('./texture.js').Texture}
     */
   def depthBuffer: Texture = js.native
   
@@ -166,7 +167,7 @@ open class RenderTarget protected () extends StObject {
   var impl: Any = js.native
   
   /**
-    * Initialises the resources associated with this render target.
+    * Initializes the resources associated with this render target.
     *
     * @ignore
     */

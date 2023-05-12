@@ -6,7 +6,7 @@ import typings.firebaseAuth.distRnSrcModelPublicTypesMod.AuthProvider
 import typings.firebaseAuth.distRnSrcModelPublicTypesMod.PopupRedirectResolver
 import typings.firebaseAuth.distRnSrcModelPublicTypesMod.User
 import typings.firebaseAuth.distRnSrcModelPublicTypesMod.UserCredential
-import typings.firebaseAuth.firebaseAuthInts.`2000`
+import typings.firebaseAuth.firebaseAuthInts.`8000`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -32,7 +32,7 @@ object distRnSrcPlatformBrowserStrategiesPopupMod {
   
   object Timeout {
     
-    inline def AUTH_EVENT: `2000` = 2000.asInstanceOf[`2000`]
+    inline def AUTH_EVENT: `8000` = 8000.asInstanceOf[`8000`]
   }
-  type Timeout = `2000`
+  type Timeout = `8000`
 }

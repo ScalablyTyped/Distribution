@@ -8,13 +8,10 @@ trait OutdatedPage extends StObject {
   
   var outdated: js.UndefOr[String] = js.undefined
   
-  /** Page number of the results to fetch. */
   var page: js.UndefOr[Double] = js.undefined
   
-  /** The number of results per page (max 100). */
   var per_page: js.UndefOr[Double] = js.undefined
   
-  /** Only show notifications updated after the given time. This is a timestamp in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format: `YYYY-MM-DDTHH:MM:SSZ`. */
   var since: js.UndefOr[String] = js.undefined
 }
 object OutdatedPage {

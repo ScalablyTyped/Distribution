@@ -8,11 +8,15 @@ trait TypeofPaymentMethod extends StObject {
   
   val Card: TypeofCardWallet
   
+  val CardPresent: Any
+  
   val Eps: Any
   
   val Fpx: Any
   
   val Ideal: Any
+  
+  val InteracPresent: Any
   
   val Klarna: Any
   
@@ -26,15 +30,17 @@ object TypeofPaymentMethod {
   
   inline def apply(
     Card: TypeofCardWallet,
+    CardPresent: Any,
     Eps: Any,
     Fpx: Any,
     Ideal: Any,
+    InteracPresent: Any,
     Klarna: Any,
     P24: Any,
     SepaDebit: Any,
     UsBankAccount: TypeofUsBankAccountNetworks
   ): TypeofPaymentMethod = {
-    val __obj = js.Dynamic.literal(Card = Card.asInstanceOf[js.Any], Eps = Eps.asInstanceOf[js.Any], Fpx = Fpx.asInstanceOf[js.Any], Ideal = Ideal.asInstanceOf[js.Any], Klarna = Klarna.asInstanceOf[js.Any], P24 = P24.asInstanceOf[js.Any], SepaDebit = SepaDebit.asInstanceOf[js.Any], UsBankAccount = UsBankAccount.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(Card = Card.asInstanceOf[js.Any], CardPresent = CardPresent.asInstanceOf[js.Any], Eps = Eps.asInstanceOf[js.Any], Fpx = Fpx.asInstanceOf[js.Any], Ideal = Ideal.asInstanceOf[js.Any], InteracPresent = InteracPresent.asInstanceOf[js.Any], Klarna = Klarna.asInstanceOf[js.Any], P24 = P24.asInstanceOf[js.Any], SepaDebit = SepaDebit.asInstanceOf[js.Any], UsBankAccount = UsBankAccount.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofPaymentMethod]
   }
   
@@ -43,11 +49,15 @@ object TypeofPaymentMethod {
     
     inline def setCard(value: TypeofCardWallet): Self = StObject.set(x, "Card", value.asInstanceOf[js.Any])
     
+    inline def setCardPresent(value: Any): Self = StObject.set(x, "CardPresent", value.asInstanceOf[js.Any])
+    
     inline def setEps(value: Any): Self = StObject.set(x, "Eps", value.asInstanceOf[js.Any])
     
     inline def setFpx(value: Any): Self = StObject.set(x, "Fpx", value.asInstanceOf[js.Any])
     
     inline def setIdeal(value: Any): Self = StObject.set(x, "Ideal", value.asInstanceOf[js.Any])
+    
+    inline def setInteracPresent(value: Any): Self = StObject.set(x, "InteracPresent", value.asInstanceOf[js.Any])
     
     inline def setKlarna(value: Any): Self = StObject.set(x, "Klarna", value.asInstanceOf[js.Any])
     

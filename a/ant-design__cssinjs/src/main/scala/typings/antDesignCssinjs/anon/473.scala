@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.GridRowStart
+import typings.csstype.mod.Property.ScrollPaddingInline
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,8 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `473` extends StObject {
   
   var value: js.UndefOr[
-    GridRowStart | (js.Array[
-      (Extract[js.UndefOr[GridRowStart | js.Array[NonNullable[js.UndefOr[GridRowStart]]]], String]) | NonNullable[js.UndefOr[GridRowStart]]
+    (ScrollPaddingInline[Double | String]) | (js.Array[
+      (Extract[
+        js.UndefOr[
+          (ScrollPaddingInline[Double | String]) | (js.Array[NonNullable[js.UndefOr[ScrollPaddingInline[Double | String]]]])
+        ], 
+        String
+      ]) | (NonNullable[js.UndefOr[ScrollPaddingInline[Double | String]]])
     ])
   ] = js.native
 }

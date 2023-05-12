@@ -17,7 +17,7 @@ trait PolygonOptions extends StObject {
   
   var map: js.UndefOr[Map] = js.undefined
   
-  var paths: js.Array[ArrayOfCoords | ArrayOfCoordsLiteral | KVOArrayOfCoords]
+  var paths: (js.Array[ArrayOfCoords | ArrayOfCoordsLiteral]) | KVOArray[KVOArrayOfCoords]
   
   var strokeColor: js.UndefOr[String] = js.undefined
   
@@ -37,7 +37,7 @@ trait PolygonOptions extends StObject {
 }
 object PolygonOptions {
   
-  inline def apply(paths: js.Array[ArrayOfCoords | ArrayOfCoordsLiteral | KVOArrayOfCoords]): PolygonOptions = {
+  inline def apply(paths: (js.Array[ArrayOfCoords | ArrayOfCoordsLiteral]) | KVOArray[KVOArrayOfCoords]): PolygonOptions = {
     val __obj = js.Dynamic.literal(paths = paths.asInstanceOf[js.Any])
     __obj.asInstanceOf[PolygonOptions]
   }
@@ -61,9 +61,9 @@ object PolygonOptions {
     
     inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
     
-    inline def setPaths(value: js.Array[ArrayOfCoords | ArrayOfCoordsLiteral | KVOArrayOfCoords]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
+    inline def setPaths(value: (js.Array[ArrayOfCoords | ArrayOfCoordsLiteral]) | KVOArray[KVOArrayOfCoords]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
     
-    inline def setPathsVarargs(value: (ArrayOfCoords | ArrayOfCoordsLiteral | KVOArrayOfCoords)*): Self = StObject.set(x, "paths", js.Array(value*))
+    inline def setPathsVarargs(value: (ArrayOfCoords | ArrayOfCoordsLiteral)*): Self = StObject.set(x, "paths", js.Array(value*))
     
     inline def setStrokeColor(value: String): Self = StObject.set(x, "strokeColor", value.asInstanceOf[js.Any])
     

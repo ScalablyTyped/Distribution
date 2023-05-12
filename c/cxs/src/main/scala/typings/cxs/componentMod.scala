@@ -24,6 +24,7 @@ import typings.cxs.cxsStrings.br
 import typings.cxs.cxsStrings.button
 import typings.cxs.cxsStrings.canvas
 import typings.cxs.cxsStrings.caption
+import typings.cxs.cxsStrings.center
 import typings.cxs.cxsStrings.circle
 import typings.cxs.cxsStrings.cite
 import typings.cxs.cxsStrings.clipPath
@@ -341,6 +342,13 @@ object componentMod {
     JSXElementConstructor[PropsType]
   ]]
   inline def apply[PropsType /* <: ApparentComponentProps[caption] */](component: caption): js.Function1[
+    /* arg */ CSSObject | (js.Function1[/* arg */ PropsType, CSSObject]), 
+    JSXElementConstructor[PropsType]
+  ] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* arg */ CSSObject | (js.Function1[/* arg */ PropsType, CSSObject]), 
+    JSXElementConstructor[PropsType]
+  ]]
+  inline def apply[PropsType /* <: ApparentComponentProps[center] */](component: center): js.Function1[
     /* arg */ CSSObject | (js.Function1[/* arg */ PropsType, CSSObject]), 
     JSXElementConstructor[PropsType]
   ] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
@@ -1431,5 +1439,5 @@ object componentMod {
     }}}
     */
   type ApparentComponentProps[// eslint-disable-next-line @typescript-eslint/no-explicit-any
-  C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.cxs.cxsStrings.a, typings.cxs.cxsStrings.abbr, typings.cxs.cxsStrings.address */ Any */] = ComponentProps[C]
+  C /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177, starting with typings.cxs.cxsStrings.a, typings.cxs.cxsStrings.abbr, typings.cxs.cxsStrings.address */ Any */] = ComponentProps[C]
 }

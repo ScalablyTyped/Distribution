@@ -14,6 +14,106 @@ object mod {
   inline def default(): Color = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Color]
   
   @js.native
+  sealed trait ColorActionName extends StObject
+  @JSImport("@jimp/plugin-color", "ColorActionName")
+  @js.native
+  object ColorActionName extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[ColorActionName & String] = js.native
+    
+    @js.native
+    sealed trait BLUE
+      extends StObject
+         with ColorActionName
+    /* "blue" */ val BLUE: typings.jimpPluginColor.mod.ColorActionName.BLUE & String = js.native
+    
+    @js.native
+    sealed trait BRIGHTEN
+      extends StObject
+         with ColorActionName
+    /* "brighten" */ val BRIGHTEN: typings.jimpPluginColor.mod.ColorActionName.BRIGHTEN & String = js.native
+    
+    @js.native
+    sealed trait DARKEN
+      extends StObject
+         with ColorActionName
+    /* "darken" */ val DARKEN: typings.jimpPluginColor.mod.ColorActionName.DARKEN & String = js.native
+    
+    @js.native
+    sealed trait DESATURATE
+      extends StObject
+         with ColorActionName
+    /* "desaturate" */ val DESATURATE: typings.jimpPluginColor.mod.ColorActionName.DESATURATE & String = js.native
+    
+    @js.native
+    sealed trait GREEN
+      extends StObject
+         with ColorActionName
+    /* "green" */ val GREEN: typings.jimpPluginColor.mod.ColorActionName.GREEN & String = js.native
+    
+    @js.native
+    sealed trait GREYSCALE
+      extends StObject
+         with ColorActionName
+    /* "greyscale" */ val GREYSCALE: typings.jimpPluginColor.mod.ColorActionName.GREYSCALE & String = js.native
+    
+    @js.native
+    sealed trait HUE
+      extends StObject
+         with ColorActionName
+    /* "hue" */ val HUE: typings.jimpPluginColor.mod.ColorActionName.HUE & String = js.native
+    
+    @js.native
+    sealed trait LIGHTEN
+      extends StObject
+         with ColorActionName
+    /* "lighten" */ val LIGHTEN: typings.jimpPluginColor.mod.ColorActionName.LIGHTEN & String = js.native
+    
+    @js.native
+    sealed trait MIX
+      extends StObject
+         with ColorActionName
+    /* "mix" */ val MIX: typings.jimpPluginColor.mod.ColorActionName.MIX & String = js.native
+    
+    @js.native
+    sealed trait RED
+      extends StObject
+         with ColorActionName
+    /* "red" */ val RED: typings.jimpPluginColor.mod.ColorActionName.RED & String = js.native
+    
+    @js.native
+    sealed trait SATURATE
+      extends StObject
+         with ColorActionName
+    /* "saturate" */ val SATURATE: typings.jimpPluginColor.mod.ColorActionName.SATURATE & String = js.native
+    
+    @js.native
+    sealed trait SHADE
+      extends StObject
+         with ColorActionName
+    /* "shade" */ val SHADE: typings.jimpPluginColor.mod.ColorActionName.SHADE & String = js.native
+    
+    @js.native
+    sealed trait SPIN
+      extends StObject
+         with ColorActionName
+    /* "spin" */ val SPIN: typings.jimpPluginColor.mod.ColorActionName.SPIN & String = js.native
+    
+    @js.native
+    sealed trait TINT
+      extends StObject
+         with ColorActionName
+    /* "tint" */ val TINT: typings.jimpPluginColor.mod.ColorActionName.TINT & String = js.native
+    
+    @js.native
+    sealed trait XOR
+      extends StObject
+         with ColorActionName
+    /* "xor" */ val XOR: typings.jimpPluginColor.mod.ColorActionName.XOR & String = js.native
+  }
+  
+  @js.native
   trait Color extends StObject {
     
     def brightness(`val`: Double): this.type = js.native
@@ -42,8 +142,8 @@ object mod {
     
     def convolution(kernel: js.Array[js.Array[Double]]): this.type = js.native
     def convolution(kernel: js.Array[js.Array[Double]], cb: ImageCallback[this.type]): this.type = js.native
-    def convolution[T](kernel: js.Array[js.Array[Double]], edgeHandling: String): this.type = js.native
-    def convolution[T](kernel: js.Array[js.Array[Double]], edgeHandling: String, cb: ImageCallback[this.type]): this.type = js.native
+    def convolution[T](kernel: js.Array[js.Array[Double]], edgeHandling: Double): this.type = js.native
+    def convolution[T](kernel: js.Array[js.Array[Double]], edgeHandling: Double, cb: ImageCallback[this.type]): this.type = js.native
     
     def fade(f: Double): this.type = js.native
     def fade(f: Double, cb: ImageCallback[this.type]): this.type = js.native
@@ -93,35 +193,5 @@ object mod {
       
       inline def setParams(value: Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     }
-  }
-  
-  /* Rewritten from type alias, can be one of: 
-    - typings.jimpPluginColor.jimpPluginColorStrings.mix
-    - typings.jimpPluginColor.jimpPluginColorStrings.tint
-    - typings.jimpPluginColor.jimpPluginColorStrings.shade
-    - typings.jimpPluginColor.jimpPluginColorStrings.xor
-    - typings.jimpPluginColor.jimpPluginColorStrings.red
-    - typings.jimpPluginColor.jimpPluginColorStrings.green
-    - typings.jimpPluginColor.jimpPluginColorStrings.blue
-    - typings.jimpPluginColor.jimpPluginColorStrings.hue
-  */
-  trait ColorActionName extends StObject
-  object ColorActionName {
-    
-    inline def blue: typings.jimpPluginColor.jimpPluginColorStrings.blue = "blue".asInstanceOf[typings.jimpPluginColor.jimpPluginColorStrings.blue]
-    
-    inline def green: typings.jimpPluginColor.jimpPluginColorStrings.green = "green".asInstanceOf[typings.jimpPluginColor.jimpPluginColorStrings.green]
-    
-    inline def hue: typings.jimpPluginColor.jimpPluginColorStrings.hue = "hue".asInstanceOf[typings.jimpPluginColor.jimpPluginColorStrings.hue]
-    
-    inline def mix: typings.jimpPluginColor.jimpPluginColorStrings.mix = "mix".asInstanceOf[typings.jimpPluginColor.jimpPluginColorStrings.mix]
-    
-    inline def red: typings.jimpPluginColor.jimpPluginColorStrings.red = "red".asInstanceOf[typings.jimpPluginColor.jimpPluginColorStrings.red]
-    
-    inline def shade: typings.jimpPluginColor.jimpPluginColorStrings.shade = "shade".asInstanceOf[typings.jimpPluginColor.jimpPluginColorStrings.shade]
-    
-    inline def tint: typings.jimpPluginColor.jimpPluginColorStrings.tint = "tint".asInstanceOf[typings.jimpPluginColor.jimpPluginColorStrings.tint]
-    
-    inline def xor: typings.jimpPluginColor.jimpPluginColorStrings.xor = "xor".asInstanceOf[typings.jimpPluginColor.jimpPluginColorStrings.xor]
   }
 }

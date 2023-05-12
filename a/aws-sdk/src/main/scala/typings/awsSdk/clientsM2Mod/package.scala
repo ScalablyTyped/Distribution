@@ -26,6 +26,7 @@ type ApplicationDeploymentLifecycle = _ApplicationDeploymentLifecycle | java.lan
   - typings.awsSdk.awsSdkStrings.Stopped_
   - typings.awsSdk.awsSdkStrings.Failed_
   - typings.awsSdk.awsSdkStrings.Deleting_
+  - typings.awsSdk.awsSdkStrings.`Deleting From Environment`
   - java.lang.String
 */
 type ApplicationLifecycle = _ApplicationLifecycle | java.lang.String
@@ -128,6 +129,7 @@ type EntityNameList = js.Array[EntityName]
   - typings.awsSdk.awsSdkStrings.Available_
   - typings.awsSdk.awsSdkStrings.Deleting_
   - typings.awsSdk.awsSdkStrings.Failed_
+  - typings.awsSdk.awsSdkStrings.Updating_
   - java.lang.String
 */
 type EnvironmentLifecycle = _EnvironmentLifecycle | java.lang.String

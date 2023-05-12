@@ -59,6 +59,11 @@ trait BaseMapper
   var xmlIsAttribute: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Determines if the current property should be serialized as the inner content of the xml element
+    */
+  var xmlIsMsText: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * Whether or not the current property should have a wrapping XML element
     */
   var xmlIsWrapped: js.UndefOr[Boolean] = js.undefined
@@ -126,6 +131,10 @@ object BaseMapper {
     inline def setXmlIsAttribute(value: Boolean): Self = StObject.set(x, "xmlIsAttribute", value.asInstanceOf[js.Any])
     
     inline def setXmlIsAttributeUndefined: Self = StObject.set(x, "xmlIsAttribute", js.undefined)
+    
+    inline def setXmlIsMsText(value: Boolean): Self = StObject.set(x, "xmlIsMsText", value.asInstanceOf[js.Any])
+    
+    inline def setXmlIsMsTextUndefined: Self = StObject.set(x, "xmlIsMsText", js.undefined)
     
     inline def setXmlIsWrapped(value: Boolean): Self = StObject.set(x, "xmlIsWrapped", value.asInstanceOf[js.Any])
     

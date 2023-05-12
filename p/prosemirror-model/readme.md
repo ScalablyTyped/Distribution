@@ -1,7 +1,7 @@
 
 # Scala.js typings for prosemirror-model
 
-Typings are for version 1.18.2
+Typings are for version 1.19.0
 
 ## Library description:
 ProseMirror's document model

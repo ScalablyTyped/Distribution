@@ -1,7 +1,7 @@
 
 # Scala.js typings for preview-email
 
-Typings are for version 2.0
+Typings are for version 3.0
 
 ## Library description:
 Automatically opens your browser and iOS Simulator to preview Node.js email messages sent with Nodemailer. Made for Forward Email and Lad!

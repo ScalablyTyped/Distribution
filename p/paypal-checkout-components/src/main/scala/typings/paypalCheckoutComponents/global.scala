@@ -31,6 +31,8 @@ object global {
       /* "gold" */ val Gold: typings.paypalCheckoutComponents.modulesConfigurationMod.ButtonColorOption.Gold & String = js.native
       
       /* "silver" */ val Silver: typings.paypalCheckoutComponents.modulesConfigurationMod.ButtonColorOption.Silver & String = js.native
+      
+      /* "white" */ val White: typings.paypalCheckoutComponents.modulesConfigurationMod.ButtonColorOption.White & String = js.native
     }
     
     @JSGlobal("paypal.ButtonLabelOption")

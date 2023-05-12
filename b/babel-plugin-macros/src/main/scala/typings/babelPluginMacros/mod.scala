@@ -46,14 +46,24 @@ object mod {
     
     var config: js.UndefOr[StringDictionary[Any]] = js.undefined
     
+    var isBabelMacrosCall: Boolean
+    
     var references: defaultArrayNodePathNodeR
+    
+    var source: String
     
     var state: PluginPass
   }
   object MacroParams {
     
-    inline def apply(babel: TypeofBabel, references: defaultArrayNodePathNodeR, state: PluginPass): MacroParams = {
-      val __obj = js.Dynamic.literal(babel = babel.asInstanceOf[js.Any], references = references.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
+    inline def apply(
+      babel: TypeofBabel,
+      isBabelMacrosCall: Boolean,
+      references: defaultArrayNodePathNodeR,
+      source: String,
+      state: PluginPass
+    ): MacroParams = {
+      val __obj = js.Dynamic.literal(babel = babel.asInstanceOf[js.Any], isBabelMacrosCall = isBabelMacrosCall.asInstanceOf[js.Any], references = references.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
       __obj.asInstanceOf[MacroParams]
     }
     
@@ -66,7 +76,11 @@ object mod {
       
       inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
       
+      inline def setIsBabelMacrosCall(value: Boolean): Self = StObject.set(x, "isBabelMacrosCall", value.asInstanceOf[js.Any])
+      
       inline def setReferences(value: defaultArrayNodePathNodeR): Self = StObject.set(x, "references", value.asInstanceOf[js.Any])
+      
+      inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
       inline def setState(value: PluginPass): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }

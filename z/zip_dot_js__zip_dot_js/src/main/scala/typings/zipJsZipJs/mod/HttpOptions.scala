@@ -13,21 +13,21 @@ trait HttpOptions
   
   /**
     * `true` to always use `Range` headers when fetching data.
-    * 
+    *
     * @defaultValue false
     */
   var forceRangeRequests: js.UndefOr[Boolean] = js.undefined
   
   /**
     * `true` to prevent using `HEAD` HTTP request in order the get the size of the content.
-    * 
+    *
     * @defaultValue false
     */
   var preventHeadRequest: js.UndefOr[Boolean] = js.undefined
   
   /**
     * `true` to use `Range` headers when fetching data from servers returning `Accept-Ranges` headers.
-    * 
+    *
     * @defaultValue false
     */
   var useRangeHeader: js.UndefOr[Boolean] = js.undefined

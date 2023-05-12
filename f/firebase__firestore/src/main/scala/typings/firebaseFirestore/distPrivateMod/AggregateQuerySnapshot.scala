@@ -8,9 +8,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class AggregateQuerySnapshot[T /* <: AggregateSpec */] protected () extends StObject {
   /** @hideconstructor */
-  def this(query: Query_[Any], _data: AggregateSpecData[T]) = this()
+  def this(
+    query: Query_[Any],
+    _userDataWriter: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AbstractUserDataWriter */ Any,
+    _data: ApiClientObjectMap[Value]
+  ) = this()
   
   /* private */ val _data: Any = js.native
+  
+  /* private */ val _userDataWriter: Any = js.native
   
   /**
     * Returns the results of the aggregations performed over the underlying

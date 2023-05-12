@@ -42,7 +42,7 @@ trait JiraConfiguration extends StObject {
   var IssueType: js.UndefOr[typings.awsSdk.clientsKendraMod.IssueType] = js.undefined
   
   /**
-    * The URL of the Jira account. For example, company.atlassian.net or https://jira.company.com. You can find your Jira account URL in the URL of your profile page for Jira desktop.
+    * The URL of the Jira account. For example, company.atlassian.net.
     */
   var JiraAccountUrl: typings.awsSdk.clientsKendraMod.JiraAccountUrl
   
@@ -57,7 +57,7 @@ trait JiraConfiguration extends StObject {
   var ProjectFieldMappings: js.UndefOr[DataSourceToIndexFieldMappingList] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of a secret in Secrets Manager contains the key-value pairs required to connect to your Jira data source. The secret must contain a JSON structure with the following keys:   jiraId—The Jira username.   jiraCredentials—The Jira API token. For more information on creating an API token in Jira, see  Authentication for a Jira data source.  
+    * The Amazon Resource Name (ARN) of a secret in Secrets Manager contains the key-value pairs required to connect to your Jira data source. The secret must contain a JSON structure with the following keys:   jiraId—The Jira user name or email.   jiraCredentials—The Jira API token. For more information, see Using a Jira data source.  
     */
   var SecretArn: typings.awsSdk.clientsKendraMod.SecretArn
   
@@ -72,7 +72,7 @@ trait JiraConfiguration extends StObject {
   var UseChangeLog: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Configuration information for an Amazon Virtual Private Cloud to connect to your Jira. Your Jira account must reside inside your VPC.
+    * Configuration information for an Amazon Virtual Private Cloud to connect to your Jira. For more information, see Configuring a VPC.
     */
   var VpcConfiguration: js.UndefOr[DataSourceVpcConfiguration] = js.undefined
   

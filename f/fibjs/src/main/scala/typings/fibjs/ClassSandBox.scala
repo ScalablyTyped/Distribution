@@ -61,7 +61,6 @@ trait ClassSandBox
     * @brief 查询沙箱的 global 对象
     * 
     * @readonly
-    * @type Object
     */
   var global: js.Object = js.native
   
@@ -84,7 +83,6 @@ trait ClassSandBox
     * 
     * 
     * @readonly
-    * @type Object
     */
   var modules: js.Object = js.native
   

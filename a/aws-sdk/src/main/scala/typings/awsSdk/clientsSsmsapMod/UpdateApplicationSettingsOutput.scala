@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateApplicationSettingsOutput extends StObject {
   
   /**
-    * 
+    * The update message.
     */
   var Message: js.UndefOr[String] = js.undefined
   
   /**
-    * 
+    * The IDs of the operations.
     */
   var OperationIds: js.UndefOr[OperationIdList] = js.undefined
 }

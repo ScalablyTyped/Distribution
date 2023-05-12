@@ -1,7 +1,7 @@
 
 # Scala.js typings for canonicalize
 
-Typings are for version 1.0.8
+Typings are for version 2.0.0
 
 ## Library description:
 JSON canonicalize function

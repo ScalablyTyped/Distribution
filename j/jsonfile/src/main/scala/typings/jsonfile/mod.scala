@@ -101,5 +101,5 @@ object mod {
   
   type ReadCallback = js.Function2[/* err */ ErrnoException | Null, /* data */ Any, Unit]
   
-  type WriteCallback = js.Function1[/* err */ ErrnoException, Unit]
+  type WriteCallback = js.Function1[/* err */ ErrnoException | Null, Unit]
 }

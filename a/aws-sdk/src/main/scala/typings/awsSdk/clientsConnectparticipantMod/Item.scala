@@ -17,6 +17,11 @@ trait Item extends StObject {
   var Attachments: js.UndefOr[typings.awsSdk.clientsConnectparticipantMod.Attachments] = js.undefined
   
   /**
+    * The contactId on which the transcript item was originally sent. This field is populated only when the transcript item is from the current chat session.
+    */
+  var ContactId: js.UndefOr[typings.awsSdk.clientsConnectparticipantMod.ContactId] = js.undefined
+  
+  /**
     * The content of the message or event.
     */
   var Content: js.UndefOr[ChatContent] = js.undefined
@@ -37,6 +42,11 @@ trait Item extends StObject {
   var Id: js.UndefOr[ChatItemId] = js.undefined
   
   /**
+    * The metadata related to the message. Currently this supports only information related to message receipts.
+    */
+  var MessageMetadata: js.UndefOr[typings.awsSdk.clientsConnectparticipantMod.MessageMetadata] = js.undefined
+  
+  /**
     * The ID of the sender in the session.
     */
   var ParticipantId: js.UndefOr[typings.awsSdk.clientsConnectparticipantMod.ParticipantId] = js.undefined
@@ -45,6 +55,11 @@ trait Item extends StObject {
     * The role of the sender. For example, is it a customer, agent, or system.
     */
   var ParticipantRole: js.UndefOr[typings.awsSdk.clientsConnectparticipantMod.ParticipantRole] = js.undefined
+  
+  /**
+    * The contactId on which the transcript item was originally sent. This field is only populated for persistent chats when the transcript item is from the past chat session. For more information, see Enable persistent chat.
+    */
+  var RelatedContactId: js.UndefOr[ContactId] = js.undefined
   
   /**
     * Type of the item: message or event. 
@@ -71,6 +86,10 @@ object Item {
     
     inline def setAttachmentsVarargs(value: AttachmentItem*): Self = StObject.set(x, "Attachments", js.Array(value*))
     
+    inline def setContactId(value: ContactId): Self = StObject.set(x, "ContactId", value.asInstanceOf[js.Any])
+    
+    inline def setContactIdUndefined: Self = StObject.set(x, "ContactId", js.undefined)
+    
     inline def setContent(value: ChatContent): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
     
     inline def setContentType(value: ChatContentType): Self = StObject.set(x, "ContentType", value.asInstanceOf[js.Any])
@@ -87,6 +106,10 @@ object Item {
     
     inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
+    inline def setMessageMetadata(value: MessageMetadata): Self = StObject.set(x, "MessageMetadata", value.asInstanceOf[js.Any])
+    
+    inline def setMessageMetadataUndefined: Self = StObject.set(x, "MessageMetadata", js.undefined)
+    
     inline def setParticipantId(value: ParticipantId): Self = StObject.set(x, "ParticipantId", value.asInstanceOf[js.Any])
     
     inline def setParticipantIdUndefined: Self = StObject.set(x, "ParticipantId", js.undefined)
@@ -94,6 +117,10 @@ object Item {
     inline def setParticipantRole(value: ParticipantRole): Self = StObject.set(x, "ParticipantRole", value.asInstanceOf[js.Any])
     
     inline def setParticipantRoleUndefined: Self = StObject.set(x, "ParticipantRole", js.undefined)
+    
+    inline def setRelatedContactId(value: ContactId): Self = StObject.set(x, "RelatedContactId", value.asInstanceOf[js.Any])
+    
+    inline def setRelatedContactIdUndefined: Self = StObject.set(x, "RelatedContactId", js.undefined)
     
     inline def setType(value: ChatItemType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     

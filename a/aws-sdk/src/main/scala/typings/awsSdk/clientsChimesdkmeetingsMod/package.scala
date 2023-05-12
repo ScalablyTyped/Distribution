@@ -87,6 +87,8 @@ type TranscribeContentRedactionType = PII | java.lang.String
   - typings.awsSdk.awsSdkStrings.`ja-JP`
   - typings.awsSdk.awsSdkStrings.`ko-KR`
   - typings.awsSdk.awsSdkStrings.`zh-CN`
+  - typings.awsSdk.awsSdkStrings.`th-TH`
+  - typings.awsSdk.awsSdkStrings.`hi-IN`
   - java.lang.String
 */
 type TranscribeLanguageCode = _TranscribeLanguageCode | java.lang.String
@@ -164,6 +166,8 @@ type TranscribeRegion = _TranscribeRegion | java.lang.String
   - java.lang.String
 */
 type TranscribeVocabularyFilterMethod = _TranscribeVocabularyFilterMethod | java.lang.String
+
+type TranscribeVocabularyNamesOrFilterNamesString = java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2021-07-15`

@@ -1501,8 +1501,16 @@ object anon {
         /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.Property.CaptionSide | undefined extends number ? react-motion.react-motion.OpaqueConfig : csstype.csstype.Property.CaptionSide | undefined */ js.Any
       ] = js.undefined
     
+    var caret: js.UndefOr[
+        /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.Property.Caret | undefined extends number ? react-motion.react-motion.OpaqueConfig : csstype.csstype.Property.Caret | undefined */ js.Any
+      ] = js.undefined
+    
     var caretColor: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.Property.CaretColor | undefined extends number ? react-motion.react-motion.OpaqueConfig : csstype.csstype.Property.CaretColor | undefined */ js.Any
+      ] = js.undefined
+    
+    var caretShape: js.UndefOr[
+        /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.Property.CaretShape | undefined extends number ? react-motion.react-motion.OpaqueConfig : csstype.csstype.Property.CaretShape | undefined */ js.Any
       ] = js.undefined
     
     var clear: js.UndefOr[
@@ -1583,6 +1591,38 @@ object anon {
     
     var contain: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.Property.Contain | undefined extends number ? react-motion.react-motion.OpaqueConfig : csstype.csstype.Property.Contain | undefined */ js.Any
+      ] = js.undefined
+    
+    var containIntrinsicBlockSize: js.UndefOr[
+        /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.Property.ContainIntrinsicBlockSize<string | number> | undefined extends number ? react-motion.react-motion.OpaqueConfig : csstype.csstype.Property.ContainIntrinsicBlockSize<string | number> | undefined */ js.Any
+      ] = js.undefined
+    
+    var containIntrinsicHeight: js.UndefOr[
+        /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.Property.ContainIntrinsicHeight<string | number> | undefined extends number ? react-motion.react-motion.OpaqueConfig : csstype.csstype.Property.ContainIntrinsicHeight<string | number> | undefined */ js.Any
+      ] = js.undefined
+    
+    var containIntrinsicInlineSize: js.UndefOr[
+        /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.Property.ContainIntrinsicInlineSize<string | number> | undefined extends number ? react-motion.react-motion.OpaqueConfig : csstype.csstype.Property.ContainIntrinsicInlineSize<string | number> | undefined */ js.Any
+      ] = js.undefined
+    
+    var containIntrinsicSize: js.UndefOr[
+        /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.Property.ContainIntrinsicSize<string | number> | undefined extends number ? react-motion.react-motion.OpaqueConfig : csstype.csstype.Property.ContainIntrinsicSize<string | number> | undefined */ js.Any
+      ] = js.undefined
+    
+    var containIntrinsicWidth: js.UndefOr[
+        /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.Property.ContainIntrinsicWidth<string | number> | undefined extends number ? react-motion.react-motion.OpaqueConfig : csstype.csstype.Property.ContainIntrinsicWidth<string | number> | undefined */ js.Any
+      ] = js.undefined
+    
+    var container: js.UndefOr[
+        /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.Property.Container | undefined extends number ? react-motion.react-motion.OpaqueConfig : csstype.csstype.Property.Container | undefined */ js.Any
+      ] = js.undefined
+    
+    var containerName: js.UndefOr[
+        /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.Property.ContainerName | undefined extends number ? react-motion.react-motion.OpaqueConfig : csstype.csstype.Property.ContainerName | undefined */ js.Any
+      ] = js.undefined
+    
+    var containerType: js.UndefOr[
+        /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.Property.ContainerType | undefined extends number ? react-motion.react-motion.OpaqueConfig : csstype.csstype.Property.ContainerType | undefined */ js.Any
       ] = js.undefined
     
     var content: js.UndefOr[
@@ -1705,6 +1745,10 @@ object anon {
         /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.Property.FontOpticalSizing | undefined extends number ? react-motion.react-motion.OpaqueConfig : csstype.csstype.Property.FontOpticalSizing | undefined */ js.Any
       ] = js.undefined
     
+    var fontPalette: js.UndefOr[
+        /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.Property.FontPalette | undefined extends number ? react-motion.react-motion.OpaqueConfig : csstype.csstype.Property.FontPalette | undefined */ js.Any
+      ] = js.undefined
+    
     var fontSize: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.Property.FontSize<string | number> | undefined extends number ? react-motion.react-motion.OpaqueConfig : csstype.csstype.Property.FontSize<string | number> | undefined */ js.Any
       ] = js.undefined
@@ -1743,6 +1787,10 @@ object anon {
     
     var fontVariantEastAsian: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.Property.FontVariantEastAsian | undefined extends number ? react-motion.react-motion.OpaqueConfig : csstype.csstype.Property.FontVariantEastAsian | undefined */ js.Any
+      ] = js.undefined
+    
+    var fontVariantEmoji: js.UndefOr[
+        /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.Property.FontVariantEmoji | undefined extends number ? react-motion.react-motion.OpaqueConfig : csstype.csstype.Property.FontVariantEmoji | undefined */ js.Any
       ] = js.undefined
     
     var fontVariantLigatures: js.UndefOr[
@@ -1863,6 +1911,10 @@ object anon {
     
     var hyphenateCharacter: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.Property.HyphenateCharacter | undefined extends number ? react-motion.react-motion.OpaqueConfig : csstype.csstype.Property.HyphenateCharacter | undefined */ js.Any
+      ] = js.undefined
+    
+    var hyphenateLimitChars: js.UndefOr[
+        /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.Property.HyphenateLimitChars | undefined extends number ? react-motion.react-motion.OpaqueConfig : csstype.csstype.Property.HyphenateLimitChars | undefined */ js.Any
       ] = js.undefined
     
     var hyphens: js.UndefOr[
@@ -2031,6 +2083,10 @@ object anon {
     
     var marginTop: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.Property.MarginTop<string | number> | undefined extends number ? react-motion.react-motion.OpaqueConfig : csstype.csstype.Property.MarginTop<string | number> | undefined */ js.Any
+      ] = js.undefined
+    
+    var marginTrim: js.UndefOr[
+        /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.Property.MarginTrim | undefined extends number ? react-motion.react-motion.OpaqueConfig : csstype.csstype.Property.MarginTrim | undefined */ js.Any
       ] = js.undefined
     
     var marker: js.UndefOr[
@@ -2509,6 +2565,10 @@ object anon {
         /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.Property.OffsetPath | undefined extends number ? react-motion.react-motion.OpaqueConfig : csstype.csstype.Property.OffsetPath | undefined */ js.Any
       ] = js.undefined
     
+    var offsetPosition: js.UndefOr[
+        /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.Property.OffsetPosition<string | number> | undefined extends number ? react-motion.react-motion.OpaqueConfig : csstype.csstype.Property.OffsetPosition<string | number> | undefined */ js.Any
+      ] = js.undefined
+    
     var offsetRotate: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.Property.OffsetRotate | undefined extends number ? react-motion.react-motion.OpaqueConfig : csstype.csstype.Property.OffsetRotate | undefined */ js.Any
       ] = js.undefined
@@ -2647,6 +2707,10 @@ object anon {
     
     var paddingTop: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.Property.PaddingTop<string | number> | undefined extends number ? react-motion.react-motion.OpaqueConfig : csstype.csstype.Property.PaddingTop<string | number> | undefined */ js.Any
+      ] = js.undefined
+    
+    var page: js.UndefOr[
+        /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.Property.Page | undefined extends number ? react-motion.react-motion.OpaqueConfig : csstype.csstype.Property.Page | undefined */ js.Any
       ] = js.undefined
     
     var pageBreakAfter: js.UndefOr[
@@ -2879,6 +2943,18 @@ object anon {
     
     var scrollSnapTypeY: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.Property.ScrollSnapTypeY | undefined extends number ? react-motion.react-motion.OpaqueConfig : csstype.csstype.Property.ScrollSnapTypeY | undefined */ js.Any
+      ] = js.undefined
+    
+    var scrollTimeline: js.UndefOr[
+        /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.Property.ScrollTimeline | undefined extends number ? react-motion.react-motion.OpaqueConfig : csstype.csstype.Property.ScrollTimeline | undefined */ js.Any
+      ] = js.undefined
+    
+    var scrollTimelineAxis: js.UndefOr[
+        /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.Property.ScrollTimelineAxis | undefined extends number ? react-motion.react-motion.OpaqueConfig : csstype.csstype.Property.ScrollTimelineAxis | undefined */ js.Any
+      ] = js.undefined
+    
+    var scrollTimelineName: js.UndefOr[
+        /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.Property.ScrollTimelineName | undefined extends number ? react-motion.react-motion.OpaqueConfig : csstype.csstype.Property.ScrollTimelineName | undefined */ js.Any
       ] = js.undefined
     
     var scrollbarColor: js.UndefOr[
@@ -3119,6 +3195,10 @@ object anon {
     
     var verticalAlign: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.Property.VerticalAlign<string | number> | undefined extends number ? react-motion.react-motion.OpaqueConfig : csstype.csstype.Property.VerticalAlign<string | number> | undefined */ js.Any
+      ] = js.undefined
+    
+    var viewTransitionName: js.UndefOr[
+        /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.Property.ViewTransitionName | undefined extends number ? react-motion.react-motion.OpaqueConfig : csstype.csstype.Property.ViewTransitionName | undefined */ js.Any
       ] = js.undefined
     
     var visibility: js.UndefOr[
@@ -3865,11 +3945,23 @@ object anon {
       
       inline def setCaptionSideUndefined: Self = StObject.set(x, "captionSide", js.undefined)
       
+      inline def setCaret(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.Property.Caret | undefined extends number ? react-motion.react-motion.OpaqueConfig : csstype.csstype.Property.Caret | undefined */ js.Any
+      ): Self = StObject.set(x, "caret", value.asInstanceOf[js.Any])
+      
       inline def setCaretColor(
         value: /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.Property.CaretColor | undefined extends number ? react-motion.react-motion.OpaqueConfig : csstype.csstype.Property.CaretColor | undefined */ js.Any
       ): Self = StObject.set(x, "caretColor", value.asInstanceOf[js.Any])
       
       inline def setCaretColorUndefined: Self = StObject.set(x, "caretColor", js.undefined)
+      
+      inline def setCaretShape(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.Property.CaretShape | undefined extends number ? react-motion.react-motion.OpaqueConfig : csstype.csstype.Property.CaretShape | undefined */ js.Any
+      ): Self = StObject.set(x, "caretShape", value.asInstanceOf[js.Any])
+      
+      inline def setCaretShapeUndefined: Self = StObject.set(x, "caretShape", js.undefined)
+      
+      inline def setCaretUndefined: Self = StObject.set(x, "caret", js.undefined)
       
       inline def setClear(
         value: /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.Property.Clear | undefined extends number ? react-motion.react-motion.OpaqueConfig : csstype.csstype.Property.Clear | undefined */ js.Any
@@ -3989,7 +4081,55 @@ object anon {
         value: /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.Property.Contain | undefined extends number ? react-motion.react-motion.OpaqueConfig : csstype.csstype.Property.Contain | undefined */ js.Any
       ): Self = StObject.set(x, "contain", value.asInstanceOf[js.Any])
       
+      inline def setContainIntrinsicBlockSize(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.Property.ContainIntrinsicBlockSize<string | number> | undefined extends number ? react-motion.react-motion.OpaqueConfig : csstype.csstype.Property.ContainIntrinsicBlockSize<string | number> | undefined */ js.Any
+      ): Self = StObject.set(x, "containIntrinsicBlockSize", value.asInstanceOf[js.Any])
+      
+      inline def setContainIntrinsicBlockSizeUndefined: Self = StObject.set(x, "containIntrinsicBlockSize", js.undefined)
+      
+      inline def setContainIntrinsicHeight(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.Property.ContainIntrinsicHeight<string | number> | undefined extends number ? react-motion.react-motion.OpaqueConfig : csstype.csstype.Property.ContainIntrinsicHeight<string | number> | undefined */ js.Any
+      ): Self = StObject.set(x, "containIntrinsicHeight", value.asInstanceOf[js.Any])
+      
+      inline def setContainIntrinsicHeightUndefined: Self = StObject.set(x, "containIntrinsicHeight", js.undefined)
+      
+      inline def setContainIntrinsicInlineSize(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.Property.ContainIntrinsicInlineSize<string | number> | undefined extends number ? react-motion.react-motion.OpaqueConfig : csstype.csstype.Property.ContainIntrinsicInlineSize<string | number> | undefined */ js.Any
+      ): Self = StObject.set(x, "containIntrinsicInlineSize", value.asInstanceOf[js.Any])
+      
+      inline def setContainIntrinsicInlineSizeUndefined: Self = StObject.set(x, "containIntrinsicInlineSize", js.undefined)
+      
+      inline def setContainIntrinsicSize(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.Property.ContainIntrinsicSize<string | number> | undefined extends number ? react-motion.react-motion.OpaqueConfig : csstype.csstype.Property.ContainIntrinsicSize<string | number> | undefined */ js.Any
+      ): Self = StObject.set(x, "containIntrinsicSize", value.asInstanceOf[js.Any])
+      
+      inline def setContainIntrinsicSizeUndefined: Self = StObject.set(x, "containIntrinsicSize", js.undefined)
+      
+      inline def setContainIntrinsicWidth(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.Property.ContainIntrinsicWidth<string | number> | undefined extends number ? react-motion.react-motion.OpaqueConfig : csstype.csstype.Property.ContainIntrinsicWidth<string | number> | undefined */ js.Any
+      ): Self = StObject.set(x, "containIntrinsicWidth", value.asInstanceOf[js.Any])
+      
+      inline def setContainIntrinsicWidthUndefined: Self = StObject.set(x, "containIntrinsicWidth", js.undefined)
+      
       inline def setContainUndefined: Self = StObject.set(x, "contain", js.undefined)
+      
+      inline def setContainer(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.Property.Container | undefined extends number ? react-motion.react-motion.OpaqueConfig : csstype.csstype.Property.Container | undefined */ js.Any
+      ): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      
+      inline def setContainerName(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.Property.ContainerName | undefined extends number ? react-motion.react-motion.OpaqueConfig : csstype.csstype.Property.ContainerName | undefined */ js.Any
+      ): Self = StObject.set(x, "containerName", value.asInstanceOf[js.Any])
+      
+      inline def setContainerNameUndefined: Self = StObject.set(x, "containerName", js.undefined)
+      
+      inline def setContainerType(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.Property.ContainerType | undefined extends number ? react-motion.react-motion.OpaqueConfig : csstype.csstype.Property.ContainerType | undefined */ js.Any
+      ): Self = StObject.set(x, "containerType", value.asInstanceOf[js.Any])
+      
+      inline def setContainerTypeUndefined: Self = StObject.set(x, "containerType", js.undefined)
+      
+      inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
       
       inline def setContent(
         value: /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.Property.Content | undefined extends number ? react-motion.react-motion.OpaqueConfig : csstype.csstype.Property.Content | undefined */ js.Any
@@ -4169,6 +4309,12 @@ object anon {
       
       inline def setFontOpticalSizingUndefined: Self = StObject.set(x, "fontOpticalSizing", js.undefined)
       
+      inline def setFontPalette(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.Property.FontPalette | undefined extends number ? react-motion.react-motion.OpaqueConfig : csstype.csstype.Property.FontPalette | undefined */ js.Any
+      ): Self = StObject.set(x, "fontPalette", value.asInstanceOf[js.Any])
+      
+      inline def setFontPaletteUndefined: Self = StObject.set(x, "fontPalette", js.undefined)
+      
       inline def setFontSize(
         value: /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.Property.FontSize<string | number> | undefined extends number ? react-motion.react-motion.OpaqueConfig : csstype.csstype.Property.FontSize<string | number> | undefined */ js.Any
       ): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
@@ -4228,6 +4374,12 @@ object anon {
       ): Self = StObject.set(x, "fontVariantEastAsian", value.asInstanceOf[js.Any])
       
       inline def setFontVariantEastAsianUndefined: Self = StObject.set(x, "fontVariantEastAsian", js.undefined)
+      
+      inline def setFontVariantEmoji(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.Property.FontVariantEmoji | undefined extends number ? react-motion.react-motion.OpaqueConfig : csstype.csstype.Property.FontVariantEmoji | undefined */ js.Any
+      ): Self = StObject.set(x, "fontVariantEmoji", value.asInstanceOf[js.Any])
+      
+      inline def setFontVariantEmojiUndefined: Self = StObject.set(x, "fontVariantEmoji", js.undefined)
       
       inline def setFontVariantLigatures(
         value: /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.Property.FontVariantLigatures | undefined extends number ? react-motion.react-motion.OpaqueConfig : csstype.csstype.Property.FontVariantLigatures | undefined */ js.Any
@@ -4410,6 +4562,12 @@ object anon {
       ): Self = StObject.set(x, "hyphenateCharacter", value.asInstanceOf[js.Any])
       
       inline def setHyphenateCharacterUndefined: Self = StObject.set(x, "hyphenateCharacter", js.undefined)
+      
+      inline def setHyphenateLimitChars(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.Property.HyphenateLimitChars | undefined extends number ? react-motion.react-motion.OpaqueConfig : csstype.csstype.Property.HyphenateLimitChars | undefined */ js.Any
+      ): Self = StObject.set(x, "hyphenateLimitChars", value.asInstanceOf[js.Any])
+      
+      inline def setHyphenateLimitCharsUndefined: Self = StObject.set(x, "hyphenateLimitChars", js.undefined)
       
       inline def setHyphens(
         value: /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.Property.Hyphens | undefined extends number ? react-motion.react-motion.OpaqueConfig : csstype.csstype.Property.Hyphens | undefined */ js.Any
@@ -4726,6 +4884,12 @@ object anon {
       ): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
       
       inline def setMarginTopUndefined: Self = StObject.set(x, "marginTop", js.undefined)
+      
+      inline def setMarginTrim(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.Property.MarginTrim | undefined extends number ? react-motion.react-motion.OpaqueConfig : csstype.csstype.Property.MarginTrim | undefined */ js.Any
+      ): Self = StObject.set(x, "marginTrim", value.asInstanceOf[js.Any])
+      
+      inline def setMarginTrimUndefined: Self = StObject.set(x, "marginTrim", js.undefined)
       
       inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
       
@@ -6131,6 +6295,12 @@ object anon {
       
       inline def setOffsetPathUndefined: Self = StObject.set(x, "offsetPath", js.undefined)
       
+      inline def setOffsetPosition(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.Property.OffsetPosition<string | number> | undefined extends number ? react-motion.react-motion.OpaqueConfig : csstype.csstype.Property.OffsetPosition<string | number> | undefined */ js.Any
+      ): Self = StObject.set(x, "offsetPosition", value.asInstanceOf[js.Any])
+      
+      inline def setOffsetPositionUndefined: Self = StObject.set(x, "offsetPosition", js.undefined)
+      
       inline def setOffsetRotate(
         value: /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.Property.OffsetRotate | undefined extends number ? react-motion.react-motion.OpaqueConfig : csstype.csstype.Property.OffsetRotate | undefined */ js.Any
       ): Self = StObject.set(x, "offsetRotate", value.asInstanceOf[js.Any])
@@ -6343,6 +6513,10 @@ object anon {
       
       inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
       
+      inline def setPage(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.Property.Page | undefined extends number ? react-motion.react-motion.OpaqueConfig : csstype.csstype.Property.Page | undefined */ js.Any
+      ): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+      
       inline def setPageBreakAfter(
         value: /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.Property.PageBreakAfter | undefined extends number ? react-motion.react-motion.OpaqueConfig : csstype.csstype.Property.PageBreakAfter | undefined */ js.Any
       ): Self = StObject.set(x, "pageBreakAfter", value.asInstanceOf[js.Any])
@@ -6360,6 +6534,8 @@ object anon {
       ): Self = StObject.set(x, "pageBreakInside", value.asInstanceOf[js.Any])
       
       inline def setPageBreakInsideUndefined: Self = StObject.set(x, "pageBreakInside", js.undefined)
+      
+      inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
       
       inline def setPaintOrder(
         value: /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.Property.PaintOrder | undefined extends number ? react-motion.react-motion.OpaqueConfig : csstype.csstype.Property.PaintOrder | undefined */ js.Any
@@ -6690,6 +6866,24 @@ object anon {
       ): Self = StObject.set(x, "scrollSnapTypeY", value.asInstanceOf[js.Any])
       
       inline def setScrollSnapTypeYUndefined: Self = StObject.set(x, "scrollSnapTypeY", js.undefined)
+      
+      inline def setScrollTimeline(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.Property.ScrollTimeline | undefined extends number ? react-motion.react-motion.OpaqueConfig : csstype.csstype.Property.ScrollTimeline | undefined */ js.Any
+      ): Self = StObject.set(x, "scrollTimeline", value.asInstanceOf[js.Any])
+      
+      inline def setScrollTimelineAxis(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.Property.ScrollTimelineAxis | undefined extends number ? react-motion.react-motion.OpaqueConfig : csstype.csstype.Property.ScrollTimelineAxis | undefined */ js.Any
+      ): Self = StObject.set(x, "scrollTimelineAxis", value.asInstanceOf[js.Any])
+      
+      inline def setScrollTimelineAxisUndefined: Self = StObject.set(x, "scrollTimelineAxis", js.undefined)
+      
+      inline def setScrollTimelineName(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.Property.ScrollTimelineName | undefined extends number ? react-motion.react-motion.OpaqueConfig : csstype.csstype.Property.ScrollTimelineName | undefined */ js.Any
+      ): Self = StObject.set(x, "scrollTimelineName", value.asInstanceOf[js.Any])
+      
+      inline def setScrollTimelineNameUndefined: Self = StObject.set(x, "scrollTimelineName", js.undefined)
+      
+      inline def setScrollTimelineUndefined: Self = StObject.set(x, "scrollTimeline", js.undefined)
       
       inline def setScrollbarColor(
         value: /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.Property.ScrollbarColor | undefined extends number ? react-motion.react-motion.OpaqueConfig : csstype.csstype.Property.ScrollbarColor | undefined */ js.Any
@@ -7050,6 +7244,12 @@ object anon {
       ): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
       
       inline def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
+      
+      inline def setViewTransitionName(
+        value: /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.Property.ViewTransitionName | undefined extends number ? react-motion.react-motion.OpaqueConfig : csstype.csstype.Property.ViewTransitionName | undefined */ js.Any
+      ): Self = StObject.set(x, "viewTransitionName", value.asInstanceOf[js.Any])
+      
+      inline def setViewTransitionNameUndefined: Self = StObject.set(x, "viewTransitionName", js.undefined)
       
       inline def setVisibility(
         value: /* import warning: importer.ImportType#apply Failed type conversion: csstype.csstype.Property.Visibility | undefined extends number ? react-motion.react-motion.OpaqueConfig : csstype.csstype.Property.Visibility | undefined */ js.Any

@@ -2,7 +2,6 @@ package typings.schematicsAngular.anon
 
 import typings.schematicsAngular.thirdPartyGithubDotcomMicrosoftTypeScriptLibTypescriptMod.Identifier
 import typings.schematicsAngular.thirdPartyGithubDotcomMicrosoftTypeScriptLibTypescriptMod.ImportDeclaration
-import typings.schematicsAngular.thirdPartyGithubDotcomMicrosoftTypeScriptLibTypescriptMod.ModifierLike
 import typings.schematicsAngular.thirdPartyGithubDotcomMicrosoftTypeScriptLibTypescriptMod.NamedImportBindings
 import typings.schematicsAngular.thirdPartyGithubDotcomMicrosoftTypeScriptLibTypescriptMod.Node
 import typings.schematicsAngular.thirdPartyGithubDotcomMicrosoftTypeScriptLibTypescriptMod.NodeArray
@@ -19,18 +18,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ImportClausereadonlyisTypDeclarationBrand extends StObject {
   
   var _declarationBrand: Any = js.native
-  
-  /**
-    * @deprecated `decorators` has been removed from `Node` and merged with `modifiers` on the `Node` subtypes that support them.
-    * Use `ts.canHaveDecorators()` to test whether a `Node` can have decorators.
-    * Use `ts.getDecorators()` to get the decorators of a `Node`.
-    *
-    * For example:
-    * ```ts
-    * const decorators = ts.canHaveDecorators(node) ? ts.getDecorators(node) : undefined;
-    * ```
-    */
-  val decorators: Unit = js.native
   
   val end: Double = js.native
   
@@ -85,18 +72,6 @@ trait ImportClausereadonlyisTypDeclarationBrand extends StObject {
   val isTypeOnly: Boolean = js.native
   
   val kind: ImportClause = js.native
-  
-  /**
-    * @deprecated `modifiers` has been removed from `Node` and moved to the `Node` subtypes that support them.
-    * Use `ts.canHaveModifiers()` to test whether a `Node` can have modifiers.
-    * Use `ts.getModifiers()` to get the modifiers of a `Node`.
-    *
-    * For example:
-    * ```ts
-    * const modifiers = ts.canHaveModifiers(node) ? ts.getModifiers(node) : undefined;
-    * ```
-    */
-  val modifiers: js.UndefOr[NodeArray[ModifierLike]] = js.native
   
   val name: js.UndefOr[Identifier] = js.native
   

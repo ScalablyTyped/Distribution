@@ -15,7 +15,7 @@ trait GPURenderPipelineDescriptor
   
   /**
     * Describes the fragment shader entry point of the pipeline and its output colors. If
-    * `undefined`, the [[#no-color-output]] mode is enabled.
+    * not map/exist|provided, the [[#no-color-output]] mode is enabled.
     */
   var fragment: js.UndefOr[GPUFragmentState] = js.undefined
   

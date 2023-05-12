@@ -12,6 +12,11 @@ trait ListNotebookExecutionsInput extends StObject {
   var EditorId: js.UndefOr[XmlStringMaxLen256] = js.undefined
   
   /**
+    * The unique ID of the execution engine.
+    */
+  var ExecutionEngineId: js.UndefOr[XmlString] = js.undefined
+  
+  /**
     * The beginning of time range filter for listing notebook executions. The default is the timestamp of 30 days ago.
     */
   var From: js.UndefOr[js.Date] = js.undefined
@@ -44,6 +49,10 @@ object ListNotebookExecutionsInput {
     inline def setEditorId(value: XmlStringMaxLen256): Self = StObject.set(x, "EditorId", value.asInstanceOf[js.Any])
     
     inline def setEditorIdUndefined: Self = StObject.set(x, "EditorId", js.undefined)
+    
+    inline def setExecutionEngineId(value: XmlString): Self = StObject.set(x, "ExecutionEngineId", value.asInstanceOf[js.Any])
+    
+    inline def setExecutionEngineIdUndefined: Self = StObject.set(x, "ExecutionEngineId", js.undefined)
     
     inline def setFrom(value: js.Date): Self = StObject.set(x, "From", value.asInstanceOf[js.Any])
     

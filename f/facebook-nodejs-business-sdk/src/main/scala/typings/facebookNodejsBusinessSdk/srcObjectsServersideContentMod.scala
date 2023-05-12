@@ -13,14 +13,14 @@ object srcObjectsServersideContentMod {
     extends StObject
        with Content {
     def this(
-      id: String,
-      quantity: Double,
-      item_price: Double,
-      title: String,
-      description: String,
-      brand: String,
-      category: String,
-      delivery_category: String
+      id: js.UndefOr[String],
+      quantity: js.UndefOr[Double],
+      item_price: js.UndefOr[Double],
+      title: js.UndefOr[String],
+      description: js.UndefOr[String],
+      brand: js.UndefOr[String],
+      category: js.UndefOr[String],
+      delivery_category: js.UndefOr[String]
     ) = this()
   }
   

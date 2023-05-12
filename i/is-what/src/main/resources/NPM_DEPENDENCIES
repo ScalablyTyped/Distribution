@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "is-what" : "4.1.7"
+      "is-what" : "4.1.9"
     }
   ],
   "test-dependencies" : [
     {
-      "is-what" : "4.1.7"
+      "is-what" : "4.1.9"
     }
   ],
   "compile-devDependencies" : [

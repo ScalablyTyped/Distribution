@@ -132,6 +132,12 @@ object mod {
     var disableOnEnd: js.UndefOr[Boolean] = js.undefined
     
     /**
+      * If true no touch controls are added.
+      * @default false
+      */
+    var disabled: js.UndefOr[Boolean] = js.undefined
+    
+    /**
       * Number of seconds to seek on double-tap
       * @default 10
       */
@@ -156,6 +162,10 @@ object mod {
       inline def setDisableOnEnd(value: Boolean): Self = StObject.set(x, "disableOnEnd", value.asInstanceOf[js.Any])
       
       inline def setDisableOnEndUndefined: Self = StObject.set(x, "disableOnEnd", js.undefined)
+      
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
       inline def setSeekSeconds(value: Double): Self = StObject.set(x, "seekSeconds", value.asInstanceOf[js.Any])
       

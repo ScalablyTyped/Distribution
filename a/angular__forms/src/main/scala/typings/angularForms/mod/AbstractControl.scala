@@ -28,6 +28,20 @@ open class AbstractControl[TValue, TRawValue /* <: TValue */] () extends StObjec
   def this(validators: ValidatorFn, asyncValidators: js.Array[AsyncValidatorFn]) = this()
   def this(validators: ValidatorFn, asyncValidators: AsyncValidatorFn) = this()
   
+  /**
+    * Internal implementation of the `setAsyncValidators` method. Needs to be separated out into a
+    * different method, because it is called in the constructor and it can break cases where
+    * a control is extended.
+    */
+  /* private */ var _assignAsyncValidators: Any = js.native
+  
+  /**
+    * Internal implementation of the `setValidators` method. Needs to be separated out into a
+    * different method, because it is called in the constructor and it can break cases where
+    * a control is extended.
+    */
+  /* private */ var _assignValidators: Any = js.native
+  
   /* private */ var _asyncValidationSubscription: Any = js.native
   
   /* private */ var _calculateStatus: Any = js.native
@@ -288,7 +302,7 @@ open class AbstractControl[TValue, TRawValue /* <: TValue */] () extends StObjec
     * const minValidator = Validators.min(3);
     * const ctrl = new FormControl<number | null>(0, minValidator);
     * expect(ctrl.hasValidator(minValidator)).toEqual(true)
-    * expect(ctrl.hasValidator(Validators.min(3)).toEqual(false)
+    * expect(ctrl.hasValidator(Validators.min(3))).toEqual(false)
     * ```
     *
     * @param validator The validator to check for presence. Compared by function reference.
@@ -464,7 +478,7 @@ open class AbstractControl[TValue, TRawValue /* <: TValue */] () extends StObjec
     * const minValidator = Validators.min(3);
     * const ctrl = new FormControl<string | null>('', minValidator);
     * expect(ctrl.hasValidator(minValidator)).toEqual(true)
-    * expect(ctrl.hasValidator(Validators.min(3)).toEqual(false)
+    * expect(ctrl.hasValidator(Validators.min(3))).toEqual(false)
     *
     * ctrl.removeValidators(minValidator);
     * ```
@@ -661,6 +675,12 @@ open class AbstractControl[TValue, TRawValue /* <: TValue */] () extends StObjec
     * A multicasting observable that emits an event every time the value of the control changes, in
     * the UI or programmatically. It also emits an event each time you call enable() or disable()
     * without passing along {emitEvent: false} as a function argument.
+    *
+    * **Note**: the emit happens right after a value of this control is updated. The value of a
+    * parent control (for example if this FormControl is a part of a FormGroup) is updated later, so
+    * accessing a value of a parent control (using the `value` property) from the callback of this
+    * event might result in getting a value that has not been updated yet. Subscribe to the
+    * `valueChanges` event of the parent control instead.
     */
   val valueChanges: Observable_[TValue] = js.native
 }

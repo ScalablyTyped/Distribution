@@ -1,6 +1,5 @@
 package typings.relayRuntime
 
-import typings.relayRuntime.anon.CLIENTMUTATIONID
 import typings.relayRuntime.libUtilRelayRuntimeTypesMod.DataID
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -15,7 +14,69 @@ object libHandlersConnectionConnectionInterfaceMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def get(): CLIENTMUTATIONID = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[CLIENTMUTATIONID]
+    inline def get(): ConnectionConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[ConnectionConfig]
+    
+    inline def inject(newConfig: ConnectionConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("inject")(newConfig.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  }
+  
+  trait ConnectionConfig extends StObject {
+    
+    var CURSOR: String
+    
+    var EDGES: String
+    
+    var END_CURSOR: String
+    
+    var HAS_NEXT_PAGE: String
+    
+    var HAS_PREV_PAGE: String
+    
+    var NODE: String
+    
+    var PAGE_INFO: String
+    
+    var PAGE_INFO_TYPE: String
+    
+    var START_CURSOR: String
+  }
+  object ConnectionConfig {
+    
+    inline def apply(
+      CURSOR: String,
+      EDGES: String,
+      END_CURSOR: String,
+      HAS_NEXT_PAGE: String,
+      HAS_PREV_PAGE: String,
+      NODE: String,
+      PAGE_INFO: String,
+      PAGE_INFO_TYPE: String,
+      START_CURSOR: String
+    ): ConnectionConfig = {
+      val __obj = js.Dynamic.literal(CURSOR = CURSOR.asInstanceOf[js.Any], EDGES = EDGES.asInstanceOf[js.Any], END_CURSOR = END_CURSOR.asInstanceOf[js.Any], HAS_NEXT_PAGE = HAS_NEXT_PAGE.asInstanceOf[js.Any], HAS_PREV_PAGE = HAS_PREV_PAGE.asInstanceOf[js.Any], NODE = NODE.asInstanceOf[js.Any], PAGE_INFO = PAGE_INFO.asInstanceOf[js.Any], PAGE_INFO_TYPE = PAGE_INFO_TYPE.asInstanceOf[js.Any], START_CURSOR = START_CURSOR.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ConnectionConfig]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectionConfig] (val x: Self) extends AnyVal {
+      
+      inline def setCURSOR(value: String): Self = StObject.set(x, "CURSOR", value.asInstanceOf[js.Any])
+      
+      inline def setEDGES(value: String): Self = StObject.set(x, "EDGES", value.asInstanceOf[js.Any])
+      
+      inline def setEND_CURSOR(value: String): Self = StObject.set(x, "END_CURSOR", value.asInstanceOf[js.Any])
+      
+      inline def setHAS_NEXT_PAGE(value: String): Self = StObject.set(x, "HAS_NEXT_PAGE", value.asInstanceOf[js.Any])
+      
+      inline def setHAS_PREV_PAGE(value: String): Self = StObject.set(x, "HAS_PREV_PAGE", value.asInstanceOf[js.Any])
+      
+      inline def setNODE(value: String): Self = StObject.set(x, "NODE", value.asInstanceOf[js.Any])
+      
+      inline def setPAGE_INFO(value: String): Self = StObject.set(x, "PAGE_INFO", value.asInstanceOf[js.Any])
+      
+      inline def setPAGE_INFO_TYPE(value: String): Self = StObject.set(x, "PAGE_INFO_TYPE", value.asInstanceOf[js.Any])
+      
+      inline def setSTART_CURSOR(value: String): Self = StObject.set(x, "START_CURSOR", value.asInstanceOf[js.Any])
+    }
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 

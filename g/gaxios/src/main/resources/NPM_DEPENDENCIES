@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "gaxios" : "5.0.2"
+      "gaxios" : "5.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "gaxios" : "5.0.2"
+      "gaxios" : "5.1.0"
     }
   ],
   "compile-devDependencies" : [

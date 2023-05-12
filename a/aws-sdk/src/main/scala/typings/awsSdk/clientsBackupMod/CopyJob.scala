@@ -17,9 +17,19 @@ trait CopyJob extends StObject {
   var BackupSizeInBytes: js.UndefOr[Long_] = js.undefined
   
   /**
+    * This returns the statistics of the included child (nested) copy jobs.
+    */
+  var ChildJobsInState: js.UndefOr[CopyJobChildJobsInState] = js.undefined
+  
+  /**
     * The date and time a copy job is completed, in Unix format and Coordinated Universal Time (UTC). The value of CompletionDate is accurate to milliseconds. For example, the value 1516925490.087 represents Friday, January 26, 2018 12:11:30.087 AM.
     */
   var CompletionDate: js.UndefOr[js.Date] = js.undefined
+  
+  /**
+    * This is the identifier of a resource within a composite group, such as nested (child) recovery point belonging to a composite (parent) stack. The ID is transferred from the  logical ID within a stack.
+    */
+  var CompositeMemberIdentifier: js.UndefOr[String] = js.undefined
   
   /**
     * Uniquely identifies a copy job.
@@ -49,9 +59,29 @@ trait CopyJob extends StObject {
   var IamRoleArn: js.UndefOr[IAMRoleArn] = js.undefined
   
   /**
+    * This is a boolean value indicating this is a parent (composite) copy job.
+    */
+  var IsParent: js.UndefOr[scala.Boolean] = js.undefined
+  
+  /**
+    * This is the number of child (nested) copy jobs.
+    */
+  var NumberOfChildJobs: js.UndefOr[Long_] = js.undefined
+  
+  /**
+    * This uniquely identifies a request to Backup to copy a resource. The return will be the parent (composite) job ID.
+    */
+  var ParentJobId: js.UndefOr[String] = js.undefined
+  
+  /**
     * The Amazon Web Services resource to be copied; for example, an Amazon Elastic Block Store (Amazon EBS) volume or an Amazon Relational Database Service (Amazon RDS) database.
     */
   var ResourceArn: js.UndefOr[ARN] = js.undefined
+  
+  /**
+    * This is the non-unique name of the resource that belongs to the specified backup.
+    */
+  var ResourceName: js.UndefOr[String] = js.undefined
   
   /**
     * The type of Amazon Web Services resource to be copied; for example, an Amazon Elastic Block Store (Amazon EBS) volume or an Amazon Relational Database Service (Amazon RDS) database.
@@ -96,9 +126,17 @@ object CopyJob {
     
     inline def setBackupSizeInBytesUndefined: Self = StObject.set(x, "BackupSizeInBytes", js.undefined)
     
+    inline def setChildJobsInState(value: CopyJobChildJobsInState): Self = StObject.set(x, "ChildJobsInState", value.asInstanceOf[js.Any])
+    
+    inline def setChildJobsInStateUndefined: Self = StObject.set(x, "ChildJobsInState", js.undefined)
+    
     inline def setCompletionDate(value: js.Date): Self = StObject.set(x, "CompletionDate", value.asInstanceOf[js.Any])
     
     inline def setCompletionDateUndefined: Self = StObject.set(x, "CompletionDate", js.undefined)
+    
+    inline def setCompositeMemberIdentifier(value: String): Self = StObject.set(x, "CompositeMemberIdentifier", value.asInstanceOf[js.Any])
+    
+    inline def setCompositeMemberIdentifierUndefined: Self = StObject.set(x, "CompositeMemberIdentifier", js.undefined)
     
     inline def setCopyJobId(value: String): Self = StObject.set(x, "CopyJobId", value.asInstanceOf[js.Any])
     
@@ -124,9 +162,25 @@ object CopyJob {
     
     inline def setIamRoleArnUndefined: Self = StObject.set(x, "IamRoleArn", js.undefined)
     
+    inline def setIsParent(value: scala.Boolean): Self = StObject.set(x, "IsParent", value.asInstanceOf[js.Any])
+    
+    inline def setIsParentUndefined: Self = StObject.set(x, "IsParent", js.undefined)
+    
+    inline def setNumberOfChildJobs(value: Long_): Self = StObject.set(x, "NumberOfChildJobs", value.asInstanceOf[js.Any])
+    
+    inline def setNumberOfChildJobsUndefined: Self = StObject.set(x, "NumberOfChildJobs", js.undefined)
+    
+    inline def setParentJobId(value: String): Self = StObject.set(x, "ParentJobId", value.asInstanceOf[js.Any])
+    
+    inline def setParentJobIdUndefined: Self = StObject.set(x, "ParentJobId", js.undefined)
+    
     inline def setResourceArn(value: ARN): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
     
     inline def setResourceArnUndefined: Self = StObject.set(x, "ResourceArn", js.undefined)
+    
+    inline def setResourceName(value: String): Self = StObject.set(x, "ResourceName", value.asInstanceOf[js.Any])
+    
+    inline def setResourceNameUndefined: Self = StObject.set(x, "ResourceName", js.undefined)
     
     inline def setResourceType(value: ResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
     

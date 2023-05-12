@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@azure/core-lro" : "2.3.1"
+      "@azure/core-lro" : "2.5.3"
     }
   ],
   "test-dependencies" : [
     {
-      "@azure/core-lro" : "2.3.1"
+      "@azure/core-lro" : "2.5.3"
     }
   ],
   "compile-devDependencies" : [

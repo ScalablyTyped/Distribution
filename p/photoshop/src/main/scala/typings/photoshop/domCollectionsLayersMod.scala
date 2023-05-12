@@ -20,15 +20,17 @@ object domCollectionsLayersMod {
     /**
       * Create a new layer.
       *
-      * @async
       * ```javascript
       * let newDoc1 = await app.activeDocument.layers.add();
       * ```
+      * @async
+      * @minVersion 22.5
       */
     def add(): js.Promise[Layer | Null] = js.native
     
     /**
-      * Find the first layer with the matching name
+      * Find the first layer with the matching name.
+      * @minVersion 22.5
       */
     def getByName(name: String): Layer = js.native
     
@@ -39,7 +41,8 @@ object domCollectionsLayersMod {
     /* private */ var layerIDs: Any = js.native
     
     /**
-      * Number of [[Layer]] elements in this collection
+      * Number of [[Layer]] elements in this collection.
+      * @minVersion 22.5
       */
     @JSName("length")
     def length_MLayers: Double = js.native
@@ -51,8 +54,9 @@ object domCollectionsLayersMod {
     /* private */ var proxy: Any = js.native
     
     /**
-      * The name for this object collection: Layers
+      * The name for this object collection: Layers.
+      * @minVersion 22.5
       */
-    def typename: String = js.native
+    def typename: typings.photoshop.photoshopStrings.Layers = js.native
   }
 }

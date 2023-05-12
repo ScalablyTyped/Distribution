@@ -6,20 +6,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `276` extends StObject {
   
-  /** Response */
-  var `200`: `275`
+  /** @description Usernames of people to assign this issue to. _NOTE: Only users with push access can add assignees to an issue. Assignees are silently ignored otherwise._ */
+  var assignees: js.UndefOr[js.Array[String]] = js.undefined
 }
 object `276` {
   
-  inline def apply(`200`: `275`): `276` = {
+  inline def apply(): `276` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("200")(`200`.asInstanceOf[js.Any])
     __obj.asInstanceOf[`276`]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: `276`] (val x: Self) extends AnyVal {
     
-    inline def set200(value: `275`): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
+    inline def setAssignees(value: js.Array[String]): Self = StObject.set(x, "assignees", value.asInstanceOf[js.Any])
+    
+    inline def setAssigneesUndefined: Self = StObject.set(x, "assignees", js.undefined)
+    
+    inline def setAssigneesVarargs(value: String*): Self = StObject.set(x, "assignees", js.Array(value*))
   }
 }

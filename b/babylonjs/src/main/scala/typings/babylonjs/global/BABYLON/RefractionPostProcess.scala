@@ -13,7 +13,7 @@ open class RefractionPostProcess protected ()
      with typings.babylonjs.BABYLON.RefractionPostProcess {
   /**
     * Initializes the RefractionPostProcess
-    * @see https://doc.babylonjs.com/how_to/how_to_use_postprocesses#refraction
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/postProcesses/usePostProcesses#refraction
     * @param name The name of the effect.
     * @param refractionTextureUrl Url of the refraction texture to use
     * @param color the base color of the refraction (used to taint the rendering)

@@ -9,13 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined std.Partial<@interactjs/types.@interactjs/core/types.NativePointerEventType> */
 trait PartialNativePointerEvent extends StObject {
   
-  var AT_TARGET: js.UndefOr[Double] = js.undefined
+  var AT_TARGET: js.UndefOr[typings.interactjsTypes.interactjsTypesInts.`2`] = js.undefined
   
-  var BUBBLING_PHASE: js.UndefOr[Double] = js.undefined
+  var BUBBLING_PHASE: js.UndefOr[typings.interactjsTypes.interactjsTypesInts.`3`] = js.undefined
   
-  var CAPTURING_PHASE: js.UndefOr[Double] = js.undefined
+  var CAPTURING_PHASE: js.UndefOr[typings.interactjsTypes.interactjsTypesInts.`1`] = js.undefined
   
-  var NONE: js.UndefOr[Double] = js.undefined
+  var NONE: js.UndefOr[typings.interactjsTypes.interactjsTypesInts.`0`] = js.undefined
   
   var altKey: js.UndefOr[Boolean] = js.undefined
   
@@ -155,7 +155,7 @@ object PartialNativePointerEvent {
   @scala.inline
   implicit open class MutableBuilder[Self <: PartialNativePointerEvent] (val x: Self) extends AnyVal {
     
-    inline def setAT_TARGET(value: Double): Self = StObject.set(x, "AT_TARGET", value.asInstanceOf[js.Any])
+    inline def setAT_TARGET(value: typings.interactjsTypes.interactjsTypesInts.`2`): Self = StObject.set(x, "AT_TARGET", value.asInstanceOf[js.Any])
     
     inline def setAT_TARGETUndefined: Self = StObject.set(x, "AT_TARGET", js.undefined)
     
@@ -163,7 +163,7 @@ object PartialNativePointerEvent {
     
     inline def setAltKeyUndefined: Self = StObject.set(x, "altKey", js.undefined)
     
-    inline def setBUBBLING_PHASE(value: Double): Self = StObject.set(x, "BUBBLING_PHASE", value.asInstanceOf[js.Any])
+    inline def setBUBBLING_PHASE(value: typings.interactjsTypes.interactjsTypesInts.`3`): Self = StObject.set(x, "BUBBLING_PHASE", value.asInstanceOf[js.Any])
     
     inline def setBUBBLING_PHASEUndefined: Self = StObject.set(x, "BUBBLING_PHASE", js.undefined)
     
@@ -179,7 +179,7 @@ object PartialNativePointerEvent {
     
     inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
     
-    inline def setCAPTURING_PHASE(value: Double): Self = StObject.set(x, "CAPTURING_PHASE", value.asInstanceOf[js.Any])
+    inline def setCAPTURING_PHASE(value: typings.interactjsTypes.interactjsTypesInts.`1`): Self = StObject.set(x, "CAPTURING_PHASE", value.asInstanceOf[js.Any])
     
     inline def setCAPTURING_PHASEUndefined: Self = StObject.set(x, "CAPTURING_PHASE", js.undefined)
     
@@ -279,7 +279,7 @@ object PartialNativePointerEvent {
     
     inline def setMovementYUndefined: Self = StObject.set(x, "movementY", js.undefined)
     
-    inline def setNONE(value: Double): Self = StObject.set(x, "NONE", value.asInstanceOf[js.Any])
+    inline def setNONE(value: typings.interactjsTypes.interactjsTypesInts.`0`): Self = StObject.set(x, "NONE", value.asInstanceOf[js.Any])
     
     inline def setNONEUndefined: Self = StObject.set(x, "NONE", js.undefined)
     

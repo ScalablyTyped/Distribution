@@ -13,7 +13,9 @@ import typings.firebaseFirestore.mod.IndexConfiguration
 import typings.firebaseFirestore.mod.LoadBundleTask
 import typings.firebaseFirestore.mod.PartialWithFieldValue
 import typings.firebaseFirestore.mod.PersistenceSettings
+import typings.firebaseFirestore.mod.QueryCompositeFilterConstraint
 import typings.firebaseFirestore.mod.QueryConstraint
+import typings.firebaseFirestore.mod.QueryNonFilterConstraint
 import typings.firebaseFirestore.mod.QuerySnapshot
 import typings.firebaseFirestore.mod.Query_
 import typings.firebaseFirestore.mod.SetOptions
@@ -149,6 +151,11 @@ object mod {
     inline def onSnapshotsInSync(firestore: FirebaseFirestore, observer: Next): Unsubscribe = (^.asInstanceOf[js.Dynamic].applyDynamic("onSnapshotsInSync")(firestore.asInstanceOf[js.Any], observer.asInstanceOf[js.Any])).asInstanceOf[Unsubscribe]
     inline def onSnapshotsInSync(firestore: FirebaseFirestore, onSync: js.Function0[Unit]): Unsubscribe = (^.asInstanceOf[js.Dynamic].applyDynamic("onSnapshotsInSync")(firestore.asInstanceOf[js.Any], onSync.asInstanceOf[js.Any])).asInstanceOf[Unsubscribe]
     
+    inline def query[T](
+      query: Query[T],
+      compositeFilter: QueryCompositeFilterConstraint,
+      queryConstraints: QueryNonFilterConstraint*
+    ): Query_[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("query")((scala.List(query.asInstanceOf[js.Any], compositeFilter.asInstanceOf[js.Any])).`++`(queryConstraints.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Query_[T]]
     inline def query[T](query: Query[T], queryConstraints: QueryConstraint*): Query_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("query")(scala.List(query.asInstanceOf[js.Any]).`++`(queryConstraints.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Query_[T]]
     
     inline def queryEqual[T](left: Query[T], right: Query[T]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("queryEqual")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Boolean]

@@ -7,7 +7,10 @@ import typings.geojsonVt.mod.TileCoord
 import typings.leaflet.mod.Class
 import typings.leaflet.mod.Coords
 import typings.leaflet.mod.GridLayer_
+import typings.leaflet.mod.LatLngBoundsExpression
+import typings.leaflet.mod.LatLngTuple
 import typings.leaflet.mod.Layer
+import typings.leaflet.mod.LayerOptions
 import typings.leaflet.mod.LeafletMouseEvent
 import typings.leaflet.mod.PathOptions
 import typings.leaflet.mod.Point_
@@ -108,7 +111,8 @@ object mod {
         */
       def getDataLayerNames(): js.Array[String] = js.native
       
-      var options: VectorGridOptions[Tile | typings.leafletVectorgrid.mod.leafletAugmentingMod.SVG_.Tile] = js.native
+      @JSName("options")
+      var options_VectorGrid_ : VectorGridOptions[Tile | typings.leafletVectorgrid.mod.leafletAugmentingMod.SVG_.Tile] = js.native
       
       /**
         * Reverts the effects of a previous `setFeatureStyle` cal
@@ -300,9 +304,15 @@ object mod {
       }
     }
     
-    trait VectorGridOptions[T /* <: Tile | typings.leafletVectorgrid.mod.leafletAugmentingMod.SVG_.Tile */]
+    /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+    - typings.leaflet.mod.GridLayerOptions because var conflicts: maxZoom. Inlined minNativeZoom, tileSize, updateWhenIdle, maxNativeZoom, bounds, minZoom, noWrap, updateWhenZooming, className, zIndex, opacity, keepBuffer, updateInterval */ trait VectorGridOptions[T /* <: Tile | typings.leafletVectorgrid.mod.leafletAugmentingMod.SVG_.Tile */]
       extends StObject
-         with Options {
+         with Options
+         with LayerOptions {
+      
+      var bounds: js.UndefOr[LatLngBoundsExpression] = js.undefined
+      
+      var className: js.UndefOr[String] = js.undefined
       
       /**
         * A Function that will be used to decide whether to include a feature or not
@@ -322,11 +332,41 @@ object mod {
       /** Whether this VectorGrid fires Interactive Layer events. */
       var interactive: js.UndefOr[Boolean] = js.undefined
       
+      var keepBuffer: js.UndefOr[Double] = js.undefined
+      
+      /**
+        * Maximum zoom number the tile source has available. If it is specified, the tiles on all zoom levels higher than
+        * `maxNativeZoom` will be loaded from `maxNativeZoom` level and auto-scaled.
+        */
+      var maxNativeZoom: js.UndefOr[Double] = js.undefined
+      
+      /**
+        * Minimum zoom number the tile source has available. If it is specified, the tiles on all zoom levels lower than
+        * `minNativeZoom` will be loaded from `minNativeZoom` level and auto-scaled.
+        */
+      var minNativeZoom: js.UndefOr[Double] = js.undefined
+      
+      var minZoom: js.UndefOr[Double] = js.undefined
+      
+      var noWrap: js.UndefOr[Boolean] = js.undefined
+      
+      var opacity: js.UndefOr[Double] = js.undefined
+      
       /** A factory method which will be used to instantiate the per-tile renderers. */
       var rendererFactory: js.UndefOr[TileFactoryFunction[T]] = js.undefined
       
+      var tileSize: js.UndefOr[Double | Point_] = js.undefined
+      
+      var updateInterval: js.UndefOr[Double] = js.undefined
+      
+      var updateWhenIdle: js.UndefOr[Boolean] = js.undefined
+      
+      var updateWhenZooming: js.UndefOr[Boolean] = js.undefined
+      
       /** A data structure holding initial symbolizer definitions for the vector features. */
       var vectorTileLayerStyles: js.UndefOr[Record[String, PathOptions]] = js.undefined
+      
+      var zIndex: js.UndefOr[Double] = js.undefined
     }
     object VectorGridOptions {
       
@@ -337,6 +377,16 @@ object mod {
       
       @scala.inline
       implicit open class MutableBuilder[Self <: VectorGridOptions[?], T /* <: Tile | typings.leafletVectorgrid.mod.leafletAugmentingMod.SVG_.Tile */] (val x: Self & VectorGridOptions[T]) extends AnyVal {
+        
+        inline def setBounds(value: LatLngBoundsExpression): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+        
+        inline def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
+        
+        inline def setBoundsVarargs(value: LatLngTuple*): Self = StObject.set(x, "bounds", js.Array(value*))
+        
+        inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+        
+        inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
         
         inline def setFilter(value: (/* properties */ Feature, /* zoom */ Double) => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction2(value))
         
@@ -350,13 +400,57 @@ object mod {
         
         inline def setInteractiveUndefined: Self = StObject.set(x, "interactive", js.undefined)
         
+        inline def setKeepBuffer(value: Double): Self = StObject.set(x, "keepBuffer", value.asInstanceOf[js.Any])
+        
+        inline def setKeepBufferUndefined: Self = StObject.set(x, "keepBuffer", js.undefined)
+        
+        inline def setMaxNativeZoom(value: Double): Self = StObject.set(x, "maxNativeZoom", value.asInstanceOf[js.Any])
+        
+        inline def setMaxNativeZoomUndefined: Self = StObject.set(x, "maxNativeZoom", js.undefined)
+        
+        inline def setMinNativeZoom(value: Double): Self = StObject.set(x, "minNativeZoom", value.asInstanceOf[js.Any])
+        
+        inline def setMinNativeZoomUndefined: Self = StObject.set(x, "minNativeZoom", js.undefined)
+        
+        inline def setMinZoom(value: Double): Self = StObject.set(x, "minZoom", value.asInstanceOf[js.Any])
+        
+        inline def setMinZoomUndefined: Self = StObject.set(x, "minZoom", js.undefined)
+        
+        inline def setNoWrap(value: Boolean): Self = StObject.set(x, "noWrap", value.asInstanceOf[js.Any])
+        
+        inline def setNoWrapUndefined: Self = StObject.set(x, "noWrap", js.undefined)
+        
+        inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+        
+        inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+        
         inline def setRendererFactory(value: /* args */ TileParameters => T): Self = StObject.set(x, "rendererFactory", js.Any.fromFunction1(value))
         
         inline def setRendererFactoryUndefined: Self = StObject.set(x, "rendererFactory", js.undefined)
         
+        inline def setTileSize(value: Double | Point_): Self = StObject.set(x, "tileSize", value.asInstanceOf[js.Any])
+        
+        inline def setTileSizeUndefined: Self = StObject.set(x, "tileSize", js.undefined)
+        
+        inline def setUpdateInterval(value: Double): Self = StObject.set(x, "updateInterval", value.asInstanceOf[js.Any])
+        
+        inline def setUpdateIntervalUndefined: Self = StObject.set(x, "updateInterval", js.undefined)
+        
+        inline def setUpdateWhenIdle(value: Boolean): Self = StObject.set(x, "updateWhenIdle", value.asInstanceOf[js.Any])
+        
+        inline def setUpdateWhenIdleUndefined: Self = StObject.set(x, "updateWhenIdle", js.undefined)
+        
+        inline def setUpdateWhenZooming(value: Boolean): Self = StObject.set(x, "updateWhenZooming", value.asInstanceOf[js.Any])
+        
+        inline def setUpdateWhenZoomingUndefined: Self = StObject.set(x, "updateWhenZooming", js.undefined)
+        
         inline def setVectorTileLayerStyles(value: Record[String, PathOptions]): Self = StObject.set(x, "vectorTileLayerStyles", value.asInstanceOf[js.Any])
         
         inline def setVectorTileLayerStylesUndefined: Self = StObject.set(x, "vectorTileLayerStyles", js.undefined)
+        
+        inline def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
+        
+        inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
       }
     }
   }

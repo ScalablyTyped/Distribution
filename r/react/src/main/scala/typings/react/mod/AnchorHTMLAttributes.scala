@@ -20,8 +20,6 @@ trait AnchorHTMLAttributes[T]
   
   var referrerPolicy: js.UndefOr[HTMLAttributeReferrerPolicy] = js.undefined
   
-  var rel: js.UndefOr[String] = js.undefined
-  
   var target: js.UndefOr[HTMLAttributeAnchorTarget] = js.undefined
   
   var `type`: js.UndefOr[String] = js.undefined
@@ -59,10 +57,6 @@ object AnchorHTMLAttributes {
     inline def setReferrerPolicy(value: HTMLAttributeReferrerPolicy): Self = StObject.set(x, "referrerPolicy", value.asInstanceOf[js.Any])
     
     inline def setReferrerPolicyUndefined: Self = StObject.set(x, "referrerPolicy", js.undefined)
-    
-    inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
-    
-    inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
     
     inline def setTarget(value: HTMLAttributeAnchorTarget): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     

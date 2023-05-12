@@ -56,7 +56,7 @@ object mod {
   
   trait CallbackNode extends StObject {
     
-    def callback(): FrameCallbackType | Unit
+    def callback(didTimeout: Boolean): FrameCallbackType | Unit
     @JSName("callback")
     var callback_Original: FrameCallbackType
     
@@ -97,7 +97,7 @@ object mod {
   /** 
   NOTE: Rewritten from type alias:
   {{{
-  type FrameCallbackType = (): scheduler.scheduler.FrameCallbackType | void
+  type FrameCallbackType = (didTimeout : boolean): scheduler.scheduler.FrameCallbackType | void
   }}}
   to avoid circular code involving: 
   - scheduler.scheduler.FrameCallbackType
@@ -105,6 +105,6 @@ object mod {
   @js.native
   trait FrameCallbackType extends StObject {
     
-    def apply(): FrameCallbackType | Unit = js.native
+    def apply(didTimeout: Boolean): FrameCallbackType | Unit = js.native
   }
 }

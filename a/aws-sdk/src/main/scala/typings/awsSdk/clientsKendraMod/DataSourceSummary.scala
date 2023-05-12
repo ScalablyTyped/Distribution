@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DataSourceSummary extends StObject {
   
   /**
-    * The UNIX datetime that the data source was created.
+    * The Unix timestamp when the data source connector was created.
     */
   var CreatedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The unique identifier for the data source.
+    * The identifier for the data source.
     */
   var Id: js.UndefOr[DataSourceId] = js.undefined
   
@@ -37,7 +37,7 @@ trait DataSourceSummary extends StObject {
   var Type: js.UndefOr[DataSourceType] = js.undefined
   
   /**
-    * The UNIX datetime that the data source was lasted updated. 
+    * The Unix timestamp when the data source connector was last updated.
     */
   var UpdatedAt: js.UndefOr[js.Date] = js.undefined
 }

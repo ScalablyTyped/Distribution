@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.MsScrollLimitYMin
+import typings.csstype.mod.Property.GridArea
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,13 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `484` extends StObject {
   
   var value: js.UndefOr[
-    (MsScrollLimitYMin[Double | String]) | (js.Array[
-      (Extract[
-        js.UndefOr[
-          (MsScrollLimitYMin[Double | String]) | (js.Array[NonNullable[js.UndefOr[MsScrollLimitYMin[Double | String]]]])
-        ], 
-        String
-      ]) | (NonNullable[js.UndefOr[MsScrollLimitYMin[Double | String]]])
+    GridArea | (js.Array[
+      (Extract[js.UndefOr[GridArea | js.Array[NonNullable[js.UndefOr[GridArea]]]], String]) | NonNullable[js.UndefOr[GridArea]]
     ])
   ] = js.native
 }

@@ -22,7 +22,7 @@ trait MUIDataTableColumnOptions extends StObject {
   var customBodyRender: js.UndefOr[
     js.Function3[
       /* value */ Any, 
-      /* tableMeta */ MUIDataTableMeta, 
+      /* tableMeta */ MUIDataTableMeta[Any], 
       /* updateValue */ js.Function1[/* value */ String, Unit], 
       String | ReactNode
     ]
@@ -208,7 +208,7 @@ object MUIDataTableColumnOptions {
   implicit open class MutableBuilder[Self <: MUIDataTableColumnOptions] (val x: Self) extends AnyVal {
     
     inline def setCustomBodyRender(
-      value: (/* value */ Any, /* tableMeta */ MUIDataTableMeta, /* updateValue */ js.Function1[/* value */ String, Unit]) => String | ReactNode
+      value: (/* value */ Any, /* tableMeta */ MUIDataTableMeta[Any], /* updateValue */ js.Function1[/* value */ String, Unit]) => String | ReactNode
     ): Self = StObject.set(x, "customBodyRender", js.Any.fromFunction3(value))
     
     inline def setCustomBodyRenderLite(value: (/* dataIndex */ Double, /* rowIndex */ Double) => String | ReactNode): Self = StObject.set(x, "customBodyRenderLite", js.Any.fromFunction2(value))

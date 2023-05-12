@@ -22,12 +22,12 @@ trait DescribeClassicLinkInstancesRequest extends StObject {
   var InstanceIds: js.UndefOr[InstanceIdStringList] = js.undefined
   
   /**
-    * The maximum number of results to return with a single call. To retrieve the remaining results, make another call with the returned nextToken value. Constraint: If the value is greater than 1000, we return only 1000 items.
+    * The maximum number of items to return for this request. To get the next page of items, make another request with the token returned in the output. For more information, see Pagination. Constraint: If the value is greater than 1000, we return only 1000 items.
     */
   var MaxResults: js.UndefOr[DescribeClassicLinkInstancesMaxResults] = js.undefined
   
   /**
-    * The token for the next page of results.
+    * The token returned from a previous paginated request. Pagination continues from the end of the items returned by the previous request.
     */
   var NextToken: js.UndefOr[String] = js.undefined
 }

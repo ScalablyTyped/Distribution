@@ -56,7 +56,7 @@ object Cameras {
         * The Camera that this Control will update.
         */
       /* CompleteClass */
-      var camera: Camera = js.native
+      var camera: Camera | Null = js.native
       
       /**
         * Destroys this Key Control.
@@ -68,13 +68,13 @@ object Cameras {
         * The Key to be pressed that will move the Camera down.
         */
       /* CompleteClass */
-      var down: Key = js.native
+      var down: Key | Null = js.native
       
       /**
         * The Key to be pressed that will move the Camera left.
         */
       /* CompleteClass */
-      var left: Key = js.native
+      var left: Key | Null = js.native
       
       /**
         * The largest zoom value the camera will reach when zoomed in.
@@ -92,7 +92,7 @@ object Cameras {
         * The Key to be pressed that will move the Camera right.
         */
       /* CompleteClass */
-      var right: Key = js.native
+      var right: Key | Null = js.native
       
       /**
         * Binds this Key Control to a camera.
@@ -129,7 +129,7 @@ object Cameras {
         * The Key to be pressed that will move the Camera up.
         */
       /* CompleteClass */
-      var up: Key = js.native
+      var up: Key | Null = js.native
       
       /**
         * Applies the results of pressing the control keys to the Camera.
@@ -144,13 +144,13 @@ object Cameras {
         * The Key to be pressed that will zoom the Camera in.
         */
       /* CompleteClass */
-      var zoomIn: Key = js.native
+      var zoomIn: Key | Null = js.native
       
       /**
         * The Key to be pressed that will zoom the Camera out.
         */
       /* CompleteClass */
-      var zoomOut: Key = js.native
+      var zoomOut: Key | Null = js.native
       
       /**
         * The speed at which the camera will zoom if the `zoomIn` or `zoomOut` keys are pressed.
@@ -216,7 +216,7 @@ object Cameras {
         * The Camera that this Control will update.
         */
       /* CompleteClass */
-      var camera: Camera = js.native
+      var camera: Camera | Null = js.native
       
       /**
         * Destroys this Key Control.
@@ -228,7 +228,7 @@ object Cameras {
         * The Key to be pressed that will move the Camera down.
         */
       /* CompleteClass */
-      var down: Key = js.native
+      var down: Key | Null = js.native
       
       /**
         * The horizontal drag applied to the camera when it is moving.
@@ -246,7 +246,7 @@ object Cameras {
         * The Key to be pressed that will move the Camera left.
         */
       /* CompleteClass */
-      var left: Key = js.native
+      var left: Key | Null = js.native
       
       /**
         * The maximum horizontal speed the camera will move.
@@ -276,7 +276,7 @@ object Cameras {
         * The Key to be pressed that will move the Camera right.
         */
       /* CompleteClass */
-      var right: Key = js.native
+      var right: Key | Null = js.native
       
       /**
         * Binds this Key Control to a camera.
@@ -301,7 +301,7 @@ object Cameras {
         * The Key to be pressed that will move the Camera up.
         */
       /* CompleteClass */
-      var up: Key = js.native
+      var up: Key | Null = js.native
       
       /**
         * Applies the results of pressing the control keys to the Camera.
@@ -316,13 +316,13 @@ object Cameras {
         * The Key to be pressed that will zoom the Camera in.
         */
       /* CompleteClass */
-      var zoomIn: Key = js.native
+      var zoomIn: Key | Null = js.native
       
       /**
         * The Key to be pressed that will zoom the Camera out.
         */
       /* CompleteClass */
-      var zoomOut: Key = js.native
+      var zoomOut: Key | Null = js.native
       
       /**
         * The speed at which the camera will zoom if the `zoomIn` or `zoomOut` keys are pressed.
@@ -430,62 +430,6 @@ object Cameras {
       def this(x: Double, y: Double, width: Double, height: Double) = this()
       
       /**
-        * The horizontally flipped state of the Game Object.
-        * 
-        * A Game Object that is flipped horizontally will render inversed on the horizontal axis.
-        * Flipping always takes place from the middle of the texture and does not impact the scale value.
-        * If this Game Object has a physics body, it will not change the body. This is a rendering toggle only.
-        */
-      /* CompleteClass */
-      var flipX: Boolean = js.native
-      
-      /**
-        * The vertically flipped state of the Game Object.
-        * 
-        * A Game Object that is flipped vertically will render inversed on the vertical axis (i.e. upside down)
-        * Flipping always takes place from the middle of the texture and does not impact the scale value.
-        * If this Game Object has a physics body, it will not change the body. This is a rendering toggle only.
-        */
-      /* CompleteClass */
-      var flipY: Boolean = js.native
-      
-      /**
-        * Resets the horizontal and vertical flipped state of this Game Object back to their default un-flipped state.
-        */
-      /* CompleteClass */
-      override def resetFlip(): this.type = js.native
-      
-      /**
-        * Sets the horizontal and vertical flipped state of this Game Object.
-        * 
-        * A Game Object that is flipped will render inversed on the flipped axis.
-        * Flipping always takes place from the middle of the texture and does not impact the scale value.
-        * If this Game Object has a physics body, it will not change the body. This is a rendering toggle only.
-        * @param x The horizontal flipped state. `false` for no flip, or `true` to be flipped.
-        * @param y The horizontal flipped state. `false` for no flip, or `true` to be flipped.
-        */
-      /* CompleteClass */
-      override def setFlip(x: Boolean, y: Boolean): this.type = js.native
-      
-      /**
-        * Sets the horizontal flipped state of this Game Object.
-        * 
-        * A Game Object that is flipped horizontally will render inversed on the horizontal axis.
-        * Flipping always takes place from the middle of the texture and does not impact the scale value.
-        * If this Game Object has a physics body, it will not change the body. This is a rendering toggle only.
-        * @param value The flipped state. `false` for no flip, or `true` to be flipped.
-        */
-      /* CompleteClass */
-      override def setFlipX(value: Boolean): this.type = js.native
-      
-      /**
-        * Sets the vertical flipped state of this Game Object.
-        * @param value The flipped state. `false` for no flip, or `true` to be flipped.
-        */
-      /* CompleteClass */
-      override def setFlipY(value: Boolean): this.type = js.native
-      
-      /**
         * Sets the visibility of this Game Object.
         * 
         * An invisible Game Object will skip rendering, but will still process update logic.
@@ -493,22 +437,6 @@ object Cameras {
         */
       /* CompleteClass */
       override def setVisible(value: Boolean): this.type = js.native
-      
-      /**
-        * Toggles the horizontal flipped state of this Game Object.
-        * 
-        * A Game Object that is flipped horizontally will render inversed on the horizontal axis.
-        * Flipping always takes place from the middle of the texture and does not impact the scale value.
-        * If this Game Object has a physics body, it will not change the body. This is a rendering toggle only.
-        */
-      /* CompleteClass */
-      override def toggleFlipX(): this.type = js.native
-      
-      /**
-        * Toggles the vertical flipped state of this Game Object.
-        */
-      /* CompleteClass */
-      override def toggleFlipY(): this.type = js.native
       
       /**
         * The visible state of the Game Object.
@@ -713,6 +641,13 @@ object Cameras {
           * @param camera The camera this effect is acting upon.
           */
         def this(camera: typings.phaser.Phaser.Cameras.Scene2D.Camera) = this()
+        
+        /**
+          * The value of the alpha channel used during the flash effect.
+          * A value between 0 and 1.
+          */
+        /* CompleteClass */
+        var alpha: Double = js.native
         
         /**
           * The Camera this effect belongs to.
@@ -1018,10 +953,22 @@ object Cameras {
         * The Destroy Camera Event.
         * 
         * This event is dispatched by a Camera instance when it is destroyed by the Camera Manager.
+        * 
+        * Listen for it via either of the following:
+        * 
+        * ```js
+        * this.cameras.main.on('cameradestroy', () => {});
+        * ```
+        * 
+        * or use the constant, to avoid having to remember the correct event string:
+        * 
+        * ```js
+        * this.cameras.main.on(Phaser.Cameras.Scene2D.Events.DESTROY, () => {});
+        * ```
         */
       @JSImport("phaser", "Cameras.Scene2D.Events.DESTROY")
       @js.native
-      val DESTROY: Any = js.native
+      val DESTROY: String = js.native
       
       /**
         * The Camera Fade In Complete Event.
@@ -1032,7 +979,7 @@ object Cameras {
         */
       @JSImport("phaser", "Cameras.Scene2D.Events.FADE_IN_COMPLETE")
       @js.native
-      val FADE_IN_COMPLETE: Any = js.native
+      val FADE_IN_COMPLETE: String = js.native
       
       /**
         * The Camera Fade In Start Event.
@@ -1043,7 +990,7 @@ object Cameras {
         */
       @JSImport("phaser", "Cameras.Scene2D.Events.FADE_IN_START")
       @js.native
-      val FADE_IN_START: Any = js.native
+      val FADE_IN_START: String = js.native
       
       /**
         * The Camera Fade Out Complete Event.
@@ -1054,7 +1001,7 @@ object Cameras {
         */
       @JSImport("phaser", "Cameras.Scene2D.Events.FADE_OUT_COMPLETE")
       @js.native
-      val FADE_OUT_COMPLETE: Any = js.native
+      val FADE_OUT_COMPLETE: String = js.native
       
       /**
         * The Camera Fade Out Start Event.
@@ -1065,25 +1012,49 @@ object Cameras {
         */
       @JSImport("phaser", "Cameras.Scene2D.Events.FADE_OUT_START")
       @js.native
-      val FADE_OUT_START: Any = js.native
+      val FADE_OUT_START: String = js.native
       
       /**
         * The Camera Flash Complete Event.
         * 
         * This event is dispatched by a Camera instance when the Flash Effect completes.
+        * 
+        * Listen for it via either of the following:
+        * 
+        * ```js
+        * this.cameras.main.on('cameraflashcomplete', () => {});
+        * ```
+        * 
+        * or use the constant, to avoid having to remember the correct event string:
+        * 
+        * ```js
+        * this.cameras.main.on(Phaser.Cameras.Scene2D.Events.FLASH_COMPLETE, () => {});
+        * ```
         */
       @JSImport("phaser", "Cameras.Scene2D.Events.FLASH_COMPLETE")
       @js.native
-      val FLASH_COMPLETE: Any = js.native
+      val FLASH_COMPLETE: String = js.native
       
       /**
         * The Camera Flash Start Event.
         * 
         * This event is dispatched by a Camera instance when the Flash Effect starts.
+        * 
+        * Listen for it via either of the following:
+        * 
+        * ```js
+        * this.cameras.main.on('cameraflashstart', () => {});
+        * ```
+        * 
+        * or use the constant, to avoid having to remember the correct event string:
+        * 
+        * ```js
+        * this.cameras.main.on(Phaser.Cameras.Scene2D.Events.FLASH_START, () => {});
+        * ```
         */
       @JSImport("phaser", "Cameras.Scene2D.Events.FLASH_START")
       @js.native
-      val FLASH_START: Any = js.native
+      val FLASH_START: String = js.native
       
       /**
         * The Camera Follower Update Event.
@@ -1096,25 +1067,49 @@ object Cameras {
         */
       @JSImport("phaser", "Cameras.Scene2D.Events.FOLLOW_UPDATE")
       @js.native
-      val FOLLOW_UPDATE: Any = js.native
+      val FOLLOW_UPDATE: String = js.native
       
       /**
         * The Camera Pan Complete Event.
         * 
         * This event is dispatched by a Camera instance when the Pan Effect completes.
+        * 
+        * Listen for it via either of the following:
+        * 
+        * ```js
+        * this.cameras.main.on('camerapancomplete', () => {});
+        * ```
+        * 
+        * or use the constant, to avoid having to remember the correct event string:
+        * 
+        * ```js
+        * this.cameras.main.on(Phaser.Cameras.Scene2D.Events.PAN_COMPLETE, () => {});
+        * ```
         */
       @JSImport("phaser", "Cameras.Scene2D.Events.PAN_COMPLETE")
       @js.native
-      val PAN_COMPLETE: Any = js.native
+      val PAN_COMPLETE: String = js.native
       
       /**
         * The Camera Pan Start Event.
         * 
         * This event is dispatched by a Camera instance when the Pan Effect starts.
+        * 
+        * Listen for it via either of the following:
+        * 
+        * ```js
+        * this.cameras.main.on('camerapanstart', () => {});
+        * ```
+        * 
+        * or use the constant, to avoid having to remember the correct event string:
+        * 
+        * ```js
+        * this.cameras.main.on(Phaser.Cameras.Scene2D.Events.PAN_START, () => {});
+        * ```
         */
       @JSImport("phaser", "Cameras.Scene2D.Events.PAN_START")
       @js.native
-      val PAN_START: Any = js.native
+      val PAN_START: String = js.native
       
       /**
         * The Camera Post-Render Event.
@@ -1126,7 +1121,7 @@ object Cameras {
         */
       @JSImport("phaser", "Cameras.Scene2D.Events.POST_RENDER")
       @js.native
-      val POST_RENDER: Any = js.native
+      val POST_RENDER: String = js.native
       
       /**
         * The Camera Pre-Render Event.
@@ -1138,61 +1133,133 @@ object Cameras {
         */
       @JSImport("phaser", "Cameras.Scene2D.Events.PRE_RENDER")
       @js.native
-      val PRE_RENDER: Any = js.native
+      val PRE_RENDER: String = js.native
       
       /**
         * The Camera Rotate Complete Event.
         * 
         * This event is dispatched by a Camera instance when the Rotate Effect completes.
+        * 
+        * Listen for it via either of the following:
+        * 
+        * ```js
+        * this.cameras.main.on('camerarotatecomplete', () => {});
+        * ```
+        * 
+        * or use the constant, to avoid having to remember the correct event string:
+        * 
+        * ```js
+        * this.cameras.main.on(Phaser.Cameras.Scene2D.Events.ROTATE_COMPLETE, () => {});
+        * ```
         */
       @JSImport("phaser", "Cameras.Scene2D.Events.ROTATE_COMPLETE")
       @js.native
-      val ROTATE_COMPLETE: Any = js.native
+      val ROTATE_COMPLETE: String = js.native
       
       /**
         * The Camera Rotate Start Event.
         * 
         * This event is dispatched by a Camera instance when the Rotate Effect starts.
+        * 
+        * Listen for it via either of the following:
+        * 
+        * ```js
+        * this.cameras.main.on('camerarotatestart', () => {});
+        * ```
+        * 
+        * or use the constant, to avoid having to remember the correct event string:
+        * 
+        * ```js
+        * this.cameras.main.on(Phaser.Cameras.Scene2D.Events.ROTATE_START, () => {});
+        * ```
         */
       @JSImport("phaser", "Cameras.Scene2D.Events.ROTATE_START")
       @js.native
-      val ROTATE_START: Any = js.native
+      val ROTATE_START: String = js.native
       
       /**
         * The Camera Shake Complete Event.
         * 
         * This event is dispatched by a Camera instance when the Shake Effect completes.
+        * 
+        * Listen for it via either of the following:
+        * 
+        * ```js
+        * this.cameras.main.on('camerashakecomplete', () => {});
+        * ```
+        * 
+        * or use the constant, to avoid having to remember the correct event string:
+        * 
+        * ```js
+        * this.cameras.main.on(Phaser.Cameras.Scene2D.Events.SHAKE_COMPLETE, () => {});
+        * ```
         */
       @JSImport("phaser", "Cameras.Scene2D.Events.SHAKE_COMPLETE")
       @js.native
-      val SHAKE_COMPLETE: Any = js.native
+      val SHAKE_COMPLETE: String = js.native
       
       /**
         * The Camera Shake Start Event.
         * 
         * This event is dispatched by a Camera instance when the Shake Effect starts.
+        * 
+        * Listen for it via either of the following:
+        * 
+        * ```js
+        * this.cameras.main.on('camerashakestart', () => {});
+        * ```
+        * 
+        * or use the constant, to avoid having to remember the correct event string:
+        * 
+        * ```js
+        * this.cameras.main.on(Phaser.Cameras.Scene2D.Events.SHAKE_START, () => {});
+        * ```
         */
       @JSImport("phaser", "Cameras.Scene2D.Events.SHAKE_START")
       @js.native
-      val SHAKE_START: Any = js.native
+      val SHAKE_START: String = js.native
       
       /**
         * The Camera Zoom Complete Event.
         * 
         * This event is dispatched by a Camera instance when the Zoom Effect completes.
+        * 
+        * Listen for it via either of the following:
+        * 
+        * ```js
+        * this.cameras.main.on('camerazoomcomplete', () => {});
+        * ```
+        * 
+        * or use the constant, to avoid having to remember the correct event string:
+        * 
+        * ```js
+        * this.cameras.main.on(Phaser.Cameras.Scene2D.Events.ZOOM_COMPLETE, () => {});
+        * ```
         */
       @JSImport("phaser", "Cameras.Scene2D.Events.ZOOM_COMPLETE")
       @js.native
-      val ZOOM_COMPLETE: Any = js.native
+      val ZOOM_COMPLETE: String = js.native
       
       /**
         * The Camera Zoom Start Event.
         * 
         * This event is dispatched by a Camera instance when the Zoom Effect starts.
+        * 
+        * Listen for it via either of the following:
+        * 
+        * ```js
+        * this.cameras.main.on('camerazoomstart', () => {});
+        * ```
+        * 
+        * or use the constant, to avoid having to remember the correct event string:
+        * 
+        * ```js
+        * this.cameras.main.on(Phaser.Cameras.Scene2D.Events.ZOOM_START, () => {});
+        * ```
         */
       @JSImport("phaser", "Cameras.Scene2D.Events.ZOOM_START")
       @js.native
-      val ZOOM_START: Any = js.native
+      val ZOOM_START: String = js.native
     }
   }
 }

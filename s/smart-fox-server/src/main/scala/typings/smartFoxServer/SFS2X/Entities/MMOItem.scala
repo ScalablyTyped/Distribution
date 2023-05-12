@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait MMOItem extends StObject {
   
-  /** @type {Data.Vec3D} Returns the entry point of this item in the current user's AoI. */
+  /** Returns the entry point of this item in the current user's AoI. */
   var aoiEnteryPoint: Vec3D
   
   /**
@@ -31,7 +31,7 @@ trait MMOItem extends StObject {
     */
   def getVariables(): js.Array[MMOItemVariable]
   
-  /** @type {number} Indicates the id of this item. */
+  /** Indicates the id of this item. */
   var id: Double
 }
 object MMOItem {

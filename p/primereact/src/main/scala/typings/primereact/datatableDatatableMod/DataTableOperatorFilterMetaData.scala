@@ -4,10 +4,19 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+  * Custom datatable operator filter metadata.
+  */
 trait DataTableOperatorFilterMetaData extends StObject {
   
+  /**
+    * Operator to use for filtering.
+    */
   var constraints: js.Array[DataTableFilterMetaData]
   
+  /**
+    * Operator to use for filtering.
+    */
   var operator: String
 }
 object DataTableOperatorFilterMetaData {

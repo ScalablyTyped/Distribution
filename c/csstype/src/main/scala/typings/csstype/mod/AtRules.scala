@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.csstype.csstypeStrings.`@document`
   - typings.csstype.csstypeStrings.`@font-face`
   - typings.csstype.csstypeStrings.`@font-feature-values`
+  - typings.csstype.csstypeStrings.`@font-palette-values`
   - typings.csstype.csstypeStrings.`@import`
   - typings.csstype.csstypeStrings.`@keyframes`
   - typings.csstype.csstypeStrings.`@layer`
@@ -33,6 +34,8 @@ object AtRules {
   inline def `@font-face`: typings.csstype.csstypeStrings.`@font-face` = "@font-face".asInstanceOf[typings.csstype.csstypeStrings.`@font-face`]
   
   inline def `@font-feature-values`: typings.csstype.csstypeStrings.`@font-feature-values` = "@font-feature-values".asInstanceOf[typings.csstype.csstypeStrings.`@font-feature-values`]
+  
+  inline def `@font-palette-values`: typings.csstype.csstypeStrings.`@font-palette-values` = "@font-palette-values".asInstanceOf[typings.csstype.csstypeStrings.`@font-palette-values`]
   
   inline def `@import`: typings.csstype.csstypeStrings.`@import` = "@import".asInstanceOf[typings.csstype.csstypeStrings.`@import`]
   

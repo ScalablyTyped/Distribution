@@ -12,12 +12,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FMS extends Service {
   
   /**
-    * Sets the Firewall Manager administrator account. The account must be a member of the organization in Organizations whose resources you want to protect. Firewall Manager sets the permissions that allow the account to administer your Firewall Manager policies. The account that you associate with Firewall Manager is called the Firewall Manager administrator account. 
+    * Sets a Firewall Manager default administrator account. The Firewall Manager default administrator account can manage third-party firewalls and has full administrative scope that allows administration of all policy types, accounts, organizational units, and Regions. This account must be a member account of the organization in Organizations whose resources you want to protect. For information about working with Firewall Manager administrator accounts, see Managing Firewall Manager administrators in the Firewall Manager Developer Guide.
     */
   def associateAdminAccount(): Request[js.Object, AWSError] = js.native
   def associateAdminAccount(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Sets the Firewall Manager administrator account. The account must be a member of the organization in Organizations whose resources you want to protect. Firewall Manager sets the permissions that allow the account to administer your Firewall Manager policies. The account that you associate with Firewall Manager is called the Firewall Manager administrator account. 
+    * Sets a Firewall Manager default administrator account. The Firewall Manager default administrator account can manage third-party firewalls and has full administrative scope that allows administration of all policy types, accounts, organizational units, and Regions. This account must be a member account of the organization in Organizations whose resources you want to protect. For information about working with Firewall Manager administrator accounts, see Managing Firewall Manager administrators in the Firewall Manager Developer Guide.
     */
   def associateAdminAccount(params: AssociateAdminAccountRequest): Request[js.Object, AWSError] = js.native
   def associateAdminAccount(
@@ -141,12 +141,12 @@ trait FMS extends Service {
   ): Request[js.Object, AWSError] = js.native
   
   /**
-    * Disassociates the account that has been set as the Firewall Manager administrator account. To set a different account as the administrator account, you must submit an AssociateAdminAccount request.
+    * Disassociates an Firewall Manager administrator account. To set a different account as an Firewall Manager administrator, submit a PutAdminAccount request. To set an account as a default administrator account, you must submit an AssociateAdminAccount request. Disassociation of the default administrator account follows the first in, last out principle. If you are the default administrator, all Firewall Manager administrators within the organization must first disassociate their accounts before you can disassociate your account.
     */
   def disassociateAdminAccount(): Request[js.Object, AWSError] = js.native
   def disassociateAdminAccount(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Disassociates the account that has been set as the Firewall Manager administrator account. To set a different account as the administrator account, you must submit an AssociateAdminAccount request.
+    * Disassociates an Firewall Manager administrator account. To set a different account as an Firewall Manager administrator, submit a PutAdminAccount request. To set an account as a default administrator account, you must submit an AssociateAdminAccount request. Disassociation of the default administrator account follows the first in, last out principle. If you are the default administrator, all Firewall Manager administrators within the organization must first disassociate their accounts before you can disassociate your account.
     */
   def disassociateAdminAccount(params: DisassociateAdminAccountRequest): Request[js.Object, AWSError] = js.native
   def disassociateAdminAccount(
@@ -171,18 +171,32 @@ trait FMS extends Service {
   ): Request[DisassociateThirdPartyFirewallResponse, AWSError] = js.native
   
   /**
-    * Returns the Organizations account that is associated with Firewall Manager as the Firewall Manager administrator.
+    * Returns the Organizations account that is associated with Firewall Manager as the Firewall Manager default administrator.
     */
   def getAdminAccount(): Request[GetAdminAccountResponse, AWSError] = js.native
   def getAdminAccount(callback: js.Function2[/* err */ AWSError, /* data */ GetAdminAccountResponse, Unit]): Request[GetAdminAccountResponse, AWSError] = js.native
   /**
-    * Returns the Organizations account that is associated with Firewall Manager as the Firewall Manager administrator.
+    * Returns the Organizations account that is associated with Firewall Manager as the Firewall Manager default administrator.
     */
   def getAdminAccount(params: GetAdminAccountRequest): Request[GetAdminAccountResponse, AWSError] = js.native
   def getAdminAccount(
     params: GetAdminAccountRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetAdminAccountResponse, Unit]
   ): Request[GetAdminAccountResponse, AWSError] = js.native
+  
+  /**
+    * Returns information about the specified account's administrative scope. The admistrative scope defines the resources that an Firewall Manager administrator can manage.
+    */
+  def getAdminScope(): Request[GetAdminScopeResponse, AWSError] = js.native
+  def getAdminScope(callback: js.Function2[/* err */ AWSError, /* data */ GetAdminScopeResponse, Unit]): Request[GetAdminScopeResponse, AWSError] = js.native
+  /**
+    * Returns information about the specified account's administrative scope. The admistrative scope defines the resources that an Firewall Manager administrator can manage.
+    */
+  def getAdminScope(params: GetAdminScopeRequest): Request[GetAdminScopeResponse, AWSError] = js.native
+  def getAdminScope(
+    params: GetAdminScopeRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetAdminScopeResponse, Unit]
+  ): Request[GetAdminScopeResponse, AWSError] = js.native
   
   /**
     * Returns information about the specified Firewall Manager applications list.
@@ -313,6 +327,36 @@ trait FMS extends Service {
   ): Request[GetViolationDetailsResponse, AWSError] = js.native
   
   /**
+    * Returns a AdminAccounts object that lists the Firewall Manager administrators within the organization that are onboarded to Firewall Manager by AssociateAdminAccount. This operation can be called only from the organization's management account.
+    */
+  def listAdminAccountsForOrganization(): Request[ListAdminAccountsForOrganizationResponse, AWSError] = js.native
+  def listAdminAccountsForOrganization(
+    callback: js.Function2[/* err */ AWSError, /* data */ ListAdminAccountsForOrganizationResponse, Unit]
+  ): Request[ListAdminAccountsForOrganizationResponse, AWSError] = js.native
+  /**
+    * Returns a AdminAccounts object that lists the Firewall Manager administrators within the organization that are onboarded to Firewall Manager by AssociateAdminAccount. This operation can be called only from the organization's management account.
+    */
+  def listAdminAccountsForOrganization(params: ListAdminAccountsForOrganizationRequest): Request[ListAdminAccountsForOrganizationResponse, AWSError] = js.native
+  def listAdminAccountsForOrganization(
+    params: ListAdminAccountsForOrganizationRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListAdminAccountsForOrganizationResponse, Unit]
+  ): Request[ListAdminAccountsForOrganizationResponse, AWSError] = js.native
+  
+  /**
+    * Lists the accounts that are managing the specified Organizations member account. This is useful for any member account so that they can view the accounts who are managing their account. This operation only returns the managing administrators that have the requested account within their AdminScope.
+    */
+  def listAdminsManagingAccount(): Request[ListAdminsManagingAccountResponse, AWSError] = js.native
+  def listAdminsManagingAccount(callback: js.Function2[/* err */ AWSError, /* data */ ListAdminsManagingAccountResponse, Unit]): Request[ListAdminsManagingAccountResponse, AWSError] = js.native
+  /**
+    * Lists the accounts that are managing the specified Organizations member account. This is useful for any member account so that they can view the accounts who are managing their account. This operation only returns the managing administrators that have the requested account within their AdminScope.
+    */
+  def listAdminsManagingAccount(params: ListAdminsManagingAccountRequest): Request[ListAdminsManagingAccountResponse, AWSError] = js.native
+  def listAdminsManagingAccount(
+    params: ListAdminsManagingAccountRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListAdminsManagingAccountResponse, Unit]
+  ): Request[ListAdminsManagingAccountResponse, AWSError] = js.native
+  
+  /**
     * Returns an array of AppsListDataSummary objects.
     */
   def listAppsLists(): Request[ListAppsListsResponse, AWSError] = js.native
@@ -355,12 +399,12 @@ trait FMS extends Service {
   ): Request[ListDiscoveredResourcesResponse, AWSError] = js.native
   
   /**
-    * Returns a MemberAccounts object that lists the member accounts in the administrator's Amazon Web Services organization. The ListMemberAccounts must be submitted by the account that is set as the Firewall Manager administrator.
+    * Returns a MemberAccounts object that lists the member accounts in the administrator's Amazon Web Services organization. Either an Firewall Manager administrator or the organization's management account can make this request.
     */
   def listMemberAccounts(): Request[ListMemberAccountsResponse, AWSError] = js.native
   def listMemberAccounts(callback: js.Function2[/* err */ AWSError, /* data */ ListMemberAccountsResponse, Unit]): Request[ListMemberAccountsResponse, AWSError] = js.native
   /**
-    * Returns a MemberAccounts object that lists the member accounts in the administrator's Amazon Web Services organization. The ListMemberAccounts must be submitted by the account that is set as the Firewall Manager administrator.
+    * Returns a MemberAccounts object that lists the member accounts in the administrator's Amazon Web Services organization. Either an Firewall Manager administrator or the organization's management account can make this request.
     */
   def listMemberAccounts(params: ListMemberAccountsRequest): Request[ListMemberAccountsResponse, AWSError] = js.native
   def listMemberAccounts(
@@ -455,6 +499,20 @@ trait FMS extends Service {
   ): Request[ListThirdPartyFirewallFirewallPoliciesResponse, AWSError] = js.native
   
   /**
+    * Creates or updates an Firewall Manager administrator account. The account must be a member of the organization that was onboarded to Firewall Manager by AssociateAdminAccount. Only the organization's management account can create an Firewall Manager administrator account. When you create an Firewall Manager administrator account, the service checks to see if the account is already a delegated administrator within Organizations. If the account isn't a delegated administrator, Firewall Manager calls Organizations to delegate the account within Organizations. For more information about administrator accounts within Organizations, see Managing the Amazon Web Services Accounts in Your Organization.
+    */
+  def putAdminAccount(): Request[js.Object, AWSError] = js.native
+  def putAdminAccount(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Creates or updates an Firewall Manager administrator account. The account must be a member of the organization that was onboarded to Firewall Manager by AssociateAdminAccount. Only the organization's management account can create an Firewall Manager administrator account. When you create an Firewall Manager administrator account, the service checks to see if the account is already a delegated administrator within Organizations. If the account isn't a delegated administrator, Firewall Manager calls Organizations to delegate the account within Organizations. For more information about administrator accounts within Organizations, see Managing the Amazon Web Services Accounts in Your Organization.
+    */
+  def putAdminAccount(params: PutAdminAccountRequest): Request[js.Object, AWSError] = js.native
+  def putAdminAccount(
+    params: PutAdminAccountRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
     * Creates an Firewall Manager applications list.
     */
   def putAppsList(): Request[PutAppsListResponse, AWSError] = js.native
@@ -469,12 +527,12 @@ trait FMS extends Service {
   ): Request[PutAppsListResponse, AWSError] = js.native
   
   /**
-    * Designates the IAM role and Amazon Simple Notification Service (SNS) topic that Firewall Manager uses to record SNS logs. To perform this action outside of the console, you must configure the SNS topic to allow the Firewall Manager role AWSServiceRoleForFMS to publish SNS logs. For more information, see Firewall Manager required permissions for API actions in the Firewall Manager Developer Guide.
+    * Designates the IAM role and Amazon Simple Notification Service (SNS) topic that Firewall Manager uses to record SNS logs. To perform this action outside of the console, you must first configure the SNS topic's access policy to allow the SnsRoleName to publish SNS logs. If the SnsRoleName provided is a role other than the AWSServiceRoleForFMS service-linked role, this role must have a trust relationship configured to allow the Firewall Manager service principal fms.amazonaws.com to assume this role. For information about configuring an SNS access policy, see Service roles for Firewall Manager in the Firewall Manager Developer Guide.
     */
   def putNotificationChannel(): Request[js.Object, AWSError] = js.native
   def putNotificationChannel(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Designates the IAM role and Amazon Simple Notification Service (SNS) topic that Firewall Manager uses to record SNS logs. To perform this action outside of the console, you must configure the SNS topic to allow the Firewall Manager role AWSServiceRoleForFMS to publish SNS logs. For more information, see Firewall Manager required permissions for API actions in the Firewall Manager Developer Guide.
+    * Designates the IAM role and Amazon Simple Notification Service (SNS) topic that Firewall Manager uses to record SNS logs. To perform this action outside of the console, you must first configure the SNS topic's access policy to allow the SnsRoleName to publish SNS logs. If the SnsRoleName provided is a role other than the AWSServiceRoleForFMS service-linked role, this role must have a trust relationship configured to allow the Firewall Manager service principal fms.amazonaws.com to assume this role. For information about configuring an SNS access policy, see Service roles for Firewall Manager in the Firewall Manager Developer Guide.
     */
   def putNotificationChannel(params: PutNotificationChannelRequest): Request[js.Object, AWSError] = js.native
   def putNotificationChannel(

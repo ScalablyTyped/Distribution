@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PointInTimeRecovery extends StObject {
   
   /**
-    * The options are: • ENABLED  • DISABLED 
+    * The options are:    status=ENABLED     status=DISABLED   
     */
   var status: PointInTimeRecoveryStatus
 }

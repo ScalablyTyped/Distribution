@@ -1,7 +1,7 @@
 
 # Scala.js typings for primer__octicons
 
-Typings are for version 17.5
+Typings are for version 17.11
 
 ## Library description:
 A scalable set of icons handcrafted with <3 by GitHub.

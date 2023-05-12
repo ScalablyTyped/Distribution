@@ -1,7 +1,7 @@
 package typings.blueprintjsCore.anon
 
 import typings.blueprintjsCore.libEsmCommonPropsMod.MaybeElement
-import typings.blueprintjsIcons.libEsmGenerated16pxBlueprintIcons16Mod.BlueprintIcons16Id
+import typings.blueprintjsIcons.libEsmGeneratedIcons16pxBlueprintIcons16Mod.BlueprintIcons16Id
 import typings.react.mod.CSSProperties
 import typings.react.mod.HTMLProps
 import typings.react.mod.ReactNode

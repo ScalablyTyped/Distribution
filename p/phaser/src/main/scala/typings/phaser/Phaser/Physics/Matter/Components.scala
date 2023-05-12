@@ -2,8 +2,8 @@ package typings.phaser.Phaser.Physics.Matter
 
 import typings.phaser.MatterJS.Body
 import typings.phaser.MatterJS.BodyType
-import typings.phaser.Phaser.GameObjects.GameObject
 import typings.phaser.Phaser.Math.Vector2
+import typings.phaser.Phaser.Types.Math.Vector2Like
 import typings.phaser.Phaser.Types.Physics.Matter.MatterBodyConfig
 import typings.phaser.Phaser.Types.Physics.Matter.MatterSetBodyConfig
 import org.scalablytyped.runtime.StObject
@@ -21,11 +21,11 @@ object Components {
       * Sets the restitution on the physics object.
       * @param value A Number that defines the restitution (elasticity) of the body. The value is always positive and is in the range (0, 1). A value of 0 means collisions may be perfectly inelastic and no bouncing may occur. A value of 0.8 means the body may bounce back with approximately 80% of its kinetic energy. Note that collision response is based on pairs of bodies, and that restitution values are combined with the following formula: `Math.max(bodyA.restitution, bodyB.restitution)`
       */
-    def setBounce(value: Double): GameObject
+    def setBounce(value: Double): this.type
   }
   object Bounce {
     
-    inline def apply(setBounce: Double => GameObject): Bounce = {
+    inline def apply(setBounce: Double => Bounce): Bounce = {
       val __obj = js.Dynamic.literal(setBounce = js.Any.fromFunction1(setBounce))
       __obj.asInstanceOf[Bounce]
     }
@@ -33,7 +33,7 @@ object Components {
     @scala.inline
     implicit open class MutableBuilder[Self <: Bounce] (val x: Self) extends AnyVal {
       
-      inline def setSetBounce(value: Double => GameObject): Self = StObject.set(x, "setBounce", js.Any.fromFunction1(value))
+      inline def setSetBounce(value: Double => Bounce): Self = StObject.set(x, "setBounce", js.Any.fromFunction1(value))
     }
   }
   
@@ -43,14 +43,14 @@ object Components {
   @js.native
   trait Collision extends StObject {
     
-    def setCollidesWith(categories: js.Array[Double]): GameObject = js.native
+    def setCollidesWith(categories: js.Array[Double]): this.type = js.native
     /**
       * Sets the collision mask for this Game Object's Matter Body. Two Matter Bodies with different collision groups will only
       * collide if each one includes the other's category in its mask based on a bitwise AND, i.e. `(categoryA & maskB) !== 0`
       * and `(categoryB & maskA) !== 0` are both true.
       * @param categories A unique category bitfield, or an array of them.
       */
-    def setCollidesWith(categories: Double): GameObject = js.native
+    def setCollidesWith(categories: Double): this.type = js.native
     
     /**
       * Sets the collision category of this Game Object's Matter Body. This number must be a power of two between 2^0 (= 1) and 2^31.
@@ -58,7 +58,7 @@ object Components {
       * categories are included in their collision masks (see {@link #setCollidesWith}).
       * @param value Unique category bitfield.
       */
-    def setCollisionCategory(value: Double): GameObject = js.native
+    def setCollisionCategory(value: Double): this.type = js.native
     
     /**
       * Sets the collision group of this Game Object's Matter Body. If this is zero or two Matter Bodies have different values,
@@ -67,7 +67,7 @@ object Components {
       * they will never collide.
       * @param value Unique group index.
       */
-    def setCollisionGroup(value: Double): GameObject = js.native
+    def setCollisionGroup(value: Double): this.type = js.native
     
     /**
       * The callback is sent a `Phaser.Types.Physics.Matter.MatterCollisionData` object.
@@ -76,7 +76,7 @@ object Components {
       * to the callback.
       * @param callback The callback to invoke when this body starts colliding with another.
       */
-    def setOnCollide(callback: js.Function): GameObject = js.native
+    def setOnCollide(callback: js.Function): this.type = js.native
     
     /**
       * The callback is sent a `Phaser.Types.Physics.Matter.MatterCollisionData` object.
@@ -85,7 +85,7 @@ object Components {
       * to the callback.
       * @param callback The callback to invoke for the duration of this body colliding with another.
       */
-    def setOnCollideActive(callback: js.Function): GameObject = js.native
+    def setOnCollideActive(callback: js.Function): this.type = js.native
     
     /**
       * The callback is sent a `Phaser.Types.Physics.Matter.MatterCollisionData` object.
@@ -94,9 +94,9 @@ object Components {
       * to the callback.
       * @param callback The callback to invoke when this body stops colliding with another.
       */
-    def setOnCollideEnd(callback: js.Function): GameObject = js.native
+    def setOnCollideEnd(callback: js.Function): this.type = js.native
     
-    def setOnCollideWith(body: js.Array[Body], callback: js.Function): GameObject = js.native
+    def setOnCollideWith(body: js.Array[Body], callback: js.Function): this.type = js.native
     /**
       * The callback is sent a reference to the other body, along with a `Phaser.Types.Physics.Matter.MatterCollisionData` object.
       * 
@@ -105,7 +105,7 @@ object Components {
       * @param body The body, or an array of bodies, to test for collisions with.
       * @param callback The callback to invoke when this body collides with the given body or bodies.
       */
-    def setOnCollideWith(body: Body, callback: js.Function): GameObject = js.native
+    def setOnCollideWith(body: Body, callback: js.Function): this.type = js.native
   }
   
   /**
@@ -117,14 +117,14 @@ object Components {
       * Applies a force to a body.
       * @param force A Vector that specifies the force to apply.
       */
-    def applyForce(force: Vector2): GameObject
+    def applyForce(force: Vector2): this.type
     
     /**
       * Applies a force to a body from a given position.
       * @param position The position in which the force comes from.
       * @param force A Vector that specifies the force to apply.
       */
-    def applyForceFrom(position: Vector2, force: Vector2): GameObject
+    def applyForceFrom(position: Vector2, force: Vector2): this.type
     
     /**
       * Apply thrust to the forward position of the body.
@@ -132,7 +132,7 @@ object Components {
       * Use very small values, such as 0.1, depending on the mass and required speed.
       * @param speed A speed value to be applied to a directional force.
       */
-    def thrust(speed: Double): GameObject
+    def thrust(speed: Double): this.type
     
     /**
       * Apply thrust to the back position of the body.
@@ -140,7 +140,7 @@ object Components {
       * Use very small values, such as 0.1, depending on the mass and required speed.
       * @param speed A speed value to be applied to a directional force.
       */
-    def thrustBack(speed: Double): GameObject
+    def thrustBack(speed: Double): this.type
     
     /**
       * Apply thrust to the left position of the body.
@@ -148,7 +148,7 @@ object Components {
       * Use very small values, such as 0.1, depending on the mass and required speed.
       * @param speed A speed value to be applied to a directional force.
       */
-    def thrustLeft(speed: Double): GameObject
+    def thrustLeft(speed: Double): this.type
     
     /**
       * Apply thrust to the right position of the body.
@@ -156,17 +156,17 @@ object Components {
       * Use very small values, such as 0.1, depending on the mass and required speed.
       * @param speed A speed value to be applied to a directional force.
       */
-    def thrustRight(speed: Double): GameObject
+    def thrustRight(speed: Double): this.type
   }
   object Force {
     
     inline def apply(
-      applyForce: Vector2 => GameObject,
-      applyForceFrom: (Vector2, Vector2) => GameObject,
-      thrust: Double => GameObject,
-      thrustBack: Double => GameObject,
-      thrustLeft: Double => GameObject,
-      thrustRight: Double => GameObject
+      applyForce: Vector2 => Force,
+      applyForceFrom: (Vector2, Vector2) => Force,
+      thrust: Double => Force,
+      thrustBack: Double => Force,
+      thrustLeft: Double => Force,
+      thrustRight: Double => Force
     ): Force = {
       val __obj = js.Dynamic.literal(applyForce = js.Any.fromFunction1(applyForce), applyForceFrom = js.Any.fromFunction2(applyForceFrom), thrust = js.Any.fromFunction1(thrust), thrustBack = js.Any.fromFunction1(thrustBack), thrustLeft = js.Any.fromFunction1(thrustLeft), thrustRight = js.Any.fromFunction1(thrustRight))
       __obj.asInstanceOf[Force]
@@ -175,17 +175,17 @@ object Components {
     @scala.inline
     implicit open class MutableBuilder[Self <: Force] (val x: Self) extends AnyVal {
       
-      inline def setApplyForce(value: Vector2 => GameObject): Self = StObject.set(x, "applyForce", js.Any.fromFunction1(value))
+      inline def setApplyForce(value: Vector2 => Force): Self = StObject.set(x, "applyForce", js.Any.fromFunction1(value))
       
-      inline def setApplyForceFrom(value: (Vector2, Vector2) => GameObject): Self = StObject.set(x, "applyForceFrom", js.Any.fromFunction2(value))
+      inline def setApplyForceFrom(value: (Vector2, Vector2) => Force): Self = StObject.set(x, "applyForceFrom", js.Any.fromFunction2(value))
       
-      inline def setThrust(value: Double => GameObject): Self = StObject.set(x, "thrust", js.Any.fromFunction1(value))
+      inline def setThrust(value: Double => Force): Self = StObject.set(x, "thrust", js.Any.fromFunction1(value))
       
-      inline def setThrustBack(value: Double => GameObject): Self = StObject.set(x, "thrustBack", js.Any.fromFunction1(value))
+      inline def setThrustBack(value: Double => Force): Self = StObject.set(x, "thrustBack", js.Any.fromFunction1(value))
       
-      inline def setThrustLeft(value: Double => GameObject): Self = StObject.set(x, "thrustLeft", js.Any.fromFunction1(value))
+      inline def setThrustLeft(value: Double => Force): Self = StObject.set(x, "thrustLeft", js.Any.fromFunction1(value))
       
-      inline def setThrustRight(value: Double => GameObject): Self = StObject.set(x, "thrustRight", js.Any.fromFunction1(value))
+      inline def setThrustRight(value: Double => Force): Self = StObject.set(x, "thrustRight", js.Any.fromFunction1(value))
     }
   }
   
@@ -201,10 +201,10 @@ object Components {
       * @param air If provided, the new air resistance of the Body. The higher the value, the faster the Body will slow as it moves through space. 0 means the body has no air resistance.
       * @param fstatic If provided, the new static friction of the Body. The higher the value (e.g. 10), the more force it will take to initially get the Body moving when it is nearly stationary. 0 means the body will never "stick" when it is nearly stationary.
       */
-    def setFriction(value: Double): GameObject = js.native
-    def setFriction(value: Double, air: Double): GameObject = js.native
-    def setFriction(value: Double, air: Double, fstatic: Double): GameObject = js.native
-    def setFriction(value: Double, air: Unit, fstatic: Double): GameObject = js.native
+    def setFriction(value: Double): this.type = js.native
+    def setFriction(value: Double, air: Double): this.type = js.native
+    def setFriction(value: Double, air: Double, fstatic: Double): this.type = js.native
+    def setFriction(value: Double, air: Unit, fstatic: Double): this.type = js.native
     
     /**
       * Sets a new air resistance for this Game Object's Matter Body.
@@ -212,7 +212,7 @@ object Components {
       * The higher the value, the faster a Body slows when moving through space.
       * @param value The new air resistance for the Body.
       */
-    def setFrictionAir(value: Double): GameObject = js.native
+    def setFrictionAir(value: Double): this.type = js.native
     
     /**
       * Sets a new static friction for this Game Object's Matter Body.
@@ -220,7 +220,7 @@ object Components {
       * The higher the value (e.g. 10), the more force it will take to initially get the Body moving when it is nearly stationary.
       * @param value The new static friction for the Body.
       */
-    def setFrictionStatic(value: Double): GameObject = js.native
+    def setFrictionStatic(value: Double): this.type = js.native
   }
   
   /**
@@ -232,11 +232,11 @@ object Components {
       * A togglable function for ignoring world gravity in real-time on the current body.
       * @param value Set to true to ignore the effect of world gravity, or false to not ignore it.
       */
-    def setIgnoreGravity(value: Boolean): GameObject
+    def setIgnoreGravity(value: Boolean): this.type
   }
   object Gravity {
     
-    inline def apply(setIgnoreGravity: Boolean => GameObject): Gravity = {
+    inline def apply(setIgnoreGravity: Boolean => Gravity): Gravity = {
       val __obj = js.Dynamic.literal(setIgnoreGravity = js.Any.fromFunction1(setIgnoreGravity))
       __obj.asInstanceOf[Gravity]
     }
@@ -244,7 +244,7 @@ object Components {
     @scala.inline
     implicit open class MutableBuilder[Self <: Gravity] (val x: Self) extends AnyVal {
       
-      inline def setSetIgnoreGravity(value: Boolean => GameObject): Self = StObject.set(x, "setIgnoreGravity", js.Any.fromFunction1(value))
+      inline def setSetIgnoreGravity(value: Boolean => Gravity): Self = StObject.set(x, "setIgnoreGravity", js.Any.fromFunction1(value))
     }
   }
   
@@ -266,17 +266,17 @@ object Components {
       * Sets density of the body.
       * @param value The new density of the body.
       */
-    def setDensity(value: Double): GameObject
+    def setDensity(value: Double): this.type
     
     /**
       * Sets the mass of the Game Object's Matter Body.
       * @param value The new mass of the body.
       */
-    def setMass(value: Double): GameObject
+    def setMass(value: Double): this.type
   }
   object Mass {
     
-    inline def apply(centerOfMass: Vector2, setDensity: Double => GameObject, setMass: Double => GameObject): Mass = {
+    inline def apply(centerOfMass: Vector2, setDensity: Double => Mass, setMass: Double => Mass): Mass = {
       val __obj = js.Dynamic.literal(centerOfMass = centerOfMass.asInstanceOf[js.Any], setDensity = js.Any.fromFunction1(setDensity), setMass = js.Any.fromFunction1(setMass))
       __obj.asInstanceOf[Mass]
     }
@@ -286,9 +286,9 @@ object Components {
       
       inline def setCenterOfMass(value: Vector2): Self = StObject.set(x, "centerOfMass", value.asInstanceOf[js.Any])
       
-      inline def setSetDensity(value: Double => GameObject): Self = StObject.set(x, "setDensity", js.Any.fromFunction1(value))
+      inline def setSetDensity(value: Double => Mass): Self = StObject.set(x, "setDensity", js.Any.fromFunction1(value))
       
-      inline def setSetMass(value: Double => GameObject): Self = StObject.set(x, "setMass", js.Any.fromFunction1(value))
+      inline def setSetMass(value: Double => Mass): Self = StObject.set(x, "setMass", js.Any.fromFunction1(value))
     }
   }
   
@@ -307,11 +307,11 @@ object Components {
       * Sensors trigger collision events, but don't react with colliding body physically.
       * @param value `true` to set the body as a sensor, or `false` to disable it.
       */
-    def setSensor(value: Boolean): GameObject
+    def setSensor(value: Boolean): this.type
   }
   object Sensor {
     
-    inline def apply(isSensor: () => Boolean, setSensor: Boolean => GameObject): Sensor = {
+    inline def apply(isSensor: () => Boolean, setSensor: Boolean => Sensor): Sensor = {
       val __obj = js.Dynamic.literal(isSensor = js.Any.fromFunction0(isSensor), setSensor = js.Any.fromFunction1(setSensor))
       __obj.asInstanceOf[Sensor]
     }
@@ -321,7 +321,7 @@ object Components {
       
       inline def setIsSensor(value: () => Boolean): Self = StObject.set(x, "isSensor", js.Any.fromFunction0(value))
       
-      inline def setSetSensor(value: Boolean => GameObject): Self = StObject.set(x, "setSensor", js.Any.fromFunction1(value))
+      inline def setSetSensor(value: Boolean => Sensor): Self = StObject.set(x, "setSensor", js.Any.fromFunction1(value))
     }
   }
   
@@ -339,10 +339,10 @@ object Components {
       * @param config Either a string, such as `circle`, or a Matter Set Body Configuration object.
       * @param options An optional Body configuration object that is used to set initial Body properties on creation.
       */
-    def setBody(config: String): GameObject = js.native
-    def setBody(config: String, options: MatterBodyConfig): GameObject = js.native
-    def setBody(config: MatterSetBodyConfig): GameObject = js.native
-    def setBody(config: MatterSetBodyConfig, options: MatterBodyConfig): GameObject = js.native
+    def setBody(config: String): this.type = js.native
+    def setBody(config: String, options: MatterBodyConfig): this.type = js.native
+    def setBody(config: MatterSetBodyConfig): this.type = js.native
+    def setBody(config: MatterSetBodyConfig, options: MatterBodyConfig): this.type = js.native
     
     /**
       * Set the body on a Game Object to a circle.
@@ -352,8 +352,8 @@ object Components {
       * @param radius The radius of the circle.
       * @param options An optional Body configuration object that is used to set initial Body properties on creation.
       */
-    def setCircle(radius: Double): GameObject = js.native
-    def setCircle(radius: Double, options: MatterBodyConfig): GameObject = js.native
+    def setCircle(radius: Double): this.type = js.native
+    def setCircle(radius: Double, options: MatterBodyConfig): this.type = js.native
     
     /**
       * Set this Game Object to use the given existing Matter Body.
@@ -362,8 +362,8 @@ object Components {
       * @param body The Body this Game Object should use.
       * @param addToWorld Should the body be immediately added to the World? Default true.
       */
-    def setExistingBody(body: BodyType): GameObject = js.native
-    def setExistingBody(body: BodyType, addToWorld: Boolean): GameObject = js.native
+    def setExistingBody(body: BodyType): this.type = js.native
+    def setExistingBody(body: BodyType, addToWorld: Boolean): this.type = js.native
     
     /**
       * Set the body on the Game Object to a polygon shape.
@@ -374,8 +374,8 @@ object Components {
       * @param sides The number of sides the polygon will have.
       * @param options An optional Body configuration object that is used to set initial Body properties on creation.
       */
-    def setPolygon(radius: Double, sides: Double): GameObject = js.native
-    def setPolygon(radius: Double, sides: Double, options: MatterBodyConfig): GameObject = js.native
+    def setPolygon(radius: Double, sides: Double): this.type = js.native
+    def setPolygon(radius: Double, sides: Double, options: MatterBodyConfig): this.type = js.native
     
     /**
       * Set the body on a Game Object to a rectangle.
@@ -386,8 +386,8 @@ object Components {
       * @param height Height of the rectangle.
       * @param options An optional Body configuration object that is used to set initial Body properties on creation.
       */
-    def setRectangle(width: Double, height: Double): GameObject = js.native
-    def setRectangle(width: Double, height: Double, options: MatterBodyConfig): GameObject = js.native
+    def setRectangle(width: Double, height: Double): this.type = js.native
+    def setRectangle(width: Double, height: Double, options: MatterBodyConfig): this.type = js.native
     
     /**
       * Set the body on the Game Object to a trapezoid shape.
@@ -399,8 +399,8 @@ object Components {
       * @param slope The slope of the trapezoid. 0 creates a rectangle, while 1 creates a triangle. Positive values make the top side shorter, while negative values make the bottom side shorter.
       * @param options An optional Body configuration object that is used to set initial Body properties on creation.
       */
-    def setTrapezoid(width: Double, height: Double, slope: Double): GameObject = js.native
-    def setTrapezoid(width: Double, height: Double, slope: Double, options: MatterBodyConfig): GameObject = js.native
+    def setTrapezoid(width: Double, height: Double, slope: Double): this.type = js.native
+    def setTrapezoid(width: Double, height: Double, slope: Double, options: MatterBodyConfig): this.type = js.native
   }
   
   /**
@@ -465,11 +465,11 @@ object Components {
       * Changes the physics body to be either static `true` or dynamic `false`.
       * @param value `true` to set the body as being static, or `false` to make it dynamic.
       */
-    def setStatic(value: Boolean): GameObject
+    def setStatic(value: Boolean): this.type
   }
   object Static {
     
-    inline def apply(isStatic: () => Boolean, setStatic: Boolean => GameObject): Static = {
+    inline def apply(isStatic: () => Boolean, setStatic: Boolean => Static): Static = {
       val __obj = js.Dynamic.literal(isStatic = js.Any.fromFunction0(isStatic), setStatic = js.Any.fromFunction1(setStatic))
       __obj.asInstanceOf[Static]
     }
@@ -479,7 +479,7 @@ object Components {
       
       inline def setIsStatic(value: () => Boolean): Self = StObject.set(x, "isStatic", js.Any.fromFunction0(value))
       
-      inline def setSetStatic(value: Boolean => GameObject): Self = StObject.set(x, "setStatic", js.Any.fromFunction1(value))
+      inline def setSetStatic(value: Boolean => Static): Self = StObject.set(x, "setStatic", js.Any.fromFunction1(value))
     }
   }
   
@@ -578,30 +578,53 @@ object Components {
   trait Velocity extends StObject {
     
     /**
+      * Gets the current rotational speed of the body.
+      * Equivalent to the magnitude of its angular velocity.
+      */
+    def getAngularSpeed(): Double = js.native
+    
+    /**
+      * Gets the current rotational velocity of the body.
+      */
+    def getAngularVelocity(): Double = js.native
+    
+    /**
+      * Gets the current linear velocity of the physics body.
+      */
+    def getVelocity(): Vector2Like = js.native
+    
+    /**
+      * Sets the current rotational speed of the body.
+      * Direction is maintained. Affects body angular velocity.
+      * @param speed The angular speed.
+      */
+    def setAngularSpeed(speed: Double): this.type = js.native
+    
+    /**
       * Sets the angular velocity of the body instantly.
       * Position, angle, force etc. are unchanged.
-      * @param value The angular velocity.
+      * @param velocity The angular velocity.
       */
-    def setAngularVelocity(value: Double): GameObject = js.native
+    def setAngularVelocity(velocity: Double): this.type = js.native
     
     /**
       * Sets both the horizontal and vertical velocity of the physics body.
       * @param x The horizontal velocity value.
       * @param y The vertical velocity value, it can be either positive or negative. If not given, it will be the same as the `x` value. Default x.
       */
-    def setVelocity(x: Double): GameObject = js.native
-    def setVelocity(x: Double, y: Double): GameObject = js.native
+    def setVelocity(x: Double): this.type = js.native
+    def setVelocity(x: Double, y: Double): this.type = js.native
     
     /**
       * Sets the horizontal velocity of the physics body.
       * @param x The horizontal velocity value.
       */
-    def setVelocityX(x: Double): GameObject = js.native
+    def setVelocityX(x: Double): this.type = js.native
     
     /**
       * Sets vertical velocity of the physics body.
       * @param y The vertical velocity value.
       */
-    def setVelocityY(y: Double): GameObject = js.native
+    def setVelocityY(y: Double): this.type = js.native
   }
 }

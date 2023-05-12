@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeFaqResponse extends StObject {
   
   /**
-    * The date and time that the FAQ was created.
+    * The Unix timestamp when the FAQ was created.
     */
   var CreatedAt: js.UndefOr[js.Date] = js.undefined
   
@@ -59,7 +59,7 @@ trait DescribeFaqResponse extends StObject {
   var Status: js.UndefOr[FaqStatus] = js.undefined
   
   /**
-    * The date and time that the FAQ was last updated.
+    * The Unix timestamp when the FAQ was last updated.
     */
   var UpdatedAt: js.UndefOr[js.Date] = js.undefined
 }

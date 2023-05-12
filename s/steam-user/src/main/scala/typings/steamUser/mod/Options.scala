@@ -41,6 +41,8 @@ trait Options extends StObject {
   
   var singleSentryfile: js.UndefOr[Boolean] = js.undefined
   
+  var socksProxy: js.UndefOr[String | Null] = js.undefined
+  
   var webCompatibilityMode: js.UndefOr[Boolean] = js.undefined
 }
 object Options {
@@ -128,6 +130,12 @@ object Options {
     inline def setSingleSentryfile(value: Boolean): Self = StObject.set(x, "singleSentryfile", value.asInstanceOf[js.Any])
     
     inline def setSingleSentryfileUndefined: Self = StObject.set(x, "singleSentryfile", js.undefined)
+    
+    inline def setSocksProxy(value: String): Self = StObject.set(x, "socksProxy", value.asInstanceOf[js.Any])
+    
+    inline def setSocksProxyNull: Self = StObject.set(x, "socksProxy", null)
+    
+    inline def setSocksProxyUndefined: Self = StObject.set(x, "socksProxy", js.undefined)
     
     inline def setWebCompatibilityMode(value: Boolean): Self = StObject.set(x, "webCompatibilityMode", value.asInstanceOf[js.Any])
     

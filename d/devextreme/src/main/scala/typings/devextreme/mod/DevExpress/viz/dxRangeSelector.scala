@@ -37,7 +37,7 @@ trait dxRangeSelector
     * Sets the selected range.
     */
   def setValue(value: js.Array[Double | String | js.Date]): Unit = js.native
-  def setValue(value: VizRange): Unit = js.native
+  def setValue(value: typings.devextreme.mod.DevExpress.common.charts.VisualRange): Unit = js.native
 }
 object dxRangeSelector {
   

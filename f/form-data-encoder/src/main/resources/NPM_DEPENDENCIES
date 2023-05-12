@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "form-data-encoder" : "2.1.3"
+      "form-data-encoder" : "2.1.4"
     }
   ],
   "test-dependencies" : [
     {
-      "form-data-encoder" : "2.1.3"
+      "form-data-encoder" : "2.1.4"
     }
   ],
   "compile-devDependencies" : [

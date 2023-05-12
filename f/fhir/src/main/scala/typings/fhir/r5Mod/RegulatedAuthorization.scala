@@ -24,7 +24,7 @@ trait RegulatedAuthorization
   var basis: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
   /**
-    * The case or regulatory procedure for granting or amending a marketing authorization. Note: This area is subject to ongoing review and the workgroup is seeking implementer feedback on its use (see link at bottom of page).
+    * The case or regulatory procedure for granting or amending a regulated authorization. An authorization is granted in response to submissions/applications by those seeking authorization. A case is the administrative process that deals with the application(s) that relate to this and assesses them. Note: This area is subject to ongoing review and the workgroup is seeking implementer feedback on its use (see link at bottom of page).
     */
   var `case`: js.UndefOr[RegulatedAuthorizationCase] = js.undefined
   
@@ -34,7 +34,7 @@ trait RegulatedAuthorization
   var description: js.UndefOr[String] = js.undefined
   
   /**
-    * The organization that holds the granted authorization.
+    * The organization that has been granted this authorization, by some authoritative body (the 'regulator').
     */
   var holder: js.UndefOr[Reference] = js.undefined
   
@@ -46,10 +46,10 @@ trait RegulatedAuthorization
   /**
     * Condition for which the use of the regulated product applies.
     */
-  var indication: js.UndefOr[CodeableReference] = js.undefined
+  var indication: js.UndefOr[js.Array[CodeableReference]] = js.undefined
   
   /**
-    * The intended use of the product, e.g. prevention, treatment.
+    * The intended use of the product, e.g. prevention, treatment, diagnosis.
     */
   var intendedUse: js.UndefOr[CodeableConcept] = js.undefined
   
@@ -68,7 +68,7 @@ trait RegulatedAuthorization
   val resourceType_RegulatedAuthorization: typings.fhir.fhirStrings.RegulatedAuthorization
   
   /**
-    * The status that is authorised e.g. approved. Intermediate states can be tracked with cases and applications.
+    * The status that is authorised e.g. approved. Intermediate states and actions can be tracked with cases and applications.
     */
   var status: js.UndefOr[CodeableConcept] = js.undefined
   
@@ -132,9 +132,11 @@ object RegulatedAuthorization {
     
     inline def setIdentifierVarargs(value: Identifier*): Self = StObject.set(x, "identifier", js.Array(value*))
     
-    inline def setIndication(value: CodeableReference): Self = StObject.set(x, "indication", value.asInstanceOf[js.Any])
+    inline def setIndication(value: js.Array[CodeableReference]): Self = StObject.set(x, "indication", value.asInstanceOf[js.Any])
     
     inline def setIndicationUndefined: Self = StObject.set(x, "indication", js.undefined)
+    
+    inline def setIndicationVarargs(value: CodeableReference*): Self = StObject.set(x, "indication", js.Array(value*))
     
     inline def setIntendedUse(value: CodeableConcept): Self = StObject.set(x, "intendedUse", value.asInstanceOf[js.Any])
     

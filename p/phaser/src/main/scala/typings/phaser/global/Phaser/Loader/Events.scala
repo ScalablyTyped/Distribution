@@ -1,0 +1,162 @@
+package typings.phaser.global.Phaser.Loader
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+object Events {
+  
+  /**
+    * The Loader Plugin Add File Event.
+    * 
+    * This event is dispatched when a new file is successfully added to the Loader and placed into the load queue.
+    * 
+    * Listen to it from a Scene using: `this.load.on('addfile', listener)`.
+    * 
+    * If you add lots of files to a Loader from a `preload` method, it will dispatch this event for each one of them.
+    */
+  @JSGlobal("Phaser.Loader.Events.ADD")
+  @js.native
+  val ADD: String = js.native
+  
+  /**
+    * The Loader Plugin Complete Event.
+    * 
+    * This event is dispatched when the Loader has fully processed everything in the load queue.
+    * By this point every loaded file will now be in its associated cache and ready for use.
+    * 
+    * Listen to it from a Scene using: `this.load.on('complete', listener)`.
+    */
+  @JSGlobal("Phaser.Loader.Events.COMPLETE")
+  @js.native
+  val COMPLETE: String = js.native
+  
+  /**
+    * The File Load Complete Event.
+    * 
+    * This event is dispatched by the Loader Plugin when _any_ file in the queue finishes loading.
+    * 
+    * Listen to it from a Scene using: `this.load.on('filecomplete', listener)`.
+    * 
+    * Make sure you remove this listener when you have finished, or it will continue to fire if the Scene reloads.
+    * 
+    * You can also listen for the completion of a specific file. See the [FILE_KEY_COMPLETE]{@linkcode Phaser.Loader.Events#event:FILE_KEY_COMPLETE} event.
+    */
+  @JSGlobal("Phaser.Loader.Events.FILE_COMPLETE")
+  @js.native
+  val FILE_COMPLETE: String = js.native
+  
+  /**
+    * The File Load Complete Event.
+    * 
+    * This event is dispatched by the Loader Plugin when any file in the queue finishes loading.
+    * 
+    * It uses a special dynamic event name constructed from the key and type of the file.
+    * 
+    * For example, if you have loaded an `image` with a key of `monster`, you can listen for it
+    * using the following:
+    * 
+    * ```javascript
+    * this.load.on('filecomplete-image-monster', function (key, type, data) {
+    *     // Your handler code
+    * });
+    * ```
+    * 
+    * Or, if you have loaded a texture `atlas` with a key of `Level1`:
+    * 
+    * ```javascript
+    * this.load.on('filecomplete-atlasjson-Level1', function (key, type, data) {
+    *     // Your handler code
+    * });
+    * ```
+    * 
+    * Or, if you have loaded a sprite sheet with a key of `Explosion` and a prefix of `GAMEOVER`:
+    * 
+    * ```javascript
+    * this.load.on('filecomplete-spritesheet-GAMEOVERExplosion', function (key, type, data) {
+    *     // Your handler code
+    * });
+    * ```
+    * 
+    * Make sure you remove your listeners when you have finished, or they will continue to fire if the Scene reloads.
+    * 
+    * You can also listen for the generic completion of files. See the [FILE_COMPLETE]{@linkcode Phaser.Loader.Events#event:FILE_COMPLETE} event.
+    */
+  @JSGlobal("Phaser.Loader.Events.FILE_KEY_COMPLETE")
+  @js.native
+  val FILE_KEY_COMPLETE: String = js.native
+  
+  /**
+    * The File Load Event.
+    * 
+    * This event is dispatched by the Loader Plugin when a file finishes loading,
+    * but _before_ it is processed and added to the internal Phaser caches.
+    * 
+    * Listen to it from a Scene using: `this.load.on('load', listener)`.
+    */
+  @JSGlobal("Phaser.Loader.Events.FILE_LOAD")
+  @js.native
+  val FILE_LOAD: String = js.native
+  
+  /**
+    * The File Load Error Event.
+    * 
+    * This event is dispatched by the Loader Plugin when a file fails to load.
+    * 
+    * Listen to it from a Scene using: `this.load.on('loaderror', listener)`.
+    */
+  @JSGlobal("Phaser.Loader.Events.FILE_LOAD_ERROR")
+  @js.native
+  val FILE_LOAD_ERROR: String = js.native
+  
+  /**
+    * The File Load Progress Event.
+    * 
+    * This event is dispatched by the Loader Plugin during the load of a file, if the browser receives a DOM ProgressEvent and
+    * the `lengthComputable` event property is true. Depending on the size of the file and browser in use, this may, or may not happen.
+    * 
+    * Listen to it from a Scene using: `this.load.on('fileprogress', listener)`.
+    */
+  @JSGlobal("Phaser.Loader.Events.FILE_PROGRESS")
+  @js.native
+  val FILE_PROGRESS: String = js.native
+  
+  /**
+    * The Loader Plugin Post Process Event.
+    * 
+    * This event is dispatched by the Loader Plugin when the Loader has finished loading everything in the load queue.
+    * It is dispatched before the internal lists are cleared and each File is destroyed.
+    * 
+    * Use this hook to perform any last minute processing of files that can only happen once the
+    * Loader has completed, but prior to it emitting the `complete` event.
+    * 
+    * Listen to it from a Scene using: `this.load.on('postprocess', listener)`.
+    */
+  @JSGlobal("Phaser.Loader.Events.POST_PROCESS")
+  @js.native
+  val POST_PROCESS: String = js.native
+  
+  /**
+    * The Loader Plugin Progress Event.
+    * 
+    * This event is dispatched when the Loader updates its load progress, typically as a result of a file having completed loading.
+    * 
+    * Listen to it from a Scene using: `this.load.on('progress', listener)`.
+    */
+  @JSGlobal("Phaser.Loader.Events.PROGRESS")
+  @js.native
+  val PROGRESS: String = js.native
+  
+  /**
+    * The Loader Plugin Start Event.
+    * 
+    * This event is dispatched when the Loader starts running. At this point load progress is zero.
+    * 
+    * This event is dispatched even if there aren't any files in the load queue.
+    * 
+    * Listen to it from a Scene using: `this.load.on('start', listener)`.
+    */
+  @JSGlobal("Phaser.Loader.Events.START")
+  @js.native
+  val START: String = js.native
+}

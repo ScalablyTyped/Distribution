@@ -18,6 +18,8 @@ trait WebApplication extends StObject {
     */
   var logoutUrl: js.UndefOr[NullableOption[String]] = js.undefined
   
+  var redirectUriSettings: js.UndefOr[js.Array[RedirectUriSettings]] = js.undefined
+  
   /**
     * Specifies the URLs where user tokens are sent for sign-in, or the redirect URIs where OAuth 2.0 authorization codes and
     * access tokens are sent.
@@ -51,6 +53,12 @@ object WebApplication {
     inline def setLogoutUrlNull: Self = StObject.set(x, "logoutUrl", null)
     
     inline def setLogoutUrlUndefined: Self = StObject.set(x, "logoutUrl", js.undefined)
+    
+    inline def setRedirectUriSettings(value: js.Array[RedirectUriSettings]): Self = StObject.set(x, "redirectUriSettings", value.asInstanceOf[js.Any])
+    
+    inline def setRedirectUriSettingsUndefined: Self = StObject.set(x, "redirectUriSettings", js.undefined)
+    
+    inline def setRedirectUriSettingsVarargs(value: RedirectUriSettings*): Self = StObject.set(x, "redirectUriSettings", js.Array(value*))
     
     inline def setRedirectUris(value: js.Array[String]): Self = StObject.set(x, "redirectUris", value.asInstanceOf[js.Any])
     

@@ -917,7 +917,7 @@ object mod {
     
     var searchOnEnterKey: js.UndefOr[Boolean] = js.undefined
     
-    var searchSelector: js.UndefOr[Boolean] = js.undefined
+    var searchSelector: js.UndefOr[Boolean | String] = js.undefined
     
     var searchText: js.UndefOr[String] = js.undefined
     
@@ -970,6 +970,8 @@ object mod {
     var sortOrder: js.UndefOr[Any] = js.undefined
     
     var sortReset: js.UndefOr[Boolean] = js.undefined
+    
+    var sortResetPage: js.UndefOr[Boolean] = js.undefined
     
     var sortStable: js.UndefOr[Boolean] = js.undefined
     
@@ -1415,7 +1417,7 @@ object mod {
       
       inline def setSearchOnEnterKeyUndefined: Self = StObject.set(x, "searchOnEnterKey", js.undefined)
       
-      inline def setSearchSelector(value: Boolean): Self = StObject.set(x, "searchSelector", value.asInstanceOf[js.Any])
+      inline def setSearchSelector(value: Boolean | String): Self = StObject.set(x, "searchSelector", value.asInstanceOf[js.Any])
       
       inline def setSearchSelectorUndefined: Self = StObject.set(x, "searchSelector", js.undefined)
       
@@ -1522,6 +1524,10 @@ object mod {
       inline def setSortOrderUndefined: Self = StObject.set(x, "sortOrder", js.undefined)
       
       inline def setSortReset(value: Boolean): Self = StObject.set(x, "sortReset", value.asInstanceOf[js.Any])
+      
+      inline def setSortResetPage(value: Boolean): Self = StObject.set(x, "sortResetPage", value.asInstanceOf[js.Any])
+      
+      inline def setSortResetPageUndefined: Self = StObject.set(x, "sortResetPage", js.undefined)
       
       inline def setSortResetUndefined: Self = StObject.set(x, "sortReset", js.undefined)
       

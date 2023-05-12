@@ -422,6 +422,8 @@ object sapMMenuItemMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:aggregationChanged aggregationChanged} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -433,6 +435,8 @@ object sapMMenuItemMod {
     mParameters: AggregationName): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:press press} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -444,6 +448,8 @@ object sapMMenuItemMod {
     mParameters: js.Object): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:propertyChanged propertyChanged} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining

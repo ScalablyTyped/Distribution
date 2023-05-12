@@ -3,10 +3,9 @@ package typings.firebaseFirestore
 import typings.firebaseAppCheckInteropTypes.mod.AppCheckInternalComponentName
 import typings.firebaseAuthInteropTypes.mod.FirebaseAuthInternalName
 import typings.firebaseComponent.mod.Provider
-import typings.firebaseFirestore.anon.GetAuthHeaderValueForFirstParty
 import typings.firebaseFirestore.distPackagesFirestoreSrcAuthUserMod.User
 import typings.firebaseFirestore.distPackagesFirestoreSrcUtilAsyncQueueMod.AsyncQueue
-import typings.firebaseFirestore.firebaseFirestoreStrings.gapi
+import typings.firebaseFirestore.firebaseFirestoreStrings.firstParty_
 import typings.firebaseFirestore.firebaseFirestoreStrings.provider
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
@@ -248,18 +247,12 @@ object distPackagesFirestoreSrcApiCredentialsMod {
   open class FirstPartyAuthCredentialsProvider protected ()
     extends StObject
        with CredentialsProvider[User] {
-    def this(gapi: Null, sessionIndex: String) = this()
-    def this(gapi: Gapi, sessionIndex: String) = this()
-    def this(gapi: Null, sessionIndex: String, iamToken: String) = this()
-    def this(gapi: Gapi, sessionIndex: String, iamToken: String) = this()
-    def this(gapi: Null, sessionIndex: String, iamToken: String, authTokenFactory: AuthTokenFactory) = this()
-    def this(gapi: Null, sessionIndex: String, iamToken: Null, authTokenFactory: AuthTokenFactory) = this()
-    def this(gapi: Gapi, sessionIndex: String, iamToken: String, authTokenFactory: AuthTokenFactory) = this()
-    def this(gapi: Gapi, sessionIndex: String, iamToken: Null, authTokenFactory: AuthTokenFactory) = this()
+    def this(sessionIndex: String) = this()
+    def this(sessionIndex: String, iamToken: String) = this()
+    def this(sessionIndex: String, iamToken: String, authTokenFactory: AuthTokenFactory) = this()
+    def this(sessionIndex: String, iamToken: Null, authTokenFactory: AuthTokenFactory) = this()
     
     /* private */ var authTokenFactory: Any = js.native
-    
-    /* private */ var gapi: Any = js.native
     
     /** Requests a token for the current user. */
     /* CompleteClass */
@@ -295,22 +288,19 @@ object distPackagesFirestoreSrcApiCredentialsMod {
   open class FirstPartyToken protected ()
     extends StObject
        with Token {
-    def this(gapi: Null, sessionIndex: String) = this()
-    def this(gapi: Gapi, sessionIndex: String) = this()
-    def this(gapi: Null, sessionIndex: String, iamToken: String) = this()
-    def this(gapi: Gapi, sessionIndex: String, iamToken: String) = this()
-    def this(gapi: Null, sessionIndex: String, iamToken: String, authTokenFactory: AuthTokenFactory) = this()
-    def this(gapi: Null, sessionIndex: String, iamToken: Null, authTokenFactory: AuthTokenFactory) = this()
-    def this(gapi: Gapi, sessionIndex: String, iamToken: String, authTokenFactory: AuthTokenFactory) = this()
-    def this(gapi: Gapi, sessionIndex: String, iamToken: Null, authTokenFactory: AuthTokenFactory) = this()
+    def this(sessionIndex: String) = this()
+    def this(sessionIndex: String, iamToken: String) = this()
+    def this(sessionIndex: String, iamToken: String, authTokenFactory: AuthTokenFactory) = this()
+    def this(sessionIndex: String, iamToken: Null, authTokenFactory: AuthTokenFactory) = this()
     
     /* private */ var _headers: Any = js.native
     
     /* private */ val authTokenFactory: Any = js.native
     
-    /* private */ val gapi: Any = js.native
-    
-    /** Gets an authorization token, using a provided factory function, or falling back to First Party GAPI. */
+    /**
+      * Gets an authorization token, using a provided factory function, or return
+      * null.
+      */
     /* private */ var getAuthToken: Any = js.native
     
     /** Header values to set for this token */
@@ -483,9 +473,9 @@ object distPackagesFirestoreSrcApiCredentialsMod {
   trait CredentialsSettings extends StObject
   object CredentialsSettings {
     
-    inline def FirstPartyCredentialsSettings(client: Any, sessionIndex: String): typings.firebaseFirestore.distPackagesFirestoreSrcApiCredentialsMod.FirstPartyCredentialsSettings = {
-      val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any], sessionIndex = sessionIndex.asInstanceOf[js.Any], authTokenFactory = null, iamToken = null)
-      __obj.updateDynamic("type")("gapi")
+    inline def FirstPartyCredentialsSettings(sessionIndex: String): typings.firebaseFirestore.distPackagesFirestoreSrcApiCredentialsMod.FirstPartyCredentialsSettings = {
+      val __obj = js.Dynamic.literal(sessionIndex = sessionIndex.asInstanceOf[js.Any], authTokenFactory = null, iamToken = null)
+      __obj.updateDynamic("type")("firstParty")
       __obj.asInstanceOf[typings.firebaseFirestore.distPackagesFirestoreSrcApiCredentialsMod.FirstPartyCredentialsSettings]
     }
     
@@ -502,19 +492,17 @@ object distPackagesFirestoreSrcApiCredentialsMod {
     
     var authTokenFactory: AuthTokenFactory | Null
     
-    var client: Any
-    
     var iamToken: String | Null
     
     var sessionIndex: String
     
-    var `type`: gapi
+    var `type`: firstParty_
   }
   object FirstPartyCredentialsSettings {
     
-    inline def apply(client: Any, sessionIndex: String): FirstPartyCredentialsSettings = {
-      val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any], sessionIndex = sessionIndex.asInstanceOf[js.Any], authTokenFactory = null, iamToken = null)
-      __obj.updateDynamic("type")("gapi")
+    inline def apply(sessionIndex: String): FirstPartyCredentialsSettings = {
+      val __obj = js.Dynamic.literal(sessionIndex = sessionIndex.asInstanceOf[js.Any], authTokenFactory = null, iamToken = null)
+      __obj.updateDynamic("type")("firstParty")
       __obj.asInstanceOf[FirstPartyCredentialsSettings]
     }
     
@@ -525,33 +513,13 @@ object distPackagesFirestoreSrcApiCredentialsMod {
       
       inline def setAuthTokenFactoryNull: Self = StObject.set(x, "authTokenFactory", null)
       
-      inline def setClient(value: Any): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
-      
       inline def setIamToken(value: String): Self = StObject.set(x, "iamToken", value.asInstanceOf[js.Any])
       
       inline def setIamTokenNull: Self = StObject.set(x, "iamToken", null)
       
       inline def setSessionIndex(value: String): Self = StObject.set(x, "sessionIndex", value.asInstanceOf[js.Any])
       
-      inline def setType(value: gapi): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait Gapi extends StObject {
-    
-    var auth: GetAuthHeaderValueForFirstParty
-  }
-  object Gapi {
-    
-    inline def apply(auth: GetAuthHeaderValueForFirstParty): Gapi = {
-      val __obj = js.Dynamic.literal(auth = auth.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Gapi]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: Gapi] (val x: Self) extends AnyVal {
-      
-      inline def setAuth(value: GetAuthHeaderValueForFirstParty): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+      inline def setType(value: firstParty_): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   

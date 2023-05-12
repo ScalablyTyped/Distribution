@@ -47,7 +47,7 @@ trait DomainConfig extends StObject {
   var DomainEndpointOptions: js.UndefOr[DomainEndpointOptionsStatus] = js.undefined
   
   /**
-    * Container for EBS options configured for an OpenSearch Service domain.
+    * Container for EBS options configured for the domain.
     */
   var EBSOptions: js.UndefOr[EBSOptionsStatus] = js.undefined
   
@@ -62,7 +62,7 @@ trait DomainConfig extends StObject {
   var EngineVersion: js.UndefOr[VersionStatus] = js.undefined
   
   /**
-    * Key-value pairs to configure slow log publishing.
+    * Key-value pairs to configure log publishing.
     */
   var LogPublishingOptions: js.UndefOr[LogPublishingOptionsStatus] = js.undefined
   
@@ -72,9 +72,19 @@ trait DomainConfig extends StObject {
   var NodeToNodeEncryptionOptions: js.UndefOr[NodeToNodeEncryptionOptionsStatus] = js.undefined
   
   /**
+    * Container for off-peak window options for the domain.
+    */
+  var OffPeakWindowOptions: js.UndefOr[OffPeakWindowOptionsStatus] = js.undefined
+  
+  /**
     * DEPRECATED. Container for parameters required to configure automated snapshots of domain indexes.
     */
   var SnapshotOptions: js.UndefOr[SnapshotOptionsStatus] = js.undefined
+  
+  /**
+    * Software update options for the domain.
+    */
+  var SoftwareUpdateOptions: js.UndefOr[SoftwareUpdateOptionsStatus] = js.undefined
   
   /**
     * The current VPC options for the domain and the status of any updates to their configuration.
@@ -143,9 +153,17 @@ object DomainConfig {
     
     inline def setNodeToNodeEncryptionOptionsUndefined: Self = StObject.set(x, "NodeToNodeEncryptionOptions", js.undefined)
     
+    inline def setOffPeakWindowOptions(value: OffPeakWindowOptionsStatus): Self = StObject.set(x, "OffPeakWindowOptions", value.asInstanceOf[js.Any])
+    
+    inline def setOffPeakWindowOptionsUndefined: Self = StObject.set(x, "OffPeakWindowOptions", js.undefined)
+    
     inline def setSnapshotOptions(value: SnapshotOptionsStatus): Self = StObject.set(x, "SnapshotOptions", value.asInstanceOf[js.Any])
     
     inline def setSnapshotOptionsUndefined: Self = StObject.set(x, "SnapshotOptions", js.undefined)
+    
+    inline def setSoftwareUpdateOptions(value: SoftwareUpdateOptionsStatus): Self = StObject.set(x, "SoftwareUpdateOptions", value.asInstanceOf[js.Any])
+    
+    inline def setSoftwareUpdateOptionsUndefined: Self = StObject.set(x, "SoftwareUpdateOptions", js.undefined)
     
     inline def setVPCOptions(value: VPCDerivedInfoStatus): Self = StObject.set(x, "VPCOptions", value.asInstanceOf[js.Any])
     

@@ -6,25 +6,23 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped new (low : unknown, high : number | undefined, unsigned : boolean | undefined): bson.anon.PinExcludekeyofLongTimest */ @JSImport("bson", "Timestamp")
+- Dropped new (low : unknown, high : number | boolean | undefined, unsigned : boolean | undefined): bson.anon.PinExcludekeyofLongTimest */ @JSImport("bson", "Timestamp")
 @js.native
 open class Timestamp protected () extends StObject {
   /**
-    * @param low - A 64-bit Long representing the Timestamp.
+    * @param int - A 64-bit bigint representing the Timestamp.
+    */
+  def this(int: js.BigInt) = this()
+  /**
+    * @param long - A 64-bit Long representing the Timestamp.
     */
   def this(long: Long) = this()
   /**
     * @param value - A pair of two values indicating timestamp and increment.
     */
   def this(value: I) = this()
-  /**
-    * @param low - the low (signed) 32 bits of the Timestamp.
-    * @param high - the high (signed) 32 bits of the Timestamp.
-    * @deprecated Please use `Timestamp({ t: high, i: low })` or `Timestamp(Long(low, high))` instead.
-    */
-  def this(low: scala.Double, high: scala.Double) = this()
   
-  var _bsontype: typings.bson.bsonStrings.Timestamp = js.native
+  def _bsontype: typings.bson.bsonStrings.Timestamp = js.native
   
   /* Excluded from this release type: toExtendedJSON */
   /* Excluded from this release type: fromExtendedJSON */

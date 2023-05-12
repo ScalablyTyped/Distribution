@@ -24,4 +24,10 @@ object JsonTypes extends StObject {
     extends StObject
        with JsonTypes
   /* "JWT" */ val Jwt: typings.azureMsalCommon.distUtilsConstantsMod.JsonTypes.Jwt & String = js.native
+  
+  @js.native
+  sealed trait Pop
+    extends StObject
+       with JsonTypes
+  /* "pop" */ val Pop: typings.azureMsalCommon.distUtilsConstantsMod.JsonTypes.Pop & String = js.native
 }

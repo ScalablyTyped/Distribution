@@ -1,13 +1,12 @@
 package typings.grpcGrpcJs
 
 import typings.grpcGrpcJs.anon.PartialInterceptingListen
-import typings.grpcGrpcJs.buildSrcCallCredentialsMod.CallCredentials
-import typings.grpcGrpcJs.buildSrcCallStreamMod.InterceptingListener
-import typings.grpcGrpcJs.buildSrcCallStreamMod.Listener
-import typings.grpcGrpcJs.buildSrcCallStreamMod.MessageContext
-import typings.grpcGrpcJs.buildSrcCallStreamMod.MessageListener
-import typings.grpcGrpcJs.buildSrcCallStreamMod.MetadataListener
-import typings.grpcGrpcJs.buildSrcCallStreamMod.StatusListener
+import typings.grpcGrpcJs.buildSrcCallInterfaceMod.InterceptingListener
+import typings.grpcGrpcJs.buildSrcCallInterfaceMod.Listener
+import typings.grpcGrpcJs.buildSrcCallInterfaceMod.MessageContext
+import typings.grpcGrpcJs.buildSrcCallInterfaceMod.MessageListener
+import typings.grpcGrpcJs.buildSrcCallInterfaceMod.MetadataListener
+import typings.grpcGrpcJs.buildSrcCallInterfaceMod.StatusListener
 import typings.grpcGrpcJs.buildSrcChannelMod.Channel
 import typings.grpcGrpcJs.buildSrcClientMod.CallOptions
 import typings.grpcGrpcJs.buildSrcConstantsMod.Status
@@ -199,8 +198,6 @@ object buildSrcClientInterceptorsMod {
     def sendMessage(message: Any): Unit = js.native
     
     def sendMessageWithContext(context: MessageContext, message: Any): Unit = js.native
-    
-    def setCredentials(credentials: CallCredentials): Unit = js.native
     
     def start(metadata: Metadata): Unit = js.native
     def start(metadata: Metadata, listener: PartialInterceptingListen): Unit = js.native

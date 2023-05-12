@@ -10,7 +10,7 @@ open class Octree[T] protected ()
   extends typings.babylonjs.legacyLegacyMod.Octree[T] {
   /**
     * Creates a octree
-    * @see https://doc.babylonjs.com/how_to/optimizing_your_scene_with_octrees
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/scene/optimizeOctrees
     * @param creationFunc function to be used to instantiate the octree
     * @param maxBlockCapacity defines the maximum number of meshes you want on your octree's leaves (default: 64)
     * @param maxDepth defines the maximum depth (sub-levels) for your octree. Default value is 2, which means 8 8 8 = 512 blocks :) (This parameter takes precedence over capacity.)

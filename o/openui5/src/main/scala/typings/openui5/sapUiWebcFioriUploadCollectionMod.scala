@@ -2,7 +2,7 @@ package typings.openui5
 
 import typings.openui5.anon.DataTransfer
 import typings.openui5.anon.SelectedItems
-import typings.openui5.anon.`11`
+import typings.openui5.anon.`13`
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -447,6 +447,8 @@ object sapUiWebcFioriUploadCollectionMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:drop drop} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -458,6 +460,8 @@ object sapUiWebcFioriUploadCollectionMod {
     mParameters: DataTransfer): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:itemDelete itemDelete} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -466,9 +470,11 @@ object sapUiWebcFioriUploadCollectionMod {
     def fireItemDelete(/**
       * Parameters to pass along with the event
       */
-    mParameters: `11`): this.type = js.native
+    mParameters: `13`): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:selectionChange selectionChange} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining

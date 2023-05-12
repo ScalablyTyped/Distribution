@@ -21,6 +21,7 @@ import typings.nivoHeatmap.nivoHeatmapStrings.column
 import typings.nivoHeatmap.nivoHeatmapStrings.rect
 import typings.nivoHeatmap.nivoHeatmapStrings.row
 import typings.nivoHeatmap.nivoHeatmapStrings.rowColumn
+import typings.reactSpringCore.mod.SpringConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -285,10 +286,8 @@ object distTypesDefaultsMod {
     
     @JSImport("@nivo/heatmap/dist/types/defaults", "commonDefaultProps.motionConfig")
     @js.native
-    def motionConfig: String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringConfig */ Any) = js.native
-    inline def motionConfig_=(
-      x: String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringConfig */ Any)
-    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("motionConfig")(x.asInstanceOf[js.Any])
+    def motionConfig: String | SpringConfig = js.native
+    inline def motionConfig_=(x: String | SpringConfig): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("motionConfig")(x.asInstanceOf[js.Any])
     
     @JSImport("@nivo/heatmap/dist/types/defaults", "commonDefaultProps.opacity")
     @js.native

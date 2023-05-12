@@ -22,6 +22,7 @@ import typings.react.mod.PropsWithChildren
 import typings.react.mod.RefObject
 import typings.react.mod.SVGProps
 import typings.react.mod.global.JSX.Element
+import typings.reactSpringWeb.mod.Interpolation
 import typings.std.HTMLDivElement
 import typings.std.SVGLinearGradientElement
 import org.scalablytyped.runtime.StObject
@@ -66,10 +67,6 @@ inline def defaultAnimate: /* true */ Boolean = ^.asInstanceOf[js.Dynamic].selec
 
 inline def defaultMargin: DefaultMargin_ = ^.asInstanceOf[js.Dynamic].selectDynamic("defaultMargin").asInstanceOf[DefaultMargin_]
 
-inline def defaultMotionDamping: /* 15 */ Double = ^.asInstanceOf[js.Dynamic].selectDynamic("defaultMotionDamping").asInstanceOf[/* 15 */ Double]
-
-inline def defaultMotionStiffness: /* 90 */ Double = ^.asInstanceOf[js.Dynamic].selectDynamic("defaultMotionStiffness").asInstanceOf[/* 90 */ Double]
-
 inline def degreesToRadians(degrees: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("degreesToRadians")(degrees.asInstanceOf[js.Any]).asInstanceOf[Double]
 
 inline def getAngle(x1: Double, y1: Double, x2: Double, y2: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getAngle")(x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any])).asInstanceOf[Double]
@@ -105,7 +102,7 @@ inline def positionFromAngle(angle: Double, distance: Double): X = (^.asInstance
 
 inline def radiansToDegrees(radians: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("radiansToDegrees")(radians.asInstanceOf[js.Any]).asInstanceOf[Double]
 
-inline def useAnimatedPath(path: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("useAnimatedPath")(path.asInstanceOf[js.Any]).asInstanceOf[Any]
+inline def useAnimatedPath(path: String): Interpolation[String, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("useAnimatedPath")(path.asInstanceOf[js.Any]).asInstanceOf[Interpolation[String, Any]]
 
 inline def useCurveInterpolation(interpolation: CurveFactoryId): CurveFactory = ^.asInstanceOf[js.Dynamic].applyDynamic("useCurveInterpolation")(interpolation.asInstanceOf[js.Any]).asInstanceOf[CurveFactory]
 

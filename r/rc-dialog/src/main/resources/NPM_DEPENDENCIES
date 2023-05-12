@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "rc-dialog" : "9.0.2"
+      "rc-dialog" : "9.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "rc-dialog" : "9.0.2"
+      "rc-dialog" : "9.1.0"
     }
   ],
   "compile-devDependencies" : [

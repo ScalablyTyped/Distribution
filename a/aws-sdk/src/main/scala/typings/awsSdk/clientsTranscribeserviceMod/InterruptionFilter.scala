@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait InterruptionFilter extends StObject {
   
   /**
-    * Allows you to specify a time range (in milliseconds) in your audio, during which you want to search for an interruption. See for more detail.
+    * Makes it possible to specify a time range (in milliseconds) in your audio, during which you want to search for an interruption. See for more detail.
     */
   var AbsoluteTimeRange: js.UndefOr[typings.awsSdk.clientsTranscribeserviceMod.AbsoluteTimeRange] = js.undefined
   
@@ -17,17 +17,17 @@ trait InterruptionFilter extends StObject {
   var Negate: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Specify the interrupter you want to flag. Omitting this parameter is equivalent to specifying both participants.
+    * Specify the interrupter that you want to flag. Omitting this parameter is equivalent to specifying both participants.
     */
   var ParticipantRole: js.UndefOr[typings.awsSdk.clientsTranscribeserviceMod.ParticipantRole] = js.undefined
   
   /**
-    * Allows you to specify a time range (in percentage) in your media file, during which you want to search for an interruption. See for more detail.
+    * Makes it possible to specify a time range (in percentage) in your media file, during which you want to search for an interruption. See for more detail.
     */
   var RelativeTimeRange: js.UndefOr[typings.awsSdk.clientsTranscribeserviceMod.RelativeTimeRange] = js.undefined
   
   /**
-    * Specify the duration of the interruptions in milliseconds. For example, you can flag speech that contains more than 10000 milliseconds of interruptions.
+    * Specify the duration of the interruptions in milliseconds. For example, you can flag speech that contains more than 10,000 milliseconds of interruptions.
     */
   var Threshold: js.UndefOr[TimestampMilliseconds] = js.undefined
 }

@@ -42,9 +42,13 @@ trait Observation
   
   /**
     * Only used if not implicit in code found in Observation.code.  In many systems, this may be represented as a related observation instead of an inline component.
-    * If the use case requires BodySite to be handled as a separate resource (e.g. to identify and track separately) then use the standard extension[ bodySite](extension-bodysite.html).
     */
   var bodySite: js.UndefOr[CodeableConcept] = js.undefined
+  
+  /**
+    * Only used if not implicit in code found in Observation.code or bodySite is used. In many systems, this may be represented as a related observation instead of an inline component.
+    */
+  var bodyStructure: js.UndefOr[Reference] = js.undefined
   
   /**
     * In addition to the required category valueset, this element allows various categorization schemes based on the owner’s definition of the category and effectively multiple categories can be used at once.  The level of granularity is defined by the category concepts in the value set.
@@ -103,7 +107,7 @@ trait Observation
   var encounter: js.UndefOr[Reference] = js.undefined
   
   /**
-    * Typically, an observation is made about the subject - a patient, or group of patients, location, or device - and the distinction between the subject and what is directly measured for an observation is specified in the observation code itself ( e.g., "Blood Glucose") and does not need to be represented separately using this element.  Use `specimen` if a reference to a specimen is required.  If a code is required instead of a resource use either  `bodysite` for bodysites or the standard extension [focusCode](extension-observation-focuscode.html).
+    * Typically, an observation is made about the subject - a patient, or group of patients, location, or device - and the distinction between the subject and what is directly measured for an observation is specified in the observation code itself ( e.g., "Blood Glucose") and does not need to be represented separately using this element.  Use `specimen` if a reference to a specimen is required.  If a code is required instead of a resource use either  `bodysite` for bodysites or the standard extension [http://hl7.org/fhir/StructureDefinition/observation-focusCode](http://hl7.org/fhir/extensions/StructureDefinition-observation-focusCode.html).
     */
   var focus: js.UndefOr[js.Array[Reference]] = js.undefined
   
@@ -133,7 +137,7 @@ trait Observation
   var interpretation: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
   /**
-    * For Observations that don’t require review and verification, it may be the same as the [`lastUpdated` ](resource-definitions.html#Meta.lastUpdated) time of the resource itself.  For Observations that do require review and verification for certain updates, it might not be the same as the `lastUpdated` time of the resource itself due to a non-clinically significant update that doesn’t require the new version to be reviewed and verified again.
+    * For Observations that don't require review and verification, it may be the same as the [`lastUpdated` ](resource-definitions.html#Meta.lastUpdated) time of the resource itself.  For Observations that do require review and verification for certain updates, it might not be the same as the `lastUpdated` time of the resource itself due to a non-clinically significant update that doesn't require the new version to be reviewed and verified again.
     */
   var issued: js.UndefOr[String] = js.undefined
   
@@ -172,7 +176,7 @@ trait Observation
   var specimen: js.UndefOr[Reference] = js.undefined
   
   /**
-    * The status of the result value.
+    * This element is labeled as a modifier because the status contains codes that mark the resource as not currently valid.
     */
   var status: registered | preliminary | `final` | amended | corrected | cancelled | `entered-in-error` | unknown
   
@@ -182,6 +186,11 @@ trait Observation
   var subject: js.UndefOr[Reference] = js.undefined
   
   /**
+    * Identifies the observation(s) that triggered the performance of this observation.
+    */
+  var triggeredBy: js.UndefOr[js.Array[ObservationTriggeredBy]] = js.undefined
+  
+  /**
     * - An observation may have:
     *   1.  a single value here
     *   1.  both a value and a set of related or component values
@@ -189,6 +198,7 @@ trait Observation
     * -  If a value is present, the datatype for this element should be determined by the `code`.
     * -  *CodeableConcept* with just a text would be used instead of a string if the field was usually coded, or if the type associated with the `code` defines a coded value.
     * -  *Attachment* is used if the observation result value is a binary file such as an image.  If the observation result value is derived from the binary file (for example 'X' detected and here is the the proof in this image), the binary file may be directly represented using *DocumentReference* and referenced by `derivedFrom`.
+    * - The usage of valueReference is restricted to the MolecularSequence resource when used as a definitional resource, not as a patient-specific finding. .
     * - For additional guidance, see the [Notes section](observation.html#notes) below.
     */
   var valueAttachment: js.UndefOr[Attachment] = js.undefined
@@ -201,6 +211,7 @@ trait Observation
     * -  If a value is present, the datatype for this element should be determined by the `code`.
     * -  *CodeableConcept* with just a text would be used instead of a string if the field was usually coded, or if the type associated with the `code` defines a coded value.
     * -  *Attachment* is used if the observation result value is a binary file such as an image.  If the observation result value is derived from the binary file (for example 'X' detected and here is the the proof in this image), the binary file may be directly represented using *DocumentReference* and referenced by `derivedFrom`.
+    * - The usage of valueReference is restricted to the MolecularSequence resource when used as a definitional resource, not as a patient-specific finding. .
     * - For additional guidance, see the [Notes section](observation.html#notes) below.
     */
   var valueBoolean: js.UndefOr[Boolean] = js.undefined
@@ -213,6 +224,7 @@ trait Observation
     * -  If a value is present, the datatype for this element should be determined by the `code`.
     * -  *CodeableConcept* with just a text would be used instead of a string if the field was usually coded, or if the type associated with the `code` defines a coded value.
     * -  *Attachment* is used if the observation result value is a binary file such as an image.  If the observation result value is derived from the binary file (for example 'X' detected and here is the the proof in this image), the binary file may be directly represented using *DocumentReference* and referenced by `derivedFrom`.
+    * - The usage of valueReference is restricted to the MolecularSequence resource when used as a definitional resource, not as a patient-specific finding. .
     * - For additional guidance, see the [Notes section](observation.html#notes) below.
     */
   var valueCodeableConcept: js.UndefOr[CodeableConcept] = js.undefined
@@ -225,6 +237,7 @@ trait Observation
     * -  If a value is present, the datatype for this element should be determined by the `code`.
     * -  *CodeableConcept* with just a text would be used instead of a string if the field was usually coded, or if the type associated with the `code` defines a coded value.
     * -  *Attachment* is used if the observation result value is a binary file such as an image.  If the observation result value is derived from the binary file (for example 'X' detected and here is the the proof in this image), the binary file may be directly represented using *DocumentReference* and referenced by `derivedFrom`.
+    * - The usage of valueReference is restricted to the MolecularSequence resource when used as a definitional resource, not as a patient-specific finding. .
     * - For additional guidance, see the [Notes section](observation.html#notes) below.
     */
   var valueDateTime: js.UndefOr[String] = js.undefined
@@ -237,6 +250,7 @@ trait Observation
     * -  If a value is present, the datatype for this element should be determined by the `code`.
     * -  *CodeableConcept* with just a text would be used instead of a string if the field was usually coded, or if the type associated with the `code` defines a coded value.
     * -  *Attachment* is used if the observation result value is a binary file such as an image.  If the observation result value is derived from the binary file (for example 'X' detected and here is the the proof in this image), the binary file may be directly represented using *DocumentReference* and referenced by `derivedFrom`.
+    * - The usage of valueReference is restricted to the MolecularSequence resource when used as a definitional resource, not as a patient-specific finding. .
     * - For additional guidance, see the [Notes section](observation.html#notes) below.
     */
   var valueInteger: js.UndefOr[Double] = js.undefined
@@ -249,6 +263,7 @@ trait Observation
     * -  If a value is present, the datatype for this element should be determined by the `code`.
     * -  *CodeableConcept* with just a text would be used instead of a string if the field was usually coded, or if the type associated with the `code` defines a coded value.
     * -  *Attachment* is used if the observation result value is a binary file such as an image.  If the observation result value is derived from the binary file (for example 'X' detected and here is the the proof in this image), the binary file may be directly represented using *DocumentReference* and referenced by `derivedFrom`.
+    * - The usage of valueReference is restricted to the MolecularSequence resource when used as a definitional resource, not as a patient-specific finding. .
     * - For additional guidance, see the [Notes section](observation.html#notes) below.
     */
   var valuePeriod: js.UndefOr[Period] = js.undefined
@@ -261,6 +276,7 @@ trait Observation
     * -  If a value is present, the datatype for this element should be determined by the `code`.
     * -  *CodeableConcept* with just a text would be used instead of a string if the field was usually coded, or if the type associated with the `code` defines a coded value.
     * -  *Attachment* is used if the observation result value is a binary file such as an image.  If the observation result value is derived from the binary file (for example 'X' detected and here is the the proof in this image), the binary file may be directly represented using *DocumentReference* and referenced by `derivedFrom`.
+    * - The usage of valueReference is restricted to the MolecularSequence resource when used as a definitional resource, not as a patient-specific finding. .
     * - For additional guidance, see the [Notes section](observation.html#notes) below.
     */
   var valueQuantity: js.UndefOr[Quantity] = js.undefined
@@ -273,6 +289,7 @@ trait Observation
     * -  If a value is present, the datatype for this element should be determined by the `code`.
     * -  *CodeableConcept* with just a text would be used instead of a string if the field was usually coded, or if the type associated with the `code` defines a coded value.
     * -  *Attachment* is used if the observation result value is a binary file such as an image.  If the observation result value is derived from the binary file (for example 'X' detected and here is the the proof in this image), the binary file may be directly represented using *DocumentReference* and referenced by `derivedFrom`.
+    * - The usage of valueReference is restricted to the MolecularSequence resource when used as a definitional resource, not as a patient-specific finding. .
     * - For additional guidance, see the [Notes section](observation.html#notes) below.
     */
   var valueRange: js.UndefOr[Range] = js.undefined
@@ -285,6 +302,7 @@ trait Observation
     * -  If a value is present, the datatype for this element should be determined by the `code`.
     * -  *CodeableConcept* with just a text would be used instead of a string if the field was usually coded, or if the type associated with the `code` defines a coded value.
     * -  *Attachment* is used if the observation result value is a binary file such as an image.  If the observation result value is derived from the binary file (for example 'X' detected and here is the the proof in this image), the binary file may be directly represented using *DocumentReference* and referenced by `derivedFrom`.
+    * - The usage of valueReference is restricted to the MolecularSequence resource when used as a definitional resource, not as a patient-specific finding. .
     * - For additional guidance, see the [Notes section](observation.html#notes) below.
     */
   var valueRatio: js.UndefOr[Ratio] = js.undefined
@@ -297,6 +315,20 @@ trait Observation
     * -  If a value is present, the datatype for this element should be determined by the `code`.
     * -  *CodeableConcept* with just a text would be used instead of a string if the field was usually coded, or if the type associated with the `code` defines a coded value.
     * -  *Attachment* is used if the observation result value is a binary file such as an image.  If the observation result value is derived from the binary file (for example 'X' detected and here is the the proof in this image), the binary file may be directly represented using *DocumentReference* and referenced by `derivedFrom`.
+    * - The usage of valueReference is restricted to the MolecularSequence resource when used as a definitional resource, not as a patient-specific finding. .
+    * - For additional guidance, see the [Notes section](observation.html#notes) below.
+    */
+  var valueReference: js.UndefOr[Reference] = js.undefined
+  
+  /**
+    * - An observation may have:
+    *   1.  a single value here
+    *   1.  both a value and a set of related or component values
+    *   1.  only a set of related or component values.
+    * -  If a value is present, the datatype for this element should be determined by the `code`.
+    * -  *CodeableConcept* with just a text would be used instead of a string if the field was usually coded, or if the type associated with the `code` defines a coded value.
+    * -  *Attachment* is used if the observation result value is a binary file such as an image.  If the observation result value is derived from the binary file (for example 'X' detected and here is the the proof in this image), the binary file may be directly represented using *DocumentReference* and referenced by `derivedFrom`.
+    * - The usage of valueReference is restricted to the MolecularSequence resource when used as a definitional resource, not as a patient-specific finding. .
     * - For additional guidance, see the [Notes section](observation.html#notes) below.
     */
   var valueSampledData: js.UndefOr[SampledData] = js.undefined
@@ -309,6 +341,7 @@ trait Observation
     * -  If a value is present, the datatype for this element should be determined by the `code`.
     * -  *CodeableConcept* with just a text would be used instead of a string if the field was usually coded, or if the type associated with the `code` defines a coded value.
     * -  *Attachment* is used if the observation result value is a binary file such as an image.  If the observation result value is derived from the binary file (for example 'X' detected and here is the the proof in this image), the binary file may be directly represented using *DocumentReference* and referenced by `derivedFrom`.
+    * - The usage of valueReference is restricted to the MolecularSequence resource when used as a definitional resource, not as a patient-specific finding. .
     * - For additional guidance, see the [Notes section](observation.html#notes) below.
     */
   var valueString: js.UndefOr[String] = js.undefined
@@ -321,6 +354,7 @@ trait Observation
     * -  If a value is present, the datatype for this element should be determined by the `code`.
     * -  *CodeableConcept* with just a text would be used instead of a string if the field was usually coded, or if the type associated with the `code` defines a coded value.
     * -  *Attachment* is used if the observation result value is a binary file such as an image.  If the observation result value is derived from the binary file (for example 'X' detected and here is the the proof in this image), the binary file may be directly represented using *DocumentReference* and referenced by `derivedFrom`.
+    * - The usage of valueReference is restricted to the MolecularSequence resource when used as a definitional resource, not as a patient-specific finding. .
     * - For additional guidance, see the [Notes section](observation.html#notes) below.
     */
   var valueTime: js.UndefOr[String] = js.undefined
@@ -347,6 +381,10 @@ object Observation {
     inline def setBodySite(value: CodeableConcept): Self = StObject.set(x, "bodySite", value.asInstanceOf[js.Any])
     
     inline def setBodySiteUndefined: Self = StObject.set(x, "bodySite", js.undefined)
+    
+    inline def setBodyStructure(value: Reference): Self = StObject.set(x, "bodyStructure", value.asInstanceOf[js.Any])
+    
+    inline def setBodyStructureUndefined: Self = StObject.set(x, "bodyStructure", js.undefined)
     
     inline def setCategory(value: js.Array[CodeableConcept]): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
@@ -474,6 +512,12 @@ object Observation {
     
     inline def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
     
+    inline def setTriggeredBy(value: js.Array[ObservationTriggeredBy]): Self = StObject.set(x, "triggeredBy", value.asInstanceOf[js.Any])
+    
+    inline def setTriggeredByUndefined: Self = StObject.set(x, "triggeredBy", js.undefined)
+    
+    inline def setTriggeredByVarargs(value: ObservationTriggeredBy*): Self = StObject.set(x, "triggeredBy", js.Array(value*))
+    
     inline def setValueAttachment(value: Attachment): Self = StObject.set(x, "valueAttachment", value.asInstanceOf[js.Any])
     
     inline def setValueAttachmentUndefined: Self = StObject.set(x, "valueAttachment", js.undefined)
@@ -509,6 +553,10 @@ object Observation {
     inline def setValueRatio(value: Ratio): Self = StObject.set(x, "valueRatio", value.asInstanceOf[js.Any])
     
     inline def setValueRatioUndefined: Self = StObject.set(x, "valueRatio", js.undefined)
+    
+    inline def setValueReference(value: Reference): Self = StObject.set(x, "valueReference", value.asInstanceOf[js.Any])
+    
+    inline def setValueReferenceUndefined: Self = StObject.set(x, "valueReference", js.undefined)
     
     inline def setValueSampledData(value: SampledData): Self = StObject.set(x, "valueSampledData", value.asInstanceOf[js.Any])
     

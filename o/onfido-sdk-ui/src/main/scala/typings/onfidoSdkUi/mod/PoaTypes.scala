@@ -10,9 +10,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.onfidoSdkUi.onfidoSdkUiStrings.council_tax
   - typings.onfidoSdkUi.onfidoSdkUiStrings.benefit_letters
   - typings.onfidoSdkUi.onfidoSdkUiStrings.government_letter
+  - typings.onfidoSdkUi.onfidoSdkUiStrings.address_certificate
 */
 trait PoaTypes extends StObject
 object PoaTypes {
+  
+  inline def address_certificate: typings.onfidoSdkUi.onfidoSdkUiStrings.address_certificate = "address_certificate".asInstanceOf[typings.onfidoSdkUi.onfidoSdkUiStrings.address_certificate]
   
   inline def bank_building_society_statement: typings.onfidoSdkUi.onfidoSdkUiStrings.bank_building_society_statement = "bank_building_society_statement".asInstanceOf[typings.onfidoSdkUi.onfidoSdkUiStrings.bank_building_society_statement]
   

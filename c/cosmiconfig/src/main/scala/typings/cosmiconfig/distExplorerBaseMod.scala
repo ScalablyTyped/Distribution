@@ -35,7 +35,7 @@ object distExplorerBaseMod {
     
     /* private */ var loadPackageProp: Any = js.native
     
-    /* protected */ def loadedContentToCosmiconfigResult(filepath: String, loadedContent: LoadedFileContent): CosmiconfigResult = js.native
+    /* protected */ def loadedContentToCosmiconfigResult(filepath: String, loadedContent: LoadedFileContent, forceProp: Boolean): CosmiconfigResult = js.native
     
     /* protected */ def nextDirectoryToSearch(currentDir: String, currentResult: CosmiconfigResult): String | Null = js.native
     

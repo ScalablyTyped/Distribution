@@ -62,7 +62,7 @@ object libCommonProtocolDotshowDocumentMod {
     
     /**
       * Indicates to show the resource in an external program.
-      * To show for example `https://code.visualstudio.com/`
+      * To show, for example, `https://code.visualstudio.com/`
       * in the default WEB browser set `external` to `true`.
       */
     var external: js.UndefOr[Boolean] = js.undefined
@@ -84,7 +84,7 @@ object libCommonProtocolDotshowDocumentMod {
     var takeFocus: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * The document uri to show.
+      * The uri to show.
       */
     var uri: URI
   }

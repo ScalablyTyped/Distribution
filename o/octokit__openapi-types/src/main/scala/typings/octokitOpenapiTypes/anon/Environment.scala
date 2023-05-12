@@ -6,26 +6,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Environment extends StObject {
   
-  /** The name of the environment that was deployed to (e.g., `staging` or `production`). */
+  /** @description The name of the environment that was deployed to (e.g., `staging` or `production`). */
   var environment: js.UndefOr[String | Null] = js.undefined
   
-  /** Page number of the results to fetch. */
   var page: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['page'] */ js.Any
   ] = js.undefined
   
-  /** The number of results per page (max 100). */
   var per_page: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['per-page'] */ js.Any
   ] = js.undefined
   
-  /** The name of the ref. This can be a branch, tag, or SHA. */
+  /** @description The name of the ref. This can be a branch, tag, or SHA. */
   var ref: js.UndefOr[String] = js.undefined
   
-  /** The SHA recorded at creation time. */
+  /** @description The SHA recorded at creation time. */
   var sha: js.UndefOr[String] = js.undefined
   
-  /** The name of the task for the deployment (e.g., `deploy` or `deploy:migrations`). */
+  /** @description The name of the task for the deployment (e.g., `deploy` or `deploy:migrations`). */
   var task: js.UndefOr[String] = js.undefined
 }
 object Environment {

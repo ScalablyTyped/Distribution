@@ -1,27 +1,26 @@
 package typings.octokitOpenapiTypes.anon
 
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.creation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `423` extends StObject {
   
-  @JSName("application/json")
-  var applicationSlashjson: js.Array[CommittedatUrl]
+  /** @enum {string} */
+  var `type`: creation
 }
 object `423` {
   
-  inline def apply(applicationSlashjson: js.Array[CommittedatUrl]): `423` = {
+  inline def apply(): `423` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("application/json")(applicationSlashjson.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("creation")
     __obj.asInstanceOf[`423`]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: `423`] (val x: Self) extends AnyVal {
     
-    inline def setApplicationSlashjson(value: js.Array[CommittedatUrl]): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
-    
-    inline def setApplicationSlashjsonVarargs(value: CommittedatUrl*): Self = StObject.set(x, "application/json", js.Array(value*))
+    inline def setType(value: creation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

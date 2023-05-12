@@ -1,0 +1,28 @@
+package typings.awsSdk2Types.clientsSsmMod
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait CreateDocumentResult extends StObject {
+  
+  /**
+    * Information about the SSM document.
+    */
+  var DocumentDescription: js.UndefOr[typings.awsSdk2Types.clientsSsmMod.DocumentDescription] = js.undefined
+}
+object CreateDocumentResult {
+  
+  inline def apply(): CreateDocumentResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[CreateDocumentResult]
+  }
+  
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateDocumentResult] (val x: Self) extends AnyVal {
+    
+    inline def setDocumentDescription(value: DocumentDescription): Self = StObject.set(x, "DocumentDescription", value.asInstanceOf[js.Any])
+    
+    inline def setDocumentDescriptionUndefined: Self = StObject.set(x, "DocumentDescription", js.undefined)
+  }
+}

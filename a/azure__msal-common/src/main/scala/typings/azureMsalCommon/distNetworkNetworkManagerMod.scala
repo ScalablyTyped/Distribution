@@ -54,4 +54,66 @@ object distNetworkNetworkManagerMod {
       inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
+  
+  trait UrlToHttpRequestOptions extends StObject {
+    
+    var auth: js.UndefOr[String] = js.undefined
+    
+    var hash: String
+    
+    var hostname: String
+    
+    var href: String
+    
+    var path: String
+    
+    var pathname: String
+    
+    var port: js.UndefOr[Double] = js.undefined
+    
+    var protocol: String
+    
+    var search: String
+  }
+  object UrlToHttpRequestOptions {
+    
+    inline def apply(
+      hash: String,
+      hostname: String,
+      href: String,
+      path: String,
+      pathname: String,
+      protocol: String,
+      search: String
+    ): UrlToHttpRequestOptions = {
+      val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], hostname = hostname.asInstanceOf[js.Any], href = href.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], pathname = pathname.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], search = search.asInstanceOf[js.Any])
+      __obj.asInstanceOf[UrlToHttpRequestOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UrlToHttpRequestOptions] (val x: Self) extends AnyVal {
+      
+      inline def setAuth(value: String): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+      
+      inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+      
+      inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+      
+      inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
+      
+      inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+      
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      
+      inline def setPathname(value: String): Self = StObject.set(x, "pathname", value.asInstanceOf[js.Any])
+      
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      
+      inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+      
+      inline def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+    }
+  }
 }

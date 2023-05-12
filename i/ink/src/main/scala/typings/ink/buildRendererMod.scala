@@ -11,7 +11,7 @@ object buildRendererMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(node: DOMElement, terminalWidth: Double): Result = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any], terminalWidth.asInstanceOf[js.Any])).asInstanceOf[Result]
+  inline def default(node: DOMElement): Result = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any]).asInstanceOf[Result]
   
   trait Result extends StObject {
     

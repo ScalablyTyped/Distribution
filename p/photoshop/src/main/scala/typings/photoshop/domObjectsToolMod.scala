@@ -11,15 +11,19 @@ object domObjectsToolMod {
   /** @ignore */
   open class Tool () extends StObject {
     
-    /**
-      * Name of the newly created layer
-      */
-    var id: String = js.native
+    /* private */ var _id: Any = js.native
     
     /**
-      * The class name of the referenced object
-      * @default "Tool"
+      * Name of the tool.
+      * @minVersion 23.0
       */
-    val typename: String = js.native
+    def id: String = js.native
+    def id_=(name: String): Unit = js.native
+    
+    /**
+      * The class name of the referenced object: *"Tool"*.
+      * @minVersion 23.0
+      */
+    def typename: typings.photoshop.photoshopStrings.Tool = js.native
   }
 }

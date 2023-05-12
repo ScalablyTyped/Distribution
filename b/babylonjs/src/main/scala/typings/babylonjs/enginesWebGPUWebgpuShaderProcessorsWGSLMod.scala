@@ -15,10 +15,6 @@ object enginesWebGPUWebgpuShaderProcessorsWGSLMod {
   @js.native
   open class WebGPUShaderProcessorWGSL () extends WebGPUShaderProcessor {
     
-    /* protected */ var _attributeNamesWGSL: js.Array[String] = js.native
-    
-    /* protected */ var _attributesDeclWGSL: js.Array[String] = js.native
-    
     /* protected */ var _attributesWGSL: js.Array[String] = js.native
     
     /* private */ var _processCustomBuffers: Any = js.native
@@ -30,8 +26,6 @@ object enginesWebGPUWebgpuShaderProcessorsWGSLMod {
     /* protected */ var _stridedUniformArrays: js.Array[String] = js.native
     
     /* protected */ var _varyingNamesWGSL: js.Array[String] = js.native
-    
-    /* protected */ var _varyingsDeclWGSL: js.Array[String] = js.native
     
     /* protected */ var _varyingsWGSL: js.Array[String] = js.native
     

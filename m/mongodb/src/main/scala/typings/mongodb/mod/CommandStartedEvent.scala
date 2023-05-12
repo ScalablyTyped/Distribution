@@ -21,6 +21,7 @@ open class CommandStartedEvent () extends StObject {
   
   var databaseName: String = js.native
   
+  /* Excluded from this release type: name */
   /* Excluded from this release type: __constructor */
   def hasServiceId: Boolean = js.native
   

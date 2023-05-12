@@ -7,10 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object domHistoryStateMod {
   
-  @JSImport("photoshop/dom/HistoryState", JSImport.Namespace)
-  @js.native
-  val ^ : js.Any = js.native
-  
   @JSImport("photoshop/dom/HistoryState", "HistoryState")
   @js.native
   open class HistoryState protected () extends StObject {
@@ -21,37 +17,39 @@ object domHistoryStateMod {
     
     /**
       * The ID of the document of this history state.
+      * @minVersion 22.5
       */
     def docId: Double = js.native
     
     /**
       * For use with batchPlay operations. This history ID, along with its document ID
       * can be used to represent this history state for the lifetime of this document.
+      * @minVersion 22.5
       */
     def id: Double = js.native
     
     /**
-      * The name of this history state as it appears on history panel
+      * The name of this history state as it appears on history panel.
+      * @minVersion 22.5
       */
     def name: String = js.native
     
     /**
-      * Owner document of this history state
+      * Owner document of this history state.
+      * @minVersion 22.5
       */
     def parent: Document = js.native
     
     /**
-      * Whether this history state is a snapshot or an automatically generated history state
+      * Whether this history state is a snapshot or an automatically generated history state.
+      * @minVersion 22.5
       */
     def snapshot: Boolean = js.native
     
     /**
-      * The class name of the referenced HistoryState object
+      * The class name of the referenced object: *"HistoryState"*.
+      * @minVersion 23.0
       */
-    def typename: String = js.native
+    def typename: typings.photoshop.photoshopStrings.HistoryState = js.native
   }
-  
-  inline def PSHistoryState(id: Double, docId: Double): HistoryState = (^.asInstanceOf[js.Dynamic].applyDynamic("PSHistoryState")(id.asInstanceOf[js.Any], docId.asInstanceOf[js.Any])).asInstanceOf[HistoryState]
-  
-  inline def validateHistoryState(h: HistoryState): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("validateHistoryState")(h.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

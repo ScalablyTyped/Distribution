@@ -25,6 +25,7 @@ import typings.reactRnd.reactRndStrings.both
 import typings.reactRnd.reactRndStrings.none
 import typings.reactRnd.reactRndStrings.x
 import typings.reactRnd.reactRndStrings.y
+import typings.std.Element
 import typings.std.HTMLElement
 import typings.std.MouseEvent
 import typings.std.SVGElement
@@ -468,7 +469,7 @@ object mod {
     
     var allowAnyClick: js.UndefOr[Boolean] = js.undefined
     
-    var bounds: js.UndefOr[String] = js.undefined
+    var bounds: js.UndefOr[String | Element] = js.undefined
     
     var cancel: js.UndefOr[String] = js.undefined
     
@@ -552,7 +553,7 @@ object mod {
       
       inline def setAllowAnyClickUndefined: Self = StObject.set(x, "allowAnyClick", js.undefined)
       
-      inline def setBounds(value: String): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+      inline def setBounds(value: String | Element): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
       
       inline def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
       

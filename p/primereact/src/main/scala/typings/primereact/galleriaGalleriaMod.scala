@@ -12,6 +12,7 @@ import typings.primereact.primereactStrings.all
 import typings.primereact.primereactStrings.ascending
 import typings.primereact.primereactStrings.assertive
 import typings.primereact.primereactStrings.both
+import typings.primereact.primereactStrings.bottom
 import typings.primereact.primereactStrings.copy
 import typings.primereact.primereactStrings.date
 import typings.primereact.primereactStrings.decimal
@@ -23,6 +24,7 @@ import typings.primereact.primereactStrings.grammar
 import typings.primereact.primereactStrings.grid
 import typings.primereact.primereactStrings.horizontal
 import typings.primereact.primereactStrings.inherit
+import typings.primereact.primereactStrings.left
 import typings.primereact.primereactStrings.link
 import typings.primereact.primereactStrings.list
 import typings.primereact.primereactStrings.listbox
@@ -40,16 +42,20 @@ import typings.primereact.primereactStrings.page
 import typings.primereact.primereactStrings.polite
 import typings.primereact.primereactStrings.popup
 import typings.primereact.primereactStrings.removals
+import typings.primereact.primereactStrings.right
 import typings.primereact.primereactStrings.search
 import typings.primereact.primereactStrings.spelling
 import typings.primereact.primereactStrings.step
 import typings.primereact.primereactStrings.tel
 import typings.primereact.primereactStrings.text
 import typings.primereact.primereactStrings.time
+import typings.primereact.primereactStrings.top
 import typings.primereact.primereactStrings.tree
 import typings.primereact.primereactStrings.url
 import typings.primereact.primereactStrings.vertical
 import typings.primereact.primereactStrings.yes
+import typings.primereact.utilsUtilsMod.IconOptions
+import typings.primereact.utilsUtilsMod.IconType
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
@@ -102,57 +108,66 @@ object galleriaGalleriaMod {
     def this(props: GalleriaProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: GalleriaProps, context: Any) = this()
     
+    /**
+      * Used to get container element.
+      * @return {HTMLDivElement} Container element
+      */
     def getElement(): HTMLDivElement = js.native
     
+    /**
+      * Used to hide the overlay.
+      */
     def hide(): Unit = js.native
     
+    /**
+      * Whether auto-play feature is currently active.
+      */
     def isAutoPlayActive(): Boolean = js.native
     
+    /**
+      * Used to show the overlay.
+      */
     def show(): Unit = js.native
     
+    /**
+      * Used to start the slideshow.
+      */
     def startSlideShow(): Unit = js.native
     
+    /**
+      * Used to stop the slideshow.
+      */
     def stopSlideShow(): Unit = js.native
   }
   
-  trait GalleriaItemChangeParams extends StObject {
+  /**
+    * Custom complete method event.
+    * @see {@link GalleriaProps.onItemChange}
+    * @event
+    */
+  trait GalleriaItemChangeEvent extends StObject {
     
+    /**
+      * index of the new item.
+      */
     var index: Double
   }
-  object GalleriaItemChangeParams {
+  object GalleriaItemChangeEvent {
     
-    inline def apply(index: Double): GalleriaItemChangeParams = {
+    inline def apply(index: Double): GalleriaItemChangeEvent = {
       val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any])
-      __obj.asInstanceOf[GalleriaItemChangeParams]
+      __obj.asInstanceOf[GalleriaItemChangeEvent]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: GalleriaItemChangeParams] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: GalleriaItemChangeEvent] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     }
-  }
-  
-  /* Rewritten from type alias, can be one of: 
-    - typings.primereact.primereactStrings.top
-    - typings.primereact.primereactStrings.bottom
-    - typings.primereact.primereactStrings.left
-    - typings.primereact.primereactStrings.right
-  */
-  trait GalleriaPositionType extends StObject
-  object GalleriaPositionType {
-    
-    inline def bottom: typings.primereact.primereactStrings.bottom = "bottom".asInstanceOf[typings.primereact.primereactStrings.bottom]
-    
-    inline def left: typings.primereact.primereactStrings.left = "left".asInstanceOf[typings.primereact.primereactStrings.left]
-    
-    inline def right: typings.primereact.primereactStrings.right = "right".asInstanceOf[typings.primereact.primereactStrings.right]
-    
-    inline def top: typings.primereact.primereactStrings.top = "top".asInstanceOf[typings.primereact.primereactStrings.top]
   }
   
   /* Inlined parent std.Omit<react.react.DetailedHTMLProps<react.react.HTMLAttributes<std.HTMLDivElement>, std.HTMLDivElement>, 'ref'> */
@@ -162,6 +177,10 @@ object galleriaGalleriaMod {
     
     var accessKey: js.UndefOr[String] = js.undefined
     
+    /**
+      * Index of the first item.
+      * @defaultValue 0
+      */
     var activeIndex: js.UndefOr[Double] = js.undefined
     
     var `aria-activedescendant`: js.UndefOr[String] = js.undefined
@@ -266,23 +285,56 @@ object galleriaGalleriaMod {
     
     var autoCorrect: js.UndefOr[String] = js.undefined
     
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Items are displayed with a slideshow in autoPlay mode.
+      * @defaultValue false
+      */
     var autoPlay: js.UndefOr[Boolean] = js.undefined
     
     var autoSave: js.UndefOr[String] = js.undefined
     
+    /**
+      * Base zIndex value to use in layering.
+      * @defaultValue 0
+      */
     var baseZIndex: js.UndefOr[Double] = js.undefined
     
-    var caption: js.UndefOr[js.Function1[/* item */ Any, ReactNode]] = js.undefined
+    /**
+      * Function that gets an item in the value and returns the content for caption item.
+      * @param {*} item - Browser event.
+      */
+    var caption: js.UndefOr[js.Function1[/* item */ Any, js.UndefOr[ReactNode]]] = js.undefined
     
+    /**
+      * When enabled, item is changed on indicator item's hover.
+      * @defaultValue false
+      */
     var changeItemOnIndicatorHover: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Used to get the child elements of the component.
+      * @readonly
+      */
     var children: js.UndefOr[ReactNode] = js.undefined
     
+    /**
+      * Defines if scrolling would be infinite.
+      * @defaultValue false
+      */
     var circular: js.UndefOr[Boolean] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
+    /**
+      * Icon to display in the galleria close button.
+      */
+    var closeIcon: js.UndefOr[IconType[GalleriaProps]] = js.undefined
+    
     var color: js.UndefOr[String] = js.undefined
+    
+    var content: js.UndefOr[String] = js.undefined
     
     var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
@@ -300,19 +352,37 @@ object galleriaGalleriaMod {
     
     var draggable: js.UndefOr[Booleanish] = js.undefined
     
+    /**
+      * Custom footer template.
+      */
     var footer: js.UndefOr[ReactNode] = js.undefined
     
+    /**
+      * Whether to display the component on fullscreen.
+      * @defaultValue false
+      */
     var fullScreen: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Custom header template.
+      */
     var header: js.UndefOr[ReactNode] = js.undefined
     
     var hidden: js.UndefOr[Boolean] = js.undefined
     
     var id: js.UndefOr[String] = js.undefined
     
-    var indicator: js.UndefOr[js.Function1[/* index */ Double, ReactNode]] = js.undefined
+    /**
+      * Function that gets an item in the value and returns the content for indicator item.
+      * @param {number} index - Index of the indicator.
+      */
+    var indicator: js.UndefOr[js.Function1[/* index */ Double, js.UndefOr[ReactNode]]] = js.undefined
     
-    var indicatorsPosition: js.UndefOr[GalleriaPositionType] = js.undefined
+    /**
+      * Position of indicators. Valid values are "bottom", "top", "left" and "right".
+      * @defaultValue bottom
+      */
+    var indicatorsPosition: js.UndefOr[top | bottom | left | right] = js.undefined
     
     var inlist: js.UndefOr[Any] = js.undefined
     
@@ -320,9 +390,23 @@ object galleriaGalleriaMod {
     
     var is: js.UndefOr[String] = js.undefined
     
-    var item: js.UndefOr[js.Function1[/* item */ Any, ReactNode]] = js.undefined
+    /**
+      * Function that gets an item in the value and returns the content for preview item.
+      * @param {*} item - Current item.
+      */
+    var item: js.UndefOr[js.Function1[/* item */ Any, js.UndefOr[ReactNode]]] = js.undefined
     
     var itemID: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Icon to show in the next item button.
+      */
+    var itemNextIcon: js.UndefOr[IconType[GalleriaProps]] = js.undefined
+    
+    /**
+      * Icon to show in the previous item button.
+      */
+    var itemPrevIcon: js.UndefOr[IconType[GalleriaProps]] = js.undefined
     
     var itemProp: js.UndefOr[String] = js.undefined
     
@@ -336,8 +420,17 @@ object galleriaGalleriaMod {
     
     var lang: js.UndefOr[String] = js.undefined
     
+    /**
+      * Icon to show in the next thumbnail button.
+      */
+    var nextThumbnailIcon: js.UndefOr[IconType[GalleriaProps]] = js.undefined
+    
     var nonce: js.UndefOr[String] = js.undefined
     
+    /**
+      * Number of items per page.
+      * @defaultValue 3
+      */
     var numVisible: js.UndefOr[Double] = js.undefined
     
     var onAbort: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
@@ -404,13 +497,20 @@ object galleriaGalleriaMod {
     
     var onFocus: js.UndefOr[FocusEventHandler[HTMLDivElement]] = js.undefined
     
+    /**
+      * Callback to invoke when modal becomes hidden.
+      */
     var onHide: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     var onInput: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
     
     var onInvalid: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
     
-    var onItemChange: js.UndefOr[js.Function1[/* e */ GalleriaItemChangeParams, Unit]] = js.undefined
+    /**
+      * Callback to invoke after changing item.
+      * @param {GalleriaItemChangeEvent} event - Custom change item.
+      */
+    var onItemChange: js.UndefOr[js.Function1[/* event */ GalleriaItemChangeEvent, Unit]] = js.undefined
     
     var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLDivElement]] = js.undefined
     
@@ -480,6 +580,9 @@ object galleriaGalleriaMod {
     
     var onSelect: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
+    /**
+      * Callback to invoke when modal becomes visible.
+      */
     var onShow: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     var onStalled: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
@@ -510,30 +613,66 @@ object galleriaGalleriaMod {
     
     var prefix: js.UndefOr[String] = js.undefined
     
+    /**
+      * Icon to show in the previous thumbnail button.
+      */
+    var prevThumbnailIcon: js.UndefOr[IconType[GalleriaProps]] = js.undefined
+    
     var property: js.UndefOr[String] = js.undefined
     
     var radioGroup: js.UndefOr[String] = js.undefined
     
+    var rel: js.UndefOr[String] = js.undefined
+    
     var resource: js.UndefOr[String] = js.undefined
     
+    /**
+      * An array of options for responsive design.
+      */
     var responsiveOptions: js.UndefOr[js.Array[GalleriaResponsiveOptions]] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
+    
+    var rev: js.UndefOr[String] = js.undefined
     
     var role: js.UndefOr[AriaRole] = js.undefined
     
     var security: js.UndefOr[String] = js.undefined
     
+    /**
+      * Whether to display indicator container.
+      * @defaultValue false
+      */
     var showIndicators: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * When enabled, indicator container is displayed on item container.
+      * @defaultValue false
+      */
     var showIndicatorsOnItem: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Whether to display navigation buttons in item container.
+      * @defaultValue false
+      */
     var showItemNavigators: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Whether to display navigation buttons on item container's hover.
+      * @defaultValue false
+      */
     var showItemNavigatorsOnHover: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Whether to display navigation buttons in thumbnail container.
+      * @defaultValue true
+      */
     var showThumbnailNavigators: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Whether to display thumbnail container.
+      * @defaultValue true
+      */
     var showThumbnails: js.UndefOr[Boolean] = js.undefined
     
     var slot: js.UndefOr[String] = js.undefined
@@ -548,14 +687,29 @@ object galleriaGalleriaMod {
     
     var tabIndex: js.UndefOr[Double] = js.undefined
     
-    var thumbnail: js.UndefOr[js.Function1[/* item */ Any, ReactNode]] = js.undefined
+    /**
+      * Function that gets an item in the value and returns the content for thumbnail item.
+      * @param {*} item - Current thumbnail item.
+      */
+    var thumbnail: js.UndefOr[js.Function1[/* item */ Any, js.UndefOr[ReactNode]]] = js.undefined
     
-    var thumbnailsPosition: js.UndefOr[GalleriaPositionType] = js.undefined
+    /**
+      * Position of thumbnails. Valid values are "bottom", "top", "left" and "right".
+      * @defaultValue bottom
+      */
+    var thumbnailsPosition: js.UndefOr[top | bottom | left | right] = js.undefined
     
     var title: js.UndefOr[String] = js.undefined
     
+    /**
+      * Time in milliseconds to scroll items.
+      * @defaultValue 4000
+      */
     var transitionInterval: js.UndefOr[Double] = js.undefined
     
+    /**
+      * The properties of CSSTransition can be customized, except for "nodeRef" and "in" properties.
+      */
     var transitionOptions: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSSTransitionProps */ Any
       ] = js.undefined
@@ -566,6 +720,9 @@ object galleriaGalleriaMod {
     
     var unselectable: js.UndefOr[on | off] = js.undefined
     
+    /**
+      * An array of objects to display.
+      */
     var value: js.UndefOr[js.Array[Any]] = js.undefined
     
     var vocab: js.UndefOr[String] = js.undefined
@@ -794,6 +951,10 @@ object galleriaGalleriaMod {
       
       inline def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
       
+      inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+      
+      inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+      
       inline def setAutoPlay(value: Boolean): Self = StObject.set(x, "autoPlay", value.asInstanceOf[js.Any])
       
       inline def setAutoPlayUndefined: Self = StObject.set(x, "autoPlay", js.undefined)
@@ -806,7 +967,7 @@ object galleriaGalleriaMod {
       
       inline def setBaseZIndexUndefined: Self = StObject.set(x, "baseZIndex", js.undefined)
       
-      inline def setCaption(value: /* item */ Any => ReactNode): Self = StObject.set(x, "caption", js.Any.fromFunction1(value))
+      inline def setCaption(value: /* item */ Any => js.UndefOr[ReactNode]): Self = StObject.set(x, "caption", js.Any.fromFunction1(value))
       
       inline def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
       
@@ -826,13 +987,23 @@ object galleriaGalleriaMod {
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
+      inline def setCloseIcon(value: IconType[GalleriaProps]): Self = StObject.set(x, "closeIcon", value.asInstanceOf[js.Any])
+      
+      inline def setCloseIconFunction1(value: /* options */ IconOptions[GalleriaProps] => ReactNode): Self = StObject.set(x, "closeIcon", js.Any.fromFunction1(value))
+      
+      inline def setCloseIconUndefined: Self = StObject.set(x, "closeIcon", js.undefined)
+      
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
       inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
       inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
@@ -884,11 +1055,11 @@ object galleriaGalleriaMod {
       
       inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      inline def setIndicator(value: /* index */ Double => ReactNode): Self = StObject.set(x, "indicator", js.Any.fromFunction1(value))
+      inline def setIndicator(value: /* index */ Double => js.UndefOr[ReactNode]): Self = StObject.set(x, "indicator", js.Any.fromFunction1(value))
       
       inline def setIndicatorUndefined: Self = StObject.set(x, "indicator", js.undefined)
       
-      inline def setIndicatorsPosition(value: GalleriaPositionType): Self = StObject.set(x, "indicatorsPosition", value.asInstanceOf[js.Any])
+      inline def setIndicatorsPosition(value: top | bottom | left | right): Self = StObject.set(x, "indicatorsPosition", value.asInstanceOf[js.Any])
       
       inline def setIndicatorsPositionUndefined: Self = StObject.set(x, "indicatorsPosition", js.undefined)
       
@@ -904,11 +1075,23 @@ object galleriaGalleriaMod {
       
       inline def setIsUndefined: Self = StObject.set(x, "is", js.undefined)
       
-      inline def setItem(value: /* item */ Any => ReactNode): Self = StObject.set(x, "item", js.Any.fromFunction1(value))
+      inline def setItem(value: /* item */ Any => js.UndefOr[ReactNode]): Self = StObject.set(x, "item", js.Any.fromFunction1(value))
       
       inline def setItemID(value: String): Self = StObject.set(x, "itemID", value.asInstanceOf[js.Any])
       
       inline def setItemIDUndefined: Self = StObject.set(x, "itemID", js.undefined)
+      
+      inline def setItemNextIcon(value: IconType[GalleriaProps]): Self = StObject.set(x, "itemNextIcon", value.asInstanceOf[js.Any])
+      
+      inline def setItemNextIconFunction1(value: /* options */ IconOptions[GalleriaProps] => ReactNode): Self = StObject.set(x, "itemNextIcon", js.Any.fromFunction1(value))
+      
+      inline def setItemNextIconUndefined: Self = StObject.set(x, "itemNextIcon", js.undefined)
+      
+      inline def setItemPrevIcon(value: IconType[GalleriaProps]): Self = StObject.set(x, "itemPrevIcon", value.asInstanceOf[js.Any])
+      
+      inline def setItemPrevIconFunction1(value: /* options */ IconOptions[GalleriaProps] => ReactNode): Self = StObject.set(x, "itemPrevIcon", js.Any.fromFunction1(value))
+      
+      inline def setItemPrevIconUndefined: Self = StObject.set(x, "itemPrevIcon", js.undefined)
       
       inline def setItemProp(value: String): Self = StObject.set(x, "itemProp", value.asInstanceOf[js.Any])
       
@@ -937,6 +1120,12 @@ object galleriaGalleriaMod {
       inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
       
       inline def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
+      
+      inline def setNextThumbnailIcon(value: IconType[GalleriaProps]): Self = StObject.set(x, "nextThumbnailIcon", value.asInstanceOf[js.Any])
+      
+      inline def setNextThumbnailIconFunction1(value: /* options */ IconOptions[GalleriaProps] => ReactNode): Self = StObject.set(x, "nextThumbnailIcon", js.Any.fromFunction1(value))
+      
+      inline def setNextThumbnailIconUndefined: Self = StObject.set(x, "nextThumbnailIcon", js.undefined)
       
       inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
       
@@ -1086,7 +1275,7 @@ object galleriaGalleriaMod {
       
       inline def setOnInvalidUndefined: Self = StObject.set(x, "onInvalid", js.undefined)
       
-      inline def setOnItemChange(value: /* e */ GalleriaItemChangeParams => Unit): Self = StObject.set(x, "onItemChange", js.Any.fromFunction1(value))
+      inline def setOnItemChange(value: /* event */ GalleriaItemChangeEvent => Unit): Self = StObject.set(x, "onItemChange", js.Any.fromFunction1(value))
       
       inline def setOnItemChangeUndefined: Self = StObject.set(x, "onItemChange", js.undefined)
       
@@ -1286,6 +1475,12 @@ object galleriaGalleriaMod {
       
       inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
       
+      inline def setPrevThumbnailIcon(value: IconType[GalleriaProps]): Self = StObject.set(x, "prevThumbnailIcon", value.asInstanceOf[js.Any])
+      
+      inline def setPrevThumbnailIconFunction1(value: /* options */ IconOptions[GalleriaProps] => ReactNode): Self = StObject.set(x, "prevThumbnailIcon", js.Any.fromFunction1(value))
+      
+      inline def setPrevThumbnailIconUndefined: Self = StObject.set(x, "prevThumbnailIcon", js.undefined)
+      
       inline def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
       
       inline def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
@@ -1293,6 +1488,10 @@ object galleriaGalleriaMod {
       inline def setRadioGroup(value: String): Self = StObject.set(x, "radioGroup", value.asInstanceOf[js.Any])
       
       inline def setRadioGroupUndefined: Self = StObject.set(x, "radioGroup", js.undefined)
+      
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      
+      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
       
       inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
@@ -1307,6 +1506,10 @@ object galleriaGalleriaMod {
       inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+      
+      inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+      
+      inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
       
       inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
@@ -1364,11 +1567,11 @@ object galleriaGalleriaMod {
       
       inline def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
       
-      inline def setThumbnail(value: /* item */ Any => ReactNode): Self = StObject.set(x, "thumbnail", js.Any.fromFunction1(value))
+      inline def setThumbnail(value: /* item */ Any => js.UndefOr[ReactNode]): Self = StObject.set(x, "thumbnail", js.Any.fromFunction1(value))
       
       inline def setThumbnailUndefined: Self = StObject.set(x, "thumbnail", js.undefined)
       
-      inline def setThumbnailsPosition(value: GalleriaPositionType): Self = StObject.set(x, "thumbnailsPosition", value.asInstanceOf[js.Any])
+      inline def setThumbnailsPosition(value: top | bottom | left | right): Self = StObject.set(x, "thumbnailsPosition", value.asInstanceOf[js.Any])
       
       inline def setThumbnailsPositionUndefined: Self = StObject.set(x, "thumbnailsPosition", js.undefined)
       
@@ -1410,10 +1613,19 @@ object galleriaGalleriaMod {
     }
   }
   
+  /**
+    * Custom galleria responsive options
+    */
   trait GalleriaResponsiveOptions extends StObject {
     
+    /**
+      * Breakpoint for this responsive option.
+      */
     var breakpoint: String
     
+    /**
+      * Number of visible items.
+      */
     var numVisible: Double
   }
   object GalleriaResponsiveOptions {

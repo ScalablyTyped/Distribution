@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "tsconfig-paths-webpack-plugin" : "4.0.0"
+      "tsconfig-paths-webpack-plugin" : "4.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "tsconfig-paths-webpack-plugin" : "4.0.0"
+      "tsconfig-paths-webpack-plugin" : "4.0.1"
     }
   ],
   "compile-devDependencies" : [

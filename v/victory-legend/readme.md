@@ -1,7 +1,7 @@
 
 # Scala.js typings for victory-legend
 
-Typings are for version 36.6.8
+Typings are for version 36.6.10
 
 ## Library description:
 Legend Component for Victory

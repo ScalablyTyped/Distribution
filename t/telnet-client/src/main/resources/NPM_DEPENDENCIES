@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "telnet-client" : "2.0.6"
+      "telnet-client" : "2.0.8"
     }
   ],
   "test-dependencies" : [
     {
-      "telnet-client" : "2.0.6"
+      "telnet-client" : "2.0.8"
     }
   ],
   "compile-devDependencies" : [

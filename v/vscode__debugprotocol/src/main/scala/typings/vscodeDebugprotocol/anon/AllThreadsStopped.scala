@@ -17,7 +17,7 @@ trait AllThreadsStopped extends StObject {
   
   /** If `allThreadsStopped` is true, a debug adapter can announce that all threads have stopped.
   				- The client should use this information to enable that all threads can be expanded to access their stacktraces.
-  				- If the attribute is missing or false, only the thread with the given threadId can be expanded.
+  				- If the attribute is missing or false, only the thread with the given `threadId` can be expanded.
   			*/
   var allThreadsStopped: js.UndefOr[Boolean] = js.undefined
   

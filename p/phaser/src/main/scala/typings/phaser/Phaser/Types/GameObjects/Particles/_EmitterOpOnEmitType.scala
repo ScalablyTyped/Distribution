@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait _EmitterOpOnEmitType extends StObject
 object _EmitterOpOnEmitType {
   
-  inline def EmitterOpCustomEmitConfig(onEmit: (/* particle */ Particle, /* key */ String, /* value */ Double) => Unit): typings.phaser.Phaser.Types.GameObjects.Particles.EmitterOpCustomEmitConfig = {
+  inline def EmitterOpCustomEmitConfig(onEmit: (/* particle */ Particle, /* key */ String, /* value */ Double) => Double): typings.phaser.Phaser.Types.GameObjects.Particles.EmitterOpCustomEmitConfig = {
     val __obj = js.Dynamic.literal(onEmit = js.Any.fromFunction3(onEmit))
     __obj.asInstanceOf[typings.phaser.Phaser.Types.GameObjects.Particles.EmitterOpCustomEmitConfig]
   }

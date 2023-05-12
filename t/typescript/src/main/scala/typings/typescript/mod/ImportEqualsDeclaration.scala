@@ -4,6 +4,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+  * One of:
+  * - import x = require("mod");
+  * - import x = M.x;
+  */
 @js.native
 trait ImportEqualsDeclaration
   extends StObject
@@ -17,8 +22,7 @@ trait ImportEqualsDeclaration
   @JSName("kind")
   val kind_ImportEqualsDeclaration: typings.typescript.mod.SyntaxKind.ImportEqualsDeclaration = js.native
   
-  @JSName("modifiers")
-  val modifiers_ImportEqualsDeclaration: js.UndefOr[NodeArray[Modifier]] = js.native
+  val modifiers: js.UndefOr[NodeArray[ModifierLike]] = js.native
   
   val moduleReference: ModuleReference = js.native
   

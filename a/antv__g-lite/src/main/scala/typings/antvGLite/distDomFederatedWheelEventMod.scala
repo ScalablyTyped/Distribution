@@ -2,6 +2,9 @@ package typings.antvGLite
 
 import typings.antvGLite.distDomFederatedMouseEventMod.FederatedMouseEvent
 import typings.antvGLite.distServicesMod.EventService
+import typings.std.stdInts.`0x00`
+import typings.std.stdInts.`0x01`
+import typings.std.stdInts.`0x02`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,13 +25,13 @@ object distDomFederatedWheelEventMod {
     def this(manager: EventService) = this()
     
     /** Units specified in lines. */
-    var DOM_DELTA_LINE: Double = js.native
+    var DOM_DELTA_LINE: `0x01` | Double = js.native
     
     /** Units specified in pages. */
-    var DOM_DELTA_PAGE: Double = js.native
+    var DOM_DELTA_PAGE: `0x02` | Double = js.native
     
     /** Units specified in pixels. */
-    var DOM_DELTA_PIXEL: Double = js.native
+    var DOM_DELTA_PIXEL: `0x00` | Double = js.native
     
     /**
       * The units of `deltaX`, `deltaY`, and `deltaZ`. This is one of `DOM_DELTA_LINE`,

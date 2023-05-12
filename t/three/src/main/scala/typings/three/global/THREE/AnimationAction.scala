@@ -1,5 +1,6 @@
 package typings.three.global.THREE
 
+import typings.three.srcConstantsMod.AnimationBlendMode
 import typings.three.srcCoreEventDispatcherMod.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -22,12 +23,12 @@ open class AnimationAction protected ()
     mixer: typings.three.srcAnimationAnimationMixerMod.AnimationMixer,
     clip: typings.three.srcAnimationAnimationClipMod.AnimationClip,
     localRoot: Unit,
-    blendMode: typings.three.srcConstantsMod.AnimationBlendMode
+    blendMode: AnimationBlendMode
   ) = this()
   def this(
     mixer: typings.three.srcAnimationAnimationMixerMod.AnimationMixer,
     clip: typings.three.srcAnimationAnimationClipMod.AnimationClip,
     localRoot: typings.three.srcCoreObject3DMod.Object3D[Event],
-    blendMode: typings.three.srcConstantsMod.AnimationBlendMode
+    blendMode: AnimationBlendMode
   ) = this()
 }

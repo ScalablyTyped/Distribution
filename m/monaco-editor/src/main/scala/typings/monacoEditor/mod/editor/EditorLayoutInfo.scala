@@ -27,6 +27,11 @@ trait EditorLayoutInfo extends StObject {
   val decorationsWidth: Double
   
   /**
+    * The number of decoration lanes to render in the glyph margin.
+    */
+  val glyphMarginDecorationLaneCount: Double
+  
+  /**
     * Left position for the glyph margin.
     */
   val glyphMarginLeft: Double
@@ -94,6 +99,7 @@ object EditorLayoutInfo {
     contentWidth: Double,
     decorationsLeft: Double,
     decorationsWidth: Double,
+    glyphMarginDecorationLaneCount: Double,
     glyphMarginLeft: Double,
     glyphMarginWidth: Double,
     height: Double,
@@ -109,7 +115,7 @@ object EditorLayoutInfo {
     width: Double,
     wrappingColumn: Double
   ): EditorLayoutInfo = {
-    val __obj = js.Dynamic.literal(contentLeft = contentLeft.asInstanceOf[js.Any], contentWidth = contentWidth.asInstanceOf[js.Any], decorationsLeft = decorationsLeft.asInstanceOf[js.Any], decorationsWidth = decorationsWidth.asInstanceOf[js.Any], glyphMarginLeft = glyphMarginLeft.asInstanceOf[js.Any], glyphMarginWidth = glyphMarginWidth.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], horizontalScrollbarHeight = horizontalScrollbarHeight.asInstanceOf[js.Any], isViewportWrapping = isViewportWrapping.asInstanceOf[js.Any], isWordWrapMinified = isWordWrapMinified.asInstanceOf[js.Any], lineNumbersLeft = lineNumbersLeft.asInstanceOf[js.Any], lineNumbersWidth = lineNumbersWidth.asInstanceOf[js.Any], minimap = minimap.asInstanceOf[js.Any], overviewRuler = overviewRuler.asInstanceOf[js.Any], verticalScrollbarWidth = verticalScrollbarWidth.asInstanceOf[js.Any], viewportColumn = viewportColumn.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], wrappingColumn = wrappingColumn.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(contentLeft = contentLeft.asInstanceOf[js.Any], contentWidth = contentWidth.asInstanceOf[js.Any], decorationsLeft = decorationsLeft.asInstanceOf[js.Any], decorationsWidth = decorationsWidth.asInstanceOf[js.Any], glyphMarginDecorationLaneCount = glyphMarginDecorationLaneCount.asInstanceOf[js.Any], glyphMarginLeft = glyphMarginLeft.asInstanceOf[js.Any], glyphMarginWidth = glyphMarginWidth.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], horizontalScrollbarHeight = horizontalScrollbarHeight.asInstanceOf[js.Any], isViewportWrapping = isViewportWrapping.asInstanceOf[js.Any], isWordWrapMinified = isWordWrapMinified.asInstanceOf[js.Any], lineNumbersLeft = lineNumbersLeft.asInstanceOf[js.Any], lineNumbersWidth = lineNumbersWidth.asInstanceOf[js.Any], minimap = minimap.asInstanceOf[js.Any], overviewRuler = overviewRuler.asInstanceOf[js.Any], verticalScrollbarWidth = verticalScrollbarWidth.asInstanceOf[js.Any], viewportColumn = viewportColumn.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], wrappingColumn = wrappingColumn.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditorLayoutInfo]
   }
   
@@ -123,6 +129,8 @@ object EditorLayoutInfo {
     inline def setDecorationsLeft(value: Double): Self = StObject.set(x, "decorationsLeft", value.asInstanceOf[js.Any])
     
     inline def setDecorationsWidth(value: Double): Self = StObject.set(x, "decorationsWidth", value.asInstanceOf[js.Any])
+    
+    inline def setGlyphMarginDecorationLaneCount(value: Double): Self = StObject.set(x, "glyphMarginDecorationLaneCount", value.asInstanceOf[js.Any])
     
     inline def setGlyphMarginLeft(value: Double): Self = StObject.set(x, "glyphMarginLeft", value.asInstanceOf[js.Any])
     

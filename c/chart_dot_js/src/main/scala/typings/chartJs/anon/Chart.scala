@@ -1,6 +1,5 @@
 package typings.chartJs.anon
 
-import typings.chartJs.mod.ChartType
 import typings.std.CanvasRenderingContext2D
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -8,7 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Chart extends StObject {
   
-  var chart: typings.chartJs.mod.Chart[ChartType, typings.chartJs.mod.DefaultDataPoint[ChartType], Any]
+  var chart: typings.chartJs.distTypesIndexMod.Chart[
+    typings.chartJs.distTypesIndexMod.ChartType, 
+    typings.chartJs.distTypesIndexMod.DefaultDataPoint[typings.chartJs.distTypesIndexMod.ChartType], 
+    Any
+  ]
   
   var ctx: CanvasRenderingContext2D
   
@@ -19,7 +22,11 @@ trait Chart extends StObject {
 object Chart {
   
   inline def apply(
-    chart: typings.chartJs.mod.Chart[ChartType, typings.chartJs.mod.DefaultDataPoint[ChartType], Any],
+    chart: typings.chartJs.distTypesIndexMod.Chart[
+      typings.chartJs.distTypesIndexMod.ChartType, 
+      typings.chartJs.distTypesIndexMod.DefaultDataPoint[typings.chartJs.distTypesIndexMod.ChartType], 
+      Any
+    ],
     ctx: CanvasRenderingContext2D,
     id: String,
     `type`: String
@@ -32,7 +39,13 @@ object Chart {
   @scala.inline
   implicit open class MutableBuilder[Self <: Chart] (val x: Self) extends AnyVal {
     
-    inline def setChart(value: typings.chartJs.mod.Chart[ChartType, typings.chartJs.mod.DefaultDataPoint[ChartType], Any]): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
+    inline def setChart(
+      value: typings.chartJs.distTypesIndexMod.Chart[
+          typings.chartJs.distTypesIndexMod.ChartType, 
+          typings.chartJs.distTypesIndexMod.DefaultDataPoint[typings.chartJs.distTypesIndexMod.ChartType], 
+          Any
+        ]
+    ): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
     
     inline def setCtx(value: CanvasRenderingContext2D): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
     

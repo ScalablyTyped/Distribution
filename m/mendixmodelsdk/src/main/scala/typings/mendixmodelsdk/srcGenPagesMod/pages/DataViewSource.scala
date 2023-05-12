@@ -32,6 +32,15 @@ open class DataViewSource protected () extends EntityPathSource {
   def pageParameterLocalName: String | Null = js.native
   
   def pageParameter_=(newValue: PageParameter | Null): Unit = js.native
+  
+  /**
+    * In version 9.21.0: introduced
+    */
+  def snippetParameter: SnippetParameter | Null = js.native
+  
+  def snippetParameterLocalName: String | Null = js.native
+  
+  def snippetParameter_=(newValue: SnippetParameter | Null): Unit = js.native
 }
 object DataViewSource {
   

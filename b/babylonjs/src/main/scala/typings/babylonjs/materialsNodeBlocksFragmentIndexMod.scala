@@ -39,6 +39,17 @@ object materialsNodeBlocksFragmentIndexMod {
     def this(name: String) = this()
   }
   
+  @JSImport("babylonjs/Materials/Node/Blocks/Fragment/index", "FragDepthBlock")
+  @js.native
+  open class FragDepthBlock protected ()
+    extends typings.babylonjs.materialsNodeBlocksFragmentFragDepthBlockMod.FragDepthBlock {
+    /**
+      * Create a new FragDepthBlock
+      * @param name defines the block name
+      */
+    def this(name: String) = this()
+  }
+  
   @JSImport("babylonjs/Materials/Node/Blocks/Fragment/index", "FragmentOutputBlock")
   @js.native
   open class FragmentOutputBlock protected ()
@@ -111,6 +122,17 @@ object materialsNodeBlocksFragmentIndexMod {
     extends typings.babylonjs.materialsNodeBlocksFragmentScreenSpaceBlockMod.ScreenSpaceBlock {
     /**
       * Creates a new ScreenSpaceBlock
+      * @param name defines the block name
+      */
+    def this(name: String) = this()
+  }
+  
+  @JSImport("babylonjs/Materials/Node/Blocks/Fragment/index", "ShadowMapBlock")
+  @js.native
+  open class ShadowMapBlock protected ()
+    extends typings.babylonjs.materialsNodeBlocksFragmentShadowMapBlockMod.ShadowMapBlock {
+    /**
+      * Create a new ShadowMapBlock
       * @param name defines the block name
       */
     def this(name: String) = this()

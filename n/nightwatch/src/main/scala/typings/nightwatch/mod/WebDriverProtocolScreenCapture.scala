@@ -13,6 +13,13 @@ trait WebDriverProtocolScreenCapture extends StObject {
     * @example
     * browser.screenshot(true);
     */
-  def screenshot(log_screenshot_data: Boolean): this.type = js.native
-  def screenshot(log_screenshot_data: Boolean, callback: js.Function1[/* screenshotEncoded */ String, Unit]): this.type = js.native
+  def screenshot(): Awaitable[this.type, String] = js.native
+  def screenshot(
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[String], Unit]
+  ): Awaitable[this.type, String] = js.native
+  def screenshot(log_screenshot_data: Boolean): Awaitable[this.type, String] = js.native
+  def screenshot(
+    log_screenshot_data: Boolean,
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[String], Unit]
+  ): Awaitable[this.type, String] = js.native
 }

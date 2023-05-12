@@ -83,6 +83,10 @@ object p5Strings {
   inline def `color-dodge`: `color-dodge` = "color-dodge".asInstanceOf[`color-dodge`]
   
   @js.native
+  sealed trait contain extends StObject
+  inline def contain: contain = "contain".asInstanceOf[contain]
+  
+  @js.native
   sealed trait copy extends StObject
   inline def copy: copy = "copy".asInstanceOf[copy]
   
@@ -93,6 +97,10 @@ object p5Strings {
   @js.native
   sealed trait corners extends StObject
   inline def corners: corners = "corners".asInstanceOf[corners]
+  
+  @js.native
+  sealed trait cover extends StObject
+  inline def cover: cover = "cover".asInstanceOf[cover]
   
   @js.native
   sealed trait cross extends StObject

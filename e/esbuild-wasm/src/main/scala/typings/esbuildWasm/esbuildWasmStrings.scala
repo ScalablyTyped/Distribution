@@ -113,6 +113,13 @@ object esbuildWasmStrings {
   inline def `dynamic-import`: `dynamic-import` = "dynamic-import".asInstanceOf[`dynamic-import`]
   
   @js.native
+  sealed trait empty
+    extends StObject
+       with Loader
+       with typings.esbuildWasm.libBrowserMod.Loader
+  inline def empty: empty = "empty".asInstanceOf[empty]
+  
+  @js.native
   sealed trait `entry-point`
     extends StObject
        with ImportKind
@@ -147,6 +154,10 @@ object esbuildWasmStrings {
        with Loader
        with typings.esbuildWasm.libBrowserMod.Loader
   inline def file: file = "file".asInstanceOf[file]
+  
+  @js.native
+  sealed trait `file-loader` extends StObject
+  inline def `file-loader`: `file-loader` = "file-loader".asInstanceOf[`file-loader`]
   
   @js.native
   sealed trait iife

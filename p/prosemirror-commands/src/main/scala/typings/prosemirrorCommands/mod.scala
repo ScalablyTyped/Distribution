@@ -89,6 +89,24 @@ object mod {
   val joinForward: Command = js.native
   
   /**
+  A more limited form of [`joinBackward`]($commands.joinBackward)
+  that only tries to join the current textblock to the one before
+  it, if the cursor is at the start of a textblock.
+  */
+  @JSImport("prosemirror-commands", "joinTextblockBackward")
+  @js.native
+  val joinTextblockBackward: Command = js.native
+  
+  /**
+  A more limited form of [`joinForward`]($commands.joinForward)
+  that only tries to join the current textblock to the one after
+  it, if the cursor is at the end of a textblock.
+  */
+  @JSImport("prosemirror-commands", "joinTextblockForward")
+  @js.native
+  val joinTextblockForward: Command = js.native
+  
+  /**
   Join the selected block or, if there is a text selection, the
   closest ancestor block of the selection that can be joined, with
   the sibling above it.
@@ -189,6 +207,15 @@ object mod {
   @JSImport("prosemirror-commands", "splitBlock")
   @js.native
   val splitBlock: Command = js.native
+  
+  /**
+  Create a variant of [`splitBlock`](https://prosemirror.net/docs/ref/#commands.splitBlock) that uses
+  a custom function to determine the type of the newly split off block.
+  */
+  inline def splitBlockAs(): Command = ^.asInstanceOf[js.Dynamic].applyDynamic("splitBlockAs")().asInstanceOf[Command]
+  inline def splitBlockAs(
+    splitNode: js.Function2[/* node */ Node, /* atEnd */ Boolean, typings.prosemirrorCommands.anon.Attrs | Null]
+  ): Command = ^.asInstanceOf[js.Dynamic].applyDynamic("splitBlockAs")(splitNode.asInstanceOf[js.Any]).asInstanceOf[Command]
   
   /**
   Acts like [`splitBlock`](https://prosemirror.net/docs/ref/#commands.splitBlock), but without

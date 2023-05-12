@@ -16,7 +16,7 @@ object libIconsReloadOutlinedMod extends Shortcut {
   @js.native
   trait ReloadOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_ReloadOutlinedIconType: String = js.native

@@ -15,94 +15,18 @@ open class DepthRenderer protected ()
     * @param type The texture type of the depth map (default: Engine.TEXTURETYPE_FLOAT)
     * @param camera The camera to be used to render the depth map (default: scene's active camera)
     * @param storeNonLinearDepth Defines whether the depth is stored linearly like in Babylon Shadows or directly like glFragCoord.z
-    * @param samplingMode The sampling mode to be used with the render target (Linear, Nearest...)
+    * @param samplingMode The sampling mode to be used with the render target (Linear, Nearest...) (default: TRILINEAR_SAMPLINGMODE)
+    * @param storeCameraSpaceZ Defines whether the depth stored is the Z coordinate in camera space. If true, storeNonLinearDepth has no effect. (Default: false)
+    * @param name Name of the render target (default: DepthRenderer)
     */
-  def this(scene: typings.babylonjs.sceneMod.Scene) = this()
-  def this(scene: typings.babylonjs.sceneMod.Scene, `type`: Double) = this()
   def this(
     scene: typings.babylonjs.sceneMod.Scene,
-    `type`: Double,
-    camera: Nullable[typings.babylonjs.camerasCameraMod.Camera]
-  ) = this()
-  def this(
-    scene: typings.babylonjs.sceneMod.Scene,
-    `type`: Unit,
-    camera: Nullable[typings.babylonjs.camerasCameraMod.Camera]
-  ) = this()
-  def this(
-    scene: typings.babylonjs.sceneMod.Scene,
-    `type`: Double,
-    camera: Unit,
-    storeNonLinearDepth: Boolean
-  ) = this()
-  def this(
-    scene: typings.babylonjs.sceneMod.Scene,
-    `type`: Double,
-    camera: Nullable[typings.babylonjs.camerasCameraMod.Camera],
-    storeNonLinearDepth: Boolean
-  ) = this()
-  def this(scene: typings.babylonjs.sceneMod.Scene, `type`: Unit, camera: Unit, storeNonLinearDepth: Boolean) = this()
-  def this(
-    scene: typings.babylonjs.sceneMod.Scene,
-    `type`: Unit,
-    camera: Nullable[typings.babylonjs.camerasCameraMod.Camera],
-    storeNonLinearDepth: Boolean
-  ) = this()
-  def this(
-    scene: typings.babylonjs.sceneMod.Scene,
-    `type`: Double,
-    camera: Unit,
-    storeNonLinearDepth: Boolean,
-    samplingMode: Double
-  ) = this()
-  def this(
-    scene: typings.babylonjs.sceneMod.Scene,
-    `type`: Double,
-    camera: Unit,
-    storeNonLinearDepth: Unit,
-    samplingMode: Double
-  ) = this()
-  def this(
-    scene: typings.babylonjs.sceneMod.Scene,
-    `type`: Double,
-    camera: Nullable[typings.babylonjs.camerasCameraMod.Camera],
-    storeNonLinearDepth: Boolean,
-    samplingMode: Double
-  ) = this()
-  def this(
-    scene: typings.babylonjs.sceneMod.Scene,
-    `type`: Double,
-    camera: Nullable[typings.babylonjs.camerasCameraMod.Camera],
-    storeNonLinearDepth: Unit,
-    samplingMode: Double
-  ) = this()
-  def this(
-    scene: typings.babylonjs.sceneMod.Scene,
-    `type`: Unit,
-    camera: Unit,
-    storeNonLinearDepth: Boolean,
-    samplingMode: Double
-  ) = this()
-  def this(
-    scene: typings.babylonjs.sceneMod.Scene,
-    `type`: Unit,
-    camera: Unit,
-    storeNonLinearDepth: Unit,
-    samplingMode: Double
-  ) = this()
-  def this(
-    scene: typings.babylonjs.sceneMod.Scene,
-    `type`: Unit,
-    camera: Nullable[typings.babylonjs.camerasCameraMod.Camera],
-    storeNonLinearDepth: Boolean,
-    samplingMode: Double
-  ) = this()
-  def this(
-    scene: typings.babylonjs.sceneMod.Scene,
-    `type`: Unit,
-    camera: Nullable[typings.babylonjs.camerasCameraMod.Camera],
-    storeNonLinearDepth: Unit,
-    samplingMode: Double
+    `type`: js.UndefOr[Double],
+    camera: js.UndefOr[Nullable[typings.babylonjs.camerasCameraMod.Camera]],
+    storeNonLinearDepth: js.UndefOr[Boolean],
+    samplingMode: js.UndefOr[Double],
+    storeCameraSpaceZ: js.UndefOr[Boolean],
+    name: js.UndefOr[String]
   ) = this()
 }
 /* static members */

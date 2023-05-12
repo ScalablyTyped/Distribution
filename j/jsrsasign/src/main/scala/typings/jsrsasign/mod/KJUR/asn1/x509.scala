@@ -41,7 +41,7 @@ import typings.jsrsasign.jsrsasign.KJUR.crypto.DSA
 import typings.jsrsasign.jsrsasign.KJUR.crypto.ECDSA
 import typings.jsrsasign.jsrsasign.RSAKey
 import typings.jsrsasign.jsrsasignStrings.authorityinfoaccess_
-import typings.jsrsasign.jsrsasignStrings.authoritykeyidentifier
+import typings.jsrsasign.jsrsasignStrings.authoritykeyidentifier_
 import typings.jsrsasign.jsrsasignStrings.basicconstraints_
 import typings.jsrsasign.jsrsasignStrings.crldistributionpoints_
 import typings.jsrsasign.jsrsasignStrings.extkeyusage_
@@ -1418,7 +1418,7 @@ object x509 {
       */
     /* static member */
     inline def appendByNameToArray(
-      name: basicconstraints_ | keyusage_ | crldistributionpoints_ | extkeyusage_ | authoritykeyidentifier | authorityinfoaccess_ | subjectaltname_ | issueraltname_,
+      name: basicconstraints_ | keyusage_ | crldistributionpoints_ | extkeyusage_ | authoritykeyidentifier_ | authorityinfoaccess_ | subjectaltname_ | issueraltname_,
       extParams: typings.jsrsasign.jsrsasign.KJUR.asn1.x509.Extension,
       a: js.Array[Any]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendByNameToArray")(name.asInstanceOf[js.Any], extParams.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]

@@ -10,10 +10,31 @@ object mod extends Shortcut {
   
   @JSImport("postcss-attribute-case-insensitive", JSImport.Default)
   @js.native
-  val default: PluginCreator[scala.Nothing] = js.native
+  val default: PluginCreator[pluginOptions] = js.native
   
-  type _To = PluginCreator[scala.Nothing]
+  type _To = PluginCreator[pluginOptions]
   
   /* This means you don't have to write `default`, but can instead just say `mod.foo` */
-  override def _to: PluginCreator[scala.Nothing] = default
+  override def _to: PluginCreator[pluginOptions] = default
+  
+  trait pluginOptions extends StObject {
+    
+    /** Preserve the original notation. default: false */
+    var preserve: js.UndefOr[Boolean] = js.undefined
+  }
+  object pluginOptions {
+    
+    inline def apply(): pluginOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[pluginOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: pluginOptions] (val x: Self) extends AnyVal {
+      
+      inline def setPreserve(value: Boolean): Self = StObject.set(x, "preserve", value.asInstanceOf[js.Any])
+      
+      inline def setPreserveUndefined: Self = StObject.set(x, "preserve", js.undefined)
+    }
+  }
 }

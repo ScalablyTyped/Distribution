@@ -6,29 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait BottomBar extends StObject {
   
-  /**
-    * write task output to the bottom bar instead of the gap under the task title itself.
-    * useful for a stream of data.
-    * @default false
-    *
-    * `true` only keep 1 line of the latest data outputted by the task.
-    * `false` only keep 1 line of the latest data outputted by the task.
-    * `number` will keep designated data of the latest data outputted by the task.
-    */
-  var bottomBar: js.UndefOr[Boolean | Double] = js.undefined
+  var bottomBar: js.UndefOr[Boolean] = js.undefined
   
-  /**
-    * keep output after task finishes
-    * @default false
-    *
-    * works both for the bottom bar and the default behavior
-    */
-  var persistentOutput: js.UndefOr[Boolean] = js.undefined
+  var prompt: js.UndefOr[Boolean] = js.undefined
   
-  /**
-    * show the task time if it was successful
-    */
-  var showTimer: js.UndefOr[Boolean] = js.undefined
+  var tasks: js.UndefOr[Boolean] = js.undefined
 }
 object BottomBar {
   
@@ -40,16 +22,16 @@ object BottomBar {
   @scala.inline
   implicit open class MutableBuilder[Self <: BottomBar] (val x: Self) extends AnyVal {
     
-    inline def setBottomBar(value: Boolean | Double): Self = StObject.set(x, "bottomBar", value.asInstanceOf[js.Any])
+    inline def setBottomBar(value: Boolean): Self = StObject.set(x, "bottomBar", value.asInstanceOf[js.Any])
     
     inline def setBottomBarUndefined: Self = StObject.set(x, "bottomBar", js.undefined)
     
-    inline def setPersistentOutput(value: Boolean): Self = StObject.set(x, "persistentOutput", value.asInstanceOf[js.Any])
+    inline def setPrompt(value: Boolean): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
     
-    inline def setPersistentOutputUndefined: Self = StObject.set(x, "persistentOutput", js.undefined)
+    inline def setPromptUndefined: Self = StObject.set(x, "prompt", js.undefined)
     
-    inline def setShowTimer(value: Boolean): Self = StObject.set(x, "showTimer", value.asInstanceOf[js.Any])
+    inline def setTasks(value: Boolean): Self = StObject.set(x, "tasks", value.asInstanceOf[js.Any])
     
-    inline def setShowTimerUndefined: Self = StObject.set(x, "showTimer", js.undefined)
+    inline def setTasksUndefined: Self = StObject.set(x, "tasks", js.undefined)
   }
 }

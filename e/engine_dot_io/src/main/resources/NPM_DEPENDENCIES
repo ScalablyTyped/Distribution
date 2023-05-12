@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "engine.io" : "6.2.0"
+      "engine.io" : "6.4.2"
     }
   ],
   "test-dependencies" : [
     {
-      "engine.io" : "6.2.0"
+      "engine.io" : "6.4.2"
     }
   ],
   "compile-devDependencies" : [

@@ -17,7 +17,8 @@ open class SoundSlot protected () extends EventHandler {
   /**
     * Create a new SoundSlot.
     *
-    * @param {SoundComponent} component - The Component that created this slot.
+    * @param {import('./component.js').SoundComponent} component - The Component that created this
+    * slot.
     * @param {string} [name] - The name of the slot. Defaults to 'Untitled'.
     * @param {object} [options] - Settings for the slot.
     * @param {number} [options.volume=1] - The playback volume, between 0 and 1.
@@ -284,10 +285,10 @@ open class SoundSlot protected () extends EventHandler {
     * the AudioContext. If unspecified then the firstNode will be connected to the destination
     * instead.
     * @example
-    * var context = app.systems.sound.context;
-    * var analyzer = context.createAnalyzer();
-    * var distortion = context.createWaveShaper();
-    * var filter = context.createBiquadFilter();
+    * const context = app.systems.sound.context;
+    * const analyzer = context.createAnalyzer();
+    * const distortion = context.createWaveShaper();
+    * const filter = context.createBiquadFilter();
     * analyzer.connect(distortion);
     * distortion.connect(filter);
     * slot.setExternalNodes(analyzer, filter);

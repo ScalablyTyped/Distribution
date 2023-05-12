@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GetParametersQueryFeatured extends StObject {
   
+  /** Get all commonly used licenses */
   var get: ParametersQueryFeatured
 }
 object GetParametersQueryFeatured {

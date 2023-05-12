@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "resolve.exports" : "1.1.0"
+      "resolve.exports" : "2.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "resolve.exports" : "1.1.0"
+      "resolve.exports" : "2.0.2"
     }
   ],
   "compile-devDependencies" : [

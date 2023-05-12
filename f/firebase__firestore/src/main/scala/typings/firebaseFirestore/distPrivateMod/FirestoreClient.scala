@@ -1,15 +1,22 @@
 package typings.firebaseFirestore.distPrivateMod
 
+import typings.firebaseFirestore.anon.OfflineOfflineKindOnline
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * FirestoreClient is a top-level class that constructs and owns all of the
-  * pieces of the client SDK architecture. It is responsible for creating the
-  * async queue that is shared by all of the other components in the system.
+  * FirestoreClient is a top-level class that constructs and owns all of the //
+  * pieces of the client SDK architecture. It is responsible for creating the //
+  * async queue that is shared by all of the other components in the system. //
   */
 trait FirestoreClient extends StObject {
+  
+  var _offlineComponents: js.UndefOr[OfflineComponentProvider] = js.undefined
+  
+  var _onlineComponents: js.UndefOr[OnlineComponentProvider] = js.undefined
+  
+  var _uninitializedComponentsProvider: js.UndefOr[OfflineOfflineKindOnline] = js.undefined
   
   /* private */ var appCheckCredentialListener: Any
   
@@ -35,10 +42,6 @@ trait FirestoreClient extends StObject {
   
   def getConfiguration(): js.Promise[ComponentConfiguration]
   
-  var offlineComponents: js.UndefOr[OfflineComponentProvider] = js.undefined
-  
-  var onlineComponents: js.UndefOr[OnlineComponentProvider] = js.undefined
-  
   def setAppCheckTokenChangeListener(listener: js.Function2[/* appCheckToken */ String, /* user */ User, js.Promise[Unit]]): Unit
   
   def setCredentialChangeListener(listener: js.Function1[/* user */ User, js.Promise[Unit]]): Unit
@@ -48,8 +51,8 @@ trait FirestoreClient extends StObject {
   /* private */ var user: Any
   
   /**
-    * Checks that the client has not been terminated. Ensures that other methods on
-    * this class cannot be called after the client is terminated.
+    * Checks that the client has not been terminated. Ensures that other methods on //
+    * this class cannot be called after the client is terminated. //
     */
   def verifyNotTerminated(): Unit
 }
@@ -93,14 +96,6 @@ object FirestoreClient {
     
     inline def setGetConfiguration(value: () => js.Promise[ComponentConfiguration]): Self = StObject.set(x, "getConfiguration", js.Any.fromFunction0(value))
     
-    inline def setOfflineComponents(value: OfflineComponentProvider): Self = StObject.set(x, "offlineComponents", value.asInstanceOf[js.Any])
-    
-    inline def setOfflineComponentsUndefined: Self = StObject.set(x, "offlineComponents", js.undefined)
-    
-    inline def setOnlineComponents(value: OnlineComponentProvider): Self = StObject.set(x, "onlineComponents", value.asInstanceOf[js.Any])
-    
-    inline def setOnlineComponentsUndefined: Self = StObject.set(x, "onlineComponents", js.undefined)
-    
     inline def setSetAppCheckTokenChangeListener(value: js.Function2[/* appCheckToken */ String, /* user */ User, js.Promise[Unit]] => Unit): Self = StObject.set(x, "setAppCheckTokenChangeListener", js.Any.fromFunction1(value))
     
     inline def setSetCredentialChangeListener(value: js.Function1[/* user */ User, js.Promise[Unit]] => Unit): Self = StObject.set(x, "setCredentialChangeListener", js.Any.fromFunction1(value))
@@ -110,5 +105,17 @@ object FirestoreClient {
     inline def setUser(value: Any): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
     inline def setVerifyNotTerminated(value: () => Unit): Self = StObject.set(x, "verifyNotTerminated", js.Any.fromFunction0(value))
+    
+    inline def set_offlineComponents(value: OfflineComponentProvider): Self = StObject.set(x, "_offlineComponents", value.asInstanceOf[js.Any])
+    
+    inline def set_offlineComponentsUndefined: Self = StObject.set(x, "_offlineComponents", js.undefined)
+    
+    inline def set_onlineComponents(value: OnlineComponentProvider): Self = StObject.set(x, "_onlineComponents", value.asInstanceOf[js.Any])
+    
+    inline def set_onlineComponentsUndefined: Self = StObject.set(x, "_onlineComponents", js.undefined)
+    
+    inline def set_uninitializedComponentsProvider(value: OfflineOfflineKindOnline): Self = StObject.set(x, "_uninitializedComponentsProvider", value.asInstanceOf[js.Any])
+    
+    inline def set_uninitializedComponentsProviderUndefined: Self = StObject.set(x, "_uninitializedComponentsProvider", js.undefined)
   }
 }

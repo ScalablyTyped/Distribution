@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "crc" : "4.1.1"
+      "crc" : "4.3.2"
     }
   ],
   "test-dependencies" : [
     {
-      "crc" : "4.1.1"
+      "crc" : "4.3.2"
     }
   ],
   "compile-devDependencies" : [

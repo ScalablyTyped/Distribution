@@ -1,54 +1,37 @@
 package typings.octokitOpenapiTypes.anon
 
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings._empty
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.cancelled
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.completed
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.failure
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.in_progress
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.queued_
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.skipped
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.success
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Startedat extends StObject {
   
-  /**
-    * Format: date-time
-    * @description The time that the job finished, in ISO 8601 format.
-    * @example 2019-08-08T08:00:00-07:00
-    */
-  var completed_at: js.UndefOr[String | Null] = js.undefined
+  var completed_at: String | Null
   
-  /**
-    * @description The outcome of the job.
-    * @example success
-    */
-  var conclusion: String | Null
+  /** @enum {string|null} */
+  var conclusion: failure | skipped | success | cancelled | _empty | Null
   
-  /**
-    * @description The name of the job.
-    * @example test-coverage
-    */
   var name: String
   
-  /** @example 1 */
   var number: Double
   
-  /**
-    * Format: date-time
-    * @description The time that the step started, in ISO 8601 format.
-    * @example 2019-08-08T08:00:00-07:00
-    */
-  var started_at: js.UndefOr[String | Null] = js.undefined
+  var started_at: String | Null
   
-  /**
-    * @description The phase of the lifecycle that the job is currently in.
-    * @example queued
-    * @enum {string}
-    */
-  var status: queued_ | in_progress | completed
+  /** @enum {string} */
+  var status: in_progress | completed | queued_
 }
 object Startedat {
   
-  inline def apply(name: String, number: Double, status: queued_ | in_progress | completed): Startedat = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], conclusion = null)
+  inline def apply(name: String, number: Double, status: in_progress | completed | queued_): Startedat = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], completed_at = null, conclusion = null, started_at = null)
     __obj.asInstanceOf[Startedat]
   }
   
@@ -59,9 +42,7 @@ object Startedat {
     
     inline def setCompleted_atNull: Self = StObject.set(x, "completed_at", null)
     
-    inline def setCompleted_atUndefined: Self = StObject.set(x, "completed_at", js.undefined)
-    
-    inline def setConclusion(value: String): Self = StObject.set(x, "conclusion", value.asInstanceOf[js.Any])
+    inline def setConclusion(value: failure | skipped | success | cancelled | _empty): Self = StObject.set(x, "conclusion", value.asInstanceOf[js.Any])
     
     inline def setConclusionNull: Self = StObject.set(x, "conclusion", null)
     
@@ -73,8 +54,6 @@ object Startedat {
     
     inline def setStarted_atNull: Self = StObject.set(x, "started_at", null)
     
-    inline def setStarted_atUndefined: Self = StObject.set(x, "started_at", js.undefined)
-    
-    inline def setStatus(value: queued_ | in_progress | completed): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: in_progress | completed | queued_): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

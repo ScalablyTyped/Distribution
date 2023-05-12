@@ -2,17 +2,19 @@ package typings.angularCompilerCli
 
 import typings.angularCompiler.mod.R3ClassMetadata
 import typings.angularCompiler.mod.R3PipeMetadata
+import typings.angularCompilerCli.anon.ClassDeclarationDeclarati
+import typings.angularCompilerCli.anon.ClassDeclarationDeclaratiGetChildCount
+import typings.angularCompilerCli.anon.ReadonlyDecorator
 import typings.angularCompilerCli.anon.ReadonlyPipeHandlerData
+import typings.angularCompilerCli.srcNgtscAnnotationsCommonMod.InjectableClassRegistry
 import typings.angularCompilerCli.srcNgtscIncrementalSemanticGraphMod.SemanticSymbol
-import typings.angularCompilerCli.srcNgtscMetadataMod.InjectableClassRegistry
 import typings.angularCompilerCli.srcNgtscMetadataSrcApiMod.MetadataRegistry
 import typings.angularCompilerCli.srcNgtscPartialEvaluatorMod.PartialEvaluator
 import typings.angularCompilerCli.srcNgtscPerfSrcApiMod.PerfRecorder
-import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.ClassDeclaration
-import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.DeclarationNode
 import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.Decorator
 import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.ReflectionHost
 import typings.angularCompilerCli.srcNgtscScopeMod.LocalModuleScopeRegistry
+import typings.angularCompilerCli.srcNgtscTransformSrcApiMod.AnalysisOutput
 import typings.angularCompilerCli.srcNgtscTransformSrcApiMod.CompileResult
 import typings.angularCompilerCli.srcNgtscTransformSrcApiMod.DecoratorHandler
 import typings.angularCompilerCli.srcNgtscTransformSrcApiMod.ResolveResult
@@ -38,10 +40,12 @@ object srcNgtscAnnotationsSrcPipeMod {
       perf: PerfRecorder
     ) = this()
     
-    def compileFull(node: ClassDeclaration[DeclarationNode], analysis: ReadonlyPipeHandlerData): js.Array[CompileResult] = js.native
+    def analyze(clazz: ClassDeclarationDeclarati, decorator: ReadonlyDecorator): AnalysisOutput[PipeHandlerData] = js.native
+    
+    def compileFull(node: ClassDeclarationDeclarati, analysis: ReadonlyPipeHandlerData): js.Array[CompileResult] = js.native
     
     @JSName("compilePartial")
-    def compilePartial_MPipeDecoratorHandler(node: ClassDeclaration[DeclarationNode], analysis: ReadonlyPipeHandlerData): js.Array[CompileResult] = js.native
+    def compilePartial_MPipeDecoratorHandler(node: ClassDeclarationDeclarati, analysis: ReadonlyPipeHandlerData): js.Array[CompileResult] = js.native
     
     /* private */ var evaluator: Any = js.native
     
@@ -59,20 +63,20 @@ object srcNgtscAnnotationsSrcPipeMod {
     /* private */ var reflector: Any = js.native
     
     @JSName("register")
-    def register_MPipeDecoratorHandler(node: ClassDeclaration[DeclarationNode], analysis: ReadonlyPipeHandlerData): Unit = js.native
+    def register_MPipeDecoratorHandler(node: ClassDeclarationDeclarati, analysis: ReadonlyPipeHandlerData): Unit = js.native
     
     @JSName("resolve")
-    def resolve_MPipeDecoratorHandler(node: ClassDeclaration[DeclarationNode]): ResolveResult[Any] = js.native
+    def resolve_MPipeDecoratorHandler(node: ClassDeclarationDeclarati): ResolveResult[Any] = js.native
     
     /* private */ var scopeRegistry: Any = js.native
     
-    def symbol(node: ClassDeclaration[DeclarationNode], analysis: ReadonlyPipeHandlerData): PipeSymbol = js.native
+    def symbol(node: ClassDeclarationDeclarati, analysis: ReadonlyPipeHandlerData): PipeSymbol = js.native
   }
   
   @JSImport("@angular/compiler-cli/src/ngtsc/annotations/src/pipe", "PipeSymbol")
   @js.native
   open class PipeSymbol protected () extends SemanticSymbol {
-    def this(decl: ClassDeclaration[DeclarationNode], name: String) = this()
+    def this(decl: ClassDeclarationDeclaratiGetChildCount, name: String) = this()
     
     def isPublicApiAffected(previousSymbol: SemanticSymbol): Boolean = js.native
     

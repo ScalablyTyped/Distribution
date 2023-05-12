@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CommentOptions extends StObject {
   
   /**
-    * An optional string to show as placeholder in the comment input box when it's focused.
-    */
+  		 * An optional string to show as placeholder in the comment input box when it's focused.
+  		 */
   var placeHolder: js.UndefOr[String] = js.undefined
   
   /**
-    * An optional string to show on the comment input box when it's collapsed.
-    */
+  		 * An optional string to show on the comment input box when it's collapsed.
+  		 */
   var prompt: js.UndefOr[String] = js.undefined
 }
 object CommentOptions {

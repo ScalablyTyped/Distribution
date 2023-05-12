@@ -8,8 +8,8 @@ trait CallHierarchyOutgoingCall extends StObject {
   
   /**
     * The range at which this item is called. This is the range relative to the caller, e.g the item
-    * passed to [`provideCallHierarchyOutgoingCalls`](#CallHierarchyItemProvider.provideCallHierarchyOutgoingCalls)
-    * and not [`this.to`](#CallHierarchyOutgoingCall.to).
+    * passed to {@link CallHierarchyItemProvider.provideCallHierarchyOutgoingCalls `provideCallHierarchyOutgoingCalls`}
+    * and not {@link CallHierarchyOutgoingCall.to `this.to`}.
     */
   var fromRanges: js.Array[Range]
   

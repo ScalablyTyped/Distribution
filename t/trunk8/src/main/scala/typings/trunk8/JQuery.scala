@@ -9,13 +9,11 @@ trait JQuery extends StObject {
   
   /**
     Creates a trunk8 instance with default options.
-    @constructor
     @param {Trunk8Options} options
     */
   def trunk8(): Any = js.native
   /**
     Creates a trunk8 instance and calls a method.
-    @constructor
     @param {string} method
     @param {string} value
     */

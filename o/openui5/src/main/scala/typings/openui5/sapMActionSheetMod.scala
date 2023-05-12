@@ -6,6 +6,7 @@ import typings.openui5.sapMLibraryMod.PlacementType
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
 import typings.openui5.sapUiCoreControlMod.ControlSettings
+import typings.std.HTMLElement
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -693,6 +694,8 @@ object sapMActionSheetMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:afterClose afterClose} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -704,6 +707,8 @@ object sapMActionSheetMod {
     mParameters: Origin): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:afterOpen afterOpen} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -715,6 +720,8 @@ object sapMActionSheetMod {
     mParameters: js.Object): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:beforeClose beforeClose} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -726,6 +733,8 @@ object sapMActionSheetMod {
     mParameters: Origin): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:beforeOpen beforeOpen} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -737,6 +746,8 @@ object sapMActionSheetMod {
     mParameters: js.Object): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:cancelButtonPress cancelButtonPress} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -749,6 +760,7 @@ object sapMActionSheetMod {
     
     /**
       * @deprecated (since 1.20.0) - This event is deprecated, use the cancelButtonPress event instead.
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:cancelButtonTap cancelButtonTap} to attached listeners.
       *
@@ -795,6 +807,8 @@ object sapMActionSheetMod {
     def getPlacement(): PlacementType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PlacementType * / any */ String) = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Gets the ID of the hidden label
       *
       * @returns ID of hidden text
@@ -867,10 +881,16 @@ object sapMActionSheetMod {
       * On other platforms, ActionSheet behaves as a standard dialog and this parameter is ignored because dialog
       * is aligned to the screen.
       */
+    def openBy(
+      /**
+      * The control to which the ActionSheet is opened
+      */
+    oControl: typings.openui5.sapUiCoreControlMod.default
+    ): Unit = js.native
     def openBy(/**
       * The control to which the ActionSheet is opened
       */
-    oControl: js.Object): Unit = js.native
+    oControl: HTMLElement): Unit = js.native
     
     /**
       * Removes all the controls from the aggregation {@link #getButtons buttons}.

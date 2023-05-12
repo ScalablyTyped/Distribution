@@ -1,47 +1,31 @@
 package typings.gestalt.mod
 
-import typings.gestalt.anon.DangerouslyDisableOnNavigation
 import typings.gestalt.anon.Event
+import typings.gestalt.anon.MobileOnDismissStart
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
-import typings.react.mod.ReactNode
 import typings.std.HTMLAnchorElement
-import typings.std.HTMLButtonElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait DropdownLinkProps extends StObject {
   
-  /**
-    * When supplied, will display a Badge next to the item's label.
-    */
   var badge: js.UndefOr[BadgeObject] = js.undefined
   
-  var children: js.UndefOr[ReactNode] = js.undefined
+  var children: js.UndefOr[Node] = js.undefined
   
-  /**
-    * When supplied, will add a data-test-id prop to the dom element.
-    */
   var dataTestId: js.UndefOr[String] = js.undefined
   
-  /**
-    * Directs users to the url when item is selected. See the Types of items variant to learn more.
-    */
   var href: String
   
-  /**
-    * When true, adds an arrow icon to the end of the item to signal this item takes users to an external source
-    * and opens the link in a new tab.
-    * Do not add if the item navigates users within the app. See the Best practices for more info.
-    */
   var isExternal: js.UndefOr[Boolean] = js.undefined
   
   var onClick: js.UndefOr[
     AbstractEventHandler[
-      (MouseEvent[HTMLAnchorElement | HTMLButtonElement, NativeMouseEvent]) | (KeyboardEvent[HTMLAnchorElement | HTMLButtonElement]), 
-      DangerouslyDisableOnNavigation
+      (MouseEvent[HTMLAnchorElement, NativeMouseEvent]) | KeyboardEvent[HTMLAnchorElement], 
+      MobileOnDismissStart
     ]
   ] = js.undefined
   
@@ -61,7 +45,7 @@ object DropdownLinkProps {
     
     inline def setBadgeUndefined: Self = StObject.set(x, "badge", js.undefined)
     
-    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: Node): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
@@ -76,8 +60,8 @@ object DropdownLinkProps {
     inline def setIsExternalUndefined: Self = StObject.set(x, "isExternal", js.undefined)
     
     inline def setOnClick(
-      value: /* arg */ DangerouslyDisableOnNavigation & (Event[
-          (MouseEvent[HTMLAnchorElement | HTMLButtonElement, NativeMouseEvent]) | (KeyboardEvent[HTMLAnchorElement | HTMLButtonElement])
+      value: /* arg */ MobileOnDismissStart & (Event[
+          (MouseEvent[HTMLAnchorElement, NativeMouseEvent]) | KeyboardEvent[HTMLAnchorElement]
         ]) => Unit
     ): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     

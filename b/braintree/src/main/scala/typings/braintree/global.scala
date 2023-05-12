@@ -121,18 +121,35 @@ object global {
     
     @JSGlobal("braintree.Environment")
     @js.native
-    object Environment extends StObject {
+    open class Environment protected ()
+      extends typings.braintree.mod.Environment {
+      def this(
+        server: String,
+        port: String,
+        authUrl: String,
+        ssl: Boolean,
+        graphQLServer: String,
+        graphQLPort: String
+      ) = this()
+    }
+    /* static members */
+    object Environment {
       
-      @JSBracketAccess
-      def apply(value: String): js.UndefOr[typings.braintree.mod.Environment & String] = js.native
+      @JSGlobal("braintree.Environment.Development")
+      @js.native
+      val Development: typings.braintree.mod.Environment = js.native
       
-      /* "Development" */ val Development: typings.braintree.mod.Environment.Development & String = js.native
+      @JSGlobal("braintree.Environment.Production")
+      @js.native
+      val Production: typings.braintree.mod.Environment = js.native
       
-      /* "Production" */ val Production: typings.braintree.mod.Environment.Production & String = js.native
+      @JSGlobal("braintree.Environment.Qa")
+      @js.native
+      val Qa: typings.braintree.mod.Environment = js.native
       
-      /* "Qa" */ val Qa: typings.braintree.mod.Environment.Qa & String = js.native
-      
-      /* "Sandbox" */ val Sandbox: typings.braintree.mod.Environment.Sandbox & String = js.native
+      @JSGlobal("braintree.Environment.Sandbox")
+      @js.native
+      val Sandbox: typings.braintree.mod.Environment = js.native
     }
     
     @JSGlobal("braintree.MasterpassCard")

@@ -14,19 +14,24 @@ object mod {
   /**
     * Create a new virtual file.
     *
-    * If `options` is `string` or `Buffer`, it’s treated as `{value: options}`.
-    * If `options` is a `URL`, it’s treated as `{path: options}`.
-    * If `options` is a `VFile`, shallow copies its data over to the new file.
-    * All fields in `options` are set on the newly created `VFile`.
+    * `options` is treated as:
+    *
+    * *   `string` or `Buffer` — `{value: options}`
+    * *   `URL` — `{path: options}`
+    * *   `VFile` — shallow copies its data over to the new file
+    * *   `object` — all fields are shallow copied over to the new file
     *
     * Path related fields are set in the following order (least specific to
     * most specific): `history`, `path`, `basename`, `stem`, `extname`,
     * `dirname`.
     *
-    * It’s not possible to set either `dirname` or `extname` without setting
-    * either `history`, `path`, `basename`, or `stem` as well.
+    * You cannot set `dirname` or `extname` without setting either `history`,
+    * `path`, `basename`, or `stem` too.
     *
-    * @param {Compatible} [value]
+    * @param {Compatible | null | undefined} [value]
+    *   File value.
+    * @returns
+    *   New instance.
     */
   open class VFile ()
     extends typings.vfile.libMod.VFile {

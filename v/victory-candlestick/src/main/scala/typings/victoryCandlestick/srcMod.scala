@@ -16,7 +16,7 @@ object srcMod {
     def this(props: CandleProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: CandleProps, context: Any) = this()
   }
@@ -27,7 +27,7 @@ object srcMod {
     def this(props: VictoryCandlestickProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: VictoryCandlestickProps, context: Any) = this()
   }

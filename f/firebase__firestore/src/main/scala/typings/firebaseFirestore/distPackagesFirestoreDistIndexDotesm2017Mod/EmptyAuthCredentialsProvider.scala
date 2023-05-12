@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class EmptyAuthCredentialsProvider ()
   extends StObject
-     with K {
+     with Q {
   
   /* CompleteClass */
   override def getToken(): js.Promise[Null] = js.native

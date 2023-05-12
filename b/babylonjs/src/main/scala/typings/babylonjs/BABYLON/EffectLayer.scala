@@ -1,5 +1,6 @@
 package typings.babylonjs.BABYLON
 
+import org.scalablytyped.runtime.NumberDictionary
 import typings.babylonjs.anon.PartialIEffectLayerOptionAlphaBlendingMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -50,6 +51,8 @@ trait EffectLayer extends StObject {
     * Dispose only the render target textures and post process.
     */
   /* private */ var _disposeTextureAndPostProcesses: Any = js.native
+  
+  /* protected */ var _effectIntensity: NumberDictionary[Double] = js.native
   
   /* private */ var _effectLayerOptions: Any = js.native
   
@@ -183,6 +186,13 @@ trait EffectLayer extends StObject {
   def getClassName(): String = js.native
   
   /**
+    * Gets the intensity of the effect for a specific mesh.
+    * @param mesh The mesh to get the effect intensity for
+    * @returns The intensity of the effect for the mesh
+    */
+  def getEffectIntensity(mesh: AbstractMesh): Double = js.native
+  
+  /**
     * Get the effect name of the layer.
     * @returns The effect name
     */
@@ -280,6 +290,13 @@ trait EffectLayer extends StObject {
     * @returns a serialized layer object
     */
   var serialize: js.UndefOr[js.Function0[Any]] = js.native
+  
+  /**
+    * Sets the intensity of the effect for a specific mesh.
+    * @param mesh The mesh to set the effect intensity for
+    * @param intensity The intensity of the effect for the mesh
+    */
+  def setEffectIntensity(mesh: AbstractMesh, intensity: Double): Unit = js.native
   
   def setMaterialForRendering(mesh: js.Array[AbstractMesh]): Unit = js.native
   def setMaterialForRendering(mesh: js.Array[AbstractMesh], material: Material): Unit = js.native

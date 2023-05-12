@@ -19,15 +19,6 @@ trait GPUComputePassEncoder
     */
   val __brand: typings.webgpuTypes.webgpuTypesStrings.GPUComputePassEncoder = js.native
   
-  /** @deprecated Use dispatchWorkgroups instead */
-  def dispatch(workgroupCountX: GPUSize32): Unit = js.native
-  def dispatch(workgroupCountX: GPUSize32, workgroupCountY: Unit, workgroupCountZ: GPUSize32): Unit = js.native
-  def dispatch(workgroupCountX: GPUSize32, workgroupCountY: GPUSize32): Unit = js.native
-  def dispatch(workgroupCountX: GPUSize32, workgroupCountY: GPUSize32, workgroupCountZ: GPUSize32): Unit = js.native
-  
-  /** @deprecated Use dispatchWorkgroupsIndirect instead */
-  def dispatchIndirect(indirectBuffer: GPUBuffer, indirectOffset: GPUSize64): Unit = js.native
-  
   /**
     * Dispatch work to be performed with the current {@link GPUComputePipeline}.
     * See [[#computing-operations]] for the detailed specification.

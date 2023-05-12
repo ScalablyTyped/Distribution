@@ -1,7 +1,7 @@
 
 # Scala.js typings for vite
 
-Typings are for version 3.2.0
+Typings are for version 4.3.5
 
 ## Library description:
 Native-ESM powered web dev build tool

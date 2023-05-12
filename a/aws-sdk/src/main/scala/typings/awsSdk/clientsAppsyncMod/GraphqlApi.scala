@@ -27,6 +27,11 @@ trait GraphqlApi extends StObject {
   var authenticationType: js.UndefOr[AuthenticationType] = js.undefined
   
   /**
+    * The DNS records for the API.
+    */
+  var dns: js.UndefOr[MapOfStringToString] = js.undefined
+  
+  /**
     * Configuration for Lambda function authorization.
     */
   var lambdaAuthorizerConfig: js.UndefOr[LambdaAuthorizerConfig] = js.undefined
@@ -60,6 +65,11 @@ trait GraphqlApi extends StObject {
     * The Amazon Cognito user pool configuration.
     */
   var userPoolConfig: js.UndefOr[UserPoolConfig] = js.undefined
+  
+  /**
+    * Sets the value of the GraphQL API to public (GLOBAL) or private (PRIVATE). If no value is provided, the visibility will be set to GLOBAL by default. This value cannot be changed once the API has been created.
+    */
+  var visibility: js.UndefOr[GraphQLApiVisibility] = js.undefined
   
   /**
     * The ARN of the WAF access control list (ACL) associated with this GraphqlApi, if one exists.
@@ -99,6 +109,10 @@ object GraphqlApi {
     
     inline def setAuthenticationTypeUndefined: Self = StObject.set(x, "authenticationType", js.undefined)
     
+    inline def setDns(value: MapOfStringToString): Self = StObject.set(x, "dns", value.asInstanceOf[js.Any])
+    
+    inline def setDnsUndefined: Self = StObject.set(x, "dns", js.undefined)
+    
     inline def setLambdaAuthorizerConfig(value: LambdaAuthorizerConfig): Self = StObject.set(x, "lambdaAuthorizerConfig", value.asInstanceOf[js.Any])
     
     inline def setLambdaAuthorizerConfigUndefined: Self = StObject.set(x, "lambdaAuthorizerConfig", js.undefined)
@@ -126,6 +140,10 @@ object GraphqlApi {
     inline def setUserPoolConfig(value: UserPoolConfig): Self = StObject.set(x, "userPoolConfig", value.asInstanceOf[js.Any])
     
     inline def setUserPoolConfigUndefined: Self = StObject.set(x, "userPoolConfig", js.undefined)
+    
+    inline def setVisibility(value: GraphQLApiVisibility): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
+    
+    inline def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
     
     inline def setWafWebAclArn(value: String): Self = StObject.set(x, "wafWebAclArn", value.asInstanceOf[js.Any])
     

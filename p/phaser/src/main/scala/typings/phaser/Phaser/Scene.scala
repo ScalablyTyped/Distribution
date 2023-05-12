@@ -25,6 +25,7 @@ import typings.phaser.Phaser.Sound.WebAudioSoundManager
 import typings.phaser.Phaser.Textures.TextureManager
 import typings.phaser.Phaser.Time.Clock
 import typings.phaser.Phaser.Tweens.TweenManager
+import typings.phaser.Phaser.Types.Scenes._SceneType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -34,7 +35,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * You can also define the optional methods {@link Phaser.Types.Scenes.SceneInitCallback init()}, {@link Phaser.Types.Scenes.ScenePreloadCallback preload()}, and {@link Phaser.Types.Scenes.SceneCreateCallback create()}.
   */
-trait Scene extends StObject {
+trait Scene
+  extends StObject
+     with _SceneType {
   
   /**
     * The Scene Game Object Factory.

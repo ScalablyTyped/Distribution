@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param {number} [z] - The z value. Defaults to 0.
   * @param {number} [w] - The w value. Defaults to 0.
   * @example
-  * var v = new pc.Vec4(1, 2, 3, 4);
+  * const v = new pc.Vec4(1, 2, 3, 4);
   */
 open class Vec4 () extends StObject {
   def this(x: js.Array[Double]) = this()
@@ -51,8 +51,8 @@ open class Vec4 () extends StObject {
     * @param {Vec4} rhs - The vector to add to the specified vector.
     * @returns {Vec4} Self for chaining.
     * @example
-    * var a = new pc.Vec4(10, 10, 10, 10);
-    * var b = new pc.Vec4(20, 20, 20, 20);
+    * const a = new pc.Vec4(10, 10, 10, 10);
+    * const b = new pc.Vec4(20, 20, 20, 20);
     *
     * a.add(b);
     *
@@ -68,9 +68,9 @@ open class Vec4 () extends StObject {
     * @param {Vec4} rhs - The second vector operand for the addition.
     * @returns {Vec4} Self for chaining.
     * @example
-    * var a = new pc.Vec4(10, 10, 10, 10);
-    * var b = new pc.Vec4(20, 20, 20, 20);
-    * var r = new pc.Vec4();
+    * const a = new pc.Vec4(10, 10, 10, 10);
+    * const b = new pc.Vec4(20, 20, 20, 20);
+    * const r = new pc.Vec4();
     *
     * r.add2(a, b);
     * // Outputs [30, 30, 30]
@@ -85,7 +85,7 @@ open class Vec4 () extends StObject {
     * @param {number} scalar - The number to add.
     * @returns {Vec4} Self for chaining.
     * @example
-    * var vec = new pc.Vec4(3, 4, 5, 6);
+    * const vec = new pc.Vec4(3, 4, 5, 6);
     *
     * vec.addScalar(2);
     *
@@ -107,8 +107,8 @@ open class Vec4 () extends StObject {
     * @param {Vec4} rhs - A vector to copy to the specified vector.
     * @returns {Vec4} Self for chaining.
     * @example
-    * var src = new pc.Vec4(10, 20, 30, 40);
-    * var dst = new pc.Vec4();
+    * const src = new pc.Vec4(10, 20, 30, 40);
+    * const dst = new pc.Vec4();
     *
     * dst.copy(src);
     *
@@ -122,8 +122,8 @@ open class Vec4 () extends StObject {
     * @param {Vec4} rhs - The vector to divide the specified vector by.
     * @returns {Vec4} Self for chaining.
     * @example
-    * var a = new pc.Vec4(4, 9, 16, 25);
-    * var b = new pc.Vec4(2, 3, 4, 5);
+    * const a = new pc.Vec4(4, 9, 16, 25);
+    * const b = new pc.Vec4(2, 3, 4, 5);
     *
     * a.div(b);
     *
@@ -139,9 +139,9 @@ open class Vec4 () extends StObject {
     * @param {Vec4} rhs - The divisor vector (the vector dividing the dividend).
     * @returns {Vec4} Self for chaining.
     * @example
-    * var a = new pc.Vec4(4, 9, 16, 25);
-    * var b = new pc.Vec4(2, 3, 4, 5);
-    * var r = new pc.Vec4();
+    * const a = new pc.Vec4(4, 9, 16, 25);
+    * const b = new pc.Vec4(2, 3, 4, 5);
+    * const r = new pc.Vec4();
     *
     * r.div2(a, b);
     * // Outputs [2, 3, 4, 5]
@@ -156,7 +156,7 @@ open class Vec4 () extends StObject {
     * @param {number} scalar - The number to divide by.
     * @returns {Vec4} Self for chaining.
     * @example
-    * var vec = new pc.Vec4(3, 6, 9, 12);
+    * const vec = new pc.Vec4(3, 6, 9, 12);
     *
     * vec.divScalar(3);
     *
@@ -172,9 +172,9 @@ open class Vec4 () extends StObject {
     * @param {Vec4} rhs - The second 4-dimensional vector operand of the dot product.
     * @returns {number} The result of the dot product operation.
     * @example
-    * var v1 = new pc.Vec4(5, 10, 20, 40);
-    * var v2 = new pc.Vec4(10, 20, 40, 80);
-    * var v1dotv2 = v1.dot(v2);
+    * const v1 = new pc.Vec4(5, 10, 20, 40);
+    * const v2 = new pc.Vec4(10, 20, 40, 80);
+    * const v1dotv2 = v1.dot(v2);
     * console.log("The result of the dot product is: " + v1dotv2);
     */
   def dot(rhs: Vec4): Double = js.native
@@ -185,8 +185,8 @@ open class Vec4 () extends StObject {
     * @param {Vec4} rhs - The vector to compare to the specified vector.
     * @returns {boolean} True if the vectors are equal and false otherwise.
     * @example
-    * var a = new pc.Vec4(1, 2, 3, 4);
-    * var b = new pc.Vec4(5, 6, 7, 8);
+    * const a = new pc.Vec4(1, 2, 3, 4);
+    * const b = new pc.Vec4(5, 6, 7, 8);
     * console.log("The two vectors are " + (a.equals(b) ? "equal" : "different"));
     */
   def equals(rhs: Vec4): Boolean = js.native
@@ -203,8 +203,8 @@ open class Vec4 () extends StObject {
     *
     * @returns {number} The magnitude of the specified 4-dimensional vector.
     * @example
-    * var vec = new pc.Vec4(3, 4, 0, 0);
-    * var len = vec.length();
+    * const vec = new pc.Vec4(3, 4, 0, 0);
+    * const len = vec.length();
     * // Outputs 5
     * console.log("The length of the vector is: " + len);
     */
@@ -215,8 +215,8 @@ open class Vec4 () extends StObject {
     *
     * @returns {number} The magnitude of the specified 4-dimensional vector.
     * @example
-    * var vec = new pc.Vec4(3, 4, 0);
-    * var len = vec.lengthSq();
+    * const vec = new pc.Vec4(3, 4, 0);
+    * const len = vec.lengthSq();
     * // Outputs 25
     * console.log("The length squared of the vector is: " + len);
     */
@@ -232,9 +232,9 @@ open class Vec4 () extends StObject {
     * range, the linear interpolant will occur on a ray extrapolated from this line.
     * @returns {Vec4} Self for chaining.
     * @example
-    * var a = new pc.Vec4(0, 0, 0, 0);
-    * var b = new pc.Vec4(10, 10, 10, 10);
-    * var r = new pc.Vec4();
+    * const a = new pc.Vec4(0, 0, 0, 0);
+    * const b = new pc.Vec4(10, 10, 10, 10);
+    * const r = new pc.Vec4();
     *
     * r.lerp(a, b, 0);   // r is equal to a
     * r.lerp(a, b, 0.5); // r is 5, 5, 5, 5
@@ -264,8 +264,8 @@ open class Vec4 () extends StObject {
     * @param {Vec4} rhs - The 4-dimensional vector used as the second multiplicand of the operation.
     * @returns {Vec4} Self for chaining.
     * @example
-    * var a = new pc.Vec4(2, 3, 4, 5);
-    * var b = new pc.Vec4(4, 5, 6, 7);
+    * const a = new pc.Vec4(2, 3, 4, 5);
+    * const b = new pc.Vec4(4, 5, 6, 7);
     *
     * a.mul(b);
     *
@@ -281,9 +281,9 @@ open class Vec4 () extends StObject {
     * @param {Vec4} rhs - The 4-dimensional vector used as the second multiplicand of the operation.
     * @returns {Vec4} Self for chaining.
     * @example
-    * var a = new pc.Vec4(2, 3, 4, 5);
-    * var b = new pc.Vec4(4, 5, 6, 7);
-    * var r = new pc.Vec4();
+    * const a = new pc.Vec4(2, 3, 4, 5);
+    * const b = new pc.Vec4(4, 5, 6, 7);
+    * const r = new pc.Vec4();
     *
     * r.mul2(a, b);
     *
@@ -298,7 +298,7 @@ open class Vec4 () extends StObject {
     * @param {number} scalar - The number to multiply by.
     * @returns {Vec4} Self for chaining.
     * @example
-    * var vec = new pc.Vec4(3, 6, 9, 12);
+    * const vec = new pc.Vec4(3, 6, 9, 12);
     *
     * vec.mulScalar(3);
     *
@@ -313,7 +313,7 @@ open class Vec4 () extends StObject {
     *
     * @returns {Vec4} Self for chaining.
     * @example
-    * var v = new pc.Vec4(25, 0, 0, 0);
+    * const v = new pc.Vec4(25, 0, 0, 0);
     *
     * v.normalize();
     *
@@ -338,7 +338,7 @@ open class Vec4 () extends StObject {
     * @param {number} w - The value to set on the fourth component of the vector.
     * @returns {Vec4} Self for chaining.
     * @example
-    * var v = new pc.Vec4();
+    * const v = new pc.Vec4();
     * v.set(5, 10, 20, 40);
     *
     * // Outputs 5, 10, 20, 40
@@ -352,8 +352,8 @@ open class Vec4 () extends StObject {
     * @param {Vec4} rhs - The vector to add to the specified vector.
     * @returns {Vec4} Self for chaining.
     * @example
-    * var a = new pc.Vec4(10, 10, 10, 10);
-    * var b = new pc.Vec4(20, 20, 20, 20);
+    * const a = new pc.Vec4(10, 10, 10, 10);
+    * const b = new pc.Vec4(20, 20, 20, 20);
     *
     * a.sub(b);
     *
@@ -369,9 +369,9 @@ open class Vec4 () extends StObject {
     * @param {Vec4} rhs - The second vector operand for the subtraction.
     * @returns {Vec4} Self for chaining.
     * @example
-    * var a = new pc.Vec4(10, 10, 10, 10);
-    * var b = new pc.Vec4(20, 20, 20, 20);
-    * var r = new pc.Vec4();
+    * const a = new pc.Vec4(10, 10, 10, 10);
+    * const b = new pc.Vec4(20, 20, 20, 20);
+    * const r = new pc.Vec4();
     *
     * r.sub2(a, b);
     *
@@ -386,7 +386,7 @@ open class Vec4 () extends StObject {
     * @param {number} scalar - The number to subtract.
     * @returns {Vec4} Self for chaining.
     * @example
-    * var vec = new pc.Vec4(3, 4, 5, 6);
+    * const vec = new pc.Vec4(3, 4, 5, 6);
     *
     * vec.subScalar(2);
     *

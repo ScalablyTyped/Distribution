@@ -1,5 +1,7 @@
 package typings.reactDatetimePicker
 
+import typings.reactDatetimePicker.distCjsSharedTypesMod.AmPmType
+import typings.reactDatetimePicker.distCjsSharedTypesMod.Detail
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,42 +9,48 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object reactDatetimePickerStrings {
   
   @js.native
-  sealed trait century extends StObject
-  inline def century: century = "century".asInstanceOf[century]
+  sealed trait am
+    extends StObject
+       with AmPmType
+  inline def am: am = "am".asInstanceOf[am]
   
   @js.native
-  sealed trait decade extends StObject
-  inline def decade: decade = "decade".asInstanceOf[decade]
+  sealed trait className extends StObject
+  inline def className: className = "className".asInstanceOf[className]
   
   @js.native
-  sealed trait end extends StObject
-  inline def end: end = "end".asInstanceOf[end]
-  
-  @js.native
-  sealed trait hour extends StObject
+  sealed trait hour
+    extends StObject
+       with Detail
   inline def hour: hour = "hour".asInstanceOf[hour]
   
   @js.native
-  sealed trait minute extends StObject
+  sealed trait maxDetail extends StObject
+  inline def maxDetail: maxDetail = "maxDetail".asInstanceOf[maxDetail]
+  
+  @js.native
+  sealed trait minute
+    extends StObject
+       with Detail
   inline def minute: minute = "minute".asInstanceOf[minute]
   
   @js.native
-  sealed trait month extends StObject
-  inline def month: month = "month".asInstanceOf[month]
+  sealed trait onChange extends StObject
+  inline def onChange: onChange = "onChange".asInstanceOf[onChange]
   
   @js.native
-  sealed trait range extends StObject
-  inline def range: range = "range".asInstanceOf[range]
+  sealed trait pm
+    extends StObject
+       with AmPmType
+  inline def pm: pm = "pm".asInstanceOf[pm]
   
   @js.native
-  sealed trait second extends StObject
+  sealed trait second
+    extends StObject
+       with Detail
   inline def second: second = "second".asInstanceOf[second]
   
   @js.native
-  sealed trait start extends StObject
-  inline def start: start = "start".asInstanceOf[start]
-  
-  @js.native
-  sealed trait year extends StObject
-  inline def year: year = "year".asInstanceOf[year]
+  sealed trait value extends StObject
+  inline def value: value = "value".asInstanceOf[value]
 }

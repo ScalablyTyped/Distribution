@@ -1,7 +1,7 @@
 
 # Scala.js typings for emotion__sheet
 
-Typings are for version 1.2.1
+Typings are for version 1.2.2
 
 ## Library description:
 emotion's stylesheet

@@ -43,7 +43,7 @@ object mod {
     def this(props: LocalizeProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: LocalizeProps, context: Any) = this()
   }
@@ -55,7 +55,7 @@ object mod {
     def this(props: TranslateProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: TranslateProps, context: Any) = this()
   }

@@ -14,7 +14,7 @@ trait CreateEndpointInput extends StObject {
   var EndpointConfigName: typings.awsSdk.clientsSagemakerMod.EndpointConfigName
   
   /**
-    * The name of the endpoint.The name must be unique within an Amazon Web Services Region in your Amazon Web Services account. The name is case-insensitive in CreateEndpoint, but the case is preserved and must be matched in .
+    * The name of the endpoint.The name must be unique within an Amazon Web Services Region in your Amazon Web Services account. The name is case-insensitive in CreateEndpoint, but the case is preserved and must be matched in InvokeEndpoint.
     */
   var EndpointName: typings.awsSdk.clientsSagemakerMod.EndpointName
   

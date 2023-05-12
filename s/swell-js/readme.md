@@ -1,7 +1,7 @@
 
 # Scala.js typings for swell-js
 
-Typings are for version 3.17
+Typings are for version 3.21.6
 
 ## Library description:
 Swell JS library for client-side stores
@@ -24,7 +24,7 @@ Swell JS library for client-side stores
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

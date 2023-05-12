@@ -18,6 +18,7 @@ import typings.monacoEditor.anon.ReadonlyRequiredIEditorLi
 import typings.monacoEditor.anon.ReadonlyRequiredIEditorMi
 import typings.monacoEditor.anon.ReadonlyRequiredIEditorPa
 import typings.monacoEditor.anon.ReadonlyRequiredIEditorPaCycle
+import typings.monacoEditor.anon.ReadonlyRequiredIEditorSt
 import typings.monacoEditor.anon.ReadonlyRequiredIGotoLoca
 import typings.monacoEditor.anon.ReadonlyRequiredIGuidesOp
 import typings.monacoEditor.anon.ReadonlyRequiredIInlineSu
@@ -40,7 +41,6 @@ import typings.monacoEditor.mod.Uri
 import typings.monacoEditor.mod.UriComponents
 import typings.monacoEditor.mod.editor.AccessibilitySupport
 import typings.monacoEditor.mod.editor.EditorAutoIndentStrategy
-import typings.monacoEditor.mod.editor.EditorExperimentalOptions
 import typings.monacoEditor.mod.editor.EditorLayoutInfo
 import typings.monacoEditor.mod.editor.EditorOption.acceptSuggestionOnCommitCharacter
 import typings.monacoEditor.mod.editor.EditorOption.acceptSuggestionOnEnter
@@ -59,6 +59,7 @@ import typings.monacoEditor.mod.editor.EditorOption.codeLens
 import typings.monacoEditor.mod.editor.EditorOption.codeLensFontFamily
 import typings.monacoEditor.mod.editor.EditorOption.codeLensFontSize
 import typings.monacoEditor.mod.editor.EditorOption.colorDecorators
+import typings.monacoEditor.mod.editor.EditorOption.colorDecoratorsLimit
 import typings.monacoEditor.mod.editor.EditorOption.columnSelection
 import typings.monacoEditor.mod.editor.EditorOption.comments
 import typings.monacoEditor.mod.editor.EditorOption.contextmenu
@@ -69,6 +70,7 @@ import typings.monacoEditor.mod.editor.EditorOption.cursorStyle
 import typings.monacoEditor.mod.editor.EditorOption.cursorSurroundingLines
 import typings.monacoEditor.mod.editor.EditorOption.cursorSurroundingLinesStyle
 import typings.monacoEditor.mod.editor.EditorOption.cursorWidth
+import typings.monacoEditor.mod.editor.EditorOption.defaultColorDecorators
 import typings.monacoEditor.mod.editor.EditorOption.definitionLinkOpensInPeek
 import typings.monacoEditor.mod.editor.EditorOption.disableLayerHinting
 import typings.monacoEditor.mod.editor.EditorOption.disableMonospaceOptimizations
@@ -77,7 +79,7 @@ import typings.monacoEditor.mod.editor.EditorOption.dragAndDrop
 import typings.monacoEditor.mod.editor.EditorOption.dropIntoEditor
 import typings.monacoEditor.mod.editor.EditorOption.editorClassName
 import typings.monacoEditor.mod.editor.EditorOption.emptySelectionClipboard
-import typings.monacoEditor.mod.editor.EditorOption.experimental
+import typings.monacoEditor.mod.editor.EditorOption.experimentalWhitespaceRendering
 import typings.monacoEditor.mod.editor.EditorOption.extraEditorClassName
 import typings.monacoEditor.mod.editor.EditorOption.fastScrollSensitivity
 import typings.monacoEditor.mod.editor.EditorOption.find
@@ -91,6 +93,7 @@ import typings.monacoEditor.mod.editor.EditorOption.fontFamily
 import typings.monacoEditor.mod.editor.EditorOption.fontInfo
 import typings.monacoEditor.mod.editor.EditorOption.fontLigatures
 import typings.monacoEditor.mod.editor.EditorOption.fontSize
+import typings.monacoEditor.mod.editor.EditorOption.fontVariations
 import typings.monacoEditor.mod.editor.EditorOption.fontWeight
 import typings.monacoEditor.mod.editor.EditorOption.formatOnPaste
 import typings.monacoEditor.mod.editor.EditorOption.formatOnType
@@ -116,6 +119,7 @@ import typings.monacoEditor.mod.editor.EditorOption.minimap
 import typings.monacoEditor.mod.editor.EditorOption.mouseStyle
 import typings.monacoEditor.mod.editor.EditorOption.mouseWheelScrollSensitivity
 import typings.monacoEditor.mod.editor.EditorOption.mouseWheelZoom
+import typings.monacoEditor.mod.editor.EditorOption.multiCursorLimit
 import typings.monacoEditor.mod.editor.EditorOption.multiCursorMergeOverlapping
 import typings.monacoEditor.mod.editor.EditorOption.multiCursorModifier
 import typings.monacoEditor.mod.editor.EditorOption.multiCursorPaste
@@ -139,6 +143,7 @@ import typings.monacoEditor.mod.editor.EditorOption.renderWhitespace
 import typings.monacoEditor.mod.editor.EditorOption.revealHorizontalRightPadding
 import typings.monacoEditor.mod.editor.EditorOption.roundedSelection
 import typings.monacoEditor.mod.editor.EditorOption.rulers
+import typings.monacoEditor.mod.editor.EditorOption.screenReaderAnnounceInlineSuggestion
 import typings.monacoEditor.mod.editor.EditorOption.scrollBeyondLastColumn
 import typings.monacoEditor.mod.editor.EditorOption.scrollBeyondLastLine
 import typings.monacoEditor.mod.editor.EditorOption.scrollPredominantAxis
@@ -152,6 +157,7 @@ import typings.monacoEditor.mod.editor.EditorOption.showUnused
 import typings.monacoEditor.mod.editor.EditorOption.smartSelect
 import typings.monacoEditor.mod.editor.EditorOption.smoothScrolling
 import typings.monacoEditor.mod.editor.EditorOption.snippetSuggestions
+import typings.monacoEditor.mod.editor.EditorOption.stickyScroll
 import typings.monacoEditor.mod.editor.EditorOption.stickyTabStops
 import typings.monacoEditor.mod.editor.EditorOption.stopRenderingLineAfter
 import typings.monacoEditor.mod.editor.EditorOption.suggest
@@ -167,6 +173,7 @@ import typings.monacoEditor.mod.editor.EditorOption.unicodeHighlighting
 import typings.monacoEditor.mod.editor.EditorOption.unusualLineTerminators
 import typings.monacoEditor.mod.editor.EditorOption.useShadowDOM
 import typings.monacoEditor.mod.editor.EditorOption.useTabStops
+import typings.monacoEditor.mod.editor.EditorOption.wordBreak
 import typings.monacoEditor.mod.editor.EditorOption.wordSeparators
 import typings.monacoEditor.mod.editor.EditorOption.wordWrap
 import typings.monacoEditor.mod.editor.EditorOption.wordWrapBreakAfterCharacters
@@ -180,6 +187,7 @@ import typings.monacoEditor.mod.editor.EditorWrappingInfo
 import typings.monacoEditor.mod.editor.FontInfo
 import typings.monacoEditor.mod.editor.IActionDescriptor
 import typings.monacoEditor.mod.editor.ICodeEditor
+import typings.monacoEditor.mod.editor.ICodeEditorOpener
 import typings.monacoEditor.mod.editor.IColorizerElementOptions
 import typings.monacoEditor.mod.editor.IColorizerOptions
 import typings.monacoEditor.mod.editor.ICommandDescriptor
@@ -188,7 +196,9 @@ import typings.monacoEditor.mod.editor.IDiffNavigator
 import typings.monacoEditor.mod.editor.IDiffNavigatorOptions
 import typings.monacoEditor.mod.editor.IEditorOption
 import typings.monacoEditor.mod.editor.IEditorOverrideServices
+import typings.monacoEditor.mod.editor.IEditorZoom
 import typings.monacoEditor.mod.editor.IKeybindingRule
+import typings.monacoEditor.mod.editor.ILinkOpener
 import typings.monacoEditor.mod.editor.IMarker
 import typings.monacoEditor.mod.editor.IMarkerData
 import typings.monacoEditor.mod.editor.IStandaloneCodeEditor
@@ -201,6 +211,7 @@ import typings.monacoEditor.mod.editor.IWebWorkerOptions
 import typings.monacoEditor.mod.editor.InternalEditorRenderLineNumbersOptions
 import typings.monacoEditor.mod.editor.InternalEditorScrollbarOptions
 import typings.monacoEditor.mod.editor.InternalQuickSuggestionsOptions
+import typings.monacoEditor.mod.editor.LineRange
 import typings.monacoEditor.mod.editor.MonacoWebWorker
 import typings.monacoEditor.mod.editor.TextEditorCursorBlinkingStyle
 import typings.monacoEditor.mod.editor.TextEditorCursorStyle
@@ -208,6 +219,7 @@ import typings.monacoEditor.mod.editor.WrappingIndent
 import typings.monacoEditor.mod.languages.CodeActionProvider
 import typings.monacoEditor.mod.languages.CodeActionProviderMetadata
 import typings.monacoEditor.mod.languages.CodeLensProvider
+import typings.monacoEditor.mod.languages.CompletionItemKind
 import typings.monacoEditor.mod.languages.CompletionItemProvider
 import typings.monacoEditor.mod.languages.DeclarationProvider
 import typings.monacoEditor.mod.languages.DefinitionProvider
@@ -260,13 +272,17 @@ import typings.reactMonacoEditor.reactMonacoEditorStrings.brackets
 import typings.reactMonacoEditor.reactMonacoEditorStrings.copy
 import typings.reactMonacoEditor.reactMonacoEditorStrings.ctrlKey
 import typings.reactMonacoEditor.reactMonacoEditorStrings.default
+import typings.reactMonacoEditor.reactMonacoEditorStrings.dimmed
 import typings.reactMonacoEditor.reactMonacoEditorStrings.editable
 import typings.reactMonacoEditor.reactMonacoEditorStrings.editor
+import typings.reactMonacoEditor.reactMonacoEditorStrings.explicit
 import typings.reactMonacoEditor.reactMonacoEditorStrings.first
+import typings.reactMonacoEditor.reactMonacoEditorStrings.font
 import typings.reactMonacoEditor.reactMonacoEditorStrings.full
 import typings.reactMonacoEditor.reactMonacoEditorStrings.gutter
 import typings.reactMonacoEditor.reactMonacoEditorStrings.indentation
 import typings.reactMonacoEditor.reactMonacoEditorStrings.inherit
+import typings.reactMonacoEditor.reactMonacoEditorStrings.keepAll
 import typings.reactMonacoEditor.reactMonacoEditorStrings.languageDefined
 import typings.reactMonacoEditor.reactMonacoEditorStrings.line
 import typings.reactMonacoEditor.reactMonacoEditorStrings.metaKey
@@ -274,6 +290,7 @@ import typings.reactMonacoEditor.reactMonacoEditorStrings.mouseover
 import typings.reactMonacoEditor.reactMonacoEditorStrings.near
 import typings.reactMonacoEditor.reactMonacoEditorStrings.never
 import typings.reactMonacoEditor.reactMonacoEditorStrings.none
+import typings.reactMonacoEditor.reactMonacoEditorStrings.normal
 import typings.reactMonacoEditor.reactMonacoEditorStrings.off
 import typings.reactMonacoEditor.reactMonacoEditorStrings.on
 import typings.reactMonacoEditor.reactMonacoEditorStrings.onlySnippets
@@ -285,6 +302,7 @@ import typings.reactMonacoEditor.reactMonacoEditorStrings.selection
 import typings.reactMonacoEditor.reactMonacoEditorStrings.simple
 import typings.reactMonacoEditor.reactMonacoEditorStrings.smart
 import typings.reactMonacoEditor.reactMonacoEditorStrings.spread
+import typings.reactMonacoEditor.reactMonacoEditorStrings.svg
 import typings.reactMonacoEditor.reactMonacoEditorStrings.text
 import typings.reactMonacoEditor.reactMonacoEditorStrings.top
 import typings.reactMonacoEditor.reactMonacoEditorStrings.trailing
@@ -375,6 +393,8 @@ object anon {
     
     var colorDecorators: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.colorDecorators, Boolean]
     
+    var colorDecoratorsLimit: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.colorDecoratorsLimit, Double]
+    
     var columnSelection: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.columnSelection, Boolean]
     
     var comments: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.comments, ReadonlyRequiredIEditorCo]
@@ -388,7 +408,10 @@ object anon {
         TextEditorCursorBlinkingStyle
       ]
     
-    var cursorSmoothCaretAnimation: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.cursorSmoothCaretAnimation, Boolean]
+    var cursorSmoothCaretAnimation: IEditorOption[
+        typings.monacoEditor.mod.editor.EditorOption.cursorSmoothCaretAnimation, 
+        on | off | explicit
+      ]
     
     var cursorStyle: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.cursorStyle, TextEditorCursorStyle]
     
@@ -400,6 +423,8 @@ object anon {
       ]
     
     var cursorWidth: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.cursorWidth, Double]
+    
+    var defaultColorDecorators: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.defaultColorDecorators, Boolean]
     
     var definitionLinkOpensInPeek: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.definitionLinkOpensInPeek, Boolean]
     
@@ -423,9 +448,9 @@ object anon {
     
     var emptySelectionClipboard: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.emptySelectionClipboard, Boolean]
     
-    var experimental: IEditorOption[
-        typings.monacoEditor.mod.editor.EditorOption.experimental, 
-        EditorExperimentalOptions
+    var experimentalWhitespaceRendering: IEditorOption[
+        typings.monacoEditor.mod.editor.EditorOption.experimentalWhitespaceRendering, 
+        off | svg | font
       ]
     
     var extraEditorClassName: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.extraEditorClassName, String]
@@ -453,6 +478,8 @@ object anon {
     var fontLigatures2: IEditorOption[fontLigatures, String]
     
     var fontSize: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.fontSize, Double]
+    
+    var fontVariations: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.fontVariations, String]
     
     var fontWeight: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.fontWeight, String]
     
@@ -486,7 +513,7 @@ object anon {
     
     var lightbulb: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.lightbulb, ReadonlyRequiredIEditorLi]
     
-    var lineDecorationsWidth: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.lineDecorationsWidth, String | Double]
+    var lineDecorationsWidth: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.lineDecorationsWidth, Double]
     
     var lineHeight: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.lineHeight, Double]
     
@@ -510,6 +537,8 @@ object anon {
     var mouseWheelScrollSensitivity: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.mouseWheelScrollSensitivity, Double]
     
     var mouseWheelZoom: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.mouseWheelZoom, Boolean]
+    
+    var multiCursorLimit: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.multiCursorLimit, Double]
     
     var multiCursorMergeOverlapping: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.multiCursorMergeOverlapping, Boolean]
     
@@ -550,7 +579,7 @@ object anon {
     
     var renderControlCharacters: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.renderControlCharacters, Boolean]
     
-    var renderFinalNewline: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.renderFinalNewline, Boolean]
+    var renderFinalNewline: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.renderFinalNewline, on | off | dimmed]
     
     var renderLineHighlight: IEditorOption[
         typings.monacoEditor.mod.editor.EditorOption.renderLineHighlight, 
@@ -577,6 +606,11 @@ object anon {
     var roundedSelection: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.roundedSelection, Boolean]
     
     var rulers: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.rulers, js.Object]
+    
+    var screenReaderAnnounceInlineSuggestion: IEditorOption[
+        typings.monacoEditor.mod.editor.EditorOption.screenReaderAnnounceInlineSuggestion, 
+        Boolean
+      ]
     
     var scrollBeyondLastColumn: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.scrollBeyondLastColumn, Double]
     
@@ -614,6 +648,11 @@ object anon {
     var snippetSuggestions: IEditorOption[
         typings.monacoEditor.mod.editor.EditorOption.snippetSuggestions, 
         none | top | bottom | `inline`
+      ]
+    
+    var stickyScroll: IEditorOption[
+        typings.monacoEditor.mod.editor.EditorOption.stickyScroll, 
+        ReadonlyRequiredIEditorSt
       ]
     
     var stickyTabStops: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.stickyTabStops, Boolean]
@@ -654,6 +693,8 @@ object anon {
     var useShadowDOM: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.useShadowDOM, Boolean]
     
     var useTabStops: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.useTabStops, Boolean]
+    
+    var wordBreak: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.wordBreak, normal | keepAll]
     
     var wordSeparators: IEditorOption[typings.monacoEditor.mod.editor.EditorOption.wordSeparators, String]
     
@@ -699,16 +740,18 @@ object anon {
       codeLensFontFamily: IEditorOption[codeLensFontFamily, String],
       codeLensFontSize: IEditorOption[codeLensFontSize, Double],
       colorDecorators: IEditorOption[colorDecorators, Boolean],
+      colorDecoratorsLimit: IEditorOption[colorDecoratorsLimit, Double],
       columnSelection: IEditorOption[columnSelection, Boolean],
       comments: IEditorOption[comments, ReadonlyRequiredIEditorCo],
       contextmenu: IEditorOption[contextmenu, Boolean],
       copyWithSyntaxHighlighting: IEditorOption[copyWithSyntaxHighlighting, Boolean],
       cursorBlinking: IEditorOption[cursorBlinking, TextEditorCursorBlinkingStyle],
-      cursorSmoothCaretAnimation: IEditorOption[cursorSmoothCaretAnimation, Boolean],
+      cursorSmoothCaretAnimation: IEditorOption[cursorSmoothCaretAnimation, on | off | explicit],
       cursorStyle: IEditorOption[cursorStyle, TextEditorCursorStyle],
       cursorSurroundingLines: IEditorOption[cursorSurroundingLines, Double],
       cursorSurroundingLinesStyle: IEditorOption[cursorSurroundingLinesStyle, default | all],
       cursorWidth: IEditorOption[cursorWidth, Double],
+      defaultColorDecorators: IEditorOption[defaultColorDecorators, Boolean],
       definitionLinkOpensInPeek: IEditorOption[definitionLinkOpensInPeek, Boolean],
       disableLayerHinting: IEditorOption[disableLayerHinting, Boolean],
       disableMonospaceOptimizations: IEditorOption[disableMonospaceOptimizations, Boolean],
@@ -717,7 +760,7 @@ object anon {
       dropIntoEditor: IEditorOption[dropIntoEditor, ReadonlyRequiredIDropInto],
       editorClassName: IEditorOption[editorClassName, String],
       emptySelectionClipboard: IEditorOption[emptySelectionClipboard, Boolean],
-      experimental: IEditorOption[experimental, EditorExperimentalOptions],
+      experimentalWhitespaceRendering: IEditorOption[experimentalWhitespaceRendering, off | svg | font],
       extraEditorClassName: IEditorOption[extraEditorClassName, String],
       fastScrollSensitivity: IEditorOption[fastScrollSensitivity, Double],
       find: IEditorOption[find, ReadonlyRequiredIEditorFi],
@@ -731,6 +774,7 @@ object anon {
       fontInfo: IEditorOption[fontInfo, FontInfo],
       fontLigatures2: IEditorOption[fontLigatures, String],
       fontSize: IEditorOption[fontSize, Double],
+      fontVariations: IEditorOption[fontVariations, String],
       fontWeight: IEditorOption[fontWeight, String],
       formatOnPaste: IEditorOption[formatOnPaste, Boolean],
       formatOnType: IEditorOption[formatOnType, Boolean],
@@ -744,7 +788,7 @@ object anon {
       layoutInfo: IEditorOption[layoutInfo, EditorLayoutInfo],
       letterSpacing: IEditorOption[letterSpacing, Double],
       lightbulb: IEditorOption[lightbulb, ReadonlyRequiredIEditorLi],
-      lineDecorationsWidth: IEditorOption[lineDecorationsWidth, String | Double],
+      lineDecorationsWidth: IEditorOption[lineDecorationsWidth, Double],
       lineHeight: IEditorOption[lineHeight, Double],
       lineNumbers: IEditorOption[lineNumbers, InternalEditorRenderLineNumbersOptions],
       lineNumbersMinChars: IEditorOption[lineNumbersMinChars, Double],
@@ -755,6 +799,7 @@ object anon {
       mouseStyle: IEditorOption[mouseStyle, default | text | copy],
       mouseWheelScrollSensitivity: IEditorOption[mouseWheelScrollSensitivity, Double],
       mouseWheelZoom: IEditorOption[mouseWheelZoom, Boolean],
+      multiCursorLimit: IEditorOption[multiCursorLimit, Double],
       multiCursorMergeOverlapping: IEditorOption[multiCursorMergeOverlapping, Boolean],
       multiCursorModifier: IEditorOption[multiCursorModifier, altKey | metaKey | ctrlKey],
       multiCursorPaste: IEditorOption[multiCursorPaste, spread | full],
@@ -770,7 +815,7 @@ object anon {
       readOnly: IEditorOption[readOnly, Boolean],
       renameOnType: IEditorOption[renameOnType, Boolean],
       renderControlCharacters: IEditorOption[renderControlCharacters, Boolean],
-      renderFinalNewline: IEditorOption[renderFinalNewline, Boolean],
+      renderFinalNewline: IEditorOption[renderFinalNewline, on | off | dimmed],
       renderLineHighlight: IEditorOption[renderLineHighlight, all | line | none | gutter],
       renderLineHighlightOnlyWhenFocus: IEditorOption[renderLineHighlightOnlyWhenFocus, Boolean],
       renderValidationDecorations: IEditorOption[renderValidationDecorations, on | off | editable],
@@ -778,6 +823,7 @@ object anon {
       revealHorizontalRightPadding: IEditorOption[revealHorizontalRightPadding, Double],
       roundedSelection: IEditorOption[roundedSelection, Boolean],
       rulers: IEditorOption[rulers, js.Object],
+      screenReaderAnnounceInlineSuggestion: IEditorOption[screenReaderAnnounceInlineSuggestion, Boolean],
       scrollBeyondLastColumn: IEditorOption[scrollBeyondLastColumn, Double],
       scrollBeyondLastLine: IEditorOption[scrollBeyondLastLine, Boolean],
       scrollPredominantAxis: IEditorOption[scrollPredominantAxis, Boolean],
@@ -791,6 +837,7 @@ object anon {
       smartSelect: IEditorOption[smartSelect, ReadonlyRequiredISmartSel],
       smoothScrolling: IEditorOption[smoothScrolling, Boolean],
       snippetSuggestions: IEditorOption[snippetSuggestions, none | top | bottom | `inline`],
+      stickyScroll: IEditorOption[stickyScroll, ReadonlyRequiredIEditorSt],
       stickyTabStops: IEditorOption[stickyTabStops, Boolean],
       stopRenderingLineAfter: IEditorOption[stopRenderingLineAfter, Double],
       suggest: IEditorOption[suggest, ReadonlyRequiredISuggestO],
@@ -806,6 +853,7 @@ object anon {
       unusualLineTerminators: IEditorOption[unusualLineTerminators, auto | off | prompt],
       useShadowDOM: IEditorOption[useShadowDOM, Boolean],
       useTabStops: IEditorOption[useTabStops, Boolean],
+      wordBreak: IEditorOption[wordBreak, normal | keepAll],
       wordSeparators: IEditorOption[wordSeparators, String],
       wordWrap: IEditorOption[wordWrap, on | off | wordWrapColumn | bounded],
       wordWrapBreakAfterCharacters: IEditorOption[wordWrapBreakAfterCharacters, String],
@@ -817,7 +865,7 @@ object anon {
       wrappingInfo: IEditorOption[wrappingInfo, EditorWrappingInfo],
       wrappingStrategy: IEditorOption[wrappingStrategy, simple | advanced]
     ): TypeofEditorOptions = {
-      val __obj = js.Dynamic.literal(acceptSuggestionOnCommitCharacter = acceptSuggestionOnCommitCharacter.asInstanceOf[js.Any], acceptSuggestionOnEnter = acceptSuggestionOnEnter.asInstanceOf[js.Any], accessibilityPageSize = accessibilityPageSize.asInstanceOf[js.Any], accessibilitySupport = accessibilitySupport.asInstanceOf[js.Any], ariaLabel = ariaLabel.asInstanceOf[js.Any], autoClosingBrackets = autoClosingBrackets.asInstanceOf[js.Any], autoClosingDelete = autoClosingDelete.asInstanceOf[js.Any], autoClosingOvertype = autoClosingOvertype.asInstanceOf[js.Any], autoClosingQuotes = autoClosingQuotes.asInstanceOf[js.Any], autoIndent = autoIndent.asInstanceOf[js.Any], autoSurround = autoSurround.asInstanceOf[js.Any], automaticLayout = automaticLayout.asInstanceOf[js.Any], bracketPairColorization = bracketPairColorization.asInstanceOf[js.Any], bracketPairGuides = bracketPairGuides.asInstanceOf[js.Any], codeLens = codeLens.asInstanceOf[js.Any], codeLensFontFamily = codeLensFontFamily.asInstanceOf[js.Any], codeLensFontSize = codeLensFontSize.asInstanceOf[js.Any], colorDecorators = colorDecorators.asInstanceOf[js.Any], columnSelection = columnSelection.asInstanceOf[js.Any], comments = comments.asInstanceOf[js.Any], contextmenu = contextmenu.asInstanceOf[js.Any], copyWithSyntaxHighlighting = copyWithSyntaxHighlighting.asInstanceOf[js.Any], cursorBlinking = cursorBlinking.asInstanceOf[js.Any], cursorSmoothCaretAnimation = cursorSmoothCaretAnimation.asInstanceOf[js.Any], cursorStyle = cursorStyle.asInstanceOf[js.Any], cursorSurroundingLines = cursorSurroundingLines.asInstanceOf[js.Any], cursorSurroundingLinesStyle = cursorSurroundingLinesStyle.asInstanceOf[js.Any], cursorWidth = cursorWidth.asInstanceOf[js.Any], definitionLinkOpensInPeek = definitionLinkOpensInPeek.asInstanceOf[js.Any], disableLayerHinting = disableLayerHinting.asInstanceOf[js.Any], disableMonospaceOptimizations = disableMonospaceOptimizations.asInstanceOf[js.Any], domReadOnly = domReadOnly.asInstanceOf[js.Any], dragAndDrop = dragAndDrop.asInstanceOf[js.Any], dropIntoEditor = dropIntoEditor.asInstanceOf[js.Any], editorClassName = editorClassName.asInstanceOf[js.Any], emptySelectionClipboard = emptySelectionClipboard.asInstanceOf[js.Any], experimental = experimental.asInstanceOf[js.Any], extraEditorClassName = extraEditorClassName.asInstanceOf[js.Any], fastScrollSensitivity = fastScrollSensitivity.asInstanceOf[js.Any], find = find.asInstanceOf[js.Any], fixedOverflowWidgets = fixedOverflowWidgets.asInstanceOf[js.Any], folding = folding.asInstanceOf[js.Any], foldingHighlight = foldingHighlight.asInstanceOf[js.Any], foldingImportsByDefault = foldingImportsByDefault.asInstanceOf[js.Any], foldingMaximumRegions = foldingMaximumRegions.asInstanceOf[js.Any], foldingStrategy = foldingStrategy.asInstanceOf[js.Any], fontFamily = fontFamily.asInstanceOf[js.Any], fontInfo = fontInfo.asInstanceOf[js.Any], fontLigatures2 = fontLigatures2.asInstanceOf[js.Any], fontSize = fontSize.asInstanceOf[js.Any], fontWeight = fontWeight.asInstanceOf[js.Any], formatOnPaste = formatOnPaste.asInstanceOf[js.Any], formatOnType = formatOnType.asInstanceOf[js.Any], glyphMargin = glyphMargin.asInstanceOf[js.Any], gotoLocation = gotoLocation.asInstanceOf[js.Any], hideCursorInOverviewRuler = hideCursorInOverviewRuler.asInstanceOf[js.Any], hover = hover.asInstanceOf[js.Any], inDiffEditor = inDiffEditor.asInstanceOf[js.Any], inlayHints = inlayHints.asInstanceOf[js.Any], inlineSuggest = inlineSuggest.asInstanceOf[js.Any], layoutInfo = layoutInfo.asInstanceOf[js.Any], letterSpacing = letterSpacing.asInstanceOf[js.Any], lightbulb = lightbulb.asInstanceOf[js.Any], lineDecorationsWidth = lineDecorationsWidth.asInstanceOf[js.Any], lineHeight = lineHeight.asInstanceOf[js.Any], lineNumbers = lineNumbers.asInstanceOf[js.Any], lineNumbersMinChars = lineNumbersMinChars.asInstanceOf[js.Any], linkedEditing = linkedEditing.asInstanceOf[js.Any], links = links.asInstanceOf[js.Any], matchBrackets = matchBrackets.asInstanceOf[js.Any], minimap = minimap.asInstanceOf[js.Any], mouseStyle = mouseStyle.asInstanceOf[js.Any], mouseWheelScrollSensitivity = mouseWheelScrollSensitivity.asInstanceOf[js.Any], mouseWheelZoom = mouseWheelZoom.asInstanceOf[js.Any], multiCursorMergeOverlapping = multiCursorMergeOverlapping.asInstanceOf[js.Any], multiCursorModifier = multiCursorModifier.asInstanceOf[js.Any], multiCursorPaste = multiCursorPaste.asInstanceOf[js.Any], occurrencesHighlight = occurrencesHighlight.asInstanceOf[js.Any], overviewRulerBorder = overviewRulerBorder.asInstanceOf[js.Any], overviewRulerLanes = overviewRulerLanes.asInstanceOf[js.Any], padding = padding.asInstanceOf[js.Any], parameterHints = parameterHints.asInstanceOf[js.Any], peekWidgetDefaultFocus = peekWidgetDefaultFocus.asInstanceOf[js.Any], pixelRatio = pixelRatio.asInstanceOf[js.Any], quickSuggestions = quickSuggestions.asInstanceOf[js.Any], quickSuggestionsDelay = quickSuggestionsDelay.asInstanceOf[js.Any], readOnly = readOnly.asInstanceOf[js.Any], renameOnType = renameOnType.asInstanceOf[js.Any], renderControlCharacters = renderControlCharacters.asInstanceOf[js.Any], renderFinalNewline = renderFinalNewline.asInstanceOf[js.Any], renderLineHighlight = renderLineHighlight.asInstanceOf[js.Any], renderLineHighlightOnlyWhenFocus = renderLineHighlightOnlyWhenFocus.asInstanceOf[js.Any], renderValidationDecorations = renderValidationDecorations.asInstanceOf[js.Any], renderWhitespace = renderWhitespace.asInstanceOf[js.Any], revealHorizontalRightPadding = revealHorizontalRightPadding.asInstanceOf[js.Any], roundedSelection = roundedSelection.asInstanceOf[js.Any], rulers = rulers.asInstanceOf[js.Any], scrollBeyondLastColumn = scrollBeyondLastColumn.asInstanceOf[js.Any], scrollBeyondLastLine = scrollBeyondLastLine.asInstanceOf[js.Any], scrollPredominantAxis = scrollPredominantAxis.asInstanceOf[js.Any], scrollbar = scrollbar.asInstanceOf[js.Any], selectOnLineNumbers = selectOnLineNumbers.asInstanceOf[js.Any], selectionClipboard = selectionClipboard.asInstanceOf[js.Any], selectionHighlight = selectionHighlight.asInstanceOf[js.Any], showDeprecated = showDeprecated.asInstanceOf[js.Any], showFoldingControls = showFoldingControls.asInstanceOf[js.Any], showUnused = showUnused.asInstanceOf[js.Any], smartSelect = smartSelect.asInstanceOf[js.Any], smoothScrolling = smoothScrolling.asInstanceOf[js.Any], snippetSuggestions = snippetSuggestions.asInstanceOf[js.Any], stickyTabStops = stickyTabStops.asInstanceOf[js.Any], stopRenderingLineAfter = stopRenderingLineAfter.asInstanceOf[js.Any], suggest = suggest.asInstanceOf[js.Any], suggestFontSize = suggestFontSize.asInstanceOf[js.Any], suggestLineHeight = suggestLineHeight.asInstanceOf[js.Any], suggestOnTriggerCharacters = suggestOnTriggerCharacters.asInstanceOf[js.Any], suggestSelection = suggestSelection.asInstanceOf[js.Any], tabCompletion = tabCompletion.asInstanceOf[js.Any], tabFocusMode = tabFocusMode.asInstanceOf[js.Any], tabIndex = tabIndex.asInstanceOf[js.Any], unfoldOnClickAfterEndOfLine = unfoldOnClickAfterEndOfLine.asInstanceOf[js.Any], unicodeHighlight = unicodeHighlight.asInstanceOf[js.Any], unusualLineTerminators = unusualLineTerminators.asInstanceOf[js.Any], useShadowDOM = useShadowDOM.asInstanceOf[js.Any], useTabStops = useTabStops.asInstanceOf[js.Any], wordSeparators = wordSeparators.asInstanceOf[js.Any], wordWrap = wordWrap.asInstanceOf[js.Any], wordWrapBreakAfterCharacters = wordWrapBreakAfterCharacters.asInstanceOf[js.Any], wordWrapBreakBeforeCharacters = wordWrapBreakBeforeCharacters.asInstanceOf[js.Any], wordWrapColumn = wordWrapColumn.asInstanceOf[js.Any], wordWrapOverride1 = wordWrapOverride1.asInstanceOf[js.Any], wordWrapOverride2 = wordWrapOverride2.asInstanceOf[js.Any], wrappingIndent = wrappingIndent.asInstanceOf[js.Any], wrappingInfo = wrappingInfo.asInstanceOf[js.Any], wrappingStrategy = wrappingStrategy.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(acceptSuggestionOnCommitCharacter = acceptSuggestionOnCommitCharacter.asInstanceOf[js.Any], acceptSuggestionOnEnter = acceptSuggestionOnEnter.asInstanceOf[js.Any], accessibilityPageSize = accessibilityPageSize.asInstanceOf[js.Any], accessibilitySupport = accessibilitySupport.asInstanceOf[js.Any], ariaLabel = ariaLabel.asInstanceOf[js.Any], autoClosingBrackets = autoClosingBrackets.asInstanceOf[js.Any], autoClosingDelete = autoClosingDelete.asInstanceOf[js.Any], autoClosingOvertype = autoClosingOvertype.asInstanceOf[js.Any], autoClosingQuotes = autoClosingQuotes.asInstanceOf[js.Any], autoIndent = autoIndent.asInstanceOf[js.Any], autoSurround = autoSurround.asInstanceOf[js.Any], automaticLayout = automaticLayout.asInstanceOf[js.Any], bracketPairColorization = bracketPairColorization.asInstanceOf[js.Any], bracketPairGuides = bracketPairGuides.asInstanceOf[js.Any], codeLens = codeLens.asInstanceOf[js.Any], codeLensFontFamily = codeLensFontFamily.asInstanceOf[js.Any], codeLensFontSize = codeLensFontSize.asInstanceOf[js.Any], colorDecorators = colorDecorators.asInstanceOf[js.Any], colorDecoratorsLimit = colorDecoratorsLimit.asInstanceOf[js.Any], columnSelection = columnSelection.asInstanceOf[js.Any], comments = comments.asInstanceOf[js.Any], contextmenu = contextmenu.asInstanceOf[js.Any], copyWithSyntaxHighlighting = copyWithSyntaxHighlighting.asInstanceOf[js.Any], cursorBlinking = cursorBlinking.asInstanceOf[js.Any], cursorSmoothCaretAnimation = cursorSmoothCaretAnimation.asInstanceOf[js.Any], cursorStyle = cursorStyle.asInstanceOf[js.Any], cursorSurroundingLines = cursorSurroundingLines.asInstanceOf[js.Any], cursorSurroundingLinesStyle = cursorSurroundingLinesStyle.asInstanceOf[js.Any], cursorWidth = cursorWidth.asInstanceOf[js.Any], defaultColorDecorators = defaultColorDecorators.asInstanceOf[js.Any], definitionLinkOpensInPeek = definitionLinkOpensInPeek.asInstanceOf[js.Any], disableLayerHinting = disableLayerHinting.asInstanceOf[js.Any], disableMonospaceOptimizations = disableMonospaceOptimizations.asInstanceOf[js.Any], domReadOnly = domReadOnly.asInstanceOf[js.Any], dragAndDrop = dragAndDrop.asInstanceOf[js.Any], dropIntoEditor = dropIntoEditor.asInstanceOf[js.Any], editorClassName = editorClassName.asInstanceOf[js.Any], emptySelectionClipboard = emptySelectionClipboard.asInstanceOf[js.Any], experimentalWhitespaceRendering = experimentalWhitespaceRendering.asInstanceOf[js.Any], extraEditorClassName = extraEditorClassName.asInstanceOf[js.Any], fastScrollSensitivity = fastScrollSensitivity.asInstanceOf[js.Any], find = find.asInstanceOf[js.Any], fixedOverflowWidgets = fixedOverflowWidgets.asInstanceOf[js.Any], folding = folding.asInstanceOf[js.Any], foldingHighlight = foldingHighlight.asInstanceOf[js.Any], foldingImportsByDefault = foldingImportsByDefault.asInstanceOf[js.Any], foldingMaximumRegions = foldingMaximumRegions.asInstanceOf[js.Any], foldingStrategy = foldingStrategy.asInstanceOf[js.Any], fontFamily = fontFamily.asInstanceOf[js.Any], fontInfo = fontInfo.asInstanceOf[js.Any], fontLigatures2 = fontLigatures2.asInstanceOf[js.Any], fontSize = fontSize.asInstanceOf[js.Any], fontVariations = fontVariations.asInstanceOf[js.Any], fontWeight = fontWeight.asInstanceOf[js.Any], formatOnPaste = formatOnPaste.asInstanceOf[js.Any], formatOnType = formatOnType.asInstanceOf[js.Any], glyphMargin = glyphMargin.asInstanceOf[js.Any], gotoLocation = gotoLocation.asInstanceOf[js.Any], hideCursorInOverviewRuler = hideCursorInOverviewRuler.asInstanceOf[js.Any], hover = hover.asInstanceOf[js.Any], inDiffEditor = inDiffEditor.asInstanceOf[js.Any], inlayHints = inlayHints.asInstanceOf[js.Any], inlineSuggest = inlineSuggest.asInstanceOf[js.Any], layoutInfo = layoutInfo.asInstanceOf[js.Any], letterSpacing = letterSpacing.asInstanceOf[js.Any], lightbulb = lightbulb.asInstanceOf[js.Any], lineDecorationsWidth = lineDecorationsWidth.asInstanceOf[js.Any], lineHeight = lineHeight.asInstanceOf[js.Any], lineNumbers = lineNumbers.asInstanceOf[js.Any], lineNumbersMinChars = lineNumbersMinChars.asInstanceOf[js.Any], linkedEditing = linkedEditing.asInstanceOf[js.Any], links = links.asInstanceOf[js.Any], matchBrackets = matchBrackets.asInstanceOf[js.Any], minimap = minimap.asInstanceOf[js.Any], mouseStyle = mouseStyle.asInstanceOf[js.Any], mouseWheelScrollSensitivity = mouseWheelScrollSensitivity.asInstanceOf[js.Any], mouseWheelZoom = mouseWheelZoom.asInstanceOf[js.Any], multiCursorLimit = multiCursorLimit.asInstanceOf[js.Any], multiCursorMergeOverlapping = multiCursorMergeOverlapping.asInstanceOf[js.Any], multiCursorModifier = multiCursorModifier.asInstanceOf[js.Any], multiCursorPaste = multiCursorPaste.asInstanceOf[js.Any], occurrencesHighlight = occurrencesHighlight.asInstanceOf[js.Any], overviewRulerBorder = overviewRulerBorder.asInstanceOf[js.Any], overviewRulerLanes = overviewRulerLanes.asInstanceOf[js.Any], padding = padding.asInstanceOf[js.Any], parameterHints = parameterHints.asInstanceOf[js.Any], peekWidgetDefaultFocus = peekWidgetDefaultFocus.asInstanceOf[js.Any], pixelRatio = pixelRatio.asInstanceOf[js.Any], quickSuggestions = quickSuggestions.asInstanceOf[js.Any], quickSuggestionsDelay = quickSuggestionsDelay.asInstanceOf[js.Any], readOnly = readOnly.asInstanceOf[js.Any], renameOnType = renameOnType.asInstanceOf[js.Any], renderControlCharacters = renderControlCharacters.asInstanceOf[js.Any], renderFinalNewline = renderFinalNewline.asInstanceOf[js.Any], renderLineHighlight = renderLineHighlight.asInstanceOf[js.Any], renderLineHighlightOnlyWhenFocus = renderLineHighlightOnlyWhenFocus.asInstanceOf[js.Any], renderValidationDecorations = renderValidationDecorations.asInstanceOf[js.Any], renderWhitespace = renderWhitespace.asInstanceOf[js.Any], revealHorizontalRightPadding = revealHorizontalRightPadding.asInstanceOf[js.Any], roundedSelection = roundedSelection.asInstanceOf[js.Any], rulers = rulers.asInstanceOf[js.Any], screenReaderAnnounceInlineSuggestion = screenReaderAnnounceInlineSuggestion.asInstanceOf[js.Any], scrollBeyondLastColumn = scrollBeyondLastColumn.asInstanceOf[js.Any], scrollBeyondLastLine = scrollBeyondLastLine.asInstanceOf[js.Any], scrollPredominantAxis = scrollPredominantAxis.asInstanceOf[js.Any], scrollbar = scrollbar.asInstanceOf[js.Any], selectOnLineNumbers = selectOnLineNumbers.asInstanceOf[js.Any], selectionClipboard = selectionClipboard.asInstanceOf[js.Any], selectionHighlight = selectionHighlight.asInstanceOf[js.Any], showDeprecated = showDeprecated.asInstanceOf[js.Any], showFoldingControls = showFoldingControls.asInstanceOf[js.Any], showUnused = showUnused.asInstanceOf[js.Any], smartSelect = smartSelect.asInstanceOf[js.Any], smoothScrolling = smoothScrolling.asInstanceOf[js.Any], snippetSuggestions = snippetSuggestions.asInstanceOf[js.Any], stickyScroll = stickyScroll.asInstanceOf[js.Any], stickyTabStops = stickyTabStops.asInstanceOf[js.Any], stopRenderingLineAfter = stopRenderingLineAfter.asInstanceOf[js.Any], suggest = suggest.asInstanceOf[js.Any], suggestFontSize = suggestFontSize.asInstanceOf[js.Any], suggestLineHeight = suggestLineHeight.asInstanceOf[js.Any], suggestOnTriggerCharacters = suggestOnTriggerCharacters.asInstanceOf[js.Any], suggestSelection = suggestSelection.asInstanceOf[js.Any], tabCompletion = tabCompletion.asInstanceOf[js.Any], tabFocusMode = tabFocusMode.asInstanceOf[js.Any], tabIndex = tabIndex.asInstanceOf[js.Any], unfoldOnClickAfterEndOfLine = unfoldOnClickAfterEndOfLine.asInstanceOf[js.Any], unicodeHighlight = unicodeHighlight.asInstanceOf[js.Any], unusualLineTerminators = unusualLineTerminators.asInstanceOf[js.Any], useShadowDOM = useShadowDOM.asInstanceOf[js.Any], useTabStops = useTabStops.asInstanceOf[js.Any], wordBreak = wordBreak.asInstanceOf[js.Any], wordSeparators = wordSeparators.asInstanceOf[js.Any], wordWrap = wordWrap.asInstanceOf[js.Any], wordWrapBreakAfterCharacters = wordWrapBreakAfterCharacters.asInstanceOf[js.Any], wordWrapBreakBeforeCharacters = wordWrapBreakBeforeCharacters.asInstanceOf[js.Any], wordWrapColumn = wordWrapColumn.asInstanceOf[js.Any], wordWrapOverride1 = wordWrapOverride1.asInstanceOf[js.Any], wordWrapOverride2 = wordWrapOverride2.asInstanceOf[js.Any], wrappingIndent = wrappingIndent.asInstanceOf[js.Any], wrappingInfo = wrappingInfo.asInstanceOf[js.Any], wrappingStrategy = wrappingStrategy.asInstanceOf[js.Any])
       __obj.asInstanceOf[TypeofEditorOptions]
     }
     
@@ -860,6 +908,8 @@ object anon {
       
       inline def setColorDecorators(value: IEditorOption[colorDecorators, Boolean]): Self = StObject.set(x, "colorDecorators", value.asInstanceOf[js.Any])
       
+      inline def setColorDecoratorsLimit(value: IEditorOption[colorDecoratorsLimit, Double]): Self = StObject.set(x, "colorDecoratorsLimit", value.asInstanceOf[js.Any])
+      
       inline def setColumnSelection(value: IEditorOption[columnSelection, Boolean]): Self = StObject.set(x, "columnSelection", value.asInstanceOf[js.Any])
       
       inline def setComments(value: IEditorOption[comments, ReadonlyRequiredIEditorCo]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
@@ -870,7 +920,7 @@ object anon {
       
       inline def setCursorBlinking(value: IEditorOption[cursorBlinking, TextEditorCursorBlinkingStyle]): Self = StObject.set(x, "cursorBlinking", value.asInstanceOf[js.Any])
       
-      inline def setCursorSmoothCaretAnimation(value: IEditorOption[cursorSmoothCaretAnimation, Boolean]): Self = StObject.set(x, "cursorSmoothCaretAnimation", value.asInstanceOf[js.Any])
+      inline def setCursorSmoothCaretAnimation(value: IEditorOption[cursorSmoothCaretAnimation, on | off | explicit]): Self = StObject.set(x, "cursorSmoothCaretAnimation", value.asInstanceOf[js.Any])
       
       inline def setCursorStyle(value: IEditorOption[cursorStyle, TextEditorCursorStyle]): Self = StObject.set(x, "cursorStyle", value.asInstanceOf[js.Any])
       
@@ -879,6 +929,8 @@ object anon {
       inline def setCursorSurroundingLinesStyle(value: IEditorOption[cursorSurroundingLinesStyle, default | all]): Self = StObject.set(x, "cursorSurroundingLinesStyle", value.asInstanceOf[js.Any])
       
       inline def setCursorWidth(value: IEditorOption[cursorWidth, Double]): Self = StObject.set(x, "cursorWidth", value.asInstanceOf[js.Any])
+      
+      inline def setDefaultColorDecorators(value: IEditorOption[defaultColorDecorators, Boolean]): Self = StObject.set(x, "defaultColorDecorators", value.asInstanceOf[js.Any])
       
       inline def setDefinitionLinkOpensInPeek(value: IEditorOption[definitionLinkOpensInPeek, Boolean]): Self = StObject.set(x, "definitionLinkOpensInPeek", value.asInstanceOf[js.Any])
       
@@ -896,7 +948,7 @@ object anon {
       
       inline def setEmptySelectionClipboard(value: IEditorOption[emptySelectionClipboard, Boolean]): Self = StObject.set(x, "emptySelectionClipboard", value.asInstanceOf[js.Any])
       
-      inline def setExperimental(value: IEditorOption[experimental, EditorExperimentalOptions]): Self = StObject.set(x, "experimental", value.asInstanceOf[js.Any])
+      inline def setExperimentalWhitespaceRendering(value: IEditorOption[experimentalWhitespaceRendering, off | svg | font]): Self = StObject.set(x, "experimentalWhitespaceRendering", value.asInstanceOf[js.Any])
       
       inline def setExtraEditorClassName(value: IEditorOption[extraEditorClassName, String]): Self = StObject.set(x, "extraEditorClassName", value.asInstanceOf[js.Any])
       
@@ -924,6 +976,8 @@ object anon {
       
       inline def setFontSize(value: IEditorOption[fontSize, Double]): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
       
+      inline def setFontVariations(value: IEditorOption[fontVariations, String]): Self = StObject.set(x, "fontVariations", value.asInstanceOf[js.Any])
+      
       inline def setFontWeight(value: IEditorOption[fontWeight, String]): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
       
       inline def setFormatOnPaste(value: IEditorOption[formatOnPaste, Boolean]): Self = StObject.set(x, "formatOnPaste", value.asInstanceOf[js.Any])
@@ -950,7 +1004,7 @@ object anon {
       
       inline def setLightbulb(value: IEditorOption[lightbulb, ReadonlyRequiredIEditorLi]): Self = StObject.set(x, "lightbulb", value.asInstanceOf[js.Any])
       
-      inline def setLineDecorationsWidth(value: IEditorOption[lineDecorationsWidth, String | Double]): Self = StObject.set(x, "lineDecorationsWidth", value.asInstanceOf[js.Any])
+      inline def setLineDecorationsWidth(value: IEditorOption[lineDecorationsWidth, Double]): Self = StObject.set(x, "lineDecorationsWidth", value.asInstanceOf[js.Any])
       
       inline def setLineHeight(value: IEditorOption[lineHeight, Double]): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
       
@@ -971,6 +1025,8 @@ object anon {
       inline def setMouseWheelScrollSensitivity(value: IEditorOption[mouseWheelScrollSensitivity, Double]): Self = StObject.set(x, "mouseWheelScrollSensitivity", value.asInstanceOf[js.Any])
       
       inline def setMouseWheelZoom(value: IEditorOption[mouseWheelZoom, Boolean]): Self = StObject.set(x, "mouseWheelZoom", value.asInstanceOf[js.Any])
+      
+      inline def setMultiCursorLimit(value: IEditorOption[multiCursorLimit, Double]): Self = StObject.set(x, "multiCursorLimit", value.asInstanceOf[js.Any])
       
       inline def setMultiCursorMergeOverlapping(value: IEditorOption[multiCursorMergeOverlapping, Boolean]): Self = StObject.set(x, "multiCursorMergeOverlapping", value.asInstanceOf[js.Any])
       
@@ -1002,7 +1058,7 @@ object anon {
       
       inline def setRenderControlCharacters(value: IEditorOption[renderControlCharacters, Boolean]): Self = StObject.set(x, "renderControlCharacters", value.asInstanceOf[js.Any])
       
-      inline def setRenderFinalNewline(value: IEditorOption[renderFinalNewline, Boolean]): Self = StObject.set(x, "renderFinalNewline", value.asInstanceOf[js.Any])
+      inline def setRenderFinalNewline(value: IEditorOption[renderFinalNewline, on | off | dimmed]): Self = StObject.set(x, "renderFinalNewline", value.asInstanceOf[js.Any])
       
       inline def setRenderLineHighlight(value: IEditorOption[renderLineHighlight, all | line | none | gutter]): Self = StObject.set(x, "renderLineHighlight", value.asInstanceOf[js.Any])
       
@@ -1017,6 +1073,8 @@ object anon {
       inline def setRoundedSelection(value: IEditorOption[roundedSelection, Boolean]): Self = StObject.set(x, "roundedSelection", value.asInstanceOf[js.Any])
       
       inline def setRulers(value: IEditorOption[rulers, js.Object]): Self = StObject.set(x, "rulers", value.asInstanceOf[js.Any])
+      
+      inline def setScreenReaderAnnounceInlineSuggestion(value: IEditorOption[screenReaderAnnounceInlineSuggestion, Boolean]): Self = StObject.set(x, "screenReaderAnnounceInlineSuggestion", value.asInstanceOf[js.Any])
       
       inline def setScrollBeyondLastColumn(value: IEditorOption[scrollBeyondLastColumn, Double]): Self = StObject.set(x, "scrollBeyondLastColumn", value.asInstanceOf[js.Any])
       
@@ -1043,6 +1101,8 @@ object anon {
       inline def setSmoothScrolling(value: IEditorOption[smoothScrolling, Boolean]): Self = StObject.set(x, "smoothScrolling", value.asInstanceOf[js.Any])
       
       inline def setSnippetSuggestions(value: IEditorOption[snippetSuggestions, none | top | bottom | `inline`]): Self = StObject.set(x, "snippetSuggestions", value.asInstanceOf[js.Any])
+      
+      inline def setStickyScroll(value: IEditorOption[stickyScroll, ReadonlyRequiredIEditorSt]): Self = StObject.set(x, "stickyScroll", value.asInstanceOf[js.Any])
       
       inline def setStickyTabStops(value: IEditorOption[stickyTabStops, Boolean]): Self = StObject.set(x, "stickyTabStops", value.asInstanceOf[js.Any])
       
@@ -1073,6 +1133,8 @@ object anon {
       inline def setUseShadowDOM(value: IEditorOption[useShadowDOM, Boolean]): Self = StObject.set(x, "useShadowDOM", value.asInstanceOf[js.Any])
       
       inline def setUseTabStops(value: IEditorOption[useTabStops, Boolean]): Self = StObject.set(x, "useTabStops", value.asInstanceOf[js.Any])
+      
+      inline def setWordBreak(value: IEditorOption[wordBreak, normal | keepAll]): Self = StObject.set(x, "wordBreak", value.asInstanceOf[js.Any])
       
       inline def setWordSeparators(value: IEditorOption[wordSeparators, String]): Self = StObject.set(x, "wordSeparators", value.asInstanceOf[js.Any])
       
@@ -1138,6 +1200,13 @@ object anon {
       * The value of the kind is 'region'.
       */
     val Region: FoldingRangeKind = js.native
+    
+    /**
+      * Returns a {@link FoldingRangeKind} for the given value.
+      *
+      * @param value of the kind.
+      */
+    def fromValue(value: String): FoldingRangeKind = js.native
   }
   
   @js.native
@@ -1154,6 +1223,23 @@ object anon {
     val WinCtrl: Double = js.native
     
     def chord(firstPart: Double, secondPart: Double): Double = js.native
+  }
+  
+  @js.native
+  trait TypeofLineRange
+    extends StObject
+       with Instantiable2[/* startLineNumber */ Double, /* endLineNumberExclusive */ Double, LineRange] {
+    
+    /**
+      * @param lineRanges1 Must be sorted.
+      * @param lineRanges2 Must be sorted.
+      */
+    def join(lineRanges1: js.Array[LineRange], lineRanges2: js.Array[LineRange]): js.Array[LineRange] = js.native
+    
+    /**
+      * @param lineRanges An array of sorted line ranges.
+      */
+    def joinMany(lineRanges: js.Array[js.Array[LineRange]]): js.Array[LineRange] = js.native
   }
   
   @js.native
@@ -1219,6 +1305,11 @@ object anon {
     def areIntersectingOrTouching(a: IRange, b: IRange): Boolean = js.native
     
     /**
+      * Create a new empty range using this range's end position.
+      */
+    def collapseToEnd(range: IRange): Range = js.native
+    
+    /**
       * Create a new empty range using this range's start position.
       */
     def collapseToStart(range: IRange): Range = js.native
@@ -1254,6 +1345,7 @@ object anon {
       */
     def equalsRange(): Boolean = js.native
     def equalsRange(a: Null, b: IRange): Boolean = js.native
+    def equalsRange(a: Unit, b: IRange): Boolean = js.native
     def equalsRange(a: IRange): Boolean = js.native
     def equalsRange(a: IRange, b: IRange): Boolean = js.native
     
@@ -1472,9 +1564,25 @@ object anon {
     
     val EditorType: TypeofEditorType = js.native
     
+    val EditorZoom: IEditorZoom = js.native
+    
     var FindMatch: Instantiable0[typings.monacoEditor.mod.editor.FindMatch] = js.native
     
     var FontInfo: Instantiable0[typings.monacoEditor.mod.editor.FontInfo] = js.native
+    
+    var LineRange: TypeofLineRange = js.native
+    
+    var LineRangeMapping: Instantiable2[
+        /* originalRange */ LineRange, 
+        /* modifiedRange */ LineRange, 
+        typings.monacoEditor.mod.editor.LineRangeMapping
+      ] = js.native
+    
+    var RangeMapping: Instantiable2[
+        /* originalRange */ Range, 
+        /* modifiedRange */ Range, 
+        typings.monacoEditor.mod.editor.RangeMapping
+      ] = js.native
     
     var TextModelResolvedOptions: Instantiable0[typings.monacoEditor.mod.editor.TextModelResolvedOptions] = js.native
     
@@ -1547,11 +1655,15 @@ object anon {
     
     def registerCommand(id: String, handler: js.Function2[/* accessor */ Any, /* repeated */ Any, Unit]): IDisposable = js.native
     
+    def registerEditorOpener(opener: ICodeEditorOpener): IDisposable = js.native
+    
+    def registerLinkOpener(opener: ILinkOpener): IDisposable = js.native
+    
     def remeasureFonts(): Unit = js.native
     
     def removeAllMarkers(owner: String): Unit = js.native
     
-    def setModelLanguage(model: ITextModel, languageId: String): Unit = js.native
+    def setModelLanguage(model: ITextModel, mimeTypeOrLanguageId: String): Unit = js.native
     
     def setModelMarkers(model: ITextModel, owner: String, markers: js.Array[IMarkerData]): Unit = js.native
     
@@ -1604,6 +1716,14 @@ object anon {
     
     var FoldingRangeKind: TypeofFoldingRangeKind = js.native
     
+    var SelectedSuggestionInfo: Instantiable4[
+        /* range */ IRange, 
+        /* text */ String, 
+        /* completionKind */ CompletionItemKind, 
+        /* isSnippetText */ Boolean, 
+        typings.monacoEditor.mod.languages.SelectedSuggestionInfo
+      ] = js.native
+    
     val css: Typeofcss = js.native
     
     def getEncodedLanguageId(languageId: String): Double = js.native
@@ -1615,6 +1735,8 @@ object anon {
     val json: Typeofjson = js.native
     
     def onLanguage(languageId: String, callback: js.Function0[Unit]): IDisposable = js.native
+    
+    def onLanguageEncountered(languageId: String, callback: js.Function0[Unit]): IDisposable = js.native
     
     def register(language: ILanguageExtensionPoint): Unit = js.native
     

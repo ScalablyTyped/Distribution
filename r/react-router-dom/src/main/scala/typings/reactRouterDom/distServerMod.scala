@@ -5,6 +5,7 @@ import typings.react.mod.global.JSX.Element
 import typings.reactRouter.distLibContextMod.RouteObject
 import typings.reactRouterDom.anon.PartialLocation
 import typings.remixRunRouter.distRouterMod.Router
+import typings.remixRunRouter.distRouterMod.StaticHandler
 import typings.remixRunRouter.distRouterMod.StaticHandlerContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -18,9 +19,33 @@ object distServerMod {
   
   inline def StaticRouter(param0: StaticRouterProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("StaticRouter")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def unstableCreateStaticRouter(routes: js.Array[RouteObject], context: StaticHandlerContext): Router = (^.asInstanceOf[js.Dynamic].applyDynamic("unstable_createStaticRouter")(routes.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Router]
+  inline def StaticRouterProvider(param0: StaticRouterProviderProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("StaticRouterProvider")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def unstableStaticRouterProvider(param0: StaticRouterProviderProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_StaticRouterProvider")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def createStaticHandler(routes: js.Array[RouteObject]): StaticHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("createStaticHandler")(routes.asInstanceOf[js.Any]).asInstanceOf[StaticHandler]
+  inline def createStaticHandler(routes: js.Array[RouteObject], opts: CreateStaticHandlerOptions): StaticHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("createStaticHandler")(routes.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[StaticHandler]
+  
+  inline def createStaticRouter(routes: js.Array[RouteObject], context: StaticHandlerContext): Router = (^.asInstanceOf[js.Dynamic].applyDynamic("createStaticRouter")(routes.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Router]
+  
+  /* Inlined std.Omit<@remix-run/router.@remix-run/router.CreateStaticHandlerOptions, 'detectErrorBoundary' | 'mapRouteProperties'> */
+  trait CreateStaticHandlerOptions extends StObject {
+    
+    var basename: js.UndefOr[String] = js.undefined
+  }
+  object CreateStaticHandlerOptions {
+    
+    inline def apply(): CreateStaticHandlerOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[CreateStaticHandlerOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateStaticHandlerOptions] (val x: Self) extends AnyVal {
+      
+      inline def setBasename(value: String): Self = StObject.set(x, "basename", value.asInstanceOf[js.Any])
+      
+      inline def setBasenameUndefined: Self = StObject.set(x, "basename", js.undefined)
+    }
+  }
   
   trait StaticRouterProps extends StObject {
     
@@ -54,8 +79,6 @@ object distServerMod {
   
   trait StaticRouterProviderProps extends StObject {
     
-    var basename: js.UndefOr[String] = js.undefined
-    
     var context: StaticHandlerContext
     
     var hydrate: js.UndefOr[Boolean] = js.undefined
@@ -73,10 +96,6 @@ object distServerMod {
     
     @scala.inline
     implicit open class MutableBuilder[Self <: StaticRouterProviderProps] (val x: Self) extends AnyVal {
-      
-      inline def setBasename(value: String): Self = StObject.set(x, "basename", value.asInstanceOf[js.Any])
-      
-      inline def setBasenameUndefined: Self = StObject.set(x, "basename", js.undefined)
       
       inline def setContext(value: StaticHandlerContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       

@@ -12,5 +12,7 @@ object distEs5FocusInsideMod {
   val ^ : js.Any = js.native
   
   inline def focusInside(topNode: js.Array[HTMLElement]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("focusInside")(topNode.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def focusInside(topNode: js.Array[HTMLElement], activeElement: HTMLElement): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("focusInside")(topNode.asInstanceOf[js.Any], activeElement.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   inline def focusInside(topNode: HTMLElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("focusInside")(topNode.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def focusInside(topNode: HTMLElement, activeElement: HTMLElement): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("focusInside")(topNode.asInstanceOf[js.Any], activeElement.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

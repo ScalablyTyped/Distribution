@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetBundlesRequest extends StObject {
   
   /**
+    * Returns a list of bundles that are specific to Lightsail for Research.  You must use this parameter to view Lightsail for Research bundles. 
+    */
+  var appCategory: js.UndefOr[AppCategory] = js.undefined
+  
+  /**
     * A Boolean value that indicates whether to include inactive (unavailable) bundles in the response of your request.
     */
   var includeInactive: js.UndefOr[Boolean] = js.undefined
@@ -25,6 +30,10 @@ object GetBundlesRequest {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: GetBundlesRequest] (val x: Self) extends AnyVal {
+    
+    inline def setAppCategory(value: AppCategory): Self = StObject.set(x, "appCategory", value.asInstanceOf[js.Any])
+    
+    inline def setAppCategoryUndefined: Self = StObject.set(x, "appCategory", js.undefined)
     
     inline def setIncludeInactive(value: Boolean): Self = StObject.set(x, "includeInactive", value.asInstanceOf[js.Any])
     

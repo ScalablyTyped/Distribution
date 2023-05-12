@@ -30,7 +30,14 @@ object typesBaseUrlOptionsMod {
       *
       * @type {boolean}
       */
-    var enableFullscreen: js.UndefOr[Boolean] = js.undefined
+    var displayAsFullScreenModal: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Domain name of the environment the SDK should run against.
+      *
+      * @type {string}
+      */
+    var domain: js.UndefOr[String] = js.undefined
     
     /**
       * Enable sandbox mode for the form.
@@ -83,6 +90,11 @@ object typesBaseUrlOptionsMod {
     var mediumVersion: js.UndefOr[String] = js.undefined
     
     /**
+      * Do not use H1 tags inside the form
+      */
+    var noHeading: js.UndefOr[Boolean] = js.undefined
+    
+    /**
       * You can make your typeform's background totally transparent, or opaque. (For example, to have a video as a background).
       *
       * @type {number}
@@ -127,7 +139,7 @@ object typesBaseUrlOptionsMod {
       *
       * @type {string[]}
       */
-    var transitiveSearchParams: js.UndefOr[js.Array[String]] = js.undefined
+    var transitiveSearchParams: js.UndefOr[js.Array[String] | Boolean] = js.undefined
   }
   object UrlOptions {
     
@@ -147,9 +159,13 @@ object typesBaseUrlOptionsMod {
       
       inline def setDisableTrackingUndefined: Self = StObject.set(x, "disableTracking", js.undefined)
       
-      inline def setEnableFullscreen(value: Boolean): Self = StObject.set(x, "enableFullscreen", value.asInstanceOf[js.Any])
+      inline def setDisplayAsFullScreenModal(value: Boolean): Self = StObject.set(x, "displayAsFullScreenModal", value.asInstanceOf[js.Any])
       
-      inline def setEnableFullscreenUndefined: Self = StObject.set(x, "enableFullscreen", js.undefined)
+      inline def setDisplayAsFullScreenModalUndefined: Self = StObject.set(x, "displayAsFullScreenModal", js.undefined)
+      
+      inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+      
+      inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
       
       inline def setEnableSandbox(value: Boolean): Self = StObject.set(x, "enableSandbox", value.asInstanceOf[js.Any])
       
@@ -179,6 +195,10 @@ object typesBaseUrlOptionsMod {
       
       inline def setMediumVersionUndefined: Self = StObject.set(x, "mediumVersion", js.undefined)
       
+      inline def setNoHeading(value: Boolean): Self = StObject.set(x, "noHeading", value.asInstanceOf[js.Any])
+      
+      inline def setNoHeadingUndefined: Self = StObject.set(x, "noHeading", js.undefined)
+      
       inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
       
       inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
@@ -199,7 +219,7 @@ object typesBaseUrlOptionsMod {
       
       inline def setTrackingUndefined: Self = StObject.set(x, "tracking", js.undefined)
       
-      inline def setTransitiveSearchParams(value: js.Array[String]): Self = StObject.set(x, "transitiveSearchParams", value.asInstanceOf[js.Any])
+      inline def setTransitiveSearchParams(value: js.Array[String] | Boolean): Self = StObject.set(x, "transitiveSearchParams", value.asInstanceOf[js.Any])
       
       inline def setTransitiveSearchParamsUndefined: Self = StObject.set(x, "transitiveSearchParams", js.undefined)
       

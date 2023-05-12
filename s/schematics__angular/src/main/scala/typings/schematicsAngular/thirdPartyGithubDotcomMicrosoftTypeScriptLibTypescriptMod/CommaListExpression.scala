@@ -4,6 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+  * A list of comma-separated expressions. This node is only created by transformations.
+  */
 @js.native
 trait CommaListExpression
   extends StObject

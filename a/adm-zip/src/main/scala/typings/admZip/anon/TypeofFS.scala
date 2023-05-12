@@ -12,6 +12,9 @@ import typings.node.anon.MakeDirectoryOptionsrecurMode
 import typings.node.anon.ObjectEncodingOptionsflagEncoding
 import typings.node.anon.ObjectEncodingOptionswith
 import typings.node.anon.ObjectEncodingOptionswithEncoding
+import typings.node.anon.Recursive
+import typings.node.anon.StatFsOptionsbigintfalseu
+import typings.node.anon.StatFsOptionsbiginttrue
 import typings.node.anon.StatOptionsbigintfalseund
 import typings.node.anon.StatOptionsbiginttrue
 import typings.node.anon.StatSyncOptionsbigintbool
@@ -22,10 +25,11 @@ import typings.node.anon.StatSyncOptionsbiginttrueBigint
 import typings.node.anon.WatchFileOptionsbigintfal
 import typings.node.anon.WatchFileOptionsbiginttru
 import typings.node.anon.WatchOptionsencodingbuffe
-import typings.node.anon.WithFileTypes
 import typings.node.bufferMod.global.Buffer
 import typings.node.bufferMod.global.BufferEncoding
 import typings.node.fsMod.BigIntStats
+import typings.node.fsMod.BigIntStatsFs
+import typings.node.fsMod.BigIntStatsListener
 import typings.node.fsMod.BufferEncodingOption
 import typings.node.fsMod.CopyOptions
 import typings.node.fsMod.CopySyncOptions
@@ -45,11 +49,14 @@ import typings.node.fsMod.ReadStreamOptions
 import typings.node.fsMod.ReadSyncOptions
 import typings.node.fsMod.RmDirOptions
 import typings.node.fsMod.RmOptions
+import typings.node.fsMod.StatFsOptions
 import typings.node.fsMod.StatOptions
 import typings.node.fsMod.StatSyncFn
 import typings.node.fsMod.StatSyncOptions
 import typings.node.fsMod.StatWatcher
 import typings.node.fsMod.Stats
+import typings.node.fsMod.StatsFs
+import typings.node.fsMod.StatsListener
 import typings.node.fsMod.StreamOptions
 import typings.node.fsMod.TimeLike
 import typings.node.fsMod.WatchListener
@@ -72,6 +79,8 @@ trait TypeofFS extends StObject {
   var ReadStream: Instantiable0[typings.node.fsMod.ReadStream] = js.native
   
   var Stats: Instantiable0[typings.node.fsMod.Stats] = js.native
+  
+  var StatsFs: Instantiable0[typings.node.fsMod.StatsFs] = js.native
   
   var WriteStream: Instantiable0[typings.node.fsMod.WriteStream] = js.native
   
@@ -280,7 +289,7 @@ trait TypeofFS extends StObject {
   def readdirSync(path: PathLike, options: Encoding): js.Array[Buffer] = js.native
   def readdirSync(path: PathLike, options: ObjectEncodingOptionswith): js.Array[Buffer | String] = js.native
   def readdirSync(path: PathLike, options: ObjectEncodingOptionswithEncoding): js.Array[Dirent] = js.native
-  def readdirSync(path: PathLike, options: WithFileTypes): js.Array[String] = js.native
+  def readdirSync(path: PathLike, options: Recursive): js.Array[String] = js.native
   def readdirSync(path: PathLike, options: BufferEncoding): js.Array[String] = js.native
   @JSName("readdirSync")
   def readdirSync_buffer(path: PathLike, options: buffer): js.Array[Buffer] = js.native
@@ -333,6 +342,15 @@ trait TypeofFS extends StObject {
   @JSName("statSync")
   def statSync_Stats(path: PathLike): Stats = js.native
   
+  val statfs: Typeofstatfs = js.native
+  
+  def statfsSync(path: PathLike): StatsFs = js.native
+  def statfsSync(path: PathLike, options: StatFsOptionsbigintfalseu): StatsFs = js.native
+  def statfsSync(path: PathLike, options: StatFsOptionsbiginttrue): BigIntStatsFs = js.native
+  def statfsSync(path: PathLike, options: StatFsOptions): StatsFs | BigIntStatsFs = js.native
+  @JSName("statfsSync")
+  def statfsSync_Union(path: PathLike): StatsFs | BigIntStatsFs = js.native
+  
   val symlink: Typeofsymlink = js.native
   
   def symlinkSync(target: PathLike, path: PathLike): Unit = js.native
@@ -348,7 +366,7 @@ trait TypeofFS extends StObject {
   def unlinkSync(path: PathLike): Unit = js.native
   
   def unwatchFile(filename: PathLike): Unit = js.native
-  def unwatchFile(filename: PathLike, listener: js.Function2[/* curr */ Stats, /* prev */ Stats, Unit]): Unit = js.native
+  def unwatchFile(filename: PathLike, listener: BigIntStatsListener | StatsListener): Unit = js.native
   
   val utimes: Typeofutimes = js.native
   
@@ -367,26 +385,10 @@ trait TypeofFS extends StObject {
   def watch(filename: PathLike, options: WatchOptions): FSWatcher = js.native
   def watch(filename: PathLike, options: WatchOptions, listener: WatchListener[Buffer | String]): FSWatcher = js.native
   
-  def watchFile(filename: PathLike, listener: js.Function2[/* curr */ Stats, /* prev */ Stats, Unit]): StatWatcher = js.native
-  def watchFile(
-    filename: PathLike,
-    options: Unit,
-    listener: js.Function2[
-      (/* curr */ BigIntStats) | (/* curr */ Stats), 
-      (/* prev */ BigIntStats) | (/* prev */ Stats), 
-      Unit
-    ]
-  ): StatWatcher = js.native
-  def watchFile(
-    filename: PathLike,
-    options: WatchFileOptionsbigintfal,
-    listener: js.Function2[/* curr */ Stats, /* prev */ Stats, Unit]
-  ): StatWatcher = js.native
-  def watchFile(
-    filename: PathLike,
-    options: WatchFileOptionsbiginttru,
-    listener: js.Function2[/* curr */ BigIntStats, /* prev */ BigIntStats, Unit]
-  ): StatWatcher = js.native
+  def watchFile(filename: PathLike, listener: StatsListener): StatWatcher = js.native
+  def watchFile(filename: PathLike, options: Unit, listener: BigIntStatsListener | StatsListener): StatWatcher = js.native
+  def watchFile(filename: PathLike, options: WatchFileOptionsbigintfal, listener: StatsListener): StatWatcher = js.native
+  def watchFile(filename: PathLike, options: WatchFileOptionsbiginttru, listener: BigIntStatsListener): StatWatcher = js.native
   
   @JSName("watch")
   def watch_buffer(filename: PathLike, options: buffer): FSWatcher = js.native

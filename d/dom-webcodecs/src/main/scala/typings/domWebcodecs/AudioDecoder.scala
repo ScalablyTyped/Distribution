@@ -19,7 +19,7 @@ trait AudioDecoder extends StObject {
   
   def reset(): Unit
   
-  val state: CodecState
+  val state: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CodecState */ Any
 }
 object AudioDecoder {
   
@@ -30,7 +30,7 @@ object AudioDecoder {
     decodeQueueSize: Double,
     flush: () => js.Promise[Unit],
     reset: () => Unit,
-    state: CodecState
+    state: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CodecState */ Any
   ): AudioDecoder = {
     val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), configure = js.Any.fromFunction1(configure), decode = js.Any.fromFunction1(decode), decodeQueueSize = decodeQueueSize.asInstanceOf[js.Any], flush = js.Any.fromFunction0(flush), reset = js.Any.fromFunction0(reset), state = state.asInstanceOf[js.Any])
     __obj.asInstanceOf[AudioDecoder]
@@ -51,6 +51,8 @@ object AudioDecoder {
     
     inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     
-    inline def setState(value: CodecState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CodecState */ Any
+    ): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

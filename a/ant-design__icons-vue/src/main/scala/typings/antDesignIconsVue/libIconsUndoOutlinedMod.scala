@@ -16,7 +16,7 @@ object libIconsUndoOutlinedMod extends Shortcut {
   @js.native
   trait UndoOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_UndoOutlinedIconType: String = js.native

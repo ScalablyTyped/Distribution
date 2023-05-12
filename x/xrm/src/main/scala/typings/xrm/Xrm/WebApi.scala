@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /**
   * Provides properties and methods to use Web API to create and manage records and execute Web API actions and functions in Customer Engagement.
-  * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/xrm-webapi External Link: Xrm.WebApi (Client API reference)}
+  * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/reference/xrm-webapi External Link: Xrm.WebApi (Client API reference)}
   */
 @js.native
 trait WebApi
@@ -22,12 +22,13 @@ trait WebApi
   
   /**
     * Provides methods to create and manage records in the Dynamics 365 Customer Engagement mobile clients while working in the offline mode.
-    * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/xrm-webapi/offline}
+    * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/reference/xrm-webapi/offline External Link: Xrm.WebApi.offline (Client API reference)}
     */
   var offline: WebApiOffline = js.native
   
   /**
     * Provides methods to use Web API to create and manage records and execute Web API actions and functions in Customer Engagement when connected to the Customer Engagement server (online mode).
+    * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/reference/xrm-webapi/online External Link: Xrm.WebApi.online (Client API reference)}
     */
   var online: WebApiOnline = js.native
 }

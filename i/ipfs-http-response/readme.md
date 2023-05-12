@@ -1,7 +1,7 @@
 
 # Scala.js typings for ipfs-http-response
 
-Typings are for version 5.0.0
+Typings are for version 6.0.0
 
 ## Library description:
 Creates an HTTP response from an IPFS Hash

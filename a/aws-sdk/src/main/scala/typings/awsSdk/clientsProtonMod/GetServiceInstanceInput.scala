@@ -12,7 +12,7 @@ trait GetServiceInstanceInput extends StObject {
   var name: ResourceName
   
   /**
-    * The name of the service that the service instance belongs to.
+    * The name of the service that you want the service instance input for.
     */
   var serviceName: ResourceName
 }

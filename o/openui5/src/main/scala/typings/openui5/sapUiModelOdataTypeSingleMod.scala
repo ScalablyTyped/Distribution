@@ -17,14 +17,14 @@ object sapUiModelOdataTypeSingleMod {
     */
   open class default () extends Single {
     def this(/**
-      * format options as defined in {@link sap.ui.core.format.NumberFormat}. In contrast to NumberFormat `groupingEnabled`
-      * defaults to `true`.
+      * Format options as defined in {@link sap.ui.core.format.NumberFormat.getFloatInstance}. In contrast to
+      * NumberFormat `groupingEnabled` defaults to `true`.
       */
     oFormatOptions: PreserveDecimals) = this()
     def this(
       /**
-      * format options as defined in {@link sap.ui.core.format.NumberFormat}. In contrast to NumberFormat `groupingEnabled`
-      * defaults to `true`.
+      * Format options as defined in {@link sap.ui.core.format.NumberFormat.getFloatInstance}. In contrast to
+      * NumberFormat `groupingEnabled` defaults to `true`.
       */
     oFormatOptions: Unit,
       /**
@@ -34,8 +34,8 @@ object sapUiModelOdataTypeSingleMod {
     ) = this()
     def this(
       /**
-      * format options as defined in {@link sap.ui.core.format.NumberFormat}. In contrast to NumberFormat `groupingEnabled`
-      * defaults to `true`.
+      * Format options as defined in {@link sap.ui.core.format.NumberFormat.getFloatInstance}. In contrast to
+      * NumberFormat `groupingEnabled` defaults to `true`.
       */
     oFormatOptions: PreserveDecimals,
       /**

@@ -4,9 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A structure representing a Marker icon image.
-  */
 trait Icon extends StObject {
   
   /**
@@ -14,33 +11,33 @@ trait Icon extends StObject {
     * location of the marker on the map. By default, the anchor is located
     * along the center point of the bottom of the image.
     */
-  var anchor: js.UndefOr[Point | Null] = js.undefined
+  var anchor: js.UndefOr[Null | Point] = js.undefined
   
   /**
     * The origin of the label relative to the top-left corner of the icon
     * image, if a label is supplied by the marker. By default, the origin is
     * located in the center point of the image.
     */
-  var labelOrigin: js.UndefOr[Point | Null] = js.undefined
+  var labelOrigin: js.UndefOr[Null | Point] = js.undefined
   
   /**
     * The position of the image within a sprite, if any. By default, the origin
     * is located at the top left corner of the image <code>(0, 0)</code>.
     */
-  var origin: js.UndefOr[Point | Null] = js.undefined
+  var origin: js.UndefOr[Null | Point] = js.undefined
   
   /**
     * The size of the entire image after scaling, if any. Use this property to
     * stretch/shrink an image or a sprite.
     */
-  var scaledSize: js.UndefOr[Size | Null] = js.undefined
+  var scaledSize: js.UndefOr[Null | Size] = js.undefined
   
   /**
     * The display size of the sprite or image. When using sprites, you must
     * specify the sprite size. If the size is not provided, it will be set when
     * the image loads.
     */
-  var size: js.UndefOr[Size | Null] = js.undefined
+  var size: js.UndefOr[Null | Size] = js.undefined
   
   /**
     * The URL of the image or sprite sheet.

@@ -8,11 +8,11 @@ trait ParametersPathGistidString extends StObject {
   
   var parameters: PathGistidString
   
-  var responses: `200419`
+  var responses: `200482`
 }
 object ParametersPathGistidString {
   
-  inline def apply(parameters: PathGistidString, responses: `200419`): ParametersPathGistidString = {
+  inline def apply(parameters: PathGistidString, responses: `200482`): ParametersPathGistidString = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersPathGistidString]
   }
@@ -22,6 +22,6 @@ object ParametersPathGistidString {
     
     inline def setParameters(value: PathGistidString): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `200419`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `200482`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

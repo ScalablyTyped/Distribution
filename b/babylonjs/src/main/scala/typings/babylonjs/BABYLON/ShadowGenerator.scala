@@ -83,6 +83,8 @@ trait ShadowGenerator
   
   /* protected */ var _normalBias: Double = js.native
   
+  /* protected */ var _opacityTexture: Nullable[BaseTexture] = js.native
+  
   /* private */ var _prepareShadowDefines: Any = js.native
   
   /* protected */ var _projectionMatrix: Matrix = js.native

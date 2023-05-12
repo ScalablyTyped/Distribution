@@ -1,7 +1,6 @@
 package typings.angularCli
 
 import typings.angularCli.anon.OptionsUpdateCommandArgs
-import typings.angularCli.srcCommandBuilderCommandModuleMod.CommandContext
 import typings.angularCli.srcCommandBuilderCommandModuleMod.CommandModule
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,56 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object srcCommandsUpdateCliMod {
   
-  @JSImport("@angular/cli/src/commands/update/cli", "UpdateCommandModule")
+  @JSImport("@angular/cli/src/commands/update/cli", JSImport.Default)
   @js.native
-  open class UpdateCommandModule protected () extends CommandModule[UpdateCommandArgs] {
-    def this(context: CommandContext) = this()
-    
-    /**
-      * Checks if the current installed CLI version is older or newer than a compatible version.
-      * @returns the version to install or null when there is no update to install.
-      */
-    /* private */ var checkCLIVersion: Any = js.native
-    
-    /* private */ var checkCleanGit: Any = js.native
-    
-    /**
-      * @return Whether or not the commit was successful.
-      */
-    /* private */ var commit: Any = js.native
-    
-    @JSName("describe")
-    var describe_UpdateCommandModule: String = js.native
-    
-    /**
-      * @return Whether or not the migration was performed successfully.
-      */
-    /* private */ var executeMigration: Any = js.native
-    
-    /**
-      * @return Whether or not the migrations were performed successfully.
-      */
-    /* private */ var executeMigrations: Any = js.native
-    
-    /* private */ var executePackageMigrations: Any = js.native
-    
-    /* private */ var executeSchematic: Any = js.native
-    
-    /* private */ var getCLIUpdateRunnerVersion: Any = js.native
-    
-    @JSName("longDescriptionPath")
-    var longDescriptionPath_UpdateCommandModule: String = js.native
-    
-    /* private */ var migrateOnly: Any = js.native
-    
-    /* private */ var packageManagerForce: Any = js.native
-    
-    def run(options: OptionsUpdateCommandArgs): js.Promise[Double | Unit] = js.native
-    
-    /* private */ var runTempBinary: Any = js.native
-    
-    /* private */ var updatePackagesAndMigrate: Any = js.native
-  }
+  open class default () extends UpdateCommandModule
   
   trait UpdateCommandArgs extends StObject {
     
@@ -126,5 +78,56 @@ object srcCommandsUpdateCliMod {
       
       inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
     }
+  }
+  
+  @js.native
+  trait UpdateCommandModule extends CommandModule[UpdateCommandArgs] {
+    
+    /**
+      * Checks if the current installed CLI version is older or newer than a compatible version.
+      * @returns the version to install or null when there is no update to install.
+      */
+    /* private */ var checkCLIVersion: Any = js.native
+    
+    /* private */ var checkCleanGit: Any = js.native
+    
+    /**
+      * @return Whether or not the commit was successful.
+      */
+    /* private */ var commit: Any = js.native
+    
+    @JSName("describe")
+    var describe_UpdateCommandModule: String = js.native
+    
+    /**
+      * @return Whether or not the migration was performed successfully.
+      */
+    /* private */ var executeMigration: Any = js.native
+    
+    /**
+      * @return Whether or not the migrations were performed successfully.
+      */
+    /* private */ var executeMigrations: Any = js.native
+    
+    /* private */ var executePackageMigrations: Any = js.native
+    
+    /* private */ var executeSchematic: Any = js.native
+    
+    /* private */ var getCLIUpdateRunnerVersion: Any = js.native
+    
+    /* private */ var getOptionalMigrationsToRun: Any = js.native
+    
+    @JSName("longDescriptionPath")
+    var longDescriptionPath_UpdateCommandModule: String = js.native
+    
+    /* private */ var migrateOnly: Any = js.native
+    
+    /* private */ var packageManagerForce: Any = js.native
+    
+    def run(options: OptionsUpdateCommandArgs): js.Promise[Double | Unit] = js.native
+    
+    /* private */ var runTempBinary: Any = js.native
+    
+    /* private */ var updatePackagesAndMigrate: Any = js.native
   }
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for minipass
 
-Typings are for version 3.3.4
+Typings are for version 5.0.0
 
 ## Library description:
 minimal implementation of a PassThrough stream

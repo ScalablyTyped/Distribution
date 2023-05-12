@@ -1,5 +1,6 @@
 package typings.paypalPaypalJs
 
+import typings.paypalPaypalJs.anon.Address
 import typings.paypalPaypalJs.anon.PartialidstringstatusStat
 import typings.paypalPaypalJs.typesApisCommonsMod.AmountWithCurrencyCode
 import typings.std.Record
@@ -72,6 +73,62 @@ object typesApisSubscriptionsSubscriptionsMod {
       inline def setSubscriber(value: Record[String, Any]): Self = StObject.set(x, "subscriber", value.asInstanceOf[js.Any])
       
       inline def setSubscriberUndefined: Self = StObject.set(x, "subscriber", js.undefined)
+    }
+  }
+  
+  trait ReviseSubscriptionRequestBody extends StObject {
+    
+    var application_context: js.UndefOr[Record[String, Any]] = js.undefined
+    
+    var effective_time: js.UndefOr[String] = js.undefined
+    
+    var plan: js.UndefOr[Record[String, Any]] = js.undefined
+    
+    var plan_id: js.UndefOr[String] = js.undefined
+    
+    var quantity: js.UndefOr[String] = js.undefined
+    
+    var shipping_address: js.UndefOr[Address] = js.undefined
+    
+    var shipping_amount: js.UndefOr[AmountWithCurrencyCode] = js.undefined
+  }
+  object ReviseSubscriptionRequestBody {
+    
+    inline def apply(): ReviseSubscriptionRequestBody = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ReviseSubscriptionRequestBody]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReviseSubscriptionRequestBody] (val x: Self) extends AnyVal {
+      
+      inline def setApplication_context(value: Record[String, Any]): Self = StObject.set(x, "application_context", value.asInstanceOf[js.Any])
+      
+      inline def setApplication_contextUndefined: Self = StObject.set(x, "application_context", js.undefined)
+      
+      inline def setEffective_time(value: String): Self = StObject.set(x, "effective_time", value.asInstanceOf[js.Any])
+      
+      inline def setEffective_timeUndefined: Self = StObject.set(x, "effective_time", js.undefined)
+      
+      inline def setPlan(value: Record[String, Any]): Self = StObject.set(x, "plan", value.asInstanceOf[js.Any])
+      
+      inline def setPlanUndefined: Self = StObject.set(x, "plan", js.undefined)
+      
+      inline def setPlan_id(value: String): Self = StObject.set(x, "plan_id", value.asInstanceOf[js.Any])
+      
+      inline def setPlan_idUndefined: Self = StObject.set(x, "plan_id", js.undefined)
+      
+      inline def setQuantity(value: String): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
+      
+      inline def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
+      
+      inline def setShipping_address(value: Address): Self = StObject.set(x, "shipping_address", value.asInstanceOf[js.Any])
+      
+      inline def setShipping_addressUndefined: Self = StObject.set(x, "shipping_address", js.undefined)
+      
+      inline def setShipping_amount(value: AmountWithCurrencyCode): Self = StObject.set(x, "shipping_amount", value.asInstanceOf[js.Any])
+      
+      inline def setShipping_amountUndefined: Self = StObject.set(x, "shipping_amount", js.undefined)
     }
   }
   

@@ -1,5 +1,6 @@
 package typings.luminoSignaling
 
+import typings.std.AsyncIterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -125,6 +126,26 @@ object mod {
     type ExceptionHandler = js.Function1[/* err */ js.Error, Unit]
   }
   
+  @JSImport("@lumino/signaling", "Stream")
+  @js.native
+  open class Stream[T, U] protected ()
+    extends Signal[T, U]
+       with IStream[T, U] {
+    /**
+      * Construct a new signal.
+      *
+      * @param sender - The sender which owns the signal.
+      */
+    def this(sender: T) = this()
+    
+    /* private */ var _pending: Any = js.native
+    
+    /**
+      * Stop the stream's async iteration.
+      */
+    def stop(): Unit = js.native
+  }
+  
   @js.native
   trait ISignal[T, U] extends StObject {
     
@@ -171,6 +192,12 @@ object mod {
     def disconnect(slot: Slot[T, U]): Boolean = js.native
     def disconnect(slot: Slot[T, U], thisArg: Any): Boolean = js.native
   }
+  
+  @js.native
+  trait IStream[T, U]
+    extends StObject
+       with ISignal[T, U]
+       with AsyncIterable[U]
   
   type Slot[T, U] = js.Function2[/* sender */ T, /* args */ U, Unit]
 }

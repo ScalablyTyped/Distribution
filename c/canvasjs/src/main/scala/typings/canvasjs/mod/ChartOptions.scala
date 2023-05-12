@@ -1,5 +1,8 @@
 package typings.canvasjs.mod
 
+import typings.canvasjs.canvasjsStrings.x
+import typings.canvasjs.canvasjsStrings.xy
+import typings.canvasjs.canvasjsStrings.y
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -133,6 +136,38 @@ trait ChartOptions extends StObject {
   var legend: js.UndefOr[ChartLegendOptions] = js.undefined
   
   /**
+    * Sets the rangeChanged event handler for Chart which is triggered after viewportMinimum or
+    * viewportMaximum are updated while zooming, panning, or reset. Upon event, a parameter that
+    * contains event related data is sent to the assigned event handler. Parameter includes trigger,
+    * type and axes viewportMinimum and viewportMaximum corresponding to the event.
+    *
+    * Note:
+    * - rangeChanged is triggered only when range is changed manually using mouse/pointer (zoom/pan)
+    * and it does not fire when viewportMinimum and viewportMaximum are set programmatically.
+    * - This event along with viewportMinimum and viewportMaximum can be used to sync multiple chart ranges.
+    *
+    * Default: null
+    * @param e event object
+    */
+  var rangeChanged: js.UndefOr[js.Function1[/* e */ ChartRangeEvent, Unit]] = js.undefined
+  
+  /**
+    * Sets the rangeChanging event handler for Chart which is triggered before viewportMinimum or
+    * viewportMaximum are updated while zooming, panning, or reset. Upon event, a parameter that
+    * contains event related data is sent to the assigned event handler. Parameter includes trigger,
+    * type and axes viewportMinimum and viewportMaximum corresponding to the event.
+    *
+    * Note:
+    * - rangeChanging is triggered only when range is changed manually using mouse/pointer (zoom/pan)
+    * and it does not fire when viewportMinimum and viewportMaximum are set programmatically.
+    * - This event along with viewportMinimum and viewportMaximum can be used to sync multiple chart ranges.
+    *
+    * Default: null
+    * @param e event object
+    */
+  var rangeChanging: js.UndefOr[js.Function1[/* e */ ChartRangeEvent, Unit]] = js.undefined
+  
+  /**
     * subtitles is a collection of subtitle elements. This allows you to have as many subtitles as you want in a chart.
     * subtitle allows you to set content, appearance and position of Chart’s subtitle. subtitle is very much like title except that its font size is lesser than title by default.
     */
@@ -157,6 +192,12 @@ trait ChartOptions extends StObject {
   var toolTip: js.UndefOr[ChartToolTipOptions] = js.undefined
   
   /**
+    * Chart Toolbar contains various tools and options like Zoom, Pan, Reset, Print, Save as Image, etc.
+    * toolbar Object lets you customize the look & feel of various options available.
+    */
+  var toolbar: js.UndefOr[ChartToolbar] = js.undefined
+  
+  /**
     * Sets the width of the Chart.
     * Default: Takes chart container’s width by default. If the width is not set for the chart container, defaults to 500.
     * Example: 380, 500, 720
@@ -173,6 +214,19 @@ trait ChartOptions extends StObject {
     * Options: true, false
     */
   var zoomEnabled: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * zoomType allows you to control the axis for which zooming and panning are enabled. Default is “x”
+    * which enables zooming across xAxis. You can customize this to allow zooming/panning on yAxis or
+    * both xAxis and yAxis by setting zoomType to “y” or “xy”.
+    *
+    * Note:
+    * - This property works only when zoomEnabled is set to true.
+    * - Applies only for Chart types which have Axis.
+    *
+    * Default: "x"
+    */
+  var zoomType: js.UndefOr[x | y | xy] = js.undefined
 }
 object ChartOptions {
   
@@ -264,6 +318,14 @@ object ChartOptions {
     
     inline def setLegendUndefined: Self = StObject.set(x, "legend", js.undefined)
     
+    inline def setRangeChanged(value: /* e */ ChartRangeEvent => Unit): Self = StObject.set(x, "rangeChanged", js.Any.fromFunction1(value))
+    
+    inline def setRangeChangedUndefined: Self = StObject.set(x, "rangeChanged", js.undefined)
+    
+    inline def setRangeChanging(value: /* e */ ChartRangeEvent => Unit): Self = StObject.set(x, "rangeChanging", js.Any.fromFunction1(value))
+    
+    inline def setRangeChangingUndefined: Self = StObject.set(x, "rangeChanging", js.undefined)
+    
     inline def setSubtitles(value: js.Array[ChartTitleOptions]): Self = StObject.set(x, "subtitles", value.asInstanceOf[js.Any])
     
     inline def setSubtitlesUndefined: Self = StObject.set(x, "subtitles", js.undefined)
@@ -280,6 +342,10 @@ object ChartOptions {
     
     inline def setToolTipUndefined: Self = StObject.set(x, "toolTip", js.undefined)
     
+    inline def setToolbar(value: ChartToolbar): Self = StObject.set(x, "toolbar", value.asInstanceOf[js.Any])
+    
+    inline def setToolbarUndefined: Self = StObject.set(x, "toolbar", js.undefined)
+    
     inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
@@ -287,5 +353,9 @@ object ChartOptions {
     inline def setZoomEnabled(value: Boolean): Self = StObject.set(x, "zoomEnabled", value.asInstanceOf[js.Any])
     
     inline def setZoomEnabledUndefined: Self = StObject.set(x, "zoomEnabled", js.undefined)
+    
+    inline def setZoomType(value: typings.canvasjs.canvasjsStrings.x | y | xy): Self = StObject.set(x, "zoomType", value.asInstanceOf[js.Any])
+    
+    inline def setZoomTypeUndefined: Self = StObject.set(x, "zoomType", js.undefined)
   }
 }

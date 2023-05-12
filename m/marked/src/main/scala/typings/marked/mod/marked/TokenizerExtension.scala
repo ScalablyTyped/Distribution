@@ -8,7 +8,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TokenizerExtension extends StObject {
+trait TokenizerExtension
+  extends StObject
+     with _TokenizerAndRendererExtension {
   
   var childTokens: js.UndefOr[js.Array[String]] = js.native
   

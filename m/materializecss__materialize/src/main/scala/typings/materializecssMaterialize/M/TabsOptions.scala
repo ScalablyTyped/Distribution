@@ -17,18 +17,21 @@ trait TabsOptions extends StObject {
   var duration: Double
   
   /**
-    * Callback for when a new tab content is shown
+    * Callback for when a new tab content is shown.
+    * @default null
     */
   def onShow(newContent: Element): Unit
   
   /**
-    * The maximum width of the screen, in pixels, where the swipeable functionality initializes.
+    * The maximum width of the screen, in pixels,
+    * where the swipeable functionality initializes.
     * @default infinity
     */
   var responsiveThreshold: Double
   
   /**
-    * Set to true to enable swipeable tabs. This also uses the responsiveThreshold option
+    * Set to true to enable swipeable tabs.
+    * This also uses the responsiveThreshold option.
     * @default false
     */
   var swipeable: Boolean

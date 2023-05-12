@@ -4,29 +4,20 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-sealed trait FragmentState extends StObject
-@JSImport("hls.js", "FragmentState")
-@js.native
-object FragmentState extends StObject {
+/* Rewritten from type alias, can be one of: 
+  - typings.hlsJs.hlsJsStrings.NOT_LOADED
+  - typings.hlsJs.hlsJsStrings.APPENDING
+  - typings.hlsJs.hlsJsStrings.PARTIAL
+  - typings.hlsJs.hlsJsStrings.OK
+*/
+trait FragmentState extends StObject
+object FragmentState {
   
-  @js.native
-  sealed trait APPENDING
-    extends StObject
-       with FragmentState
+  inline def APPENDING: typings.hlsJs.hlsJsStrings.APPENDING = "APPENDING".asInstanceOf[typings.hlsJs.hlsJsStrings.APPENDING]
   
-  @js.native
-  sealed trait NOT_LOADED
-    extends StObject
-       with FragmentState
+  inline def NOT_LOADED: typings.hlsJs.hlsJsStrings.NOT_LOADED = "NOT_LOADED".asInstanceOf[typings.hlsJs.hlsJsStrings.NOT_LOADED]
   
-  @js.native
-  sealed trait OK
-    extends StObject
-       with FragmentState
+  inline def OK: typings.hlsJs.hlsJsStrings.OK = "OK".asInstanceOf[typings.hlsJs.hlsJsStrings.OK]
   
-  @js.native
-  sealed trait PARTIAL
-    extends StObject
-       with FragmentState
+  inline def PARTIAL: typings.hlsJs.hlsJsStrings.PARTIAL = "PARTIAL".asInstanceOf[typings.hlsJs.hlsJsStrings.PARTIAL]
 }

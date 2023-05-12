@@ -15,7 +15,7 @@ trait ApplyChangesMode extends StObject {
   /**
     * Specifies when to apply changes made in the field chooser to the PivotGrid.
     */
-  var applyChangesMode: js.UndefOr[typings.devextreme.mod.DevExpress.common.charts.ApplyChangesMode] = js.undefined
+  var applyChangesMode: js.UndefOr[typings.devextreme.mod.DevExpress.common.grids.ApplyChangesMode] = js.undefined
   
   /**
     * Enables or disables the field chooser.
@@ -66,7 +66,7 @@ object ApplyChangesMode {
     
     inline def setAllowSearchUndefined: Self = StObject.set(x, "allowSearch", js.undefined)
     
-    inline def setApplyChangesMode(value: typings.devextreme.mod.DevExpress.common.charts.ApplyChangesMode): Self = StObject.set(x, "applyChangesMode", value.asInstanceOf[js.Any])
+    inline def setApplyChangesMode(value: typings.devextreme.mod.DevExpress.common.grids.ApplyChangesMode): Self = StObject.set(x, "applyChangesMode", value.asInstanceOf[js.Any])
     
     inline def setApplyChangesModeUndefined: Self = StObject.set(x, "applyChangesMode", js.undefined)
     

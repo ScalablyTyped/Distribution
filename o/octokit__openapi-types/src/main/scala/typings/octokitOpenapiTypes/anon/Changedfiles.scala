@@ -102,7 +102,7 @@ trait Changedfiles extends StObject {
     */
   var issue_url: String
   
-  var labels: js.Array[DescriptionId]
+  var labels: js.Array[DefaultDescription]
   
   /** @example true */
   var locked: Boolean
@@ -132,7 +132,7 @@ trait Changedfiles extends StObject {
   
   var merged_by: Avatarurl | Null
   
-  var milestone: Labelsurl | Null
+  var milestone: Closedissues | Null
   
   /** @example MDExOlB1bGxSZXF1ZXN0MQ== */
   var node_id: String
@@ -199,7 +199,7 @@ trait Changedfiles extends StObject {
     */
   var url: String
   
-  var user: Avatarurl | Null
+  var user: Avatarurl
 }
 object Changedfiles {
   
@@ -220,7 +220,7 @@ object Changedfiles {
     html_url: String,
     id: Double,
     issue_url: String,
-    labels: js.Array[DescriptionId],
+    labels: js.Array[DefaultDescription],
     locked: Boolean,
     maintainer_can_modify: Boolean,
     mergeable_state: String,
@@ -235,9 +235,10 @@ object Changedfiles {
     statuses_url: String,
     title: String,
     updated_at: String,
-    url: String
+    url: String,
+    user: Avatarurl
   ): Changedfiles = {
-    val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], additions = additions.asInstanceOf[js.Any], author_association = author_association.asInstanceOf[js.Any], base = base.asInstanceOf[js.Any], changed_files = changed_files.asInstanceOf[js.Any], comments = comments.asInstanceOf[js.Any], comments_url = comments_url.asInstanceOf[js.Any], commits = commits.asInstanceOf[js.Any], commits_url = commits_url.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], deletions = deletions.asInstanceOf[js.Any], diff_url = diff_url.asInstanceOf[js.Any], head = head.asInstanceOf[js.Any], html_url = html_url.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], issue_url = issue_url.asInstanceOf[js.Any], labels = labels.asInstanceOf[js.Any], locked = locked.asInstanceOf[js.Any], maintainer_can_modify = maintainer_can_modify.asInstanceOf[js.Any], mergeable_state = mergeable_state.asInstanceOf[js.Any], merged = merged.asInstanceOf[js.Any], node_id = node_id.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], patch_url = patch_url.asInstanceOf[js.Any], review_comment_url = review_comment_url.asInstanceOf[js.Any], review_comments = review_comments.asInstanceOf[js.Any], review_comments_url = review_comments_url.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], statuses_url = statuses_url.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], assignee = null, auto_merge = null, body = null, closed_at = null, merge_commit_sha = null, mergeable = null, merged_at = null, merged_by = null, milestone = null, user = null)
+    val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], additions = additions.asInstanceOf[js.Any], author_association = author_association.asInstanceOf[js.Any], base = base.asInstanceOf[js.Any], changed_files = changed_files.asInstanceOf[js.Any], comments = comments.asInstanceOf[js.Any], comments_url = comments_url.asInstanceOf[js.Any], commits = commits.asInstanceOf[js.Any], commits_url = commits_url.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], deletions = deletions.asInstanceOf[js.Any], diff_url = diff_url.asInstanceOf[js.Any], head = head.asInstanceOf[js.Any], html_url = html_url.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], issue_url = issue_url.asInstanceOf[js.Any], labels = labels.asInstanceOf[js.Any], locked = locked.asInstanceOf[js.Any], maintainer_can_modify = maintainer_can_modify.asInstanceOf[js.Any], mergeable_state = mergeable_state.asInstanceOf[js.Any], merged = merged.asInstanceOf[js.Any], node_id = node_id.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], patch_url = patch_url.asInstanceOf[js.Any], review_comment_url = review_comment_url.asInstanceOf[js.Any], review_comments = review_comments.asInstanceOf[js.Any], review_comments_url = review_comments_url.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], statuses_url = statuses_url.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any], assignee = null, auto_merge = null, body = null, closed_at = null, merge_commit_sha = null, mergeable = null, merged_at = null, merged_by = null, milestone = null)
     __obj.asInstanceOf[Changedfiles]
   }
   
@@ -310,9 +311,9 @@ object Changedfiles {
     
     inline def setIssue_url(value: String): Self = StObject.set(x, "issue_url", value.asInstanceOf[js.Any])
     
-    inline def setLabels(value: js.Array[DescriptionId]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: js.Array[DefaultDescription]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    inline def setLabelsVarargs(value: DescriptionId*): Self = StObject.set(x, "labels", js.Array(value*))
+    inline def setLabelsVarargs(value: DefaultDescription*): Self = StObject.set(x, "labels", js.Array(value*))
     
     inline def setLocked(value: Boolean): Self = StObject.set(x, "locked", value.asInstanceOf[js.Any])
     
@@ -338,7 +339,7 @@ object Changedfiles {
     
     inline def setMerged_byNull: Self = StObject.set(x, "merged_by", null)
     
-    inline def setMilestone(value: Labelsurl): Self = StObject.set(x, "milestone", value.asInstanceOf[js.Any])
+    inline def setMilestone(value: Closedissues): Self = StObject.set(x, "milestone", value.asInstanceOf[js.Any])
     
     inline def setMilestoneNull: Self = StObject.set(x, "milestone", null)
     
@@ -387,8 +388,6 @@ object Changedfiles {
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     inline def setUser(value: Avatarurl): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
-    
-    inline def setUserNull: Self = StObject.set(x, "user", null)
     
     inline def set_links(value: Commits): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }

@@ -81,6 +81,13 @@ trait TileLayer
     */
   var legendEnabled: Boolean = js.native
   
+  /**
+    * Loads all of the sublayers.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-TileLayer.html#loadAll)
+    */
+  def loadAll(): js.Promise[Sublayer] = js.native
+  
   @JSName("on")
   def on_refresh(name: refresh, eventHandler: TileLayerRefreshEventHandler): IHandle = js.native
   

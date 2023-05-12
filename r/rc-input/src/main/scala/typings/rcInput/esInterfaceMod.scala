@@ -1,9 +1,16 @@
 package typings.rcInput
 
+import typings.rcInput.anon.AffixWrapper
 import typings.rcInput.anon.ClearIcon
 import typings.rcInput.anon.Count
+import typings.rcInput.anon.CountInput
+import typings.rcInput.anon.Input
+import typings.rcInput.anon.Prefix
+import typings.rcInput.anon.Suffix
+import typings.rcInput.anon.`0`
 import typings.rcInput.esUtilsCommonUtilsMod.InputFocusOptions
 import typings.rcInput.esUtilsTypesMod.LiteralUnion
+import typings.rcInput.rcInputStrings._empty
 import typings.rcInput.rcInputStrings.`additions removals`
 import typings.rcInput.rcInputStrings.`additions text`
 import typings.rcInput.rcInputStrings.`datetime-local`
@@ -12,8 +19,10 @@ import typings.rcInput.rcInputStrings.`removals additions`
 import typings.rcInput.rcInputStrings.`removals text`
 import typings.rcInput.rcInputStrings.`text additions`
 import typings.rcInput.rcInputStrings.`text removals`
+import typings.rcInput.rcInputStrings.`use-credentials`
 import typings.rcInput.rcInputStrings.additions
 import typings.rcInput.rcInputStrings.all
+import typings.rcInput.rcInputStrings.anonymous
 import typings.rcInput.rcInputStrings.ascending
 import typings.rcInput.rcInputStrings.assertive
 import typings.rcInput.rcInputStrings.backward
@@ -119,7 +128,9 @@ import typings.react.mod.WheelEvent
 import typings.react.mod.WheelEventHandler
 import typings.std.Element
 import typings.std.Event
+import typings.std.FormData
 import typings.std.HTMLInputElement
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -131,6 +142,8 @@ object esInterfaceMod {
        with CommonInputProps {
     
     var className: js.UndefOr[String] = js.undefined
+    
+    var dataAttrs: js.UndefOr[`0`] = js.undefined
     
     var disabled: js.UndefOr[Boolean] = js.undefined
     
@@ -165,6 +178,10 @@ object esInterfaceMod {
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      
+      inline def setDataAttrs(value: `0`): Self = StObject.set(x, "dataAttrs", value.asInstanceOf[js.Any])
+      
+      inline def setDataAttrsUndefined: Self = StObject.set(x, "dataAttrs", js.undefined)
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
@@ -214,19 +231,17 @@ object esInterfaceMod {
     
     var addonBefore: js.UndefOr[ReactNode] = js.undefined
     
-    var affixWrapperClassName: js.UndefOr[String] = js.undefined
-    
     var allowClear: js.UndefOr[Boolean | ClearIcon] = js.undefined
     
-    var groupClassName: js.UndefOr[String] = js.undefined
+    var classNames: js.UndefOr[Prefix] = js.undefined
     
-    var inputClassName: js.UndefOr[String] = js.undefined
+    var classes: js.UndefOr[AffixWrapper] = js.undefined
     
     var prefix: js.UndefOr[ReactNode] = js.undefined
     
-    var suffix: js.UndefOr[ReactNode] = js.undefined
+    var styles: js.UndefOr[Suffix] = js.undefined
     
-    var wrapperClassName: js.UndefOr[String] = js.undefined
+    var suffix: js.UndefOr[ReactNode] = js.undefined
   }
   object CommonInputProps {
     
@@ -246,35 +261,33 @@ object esInterfaceMod {
       
       inline def setAddonBeforeUndefined: Self = StObject.set(x, "addonBefore", js.undefined)
       
-      inline def setAffixWrapperClassName(value: String): Self = StObject.set(x, "affixWrapperClassName", value.asInstanceOf[js.Any])
-      
-      inline def setAffixWrapperClassNameUndefined: Self = StObject.set(x, "affixWrapperClassName", js.undefined)
-      
       inline def setAllowClear(value: Boolean | ClearIcon): Self = StObject.set(x, "allowClear", value.asInstanceOf[js.Any])
       
       inline def setAllowClearUndefined: Self = StObject.set(x, "allowClear", js.undefined)
       
-      inline def setGroupClassName(value: String): Self = StObject.set(x, "groupClassName", value.asInstanceOf[js.Any])
+      inline def setClassNames(value: Prefix): Self = StObject.set(x, "classNames", value.asInstanceOf[js.Any])
       
-      inline def setGroupClassNameUndefined: Self = StObject.set(x, "groupClassName", js.undefined)
+      inline def setClassNamesUndefined: Self = StObject.set(x, "classNames", js.undefined)
       
-      inline def setInputClassName(value: String): Self = StObject.set(x, "inputClassName", value.asInstanceOf[js.Any])
+      inline def setClasses(value: AffixWrapper): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
       
-      inline def setInputClassNameUndefined: Self = StObject.set(x, "inputClassName", js.undefined)
+      inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
       
       inline def setPrefix(value: ReactNode): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
       inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
       
+      inline def setStyles(value: Suffix): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      
       inline def setSuffix(value: ReactNode): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
       
       inline def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
-      
-      inline def setWrapperClassName(value: String): Self = StObject.set(x, "wrapperClassName", value.asInstanceOf[js.Any])
-      
-      inline def setWrapperClassNameUndefined: Self = StObject.set(x, "wrapperClassName", js.undefined)
     }
   }
+  
+  type DataAttr = Record[/* template literal string: data-${string} */ String, String]
   
   /* Inlined parent rc-input.rc-input/es/interface.CommonInputProps */
   /* Inlined parent std.Omit<react.react.InputHTMLAttributes<std.HTMLInputElement>, 'size' | 'prefix' | 'type'> */
@@ -289,8 +302,6 @@ object esInterfaceMod {
     var addonAfter: js.UndefOr[ReactNode] = js.undefined
     
     var addonBefore: js.UndefOr[ReactNode] = js.undefined
-    
-    var affixWrapperClassName: js.UndefOr[String] = js.undefined
     
     var allowClear: js.UndefOr[Boolean | ClearIcon] = js.undefined
     
@@ -412,13 +423,19 @@ object esInterfaceMod {
     
     var className: js.UndefOr[String] = js.undefined
     
+    var classNames: js.UndefOr[js.UndefOr[Prefix] & Input] = js.undefined
+    
+    var classes: js.UndefOr[AffixWrapper] = js.undefined
+    
     var color: js.UndefOr[String] = js.undefined
+    
+    var content: js.UndefOr[String] = js.undefined
     
     var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
     var contextMenu: js.UndefOr[String] = js.undefined
     
-    var crossOrigin: js.UndefOr[String] = js.undefined
+    var crossOrigin: js.UndefOr[anonymous | `use-credentials` | _empty] = js.undefined
     
     var dangerouslySetInnerHTML: js.UndefOr[Html] = js.undefined
     
@@ -438,7 +455,7 @@ object esInterfaceMod {
     
     var form: js.UndefOr[String] = js.undefined
     
-    var formAction: js.UndefOr[String] = js.undefined
+    var formAction: js.UndefOr[String | (js.Function1[/* formData */ FormData, Unit])] = js.undefined
     
     var formEncType: js.UndefOr[String] = js.undefined
     
@@ -447,8 +464,6 @@ object esInterfaceMod {
     var formNoValidate: js.UndefOr[Boolean] = js.undefined
     
     var formTarget: js.UndefOr[String] = js.undefined
-    
-    var groupClassName: js.UndefOr[String] = js.undefined
     
     var height: js.UndefOr[Double | String] = js.undefined
     
@@ -459,8 +474,6 @@ object esInterfaceMod {
     var id: js.UndefOr[String] = js.undefined
     
     var inlist: js.UndefOr[Any] = js.undefined
-    
-    var inputClassName: js.UndefOr[String] = js.undefined
     
     var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
     
@@ -670,11 +683,15 @@ object esInterfaceMod {
     
     var readOnly: js.UndefOr[Boolean] = js.undefined
     
+    var rel: js.UndefOr[String] = js.undefined
+    
     var required: js.UndefOr[Boolean] = js.undefined
     
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
+    
+    var rev: js.UndefOr[String] = js.undefined
     
     var role: js.UndefOr[AriaRole] = js.undefined
     
@@ -691,6 +708,8 @@ object esInterfaceMod {
     var step: js.UndefOr[Double | String] = js.undefined
     
     var style: js.UndefOr[CSSProperties] = js.undefined
+    
+    var styles: js.UndefOr[js.UndefOr[Suffix] & CountInput] = js.undefined
     
     var suffix: js.UndefOr[ReactNode] = js.undefined
     
@@ -720,8 +739,6 @@ object esInterfaceMod {
     var vocab: js.UndefOr[String] = js.undefined
     
     var width: js.UndefOr[Double | String] = js.undefined
-    
-    var wrapperClassName: js.UndefOr[String] = js.undefined
   }
   object InputProps {
     
@@ -752,10 +769,6 @@ object esInterfaceMod {
       inline def setAddonBefore(value: ReactNode): Self = StObject.set(x, "addonBefore", value.asInstanceOf[js.Any])
       
       inline def setAddonBeforeUndefined: Self = StObject.set(x, "addonBefore", js.undefined)
-      
-      inline def setAffixWrapperClassName(value: String): Self = StObject.set(x, "affixWrapperClassName", value.asInstanceOf[js.Any])
-      
-      inline def setAffixWrapperClassNameUndefined: Self = StObject.set(x, "affixWrapperClassName", js.undefined)
       
       inline def setAllowClear(value: Boolean | ClearIcon): Self = StObject.set(x, "allowClear", value.asInstanceOf[js.Any])
       
@@ -995,19 +1008,31 @@ object esInterfaceMod {
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
+      inline def setClassNames(value: js.UndefOr[Prefix] & Input): Self = StObject.set(x, "classNames", value.asInstanceOf[js.Any])
+      
+      inline def setClassNamesUndefined: Self = StObject.set(x, "classNames", js.undefined)
+      
+      inline def setClasses(value: AffixWrapper): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
+      
+      inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
+      
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
       inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
       
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      
       inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
       inline def setContextMenuUndefined: Self = StObject.set(x, "contextMenu", js.undefined)
       
-      inline def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+      inline def setCrossOrigin(value: anonymous | `use-credentials` | _empty): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
       
       inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
       
@@ -1047,7 +1072,9 @@ object esInterfaceMod {
       
       inline def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
       
-      inline def setFormAction(value: String): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+      inline def setFormAction(value: String | (js.Function1[/* formData */ FormData, Unit])): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+      
+      inline def setFormActionFunction1(value: /* formData */ FormData => Unit): Self = StObject.set(x, "formAction", js.Any.fromFunction1(value))
       
       inline def setFormActionUndefined: Self = StObject.set(x, "formAction", js.undefined)
       
@@ -1069,10 +1096,6 @@ object esInterfaceMod {
       
       inline def setFormUndefined: Self = StObject.set(x, "form", js.undefined)
       
-      inline def setGroupClassName(value: String): Self = StObject.set(x, "groupClassName", value.asInstanceOf[js.Any])
-      
-      inline def setGroupClassNameUndefined: Self = StObject.set(x, "groupClassName", js.undefined)
-      
       inline def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
       inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
@@ -1092,10 +1115,6 @@ object esInterfaceMod {
       inline def setInlist(value: Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
       
       inline def setInlistUndefined: Self = StObject.set(x, "inlist", js.undefined)
-      
-      inline def setInputClassName(value: String): Self = StObject.set(x, "inputClassName", value.asInstanceOf[js.Any])
-      
-      inline def setInputClassNameUndefined: Self = StObject.set(x, "inputClassName", js.undefined)
       
       inline def setInputMode(value: none | text | tel | url | email | numeric | decimal | search): Self = StObject.set(x, "inputMode", value.asInstanceOf[js.Any])
       
@@ -1513,6 +1532,10 @@ object esInterfaceMod {
       
       inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
       
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      
+      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+      
       inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
       
       inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
@@ -1524,6 +1547,10 @@ object esInterfaceMod {
       inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+      
+      inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+      
+      inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
       
       inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
@@ -1556,6 +1583,10 @@ object esInterfaceMod {
       inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      
+      inline def setStyles(value: js.UndefOr[Suffix] & CountInput): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
       inline def setSuffix(value: ReactNode): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
       
@@ -1611,10 +1642,6 @@ object esInterfaceMod {
       inline def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
       inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
-      
-      inline def setWrapperClassName(value: String): Self = StObject.set(x, "wrapperClassName", value.asInstanceOf[js.Any])
-      
-      inline def setWrapperClassNameUndefined: Self = StObject.set(x, "wrapperClassName", js.undefined)
     }
   }
   

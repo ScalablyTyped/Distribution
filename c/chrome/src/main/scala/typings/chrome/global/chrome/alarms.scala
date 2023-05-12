@@ -21,22 +21,18 @@ object alarms {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def clear(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")().asInstanceOf[Unit]
+  inline def clear(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")().asInstanceOf[js.Promise[Boolean]]
   inline def clear(callback: js.Function1[/* wasCleared */ Boolean, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def clear(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def clear(name: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")(name.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
   inline def clear(name: String, callback: js.Function1[/* wasCleared */ Boolean, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("clear")(name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def clear(name: Unit, callback: js.Function1[/* wasCleared */ Boolean, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("clear")(name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def clearAll(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearAll")().asInstanceOf[Unit]
+  inline def clearAll(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("clearAll")().asInstanceOf[js.Promise[Boolean]]
   inline def clearAll(callback: js.Function1[/* wasCleared */ Boolean, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearAll")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def clearAll_Promise(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("clearAll")().asInstanceOf[js.Promise[Boolean]]
-  
-  inline def clear_Promise(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")().asInstanceOf[js.Promise[Boolean]]
-  inline def clear_Promise(name: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")(name.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
-  
-  inline def create(alarmInfo: AlarmCreateInfo): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(alarmInfo.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def create(name: String, alarmInfo: AlarmCreateInfo): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], alarmInfo.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def create(alarmInfo: AlarmCreateInfo): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(alarmInfo.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def create(alarmInfo: AlarmCreateInfo, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(alarmInfo.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def create(name: String, alarmInfo: AlarmCreateInfo): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], alarmInfo.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def create(name: String, alarmInfo: AlarmCreateInfo, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], alarmInfo.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def get(): js.Promise[Alarm] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[js.Promise[Alarm]]
   inline def get(callback: js.Function1[/* alarm */ Alarm, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]

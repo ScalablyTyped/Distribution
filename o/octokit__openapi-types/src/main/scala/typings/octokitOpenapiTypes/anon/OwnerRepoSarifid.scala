@@ -6,13 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait OwnerRepoSarifid extends StObject {
   
-  /** The account owner of the repository. The name is not case sensitive. */
   var owner: String
   
-  /** The name of the repository. The name is not case sensitive. */
   var repo: String
   
-  /** The SARIF ID obtained after uploading. */
+  /** @description The SARIF ID obtained after uploading. */
   var sarif_id: String
 }
 object OwnerRepoSarifid {

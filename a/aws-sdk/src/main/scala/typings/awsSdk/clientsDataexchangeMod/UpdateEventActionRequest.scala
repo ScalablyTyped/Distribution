@@ -14,11 +14,11 @@ trait UpdateEventActionRequest extends StObject {
   /**
     * The unique identifier for the event action.
     */
-  var EventActionId: string
+  var EventActionId: _String
 }
 object UpdateEventActionRequest {
   
-  inline def apply(EventActionId: string): UpdateEventActionRequest = {
+  inline def apply(EventActionId: _String): UpdateEventActionRequest = {
     val __obj = js.Dynamic.literal(EventActionId = EventActionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateEventActionRequest]
   }
@@ -30,6 +30,6 @@ object UpdateEventActionRequest {
     
     inline def setActionUndefined: Self = StObject.set(x, "Action", js.undefined)
     
-    inline def setEventActionId(value: string): Self = StObject.set(x, "EventActionId", value.asInstanceOf[js.Any])
+    inline def setEventActionId(value: _String): Self = StObject.set(x, "EventActionId", value.asInstanceOf[js.Any])
   }
 }

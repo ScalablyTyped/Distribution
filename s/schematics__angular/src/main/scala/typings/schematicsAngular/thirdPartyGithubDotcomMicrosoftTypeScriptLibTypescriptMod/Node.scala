@@ -9,18 +9,6 @@ trait Node
   extends StObject
      with ReadonlyTextRange {
   
-  /**
-    * @deprecated `decorators` has been removed from `Node` and merged with `modifiers` on the `Node` subtypes that support them.
-    * Use `ts.canHaveDecorators()` to test whether a `Node` can have decorators.
-    * Use `ts.getDecorators()` to get the decorators of a `Node`.
-    *
-    * For example:
-    * ```ts
-    * const decorators = ts.canHaveDecorators(node) ? ts.getDecorators(node) : undefined;
-    * ```
-    */
-  val decorators: Unit = js.native
-  
   val flags: NodeFlags = js.native
   
   def forEachChild[T](cbNode: js.Function1[/* node */ this.type, js.UndefOr[T]]): js.UndefOr[T] = js.native
@@ -70,18 +58,6 @@ trait Node
   def getWidth(sourceFile: SourceFileLike): Double = js.native
   
   val kind: SyntaxKind = js.native
-  
-  /**
-    * @deprecated `modifiers` has been removed from `Node` and moved to the `Node` subtypes that support them.
-    * Use `ts.canHaveModifiers()` to test whether a `Node` can have modifiers.
-    * Use `ts.getModifiers()` to get the modifiers of a `Node`.
-    *
-    * For example:
-    * ```ts
-    * const modifiers = ts.canHaveModifiers(node) ? ts.getModifiers(node) : undefined;
-    * ```
-    */
-  val modifiers: js.UndefOr[NodeArray[ModifierLike]] = js.native
   
   val parent: Node = js.native
 }

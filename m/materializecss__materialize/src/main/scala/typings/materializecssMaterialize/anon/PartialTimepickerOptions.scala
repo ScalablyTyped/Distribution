@@ -11,7 +11,7 @@ trait PartialTimepickerOptions extends StObject {
   
   var autoClose: js.UndefOr[Boolean] = js.undefined
   
-  var container: js.UndefOr[String] = js.undefined
+  var container: js.UndefOr[Element | String | Null] = js.undefined
   
   var defaultTime: js.UndefOr[String] = js.undefined
   
@@ -51,7 +51,9 @@ object PartialTimepickerOptions {
     
     inline def setAutoCloseUndefined: Self = StObject.set(x, "autoClose", js.undefined)
     
-    inline def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: Element | String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    
+    inline def setContainerNull: Self = StObject.set(x, "container", null)
     
     inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     

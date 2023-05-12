@@ -21,7 +21,7 @@ trait ChartSeries
   /**
     * Sets the series type.
     */
-  var `type`: js.UndefOr[SeriesType] = js.undefined
+  var `type`: js.UndefOr[typings.devextreme.mod.DevExpress.common.charts.SeriesType] = js.undefined
 }
 object ChartSeries {
   
@@ -41,7 +41,7 @@ object ChartSeries {
     
     inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
     
-    inline def setType(value: SeriesType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.devextreme.mod.DevExpress.common.charts.SeriesType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class Gauge[T /* <: String */] protected ()
   extends StObject
-     with Metric_[T] {
+     with Metric[T] {
   /**
   	 * @param configuration Configuration when creating a Gauge metric. Name and Help is mandatory
   	 */
@@ -28,6 +28,11 @@ open class Gauge[T /* <: String */] protected ()
   def dec(labels: LabelValues[T]): Unit = js.native
   def dec(labels: LabelValues[T], value: Double): Unit = js.native
   def dec(value: Double): Unit = js.native
+  
+  /**
+  	 * Get gauge metric object
+  	 */
+  def get(): js.Promise[MetricObjectWithValues[MetricValue[T]]] = js.native
   
   /**
   	 * Increment gauge

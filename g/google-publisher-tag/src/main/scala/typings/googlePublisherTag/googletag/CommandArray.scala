@@ -14,8 +14,8 @@ trait CommandArray extends StObject {
   /**
     * Executes the sequence of functions specified in the arguments in order.
     * @example
-    *   googletag.cmd.push(function() {
-    *     googletag.defineSlot('/1234567/sports', [160, 600])
+    *   googletag.cmd.push(() => {
+    *     googletag.defineSlot('/1234567/sports', [160, 600])!
     *              .addService(googletag.pubads());
     *   });
     *  @param f A JavaScript function to be executed. The runtime binding will

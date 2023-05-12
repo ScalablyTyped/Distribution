@@ -1,5 +1,6 @@
 package typings.inferno.distCoreTypesMod.Inferno
 
+import typings.inferno.distCoreTypesMod.InfernoNode
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

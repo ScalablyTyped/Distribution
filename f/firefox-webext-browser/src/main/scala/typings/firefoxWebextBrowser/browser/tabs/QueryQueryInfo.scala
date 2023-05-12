@@ -19,7 +19,7 @@ trait QueryQueryInfo extends StObject {
   var camera: js.UndefOr[Boolean] = js.undefined
   
   /** The CookieStoreId used for the tab. */
-  var cookieStoreId: js.UndefOr[String] = js.undefined
+  var cookieStoreId: js.UndefOr[js.Array[String] | String] = js.undefined
   
   /** Whether the tabs are in the current window. */
   var currentWindow: js.UndefOr[Boolean] = js.undefined
@@ -97,9 +97,11 @@ object QueryQueryInfo {
     
     inline def setCameraUndefined: Self = StObject.set(x, "camera", js.undefined)
     
-    inline def setCookieStoreId(value: String): Self = StObject.set(x, "cookieStoreId", value.asInstanceOf[js.Any])
+    inline def setCookieStoreId(value: js.Array[String] | String): Self = StObject.set(x, "cookieStoreId", value.asInstanceOf[js.Any])
     
     inline def setCookieStoreIdUndefined: Self = StObject.set(x, "cookieStoreId", js.undefined)
+    
+    inline def setCookieStoreIdVarargs(value: String*): Self = StObject.set(x, "cookieStoreId", js.Array(value*))
     
     inline def setCurrentWindow(value: Boolean): Self = StObject.set(x, "currentWindow", value.asInstanceOf[js.Any])
     

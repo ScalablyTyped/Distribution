@@ -80,6 +80,8 @@ object libSerializerMod {
       */
     def setPrefix(prefix: Any, uri: Any): Unit = js.native
     
+    def statementsToJsonld(sts: Any): String = js.native
+    
     def statementsToN3(sts: Any): String = js.native
     
     def statementsToNTriples(sts: Any): String = js.native

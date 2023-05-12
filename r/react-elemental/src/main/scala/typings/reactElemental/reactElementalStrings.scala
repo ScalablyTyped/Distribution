@@ -15,6 +15,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object reactElementalStrings {
   
   @js.native
+  sealed trait _empty extends StObject
+  inline def _empty: _empty = "".asInstanceOf[_empty]
+  
+  @js.native
   sealed trait additions extends StObject
   inline def additions: additions = "additions".asInstanceOf[additions]
   
@@ -40,6 +44,10 @@ object reactElementalStrings {
        with SpinnerSize
        with TagSize
   inline def alpha: alpha = "alpha".asInstanceOf[alpha]
+  
+  @js.native
+  sealed trait anonymous extends StObject
+  inline def anonymous: anonymous = "anonymous".asInstanceOf[anonymous]
   
   @js.native
   sealed trait ascending extends StObject
@@ -307,6 +315,10 @@ object reactElementalStrings {
   @js.native
   sealed trait url extends StObject
   inline def url: url = "url".asInstanceOf[url]
+  
+  @js.native
+  sealed trait `use-credentials` extends StObject
+  inline def `use-credentials`: `use-credentials` = "use-credentials".asInstanceOf[`use-credentials`]
   
   @js.native
   sealed trait user extends StObject

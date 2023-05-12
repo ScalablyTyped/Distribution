@@ -5,15 +5,15 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * This class implements the MapType interface and is provided for rendering
-  * image tiles.
-  */
 @JSGlobal("google.maps.ImageMapType")
 @js.native
 /**
   * This class implements the MapType interface and is provided for rendering
   * image tiles.
+  *
+  * Access by calling `const {ImageMapType} = await
+  * google.maps.importLibrary("maps")`. See
+  * https://developers.google.com/maps/documentation/javascript/libraries.
   */
 open class ImageMapType ()
   extends StObject

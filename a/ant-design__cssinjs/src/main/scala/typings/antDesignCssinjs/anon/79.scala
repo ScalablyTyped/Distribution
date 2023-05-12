@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.Height
+import typings.csstype.mod.Property.FontVariantLigatures
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,13 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `79` extends StObject {
   
   var value: js.UndefOr[
-    (Height[Double | String]) | (js.Array[
+    FontVariantLigatures | (js.Array[
       (Extract[
-        js.UndefOr[
-          (Height[Double | String]) | (js.Array[NonNullable[js.UndefOr[Height[Double | String]]]])
-        ], 
+        js.UndefOr[FontVariantLigatures | js.Array[NonNullable[js.UndefOr[FontVariantLigatures]]]], 
         String
-      ]) | (NonNullable[js.UndefOr[Height[Double | String]]])
+      ]) | NonNullable[js.UndefOr[FontVariantLigatures]]
     ])
   ] = js.native
 }

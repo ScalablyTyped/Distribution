@@ -37,7 +37,7 @@ trait OrganizationSettings extends StObject {
   
   /**
     * Returns the region of the current organization.
-    * @see {@link https://docs.microsoft.com/en-us/power-platform/admin/geo-to-geo-migrations External Link: Geo to geo migrations}
+    * @see {@link https://learn.microsoft.com/en-us/power-platform/admin/geo-to-geo-migrations External Link: Geo to geo migrations}
     */
   var organizationGeo: String
   

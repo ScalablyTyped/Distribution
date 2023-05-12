@@ -6,15 +6,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Cursor extends StObject {
   
-  /** Used for pagination: the starting delivery from which the page of deliveries is fetched. Refer to the `link` header for the next and previous page cursors. */
   var cursor: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['cursor'] */ js.Any
   ] = js.undefined
   
-  /** The number of results per page (max 100). */
   var per_page: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['per-page'] */ js.Any
   ] = js.undefined
+  
+  var redelivery: js.UndefOr[Boolean] = js.undefined
 }
 object Cursor {
   
@@ -37,5 +37,9 @@ object Cursor {
     ): Self = StObject.set(x, "per_page", value.asInstanceOf[js.Any])
     
     inline def setPer_pageUndefined: Self = StObject.set(x, "per_page", js.undefined)
+    
+    inline def setRedelivery(value: Boolean): Self = StObject.set(x, "redelivery", value.asInstanceOf[js.Any])
+    
+    inline def setRedeliveryUndefined: Self = StObject.set(x, "redelivery", js.undefined)
   }
 }

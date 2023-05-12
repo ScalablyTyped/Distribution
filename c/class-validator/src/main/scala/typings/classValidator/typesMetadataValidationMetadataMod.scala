@@ -46,6 +46,11 @@ object typesMetadataValidationMetadataMod {
     var message: String | (js.Function1[/* args */ ValidationArguments, String]) = js.native
     
     /**
+      * Validator name.
+      */
+    var name: js.UndefOr[String] = js.native
+    
+    /**
       * Property of the object to be validated.
       */
     var propertyName: String = js.native

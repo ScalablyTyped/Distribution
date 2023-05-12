@@ -132,6 +132,8 @@ object mod {
     
     val background: js.UndefOr[String] = js.undefined
     
+    val cacheBustingQueryParam: js.UndefOr[String | Null] = js.undefined
+    
     val developerName: js.UndefOr[String] = js.undefined
     
     val developerURL: js.UndefOr[String] = js.undefined
@@ -148,7 +150,7 @@ object mod {
     
     val loadManifestWithCredentials: js.UndefOr[Boolean] = js.undefined
     
-    val manifestMaskable: js.UndefOr[Boolean | String | (js.Array[Buffer | String]) | Buffer] = js.undefined
+    val manifestMaskable: js.UndefOr[Boolean | String | Buffer | (js.Array[String | Buffer])] = js.undefined
     
     val manifestRelativePaths: js.UndefOr[Boolean] = js.undefined
     
@@ -204,6 +206,12 @@ object mod {
       
       inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
       
+      inline def setCacheBustingQueryParam(value: String): Self = StObject.set(x, "cacheBustingQueryParam", value.asInstanceOf[js.Any])
+      
+      inline def setCacheBustingQueryParamNull: Self = StObject.set(x, "cacheBustingQueryParam", null)
+      
+      inline def setCacheBustingQueryParamUndefined: Self = StObject.set(x, "cacheBustingQueryParam", js.undefined)
+      
       inline def setDeveloperName(value: String): Self = StObject.set(x, "developerName", value.asInstanceOf[js.Any])
       
       inline def setDeveloperNameUndefined: Self = StObject.set(x, "developerName", js.undefined)
@@ -236,11 +244,11 @@ object mod {
       
       inline def setLoadManifestWithCredentialsUndefined: Self = StObject.set(x, "loadManifestWithCredentials", js.undefined)
       
-      inline def setManifestMaskable(value: Boolean | String | (js.Array[Buffer | String]) | Buffer): Self = StObject.set(x, "manifestMaskable", value.asInstanceOf[js.Any])
+      inline def setManifestMaskable(value: Boolean | String | Buffer | (js.Array[String | Buffer])): Self = StObject.set(x, "manifestMaskable", value.asInstanceOf[js.Any])
       
       inline def setManifestMaskableUndefined: Self = StObject.set(x, "manifestMaskable", js.undefined)
       
-      inline def setManifestMaskableVarargs(value: (Buffer | String)*): Self = StObject.set(x, "manifestMaskable", js.Array(value*))
+      inline def setManifestMaskableVarargs(value: (String | Buffer)*): Self = StObject.set(x, "manifestMaskable", js.Array(value*))
       
       inline def setManifestRelativePaths(value: Boolean): Self = StObject.set(x, "manifestRelativePaths", value.asInstanceOf[js.Any])
       
@@ -524,7 +532,7 @@ object mod {
     
     val description: js.UndefOr[String] = js.undefined
     
-    val icon: js.UndefOr[String | (js.Array[Buffer | String]) | Buffer] = js.undefined
+    val icon: js.UndefOr[String | Buffer | (js.Array[String | Buffer])] = js.undefined
     
     val name: String
     
@@ -546,11 +554,11 @@ object mod {
       
       inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      inline def setIcon(value: String | (js.Array[Buffer | String]) | Buffer): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: String | Buffer | (js.Array[String | Buffer])): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
       inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
-      inline def setIconVarargs(value: (Buffer | String)*): Self = StObject.set(x, "icon", js.Array(value*))
+      inline def setIconVarargs(value: (String | Buffer)*): Self = StObject.set(x, "icon", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

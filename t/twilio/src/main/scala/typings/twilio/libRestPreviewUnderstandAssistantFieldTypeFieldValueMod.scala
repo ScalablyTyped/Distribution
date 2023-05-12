@@ -1,194 +1,146 @@
 package typings.twilio
 
+import typings.twilio.anon.FieldTypeSid
 import typings.twilio.libBasePageMod.TwilioResponsePayload
-import typings.twilio.libInterfacesMod.SerializableClass
+import typings.twilio.libRestPreviewUnderstandMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libRestPreviewUnderstandAssistantFieldTypeFieldValueMod {
   
-  @JSImport("twilio/lib/rest/preview/understand/assistant/fieldType/fieldValue", JSImport.Namespace)
+  @JSImport("twilio/lib/rest/preview/understand/assistant/fieldType/fieldValue", "FieldValueContextImpl")
   @js.native
-  val ^ : js.Any = js.native
-  
-  @JSImport("twilio/lib/rest/preview/understand/assistant/fieldType/fieldValue", "FieldValueContext")
-  @js.native
-  open class FieldValueContext protected () extends StObject {
-    /**
-      * Initialize the FieldValueContext
-      *
-      * PLEASE NOTE that this class contains preview products that are subject to
-      * change. Use them with caution. If you currently do not have developer preview
-      * access, please contact help@twilio.com.
-      *
-      * @param version - Version of the resource
-      * @param assistantSid - The assistant_sid
-      * @param fieldTypeSid - The field_type_sid
-      * @param sid - The sid
-      */
-    def this(
-      version: typings.twilio.libRestPreviewUnderstandMod.^,
-      assistantSid: String,
-      fieldTypeSid: String,
-      sid: String
-    ) = this()
+  open class FieldValueContextImpl protected ()
+    extends StObject
+       with FieldValueContext {
+    def this(_version: default, assistantSid: String, fieldTypeSid: String, sid: String) = this()
     
-    /**
-      * fetch a FieldValueInstance
-      *
-      * @param callback - Callback to handle processed record
-      */
-    def fetch(): js.Promise[FieldValueInstance] = js.native
-    def fetch(callback: js.Function2[/* error */ js.Error | Null, /* items */ FieldValueInstance, Any]): js.Promise[FieldValueInstance] = js.native
+    /* protected */ var _solution: FieldValueContextSolution = js.native
     
-    /**
-      * remove a FieldValueInstance
-      *
-      * @param callback - Callback to handle processed record
-      */
-    def remove(): js.Promise[Boolean] = js.native
-    def remove(callback: js.Function2[/* error */ js.Error | Null, /* items */ FieldValueInstance, Any]): js.Promise[Boolean] = js.native
+    /* protected */ var _uri: String = js.native
     
-    /**
-      * Provide a user-friendly representation
-      */
-    def toJSON(): Any = js.native
+    /* protected */ var _version: default = js.native
   }
   
   @JSImport("twilio/lib/rest/preview/understand/assistant/fieldType/fieldValue", "FieldValueInstance")
   @js.native
-  open class FieldValueInstance protected () extends SerializableClass {
-    /**
-      * Initialize the FieldValueContext
-      *
-      * PLEASE NOTE that this class contains preview products that are subject to
-      * change. Use them with caution. If you currently do not have developer preview
-      * access, please contact help@twilio.com.
-      *
-      * @param version - Version of the resource
-      * @param payload - The instance payload
-      * @param assistantSid - The unique ID of the Assistant.
-      * @param fieldTypeSid - The unique ID of the Field Type associated with this Field Value.
-      * @param sid - The sid
-      */
+  open class FieldValueInstance protected () extends StObject {
+    def this(_version: default, payload: FieldValueResource, assistantSid: String, fieldTypeSid: String) = this()
     def this(
-      version: typings.twilio.libRestPreviewUnderstandMod.^,
-      payload: FieldValuePayload,
+      _version: default,
+      payload: FieldValueResource,
       assistantSid: String,
       fieldTypeSid: String,
       sid: String
     ) = this()
     
-    /* private */ var _proxy: FieldValueContext = js.native
+    /* protected */ var _context: js.UndefOr[FieldValueContext] = js.native
     
+    /* private */ def _proxy: Any = js.native
+    
+    /* protected */ var _solution: FieldValueContextSolution = js.native
+    
+    /* protected */ var _version: default = js.native
+    
+    /**
+      * The unique ID of the Account that created this Field Value.
+      */
     var accountSid: String = js.native
     
+    /**
+      * The unique ID of the Assistant.
+      */
     var assistantSid: String = js.native
     
+    /**
+      * The date that this resource was created
+      */
     var dateCreated: js.Date = js.native
     
+    /**
+      * The date that this resource was last updated
+      */
     var dateUpdated: js.Date = js.native
     
     /**
-      * fetch a FieldValueInstance
+      * Fetch a FieldValueInstance
       *
       * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed FieldValueInstance
       */
     def fetch(): js.Promise[FieldValueInstance] = js.native
-    def fetch(callback: js.Function2[/* error */ js.Error | Null, /* items */ this.type, Any]): js.Promise[FieldValueInstance] = js.native
+    def fetch(callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[this.type], Any]): js.Promise[FieldValueInstance] = js.native
     
+    /**
+      * The unique ID of the Field Type associated with this Field Value.
+      */
     var fieldTypeSid: String = js.native
     
+    /**
+      * An ISO language-country string of the value.
+      */
     var language: String = js.native
     
     /**
-      * remove a FieldValueInstance
+      * Remove a FieldValueInstance
       *
       * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed boolean
       */
     def remove(): js.Promise[Boolean] = js.native
-    def remove(callback: js.Function2[/* error */ js.Error | Null, /* items */ this.type, Any]): js.Promise[Boolean] = js.native
+    def remove(callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[Boolean], Any]): js.Promise[Boolean] = js.native
     
+    /**
+      * A 34 character string that uniquely identifies this resource.
+      */
     var sid: String = js.native
     
+    /**
+      * A value that indicates this field value is a synonym of. Empty if the value is not a synonym.
+      */
     var synonymOf: String = js.native
-    
-    var url: String = js.native
-    
-    var value: String = js.native
-  }
-  
-  /**
-    * Initialize the FieldValueList
-    *
-    * PLEASE NOTE that this class contains preview products that are subject to
-    * change. Use them with caution. If you currently do not have developer preview
-    * access, please contact help@twilio.com.
-    *
-    * @param version - Version of the resource
-    * @param assistantSid - The unique ID of the Assistant.
-    * @param fieldTypeSid - The unique ID of the Field Type associated with this Field Value.
-    */
-  inline def FieldValueList(version: typings.twilio.libRestPreviewUnderstandMod.^, assistantSid: String, fieldTypeSid: String): FieldValueListInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("FieldValueList")(version.asInstanceOf[js.Any], assistantSid.asInstanceOf[js.Any], fieldTypeSid.asInstanceOf[js.Any])).asInstanceOf[FieldValueListInstance]
-  
-  @JSImport("twilio/lib/rest/preview/understand/assistant/fieldType/fieldValue", "FieldValuePage")
-  @js.native
-  open class FieldValuePage protected ()
-    extends typings.twilio.libBasePageMod.^[
-          typings.twilio.libRestPreviewUnderstandMod.^, 
-          FieldValuePayload, 
-          FieldValueResource, 
-          FieldValueInstance
-        ] {
-    /**
-      * Initialize the FieldValuePage
-      *
-      * PLEASE NOTE that this class contains preview products that are subject to
-      * change. Use them with caution. If you currently do not have developer preview
-      * access, please contact help@twilio.com.
-      *
-      * @param version - Version of the resource
-      * @param response - Response from the API
-      * @param solution - Path solution
-      */
-    def this(
-      version: typings.twilio.libRestPreviewUnderstandMod.^,
-      response: typings.twilio.libHttpResponseMod.^[String],
-      solution: FieldValueSolution
-    ) = this()
-    
-    /**
-      * Build an instance of FieldValueInstance
-      *
-      * @param payload - Payload response from the API
-      */
-    def getInstance(payload: FieldValuePayload): FieldValueInstance = js.native
     
     /**
       * Provide a user-friendly representation
+      *
+      * @returns Object
       */
-    def toJSON(): Any = js.native
+    def toJSON(): FieldTypeSid = js.native
+    
+    var url: String = js.native
+    
+    /**
+      * The Field Value itself.
+      */
+    var value: String = js.native
   }
   
   @js.native
   trait FieldValueListInstance extends StObject {
     
-    /**
-      * @param sid - sid of instance
-      */
     def apply(sid: String): FieldValueContext = js.native
     
+    var _solution: FieldValueSolution = js.native
+    
+    var _uri: String = js.native
+    
+    var _version: default = js.native
+    
     /**
-      * create a FieldValueInstance
+      * Create a FieldValueInstance
       *
-      * @param opts - Options for request
+      * @param params - Parameter for request
       * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed FieldValueInstance
       */
-    def create(opts: FieldValueListInstanceCreateOptions): js.Promise[FieldValueInstance] = js.native
+    def create(params: FieldValueListInstanceCreateOptions): js.Promise[FieldValueInstance] = js.native
     def create(
-      opts: FieldValueListInstanceCreateOptions,
-      callback: js.Function2[/* error */ js.Error | Null, /* item */ FieldValueInstance, Any]
+      params: FieldValueListInstanceCreateOptions,
+      callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[FieldValueInstance], Any]
     ): js.Promise[FieldValueInstance] = js.native
     
     /**
@@ -203,7 +155,8 @@ object libRestPreviewUnderstandAssistantFieldTypeFieldValueMod {
       * If a function is passed as the first argument, it will be used as the callback
       * function.
       *
-      * @param callback - Function to process each record
+      * @param { FieldValueListInstanceEachOptions } [params] - Options for request
+      * @param { function } [callback] - Function to process each record
       */
     def each(): Unit = js.native
     def each(
@@ -213,17 +166,9 @@ object libRestPreviewUnderstandAssistantFieldTypeFieldValueMod {
           Unit
         ]
     ): Unit = js.native
+    def each(params: FieldValueListInstanceEachOptions): Unit = js.native
     def each(
-      opts: Unit,
-      callback: js.Function2[
-          /* item */ FieldValueInstance, 
-          /* done */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
-          Unit
-        ]
-    ): Unit = js.native
-    def each(opts: FieldValueListInstanceEachOptions): Unit = js.native
-    def each(
-      opts: FieldValueListInstanceEachOptions,
+      params: FieldValueListInstanceEachOptions,
       callback: js.Function2[
           /* item */ FieldValueInstance, 
           /* done */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
@@ -231,11 +176,6 @@ object libRestPreviewUnderstandAssistantFieldTypeFieldValueMod {
         ]
     ): Unit = js.native
     
-    /**
-      * Constructs a field_value
-      *
-      * @param sid - The sid
-      */
     def get(sid: String): FieldValueContext = js.native
     
     /**
@@ -243,20 +183,12 @@ object libRestPreviewUnderstandAssistantFieldTypeFieldValueMod {
       *
       * The request is executed immediately.
       *
-      * If a function is passed as the first argument, it will be used as the callback
-      * function.
-      *
-      * @param callback - Callback to handle list of records
+      * @param { string } [targetUrl] - API-generated URL for the requested results page
+      * @param { function } [callback] - Callback to handle list of records
       */
-    def getPage(): js.Promise[FieldValuePage] = js.native
-    def getPage(callback: js.Function2[/* error */ js.Error | Null, /* items */ FieldValuePage, Any]): js.Promise[FieldValuePage] = js.native
     def getPage(targetUrl: String): js.Promise[FieldValuePage] = js.native
     def getPage(
       targetUrl: String,
-      callback: js.Function2[/* error */ js.Error | Null, /* items */ FieldValuePage, Any]
-    ): js.Promise[FieldValuePage] = js.native
-    def getPage(
-      targetUrl: Unit,
       callback: js.Function2[/* error */ js.Error | Null, /* items */ FieldValuePage, Any]
     ): js.Promise[FieldValuePage] = js.native
     
@@ -266,17 +198,14 @@ object libRestPreviewUnderstandAssistantFieldTypeFieldValueMod {
       * If a function is passed as the first argument, it will be used as the callback
       * function.
       *
-      * @param callback - Callback to handle list of records
+      * @param { FieldValueListInstanceOptions } [params] - Options for request
+      * @param { function } [callback] - Callback to handle list of records
       */
     def list(): js.Promise[js.Array[FieldValueInstance]] = js.native
     def list(callback: js.Function2[/* error */ js.Error | Null, /* items */ js.Array[FieldValueInstance], Any]): js.Promise[js.Array[FieldValueInstance]] = js.native
+    def list(params: FieldValueListInstanceOptions): js.Promise[js.Array[FieldValueInstance]] = js.native
     def list(
-      opts: Unit,
-      callback: js.Function2[/* error */ js.Error | Null, /* items */ js.Array[FieldValueInstance], Any]
-    ): js.Promise[js.Array[FieldValueInstance]] = js.native
-    def list(opts: FieldValueListInstanceOptions): js.Promise[js.Array[FieldValueInstance]] = js.native
-    def list(
-      opts: FieldValueListInstanceOptions,
+      params: FieldValueListInstanceOptions,
       callback: js.Function2[/* error */ js.Error | Null, /* items */ js.Array[FieldValueInstance], Any]
     ): js.Promise[js.Array[FieldValueInstance]] = js.native
     
@@ -288,14 +217,14 @@ object libRestPreviewUnderstandAssistantFieldTypeFieldValueMod {
       * If a function is passed as the first argument, it will be used as the callback
       * function.
       *
-      * @param callback - Callback to handle list of records
+      * @param { FieldValueListInstancePageOptions } [params] - Options for request
+      * @param { function } [callback] - Callback to handle list of records
       */
     def page(): js.Promise[FieldValuePage] = js.native
     def page(callback: js.Function2[/* error */ js.Error | Null, /* items */ FieldValuePage, Any]): js.Promise[FieldValuePage] = js.native
-    def page(opts: Unit, callback: js.Function2[/* error */ js.Error | Null, /* items */ FieldValuePage, Any]): js.Promise[FieldValuePage] = js.native
-    def page(opts: FieldValueListInstancePageOptions): js.Promise[FieldValuePage] = js.native
+    def page(params: FieldValueListInstancePageOptions): js.Promise[FieldValuePage] = js.native
     def page(
-      opts: FieldValueListInstancePageOptions,
+      params: FieldValueListInstancePageOptions,
       callback: js.Function2[/* error */ js.Error | Null, /* items */ FieldValuePage, Any]
     ): js.Promise[FieldValuePage] = js.native
     
@@ -304,20 +233,104 @@ object libRestPreviewUnderstandAssistantFieldTypeFieldValueMod {
       */
     def toJSON(): Any = js.native
   }
+  object FieldValueListInstance {
+    
+    @JSImport("twilio/lib/rest/preview/understand/assistant/fieldType/fieldValue", "FieldValueListInstance")
+    @js.native
+    def apply(version: default, assistantSid: String, fieldTypeSid: String): FieldValueListInstance = js.native
+  }
   
-  /**
-    * Options to pass to create
-    *
-    * @property language - An ISO language-country string of the value.
-    * @property synonymOf - A value that indicates this field value is a synonym of. Empty if the value is not a synonym.
-    * @property value - A user-provided string that uniquely identifies this resource as an alternative to the sid. Unique up to 64 characters long.
-    */
+  @JSImport("twilio/lib/rest/preview/understand/assistant/fieldType/fieldValue", "FieldValuePage")
+  @js.native
+  open class FieldValuePage protected ()
+    extends typings.twilio.libBasePageMod.default[default, FieldValuePayload, FieldValueResource, FieldValueInstance] {
+    /**
+      * Initialize the FieldValuePage
+      *
+      * @param version - Version of the resource
+      * @param response - Response from the API
+      * @param solution - Path solution
+      */
+    def this(
+      version: default,
+      response: typings.twilio.libHttpResponseMod.default[String],
+      solution: FieldValueSolution
+    ) = this()
+    
+    /**
+      * Build an instance of FieldValueInstance
+      *
+      * @param payload - Payload response from the API
+      */
+    def getInstance(payload: FieldValueResource): FieldValueInstance = js.native
+  }
+  
+  @js.native
+  trait FieldValueContext extends StObject {
+    
+    /**
+      * Fetch a FieldValueInstance
+      *
+      * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed FieldValueInstance
+      */
+    def fetch(): js.Promise[FieldValueInstance] = js.native
+    def fetch(
+      callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[FieldValueInstance], Any]
+    ): js.Promise[FieldValueInstance] = js.native
+    
+    /**
+      * Remove a FieldValueInstance
+      *
+      * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed boolean
+      */
+    def remove(): js.Promise[Boolean] = js.native
+    def remove(callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[Boolean], Any]): js.Promise[Boolean] = js.native
+    
+    /**
+      * Provide a user-friendly representation
+      */
+    def toJSON(): Any = js.native
+  }
+  
+  trait FieldValueContextSolution extends StObject {
+    
+    var assistantSid: String
+    
+    var fieldTypeSid: String
+    
+    var sid: String
+  }
+  object FieldValueContextSolution {
+    
+    inline def apply(assistantSid: String, fieldTypeSid: String, sid: String): FieldValueContextSolution = {
+      val __obj = js.Dynamic.literal(assistantSid = assistantSid.asInstanceOf[js.Any], fieldTypeSid = fieldTypeSid.asInstanceOf[js.Any], sid = sid.asInstanceOf[js.Any])
+      __obj.asInstanceOf[FieldValueContextSolution]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldValueContextSolution] (val x: Self) extends AnyVal {
+      
+      inline def setAssistantSid(value: String): Self = StObject.set(x, "assistantSid", value.asInstanceOf[js.Any])
+      
+      inline def setFieldTypeSid(value: String): Self = StObject.set(x, "fieldTypeSid", value.asInstanceOf[js.Any])
+      
+      inline def setSid(value: String): Self = StObject.set(x, "sid", value.asInstanceOf[js.Any])
+    }
+  }
+  
   trait FieldValueListInstanceCreateOptions extends StObject {
     
+    /** An ISO language-country string of the value. */
     var language: String
     
+    /** A value that indicates this field value is a synonym of. Empty if the value is not a synonym. */
     var synonymOf: js.UndefOr[String] = js.undefined
     
+    /** A user-provided string that uniquely identifies this resource as an alternative to the sid. Unique up to 64 characters long. */
     var value: String
   }
   object FieldValueListInstanceCreateOptions {
@@ -340,27 +353,9 @@ object libRestPreviewUnderstandAssistantFieldTypeFieldValueMod {
     }
   }
   
-  /**
-    * Options to pass to each
-    *
-    * @property callback -
-    *                         Function to process each record. If this and a positional
-    *                         callback are passed, this one will be used
-    * @property done - Function to be called upon completion of streaming
-    * @property language - An ISO language-country string of the value. For example: en-US
-    * @property limit -
-    *                         Upper limit for the number of records to return.
-    *                         each() guarantees never to return more than limit.
-    *                         Default is no limit
-    * @property pageSize -
-    *                         Number of records to fetch per request,
-    *                         when not set will use the default value of 50 records.
-    *                         If no pageSize is defined but a limit is defined,
-    *                         each() will attempt to read the limit with the most efficient
-    *                         page size, i.e. min(limit, 1000)
-    */
   trait FieldValueListInstanceEachOptions extends StObject {
     
+    /** Function to process each record. If this and a positional callback are passed, this one will be used */
     var callback: js.UndefOr[
         js.Function2[
           /* item */ FieldValueInstance, 
@@ -369,12 +364,16 @@ object libRestPreviewUnderstandAssistantFieldTypeFieldValueMod {
         ]
       ] = js.undefined
     
+    /** Function to be called upon completion of streaming */
     var done: js.UndefOr[js.Function] = js.undefined
     
+    /** An ISO language-country string of the value. For example: *en-US* */
     var language: js.UndefOr[String] = js.undefined
     
+    /** Upper limit for the number of records to return. each() guarantees never to return more than limit. Default is no limit */
     var limit: js.UndefOr[Double] = js.undefined
     
+    /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
     var pageSize: js.UndefOr[Double] = js.undefined
   }
   object FieldValueListInstanceEachOptions {
@@ -411,27 +410,15 @@ object libRestPreviewUnderstandAssistantFieldTypeFieldValueMod {
     }
   }
   
-  /**
-    * Options to pass to list
-    *
-    * @property language - An ISO language-country string of the value. For example: en-US
-    * @property limit -
-    *                         Upper limit for the number of records to return.
-    *                         list() guarantees never to return more than limit.
-    *                         Default is no limit
-    * @property pageSize -
-    *                         Number of records to fetch per request,
-    *                         when not set will use the default value of 50 records.
-    *                         If no page_size is defined but a limit is defined,
-    *                         list() will attempt to read the limit with the most
-    *                         efficient page size, i.e. min(limit, 1000)
-    */
   trait FieldValueListInstanceOptions extends StObject {
     
+    /** An ISO language-country string of the value. For example: *en-US* */
     var language: js.UndefOr[String] = js.undefined
     
+    /** Upper limit for the number of records to return. list() guarantees never to return more than limit. Default is no limit */
     var limit: js.UndefOr[Double] = js.undefined
     
+    /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
     var pageSize: js.UndefOr[Double] = js.undefined
   }
   object FieldValueListInstanceOptions {
@@ -458,22 +445,18 @@ object libRestPreviewUnderstandAssistantFieldTypeFieldValueMod {
     }
   }
   
-  /**
-    * Options to pass to page
-    *
-    * @property language - An ISO language-country string of the value. For example: en-US
-    * @property pageNumber - Page Number, this value is simply for client state
-    * @property pageSize - Number of records to return, defaults to 50
-    * @property pageToken - PageToken provided by the API
-    */
   trait FieldValueListInstancePageOptions extends StObject {
     
+    /** An ISO language-country string of the value. For example: *en-US* */
     var language: js.UndefOr[String] = js.undefined
     
+    /** Page Number, this value is simply for client state */
     var pageNumber: js.UndefOr[Double] = js.undefined
     
+    /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
     var pageSize: js.UndefOr[Double] = js.undefined
     
+    /** PageToken provided by the API */
     var pageToken: js.UndefOr[String] = js.undefined
   }
   object FieldValueListInstancePageOptions {
@@ -506,30 +489,31 @@ object libRestPreviewUnderstandAssistantFieldTypeFieldValueMod {
   
   trait FieldValuePayload
     extends StObject
-       with FieldValueResource
-       with TwilioResponsePayload
+       with TwilioResponsePayload {
+    
+    var field_values: js.Array[FieldValueResource]
+  }
   object FieldValuePayload {
     
     inline def apply(
-      account_sid: String,
-      assistant_sid: String,
-      date_created: js.Date,
-      date_updated: js.Date,
-      field_type_sid: String,
+      field_values: js.Array[FieldValueResource],
       first_page_uri: String,
-      language: String,
       next_page_uri: String,
       page: Double,
       page_size: Double,
       previous_page_uri: String,
-      sid: String,
-      synonym_of: String,
-      uri: String,
-      url: String,
-      value: String
+      uri: String
     ): FieldValuePayload = {
-      val __obj = js.Dynamic.literal(account_sid = account_sid.asInstanceOf[js.Any], assistant_sid = assistant_sid.asInstanceOf[js.Any], date_created = date_created.asInstanceOf[js.Any], date_updated = date_updated.asInstanceOf[js.Any], field_type_sid = field_type_sid.asInstanceOf[js.Any], first_page_uri = first_page_uri.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any], next_page_uri = next_page_uri.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any], page_size = page_size.asInstanceOf[js.Any], previous_page_uri = previous_page_uri.asInstanceOf[js.Any], sid = sid.asInstanceOf[js.Any], synonym_of = synonym_of.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(field_values = field_values.asInstanceOf[js.Any], first_page_uri = first_page_uri.asInstanceOf[js.Any], next_page_uri = next_page_uri.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any], page_size = page_size.asInstanceOf[js.Any], previous_page_uri = previous_page_uri.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
       __obj.asInstanceOf[FieldValuePayload]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldValuePayload] (val x: Self) extends AnyVal {
+      
+      inline def setField_values(value: js.Array[FieldValueResource]): Self = StObject.set(x, "field_values", value.asInstanceOf[js.Any])
+      
+      inline def setField_valuesVarargs(value: FieldValueResource*): Self = StObject.set(x, "field_values", js.Array(value*))
     }
   }
   
@@ -600,14 +584,14 @@ object libRestPreviewUnderstandAssistantFieldTypeFieldValueMod {
   
   trait FieldValueSolution extends StObject {
     
-    var assistantSid: js.UndefOr[String] = js.undefined
+    var assistantSid: String
     
-    var fieldTypeSid: js.UndefOr[String] = js.undefined
+    var fieldTypeSid: String
   }
   object FieldValueSolution {
     
-    inline def apply(): FieldValueSolution = {
-      val __obj = js.Dynamic.literal()
+    inline def apply(assistantSid: String, fieldTypeSid: String): FieldValueSolution = {
+      val __obj = js.Dynamic.literal(assistantSid = assistantSid.asInstanceOf[js.Any], fieldTypeSid = fieldTypeSid.asInstanceOf[js.Any])
       __obj.asInstanceOf[FieldValueSolution]
     }
     
@@ -616,11 +600,7 @@ object libRestPreviewUnderstandAssistantFieldTypeFieldValueMod {
       
       inline def setAssistantSid(value: String): Self = StObject.set(x, "assistantSid", value.asInstanceOf[js.Any])
       
-      inline def setAssistantSidUndefined: Self = StObject.set(x, "assistantSid", js.undefined)
-      
       inline def setFieldTypeSid(value: String): Self = StObject.set(x, "fieldTypeSid", value.asInstanceOf[js.Any])
-      
-      inline def setFieldTypeSidUndefined: Self = StObject.set(x, "fieldTypeSid", js.undefined)
     }
   }
 }

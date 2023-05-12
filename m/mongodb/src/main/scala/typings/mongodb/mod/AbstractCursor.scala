@@ -24,7 +24,7 @@ open class AbstractCursor[TSchema, CursorEvents /* <: AbstractCursorEvents */] (
   /**
     * Set the batch size for the cursor.
     *
-    * @param value - The number of documents to return per batch. See {@link https://docs.mongodb.com/manual/reference/command/find/|find command documentation}.
+    * @param value - The number of documents to return per batch. See {@link https://www.mongodb.com/docs/manual/reference/command/find/|find command documentation}.
     */
   def batchSize(value: scala.Double): this.type = js.native
   
@@ -32,16 +32,6 @@ open class AbstractCursor[TSchema, CursorEvents /* <: AbstractCursorEvents */] (
   def bufferedCount(): scala.Double = js.native
   
   def close(): js.Promise[Unit] = js.native
-  /** @deprecated Callbacks are deprecated and will be removed in the next major version. See [mongodb-legacy](https://github.com/mongodb-js/nodejs-mongodb-legacy) for migration assistance */
-  def close(callback: Callback[Any]): Unit = js.native
-  /**
-    * @deprecated options argument is deprecated
-    */
-  def close(options: CursorCloseOptions): js.Promise[Unit] = js.native
-  /**
-    * @deprecated options argument is deprecated. Callbacks are deprecated and will be removed in the next major version. See [mongodb-legacy](https://github.com/mongodb-js/nodejs-mongodb-legacy) for migration assistance
-    */
-  def close(options: CursorCloseOptions, callback: Callback[Any]): Unit = js.native
   
   /* Excluded from this release type: session */
   /* Excluded from this release type: session */
@@ -54,15 +44,11 @@ open class AbstractCursor[TSchema, CursorEvents /* <: AbstractCursorEvents */] (
     * If the iterator returns `false`, iteration will stop.
     *
     * @param iterator - The iteration callback.
-    * @param callback - The end callback.
+    * @deprecated - Will be removed in a future release. Use for await...of instead.
     */
   def forEach(iterator: js.Function1[/* doc */ TSchema, Boolean | Unit]): js.Promise[Unit] = js.native
-  /** @deprecated Callbacks are deprecated and will be removed in the next major version. See [mongodb-legacy](https://github.com/mongodb-js/nodejs-mongodb-legacy) for migration assistance */
-  def forEach(iterator: js.Function1[/* doc */ TSchema, Boolean | Unit], callback: Callback[Unit]): Unit = js.native
   
   def hasNext(): js.Promise[Boolean] = js.native
-  /** @deprecated Callbacks are deprecated and will be removed in the next major version. See [mongodb-legacy](https://github.com/mongodb-js/nodejs-mongodb-legacy) for migration assistance */
-  def hasNext(callback: Callback[Boolean]): Unit = js.native
   
   /* Excluded from this release type: __constructor */
   def id: js.UndefOr[typings.bson.mod.Long] = js.native
@@ -77,6 +63,29 @@ open class AbstractCursor[TSchema, CursorEvents /* <: AbstractCursorEvents */] (
     * this function's transform.
     *
     * @remarks
+    *
+    * **Note** Cursors use `null` internally to indicate that there are no more documents in the cursor. Providing a mapping
+    * function that maps values to `null` will result in the cursor closing itself before it has finished iterating
+    * all documents.  This will **not** result in a memory leak, just surprising behavior.  For example:
+    *
+    * ```typescript
+    * const cursor = collection.find({});
+    * cursor.map(() => null);
+    *
+    * const documents = await cursor.toArray();
+    * // documents is always [], regardless of how many documents are in the collection.
+    * ```
+    *
+    * Other falsey values are allowed:
+    *
+    * ```typescript
+    * const cursor = collection.find({});
+    * cursor.map(() => '');
+    *
+    * const documents = await cursor.toArray();
+    * // documents is now an array of empty strings
+    * ```
+    *
     * **Note for Typescript Users:** adding a transform changes the return type of the iteration of this cursor,
     * it **does not** return a new instance of a cursor. This means when calling map,
     * you should always assign the result to a new variable in order to get a correctly typed cursor variable.
@@ -103,15 +112,8 @@ open class AbstractCursor[TSchema, CursorEvents /* <: AbstractCursorEvents */] (
   /* Excluded from this release type: server */
   def namespace: MongoDBNamespace = js.native
   
-  /** @deprecated Callbacks are deprecated and will be removed in the next major version. See [mongodb-legacy](https://github.com/mongodb-js/nodejs-mongodb-legacy) for migration assistance */
-  def next(): (js.Promise[TSchema | Null]) | Unit = js.native
-  def next(callback: Callback[TSchema | Null]): (js.Promise[TSchema | Null]) | Unit = js.native
   /** Get the next available document from the cursor, returns null if no more documents are available. */
-  @JSName("next")
-  def next_Promise(): js.Promise[TSchema | Null] = js.native
-  /** @deprecated Callbacks are deprecated and will be removed in the next major version. See [mongodb-legacy](https://github.com/mongodb-js/nodejs-mongodb-legacy) for migration assistance */
-  @JSName("next")
-  def next_Unit(callback: Callback[TSchema | Null]): Unit = js.native
+  def next(): js.Promise[TSchema | Null] = js.native
   
   /** Returns current buffered documents */
   def readBufferedDocuments(): js.Array[TSchema] = js.native
@@ -136,19 +138,13 @@ open class AbstractCursor[TSchema, CursorEvents /* <: AbstractCursorEvents */] (
     * is enough memory to store the results. Note that the array only contains partial
     * results when this cursor had been previously accessed. In that case,
     * cursor.rewind() can be used to reset the cursor.
-    *
-    * @param callback - The result callback.
     */
   def toArray(): js.Promise[js.Array[TSchema]] = js.native
-  /** @deprecated Callbacks are deprecated and will be removed in the next major version. See [mongodb-legacy](https://github.com/mongodb-js/nodejs-mongodb-legacy) for migration assistance */
-  def toArray(callback: Callback[js.Array[TSchema]]): Unit = js.native
   
   /**
     * Try to get the next available document from the cursor or `null` if an empty batch is returned
     */
   def tryNext(): js.Promise[TSchema | Null] = js.native
-  /** @deprecated Callbacks are deprecated and will be removed in the next major version. See [mongodb-legacy](https://github.com/mongodb-js/nodejs-mongodb-legacy) for migration assistance */
-  def tryNext(callback: Callback[TSchema | Null]): Unit = js.native
   
   /**
     * Set the ReadPreference for the cursor.

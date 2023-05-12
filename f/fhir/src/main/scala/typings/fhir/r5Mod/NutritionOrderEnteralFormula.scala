@@ -8,21 +8,14 @@ trait NutritionOrderEnteralFormula
   extends StObject
      with BackboneElement {
   
-  var _additiveProductName: js.UndefOr[Element] = js.undefined
-  
   var _administrationInstruction: js.UndefOr[Element] = js.undefined
   
   var _baseFormulaProductName: js.UndefOr[Element] = js.undefined
   
   /**
-    * The product or brand name of the type of modular component to be added to the formula.
+    * Indicates modular components to be provided in addition or mixed with the base formula.
     */
-  var additiveProductName: js.UndefOr[String] = js.undefined
-  
-  /**
-    * Indicates the type of modular component such as protein, carbohydrate, fat or fiber to be provided in addition to or mixed with the base formula.
-    */
-  var additiveType: js.UndefOr[CodeableConcept] = js.undefined
+  var additive: js.UndefOr[js.Array[NutritionOrderEnteralFormulaAdditive]] = js.undefined
   
   /**
     * See implementation notes below for further discussion on how to order continuous vs bolus enteral feeding using this resource.
@@ -42,12 +35,17 @@ trait NutritionOrderEnteralFormula
   /**
     * The type of enteral or infant formula such as an adult standard formula with fiber or a soy-based infant formula.
     */
-  var baseFormulaType: js.UndefOr[CodeableConcept] = js.undefined
+  var baseFormulaType: js.UndefOr[CodeableReference] = js.undefined
   
   /**
     * The amount of energy (calories) that the formula should provide per specified volume, typically per mL or fluid oz.  For example, an infant may require a formula that provides 24 calories per fluid ounce or an adult may require an enteral formula that provides 1.5 calorie/mL.
     */
   var caloricDensity: js.UndefOr[Quantity] = js.undefined
+  
+  /**
+    * The intended type of device that is to be used for the administration of the enteral formula.
+    */
+  var deliveryDevice: js.UndefOr[js.Array[CodeableReference]] = js.undefined
   
   /**
     * The maximum total quantity of formula that may be administered to a subject over the period of time, e.g. 1440 mL over 24 hours.
@@ -57,7 +55,7 @@ trait NutritionOrderEnteralFormula
   /**
     * The route or physiological path of administration into the patient's gastrointestinal  tract for purposes of providing the formula feeding, e.g. nasogastric tube.
     */
-  var routeofAdministration: js.UndefOr[CodeableConcept] = js.undefined
+  var routeOfAdministration: js.UndefOr[CodeableConcept] = js.undefined
 }
 object NutritionOrderEnteralFormula {
   
@@ -69,13 +67,11 @@ object NutritionOrderEnteralFormula {
   @scala.inline
   implicit open class MutableBuilder[Self <: NutritionOrderEnteralFormula] (val x: Self) extends AnyVal {
     
-    inline def setAdditiveProductName(value: String): Self = StObject.set(x, "additiveProductName", value.asInstanceOf[js.Any])
+    inline def setAdditive(value: js.Array[NutritionOrderEnteralFormulaAdditive]): Self = StObject.set(x, "additive", value.asInstanceOf[js.Any])
     
-    inline def setAdditiveProductNameUndefined: Self = StObject.set(x, "additiveProductName", js.undefined)
+    inline def setAdditiveUndefined: Self = StObject.set(x, "additive", js.undefined)
     
-    inline def setAdditiveType(value: CodeableConcept): Self = StObject.set(x, "additiveType", value.asInstanceOf[js.Any])
-    
-    inline def setAdditiveTypeUndefined: Self = StObject.set(x, "additiveType", js.undefined)
+    inline def setAdditiveVarargs(value: NutritionOrderEnteralFormulaAdditive*): Self = StObject.set(x, "additive", js.Array(value*))
     
     inline def setAdministration(value: js.Array[NutritionOrderEnteralFormulaAdministration]): Self = StObject.set(x, "administration", value.asInstanceOf[js.Any])
     
@@ -91,7 +87,7 @@ object NutritionOrderEnteralFormula {
     
     inline def setBaseFormulaProductNameUndefined: Self = StObject.set(x, "baseFormulaProductName", js.undefined)
     
-    inline def setBaseFormulaType(value: CodeableConcept): Self = StObject.set(x, "baseFormulaType", value.asInstanceOf[js.Any])
+    inline def setBaseFormulaType(value: CodeableReference): Self = StObject.set(x, "baseFormulaType", value.asInstanceOf[js.Any])
     
     inline def setBaseFormulaTypeUndefined: Self = StObject.set(x, "baseFormulaType", js.undefined)
     
@@ -99,17 +95,19 @@ object NutritionOrderEnteralFormula {
     
     inline def setCaloricDensityUndefined: Self = StObject.set(x, "caloricDensity", js.undefined)
     
+    inline def setDeliveryDevice(value: js.Array[CodeableReference]): Self = StObject.set(x, "deliveryDevice", value.asInstanceOf[js.Any])
+    
+    inline def setDeliveryDeviceUndefined: Self = StObject.set(x, "deliveryDevice", js.undefined)
+    
+    inline def setDeliveryDeviceVarargs(value: CodeableReference*): Self = StObject.set(x, "deliveryDevice", js.Array(value*))
+    
     inline def setMaxVolumeToDeliver(value: Quantity): Self = StObject.set(x, "maxVolumeToDeliver", value.asInstanceOf[js.Any])
     
     inline def setMaxVolumeToDeliverUndefined: Self = StObject.set(x, "maxVolumeToDeliver", js.undefined)
     
-    inline def setRouteofAdministration(value: CodeableConcept): Self = StObject.set(x, "routeofAdministration", value.asInstanceOf[js.Any])
+    inline def setRouteOfAdministration(value: CodeableConcept): Self = StObject.set(x, "routeOfAdministration", value.asInstanceOf[js.Any])
     
-    inline def setRouteofAdministrationUndefined: Self = StObject.set(x, "routeofAdministration", js.undefined)
-    
-    inline def set_additiveProductName(value: Element): Self = StObject.set(x, "_additiveProductName", value.asInstanceOf[js.Any])
-    
-    inline def set_additiveProductNameUndefined: Self = StObject.set(x, "_additiveProductName", js.undefined)
+    inline def setRouteOfAdministrationUndefined: Self = StObject.set(x, "routeOfAdministration", js.undefined)
     
     inline def set_administrationInstruction(value: Element): Self = StObject.set(x, "_administrationInstruction", value.asInstanceOf[js.Any])
     

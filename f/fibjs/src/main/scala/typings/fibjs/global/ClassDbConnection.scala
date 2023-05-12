@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** module Or Internal Object */
 /**
   * @brief 数据库连接对象，用于建立和维护一个数据库连接会话。
-  * @detail 
+  * @detail
   */
 @JSGlobal("Class_DbConnection")
 @js.native

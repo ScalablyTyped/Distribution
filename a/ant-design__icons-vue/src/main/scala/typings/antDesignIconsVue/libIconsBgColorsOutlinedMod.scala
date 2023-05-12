@@ -16,7 +16,7 @@ object libIconsBgColorsOutlinedMod extends Shortcut {
   @js.native
   trait BgColorsOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_BgColorsOutlinedIconType: String = js.native

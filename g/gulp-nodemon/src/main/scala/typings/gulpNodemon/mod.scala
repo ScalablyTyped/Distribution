@@ -45,7 +45,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Option]
     }
     
-    extension [Self <: Option](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Option] (val x: Self) extends AnyVal {
       
       inline def setTasks(value: js.Array[String] | (js.Function1[/* changedFiles */ js.Array[String], js.Array[String]])): Self = StObject.set(x, "tasks", value.asInstanceOf[js.Any])
       
@@ -143,7 +144,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[_Option]
     }
     
-    extension [Self <: _Option](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: _Option] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
@@ -155,7 +157,7 @@ object mod extends Shortcut {
       
       inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
       
-      inline def setDone(value: /* error */ js.UndefOr[js.Error | Null] => Unit): Self = StObject.set(x, "done", js.Any.fromFunction1(value))
+      inline def setDone(value: TaskFunctionCallback): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
       
       inline def setDoneUndefined: Self = StObject.set(x, "done", js.undefined)
       

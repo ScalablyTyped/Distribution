@@ -27,7 +27,7 @@ trait ApplicationSummary extends StObject {
   var creationTime: js.Date
   
   /**
-    * Indicates whether there is an ongoing deployment or if the application has ever deployed successfully.
+    * Indicates either an ongoing deployment or if the application has ever deployed successfully.
     */
   var deploymentStatus: js.UndefOr[ApplicationDeploymentLifecycle] = js.undefined
   
@@ -47,7 +47,7 @@ trait ApplicationSummary extends StObject {
   var environmentId: js.UndefOr[Identifier] = js.undefined
   
   /**
-    * The timestamp when the application was last started. Null until the application has started running for the first time.
+    * The timestamp when you last started the application. Null until the application runs for the first time.
     */
   var lastStartTime: js.UndefOr[js.Date] = js.undefined
   

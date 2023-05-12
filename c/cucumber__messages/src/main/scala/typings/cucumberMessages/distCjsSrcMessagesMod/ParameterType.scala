@@ -16,5 +16,7 @@ open class ParameterType () extends StObject {
   
   var regularExpressions: js.Array[String] = js.native
   
+  var sourceReference: js.UndefOr[SourceReference] = js.native
+  
   var useForSnippets: Boolean = js.native
 }

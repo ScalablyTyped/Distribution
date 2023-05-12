@@ -6,10 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SayAttributes extends StObject {
   
+  /** language - Message language */
   var language: js.UndefOr[SayLanguage] = js.undefined
   
+  /** loop - Times to loop message */
   var loop: js.UndefOr[Double] = js.undefined
   
+  /** voice - Voice to use */
   var voice: js.UndefOr[SayVoice] = js.undefined
 }
 object SayAttributes {

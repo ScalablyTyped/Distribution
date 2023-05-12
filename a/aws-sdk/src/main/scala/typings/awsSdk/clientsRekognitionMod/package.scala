@@ -1,6 +1,7 @@
 package typings.awsSdk.clientsRekognitionMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.awsSdk.awsSdkStrings.GENERAL_LABELS
 import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,6 +13,17 @@ type Assets = js.Array[Asset]
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.DEFAULT
   - typings.awsSdk.awsSdkStrings.ALL
+  - typings.awsSdk.awsSdkStrings.AGE_RANGE
+  - typings.awsSdk.awsSdkStrings.BEARD
+  - typings.awsSdk.awsSdkStrings.EMOTIONS
+  - typings.awsSdk.awsSdkStrings.EYEGLASSES
+  - typings.awsSdk.awsSdkStrings.EYES_OPEN
+  - typings.awsSdk.awsSdkStrings.GENDER
+  - typings.awsSdk.awsSdkStrings.MOUTH_OPEN
+  - typings.awsSdk.awsSdkStrings.MUSTACHE
+  - typings.awsSdk.awsSdkStrings.FACE_OCCLUDED
+  - typings.awsSdk.awsSdkStrings.SMILE
+  - typings.awsSdk.awsSdkStrings.SUNGLASSES
   - java.lang.String
 */
 type Attribute = _Attribute | java.lang.String
@@ -19,6 +31,10 @@ type Attribute = _Attribute | java.lang.String
 type Attributes = js.Array[Attribute]
 
 type AudioMetadataList = js.Array[AudioMetadata]
+
+type AuditImages = js.Array[AuditImage]
+
+type AuditImagesLimit = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.FACE
@@ -72,6 +88,13 @@ type ConnectedHomeLabels = js.Array[ConnectedHomeLabel]
 type ContentClassifier = _ContentClassifier | java.lang.String
 
 type ContentClassifiers = js.Array[ContentClassifier]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.TIMESTAMPS
+  - typings.awsSdk.awsSdkStrings.SEGMENTS
+  - java.lang.String
+*/
+type ContentModerationAggregateBy = _ContentModerationAggregateBy | java.lang.String
 
 type ContentModerationDetections = js.Array[ContentModerationDetection]
 
@@ -263,6 +286,17 @@ type LabelAliases = js.Array[LabelAlias]
 type LabelCategories = js.Array[LabelCategory]
 
 /* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.TIMESTAMPS
+  - typings.awsSdk.awsSdkStrings.SEGMENTS
+  - java.lang.String
+*/
+type LabelDetectionAggregateBy = _LabelDetectionAggregateBy | java.lang.String
+
+type LabelDetectionFeatureList = js.Array[LabelDetectionFeatureName]
+
+type LabelDetectionFeatureName = GENERAL_LABELS | java.lang.String
+
+/* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.NAME
   - typings.awsSdk.awsSdkStrings.TIMESTAMP
   - java.lang.String
@@ -315,6 +349,22 @@ type ListDatasetEntriesPageSize = Double
 type ListDatasetLabelsPageSize = Double
 
 type ListProjectPoliciesPageSize = Double
+
+type LivenessImageBlob = Buffer | js.typedarray.Uint8Array | Blob | java.lang.String
+
+type LivenessS3KeyPrefix = java.lang.String
+
+type LivenessSessionId = java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.CREATED
+  - typings.awsSdk.awsSdkStrings.IN_PROGRESS
+  - typings.awsSdk.awsSdkStrings.SUCCEEDED
+  - typings.awsSdk.awsSdkStrings.FAILED
+  - typings.awsSdk.awsSdkStrings.EXPIRED
+  - java.lang.String
+*/
+type LivenessSessionStatus = _LivenessSessionStatus | java.lang.String
 
 type MaxDurationInSecondsULong = Double
 
@@ -531,7 +581,7 @@ type TagValue = java.lang.String
   - typings.awsSdk.awsSdkStrings.OpeningCredits
   - typings.awsSdk.awsSdkStrings.StudioLogo
   - typings.awsSdk.awsSdkStrings.Slate_
-  - typings.awsSdk.awsSdkStrings.Content
+  - typings.awsSdk.awsSdkStrings.Content_
   - java.lang.String
 */
 type TechnicalCueType = _TechnicalCueType | java.lang.String

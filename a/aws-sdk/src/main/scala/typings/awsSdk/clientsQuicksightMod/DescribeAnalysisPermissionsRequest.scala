@@ -9,7 +9,7 @@ trait DescribeAnalysisPermissionsRequest extends StObject {
   /**
     * The ID of the analysis whose permissions you're describing. The ID is part of the analysis URL.
     */
-  var AnalysisId: RestrictiveResourceId
+  var AnalysisId: ShortRestrictiveResourceId
   
   /**
     * The ID of the Amazon Web Services account that contains the analysis whose permissions you're describing. You must be using the Amazon Web Services account that the analysis is in.
@@ -18,7 +18,7 @@ trait DescribeAnalysisPermissionsRequest extends StObject {
 }
 object DescribeAnalysisPermissionsRequest {
   
-  inline def apply(AnalysisId: RestrictiveResourceId, AwsAccountId: AwsAccountId): DescribeAnalysisPermissionsRequest = {
+  inline def apply(AnalysisId: ShortRestrictiveResourceId, AwsAccountId: AwsAccountId): DescribeAnalysisPermissionsRequest = {
     val __obj = js.Dynamic.literal(AnalysisId = AnalysisId.asInstanceOf[js.Any], AwsAccountId = AwsAccountId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeAnalysisPermissionsRequest]
   }
@@ -26,7 +26,7 @@ object DescribeAnalysisPermissionsRequest {
   @scala.inline
   implicit open class MutableBuilder[Self <: DescribeAnalysisPermissionsRequest] (val x: Self) extends AnyVal {
     
-    inline def setAnalysisId(value: RestrictiveResourceId): Self = StObject.set(x, "AnalysisId", value.asInstanceOf[js.Any])
+    inline def setAnalysisId(value: ShortRestrictiveResourceId): Self = StObject.set(x, "AnalysisId", value.asInstanceOf[js.Any])
     
     inline def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
   }

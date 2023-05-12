@@ -686,7 +686,7 @@ object mod {
       *
       * The generic allows to cast the curve factory to a specific type, if known.
       */
-    // tslint:disable-next-line:no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
     @JSName("curve")
     def curve_C_C[C /* <: CurveFactory */](): C = js.native
     
@@ -912,7 +912,7 @@ object mod {
       *
       * The generic allows to cast the curve factory to a specific type, if known.
       */
-    // tslint:disable-next-line:no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
     @JSName("curve")
     def curve_C_C[C /* <: CurveFactory */](): C = js.native
     
@@ -1443,7 +1443,7 @@ object mod {
       *
       * The generic allows to cast the curve factory to a specific type, if known.
       */
-    // tslint:disable-next-line:no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
     @JSName("curve")
     def curve_C_C[C /* <: CurveFactory | CurveFactoryLineOnly */](): C = js.native
     
@@ -1554,7 +1554,7 @@ object mod {
       *
       * The generic allows to cast the curve factory to a specific type, if known.
       */
-    // tslint:disable-next-line:no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
     @JSName("curve")
     def curve_C_C[C /* <: CurveFactory | CurveFactoryLineOnly */](): C = js.native
     

@@ -22,8 +22,14 @@ object distTypesCommandsGetIdCommandMod {
   @JSImport("@aws-sdk/client-cognito-identity/dist-types/commands/GetIdCommand", "GetIdCommand")
   @js.native
   open class GetIdCommand protected () extends Command[GetIdCommandInput, GetIdCommandOutput, CognitoIdentityClientResolvedConfig, Any, Any] {
+    /**
+      * @public
+      */
     def this(input: GetIdCommandInput) = this()
     
+    /**
+      * @internal
+      */
     /* private */ var deserialize: Any = js.native
     
     /**
@@ -39,6 +45,9 @@ object distTypesCommandsGetIdCommandMod {
       options: HttpHandlerOptions
     ): Handler[GetIdCommandInput, GetIdCommandOutput] = js.native
     
+    /**
+      * @internal
+      */
     /* private */ var serialize: Any = js.native
   }
   /* static members */

@@ -1,5 +1,7 @@
 package typings.sentryTypes
 
+import typings.sentryTypes.sentryTypesStrings.finishTransaction
+import typings.sentryTypes.sentryTypesStrings.startTransaction
 import typings.sentryTypes.typesClientreportMod.EventDropReason
 import typings.sentryTypes.typesDatacategoryMod.DataCategory
 import typings.sentryTypes.typesDsnMod.DsnComponents
@@ -9,10 +11,12 @@ import typings.sentryTypes.typesIntegrationMod.Integration
 import typings.sentryTypes.typesIntegrationMod.IntegrationClass
 import typings.sentryTypes.typesOptionsMod.ClientOptions
 import typings.sentryTypes.typesScopeMod.Scope
+import typings.sentryTypes.typesSdkmetadataMod.SdkMetadata
 import typings.sentryTypes.typesSessionMod.Session
 import typings.sentryTypes.typesSessionMod.SessionAggregates
 import typings.sentryTypes.typesSeverityMod.Severity
 import typings.sentryTypes.typesSeverityMod.SeverityLevel
+import typings.sentryTypes.typesTransactionMod.Transaction
 import typings.sentryTypes.typesTransportMod.BaseTransportOptions
 import typings.sentryTypes.typesTransportMod.Transport
 import typings.std.PromiseLike
@@ -24,6 +28,16 @@ object typesClientMod {
   
   @js.native
   trait Client[O /* <: ClientOptions[BaseTransportOptions] */] extends StObject {
+    
+    /**
+      * Add an integration to the client.
+      * This can be used to e.g. lazy load integrations.
+      * In most cases, this should not be necessary, and you're better off just passing the integrations via `integrations: []` at initialization time.
+      * However, if you find the need to conditionally load & add an integration, you can use `addIntegration` to do so.
+      *
+      * TODO (v8): Make this a required method.
+      * */
+    var addIntegration: js.UndefOr[js.Function1[/* integration */ Integration, Unit]] = js.native
     
     /**
       * Captures a manually created event and sends it to Sentry.
@@ -91,6 +105,20 @@ object typesClientMod {
     def close(): PromiseLike[Boolean] = js.native
     def close(timeout: Double): PromiseLike[Boolean] = js.native
     
+    /**
+      * Fire a hook event for transaction start and finish. Expects to be given a transaction as the
+      * second argument.
+      */
+    /**
+      * Fire a hook for when a breadcrumb is added. Expects the breadcrumb as second argument.
+      */
+    /**
+      * Fire a hook for when a DSC (Dynamic Sampling Context) is created. Expects the DSC as second argument.
+      */
+    var emit: js.UndefOr[
+        js.Function2[/* hook */ startTransaction | finishTransaction, /* transaction */ Transaction, Unit]
+      ] = js.native
+    
     /** Creates an {@link Event} from all inputs to `captureException` and non-primitive inputs to `captureMessage`. */
     def eventFromException(exception: Any): PromiseLike[Event] = js.native
     def eventFromException(exception: Any, hint: EventHint): PromiseLike[Event] = js.native
@@ -124,6 +152,13 @@ object typesClientMod {
     def getOptions(): O = js.native
     
     /**
+      * @inheritdoc
+      *
+      * TODO (v8): Make this a required method.
+      */
+    var getSdkMetadata: js.UndefOr[js.Function0[js.UndefOr[SdkMetadata]]] = js.native
+    
+    /**
       * Returns the transport that is used by the client.
       * Please note that the transport gets lazy initialized so it will only be there once the first event has been sent.
       *
@@ -132,12 +167,34 @@ object typesClientMod {
     def getTransport(): js.UndefOr[Transport] = js.native
     
     /**
+      * Register a callback for transaction start and finish.
+      */
+    /**
+      * Register a callback for when an event has been sent.
+      */
+    /**
+      * Register a callback before a breadcrumb is added.
+      */
+    /**
+      * Register a callback whena  DSC (Dynamic Sampling Context) is created.
+      */
+    var on: js.UndefOr[
+        js.Function2[
+          /* hook */ startTransaction | finishTransaction, 
+          /* callback */ js.Function1[/* transaction */ Transaction, Unit], 
+          Unit
+        ]
+      ] = js.native
+    
+    /**
       * Record on the client that an event got dropped (ie, an event that will not be sent to sentry).
       *
       * @param reason The reason why the event got dropped.
       * @param category The data category of the dropped event.
+      * @param event The dropped event.
       */
-    def recordDroppedEvent(reason: EventDropReason, category: DataCategory): Unit = js.native
+    def recordDroppedEvent(reason: EventDropReason, dataCategory: DataCategory): Unit = js.native
+    def recordDroppedEvent(reason: EventDropReason, dataCategory: DataCategory, event: Event): Unit = js.native
     
     /** Submits the event to Sentry */
     def sendEvent(event: Event): Unit = js.native

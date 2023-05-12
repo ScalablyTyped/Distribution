@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ODataStore[TItem, TKey]
   extends StObject
-     with Store[TItem, TKey]
+     with AbstractStore[TItem, TKey]
      with typings.devextreme.mod.DevExpress.data.utils.Store[TItem, TKey] {
   
   /**

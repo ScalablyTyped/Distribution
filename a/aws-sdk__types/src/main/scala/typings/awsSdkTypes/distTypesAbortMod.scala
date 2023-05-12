@@ -16,7 +16,7 @@ object distTypesAbortMod {
     
     /**
       * An object that reports whether the action associated with this
-      * {AbortController} has been cancelled.
+      * `AbortController` has been cancelled.
       */
     val signal: AbortSignal
   }
@@ -49,7 +49,7 @@ object distTypesAbortMod {
       * A function to be invoked when the action represented by this signal has
       * been cancelled.
       */
-    var onabort: AbortHandler | Null
+    var onabort: AbortHandler | js.Function | Null
   }
   object AbortSignal {
     
@@ -63,7 +63,7 @@ object distTypesAbortMod {
       
       inline def setAborted(value: Boolean): Self = StObject.set(x, "aborted", value.asInstanceOf[js.Any])
       
-      inline def setOnabort(value: AbortHandler): Self = StObject.set(x, "onabort", value.asInstanceOf[js.Any])
+      inline def setOnabort(value: AbortHandler | js.Function): Self = StObject.set(x, "onabort", value.asInstanceOf[js.Any])
       
       inline def setOnabortNull: Self = StObject.set(x, "onabort", null)
     }

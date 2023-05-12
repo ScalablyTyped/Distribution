@@ -1,6 +1,7 @@
 package typings.angularCore.mod
 
 import typings.rxjs.mod.Observable_
+import typings.std.VoidFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,21 +14,11 @@ open class ApplicationRef () extends StObject {
   
   /* private */ var _destroyed: Any = js.native
   
-  /* private */ var _exceptionHandler: Any = js.native
-  
-  /* private */ var _injector: Any = js.native
+  /* private */ val _injector: Any = js.native
   
   /* private */ var _loadComponent: Any = js.native
   
-  /* private */ var _onMicrotaskEmptySubscription: Any = js.native
-  
   /* private */ var _runningTick: Any = js.native
-  
-  /* private */ var _stable: Any = js.native
-  
-  /* private */ var _views: Any = js.native
-  
-  /* private */ var _zone: Any = js.native
   
   /**
     * Attaches a view so that it will be dirty checked.
@@ -153,12 +144,20 @@ open class ApplicationRef () extends StObject {
     */
   def injector: EnvironmentInjector = js.native
   
+  /* private */ val internalErrorHandler: Any = js.native
+  
   /**
     * Returns an Observable that indicates when the application is stable or unstable.
-    *
-    * @see  [Usage notes](#is-stable-examples) for examples and caveats when using this API.
     */
   val isStable: Observable_[Boolean] = js.native
+  
+  /**
+    * Registers a listener to be called when an instance is destroyed.
+    *
+    * @param callback A callback function to add as a listener.
+    * @returns A function which unregisters a listener.
+    */
+  def onDestroy(callback: js.Function0[Unit]): VoidFunction = js.native
   
   /**
     * Invoke this method to explicitly process change detection and its side-effects.

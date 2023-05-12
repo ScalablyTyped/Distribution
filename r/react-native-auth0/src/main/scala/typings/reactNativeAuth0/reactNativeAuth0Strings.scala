@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object reactNativeAuth0Strings {
   
   @js.native
-  sealed trait Bearer extends StObject
-  inline def Bearer: Bearer = "Bearer".asInstanceOf[Bearer]
+  sealed trait TimeoutError extends StObject
+  inline def TimeoutError: TimeoutError = "TimeoutError".asInstanceOf[TimeoutError]
   
   @js.native
   sealed trait code extends StObject
@@ -17,4 +17,20 @@ object reactNativeAuth0Strings {
   @js.native
   sealed trait link extends StObject
   inline def link: link = "link".asInstanceOf[link]
+  
+  @js.native
+  sealed trait oob extends StObject
+  inline def oob: oob = "oob".asInstanceOf[oob]
+  
+  @js.native
+  sealed trait `oob otp` extends StObject
+  inline def `oob otp`: `oob otp` = ("oob otp").asInstanceOf[`oob otp`]
+  
+  @js.native
+  sealed trait otp extends StObject
+  inline def otp: otp = "otp".asInstanceOf[otp]
+  
+  @js.native
+  sealed trait `otp oob` extends StObject
+  inline def `otp oob`: `otp oob` = ("otp oob").asInstanceOf[`otp oob`]
 }

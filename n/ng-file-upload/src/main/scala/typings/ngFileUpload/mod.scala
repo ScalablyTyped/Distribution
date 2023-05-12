@@ -102,85 +102,71 @@ object mod extends Shortcut {
         
         /**
           * Standard HTML accept attr, browser specific select popup window
-          * @type {string}
           */
         var ngfAccept: js.UndefOr[String] = js.undefined
         
         /**
           * Default true, allow dropping files only for Chrome webkit browser
-          * @type {boolean}
           */
         var ngfAllowDir: js.UndefOr[Boolean] = js.undefined
         
         /**
           * Default false, enable firefox image paste by making element contenteditable
-          * @type {boolean}
           */
         var ngfEnableFirefoxPaste: js.UndefOr[Boolean] = js.undefined
         
         /**
           * Default false, hides element if file drag&drop is not
-          * @type {boolean}
           */
         var ngfHideOnDropNotAvailable: js.UndefOr[Boolean] = js.undefined
         
         /**
           * Validate error name: maxDuration
-          * @type {(number|string)}
           */
         var ngfMaxDuration: js.UndefOr[Double | String] = js.undefined
         
         /**
           * Maximum number of files allowed to be selected or dropped, validate error name: maxFiles
-          * @type {number}
           */
         var ngfMaxFiles: js.UndefOr[Double] = js.undefined
         
         /**
           * Validate error name: maxSize
-          * @type {(number|string)}
           */
         var ngfMaxSize: js.UndefOr[Double | String] = js.undefined
         
         /**
           * Validate error name: maxTotalSize
-          * @type {(number|string)}
           */
         var ngfMaxTotalSize: js.UndefOr[Double | String] = js.undefined
         
         /**
           * Validate error name: minDuration
-          * @type {(number|string)}
           */
         var ngfMinDuration: js.UndefOr[Double | String] = js.undefined
         
         /**
           * Validate error name: minRatio
-          * @type {(number|string)}
           */
         var ngfMinRatio: js.UndefOr[Double | String] = js.undefined
         
         /**
           * Validate error name: minSize
-          * @type {(number|string)}
           */
         var ngfMinSize: js.UndefOr[Double | String] = js.undefined
         
         /**
           * Allows selecting multiple files
-          * @type {boolean}
           */
         var ngfMultiple: js.UndefOr[Boolean] = js.undefined
         
         /**
           * List of comma separated valid aspect ratio of images in float or 2:3 format
-          * @type {string}
           */
         var ngfRatio: js.UndefOr[String] = js.undefined
         
         /**
           * Default false, whether to propagate drag/drop events.
-          * @type {boolean}
           */
         var ngfStopPropagation: js.UndefOr[Boolean] = js.undefined
         
@@ -188,7 +174,6 @@ object mod extends Shortcut {
           * Default false, if true file.$error will be set if the dimension or duration
           * values for validations cannot be calculated for example image load error or unsupported video by the browser.
           * By default it would assume the file is valid if the duration or dimension cannot be calculated by the browser.
-          * @type {boolean}
           */
         var ngfValidateForce: js.UndefOr[Boolean] = js.undefined
       }
@@ -281,13 +266,11 @@ object mod extends Shortcut {
           * ''(multiple entries with same key) format.
           * Example: data: {rec: [file[0], file[1], ...]} sent as: rec[0] -> file[0], rec[1] -> file[1],...
           * data: {rec: {rec: [f[0], f[1], ...], arrayKey: '[]'} sent as: rec[] -> f[0], rec[] -> f[1],...
-          * @type {string}
           */
         var arrayKey: js.UndefOr[String] = js.undefined
         
         /**
           * Default false, experimental as hotfix for potential library conflicts with other plugins
-          * @type {boolean}
           */
         var disableProgress: js.UndefOr[Boolean] = js.undefined
         
@@ -295,31 +278,26 @@ object mod extends Shortcut {
           * This is to accommodate server implementations expecting nested data object keys in .key or [key] format.
           * Example: data: {rec: {name: 'N', pic: file}} sent as: rec[name] -> N, rec[pic] -> file
           * data: {rec: {name: 'N', pic: file}, objectKey: '.k'} sent as: rec.name -> N, rec.pic -> file
-          * @type {string}
           */
         var objectKey: js.UndefOr[String] = js.undefined
         
         /**
           * Upload in chunks of specified size
-          * @type {(number|string)}
           */
         var resumeChunkSize: js.UndefOr[Double | String] = js.undefined
         
         /**
           * Function that returns a prommise which will be resolved to the upload file size on the server.
-          * @type {[type]}
           */
         var resumeSize: js.UndefOr[Function] = js.undefined
         
         /**
           * Reads the uploaded file size from resumeSizeUrl GET response
-          * @type {Function}
           */
         var resumeSizeResponseReader: js.UndefOr[Function] = js.undefined
         
         /**
           * Uploaded file size so far on the server
-          * @type {string}
           */
         var resumeSizeUrl: js.UndefOr[String] = js.undefined
       }

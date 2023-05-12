@@ -14,12 +14,12 @@ trait EnergyPaymentScheduleResponse
   
   var links: Links
   
-  var meta: Meta
+  var meta: js.UndefOr[Meta] = js.undefined
 }
 object EnergyPaymentScheduleResponse {
   
-  inline def apply(data: PaymentSchedules, links: Links, meta: Meta): EnergyPaymentScheduleResponse = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], links = links.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any])
+  inline def apply(data: PaymentSchedules, links: Links): EnergyPaymentScheduleResponse = {
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], links = links.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnergyPaymentScheduleResponse]
   }
   
@@ -31,5 +31,7 @@ object EnergyPaymentScheduleResponse {
     inline def setLinks(value: Links): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
     
     inline def setMeta(value: Meta): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+    
+    inline def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
   }
 }

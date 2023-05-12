@@ -1,5 +1,6 @@
 package typings.pixiCore
 
+import typings.pixiColor.libColorMod.ColorSource
 import typings.pixiConstants.mod.BUFFER_BITS
 import typings.pixiCore.libMaskMaskDataMod.MaskData
 import typings.pixiCore.libRenderTextureRenderTextureMod.RenderTexture
@@ -23,6 +24,9 @@ object libRenderTextureRenderTextureSystemMod {
       */
     def this(renderer: Renderer) = this()
     
+    /** Does the renderer have alpha and are its color channels stored premultipled by the alpha channel? */
+    /* private */ var _rendererPremultipliedAlpha: Any = js.native
+    
     /**
       * Bind the current render texture.
       * @param renderTexture - RenderTexture to bind, by default its `null` - the screen.
@@ -45,9 +49,11 @@ object libRenderTextureRenderTextureSystemMod {
       *  that indicate the buffers to be cleared, by default COLOR and DEPTH buffers.
       */
     def clear(): Unit = js.native
-    def clear(clearColor: js.Array[Double]): Unit = js.native
-    def clear(clearColor: js.Array[Double], mask: BUFFER_BITS): Unit = js.native
     def clear(clearColor: Unit, mask: BUFFER_BITS): Unit = js.native
+    def clear(clearColor: ColorSource): Unit = js.native
+    def clear(clearColor: ColorSource, mask: BUFFER_BITS): Unit = js.native
+    
+    /* protected */ def contextChange(): Unit = js.native
     
     /**
       * Render texture currently bound. {@code null} if rendering to the canvas.
@@ -64,7 +70,7 @@ object libRenderTextureRenderTextureSystemMod {
     /**
       * The destination frame for the render-target's projection mapping.
       *
-      * See {@link PIXI.Projection#destinationFrame} for more details.
+      * See {@link PIXI.ProjectionSystem#destinationFrame} for more details.
       */
     val destinationFrame: Rectangle = js.native
     

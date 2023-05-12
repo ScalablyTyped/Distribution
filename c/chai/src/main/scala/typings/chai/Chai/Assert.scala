@@ -80,7 +80,7 @@ trait Assert extends StObject {
   /**
     * Asserts that a function changes the value of a property.
     *
-    * @type T   Type of object.
+    * T   Type of object.
     * @param modifier   Function to run.
     * @param object   Container object.
     * @param property   Property of object expected to be modified.
@@ -107,7 +107,7 @@ trait Assert extends StObject {
     * You can also provide a single object instead of a `keys` array and its keys
     * will be used as the expected set of keys.
     *
-    * @type T   Type of object.
+    * T   Type of object.
     * @param object   Object to test.
     * @param keys   Keys to check
     * @param message    Message to display on error.
@@ -122,7 +122,7 @@ trait Assert extends StObject {
     * You can also provide a single object instead of a `keys` array and its keys
     * will be used as the expected set of keys.
     *
-    * @type T   Type of object.
+    * T   Type of object.
     * @param object   Object to test.
     * @param keys   Keys to check
     * @param message    Message to display on error.
@@ -135,7 +135,7 @@ trait Assert extends StObject {
   /**
     * Asserts that a function decreases an object property.
     *
-    * @type T   Type of object.
+    * T   Type of object.
     * @param modifier   Function to run.
     * @param object   Container object.
     * @param property   Property of object expected to be decreased.
@@ -147,7 +147,7 @@ trait Assert extends StObject {
   /**
     * Asserts that actual is deeply equal to expected.
     *
-    * @type T   Type of the objects.
+    * T   Type of the objects.
     * @param actual   Actual value.
     * @param expected   Potential expected value.
     * @param message   Message to display on error.
@@ -169,7 +169,7 @@ trait Assert extends StObject {
   /**
     * Asserts that haystack does not includes needle.
     *
-    * @type T   Type of haystack.
+    * T   Type of haystack.
     * @param haystack   Object.
     * @param needle   Potential subset of the haystack's properties.
     * @param message   Message to display on error.
@@ -186,7 +186,7 @@ trait Assert extends StObject {
   /**
     * Asserts that haystack includes needle. Deep equality is used.
     *
-    * @type T   Type of values in haystack.
+    * T   Type of values in haystack.
     * @param haystack   Container array, set or map.
     * @param needle   Potential value contained in haystack.
     * @param message   Message to display on error.
@@ -218,7 +218,7 @@ trait Assert extends StObject {
     * Asserts that object has a property named by property with a value given by value.
     * property can use dot- and bracket-notation for nested reference. Uses a deep equality check.
     *
-    * @type T   Type of object.
+    * T   Type of object.
     * @param object   Object to test.
     * @param property    Property to test.
     * @param value    Value to test.
@@ -241,7 +241,7 @@ trait Assert extends StObject {
     * Asserts that object has a property named by property, which can be a string
     * using dot- and bracket-notation for deep reference.
     *
-    * @type T   Type of object.
+    * T   Type of object.
     * @param object   Container object.
     * @param property   Potential contained property of object.
     * @param message   Message to display on error.
@@ -253,8 +253,8 @@ trait Assert extends StObject {
     * Asserts that object has a property named by property, which can be a string
     * using dot- and bracket-notation for deep reference.
     *
-    * @type T   Type of object.
-    * @type V   Type of value.
+    * T   Type of object.
+    * V   Type of value.
     * @param object   Container object.
     * @param property   Potential contained property of object.
     * @param value   Potential expected property value.
@@ -266,7 +266,7 @@ trait Assert extends StObject {
   /**
     * Alias to deepEqual
     *
-    * @type T   Type of the objects.
+    * T   Type of the objects.
     * @param actual   Actual value.
     * @param expected   Potential expected value.
     * @param message   Message to display on error.
@@ -277,7 +277,7 @@ trait Assert extends StObject {
   /**
     * Asserts that a function does not change the value of a property.
     *
-    * @type T   Type of object.
+    * T   Type of object.
     * @param modifier   Function to run.
     * @param object   Container object.
     * @param property   Property of object expected not to be modified.
@@ -289,7 +289,7 @@ trait Assert extends StObject {
   /**
     * Asserts that a function does not decrease an object property.
     *
-    * @type T   Type of object.
+    * T   Type of object.
     * @param modifier   Function to run.
     * @param object   Container object.
     * @param property   Property of object expected not to be decreased.
@@ -305,7 +305,7 @@ trait Assert extends StObject {
     * You can also provide a single object instead of a `keys` array and its keys
     * will be used as the expected set of keys.
     *
-    * @type T   Type of object.
+    * T   Type of object.
     * @param object   Object to test.
     * @param keys   Keys to check
     * @param message    Message to display on error.
@@ -320,7 +320,7 @@ trait Assert extends StObject {
     * You can also provide a single object instead of a `keys` array and its keys
     * will be used as the expected set of keys.
     *
-    * @type T   Type of object.
+    * T   Type of object.
     * @param object   Object to test.
     * @param keys   Keys to check
     * @param message    Message to display on error.
@@ -337,7 +337,7 @@ trait Assert extends StObject {
     * You can also provide a single object instead of a `keys` array and its keys
     * will be used as the expected set of keys.
     *
-    * @type T   Type of object.
+    * T   Type of object.
     * @param object   Object to test.
     * @param keys   Keys to check
     * @param message    Message to display on error.
@@ -352,7 +352,7 @@ trait Assert extends StObject {
     * You can also provide a single object instead of a `keys` array and its keys
     * will be used as the expected set of keys.
     *
-    * @type T   Type of object.
+    * T   Type of object.
     * @param object   Object to test.
     * @param keys   Keys to check
     * @param message    Message to display on error.
@@ -365,7 +365,7 @@ trait Assert extends StObject {
   /**
     * Asserts that a function does not increase an object property.
     *
-    * @type T   Type of object.
+    * T   Type of object.
     * @param modifier   Function to run.
     * @param object   Container object.
     * @param property   Property of object expected not to be increased.
@@ -423,7 +423,7 @@ trait Assert extends StObject {
   /**
     * Asserts non-strict equality (==) of actual and expected.
     *
-    * @type T   Type of the objects.
+    * T   Type of the objects.
     * @param actual   Actual value.
     * @param expected   Potential expected value.
     * @param message   Message to display on error.
@@ -434,7 +434,7 @@ trait Assert extends StObject {
   /**
     * Asserts that the target is neither null nor undefined.
     *
-    * @type T   Type of value.
+    * T   Type of value.
     * @param value   Actual value.
     * @param message    Message to display on error.
     */
@@ -444,7 +444,7 @@ trait Assert extends StObject {
   /**
     * Asserts that object is extensible (can have new properties added to it).
     *
-    * @type T   Type of object
+    * T   Type of object
     * @param object   Actual value.
     * @param message   Message to display on error.
     */
@@ -462,7 +462,7 @@ trait Assert extends StObject {
   /**
     * Throws a failure.
     *
-    * @type T   Type of the objects.
+    * T   Type of the objects.
     * @param actual   Actual value.
     * @param expected   Potential expected value.
     * @param message    Message to display on error.
@@ -478,7 +478,7 @@ trait Assert extends StObject {
     * Asserts that object is frozen (cannot have new properties added to it
     * and its existing properties cannot be removed).
     *
-    * @type T   Type of object
+    * T   Type of object
     * @param object   Actual value.
     * @param message   Message to display on error.
     */
@@ -492,7 +492,7 @@ trait Assert extends StObject {
     * You can also provide a single object instead of a `keys` array and its keys
     * will be used as the expected set of keys.
     *
-    * @type T   Type of object.
+    * T   Type of object.
     * @param object   Object to test.
     * @param keys   Keys to check
     * @param message    Message to display on error.
@@ -507,7 +507,7 @@ trait Assert extends StObject {
     * You can also provide a single object instead of a `keys` array and its keys
     * will be used as the expected set of keys.
     *
-    * @type T   Type of object.
+    * T   Type of object.
     * @param object   Object to test.
     * @param keys   Keys to check
     * @param message    Message to display on error.
@@ -524,7 +524,7 @@ trait Assert extends StObject {
     * You can also provide a single object instead of a `keys` array and its keys
     * will be used as the expected set of keys.
     *
-    * @type T   Type of object.
+    * T   Type of object.
     * @param object   Object to test.
     * @param keys   Keys to check
     * @param message    Message to display on error.
@@ -539,7 +539,7 @@ trait Assert extends StObject {
     * You can also provide a single object instead of a `keys` array and its keys
     * will be used as the expected set of keys.
     *
-    * @type T   Type of object.
+    * T   Type of object.
     * @param object   Object to test.
     * @param keys   Keys to check
     * @param message    Message to display on error.
@@ -552,7 +552,7 @@ trait Assert extends StObject {
   /**
     * Asserts if value is not a false value, and throws if it is a true value.
     *
-    * @type T   Type of object.
+    * T   Type of object.
     * @param object   Actual value.
     * @param message   Message to display on error.
     * @remarks This is added to allow for chai to be a drop-in replacement for
@@ -573,7 +573,7 @@ trait Assert extends StObject {
   /**
     * Asserts that haystack includes needle.
     *
-    * @type T   Type of haystack.
+    * T   Type of haystack.
     * @param haystack   Object.
     * @param needle   Potential subset of the haystack's properties.
     * @param message   Message to display on error.
@@ -583,7 +583,7 @@ trait Assert extends StObject {
   /**
     * Asserts that haystack includes needle.
     *
-    * @type T   Type of values in haystack.
+    * T   Type of values in haystack.
     * @param haystack   Container array, set or map.
     * @param needle   Potential value contained in haystack.
     * @param message   Message to display on error.
@@ -597,7 +597,7 @@ trait Assert extends StObject {
   /**
     * Asserts that haystack includes needle.
     *
-    * @type T   Type of values in haystack.
+    * T   Type of values in haystack.
     * @param haystack   WeakSet container.
     * @param needle   Potential value contained in haystack.
     * @param message   Message to display on error.
@@ -609,7 +609,7 @@ trait Assert extends StObject {
     * Asserts that subset is included in superset using deep equality checking.
     * Order is not take into account.
     *
-    * @type T   Type of set values.
+    * T   Type of set values.
     * @param superset   Actual set of values.
     * @param subset   Potential contained set of values.
     * @param message   Message to display on error.
@@ -621,7 +621,7 @@ trait Assert extends StObject {
     * Asserts that subset is included in superset in the same order beginning with the first element in superset.
     * Uses a deep equality check.
     *
-    * @type T   Type of set values.
+    * T   Type of set values.
     * @param superset   Actual set of values.
     * @param subset   Potential contained set of values.
     * @param message   Message to display on error.
@@ -632,7 +632,7 @@ trait Assert extends StObject {
   /**
     * Asserts that subset is included in superset. Order is not take into account.
     *
-    * @type T   Type of set values.
+    * T   Type of set values.
     * @param superset   Actual set of values.
     * @param subset   Potential contained set of values.
     * @param message   Message to display on error.
@@ -644,7 +644,7 @@ trait Assert extends StObject {
     * Asserts that subset is included in superset in the same order beginning with the first element in superset.
     * Uses a strict equality check (===).
     *
-    * @type T   Type of set values.
+    * T   Type of set values.
     * @param superset   Actual set of values.
     * @param subset   Potential contained set of values.
     * @param message   Message to display on error.
@@ -655,7 +655,7 @@ trait Assert extends StObject {
   /**
     * Asserts that a function increases an object property.
     *
-    * @type T   Type of object.
+    * T   Type of object.
     * @param modifier   Function to run.
     * @param object   Container object.
     * @param property   Property of object expected to be increased.
@@ -667,7 +667,7 @@ trait Assert extends StObject {
   /**
     * Asserts that value is an instance of constructor.
     *
-    * @type T   Type of value.
+    * T   Type of value.
     * @param value   Actual value.
     * @param constructor   Potential expected contructor of value.
     * @param message   Message to display on error.
@@ -688,7 +688,7 @@ trait Assert extends StObject {
   /**
     * Asserts that value is an array.
     *
-    * @type T   Type of value.
+    * T   Type of value.
     * @param value   Actual value.
     * @param message   Message to display on error.
     */
@@ -728,7 +728,7 @@ trait Assert extends StObject {
   /**
     * Asserts that value is a boolean.
     *
-    * @type T   Type of value.
+    * T   Type of value.
     * @param value   Actual value.
     * @param message   Message to display on error.
     */
@@ -738,7 +738,7 @@ trait Assert extends StObject {
   /**
     * Asserts that value is not undefined.
     *
-    * @type T   Type of value.
+    * T   Type of value.
     * @param value   Actual value.
     * @param message   Message to display on error.
     */
@@ -751,7 +751,7 @@ trait Assert extends StObject {
     * checks the size property. For non-function objects, it gets the count
     * of own enumerable string keys.
     *
-    * @type T   Type of object
+    * T   Type of object
     * @param object   Actual value.
     * @param message   Message to display on error.
     */
@@ -761,7 +761,7 @@ trait Assert extends StObject {
   /**
     * Asserts that object is extensible (can have new properties added to it).
     *
-    * @type T   Type of object
+    * T   Type of object
     * @param object   Actual value.
     * @param message   Message to display on error.
     */
@@ -771,7 +771,7 @@ trait Assert extends StObject {
   /**
     * Asserts that value is false.
     *
-    * @type T   Type of value.
+    * T   Type of value.
     * @param value   Actual value.
     * @param message   Message to display on error.
     */
@@ -782,7 +782,7 @@ trait Assert extends StObject {
     * Asserts that value is a finite number.
     * Unlike `.isNumber`, this will fail for `NaN` and `Infinity`.
     *
-    * @type T   Type of value
+    * T   Type of value
     * @param value    Actual value
     * @param message   Message to display on error.
     */
@@ -793,7 +793,7 @@ trait Assert extends StObject {
     * Asserts that object is frozen (cannot have new properties added to it
     * and its existing properties cannot be removed).
     *
-    * @type T   Type of object
+    * T   Type of object
     * @param object   Actual value.
     * @param message   Message to display on error.
     */
@@ -803,7 +803,7 @@ trait Assert extends StObject {
   /**
     * Asserts that value is a function.
     *
-    * @type T   Type of value.
+    * T   Type of value.
     * @param value   Actual value.
     * @param message   Message to display on error.
     */
@@ -813,7 +813,7 @@ trait Assert extends StObject {
   /**
     * Asserts that value is NaN.
     *
-    * @type T   Type of value.
+    * T   Type of value.
     * @param value   Actual value.
     * @param message   Message to display on error.
     */
@@ -823,7 +823,7 @@ trait Assert extends StObject {
   /**
     * Asserts that value is not an array.
     *
-    * @type T   Type of value.
+    * T   Type of value.
     * @param value   Actual value.
     * @param message   Message to display on error.
     */
@@ -833,7 +833,7 @@ trait Assert extends StObject {
   /**
     * Asserts that value is not a boolean.
     *
-    * @type T   Type of value.
+    * T   Type of value.
     * @param value   Actual value.
     * @param message   Message to display on error.
     */
@@ -845,7 +845,7 @@ trait Assert extends StObject {
     * the length property. For Map and Set instances, it checks the size property.
     * For non-function objects, it gets the count of own enumerable string keys.
     *
-    * @type T   Type of object.
+    * T   Type of object.
     * @param object   Object to test.
     * @param message    Message to display on error.
     */
@@ -855,7 +855,7 @@ trait Assert extends StObject {
   /**
     * Asserts that object is not extensible.
     *
-    * @type T   Type of object
+    * T   Type of object
     * @param object   Actual value.
     * @param message   Message to display on error.
     */
@@ -865,7 +865,7 @@ trait Assert extends StObject {
   /**
     * Asserts that value is not false.
     *
-    * @type T   Type of value.
+    * T   Type of value.
     * @param value   Actual value.
     * @param message   Message to display on error.
     */
@@ -876,7 +876,7 @@ trait Assert extends StObject {
     * Asserts that object is not frozen (cannot have new properties added to it
     * and its existing properties cannot be removed).
     *
-    * @type T   Type of object
+    * T   Type of object
     * @param object   Actual value.
     * @param message   Message to display on error.
     */
@@ -886,7 +886,7 @@ trait Assert extends StObject {
   /**
     * Asserts that value is not a function.
     *
-    * @type T   Type of value.
+    * T   Type of value.
     * @param value   Actual value.
     * @param message   Message to display on error.
     */
@@ -896,7 +896,7 @@ trait Assert extends StObject {
   /**
     * Asserts that value is not NaN.
     *
-    * @type T   Type of value.
+    * T   Type of value.
     * @param value   Actual value.
     * @param message   Message to display on error.
     */
@@ -906,7 +906,7 @@ trait Assert extends StObject {
   /**
     * Asserts that value is not null.
     *
-    * @type T   Type of value.
+    * T   Type of value.
     * @param value   Actual value.
     * @param message   Message to display on error.
     */
@@ -916,7 +916,7 @@ trait Assert extends StObject {
   /**
     * Asserts that value is not a number.
     *
-    * @type T   Type of value.
+    * T   Type of value.
     * @param value   Actual value.
     * @param message   Message to display on error.
     */
@@ -927,7 +927,7 @@ trait Assert extends StObject {
     * Asserts that value is not an object of type 'Object'
     * (as revealed by Object.prototype.toString).
     *
-    * @type T   Type of value.
+    * T   Type of value.
     * @param value   Actual value.
     * @param message   Message to display on error.
     */
@@ -937,7 +937,7 @@ trait Assert extends StObject {
   /**
     * Asserts that object is falsy.
     *
-    * @type T   Type of object.
+    * T   Type of object.
     * @param object   Object to test.
     * @param message    Message to display on error.
     */
@@ -947,7 +947,7 @@ trait Assert extends StObject {
   /**
     * Asserts that object is not sealed.
     *
-    * @type T   Type of object
+    * T   Type of object
     * @param object   Actual value.
     * @param message   Message to display on error.
     */
@@ -957,7 +957,7 @@ trait Assert extends StObject {
   /**
     * Asserts that value is not a string.
     *
-    * @type T   Type of value.
+    * T   Type of value.
     * @param value   Actual value.
     * @param message   Message to display on error.
     */
@@ -967,7 +967,7 @@ trait Assert extends StObject {
   /**
     * Asserts that value is not true.
     *
-    * @type T   Type of value.
+    * T   Type of value.
     * @param value   Actual value.
     * @param message   Message to display on error.
     */
@@ -977,7 +977,7 @@ trait Assert extends StObject {
   /**
     * Asserts that value is null.
     *
-    * @type T   Type of value.
+    * T   Type of value.
     * @param value   Actual value.
     * @param message   Message to display on error.
     */
@@ -987,7 +987,7 @@ trait Assert extends StObject {
   /**
     * Asserts that value is a number.
     *
-    * @type T   Type of value.
+    * T   Type of value.
     * @param value   Actual value.
     * @param message   Message to display on error.
     */
@@ -998,7 +998,7 @@ trait Assert extends StObject {
     * Asserts that value is an object of type 'Object'
     * (as revealed by Object.prototype.toString).
     *
-    * @type T   Type of value.
+    * T   Type of value.
     * @param value   Actual value.
     * @param message   Message to display on error.
     * @remarks The assertion does not match subclassed objects.
@@ -1009,7 +1009,7 @@ trait Assert extends StObject {
   /**
     * Asserts that object is truthy.
     *
-    * @type T   Type of object.
+    * T   Type of object.
     * @param object   Object to test.
     * @param message    Message to display on error.
     */
@@ -1020,7 +1020,7 @@ trait Assert extends StObject {
     * Asserts that object is sealed (can have new properties added to it
     * and its existing properties cannot be removed).
     *
-    * @type T   Type of object
+    * T   Type of object
     * @param object   Actual value.
     * @param message   Message to display on error.
     */
@@ -1030,7 +1030,7 @@ trait Assert extends StObject {
   /**
     * Asserts that value is a string.
     *
-    * @type T   Type of value.
+    * T   Type of value.
     * @param value   Actual value.
     * @param message   Message to display on error.
     */
@@ -1040,7 +1040,7 @@ trait Assert extends StObject {
   /**
     * Asserts that value is true.
     *
-    * @type T   Type of value.
+    * T   Type of value.
     * @param value   Actual value.
     * @param message   Message to display on error.
     */
@@ -1050,7 +1050,7 @@ trait Assert extends StObject {
   /**
     * Asserts that value is undefined.
     *
-    * @type T   Type of value.
+    * T   Type of value.
     * @param value   Actual value.
     * @param message   Message to display on error.
     */
@@ -1060,7 +1060,7 @@ trait Assert extends StObject {
   /**
     * Asserts that object has a length property with the expected value.
     *
-    * @type T   Type of object.
+    * T   Type of object.
     * @param object   Container object.
     * @param length   Potential expected length of object.
     * @param message   Message to display on error.
@@ -1098,7 +1098,7 @@ trait Assert extends StObject {
     * Asserts that object has a direct or inherited property named by property,
     * which can be a string using dot- and bracket-notation for nested reference.
     *
-    * @type T   Type of object.
+    * T   Type of object.
     * @param object   Object to test.
     * @param property    Property to test.
     * @param message    Message to display on error.
@@ -1110,7 +1110,7 @@ trait Assert extends StObject {
     * Asserts that object has a property named by property with value given by value.
     * property can use dot- and bracket-notation for nested reference. Uses a strict equality check (===).
     *
-    * @type T   Type of object.
+    * T   Type of object.
     * @param object   Object to test.
     * @param property    Property to test.
     * @param value    Value to test.
@@ -1122,7 +1122,7 @@ trait Assert extends StObject {
   /**
     * Asserts that actual is not deeply equal to expected.
     *
-    * @type T   Type of the objects.
+    * T   Type of the objects.
     * @param actual   Actual value.
     * @param expected   Potential expected value.
     * @param message   Message to display on error.
@@ -1144,7 +1144,7 @@ trait Assert extends StObject {
   /**
     * Asserts that haystack does not includes needle. Deep equality is used.
     *
-    * @type T   Type of haystack.
+    * T   Type of haystack.
     * @param haystack   Object.
     * @param needle   Potential subset of the haystack's properties.
     * @param message   Message to display on error.
@@ -1161,7 +1161,7 @@ trait Assert extends StObject {
   /**
     * Asserts that haystack does not includes needle. Deep equality is used.
     *
-    * @type T   Type of values in haystack.
+    * T   Type of values in haystack.
     * @param haystack   Container array, set or map.
     * @param needle   Potential value contained in haystack.
     * @param message   Message to display on error.
@@ -1193,7 +1193,7 @@ trait Assert extends StObject {
     * Asserts that object does not have a property named by property with value given by value.
     * property can use dot- and bracket-notation for nested reference. Uses a deep equality check.
     *
-    * @type T   Type of object.
+    * T   Type of object.
     * @param object   Object to test.
     * @param property    Property to test.
     * @param value    Value to test.
@@ -1216,7 +1216,7 @@ trait Assert extends StObject {
     * Asserts that object does not have a property named by property, which can be a
     * string using dot- and bracket-notation for deep reference.
     *
-    * @type T   Type of object.
+    * T   Type of object.
     * @param object   Container object.
     * @param property   Potential contained property of object.
     * @param message   Message to display on error.
@@ -1228,8 +1228,8 @@ trait Assert extends StObject {
     * Asserts that object does not have a property named by property, which can be a
     * string using dot- and bracket-notation for deep reference.
     *
-    * @type T   Type of object.
-    * @type V   Type of value.
+    * T   Type of object.
+    * V   Type of value.
     * @param object   Container object.
     * @param property   Potential contained property of object.
     * @param value   Potential expected property value.
@@ -1241,7 +1241,7 @@ trait Assert extends StObject {
   /**
     * Asserts non-strict inequality (!=) of actual and expected.
     *
-    * @type T   Type of the objects.
+    * T   Type of the objects.
     * @param actual   Actual value.
     * @param expected   Potential expected value.
     * @param message   Message to display on error.
@@ -1252,7 +1252,7 @@ trait Assert extends StObject {
   /**
     * Asserts that the target is either null or undefined.
     *
-    * @type T   Type of value.
+    * T   Type of value.
     * @param value   Actual value.
     * @param message    Message to display on error.
     */
@@ -1262,7 +1262,7 @@ trait Assert extends StObject {
   /**
     * Asserts that object is not extensible.
     *
-    * @type T   Type of object
+    * T   Type of object
     * @param object   Actual value.
     * @param message   Message to display on error.
     */
@@ -1273,7 +1273,7 @@ trait Assert extends StObject {
     * Asserts that object is not frozen (cannot have new properties added to it
     * and its existing properties cannot be removed).
     *
-    * @type T   Type of object
+    * T   Type of object
     * @param object   Actual value.
     * @param message   Message to display on error.
     */
@@ -1292,7 +1292,7 @@ trait Assert extends StObject {
   /**
     * Asserts that haystack does not includes needle.
     *
-    * @type T   Type of haystack.
+    * T   Type of haystack.
     * @param haystack   Object.
     * @param needle   Potential subset of the haystack's properties.
     * @param message   Message to display on error.
@@ -1302,7 +1302,7 @@ trait Assert extends StObject {
   /**
     * Asserts that haystack does not includes needle.
     *
-    * @type T   Type of values in haystack.
+    * T   Type of values in haystack.
     * @param haystack   Container array, set or map.
     * @param needle   Potential value contained in haystack.
     * @param message   Message to display on error.
@@ -1316,7 +1316,7 @@ trait Assert extends StObject {
   /**
     * Asserts that haystack does not includes needle.
     *
-    * @type T   Type of values in haystack.
+    * T   Type of values in haystack.
     * @param haystack   WeakSet container.
     * @param needle   Potential value contained in haystack.
     * @param message   Message to display on error.
@@ -1328,7 +1328,7 @@ trait Assert extends StObject {
     * Asserts that subset isn’t included in superset in the same order beginning with the first element in superset.
     * Uses a deep equality check.
     *
-    * @type T   Type of set values.
+    * T   Type of set values.
     * @param superset   Actual set of values.
     * @param subset   Potential contained set of values.
     * @param message   Message to display on error.
@@ -1340,7 +1340,7 @@ trait Assert extends StObject {
     * Asserts that subset isn’t included in superset in any order.
     * Uses a strict equality check (===). Duplicates are ignored.
     *
-    * @type T   Type of set values.
+    * T   Type of set values.
     * @param superset   Actual set of values.
     * @param subset   Potential not contained set of values.
     * @param message   Message to display on error.
@@ -1352,7 +1352,7 @@ trait Assert extends StObject {
     * Asserts that subset isn’t included in superset in the same order beginning with the first element in superset.
     * Uses a strict equality check (===).
     *
-    * @type T   Type of set values.
+    * T   Type of set values.
     * @param superset   Actual set of values.
     * @param subset   Potential contained set of values.
     * @param message   Message to display on error.
@@ -1363,7 +1363,7 @@ trait Assert extends StObject {
   /**
     * Asserts that value is not an instance of constructor.
     *
-    * @type T   Type of value.
+    * T   Type of value.
     * @param value   Actual value.
     * @param constructor   Potential expected contructor of value.
     * @param message   Message to display on error.
@@ -1402,7 +1402,7 @@ trait Assert extends StObject {
     * which can be a string using dot- and bracket-notation for nested reference.
     * The property cannot exist on the object nor anywhere in its prototype chain.
     *
-    * @type T   Type of object.
+    * T   Type of object.
     * @param object   Object to test.
     * @param property    Property to test.
     * @param message    Message to display on error.
@@ -1414,7 +1414,7 @@ trait Assert extends StObject {
     * Asserts that object does not have a property named by property with value given by value.
     * property can use dot- and bracket-notation for nested reference. Uses a strict equality check (===).
     *
-    * @type T   Type of object.
+    * T   Type of object.
     * @param object   Object to test.
     * @param property    Property to test.
     * @param value    Value to test.
@@ -1426,7 +1426,7 @@ trait Assert extends StObject {
   /**
     * Asserts that object is falsy.
     *
-    * @type T   Type of object.
+    * T   Type of object.
     * @param object   Object to test.
     * @param message    Message to display on error.
     */
@@ -1446,7 +1446,7 @@ trait Assert extends StObject {
   /**
     * Asserts that object has a property named by property.
     *
-    * @type T   Type of object.
+    * T   Type of object.
     * @param object   Container object.
     * @param property   Potential contained property of object.
     * @param message   Message to display on error.
@@ -1457,8 +1457,8 @@ trait Assert extends StObject {
   /**
     * Asserts that object has a property named by property with value given by value.
     *
-    * @type T   Type of object.
-    * @type V   Type of value.
+    * T   Type of object.
+    * V   Type of value.
     * @param object   Container object.
     * @param property   Potential contained property of object.
     * @param value   Potential expected property value.
@@ -1471,7 +1471,7 @@ trait Assert extends StObject {
     * Asserts that set1 and set2 don’t have the same members in the same order.
     * Uses a deep equality check.
     *
-    * @type T   Type of set values.
+    * T   Type of set values.
     * @param set1   Actual set of values.
     * @param set2   Potential expected set of values.
     * @param message   Message to display on error.
@@ -1483,7 +1483,7 @@ trait Assert extends StObject {
     * Asserts that set1 and set2 don’t have the same members in the same order.
     * Uses a strict equality check (===).
     *
-    * @type T   Type of set values.
+    * T   Type of set values.
     * @param set1   Actual set of values.
     * @param set2   Potential expected set of values.
     * @param message   Message to display on error.
@@ -1494,7 +1494,7 @@ trait Assert extends StObject {
   /**
     * Asserts that object is not sealed.
     *
-    * @type T   Type of object
+    * T   Type of object
     * @param object   Actual value.
     * @param message   Message to display on error.
     */
@@ -1504,7 +1504,7 @@ trait Assert extends StObject {
   /**
     * Asserts strict inequality (!==) of actual and expected.
     *
-    * @type T   Type of the objects.
+    * T   Type of the objects.
     * @param actual   Actual value.
     * @param expected   Potential expected value.
     * @param message   Message to display on error.
@@ -1515,7 +1515,7 @@ trait Assert extends StObject {
   /**
     * Asserts that value's type is not name, as determined by Object.prototype.toString.
     *
-    * @type T   Type of value.
+    * T   Type of value.
     * @param value   Actual value.
     * @param name   Potential expected type name of value.
     * @param message   Message to display on error.
@@ -1526,7 +1526,7 @@ trait Assert extends StObject {
   /**
     * Asserts that object is truthy.
     *
-    * @type T   Type of object.
+    * T   Type of object.
     * @param object   Object to test.
     * @param message    Message to display on error.
     */
@@ -1536,7 +1536,7 @@ trait Assert extends StObject {
   /**
     * Asserts that non-object, non-array value inList appears in the flat array list.
     *
-    * @type T   Type of list values.
+    * T   Type of list values.
     * @param inList   Value expected to be in the list.
     * @param list   List of values.
     * @param message   Message to display on error.
@@ -1568,7 +1568,7 @@ trait Assert extends StObject {
   /**
     * Asserts that object has a property named by property.
     *
-    * @type T   Type of object.
+    * T   Type of object.
     * @param object   Container object.
     * @param property   Potential contained property of object.
     * @param message   Message to display on error.
@@ -1579,8 +1579,8 @@ trait Assert extends StObject {
   /**
     * Asserts that object has a property named by property with value given by value.
     *
-    * @type T   Type of object.
-    * @type V   Type of value.
+    * T   Type of object.
+    * V   Type of value.
     * @param object   Container object.
     * @param property   Potential contained property of object.
     * @param value   Potential expected property value.
@@ -1593,7 +1593,7 @@ trait Assert extends StObject {
     * Asserts that set1 and set2 have the same members using deep equality checking.
     * Order is not take into account.
     *
-    * @type T   Type of set values.
+    * T   Type of set values.
     * @param set1   Actual set of values.
     * @param set2   Potential expected set of values.
     * @param message   Message to display on error.
@@ -1605,7 +1605,7 @@ trait Assert extends StObject {
     * Asserts that set1 and set2 have the same members in the same order.
     * Uses a deep equality check.
     *
-    * @type T   Type of set values.
+    * T   Type of set values.
     * @param set1   Actual set of values.
     * @param set2   Potential expected set of values.
     * @param message   Message to display on error.
@@ -1616,7 +1616,7 @@ trait Assert extends StObject {
   /**
     * Asserts that set1 and set2 have the same members. Order is not take into account.
     *
-    * @type T   Type of set values.
+    * T   Type of set values.
     * @param set1   Actual set of values.
     * @param set2   Potential expected set of values.
     * @param message   Message to display on error.
@@ -1628,7 +1628,7 @@ trait Assert extends StObject {
     * Asserts that set1 and set2 have the same members in the same order.
     * Uses a strict equality check (===).
     *
-    * @type T   Type of set values.
+    * T   Type of set values.
     * @param set1   Actual set of values.
     * @param set2   Potential expected set of values.
     * @param message   Message to display on error.
@@ -1640,7 +1640,7 @@ trait Assert extends StObject {
     * Asserts that object is sealed (can have new properties added to it
     * and its existing properties cannot be removed).
     *
-    * @type T   Type of object
+    * T   Type of object
     * @param object   Actual value.
     * @param message   Message to display on error.
     */
@@ -1650,7 +1650,7 @@ trait Assert extends StObject {
   /**
     * Asserts strict equality (===) of actual and expected.
     *
-    * @type T   Type of the objects.
+    * T   Type of the objects.
     * @param actual   Actual value.
     * @param expected   Potential expected value.
     * @param message   Message to display on error.
@@ -1753,7 +1753,7 @@ trait Assert extends StObject {
   /**
     * Asserts that value's type is name, as determined by Object.prototype.toString.
     *
-    * @type T   Type of value.
+    * T   Type of value.
     * @param value   Actual value.
     * @param name   Potential expected type name of value.
     * @param message   Message to display on error.

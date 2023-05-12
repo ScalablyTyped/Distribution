@@ -12,12 +12,12 @@ trait BatchCheckLayerAvailabilityRequest extends StObject {
   var layerDigests: BatchedOperationLayerDigestList
   
   /**
-    * The AWS account ID associated with the public registry that contains the image layers to check. If you do not specify a registry, the default public registry is assumed.
+    * The Amazon Web Services account ID, or registry alias, associated with the public registry that contains the image layers to check. If you do not specify a registry, the default public registry is assumed.
     */
   var registryId: js.UndefOr[RegistryIdOrAlias] = js.undefined
   
   /**
-    * The name of the repository that is associated with the image layers to check.
+    * The name of the repository that's associated with the image layers to check.
     */
   var repositoryName: RepositoryName
 }

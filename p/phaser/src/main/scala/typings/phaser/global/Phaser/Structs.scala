@@ -19,7 +19,7 @@ object Structs {
       */
     @JSGlobal("Phaser.Structs.Events.PROCESS_QUEUE_ADD")
     @js.native
-    val PROCESS_QUEUE_ADD: Any = js.native
+    val PROCESS_QUEUE_ADD: String = js.native
     
     /**
       * The Process Queue Remove Event.
@@ -32,7 +32,7 @@ object Structs {
       */
     @JSGlobal("Phaser.Structs.Events.PROCESS_QUEUE_REMOVE")
     @js.native
-    val PROCESS_QUEUE_REMOVE: Any = js.native
+    val PROCESS_QUEUE_REMOVE: String = js.native
   }
   
   /**

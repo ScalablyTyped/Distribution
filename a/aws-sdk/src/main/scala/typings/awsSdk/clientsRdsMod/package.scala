@@ -36,7 +36,7 @@ type ActivityStreamPolicyStatus = _ActivityStreamPolicyStatus | java.lang.String
 type ActivityStreamStatus = _ActivityStreamStatus | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
-  - typings.awsSdk.awsSdkStrings.immediate_
+  - typings.awsSdk.awsSdkStrings.immediate__
   - typings.awsSdk.awsSdkStrings.`pending-reboot`
   - java.lang.String
 */
@@ -68,13 +68,40 @@ type AvailableProcessorFeatureList = js.Array[AvailableProcessorFeature]
 
 type AwsBackupRecoveryPointArn = java.lang.String
 
+type BlueGreenDeploymentIdentifier = java.lang.String
+
+type BlueGreenDeploymentList = js.Array[BlueGreenDeployment]
+
+type BlueGreenDeploymentName = java.lang.String
+
+type BlueGreenDeploymentStatus = java.lang.String
+
+type BlueGreenDeploymentStatusDetails = java.lang.String
+
+type BlueGreenDeploymentTaskList = js.Array[BlueGreenDeploymentTask]
+
+type BlueGreenDeploymentTaskName = java.lang.String
+
+type BlueGreenDeploymentTaskStatus = java.lang.String
+
 type Boolean = scala.Boolean
 
 type BooleanOptional = scala.Boolean
 
 type BucketName = java.lang.String
 
+type CACertificateIdentifiersList = js.Array[String]
+
 type CertificateList = js.Array[Certificate]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.MYSQL_NATIVE_PASSWORD
+  - typings.awsSdk.awsSdkStrings.POSTGRES_SCRAM_SHA_256
+  - typings.awsSdk.awsSdkStrings.POSTGRES_MD5
+  - typings.awsSdk.awsSdkStrings.SQL_SERVER_AUTHENTICATION
+  - java.lang.String
+*/
+type ClientPasswordAuthType = _ClientPasswordAuthType | java.lang.String
 
 type CustomDBEngineVersionManifest = java.lang.String
 
@@ -177,6 +204,8 @@ type DBSnapshotAttributeList = js.Array[DBSnapshotAttribute]
 type DBSnapshotList = js.Array[DBSnapshot]
 
 type DBSubnetGroups = js.Array[DBSubnetGroup]
+
+type DatabaseArn = java.lang.String
 
 type DescribeDBLogFilesList = js.Array[DescribeDBLogFilesDetails]
 
@@ -315,7 +344,7 @@ type RecurringChargeList = js.Array[RecurringCharge]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`open-read-only`
-  - typings.awsSdk.awsSdkStrings.mounted
+  - typings.awsSdk.awsSdkStrings.mounted_
   - java.lang.String
 */
 type ReplicaMode = _ReplicaMode | java.lang.String
@@ -337,6 +366,7 @@ type SourceRegionList = js.Array[SourceRegion]
   - typings.awsSdk.awsSdkStrings.`db-cluster-snapshot`
   - typings.awsSdk.awsSdkStrings.`custom-engine-version`
   - typings.awsSdk.awsSdkStrings.`db-proxy`
+  - typings.awsSdk.awsSdkStrings.`blue-green-deployment`
   - java.lang.String
 */
 type SourceType = _SourceType | java.lang.String
@@ -355,9 +385,21 @@ type SupportedCharacterSetsList = js.Array[CharacterSet]
 
 type SupportedTimezonesList = js.Array[Timezone]
 
+type SwitchoverDetailList = js.Array[SwitchoverDetail]
+
+type SwitchoverDetailStatus = java.lang.String
+
+type SwitchoverTimeout = scala.Double
+
 type TStamp = js.Date
 
 type TagList = js.Array[Tag]
+
+type TargetDBClusterParameterGroupName = java.lang.String
+
+type TargetDBParameterGroupName = java.lang.String
+
+type TargetEngineVersion = java.lang.String
 
 type TargetGroupList = js.Array[DBProxyTargetGroup]
 

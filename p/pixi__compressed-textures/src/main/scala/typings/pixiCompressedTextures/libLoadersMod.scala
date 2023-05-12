@@ -6,6 +6,7 @@ import typings.pixiAssets.libResolverTypesMod.ResolveURLParser
 import typings.pixiCore.libTexturesBaseTextureMod.IBaseTextureOptions
 import typings.pixiCore.mod.Resource
 import typings.pixiCore.mod.Texture
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,11 +19,15 @@ object libLoadersMod {
   
   @JSImport("@pixi/compressed-textures/lib/loaders", "loadDDS")
   @js.native
-  val loadDDS: LoaderParser[Any, Any] = js.native
+  val loadDDS: LoaderParser[Any, Any, Record[String, Any]] = js.native
   
   @JSImport("@pixi/compressed-textures/lib/loaders", "loadKTX")
   @js.native
-  val loadKTX: LoaderParser[Texture[Resource] | js.Array[Texture[Resource]], IBaseTextureOptions[Any]] = js.native
+  val loadKTX: LoaderParser[
+    Texture[Resource] | js.Array[Texture[Resource]], 
+    IBaseTextureOptions[Any], 
+    Record[String, Any]
+  ] = js.native
   
   @JSImport("@pixi/compressed-textures/lib/loaders", "resolveCompressedTextureUrl")
   @js.native

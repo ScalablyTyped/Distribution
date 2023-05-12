@@ -1,6 +1,7 @@
 package typings.awsSdk.clientsEmrMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.awsSdk.awsSdkStrings.HTML
 import typings.awsSdk.awsSdkStrings.NONE
 import typings.awsSdk.awsSdkStrings.`capacity-optimized`
 import typings.awsSdk.awsSdkStrings.`lowest-price`
@@ -138,7 +139,15 @@ type EbsBlockDeviceList = js.Array[EbsBlockDevice]
 
 type EbsVolumeList = js.Array[EbsVolume]
 
+type EnvironmentVariablesMap = StringDictionary[XmlString]
+
+type ErrorData = js.Array[StringMap]
+
+type ErrorDetailList = js.Array[ErrorDetail]
+
 type ExecutionEngineType = typings.awsSdk.awsSdkStrings.EMR | java.lang.String
+
+type IAMRoleArn = java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.USER
@@ -348,6 +357,8 @@ type OnDemandProvisioningAllocationStrategy = `lowest-price` | java.lang.String
 
 type OptionalArnType = java.lang.String
 
+type OutputNotebookFormat = HTML | java.lang.String
+
 type PlacementGroupConfigList = js.Array[PlacementGroupConfig]
 
 /* Rewritten from type alias, can be one of: 
@@ -507,6 +518,8 @@ type ThroughputVal = Double
   - java.lang.String
 */
 type Unit = _Unit | java.lang.String
+
+type UriString = java.lang.String
 
 type WholeNumber = Double
 

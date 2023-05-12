@@ -1,7 +1,7 @@
 
 # Scala.js typings for url-metadata
 
-Typings are for version 2.5.0
+Typings are for version 3.0.1
 
 ## Library description:
 Request an http(s) url and scrape its metadata.

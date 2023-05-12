@@ -1,107 +1,65 @@
 package typings.octokitOpenapiTypes.anon
 
-import org.scalablytyped.runtime.StringDictionary
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Statusesurl extends StObject {
   
-  /**
-    * Format: date-time
-    * @example 2012-07-20T01:19:13Z
-    */
   var created_at: String
   
-  var creator: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-simple-user'] */ js.Any
+  /** User */
+  var creator: Deleted | Null
   
-  /** @example Deploy request from hubot */
   var description: String | Null
   
-  /**
-    * @description Name for the target deployment environment.
-    * @example production
-    */
   var environment: String
   
-  /**
-    * @description Unique identifier of the deployment
-    * @example 42
-    */
   var id: Double
   
-  /** @example MDEwOkRlcGxveW1lbnQx */
   var node_id: String
   
-  /** @example staging */
-  var original_environment: js.UndefOr[String] = js.undefined
+  var original_environment: String
   
-  var payload: StringDictionary[Any] | String
-  
-  var performed_via_github_app: js.UndefOr[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-integration'] */ js.Any
-  ] = js.undefined
+  var payload: (Record[String, scala.Nothing]) | String
   
   /**
-    * @description Specifies if the given environment is one that end-users directly interact with. Default: false.
-    * @example true
+    * App
+    * @description GitHub apps are a new way to extend GitHub. They can be installed directly on organizations and user accounts and granted access to specific repositories. They come with granular permissions and built-in webhooks. GitHub apps are first class actors within GitHub.
     */
+  var performed_via_github_app: js.UndefOr[ExternalurlHtmlurl | Null] = js.undefined
+  
   var production_environment: js.UndefOr[Boolean] = js.undefined
   
-  /**
-    * @description The ref to deploy. This can be a branch, tag, or sha.
-    * @example topic-branch
-    */
   var ref: String
   
-  /**
-    * Format: uri
-    * @example https://api.github.com/repos/octocat/example
-    */
+  /** Format: uri */
   var repository_url: String
   
-  /** @example a84d88e7554fc1fa21bcbc4efae3c782a70d2b9d */
   var sha: String
   
-  /**
-    * Format: uri
-    * @example https://api.github.com/repos/octocat/example/deployments/1/statuses
-    */
+  /** Format: uri */
   var statuses_url: String
   
-  /**
-    * @description Parameter to specify a task to execute
-    * @example deploy
-    */
   var task: String
   
-  /**
-    * @description Specifies if the given environment is will no longer exist at some point in the future. Default: false.
-    * @example true
-    */
   var transient_environment: js.UndefOr[Boolean] = js.undefined
   
-  /**
-    * Format: date-time
-    * @example 2012-07-20T01:19:13Z
-    */
   var updated_at: String
   
-  /**
-    * Format: uri
-    * @example https://api.github.com/repos/octocat/example/deployments/1
-    */
+  /** Format: uri */
   var url: String
 }
 object Statusesurl {
   
   inline def apply(
     created_at: String,
-    creator: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-simple-user'] */ js.Any,
     environment: String,
     id: Double,
     node_id: String,
-    payload: StringDictionary[Any] | String,
+    original_environment: String,
+    payload: (Record[String, scala.Nothing]) | String,
     ref: String,
     repository_url: String,
     sha: String,
@@ -110,7 +68,7 @@ object Statusesurl {
     updated_at: String,
     url: String
   ): Statusesurl = {
-    val __obj = js.Dynamic.literal(created_at = created_at.asInstanceOf[js.Any], creator = creator.asInstanceOf[js.Any], environment = environment.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], node_id = node_id.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any], repository_url = repository_url.asInstanceOf[js.Any], sha = sha.asInstanceOf[js.Any], statuses_url = statuses_url.asInstanceOf[js.Any], task = task.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], description = null)
+    val __obj = js.Dynamic.literal(created_at = created_at.asInstanceOf[js.Any], environment = environment.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], node_id = node_id.asInstanceOf[js.Any], original_environment = original_environment.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any], repository_url = repository_url.asInstanceOf[js.Any], sha = sha.asInstanceOf[js.Any], statuses_url = statuses_url.asInstanceOf[js.Any], task = task.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], creator = null, description = null)
     __obj.asInstanceOf[Statusesurl]
   }
   
@@ -119,9 +77,9 @@ object Statusesurl {
     
     inline def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
     
-    inline def setCreator(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-simple-user'] */ js.Any
-    ): Self = StObject.set(x, "creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Deleted): Self = StObject.set(x, "creator", value.asInstanceOf[js.Any])
+    
+    inline def setCreatorNull: Self = StObject.set(x, "creator", null)
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
@@ -135,13 +93,11 @@ object Statusesurl {
     
     inline def setOriginal_environment(value: String): Self = StObject.set(x, "original_environment", value.asInstanceOf[js.Any])
     
-    inline def setOriginal_environmentUndefined: Self = StObject.set(x, "original_environment", js.undefined)
+    inline def setPayload(value: (Record[String, scala.Nothing]) | String): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
-    inline def setPayload(value: StringDictionary[Any] | String): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    inline def setPerformed_via_github_app(value: ExternalurlHtmlurl): Self = StObject.set(x, "performed_via_github_app", value.asInstanceOf[js.Any])
     
-    inline def setPerformed_via_github_app(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-integration'] */ js.Any
-    ): Self = StObject.set(x, "performed_via_github_app", value.asInstanceOf[js.Any])
+    inline def setPerformed_via_github_appNull: Self = StObject.set(x, "performed_via_github_app", null)
     
     inline def setPerformed_via_github_appUndefined: Self = StObject.set(x, "performed_via_github_app", js.undefined)
     

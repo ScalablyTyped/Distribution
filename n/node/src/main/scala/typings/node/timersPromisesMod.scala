@@ -12,6 +12,10 @@ object timersPromisesMod {
   @js.native
   val ^ : js.Any = js.native
   
+  @JSImport("timers/promises", "scheduler")
+  @js.native
+  val scheduler: Scheduler_ = js.native
+  
   /**
     * ```js
     * import {
@@ -32,6 +36,8 @@ object timersPromisesMod {
   
   /**
     * Returns an async iterator that generates values in an interval of `delay` ms.
+    * If `ref` is `true`, you need to call `next()` of async iterator explicitly
+    * or implicitly to keep the event loop alive.
     *
     * ```js
     * import {
@@ -80,4 +86,20 @@ object timersPromisesMod {
   inline def setTimeout[T](delay: Unit, value: T): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("setTimeout")(delay.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
   inline def setTimeout[T](delay: Unit, value: T, options: TimerOptions): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("setTimeout")(delay.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
   inline def setTimeout[T](delay: Unit, value: Unit, options: TimerOptions): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("setTimeout")(delay.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
+  
+  @js.native
+  trait Scheduler_ extends StObject {
+    
+    def wait(delay: Double): js.Promise[Unit] = js.native
+    def wait(delay: Double, options: TimerOptions): js.Promise[Unit] = js.native
+    def wait(delay: Unit, options: TimerOptions): js.Promise[Unit] = js.native
+    
+    /**
+      * An experimental API defined by the Scheduling APIs draft specification being developed as a standard Web Platform API.
+      * Calling timersPromises.scheduler.yield() is equivalent to calling timersPromises.setImmediate() with no arguments.
+      * @since v16.14.0
+      * @experimental
+      */
+    def `yield`(): js.Promise[Unit] = js.native
+  }
 }

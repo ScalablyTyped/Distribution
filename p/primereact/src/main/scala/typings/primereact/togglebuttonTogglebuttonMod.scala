@@ -1,5 +1,6 @@
 package typings.primereact
 
+import typings.primereact.primereactStrings._empty
 import typings.primereact.primereactStrings.`additions removals`
 import typings.primereact.primereactStrings.`additions text`
 import typings.primereact.primereactStrings.`inline`
@@ -7,8 +8,10 @@ import typings.primereact.primereactStrings.`removals additions`
 import typings.primereact.primereactStrings.`removals text`
 import typings.primereact.primereactStrings.`text additions`
 import typings.primereact.primereactStrings.`text removals`
+import typings.primereact.primereactStrings.`use-credentials`
 import typings.primereact.primereactStrings.additions
 import typings.primereact.primereactStrings.all
+import typings.primereact.primereactStrings.anonymous
 import typings.primereact.primereactStrings.ascending
 import typings.primereact.primereactStrings.assertive
 import typings.primereact.primereactStrings.both
@@ -27,6 +30,7 @@ import typings.primereact.primereactStrings.grammar
 import typings.primereact.primereactStrings.grid
 import typings.primereact.primereactStrings.horizontal
 import typings.primereact.primereactStrings.inherit
+import typings.primereact.primereactStrings.left
 import typings.primereact.primereactStrings.link
 import typings.primereact.primereactStrings.list
 import typings.primereact.primereactStrings.listbox
@@ -46,6 +50,7 @@ import typings.primereact.primereactStrings.polite
 import typings.primereact.primereactStrings.popup
 import typings.primereact.primereactStrings.previous
 import typings.primereact.primereactStrings.removals
+import typings.primereact.primereactStrings.right
 import typings.primereact.primereactStrings.search
 import typings.primereact.primereactStrings.send
 import typings.primereact.primereactStrings.spelling
@@ -98,6 +103,7 @@ import typings.react.mod.WheelEvent
 import typings.react.mod.WheelEventHandler
 import typings.std.Element
 import typings.std.Event
+import typings.std.FormData
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
@@ -112,26 +118,55 @@ object togglebuttonTogglebuttonMod {
     def this(props: ToggleButtonProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: ToggleButtonProps, context: Any) = this()
     
+    /**
+      * Used to focus the component.
+      */
+    def focus(): Unit = js.native
+    
+    /**
+      * Used to get container element.
+      * @return {HTMLDivElement} Container element
+      */
     def getElement(): HTMLDivElement = js.native
   }
   
-  trait ToggleButtonChangeParams extends StObject {
+  /**
+    * Custom change event.
+    * @see {@link ToggleButtonProps.onChange}
+    * @event
+    */
+  trait ToggleButtonChangeEvent extends StObject {
     
+    /**
+      * Browser event
+      */
     var originalEvent: SyntheticEvent[Element, Event]
     
+    /**
+      * Prevents the default action of the event.
+      */
     def preventDefault(): Unit
     
+    /**
+      * Stops the event from propagating.
+      */
     def stopPropagation(): Unit
     
+    /**
+      * Target element.
+      */
     var target: ToggleButtonChangeTargetOptions
     
+    /**
+      * Value as the checked state.
+      */
     var value: Boolean
   }
-  object ToggleButtonChangeParams {
+  object ToggleButtonChangeEvent {
     
     inline def apply(
       originalEvent: SyntheticEvent[Element, Event],
@@ -139,13 +174,13 @@ object togglebuttonTogglebuttonMod {
       stopPropagation: () => Unit,
       target: ToggleButtonChangeTargetOptions,
       value: Boolean
-    ): ToggleButtonChangeParams = {
+    ): ToggleButtonChangeEvent = {
       val __obj = js.Dynamic.literal(originalEvent = originalEvent.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.asInstanceOf[ToggleButtonChangeParams]
+      __obj.asInstanceOf[ToggleButtonChangeEvent]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: ToggleButtonChangeParams] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: ToggleButtonChangeEvent] (val x: Self) extends AnyVal {
       
       inline def setOriginalEvent(value: SyntheticEvent[Element, Event]): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
@@ -159,12 +194,24 @@ object togglebuttonTogglebuttonMod {
     }
   }
   
+  /**
+    * Custom toggle button change target options
+    */
   trait ToggleButtonChangeTargetOptions extends StObject {
     
+    /**
+      * Unique identifier of the element.
+      */
     var id: String
     
+    /**
+      * The name of the element.
+      */
     var name: String
     
+    /**
+      * Collapsed state as a boolean.
+      */
     var value: Boolean
   }
   object ToggleButtonChangeTargetOptions {
@@ -183,18 +230,6 @@ object togglebuttonTogglebuttonMod {
       
       inline def setValue(value: Boolean): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
-  }
-  
-  /* Rewritten from type alias, can be one of: 
-    - typings.primereact.primereactStrings.left
-    - typings.primereact.primereactStrings.right
-  */
-  trait ToggleButtonIconPositionType extends StObject
-  object ToggleButtonIconPositionType {
-    
-    inline def left: typings.primereact.primereactStrings.left = "left".asInstanceOf[typings.primereact.primereactStrings.left]
-    
-    inline def right: typings.primereact.primereactStrings.right = "right".asInstanceOf[typings.primereact.primereactStrings.right]
   }
   
   /* Inlined parent std.Omit<react.react.DetailedHTMLProps<react.react.InputHTMLAttributes<std.HTMLDivElement>, std.HTMLDivElement>, 'onChange' | 'ref'> */
@@ -318,19 +353,29 @@ object togglebuttonTogglebuttonMod {
     
     var capture: js.UndefOr[Boolean | user | environment] = js.undefined
     
+    /**
+      * Specifies the on/off state of the button.
+      * @defaultValue false
+      */
     var checked: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Used to get the child elements of the component.
+      * @readonly
+      */
     var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
     var color: js.UndefOr[String] = js.undefined
     
+    var content: js.UndefOr[String] = js.undefined
+    
     var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
     var contextMenu: js.UndefOr[String] = js.undefined
     
-    var crossOrigin: js.UndefOr[String] = js.undefined
+    var crossOrigin: js.UndefOr[anonymous | `use-credentials` | _empty] = js.undefined
     
     var dangerouslySetInnerHTML: js.UndefOr[Html] = js.undefined
     
@@ -350,7 +395,7 @@ object togglebuttonTogglebuttonMod {
     
     var form: js.UndefOr[String] = js.undefined
     
-    var formAction: js.UndefOr[String] = js.undefined
+    var formAction: js.UndefOr[String | (js.Function1[/* formData */ FormData, Unit])] = js.undefined
     
     var formEncType: js.UndefOr[String] = js.undefined
     
@@ -364,7 +409,11 @@ object togglebuttonTogglebuttonMod {
     
     var hidden: js.UndefOr[Boolean] = js.undefined
     
-    var iconPos: js.UndefOr[ToggleButtonIconPositionType] = js.undefined
+    /**
+      * Position of the icon, valid values are "left" and "right".
+      * @defaultValue left
+      */
+    var iconPos: js.UndefOr[left | right] = js.undefined
     
     var id: js.UndefOr[String] = js.undefined
     
@@ -404,10 +453,17 @@ object togglebuttonTogglebuttonMod {
     
     var nonce: js.UndefOr[String] = js.undefined
     
+    /**
+      * Icon for the off state.
+      */
     var offIcon: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconType<ToggleButtonProps> */ Any
       ] = js.undefined
     
+    /**
+      * Label for the off state.
+      * @defaultValue no
+      */
     var offLabel: js.UndefOr[String] = js.undefined
     
     var onAbort: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
@@ -422,13 +478,21 @@ object togglebuttonTogglebuttonMod {
     
     var onBeforeInput: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
     
+    /**
+      * Callback to invoke when autocomplete loses focus.
+      * @param {React.FocusEvent<HTMLElement>} event - Browser event.
+      */
     var onBlur: js.UndefOr[js.Function1[/* event */ FocusEvent[HTMLElement, Element], Unit]] = js.undefined
     
     var onCanPlay: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
     var onCanPlayThrough: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* e */ ToggleButtonChangeParams, Unit]] = js.undefined
+    /**
+      * Callback to invoke on value change.
+      * @param {ToggleButtonChangeEvent} event - Browser event.
+      */
+    var onChange: js.UndefOr[js.Function1[/* event */ ToggleButtonChangeEvent, Unit]] = js.undefined
     
     var onClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
@@ -472,8 +536,15 @@ object togglebuttonTogglebuttonMod {
     
     var onError: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
+    /**
+      * Callback to invoke when autocomplete gets focus.
+      * @param {React.FocusEvent<HTMLElement>} event - Browser event.
+      */
     var onFocus: js.UndefOr[js.Function1[/* event */ FocusEvent[HTMLElement, Element], Unit]] = js.undefined
     
+    /**
+      * Icon for the on state.
+      */
     var onIcon: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconType<ToggleButtonProps> */ Any
       ] = js.undefined
@@ -488,6 +559,10 @@ object togglebuttonTogglebuttonMod {
     
     var onKeyUp: js.UndefOr[KeyboardEventHandler[HTMLDivElement]] = js.undefined
     
+    /**
+      * Label for the on state.
+      * @defaultValue yes
+      */
     var onLabel: js.UndefOr[String] = js.undefined
     
     var onLoad: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
@@ -588,11 +663,15 @@ object togglebuttonTogglebuttonMod {
     
     var readOnly: js.UndefOr[Boolean] = js.undefined
     
+    var rel: js.UndefOr[String] = js.undefined
+    
     var required: js.UndefOr[Boolean] = js.undefined
     
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
+    
+    var rev: js.UndefOr[String] = js.undefined
     
     var role: js.UndefOr[AriaRole] = js.undefined
     
@@ -618,8 +697,14 @@ object togglebuttonTogglebuttonMod {
     
     var title: js.UndefOr[String] = js.undefined
     
+    /**
+      * Content of the tooltip.
+      */
     var tooltip: js.UndefOr[String] = js.undefined
     
+    /**
+      * Configuration of the tooltip, refer to the tooltip documentation for more information.
+      */
     var tooltipOptions: js.UndefOr[TooltipOptions] = js.undefined
     
     var translate: js.UndefOr[yes | no] = js.undefined
@@ -896,15 +981,19 @@ object togglebuttonTogglebuttonMod {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
       inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
       inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
       inline def setContextMenuUndefined: Self = StObject.set(x, "contextMenu", js.undefined)
       
-      inline def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+      inline def setCrossOrigin(value: anonymous | `use-credentials` | _empty): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
       
       inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
       
@@ -944,7 +1033,9 @@ object togglebuttonTogglebuttonMod {
       
       inline def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
       
-      inline def setFormAction(value: String): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+      inline def setFormAction(value: String | (js.Function1[/* formData */ FormData, Unit])): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+      
+      inline def setFormActionFunction1(value: /* formData */ FormData => Unit): Self = StObject.set(x, "formAction", js.Any.fromFunction1(value))
       
       inline def setFormActionUndefined: Self = StObject.set(x, "formAction", js.undefined)
       
@@ -974,7 +1065,7 @@ object togglebuttonTogglebuttonMod {
       
       inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
       
-      inline def setIconPos(value: ToggleButtonIconPositionType): Self = StObject.set(x, "iconPos", value.asInstanceOf[js.Any])
+      inline def setIconPos(value: left | right): Self = StObject.set(x, "iconPos", value.asInstanceOf[js.Any])
       
       inline def setIconPosUndefined: Self = StObject.set(x, "iconPos", js.undefined)
       
@@ -1102,7 +1193,7 @@ object togglebuttonTogglebuttonMod {
       
       inline def setOnCanPlayUndefined: Self = StObject.set(x, "onCanPlay", js.undefined)
       
-      inline def setOnChange(value: /* e */ ToggleButtonChangeParams => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* event */ ToggleButtonChangeEvent => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
@@ -1420,6 +1511,10 @@ object togglebuttonTogglebuttonMod {
       
       inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
       
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      
+      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+      
       inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
       
       inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
@@ -1431,6 +1526,10 @@ object togglebuttonTogglebuttonMod {
       inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+      
+      inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+      
+      inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
       
       inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       

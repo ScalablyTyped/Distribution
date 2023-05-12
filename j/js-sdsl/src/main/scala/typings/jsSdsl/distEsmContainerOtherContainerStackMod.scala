@@ -19,16 +19,20 @@ object distEsmContainerOtherContainerStackMod {
     
     /**
       * @description Removes the end element.
+      * @returns The element you popped.
       */
-    def pop(): Unit = js.native
+    def pop(): js.UndefOr[T] = js.native
     
     /**
       * @description Insert element to stack's end.
+      * @description The element you want to push to the back.
+      * @returns The container length after erasing.
       */
-    def push(element: T): Unit = js.native
+    def push(element: T): Double = js.native
     
     /**
       * @description Accesses the end element.
+      * @returns The last element.
       */
     def top(): js.UndefOr[T] = js.native
   }

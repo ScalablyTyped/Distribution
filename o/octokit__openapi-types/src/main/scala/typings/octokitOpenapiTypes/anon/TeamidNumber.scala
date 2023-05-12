@@ -6,7 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TeamidNumber extends StObject {
   
-  /** The unique identifier of the team. */
   var team_id: Double
 }
 object TeamidNumber {

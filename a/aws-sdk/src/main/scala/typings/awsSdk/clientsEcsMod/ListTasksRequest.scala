@@ -47,7 +47,7 @@ trait ListTasksRequest extends StObject {
   var serviceName: js.UndefOr[String] = js.undefined
   
   /**
-    * The startedBy value to filter the task results with. Specifying a startedBy value limits the results to tasks that were started with that value.
+    * The startedBy value to filter the task results with. Specifying a startedBy value limits the results to tasks that were started with that value. When you specify startedBy as the filter, it must be the only filter that you use.
     */
   var startedBy: js.UndefOr[String] = js.undefined
 }

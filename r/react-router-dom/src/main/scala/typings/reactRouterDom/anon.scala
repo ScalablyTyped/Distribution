@@ -3,82 +3,72 @@ package typings.reactRouterDom
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.HTMLAttributeAnchorTarget
 import typings.react.mod.RefAttributes
-import typings.reactRouter.distLibContextMod.RelativeRoutingType
 import typings.reactRouterDom.mod.FormProps
 import typings.reactRouterDom.mod.SubmitTarget
-import typings.remixRunRouter.distRouterMod.HydrationState
+import typings.remixRunRouter.distHistoryMod.Location
+import typings.remixRunRouter.distRouterMod.GetScrollRestorationKeyFunction
+import typings.remixRunRouter.distRouterMod.RelativeRoutingType
+import typings.remixRunRouter.distRouterMod.UseMatchesMatch
 import typings.remixRunRouter.distUtilsMod.FormEncType
-import typings.remixRunRouter.distUtilsMod.FormMethod
+import typings.remixRunRouter.distUtilsMod.HTMLFormMethod
 import typings.std.FormData
 import typings.std.HTMLFormElement
 import typings.std.ReturnType
-import typings.std.URL
-import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  trait Basename extends StObject {
+  trait Action extends StObject {
     
-    var basename: js.UndefOr[String] = js.undefined
-    
-    var hydrationData: js.UndefOr[HydrationState] = js.undefined
-    
-    var window: js.UndefOr[Window] = js.undefined
-  }
-  object Basename {
-    
-    inline def apply(): Basename = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Basename]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: Basename] (val x: Self) extends AnyVal {
-      
-      inline def setBasename(value: String): Self = StObject.set(x, "basename", value.asInstanceOf[js.Any])
-      
-      inline def setBasenameUndefined: Self = StObject.set(x, "basename", js.undefined)
-      
-      inline def setHydrationData(value: HydrationState): Self = StObject.set(x, "hydrationData", value.asInstanceOf[js.Any])
-      
-      inline def setHydrationDataUndefined: Self = StObject.set(x, "hydrationData", js.undefined)
-      
-      inline def setWindow(value: Window): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
-      
-      inline def setWindowUndefined: Self = StObject.set(x, "window", js.undefined)
-    }
-  }
-  
-  trait EncType extends StObject {
+    var action: String | Null
     
     var encType: String
     
     var formData: FormData
     
     var method: String
-    
-    var url: URL
   }
-  object EncType {
+  object Action {
     
-    inline def apply(encType: String, formData: FormData, method: String, url: URL): EncType = {
-      val __obj = js.Dynamic.literal(encType = encType.asInstanceOf[js.Any], formData = formData.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-      __obj.asInstanceOf[EncType]
+    inline def apply(encType: String, formData: FormData, method: String): Action = {
+      val __obj = js.Dynamic.literal(encType = encType.asInstanceOf[js.Any], formData = formData.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], action = null)
+      __obj.asInstanceOf[Action]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: EncType] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: Action] (val x: Self) extends AnyVal {
+      
+      inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      
+      inline def setActionNull: Self = StObject.set(x, "action", null)
       
       inline def setEncType(value: String): Self = StObject.set(x, "encType", value.asInstanceOf[js.Any])
       
       inline def setFormData(value: FormData): Self = StObject.set(x, "formData", value.asInstanceOf[js.Any])
       
       inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait Capture extends StObject {
+    
+    var capture: js.UndefOr[Boolean] = js.undefined
+  }
+  object Capture {
+    
+    inline def apply(): Capture = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Capture]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Capture] (val x: Self) extends AnyVal {
       
-      inline def setUrl(value: URL): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setCapture(value: Boolean): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
+      
+      inline def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
     }
   }
   
@@ -96,7 +86,33 @@ object anon {
     def load(href: String): Unit = js.native
     
     def submit(target: SubmitTarget): Unit = js.native
-    def submit(target: SubmitTarget, options: OmitSubmitOptionsreplace): Unit = js.native
+    def submit(target: SubmitTarget, options: OmitSubmitOptionsreplacep): Unit = js.native
+  }
+  
+  trait GetKey extends StObject {
+    
+    var getKey: js.UndefOr[GetScrollRestorationKeyFunction] = js.undefined
+    
+    var storageKey: js.UndefOr[String] = js.undefined
+  }
+  object GetKey {
+    
+    inline def apply(): GetKey = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[GetKey]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetKey] (val x: Self) extends AnyVal {
+      
+      inline def setGetKey(value: (/* location */ Location, /* matches */ js.Array[UseMatchesMatch]) => String | Null): Self = StObject.set(x, "getKey", js.Any.fromFunction2(value))
+      
+      inline def setGetKeyUndefined: Self = StObject.set(x, "getKey", js.undefined)
+      
+      inline def setStorageKey(value: String): Self = StObject.set(x, "storageKey", value.asInstanceOf[js.Any])
+      
+      inline def setStorageKeyUndefined: Self = StObject.set(x, "storageKey", js.undefined)
+    }
   }
   
   trait IsActive extends StObject {
@@ -121,26 +137,48 @@ object anon {
     }
   }
   
-  /* Inlined std.Omit<react-router-dom.react-router-dom/dist/dom.SubmitOptions, 'replace'> */
-  trait OmitSubmitOptionsreplace extends StObject {
+  trait Message extends StObject {
+    
+    var message: String
+    
+    var when: Boolean
+  }
+  object Message {
+    
+    inline def apply(message: String, when: Boolean): Message = {
+      val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], when = when.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Message]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
+      
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      
+      inline def setWhen(value: Boolean): Self = StObject.set(x, "when", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  /* Inlined std.Omit<react-router-dom.react-router-dom/dist/dom.SubmitOptions, 'replace' | 'preventScrollReset'> */
+  trait OmitSubmitOptionsreplacep extends StObject {
     
     var action: js.UndefOr[String] = js.undefined
     
     var encType: js.UndefOr[FormEncType] = js.undefined
     
-    var method: js.UndefOr[FormMethod] = js.undefined
+    var method: js.UndefOr[HTMLFormMethod] = js.undefined
     
     var relative: js.UndefOr[RelativeRoutingType] = js.undefined
   }
-  object OmitSubmitOptionsreplace {
+  object OmitSubmitOptionsreplacep {
     
-    inline def apply(): OmitSubmitOptionsreplace = {
+    inline def apply(): OmitSubmitOptionsreplacep = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[OmitSubmitOptionsreplace]
+      __obj.asInstanceOf[OmitSubmitOptionsreplacep]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: OmitSubmitOptionsreplace] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: OmitSubmitOptionsreplacep] (val x: Self) extends AnyVal {
       
       inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -150,7 +188,7 @@ object anon {
       
       inline def setEncTypeUndefined: Self = StObject.set(x, "encType", js.undefined)
       
-      inline def setMethod(value: FormMethod): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: HTMLFormMethod): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
       inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
       
@@ -202,6 +240,27 @@ object anon {
       inline def setState(value: Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
       inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    }
+  }
+  
+  /* Inlined std.Partial<std.Omit<@remix-run/router.@remix-run/router.FutureConfig, 'v7_prependBasename'>> */
+  trait PartialOmitFutureConfigv7 extends StObject {
+    
+    var v7_normalizeFormMethod: js.UndefOr[Boolean] = js.undefined
+  }
+  object PartialOmitFutureConfigv7 {
+    
+    inline def apply(): PartialOmitFutureConfigv7 = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[PartialOmitFutureConfigv7]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialOmitFutureConfigv7] (val x: Self) extends AnyVal {
+      
+      inline def setV7_normalizeFormMethod(value: Boolean): Self = StObject.set(x, "v7_normalizeFormMethod", value.asInstanceOf[js.Any])
+      
+      inline def setV7_normalizeFormMethodUndefined: Self = StObject.set(x, "v7_normalizeFormMethod", js.undefined)
     }
   }
   

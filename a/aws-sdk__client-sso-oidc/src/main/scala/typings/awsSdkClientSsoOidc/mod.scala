@@ -11,12 +11,6 @@ import typings.awsSdkClientSsoOidc.anon.ExceptionOptionTypeUnsupp
 import typings.awsSdkClientSsoOidc.distTypesCommandsCreateTokenCommandMod.CreateTokenCommandInput
 import typings.awsSdkClientSsoOidc.distTypesCommandsRegisterClientCommandMod.RegisterClientCommandInput
 import typings.awsSdkClientSsoOidc.distTypesCommandsStartDeviceAuthorizationCommandMod.StartDeviceAuthorizationCommandInput
-import typings.awsSdkClientSsoOidc.distTypesModelsModels0Mod.CreateTokenRequest
-import typings.awsSdkClientSsoOidc.distTypesModelsModels0Mod.CreateTokenResponse
-import typings.awsSdkClientSsoOidc.distTypesModelsModels0Mod.RegisterClientRequest
-import typings.awsSdkClientSsoOidc.distTypesModelsModels0Mod.RegisterClientResponse
-import typings.awsSdkClientSsoOidc.distTypesModelsModels0Mod.StartDeviceAuthorizationRequest
-import typings.awsSdkClientSsoOidc.distTypesModelsModels0Mod.StartDeviceAuthorizationResponse
 import typings.awsSdkClientSsoOidc.distTypesSsooidcclientMod.SSOOIDCClientConfig
 import typings.awsSdkMiddlewareEndpoint.distTypesTypesMod.EndpointParameterInstructions
 import typings.awsSdkSmithyClient.distTypesExceptionsMod.ServiceExceptionOptions
@@ -25,10 +19,6 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
-  
-  @JSImport("@aws-sdk/client-sso-oidc", JSImport.Namespace)
-  @js.native
-  val ^ : js.Any = js.native
   
   @JSImport("@aws-sdk/client-sso-oidc", "AccessDeniedException")
   @js.native
@@ -54,6 +44,9 @@ object mod {
   @js.native
   open class CreateTokenCommand protected ()
     extends typings.awsSdkClientSsoOidc.distTypesCommandsMod.CreateTokenCommand {
+    /**
+      * @public
+      */
     def this(input: CreateTokenCommandInput) = this()
   }
   /* static members */
@@ -65,10 +58,6 @@ object mod {
     
     inline def getEndpointParameterInstructions(): EndpointParameterInstructions = ^.asInstanceOf[js.Dynamic].applyDynamic("getEndpointParameterInstructions")().asInstanceOf[EndpointParameterInstructions]
   }
-  
-  inline def CreateTokenRequestFilterSensitiveLog(obj: CreateTokenRequest): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateTokenRequestFilterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[Any]
-  
-  inline def CreateTokenResponseFilterSensitiveLog(obj: CreateTokenResponse): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateTokenResponseFilterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   @JSImport("@aws-sdk/client-sso-oidc", "ExpiredTokenException")
   @js.native
@@ -144,6 +133,9 @@ object mod {
   @js.native
   open class RegisterClientCommand protected ()
     extends typings.awsSdkClientSsoOidc.distTypesCommandsMod.RegisterClientCommand {
+    /**
+      * @public
+      */
     def this(input: RegisterClientCommandInput) = this()
   }
   /* static members */
@@ -155,10 +147,6 @@ object mod {
     
     inline def getEndpointParameterInstructions(): EndpointParameterInstructions = ^.asInstanceOf[js.Dynamic].applyDynamic("getEndpointParameterInstructions")().asInstanceOf[EndpointParameterInstructions]
   }
-  
-  inline def RegisterClientRequestFilterSensitiveLog(obj: RegisterClientRequest): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("RegisterClientRequestFilterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[Any]
-  
-  inline def RegisterClientResponseFilterSensitiveLog(obj: RegisterClientResponse): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("RegisterClientResponseFilterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   @JSImport("@aws-sdk/client-sso-oidc", "SSOOIDC")
   @js.native
@@ -198,6 +186,9 @@ object mod {
   @js.native
   open class StartDeviceAuthorizationCommand protected ()
     extends typings.awsSdkClientSsoOidc.distTypesCommandsMod.StartDeviceAuthorizationCommand {
+    /**
+      * @public
+      */
     def this(input: StartDeviceAuthorizationCommandInput) = this()
   }
   /* static members */
@@ -209,10 +200,6 @@ object mod {
     
     inline def getEndpointParameterInstructions(): EndpointParameterInstructions = ^.asInstanceOf[js.Dynamic].applyDynamic("getEndpointParameterInstructions")().asInstanceOf[EndpointParameterInstructions]
   }
-  
-  inline def StartDeviceAuthorizationRequestFilterSensitiveLog(obj: StartDeviceAuthorizationRequest): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("StartDeviceAuthorizationRequestFilterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[Any]
-  
-  inline def StartDeviceAuthorizationResponseFilterSensitiveLog(obj: StartDeviceAuthorizationResponse): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("StartDeviceAuthorizationResponseFilterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[Any]
   
   @JSImport("@aws-sdk/client-sso-oidc", "UnauthorizedClientException")
   @js.native

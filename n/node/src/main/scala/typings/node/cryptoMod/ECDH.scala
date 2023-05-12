@@ -20,11 +20,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Instances of the `ECDH` class can be created using the {@link createECDH} function.
   *
   * ```js
-  * import assert from 'assert';
+  * import assert from 'node:assert';
   *
   * const {
-  *   createECDH
-  * } = await import('crypto');
+  *   createECDH,
+  * } = await import('node:crypto');
   *
   * // Generate Alice's keys...
   * const alice = createECDH('secp521r1');
@@ -101,7 +101,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * If `encoding` is specified, a string is returned; otherwise a `Buffer` is
     * returned.
     * @since v0.11.14
-    * @param [encoding] The `encoding` of the return value.
+    * @param encoding The `encoding` of the return value.
     * @param [format='uncompressed']
     * @return The EC Diffie-Hellman public key in the specified `encoding` and `format`.
     */
@@ -151,8 +151,8 @@ object ECDH {
     * ```js
     * const {
     *   createECDH,
-    *   ECDH
-    * } = await import('crypto');
+    *   ECDH,
+    * } = await import('node:crypto');
     *
     * const ecdh = createECDH('secp256k1');
     * ecdh.generateKeys();

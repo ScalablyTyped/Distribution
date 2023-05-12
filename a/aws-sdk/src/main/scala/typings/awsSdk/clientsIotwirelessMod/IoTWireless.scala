@@ -407,6 +407,22 @@ trait IoTWireless extends Service {
   ): Request[DeleteWirelessDeviceResponse, AWSError] = js.native
   
   /**
+    * Delete an import task.
+    */
+  def deleteWirelessDeviceImportTask(): Request[DeleteWirelessDeviceImportTaskResponse, AWSError] = js.native
+  def deleteWirelessDeviceImportTask(
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteWirelessDeviceImportTaskResponse, Unit]
+  ): Request[DeleteWirelessDeviceImportTaskResponse, AWSError] = js.native
+  /**
+    * Delete an import task.
+    */
+  def deleteWirelessDeviceImportTask(params: DeleteWirelessDeviceImportTaskRequest): Request[DeleteWirelessDeviceImportTaskResponse, AWSError] = js.native
+  def deleteWirelessDeviceImportTask(
+    params: DeleteWirelessDeviceImportTaskRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteWirelessDeviceImportTaskResponse, Unit]
+  ): Request[DeleteWirelessDeviceImportTaskResponse, AWSError] = js.native
+  
+  /**
     * Deletes a wireless gateway.
     */
   def deleteWirelessGateway(): Request[DeleteWirelessGatewayResponse, AWSError] = js.native
@@ -449,6 +465,20 @@ trait IoTWireless extends Service {
     params: DeleteWirelessGatewayTaskDefinitionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteWirelessGatewayTaskDefinitionResponse, Unit]
   ): Request[DeleteWirelessGatewayTaskDefinitionResponse, AWSError] = js.native
+  
+  /**
+    * Deregister a wireless device from AWS IoT Wireless.
+    */
+  def deregisterWirelessDevice(): Request[DeregisterWirelessDeviceResponse, AWSError] = js.native
+  def deregisterWirelessDevice(callback: js.Function2[/* err */ AWSError, /* data */ DeregisterWirelessDeviceResponse, Unit]): Request[DeregisterWirelessDeviceResponse, AWSError] = js.native
+  /**
+    * Deregister a wireless device from AWS IoT Wireless.
+    */
+  def deregisterWirelessDevice(params: DeregisterWirelessDeviceRequest): Request[DeregisterWirelessDeviceResponse, AWSError] = js.native
+  def deregisterWirelessDevice(
+    params: DeregisterWirelessDeviceRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeregisterWirelessDeviceResponse, Unit]
+  ): Request[DeregisterWirelessDeviceResponse, AWSError] = js.native
   
   /**
     * Disassociates your AWS account from a partner account. If PartnerAccountId and PartnerType are null, disassociates your AWS account from all partner accounts.
@@ -717,12 +747,12 @@ trait IoTWireless extends Service {
   ): Request[GetPartnerAccountResponse, AWSError] = js.native
   
   /**
-    * Get the position information for a given resource.
+    * Get the position information for a given resource.  This action is no longer supported. Calls to retrieve the position information should use the GetResourcePosition API operation instead. 
     */
   def getPosition(): Request[GetPositionResponse, AWSError] = js.native
   def getPosition(callback: js.Function2[/* err */ AWSError, /* data */ GetPositionResponse, Unit]): Request[GetPositionResponse, AWSError] = js.native
   /**
-    * Get the position information for a given resource.
+    * Get the position information for a given resource.  This action is no longer supported. Calls to retrieve the position information should use the GetResourcePosition API operation instead. 
     */
   def getPosition(params: GetPositionRequest): Request[GetPositionResponse, AWSError] = js.native
   def getPosition(
@@ -731,18 +761,32 @@ trait IoTWireless extends Service {
   ): Request[GetPositionResponse, AWSError] = js.native
   
   /**
-    * Get position configuration for a given resource.
+    * Get position configuration for a given resource.  This action is no longer supported. Calls to retrieve the position configuration should use the GetResourcePosition API operation instead. 
     */
   def getPositionConfiguration(): Request[GetPositionConfigurationResponse, AWSError] = js.native
   def getPositionConfiguration(callback: js.Function2[/* err */ AWSError, /* data */ GetPositionConfigurationResponse, Unit]): Request[GetPositionConfigurationResponse, AWSError] = js.native
   /**
-    * Get position configuration for a given resource.
+    * Get position configuration for a given resource.  This action is no longer supported. Calls to retrieve the position configuration should use the GetResourcePosition API operation instead. 
     */
   def getPositionConfiguration(params: GetPositionConfigurationRequest): Request[GetPositionConfigurationResponse, AWSError] = js.native
   def getPositionConfiguration(
     params: GetPositionConfigurationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetPositionConfigurationResponse, Unit]
   ): Request[GetPositionConfigurationResponse, AWSError] = js.native
+  
+  /**
+    * Get estimated position information as a payload in GeoJSON format. The payload measurement data is resolved using solvers that are provided by third-party vendors.
+    */
+  def getPositionEstimate(): Request[GetPositionEstimateResponse, AWSError] = js.native
+  def getPositionEstimate(callback: js.Function2[/* err */ AWSError, /* data */ GetPositionEstimateResponse, Unit]): Request[GetPositionEstimateResponse, AWSError] = js.native
+  /**
+    * Get estimated position information as a payload in GeoJSON format. The payload measurement data is resolved using solvers that are provided by third-party vendors.
+    */
+  def getPositionEstimate(params: GetPositionEstimateRequest): Request[GetPositionEstimateResponse, AWSError] = js.native
+  def getPositionEstimate(
+    params: GetPositionEstimateRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetPositionEstimateResponse, Unit]
+  ): Request[GetPositionEstimateResponse, AWSError] = js.native
   
   /**
     * Get the event configuration for a particular resource identifier.
@@ -771,6 +815,20 @@ trait IoTWireless extends Service {
     params: GetResourceLogLevelRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetResourceLogLevelResponse, Unit]
   ): Request[GetResourceLogLevelResponse, AWSError] = js.native
+  
+  /**
+    * Get the position information for a given wireless device or a wireless gateway resource. The position information uses the  World Geodetic System (WGS84).
+    */
+  def getResourcePosition(): Request[GetResourcePositionResponse, AWSError] = js.native
+  def getResourcePosition(callback: js.Function2[/* err */ AWSError, /* data */ GetResourcePositionResponse, Unit]): Request[GetResourcePositionResponse, AWSError] = js.native
+  /**
+    * Get the position information for a given wireless device or a wireless gateway resource. The position information uses the  World Geodetic System (WGS84).
+    */
+  def getResourcePosition(params: GetResourcePositionRequest): Request[GetResourcePositionResponse, AWSError] = js.native
+  def getResourcePosition(
+    params: GetResourcePositionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetResourcePositionResponse, Unit]
+  ): Request[GetResourcePositionResponse, AWSError] = js.native
   
   /**
     * Gets the account-specific endpoint for Configuration and Update Server (CUPS) protocol or LoRaWAN Network Server (LNS) connections.
@@ -813,6 +871,20 @@ trait IoTWireless extends Service {
     params: GetWirelessDeviceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetWirelessDeviceResponse, Unit]
   ): Request[GetWirelessDeviceResponse, AWSError] = js.native
+  
+  /**
+    * Get information about an import task and count of device onboarding summary information for the import task.
+    */
+  def getWirelessDeviceImportTask(): Request[GetWirelessDeviceImportTaskResponse, AWSError] = js.native
+  def getWirelessDeviceImportTask(callback: js.Function2[/* err */ AWSError, /* data */ GetWirelessDeviceImportTaskResponse, Unit]): Request[GetWirelessDeviceImportTaskResponse, AWSError] = js.native
+  /**
+    * Get information about an import task and count of device onboarding summary information for the import task.
+    */
+  def getWirelessDeviceImportTask(params: GetWirelessDeviceImportTaskRequest): Request[GetWirelessDeviceImportTaskResponse, AWSError] = js.native
+  def getWirelessDeviceImportTask(
+    params: GetWirelessDeviceImportTaskRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetWirelessDeviceImportTaskResponse, Unit]
+  ): Request[GetWirelessDeviceImportTaskResponse, AWSError] = js.native
   
   /**
     * Gets operating information about a wireless device.
@@ -945,6 +1017,22 @@ trait IoTWireless extends Service {
   ): Request[ListDeviceProfilesResponse, AWSError] = js.native
   
   /**
+    * List the Sidewalk devices in an import task and their onboarding status.
+    */
+  def listDevicesForWirelessDeviceImportTask(): Request[ListDevicesForWirelessDeviceImportTaskResponse, AWSError] = js.native
+  def listDevicesForWirelessDeviceImportTask(
+    callback: js.Function2[/* err */ AWSError, /* data */ ListDevicesForWirelessDeviceImportTaskResponse, Unit]
+  ): Request[ListDevicesForWirelessDeviceImportTaskResponse, AWSError] = js.native
+  /**
+    * List the Sidewalk devices in an import task and their onboarding status.
+    */
+  def listDevicesForWirelessDeviceImportTask(params: ListDevicesForWirelessDeviceImportTaskRequest): Request[ListDevicesForWirelessDeviceImportTaskResponse, AWSError] = js.native
+  def listDevicesForWirelessDeviceImportTask(
+    params: ListDevicesForWirelessDeviceImportTaskRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListDevicesForWirelessDeviceImportTaskResponse, Unit]
+  ): Request[ListDevicesForWirelessDeviceImportTaskResponse, AWSError] = js.native
+  
+  /**
     * List event configurations where at least one event topic has been enabled.
     */
   def listEventConfigurations(): Request[ListEventConfigurationsResponse, AWSError] = js.native
@@ -1033,12 +1121,12 @@ trait IoTWireless extends Service {
   ): Request[ListPartnerAccountsResponse, AWSError] = js.native
   
   /**
-    * List position configurations for a given resource, such as positioning solvers.
+    * List position configurations for a given resource, such as positioning solvers.  This action is no longer supported. Calls to retrieve position information should use the GetResourcePosition API operation instead. 
     */
   def listPositionConfigurations(): Request[ListPositionConfigurationsResponse, AWSError] = js.native
   def listPositionConfigurations(callback: js.Function2[/* err */ AWSError, /* data */ ListPositionConfigurationsResponse, Unit]): Request[ListPositionConfigurationsResponse, AWSError] = js.native
   /**
-    * List position configurations for a given resource, such as positioning solvers.
+    * List position configurations for a given resource, such as positioning solvers.  This action is no longer supported. Calls to retrieve position information should use the GetResourcePosition API operation instead. 
     */
   def listPositionConfigurations(params: ListPositionConfigurationsRequest): Request[ListPositionConfigurationsResponse, AWSError] = js.native
   def listPositionConfigurations(
@@ -1089,6 +1177,20 @@ trait IoTWireless extends Service {
   ): Request[ListTagsForResourceResponse, AWSError] = js.native
   
   /**
+    * List wireless devices that have been added to an import task.
+    */
+  def listWirelessDeviceImportTasks(): Request[ListWirelessDeviceImportTasksResponse, AWSError] = js.native
+  def listWirelessDeviceImportTasks(callback: js.Function2[/* err */ AWSError, /* data */ ListWirelessDeviceImportTasksResponse, Unit]): Request[ListWirelessDeviceImportTasksResponse, AWSError] = js.native
+  /**
+    * List wireless devices that have been added to an import task.
+    */
+  def listWirelessDeviceImportTasks(params: ListWirelessDeviceImportTasksRequest): Request[ListWirelessDeviceImportTasksResponse, AWSError] = js.native
+  def listWirelessDeviceImportTasks(
+    params: ListWirelessDeviceImportTasksRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListWirelessDeviceImportTasksResponse, Unit]
+  ): Request[ListWirelessDeviceImportTasksResponse, AWSError] = js.native
+  
+  /**
     * Lists the wireless devices registered to your AWS account.
     */
   def listWirelessDevices(): Request[ListWirelessDevicesResponse, AWSError] = js.native
@@ -1133,12 +1235,12 @@ trait IoTWireless extends Service {
   ): Request[ListWirelessGatewaysResponse, AWSError] = js.native
   
   /**
-    * Put position configuration for a given resource.
+    * Put position configuration for a given resource.  This action is no longer supported. Calls to update the position configuration should use the UpdateResourcePosition API operation instead. 
     */
   def putPositionConfiguration(): Request[PutPositionConfigurationResponse, AWSError] = js.native
   def putPositionConfiguration(callback: js.Function2[/* err */ AWSError, /* data */ PutPositionConfigurationResponse, Unit]): Request[PutPositionConfigurationResponse, AWSError] = js.native
   /**
-    * Put position configuration for a given resource.
+    * Put position configuration for a given resource.  This action is no longer supported. Calls to update the position configuration should use the UpdateResourcePosition API operation instead. 
     */
   def putPositionConfiguration(params: PutPositionConfigurationRequest): Request[PutPositionConfigurationResponse, AWSError] = js.native
   def putPositionConfiguration(
@@ -1293,6 +1395,36 @@ trait IoTWireless extends Service {
   ): Request[StartMulticastGroupSessionResponse, AWSError] = js.native
   
   /**
+    * Start import task for a single wireless device.
+    */
+  def startSingleWirelessDeviceImportTask(): Request[StartSingleWirelessDeviceImportTaskResponse, AWSError] = js.native
+  def startSingleWirelessDeviceImportTask(
+    callback: js.Function2[/* err */ AWSError, /* data */ StartSingleWirelessDeviceImportTaskResponse, Unit]
+  ): Request[StartSingleWirelessDeviceImportTaskResponse, AWSError] = js.native
+  /**
+    * Start import task for a single wireless device.
+    */
+  def startSingleWirelessDeviceImportTask(params: StartSingleWirelessDeviceImportTaskRequest): Request[StartSingleWirelessDeviceImportTaskResponse, AWSError] = js.native
+  def startSingleWirelessDeviceImportTask(
+    params: StartSingleWirelessDeviceImportTaskRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ StartSingleWirelessDeviceImportTaskResponse, Unit]
+  ): Request[StartSingleWirelessDeviceImportTaskResponse, AWSError] = js.native
+  
+  /**
+    * Start import task for provisioning Sidewalk devices in bulk using an S3 CSV file.
+    */
+  def startWirelessDeviceImportTask(): Request[StartWirelessDeviceImportTaskResponse, AWSError] = js.native
+  def startWirelessDeviceImportTask(callback: js.Function2[/* err */ AWSError, /* data */ StartWirelessDeviceImportTaskResponse, Unit]): Request[StartWirelessDeviceImportTaskResponse, AWSError] = js.native
+  /**
+    * Start import task for provisioning Sidewalk devices in bulk using an S3 CSV file.
+    */
+  def startWirelessDeviceImportTask(params: StartWirelessDeviceImportTaskRequest): Request[StartWirelessDeviceImportTaskResponse, AWSError] = js.native
+  def startWirelessDeviceImportTask(
+    params: StartWirelessDeviceImportTaskRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ StartWirelessDeviceImportTaskResponse, Unit]
+  ): Request[StartWirelessDeviceImportTaskResponse, AWSError] = js.native
+  
+  /**
     * Adds a tag to a resource.
     */
   def tagResource(): Request[TagResourceResponse, AWSError] = js.native
@@ -1439,12 +1571,12 @@ trait IoTWireless extends Service {
   ): Request[UpdatePartnerAccountResponse, AWSError] = js.native
   
   /**
-    * Update the position information of a resource.
+    * Update the position information of a resource.  This action is no longer supported. Calls to update the position information should use the UpdateResourcePosition API operation instead. 
     */
   def updatePosition(): Request[UpdatePositionResponse, AWSError] = js.native
   def updatePosition(callback: js.Function2[/* err */ AWSError, /* data */ UpdatePositionResponse, Unit]): Request[UpdatePositionResponse, AWSError] = js.native
   /**
-    * Update the position information of a resource.
+    * Update the position information of a resource.  This action is no longer supported. Calls to update the position information should use the UpdateResourcePosition API operation instead. 
     */
   def updatePosition(params: UpdatePositionRequest): Request[UpdatePositionResponse, AWSError] = js.native
   def updatePosition(
@@ -1469,6 +1601,20 @@ trait IoTWireless extends Service {
   ): Request[UpdateResourceEventConfigurationResponse, AWSError] = js.native
   
   /**
+    * Update the position information of a given wireless device or a wireless gateway resource. The position coordinates are based on the  World Geodetic System (WGS84).
+    */
+  def updateResourcePosition(): Request[UpdateResourcePositionResponse, AWSError] = js.native
+  def updateResourcePosition(callback: js.Function2[/* err */ AWSError, /* data */ UpdateResourcePositionResponse, Unit]): Request[UpdateResourcePositionResponse, AWSError] = js.native
+  /**
+    * Update the position information of a given wireless device or a wireless gateway resource. The position coordinates are based on the  World Geodetic System (WGS84).
+    */
+  def updateResourcePosition(params: UpdateResourcePositionRequest): Request[UpdateResourcePositionResponse, AWSError] = js.native
+  def updateResourcePosition(
+    params: UpdateResourcePositionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateResourcePositionResponse, Unit]
+  ): Request[UpdateResourcePositionResponse, AWSError] = js.native
+  
+  /**
     * Updates properties of a wireless device.
     */
   def updateWirelessDevice(): Request[UpdateWirelessDeviceResponse, AWSError] = js.native
@@ -1481,6 +1627,22 @@ trait IoTWireless extends Service {
     params: UpdateWirelessDeviceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateWirelessDeviceResponse, Unit]
   ): Request[UpdateWirelessDeviceResponse, AWSError] = js.native
+  
+  /**
+    * Update an import task to add more devices to the task.
+    */
+  def updateWirelessDeviceImportTask(): Request[UpdateWirelessDeviceImportTaskResponse, AWSError] = js.native
+  def updateWirelessDeviceImportTask(
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateWirelessDeviceImportTaskResponse, Unit]
+  ): Request[UpdateWirelessDeviceImportTaskResponse, AWSError] = js.native
+  /**
+    * Update an import task to add more devices to the task.
+    */
+  def updateWirelessDeviceImportTask(params: UpdateWirelessDeviceImportTaskRequest): Request[UpdateWirelessDeviceImportTaskResponse, AWSError] = js.native
+  def updateWirelessDeviceImportTask(
+    params: UpdateWirelessDeviceImportTaskRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateWirelessDeviceImportTaskResponse, Unit]
+  ): Request[UpdateWirelessDeviceImportTaskResponse, AWSError] = js.native
   
   /**
     * Updates properties of a wireless gateway.

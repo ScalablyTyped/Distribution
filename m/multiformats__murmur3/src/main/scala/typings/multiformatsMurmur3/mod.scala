@@ -5,6 +5,7 @@ import typings.multiformatsMurmur3.multiformatsMurmur3Ints.`34`
 import typings.multiformatsMurmur3.multiformatsMurmur3Ints.`35`
 import typings.multiformatsMurmur3.multiformatsMurmur3Strings.`murmur3-128`
 import typings.multiformatsMurmur3.multiformatsMurmur3Strings.`murmur3-32`
+import typings.multiformatsMurmur3.multiformatsMurmur3Strings.`murmur3-x64-64`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,4 +19,8 @@ object mod {
   @JSImport("@multiformats/murmur3", "murmur332")
   @js.native
   val murmur332: Hasher[`murmur3-32`, `35`] = js.native
+  
+  @JSImport("@multiformats/murmur3", "murmur364")
+  @js.native
+  val murmur364: Hasher[`murmur3-x64-64`, `34`] = js.native
 }

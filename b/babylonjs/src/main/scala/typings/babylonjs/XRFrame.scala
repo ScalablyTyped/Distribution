@@ -41,6 +41,8 @@ trait XRFrame extends StObject {
     ]
   ] = js.undefined
   
+  def getDepthInformation(view: XRView): js.UndefOr[XRCPUDepthInformation]
+  
   def getHitTestResults(hitTestSource: XRHitTestSource): js.Array[XRHitTestResult]
   
   def getHitTestResultsForTransientInput(hitTestSource: XRTransientInputHitTestSource): js.Array[XRTransientInputHitTestResult]
@@ -84,6 +86,7 @@ trait XRFrame extends StObject {
 object XRFrame {
   
   inline def apply(
+    getDepthInformation: XRView => js.UndefOr[XRCPUDepthInformation],
     getHitTestResults: XRHitTestSource => js.Array[XRHitTestResult],
     getHitTestResultsForTransientInput: XRTransientInputHitTestSource => js.Array[XRTransientInputHitTestResult],
     getLightEstimate: XRLightProbe => XRLightEstimate,
@@ -91,7 +94,7 @@ object XRFrame {
     getViewerPose: XRReferenceSpace => js.UndefOr[XRViewerPose],
     session: XRSession
   ): XRFrame = {
-    val __obj = js.Dynamic.literal(getHitTestResults = js.Any.fromFunction1(getHitTestResults), getHitTestResultsForTransientInput = js.Any.fromFunction1(getHitTestResultsForTransientInput), getLightEstimate = js.Any.fromFunction1(getLightEstimate), getPose = js.Any.fromFunction2(getPose), getViewerPose = js.Any.fromFunction1(getViewerPose), session = session.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(getDepthInformation = js.Any.fromFunction1(getDepthInformation), getHitTestResults = js.Any.fromFunction1(getHitTestResults), getHitTestResultsForTransientInput = js.Any.fromFunction1(getHitTestResultsForTransientInput), getLightEstimate = js.Any.fromFunction1(getLightEstimate), getPose = js.Any.fromFunction2(getPose), getViewerPose = js.Any.fromFunction1(getViewerPose), session = session.asInstanceOf[js.Any])
     __obj.asInstanceOf[XRFrame]
   }
   
@@ -123,6 +126,8 @@ object XRFrame {
     ): Self = StObject.set(x, "fillPoses", js.Any.fromFunction3(value))
     
     inline def setFillPosesUndefined: Self = StObject.set(x, "fillPoses", js.undefined)
+    
+    inline def setGetDepthInformation(value: XRView => js.UndefOr[XRCPUDepthInformation]): Self = StObject.set(x, "getDepthInformation", js.Any.fromFunction1(value))
     
     inline def setGetHitTestResults(value: XRHitTestSource => js.Array[XRHitTestResult]): Self = StObject.set(x, "getHitTestResults", js.Any.fromFunction1(value))
     

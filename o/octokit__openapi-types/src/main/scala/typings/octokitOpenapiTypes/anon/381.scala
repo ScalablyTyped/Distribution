@@ -1,25 +1,29 @@
 package typings.octokitOpenapiTypes.anon
 
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.`private`
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.public
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `381` extends StObject {
   
-  /** Response */
-  var `200`: Content360
+  /**
+    * @description Denotes whether an email is publicly visible.
+    * @enum {string}
+    */
+  var visibility: public | `private`
 }
 object `381` {
   
-  inline def apply(`200`: Content360): `381` = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("200")(`200`.asInstanceOf[js.Any])
+  inline def apply(visibility: public | `private`): `381` = {
+    val __obj = js.Dynamic.literal(visibility = visibility.asInstanceOf[js.Any])
     __obj.asInstanceOf[`381`]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: `381`] (val x: Self) extends AnyVal {
     
-    inline def set200(value: Content360): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
+    inline def setVisibility(value: public | `private`): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
   }
 }

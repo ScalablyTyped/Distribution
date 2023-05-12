@@ -32,15 +32,11 @@ object srcNgtscPartialEvaluatorSrcInterpreterMod {
     
     /* private */ var getReference: Any = js.native
     
-    /* private */ var getResolvedEnum: Any = js.native
-    
     /* private */ var host: Any = js.native
     
     /* private */ var stringNameFromPropertyName: Any = js.native
     
     def visit(node: Expression, context: Context): ResolvedValue = js.native
-    
-    /* private */ var visitAmbiguousDeclaration: Any = js.native
     
     /* private */ var visitArrayLiteralExpression: Any = js.native
     
@@ -89,6 +85,8 @@ object srcNgtscPartialEvaluatorSrcInterpreterMod {
     /* private */ var visitTupleType: Any = js.native
     
     /* private */ var visitType: Any = js.native
+    
+    /* private */ var visitTypeQuery: Any = js.native
     
     /* private */ var visitVariableDeclaration: Any = js.native
   }

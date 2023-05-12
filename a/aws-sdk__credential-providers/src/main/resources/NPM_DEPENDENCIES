@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@aws-sdk/credential-providers" : "3.192.0"
+      "@aws-sdk/credential-providers" : "3.332.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@aws-sdk/credential-providers" : "3.192.0"
+      "@aws-sdk/credential-providers" : "3.332.0"
     }
   ],
   "compile-devDependencies" : [

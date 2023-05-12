@@ -42,7 +42,7 @@ trait PaymentNotice
   /**
     * A reference to the payment which is the subject of this notice.
     */
-  var payment: Reference
+  var payment: js.UndefOr[Reference] = js.undefined
   
   /**
     * The date when the above payment action occurred.
@@ -55,14 +55,14 @@ trait PaymentNotice
   var paymentStatus: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
-    * The practitioner who is responsible for the services rendered to the patient.
-    */
-  var provider: js.UndefOr[Reference] = js.undefined
-  
-  /**
     * The party who is notified of the payment status.
     */
   var recipient: Reference
+  
+  /**
+    * The party who reports the payment notice.
+    */
+  var reporter: js.UndefOr[Reference] = js.undefined
   
   /**
     * Reference of resource for which payment is being made.
@@ -88,11 +88,10 @@ object PaymentNotice {
   inline def apply(
     amount: Money,
     created: String,
-    payment: Reference,
     recipient: Reference,
     status: active | cancelled | draft | `entered-in-error`
   ): PaymentNotice = {
-    val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], payment = payment.asInstanceOf[js.Any], recipient = recipient.asInstanceOf[js.Any], resourceType = "PaymentNotice", status = status.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], recipient = recipient.asInstanceOf[js.Any], resourceType = "PaymentNotice", status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaymentNotice]
   }
   
@@ -123,11 +122,13 @@ object PaymentNotice {
     
     inline def setPaymentStatusUndefined: Self = StObject.set(x, "paymentStatus", js.undefined)
     
-    inline def setProvider(value: Reference): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
-    
-    inline def setProviderUndefined: Self = StObject.set(x, "provider", js.undefined)
+    inline def setPaymentUndefined: Self = StObject.set(x, "payment", js.undefined)
     
     inline def setRecipient(value: Reference): Self = StObject.set(x, "recipient", value.asInstanceOf[js.Any])
+    
+    inline def setReporter(value: Reference): Self = StObject.set(x, "reporter", value.asInstanceOf[js.Any])
+    
+    inline def setReporterUndefined: Self = StObject.set(x, "reporter", js.undefined)
     
     inline def setRequest(value: Reference): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     

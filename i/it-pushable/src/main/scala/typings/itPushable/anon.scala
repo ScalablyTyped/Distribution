@@ -23,22 +23,4 @@ object anon {
       inline def setByteLength(value: Double): Self = StObject.set(x, "byteLength", value.asInstanceOf[js.Any])
     }
   }
-  
-  trait Done extends StObject {
-    
-    var done: Boolean
-  }
-  object Done {
-    
-    inline def apply(done: Boolean): Done = {
-      val __obj = js.Dynamic.literal(done = done.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Done]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: Done] (val x: Self) extends AnyVal {
-      
-      inline def setDone(value: Boolean): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
-    }
-  }
 }

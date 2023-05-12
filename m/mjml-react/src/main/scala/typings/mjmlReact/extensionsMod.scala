@@ -18,7 +18,7 @@ object extensionsMod {
     def this(props: Children) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: Children, context: Any) = this()
   }
@@ -30,7 +30,7 @@ object extensionsMod {
     def this(props: Condition) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: Condition, context: Any) = this()
   }
@@ -42,7 +42,7 @@ object extensionsMod {
     def this(props: Html) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: Html, context: Any) = this()
   }
@@ -54,7 +54,7 @@ object extensionsMod {
     def this(props: Src) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: Src, context: Any) = this()
   }
@@ -66,7 +66,7 @@ object extensionsMod {
     def this(props: Children) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: Children, context: Any) = this()
   }

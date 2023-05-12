@@ -34,7 +34,7 @@ trait Deletable extends StObject {
   
   var sarif_id: String
   
-  var tool: Version
+  var tool: GuidName
   
   var url: String
   
@@ -58,7 +58,7 @@ object Deletable {
     results_count: Double,
     rules_count: Double,
     sarif_id: String,
-    tool: Version,
+    tool: GuidName,
     url: String,
     warning: String
   ): Deletable = {
@@ -95,7 +95,7 @@ object Deletable {
     
     inline def setSarif_id(value: String): Self = StObject.set(x, "sarif_id", value.asInstanceOf[js.Any])
     
-    inline def setTool(value: Version): Self = StObject.set(x, "tool", value.asInstanceOf[js.Any])
+    inline def setTool(value: GuidName): Self = StObject.set(x, "tool", value.asInstanceOf[js.Any])
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     

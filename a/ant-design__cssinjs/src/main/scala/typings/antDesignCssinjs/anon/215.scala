@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.BorderTopLeftRadius
+import typings.csstype.mod.Property.MaskBorderRepeat
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,13 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `215` extends StObject {
   
   var value: js.UndefOr[
-    (BorderTopLeftRadius[Double | String]) | (js.Array[
+    MaskBorderRepeat | (js.Array[
       (Extract[
-        js.UndefOr[
-          (BorderTopLeftRadius[Double | String]) | (js.Array[NonNullable[js.UndefOr[BorderTopLeftRadius[Double | String]]]])
-        ], 
+        js.UndefOr[MaskBorderRepeat | js.Array[NonNullable[js.UndefOr[MaskBorderRepeat]]]], 
         String
-      ]) | (NonNullable[js.UndefOr[BorderTopLeftRadius[Double | String]]])
+      ]) | NonNullable[js.UndefOr[MaskBorderRepeat]]
     ])
   ] = js.native
 }

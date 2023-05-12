@@ -56,7 +56,7 @@ trait DeviceUdiCarrier
     * 3) ICCBBA for blood containers: http://hl7.org/fhir/NamingSystem/iccbba-blood-di,
     * 4) ICCBA for other devices: http://hl7.org/fhir/NamingSystem/iccbba-other-di # Informationsstelle für Arzneispezialitäten (IFA GmbH) (EU only): http://hl7.org/fhir/NamingSystem/ifa-gmbh-di.
     */
-  var issuer: js.UndefOr[String] = js.undefined
+  var issuer: String
   
   /**
     * The identity of the authoritative source for UDI generation within a jurisdiction. All UDIs are globally unique within a single namespace with the appropriate repository uri as the system. For example, UDIs of devices managed in the U.S. by the FDA, the value is http://hl7.org/fhir/NamingSystem/us-fda-udi or in the European Union by the European Commission http://hl7.org/fhir/NamingSystem/eu-ec-udi.
@@ -65,8 +65,8 @@ trait DeviceUdiCarrier
 }
 object DeviceUdiCarrier {
   
-  inline def apply(deviceIdentifier: String): DeviceUdiCarrier = {
-    val __obj = js.Dynamic.literal(deviceIdentifier = deviceIdentifier.asInstanceOf[js.Any])
+  inline def apply(deviceIdentifier: String, issuer: String): DeviceUdiCarrier = {
+    val __obj = js.Dynamic.literal(deviceIdentifier = deviceIdentifier.asInstanceOf[js.Any], issuer = issuer.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceUdiCarrier]
   }
   
@@ -88,8 +88,6 @@ object DeviceUdiCarrier {
     inline def setEntryTypeUndefined: Self = StObject.set(x, "entryType", js.undefined)
     
     inline def setIssuer(value: String): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
-    
-    inline def setIssuerUndefined: Self = StObject.set(x, "issuer", js.undefined)
     
     inline def setJurisdiction(value: String): Self = StObject.set(x, "jurisdiction", value.asInstanceOf[js.Any])
     

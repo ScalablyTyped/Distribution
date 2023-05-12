@@ -24,8 +24,12 @@ trait SeriesStatesHoverOptionsObject extends StObject {
   var borderWidth: js.UndefOr[Double] = js.undefined
   
   /**
-    * (Highmaps) The relative brightness of the point when hovered, relative to
-    * the normal point color.
+    * (Highcharts, Highstock, Gantt) How much to brighten the point on
+    * interaction. Requires the main color to be defined in hex or rgb(a)
+    * format.
+    *
+    * In styled mode, the hover brightening is by default replaced with a
+    * fill-opacity set in the `.highcharts-point:hover` rule.
     */
   var brightness: js.UndefOr[Double] = js.undefined
   

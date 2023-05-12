@@ -1,31 +1,51 @@
 package typings.photoshop.domConstantsMod
 
-import typings.photoshop.photoshopStrings.component
-import typings.photoshop.photoshopStrings.maskedAreas
-import typings.photoshop.photoshopStrings.selectedAreas
-import typings.photoshop.photoshopStrings.spot
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Rewritten from type alias, can be one of: 
-  - typings.photoshop.photoshopStrings.component
-  - typings.photoshop.photoshopStrings.maskedAreas
-  - typings.photoshop.photoshopStrings.selectedAreas
-  - typings.photoshop.photoshopStrings.spot
-*/
-trait ChannelType extends StObject
-object ChannelType {
+@js.native
+sealed trait ChannelType extends StObject
+@JSImport("photoshop/dom/Constants", "ChannelType")
+@js.native
+object ChannelType extends StObject {
   
-  /** Specific to document color mode */
-  inline def COMPONENT: component = "component".asInstanceOf[component]
+  @JSBracketAccess
+  def apply(value: String): js.UndefOr[ChannelType & String] = js.native
   
-  /** Alpha channel where color indicates masked area */
-  inline def MASKEDAREA: maskedAreas = "maskedAreas".asInstanceOf[maskedAreas]
+  /**
+    * Specific to document color mode
+    */
+  @js.native
+  sealed trait COMPONENT
+    extends StObject
+       with ChannelType
+  /* "component" */ val COMPONENT: typings.photoshop.domConstantsMod.ChannelType.COMPONENT & String = js.native
   
-  /** Alpha channel where color indicates selected area */
-  inline def SELECTEDAREA: selectedAreas = "selectedAreas".asInstanceOf[selectedAreas]
+  /**
+    * Alpha channel where color indicates masked area
+    */
+  @js.native
+  sealed trait MASKEDAREA
+    extends StObject
+       with ChannelType
+  /* "maskedAreas" */ val MASKEDAREA: typings.photoshop.domConstantsMod.ChannelType.MASKEDAREA & String = js.native
   
-  /** Alpha channel to store a spot color */
-  inline def SPOTCOLOR: spot = "spot".asInstanceOf[spot]
+  /**
+    * Alpha channel where color indicates selected area
+    */
+  @js.native
+  sealed trait SELECTEDAREA
+    extends StObject
+       with ChannelType
+  /* "selectedAreas" */ val SELECTEDAREA: typings.photoshop.domConstantsMod.ChannelType.SELECTEDAREA & String = js.native
+  
+  /**
+    * Alpha channel to store a spot color
+    */
+  @js.native
+  sealed trait SPOTCOLOR
+    extends StObject
+       with ChannelType
+  /* "spot" */ val SPOTCOLOR: typings.photoshop.domConstantsMod.ChannelType.SPOTCOLOR & String = js.native
 }

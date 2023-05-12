@@ -6,11 +6,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait KeyboardButton extends StObject {
   
+  var request_chat: js.UndefOr[KeyboardButtonRequestChat] = js.undefined
+  
   var request_contact: js.UndefOr[Boolean] = js.undefined
   
   var request_location: js.UndefOr[Boolean] = js.undefined
   
   var request_poll: js.UndefOr[KeyboardButtonPollType] = js.undefined
+  
+  var request_user: js.UndefOr[KeyboardButtonRequestUser] = js.undefined
   
   var text: String
   
@@ -26,6 +30,10 @@ object KeyboardButton {
   @scala.inline
   implicit open class MutableBuilder[Self <: KeyboardButton] (val x: Self) extends AnyVal {
     
+    inline def setRequest_chat(value: KeyboardButtonRequestChat): Self = StObject.set(x, "request_chat", value.asInstanceOf[js.Any])
+    
+    inline def setRequest_chatUndefined: Self = StObject.set(x, "request_chat", js.undefined)
+    
     inline def setRequest_contact(value: Boolean): Self = StObject.set(x, "request_contact", value.asInstanceOf[js.Any])
     
     inline def setRequest_contactUndefined: Self = StObject.set(x, "request_contact", js.undefined)
@@ -37,6 +45,10 @@ object KeyboardButton {
     inline def setRequest_poll(value: KeyboardButtonPollType): Self = StObject.set(x, "request_poll", value.asInstanceOf[js.Any])
     
     inline def setRequest_pollUndefined: Self = StObject.set(x, "request_poll", js.undefined)
+    
+    inline def setRequest_user(value: KeyboardButtonRequestUser): Self = StObject.set(x, "request_user", value.asInstanceOf[js.Any])
+    
+    inline def setRequest_userUndefined: Self = StObject.set(x, "request_user", js.undefined)
     
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     

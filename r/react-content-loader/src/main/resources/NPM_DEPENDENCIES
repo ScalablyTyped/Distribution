@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-content-loader" : "6.2.0"
+      "react-content-loader" : "6.2.1"
     }
   ],
   "test-dependencies" : [
     {
-      "react-content-loader" : "6.2.0"
+      "react-content-loader" : "6.2.1"
     }
   ],
   "compile-devDependencies" : [

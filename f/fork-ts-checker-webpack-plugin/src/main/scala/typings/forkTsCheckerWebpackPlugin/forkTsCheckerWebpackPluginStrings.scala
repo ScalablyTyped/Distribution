@@ -1,5 +1,6 @@
 package typings.forkTsCheckerWebpackPlugin
 
+import typings.forkTsCheckerWebpackPlugin.libFormatterFormatterMod.FormatterPathType
 import typings.forkTsCheckerWebpackPlugin.libFormatterFormatterOptionsMod.FormatterType
 import typings.forkTsCheckerWebpackPlugin.libIssueIssueSeverityMod.IssueSeverity
 import org.scalablytyped.runtime.StObject
@@ -9,16 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object forkTsCheckerWebpackPluginStrings {
   
   @js.native
-  sealed trait Dotjs extends StObject
-  inline def Dotjs: Dotjs = ".js".asInstanceOf[Dotjs]
-  
-  @js.native
-  sealed trait Dotts extends StObject
-  inline def Dotts: Dotts = ".ts".asInstanceOf[Dotts]
-  
-  @js.native
-  sealed trait Dottsx extends StObject
-  inline def Dottsx: Dottsx = ".tsx".asInstanceOf[Dottsx]
+  sealed trait absolute
+    extends StObject
+       with FormatterPathType
+  inline def absolute: absolute = "absolute".asInstanceOf[absolute]
   
   @js.native
   sealed trait basic
@@ -55,10 +50,6 @@ object forkTsCheckerWebpackPluginStrings {
   inline def js_ : js_ = "js".asInstanceOf[js_]
   
   @js.native
-  sealed trait line extends StObject
-  inline def line: line = "line".asInstanceOf[line]
-  
-  @js.native
   sealed trait quit extends StObject
   inline def quit: quit = "quit".asInstanceOf[quit]
   
@@ -71,12 +62,14 @@ object forkTsCheckerWebpackPluginStrings {
   inline def reject: reject = "reject".asInstanceOf[reject]
   
   @js.native
-  sealed trait resolve extends StObject
-  inline def resolve: resolve = "resolve".asInstanceOf[resolve]
+  sealed trait relative
+    extends StObject
+       with FormatterPathType
+  inline def relative: relative = "relative".asInstanceOf[relative]
   
   @js.native
-  sealed trait space extends StObject
-  inline def space: space = "space".asInstanceOf[space]
+  sealed trait resolve extends StObject
+  inline def resolve: resolve = "resolve".asInstanceOf[resolve]
   
   @js.native
   sealed trait warning

@@ -420,6 +420,8 @@ trait FactoryDependencies extends StObject {
   
   var lusolveDependencies: FactoryFunctionMap = js.native
   
+  var lyapDependencies: FactoryFunctionMap = js.native
+  
   var madDependencies: FactoryFunctionMap = js.native
   
   var magneticConstantDependencies: FactoryFunctionMap = js.native
@@ -560,6 +562,8 @@ trait FactoryDependencies extends StObject {
   
   var sackurTetrodeDependencies: FactoryFunctionMap = js.native
   
+  var schurDependencies: FactoryFunctionMap = js.native
+  
   var secDependencies: FactoryFunctionMap = js.native
   
   var sechDependencies: FactoryFunctionMap = js.native
@@ -637,6 +641,8 @@ trait FactoryDependencies extends StObject {
   var sumDependencies: FactoryFunctionMap = js.native
   
   var sumTransformDependencies: FactoryFunctionMap = js.native
+  
+  var sylvesterDependencies: FactoryFunctionMap = js.native
   
   var tanDependencies: FactoryFunctionMap = js.native
   

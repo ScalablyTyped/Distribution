@@ -13,12 +13,18 @@ object EncodingType extends StObject {
   @JSBracketAccess
   def apply(value: String): js.UndefOr[EncodingType & String] = js.native
   
+  /**
+    * Binary, radix-64 representation.
+    */
   @js.native
   sealed trait Base64
     extends StObject
        with EncodingType
   /* "base64" */ val Base64: typings.expoFileSystem.buildFileSystemDottypesMod.EncodingType.Base64 & String = js.native
   
+  /**
+    * Standard encoding format.
+    */
   @js.native
   sealed trait UTF8
     extends StObject

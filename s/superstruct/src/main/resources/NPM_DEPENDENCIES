@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "superstruct" : "0.16.7"
+      "superstruct" : "1.0.3"
     }
   ],
   "test-dependencies" : [
     {
-      "superstruct" : "0.16.7"
+      "superstruct" : "1.0.3"
     }
   ],
   "compile-devDependencies" : [

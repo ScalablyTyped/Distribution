@@ -14,8 +14,8 @@ object CommentThreadCollapsibleState extends StObject {
   def apply(value: Double): js.UndefOr[CommentThreadCollapsibleState & Double] = js.native
   
   /**
-    * Determines an item is collapsed
-    */
+  		 * Determines an item is collapsed
+  		 */
   @js.native
   sealed trait Collapsed
     extends StObject
@@ -23,8 +23,8 @@ object CommentThreadCollapsibleState extends StObject {
   /* 0 */ val Collapsed: typings.vscode.mod.CommentThreadCollapsibleState.Collapsed & Double = js.native
   
   /**
-    * Determines an item is expanded
-    */
+  		 * Determines an item is expanded
+  		 */
   @js.native
   sealed trait Expanded
     extends StObject

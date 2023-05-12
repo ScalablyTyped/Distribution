@@ -14,7 +14,7 @@ object srcMod {
     def this(props: VictoryVoronoiProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: VictoryVoronoiProps, context: Any) = this()
   }
@@ -25,7 +25,7 @@ object srcMod {
     def this(props: VoronoiProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: VoronoiProps, context: Any) = this()
   }

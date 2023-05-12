@@ -9,6 +9,11 @@ trait HyperParameterTuningJobSearchEntity extends StObject {
   var BestTrainingJob: js.UndefOr[HyperParameterTrainingJobSummary] = js.undefined
   
   /**
+    * The total amount of resources consumed by a hyperparameter tuning job.
+    */
+  var ConsumedResources: js.UndefOr[HyperParameterTuningJobConsumedResources] = js.undefined
+  
+  /**
     * The time that a hyperparameter tuning job was created.
     */
   var CreationTime: js.UndefOr[js.Date] = js.undefined
@@ -63,6 +68,11 @@ trait HyperParameterTuningJobSearchEntity extends StObject {
   
   var TrainingJobStatusCounters: js.UndefOr[typings.awsSdk.clientsSagemakerMod.TrainingJobStatusCounters] = js.undefined
   
+  /**
+    * Information about either a current or completed hyperparameter tuning job.
+    */
+  var TuningJobCompletionDetails: js.UndefOr[HyperParameterTuningJobCompletionDetails] = js.undefined
+  
   var WarmStartConfig: js.UndefOr[HyperParameterTuningJobWarmStartConfig] = js.undefined
 }
 object HyperParameterTuningJobSearchEntity {
@@ -78,6 +88,10 @@ object HyperParameterTuningJobSearchEntity {
     inline def setBestTrainingJob(value: HyperParameterTrainingJobSummary): Self = StObject.set(x, "BestTrainingJob", value.asInstanceOf[js.Any])
     
     inline def setBestTrainingJobUndefined: Self = StObject.set(x, "BestTrainingJob", js.undefined)
+    
+    inline def setConsumedResources(value: HyperParameterTuningJobConsumedResources): Self = StObject.set(x, "ConsumedResources", value.asInstanceOf[js.Any])
+    
+    inline def setConsumedResourcesUndefined: Self = StObject.set(x, "ConsumedResources", js.undefined)
     
     inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
@@ -138,6 +152,10 @@ object HyperParameterTuningJobSearchEntity {
     inline def setTrainingJobStatusCounters(value: TrainingJobStatusCounters): Self = StObject.set(x, "TrainingJobStatusCounters", value.asInstanceOf[js.Any])
     
     inline def setTrainingJobStatusCountersUndefined: Self = StObject.set(x, "TrainingJobStatusCounters", js.undefined)
+    
+    inline def setTuningJobCompletionDetails(value: HyperParameterTuningJobCompletionDetails): Self = StObject.set(x, "TuningJobCompletionDetails", value.asInstanceOf[js.Any])
+    
+    inline def setTuningJobCompletionDetailsUndefined: Self = StObject.set(x, "TuningJobCompletionDetails", js.undefined)
     
     inline def setWarmStartConfig(value: HyperParameterTuningJobWarmStartConfig): Self = StObject.set(x, "WarmStartConfig", value.asInstanceOf[js.Any])
     

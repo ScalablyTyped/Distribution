@@ -1,7 +1,7 @@
 
 # Scala.js typings for fluent__sequence
 
-Typings are for version 0.7.0
+Typings are for version 0.8.0
 
 ## Library description:
 Manage ordered sequences of FluentBundles

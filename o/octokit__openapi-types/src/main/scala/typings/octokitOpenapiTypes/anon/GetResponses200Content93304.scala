@@ -6,13 +6,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GetResponses200Content93304 extends StObject {
   
-  /** Lists repositories the authenticated user is watching. */
+  /**
+    * List user migrations
+    * @description Lists all migrations a user has started.
+    */
   var get: Responses200Content93304
+  
+  /**
+    * Start a user migration
+    * @description Initiates the generation of a user migration archive.
+    */
+  var post: RequestBodyContentApplicationjsonExcludegitdata
 }
 object GetResponses200Content93304 {
   
-  inline def apply(get: Responses200Content93304): GetResponses200Content93304 = {
-    val __obj = js.Dynamic.literal(get = get.asInstanceOf[js.Any])
+  inline def apply(get: Responses200Content93304, post: RequestBodyContentApplicationjsonExcludegitdata): GetResponses200Content93304 = {
+    val __obj = js.Dynamic.literal(get = get.asInstanceOf[js.Any], post = post.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetResponses200Content93304]
   }
   
@@ -20,5 +29,7 @@ object GetResponses200Content93304 {
   implicit open class MutableBuilder[Self <: GetResponses200Content93304] (val x: Self) extends AnyVal {
     
     inline def setGet(value: Responses200Content93304): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
+    
+    inline def setPost(value: RequestBodyContentApplicationjsonExcludegitdata): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
   }
 }

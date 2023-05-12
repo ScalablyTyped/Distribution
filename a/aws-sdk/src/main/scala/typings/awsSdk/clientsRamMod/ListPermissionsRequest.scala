@@ -17,7 +17,12 @@ trait ListPermissionsRequest extends StObject {
   var nextToken: js.UndefOr[String] = js.undefined
   
   /**
-    * Specifies that you want to list permissions for only the specified resource type. For example, to list only permissions that apply to EC2 subnets, specify ec2:Subnet. You can use the ListResourceTypes operation to get the specific string required.
+    * Specifies that you want to list only permissions of this type:    AWS – returns only Amazon Web Services managed permissions.    LOCAL – returns only customer managed permissions    ALL – returns both Amazon Web Services managed permissions and customer managed permissions.   If you don't specify this parameter, the default is All.
+    */
+  var permissionType: js.UndefOr[PermissionTypeFilter] = js.undefined
+  
+  /**
+    * Specifies that you want to list only those permissions that apply to the specified resource type. This parameter is not case sensitive. For example, to list only permissions that apply to Amazon EC2 subnets, specify ec2:subnet. You can use the ListResourceTypes operation to get the specific string required.
     */
   var resourceType: js.UndefOr[String] = js.undefined
 }
@@ -38,6 +43,10 @@ object ListPermissionsRequest {
     inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
     inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    
+    inline def setPermissionType(value: PermissionTypeFilter): Self = StObject.set(x, "permissionType", value.asInstanceOf[js.Any])
+    
+    inline def setPermissionTypeUndefined: Self = StObject.set(x, "permissionType", js.undefined)
     
     inline def setResourceType(value: String): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     

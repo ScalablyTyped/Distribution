@@ -23,7 +23,7 @@ trait ListPackageVersionsRequest extends StObject {
   var domainOwner: js.UndefOr[AccountId] = js.undefined
   
   /**
-    *  The format of the returned package versions. 
+    *  The format of the package versions you want to list. 
     */
   var format: PackageFormat
   
@@ -33,7 +33,7 @@ trait ListPackageVersionsRequest extends StObject {
   var maxResults: js.UndefOr[ListPackageVersionsMaxResults] = js.undefined
   
   /**
-    * The namespace of the package that contains the requested package versions. The package component that specifies its namespace depends on its type. For example:    The namespace of a Maven package is its groupId.     The namespace of an npm package is its scope.     Python and NuGet packages do not contain a corresponding component, packages of those formats do not have a namespace.   
+    * The namespace of the package that contains the requested package versions. The package component that specifies its namespace depends on its type. For example:    The namespace of a Maven package is its groupId.     The namespace of an npm package is its scope.     Python and NuGet packages do not contain a corresponding component, packages of those formats do not have a namespace.     The namespace of a generic package is its namespace.   
     */
   var namespace: js.UndefOr[PackageNamespace] = js.undefined
   

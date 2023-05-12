@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DebugHookConfig extends StObject {
   
   /**
-    * Configuration information for Debugger tensor collections. To learn more about how to configure the CollectionConfiguration parameter, see Use the SageMaker and Debugger Configuration API Operations to Create, Update, and Debug Your Training Job. 
+    * Configuration information for Amazon SageMaker Debugger tensor collections. To learn more about how to configure the CollectionConfiguration parameter, see Use the SageMaker and Debugger Configuration API Operations to Create, Update, and Debug Your Training Job. 
     */
   var CollectionConfigurations: js.UndefOr[typings.awsSdk.clientsSagemakerMod.CollectionConfigurations] = js.undefined
   
   /**
-    * Configuration information for the Debugger hook parameters.
+    * Configuration information for the Amazon SageMaker Debugger hook parameters.
     */
   var HookParameters: js.UndefOr[typings.awsSdk.clientsSagemakerMod.HookParameters] = js.undefined
   

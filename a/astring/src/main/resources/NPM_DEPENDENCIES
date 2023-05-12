@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "astring" : "1.8.3"
+      "astring" : "1.8.4"
     }
   ],
   "test-dependencies" : [
     {
-      "astring" : "1.8.3"
+      "astring" : "1.8.4"
     }
   ],
   "compile-devDependencies" : [

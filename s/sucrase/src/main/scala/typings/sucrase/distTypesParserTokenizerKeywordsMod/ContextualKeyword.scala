@@ -218,32 +218,44 @@ object ContextualKeyword extends StObject {
   /* 33 */ val _require: typings.sucrase.distTypesParserTokenizerKeywordsMod.ContextualKeyword._require & Double = js.native
   
   @js.native
+  sealed trait _satisfies
+    extends StObject
+       with ContextualKeyword
+  /* 34 */ val _satisfies: typings.sucrase.distTypesParserTokenizerKeywordsMod.ContextualKeyword._satisfies & Double = js.native
+  
+  @js.native
   sealed trait _set
     extends StObject
        with ContextualKeyword
-  /* 34 */ val _set: typings.sucrase.distTypesParserTokenizerKeywordsMod.ContextualKeyword._set & Double = js.native
+  /* 35 */ val _set: typings.sucrase.distTypesParserTokenizerKeywordsMod.ContextualKeyword._set & Double = js.native
   
   @js.native
   sealed trait _static
     extends StObject
        with ContextualKeyword
-  /* 35 */ val _static: typings.sucrase.distTypesParserTokenizerKeywordsMod.ContextualKeyword._static & Double = js.native
+  /* 36 */ val _static: typings.sucrase.distTypesParserTokenizerKeywordsMod.ContextualKeyword._static & Double = js.native
   
   @js.native
   sealed trait _symbol
     extends StObject
        with ContextualKeyword
-  /* 36 */ val _symbol: typings.sucrase.distTypesParserTokenizerKeywordsMod.ContextualKeyword._symbol & Double = js.native
+  /* 37 */ val _symbol: typings.sucrase.distTypesParserTokenizerKeywordsMod.ContextualKeyword._symbol & Double = js.native
   
   @js.native
   sealed trait _type
     extends StObject
        with ContextualKeyword
-  /* 37 */ val _type: typings.sucrase.distTypesParserTokenizerKeywordsMod.ContextualKeyword._type & Double = js.native
+  /* 38 */ val _type: typings.sucrase.distTypesParserTokenizerKeywordsMod.ContextualKeyword._type & Double = js.native
   
   @js.native
   sealed trait _unique
     extends StObject
        with ContextualKeyword
-  /* 38 */ val _unique: typings.sucrase.distTypesParserTokenizerKeywordsMod.ContextualKeyword._unique & Double = js.native
+  /* 39 */ val _unique: typings.sucrase.distTypesParserTokenizerKeywordsMod.ContextualKeyword._unique & Double = js.native
+  
+  @js.native
+  sealed trait _using
+    extends StObject
+       with ContextualKeyword
+  /* 40 */ val _using: typings.sucrase.distTypesParserTokenizerKeywordsMod.ContextualKeyword._using & Double = js.native
 }

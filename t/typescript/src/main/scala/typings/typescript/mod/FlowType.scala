@@ -1,5 +1,6 @@
 package typings.typescript.mod
 
+import typings.typescript.typescriptInts.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FlowType extends StObject
 object FlowType {
   
-  inline def IncompleteType(flags: TypeFlags, `type`: Type): typings.typescript.mod.IncompleteType = {
+  inline def IncompleteType(flags: TypeFlags | `0`, `type`: Type): typings.typescript.mod.IncompleteType = {
     val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.typescript.mod.IncompleteType]

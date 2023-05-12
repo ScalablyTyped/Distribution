@@ -21,11 +21,17 @@ trait GifOptions
   /** Level of CPU effort to reduce file size, between 1 (fastest) and 10 (slowest) (optional, default 7) */
   var effort: js.UndefOr[Double] = js.undefined
   
-  /** Always generate new palettes (slow), re-use existing by default (optional, default false) */
-  var reoptimise: js.UndefOr[Boolean] = js.undefined
+  /** Maximum inter-frame error for transparency, between 0 (lossless) and 32 (optional, default 0) */
+  var interFrameMaxError: js.UndefOr[Double] = js.undefined
   
-  /** Alternative spelling of "reoptimise" (optional, default false) */
-  var reoptimize: js.UndefOr[Boolean] = js.undefined
+  /** Maximum inter-palette error for palette reuse, between 0 and 256 (optional, default 3) */
+  var interPaletteMaxError: js.UndefOr[Double] = js.undefined
+  
+  /** Use progressive (interlace) scan */
+  var progressive: js.UndefOr[Boolean] = js.undefined
+  
+  /** Re-use existing palette, otherwise generate new (slow) */
+  var reuse: js.UndefOr[Boolean] = js.undefined
 }
 object GifOptions {
   
@@ -53,12 +59,20 @@ object GifOptions {
     
     inline def setEffortUndefined: Self = StObject.set(x, "effort", js.undefined)
     
-    inline def setReoptimise(value: Boolean): Self = StObject.set(x, "reoptimise", value.asInstanceOf[js.Any])
+    inline def setInterFrameMaxError(value: Double): Self = StObject.set(x, "interFrameMaxError", value.asInstanceOf[js.Any])
     
-    inline def setReoptimiseUndefined: Self = StObject.set(x, "reoptimise", js.undefined)
+    inline def setInterFrameMaxErrorUndefined: Self = StObject.set(x, "interFrameMaxError", js.undefined)
     
-    inline def setReoptimize(value: Boolean): Self = StObject.set(x, "reoptimize", value.asInstanceOf[js.Any])
+    inline def setInterPaletteMaxError(value: Double): Self = StObject.set(x, "interPaletteMaxError", value.asInstanceOf[js.Any])
     
-    inline def setReoptimizeUndefined: Self = StObject.set(x, "reoptimize", js.undefined)
+    inline def setInterPaletteMaxErrorUndefined: Self = StObject.set(x, "interPaletteMaxError", js.undefined)
+    
+    inline def setProgressive(value: Boolean): Self = StObject.set(x, "progressive", value.asInstanceOf[js.Any])
+    
+    inline def setProgressiveUndefined: Self = StObject.set(x, "progressive", js.undefined)
+    
+    inline def setReuse(value: Boolean): Self = StObject.set(x, "reuse", value.asInstanceOf[js.Any])
+    
+    inline def setReuseUndefined: Self = StObject.set(x, "reuse", js.undefined)
   }
 }

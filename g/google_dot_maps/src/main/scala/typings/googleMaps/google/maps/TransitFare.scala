@@ -4,10 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A fare of a <code><a href="#DirectionsResult">DirectionsRoute</a> </code>
-  * consisting of value and currency.
-  */
 trait TransitFare extends StObject {
   
   /**

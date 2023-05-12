@@ -14,7 +14,12 @@ trait UsageCriteria extends StObject {
   /**
     * The data sources to aggregate usage statistics from.
     */
-  var DataSources: DataSourceList
+  var DataSources: js.UndefOr[DataSourceList] = js.undefined
+  
+  /**
+    * The features to aggregate usage statistics from.
+    */
+  var Features: js.UndefOr[UsageFeatureList] = js.undefined
   
   /**
     * The resources to aggregate usage statistics from. Only accepts exact resource names.
@@ -23,8 +28,8 @@ trait UsageCriteria extends StObject {
 }
 object UsageCriteria {
   
-  inline def apply(DataSources: DataSourceList): UsageCriteria = {
-    val __obj = js.Dynamic.literal(DataSources = DataSources.asInstanceOf[js.Any])
+  inline def apply(): UsageCriteria = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UsageCriteria]
   }
   
@@ -39,7 +44,15 @@ object UsageCriteria {
     
     inline def setDataSources(value: DataSourceList): Self = StObject.set(x, "DataSources", value.asInstanceOf[js.Any])
     
+    inline def setDataSourcesUndefined: Self = StObject.set(x, "DataSources", js.undefined)
+    
     inline def setDataSourcesVarargs(value: DataSource*): Self = StObject.set(x, "DataSources", js.Array(value*))
+    
+    inline def setFeatures(value: UsageFeatureList): Self = StObject.set(x, "Features", value.asInstanceOf[js.Any])
+    
+    inline def setFeaturesUndefined: Self = StObject.set(x, "Features", js.undefined)
+    
+    inline def setFeaturesVarargs(value: UsageFeature*): Self = StObject.set(x, "Features", js.Array(value*))
     
     inline def setResources(value: ResourceList): Self = StObject.set(x, "Resources", value.asInstanceOf[js.Any])
     

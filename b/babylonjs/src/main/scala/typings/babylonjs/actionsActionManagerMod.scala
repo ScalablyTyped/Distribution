@@ -53,7 +53,7 @@ object actionsActionManagerMod {
     
     /**
       * Nothing
-      * @see https://doc.babylonjs.com/how_to/how_to_use_actions#triggers
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/events/actions#triggers
       */
     @JSImport("babylonjs/Actions/actionManager", "ActionManager.NothingTrigger")
     @js.native
@@ -61,7 +61,7 @@ object actionsActionManagerMod {
     
     /**
       * On center pick
-      * @see https://doc.babylonjs.com/how_to/how_to_use_actions#triggers
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/events/actions#triggers
       */
     @JSImport("babylonjs/Actions/actionManager", "ActionManager.OnCenterPickTrigger")
     @js.native
@@ -69,7 +69,7 @@ object actionsActionManagerMod {
     
     /**
       * On double pick
-      * @see https://doc.babylonjs.com/how_to/how_to_use_actions#triggers
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/events/actions#triggers
       */
     @JSImport("babylonjs/Actions/actionManager", "ActionManager.OnDoublePickTrigger")
     @js.native
@@ -77,7 +77,7 @@ object actionsActionManagerMod {
     
     /**
       * On every frame
-      * @see https://doc.babylonjs.com/how_to/how_to_use_actions#triggers
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/events/actions#triggers
       */
     @JSImport("babylonjs/Actions/actionManager", "ActionManager.OnEveryFrameTrigger")
     @js.native
@@ -85,7 +85,7 @@ object actionsActionManagerMod {
     
     /**
       * On intersection enter
-      * @see https://doc.babylonjs.com/how_to/how_to_use_actions#triggers
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/events/actions#triggers
       */
     @JSImport("babylonjs/Actions/actionManager", "ActionManager.OnIntersectionEnterTrigger")
     @js.native
@@ -93,7 +93,7 @@ object actionsActionManagerMod {
     
     /**
       * On intersection exit
-      * @see https://doc.babylonjs.com/how_to/how_to_use_actions#triggers
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/events/actions#triggers
       */
     @JSImport("babylonjs/Actions/actionManager", "ActionManager.OnIntersectionExitTrigger")
     @js.native
@@ -101,7 +101,7 @@ object actionsActionManagerMod {
     
     /**
       * On key down
-      * @see https://doc.babylonjs.com/how_to/how_to_use_actions#triggers
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/events/actions#triggers
       */
     @JSImport("babylonjs/Actions/actionManager", "ActionManager.OnKeyDownTrigger")
     @js.native
@@ -109,7 +109,7 @@ object actionsActionManagerMod {
     
     /**
       * On key up
-      * @see https://doc.babylonjs.com/how_to/how_to_use_actions#triggers
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/events/actions#triggers
       */
     @JSImport("babylonjs/Actions/actionManager", "ActionManager.OnKeyUpTrigger")
     @js.native
@@ -117,7 +117,7 @@ object actionsActionManagerMod {
     
     /**
       * On left pick
-      * @see https://doc.babylonjs.com/how_to/how_to_use_actions#triggers
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/events/actions#triggers
       */
     @JSImport("babylonjs/Actions/actionManager", "ActionManager.OnLeftPickTrigger")
     @js.native
@@ -125,7 +125,7 @@ object actionsActionManagerMod {
     
     /**
       * On long press
-      * @see https://doc.babylonjs.com/how_to/how_to_use_actions#triggers
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/events/actions#triggers
       */
     @JSImport("babylonjs/Actions/actionManager", "ActionManager.OnLongPressTrigger")
     @js.native
@@ -133,7 +133,7 @@ object actionsActionManagerMod {
     
     /**
       * On pick down
-      * @see https://doc.babylonjs.com/how_to/how_to_use_actions#triggers
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/events/actions#triggers
       */
     @JSImport("babylonjs/Actions/actionManager", "ActionManager.OnPickDownTrigger")
     @js.native
@@ -142,7 +142,7 @@ object actionsActionManagerMod {
     /**
       * On pick out.
       * This trigger will only be raised if you also declared a OnPickDown
-      * @see https://doc.babylonjs.com/how_to/how_to_use_actions#triggers
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/events/actions#triggers
       */
     @JSImport("babylonjs/Actions/actionManager", "ActionManager.OnPickOutTrigger")
     @js.native
@@ -150,7 +150,7 @@ object actionsActionManagerMod {
     
     /**
       * On pick
-      * @see https://doc.babylonjs.com/how_to/how_to_use_actions#triggers
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/events/actions#triggers
       */
     @JSImport("babylonjs/Actions/actionManager", "ActionManager.OnPickTrigger")
     @js.native
@@ -158,7 +158,7 @@ object actionsActionManagerMod {
     
     /**
       * On pick up
-      * @see https://doc.babylonjs.com/how_to/how_to_use_actions#triggers
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/events/actions#triggers
       */
     @JSImport("babylonjs/Actions/actionManager", "ActionManager.OnPickUpTrigger")
     @js.native
@@ -166,7 +166,7 @@ object actionsActionManagerMod {
     
     /**
       * On pointer out
-      * @see https://doc.babylonjs.com/how_to/how_to_use_actions#triggers
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/events/actions#triggers
       */
     @JSImport("babylonjs/Actions/actionManager", "ActionManager.OnPointerOutTrigger")
     @js.native
@@ -174,7 +174,7 @@ object actionsActionManagerMod {
     
     /**
       * On pointer over
-      * @see https://doc.babylonjs.com/how_to/how_to_use_actions#triggers
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/events/actions#triggers
       */
     @JSImport("babylonjs/Actions/actionManager", "ActionManager.OnPointerOverTrigger")
     @js.native
@@ -182,7 +182,7 @@ object actionsActionManagerMod {
     
     /**
       * On right pick
-      * @see https://doc.babylonjs.com/how_to/how_to_use_actions#triggers
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/events/actions#triggers
       */
     @JSImport("babylonjs/Actions/actionManager", "ActionManager.OnRightPickTrigger")
     @js.native

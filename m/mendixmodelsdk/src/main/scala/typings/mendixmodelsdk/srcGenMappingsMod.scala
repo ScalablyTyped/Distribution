@@ -15,6 +15,7 @@ import typings.mendixmodelsdk.srcGenProjectsMod.projects.Document
 import typings.mendixmodelsdk.srcGenProjectsMod.projects.FolderBase
 import typings.mendixmodelsdk.srcGenProjectsMod.projects.IDocument
 import typings.mendixmodelsdk.srcGenProjectsMod.projects.IFolderBase
+import typings.mendixmodelsdk.srcGenRestMod.rest.ImplicitExportMapping
 import typings.mendixmodelsdk.srcGenWebservicesMod.webservices.IImportedWebService
 import typings.mendixmodelsdk.srcGenXmlschemasMod.xmlschemas.IXmlSchema
 import typings.mendixmodelsdk.srcGenXmlschemasMod.xmlschemas.XmlPrimitiveType
@@ -313,6 +314,8 @@ object srcGenMappingsMod {
         unit: ModelUnit[IAbstractModel],
         container: AbstractElement[IAbstractModel, Container]
       ) = this()
+      
+      def containerAsImplicitExportMapping: ImplicitExportMapping = js.native
       
       def containerAsMappingDocument: MappingDocument = js.native
       

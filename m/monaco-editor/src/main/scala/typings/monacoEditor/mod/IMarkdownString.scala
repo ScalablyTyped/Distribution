@@ -9,7 +9,7 @@ trait IMarkdownString extends StObject {
   
   val baseUri: js.UndefOr[UriComponents] = js.undefined
   
-  val isTrusted: js.UndefOr[Boolean] = js.undefined
+  val isTrusted: js.UndefOr[Boolean | MarkdownStringTrustedOptions] = js.undefined
   
   val supportHtml: js.UndefOr[Boolean] = js.undefined
   
@@ -33,7 +33,7 @@ object IMarkdownString {
     
     inline def setBaseUriUndefined: Self = StObject.set(x, "baseUri", js.undefined)
     
-    inline def setIsTrusted(value: Boolean): Self = StObject.set(x, "isTrusted", value.asInstanceOf[js.Any])
+    inline def setIsTrusted(value: Boolean | MarkdownStringTrustedOptions): Self = StObject.set(x, "isTrusted", value.asInstanceOf[js.Any])
     
     inline def setIsTrustedUndefined: Self = StObject.set(x, "isTrusted", js.undefined)
     

@@ -17,6 +17,11 @@ trait DesiredWeightAndCapacity extends StObject {
   var DesiredWeight: js.UndefOr[VariantWeight] = js.undefined
   
   /**
+    * Specifies the serverless update concurrency configuration for an endpoint variant.
+    */
+  var ServerlessUpdateConfig: js.UndefOr[ProductionVariantServerlessUpdateConfig] = js.undefined
+  
+  /**
     * The name of the variant to update.
     */
   var VariantName: typings.awsSdk.clientsSagemakerMod.VariantName
@@ -38,6 +43,10 @@ object DesiredWeightAndCapacity {
     inline def setDesiredWeight(value: VariantWeight): Self = StObject.set(x, "DesiredWeight", value.asInstanceOf[js.Any])
     
     inline def setDesiredWeightUndefined: Self = StObject.set(x, "DesiredWeight", js.undefined)
+    
+    inline def setServerlessUpdateConfig(value: ProductionVariantServerlessUpdateConfig): Self = StObject.set(x, "ServerlessUpdateConfig", value.asInstanceOf[js.Any])
+    
+    inline def setServerlessUpdateConfigUndefined: Self = StObject.set(x, "ServerlessUpdateConfig", js.undefined)
     
     inline def setVariantName(value: VariantName): Self = StObject.set(x, "VariantName", value.asInstanceOf[js.Any])
   }

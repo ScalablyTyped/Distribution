@@ -37,4 +37,8 @@ type Validator = js.Function3[
 
 type ValuedNotifyInfo = NotifyInfo & typings.rcFieldForm.anon.Store
 
-type WatchCallBack = js.Function2[/* values */ Store, /* namePathList */ js.Array[InternalNamePath], Unit]
+type WatchCallBack = js.Function3[
+/* values */ Store, 
+/* allValues */ Store, 
+/* namePathList */ js.Array[InternalNamePath], 
+Unit]

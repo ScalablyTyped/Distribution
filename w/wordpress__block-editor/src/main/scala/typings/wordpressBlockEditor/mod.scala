@@ -9,8 +9,10 @@ import typings.react.mod.global.JSX.Element
 import typings.std.Record
 import typings.wordpressBlockEditor.anon.AjaxUrl
 import typings.wordpressBlockEditor.anon.Children
+import typings.wordpressBlockEditor.anon.ClassName
 import typings.wordpressBlockEditor.anon.Description
 import typings.wordpressBlockEditor.anon.IsLocked
+import typings.wordpressBlockEditor.anon.MinFontSize
 import typings.wordpressBlockEditor.anon.OmitPropsname
 import typings.wordpressBlockEditor.anon.PartialEditorFontSizePick
 import typings.wordpressBlockEditor.anon.PartialProps
@@ -18,6 +20,7 @@ import typings.wordpressBlockEditor.anon.PickEditorColorcolor
 import typings.wordpressBlockEditor.anon.TypeofimportedActions
 import typings.wordpressBlockEditor.anon.TypeofimportedSelectors
 import typings.wordpressBlockEditor.componentsAlignmentToolbarMod.AlignmentToolbar.Props
+import typings.wordpressBlockEditor.componentsInnerBlocksMod.UseInnerBlocksProps_
 import typings.wordpressBlockEditor.componentsRichTextMod.RichText.ContentProps
 import typings.wordpressBlockEditor.componentsUseBlockPropsMod.UseBlockProps_
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.`coreSlashblock-editor`
@@ -132,7 +135,8 @@ import typings.wordpressBlockEditor.wordpressBlockEditorStrings.u
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.ul
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.video
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.wbr
-import typings.wordpressBlocks.mod.BlockIconNormalized
+import typings.wordpressBlocks.BlockAttributes
+import typings.wordpressBlocks.BlockIconNormalized
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -147,7 +151,7 @@ object mod {
   @js.native
   val AlignmentToolbar: ComponentType[Props] = js.native
   
-  // tslint:disable-next-line:no-unnecessary-generics
+  // eslint-disable-next-line no-unnecessary-generics
   inline def Autocomplete[T](props: typings.wordpressComponents.autocompleteMod.Autocomplete.Props[T]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Autocomplete")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("@wordpress/block-editor", "BlockAlignmentToolbar")
@@ -693,6 +697,9 @@ object mod {
   
   inline def getFontSizeClass(fontSizeSlug: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getFontSizeClass")(fontSizeSlug.asInstanceOf[js.Any]).asInstanceOf[String]
   
+  inline def getTypographyClassesAndStyles(attributes: BlockAttributes, fluidTypographySettings: Boolean): ClassName = (^.asInstanceOf[js.Dynamic].applyDynamic("getTypographyClassesAndStyles")(attributes.asInstanceOf[js.Any], fluidTypographySettings.asInstanceOf[js.Any])).asInstanceOf[ClassName]
+  inline def getTypographyClassesAndStyles(attributes: BlockAttributes, fluidTypographySettings: MinFontSize): ClassName = (^.asInstanceOf[js.Dynamic].applyDynamic("getTypographyClassesAndStyles")(attributes.asInstanceOf[js.Any], fluidTypographySettings.asInstanceOf[js.Any])).asInstanceOf[ClassName]
+  
   @JSImport("@wordpress/block-editor", "store")
   @js.native
   val store: Any = js.native
@@ -730,6 +737,12 @@ object mod {
   @JSImport("@wordpress/block-editor", "useBlockProps")
   @js.native
   val useBlockProps: UseBlockProps_ = js.native
+  
+  inline def useCachedTruthy[T](value: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("useCachedTruthy")(value.asInstanceOf[js.Any]).asInstanceOf[T]
+  
+  @JSImport("@wordpress/block-editor", "useInnerBlocksProps")
+  @js.native
+  val useInnerBlocksProps: UseInnerBlocksProps_ = js.native
   
   // prettier-ignore
   inline def withColorContext[ProvidedProps /* <: PartialProps */, OwnProps /* <: Any */](component: ComponentClass[ProvidedProps & OwnProps, ComponentState]): /* import warning: importer.ImportType#apply Failed type conversion: react.react.ComponentClass<ProvidedProps & OwnProps, react.react.ComponentState> extends react.react.ComponentType<infer U> ? react.react.ComponentType<std.Omit<U, 'colors' | 'disableCustomColors' | 'hasColorsToChoose'> & std.Omit<ProvidedProps, 'hasColorsToChoose'>> : never */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("withColorContext")(component.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: react.react.ComponentClass<ProvidedProps & OwnProps, react.react.ComponentState> extends react.react.ComponentType<infer U> ? react.react.ComponentType<std.Omit<U, 'colors' | 'disableCustomColors' | 'hasColorsToChoose'> & std.Omit<ProvidedProps, 'hasColorsToChoose'>> : never */ js.Any]

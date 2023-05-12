@@ -15,6 +15,9 @@ open class default protected ()
   var auth: Auth = js.native
   
   /* CompleteClass */
+  var credentialsManager: CredentialsManager = js.native
+  
+  /* CompleteClass */
   override def users(token: String): Users_ = js.native
   
   /* CompleteClass */

@@ -4,6 +4,9 @@ import typings.react.mod.ComponentType
 import typings.react.mod.FC
 import typings.react.mod.global.JSX.Element
 import typings.std.Record
+import typings.wordpressData.buildTypesTypesMod.DataRegistry
+import typings.wordpressData.buildTypesTypesMod.StoreDescriptor
+import typings.wordpressData.buildTypesTypesMod.StoreInstance
 import typings.wordpressEditPost.anon.AjaxUrl
 import typings.wordpressEditPost.anon.Color
 import typings.wordpressEditPost.anon.Css
@@ -256,6 +259,10 @@ object mod {
   initialEdits: js.Object
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("reinitializeEditor")(postType.asInstanceOf[js.Any], postId.asInstanceOf[js.Any], target.asInstanceOf[js.Any], settings.asInstanceOf[js.Any], initialEdits.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
+  @JSImport("@wordpress/edit-post", "store")
+  @js.native
+  val store: EditPostStoreDescriptor = js.native
+  
   /* augmented module */
   object wordpressDataAugmentingMod {
     
@@ -266,6 +273,27 @@ object mod {
     inline def dispatch_coreeditpost(key: `coreSlashedit-post`): TypeofimportedActions = ^.asInstanceOf[js.Dynamic].applyDynamic("dispatch")(key.asInstanceOf[js.Any]).asInstanceOf[TypeofimportedActions]
     
     inline def select_coreeditpost(key: `coreSlashedit-post`): TypeofimportedSelectors = ^.asInstanceOf[js.Dynamic].applyDynamic("select")(key.asInstanceOf[js.Any]).asInstanceOf[TypeofimportedSelectors]
+  }
+  
+  trait EditPostStoreDescriptor
+    extends StObject
+       with StoreDescriptor[Any] {
+    
+    @JSName("name")
+    var name_EditPostStoreDescriptor: `coreSlashedit-post`
+  }
+  object EditPostStoreDescriptor {
+    
+    inline def apply(instantiate: DataRegistry => StoreInstance[Any]): EditPostStoreDescriptor = {
+      val __obj = js.Dynamic.literal(instantiate = js.Any.fromFunction1(instantiate), name = "core/edit-post")
+      __obj.asInstanceOf[EditPostStoreDescriptor]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EditPostStoreDescriptor] (val x: Self) extends AnyVal {
+      
+      inline def setName(value: `coreSlashedit-post`): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    }
   }
   
   /* Rewritten from type alias, can be one of: 

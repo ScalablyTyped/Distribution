@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "htmlparser2" : "8.0.1"
+      "htmlparser2" : "9.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "htmlparser2" : "8.0.1"
+      "htmlparser2" : "9.0.0"
     }
   ],
   "compile-devDependencies" : [

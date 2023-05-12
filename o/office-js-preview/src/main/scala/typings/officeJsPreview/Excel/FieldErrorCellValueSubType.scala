@@ -28,6 +28,17 @@ object FieldErrorCellValueSubType extends StObject {
        with FieldErrorCellValueSubType
   
   /**
+    * An error caused by a missing file. In this case, the RichValueRel.xml file is missing from the metro package. Displays as error type #FIELD! in Excel.
+    *
+    * @remarks
+    * [Api set: 1.16]
+    */
+  @js.native
+  sealed trait richValueRelMissingFilePart
+    extends StObject
+       with FieldErrorCellValueSubType
+  
+  /**
     * An unknown type of error. Displays as error type #FIELD! in Excel.
     *
     * @remarks

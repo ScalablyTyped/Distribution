@@ -1,7 +1,7 @@
 
 # Scala.js typings for dns-over-http-resolver
 
-Typings are for version 2.1.0
+Typings are for version 2.1.1
 
 ## Library description:
 DNS over HTTP resolver

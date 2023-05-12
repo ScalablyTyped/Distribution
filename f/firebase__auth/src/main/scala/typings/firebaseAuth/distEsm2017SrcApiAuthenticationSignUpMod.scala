@@ -1,5 +1,7 @@
 package typings.firebaseAuth
 
+import typings.firebaseAuth.distEsm2017SrcApiMod.RecaptchaClientType
+import typings.firebaseAuth.distEsm2017SrcApiMod.RecaptchaVersion
 import typings.firebaseAuth.distEsm2017SrcModelIdTokenMod.IdTokenResponse
 import typings.firebaseAuth.distEsm2017SrcModelPublicTypesMod.Auth
 import org.scalablytyped.runtime.StObject
@@ -16,9 +18,15 @@ object distEsm2017SrcApiAuthenticationSignUpMod {
   
   trait SignUpRequest extends StObject {
     
+    var captchaResponse: js.UndefOr[String] = js.undefined
+    
+    var clientType: js.UndefOr[RecaptchaClientType] = js.undefined
+    
     var email: js.UndefOr[String] = js.undefined
     
     var password: js.UndefOr[String] = js.undefined
+    
+    var recaptchaVersion: js.UndefOr[RecaptchaVersion] = js.undefined
     
     var returnSecureToken: js.UndefOr[Boolean] = js.undefined
     
@@ -34,6 +42,14 @@ object distEsm2017SrcApiAuthenticationSignUpMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: SignUpRequest] (val x: Self) extends AnyVal {
       
+      inline def setCaptchaResponse(value: String): Self = StObject.set(x, "captchaResponse", value.asInstanceOf[js.Any])
+      
+      inline def setCaptchaResponseUndefined: Self = StObject.set(x, "captchaResponse", js.undefined)
+      
+      inline def setClientType(value: RecaptchaClientType): Self = StObject.set(x, "clientType", value.asInstanceOf[js.Any])
+      
+      inline def setClientTypeUndefined: Self = StObject.set(x, "clientType", js.undefined)
+      
       inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
       inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
@@ -41,6 +57,10 @@ object distEsm2017SrcApiAuthenticationSignUpMod {
       inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
       inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+      
+      inline def setRecaptchaVersion(value: RecaptchaVersion): Self = StObject.set(x, "recaptchaVersion", value.asInstanceOf[js.Any])
+      
+      inline def setRecaptchaVersionUndefined: Self = StObject.set(x, "recaptchaVersion", js.undefined)
       
       inline def setReturnSecureToken(value: Boolean): Self = StObject.set(x, "returnSecureToken", value.asInstanceOf[js.Any])
       

@@ -6,10 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SiprecAttributes extends StObject {
   
+  /** connectorName - Unique name for Connector */
   var connectorName: js.UndefOr[String] = js.undefined
   
+  /** name - Friendly name given to SIPREC */
   var name: js.UndefOr[String] = js.undefined
   
+  /** track - Track to be streamed to remote service */
   var track: js.UndefOr[SiprecTrack] = js.undefined
 }
 object SiprecAttributes {

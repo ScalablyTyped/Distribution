@@ -3,6 +3,7 @@ package typings.reduxSentryMiddleware
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
+import typings.sentryBrowser.anon.Dsn
 import typings.sentryBrowser.anon.TypeofCoreIntegrations
 import typings.sentryBrowser.anon.TypeofCoreIntegrationsInstantiable
 import typings.sentryBrowser.mod.Breadcrumbs
@@ -12,11 +13,14 @@ import typings.sentryBrowser.mod.GlobalHandlers
 import typings.sentryBrowser.mod.HttpContext
 import typings.sentryBrowser.mod.InboundFilters
 import typings.sentryBrowser.mod.LinkedErrors
+import typings.sentryBrowser.mod.Replay
 import typings.sentryBrowser.mod.Scope
 import typings.sentryBrowser.typesClientMod.BrowserClientOptions
 import typings.sentryBrowser.typesClientMod.BrowserOptions
 import typings.sentryBrowser.typesHelpersMod.ReportDialogOptions
 import typings.sentryBrowser.typesIntegrationsMod.TryCatch
+import typings.sentryBrowser.typesProfilingJsSelfProfilingMod.global.Window
+import typings.sentryBrowser.typesTransportsOfflineMod.BrowserOfflineTransportOptions
 import typings.sentryBrowser.typesTransportsTypesMod.BrowserTransportOptions
 import typings.sentryBrowser.typesTransportsUtilsMod.FetchImpl
 import typings.sentryCore.anon.FnCall
@@ -29,7 +33,13 @@ import typings.sentryCore.anon.FnCallNameContext
 import typings.sentryCore.anon.FnCallUser
 import typings.sentryCore.typesHubMod.Carrier
 import typings.sentryCore.typesHubMod.Hub
+import typings.sentryCore.typesTracingSpanMod.Span
+import typings.sentryCore.typesTracingSpanMod.SpanStatusType
+import typings.sentryCore.typesTransportsMultiplexedMod.Matcher
+import typings.sentryInternalTracing.anon.PartialRequestInstrumenta
+import typings.sentryInternalTracing.typesBrowserRequestMod.RequestInstrumentationOptions
 import typings.sentryTypes.typesBreadcrumbMod.Breadcrumb
+import typings.sentryTypes.typesEnvelopeMod.EventEnvelope
 import typings.sentryTypes.typesEventMod.Event
 import typings.sentryTypes.typesEventMod.EventHint
 import typings.sentryTypes.typesEventprocessorMod.EventProcessor
@@ -41,17 +51,22 @@ import typings.sentryTypes.typesSeverityMod.Severity
 import typings.sentryTypes.typesSeverityMod.SeverityLevel
 import typings.sentryTypes.typesStackframeMod.StackFrame
 import typings.sentryTypes.typesStacktraceMod.StackLineParser
+import typings.sentryTypes.typesStacktraceMod.StackParser
 import typings.sentryTypes.typesTransactionMod.CustomSamplingContext
+import typings.sentryTypes.typesTransactionMod.TraceparentData
+import typings.sentryTypes.typesTransactionMod.Transaction
 import typings.sentryTypes.typesTransactionMod.TransactionContext
+import typings.sentryTypes.typesTransportMod.BaseTransportOptions
 import typings.sentryTypes.typesTransportMod.InternalBaseTransportOptions
 import typings.sentryTypes.typesTransportMod.Transport
+import typings.sentryTypes.typesTransportMod.TransportMakeRequestResponse
 import typings.sentryTypes.typesTransportMod.TransportRequestExecutor
 import typings.sentryTypes.typesUserMod.User
+import typings.sentryTypes.typesUserMod.UserFeedback
 import typings.sentryUtils.typesPromisebufferMod.PromiseBuffer
 import typings.sentryUtils.typesWorldwideMod.InternalGlobal
 import typings.std.PromiseLike
 import typings.std.ReturnType
-import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -196,6 +211,17 @@ object anon {
   }
   
   @js.native
+  trait TypeofReplay
+    extends StObject
+       with Instantiable0[Replay] {
+    
+    /**
+      * @inheritDoc
+      */
+    var id: String = js.native
+  }
+  
+  @js.native
   trait TypeofScope
     extends StObject
        with Instantiable0[Scope] {
@@ -209,6 +235,10 @@ object anon {
     var Breadcrumbs: TypeofBreadcrumbs = js.native
     
     var BrowserClient: Instantiable1[/* options */ BrowserClientOptions, typings.sentryBrowser.mod.BrowserClient] = js.native
+    
+    var BrowserProfilingIntegration: Instantiable0[typings.sentryBrowser.mod.BrowserProfilingIntegration] = js.native
+    
+    var BrowserTracing: Instantiable0[typings.sentryBrowser.mod.BrowserTracing] = js.native
     
     var Dedupe: TypeofDedupe = js.native
     
@@ -226,7 +256,9 @@ object anon {
     
     var LinkedErrors: TypeofLinkedErrors = js.native
     
-    val SDK_VERSION: /* "7.19.0" */ String = js.native
+    var Replay: TypeofReplay = js.native
+    
+    val SDK_VERSION: /* "7.51.2" */ String = js.native
     
     var Scope: TypeofScope = js.native
     
@@ -237,6 +269,8 @@ object anon {
     def addBreadcrumb(breadcrumb: Breadcrumb): ReturnType[FnCallBreadcrumbHint] = js.native
     
     def addGlobalEventProcessor(callback: EventProcessor): Unit = js.native
+    
+    def addTracingExtensions(): Unit = js.native
     
     def captureEvent(event: Event): ReturnType[FnCallEventHint] = js.native
     def captureEvent(event: Event, hint: EventHint): ReturnType[FnCallEventHint] = js.native
@@ -249,6 +283,8 @@ object anon {
     def captureMessage(message: String, captureContext: Severity): ReturnType[FnCallMessageLevelHint] = js.native
     def captureMessage(message: String, captureContext: SeverityLevel): ReturnType[FnCallMessageLevelHint] = js.native
     
+    def captureUserFeedback(feedback: UserFeedback): Unit = js.native
+    
     val chromeStackLineParser: StackLineParser = js.native
     
     def close(): PromiseLike[Boolean] = js.native
@@ -260,17 +296,59 @@ object anon {
     def createTransport(
       options: InternalBaseTransportOptions,
       makeRequest: TransportRequestExecutor,
-      buffer: PromiseBuffer[Unit]
+      buffer: PromiseBuffer[Unit | TransportMakeRequestResponse]
     ): Transport = js.native
+    
+    def createUserFeedbackEnvelope(feedback: UserFeedback, param1: Dsn): EventEnvelope = js.native
     
     val defaultIntegrations: js.Array[
         typings.sentryBrowser.typesIntegrationsMod.GlobalHandlers | TryCatch | typings.sentryBrowser.typesIntegrationsMod.Breadcrumbs | typings.sentryBrowser.typesIntegrationsMod.LinkedErrors | typings.sentryBrowser.typesIntegrationsMod.HttpContext | typings.sentryBrowser.typesIntegrationsMod.Dedupe | typings.sentryCore.mod.Integrations.InboundFilters | typings.sentryCore.mod.Integrations.FunctionToString
       ] = js.native
     
+    val defaultRequestInstrumentationOptions: RequestInstrumentationOptions = js.native
+    
     val defaultStackLineParsers: js.Array[StackLineParser] = js.native
     
     def defaultStackParser(stack: String): js.Array[StackFrame] = js.native
     def defaultStackParser(stack: String, skipFirst: Double): js.Array[StackFrame] = js.native
+    
+    def eventFromException(stackParser: StackParser, exception: Any): PromiseLike[Event] = js.native
+    def eventFromException(stackParser: StackParser, exception: Any, hint: Unit, attachStacktrace: Boolean): PromiseLike[Event] = js.native
+    def eventFromException(stackParser: StackParser, exception: Any, hint: EventHint): PromiseLike[Event] = js.native
+    def eventFromException(stackParser: StackParser, exception: Any, hint: EventHint, attachStacktrace: Boolean): PromiseLike[Event] = js.native
+    
+    def eventFromMessage(stackParser: StackParser, message: String): PromiseLike[Event] = js.native
+    def eventFromMessage(stackParser: StackParser, message: String, level: Unit, hint: Unit, attachStacktrace: Boolean): PromiseLike[Event] = js.native
+    def eventFromMessage(stackParser: StackParser, message: String, level: Unit, hint: EventHint): PromiseLike[Event] = js.native
+    def eventFromMessage(stackParser: StackParser, message: String, level: Unit, hint: EventHint, attachStacktrace: Boolean): PromiseLike[Event] = js.native
+    def eventFromMessage(stackParser: StackParser, message: String, level: Severity): PromiseLike[Event] = js.native
+    def eventFromMessage(stackParser: StackParser, message: String, level: SeverityLevel): PromiseLike[Event] = js.native
+    def eventFromMessage(
+      stackParser: StackParser,
+      message: String,
+      level: SeverityLevel,
+      hint: Unit,
+      attachStacktrace: Boolean
+    ): PromiseLike[Event] = js.native
+    def eventFromMessage(stackParser: StackParser, message: String, level: SeverityLevel, hint: EventHint): PromiseLike[Event] = js.native
+    def eventFromMessage(
+      stackParser: StackParser,
+      message: String,
+      level: SeverityLevel,
+      hint: EventHint,
+      attachStacktrace: Boolean
+    ): PromiseLike[Event] = js.native
+    def eventFromMessage(stackParser: StackParser, message: String, level: Severity, hint: Unit, attachStacktrace: Boolean): PromiseLike[Event] = js.native
+    def eventFromMessage(stackParser: StackParser, message: String, level: Severity, hint: EventHint): PromiseLike[Event] = js.native
+    def eventFromMessage(
+      stackParser: StackParser,
+      message: String,
+      level: Severity,
+      hint: EventHint,
+      attachStacktrace: Boolean
+    ): PromiseLike[Event] = js.native
+    
+    def extractTraceparentData(traceparent: String): js.UndefOr[TraceparentData] = js.native
     
     def flush(): PromiseLike[Boolean] = js.native
     def flush(timeout: Double): PromiseLike[Boolean] = js.native
@@ -279,6 +357,9 @@ object anon {
     
     val geckoStackLineParser: StackLineParser = js.native
     
+    def getActiveTransaction[T /* <: Transaction */](): js.UndefOr[T] = js.native
+    def getActiveTransaction[T /* <: Transaction */](maybeHub: Hub): js.UndefOr[T] = js.native
+    
     def getCurrentHub(): Hub = js.native
     
     def getHubFromCarrier(carrier: Carrier): Hub = js.native
@@ -286,16 +367,26 @@ object anon {
     def init(): Unit = js.native
     def init(options: BrowserOptions): Unit = js.native
     
+    def instrumentOutgoingRequests(): Unit = js.native
+    def instrumentOutgoingRequests(_options: PartialRequestInstrumenta): Unit = js.native
+    
     def lastEventId(): js.UndefOr[String] = js.native
+    
+    def makeBrowserOfflineTransport[T /* <: InternalBaseTransportOptions */](createTransport: js.Function1[/* options */ T, Transport]): js.Function1[/* options */ T & BrowserOfflineTransportOptions, Transport] = js.native
     
     def makeFetchTransport(options: BrowserTransportOptions): Transport = js.native
     def makeFetchTransport(options: BrowserTransportOptions, nativeFetch: FetchImpl): Transport = js.native
     
     def makeMain(hub: Hub): Hub = js.native
     
+    def makeMultiplexedTransport[TO /* <: BaseTransportOptions */](createTransport: js.Function1[/* options */ TO, Transport], matcher: Matcher): js.Function1[/* options */ TO, Transport] = js.native
+    
     def makeXHRTransport(options: BrowserTransportOptions): Transport = js.native
     
     def onLoad(callback: js.Function0[Unit]): Unit = js.native
+    
+    def onProfilingStartRouteTransaction(): js.UndefOr[Transaction] = js.native
+    def onProfilingStartRouteTransaction(transaction: Transaction): js.UndefOr[Transaction] = js.native
     
     val opera10StackLineParser: StackLineParser = js.native
     
@@ -320,8 +411,17 @@ object anon {
     def showReportDialog(options: ReportDialogOptions): Unit = js.native
     def showReportDialog(options: ReportDialogOptions, hub: typings.sentryCore.mod.Hub): Unit = js.native
     
+    def spanStatusfromHttpCode(httpStatus: Double): SpanStatusType = js.native
+    
     def startTransaction(context: TransactionContext): ReturnType[FnCallContextCustomSamplingContext] = js.native
     def startTransaction(context: TransactionContext, customSamplingContext: CustomSamplingContext): ReturnType[FnCallContextCustomSamplingContext] = js.native
+    
+    def trace[T](context: TransactionContext, callback: js.Function1[/* span */ js.UndefOr[Span], T]): T = js.native
+    def trace[T](
+      context: TransactionContext,
+      callback: js.Function1[/* span */ js.UndefOr[Span], T],
+      onError: js.Function1[/* error */ Any, Unit]
+    ): T = js.native
     
     val winjsStackLineParser: StackLineParser = js.native
     

@@ -6,8 +6,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DeviceOperatingSystemSummary extends StObject {
   
+  /**
+    * The count of Corporate work profile Android devices. Also known as Corporate Owned Personally Enabled (COPE). Valid
+    * values -1 to 2147483647
+    */
+  var androidCorporateWorkProfileCount: js.UndefOr[Double] = js.undefined
+  
   // Number of android device count.
   var androidCount: js.UndefOr[Double] = js.undefined
+  
+  // Number of dedicated Android devices.
+  var androidDedicatedCount: js.UndefOr[Double] = js.undefined
+  
+  // Number of device admin Android devices.
+  var androidDeviceAdminCount: js.UndefOr[Double] = js.undefined
+  
+  // Number of fully managed Android devices.
+  var androidFullyManagedCount: js.UndefOr[Double] = js.undefined
+  
+  // Number of work profile Android devices.
+  var androidWorkProfileCount: js.UndefOr[Double] = js.undefined
+  
+  // Number of ConfigMgr managed devices.
+  var configMgrDeviceCount: js.UndefOr[Double] = js.undefined
   
   // Number of iOS device count.
   var iosCount: js.UndefOr[Double] = js.undefined
@@ -34,9 +55,33 @@ object DeviceOperatingSystemSummary {
   @scala.inline
   implicit open class MutableBuilder[Self <: DeviceOperatingSystemSummary] (val x: Self) extends AnyVal {
     
+    inline def setAndroidCorporateWorkProfileCount(value: Double): Self = StObject.set(x, "androidCorporateWorkProfileCount", value.asInstanceOf[js.Any])
+    
+    inline def setAndroidCorporateWorkProfileCountUndefined: Self = StObject.set(x, "androidCorporateWorkProfileCount", js.undefined)
+    
     inline def setAndroidCount(value: Double): Self = StObject.set(x, "androidCount", value.asInstanceOf[js.Any])
     
     inline def setAndroidCountUndefined: Self = StObject.set(x, "androidCount", js.undefined)
+    
+    inline def setAndroidDedicatedCount(value: Double): Self = StObject.set(x, "androidDedicatedCount", value.asInstanceOf[js.Any])
+    
+    inline def setAndroidDedicatedCountUndefined: Self = StObject.set(x, "androidDedicatedCount", js.undefined)
+    
+    inline def setAndroidDeviceAdminCount(value: Double): Self = StObject.set(x, "androidDeviceAdminCount", value.asInstanceOf[js.Any])
+    
+    inline def setAndroidDeviceAdminCountUndefined: Self = StObject.set(x, "androidDeviceAdminCount", js.undefined)
+    
+    inline def setAndroidFullyManagedCount(value: Double): Self = StObject.set(x, "androidFullyManagedCount", value.asInstanceOf[js.Any])
+    
+    inline def setAndroidFullyManagedCountUndefined: Self = StObject.set(x, "androidFullyManagedCount", js.undefined)
+    
+    inline def setAndroidWorkProfileCount(value: Double): Self = StObject.set(x, "androidWorkProfileCount", value.asInstanceOf[js.Any])
+    
+    inline def setAndroidWorkProfileCountUndefined: Self = StObject.set(x, "androidWorkProfileCount", js.undefined)
+    
+    inline def setConfigMgrDeviceCount(value: Double): Self = StObject.set(x, "configMgrDeviceCount", value.asInstanceOf[js.Any])
+    
+    inline def setConfigMgrDeviceCountUndefined: Self = StObject.set(x, "configMgrDeviceCount", js.undefined)
     
     inline def setIosCount(value: Double): Self = StObject.set(x, "iosCount", value.asInstanceOf[js.Any])
     

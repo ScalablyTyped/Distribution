@@ -6,10 +6,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GetParametersPathCommentidOwnerQueryContentPage extends StObject {
   
-  /** List the reactions to a [pull request review comment](https://docs.github.com/rest/reference/pulls#review-comments). */
+  /**
+    * List reactions for a pull request review comment
+    * @description List the reactions to a [pull request review comment](https://docs.github.com/rest/reference/pulls#review-comments).
+    */
   var get: ParametersPathCommentidOwnerQueryContentPage
   
-  /** Create a reaction to a [pull request review comment](https://docs.github.com/rest/reference/pulls#comments). A response with an HTTP `200` status means that you already added the reaction type to this pull request review comment. */
+  /**
+    * Create reaction for a pull request review comment
+    * @description Create a reaction to a [pull request review comment](https://docs.github.com/rest/reference/pulls#comments). A response with an HTTP `200` status means that you already added the reaction type to this pull request review comment.
+    */
   var post: Responses200201422
 }
 object GetParametersPathCommentidOwnerQueryContentPage {

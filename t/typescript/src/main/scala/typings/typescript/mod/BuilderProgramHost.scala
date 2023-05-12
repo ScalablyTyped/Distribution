@@ -12,11 +12,6 @@ trait BuilderProgramHost extends StObject {
   var createHash: js.UndefOr[js.Function1[/* data */ java.lang.String, java.lang.String]] = js.undefined
   
   /**
-    * return true if file names are treated with case sensitivity
-    */
-  def useCaseSensitiveFileNames(): Boolean
-  
-  /**
     * When emit or emitNextAffectedFile are called without writeFile,
     * this callback if present would be used to write files
     */
@@ -24,8 +19,8 @@ trait BuilderProgramHost extends StObject {
 }
 object BuilderProgramHost {
   
-  inline def apply(useCaseSensitiveFileNames: () => Boolean): BuilderProgramHost = {
-    val __obj = js.Dynamic.literal(useCaseSensitiveFileNames = js.Any.fromFunction0(useCaseSensitiveFileNames))
+  inline def apply(): BuilderProgramHost = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BuilderProgramHost]
   }
   
@@ -35,8 +30,6 @@ object BuilderProgramHost {
     inline def setCreateHash(value: /* data */ java.lang.String => java.lang.String): Self = StObject.set(x, "createHash", js.Any.fromFunction1(value))
     
     inline def setCreateHashUndefined: Self = StObject.set(x, "createHash", js.undefined)
-    
-    inline def setUseCaseSensitiveFileNames(value: () => Boolean): Self = StObject.set(x, "useCaseSensitiveFileNames", js.Any.fromFunction0(value))
     
     inline def setWriteFile(
       value: (/* fileName */ java.lang.String, /* text */ java.lang.String, /* writeByteOrderMark */ Boolean, /* onError */ js.UndefOr[js.Function1[/* message */ java.lang.String, Unit]], /* sourceFiles */ js.UndefOr[js.Array[SourceFile]], /* data */ js.UndefOr[WriteFileCallbackData]) => Unit

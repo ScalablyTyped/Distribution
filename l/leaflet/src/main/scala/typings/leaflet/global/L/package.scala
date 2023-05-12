@@ -1,6 +1,7 @@
 package typings.leaflet.global.L
 
 import typings.geojson.mod.GeoJsonObject
+import typings.geojson.mod.GeometryObject
 import typings.geojson.mod.LineString
 import typings.geojson.mod.MultiLineString
 import typings.leaflet.anon.Alt
@@ -75,19 +76,19 @@ inline def featureGroup(layers: js.Array[typings.leaflet.mod.Layer]): typings.le
 inline def featureGroup(layers: js.Array[typings.leaflet.mod.Layer], options: LayerOptions): typings.leaflet.mod.FeatureGroup_[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("featureGroup")(layers.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.leaflet.mod.FeatureGroup_[Any]]
 inline def featureGroup(layers: Unit, options: LayerOptions): typings.leaflet.mod.FeatureGroup_[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("featureGroup")(layers.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.leaflet.mod.FeatureGroup_[Any]]
 
-inline def geoJSON_[P](): typings.leaflet.mod.GeoJSON__[P] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoJSON")().asInstanceOf[typings.leaflet.mod.GeoJSON__[P]]
-inline def geoJSON_[P](geojson: js.Array[GeoJsonObject]): typings.leaflet.mod.GeoJSON__[P] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoJSON")(geojson.asInstanceOf[js.Any]).asInstanceOf[typings.leaflet.mod.GeoJSON__[P]]
-inline def geoJSON_[P](geojson: js.Array[GeoJsonObject], options: GeoJSONOptions[P]): typings.leaflet.mod.GeoJSON__[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoJSON")(geojson.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.leaflet.mod.GeoJSON__[P]]
-inline def geoJSON_[P](geojson: Unit, options: GeoJSONOptions[P]): typings.leaflet.mod.GeoJSON__[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoJSON")(geojson.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.leaflet.mod.GeoJSON__[P]]
-inline def geoJSON_[P](geojson: GeoJsonObject): typings.leaflet.mod.GeoJSON__[P] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoJSON")(geojson.asInstanceOf[js.Any]).asInstanceOf[typings.leaflet.mod.GeoJSON__[P]]
-inline def geoJSON_[P](geojson: GeoJsonObject, options: GeoJSONOptions[P]): typings.leaflet.mod.GeoJSON__[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoJSON")(geojson.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.leaflet.mod.GeoJSON__[P]]
+inline def geoJSON_[P, G /* <: GeometryObject */](): typings.leaflet.mod.GeoJSON__[P, G] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoJSON")().asInstanceOf[typings.leaflet.mod.GeoJSON__[P, G]]
+inline def geoJSON_[P, G /* <: GeometryObject */](geojson: js.Array[GeoJsonObject]): typings.leaflet.mod.GeoJSON__[P, G] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoJSON")(geojson.asInstanceOf[js.Any]).asInstanceOf[typings.leaflet.mod.GeoJSON__[P, G]]
+inline def geoJSON_[P, G /* <: GeometryObject */](geojson: js.Array[GeoJsonObject], options: GeoJSONOptions[P, G]): typings.leaflet.mod.GeoJSON__[P, G] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoJSON")(geojson.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.leaflet.mod.GeoJSON__[P, G]]
+inline def geoJSON_[P, G /* <: GeometryObject */](geojson: Unit, options: GeoJSONOptions[P, G]): typings.leaflet.mod.GeoJSON__[P, G] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoJSON")(geojson.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.leaflet.mod.GeoJSON__[P, G]]
+inline def geoJSON_[P, G /* <: GeometryObject */](geojson: GeoJsonObject): typings.leaflet.mod.GeoJSON__[P, G] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoJSON")(geojson.asInstanceOf[js.Any]).asInstanceOf[typings.leaflet.mod.GeoJSON__[P, G]]
+inline def geoJSON_[P, G /* <: GeometryObject */](geojson: GeoJsonObject, options: GeoJSONOptions[P, G]): typings.leaflet.mod.GeoJSON__[P, G] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoJSON")(geojson.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.leaflet.mod.GeoJSON__[P, G]]
 
-inline def geoJson[P](): typings.leaflet.mod.GeoJSON__[P] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoJson")().asInstanceOf[typings.leaflet.mod.GeoJSON__[P]]
-inline def geoJson[P](geojson: js.Array[GeoJsonObject]): typings.leaflet.mod.GeoJSON__[P] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoJson")(geojson.asInstanceOf[js.Any]).asInstanceOf[typings.leaflet.mod.GeoJSON__[P]]
-inline def geoJson[P](geojson: js.Array[GeoJsonObject], options: GeoJSONOptions[P]): typings.leaflet.mod.GeoJSON__[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoJson")(geojson.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.leaflet.mod.GeoJSON__[P]]
-inline def geoJson[P](geojson: Unit, options: GeoJSONOptions[P]): typings.leaflet.mod.GeoJSON__[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoJson")(geojson.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.leaflet.mod.GeoJSON__[P]]
-inline def geoJson[P](geojson: GeoJsonObject): typings.leaflet.mod.GeoJSON__[P] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoJson")(geojson.asInstanceOf[js.Any]).asInstanceOf[typings.leaflet.mod.GeoJSON__[P]]
-inline def geoJson[P](geojson: GeoJsonObject, options: GeoJSONOptions[P]): typings.leaflet.mod.GeoJSON__[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoJson")(geojson.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.leaflet.mod.GeoJSON__[P]]
+inline def geoJson[P, G /* <: GeometryObject */](): typings.leaflet.mod.GeoJSON__[P, G] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoJson")().asInstanceOf[typings.leaflet.mod.GeoJSON__[P, G]]
+inline def geoJson[P, G /* <: GeometryObject */](geojson: js.Array[GeoJsonObject]): typings.leaflet.mod.GeoJSON__[P, G] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoJson")(geojson.asInstanceOf[js.Any]).asInstanceOf[typings.leaflet.mod.GeoJSON__[P, G]]
+inline def geoJson[P, G /* <: GeometryObject */](geojson: js.Array[GeoJsonObject], options: GeoJSONOptions[P, G]): typings.leaflet.mod.GeoJSON__[P, G] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoJson")(geojson.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.leaflet.mod.GeoJSON__[P, G]]
+inline def geoJson[P, G /* <: GeometryObject */](geojson: Unit, options: GeoJSONOptions[P, G]): typings.leaflet.mod.GeoJSON__[P, G] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoJson")(geojson.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.leaflet.mod.GeoJSON__[P, G]]
+inline def geoJson[P, G /* <: GeometryObject */](geojson: GeoJsonObject): typings.leaflet.mod.GeoJSON__[P, G] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoJson")(geojson.asInstanceOf[js.Any]).asInstanceOf[typings.leaflet.mod.GeoJSON__[P, G]]
+inline def geoJson[P, G /* <: GeometryObject */](geojson: GeoJsonObject, options: GeoJSONOptions[P, G]): typings.leaflet.mod.GeoJSON__[P, G] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoJson")(geojson.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.leaflet.mod.GeoJSON__[P, G]]
 
 inline def gridLayer(): typings.leaflet.mod.GridLayer_ = ^.asInstanceOf[js.Dynamic].applyDynamic("gridLayer")().asInstanceOf[typings.leaflet.mod.GridLayer_]
 inline def gridLayer(options: GridLayerOptions): typings.leaflet.mod.GridLayer_ = ^.asInstanceOf[js.Dynamic].applyDynamic("gridLayer")(options.asInstanceOf[js.Any]).asInstanceOf[typings.leaflet.mod.GridLayer_]

@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.BorderBlockEnd
+import typings.csstype.mod.Property.OverflowClipBox
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,13 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `524` extends StObject {
   
   var value: js.UndefOr[
-    (BorderBlockEnd[Double | String]) | (js.Array[
+    OverflowClipBox | (js.Array[
       (Extract[
-        js.UndefOr[
-          (BorderBlockEnd[Double | String]) | (js.Array[NonNullable[js.UndefOr[BorderBlockEnd[Double | String]]]])
-        ], 
+        js.UndefOr[OverflowClipBox | js.Array[NonNullable[js.UndefOr[OverflowClipBox]]]], 
         String
-      ]) | (NonNullable[js.UndefOr[BorderBlockEnd[Double | String]]])
+      ]) | NonNullable[js.UndefOr[OverflowClipBox]]
     ])
   ] = js.native
 }

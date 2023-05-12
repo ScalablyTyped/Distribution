@@ -34,7 +34,6 @@ object platformKeys {
   val ^ : js.Any = js.native
   
   /**
-    * @enum
     */
   object ClientCertificateType {
     

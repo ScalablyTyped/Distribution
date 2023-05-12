@@ -24,6 +24,11 @@ object librarySchemaMod {
     var prefix: js.UndefOr[String] = js.undefined
     
     /**
+      * The root directory of the new library.
+      */
+    var projectRoot: js.UndefOr[String] = js.undefined
+    
+    /**
       * Do not install dependency packages.
       */
     var skipInstall: js.UndefOr[Boolean] = js.undefined
@@ -38,6 +43,11 @@ object librarySchemaMod {
       * is needed to use the library in an app, but can be disabled here to simplify development.
       */
     var skipTsConfig: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Creates a library based upon the standalone API, without NgModules.
+      */
+    var standalone: js.UndefOr[Boolean] = js.undefined
   }
   object Schema {
     
@@ -59,6 +69,10 @@ object librarySchemaMod {
       
       inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
       
+      inline def setProjectRoot(value: String): Self = StObject.set(x, "projectRoot", value.asInstanceOf[js.Any])
+      
+      inline def setProjectRootUndefined: Self = StObject.set(x, "projectRoot", js.undefined)
+      
       inline def setSkipInstall(value: Boolean): Self = StObject.set(x, "skipInstall", value.asInstanceOf[js.Any])
       
       inline def setSkipInstallUndefined: Self = StObject.set(x, "skipInstall", js.undefined)
@@ -70,6 +84,10 @@ object librarySchemaMod {
       inline def setSkipTsConfig(value: Boolean): Self = StObject.set(x, "skipTsConfig", value.asInstanceOf[js.Any])
       
       inline def setSkipTsConfigUndefined: Self = StObject.set(x, "skipTsConfig", js.undefined)
+      
+      inline def setStandalone(value: Boolean): Self = StObject.set(x, "standalone", value.asInstanceOf[js.Any])
+      
+      inline def setStandaloneUndefined: Self = StObject.set(x, "standalone", js.undefined)
     }
   }
 }

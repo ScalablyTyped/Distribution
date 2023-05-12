@@ -29,7 +29,8 @@ trait PartialOmitAppConfigisNat extends StObject {
         js.Object, 
         js.Object, 
         `false`, 
-        ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+        ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String, js.Object], 
+        js.Object, 
         js.Object
       ]) | Null, 
       /* info */ String, 
@@ -60,7 +61,8 @@ trait PartialOmitAppConfigisNat extends StObject {
         js.Object, 
         js.Object, 
         `false`, 
-        ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+        ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String, js.Object], 
+        js.Object, 
         js.Object
       ]) | Null, 
       /* trace */ String, 
@@ -93,7 +95,8 @@ object PartialOmitAppConfigisNat {
           js.Object, 
           js.Object, 
           `false`, 
-          ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+          ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String, js.Object], 
+          js.Object, 
           js.Object
         ]) | Null, /* info */ String) => Unit
     ): Self = StObject.set(x, "errorHandler", js.Any.fromFunction3(value))
@@ -131,7 +134,8 @@ object PartialOmitAppConfigisNat {
           js.Object, 
           js.Object, 
           `false`, 
-          ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+          ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String, js.Object], 
+          js.Object, 
           js.Object
         ]) | Null, /* trace */ String) => Unit
     ): Self = StObject.set(x, "warnHandler", js.Any.fromFunction3(value))

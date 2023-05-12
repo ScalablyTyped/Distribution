@@ -1,7 +1,7 @@
 
 # Scala.js typings for stylelint-webpack-plugin
 
-Typings are for version 3.3.0
+Typings are for version 4.1.1
 
 ## Library description:
 A Stylelint plugin for webpack

@@ -6,6 +6,7 @@ import typings.officeJsPreview.officeJsPreviewStrings.DataProviderError
 import typings.officeJsPreview.officeJsPreviewStrings.Error
 import typings.officeJsPreview.officeJsPreviewStrings.Field
 import typings.officeJsPreview.officeJsPreviewStrings.NumbersignFIELDExclamationmark
+import typings.officeJsPreview.officeJsPreviewStrings.RichValueRelMissingFilePart
 import typings.officeJsPreview.officeJsPreviewStrings.Unknown_
 import typings.officeJsPreview.officeJsPreviewStrings.WebImageMissingFilePart
 import org.scalablytyped.runtime.StObject
@@ -47,7 +48,7 @@ trait FieldErrorCellValue
     * [Api set: ExcelApi 1.16]
     */
   var errorSubType: js.UndefOr[
-    FieldErrorCellValueSubType | Unknown_ | WebImageMissingFilePart | DataProviderError
+    FieldErrorCellValueSubType | Unknown_ | WebImageMissingFilePart | DataProviderError | RichValueRelMissingFilePart
   ] = js.undefined
   
   /**
@@ -93,7 +94,9 @@ object FieldErrorCellValue {
     
     inline def setBasicValueUndefined: Self = StObject.set(x, "basicValue", js.undefined)
     
-    inline def setErrorSubType(value: FieldErrorCellValueSubType | Unknown_ | WebImageMissingFilePart | DataProviderError): Self = StObject.set(x, "errorSubType", value.asInstanceOf[js.Any])
+    inline def setErrorSubType(
+      value: FieldErrorCellValueSubType | Unknown_ | WebImageMissingFilePart | DataProviderError | RichValueRelMissingFilePart
+    ): Self = StObject.set(x, "errorSubType", value.asInstanceOf[js.Any])
     
     inline def setErrorSubTypeUndefined: Self = StObject.set(x, "errorSubType", js.undefined)
     

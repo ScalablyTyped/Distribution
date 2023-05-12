@@ -6,6 +6,7 @@ import typings.gestalt.gestaltStrings.info
 import typings.gestalt.gestaltStrings.lightWash
 import typings.gestalt.gestaltStrings.middle
 import typings.gestalt.gestaltStrings.neutral
+import typings.gestalt.gestaltStrings.recommendation
 import typings.gestalt.gestaltStrings.success
 import typings.gestalt.gestaltStrings.top
 import typings.gestalt.gestaltStrings.warning
@@ -19,7 +20,9 @@ trait BadgeProps extends StObject {
   
   var text: String
   
-  var `type`: js.UndefOr[info | error | warning | success | neutral | darkWash | lightWash] = js.undefined
+  var `type`: js.UndefOr[
+    info | error | warning | success | neutral | darkWash | lightWash | recommendation
+  ] = js.undefined
 }
 object BadgeProps {
   
@@ -37,7 +40,7 @@ object BadgeProps {
     
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    inline def setType(value: info | error | warning | success | neutral | darkWash | lightWash): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: info | error | warning | success | neutral | darkWash | lightWash | recommendation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }

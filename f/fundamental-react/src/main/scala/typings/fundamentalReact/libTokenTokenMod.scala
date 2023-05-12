@@ -1,10 +1,11 @@
 package typings.fundamentalReact
 
 import org.scalablytyped.runtime.Shortcut
-import typings.react.mod.FunctionComponent
+import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.HTMLAttributes
+import typings.react.mod.RefAttributes
 import typings.std.HTMLButtonElement
-import typings.std.HTMLDivElement
+import typings.std.HTMLSpanElement
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,15 +15,16 @@ object libTokenTokenMod extends Shortcut {
   
   @JSImport("fundamental-react/lib/Token/Token", JSImport.Default)
   @js.native
-  val default: FunctionComponent[TokenProps] = js.native
+  val default: ForwardRefExoticComponent[TokenProps & RefAttributes[HTMLSpanElement]] = js.native
   
   trait TokenProps
     extends StObject
-       with HTMLAttributes[HTMLDivElement] {
+       with HTMLAttributes[HTMLSpanElement] {
+    
+    /** A localized string to be used as aria-label for the token's button */
+    var buttonLabel: String
     
     var compact: js.UndefOr[Boolean] = js.undefined
-    
-    var disableStyles: js.UndefOr[Boolean] = js.undefined
     
     @JSName("onClick")
     var onClick_TokenProps: js.UndefOr[
@@ -33,21 +35,19 @@ object libTokenTokenMod extends Shortcut {
   }
   object TokenProps {
     
-    inline def apply(): TokenProps = {
-      val __obj = js.Dynamic.literal()
+    inline def apply(buttonLabel: String): TokenProps = {
+      val __obj = js.Dynamic.literal(buttonLabel = buttonLabel.asInstanceOf[js.Any])
       __obj.asInstanceOf[TokenProps]
     }
     
     @scala.inline
     implicit open class MutableBuilder[Self <: TokenProps] (val x: Self) extends AnyVal {
       
+      inline def setButtonLabel(value: String): Self = StObject.set(x, "buttonLabel", value.asInstanceOf[js.Any])
+      
       inline def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
       
       inline def setCompactUndefined: Self = StObject.set(x, "compact", js.undefined)
-      
-      inline def setDisableStyles(value: Boolean): Self = StObject.set(x, "disableStyles", value.asInstanceOf[js.Any])
-      
-      inline def setDisableStylesUndefined: Self = StObject.set(x, "disableStyles", js.undefined)
       
       inline def setOnClick(value: /* event */ typings.react.mod.MouseEvent[HTMLButtonElement, MouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
@@ -59,8 +59,8 @@ object libTokenTokenMod extends Shortcut {
     }
   }
   
-  type _To = FunctionComponent[TokenProps]
+  type _To = ForwardRefExoticComponent[TokenProps & RefAttributes[HTMLSpanElement]]
   
   /* This means you don't have to write `default`, but can instead just say `libTokenTokenMod.foo` */
-  override def _to: FunctionComponent[TokenProps] = default
+  override def _to: ForwardRefExoticComponent[TokenProps & RefAttributes[HTMLSpanElement]] = default
 }

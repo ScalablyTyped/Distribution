@@ -1,105 +1,51 @@
 package typings.atlaskitTokens
 
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-UNSAFE_util-MISSING_TOKEN`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-UNSAFE_util-transparent`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-accent-boldBlue`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-accent-boldGreen`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-accent-boldOrange`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-accent-boldPurple`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-accent-boldRed`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-accent-boldTeal`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-accent-subtleBlue`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-accent-subtleGreen`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-accent-subtleMagenta`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-accent-subtleOrange`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-accent-subtlePurple`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-accent-subtleRed`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-accent-subtleTeal`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-blue-bold`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-UNSAFE-transparent`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-blue-bolder`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-blue-subtle`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-blue-subtler`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-blue-subtlest`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-blue`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-gray-bolder`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-gray-subtle`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-gray-subtler`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-gray-subtlest`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-green-bold`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-green-bolder`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-green-subtle`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-green-subtler`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-green-subtlest`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-green`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-magenta-bold`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-magenta-bolder`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-magenta-subtle`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-magenta-subtler`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-magenta-subtlest`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-magenta`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-orange-bold`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-orange-bolder`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-orange-subtle`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-orange-subtler`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-orange-subtlest`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-orange`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-purple-bold`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-purple-bolder`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-purple-subtle`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-purple-subtler`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-purple-subtlest`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-purple`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-red-bold`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-red-bolder`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-red-subtle`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-red-subtler`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-red-subtlest`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-red`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-teal-bold`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-teal-bolder`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-teal-subtle`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-teal-subtler`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-teal-subtlest`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-teal`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-yellow-bold`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-yellow-bolder`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-yellow-subtle`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-yellow-subtler`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-yellow-subtlest`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-accent-yellow`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-blanket`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-boldBrand-hover`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-boldBrand-pressed`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-boldBrand-resting`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-boldDanger-hover`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-boldDanger-pressed`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-boldDanger-resting`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-boldDiscovery-hover`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-boldDiscovery-pressed`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-boldDiscovery-resting`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-boldNeutral-hover`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-boldNeutral-pressed`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-boldNeutral-resting`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-boldSuccess-hover`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-boldSuccess-pressed`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-boldSuccess-resting`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-boldWarning-hover`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-boldWarning-pressed`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-boldWarning-resting`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-brand-bold-hovered`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-brand-bold-pressed`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-brand-bold`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-brand-hovered`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-brand-pressed`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-brand`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-card`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-danger-bold-hovered`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-danger-bold-pressed`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-danger-bold`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-danger-hovered`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-danger-pressed`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-danger`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-default`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-disabled`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-discovery-bold-hovered`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-discovery-bold-pressed`
@@ -119,7 +65,6 @@ import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-input`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-inverse-subtle-hovered`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-inverse-subtle-pressed`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-inverse-subtle`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-inverse`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-neutral-bold-hovered`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-neutral-bold-pressed`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-neutral-bold`
@@ -129,44 +74,18 @@ import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-neutral-sub
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-neutral-subtle-pressed`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-neutral-subtle`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-neutral`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-overlay`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-selected-bold-hovered`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-selected-bold-pressed`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-selected-bold`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-selected-hover`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-selected-hovered`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-selected-pressed`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-selected-resting`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-selected`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-subtleBorderedNeutral-pressed`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-subtleBorderedNeutral-resting`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-subtleBrand-hover`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-subtleBrand-pressed`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-subtleBrand-resting`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-subtleDanger-hover`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-subtleDanger-pressed`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-subtleDanger-resting`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-subtleDiscovery-hover`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-subtleDiscovery-pressed`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-subtleDiscovery-resting`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-subtleNeutral-hover`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-subtleNeutral-pressed`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-subtleNeutral-resting`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-subtleSuccess-hover`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-subtleSuccess-pressed`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-subtleSuccess-resting`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-subtleWarning-hover`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-subtleWarning-pressed`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-subtleWarning-resting`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-success-bold-hovered`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-success-bold-pressed`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-success-bold`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-success-hovered`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-success-pressed`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-success`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-sunken`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-transparentNeutral-hover`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-transparentNeutral-pressed`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-warning-bold-hovered`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-warning-bold-pressed`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-background-warning-bold`
@@ -190,42 +109,128 @@ import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-border-brand`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-border-danger`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-border-disabled`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-border-discovery`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-border-focus`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-border-focused`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-border-information`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-border-input`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-border-inverse`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-border-neutral`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-border-selected`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-border-success`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-border-warning`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-border`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-card`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-ccc-component-2`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-ccc-component-4`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-ccc-component-6`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-ccc-component-8`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-ccc-container-32`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-ccc-container-40`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-ccc-container-48`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-ccc-content-12`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-ccc-content-16`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-ccc-content-20`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-ccc-content-24`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-ecl-container-12`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-ecl-container-16`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-ecl-container-20`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-ecl-container-24`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-ecl-element-2`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-ecl-element-4`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-ecl-element-6`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-ecl-element-8`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-ecl-layout-32`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-ecl-layout-40`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-ecl-layout-64`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-gap-100`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-gap-200`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-gap-300`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-blue-bold-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-blue-bold`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-blue-bolder-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-blue-bolder`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-blue-boldest-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-blue-boldest`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-brand-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-brand`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-categorical-1-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-categorical-1`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-categorical-2-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-categorical-2`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-categorical-3-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-categorical-3`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-categorical-4-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-categorical-4`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-categorical-5-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-categorical-5`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-categorical-6-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-categorical-6`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-categorical-7-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-categorical-7`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-categorical-8-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-categorical-8`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-danger-bold-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-danger-bold`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-danger-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-danger`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-discovery-bold-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-discovery-bold`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-discovery-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-discovery`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-gray-bold-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-gray-bold`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-gray-bolder-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-gray-bolder`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-gray-boldest-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-gray-boldest`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-green-bold-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-green-bold`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-green-bolder-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-green-bolder`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-green-boldest-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-green-boldest`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-information-bold-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-information-bold`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-information-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-information`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-magenta-bold-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-magenta-bold`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-magenta-bolder-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-magenta-bolder`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-magenta-boldest-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-magenta-boldest`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-neutral-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-neutral`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-orange-bold-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-orange-bold`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-orange-bolder-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-orange-bolder`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-orange-boldest-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-orange-boldest`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-purple-bold-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-purple-bold`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-purple-bolder-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-purple-bolder`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-purple-boldest-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-purple-boldest`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-red-bold-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-red-bold`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-red-bolder-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-red-bolder`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-red-boldest-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-red-boldest`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-success-bold-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-success-bold`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-success-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-success`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-teal-bold-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-teal-bold`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-teal-bolder-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-teal-bolder`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-teal-boldest-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-teal-boldest`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-warning-bold-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-warning-bold`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-warning-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-warning`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-yellow-bold-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-yellow-bold`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-yellow-bolder-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-yellow-bolder`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-yellow-boldest-hovered`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-chart-yellow-boldest`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-font-family-monospace`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-font-family-sans`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-font-lineHeight-100`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-font-lineHeight-200`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-font-lineHeight-300`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-font-lineHeight-400`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-font-lineHeight-500`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-font-lineHeight-600`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-font-size-050`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-font-size-075`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-font-size-100`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-font-size-200`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-font-size-300`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-font-size-400`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-font-size-500`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-font-size-600`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-font-weight-bold`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-font-weight-medium`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-font-weight-regular`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-font-weight-semibold`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-icon-accent-blue`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-icon-accent-gray`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-icon-accent-green`
@@ -246,79 +251,40 @@ import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-icon-subtle`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-icon-success`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-icon-warning-inverse`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-icon-warning`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-iconBorder-brand`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-iconBorder-danger`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-iconBorder-discovery`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-iconBorder-success`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-iconBorder-warning`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-icon`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-inset-100`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-inset-200`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-inset-300`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-interaction-hovered`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-interaction-inverse-hovered`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-interaction-inverse-pressed`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-interaction-pressed`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-link-pressed`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-link`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-opacity-disabled`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-opacity-loading`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-overlay-hover`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-overlay-pressed`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-overlay`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-pixel-0`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-pixel-12`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-pixel-16`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-pixel-20`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-pixel-24`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-pixel-2`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-pixel-32`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-pixel-40`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-pixel-48`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-pixel-4`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-pixel-6`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-pixel-8`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scale-025`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scale-050`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scale-075`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scale-0`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scale-100`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scale-150`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scale-200`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scale-250`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scale-300`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scale-400`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scale-500`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scale-600`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scaleLinear-0`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scaleLinear-1000`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scaleLinear-100`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scaleLinear-1100`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scaleLinear-200`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scaleLinear-300`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scaleLinear-400`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scaleLinear-500`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scaleLinear-600`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scaleLinear-700`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scaleLinear-800`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-scaleLinear-900`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-radius-050`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-radius-100`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-radius-200`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-radius-300`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-radius-400`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-radius-round`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-shadow-overflow-perimeter`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-shadow-overflow-spread`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-shadow-overflow`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-shadow-overlay`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-shadow-raised`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-size-large`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-size-medium`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-size-none`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-size-small`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-size-xlarge`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-size-xsmall`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-size-xxSmall`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-size-xxlarge`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-size-xxxSmall`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-size-xxxlarge`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-size-xxxxSmall`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-size-xxxxlarge`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-skeleton-subtle`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-skeleton`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-space-025`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-space-050`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-space-075`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-space-0`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-space-1000`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-space-100`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-space-150`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-space-200`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-space-250`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-space-300`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-space-400`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-space-500`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-space-600`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-space-800`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-surface-hovered`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-surface-overlay-hovered`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-surface-overlay-pressed`
@@ -351,15 +317,8 @@ import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-text-brand`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-text-danger`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-text-disabled`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-text-discovery`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-text-highEmphasis`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-text-information`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-text-inverse`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-text-link-pressed`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-text-link-resting`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-text-lowEmphasis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-text-mediumEmphasis`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-text-onBoldWarning`
-import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-text-onBold`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-text-selected`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-text-subtle`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-text-subtlest`
@@ -367,6 +326,9 @@ import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-text-success`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-text-warning-inverse`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-text-warning`
 import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-text`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-width-050`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-width-0`
+import typings.atlaskitTokens.atlaskitTokensStrings.`--ds-width-100`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -375,65 +337,41 @@ object distTypesArtifactsTokenNamesMod {
   
   object default {
     
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.accent.boldBlue")
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.border.radius.050")
     @js.native
-    val colorAccentBoldBlue: `--ds-accent-boldBlue` = js.native
+    val borderRadius050: `--ds-radius-050` = js.native
     
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.accent.boldGreen")
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.border.radius.100")
     @js.native
-    val colorAccentBoldGreen: `--ds-accent-boldGreen` = js.native
+    val borderRadius100: `--ds-radius-100` = js.native
     
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.accent.boldOrange")
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.border.radius.200")
     @js.native
-    val colorAccentBoldOrange: `--ds-accent-boldOrange` = js.native
+    val borderRadius200: `--ds-radius-200` = js.native
     
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.accent.boldPurple")
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.border.radius.300")
     @js.native
-    val colorAccentBoldPurple: `--ds-accent-boldPurple` = js.native
+    val borderRadius300: `--ds-radius-300` = js.native
     
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.accent.boldRed")
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.border.radius.400")
     @js.native
-    val colorAccentBoldRed: `--ds-accent-boldRed` = js.native
+    val borderRadius400: `--ds-radius-400` = js.native
     
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.accent.boldTeal")
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.border.radius.round")
     @js.native
-    val colorAccentBoldTeal: `--ds-accent-boldTeal` = js.native
+    val borderRadiusRound: `--ds-radius-round` = js.native
     
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.accent.subtleBlue")
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.border.width.0")
     @js.native
-    val colorAccentSubtleBlue: `--ds-accent-subtleBlue` = js.native
+    val borderWidth0: `--ds-width-0` = js.native
     
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.accent.subtleGreen")
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.border.width.050")
     @js.native
-    val colorAccentSubtleGreen: `--ds-accent-subtleGreen` = js.native
+    val borderWidth050: `--ds-width-050` = js.native
     
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.accent.subtleMagenta")
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.border.width.100")
     @js.native
-    val colorAccentSubtleMagenta: `--ds-accent-subtleMagenta` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.accent.subtleOrange")
-    @js.native
-    val colorAccentSubtleOrange: `--ds-accent-subtleOrange` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.accent.subtlePurple")
-    @js.native
-    val colorAccentSubtlePurple: `--ds-accent-subtlePurple` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.accent.subtleRed")
-    @js.native
-    val colorAccentSubtleRed: `--ds-accent-subtleRed` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.accent.subtleTeal")
-    @js.native
-    val colorAccentSubtleTeal: `--ds-accent-subtleTeal` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.background.accent.blue")
-    @js.native
-    val colorBackgroundAccentBlue: `--ds-background-accent-blue` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.background.accent.blue.bold")
-    @js.native
-    val colorBackgroundAccentBlueBold: `--ds-background-accent-blue-bold` = js.native
+    val borderWidth100: `--ds-width-100` = js.native
     
     @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.background.accent.blue.bolder")
     @js.native
@@ -467,14 +405,6 @@ object distTypesArtifactsTokenNamesMod {
     @js.native
     val colorBackgroundAccentGraySubtlest: `--ds-background-accent-gray-subtlest` = js.native
     
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.background.accent.green")
-    @js.native
-    val colorBackgroundAccentGreen: `--ds-background-accent-green` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.background.accent.green.bold")
-    @js.native
-    val colorBackgroundAccentGreenBold: `--ds-background-accent-green-bold` = js.native
-    
     @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.background.accent.green.bolder")
     @js.native
     val colorBackgroundAccentGreenBolder: `--ds-background-accent-green-bolder` = js.native
@@ -490,14 +420,6 @@ object distTypesArtifactsTokenNamesMod {
     @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.background.accent.green.subtlest")
     @js.native
     val colorBackgroundAccentGreenSubtlest: `--ds-background-accent-green-subtlest` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.background.accent.magenta")
-    @js.native
-    val colorBackgroundAccentMagenta: `--ds-background-accent-magenta` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.background.accent.magenta.bold")
-    @js.native
-    val colorBackgroundAccentMagentaBold: `--ds-background-accent-magenta-bold` = js.native
     
     @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.background.accent.magenta.bolder")
     @js.native
@@ -515,14 +437,6 @@ object distTypesArtifactsTokenNamesMod {
     @js.native
     val colorBackgroundAccentMagentaSubtlest: `--ds-background-accent-magenta-subtlest` = js.native
     
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.background.accent.orange")
-    @js.native
-    val colorBackgroundAccentOrange: `--ds-background-accent-orange` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.background.accent.orange.bold")
-    @js.native
-    val colorBackgroundAccentOrangeBold: `--ds-background-accent-orange-bold` = js.native
-    
     @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.background.accent.orange.bolder")
     @js.native
     val colorBackgroundAccentOrangeBolder: `--ds-background-accent-orange-bolder` = js.native
@@ -538,14 +452,6 @@ object distTypesArtifactsTokenNamesMod {
     @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.background.accent.orange.subtlest")
     @js.native
     val colorBackgroundAccentOrangeSubtlest: `--ds-background-accent-orange-subtlest` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.background.accent.purple")
-    @js.native
-    val colorBackgroundAccentPurple: `--ds-background-accent-purple` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.background.accent.purple.bold")
-    @js.native
-    val colorBackgroundAccentPurpleBold: `--ds-background-accent-purple-bold` = js.native
     
     @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.background.accent.purple.bolder")
     @js.native
@@ -563,14 +469,6 @@ object distTypesArtifactsTokenNamesMod {
     @js.native
     val colorBackgroundAccentPurpleSubtlest: `--ds-background-accent-purple-subtlest` = js.native
     
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.background.accent.red")
-    @js.native
-    val colorBackgroundAccentRed: `--ds-background-accent-red` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.background.accent.red.bold")
-    @js.native
-    val colorBackgroundAccentRedBold: `--ds-background-accent-red-bold` = js.native
-    
     @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.background.accent.red.bolder")
     @js.native
     val colorBackgroundAccentRedBolder: `--ds-background-accent-red-bolder` = js.native
@@ -586,14 +484,6 @@ object distTypesArtifactsTokenNamesMod {
     @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.background.accent.red.subtlest")
     @js.native
     val colorBackgroundAccentRedSubtlest: `--ds-background-accent-red-subtlest` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.background.accent.teal")
-    @js.native
-    val colorBackgroundAccentTeal: `--ds-background-accent-teal` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.background.accent.teal.bold")
-    @js.native
-    val colorBackgroundAccentTealBold: `--ds-background-accent-teal-bold` = js.native
     
     @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.background.accent.teal.bolder")
     @js.native
@@ -611,14 +501,6 @@ object distTypesArtifactsTokenNamesMod {
     @js.native
     val colorBackgroundAccentTealSubtlest: `--ds-background-accent-teal-subtlest` = js.native
     
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.background.accent.yellow")
-    @js.native
-    val colorBackgroundAccentYellow: `--ds-background-accent-yellow` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.background.accent.yellow.bold")
-    @js.native
-    val colorBackgroundAccentYellowBold: `--ds-background-accent-yellow-bold` = js.native
-    
     @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.background.accent.yellow.bolder")
     @js.native
     val colorBackgroundAccentYellowBolder: `--ds-background-accent-yellow-bolder` = js.native
@@ -635,86 +517,6 @@ object distTypesArtifactsTokenNamesMod {
     @js.native
     val colorBackgroundAccentYellowSubtlest: `--ds-background-accent-yellow-subtlest` = js.native
     
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.background.blanket")
-    @js.native
-    val colorBackgroundBlanket: `--ds-background-blanket` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.background.boldBrand.hover")
-    @js.native
-    val colorBackgroundBoldBrandHover: `--ds-background-boldBrand-hover` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.background.boldBrand.pressed")
-    @js.native
-    val colorBackgroundBoldBrandPressed: `--ds-background-boldBrand-pressed` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.background.boldBrand.resting")
-    @js.native
-    val colorBackgroundBoldBrandResting: `--ds-background-boldBrand-resting` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.background.boldDanger.hover")
-    @js.native
-    val colorBackgroundBoldDangerHover: `--ds-background-boldDanger-hover` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.background.boldDanger.pressed")
-    @js.native
-    val colorBackgroundBoldDangerPressed: `--ds-background-boldDanger-pressed` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.background.boldDanger.resting")
-    @js.native
-    val colorBackgroundBoldDangerResting: `--ds-background-boldDanger-resting` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.background.boldDiscovery.hover")
-    @js.native
-    val colorBackgroundBoldDiscoveryHover: `--ds-background-boldDiscovery-hover` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.background.boldDiscovery.pressed")
-    @js.native
-    val colorBackgroundBoldDiscoveryPressed: `--ds-background-boldDiscovery-pressed` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.background.boldDiscovery.resting")
-    @js.native
-    val colorBackgroundBoldDiscoveryResting: `--ds-background-boldDiscovery-resting` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.background.boldNeutral.hover")
-    @js.native
-    val colorBackgroundBoldNeutralHover: `--ds-background-boldNeutral-hover` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.background.boldNeutral.pressed")
-    @js.native
-    val colorBackgroundBoldNeutralPressed: `--ds-background-boldNeutral-pressed` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.background.boldNeutral.resting")
-    @js.native
-    val colorBackgroundBoldNeutralResting: `--ds-background-boldNeutral-resting` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.background.boldSuccess.hover")
-    @js.native
-    val colorBackgroundBoldSuccessHover: `--ds-background-boldSuccess-hover` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.background.boldSuccess.pressed")
-    @js.native
-    val colorBackgroundBoldSuccessPressed: `--ds-background-boldSuccess-pressed` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.background.boldSuccess.resting")
-    @js.native
-    val colorBackgroundBoldSuccessResting: `--ds-background-boldSuccess-resting` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.background.boldWarning.hover")
-    @js.native
-    val colorBackgroundBoldWarningHover: `--ds-background-boldWarning-hover` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.background.boldWarning.pressed")
-    @js.native
-    val colorBackgroundBoldWarningPressed: `--ds-background-boldWarning-pressed` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.background.boldWarning.resting")
-    @js.native
-    val colorBackgroundBoldWarningResting: `--ds-background-boldWarning-resting` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.background.brand")
-    @js.native
-    val colorBackgroundBrand: `--ds-background-brand` = js.native
-    
     @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.background.brand.bold")
     @js.native
     val colorBackgroundBrandBold: `--ds-background-brand-bold` = js.native
@@ -726,18 +528,6 @@ object distTypesArtifactsTokenNamesMod {
     @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.background.brand.bold.pressed")
     @js.native
     val colorBackgroundBrandBoldPressed: `--ds-background-brand-bold-pressed` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.background.brand.hovered")
-    @js.native
-    val colorBackgroundBrandHovered: `--ds-background-brand-hovered` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.background.brand.pressed")
-    @js.native
-    val colorBackgroundBrandPressed: `--ds-background-brand-pressed` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.background.card")
-    @js.native
-    val colorBackgroundCard: `--ds-background-card` = js.native
     
     @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.background.danger")
     @js.native
@@ -762,10 +552,6 @@ object distTypesArtifactsTokenNamesMod {
     @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.background.danger.pressed")
     @js.native
     val colorBackgroundDangerPressed: `--ds-background-danger-pressed` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.background.default")
-    @js.native
-    val colorBackgroundDefault: `--ds-background-default` = js.native
     
     @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.background.disabled")
     @js.native
@@ -831,10 +617,6 @@ object distTypesArtifactsTokenNamesMod {
     @js.native
     val colorBackgroundInputPressed: `--ds-background-input-pressed` = js.native
     
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.background.inverse")
-    @js.native
-    val colorBackgroundInverse: `--ds-background-inverse` = js.native
-    
     @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.background.inverse.subtle")
     @js.native
     val colorBackgroundInverseSubtle: `--ds-background-inverse-subtle` = js.native
@@ -883,10 +665,6 @@ object distTypesArtifactsTokenNamesMod {
     @js.native
     val colorBackgroundNeutralSubtlePressed: `--ds-background-neutral-subtle-pressed` = js.native
     
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.background.overlay")
-    @js.native
-    val colorBackgroundOverlay: `--ds-background-overlay` = js.native
-    
     @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.background.selected")
     @js.native
     val colorBackgroundSelected: `--ds-background-selected` = js.native
@@ -903,10 +681,6 @@ object distTypesArtifactsTokenNamesMod {
     @js.native
     val colorBackgroundSelectedBoldPressed: `--ds-background-selected-bold-pressed` = js.native
     
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.background.selected.hover")
-    @js.native
-    val colorBackgroundSelectedHover: `--ds-background-selected-hover` = js.native
-    
     @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.background.selected.hovered")
     @js.native
     val colorBackgroundSelectedHovered: `--ds-background-selected-hovered` = js.native
@@ -914,90 +688,6 @@ object distTypesArtifactsTokenNamesMod {
     @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.background.selected.pressed")
     @js.native
     val colorBackgroundSelectedPressed: `--ds-background-selected-pressed` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.background.selected.resting")
-    @js.native
-    val colorBackgroundSelectedResting: `--ds-background-selected-resting` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.background.subtleBorderedNeutral.pressed")
-    @js.native
-    val colorBackgroundSubtleBorderedNeutralPressed: `--ds-background-subtleBorderedNeutral-pressed` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.background.subtleBorderedNeutral.resting")
-    @js.native
-    val colorBackgroundSubtleBorderedNeutralResting: `--ds-background-subtleBorderedNeutral-resting` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.background.subtleBrand.hover")
-    @js.native
-    val colorBackgroundSubtleBrandHover: `--ds-background-subtleBrand-hover` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.background.subtleBrand.pressed")
-    @js.native
-    val colorBackgroundSubtleBrandPressed: `--ds-background-subtleBrand-pressed` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.background.subtleBrand.resting")
-    @js.native
-    val colorBackgroundSubtleBrandResting: `--ds-background-subtleBrand-resting` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.background.subtleDanger.hover")
-    @js.native
-    val colorBackgroundSubtleDangerHover: `--ds-background-subtleDanger-hover` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.background.subtleDanger.pressed")
-    @js.native
-    val colorBackgroundSubtleDangerPressed: `--ds-background-subtleDanger-pressed` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.background.subtleDanger.resting")
-    @js.native
-    val colorBackgroundSubtleDangerResting: `--ds-background-subtleDanger-resting` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.background.subtleDiscovery.hover")
-    @js.native
-    val colorBackgroundSubtleDiscoveryHover: `--ds-background-subtleDiscovery-hover` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.background.subtleDiscovery.pressed")
-    @js.native
-    val colorBackgroundSubtleDiscoveryPressed: `--ds-background-subtleDiscovery-pressed` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.background.subtleDiscovery.resting")
-    @js.native
-    val colorBackgroundSubtleDiscoveryResting: `--ds-background-subtleDiscovery-resting` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.background.subtleNeutral.hover")
-    @js.native
-    val colorBackgroundSubtleNeutralHover: `--ds-background-subtleNeutral-hover` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.background.subtleNeutral.pressed")
-    @js.native
-    val colorBackgroundSubtleNeutralPressed: `--ds-background-subtleNeutral-pressed` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.background.subtleNeutral.resting")
-    @js.native
-    val colorBackgroundSubtleNeutralResting: `--ds-background-subtleNeutral-resting` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.background.subtleSuccess.hover")
-    @js.native
-    val colorBackgroundSubtleSuccessHover: `--ds-background-subtleSuccess-hover` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.background.subtleSuccess.pressed")
-    @js.native
-    val colorBackgroundSubtleSuccessPressed: `--ds-background-subtleSuccess-pressed` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.background.subtleSuccess.resting")
-    @js.native
-    val colorBackgroundSubtleSuccessResting: `--ds-background-subtleSuccess-resting` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.background.subtleWarning.hover")
-    @js.native
-    val colorBackgroundSubtleWarningHover: `--ds-background-subtleWarning-hover` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.background.subtleWarning.pressed")
-    @js.native
-    val colorBackgroundSubtleWarningPressed: `--ds-background-subtleWarning-pressed` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.background.subtleWarning.resting")
-    @js.native
-    val colorBackgroundSubtleWarningResting: `--ds-background-subtleWarning-resting` = js.native
     
     @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.background.success")
     @js.native
@@ -1022,18 +712,6 @@ object distTypesArtifactsTokenNamesMod {
     @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.background.success.pressed")
     @js.native
     val colorBackgroundSuccessPressed: `--ds-background-success-pressed` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.background.sunken")
-    @js.native
-    val colorBackgroundSunken: `--ds-background-sunken` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.background.transparentNeutral.hover")
-    @js.native
-    val colorBackgroundTransparentNeutralHover: `--ds-background-transparentNeutral-hover` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.background.transparentNeutral.pressed")
-    @js.native
-    val colorBackgroundTransparentNeutralPressed: `--ds-background-transparentNeutral-pressed` = js.native
     
     @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.background.warning")
     @js.native
@@ -1131,10 +809,6 @@ object distTypesArtifactsTokenNamesMod {
     @js.native
     val colorBorderDiscovery: `--ds-border-discovery` = js.native
     
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.border.focus")
-    @js.native
-    val colorBorderFocus: `--ds-border-focus` = js.native
-    
     @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.border.focused")
     @js.native
     val colorBorderFocused: `--ds-border-focused` = js.native
@@ -1151,10 +825,6 @@ object distTypesArtifactsTokenNamesMod {
     @js.native
     val colorBorderInverse: `--ds-border-inverse` = js.native
     
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.border.neutral")
-    @js.native
-    val colorBorderNeutral: `--ds-border-neutral` = js.native
-    
     @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.border.selected")
     @js.native
     val colorBorderSelected: `--ds-border-selected` = js.native
@@ -1166,6 +836,382 @@ object distTypesArtifactsTokenNamesMod {
     @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.border.warning")
     @js.native
     val colorBorderWarning: `--ds-border-warning` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.blue.bold")
+    @js.native
+    val colorChartBlueBold: `--ds-chart-blue-bold` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.blue.bold.hovered")
+    @js.native
+    val colorChartBlueBoldHovered: `--ds-chart-blue-bold-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.blue.bolder")
+    @js.native
+    val colorChartBlueBolder: `--ds-chart-blue-bolder` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.blue.bolder.hovered")
+    @js.native
+    val colorChartBlueBolderHovered: `--ds-chart-blue-bolder-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.blue.boldest")
+    @js.native
+    val colorChartBlueBoldest: `--ds-chart-blue-boldest` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.blue.boldest.hovered")
+    @js.native
+    val colorChartBlueBoldestHovered: `--ds-chart-blue-boldest-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.brand")
+    @js.native
+    val colorChartBrand: `--ds-chart-brand` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.brand.hovered")
+    @js.native
+    val colorChartBrandHovered: `--ds-chart-brand-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.categorical.1")
+    @js.native
+    val colorChartCategorical1: `--ds-chart-categorical-1` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.categorical.1.hovered")
+    @js.native
+    val colorChartCategorical1Hovered: `--ds-chart-categorical-1-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.categorical.2")
+    @js.native
+    val colorChartCategorical2: `--ds-chart-categorical-2` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.categorical.2.hovered")
+    @js.native
+    val colorChartCategorical2Hovered: `--ds-chart-categorical-2-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.categorical.3")
+    @js.native
+    val colorChartCategorical3: `--ds-chart-categorical-3` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.categorical.3.hovered")
+    @js.native
+    val colorChartCategorical3Hovered: `--ds-chart-categorical-3-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.categorical.4")
+    @js.native
+    val colorChartCategorical4: `--ds-chart-categorical-4` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.categorical.4.hovered")
+    @js.native
+    val colorChartCategorical4Hovered: `--ds-chart-categorical-4-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.categorical.5")
+    @js.native
+    val colorChartCategorical5: `--ds-chart-categorical-5` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.categorical.5.hovered")
+    @js.native
+    val colorChartCategorical5Hovered: `--ds-chart-categorical-5-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.categorical.6")
+    @js.native
+    val colorChartCategorical6: `--ds-chart-categorical-6` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.categorical.6.hovered")
+    @js.native
+    val colorChartCategorical6Hovered: `--ds-chart-categorical-6-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.categorical.7")
+    @js.native
+    val colorChartCategorical7: `--ds-chart-categorical-7` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.categorical.7.hovered")
+    @js.native
+    val colorChartCategorical7Hovered: `--ds-chart-categorical-7-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.categorical.8")
+    @js.native
+    val colorChartCategorical8: `--ds-chart-categorical-8` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.categorical.8.hovered")
+    @js.native
+    val colorChartCategorical8Hovered: `--ds-chart-categorical-8-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.danger")
+    @js.native
+    val colorChartDanger: `--ds-chart-danger` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.danger.bold")
+    @js.native
+    val colorChartDangerBold: `--ds-chart-danger-bold` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.danger.bold.hovered")
+    @js.native
+    val colorChartDangerBoldHovered: `--ds-chart-danger-bold-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.danger.hovered")
+    @js.native
+    val colorChartDangerHovered: `--ds-chart-danger-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.discovery")
+    @js.native
+    val colorChartDiscovery: `--ds-chart-discovery` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.discovery.bold")
+    @js.native
+    val colorChartDiscoveryBold: `--ds-chart-discovery-bold` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.discovery.bold.hovered")
+    @js.native
+    val colorChartDiscoveryBoldHovered: `--ds-chart-discovery-bold-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.discovery.hovered")
+    @js.native
+    val colorChartDiscoveryHovered: `--ds-chart-discovery-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.gray.bold")
+    @js.native
+    val colorChartGrayBold: `--ds-chart-gray-bold` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.gray.bold.hovered")
+    @js.native
+    val colorChartGrayBoldHovered: `--ds-chart-gray-bold-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.gray.bolder")
+    @js.native
+    val colorChartGrayBolder: `--ds-chart-gray-bolder` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.gray.bolder.hovered")
+    @js.native
+    val colorChartGrayBolderHovered: `--ds-chart-gray-bolder-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.gray.boldest")
+    @js.native
+    val colorChartGrayBoldest: `--ds-chart-gray-boldest` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.gray.boldest.hovered")
+    @js.native
+    val colorChartGrayBoldestHovered: `--ds-chart-gray-boldest-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.green.bold")
+    @js.native
+    val colorChartGreenBold: `--ds-chart-green-bold` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.green.bold.hovered")
+    @js.native
+    val colorChartGreenBoldHovered: `--ds-chart-green-bold-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.green.bolder")
+    @js.native
+    val colorChartGreenBolder: `--ds-chart-green-bolder` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.green.bolder.hovered")
+    @js.native
+    val colorChartGreenBolderHovered: `--ds-chart-green-bolder-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.green.boldest")
+    @js.native
+    val colorChartGreenBoldest: `--ds-chart-green-boldest` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.green.boldest.hovered")
+    @js.native
+    val colorChartGreenBoldestHovered: `--ds-chart-green-boldest-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.information")
+    @js.native
+    val colorChartInformation: `--ds-chart-information` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.information.bold")
+    @js.native
+    val colorChartInformationBold: `--ds-chart-information-bold` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.information.bold.hovered")
+    @js.native
+    val colorChartInformationBoldHovered: `--ds-chart-information-bold-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.information.hovered")
+    @js.native
+    val colorChartInformationHovered: `--ds-chart-information-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.magenta.bold")
+    @js.native
+    val colorChartMagentaBold: `--ds-chart-magenta-bold` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.magenta.bold.hovered")
+    @js.native
+    val colorChartMagentaBoldHovered: `--ds-chart-magenta-bold-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.magenta.bolder")
+    @js.native
+    val colorChartMagentaBolder: `--ds-chart-magenta-bolder` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.magenta.bolder.hovered")
+    @js.native
+    val colorChartMagentaBolderHovered: `--ds-chart-magenta-bolder-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.magenta.boldest")
+    @js.native
+    val colorChartMagentaBoldest: `--ds-chart-magenta-boldest` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.magenta.boldest.hovered")
+    @js.native
+    val colorChartMagentaBoldestHovered: `--ds-chart-magenta-boldest-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.neutral")
+    @js.native
+    val colorChartNeutral: `--ds-chart-neutral` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.neutral.hovered")
+    @js.native
+    val colorChartNeutralHovered: `--ds-chart-neutral-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.orange.bold")
+    @js.native
+    val colorChartOrangeBold: `--ds-chart-orange-bold` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.orange.bold.hovered")
+    @js.native
+    val colorChartOrangeBoldHovered: `--ds-chart-orange-bold-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.orange.bolder")
+    @js.native
+    val colorChartOrangeBolder: `--ds-chart-orange-bolder` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.orange.bolder.hovered")
+    @js.native
+    val colorChartOrangeBolderHovered: `--ds-chart-orange-bolder-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.orange.boldest")
+    @js.native
+    val colorChartOrangeBoldest: `--ds-chart-orange-boldest` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.orange.boldest.hovered")
+    @js.native
+    val colorChartOrangeBoldestHovered: `--ds-chart-orange-boldest-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.purple.bold")
+    @js.native
+    val colorChartPurpleBold: `--ds-chart-purple-bold` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.purple.bold.hovered")
+    @js.native
+    val colorChartPurpleBoldHovered: `--ds-chart-purple-bold-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.purple.bolder")
+    @js.native
+    val colorChartPurpleBolder: `--ds-chart-purple-bolder` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.purple.bolder.hovered")
+    @js.native
+    val colorChartPurpleBolderHovered: `--ds-chart-purple-bolder-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.purple.boldest")
+    @js.native
+    val colorChartPurpleBoldest: `--ds-chart-purple-boldest` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.purple.boldest.hovered")
+    @js.native
+    val colorChartPurpleBoldestHovered: `--ds-chart-purple-boldest-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.red.bold")
+    @js.native
+    val colorChartRedBold: `--ds-chart-red-bold` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.red.bold.hovered")
+    @js.native
+    val colorChartRedBoldHovered: `--ds-chart-red-bold-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.red.bolder")
+    @js.native
+    val colorChartRedBolder: `--ds-chart-red-bolder` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.red.bolder.hovered")
+    @js.native
+    val colorChartRedBolderHovered: `--ds-chart-red-bolder-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.red.boldest")
+    @js.native
+    val colorChartRedBoldest: `--ds-chart-red-boldest` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.red.boldest.hovered")
+    @js.native
+    val colorChartRedBoldestHovered: `--ds-chart-red-boldest-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.success")
+    @js.native
+    val colorChartSuccess: `--ds-chart-success` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.success.bold")
+    @js.native
+    val colorChartSuccessBold: `--ds-chart-success-bold` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.success.bold.hovered")
+    @js.native
+    val colorChartSuccessBoldHovered: `--ds-chart-success-bold-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.success.hovered")
+    @js.native
+    val colorChartSuccessHovered: `--ds-chart-success-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.teal.bold")
+    @js.native
+    val colorChartTealBold: `--ds-chart-teal-bold` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.teal.bold.hovered")
+    @js.native
+    val colorChartTealBoldHovered: `--ds-chart-teal-bold-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.teal.bolder")
+    @js.native
+    val colorChartTealBolder: `--ds-chart-teal-bolder` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.teal.bolder.hovered")
+    @js.native
+    val colorChartTealBolderHovered: `--ds-chart-teal-bolder-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.teal.boldest")
+    @js.native
+    val colorChartTealBoldest: `--ds-chart-teal-boldest` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.teal.boldest.hovered")
+    @js.native
+    val colorChartTealBoldestHovered: `--ds-chart-teal-boldest-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.warning")
+    @js.native
+    val colorChartWarning: `--ds-chart-warning` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.warning.bold")
+    @js.native
+    val colorChartWarningBold: `--ds-chart-warning-bold` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.warning.bold.hovered")
+    @js.native
+    val colorChartWarningBoldHovered: `--ds-chart-warning-bold-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.warning.hovered")
+    @js.native
+    val colorChartWarningHovered: `--ds-chart-warning-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.yellow.bold")
+    @js.native
+    val colorChartYellowBold: `--ds-chart-yellow-bold` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.yellow.bold.hovered")
+    @js.native
+    val colorChartYellowBoldHovered: `--ds-chart-yellow-bold-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.yellow.bolder")
+    @js.native
+    val colorChartYellowBolder: `--ds-chart-yellow-bolder` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.yellow.bolder.hovered")
+    @js.native
+    val colorChartYellowBolderHovered: `--ds-chart-yellow-bolder-hovered` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.yellow.boldest")
+    @js.native
+    val colorChartYellowBoldest: `--ds-chart-yellow-boldest` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.chart.yellow.boldest.hovered")
+    @js.native
+    val colorChartYellowBoldestHovered: `--ds-chart-yellow-boldest-hovered` = js.native
     
     @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.icon")
     @js.native
@@ -1206,26 +1252,6 @@ object distTypesArtifactsTokenNamesMod {
     @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.icon.accent.yellow")
     @js.native
     val colorIconAccentYellow: `--ds-icon-accent-yellow` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.iconBorder.brand")
-    @js.native
-    val colorIconBorderBrand: `--ds-iconBorder-brand` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.iconBorder.danger")
-    @js.native
-    val colorIconBorderDanger: `--ds-iconBorder-danger` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.iconBorder.discovery")
-    @js.native
-    val colorIconBorderDiscovery: `--ds-iconBorder-discovery` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.iconBorder.success")
-    @js.native
-    val colorIconBorderSuccess: `--ds-iconBorder-success` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.iconBorder.warning")
-    @js.native
-    val colorIconBorderWarning: `--ds-iconBorder-warning` = js.native
     
     @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.icon.brand")
     @js.native
@@ -1275,14 +1301,6 @@ object distTypesArtifactsTokenNamesMod {
     @js.native
     val colorInteractionHovered: `--ds-interaction-hovered` = js.native
     
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.interaction.inverse.hovered")
-    @js.native
-    val colorInteractionInverseHovered: `--ds-interaction-inverse-hovered` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.interaction.inverse.pressed")
-    @js.native
-    val colorInteractionInversePressed: `--ds-interaction-inverse-pressed` = js.native
-    
     @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.interaction.pressed")
     @js.native
     val colorInteractionPressed: `--ds-interaction-pressed` = js.native
@@ -1294,14 +1312,6 @@ object distTypesArtifactsTokenNamesMod {
     @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.link.pressed")
     @js.native
     val colorLinkPressed: `--ds-link-pressed` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.overlay.hover")
-    @js.native
-    val colorOverlayHover: `--ds-overlay-hover` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.overlay.pressed")
-    @js.native
-    val colorOverlayPressed: `--ds-overlay-pressed` = js.native
     
     @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.skeleton")
     @js.native
@@ -1403,10 +1413,6 @@ object distTypesArtifactsTokenNamesMod {
     @js.native
     val colorTextDiscovery: `--ds-text-discovery` = js.native
     
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.text.highEmphasis")
-    @js.native
-    val colorTextHighEmphasis: `--ds-text-highEmphasis` = js.native
-    
     @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.text.information")
     @js.native
     val colorTextInformation: `--ds-text-information` = js.native
@@ -1414,30 +1420,6 @@ object distTypesArtifactsTokenNamesMod {
     @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.text.inverse")
     @js.native
     val colorTextInverse: `--ds-text-inverse` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.text.link.pressed")
-    @js.native
-    val colorTextLinkPressed: `--ds-text-link-pressed` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.text.link.resting")
-    @js.native
-    val colorTextLinkResting: `--ds-text-link-resting` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.text.lowEmphasis")
-    @js.native
-    val colorTextLowEmphasis: `--ds-text-lowEmphasis` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.text.mediumEmphasis")
-    @js.native
-    val colorTextMediumEmphasis: `--ds-text-mediumEmphasis` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.text.onBold")
-    @js.native
-    val colorTextOnBold: `--ds-text-onBold` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.text.onBoldWarning")
-    @js.native
-    val colorTextOnBoldWarning: `--ds-text-onBoldWarning` = js.native
     
     @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.color.text.selected")
     @js.native
@@ -1466,6 +1448,14 @@ object distTypesArtifactsTokenNamesMod {
     @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.elevation.shadow.overflow")
     @js.native
     val elevationShadowOverflow: `--ds-shadow-overflow` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.elevation.shadow.overflow.perimeter")
+    @js.native
+    val elevationShadowOverflowPerimeter: `--ds-shadow-overflow-perimeter` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.elevation.shadow.overflow.spread")
+    @js.native
+    val elevationShadowOverflowSpread: `--ds-shadow-overflow-spread` = js.native
     
     @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.elevation.shadow.overlay")
     @js.native
@@ -1515,6 +1505,86 @@ object distTypesArtifactsTokenNamesMod {
     @js.native
     val elevationSurfaceSunken: `--ds-surface-sunken` = js.native
     
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.font.family.monospace")
+    @js.native
+    val fontFamilyMonospace: `--ds-font-family-monospace` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.font.family.sans")
+    @js.native
+    val fontFamilySans: `--ds-font-family-sans` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.font.lineHeight.100")
+    @js.native
+    val fontLineHeight100: `--ds-font-lineHeight-100` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.font.lineHeight.200")
+    @js.native
+    val fontLineHeight200: `--ds-font-lineHeight-200` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.font.lineHeight.300")
+    @js.native
+    val fontLineHeight300: `--ds-font-lineHeight-300` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.font.lineHeight.400")
+    @js.native
+    val fontLineHeight400: `--ds-font-lineHeight-400` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.font.lineHeight.500")
+    @js.native
+    val fontLineHeight500: `--ds-font-lineHeight-500` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.font.lineHeight.600")
+    @js.native
+    val fontLineHeight600: `--ds-font-lineHeight-600` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.font.size.050")
+    @js.native
+    val fontSize050: `--ds-font-size-050` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.font.size.075")
+    @js.native
+    val fontSize075: `--ds-font-size-075` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.font.size.100")
+    @js.native
+    val fontSize100: `--ds-font-size-100` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.font.size.200")
+    @js.native
+    val fontSize200: `--ds-font-size-200` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.font.size.300")
+    @js.native
+    val fontSize300: `--ds-font-size-300` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.font.size.400")
+    @js.native
+    val fontSize400: `--ds-font-size-400` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.font.size.500")
+    @js.native
+    val fontSize500: `--ds-font-size-500` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.font.size.600")
+    @js.native
+    val fontSize600: `--ds-font-size-600` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.font.weight.bold")
+    @js.native
+    val fontWeightBold: `--ds-font-weight-bold` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.font.weight.medium")
+    @js.native
+    val fontWeightMedium: `--ds-font-weight-medium` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.font.weight.regular")
+    @js.native
+    val fontWeightRegular: `--ds-font-weight-regular` = js.native
+    
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.font.weight.semibold")
+    @js.native
+    val fontWeightSemibold: `--ds-font-weight-semibold` = js.native
+    
     @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.opacity.disabled")
     @js.native
     val opacityDisabled: `--ds-opacity-disabled` = js.native
@@ -1523,360 +1593,70 @@ object distTypesArtifactsTokenNamesMod {
     @js.native
     val opacityLoading: `--ds-opacity-loading` = js.native
     
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.shadow.card")
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.space.0")
     @js.native
-    val shadowCard: `--ds-card` = js.native
+    val space0: `--ds-space-0` = js.native
     
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.shadow.overlay")
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.space.025")
     @js.native
-    val shadowOverlay: `--ds-overlay` = js.native
+    val space025: `--ds-space-025` = js.native
     
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.ccc.component.2")
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.space.050")
     @js.native
-    val spacingCccComponent2: `--ds-ccc-component-2` = js.native
+    val space050: `--ds-space-050` = js.native
     
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.ccc.component.4")
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.space.075")
     @js.native
-    val spacingCccComponent4: `--ds-ccc-component-4` = js.native
+    val space075: `--ds-space-075` = js.native
     
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.ccc.component.6")
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.space.100")
     @js.native
-    val spacingCccComponent6: `--ds-ccc-component-6` = js.native
+    val space100: `--ds-space-100` = js.native
     
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.ccc.component.8")
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.space.1000")
     @js.native
-    val spacingCccComponent8: `--ds-ccc-component-8` = js.native
+    val space1000: `--ds-space-1000` = js.native
     
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.ccc.container.32")
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.space.150")
     @js.native
-    val spacingCccContainer32: `--ds-ccc-container-32` = js.native
+    val space150: `--ds-space-150` = js.native
     
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.ccc.container.40")
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.space.200")
     @js.native
-    val spacingCccContainer40: `--ds-ccc-container-40` = js.native
+    val space200: `--ds-space-200` = js.native
     
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.ccc.container.48")
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.space.250")
     @js.native
-    val spacingCccContainer48: `--ds-ccc-container-48` = js.native
+    val space250: `--ds-space-250` = js.native
     
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.ccc.content.12")
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.space.300")
     @js.native
-    val spacingCccContent12: `--ds-ccc-content-12` = js.native
+    val space300: `--ds-space-300` = js.native
     
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.ccc.content.16")
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.space.400")
     @js.native
-    val spacingCccContent16: `--ds-ccc-content-16` = js.native
+    val space400: `--ds-space-400` = js.native
     
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.ccc.content.20")
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.space.500")
     @js.native
-    val spacingCccContent20: `--ds-ccc-content-20` = js.native
+    val space500: `--ds-space-500` = js.native
     
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.ccc.content.24")
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.space.600")
     @js.native
-    val spacingCccContent24: `--ds-ccc-content-24` = js.native
+    val space600: `--ds-space-600` = js.native
     
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.ecl.container.12")
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.space.800")
     @js.native
-    val spacingEclContainer12: `--ds-ecl-container-12` = js.native
+    val space800: `--ds-space-800` = js.native
     
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.ecl.container.16")
+    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.utility.UNSAFE.transparent")
     @js.native
-    val spacingEclContainer16: `--ds-ecl-container-16` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.ecl.container.20")
-    @js.native
-    val spacingEclContainer20: `--ds-ecl-container-20` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.ecl.container.24")
-    @js.native
-    val spacingEclContainer24: `--ds-ecl-container-24` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.ecl.element.2")
-    @js.native
-    val spacingEclElement2: `--ds-ecl-element-2` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.ecl.element.4")
-    @js.native
-    val spacingEclElement4: `--ds-ecl-element-4` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.ecl.element.6")
-    @js.native
-    val spacingEclElement6: `--ds-ecl-element-6` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.ecl.element.8")
-    @js.native
-    val spacingEclElement8: `--ds-ecl-element-8` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.ecl.layout.32")
-    @js.native
-    val spacingEclLayout32: `--ds-ecl-layout-32` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.ecl.layout.40")
-    @js.native
-    val spacingEclLayout40: `--ds-ecl-layout-40` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.ecl.layout.64")
-    @js.native
-    val spacingEclLayout64: `--ds-ecl-layout-64` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.gap.100")
-    @js.native
-    val spacingGap100: `--ds-gap-100` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.gap.200")
-    @js.native
-    val spacingGap200: `--ds-gap-200` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.gap.300")
-    @js.native
-    val spacingGap300: `--ds-gap-300` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.inset.100")
-    @js.native
-    val spacingInset100: `--ds-inset-100` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.inset.200")
-    @js.native
-    val spacingInset200: `--ds-inset-200` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.inset.300")
-    @js.native
-    val spacingInset300: `--ds-inset-300` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.pixel.0")
-    @js.native
-    val spacingPixel0: `--ds-pixel-0` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.pixel.12")
-    @js.native
-    val spacingPixel12: `--ds-pixel-12` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.pixel.16")
-    @js.native
-    val spacingPixel16: `--ds-pixel-16` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.pixel.2")
-    @js.native
-    val spacingPixel2: `--ds-pixel-2` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.pixel.20")
-    @js.native
-    val spacingPixel20: `--ds-pixel-20` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.pixel.24")
-    @js.native
-    val spacingPixel24: `--ds-pixel-24` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.pixel.32")
-    @js.native
-    val spacingPixel32: `--ds-pixel-32` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.pixel.4")
-    @js.native
-    val spacingPixel4: `--ds-pixel-4` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.pixel.40")
-    @js.native
-    val spacingPixel40: `--ds-pixel-40` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.pixel.48")
-    @js.native
-    val spacingPixel48: `--ds-pixel-48` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.pixel.6")
-    @js.native
-    val spacingPixel6: `--ds-pixel-6` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.pixel.8")
-    @js.native
-    val spacingPixel8: `--ds-pixel-8` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.scale.0")
-    @js.native
-    val spacingScale0: `--ds-scale-0` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.scale.025")
-    @js.native
-    val spacingScale025: `--ds-scale-025` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.scale.050")
-    @js.native
-    val spacingScale050: `--ds-scale-050` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.scale.075")
-    @js.native
-    val spacingScale075: `--ds-scale-075` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.scale.100")
-    @js.native
-    val spacingScale100: `--ds-scale-100` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.scale.150")
-    @js.native
-    val spacingScale150: `--ds-scale-150` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.scale.200")
-    @js.native
-    val spacingScale200: `--ds-scale-200` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.scale.250")
-    @js.native
-    val spacingScale250: `--ds-scale-250` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.scale.300")
-    @js.native
-    val spacingScale300: `--ds-scale-300` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.scale.400")
-    @js.native
-    val spacingScale400: `--ds-scale-400` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.scale.500")
-    @js.native
-    val spacingScale500: `--ds-scale-500` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.scale.600")
-    @js.native
-    val spacingScale600: `--ds-scale-600` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.scaleLinear.0")
-    @js.native
-    val spacingScaleLinear0: `--ds-scaleLinear-0` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.scaleLinear.100")
-    @js.native
-    val spacingScaleLinear100: `--ds-scaleLinear-100` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.scaleLinear.1000")
-    @js.native
-    val spacingScaleLinear1000: `--ds-scaleLinear-1000` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.scaleLinear.1100")
-    @js.native
-    val spacingScaleLinear1100: `--ds-scaleLinear-1100` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.scaleLinear.200")
-    @js.native
-    val spacingScaleLinear200: `--ds-scaleLinear-200` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.scaleLinear.300")
-    @js.native
-    val spacingScaleLinear300: `--ds-scaleLinear-300` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.scaleLinear.400")
-    @js.native
-    val spacingScaleLinear400: `--ds-scaleLinear-400` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.scaleLinear.500")
-    @js.native
-    val spacingScaleLinear500: `--ds-scaleLinear-500` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.scaleLinear.600")
-    @js.native
-    val spacingScaleLinear600: `--ds-scaleLinear-600` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.scaleLinear.700")
-    @js.native
-    val spacingScaleLinear700: `--ds-scaleLinear-700` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.scaleLinear.800")
-    @js.native
-    val spacingScaleLinear800: `--ds-scaleLinear-800` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.scaleLinear.900")
-    @js.native
-    val spacingScaleLinear900: `--ds-scaleLinear-900` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.size.large")
-    @js.native
-    val spacingSizeLarge: `--ds-size-large` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.size.medium")
-    @js.native
-    val spacingSizeMedium: `--ds-size-medium` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.size.none")
-    @js.native
-    val spacingSizeNone: `--ds-size-none` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.size.small")
-    @js.native
-    val spacingSizeSmall: `--ds-size-small` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.size.xlarge")
-    @js.native
-    val spacingSizeXlarge: `--ds-size-xlarge` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.size.xsmall")
-    @js.native
-    val spacingSizeXsmall: `--ds-size-xsmall` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.size.xxSmall")
-    @js.native
-    val spacingSizeXxSmall: `--ds-size-xxSmall` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.size.xxlarge")
-    @js.native
-    val spacingSizeXxlarge: `--ds-size-xxlarge` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.size.xxxSmall")
-    @js.native
-    val spacingSizeXxxSmall: `--ds-size-xxxSmall` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.size.xxxlarge")
-    @js.native
-    val spacingSizeXxxlarge: `--ds-size-xxxlarge` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.size.xxxxSmall")
-    @js.native
-    val spacingSizeXxxxSmall: `--ds-size-xxxxSmall` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.spacing.size.xxxxlarge")
-    @js.native
-    val spacingSizeXxxxlarge: `--ds-size-xxxxlarge` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.utility.UNSAFE_util.MISSING_TOKEN")
-    @js.native
-    val utilityUNSAFEUtilMISSINGTOKEN: `--ds-UNSAFE_util-MISSING_TOKEN` = js.native
-    
-    @JSImport("@atlaskit/tokens/dist/types/artifacts/token-names", "default.utility.UNSAFE_util.transparent")
-    @js.native
-    val utilityUNSAFEUtilTransparent: `--ds-UNSAFE_util-transparent` = js.native
+    val utilityUNSAFETransparent: `--ds-UNSAFE-transparent` = js.native
   }
   
   object CSSToken {
     
-    inline def `varLeftparenthesis--ds-UNSAFE_util-MISSING_TOKENRightparenthesis`: /* var(--ds-UNSAFE_util-MISSING_TOKEN) */ String = "var(--ds-UNSAFE_util-MISSING_TOKEN)".asInstanceOf[/* var(--ds-UNSAFE_util-MISSING_TOKEN) */ String]
-    
-    inline def `varLeftparenthesis--ds-UNSAFE_util-transparentRightparenthesis`: /* var(--ds-UNSAFE_util-transparent) */ String = "var(--ds-UNSAFE_util-transparent)".asInstanceOf[/* var(--ds-UNSAFE_util-transparent) */ String]
-    
-    inline def `varLeftparenthesis--ds-accent-boldBlueRightparenthesis`: /* var(--ds-accent-boldBlue) */ String = "var(--ds-accent-boldBlue)".asInstanceOf[/* var(--ds-accent-boldBlue) */ String]
-    
-    inline def `varLeftparenthesis--ds-accent-boldGreenRightparenthesis`: /* var(--ds-accent-boldGreen) */ String = "var(--ds-accent-boldGreen)".asInstanceOf[/* var(--ds-accent-boldGreen) */ String]
-    
-    inline def `varLeftparenthesis--ds-accent-boldOrangeRightparenthesis`: /* var(--ds-accent-boldOrange) */ String = "var(--ds-accent-boldOrange)".asInstanceOf[/* var(--ds-accent-boldOrange) */ String]
-    
-    inline def `varLeftparenthesis--ds-accent-boldPurpleRightparenthesis`: /* var(--ds-accent-boldPurple) */ String = "var(--ds-accent-boldPurple)".asInstanceOf[/* var(--ds-accent-boldPurple) */ String]
-    
-    inline def `varLeftparenthesis--ds-accent-boldRedRightparenthesis`: /* var(--ds-accent-boldRed) */ String = "var(--ds-accent-boldRed)".asInstanceOf[/* var(--ds-accent-boldRed) */ String]
-    
-    inline def `varLeftparenthesis--ds-accent-boldTealRightparenthesis`: /* var(--ds-accent-boldTeal) */ String = "var(--ds-accent-boldTeal)".asInstanceOf[/* var(--ds-accent-boldTeal) */ String]
-    
-    inline def `varLeftparenthesis--ds-accent-subtleBlueRightparenthesis`: /* var(--ds-accent-subtleBlue) */ String = "var(--ds-accent-subtleBlue)".asInstanceOf[/* var(--ds-accent-subtleBlue) */ String]
-    
-    inline def `varLeftparenthesis--ds-accent-subtleGreenRightparenthesis`: /* var(--ds-accent-subtleGreen) */ String = "var(--ds-accent-subtleGreen)".asInstanceOf[/* var(--ds-accent-subtleGreen) */ String]
-    
-    inline def `varLeftparenthesis--ds-accent-subtleMagentaRightparenthesis`: /* var(--ds-accent-subtleMagenta) */ String = "var(--ds-accent-subtleMagenta)".asInstanceOf[/* var(--ds-accent-subtleMagenta) */ String]
-    
-    inline def `varLeftparenthesis--ds-accent-subtleOrangeRightparenthesis`: /* var(--ds-accent-subtleOrange) */ String = "var(--ds-accent-subtleOrange)".asInstanceOf[/* var(--ds-accent-subtleOrange) */ String]
-    
-    inline def `varLeftparenthesis--ds-accent-subtlePurpleRightparenthesis`: /* var(--ds-accent-subtlePurple) */ String = "var(--ds-accent-subtlePurple)".asInstanceOf[/* var(--ds-accent-subtlePurple) */ String]
-    
-    inline def `varLeftparenthesis--ds-accent-subtleRedRightparenthesis`: /* var(--ds-accent-subtleRed) */ String = "var(--ds-accent-subtleRed)".asInstanceOf[/* var(--ds-accent-subtleRed) */ String]
-    
-    inline def `varLeftparenthesis--ds-accent-subtleTealRightparenthesis`: /* var(--ds-accent-subtleTeal) */ String = "var(--ds-accent-subtleTeal)".asInstanceOf[/* var(--ds-accent-subtleTeal) */ String]
-    
-    inline def `varLeftparenthesis--ds-background-accent-blue-boldRightparenthesis`: /* var(--ds-background-accent-blue-bold) */ String = "var(--ds-background-accent-blue-bold)".asInstanceOf[/* var(--ds-background-accent-blue-bold) */ String]
+    inline def `varLeftparenthesis--ds-UNSAFE-transparentRightparenthesis`: /* var(--ds-UNSAFE-transparent) */ String = "var(--ds-UNSAFE-transparent)".asInstanceOf[/* var(--ds-UNSAFE-transparent) */ String]
     
     inline def `varLeftparenthesis--ds-background-accent-blue-bolderRightparenthesis`: /* var(--ds-background-accent-blue-bolder) */ String = "var(--ds-background-accent-blue-bolder)".asInstanceOf[/* var(--ds-background-accent-blue-bolder) */ String]
     
@@ -1886,8 +1666,6 @@ object distTypesArtifactsTokenNamesMod {
     
     inline def `varLeftparenthesis--ds-background-accent-blue-subtlestRightparenthesis`: /* var(--ds-background-accent-blue-subtlest) */ String = "var(--ds-background-accent-blue-subtlest)".asInstanceOf[/* var(--ds-background-accent-blue-subtlest) */ String]
     
-    inline def `varLeftparenthesis--ds-background-accent-blueRightparenthesis`: /* var(--ds-background-accent-blue) */ String = "var(--ds-background-accent-blue)".asInstanceOf[/* var(--ds-background-accent-blue) */ String]
-    
     inline def `varLeftparenthesis--ds-background-accent-gray-bolderRightparenthesis`: /* var(--ds-background-accent-gray-bolder) */ String = "var(--ds-background-accent-gray-bolder)".asInstanceOf[/* var(--ds-background-accent-gray-bolder) */ String]
     
     inline def `varLeftparenthesis--ds-background-accent-gray-subtleRightparenthesis`: /* var(--ds-background-accent-gray-subtle) */ String = "var(--ds-background-accent-gray-subtle)".asInstanceOf[/* var(--ds-background-accent-gray-subtle) */ String]
@@ -1895,8 +1673,6 @@ object distTypesArtifactsTokenNamesMod {
     inline def `varLeftparenthesis--ds-background-accent-gray-subtlerRightparenthesis`: /* var(--ds-background-accent-gray-subtler) */ String = "var(--ds-background-accent-gray-subtler)".asInstanceOf[/* var(--ds-background-accent-gray-subtler) */ String]
     
     inline def `varLeftparenthesis--ds-background-accent-gray-subtlestRightparenthesis`: /* var(--ds-background-accent-gray-subtlest) */ String = "var(--ds-background-accent-gray-subtlest)".asInstanceOf[/* var(--ds-background-accent-gray-subtlest) */ String]
-    
-    inline def `varLeftparenthesis--ds-background-accent-green-boldRightparenthesis`: /* var(--ds-background-accent-green-bold) */ String = "var(--ds-background-accent-green-bold)".asInstanceOf[/* var(--ds-background-accent-green-bold) */ String]
     
     inline def `varLeftparenthesis--ds-background-accent-green-bolderRightparenthesis`: /* var(--ds-background-accent-green-bolder) */ String = "var(--ds-background-accent-green-bolder)".asInstanceOf[/* var(--ds-background-accent-green-bolder) */ String]
     
@@ -1906,10 +1682,6 @@ object distTypesArtifactsTokenNamesMod {
     
     inline def `varLeftparenthesis--ds-background-accent-green-subtlestRightparenthesis`: /* var(--ds-background-accent-green-subtlest) */ String = "var(--ds-background-accent-green-subtlest)".asInstanceOf[/* var(--ds-background-accent-green-subtlest) */ String]
     
-    inline def `varLeftparenthesis--ds-background-accent-greenRightparenthesis`: /* var(--ds-background-accent-green) */ String = "var(--ds-background-accent-green)".asInstanceOf[/* var(--ds-background-accent-green) */ String]
-    
-    inline def `varLeftparenthesis--ds-background-accent-magenta-boldRightparenthesis`: /* var(--ds-background-accent-magenta-bold) */ String = "var(--ds-background-accent-magenta-bold)".asInstanceOf[/* var(--ds-background-accent-magenta-bold) */ String]
-    
     inline def `varLeftparenthesis--ds-background-accent-magenta-bolderRightparenthesis`: /* var(--ds-background-accent-magenta-bolder) */ String = "var(--ds-background-accent-magenta-bolder)".asInstanceOf[/* var(--ds-background-accent-magenta-bolder) */ String]
     
     inline def `varLeftparenthesis--ds-background-accent-magenta-subtleRightparenthesis`: /* var(--ds-background-accent-magenta-subtle) */ String = "var(--ds-background-accent-magenta-subtle)".asInstanceOf[/* var(--ds-background-accent-magenta-subtle) */ String]
@@ -1917,10 +1689,6 @@ object distTypesArtifactsTokenNamesMod {
     inline def `varLeftparenthesis--ds-background-accent-magenta-subtlerRightparenthesis`: /* var(--ds-background-accent-magenta-subtler) */ String = "var(--ds-background-accent-magenta-subtler)".asInstanceOf[/* var(--ds-background-accent-magenta-subtler) */ String]
     
     inline def `varLeftparenthesis--ds-background-accent-magenta-subtlestRightparenthesis`: /* var(--ds-background-accent-magenta-subtlest) */ String = "var(--ds-background-accent-magenta-subtlest)".asInstanceOf[/* var(--ds-background-accent-magenta-subtlest) */ String]
-    
-    inline def `varLeftparenthesis--ds-background-accent-magentaRightparenthesis`: /* var(--ds-background-accent-magenta) */ String = "var(--ds-background-accent-magenta)".asInstanceOf[/* var(--ds-background-accent-magenta) */ String]
-    
-    inline def `varLeftparenthesis--ds-background-accent-orange-boldRightparenthesis`: /* var(--ds-background-accent-orange-bold) */ String = "var(--ds-background-accent-orange-bold)".asInstanceOf[/* var(--ds-background-accent-orange-bold) */ String]
     
     inline def `varLeftparenthesis--ds-background-accent-orange-bolderRightparenthesis`: /* var(--ds-background-accent-orange-bolder) */ String = "var(--ds-background-accent-orange-bolder)".asInstanceOf[/* var(--ds-background-accent-orange-bolder) */ String]
     
@@ -1930,10 +1698,6 @@ object distTypesArtifactsTokenNamesMod {
     
     inline def `varLeftparenthesis--ds-background-accent-orange-subtlestRightparenthesis`: /* var(--ds-background-accent-orange-subtlest) */ String = "var(--ds-background-accent-orange-subtlest)".asInstanceOf[/* var(--ds-background-accent-orange-subtlest) */ String]
     
-    inline def `varLeftparenthesis--ds-background-accent-orangeRightparenthesis`: /* var(--ds-background-accent-orange) */ String = "var(--ds-background-accent-orange)".asInstanceOf[/* var(--ds-background-accent-orange) */ String]
-    
-    inline def `varLeftparenthesis--ds-background-accent-purple-boldRightparenthesis`: /* var(--ds-background-accent-purple-bold) */ String = "var(--ds-background-accent-purple-bold)".asInstanceOf[/* var(--ds-background-accent-purple-bold) */ String]
-    
     inline def `varLeftparenthesis--ds-background-accent-purple-bolderRightparenthesis`: /* var(--ds-background-accent-purple-bolder) */ String = "var(--ds-background-accent-purple-bolder)".asInstanceOf[/* var(--ds-background-accent-purple-bolder) */ String]
     
     inline def `varLeftparenthesis--ds-background-accent-purple-subtleRightparenthesis`: /* var(--ds-background-accent-purple-subtle) */ String = "var(--ds-background-accent-purple-subtle)".asInstanceOf[/* var(--ds-background-accent-purple-subtle) */ String]
@@ -1941,10 +1705,6 @@ object distTypesArtifactsTokenNamesMod {
     inline def `varLeftparenthesis--ds-background-accent-purple-subtlerRightparenthesis`: /* var(--ds-background-accent-purple-subtler) */ String = "var(--ds-background-accent-purple-subtler)".asInstanceOf[/* var(--ds-background-accent-purple-subtler) */ String]
     
     inline def `varLeftparenthesis--ds-background-accent-purple-subtlestRightparenthesis`: /* var(--ds-background-accent-purple-subtlest) */ String = "var(--ds-background-accent-purple-subtlest)".asInstanceOf[/* var(--ds-background-accent-purple-subtlest) */ String]
-    
-    inline def `varLeftparenthesis--ds-background-accent-purpleRightparenthesis`: /* var(--ds-background-accent-purple) */ String = "var(--ds-background-accent-purple)".asInstanceOf[/* var(--ds-background-accent-purple) */ String]
-    
-    inline def `varLeftparenthesis--ds-background-accent-red-boldRightparenthesis`: /* var(--ds-background-accent-red-bold) */ String = "var(--ds-background-accent-red-bold)".asInstanceOf[/* var(--ds-background-accent-red-bold) */ String]
     
     inline def `varLeftparenthesis--ds-background-accent-red-bolderRightparenthesis`: /* var(--ds-background-accent-red-bolder) */ String = "var(--ds-background-accent-red-bolder)".asInstanceOf[/* var(--ds-background-accent-red-bolder) */ String]
     
@@ -1954,10 +1714,6 @@ object distTypesArtifactsTokenNamesMod {
     
     inline def `varLeftparenthesis--ds-background-accent-red-subtlestRightparenthesis`: /* var(--ds-background-accent-red-subtlest) */ String = "var(--ds-background-accent-red-subtlest)".asInstanceOf[/* var(--ds-background-accent-red-subtlest) */ String]
     
-    inline def `varLeftparenthesis--ds-background-accent-redRightparenthesis`: /* var(--ds-background-accent-red) */ String = "var(--ds-background-accent-red)".asInstanceOf[/* var(--ds-background-accent-red) */ String]
-    
-    inline def `varLeftparenthesis--ds-background-accent-teal-boldRightparenthesis`: /* var(--ds-background-accent-teal-bold) */ String = "var(--ds-background-accent-teal-bold)".asInstanceOf[/* var(--ds-background-accent-teal-bold) */ String]
-    
     inline def `varLeftparenthesis--ds-background-accent-teal-bolderRightparenthesis`: /* var(--ds-background-accent-teal-bolder) */ String = "var(--ds-background-accent-teal-bolder)".asInstanceOf[/* var(--ds-background-accent-teal-bolder) */ String]
     
     inline def `varLeftparenthesis--ds-background-accent-teal-subtleRightparenthesis`: /* var(--ds-background-accent-teal-subtle) */ String = "var(--ds-background-accent-teal-subtle)".asInstanceOf[/* var(--ds-background-accent-teal-subtle) */ String]
@@ -1965,10 +1721,6 @@ object distTypesArtifactsTokenNamesMod {
     inline def `varLeftparenthesis--ds-background-accent-teal-subtlerRightparenthesis`: /* var(--ds-background-accent-teal-subtler) */ String = "var(--ds-background-accent-teal-subtler)".asInstanceOf[/* var(--ds-background-accent-teal-subtler) */ String]
     
     inline def `varLeftparenthesis--ds-background-accent-teal-subtlestRightparenthesis`: /* var(--ds-background-accent-teal-subtlest) */ String = "var(--ds-background-accent-teal-subtlest)".asInstanceOf[/* var(--ds-background-accent-teal-subtlest) */ String]
-    
-    inline def `varLeftparenthesis--ds-background-accent-tealRightparenthesis`: /* var(--ds-background-accent-teal) */ String = "var(--ds-background-accent-teal)".asInstanceOf[/* var(--ds-background-accent-teal) */ String]
-    
-    inline def `varLeftparenthesis--ds-background-accent-yellow-boldRightparenthesis`: /* var(--ds-background-accent-yellow-bold) */ String = "var(--ds-background-accent-yellow-bold)".asInstanceOf[/* var(--ds-background-accent-yellow-bold) */ String]
     
     inline def `varLeftparenthesis--ds-background-accent-yellow-bolderRightparenthesis`: /* var(--ds-background-accent-yellow-bolder) */ String = "var(--ds-background-accent-yellow-bolder)".asInstanceOf[/* var(--ds-background-accent-yellow-bolder) */ String]
     
@@ -1978,59 +1730,11 @@ object distTypesArtifactsTokenNamesMod {
     
     inline def `varLeftparenthesis--ds-background-accent-yellow-subtlestRightparenthesis`: /* var(--ds-background-accent-yellow-subtlest) */ String = "var(--ds-background-accent-yellow-subtlest)".asInstanceOf[/* var(--ds-background-accent-yellow-subtlest) */ String]
     
-    inline def `varLeftparenthesis--ds-background-accent-yellowRightparenthesis`: /* var(--ds-background-accent-yellow) */ String = "var(--ds-background-accent-yellow)".asInstanceOf[/* var(--ds-background-accent-yellow) */ String]
-    
-    inline def `varLeftparenthesis--ds-background-blanketRightparenthesis`: /* var(--ds-background-blanket) */ String = "var(--ds-background-blanket)".asInstanceOf[/* var(--ds-background-blanket) */ String]
-    
-    inline def `varLeftparenthesis--ds-background-boldBrand-hoverRightparenthesis`: /* var(--ds-background-boldBrand-hover) */ String = "var(--ds-background-boldBrand-hover)".asInstanceOf[/* var(--ds-background-boldBrand-hover) */ String]
-    
-    inline def `varLeftparenthesis--ds-background-boldBrand-pressedRightparenthesis`: /* var(--ds-background-boldBrand-pressed) */ String = "var(--ds-background-boldBrand-pressed)".asInstanceOf[/* var(--ds-background-boldBrand-pressed) */ String]
-    
-    inline def `varLeftparenthesis--ds-background-boldBrand-restingRightparenthesis`: /* var(--ds-background-boldBrand-resting) */ String = "var(--ds-background-boldBrand-resting)".asInstanceOf[/* var(--ds-background-boldBrand-resting) */ String]
-    
-    inline def `varLeftparenthesis--ds-background-boldDanger-hoverRightparenthesis`: /* var(--ds-background-boldDanger-hover) */ String = "var(--ds-background-boldDanger-hover)".asInstanceOf[/* var(--ds-background-boldDanger-hover) */ String]
-    
-    inline def `varLeftparenthesis--ds-background-boldDanger-pressedRightparenthesis`: /* var(--ds-background-boldDanger-pressed) */ String = "var(--ds-background-boldDanger-pressed)".asInstanceOf[/* var(--ds-background-boldDanger-pressed) */ String]
-    
-    inline def `varLeftparenthesis--ds-background-boldDanger-restingRightparenthesis`: /* var(--ds-background-boldDanger-resting) */ String = "var(--ds-background-boldDanger-resting)".asInstanceOf[/* var(--ds-background-boldDanger-resting) */ String]
-    
-    inline def `varLeftparenthesis--ds-background-boldDiscovery-hoverRightparenthesis`: /* var(--ds-background-boldDiscovery-hover) */ String = "var(--ds-background-boldDiscovery-hover)".asInstanceOf[/* var(--ds-background-boldDiscovery-hover) */ String]
-    
-    inline def `varLeftparenthesis--ds-background-boldDiscovery-pressedRightparenthesis`: /* var(--ds-background-boldDiscovery-pressed) */ String = "var(--ds-background-boldDiscovery-pressed)".asInstanceOf[/* var(--ds-background-boldDiscovery-pressed) */ String]
-    
-    inline def `varLeftparenthesis--ds-background-boldDiscovery-restingRightparenthesis`: /* var(--ds-background-boldDiscovery-resting) */ String = "var(--ds-background-boldDiscovery-resting)".asInstanceOf[/* var(--ds-background-boldDiscovery-resting) */ String]
-    
-    inline def `varLeftparenthesis--ds-background-boldNeutral-hoverRightparenthesis`: /* var(--ds-background-boldNeutral-hover) */ String = "var(--ds-background-boldNeutral-hover)".asInstanceOf[/* var(--ds-background-boldNeutral-hover) */ String]
-    
-    inline def `varLeftparenthesis--ds-background-boldNeutral-pressedRightparenthesis`: /* var(--ds-background-boldNeutral-pressed) */ String = "var(--ds-background-boldNeutral-pressed)".asInstanceOf[/* var(--ds-background-boldNeutral-pressed) */ String]
-    
-    inline def `varLeftparenthesis--ds-background-boldNeutral-restingRightparenthesis`: /* var(--ds-background-boldNeutral-resting) */ String = "var(--ds-background-boldNeutral-resting)".asInstanceOf[/* var(--ds-background-boldNeutral-resting) */ String]
-    
-    inline def `varLeftparenthesis--ds-background-boldSuccess-hoverRightparenthesis`: /* var(--ds-background-boldSuccess-hover) */ String = "var(--ds-background-boldSuccess-hover)".asInstanceOf[/* var(--ds-background-boldSuccess-hover) */ String]
-    
-    inline def `varLeftparenthesis--ds-background-boldSuccess-pressedRightparenthesis`: /* var(--ds-background-boldSuccess-pressed) */ String = "var(--ds-background-boldSuccess-pressed)".asInstanceOf[/* var(--ds-background-boldSuccess-pressed) */ String]
-    
-    inline def `varLeftparenthesis--ds-background-boldSuccess-restingRightparenthesis`: /* var(--ds-background-boldSuccess-resting) */ String = "var(--ds-background-boldSuccess-resting)".asInstanceOf[/* var(--ds-background-boldSuccess-resting) */ String]
-    
-    inline def `varLeftparenthesis--ds-background-boldWarning-hoverRightparenthesis`: /* var(--ds-background-boldWarning-hover) */ String = "var(--ds-background-boldWarning-hover)".asInstanceOf[/* var(--ds-background-boldWarning-hover) */ String]
-    
-    inline def `varLeftparenthesis--ds-background-boldWarning-pressedRightparenthesis`: /* var(--ds-background-boldWarning-pressed) */ String = "var(--ds-background-boldWarning-pressed)".asInstanceOf[/* var(--ds-background-boldWarning-pressed) */ String]
-    
-    inline def `varLeftparenthesis--ds-background-boldWarning-restingRightparenthesis`: /* var(--ds-background-boldWarning-resting) */ String = "var(--ds-background-boldWarning-resting)".asInstanceOf[/* var(--ds-background-boldWarning-resting) */ String]
-    
     inline def `varLeftparenthesis--ds-background-brand-bold-hoveredRightparenthesis`: /* var(--ds-background-brand-bold-hovered) */ String = "var(--ds-background-brand-bold-hovered)".asInstanceOf[/* var(--ds-background-brand-bold-hovered) */ String]
     
     inline def `varLeftparenthesis--ds-background-brand-bold-pressedRightparenthesis`: /* var(--ds-background-brand-bold-pressed) */ String = "var(--ds-background-brand-bold-pressed)".asInstanceOf[/* var(--ds-background-brand-bold-pressed) */ String]
     
     inline def `varLeftparenthesis--ds-background-brand-boldRightparenthesis`: /* var(--ds-background-brand-bold) */ String = "var(--ds-background-brand-bold)".asInstanceOf[/* var(--ds-background-brand-bold) */ String]
-    
-    inline def `varLeftparenthesis--ds-background-brand-hoveredRightparenthesis`: /* var(--ds-background-brand-hovered) */ String = "var(--ds-background-brand-hovered)".asInstanceOf[/* var(--ds-background-brand-hovered) */ String]
-    
-    inline def `varLeftparenthesis--ds-background-brand-pressedRightparenthesis`: /* var(--ds-background-brand-pressed) */ String = "var(--ds-background-brand-pressed)".asInstanceOf[/* var(--ds-background-brand-pressed) */ String]
-    
-    inline def `varLeftparenthesis--ds-background-brandRightparenthesis`: /* var(--ds-background-brand) */ String = "var(--ds-background-brand)".asInstanceOf[/* var(--ds-background-brand) */ String]
-    
-    inline def `varLeftparenthesis--ds-background-cardRightparenthesis`: /* var(--ds-background-card) */ String = "var(--ds-background-card)".asInstanceOf[/* var(--ds-background-card) */ String]
     
     inline def `varLeftparenthesis--ds-background-danger-bold-hoveredRightparenthesis`: /* var(--ds-background-danger-bold-hovered) */ String = "var(--ds-background-danger-bold-hovered)".asInstanceOf[/* var(--ds-background-danger-bold-hovered) */ String]
     
@@ -2043,8 +1747,6 @@ object distTypesArtifactsTokenNamesMod {
     inline def `varLeftparenthesis--ds-background-danger-pressedRightparenthesis`: /* var(--ds-background-danger-pressed) */ String = "var(--ds-background-danger-pressed)".asInstanceOf[/* var(--ds-background-danger-pressed) */ String]
     
     inline def `varLeftparenthesis--ds-background-dangerRightparenthesis`: /* var(--ds-background-danger) */ String = "var(--ds-background-danger)".asInstanceOf[/* var(--ds-background-danger) */ String]
-    
-    inline def `varLeftparenthesis--ds-background-defaultRightparenthesis`: /* var(--ds-background-default) */ String = "var(--ds-background-default)".asInstanceOf[/* var(--ds-background-default) */ String]
     
     inline def `varLeftparenthesis--ds-background-disabledRightparenthesis`: /* var(--ds-background-disabled) */ String = "var(--ds-background-disabled)".asInstanceOf[/* var(--ds-background-disabled) */ String]
     
@@ -2084,8 +1786,6 @@ object distTypesArtifactsTokenNamesMod {
     
     inline def `varLeftparenthesis--ds-background-inverse-subtleRightparenthesis`: /* var(--ds-background-inverse-subtle) */ String = "var(--ds-background-inverse-subtle)".asInstanceOf[/* var(--ds-background-inverse-subtle) */ String]
     
-    inline def `varLeftparenthesis--ds-background-inverseRightparenthesis`: /* var(--ds-background-inverse) */ String = "var(--ds-background-inverse)".asInstanceOf[/* var(--ds-background-inverse) */ String]
-    
     inline def `varLeftparenthesis--ds-background-neutral-bold-hoveredRightparenthesis`: /* var(--ds-background-neutral-bold-hovered) */ String = "var(--ds-background-neutral-bold-hovered)".asInstanceOf[/* var(--ds-background-neutral-bold-hovered) */ String]
     
     inline def `varLeftparenthesis--ds-background-neutral-bold-pressedRightparenthesis`: /* var(--ds-background-neutral-bold-pressed) */ String = "var(--ds-background-neutral-bold-pressed)".asInstanceOf[/* var(--ds-background-neutral-bold-pressed) */ String]
@@ -2104,63 +1804,17 @@ object distTypesArtifactsTokenNamesMod {
     
     inline def `varLeftparenthesis--ds-background-neutralRightparenthesis`: /* var(--ds-background-neutral) */ String = "var(--ds-background-neutral)".asInstanceOf[/* var(--ds-background-neutral) */ String]
     
-    inline def `varLeftparenthesis--ds-background-overlayRightparenthesis`: /* var(--ds-background-overlay) */ String = "var(--ds-background-overlay)".asInstanceOf[/* var(--ds-background-overlay) */ String]
-    
     inline def `varLeftparenthesis--ds-background-selected-bold-hoveredRightparenthesis`: /* var(--ds-background-selected-bold-hovered) */ String = "var(--ds-background-selected-bold-hovered)".asInstanceOf[/* var(--ds-background-selected-bold-hovered) */ String]
     
     inline def `varLeftparenthesis--ds-background-selected-bold-pressedRightparenthesis`: /* var(--ds-background-selected-bold-pressed) */ String = "var(--ds-background-selected-bold-pressed)".asInstanceOf[/* var(--ds-background-selected-bold-pressed) */ String]
     
     inline def `varLeftparenthesis--ds-background-selected-boldRightparenthesis`: /* var(--ds-background-selected-bold) */ String = "var(--ds-background-selected-bold)".asInstanceOf[/* var(--ds-background-selected-bold) */ String]
     
-    inline def `varLeftparenthesis--ds-background-selected-hoverRightparenthesis`: /* var(--ds-background-selected-hover) */ String = "var(--ds-background-selected-hover)".asInstanceOf[/* var(--ds-background-selected-hover) */ String]
-    
     inline def `varLeftparenthesis--ds-background-selected-hoveredRightparenthesis`: /* var(--ds-background-selected-hovered) */ String = "var(--ds-background-selected-hovered)".asInstanceOf[/* var(--ds-background-selected-hovered) */ String]
     
     inline def `varLeftparenthesis--ds-background-selected-pressedRightparenthesis`: /* var(--ds-background-selected-pressed) */ String = "var(--ds-background-selected-pressed)".asInstanceOf[/* var(--ds-background-selected-pressed) */ String]
     
-    inline def `varLeftparenthesis--ds-background-selected-restingRightparenthesis`: /* var(--ds-background-selected-resting) */ String = "var(--ds-background-selected-resting)".asInstanceOf[/* var(--ds-background-selected-resting) */ String]
-    
     inline def `varLeftparenthesis--ds-background-selectedRightparenthesis`: /* var(--ds-background-selected) */ String = "var(--ds-background-selected)".asInstanceOf[/* var(--ds-background-selected) */ String]
-    
-    inline def `varLeftparenthesis--ds-background-subtleBorderedNeutral-pressedRightparenthesis`: /* var(--ds-background-subtleBorderedNeutral-pressed) */ String = "var(--ds-background-subtleBorderedNeutral-pressed)".asInstanceOf[/* var(--ds-background-subtleBorderedNeutral-pressed) */ String]
-    
-    inline def `varLeftparenthesis--ds-background-subtleBorderedNeutral-restingRightparenthesis`: /* var(--ds-background-subtleBorderedNeutral-resting) */ String = "var(--ds-background-subtleBorderedNeutral-resting)".asInstanceOf[/* var(--ds-background-subtleBorderedNeutral-resting) */ String]
-    
-    inline def `varLeftparenthesis--ds-background-subtleBrand-hoverRightparenthesis`: /* var(--ds-background-subtleBrand-hover) */ String = "var(--ds-background-subtleBrand-hover)".asInstanceOf[/* var(--ds-background-subtleBrand-hover) */ String]
-    
-    inline def `varLeftparenthesis--ds-background-subtleBrand-pressedRightparenthesis`: /* var(--ds-background-subtleBrand-pressed) */ String = "var(--ds-background-subtleBrand-pressed)".asInstanceOf[/* var(--ds-background-subtleBrand-pressed) */ String]
-    
-    inline def `varLeftparenthesis--ds-background-subtleBrand-restingRightparenthesis`: /* var(--ds-background-subtleBrand-resting) */ String = "var(--ds-background-subtleBrand-resting)".asInstanceOf[/* var(--ds-background-subtleBrand-resting) */ String]
-    
-    inline def `varLeftparenthesis--ds-background-subtleDanger-hoverRightparenthesis`: /* var(--ds-background-subtleDanger-hover) */ String = "var(--ds-background-subtleDanger-hover)".asInstanceOf[/* var(--ds-background-subtleDanger-hover) */ String]
-    
-    inline def `varLeftparenthesis--ds-background-subtleDanger-pressedRightparenthesis`: /* var(--ds-background-subtleDanger-pressed) */ String = "var(--ds-background-subtleDanger-pressed)".asInstanceOf[/* var(--ds-background-subtleDanger-pressed) */ String]
-    
-    inline def `varLeftparenthesis--ds-background-subtleDanger-restingRightparenthesis`: /* var(--ds-background-subtleDanger-resting) */ String = "var(--ds-background-subtleDanger-resting)".asInstanceOf[/* var(--ds-background-subtleDanger-resting) */ String]
-    
-    inline def `varLeftparenthesis--ds-background-subtleDiscovery-hoverRightparenthesis`: /* var(--ds-background-subtleDiscovery-hover) */ String = "var(--ds-background-subtleDiscovery-hover)".asInstanceOf[/* var(--ds-background-subtleDiscovery-hover) */ String]
-    
-    inline def `varLeftparenthesis--ds-background-subtleDiscovery-pressedRightparenthesis`: /* var(--ds-background-subtleDiscovery-pressed) */ String = "var(--ds-background-subtleDiscovery-pressed)".asInstanceOf[/* var(--ds-background-subtleDiscovery-pressed) */ String]
-    
-    inline def `varLeftparenthesis--ds-background-subtleDiscovery-restingRightparenthesis`: /* var(--ds-background-subtleDiscovery-resting) */ String = "var(--ds-background-subtleDiscovery-resting)".asInstanceOf[/* var(--ds-background-subtleDiscovery-resting) */ String]
-    
-    inline def `varLeftparenthesis--ds-background-subtleNeutral-hoverRightparenthesis`: /* var(--ds-background-subtleNeutral-hover) */ String = "var(--ds-background-subtleNeutral-hover)".asInstanceOf[/* var(--ds-background-subtleNeutral-hover) */ String]
-    
-    inline def `varLeftparenthesis--ds-background-subtleNeutral-pressedRightparenthesis`: /* var(--ds-background-subtleNeutral-pressed) */ String = "var(--ds-background-subtleNeutral-pressed)".asInstanceOf[/* var(--ds-background-subtleNeutral-pressed) */ String]
-    
-    inline def `varLeftparenthesis--ds-background-subtleNeutral-restingRightparenthesis`: /* var(--ds-background-subtleNeutral-resting) */ String = "var(--ds-background-subtleNeutral-resting)".asInstanceOf[/* var(--ds-background-subtleNeutral-resting) */ String]
-    
-    inline def `varLeftparenthesis--ds-background-subtleSuccess-hoverRightparenthesis`: /* var(--ds-background-subtleSuccess-hover) */ String = "var(--ds-background-subtleSuccess-hover)".asInstanceOf[/* var(--ds-background-subtleSuccess-hover) */ String]
-    
-    inline def `varLeftparenthesis--ds-background-subtleSuccess-pressedRightparenthesis`: /* var(--ds-background-subtleSuccess-pressed) */ String = "var(--ds-background-subtleSuccess-pressed)".asInstanceOf[/* var(--ds-background-subtleSuccess-pressed) */ String]
-    
-    inline def `varLeftparenthesis--ds-background-subtleSuccess-restingRightparenthesis`: /* var(--ds-background-subtleSuccess-resting) */ String = "var(--ds-background-subtleSuccess-resting)".asInstanceOf[/* var(--ds-background-subtleSuccess-resting) */ String]
-    
-    inline def `varLeftparenthesis--ds-background-subtleWarning-hoverRightparenthesis`: /* var(--ds-background-subtleWarning-hover) */ String = "var(--ds-background-subtleWarning-hover)".asInstanceOf[/* var(--ds-background-subtleWarning-hover) */ String]
-    
-    inline def `varLeftparenthesis--ds-background-subtleWarning-pressedRightparenthesis`: /* var(--ds-background-subtleWarning-pressed) */ String = "var(--ds-background-subtleWarning-pressed)".asInstanceOf[/* var(--ds-background-subtleWarning-pressed) */ String]
-    
-    inline def `varLeftparenthesis--ds-background-subtleWarning-restingRightparenthesis`: /* var(--ds-background-subtleWarning-resting) */ String = "var(--ds-background-subtleWarning-resting)".asInstanceOf[/* var(--ds-background-subtleWarning-resting) */ String]
     
     inline def `varLeftparenthesis--ds-background-success-bold-hoveredRightparenthesis`: /* var(--ds-background-success-bold-hovered) */ String = "var(--ds-background-success-bold-hovered)".asInstanceOf[/* var(--ds-background-success-bold-hovered) */ String]
     
@@ -2173,12 +1827,6 @@ object distTypesArtifactsTokenNamesMod {
     inline def `varLeftparenthesis--ds-background-success-pressedRightparenthesis`: /* var(--ds-background-success-pressed) */ String = "var(--ds-background-success-pressed)".asInstanceOf[/* var(--ds-background-success-pressed) */ String]
     
     inline def `varLeftparenthesis--ds-background-successRightparenthesis`: /* var(--ds-background-success) */ String = "var(--ds-background-success)".asInstanceOf[/* var(--ds-background-success) */ String]
-    
-    inline def `varLeftparenthesis--ds-background-sunkenRightparenthesis`: /* var(--ds-background-sunken) */ String = "var(--ds-background-sunken)".asInstanceOf[/* var(--ds-background-sunken) */ String]
-    
-    inline def `varLeftparenthesis--ds-background-transparentNeutral-hoverRightparenthesis`: /* var(--ds-background-transparentNeutral-hover) */ String = "var(--ds-background-transparentNeutral-hover)".asInstanceOf[/* var(--ds-background-transparentNeutral-hover) */ String]
-    
-    inline def `varLeftparenthesis--ds-background-transparentNeutral-pressedRightparenthesis`: /* var(--ds-background-transparentNeutral-pressed) */ String = "var(--ds-background-transparentNeutral-pressed)".asInstanceOf[/* var(--ds-background-transparentNeutral-pressed) */ String]
     
     inline def `varLeftparenthesis--ds-background-warning-bold-hoveredRightparenthesis`: /* var(--ds-background-warning-bold-hovered) */ String = "var(--ds-background-warning-bold-hovered)".asInstanceOf[/* var(--ds-background-warning-bold-hovered) */ String]
     
@@ -2226,8 +1874,6 @@ object distTypesArtifactsTokenNamesMod {
     
     inline def `varLeftparenthesis--ds-border-discoveryRightparenthesis`: /* var(--ds-border-discovery) */ String = "var(--ds-border-discovery)".asInstanceOf[/* var(--ds-border-discovery) */ String]
     
-    inline def `varLeftparenthesis--ds-border-focusRightparenthesis`: /* var(--ds-border-focus) */ String = "var(--ds-border-focus)".asInstanceOf[/* var(--ds-border-focus) */ String]
-    
     inline def `varLeftparenthesis--ds-border-focusedRightparenthesis`: /* var(--ds-border-focused) */ String = "var(--ds-border-focused)".asInstanceOf[/* var(--ds-border-focused) */ String]
     
     inline def `varLeftparenthesis--ds-border-informationRightparenthesis`: /* var(--ds-border-information) */ String = "var(--ds-border-information)".asInstanceOf[/* var(--ds-border-information) */ String]
@@ -2235,8 +1881,6 @@ object distTypesArtifactsTokenNamesMod {
     inline def `varLeftparenthesis--ds-border-inputRightparenthesis`: /* var(--ds-border-input) */ String = "var(--ds-border-input)".asInstanceOf[/* var(--ds-border-input) */ String]
     
     inline def `varLeftparenthesis--ds-border-inverseRightparenthesis`: /* var(--ds-border-inverse) */ String = "var(--ds-border-inverse)".asInstanceOf[/* var(--ds-border-inverse) */ String]
-    
-    inline def `varLeftparenthesis--ds-border-neutralRightparenthesis`: /* var(--ds-border-neutral) */ String = "var(--ds-border-neutral)".asInstanceOf[/* var(--ds-border-neutral) */ String]
     
     inline def `varLeftparenthesis--ds-border-selectedRightparenthesis`: /* var(--ds-border-selected) */ String = "var(--ds-border-selected)".asInstanceOf[/* var(--ds-border-selected) */ String]
     
@@ -2246,57 +1890,233 @@ object distTypesArtifactsTokenNamesMod {
     
     inline def `varLeftparenthesis--ds-borderRightparenthesis`: /* var(--ds-border) */ String = "var(--ds-border)".asInstanceOf[/* var(--ds-border) */ String]
     
-    inline def `varLeftparenthesis--ds-cardRightparenthesis`: /* var(--ds-card) */ String = "var(--ds-card)".asInstanceOf[/* var(--ds-card) */ String]
+    inline def `varLeftparenthesis--ds-chart-blue-bold-hoveredRightparenthesis`: /* var(--ds-chart-blue-bold-hovered) */ String = "var(--ds-chart-blue-bold-hovered)".asInstanceOf[/* var(--ds-chart-blue-bold-hovered) */ String]
     
-    inline def `varLeftparenthesis--ds-ccc-component-2Rightparenthesis`: /* var(--ds-ccc-component-2) */ String = "var(--ds-ccc-component-2)".asInstanceOf[/* var(--ds-ccc-component-2) */ String]
+    inline def `varLeftparenthesis--ds-chart-blue-boldRightparenthesis`: /* var(--ds-chart-blue-bold) */ String = "var(--ds-chart-blue-bold)".asInstanceOf[/* var(--ds-chart-blue-bold) */ String]
     
-    inline def `varLeftparenthesis--ds-ccc-component-4Rightparenthesis`: /* var(--ds-ccc-component-4) */ String = "var(--ds-ccc-component-4)".asInstanceOf[/* var(--ds-ccc-component-4) */ String]
+    inline def `varLeftparenthesis--ds-chart-blue-bolder-hoveredRightparenthesis`: /* var(--ds-chart-blue-bolder-hovered) */ String = "var(--ds-chart-blue-bolder-hovered)".asInstanceOf[/* var(--ds-chart-blue-bolder-hovered) */ String]
     
-    inline def `varLeftparenthesis--ds-ccc-component-6Rightparenthesis`: /* var(--ds-ccc-component-6) */ String = "var(--ds-ccc-component-6)".asInstanceOf[/* var(--ds-ccc-component-6) */ String]
+    inline def `varLeftparenthesis--ds-chart-blue-bolderRightparenthesis`: /* var(--ds-chart-blue-bolder) */ String = "var(--ds-chart-blue-bolder)".asInstanceOf[/* var(--ds-chart-blue-bolder) */ String]
     
-    inline def `varLeftparenthesis--ds-ccc-component-8Rightparenthesis`: /* var(--ds-ccc-component-8) */ String = "var(--ds-ccc-component-8)".asInstanceOf[/* var(--ds-ccc-component-8) */ String]
+    inline def `varLeftparenthesis--ds-chart-blue-boldest-hoveredRightparenthesis`: /* var(--ds-chart-blue-boldest-hovered) */ String = "var(--ds-chart-blue-boldest-hovered)".asInstanceOf[/* var(--ds-chart-blue-boldest-hovered) */ String]
     
-    inline def `varLeftparenthesis--ds-ccc-container-32Rightparenthesis`: /* var(--ds-ccc-container-32) */ String = "var(--ds-ccc-container-32)".asInstanceOf[/* var(--ds-ccc-container-32) */ String]
+    inline def `varLeftparenthesis--ds-chart-blue-boldestRightparenthesis`: /* var(--ds-chart-blue-boldest) */ String = "var(--ds-chart-blue-boldest)".asInstanceOf[/* var(--ds-chart-blue-boldest) */ String]
     
-    inline def `varLeftparenthesis--ds-ccc-container-40Rightparenthesis`: /* var(--ds-ccc-container-40) */ String = "var(--ds-ccc-container-40)".asInstanceOf[/* var(--ds-ccc-container-40) */ String]
+    inline def `varLeftparenthesis--ds-chart-brand-hoveredRightparenthesis`: /* var(--ds-chart-brand-hovered) */ String = "var(--ds-chart-brand-hovered)".asInstanceOf[/* var(--ds-chart-brand-hovered) */ String]
     
-    inline def `varLeftparenthesis--ds-ccc-container-48Rightparenthesis`: /* var(--ds-ccc-container-48) */ String = "var(--ds-ccc-container-48)".asInstanceOf[/* var(--ds-ccc-container-48) */ String]
+    inline def `varLeftparenthesis--ds-chart-brandRightparenthesis`: /* var(--ds-chart-brand) */ String = "var(--ds-chart-brand)".asInstanceOf[/* var(--ds-chart-brand) */ String]
     
-    inline def `varLeftparenthesis--ds-ccc-content-12Rightparenthesis`: /* var(--ds-ccc-content-12) */ String = "var(--ds-ccc-content-12)".asInstanceOf[/* var(--ds-ccc-content-12) */ String]
+    inline def `varLeftparenthesis--ds-chart-categorical-1-hoveredRightparenthesis`: /* var(--ds-chart-categorical-1-hovered) */ String = "var(--ds-chart-categorical-1-hovered)".asInstanceOf[/* var(--ds-chart-categorical-1-hovered) */ String]
     
-    inline def `varLeftparenthesis--ds-ccc-content-16Rightparenthesis`: /* var(--ds-ccc-content-16) */ String = "var(--ds-ccc-content-16)".asInstanceOf[/* var(--ds-ccc-content-16) */ String]
+    inline def `varLeftparenthesis--ds-chart-categorical-1Rightparenthesis`: /* var(--ds-chart-categorical-1) */ String = "var(--ds-chart-categorical-1)".asInstanceOf[/* var(--ds-chart-categorical-1) */ String]
     
-    inline def `varLeftparenthesis--ds-ccc-content-20Rightparenthesis`: /* var(--ds-ccc-content-20) */ String = "var(--ds-ccc-content-20)".asInstanceOf[/* var(--ds-ccc-content-20) */ String]
+    inline def `varLeftparenthesis--ds-chart-categorical-2-hoveredRightparenthesis`: /* var(--ds-chart-categorical-2-hovered) */ String = "var(--ds-chart-categorical-2-hovered)".asInstanceOf[/* var(--ds-chart-categorical-2-hovered) */ String]
     
-    inline def `varLeftparenthesis--ds-ccc-content-24Rightparenthesis`: /* var(--ds-ccc-content-24) */ String = "var(--ds-ccc-content-24)".asInstanceOf[/* var(--ds-ccc-content-24) */ String]
+    inline def `varLeftparenthesis--ds-chart-categorical-2Rightparenthesis`: /* var(--ds-chart-categorical-2) */ String = "var(--ds-chart-categorical-2)".asInstanceOf[/* var(--ds-chart-categorical-2) */ String]
     
-    inline def `varLeftparenthesis--ds-ecl-container-12Rightparenthesis`: /* var(--ds-ecl-container-12) */ String = "var(--ds-ecl-container-12)".asInstanceOf[/* var(--ds-ecl-container-12) */ String]
+    inline def `varLeftparenthesis--ds-chart-categorical-3-hoveredRightparenthesis`: /* var(--ds-chart-categorical-3-hovered) */ String = "var(--ds-chart-categorical-3-hovered)".asInstanceOf[/* var(--ds-chart-categorical-3-hovered) */ String]
     
-    inline def `varLeftparenthesis--ds-ecl-container-16Rightparenthesis`: /* var(--ds-ecl-container-16) */ String = "var(--ds-ecl-container-16)".asInstanceOf[/* var(--ds-ecl-container-16) */ String]
+    inline def `varLeftparenthesis--ds-chart-categorical-3Rightparenthesis`: /* var(--ds-chart-categorical-3) */ String = "var(--ds-chart-categorical-3)".asInstanceOf[/* var(--ds-chart-categorical-3) */ String]
     
-    inline def `varLeftparenthesis--ds-ecl-container-20Rightparenthesis`: /* var(--ds-ecl-container-20) */ String = "var(--ds-ecl-container-20)".asInstanceOf[/* var(--ds-ecl-container-20) */ String]
+    inline def `varLeftparenthesis--ds-chart-categorical-4-hoveredRightparenthesis`: /* var(--ds-chart-categorical-4-hovered) */ String = "var(--ds-chart-categorical-4-hovered)".asInstanceOf[/* var(--ds-chart-categorical-4-hovered) */ String]
     
-    inline def `varLeftparenthesis--ds-ecl-container-24Rightparenthesis`: /* var(--ds-ecl-container-24) */ String = "var(--ds-ecl-container-24)".asInstanceOf[/* var(--ds-ecl-container-24) */ String]
+    inline def `varLeftparenthesis--ds-chart-categorical-4Rightparenthesis`: /* var(--ds-chart-categorical-4) */ String = "var(--ds-chart-categorical-4)".asInstanceOf[/* var(--ds-chart-categorical-4) */ String]
     
-    inline def `varLeftparenthesis--ds-ecl-element-2Rightparenthesis`: /* var(--ds-ecl-element-2) */ String = "var(--ds-ecl-element-2)".asInstanceOf[/* var(--ds-ecl-element-2) */ String]
+    inline def `varLeftparenthesis--ds-chart-categorical-5-hoveredRightparenthesis`: /* var(--ds-chart-categorical-5-hovered) */ String = "var(--ds-chart-categorical-5-hovered)".asInstanceOf[/* var(--ds-chart-categorical-5-hovered) */ String]
     
-    inline def `varLeftparenthesis--ds-ecl-element-4Rightparenthesis`: /* var(--ds-ecl-element-4) */ String = "var(--ds-ecl-element-4)".asInstanceOf[/* var(--ds-ecl-element-4) */ String]
+    inline def `varLeftparenthesis--ds-chart-categorical-5Rightparenthesis`: /* var(--ds-chart-categorical-5) */ String = "var(--ds-chart-categorical-5)".asInstanceOf[/* var(--ds-chart-categorical-5) */ String]
     
-    inline def `varLeftparenthesis--ds-ecl-element-6Rightparenthesis`: /* var(--ds-ecl-element-6) */ String = "var(--ds-ecl-element-6)".asInstanceOf[/* var(--ds-ecl-element-6) */ String]
+    inline def `varLeftparenthesis--ds-chart-categorical-6-hoveredRightparenthesis`: /* var(--ds-chart-categorical-6-hovered) */ String = "var(--ds-chart-categorical-6-hovered)".asInstanceOf[/* var(--ds-chart-categorical-6-hovered) */ String]
     
-    inline def `varLeftparenthesis--ds-ecl-element-8Rightparenthesis`: /* var(--ds-ecl-element-8) */ String = "var(--ds-ecl-element-8)".asInstanceOf[/* var(--ds-ecl-element-8) */ String]
+    inline def `varLeftparenthesis--ds-chart-categorical-6Rightparenthesis`: /* var(--ds-chart-categorical-6) */ String = "var(--ds-chart-categorical-6)".asInstanceOf[/* var(--ds-chart-categorical-6) */ String]
     
-    inline def `varLeftparenthesis--ds-ecl-layout-32Rightparenthesis`: /* var(--ds-ecl-layout-32) */ String = "var(--ds-ecl-layout-32)".asInstanceOf[/* var(--ds-ecl-layout-32) */ String]
+    inline def `varLeftparenthesis--ds-chart-categorical-7-hoveredRightparenthesis`: /* var(--ds-chart-categorical-7-hovered) */ String = "var(--ds-chart-categorical-7-hovered)".asInstanceOf[/* var(--ds-chart-categorical-7-hovered) */ String]
     
-    inline def `varLeftparenthesis--ds-ecl-layout-40Rightparenthesis`: /* var(--ds-ecl-layout-40) */ String = "var(--ds-ecl-layout-40)".asInstanceOf[/* var(--ds-ecl-layout-40) */ String]
+    inline def `varLeftparenthesis--ds-chart-categorical-7Rightparenthesis`: /* var(--ds-chart-categorical-7) */ String = "var(--ds-chart-categorical-7)".asInstanceOf[/* var(--ds-chart-categorical-7) */ String]
     
-    inline def `varLeftparenthesis--ds-ecl-layout-64Rightparenthesis`: /* var(--ds-ecl-layout-64) */ String = "var(--ds-ecl-layout-64)".asInstanceOf[/* var(--ds-ecl-layout-64) */ String]
+    inline def `varLeftparenthesis--ds-chart-categorical-8-hoveredRightparenthesis`: /* var(--ds-chart-categorical-8-hovered) */ String = "var(--ds-chart-categorical-8-hovered)".asInstanceOf[/* var(--ds-chart-categorical-8-hovered) */ String]
     
-    inline def `varLeftparenthesis--ds-gap-100Rightparenthesis`: /* var(--ds-gap-100) */ String = "var(--ds-gap-100)".asInstanceOf[/* var(--ds-gap-100) */ String]
+    inline def `varLeftparenthesis--ds-chart-categorical-8Rightparenthesis`: /* var(--ds-chart-categorical-8) */ String = "var(--ds-chart-categorical-8)".asInstanceOf[/* var(--ds-chart-categorical-8) */ String]
     
-    inline def `varLeftparenthesis--ds-gap-200Rightparenthesis`: /* var(--ds-gap-200) */ String = "var(--ds-gap-200)".asInstanceOf[/* var(--ds-gap-200) */ String]
+    inline def `varLeftparenthesis--ds-chart-danger-bold-hoveredRightparenthesis`: /* var(--ds-chart-danger-bold-hovered) */ String = "var(--ds-chart-danger-bold-hovered)".asInstanceOf[/* var(--ds-chart-danger-bold-hovered) */ String]
     
-    inline def `varLeftparenthesis--ds-gap-300Rightparenthesis`: /* var(--ds-gap-300) */ String = "var(--ds-gap-300)".asInstanceOf[/* var(--ds-gap-300) */ String]
+    inline def `varLeftparenthesis--ds-chart-danger-boldRightparenthesis`: /* var(--ds-chart-danger-bold) */ String = "var(--ds-chart-danger-bold)".asInstanceOf[/* var(--ds-chart-danger-bold) */ String]
+    
+    inline def `varLeftparenthesis--ds-chart-danger-hoveredRightparenthesis`: /* var(--ds-chart-danger-hovered) */ String = "var(--ds-chart-danger-hovered)".asInstanceOf[/* var(--ds-chart-danger-hovered) */ String]
+    
+    inline def `varLeftparenthesis--ds-chart-dangerRightparenthesis`: /* var(--ds-chart-danger) */ String = "var(--ds-chart-danger)".asInstanceOf[/* var(--ds-chart-danger) */ String]
+    
+    inline def `varLeftparenthesis--ds-chart-discovery-bold-hoveredRightparenthesis`: /* var(--ds-chart-discovery-bold-hovered) */ String = "var(--ds-chart-discovery-bold-hovered)".asInstanceOf[/* var(--ds-chart-discovery-bold-hovered) */ String]
+    
+    inline def `varLeftparenthesis--ds-chart-discovery-boldRightparenthesis`: /* var(--ds-chart-discovery-bold) */ String = "var(--ds-chart-discovery-bold)".asInstanceOf[/* var(--ds-chart-discovery-bold) */ String]
+    
+    inline def `varLeftparenthesis--ds-chart-discovery-hoveredRightparenthesis`: /* var(--ds-chart-discovery-hovered) */ String = "var(--ds-chart-discovery-hovered)".asInstanceOf[/* var(--ds-chart-discovery-hovered) */ String]
+    
+    inline def `varLeftparenthesis--ds-chart-discoveryRightparenthesis`: /* var(--ds-chart-discovery) */ String = "var(--ds-chart-discovery)".asInstanceOf[/* var(--ds-chart-discovery) */ String]
+    
+    inline def `varLeftparenthesis--ds-chart-gray-bold-hoveredRightparenthesis`: /* var(--ds-chart-gray-bold-hovered) */ String = "var(--ds-chart-gray-bold-hovered)".asInstanceOf[/* var(--ds-chart-gray-bold-hovered) */ String]
+    
+    inline def `varLeftparenthesis--ds-chart-gray-boldRightparenthesis`: /* var(--ds-chart-gray-bold) */ String = "var(--ds-chart-gray-bold)".asInstanceOf[/* var(--ds-chart-gray-bold) */ String]
+    
+    inline def `varLeftparenthesis--ds-chart-gray-bolder-hoveredRightparenthesis`: /* var(--ds-chart-gray-bolder-hovered) */ String = "var(--ds-chart-gray-bolder-hovered)".asInstanceOf[/* var(--ds-chart-gray-bolder-hovered) */ String]
+    
+    inline def `varLeftparenthesis--ds-chart-gray-bolderRightparenthesis`: /* var(--ds-chart-gray-bolder) */ String = "var(--ds-chart-gray-bolder)".asInstanceOf[/* var(--ds-chart-gray-bolder) */ String]
+    
+    inline def `varLeftparenthesis--ds-chart-gray-boldest-hoveredRightparenthesis`: /* var(--ds-chart-gray-boldest-hovered) */ String = "var(--ds-chart-gray-boldest-hovered)".asInstanceOf[/* var(--ds-chart-gray-boldest-hovered) */ String]
+    
+    inline def `varLeftparenthesis--ds-chart-gray-boldestRightparenthesis`: /* var(--ds-chart-gray-boldest) */ String = "var(--ds-chart-gray-boldest)".asInstanceOf[/* var(--ds-chart-gray-boldest) */ String]
+    
+    inline def `varLeftparenthesis--ds-chart-green-bold-hoveredRightparenthesis`: /* var(--ds-chart-green-bold-hovered) */ String = "var(--ds-chart-green-bold-hovered)".asInstanceOf[/* var(--ds-chart-green-bold-hovered) */ String]
+    
+    inline def `varLeftparenthesis--ds-chart-green-boldRightparenthesis`: /* var(--ds-chart-green-bold) */ String = "var(--ds-chart-green-bold)".asInstanceOf[/* var(--ds-chart-green-bold) */ String]
+    
+    inline def `varLeftparenthesis--ds-chart-green-bolder-hoveredRightparenthesis`: /* var(--ds-chart-green-bolder-hovered) */ String = "var(--ds-chart-green-bolder-hovered)".asInstanceOf[/* var(--ds-chart-green-bolder-hovered) */ String]
+    
+    inline def `varLeftparenthesis--ds-chart-green-bolderRightparenthesis`: /* var(--ds-chart-green-bolder) */ String = "var(--ds-chart-green-bolder)".asInstanceOf[/* var(--ds-chart-green-bolder) */ String]
+    
+    inline def `varLeftparenthesis--ds-chart-green-boldest-hoveredRightparenthesis`: /* var(--ds-chart-green-boldest-hovered) */ String = "var(--ds-chart-green-boldest-hovered)".asInstanceOf[/* var(--ds-chart-green-boldest-hovered) */ String]
+    
+    inline def `varLeftparenthesis--ds-chart-green-boldestRightparenthesis`: /* var(--ds-chart-green-boldest) */ String = "var(--ds-chart-green-boldest)".asInstanceOf[/* var(--ds-chart-green-boldest) */ String]
+    
+    inline def `varLeftparenthesis--ds-chart-information-bold-hoveredRightparenthesis`: /* var(--ds-chart-information-bold-hovered) */ String = "var(--ds-chart-information-bold-hovered)".asInstanceOf[/* var(--ds-chart-information-bold-hovered) */ String]
+    
+    inline def `varLeftparenthesis--ds-chart-information-boldRightparenthesis`: /* var(--ds-chart-information-bold) */ String = "var(--ds-chart-information-bold)".asInstanceOf[/* var(--ds-chart-information-bold) */ String]
+    
+    inline def `varLeftparenthesis--ds-chart-information-hoveredRightparenthesis`: /* var(--ds-chart-information-hovered) */ String = "var(--ds-chart-information-hovered)".asInstanceOf[/* var(--ds-chart-information-hovered) */ String]
+    
+    inline def `varLeftparenthesis--ds-chart-informationRightparenthesis`: /* var(--ds-chart-information) */ String = "var(--ds-chart-information)".asInstanceOf[/* var(--ds-chart-information) */ String]
+    
+    inline def `varLeftparenthesis--ds-chart-magenta-bold-hoveredRightparenthesis`: /* var(--ds-chart-magenta-bold-hovered) */ String = "var(--ds-chart-magenta-bold-hovered)".asInstanceOf[/* var(--ds-chart-magenta-bold-hovered) */ String]
+    
+    inline def `varLeftparenthesis--ds-chart-magenta-boldRightparenthesis`: /* var(--ds-chart-magenta-bold) */ String = "var(--ds-chart-magenta-bold)".asInstanceOf[/* var(--ds-chart-magenta-bold) */ String]
+    
+    inline def `varLeftparenthesis--ds-chart-magenta-bolder-hoveredRightparenthesis`: /* var(--ds-chart-magenta-bolder-hovered) */ String = "var(--ds-chart-magenta-bolder-hovered)".asInstanceOf[/* var(--ds-chart-magenta-bolder-hovered) */ String]
+    
+    inline def `varLeftparenthesis--ds-chart-magenta-bolderRightparenthesis`: /* var(--ds-chart-magenta-bolder) */ String = "var(--ds-chart-magenta-bolder)".asInstanceOf[/* var(--ds-chart-magenta-bolder) */ String]
+    
+    inline def `varLeftparenthesis--ds-chart-magenta-boldest-hoveredRightparenthesis`: /* var(--ds-chart-magenta-boldest-hovered) */ String = "var(--ds-chart-magenta-boldest-hovered)".asInstanceOf[/* var(--ds-chart-magenta-boldest-hovered) */ String]
+    
+    inline def `varLeftparenthesis--ds-chart-magenta-boldestRightparenthesis`: /* var(--ds-chart-magenta-boldest) */ String = "var(--ds-chart-magenta-boldest)".asInstanceOf[/* var(--ds-chart-magenta-boldest) */ String]
+    
+    inline def `varLeftparenthesis--ds-chart-neutral-hoveredRightparenthesis`: /* var(--ds-chart-neutral-hovered) */ String = "var(--ds-chart-neutral-hovered)".asInstanceOf[/* var(--ds-chart-neutral-hovered) */ String]
+    
+    inline def `varLeftparenthesis--ds-chart-neutralRightparenthesis`: /* var(--ds-chart-neutral) */ String = "var(--ds-chart-neutral)".asInstanceOf[/* var(--ds-chart-neutral) */ String]
+    
+    inline def `varLeftparenthesis--ds-chart-orange-bold-hoveredRightparenthesis`: /* var(--ds-chart-orange-bold-hovered) */ String = "var(--ds-chart-orange-bold-hovered)".asInstanceOf[/* var(--ds-chart-orange-bold-hovered) */ String]
+    
+    inline def `varLeftparenthesis--ds-chart-orange-boldRightparenthesis`: /* var(--ds-chart-orange-bold) */ String = "var(--ds-chart-orange-bold)".asInstanceOf[/* var(--ds-chart-orange-bold) */ String]
+    
+    inline def `varLeftparenthesis--ds-chart-orange-bolder-hoveredRightparenthesis`: /* var(--ds-chart-orange-bolder-hovered) */ String = "var(--ds-chart-orange-bolder-hovered)".asInstanceOf[/* var(--ds-chart-orange-bolder-hovered) */ String]
+    
+    inline def `varLeftparenthesis--ds-chart-orange-bolderRightparenthesis`: /* var(--ds-chart-orange-bolder) */ String = "var(--ds-chart-orange-bolder)".asInstanceOf[/* var(--ds-chart-orange-bolder) */ String]
+    
+    inline def `varLeftparenthesis--ds-chart-orange-boldest-hoveredRightparenthesis`: /* var(--ds-chart-orange-boldest-hovered) */ String = "var(--ds-chart-orange-boldest-hovered)".asInstanceOf[/* var(--ds-chart-orange-boldest-hovered) */ String]
+    
+    inline def `varLeftparenthesis--ds-chart-orange-boldestRightparenthesis`: /* var(--ds-chart-orange-boldest) */ String = "var(--ds-chart-orange-boldest)".asInstanceOf[/* var(--ds-chart-orange-boldest) */ String]
+    
+    inline def `varLeftparenthesis--ds-chart-purple-bold-hoveredRightparenthesis`: /* var(--ds-chart-purple-bold-hovered) */ String = "var(--ds-chart-purple-bold-hovered)".asInstanceOf[/* var(--ds-chart-purple-bold-hovered) */ String]
+    
+    inline def `varLeftparenthesis--ds-chart-purple-boldRightparenthesis`: /* var(--ds-chart-purple-bold) */ String = "var(--ds-chart-purple-bold)".asInstanceOf[/* var(--ds-chart-purple-bold) */ String]
+    
+    inline def `varLeftparenthesis--ds-chart-purple-bolder-hoveredRightparenthesis`: /* var(--ds-chart-purple-bolder-hovered) */ String = "var(--ds-chart-purple-bolder-hovered)".asInstanceOf[/* var(--ds-chart-purple-bolder-hovered) */ String]
+    
+    inline def `varLeftparenthesis--ds-chart-purple-bolderRightparenthesis`: /* var(--ds-chart-purple-bolder) */ String = "var(--ds-chart-purple-bolder)".asInstanceOf[/* var(--ds-chart-purple-bolder) */ String]
+    
+    inline def `varLeftparenthesis--ds-chart-purple-boldest-hoveredRightparenthesis`: /* var(--ds-chart-purple-boldest-hovered) */ String = "var(--ds-chart-purple-boldest-hovered)".asInstanceOf[/* var(--ds-chart-purple-boldest-hovered) */ String]
+    
+    inline def `varLeftparenthesis--ds-chart-purple-boldestRightparenthesis`: /* var(--ds-chart-purple-boldest) */ String = "var(--ds-chart-purple-boldest)".asInstanceOf[/* var(--ds-chart-purple-boldest) */ String]
+    
+    inline def `varLeftparenthesis--ds-chart-red-bold-hoveredRightparenthesis`: /* var(--ds-chart-red-bold-hovered) */ String = "var(--ds-chart-red-bold-hovered)".asInstanceOf[/* var(--ds-chart-red-bold-hovered) */ String]
+    
+    inline def `varLeftparenthesis--ds-chart-red-boldRightparenthesis`: /* var(--ds-chart-red-bold) */ String = "var(--ds-chart-red-bold)".asInstanceOf[/* var(--ds-chart-red-bold) */ String]
+    
+    inline def `varLeftparenthesis--ds-chart-red-bolder-hoveredRightparenthesis`: /* var(--ds-chart-red-bolder-hovered) */ String = "var(--ds-chart-red-bolder-hovered)".asInstanceOf[/* var(--ds-chart-red-bolder-hovered) */ String]
+    
+    inline def `varLeftparenthesis--ds-chart-red-bolderRightparenthesis`: /* var(--ds-chart-red-bolder) */ String = "var(--ds-chart-red-bolder)".asInstanceOf[/* var(--ds-chart-red-bolder) */ String]
+    
+    inline def `varLeftparenthesis--ds-chart-red-boldest-hoveredRightparenthesis`: /* var(--ds-chart-red-boldest-hovered) */ String = "var(--ds-chart-red-boldest-hovered)".asInstanceOf[/* var(--ds-chart-red-boldest-hovered) */ String]
+    
+    inline def `varLeftparenthesis--ds-chart-red-boldestRightparenthesis`: /* var(--ds-chart-red-boldest) */ String = "var(--ds-chart-red-boldest)".asInstanceOf[/* var(--ds-chart-red-boldest) */ String]
+    
+    inline def `varLeftparenthesis--ds-chart-success-bold-hoveredRightparenthesis`: /* var(--ds-chart-success-bold-hovered) */ String = "var(--ds-chart-success-bold-hovered)".asInstanceOf[/* var(--ds-chart-success-bold-hovered) */ String]
+    
+    inline def `varLeftparenthesis--ds-chart-success-boldRightparenthesis`: /* var(--ds-chart-success-bold) */ String = "var(--ds-chart-success-bold)".asInstanceOf[/* var(--ds-chart-success-bold) */ String]
+    
+    inline def `varLeftparenthesis--ds-chart-success-hoveredRightparenthesis`: /* var(--ds-chart-success-hovered) */ String = "var(--ds-chart-success-hovered)".asInstanceOf[/* var(--ds-chart-success-hovered) */ String]
+    
+    inline def `varLeftparenthesis--ds-chart-successRightparenthesis`: /* var(--ds-chart-success) */ String = "var(--ds-chart-success)".asInstanceOf[/* var(--ds-chart-success) */ String]
+    
+    inline def `varLeftparenthesis--ds-chart-teal-bold-hoveredRightparenthesis`: /* var(--ds-chart-teal-bold-hovered) */ String = "var(--ds-chart-teal-bold-hovered)".asInstanceOf[/* var(--ds-chart-teal-bold-hovered) */ String]
+    
+    inline def `varLeftparenthesis--ds-chart-teal-boldRightparenthesis`: /* var(--ds-chart-teal-bold) */ String = "var(--ds-chart-teal-bold)".asInstanceOf[/* var(--ds-chart-teal-bold) */ String]
+    
+    inline def `varLeftparenthesis--ds-chart-teal-bolder-hoveredRightparenthesis`: /* var(--ds-chart-teal-bolder-hovered) */ String = "var(--ds-chart-teal-bolder-hovered)".asInstanceOf[/* var(--ds-chart-teal-bolder-hovered) */ String]
+    
+    inline def `varLeftparenthesis--ds-chart-teal-bolderRightparenthesis`: /* var(--ds-chart-teal-bolder) */ String = "var(--ds-chart-teal-bolder)".asInstanceOf[/* var(--ds-chart-teal-bolder) */ String]
+    
+    inline def `varLeftparenthesis--ds-chart-teal-boldest-hoveredRightparenthesis`: /* var(--ds-chart-teal-boldest-hovered) */ String = "var(--ds-chart-teal-boldest-hovered)".asInstanceOf[/* var(--ds-chart-teal-boldest-hovered) */ String]
+    
+    inline def `varLeftparenthesis--ds-chart-teal-boldestRightparenthesis`: /* var(--ds-chart-teal-boldest) */ String = "var(--ds-chart-teal-boldest)".asInstanceOf[/* var(--ds-chart-teal-boldest) */ String]
+    
+    inline def `varLeftparenthesis--ds-chart-warning-bold-hoveredRightparenthesis`: /* var(--ds-chart-warning-bold-hovered) */ String = "var(--ds-chart-warning-bold-hovered)".asInstanceOf[/* var(--ds-chart-warning-bold-hovered) */ String]
+    
+    inline def `varLeftparenthesis--ds-chart-warning-boldRightparenthesis`: /* var(--ds-chart-warning-bold) */ String = "var(--ds-chart-warning-bold)".asInstanceOf[/* var(--ds-chart-warning-bold) */ String]
+    
+    inline def `varLeftparenthesis--ds-chart-warning-hoveredRightparenthesis`: /* var(--ds-chart-warning-hovered) */ String = "var(--ds-chart-warning-hovered)".asInstanceOf[/* var(--ds-chart-warning-hovered) */ String]
+    
+    inline def `varLeftparenthesis--ds-chart-warningRightparenthesis`: /* var(--ds-chart-warning) */ String = "var(--ds-chart-warning)".asInstanceOf[/* var(--ds-chart-warning) */ String]
+    
+    inline def `varLeftparenthesis--ds-chart-yellow-bold-hoveredRightparenthesis`: /* var(--ds-chart-yellow-bold-hovered) */ String = "var(--ds-chart-yellow-bold-hovered)".asInstanceOf[/* var(--ds-chart-yellow-bold-hovered) */ String]
+    
+    inline def `varLeftparenthesis--ds-chart-yellow-boldRightparenthesis`: /* var(--ds-chart-yellow-bold) */ String = "var(--ds-chart-yellow-bold)".asInstanceOf[/* var(--ds-chart-yellow-bold) */ String]
+    
+    inline def `varLeftparenthesis--ds-chart-yellow-bolder-hoveredRightparenthesis`: /* var(--ds-chart-yellow-bolder-hovered) */ String = "var(--ds-chart-yellow-bolder-hovered)".asInstanceOf[/* var(--ds-chart-yellow-bolder-hovered) */ String]
+    
+    inline def `varLeftparenthesis--ds-chart-yellow-bolderRightparenthesis`: /* var(--ds-chart-yellow-bolder) */ String = "var(--ds-chart-yellow-bolder)".asInstanceOf[/* var(--ds-chart-yellow-bolder) */ String]
+    
+    inline def `varLeftparenthesis--ds-chart-yellow-boldest-hoveredRightparenthesis`: /* var(--ds-chart-yellow-boldest-hovered) */ String = "var(--ds-chart-yellow-boldest-hovered)".asInstanceOf[/* var(--ds-chart-yellow-boldest-hovered) */ String]
+    
+    inline def `varLeftparenthesis--ds-chart-yellow-boldestRightparenthesis`: /* var(--ds-chart-yellow-boldest) */ String = "var(--ds-chart-yellow-boldest)".asInstanceOf[/* var(--ds-chart-yellow-boldest) */ String]
+    
+    inline def `varLeftparenthesis--ds-font-family-monospaceRightparenthesis`: /* var(--ds-font-family-monospace) */ String = "var(--ds-font-family-monospace)".asInstanceOf[/* var(--ds-font-family-monospace) */ String]
+    
+    inline def `varLeftparenthesis--ds-font-family-sansRightparenthesis`: /* var(--ds-font-family-sans) */ String = "var(--ds-font-family-sans)".asInstanceOf[/* var(--ds-font-family-sans) */ String]
+    
+    inline def `varLeftparenthesis--ds-font-lineHeight-100Rightparenthesis`: /* var(--ds-font-lineHeight-100) */ String = "var(--ds-font-lineHeight-100)".asInstanceOf[/* var(--ds-font-lineHeight-100) */ String]
+    
+    inline def `varLeftparenthesis--ds-font-lineHeight-200Rightparenthesis`: /* var(--ds-font-lineHeight-200) */ String = "var(--ds-font-lineHeight-200)".asInstanceOf[/* var(--ds-font-lineHeight-200) */ String]
+    
+    inline def `varLeftparenthesis--ds-font-lineHeight-300Rightparenthesis`: /* var(--ds-font-lineHeight-300) */ String = "var(--ds-font-lineHeight-300)".asInstanceOf[/* var(--ds-font-lineHeight-300) */ String]
+    
+    inline def `varLeftparenthesis--ds-font-lineHeight-400Rightparenthesis`: /* var(--ds-font-lineHeight-400) */ String = "var(--ds-font-lineHeight-400)".asInstanceOf[/* var(--ds-font-lineHeight-400) */ String]
+    
+    inline def `varLeftparenthesis--ds-font-lineHeight-500Rightparenthesis`: /* var(--ds-font-lineHeight-500) */ String = "var(--ds-font-lineHeight-500)".asInstanceOf[/* var(--ds-font-lineHeight-500) */ String]
+    
+    inline def `varLeftparenthesis--ds-font-lineHeight-600Rightparenthesis`: /* var(--ds-font-lineHeight-600) */ String = "var(--ds-font-lineHeight-600)".asInstanceOf[/* var(--ds-font-lineHeight-600) */ String]
+    
+    inline def `varLeftparenthesis--ds-font-size-050Rightparenthesis`: /* var(--ds-font-size-050) */ String = "var(--ds-font-size-050)".asInstanceOf[/* var(--ds-font-size-050) */ String]
+    
+    inline def `varLeftparenthesis--ds-font-size-075Rightparenthesis`: /* var(--ds-font-size-075) */ String = "var(--ds-font-size-075)".asInstanceOf[/* var(--ds-font-size-075) */ String]
+    
+    inline def `varLeftparenthesis--ds-font-size-100Rightparenthesis`: /* var(--ds-font-size-100) */ String = "var(--ds-font-size-100)".asInstanceOf[/* var(--ds-font-size-100) */ String]
+    
+    inline def `varLeftparenthesis--ds-font-size-200Rightparenthesis`: /* var(--ds-font-size-200) */ String = "var(--ds-font-size-200)".asInstanceOf[/* var(--ds-font-size-200) */ String]
+    
+    inline def `varLeftparenthesis--ds-font-size-300Rightparenthesis`: /* var(--ds-font-size-300) */ String = "var(--ds-font-size-300)".asInstanceOf[/* var(--ds-font-size-300) */ String]
+    
+    inline def `varLeftparenthesis--ds-font-size-400Rightparenthesis`: /* var(--ds-font-size-400) */ String = "var(--ds-font-size-400)".asInstanceOf[/* var(--ds-font-size-400) */ String]
+    
+    inline def `varLeftparenthesis--ds-font-size-500Rightparenthesis`: /* var(--ds-font-size-500) */ String = "var(--ds-font-size-500)".asInstanceOf[/* var(--ds-font-size-500) */ String]
+    
+    inline def `varLeftparenthesis--ds-font-size-600Rightparenthesis`: /* var(--ds-font-size-600) */ String = "var(--ds-font-size-600)".asInstanceOf[/* var(--ds-font-size-600) */ String]
+    
+    inline def `varLeftparenthesis--ds-font-weight-boldRightparenthesis`: /* var(--ds-font-weight-bold) */ String = "var(--ds-font-weight-bold)".asInstanceOf[/* var(--ds-font-weight-bold) */ String]
+    
+    inline def `varLeftparenthesis--ds-font-weight-mediumRightparenthesis`: /* var(--ds-font-weight-medium) */ String = "var(--ds-font-weight-medium)".asInstanceOf[/* var(--ds-font-weight-medium) */ String]
+    
+    inline def `varLeftparenthesis--ds-font-weight-regularRightparenthesis`: /* var(--ds-font-weight-regular) */ String = "var(--ds-font-weight-regular)".asInstanceOf[/* var(--ds-font-weight-regular) */ String]
+    
+    inline def `varLeftparenthesis--ds-font-weight-semiboldRightparenthesis`: /* var(--ds-font-weight-semibold) */ String = "var(--ds-font-weight-semibold)".asInstanceOf[/* var(--ds-font-weight-semibold) */ String]
     
     inline def `varLeftparenthesis--ds-icon-accent-blueRightparenthesis`: /* var(--ds-icon-accent-blue) */ String = "var(--ds-icon-accent-blue)".asInstanceOf[/* var(--ds-icon-accent-blue) */ String]
     
@@ -2338,29 +2158,9 @@ object distTypesArtifactsTokenNamesMod {
     
     inline def `varLeftparenthesis--ds-icon-warningRightparenthesis`: /* var(--ds-icon-warning) */ String = "var(--ds-icon-warning)".asInstanceOf[/* var(--ds-icon-warning) */ String]
     
-    inline def `varLeftparenthesis--ds-iconBorder-brandRightparenthesis`: /* var(--ds-iconBorder-brand) */ String = "var(--ds-iconBorder-brand)".asInstanceOf[/* var(--ds-iconBorder-brand) */ String]
-    
-    inline def `varLeftparenthesis--ds-iconBorder-dangerRightparenthesis`: /* var(--ds-iconBorder-danger) */ String = "var(--ds-iconBorder-danger)".asInstanceOf[/* var(--ds-iconBorder-danger) */ String]
-    
-    inline def `varLeftparenthesis--ds-iconBorder-discoveryRightparenthesis`: /* var(--ds-iconBorder-discovery) */ String = "var(--ds-iconBorder-discovery)".asInstanceOf[/* var(--ds-iconBorder-discovery) */ String]
-    
-    inline def `varLeftparenthesis--ds-iconBorder-successRightparenthesis`: /* var(--ds-iconBorder-success) */ String = "var(--ds-iconBorder-success)".asInstanceOf[/* var(--ds-iconBorder-success) */ String]
-    
-    inline def `varLeftparenthesis--ds-iconBorder-warningRightparenthesis`: /* var(--ds-iconBorder-warning) */ String = "var(--ds-iconBorder-warning)".asInstanceOf[/* var(--ds-iconBorder-warning) */ String]
-    
     inline def `varLeftparenthesis--ds-iconRightparenthesis`: /* var(--ds-icon) */ String = "var(--ds-icon)".asInstanceOf[/* var(--ds-icon) */ String]
     
-    inline def `varLeftparenthesis--ds-inset-100Rightparenthesis`: /* var(--ds-inset-100) */ String = "var(--ds-inset-100)".asInstanceOf[/* var(--ds-inset-100) */ String]
-    
-    inline def `varLeftparenthesis--ds-inset-200Rightparenthesis`: /* var(--ds-inset-200) */ String = "var(--ds-inset-200)".asInstanceOf[/* var(--ds-inset-200) */ String]
-    
-    inline def `varLeftparenthesis--ds-inset-300Rightparenthesis`: /* var(--ds-inset-300) */ String = "var(--ds-inset-300)".asInstanceOf[/* var(--ds-inset-300) */ String]
-    
     inline def `varLeftparenthesis--ds-interaction-hoveredRightparenthesis`: /* var(--ds-interaction-hovered) */ String = "var(--ds-interaction-hovered)".asInstanceOf[/* var(--ds-interaction-hovered) */ String]
-    
-    inline def `varLeftparenthesis--ds-interaction-inverse-hoveredRightparenthesis`: /* var(--ds-interaction-inverse-hovered) */ String = "var(--ds-interaction-inverse-hovered)".asInstanceOf[/* var(--ds-interaction-inverse-hovered) */ String]
-    
-    inline def `varLeftparenthesis--ds-interaction-inverse-pressedRightparenthesis`: /* var(--ds-interaction-inverse-pressed) */ String = "var(--ds-interaction-inverse-pressed)".asInstanceOf[/* var(--ds-interaction-inverse-pressed) */ String]
     
     inline def `varLeftparenthesis--ds-interaction-pressedRightparenthesis`: /* var(--ds-interaction-pressed) */ String = "var(--ds-interaction-pressed)".asInstanceOf[/* var(--ds-interaction-pressed) */ String]
     
@@ -2372,83 +2172,21 @@ object distTypesArtifactsTokenNamesMod {
     
     inline def `varLeftparenthesis--ds-opacity-loadingRightparenthesis`: /* var(--ds-opacity-loading) */ String = "var(--ds-opacity-loading)".asInstanceOf[/* var(--ds-opacity-loading) */ String]
     
-    inline def `varLeftparenthesis--ds-overlay-hoverRightparenthesis`: /* var(--ds-overlay-hover) */ String = "var(--ds-overlay-hover)".asInstanceOf[/* var(--ds-overlay-hover) */ String]
+    inline def `varLeftparenthesis--ds-radius-050Rightparenthesis`: /* var(--ds-radius-050) */ String = "var(--ds-radius-050)".asInstanceOf[/* var(--ds-radius-050) */ String]
     
-    inline def `varLeftparenthesis--ds-overlay-pressedRightparenthesis`: /* var(--ds-overlay-pressed) */ String = "var(--ds-overlay-pressed)".asInstanceOf[/* var(--ds-overlay-pressed) */ String]
+    inline def `varLeftparenthesis--ds-radius-100Rightparenthesis`: /* var(--ds-radius-100) */ String = "var(--ds-radius-100)".asInstanceOf[/* var(--ds-radius-100) */ String]
     
-    inline def `varLeftparenthesis--ds-overlayRightparenthesis`: /* var(--ds-overlay) */ String = "var(--ds-overlay)".asInstanceOf[/* var(--ds-overlay) */ String]
+    inline def `varLeftparenthesis--ds-radius-200Rightparenthesis`: /* var(--ds-radius-200) */ String = "var(--ds-radius-200)".asInstanceOf[/* var(--ds-radius-200) */ String]
     
-    inline def `varLeftparenthesis--ds-pixel-0Rightparenthesis`: /* var(--ds-pixel-0) */ String = "var(--ds-pixel-0)".asInstanceOf[/* var(--ds-pixel-0) */ String]
+    inline def `varLeftparenthesis--ds-radius-300Rightparenthesis`: /* var(--ds-radius-300) */ String = "var(--ds-radius-300)".asInstanceOf[/* var(--ds-radius-300) */ String]
     
-    inline def `varLeftparenthesis--ds-pixel-12Rightparenthesis`: /* var(--ds-pixel-12) */ String = "var(--ds-pixel-12)".asInstanceOf[/* var(--ds-pixel-12) */ String]
+    inline def `varLeftparenthesis--ds-radius-400Rightparenthesis`: /* var(--ds-radius-400) */ String = "var(--ds-radius-400)".asInstanceOf[/* var(--ds-radius-400) */ String]
     
-    inline def `varLeftparenthesis--ds-pixel-16Rightparenthesis`: /* var(--ds-pixel-16) */ String = "var(--ds-pixel-16)".asInstanceOf[/* var(--ds-pixel-16) */ String]
+    inline def `varLeftparenthesis--ds-radius-roundRightparenthesis`: /* var(--ds-radius-round) */ String = "var(--ds-radius-round)".asInstanceOf[/* var(--ds-radius-round) */ String]
     
-    inline def `varLeftparenthesis--ds-pixel-20Rightparenthesis`: /* var(--ds-pixel-20) */ String = "var(--ds-pixel-20)".asInstanceOf[/* var(--ds-pixel-20) */ String]
+    inline def `varLeftparenthesis--ds-shadow-overflow-perimeterRightparenthesis`: /* var(--ds-shadow-overflow-perimeter) */ String = "var(--ds-shadow-overflow-perimeter)".asInstanceOf[/* var(--ds-shadow-overflow-perimeter) */ String]
     
-    inline def `varLeftparenthesis--ds-pixel-24Rightparenthesis`: /* var(--ds-pixel-24) */ String = "var(--ds-pixel-24)".asInstanceOf[/* var(--ds-pixel-24) */ String]
-    
-    inline def `varLeftparenthesis--ds-pixel-2Rightparenthesis`: /* var(--ds-pixel-2) */ String = "var(--ds-pixel-2)".asInstanceOf[/* var(--ds-pixel-2) */ String]
-    
-    inline def `varLeftparenthesis--ds-pixel-32Rightparenthesis`: /* var(--ds-pixel-32) */ String = "var(--ds-pixel-32)".asInstanceOf[/* var(--ds-pixel-32) */ String]
-    
-    inline def `varLeftparenthesis--ds-pixel-40Rightparenthesis`: /* var(--ds-pixel-40) */ String = "var(--ds-pixel-40)".asInstanceOf[/* var(--ds-pixel-40) */ String]
-    
-    inline def `varLeftparenthesis--ds-pixel-48Rightparenthesis`: /* var(--ds-pixel-48) */ String = "var(--ds-pixel-48)".asInstanceOf[/* var(--ds-pixel-48) */ String]
-    
-    inline def `varLeftparenthesis--ds-pixel-4Rightparenthesis`: /* var(--ds-pixel-4) */ String = "var(--ds-pixel-4)".asInstanceOf[/* var(--ds-pixel-4) */ String]
-    
-    inline def `varLeftparenthesis--ds-pixel-6Rightparenthesis`: /* var(--ds-pixel-6) */ String = "var(--ds-pixel-6)".asInstanceOf[/* var(--ds-pixel-6) */ String]
-    
-    inline def `varLeftparenthesis--ds-pixel-8Rightparenthesis`: /* var(--ds-pixel-8) */ String = "var(--ds-pixel-8)".asInstanceOf[/* var(--ds-pixel-8) */ String]
-    
-    inline def `varLeftparenthesis--ds-scale-025Rightparenthesis`: /* var(--ds-scale-025) */ String = "var(--ds-scale-025)".asInstanceOf[/* var(--ds-scale-025) */ String]
-    
-    inline def `varLeftparenthesis--ds-scale-050Rightparenthesis`: /* var(--ds-scale-050) */ String = "var(--ds-scale-050)".asInstanceOf[/* var(--ds-scale-050) */ String]
-    
-    inline def `varLeftparenthesis--ds-scale-075Rightparenthesis`: /* var(--ds-scale-075) */ String = "var(--ds-scale-075)".asInstanceOf[/* var(--ds-scale-075) */ String]
-    
-    inline def `varLeftparenthesis--ds-scale-0Rightparenthesis`: /* var(--ds-scale-0) */ String = "var(--ds-scale-0)".asInstanceOf[/* var(--ds-scale-0) */ String]
-    
-    inline def `varLeftparenthesis--ds-scale-100Rightparenthesis`: /* var(--ds-scale-100) */ String = "var(--ds-scale-100)".asInstanceOf[/* var(--ds-scale-100) */ String]
-    
-    inline def `varLeftparenthesis--ds-scale-150Rightparenthesis`: /* var(--ds-scale-150) */ String = "var(--ds-scale-150)".asInstanceOf[/* var(--ds-scale-150) */ String]
-    
-    inline def `varLeftparenthesis--ds-scale-200Rightparenthesis`: /* var(--ds-scale-200) */ String = "var(--ds-scale-200)".asInstanceOf[/* var(--ds-scale-200) */ String]
-    
-    inline def `varLeftparenthesis--ds-scale-250Rightparenthesis`: /* var(--ds-scale-250) */ String = "var(--ds-scale-250)".asInstanceOf[/* var(--ds-scale-250) */ String]
-    
-    inline def `varLeftparenthesis--ds-scale-300Rightparenthesis`: /* var(--ds-scale-300) */ String = "var(--ds-scale-300)".asInstanceOf[/* var(--ds-scale-300) */ String]
-    
-    inline def `varLeftparenthesis--ds-scale-400Rightparenthesis`: /* var(--ds-scale-400) */ String = "var(--ds-scale-400)".asInstanceOf[/* var(--ds-scale-400) */ String]
-    
-    inline def `varLeftparenthesis--ds-scale-500Rightparenthesis`: /* var(--ds-scale-500) */ String = "var(--ds-scale-500)".asInstanceOf[/* var(--ds-scale-500) */ String]
-    
-    inline def `varLeftparenthesis--ds-scale-600Rightparenthesis`: /* var(--ds-scale-600) */ String = "var(--ds-scale-600)".asInstanceOf[/* var(--ds-scale-600) */ String]
-    
-    inline def `varLeftparenthesis--ds-scaleLinear-0Rightparenthesis`: /* var(--ds-scaleLinear-0) */ String = "var(--ds-scaleLinear-0)".asInstanceOf[/* var(--ds-scaleLinear-0) */ String]
-    
-    inline def `varLeftparenthesis--ds-scaleLinear-1000Rightparenthesis`: /* var(--ds-scaleLinear-1000) */ String = "var(--ds-scaleLinear-1000)".asInstanceOf[/* var(--ds-scaleLinear-1000) */ String]
-    
-    inline def `varLeftparenthesis--ds-scaleLinear-100Rightparenthesis`: /* var(--ds-scaleLinear-100) */ String = "var(--ds-scaleLinear-100)".asInstanceOf[/* var(--ds-scaleLinear-100) */ String]
-    
-    inline def `varLeftparenthesis--ds-scaleLinear-1100Rightparenthesis`: /* var(--ds-scaleLinear-1100) */ String = "var(--ds-scaleLinear-1100)".asInstanceOf[/* var(--ds-scaleLinear-1100) */ String]
-    
-    inline def `varLeftparenthesis--ds-scaleLinear-200Rightparenthesis`: /* var(--ds-scaleLinear-200) */ String = "var(--ds-scaleLinear-200)".asInstanceOf[/* var(--ds-scaleLinear-200) */ String]
-    
-    inline def `varLeftparenthesis--ds-scaleLinear-300Rightparenthesis`: /* var(--ds-scaleLinear-300) */ String = "var(--ds-scaleLinear-300)".asInstanceOf[/* var(--ds-scaleLinear-300) */ String]
-    
-    inline def `varLeftparenthesis--ds-scaleLinear-400Rightparenthesis`: /* var(--ds-scaleLinear-400) */ String = "var(--ds-scaleLinear-400)".asInstanceOf[/* var(--ds-scaleLinear-400) */ String]
-    
-    inline def `varLeftparenthesis--ds-scaleLinear-500Rightparenthesis`: /* var(--ds-scaleLinear-500) */ String = "var(--ds-scaleLinear-500)".asInstanceOf[/* var(--ds-scaleLinear-500) */ String]
-    
-    inline def `varLeftparenthesis--ds-scaleLinear-600Rightparenthesis`: /* var(--ds-scaleLinear-600) */ String = "var(--ds-scaleLinear-600)".asInstanceOf[/* var(--ds-scaleLinear-600) */ String]
-    
-    inline def `varLeftparenthesis--ds-scaleLinear-700Rightparenthesis`: /* var(--ds-scaleLinear-700) */ String = "var(--ds-scaleLinear-700)".asInstanceOf[/* var(--ds-scaleLinear-700) */ String]
-    
-    inline def `varLeftparenthesis--ds-scaleLinear-800Rightparenthesis`: /* var(--ds-scaleLinear-800) */ String = "var(--ds-scaleLinear-800)".asInstanceOf[/* var(--ds-scaleLinear-800) */ String]
-    
-    inline def `varLeftparenthesis--ds-scaleLinear-900Rightparenthesis`: /* var(--ds-scaleLinear-900) */ String = "var(--ds-scaleLinear-900)".asInstanceOf[/* var(--ds-scaleLinear-900) */ String]
+    inline def `varLeftparenthesis--ds-shadow-overflow-spreadRightparenthesis`: /* var(--ds-shadow-overflow-spread) */ String = "var(--ds-shadow-overflow-spread)".asInstanceOf[/* var(--ds-shadow-overflow-spread) */ String]
     
     inline def `varLeftparenthesis--ds-shadow-overflowRightparenthesis`: /* var(--ds-shadow-overflow) */ String = "var(--ds-shadow-overflow)".asInstanceOf[/* var(--ds-shadow-overflow) */ String]
     
@@ -2456,33 +2194,37 @@ object distTypesArtifactsTokenNamesMod {
     
     inline def `varLeftparenthesis--ds-shadow-raisedRightparenthesis`: /* var(--ds-shadow-raised) */ String = "var(--ds-shadow-raised)".asInstanceOf[/* var(--ds-shadow-raised) */ String]
     
-    inline def `varLeftparenthesis--ds-size-largeRightparenthesis`: /* var(--ds-size-large) */ String = "var(--ds-size-large)".asInstanceOf[/* var(--ds-size-large) */ String]
-    
-    inline def `varLeftparenthesis--ds-size-mediumRightparenthesis`: /* var(--ds-size-medium) */ String = "var(--ds-size-medium)".asInstanceOf[/* var(--ds-size-medium) */ String]
-    
-    inline def `varLeftparenthesis--ds-size-noneRightparenthesis`: /* var(--ds-size-none) */ String = "var(--ds-size-none)".asInstanceOf[/* var(--ds-size-none) */ String]
-    
-    inline def `varLeftparenthesis--ds-size-smallRightparenthesis`: /* var(--ds-size-small) */ String = "var(--ds-size-small)".asInstanceOf[/* var(--ds-size-small) */ String]
-    
-    inline def `varLeftparenthesis--ds-size-xlargeRightparenthesis`: /* var(--ds-size-xlarge) */ String = "var(--ds-size-xlarge)".asInstanceOf[/* var(--ds-size-xlarge) */ String]
-    
-    inline def `varLeftparenthesis--ds-size-xsmallRightparenthesis`: /* var(--ds-size-xsmall) */ String = "var(--ds-size-xsmall)".asInstanceOf[/* var(--ds-size-xsmall) */ String]
-    
-    inline def `varLeftparenthesis--ds-size-xxSmallRightparenthesis`: /* var(--ds-size-xxSmall) */ String = "var(--ds-size-xxSmall)".asInstanceOf[/* var(--ds-size-xxSmall) */ String]
-    
-    inline def `varLeftparenthesis--ds-size-xxlargeRightparenthesis`: /* var(--ds-size-xxlarge) */ String = "var(--ds-size-xxlarge)".asInstanceOf[/* var(--ds-size-xxlarge) */ String]
-    
-    inline def `varLeftparenthesis--ds-size-xxxSmallRightparenthesis`: /* var(--ds-size-xxxSmall) */ String = "var(--ds-size-xxxSmall)".asInstanceOf[/* var(--ds-size-xxxSmall) */ String]
-    
-    inline def `varLeftparenthesis--ds-size-xxxlargeRightparenthesis`: /* var(--ds-size-xxxlarge) */ String = "var(--ds-size-xxxlarge)".asInstanceOf[/* var(--ds-size-xxxlarge) */ String]
-    
-    inline def `varLeftparenthesis--ds-size-xxxxSmallRightparenthesis`: /* var(--ds-size-xxxxSmall) */ String = "var(--ds-size-xxxxSmall)".asInstanceOf[/* var(--ds-size-xxxxSmall) */ String]
-    
-    inline def `varLeftparenthesis--ds-size-xxxxlargeRightparenthesis`: /* var(--ds-size-xxxxlarge) */ String = "var(--ds-size-xxxxlarge)".asInstanceOf[/* var(--ds-size-xxxxlarge) */ String]
-    
     inline def `varLeftparenthesis--ds-skeleton-subtleRightparenthesis`: /* var(--ds-skeleton-subtle) */ String = "var(--ds-skeleton-subtle)".asInstanceOf[/* var(--ds-skeleton-subtle) */ String]
     
     inline def `varLeftparenthesis--ds-skeletonRightparenthesis`: /* var(--ds-skeleton) */ String = "var(--ds-skeleton)".asInstanceOf[/* var(--ds-skeleton) */ String]
+    
+    inline def `varLeftparenthesis--ds-space-025Rightparenthesis`: /* var(--ds-space-025) */ String = "var(--ds-space-025)".asInstanceOf[/* var(--ds-space-025) */ String]
+    
+    inline def `varLeftparenthesis--ds-space-050Rightparenthesis`: /* var(--ds-space-050) */ String = "var(--ds-space-050)".asInstanceOf[/* var(--ds-space-050) */ String]
+    
+    inline def `varLeftparenthesis--ds-space-075Rightparenthesis`: /* var(--ds-space-075) */ String = "var(--ds-space-075)".asInstanceOf[/* var(--ds-space-075) */ String]
+    
+    inline def `varLeftparenthesis--ds-space-0Rightparenthesis`: /* var(--ds-space-0) */ String = "var(--ds-space-0)".asInstanceOf[/* var(--ds-space-0) */ String]
+    
+    inline def `varLeftparenthesis--ds-space-1000Rightparenthesis`: /* var(--ds-space-1000) */ String = "var(--ds-space-1000)".asInstanceOf[/* var(--ds-space-1000) */ String]
+    
+    inline def `varLeftparenthesis--ds-space-100Rightparenthesis`: /* var(--ds-space-100) */ String = "var(--ds-space-100)".asInstanceOf[/* var(--ds-space-100) */ String]
+    
+    inline def `varLeftparenthesis--ds-space-150Rightparenthesis`: /* var(--ds-space-150) */ String = "var(--ds-space-150)".asInstanceOf[/* var(--ds-space-150) */ String]
+    
+    inline def `varLeftparenthesis--ds-space-200Rightparenthesis`: /* var(--ds-space-200) */ String = "var(--ds-space-200)".asInstanceOf[/* var(--ds-space-200) */ String]
+    
+    inline def `varLeftparenthesis--ds-space-250Rightparenthesis`: /* var(--ds-space-250) */ String = "var(--ds-space-250)".asInstanceOf[/* var(--ds-space-250) */ String]
+    
+    inline def `varLeftparenthesis--ds-space-300Rightparenthesis`: /* var(--ds-space-300) */ String = "var(--ds-space-300)".asInstanceOf[/* var(--ds-space-300) */ String]
+    
+    inline def `varLeftparenthesis--ds-space-400Rightparenthesis`: /* var(--ds-space-400) */ String = "var(--ds-space-400)".asInstanceOf[/* var(--ds-space-400) */ String]
+    
+    inline def `varLeftparenthesis--ds-space-500Rightparenthesis`: /* var(--ds-space-500) */ String = "var(--ds-space-500)".asInstanceOf[/* var(--ds-space-500) */ String]
+    
+    inline def `varLeftparenthesis--ds-space-600Rightparenthesis`: /* var(--ds-space-600) */ String = "var(--ds-space-600)".asInstanceOf[/* var(--ds-space-600) */ String]
+    
+    inline def `varLeftparenthesis--ds-space-800Rightparenthesis`: /* var(--ds-space-800) */ String = "var(--ds-space-800)".asInstanceOf[/* var(--ds-space-800) */ String]
     
     inline def `varLeftparenthesis--ds-surface-hoveredRightparenthesis`: /* var(--ds-surface-hovered) */ String = "var(--ds-surface-hovered)".asInstanceOf[/* var(--ds-surface-hovered) */ String]
     
@@ -2548,23 +2290,9 @@ object distTypesArtifactsTokenNamesMod {
     
     inline def `varLeftparenthesis--ds-text-discoveryRightparenthesis`: /* var(--ds-text-discovery) */ String = "var(--ds-text-discovery)".asInstanceOf[/* var(--ds-text-discovery) */ String]
     
-    inline def `varLeftparenthesis--ds-text-highEmphasisRightparenthesis`: /* var(--ds-text-highEmphasis) */ String = "var(--ds-text-highEmphasis)".asInstanceOf[/* var(--ds-text-highEmphasis) */ String]
-    
     inline def `varLeftparenthesis--ds-text-informationRightparenthesis`: /* var(--ds-text-information) */ String = "var(--ds-text-information)".asInstanceOf[/* var(--ds-text-information) */ String]
     
     inline def `varLeftparenthesis--ds-text-inverseRightparenthesis`: /* var(--ds-text-inverse) */ String = "var(--ds-text-inverse)".asInstanceOf[/* var(--ds-text-inverse) */ String]
-    
-    inline def `varLeftparenthesis--ds-text-link-pressedRightparenthesis`: /* var(--ds-text-link-pressed) */ String = "var(--ds-text-link-pressed)".asInstanceOf[/* var(--ds-text-link-pressed) */ String]
-    
-    inline def `varLeftparenthesis--ds-text-link-restingRightparenthesis`: /* var(--ds-text-link-resting) */ String = "var(--ds-text-link-resting)".asInstanceOf[/* var(--ds-text-link-resting) */ String]
-    
-    inline def `varLeftparenthesis--ds-text-lowEmphasisRightparenthesis`: /* var(--ds-text-lowEmphasis) */ String = "var(--ds-text-lowEmphasis)".asInstanceOf[/* var(--ds-text-lowEmphasis) */ String]
-    
-    inline def `varLeftparenthesis--ds-text-mediumEmphasisRightparenthesis`: /* var(--ds-text-mediumEmphasis) */ String = "var(--ds-text-mediumEmphasis)".asInstanceOf[/* var(--ds-text-mediumEmphasis) */ String]
-    
-    inline def `varLeftparenthesis--ds-text-onBoldRightparenthesis`: /* var(--ds-text-onBold) */ String = "var(--ds-text-onBold)".asInstanceOf[/* var(--ds-text-onBold) */ String]
-    
-    inline def `varLeftparenthesis--ds-text-onBoldWarningRightparenthesis`: /* var(--ds-text-onBoldWarning) */ String = "var(--ds-text-onBoldWarning)".asInstanceOf[/* var(--ds-text-onBoldWarning) */ String]
     
     inline def `varLeftparenthesis--ds-text-selectedRightparenthesis`: /* var(--ds-text-selected) */ String = "var(--ds-text-selected)".asInstanceOf[/* var(--ds-text-selected) */ String]
     
@@ -2579,22 +2307,1926 @@ object distTypesArtifactsTokenNamesMod {
     inline def `varLeftparenthesis--ds-text-warningRightparenthesis`: /* var(--ds-text-warning) */ String = "var(--ds-text-warning)".asInstanceOf[/* var(--ds-text-warning) */ String]
     
     inline def `varLeftparenthesis--ds-textRightparenthesis`: /* var(--ds-text) */ String = "var(--ds-text)".asInstanceOf[/* var(--ds-text) */ String]
+    
+    inline def `varLeftparenthesis--ds-width-050Rightparenthesis`: /* var(--ds-width-050) */ String = "var(--ds-width-050)".asInstanceOf[/* var(--ds-width-050) */ String]
+    
+    inline def `varLeftparenthesis--ds-width-0Rightparenthesis`: /* var(--ds-width-0) */ String = "var(--ds-width-0)".asInstanceOf[/* var(--ds-width-0) */ String]
+    
+    inline def `varLeftparenthesis--ds-width-100Rightparenthesis`: /* var(--ds-width-100) */ String = "var(--ds-width-100)".asInstanceOf[/* var(--ds-width-100) */ String]
   }
   /* Inlined @atlaskit/tokens.@atlaskit/tokens/dist/types/artifacts/token-names.CSSTokenMap[keyof @atlaskit/tokens.@atlaskit/tokens/dist/types/artifacts/token-names.CSSTokenMap] */
-  type CSSToken = /* var(--ds-ecl-layout-32) */ String
+  type CSSToken = /* var(--ds-width-050) */ String
   
-  trait CSSTokenMap
-    extends StObject
-       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianLightTokenNamesMod.CSSTokenMap
-       with typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianSpacingTokenNamesMod.CSSTokenMap
+  trait CSSTokenMap extends StObject {
+    
+    @JSName("border.radius.050")
+    var borderDotradiusDot050: /* var(--ds-radius-050) */ String
+    
+    @JSName("border.radius.100")
+    var borderDotradiusDot100: /* var(--ds-radius-100) */ String
+    
+    @JSName("border.radius.200")
+    var borderDotradiusDot200: /* var(--ds-radius-200) */ String
+    
+    @JSName("border.radius.300")
+    var borderDotradiusDot300: /* var(--ds-radius-300) */ String
+    
+    @JSName("border.radius.400")
+    var borderDotradiusDot400: /* var(--ds-radius-400) */ String
+    
+    @JSName("border.radius.round")
+    var borderDotradiusDotround: /* var(--ds-radius-round) */ String
+    
+    @JSName("border.width.0")
+    var borderDotwidthDot0: /* var(--ds-width-0) */ String
+    
+    @JSName("border.width.050")
+    var borderDotwidthDot050: /* var(--ds-width-050) */ String
+    
+    @JSName("border.width.100")
+    var borderDotwidthDot100: /* var(--ds-width-100) */ String
+    
+    @JSName("color.background.accent.blue.bolder")
+    var colorDotbackgroundDotaccentDotblueDotbolder: /* var(--ds-background-accent-blue-bolder) */ String
+    
+    @JSName("color.background.accent.blue.subtle")
+    var colorDotbackgroundDotaccentDotblueDotsubtle: /* var(--ds-background-accent-blue-subtle) */ String
+    
+    @JSName("color.background.accent.blue.subtler")
+    var colorDotbackgroundDotaccentDotblueDotsubtler: /* var(--ds-background-accent-blue-subtler) */ String
+    
+    @JSName("color.background.accent.blue.subtlest")
+    var colorDotbackgroundDotaccentDotblueDotsubtlest: /* var(--ds-background-accent-blue-subtlest) */ String
+    
+    @JSName("color.background.accent.gray.bolder")
+    var colorDotbackgroundDotaccentDotgrayDotbolder: /* var(--ds-background-accent-gray-bolder) */ String
+    
+    @JSName("color.background.accent.gray.subtle")
+    var colorDotbackgroundDotaccentDotgrayDotsubtle: /* var(--ds-background-accent-gray-subtle) */ String
+    
+    @JSName("color.background.accent.gray.subtler")
+    var colorDotbackgroundDotaccentDotgrayDotsubtler: /* var(--ds-background-accent-gray-subtler) */ String
+    
+    @JSName("color.background.accent.gray.subtlest")
+    var colorDotbackgroundDotaccentDotgrayDotsubtlest: /* var(--ds-background-accent-gray-subtlest) */ String
+    
+    @JSName("color.background.accent.green.bolder")
+    var colorDotbackgroundDotaccentDotgreenDotbolder: /* var(--ds-background-accent-green-bolder) */ String
+    
+    @JSName("color.background.accent.green.subtle")
+    var colorDotbackgroundDotaccentDotgreenDotsubtle: /* var(--ds-background-accent-green-subtle) */ String
+    
+    @JSName("color.background.accent.green.subtler")
+    var colorDotbackgroundDotaccentDotgreenDotsubtler: /* var(--ds-background-accent-green-subtler) */ String
+    
+    @JSName("color.background.accent.green.subtlest")
+    var colorDotbackgroundDotaccentDotgreenDotsubtlest: /* var(--ds-background-accent-green-subtlest) */ String
+    
+    @JSName("color.background.accent.magenta.bolder")
+    var colorDotbackgroundDotaccentDotmagentaDotbolder: /* var(--ds-background-accent-magenta-bolder) */ String
+    
+    @JSName("color.background.accent.magenta.subtle")
+    var colorDotbackgroundDotaccentDotmagentaDotsubtle: /* var(--ds-background-accent-magenta-subtle) */ String
+    
+    @JSName("color.background.accent.magenta.subtler")
+    var colorDotbackgroundDotaccentDotmagentaDotsubtler: /* var(--ds-background-accent-magenta-subtler) */ String
+    
+    @JSName("color.background.accent.magenta.subtlest")
+    var colorDotbackgroundDotaccentDotmagentaDotsubtlest: /* var(--ds-background-accent-magenta-subtlest) */ String
+    
+    @JSName("color.background.accent.orange.bolder")
+    var colorDotbackgroundDotaccentDotorangeDotbolder: /* var(--ds-background-accent-orange-bolder) */ String
+    
+    @JSName("color.background.accent.orange.subtle")
+    var colorDotbackgroundDotaccentDotorangeDotsubtle: /* var(--ds-background-accent-orange-subtle) */ String
+    
+    @JSName("color.background.accent.orange.subtler")
+    var colorDotbackgroundDotaccentDotorangeDotsubtler: /* var(--ds-background-accent-orange-subtler) */ String
+    
+    @JSName("color.background.accent.orange.subtlest")
+    var colorDotbackgroundDotaccentDotorangeDotsubtlest: /* var(--ds-background-accent-orange-subtlest) */ String
+    
+    @JSName("color.background.accent.purple.bolder")
+    var colorDotbackgroundDotaccentDotpurpleDotbolder: /* var(--ds-background-accent-purple-bolder) */ String
+    
+    @JSName("color.background.accent.purple.subtle")
+    var colorDotbackgroundDotaccentDotpurpleDotsubtle: /* var(--ds-background-accent-purple-subtle) */ String
+    
+    @JSName("color.background.accent.purple.subtler")
+    var colorDotbackgroundDotaccentDotpurpleDotsubtler: /* var(--ds-background-accent-purple-subtler) */ String
+    
+    @JSName("color.background.accent.purple.subtlest")
+    var colorDotbackgroundDotaccentDotpurpleDotsubtlest: /* var(--ds-background-accent-purple-subtlest) */ String
+    
+    @JSName("color.background.accent.red.bolder")
+    var colorDotbackgroundDotaccentDotredDotbolder: /* var(--ds-background-accent-red-bolder) */ String
+    
+    @JSName("color.background.accent.red.subtle")
+    var colorDotbackgroundDotaccentDotredDotsubtle: /* var(--ds-background-accent-red-subtle) */ String
+    
+    @JSName("color.background.accent.red.subtler")
+    var colorDotbackgroundDotaccentDotredDotsubtler: /* var(--ds-background-accent-red-subtler) */ String
+    
+    @JSName("color.background.accent.red.subtlest")
+    var colorDotbackgroundDotaccentDotredDotsubtlest: /* var(--ds-background-accent-red-subtlest) */ String
+    
+    @JSName("color.background.accent.teal.bolder")
+    var colorDotbackgroundDotaccentDottealDotbolder: /* var(--ds-background-accent-teal-bolder) */ String
+    
+    @JSName("color.background.accent.teal.subtle")
+    var colorDotbackgroundDotaccentDottealDotsubtle: /* var(--ds-background-accent-teal-subtle) */ String
+    
+    @JSName("color.background.accent.teal.subtler")
+    var colorDotbackgroundDotaccentDottealDotsubtler: /* var(--ds-background-accent-teal-subtler) */ String
+    
+    @JSName("color.background.accent.teal.subtlest")
+    var colorDotbackgroundDotaccentDottealDotsubtlest: /* var(--ds-background-accent-teal-subtlest) */ String
+    
+    @JSName("color.background.accent.yellow.bolder")
+    var colorDotbackgroundDotaccentDotyellowDotbolder: /* var(--ds-background-accent-yellow-bolder) */ String
+    
+    @JSName("color.background.accent.yellow.subtle")
+    var colorDotbackgroundDotaccentDotyellowDotsubtle: /* var(--ds-background-accent-yellow-subtle) */ String
+    
+    @JSName("color.background.accent.yellow.subtler")
+    var colorDotbackgroundDotaccentDotyellowDotsubtler: /* var(--ds-background-accent-yellow-subtler) */ String
+    
+    @JSName("color.background.accent.yellow.subtlest")
+    var colorDotbackgroundDotaccentDotyellowDotsubtlest: /* var(--ds-background-accent-yellow-subtlest) */ String
+    
+    @JSName("color.background.brand.bold")
+    var colorDotbackgroundDotbrandDotbold: /* var(--ds-background-brand-bold) */ String
+    
+    @JSName("color.background.brand.bold.hovered")
+    var colorDotbackgroundDotbrandDotboldDothovered: /* var(--ds-background-brand-bold-hovered) */ String
+    
+    @JSName("color.background.brand.bold.pressed")
+    var colorDotbackgroundDotbrandDotboldDotpressed: /* var(--ds-background-brand-bold-pressed) */ String
+    
+    @JSName("color.background.danger")
+    var colorDotbackgroundDotdanger: /* var(--ds-background-danger) */ String
+    
+    @JSName("color.background.danger.bold")
+    var colorDotbackgroundDotdangerDotbold: /* var(--ds-background-danger-bold) */ String
+    
+    @JSName("color.background.danger.bold.hovered")
+    var colorDotbackgroundDotdangerDotboldDothovered: /* var(--ds-background-danger-bold-hovered) */ String
+    
+    @JSName("color.background.danger.bold.pressed")
+    var colorDotbackgroundDotdangerDotboldDotpressed: /* var(--ds-background-danger-bold-pressed) */ String
+    
+    @JSName("color.background.danger.hovered")
+    var colorDotbackgroundDotdangerDothovered: /* var(--ds-background-danger-hovered) */ String
+    
+    @JSName("color.background.danger.pressed")
+    var colorDotbackgroundDotdangerDotpressed: /* var(--ds-background-danger-pressed) */ String
+    
+    @JSName("color.background.disabled")
+    var colorDotbackgroundDotdisabled: /* var(--ds-background-disabled) */ String
+    
+    @JSName("color.background.discovery")
+    var colorDotbackgroundDotdiscovery: /* var(--ds-background-discovery) */ String
+    
+    @JSName("color.background.discovery.bold")
+    var colorDotbackgroundDotdiscoveryDotbold: /* var(--ds-background-discovery-bold) */ String
+    
+    @JSName("color.background.discovery.bold.hovered")
+    var colorDotbackgroundDotdiscoveryDotboldDothovered: /* var(--ds-background-discovery-bold-hovered) */ String
+    
+    @JSName("color.background.discovery.bold.pressed")
+    var colorDotbackgroundDotdiscoveryDotboldDotpressed: /* var(--ds-background-discovery-bold-pressed) */ String
+    
+    @JSName("color.background.discovery.hovered")
+    var colorDotbackgroundDotdiscoveryDothovered: /* var(--ds-background-discovery-hovered) */ String
+    
+    @JSName("color.background.discovery.pressed")
+    var colorDotbackgroundDotdiscoveryDotpressed: /* var(--ds-background-discovery-pressed) */ String
+    
+    @JSName("color.background.information")
+    var colorDotbackgroundDotinformation: /* var(--ds-background-information) */ String
+    
+    @JSName("color.background.information.bold")
+    var colorDotbackgroundDotinformationDotbold: /* var(--ds-background-information-bold) */ String
+    
+    @JSName("color.background.information.bold.hovered")
+    var colorDotbackgroundDotinformationDotboldDothovered: /* var(--ds-background-information-bold-hovered) */ String
+    
+    @JSName("color.background.information.bold.pressed")
+    var colorDotbackgroundDotinformationDotboldDotpressed: /* var(--ds-background-information-bold-pressed) */ String
+    
+    @JSName("color.background.information.hovered")
+    var colorDotbackgroundDotinformationDothovered: /* var(--ds-background-information-hovered) */ String
+    
+    @JSName("color.background.information.pressed")
+    var colorDotbackgroundDotinformationDotpressed: /* var(--ds-background-information-pressed) */ String
+    
+    @JSName("color.background.input")
+    var colorDotbackgroundDotinput: /* var(--ds-background-input) */ String
+    
+    @JSName("color.background.input.hovered")
+    var colorDotbackgroundDotinputDothovered: /* var(--ds-background-input-hovered) */ String
+    
+    @JSName("color.background.input.pressed")
+    var colorDotbackgroundDotinputDotpressed: /* var(--ds-background-input-pressed) */ String
+    
+    @JSName("color.background.inverse.subtle")
+    var colorDotbackgroundDotinverseDotsubtle: /* var(--ds-background-inverse-subtle) */ String
+    
+    @JSName("color.background.inverse.subtle.hovered")
+    var colorDotbackgroundDotinverseDotsubtleDothovered: /* var(--ds-background-inverse-subtle-hovered) */ String
+    
+    @JSName("color.background.inverse.subtle.pressed")
+    var colorDotbackgroundDotinverseDotsubtleDotpressed: /* var(--ds-background-inverse-subtle-pressed) */ String
+    
+    @JSName("color.background.neutral")
+    var colorDotbackgroundDotneutral: /* var(--ds-background-neutral) */ String
+    
+    @JSName("color.background.neutral.bold")
+    var colorDotbackgroundDotneutralDotbold: /* var(--ds-background-neutral-bold) */ String
+    
+    @JSName("color.background.neutral.bold.hovered")
+    var colorDotbackgroundDotneutralDotboldDothovered: /* var(--ds-background-neutral-bold-hovered) */ String
+    
+    @JSName("color.background.neutral.bold.pressed")
+    var colorDotbackgroundDotneutralDotboldDotpressed: /* var(--ds-background-neutral-bold-pressed) */ String
+    
+    @JSName("color.background.neutral.hovered")
+    var colorDotbackgroundDotneutralDothovered: /* var(--ds-background-neutral-hovered) */ String
+    
+    @JSName("color.background.neutral.pressed")
+    var colorDotbackgroundDotneutralDotpressed: /* var(--ds-background-neutral-pressed) */ String
+    
+    @JSName("color.background.neutral.subtle")
+    var colorDotbackgroundDotneutralDotsubtle: /* var(--ds-background-neutral-subtle) */ String
+    
+    @JSName("color.background.neutral.subtle.hovered")
+    var colorDotbackgroundDotneutralDotsubtleDothovered: /* var(--ds-background-neutral-subtle-hovered) */ String
+    
+    @JSName("color.background.neutral.subtle.pressed")
+    var colorDotbackgroundDotneutralDotsubtleDotpressed: /* var(--ds-background-neutral-subtle-pressed) */ String
+    
+    @JSName("color.background.selected")
+    var colorDotbackgroundDotselected: /* var(--ds-background-selected) */ String
+    
+    @JSName("color.background.selected.bold")
+    var colorDotbackgroundDotselectedDotbold: /* var(--ds-background-selected-bold) */ String
+    
+    @JSName("color.background.selected.bold.hovered")
+    var colorDotbackgroundDotselectedDotboldDothovered: /* var(--ds-background-selected-bold-hovered) */ String
+    
+    @JSName("color.background.selected.bold.pressed")
+    var colorDotbackgroundDotselectedDotboldDotpressed: /* var(--ds-background-selected-bold-pressed) */ String
+    
+    @JSName("color.background.selected.hovered")
+    var colorDotbackgroundDotselectedDothovered: /* var(--ds-background-selected-hovered) */ String
+    
+    @JSName("color.background.selected.pressed")
+    var colorDotbackgroundDotselectedDotpressed: /* var(--ds-background-selected-pressed) */ String
+    
+    @JSName("color.background.success")
+    var colorDotbackgroundDotsuccess: /* var(--ds-background-success) */ String
+    
+    @JSName("color.background.success.bold")
+    var colorDotbackgroundDotsuccessDotbold: /* var(--ds-background-success-bold) */ String
+    
+    @JSName("color.background.success.bold.hovered")
+    var colorDotbackgroundDotsuccessDotboldDothovered: /* var(--ds-background-success-bold-hovered) */ String
+    
+    @JSName("color.background.success.bold.pressed")
+    var colorDotbackgroundDotsuccessDotboldDotpressed: /* var(--ds-background-success-bold-pressed) */ String
+    
+    @JSName("color.background.success.hovered")
+    var colorDotbackgroundDotsuccessDothovered: /* var(--ds-background-success-hovered) */ String
+    
+    @JSName("color.background.success.pressed")
+    var colorDotbackgroundDotsuccessDotpressed: /* var(--ds-background-success-pressed) */ String
+    
+    @JSName("color.background.warning")
+    var colorDotbackgroundDotwarning: /* var(--ds-background-warning) */ String
+    
+    @JSName("color.background.warning.bold")
+    var colorDotbackgroundDotwarningDotbold: /* var(--ds-background-warning-bold) */ String
+    
+    @JSName("color.background.warning.bold.hovered")
+    var colorDotbackgroundDotwarningDotboldDothovered: /* var(--ds-background-warning-bold-hovered) */ String
+    
+    @JSName("color.background.warning.bold.pressed")
+    var colorDotbackgroundDotwarningDotboldDotpressed: /* var(--ds-background-warning-bold-pressed) */ String
+    
+    @JSName("color.background.warning.hovered")
+    var colorDotbackgroundDotwarningDothovered: /* var(--ds-background-warning-hovered) */ String
+    
+    @JSName("color.background.warning.pressed")
+    var colorDotbackgroundDotwarningDotpressed: /* var(--ds-background-warning-pressed) */ String
+    
+    @JSName("color.blanket")
+    var colorDotblanket: /* var(--ds-blanket) */ String
+    
+    @JSName("color.blanket.danger")
+    var colorDotblanketDotdanger: /* var(--ds-blanket-danger) */ String
+    
+    @JSName("color.blanket.selected")
+    var colorDotblanketDotselected: /* var(--ds-blanket-selected) */ String
+    
+    @JSName("color.border")
+    var colorDotborder: /* var(--ds-border) */ String
+    
+    @JSName("color.border.accent.blue")
+    var colorDotborderDotaccentDotblue: /* var(--ds-border-accent-blue) */ String
+    
+    @JSName("color.border.accent.gray")
+    var colorDotborderDotaccentDotgray: /* var(--ds-border-accent-gray) */ String
+    
+    @JSName("color.border.accent.green")
+    var colorDotborderDotaccentDotgreen: /* var(--ds-border-accent-green) */ String
+    
+    @JSName("color.border.accent.magenta")
+    var colorDotborderDotaccentDotmagenta: /* var(--ds-border-accent-magenta) */ String
+    
+    @JSName("color.border.accent.orange")
+    var colorDotborderDotaccentDotorange: /* var(--ds-border-accent-orange) */ String
+    
+    @JSName("color.border.accent.purple")
+    var colorDotborderDotaccentDotpurple: /* var(--ds-border-accent-purple) */ String
+    
+    @JSName("color.border.accent.red")
+    var colorDotborderDotaccentDotred: /* var(--ds-border-accent-red) */ String
+    
+    @JSName("color.border.accent.teal")
+    var colorDotborderDotaccentDotteal: /* var(--ds-border-accent-teal) */ String
+    
+    @JSName("color.border.accent.yellow")
+    var colorDotborderDotaccentDotyellow: /* var(--ds-border-accent-yellow) */ String
+    
+    @JSName("color.border.bold")
+    var colorDotborderDotbold: /* var(--ds-border-bold) */ String
+    
+    @JSName("color.border.brand")
+    var colorDotborderDotbrand: /* var(--ds-border-brand) */ String
+    
+    @JSName("color.border.danger")
+    var colorDotborderDotdanger: /* var(--ds-border-danger) */ String
+    
+    @JSName("color.border.disabled")
+    var colorDotborderDotdisabled: /* var(--ds-border-disabled) */ String
+    
+    @JSName("color.border.discovery")
+    var colorDotborderDotdiscovery: /* var(--ds-border-discovery) */ String
+    
+    @JSName("color.border.focused")
+    var colorDotborderDotfocused: /* var(--ds-border-focused) */ String
+    
+    @JSName("color.border.information")
+    var colorDotborderDotinformation: /* var(--ds-border-information) */ String
+    
+    @JSName("color.border.input")
+    var colorDotborderDotinput: /* var(--ds-border-input) */ String
+    
+    @JSName("color.border.inverse")
+    var colorDotborderDotinverse: /* var(--ds-border-inverse) */ String
+    
+    @JSName("color.border.selected")
+    var colorDotborderDotselected: /* var(--ds-border-selected) */ String
+    
+    @JSName("color.border.success")
+    var colorDotborderDotsuccess: /* var(--ds-border-success) */ String
+    
+    @JSName("color.border.warning")
+    var colorDotborderDotwarning: /* var(--ds-border-warning) */ String
+    
+    @JSName("color.chart.blue.bold")
+    var colorDotchartDotblueDotbold: /* var(--ds-chart-blue-bold) */ String
+    
+    @JSName("color.chart.blue.bold.hovered")
+    var colorDotchartDotblueDotboldDothovered: /* var(--ds-chart-blue-bold-hovered) */ String
+    
+    @JSName("color.chart.blue.bolder")
+    var colorDotchartDotblueDotbolder: /* var(--ds-chart-blue-bolder) */ String
+    
+    @JSName("color.chart.blue.bolder.hovered")
+    var colorDotchartDotblueDotbolderDothovered: /* var(--ds-chart-blue-bolder-hovered) */ String
+    
+    @JSName("color.chart.blue.boldest")
+    var colorDotchartDotblueDotboldest: /* var(--ds-chart-blue-boldest) */ String
+    
+    @JSName("color.chart.blue.boldest.hovered")
+    var colorDotchartDotblueDotboldestDothovered: /* var(--ds-chart-blue-boldest-hovered) */ String
+    
+    @JSName("color.chart.brand")
+    var colorDotchartDotbrand: /* var(--ds-chart-brand) */ String
+    
+    @JSName("color.chart.brand.hovered")
+    var colorDotchartDotbrandDothovered: /* var(--ds-chart-brand-hovered) */ String
+    
+    @JSName("color.chart.categorical.1")
+    var colorDotchartDotcategoricalDot1: /* var(--ds-chart-categorical-1) */ String
+    
+    @JSName("color.chart.categorical.1.hovered")
+    var colorDotchartDotcategoricalDot1Dothovered: /* var(--ds-chart-categorical-1-hovered) */ String
+    
+    @JSName("color.chart.categorical.2")
+    var colorDotchartDotcategoricalDot2: /* var(--ds-chart-categorical-2) */ String
+    
+    @JSName("color.chart.categorical.2.hovered")
+    var colorDotchartDotcategoricalDot2Dothovered: /* var(--ds-chart-categorical-2-hovered) */ String
+    
+    @JSName("color.chart.categorical.3")
+    var colorDotchartDotcategoricalDot3: /* var(--ds-chart-categorical-3) */ String
+    
+    @JSName("color.chart.categorical.3.hovered")
+    var colorDotchartDotcategoricalDot3Dothovered: /* var(--ds-chart-categorical-3-hovered) */ String
+    
+    @JSName("color.chart.categorical.4")
+    var colorDotchartDotcategoricalDot4: /* var(--ds-chart-categorical-4) */ String
+    
+    @JSName("color.chart.categorical.4.hovered")
+    var colorDotchartDotcategoricalDot4Dothovered: /* var(--ds-chart-categorical-4-hovered) */ String
+    
+    @JSName("color.chart.categorical.5")
+    var colorDotchartDotcategoricalDot5: /* var(--ds-chart-categorical-5) */ String
+    
+    @JSName("color.chart.categorical.5.hovered")
+    var colorDotchartDotcategoricalDot5Dothovered: /* var(--ds-chart-categorical-5-hovered) */ String
+    
+    @JSName("color.chart.categorical.6")
+    var colorDotchartDotcategoricalDot6: /* var(--ds-chart-categorical-6) */ String
+    
+    @JSName("color.chart.categorical.6.hovered")
+    var colorDotchartDotcategoricalDot6Dothovered: /* var(--ds-chart-categorical-6-hovered) */ String
+    
+    @JSName("color.chart.categorical.7")
+    var colorDotchartDotcategoricalDot7: /* var(--ds-chart-categorical-7) */ String
+    
+    @JSName("color.chart.categorical.7.hovered")
+    var colorDotchartDotcategoricalDot7Dothovered: /* var(--ds-chart-categorical-7-hovered) */ String
+    
+    @JSName("color.chart.categorical.8")
+    var colorDotchartDotcategoricalDot8: /* var(--ds-chart-categorical-8) */ String
+    
+    @JSName("color.chart.categorical.8.hovered")
+    var colorDotchartDotcategoricalDot8Dothovered: /* var(--ds-chart-categorical-8-hovered) */ String
+    
+    @JSName("color.chart.danger")
+    var colorDotchartDotdanger: /* var(--ds-chart-danger) */ String
+    
+    @JSName("color.chart.danger.bold")
+    var colorDotchartDotdangerDotbold: /* var(--ds-chart-danger-bold) */ String
+    
+    @JSName("color.chart.danger.bold.hovered")
+    var colorDotchartDotdangerDotboldDothovered: /* var(--ds-chart-danger-bold-hovered) */ String
+    
+    @JSName("color.chart.danger.hovered")
+    var colorDotchartDotdangerDothovered: /* var(--ds-chart-danger-hovered) */ String
+    
+    @JSName("color.chart.discovery")
+    var colorDotchartDotdiscovery: /* var(--ds-chart-discovery) */ String
+    
+    @JSName("color.chart.discovery.bold")
+    var colorDotchartDotdiscoveryDotbold: /* var(--ds-chart-discovery-bold) */ String
+    
+    @JSName("color.chart.discovery.bold.hovered")
+    var colorDotchartDotdiscoveryDotboldDothovered: /* var(--ds-chart-discovery-bold-hovered) */ String
+    
+    @JSName("color.chart.discovery.hovered")
+    var colorDotchartDotdiscoveryDothovered: /* var(--ds-chart-discovery-hovered) */ String
+    
+    @JSName("color.chart.gray.bold")
+    var colorDotchartDotgrayDotbold: /* var(--ds-chart-gray-bold) */ String
+    
+    @JSName("color.chart.gray.bold.hovered")
+    var colorDotchartDotgrayDotboldDothovered: /* var(--ds-chart-gray-bold-hovered) */ String
+    
+    @JSName("color.chart.gray.bolder")
+    var colorDotchartDotgrayDotbolder: /* var(--ds-chart-gray-bolder) */ String
+    
+    @JSName("color.chart.gray.bolder.hovered")
+    var colorDotchartDotgrayDotbolderDothovered: /* var(--ds-chart-gray-bolder-hovered) */ String
+    
+    @JSName("color.chart.gray.boldest")
+    var colorDotchartDotgrayDotboldest: /* var(--ds-chart-gray-boldest) */ String
+    
+    @JSName("color.chart.gray.boldest.hovered")
+    var colorDotchartDotgrayDotboldestDothovered: /* var(--ds-chart-gray-boldest-hovered) */ String
+    
+    @JSName("color.chart.green.bold")
+    var colorDotchartDotgreenDotbold: /* var(--ds-chart-green-bold) */ String
+    
+    @JSName("color.chart.green.bold.hovered")
+    var colorDotchartDotgreenDotboldDothovered: /* var(--ds-chart-green-bold-hovered) */ String
+    
+    @JSName("color.chart.green.bolder")
+    var colorDotchartDotgreenDotbolder: /* var(--ds-chart-green-bolder) */ String
+    
+    @JSName("color.chart.green.bolder.hovered")
+    var colorDotchartDotgreenDotbolderDothovered: /* var(--ds-chart-green-bolder-hovered) */ String
+    
+    @JSName("color.chart.green.boldest")
+    var colorDotchartDotgreenDotboldest: /* var(--ds-chart-green-boldest) */ String
+    
+    @JSName("color.chart.green.boldest.hovered")
+    var colorDotchartDotgreenDotboldestDothovered: /* var(--ds-chart-green-boldest-hovered) */ String
+    
+    @JSName("color.chart.information")
+    var colorDotchartDotinformation: /* var(--ds-chart-information) */ String
+    
+    @JSName("color.chart.information.bold")
+    var colorDotchartDotinformationDotbold: /* var(--ds-chart-information-bold) */ String
+    
+    @JSName("color.chart.information.bold.hovered")
+    var colorDotchartDotinformationDotboldDothovered: /* var(--ds-chart-information-bold-hovered) */ String
+    
+    @JSName("color.chart.information.hovered")
+    var colorDotchartDotinformationDothovered: /* var(--ds-chart-information-hovered) */ String
+    
+    @JSName("color.chart.magenta.bold")
+    var colorDotchartDotmagentaDotbold: /* var(--ds-chart-magenta-bold) */ String
+    
+    @JSName("color.chart.magenta.bold.hovered")
+    var colorDotchartDotmagentaDotboldDothovered: /* var(--ds-chart-magenta-bold-hovered) */ String
+    
+    @JSName("color.chart.magenta.bolder")
+    var colorDotchartDotmagentaDotbolder: /* var(--ds-chart-magenta-bolder) */ String
+    
+    @JSName("color.chart.magenta.bolder.hovered")
+    var colorDotchartDotmagentaDotbolderDothovered: /* var(--ds-chart-magenta-bolder-hovered) */ String
+    
+    @JSName("color.chart.magenta.boldest")
+    var colorDotchartDotmagentaDotboldest: /* var(--ds-chart-magenta-boldest) */ String
+    
+    @JSName("color.chart.magenta.boldest.hovered")
+    var colorDotchartDotmagentaDotboldestDothovered: /* var(--ds-chart-magenta-boldest-hovered) */ String
+    
+    @JSName("color.chart.neutral")
+    var colorDotchartDotneutral: /* var(--ds-chart-neutral) */ String
+    
+    @JSName("color.chart.neutral.hovered")
+    var colorDotchartDotneutralDothovered: /* var(--ds-chart-neutral-hovered) */ String
+    
+    @JSName("color.chart.orange.bold")
+    var colorDotchartDotorangeDotbold: /* var(--ds-chart-orange-bold) */ String
+    
+    @JSName("color.chart.orange.bold.hovered")
+    var colorDotchartDotorangeDotboldDothovered: /* var(--ds-chart-orange-bold-hovered) */ String
+    
+    @JSName("color.chart.orange.bolder")
+    var colorDotchartDotorangeDotbolder: /* var(--ds-chart-orange-bolder) */ String
+    
+    @JSName("color.chart.orange.bolder.hovered")
+    var colorDotchartDotorangeDotbolderDothovered: /* var(--ds-chart-orange-bolder-hovered) */ String
+    
+    @JSName("color.chart.orange.boldest")
+    var colorDotchartDotorangeDotboldest: /* var(--ds-chart-orange-boldest) */ String
+    
+    @JSName("color.chart.orange.boldest.hovered")
+    var colorDotchartDotorangeDotboldestDothovered: /* var(--ds-chart-orange-boldest-hovered) */ String
+    
+    @JSName("color.chart.purple.bold")
+    var colorDotchartDotpurpleDotbold: /* var(--ds-chart-purple-bold) */ String
+    
+    @JSName("color.chart.purple.bold.hovered")
+    var colorDotchartDotpurpleDotboldDothovered: /* var(--ds-chart-purple-bold-hovered) */ String
+    
+    @JSName("color.chart.purple.bolder")
+    var colorDotchartDotpurpleDotbolder: /* var(--ds-chart-purple-bolder) */ String
+    
+    @JSName("color.chart.purple.bolder.hovered")
+    var colorDotchartDotpurpleDotbolderDothovered: /* var(--ds-chart-purple-bolder-hovered) */ String
+    
+    @JSName("color.chart.purple.boldest")
+    var colorDotchartDotpurpleDotboldest: /* var(--ds-chart-purple-boldest) */ String
+    
+    @JSName("color.chart.purple.boldest.hovered")
+    var colorDotchartDotpurpleDotboldestDothovered: /* var(--ds-chart-purple-boldest-hovered) */ String
+    
+    @JSName("color.chart.red.bold")
+    var colorDotchartDotredDotbold: /* var(--ds-chart-red-bold) */ String
+    
+    @JSName("color.chart.red.bold.hovered")
+    var colorDotchartDotredDotboldDothovered: /* var(--ds-chart-red-bold-hovered) */ String
+    
+    @JSName("color.chart.red.bolder")
+    var colorDotchartDotredDotbolder: /* var(--ds-chart-red-bolder) */ String
+    
+    @JSName("color.chart.red.bolder.hovered")
+    var colorDotchartDotredDotbolderDothovered: /* var(--ds-chart-red-bolder-hovered) */ String
+    
+    @JSName("color.chart.red.boldest")
+    var colorDotchartDotredDotboldest: /* var(--ds-chart-red-boldest) */ String
+    
+    @JSName("color.chart.red.boldest.hovered")
+    var colorDotchartDotredDotboldestDothovered: /* var(--ds-chart-red-boldest-hovered) */ String
+    
+    @JSName("color.chart.success")
+    var colorDotchartDotsuccess: /* var(--ds-chart-success) */ String
+    
+    @JSName("color.chart.success.bold")
+    var colorDotchartDotsuccessDotbold: /* var(--ds-chart-success-bold) */ String
+    
+    @JSName("color.chart.success.bold.hovered")
+    var colorDotchartDotsuccessDotboldDothovered: /* var(--ds-chart-success-bold-hovered) */ String
+    
+    @JSName("color.chart.success.hovered")
+    var colorDotchartDotsuccessDothovered: /* var(--ds-chart-success-hovered) */ String
+    
+    @JSName("color.chart.teal.bold")
+    var colorDotchartDottealDotbold: /* var(--ds-chart-teal-bold) */ String
+    
+    @JSName("color.chart.teal.bold.hovered")
+    var colorDotchartDottealDotboldDothovered: /* var(--ds-chart-teal-bold-hovered) */ String
+    
+    @JSName("color.chart.teal.bolder")
+    var colorDotchartDottealDotbolder: /* var(--ds-chart-teal-bolder) */ String
+    
+    @JSName("color.chart.teal.bolder.hovered")
+    var colorDotchartDottealDotbolderDothovered: /* var(--ds-chart-teal-bolder-hovered) */ String
+    
+    @JSName("color.chart.teal.boldest")
+    var colorDotchartDottealDotboldest: /* var(--ds-chart-teal-boldest) */ String
+    
+    @JSName("color.chart.teal.boldest.hovered")
+    var colorDotchartDottealDotboldestDothovered: /* var(--ds-chart-teal-boldest-hovered) */ String
+    
+    @JSName("color.chart.warning")
+    var colorDotchartDotwarning: /* var(--ds-chart-warning) */ String
+    
+    @JSName("color.chart.warning.bold")
+    var colorDotchartDotwarningDotbold: /* var(--ds-chart-warning-bold) */ String
+    
+    @JSName("color.chart.warning.bold.hovered")
+    var colorDotchartDotwarningDotboldDothovered: /* var(--ds-chart-warning-bold-hovered) */ String
+    
+    @JSName("color.chart.warning.hovered")
+    var colorDotchartDotwarningDothovered: /* var(--ds-chart-warning-hovered) */ String
+    
+    @JSName("color.chart.yellow.bold")
+    var colorDotchartDotyellowDotbold: /* var(--ds-chart-yellow-bold) */ String
+    
+    @JSName("color.chart.yellow.bold.hovered")
+    var colorDotchartDotyellowDotboldDothovered: /* var(--ds-chart-yellow-bold-hovered) */ String
+    
+    @JSName("color.chart.yellow.bolder")
+    var colorDotchartDotyellowDotbolder: /* var(--ds-chart-yellow-bolder) */ String
+    
+    @JSName("color.chart.yellow.bolder.hovered")
+    var colorDotchartDotyellowDotbolderDothovered: /* var(--ds-chart-yellow-bolder-hovered) */ String
+    
+    @JSName("color.chart.yellow.boldest")
+    var colorDotchartDotyellowDotboldest: /* var(--ds-chart-yellow-boldest) */ String
+    
+    @JSName("color.chart.yellow.boldest.hovered")
+    var colorDotchartDotyellowDotboldestDothovered: /* var(--ds-chart-yellow-boldest-hovered) */ String
+    
+    @JSName("color.icon")
+    var colorDoticon: /* var(--ds-icon) */ String
+    
+    @JSName("color.icon.accent.blue")
+    var colorDoticonDotaccentDotblue: /* var(--ds-icon-accent-blue) */ String
+    
+    @JSName("color.icon.accent.gray")
+    var colorDoticonDotaccentDotgray: /* var(--ds-icon-accent-gray) */ String
+    
+    @JSName("color.icon.accent.green")
+    var colorDoticonDotaccentDotgreen: /* var(--ds-icon-accent-green) */ String
+    
+    @JSName("color.icon.accent.magenta")
+    var colorDoticonDotaccentDotmagenta: /* var(--ds-icon-accent-magenta) */ String
+    
+    @JSName("color.icon.accent.orange")
+    var colorDoticonDotaccentDotorange: /* var(--ds-icon-accent-orange) */ String
+    
+    @JSName("color.icon.accent.purple")
+    var colorDoticonDotaccentDotpurple: /* var(--ds-icon-accent-purple) */ String
+    
+    @JSName("color.icon.accent.red")
+    var colorDoticonDotaccentDotred: /* var(--ds-icon-accent-red) */ String
+    
+    @JSName("color.icon.accent.teal")
+    var colorDoticonDotaccentDotteal: /* var(--ds-icon-accent-teal) */ String
+    
+    @JSName("color.icon.accent.yellow")
+    var colorDoticonDotaccentDotyellow: /* var(--ds-icon-accent-yellow) */ String
+    
+    @JSName("color.icon.brand")
+    var colorDoticonDotbrand: /* var(--ds-icon-brand) */ String
+    
+    @JSName("color.icon.danger")
+    var colorDoticonDotdanger: /* var(--ds-icon-danger) */ String
+    
+    @JSName("color.icon.disabled")
+    var colorDoticonDotdisabled: /* var(--ds-icon-disabled) */ String
+    
+    @JSName("color.icon.discovery")
+    var colorDoticonDotdiscovery: /* var(--ds-icon-discovery) */ String
+    
+    @JSName("color.icon.information")
+    var colorDoticonDotinformation: /* var(--ds-icon-information) */ String
+    
+    @JSName("color.icon.inverse")
+    var colorDoticonDotinverse: /* var(--ds-icon-inverse) */ String
+    
+    @JSName("color.icon.selected")
+    var colorDoticonDotselected: /* var(--ds-icon-selected) */ String
+    
+    @JSName("color.icon.subtle")
+    var colorDoticonDotsubtle: /* var(--ds-icon-subtle) */ String
+    
+    @JSName("color.icon.success")
+    var colorDoticonDotsuccess: /* var(--ds-icon-success) */ String
+    
+    @JSName("color.icon.warning")
+    var colorDoticonDotwarning: /* var(--ds-icon-warning) */ String
+    
+    @JSName("color.icon.warning.inverse")
+    var colorDoticonDotwarningDotinverse: /* var(--ds-icon-warning-inverse) */ String
+    
+    @JSName("color.interaction.hovered")
+    var colorDotinteractionDothovered: /* var(--ds-interaction-hovered) */ String
+    
+    @JSName("color.interaction.pressed")
+    var colorDotinteractionDotpressed: /* var(--ds-interaction-pressed) */ String
+    
+    @JSName("color.link")
+    var colorDotlink: /* var(--ds-link) */ String
+    
+    @JSName("color.link.pressed")
+    var colorDotlinkDotpressed: /* var(--ds-link-pressed) */ String
+    
+    @JSName("color.skeleton")
+    var colorDotskeleton: /* var(--ds-skeleton) */ String
+    
+    @JSName("color.skeleton.subtle")
+    var colorDotskeletonDotsubtle: /* var(--ds-skeleton-subtle) */ String
+    
+    @JSName("color.text")
+    var colorDottext: /* var(--ds-text) */ String
+    
+    @JSName("color.text.accent.blue")
+    var colorDottextDotaccentDotblue: /* var(--ds-text-accent-blue) */ String
+    
+    @JSName("color.text.accent.blue.bolder")
+    var colorDottextDotaccentDotblueDotbolder: /* var(--ds-text-accent-blue-bolder) */ String
+    
+    @JSName("color.text.accent.gray")
+    var colorDottextDotaccentDotgray: /* var(--ds-text-accent-gray) */ String
+    
+    @JSName("color.text.accent.gray.bolder")
+    var colorDottextDotaccentDotgrayDotbolder: /* var(--ds-text-accent-gray-bolder) */ String
+    
+    @JSName("color.text.accent.green")
+    var colorDottextDotaccentDotgreen: /* var(--ds-text-accent-green) */ String
+    
+    @JSName("color.text.accent.green.bolder")
+    var colorDottextDotaccentDotgreenDotbolder: /* var(--ds-text-accent-green-bolder) */ String
+    
+    @JSName("color.text.accent.magenta")
+    var colorDottextDotaccentDotmagenta: /* var(--ds-text-accent-magenta) */ String
+    
+    @JSName("color.text.accent.magenta.bolder")
+    var colorDottextDotaccentDotmagentaDotbolder: /* var(--ds-text-accent-magenta-bolder) */ String
+    
+    @JSName("color.text.accent.orange")
+    var colorDottextDotaccentDotorange: /* var(--ds-text-accent-orange) */ String
+    
+    @JSName("color.text.accent.orange.bolder")
+    var colorDottextDotaccentDotorangeDotbolder: /* var(--ds-text-accent-orange-bolder) */ String
+    
+    @JSName("color.text.accent.purple")
+    var colorDottextDotaccentDotpurple: /* var(--ds-text-accent-purple) */ String
+    
+    @JSName("color.text.accent.purple.bolder")
+    var colorDottextDotaccentDotpurpleDotbolder: /* var(--ds-text-accent-purple-bolder) */ String
+    
+    @JSName("color.text.accent.red")
+    var colorDottextDotaccentDotred: /* var(--ds-text-accent-red) */ String
+    
+    @JSName("color.text.accent.red.bolder")
+    var colorDottextDotaccentDotredDotbolder: /* var(--ds-text-accent-red-bolder) */ String
+    
+    @JSName("color.text.accent.teal")
+    var colorDottextDotaccentDotteal: /* var(--ds-text-accent-teal) */ String
+    
+    @JSName("color.text.accent.teal.bolder")
+    var colorDottextDotaccentDottealDotbolder: /* var(--ds-text-accent-teal-bolder) */ String
+    
+    @JSName("color.text.accent.yellow")
+    var colorDottextDotaccentDotyellow: /* var(--ds-text-accent-yellow) */ String
+    
+    @JSName("color.text.accent.yellow.bolder")
+    var colorDottextDotaccentDotyellowDotbolder: /* var(--ds-text-accent-yellow-bolder) */ String
+    
+    @JSName("color.text.brand")
+    var colorDottextDotbrand: /* var(--ds-text-brand) */ String
+    
+    @JSName("color.text.danger")
+    var colorDottextDotdanger: /* var(--ds-text-danger) */ String
+    
+    @JSName("color.text.disabled")
+    var colorDottextDotdisabled: /* var(--ds-text-disabled) */ String
+    
+    @JSName("color.text.discovery")
+    var colorDottextDotdiscovery: /* var(--ds-text-discovery) */ String
+    
+    @JSName("color.text.information")
+    var colorDottextDotinformation: /* var(--ds-text-information) */ String
+    
+    @JSName("color.text.inverse")
+    var colorDottextDotinverse: /* var(--ds-text-inverse) */ String
+    
+    @JSName("color.text.selected")
+    var colorDottextDotselected: /* var(--ds-text-selected) */ String
+    
+    @JSName("color.text.subtle")
+    var colorDottextDotsubtle: /* var(--ds-text-subtle) */ String
+    
+    @JSName("color.text.subtlest")
+    var colorDottextDotsubtlest: /* var(--ds-text-subtlest) */ String
+    
+    @JSName("color.text.success")
+    var colorDottextDotsuccess: /* var(--ds-text-success) */ String
+    
+    @JSName("color.text.warning")
+    var colorDottextDotwarning: /* var(--ds-text-warning) */ String
+    
+    @JSName("color.text.warning.inverse")
+    var colorDottextDotwarningDotinverse: /* var(--ds-text-warning-inverse) */ String
+    
+    @JSName("elevation.shadow.overflow")
+    var elevationDotshadowDotoverflow: /* var(--ds-shadow-overflow) */ String
+    
+    @JSName("elevation.shadow.overflow.perimeter")
+    var elevationDotshadowDotoverflowDotperimeter: /* var(--ds-shadow-overflow-perimeter) */ String
+    
+    @JSName("elevation.shadow.overflow.spread")
+    var elevationDotshadowDotoverflowDotspread: /* var(--ds-shadow-overflow-spread) */ String
+    
+    @JSName("elevation.shadow.overlay")
+    var elevationDotshadowDotoverlay: /* var(--ds-shadow-overlay) */ String
+    
+    @JSName("elevation.shadow.raised")
+    var elevationDotshadowDotraised: /* var(--ds-shadow-raised) */ String
+    
+    @JSName("elevation.surface")
+    var elevationDotsurface: /* var(--ds-surface) */ String
+    
+    @JSName("elevation.surface.hovered")
+    var elevationDotsurfaceDothovered: /* var(--ds-surface-hovered) */ String
+    
+    @JSName("elevation.surface.overlay")
+    var elevationDotsurfaceDotoverlay: /* var(--ds-surface-overlay) */ String
+    
+    @JSName("elevation.surface.overlay.hovered")
+    var elevationDotsurfaceDotoverlayDothovered: /* var(--ds-surface-overlay-hovered) */ String
+    
+    @JSName("elevation.surface.overlay.pressed")
+    var elevationDotsurfaceDotoverlayDotpressed: /* var(--ds-surface-overlay-pressed) */ String
+    
+    @JSName("elevation.surface.pressed")
+    var elevationDotsurfaceDotpressed: /* var(--ds-surface-pressed) */ String
+    
+    @JSName("elevation.surface.raised")
+    var elevationDotsurfaceDotraised: /* var(--ds-surface-raised) */ String
+    
+    @JSName("elevation.surface.raised.hovered")
+    var elevationDotsurfaceDotraisedDothovered: /* var(--ds-surface-raised-hovered) */ String
+    
+    @JSName("elevation.surface.raised.pressed")
+    var elevationDotsurfaceDotraisedDotpressed: /* var(--ds-surface-raised-pressed) */ String
+    
+    @JSName("elevation.surface.sunken")
+    var elevationDotsurfaceDotsunken: /* var(--ds-surface-sunken) */ String
+    
+    @JSName("font.family.monospace")
+    var fontDotfamilyDotmonospace: /* var(--ds-font-family-monospace) */ String
+    
+    @JSName("font.family.sans")
+    var fontDotfamilyDotsans: /* var(--ds-font-family-sans) */ String
+    
+    @JSName("font.lineHeight.100")
+    var fontDotlineHeightDot100: /* var(--ds-font-lineHeight-100) */ String
+    
+    @JSName("font.lineHeight.200")
+    var fontDotlineHeightDot200: /* var(--ds-font-lineHeight-200) */ String
+    
+    @JSName("font.lineHeight.300")
+    var fontDotlineHeightDot300: /* var(--ds-font-lineHeight-300) */ String
+    
+    @JSName("font.lineHeight.400")
+    var fontDotlineHeightDot400: /* var(--ds-font-lineHeight-400) */ String
+    
+    @JSName("font.lineHeight.500")
+    var fontDotlineHeightDot500: /* var(--ds-font-lineHeight-500) */ String
+    
+    @JSName("font.lineHeight.600")
+    var fontDotlineHeightDot600: /* var(--ds-font-lineHeight-600) */ String
+    
+    @JSName("font.size.050")
+    var fontDotsizeDot050: /* var(--ds-font-size-050) */ String
+    
+    @JSName("font.size.075")
+    var fontDotsizeDot075: /* var(--ds-font-size-075) */ String
+    
+    @JSName("font.size.100")
+    var fontDotsizeDot100: /* var(--ds-font-size-100) */ String
+    
+    @JSName("font.size.200")
+    var fontDotsizeDot200: /* var(--ds-font-size-200) */ String
+    
+    @JSName("font.size.300")
+    var fontDotsizeDot300: /* var(--ds-font-size-300) */ String
+    
+    @JSName("font.size.400")
+    var fontDotsizeDot400: /* var(--ds-font-size-400) */ String
+    
+    @JSName("font.size.500")
+    var fontDotsizeDot500: /* var(--ds-font-size-500) */ String
+    
+    @JSName("font.size.600")
+    var fontDotsizeDot600: /* var(--ds-font-size-600) */ String
+    
+    @JSName("font.weight.bold")
+    var fontDotweightDotbold: /* var(--ds-font-weight-bold) */ String
+    
+    @JSName("font.weight.medium")
+    var fontDotweightDotmedium: /* var(--ds-font-weight-medium) */ String
+    
+    @JSName("font.weight.regular")
+    var fontDotweightDotregular: /* var(--ds-font-weight-regular) */ String
+    
+    @JSName("font.weight.semibold")
+    var fontDotweightDotsemibold: /* var(--ds-font-weight-semibold) */ String
+    
+    @JSName("opacity.disabled")
+    var opacityDotdisabled: /* var(--ds-opacity-disabled) */ String
+    
+    @JSName("opacity.loading")
+    var opacityDotloading: /* var(--ds-opacity-loading) */ String
+    
+    @JSName("space.0")
+    var spaceDot0: /* var(--ds-space-0) */ String
+    
+    @JSName("space.025")
+    var spaceDot025: /* var(--ds-space-025) */ String
+    
+    @JSName("space.050")
+    var spaceDot050: /* var(--ds-space-050) */ String
+    
+    @JSName("space.075")
+    var spaceDot075: /* var(--ds-space-075) */ String
+    
+    @JSName("space.100")
+    var spaceDot100: /* var(--ds-space-100) */ String
+    
+    @JSName("space.1000")
+    var spaceDot1000: /* var(--ds-space-1000) */ String
+    
+    @JSName("space.150")
+    var spaceDot150: /* var(--ds-space-150) */ String
+    
+    @JSName("space.200")
+    var spaceDot200: /* var(--ds-space-200) */ String
+    
+    @JSName("space.250")
+    var spaceDot250: /* var(--ds-space-250) */ String
+    
+    @JSName("space.300")
+    var spaceDot300: /* var(--ds-space-300) */ String
+    
+    @JSName("space.400")
+    var spaceDot400: /* var(--ds-space-400) */ String
+    
+    @JSName("space.500")
+    var spaceDot500: /* var(--ds-space-500) */ String
+    
+    @JSName("space.600")
+    var spaceDot600: /* var(--ds-space-600) */ String
+    
+    @JSName("space.800")
+    var spaceDot800: /* var(--ds-space-800) */ String
+    
+    @JSName("utility.UNSAFE.transparent")
+    var utilityDotUNSAFEDottransparent: /* var(--ds-UNSAFE-transparent) */ String
+  }
   object CSSTokenMap {
     
-    inline def apply(
-      CSSTokenMap: typings.atlaskitTokens.distTypesArtifactsTypescriptAtlassianSpacingTokenNamesMod.CSSTokenMap
-    ): CSSTokenMap = {
+    inline def apply(): CSSTokenMap = {
       val __obj = js.Dynamic.literal()
-      js.Dynamic.global.Object.assign(__obj, CSSTokenMap)
+      __obj.updateDynamic("border.radius.050")("var(--ds-radius-050)")
+      __obj.updateDynamic("border.radius.100")("var(--ds-radius-100)")
+      __obj.updateDynamic("border.radius.200")("var(--ds-radius-200)")
+      __obj.updateDynamic("border.radius.300")("var(--ds-radius-300)")
+      __obj.updateDynamic("border.radius.400")("var(--ds-radius-400)")
+      __obj.updateDynamic("border.radius.round")("var(--ds-radius-round)")
+      __obj.updateDynamic("border.width.0")("var(--ds-width-0)")
+      __obj.updateDynamic("border.width.050")("var(--ds-width-050)")
+      __obj.updateDynamic("border.width.100")("var(--ds-width-100)")
+      __obj.updateDynamic("color.background.accent.blue.bolder")("var(--ds-background-accent-blue-bolder)")
+      __obj.updateDynamic("color.background.accent.blue.subtle")("var(--ds-background-accent-blue-subtle)")
+      __obj.updateDynamic("color.background.accent.blue.subtler")("var(--ds-background-accent-blue-subtler)")
+      __obj.updateDynamic("color.background.accent.blue.subtlest")("var(--ds-background-accent-blue-subtlest)")
+      __obj.updateDynamic("color.background.accent.gray.bolder")("var(--ds-background-accent-gray-bolder)")
+      __obj.updateDynamic("color.background.accent.gray.subtle")("var(--ds-background-accent-gray-subtle)")
+      __obj.updateDynamic("color.background.accent.gray.subtler")("var(--ds-background-accent-gray-subtler)")
+      __obj.updateDynamic("color.background.accent.gray.subtlest")("var(--ds-background-accent-gray-subtlest)")
+      __obj.updateDynamic("color.background.accent.green.bolder")("var(--ds-background-accent-green-bolder)")
+      __obj.updateDynamic("color.background.accent.green.subtle")("var(--ds-background-accent-green-subtle)")
+      __obj.updateDynamic("color.background.accent.green.subtler")("var(--ds-background-accent-green-subtler)")
+      __obj.updateDynamic("color.background.accent.green.subtlest")("var(--ds-background-accent-green-subtlest)")
+      __obj.updateDynamic("color.background.accent.magenta.bolder")("var(--ds-background-accent-magenta-bolder)")
+      __obj.updateDynamic("color.background.accent.magenta.subtle")("var(--ds-background-accent-magenta-subtle)")
+      __obj.updateDynamic("color.background.accent.magenta.subtler")("var(--ds-background-accent-magenta-subtler)")
+      __obj.updateDynamic("color.background.accent.magenta.subtlest")("var(--ds-background-accent-magenta-subtlest)")
+      __obj.updateDynamic("color.background.accent.orange.bolder")("var(--ds-background-accent-orange-bolder)")
+      __obj.updateDynamic("color.background.accent.orange.subtle")("var(--ds-background-accent-orange-subtle)")
+      __obj.updateDynamic("color.background.accent.orange.subtler")("var(--ds-background-accent-orange-subtler)")
+      __obj.updateDynamic("color.background.accent.orange.subtlest")("var(--ds-background-accent-orange-subtlest)")
+      __obj.updateDynamic("color.background.accent.purple.bolder")("var(--ds-background-accent-purple-bolder)")
+      __obj.updateDynamic("color.background.accent.purple.subtle")("var(--ds-background-accent-purple-subtle)")
+      __obj.updateDynamic("color.background.accent.purple.subtler")("var(--ds-background-accent-purple-subtler)")
+      __obj.updateDynamic("color.background.accent.purple.subtlest")("var(--ds-background-accent-purple-subtlest)")
+      __obj.updateDynamic("color.background.accent.red.bolder")("var(--ds-background-accent-red-bolder)")
+      __obj.updateDynamic("color.background.accent.red.subtle")("var(--ds-background-accent-red-subtle)")
+      __obj.updateDynamic("color.background.accent.red.subtler")("var(--ds-background-accent-red-subtler)")
+      __obj.updateDynamic("color.background.accent.red.subtlest")("var(--ds-background-accent-red-subtlest)")
+      __obj.updateDynamic("color.background.accent.teal.bolder")("var(--ds-background-accent-teal-bolder)")
+      __obj.updateDynamic("color.background.accent.teal.subtle")("var(--ds-background-accent-teal-subtle)")
+      __obj.updateDynamic("color.background.accent.teal.subtler")("var(--ds-background-accent-teal-subtler)")
+      __obj.updateDynamic("color.background.accent.teal.subtlest")("var(--ds-background-accent-teal-subtlest)")
+      __obj.updateDynamic("color.background.accent.yellow.bolder")("var(--ds-background-accent-yellow-bolder)")
+      __obj.updateDynamic("color.background.accent.yellow.subtle")("var(--ds-background-accent-yellow-subtle)")
+      __obj.updateDynamic("color.background.accent.yellow.subtler")("var(--ds-background-accent-yellow-subtler)")
+      __obj.updateDynamic("color.background.accent.yellow.subtlest")("var(--ds-background-accent-yellow-subtlest)")
+      __obj.updateDynamic("color.background.brand.bold")("var(--ds-background-brand-bold)")
+      __obj.updateDynamic("color.background.brand.bold.hovered")("var(--ds-background-brand-bold-hovered)")
+      __obj.updateDynamic("color.background.brand.bold.pressed")("var(--ds-background-brand-bold-pressed)")
+      __obj.updateDynamic("color.background.danger")("var(--ds-background-danger)")
+      __obj.updateDynamic("color.background.danger.bold")("var(--ds-background-danger-bold)")
+      __obj.updateDynamic("color.background.danger.bold.hovered")("var(--ds-background-danger-bold-hovered)")
+      __obj.updateDynamic("color.background.danger.bold.pressed")("var(--ds-background-danger-bold-pressed)")
+      __obj.updateDynamic("color.background.danger.hovered")("var(--ds-background-danger-hovered)")
+      __obj.updateDynamic("color.background.danger.pressed")("var(--ds-background-danger-pressed)")
+      __obj.updateDynamic("color.background.disabled")("var(--ds-background-disabled)")
+      __obj.updateDynamic("color.background.discovery")("var(--ds-background-discovery)")
+      __obj.updateDynamic("color.background.discovery.bold")("var(--ds-background-discovery-bold)")
+      __obj.updateDynamic("color.background.discovery.bold.hovered")("var(--ds-background-discovery-bold-hovered)")
+      __obj.updateDynamic("color.background.discovery.bold.pressed")("var(--ds-background-discovery-bold-pressed)")
+      __obj.updateDynamic("color.background.discovery.hovered")("var(--ds-background-discovery-hovered)")
+      __obj.updateDynamic("color.background.discovery.pressed")("var(--ds-background-discovery-pressed)")
+      __obj.updateDynamic("color.background.information")("var(--ds-background-information)")
+      __obj.updateDynamic("color.background.information.bold")("var(--ds-background-information-bold)")
+      __obj.updateDynamic("color.background.information.bold.hovered")("var(--ds-background-information-bold-hovered)")
+      __obj.updateDynamic("color.background.information.bold.pressed")("var(--ds-background-information-bold-pressed)")
+      __obj.updateDynamic("color.background.information.hovered")("var(--ds-background-information-hovered)")
+      __obj.updateDynamic("color.background.information.pressed")("var(--ds-background-information-pressed)")
+      __obj.updateDynamic("color.background.input")("var(--ds-background-input)")
+      __obj.updateDynamic("color.background.input.hovered")("var(--ds-background-input-hovered)")
+      __obj.updateDynamic("color.background.input.pressed")("var(--ds-background-input-pressed)")
+      __obj.updateDynamic("color.background.inverse.subtle")("var(--ds-background-inverse-subtle)")
+      __obj.updateDynamic("color.background.inverse.subtle.hovered")("var(--ds-background-inverse-subtle-hovered)")
+      __obj.updateDynamic("color.background.inverse.subtle.pressed")("var(--ds-background-inverse-subtle-pressed)")
+      __obj.updateDynamic("color.background.neutral")("var(--ds-background-neutral)")
+      __obj.updateDynamic("color.background.neutral.bold")("var(--ds-background-neutral-bold)")
+      __obj.updateDynamic("color.background.neutral.bold.hovered")("var(--ds-background-neutral-bold-hovered)")
+      __obj.updateDynamic("color.background.neutral.bold.pressed")("var(--ds-background-neutral-bold-pressed)")
+      __obj.updateDynamic("color.background.neutral.hovered")("var(--ds-background-neutral-hovered)")
+      __obj.updateDynamic("color.background.neutral.pressed")("var(--ds-background-neutral-pressed)")
+      __obj.updateDynamic("color.background.neutral.subtle")("var(--ds-background-neutral-subtle)")
+      __obj.updateDynamic("color.background.neutral.subtle.hovered")("var(--ds-background-neutral-subtle-hovered)")
+      __obj.updateDynamic("color.background.neutral.subtle.pressed")("var(--ds-background-neutral-subtle-pressed)")
+      __obj.updateDynamic("color.background.selected")("var(--ds-background-selected)")
+      __obj.updateDynamic("color.background.selected.bold")("var(--ds-background-selected-bold)")
+      __obj.updateDynamic("color.background.selected.bold.hovered")("var(--ds-background-selected-bold-hovered)")
+      __obj.updateDynamic("color.background.selected.bold.pressed")("var(--ds-background-selected-bold-pressed)")
+      __obj.updateDynamic("color.background.selected.hovered")("var(--ds-background-selected-hovered)")
+      __obj.updateDynamic("color.background.selected.pressed")("var(--ds-background-selected-pressed)")
+      __obj.updateDynamic("color.background.success")("var(--ds-background-success)")
+      __obj.updateDynamic("color.background.success.bold")("var(--ds-background-success-bold)")
+      __obj.updateDynamic("color.background.success.bold.hovered")("var(--ds-background-success-bold-hovered)")
+      __obj.updateDynamic("color.background.success.bold.pressed")("var(--ds-background-success-bold-pressed)")
+      __obj.updateDynamic("color.background.success.hovered")("var(--ds-background-success-hovered)")
+      __obj.updateDynamic("color.background.success.pressed")("var(--ds-background-success-pressed)")
+      __obj.updateDynamic("color.background.warning")("var(--ds-background-warning)")
+      __obj.updateDynamic("color.background.warning.bold")("var(--ds-background-warning-bold)")
+      __obj.updateDynamic("color.background.warning.bold.hovered")("var(--ds-background-warning-bold-hovered)")
+      __obj.updateDynamic("color.background.warning.bold.pressed")("var(--ds-background-warning-bold-pressed)")
+      __obj.updateDynamic("color.background.warning.hovered")("var(--ds-background-warning-hovered)")
+      __obj.updateDynamic("color.background.warning.pressed")("var(--ds-background-warning-pressed)")
+      __obj.updateDynamic("color.blanket")("var(--ds-blanket)")
+      __obj.updateDynamic("color.blanket.danger")("var(--ds-blanket-danger)")
+      __obj.updateDynamic("color.blanket.selected")("var(--ds-blanket-selected)")
+      __obj.updateDynamic("color.border")("var(--ds-border)")
+      __obj.updateDynamic("color.border.accent.blue")("var(--ds-border-accent-blue)")
+      __obj.updateDynamic("color.border.accent.gray")("var(--ds-border-accent-gray)")
+      __obj.updateDynamic("color.border.accent.green")("var(--ds-border-accent-green)")
+      __obj.updateDynamic("color.border.accent.magenta")("var(--ds-border-accent-magenta)")
+      __obj.updateDynamic("color.border.accent.orange")("var(--ds-border-accent-orange)")
+      __obj.updateDynamic("color.border.accent.purple")("var(--ds-border-accent-purple)")
+      __obj.updateDynamic("color.border.accent.red")("var(--ds-border-accent-red)")
+      __obj.updateDynamic("color.border.accent.teal")("var(--ds-border-accent-teal)")
+      __obj.updateDynamic("color.border.accent.yellow")("var(--ds-border-accent-yellow)")
+      __obj.updateDynamic("color.border.bold")("var(--ds-border-bold)")
+      __obj.updateDynamic("color.border.brand")("var(--ds-border-brand)")
+      __obj.updateDynamic("color.border.danger")("var(--ds-border-danger)")
+      __obj.updateDynamic("color.border.disabled")("var(--ds-border-disabled)")
+      __obj.updateDynamic("color.border.discovery")("var(--ds-border-discovery)")
+      __obj.updateDynamic("color.border.focused")("var(--ds-border-focused)")
+      __obj.updateDynamic("color.border.information")("var(--ds-border-information)")
+      __obj.updateDynamic("color.border.input")("var(--ds-border-input)")
+      __obj.updateDynamic("color.border.inverse")("var(--ds-border-inverse)")
+      __obj.updateDynamic("color.border.selected")("var(--ds-border-selected)")
+      __obj.updateDynamic("color.border.success")("var(--ds-border-success)")
+      __obj.updateDynamic("color.border.warning")("var(--ds-border-warning)")
+      __obj.updateDynamic("color.chart.blue.bold")("var(--ds-chart-blue-bold)")
+      __obj.updateDynamic("color.chart.blue.bold.hovered")("var(--ds-chart-blue-bold-hovered)")
+      __obj.updateDynamic("color.chart.blue.bolder")("var(--ds-chart-blue-bolder)")
+      __obj.updateDynamic("color.chart.blue.bolder.hovered")("var(--ds-chart-blue-bolder-hovered)")
+      __obj.updateDynamic("color.chart.blue.boldest")("var(--ds-chart-blue-boldest)")
+      __obj.updateDynamic("color.chart.blue.boldest.hovered")("var(--ds-chart-blue-boldest-hovered)")
+      __obj.updateDynamic("color.chart.brand")("var(--ds-chart-brand)")
+      __obj.updateDynamic("color.chart.brand.hovered")("var(--ds-chart-brand-hovered)")
+      __obj.updateDynamic("color.chart.categorical.1")("var(--ds-chart-categorical-1)")
+      __obj.updateDynamic("color.chart.categorical.1.hovered")("var(--ds-chart-categorical-1-hovered)")
+      __obj.updateDynamic("color.chart.categorical.2")("var(--ds-chart-categorical-2)")
+      __obj.updateDynamic("color.chart.categorical.2.hovered")("var(--ds-chart-categorical-2-hovered)")
+      __obj.updateDynamic("color.chart.categorical.3")("var(--ds-chart-categorical-3)")
+      __obj.updateDynamic("color.chart.categorical.3.hovered")("var(--ds-chart-categorical-3-hovered)")
+      __obj.updateDynamic("color.chart.categorical.4")("var(--ds-chart-categorical-4)")
+      __obj.updateDynamic("color.chart.categorical.4.hovered")("var(--ds-chart-categorical-4-hovered)")
+      __obj.updateDynamic("color.chart.categorical.5")("var(--ds-chart-categorical-5)")
+      __obj.updateDynamic("color.chart.categorical.5.hovered")("var(--ds-chart-categorical-5-hovered)")
+      __obj.updateDynamic("color.chart.categorical.6")("var(--ds-chart-categorical-6)")
+      __obj.updateDynamic("color.chart.categorical.6.hovered")("var(--ds-chart-categorical-6-hovered)")
+      __obj.updateDynamic("color.chart.categorical.7")("var(--ds-chart-categorical-7)")
+      __obj.updateDynamic("color.chart.categorical.7.hovered")("var(--ds-chart-categorical-7-hovered)")
+      __obj.updateDynamic("color.chart.categorical.8")("var(--ds-chart-categorical-8)")
+      __obj.updateDynamic("color.chart.categorical.8.hovered")("var(--ds-chart-categorical-8-hovered)")
+      __obj.updateDynamic("color.chart.danger")("var(--ds-chart-danger)")
+      __obj.updateDynamic("color.chart.danger.bold")("var(--ds-chart-danger-bold)")
+      __obj.updateDynamic("color.chart.danger.bold.hovered")("var(--ds-chart-danger-bold-hovered)")
+      __obj.updateDynamic("color.chart.danger.hovered")("var(--ds-chart-danger-hovered)")
+      __obj.updateDynamic("color.chart.discovery")("var(--ds-chart-discovery)")
+      __obj.updateDynamic("color.chart.discovery.bold")("var(--ds-chart-discovery-bold)")
+      __obj.updateDynamic("color.chart.discovery.bold.hovered")("var(--ds-chart-discovery-bold-hovered)")
+      __obj.updateDynamic("color.chart.discovery.hovered")("var(--ds-chart-discovery-hovered)")
+      __obj.updateDynamic("color.chart.gray.bold")("var(--ds-chart-gray-bold)")
+      __obj.updateDynamic("color.chart.gray.bold.hovered")("var(--ds-chart-gray-bold-hovered)")
+      __obj.updateDynamic("color.chart.gray.bolder")("var(--ds-chart-gray-bolder)")
+      __obj.updateDynamic("color.chart.gray.bolder.hovered")("var(--ds-chart-gray-bolder-hovered)")
+      __obj.updateDynamic("color.chart.gray.boldest")("var(--ds-chart-gray-boldest)")
+      __obj.updateDynamic("color.chart.gray.boldest.hovered")("var(--ds-chart-gray-boldest-hovered)")
+      __obj.updateDynamic("color.chart.green.bold")("var(--ds-chart-green-bold)")
+      __obj.updateDynamic("color.chart.green.bold.hovered")("var(--ds-chart-green-bold-hovered)")
+      __obj.updateDynamic("color.chart.green.bolder")("var(--ds-chart-green-bolder)")
+      __obj.updateDynamic("color.chart.green.bolder.hovered")("var(--ds-chart-green-bolder-hovered)")
+      __obj.updateDynamic("color.chart.green.boldest")("var(--ds-chart-green-boldest)")
+      __obj.updateDynamic("color.chart.green.boldest.hovered")("var(--ds-chart-green-boldest-hovered)")
+      __obj.updateDynamic("color.chart.information")("var(--ds-chart-information)")
+      __obj.updateDynamic("color.chart.information.bold")("var(--ds-chart-information-bold)")
+      __obj.updateDynamic("color.chart.information.bold.hovered")("var(--ds-chart-information-bold-hovered)")
+      __obj.updateDynamic("color.chart.information.hovered")("var(--ds-chart-information-hovered)")
+      __obj.updateDynamic("color.chart.magenta.bold")("var(--ds-chart-magenta-bold)")
+      __obj.updateDynamic("color.chart.magenta.bold.hovered")("var(--ds-chart-magenta-bold-hovered)")
+      __obj.updateDynamic("color.chart.magenta.bolder")("var(--ds-chart-magenta-bolder)")
+      __obj.updateDynamic("color.chart.magenta.bolder.hovered")("var(--ds-chart-magenta-bolder-hovered)")
+      __obj.updateDynamic("color.chart.magenta.boldest")("var(--ds-chart-magenta-boldest)")
+      __obj.updateDynamic("color.chart.magenta.boldest.hovered")("var(--ds-chart-magenta-boldest-hovered)")
+      __obj.updateDynamic("color.chart.neutral")("var(--ds-chart-neutral)")
+      __obj.updateDynamic("color.chart.neutral.hovered")("var(--ds-chart-neutral-hovered)")
+      __obj.updateDynamic("color.chart.orange.bold")("var(--ds-chart-orange-bold)")
+      __obj.updateDynamic("color.chart.orange.bold.hovered")("var(--ds-chart-orange-bold-hovered)")
+      __obj.updateDynamic("color.chart.orange.bolder")("var(--ds-chart-orange-bolder)")
+      __obj.updateDynamic("color.chart.orange.bolder.hovered")("var(--ds-chart-orange-bolder-hovered)")
+      __obj.updateDynamic("color.chart.orange.boldest")("var(--ds-chart-orange-boldest)")
+      __obj.updateDynamic("color.chart.orange.boldest.hovered")("var(--ds-chart-orange-boldest-hovered)")
+      __obj.updateDynamic("color.chart.purple.bold")("var(--ds-chart-purple-bold)")
+      __obj.updateDynamic("color.chart.purple.bold.hovered")("var(--ds-chart-purple-bold-hovered)")
+      __obj.updateDynamic("color.chart.purple.bolder")("var(--ds-chart-purple-bolder)")
+      __obj.updateDynamic("color.chart.purple.bolder.hovered")("var(--ds-chart-purple-bolder-hovered)")
+      __obj.updateDynamic("color.chart.purple.boldest")("var(--ds-chart-purple-boldest)")
+      __obj.updateDynamic("color.chart.purple.boldest.hovered")("var(--ds-chart-purple-boldest-hovered)")
+      __obj.updateDynamic("color.chart.red.bold")("var(--ds-chart-red-bold)")
+      __obj.updateDynamic("color.chart.red.bold.hovered")("var(--ds-chart-red-bold-hovered)")
+      __obj.updateDynamic("color.chart.red.bolder")("var(--ds-chart-red-bolder)")
+      __obj.updateDynamic("color.chart.red.bolder.hovered")("var(--ds-chart-red-bolder-hovered)")
+      __obj.updateDynamic("color.chart.red.boldest")("var(--ds-chart-red-boldest)")
+      __obj.updateDynamic("color.chart.red.boldest.hovered")("var(--ds-chart-red-boldest-hovered)")
+      __obj.updateDynamic("color.chart.success")("var(--ds-chart-success)")
+      __obj.updateDynamic("color.chart.success.bold")("var(--ds-chart-success-bold)")
+      __obj.updateDynamic("color.chart.success.bold.hovered")("var(--ds-chart-success-bold-hovered)")
+      __obj.updateDynamic("color.chart.success.hovered")("var(--ds-chart-success-hovered)")
+      __obj.updateDynamic("color.chart.teal.bold")("var(--ds-chart-teal-bold)")
+      __obj.updateDynamic("color.chart.teal.bold.hovered")("var(--ds-chart-teal-bold-hovered)")
+      __obj.updateDynamic("color.chart.teal.bolder")("var(--ds-chart-teal-bolder)")
+      __obj.updateDynamic("color.chart.teal.bolder.hovered")("var(--ds-chart-teal-bolder-hovered)")
+      __obj.updateDynamic("color.chart.teal.boldest")("var(--ds-chart-teal-boldest)")
+      __obj.updateDynamic("color.chart.teal.boldest.hovered")("var(--ds-chart-teal-boldest-hovered)")
+      __obj.updateDynamic("color.chart.warning")("var(--ds-chart-warning)")
+      __obj.updateDynamic("color.chart.warning.bold")("var(--ds-chart-warning-bold)")
+      __obj.updateDynamic("color.chart.warning.bold.hovered")("var(--ds-chart-warning-bold-hovered)")
+      __obj.updateDynamic("color.chart.warning.hovered")("var(--ds-chart-warning-hovered)")
+      __obj.updateDynamic("color.chart.yellow.bold")("var(--ds-chart-yellow-bold)")
+      __obj.updateDynamic("color.chart.yellow.bold.hovered")("var(--ds-chart-yellow-bold-hovered)")
+      __obj.updateDynamic("color.chart.yellow.bolder")("var(--ds-chart-yellow-bolder)")
+      __obj.updateDynamic("color.chart.yellow.bolder.hovered")("var(--ds-chart-yellow-bolder-hovered)")
+      __obj.updateDynamic("color.chart.yellow.boldest")("var(--ds-chart-yellow-boldest)")
+      __obj.updateDynamic("color.chart.yellow.boldest.hovered")("var(--ds-chart-yellow-boldest-hovered)")
+      __obj.updateDynamic("color.icon")("var(--ds-icon)")
+      __obj.updateDynamic("color.icon.accent.blue")("var(--ds-icon-accent-blue)")
+      __obj.updateDynamic("color.icon.accent.gray")("var(--ds-icon-accent-gray)")
+      __obj.updateDynamic("color.icon.accent.green")("var(--ds-icon-accent-green)")
+      __obj.updateDynamic("color.icon.accent.magenta")("var(--ds-icon-accent-magenta)")
+      __obj.updateDynamic("color.icon.accent.orange")("var(--ds-icon-accent-orange)")
+      __obj.updateDynamic("color.icon.accent.purple")("var(--ds-icon-accent-purple)")
+      __obj.updateDynamic("color.icon.accent.red")("var(--ds-icon-accent-red)")
+      __obj.updateDynamic("color.icon.accent.teal")("var(--ds-icon-accent-teal)")
+      __obj.updateDynamic("color.icon.accent.yellow")("var(--ds-icon-accent-yellow)")
+      __obj.updateDynamic("color.icon.brand")("var(--ds-icon-brand)")
+      __obj.updateDynamic("color.icon.danger")("var(--ds-icon-danger)")
+      __obj.updateDynamic("color.icon.disabled")("var(--ds-icon-disabled)")
+      __obj.updateDynamic("color.icon.discovery")("var(--ds-icon-discovery)")
+      __obj.updateDynamic("color.icon.information")("var(--ds-icon-information)")
+      __obj.updateDynamic("color.icon.inverse")("var(--ds-icon-inverse)")
+      __obj.updateDynamic("color.icon.selected")("var(--ds-icon-selected)")
+      __obj.updateDynamic("color.icon.subtle")("var(--ds-icon-subtle)")
+      __obj.updateDynamic("color.icon.success")("var(--ds-icon-success)")
+      __obj.updateDynamic("color.icon.warning")("var(--ds-icon-warning)")
+      __obj.updateDynamic("color.icon.warning.inverse")("var(--ds-icon-warning-inverse)")
+      __obj.updateDynamic("color.interaction.hovered")("var(--ds-interaction-hovered)")
+      __obj.updateDynamic("color.interaction.pressed")("var(--ds-interaction-pressed)")
+      __obj.updateDynamic("color.link")("var(--ds-link)")
+      __obj.updateDynamic("color.link.pressed")("var(--ds-link-pressed)")
+      __obj.updateDynamic("color.skeleton")("var(--ds-skeleton)")
+      __obj.updateDynamic("color.skeleton.subtle")("var(--ds-skeleton-subtle)")
+      __obj.updateDynamic("color.text")("var(--ds-text)")
+      __obj.updateDynamic("color.text.accent.blue")("var(--ds-text-accent-blue)")
+      __obj.updateDynamic("color.text.accent.blue.bolder")("var(--ds-text-accent-blue-bolder)")
+      __obj.updateDynamic("color.text.accent.gray")("var(--ds-text-accent-gray)")
+      __obj.updateDynamic("color.text.accent.gray.bolder")("var(--ds-text-accent-gray-bolder)")
+      __obj.updateDynamic("color.text.accent.green")("var(--ds-text-accent-green)")
+      __obj.updateDynamic("color.text.accent.green.bolder")("var(--ds-text-accent-green-bolder)")
+      __obj.updateDynamic("color.text.accent.magenta")("var(--ds-text-accent-magenta)")
       __obj.asInstanceOf[CSSTokenMap]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CSSTokenMap] (val x: Self) extends AnyVal {
+      
+      inline def setBorderDotradiusDot050(value: /* var(--ds-radius-050) */ String): Self = StObject.set(x, "border.radius.050", value.asInstanceOf[js.Any])
+      
+      inline def setBorderDotradiusDot100(value: /* var(--ds-radius-100) */ String): Self = StObject.set(x, "border.radius.100", value.asInstanceOf[js.Any])
+      
+      inline def setBorderDotradiusDot200(value: /* var(--ds-radius-200) */ String): Self = StObject.set(x, "border.radius.200", value.asInstanceOf[js.Any])
+      
+      inline def setBorderDotradiusDot300(value: /* var(--ds-radius-300) */ String): Self = StObject.set(x, "border.radius.300", value.asInstanceOf[js.Any])
+      
+      inline def setBorderDotradiusDot400(value: /* var(--ds-radius-400) */ String): Self = StObject.set(x, "border.radius.400", value.asInstanceOf[js.Any])
+      
+      inline def setBorderDotradiusDotround(value: /* var(--ds-radius-round) */ String): Self = StObject.set(x, "border.radius.round", value.asInstanceOf[js.Any])
+      
+      inline def setBorderDotwidthDot0(value: /* var(--ds-width-0) */ String): Self = StObject.set(x, "border.width.0", value.asInstanceOf[js.Any])
+      
+      inline def setBorderDotwidthDot050(value: /* var(--ds-width-050) */ String): Self = StObject.set(x, "border.width.050", value.asInstanceOf[js.Any])
+      
+      inline def setBorderDotwidthDot100(value: /* var(--ds-width-100) */ String): Self = StObject.set(x, "border.width.100", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotbackgroundDotaccentDotblueDotbolder(value: /* var(--ds-background-accent-blue-bolder) */ String): Self = StObject.set(x, "color.background.accent.blue.bolder", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotbackgroundDotaccentDotblueDotsubtle(value: /* var(--ds-background-accent-blue-subtle) */ String): Self = StObject.set(x, "color.background.accent.blue.subtle", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotbackgroundDotaccentDotblueDotsubtler(value: /* var(--ds-background-accent-blue-subtler) */ String): Self = StObject.set(x, "color.background.accent.blue.subtler", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotbackgroundDotaccentDotblueDotsubtlest(value: /* var(--ds-background-accent-blue-subtlest) */ String): Self = StObject.set(x, "color.background.accent.blue.subtlest", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotbackgroundDotaccentDotgrayDotbolder(value: /* var(--ds-background-accent-gray-bolder) */ String): Self = StObject.set(x, "color.background.accent.gray.bolder", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotbackgroundDotaccentDotgrayDotsubtle(value: /* var(--ds-background-accent-gray-subtle) */ String): Self = StObject.set(x, "color.background.accent.gray.subtle", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotbackgroundDotaccentDotgrayDotsubtler(value: /* var(--ds-background-accent-gray-subtler) */ String): Self = StObject.set(x, "color.background.accent.gray.subtler", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotbackgroundDotaccentDotgrayDotsubtlest(value: /* var(--ds-background-accent-gray-subtlest) */ String): Self = StObject.set(x, "color.background.accent.gray.subtlest", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotbackgroundDotaccentDotgreenDotbolder(value: /* var(--ds-background-accent-green-bolder) */ String): Self = StObject.set(x, "color.background.accent.green.bolder", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotbackgroundDotaccentDotgreenDotsubtle(value: /* var(--ds-background-accent-green-subtle) */ String): Self = StObject.set(x, "color.background.accent.green.subtle", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotbackgroundDotaccentDotgreenDotsubtler(value: /* var(--ds-background-accent-green-subtler) */ String): Self = StObject.set(x, "color.background.accent.green.subtler", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotbackgroundDotaccentDotgreenDotsubtlest(value: /* var(--ds-background-accent-green-subtlest) */ String): Self = StObject.set(x, "color.background.accent.green.subtlest", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotbackgroundDotaccentDotmagentaDotbolder(value: /* var(--ds-background-accent-magenta-bolder) */ String): Self = StObject.set(x, "color.background.accent.magenta.bolder", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotbackgroundDotaccentDotmagentaDotsubtle(value: /* var(--ds-background-accent-magenta-subtle) */ String): Self = StObject.set(x, "color.background.accent.magenta.subtle", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotbackgroundDotaccentDotmagentaDotsubtler(value: /* var(--ds-background-accent-magenta-subtler) */ String): Self = StObject.set(x, "color.background.accent.magenta.subtler", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotbackgroundDotaccentDotmagentaDotsubtlest(value: /* var(--ds-background-accent-magenta-subtlest) */ String): Self = StObject.set(x, "color.background.accent.magenta.subtlest", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotbackgroundDotaccentDotorangeDotbolder(value: /* var(--ds-background-accent-orange-bolder) */ String): Self = StObject.set(x, "color.background.accent.orange.bolder", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotbackgroundDotaccentDotorangeDotsubtle(value: /* var(--ds-background-accent-orange-subtle) */ String): Self = StObject.set(x, "color.background.accent.orange.subtle", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotbackgroundDotaccentDotorangeDotsubtler(value: /* var(--ds-background-accent-orange-subtler) */ String): Self = StObject.set(x, "color.background.accent.orange.subtler", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotbackgroundDotaccentDotorangeDotsubtlest(value: /* var(--ds-background-accent-orange-subtlest) */ String): Self = StObject.set(x, "color.background.accent.orange.subtlest", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotbackgroundDotaccentDotpurpleDotbolder(value: /* var(--ds-background-accent-purple-bolder) */ String): Self = StObject.set(x, "color.background.accent.purple.bolder", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotbackgroundDotaccentDotpurpleDotsubtle(value: /* var(--ds-background-accent-purple-subtle) */ String): Self = StObject.set(x, "color.background.accent.purple.subtle", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotbackgroundDotaccentDotpurpleDotsubtler(value: /* var(--ds-background-accent-purple-subtler) */ String): Self = StObject.set(x, "color.background.accent.purple.subtler", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotbackgroundDotaccentDotpurpleDotsubtlest(value: /* var(--ds-background-accent-purple-subtlest) */ String): Self = StObject.set(x, "color.background.accent.purple.subtlest", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotbackgroundDotaccentDotredDotbolder(value: /* var(--ds-background-accent-red-bolder) */ String): Self = StObject.set(x, "color.background.accent.red.bolder", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotbackgroundDotaccentDotredDotsubtle(value: /* var(--ds-background-accent-red-subtle) */ String): Self = StObject.set(x, "color.background.accent.red.subtle", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotbackgroundDotaccentDotredDotsubtler(value: /* var(--ds-background-accent-red-subtler) */ String): Self = StObject.set(x, "color.background.accent.red.subtler", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotbackgroundDotaccentDotredDotsubtlest(value: /* var(--ds-background-accent-red-subtlest) */ String): Self = StObject.set(x, "color.background.accent.red.subtlest", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotbackgroundDotaccentDottealDotbolder(value: /* var(--ds-background-accent-teal-bolder) */ String): Self = StObject.set(x, "color.background.accent.teal.bolder", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotbackgroundDotaccentDottealDotsubtle(value: /* var(--ds-background-accent-teal-subtle) */ String): Self = StObject.set(x, "color.background.accent.teal.subtle", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotbackgroundDotaccentDottealDotsubtler(value: /* var(--ds-background-accent-teal-subtler) */ String): Self = StObject.set(x, "color.background.accent.teal.subtler", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotbackgroundDotaccentDottealDotsubtlest(value: /* var(--ds-background-accent-teal-subtlest) */ String): Self = StObject.set(x, "color.background.accent.teal.subtlest", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotbackgroundDotaccentDotyellowDotbolder(value: /* var(--ds-background-accent-yellow-bolder) */ String): Self = StObject.set(x, "color.background.accent.yellow.bolder", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotbackgroundDotaccentDotyellowDotsubtle(value: /* var(--ds-background-accent-yellow-subtle) */ String): Self = StObject.set(x, "color.background.accent.yellow.subtle", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotbackgroundDotaccentDotyellowDotsubtler(value: /* var(--ds-background-accent-yellow-subtler) */ String): Self = StObject.set(x, "color.background.accent.yellow.subtler", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotbackgroundDotaccentDotyellowDotsubtlest(value: /* var(--ds-background-accent-yellow-subtlest) */ String): Self = StObject.set(x, "color.background.accent.yellow.subtlest", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotbackgroundDotbrandDotbold(value: /* var(--ds-background-brand-bold) */ String): Self = StObject.set(x, "color.background.brand.bold", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotbackgroundDotbrandDotboldDothovered(value: /* var(--ds-background-brand-bold-hovered) */ String): Self = StObject.set(x, "color.background.brand.bold.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotbackgroundDotbrandDotboldDotpressed(value: /* var(--ds-background-brand-bold-pressed) */ String): Self = StObject.set(x, "color.background.brand.bold.pressed", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotbackgroundDotdanger(value: /* var(--ds-background-danger) */ String): Self = StObject.set(x, "color.background.danger", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotbackgroundDotdangerDotbold(value: /* var(--ds-background-danger-bold) */ String): Self = StObject.set(x, "color.background.danger.bold", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotbackgroundDotdangerDotboldDothovered(value: /* var(--ds-background-danger-bold-hovered) */ String): Self = StObject.set(x, "color.background.danger.bold.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotbackgroundDotdangerDotboldDotpressed(value: /* var(--ds-background-danger-bold-pressed) */ String): Self = StObject.set(x, "color.background.danger.bold.pressed", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotbackgroundDotdangerDothovered(value: /* var(--ds-background-danger-hovered) */ String): Self = StObject.set(x, "color.background.danger.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotbackgroundDotdangerDotpressed(value: /* var(--ds-background-danger-pressed) */ String): Self = StObject.set(x, "color.background.danger.pressed", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotbackgroundDotdisabled(value: /* var(--ds-background-disabled) */ String): Self = StObject.set(x, "color.background.disabled", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotbackgroundDotdiscovery(value: /* var(--ds-background-discovery) */ String): Self = StObject.set(x, "color.background.discovery", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotbackgroundDotdiscoveryDotbold(value: /* var(--ds-background-discovery-bold) */ String): Self = StObject.set(x, "color.background.discovery.bold", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotbackgroundDotdiscoveryDotboldDothovered(value: /* var(--ds-background-discovery-bold-hovered) */ String): Self = StObject.set(x, "color.background.discovery.bold.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotbackgroundDotdiscoveryDotboldDotpressed(value: /* var(--ds-background-discovery-bold-pressed) */ String): Self = StObject.set(x, "color.background.discovery.bold.pressed", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotbackgroundDotdiscoveryDothovered(value: /* var(--ds-background-discovery-hovered) */ String): Self = StObject.set(x, "color.background.discovery.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotbackgroundDotdiscoveryDotpressed(value: /* var(--ds-background-discovery-pressed) */ String): Self = StObject.set(x, "color.background.discovery.pressed", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotbackgroundDotinformation(value: /* var(--ds-background-information) */ String): Self = StObject.set(x, "color.background.information", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotbackgroundDotinformationDotbold(value: /* var(--ds-background-information-bold) */ String): Self = StObject.set(x, "color.background.information.bold", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotbackgroundDotinformationDotboldDothovered(value: /* var(--ds-background-information-bold-hovered) */ String): Self = StObject.set(x, "color.background.information.bold.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotbackgroundDotinformationDotboldDotpressed(value: /* var(--ds-background-information-bold-pressed) */ String): Self = StObject.set(x, "color.background.information.bold.pressed", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotbackgroundDotinformationDothovered(value: /* var(--ds-background-information-hovered) */ String): Self = StObject.set(x, "color.background.information.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotbackgroundDotinformationDotpressed(value: /* var(--ds-background-information-pressed) */ String): Self = StObject.set(x, "color.background.information.pressed", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotbackgroundDotinput(value: /* var(--ds-background-input) */ String): Self = StObject.set(x, "color.background.input", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotbackgroundDotinputDothovered(value: /* var(--ds-background-input-hovered) */ String): Self = StObject.set(x, "color.background.input.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotbackgroundDotinputDotpressed(value: /* var(--ds-background-input-pressed) */ String): Self = StObject.set(x, "color.background.input.pressed", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotbackgroundDotinverseDotsubtle(value: /* var(--ds-background-inverse-subtle) */ String): Self = StObject.set(x, "color.background.inverse.subtle", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotbackgroundDotinverseDotsubtleDothovered(value: /* var(--ds-background-inverse-subtle-hovered) */ String): Self = StObject.set(x, "color.background.inverse.subtle.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotbackgroundDotinverseDotsubtleDotpressed(value: /* var(--ds-background-inverse-subtle-pressed) */ String): Self = StObject.set(x, "color.background.inverse.subtle.pressed", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotbackgroundDotneutral(value: /* var(--ds-background-neutral) */ String): Self = StObject.set(x, "color.background.neutral", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotbackgroundDotneutralDotbold(value: /* var(--ds-background-neutral-bold) */ String): Self = StObject.set(x, "color.background.neutral.bold", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotbackgroundDotneutralDotboldDothovered(value: /* var(--ds-background-neutral-bold-hovered) */ String): Self = StObject.set(x, "color.background.neutral.bold.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotbackgroundDotneutralDotboldDotpressed(value: /* var(--ds-background-neutral-bold-pressed) */ String): Self = StObject.set(x, "color.background.neutral.bold.pressed", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotbackgroundDotneutralDothovered(value: /* var(--ds-background-neutral-hovered) */ String): Self = StObject.set(x, "color.background.neutral.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotbackgroundDotneutralDotpressed(value: /* var(--ds-background-neutral-pressed) */ String): Self = StObject.set(x, "color.background.neutral.pressed", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotbackgroundDotneutralDotsubtle(value: /* var(--ds-background-neutral-subtle) */ String): Self = StObject.set(x, "color.background.neutral.subtle", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotbackgroundDotneutralDotsubtleDothovered(value: /* var(--ds-background-neutral-subtle-hovered) */ String): Self = StObject.set(x, "color.background.neutral.subtle.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotbackgroundDotneutralDotsubtleDotpressed(value: /* var(--ds-background-neutral-subtle-pressed) */ String): Self = StObject.set(x, "color.background.neutral.subtle.pressed", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotbackgroundDotselected(value: /* var(--ds-background-selected) */ String): Self = StObject.set(x, "color.background.selected", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotbackgroundDotselectedDotbold(value: /* var(--ds-background-selected-bold) */ String): Self = StObject.set(x, "color.background.selected.bold", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotbackgroundDotselectedDotboldDothovered(value: /* var(--ds-background-selected-bold-hovered) */ String): Self = StObject.set(x, "color.background.selected.bold.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotbackgroundDotselectedDotboldDotpressed(value: /* var(--ds-background-selected-bold-pressed) */ String): Self = StObject.set(x, "color.background.selected.bold.pressed", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotbackgroundDotselectedDothovered(value: /* var(--ds-background-selected-hovered) */ String): Self = StObject.set(x, "color.background.selected.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotbackgroundDotselectedDotpressed(value: /* var(--ds-background-selected-pressed) */ String): Self = StObject.set(x, "color.background.selected.pressed", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotbackgroundDotsuccess(value: /* var(--ds-background-success) */ String): Self = StObject.set(x, "color.background.success", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotbackgroundDotsuccessDotbold(value: /* var(--ds-background-success-bold) */ String): Self = StObject.set(x, "color.background.success.bold", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotbackgroundDotsuccessDotboldDothovered(value: /* var(--ds-background-success-bold-hovered) */ String): Self = StObject.set(x, "color.background.success.bold.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotbackgroundDotsuccessDotboldDotpressed(value: /* var(--ds-background-success-bold-pressed) */ String): Self = StObject.set(x, "color.background.success.bold.pressed", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotbackgroundDotsuccessDothovered(value: /* var(--ds-background-success-hovered) */ String): Self = StObject.set(x, "color.background.success.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotbackgroundDotsuccessDotpressed(value: /* var(--ds-background-success-pressed) */ String): Self = StObject.set(x, "color.background.success.pressed", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotbackgroundDotwarning(value: /* var(--ds-background-warning) */ String): Self = StObject.set(x, "color.background.warning", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotbackgroundDotwarningDotbold(value: /* var(--ds-background-warning-bold) */ String): Self = StObject.set(x, "color.background.warning.bold", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotbackgroundDotwarningDotboldDothovered(value: /* var(--ds-background-warning-bold-hovered) */ String): Self = StObject.set(x, "color.background.warning.bold.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotbackgroundDotwarningDotboldDotpressed(value: /* var(--ds-background-warning-bold-pressed) */ String): Self = StObject.set(x, "color.background.warning.bold.pressed", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotbackgroundDotwarningDothovered(value: /* var(--ds-background-warning-hovered) */ String): Self = StObject.set(x, "color.background.warning.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotbackgroundDotwarningDotpressed(value: /* var(--ds-background-warning-pressed) */ String): Self = StObject.set(x, "color.background.warning.pressed", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotblanket(value: /* var(--ds-blanket) */ String): Self = StObject.set(x, "color.blanket", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotblanketDotdanger(value: /* var(--ds-blanket-danger) */ String): Self = StObject.set(x, "color.blanket.danger", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotblanketDotselected(value: /* var(--ds-blanket-selected) */ String): Self = StObject.set(x, "color.blanket.selected", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotborder(value: /* var(--ds-border) */ String): Self = StObject.set(x, "color.border", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotborderDotaccentDotblue(value: /* var(--ds-border-accent-blue) */ String): Self = StObject.set(x, "color.border.accent.blue", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotborderDotaccentDotgray(value: /* var(--ds-border-accent-gray) */ String): Self = StObject.set(x, "color.border.accent.gray", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotborderDotaccentDotgreen(value: /* var(--ds-border-accent-green) */ String): Self = StObject.set(x, "color.border.accent.green", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotborderDotaccentDotmagenta(value: /* var(--ds-border-accent-magenta) */ String): Self = StObject.set(x, "color.border.accent.magenta", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotborderDotaccentDotorange(value: /* var(--ds-border-accent-orange) */ String): Self = StObject.set(x, "color.border.accent.orange", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotborderDotaccentDotpurple(value: /* var(--ds-border-accent-purple) */ String): Self = StObject.set(x, "color.border.accent.purple", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotborderDotaccentDotred(value: /* var(--ds-border-accent-red) */ String): Self = StObject.set(x, "color.border.accent.red", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotborderDotaccentDotteal(value: /* var(--ds-border-accent-teal) */ String): Self = StObject.set(x, "color.border.accent.teal", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotborderDotaccentDotyellow(value: /* var(--ds-border-accent-yellow) */ String): Self = StObject.set(x, "color.border.accent.yellow", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotborderDotbold(value: /* var(--ds-border-bold) */ String): Self = StObject.set(x, "color.border.bold", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotborderDotbrand(value: /* var(--ds-border-brand) */ String): Self = StObject.set(x, "color.border.brand", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotborderDotdanger(value: /* var(--ds-border-danger) */ String): Self = StObject.set(x, "color.border.danger", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotborderDotdisabled(value: /* var(--ds-border-disabled) */ String): Self = StObject.set(x, "color.border.disabled", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotborderDotdiscovery(value: /* var(--ds-border-discovery) */ String): Self = StObject.set(x, "color.border.discovery", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotborderDotfocused(value: /* var(--ds-border-focused) */ String): Self = StObject.set(x, "color.border.focused", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotborderDotinformation(value: /* var(--ds-border-information) */ String): Self = StObject.set(x, "color.border.information", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotborderDotinput(value: /* var(--ds-border-input) */ String): Self = StObject.set(x, "color.border.input", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotborderDotinverse(value: /* var(--ds-border-inverse) */ String): Self = StObject.set(x, "color.border.inverse", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotborderDotselected(value: /* var(--ds-border-selected) */ String): Self = StObject.set(x, "color.border.selected", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotborderDotsuccess(value: /* var(--ds-border-success) */ String): Self = StObject.set(x, "color.border.success", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotborderDotwarning(value: /* var(--ds-border-warning) */ String): Self = StObject.set(x, "color.border.warning", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotblueDotbold(value: /* var(--ds-chart-blue-bold) */ String): Self = StObject.set(x, "color.chart.blue.bold", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotblueDotboldDothovered(value: /* var(--ds-chart-blue-bold-hovered) */ String): Self = StObject.set(x, "color.chart.blue.bold.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotblueDotbolder(value: /* var(--ds-chart-blue-bolder) */ String): Self = StObject.set(x, "color.chart.blue.bolder", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotblueDotbolderDothovered(value: /* var(--ds-chart-blue-bolder-hovered) */ String): Self = StObject.set(x, "color.chart.blue.bolder.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotblueDotboldest(value: /* var(--ds-chart-blue-boldest) */ String): Self = StObject.set(x, "color.chart.blue.boldest", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotblueDotboldestDothovered(value: /* var(--ds-chart-blue-boldest-hovered) */ String): Self = StObject.set(x, "color.chart.blue.boldest.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotbrand(value: /* var(--ds-chart-brand) */ String): Self = StObject.set(x, "color.chart.brand", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotbrandDothovered(value: /* var(--ds-chart-brand-hovered) */ String): Self = StObject.set(x, "color.chart.brand.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotcategoricalDot1(value: /* var(--ds-chart-categorical-1) */ String): Self = StObject.set(x, "color.chart.categorical.1", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotcategoricalDot1Dothovered(value: /* var(--ds-chart-categorical-1-hovered) */ String): Self = StObject.set(x, "color.chart.categorical.1.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotcategoricalDot2(value: /* var(--ds-chart-categorical-2) */ String): Self = StObject.set(x, "color.chart.categorical.2", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotcategoricalDot2Dothovered(value: /* var(--ds-chart-categorical-2-hovered) */ String): Self = StObject.set(x, "color.chart.categorical.2.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotcategoricalDot3(value: /* var(--ds-chart-categorical-3) */ String): Self = StObject.set(x, "color.chart.categorical.3", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotcategoricalDot3Dothovered(value: /* var(--ds-chart-categorical-3-hovered) */ String): Self = StObject.set(x, "color.chart.categorical.3.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotcategoricalDot4(value: /* var(--ds-chart-categorical-4) */ String): Self = StObject.set(x, "color.chart.categorical.4", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotcategoricalDot4Dothovered(value: /* var(--ds-chart-categorical-4-hovered) */ String): Self = StObject.set(x, "color.chart.categorical.4.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotcategoricalDot5(value: /* var(--ds-chart-categorical-5) */ String): Self = StObject.set(x, "color.chart.categorical.5", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotcategoricalDot5Dothovered(value: /* var(--ds-chart-categorical-5-hovered) */ String): Self = StObject.set(x, "color.chart.categorical.5.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotcategoricalDot6(value: /* var(--ds-chart-categorical-6) */ String): Self = StObject.set(x, "color.chart.categorical.6", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotcategoricalDot6Dothovered(value: /* var(--ds-chart-categorical-6-hovered) */ String): Self = StObject.set(x, "color.chart.categorical.6.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotcategoricalDot7(value: /* var(--ds-chart-categorical-7) */ String): Self = StObject.set(x, "color.chart.categorical.7", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotcategoricalDot7Dothovered(value: /* var(--ds-chart-categorical-7-hovered) */ String): Self = StObject.set(x, "color.chart.categorical.7.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotcategoricalDot8(value: /* var(--ds-chart-categorical-8) */ String): Self = StObject.set(x, "color.chart.categorical.8", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotcategoricalDot8Dothovered(value: /* var(--ds-chart-categorical-8-hovered) */ String): Self = StObject.set(x, "color.chart.categorical.8.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotdanger(value: /* var(--ds-chart-danger) */ String): Self = StObject.set(x, "color.chart.danger", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotdangerDotbold(value: /* var(--ds-chart-danger-bold) */ String): Self = StObject.set(x, "color.chart.danger.bold", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotdangerDotboldDothovered(value: /* var(--ds-chart-danger-bold-hovered) */ String): Self = StObject.set(x, "color.chart.danger.bold.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotdangerDothovered(value: /* var(--ds-chart-danger-hovered) */ String): Self = StObject.set(x, "color.chart.danger.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotdiscovery(value: /* var(--ds-chart-discovery) */ String): Self = StObject.set(x, "color.chart.discovery", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotdiscoveryDotbold(value: /* var(--ds-chart-discovery-bold) */ String): Self = StObject.set(x, "color.chart.discovery.bold", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotdiscoveryDotboldDothovered(value: /* var(--ds-chart-discovery-bold-hovered) */ String): Self = StObject.set(x, "color.chart.discovery.bold.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotdiscoveryDothovered(value: /* var(--ds-chart-discovery-hovered) */ String): Self = StObject.set(x, "color.chart.discovery.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotgrayDotbold(value: /* var(--ds-chart-gray-bold) */ String): Self = StObject.set(x, "color.chart.gray.bold", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotgrayDotboldDothovered(value: /* var(--ds-chart-gray-bold-hovered) */ String): Self = StObject.set(x, "color.chart.gray.bold.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotgrayDotbolder(value: /* var(--ds-chart-gray-bolder) */ String): Self = StObject.set(x, "color.chart.gray.bolder", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotgrayDotbolderDothovered(value: /* var(--ds-chart-gray-bolder-hovered) */ String): Self = StObject.set(x, "color.chart.gray.bolder.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotgrayDotboldest(value: /* var(--ds-chart-gray-boldest) */ String): Self = StObject.set(x, "color.chart.gray.boldest", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotgrayDotboldestDothovered(value: /* var(--ds-chart-gray-boldest-hovered) */ String): Self = StObject.set(x, "color.chart.gray.boldest.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotgreenDotbold(value: /* var(--ds-chart-green-bold) */ String): Self = StObject.set(x, "color.chart.green.bold", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotgreenDotboldDothovered(value: /* var(--ds-chart-green-bold-hovered) */ String): Self = StObject.set(x, "color.chart.green.bold.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotgreenDotbolder(value: /* var(--ds-chart-green-bolder) */ String): Self = StObject.set(x, "color.chart.green.bolder", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotgreenDotbolderDothovered(value: /* var(--ds-chart-green-bolder-hovered) */ String): Self = StObject.set(x, "color.chart.green.bolder.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotgreenDotboldest(value: /* var(--ds-chart-green-boldest) */ String): Self = StObject.set(x, "color.chart.green.boldest", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotgreenDotboldestDothovered(value: /* var(--ds-chart-green-boldest-hovered) */ String): Self = StObject.set(x, "color.chart.green.boldest.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotinformation(value: /* var(--ds-chart-information) */ String): Self = StObject.set(x, "color.chart.information", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotinformationDotbold(value: /* var(--ds-chart-information-bold) */ String): Self = StObject.set(x, "color.chart.information.bold", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotinformationDotboldDothovered(value: /* var(--ds-chart-information-bold-hovered) */ String): Self = StObject.set(x, "color.chart.information.bold.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotinformationDothovered(value: /* var(--ds-chart-information-hovered) */ String): Self = StObject.set(x, "color.chart.information.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotmagentaDotbold(value: /* var(--ds-chart-magenta-bold) */ String): Self = StObject.set(x, "color.chart.magenta.bold", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotmagentaDotboldDothovered(value: /* var(--ds-chart-magenta-bold-hovered) */ String): Self = StObject.set(x, "color.chart.magenta.bold.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotmagentaDotbolder(value: /* var(--ds-chart-magenta-bolder) */ String): Self = StObject.set(x, "color.chart.magenta.bolder", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotmagentaDotbolderDothovered(value: /* var(--ds-chart-magenta-bolder-hovered) */ String): Self = StObject.set(x, "color.chart.magenta.bolder.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotmagentaDotboldest(value: /* var(--ds-chart-magenta-boldest) */ String): Self = StObject.set(x, "color.chart.magenta.boldest", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotmagentaDotboldestDothovered(value: /* var(--ds-chart-magenta-boldest-hovered) */ String): Self = StObject.set(x, "color.chart.magenta.boldest.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotneutral(value: /* var(--ds-chart-neutral) */ String): Self = StObject.set(x, "color.chart.neutral", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotneutralDothovered(value: /* var(--ds-chart-neutral-hovered) */ String): Self = StObject.set(x, "color.chart.neutral.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotorangeDotbold(value: /* var(--ds-chart-orange-bold) */ String): Self = StObject.set(x, "color.chart.orange.bold", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotorangeDotboldDothovered(value: /* var(--ds-chart-orange-bold-hovered) */ String): Self = StObject.set(x, "color.chart.orange.bold.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotorangeDotbolder(value: /* var(--ds-chart-orange-bolder) */ String): Self = StObject.set(x, "color.chart.orange.bolder", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotorangeDotbolderDothovered(value: /* var(--ds-chart-orange-bolder-hovered) */ String): Self = StObject.set(x, "color.chart.orange.bolder.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotorangeDotboldest(value: /* var(--ds-chart-orange-boldest) */ String): Self = StObject.set(x, "color.chart.orange.boldest", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotorangeDotboldestDothovered(value: /* var(--ds-chart-orange-boldest-hovered) */ String): Self = StObject.set(x, "color.chart.orange.boldest.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotpurpleDotbold(value: /* var(--ds-chart-purple-bold) */ String): Self = StObject.set(x, "color.chart.purple.bold", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotpurpleDotboldDothovered(value: /* var(--ds-chart-purple-bold-hovered) */ String): Self = StObject.set(x, "color.chart.purple.bold.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotpurpleDotbolder(value: /* var(--ds-chart-purple-bolder) */ String): Self = StObject.set(x, "color.chart.purple.bolder", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotpurpleDotbolderDothovered(value: /* var(--ds-chart-purple-bolder-hovered) */ String): Self = StObject.set(x, "color.chart.purple.bolder.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotpurpleDotboldest(value: /* var(--ds-chart-purple-boldest) */ String): Self = StObject.set(x, "color.chart.purple.boldest", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotpurpleDotboldestDothovered(value: /* var(--ds-chart-purple-boldest-hovered) */ String): Self = StObject.set(x, "color.chart.purple.boldest.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotredDotbold(value: /* var(--ds-chart-red-bold) */ String): Self = StObject.set(x, "color.chart.red.bold", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotredDotboldDothovered(value: /* var(--ds-chart-red-bold-hovered) */ String): Self = StObject.set(x, "color.chart.red.bold.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotredDotbolder(value: /* var(--ds-chart-red-bolder) */ String): Self = StObject.set(x, "color.chart.red.bolder", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotredDotbolderDothovered(value: /* var(--ds-chart-red-bolder-hovered) */ String): Self = StObject.set(x, "color.chart.red.bolder.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotredDotboldest(value: /* var(--ds-chart-red-boldest) */ String): Self = StObject.set(x, "color.chart.red.boldest", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotredDotboldestDothovered(value: /* var(--ds-chart-red-boldest-hovered) */ String): Self = StObject.set(x, "color.chart.red.boldest.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotsuccess(value: /* var(--ds-chart-success) */ String): Self = StObject.set(x, "color.chart.success", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotsuccessDotbold(value: /* var(--ds-chart-success-bold) */ String): Self = StObject.set(x, "color.chart.success.bold", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotsuccessDotboldDothovered(value: /* var(--ds-chart-success-bold-hovered) */ String): Self = StObject.set(x, "color.chart.success.bold.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotsuccessDothovered(value: /* var(--ds-chart-success-hovered) */ String): Self = StObject.set(x, "color.chart.success.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDottealDotbold(value: /* var(--ds-chart-teal-bold) */ String): Self = StObject.set(x, "color.chart.teal.bold", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDottealDotboldDothovered(value: /* var(--ds-chart-teal-bold-hovered) */ String): Self = StObject.set(x, "color.chart.teal.bold.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDottealDotbolder(value: /* var(--ds-chart-teal-bolder) */ String): Self = StObject.set(x, "color.chart.teal.bolder", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDottealDotbolderDothovered(value: /* var(--ds-chart-teal-bolder-hovered) */ String): Self = StObject.set(x, "color.chart.teal.bolder.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDottealDotboldest(value: /* var(--ds-chart-teal-boldest) */ String): Self = StObject.set(x, "color.chart.teal.boldest", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDottealDotboldestDothovered(value: /* var(--ds-chart-teal-boldest-hovered) */ String): Self = StObject.set(x, "color.chart.teal.boldest.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotwarning(value: /* var(--ds-chart-warning) */ String): Self = StObject.set(x, "color.chart.warning", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotwarningDotbold(value: /* var(--ds-chart-warning-bold) */ String): Self = StObject.set(x, "color.chart.warning.bold", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotwarningDotboldDothovered(value: /* var(--ds-chart-warning-bold-hovered) */ String): Self = StObject.set(x, "color.chart.warning.bold.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotwarningDothovered(value: /* var(--ds-chart-warning-hovered) */ String): Self = StObject.set(x, "color.chart.warning.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotyellowDotbold(value: /* var(--ds-chart-yellow-bold) */ String): Self = StObject.set(x, "color.chart.yellow.bold", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotyellowDotboldDothovered(value: /* var(--ds-chart-yellow-bold-hovered) */ String): Self = StObject.set(x, "color.chart.yellow.bold.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotyellowDotbolder(value: /* var(--ds-chart-yellow-bolder) */ String): Self = StObject.set(x, "color.chart.yellow.bolder", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotyellowDotbolderDothovered(value: /* var(--ds-chart-yellow-bolder-hovered) */ String): Self = StObject.set(x, "color.chart.yellow.bolder.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotyellowDotboldest(value: /* var(--ds-chart-yellow-boldest) */ String): Self = StObject.set(x, "color.chart.yellow.boldest", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotchartDotyellowDotboldestDothovered(value: /* var(--ds-chart-yellow-boldest-hovered) */ String): Self = StObject.set(x, "color.chart.yellow.boldest.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDoticon(value: /* var(--ds-icon) */ String): Self = StObject.set(x, "color.icon", value.asInstanceOf[js.Any])
+      
+      inline def setColorDoticonDotaccentDotblue(value: /* var(--ds-icon-accent-blue) */ String): Self = StObject.set(x, "color.icon.accent.blue", value.asInstanceOf[js.Any])
+      
+      inline def setColorDoticonDotaccentDotgray(value: /* var(--ds-icon-accent-gray) */ String): Self = StObject.set(x, "color.icon.accent.gray", value.asInstanceOf[js.Any])
+      
+      inline def setColorDoticonDotaccentDotgreen(value: /* var(--ds-icon-accent-green) */ String): Self = StObject.set(x, "color.icon.accent.green", value.asInstanceOf[js.Any])
+      
+      inline def setColorDoticonDotaccentDotmagenta(value: /* var(--ds-icon-accent-magenta) */ String): Self = StObject.set(x, "color.icon.accent.magenta", value.asInstanceOf[js.Any])
+      
+      inline def setColorDoticonDotaccentDotorange(value: /* var(--ds-icon-accent-orange) */ String): Self = StObject.set(x, "color.icon.accent.orange", value.asInstanceOf[js.Any])
+      
+      inline def setColorDoticonDotaccentDotpurple(value: /* var(--ds-icon-accent-purple) */ String): Self = StObject.set(x, "color.icon.accent.purple", value.asInstanceOf[js.Any])
+      
+      inline def setColorDoticonDotaccentDotred(value: /* var(--ds-icon-accent-red) */ String): Self = StObject.set(x, "color.icon.accent.red", value.asInstanceOf[js.Any])
+      
+      inline def setColorDoticonDotaccentDotteal(value: /* var(--ds-icon-accent-teal) */ String): Self = StObject.set(x, "color.icon.accent.teal", value.asInstanceOf[js.Any])
+      
+      inline def setColorDoticonDotaccentDotyellow(value: /* var(--ds-icon-accent-yellow) */ String): Self = StObject.set(x, "color.icon.accent.yellow", value.asInstanceOf[js.Any])
+      
+      inline def setColorDoticonDotbrand(value: /* var(--ds-icon-brand) */ String): Self = StObject.set(x, "color.icon.brand", value.asInstanceOf[js.Any])
+      
+      inline def setColorDoticonDotdanger(value: /* var(--ds-icon-danger) */ String): Self = StObject.set(x, "color.icon.danger", value.asInstanceOf[js.Any])
+      
+      inline def setColorDoticonDotdisabled(value: /* var(--ds-icon-disabled) */ String): Self = StObject.set(x, "color.icon.disabled", value.asInstanceOf[js.Any])
+      
+      inline def setColorDoticonDotdiscovery(value: /* var(--ds-icon-discovery) */ String): Self = StObject.set(x, "color.icon.discovery", value.asInstanceOf[js.Any])
+      
+      inline def setColorDoticonDotinformation(value: /* var(--ds-icon-information) */ String): Self = StObject.set(x, "color.icon.information", value.asInstanceOf[js.Any])
+      
+      inline def setColorDoticonDotinverse(value: /* var(--ds-icon-inverse) */ String): Self = StObject.set(x, "color.icon.inverse", value.asInstanceOf[js.Any])
+      
+      inline def setColorDoticonDotselected(value: /* var(--ds-icon-selected) */ String): Self = StObject.set(x, "color.icon.selected", value.asInstanceOf[js.Any])
+      
+      inline def setColorDoticonDotsubtle(value: /* var(--ds-icon-subtle) */ String): Self = StObject.set(x, "color.icon.subtle", value.asInstanceOf[js.Any])
+      
+      inline def setColorDoticonDotsuccess(value: /* var(--ds-icon-success) */ String): Self = StObject.set(x, "color.icon.success", value.asInstanceOf[js.Any])
+      
+      inline def setColorDoticonDotwarning(value: /* var(--ds-icon-warning) */ String): Self = StObject.set(x, "color.icon.warning", value.asInstanceOf[js.Any])
+      
+      inline def setColorDoticonDotwarningDotinverse(value: /* var(--ds-icon-warning-inverse) */ String): Self = StObject.set(x, "color.icon.warning.inverse", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotinteractionDothovered(value: /* var(--ds-interaction-hovered) */ String): Self = StObject.set(x, "color.interaction.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotinteractionDotpressed(value: /* var(--ds-interaction-pressed) */ String): Self = StObject.set(x, "color.interaction.pressed", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotlink(value: /* var(--ds-link) */ String): Self = StObject.set(x, "color.link", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotlinkDotpressed(value: /* var(--ds-link-pressed) */ String): Self = StObject.set(x, "color.link.pressed", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotskeleton(value: /* var(--ds-skeleton) */ String): Self = StObject.set(x, "color.skeleton", value.asInstanceOf[js.Any])
+      
+      inline def setColorDotskeletonDotsubtle(value: /* var(--ds-skeleton-subtle) */ String): Self = StObject.set(x, "color.skeleton.subtle", value.asInstanceOf[js.Any])
+      
+      inline def setColorDottext(value: /* var(--ds-text) */ String): Self = StObject.set(x, "color.text", value.asInstanceOf[js.Any])
+      
+      inline def setColorDottextDotaccentDotblue(value: /* var(--ds-text-accent-blue) */ String): Self = StObject.set(x, "color.text.accent.blue", value.asInstanceOf[js.Any])
+      
+      inline def setColorDottextDotaccentDotblueDotbolder(value: /* var(--ds-text-accent-blue-bolder) */ String): Self = StObject.set(x, "color.text.accent.blue.bolder", value.asInstanceOf[js.Any])
+      
+      inline def setColorDottextDotaccentDotgray(value: /* var(--ds-text-accent-gray) */ String): Self = StObject.set(x, "color.text.accent.gray", value.asInstanceOf[js.Any])
+      
+      inline def setColorDottextDotaccentDotgrayDotbolder(value: /* var(--ds-text-accent-gray-bolder) */ String): Self = StObject.set(x, "color.text.accent.gray.bolder", value.asInstanceOf[js.Any])
+      
+      inline def setColorDottextDotaccentDotgreen(value: /* var(--ds-text-accent-green) */ String): Self = StObject.set(x, "color.text.accent.green", value.asInstanceOf[js.Any])
+      
+      inline def setColorDottextDotaccentDotgreenDotbolder(value: /* var(--ds-text-accent-green-bolder) */ String): Self = StObject.set(x, "color.text.accent.green.bolder", value.asInstanceOf[js.Any])
+      
+      inline def setColorDottextDotaccentDotmagenta(value: /* var(--ds-text-accent-magenta) */ String): Self = StObject.set(x, "color.text.accent.magenta", value.asInstanceOf[js.Any])
+      
+      inline def setColorDottextDotaccentDotmagentaDotbolder(value: /* var(--ds-text-accent-magenta-bolder) */ String): Self = StObject.set(x, "color.text.accent.magenta.bolder", value.asInstanceOf[js.Any])
+      
+      inline def setColorDottextDotaccentDotorange(value: /* var(--ds-text-accent-orange) */ String): Self = StObject.set(x, "color.text.accent.orange", value.asInstanceOf[js.Any])
+      
+      inline def setColorDottextDotaccentDotorangeDotbolder(value: /* var(--ds-text-accent-orange-bolder) */ String): Self = StObject.set(x, "color.text.accent.orange.bolder", value.asInstanceOf[js.Any])
+      
+      inline def setColorDottextDotaccentDotpurple(value: /* var(--ds-text-accent-purple) */ String): Self = StObject.set(x, "color.text.accent.purple", value.asInstanceOf[js.Any])
+      
+      inline def setColorDottextDotaccentDotpurpleDotbolder(value: /* var(--ds-text-accent-purple-bolder) */ String): Self = StObject.set(x, "color.text.accent.purple.bolder", value.asInstanceOf[js.Any])
+      
+      inline def setColorDottextDotaccentDotred(value: /* var(--ds-text-accent-red) */ String): Self = StObject.set(x, "color.text.accent.red", value.asInstanceOf[js.Any])
+      
+      inline def setColorDottextDotaccentDotredDotbolder(value: /* var(--ds-text-accent-red-bolder) */ String): Self = StObject.set(x, "color.text.accent.red.bolder", value.asInstanceOf[js.Any])
+      
+      inline def setColorDottextDotaccentDotteal(value: /* var(--ds-text-accent-teal) */ String): Self = StObject.set(x, "color.text.accent.teal", value.asInstanceOf[js.Any])
+      
+      inline def setColorDottextDotaccentDottealDotbolder(value: /* var(--ds-text-accent-teal-bolder) */ String): Self = StObject.set(x, "color.text.accent.teal.bolder", value.asInstanceOf[js.Any])
+      
+      inline def setColorDottextDotaccentDotyellow(value: /* var(--ds-text-accent-yellow) */ String): Self = StObject.set(x, "color.text.accent.yellow", value.asInstanceOf[js.Any])
+      
+      inline def setColorDottextDotaccentDotyellowDotbolder(value: /* var(--ds-text-accent-yellow-bolder) */ String): Self = StObject.set(x, "color.text.accent.yellow.bolder", value.asInstanceOf[js.Any])
+      
+      inline def setColorDottextDotbrand(value: /* var(--ds-text-brand) */ String): Self = StObject.set(x, "color.text.brand", value.asInstanceOf[js.Any])
+      
+      inline def setColorDottextDotdanger(value: /* var(--ds-text-danger) */ String): Self = StObject.set(x, "color.text.danger", value.asInstanceOf[js.Any])
+      
+      inline def setColorDottextDotdisabled(value: /* var(--ds-text-disabled) */ String): Self = StObject.set(x, "color.text.disabled", value.asInstanceOf[js.Any])
+      
+      inline def setColorDottextDotdiscovery(value: /* var(--ds-text-discovery) */ String): Self = StObject.set(x, "color.text.discovery", value.asInstanceOf[js.Any])
+      
+      inline def setColorDottextDotinformation(value: /* var(--ds-text-information) */ String): Self = StObject.set(x, "color.text.information", value.asInstanceOf[js.Any])
+      
+      inline def setColorDottextDotinverse(value: /* var(--ds-text-inverse) */ String): Self = StObject.set(x, "color.text.inverse", value.asInstanceOf[js.Any])
+      
+      inline def setColorDottextDotselected(value: /* var(--ds-text-selected) */ String): Self = StObject.set(x, "color.text.selected", value.asInstanceOf[js.Any])
+      
+      inline def setColorDottextDotsubtle(value: /* var(--ds-text-subtle) */ String): Self = StObject.set(x, "color.text.subtle", value.asInstanceOf[js.Any])
+      
+      inline def setColorDottextDotsubtlest(value: /* var(--ds-text-subtlest) */ String): Self = StObject.set(x, "color.text.subtlest", value.asInstanceOf[js.Any])
+      
+      inline def setColorDottextDotsuccess(value: /* var(--ds-text-success) */ String): Self = StObject.set(x, "color.text.success", value.asInstanceOf[js.Any])
+      
+      inline def setColorDottextDotwarning(value: /* var(--ds-text-warning) */ String): Self = StObject.set(x, "color.text.warning", value.asInstanceOf[js.Any])
+      
+      inline def setColorDottextDotwarningDotinverse(value: /* var(--ds-text-warning-inverse) */ String): Self = StObject.set(x, "color.text.warning.inverse", value.asInstanceOf[js.Any])
+      
+      inline def setElevationDotshadowDotoverflow(value: /* var(--ds-shadow-overflow) */ String): Self = StObject.set(x, "elevation.shadow.overflow", value.asInstanceOf[js.Any])
+      
+      inline def setElevationDotshadowDotoverflowDotperimeter(value: /* var(--ds-shadow-overflow-perimeter) */ String): Self = StObject.set(x, "elevation.shadow.overflow.perimeter", value.asInstanceOf[js.Any])
+      
+      inline def setElevationDotshadowDotoverflowDotspread(value: /* var(--ds-shadow-overflow-spread) */ String): Self = StObject.set(x, "elevation.shadow.overflow.spread", value.asInstanceOf[js.Any])
+      
+      inline def setElevationDotshadowDotoverlay(value: /* var(--ds-shadow-overlay) */ String): Self = StObject.set(x, "elevation.shadow.overlay", value.asInstanceOf[js.Any])
+      
+      inline def setElevationDotshadowDotraised(value: /* var(--ds-shadow-raised) */ String): Self = StObject.set(x, "elevation.shadow.raised", value.asInstanceOf[js.Any])
+      
+      inline def setElevationDotsurface(value: /* var(--ds-surface) */ String): Self = StObject.set(x, "elevation.surface", value.asInstanceOf[js.Any])
+      
+      inline def setElevationDotsurfaceDothovered(value: /* var(--ds-surface-hovered) */ String): Self = StObject.set(x, "elevation.surface.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setElevationDotsurfaceDotoverlay(value: /* var(--ds-surface-overlay) */ String): Self = StObject.set(x, "elevation.surface.overlay", value.asInstanceOf[js.Any])
+      
+      inline def setElevationDotsurfaceDotoverlayDothovered(value: /* var(--ds-surface-overlay-hovered) */ String): Self = StObject.set(x, "elevation.surface.overlay.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setElevationDotsurfaceDotoverlayDotpressed(value: /* var(--ds-surface-overlay-pressed) */ String): Self = StObject.set(x, "elevation.surface.overlay.pressed", value.asInstanceOf[js.Any])
+      
+      inline def setElevationDotsurfaceDotpressed(value: /* var(--ds-surface-pressed) */ String): Self = StObject.set(x, "elevation.surface.pressed", value.asInstanceOf[js.Any])
+      
+      inline def setElevationDotsurfaceDotraised(value: /* var(--ds-surface-raised) */ String): Self = StObject.set(x, "elevation.surface.raised", value.asInstanceOf[js.Any])
+      
+      inline def setElevationDotsurfaceDotraisedDothovered(value: /* var(--ds-surface-raised-hovered) */ String): Self = StObject.set(x, "elevation.surface.raised.hovered", value.asInstanceOf[js.Any])
+      
+      inline def setElevationDotsurfaceDotraisedDotpressed(value: /* var(--ds-surface-raised-pressed) */ String): Self = StObject.set(x, "elevation.surface.raised.pressed", value.asInstanceOf[js.Any])
+      
+      inline def setElevationDotsurfaceDotsunken(value: /* var(--ds-surface-sunken) */ String): Self = StObject.set(x, "elevation.surface.sunken", value.asInstanceOf[js.Any])
+      
+      inline def setFontDotfamilyDotmonospace(value: /* var(--ds-font-family-monospace) */ String): Self = StObject.set(x, "font.family.monospace", value.asInstanceOf[js.Any])
+      
+      inline def setFontDotfamilyDotsans(value: /* var(--ds-font-family-sans) */ String): Self = StObject.set(x, "font.family.sans", value.asInstanceOf[js.Any])
+      
+      inline def setFontDotlineHeightDot100(value: /* var(--ds-font-lineHeight-100) */ String): Self = StObject.set(x, "font.lineHeight.100", value.asInstanceOf[js.Any])
+      
+      inline def setFontDotlineHeightDot200(value: /* var(--ds-font-lineHeight-200) */ String): Self = StObject.set(x, "font.lineHeight.200", value.asInstanceOf[js.Any])
+      
+      inline def setFontDotlineHeightDot300(value: /* var(--ds-font-lineHeight-300) */ String): Self = StObject.set(x, "font.lineHeight.300", value.asInstanceOf[js.Any])
+      
+      inline def setFontDotlineHeightDot400(value: /* var(--ds-font-lineHeight-400) */ String): Self = StObject.set(x, "font.lineHeight.400", value.asInstanceOf[js.Any])
+      
+      inline def setFontDotlineHeightDot500(value: /* var(--ds-font-lineHeight-500) */ String): Self = StObject.set(x, "font.lineHeight.500", value.asInstanceOf[js.Any])
+      
+      inline def setFontDotlineHeightDot600(value: /* var(--ds-font-lineHeight-600) */ String): Self = StObject.set(x, "font.lineHeight.600", value.asInstanceOf[js.Any])
+      
+      inline def setFontDotsizeDot050(value: /* var(--ds-font-size-050) */ String): Self = StObject.set(x, "font.size.050", value.asInstanceOf[js.Any])
+      
+      inline def setFontDotsizeDot075(value: /* var(--ds-font-size-075) */ String): Self = StObject.set(x, "font.size.075", value.asInstanceOf[js.Any])
+      
+      inline def setFontDotsizeDot100(value: /* var(--ds-font-size-100) */ String): Self = StObject.set(x, "font.size.100", value.asInstanceOf[js.Any])
+      
+      inline def setFontDotsizeDot200(value: /* var(--ds-font-size-200) */ String): Self = StObject.set(x, "font.size.200", value.asInstanceOf[js.Any])
+      
+      inline def setFontDotsizeDot300(value: /* var(--ds-font-size-300) */ String): Self = StObject.set(x, "font.size.300", value.asInstanceOf[js.Any])
+      
+      inline def setFontDotsizeDot400(value: /* var(--ds-font-size-400) */ String): Self = StObject.set(x, "font.size.400", value.asInstanceOf[js.Any])
+      
+      inline def setFontDotsizeDot500(value: /* var(--ds-font-size-500) */ String): Self = StObject.set(x, "font.size.500", value.asInstanceOf[js.Any])
+      
+      inline def setFontDotsizeDot600(value: /* var(--ds-font-size-600) */ String): Self = StObject.set(x, "font.size.600", value.asInstanceOf[js.Any])
+      
+      inline def setFontDotweightDotbold(value: /* var(--ds-font-weight-bold) */ String): Self = StObject.set(x, "font.weight.bold", value.asInstanceOf[js.Any])
+      
+      inline def setFontDotweightDotmedium(value: /* var(--ds-font-weight-medium) */ String): Self = StObject.set(x, "font.weight.medium", value.asInstanceOf[js.Any])
+      
+      inline def setFontDotweightDotregular(value: /* var(--ds-font-weight-regular) */ String): Self = StObject.set(x, "font.weight.regular", value.asInstanceOf[js.Any])
+      
+      inline def setFontDotweightDotsemibold(value: /* var(--ds-font-weight-semibold) */ String): Self = StObject.set(x, "font.weight.semibold", value.asInstanceOf[js.Any])
+      
+      inline def setOpacityDotdisabled(value: /* var(--ds-opacity-disabled) */ String): Self = StObject.set(x, "opacity.disabled", value.asInstanceOf[js.Any])
+      
+      inline def setOpacityDotloading(value: /* var(--ds-opacity-loading) */ String): Self = StObject.set(x, "opacity.loading", value.asInstanceOf[js.Any])
+      
+      inline def setSpaceDot0(value: /* var(--ds-space-0) */ String): Self = StObject.set(x, "space.0", value.asInstanceOf[js.Any])
+      
+      inline def setSpaceDot025(value: /* var(--ds-space-025) */ String): Self = StObject.set(x, "space.025", value.asInstanceOf[js.Any])
+      
+      inline def setSpaceDot050(value: /* var(--ds-space-050) */ String): Self = StObject.set(x, "space.050", value.asInstanceOf[js.Any])
+      
+      inline def setSpaceDot075(value: /* var(--ds-space-075) */ String): Self = StObject.set(x, "space.075", value.asInstanceOf[js.Any])
+      
+      inline def setSpaceDot100(value: /* var(--ds-space-100) */ String): Self = StObject.set(x, "space.100", value.asInstanceOf[js.Any])
+      
+      inline def setSpaceDot1000(value: /* var(--ds-space-1000) */ String): Self = StObject.set(x, "space.1000", value.asInstanceOf[js.Any])
+      
+      inline def setSpaceDot150(value: /* var(--ds-space-150) */ String): Self = StObject.set(x, "space.150", value.asInstanceOf[js.Any])
+      
+      inline def setSpaceDot200(value: /* var(--ds-space-200) */ String): Self = StObject.set(x, "space.200", value.asInstanceOf[js.Any])
+      
+      inline def setSpaceDot250(value: /* var(--ds-space-250) */ String): Self = StObject.set(x, "space.250", value.asInstanceOf[js.Any])
+      
+      inline def setSpaceDot300(value: /* var(--ds-space-300) */ String): Self = StObject.set(x, "space.300", value.asInstanceOf[js.Any])
+      
+      inline def setSpaceDot400(value: /* var(--ds-space-400) */ String): Self = StObject.set(x, "space.400", value.asInstanceOf[js.Any])
+      
+      inline def setSpaceDot500(value: /* var(--ds-space-500) */ String): Self = StObject.set(x, "space.500", value.asInstanceOf[js.Any])
+      
+      inline def setSpaceDot600(value: /* var(--ds-space-600) */ String): Self = StObject.set(x, "space.600", value.asInstanceOf[js.Any])
+      
+      inline def setSpaceDot800(value: /* var(--ds-space-800) */ String): Self = StObject.set(x, "space.800", value.asInstanceOf[js.Any])
+      
+      inline def setUtilityDotUNSAFEDottransparent(value: /* var(--ds-UNSAFE-transparent) */ String): Self = StObject.set(x, "utility.UNSAFE.transparent", value.asInstanceOf[js.Any])
     }
   }
 }

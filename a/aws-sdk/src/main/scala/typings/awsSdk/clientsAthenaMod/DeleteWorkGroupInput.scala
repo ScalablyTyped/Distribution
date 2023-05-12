@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteWorkGroupInput extends StObject {
   
   /**
-    * The option to delete the workgroup and its contents even if the workgroup contains any named queries or query executions.
+    * The option to delete the workgroup and its contents even if the workgroup contains any named queries, query executions, or notebooks.
     */
   var RecursiveDeleteOption: js.UndefOr[BoxedBoolean] = js.undefined
   

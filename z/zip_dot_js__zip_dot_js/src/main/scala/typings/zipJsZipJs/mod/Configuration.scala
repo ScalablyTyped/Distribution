@@ -15,62 +15,62 @@ trait Configuration
   
   /**
     * The stream implementation used to compress data when `useCompressionStream` is set to `false`.
-    * 
+    *
     * @defaultValue {@link CodecStream}
     */
   var CompressionStream: js.UndefOr[Instantiable0[GenericTransformStream]] = js.undefined
   
   /**
     * The stream implementation used to decompress data when `useCompressionStream` is set to `false`.
-    * 
+    *
     * @defaultValue {@link CodecStream}
     */
   var DecompressionStream: js.UndefOr[Instantiable0[GenericTransformStream]] = js.undefined
   
   /**
     * The codec implementation used to compress data.
-    * 
+    *
     * @defaultValue {@link ZipDeflate}
     */
   var Deflate: js.UndefOr[Instantiable0[ZipDeflate]] = js.undefined
   
   /**
     * The codec implementation used to decompress data.
-    * 
+    *
     * @defaultValue {@link ZipInflate}
     */
   var Inflate: js.UndefOr[Instantiable0[ZipInflate]] = js.undefined
   
   /**
     * The size of the chunks in bytes during data compression/decompression.
-    * 
+    *
     * @defaultValue 524288
     */
   var chunkSize: js.UndefOr[Double] = js.undefined
   
   /**
     * The maximum number of web workers used to compress/decompress data simultaneously.
-    * 
+    *
     * @defaultValue `navigator.hardwareConcurrency`
     */
   var maxWorkers: js.UndefOr[Double] = js.undefined
   
   /**
     * The delay in milliseconds before idle web workers are automatically terminated. You can call `terminateWorkers()` to terminate idle workers.
-    * 
+    *
     * @defaultValue 5000
     */
   var terminateWorkerTimeout: js.UndefOr[Double] = js.undefined
   
   /**
     * The URIs of the compression/decompression scripts run in web workers.
-    * 
+    *
     * It allows using alternative deflate implementations or specifying a URL to the worker script if the CSP of the page blocks scripts imported from a Blob URI.
     * The properties `deflate` and `inflate` must specify arrays of URLs to import the deflate/inflate web workers, respectively.
     * The first URL is relative to the base URI of the document. The other URLs are relative to the URL of the first script. Scripts in the array are executed in order.
     * If you only use deflation or inflation, the unused `deflate`/`inflate` property can be omitted.
-    * 
-    * Here is an example: 
+    *
+    * Here is an example:
     * ```
     * configure({
     *   workerScripts: {
@@ -79,9 +79,9 @@ trait Configuration
     *   }
     * });
     * ```
-    * 
+    *
     * If the CSP of the page blocks scripts imported from a Blob URI you can use `z-worker.js` from https://github.com/gildas-lormeau/zip.js/tree/master/dist and specify the URL where it can be found.
-    * 
+    *
     * Here is an example:
     * ```
     * configure({

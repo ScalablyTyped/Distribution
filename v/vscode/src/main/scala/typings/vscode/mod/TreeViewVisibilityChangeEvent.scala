@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TreeViewVisibilityChangeEvent extends StObject {
   
   /**
-    * `true` if the {@link TreeView tree view} is visible otherwise `false`.
-    */
+  		 * `true` if the {@link TreeView tree view} is visible otherwise `false`.
+  		 */
   val visible: Boolean
 }
 object TreeViewVisibilityChangeEvent {

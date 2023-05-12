@@ -43,6 +43,7 @@ import typings.react.mod.UIEventHandler
 import typings.react.mod.WheelEvent
 import typings.react.mod.WheelEventHandler
 import typings.react.mod.global.JSX.Element
+import typings.reactRouter.anon.Basename
 import typings.reactRouter.anon.Data
 import typings.reactRouter.anon.Revalidate
 import typings.reactRouter.distLibComponentsMod.AwaitProps
@@ -57,13 +58,15 @@ import typings.reactRouter.distLibContextMod.DataRouterContextObject
 import typings.reactRouter.distLibContextMod.LocationContextObject
 import typings.reactRouter.distLibContextMod.NavigateOptions
 import typings.reactRouter.distLibContextMod.NavigationContextObject
-import typings.reactRouter.distLibContextMod.RelativeRoutingType
 import typings.reactRouter.distLibContextMod.RouteContextObject
 import typings.reactRouter.distLibContextMod.RouteMatch
 import typings.reactRouter.distLibContextMod.RouteObject
 import typings.reactRouter.distLibHooksMod.NavigateFunction
-import typings.reactRouterDom.anon.Basename
+import typings.reactRouterDom.anon.Capture
+import typings.reactRouterDom.anon.GetKey
 import typings.reactRouterDom.anon.IsActive
+import typings.reactRouterDom.anon.Message
+import typings.reactRouterDom.anon.PartialOmitFutureConfigv7
 import typings.reactRouterDom.anon.PreventScrollReset
 import typings.reactRouterDom.anon.Relative
 import typings.reactRouterDom.distDomMod.SubmitOptions
@@ -125,23 +128,26 @@ import typings.remixRunRouter.distHistoryMod.History
 import typings.remixRunRouter.distHistoryMod.Location
 import typings.remixRunRouter.distHistoryMod.Path
 import typings.remixRunRouter.distHistoryMod.To
+import typings.remixRunRouter.distRouterMod.Blocker
+import typings.remixRunRouter.distRouterMod.BlockerFunction
 import typings.remixRunRouter.distRouterMod.Fetcher
 import typings.remixRunRouter.distRouterMod.GetScrollRestorationKeyFunction
 import typings.remixRunRouter.distRouterMod.HydrationState
 import typings.remixRunRouter.distRouterMod.Navigation
+import typings.remixRunRouter.distRouterMod.RelativeRoutingType
 import typings.remixRunRouter.distRouterMod.Router
 import typings.remixRunRouter.distRouterMod.RouterState
-import typings.remixRunRouter.distRouterMod.StaticHandlerContext
 import typings.remixRunRouter.distRouterMod.UseMatchesMatch
 import typings.remixRunRouter.distUtilsMod.AgnosticRouteMatch
 import typings.remixRunRouter.distUtilsMod.AgnosticRouteObject
-import typings.remixRunRouter.distUtilsMod.DeferredData
-import typings.remixRunRouter.distUtilsMod.FormMethod
+import typings.remixRunRouter.distUtilsMod.DeferFunction
+import typings.remixRunRouter.distUtilsMod.HTMLFormMethod
 import typings.remixRunRouter.distUtilsMod.JsonFunction
 import typings.remixRunRouter.distUtilsMod.ParamParseKey
 import typings.remixRunRouter.distUtilsMod.PathMatch
 import typings.remixRunRouter.distUtilsMod.PathPattern
 import typings.remixRunRouter.distUtilsMod.RedirectFunction
+import typings.std.BeforeUnloadEvent
 import typings.std.Event
 import typings.std.FormData
 import typings.std.HTMLAnchorElement
@@ -235,12 +241,6 @@ object mod {
   @js.native
   val UNSAFEDataRouterStateContext: Context[RouterState | Null] = js.native
   
-  @JSImport("react-router-dom", "UNSAFE_DataStaticRouterContext")
-  @js.native
-  val UNSAFEDataStaticRouterContext: Context[StaticHandlerContext | Null] = js.native
-  
-  inline def UNSAFEEnhanceManualRouteObjects(routes: js.Array[RouteObject]): js.Array[RouteObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("UNSAFE_enhanceManualRouteObjects")(routes.asInstanceOf[js.Any]).asInstanceOf[js.Array[RouteObject]]
-  
   @JSImport("react-router-dom", "UNSAFE_LocationContext")
   @js.native
   val UNSAFELocationContext: Context[LocationContextObject] = js.native
@@ -253,14 +253,22 @@ object mod {
   @js.native
   val UNSAFERouteContext: Context[RouteContextObject] = js.native
   
+  inline def UNSAFEUseRouteId(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("UNSAFE_useRouteId")().asInstanceOf[String]
+  
+  /**
+    * When rendered inside a RouterProvider, will restore scroll positions on navigations
+    */
+  inline def UNSAFEUseScrollRestoration(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("UNSAFE_useScrollRestoration")().asInstanceOf[Unit]
+  inline def UNSAFEUseScrollRestoration(param0: GetKey): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("UNSAFE_useScrollRestoration")(param0.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
   inline def createBrowserRouter(routes: js.Array[RouteObject]): Router = ^.asInstanceOf[js.Dynamic].applyDynamic("createBrowserRouter")(routes.asInstanceOf[js.Any]).asInstanceOf[Router]
-  inline def createBrowserRouter(routes: js.Array[RouteObject], opts: Basename): Router = (^.asInstanceOf[js.Dynamic].applyDynamic("createBrowserRouter")(routes.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Router]
+  inline def createBrowserRouter(routes: js.Array[RouteObject], opts: DOMRouterOpts): Router = (^.asInstanceOf[js.Dynamic].applyDynamic("createBrowserRouter")(routes.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Router]
   
   inline def createHashRouter(routes: js.Array[RouteObject]): Router = ^.asInstanceOf[js.Dynamic].applyDynamic("createHashRouter")(routes.asInstanceOf[js.Any]).asInstanceOf[Router]
-  inline def createHashRouter(routes: js.Array[RouteObject], opts: Basename): Router = (^.asInstanceOf[js.Dynamic].applyDynamic("createHashRouter")(routes.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Router]
+  inline def createHashRouter(routes: js.Array[RouteObject], opts: DOMRouterOpts): Router = (^.asInstanceOf[js.Dynamic].applyDynamic("createHashRouter")(routes.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Router]
   
   inline def createMemoryRouter(routes: js.Array[RouteObject]): Router = ^.asInstanceOf[js.Dynamic].applyDynamic("createMemoryRouter")(routes.asInstanceOf[js.Any]).asInstanceOf[Router]
-  inline def createMemoryRouter(routes: js.Array[RouteObject], opts: typings.reactRouter.anon.Basename): Router = (^.asInstanceOf[js.Dynamic].applyDynamic("createMemoryRouter")(routes.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Router]
+  inline def createMemoryRouter(routes: js.Array[RouteObject], opts: Basename): Router = (^.asInstanceOf[js.Dynamic].applyDynamic("createMemoryRouter")(routes.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Router]
   
   inline def createPath(param0: PartialPath): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createPath")(param0.asInstanceOf[js.Any]).asInstanceOf[String]
   
@@ -273,13 +281,15 @@ object mod {
   inline def createSearchParams(): URLSearchParams = ^.asInstanceOf[js.Dynamic].applyDynamic("createSearchParams")().asInstanceOf[URLSearchParams]
   inline def createSearchParams(init: URLSearchParamsInit): URLSearchParams = ^.asInstanceOf[js.Dynamic].applyDynamic("createSearchParams")(init.asInstanceOf[js.Any]).asInstanceOf[URLSearchParams]
   
-  inline def defer(data: Record[String, Any]): DeferredData = ^.asInstanceOf[js.Dynamic].applyDynamic("defer")(data.asInstanceOf[js.Any]).asInstanceOf[DeferredData]
+  @JSImport("react-router-dom", "defer")
+  @js.native
+  val defer: DeferFunction = js.native
   
-  inline def generatePath[Path /* <: String */](path: Path): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generatePath")(path.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def generatePath[Path /* <: String */](originalPath: Path): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generatePath")(originalPath.asInstanceOf[js.Any]).asInstanceOf[String]
   inline def generatePath[Path /* <: String */](
-    path: Path,
-    params: /* import warning: importer.ImportType#apply Failed type conversion: {[ key in @remix-run/router.@remix-run/router/dist/utils.PathParam<Path> ]: string} */ js.Any
-  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generatePath")(path.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[String]
+    originalPath: Path,
+    params: /* import warning: importer.ImportType#apply Failed type conversion: {[ key in @remix-run/router.@remix-run/router/dist/utils.PathParam<Path> ]: string | null} */ js.Any
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generatePath")(originalPath.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[String]
   
   object global {
     
@@ -290,7 +300,7 @@ object mod {
     inline def staticRouterHydrationData_=(x: js.UndefOr[HydrationState]): Unit = js.Dynamic.global.updateDynamic("__staticRouterHydrationData")(x.asInstanceOf[js.Any])
   }
   
-  inline def isRouteErrorResponse(e: Any): /* is @remix-run/router.@remix-run/router/dist/utils.ErrorResponse */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRouteErrorResponse")(e.asInstanceOf[js.Any]).asInstanceOf[/* is @remix-run/router.@remix-run/router/dist/utils.ErrorResponse */ Boolean]
+  inline def isRouteErrorResponse(error: Any): /* is @remix-run/router.@remix-run/router/dist/utils.ErrorResponse */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRouteErrorResponse")(error.asInstanceOf[js.Any]).asInstanceOf[/* is @remix-run/router.@remix-run/router/dist/utils.ErrorResponse */ Boolean]
   
   @JSImport("react-router-dom", "json")
   @js.native
@@ -336,11 +346,27 @@ object mod {
     inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
+  inline def unstableUseBlocker(shouldBlock: Boolean): Blocker = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_useBlocker")(shouldBlock.asInstanceOf[js.Any]).asInstanceOf[Blocker]
+  inline def unstableUseBlocker(shouldBlock: BlockerFunction): Blocker = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_useBlocker")(shouldBlock.asInstanceOf[js.Any]).asInstanceOf[Blocker]
+  
+  /**
+    * Wrapper around useBlocker to show a window.confirm prompt to users instead
+    * of building a custom UI with useBlocker.
+    *
+    * Warning: This has *a lot of rough edges* and behaves very differently (and
+    * very incorrectly in some cases) across browsers if user click addition
+    * back/forward navigations while the confirm is open.  Use at your own risk.
+    */
+  inline def unstableUsePrompt(param0: Message): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_usePrompt")(param0.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
   inline def useActionData(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("useActionData")().asInstanceOf[Any]
   
   inline def useAsyncError(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("useAsyncError")().asInstanceOf[Any]
   
   inline def useAsyncValue(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("useAsyncValue")().asInstanceOf[Any]
+  
+  inline def useBeforeUnload(callback: js.Function1[/* event */ BeforeUnloadEvent, Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useBeforeUnload")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def useBeforeUnload(callback: js.Function1[/* event */ BeforeUnloadEvent, Any], options: Capture): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useBeforeUnload")(callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def useFetcher[TData](): FetcherWithComponents[TData] = ^.asInstanceOf[js.Dynamic].applyDynamic("useFetcher")().asInstanceOf[FetcherWithComponents[TData]]
   
@@ -431,6 +457,44 @@ object mod {
     }
   }
   
+  trait DOMRouterOpts extends StObject {
+    
+    var basename: js.UndefOr[String] = js.undefined
+    
+    var future: js.UndefOr[PartialOmitFutureConfigv7] = js.undefined
+    
+    var hydrationData: js.UndefOr[HydrationState] = js.undefined
+    
+    var window: js.UndefOr[Window] = js.undefined
+  }
+  object DOMRouterOpts {
+    
+    inline def apply(): DOMRouterOpts = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[DOMRouterOpts]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DOMRouterOpts] (val x: Self) extends AnyVal {
+      
+      inline def setBasename(value: String): Self = StObject.set(x, "basename", value.asInstanceOf[js.Any])
+      
+      inline def setBasenameUndefined: Self = StObject.set(x, "basename", js.undefined)
+      
+      inline def setFuture(value: PartialOmitFutureConfigv7): Self = StObject.set(x, "future", value.asInstanceOf[js.Any])
+      
+      inline def setFutureUndefined: Self = StObject.set(x, "future", js.undefined)
+      
+      inline def setHydrationData(value: HydrationState): Self = StObject.set(x, "hydrationData", value.asInstanceOf[js.Any])
+      
+      inline def setHydrationDataUndefined: Self = StObject.set(x, "hydrationData", js.undefined)
+      
+      inline def setWindow(value: Window): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
+      
+      inline def setWindowUndefined: Self = StObject.set(x, "window", js.undefined)
+    }
+  }
+  
   type FetcherWithComponents[TData] = Fetcher[TData] & typings.reactRouterDom.anon.Form
   
   trait FormProps
@@ -438,11 +502,23 @@ object mod {
        with FormHTMLAttributes[HTMLFormElement] {
     
     /**
+      * Normal `<form action>` but supports React Router's relative paths.
+      */
+    @JSName("action")
+    var action_FormProps: js.UndefOr[String] = js.undefined
+    
+    /**
       * The HTTP verb to use when the form is submit. Supports "get", "post",
       * "put", "delete", "patch".
       */
     @JSName("method")
-    var method_FormProps: js.UndefOr[FormMethod] = js.undefined
+    var method_FormProps: js.UndefOr[HTMLFormMethod] = js.undefined
+    
+    /**
+      * Prevent the scroll position from resetting to the top of the viewport on
+      * completion of the navigation when using the <ScrollRestoration> component
+      */
+    var preventScrollReset: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Determines whether the form action is relative to the route hierarchy or
@@ -473,9 +549,17 @@ object mod {
     @scala.inline
     implicit open class MutableBuilder[Self <: FormProps] (val x: Self) extends AnyVal {
       
-      inline def setMethod(value: FormMethod): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      
+      inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+      
+      inline def setMethod(value: HTMLFormMethod): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
       inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+      
+      inline def setPreventScrollReset(value: Boolean): Self = StObject.set(x, "preventScrollReset", value.asInstanceOf[js.Any])
+      
+      inline def setPreventScrollResetUndefined: Self = StObject.set(x, "preventScrollReset", js.undefined)
       
       inline def setRelative(value: RelativeRoutingType): Self = StObject.set(x, "relative", value.asInstanceOf[js.Any])
       
@@ -662,6 +746,8 @@ object mod {
     
     var autoCorrect: js.UndefOr[String] = js.undefined
     
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
+    
     var autoSave: js.UndefOr[String] = js.undefined
     
     var children: js.UndefOr[ReactNode] = js.undefined
@@ -669,6 +755,8 @@ object mod {
     var className: js.UndefOr[String] = js.undefined
     
     var color: js.UndefOr[String] = js.undefined
+    
+    var content: js.UndefOr[String] = js.undefined
     
     var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
@@ -901,6 +989,8 @@ object mod {
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
+    
+    var rev: js.UndefOr[String] = js.undefined
     
     var role: js.UndefOr[AriaRole] = js.undefined
     
@@ -1156,6 +1246,10 @@ object mod {
       
       inline def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
       
+      inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+      
+      inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+      
       inline def setAutoSave(value: String): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
       
       inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
@@ -1172,9 +1266,13 @@ object mod {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
       inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
       inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
@@ -1638,6 +1736,10 @@ object mod {
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
       
+      inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+      
+      inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
+      
       inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
       inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
@@ -1815,6 +1917,8 @@ object mod {
     
     var autoCorrect: js.UndefOr[String] = js.undefined
     
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
+    
     var autoSave: js.UndefOr[String] = js.undefined
     
     var caseSensitive: js.UndefOr[Boolean] = js.undefined
@@ -1824,6 +1928,8 @@ object mod {
     var className: js.UndefOr[String | (js.Function1[/* props */ IsActive, js.UndefOr[String]])] = js.undefined
     
     var color: js.UndefOr[String] = js.undefined
+    
+    var content: js.UndefOr[String] = js.undefined
     
     var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
@@ -2058,6 +2164,8 @@ object mod {
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
+    
+    var rev: js.UndefOr[String] = js.undefined
     
     var role: js.UndefOr[AriaRole] = js.undefined
     
@@ -2313,6 +2421,10 @@ object mod {
       
       inline def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
       
+      inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+      
+      inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+      
       inline def setAutoSave(value: String): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
       
       inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
@@ -2337,9 +2449,13 @@ object mod {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
       inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
       inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
@@ -2806,6 +2922,10 @@ object mod {
       inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+      
+      inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+      
+      inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
       
       inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       

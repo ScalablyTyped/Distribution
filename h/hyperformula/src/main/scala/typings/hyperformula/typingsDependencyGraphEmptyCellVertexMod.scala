@@ -1,6 +1,5 @@
 package typings.hyperformula
 
-import typings.hyperformula.typingsCellMod.SimpleCellAddress_
 import typings.hyperformula.typingsInterpreterInterpreterValueMod.EmptyValueType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,10 +9,7 @@ object typingsDependencyGraphEmptyCellVertexMod {
   
   @JSImport("hyperformula/typings/DependencyGraph/EmptyCellVertex", "EmptyCellVertex")
   @js.native
-  open class EmptyCellVertex protected () extends StObject {
-    def this(address: SimpleCellAddress_) = this()
-    
-    var address: SimpleCellAddress_ = js.native
+  open class EmptyCellVertex () extends StObject {
     
     /**
       * Retrieves cell value bound to that singleton

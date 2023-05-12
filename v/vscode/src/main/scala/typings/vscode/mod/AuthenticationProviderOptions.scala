@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AuthenticationProviderOptions extends StObject {
   
   /**
-    * Whether it is possible to be signed into multiple accounts at once with this provider.
-    * If not specified, will default to false.
-    */
+  		 * Whether it is possible to be signed into multiple accounts at once with this provider.
+  		 * If not specified, will default to false.
+  		*/
   val supportsMultipleAccounts: js.UndefOr[Boolean] = js.undefined
 }
 object AuthenticationProviderOptions {

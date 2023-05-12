@@ -1,6 +1,7 @@
 package typings.openui5
 
 import typings.openui5.anon.Collapse
+import typings.openui5.anon.HeaderDescription
 import typings.openui5.anon.PreviousKey
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapFLibraryMod.IDynamicPageStickyContent
@@ -359,6 +360,7 @@ object sapMIconTabBarMod {
     
     /**
       * @SINCE 1.15.0
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:expand expand} to attached listeners.
       *
@@ -371,6 +373,8 @@ object sapMIconTabBarMod {
     mParameters: Collapse): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:select select} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -396,8 +400,6 @@ object sapMIconTabBarMod {
     def getApplyContentPadding(): Boolean = js.native
     
     /**
-      * @SINCE 1.78
-      *
       * Gets current value of property {@link #getAriaTexts ariaTexts}.
       *
       * Specifies optional texts for the screen reader.
@@ -407,7 +409,7 @@ object sapMIconTabBarMod {
       *
       * @returns Value of property `ariaTexts`
       */
-    def getAriaTexts(): js.Object = js.native
+    def getAriaTexts(): HeaderDescription | Null = js.native
     
     /**
       * @SINCE 1.26
@@ -770,7 +772,7 @@ object sapMIconTabBarMod {
     def setAriaTexts(/**
       * New value for ariaTexts.
       */
-    oAriaTexts: js.Object): this.type = js.native
+    oAriaTexts: HeaderDescription): this.type = js.native
     
     /**
       * @SINCE 1.26
@@ -960,7 +962,7 @@ object sapMIconTabBarMod {
       /**
       * New parameter value.
       */
-    mode: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof IconTabHeaderMode * / any */ String
+    mode: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof IconTabDensityMode * / any */ String
     ): this.type = js.native
     /**
       * Sets the tab density mode.
@@ -970,7 +972,7 @@ object sapMIconTabBarMod {
     def setTabDensityMode(/**
       * New parameter value.
       */
-    mode: IconTabHeaderMode): this.type = js.native
+    mode: IconTabDensityMode): this.type = js.native
     
     /**
       * @SINCE 1.90

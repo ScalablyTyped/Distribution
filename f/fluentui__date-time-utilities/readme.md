@@ -1,7 +1,7 @@
 
 # Scala.js typings for fluentui__date-time-utilities
 
-Typings are for version 8.5.2
+Typings are for version 8.5.10
 
 ## Library description:
 Date-time utilities

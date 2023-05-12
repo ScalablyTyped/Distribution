@@ -1,7 +1,7 @@
 
 # Scala.js typings for semantic-release
 
-Typings are for version 17.2
+Typings are for version 20.0
 
 ## Library description:
 Automated semver compliant package publishing

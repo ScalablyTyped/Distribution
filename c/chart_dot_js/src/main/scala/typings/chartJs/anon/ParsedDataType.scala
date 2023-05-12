@@ -5,10 +5,10 @@ import typings.chartJs.chartJsStrings.linear
 import typings.chartJs.chartJsStrings.logarithmic
 import typings.chartJs.chartJsStrings.time
 import typings.chartJs.chartJsStrings.timeseries
-import typings.chartJs.mod.PieControllerChartOptions
-import typings.chartJs.mod.PieControllerDatasetOptions
-import typings.chartJs.mod.PieDataPoint
-import typings.chartJs.mod.PieMetaExtensions
+import typings.chartJs.distTypesIndexMod.PieControllerChartOptions
+import typings.chartJs.distTypesIndexMod.PieControllerDatasetOptions
+import typings.chartJs.distTypesIndexMod.PieDataPoint
+import typings.chartJs.distTypesIndexMod.PieMetaExtensions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

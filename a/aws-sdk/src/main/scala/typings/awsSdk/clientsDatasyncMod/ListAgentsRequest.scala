@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListAgentsRequest extends StObject {
   
   /**
-    * The maximum number of agents to list.
+    * Specifies the maximum number of DataSync agents to list in a response. By default, a response shows a maximum of 100 agents.
     */
   var MaxResults: js.UndefOr[typings.awsSdk.clientsDatasyncMod.MaxResults] = js.undefined
   
   /**
-    * An opaque string that indicates the position at which to begin the next list of agents.
+    * Specifies an opaque string that indicates the position to begin the next list of results in the response.
     */
   var NextToken: js.UndefOr[typings.awsSdk.clientsDatasyncMod.NextToken] = js.undefined
 }

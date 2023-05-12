@@ -5,12 +5,29 @@ import typings.phaser.Phaser.Cameras.Scene2D.Camera
 import typings.phaser.Phaser.Curves.Path
 import typings.phaser.Phaser.Display.Masks.BitmapMask
 import typings.phaser.Phaser.Display.Masks.GeometryMask
-import typings.phaser.Phaser.Geom.Point
+import typings.phaser.Phaser.FX.Barrel
+import typings.phaser.Phaser.FX.Bloom
+import typings.phaser.Phaser.FX.Blur
+import typings.phaser.Phaser.FX.Bokeh
+import typings.phaser.Phaser.FX.Circle
+import typings.phaser.Phaser.FX.ColorMatrix
+import typings.phaser.Phaser.FX.Controller
+import typings.phaser.Phaser.FX.Displacement
+import typings.phaser.Phaser.FX.Glow
+import typings.phaser.Phaser.FX.Gradient
+import typings.phaser.Phaser.FX.Pixelate
+import typings.phaser.Phaser.FX.Shadow
+import typings.phaser.Phaser.FX.Shine
+import typings.phaser.Phaser.FX.Vignette
+import typings.phaser.Phaser.FX.Wipe
 import typings.phaser.Phaser.Math.Vector2
 import typings.phaser.Phaser.Renderer.WebGL.Pipelines.PostFXPipeline
+import typings.phaser.Phaser.Renderer.WebGL.Pipelines.PreFXPipeline
 import typings.phaser.Phaser.Renderer.WebGL.WebGLPipeline
 import typings.phaser.Phaser.Textures.CanvasTexture
+import typings.phaser.Phaser.Textures.DynamicTexture
 import typings.phaser.Phaser.Textures.Frame
+import typings.phaser.Phaser.Types.GameObjects.DecomposeMatrixResults
 import typings.phaser.Phaser.Types.GameObjects.PathFollower.PathConfig
 import typings.phaser.Phaser.Types.Math.Vector2Like
 import typings.phaser.Phaser.Types.Math.Vector3Like
@@ -141,6 +158,7 @@ object Components {
       * 
       * Under WebGL only the following Blend Modes are available:
       * 
+      * * NORMAL
       * * ADD
       * * MULTIPLY
       * * SCREEN
@@ -155,7 +173,7 @@ object Components {
       * reasons try to be careful about the construction of your Scene and the frequency of which blend modes
       * are used.
       */
-    var blendMode: BlendModes | String = js.native
+    var blendMode: BlendModes | String | Double = js.native
     
     /**
       * Sets the Blend Mode being used by this Game Object.
@@ -164,6 +182,7 @@ object Components {
       * 
       * Under WebGL only the following Blend Modes are available:
       * 
+      * * NORMAL
       * * ADD
       * * MULTIPLY
       * * SCREEN
@@ -177,9 +196,10 @@ object Components {
       * on support. Blend Modes also cause a WebGL batch flush should it encounter a new blend mode. For these
       * reasons try to be careful about the construction of your Scene and the frequency in which blend modes
       * are used.
-      * @param value The BlendMode value. Either a string or a CONST.
+      * @param value The BlendMode value. Either a string, a CONST or a number.
       */
     def setBlendMode(value: String): this.type = js.native
+    def setBlendMode(value: Double): this.type = js.native
     def setBlendMode(value: BlendModes): this.type = js.native
   }
   
@@ -363,7 +383,7 @@ object Components {
   trait Depth extends StObject {
     
     /**
-      * The depth of this Game Object within the Scene.
+      * The depth of this Game Object within the Scene. Ensure this value is only ever set to a number data-type.
       * 
       * The depth is also known as the 'z-index' in some environments, and allows you to change the rendering order
       * of Game Objects, without actually moving their position in the display list.
@@ -385,7 +405,7 @@ object Components {
       * value will always render in front of one with a lower value.
       * 
       * Setting the depth will queue a depth sort event within the Scene.
-      * @param value The depth of this Game Object.
+      * @param value The depth of this Game Object. Ensure this value is only ever a number data-type.
       */
     def setDepth(value: Double): this.type
   }
@@ -403,6 +423,543 @@ object Components {
       
       inline def setSetDepth(value: Double => Depth): Self = StObject.set(x, "setDepth", js.Any.fromFunction1(value))
     }
+  }
+  
+  @js.native
+  trait FX extends StObject {
+    
+    /**
+      * Adds the given FX Controler to this FX Component.
+      * 
+      * Note that adding an FX Controller does not remove any existing FX. They all stack-up
+      * on-top of each other. If you don't want this, make sure to call either `remove` or
+      * `clear` first.
+      * @param fx The FX Controller to add to this FX Component.
+      * @param config Optional configuration object that is passed to the pipeline during instantiation.
+      */
+    def add[T /* <: Controller */](fx: T): Controller = js.native
+    def add[T /* <: Controller */](fx: T, config: js.Object): Controller = js.native
+    
+    /**
+      * Adds a Barrel effect.
+      * 
+      * A barrel effect allows you to apply either a 'pinch' or 'expand' distortion to
+      * a Game Object. The amount of the effect can be modified in real-time.
+      * @param amount The amount of distortion applied to the barrel effect. A value of 1 is no distortion. Typically keep this within +- 1. Default 1.
+      */
+    def addBarrel(): Barrel = js.native
+    def addBarrel(amount: Double): Barrel = js.native
+    
+    /**
+      * Adds a Bloom effect.
+      * 
+      * Bloom is an effect used to reproduce an imaging artifact of real-world cameras.
+      * The effect produces fringes of light extending from the borders of bright areas in an image,
+      * contributing to the illusion of an extremely bright light overwhelming the
+      * camera or eye capturing the scene.
+      * @param color The color of the Bloom, as a hex value.
+      * @param offsetX The horizontal offset of the bloom effect. Default 1.
+      * @param offsetY The vertical offset of the bloom effect. Default 1.
+      * @param blurStrength The strength of the blur process of the bloom effect. Default 1.
+      * @param strength The strength of the blend process of the bloom effect. Default 1.
+      * @param steps The number of steps to run the Bloom effect for. This value should always be an integer. Default 4.
+      */
+    def addBloom(
+      color: js.UndefOr[Double],
+      offsetX: js.UndefOr[Double],
+      offsetY: js.UndefOr[Double],
+      blurStrength: js.UndefOr[Double],
+      strength: js.UndefOr[Double],
+      steps: js.UndefOr[Double]
+    ): Bloom = js.native
+    
+    /**
+      * Adds a Blur effect.
+      * 
+      * A Gaussian blur is the result of blurring an image by a Gaussian function. It is a widely used effect,
+      * typically to reduce image noise and reduce detail. The visual effect of this blurring technique is a
+      * smooth blur resembling that of viewing the image through a translucent screen, distinctly different
+      * from the bokeh effect produced by an out-of-focus lens or the shadow of an object under usual illumination.
+      * @param quality The quality of the blur effect. Can be either 0 for Low Quality, 1 for Medium Quality or 2 for High Quality. Default 0.
+      * @param x The horizontal offset of the blur effect. Default 2.
+      * @param y The vertical offset of the blur effect. Default 2.
+      * @param strength The strength of the blur effect. Default 1.
+      * @param color The color of the blur, as a hex value. Default 0xffffff.
+      * @param steps The number of steps to run the blur effect for. This value should always be an integer. Default 4.
+      */
+    def addBlur(
+      quality: js.UndefOr[Double],
+      x: js.UndefOr[Double],
+      y: js.UndefOr[Double],
+      strength: js.UndefOr[Double],
+      color: js.UndefOr[Double],
+      steps: js.UndefOr[Double]
+    ): Blur = js.native
+    
+    /**
+      * Adds a Bokeh effect.
+      * 
+      * Bokeh refers to a visual effect that mimics the photographic technique of creating a shallow depth of field.
+      * This effect is used to emphasize the game's main subject or action, by blurring the background or foreground
+      * elements, resulting in a more immersive and visually appealing experience. It is achieved through rendering
+      * techniques that simulate the out-of-focus areas, giving a sense of depth and realism to the game's graphics.
+      * 
+      * See also Tilt Shift.
+      * @param radius The radius of the bokeh effect. Default 0.5.
+      * @param amount The amount of the bokeh effect. Default 1.
+      * @param contrast The color contrast of the bokeh effect. Default 0.2.
+      */
+    def addBokeh(): Bokeh = js.native
+    def addBokeh(radius: Double): Bokeh = js.native
+    def addBokeh(radius: Double, amount: Double): Bokeh = js.native
+    def addBokeh(radius: Double, amount: Double, contrast: Double): Bokeh = js.native
+    def addBokeh(radius: Double, amount: Unit, contrast: Double): Bokeh = js.native
+    def addBokeh(radius: Unit, amount: Double): Bokeh = js.native
+    def addBokeh(radius: Unit, amount: Double, contrast: Double): Bokeh = js.native
+    def addBokeh(radius: Unit, amount: Unit, contrast: Double): Bokeh = js.native
+    
+    /**
+      * Adds a Circle effect.
+      * 
+      * This effect will draw a circle around the texture of the Game Object, effectively masking off
+      * any area outside of the circle without the need for an actual mask. You can control the thickness
+      * of the circle, the color of the circle and the color of the background, should the texture be
+      * transparent. You can also control the feathering applied to the circle, allowing for a harsh or soft edge.
+      * 
+      * Please note that adding this effect to a Game Object will not change the input area or physics body of
+      * the Game Object, should it have one.
+      * @param thickness The width of the circle around the texture, in pixels. Default 8.
+      * @param color The color of the circular ring, given as a number value. Default 0xfeedb6.
+      * @param backgroundColor The color of the background, behind the texture, given as a number value. Default 0xff0000.
+      * @param scale The scale of the circle. The default scale is 1, which is a circle the full size of the underlying texture. Default 1.
+      * @param feather The amount of feathering to apply to the circle from the ring. Default 0.005.
+      */
+    def addCircle(): Circle = js.native
+    def addCircle(thickness: Double): Circle = js.native
+    def addCircle(thickness: Double, color: Double): Circle = js.native
+    def addCircle(thickness: Double, color: Double, backgroundColor: Double): Circle = js.native
+    def addCircle(thickness: Double, color: Double, backgroundColor: Double, scale: Double): Circle = js.native
+    def addCircle(thickness: Double, color: Double, backgroundColor: Double, scale: Double, feather: Double): Circle = js.native
+    def addCircle(thickness: Double, color: Double, backgroundColor: Double, scale: Unit, feather: Double): Circle = js.native
+    def addCircle(thickness: Double, color: Double, backgroundColor: Unit, scale: Double): Circle = js.native
+    def addCircle(thickness: Double, color: Double, backgroundColor: Unit, scale: Double, feather: Double): Circle = js.native
+    def addCircle(thickness: Double, color: Double, backgroundColor: Unit, scale: Unit, feather: Double): Circle = js.native
+    def addCircle(thickness: Double, color: Unit, backgroundColor: Double): Circle = js.native
+    def addCircle(thickness: Double, color: Unit, backgroundColor: Double, scale: Double): Circle = js.native
+    def addCircle(thickness: Double, color: Unit, backgroundColor: Double, scale: Double, feather: Double): Circle = js.native
+    def addCircle(thickness: Double, color: Unit, backgroundColor: Double, scale: Unit, feather: Double): Circle = js.native
+    def addCircle(thickness: Double, color: Unit, backgroundColor: Unit, scale: Double): Circle = js.native
+    def addCircle(thickness: Double, color: Unit, backgroundColor: Unit, scale: Double, feather: Double): Circle = js.native
+    def addCircle(thickness: Double, color: Unit, backgroundColor: Unit, scale: Unit, feather: Double): Circle = js.native
+    def addCircle(thickness: Unit, color: Double): Circle = js.native
+    def addCircle(thickness: Unit, color: Double, backgroundColor: Double): Circle = js.native
+    def addCircle(thickness: Unit, color: Double, backgroundColor: Double, scale: Double): Circle = js.native
+    def addCircle(thickness: Unit, color: Double, backgroundColor: Double, scale: Double, feather: Double): Circle = js.native
+    def addCircle(thickness: Unit, color: Double, backgroundColor: Double, scale: Unit, feather: Double): Circle = js.native
+    def addCircle(thickness: Unit, color: Double, backgroundColor: Unit, scale: Double): Circle = js.native
+    def addCircle(thickness: Unit, color: Double, backgroundColor: Unit, scale: Double, feather: Double): Circle = js.native
+    def addCircle(thickness: Unit, color: Double, backgroundColor: Unit, scale: Unit, feather: Double): Circle = js.native
+    def addCircle(thickness: Unit, color: Unit, backgroundColor: Double): Circle = js.native
+    def addCircle(thickness: Unit, color: Unit, backgroundColor: Double, scale: Double): Circle = js.native
+    def addCircle(thickness: Unit, color: Unit, backgroundColor: Double, scale: Double, feather: Double): Circle = js.native
+    def addCircle(thickness: Unit, color: Unit, backgroundColor: Double, scale: Unit, feather: Double): Circle = js.native
+    def addCircle(thickness: Unit, color: Unit, backgroundColor: Unit, scale: Double): Circle = js.native
+    def addCircle(thickness: Unit, color: Unit, backgroundColor: Unit, scale: Double, feather: Double): Circle = js.native
+    def addCircle(thickness: Unit, color: Unit, backgroundColor: Unit, scale: Unit, feather: Double): Circle = js.native
+    
+    /**
+      * Adds a ColorMatrix effect.
+      * 
+      * The color matrix effect is a visual technique that involves manipulating the colors of an image
+      * or scene using a mathematical matrix. This process can adjust hue, saturation, brightness, and contrast,
+      * allowing developers to create various stylistic appearances or mood settings within the game.
+      * Common applications include simulating different lighting conditions, applying color filters,
+      * or achieving a specific visual style.
+      */
+    def addColorMatrix(): ColorMatrix = js.native
+    
+    /**
+      * Adds a Displacement effect.
+      * 
+      * The displacement effect is a visual technique that alters the position of pixels in an image
+      * or texture based on the values of a displacement map. This effect is used to create the illusion
+      * of depth, surface irregularities, or distortion in otherwise flat elements. It can be applied to
+      * characters, objects, or backgrounds to enhance realism, convey movement, or achieve various
+      * stylistic appearances.
+      * @param texture The unique string-based key of the texture to use for displacement, which must exist in the Texture Manager. Default '__WHITE'.
+      * @param x The amount of horizontal displacement to apply. A very small float number, such as 0.005. Default 0.005.
+      * @param y The amount of vertical displacement to apply. A very small float number, such as 0.005. Default 0.005.
+      */
+    def addDisplacement(): Displacement = js.native
+    def addDisplacement(texture: String): Displacement = js.native
+    def addDisplacement(texture: String, x: Double): Displacement = js.native
+    def addDisplacement(texture: String, x: Double, y: Double): Displacement = js.native
+    def addDisplacement(texture: String, x: Unit, y: Double): Displacement = js.native
+    def addDisplacement(texture: Unit, x: Double): Displacement = js.native
+    def addDisplacement(texture: Unit, x: Double, y: Double): Displacement = js.native
+    def addDisplacement(texture: Unit, x: Unit, y: Double): Displacement = js.native
+    
+    /**
+      * Adds a Glow effect.
+      * 
+      * The glow effect is a visual technique that creates a soft, luminous halo around game objects,
+      * characters, or UI elements. This effect is used to emphasize importance, enhance visual appeal,
+      * or convey a sense of energy, magic, or otherworldly presence. The effect can also be set on
+      * the inside of the Game Object. The color and strength of the glow can be modified.
+      * @param color The color of the glow effect as a number value. Default 0xffffff.
+      * @param outerStrength The strength of the glow outward from the edge of the Sprite. Default 4.
+      * @param innerStrength The strength of the glow inward from the edge of the Sprite. Default 0.
+      * @param knockout If `true` only the glow is drawn, not the texture itself. Default false.
+      * @param quality Only available for PostFX. Sets the quality of this Glow effect. Default is 0.1. Cannot be changed post-creation. Default 0.1.
+      * @param distance Only available for PostFX. Sets the distance of this Glow effect. Default is 10. Cannot be changed post-creation. Default 10.
+      */
+    def addGlow(
+      color: js.UndefOr[Double],
+      outerStrength: js.UndefOr[Double],
+      innerStrength: js.UndefOr[Double],
+      knockout: js.UndefOr[Boolean],
+      quality: js.UndefOr[Double],
+      distance: js.UndefOr[Double]
+    ): Glow = js.native
+    
+    /**
+      * Adds a Gradient effect.
+      * 
+      * The gradient overlay effect is a visual technique where a smooth color transition is applied over Game Objects,
+      * such as sprites or UI components. This effect is used to enhance visual appeal, emphasize depth, or create
+      * stylistic and atmospheric variations. It can also be utilized to convey information, such as representing
+      * progress or health status through color changes.
+      * @param color1 The first gradient color, given as a number value. Default 0xff0000.
+      * @param color2 The second gradient color, given as a number value. Default 0x00ff00.
+      * @param alpha The alpha value of the gradient effect. Default 0.2.
+      * @param fromX The horizontal position the gradient will start from. This value is noralized, between 0 and 1 and is not in pixels. Default 0.
+      * @param fromY The vertical position the gradient will start from. This value is noralized, between 0 and 1 and is not in pixels. Default 0.
+      * @param toX The horizontal position the gradient will end at. This value is noralized, between 0 and 1 and is not in pixels. Default 0.
+      * @param toY The vertical position the gradient will end at. This value is noralized, between 0 and 1 and is not in pixels. Default 1.
+      * @param size How many 'chunks' the gradient is divided in to, as spread over the entire height of the texture. Leave this at zero for a smooth gradient, or set higher for a more retro chunky effect. Default 0.
+      */
+    def addGradient(
+      color1: js.UndefOr[Double],
+      color2: js.UndefOr[Double],
+      alpha: js.UndefOr[Double],
+      fromX: js.UndefOr[Double],
+      fromY: js.UndefOr[Double],
+      toX: js.UndefOr[Double],
+      toY: js.UndefOr[Double],
+      size: js.UndefOr[Double]
+    ): Gradient = js.native
+    
+    /**
+      * Adds a Pixelate effect.
+      * 
+      * The pixelate effect is a visual technique that deliberately reduces the resolution or detail of an image,
+      * creating a blocky or mosaic appearance composed of large, visible pixels. This effect can be used for stylistic
+      * purposes, as a homage to retro gaming, or as a means to obscure certain elements within the game, such as
+      * during a transition or to censor specific content.
+      * @param amount The amount of pixelation to apply. Default 1.
+      */
+    def addPixelate(): Pixelate = js.native
+    def addPixelate(amount: Double): Pixelate = js.native
+    
+    /**
+      * Adds a Reveal Wipe effect.
+      * 
+      * The wipe or reveal effect is a visual technique that gradually uncovers or conceals elements
+      * in the game, such as images, text, or scene transitions. This effect is often used to create
+      * a sense of progression, reveal hidden content, or provide a smooth and visually appealing transition
+      * between game states.
+      * 
+      * You can set both the direction and the axis of the wipe effect. The following combinations are possible:
+      * 
+      * * left to right: direction 0, axis 0
+      * * right to left: direction 1, axis 0
+      * * top to bottom: direction 1, axis 1
+      * * bottom to top: direction 1, axis 0
+      * 
+      * It is up to you to set the `progress` value yourself, i.e. via a Tween, in order to transition the effect.
+      * @param wipeWidth The width of the wipe effect. This value is normalized in the range 0 to 1. Default 0.1.
+      * @param direction The direction of the wipe effect. Either 0 or 1. Set in conjunction with the axis property. Default 0.
+      * @param axis The axis of the wipe effect. Either 0 or 1. Set in conjunction with the direction property. Default 0.
+      */
+    def addReveal(): Wipe = js.native
+    def addReveal(wipeWidth: Double): Wipe = js.native
+    def addReveal(wipeWidth: Double, direction: Double): Wipe = js.native
+    def addReveal(wipeWidth: Double, direction: Double, axis: Double): Wipe = js.native
+    def addReveal(wipeWidth: Double, direction: Unit, axis: Double): Wipe = js.native
+    def addReveal(wipeWidth: Unit, direction: Double): Wipe = js.native
+    def addReveal(wipeWidth: Unit, direction: Double, axis: Double): Wipe = js.native
+    def addReveal(wipeWidth: Unit, direction: Unit, axis: Double): Wipe = js.native
+    
+    /**
+      * Adds a Shadow effect.
+      * 
+      * The shadow effect is a visual technique used to create the illusion of depth and realism by adding darker,
+      * offset silhouettes or shapes beneath game objects, characters, or environments. These simulated shadows
+      * help to enhance the visual appeal and immersion, making the 2D game world appear more dynamic and three-dimensional.
+      * @param x The horizontal offset of the shadow effect. Default 0.
+      * @param y The vertical offset of the shadow effect. Default 0.
+      * @param decay The amount of decay for shadow effect. Default 0.1.
+      * @param power The power of the shadow effect. Default 1.
+      * @param color The color of the shadow. Default 0x000000.
+      * @param samples The number of samples that the shadow effect will run for. An integer between 1 and 12. Default 6.
+      * @param intensity The intensity of the shadow effect. Default 1.
+      */
+    def addShadow(
+      x: js.UndefOr[Double],
+      y: js.UndefOr[Double],
+      decay: js.UndefOr[Double],
+      power: js.UndefOr[Double],
+      color: js.UndefOr[Double],
+      samples: js.UndefOr[Double],
+      intensity: js.UndefOr[Double]
+    ): Shadow = js.native
+    
+    /**
+      * Adds a Shine effect.
+      * 
+      * The shine effect is a visual technique that simulates the appearance of reflective
+      * or glossy surfaces by passing a light beam across a Game Object. This effect is used to
+      * enhance visual appeal, emphasize certain features, and create a sense of depth or
+      * material properties.
+      * @param speed The speed of the Shine effect. Default 0.5.
+      * @param lineWidth The line width of the Shine effect. Default 0.5.
+      * @param gradient The gradient of the Shine effect. Default 3.
+      * @param reveal Does this Shine effect reveal or get added to its target? Default false.
+      */
+    def addShine(): Shine = js.native
+    def addShine(speed: Double): Shine = js.native
+    def addShine(speed: Double, lineWidth: Double): Shine = js.native
+    def addShine(speed: Double, lineWidth: Double, gradient: Double): Shine = js.native
+    def addShine(speed: Double, lineWidth: Double, gradient: Double, reveal: Boolean): Shine = js.native
+    def addShine(speed: Double, lineWidth: Double, gradient: Unit, reveal: Boolean): Shine = js.native
+    def addShine(speed: Double, lineWidth: Unit, gradient: Double): Shine = js.native
+    def addShine(speed: Double, lineWidth: Unit, gradient: Double, reveal: Boolean): Shine = js.native
+    def addShine(speed: Double, lineWidth: Unit, gradient: Unit, reveal: Boolean): Shine = js.native
+    def addShine(speed: Unit, lineWidth: Double): Shine = js.native
+    def addShine(speed: Unit, lineWidth: Double, gradient: Double): Shine = js.native
+    def addShine(speed: Unit, lineWidth: Double, gradient: Double, reveal: Boolean): Shine = js.native
+    def addShine(speed: Unit, lineWidth: Double, gradient: Unit, reveal: Boolean): Shine = js.native
+    def addShine(speed: Unit, lineWidth: Unit, gradient: Double): Shine = js.native
+    def addShine(speed: Unit, lineWidth: Unit, gradient: Double, reveal: Boolean): Shine = js.native
+    def addShine(speed: Unit, lineWidth: Unit, gradient: Unit, reveal: Boolean): Shine = js.native
+    
+    /**
+      * Adds a Tilt Shift effect.
+      * 
+      * This Bokeh effect can also be used to generate a Tilt Shift effect, which is a technique used to create a miniature
+      * effect by blurring everything except a small area of the image. This effect is achieved by blurring the
+      * top and bottom elements, while keeping the center area in focus.
+      * 
+      * See also Bokeh.
+      * @param radius The radius of the bokeh effect. Default 0.5.
+      * @param amount The amount of the bokeh effect. Default 1.
+      * @param contrast The color contrast of the bokeh effect. Default 0.2.
+      * @param blurX The amount of horizontal blur. Default 1.
+      * @param blurY The amount of vertical blur. Default 1.
+      * @param strength The strength of the blur. Default 1.
+      */
+    def addTiltShift(
+      radius: js.UndefOr[Double],
+      amount: js.UndefOr[Double],
+      contrast: js.UndefOr[Double],
+      blurX: js.UndefOr[Double],
+      blurY: js.UndefOr[Double],
+      strength: js.UndefOr[Double]
+    ): Bokeh = js.native
+    
+    /**
+      * Adds a Vignette effect.
+      * 
+      * The vignette effect is a visual technique where the edges of the screen, or a Game Object, gradually darken or blur,
+      * creating a frame-like appearance. This effect is used to draw the player's focus towards the central action or subject,
+      * enhance immersion, and provide a cinematic or artistic quality to the game's visuals.
+      * @param x The horizontal offset of the vignette effect. This value is normalized to the range 0 to 1. Default 0.5.
+      * @param y The vertical offset of the vignette effect. This value is normalized to the range 0 to 1. Default 0.5.
+      * @param radius The radius of the vignette effect. This value is normalized to the range 0 to 1. Default 0.5.
+      * @param strength The strength of the vignette effect. Default 0.5.
+      */
+    def addVignette(): Vignette = js.native
+    def addVignette(x: Double): Vignette = js.native
+    def addVignette(x: Double, y: Double): Vignette = js.native
+    def addVignette(x: Double, y: Double, radius: Double): Vignette = js.native
+    def addVignette(x: Double, y: Double, radius: Double, strength: Double): Vignette = js.native
+    def addVignette(x: Double, y: Double, radius: Unit, strength: Double): Vignette = js.native
+    def addVignette(x: Double, y: Unit, radius: Double): Vignette = js.native
+    def addVignette(x: Double, y: Unit, radius: Double, strength: Double): Vignette = js.native
+    def addVignette(x: Double, y: Unit, radius: Unit, strength: Double): Vignette = js.native
+    def addVignette(x: Unit, y: Double): Vignette = js.native
+    def addVignette(x: Unit, y: Double, radius: Double): Vignette = js.native
+    def addVignette(x: Unit, y: Double, radius: Double, strength: Double): Vignette = js.native
+    def addVignette(x: Unit, y: Double, radius: Unit, strength: Double): Vignette = js.native
+    def addVignette(x: Unit, y: Unit, radius: Double): Vignette = js.native
+    def addVignette(x: Unit, y: Unit, radius: Double, strength: Double): Vignette = js.native
+    def addVignette(x: Unit, y: Unit, radius: Unit, strength: Double): Vignette = js.native
+    
+    /**
+      * Adds a Wipe effect.
+      * 
+      * The wipe or reveal effect is a visual technique that gradually uncovers or conceals elements
+      * in the game, such as images, text, or scene transitions. This effect is often used to create
+      * a sense of progression, reveal hidden content, or provide a smooth and visually appealing transition
+      * between game states.
+      * 
+      * You can set both the direction and the axis of the wipe effect. The following combinations are possible:
+      * 
+      * * left to right: direction 0, axis 0
+      * * right to left: direction 1, axis 0
+      * * top to bottom: direction 1, axis 1
+      * * bottom to top: direction 1, axis 0
+      * 
+      * It is up to you to set the `progress` value yourself, i.e. via a Tween, in order to transition the effect.
+      * @param wipeWidth The width of the wipe effect. This value is normalized in the range 0 to 1. Default 0.1.
+      * @param direction The direction of the wipe effect. Either 0 or 1. Set in conjunction with the axis property. Default 0.
+      * @param axis The axis of the wipe effect. Either 0 or 1. Set in conjunction with the direction property. Default 0.
+      */
+    def addWipe(): Wipe = js.native
+    def addWipe(wipeWidth: Double): Wipe = js.native
+    def addWipe(wipeWidth: Double, direction: Double): Wipe = js.native
+    def addWipe(wipeWidth: Double, direction: Double, axis: Double): Wipe = js.native
+    def addWipe(wipeWidth: Double, direction: Unit, axis: Double): Wipe = js.native
+    def addWipe(wipeWidth: Unit, direction: Double): Wipe = js.native
+    def addWipe(wipeWidth: Unit, direction: Double, axis: Double): Wipe = js.native
+    def addWipe(wipeWidth: Unit, direction: Unit, axis: Double): Wipe = js.native
+    
+    /**
+      * Destroys and removes all FX Controllers that are part of this FX Component,
+      * then disables it.
+      * 
+      * If this is a Pre FX Component it will only remove Pre FX.
+      * If this is a Post FX Component it will only remove Post FX.
+      * 
+      * To remove both at once use the `GameObject.clearFX` method instead.
+      */
+    def clear(): this.type = js.native
+    
+    /**
+      * Destroys this FX Component.
+      * 
+      * Called automatically when Game Objects are destroyed.
+      */
+    def destroy(): Unit = js.native
+    
+    /**
+      * Disables this FX Component.
+      * 
+      * This will reset the pipeline on the Game Object that owns this component back to its
+      * default and flag this component as disabled.
+      * 
+      * You can re-enable it again by calling `enable` for Pre FX or by adding an FX for Post FX.
+      * 
+      * Optionally, set `clear` to destroy all current FX Controllers.
+      * @param clear Destroy and remove all FX Controllers that are part of this component. Default false.
+      */
+    def disable(): this.type = js.native
+    def disable(clear: Boolean): this.type = js.native
+    
+    /**
+      * Enables this FX Component and applies the FXPipeline to the parent Game Object.
+      * 
+      * This is called automatically whenever you call a method such as `addBloom`, etc.
+      * 
+      * You can check the `enabled` property to see if the Game Object is already enabled, or not.
+      * 
+      * This only applies to Pre FX. Post FX are always enabled.
+      * @param padding The amount of padding to add to this Game Object. Default 0.
+      */
+    def enable(): Unit = js.native
+    def enable(padding: Double): Unit = js.native
+    
+    /**
+      * Has this FX Component been enabled?
+      * 
+      * You should treat this property as read-only, although it is toggled
+      * automaticaly during internal use.
+      */
+    var enabled: Boolean = js.native
+    
+    /**
+      * A reference to the Game Object that owns this FX Component.
+      */
+    val gameObject: GameObject = js.native
+    
+    /**
+      * Is this a Post FX Controller? or a Pre FX Controller?
+      */
+    val isPost: Boolean = js.native
+    
+    /**
+      * An array containing all of the Pre FX Controllers that
+      * have been added to this FX Component. They are processed in
+      * the order they are added.
+      * 
+      * This array is empty if this is a Post FX Component.
+      */
+    var list: js.Array[Controller] = js.native
+    
+    /**
+      * This callback is invoked when this Game Object is rendered by a PreFX Pipeline.
+      * 
+      * This happens when the pipeline uses its `drawSprite` method.
+      * 
+      * It's invoked prior to the draw, allowing you to set shader uniforms, etc on the pipeline.
+      * @param pipeline The PreFX Pipeline that invoked this callback.
+      */
+    def onFX(pipeline: PreFXPipeline): Unit = js.native
+    
+    /**
+      * This callback is invoked when this Game Object is copied by a PreFX Pipeline.
+      * 
+      * This happens when the pipeline uses its `copySprite` method.
+      * 
+      * It's invoked prior to the copy, allowing you to set shader uniforms, etc on the pipeline.
+      * @param pipeline The PreFX Pipeline that invoked this callback.
+      */
+    def onFXCopy(pipeline: PreFXPipeline): Unit = js.native
+    
+    /**
+      * The amount of extra padding to be applied to this Game Object
+      * when it is being rendered by a PreFX Pipeline.
+      * 
+      * Lots of FX require additional spacing added to the texture the
+      * Game Object uses, for example a glow or shadow effect, and this
+      * method allows you to control how much extra padding is included
+      * in addition to the texture size.
+      * 
+      * You do not need to set this if you're only using Post FX.
+      */
+    var padding: Double = js.native
+    
+    /**
+      * Searches for the given FX Controller within this FX Component.
+      * 
+      * If found, the controller is removed from this component and then destroyed.
+      * @param fx The FX Controller to remove from this FX Component.
+      */
+    def remove[T /* <: Controller */](fx: T): this.type = js.native
+    
+    /**
+      * Sets the amount of extra padding to be applied to this Game Object
+      * when it is being rendered by a PreFX Pipeline.
+      * 
+      * Lots of FX require additional spacing added to the texture the
+      * Game Object uses, for example a glow or shadow effect, and this
+      * method allows you to control how much extra padding is included
+      * in addition to the texture size.
+      * 
+      * You do not need to set this if you're only using Post FX.
+      * @param padding The amount of padding to add to this Game Object. Default 0.
+      */
+    def setPadding(): this.type = js.native
+    def setPadding(padding: Double): this.type = js.native
+    
+    /**
+      * Sets the Texture to be used for the displacement effect.
+      * 
+      * You can only use a whole texture, not a frame from a texture atlas or sprite sheet.
+      * @param texture The unique string-based key of the texture to use for displacement, which must exist in the Texture Manager. Default '__WHITE'.
+      */
+    def setTexture(): this.type = js.native
+    def setTexture(texture: String): this.type = js.native
   }
   
   /**
@@ -521,39 +1078,46 @@ object Components {
     
     /**
       * Gets the bottom-center coordinate of this Game Object, regardless of origin.
-      * The returned point is calculated in local space and does not factor in any parent containers
+      * 
+      * The returned point is calculated in local space and does not factor in any parent Containers,
+      * unless the `includeParent` argument is set to `true`.
       * @param output An object to store the values in. If not provided a new Vector2 will be created.
       * @param includeParent If this Game Object has a parent Container, include it (and all other ancestors) in the resulting vector? Default false.
       */
-    def getBottomCenter[O /* <: Vector2 */](): O = js.native
-    def getBottomCenter[O /* <: Vector2 */](output: O): O = js.native
-    def getBottomCenter[O /* <: Vector2 */](output: O, includeParent: Boolean): O = js.native
-    def getBottomCenter[O /* <: Vector2 */](output: Unit, includeParent: Boolean): O = js.native
+    def getBottomCenter[O /* <: Vector2Like */](): O = js.native
+    def getBottomCenter[O /* <: Vector2Like */](output: O): O = js.native
+    def getBottomCenter[O /* <: Vector2Like */](output: O, includeParent: Boolean): O = js.native
+    def getBottomCenter[O /* <: Vector2Like */](output: Unit, includeParent: Boolean): O = js.native
     
     /**
       * Gets the bottom-left corner coordinate of this Game Object, regardless of origin.
-      * The returned point is calculated in local space and does not factor in any parent containers
+      * 
+      * The returned point is calculated in local space and does not factor in any parent Containers,
+      * unless the `includeParent` argument is set to `true`.
       * @param output An object to store the values in. If not provided a new Vector2 will be created.
       * @param includeParent If this Game Object has a parent Container, include it (and all other ancestors) in the resulting vector? Default false.
       */
-    def getBottomLeft[O /* <: Vector2 */](): O = js.native
-    def getBottomLeft[O /* <: Vector2 */](output: O): O = js.native
-    def getBottomLeft[O /* <: Vector2 */](output: O, includeParent: Boolean): O = js.native
-    def getBottomLeft[O /* <: Vector2 */](output: Unit, includeParent: Boolean): O = js.native
+    def getBottomLeft[O /* <: Vector2Like */](): O = js.native
+    def getBottomLeft[O /* <: Vector2Like */](output: O): O = js.native
+    def getBottomLeft[O /* <: Vector2Like */](output: O, includeParent: Boolean): O = js.native
+    def getBottomLeft[O /* <: Vector2Like */](output: Unit, includeParent: Boolean): O = js.native
     
     /**
       * Gets the bottom-right corner coordinate of this Game Object, regardless of origin.
-      * The returned point is calculated in local space and does not factor in any parent containers
+      * 
+      * The returned point is calculated in local space and does not factor in any parent Containers,
+      * unless the `includeParent` argument is set to `true`.
       * @param output An object to store the values in. If not provided a new Vector2 will be created.
       * @param includeParent If this Game Object has a parent Container, include it (and all other ancestors) in the resulting vector? Default false.
       */
-    def getBottomRight[O /* <: Vector2 */](): O = js.native
-    def getBottomRight[O /* <: Vector2 */](output: O): O = js.native
-    def getBottomRight[O /* <: Vector2 */](output: O, includeParent: Boolean): O = js.native
-    def getBottomRight[O /* <: Vector2 */](output: Unit, includeParent: Boolean): O = js.native
+    def getBottomRight[O /* <: Vector2Like */](): O = js.native
+    def getBottomRight[O /* <: Vector2Like */](output: O): O = js.native
+    def getBottomRight[O /* <: Vector2Like */](output: O, includeParent: Boolean): O = js.native
+    def getBottomRight[O /* <: Vector2Like */](output: Unit, includeParent: Boolean): O = js.native
     
     /**
       * Gets the bounds of this Game Object, regardless of origin.
+      * 
       * The values are stored and returned in a Rectangle, or Rectangle-like, object.
       * @param output An object to store the values in. If not provided a new Rectangle will be created.
       */
@@ -562,66 +1126,81 @@ object Components {
     
     /**
       * Gets the center coordinate of this Game Object, regardless of origin.
-      * The returned point is calculated in local space and does not factor in any parent containers
+      * 
+      * The returned point is calculated in local space and does not factor in any parent Containers,
+      * unless the `includeParent` argument is set to `true`.
       * @param output An object to store the values in. If not provided a new Vector2 will be created.
+      * @param includeParent If this Game Object has a parent Container, include it (and all other ancestors) in the resulting vector? Default false.
       */
-    def getCenter[O /* <: Vector2 */](): O = js.native
-    def getCenter[O /* <: Vector2 */](output: O): O = js.native
+    def getCenter[O /* <: Vector2Like */](): O = js.native
+    def getCenter[O /* <: Vector2Like */](output: O): O = js.native
+    def getCenter[O /* <: Vector2Like */](output: O, includeParent: Boolean): O = js.native
+    def getCenter[O /* <: Vector2Like */](output: Unit, includeParent: Boolean): O = js.native
     
     /**
       * Gets the left-center coordinate of this Game Object, regardless of origin.
-      * The returned point is calculated in local space and does not factor in any parent containers
+      * 
+      * The returned point is calculated in local space and does not factor in any parent Containers,
+      * unless the `includeParent` argument is set to `true`.
       * @param output An object to store the values in. If not provided a new Vector2 will be created.
       * @param includeParent If this Game Object has a parent Container, include it (and all other ancestors) in the resulting vector? Default false.
       */
-    def getLeftCenter[O /* <: Vector2 */](): O = js.native
-    def getLeftCenter[O /* <: Vector2 */](output: O): O = js.native
-    def getLeftCenter[O /* <: Vector2 */](output: O, includeParent: Boolean): O = js.native
-    def getLeftCenter[O /* <: Vector2 */](output: Unit, includeParent: Boolean): O = js.native
+    def getLeftCenter[O /* <: Vector2Like */](): O = js.native
+    def getLeftCenter[O /* <: Vector2Like */](output: O): O = js.native
+    def getLeftCenter[O /* <: Vector2Like */](output: O, includeParent: Boolean): O = js.native
+    def getLeftCenter[O /* <: Vector2Like */](output: Unit, includeParent: Boolean): O = js.native
     
     /**
       * Gets the right-center coordinate of this Game Object, regardless of origin.
-      * The returned point is calculated in local space and does not factor in any parent containers
+      * 
+      * The returned point is calculated in local space and does not factor in any parent Containers,
+      * unless the `includeParent` argument is set to `true`.
       * @param output An object to store the values in. If not provided a new Vector2 will be created.
       * @param includeParent If this Game Object has a parent Container, include it (and all other ancestors) in the resulting vector? Default false.
       */
-    def getRightCenter[O /* <: Vector2 */](): O = js.native
-    def getRightCenter[O /* <: Vector2 */](output: O): O = js.native
-    def getRightCenter[O /* <: Vector2 */](output: O, includeParent: Boolean): O = js.native
-    def getRightCenter[O /* <: Vector2 */](output: Unit, includeParent: Boolean): O = js.native
+    def getRightCenter[O /* <: Vector2Like */](): O = js.native
+    def getRightCenter[O /* <: Vector2Like */](output: O): O = js.native
+    def getRightCenter[O /* <: Vector2Like */](output: O, includeParent: Boolean): O = js.native
+    def getRightCenter[O /* <: Vector2Like */](output: Unit, includeParent: Boolean): O = js.native
     
     /**
       * Gets the top-center coordinate of this Game Object, regardless of origin.
-      * The returned point is calculated in local space and does not factor in any parent containers
+      * 
+      * The returned point is calculated in local space and does not factor in any parent Containers,
+      * unless the `includeParent` argument is set to `true`.
       * @param output An object to store the values in. If not provided a new Vector2 will be created.
       * @param includeParent If this Game Object has a parent Container, include it (and all other ancestors) in the resulting vector? Default false.
       */
-    def getTopCenter[O /* <: Vector2 */](): O = js.native
-    def getTopCenter[O /* <: Vector2 */](output: O): O = js.native
-    def getTopCenter[O /* <: Vector2 */](output: O, includeParent: Boolean): O = js.native
-    def getTopCenter[O /* <: Vector2 */](output: Unit, includeParent: Boolean): O = js.native
+    def getTopCenter[O /* <: Vector2Like */](): O = js.native
+    def getTopCenter[O /* <: Vector2Like */](output: O): O = js.native
+    def getTopCenter[O /* <: Vector2Like */](output: O, includeParent: Boolean): O = js.native
+    def getTopCenter[O /* <: Vector2Like */](output: Unit, includeParent: Boolean): O = js.native
     
     /**
       * Gets the top-left corner coordinate of this Game Object, regardless of origin.
-      * The returned point is calculated in local space and does not factor in any parent containers
+      * 
+      * The returned point is calculated in local space and does not factor in any parent Containers,
+      * unless the `includeParent` argument is set to `true`.
       * @param output An object to store the values in. If not provided a new Vector2 will be created.
       * @param includeParent If this Game Object has a parent Container, include it (and all other ancestors) in the resulting vector? Default false.
       */
-    def getTopLeft[O /* <: Vector2 */](): O = js.native
-    def getTopLeft[O /* <: Vector2 */](output: O): O = js.native
-    def getTopLeft[O /* <: Vector2 */](output: O, includeParent: Boolean): O = js.native
-    def getTopLeft[O /* <: Vector2 */](output: Unit, includeParent: Boolean): O = js.native
+    def getTopLeft[O /* <: Vector2Like */](): O = js.native
+    def getTopLeft[O /* <: Vector2Like */](output: O): O = js.native
+    def getTopLeft[O /* <: Vector2Like */](output: O, includeParent: Boolean): O = js.native
+    def getTopLeft[O /* <: Vector2Like */](output: Unit, includeParent: Boolean): O = js.native
     
     /**
       * Gets the top-right corner coordinate of this Game Object, regardless of origin.
-      * The returned point is calculated in local space and does not factor in any parent containers
+      * 
+      * The returned point is calculated in local space and does not factor in any parent Containers,
+      * unless the `includeParent` argument is set to `true`.
       * @param output An object to store the values in. If not provided a new Vector2 will be created.
       * @param includeParent If this Game Object has a parent Container, include it (and all other ancestors) in the resulting vector? Default false.
       */
-    def getTopRight[O /* <: Vector2 */](): O = js.native
-    def getTopRight[O /* <: Vector2 */](output: O): O = js.native
-    def getTopRight[O /* <: Vector2 */](output: O, includeParent: Boolean): O = js.native
-    def getTopRight[O /* <: Vector2 */](output: Unit, includeParent: Boolean): O = js.native
+    def getTopRight[O /* <: Vector2Like */](): O = js.native
+    def getTopRight[O /* <: Vector2Like */](output: O): O = js.native
+    def getTopRight[O /* <: Vector2Like */](output: O, includeParent: Boolean): O = js.native
+    def getTopRight[O /* <: Vector2Like */](output: Unit, includeParent: Boolean): O = js.native
   }
   
   /**
@@ -639,7 +1218,7 @@ object Components {
     
     /**
       * Creates and returns a Bitmap Mask. This mask can be used by any Game Object,
-      * including this one.
+      * including this one, or a Dynamic Texture.
       * 
       * Note: Bitmap Masks only work on WebGL. Geometry Masks work on both WebGL and Canvas.
       * 
@@ -649,11 +1228,20 @@ object Components {
       * 
       * If you do not provide a renderable object, and this Game Object has a texture,
       * it will use itself as the object. This means you can call this method to create
-      * a Bitmap Mask from any renderable Game Object.
-      * @param renderable A renderable Game Object that uses a texture, such as a Sprite.
+      * a Bitmap Mask from any renderable texture-based Game Object.
+      * @param maskObject The Game Object or Dynamic Texture that will be used as the mask. If `null` it will generate an Image Game Object using the rest of the arguments.
+      * @param x If creating a Game Object, the horizontal position in the world.
+      * @param y If creating a Game Object, the vertical position in the world.
+      * @param texture If creating a Game Object, the key, or instance of the Texture it will use to render with, as stored in the Texture Manager.
+      * @param frame If creating a Game Object, an optional frame from the Texture this Game Object is rendering with.
       */
-    def createBitmapMask(): BitmapMask = js.native
-    def createBitmapMask(renderable: GameObject): BitmapMask = js.native
+    def createBitmapMask[G /* <: GameObject */, T /* <: DynamicTexture */](
+      maskObject: js.UndefOr[GameObject | DynamicTexture],
+      x: js.UndefOr[Double],
+      y: js.UndefOr[Double],
+      texture: js.UndefOr[String | typings.phaser.Phaser.Textures.Texture],
+      frame: js.UndefOr[String | Double | Frame]
+    ): BitmapMask = js.native
     
     /**
       * Creates and returns a Geometry Mask. This mask can be used by any Game Object,
@@ -665,10 +1253,11 @@ object Components {
       * of a Graphics object, then it will use itself to create the mask.
       * 
       * This means you can call this method to create a Geometry Mask from any Graphics Game Object.
-      * @param graphics A Graphics Game Object. The geometry within it will be used as the mask.
+      * @param graphics A Graphics Game Object, or any kind of Shape Game Object. The geometry within it will be used as the mask.
       */
-    def createGeometryMask(): GeometryMask = js.native
-    def createGeometryMask(graphics: Graphics): GeometryMask = js.native
+    def createGeometryMask[G /* <: Graphics */, S /* <: Shape */](): GeometryMask = js.native
+    def createGeometryMask[G /* <: Graphics */, S /* <: Shape */](graphics: Graphics): GeometryMask = js.native
+    def createGeometryMask[G /* <: Graphics */, S /* <: Shape */](graphics: Shape): GeometryMask = js.native
     
     /**
       * The Mask this Game Object is using during render.
@@ -722,16 +1311,18 @@ object Components {
       * The origin maps the relationship between the size and position of the Game Object.
       * The default value is 0.5, meaning all Game Objects are positioned based on their center.
       * Setting the value to 0 means the position now relates to the left of the Game Object.
+      * Set this value with `setOrigin()`.
       */
-    var originX: Double = js.native
+    val originX: Double = js.native
     
     /**
       * The vertical origin of this Game Object.
       * The origin maps the relationship between the size and position of the Game Object.
       * The default value is 0.5, meaning all Game Objects are positioned based on their center.
       * Setting the value to 0 means the position now relates to the top of the Game Object.
+      * Set this value with `setOrigin()`.
       */
-    var originY: Double = js.native
+    val originY: Double = js.native
     
     /**
       * Sets the display origin of this Game Object.
@@ -873,24 +1464,12 @@ object Components {
     def getPipelineName(): String = js.native
     
     /**
-      * Gets a Post Pipeline instance from this Game Object, based on the given name, and returns it.
-      * @param pipeline The string-based name of the pipeline, or a pipeline class.
-      */
-    def getPostPipeline(pipeline: String): PostFXPipeline | js.Array[PostFXPipeline] = js.native
-    def getPostPipeline(pipeline: js.Function): PostFXPipeline | js.Array[PostFXPipeline] = js.native
-    def getPostPipeline(pipeline: PostFXPipeline): PostFXPipeline | js.Array[PostFXPipeline] = js.native
-    
-    /**
-      * Does this Game Object have any Post Pipelines set?
-      */
-    var hasPostPipeline: Boolean = js.native
-    
-    /**
       * Sets the initial WebGL Pipeline of this Game Object.
       * 
       * This should only be called during the instantiation of the Game Object. After that, use `setPipeline`.
       * @param pipeline Either the string-based name of the pipeline, or a pipeline instance to set.
       */
+    def initPipeline(): Boolean = js.native
     def initPipeline(pipeline: String): Boolean = js.native
     def initPipeline(pipeline: WebGLPipeline): Boolean = js.native
     
@@ -905,50 +1484,18 @@ object Components {
     var pipelineData: js.Object = js.native
     
     /**
-      * The WebGL Post FX Pipelines this Game Object uses for post-render effects.
-      * 
-      * The pipelines are processed in the order in which they appear in this array.
-      * 
-      * If you modify this array directly, be sure to set the
-      * `hasPostPipeline` property accordingly.
-      */
-    var postPipelines: js.Array[PostFXPipeline] = js.native
-    
-    /**
-      * Removes a type of Post Pipeline instances from this Game Object, based on the given name, and destroys them.
-      * 
-      * If you wish to remove all Post Pipelines use the `resetPostPipeline` method instead.
-      * @param pipeline The string-based name of the pipeline, or a pipeline class.
-      */
-    def removePostPipeline(pipeline: String): this.type = js.native
-    def removePostPipeline(pipeline: PostFXPipeline): this.type = js.native
-    
-    /**
       * Resets the WebGL Pipeline of this Game Object back to the default it was created with.
-      * @param resetPostPipelines Reset all of the post pipelines? Default false.
       * @param resetData Reset the `pipelineData` object to being an empty object? Default false.
       */
     def resetPipeline(): Boolean = js.native
-    def resetPipeline(resetPostPipelines: Boolean): Boolean = js.native
-    def resetPipeline(resetPostPipelines: Boolean, resetData: Boolean): Boolean = js.native
-    def resetPipeline(resetPostPipelines: Unit, resetData: Boolean): Boolean = js.native
-    
-    /**
-      * Resets the WebGL Post Pipelines of this Game Object. It does this by calling
-      * the `destroy` method on each post pipeline and then clearing the local array.
-      * @param resetData Reset the `pipelineData` object to being an empty object? Default false.
-      */
-    def resetPostPipeline(): Unit = js.native
-    def resetPostPipeline(resetData: Boolean): Unit = js.native
+    def resetPipeline(resetData: Boolean): Boolean = js.native
     
     /**
       * Sets the main WebGL Pipeline of this Game Object.
       * 
       * Also sets the `pipelineData` property, if the parameter is given.
-      * 
-      * Both the pipeline and post pipelines share the same pipeline data object.
       * @param pipeline Either the string-based name of the pipeline, or a pipeline instance to set.
-      * @param pipelineData Optional pipeline data object that is _deep copied_ into the `pipelineData` property of this Game Object.
+      * @param pipelineData Optional pipeline data object that is set in to the `pipelineData` property of this Game Object.
       * @param copyData Should the pipeline data object be _deep copied_ into the `pipelineData` property of this Game Object? If `false` it will be set by reference instead. Default true.
       */
     def setPipeline(pipeline: String): this.type = js.native
@@ -966,13 +1513,131 @@ object Components {
       * If the 'key' already exists, its value is updated. If it doesn't exist, it is created.
       * 
       * If `value` is undefined, and `key` exists, `key` is removed from the data object.
-      * 
-      * Both the pipeline and post pipelines share the pipeline data object together.
       * @param key The key of the pipeline data to set, update, or delete.
       * @param value The value to be set with the key. If `undefined` then `key` will be deleted from the object.
       */
     def setPipelineData(key: String): this.type = js.native
     def setPipelineData(key: String, value: Any): this.type = js.native
+  }
+  
+  /**
+    * Provides methods used for setting the WebGL rendering post pipeline of a Game Object.
+    */
+  @js.native
+  trait PostPipeline extends StObject {
+    
+    /**
+      * Removes all Pre and Post FX Controllers from this Game Object.
+      * 
+      * If you wish to remove a single controller, use the `preFX.remove(fx)` or `postFX.remove(fx)` methods instead.
+      * 
+      * If you wish to clear a single controller, use the `preFX.clear()` or `postFX.clear()` methods instead.
+      */
+    def clearFX(): this.type = js.native
+    
+    /**
+      * Gets a Post Pipeline instance from this Game Object, based on the given name, and returns it.
+      * @param pipeline The string-based name of the pipeline, or a pipeline class.
+      */
+    def getPostPipeline(pipeline: String): PostFXPipeline | js.Array[PostFXPipeline] = js.native
+    def getPostPipeline(pipeline: js.Function): PostFXPipeline | js.Array[PostFXPipeline] = js.native
+    def getPostPipeline(pipeline: PostFXPipeline): PostFXPipeline | js.Array[PostFXPipeline] = js.native
+    
+    /**
+      * Does this Game Object have any Post Pipelines set?
+      */
+    var hasPostPipeline: Boolean = js.native
+    
+    /**
+      * This should only be called during the instantiation of the Game Object.
+      * 
+      * It is called by default by all core Game Objects and doesn't need
+      * calling again.
+      * 
+      * After that, use `setPostPipeline`.
+      * @param preFX Does this Game Object support Pre FX? Default false.
+      */
+    def initPostPipeline(): Unit = js.native
+    def initPostPipeline(preFX: Boolean): Unit = js.native
+    
+    /**
+      * The Post FX component of this Game Object.
+      * 
+      * This component allows you to apply a variety of built-in effects to this Game Object, such
+      * as glow, blur, bloom, displacements, vignettes and more. You access them via this property,
+      * for example:
+      * 
+      * ```js
+      * const player = this.add.sprite();
+      * player.postFX.addBloom();
+      * ```
+      * 
+      * All FX are WebGL only and do not have Canvas counterparts.
+      * 
+      * Please see the FX Class for more details and available methods.
+      * 
+      * This property is always `null` until the `initPostPipeline` method is called.
+      */
+    var postFX: FX = js.native
+    
+    /**
+      * An object to store pipeline specific data in, to be read by the pipelines this Game Object uses.
+      */
+    var postPipelineData: js.Object = js.native
+    
+    /**
+      * The WebGL Post FX Pipelines this Game Object uses for post-render effects.
+      * 
+      * The pipelines are processed in the order in which they appear in this array.
+      * 
+      * If you modify this array directly, be sure to set the
+      * `hasPostPipeline` property accordingly.
+      */
+    var postPipelines: js.Array[PostFXPipeline] = js.native
+    
+    /**
+      * The Pre FX component of this Game Object.
+      * 
+      * This component allows you to apply a variety of built-in effects to this Game Object, such
+      * as glow, blur, bloom, displacements, vignettes and more. You access them via this property,
+      * for example:
+      * 
+      * ```js
+      * const player = this.add.sprite();
+      * player.preFX.addBloom();
+      * ```
+      * 
+      * Only the following Game Objects support Pre FX:
+      * 
+      * * Image
+      * * Sprite
+      * * TileSprite
+      * * Text
+      * * RenderTexture
+      * * Video
+      * 
+      * All FX are WebGL only and do not have Canvas counterparts.
+      * 
+      * Please see the FX Class for more details and available methods.
+      */
+    var preFX: FX | Null = js.native
+    
+    /**
+      * Removes a type of Post Pipeline instances from this Game Object, based on the given name, and destroys them.
+      * 
+      * If you wish to remove all Post Pipelines use the `resetPostPipeline` method instead.
+      * @param pipeline The string-based name of the pipeline, or a pipeline class.
+      */
+    def removePostPipeline(pipeline: String): this.type = js.native
+    def removePostPipeline(pipeline: PostFXPipeline): this.type = js.native
+    
+    /**
+      * Resets the WebGL Post Pipelines of this Game Object. It does this by calling
+      * the `destroy` method on each post pipeline and then clearing the local array.
+      * @param resetData Reset the `postPipelineData` object to being an empty object? Default false.
+      */
+    def resetPostPipeline(): Unit = js.native
+    def resetPostPipeline(resetData: Boolean): Unit = js.native
     
     /**
       * Sets one, or more, Post Pipelines on this Game Object.
@@ -988,12 +1653,10 @@ object Components {
       * If you call this method multiple times, the new pipelines will be appended to any existing
       * post pipelines already set. Use the `resetPostPipeline` method to clear them first, if required.
       * 
-      * You can optionally also sets the `pipelineData` property, if the parameter is given.
-      * 
-      * Both the pipeline and post pipelines share the pipeline data object together.
+      * You can optionally also set the `postPipelineData` property, if the parameter is given.
       * @param pipelines Either the string-based name of the pipeline, or a pipeline instance, or class, or an array of them.
-      * @param pipelineData Optional pipeline data object that is _deep copied_ into the `pipelineData` property of this Game Object.
-      * @param copyData Should the pipeline data object be _deep copied_ into the `pipelineData` property of this Game Object? If `false` it will be set by reference instead. Default true.
+      * @param pipelineData Optional pipeline data object that is set in to the `postPipelineData` property of this Game Object.
+      * @param copyData Should the pipeline data object be _deep copied_ into the `postPipelineData` property of this Game Object? If `false` it will be set by reference instead. Default true.
       */
     def setPostPipeline(pipelines: String): this.type = js.native
     def setPostPipeline(pipelines: String, pipelineData: js.Object): this.type = js.native
@@ -1015,6 +1678,18 @@ object Components {
     def setPostPipeline(pipelines: PostFXPipeline, pipelineData: js.Object): this.type = js.native
     def setPostPipeline(pipelines: PostFXPipeline, pipelineData: js.Object, copyData: Boolean): this.type = js.native
     def setPostPipeline(pipelines: PostFXPipeline, pipelineData: Unit, copyData: Boolean): this.type = js.native
+    
+    /**
+      * Adds an entry to the `postPipelineData` object belonging to this Game Object.
+      * 
+      * If the 'key' already exists, its value is updated. If it doesn't exist, it is created.
+      * 
+      * If `value` is undefined, and `key` exists, `key` is removed from the data object.
+      * @param key The key of the pipeline data to set, update, or delete.
+      * @param value The value to be set with the key. If `undefined` then `key` will be deleted from the object.
+      */
+    def setPostPipelineData(key: String): this.type = js.native
+    def setPostPipelineData(key: String, value: Any): this.type = js.native
   }
   
   /**
@@ -1087,6 +1762,7 @@ object Components {
   /**
     * Provides methods used for getting and setting the size of a Game Object.
     */
+  @js.native
   trait Size extends StObject {
     
     /**
@@ -1096,7 +1772,7 @@ object Components {
       * 
       * Setting this value will adjust the Game Object's scale property.
       */
-    var displayHeight: Double
+    var displayHeight: Double = js.native
     
     /**
       * The displayed width of this Game Object.
@@ -1105,7 +1781,7 @@ object Components {
       * 
       * Setting this value will adjust the Game Object's scale property.
       */
-    var displayWidth: Double
+    var displayWidth: Double = js.native
     
     /**
       * The native (un-scaled) height of this Game Object.
@@ -1114,7 +1790,7 @@ object Components {
       * For that you need to either set the scale of the Game Object (`setScale`) or use
       * the `displayHeight` property.
       */
-    var height: Double
+    var height: Double = js.native
     
     /**
       * Sets the display size of this Game Object.
@@ -1123,7 +1799,7 @@ object Components {
       * @param width The width of this Game Object.
       * @param height The height of this Game Object.
       */
-    def setDisplaySize(width: Double, height: Double): this.type
+    def setDisplaySize(width: Double, height: Double): this.type = js.native
     
     /**
       * Sets the internal size of this Game Object, as used for frame or physics body creation.
@@ -1138,7 +1814,7 @@ object Components {
       * @param width The width of this Game Object.
       * @param height The height of this Game Object.
       */
-    def setSize(width: Double, height: Double): this.type
+    def setSize(width: Double, height: Double): this.type = js.native
     
     /**
       * Sets the size of this Game Object to be that of the given Frame.
@@ -1152,7 +1828,9 @@ object Components {
       * size of the hit area. To do this you should adjust the `input.hitArea` object directly.
       * @param frame The frame to base the size of this Game Object on.
       */
-    def setSizeToFrame(frame: Frame): this.type
+    def setSizeToFrame(): this.type = js.native
+    def setSizeToFrame(frame: Boolean): this.type = js.native
+    def setSizeToFrame(frame: Frame): this.type = js.native
     
     /**
       * The native (un-scaled) width of this Game Object.
@@ -1161,40 +1839,7 @@ object Components {
       * For that you need to either set the scale of the Game Object (`setScale`) or use
       * the `displayWidth` property.
       */
-    var width: Double
-  }
-  object Size {
-    
-    inline def apply(
-      displayHeight: Double,
-      displayWidth: Double,
-      height: Double,
-      setDisplaySize: (Double, Double) => Size,
-      setSize: (Double, Double) => Size,
-      setSizeToFrame: Frame => Size,
-      width: Double
-    ): Size = {
-      val __obj = js.Dynamic.literal(displayHeight = displayHeight.asInstanceOf[js.Any], displayWidth = displayWidth.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], setDisplaySize = js.Any.fromFunction2(setDisplaySize), setSize = js.Any.fromFunction2(setSize), setSizeToFrame = js.Any.fromFunction1(setSizeToFrame), width = width.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Size]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: Size] (val x: Self) extends AnyVal {
-      
-      inline def setDisplayHeight(value: Double): Self = StObject.set(x, "displayHeight", value.asInstanceOf[js.Any])
-      
-      inline def setDisplayWidth(value: Double): Self = StObject.set(x, "displayWidth", value.asInstanceOf[js.Any])
-      
-      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
-      
-      inline def setSetDisplaySize(value: (Double, Double) => Size): Self = StObject.set(x, "setDisplaySize", js.Any.fromFunction2(value))
-      
-      inline def setSetSize(value: (Double, Double) => Size): Self = StObject.set(x, "setSize", js.Any.fromFunction2(value))
-      
-      inline def setSetSizeToFrame(value: Frame => Size): Self = StObject.set(x, "setSizeToFrame", js.Any.fromFunction1(value))
-      
-      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
-    }
+    var width: Double = js.native
   }
   
   /**
@@ -1211,13 +1856,15 @@ object Components {
     /**
       * Sets the frame this Game Object will use to render with.
       * 
-      * The Frame has to belong to the current Texture being used.
+      * If you pass a string or index then the Frame has to belong to the current Texture being used
+      * by this Game Object.
       * 
-      * It can be either a string or an index.
+      * If you pass a Frame instance, then the Texture being used by this Game Object will also be updated.
       * 
       * Calling `setFrame` will modify the `width` and `height` properties of your Game Object.
+      * 
       * It will also change the `origin` if the Frame has a custom pivot point, as exported from packages like Texture Packer.
-      * @param frame The name or index of the frame within the Texture.
+      * @param frame The name or index of the frame within the Texture, or a Frame instance.
       * @param updateSize Should this call adjust the size of the Game Object? Default true.
       * @param updateOrigin Should this call adjust the origin of the Game Object? Default true.
       */
@@ -1229,6 +1876,10 @@ object Components {
     def setFrame(frame: Double, updateSize: Boolean): this.type = js.native
     def setFrame(frame: Double, updateSize: Boolean, updateOrigin: Boolean): this.type = js.native
     def setFrame(frame: Double, updateSize: Unit, updateOrigin: Boolean): this.type = js.native
+    def setFrame(frame: Frame): this.type = js.native
+    def setFrame(frame: Frame, updateSize: Boolean): this.type = js.native
+    def setFrame(frame: Frame, updateSize: Boolean, updateOrigin: Boolean): this.type = js.native
+    def setFrame(frame: Frame, updateSize: Unit, updateOrigin: Boolean): this.type = js.native
     
     /**
       * Sets the texture and frame this Game Object will use to render with.
@@ -1323,13 +1974,15 @@ object Components {
     /**
       * Sets the frame this Game Object will use to render with.
       * 
-      * The Frame has to belong to the current Texture being used.
+      * If you pass a string or index then the Frame has to belong to the current Texture being used
+      * by this Game Object.
       * 
-      * It can be either a string or an index.
+      * If you pass a Frame instance, then the Texture being used by this Game Object will also be updated.
       * 
       * Calling `setFrame` will modify the `width` and `height` properties of your Game Object.
+      * 
       * It will also change the `origin` if the Frame has a custom pivot point, as exported from packages like Texture Packer.
-      * @param frame The name or index of the frame within the Texture.
+      * @param frame The name or index of the frame within the Texture, or a Frame instance.
       * @param updateSize Should this call adjust the size of the Game Object? Default true.
       * @param updateOrigin Should this call adjust the origin of the Game Object? Default true.
       */
@@ -1341,6 +1994,10 @@ object Components {
     def setFrame(frame: Double, updateSize: Boolean): this.type = js.native
     def setFrame(frame: Double, updateSize: Boolean, updateOrigin: Boolean): this.type = js.native
     def setFrame(frame: Double, updateSize: Unit, updateOrigin: Boolean): this.type = js.native
+    def setFrame(frame: Frame): this.type = js.native
+    def setFrame(frame: Frame, updateSize: Boolean): this.type = js.native
+    def setFrame(frame: Frame, updateSize: Boolean, updateOrigin: Boolean): this.type = js.native
+    def setFrame(frame: Frame, updateSize: Unit, updateOrigin: Boolean): this.type = js.native
     
     /**
       * Sets the texture and frame this Game Object will use to render with.
@@ -1575,6 +2232,11 @@ object Components {
     def getWorldTransformMatrix(tempMatrix: TransformMatrix, parentMatrix: TransformMatrix): TransformMatrix = js.native
     
     /**
+      * A property indicating that a Game Object has this component.
+      */
+    val hasTransformComponent: Boolean = js.native
+    
+    /**
       * The angle of this Game Object in radians.
       * 
       * Phaser uses a right-hand clockwise rotation system, where 0 is right, PI/2 is down, +-PI is left
@@ -1673,11 +2335,13 @@ object Components {
     
     /**
       * Sets the scale of this Game Object.
-      * @param x The horizontal scale of this Game Object.
+      * @param x The horizontal scale of this Game Object. Default 1.
       * @param y The vertical scale of this Game Object. If not set it will use the `x` value. Default x.
       */
+    def setScale(): this.type = js.native
     def setScale(x: Double): this.type = js.native
     def setScale(x: Double, y: Double): this.type = js.native
+    def setScale(x: Unit, y: Double): this.type = js.native
     
     /**
       * Sets the w position of this Game Object.
@@ -1826,7 +2490,7 @@ object Components {
       * 
       * translate -> rotate -> scale
       */
-    def decomposeMatrix(): js.Object = js.native
+    def decomposeMatrix(): DecomposeMatrixResults = js.native
     
     /**
       * The decomposed matrix.
@@ -1930,6 +2594,11 @@ object Components {
     def multiplyWithOffset(src: TransformMatrix, offsetX: Double, offsetY: Double): this.type = js.native
     
     /**
+      * The temporary quad value cache.
+      */
+    var quad: js.typedarray.Float32Array = js.native
+    
+    /**
       * Rotate the Matrix.
       * @param angle The angle of rotation in radians.
       */
@@ -1964,6 +2633,29 @@ object Components {
     val scaleY: Double = js.native
     
     /**
+      * Performs the 8 calculations required to create the vertices of
+      * a quad based on this matrix and the given x/y/xw/yh values.
+      * 
+      * The result is stored in `TransformMatrix.quad`, which is returned
+      * from this method.
+      * @param x The x value.
+      * @param y The y value.
+      * @param xw The xw value.
+      * @param yh The yh value.
+      * @param roundPixels Pass the results via Math.round?
+      * @param quad Optional Float32Array to store the results in. Otherwises uses the local quad array.
+      */
+    def setQuad(x: Double, y: Double, xw: Double, yh: Double, roundPixels: Boolean): js.typedarray.Float32Array = js.native
+    def setQuad(
+      x: Double,
+      y: Double,
+      xw: Double,
+      yh: Double,
+      roundPixels: Boolean,
+      quad: js.typedarray.Float32Array
+    ): js.typedarray.Float32Array = js.native
+    
+    /**
       * Copy the values from this Matrix to the given Canvas Rendering Context.
       * This will use the Context.setTransform method.
       * @param ctx The Canvas Rendering Context to copy the matrix values to.
@@ -1992,15 +2684,14 @@ object Components {
       */
     def transform(a: Double, b: Double, c: Double, d: Double, tx: Double, ty: Double): this.type = js.native
     
-    def transformPoint(x: Double, y: Double, point: js.Object): Point | Vector2 | js.Object = js.native
     /**
-      * Transform a point using this Matrix.
+      * Transform a point in to the local space of this Matrix.
       * @param x The x coordinate of the point to transform.
       * @param y The y coordinate of the point to transform.
-      * @param point The Point object to store the transformed coordinates.
+      * @param point Optional Point object to store the transformed coordinates in.
       */
-    def transformPoint(x: Double, y: Double, point: Point): Point | Vector2 | js.Object = js.native
-    def transformPoint(x: Double, y: Double, point: Vector2): Point | Vector2 | js.Object = js.native
+    def transformPoint(x: Double, y: Double): Vector2Like = js.native
+    def transformPoint(x: Double, y: Double, point: Vector2Like): Vector2Like = js.native
     
     /**
       * Translate the Matrix.

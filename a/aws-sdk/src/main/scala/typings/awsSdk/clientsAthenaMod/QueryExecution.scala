@@ -32,7 +32,7 @@ trait QueryExecution extends StObject {
   var QueryExecutionId: js.UndefOr[typings.awsSdk.clientsAthenaMod.QueryExecutionId] = js.undefined
   
   /**
-    * The location in Amazon S3 where query results were stored and the encryption option, if any, used for query results. These are known as "client-side settings". If workgroup settings override client-side settings, then the query uses the location for the query results and the encryption configuration that are specified for the workgroup.
+    * The location in Amazon S3 where query and calculation results are stored and the encryption option, if any, used for query results. These are known as "client-side settings". If workgroup settings override client-side settings, then the query uses the location for the query results and the encryption configuration that are specified for the workgroup.
     */
   var ResultConfiguration: js.UndefOr[typings.awsSdk.clientsAthenaMod.ResultConfiguration] = js.undefined
   
@@ -55,6 +55,11 @@ trait QueryExecution extends StObject {
     * The completion date, current state, submission time, and state change reason (if applicable) for the query execution.
     */
   var Status: js.UndefOr[QueryExecutionStatus] = js.undefined
+  
+  /**
+    * The kind of query statement that was run.
+    */
+  var SubstatementType: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the workgroup in which the query ran.
@@ -112,6 +117,10 @@ object QueryExecution {
     inline def setStatus(value: QueryExecutionStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
     inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    
+    inline def setSubstatementType(value: String): Self = StObject.set(x, "SubstatementType", value.asInstanceOf[js.Any])
+    
+    inline def setSubstatementTypeUndefined: Self = StObject.set(x, "SubstatementType", js.undefined)
     
     inline def setWorkGroup(value: WorkGroupName): Self = StObject.set(x, "WorkGroup", value.asInstanceOf[js.Any])
     

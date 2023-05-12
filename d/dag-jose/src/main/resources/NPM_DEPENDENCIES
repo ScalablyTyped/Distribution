@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "dag-jose" : "3.0.1"
+      "dag-jose" : "4.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "dag-jose" : "3.0.1"
+      "dag-jose" : "4.0.0"
     }
   ],
   "compile-devDependencies" : [

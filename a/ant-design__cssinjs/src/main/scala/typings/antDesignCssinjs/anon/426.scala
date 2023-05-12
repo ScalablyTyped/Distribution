@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.ScrollMarginBlockEnd
+import typings.csstype.mod.Property.BorderInlineStart
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,13 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `426` extends StObject {
   
   var value: js.UndefOr[
-    (ScrollMarginBlockEnd[Double | String]) | (js.Array[
+    (BorderInlineStart[Double | String]) | (js.Array[
       (Extract[
         js.UndefOr[
-          (ScrollMarginBlockEnd[Double | String]) | (js.Array[NonNullable[js.UndefOr[ScrollMarginBlockEnd[Double | String]]]])
+          (BorderInlineStart[Double | String]) | (js.Array[NonNullable[js.UndefOr[BorderInlineStart[Double | String]]]])
         ], 
         String
-      ]) | (NonNullable[js.UndefOr[ScrollMarginBlockEnd[Double | String]]])
+      ]) | (NonNullable[js.UndefOr[BorderInlineStart[Double | String]]])
     ])
   ] = js.native
 }

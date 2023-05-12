@@ -19,11 +19,20 @@ inline def AutoInit(context: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDy
 
 inline def textareaAutoResize(textarea: Cash): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("textareaAutoResize")(textarea.asInstanceOf[js.Any]).asInstanceOf[Unit]
 inline def textareaAutoResize(textarea: JQuery): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("textareaAutoResize")(textarea.asInstanceOf[js.Any]).asInstanceOf[Unit]
+/**
+  * Resizes the given TextArea after updating the
+  * value content dynamically.
+  */
 inline def textareaAutoResize(textarea: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("textareaAutoResize")(textarea.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
 /**
-  * Create a toast
+  * Create a toast.
   */
 inline def toast(options: PartialToastOptions): Toast = ^.asInstanceOf[js.Dynamic].applyDynamic("toast")(options.asInstanceOf[js.Any]).asInstanceOf[Toast]
 
+/**
+  * Reinitializes all the Materialize labels on
+  * the page (useful when updating the value content
+  * dynamically).
+  */
 inline def updateTextFields(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("updateTextFields")().asInstanceOf[Unit]

@@ -75,14 +75,14 @@ object mod {
   trait CreateSelectorFunction[F /* <: js.Function1[/* repeated */ Any, Any] */, MemoizeFunction /* <: js.Function2[/* func */ F, /* repeated */ Any, F] */, MemoizeOptions /* <: js.Array[Any] */, Keys] extends StObject {
     
     /** Input selectors as separate inline arguments */
-    /** Input selectors as separate inline arguments with memoizeOptions passed */
     def apply[Selectors /* <: SelectorArray */, Result](
       /* import warning: parser.TsParser#functionParam Dropping repeated marker of param items because its type [...Selectors, (args : SelectorResultArray<Selectors>): Result] is not an array type */ items: /* import warning: importer.ImportType#apply c repeated non-array type: Selectors */ js.Array[Selectors]
     ): (OutputSelector[
         Selectors, 
         Result, 
-        js.Function1[/* args */ SelectorResultArray[Selectors], Result & Keys], 
-        GetParamsFromSelectors[Selectors, Tail[MergeParameters[Selectors]]]
+        js.Function1[/* args */ SelectorResultArray[Selectors], Result], 
+        GetParamsFromSelectors[Selectors, Tail[MergeParameters[Selectors]]], 
+        Keys
       ]) & Keys = js.native
     /** Input selectors as a separate array */
     def apply[Selectors /* <: SelectorArray */, Result](
@@ -91,8 +91,9 @@ object mod {
     ): (OutputSelector[
         Selectors, 
         Result, 
-        js.Function1[/* args */ SelectorResultArray[Selectors], Result & Keys], 
-        GetParamsFromSelectors[Selectors, Tail[MergeParameters[Selectors]]]
+        js.Function1[/* args */ SelectorResultArray[Selectors], Result], 
+        GetParamsFromSelectors[Selectors, Tail[MergeParameters[Selectors]]], 
+        Keys
       ]) & Keys = js.native
     def apply[Selectors /* <: SelectorArray */, Result](
       selectors: /* import warning: importer.ImportType#apply c repeated non-array type: Selectors */ js.Array[Selectors],
@@ -101,8 +102,9 @@ object mod {
     ): (OutputSelector[
         Selectors, 
         Result, 
-        js.Function1[/* args */ SelectorResultArray[Selectors], Result & Keys], 
-        GetParamsFromSelectors[Selectors, Tail[MergeParameters[Selectors]]]
+        js.Function1[/* args */ SelectorResultArray[Selectors], Result], 
+        GetParamsFromSelectors[Selectors, Tail[MergeParameters[Selectors]]], 
+        Keys
       ]) & Keys = js.native
   }
   

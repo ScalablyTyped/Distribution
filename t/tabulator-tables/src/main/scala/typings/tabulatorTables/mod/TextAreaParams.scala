@@ -12,6 +12,9 @@ trait TextAreaParams
      with SharedEditorParams
      with _EditorParams {
   
+  /** When the editor is loaded select its text content */
+  var selectContents: js.UndefOr[Boolean] = js.undefined
+  
   /** Allow submission of the value of the editor when the shift and enter keys are pressed together. */
   var shiftEnterSubmit: js.UndefOr[Boolean] = js.undefined
   
@@ -26,6 +29,10 @@ object TextAreaParams {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: TextAreaParams] (val x: Self) extends AnyVal {
+    
+    inline def setSelectContents(value: Boolean): Self = StObject.set(x, "selectContents", value.asInstanceOf[js.Any])
+    
+    inline def setSelectContentsUndefined: Self = StObject.set(x, "selectContents", js.undefined)
     
     inline def setShiftEnterSubmit(value: Boolean): Self = StObject.set(x, "shiftEnterSubmit", value.asInstanceOf[js.Any])
     

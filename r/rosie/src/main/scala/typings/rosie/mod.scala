@@ -273,11 +273,17 @@ object mod {
     /**
       * Generates values for all the registered options using the values given.
       *
-      * @private
       * @param {object} options
       * @return {object}
       */
     def options(options: Any): Any = js.native
+    
+    /**
+      * Resets any build state, such as sequences, to their original values on this factory.
+      *
+      * @return {void}
+      */
+    def reset(): Unit = js.native
     
     /**
       * Defines an attribute that, by default, simply has an auto-incrementing
@@ -371,5 +377,20 @@ object mod {
     def define[T](name: String): IFactory[T] = js.native
     def define[T](name: String, constructor: js.Function1[/* repeated */ Any, Any]): IFactory[T] = js.native
     def define[T](name: String, constructor: Instantiable1[/* opts (repeated) */ Any, Any]): IFactory[T] = js.native
+    
+    /**
+      * Resets any build state, such as sequences, to their original values on a specific factory.
+      *
+      * @param {string} name
+      * @return {void}
+      */
+    def reset(name: String): Unit = js.native
+    
+    /**
+      * Resets any build state, such as sequences, to their original values.
+      *
+      * @return {void}
+      */
+    def resetAll(): Unit = js.native
   }
 }

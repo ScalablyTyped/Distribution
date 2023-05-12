@@ -8,15 +8,15 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Interface for formContext
-  * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/executioncontext/getformcontext External Link: getFormContext (Client API reference)}
+  * Interface for {@link Xrm.Events.EventContext.getFormContext formContext}
+  * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/reference/executioncontext/getformcontext External Link: getFormContext (Client API reference)}
   */
 @js.native
 trait FormContext extends StObject {
   
   /**
     * Provides methods to work with the form.
-    * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/formcontext-data External Link: formContext.data (Client API reference)}
+    * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/reference/formcontext-data External Link: formContext.data (Client API reference)}
     */
   var data: Data = js.native
   
@@ -35,7 +35,7 @@ trait FormContext extends StObject {
     * Gets an attribute.
     * @param delegateFunction A matching delegate function
     * @returns An array of attribute.
-    * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/collections External Link: Collections (Client API reference)}
+    * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/reference/collections External Link: Collections (Client API reference)}
     */
   def getAttribute(delegateFunction: MatchingDelegate[Attribute[Any]]): js.Array[Attribute[Any]] = js.native
   /**
@@ -68,7 +68,7 @@ trait FormContext extends StObject {
     * Gets a control.
     * @param delegateFunction A matching delegate function.
     * @returns An array of control.
-    * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/collections External Link: Collections (Client API reference)}
+    * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/reference/collections External Link: Collections (Client API reference)}
     */
   def getControl(delegateFunction: MatchingDelegate[Control]): js.Array[Control] = js.native
   /**
@@ -96,7 +96,7 @@ trait FormContext extends StObject {
   
   /**
     * Contains properties and methods to retrieve information about the user interface as well as collections for several subcomponents of the form.
-    * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/formcontext-ui External Link: formContext.ui (Client API reference)}
+    * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/reference/formcontext-ui External Link: formContext.ui (Client API reference)}
     */
   var ui: Ui = js.native
 }

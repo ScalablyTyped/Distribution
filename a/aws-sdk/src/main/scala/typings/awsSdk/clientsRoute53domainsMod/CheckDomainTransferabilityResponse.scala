@@ -9,12 +9,12 @@ trait CheckDomainTransferabilityResponse extends StObject {
   /**
     * A complex type that contains information about whether the specified domain can be transferred to Route 53.
     */
-  var Transferability: DomainTransferability
+  var Transferability: js.UndefOr[DomainTransferability] = js.undefined
 }
 object CheckDomainTransferabilityResponse {
   
-  inline def apply(Transferability: DomainTransferability): CheckDomainTransferabilityResponse = {
-    val __obj = js.Dynamic.literal(Transferability = Transferability.asInstanceOf[js.Any])
+  inline def apply(): CheckDomainTransferabilityResponse = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CheckDomainTransferabilityResponse]
   }
   
@@ -22,5 +22,7 @@ object CheckDomainTransferabilityResponse {
   implicit open class MutableBuilder[Self <: CheckDomainTransferabilityResponse] (val x: Self) extends AnyVal {
     
     inline def setTransferability(value: DomainTransferability): Self = StObject.set(x, "Transferability", value.asInstanceOf[js.Any])
+    
+    inline def setTransferabilityUndefined: Self = StObject.set(x, "Transferability", js.undefined)
   }
 }

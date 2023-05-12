@@ -15,7 +15,7 @@ trait EmailAuthenticationMethodConfiguration
     */
   var allowExternalIdToUseEmailOtp: js.UndefOr[NullableOption[ExternalEmailOtpState]] = js.undefined
   
-  // A collection of users or groups who are enabled to use the authentication method.
+  // A collection of groups that are enabled to use the authentication method.
   var includeTargets: js.UndefOr[NullableOption[js.Array[AuthenticationMethodTarget]]] = js.undefined
 }
 object EmailAuthenticationMethodConfiguration {

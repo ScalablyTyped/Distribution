@@ -8,21 +8,15 @@ object libRestNumbersMod {
   
   @JSImport("twilio/lib/rest/Numbers", JSImport.Namespace)
   @js.native
-  open class ^ protected () extends Numbers {
-    /**
-      * Initialize numbers domain
-      *
-      * @param twilio - The twilio client
-      */
-    def this(twilio: typings.twilio.libRestTwilioMod.^) = this()
-  }
+  open class ^ () extends Numbers
   
   @js.native
   trait Numbers
-    extends typings.twilio.libBaseDomainMod.^ {
+    extends typings.twilio.libRestNumbersBaseMod.^ {
     
-    val regulatoryCompliance: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RegulatoryComplianceListInstance */ Any = js.native
-    
-    val v2: typings.twilio.libRestNumbersV2Mod.^ = js.native
+    /**
+      * @deprecated - Use v2.regulatoryCompliance instead
+      */
+    def regulatoryCompliance: Any = js.native
   }
 }

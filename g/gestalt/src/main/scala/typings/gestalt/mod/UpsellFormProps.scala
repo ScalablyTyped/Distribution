@@ -12,10 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait UpsellFormProps extends StObject {
   
-  var onSubmit: AbstractEventHandler[
-    (MouseEvent[HTMLAnchorElement | HTMLButtonElement, NativeMouseEvent]) | (KeyboardEvent[HTMLAnchorElement | HTMLButtonElement]), 
-    js.Object
-  ]
+  var children: Node
+  
+  var onSubmit: BareButtonEventHandlerType
   
   var submitButtonAccessibilityLabel: String
   
@@ -38,6 +37,10 @@ object UpsellFormProps {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: UpsellFormProps] (val x: Self) extends AnyVal {
+    
+    inline def setChildren(value: Node): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     inline def setOnSubmit(
       value: /* arg */ js.Object & (Event[

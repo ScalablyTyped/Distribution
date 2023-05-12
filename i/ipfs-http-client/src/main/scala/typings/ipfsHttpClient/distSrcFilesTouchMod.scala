@@ -11,7 +11,7 @@ object distSrcFilesTouchMod {
   @js.native
   val createTouch: Factory[
     js.Function2[
-      /* path */ String, 
+      /* ipfsPath */ String, 
       /* options */ js.UndefOr[
         (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_files.TouchOptions */ Any) & typings.ipfsHttpClient.distSrcTypesMod.HTTPClientExtraOptions
       ], 

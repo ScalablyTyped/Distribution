@@ -50,7 +50,8 @@ object VNodeNormalizedRefAtom {
           js.Object, 
           js.Object, 
           `false`, 
-          ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+          ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String, js.Object], 
+          js.Object, 
           js.Object
         ]) | Null, /* refs */ Record[String, Any]) => Unit
     ): Self = StObject.set(x, "r", js.Any.fromFunction2(value))

@@ -1,8 +1,6 @@
 package typings.w3cCssTypedObjectModelLevel1
 
-import org.scalablytyped.runtime.NumberDictionary
 import typings.std.DOMMatrix
-import typings.std.IterableIterator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,13 +8,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait CSSTransformValue
   extends StObject
-     with CSSStyleValue
-     with /* index */ NumberDictionary[CSSTransformComponent] {
+     with CSSStyleValue {
+  
+  def forEach(
+    callbackfn: js.Function3[/* value */ CSSTransformComponent, /* key */ Double, /* parent */ this.type, Unit]
+  ): Unit = js.native
+  def forEach(
+    callbackfn: js.Function3[/* value */ CSSTransformComponent, /* key */ Double, /* parent */ this.type, Unit],
+    thisArg: Any
+  ): Unit = js.native
   
   val is2D: Boolean = js.native
-  
-  @JSName(js.Symbol.iterator)
-  var iterator: js.Function0[IterableIterator[CSSTransformComponent]] = js.native
   
   val length: Double = js.native
   

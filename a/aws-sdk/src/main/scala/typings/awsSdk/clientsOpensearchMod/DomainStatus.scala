@@ -107,6 +107,11 @@ trait DomainStatus extends StObject {
   var NodeToNodeEncryptionOptions: js.UndefOr[typings.awsSdk.clientsOpensearchMod.NodeToNodeEncryptionOptions] = js.undefined
   
   /**
+    * Options that specify a custom 10-hour window during which OpenSearch Service can perform configuration changes on the domain.
+    */
+  var OffPeakWindowOptions: js.UndefOr[typings.awsSdk.clientsOpensearchMod.OffPeakWindowOptions] = js.undefined
+  
+  /**
     * The status of the domain configuration. True if OpenSearch Service is processing configuration changes. False if the configuration is active.
     */
   var Processing: js.UndefOr[Boolean] = js.undefined
@@ -120,6 +125,11 @@ trait DomainStatus extends StObject {
     * DEPRECATED. Container for parameters required to configure automated snapshots of domain indexes.
     */
   var SnapshotOptions: js.UndefOr[typings.awsSdk.clientsOpensearchMod.SnapshotOptions] = js.undefined
+  
+  /**
+    * Service software update options for the domain.
+    */
+  var SoftwareUpdateOptions: js.UndefOr[typings.awsSdk.clientsOpensearchMod.SoftwareUpdateOptions] = js.undefined
   
   /**
     * The status of a domain version upgrade to a new version of OpenSearch or Elasticsearch. True if OpenSearch Service is in the process of a version upgrade. False if the configuration is active.
@@ -213,6 +223,10 @@ object DomainStatus {
     
     inline def setNodeToNodeEncryptionOptionsUndefined: Self = StObject.set(x, "NodeToNodeEncryptionOptions", js.undefined)
     
+    inline def setOffPeakWindowOptions(value: OffPeakWindowOptions): Self = StObject.set(x, "OffPeakWindowOptions", value.asInstanceOf[js.Any])
+    
+    inline def setOffPeakWindowOptionsUndefined: Self = StObject.set(x, "OffPeakWindowOptions", js.undefined)
+    
     inline def setProcessing(value: Boolean): Self = StObject.set(x, "Processing", value.asInstanceOf[js.Any])
     
     inline def setProcessingUndefined: Self = StObject.set(x, "Processing", js.undefined)
@@ -224,6 +238,10 @@ object DomainStatus {
     inline def setSnapshotOptions(value: SnapshotOptions): Self = StObject.set(x, "SnapshotOptions", value.asInstanceOf[js.Any])
     
     inline def setSnapshotOptionsUndefined: Self = StObject.set(x, "SnapshotOptions", js.undefined)
+    
+    inline def setSoftwareUpdateOptions(value: SoftwareUpdateOptions): Self = StObject.set(x, "SoftwareUpdateOptions", value.asInstanceOf[js.Any])
+    
+    inline def setSoftwareUpdateOptionsUndefined: Self = StObject.set(x, "SoftwareUpdateOptions", js.undefined)
     
     inline def setUpgradeProcessing(value: Boolean): Self = StObject.set(x, "UpgradeProcessing", value.asInstanceOf[js.Any])
     

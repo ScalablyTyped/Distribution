@@ -9,17 +9,19 @@ import typings.typescript.mod.CreateSourceFileOptions
 import typings.typescript.mod.CustomTransformers
 import typings.typescript.mod.Diagnostic
 import typings.typescript.mod.FileReference
-import typings.typescript.mod.ModuleKind.CommonJS
-import typings.typescript.mod.ModuleKind.ESNext
 import typings.typescript.mod.ModuleResolutionCache
 import typings.typescript.mod.ParsedCommandLine
 import typings.typescript.mod.Path
 import typings.typescript.mod.Program
+import typings.typescript.mod.ResolutionMode
 import typings.typescript.mod.ResolvedModule
+import typings.typescript.mod.ResolvedModuleWithFailedLookupLocations
 import typings.typescript.mod.ResolvedProjectReference
 import typings.typescript.mod.ResolvedTypeReferenceDirective
+import typings.typescript.mod.ResolvedTypeReferenceDirectiveWithFailedLookupLocations
 import typings.typescript.mod.ScriptTarget
 import typings.typescript.mod.SourceFile
+import typings.typescript.mod.StringLiteralLike
 import typings.typescript.mod.WriteFileCallback
 import typings.typescript.mod.WriteFileCallbackData
 import org.scalablytyped.runtime.StObject
@@ -46,13 +48,6 @@ object srcNgtscTscPluginMod {
     /* private */ var options: Any = js.native
   }
   
-  /**
-    * A `ts.CompilerHost` which also returns a list of input files, out of which the `ts.Program`
-    * should be created.
-    *
-    * Currently mirrored from @bazel/concatjs/internal/tsc_wrapped/plugin_api (with the naming of
-    * `fileNameToModuleName` corrected).
-    */
   /* Inlined parent typescript.typescript.CompilerHost */
   /* Inlined parent std.Partial<@angular/compiler-cli.@angular/compiler-cli/src/ngtsc/core/api.UnifiedModulesHost> */
   @js.native
@@ -165,6 +160,19 @@ object srcNgtscTscPluginMod {
       */
     var realpath: js.UndefOr[js.Function1[/* path */ String, String]] = js.native
     
+    var resolveModuleNameLiterals: js.UndefOr[
+        js.Function6[
+          /* moduleLiterals */ js.Array[StringLiteralLike], 
+          /* containingFile */ String, 
+          /* redirectedReference */ js.UndefOr[ResolvedProjectReference], 
+          /* options */ CompilerOptions, 
+          /* containingSourceFile */ SourceFile, 
+          /* reusedNames */ js.UndefOr[js.Array[StringLiteralLike]], 
+          js.Array[ResolvedModuleWithFailedLookupLocations]
+        ]
+      ] = js.native
+    
+    /** @deprecated supply resolveModuleNameLiterals instead for resolution that can handle newer resolution modes like nodenext */
     var resolveModuleNames: js.UndefOr[
         js.Function6[
           /* moduleNames */ js.Array[String], 
@@ -177,7 +185,21 @@ object srcNgtscTscPluginMod {
         ]
       ] = js.native
     
+    var resolveTypeReferenceDirectiveReferences: js.UndefOr[
+        js.Function6[
+          /* typeDirectiveReferences */ js.Array[FileReference | String], 
+          /* containingFile */ String, 
+          /* redirectedReference */ js.UndefOr[ResolvedProjectReference], 
+          /* options */ CompilerOptions, 
+          /* containingSourceFile */ js.UndefOr[SourceFile], 
+          /* reusedNames */ js.UndefOr[js.Array[FileReference | String]], 
+          js.Array[ResolvedTypeReferenceDirectiveWithFailedLookupLocations]
+        ]
+      ] = js.native
+    
     /**
+      * @deprecated supply resolveTypeReferenceDirectiveReferences instead for resolution that can handle newer resolution modes like nodenext
+      *
       * This method is a companion for 'resolveModuleNames' and is used to resolve 'types' references to actual type declaration files
       */
     var resolveTypeReferenceDirectives: js.UndefOr[
@@ -186,7 +208,7 @@ object srcNgtscTscPluginMod {
           /* containingFile */ String, 
           /* redirectedReference */ js.UndefOr[ResolvedProjectReference], 
           /* options */ CompilerOptions, 
-          /* containingFileMode */ js.UndefOr[ESNext | CommonJS], 
+          /* containingFileMode */ js.UndefOr[ResolutionMode], 
           js.Array[js.UndefOr[ResolvedTypeReferenceDirective]]
         ]
       ] = js.native

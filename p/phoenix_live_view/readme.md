@@ -1,7 +1,7 @@
 
 # Scala.js typings for phoenix_live_view
 
-Typings are for version 0.15
+Typings are for version 0.18
 
 ## Library description:
 The Phoenix LiveView JavaScript client.

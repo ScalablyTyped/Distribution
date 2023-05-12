@@ -53,11 +53,6 @@ object permissions {
   
   trait PermissionsAddedEvent extends StObject {
     
-    /**
-      * @param callback The callback parameter should be a function that looks like this:
-      * function( Permissions permissions) {...};
-      * Parameter permissions: The newly acquired permissions.
-      */
     def addListener(callback: js.Function1[/* permissions */ Permissions, Unit]): Unit
   }
   object PermissionsAddedEvent {
@@ -76,11 +71,6 @@ object permissions {
   
   trait PermissionsRemovedEvent extends StObject {
     
-    /**
-      * @param callback The callback parameter should be a function that looks like this:
-      * function( Permissions permissions) {...};
-      * Parameter permissions: The permissions that have been removed.
-      */
     def addListener(callback: js.Function1[/* permissions */ Permissions, Unit]): Unit
   }
   object PermissionsRemovedEvent {

@@ -5,7 +5,6 @@ import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.`master Slashdocs`
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.legacy
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.master
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.workflow
-import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,10 +23,7 @@ trait Buildtype extends StObject {
   /** @description Specify whether HTTPS should be enforced for the repository. */
   var https_enforced: js.UndefOr[Boolean] = js.undefined
   
-  /** @description Configures access controls for the GitHub Pages site. If public is set to `true`, the site is accessible to anyone on the internet. If set to `false`, the site will only be accessible to users who have at least `read` access to the repository that published the site. This includes anyone in your Enterprise if the repository is set to `internal` visibility. This feature is only available to repositories in an organization on an Enterprise plan. */
-  var public: js.UndefOr[Boolean] = js.undefined
-  
-  var source: js.UndefOr[(Partial[`gh-pages` | master | (`master Slashdocs`)]) & Partial[BranchPath]] = js.undefined
+  var source: js.UndefOr[`gh-pages` | master | (`master Slashdocs`) | BranchPath] = js.undefined
 }
 object Buildtype {
   
@@ -53,11 +49,7 @@ object Buildtype {
     
     inline def setHttps_enforcedUndefined: Self = StObject.set(x, "https_enforced", js.undefined)
     
-    inline def setPublic(value: Boolean): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
-    
-    inline def setPublicUndefined: Self = StObject.set(x, "public", js.undefined)
-    
-    inline def setSource(value: (Partial[`gh-pages` | master | (`master Slashdocs`)]) & Partial[BranchPath]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: `gh-pages` | master | (`master Slashdocs`) | BranchPath): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
     inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
   }

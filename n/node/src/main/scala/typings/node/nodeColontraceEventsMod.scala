@@ -16,7 +16,7 @@ object nodeColontraceEventsMod {
     * Creates and returns a `Tracing` object for the given set of `categories`.
     *
     * ```js
-    * const trace_events = require('trace_events');
+    * const trace_events = require('node:trace_events');
     * const categories = ['node.perf', 'node.async_hooks'];
     * const tracing = trace_events.createTracing({ categories });
     * tracing.enable();
@@ -37,7 +37,7 @@ object nodeColontraceEventsMod {
     * Given the file `test.js` below, the command`node --trace-event-categories node.perf test.js` will print`'node.async_hooks,node.perf'` to the console.
     *
     * ```js
-    * const trace_events = require('trace_events');
+    * const trace_events = require('node:trace_events');
     * const t1 = trace_events.createTracing({ categories: ['node.async_hooks'] });
     * const t2 = trace_events.createTracing({ categories: ['node.perf'] });
     * const t3 = trace_events.createTracing({ categories: ['v8'] });

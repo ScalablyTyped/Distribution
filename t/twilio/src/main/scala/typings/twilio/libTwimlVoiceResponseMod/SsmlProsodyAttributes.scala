@@ -6,10 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SsmlProsodyAttributes extends StObject {
   
+  /** pitch - Specify the pitch, available values: default, x-low, low, medium, high, x-high, +n%, -n% */
   var pitch: js.UndefOr[String] = js.undefined
   
+  /** rate - Specify the rate, available values: x-slow, slow, medium, fast, x-fast, n% */
   var rate: js.UndefOr[String] = js.undefined
   
+  /** volume - Specify the volume, available values: default, silent, x-soft, soft, medium, loud, x-loud, +ndB, -ndB */
   var volume: js.UndefOr[String] = js.undefined
 }
 object SsmlProsodyAttributes {

@@ -1,7 +1,7 @@
 
 # Scala.js typings for cypress-axe
 
-Typings are for version 1.0.0
+Typings are for version 1.4.0
 
 ## Library description:
 Test accessibility with axe-core in Cypress

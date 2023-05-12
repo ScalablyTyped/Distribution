@@ -6,7 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Clientid extends StObject {
   
-  /** The client ID of the GitHub app. */
   var client_id: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['client-id'] */ js.Any
 }
 object Clientid {

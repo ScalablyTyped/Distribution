@@ -8,11 +8,11 @@ trait ParametersQuerySecrettype extends StObject {
   
   var parameters: QuerySecrettype
   
-  var responses: `200Content415`
+  var responses: `200Content479`
 }
 object ParametersQuerySecrettype {
   
-  inline def apply(parameters: QuerySecrettype, responses: `200Content415`): ParametersQuerySecrettype = {
+  inline def apply(parameters: QuerySecrettype, responses: `200Content479`): ParametersQuerySecrettype = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersQuerySecrettype]
   }
@@ -22,6 +22,6 @@ object ParametersQuerySecrettype {
     
     inline def setParameters(value: QuerySecrettype): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `200Content415`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `200Content479`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

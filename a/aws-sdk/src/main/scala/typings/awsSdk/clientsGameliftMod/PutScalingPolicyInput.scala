@@ -42,7 +42,7 @@ trait PutScalingPolicyInput extends StObject {
   var ScalingAdjustment: js.UndefOr[Integer] = js.undefined
   
   /**
-    * The type of adjustment to make to a fleet's instance count (see FleetCapacity):    ChangeInCapacity -- add (or subtract) the scaling adjustment value from the current instance count. Positive values scale up while negative values scale down.    ExactCapacity -- set the instance count to the scaling adjustment value.    PercentChangeInCapacity -- increase or reduce the current instance count by the scaling adjustment, read as a percentage. Positive values scale up while negative values scale down; for example, a value of "-10" scales the fleet down by 10%.  
+    * The type of adjustment to make to a fleet's instance count:    ChangeInCapacity -- add (or subtract) the scaling adjustment value from the current instance count. Positive values scale up while negative values scale down.    ExactCapacity -- set the instance count to the scaling adjustment value.    PercentChangeInCapacity -- increase or reduce the current instance count by the scaling adjustment, read as a percentage. Positive values scale up while negative values scale down; for example, a value of "-10" scales the fleet down by 10%.  
     */
   var ScalingAdjustmentType: js.UndefOr[typings.awsSdk.clientsGameliftMod.ScalingAdjustmentType] = js.undefined
   

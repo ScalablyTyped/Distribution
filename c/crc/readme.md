@@ -1,7 +1,7 @@
 
 # Scala.js typings for crc
 
-Typings are for version 4.1.1
+Typings are for version 4.3.2
 
 ## Library description:
 Module for calculating Cyclic Redundancy Check (CRC) for Node.js and the browser.

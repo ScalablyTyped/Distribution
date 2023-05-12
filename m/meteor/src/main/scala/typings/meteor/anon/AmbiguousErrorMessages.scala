@@ -1,7 +1,6 @@
 package typings.meteor.anon
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.meteor.meteorInts.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +9,7 @@ trait AmbiguousErrorMessages extends StObject {
   
   var ambiguousErrorMessages: js.UndefOr[Boolean] = js.undefined
   
-  var defaultFieldSelector: js.UndefOr[StringDictionary[typings.meteor.meteorInts.`0` | `1`]] = js.undefined
+  var defaultFieldSelector: js.UndefOr[StringDictionary[typings.meteor.meteorInts.`0` | typings.meteor.meteorInts.`1`]] = js.undefined
   
   var forbidClientAccountCreation: js.UndefOr[Boolean] = js.undefined
   
@@ -40,7 +39,7 @@ object AmbiguousErrorMessages {
     
     inline def setAmbiguousErrorMessagesUndefined: Self = StObject.set(x, "ambiguousErrorMessages", js.undefined)
     
-    inline def setDefaultFieldSelector(value: StringDictionary[typings.meteor.meteorInts.`0` | `1`]): Self = StObject.set(x, "defaultFieldSelector", value.asInstanceOf[js.Any])
+    inline def setDefaultFieldSelector(value: StringDictionary[typings.meteor.meteorInts.`0` | typings.meteor.meteorInts.`1`]): Self = StObject.set(x, "defaultFieldSelector", value.asInstanceOf[js.Any])
     
     inline def setDefaultFieldSelectorUndefined: Self = StObject.set(x, "defaultFieldSelector", js.undefined)
     

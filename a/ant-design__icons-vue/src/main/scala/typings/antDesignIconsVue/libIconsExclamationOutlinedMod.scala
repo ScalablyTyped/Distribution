@@ -16,7 +16,7 @@ object libIconsExclamationOutlinedMod extends Shortcut {
   @js.native
   trait ExclamationOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_ExclamationOutlinedIconType: String = js.native

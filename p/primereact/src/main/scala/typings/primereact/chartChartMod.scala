@@ -17,43 +17,97 @@ object chartChartMod {
     def this(props: ChartProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: ChartProps, context: Any) = this()
     
+    /**
+      * Used to generate legend.
+      * @return {string} Generated legend
+      */
     def generateLegend(): String = js.native
     
+    /**
+      * Used to get base64 image.
+      * @return {*} base64 image
+      */
     def getBase64Image(): Any = js.native
     
+    /**
+      * Used to get canvas element.
+      * @return {HTMLCanvasElement} Canvas element
+      */
     def getCanvas(): HTMLCanvasElement = js.native
     
+    /**
+      * Used to get chart instance.
+      * @return {*} Chart instance
+      */
     def getChart(): Any = js.native
     
+    /**
+      * Used to get container element.
+      * @return {HTMLDivElement} Container element
+      */
     def getElement(): HTMLDivElement = js.native
     
+    /**
+      * Redraws the graph.
+      */
     def refresh(): Unit = js.native
   }
   
   trait ChartProps extends StObject {
     
+    /**
+      * Used to get the child elements of the component.
+      * @readonly
+      */
     var children: js.UndefOr[ReactNode] = js.undefined
     
+    /**
+      * Style class of the element.
+      */
     var className: js.UndefOr[String] = js.undefined
     
+    /**
+      * Data to display.
+      */
     var data: js.UndefOr[js.Object] = js.undefined
     
+    /**
+      * Height of the chart in non-responsive mode.
+      */
     var height: js.UndefOr[String] = js.undefined
     
+    /**
+      * Unique identifier of the element.
+      */
     var id: js.UndefOr[String] = js.undefined
     
+    /**
+      * Options to customize the chart.
+      */
     var options: js.UndefOr[js.Object] = js.undefined
     
+    /**
+      * Used to custom plugins of the chart.
+      */
     var plugins: js.UndefOr[js.Array[Any]] = js.undefined
     
+    /**
+      * Inline style of the element.
+      */
     var style: js.UndefOr[CSSProperties] = js.undefined
     
+    /**
+      * Type of the chart.
+      */
     var `type`: js.UndefOr[String] = js.undefined
     
+    /**
+      * Width of the chart in non-responsive mode.
+      */
     var width: js.UndefOr[String] = js.undefined
   }
   object ChartProps {

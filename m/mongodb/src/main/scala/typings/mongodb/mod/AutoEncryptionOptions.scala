@@ -4,6 +4,7 @@ import typings.bson.mod.Document
 import typings.mongodb.anon.Aws
 import typings.mongodb.anon.Azure
 import typings.mongodb.anon.CryptSharedLibPath
+import typings.mongodb.anon.Logger
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,15 +14,14 @@ trait AutoEncryptionOptions extends StObject {
   /** Allows the user to bypass auto encryption, maintaining implicit decryption */
   var bypassAutoEncryption: js.UndefOr[Boolean] = js.undefined
   
-  /** @experimental Public Technical Preview: Allows users to bypass query analysis */
+  /** Allows users to bypass query analysis */
   var bypassQueryAnalysis: js.UndefOr[Boolean] = js.undefined
   
-  /** @experimental Public Technical Preview: Supply a schema for the encrypted fields in the document  */
+  /** Supply a schema for the encrypted fields in the document  */
   var encryptedFieldsMap: js.UndefOr[Document] = js.undefined
   
   var extraOptions: js.UndefOr[CryptSharedLibPath] = js.undefined
   
-  /* Excluded from this release type: bson */
   /* Excluded from this release type: metadataClient */
   /** A `MongoClient` used to fetch keys from a key vault */
   var keyVaultClient: js.UndefOr[MongoClient] = js.undefined
@@ -32,7 +32,7 @@ trait AutoEncryptionOptions extends StObject {
   /** Configuration options that are used by specific KMS providers during key generation, encryption, and decryption. */
   var kmsProviders: js.UndefOr[Aws] = js.undefined
   
-  var options: js.UndefOr[typings.mongodb.anon.Logger] = js.undefined
+  var options: js.UndefOr[Logger] = js.undefined
   
   var proxyOptions: js.UndefOr[ProxyOptions] = js.undefined
   
@@ -87,7 +87,7 @@ object AutoEncryptionOptions {
     
     inline def setKmsProvidersUndefined: Self = StObject.set(x, "kmsProviders", js.undefined)
     
-    inline def setOptions(value: typings.mongodb.anon.Logger): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: Logger): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     

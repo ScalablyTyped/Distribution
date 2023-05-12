@@ -32,6 +32,12 @@ open class DatePicker protected () extends AttributeWidgetWithPlaceholder {
   
   def formattingInfo: FormattingInfo = js.native
   def formattingInfo_=(newValue: FormattingInfo): Unit = js.native
+  
+  /**
+    * In version 9.24.0: introduced
+    */
+  def nativeAccessibilitySettings: AccessibilitySettings | Null = js.native
+  def nativeAccessibilitySettings_=(newValue: AccessibilitySettings | Null): Unit = js.native
 }
 object DatePicker {
   

@@ -69,6 +69,7 @@ import typings.wixWixUiIconsCommon.distTypesClassicEditorSystemDistComponentsPlu
 import typings.wixWixUiIconsCommon.distTypesClassicEditorSystemDistComponentsPresetsMod.PresetsProps
 import typings.wixWixUiIconsCommon.distTypesClassicEditorSystemDistComponentsPropertiesMod.PropertiesProps
 import typings.wixWixUiIconsCommon.distTypesClassicEditorSystemDistComponentsRotationMod.RotationProps
+import typings.wixWixUiIconsCommon.distTypesClassicEditorSystemDistComponentsSectionLayoutMod.SectionLayoutProps
 import typings.wixWixUiIconsCommon.distTypesClassicEditorSystemDistComponentsSectionsMod.SectionsProps
 import typings.wixWixUiIconsCommon.distTypesClassicEditorSystemDistComponentsSettingsMod.SettingsProps
 import typings.wixWixUiIconsCommon.distTypesClassicEditorSystemDistComponentsShoutoutMod.ShoutoutProps
@@ -356,6 +357,10 @@ object distTypesClassicEditorSystemDistMod {
   @JSImport("@wix/wix-ui-icons-common/dist/types/classic-editor/system/dist", "Rotation")
   @js.native
   val Rotation: FC[RotationProps] = js.native
+  
+  @JSImport("@wix/wix-ui-icons-common/dist/types/classic-editor/system/dist", "SectionLayout")
+  @js.native
+  val SectionLayout: FC[SectionLayoutProps] = js.native
   
   @JSImport("@wix/wix-ui-icons-common/dist/types/classic-editor/system/dist", "Sections")
   @js.native

@@ -6,7 +6,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** @typedef {import('../../app-base.js').AppBase} AppBase */
 /**
   * A Light Component is used to dynamically light the scene.
   *
@@ -18,7 +17,7 @@ open class LightComponentSystem protected () extends ComponentSystem {
   /**
     * Create a new ComponentSystem instance.
     *
-    * @param {AppBase} app - The application managing this system.
+    * @param {import('../app-base.js').AppBase} app - The application managing this system.
     */
   def this(app: AppBase) = this()
   

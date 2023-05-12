@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "deep-freeze-es6" : "1.4.1"
+      "deep-freeze-es6" : "2.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "deep-freeze-es6" : "1.4.1"
+      "deep-freeze-es6" : "2.0.0"
     }
   ],
   "compile-devDependencies" : [

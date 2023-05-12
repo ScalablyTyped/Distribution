@@ -1,5 +1,7 @@
 package typings.awsSdk.clientsComprehendMod
 
+import typings.awsSdk.awsSdkStrings.CHILD
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,21 +22,60 @@ type AugmentedManifestsDocumentTypeFormat = _AugmentedManifestsDocumentTypeForma
 
 type BatchItemErrorList = js.Array[BatchItemError]
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.LINE
+  - typings.awsSdk.awsSdkStrings.WORD
+  - java.lang.String
+*/
+type BlockType = _BlockType | java.lang.String
+
 type ClientRequestTokenString = java.lang.String
 
 type ComprehendArn = java.lang.String
 
 type ComprehendArnName = java.lang.String
 
+type ComprehendDatasetArn = java.lang.String
+
 type ComprehendEndpointArn = java.lang.String
 
 type ComprehendEndpointName = java.lang.String
+
+type ComprehendFlywheelArn = java.lang.String
 
 type ComprehendModelArn = java.lang.String
 
 type CustomerInputString = java.lang.String
 
 type CustomerInputStringList = js.Array[CustomerInputString]
+
+type DatasetAugmentedManifestsList = js.Array[DatasetAugmentedManifestsListItem]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.COMPREHEND_CSV
+  - typings.awsSdk.awsSdkStrings.AUGMENTED_MANIFEST
+  - java.lang.String
+*/
+type DatasetDataFormat = _DatasetDataFormat | java.lang.String
+
+type DatasetPropertiesList = js.Array[DatasetProperties]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.CREATING
+  - typings.awsSdk.awsSdkStrings.COMPLETED
+  - typings.awsSdk.awsSdkStrings.FAILED
+  - java.lang.String
+*/
+type DatasetStatus = _DatasetStatus | java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.TRAIN
+  - typings.awsSdk.awsSdkStrings.TEST
+  - java.lang.String
+*/
+type DatasetType = _DatasetType | java.lang.String
+
+type Description = java.lang.String
 
 type DocumentClassificationJobPropertiesList = js.Array[DocumentClassificationJobProperties]
 
@@ -48,6 +89,13 @@ type DocumentClassifierAugmentedManifestsList = js.Array[AugmentedManifestsListI
   - java.lang.String
 */
 type DocumentClassifierDataFormat = _DocumentClassifierDataFormat | java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.PLAIN_TEXT_DOCUMENT
+  - typings.awsSdk.awsSdkStrings.SEMI_STRUCTURED_DOCUMENT
+  - java.lang.String
+*/
+type DocumentClassifierDocumentTypeFormat = _DocumentClassifierDocumentTypeFormat | java.lang.String
 
 type DocumentClassifierEndpointArn = java.lang.String
 
@@ -82,6 +130,18 @@ type DocumentReadFeatureTypes = _DocumentReadFeatureTypes | java.lang.String
   - java.lang.String
 */
 type DocumentReadMode = _DocumentReadMode | java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.NATIVE_PDF
+  - typings.awsSdk.awsSdkStrings.SCANNED_PDF
+  - typings.awsSdk.awsSdkStrings.MS_WORD
+  - typings.awsSdk.awsSdkStrings.IMAGE
+  - typings.awsSdk.awsSdkStrings.PLAIN_TEXT
+  - typings.awsSdk.awsSdkStrings.TEXTRACT_DETECT_DOCUMENT_TEXT_JSON
+  - typings.awsSdk.awsSdkStrings.TEXTRACT_ANALYZE_DOCUMENT_JSON
+  - java.lang.String
+*/
+type DocumentType = _DocumentType | java.lang.String
 
 type DominantLanguageDetectionJobPropertiesList = js.Array[DominantLanguageDetectionJobProperties]
 
@@ -144,6 +204,35 @@ type EventsDetectionJobPropertiesList = js.Array[EventsDetectionJobProperties]
 
 type Float = scala.Double
 
+type FlywheelIterationId = java.lang.String
+
+type FlywheelIterationPropertiesList = js.Array[FlywheelIterationProperties]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.TRAINING
+  - typings.awsSdk.awsSdkStrings.EVALUATING
+  - typings.awsSdk.awsSdkStrings.COMPLETED
+  - typings.awsSdk.awsSdkStrings.FAILED
+  - typings.awsSdk.awsSdkStrings.STOP_REQUESTED
+  - typings.awsSdk.awsSdkStrings.STOPPED
+  - java.lang.String
+*/
+type FlywheelIterationStatus = _FlywheelIterationStatus | java.lang.String
+
+type FlywheelS3Uri = java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.CREATING
+  - typings.awsSdk.awsSdkStrings.ACTIVE
+  - typings.awsSdk.awsSdkStrings.UPDATING
+  - typings.awsSdk.awsSdkStrings.DELETING
+  - typings.awsSdk.awsSdkStrings.FAILED
+  - java.lang.String
+*/
+type FlywheelStatus = _FlywheelStatus | java.lang.String
+
+type FlywheelSummaryList = js.Array[FlywheelSummary]
+
 type IamRoleArn = java.lang.String
 
 type InferenceUnitsInteger = scala.Double
@@ -178,6 +267,10 @@ type KmsKeyId = java.lang.String
 
 type LabelDelimiter = java.lang.String
 
+type LabelListItem = java.lang.String
+
+type LabelsList = js.Array[LabelListItem]
+
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.en_
   - typings.awsSdk.awsSdkStrings.es_
@@ -186,14 +279,20 @@ type LabelDelimiter = java.lang.String
   - typings.awsSdk.awsSdkStrings.it_
   - typings.awsSdk.awsSdkStrings.pt_
   - typings.awsSdk.awsSdkStrings.ar_
-  - typings.awsSdk.awsSdkStrings.hi
+  - typings.awsSdk.awsSdkStrings.hi_
   - typings.awsSdk.awsSdkStrings.ja_
   - typings.awsSdk.awsSdkStrings.ko_
-  - typings.awsSdk.awsSdkStrings.zh
+  - typings.awsSdk.awsSdkStrings.zh_
   - typings.awsSdk.awsSdkStrings.`zh-TW`
   - java.lang.String
 */
 type LanguageCode = _LanguageCode | java.lang.String
+
+type ListOfBlockReferences = js.Array[BlockReference]
+
+type ListOfBlocks = js.Array[Block]
+
+type ListOfChildBlocks = js.Array[ChildBlock]
 
 type ListOfClasses = js.Array[DocumentClass]
 
@@ -213,11 +312,17 @@ type ListOfDetectTargetedSentimentResult = js.Array[BatchDetectTargetedSentiment
 
 type ListOfDocumentReadFeatureTypes = js.Array[DocumentReadFeatureTypes]
 
+type ListOfDocumentType = js.Array[DocumentTypeListItem]
+
 type ListOfDominantLanguages = js.Array[DominantLanguage]
 
 type ListOfEntities = js.Array[Entity]
 
 type ListOfEntityLabels = js.Array[EntityLabel]
+
+type ListOfErrors = js.Array[ErrorsListItem]
+
+type ListOfExtractedCharacters = js.Array[ExtractedCharactersListItem]
 
 type ListOfKeyPhrases = js.Array[KeyPhrase]
 
@@ -229,9 +334,13 @@ type ListOfPiiEntities = js.Array[PiiEntity]
 
 type ListOfPiiEntityTypes = js.Array[PiiEntityType]
 
+type ListOfRelationships = js.Array[RelationshipsListItem]
+
 type ListOfSyntaxTokens = js.Array[SyntaxToken]
 
 type ListOfTargetedSentimentEntities = js.Array[TargetedSentimentEntity]
+
+type ListOfWarnings = js.Array[WarningsListItem]
 
 type MaskCharacter = java.lang.String
 
@@ -245,11 +354,38 @@ type MaxResultsInteger = scala.Double
   - typings.awsSdk.awsSdkStrings.STOPPED
   - typings.awsSdk.awsSdkStrings.IN_ERROR
   - typings.awsSdk.awsSdkStrings.TRAINED
+  - typings.awsSdk.awsSdkStrings.TRAINED_WITH_WARNING
   - java.lang.String
 */
 type ModelStatus = _ModelStatus | java.lang.String
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.DOCUMENT_CLASSIFIER
+  - typings.awsSdk.awsSdkStrings.ENTITY_RECOGNIZER
+  - java.lang.String
+*/
+type ModelType = _ModelType | java.lang.String
+
+type NumberOfDocuments = scala.Double
+
 type NumberOfTopicsInteger = scala.Double
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.TEXTRACT_BAD_PAGE
+  - typings.awsSdk.awsSdkStrings.TEXTRACT_PROVISIONED_THROUGHPUT_EXCEEDED
+  - typings.awsSdk.awsSdkStrings.PAGE_CHARACTERS_EXCEEDED
+  - typings.awsSdk.awsSdkStrings.PAGE_SIZE_EXCEEDED
+  - typings.awsSdk.awsSdkStrings.INTERNAL_SERVER_ERROR
+  - java.lang.String
+*/
+type PageBasedErrorCode = _PageBasedErrorCode | java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.INFERENCING_PLAINTEXT_WITH_NATIVE_TRAINED_MODEL
+  - typings.awsSdk.awsSdkStrings.INFERENCING_NATIVE_DOCUMENT_WITH_PLAINTEXT_TRAINED_MODEL
+  - java.lang.String
+*/
+type PageBasedWarningCode = _PageBasedWarningCode | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ADJ
@@ -336,11 +472,17 @@ type Policy = java.lang.String
 
 type PolicyRevisionId = java.lang.String
 
+type Polygon = js.Array[Point]
+
+type RelationshipType = CHILD | java.lang.String
+
 type S3Uri = java.lang.String
 
 type SecurityGroupId = java.lang.String
 
 type SecurityGroupIds = js.Array[SecurityGroupId]
+
+type SemiStructuredDocumentBlob = Buffer | js.typedarray.Uint8Array | Blob | java.lang.String
 
 type SentimentDetectionJobPropertiesList = js.Array[SentimentDetectionJobProperties]
 
@@ -361,6 +503,8 @@ type SentimentType = _SentimentType | java.lang.String
 type Split = _Split | java.lang.String
 
 type String = java.lang.String
+
+type StringList = js.Array[String]
 
 type SubnetId = java.lang.String
 

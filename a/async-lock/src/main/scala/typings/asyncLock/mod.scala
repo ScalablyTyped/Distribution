@@ -1,5 +1,7 @@
 package typings.asyncLock
 
+import typings.asyncLock.asyncLockInts.`0`
+import typings.asyncLock.asyncLockInts.`1000`
 import typings.std.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,19 +18,24 @@ object mod {
   }
   
   /* static member */
+  @JSImport("async-lock", "DEFAULT_MAX_EXECUTION_TIME")
+  @js.native
+  val DEFAULT_MAX_EXECUTION_TIME: `0` = js.native
+  
+  /* static member */
   @JSImport("async-lock", "DEFAULT_MAX_OCCUPATION_TIME")
   @js.native
-  val DEFAULT_MAX_OCCUPATION_TIME: Double = js.native
+  val DEFAULT_MAX_OCCUPATION_TIME: `0` = js.native
   
   /* static member */
   @JSImport("async-lock", "DEFAULT_MAX_PENDING")
   @js.native
-  val DEFAULT_MAX_PENDING: Double = js.native
+  val DEFAULT_MAX_PENDING: `1000` = js.native
   
   /* static member */
   @JSImport("async-lock", "DEFAULT_TIMEOUT")
   @js.native
-  val DEFAULT_TIMEOUT: Double = js.native
+  val DEFAULT_TIMEOUT: `0` = js.native
   
   @js.native
   trait AsyncLock extends StObject {
@@ -160,6 +167,13 @@ object mod {
     var domainReentrant: js.UndefOr[Boolean] = js.undefined
     
     /**
+      * Max amount of time allowed between acquiring the lock and completing execution.
+      *
+      * @default 0 (Never)
+      */
+    var maxExecutionTime: js.UndefOr[Double] = js.undefined
+    
+    /**
       * Max amount of time allowed between entering the queue and completing execution.
       *
       * @default 0 (Never)
@@ -209,6 +223,10 @@ object mod {
       inline def setDomainReentrant(value: Boolean): Self = StObject.set(x, "domainReentrant", value.asInstanceOf[js.Any])
       
       inline def setDomainReentrantUndefined: Self = StObject.set(x, "domainReentrant", js.undefined)
+      
+      inline def setMaxExecutionTime(value: Double): Self = StObject.set(x, "maxExecutionTime", value.asInstanceOf[js.Any])
+      
+      inline def setMaxExecutionTimeUndefined: Self = StObject.set(x, "maxExecutionTime", js.undefined)
       
       inline def setMaxOccupationTime(value: Double): Self = StObject.set(x, "maxOccupationTime", value.asInstanceOf[js.Any])
       

@@ -6,48 +6,47 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Pages extends StObject {
   
-  var action: js.UndefOr[String] = js.undefined
+  var enterprise: js.UndefOr[Htmlurl] = js.undefined
   
-  var comment: js.UndefOr[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['issue-comment'] */ js.Any
-  ] = js.undefined
+  var installation: js.UndefOr[NodeidString] = js.undefined
   
-  var issue: js.UndefOr[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['issue'] */ js.Any
-  ] = js.undefined
+  var organization: js.UndefOr[Hooksurl] = js.undefined
   
-  var pages: js.UndefOr[js.Array[Pagename]] = js.undefined
+  /** @description The pages that were updated. */
+  var pages: js.Array[ActionHtmlurl]
+  
+  var repository: Allowupdatebranch
+  
+  var sender: Avatarurl
 }
 object Pages {
   
-  inline def apply(): Pages = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(pages: js.Array[ActionHtmlurl], repository: Allowupdatebranch, sender: Avatarurl): Pages = {
+    val __obj = js.Dynamic.literal(pages = pages.asInstanceOf[js.Any], repository = repository.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[Pages]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: Pages] (val x: Self) extends AnyVal {
     
-    inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setEnterprise(value: Htmlurl): Self = StObject.set(x, "enterprise", value.asInstanceOf[js.Any])
     
-    inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+    inline def setEnterpriseUndefined: Self = StObject.set(x, "enterprise", js.undefined)
     
-    inline def setComment(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['issue-comment'] */ js.Any
-    ): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+    inline def setInstallation(value: NodeidString): Self = StObject.set(x, "installation", value.asInstanceOf[js.Any])
     
-    inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+    inline def setInstallationUndefined: Self = StObject.set(x, "installation", js.undefined)
     
-    inline def setIssue(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['issue'] */ js.Any
-    ): Self = StObject.set(x, "issue", value.asInstanceOf[js.Any])
+    inline def setOrganization(value: Hooksurl): Self = StObject.set(x, "organization", value.asInstanceOf[js.Any])
     
-    inline def setIssueUndefined: Self = StObject.set(x, "issue", js.undefined)
+    inline def setOrganizationUndefined: Self = StObject.set(x, "organization", js.undefined)
     
-    inline def setPages(value: js.Array[Pagename]): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
+    inline def setPages(value: js.Array[ActionHtmlurl]): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
     
-    inline def setPagesUndefined: Self = StObject.set(x, "pages", js.undefined)
+    inline def setPagesVarargs(value: ActionHtmlurl*): Self = StObject.set(x, "pages", js.Array(value*))
     
-    inline def setPagesVarargs(value: Pagename*): Self = StObject.set(x, "pages", js.Array(value*))
+    inline def setRepository(value: Allowupdatebranch): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
+    
+    inline def setSender(value: Avatarurl): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
   }
 }

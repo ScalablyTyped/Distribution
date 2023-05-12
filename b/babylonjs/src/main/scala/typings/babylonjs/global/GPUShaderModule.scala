@@ -12,5 +12,5 @@ open class GPUShaderModule ()
      with typings.babylonjs.GPUShaderModule {
   
   /* CompleteClass */
-  override def compilationInfo(): js.Promise[GPUCompilationInfo] = js.native
+  override def getCompilationInfo(): js.Promise[GPUCompilationInfo] = js.native
 }

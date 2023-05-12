@@ -29,6 +29,18 @@ trait IModelDecorationOptions extends StObject {
   
   var blockClassName: js.UndefOr[String | Null] = js.undefined
   
+  var blockDoesNotCollapse: js.UndefOr[Boolean | Null] = js.undefined
+  
+  /**
+    * Indicates if this block should be rendered after the last line.
+    * In this case, the range must be empty and set to the last line.
+    */
+  var blockIsAfterEnd: js.UndefOr[Boolean | Null] = js.undefined
+  
+  var blockPadding: js.UndefOr[
+    (js.Tuple4[/* top */ Double, /* right */ Double, /* bottom */ Double, /* left */ Double]) | Null
+  ] = js.undefined
+  
   /**
     * CSS class name describing the decoration.
     */
@@ -38,6 +50,12 @@ trait IModelDecorationOptions extends StObject {
     * If set, the decoration will be rendered in the lines decorations with this CSS class name, but only for the first line in case of line wrapping.
     */
   var firstLineDecorationClassName: js.UndefOr[String | Null] = js.undefined
+  
+  /**
+    * If set and the decoration has {@link glyphMarginClassName} set, render this decoration
+    * with the specified {@link IModelDecorationGlyphMarginOptions} in the glyph margin.
+    */
+  var glyphMargin: js.UndefOr[IModelDecorationGlyphMarginOptions | Null] = js.undefined
   
   /**
     * If set, the decoration will be rendered in the glyph margin with this CSS class name.
@@ -149,6 +167,24 @@ object IModelDecorationOptions {
     
     inline def setBlockClassNameUndefined: Self = StObject.set(x, "blockClassName", js.undefined)
     
+    inline def setBlockDoesNotCollapse(value: Boolean): Self = StObject.set(x, "blockDoesNotCollapse", value.asInstanceOf[js.Any])
+    
+    inline def setBlockDoesNotCollapseNull: Self = StObject.set(x, "blockDoesNotCollapse", null)
+    
+    inline def setBlockDoesNotCollapseUndefined: Self = StObject.set(x, "blockDoesNotCollapse", js.undefined)
+    
+    inline def setBlockIsAfterEnd(value: Boolean): Self = StObject.set(x, "blockIsAfterEnd", value.asInstanceOf[js.Any])
+    
+    inline def setBlockIsAfterEndNull: Self = StObject.set(x, "blockIsAfterEnd", null)
+    
+    inline def setBlockIsAfterEndUndefined: Self = StObject.set(x, "blockIsAfterEnd", js.undefined)
+    
+    inline def setBlockPadding(value: js.Tuple4[/* top */ Double, /* right */ Double, /* bottom */ Double, /* left */ Double]): Self = StObject.set(x, "blockPadding", value.asInstanceOf[js.Any])
+    
+    inline def setBlockPaddingNull: Self = StObject.set(x, "blockPadding", null)
+    
+    inline def setBlockPaddingUndefined: Self = StObject.set(x, "blockPadding", js.undefined)
+    
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     inline def setClassNameNull: Self = StObject.set(x, "className", null)
@@ -160,6 +196,8 @@ object IModelDecorationOptions {
     inline def setFirstLineDecorationClassNameNull: Self = StObject.set(x, "firstLineDecorationClassName", null)
     
     inline def setFirstLineDecorationClassNameUndefined: Self = StObject.set(x, "firstLineDecorationClassName", js.undefined)
+    
+    inline def setGlyphMargin(value: IModelDecorationGlyphMarginOptions): Self = StObject.set(x, "glyphMargin", value.asInstanceOf[js.Any])
     
     inline def setGlyphMarginClassName(value: String): Self = StObject.set(x, "glyphMarginClassName", value.asInstanceOf[js.Any])
     
@@ -174,6 +212,10 @@ object IModelDecorationOptions {
     inline def setGlyphMarginHoverMessageUndefined: Self = StObject.set(x, "glyphMarginHoverMessage", js.undefined)
     
     inline def setGlyphMarginHoverMessageVarargs(value: IMarkdownString*): Self = StObject.set(x, "glyphMarginHoverMessage", js.Array(value*))
+    
+    inline def setGlyphMarginNull: Self = StObject.set(x, "glyphMargin", null)
+    
+    inline def setGlyphMarginUndefined: Self = StObject.set(x, "glyphMargin", js.undefined)
     
     inline def setHoverMessage(value: IMarkdownString | js.Array[IMarkdownString]): Self = StObject.set(x, "hoverMessage", value.asInstanceOf[js.Any])
     

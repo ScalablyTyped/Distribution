@@ -57,12 +57,17 @@ trait OpsItem extends StObject {
   var OperationalData: js.UndefOr[OpsItemOperationalData] = js.undefined
   
   /**
+    * The OpsItem Amazon Resource Name (ARN).
+    */
+  var OpsItemArn: js.UndefOr[typings.awsSdk.clientsSsmMod.OpsItemArn] = js.undefined
+  
+  /**
     * The ID of the OpsItem.
     */
   var OpsItemId: js.UndefOr[typings.awsSdk.clientsSsmMod.OpsItemId] = js.undefined
   
   /**
-    * The type of OpsItem. Currently, the only valid values are /aws/changerequest and /aws/issue.
+    * The type of OpsItem. Systems Manager supports the following types of OpsItems:    /aws/issue  This type of OpsItem is used for default OpsItems created by OpsCenter.     /aws/changerequest  This type of OpsItem is used by Change Manager for reviewing and approving or rejecting change requests.     /aws/insights  This type of OpsItem is used by OpsCenter for aggregating and reporting on duplicate OpsItems.   
     */
   var OpsItemType: js.UndefOr[typings.awsSdk.clientsSsmMod.OpsItemType] = js.undefined
   
@@ -162,6 +167,10 @@ object OpsItem {
     inline def setOperationalData(value: OpsItemOperationalData): Self = StObject.set(x, "OperationalData", value.asInstanceOf[js.Any])
     
     inline def setOperationalDataUndefined: Self = StObject.set(x, "OperationalData", js.undefined)
+    
+    inline def setOpsItemArn(value: OpsItemArn): Self = StObject.set(x, "OpsItemArn", value.asInstanceOf[js.Any])
+    
+    inline def setOpsItemArnUndefined: Self = StObject.set(x, "OpsItemArn", js.undefined)
     
     inline def setOpsItemId(value: OpsItemId): Self = StObject.set(x, "OpsItemId", value.asInstanceOf[js.Any])
     

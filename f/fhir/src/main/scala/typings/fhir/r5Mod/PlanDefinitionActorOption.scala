@@ -20,6 +20,8 @@ trait PlanDefinitionActorOption
   
   var _type: js.UndefOr[Element] = js.undefined
   
+  var _typeCanonical: js.UndefOr[Element] = js.undefined
+  
   /**
     * The role the participant should play in performing the described action.
     */
@@ -31,6 +33,11 @@ trait PlanDefinitionActorOption
   var `type`: js.UndefOr[
     careteam_ | device_ | group_ | healthcareservice_ | location_ | organization_ | patient_ | practitioner_ | practitionerrole_ | relatedperson_
   ] = js.undefined
+  
+  /**
+    * The type of participant in the action.
+    */
+  var typeCanonical: js.UndefOr[String] = js.undefined
   
   /**
     * When this element is a reference, it SHOULD be a reference to a definitional resource (for example, a location type, rather than a specific location).
@@ -55,6 +62,10 @@ object PlanDefinitionActorOption {
       value: careteam_ | device_ | group_ | healthcareservice_ | location_ | organization_ | patient_ | practitioner_ | practitionerrole_ | relatedperson_
     ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
+    inline def setTypeCanonical(value: String): Self = StObject.set(x, "typeCanonical", value.asInstanceOf[js.Any])
+    
+    inline def setTypeCanonicalUndefined: Self = StObject.set(x, "typeCanonical", js.undefined)
+    
     inline def setTypeReference(value: Reference): Self = StObject.set(x, "typeReference", value.asInstanceOf[js.Any])
     
     inline def setTypeReferenceUndefined: Self = StObject.set(x, "typeReference", js.undefined)
@@ -62,6 +73,10 @@ object PlanDefinitionActorOption {
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     inline def set_type(value: Element): Self = StObject.set(x, "_type", value.asInstanceOf[js.Any])
+    
+    inline def set_typeCanonical(value: Element): Self = StObject.set(x, "_typeCanonical", value.asInstanceOf[js.Any])
+    
+    inline def set_typeCanonicalUndefined: Self = StObject.set(x, "_typeCanonical", js.undefined)
     
     inline def set_typeUndefined: Self = StObject.set(x, "_type", js.undefined)
   }

@@ -18,6 +18,8 @@ object examplesJsmNodesCoreTempNodeMod {
   trait TempNode
     extends typings.three.examplesJsmNodesCoreNodeMod.default {
     
+    def hasDependencies(builder: typings.three.examplesJsmNodesCoreNodeBuilderMod.default): Unit = js.native
+    
     var isTempNode: `true` = js.native
   }
 }

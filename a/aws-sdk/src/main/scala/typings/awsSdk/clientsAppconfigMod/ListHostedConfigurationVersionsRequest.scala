@@ -25,6 +25,11 @@ trait ListHostedConfigurationVersionsRequest extends StObject {
     * A token to start the list. Use this token to get the next set of results. 
     */
   var NextToken: js.UndefOr[typings.awsSdk.clientsAppconfigMod.NextToken] = js.undefined
+  
+  /**
+    * An optional filter that can be used to specify the version label of an AppConfig hosted configuration version. This parameter supports filtering by prefix using a wildcard, for example "v2*". If you don't specify an asterisk at the end of the value, only an exact match is returned.
+    */
+  var VersionLabel: js.UndefOr[QueryName] = js.undefined
 }
 object ListHostedConfigurationVersionsRequest {
   
@@ -47,5 +52,9 @@ object ListHostedConfigurationVersionsRequest {
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    
+    inline def setVersionLabel(value: QueryName): Self = StObject.set(x, "VersionLabel", value.asInstanceOf[js.Any])
+    
+    inline def setVersionLabelUndefined: Self = StObject.set(x, "VersionLabel", js.undefined)
   }
 }

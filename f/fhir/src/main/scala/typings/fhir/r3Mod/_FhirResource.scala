@@ -104,7 +104,7 @@ import typings.fhir.fhirStrings.refuted
 import typings.fhir.fhirStrings.registered
 import typings.fhir.fhirStrings.rejected
 import typings.fhir.fhirStrings.requested
-import typings.fhir.fhirStrings.requirements
+import typings.fhir.fhirStrings.requirements_
 import typings.fhir.fhirStrings.resource
 import typings.fhir.fhirStrings.retired
 import typings.fhir.fhirStrings.root
@@ -199,7 +199,7 @@ object _FhirResource {
     date: String,
     fhirVersion: String,
     format: js.Array[String],
-    kind: instance | capability | requirements,
+    kind: instance | capability | requirements_,
     status: draft | active | retired | unknown
   ): typings.fhir.r3Mod.CapabilityStatement = {
     val __obj = js.Dynamic.literal(acceptUnknown = acceptUnknown.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any], fhirVersion = fhirVersion.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], resourceType = "CapabilityStatement", status = status.asInstanceOf[js.Any])

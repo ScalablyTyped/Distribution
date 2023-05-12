@@ -16,10 +16,5 @@ object distSrcErrorsMod {
     @js.native
     def ERR_INVALID_PARAMETERS: String = js.native
     inline def ERR_INVALID_PARAMETERS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ERR_INVALID_PARAMETERS")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@libp2p/peer-store/dist/src/errors", "codes.ERR_NOT_FOUND")
-    @js.native
-    def ERR_NOT_FOUND: String = js.native
-    inline def ERR_NOT_FOUND_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ERR_NOT_FOUND")(x.asInstanceOf[js.Any])
   }
 }

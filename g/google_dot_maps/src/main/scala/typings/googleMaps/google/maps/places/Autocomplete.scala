@@ -7,12 +7,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A widget that provides Place predictions based on a user&#39;s text input.
-  * It attaches to an input element of type <code>text</code>, and listens for
-  * text entry in that field. The list of predictions is presented as a
-  * drop-down list, and is updated as text is entered.
-  */
 @js.native
 trait Autocomplete
   extends StObject

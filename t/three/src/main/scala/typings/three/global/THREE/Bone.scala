@@ -6,5 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("THREE.Bone")
 @js.native
+/**
+  * Creates a new {@link Bone}.
+  */
 open class Bone ()
   extends typings.three.mod.Bone

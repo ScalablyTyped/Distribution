@@ -10,14 +10,37 @@ object distErrorInteractionRequiredAuthErrorMod {
   
   @JSImport("@azure/msal-common/dist/error/InteractionRequiredAuthError", "InteractionRequiredAuthError")
   @js.native
-  open class InteractionRequiredAuthError () extends AuthError {
-    def this(errorCode: String) = this()
-    def this(errorCode: String, errorMessage: String) = this()
-    def this(errorCode: Unit, errorMessage: String) = this()
-    def this(errorCode: String, errorMessage: String, subError: String) = this()
-    def this(errorCode: String, errorMessage: Unit, subError: String) = this()
-    def this(errorCode: Unit, errorMessage: String, subError: String) = this()
-    def this(errorCode: Unit, errorMessage: Unit, subError: String) = this()
+  open class InteractionRequiredAuthError protected () extends AuthError {
+    def this(
+      errorCode: js.UndefOr[String],
+      errorMessage: js.UndefOr[String],
+      subError: js.UndefOr[String],
+      timestamp: js.UndefOr[String],
+      traceId: js.UndefOr[String],
+      correlationId: js.UndefOr[String],
+      claims: js.UndefOr[String]
+    ) = this()
+    
+    /**
+      * https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-common/docs/claims-challenge.md
+      *
+      * A string with extra claims needed for the token request to succeed
+      * web site: redirect the user to the authorization page and set the extra claims
+      * web api: include the claims in the WWW-Authenticate header that are sent back to the client so that it knows to request a token with the extra claims
+      * desktop application or browser context: include the claims when acquiring the token interactively
+      * app to app context (client_credentials): include the claims in the AcquireTokenByClientCredential request
+      */
+    var claims: String = js.native
+    
+    /**
+      * The time the error occured at
+      */
+    var timestamp: String = js.native
+    
+    /**
+      * TraceId associated with the error
+      */
+    var traceId: String = js.native
   }
   /* static members */
   object InteractionRequiredAuthError {

@@ -1,7 +1,7 @@
 
 # Scala.js typings for yaireo__tagify
 
-Typings are for version 4.16
+Typings are for version 4.17
 
 ## Library description:
 lightweight, efficient Tags input component in Vanilla JS / React / Angular [super customizable, tiny size & top performance]

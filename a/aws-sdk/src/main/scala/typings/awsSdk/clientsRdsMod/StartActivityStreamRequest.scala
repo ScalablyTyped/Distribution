@@ -12,7 +12,7 @@ trait StartActivityStreamRequest extends StObject {
   var ApplyImmediately: js.UndefOr[BooleanOptional] = js.undefined
   
   /**
-    * Specifies whether the database activity stream includes engine-native audit fields. This option only applies to an Oracle DB instance. By default, no engine-native audit fields are included.
+    * Specifies whether the database activity stream includes engine-native audit fields. This option applies to an Oracle or Microsoft SQL Server DB instance. By default, no engine-native audit fields are included.
     */
   var EngineNativeAuditFieldsIncluded: js.UndefOr[BooleanOptional] = js.undefined
   

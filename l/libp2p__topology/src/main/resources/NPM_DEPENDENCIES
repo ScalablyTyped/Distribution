@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@libp2p/topology" : "3.0.1"
+      "@libp2p/topology" : "4.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "@libp2p/topology" : "3.0.1"
+      "@libp2p/topology" : "4.0.1"
     }
   ],
   "compile-devDependencies" : [

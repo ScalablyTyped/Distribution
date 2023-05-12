@@ -1,174 +1,90 @@
 package typings.listr2.mod
 
-import org.scalablytyped.runtime.Instantiable3
-import typings.listr2.anon.Prompt
-import typings.listr2.anon.TypeofDefaultRenderer
-import typings.rxjs.mod.Subject
+import typings.listr2.anon.BottomBar
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** Default updating renderer for Listr2 */
+@JSImport("listr2", "DefaultRenderer")
 @js.native
-trait DefaultRenderer extends ListrRenderer {
+open class DefaultRenderer protected () extends ListrRenderer {
+  def this(
+    tasks: js.Array[ListrDefaultRendererTask],
+    options: ListrDefaultRendererOptions,
+    events: ListrEventManager
+  ) = this()
   
-  /* private */ var addSuffixToMessage: Any = js.native
+  /* private */ var activePrompt: Any = js.native
   
-  /* private */ var bottomBar: Any = js.native
+  /* private */ var bottom: Any = js.native
   
-  def createRender(): String = js.native
-  def createRender(options: Prompt): String = js.native
+  /* private */ val cache: Any = js.native
   
-  /* private */ var dumpData: Any = js.native
+  /* private */ var calculate: Any = js.native
   
-  /* private */ var formatString: Any = js.native
+  def create(): String = js.native
+  def create(options: BottomBar): String = js.native
   
-  @JSName("getSelfOrParentOption")
-  def getSelfOrParentOption_rendererOptions[T /* <: /* import warning: importer.ImportType#apply Failed type conversion: keyof listr2.anon.TypeofDefaultRenderer & new (tasks : std.Array<listr2.listr2.Task<any, typeof DefaultRenderer>>, options : typeof DefaultRenderer['rendererOptions'], renderHook$ : rxjs.rxjs.Subject<void> | undefined): listr2.listr2.DefaultRenderer['rendererOptions'] */ js.Any */](
-    task: Task[
-      Any, 
-      TypeofDefaultRenderer & (Instantiable3[
-        /* tasks */ js.Array[
-          Task[
-            Any, 
-            /* import warning: importer.ImportType#apply Failed type conversion: typeof DefaultRenderer */ js.Any
-          ]
-        ], 
-        /* import warning: importer.ImportType#apply Failed type conversion: typeof DefaultRenderer['rendererOptions'] */ /* options */ js.Any, 
-        /* renderHook$ */ js.UndefOr[Subject[Unit]], 
-        DefaultRenderer
-      ])
-    ],
-    key: T
-  ): /* import warning: importer.ImportType#apply Failed type conversion: listr2.anon.TypeofDefaultRenderer & new (tasks : std.Array<listr2.listr2.Task<any, typeof DefaultRenderer>>, options : typeof DefaultRenderer['rendererOptions'], renderHook$ : rxjs.rxjs.Subject<void> | undefined): listr2.listr2.DefaultRenderer['rendererOptions'][T] */ js.Any = js.native
+  /* private */ var dump: Any = js.native
   
-  /* private */ var getSymbol: Any = js.native
+  /* private */ val events: Any = js.native
   
-  @JSName("getTaskOptions")
-  def getTaskOptions_rendererOptions(
-    task: Task[
-      Any, 
-      TypeofDefaultRenderer & (Instantiable3[
-        /* tasks */ js.Array[
-          Task[
-            Any, 
-            /* import warning: importer.ImportType#apply Failed type conversion: typeof DefaultRenderer */ js.Any
-          ]
-        ], 
-        /* import warning: importer.ImportType#apply Failed type conversion: typeof DefaultRenderer['rendererOptions'] */ /* options */ js.Any, 
-        /* renderHook$ */ js.UndefOr[Subject[Unit]], 
-        DefaultRenderer
-      ])
-    ]
-  ): /* import warning: importer.ImportType#apply Failed type conversion: listr2.anon.TypeofDefaultRenderer & new (tasks : std.Array<listr2.listr2.Task<any, typeof DefaultRenderer>>, options : typeof DefaultRenderer['rendererOptions'], renderHook$ : rxjs.rxjs.Subject<void> | undefined): listr2.listr2.DefaultRenderer['rendererTaskOptions'] */ js.Any = js.native
+  /* protected */ def format(message: String, icon: String, level: Double): js.Array[String] = js.native
   
-  @JSName("getTaskTime")
-  def getTaskTime_rendererOptions(
-    task: Task[
-      Any, 
-      TypeofDefaultRenderer & (Instantiable3[
-        /* tasks */ js.Array[
-          Task[
-            Any, 
-            /* import warning: importer.ImportType#apply Failed type conversion: typeof DefaultRenderer */ js.Any
-          ]
-        ], 
-        /* import warning: importer.ImportType#apply Failed type conversion: typeof DefaultRenderer['rendererOptions'] */ /* options */ js.Any, 
-        /* renderHook$ */ js.UndefOr[Subject[Unit]], 
-        DefaultRenderer
-      ])
-    ]
-  ): String = js.native
+  /* private */ var indent: Any = js.native
   
-  @JSName("hasPersistentOutput")
-  def hasPersistentOutput_rendererOptions(
-    task: Task[
-      Any, 
-      TypeofDefaultRenderer & (Instantiable3[
-        /* tasks */ js.Array[
-          Task[
-            Any, 
-            /* import warning: importer.ImportType#apply Failed type conversion: typeof DefaultRenderer */ js.Any
-          ]
-        ], 
-        /* import warning: importer.ImportType#apply Failed type conversion: typeof DefaultRenderer['rendererOptions'] */ /* options */ js.Any, 
-        /* renderHook$ */ js.UndefOr[Subject[Unit]], 
-        DefaultRenderer
-      ])
-    ]
-  ): Boolean = js.native
+  def isBottomBar(task: ListrDefaultRendererTask): Boolean = js.native
   
-  @JSName("hasTimer")
-  def hasTimer_rendererOptions(
-    task: Task[
-      Any, 
-      TypeofDefaultRenderer & (Instantiable3[
-        /* tasks */ js.Array[
-          Task[
-            Any, 
-            /* import warning: importer.ImportType#apply Failed type conversion: typeof DefaultRenderer */ js.Any
-          ]
-        ], 
-        /* import warning: importer.ImportType#apply Failed type conversion: typeof DefaultRenderer['rendererOptions'] */ /* options */ js.Any, 
-        /* renderHook$ */ js.UndefOr[Subject[Unit]], 
-        DefaultRenderer
-      ])
-    ]
-  ): Boolean = js.native
+  /* private */ val logger: Any = js.native
   
-  /* private */ var id: Any = js.native
+  /* private */ val options: Any = js.native
   
-  /* private */ var indentMultilineOutput: Any = js.native
-  
-  @JSName("isBottomBar")
-  def isBottomBar_rendererOptions(
-    task: Task[
-      Any, 
-      TypeofDefaultRenderer & (Instantiable3[
-        /* tasks */ js.Array[
-          Task[
-            Any, 
-            /* import warning: importer.ImportType#apply Failed type conversion: typeof DefaultRenderer */ js.Any
-          ]
-        ], 
-        /* import warning: importer.ImportType#apply Failed type conversion: typeof DefaultRenderer['rendererOptions'] */ /* options */ js.Any, 
-        /* renderHook$ */ js.UndefOr[Subject[Unit]], 
-        DefaultRenderer
-      ])
-    ]
-  ): Boolean = js.native
-  
-  /* private */ var multiLineRenderer: Any = js.native
-  
-  var options: /* import warning: importer.ImportType#apply Failed type conversion: listr2.anon.TypeofDefaultRenderer & new (tasks : std.Array<listr2.listr2.Task<any, typeof DefaultRenderer>>, options : typeof DefaultRenderer['rendererOptions'], renderHook$ : rxjs.rxjs.Subject<void> | undefined): listr2.listr2.DefaultRenderer['rendererOptions'] */ js.Any = js.native
-  
-  /* private */ var promptBar: Any = js.native
+  /* private */ var prompt: Any = js.native
   
   /* private */ var renderBottomBar: Any = js.native
   
-  @JSName("renderHook$")
-  var renderHook$: js.UndefOr[Subject[Unit]] = js.native
-  
   /* private */ var renderPrompt: Any = js.native
+  
+  /* private */ var renderer: Any = js.native
+  
+  /* private */ var reset: Any = js.native
   
   /* private */ val spinner: Any = js.native
   
-  /* private */ var spinnerPosition: Any = js.native
+  /* protected */ def style(task: ListrDefaultRendererTask): String = js.native
+  /* protected */ def style(task: ListrDefaultRendererTask, output: Boolean): String = js.native
   
-  var tasks: js.Array[
-    Task[
-      Any, 
-      TypeofDefaultRenderer & (Instantiable3[
-        /* tasks */ js.Array[
-          Task[
-            Any, 
-            /* import warning: importer.ImportType#apply Failed type conversion: typeof DefaultRenderer */ js.Any
-          ]
-        ], 
-        /* import warning: importer.ImportType#apply Failed type conversion: typeof DefaultRenderer['rendererOptions'] */ /* options */ js.Any, 
-        /* renderHook$ */ js.UndefOr[Subject[Unit]], 
-        DefaultRenderer
-      ])
-    ]
-  ] = js.native
+  /* private */ val tasks: Any = js.native
+  
+  /* private */ var truncate: Any = js.native
+  
+  def update(): Unit = js.native
+  
+  /* private */ var updater: Any = js.native
+  
+  /* private */ var wrap: Any = js.native
+}
+object DefaultRenderer {
+  
+  @JSImport("listr2", "DefaultRenderer")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @JSImport("listr2", "DefaultRenderer.nonTTY")
+  @js.native
+  def nonTTY: Boolean = js.native
+  inline def nonTTY_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("nonTTY")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("listr2", "DefaultRenderer.rendererOptions")
+  @js.native
+  def rendererOptions: ListrDefaultRendererOptions = js.native
+  inline def rendererOptions_=(x: ListrDefaultRendererOptions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rendererOptions")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("listr2", "DefaultRenderer.rendererTaskOptions")
+  @js.native
+  def rendererTaskOptions: ListrDefaultRendererTaskOptions = js.native
+  inline def rendererTaskOptions_=(x: ListrDefaultRendererTaskOptions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rendererTaskOptions")(x.asInstanceOf[js.Any])
 }

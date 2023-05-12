@@ -1,7 +1,7 @@
 
 # Scala.js typings for shopify-buy
 
-Typings are for version 2.10
+Typings are for version 2.17
 
 ## Library description:
 The JS Buy SDK is a lightweight library that allows you to build ecommerce into any website. It is based on Shopify's API and provides the ability to retrieve products and collections from your shop, add products to a cart, and checkout.

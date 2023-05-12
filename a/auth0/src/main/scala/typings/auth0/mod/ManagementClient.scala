@@ -190,10 +190,10 @@ open class ManagementClient[A, U] protected () extends StObject {
   def getConnection(params: ObjectWithId): js.Promise[Connection] = js.native
   def getConnection(params: ObjectWithId, cb: js.Function2[/* err */ js.Error, /* connection */ Connection, Unit]): Unit = js.native
   
+  // Connections
   def getConnections(): js.Promise[js.Array[Connection]] = js.native
   def getConnections(cb: js.Function2[/* err */ js.Error, /* connections */ js.Array[Connection], Unit]): Unit = js.native
-  // Connections
-  def getConnections(params: PagingOptions): js.Promise[js.Array[Connection]] = js.native
+  def getConnections(params: GetConnectionsOptions): js.Promise[js.Array[Connection]] = js.native
   
   def getCustomDomain(params: ObjectWithId): js.Promise[Domain] = js.native
   def getCustomDomain(params: ObjectWithId, cb: js.Function2[/* err */ js.Error, /* data */ Domain, Unit]): Unit = js.native
@@ -241,6 +241,12 @@ open class ManagementClient[A, U] protected () extends StObject {
     cb: js.Function2[/* err */ js.Error, /* response */ js.Array[Enrollment], Unit]
   ): Unit = js.native
   
+  def getGuardianFactors(): Unit = js.native
+  def getGuardianFactors(cb: js.Function2[/* err */ js.Error, /* guardianFactor */ js.Array[GuardianFactor], Unit]): Unit = js.native
+  // Guardian Factors
+  @JSName("getGuardianFactors")
+  def getGuardianFactors_Promise(): js.Promise[js.Array[GuardianFactor]] = js.native
+  
   def getJob(params: ObjectWithId): Unit = js.native
   def getJob(params: ObjectWithId, cb: js.Function2[/* err */ js.Error, /* data */ Job, Unit]): Unit = js.native
   // Jobs
@@ -249,6 +255,11 @@ open class ManagementClient[A, U] protected () extends StObject {
   
   def getLog(params: ObjectWithId): Unit = js.native
   def getLog(params: ObjectWithId, cb: js.Function2[/* err */ js.Error, /* data */ LogEvent, Unit]): Unit = js.native
+  
+  // Log streams
+  def getLogStreams(): js.Promise[js.Array[LogStream]] = js.native
+  def getLogStreams(cb: js.Function2[/* err */ js.Error, /* data */ js.Array[LogStream], Unit]): Unit = js.native
+  
   // Logs
   @JSName("getLog")
   def getLog_Promise(params: ObjectWithId): js.Promise[LogEvent] = js.native

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@fluentui/style-utilities" : "8.8.1"
+      "@fluentui/style-utilities" : "8.9.10"
     }
   ],
   "test-dependencies" : [
     {
-      "@fluentui/style-utilities" : "8.8.1"
+      "@fluentui/style-utilities" : "8.9.10"
     }
   ],
   "compile-devDependencies" : [

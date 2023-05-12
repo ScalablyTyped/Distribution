@@ -16,5 +16,7 @@ object distTypesDateUtilsMod {
   
   inline def parseRfc3339DateTime(value: Any): js.UndefOr[js.Date] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRfc3339DateTime")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Date]]
   
+  inline def parseRfc3339DateTimeWithOffset(value: Any): js.UndefOr[js.Date] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRfc3339DateTimeWithOffset")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Date]]
+  
   inline def parseRfc7231DateTime(value: Any): js.UndefOr[js.Date] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRfc7231DateTime")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Date]]
 }

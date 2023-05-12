@@ -22,23 +22,5 @@ object distSrcListenerMod {
     peerId: PeerId,
     transport: WebRTCStar,
     options: WebRTCStarListenerOptions
-  ): WebRTCListener = (^.asInstanceOf[js.Dynamic].applyDynamic("createListener")(upgrader.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], peerId.asInstanceOf[js.Any], transport.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[WebRTCListener]
-  
-  @js.native
-  trait WebRTCListener extends Listener {
-    
-    /* private */ val handler: Any = js.native
-    
-    /* private */ var listeningAddr: Any = js.native
-    
-    /* private */ val options: Any = js.native
-    
-    /* private */ val peerId: Any = js.native
-    
-    /* private */ var signallingUrl: Any = js.native
-    
-    /* private */ val transport: Any = js.native
-    
-    /* private */ val upgrader: Any = js.native
-  }
+  ): Listener = (^.asInstanceOf[js.Dynamic].applyDynamic("createListener")(upgrader.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], peerId.asInstanceOf[js.Any], transport.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Listener]
 }

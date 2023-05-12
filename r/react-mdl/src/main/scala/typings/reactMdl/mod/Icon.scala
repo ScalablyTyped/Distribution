@@ -10,7 +10,7 @@ open class Icon protected () extends _MDLComponent[IconProps] {
   def this(props: IconProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: IconProps, context: Any) = this()
 }

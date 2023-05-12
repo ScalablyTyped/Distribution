@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CreateLocalGatewayRouteTableResult extends StObject {
   
+  /**
+    * Information about the local gateway route table.
+    */
   var LocalGatewayRouteTable: js.UndefOr[typings.awsSdk.clientsEc2Mod.LocalGatewayRouteTable] = js.undefined
 }
 object CreateLocalGatewayRouteTableResult {

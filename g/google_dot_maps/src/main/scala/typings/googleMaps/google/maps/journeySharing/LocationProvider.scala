@@ -5,11 +5,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Available only in the v=beta channel: https://goo.gle/3oAthT3.
-  * Parent class of location providers. Use the child location provider that
-  * suits your purpose, rather than the parent class.
-  */
 trait LocationProvider extends StObject {
   
   /**

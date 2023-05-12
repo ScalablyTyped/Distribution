@@ -6,7 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GetParametersPathOrgUsername extends StObject {
   
-  /** This is the user's organization dashboard. You must be authenticated as the user to view this. */
+  /**
+    * List organization events for the authenticated user
+    * @description This is the user's organization dashboard. You must be authenticated as the user to view this.
+    */
   var get: ParametersPathOrgUsername
 }
 object GetParametersPathOrgUsername {

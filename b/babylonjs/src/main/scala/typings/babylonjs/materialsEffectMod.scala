@@ -96,8 +96,18 @@ object materialsEffectMod {
     
     /* private */ var _fallbacks: Any = js.native
     
+    /**
+      * @internal
+      * Forces the code from bindForSubMesh to be fully run the next time it is called
+      * It is used in frozen mode to make sure the effect is properly rebound when a new effect is created
+      */
+    var _forceRebindOnNextCall: Boolean = js.native
+    
     /** @internal */
     var _fragmentSourceCode: String = js.native
+    
+    /** @internal */
+    /* private */ var _fragmentSourceCodeBeforeMigration: Any = js.native
     
     /* private */ var _fragmentSourceCodeOverride: Any = js.native
     
@@ -185,6 +195,9 @@ object materialsEffectMod {
     /** @internal */
     var _vertexSourceCode: String = js.native
     
+    /** @internal */
+    /* private */ var _vertexSourceCodeBeforeMigration: Any = js.native
+    
     /* private */ var _vertexSourceCodeOverride: Any = js.native
     
     /**
@@ -238,8 +251,16 @@ object materialsEffectMod {
     
     /**
       * Gets the fragment shader source code of this effect
+      * This is the final source code that will be compiled, after all the processing has been done (pre-processing applied, code injection/replacement, etc)
       */
     def fragmentSourceCode: String = js.native
+    
+    /**
+      * Gets the fragment shader source code before migration.
+      * This is the source code after the include directives have been replaced by their contents but before the code is migrated, i.e. before ShaderProcess._ProcessShaderConversion is executed.
+      * This method is, among other things, responsible for parsing #if/#define directives as well as converting GLES2 syntax to GLES3 (in the case of WebGL).
+      */
+    def fragmentSourceCodeBeforeMigration: String = js.native
     
     /**
       * Returns the attribute at the given index.
@@ -376,12 +397,12 @@ object materialsEffectMod {
     var onErrorObservable: Observable[Effect] = js.native
     
     /**
-      * Gets the fragment shader source code before it has been processed by the preprocessor
+      * Gets the fragment shader source code before it has been modified by any processing
       */
     def rawFragmentSourceCode: String = js.native
     
     /**
-      * Gets the vertex shader source code before it has been processed by the preprocessor
+      * Gets the vertex shader source code before it has been modified by any processing
       */
     def rawVertexSourceCode: String = js.native
     
@@ -691,6 +712,76 @@ object materialsEffectMod {
     def setTextureSampler(name: String, sampler: Nullable[TextureSampler]): Unit = js.native
     
     /**
+      * Sets an unsigned integer value on a uniform variable.
+      * @param uniformName Name of the variable.
+      * @param value Value to be set.
+      * @returns this effect.
+      */
+    def setUInt(uniformName: String, value: Double): Effect = js.native
+    
+    /**
+      * Sets an unsigned int2 value on a uniform variable.
+      * @param uniformName Name of the variable.
+      * @param x First unsigned int in uint2.
+      * @param y Second unsigned int in uint2.
+      * @returns this effect.
+      */
+    def setUInt2(uniformName: String, x: Double, y: Double): Effect = js.native
+    
+    /**
+      * Sets an unsigned int3 value on a uniform variable.
+      * @param uniformName Name of the variable.
+      * @param x First unsigned int in uint3.
+      * @param y Second unsigned int in uint3.
+      * @param z Third unsigned int in uint3.
+      * @returns this effect.
+      */
+    def setUInt3(uniformName: String, x: Double, y: Double, z: Double): Effect = js.native
+    
+    /**
+      * Sets an unsigned int4 value on a uniform variable.
+      * @param uniformName Name of the variable.
+      * @param x First unsigned int in uint4.
+      * @param y Second unsigned int in uint4.
+      * @param z Third unsigned int in uint4.
+      * @param w Fourth unsigned int in uint4.
+      * @returns this effect.
+      */
+    def setUInt4(uniformName: String, x: Double, y: Double, z: Double, w: Double): Effect = js.native
+    
+    /**
+      * Sets an unsigned int array on a uniform variable.
+      * @param uniformName Name of the variable.
+      * @param array array to be set.
+      * @returns this effect.
+      */
+    def setUIntArray(uniformName: String, array: js.typedarray.Uint32Array): Effect = js.native
+    
+    /**
+      * Sets an unsigned int array 2 on a uniform variable. (Array is specified as single array eg. [1,2,3,4] will result in [[1,2],[3,4]] in the shader)
+      * @param uniformName Name of the variable.
+      * @param array array to be set.
+      * @returns this effect.
+      */
+    def setUIntArray2(uniformName: String, array: js.typedarray.Uint32Array): Effect = js.native
+    
+    /**
+      * Sets an unsigned int array 3 on a uniform variable. (Array is specified as single array eg. [1,2,3,4,5,6] will result in [[1,2,3],[4,5,6]] in the shader)
+      * @param uniformName Name of the variable.
+      * @param array array to be set.
+      * @returns this effect.
+      */
+    def setUIntArray3(uniformName: String, array: js.typedarray.Uint32Array): Effect = js.native
+    
+    /**
+      * Sets an unsigned int array 4 on a uniform variable. (Array is specified as single array eg. [1,2,3,4,5,6,7,8] will result in [[1,2,3,4],[5,6,7,8]] in the shader)
+      * @param uniformName Name of the variable.
+      * @param array array to be set.
+      * @returns this effect.
+      */
+    def setUIntArray4(uniformName: String, array: js.typedarray.Uint32Array): Effect = js.native
+    
+    /**
       * Sets a Vector2 on a uniform variable.
       * @param uniformName Name of the variable.
       * @param vector2 vector2 to be set.
@@ -721,8 +812,16 @@ object materialsEffectMod {
     
     /**
       * Gets the vertex shader source code of this effect
+      * This is the final source code that will be compiled, after all the processing has been done (pre-processing applied, code injection/replacement, etc)
       */
     def vertexSourceCode: String = js.native
+    
+    /**
+      * Gets the vertex shader source code before migration.
+      * This is the source code after the include directives have been replaced by their contents but before the code is migrated, i.e. before ShaderProcess._ProcessShaderConversion is executed.
+      * This method is, among other things, responsible for parsing #if/#define directives as well as converting GLES2 syntax to GLES3 (in the case of WebGL).
+      */
+    def vertexSourceCodeBeforeMigration: String = js.native
   }
   /* static members */
   object Effect {

@@ -16,7 +16,7 @@ object libIconsCodepenCircleFilledMod extends Shortcut {
   @js.native
   trait CodepenCircleFilledIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_CodepenCircleFilledIconType: String = js.native

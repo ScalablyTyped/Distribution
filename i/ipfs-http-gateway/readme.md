@@ -1,7 +1,7 @@
 
 # Scala.js typings for ipfs-http-gateway
 
-Typings are for version 0.12.0
+Typings are for version 0.13.0
 
 ## Library description:
 JavaScript implementation of the IPFS specification

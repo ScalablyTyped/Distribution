@@ -3,7 +3,7 @@ package typings.properUrlJoin
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
 import typings.properUrlJoin.properUrlJoinStrings.keep
-import typings.queryString.mod.StringifyOptions
+import typings.queryString.baseMod.StringifyOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

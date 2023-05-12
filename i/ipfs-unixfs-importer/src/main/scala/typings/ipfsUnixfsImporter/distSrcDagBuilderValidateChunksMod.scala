@@ -11,13 +11,10 @@ object distSrcDagBuilderValidateChunksMod {
   @js.native
   val ^ : js.Any = js.native
   
-  /**
-    * @typedef {import('../types').ChunkValidator} ChunkValidator
-    */
-  /**
-    * @type {ChunkValidator}
-    */
-  inline def default(source: AsyncIterable[js.typedarray.Uint8Array]): AsyncIterable[js.typedarray.Uint8Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(source.asInstanceOf[js.Any]).asInstanceOf[AsyncIterable[js.typedarray.Uint8Array]]
+  inline def defaultChunkValidator(): ChunkValidator = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultChunkValidator")().asInstanceOf[ChunkValidator]
   
-  type ChunkValidator = typings.ipfsUnixfsImporter.distSrcTypesMod.ChunkValidator
+  type ChunkValidator = js.Function1[
+    /* source */ AsyncIterable[js.typedarray.Uint8Array], 
+    AsyncIterable[js.typedarray.Uint8Array]
+  ]
 }

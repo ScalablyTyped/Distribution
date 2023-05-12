@@ -71,6 +71,10 @@ object yandexMapsStrings {
   inline def blur: blur = "blur".asInstanceOf[blur]
   
   @js.native
+  sealed trait browser extends StObject
+  inline def browser: browser = "browser".asInstanceOf[browser]
+  
+  @js.native
   sealed trait cancel extends StObject
   inline def cancel: cancel = "cancel".asInstanceOf[cancel]
   
@@ -155,8 +159,16 @@ object yandexMapsStrings {
   inline def coords: coords = "coords".asInstanceOf[coords]
   
   @js.native
+  sealed trait copy extends StObject
+  inline def copy: copy = "copy".asInstanceOf[copy]
+  
+  @js.native
   sealed trait cuechange extends StObject
   inline def cuechange: cuechange = "cuechange".asInstanceOf[cuechange]
+  
+  @js.native
+  sealed trait cut extends StObject
+  inline def cut: cut = "cut".asInstanceOf[cut]
   
   @js.native
   sealed trait dblclick extends StObject
@@ -2003,6 +2015,10 @@ object yandexMapsStrings {
   inline def pagePixels: pagePixels = "pagePixels".asInstanceOf[pagePixels]
   
   @js.native
+  sealed trait paste extends StObject
+  inline def paste: paste = "paste".asInstanceOf[paste]
+  
+  @js.native
   sealed trait pause extends StObject
   inline def pause: pause = "pause".asInstanceOf[pause]
   
@@ -2271,6 +2287,10 @@ object yandexMapsStrings {
   @js.native
   sealed trait wheel extends StObject
   inline def wheel: wheel = "wheel".asInstanceOf[wheel]
+  
+  @js.native
+  sealed trait yandex extends StObject
+  inline def yandex: yandex = "yandex".asInstanceOf[yandex]
   
   @js.native
   sealed trait yandexNumbersignairPanorama

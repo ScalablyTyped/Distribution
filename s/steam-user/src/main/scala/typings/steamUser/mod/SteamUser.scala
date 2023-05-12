@@ -3,10 +3,12 @@ package typings.steamUser.mod
 import typings.node.bufferMod.global.Buffer
 import typings.std.Record
 import typings.steamUser.anon.Adress
+import typings.steamUser.anon.AppID
 import typings.steamUser.anon.Append
 import typings.steamUser.anon.Appids
 import typings.steamUser.anon.Apps
 import typings.steamUser.anon.Balance
+import typings.steamUser.anon.CanceledTicketCount
 import typings.steamUser.anon.Classid
 import typings.steamUser.anon.Descriptions
 import typings.steamUser.anon.DeviceToken
@@ -17,6 +19,7 @@ import typings.steamUser.anon.ErroreresultEResult
 import typings.steamUser.anon.Flags
 import typings.steamUser.anon.FoilBadgeLavel
 import typings.steamUser.anon.Friends
+import typings.steamUser.anon.GcToken
 import typings.steamUser.anon.GrantedAppIds
 import typings.steamUser.anon.GroupID
 import typings.steamUser.anon.IncludeCanceled
@@ -32,6 +35,7 @@ import typings.steamUser.anon.PlayerCount
 import typings.steamUser.anon.PlayingApp
 import typings.steamUser.anon.Servers
 import typings.steamUser.anon.ServersRecord
+import typings.steamUser.anon.SessionTicket
 import typings.steamUser.anon.Tags
 import typings.steamUser.anon.Tokens
 import typings.steamUser.anon.Users
@@ -43,11 +47,14 @@ import typings.steamUser.steamUserStrings.appLaunched
 import typings.steamUser.steamUserStrings.appOwnershipCached
 import typings.steamUser.steamUserStrings.appQuit
 import typings.steamUser.steamUserStrings.appUpdate
+import typings.steamUser.steamUserStrings.authTicketStatus
+import typings.steamUser.steamUserStrings.authTicketValidation
 import typings.steamUser.steamUserStrings.autoRelogin
 import typings.steamUser.steamUserStrings.changelist
 import typings.steamUser.steamUserStrings.changelistUpdateInterval
 import typings.steamUser.steamUserStrings.communityMessages
 import typings.steamUser.steamUserStrings.dataDirectory
+import typings.steamUser.steamUserStrings.debug
 import typings.steamUser.steamUserStrings.disconnected
 import typings.steamUser.steamUserStrings.emailInfo
 import typings.steamUser.steamUserStrings.enablePicsCache
@@ -88,6 +95,7 @@ import typings.steamUser.steamUserStrings.receivedFromGC
 import typings.steamUser.steamUserStrings.saveAppTickets
 import typings.steamUser.steamUserStrings.sentry
 import typings.steamUser.steamUserStrings.singleSentryfile
+import typings.steamUser.steamUserStrings.socksProxy
 import typings.steamUser.steamUserStrings.steamGuard
 import typings.steamUser.steamUserStrings.tradeOffers
 import typings.steamUser.steamUserStrings.tradeRequest
@@ -113,6 +121,21 @@ trait SteamUser
     * An object containing information about your account. `null` until `accountInfo` is emitted.
     */
   var accountInfo: AccountInfo | Null = js.native
+  
+  def activateAuthSessionTickets(appid: Double, tickets: js.Array[(Record[String, Any]) | Buffer]): js.Promise[Unit] = js.native
+  def activateAuthSessionTickets(
+    appid: Double,
+    tickets: js.Array[(Record[String, Any]) | Buffer],
+    callback: js.Function1[/* err */ js.Error | Null, Unit]
+  ): js.Promise[Unit] = js.native
+  def activateAuthSessionTickets(appid: Double, tickets: Buffer): js.Promise[Unit] = js.native
+  def activateAuthSessionTickets(appid: Double, tickets: Buffer, callback: js.Function1[/* err */ js.Error | Null, Unit]): js.Promise[Unit] = js.native
+  def activateAuthSessionTickets(appid: Double, tickets: Record[String, Any]): js.Promise[Unit] = js.native
+  def activateAuthSessionTickets(
+    appid: Double,
+    tickets: Record[String, Any],
+    callback: js.Function1[/* err */ js.Error | Null, Unit]
+  ): js.Promise[Unit] = js.native
   
   def activateSharingAuthorization(ownerSteamID: String, deviceToken: String): Unit = js.native
   def activateSharingAuthorization(ownerSteamID: String, deviceToken: DeviceToken): Unit = js.native
@@ -192,6 +215,37 @@ trait SteamUser
   def blockUser(steamID: typings.steamid.mod.^): js.Promise[Unit] = js.native
   def blockUser(steamID: typings.steamid.mod.^, callback: js.Function1[/* err */ js.Error | Null, Unit]): js.Promise[Unit] = js.native
   
+  /**
+    * Cancel your own auth session tickets. Once canceled, every client that activated your ticket will receive a
+    * notification that your ticket has been canceled. If you are still in-game, they will probably kick you.
+    * @param appid
+    * @param [gcTokens=null] - The gcToken from the specific ticket(s) you want to cancel. Omit or pass null to cancel all active tickets.
+    * @param [callback]
+    */
+  def cancelAuthSessionTickets(appid: Double): js.Promise[CanceledTicketCount] = js.native
+  def cancelAuthSessionTickets(appid: Double, gcTokens: String): js.Promise[CanceledTicketCount] = js.native
+  def cancelAuthSessionTickets(
+    appid: Double,
+    gcTokens: String,
+    callback: js.Function2[/* err */ js.Error | Null, /* obj */ CanceledTicketCount, Unit]
+  ): js.Promise[CanceledTicketCount] = js.native
+  def cancelAuthSessionTickets(appid: Double, gcTokens: js.Array[String]): js.Promise[CanceledTicketCount] = js.native
+  def cancelAuthSessionTickets(
+    appid: Double,
+    gcTokens: js.Array[String],
+    callback: js.Function2[/* err */ js.Error | Null, /* obj */ CanceledTicketCount, Unit]
+  ): js.Promise[CanceledTicketCount] = js.native
+  def cancelAuthSessionTickets(
+    appid: Double,
+    gcTokens: Null,
+    callback: js.Function2[/* err */ js.Error | Null, /* obj */ CanceledTicketCount, Unit]
+  ): js.Promise[CanceledTicketCount] = js.native
+  def cancelAuthSessionTickets(
+    appid: Double,
+    gcTokens: Unit,
+    callback: js.Function2[/* err */ js.Error | Null, /* obj */ CanceledTicketCount, Unit]
+  ): js.Promise[CanceledTicketCount] = js.native
+  
   def cancelTradeRequest(steamID: String): Unit = js.native
   def cancelTradeRequest(steamID: typings.steamid.mod.^): Unit = js.native
   
@@ -228,6 +282,28 @@ trait SteamUser
     link: String,
     callback: js.Function2[/* err */ js.Error | Null, /* response */ QuickInviteLinkValidity, Unit]
   ): js.Promise[QuickInviteLinkValidity] = js.native
+  
+  def createAuthSessionTicket(appid: Double): js.Promise[SessionTicket] = js.native
+  def createAuthSessionTicket(appid: Double, callback: js.Function1[/* obj */ SessionTicket, Unit]): js.Promise[SessionTicket] = js.native
+  
+  //#endregion "FAMILY SHARING"
+  //#region "APP AUTH"
+  // also see https://github.com/DefinitelyTyped/DefinitelyTyped/discussions/63789
+  /**
+    * Requests an "encrypted app ticket" from Steam servers for a particular game.
+    * @param appid - The Steam AppID of the app for which you want a ticket
+    * @param [userData] - If the app expects some "user data"
+    *                     (arbitrary data which will be encrypted into the ticket),
+    *                     provide it here.
+    *                     Otherwise omit this argument or pass an empty Buffer.
+    * @param [callback] - Called when the request completes
+    */
+  def createEncryptedAppTicket(appid: Double, userData: Buffer): js.Promise[Buffer] = js.native
+  def createEncryptedAppTicket(
+    appid: Double,
+    userData: Buffer,
+    callback: js.Function2[/* err */ js.Error | Null, /* encryptedAppTicket */ Buffer, Unit]
+  ): js.Promise[Buffer] = js.native
   
   /**
     * Creates a friends group (or tag)
@@ -289,6 +365,44 @@ trait SteamUser
   def enableTwoFactor(callback: js.Function2[/* err */ js.Error | Null, /* response */ Record[String, Any], Unit]): js.Promise[Record[String, Any]] = js.native
   
   /**
+    * Ends our auth sessions with other users. Once ended, we will no longer receive notifications when users' auth session
+    * tickets are canceled or otherwise invalidated. If we've already been notified that a ticket was canceled or invalidated,
+    * the session was already automatically ended.
+    * @param appid
+    * @param [steamIDs] - SteamID objects or strings that can parse into SteamIDs. Null or omit to cancel all auth sessions for the app.
+    * @param [callback]
+    */
+  def endAuthSessions(appid: Double): js.Promise[CanceledTicketCount] = js.native
+  def endAuthSessions(appid: Double, steamIDs: String): js.Promise[CanceledTicketCount] = js.native
+  def endAuthSessions(
+    appid: Double,
+    steamIDs: String,
+    callback: js.Function2[/* err */ js.Error | Null, /* obj */ CanceledTicketCount, Unit]
+  ): js.Promise[CanceledTicketCount] = js.native
+  def endAuthSessions(appid: Double, steamIDs: js.Array[String | typings.steamid.mod.^]): js.Promise[CanceledTicketCount] = js.native
+  def endAuthSessions(
+    appid: Double,
+    steamIDs: js.Array[String | typings.steamid.mod.^],
+    callback: js.Function2[js.Error | Null, /* obj */ CanceledTicketCount, Unit]
+  ): js.Promise[CanceledTicketCount] = js.native
+  def endAuthSessions(
+    appid: Double,
+    steamIDs: Null,
+    callback: js.Function2[/* err */ js.Error | Null, /* obj */ CanceledTicketCount, Unit]
+  ): js.Promise[CanceledTicketCount] = js.native
+  def endAuthSessions(
+    appid: Double,
+    steamIDs: Unit,
+    callback: js.Function2[/* err */ js.Error | Null, /* obj */ CanceledTicketCount, Unit]
+  ): js.Promise[CanceledTicketCount] = js.native
+  def endAuthSessions(appid: Double, steamIDs: typings.steamid.mod.^): js.Promise[CanceledTicketCount] = js.native
+  def endAuthSessions(
+    appid: Double,
+    steamIDs: typings.steamid.mod.^,
+    callback: js.Function2[/* err */ js.Error | Null, /* obj */ CanceledTicketCount, Unit]
+  ): js.Promise[CanceledTicketCount] = js.native
+  
+  /**
     * Finalize the process of enabling TOTP two-factor authentication
     * @param secret - Your shared secret
     * @param activationCode - The activation code you got in your email
@@ -311,6 +425,8 @@ trait SteamUser
   def gamesPlayed(apps: PlayedGame): Unit = js.native
   def gamesPlayed(apps: PlayedGame, force: Boolean): Unit = js.native
   
+  def getActiveAuthSessionTickets(): js.Array[GcToken] = js.native
+  
   /**
     * Get persona name history for one or more users.
     * @param userSteamIDs - SteamIDs of users to request aliases for
@@ -321,6 +437,9 @@ trait SteamUser
     userSteamIDs: js.Array[typings.steamid.mod.^ | String],
     callback: js.Function2[/* err */ js.Error | Null, /* users */ Record[String, Name], Unit]
   ): js.Promise[Record[String, Name]] = js.native
+  
+  def getAppOwnershipTicket(appid: Double): js.Promise[Buffer] = js.native
+  def getAppOwnershipTicket(appid: Double, callback: js.Function2[/* err */ js.Error | Null, /* ticket */ Buffer, Unit]): js.Promise[Buffer] = js.native
   
   /**
     * Get the localization keys for rich presence for an app on Steam.
@@ -821,6 +940,7 @@ trait SteamUser
   def logOn(details: LogOnDetailsNameKey): Unit = js.native
   def logOn(details: LogOnDetailsNamePass): Unit = js.native
   def logOn(details: LogOnDetailsNameToken): Unit = js.native
+  def logOn(details: LogOnDetailsRefresh): Unit = js.native
   
   /**
     * An object containing your friend groups (in the official client, these are called tags). Keys are numeric group IDs.
@@ -886,6 +1006,10 @@ trait SteamUser
     listener: js.Function1[/* args */ js.Tuple2[/* appid */ Double, /* data */ ProductInfo], Unit]
   ): this.type = js.native
   @JSName("off")
+  def off_authTicketStatus(event: authTicketStatus, listener: js.Function1[/* args */ js.Array[AppID], Unit]): this.type = js.native
+  @JSName("off")
+  def off_authTicketValidation(event: authTicketValidation, listener: js.Function1[/* args */ js.Array[AppID], Unit]): this.type = js.native
+  @JSName("off")
   def off_changelist(
     event: changelist,
     listener: js.Function1[
@@ -899,6 +1023,8 @@ trait SteamUser
   ): this.type = js.native
   @JSName("off")
   def off_communityMessages(event: communityMessages, listener: js.Function1[/* args */ js.Array[/* count */ Double], Unit]): this.type = js.native
+  @JSName("off")
+  def off_debug(event: debug, listener: js.Function1[/* args */ js.Array[/* message */ String], Unit]): this.type = js.native
   @JSName("off")
   def off_disconnected(
     event: disconnected,
@@ -1150,7 +1276,6 @@ trait SteamUser
       Unit
     ]
   ): this.type = js.native
-  // EVENTS
   @JSName("on")
   def on_appLaunched(event: appLaunched, listener: js.Function1[/* args */ js.Array[/* appid */ Double], Unit]): this.type = js.native
   /**
@@ -1167,6 +1292,10 @@ trait SteamUser
     listener: js.Function1[/* args */ js.Tuple2[/* appid */ Double, /* data */ ProductInfo], Unit]
   ): this.type = js.native
   @JSName("on")
+  def on_authTicketStatus(event: authTicketStatus, listener: js.Function1[/* args */ js.Array[AppID], Unit]): this.type = js.native
+  @JSName("on")
+  def on_authTicketValidation(event: authTicketValidation, listener: js.Function1[/* args */ js.Array[AppID], Unit]): this.type = js.native
+  @JSName("on")
   def on_changelist(
     event: changelist,
     listener: js.Function1[
@@ -1180,6 +1309,9 @@ trait SteamUser
   ): this.type = js.native
   @JSName("on")
   def on_communityMessages(event: communityMessages, listener: js.Function1[/* args */ js.Array[/* count */ Double], Unit]): this.type = js.native
+  // EVENTS
+  @JSName("on")
+  def on_debug(event: debug, listener: js.Function1[/* args */ js.Array[/* message */ String], Unit]): this.type = js.native
   @JSName("on")
   def on_disconnected(
     event: disconnected,
@@ -1441,6 +1573,10 @@ trait SteamUser
     listener: js.Function1[/* args */ js.Tuple2[/* appid */ Double, /* data */ ProductInfo], Unit]
   ): this.type = js.native
   @JSName("once")
+  def once_authTicketStatus(event: authTicketStatus, listener: js.Function1[/* args */ js.Array[AppID], Unit]): this.type = js.native
+  @JSName("once")
+  def once_authTicketValidation(event: authTicketValidation, listener: js.Function1[/* args */ js.Array[AppID], Unit]): this.type = js.native
+  @JSName("once")
   def once_changelist(
     event: changelist,
     listener: js.Function1[
@@ -1454,6 +1590,8 @@ trait SteamUser
   ): this.type = js.native
   @JSName("once")
   def once_communityMessages(event: communityMessages, listener: js.Function1[/* args */ js.Array[/* count */ Double], Unit]): this.type = js.native
+  @JSName("once")
+  def once_debug(event: debug, listener: js.Function1[/* args */ js.Array[/* message */ String], Unit]): this.type = js.native
   @JSName("once")
   def once_disconnected(
     event: disconnected,
@@ -1760,7 +1898,7 @@ trait SteamUser
   
   def removeAllListeners(): this.type = js.native
   def removeAllListeners(
-    event: appLaunched | appQuit | receivedFromGC | loggedOn | steamGuard | error | disconnected | sentry | webSession | loginKey | newItems | newComments | tradeOffers | communityMessages | offlineMessages | vanityURL | accountInfo | emailInfo | accountLimitations | vacBans | wallet | licenses | gifts | ownershipCached | changelist | appUpdate | packageUpdate | marketingMessages | tradeRequest | tradeResponse | tradeStarted | playingState | user | group | groupEvent | groupAnnouncement | friendRelationship | groupRelationship | friendsList | friendPersonasLoad | groupList | friendsGroupList | nicknameList | nickname | lobbyInvite
+    event: debug | appLaunched | appQuit | receivedFromGC | loggedOn | steamGuard | error | disconnected | sentry | webSession | loginKey | newItems | newComments | tradeOffers | communityMessages | offlineMessages | vanityURL | accountInfo | emailInfo | accountLimitations | vacBans | wallet | licenses | gifts | ownershipCached | changelist | appUpdate | packageUpdate | marketingMessages | tradeRequest | tradeResponse | tradeStarted | playingState | user | group | groupEvent | groupAnnouncement | friendRelationship | groupRelationship | friendsList | friendPersonasLoad | groupList | friendsGroupList | nicknameList | nickname | lobbyInvite | authTicketStatus | authTicketValidation
   ): this.type = js.native
   
   /**
@@ -1834,6 +1972,10 @@ trait SteamUser
     listener: js.Function1[/* args */ js.Tuple2[/* appid */ Double, /* data */ ProductInfo], Unit]
   ): this.type = js.native
   @JSName("removeListener")
+  def removeListener_authTicketStatus(event: authTicketStatus, listener: js.Function1[/* args */ js.Array[AppID], Unit]): this.type = js.native
+  @JSName("removeListener")
+  def removeListener_authTicketValidation(event: authTicketValidation, listener: js.Function1[/* args */ js.Array[AppID], Unit]): this.type = js.native
+  @JSName("removeListener")
   def removeListener_changelist(
     event: changelist,
     listener: js.Function1[
@@ -1847,6 +1989,8 @@ trait SteamUser
   ): this.type = js.native
   @JSName("removeListener")
   def removeListener_communityMessages(event: communityMessages, listener: js.Function1[/* args */ js.Array[/* count */ Double], Unit]): this.type = js.native
+  @JSName("removeListener")
+  def removeListener_debug(event: debug, listener: js.Function1[/* args */ js.Array[/* message */ String], Unit]): this.type = js.native
   @JSName("removeListener")
   def removeListener_disconnected(
     event: disconnected,
@@ -2279,6 +2423,10 @@ trait SteamUser
   def setOption_singleSentryfile(option: singleSentryfile): Unit = js.native
   @JSName("setOption")
   def setOption_singleSentryfile(option: singleSentryfile, value: Boolean): Unit = js.native
+  @JSName("setOption")
+  def setOption_socksProxy(option: socksProxy): Unit = js.native
+  @JSName("setOption")
+  def setOption_socksProxy(option: socksProxy, value: String): Unit = js.native
   @JSName("setOption")
   def setOption_webCompatibilityMode(option: webCompatibilityMode): Unit = js.native
   @JSName("setOption")

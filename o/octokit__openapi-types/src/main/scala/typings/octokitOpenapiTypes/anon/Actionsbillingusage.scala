@@ -1,52 +1,79 @@
 package typings.octokitOpenapiTypes.anon
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.octokitOpenapiTypes.mod.OneOf
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.COLLABORATOR
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.CONTRIBUTOR
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.DraftIssue
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.FIRST_TIMER
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.FIRST_TIME_CONTRIBUTOR
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.MANNEQUIN
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.MEMBER
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.NONE
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.OWNER
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.Team
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.PullRequest
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings._empty
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.`false positive`
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.`used in tests`
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.actions
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.active
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.all
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.analyst
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.closed
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.collaborators_only
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.composer
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.contributors_only
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.development
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.coordinator
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.critical
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.disabled
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.dismissed
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.erlang
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.error
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.evaluate
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.existing_users
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.false_positive
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.fix_started
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.finder
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.fixed
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.generated
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.inaccurate
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.go
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.high
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.library
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.local_only
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.no_bandwidth
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.low
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.maven
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.medium
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.none_
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.not_used
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.note
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.npm
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.nuget
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.one_day
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.one_month
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.one_week
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.open
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.other
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.pip
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.pub
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.read
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.remediation_developer
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.remediation_reviewer
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.remediation_verifier
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.reporter
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.resolved
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.revoked
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.runtime
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.rubygems
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.rust
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.selected
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.six_months
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.source
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.sponsor
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.test
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.three_days
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.tolerable_risk
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.tool
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.used_in_tests
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.warning
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.wont_fix
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.write
-import typings.std.Partial
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -58,7 +85,7 @@ trait Actionsbillingusage extends StObject {
     * @description A software package
     */
   @JSName("package")
-  var _package: Repository
+  var _package: Versioncount
   
   var `actions-billing-usage`: Includedminutes
   
@@ -88,11 +115,9 @@ trait Actionsbillingusage extends StObject {
   /** @description Whether GitHub Actions is enabled on the repository. */
   var `actions-enabled`: Boolean
   
-  var `actions-enterprise-permissions`: Enabledorganizations
-  
   var `actions-get-default-workflow-permissions`: Canapprovepullrequestreviews
   
-  var `actions-organization-permissions`: Selectedactionsurl
+  var `actions-organization-permissions`: Enabledrepositories
   
   /**
     * ActionsPublicKey
@@ -100,15 +125,18 @@ trait Actionsbillingusage extends StObject {
     */
   var `actions-public-key`: CreatedatId
   
-  var `actions-repository-permissions`: AllowedactionsEnabled
+  var `actions-repository-permissions`: Selectedactionsurl
   
   /**
     * Actions Secret
     * @description Set secrets for GitHub Actions.
     */
-  var `actions-secret`: CreatedatName
+  var `actions-secret`: NameUpdatedat
   
   var `actions-set-default-workflow-permissions`: Defaultworkflowpermissions
+  
+  /** Actions Variable */
+  var `actions-variable`: UpdatedatValue
   
   var `actions-workflow-access-to-repository`: Accesslevel
   
@@ -124,44 +152,56 @@ trait Actionsbillingusage extends StObject {
     */
   var `added-to-project-issue-event`: Projectcard
   
-  var `advanced-security-active-committers`: Totaladvancedsecuritycommitters
-  
-  var `advanced-security-active-committers-repository`: Advancedsecuritycommitters
-  
-  var `advanced-security-active-committers-user`: Lastpusheddate
+  /**
+    * Format: date-time
+    * @description The time that the alert was auto-dismissed in ISO 8601 format: `YYYY-MM-DDTHH:MM:SSZ`.
+    */
+  val `alert-auto-dismissed-at`: String | Null
   
   /**
     * Format: date-time
     * @description The time that the alert was created in ISO 8601 format: `YYYY-MM-DDTHH:MM:SSZ`.
     */
-  var `alert-created-at`: String
+  val `alert-created-at`: String
+  
+  /**
+    * Format: date-time
+    * @description The time that the alert was dismissed in ISO 8601 format: `YYYY-MM-DDTHH:MM:SSZ`.
+    */
+  val `alert-dismissed-at`: String | Null
+  
+  /**
+    * Format: date-time
+    * @description The time that the alert was no longer detected and was considered fixed in ISO 8601 format: `YYYY-MM-DDTHH:MM:SSZ`.
+    */
+  val `alert-fixed-at`: String | Null
   
   /**
     * Format: uri
     * @description The GitHub URL of the alert resource.
     */
-  var `alert-html-url`: String
+  val `alert-html-url`: String
   
   /**
     * Format: uri
     * @description The REST API URL for fetching the list of instances for an alert.
     */
-  var `alert-instances-url`: String
+  val `alert-instances-url`: String
   
   /** @description The security alert number. */
-  var `alert-number`: Double
+  val `alert-number`: Double
   
   /**
     * Format: date-time
     * @description The time that the alert was last updated in ISO 8601 format: `YYYY-MM-DDTHH:MM:SSZ`.
     */
-  var `alert-updated-at`: String
+  val `alert-updated-at`: String
   
   /**
     * Format: uri
     * @description The REST API URL of the alert resource.
     */
-  var `alert-url`: String
+  val `alert-url`: String
   
   /**
     * @description The permissions policy that controls the actions and reusable workflows that are allowed to run.
@@ -271,7 +311,7 @@ trait Actionsbillingusage extends StObject {
     * Branch With Protection
     * @description Branch With Protection
     */
-  var `branch-with-protection`: Links
+  var `branch-with-protection`: Protection
   
   /**
     * Check Annotation
@@ -284,6 +324,12 @@ trait Actionsbillingusage extends StObject {
     * @description A check performed on the code of a given code change
     */
   var `check-run`: Checksuite
+  
+  /**
+    * CheckRun
+    * @description A check performed on the code of a given code change
+    */
+  var `check-run-with-simple-check-suite`: Deployment
   
   /**
     * CheckSuite
@@ -329,12 +375,6 @@ trait Actionsbillingusage extends StObject {
     */
   var `code-scanning-alert-classification`: source | generated | test | library | Null
   
-  /**
-    * Format: date-time
-    * @description The time that the alert was dismissed in ISO 8601 format: `YYYY-MM-DDTHH:MM:SSZ`.
-    */
-  var `code-scanning-alert-dismissed-at`: String | Null
-  
   /** @description The dismissal comment associated with the dismissal of the alert. */
   var `code-scanning-alert-dismissed-comment`: String | Null
   
@@ -342,16 +382,10 @@ trait Actionsbillingusage extends StObject {
     * @description **Required when the state is dismissed.** The reason for dismissing or closing the alert.
     * @enum {string|null}
     */
-  var `code-scanning-alert-dismissed-reason`: Null | (`false positive`) | (/* won't fix */ String) | (`used in tests`)
+  var `code-scanning-alert-dismissed-reason`: _empty | (`false positive`) | (/* won't fix */ String) | (`used in tests`) | Null
   
   /** @description Identifies the variable values associated with the environment in which the analysis that generated this alert instance was performed, such as the language that was analyzed. */
   var `code-scanning-alert-environment`: String
-  
-  /**
-    * Format: date-time
-    * @description The time that the alert was no longer detected and was considered fixed in ISO 8601 format: `YYYY-MM-DDTHH:MM:SSZ`.
-    */
-  var `code-scanning-alert-fixed-at`: String | Null
   
   var `code-scanning-alert-instance`: Analysiskey
   
@@ -362,13 +396,19 @@ trait Actionsbillingusage extends StObject {
   
   var `code-scanning-alert-rule`: Fulldescription
   
-  var `code-scanning-alert-rule-summary`: Severity
+  var `code-scanning-alert-rule-summary`: DescriptionId
   
   /**
     * @description Sets the state of the code scanning alert. You must provide `dismissed_reason` when you set the state to `dismissed`.
     * @enum {string}
     */
   var `code-scanning-alert-set-state`: open | dismissed
+  
+  /**
+    * @description Severity of a code scanning alert.
+    * @enum {string}
+    */
+  var `code-scanning-alert-severity`: critical | high | medium | low | warning | note | error
   
   /**
     * @description State of a code scanning alert.
@@ -391,7 +431,7 @@ trait Actionsbillingusage extends StObject {
     * Format: date-time
     * @description The time that the analysis was created in ISO 8601 format: `YYYY-MM-DDTHH:MM:SSZ`.
     */
-  var `code-scanning-analysis-created-at`: String
+  val `code-scanning-analysis-created-at`: String
   
   /**
     * Analysis deletion
@@ -426,13 +466,25 @@ trait Actionsbillingusage extends StObject {
     * Format: uri
     * @description The REST API URL of the analysis resource.
     */
-  var `code-scanning-analysis-url`: String
+  val `code-scanning-analysis-url`: String
   
   /**
     * CodeQL Database
     * @description A CodeQL database.
     */
-  var `code-scanning-codeql-database`: Size
+  var `code-scanning-codeql-database`: Uploader
+  
+  /** @description Configuration for code scanning default setup. */
+  var `code-scanning-default-setup`: Languages
+  
+  /** @description Configuration for code scanning default setup. */
+  var `code-scanning-default-setup-update`: Querysuite
+  
+  /**
+    * @description You can use `run_url` to track the status of the run. This includes a property status and conclusion.
+    * You should not rely on this always being an actions workflow run object.
+    */
+  var `code-scanning-default-setup-update-response`: Runurl
   
   var `code-scanning-organization-alert-items`: Dismissedat
   
@@ -477,10 +529,16 @@ trait Actionsbillingusage extends StObject {
   var `codespace-machine`: Cpus
   
   /**
+    * Codespace
+    * @description A codespace.
+    */
+  var `codespace-with-full-repository`: Gitstatus
+  
+  /**
     * Codespaces Secret
     * @description Secrets for a GitHub Codespace.
     */
-  var `codespaces-org-secret`: Selectedrepositoriesurl
+  var `codespaces-org-secret`: CreatedatName
   
   /**
     * CodespacesPublicKey
@@ -492,7 +550,7 @@ trait Actionsbillingusage extends StObject {
     * Codespaces Secret
     * @description Secrets for a GitHub Codespace.
     */
-  var `codespaces-secret`: NameSelectedrepositoriesurl
+  var `codespaces-secret`: SelectedrepositoriesurlUpdatedat
   
   /**
     * CodespacesUserPublicKey
@@ -605,62 +663,31 @@ trait Actionsbillingusage extends StObject {
   var `converted-note-to-issue-issue-event`: CreatedatEvent
   
   /**
+    * Custom deployment protection rule app
+    * @description A GitHub App that is providing a custom deployment protection rule.
+    */
+  var `custom-deployment-rule-app`: Integrationurl
+  
+  /**
     * Demilestoned Issue Event
     * @description Demilestoned Issue Event
     */
   var `demilestoned-issue-event`: CommitidCommiturl
   
+  /** @description A Dependabot alert. */
   var `dependabot-alert`: Dependency
   
-  var `dependabot-alert-dependency`: Manifestpath
+  /** @description Details for the vulnerable package. */
+  val `dependabot-alert-package`: EcosystemName
   
-  /** @description An optional comment associated with the alert's dismissal. The maximum size is 280 characters. */
-  var `dependabot-alert-dismissed-comment`: String | Null
+  /** @description Details for the GitHub Security Advisory. */
+  val `dependabot-alert-security-advisory`: Cveid
   
-  /**
-    * @description **Required when the `state` is `dismissed`.** The reason for dismissing the Dependabot alert.
-    * @enum {string|null}
-    */
-  var `dependabot-alert-dismissed-reason`: fix_started | inaccurate | no_bandwidth | not_used | tolerable_risk | Null
+  /** @description Details pertaining to one vulnerable version range for the advisory. */
+  val `dependabot-alert-security-vulnerability`: Firstpatchedversion
   
-  /**
-    * Format: date-time
-    * @description The time that the alert was dismissed in ISO 8601 format: `YYYY-MM-DDTHH:MM:SSZ`.
-    */
-  var `dependabot-alert-dismissed_at`: String | Null
-  
-  /**
-    * Format: date-time
-    * @description The time that the alert was no longer detected and was considered fixed in ISO 8601 format: `YYYY-MM-DDTHH:MM:SSZ`.
-    */
-  var `dependabot-alert-fixed-at`: String | Null
-  
-  /** @description The details of the vulnerable package. */
-  var `dependabot-alert-package`: EcosystemName
-  
-  /**
-    * @description The scope of the vulnerable dependency.
-    * @enum {string|null}
-    */
-  var `dependabot-alert-scope`: development | runtime | Null
-  
-  /** @description The details of the security advisory, including summary, description, and severity. */
-  var `dependabot-alert-security-advisory`: Cveid
-  
-  /** @description The details of the vulnerability of a security advisory. */
-  var `dependabot-alert-security-vulnerability`: Package
-  
-  /**
-    * @description Sets the status of the dependabot alert. You must provide `dismissed_reason` when you set the state to `dismissed`.
-    * @enum {string}
-    */
-  var `dependabot-alert-set-state`: dismissed | open
-  
-  /**
-    * @description State of a Dependabot alert.
-    * @enum {string}
-    */
-  var `dependabot-alert-state`: dismissed | fixed | open
+  /** @description A Dependabot alert. */
+  var `dependabot-alert-with-repository`: Autodismissedat
   
   /**
     * DependabotPublicKey
@@ -672,7 +699,7 @@ trait Actionsbillingusage extends StObject {
     * Dependabot Secret
     * @description Set secrets for Dependabot.
     */
-  var `dependabot-secret`: CreatedatName
+  var `dependabot-secret`: NameUpdatedat
   
   var dependency: Dependencies
   
@@ -681,6 +708,12 @@ trait Actionsbillingusage extends StObject {
     * @description A diff of the dependencies between two commits.
     */
   var `dependency-graph-diff`: js.Array[Changetype]
+  
+  /**
+    * Dependency Graph SPDX SBOM
+    * @description A schema for the SPDX JSON format returned by the Dependency Graph.
+    */
+  var `dependency-graph-spdx-sbom`: Sbom
   
   /**
     * Deploy Key
@@ -701,17 +734,23 @@ trait Actionsbillingusage extends StObject {
   var `deployment-branch-policy`: NameNodeid
   
   /** Deployment branch policy name pattern */
-  var `deployment-branch-policy-name-pattern`: NameString
+  var `deployment-branch-policy-name-pattern`: Name
   
   /** @description The type of deployment branch policy for this environment. To allow all branches to deploy, set to `null`. */
   var `deployment-branch-policy-settings`: Custombranchpolicies | Null
+  
+  /**
+    * Deployment protection rule
+    * @description Deployment protection rule
+    */
+  var `deployment-protection-rule`: AppEnabled
   
   /**
     * @description The type of reviewer.
     * @example User
     * @enum {string}
     */
-  var `deployment-reviewer-type`: typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.User | Team
+  var `deployment-reviewer-type`: typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.User | typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.Team
   
   /**
     * Deployment
@@ -732,6 +771,12 @@ trait Actionsbillingusage extends StObject {
   var `diff-entry`: Bloburl
   
   /**
+    * Discussion
+    * @description A Discussion in a repository.
+    */
+  var discussion: Answerchosenat
+  
+  /**
     * Email
     * @description Email
     */
@@ -741,13 +786,7 @@ trait Actionsbillingusage extends StObject {
     * Empty Object
     * @description An object without any properties.
     */
-  var `empty-object`: StringDictionary[Any]
-  
-  /**
-    * @description The policy that controls the organizations in the enterprise that are allowed to run GitHub Actions.
-    * @enum {string}
-    */
-  var `enabled-organizations`: all | none_ | selected
+  var `empty-object`: Record[String, scala.Nothing]
   
   /**
     * @description The policy that controls the repositories in the organization that are allowed to run GitHub Actions.
@@ -757,7 +796,7 @@ trait Actionsbillingusage extends StObject {
   
   /**
     * Enterprise
-    * @description An enterprise account
+    * @description An enterprise on GitHub.
     */
   var enterprise: Htmlurl
   
@@ -807,7 +846,7 @@ trait Actionsbillingusage extends StObject {
     * Gist Commit
     * @description Gist Commit
     */
-  var `gist-commit`: ChangestatusCommittedat
+  var `gist-commit`: Version
   
   /**
     * Gist History
@@ -867,13 +906,13 @@ trait Actionsbillingusage extends StObject {
     * Webhook delivery
     * @description Delivery made by a webhook.
     */
-  var `hook-delivery`: Deliveredat
+  var `hook-delivery`: Duration
   
   /**
     * Simple webhook delivery
     * @description Delivery made by a webhook, without request and response information.
     */
-  var `hook-delivery-item`: Action
+  var `hook-delivery-item`: Deliveredat
   
   /** Hook Response */
   var `hook-response`: MessageStatus
@@ -882,7 +921,7 @@ trait Actionsbillingusage extends StObject {
     * Hovercard
     * @description Hovercard
     */
-  var hovercard: `393`
+  var hovercard: `445`
   
   /**
     * Import
@@ -907,6 +946,12 @@ trait Actionsbillingusage extends StObject {
     * @description GitHub apps are a new way to extend GitHub. They can be installed directly on organizations and user accounts and granted access to specific repositories. They come with granular permissions and built-in webhooks. GitHub apps are first class actors within GitHub.
     */
   var integration: Clientsecret
+  
+  /**
+    * Integration Installation Request
+    * @description Request to install an integration on a target
+    */
+  var `integration-installation-request`: Account
   
   /**
     * @description The duration of the interaction restriction. Default: `one_day`.
@@ -959,7 +1004,7 @@ trait Actionsbillingusage extends StObject {
     * Issue Event for Issue
     * @description Issue Event for Issue
     */
-  var `issue-event-for-issue`: Partial[EventId_] & Partial[AssignerCommitid] & Partial[IdNodeid] & Partial[IdMilestone] & Partial[NodeidPerformedviagithubapp] & Partial[Requestedteam] & Partial[CreatedatDismissedreview] & Partial[IdLockreason] & Partial[PerformedviagithubappProjectcard] & Partial[ProjectcardUrl]
+  var `issue-event-for-issue`: EventId_ | AssignerCommitid | NodeidPerformedviagithubapp | IdMilestone | PerformedviagithubappRename | Requestedteam | CreatedatDismissedreview | IdLockreason | PerformedviagithubappProjectcard | ProjectcardUrl
   
   /**
     * Issue Event Label
@@ -989,7 +1034,7 @@ trait Actionsbillingusage extends StObject {
     * Issue Search Result Item
     * @description Issue Search Result Item
     */
-  var `issue-search-result-item`: Locked
+  var `issue-search-result-item`: Labelsurl
   
   /**
     * Job
@@ -1013,7 +1058,7 @@ trait Actionsbillingusage extends StObject {
     * Label
     * @description Color-coded labels help you categorize and filter your issues (just like labels in Gmail).
     */
-  var label: DescriptionId
+  var label: DefaultDescription
   
   /**
     * Label Search Result Item
@@ -1031,13 +1076,13 @@ trait Actionsbillingusage extends StObject {
     * Language
     * @description Language
     */
-  var language: StringDictionary[Double]
+  var language: StringDictionary[js.UndefOr[Double]]
   
   /**
     * License
     * @description License
     */
-  var license: Conditions
+  var license: Implementation
   
   /**
     * License Content
@@ -1096,7 +1141,7 @@ trait Actionsbillingusage extends StObject {
     * metadata
     * @description User-defined metadata to store domain-specific information limited to 8 keys with scalar values.
     */
-  var metadata: StringDictionary[Partial[String] & Partial[Double] & Partial[Boolean]]
+  var metadata: StringDictionary[js.UndefOr[String | Double | Boolean | Null]]
   
   /**
     * Migration
@@ -1132,7 +1177,7 @@ trait Actionsbillingusage extends StObject {
     * Format: date-time
     * @description The time that the alert was last updated in ISO 8601 format: `YYYY-MM-DDTHH:MM:SSZ`.
     */
-  var `nullable-alert-updated-at`: String | Null
+  val `nullable-alert-updated-at`: String | Null
   
   /**
     * Code Of Conduct Simple
@@ -1193,22 +1238,22 @@ trait Actionsbillingusage extends StObject {
   
   /**
     * Repository
-    * @description A git repository
+    * @description A repository on GitHub.
     */
   var `nullable-repository`: Allowsquashmerge | Null
   
   /** Scoped Installation */
-  var `nullable-scoped-installation`: Account | Null
+  var `nullable-scoped-installation`: Hasmultiplesinglefiles | Null
   
   /**
     * Simple Commit
-    * @description Simple Commit
+    * @description A commit.
     */
   var `nullable-simple-commit`: Timestamp | Null
   
   /**
     * Simple User
-    * @description Simple User
+    * @description A GitHub user.
     */
   var `nullable-simple-user`: Avatarurl | Null
   
@@ -1217,6 +1262,18 @@ trait Actionsbillingusage extends StObject {
     * @description Groups of organization members that gives permissions on specified repositories.
     */
   var `nullable-team-simple`: Ldapdn | Null
+  
+  /**
+    * Actions OIDC Subject customization
+    * @description Actions OIDC Subject customization
+    */
+  var `oidc-custom-sub`: IncludeclaimkeysArray
+  
+  /**
+    * Actions OIDC subject customization for a repository
+    * @description Actions OIDC subject customization for a repository
+    */
+  var `oidc-custom-sub-repo`: Includeclaimkeys
   
   /**
     * Org Hook
@@ -1231,28 +1288,28 @@ trait Actionsbillingusage extends StObject {
   var `org-membership`: Organizationurl
   
   /**
+    * Organization ruleset conditions
+    * @description Conditions for a organization ruleset
+    */
+  var `org-ruleset-conditions`: Refname & Repositoryname
+  
+  /**
     * Actions Secret for an Organization
     * @description Secrets for GitHub Actions for an organization.
     */
-  var `organization-actions-secret`: Selectedrepositoriesurl
+  var `organization-actions-secret`: CreatedatName
   
   /**
-    * Organization Custom Repository Role
-    * @description Custom repository roles created by organization administrators
+    * Actions Variable for an Organization
+    * @description Organization variable for GitHub Actions.
     */
-  var `organization-custom-repository-role`: Organization
+  var `organization-actions-variable`: NameSelectedrepositoriesurl
   
   /**
     * Dependabot Secret for an Organization
     * @description Secrets for GitHub Dependabot for an organization.
     */
-  var `organization-dependabot-secret`: Selectedrepositoriesurl
-  
-  /**
-    * Organization Fine-Grained Permission
-    * @description Fine-grained permissions available for the organization
-    */
-  var `organization-fine-grained-permission`: DescriptionName
+  var `organization-dependabot-secret`: CreatedatName
   
   /**
     * Organization Full
@@ -1266,11 +1323,23 @@ trait Actionsbillingusage extends StObject {
     */
   var `organization-invitation`: Failedat
   
+  /**
+    * Organization Programmatic Access Grant
+    * @description Minimal representation of an organization programmatic access grant for enumerations
+    */
+  var `organization-programmatic-access-grant`: Accessgrantedat
+  
+  /**
+    * Simple Organization Programmatic Access Grant Request
+    * @description Minimal representation of an organization programmatic access grant request for enumerations
+    */
+  var `organization-programmatic-access-grant-request`: Tokenexpired
+  
   var `organization-secret-scanning-alert`: Locationsurl
   
   /**
     * Organization Simple
-    * @description Organization Simple
+    * @description A GitHub organization.
     */
   var `organization-simple`: Hooksurl
   
@@ -1292,7 +1361,7 @@ trait Actionsbillingusage extends StObject {
     * Page Build
     * @description Page Build
     */
-  var `page-build`: Duration
+  var `page-build`: Error
   
   /**
     * Page Build Status
@@ -1328,6 +1397,12 @@ trait Actionsbillingusage extends StObject {
   var `pending-deployment`: Currentusercanapprove
   
   /**
+    * Personal Access Token Request
+    * @description Details of a Personal Access Token Request.
+    */
+  var `personal-access-token-request`: Permissionsadded
+  
+  /**
     * Porter Author
     * @description Porter Author
     */
@@ -1344,6 +1419,8 @@ trait Actionsbillingusage extends StObject {
     * @description Private User
     */
   var `private-user`: Businessplus
+  
+  var `private-vulnerability-report-create`: Cweids
   
   /**
     * Project
@@ -1370,10 +1447,29 @@ trait Actionsbillingusage extends StObject {
   var `project-column`: Cardsurl
   
   /**
+    * Projects v2 Project
+    * @description A projects v2 project
+    */
+  var `projects-v2`: Deletedby
+  
+  /**
+    * Projects v2 Item
+    * @description An item belonging to a project
+    */
+  var `projects-v2-item`: Archivedat
+  
+  /**
+    * Projects v2 Item Content Type
+    * @description The type of content tracked in a project item
+    * @enum {string}
+    */
+  var `projects-v2-item-content-type`: typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.Issue | PullRequest | DraftIssue
+  
+  /**
     * Protected Branch
     * @description Branch protections protect branches
     */
-  var `protected-branch`: Enforceadmins
+  var `protected-branch`: Blockcreations
   
   /**
     * Protected Branch Admin Enforced
@@ -1502,7 +1598,13 @@ trait Actionsbillingusage extends StObject {
     * Codespaces Secret
     * @description Set repository secrets for GitHub Codespaces.
     */
-  var `repo-codespaces-secret`: CreatedatName
+  var `repo-codespaces-secret`: NameUpdatedat
+  
+  /**
+    * Required workflow
+    * @description A GitHub Actions required workflow
+    */
+  var `repo-required-workflow`: Badgeurl
   
   /**
     * Repo Search Result Item
@@ -1512,9 +1614,34 @@ trait Actionsbillingusage extends StObject {
   
   /**
     * Repository
-    * @description A git repository
+    * @description A repository on GitHub.
     */
   var repository: Allowsquashmerge
+  
+  /** @description A repository security advisory. */
+  var `repository-advisory`: Credits
+  
+  var `repository-advisory-create`: Cvssvectorstring
+  
+  /** @description A credit given to a user for a repository security advisory. */
+  var `repository-advisory-credit`: StateType
+  
+  /**
+    * @description The type of credit the user is receiving.
+    * @enum {string}
+    */
+  var `repository-advisory-credit-types`: analyst | finder | reporter | coordinator | remediation_developer | remediation_reviewer | remediation_verifier | tool | sponsor | other
+  
+  /**
+    * @description The package's language or package management ecosystem.
+    * @enum {string}
+    */
+  var `repository-advisory-ecosystems`: rubygems | npm | pip | maven | nuget | composer | go | rust | erlang | actions | pub | other
+  
+  var `repository-advisory-update`: Summary
+  
+  /** @description A product affected by the vulnerability detailed in a repository security advisory. */
+  var `repository-advisory-vulnerability`: Patchedversions
   
   /**
     * Repository Collaborator Permission
@@ -1529,16 +1656,148 @@ trait Actionsbillingusage extends StObject {
   var `repository-invitation`: Expired
   
   /**
+    * Repository Rule
+    * @description A repository rule.
+    */
+  var `repository-rule`: `423` | ParametersType | `424` | `425` | `426` | `427` | `428` | `436` | `430` | `431` | `432` | `433` | `434` | `435`
+  
+  /**
+    * branch_name_pattern
+    * @description Parameters to be used for the branch_name_pattern rule
+    */
+  var `repository-rule-branch-name-pattern`: `434`
+  
+  /**
+    * commit_author_email_pattern
+    * @description Parameters to be used for the commit_author_email_pattern rule
+    */
+  var `repository-rule-commit-author-email-pattern`: `432`
+  
+  /**
+    * commit_message_pattern
+    * @description Parameters to be used for the commit_message_pattern rule
+    */
+  var `repository-rule-commit-message-pattern`: `431`
+  
+  /**
+    * committer_email_pattern
+    * @description Parameters to be used for the committer_email_pattern rule
+    */
+  var `repository-rule-committer-email-pattern`: `433`
+  
+  /**
+    * creation
+    * @description Parameters to be used for the creation rule
+    */
+  var `repository-rule-creation`: `423`
+  
+  /**
+    * deletion
+    * @description Parameters to be used for the deletion rule
+    */
+  var `repository-rule-deletion`: `424`
+  
+  /**
+    * @description The enforcement level of the ruleset. `evaluate` allows admins to test rules before enforcing them. Admins can view insights on the Rule Insights page (`evaluate` is only available with GitHub Enterprise).
+    * @enum {string}
+    */
+  var `repository-rule-enforcement`: disabled | active | evaluate
+  
+  /**
+    * non_fast_forward
+    * @description Parameters to be used for the non_fast_forward rule
+    */
+  var `repository-rule-non-fast-forward`: `430`
+  
+  /**
+    * StatusCheckConfiguration
+    * @description Required status check
+    */
+  var `repository-rule-params-status-check-configuration`: ContextIntegrationid
+  
+  /**
+    * pull_request
+    * @description Parameters to be used for the pull_request rule
+    */
+  var `repository-rule-pull-request`: `428`
+  
+  /**
+    * required_deployments
+    * @description Parameters to be used for the required_deployments rule
+    */
+  var `repository-rule-required-deployments`: `426`
+  
+  /**
+    * required_linear_history
+    * @description Parameters to be used for the required_linear_history rule
+    */
+  var `repository-rule-required-linear-history`: `425`
+  
+  /**
+    * required_signatures
+    * @description Parameters to be used for the required_signatures rule
+    */
+  var `repository-rule-required-signatures`: `427`
+  
+  /**
+    * required_status_checks
+    * @description Parameters to be used for the required_status_checks rule
+    */
+  var `repository-rule-required-status-checks`: `429`
+  
+  /**
+    * tag_name_pattern
+    * @description Parameters to be used for the tag_name_pattern rule
+    */
+  var `repository-rule-tag-name-pattern`: `435`
+  
+  /**
+    * update
+    * @description Parameters to be used for the update rule
+    */
+  var `repository-rule-update`: ParametersType
+  
+  /**
+    * Repository ruleset
+    * @description A set of rules to apply when specified conditions are met.
+    */
+  var `repository-ruleset`: Links
+  
+  /**
+    * Repository Ruleset Bypass Actor
+    * @description An actor that can bypass rules in a ruleset
+    */
+  var `repository-ruleset-bypass-actor`: Actorid
+  
+  /**
+    * Repository ruleset conditions for ref names
+    * @description Parameters for a repository ruleset ref name condition
+    */
+  var `repository-ruleset-conditions`: Refname
+  
+  /**
+    * Repository ruleset conditions for repository names
+    * @description Parameters for a repository name condition
+    */
+  var `repository-ruleset-conditions-repository-name-target`: Repositoryname
+  
+  /**
     * Repository Invitation
     * @description Repository invitations let you manage who you collaborate with.
     */
   var `repository-subscription`: CreatedatIgnored
+  
+  var `required-workflow`: Selectedrepositoriesurl
   
   /**
     * Legacy Review Comment
     * @description Legacy Review Comment
     */
   var `review-comment`: Originalcommitid
+  
+  var `review-custom-gates-comment-required`: CommentEnvironmentname
+  
+  var `review-custom-gates-state-required`: EnvironmentnameState
   
   /**
     * Review Dismissed Issue Event
@@ -1572,15 +1831,11 @@ trait Actionsbillingusage extends StObject {
     */
   var `runner-application`: Architecture
   
-  var `runner-groups-enterprise`: Default
-  
-  var `runner-groups-org`: Inherited
-  
   /**
     * Self hosted runner label
     * @description A label for a self hosted runner
     */
-  var `runner-label`: IdName
+  var `runner-label`: NameType
   
   /**
     * Scim Error
@@ -1597,9 +1852,9 @@ trait Actionsbillingusage extends StObject {
     * @description **Required when the `state` is `resolved`.** The reason for resolving the alert.
     * @enum {string|null}
     */
-  var `secret-scanning-alert-resolution`: Null | false_positive | wont_fix | revoked | used_in_tests
+  var `secret-scanning-alert-resolution`: false_positive | wont_fix | revoked | used_in_tests | Null
   
-  /** @description Sets an optional comment when closing an alert. Must be null when changing `state` to `open`. */
+  /** @description An optional comment when closing an alert. Cannot be updated or deleted. Must be `null` when changing `state` to `open`. */
   var `secret-scanning-alert-resolution-comment`: String | Null
   
   /**
@@ -1613,18 +1868,21 @@ trait Actionsbillingusage extends StObject {
   /** @description Represents a 'commit' secret scanning location type. This location type shows that a secret was detected inside a commit to a repository. */
   var `secret-scanning-location-commit`: Blobsha
   
+  /** @description Represents an 'issue_body' secret scanning location type. This location type shows that a secret was detected in the body of an issue. */
+  var `secret-scanning-location-issue-body`: Issuebodyurl
+  
+  /** @description Represents an 'issue_comment' secret scanning location type. This location type shows that a secret was detected in a comment on an issue. */
+  var `secret-scanning-location-issue-comment`: Issuecommenturl
+  
+  /** @description Represents an 'issue_title' secret scanning location type. This location type shows that a secret was detected in the title of an issue. */
+  var `secret-scanning-location-issue-title`: Issuetitleurl
+  
   var `security-and-analysis`: Secretscanning | Null
   
   var `selected-actions`: Githubownedallowed
   
   /** @description The API URL to use to get or set the actions and reusable workflows that are allowed to run, when `allowed_actions` is set to `selected`. */
   var `selected-actions-url`: String
-  
-  /**
-    * Server Statistics Proxy Endpoint
-    * @description Response of S4 Proxy endpoint that provides GHES statistics
-    */
-  var `server-statistics`: js.Array[Collectiondate]
   
   /**
     * Short Blob
@@ -1638,9 +1896,12 @@ trait Actionsbillingusage extends StObject {
     */
   var `short-branch`: Commit
   
+  /** @description A suite of checks performed on the code of a given code change */
+  var `simple-check-suite`: Conclusion
+  
   /**
     * Simple Commit
-    * @description Simple Commit
+    * @description A commit.
     */
   var `simple-commit`: Timestamp
   
@@ -1649,19 +1910,19 @@ trait Actionsbillingusage extends StObject {
   
   /**
     * Simple Installation
-    * @description Simple Installation
+    * @description The GitHub App installation. This property is included when the event is configured for and sent to a GitHub App.
     */
   var `simple-installation`: NodeidString
   
   /**
     * Simple Repository
-    * @description Simple Repository
+    * @description A GitHub repository.
     */
   var `simple-repository`: Archiveurl
   
   /**
     * Simple User
-    * @description Simple User
+    * @description A GitHub user.
     */
   var `simple-user`: Avatarurl
   
@@ -1670,6 +1931,12 @@ trait Actionsbillingusage extends StObject {
     * @description Create a new snapshot of a repository's dependencies.
     */
   var snapshot: Detector
+  
+  /**
+    * Social account
+    * @description Social media account
+    */
+  var `social-account`: Provider
   
   /**
     * SSH Signing Key
@@ -1777,7 +2044,7 @@ trait Actionsbillingusage extends StObject {
     * Thread
     * @description Thread
     */
-  var thread: Reason
+  var thread: Repository
   
   /**
     * Thread Subscription
@@ -1819,7 +2086,7 @@ trait Actionsbillingusage extends StObject {
     * Timeline Event
     * @description Timeline Event
     */
-  var `timeline-issue-events`: Partial[EventId_] & Partial[IdMilestone] & Partial[NodeidPerformedviagithubapp] & Partial[Requestedteam] & Partial[CreatedatDismissedreview] & Partial[IdLockreason] & Partial[PerformedviagithubappProjectcard] & Partial[ProjectcardUrl] & Partial[BodyBodyhtml] & Partial[EventSource] & Partial[CommitterEvent] & Partial[Submittedat] & Partial[EventNodeid] & Partial[CommitidEvent] & Partial[PerformedviagithubappUrl] & Partial[PerformedviagithubappStatereason]
+  var `timeline-issue-events`: EventId_ | IdMilestone | PerformedviagithubappRename | Requestedteam | CreatedatDismissedreview | IdLockreason | PerformedviagithubappProjectcard | ProjectcardUrl | BodyBodyhtml | EventSource | CommitterEvent | Submittedat | EventNodeid | CommitidEvent | PerformedviagithubappUrl | PerformedviagithubappStatereason
   
   /**
     * Timeline Line Commented Event
@@ -1905,6 +2172,81 @@ trait Actionsbillingusage extends StObject {
     */
   var `wait-timer`: Double
   
+  /** branch protection rule created event */
+  var `webhook-branch-protection-rule-created`: Installation
+  
+  /** branch protection rule deleted event */
+  var `webhook-branch-protection-rule-deleted`: Rule
+  
+  /** branch protection rule edited event */
+  var `webhook-branch-protection-rule-edited`: Changes
+  
+  /** Check Run Completed Event */
+  var `webhook-check-run-completed`: Checkrun
+  
+  /**
+    * Check Run Completed Event
+    * @description The check_run.completed webhook encoded with URL encoding
+    */
+  var `webhook-check-run-completed-form-encoded`: PayloadString
+  
+  /** Check Run Created Event */
+  var `webhook-check-run-created`: Sender
+  
+  /**
+    * Check Run Created Event
+    * @description The check_run.created webhook encoded with URL encoding
+    */
+  var `webhook-check-run-created-form-encoded`: PayloadString
+  
+  /** Check Run Requested Action Event */
+  var `webhook-check-run-requested-action`: Requestedaction
+  
+  /**
+    * Check Run Requested Action Event
+    * @description The check_run.requested_action webhook encoded with URL encoding
+    */
+  var `webhook-check-run-requested-action-form-encoded`: PayloadString
+  
+  /** Check Run Re-Requested Event */
+  var `webhook-check-run-rerequested`: ActionCheckrun
+  
+  /**
+    * Check Run Re-Requested Event
+    * @description The check_run.rerequested webhook encoded with URL encoding
+    */
+  var `webhook-check-run-rerequested-form-encoded`: PayloadString
+  
+  /** check_suite completed event */
+  var `webhook-check-suite-completed`: Actionsmeta
+  
+  /** check_suite requested event */
+  var `webhook-check-suite-requested`: ActionActionsmeta
+  
+  /** check_suite rerequested event */
+  var `webhook-check-suite-rerequested`: ActionsmetaChecksuite
+  
+  /** code_scanning_alert appeared_in_branch event */
+  var `webhook-code-scanning-alert-appeared-in-branch`: Alert
+  
+  /** code_scanning_alert closed_by_user event */
+  var `webhook-code-scanning-alert-closed-by-user`: Commitoid
+  
+  /** code_scanning_alert created event */
+  var `webhook-code-scanning-alert-created`: ActionAlert
+  
+  /** code_scanning_alert fixed event */
+  var `webhook-code-scanning-alert-fixed`: AlertCommitoid
+  
+  /** code_scanning_alert reopened event */
+  var `webhook-code-scanning-alert-reopened`: CommitoidEnterprise
+  
+  /** code_scanning_alert reopened_by_user event */
+  var `webhook-code-scanning-alert-reopened-by-user`: EnterpriseInstallation
+  
+  /** commit_comment created event */
+  var `webhook-commit-comment-created`: ActionComment
+  
   /**
     * Webhook Configuration
     * @description Configuration object of the webhook
@@ -1932,13 +2274,657 @@ trait Actionsbillingusage extends StObject {
     */
   var `webhook-config-url`: String
   
-  var `webhook-merge-group-checks-requested`: Installation
+  /** create event */
+  var `webhook-create`: Masterbranch
+  
+  /** delete event */
+  var `webhook-delete`: Pushertype
+  
+  /** Dependabot alert auto-dismissed event */
+  var `webhook-dependabot-alert-auto-dismissed`: AlertEnterprise
+  
+  /** Dependabot alert auto-reopened event */
+  var `webhook-dependabot-alert-auto-reopened`: InstallationOrganization
+  
+  /** Dependabot alert created event */
+  var `webhook-dependabot-alert-created`: OrganizationRepository
+  
+  /** Dependabot alert dismissed event */
+  var `webhook-dependabot-alert-dismissed`: RepositorySender
+  
+  /** Dependabot alert fixed event */
+  var `webhook-dependabot-alert-fixed`: ActionAlertEnterprise
+  
+  /** Dependabot alert reintroduced event */
+  var `webhook-dependabot-alert-reintroduced`: AlertEnterpriseInstallation
+  
+  /** Dependabot alert reopened event */
+  var `webhook-dependabot-alert-reopened`: EnterpriseInstallationOrganization
+  
+  /** deploy_key created event */
+  var `webhook-deploy-key-created`: ActionEnterprise
+  
+  /** deploy_key deleted event */
+  var `webhook-deploy-key-deleted`: InstallationKey
+  
+  /** deployment created event */
+  var `webhook-deployment-created`: Workflow
+  
+  /** deployment protection rule requested event */
+  var `webhook-deployment-protection-rule-requested`: Deploymentcallbackurl
+  
+  /** deployment_status created event */
+  var `webhook-deployment-status-created`: Deploymentstatus
+  
+  /** discussion answered event */
+  var `webhook-discussion-answered`: Answer
+  
+  /** discussion category changed event */
+  var `webhook-discussion-category-changed`: Discussion
+  
+  /** discussion closed event */
+  var `webhook-discussion-closed`: ActionDiscussion
+  
+  /** discussion_comment created event */
+  var `webhook-discussion-comment-created`: CommentDiscussion
+  
+  /** discussion_comment deleted event */
+  var `webhook-discussion-comment-deleted`: DiscussionEnterprise
+  
+  /** discussion_comment edited event */
+  var `webhook-discussion-comment-edited`: ActionChanges
+  
+  /** discussion created event */
+  var `webhook-discussion-created`: ActionDiscussionEnterprise
+  
+  /** discussion deleted event */
+  var `webhook-discussion-deleted`: DiscussionEnterpriseInstallation
+  
+  /** discussion edited event */
+  var `webhook-discussion-edited`: ChangesDiscussion
+  
+  /** discussion labeled event */
+  var `webhook-discussion-labeled`: InstallationLabel
+  
+  /** discussion locked event */
+  var `webhook-discussion-locked`: InstallationOrganizationRepository
+  
+  /** discussion pinned event */
+  var `webhook-discussion-pinned`: OrganizationRepositorySender
+  
+  /** discussion reopened event */
+  var `webhook-discussion-reopened`: ActionDiscussionEnterpriseInstallation
+  
+  /** discussion transferred event */
+  var `webhook-discussion-transferred`: ActionChangesDiscussion
+  
+  /** discussion unanswered event */
+  var `webhook-discussion-unanswered`: Oldanswer
+  
+  /** discussion unlabeled event */
+  var `webhook-discussion-unlabeled`: LabelOrganization
+  
+  /** discussion unlocked event */
+  var `webhook-discussion-unlocked`: DiscussionEnterpriseInstallationOrganization
+  
+  /** discussion unpinned event */
+  var `webhook-discussion-unpinned`: EnterpriseInstallationOrganizationRepository
+  
+  /**
+    * fork event
+    * @description A user forks a repository.
+    */
+  var `webhook-fork`: Forkee
+  
+  /** github_app_authorization revoked event */
+  var `webhook-github-app-authorization-revoked`: ActionEnterpriseInstallation
+  
+  /** gollum event */
+  var `webhook-gollum`: Pages
+  
+  /** installation created event */
+  var `webhook-installation-created`: Requester
+  
+  /** installation deleted event */
+  var `webhook-installation-deleted`: OrganizationRepositories
+  
+  /** installation new_permissions_accepted event */
+  var `webhook-installation-new-permissions-accepted`: RepositoriesRepository
+  
+  /** installation_repositories added event */
+  var `webhook-installation-repositories-added`: Repositoriesadded
+  
+  /** installation_repositories removed event */
+  var `webhook-installation-repositories-removed`: Repositoriesremoved
+  
+  /** installation suspend event */
+  var `webhook-installation-suspend`: RepositoryRequester
+  
+  var `webhook-installation-target-renamed`: Targettype
+  
+  /** installation unsuspend event */
+  var `webhook-installation-unsuspend`: RequesterSender
+  
+  /** issue_comment created event */
+  var `webhook-issue-comment-created`: CommentEnterprise
+  
+  /** issue_comment deleted event */
+  var `webhook-issue-comment-deleted`: InstallationIssue
+  
+  /** issue_comment edited event */
+  var `webhook-issue-comment-edited`: ChangesComment
+  
+  /** issues assigned event */
+  var `webhook-issues-assigned`: ActionAssignee
+  
+  /** issues closed event */
+  var `webhook-issues-closed`: IssueOrganization
+  
+  /** issues deleted event */
+  var `webhook-issues-deleted`: EnterpriseInstallationIssue
+  
+  /** issues demilestoned event */
+  var `webhook-issues-demilestoned`: IssueMilestone
+  
+  /** issues edited event */
+  var `webhook-issues-edited`: ChangesEnterprise
+  
+  /** issues labeled event */
+  var `webhook-issues-labeled`: IssueLabel
+  
+  /** issues locked event */
+  var `webhook-issues-locked`: InstallationIssueOrganization
+  
+  /** issues milestoned event */
+  var `webhook-issues-milestoned`: MilestoneOrganization
+  
+  /** issues opened event */
+  var `webhook-issues-opened`: ActionChangesEnterprise
+  
+  /** issues pinned event */
+  var `webhook-issues-pinned`: IssueOrganizationRepository
+  
+  /** issues reopened event */
+  var `webhook-issues-reopened`: ActionEnterpriseInstallationIssue
+  
+  /** issues transferred event */
+  var `webhook-issues-transferred`: ChangesEnterpriseInstallation
+  
+  /** issues unassigned event */
+  var `webhook-issues-unassigned`: AssigneeEnterprise
+  
+  /** issues unlabeled event */
+  var `webhook-issues-unlabeled`: InstallationIssueLabel
+  
+  /** issues unlocked event */
+  var `webhook-issues-unlocked`: EnterpriseInstallationIssueOrganization
+  
+  /** issues unpinned event */
+  var `webhook-issues-unpinned`: InstallationIssueOrganizationRepository
+  
+  /** label created event */
+  var `webhook-label-created`: EnterpriseInstallationLabel
+  
+  /** label deleted event */
+  var `webhook-label-deleted`: InstallationLabelOrganization
+  
+  /** label edited event */
+  var `webhook-label-edited`: LabelOrganizationRepository
+  
+  /** marketplace_purchase cancelled event */
+  var `webhook-marketplace-purchase-cancelled`: Marketplacepurchase
+  
+  /** marketplace_purchase changed event */
+  var `webhook-marketplace-purchase-changed`: Previousmarketplacepurchase
+  
+  /** marketplace_purchase pending_change event */
+  var `webhook-marketplace-purchase-pending-change`: ActionEffectivedate
+  
+  /** marketplace_purchase pending_change_cancelled event */
+  var `webhook-marketplace-purchase-pending-change-cancelled`: EffectivedateEnterprise
+  
+  /** marketplace_purchase purchased event */
+  var `webhook-marketplace-purchase-purchased`: InstallationMarketplacepurchase
+  
+  /** member added event */
+  var `webhook-member-added`: Member
+  
+  /** member edited event */
+  var `webhook-member-edited`: InstallationMember
+  
+  /** member removed event */
+  var `webhook-member-removed`: MemberOrganization
+  
+  /** membership added event */
+  var `webhook-membership-added`: Team
+  
+  /** membership removed event */
+  var `webhook-membership-removed`: RepositoryScope
+  
+  var `webhook-merge-group-checks-requested`: Mergegroup
+  
+  /** meta deleted event */
+  var `webhook-meta-deleted`: Hook
+  
+  /** milestone closed event */
+  var `webhook-milestone-closed`: InstallationMilestone
+  
+  /** milestone created event */
+  var `webhook-milestone-created`: EnterpriseInstallationMilestone
+  
+  /** milestone deleted event */
+  var `webhook-milestone-deleted`: InstallationMilestoneOrganization
+  
+  /** milestone edited event */
+  var `webhook-milestone-edited`: MilestoneOrganizationRepository
+  
+  /** milestone opened event */
+  var `webhook-milestone-opened`: ActionEnterpriseInstallationMilestone
+  
+  /** org_block blocked event */
+  var `webhook-org-block-blocked`: Blockeduser
+  
+  /** org_block unblocked event */
+  var `webhook-org-block-unblocked`: ActionBlockeduser
+  
+  /** organization deleted event */
+  var `webhook-organization-deleted`: Membership
+  
+  /** organization member_added event */
+  var `webhook-organization-member-added`: InstallationMembership
+  
+  /** organization member_invited event */
+  var `webhook-organization-member-invited`: Invitation
+  
+  /** organization member_removed event */
+  var `webhook-organization-member-removed`: MembershipOrganization
+  
+  /** organization renamed event */
+  var `webhook-organization-renamed`: EnterpriseInstallationMembership
+  
+  /** package published event */
+  var `webhook-package-published`: OrganizationPackage
+  
+  /** package updated event */
+  var `webhook-package-updated`: PackageRepository
+  
+  /** page_build event */
+  var `webhook-page-build`: Build
+  
+  /** personal_access_token_request approved event */
+  var `webhook-personal-access-token-request-approved`: Personalaccesstokenrequest
+  
+  /** personal_access_token_request cancelled event */
+  var `webhook-personal-access-token-request-cancelled`: ActionInstallation
+  
+  /** personal_access_token_request created event */
+  var `webhook-personal-access-token-request-created`: OrganizationPersonalaccesstokenrequest
+  
+  /** personal_access_token_request denied event */
+  var `webhook-personal-access-token-request-denied`: PersonalaccesstokenrequestSender
+  
+  var `webhook-ping`: Zen
+  
+  /** @description The webhooks ping payload encoded with URL encoding. */
+  var `webhook-ping-form-encoded`: PayloadString
+  
+  /** project_card converted event */
+  var `webhook-project-card-converted`: OrganizationProjectcard
+  
+  /** project_card created event */
+  var `webhook-project-card-created`: ProjectcardRepository
+  
+  /** project_card deleted event */
+  var `webhook-project-card-deleted`: InstallationOrganizationProjectcard
+  
+  /** project_card edited event */
+  var `webhook-project-card-edited`: OrganizationProjectcardRepository
+  
+  /** project_card moved event */
+  var `webhook-project-card-moved`: ProjectcardRepositorySender
+  
+  /** project closed event */
+  var `webhook-project-closed`: Project
+  
+  /** project_column created event */
+  var `webhook-project-column-created`: Projectcolumn
+  
+  /** project_column deleted event */
+  var `webhook-project-column-deleted`: OrganizationProjectcolumn
+  
+  /** project_column edited event */
+  var `webhook-project-column-edited`: ProjectcolumnRepository
+  
+  /** project_column moved event */
+  var `webhook-project-column-moved`: InstallationOrganizationProjectcolumn
+  
+  /** project created event */
+  var `webhook-project-created`: OrganizationProject
+  
+  /** project deleted event */
+  var `webhook-project-deleted`: ProjectRepository
+  
+  /** project edited event */
+  var `webhook-project-edited`: InstallationOrganizationProject
+  
+  /** project reopened event */
+  var `webhook-project-reopened`: OrganizationProjectRepository
+  
+  /** Projects v2 Item Archived Event */
+  var `webhook-projects-v2-item-archived`: Projectsv2item
+  
+  /** Projects v2 Item Converted Event */
+  var `webhook-projects-v2-item-converted`: ChangesInstallation
+  
+  /** Projects v2 Item Created Event */
+  var `webhook-projects-v2-item-created`: OrganizationProjectsv2item
+  
+  /** Projects v2 Item Deleted Event */
+  var `webhook-projects-v2-item-deleted`: Projectsv2itemSender
+  
+  /** Projects v2 Item Edited Event */
+  var `webhook-projects-v2-item-edited`: ActionChangesInstallation
+  
+  /** Projects v2 Item Reordered Event */
+  var `webhook-projects-v2-item-reordered`: ChangesInstallationOrganization
+  
+  /** Projects v2 Item Restored Event */
+  var `webhook-projects-v2-item-restored`: InstallationOrganizationProjectsv2item
+  
+  /** Projects v2 Project Closed Event */
+  var `webhook-projects-v2-project-closed`: Projectsv2
+  
+  /** @description A project was created */
+  var `webhook-projects-v2-project-created`: ActionOrganization
+  
+  /** Projects v2 Project Deleted Event */
+  var `webhook-projects-v2-project-deleted`: OrganizationProjectsv2
+  
+  /** Projects v2 Project Edited Event */
+  var `webhook-projects-v2-project-edited`: ChangesOrganization
+  
+  /** Projects v2 Project Reopened Event */
+  var `webhook-projects-v2-project-reopened`: Projectsv2Sender
+  
+  /** public event */
+  var `webhook-public`: InstallationOrganizationRepositorySender
+  
+  /** pull_request assigned event */
+  var `webhook-pull-request-assigned`: InstallationNumber
+  
+  /** pull_request auto_merge_disabled event */
+  var `webhook-pull-request-auto-merge-disabled`: NumberOrganization
+  
+  /** pull_request auto_merge_enabled event */
+  var `webhook-pull-request-auto-merge-enabled`: OrganizationPullrequest
+  
+  /** pull_request closed event */
+  var `webhook-pull-request-closed`: PullrequestRepository
+  
+  /** pull_request converted_to_draft event */
+  var `webhook-pull-request-converted-to-draft`: EnterpriseInstallationNumber
+  
+  /** pull_request demilestoned event */
+  var `webhook-pull-request-demilestoned`: EnterpriseMilestone
+  
+  /** pull_request dequeued event */
+  var `webhook-pull-request-dequeued`: PullrequestReason
+  
+  /** pull_request edited event */
+  var `webhook-pull-request-edited`: InstallationNumberOrganization
+  
+  /** pull_request enqueued event */
+  var `webhook-pull-request-enqueued`: NumberOrganizationPullrequest
+  
+  /** pull_request labeled event */
+  var `webhook-pull-request-labeled`: LabelNumber
+  
+  /** pull_request locked event */
+  var `webhook-pull-request-locked`: OrganizationPullrequestRepository
+  
+  /** pull_request milestoned event */
+  var `webhook-pull-request-milestoned`: MilestoneNumber_
+  
+  /** pull_request opened event */
+  var `webhook-pull-request-opened`: PullrequestRepositorySender
+  
+  /** pull_request ready_for_review event */
+  var `webhook-pull-request-ready-for-review`: ActionEnterpriseInstallationNumber
+  
+  /** pull_request reopened event */
+  var `webhook-pull-request-reopened`: EnterpriseInstallationNumberOrganization
+  
+  /** pull_request_review_comment created event */
+  var `webhook-pull-request-review-comment-created`: ActionCommentEnterprise
+  
+  /** pull_request_review_comment deleted event */
+  var `webhook-pull-request-review-comment-deleted`: CommentEnterpriseInstallation
+  
+  /** pull_request_review_comment edited event */
+  var `webhook-pull-request-review-comment-edited`: ActionChangesComment
+  
+  /** pull_request_review dismissed event */
+  var `webhook-pull-request-review-dismissed`: Review
+  
+  /** pull_request_review edited event */
+  var `webhook-pull-request-review-edited`: RepositoryReview
+  
+  /** pull_request review_request_removed event */
+  var `webhook-pull-request-review-request-removed`: OneOf[js.Tuple2[RepositoryRequestedreviewer, RepositoryRequestedteam]]
+  
+  /** pull_request review_requested event */
+  var `webhook-pull-request-review-requested`: OneOf[js.Tuple2[RequestedreviewerSender, RequestedteamSender]]
+  
+  /** pull_request_review submitted event */
+  var `webhook-pull-request-review-submitted`: ReviewSender
+  
+  /** pull_request_review_thread resolved event */
+  var `webhook-pull-request-review-thread-resolved`: Thread
+  
+  /** pull_request_review_thread unresolved event */
+  var `webhook-pull-request-review-thread-unresolved`: SenderThread
+  
+  /** pull_request synchronize event */
+  var `webhook-pull-request-synchronize`: ActionAfter
+  
+  /** pull_request unassigned event */
+  var `webhook-pull-request-unassigned`: ActionAssigneeEnterprise
+  
+  /** pull_request unlabeled event */
+  var `webhook-pull-request-unlabeled`: InstallationLabelNumber
+  
+  /** pull_request unlocked event */
+  var `webhook-pull-request-unlocked`: InstallationNumberOrganizationPullrequest
+  
+  /** push event */
+  var `webhook-push`: Compare
+  
+  var `webhook-registry-package-published`: Registrypackage
+  
+  var `webhook-registry-package-updated`: OrganizationRegistrypackage
+  
+  /** release created event */
+  var `webhook-release-created`: Release
+  
+  /** release deleted event */
+  var `webhook-release-deleted`: OrganizationRelease
+  
+  /** release edited event */
+  var `webhook-release-edited`: ReleaseRepository
+  
+  /** release prereleased event */
+  var `webhook-release-prereleased`: InstallationOrganizationRelease
+  
+  /** release published event */
+  var `webhook-release-published`: OrganizationReleaseRepository
+  
+  /** release released event */
+  var `webhook-release-released`: ReleaseRepositorySender
+  
+  /** release unpublished event */
+  var `webhook-release-unpublished`: ActionEnterpriseInstallationOrganization
+  
+  /** Repository advisory published event */
+  var `webhook-repository-advisory-published`: Repositoryadvisory
+  
+  /** Repository advisory reported event */
+  var `webhook-repository-advisory-reported`: RepositoryRepositoryadvisory
+  
+  /** repository archived event */
+  var `webhook-repository-archived`: ActionEnterpriseInstallationOrganizationRepository
+  
+  /** repository created event */
+  var `webhook-repository-created`: EnterpriseInstallationOrganizationRepositorySender
+  
+  /** repository deleted event */
+  var `webhook-repository-deleted`: ActionEnterpriseInstallationOrganizationRepositorySender
+  
+  /** repository_dispatch event */
+  var `webhook-repository-dispatch-sample`: ActionBranch
+  
+  /** repository edited event */
+  var `webhook-repository-edited`: ActionChangesEnterpriseInstallation
+  
+  /** repository_import event */
+  var `webhook-repository-import`: SenderStatus
+  
+  /** repository privatized event */
+  var `webhook-repository-privatized`: RepositoryAllowupdatebranch
+  
+  /** repository publicized event */
+  var `webhook-repository-publicized`: SenderAvatarurl
+  
+  /** repository renamed event */
+  var `webhook-repository-renamed`: ChangesEnterpriseInstallationOrganization
+  
+  /** repository transferred event */
+  var `webhook-repository-transferred`: ActionChangesEnterpriseInstallationOrganization
+  
+  /** repository unarchived event */
+  var `webhook-repository-unarchived`: OrganizationRepositoryAllowupdatebranch
+  
+  /** repository_vulnerability_alert create event */
+  var `webhook-repository-vulnerability-alert-create`: ActionAlertEnterpriseInstallation
+  
+  /** repository_vulnerability_alert dismiss event */
+  var `webhook-repository-vulnerability-alert-dismiss`: AlertEnterpriseInstallationOrganization
+  
+  /** repository_vulnerability_alert reopen event */
+  var `webhook-repository-vulnerability-alert-reopen`: ActionAlertEnterpriseInstallationOrganization
+  
+  /** repository_vulnerability_alert resolve event */
+  var `webhook-repository-vulnerability-alert-resolve`: AlertEnterpriseInstallationOrganizationRepository
+  
+  /** Ruby Gems metadata */
+  var `webhook-rubygems-metadata`: Homepage
+  
+  /** secret_scanning_alert created event */
+  var `webhook-secret-scanning-alert-created`: ActionAlertEnterpriseInstallationOrganizationRepository
+  
+  /** Secret Scanning Alert Location Created Event */
+  var `webhook-secret-scanning-alert-location-created`: AlertInstallation
+  
+  /** Secret Scanning Alert Location Created Event */
+  var `webhook-secret-scanning-alert-location-created-form-encoded`: PayloadString
+  
+  /** secret_scanning_alert reopened event */
+  var `webhook-secret-scanning-alert-reopened`: AlertEnterpriseInstallationOrganizationRepositorySender
+  
+  /** secret_scanning_alert resolved event */
+  var `webhook-secret-scanning-alert-resolved`: ActionAlertEnterpriseInstallationOrganizationRepositorySender
+  
+  /** secret_scanning_alert revoked event */
+  var `webhook-secret-scanning-alert-revoked`: AlertPushprotectionbypassedat
+  
+  /** security_advisory published event */
+  var `webhook-security-advisory-published`: RepositorySecurityadvisory
+  
+  /** security_advisory updated event */
+  var `webhook-security-advisory-updated`: SecurityadvisorySender
+  
+  /** security_advisory withdrawn event */
+  var `webhook-security-advisory-withdrawn`: OrganizationRepositorySecurityadvisory
+  
+  /** security_and_analysis event */
+  var `webhook-security-and-analysis`: ChangesEnterpriseInstallationOrganizationRepository
+  
+  /** sponsorship cancelled event */
+  var `webhook-sponsorship-cancelled`: Sponsorship
+  
+  /** sponsorship created event */
+  var `webhook-sponsorship-created`: SenderSponsorship
+  
+  /** sponsorship edited event */
+  var `webhook-sponsorship-edited`: RepositorySenderSponsorship
+  
+  /** sponsorship pending_cancellation event */
+  var `webhook-sponsorship-pending-cancellation`: ActionEffectivedateEnterprise
+  
+  /** sponsorship pending_tier_change event */
+  var `webhook-sponsorship-pending-tier-change`: ChangesEffectivedate
+  
+  /** sponsorship tier_changed event */
+  var `webhook-sponsorship-tier-changed`: OrganizationRepositorySenderSponsorship
+  
+  /** star created event */
+  var `webhook-star-created`: SenderStarredat
+  
+  /** star deleted event */
+  var `webhook-star-deleted`: RepositorySenderStarredat
+  
+  /** status event */
+  var `webhook-status`: Branches
+  
+  /** team_add event */
+  var `webhook-team-add`: SenderTeam
+  
+  /** team added_to_repository event */
+  var `webhook-team-added-to-repository`: RepositorySenderTeam
+  
+  /** team created event */
+  var `webhook-team-created`: OrganizationRepositorySenderTeam
+  
+  /** team deleted event */
+  var `webhook-team-deleted`: InstallationOrganizationRepositorySenderTeam
+  
+  /** team edited event */
+  var `webhook-team-edited`: ActionChangesEnterpriseInstallationOrganizationRepository
+  
+  /** team removed_from_repository event */
+  var `webhook-team-removed-from-repository`: EnterpriseInstallationOrganizationRepositorySenderTeam
+  
+  /** watch started event */
+  var `webhook-watch-started`: RepositoryAllowupdatebranchSenderAvatarurl
+  
+  /** workflow_dispatch event */
+  var `webhook-workflow-dispatch`: EnterpriseInputs
+  
+  /** workflow_job completed event */
+  var `webhook-workflow-job-completed`: Workflowjob
+  
+  /** workflow_job in_progress event */
+  var `webhook-workflow-job-in-progress`: ActionDeployment
+  
+  /** workflow_job queued event */
+  var `webhook-workflow-job-queued`: DeploymentEnterprise
+  
+  /** workflow_job waiting event */
+  var `webhook-workflow-job-waiting`: SenderWorkflowjob
+  
+  /** workflow_run completed event */
+  var `webhook-workflow-run-completed`: Workflowrun
+  
+  /** workflow_run in_progress event */
+  var `webhook-workflow-run-in-progress`: SenderWorkflow
+  
+  /** workflow_run requested event */
+  var `webhook-workflow-run-requested`: WorkflowWorkflowrun
   
   /**
     * Workflow
     * @description A GitHub Actions workflow
     */
-  var workflow: Badgeurl
+  var workflow: BadgeurlCreatedat
   
   /**
     * Workflow Run
@@ -1950,18 +2936,18 @@ trait Actionsbillingusage extends StObject {
     * Workflow Run Usage
     * @description Workflow Run Usage
     */
-  var `workflow-run-usage`: Billable
+  var `workflow-run-usage`: Rundurationms
   
   /**
     * Workflow Usage
     * @description Workflow Usage
     */
-  var `workflow-usage`: BillableWINDOWS
+  var `workflow-usage`: Billable
 }
 object Actionsbillingusage {
   
   inline def apply(
-    _package: Repository,
+    _package: Versioncount,
     `actions-billing-usage`: Includedminutes,
     `actions-cache-list`: Actionscaches,
     `actions-cache-usage-by-repository`: Activecachescount,
@@ -1969,19 +2955,16 @@ object Actionsbillingusage {
     `actions-can-approve-pull-request-reviews`: Boolean,
     `actions-default-workflow-permissions`: read | write,
     `actions-enabled`: Boolean,
-    `actions-enterprise-permissions`: Enabledorganizations,
     `actions-get-default-workflow-permissions`: Canapprovepullrequestreviews,
-    `actions-organization-permissions`: Selectedactionsurl,
+    `actions-organization-permissions`: Enabledrepositories,
     `actions-public-key`: CreatedatId,
-    `actions-repository-permissions`: AllowedactionsEnabled,
-    `actions-secret`: CreatedatName,
+    `actions-repository-permissions`: Selectedactionsurl,
+    `actions-secret`: NameUpdatedat,
     `actions-set-default-workflow-permissions`: Defaultworkflowpermissions,
+    `actions-variable`: UpdatedatValue,
     `actions-workflow-access-to-repository`: Accesslevel,
     actor: Displaylogin,
     `added-to-project-issue-event`: Projectcard,
-    `advanced-security-active-committers`: Totaladvancedsecuritycommitters,
-    `advanced-security-active-committers-repository`: Advancedsecuritycommitters,
-    `advanced-security-active-committers-user`: Lastpusheddate,
     `alert-created-at`: String,
     `alert-html-url`: String,
     `alert-instances-url`: String,
@@ -2003,9 +2986,10 @@ object Actionsbillingusage {
     `branch-protection`: Allowforcepushes,
     `branch-restriction-policy`: Appsurl,
     `branch-short`: CommitName,
-    `branch-with-protection`: Links,
+    `branch-with-protection`: Protection,
     `check-annotation`: Blobhref,
     `check-run`: Checksuite,
+    `check-run-with-simple-check-suite`: Deployment,
     `check-suite`: Checkrunsurl,
     `check-suite-preference`: Preferences,
     `clone-traffic`: Clones,
@@ -2018,8 +3002,9 @@ object Actionsbillingusage {
     `code-scanning-alert-items`: Dismissedby,
     `code-scanning-alert-location`: Endcolumn,
     `code-scanning-alert-rule`: Fulldescription,
-    `code-scanning-alert-rule-summary`: Severity,
+    `code-scanning-alert-rule-summary`: DescriptionId,
     `code-scanning-alert-set-state`: open | dismissed,
+    `code-scanning-alert-severity`: critical | high | medium | low | warning | note | error,
     `code-scanning-alert-state`: open | closed | dismissed | fixed,
     `code-scanning-analysis`: Deletable,
     `code-scanning-analysis-analysis-key`: String,
@@ -2033,7 +3018,10 @@ object Actionsbillingusage {
     `code-scanning-analysis-tool`: Guid,
     `code-scanning-analysis-tool-name`: String,
     `code-scanning-analysis-url`: String,
-    `code-scanning-codeql-database`: Size,
+    `code-scanning-codeql-database`: Uploader,
+    `code-scanning-default-setup`: Languages,
+    `code-scanning-default-setup-update`: Querysuite,
+    `code-scanning-default-setup-update-response`: Runurl,
     `code-scanning-organization-alert-items`: Dismissedat,
     `code-scanning-ref`: String,
     `code-scanning-sarifs-receipt`: IdUrl,
@@ -2043,9 +3031,10 @@ object Actionsbillingusage {
     codespace: Environmentid,
     `codespace-export-details`: Exporturl,
     `codespace-machine`: Cpus,
-    `codespaces-org-secret`: Selectedrepositoriesurl,
+    `codespace-with-full-repository`: Gitstatus,
+    `codespaces-org-secret`: CreatedatName,
     `codespaces-public-key`: CreatedatId,
-    `codespaces-secret`: NameSelectedrepositoriesurl,
+    `codespaces-secret`: SelectedrepositoriesurlUpdatedat,
     `codespaces-user-public-key`: KeyKeyid,
     collaborator: Followingurl,
     `combined-billing-usage`: Daysleftinbillingcycle,
@@ -2065,29 +3054,30 @@ object Actionsbillingusage {
     contributor: Contributions,
     `contributor-activity`: Total,
     `converted-note-to-issue-issue-event`: CreatedatEvent,
+    `custom-deployment-rule-app`: Integrationurl,
     `demilestoned-issue-event`: CommitidCommiturl,
     `dependabot-alert`: Dependency,
-    `dependabot-alert-dependency`: Manifestpath,
     `dependabot-alert-package`: EcosystemName,
     `dependabot-alert-security-advisory`: Cveid,
-    `dependabot-alert-security-vulnerability`: Package,
-    `dependabot-alert-set-state`: dismissed | open,
-    `dependabot-alert-state`: dismissed | fixed | open,
+    `dependabot-alert-security-vulnerability`: Firstpatchedversion,
+    `dependabot-alert-with-repository`: Autodismissedat,
     `dependabot-public-key`: KeyKeyid,
-    `dependabot-secret`: CreatedatName,
+    `dependabot-secret`: NameUpdatedat,
     dependency: Dependencies,
     `dependency-graph-diff`: js.Array[Changetype],
+    `dependency-graph-spdx-sbom`: Sbom,
     `deploy-key`: Addedby,
     deployment: Originalenvironment,
     `deployment-branch-policy`: NameNodeid,
-    `deployment-branch-policy-name-pattern`: NameString,
-    `deployment-reviewer-type`: typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.User | Team,
+    `deployment-branch-policy-name-pattern`: Name,
+    `deployment-protection-rule`: AppEnabled,
+    `deployment-reviewer-type`: typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.User | typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.Team,
     `deployment-simple`: Performedviagithubapp,
     `deployment-status`: Deploymenturl,
     `diff-entry`: Bloburl,
+    discussion: Answerchosenat,
     email: Primary,
-    `empty-object`: StringDictionary[Any],
-    `enabled-organizations`: all | none_ | selected,
+    `empty-object`: Record[String, scala.Nothing],
     `enabled-repositories`: all | none_ | selected,
     enterprise: Htmlurl,
     environment: Protectionrules,
@@ -2097,7 +3087,7 @@ object Actionsbillingusage {
     `file-commit`: CommitContent,
     `full-repository`: Anonymousaccessenabled,
     `gist-comment`: User,
-    `gist-commit`: ChangestatusCommittedat,
+    `gist-commit`: Version,
     `gist-history`: Changestatus,
     `gist-simple`: Forkof,
     `git-commit`: AuthorCommitter,
@@ -2107,14 +3097,15 @@ object Actionsbillingusage {
     `gitignore-template`: NameSource,
     `gpg-key`: Canencryptcomms,
     hook: Lastresponse,
-    `hook-delivery`: Deliveredat,
-    `hook-delivery-item`: Action,
+    `hook-delivery`: Duration,
+    `hook-delivery-item`: Deliveredat,
     `hook-response`: MessageStatus,
-    hovercard: `393`,
+    hovercard: `445`,
     `import`: Authorscount,
     installation: Accesstokensurl,
     `installation-token`: Expiresat,
     integration: Clientsecret,
+    `integration-installation-request`: Account,
     `interaction-expiry`: one_day | three_days | one_week | one_month | six_months,
     `interaction-group`: existing_users | contributors_only | collaborators_only,
     `interaction-limit`: Expiry,
@@ -2123,20 +3114,20 @@ object Actionsbillingusage {
     `issue-comment`: Authorassociation,
     `issue-event`: Assigner,
     `issue-event-dismissed-review`: Dismissalcommitid,
-    `issue-event-for-issue`: Partial[EventId_] & Partial[AssignerCommitid] & Partial[IdNodeid] & Partial[IdMilestone] & Partial[NodeidPerformedviagithubapp] & Partial[Requestedteam] & Partial[CreatedatDismissedreview] & Partial[IdLockreason] & Partial[PerformedviagithubappProjectcard] & Partial[ProjectcardUrl],
+    `issue-event-for-issue`: EventId_ | AssignerCommitid | NodeidPerformedviagithubapp | IdMilestone | PerformedviagithubappRename | Requestedteam | CreatedatDismissedreview | IdLockreason | PerformedviagithubappProjectcard | ProjectcardUrl,
     `issue-event-label`: ColorName,
     `issue-event-milestone`: TitleString,
     `issue-event-project-card`: Previouscolumnname,
     `issue-event-rename`: From,
-    `issue-search-result-item`: Locked,
+    `issue-search-result-item`: Labelsurl,
     job: Checkrunurl,
     key: IdKey,
     `key-simple`: KeyString,
-    label: DescriptionId,
+    label: DefaultDescription,
     `label-search-result-item`: NodeidScore,
     `labeled-issue-event`: ActorCommitid,
-    language: StringDictionary[Double],
-    license: Conditions,
+    language: StringDictionary[js.UndefOr[Double]],
+    license: Implementation,
     `license-content`: ContentDownloadurl,
     `license-simple`: Nodeid,
     link: HrefString,
@@ -2147,26 +3138,30 @@ object Actionsbillingusage {
     `marketplace-listing-plan`: Accountsurl,
     `marketplace-purchase`: Login,
     `merged-upstream`: Basebranch,
-    metadata: StringDictionary[Partial[String] & Partial[Double] & Partial[Boolean]],
+    metadata: StringDictionary[js.UndefOr[String | Double | Boolean | Null]],
     migration: Excludemetadata,
     milestone: Closedat,
     `milestoned-issue-event`: CommitidCommiturl,
     `minimal-repository`: Blobsurl,
     `moved-column-in-project-issue-event`: Projectcard,
+    `oidc-custom-sub`: IncludeclaimkeysArray,
+    `oidc-custom-sub-repo`: Includeclaimkeys,
     `org-hook`: Deliveriesurl,
     `org-membership`: Organizationurl,
-    `organization-actions-secret`: Selectedrepositoriesurl,
-    `organization-custom-repository-role`: Organization,
-    `organization-dependabot-secret`: Selectedrepositoriesurl,
-    `organization-fine-grained-permission`: DescriptionName,
+    `org-ruleset-conditions`: Refname & Repositoryname,
+    `organization-actions-secret`: CreatedatName,
+    `organization-actions-variable`: NameSelectedrepositoriesurl,
+    `organization-dependabot-secret`: CreatedatName,
     `organization-full`: Billingemail,
     `organization-invitation`: Failedat,
+    `organization-programmatic-access-grant`: Accessgrantedat,
+    `organization-programmatic-access-grant-request`: Tokenexpired,
     `organization-secret-scanning-alert`: Locationsurl,
     `organization-simple`: Hooksurl,
     `package-version`: Deletedat,
     `packages-billing-usage`: Includedgigabytesbandwidth,
     page: Cname,
-    `page-build`: Duration,
+    `page-build`: Error,
     `page-build-status`: StatusUrl,
     `page-deployment`: Pageurl,
     `pages-health-check`: Altdomain,
@@ -2174,14 +3169,19 @@ object Actionsbillingusage {
     `pages-source-hash`: PathString,
     `participation-stats`: AllOwner,
     `pending-deployment`: Currentusercanapprove,
+    `personal-access-token-request`: Permissionsadded,
     `porter-author`: Importurl,
     `porter-large-file`: Oid,
     `private-user`: Businessplus,
+    `private-vulnerability-report-create`: Cweids,
     project: Columnsurl,
     `project-card`: Columnname,
     `project-collaborator-permission`: PermissionUser,
     `project-column`: Cardsurl,
-    `protected-branch`: Enforceadmins,
+    `projects-v2`: Deletedby,
+    `projects-v2-item`: Archivedat,
+    `projects-v2-item-content-type`: typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.Issue | PullRequest | DraftIssue,
+    `protected-branch`: Blockcreations,
     `protected-branch-admin-enforced`: EnabledUrl,
     `protected-branch-pull-request-review`: Dismissalrestrictions,
     `protected-branch-required-status-check`: Contextsurl,
@@ -2200,23 +3200,9 @@ object Actionsbillingusage {
     `referenced-workflow`: PathRef,
     `referrer-traffic`: Referrer,
     release: Assets,
-    `release-asset`: Browserdownloadurl,
-    `release-notes-content`: BodyString,
-    `removed-from-project-issue-event`: Projectcard,
-    `renamed-issue-event`: Rename,
-    `repo-codespaces-secret`: CreatedatName,
-    `repo-search-result-item`: Contentsurl,
-    repository: Allowsquashmerge,
-    `repository-collaborator-permission`: Rolename,
-    `repository-invitation`: Expired,
-    `repository-subscription`: CreatedatIgnored,
-    `review-comment`: Originalcommitid,
-    `review-dismissed-issue-event`: Dismissedreview,
-    `review-request-removed-issue-event`: Requestedreviewer,
-    `review-requested-issue-event`: Requestedreviewer,
-    root: Authorizationsurl
+    `release-asset`: Browserdownloadurl
   ): Actionsbillingusage = {
-    val __obj = js.Dynamic.literal(actor = actor.asInstanceOf[js.Any], artifact = artifact.asInstanceOf[js.Any], authorization = authorization.asInstanceOf[js.Any], autolink = autolink.asInstanceOf[js.Any], blob = blob.asInstanceOf[js.Any], codespace = codespace.asInstanceOf[js.Any], collaborator = collaborator.asInstanceOf[js.Any], commit = commit.asInstanceOf[js.Any], contributor = contributor.asInstanceOf[js.Any], dependency = dependency.asInstanceOf[js.Any], deployment = deployment.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], enterprise = enterprise.asInstanceOf[js.Any], environment = environment.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], feed = feed.asInstanceOf[js.Any], hook = hook.asInstanceOf[js.Any], hovercard = hovercard.asInstanceOf[js.Any], installation = installation.asInstanceOf[js.Any], integration = integration.asInstanceOf[js.Any], issue = issue.asInstanceOf[js.Any], job = job.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any], license = license.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], manifest = manifest.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], migration = migration.asInstanceOf[js.Any], milestone = milestone.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any], reaction = reaction.asInstanceOf[js.Any], release = release.asInstanceOf[js.Any], repository = repository.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(actor = actor.asInstanceOf[js.Any], artifact = artifact.asInstanceOf[js.Any], authorization = authorization.asInstanceOf[js.Any], autolink = autolink.asInstanceOf[js.Any], blob = blob.asInstanceOf[js.Any], codespace = codespace.asInstanceOf[js.Any], collaborator = collaborator.asInstanceOf[js.Any], commit = commit.asInstanceOf[js.Any], contributor = contributor.asInstanceOf[js.Any], dependency = dependency.asInstanceOf[js.Any], deployment = deployment.asInstanceOf[js.Any], discussion = discussion.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], enterprise = enterprise.asInstanceOf[js.Any], environment = environment.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], feed = feed.asInstanceOf[js.Any], hook = hook.asInstanceOf[js.Any], hovercard = hovercard.asInstanceOf[js.Any], installation = installation.asInstanceOf[js.Any], integration = integration.asInstanceOf[js.Any], issue = issue.asInstanceOf[js.Any], job = job.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any], license = license.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], manifest = manifest.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], migration = migration.asInstanceOf[js.Any], milestone = milestone.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any], reaction = reaction.asInstanceOf[js.Any], release = release.asInstanceOf[js.Any])
     __obj.updateDynamic("package")(_package.asInstanceOf[js.Any])
     __obj.updateDynamic("actions-billing-usage")(`actions-billing-usage`.asInstanceOf[js.Any])
     __obj.updateDynamic("actions-cache-list")(`actions-cache-list`.asInstanceOf[js.Any])
@@ -2225,18 +3211,15 @@ object Actionsbillingusage {
     __obj.updateDynamic("actions-can-approve-pull-request-reviews")(`actions-can-approve-pull-request-reviews`.asInstanceOf[js.Any])
     __obj.updateDynamic("actions-default-workflow-permissions")(`actions-default-workflow-permissions`.asInstanceOf[js.Any])
     __obj.updateDynamic("actions-enabled")(`actions-enabled`.asInstanceOf[js.Any])
-    __obj.updateDynamic("actions-enterprise-permissions")(`actions-enterprise-permissions`.asInstanceOf[js.Any])
     __obj.updateDynamic("actions-get-default-workflow-permissions")(`actions-get-default-workflow-permissions`.asInstanceOf[js.Any])
     __obj.updateDynamic("actions-organization-permissions")(`actions-organization-permissions`.asInstanceOf[js.Any])
     __obj.updateDynamic("actions-public-key")(`actions-public-key`.asInstanceOf[js.Any])
     __obj.updateDynamic("actions-repository-permissions")(`actions-repository-permissions`.asInstanceOf[js.Any])
     __obj.updateDynamic("actions-secret")(`actions-secret`.asInstanceOf[js.Any])
     __obj.updateDynamic("actions-set-default-workflow-permissions")(`actions-set-default-workflow-permissions`.asInstanceOf[js.Any])
+    __obj.updateDynamic("actions-variable")(`actions-variable`.asInstanceOf[js.Any])
     __obj.updateDynamic("actions-workflow-access-to-repository")(`actions-workflow-access-to-repository`.asInstanceOf[js.Any])
     __obj.updateDynamic("added-to-project-issue-event")(`added-to-project-issue-event`.asInstanceOf[js.Any])
-    __obj.updateDynamic("advanced-security-active-committers")(`advanced-security-active-committers`.asInstanceOf[js.Any])
-    __obj.updateDynamic("advanced-security-active-committers-repository")(`advanced-security-active-committers-repository`.asInstanceOf[js.Any])
-    __obj.updateDynamic("advanced-security-active-committers-user")(`advanced-security-active-committers-user`.asInstanceOf[js.Any])
     __obj.updateDynamic("alert-created-at")(`alert-created-at`.asInstanceOf[js.Any])
     __obj.updateDynamic("alert-html-url")(`alert-html-url`.asInstanceOf[js.Any])
     __obj.updateDynamic("alert-instances-url")(`alert-instances-url`.asInstanceOf[js.Any])
@@ -2257,6 +3240,7 @@ object Actionsbillingusage {
     __obj.updateDynamic("branch-with-protection")(`branch-with-protection`.asInstanceOf[js.Any])
     __obj.updateDynamic("check-annotation")(`check-annotation`.asInstanceOf[js.Any])
     __obj.updateDynamic("check-run")(`check-run`.asInstanceOf[js.Any])
+    __obj.updateDynamic("check-run-with-simple-check-suite")(`check-run-with-simple-check-suite`.asInstanceOf[js.Any])
     __obj.updateDynamic("check-suite")(`check-suite`.asInstanceOf[js.Any])
     __obj.updateDynamic("check-suite-preference")(`check-suite-preference`.asInstanceOf[js.Any])
     __obj.updateDynamic("clone-traffic")(`clone-traffic`.asInstanceOf[js.Any])
@@ -2271,6 +3255,7 @@ object Actionsbillingusage {
     __obj.updateDynamic("code-scanning-alert-rule")(`code-scanning-alert-rule`.asInstanceOf[js.Any])
     __obj.updateDynamic("code-scanning-alert-rule-summary")(`code-scanning-alert-rule-summary`.asInstanceOf[js.Any])
     __obj.updateDynamic("code-scanning-alert-set-state")(`code-scanning-alert-set-state`.asInstanceOf[js.Any])
+    __obj.updateDynamic("code-scanning-alert-severity")(`code-scanning-alert-severity`.asInstanceOf[js.Any])
     __obj.updateDynamic("code-scanning-alert-state")(`code-scanning-alert-state`.asInstanceOf[js.Any])
     __obj.updateDynamic("code-scanning-analysis")(`code-scanning-analysis`.asInstanceOf[js.Any])
     __obj.updateDynamic("code-scanning-analysis-analysis-key")(`code-scanning-analysis-analysis-key`.asInstanceOf[js.Any])
@@ -2285,6 +3270,9 @@ object Actionsbillingusage {
     __obj.updateDynamic("code-scanning-analysis-tool-name")(`code-scanning-analysis-tool-name`.asInstanceOf[js.Any])
     __obj.updateDynamic("code-scanning-analysis-url")(`code-scanning-analysis-url`.asInstanceOf[js.Any])
     __obj.updateDynamic("code-scanning-codeql-database")(`code-scanning-codeql-database`.asInstanceOf[js.Any])
+    __obj.updateDynamic("code-scanning-default-setup")(`code-scanning-default-setup`.asInstanceOf[js.Any])
+    __obj.updateDynamic("code-scanning-default-setup-update")(`code-scanning-default-setup-update`.asInstanceOf[js.Any])
+    __obj.updateDynamic("code-scanning-default-setup-update-response")(`code-scanning-default-setup-update-response`.asInstanceOf[js.Any])
     __obj.updateDynamic("code-scanning-organization-alert-items")(`code-scanning-organization-alert-items`.asInstanceOf[js.Any])
     __obj.updateDynamic("code-scanning-ref")(`code-scanning-ref`.asInstanceOf[js.Any])
     __obj.updateDynamic("code-scanning-sarifs-receipt")(`code-scanning-sarifs-receipt`.asInstanceOf[js.Any])
@@ -2293,6 +3281,7 @@ object Actionsbillingusage {
     __obj.updateDynamic("codeowners-errors")(`codeowners-errors`.asInstanceOf[js.Any])
     __obj.updateDynamic("codespace-export-details")(`codespace-export-details`.asInstanceOf[js.Any])
     __obj.updateDynamic("codespace-machine")(`codespace-machine`.asInstanceOf[js.Any])
+    __obj.updateDynamic("codespace-with-full-repository")(`codespace-with-full-repository`.asInstanceOf[js.Any])
     __obj.updateDynamic("codespaces-org-secret")(`codespaces-org-secret`.asInstanceOf[js.Any])
     __obj.updateDynamic("codespaces-public-key")(`codespaces-public-key`.asInstanceOf[js.Any])
     __obj.updateDynamic("codespaces-secret")(`codespaces-secret`.asInstanceOf[js.Any])
@@ -2312,26 +3301,26 @@ object Actionsbillingusage {
     __obj.updateDynamic("content-tree")(`content-tree`.asInstanceOf[js.Any])
     __obj.updateDynamic("contributor-activity")(`contributor-activity`.asInstanceOf[js.Any])
     __obj.updateDynamic("converted-note-to-issue-issue-event")(`converted-note-to-issue-issue-event`.asInstanceOf[js.Any])
+    __obj.updateDynamic("custom-deployment-rule-app")(`custom-deployment-rule-app`.asInstanceOf[js.Any])
     __obj.updateDynamic("demilestoned-issue-event")(`demilestoned-issue-event`.asInstanceOf[js.Any])
     __obj.updateDynamic("dependabot-alert")(`dependabot-alert`.asInstanceOf[js.Any])
-    __obj.updateDynamic("dependabot-alert-dependency")(`dependabot-alert-dependency`.asInstanceOf[js.Any])
     __obj.updateDynamic("dependabot-alert-package")(`dependabot-alert-package`.asInstanceOf[js.Any])
     __obj.updateDynamic("dependabot-alert-security-advisory")(`dependabot-alert-security-advisory`.asInstanceOf[js.Any])
     __obj.updateDynamic("dependabot-alert-security-vulnerability")(`dependabot-alert-security-vulnerability`.asInstanceOf[js.Any])
-    __obj.updateDynamic("dependabot-alert-set-state")(`dependabot-alert-set-state`.asInstanceOf[js.Any])
-    __obj.updateDynamic("dependabot-alert-state")(`dependabot-alert-state`.asInstanceOf[js.Any])
+    __obj.updateDynamic("dependabot-alert-with-repository")(`dependabot-alert-with-repository`.asInstanceOf[js.Any])
     __obj.updateDynamic("dependabot-public-key")(`dependabot-public-key`.asInstanceOf[js.Any])
     __obj.updateDynamic("dependabot-secret")(`dependabot-secret`.asInstanceOf[js.Any])
     __obj.updateDynamic("dependency-graph-diff")(`dependency-graph-diff`.asInstanceOf[js.Any])
+    __obj.updateDynamic("dependency-graph-spdx-sbom")(`dependency-graph-spdx-sbom`.asInstanceOf[js.Any])
     __obj.updateDynamic("deploy-key")(`deploy-key`.asInstanceOf[js.Any])
     __obj.updateDynamic("deployment-branch-policy")(`deployment-branch-policy`.asInstanceOf[js.Any])
     __obj.updateDynamic("deployment-branch-policy-name-pattern")(`deployment-branch-policy-name-pattern`.asInstanceOf[js.Any])
+    __obj.updateDynamic("deployment-protection-rule")(`deployment-protection-rule`.asInstanceOf[js.Any])
     __obj.updateDynamic("deployment-reviewer-type")(`deployment-reviewer-type`.asInstanceOf[js.Any])
     __obj.updateDynamic("deployment-simple")(`deployment-simple`.asInstanceOf[js.Any])
     __obj.updateDynamic("deployment-status")(`deployment-status`.asInstanceOf[js.Any])
     __obj.updateDynamic("diff-entry")(`diff-entry`.asInstanceOf[js.Any])
     __obj.updateDynamic("empty-object")(`empty-object`.asInstanceOf[js.Any])
-    __obj.updateDynamic("enabled-organizations")(`enabled-organizations`.asInstanceOf[js.Any])
     __obj.updateDynamic("enabled-repositories")(`enabled-repositories`.asInstanceOf[js.Any])
     __obj.updateDynamic("environment-approvals")(`environment-approvals`.asInstanceOf[js.Any])
     __obj.updateDynamic("file-commit")(`file-commit`.asInstanceOf[js.Any])
@@ -2351,6 +3340,7 @@ object Actionsbillingusage {
     __obj.updateDynamic("hook-response")(`hook-response`.asInstanceOf[js.Any])
     __obj.updateDynamic("import")(`import`.asInstanceOf[js.Any])
     __obj.updateDynamic("installation-token")(`installation-token`.asInstanceOf[js.Any])
+    __obj.updateDynamic("integration-installation-request")(`integration-installation-request`.asInstanceOf[js.Any])
     __obj.updateDynamic("interaction-expiry")(`interaction-expiry`.asInstanceOf[js.Any])
     __obj.updateDynamic("interaction-group")(`interaction-group`.asInstanceOf[js.Any])
     __obj.updateDynamic("interaction-limit")(`interaction-limit`.asInstanceOf[js.Any])
@@ -2378,14 +3368,18 @@ object Actionsbillingusage {
     __obj.updateDynamic("milestoned-issue-event")(`milestoned-issue-event`.asInstanceOf[js.Any])
     __obj.updateDynamic("minimal-repository")(`minimal-repository`.asInstanceOf[js.Any])
     __obj.updateDynamic("moved-column-in-project-issue-event")(`moved-column-in-project-issue-event`.asInstanceOf[js.Any])
+    __obj.updateDynamic("oidc-custom-sub")(`oidc-custom-sub`.asInstanceOf[js.Any])
+    __obj.updateDynamic("oidc-custom-sub-repo")(`oidc-custom-sub-repo`.asInstanceOf[js.Any])
     __obj.updateDynamic("org-hook")(`org-hook`.asInstanceOf[js.Any])
     __obj.updateDynamic("org-membership")(`org-membership`.asInstanceOf[js.Any])
+    __obj.updateDynamic("org-ruleset-conditions")(`org-ruleset-conditions`.asInstanceOf[js.Any])
     __obj.updateDynamic("organization-actions-secret")(`organization-actions-secret`.asInstanceOf[js.Any])
-    __obj.updateDynamic("organization-custom-repository-role")(`organization-custom-repository-role`.asInstanceOf[js.Any])
+    __obj.updateDynamic("organization-actions-variable")(`organization-actions-variable`.asInstanceOf[js.Any])
     __obj.updateDynamic("organization-dependabot-secret")(`organization-dependabot-secret`.asInstanceOf[js.Any])
-    __obj.updateDynamic("organization-fine-grained-permission")(`organization-fine-grained-permission`.asInstanceOf[js.Any])
     __obj.updateDynamic("organization-full")(`organization-full`.asInstanceOf[js.Any])
     __obj.updateDynamic("organization-invitation")(`organization-invitation`.asInstanceOf[js.Any])
+    __obj.updateDynamic("organization-programmatic-access-grant")(`organization-programmatic-access-grant`.asInstanceOf[js.Any])
+    __obj.updateDynamic("organization-programmatic-access-grant-request")(`organization-programmatic-access-grant-request`.asInstanceOf[js.Any])
     __obj.updateDynamic("organization-secret-scanning-alert")(`organization-secret-scanning-alert`.asInstanceOf[js.Any])
     __obj.updateDynamic("organization-simple")(`organization-simple`.asInstanceOf[js.Any])
     __obj.updateDynamic("package-version")(`package-version`.asInstanceOf[js.Any])
@@ -2398,12 +3392,17 @@ object Actionsbillingusage {
     __obj.updateDynamic("pages-source-hash")(`pages-source-hash`.asInstanceOf[js.Any])
     __obj.updateDynamic("participation-stats")(`participation-stats`.asInstanceOf[js.Any])
     __obj.updateDynamic("pending-deployment")(`pending-deployment`.asInstanceOf[js.Any])
+    __obj.updateDynamic("personal-access-token-request")(`personal-access-token-request`.asInstanceOf[js.Any])
     __obj.updateDynamic("porter-author")(`porter-author`.asInstanceOf[js.Any])
     __obj.updateDynamic("porter-large-file")(`porter-large-file`.asInstanceOf[js.Any])
     __obj.updateDynamic("private-user")(`private-user`.asInstanceOf[js.Any])
+    __obj.updateDynamic("private-vulnerability-report-create")(`private-vulnerability-report-create`.asInstanceOf[js.Any])
     __obj.updateDynamic("project-card")(`project-card`.asInstanceOf[js.Any])
     __obj.updateDynamic("project-collaborator-permission")(`project-collaborator-permission`.asInstanceOf[js.Any])
     __obj.updateDynamic("project-column")(`project-column`.asInstanceOf[js.Any])
+    __obj.updateDynamic("projects-v2")(`projects-v2`.asInstanceOf[js.Any])
+    __obj.updateDynamic("projects-v2-item")(`projects-v2-item`.asInstanceOf[js.Any])
+    __obj.updateDynamic("projects-v2-item-content-type")(`projects-v2-item-content-type`.asInstanceOf[js.Any])
     __obj.updateDynamic("protected-branch")(`protected-branch`.asInstanceOf[js.Any])
     __obj.updateDynamic("protected-branch-admin-enforced")(`protected-branch-admin-enforced`.asInstanceOf[js.Any])
     __obj.updateDynamic("protected-branch-pull-request-review")(`protected-branch-pull-request-review`.asInstanceOf[js.Any])
@@ -2422,18 +3421,6 @@ object Actionsbillingusage {
     __obj.updateDynamic("referenced-workflow")(`referenced-workflow`.asInstanceOf[js.Any])
     __obj.updateDynamic("referrer-traffic")(`referrer-traffic`.asInstanceOf[js.Any])
     __obj.updateDynamic("release-asset")(`release-asset`.asInstanceOf[js.Any])
-    __obj.updateDynamic("release-notes-content")(`release-notes-content`.asInstanceOf[js.Any])
-    __obj.updateDynamic("removed-from-project-issue-event")(`removed-from-project-issue-event`.asInstanceOf[js.Any])
-    __obj.updateDynamic("renamed-issue-event")(`renamed-issue-event`.asInstanceOf[js.Any])
-    __obj.updateDynamic("repo-codespaces-secret")(`repo-codespaces-secret`.asInstanceOf[js.Any])
-    __obj.updateDynamic("repo-search-result-item")(`repo-search-result-item`.asInstanceOf[js.Any])
-    __obj.updateDynamic("repository-collaborator-permission")(`repository-collaborator-permission`.asInstanceOf[js.Any])
-    __obj.updateDynamic("repository-invitation")(`repository-invitation`.asInstanceOf[js.Any])
-    __obj.updateDynamic("repository-subscription")(`repository-subscription`.asInstanceOf[js.Any])
-    __obj.updateDynamic("review-comment")(`review-comment`.asInstanceOf[js.Any])
-    __obj.updateDynamic("review-dismissed-issue-event")(`review-dismissed-issue-event`.asInstanceOf[js.Any])
-    __obj.updateDynamic("review-request-removed-issue-event")(`review-request-removed-issue-event`.asInstanceOf[js.Any])
-    __obj.updateDynamic("review-requested-issue-event")(`review-requested-issue-event`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Actionsbillingusage]
   }
   
@@ -2454,19 +3441,19 @@ object Actionsbillingusage {
     
     inline def `setActions-enabled`(value: Boolean): Self = StObject.set(x, "actions-enabled", value.asInstanceOf[js.Any])
     
-    inline def `setActions-enterprise-permissions`(value: Enabledorganizations): Self = StObject.set(x, "actions-enterprise-permissions", value.asInstanceOf[js.Any])
-    
     inline def `setActions-get-default-workflow-permissions`(value: Canapprovepullrequestreviews): Self = StObject.set(x, "actions-get-default-workflow-permissions", value.asInstanceOf[js.Any])
     
-    inline def `setActions-organization-permissions`(value: Selectedactionsurl): Self = StObject.set(x, "actions-organization-permissions", value.asInstanceOf[js.Any])
+    inline def `setActions-organization-permissions`(value: Enabledrepositories): Self = StObject.set(x, "actions-organization-permissions", value.asInstanceOf[js.Any])
     
     inline def `setActions-public-key`(value: CreatedatId): Self = StObject.set(x, "actions-public-key", value.asInstanceOf[js.Any])
     
-    inline def `setActions-repository-permissions`(value: AllowedactionsEnabled): Self = StObject.set(x, "actions-repository-permissions", value.asInstanceOf[js.Any])
+    inline def `setActions-repository-permissions`(value: Selectedactionsurl): Self = StObject.set(x, "actions-repository-permissions", value.asInstanceOf[js.Any])
     
-    inline def `setActions-secret`(value: CreatedatName): Self = StObject.set(x, "actions-secret", value.asInstanceOf[js.Any])
+    inline def `setActions-secret`(value: NameUpdatedat): Self = StObject.set(x, "actions-secret", value.asInstanceOf[js.Any])
     
     inline def `setActions-set-default-workflow-permissions`(value: Defaultworkflowpermissions): Self = StObject.set(x, "actions-set-default-workflow-permissions", value.asInstanceOf[js.Any])
+    
+    inline def `setActions-variable`(value: UpdatedatValue): Self = StObject.set(x, "actions-variable", value.asInstanceOf[js.Any])
     
     inline def `setActions-workflow-access-to-repository`(value: Accesslevel): Self = StObject.set(x, "actions-workflow-access-to-repository", value.asInstanceOf[js.Any])
     
@@ -2474,13 +3461,19 @@ object Actionsbillingusage {
     
     inline def `setAdded-to-project-issue-event`(value: Projectcard): Self = StObject.set(x, "added-to-project-issue-event", value.asInstanceOf[js.Any])
     
-    inline def `setAdvanced-security-active-committers`(value: Totaladvancedsecuritycommitters): Self = StObject.set(x, "advanced-security-active-committers", value.asInstanceOf[js.Any])
+    inline def `setAlert-auto-dismissed-at`(value: String): Self = StObject.set(x, "alert-auto-dismissed-at", value.asInstanceOf[js.Any])
     
-    inline def `setAdvanced-security-active-committers-repository`(value: Advancedsecuritycommitters): Self = StObject.set(x, "advanced-security-active-committers-repository", value.asInstanceOf[js.Any])
-    
-    inline def `setAdvanced-security-active-committers-user`(value: Lastpusheddate): Self = StObject.set(x, "advanced-security-active-committers-user", value.asInstanceOf[js.Any])
+    inline def `setAlert-auto-dismissed-atNull`: Self = StObject.set(x, "alert-auto-dismissed-at", null)
     
     inline def `setAlert-created-at`(value: String): Self = StObject.set(x, "alert-created-at", value.asInstanceOf[js.Any])
+    
+    inline def `setAlert-dismissed-at`(value: String): Self = StObject.set(x, "alert-dismissed-at", value.asInstanceOf[js.Any])
+    
+    inline def `setAlert-dismissed-atNull`: Self = StObject.set(x, "alert-dismissed-at", null)
+    
+    inline def `setAlert-fixed-at`(value: String): Self = StObject.set(x, "alert-fixed-at", value.asInstanceOf[js.Any])
+    
+    inline def `setAlert-fixed-atNull`: Self = StObject.set(x, "alert-fixed-at", null)
     
     inline def `setAlert-html-url`(value: String): Self = StObject.set(x, "alert-html-url", value.asInstanceOf[js.Any])
     
@@ -2528,11 +3521,13 @@ object Actionsbillingusage {
     
     inline def `setBranch-short`(value: CommitName): Self = StObject.set(x, "branch-short", value.asInstanceOf[js.Any])
     
-    inline def `setBranch-with-protection`(value: Links): Self = StObject.set(x, "branch-with-protection", value.asInstanceOf[js.Any])
+    inline def `setBranch-with-protection`(value: Protection): Self = StObject.set(x, "branch-with-protection", value.asInstanceOf[js.Any])
     
     inline def `setCheck-annotation`(value: Blobhref): Self = StObject.set(x, "check-annotation", value.asInstanceOf[js.Any])
     
     inline def `setCheck-run`(value: Checksuite): Self = StObject.set(x, "check-run", value.asInstanceOf[js.Any])
+    
+    inline def `setCheck-run-with-simple-check-suite`(value: Deployment): Self = StObject.set(x, "check-run-with-simple-check-suite", value.asInstanceOf[js.Any])
     
     inline def `setCheck-suite`(value: Checkrunsurl): Self = StObject.set(x, "check-suite", value.asInstanceOf[js.Any])
     
@@ -2554,23 +3549,15 @@ object Actionsbillingusage {
     
     inline def `setCode-scanning-alert-classificationNull`: Self = StObject.set(x, "code-scanning-alert-classification", null)
     
-    inline def `setCode-scanning-alert-dismissed-at`(value: String): Self = StObject.set(x, "code-scanning-alert-dismissed-at", value.asInstanceOf[js.Any])
-    
-    inline def `setCode-scanning-alert-dismissed-atNull`: Self = StObject.set(x, "code-scanning-alert-dismissed-at", null)
-    
     inline def `setCode-scanning-alert-dismissed-comment`(value: String): Self = StObject.set(x, "code-scanning-alert-dismissed-comment", value.asInstanceOf[js.Any])
     
     inline def `setCode-scanning-alert-dismissed-commentNull`: Self = StObject.set(x, "code-scanning-alert-dismissed-comment", null)
     
-    inline def `setCode-scanning-alert-dismissed-reason`(value: (`false positive`) | (/* won't fix */ String) | (`used in tests`)): Self = StObject.set(x, "code-scanning-alert-dismissed-reason", value.asInstanceOf[js.Any])
+    inline def `setCode-scanning-alert-dismissed-reason`(value: _empty | (`false positive`) | (/* won't fix */ String) | (`used in tests`)): Self = StObject.set(x, "code-scanning-alert-dismissed-reason", value.asInstanceOf[js.Any])
     
     inline def `setCode-scanning-alert-dismissed-reasonNull`: Self = StObject.set(x, "code-scanning-alert-dismissed-reason", null)
     
     inline def `setCode-scanning-alert-environment`(value: String): Self = StObject.set(x, "code-scanning-alert-environment", value.asInstanceOf[js.Any])
-    
-    inline def `setCode-scanning-alert-fixed-at`(value: String): Self = StObject.set(x, "code-scanning-alert-fixed-at", value.asInstanceOf[js.Any])
-    
-    inline def `setCode-scanning-alert-fixed-atNull`: Self = StObject.set(x, "code-scanning-alert-fixed-at", null)
     
     inline def `setCode-scanning-alert-instance`(value: Analysiskey): Self = StObject.set(x, "code-scanning-alert-instance", value.asInstanceOf[js.Any])
     
@@ -2580,9 +3567,11 @@ object Actionsbillingusage {
     
     inline def `setCode-scanning-alert-rule`(value: Fulldescription): Self = StObject.set(x, "code-scanning-alert-rule", value.asInstanceOf[js.Any])
     
-    inline def `setCode-scanning-alert-rule-summary`(value: Severity): Self = StObject.set(x, "code-scanning-alert-rule-summary", value.asInstanceOf[js.Any])
+    inline def `setCode-scanning-alert-rule-summary`(value: DescriptionId): Self = StObject.set(x, "code-scanning-alert-rule-summary", value.asInstanceOf[js.Any])
     
     inline def `setCode-scanning-alert-set-state`(value: open | dismissed): Self = StObject.set(x, "code-scanning-alert-set-state", value.asInstanceOf[js.Any])
+    
+    inline def `setCode-scanning-alert-severity`(value: critical | high | medium | low | warning | note | error): Self = StObject.set(x, "code-scanning-alert-severity", value.asInstanceOf[js.Any])
     
     inline def `setCode-scanning-alert-state`(value: open | closed | dismissed | fixed): Self = StObject.set(x, "code-scanning-alert-state", value.asInstanceOf[js.Any])
     
@@ -2618,7 +3607,13 @@ object Actionsbillingusage {
     
     inline def `setCode-scanning-analysis-url`(value: String): Self = StObject.set(x, "code-scanning-analysis-url", value.asInstanceOf[js.Any])
     
-    inline def `setCode-scanning-codeql-database`(value: Size): Self = StObject.set(x, "code-scanning-codeql-database", value.asInstanceOf[js.Any])
+    inline def `setCode-scanning-codeql-database`(value: Uploader): Self = StObject.set(x, "code-scanning-codeql-database", value.asInstanceOf[js.Any])
+    
+    inline def `setCode-scanning-default-setup`(value: Languages): Self = StObject.set(x, "code-scanning-default-setup", value.asInstanceOf[js.Any])
+    
+    inline def `setCode-scanning-default-setup-update`(value: Querysuite): Self = StObject.set(x, "code-scanning-default-setup-update", value.asInstanceOf[js.Any])
+    
+    inline def `setCode-scanning-default-setup-update-response`(value: Runurl): Self = StObject.set(x, "code-scanning-default-setup-update-response", value.asInstanceOf[js.Any])
     
     inline def `setCode-scanning-organization-alert-items`(value: Dismissedat): Self = StObject.set(x, "code-scanning-organization-alert-items", value.asInstanceOf[js.Any])
     
@@ -2638,11 +3633,13 @@ object Actionsbillingusage {
     
     inline def `setCodespace-machine`(value: Cpus): Self = StObject.set(x, "codespace-machine", value.asInstanceOf[js.Any])
     
-    inline def `setCodespaces-org-secret`(value: Selectedrepositoriesurl): Self = StObject.set(x, "codespaces-org-secret", value.asInstanceOf[js.Any])
+    inline def `setCodespace-with-full-repository`(value: Gitstatus): Self = StObject.set(x, "codespace-with-full-repository", value.asInstanceOf[js.Any])
+    
+    inline def `setCodespaces-org-secret`(value: CreatedatName): Self = StObject.set(x, "codespaces-org-secret", value.asInstanceOf[js.Any])
     
     inline def `setCodespaces-public-key`(value: CreatedatId): Self = StObject.set(x, "codespaces-public-key", value.asInstanceOf[js.Any])
     
-    inline def `setCodespaces-secret`(value: NameSelectedrepositoriesurl): Self = StObject.set(x, "codespaces-secret", value.asInstanceOf[js.Any])
+    inline def `setCodespaces-secret`(value: SelectedrepositoriesurlUpdatedat): Self = StObject.set(x, "codespaces-secret", value.asInstanceOf[js.Any])
     
     inline def `setCodespaces-user-public-key`(value: KeyKeyid): Self = StObject.set(x, "codespaces-user-public-key", value.asInstanceOf[js.Any])
     
@@ -2684,45 +3681,23 @@ object Actionsbillingusage {
     
     inline def `setConverted-note-to-issue-issue-event`(value: CreatedatEvent): Self = StObject.set(x, "converted-note-to-issue-issue-event", value.asInstanceOf[js.Any])
     
+    inline def `setCustom-deployment-rule-app`(value: Integrationurl): Self = StObject.set(x, "custom-deployment-rule-app", value.asInstanceOf[js.Any])
+    
     inline def `setDemilestoned-issue-event`(value: CommitidCommiturl): Self = StObject.set(x, "demilestoned-issue-event", value.asInstanceOf[js.Any])
     
     inline def `setDependabot-alert`(value: Dependency): Self = StObject.set(x, "dependabot-alert", value.asInstanceOf[js.Any])
     
-    inline def `setDependabot-alert-dependency`(value: Manifestpath): Self = StObject.set(x, "dependabot-alert-dependency", value.asInstanceOf[js.Any])
-    
-    inline def `setDependabot-alert-dismissed-comment`(value: String): Self = StObject.set(x, "dependabot-alert-dismissed-comment", value.asInstanceOf[js.Any])
-    
-    inline def `setDependabot-alert-dismissed-commentNull`: Self = StObject.set(x, "dependabot-alert-dismissed-comment", null)
-    
-    inline def `setDependabot-alert-dismissed-reason`(value: fix_started | inaccurate | no_bandwidth | not_used | tolerable_risk): Self = StObject.set(x, "dependabot-alert-dismissed-reason", value.asInstanceOf[js.Any])
-    
-    inline def `setDependabot-alert-dismissed-reasonNull`: Self = StObject.set(x, "dependabot-alert-dismissed-reason", null)
-    
-    inline def `setDependabot-alert-dismissed_at`(value: String): Self = StObject.set(x, "dependabot-alert-dismissed_at", value.asInstanceOf[js.Any])
-    
-    inline def `setDependabot-alert-dismissed_atNull`: Self = StObject.set(x, "dependabot-alert-dismissed_at", null)
-    
-    inline def `setDependabot-alert-fixed-at`(value: String): Self = StObject.set(x, "dependabot-alert-fixed-at", value.asInstanceOf[js.Any])
-    
-    inline def `setDependabot-alert-fixed-atNull`: Self = StObject.set(x, "dependabot-alert-fixed-at", null)
-    
     inline def `setDependabot-alert-package`(value: EcosystemName): Self = StObject.set(x, "dependabot-alert-package", value.asInstanceOf[js.Any])
-    
-    inline def `setDependabot-alert-scope`(value: development | runtime): Self = StObject.set(x, "dependabot-alert-scope", value.asInstanceOf[js.Any])
-    
-    inline def `setDependabot-alert-scopeNull`: Self = StObject.set(x, "dependabot-alert-scope", null)
     
     inline def `setDependabot-alert-security-advisory`(value: Cveid): Self = StObject.set(x, "dependabot-alert-security-advisory", value.asInstanceOf[js.Any])
     
-    inline def `setDependabot-alert-security-vulnerability`(value: Package): Self = StObject.set(x, "dependabot-alert-security-vulnerability", value.asInstanceOf[js.Any])
+    inline def `setDependabot-alert-security-vulnerability`(value: Firstpatchedversion): Self = StObject.set(x, "dependabot-alert-security-vulnerability", value.asInstanceOf[js.Any])
     
-    inline def `setDependabot-alert-set-state`(value: dismissed | open): Self = StObject.set(x, "dependabot-alert-set-state", value.asInstanceOf[js.Any])
-    
-    inline def `setDependabot-alert-state`(value: dismissed | fixed | open): Self = StObject.set(x, "dependabot-alert-state", value.asInstanceOf[js.Any])
+    inline def `setDependabot-alert-with-repository`(value: Autodismissedat): Self = StObject.set(x, "dependabot-alert-with-repository", value.asInstanceOf[js.Any])
     
     inline def `setDependabot-public-key`(value: KeyKeyid): Self = StObject.set(x, "dependabot-public-key", value.asInstanceOf[js.Any])
     
-    inline def `setDependabot-secret`(value: CreatedatName): Self = StObject.set(x, "dependabot-secret", value.asInstanceOf[js.Any])
+    inline def `setDependabot-secret`(value: NameUpdatedat): Self = StObject.set(x, "dependabot-secret", value.asInstanceOf[js.Any])
     
     inline def setDependency(value: Dependencies): Self = StObject.set(x, "dependency", value.asInstanceOf[js.Any])
     
@@ -2730,19 +3705,25 @@ object Actionsbillingusage {
     
     inline def `setDependency-graph-diffVarargs`(value: Changetype*): Self = StObject.set(x, "dependency-graph-diff", js.Array(value*))
     
+    inline def `setDependency-graph-spdx-sbom`(value: Sbom): Self = StObject.set(x, "dependency-graph-spdx-sbom", value.asInstanceOf[js.Any])
+    
     inline def `setDeploy-key`(value: Addedby): Self = StObject.set(x, "deploy-key", value.asInstanceOf[js.Any])
     
     inline def setDeployment(value: Originalenvironment): Self = StObject.set(x, "deployment", value.asInstanceOf[js.Any])
     
     inline def `setDeployment-branch-policy`(value: NameNodeid): Self = StObject.set(x, "deployment-branch-policy", value.asInstanceOf[js.Any])
     
-    inline def `setDeployment-branch-policy-name-pattern`(value: NameString): Self = StObject.set(x, "deployment-branch-policy-name-pattern", value.asInstanceOf[js.Any])
+    inline def `setDeployment-branch-policy-name-pattern`(value: Name): Self = StObject.set(x, "deployment-branch-policy-name-pattern", value.asInstanceOf[js.Any])
     
     inline def `setDeployment-branch-policy-settings`(value: Custombranchpolicies): Self = StObject.set(x, "deployment-branch-policy-settings", value.asInstanceOf[js.Any])
     
     inline def `setDeployment-branch-policy-settingsNull`: Self = StObject.set(x, "deployment-branch-policy-settings", null)
     
-    inline def `setDeployment-reviewer-type`(value: typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.User | Team): Self = StObject.set(x, "deployment-reviewer-type", value.asInstanceOf[js.Any])
+    inline def `setDeployment-protection-rule`(value: AppEnabled): Self = StObject.set(x, "deployment-protection-rule", value.asInstanceOf[js.Any])
+    
+    inline def `setDeployment-reviewer-type`(
+      value: typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.User | typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.Team
+    ): Self = StObject.set(x, "deployment-reviewer-type", value.asInstanceOf[js.Any])
     
     inline def `setDeployment-simple`(value: Performedviagithubapp): Self = StObject.set(x, "deployment-simple", value.asInstanceOf[js.Any])
     
@@ -2750,11 +3731,11 @@ object Actionsbillingusage {
     
     inline def `setDiff-entry`(value: Bloburl): Self = StObject.set(x, "diff-entry", value.asInstanceOf[js.Any])
     
+    inline def setDiscussion(value: Answerchosenat): Self = StObject.set(x, "discussion", value.asInstanceOf[js.Any])
+    
     inline def setEmail(value: Primary): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    inline def `setEmpty-object`(value: StringDictionary[Any]): Self = StObject.set(x, "empty-object", value.asInstanceOf[js.Any])
-    
-    inline def `setEnabled-organizations`(value: all | none_ | selected): Self = StObject.set(x, "enabled-organizations", value.asInstanceOf[js.Any])
+    inline def `setEmpty-object`(value: Record[String, scala.Nothing]): Self = StObject.set(x, "empty-object", value.asInstanceOf[js.Any])
     
     inline def `setEnabled-repositories`(value: all | none_ | selected): Self = StObject.set(x, "enabled-repositories", value.asInstanceOf[js.Any])
     
@@ -2774,7 +3755,7 @@ object Actionsbillingusage {
     
     inline def `setGist-comment`(value: User): Self = StObject.set(x, "gist-comment", value.asInstanceOf[js.Any])
     
-    inline def `setGist-commit`(value: ChangestatusCommittedat): Self = StObject.set(x, "gist-commit", value.asInstanceOf[js.Any])
+    inline def `setGist-commit`(value: Version): Self = StObject.set(x, "gist-commit", value.asInstanceOf[js.Any])
     
     inline def `setGist-history`(value: Changestatus): Self = StObject.set(x, "gist-history", value.asInstanceOf[js.Any])
     
@@ -2794,13 +3775,13 @@ object Actionsbillingusage {
     
     inline def setHook(value: Lastresponse): Self = StObject.set(x, "hook", value.asInstanceOf[js.Any])
     
-    inline def `setHook-delivery`(value: Deliveredat): Self = StObject.set(x, "hook-delivery", value.asInstanceOf[js.Any])
+    inline def `setHook-delivery`(value: Duration): Self = StObject.set(x, "hook-delivery", value.asInstanceOf[js.Any])
     
-    inline def `setHook-delivery-item`(value: Action): Self = StObject.set(x, "hook-delivery-item", value.asInstanceOf[js.Any])
+    inline def `setHook-delivery-item`(value: Deliveredat): Self = StObject.set(x, "hook-delivery-item", value.asInstanceOf[js.Any])
     
     inline def `setHook-response`(value: MessageStatus): Self = StObject.set(x, "hook-response", value.asInstanceOf[js.Any])
     
-    inline def setHovercard(value: `393`): Self = StObject.set(x, "hovercard", value.asInstanceOf[js.Any])
+    inline def setHovercard(value: `445`): Self = StObject.set(x, "hovercard", value.asInstanceOf[js.Any])
     
     inline def setImport(value: Authorscount): Self = StObject.set(x, "import", value.asInstanceOf[js.Any])
     
@@ -2809,6 +3790,8 @@ object Actionsbillingusage {
     inline def `setInstallation-token`(value: Expiresat): Self = StObject.set(x, "installation-token", value.asInstanceOf[js.Any])
     
     inline def setIntegration(value: Clientsecret): Self = StObject.set(x, "integration", value.asInstanceOf[js.Any])
+    
+    inline def `setIntegration-installation-request`(value: Account): Self = StObject.set(x, "integration-installation-request", value.asInstanceOf[js.Any])
     
     inline def `setInteraction-expiry`(value: one_day | three_days | one_week | one_month | six_months): Self = StObject.set(x, "interaction-expiry", value.asInstanceOf[js.Any])
     
@@ -2827,7 +3810,7 @@ object Actionsbillingusage {
     inline def `setIssue-event-dismissed-review`(value: Dismissalcommitid): Self = StObject.set(x, "issue-event-dismissed-review", value.asInstanceOf[js.Any])
     
     inline def `setIssue-event-for-issue`(
-      value: Partial[EventId_] & Partial[AssignerCommitid] & Partial[IdNodeid] & Partial[IdMilestone] & Partial[NodeidPerformedviagithubapp] & Partial[Requestedteam] & Partial[CreatedatDismissedreview] & Partial[IdLockreason] & Partial[PerformedviagithubappProjectcard] & Partial[ProjectcardUrl]
+      value: EventId_ | AssignerCommitid | NodeidPerformedviagithubapp | IdMilestone | PerformedviagithubappRename | Requestedteam | CreatedatDismissedreview | IdLockreason | PerformedviagithubappProjectcard | ProjectcardUrl
     ): Self = StObject.set(x, "issue-event-for-issue", value.asInstanceOf[js.Any])
     
     inline def `setIssue-event-label`(value: ColorName): Self = StObject.set(x, "issue-event-label", value.asInstanceOf[js.Any])
@@ -2838,7 +3821,7 @@ object Actionsbillingusage {
     
     inline def `setIssue-event-rename`(value: From): Self = StObject.set(x, "issue-event-rename", value.asInstanceOf[js.Any])
     
-    inline def `setIssue-search-result-item`(value: Locked): Self = StObject.set(x, "issue-search-result-item", value.asInstanceOf[js.Any])
+    inline def `setIssue-search-result-item`(value: Labelsurl): Self = StObject.set(x, "issue-search-result-item", value.asInstanceOf[js.Any])
     
     inline def setJob(value: Checkrunurl): Self = StObject.set(x, "job", value.asInstanceOf[js.Any])
     
@@ -2846,15 +3829,15 @@ object Actionsbillingusage {
     
     inline def `setKey-simple`(value: KeyString): Self = StObject.set(x, "key-simple", value.asInstanceOf[js.Any])
     
-    inline def setLabel(value: DescriptionId): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: DefaultDescription): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     inline def `setLabel-search-result-item`(value: NodeidScore): Self = StObject.set(x, "label-search-result-item", value.asInstanceOf[js.Any])
     
     inline def `setLabeled-issue-event`(value: ActorCommitid): Self = StObject.set(x, "labeled-issue-event", value.asInstanceOf[js.Any])
     
-    inline def setLanguage(value: StringDictionary[Double]): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: StringDictionary[js.UndefOr[Double]]): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    inline def setLicense(value: Conditions): Self = StObject.set(x, "license", value.asInstanceOf[js.Any])
+    inline def setLicense(value: Implementation): Self = StObject.set(x, "license", value.asInstanceOf[js.Any])
     
     inline def `setLicense-content`(value: ContentDownloadurl): Self = StObject.set(x, "license-content", value.asInstanceOf[js.Any])
     
@@ -2876,7 +3859,7 @@ object Actionsbillingusage {
     
     inline def `setMerged-upstream`(value: Basebranch): Self = StObject.set(x, "merged-upstream", value.asInstanceOf[js.Any])
     
-    inline def setMetadata(value: StringDictionary[Partial[String] & Partial[Double] & Partial[Boolean]]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: StringDictionary[js.UndefOr[String | Double | Boolean | Null]]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     inline def setMigration(value: Excludemetadata): Self = StObject.set(x, "migration", value.asInstanceOf[js.Any])
     
@@ -2936,7 +3919,7 @@ object Actionsbillingusage {
     
     inline def `setNullable-repositoryNull`: Self = StObject.set(x, "nullable-repository", null)
     
-    inline def `setNullable-scoped-installation`(value: Account): Self = StObject.set(x, "nullable-scoped-installation", value.asInstanceOf[js.Any])
+    inline def `setNullable-scoped-installation`(value: Hasmultiplesinglefiles): Self = StObject.set(x, "nullable-scoped-installation", value.asInstanceOf[js.Any])
     
     inline def `setNullable-scoped-installationNull`: Self = StObject.set(x, "nullable-scoped-installation", null)
     
@@ -2952,21 +3935,29 @@ object Actionsbillingusage {
     
     inline def `setNullable-team-simpleNull`: Self = StObject.set(x, "nullable-team-simple", null)
     
+    inline def `setOidc-custom-sub`(value: IncludeclaimkeysArray): Self = StObject.set(x, "oidc-custom-sub", value.asInstanceOf[js.Any])
+    
+    inline def `setOidc-custom-sub-repo`(value: Includeclaimkeys): Self = StObject.set(x, "oidc-custom-sub-repo", value.asInstanceOf[js.Any])
+    
     inline def `setOrg-hook`(value: Deliveriesurl): Self = StObject.set(x, "org-hook", value.asInstanceOf[js.Any])
     
     inline def `setOrg-membership`(value: Organizationurl): Self = StObject.set(x, "org-membership", value.asInstanceOf[js.Any])
     
-    inline def `setOrganization-actions-secret`(value: Selectedrepositoriesurl): Self = StObject.set(x, "organization-actions-secret", value.asInstanceOf[js.Any])
+    inline def `setOrg-ruleset-conditions`(value: Refname & Repositoryname): Self = StObject.set(x, "org-ruleset-conditions", value.asInstanceOf[js.Any])
     
-    inline def `setOrganization-custom-repository-role`(value: Organization): Self = StObject.set(x, "organization-custom-repository-role", value.asInstanceOf[js.Any])
+    inline def `setOrganization-actions-secret`(value: CreatedatName): Self = StObject.set(x, "organization-actions-secret", value.asInstanceOf[js.Any])
     
-    inline def `setOrganization-dependabot-secret`(value: Selectedrepositoriesurl): Self = StObject.set(x, "organization-dependabot-secret", value.asInstanceOf[js.Any])
+    inline def `setOrganization-actions-variable`(value: NameSelectedrepositoriesurl): Self = StObject.set(x, "organization-actions-variable", value.asInstanceOf[js.Any])
     
-    inline def `setOrganization-fine-grained-permission`(value: DescriptionName): Self = StObject.set(x, "organization-fine-grained-permission", value.asInstanceOf[js.Any])
+    inline def `setOrganization-dependabot-secret`(value: CreatedatName): Self = StObject.set(x, "organization-dependabot-secret", value.asInstanceOf[js.Any])
     
     inline def `setOrganization-full`(value: Billingemail): Self = StObject.set(x, "organization-full", value.asInstanceOf[js.Any])
     
     inline def `setOrganization-invitation`(value: Failedat): Self = StObject.set(x, "organization-invitation", value.asInstanceOf[js.Any])
+    
+    inline def `setOrganization-programmatic-access-grant`(value: Accessgrantedat): Self = StObject.set(x, "organization-programmatic-access-grant", value.asInstanceOf[js.Any])
+    
+    inline def `setOrganization-programmatic-access-grant-request`(value: Tokenexpired): Self = StObject.set(x, "organization-programmatic-access-grant-request", value.asInstanceOf[js.Any])
     
     inline def `setOrganization-secret-scanning-alert`(value: Locationsurl): Self = StObject.set(x, "organization-secret-scanning-alert", value.asInstanceOf[js.Any])
     
@@ -2978,7 +3969,7 @@ object Actionsbillingusage {
     
     inline def setPage(value: Cname): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
-    inline def `setPage-build`(value: Duration): Self = StObject.set(x, "page-build", value.asInstanceOf[js.Any])
+    inline def `setPage-build`(value: Error): Self = StObject.set(x, "page-build", value.asInstanceOf[js.Any])
     
     inline def `setPage-build-status`(value: StatusUrl): Self = StObject.set(x, "page-build-status", value.asInstanceOf[js.Any])
     
@@ -2994,11 +3985,15 @@ object Actionsbillingusage {
     
     inline def `setPending-deployment`(value: Currentusercanapprove): Self = StObject.set(x, "pending-deployment", value.asInstanceOf[js.Any])
     
+    inline def `setPersonal-access-token-request`(value: Permissionsadded): Self = StObject.set(x, "personal-access-token-request", value.asInstanceOf[js.Any])
+    
     inline def `setPorter-author`(value: Importurl): Self = StObject.set(x, "porter-author", value.asInstanceOf[js.Any])
     
     inline def `setPorter-large-file`(value: Oid): Self = StObject.set(x, "porter-large-file", value.asInstanceOf[js.Any])
     
     inline def `setPrivate-user`(value: Businessplus): Self = StObject.set(x, "private-user", value.asInstanceOf[js.Any])
+    
+    inline def `setPrivate-vulnerability-report-create`(value: Cweids): Self = StObject.set(x, "private-vulnerability-report-create", value.asInstanceOf[js.Any])
     
     inline def setProject(value: Columnsurl): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     
@@ -3008,7 +4003,13 @@ object Actionsbillingusage {
     
     inline def `setProject-column`(value: Cardsurl): Self = StObject.set(x, "project-column", value.asInstanceOf[js.Any])
     
-    inline def `setProtected-branch`(value: Enforceadmins): Self = StObject.set(x, "protected-branch", value.asInstanceOf[js.Any])
+    inline def `setProjects-v2`(value: Deletedby): Self = StObject.set(x, "projects-v2", value.asInstanceOf[js.Any])
+    
+    inline def `setProjects-v2-item`(value: Archivedat): Self = StObject.set(x, "projects-v2-item", value.asInstanceOf[js.Any])
+    
+    inline def `setProjects-v2-item-content-type`(value: typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.Issue | PullRequest | DraftIssue): Self = StObject.set(x, "projects-v2-item-content-type", value.asInstanceOf[js.Any])
+    
+    inline def `setProtected-branch`(value: Blockcreations): Self = StObject.set(x, "protected-branch", value.asInstanceOf[js.Any])
     
     inline def `setProtected-branch-admin-enforced`(value: EnabledUrl): Self = StObject.set(x, "protected-branch-admin-enforced", value.asInstanceOf[js.Any])
     
@@ -3054,19 +4055,89 @@ object Actionsbillingusage {
     
     inline def `setRenamed-issue-event`(value: Rename): Self = StObject.set(x, "renamed-issue-event", value.asInstanceOf[js.Any])
     
-    inline def `setRepo-codespaces-secret`(value: CreatedatName): Self = StObject.set(x, "repo-codespaces-secret", value.asInstanceOf[js.Any])
+    inline def `setRepo-codespaces-secret`(value: NameUpdatedat): Self = StObject.set(x, "repo-codespaces-secret", value.asInstanceOf[js.Any])
+    
+    inline def `setRepo-required-workflow`(value: Badgeurl): Self = StObject.set(x, "repo-required-workflow", value.asInstanceOf[js.Any])
     
     inline def `setRepo-search-result-item`(value: Contentsurl): Self = StObject.set(x, "repo-search-result-item", value.asInstanceOf[js.Any])
     
     inline def setRepository(value: Allowsquashmerge): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
     
+    inline def `setRepository-advisory`(value: Credits): Self = StObject.set(x, "repository-advisory", value.asInstanceOf[js.Any])
+    
+    inline def `setRepository-advisory-create`(value: Cvssvectorstring): Self = StObject.set(x, "repository-advisory-create", value.asInstanceOf[js.Any])
+    
+    inline def `setRepository-advisory-credit`(value: StateType): Self = StObject.set(x, "repository-advisory-credit", value.asInstanceOf[js.Any])
+    
+    inline def `setRepository-advisory-credit-types`(
+      value: analyst | finder | reporter | coordinator | remediation_developer | remediation_reviewer | remediation_verifier | tool | sponsor | other
+    ): Self = StObject.set(x, "repository-advisory-credit-types", value.asInstanceOf[js.Any])
+    
+    inline def `setRepository-advisory-ecosystems`(
+      value: rubygems | npm | pip | maven | nuget | composer | go | rust | erlang | actions | pub | other
+    ): Self = StObject.set(x, "repository-advisory-ecosystems", value.asInstanceOf[js.Any])
+    
+    inline def `setRepository-advisory-update`(value: Summary): Self = StObject.set(x, "repository-advisory-update", value.asInstanceOf[js.Any])
+    
+    inline def `setRepository-advisory-vulnerability`(value: Patchedversions): Self = StObject.set(x, "repository-advisory-vulnerability", value.asInstanceOf[js.Any])
+    
     inline def `setRepository-collaborator-permission`(value: Rolename): Self = StObject.set(x, "repository-collaborator-permission", value.asInstanceOf[js.Any])
     
     inline def `setRepository-invitation`(value: Expired): Self = StObject.set(x, "repository-invitation", value.asInstanceOf[js.Any])
     
+    inline def `setRepository-rule`(
+      value: `423` | ParametersType | `424` | `425` | `426` | `427` | `428` | `436` | `430` | `431` | `432` | `433` | `434` | `435`
+    ): Self = StObject.set(x, "repository-rule", value.asInstanceOf[js.Any])
+    
+    inline def `setRepository-rule-branch-name-pattern`(value: `434`): Self = StObject.set(x, "repository-rule-branch-name-pattern", value.asInstanceOf[js.Any])
+    
+    inline def `setRepository-rule-commit-author-email-pattern`(value: `432`): Self = StObject.set(x, "repository-rule-commit-author-email-pattern", value.asInstanceOf[js.Any])
+    
+    inline def `setRepository-rule-commit-message-pattern`(value: `431`): Self = StObject.set(x, "repository-rule-commit-message-pattern", value.asInstanceOf[js.Any])
+    
+    inline def `setRepository-rule-committer-email-pattern`(value: `433`): Self = StObject.set(x, "repository-rule-committer-email-pattern", value.asInstanceOf[js.Any])
+    
+    inline def `setRepository-rule-creation`(value: `423`): Self = StObject.set(x, "repository-rule-creation", value.asInstanceOf[js.Any])
+    
+    inline def `setRepository-rule-deletion`(value: `424`): Self = StObject.set(x, "repository-rule-deletion", value.asInstanceOf[js.Any])
+    
+    inline def `setRepository-rule-enforcement`(value: disabled | active | evaluate): Self = StObject.set(x, "repository-rule-enforcement", value.asInstanceOf[js.Any])
+    
+    inline def `setRepository-rule-non-fast-forward`(value: `430`): Self = StObject.set(x, "repository-rule-non-fast-forward", value.asInstanceOf[js.Any])
+    
+    inline def `setRepository-rule-params-status-check-configuration`(value: ContextIntegrationid): Self = StObject.set(x, "repository-rule-params-status-check-configuration", value.asInstanceOf[js.Any])
+    
+    inline def `setRepository-rule-pull-request`(value: `428`): Self = StObject.set(x, "repository-rule-pull-request", value.asInstanceOf[js.Any])
+    
+    inline def `setRepository-rule-required-deployments`(value: `426`): Self = StObject.set(x, "repository-rule-required-deployments", value.asInstanceOf[js.Any])
+    
+    inline def `setRepository-rule-required-linear-history`(value: `425`): Self = StObject.set(x, "repository-rule-required-linear-history", value.asInstanceOf[js.Any])
+    
+    inline def `setRepository-rule-required-signatures`(value: `427`): Self = StObject.set(x, "repository-rule-required-signatures", value.asInstanceOf[js.Any])
+    
+    inline def `setRepository-rule-required-status-checks`(value: `429`): Self = StObject.set(x, "repository-rule-required-status-checks", value.asInstanceOf[js.Any])
+    
+    inline def `setRepository-rule-tag-name-pattern`(value: `435`): Self = StObject.set(x, "repository-rule-tag-name-pattern", value.asInstanceOf[js.Any])
+    
+    inline def `setRepository-rule-update`(value: ParametersType): Self = StObject.set(x, "repository-rule-update", value.asInstanceOf[js.Any])
+    
+    inline def `setRepository-ruleset`(value: Links): Self = StObject.set(x, "repository-ruleset", value.asInstanceOf[js.Any])
+    
+    inline def `setRepository-ruleset-bypass-actor`(value: Actorid): Self = StObject.set(x, "repository-ruleset-bypass-actor", value.asInstanceOf[js.Any])
+    
+    inline def `setRepository-ruleset-conditions`(value: Refname): Self = StObject.set(x, "repository-ruleset-conditions", value.asInstanceOf[js.Any])
+    
+    inline def `setRepository-ruleset-conditions-repository-name-target`(value: Repositoryname): Self = StObject.set(x, "repository-ruleset-conditions-repository-name-target", value.asInstanceOf[js.Any])
+    
     inline def `setRepository-subscription`(value: CreatedatIgnored): Self = StObject.set(x, "repository-subscription", value.asInstanceOf[js.Any])
     
+    inline def `setRequired-workflow`(value: Selectedrepositoriesurl): Self = StObject.set(x, "required-workflow", value.asInstanceOf[js.Any])
+    
     inline def `setReview-comment`(value: Originalcommitid): Self = StObject.set(x, "review-comment", value.asInstanceOf[js.Any])
+    
+    inline def `setReview-custom-gates-comment-required`(value: CommentEnvironmentname): Self = StObject.set(x, "review-custom-gates-comment-required", value.asInstanceOf[js.Any])
+    
+    inline def `setReview-custom-gates-state-required`(value: EnvironmentnameState): Self = StObject.set(x, "review-custom-gates-state-required", value.asInstanceOf[js.Any])
     
     inline def `setReview-dismissed-issue-event`(value: Dismissedreview): Self = StObject.set(x, "review-dismissed-issue-event", value.asInstanceOf[js.Any])
     
@@ -3080,11 +4151,7 @@ object Actionsbillingusage {
     
     inline def `setRunner-application`(value: Architecture): Self = StObject.set(x, "runner-application", value.asInstanceOf[js.Any])
     
-    inline def `setRunner-groups-enterprise`(value: Default): Self = StObject.set(x, "runner-groups-enterprise", value.asInstanceOf[js.Any])
-    
-    inline def `setRunner-groups-org`(value: Inherited): Self = StObject.set(x, "runner-groups-org", value.asInstanceOf[js.Any])
-    
-    inline def `setRunner-label`(value: IdName): Self = StObject.set(x, "runner-label", value.asInstanceOf[js.Any])
+    inline def `setRunner-label`(value: NameType): Self = StObject.set(x, "runner-label", value.asInstanceOf[js.Any])
     
     inline def `setScim-error`(value: Detail): Self = StObject.set(x, "scim-error", value.asInstanceOf[js.Any])
     
@@ -3108,6 +4175,12 @@ object Actionsbillingusage {
     
     inline def `setSecret-scanning-location-commit`(value: Blobsha): Self = StObject.set(x, "secret-scanning-location-commit", value.asInstanceOf[js.Any])
     
+    inline def `setSecret-scanning-location-issue-body`(value: Issuebodyurl): Self = StObject.set(x, "secret-scanning-location-issue-body", value.asInstanceOf[js.Any])
+    
+    inline def `setSecret-scanning-location-issue-comment`(value: Issuecommenturl): Self = StObject.set(x, "secret-scanning-location-issue-comment", value.asInstanceOf[js.Any])
+    
+    inline def `setSecret-scanning-location-issue-title`(value: Issuetitleurl): Self = StObject.set(x, "secret-scanning-location-issue-title", value.asInstanceOf[js.Any])
+    
     inline def `setSecurity-and-analysis`(value: Secretscanning): Self = StObject.set(x, "security-and-analysis", value.asInstanceOf[js.Any])
     
     inline def `setSecurity-and-analysisNull`: Self = StObject.set(x, "security-and-analysis", null)
@@ -3116,13 +4189,11 @@ object Actionsbillingusage {
     
     inline def `setSelected-actions-url`(value: String): Self = StObject.set(x, "selected-actions-url", value.asInstanceOf[js.Any])
     
-    inline def `setServer-statistics`(value: js.Array[Collectiondate]): Self = StObject.set(x, "server-statistics", value.asInstanceOf[js.Any])
-    
-    inline def `setServer-statisticsVarargs`(value: Collectiondate*): Self = StObject.set(x, "server-statistics", js.Array(value*))
-    
     inline def `setShort-blob`(value: ShaString): Self = StObject.set(x, "short-blob", value.asInstanceOf[js.Any])
     
     inline def `setShort-branch`(value: Commit): Self = StObject.set(x, "short-branch", value.asInstanceOf[js.Any])
+    
+    inline def `setSimple-check-suite`(value: Conclusion): Self = StObject.set(x, "simple-check-suite", value.asInstanceOf[js.Any])
     
     inline def `setSimple-commit`(value: Timestamp): Self = StObject.set(x, "simple-commit", value.asInstanceOf[js.Any])
     
@@ -3135,6 +4206,8 @@ object Actionsbillingusage {
     inline def `setSimple-user`(value: Avatarurl): Self = StObject.set(x, "simple-user", value.asInstanceOf[js.Any])
     
     inline def setSnapshot(value: Detector): Self = StObject.set(x, "snapshot", value.asInstanceOf[js.Any])
+    
+    inline def `setSocial-account`(value: Provider): Self = StObject.set(x, "social-account", value.asInstanceOf[js.Any])
     
     inline def `setSsh-signing-key`(value: CreatedatIdKey): Self = StObject.set(x, "ssh-signing-key", value.asInstanceOf[js.Any])
     
@@ -3170,7 +4243,7 @@ object Actionsbillingusage {
     
     inline def `setTeam-simple`(value: Ldapdn): Self = StObject.set(x, "team-simple", value.asInstanceOf[js.Any])
     
-    inline def setThread(value: Reason): Self = StObject.set(x, "thread", value.asInstanceOf[js.Any])
+    inline def setThread(value: Repository): Self = StObject.set(x, "thread", value.asInstanceOf[js.Any])
     
     inline def `setThread-subscription`(value: Repositoryurl): Self = StObject.set(x, "thread-subscription", value.asInstanceOf[js.Any])
     
@@ -3185,7 +4258,7 @@ object Actionsbillingusage {
     inline def `setTimeline-cross-referenced-event`(value: ActorCreatedat): Self = StObject.set(x, "timeline-cross-referenced-event", value.asInstanceOf[js.Any])
     
     inline def `setTimeline-issue-events`(
-      value: Partial[EventId_] & Partial[IdMilestone] & Partial[NodeidPerformedviagithubapp] & Partial[Requestedteam] & Partial[CreatedatDismissedreview] & Partial[IdLockreason] & Partial[PerformedviagithubappProjectcard] & Partial[ProjectcardUrl] & Partial[BodyBodyhtml] & Partial[EventSource] & Partial[CommitterEvent] & Partial[Submittedat] & Partial[EventNodeid] & Partial[CommitidEvent] & Partial[PerformedviagithubappUrl] & Partial[PerformedviagithubappStatereason]
+      value: EventId_ | IdMilestone | PerformedviagithubappRename | Requestedteam | CreatedatDismissedreview | IdLockreason | PerformedviagithubappProjectcard | ProjectcardUrl | BodyBodyhtml | EventSource | CommitterEvent | Submittedat | EventNodeid | CommitidEvent | PerformedviagithubappUrl | PerformedviagithubappStatereason
     ): Self = StObject.set(x, "timeline-issue-events", value.asInstanceOf[js.Any])
     
     inline def `setTimeline-line-commented-event`(value: CommentsEvent): Self = StObject.set(x, "timeline-line-commented-event", value.asInstanceOf[js.Any])
@@ -3218,6 +4291,48 @@ object Actionsbillingusage {
     
     inline def `setWait-timer`(value: Double): Self = StObject.set(x, "wait-timer", value.asInstanceOf[js.Any])
     
+    inline def `setWebhook-branch-protection-rule-created`(value: Installation): Self = StObject.set(x, "webhook-branch-protection-rule-created", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-branch-protection-rule-deleted`(value: Rule): Self = StObject.set(x, "webhook-branch-protection-rule-deleted", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-branch-protection-rule-edited`(value: Changes): Self = StObject.set(x, "webhook-branch-protection-rule-edited", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-check-run-completed`(value: Checkrun): Self = StObject.set(x, "webhook-check-run-completed", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-check-run-completed-form-encoded`(value: PayloadString): Self = StObject.set(x, "webhook-check-run-completed-form-encoded", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-check-run-created`(value: Sender): Self = StObject.set(x, "webhook-check-run-created", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-check-run-created-form-encoded`(value: PayloadString): Self = StObject.set(x, "webhook-check-run-created-form-encoded", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-check-run-requested-action`(value: Requestedaction): Self = StObject.set(x, "webhook-check-run-requested-action", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-check-run-requested-action-form-encoded`(value: PayloadString): Self = StObject.set(x, "webhook-check-run-requested-action-form-encoded", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-check-run-rerequested`(value: ActionCheckrun): Self = StObject.set(x, "webhook-check-run-rerequested", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-check-run-rerequested-form-encoded`(value: PayloadString): Self = StObject.set(x, "webhook-check-run-rerequested-form-encoded", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-check-suite-completed`(value: Actionsmeta): Self = StObject.set(x, "webhook-check-suite-completed", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-check-suite-requested`(value: ActionActionsmeta): Self = StObject.set(x, "webhook-check-suite-requested", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-check-suite-rerequested`(value: ActionsmetaChecksuite): Self = StObject.set(x, "webhook-check-suite-rerequested", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-code-scanning-alert-appeared-in-branch`(value: Alert): Self = StObject.set(x, "webhook-code-scanning-alert-appeared-in-branch", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-code-scanning-alert-closed-by-user`(value: Commitoid): Self = StObject.set(x, "webhook-code-scanning-alert-closed-by-user", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-code-scanning-alert-created`(value: ActionAlert): Self = StObject.set(x, "webhook-code-scanning-alert-created", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-code-scanning-alert-fixed`(value: AlertCommitoid): Self = StObject.set(x, "webhook-code-scanning-alert-fixed", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-code-scanning-alert-reopened`(value: CommitoidEnterprise): Self = StObject.set(x, "webhook-code-scanning-alert-reopened", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-code-scanning-alert-reopened-by-user`(value: EnterpriseInstallation): Self = StObject.set(x, "webhook-code-scanning-alert-reopened-by-user", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-commit-comment-created`(value: ActionComment): Self = StObject.set(x, "webhook-commit-comment-created", value.asInstanceOf[js.Any])
+    
     inline def `setWebhook-config`(value: ContenttypeInsecuressl): Self = StObject.set(x, "webhook-config", value.asInstanceOf[js.Any])
     
     inline def `setWebhook-config-content-type`(value: String): Self = StObject.set(x, "webhook-config-content-type", value.asInstanceOf[js.Any])
@@ -3228,16 +4343,446 @@ object Actionsbillingusage {
     
     inline def `setWebhook-config-url`(value: String): Self = StObject.set(x, "webhook-config-url", value.asInstanceOf[js.Any])
     
-    inline def `setWebhook-merge-group-checks-requested`(value: Installation): Self = StObject.set(x, "webhook-merge-group-checks-requested", value.asInstanceOf[js.Any])
+    inline def `setWebhook-create`(value: Masterbranch): Self = StObject.set(x, "webhook-create", value.asInstanceOf[js.Any])
     
-    inline def setWorkflow(value: Badgeurl): Self = StObject.set(x, "workflow", value.asInstanceOf[js.Any])
+    inline def `setWebhook-delete`(value: Pushertype): Self = StObject.set(x, "webhook-delete", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-dependabot-alert-auto-dismissed`(value: AlertEnterprise): Self = StObject.set(x, "webhook-dependabot-alert-auto-dismissed", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-dependabot-alert-auto-reopened`(value: InstallationOrganization): Self = StObject.set(x, "webhook-dependabot-alert-auto-reopened", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-dependabot-alert-created`(value: OrganizationRepository): Self = StObject.set(x, "webhook-dependabot-alert-created", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-dependabot-alert-dismissed`(value: RepositorySender): Self = StObject.set(x, "webhook-dependabot-alert-dismissed", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-dependabot-alert-fixed`(value: ActionAlertEnterprise): Self = StObject.set(x, "webhook-dependabot-alert-fixed", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-dependabot-alert-reintroduced`(value: AlertEnterpriseInstallation): Self = StObject.set(x, "webhook-dependabot-alert-reintroduced", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-dependabot-alert-reopened`(value: EnterpriseInstallationOrganization): Self = StObject.set(x, "webhook-dependabot-alert-reopened", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-deploy-key-created`(value: ActionEnterprise): Self = StObject.set(x, "webhook-deploy-key-created", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-deploy-key-deleted`(value: InstallationKey): Self = StObject.set(x, "webhook-deploy-key-deleted", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-deployment-created`(value: Workflow): Self = StObject.set(x, "webhook-deployment-created", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-deployment-protection-rule-requested`(value: Deploymentcallbackurl): Self = StObject.set(x, "webhook-deployment-protection-rule-requested", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-deployment-status-created`(value: Deploymentstatus): Self = StObject.set(x, "webhook-deployment-status-created", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-discussion-answered`(value: Answer): Self = StObject.set(x, "webhook-discussion-answered", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-discussion-category-changed`(value: Discussion): Self = StObject.set(x, "webhook-discussion-category-changed", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-discussion-closed`(value: ActionDiscussion): Self = StObject.set(x, "webhook-discussion-closed", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-discussion-comment-created`(value: CommentDiscussion): Self = StObject.set(x, "webhook-discussion-comment-created", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-discussion-comment-deleted`(value: DiscussionEnterprise): Self = StObject.set(x, "webhook-discussion-comment-deleted", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-discussion-comment-edited`(value: ActionChanges): Self = StObject.set(x, "webhook-discussion-comment-edited", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-discussion-created`(value: ActionDiscussionEnterprise): Self = StObject.set(x, "webhook-discussion-created", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-discussion-deleted`(value: DiscussionEnterpriseInstallation): Self = StObject.set(x, "webhook-discussion-deleted", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-discussion-edited`(value: ChangesDiscussion): Self = StObject.set(x, "webhook-discussion-edited", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-discussion-labeled`(value: InstallationLabel): Self = StObject.set(x, "webhook-discussion-labeled", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-discussion-locked`(value: InstallationOrganizationRepository): Self = StObject.set(x, "webhook-discussion-locked", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-discussion-pinned`(value: OrganizationRepositorySender): Self = StObject.set(x, "webhook-discussion-pinned", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-discussion-reopened`(value: ActionDiscussionEnterpriseInstallation): Self = StObject.set(x, "webhook-discussion-reopened", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-discussion-transferred`(value: ActionChangesDiscussion): Self = StObject.set(x, "webhook-discussion-transferred", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-discussion-unanswered`(value: Oldanswer): Self = StObject.set(x, "webhook-discussion-unanswered", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-discussion-unlabeled`(value: LabelOrganization): Self = StObject.set(x, "webhook-discussion-unlabeled", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-discussion-unlocked`(value: DiscussionEnterpriseInstallationOrganization): Self = StObject.set(x, "webhook-discussion-unlocked", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-discussion-unpinned`(value: EnterpriseInstallationOrganizationRepository): Self = StObject.set(x, "webhook-discussion-unpinned", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-fork`(value: Forkee): Self = StObject.set(x, "webhook-fork", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-github-app-authorization-revoked`(value: ActionEnterpriseInstallation): Self = StObject.set(x, "webhook-github-app-authorization-revoked", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-gollum`(value: Pages): Self = StObject.set(x, "webhook-gollum", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-installation-created`(value: Requester): Self = StObject.set(x, "webhook-installation-created", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-installation-deleted`(value: OrganizationRepositories): Self = StObject.set(x, "webhook-installation-deleted", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-installation-new-permissions-accepted`(value: RepositoriesRepository): Self = StObject.set(x, "webhook-installation-new-permissions-accepted", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-installation-repositories-added`(value: Repositoriesadded): Self = StObject.set(x, "webhook-installation-repositories-added", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-installation-repositories-removed`(value: Repositoriesremoved): Self = StObject.set(x, "webhook-installation-repositories-removed", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-installation-suspend`(value: RepositoryRequester): Self = StObject.set(x, "webhook-installation-suspend", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-installation-target-renamed`(value: Targettype): Self = StObject.set(x, "webhook-installation-target-renamed", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-installation-unsuspend`(value: RequesterSender): Self = StObject.set(x, "webhook-installation-unsuspend", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-issue-comment-created`(value: CommentEnterprise): Self = StObject.set(x, "webhook-issue-comment-created", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-issue-comment-deleted`(value: InstallationIssue): Self = StObject.set(x, "webhook-issue-comment-deleted", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-issue-comment-edited`(value: ChangesComment): Self = StObject.set(x, "webhook-issue-comment-edited", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-issues-assigned`(value: ActionAssignee): Self = StObject.set(x, "webhook-issues-assigned", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-issues-closed`(value: IssueOrganization): Self = StObject.set(x, "webhook-issues-closed", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-issues-deleted`(value: EnterpriseInstallationIssue): Self = StObject.set(x, "webhook-issues-deleted", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-issues-demilestoned`(value: IssueMilestone): Self = StObject.set(x, "webhook-issues-demilestoned", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-issues-edited`(value: ChangesEnterprise): Self = StObject.set(x, "webhook-issues-edited", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-issues-labeled`(value: IssueLabel): Self = StObject.set(x, "webhook-issues-labeled", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-issues-locked`(value: InstallationIssueOrganization): Self = StObject.set(x, "webhook-issues-locked", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-issues-milestoned`(value: MilestoneOrganization): Self = StObject.set(x, "webhook-issues-milestoned", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-issues-opened`(value: ActionChangesEnterprise): Self = StObject.set(x, "webhook-issues-opened", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-issues-pinned`(value: IssueOrganizationRepository): Self = StObject.set(x, "webhook-issues-pinned", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-issues-reopened`(value: ActionEnterpriseInstallationIssue): Self = StObject.set(x, "webhook-issues-reopened", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-issues-transferred`(value: ChangesEnterpriseInstallation): Self = StObject.set(x, "webhook-issues-transferred", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-issues-unassigned`(value: AssigneeEnterprise): Self = StObject.set(x, "webhook-issues-unassigned", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-issues-unlabeled`(value: InstallationIssueLabel): Self = StObject.set(x, "webhook-issues-unlabeled", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-issues-unlocked`(value: EnterpriseInstallationIssueOrganization): Self = StObject.set(x, "webhook-issues-unlocked", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-issues-unpinned`(value: InstallationIssueOrganizationRepository): Self = StObject.set(x, "webhook-issues-unpinned", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-label-created`(value: EnterpriseInstallationLabel): Self = StObject.set(x, "webhook-label-created", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-label-deleted`(value: InstallationLabelOrganization): Self = StObject.set(x, "webhook-label-deleted", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-label-edited`(value: LabelOrganizationRepository): Self = StObject.set(x, "webhook-label-edited", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-marketplace-purchase-cancelled`(value: Marketplacepurchase): Self = StObject.set(x, "webhook-marketplace-purchase-cancelled", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-marketplace-purchase-changed`(value: Previousmarketplacepurchase): Self = StObject.set(x, "webhook-marketplace-purchase-changed", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-marketplace-purchase-pending-change`(value: ActionEffectivedate): Self = StObject.set(x, "webhook-marketplace-purchase-pending-change", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-marketplace-purchase-pending-change-cancelled`(value: EffectivedateEnterprise): Self = StObject.set(x, "webhook-marketplace-purchase-pending-change-cancelled", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-marketplace-purchase-purchased`(value: InstallationMarketplacepurchase): Self = StObject.set(x, "webhook-marketplace-purchase-purchased", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-member-added`(value: Member): Self = StObject.set(x, "webhook-member-added", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-member-edited`(value: InstallationMember): Self = StObject.set(x, "webhook-member-edited", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-member-removed`(value: MemberOrganization): Self = StObject.set(x, "webhook-member-removed", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-membership-added`(value: Team): Self = StObject.set(x, "webhook-membership-added", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-membership-removed`(value: RepositoryScope): Self = StObject.set(x, "webhook-membership-removed", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-merge-group-checks-requested`(value: Mergegroup): Self = StObject.set(x, "webhook-merge-group-checks-requested", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-meta-deleted`(value: Hook): Self = StObject.set(x, "webhook-meta-deleted", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-milestone-closed`(value: InstallationMilestone): Self = StObject.set(x, "webhook-milestone-closed", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-milestone-created`(value: EnterpriseInstallationMilestone): Self = StObject.set(x, "webhook-milestone-created", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-milestone-deleted`(value: InstallationMilestoneOrganization): Self = StObject.set(x, "webhook-milestone-deleted", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-milestone-edited`(value: MilestoneOrganizationRepository): Self = StObject.set(x, "webhook-milestone-edited", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-milestone-opened`(value: ActionEnterpriseInstallationMilestone): Self = StObject.set(x, "webhook-milestone-opened", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-org-block-blocked`(value: Blockeduser): Self = StObject.set(x, "webhook-org-block-blocked", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-org-block-unblocked`(value: ActionBlockeduser): Self = StObject.set(x, "webhook-org-block-unblocked", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-organization-deleted`(value: Membership): Self = StObject.set(x, "webhook-organization-deleted", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-organization-member-added`(value: InstallationMembership): Self = StObject.set(x, "webhook-organization-member-added", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-organization-member-invited`(value: Invitation): Self = StObject.set(x, "webhook-organization-member-invited", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-organization-member-removed`(value: MembershipOrganization): Self = StObject.set(x, "webhook-organization-member-removed", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-organization-renamed`(value: EnterpriseInstallationMembership): Self = StObject.set(x, "webhook-organization-renamed", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-package-published`(value: OrganizationPackage): Self = StObject.set(x, "webhook-package-published", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-package-updated`(value: PackageRepository): Self = StObject.set(x, "webhook-package-updated", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-page-build`(value: Build): Self = StObject.set(x, "webhook-page-build", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-personal-access-token-request-approved`(value: Personalaccesstokenrequest): Self = StObject.set(x, "webhook-personal-access-token-request-approved", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-personal-access-token-request-cancelled`(value: ActionInstallation): Self = StObject.set(x, "webhook-personal-access-token-request-cancelled", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-personal-access-token-request-created`(value: OrganizationPersonalaccesstokenrequest): Self = StObject.set(x, "webhook-personal-access-token-request-created", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-personal-access-token-request-denied`(value: PersonalaccesstokenrequestSender): Self = StObject.set(x, "webhook-personal-access-token-request-denied", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-ping`(value: Zen): Self = StObject.set(x, "webhook-ping", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-ping-form-encoded`(value: PayloadString): Self = StObject.set(x, "webhook-ping-form-encoded", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-project-card-converted`(value: OrganizationProjectcard): Self = StObject.set(x, "webhook-project-card-converted", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-project-card-created`(value: ProjectcardRepository): Self = StObject.set(x, "webhook-project-card-created", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-project-card-deleted`(value: InstallationOrganizationProjectcard): Self = StObject.set(x, "webhook-project-card-deleted", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-project-card-edited`(value: OrganizationProjectcardRepository): Self = StObject.set(x, "webhook-project-card-edited", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-project-card-moved`(value: ProjectcardRepositorySender): Self = StObject.set(x, "webhook-project-card-moved", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-project-closed`(value: Project): Self = StObject.set(x, "webhook-project-closed", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-project-column-created`(value: Projectcolumn): Self = StObject.set(x, "webhook-project-column-created", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-project-column-deleted`(value: OrganizationProjectcolumn): Self = StObject.set(x, "webhook-project-column-deleted", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-project-column-edited`(value: ProjectcolumnRepository): Self = StObject.set(x, "webhook-project-column-edited", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-project-column-moved`(value: InstallationOrganizationProjectcolumn): Self = StObject.set(x, "webhook-project-column-moved", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-project-created`(value: OrganizationProject): Self = StObject.set(x, "webhook-project-created", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-project-deleted`(value: ProjectRepository): Self = StObject.set(x, "webhook-project-deleted", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-project-edited`(value: InstallationOrganizationProject): Self = StObject.set(x, "webhook-project-edited", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-project-reopened`(value: OrganizationProjectRepository): Self = StObject.set(x, "webhook-project-reopened", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-projects-v2-item-archived`(value: Projectsv2item): Self = StObject.set(x, "webhook-projects-v2-item-archived", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-projects-v2-item-converted`(value: ChangesInstallation): Self = StObject.set(x, "webhook-projects-v2-item-converted", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-projects-v2-item-created`(value: OrganizationProjectsv2item): Self = StObject.set(x, "webhook-projects-v2-item-created", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-projects-v2-item-deleted`(value: Projectsv2itemSender): Self = StObject.set(x, "webhook-projects-v2-item-deleted", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-projects-v2-item-edited`(value: ActionChangesInstallation): Self = StObject.set(x, "webhook-projects-v2-item-edited", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-projects-v2-item-reordered`(value: ChangesInstallationOrganization): Self = StObject.set(x, "webhook-projects-v2-item-reordered", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-projects-v2-item-restored`(value: InstallationOrganizationProjectsv2item): Self = StObject.set(x, "webhook-projects-v2-item-restored", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-projects-v2-project-closed`(value: Projectsv2): Self = StObject.set(x, "webhook-projects-v2-project-closed", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-projects-v2-project-created`(value: ActionOrganization): Self = StObject.set(x, "webhook-projects-v2-project-created", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-projects-v2-project-deleted`(value: OrganizationProjectsv2): Self = StObject.set(x, "webhook-projects-v2-project-deleted", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-projects-v2-project-edited`(value: ChangesOrganization): Self = StObject.set(x, "webhook-projects-v2-project-edited", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-projects-v2-project-reopened`(value: Projectsv2Sender): Self = StObject.set(x, "webhook-projects-v2-project-reopened", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-public`(value: InstallationOrganizationRepositorySender): Self = StObject.set(x, "webhook-public", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-pull-request-assigned`(value: InstallationNumber): Self = StObject.set(x, "webhook-pull-request-assigned", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-pull-request-auto-merge-disabled`(value: NumberOrganization): Self = StObject.set(x, "webhook-pull-request-auto-merge-disabled", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-pull-request-auto-merge-enabled`(value: OrganizationPullrequest): Self = StObject.set(x, "webhook-pull-request-auto-merge-enabled", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-pull-request-closed`(value: PullrequestRepository): Self = StObject.set(x, "webhook-pull-request-closed", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-pull-request-converted-to-draft`(value: EnterpriseInstallationNumber): Self = StObject.set(x, "webhook-pull-request-converted-to-draft", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-pull-request-demilestoned`(value: EnterpriseMilestone): Self = StObject.set(x, "webhook-pull-request-demilestoned", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-pull-request-dequeued`(value: PullrequestReason): Self = StObject.set(x, "webhook-pull-request-dequeued", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-pull-request-edited`(value: InstallationNumberOrganization): Self = StObject.set(x, "webhook-pull-request-edited", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-pull-request-enqueued`(value: NumberOrganizationPullrequest): Self = StObject.set(x, "webhook-pull-request-enqueued", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-pull-request-labeled`(value: LabelNumber): Self = StObject.set(x, "webhook-pull-request-labeled", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-pull-request-locked`(value: OrganizationPullrequestRepository): Self = StObject.set(x, "webhook-pull-request-locked", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-pull-request-milestoned`(value: MilestoneNumber_): Self = StObject.set(x, "webhook-pull-request-milestoned", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-pull-request-opened`(value: PullrequestRepositorySender): Self = StObject.set(x, "webhook-pull-request-opened", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-pull-request-ready-for-review`(value: ActionEnterpriseInstallationNumber): Self = StObject.set(x, "webhook-pull-request-ready-for-review", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-pull-request-reopened`(value: EnterpriseInstallationNumberOrganization): Self = StObject.set(x, "webhook-pull-request-reopened", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-pull-request-review-comment-created`(value: ActionCommentEnterprise): Self = StObject.set(x, "webhook-pull-request-review-comment-created", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-pull-request-review-comment-deleted`(value: CommentEnterpriseInstallation): Self = StObject.set(x, "webhook-pull-request-review-comment-deleted", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-pull-request-review-comment-edited`(value: ActionChangesComment): Self = StObject.set(x, "webhook-pull-request-review-comment-edited", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-pull-request-review-dismissed`(value: Review): Self = StObject.set(x, "webhook-pull-request-review-dismissed", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-pull-request-review-edited`(value: RepositoryReview): Self = StObject.set(x, "webhook-pull-request-review-edited", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-pull-request-review-request-removed`(value: OneOf[js.Tuple2[RepositoryRequestedreviewer, RepositoryRequestedteam]]): Self = StObject.set(x, "webhook-pull-request-review-request-removed", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-pull-request-review-requested`(value: OneOf[js.Tuple2[RequestedreviewerSender, RequestedteamSender]]): Self = StObject.set(x, "webhook-pull-request-review-requested", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-pull-request-review-submitted`(value: ReviewSender): Self = StObject.set(x, "webhook-pull-request-review-submitted", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-pull-request-review-thread-resolved`(value: Thread): Self = StObject.set(x, "webhook-pull-request-review-thread-resolved", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-pull-request-review-thread-unresolved`(value: SenderThread): Self = StObject.set(x, "webhook-pull-request-review-thread-unresolved", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-pull-request-synchronize`(value: ActionAfter): Self = StObject.set(x, "webhook-pull-request-synchronize", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-pull-request-unassigned`(value: ActionAssigneeEnterprise): Self = StObject.set(x, "webhook-pull-request-unassigned", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-pull-request-unlabeled`(value: InstallationLabelNumber): Self = StObject.set(x, "webhook-pull-request-unlabeled", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-pull-request-unlocked`(value: InstallationNumberOrganizationPullrequest): Self = StObject.set(x, "webhook-pull-request-unlocked", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-push`(value: Compare): Self = StObject.set(x, "webhook-push", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-registry-package-published`(value: Registrypackage): Self = StObject.set(x, "webhook-registry-package-published", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-registry-package-updated`(value: OrganizationRegistrypackage): Self = StObject.set(x, "webhook-registry-package-updated", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-release-created`(value: Release): Self = StObject.set(x, "webhook-release-created", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-release-deleted`(value: OrganizationRelease): Self = StObject.set(x, "webhook-release-deleted", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-release-edited`(value: ReleaseRepository): Self = StObject.set(x, "webhook-release-edited", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-release-prereleased`(value: InstallationOrganizationRelease): Self = StObject.set(x, "webhook-release-prereleased", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-release-published`(value: OrganizationReleaseRepository): Self = StObject.set(x, "webhook-release-published", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-release-released`(value: ReleaseRepositorySender): Self = StObject.set(x, "webhook-release-released", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-release-unpublished`(value: ActionEnterpriseInstallationOrganization): Self = StObject.set(x, "webhook-release-unpublished", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-repository-advisory-published`(value: Repositoryadvisory): Self = StObject.set(x, "webhook-repository-advisory-published", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-repository-advisory-reported`(value: RepositoryRepositoryadvisory): Self = StObject.set(x, "webhook-repository-advisory-reported", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-repository-archived`(value: ActionEnterpriseInstallationOrganizationRepository): Self = StObject.set(x, "webhook-repository-archived", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-repository-created`(value: EnterpriseInstallationOrganizationRepositorySender): Self = StObject.set(x, "webhook-repository-created", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-repository-deleted`(value: ActionEnterpriseInstallationOrganizationRepositorySender): Self = StObject.set(x, "webhook-repository-deleted", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-repository-dispatch-sample`(value: ActionBranch): Self = StObject.set(x, "webhook-repository-dispatch-sample", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-repository-edited`(value: ActionChangesEnterpriseInstallation): Self = StObject.set(x, "webhook-repository-edited", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-repository-import`(value: SenderStatus): Self = StObject.set(x, "webhook-repository-import", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-repository-privatized`(value: RepositoryAllowupdatebranch): Self = StObject.set(x, "webhook-repository-privatized", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-repository-publicized`(value: SenderAvatarurl): Self = StObject.set(x, "webhook-repository-publicized", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-repository-renamed`(value: ChangesEnterpriseInstallationOrganization): Self = StObject.set(x, "webhook-repository-renamed", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-repository-transferred`(value: ActionChangesEnterpriseInstallationOrganization): Self = StObject.set(x, "webhook-repository-transferred", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-repository-unarchived`(value: OrganizationRepositoryAllowupdatebranch): Self = StObject.set(x, "webhook-repository-unarchived", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-repository-vulnerability-alert-create`(value: ActionAlertEnterpriseInstallation): Self = StObject.set(x, "webhook-repository-vulnerability-alert-create", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-repository-vulnerability-alert-dismiss`(value: AlertEnterpriseInstallationOrganization): Self = StObject.set(x, "webhook-repository-vulnerability-alert-dismiss", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-repository-vulnerability-alert-reopen`(value: ActionAlertEnterpriseInstallationOrganization): Self = StObject.set(x, "webhook-repository-vulnerability-alert-reopen", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-repository-vulnerability-alert-resolve`(value: AlertEnterpriseInstallationOrganizationRepository): Self = StObject.set(x, "webhook-repository-vulnerability-alert-resolve", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-rubygems-metadata`(value: Homepage): Self = StObject.set(x, "webhook-rubygems-metadata", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-secret-scanning-alert-created`(value: ActionAlertEnterpriseInstallationOrganizationRepository): Self = StObject.set(x, "webhook-secret-scanning-alert-created", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-secret-scanning-alert-location-created`(value: AlertInstallation): Self = StObject.set(x, "webhook-secret-scanning-alert-location-created", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-secret-scanning-alert-location-created-form-encoded`(value: PayloadString): Self = StObject.set(x, "webhook-secret-scanning-alert-location-created-form-encoded", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-secret-scanning-alert-reopened`(value: AlertEnterpriseInstallationOrganizationRepositorySender): Self = StObject.set(x, "webhook-secret-scanning-alert-reopened", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-secret-scanning-alert-resolved`(value: ActionAlertEnterpriseInstallationOrganizationRepositorySender): Self = StObject.set(x, "webhook-secret-scanning-alert-resolved", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-secret-scanning-alert-revoked`(value: AlertPushprotectionbypassedat): Self = StObject.set(x, "webhook-secret-scanning-alert-revoked", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-security-advisory-published`(value: RepositorySecurityadvisory): Self = StObject.set(x, "webhook-security-advisory-published", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-security-advisory-updated`(value: SecurityadvisorySender): Self = StObject.set(x, "webhook-security-advisory-updated", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-security-advisory-withdrawn`(value: OrganizationRepositorySecurityadvisory): Self = StObject.set(x, "webhook-security-advisory-withdrawn", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-security-and-analysis`(value: ChangesEnterpriseInstallationOrganizationRepository): Self = StObject.set(x, "webhook-security-and-analysis", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-sponsorship-cancelled`(value: Sponsorship): Self = StObject.set(x, "webhook-sponsorship-cancelled", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-sponsorship-created`(value: SenderSponsorship): Self = StObject.set(x, "webhook-sponsorship-created", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-sponsorship-edited`(value: RepositorySenderSponsorship): Self = StObject.set(x, "webhook-sponsorship-edited", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-sponsorship-pending-cancellation`(value: ActionEffectivedateEnterprise): Self = StObject.set(x, "webhook-sponsorship-pending-cancellation", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-sponsorship-pending-tier-change`(value: ChangesEffectivedate): Self = StObject.set(x, "webhook-sponsorship-pending-tier-change", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-sponsorship-tier-changed`(value: OrganizationRepositorySenderSponsorship): Self = StObject.set(x, "webhook-sponsorship-tier-changed", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-star-created`(value: SenderStarredat): Self = StObject.set(x, "webhook-star-created", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-star-deleted`(value: RepositorySenderStarredat): Self = StObject.set(x, "webhook-star-deleted", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-status`(value: Branches): Self = StObject.set(x, "webhook-status", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-team-add`(value: SenderTeam): Self = StObject.set(x, "webhook-team-add", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-team-added-to-repository`(value: RepositorySenderTeam): Self = StObject.set(x, "webhook-team-added-to-repository", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-team-created`(value: OrganizationRepositorySenderTeam): Self = StObject.set(x, "webhook-team-created", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-team-deleted`(value: InstallationOrganizationRepositorySenderTeam): Self = StObject.set(x, "webhook-team-deleted", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-team-edited`(value: ActionChangesEnterpriseInstallationOrganizationRepository): Self = StObject.set(x, "webhook-team-edited", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-team-removed-from-repository`(value: EnterpriseInstallationOrganizationRepositorySenderTeam): Self = StObject.set(x, "webhook-team-removed-from-repository", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-watch-started`(value: RepositoryAllowupdatebranchSenderAvatarurl): Self = StObject.set(x, "webhook-watch-started", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-workflow-dispatch`(value: EnterpriseInputs): Self = StObject.set(x, "webhook-workflow-dispatch", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-workflow-job-completed`(value: Workflowjob): Self = StObject.set(x, "webhook-workflow-job-completed", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-workflow-job-in-progress`(value: ActionDeployment): Self = StObject.set(x, "webhook-workflow-job-in-progress", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-workflow-job-queued`(value: DeploymentEnterprise): Self = StObject.set(x, "webhook-workflow-job-queued", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-workflow-job-waiting`(value: SenderWorkflowjob): Self = StObject.set(x, "webhook-workflow-job-waiting", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-workflow-run-completed`(value: Workflowrun): Self = StObject.set(x, "webhook-workflow-run-completed", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-workflow-run-in-progress`(value: SenderWorkflow): Self = StObject.set(x, "webhook-workflow-run-in-progress", value.asInstanceOf[js.Any])
+    
+    inline def `setWebhook-workflow-run-requested`(value: WorkflowWorkflowrun): Self = StObject.set(x, "webhook-workflow-run-requested", value.asInstanceOf[js.Any])
+    
+    inline def setWorkflow(value: BadgeurlCreatedat): Self = StObject.set(x, "workflow", value.asInstanceOf[js.Any])
     
     inline def `setWorkflow-run`(value: Artifactsurl): Self = StObject.set(x, "workflow-run", value.asInstanceOf[js.Any])
     
-    inline def `setWorkflow-run-usage`(value: Billable): Self = StObject.set(x, "workflow-run-usage", value.asInstanceOf[js.Any])
+    inline def `setWorkflow-run-usage`(value: Rundurationms): Self = StObject.set(x, "workflow-run-usage", value.asInstanceOf[js.Any])
     
-    inline def `setWorkflow-usage`(value: BillableWINDOWS): Self = StObject.set(x, "workflow-usage", value.asInstanceOf[js.Any])
+    inline def `setWorkflow-usage`(value: Billable): Self = StObject.set(x, "workflow-usage", value.asInstanceOf[js.Any])
     
-    inline def set_package(value: Repository): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
+    inline def set_package(value: Versioncount): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
   }
 }

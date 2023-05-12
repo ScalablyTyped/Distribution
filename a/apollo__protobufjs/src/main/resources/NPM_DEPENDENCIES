@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@apollo/protobufjs" : "1.2.6"
+      "@apollo/protobufjs" : "1.2.7"
     }
   ],
   "test-dependencies" : [
     {
-      "@apollo/protobufjs" : "1.2.6"
+      "@apollo/protobufjs" : "1.2.7"
     }
   ],
   "compile-devDependencies" : [

@@ -15,7 +15,7 @@ open class StaticMap protected ()
   def this(props: StaticMapProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: StaticMapProps, context: Any) = this()
   

@@ -5,12 +5,52 @@ import typings.photoshop.photoshopStrings.CMYKColorClass
 import typings.photoshop.photoshopStrings.HSBColorClass
 import typings.photoshop.photoshopStrings.RGBColor
 import typings.photoshop.photoshopStrings.grayscale_
-import typings.photoshop.photoshopStrings.labColor
+import typings.photoshop.photoshopStrings.labColor_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilColorTypesMod {
+  
+  @js.native
+  sealed trait ColorConversionModel extends StObject
+  @JSImport("photoshop/util/colorTypes", "ColorConversionModel")
+  @js.native
+  object ColorConversionModel extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[ColorConversionModel & Double] = js.native
+    
+    @js.native
+    sealed trait CMYK
+      extends StObject
+         with ColorConversionModel
+    /* 5 */ val CMYK: typings.photoshop.utilColorTypesMod.ColorConversionModel.CMYK & Double = js.native
+    
+    @js.native
+    sealed trait Gray
+      extends StObject
+         with ColorConversionModel
+    /* 16 */ val Gray: typings.photoshop.utilColorTypesMod.ColorConversionModel.Gray & Double = js.native
+    
+    @js.native
+    sealed trait HSB
+      extends StObject
+         with ColorConversionModel
+    /* 4 */ val HSB: typings.photoshop.utilColorTypesMod.ColorConversionModel.HSB & Double = js.native
+    
+    @js.native
+    sealed trait Lab
+      extends StObject
+         with ColorConversionModel
+    /* 6 */ val Lab: typings.photoshop.utilColorTypesMod.ColorConversionModel.Lab & Double = js.native
+    
+    @js.native
+    sealed trait RGB
+      extends StObject
+         with ColorConversionModel
+    /* 15 */ val RGB: typings.photoshop.utilColorTypesMod.ColorConversionModel.RGB & Double = js.native
+  }
   
   trait CMYKColorDescriptor
     extends StObject
@@ -24,12 +64,12 @@ object utilColorTypesMod {
     
     var magenta: Double
     
-    var yellow: Double
+    var yellowColor: Double
   }
   object CMYKColorDescriptor {
     
-    inline def apply(black: Double, cyan: Double, magenta: Double, yellow: Double): CMYKColorDescriptor = {
-      val __obj = js.Dynamic.literal(_obj = "CMYKColorClass", black = black.asInstanceOf[js.Any], cyan = cyan.asInstanceOf[js.Any], magenta = magenta.asInstanceOf[js.Any], yellow = yellow.asInstanceOf[js.Any])
+    inline def apply(black: Double, cyan: Double, magenta: Double, yellowColor: Double): CMYKColorDescriptor = {
+      val __obj = js.Dynamic.literal(_obj = "CMYKColorClass", black = black.asInstanceOf[js.Any], cyan = cyan.asInstanceOf[js.Any], magenta = magenta.asInstanceOf[js.Any], yellowColor = yellowColor.asInstanceOf[js.Any])
       __obj.asInstanceOf[CMYKColorDescriptor]
     }
     
@@ -42,7 +82,7 @@ object utilColorTypesMod {
       
       inline def setMagenta(value: Double): Self = StObject.set(x, "magenta", value.asInstanceOf[js.Any])
       
-      inline def setYellow(value: Double): Self = StObject.set(x, "yellow", value.asInstanceOf[js.Any])
+      inline def setYellowColor(value: Double): Self = StObject.set(x, "yellowColor", value.asInstanceOf[js.Any])
       
       inline def set_obj(value: CMYKColorClass): Self = StObject.set(x, "_obj", value.asInstanceOf[js.Any])
     }
@@ -54,12 +94,13 @@ object utilColorTypesMod {
     - typings.photoshop.utilColorTypesMod.CMYKColorDescriptor
     - typings.photoshop.utilColorTypesMod.LabColorDescriptor
     - typings.photoshop.utilColorTypesMod.GrayscaleColorDescriptor
+    - typings.photoshop.utilColorTypesMod.RGB32ColorDescriptor
   */
   trait ColorDescriptor extends StObject
   object ColorDescriptor {
     
-    inline def CMYKColorDescriptor(black: Double, cyan: Double, magenta: Double, yellow: Double): typings.photoshop.utilColorTypesMod.CMYKColorDescriptor = {
-      val __obj = js.Dynamic.literal(_obj = "CMYKColorClass", black = black.asInstanceOf[js.Any], cyan = cyan.asInstanceOf[js.Any], magenta = magenta.asInstanceOf[js.Any], yellow = yellow.asInstanceOf[js.Any])
+    inline def CMYKColorDescriptor(black: Double, cyan: Double, magenta: Double, yellowColor: Double): typings.photoshop.utilColorTypesMod.CMYKColorDescriptor = {
+      val __obj = js.Dynamic.literal(_obj = "CMYKColorClass", black = black.asInstanceOf[js.Any], cyan = cyan.asInstanceOf[js.Any], magenta = magenta.asInstanceOf[js.Any], yellowColor = yellowColor.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.photoshop.utilColorTypesMod.CMYKColorDescriptor]
     }
     
@@ -76,6 +117,11 @@ object utilColorTypesMod {
     inline def LabColorDescriptor(a: Double, b: Double, luminance: Double): typings.photoshop.utilColorTypesMod.LabColorDescriptor = {
       val __obj = js.Dynamic.literal(_obj = "labColor", a = a.asInstanceOf[js.Any], b = b.asInstanceOf[js.Any], luminance = luminance.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.photoshop.utilColorTypesMod.LabColorDescriptor]
+    }
+    
+    inline def RGB32ColorDescriptor(blueFloat: Double, greenFloat: Double, redFloat: Double): typings.photoshop.utilColorTypesMod.RGB32ColorDescriptor = {
+      val __obj = js.Dynamic.literal(_obj = "RGBColor", blueFloat = blueFloat.asInstanceOf[js.Any], greenFloat = greenFloat.asInstanceOf[js.Any], redFloat = redFloat.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.photoshop.utilColorTypesMod.RGB32ColorDescriptor]
     }
     
     inline def RGBColorDescriptor(blue: Double, green: Double, red: Double): typings.photoshop.utilColorTypesMod.RGBColorDescriptor = {
@@ -144,7 +190,7 @@ object utilColorTypesMod {
     extends StObject
        with ColorDescriptor {
     
-    var _obj: labColor
+    var _obj: labColor_
     
     var a: Double
     
@@ -168,7 +214,39 @@ object utilColorTypesMod {
       
       inline def setLuminance(value: Double): Self = StObject.set(x, "luminance", value.asInstanceOf[js.Any])
       
-      inline def set_obj(value: labColor): Self = StObject.set(x, "_obj", value.asInstanceOf[js.Any])
+      inline def set_obj(value: labColor_): Self = StObject.set(x, "_obj", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait RGB32ColorDescriptor
+    extends StObject
+       with ColorDescriptor {
+    
+    var _obj: RGBColor
+    
+    var blueFloat: Double
+    
+    var greenFloat: Double
+    
+    var redFloat: Double
+  }
+  object RGB32ColorDescriptor {
+    
+    inline def apply(blueFloat: Double, greenFloat: Double, redFloat: Double): RGB32ColorDescriptor = {
+      val __obj = js.Dynamic.literal(_obj = "RGBColor", blueFloat = blueFloat.asInstanceOf[js.Any], greenFloat = greenFloat.asInstanceOf[js.Any], redFloat = redFloat.asInstanceOf[js.Any])
+      __obj.asInstanceOf[RGB32ColorDescriptor]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RGB32ColorDescriptor] (val x: Self) extends AnyVal {
+      
+      inline def setBlueFloat(value: Double): Self = StObject.set(x, "blueFloat", value.asInstanceOf[js.Any])
+      
+      inline def setGreenFloat(value: Double): Self = StObject.set(x, "greenFloat", value.asInstanceOf[js.Any])
+      
+      inline def setRedFloat(value: Double): Self = StObject.set(x, "redFloat", value.asInstanceOf[js.Any])
+      
+      inline def set_obj(value: RGBColor): Self = StObject.set(x, "_obj", value.asInstanceOf[js.Any])
     }
   }
   

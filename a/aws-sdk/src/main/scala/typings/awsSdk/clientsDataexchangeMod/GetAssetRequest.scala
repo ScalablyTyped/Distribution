@@ -9,21 +9,21 @@ trait GetAssetRequest extends StObject {
   /**
     * The unique identifier for an asset.
     */
-  var AssetId: string
+  var AssetId: _String
   
   /**
     * The unique identifier for a data set.
     */
-  var DataSetId: string
+  var DataSetId: _String
   
   /**
     * The unique identifier for a revision.
     */
-  var RevisionId: string
+  var RevisionId: _String
 }
 object GetAssetRequest {
   
-  inline def apply(AssetId: string, DataSetId: string, RevisionId: string): GetAssetRequest = {
+  inline def apply(AssetId: _String, DataSetId: _String, RevisionId: _String): GetAssetRequest = {
     val __obj = js.Dynamic.literal(AssetId = AssetId.asInstanceOf[js.Any], DataSetId = DataSetId.asInstanceOf[js.Any], RevisionId = RevisionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAssetRequest]
   }
@@ -31,10 +31,10 @@ object GetAssetRequest {
   @scala.inline
   implicit open class MutableBuilder[Self <: GetAssetRequest] (val x: Self) extends AnyVal {
     
-    inline def setAssetId(value: string): Self = StObject.set(x, "AssetId", value.asInstanceOf[js.Any])
+    inline def setAssetId(value: _String): Self = StObject.set(x, "AssetId", value.asInstanceOf[js.Any])
     
-    inline def setDataSetId(value: string): Self = StObject.set(x, "DataSetId", value.asInstanceOf[js.Any])
+    inline def setDataSetId(value: _String): Self = StObject.set(x, "DataSetId", value.asInstanceOf[js.Any])
     
-    inline def setRevisionId(value: string): Self = StObject.set(x, "RevisionId", value.asInstanceOf[js.Any])
+    inline def setRevisionId(value: _String): Self = StObject.set(x, "RevisionId", value.asInstanceOf[js.Any])
   }
 }

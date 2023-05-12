@@ -6,30 +6,40 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ActiveConfig extends StObject {
   
-  /**
-    * @description Determines if notifications are sent when the webhook is triggered. Set to `true` to send notifications.
-    * @default true
-    */
-  var active: js.UndefOr[Boolean] = js.undefined
+  var active: Boolean
   
-  /** @description Key/value pairs to provide settings for this webhook. [These are defined below](https://docs.github.com/rest/reference/orgs#create-hook-config-params). */
-  var config: InsecuresslPassword
+  var config: SecretUrl
   
-  /**
-    * @description Determines what [events](https://docs.github.com/webhooks/event-payloads) the hook is triggered for.
-    * @default [
-    *   "push"
-    * ]
-    */
-  var events: js.UndefOr[js.Array[String]] = js.undefined
+  var created_at: String
   
-  /** @description Must be passed as "web". */
+  var events: js.Array[
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 52, starting with typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.Asterisk, typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.branch_protection_rule, typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.check_run */ Any
+  ]
+  
+  var id: Double
+  
   var name: String
+  
+  var `type`: String
+  
+  var updated_at: String
 }
 object ActiveConfig {
   
-  inline def apply(config: InsecuresslPassword, name: String): ActiveConfig = {
-    val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+  inline def apply(
+    active: Boolean,
+    config: SecretUrl,
+    created_at: String,
+    events: js.Array[
+      /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 52, starting with typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.Asterisk, typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.branch_protection_rule, typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.check_run */ Any
+    ],
+    id: Double,
+    name: String,
+    `type`: String,
+    updated_at: String
+  ): ActiveConfig = {
+    val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], config = config.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], events = events.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActiveConfig]
   }
   
@@ -38,16 +48,26 @@ object ActiveConfig {
     
     inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
-    inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+    inline def setConfig(value: SecretUrl): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
-    inline def setConfig(value: InsecuresslPassword): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
     
-    inline def setEvents(value: js.Array[String]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    inline def setEvents(
+      value: js.Array[
+          /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 52, starting with typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.Asterisk, typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.branch_protection_rule, typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.check_run */ Any
+        ]
+    ): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
+    inline def setEventsVarargs(
+      value: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 52, starting with typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.Asterisk, typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.branch_protection_rule, typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.check_run */ Any)*
+    ): Self = StObject.set(x, "events", js.Array(value*))
     
-    inline def setEventsVarargs(value: String*): Self = StObject.set(x, "events", js.Array(value*))
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setUpdated_at(value: String): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])
   }
 }

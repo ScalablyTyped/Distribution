@@ -1,162 +1,117 @@
 package typings.twilio
 
+import typings.std.Record
+import typings.twilio.anon.ConfigurationSchema
 import typings.twilio.libBasePageMod.TwilioResponsePayload
-import typings.twilio.libInterfacesMod.SerializableClass
 import typings.twilio.libRestPreviewMarketplaceAvailableAddOnAvailableAddOnExtensionMod.AvailableAddOnExtensionContext
 import typings.twilio.libRestPreviewMarketplaceAvailableAddOnAvailableAddOnExtensionMod.AvailableAddOnExtensionListInstance
+import typings.twilio.libRestPreviewMarketplaceMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libRestPreviewMarketplaceAvailableAddOnMod {
   
-  @JSImport("twilio/lib/rest/preview/marketplace/availableAddOn", JSImport.Namespace)
+  @JSImport("twilio/lib/rest/preview/marketplace/availableAddOn", "AvailableAddOnContextImpl")
   @js.native
-  val ^ : js.Any = js.native
-  
-  @JSImport("twilio/lib/rest/preview/marketplace/availableAddOn", "AvailableAddOnContext")
-  @js.native
-  open class AvailableAddOnContext protected () extends StObject {
-    /**
-      * Initialize the AvailableAddOnContext
-      *
-      * PLEASE NOTE that this class contains preview products that are subject to
-      * change. Use them with caution. If you currently do not have developer preview
-      * access, please contact help@twilio.com.
-      *
-      * @param version - Version of the resource
-      * @param sid - The SID of the AvailableAddOn resource to fetch
-      */
-    def this(version: typings.twilio.libRestPreviewMarketplaceMod.^, sid: String) = this()
+  open class AvailableAddOnContextImpl protected ()
+    extends StObject
+       with AvailableAddOnContext {
+    def this(_version: default, sid: String) = this()
     
-    /**
-      * @param sid - sid of instance
-      */
-    def extensions(sid: String): AvailableAddOnExtensionContext = js.native
-    @JSName("extensions")
-    var extensions_Original: AvailableAddOnExtensionListInstance = js.native
+    /* protected */ var _extensions: js.UndefOr[AvailableAddOnExtensionListInstance] = js.native
     
-    /**
-      * fetch a AvailableAddOnInstance
-      *
-      * @param callback - Callback to handle processed record
-      */
-    def fetch(): js.Promise[AvailableAddOnInstance] = js.native
-    def fetch(callback: js.Function2[/* error */ js.Error | Null, /* items */ AvailableAddOnInstance, Any]): js.Promise[AvailableAddOnInstance] = js.native
+    /* protected */ var _solution: AvailableAddOnContextSolution = js.native
     
-    /**
-      * Provide a user-friendly representation
-      */
-    def toJSON(): Any = js.native
+    /* protected */ var _uri: String = js.native
+    
+    /* protected */ var _version: default = js.native
+    
+    def extensions: AvailableAddOnExtensionListInstance = js.native
   }
   
   @JSImport("twilio/lib/rest/preview/marketplace/availableAddOn", "AvailableAddOnInstance")
   @js.native
-  open class AvailableAddOnInstance protected () extends SerializableClass {
+  open class AvailableAddOnInstance protected () extends StObject {
+    def this(_version: default, payload: AvailableAddOnResource) = this()
+    def this(_version: default, payload: AvailableAddOnResource, sid: String) = this()
+    
+    /* protected */ var _context: js.UndefOr[AvailableAddOnContext] = js.native
+    
+    /* private */ def _proxy: Any = js.native
+    
+    /* protected */ var _solution: AvailableAddOnContextSolution = js.native
+    
+    /* protected */ var _version: default = js.native
+    
     /**
-      * Initialize the AvailableAddOnContext
-      *
-      * PLEASE NOTE that this class contains preview products that are subject to
-      * change. Use them with caution. If you currently do not have developer preview
-      * access, please contact help@twilio.com.
-      *
-      * @param version - Version of the resource
-      * @param payload - The instance payload
-      * @param sid - The SID of the AvailableAddOn resource to fetch
+      * The JSON object with the configuration that must be provided when installing a given Add-on.
       */
-    def this(
-      version: typings.twilio.libRestPreviewMarketplaceMod.^,
-      payload: AvailableAddOnPayload,
-      sid: String
-    ) = this()
-    
-    /* private */ var _proxy: AvailableAddOnContext = js.native
-    
     var configurationSchema: Any = js.native
     
+    /**
+      * A short description of the Add-on\'s functionality.
+      */
     var description: String = js.native
     
     /**
-      * Access the extensions
+      * Access the extensions.
       */
     def extensions(): AvailableAddOnExtensionListInstance = js.native
     
     /**
-      * fetch a AvailableAddOnInstance
+      * Fetch a AvailableAddOnInstance
       *
       * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed AvailableAddOnInstance
       */
     def fetch(): js.Promise[AvailableAddOnInstance] = js.native
-    def fetch(callback: js.Function2[/* error */ js.Error | Null, /* items */ this.type, Any]): js.Promise[AvailableAddOnInstance] = js.native
+    def fetch(callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[this.type], Any]): js.Promise[AvailableAddOnInstance] = js.native
     
+    /**
+      * The string that you assigned to describe the resource.
+      */
     var friendlyName: String = js.native
     
-    var links: String = js.native
+    /**
+      * The URLs of related resources.
+      */
+    var links: Record[String, String] = js.native
     
+    /**
+      * How customers are charged for using this Add-on.
+      */
     var pricingType: String = js.native
     
+    /**
+      * The unique string that we created to identify the AvailableAddOn resource.
+      */
     var sid: String = js.native
-    
-    var url: String = js.native
-  }
-  
-  /**
-    * Initialize the AvailableAddOnList
-    *
-    * PLEASE NOTE that this class contains preview products that are subject to
-    * change. Use them with caution. If you currently do not have developer preview
-    * access, please contact help@twilio.com.
-    *
-    * @param version - Version of the resource
-    */
-  inline def AvailableAddOnList(version: typings.twilio.libRestPreviewMarketplaceMod.^): AvailableAddOnListInstance = ^.asInstanceOf[js.Dynamic].applyDynamic("AvailableAddOnList")(version.asInstanceOf[js.Any]).asInstanceOf[AvailableAddOnListInstance]
-  
-  @JSImport("twilio/lib/rest/preview/marketplace/availableAddOn", "AvailableAddOnPage")
-  @js.native
-  open class AvailableAddOnPage protected ()
-    extends typings.twilio.libBasePageMod.^[
-          typings.twilio.libRestPreviewMarketplaceMod.^, 
-          AvailableAddOnPayload, 
-          AvailableAddOnResource, 
-          AvailableAddOnInstance
-        ] {
-    /**
-      * Initialize the AvailableAddOnPage
-      *
-      * PLEASE NOTE that this class contains preview products that are subject to
-      * change. Use them with caution. If you currently do not have developer preview
-      * access, please contact help@twilio.com.
-      *
-      * @param version - Version of the resource
-      * @param response - Response from the API
-      * @param solution - Path solution
-      */
-    def this(
-      version: typings.twilio.libRestPreviewMarketplaceMod.^,
-      response: typings.twilio.libHttpResponseMod.^[String],
-      solution: AvailableAddOnSolution
-    ) = this()
-    
-    /**
-      * Build an instance of AvailableAddOnInstance
-      *
-      * @param payload - Payload response from the API
-      */
-    def getInstance(payload: AvailableAddOnPayload): AvailableAddOnInstance = js.native
     
     /**
       * Provide a user-friendly representation
+      *
+      * @returns Object
       */
-    def toJSON(): Any = js.native
+    def toJSON(): ConfigurationSchema = js.native
+    
+    /**
+      * The absolute URL of the resource.
+      */
+    var url: String = js.native
   }
   
   @js.native
   trait AvailableAddOnListInstance extends StObject {
     
-    /**
-      * @param sid - sid of instance
-      */
     def apply(sid: String): AvailableAddOnContext = js.native
+    
+    var _solution: AvailableAddOnSolution = js.native
+    
+    var _uri: String = js.native
+    
+    var _version: default = js.native
     
     /**
       * Streams AvailableAddOnInstance records from the API.
@@ -170,7 +125,8 @@ object libRestPreviewMarketplaceAvailableAddOnMod {
       * If a function is passed as the first argument, it will be used as the callback
       * function.
       *
-      * @param callback - Function to process each record
+      * @param { AvailableAddOnListInstanceEachOptions } [params] - Options for request
+      * @param { function } [callback] - Function to process each record
       */
     def each(): Unit = js.native
     def each(
@@ -180,17 +136,9 @@ object libRestPreviewMarketplaceAvailableAddOnMod {
           Unit
         ]
     ): Unit = js.native
+    def each(params: AvailableAddOnListInstanceEachOptions): Unit = js.native
     def each(
-      opts: Unit,
-      callback: js.Function2[
-          /* item */ AvailableAddOnInstance, 
-          /* done */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
-          Unit
-        ]
-    ): Unit = js.native
-    def each(opts: AvailableAddOnListInstanceEachOptions): Unit = js.native
-    def each(
-      opts: AvailableAddOnListInstanceEachOptions,
+      params: AvailableAddOnListInstanceEachOptions,
       callback: js.Function2[
           /* item */ AvailableAddOnInstance, 
           /* done */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
@@ -198,11 +146,6 @@ object libRestPreviewMarketplaceAvailableAddOnMod {
         ]
     ): Unit = js.native
     
-    /**
-      * Constructs a available_add_on
-      *
-      * @param sid - The SID of the AvailableAddOn resource to fetch
-      */
     def get(sid: String): AvailableAddOnContext = js.native
     
     /**
@@ -210,20 +153,12 @@ object libRestPreviewMarketplaceAvailableAddOnMod {
       *
       * The request is executed immediately.
       *
-      * If a function is passed as the first argument, it will be used as the callback
-      * function.
-      *
-      * @param callback - Callback to handle list of records
+      * @param { string } [targetUrl] - API-generated URL for the requested results page
+      * @param { function } [callback] - Callback to handle list of records
       */
-    def getPage(): js.Promise[AvailableAddOnPage] = js.native
-    def getPage(callback: js.Function2[/* error */ js.Error | Null, /* items */ AvailableAddOnPage, Any]): js.Promise[AvailableAddOnPage] = js.native
     def getPage(targetUrl: String): js.Promise[AvailableAddOnPage] = js.native
     def getPage(
       targetUrl: String,
-      callback: js.Function2[/* error */ js.Error | Null, /* items */ AvailableAddOnPage, Any]
-    ): js.Promise[AvailableAddOnPage] = js.native
-    def getPage(
-      targetUrl: Unit,
       callback: js.Function2[/* error */ js.Error | Null, /* items */ AvailableAddOnPage, Any]
     ): js.Promise[AvailableAddOnPage] = js.native
     
@@ -233,19 +168,16 @@ object libRestPreviewMarketplaceAvailableAddOnMod {
       * If a function is passed as the first argument, it will be used as the callback
       * function.
       *
-      * @param callback - Callback to handle list of records
+      * @param { AvailableAddOnListInstanceOptions } [params] - Options for request
+      * @param { function } [callback] - Callback to handle list of records
       */
     def list(): js.Promise[js.Array[AvailableAddOnInstance]] = js.native
     def list(
       callback: js.Function2[/* error */ js.Error | Null, /* items */ js.Array[AvailableAddOnInstance], Any]
     ): js.Promise[js.Array[AvailableAddOnInstance]] = js.native
+    def list(params: AvailableAddOnListInstanceOptions): js.Promise[js.Array[AvailableAddOnInstance]] = js.native
     def list(
-      opts: Unit,
-      callback: js.Function2[/* error */ js.Error | Null, /* items */ js.Array[AvailableAddOnInstance], Any]
-    ): js.Promise[js.Array[AvailableAddOnInstance]] = js.native
-    def list(opts: AvailableAddOnListInstanceOptions): js.Promise[js.Array[AvailableAddOnInstance]] = js.native
-    def list(
-      opts: AvailableAddOnListInstanceOptions,
+      params: AvailableAddOnListInstanceOptions,
       callback: js.Function2[/* error */ js.Error | Null, /* items */ js.Array[AvailableAddOnInstance], Any]
     ): js.Promise[js.Array[AvailableAddOnInstance]] = js.native
     
@@ -257,17 +189,14 @@ object libRestPreviewMarketplaceAvailableAddOnMod {
       * If a function is passed as the first argument, it will be used as the callback
       * function.
       *
-      * @param callback - Callback to handle list of records
+      * @param { AvailableAddOnListInstancePageOptions } [params] - Options for request
+      * @param { function } [callback] - Callback to handle list of records
       */
     def page(): js.Promise[AvailableAddOnPage] = js.native
     def page(callback: js.Function2[/* error */ js.Error | Null, /* items */ AvailableAddOnPage, Any]): js.Promise[AvailableAddOnPage] = js.native
+    def page(params: AvailableAddOnListInstancePageOptions): js.Promise[AvailableAddOnPage] = js.native
     def page(
-      opts: Unit,
-      callback: js.Function2[/* error */ js.Error | Null, /* items */ AvailableAddOnPage, Any]
-    ): js.Promise[AvailableAddOnPage] = js.native
-    def page(opts: AvailableAddOnListInstancePageOptions): js.Promise[AvailableAddOnPage] = js.native
-    def page(
-      opts: AvailableAddOnListInstancePageOptions,
+      params: AvailableAddOnListInstancePageOptions,
       callback: js.Function2[/* error */ js.Error | Null, /* items */ AvailableAddOnPage, Any]
     ): js.Promise[AvailableAddOnPage] = js.native
     
@@ -276,27 +205,84 @@ object libRestPreviewMarketplaceAvailableAddOnMod {
       */
     def toJSON(): Any = js.native
   }
+  object AvailableAddOnListInstance {
+    
+    @JSImport("twilio/lib/rest/preview/marketplace/availableAddOn", "AvailableAddOnListInstance")
+    @js.native
+    def apply(version: default): AvailableAddOnListInstance = js.native
+  }
   
-  /**
-    * Options to pass to each
-    *
-    * @property callback -
-    *                         Function to process each record. If this and a positional
-    *                         callback are passed, this one will be used
-    * @property done - Function to be called upon completion of streaming
-    * @property limit -
-    *                         Upper limit for the number of records to return.
-    *                         each() guarantees never to return more than limit.
-    *                         Default is no limit
-    * @property pageSize -
-    *                         Number of records to fetch per request,
-    *                         when not set will use the default value of 50 records.
-    *                         If no pageSize is defined but a limit is defined,
-    *                         each() will attempt to read the limit with the most efficient
-    *                         page size, i.e. min(limit, 1000)
-    */
+  @JSImport("twilio/lib/rest/preview/marketplace/availableAddOn", "AvailableAddOnPage")
+  @js.native
+  open class AvailableAddOnPage protected ()
+    extends typings.twilio.libBasePageMod.default[default, AvailableAddOnPayload, AvailableAddOnResource, AvailableAddOnInstance] {
+    /**
+      * Initialize the AvailableAddOnPage
+      *
+      * @param version - Version of the resource
+      * @param response - Response from the API
+      * @param solution - Path solution
+      */
+    def this(
+      version: default,
+      response: typings.twilio.libHttpResponseMod.default[String],
+      solution: AvailableAddOnSolution
+    ) = this()
+    
+    /**
+      * Build an instance of AvailableAddOnInstance
+      *
+      * @param payload - Payload response from the API
+      */
+    def getInstance(payload: AvailableAddOnResource): AvailableAddOnInstance = js.native
+  }
+  
+  @js.native
+  trait AvailableAddOnContext extends StObject {
+    
+    def extensions(sid: String): AvailableAddOnExtensionContext = js.native
+    @JSName("extensions")
+    var extensions_Original: AvailableAddOnExtensionListInstance = js.native
+    
+    /**
+      * Fetch a AvailableAddOnInstance
+      *
+      * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed AvailableAddOnInstance
+      */
+    def fetch(): js.Promise[AvailableAddOnInstance] = js.native
+    def fetch(
+      callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[AvailableAddOnInstance], Any]
+    ): js.Promise[AvailableAddOnInstance] = js.native
+    
+    /**
+      * Provide a user-friendly representation
+      */
+    def toJSON(): Any = js.native
+  }
+  
+  trait AvailableAddOnContextSolution extends StObject {
+    
+    var sid: String
+  }
+  object AvailableAddOnContextSolution {
+    
+    inline def apply(sid: String): AvailableAddOnContextSolution = {
+      val __obj = js.Dynamic.literal(sid = sid.asInstanceOf[js.Any])
+      __obj.asInstanceOf[AvailableAddOnContextSolution]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AvailableAddOnContextSolution] (val x: Self) extends AnyVal {
+      
+      inline def setSid(value: String): Self = StObject.set(x, "sid", value.asInstanceOf[js.Any])
+    }
+  }
+  
   trait AvailableAddOnListInstanceEachOptions extends StObject {
     
+    /** Function to process each record. If this and a positional callback are passed, this one will be used */
     var callback: js.UndefOr[
         js.Function2[
           /* item */ AvailableAddOnInstance, 
@@ -305,10 +291,13 @@ object libRestPreviewMarketplaceAvailableAddOnMod {
         ]
       ] = js.undefined
     
+    /** Function to be called upon completion of streaming */
     var done: js.UndefOr[js.Function] = js.undefined
     
+    /** Upper limit for the number of records to return. each() guarantees never to return more than limit. Default is no limit */
     var limit: js.UndefOr[Double] = js.undefined
     
+    /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
     var pageSize: js.UndefOr[Double] = js.undefined
   }
   object AvailableAddOnListInstanceEachOptions {
@@ -341,24 +330,12 @@ object libRestPreviewMarketplaceAvailableAddOnMod {
     }
   }
   
-  /**
-    * Options to pass to list
-    *
-    * @property limit -
-    *                         Upper limit for the number of records to return.
-    *                         list() guarantees never to return more than limit.
-    *                         Default is no limit
-    * @property pageSize -
-    *                         Number of records to fetch per request,
-    *                         when not set will use the default value of 50 records.
-    *                         If no page_size is defined but a limit is defined,
-    *                         list() will attempt to read the limit with the most
-    *                         efficient page size, i.e. min(limit, 1000)
-    */
   trait AvailableAddOnListInstanceOptions extends StObject {
     
+    /** Upper limit for the number of records to return. list() guarantees never to return more than limit. Default is no limit */
     var limit: js.UndefOr[Double] = js.undefined
     
+    /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
     var pageSize: js.UndefOr[Double] = js.undefined
   }
   object AvailableAddOnListInstanceOptions {
@@ -381,19 +358,15 @@ object libRestPreviewMarketplaceAvailableAddOnMod {
     }
   }
   
-  /**
-    * Options to pass to page
-    *
-    * @property pageNumber - Page Number, this value is simply for client state
-    * @property pageSize - Number of records to return, defaults to 50
-    * @property pageToken - PageToken provided by the API
-    */
   trait AvailableAddOnListInstancePageOptions extends StObject {
     
+    /** Page Number, this value is simply for client state */
     var pageNumber: js.UndefOr[Double] = js.undefined
     
+    /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
     var pageSize: js.UndefOr[Double] = js.undefined
     
+    /** PageToken provided by the API */
     var pageToken: js.UndefOr[String] = js.undefined
   }
   object AvailableAddOnListInstancePageOptions {
@@ -422,39 +395,43 @@ object libRestPreviewMarketplaceAvailableAddOnMod {
   
   trait AvailableAddOnPayload
     extends StObject
-       with AvailableAddOnResource
-       with TwilioResponsePayload
+       with TwilioResponsePayload {
+    
+    var available_add_ons: js.Array[AvailableAddOnResource]
+  }
   object AvailableAddOnPayload {
     
     inline def apply(
-      configuration_schema: js.Object,
-      description: String,
+      available_add_ons: js.Array[AvailableAddOnResource],
       first_page_uri: String,
-      friendly_name: String,
-      links: String,
       next_page_uri: String,
       page: Double,
       page_size: Double,
       previous_page_uri: String,
-      pricing_type: String,
-      sid: String,
-      uri: String,
-      url: String
+      uri: String
     ): AvailableAddOnPayload = {
-      val __obj = js.Dynamic.literal(configuration_schema = configuration_schema.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], first_page_uri = first_page_uri.asInstanceOf[js.Any], friendly_name = friendly_name.asInstanceOf[js.Any], links = links.asInstanceOf[js.Any], next_page_uri = next_page_uri.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any], page_size = page_size.asInstanceOf[js.Any], previous_page_uri = previous_page_uri.asInstanceOf[js.Any], pricing_type = pricing_type.asInstanceOf[js.Any], sid = sid.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(available_add_ons = available_add_ons.asInstanceOf[js.Any], first_page_uri = first_page_uri.asInstanceOf[js.Any], next_page_uri = next_page_uri.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any], page_size = page_size.asInstanceOf[js.Any], previous_page_uri = previous_page_uri.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
       __obj.asInstanceOf[AvailableAddOnPayload]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AvailableAddOnPayload] (val x: Self) extends AnyVal {
+      
+      inline def setAvailable_add_ons(value: js.Array[AvailableAddOnResource]): Self = StObject.set(x, "available_add_ons", value.asInstanceOf[js.Any])
+      
+      inline def setAvailable_add_onsVarargs(value: AvailableAddOnResource*): Self = StObject.set(x, "available_add_ons", js.Array(value*))
     }
   }
   
   trait AvailableAddOnResource extends StObject {
     
-    var configuration_schema: js.Object
+    var configuration_schema: Any
     
     var description: String
     
     var friendly_name: String
     
-    var links: String
+    var links: Record[String, String]
     
     var pricing_type: String
     
@@ -465,10 +442,10 @@ object libRestPreviewMarketplaceAvailableAddOnMod {
   object AvailableAddOnResource {
     
     inline def apply(
-      configuration_schema: js.Object,
+      configuration_schema: Any,
       description: String,
       friendly_name: String,
-      links: String,
+      links: Record[String, String],
       pricing_type: String,
       sid: String,
       url: String
@@ -480,13 +457,13 @@ object libRestPreviewMarketplaceAvailableAddOnMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: AvailableAddOnResource] (val x: Self) extends AnyVal {
       
-      inline def setConfiguration_schema(value: js.Object): Self = StObject.set(x, "configuration_schema", value.asInstanceOf[js.Any])
+      inline def setConfiguration_schema(value: Any): Self = StObject.set(x, "configuration_schema", value.asInstanceOf[js.Any])
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
       inline def setFriendly_name(value: String): Self = StObject.set(x, "friendly_name", value.asInstanceOf[js.Any])
       
-      inline def setLinks(value: String): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
+      inline def setLinks(value: Record[String, String]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
       
       inline def setPricing_type(value: String): Self = StObject.set(x, "pricing_type", value.asInstanceOf[js.Any])
       

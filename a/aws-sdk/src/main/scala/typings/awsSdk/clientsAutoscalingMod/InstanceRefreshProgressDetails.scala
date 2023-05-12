@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait InstanceRefreshProgressDetails extends StObject {
   
   /**
-    * Indicates the progress of an instance refresh on instances that are in the Auto Scaling group.
+    * Reports progress on replacing instances that are in the Auto Scaling group.
     */
   var LivePoolProgress: js.UndefOr[InstanceRefreshLivePoolProgress] = js.undefined
   
   /**
-    * Indicates the progress of an instance refresh on instances that are in the warm pool.
+    * Reports progress on replacing instances that are in the warm pool.
     */
   var WarmPoolProgress: js.UndefOr[InstanceRefreshWarmPoolProgress] = js.undefined
 }

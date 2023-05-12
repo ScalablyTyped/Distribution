@@ -47,7 +47,7 @@ trait TrialComponentSummary extends StObject {
   var Status: js.UndefOr[TrialComponentStatus] = js.undefined
   
   /**
-    * The ARN of the trial component.
+    * The Amazon Resource Name (ARN) of the trial component.
     */
   var TrialComponentArn: js.UndefOr[typings.awsSdk.clientsSagemakerMod.TrialComponentArn] = js.undefined
   

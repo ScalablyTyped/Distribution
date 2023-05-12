@@ -6,7 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Sshsigningkeyid extends StObject {
   
-  /** The unique identifier of the SSH signing key. */
   var ssh_signing_key_id: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['ssh-signing-key-id'] */ js.Any
 }
 object Sshsigningkeyid {

@@ -10,7 +10,7 @@ open class ArcSeries protected () extends AbstractSeries[ArcSeriesProps] {
   def this(props: ArcSeriesProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: ArcSeriesProps, context: Any) = this()
 }

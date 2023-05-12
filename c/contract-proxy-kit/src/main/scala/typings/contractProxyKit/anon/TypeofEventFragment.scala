@@ -1,8 +1,8 @@
 package typings.contractProxyKit.anon
 
-import org.scalablytyped.runtime.Instantiable2
-import typings.ethers.mod.ethers.utils.EventFragment
-import typings.ethersprojectAbi.libFragmentsMod.JsonFragment
+import org.scalablytyped.runtime.Instantiable4
+import typings.ethers.mod.ethers.EventFragment
+import typings.ethers.typesAbiFragmentsMod.ParamType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,16 +10,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait TypeofEventFragment
   extends StObject
-     with Instantiable2[/* constructorGuard */ Any, /* params */ Any, EventFragment] {
+     with Instantiable4[
+      /* guard */ Any, 
+      /* name */ String, 
+      /* inputs */ js.Array[ParamType], 
+      /* anonymous */ Boolean, 
+      EventFragment
+    ] {
   
-  def from(value: String): typings.ethersprojectAbi.libFragmentsMod.EventFragment = js.native
-  def from(value: typings.ethersprojectAbi.libFragmentsMod.EventFragment): typings.ethersprojectAbi.libFragmentsMod.EventFragment = js.native
-  def from(value: JsonFragment): typings.ethersprojectAbi.libFragmentsMod.EventFragment = js.native
+  def from(obj: Any): typings.ethers.typesAbiFragmentsMod.EventFragment = js.native
   
-  def fromObject(value: typings.ethersprojectAbi.libFragmentsMod.EventFragment): typings.ethersprojectAbi.libFragmentsMod.EventFragment = js.native
-  def fromObject(value: JsonFragment): typings.ethersprojectAbi.libFragmentsMod.EventFragment = js.native
+  def getTopicHash(name: String): String = js.native
+  def getTopicHash(name: String, params: js.Array[Any]): String = js.native
   
-  def fromString(value: String): typings.ethersprojectAbi.libFragmentsMod.EventFragment = js.native
-  
-  def isEventFragment(value: Any): /* is @ethersproject/abi.@ethersproject/abi/lib/fragments.EventFragment */ Boolean = js.native
+  def isFragment(value: Any): /* is ethers.ethers/types/abi/fragments.EventFragment */ Boolean = js.native
 }

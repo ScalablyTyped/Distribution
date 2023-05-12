@@ -1,14 +1,16 @@
 package typings.gestalt.mod
 
-import typings.gestalt.anon.EventKeyboardEvent
-import typings.gestalt.anon.SyntheticEvent
-import typings.gestalt.anon.`2`
+import typings.gestalt.anon.Value
 import typings.gestalt.gestaltStrings.lg
 import typings.gestalt.gestaltStrings.md
 import typings.gestalt.gestaltStrings.name
 import typings.gestalt.gestaltStrings.off
 import typings.gestalt.gestaltStrings.on
 import typings.gestalt.gestaltStrings.username
+import typings.react.mod.KeyboardEvent
+import typings.react.mod.SyntheticEvent
+import typings.std.Event
+import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,13 +29,13 @@ trait SearchFieldProps extends StObject {
   
   var label: js.UndefOr[String] = js.undefined
   
-  var onBlur: js.UndefOr[js.Function1[/* args */ `2`, Unit]] = js.undefined
+  var onBlur: js.UndefOr[AbstractEventHandler[SyntheticEvent[HTMLInputElement, Event], Value]] = js.undefined
   
-  def onChange(args: SyntheticEvent): Unit
+  var onChange: AbstractEventHandler[SyntheticEvent[HTMLInputElement, Event], Value]
   
-  var onFocus: js.UndefOr[js.Function1[/* args */ SyntheticEvent, Unit]] = js.undefined
+  var onFocus: js.UndefOr[AbstractEventHandler[SyntheticEvent[HTMLInputElement, Event], Value]] = js.undefined
   
-  var onKeyDown: js.UndefOr[js.Function1[/* args */ EventKeyboardEvent, Unit]] = js.undefined
+  var onKeyDown: js.UndefOr[AbstractEventHandler[KeyboardEvent[HTMLInputElement], Value]] = js.undefined
   
   var placeholder: js.UndefOr[String] = js.undefined
   
@@ -43,7 +45,11 @@ trait SearchFieldProps extends StObject {
 }
 object SearchFieldProps {
   
-  inline def apply(accessibilityLabel: String, id: String, onChange: SyntheticEvent => Unit): SearchFieldProps = {
+  inline def apply(
+    accessibilityLabel: String,
+    id: String,
+    onChange: /* arg */ Value & (typings.gestalt.anon.Event[SyntheticEvent[HTMLInputElement, Event]]) => Unit
+  ): SearchFieldProps = {
     val __obj = js.Dynamic.literal(accessibilityLabel = accessibilityLabel.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], onChange = js.Any.fromFunction1(onChange))
     __obj.asInstanceOf[SearchFieldProps]
   }
@@ -71,17 +77,23 @@ object SearchFieldProps {
     
     inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    inline def setOnBlur(value: /* args */ `2` => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+    inline def setOnBlur(
+      value: /* arg */ Value & (typings.gestalt.anon.Event[SyntheticEvent[HTMLInputElement, Event]]) => Unit
+    ): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
     
     inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
     
-    inline def setOnChange(value: SyntheticEvent => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+    inline def setOnChange(
+      value: /* arg */ Value & (typings.gestalt.anon.Event[SyntheticEvent[HTMLInputElement, Event]]) => Unit
+    ): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     
-    inline def setOnFocus(value: /* args */ SyntheticEvent => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+    inline def setOnFocus(
+      value: /* arg */ Value & (typings.gestalt.anon.Event[SyntheticEvent[HTMLInputElement, Event]]) => Unit
+    ): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
     
     inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
     
-    inline def setOnKeyDown(value: /* args */ EventKeyboardEvent => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
+    inline def setOnKeyDown(value: /* arg */ Value & typings.gestalt.anon.Event[KeyboardEvent[HTMLInputElement]] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
     
     inline def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
     

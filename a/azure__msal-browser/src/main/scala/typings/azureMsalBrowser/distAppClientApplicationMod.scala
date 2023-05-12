@@ -85,18 +85,35 @@ object distAppClientApplicationMod {
       */
     /* private */ var acquireTokenByCodeAsync: Any = js.native
     
+    /* private */ var acquireTokenByCodeAsyncMeasurement: Any = js.native
+    
     /**
-      * Use this function to obtain a token before every call to the API / resource provider
-      *
-      * MSAL return's a cached token when available
-      * Or it send's a request to the STS to obtain a new token using a refresh token.
-      *
-      * @param {@link SilentRequest}
-      *
-      * To renew idToken, please pass clientId as the only scope in the Authentication Parameters
-      * @returns A promise that is fulfilled when this function has completed, or rejected if an error was raised.
+      * Attempt to acquire an access token via a refresh token
+      * @param commonRequest CommonSilentFlowRequest
+      * @param silentRequest SilentRequest
+      * @returns A promise that, when resolved, returns the access token
       */
-    /* protected */ def acquireTokenByRefreshToken(request: CommonSilentFlowRequest): js.Promise[AuthenticationResult] = js.native
+    /* protected */ def acquireTokenByRefreshToken(commonRequest: CommonSilentFlowRequest, silentRequest: SilentRequest): js.Promise[AuthenticationResult] = js.native
+    
+    /**
+      * Attempt to acquire an access token via an iframe
+      * @param request CommonSilentFlowRequest
+      * @returns A promise that, when resolved, returns the access token
+      */
+    /* protected */ def acquireTokenBySilentIframe(request: CommonSilentFlowRequest): js.Promise[AuthenticationResult] = js.native
+    
+    /**
+      * Attempt to acquire an access token from the cache
+      * @param silentCacheClient SilentCacheClient
+      * @param commonRequest CommonSilentFlowRequest
+      * @param silentRequest SilentRequest
+      * @returns A promise that, when resolved, returns the access token
+      */
+    /* protected */ def acquireTokenFromCache(
+      silentCacheClient: SilentCacheClient,
+      commonRequest: CommonSilentFlowRequest,
+      silentRequest: SilentRequest
+    ): js.Promise[AuthenticationResult] = js.native
     
     /**
       * Acquire a token from native device (e.g. WAM)
@@ -234,10 +251,10 @@ object distAppClientApplicationMod {
       * (the account object is created at the time of successful login)
       * or null when no matching account is found.
       * This API is provided for convenience but getAccountById should be used for best reliability
-      * @param userName
+      * @param username
       * @returns The account object stored in MSAL
       */
-    def getAccountByUsername(userName: String): AccountInfo | Null = js.native
+    def getAccountByUsername(username: String): AccountInfo | Null = js.native
     
     /**
       * Gets the currently active account
@@ -419,6 +436,10 @@ object distAppClientApplicationMod {
       */
     def ssoSilent(request: SsoSilentRequest): js.Promise[AuthenticationResult] = js.native
     
+    /* private */ var ssoSilentMeasurement: Any = js.native
+    
     /* private */ var tokenCache: Any = js.native
+    
+    /* private */ var trackPageVisibilityWithMeasurement: Any = js.native
   }
 }

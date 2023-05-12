@@ -32,7 +32,7 @@ object domMod {
     def this(props: Any) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: Any, context: Any) = this()
   }
@@ -44,7 +44,7 @@ object domMod {
     def this(props: Any) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: Any, context: Any) = this()
   }
@@ -56,7 +56,7 @@ object domMod {
     def this(props: Any) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: Any, context: Any) = this()
   }
@@ -68,7 +68,7 @@ object domMod {
     def this(props: Any) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: Any, context: Any) = this()
   }
@@ -81,7 +81,7 @@ object domMod {
     def this(props: DynamicWidgetsProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: DynamicWidgetsProps, context: Any) = this()
   }
@@ -93,7 +93,7 @@ object domMod {
     def this(props: Any) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: Any, context: Any) = this()
   }
@@ -105,7 +105,7 @@ object domMod {
     def this(props: Any) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: Any, context: Any) = this()
   }
@@ -117,7 +117,7 @@ object domMod {
     def this(props: HitsProps[T]) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: HitsProps[T], context: Any) = this()
   }
@@ -130,7 +130,7 @@ object domMod {
     def this(props: HitsPerPageProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: HitsPerPageProps, context: Any) = this()
   }
@@ -143,7 +143,7 @@ object domMod {
     def this(props: ReadonlyIndexProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: IndexProps, context: Any) = this()
   }
@@ -155,7 +155,7 @@ object domMod {
     def this(props: Any) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: Any, context: Any) = this()
   }
@@ -168,7 +168,7 @@ object domMod {
     def this(props: ReadonlyInstantSearchProp) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: InstantSearchProps, context: Any) = this()
   }
@@ -180,7 +180,7 @@ object domMod {
     def this(props: Any) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: Any, context: Any) = this()
   }
@@ -193,7 +193,7 @@ object domMod {
     def this(props: MenuSelectProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: MenuSelectProps, context: Any) = this()
   }
@@ -205,7 +205,7 @@ object domMod {
     def this(props: Any) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: Any, context: Any) = this()
   }
@@ -217,7 +217,7 @@ object domMod {
     def this(props: Any) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: Any, context: Any) = this()
   }
@@ -229,7 +229,7 @@ object domMod {
     def this(props: Any) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: Any, context: Any) = this()
   }
@@ -241,7 +241,7 @@ object domMod {
     def this(props: Any) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: Any, context: Any) = this()
   }
@@ -253,7 +253,7 @@ object domMod {
     def this(props: Any) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: Any, context: Any) = this()
   }
@@ -265,7 +265,7 @@ object domMod {
     def this(props: Any) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: Any, context: Any) = this()
   }
@@ -277,7 +277,7 @@ object domMod {
     def this(props: Any) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: Any, context: Any) = this()
   }
@@ -289,7 +289,7 @@ object domMod {
     def this(props: Any) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: Any, context: Any) = this()
   }
@@ -302,7 +302,7 @@ object domMod {
     def this(props: ButtonTextComponent) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: ButtonTextComponent, context: Any) = this()
   }
@@ -314,7 +314,7 @@ object domMod {
     def this(props: Any) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: Any, context: Any) = this()
   }
@@ -327,7 +327,7 @@ object domMod {
     def this(props: SearchBoxProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: SearchBoxProps, context: Any) = this()
   }
@@ -339,7 +339,7 @@ object domMod {
     def this(props: Any) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: Any, context: Any) = this()
   }
@@ -352,7 +352,7 @@ object domMod {
     def this(props: SortByProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: SortByProps, context: Any) = this()
   }
@@ -365,7 +365,7 @@ object domMod {
     def this(props: Translations) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: Translations, context: Any) = this()
   }
@@ -377,7 +377,7 @@ object domMod {
     def this(props: Any) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: Any, context: Any) = this()
   }

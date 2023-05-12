@@ -1,7 +1,7 @@
 
 # Scala.js typings for peculiar__webcrypto
 
-Typings are for version 1.4.0
+Typings are for version 1.4.3
 
 ## Library description:
 A WebCrypto Polyfill for NodeJS

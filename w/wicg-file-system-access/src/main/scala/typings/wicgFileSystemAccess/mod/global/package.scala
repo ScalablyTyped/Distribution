@@ -1,7 +1,5 @@
 package typings.wicgFileSystemAccess.mod.global
 
-import typings.std.Blob
-import typings.std.BufferSource
 import typings.wicgFileSystemAccess.anon.ChooseFileSystemEntriesFi
 import typings.wicgFileSystemAccess.anon.ChooseFileSystemEntriesFiAccepts
 import typings.wicgFileSystemAccess.anon.ChooseFileSystemEntriesFiExcludeAcceptAllOption
@@ -39,5 +37,3 @@ inline def showOpenFilePicker(options: OpenFilePickerOptions): js.Promise[js.Arr
 
 inline def showSaveFilePicker(): js.Promise[FileSystemFileHandle] = js.Dynamic.global.applyDynamic("showSaveFilePicker")().asInstanceOf[js.Promise[FileSystemFileHandle]]
 inline def showSaveFilePicker(options: SaveFilePickerOptions): js.Promise[FileSystemFileHandle] = js.Dynamic.global.applyDynamic("showSaveFilePicker")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[FileSystemFileHandle]]
-
-type FileSystemWriteChunkType = BufferSource | Blob | String | WriteParams

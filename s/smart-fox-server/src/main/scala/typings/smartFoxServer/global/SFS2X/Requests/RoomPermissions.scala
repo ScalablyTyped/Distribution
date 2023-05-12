@@ -13,19 +13,19 @@ open class RoomPermissions ()
   extends StObject
      with typings.smartFoxServer.SFS2X.Requests.RoomPermissions {
   
-  /** @type {boolean} Sets whether changing the Room name after its creation is allowed or not. */
+  /** Sets whether changing the Room name after its creation is allowed or not. */
   /* CompleteClass */
   var allowNameChange: Boolean = js.native
   
-  /** @type {boolean} Sets whether changing (or removing) the Room password after its creation is allowed or not. */
+  /** Sets whether changing (or removing) the Room password after its creation is allowed or not. */
   /* CompleteClass */
   var allowPasswordStateChange: Boolean = js.native
   
-  /** @type {boolean} Sets whether users inside the Room are allowed to send public messages or not. */
+  /** Sets whether users inside the Room are allowed to send public messages or not. */
   /* CompleteClass */
   var allowPublicMessages: Boolean = js.native
   
-  /** @type {boolean} Sets whether the Room capacity can be changed after its creation or not. */
+  /** Sets whether the Room capacity can be changed after its creation or not. */
   /* CompleteClass */
   var aloowResizing: Boolean = js.native
 }

@@ -35,6 +35,7 @@ type AuthTokenUpdateStrategyType = _AuthTokenUpdateStrategyType | java.lang.Stri
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.password__
   - typings.awsSdk.awsSdkStrings.`no-password`
+  - typings.awsSdk.awsSdkStrings.iam_
   - java.lang.String
 */
 type AuthenticationType = _AuthenticationType | java.lang.String
@@ -81,13 +82,21 @@ type CacheSecurityGroups = js.Array[CacheSecurityGroup]
 type CacheSubnetGroups = js.Array[CacheSubnetGroup]
 
 /* Rewritten from type alias, can be one of: 
-  - typings.awsSdk.awsSdkStrings.immediate_
+  - typings.awsSdk.awsSdkStrings.immediate__
   - typings.awsSdk.awsSdkStrings.`requires-reboot`
   - java.lang.String
 */
 type ChangeType = _ChangeType | java.lang.String
 
 type ClusterIdList = js.Array[String]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.enabled__
+  - typings.awsSdk.awsSdkStrings.disabled__
+  - typings.awsSdk.awsSdkStrings.compatible
+  - java.lang.String
+*/
+type ClusterMode = _ClusterMode | java.lang.String
 
 type CustomerNodeEndpointList = js.Array[CustomerNodeEndpoint]
 
@@ -128,6 +137,14 @@ type GlobalNodeGroupList = js.Array[GlobalNodeGroup]
 type GlobalReplicationGroupList = js.Array[GlobalReplicationGroup]
 
 type GlobalReplicationGroupMemberList = js.Array[GlobalReplicationGroupMember]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.password__
+  - typings.awsSdk.awsSdkStrings.`no-password-required`
+  - typings.awsSdk.awsSdkStrings.iam_
+  - java.lang.String
+*/
+type InputAuthenticationType = _InputAuthenticationType | java.lang.String
 
 type Integer = scala.Double
 
@@ -333,6 +350,13 @@ type SubnetList = js.Array[Subnet]
 type TStamp = js.Date
 
 type TagList = js.Array[Tag]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.preferred_
+  - typings.awsSdk.awsSdkStrings.required__
+  - java.lang.String
+*/
+type TransitEncryptionMode = _TransitEncryptionMode | java.lang.String
 
 type UGReplicationGroupIdList = js.Array[String]
 

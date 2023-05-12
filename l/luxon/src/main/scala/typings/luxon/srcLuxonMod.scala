@@ -298,6 +298,7 @@ object srcLuxonMod {
       * @param minute - The minute of the hour, meaning a number between 0 and 59
       * @param second - The second of the minute, meaning a number between 0 and 59
       * @param millisecond - The millisecond of the second, meaning a number between 0 and 999
+      * @param opts
       *
       * @example
       * DateTime.local()                                  //~> now
@@ -679,7 +680,7 @@ object srcLuxonMod {
     /**
       * Return an array of eras, such as ['BC', 'AD']. The locale can be specified, but the calendar system is always Gregorian.
       *
-      * @param length - the length of the era representation, such as "short" or "long". Defaults to 'short'.
+      * @param length - the length of the era representation. Defaults to 'short'.
       * @param opts - options
       * @param opts.locale - the locale code
       *
@@ -691,15 +692,15 @@ object srcLuxonMod {
       * Info.eras('long', { locale: 'fr' }) //=> [ 'avant Jésus-Christ', 'après Jésus-Christ' ]
       */
     inline def eras(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("eras")().asInstanceOf[js.Array[String]]
-    inline def eras(length: Unit, options: InfoOptions): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("eras")(length.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    inline def eras(length: Unit, opts: InfoOptions): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("eras")(length.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
     inline def eras(length: StringUnitLength): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("eras")(length.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
-    inline def eras(length: StringUnitLength, options: InfoOptions): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("eras")(length.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    inline def eras(length: StringUnitLength, opts: InfoOptions): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("eras")(length.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
     
     /**
       * Return the set of available features in this environment.
-      * Some features of Luxon are not available in all environments. For example, on older browsers, timezone support is not available. Use this function to figure out if that's the case.
-      * Keys:
-      * * `relative`: whether this environment supports relative time formatting
+      * Some features of Luxon are not available in all environments.
+      * For example, on older browsers, timezone support is not available.
+      * Use this function to figure out if that is the case.
       *
       * @example
       * Info.features() //=> { intl: true, intlTokens: false, zones: true, relative: false }
@@ -734,17 +735,17 @@ object srcLuxonMod {
       * Info.meridiems({ locale: 'my' }) //=> [ 'နံနက်', 'ညနေ' ]
       */
     inline def meridiems(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("meridiems")().asInstanceOf[js.Array[String]]
-    inline def meridiems(options: InfoOptions): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("meridiems")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    inline def meridiems(opts: InfoOptions): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("meridiems")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
     
     /**
       * Return an array of standalone month names.
       * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DateTimeFormat
       *
-      * @param length - the length of the month representation, such as "numeric", "2-digit", "narrow", "short", "long". Defaults to 'long'.
+      * @param length - the length of the month representation. Defaults to 'long'.
       * @param opts - options
       * @param opts.locale - the locale code
-      * @param opts.numberingSystem - the numbering system. Defaults to null.
-      * @param opts.locObj - an existing locale object to use. Defaults to null.
+      * @param opts.numberingSystem - the numbering system.
+      * @param opts.locObj - an existing locale object to use.
       * @param opts.outputCalendar - the calendar. Defaults to 'gregory'.
       *
       * @example
@@ -767,21 +768,21 @@ object srcLuxonMod {
     
     /**
       * Return an array of format month names.
-      * Format months differ from standalone months in that they're meant to appear next to the day of the month. In some languages, that
-      * changes the string.
+      * Format months differ from standalone months in that they are meant to appear next to the day of the month.
+      * In some languages, that changes the string.
       * See {@link Info#months}
       *
-      * @param length - the length of the month representation, such as "numeric", "2-digit", "narrow", "short", "long". Defaults to 'long'.
+      * @param length - the length of the month representation. Defaults to 'long'.
       * @param opts - options
       * @param opts.locale - the locale code
-      * @param opts.numberingSystem - the numbering system. Defaults to null.
-      * @param opts.locObj - an existing locale object to use. Defaults to null.
+      * @param opts.numberingSystem - the numbering system.
+      * @param opts.locObj - an existing locale object to use.
       * @param opts.outputCalendar - the calendar. Defaults to 'gregory'.
       */
     inline def monthsFormat(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("monthsFormat")().asInstanceOf[js.Array[String]]
-    inline def monthsFormat(length: Unit, options: InfoCalendarOptions): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("monthsFormat")(length.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    inline def monthsFormat(length: Unit, opts: InfoCalendarOptions): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("monthsFormat")(length.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
     inline def monthsFormat(length: UnitLength): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("monthsFormat")(length.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
-    inline def monthsFormat(length: UnitLength, options: InfoCalendarOptions): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("monthsFormat")(length.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    inline def monthsFormat(length: UnitLength, opts: InfoCalendarOptions): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("monthsFormat")(length.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
     
     /**
       * Converts the input into a {@link Zone} instance.
@@ -806,11 +807,11 @@ object srcLuxonMod {
       * Return an array of standalone week names.
       * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DateTimeFormat
       *
-      * @param length - the length of the weekday representation, such as "narrow", "short", "long". Defaults to 'long'.
+      * @param length - the length of the weekday representation. Defaults to 'long'.
       * @param opts - options
       * @param opts.locale - the locale code
-      * @param opts.numberingSystem - the numbering system. Defaults to null.
-      * @param opts.locObj - an existing locale object to use. Defaults to null.
+      * @param opts.numberingSystem - the numbering system.
+      * @param opts.locObj - an existing locale object to use.
       *
       * @example
       * Info.weekdays()[0] //=> 'Monday'
@@ -822,26 +823,26 @@ object srcLuxonMod {
       * Info.weekdays('short', { locale: 'ar' })[0] //=> 'الاثنين'
       */
     inline def weekdays(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("weekdays")().asInstanceOf[js.Array[String]]
-    inline def weekdays(length: Unit, options: InfoUnitOptions): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("weekdays")(length.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    inline def weekdays(length: Unit, opts: InfoUnitOptions): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("weekdays")(length.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
     inline def weekdays(length: StringUnitLength): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("weekdays")(length.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
-    inline def weekdays(length: StringUnitLength, options: InfoUnitOptions): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("weekdays")(length.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    inline def weekdays(length: StringUnitLength, opts: InfoUnitOptions): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("weekdays")(length.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
     
     /**
       * Return an array of format week names.
-      * Format weekdays differ from standalone weekdays in that they're meant to appear next to more date information. In some languages, that
-      * changes the string.
+      * Format weekdays differ from standalone weekdays in that they are meant to appear next to more date information.
+      * In some languages, that changes the string.
       * See {@link Info#weekdays}
       *
-      * @param length - the length of the month representation, such as "narrow", "short", "long". Defaults to 'long'.
+      * @param length - the length of the month representation. Defaults to 'long'.
       * @param opts - options
-      * @param opts.locale - the locale code. Defaults to null.
-      * @param opts.numberingSystem - the numbering system. Defaults to null.
-      * @param opts.locObj - an existing locale object to use. Defaults to null.
+      * @param opts.locale - the locale code.
+      * @param opts.numberingSystem - the numbering system.
+      * @param opts.locObj - an existing locale object to use.
       */
     inline def weekdaysFormat(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("weekdaysFormat")().asInstanceOf[js.Array[String]]
-    inline def weekdaysFormat(length: Unit, options: InfoUnitOptions): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("weekdaysFormat")(length.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    inline def weekdaysFormat(length: Unit, opts: InfoUnitOptions): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("weekdaysFormat")(length.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
     inline def weekdaysFormat(length: StringUnitLength): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("weekdaysFormat")(length.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
-    inline def weekdaysFormat(length: StringUnitLength, options: InfoUnitOptions): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("weekdaysFormat")(length.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    inline def weekdaysFormat(length: StringUnitLength, opts: InfoUnitOptions): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("weekdaysFormat")(length.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   }
   
   @JSImport("luxon/src/luxon", "Interval")
@@ -896,7 +897,7 @@ object srcLuxonMod {
       * Create an invalid Interval.
       *
       * @param reason - simple string of why this Interval is invalid. Should not contain parameters or anything else data-dependent
-      * @param explanation - longer explanation, may include parameters and other useful debugging information. Defaults to null.
+      * @param explanation - longer explanation, may include parameters and other useful debugging information.
       */
     inline def invalid(reason: String): typings.luxon.srcIntervalMod.Interval = ^.asInstanceOf[js.Dynamic].applyDynamic("invalid")(reason.asInstanceOf[js.Any]).asInstanceOf[typings.luxon.srcIntervalMod.Interval]
     inline def invalid(reason: String, explanation: String): typings.luxon.srcIntervalMod.Interval = (^.asInstanceOf[js.Dynamic].applyDynamic("invalid")(reason.asInstanceOf[js.Any], explanation.asInstanceOf[js.Any])).asInstanceOf[typings.luxon.srcIntervalMod.Interval]
@@ -909,17 +910,13 @@ object srcLuxonMod {
     inline def isInterval(o: Any): /* is luxon.luxon/src/interval.Interval */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInterval")(o.asInstanceOf[js.Any]).asInstanceOf[/* is luxon.luxon/src/interval.Interval */ Boolean]
     
     /**
-      * Merge an array of Intervals into a equivalent minimal set of Intervals.
+      * Merge an array of Intervals into an equivalent minimal set of Intervals.
       * Combines overlapping and adjacent Intervals.
-      *
-      * @param intervals
       */
     inline def merge(intervals: js.Array[typings.luxon.srcIntervalMod.Interval]): js.Array[typings.luxon.srcIntervalMod.Interval] = ^.asInstanceOf[js.Dynamic].applyDynamic("merge")(intervals.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.luxon.srcIntervalMod.Interval]]
     
     /**
       * Return an array of Intervals representing the spans of time that only appear in one of the specified Intervals.
-      *
-      *  @param intervals
       */
     inline def xor(intervals: js.Array[typings.luxon.srcIntervalMod.Interval]): js.Array[typings.luxon.srcIntervalMod.Interval] = ^.asInstanceOf[js.Dynamic].applyDynamic("xor")(intervals.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.luxon.srcIntervalMod.Interval]]
   }
@@ -941,19 +938,50 @@ object srcLuxonMod {
     val ^ : js.Any = js.native
     
     /**
-      * The default time zone object currently used to create DateTimes. Does not affect existing instances.
-      * The default value is the system's time zone (the one set on the machine that runs this code).
-      * Getting this property always returns a Zone object.
+      * The default locale to create DateTimes with. Does not affect existing instances.
       */
-    @JSImport("luxon/src/luxon", "Settings.defaultZone")
+    @JSImport("luxon/src/luxon", "Settings.defaultLocale")
     @js.native
-    def defaultZone: typings.luxon.srcZoneMod.Zone | String = js.native
-    inline def defaultZone_=(x: typings.luxon.srcZoneMod.Zone | String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultZone")(x.asInstanceOf[js.Any])
+    def defaultLocale: String = js.native
+    inline def defaultLocale_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultLocale")(x.asInstanceOf[js.Any])
+    
+    /**
+      * The default numbering system to create DateTimes with. Does not affect existing instances.
+      */
+    @JSImport("luxon/src/luxon", "Settings.defaultNumberingSystem")
+    @js.native
+    def defaultNumberingSystem: String = js.native
+    inline def defaultNumberingSystem_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultNumberingSystem")(x.asInstanceOf[js.Any])
+    
+    /**
+      * The default output calendar to create DateTimes with. Does not affect existing instances.
+      */
+    @JSImport("luxon/src/luxon", "Settings.defaultOutputCalendar")
+    @js.native
+    def defaultOutputCalendar: String = js.native
+    inline def defaultOutputCalendar_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultOutputCalendar")(x.asInstanceOf[js.Any])
     
     /**
       * Reset Luxon's global caches. Should only be necessary in testing scenarios.
       */
     inline def resetCaches(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetCaches")().asInstanceOf[Unit]
+    
+    /**
+      * Whether Luxon will throw when it encounters invalid DateTimes, Durations, or Intervals
+      *
+      * If setting this to true, be sure to opt-out of Luxon's invalid return types.
+      * @example
+      * Settings.throwOnInvalid = true;
+      * declare module 'luxon' {
+      *   interface TSSettings {
+      *     throwOnInvalid: true;
+      *   }
+      * }
+      */
+    @JSImport("luxon/src/luxon", "Settings.throwOnInvalid")
+    @js.native
+    def throwOnInvalid: Boolean = js.native
+    inline def throwOnInvalid_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("throwOnInvalid")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("luxon/src/luxon", "SystemZone")

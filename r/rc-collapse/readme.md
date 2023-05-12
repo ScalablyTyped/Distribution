@@ -1,7 +1,7 @@
 
 # Scala.js typings for rc-collapse
 
-Typings are for version 3.4.2
+Typings are for version 3.6.0
 
 ## Library description:
 rc-collapse ui component for react

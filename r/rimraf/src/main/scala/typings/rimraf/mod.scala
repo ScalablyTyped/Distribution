@@ -1,154 +1,217 @@
 package typings.rimraf
 
-import typings.glob.mod.IOptions
-import typings.node.fsMod.Mode
-import typings.node.fsMod.PathLike
-import typings.node.fsMod.StatSyncFn
-import typings.rimraf.anon.FnCall
-import typings.rimraf.anon.FnCallPathOptions
-import typings.rimraf.anon.Typeofchmod
-import typings.rimraf.anon.Typeoflstat
-import typings.rimraf.anon.Typeofreaddir
-import typings.rimraf.anon.Typeofrmdir
-import typings.rimraf.anon.Typeofstat
-import typings.rimraf.anon.Typeofunlink
-import typings.rimraf.rimrafBooleans.`false`
+import typings.glob.distMjsGlobMod.GlobOptions
+import typings.node.fsMod.Dirent
+import typings.node.fsMod.Stats
+import typings.rimraf.anon.Manual
+import typings.rimraf.anon.Sync
+import typings.std.AbortSignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  inline def apply(path: String, callback: js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def apply(
-    path: String,
-    options: Options,
-    callback: js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit]
-  ): Unit = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  
   @JSImport("rimraf", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  /**
-    * It can remove stuff synchronously, too.
-    * But that's not so good. Use the async API.
-    * It's better.
-    */
-  inline def sync(path: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def sync(path: String, options: Options): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def assertRimrafOptions(o: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("assertRimrafOptions")(o.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  /**
-    * see {@link https://github.com/isaacs/rimraf/blob/79b933fb362b2c51bedfa448be848e1d7ed32d7e/README.md#options}
-    */
-  trait Options extends StObject {
+  inline def isRimrafOptions(o: Any): /* is rimraf.rimraf.RimrafOptions */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRimrafOptions")(o.asInstanceOf[js.Any]).asInstanceOf[/* is rimraf.rimraf.RimrafOptions */ Boolean]
+  
+  @JSImport("rimraf", "manual")
+  @js.native
+  val manual: (js.Function2[
+    /* path */ String | js.Array[String], 
+    /* opt */ js.UndefOr[RimrafAsyncOptions], 
+    js.Promise[Boolean]
+  ]) & Sync = js.native
+  
+  inline def manualSync(path: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("manualSync")(path.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def manualSync(path: String, opt: RimrafSyncOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("manualSync")(path.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def manualSync(path: js.Array[String]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("manualSync")(path.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def manualSync(path: js.Array[String], opt: RimrafSyncOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("manualSync")(path.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @JSImport("rimraf", "moveRemove")
+  @js.native
+  val moveRemove: (js.Function2[
+    /* path */ String | js.Array[String], 
+    /* opt */ js.UndefOr[RimrafAsyncOptions], 
+    js.Promise[Boolean]
+  ]) & Sync = js.native
+  
+  inline def moveRemoveSync(path: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("moveRemoveSync")(path.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def moveRemoveSync(path: String, opt: RimrafSyncOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("moveRemoveSync")(path.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def moveRemoveSync(path: js.Array[String]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("moveRemoveSync")(path.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def moveRemoveSync(path: js.Array[String], opt: RimrafSyncOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("moveRemoveSync")(path.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @JSImport("rimraf", "native")
+  @js.native
+  val native: (js.Function2[
+    /* path */ String | js.Array[String], 
+    /* opt */ js.UndefOr[RimrafAsyncOptions], 
+    js.Promise[Boolean]
+  ]) & Sync = js.native
+  
+  inline def nativeSync(path: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("nativeSync")(path.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def nativeSync(path: String, opt: RimrafSyncOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("nativeSync")(path.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def nativeSync(path: js.Array[String]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("nativeSync")(path.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def nativeSync(path: js.Array[String], opt: RimrafSyncOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("nativeSync")(path.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @JSImport("rimraf", "posix")
+  @js.native
+  val posix: (js.Function2[
+    /* path */ String | js.Array[String], 
+    /* opt */ js.UndefOr[RimrafAsyncOptions], 
+    js.Promise[Boolean]
+  ]) & Sync = js.native
+  
+  inline def posixSync(path: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("posixSync")(path.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def posixSync(path: String, opt: RimrafSyncOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("posixSync")(path.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def posixSync(path: js.Array[String]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("posixSync")(path.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def posixSync(path: js.Array[String], opt: RimrafSyncOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("posixSync")(path.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @JSImport("rimraf", "rimraf")
+  @js.native
+  val rimraf: (js.Function2[
+    /* path */ String | js.Array[String], 
+    /* opt */ js.UndefOr[RimrafAsyncOptions], 
+    js.Promise[Boolean]
+  ]) & Manual = js.native
+  
+  inline def rimrafSync(path: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("rimrafSync")(path.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def rimrafSync(path: String, opt: RimrafSyncOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("rimrafSync")(path.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def rimrafSync(path: js.Array[String]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("rimrafSync")(path.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def rimrafSync(path: js.Array[String], opt: RimrafSyncOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("rimrafSync")(path.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  inline def sync(path: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(path.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def sync(path: String, opt: RimrafSyncOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(path.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def sync(path: js.Array[String]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(path.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def sync(path: js.Array[String], opt: RimrafSyncOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(path.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @JSImport("rimraf", "windows")
+  @js.native
+  val windows: (js.Function2[
+    /* path */ String | js.Array[String], 
+    /* opt */ js.UndefOr[RimrafAsyncOptions], 
+    js.Promise[Boolean]
+  ]) & Sync = js.native
+  
+  inline def windowsSync(path: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("windowsSync")(path.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def windowsSync(path: String, opt: RimrafSyncOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("windowsSync")(path.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def windowsSync(path: js.Array[String]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("windowsSync")(path.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def windowsSync(path: js.Array[String], opt: RimrafSyncOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("windowsSync")(path.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  trait RimrafAsyncOptions
+    extends StObject
+       with RimrafOptions {
     
-    var chmod: js.UndefOr[Typeofchmod] = js.undefined
+    var backoff: js.UndefOr[Double] = js.undefined
     
-    var chmodSync: js.UndefOr[js.Function2[/* path */ PathLike, /* mode */ Mode, Unit]] = js.undefined
+    var filter: js.UndefOr[js.Function2[/* path */ String, Dirent | Stats, Boolean | js.Promise[Boolean]]] = js.undefined
     
-    /** @default false */
-    var disableGlob: js.UndefOr[Boolean] = js.undefined
+    var glob: js.UndefOr[Boolean | GlobOptions] = js.undefined
     
-    var emfileWait: js.UndefOr[Double] = js.undefined
+    var maxBackoff: js.UndefOr[Double] = js.undefined
     
-    var glob: js.UndefOr[IOptions | `false`] = js.undefined
+    var maxRetries: js.UndefOr[Double] = js.undefined
     
-    var lstat: js.UndefOr[Typeoflstat] = js.undefined
+    var preserveRoot: js.UndefOr[Boolean] = js.undefined
     
-    var lstatSync: js.UndefOr[StatSyncFn] = js.undefined
+    var retryDelay: js.UndefOr[Double] = js.undefined
     
-    var maxBusyTries: js.UndefOr[Double] = js.undefined
+    var signal: js.UndefOr[AbortSignal] = js.undefined
     
-    var readdir: js.UndefOr[Typeofreaddir] = js.undefined
-    
-    var readdirSync: js.UndefOr[FnCallPathOptions] = js.undefined
-    
-    var rmdir: js.UndefOr[Typeofrmdir] = js.undefined
-    
-    var rmdirSync: js.UndefOr[FnCall] = js.undefined
-    
-    var stat: js.UndefOr[Typeofstat] = js.undefined
-    
-    var statSync: js.UndefOr[StatSyncFn] = js.undefined
-    
-    var unlink: js.UndefOr[Typeofunlink] = js.undefined
-    
-    var unlinkSync: js.UndefOr[js.Function1[/* path */ PathLike, Unit]] = js.undefined
+    var tmp: js.UndefOr[String] = js.undefined
   }
-  object Options {
+  object RimrafAsyncOptions {
     
-    inline def apply(): Options = {
+    inline def apply(): RimrafAsyncOptions = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Options]
+      __obj.asInstanceOf[RimrafAsyncOptions]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: RimrafAsyncOptions] (val x: Self) extends AnyVal {
       
-      inline def setChmod(value: Typeofchmod): Self = StObject.set(x, "chmod", value.asInstanceOf[js.Any])
+      inline def setBackoff(value: Double): Self = StObject.set(x, "backoff", value.asInstanceOf[js.Any])
       
-      inline def setChmodSync(value: (/* path */ PathLike, /* mode */ Mode) => Unit): Self = StObject.set(x, "chmodSync", js.Any.fromFunction2(value))
+      inline def setBackoffUndefined: Self = StObject.set(x, "backoff", js.undefined)
       
-      inline def setChmodSyncUndefined: Self = StObject.set(x, "chmodSync", js.undefined)
+      inline def setFilter(value: (/* path */ String, Dirent | Stats) => Boolean | js.Promise[Boolean]): Self = StObject.set(x, "filter", js.Any.fromFunction2(value))
       
-      inline def setChmodUndefined: Self = StObject.set(x, "chmod", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      inline def setDisableGlob(value: Boolean): Self = StObject.set(x, "disableGlob", value.asInstanceOf[js.Any])
-      
-      inline def setDisableGlobUndefined: Self = StObject.set(x, "disableGlob", js.undefined)
-      
-      inline def setEmfileWait(value: Double): Self = StObject.set(x, "emfileWait", value.asInstanceOf[js.Any])
-      
-      inline def setEmfileWaitUndefined: Self = StObject.set(x, "emfileWait", js.undefined)
-      
-      inline def setGlob(value: IOptions | `false`): Self = StObject.set(x, "glob", value.asInstanceOf[js.Any])
+      inline def setGlob(value: Boolean | GlobOptions): Self = StObject.set(x, "glob", value.asInstanceOf[js.Any])
       
       inline def setGlobUndefined: Self = StObject.set(x, "glob", js.undefined)
       
-      inline def setLstat(value: Typeoflstat): Self = StObject.set(x, "lstat", value.asInstanceOf[js.Any])
+      inline def setMaxBackoff(value: Double): Self = StObject.set(x, "maxBackoff", value.asInstanceOf[js.Any])
       
-      inline def setLstatSync(value: StatSyncFn): Self = StObject.set(x, "lstatSync", value.asInstanceOf[js.Any])
+      inline def setMaxBackoffUndefined: Self = StObject.set(x, "maxBackoff", js.undefined)
       
-      inline def setLstatSyncUndefined: Self = StObject.set(x, "lstatSync", js.undefined)
+      inline def setMaxRetries(value: Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
       
-      inline def setLstatUndefined: Self = StObject.set(x, "lstat", js.undefined)
+      inline def setMaxRetriesUndefined: Self = StObject.set(x, "maxRetries", js.undefined)
       
-      inline def setMaxBusyTries(value: Double): Self = StObject.set(x, "maxBusyTries", value.asInstanceOf[js.Any])
+      inline def setPreserveRoot(value: Boolean): Self = StObject.set(x, "preserveRoot", value.asInstanceOf[js.Any])
       
-      inline def setMaxBusyTriesUndefined: Self = StObject.set(x, "maxBusyTries", js.undefined)
+      inline def setPreserveRootUndefined: Self = StObject.set(x, "preserveRoot", js.undefined)
       
-      inline def setReaddir(value: Typeofreaddir): Self = StObject.set(x, "readdir", value.asInstanceOf[js.Any])
+      inline def setRetryDelay(value: Double): Self = StObject.set(x, "retryDelay", value.asInstanceOf[js.Any])
       
-      inline def setReaddirSync(value: FnCallPathOptions): Self = StObject.set(x, "readdirSync", value.asInstanceOf[js.Any])
+      inline def setRetryDelayUndefined: Self = StObject.set(x, "retryDelay", js.undefined)
       
-      inline def setReaddirSyncUndefined: Self = StObject.set(x, "readdirSync", js.undefined)
+      inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
       
-      inline def setReaddirUndefined: Self = StObject.set(x, "readdir", js.undefined)
+      inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
       
-      inline def setRmdir(value: Typeofrmdir): Self = StObject.set(x, "rmdir", value.asInstanceOf[js.Any])
+      inline def setTmp(value: String): Self = StObject.set(x, "tmp", value.asInstanceOf[js.Any])
       
-      inline def setRmdirSync(value: FnCall): Self = StObject.set(x, "rmdirSync", value.asInstanceOf[js.Any])
+      inline def setTmpUndefined: Self = StObject.set(x, "tmp", js.undefined)
+    }
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.rimraf.mod.RimrafSyncOptions
+    - typings.rimraf.mod.RimrafAsyncOptions
+  */
+  trait RimrafOptions extends StObject
+  object RimrafOptions {
+    
+    inline def RimrafAsyncOptions(): typings.rimraf.mod.RimrafAsyncOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[typings.rimraf.mod.RimrafAsyncOptions]
+    }
+    
+    inline def RimrafSyncOptions(): typings.rimraf.mod.RimrafSyncOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[typings.rimraf.mod.RimrafSyncOptions]
+    }
+  }
+  
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+  - typings.rimraf.mod.RimrafOptions because Already inherited */ trait RimrafSyncOptions
+    extends StObject
+       with RimrafAsyncOptions {
+    
+    @JSName("filter")
+    var filter_RimrafSyncOptions: js.UndefOr[js.Function2[/* path */ String, /* ent */ Dirent | Stats, Boolean]] = js.undefined
+  }
+  object RimrafSyncOptions {
+    
+    inline def apply(): RimrafSyncOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[RimrafSyncOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RimrafSyncOptions] (val x: Self) extends AnyVal {
       
-      inline def setRmdirSyncUndefined: Self = StObject.set(x, "rmdirSync", js.undefined)
+      inline def setFilter(value: (/* path */ String, /* ent */ Dirent | Stats) => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction2(value))
       
-      inline def setRmdirUndefined: Self = StObject.set(x, "rmdir", js.undefined)
-      
-      inline def setStat(value: Typeofstat): Self = StObject.set(x, "stat", value.asInstanceOf[js.Any])
-      
-      inline def setStatSync(value: StatSyncFn): Self = StObject.set(x, "statSync", value.asInstanceOf[js.Any])
-      
-      inline def setStatSyncUndefined: Self = StObject.set(x, "statSync", js.undefined)
-      
-      inline def setStatUndefined: Self = StObject.set(x, "stat", js.undefined)
-      
-      inline def setUnlink(value: Typeofunlink): Self = StObject.set(x, "unlink", value.asInstanceOf[js.Any])
-      
-      inline def setUnlinkSync(value: /* path */ PathLike => Unit): Self = StObject.set(x, "unlinkSync", js.Any.fromFunction1(value))
-      
-      inline def setUnlinkSyncUndefined: Self = StObject.set(x, "unlinkSync", js.undefined)
-      
-      inline def setUnlinkUndefined: Self = StObject.set(x, "unlink", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     }
   }
 }

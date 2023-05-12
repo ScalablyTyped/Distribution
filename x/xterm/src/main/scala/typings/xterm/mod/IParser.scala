@@ -15,7 +15,7 @@ trait IParser extends StObject {
     * array will contain subarrays with their numercial values.
     * Return `true` if the sequence was handled, `false` if the parser should try
     * a previous handler. The most recently added handler is tried first.
-    * @return An IDisposable you can call to remove this handler.
+    * @returns An IDisposable you can call to remove this handler.
     */
   def registerCsiHandler(
     id: IFunctionIdentifier,
@@ -36,7 +36,7 @@ trait IParser extends StObject {
     * The function gets the payload and numerical parameters as arguments.
     * Return `true` if the sequence was handled, `false` if the parser should try
     * a previous handler. The most recently added handler is tried first.
-    * @return An IDisposable you can call to remove this handler.
+    * @returns An IDisposable you can call to remove this handler.
     */
   def registerDcsHandler(
     id: IFunctionIdentifier,
@@ -55,7 +55,7 @@ trait IParser extends StObject {
     * @param callback The function to handle the sequence.
     * Return `true` if the sequence was handled, `false` if the parser should try
     * a previous handler. The most recently added handler is tried first.
-    * @return An IDisposable you can call to remove this handler.
+    * @returns An IDisposable you can call to remove this handler.
     */
   def registerEscHandler(id: IFunctionIdentifier, handler: js.Function0[Boolean | js.Promise[Boolean]]): IDisposable
   
@@ -72,7 +72,7 @@ trait IParser extends StObject {
     * The callback is called with OSC data string.
     * Return `true` if the sequence was handled, `false` if the parser should try
     * a previous handler. The most recently added handler is tried first.
-    * @return An IDisposable you can call to remove this handler.
+    * @returns An IDisposable you can call to remove this handler.
     */
   def registerOscHandler(ident: Double, callback: js.Function1[/* data */ String, Boolean | js.Promise[Boolean]]): IDisposable
 }

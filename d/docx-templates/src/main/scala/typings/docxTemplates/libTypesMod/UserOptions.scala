@@ -53,7 +53,7 @@ trait UserOptions extends StObject {
   var fixSmartQuotes: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Can be used to change the delimiter in generated XML.
+    * The delimiter that's used to indicate literal XML that should be inserted into the docx XML tree as-is. Defaults to `||`.
     */
   var literalXmlDelimiter: js.UndefOr[String] = js.undefined
   
@@ -66,6 +66,13 @@ trait UserOptions extends StObject {
     * Handle linebreaks in result of commands as actual linebreaks (Default: true)
     */
   var processLineBreaks: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Use the new way of injecting line breaks from command results (only applies when `processLineBreaks` is `true`)
+    * which has better results in LibreOffice and Google Drive.
+    * (Default: false)
+    */
+  var processLineBreaksAsNewText: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets injected into data function as second argument.
@@ -134,6 +141,10 @@ object UserOptions {
     inline def setNoSandboxUndefined: Self = StObject.set(x, "noSandbox", js.undefined)
     
     inline def setProcessLineBreaks(value: Boolean): Self = StObject.set(x, "processLineBreaks", value.asInstanceOf[js.Any])
+    
+    inline def setProcessLineBreaksAsNewText(value: Boolean): Self = StObject.set(x, "processLineBreaksAsNewText", value.asInstanceOf[js.Any])
+    
+    inline def setProcessLineBreaksAsNewTextUndefined: Self = StObject.set(x, "processLineBreaksAsNewText", js.undefined)
     
     inline def setProcessLineBreaksUndefined: Self = StObject.set(x, "processLineBreaks", js.undefined)
     

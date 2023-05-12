@@ -6,9 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @js.native
 sealed trait SymbolPath extends StObject
-/**
-  * Built-in symbol paths.
-  */
 @JSGlobal("google.maps.SymbolPath")
 @js.native
 object SymbolPath extends StObject {

@@ -34,12 +34,12 @@ trait DatabaseGetResponse extends StObject {
   var instance_start_time: String
   
   /** The number of purge operations on the database. */
-  var purge_seq: Double
+  var purge_seq: Double | String
   
   var sizes: Active
   
   /** The current number of updates to the database. */
-  var update_seq: Double
+  var update_seq: Double | String
 }
 object DatabaseGetResponse {
   
@@ -52,9 +52,9 @@ object DatabaseGetResponse {
     doc_count: Double,
     doc_del_count: Double,
     instance_start_time: String,
-    purge_seq: Double,
+    purge_seq: Double | String,
     sizes: Active,
-    update_seq: Double
+    update_seq: Double | String
   ): DatabaseGetResponse = {
     val __obj = js.Dynamic.literal(compact_running = compact_running.asInstanceOf[js.Any], data_size = data_size.asInstanceOf[js.Any], db_name = db_name.asInstanceOf[js.Any], disk_format_version = disk_format_version.asInstanceOf[js.Any], disk_size = disk_size.asInstanceOf[js.Any], doc_count = doc_count.asInstanceOf[js.Any], doc_del_count = doc_del_count.asInstanceOf[js.Any], instance_start_time = instance_start_time.asInstanceOf[js.Any], purge_seq = purge_seq.asInstanceOf[js.Any], sizes = sizes.asInstanceOf[js.Any], update_seq = update_seq.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatabaseGetResponse]
@@ -79,10 +79,10 @@ object DatabaseGetResponse {
     
     inline def setInstance_start_time(value: String): Self = StObject.set(x, "instance_start_time", value.asInstanceOf[js.Any])
     
-    inline def setPurge_seq(value: Double): Self = StObject.set(x, "purge_seq", value.asInstanceOf[js.Any])
+    inline def setPurge_seq(value: Double | String): Self = StObject.set(x, "purge_seq", value.asInstanceOf[js.Any])
     
     inline def setSizes(value: Active): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
     
-    inline def setUpdate_seq(value: Double): Self = StObject.set(x, "update_seq", value.asInstanceOf[js.Any])
+    inline def setUpdate_seq(value: Double | String): Self = StObject.set(x, "update_seq", value.asInstanceOf[js.Any])
   }
 }

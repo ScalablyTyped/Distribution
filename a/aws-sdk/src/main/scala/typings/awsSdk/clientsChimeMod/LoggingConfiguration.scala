@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LoggingConfiguration extends StObject {
   
   /**
-    * Boolean that enables the logging of Voice Connector metrics to Cloudwatch.
+    * Boolean that enables logging of detailed media metrics for Voice Connectors to Amazon CloudWatch logs.
     */
   var EnableMediaMetricLogs: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * When true, enables SIP message logs for sending to Amazon CloudWatch Logs.
+    * Boolean that enables SIP message logs to Amazon CloudWatch logs.
     */
   var EnableSIPLogs: js.UndefOr[Boolean] = js.undefined
 }

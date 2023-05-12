@@ -1,6 +1,5 @@
 package typings.reactSvg
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.DetailedHTMLProps
 import typings.react.mod.ElementType
 import typings.react.mod.HTMLAttributes
@@ -12,7 +11,6 @@ import typings.std.HTMLDivElement
 import typings.std.HTMLSpanElement
 import typings.std.SVGSVGElement
 import typings.tanemSvgInjector.distTypesMod.BeforeEach
-import typings.tanemSvgInjector.distTypesMod.Errback
 import typings.tanemSvgInjector.distTypesMod.EvalScripts
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -20,13 +18,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distTypesMod {
   
-  trait BaseProps
-    extends StObject
-       with /* key */ StringDictionary[Any] {
+  trait BaseProps extends StObject {
     
-    var afterInjection: js.UndefOr[Errback] = js.undefined
+    var afterInjection: js.UndefOr[js.Function1[/* svg */ SVGSVGElement, Unit]] = js.undefined
     
     var beforeInjection: js.UndefOr[BeforeEach] = js.undefined
+    
+    var desc: js.UndefOr[String] = js.undefined
     
     var evalScripts: js.UndefOr[EvalScripts] = js.undefined
     
@@ -36,9 +34,13 @@ object distTypesMod {
     
     var loading: js.UndefOr[ElementType[Any]] = js.undefined
     
+    var onError: js.UndefOr[js.Function1[/* error */ Any, Unit]] = js.undefined
+    
     var renumerateIRIElements: js.UndefOr[Boolean] = js.undefined
     
     var src: String
+    
+    var title: js.UndefOr[String] = js.undefined
     
     var useRequestCache: js.UndefOr[Boolean] = js.undefined
     
@@ -54,13 +56,17 @@ object distTypesMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: BaseProps] (val x: Self) extends AnyVal {
       
-      inline def setAfterInjection(value: (/* error */ js.Error | Null, /* svg */ js.UndefOr[SVGSVGElement]) => Unit): Self = StObject.set(x, "afterInjection", js.Any.fromFunction2(value))
+      inline def setAfterInjection(value: /* svg */ SVGSVGElement => Unit): Self = StObject.set(x, "afterInjection", js.Any.fromFunction1(value))
       
       inline def setAfterInjectionUndefined: Self = StObject.set(x, "afterInjection", js.undefined)
       
       inline def setBeforeInjection(value: /* svg */ SVGSVGElement => Unit): Self = StObject.set(x, "beforeInjection", js.Any.fromFunction1(value))
       
       inline def setBeforeInjectionUndefined: Self = StObject.set(x, "beforeInjection", js.undefined)
+      
+      inline def setDesc(value: String): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
+      
+      inline def setDescUndefined: Self = StObject.set(x, "desc", js.undefined)
       
       inline def setEvalScripts(value: EvalScripts): Self = StObject.set(x, "evalScripts", value.asInstanceOf[js.Any])
       
@@ -78,11 +84,19 @@ object distTypesMod {
       
       inline def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
       
+      inline def setOnError(value: /* error */ Any => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+      
+      inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
+      
       inline def setRenumerateIRIElements(value: Boolean): Self = StObject.set(x, "renumerateIRIElements", value.asInstanceOf[js.Any])
       
       inline def setRenumerateIRIElementsUndefined: Self = StObject.set(x, "renumerateIRIElements", js.undefined)
       
       inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+      
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
       inline def setUseRequestCache(value: Boolean): Self = StObject.set(x, "useRequestCache", value.asInstanceOf[js.Any])
       

@@ -2,12 +2,18 @@ package typings.reactTypesShared
 
 import typings.reactTypesShared.srcCollectionsMod.LoadingState
 import typings.reactTypesShared.srcCollectionsMod.SortDirection
+import typings.reactTypesShared.srcDnaMod.BackgroundColorAlias
 import typings.reactTypesShared.srcDnaMod.BackgroundColorValue
+import typings.reactTypesShared.srcDnaMod.BackgroundColorValueV6
+import typings.reactTypesShared.srcDnaMod.BorderColorAlias
 import typings.reactTypesShared.srcDnaMod.BorderColorValue
+import typings.reactTypesShared.srcDnaMod.BorderColorValueV6
 import typings.reactTypesShared.srcDnaMod.BorderRadiusValue
 import typings.reactTypesShared.srcDnaMod.BorderSizeValue
 import typings.reactTypesShared.srcDnaMod.ColorValue
+import typings.reactTypesShared.srcDnaMod.ColorValueV6
 import typings.reactTypesShared.srcDnaMod.IconColorValue
+import typings.reactTypesShared.srcDnaMod.SemanticColorValue
 import typings.reactTypesShared.srcDnaMod._DimensionValue
 import typings.reactTypesShared.srcDndMod.DropOperation
 import typings.reactTypesShared.srcDndMod.DropPosition
@@ -31,7 +37,9 @@ object reactTypesSharedStrings {
   @js.native
   sealed trait default
     extends StObject
+       with BackgroundColorAlias
        with BackgroundColorValue
+       with BackgroundColorValueV6
        with BorderColorValue
   inline def default: default = "default".asInstanceOf[default]
   
@@ -72,36 +80,128 @@ object reactTypesSharedStrings {
   inline def before: before = "before".asInstanceOf[before]
   
   @js.native
+  sealed trait `blue-100`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `blue-100`: `blue-100` = "blue-100".asInstanceOf[`blue-100`]
+  
+  @js.native
+  sealed trait `blue-1000`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `blue-1000`: `blue-1000` = "blue-1000".asInstanceOf[`blue-1000`]
+  
+  @js.native
+  sealed trait `blue-1100`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `blue-1100`: `blue-1100` = "blue-1100".asInstanceOf[`blue-1100`]
+  
+  @js.native
+  sealed trait `blue-1200`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `blue-1200`: `blue-1200` = "blue-1200".asInstanceOf[`blue-1200`]
+  
+  @js.native
+  sealed trait `blue-1300`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `blue-1300`: `blue-1300` = "blue-1300".asInstanceOf[`blue-1300`]
+  
+  @js.native
+  sealed trait `blue-1400`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `blue-1400`: `blue-1400` = "blue-1400".asInstanceOf[`blue-1400`]
+  
+  @js.native
+  sealed trait `blue-200`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `blue-200`: `blue-200` = "blue-200".asInstanceOf[`blue-200`]
+  
+  @js.native
+  sealed trait `blue-300`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `blue-300`: `blue-300` = "blue-300".asInstanceOf[`blue-300`]
+  
+  @js.native
   sealed trait `blue-400`
     extends StObject
        with BackgroundColorValue
+       with BackgroundColorValueV6
        with BorderColorValue
+       with BorderColorValueV6
        with ColorValue
+       with ColorValueV6
   inline def `blue-400`: `blue-400` = "blue-400".asInstanceOf[`blue-400`]
   
   @js.native
   sealed trait `blue-500`
     extends StObject
        with BackgroundColorValue
+       with BackgroundColorValueV6
        with BorderColorValue
+       with BorderColorValueV6
        with ColorValue
+       with ColorValueV6
   inline def `blue-500`: `blue-500` = "blue-500".asInstanceOf[`blue-500`]
   
   @js.native
   sealed trait `blue-600`
     extends StObject
        with BackgroundColorValue
+       with BackgroundColorValueV6
        with BorderColorValue
+       with BorderColorValueV6
        with ColorValue
+       with ColorValueV6
   inline def `blue-600`: `blue-600` = "blue-600".asInstanceOf[`blue-600`]
   
   @js.native
   sealed trait `blue-700`
     extends StObject
        with BackgroundColorValue
+       with BackgroundColorValueV6
        with BorderColorValue
+       with BorderColorValueV6
        with ColorValue
+       with ColorValueV6
   inline def `blue-700`: `blue-700` = "blue-700".asInstanceOf[`blue-700`]
+  
+  @js.native
+  sealed trait `blue-800`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `blue-800`: `blue-800` = "blue-800".asInstanceOf[`blue-800`]
+  
+  @js.native
+  sealed trait `blue-900`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `blue-900`: `blue-900` = "blue-900".asInstanceOf[`blue-900`]
   
   @js.native
   sealed trait cancel
@@ -110,72 +210,256 @@ object reactTypesSharedStrings {
   inline def cancel: cancel = "cancel".asInstanceOf[cancel]
   
   @js.native
+  sealed trait `celery-100`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `celery-100`: `celery-100` = "celery-100".asInstanceOf[`celery-100`]
+  
+  @js.native
+  sealed trait `celery-1000`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `celery-1000`: `celery-1000` = "celery-1000".asInstanceOf[`celery-1000`]
+  
+  @js.native
+  sealed trait `celery-1100`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `celery-1100`: `celery-1100` = "celery-1100".asInstanceOf[`celery-1100`]
+  
+  @js.native
+  sealed trait `celery-1200`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `celery-1200`: `celery-1200` = "celery-1200".asInstanceOf[`celery-1200`]
+  
+  @js.native
+  sealed trait `celery-1300`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `celery-1300`: `celery-1300` = "celery-1300".asInstanceOf[`celery-1300`]
+  
+  @js.native
+  sealed trait `celery-1400`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `celery-1400`: `celery-1400` = "celery-1400".asInstanceOf[`celery-1400`]
+  
+  @js.native
+  sealed trait `celery-200`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `celery-200`: `celery-200` = "celery-200".asInstanceOf[`celery-200`]
+  
+  @js.native
+  sealed trait `celery-300`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `celery-300`: `celery-300` = "celery-300".asInstanceOf[`celery-300`]
+  
+  @js.native
   sealed trait `celery-400`
     extends StObject
        with BackgroundColorValue
+       with BackgroundColorValueV6
        with BorderColorValue
+       with BorderColorValueV6
        with ColorValue
+       with ColorValueV6
   inline def `celery-400`: `celery-400` = "celery-400".asInstanceOf[`celery-400`]
   
   @js.native
   sealed trait `celery-500`
     extends StObject
        with BackgroundColorValue
+       with BackgroundColorValueV6
        with BorderColorValue
+       with BorderColorValueV6
        with ColorValue
+       with ColorValueV6
   inline def `celery-500`: `celery-500` = "celery-500".asInstanceOf[`celery-500`]
   
   @js.native
   sealed trait `celery-600`
     extends StObject
        with BackgroundColorValue
+       with BackgroundColorValueV6
        with BorderColorValue
+       with BorderColorValueV6
        with ColorValue
+       with ColorValueV6
   inline def `celery-600`: `celery-600` = "celery-600".asInstanceOf[`celery-600`]
   
   @js.native
   sealed trait `celery-700`
     extends StObject
        with BackgroundColorValue
+       with BackgroundColorValueV6
        with BorderColorValue
+       with BorderColorValueV6
        with ColorValue
+       with ColorValueV6
   inline def `celery-700`: `celery-700` = "celery-700".asInstanceOf[`celery-700`]
+  
+  @js.native
+  sealed trait `celery-800`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `celery-800`: `celery-800` = "celery-800".asInstanceOf[`celery-800`]
+  
+  @js.native
+  sealed trait `celery-900`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `celery-900`: `celery-900` = "celery-900".asInstanceOf[`celery-900`]
   
   @js.native
   sealed trait center extends StObject
   inline def center: center = "center".asInstanceOf[center]
   
   @js.native
+  sealed trait `chartreuse-100`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `chartreuse-100`: `chartreuse-100` = "chartreuse-100".asInstanceOf[`chartreuse-100`]
+  
+  @js.native
+  sealed trait `chartreuse-1000`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `chartreuse-1000`: `chartreuse-1000` = "chartreuse-1000".asInstanceOf[`chartreuse-1000`]
+  
+  @js.native
+  sealed trait `chartreuse-1100`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `chartreuse-1100`: `chartreuse-1100` = "chartreuse-1100".asInstanceOf[`chartreuse-1100`]
+  
+  @js.native
+  sealed trait `chartreuse-1200`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `chartreuse-1200`: `chartreuse-1200` = "chartreuse-1200".asInstanceOf[`chartreuse-1200`]
+  
+  @js.native
+  sealed trait `chartreuse-1300`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `chartreuse-1300`: `chartreuse-1300` = "chartreuse-1300".asInstanceOf[`chartreuse-1300`]
+  
+  @js.native
+  sealed trait `chartreuse-1400`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `chartreuse-1400`: `chartreuse-1400` = "chartreuse-1400".asInstanceOf[`chartreuse-1400`]
+  
+  @js.native
+  sealed trait `chartreuse-200`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `chartreuse-200`: `chartreuse-200` = "chartreuse-200".asInstanceOf[`chartreuse-200`]
+  
+  @js.native
+  sealed trait `chartreuse-300`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `chartreuse-300`: `chartreuse-300` = "chartreuse-300".asInstanceOf[`chartreuse-300`]
+  
+  @js.native
   sealed trait `chartreuse-400`
     extends StObject
        with BackgroundColorValue
+       with BackgroundColorValueV6
        with BorderColorValue
+       with BorderColorValueV6
        with ColorValue
+       with ColorValueV6
   inline def `chartreuse-400`: `chartreuse-400` = "chartreuse-400".asInstanceOf[`chartreuse-400`]
   
   @js.native
   sealed trait `chartreuse-500`
     extends StObject
        with BackgroundColorValue
+       with BackgroundColorValueV6
        with BorderColorValue
+       with BorderColorValueV6
        with ColorValue
+       with ColorValueV6
   inline def `chartreuse-500`: `chartreuse-500` = "chartreuse-500".asInstanceOf[`chartreuse-500`]
   
   @js.native
   sealed trait `chartreuse-600`
     extends StObject
        with BackgroundColorValue
+       with BackgroundColorValueV6
        with BorderColorValue
+       with BorderColorValueV6
        with ColorValue
+       with ColorValueV6
   inline def `chartreuse-600`: `chartreuse-600` = "chartreuse-600".asInstanceOf[`chartreuse-600`]
   
   @js.native
   sealed trait `chartreuse-700`
     extends StObject
        with BackgroundColorValue
+       with BackgroundColorValueV6
        with BorderColorValue
+       with BorderColorValueV6
        with ColorValue
+       with ColorValueV6
   inline def `chartreuse-700`: `chartreuse-700` = "chartreuse-700".asInstanceOf[`chartreuse-700`]
+  
+  @js.native
+  sealed trait `chartreuse-800`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `chartreuse-800`: `chartreuse-800` = "chartreuse-800".asInstanceOf[`chartreuse-800`]
+  
+  @js.native
+  sealed trait `chartreuse-900`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `chartreuse-900`: `chartreuse-900` = "chartreuse-900".asInstanceOf[`chartreuse-900`]
   
   @js.native
   sealed trait checkbox extends StObject
@@ -200,9 +484,123 @@ object reactTypesSharedStrings {
   inline def copy: copy = "copy".asInstanceOf[copy]
   
   @js.native
+  sealed trait `cyan-100`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `cyan-100`: `cyan-100` = "cyan-100".asInstanceOf[`cyan-100`]
+  
+  @js.native
+  sealed trait `cyan-1000`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `cyan-1000`: `cyan-1000` = "cyan-1000".asInstanceOf[`cyan-1000`]
+  
+  @js.native
+  sealed trait `cyan-1100`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `cyan-1100`: `cyan-1100` = "cyan-1100".asInstanceOf[`cyan-1100`]
+  
+  @js.native
+  sealed trait `cyan-1200`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `cyan-1200`: `cyan-1200` = "cyan-1200".asInstanceOf[`cyan-1200`]
+  
+  @js.native
+  sealed trait `cyan-1300`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `cyan-1300`: `cyan-1300` = "cyan-1300".asInstanceOf[`cyan-1300`]
+  
+  @js.native
+  sealed trait `cyan-1400`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `cyan-1400`: `cyan-1400` = "cyan-1400".asInstanceOf[`cyan-1400`]
+  
+  @js.native
+  sealed trait `cyan-200`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `cyan-200`: `cyan-200` = "cyan-200".asInstanceOf[`cyan-200`]
+  
+  @js.native
+  sealed trait `cyan-300`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `cyan-300`: `cyan-300` = "cyan-300".asInstanceOf[`cyan-300`]
+  
+  @js.native
+  sealed trait `cyan-400`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `cyan-400`: `cyan-400` = "cyan-400".asInstanceOf[`cyan-400`]
+  
+  @js.native
+  sealed trait `cyan-500`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `cyan-500`: `cyan-500` = "cyan-500".asInstanceOf[`cyan-500`]
+  
+  @js.native
+  sealed trait `cyan-600`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `cyan-600`: `cyan-600` = "cyan-600".asInstanceOf[`cyan-600`]
+  
+  @js.native
+  sealed trait `cyan-700`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `cyan-700`: `cyan-700` = "cyan-700".asInstanceOf[`cyan-700`]
+  
+  @js.native
+  sealed trait `cyan-800`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `cyan-800`: `cyan-800` = "cyan-800".asInstanceOf[`cyan-800`]
+  
+  @js.native
+  sealed trait `cyan-900`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `cyan-900`: `cyan-900` = "cyan-900".asInstanceOf[`cyan-900`]
+  
+  @js.native
   sealed trait dark
     extends StObject
+       with BorderColorAlias
        with BorderColorValue
+       with BorderColorValueV6
   inline def dark: dark = "dark".asInstanceOf[dark]
   
   @js.native
@@ -222,13 +620,20 @@ object reactTypesSharedStrings {
   @js.native
   sealed trait disabled
     extends StObject
+       with BackgroundColorAlias
+       with BackgroundColorValue
+       with BackgroundColorValueV6
+       with BorderColorAlias
        with BorderColorValue
+       with BorderColorValueV6
   inline def disabled: disabled = "disabled".asInstanceOf[disabled]
   
   @js.native
   sealed trait down
     extends StObject
+       with BorderColorAlias
        with BorderColorValue
+       with BorderColorValueV6
   inline def down: down = "down".asInstanceOf[down]
   
   @js.native
@@ -282,7 +687,9 @@ object reactTypesSharedStrings {
   @js.native
   sealed trait extralight
     extends StObject
+       with BorderColorAlias
        with BorderColorValue
+       with BorderColorValueV6
   inline def extralight: extralight = "extralight".asInstanceOf[extralight]
   
   @js.native
@@ -320,160 +727,379 @@ object reactTypesSharedStrings {
   @js.native
   sealed trait focus
     extends StObject
+       with BorderColorAlias
        with BorderColorValue
+       with BorderColorValueV6
   inline def focus: focus = "focus".asInstanceOf[focus]
+  
+  @js.native
+  sealed trait `fuchsia-100`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `fuchsia-100`: `fuchsia-100` = "fuchsia-100".asInstanceOf[`fuchsia-100`]
+  
+  @js.native
+  sealed trait `fuchsia-1000`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `fuchsia-1000`: `fuchsia-1000` = "fuchsia-1000".asInstanceOf[`fuchsia-1000`]
+  
+  @js.native
+  sealed trait `fuchsia-1100`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `fuchsia-1100`: `fuchsia-1100` = "fuchsia-1100".asInstanceOf[`fuchsia-1100`]
+  
+  @js.native
+  sealed trait `fuchsia-1200`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `fuchsia-1200`: `fuchsia-1200` = "fuchsia-1200".asInstanceOf[`fuchsia-1200`]
+  
+  @js.native
+  sealed trait `fuchsia-1300`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `fuchsia-1300`: `fuchsia-1300` = "fuchsia-1300".asInstanceOf[`fuchsia-1300`]
+  
+  @js.native
+  sealed trait `fuchsia-1400`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `fuchsia-1400`: `fuchsia-1400` = "fuchsia-1400".asInstanceOf[`fuchsia-1400`]
+  
+  @js.native
+  sealed trait `fuchsia-200`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `fuchsia-200`: `fuchsia-200` = "fuchsia-200".asInstanceOf[`fuchsia-200`]
+  
+  @js.native
+  sealed trait `fuchsia-300`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `fuchsia-300`: `fuchsia-300` = "fuchsia-300".asInstanceOf[`fuchsia-300`]
   
   @js.native
   sealed trait `fuchsia-400`
     extends StObject
        with BackgroundColorValue
+       with BackgroundColorValueV6
        with BorderColorValue
+       with BorderColorValueV6
        with ColorValue
+       with ColorValueV6
   inline def `fuchsia-400`: `fuchsia-400` = "fuchsia-400".asInstanceOf[`fuchsia-400`]
   
   @js.native
   sealed trait `fuchsia-500`
     extends StObject
        with BackgroundColorValue
+       with BackgroundColorValueV6
        with BorderColorValue
+       with BorderColorValueV6
        with ColorValue
+       with ColorValueV6
   inline def `fuchsia-500`: `fuchsia-500` = "fuchsia-500".asInstanceOf[`fuchsia-500`]
   
   @js.native
   sealed trait `fuchsia-600`
     extends StObject
        with BackgroundColorValue
+       with BackgroundColorValueV6
        with BorderColorValue
+       with BorderColorValueV6
        with ColorValue
+       with ColorValueV6
   inline def `fuchsia-600`: `fuchsia-600` = "fuchsia-600".asInstanceOf[`fuchsia-600`]
   
   @js.native
   sealed trait `fuchsia-700`
     extends StObject
        with BackgroundColorValue
+       with BackgroundColorValueV6
        with BorderColorValue
+       with BorderColorValueV6
        with ColorValue
+       with ColorValueV6
   inline def `fuchsia-700`: `fuchsia-700` = "fuchsia-700".asInstanceOf[`fuchsia-700`]
+  
+  @js.native
+  sealed trait `fuchsia-800`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `fuchsia-800`: `fuchsia-800` = "fuchsia-800".asInstanceOf[`fuchsia-800`]
+  
+  @js.native
+  sealed trait `fuchsia-900`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `fuchsia-900`: `fuchsia-900` = "fuchsia-900".asInstanceOf[`fuchsia-900`]
   
   @js.native
   sealed trait `gray-100`
     extends StObject
        with BackgroundColorValue
+       with BackgroundColorValueV6
        with BorderColorValue
+       with BorderColorValueV6
        with ColorValue
+       with ColorValueV6
   inline def `gray-100`: `gray-100` = "gray-100".asInstanceOf[`gray-100`]
   
   @js.native
   sealed trait `gray-200`
     extends StObject
        with BackgroundColorValue
+       with BackgroundColorValueV6
        with BorderColorValue
+       with BorderColorValueV6
        with ColorValue
+       with ColorValueV6
   inline def `gray-200`: `gray-200` = "gray-200".asInstanceOf[`gray-200`]
   
   @js.native
   sealed trait `gray-300`
     extends StObject
        with BackgroundColorValue
+       with BackgroundColorValueV6
        with BorderColorValue
+       with BorderColorValueV6
        with ColorValue
+       with ColorValueV6
   inline def `gray-300`: `gray-300` = "gray-300".asInstanceOf[`gray-300`]
   
   @js.native
   sealed trait `gray-400`
     extends StObject
        with BackgroundColorValue
+       with BackgroundColorValueV6
        with BorderColorValue
+       with BorderColorValueV6
        with ColorValue
+       with ColorValueV6
   inline def `gray-400`: `gray-400` = "gray-400".asInstanceOf[`gray-400`]
   
   @js.native
   sealed trait `gray-50`
     extends StObject
        with BackgroundColorValue
+       with BackgroundColorValueV6
        with BorderColorValue
+       with BorderColorValueV6
        with ColorValue
+       with ColorValueV6
   inline def `gray-50`: `gray-50` = "gray-50".asInstanceOf[`gray-50`]
   
   @js.native
   sealed trait `gray-500`
     extends StObject
        with BackgroundColorValue
+       with BackgroundColorValueV6
        with BorderColorValue
+       with BorderColorValueV6
        with ColorValue
+       with ColorValueV6
   inline def `gray-500`: `gray-500` = "gray-500".asInstanceOf[`gray-500`]
   
   @js.native
   sealed trait `gray-600`
     extends StObject
        with BackgroundColorValue
+       with BackgroundColorValueV6
        with BorderColorValue
+       with BorderColorValueV6
        with ColorValue
+       with ColorValueV6
   inline def `gray-600`: `gray-600` = "gray-600".asInstanceOf[`gray-600`]
   
   @js.native
   sealed trait `gray-700`
     extends StObject
        with BackgroundColorValue
+       with BackgroundColorValueV6
        with BorderColorValue
+       with BorderColorValueV6
        with ColorValue
+       with ColorValueV6
   inline def `gray-700`: `gray-700` = "gray-700".asInstanceOf[`gray-700`]
   
   @js.native
   sealed trait `gray-75`
     extends StObject
        with BackgroundColorValue
+       with BackgroundColorValueV6
        with BorderColorValue
+       with BorderColorValueV6
        with ColorValue
+       with ColorValueV6
   inline def `gray-75`: `gray-75` = "gray-75".asInstanceOf[`gray-75`]
   
   @js.native
   sealed trait `gray-800`
     extends StObject
        with BackgroundColorValue
+       with BackgroundColorValueV6
        with BorderColorValue
+       with BorderColorValueV6
        with ColorValue
+       with ColorValueV6
   inline def `gray-800`: `gray-800` = "gray-800".asInstanceOf[`gray-800`]
   
   @js.native
   sealed trait `gray-900`
     extends StObject
        with BackgroundColorValue
+       with BackgroundColorValueV6
        with BorderColorValue
+       with BorderColorValueV6
        with ColorValue
+       with ColorValueV6
   inline def `gray-900`: `gray-900` = "gray-900".asInstanceOf[`gray-900`]
+  
+  @js.native
+  sealed trait `green-100`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `green-100`: `green-100` = "green-100".asInstanceOf[`green-100`]
+  
+  @js.native
+  sealed trait `green-1000`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `green-1000`: `green-1000` = "green-1000".asInstanceOf[`green-1000`]
+  
+  @js.native
+  sealed trait `green-1100`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `green-1100`: `green-1100` = "green-1100".asInstanceOf[`green-1100`]
+  
+  @js.native
+  sealed trait `green-1200`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `green-1200`: `green-1200` = "green-1200".asInstanceOf[`green-1200`]
+  
+  @js.native
+  sealed trait `green-1300`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `green-1300`: `green-1300` = "green-1300".asInstanceOf[`green-1300`]
+  
+  @js.native
+  sealed trait `green-1400`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `green-1400`: `green-1400` = "green-1400".asInstanceOf[`green-1400`]
+  
+  @js.native
+  sealed trait `green-200`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `green-200`: `green-200` = "green-200".asInstanceOf[`green-200`]
+  
+  @js.native
+  sealed trait `green-300`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `green-300`: `green-300` = "green-300".asInstanceOf[`green-300`]
   
   @js.native
   sealed trait `green-400`
     extends StObject
        with BackgroundColorValue
+       with BackgroundColorValueV6
        with BorderColorValue
+       with BorderColorValueV6
        with ColorValue
+       with ColorValueV6
   inline def `green-400`: `green-400` = "green-400".asInstanceOf[`green-400`]
   
   @js.native
   sealed trait `green-500`
     extends StObject
        with BackgroundColorValue
+       with BackgroundColorValueV6
        with BorderColorValue
+       with BorderColorValueV6
        with ColorValue
+       with ColorValueV6
   inline def `green-500`: `green-500` = "green-500".asInstanceOf[`green-500`]
   
   @js.native
   sealed trait `green-600`
     extends StObject
        with BackgroundColorValue
+       with BackgroundColorValueV6
        with BorderColorValue
+       with BorderColorValueV6
        with ColorValue
+       with ColorValueV6
   inline def `green-600`: `green-600` = "green-600".asInstanceOf[`green-600`]
   
   @js.native
   sealed trait `green-700`
     extends StObject
        with BackgroundColorValue
+       with BackgroundColorValueV6
        with BorderColorValue
+       with BorderColorValueV6
        with ColorValue
+       with ColorValueV6
   inline def `green-700`: `green-700` = "green-700".asInstanceOf[`green-700`]
+  
+  @js.native
+  sealed trait `green-800`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `green-800`: `green-800` = "green-800".asInstanceOf[`green-800`]
+  
+  @js.native
+  sealed trait `green-900`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `green-900`: `green-900` = "green-900".asInstanceOf[`green-900`]
   
   @js.native
   sealed trait highlight extends StObject
@@ -488,7 +1114,9 @@ object reactTypesSharedStrings {
   @js.native
   sealed trait hover
     extends StObject
+       with BorderColorAlias
        with BorderColorValue
+       with BorderColorValueV6
   inline def hover: hover = "hover".asInstanceOf[hover]
   
   @js.native
@@ -512,44 +1140,141 @@ object reactTypesSharedStrings {
   inline def idle: idle = "idle".asInstanceOf[idle]
   
   @js.native
+  sealed trait `indigo-100`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `indigo-100`: `indigo-100` = "indigo-100".asInstanceOf[`indigo-100`]
+  
+  @js.native
+  sealed trait `indigo-1000`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `indigo-1000`: `indigo-1000` = "indigo-1000".asInstanceOf[`indigo-1000`]
+  
+  @js.native
+  sealed trait `indigo-1100`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `indigo-1100`: `indigo-1100` = "indigo-1100".asInstanceOf[`indigo-1100`]
+  
+  @js.native
+  sealed trait `indigo-1200`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `indigo-1200`: `indigo-1200` = "indigo-1200".asInstanceOf[`indigo-1200`]
+  
+  @js.native
+  sealed trait `indigo-1300`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `indigo-1300`: `indigo-1300` = "indigo-1300".asInstanceOf[`indigo-1300`]
+  
+  @js.native
+  sealed trait `indigo-1400`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `indigo-1400`: `indigo-1400` = "indigo-1400".asInstanceOf[`indigo-1400`]
+  
+  @js.native
+  sealed trait `indigo-200`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `indigo-200`: `indigo-200` = "indigo-200".asInstanceOf[`indigo-200`]
+  
+  @js.native
+  sealed trait `indigo-300`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `indigo-300`: `indigo-300` = "indigo-300".asInstanceOf[`indigo-300`]
+  
+  @js.native
   sealed trait `indigo-400`
     extends StObject
        with BackgroundColorValue
+       with BackgroundColorValueV6
        with BorderColorValue
+       with BorderColorValueV6
        with ColorValue
+       with ColorValueV6
   inline def `indigo-400`: `indigo-400` = "indigo-400".asInstanceOf[`indigo-400`]
   
   @js.native
   sealed trait `indigo-500`
     extends StObject
        with BackgroundColorValue
+       with BackgroundColorValueV6
        with BorderColorValue
+       with BorderColorValueV6
        with ColorValue
+       with ColorValueV6
   inline def `indigo-500`: `indigo-500` = "indigo-500".asInstanceOf[`indigo-500`]
   
   @js.native
   sealed trait `indigo-600`
     extends StObject
        with BackgroundColorValue
+       with BackgroundColorValueV6
        with BorderColorValue
+       with BorderColorValueV6
        with ColorValue
+       with ColorValueV6
   inline def `indigo-600`: `indigo-600` = "indigo-600".asInstanceOf[`indigo-600`]
   
   @js.native
   sealed trait `indigo-700`
     extends StObject
        with BackgroundColorValue
+       with BackgroundColorValueV6
        with BorderColorValue
+       with BorderColorValueV6
        with ColorValue
+       with ColorValueV6
   inline def `indigo-700`: `indigo-700` = "indigo-700".asInstanceOf[`indigo-700`]
+  
+  @js.native
+  sealed trait `indigo-800`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `indigo-800`: `indigo-800` = "indigo-800".asInstanceOf[`indigo-800`]
+  
+  @js.native
+  sealed trait `indigo-900`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `indigo-900`: `indigo-900` = "indigo-900".asInstanceOf[`indigo-900`]
   
   @js.native
   sealed trait informative
     extends StObject
        with BackgroundColorValue
+       with BackgroundColorValueV6
+       with BorderColorAlias
        with BorderColorValue
+       with BorderColorValueV6
        with ColorValue
+       with ColorValueV6
        with IconColorValue
+       with SemanticColorValue
   inline def informative: informative = "informative".asInstanceOf[informative]
   
   @js.native
@@ -577,7 +1302,9 @@ object reactTypesSharedStrings {
   @js.native
   sealed trait `label-gray`
     extends StObject
+       with BackgroundColorAlias
        with BackgroundColorValue
+       with BackgroundColorValueV6
   inline def `label-gray`: `label-gray` = "label-gray".asInstanceOf[`label-gray`]
   
   @js.native
@@ -615,7 +1342,9 @@ object reactTypesSharedStrings {
   @js.native
   sealed trait light
     extends StObject
+       with BorderColorAlias
        with BorderColorValue
+       with BorderColorValueV6
   inline def light: light = "light".asInstanceOf[light]
   
   @js.native
@@ -655,36 +1384,128 @@ object reactTypesSharedStrings {
   inline def ltr: ltr = "ltr".asInstanceOf[ltr]
   
   @js.native
+  sealed trait `magenta-100`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `magenta-100`: `magenta-100` = "magenta-100".asInstanceOf[`magenta-100`]
+  
+  @js.native
+  sealed trait `magenta-1000`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `magenta-1000`: `magenta-1000` = "magenta-1000".asInstanceOf[`magenta-1000`]
+  
+  @js.native
+  sealed trait `magenta-1100`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `magenta-1100`: `magenta-1100` = "magenta-1100".asInstanceOf[`magenta-1100`]
+  
+  @js.native
+  sealed trait `magenta-1200`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `magenta-1200`: `magenta-1200` = "magenta-1200".asInstanceOf[`magenta-1200`]
+  
+  @js.native
+  sealed trait `magenta-1300`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `magenta-1300`: `magenta-1300` = "magenta-1300".asInstanceOf[`magenta-1300`]
+  
+  @js.native
+  sealed trait `magenta-1400`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `magenta-1400`: `magenta-1400` = "magenta-1400".asInstanceOf[`magenta-1400`]
+  
+  @js.native
+  sealed trait `magenta-200`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `magenta-200`: `magenta-200` = "magenta-200".asInstanceOf[`magenta-200`]
+  
+  @js.native
+  sealed trait `magenta-300`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `magenta-300`: `magenta-300` = "magenta-300".asInstanceOf[`magenta-300`]
+  
+  @js.native
   sealed trait `magenta-400`
     extends StObject
        with BackgroundColorValue
+       with BackgroundColorValueV6
        with BorderColorValue
+       with BorderColorValueV6
        with ColorValue
+       with ColorValueV6
   inline def `magenta-400`: `magenta-400` = "magenta-400".asInstanceOf[`magenta-400`]
   
   @js.native
   sealed trait `magenta-500`
     extends StObject
        with BackgroundColorValue
+       with BackgroundColorValueV6
        with BorderColorValue
+       with BorderColorValueV6
        with ColorValue
+       with ColorValueV6
   inline def `magenta-500`: `magenta-500` = "magenta-500".asInstanceOf[`magenta-500`]
   
   @js.native
   sealed trait `magenta-600`
     extends StObject
        with BackgroundColorValue
+       with BackgroundColorValueV6
        with BorderColorValue
+       with BorderColorValueV6
        with ColorValue
+       with ColorValueV6
   inline def `magenta-600`: `magenta-600` = "magenta-600".asInstanceOf[`magenta-600`]
   
   @js.native
   sealed trait `magenta-700`
     extends StObject
        with BackgroundColorValue
+       with BackgroundColorValueV6
        with BorderColorValue
+       with BorderColorValueV6
        with ColorValue
+       with ColorValueV6
   inline def `magenta-700`: `magenta-700` = "magenta-700".asInstanceOf[`magenta-700`]
+  
+  @js.native
+  sealed trait `magenta-800`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `magenta-800`: `magenta-800` = "magenta-800".asInstanceOf[`magenta-800`]
+  
+  @js.native
+  sealed trait `magenta-900`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `magenta-900`: `magenta-900` = "magenta-900".asInstanceOf[`magenta-900`]
   
   @js.native
   sealed trait medium
@@ -695,7 +1516,9 @@ object reactTypesSharedStrings {
   @js.native
   sealed trait mid
     extends StObject
+       with BorderColorAlias
        with BorderColorValue
+       with BorderColorValueV6
   inline def mid: mid = "mid".asInstanceOf[mid]
   
   @js.native
@@ -707,7 +1530,9 @@ object reactTypesSharedStrings {
   @js.native
   sealed trait `mouse-focus`
     extends StObject
+       with BorderColorAlias
        with BorderColorValue
+       with BorderColorValueV6
   inline def `mouse-focus`: `mouse-focus` = "mouse-focus".asInstanceOf[`mouse-focus`]
   
   @js.native
@@ -734,9 +1559,14 @@ object reactTypesSharedStrings {
   sealed trait negative
     extends StObject
        with BackgroundColorValue
+       with BackgroundColorValueV6
+       with BorderColorAlias
        with BorderColorValue
+       with BorderColorValueV6
        with ColorValue
+       with ColorValueV6
        with IconColorValue
+       with SemanticColorValue
   inline def negative: negative = "negative".asInstanceOf[negative]
   
   @js.native
@@ -753,9 +1583,14 @@ object reactTypesSharedStrings {
   sealed trait notice
     extends StObject
        with BackgroundColorValue
+       with BackgroundColorValueV6
+       with BorderColorAlias
        with BorderColorValue
+       with BorderColorValueV6
        with ColorValue
+       with ColorValueV6
        with IconColorValue
+       with SemanticColorValue
   inline def notice: notice = "notice".asInstanceOf[notice]
   
   @js.native
@@ -773,36 +1608,128 @@ object reactTypesSharedStrings {
   inline def on: on = "on".asInstanceOf[on]
   
   @js.native
+  sealed trait `orange-100`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `orange-100`: `orange-100` = "orange-100".asInstanceOf[`orange-100`]
+  
+  @js.native
+  sealed trait `orange-1000`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `orange-1000`: `orange-1000` = "orange-1000".asInstanceOf[`orange-1000`]
+  
+  @js.native
+  sealed trait `orange-1100`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `orange-1100`: `orange-1100` = "orange-1100".asInstanceOf[`orange-1100`]
+  
+  @js.native
+  sealed trait `orange-1200`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `orange-1200`: `orange-1200` = "orange-1200".asInstanceOf[`orange-1200`]
+  
+  @js.native
+  sealed trait `orange-1300`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `orange-1300`: `orange-1300` = "orange-1300".asInstanceOf[`orange-1300`]
+  
+  @js.native
+  sealed trait `orange-1400`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `orange-1400`: `orange-1400` = "orange-1400".asInstanceOf[`orange-1400`]
+  
+  @js.native
+  sealed trait `orange-200`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `orange-200`: `orange-200` = "orange-200".asInstanceOf[`orange-200`]
+  
+  @js.native
+  sealed trait `orange-300`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `orange-300`: `orange-300` = "orange-300".asInstanceOf[`orange-300`]
+  
+  @js.native
   sealed trait `orange-400`
     extends StObject
        with BackgroundColorValue
+       with BackgroundColorValueV6
        with BorderColorValue
+       with BorderColorValueV6
        with ColorValue
+       with ColorValueV6
   inline def `orange-400`: `orange-400` = "orange-400".asInstanceOf[`orange-400`]
   
   @js.native
   sealed trait `orange-500`
     extends StObject
        with BackgroundColorValue
+       with BackgroundColorValueV6
        with BorderColorValue
+       with BorderColorValueV6
        with ColorValue
+       with ColorValueV6
   inline def `orange-500`: `orange-500` = "orange-500".asInstanceOf[`orange-500`]
   
   @js.native
   sealed trait `orange-600`
     extends StObject
        with BackgroundColorValue
+       with BackgroundColorValueV6
        with BorderColorValue
+       with BorderColorValueV6
        with ColorValue
+       with ColorValueV6
   inline def `orange-600`: `orange-600` = "orange-600".asInstanceOf[`orange-600`]
   
   @js.native
   sealed trait `orange-700`
     extends StObject
        with BackgroundColorValue
+       with BackgroundColorValueV6
        with BorderColorValue
+       with BorderColorValueV6
        with ColorValue
+       with ColorValueV6
   inline def `orange-700`: `orange-700` = "orange-700".asInstanceOf[`orange-700`]
+  
+  @js.native
+  sealed trait `orange-800`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `orange-800`: `orange-800` = "orange-800".asInstanceOf[`orange-800`]
+  
+  @js.native
+  sealed trait `orange-900`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `orange-900`: `orange-900` = "orange-900".asInstanceOf[`orange-900`]
   
   @js.native
   sealed trait password extends StObject
@@ -818,9 +1745,14 @@ object reactTypesSharedStrings {
   sealed trait positive
     extends StObject
        with BackgroundColorValue
+       with BackgroundColorValueV6
+       with BorderColorAlias
        with BorderColorValue
+       with BorderColorValueV6
        with ColorValue
+       with ColorValueV6
        with IconColorValue
+       with SemanticColorValue
   inline def positive: positive = "positive".asInstanceOf[positive]
   
   @js.native
@@ -840,68 +1772,252 @@ object reactTypesSharedStrings {
   inline def pressup: pressup = "pressup".asInstanceOf[pressup]
   
   @js.native
+  sealed trait `purple-100`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `purple-100`: `purple-100` = "purple-100".asInstanceOf[`purple-100`]
+  
+  @js.native
+  sealed trait `purple-1000`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `purple-1000`: `purple-1000` = "purple-1000".asInstanceOf[`purple-1000`]
+  
+  @js.native
+  sealed trait `purple-1100`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `purple-1100`: `purple-1100` = "purple-1100".asInstanceOf[`purple-1100`]
+  
+  @js.native
+  sealed trait `purple-1200`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `purple-1200`: `purple-1200` = "purple-1200".asInstanceOf[`purple-1200`]
+  
+  @js.native
+  sealed trait `purple-1300`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `purple-1300`: `purple-1300` = "purple-1300".asInstanceOf[`purple-1300`]
+  
+  @js.native
+  sealed trait `purple-1400`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `purple-1400`: `purple-1400` = "purple-1400".asInstanceOf[`purple-1400`]
+  
+  @js.native
+  sealed trait `purple-200`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `purple-200`: `purple-200` = "purple-200".asInstanceOf[`purple-200`]
+  
+  @js.native
+  sealed trait `purple-300`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `purple-300`: `purple-300` = "purple-300".asInstanceOf[`purple-300`]
+  
+  @js.native
   sealed trait `purple-400`
     extends StObject
        with BackgroundColorValue
+       with BackgroundColorValueV6
        with BorderColorValue
+       with BorderColorValueV6
        with ColorValue
+       with ColorValueV6
   inline def `purple-400`: `purple-400` = "purple-400".asInstanceOf[`purple-400`]
   
   @js.native
   sealed trait `purple-500`
     extends StObject
        with BackgroundColorValue
+       with BackgroundColorValueV6
        with BorderColorValue
+       with BorderColorValueV6
        with ColorValue
+       with ColorValueV6
   inline def `purple-500`: `purple-500` = "purple-500".asInstanceOf[`purple-500`]
   
   @js.native
   sealed trait `purple-600`
     extends StObject
        with BackgroundColorValue
+       with BackgroundColorValueV6
        with BorderColorValue
+       with BorderColorValueV6
        with ColorValue
+       with ColorValueV6
   inline def `purple-600`: `purple-600` = "purple-600".asInstanceOf[`purple-600`]
   
   @js.native
   sealed trait `purple-700`
     extends StObject
        with BackgroundColorValue
+       with BackgroundColorValueV6
        with BorderColorValue
+       with BorderColorValueV6
        with ColorValue
+       with ColorValueV6
   inline def `purple-700`: `purple-700` = "purple-700".asInstanceOf[`purple-700`]
+  
+  @js.native
+  sealed trait `purple-800`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `purple-800`: `purple-800` = "purple-800".asInstanceOf[`purple-800`]
+  
+  @js.native
+  sealed trait `purple-900`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `purple-900`: `purple-900` = "purple-900".asInstanceOf[`purple-900`]
+  
+  @js.native
+  sealed trait `red-100`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `red-100`: `red-100` = "red-100".asInstanceOf[`red-100`]
+  
+  @js.native
+  sealed trait `red-1000`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `red-1000`: `red-1000` = "red-1000".asInstanceOf[`red-1000`]
+  
+  @js.native
+  sealed trait `red-1100`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `red-1100`: `red-1100` = "red-1100".asInstanceOf[`red-1100`]
+  
+  @js.native
+  sealed trait `red-1200`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `red-1200`: `red-1200` = "red-1200".asInstanceOf[`red-1200`]
+  
+  @js.native
+  sealed trait `red-1300`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `red-1300`: `red-1300` = "red-1300".asInstanceOf[`red-1300`]
+  
+  @js.native
+  sealed trait `red-1400`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `red-1400`: `red-1400` = "red-1400".asInstanceOf[`red-1400`]
+  
+  @js.native
+  sealed trait `red-200`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `red-200`: `red-200` = "red-200".asInstanceOf[`red-200`]
+  
+  @js.native
+  sealed trait `red-300`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `red-300`: `red-300` = "red-300".asInstanceOf[`red-300`]
   
   @js.native
   sealed trait `red-400`
     extends StObject
        with BackgroundColorValue
+       with BackgroundColorValueV6
        with BorderColorValue
+       with BorderColorValueV6
        with ColorValue
+       with ColorValueV6
   inline def `red-400`: `red-400` = "red-400".asInstanceOf[`red-400`]
   
   @js.native
   sealed trait `red-500`
     extends StObject
        with BackgroundColorValue
+       with BackgroundColorValueV6
        with BorderColorValue
+       with BorderColorValueV6
        with ColorValue
+       with ColorValueV6
   inline def `red-500`: `red-500` = "red-500".asInstanceOf[`red-500`]
   
   @js.native
   sealed trait `red-600`
     extends StObject
        with BackgroundColorValue
+       with BackgroundColorValueV6
        with BorderColorValue
+       with BorderColorValueV6
        with ColorValue
+       with ColorValueV6
   inline def `red-600`: `red-600` = "red-600".asInstanceOf[`red-600`]
   
   @js.native
   sealed trait `red-700`
     extends StObject
        with BackgroundColorValue
+       with BackgroundColorValueV6
        with BorderColorValue
+       with BorderColorValueV6
        with ColorValue
+       with ColorValueV6
   inline def `red-700`: `red-700` = "red-700".asInstanceOf[`red-700`]
+  
+  @js.native
+  sealed trait `red-800`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `red-800`: `red-800` = "red-800".asInstanceOf[`red-800`]
+  
+  @js.native
+  sealed trait `red-900`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `red-900`: `red-900` = "red-900".asInstanceOf[`red-900`]
   
   @js.native
   sealed trait regular
@@ -950,36 +2066,128 @@ object reactTypesSharedStrings {
   inline def `safe center`: `safe center` = ("safe center").asInstanceOf[`safe center`]
   
   @js.native
+  sealed trait `seafoam-100`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `seafoam-100`: `seafoam-100` = "seafoam-100".asInstanceOf[`seafoam-100`]
+  
+  @js.native
+  sealed trait `seafoam-1000`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `seafoam-1000`: `seafoam-1000` = "seafoam-1000".asInstanceOf[`seafoam-1000`]
+  
+  @js.native
+  sealed trait `seafoam-1100`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `seafoam-1100`: `seafoam-1100` = "seafoam-1100".asInstanceOf[`seafoam-1100`]
+  
+  @js.native
+  sealed trait `seafoam-1200`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `seafoam-1200`: `seafoam-1200` = "seafoam-1200".asInstanceOf[`seafoam-1200`]
+  
+  @js.native
+  sealed trait `seafoam-1300`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `seafoam-1300`: `seafoam-1300` = "seafoam-1300".asInstanceOf[`seafoam-1300`]
+  
+  @js.native
+  sealed trait `seafoam-1400`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `seafoam-1400`: `seafoam-1400` = "seafoam-1400".asInstanceOf[`seafoam-1400`]
+  
+  @js.native
+  sealed trait `seafoam-200`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `seafoam-200`: `seafoam-200` = "seafoam-200".asInstanceOf[`seafoam-200`]
+  
+  @js.native
+  sealed trait `seafoam-300`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `seafoam-300`: `seafoam-300` = "seafoam-300".asInstanceOf[`seafoam-300`]
+  
+  @js.native
   sealed trait `seafoam-400`
     extends StObject
        with BackgroundColorValue
+       with BackgroundColorValueV6
        with BorderColorValue
+       with BorderColorValueV6
        with ColorValue
+       with ColorValueV6
   inline def `seafoam-400`: `seafoam-400` = "seafoam-400".asInstanceOf[`seafoam-400`]
   
   @js.native
   sealed trait `seafoam-500`
     extends StObject
        with BackgroundColorValue
+       with BackgroundColorValueV6
        with BorderColorValue
+       with BorderColorValueV6
        with ColorValue
+       with ColorValueV6
   inline def `seafoam-500`: `seafoam-500` = "seafoam-500".asInstanceOf[`seafoam-500`]
   
   @js.native
   sealed trait `seafoam-600`
     extends StObject
        with BackgroundColorValue
+       with BackgroundColorValueV6
        with BorderColorValue
+       with BorderColorValueV6
        with ColorValue
+       with ColorValueV6
   inline def `seafoam-600`: `seafoam-600` = "seafoam-600".asInstanceOf[`seafoam-600`]
   
   @js.native
   sealed trait `seafoam-700`
     extends StObject
        with BackgroundColorValue
+       with BackgroundColorValueV6
        with BorderColorValue
+       with BorderColorValueV6
        with ColorValue
+       with ColorValueV6
   inline def `seafoam-700`: `seafoam-700` = "seafoam-700".asInstanceOf[`seafoam-700`]
+  
+  @js.native
+  sealed trait `seafoam-800`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `seafoam-800`: `seafoam-800` = "seafoam-800".asInstanceOf[`seafoam-800`]
+  
+  @js.native
+  sealed trait `seafoam-900`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `seafoam-900`: `seafoam-900` = "seafoam-900".asInstanceOf[`seafoam-900`]
   
   @js.native
   sealed trait search extends StObject
@@ -1144,6 +2352,12 @@ object reactTypesSharedStrings {
   inline def `size-250`: `size-250` = "size-250".asInstanceOf[`size-250`]
   
   @js.native
+  sealed trait `size-275`
+    extends StObject
+       with _DimensionValue
+  inline def `size-275`: `size-275` = "size-275".asInstanceOf[`size-275`]
+  
+  @js.native
   sealed trait `size-300`
     extends StObject
        with _DimensionValue
@@ -1154,6 +2368,12 @@ object reactTypesSharedStrings {
     extends StObject
        with _DimensionValue
   inline def `size-3000`: `size-3000` = "size-3000".asInstanceOf[`size-3000`]
+  
+  @js.native
+  sealed trait `size-325`
+    extends StObject
+       with _DimensionValue
+  inline def `size-325`: `size-325` = "size-325".asInstanceOf[`size-325`]
   
   @js.native
   sealed trait `size-3400`
@@ -2196,20 +3416,28 @@ object reactTypesSharedStrings {
   @js.native
   sealed trait `translucent-dark`
     extends StObject
+       with BorderColorAlias
        with BorderColorValue
+       with BorderColorValueV6
   inline def `translucent-dark`: `translucent-dark` = "translucent-dark".asInstanceOf[`translucent-dark`]
   
   @js.native
   sealed trait `translucent-darker`
     extends StObject
+       with BorderColorAlias
        with BorderColorValue
+       with BorderColorValueV6
   inline def `translucent-darker`: `translucent-darker` = "translucent-darker".asInstanceOf[`translucent-darker`]
   
   @js.native
   sealed trait transparent
     extends StObject
+       with BackgroundColorAlias
        with BackgroundColorValue
+       with BackgroundColorValueV6
+       with BorderColorAlias
        with BorderColorValue
+       with BorderColorValueV6
   inline def transparent: transparent = "transparent".asInstanceOf[transparent]
   
   @js.native
@@ -2253,34 +3481,126 @@ object reactTypesSharedStrings {
   inline def xsmall: xsmall = "xsmall".asInstanceOf[xsmall]
   
   @js.native
+  sealed trait `yellow-100`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `yellow-100`: `yellow-100` = "yellow-100".asInstanceOf[`yellow-100`]
+  
+  @js.native
+  sealed trait `yellow-1000`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `yellow-1000`: `yellow-1000` = "yellow-1000".asInstanceOf[`yellow-1000`]
+  
+  @js.native
+  sealed trait `yellow-1100`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `yellow-1100`: `yellow-1100` = "yellow-1100".asInstanceOf[`yellow-1100`]
+  
+  @js.native
+  sealed trait `yellow-1200`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `yellow-1200`: `yellow-1200` = "yellow-1200".asInstanceOf[`yellow-1200`]
+  
+  @js.native
+  sealed trait `yellow-1300`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `yellow-1300`: `yellow-1300` = "yellow-1300".asInstanceOf[`yellow-1300`]
+  
+  @js.native
+  sealed trait `yellow-1400`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `yellow-1400`: `yellow-1400` = "yellow-1400".asInstanceOf[`yellow-1400`]
+  
+  @js.native
+  sealed trait `yellow-200`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `yellow-200`: `yellow-200` = "yellow-200".asInstanceOf[`yellow-200`]
+  
+  @js.native
+  sealed trait `yellow-300`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `yellow-300`: `yellow-300` = "yellow-300".asInstanceOf[`yellow-300`]
+  
+  @js.native
   sealed trait `yellow-400`
     extends StObject
        with BackgroundColorValue
+       with BackgroundColorValueV6
        with BorderColorValue
+       with BorderColorValueV6
        with ColorValue
+       with ColorValueV6
   inline def `yellow-400`: `yellow-400` = "yellow-400".asInstanceOf[`yellow-400`]
   
   @js.native
   sealed trait `yellow-500`
     extends StObject
        with BackgroundColorValue
+       with BackgroundColorValueV6
        with BorderColorValue
+       with BorderColorValueV6
        with ColorValue
+       with ColorValueV6
   inline def `yellow-500`: `yellow-500` = "yellow-500".asInstanceOf[`yellow-500`]
   
   @js.native
   sealed trait `yellow-600`
     extends StObject
        with BackgroundColorValue
+       with BackgroundColorValueV6
        with BorderColorValue
+       with BorderColorValueV6
        with ColorValue
+       with ColorValueV6
   inline def `yellow-600`: `yellow-600` = "yellow-600".asInstanceOf[`yellow-600`]
   
   @js.native
   sealed trait `yellow-700`
     extends StObject
        with BackgroundColorValue
+       with BackgroundColorValueV6
        with BorderColorValue
+       with BorderColorValueV6
        with ColorValue
+       with ColorValueV6
   inline def `yellow-700`: `yellow-700` = "yellow-700".asInstanceOf[`yellow-700`]
+  
+  @js.native
+  sealed trait `yellow-800`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `yellow-800`: `yellow-800` = "yellow-800".asInstanceOf[`yellow-800`]
+  
+  @js.native
+  sealed trait `yellow-900`
+    extends StObject
+       with BackgroundColorValueV6
+       with BorderColorValueV6
+       with ColorValueV6
+  inline def `yellow-900`: `yellow-900` = "yellow-900".asInstanceOf[`yellow-900`]
 }

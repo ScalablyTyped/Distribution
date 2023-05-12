@@ -4,12 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * This interface provides convenience methods for generating matrices to use
-  * for rendering WebGL scenes on top of the Google base map. <br><br>Note: A
-  * reference to this object should <b>not</b> be held outside of the scope of
-  * the encapsulating {@link google.maps.WebGLOverlayView.onDraw} call.
-  */
 @js.native
 trait CoordinateTransformer extends StObject {
   

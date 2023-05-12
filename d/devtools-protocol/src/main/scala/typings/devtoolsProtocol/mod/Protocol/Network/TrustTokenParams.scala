@@ -14,19 +14,18 @@ trait TrustTokenParams extends StObject {
     */
   var issuers: js.UndefOr[js.Array[String]] = js.undefined
   
+  var operation: TrustTokenOperationType
+  
   /**
-    * Only set for "token-redemption" type and determine whether
+    * Only set for "token-redemption" operation and determine whether
     * to request a fresh SRR or use a still valid cached SRR. (TrustTokenParamsRefreshPolicy enum)
     */
   var refreshPolicy: UseCached | Refresh
-  
-  var `type`: TrustTokenOperationType
 }
 object TrustTokenParams {
   
-  inline def apply(refreshPolicy: UseCached | Refresh, `type`: TrustTokenOperationType): TrustTokenParams = {
-    val __obj = js.Dynamic.literal(refreshPolicy = refreshPolicy.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  inline def apply(operation: TrustTokenOperationType, refreshPolicy: UseCached | Refresh): TrustTokenParams = {
+    val __obj = js.Dynamic.literal(operation = operation.asInstanceOf[js.Any], refreshPolicy = refreshPolicy.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrustTokenParams]
   }
   
@@ -39,8 +38,8 @@ object TrustTokenParams {
     
     inline def setIssuersVarargs(value: String*): Self = StObject.set(x, "issuers", js.Array(value*))
     
-    inline def setRefreshPolicy(value: UseCached | Refresh): Self = StObject.set(x, "refreshPolicy", value.asInstanceOf[js.Any])
+    inline def setOperation(value: TrustTokenOperationType): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     
-    inline def setType(value: TrustTokenOperationType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setRefreshPolicy(value: UseCached | Refresh): Self = StObject.set(x, "refreshPolicy", value.asInstanceOf[js.Any])
   }
 }

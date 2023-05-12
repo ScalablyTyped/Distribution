@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ModifyVpnTunnelCertificateResult extends StObject {
   
+  /**
+    * Information about the VPN connection.
+    */
   var VpnConnection: js.UndefOr[typings.awsSdk.clientsEc2Mod.VpnConnection] = js.undefined
 }
 object ModifyVpnTunnelCertificateResult {

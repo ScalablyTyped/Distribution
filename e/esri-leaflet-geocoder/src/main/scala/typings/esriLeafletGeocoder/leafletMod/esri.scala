@@ -3,6 +3,7 @@ package typings.esriLeafletGeocoder.leafletMod
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
 import typings.esriLeafletGeocoder.anon.Address
+import typings.geojson.mod.GeometryObject
 import typings.leaflet.leafletStrings.add
 import typings.leaflet.leafletStrings.autopanstart
 import typings.leaflet.leafletStrings.baselayerchange
@@ -1097,7 +1098,7 @@ object esri {
       
       var bounds: js.UndefOr[LatLngBoundsExpression] = js.undefined
       
-      var geojson: js.UndefOr[GeoJSON__[Any]] = js.undefined
+      var geojson: js.UndefOr[GeoJSON__[Any, GeometryObject]] = js.undefined
       
       var latlng: js.UndefOr[LatLngExpression] = js.undefined
       
@@ -1121,7 +1122,7 @@ object esri {
         
         inline def setBoundsVarargs(value: LatLngTuple*): Self = StObject.set(x, "bounds", js.Array(value*))
         
-        inline def setGeojson(value: GeoJSON__[Any]): Self = StObject.set(x, "geojson", value.asInstanceOf[js.Any])
+        inline def setGeojson(value: GeoJSON__[Any, GeometryObject]): Self = StObject.set(x, "geojson", value.asInstanceOf[js.Any])
         
         inline def setGeojsonUndefined: Self = StObject.set(x, "geojson", js.undefined)
         

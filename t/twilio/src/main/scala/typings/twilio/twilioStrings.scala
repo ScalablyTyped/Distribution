@@ -13,6 +13,7 @@ import typings.twilio.libRestPreviewSyncServiceSyncMapSyncMapItemMod.SyncMapItem
 import typings.twilio.libRestPreviewUnderstandAssistantModelBuildMod.ModelBuildStatus
 import typings.twilio.libTwimlFaxResponseMod.ReceiveMediaType
 import typings.twilio.libTwimlFaxResponseMod.ReceivePageSize
+import typings.twilio.libTwimlVoiceResponseMod.ApplicationEvent
 import typings.twilio.libTwimlVoiceResponseMod.ClientEvent
 import typings.twilio.libTwimlVoiceResponseMod.ConferenceBeep
 import typings.twilio.libTwimlVoiceResponseMod.ConferenceEvent
@@ -54,8 +55,8 @@ import typings.twilio.libTwimlVoiceResponseMod.SsmlBreakStrength
 import typings.twilio.libTwimlVoiceResponseMod.SsmlEmphasisLevel
 import typings.twilio.libTwimlVoiceResponseMod.SsmlLangXmlLang
 import typings.twilio.libTwimlVoiceResponseMod.SsmlPhonemeAlphabet
+import typings.twilio.libTwimlVoiceResponseMod.SsmlSayAsFormat
 import typings.twilio.libTwimlVoiceResponseMod.SsmlSayAsInterpretAs
-import typings.twilio.libTwimlVoiceResponseMod.SsmlSayAsRole
 import typings.twilio.libTwimlVoiceResponseMod.StreamStatusCallbackMethod
 import typings.twilio.libTwimlVoiceResponseMod.StreamTrack
 import org.scalablytyped.runtime.StObject
@@ -107,6 +108,12 @@ object twilioStrings {
   inline def PollyDotAditi: PollyDotAditi = "Polly.Aditi".asInstanceOf[PollyDotAditi]
   
   @js.native
+  sealed trait `PollyDotAdriano-Neural`
+    extends StObject
+       with SayVoice
+  inline def `PollyDotAdriano-Neural`: `PollyDotAdriano-Neural` = "Polly.Adriano-Neural".asInstanceOf[`PollyDotAdriano-Neural`]
+  
+  @js.native
   sealed trait PollyDotAmy
     extends StObject
        with SayVoice
@@ -117,6 +124,12 @@ object twilioStrings {
     extends StObject
        with SayVoice
   inline def `PollyDotAmy-Neural`: `PollyDotAmy-Neural` = "Polly.Amy-Neural".asInstanceOf[`PollyDotAmy-Neural`]
+  
+  @js.native
+  sealed trait `PollyDotAndres-Neural`
+    extends StObject
+       with SayVoice
+  inline def `PollyDotAndres-Neural`: `PollyDotAndres-Neural` = "Polly.Andres-Neural".asInstanceOf[`PollyDotAndres-Neural`]
   
   @js.native
   sealed trait `PollyDotAria-Neural`
@@ -233,6 +246,12 @@ object twilioStrings {
   inline def PollyDotDora: PollyDotDora = "Polly.Dora".asInstanceOf[PollyDotDora]
   
   @js.native
+  sealed trait `PollyDotElin-Neural`
+    extends StObject
+       with SayVoice
+  inline def `PollyDotElin-Neural`: `PollyDotElin-Neural` = "Polly.Elin-Neural".asInstanceOf[`PollyDotElin-Neural`]
+  
+  @js.native
   sealed trait PollyDotEmma
     extends StObject
        with SayVoice
@@ -287,6 +306,12 @@ object twilioStrings {
   inline def PollyDotGwyneth: PollyDotGwyneth = "Polly.Gwyneth".asInstanceOf[PollyDotGwyneth]
   
   @js.native
+  sealed trait `PollyDotHala-Neural`
+    extends StObject
+       with SayVoice
+  inline def `PollyDotHala-Neural`: `PollyDotHala-Neural` = "Polly.Hala-Neural".asInstanceOf[`PollyDotHala-Neural`]
+  
+  @js.native
   sealed trait `PollyDotHannah-Neural`
     extends StObject
        with SayVoice
@@ -297,6 +322,18 @@ object twilioStrings {
     extends StObject
        with SayVoice
   inline def PollyDotHans: PollyDotHans = "Polly.Hans".asInstanceOf[PollyDotHans]
+  
+  @js.native
+  sealed trait `PollyDotHiujin-Neural`
+    extends StObject
+       with SayVoice
+  inline def `PollyDotHiujin-Neural`: `PollyDotHiujin-Neural` = "Polly.Hiujin-Neural".asInstanceOf[`PollyDotHiujin-Neural`]
+  
+  @js.native
+  sealed trait `PollyDotIda-Neural`
+    extends StObject
+       with SayVoice
+  inline def `PollyDotIda-Neural`: `PollyDotIda-Neural` = "Polly.Ida-Neural".asInstanceOf[`PollyDotIda-Neural`]
   
   @js.native
   sealed trait PollyDotInes
@@ -383,6 +420,12 @@ object twilioStrings {
   inline def PollyDotKarl: PollyDotKarl = "Polly.Karl".asInstanceOf[PollyDotKarl]
   
   @js.native
+  sealed trait `PollyDotKazuha-Neural`
+    extends StObject
+       with SayVoice
+  inline def `PollyDotKazuha-Neural`: `PollyDotKazuha-Neural` = "Polly.Kazuha-Neural".asInstanceOf[`PollyDotKazuha-Neural`]
+  
+  @js.native
   sealed trait PollyDotKendra
     extends StObject
        with SayVoice
@@ -411,6 +454,12 @@ object twilioStrings {
     extends StObject
        with SayVoice
   inline def `PollyDotKimberly-Neural`: `PollyDotKimberly-Neural` = "Polly.Kimberly-Neural".asInstanceOf[`PollyDotKimberly-Neural`]
+  
+  @js.native
+  sealed trait `PollyDotLaura-Neural`
+    extends StObject
+       with SayVoice
+  inline def `PollyDotLaura-Neural`: `PollyDotLaura-Neural` = "Polly.Laura-Neural".asInstanceOf[`PollyDotLaura-Neural`]
   
   @js.native
   sealed trait PollyDotLea
@@ -545,6 +594,12 @@ object twilioStrings {
   inline def PollyDotNicole: PollyDotNicole = "Polly.Nicole".asInstanceOf[PollyDotNicole]
   
   @js.native
+  sealed trait `PollyDotOla-Neural`
+    extends StObject
+       with SayVoice
+  inline def `PollyDotOla-Neural`: `PollyDotOla-Neural` = "Polly.Ola-Neural".asInstanceOf[`PollyDotOla-Neural`]
+  
+  @js.native
   sealed trait `PollyDotOlivia-Neural`
     extends StObject
        with SayVoice
@@ -569,6 +624,12 @@ object twilioStrings {
   inline def PollyDotRaveena: PollyDotRaveena = "Polly.Raveena".asInstanceOf[PollyDotRaveena]
   
   @js.native
+  sealed trait `PollyDotRemi-Neural`
+    extends StObject
+       with SayVoice
+  inline def `PollyDotRemi-Neural`: `PollyDotRemi-Neural` = "Polly.Remi-Neural".asInstanceOf[`PollyDotRemi-Neural`]
+  
+  @js.native
   sealed trait PollyDotRicardo
     extends StObject
        with SayVoice
@@ -585,6 +646,12 @@ object twilioStrings {
     extends StObject
        with SayVoice
   inline def PollyDotRussell: PollyDotRussell = "Polly.Russell".asInstanceOf[PollyDotRussell]
+  
+  @js.native
+  sealed trait `PollyDotRuth-Neural`
+    extends StObject
+       with SayVoice
+  inline def `PollyDotRuth-Neural`: `PollyDotRuth-Neural` = "Polly.Ruth-Neural".asInstanceOf[`PollyDotRuth-Neural`]
   
   @js.native
   sealed trait PollyDotSalli
@@ -611,6 +678,24 @@ object twilioStrings {
   inline def `PollyDotSeoyeon-Neural`: `PollyDotSeoyeon-Neural` = "Polly.Seoyeon-Neural".asInstanceOf[`PollyDotSeoyeon-Neural`]
   
   @js.native
+  sealed trait `PollyDotSergio-Neural`
+    extends StObject
+       with SayVoice
+  inline def `PollyDotSergio-Neural`: `PollyDotSergio-Neural` = "Polly.Sergio-Neural".asInstanceOf[`PollyDotSergio-Neural`]
+  
+  @js.native
+  sealed trait `PollyDotStephen-Neural`
+    extends StObject
+       with SayVoice
+  inline def `PollyDotStephen-Neural`: `PollyDotStephen-Neural` = "Polly.Stephen-Neural".asInstanceOf[`PollyDotStephen-Neural`]
+  
+  @js.native
+  sealed trait `PollyDotSuvi-Neural`
+    extends StObject
+       with SayVoice
+  inline def `PollyDotSuvi-Neural`: `PollyDotSuvi-Neural` = "Polly.Suvi-Neural".asInstanceOf[`PollyDotSuvi-Neural`]
+  
+  @js.native
   sealed trait PollyDotTakumi
     extends StObject
        with SayVoice
@@ -627,6 +712,18 @@ object twilioStrings {
     extends StObject
        with SayVoice
   inline def PollyDotTatyana: PollyDotTatyana = "Polly.Tatyana".asInstanceOf[PollyDotTatyana]
+  
+  @js.native
+  sealed trait `PollyDotThiago-Neural`
+    extends StObject
+       with SayVoice
+  inline def `PollyDotThiago-Neural`: `PollyDotThiago-Neural` = "Polly.Thiago-Neural".asInstanceOf[`PollyDotThiago-Neural`]
+  
+  @js.native
+  sealed trait `PollyDotTomoko-Neural`
+    extends StObject
+       with SayVoice
+  inline def `PollyDotTomoko-Neural`: `PollyDotTomoko-Neural` = "Polly.Tomoko-Neural".asInstanceOf[`PollyDotTomoko-Neural`]
   
   @js.native
   sealed trait PollyDotVicki
@@ -663,6 +760,12 @@ object twilioStrings {
     extends StObject
        with SayVoice
   inline def PollyDotZhiyu: PollyDotZhiyu = "Polly.Zhiyu".asInstanceOf[PollyDotZhiyu]
+  
+  @js.native
+  sealed trait `PollyDotZhiyu-Neural`
+    extends StObject
+       with SayVoice
+  inline def `PollyDotZhiyu-Neural`: `PollyDotZhiyu-Neural` = "Polly.Zhiyu-Neural".asInstanceOf[`PollyDotZhiyu-Neural`]
   
   @js.native
   sealed trait a4
@@ -732,6 +835,7 @@ object twilioStrings {
   @js.native
   sealed trait answered
     extends StObject
+       with ApplicationEvent
        with ClientEvent
        with NumberEvent
        with SipEvent
@@ -747,6 +851,7 @@ object twilioStrings {
   sealed trait `ar-AE`
     extends StObject
        with GatherLanguage
+       with SsmlLangXmlLang
   inline def `ar-AE`: `ar-AE` = "ar-AE".asInstanceOf[`ar-AE`]
   
   @js.native
@@ -1009,10 +1114,10 @@ object twilioStrings {
   inline def ch: ch = "ch".asInstanceOf[ch]
   
   @js.native
-  sealed trait character
+  sealed trait characters
     extends StObject
        with SsmlSayAsInterpretAs
-  inline def character: character = "character".asInstanceOf[character]
+  inline def characters: characters = "characters".asInstanceOf[characters]
   
   @js.native
   sealed trait chat extends StObject
@@ -1063,6 +1168,7 @@ object twilioStrings {
   @js.native
   sealed trait completed
     extends StObject
+       with ApplicationEvent
        with ClientEvent
        with ConferenceRecordingEvent
        with ConversationRecordingEvent
@@ -1115,7 +1221,7 @@ object twilioStrings {
   @js.native
   sealed trait d
     extends StObject
-       with SsmlSayAsRole
+       with SsmlSayAsFormat
   inline def d: d = "d".asInstanceOf[d]
   
   @js.native
@@ -1206,13 +1312,13 @@ object twilioStrings {
   @js.native
   sealed trait dm
     extends StObject
-       with SsmlSayAsRole
+       with SsmlSayAsFormat
   inline def dm: dm = "dm".asInstanceOf[dm]
   
   @js.native
   sealed trait dmy
     extends StObject
-       with SsmlSayAsRole
+       with SsmlSayAsFormat
   inline def dmy: dmy = "dmy".asInstanceOf[dmy]
   
   @js.native
@@ -1592,17 +1698,18 @@ object twilioStrings {
     extends StObject
        with GatherLanguage
        with SayLanguage
+       with SsmlLangXmlLang
   inline def `fi-FI`: `fi-FI` = "fi-FI".asInstanceOf[`fi-FI`]
+  
+  @js.native
+  sealed trait fifo extends StObject
+  inline def fifo: fifo = "fifo".asInstanceOf[fifo]
   
   @js.native
   sealed trait `fil-PH`
     extends StObject
        with GatherLanguage
   inline def `fil-PH`: `fil-PH` = "fil-PH".asInstanceOf[`fil-PH`]
-  
-  @js.native
-  sealed trait first_page_uri extends StObject
-  inline def first_page_uri: first_page_uri = "first_page_uri".asInstanceOf[first_page_uri]
   
   @js.native
   sealed trait fr
@@ -1764,6 +1871,7 @@ object twilioStrings {
   @js.native
   sealed trait initiated
     extends StObject
+       with ApplicationEvent
        with ClientEvent
        with NumberEvent
        with SipEvent
@@ -1804,10 +1912,6 @@ object twilioStrings {
     extends StObject
        with PromptErrorType
   inline def `invalid-security-code`: `invalid-security-code` = "invalid-security-code".asInstanceOf[`invalid-security-code`]
-  
-  @js.native
-  sealed trait ip_messaging extends StObject
-  inline def ip_messaging: ip_messaging = "ip_messaging".asInstanceOf[ip_messaging]
   
   @js.native
   sealed trait ipa
@@ -1910,10 +2014,6 @@ object twilioStrings {
   inline def large: large = "large".asInstanceOf[large]
   
   @js.native
-  sealed trait last_page_uri extends StObject
-  inline def last_page_uri: last_page_uri = "last_page_uri".asInstanceOf[last_page_uri]
-  
-  @js.native
   sealed trait leave
     extends StObject
        with ConferenceEvent
@@ -1930,6 +2030,10 @@ object twilioStrings {
     extends StObject
        with ReceivePageSize
   inline def letter: letter = "letter".asInstanceOf[letter]
+  
+  @js.native
+  sealed trait lifo extends StObject
+  inline def lifo: lifo = "lifo".asInstanceOf[lifo]
   
   @js.native
   sealed trait `lo-LA`
@@ -1958,7 +2062,7 @@ object twilioStrings {
   @js.native
   sealed trait m
     extends StObject
-       with SsmlSayAsRole
+       with SsmlSayAsFormat
   inline def m: m = "m".asInstanceOf[m]
   
   @js.native
@@ -1984,13 +2088,13 @@ object twilioStrings {
   @js.native
   sealed trait md
     extends StObject
-       with SsmlSayAsRole
+       with SsmlSayAsFormat
   inline def md: md = "md".asInstanceOf[md]
   
   @js.native
   sealed trait mdy
     extends StObject
-       with SsmlSayAsRole
+       with SsmlSayAsFormat
   inline def mdy: mdy = "mdy".asInstanceOf[mdy]
   
   @js.native
@@ -2058,7 +2162,7 @@ object twilioStrings {
   sealed trait my
     extends StObject
        with DialRingTone
-       with SsmlSayAsRole
+       with SsmlSayAsFormat
   inline def my: my = "my".asInstanceOf[my]
   
   @js.native
@@ -2086,10 +2190,6 @@ object twilioStrings {
     extends StObject
        with GatherLanguage
   inline def `ne-NP`: `ne-NP` = "ne-NP".asInstanceOf[`ne-NP`]
-  
-  @js.native
-  sealed trait next_page_uri extends StObject
-  inline def next_page_uri: next_page_uri = "next_page_uri".asInstanceOf[next_page_uri]
   
   @js.native
   sealed trait nl
@@ -2122,10 +2222,6 @@ object twilioStrings {
     extends StObject
        with SsmlBreakStrength
   inline def none: none = "none".asInstanceOf[none]
-  
-  @js.native
-  sealed trait num_pages extends StObject
-  inline def num_pages: num_pages = "num_pages".asInstanceOf[num_pages]
   
   @js.native
   sealed trait number
@@ -2206,14 +2302,6 @@ object twilioStrings {
     extends StObject
        with GatherLanguage
   inline def `pa-guru-IN`: `pa-guru-IN` = "pa-guru-IN".asInstanceOf[`pa-guru-IN`]
-  
-  @js.native
-  sealed trait page extends StObject
-  inline def page: page = "page".asInstanceOf[page]
-  
-  @js.native
-  sealed trait page_size extends StObject
-  inline def page_size: page_size = "page_size".asInstanceOf[page_size]
   
   @js.native
   sealed trait patch
@@ -2302,10 +2390,6 @@ object twilioStrings {
     extends StObject
        with PromptFor
   inline def `postal-code`: `postal-code` = "postal-code".asInstanceOf[`postal-code`]
-  
-  @js.native
-  sealed trait previous_page_uri extends StObject
-  inline def previous_page_uri: previous_page_uri = "previous_page_uri".asInstanceOf[previous_page_uri]
   
   @js.native
   sealed trait pt
@@ -2397,6 +2481,7 @@ object twilioStrings {
   @js.native
   sealed trait ringing
     extends StObject
+       with ApplicationEvent
        with ClientEvent
        with NumberEvent
        with SipEvent
@@ -2411,10 +2496,6 @@ object twilioStrings {
   inline def `ro-RO`: `ro-RO` = "ro-RO".asInstanceOf[`ro-RO`]
   
   @js.native
-  sealed trait rtc extends StObject
-  inline def rtc: rtc = "rtc".asInstanceOf[rtc]
-  
-  @js.native
   sealed trait ru
     extends StObject
        with DialRingTone
@@ -2427,18 +2508,6 @@ object twilioStrings {
        with SayLanguage
        with SsmlLangXmlLang
   inline def `ru-RU`: `ru-RU` = "ru-RU".asInstanceOf[`ru-RU`]
-  
-  @js.native
-  sealed trait scopeColonclientColonincoming extends StObject
-  inline def scopeColonclientColonincoming: scopeColonclientColonincoming = "scope:client:incoming".asInstanceOf[scopeColonclientColonincoming]
-  
-  @js.native
-  sealed trait scopeColonclientColonoutgoing extends StObject
-  inline def scopeColonclientColonoutgoing: scopeColonclientColonoutgoing = "scope:client:outgoing".asInstanceOf[scopeColonclientColonoutgoing]
-  
-  @js.native
-  sealed trait scopeColonstreamColonsubscribe extends StObject
-  inline def scopeColonstreamColonsubscribe: scopeColonstreamColonsubscribe = "scope:stream:subscribe".asInstanceOf[scopeColonstreamColonsubscribe]
   
   @js.native
   sealed trait se
@@ -2641,10 +2710,6 @@ object twilioStrings {
   inline def timeout: timeout = "timeout".asInstanceOf[timeout]
   
   @js.native
-  sealed trait total extends StObject
-  inline def total: total = "total".asInstanceOf[total]
-  
-  @js.native
   sealed trait `tr-TR`
     extends StObject
        with GatherLanguage
@@ -2703,10 +2768,6 @@ object twilioStrings {
     extends StObject
        with GatherLanguage
   inline def `ur-PK`: `ur-PK` = "ur-PK".asInstanceOf[`ur-PK`]
-  
-  @js.native
-  sealed trait uri extends StObject
-  inline def uri: uri = "uri".asInstanceOf[uri]
   
   @js.native
   sealed trait us
@@ -2779,6 +2840,30 @@ object twilioStrings {
   inline def woman: woman = "woman".asInstanceOf[woman]
   
   @js.native
+  sealed trait `x-amazon-jyutping`
+    extends StObject
+       with SsmlPhonemeAlphabet
+  inline def `x-amazon-jyutping`: `x-amazon-jyutping` = "x-amazon-jyutping".asInstanceOf[`x-amazon-jyutping`]
+  
+  @js.native
+  sealed trait `x-amazon-pinyin`
+    extends StObject
+       with SsmlPhonemeAlphabet
+  inline def `x-amazon-pinyin`: `x-amazon-pinyin` = "x-amazon-pinyin".asInstanceOf[`x-amazon-pinyin`]
+  
+  @js.native
+  sealed trait `x-amazon-pron-kana`
+    extends StObject
+       with SsmlPhonemeAlphabet
+  inline def `x-amazon-pron-kana`: `x-amazon-pron-kana` = "x-amazon-pron-kana".asInstanceOf[`x-amazon-pron-kana`]
+  
+  @js.native
+  sealed trait `x-amazon-yomigana`
+    extends StObject
+       with SsmlPhonemeAlphabet
+  inline def `x-amazon-yomigana`: `x-amazon-yomigana` = "x-amazon-yomigana".asInstanceOf[`x-amazon-yomigana`]
+  
+  @js.native
   sealed trait `x-sampa`
     extends StObject
        with SsmlPhonemeAlphabet
@@ -2799,20 +2884,26 @@ object twilioStrings {
   @js.native
   sealed trait y
     extends StObject
-       with SsmlSayAsRole
+       with SsmlSayAsFormat
   inline def y: y = "y".asInstanceOf[y]
   
   @js.native
   sealed trait ym
     extends StObject
-       with SsmlSayAsRole
+       with SsmlSayAsFormat
   inline def ym: ym = "ym".asInstanceOf[ym]
   
   @js.native
   sealed trait ymd
     extends StObject
-       with SsmlSayAsRole
+       with SsmlSayAsFormat
   inline def ymd: ymd = "ymd".asInstanceOf[ymd]
+  
+  @js.native
+  sealed trait `yue-CN`
+    extends StObject
+       with SsmlLangXmlLang
+  inline def `yue-CN`: `yue-CN` = "yue-CN".asInstanceOf[`yue-CN`]
   
   @js.native
   sealed trait `yue-Hant-HK`
@@ -2823,7 +2914,7 @@ object twilioStrings {
   @js.native
   sealed trait yyyymmdd
     extends StObject
-       with SsmlSayAsRole
+       with SsmlSayAsFormat
   inline def yyyymmdd: yyyymmdd = "yyyymmdd".asInstanceOf[yyyymmdd]
   
   @js.native

@@ -1,155 +1,96 @@
 package typings.twilio
 
-import typings.twilio.libBasePageMod.TwilioResponsePayload
-import typings.twilio.libInterfacesMod.SerializableClass
+import typings.twilio.anon.FieldsCount
+import typings.twilio.libRestPreviewUnderstandMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libRestPreviewUnderstandAssistantTaskTaskStatisticsMod {
   
-  @JSImport("twilio/lib/rest/preview/understand/assistant/task/taskStatistics", JSImport.Namespace)
+  @JSImport("twilio/lib/rest/preview/understand/assistant/task/taskStatistics", "TaskStatisticsContextImpl")
   @js.native
-  val ^ : js.Any = js.native
-  
-  @JSImport("twilio/lib/rest/preview/understand/assistant/task/taskStatistics", "TaskStatisticsContext")
-  @js.native
-  open class TaskStatisticsContext protected () extends StObject {
-    /**
-      * Initialize the TaskStatisticsContext
-      *
-      * PLEASE NOTE that this class contains preview products that are subject to
-      * change. Use them with caution. If you currently do not have developer preview
-      * access, please contact help@twilio.com.
-      *
-      * @param version - Version of the resource
-      * @param assistantSid - The unique ID of the parent Assistant.
-      * @param taskSid - The unique ID of the Task associated with this Field.
-      */
-    def this(version: typings.twilio.libRestPreviewUnderstandMod.^, assistantSid: String, taskSid: String) = this()
+  open class TaskStatisticsContextImpl protected ()
+    extends StObject
+       with TaskStatisticsContext {
+    def this(_version: default, assistantSid: String, taskSid: String) = this()
     
-    /**
-      * fetch a TaskStatisticsInstance
-      *
-      * @param callback - Callback to handle processed record
-      */
-    def fetch(): js.Promise[TaskStatisticsInstance] = js.native
-    def fetch(callback: js.Function2[/* error */ js.Error | Null, /* items */ TaskStatisticsInstance, Any]): js.Promise[TaskStatisticsInstance] = js.native
+    /* protected */ var _solution: TaskStatisticsContextSolution = js.native
     
-    /**
-      * Provide a user-friendly representation
-      */
-    def toJSON(): Any = js.native
+    /* protected */ var _uri: String = js.native
+    
+    /* protected */ var _version: default = js.native
   }
   
   @JSImport("twilio/lib/rest/preview/understand/assistant/task/taskStatistics", "TaskStatisticsInstance")
   @js.native
-  open class TaskStatisticsInstance protected () extends SerializableClass {
+  open class TaskStatisticsInstance protected () extends StObject {
+    def this(_version: default, payload: TaskStatisticsResource, assistantSid: String, taskSid: String) = this()
+    
+    /* protected */ var _context: js.UndefOr[TaskStatisticsContext] = js.native
+    
+    /* private */ def _proxy: Any = js.native
+    
+    /* protected */ var _solution: TaskStatisticsContextSolution = js.native
+    
+    /* protected */ var _version: default = js.native
+    
     /**
-      * Initialize the TaskStatisticsContext
-      *
-      * PLEASE NOTE that this class contains preview products that are subject to
-      * change. Use them with caution. If you currently do not have developer preview
-      * access, please contact help@twilio.com.
-      *
-      * @param version - Version of the resource
-      * @param payload - The instance payload
-      * @param assistantSid - The unique ID of the parent Assistant.
-      * @param taskSid - The unique ID of the Task associated with this Field.
+      * The unique ID of the Account that created this Field.
       */
-    def this(
-      version: typings.twilio.libRestPreviewUnderstandMod.^,
-      payload: TaskStatisticsPayload,
-      assistantSid: String,
-      taskSid: String
-    ) = this()
-    
-    /* private */ var _proxy: TaskStatisticsContext = js.native
-    
     var accountSid: String = js.native
     
+    /**
+      * The unique ID of the parent Assistant.
+      */
     var assistantSid: String = js.native
     
     /**
-      * fetch a TaskStatisticsInstance
+      * Fetch a TaskStatisticsInstance
       *
       * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed TaskStatisticsInstance
       */
     def fetch(): js.Promise[TaskStatisticsInstance] = js.native
-    def fetch(callback: js.Function2[/* error */ js.Error | Null, /* items */ this.type, Any]): js.Promise[TaskStatisticsInstance] = js.native
+    def fetch(callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[this.type], Any]): js.Promise[TaskStatisticsInstance] = js.native
     
+    /**
+      * The total number of Fields associated with this Task.
+      */
     var fieldsCount: Double = js.native
     
+    /**
+      * The total number of Samples associated with this Task.
+      */
     var samplesCount: Double = js.native
     
+    /**
+      * The unique ID of the Task associated with this Field.
+      */
     var taskSid: String = js.native
-    
-    var url: String = js.native
-  }
-  
-  /**
-    * Initialize the TaskStatisticsList
-    *
-    * PLEASE NOTE that this class contains preview products that are subject to
-    * change. Use them with caution. If you currently do not have developer preview
-    * access, please contact help@twilio.com.
-    *
-    * @param version - Version of the resource
-    * @param assistantSid - The unique ID of the parent Assistant.
-    * @param taskSid - The unique ID of the Task associated with this Field.
-    */
-  inline def TaskStatisticsList(version: typings.twilio.libRestPreviewUnderstandMod.^, assistantSid: String, taskSid: String): TaskStatisticsListInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("TaskStatisticsList")(version.asInstanceOf[js.Any], assistantSid.asInstanceOf[js.Any], taskSid.asInstanceOf[js.Any])).asInstanceOf[TaskStatisticsListInstance]
-  
-  @JSImport("twilio/lib/rest/preview/understand/assistant/task/taskStatistics", "TaskStatisticsPage")
-  @js.native
-  open class TaskStatisticsPage protected ()
-    extends typings.twilio.libBasePageMod.^[
-          typings.twilio.libRestPreviewUnderstandMod.^, 
-          TaskStatisticsPayload, 
-          TaskStatisticsResource, 
-          TaskStatisticsInstance
-        ] {
-    /**
-      * Initialize the TaskStatisticsPage
-      *
-      * PLEASE NOTE that this class contains preview products that are subject to
-      * change. Use them with caution. If you currently do not have developer preview
-      * access, please contact help@twilio.com.
-      *
-      * @param version - Version of the resource
-      * @param response - Response from the API
-      * @param solution - Path solution
-      */
-    def this(
-      version: typings.twilio.libRestPreviewUnderstandMod.^,
-      response: typings.twilio.libHttpResponseMod.^[String],
-      solution: TaskStatisticsSolution
-    ) = this()
-    
-    /**
-      * Build an instance of TaskStatisticsInstance
-      *
-      * @param payload - Payload response from the API
-      */
-    def getInstance(payload: TaskStatisticsPayload): TaskStatisticsInstance = js.native
     
     /**
       * Provide a user-friendly representation
+      *
+      * @returns Object
       */
-    def toJSON(): Any = js.native
+    def toJSON(): FieldsCount = js.native
+    
+    var url: String = js.native
   }
   
   @js.native
   trait TaskStatisticsListInstance extends StObject {
     
-    /**
-      * @param sid - sid of instance
-      */
-    def apply(sid: String): TaskStatisticsContext = js.native
+    def apply(): TaskStatisticsContext = js.native
     
-    /**
-      * Constructs a task_statistics
-      */
+    var _solution: TaskStatisticsSolution = js.native
+    
+    var _uri: String = js.native
+    
+    var _version: default = js.native
+    
     def get(): TaskStatisticsContext = js.native
     
     /**
@@ -157,29 +98,53 @@ object libRestPreviewUnderstandAssistantTaskTaskStatisticsMod {
       */
     def toJSON(): Any = js.native
   }
-  
-  trait TaskStatisticsPayload
-    extends StObject
-       with TaskStatisticsResource
-       with TwilioResponsePayload
-  object TaskStatisticsPayload {
+  object TaskStatisticsListInstance {
     
-    inline def apply(
-      account_sid: String,
-      assistant_sid: String,
-      fields_count: Double,
-      first_page_uri: String,
-      next_page_uri: String,
-      page: Double,
-      page_size: Double,
-      previous_page_uri: String,
-      samples_count: Double,
-      task_sid: String,
-      uri: String,
-      url: String
-    ): TaskStatisticsPayload = {
-      val __obj = js.Dynamic.literal(account_sid = account_sid.asInstanceOf[js.Any], assistant_sid = assistant_sid.asInstanceOf[js.Any], fields_count = fields_count.asInstanceOf[js.Any], first_page_uri = first_page_uri.asInstanceOf[js.Any], next_page_uri = next_page_uri.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any], page_size = page_size.asInstanceOf[js.Any], previous_page_uri = previous_page_uri.asInstanceOf[js.Any], samples_count = samples_count.asInstanceOf[js.Any], task_sid = task_sid.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-      __obj.asInstanceOf[TaskStatisticsPayload]
+    @JSImport("twilio/lib/rest/preview/understand/assistant/task/taskStatistics", "TaskStatisticsListInstance")
+    @js.native
+    def apply(version: default, assistantSid: String, taskSid: String): TaskStatisticsListInstance = js.native
+  }
+  
+  @js.native
+  trait TaskStatisticsContext extends StObject {
+    
+    /**
+      * Fetch a TaskStatisticsInstance
+      *
+      * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed TaskStatisticsInstance
+      */
+    def fetch(): js.Promise[TaskStatisticsInstance] = js.native
+    def fetch(
+      callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[TaskStatisticsInstance], Any]
+    ): js.Promise[TaskStatisticsInstance] = js.native
+    
+    /**
+      * Provide a user-friendly representation
+      */
+    def toJSON(): Any = js.native
+  }
+  
+  trait TaskStatisticsContextSolution extends StObject {
+    
+    var assistantSid: String
+    
+    var taskSid: String
+  }
+  object TaskStatisticsContextSolution {
+    
+    inline def apply(assistantSid: String, taskSid: String): TaskStatisticsContextSolution = {
+      val __obj = js.Dynamic.literal(assistantSid = assistantSid.asInstanceOf[js.Any], taskSid = taskSid.asInstanceOf[js.Any])
+      __obj.asInstanceOf[TaskStatisticsContextSolution]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TaskStatisticsContextSolution] (val x: Self) extends AnyVal {
+      
+      inline def setAssistantSid(value: String): Self = StObject.set(x, "assistantSid", value.asInstanceOf[js.Any])
+      
+      inline def setTaskSid(value: String): Self = StObject.set(x, "taskSid", value.asInstanceOf[js.Any])
     }
   }
   
@@ -230,14 +195,14 @@ object libRestPreviewUnderstandAssistantTaskTaskStatisticsMod {
   
   trait TaskStatisticsSolution extends StObject {
     
-    var assistantSid: js.UndefOr[String] = js.undefined
+    var assistantSid: String
     
-    var taskSid: js.UndefOr[String] = js.undefined
+    var taskSid: String
   }
   object TaskStatisticsSolution {
     
-    inline def apply(): TaskStatisticsSolution = {
-      val __obj = js.Dynamic.literal()
+    inline def apply(assistantSid: String, taskSid: String): TaskStatisticsSolution = {
+      val __obj = js.Dynamic.literal(assistantSid = assistantSid.asInstanceOf[js.Any], taskSid = taskSid.asInstanceOf[js.Any])
       __obj.asInstanceOf[TaskStatisticsSolution]
     }
     
@@ -246,11 +211,7 @@ object libRestPreviewUnderstandAssistantTaskTaskStatisticsMod {
       
       inline def setAssistantSid(value: String): Self = StObject.set(x, "assistantSid", value.asInstanceOf[js.Any])
       
-      inline def setAssistantSidUndefined: Self = StObject.set(x, "assistantSid", js.undefined)
-      
       inline def setTaskSid(value: String): Self = StObject.set(x, "taskSid", value.asInstanceOf[js.Any])
-      
-      inline def setTaskSidUndefined: Self = StObject.set(x, "taskSid", js.undefined)
     }
   }
 }

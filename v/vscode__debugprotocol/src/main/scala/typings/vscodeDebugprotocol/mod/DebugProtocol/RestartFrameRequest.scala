@@ -8,7 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** RestartFrame request; value of command field is 'restartFrame'.
-		The request restarts execution of the specified stackframe.
+		The request restarts execution of the specified stack frame.
 		The debug adapter first sends the response and then a `stopped` event (with reason `restart`) after the restart has completed.
 		Clients should only call this request if the corresponding capability `supportsRestartFrame` is true.
 	*/

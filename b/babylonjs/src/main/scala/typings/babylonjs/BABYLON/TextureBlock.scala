@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait TextureBlock
   extends StObject
-     with NodeMaterialBlock {
+     with NodeMaterialBlock
+     with NodeMaterialTextureBlocks {
   
   /* private */ var _convertToGammaSpace: Any = js.native
   
@@ -23,6 +24,8 @@ trait TextureBlock
   
   /* private */ var _generateTextureLookup: Any = js.native
   
+  /* private */ var _getUVW: Any = js.native
+  
   /* private */ var _imageSource: Any = js.native
   
   /* private */ var _injectVertexCode: Any = js.native
@@ -34,6 +37,10 @@ trait TextureBlock
   /* private */ var _mainUVDefineName: Any = js.native
   
   /* private */ var _mainUVName: Any = js.native
+  
+  /* private */ def _samplerFunc: Any = js.native
+  
+  /* private */ def _samplerLodSuffix: Any = js.native
   
   /* private */ var _samplerName: Any = js.native
   
@@ -93,9 +100,19 @@ trait TextureBlock
   def isReady(): Boolean = js.native
   
   /**
+    * Gets the layer input component
+    */
+  def layer: NodeMaterialConnectionPoint = js.native
+  
+  /**
     * Gets the level output component
     */
   def level: NodeMaterialConnectionPoint = js.native
+  
+  /**
+    * Gets the LOD input component
+    */
+  def lod: NodeMaterialConnectionPoint = js.native
   
   /**
     * Gets the r output component

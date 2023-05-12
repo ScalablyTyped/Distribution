@@ -22,14 +22,19 @@ trait IdentityProviderSummary extends StObject {
   var Product: String
   
   /**
+    * An object that details the registered identity provider’s product related configuration settings such as the subnets to provision VPC endpoints.
+    */
+  var Settings: typings.awsSdk.clientsLicensemanagerusersubscriptionsMod.Settings
+  
+  /**
     * The status of an identity provider.
     */
   var Status: String
 }
 object IdentityProviderSummary {
   
-  inline def apply(IdentityProvider: IdentityProvider, Product: String, Status: String): IdentityProviderSummary = {
-    val __obj = js.Dynamic.literal(IdentityProvider = IdentityProvider.asInstanceOf[js.Any], Product = Product.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any])
+  inline def apply(IdentityProvider: IdentityProvider, Product: String, Settings: Settings, Status: String): IdentityProviderSummary = {
+    val __obj = js.Dynamic.literal(IdentityProvider = IdentityProvider.asInstanceOf[js.Any], Product = Product.asInstanceOf[js.Any], Settings = Settings.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdentityProviderSummary]
   }
   
@@ -43,6 +48,8 @@ object IdentityProviderSummary {
     inline def setIdentityProvider(value: IdentityProvider): Self = StObject.set(x, "IdentityProvider", value.asInstanceOf[js.Any])
     
     inline def setProduct(value: String): Self = StObject.set(x, "Product", value.asInstanceOf[js.Any])
+    
+    inline def setSettings(value: Settings): Self = StObject.set(x, "Settings", value.asInstanceOf[js.Any])
     
     inline def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
   }

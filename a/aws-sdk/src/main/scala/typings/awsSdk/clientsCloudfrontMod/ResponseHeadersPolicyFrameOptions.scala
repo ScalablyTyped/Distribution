@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ResponseHeadersPolicyFrameOptions extends StObject {
   
   /**
-    * The value of the X-Frame-Options HTTP response header. Valid values are DENY and SAMEORIGIN.  For more information about these values, see X-Frame-Options in the MDN Web Docs.
+    * The value of the X-Frame-Options HTTP response header. Valid values are DENY and SAMEORIGIN. For more information about these values, see X-Frame-Options in the MDN Web Docs.
     */
   var FrameOption: FrameOptionsList
   

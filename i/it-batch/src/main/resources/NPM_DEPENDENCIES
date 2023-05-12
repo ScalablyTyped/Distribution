@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "it-batch" : "2.0.0"
+      "it-batch" : "3.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "it-batch" : "2.0.0"
+      "it-batch" : "3.0.2"
     }
   ],
   "compile-devDependencies" : [

@@ -4,6 +4,7 @@ import typings.std.AddEventListenerOptions
 import typings.std.EventListenerOptions
 import typings.std.EventListenerOrEventListenerObject
 import typings.std.HTMLElement
+import typings.std.WebGL2RenderingContext
 import typings.std.WebGLContextAttributes
 import typings.webgl2.webgl2Strings.`experimental-webgl2`
 import org.scalablytyped.runtime.StObject

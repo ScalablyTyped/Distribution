@@ -1,18 +1,16 @@
 package typings.rcSelect
 
 import typings.rcSelect.libBaseSelectMod.BaseSelectRef
+import typings.rcSelect.libBaseSelectMod.DisplayInfoType
 import typings.rcSelect.libBaseSelectMod.DisplayValueType
 import typings.rcSelect.libOptGroupMod.OptionGroupFC
 import typings.rcSelect.libOptionMod.OptionFC
 import typings.rcSelect.libSelectMod.FieldNames
 import typings.rcSelect.libSelectMod.RawValueType
-import typings.rcSelect.rcSelectStrings.add
 import typings.rcSelect.rcSelectStrings.blur
-import typings.rcSelect.rcSelectStrings.clear
 import typings.rcSelect.rcSelectStrings.effect
 import typings.rcSelect.rcSelectStrings.keyboard
 import typings.rcSelect.rcSelectStrings.mouse
-import typings.rcSelect.rcSelectStrings.remove
 import typings.rcSelect.rcSelectStrings.submit
 import typings.rcSelect.rcSelectStrings.typing
 import typings.react.mod.ReactNode
@@ -253,13 +251,13 @@ object anon {
   
   trait Type extends StObject {
     
-    var `type`: add | remove | clear
+    var `type`: DisplayInfoType
     
     var values: js.Array[DisplayValueType]
   }
   object Type {
     
-    inline def apply(`type`: add | remove | clear, values: js.Array[DisplayValueType]): Type = {
+    inline def apply(`type`: DisplayInfoType, values: js.Array[DisplayValueType]): Type = {
       val __obj = js.Dynamic.literal(values = values.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Type]
@@ -268,7 +266,7 @@ object anon {
     @scala.inline
     implicit open class MutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
       
-      inline def setType(value: add | remove | clear): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: DisplayInfoType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
       inline def setValues(value: js.Array[DisplayValueType]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       

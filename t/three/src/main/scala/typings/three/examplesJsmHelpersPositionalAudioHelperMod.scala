@@ -1,6 +1,7 @@
 package typings.three
 
 import typings.three.srcCoreBufferGeometryMod.BufferGeometry
+import typings.three.srcCoreBufferGeometryMod.NormalBufferAttributes
 import typings.three.srcMaterialsMaterialMod.Material
 import typings.three.srcThreeMod.Line
 import typings.three.srcThreeMod.PositionalAudio
@@ -13,7 +14,7 @@ object examplesJsmHelpersPositionalAudioHelperMod {
   @JSImport("three/examples/jsm/helpers/PositionalAudioHelper", "PositionalAudioHelper")
   @js.native
   open class PositionalAudioHelper protected ()
-    extends Line[BufferGeometry, Material | js.Array[Material]] {
+    extends Line[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]] {
     def this(audio: PositionalAudio) = this()
     def this(audio: PositionalAudio, range: Double) = this()
     def this(audio: PositionalAudio, range: Double, divisionsInnerAngle: Double) = this()

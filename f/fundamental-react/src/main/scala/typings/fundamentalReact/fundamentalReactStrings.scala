@@ -4,6 +4,7 @@ import typings.fundamentalReact.libAvatarAvatarMod.AvatarSize
 import typings.fundamentalReact.libBusyIndicatorBusyIndicatorMod.BusyIndicatorSizes
 import typings.fundamentalReact.libButtonButtonMod.ButtonOptions
 import typings.fundamentalReact.libButtonButtonMod.ButtonTypes
+import typings.fundamentalReact.libColumnColumnMod.ScreenSize
 import typings.fundamentalReact.libIconIconMod.IconGlyph
 import typings.fundamentalReact.libIconIconMod.IconSize
 import typings.fundamentalReact.libImageImageMod.imageSize
@@ -19,6 +20,10 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fundamentalReactStrings {
+  
+  @js.native
+  sealed trait default extends StObject
+  inline def default: default = "default".asInstanceOf[default]
   
   @js.native
   sealed trait ActionBar extends StObject
@@ -43,6 +48,14 @@ object fundamentalReactStrings {
   inline def `Chart-Tree-Map`: `Chart-Tree-Map` = "Chart-Tree-Map".asInstanceOf[`Chart-Tree-Map`]
   
   @js.native
+  sealed trait Column extends StObject
+  inline def Column: Column = "Column".asInstanceOf[Column]
+  
+  @js.native
+  sealed trait Container extends StObject
+  inline def Container: Container = "Container".asInstanceOf[Container]
+  
+  @js.native
   sealed trait Counter extends StObject
   inline def Counter: Counter = "Counter".asInstanceOf[Counter]
   
@@ -57,10 +70,6 @@ object fundamentalReactStrings {
   @js.native
   sealed trait InputGroupDotAddon extends StObject
   inline def InputGroupDotAddon: InputGroupDotAddon = "InputGroup.Addon".asInstanceOf[InputGroupDotAddon]
-  
-  @js.native
-  sealed trait LayoutGridProps extends StObject
-  inline def LayoutGridProps: LayoutGridProps = "LayoutGridProps".asInstanceOf[LayoutGridProps]
   
   @js.native
   sealed trait LayoutPanel extends StObject
@@ -115,6 +124,10 @@ object fundamentalReactStrings {
     extends StObject
        with IconGlyph
   inline def `Netweaver-business-client`: `Netweaver-business-client` = "Netweaver-business-client".asInstanceOf[`Netweaver-business-client`]
+  
+  @js.native
+  sealed trait Row extends StObject
+  inline def Row: Row = "Row".asInstanceOf[Row]
   
   @js.native
   sealed trait SearchInput extends StObject
@@ -173,34 +186,6 @@ object fundamentalReactStrings {
   inline def TimePicker: TimePicker = "TimePicker".asInstanceOf[TimePicker]
   
   @js.native
-  sealed trait TreeView extends StObject
-  inline def TreeView: TreeView = "TreeView".asInstanceOf[TreeView]
-  
-  @js.native
-  sealed trait TreeViewDotBranch extends StObject
-  inline def TreeViewDotBranch: TreeViewDotBranch = "TreeView.Branch".asInstanceOf[TreeViewDotBranch]
-  
-  @js.native
-  sealed trait TreeViewDotCol extends StObject
-  inline def TreeViewDotCol: TreeViewDotCol = "TreeView.Col".asInstanceOf[TreeViewDotCol]
-  
-  @js.native
-  sealed trait TreeViewDotHead extends StObject
-  inline def TreeViewDotHead: TreeViewDotHead = "TreeView.Head".asInstanceOf[TreeViewDotHead]
-  
-  @js.native
-  sealed trait TreeViewDotItem extends StObject
-  inline def TreeViewDotItem: TreeViewDotItem = "TreeView.Item".asInstanceOf[TreeViewDotItem]
-  
-  @js.native
-  sealed trait TreeViewDotRow extends StObject
-  inline def TreeViewDotRow: TreeViewDotRow = "TreeView.Row".asInstanceOf[TreeViewDotRow]
-  
-  @js.native
-  sealed trait TreeViewDotTree extends StObject
-  inline def TreeViewDotTree: TreeViewDotTree = "TreeView.Tree".asInstanceOf[TreeViewDotTree]
-  
-  @js.native
   sealed trait accelerated
     extends StObject
        with IconGlyph
@@ -247,6 +232,10 @@ object fundamentalReactStrings {
     extends StObject
        with IconGlyph
   inline def activate: activate = "activate".asInstanceOf[activate]
+  
+  @js.native
+  sealed trait active extends StObject
+  inline def active: active = "active".asInstanceOf[active]
   
   @js.native
   sealed trait activities
@@ -401,6 +390,10 @@ object fundamentalReactStrings {
     extends StObject
        with IconGlyph
   inline def `alphabetical-order`: `alphabetical-order` = "alphabetical-order".asInstanceOf[`alphabetical-order`]
+  
+  @js.native
+  sealed trait anchors extends StObject
+  inline def anchors: anchors = "anchors".asInstanceOf[anchors]
   
   @js.native
   sealed trait appointment
@@ -677,6 +670,10 @@ object fundamentalReactStrings {
     extends StObject
        with PopperPlacement
   inline def `bottom-start`: `bottom-start` = "bottom-start".asInstanceOf[`bottom-start`]
+  
+  @js.native
+  sealed trait branching extends StObject
+  inline def branching: branching = "branching".asInstanceOf[branching]
   
   @js.native
   sealed trait `broken-link`
@@ -1083,6 +1080,10 @@ object fundamentalReactStrings {
   inline def complete: complete = "complete".asInstanceOf[complete]
   
   @js.native
+  sealed trait completed extends StObject
+  inline def completed: completed = "completed".asInstanceOf[completed]
+  
+  @js.native
   sealed trait connected
     extends StObject
        with IconGlyph
@@ -1177,6 +1178,10 @@ object fundamentalReactStrings {
     extends StObject
        with IconGlyph
   inline def `crossed-line-chart`: `crossed-line-chart` = "crossed-line-chart".asInstanceOf[`crossed-line-chart`]
+  
+  @js.native
+  sealed trait current extends StObject
+  inline def current: current = "current".asInstanceOf[current]
   
   @js.native
   sealed trait curriculum
@@ -2215,6 +2220,12 @@ object fundamentalReactStrings {
   inline def laptop: laptop = "laptop".asInstanceOf[laptop]
   
   @js.native
+  sealed trait largeScreen
+    extends StObject
+       with ScreenSize
+  inline def largeScreen: largeScreen = "largeScreen".asInstanceOf[largeScreen]
+  
+  @js.native
   sealed trait lateness
     extends StObject
        with IconGlyph
@@ -2280,6 +2291,10 @@ object fundamentalReactStrings {
     extends StObject
        with IconGlyph
   inline def letter: letter = "letter".asInstanceOf[letter]
+  
+  @js.native
+  sealed trait lg extends StObject
+  inline def lg: lg = "lg".asInstanceOf[lg]
   
   @js.native
   sealed trait lightbulb
@@ -2431,6 +2446,10 @@ object fundamentalReactStrings {
   inline def maxTarget: maxTarget = "maxTarget".asInstanceOf[maxTarget]
   
   @js.native
+  sealed trait md extends StObject
+  inline def md: md = "md".asInstanceOf[md]
+  
+  @js.native
   sealed trait meal
     extends StObject
        with IconGlyph
@@ -2489,6 +2508,12 @@ object fundamentalReactStrings {
     extends StObject
        with ButtonTypes
   inline def medium: medium = "medium".asInstanceOf[medium]
+  
+  @js.native
+  sealed trait mediumScreen
+    extends StObject
+       with ScreenSize
+  inline def mediumScreen: mediumScreen = "mediumScreen".asInstanceOf[mediumScreen]
   
   @js.native
   sealed trait `meeting-room`
@@ -2604,6 +2629,10 @@ object fundamentalReactStrings {
   inline def `mri-scan`: `mri-scan` = "mri-scan".asInstanceOf[`mri-scan`]
   
   @js.native
+  sealed trait multi extends StObject
+  inline def multi: multi = "multi".asInstanceOf[multi]
+  
+  @js.native
   sealed trait `multiple-bar-chart`
     extends StObject
        with IconGlyph
@@ -2704,6 +2733,14 @@ object fundamentalReactStrings {
   @js.native
   sealed trait no extends StObject
   inline def no: no = "no".asInstanceOf[no]
+  
+  @js.native
+  sealed trait `no-label` extends StObject
+  inline def `no-label`: `no-label` = "no-label".asInstanceOf[`no-label`]
+  
+  @js.native
+  sealed trait `no-labels` extends StObject
+  inline def `no-labels`: `no-labels` = "no-labels".asInstanceOf[`no-labels`]
   
   @js.native
   sealed trait none
@@ -3461,6 +3498,10 @@ object fundamentalReactStrings {
   inline def simulate: simulate = "simulate".asInstanceOf[simulate]
   
   @js.native
+  sealed trait single extends StObject
+  inline def single: single = "single".asInstanceOf[single]
+  
+  @js.native
   sealed trait `slim-arrow-down`
     extends StObject
        with IconGlyph
@@ -3485,10 +3526,24 @@ object fundamentalReactStrings {
   inline def `slim-arrow-up`: `slim-arrow-up` = "slim-arrow-up".asInstanceOf[`slim-arrow-up`]
   
   @js.native
+  sealed trait sm extends StObject
+  inline def sm: sm = "sm".asInstanceOf[sm]
+  
+  @js.native
+  sealed trait smallScreen
+    extends StObject
+       with ScreenSize
+  inline def smallScreen: smallScreen = "smallScreen".asInstanceOf[smallScreen]
+  
+  @js.native
   sealed trait soccor
     extends StObject
        with IconGlyph
   inline def soccor: soccor = "soccor".asInstanceOf[soccor]
+  
+  @js.native
+  sealed trait solid extends StObject
+  inline def solid: solid = "solid".asInstanceOf[solid]
   
   @js.native
   sealed trait sonography
@@ -3547,6 +3602,14 @@ object fundamentalReactStrings {
   @js.native
   sealed trait spelling extends StObject
   inline def spelling: spelling = "spelling".asInstanceOf[spelling]
+  
+  @js.native
+  sealed trait stacked extends StObject
+  inline def stacked: stacked = "stacked".asInstanceOf[stacked]
+  
+  @js.native
+  sealed trait `stacked-top` extends StObject
+  inline def `stacked-top`: `stacked-top` = "stacked-top".asInstanceOf[`stacked-top`]
   
   @js.native
   sealed trait standard
@@ -3789,6 +3852,10 @@ object fundamentalReactStrings {
     extends StObject
        with IconGlyph
   inline def `table-view`: `table-view` = "table-view".asInstanceOf[`table-view`]
+  
+  @js.native
+  sealed trait tabs extends StObject
+  inline def tabs: tabs = "tabs".asInstanceOf[tabs]
   
   @js.native
   sealed trait tag
@@ -4096,6 +4163,10 @@ object fundamentalReactStrings {
   inline def up: up = "up".asInstanceOf[up]
   
   @js.native
+  sealed trait upcoming extends StObject
+  inline def upcoming: upcoming = "upcoming".asInstanceOf[upcoming]
+  
+  @js.native
   sealed trait upload
     extends StObject
        with IconGlyph
@@ -4300,6 +4371,12 @@ object fundamentalReactStrings {
     extends StObject
        with IconGlyph
   inline def `x-ray`: `x-ray` = "x-ray".asInstanceOf[`x-ray`]
+  
+  @js.native
+  sealed trait xLargeScreen
+    extends StObject
+       with ScreenSize
+  inline def xLargeScreen: xLargeScreen = "xLargeScreen".asInstanceOf[xLargeScreen]
   
   @js.native
   sealed trait xl

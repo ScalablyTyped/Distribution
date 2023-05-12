@@ -91,34 +91,34 @@ trait SFSRoom extends StObject {
     */
   def getVariables(): js.Array[SFSRoomVariable]
   
-  /** @type {string} Returns the Room Group name. */
+  /** Returns the Room Group name. */
   var groupId: String
   
-  /** @type {number} Indicates the id of this Room. */
+  /** Indicates the id of this Room. */
   var id: Double
   
-  /** @type {boolean} Indicates whether this is a Game Room or not. */
+  /** Indicates whether this is a Game Room or not. */
   var isGame: Boolean
   
-  /** @type {boolean} Indicates whether this Room is hidden or not. */
+  /** Indicates whether this Room is hidden or not. */
   var isHidden: Boolean
   
-  /** @type {boolean} Indicates whether the client joined this Room or not. */
+  /** Indicates whether the client joined this Room or not. */
   var isJoined: Boolean
   
-  /** @type {boolean} Indicates whether this Room requires a password to be joined or not. */
+  /** Indicates whether this Room requires a password to be joined or not. */
   var isPasswordProtected: Boolean
   
-  /** @type {number} Returns the maximum number of spectators allowed in this Room (Game Rooms only). */
+  /** Returns the maximum number of spectators allowed in this Room (Game Rooms only). */
   var maxSpectators: Double
   
-  /** @type {number} Returns the maximum number of users allowed in this Room. */
+  /** Returns the maximum number of users allowed in this Room. */
   var maxUsers: Double
   
-  /** @type {string} Indicates the name of this Room. */
+  /** Indicates the name of this Room. */
   var name: String
   
-  /** @type {Object} Defines a generic utility object that can be used to store custom Room data. */
+  /** Defines a generic utility object that can be used to store custom Room data. */
   var properties: js.Object
 }
 object SFSRoom {

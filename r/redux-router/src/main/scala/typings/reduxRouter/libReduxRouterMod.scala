@@ -6,6 +6,8 @@ import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
 import typings.reactRouter.anon.Basename
 import typings.reactRouter.anon.Data
+import typings.reactRouter.anon.HasErrorBoundary
+import typings.reactRouter.anon.PartialLocation
 import typings.reactRouter.anon.Relative
 import typings.reactRouter.anon.Revalidate
 import typings.reactRouter.distLibComponentsMod.AwaitProps
@@ -23,24 +25,25 @@ import typings.reactRouter.distLibContextMod.RouteContextObject
 import typings.reactRouter.distLibContextMod.RouteMatch
 import typings.reactRouter.distLibContextMod.RouteObject
 import typings.reactRouter.distLibHooksMod.NavigateFunction
-import typings.remixRunRouter.anon.PartialLocation
 import typings.remixRunRouter.anon.PartialPath
 import typings.remixRunRouter.distHistoryMod.Action
 import typings.remixRunRouter.distHistoryMod.Location
 import typings.remixRunRouter.distHistoryMod.Path
 import typings.remixRunRouter.distHistoryMod.To
+import typings.remixRunRouter.distRouterMod.Blocker
+import typings.remixRunRouter.distRouterMod.BlockerFunction
 import typings.remixRunRouter.distRouterMod.Navigation
 import typings.remixRunRouter.distRouterMod.Router
 import typings.remixRunRouter.distRouterMod.RouterState
-import typings.remixRunRouter.distRouterMod.StaticHandlerContext
 import typings.remixRunRouter.distUtilsMod.AgnosticRouteMatch
 import typings.remixRunRouter.distUtilsMod.AgnosticRouteObject
-import typings.remixRunRouter.distUtilsMod.DeferredData
+import typings.remixRunRouter.distUtilsMod.DeferFunction
 import typings.remixRunRouter.distUtilsMod.JsonFunction
 import typings.remixRunRouter.distUtilsMod.ParamParseKey
 import typings.remixRunRouter.distUtilsMod.PathMatch
 import typings.remixRunRouter.distUtilsMod.PathPattern
 import typings.remixRunRouter.distUtilsMod.RedirectFunction
+import typings.std.Partial
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -97,15 +100,11 @@ object libReduxRouterMod {
     @js.native
     val UNSAFEDataRouterStateContext: Context[RouterState | Null] = js.native
     
-    @JSImport("redux-router/lib/ReduxRouter", "default.UNSAFE_DataStaticRouterContext")
-    @js.native
-    val UNSAFEDataStaticRouterContext: Context[StaticHandlerContext | Null] = js.native
-    
-    inline def UNSAFEEnhanceManualRouteObjects(routes: js.Array[RouteObject]): js.Array[RouteObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("UNSAFE_enhanceManualRouteObjects")(routes.asInstanceOf[js.Any]).asInstanceOf[js.Array[RouteObject]]
-    
     @JSImport("redux-router/lib/ReduxRouter", "default.UNSAFE_LocationContext")
     @js.native
     val UNSAFELocationContext: Context[LocationContextObject] = js.native
+    
+    inline def UNSAFEMapRouteProperties(route: RouteObject): Partial[RouteObject] & HasErrorBoundary = ^.asInstanceOf[js.Dynamic].applyDynamic("UNSAFE_mapRouteProperties")(route.asInstanceOf[js.Any]).asInstanceOf[Partial[RouteObject] & HasErrorBoundary]
     
     @JSImport("redux-router/lib/ReduxRouter", "default.UNSAFE_NavigationContext")
     @js.native
@@ -114,6 +113,28 @@ object libReduxRouterMod {
     @JSImport("redux-router/lib/ReduxRouter", "default.UNSAFE_RouteContext")
     @js.native
     val UNSAFERouteContext: Context[RouteContextObject] = js.native
+    
+    inline def UNSAFEUseRouteId(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("UNSAFE_useRouteId")().asInstanceOf[String]
+    
+    inline def UNSAFEUseRoutesImpl(routes: js.Array[RouteObject]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("UNSAFE_useRoutesImpl")(routes.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+    inline def UNSAFEUseRoutesImpl(routes: js.Array[RouteObject], locationArg: String): ReactElement | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("UNSAFE_useRoutesImpl")(routes.asInstanceOf[js.Any], locationArg.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
+    inline def UNSAFEUseRoutesImpl(routes: js.Array[RouteObject], locationArg: PartialLocation): ReactElement | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("UNSAFE_useRoutesImpl")(routes.asInstanceOf[js.Any], locationArg.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
+    
+    inline def UNSAFEUseRoutesImpl_state(
+      routes: js.Array[RouteObject],
+      locationArg: String,
+      dataRouterState: /* import warning: importer.ImportType#apply Failed type conversion: @remix-run/router.@remix-run/router/dist/router.Router['state'] */ js.Any
+    ): ReactElement | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("UNSAFE_useRoutesImpl")(routes.asInstanceOf[js.Any], locationArg.asInstanceOf[js.Any], dataRouterState.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
+    inline def UNSAFEUseRoutesImpl_state(
+      routes: js.Array[RouteObject],
+      locationArg: Unit,
+      dataRouterState: /* import warning: importer.ImportType#apply Failed type conversion: @remix-run/router.@remix-run/router/dist/router.Router['state'] */ js.Any
+    ): ReactElement | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("UNSAFE_useRoutesImpl")(routes.asInstanceOf[js.Any], locationArg.asInstanceOf[js.Any], dataRouterState.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
+    inline def UNSAFEUseRoutesImpl_state(
+      routes: js.Array[RouteObject],
+      locationArg: PartialLocation,
+      dataRouterState: /* import warning: importer.ImportType#apply Failed type conversion: @remix-run/router.@remix-run/router/dist/router.Router['state'] */ js.Any
+    ): ReactElement | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("UNSAFE_useRoutesImpl")(routes.asInstanceOf[js.Any], locationArg.asInstanceOf[js.Any], dataRouterState.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
     
     inline def createMemoryRouter(routes: js.Array[RouteObject]): Router = ^.asInstanceOf[js.Dynamic].applyDynamic("createMemoryRouter")(routes.asInstanceOf[js.Any]).asInstanceOf[Router]
     inline def createMemoryRouter(routes: js.Array[RouteObject], opts: Basename): Router = (^.asInstanceOf[js.Dynamic].applyDynamic("createMemoryRouter")(routes.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Router]
@@ -126,15 +147,17 @@ object libReduxRouterMod {
     inline def createRoutesFromElements(children: ReactNode): js.Array[RouteObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("createRoutesFromElements")(children.asInstanceOf[js.Any]).asInstanceOf[js.Array[RouteObject]]
     inline def createRoutesFromElements(children: ReactNode, parentPath: js.Array[Double]): js.Array[RouteObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("createRoutesFromElements")(children.asInstanceOf[js.Any], parentPath.asInstanceOf[js.Any])).asInstanceOf[js.Array[RouteObject]]
     
-    inline def defer(data: Record[String, Any]): DeferredData = ^.asInstanceOf[js.Dynamic].applyDynamic("defer")(data.asInstanceOf[js.Any]).asInstanceOf[DeferredData]
+    @JSImport("redux-router/lib/ReduxRouter", "default.defer")
+    @js.native
+    val defer: DeferFunction = js.native
     
-    inline def generatePath[Path /* <: String */](path: Path): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generatePath")(path.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def generatePath[Path /* <: String */](originalPath: Path): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generatePath")(originalPath.asInstanceOf[js.Any]).asInstanceOf[String]
     inline def generatePath[Path /* <: String */](
-      path: Path,
-      params: /* import warning: importer.ImportType#apply Failed type conversion: {[ key in @remix-run/router.@remix-run/router/dist/utils.PathParam<Path> ]: string} */ js.Any
-    ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generatePath")(path.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[String]
+      originalPath: Path,
+      params: /* import warning: importer.ImportType#apply Failed type conversion: {[ key in @remix-run/router.@remix-run/router/dist/utils.PathParam<Path> ]: string | null} */ js.Any
+    ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generatePath")(originalPath.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    inline def isRouteErrorResponse(e: Any): /* is @remix-run/router.@remix-run/router/dist/utils.ErrorResponse */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRouteErrorResponse")(e.asInstanceOf[js.Any]).asInstanceOf[/* is @remix-run/router.@remix-run/router/dist/utils.ErrorResponse */ Boolean]
+    inline def isRouteErrorResponse(error: Any): /* is @remix-run/router.@remix-run/router/dist/utils.ErrorResponse */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRouteErrorResponse")(error.asInstanceOf[js.Any]).asInstanceOf[/* is @remix-run/router.@remix-run/router/dist/utils.ErrorResponse */ Boolean]
     
     @JSImport("redux-router/lib/ReduxRouter", "default.json")
     @js.native
@@ -145,8 +168,12 @@ object libReduxRouterMod {
     
     inline def matchRoutes[RouteObjectType /* <: AgnosticRouteObject */](routes: js.Array[RouteObjectType], locationArg: String): (js.Array[AgnosticRouteMatch[String, RouteObjectType]]) | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("matchRoutes")(routes.asInstanceOf[js.Any], locationArg.asInstanceOf[js.Any])).asInstanceOf[(js.Array[AgnosticRouteMatch[String, RouteObjectType]]) | Null]
     inline def matchRoutes[RouteObjectType /* <: AgnosticRouteObject */](routes: js.Array[RouteObjectType], locationArg: String, basename: String): (js.Array[AgnosticRouteMatch[String, RouteObjectType]]) | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("matchRoutes")(routes.asInstanceOf[js.Any], locationArg.asInstanceOf[js.Any], basename.asInstanceOf[js.Any])).asInstanceOf[(js.Array[AgnosticRouteMatch[String, RouteObjectType]]) | Null]
-    inline def matchRoutes[RouteObjectType /* <: AgnosticRouteObject */](routes: js.Array[RouteObjectType], locationArg: PartialLocation): (js.Array[AgnosticRouteMatch[String, RouteObjectType]]) | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("matchRoutes")(routes.asInstanceOf[js.Any], locationArg.asInstanceOf[js.Any])).asInstanceOf[(js.Array[AgnosticRouteMatch[String, RouteObjectType]]) | Null]
-    inline def matchRoutes[RouteObjectType /* <: AgnosticRouteObject */](routes: js.Array[RouteObjectType], locationArg: PartialLocation, basename: String): (js.Array[AgnosticRouteMatch[String, RouteObjectType]]) | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("matchRoutes")(routes.asInstanceOf[js.Any], locationArg.asInstanceOf[js.Any], basename.asInstanceOf[js.Any])).asInstanceOf[(js.Array[AgnosticRouteMatch[String, RouteObjectType]]) | Null]
+    inline def matchRoutes[RouteObjectType /* <: AgnosticRouteObject */](routes: js.Array[RouteObjectType], locationArg: typings.remixRunRouter.anon.PartialLocation): (js.Array[AgnosticRouteMatch[String, RouteObjectType]]) | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("matchRoutes")(routes.asInstanceOf[js.Any], locationArg.asInstanceOf[js.Any])).asInstanceOf[(js.Array[AgnosticRouteMatch[String, RouteObjectType]]) | Null]
+    inline def matchRoutes[RouteObjectType /* <: AgnosticRouteObject */](
+      routes: js.Array[RouteObjectType],
+      locationArg: typings.remixRunRouter.anon.PartialLocation,
+      basename: String
+    ): (js.Array[AgnosticRouteMatch[String, RouteObjectType]]) | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("matchRoutes")(routes.asInstanceOf[js.Any], locationArg.asInstanceOf[js.Any], basename.asInstanceOf[js.Any])).asInstanceOf[(js.Array[AgnosticRouteMatch[String, RouteObjectType]]) | Null]
     
     inline def parsePath(path: String): PartialPath = ^.asInstanceOf[js.Dynamic].applyDynamic("parsePath")(path.asInstanceOf[js.Any]).asInstanceOf[PartialPath]
     
@@ -159,6 +186,9 @@ object libReduxRouterMod {
     
     inline def resolvePath(to: To): Path = ^.asInstanceOf[js.Dynamic].applyDynamic("resolvePath")(to.asInstanceOf[js.Any]).asInstanceOf[Path]
     inline def resolvePath(to: To, fromPathname: String): Path = (^.asInstanceOf[js.Dynamic].applyDynamic("resolvePath")(to.asInstanceOf[js.Any], fromPathname.asInstanceOf[js.Any])).asInstanceOf[Path]
+    
+    inline def unstableUseBlocker(shouldBlock: Boolean): Blocker = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_useBlocker")(shouldBlock.asInstanceOf[js.Any]).asInstanceOf[Blocker]
+    inline def unstableUseBlocker(shouldBlock: BlockerFunction): Blocker = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_useBlocker")(shouldBlock.asInstanceOf[js.Any]).asInstanceOf[Blocker]
     
     inline def useActionData(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("useActionData")().asInstanceOf[Any]
     
@@ -204,6 +234,6 @@ object libReduxRouterMod {
     
     inline def useRoutes(routes: js.Array[RouteObject]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("useRoutes")(routes.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
     inline def useRoutes(routes: js.Array[RouteObject], locationArg: String): ReactElement | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("useRoutes")(routes.asInstanceOf[js.Any], locationArg.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
-    inline def useRoutes(routes: js.Array[RouteObject], locationArg: typings.reactRouter.anon.PartialLocation): ReactElement | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("useRoutes")(routes.asInstanceOf[js.Any], locationArg.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
+    inline def useRoutes(routes: js.Array[RouteObject], locationArg: PartialLocation): ReactElement | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("useRoutes")(routes.asInstanceOf[js.Any], locationArg.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
   }
 }

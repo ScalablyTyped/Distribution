@@ -1,25 +1,28 @@
 package typings.atlaskitTokens.anon
 
-import typings.atlaskitTokens.distTypesTypesMod.PaintToken
+import typings.atlaskitTokens.atlaskitTokensStrings.`1Dot25rem`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait `13`[BaseToken] extends StObject {
+trait `13` extends StObject {
   
-  var `[default]`: PaintToken[BaseToken]
+  val attributes: `7`
+  
+  val value: `1Dot25rem`
 }
 object `13` {
   
-  inline def apply[BaseToken](`[default]`: PaintToken[BaseToken]): `13`[BaseToken] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("[default]")(`[default]`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[`13`[BaseToken]]
+  inline def apply(attributes: `7`): `13` = {
+    val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], value = "1.25rem")
+    __obj.asInstanceOf[`13`]
   }
   
   @scala.inline
-  implicit open class MutableBuilder[Self <: `13`[?], BaseToken] (val x: Self & `13`[BaseToken]) extends AnyVal {
+  implicit open class MutableBuilder[Self <: `13`] (val x: Self) extends AnyVal {
     
-    inline def `set[default]`(value: PaintToken[BaseToken]): Self = StObject.set(x, "[default]", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: `7`): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    
+    inline def setValue(value: `1Dot25rem`): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

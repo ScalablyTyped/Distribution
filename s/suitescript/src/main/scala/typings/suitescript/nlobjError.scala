@@ -9,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @classDescription Encapsulation of errors thrown during script execution.
   * @return {nlobjError}
-  * @constructor
   */
 trait nlobjError extends StObject {
   

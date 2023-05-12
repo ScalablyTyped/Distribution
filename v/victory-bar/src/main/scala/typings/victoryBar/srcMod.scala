@@ -15,7 +15,7 @@ object srcMod {
     def this(props: BarProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: BarProps, context: Any) = this()
   }
@@ -26,7 +26,7 @@ object srcMod {
     def this(props: VictoryBarProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: VictoryBarProps, context: Any) = this()
   }

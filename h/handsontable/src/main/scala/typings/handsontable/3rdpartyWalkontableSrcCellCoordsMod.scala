@@ -12,6 +12,7 @@ object `3rdpartyWalkontableSrcCellCoordsMod` {
     extends StObject
        with CellCoords {
     def this(row: Double, column: Double) = this()
+    def this(row: Double, column: Double, isRtl: Boolean) = this()
     
     /* CompleteClass */
     var col: Double = js.native

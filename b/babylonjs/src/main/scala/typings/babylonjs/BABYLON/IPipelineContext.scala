@@ -231,6 +231,68 @@ trait IPipelineContext extends StObject {
   def setQuaternion(uniformName: String, quaternion: IQuaternionLike): Unit = js.native
   
   /**
+    * Sets an unsigned integer value on a uniform variable.
+    * @param uniformName Name of the variable.
+    * @param value Value to be set.
+    */
+  def setUInt(uniformName: String, value: Double): Unit = js.native
+  
+  /**
+    * Sets an unsigned int2 value on a uniform variable.
+    * @param uniformName Name of the variable.
+    * @param x First unsigned int in uint2.
+    * @param y Second unsigned int in uint2.
+    */
+  def setUInt2(uniformName: String, x: Double, y: Double): Unit = js.native
+  
+  /**
+    * Sets an unsigned int3 value on a uniform variable.
+    * @param uniformName Name of the variable.
+    * @param x First unsigned int in uint3.
+    * @param y Second unsigned int in uint3.
+    * @param z Third unsigned int in uint3.
+    */
+  def setUInt3(uniformName: String, x: Double, y: Double, z: Double): Unit = js.native
+  
+  /**
+    * Sets an unsigned int4 value on a uniform variable.
+    * @param uniformName Name of the variable.
+    * @param x First unsigned int in uint4.
+    * @param y Second unsigned int in uint4.
+    * @param z Third unsigned int in uint4.
+    * @param w Fourth unsigned int in uint4.
+    */
+  def setUInt4(uniformName: String, x: Double, y: Double, z: Double, w: Double): Unit = js.native
+  
+  /**
+    * Sets an unsigned int array on a uniform variable.
+    * @param uniformName Name of the variable.
+    * @param array array to be set.
+    */
+  def setUIntArray(uniformName: String, array: js.typedarray.Uint32Array): Unit = js.native
+  
+  /**
+    * Sets an unsigned int array 2 on a uniform variable. (Array is specified as single array eg. [1,2,3,4] will result in [[1,2],[3,4]] in the shader)
+    * @param uniformName Name of the variable.
+    * @param array array to be set.
+    */
+  def setUIntArray2(uniformName: String, array: js.typedarray.Uint32Array): Unit = js.native
+  
+  /**
+    * Sets an unsigned int array 3 on a uniform variable. (Array is specified as single array eg. [1,2,3,4,5,6] will result in [[1,2,3],[4,5,6]] in the shader)
+    * @param uniformName Name of the variable.
+    * @param array array to be set.
+    */
+  def setUIntArray3(uniformName: String, array: js.typedarray.Uint32Array): Unit = js.native
+  
+  /**
+    * Sets an unsigned int array 4 on a uniform variable. (Array is specified as single array eg. [1,2,3,4,5,6,7,8] will result in [[1,2,3,4],[5,6,7,8]] in the shader)
+    * @param uniformName Name of the variable.
+    * @param array array to be set.
+    */
+  def setUIntArray4(uniformName: String, array: js.typedarray.Uint32Array): Unit = js.native
+  
+  /**
     * Sets a Vector2 on a uniform variable.
     * @param uniformName Name of the variable.
     * @param vector2 vector2 to be set.

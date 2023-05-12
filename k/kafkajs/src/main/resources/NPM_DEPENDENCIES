@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "kafkajs" : "2.2.2"
+      "kafkajs" : "2.2.4"
     }
   ],
   "test-dependencies" : [
     {
-      "kafkajs" : "2.2.2"
+      "kafkajs" : "2.2.4"
     }
   ],
   "compile-devDependencies" : [

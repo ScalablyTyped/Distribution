@@ -336,6 +336,8 @@ object sapMWizardStepMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:activate activate} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -347,6 +349,8 @@ object sapMWizardStepMod {
     mParameters: js.Object): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:complete complete} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -582,21 +586,14 @@ object sapMWizardStepMod {
     bOptional: Boolean): this.type = js.native
     
     /**
-      * Sets a new value for property {@link #getTitle title}.
+      * Sets the title property of the WizardStep.
       *
-      * Determines the title of the step. The title is visualized in the Wizard control.
-      *
-      * When called with a value of `null` or `undefined`, the default value of the property will be restored.
-      *
-      * Default value is `empty string`.
-      *
-      * @returns Reference to `this` in order to allow method chaining
+      * @returns this instance for method chaining.
       */
-    def setTitle(): this.type = js.native
     def setTitle(/**
-      * New value for property `title`
+      * The new WizardStep title.
       */
-    sTitle: String): this.type = js.native
+    sNewTitle: String): WizardStep = js.native
     
     /**
       * @SINCE 1.32

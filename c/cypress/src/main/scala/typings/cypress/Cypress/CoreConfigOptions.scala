@@ -4,8 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.cypress.anon.OpenMode
 import typings.cypress.cypressBooleans.`false`
 import typings.cypress.cypressStrings.bundled
-import typings.cypress.cypressStrings.off
-import typings.cypress.cypressStrings.on
 import typings.cypress.cypressStrings.system
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -41,9 +39,11 @@ trait CoreConfigOptions extends StObject {
   
   var experimentalInteractiveRunEvents: js.UndefOr[Boolean] = js.undefined
   
+  var experimentalMemoryManagement: js.UndefOr[Boolean] = js.undefined
+  
   var experimentalModifyObstructiveThirdPartyCode: js.UndefOr[Boolean] = js.undefined
   
-  var experimentalSessionAndOrigin: js.UndefOr[Boolean] = js.undefined
+  var experimentalSkipDomainInjection: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   var experimentalSourceRewriting: js.UndefOr[Boolean] = js.undefined
   
@@ -111,7 +111,7 @@ trait CoreConfigOptions extends StObject {
   
   var taskTimeout: js.UndefOr[Double] = js.undefined
   
-  var testIsolation: js.UndefOr[Null | on | off] = js.undefined
+  var testIsolation: js.UndefOr[Boolean] = js.undefined
   
   var trashAssetsBeforeRuns: js.UndefOr[Boolean] = js.undefined
   
@@ -201,13 +201,21 @@ object CoreConfigOptions {
     
     inline def setExperimentalInteractiveRunEventsUndefined: Self = StObject.set(x, "experimentalInteractiveRunEvents", js.undefined)
     
+    inline def setExperimentalMemoryManagement(value: Boolean): Self = StObject.set(x, "experimentalMemoryManagement", value.asInstanceOf[js.Any])
+    
+    inline def setExperimentalMemoryManagementUndefined: Self = StObject.set(x, "experimentalMemoryManagement", js.undefined)
+    
     inline def setExperimentalModifyObstructiveThirdPartyCode(value: Boolean): Self = StObject.set(x, "experimentalModifyObstructiveThirdPartyCode", value.asInstanceOf[js.Any])
     
     inline def setExperimentalModifyObstructiveThirdPartyCodeUndefined: Self = StObject.set(x, "experimentalModifyObstructiveThirdPartyCode", js.undefined)
     
-    inline def setExperimentalSessionAndOrigin(value: Boolean): Self = StObject.set(x, "experimentalSessionAndOrigin", value.asInstanceOf[js.Any])
+    inline def setExperimentalSkipDomainInjection(value: js.Array[String]): Self = StObject.set(x, "experimentalSkipDomainInjection", value.asInstanceOf[js.Any])
     
-    inline def setExperimentalSessionAndOriginUndefined: Self = StObject.set(x, "experimentalSessionAndOrigin", js.undefined)
+    inline def setExperimentalSkipDomainInjectionNull: Self = StObject.set(x, "experimentalSkipDomainInjection", null)
+    
+    inline def setExperimentalSkipDomainInjectionUndefined: Self = StObject.set(x, "experimentalSkipDomainInjection", js.undefined)
+    
+    inline def setExperimentalSkipDomainInjectionVarargs(value: String*): Self = StObject.set(x, "experimentalSkipDomainInjection", js.Array(value*))
     
     inline def setExperimentalSourceRewriting(value: Boolean): Self = StObject.set(x, "experimentalSourceRewriting", value.asInstanceOf[js.Any])
     
@@ -339,9 +347,7 @@ object CoreConfigOptions {
     
     inline def setTaskTimeoutUndefined: Self = StObject.set(x, "taskTimeout", js.undefined)
     
-    inline def setTestIsolation(value: on | off): Self = StObject.set(x, "testIsolation", value.asInstanceOf[js.Any])
-    
-    inline def setTestIsolationNull: Self = StObject.set(x, "testIsolation", null)
+    inline def setTestIsolation(value: Boolean): Self = StObject.set(x, "testIsolation", value.asInstanceOf[js.Any])
     
     inline def setTestIsolationUndefined: Self = StObject.set(x, "testIsolation", js.undefined)
     

@@ -98,15 +98,11 @@ object bookmarks {
   @js.native
   val onRemoved: WebExtEvent[js.Function2[/* id */ String, /* removeInfo */ OnRemovedRemoveInfo, Unit]] = js.native
   
-  /**
-    * Removes a bookmark or an empty bookmark folder, given the node's ID.
-    */
-  inline def remove(id: String): js.Promise[BookmarkTreeNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[BookmarkTreeNode]]
+  /** Removes a bookmark or an empty bookmark folder. */
+  inline def remove(id: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
-  /**
-    * Recursively removes a bookmark folder; that is, given the ID of a folder node, removes that node and all its descendants.
-    */
-  inline def removeTree(id: String): js.Promise[BookmarkTreeNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("removeTree")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[BookmarkTreeNode]]
+  /** Recursively removes a bookmark folder. */
+  inline def removeTree(id: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("removeTree")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
   /**
     * Searches for BookmarkTreeNodes matching the given query. Queries specified with an object produce BookmarkTreeNodes matching all specified properties.

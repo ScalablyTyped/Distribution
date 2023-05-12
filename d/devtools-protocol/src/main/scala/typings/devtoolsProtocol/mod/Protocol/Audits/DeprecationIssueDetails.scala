@@ -10,11 +10,14 @@ trait DeprecationIssueDetails extends StObject {
   
   var sourceCodeLocation: SourceCodeLocation
   
-  var `type`: DeprecationIssueType
+  /**
+    * One of the deprecation names from third_party/blink/renderer/core/frame/deprecation/deprecation.json5
+    */
+  var `type`: String
 }
 object DeprecationIssueDetails {
   
-  inline def apply(sourceCodeLocation: SourceCodeLocation, `type`: DeprecationIssueType): DeprecationIssueDetails = {
+  inline def apply(sourceCodeLocation: SourceCodeLocation, `type`: String): DeprecationIssueDetails = {
     val __obj = js.Dynamic.literal(sourceCodeLocation = sourceCodeLocation.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeprecationIssueDetails]
@@ -29,6 +32,6 @@ object DeprecationIssueDetails {
     
     inline def setSourceCodeLocation(value: SourceCodeLocation): Self = StObject.set(x, "sourceCodeLocation", value.asInstanceOf[js.Any])
     
-    inline def setType(value: DeprecationIssueType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

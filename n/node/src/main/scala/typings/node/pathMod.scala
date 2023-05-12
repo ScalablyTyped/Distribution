@@ -9,13 +9,13 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * The `path` module provides utilities for working with file and directory paths.
-  * It can be accessed using:
+  * The `node:path` module provides utilities for working with file and directory
+  * paths. It can be accessed using:
   *
   * ```js
-  * const path = require('path');
+  * const path = require('node:path');
   * ```
-  * @see [source](https://github.com/nodejs/node/blob/v18.0.0/lib/path.js)
+  * @see [source](https://github.com/nodejs/node/blob/v20.1.0/lib/path.js)
   */
 object pathMod extends Shortcut {
   

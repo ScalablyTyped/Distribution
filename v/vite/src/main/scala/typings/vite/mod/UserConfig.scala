@@ -46,7 +46,7 @@ trait UserConfig extends StObject {
   var cacheDir: js.UndefOr[String] = js.undefined
   
   /**
-    * Default: true
+    * @default true
     */
   var clearScreen: js.UndefOr[Boolean] = js.undefined
   
@@ -68,7 +68,7 @@ trait UserConfig extends StObject {
   
   /**
     * Environment files directory. Can be an absolute path, or a path relative from
-    * the location of the config file itself.
+    * root.
     * @default root
     */
   var envDir: js.UndefOr[String] = js.undefined
@@ -109,7 +109,7 @@ trait UserConfig extends StObject {
   
   /**
     * Log level.
-    * Default: 'info'
+    * @default 'info'
     */
   var logLevel: js.UndefOr[LogLevel] = js.undefined
   

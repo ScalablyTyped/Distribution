@@ -1,5 +1,6 @@
 package typings.sinclairTypebox.mod
 
+import typings.sinclairTypebox.sinclairTypeboxStrings.date_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -7,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Rewritten from type alias, can be one of: 
   - typings.sinclairTypebox.sinclairTypeboxStrings.`date-time`
   - typings.sinclairTypebox.sinclairTypeboxStrings.time
-  - typings.sinclairTypebox.sinclairTypeboxStrings.date
+  - typings.sinclairTypebox.sinclairTypeboxStrings.date_
   - typings.sinclairTypebox.sinclairTypeboxStrings.email
   - typings.sinclairTypebox.sinclairTypeboxStrings.`idn-email`
   - typings.sinclairTypebox.sinclairTypeboxStrings.hostname
@@ -27,7 +28,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StringFormatOption extends StObject
 object StringFormatOption {
   
-  inline def date: typings.sinclairTypebox.sinclairTypeboxStrings.date = "date".asInstanceOf[typings.sinclairTypebox.sinclairTypeboxStrings.date]
+  inline def date: date_ = "date".asInstanceOf[date_]
   
   inline def `date-time`: typings.sinclairTypebox.sinclairTypeboxStrings.`date-time` = "date-time".asInstanceOf[typings.sinclairTypebox.sinclairTypeboxStrings.`date-time`]
   

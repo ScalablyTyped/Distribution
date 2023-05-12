@@ -8,7 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("AFRAME.THREE.Camera")
 @js.native
 /**
-  * This constructor sets following properties to the correct type: matrixWorldInverse, projectionMatrix and projectionMatrixInverse.
+  * @remarks
+  * Note that this class is not intended to be called directly; you probably want a
+  * {@link THREE.PerspectiveCamera | PerspectiveCamera} or
+  * {@link THREE.OrthographicCamera | OrthographicCamera} instead.
   */
 open class Camera ()
   extends typings.three.mod.Camera

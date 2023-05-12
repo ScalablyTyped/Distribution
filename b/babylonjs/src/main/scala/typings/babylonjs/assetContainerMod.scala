@@ -6,7 +6,6 @@ import typings.babylonjs.animationsAnimationGroupMod.AnimationGroup
 import typings.babylonjs.anon.DoNotInstantiate
 import typings.babylonjs.bonesSkeletonMod.Skeleton
 import typings.babylonjs.meshesMeshMod.Mesh
-import typings.babylonjs.meshesTransformNodeMod.TransformNode
 import typings.babylonjs.nodeMod.Node
 import typings.babylonjs.sceneMod.Scene
 import typings.babylonjs.typesMod.Nullable
@@ -25,9 +24,28 @@ object assetContainerMod {
   open class AssetContainer () extends AbstractScene {
     def this(scene: Nullable[Scene]) = this()
     
+    /* private */ var _addNodeAndDescendantsToList: Any = js.native
+    
+    /**
+      * Check if a specific node is contained in this asset container.
+      * @param node
+      */
+    /* private */ var _isNodeInContainer: Any = js.native
+    
+    /**
+      * For every node in the scene, check if its parent node is also in the scene.
+      */
+    /* private */ var _isValidHierarchy: Any = js.native
+    
     /* private */ var _moveAssets: Any = js.native
     
     /* private */ var _onContextRestoredObserver: Any = js.native
+    
+    /**
+      * Given a list of nodes, return a topological sorting of them.
+      * @param nodes
+      */
+    /* private */ var _topologicalSort: Any = js.native
     
     /* private */ var _wasAddedToScene: Any = js.native
     
@@ -136,9 +154,14 @@ object assetContainerMod {
     var animationGroups: js.Array[AnimationGroup] = js.native
     
     /**
+      * Disposes the instantiated entries from the scene
+      */
+    def dispose(): Unit = js.native
+    
+    /**
       * List of new root nodes (eg. nodes with no parent)
       */
-    var rootNodes: js.Array[TransformNode] = js.native
+    var rootNodes: js.Array[Node] = js.native
     
     /**
       * List of new skeletons

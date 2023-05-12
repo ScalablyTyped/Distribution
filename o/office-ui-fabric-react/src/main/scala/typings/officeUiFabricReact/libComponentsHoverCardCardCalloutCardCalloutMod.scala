@@ -18,7 +18,8 @@ object libComponentsHoverCardCardCalloutCardCalloutMod {
     extends StObject
        with IBaseCardProps[js.Object, js.Object, js.Object] {
     
-    var content: js.UndefOr[Element] = js.undefined
+    @JSName("content")
+    var content_ICardCalloutProps: js.UndefOr[Element] = js.undefined
     
     var finalHeight: js.UndefOr[Double] = js.undefined
   }

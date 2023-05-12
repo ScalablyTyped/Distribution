@@ -15,7 +15,8 @@ open class XrPlane protected ()
   /**
     * Create a new XrPlane instance.
     *
-    * @param {XrPlaneDetection} planeDetection - Plane detection system.
+    * @param {import('./xr-plane-detection.js').XrPlaneDetection} planeDetection - Plane detection
+    * system.
     * @param {*} xrPlane - XRPlane that is instantiated by WebXR system.
     * @hideconstructor
     */

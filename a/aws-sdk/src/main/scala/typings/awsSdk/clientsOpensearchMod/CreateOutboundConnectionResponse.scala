@@ -17,6 +17,16 @@ trait CreateOutboundConnectionResponse extends StObject {
   var ConnectionId: js.UndefOr[typings.awsSdk.clientsOpensearchMod.ConnectionId] = js.undefined
   
   /**
+    * The connection mode.
+    */
+  var ConnectionMode: js.UndefOr[typings.awsSdk.clientsOpensearchMod.ConnectionMode] = js.undefined
+  
+  /**
+    * The ConnectionProperties for the newly created connection.
+    */
+  var ConnectionProperties: js.UndefOr[typings.awsSdk.clientsOpensearchMod.ConnectionProperties] = js.undefined
+  
+  /**
     * The status of the connection.
     */
   var ConnectionStatus: js.UndefOr[OutboundConnectionStatus] = js.undefined
@@ -48,6 +58,14 @@ object CreateOutboundConnectionResponse {
     inline def setConnectionId(value: ConnectionId): Self = StObject.set(x, "ConnectionId", value.asInstanceOf[js.Any])
     
     inline def setConnectionIdUndefined: Self = StObject.set(x, "ConnectionId", js.undefined)
+    
+    inline def setConnectionMode(value: ConnectionMode): Self = StObject.set(x, "ConnectionMode", value.asInstanceOf[js.Any])
+    
+    inline def setConnectionModeUndefined: Self = StObject.set(x, "ConnectionMode", js.undefined)
+    
+    inline def setConnectionProperties(value: ConnectionProperties): Self = StObject.set(x, "ConnectionProperties", value.asInstanceOf[js.Any])
+    
+    inline def setConnectionPropertiesUndefined: Self = StObject.set(x, "ConnectionProperties", js.undefined)
     
     inline def setConnectionStatus(value: OutboundConnectionStatus): Self = StObject.set(x, "ConnectionStatus", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,7 @@ trait OAuth2PermissionGrant
     * A space-separated list of the claim values for delegated permissions which should be included in access tokens for the
     * resource application (the API). For example, openid User.Read GroupMember.Read.All. Each claim value should match the
     * value field of one of the delegated permissions defined by the API, listed in the oauth2PermissionScopes property of
-    * the resource service principal.
+    * the resource service principal. Must not exceed 3850 characters in length.
     */
   var scope: js.UndefOr[NullableOption[String]] = js.undefined
 }

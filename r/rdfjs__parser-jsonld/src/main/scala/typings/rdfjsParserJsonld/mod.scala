@@ -13,9 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @JSImport("@rdfjs/parser-jsonld", JSImport.Namespace)
+  @JSImport("@rdfjs/parser-jsonld", JSImport.Default)
   @js.native
-  open class ^[Q /* <: BaseQuad */] ()
+  open class default[Q /* <: BaseQuad */] ()
     extends StObject
        with Parser[Q] {
     def this(options: ParserOptions) = this()

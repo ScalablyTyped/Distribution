@@ -1,12 +1,12 @@
 package typings.hyperformula
 
-import typings.hyperformula.anon.AVERAGE
 import typings.hyperformula.anon.STDEV
 import typings.hyperformula.typingsInterpreterInterpreterMod.Interpreter
 import typings.hyperformula.typingsInterpreterInterpreterStateMod.InterpreterState
 import typings.hyperformula.typingsInterpreterInterpreterValueMod.ExtendedNumber
 import typings.hyperformula.typingsInterpreterInterpreterValueMod.InternalScalarValue
 import typings.hyperformula.typingsInterpreterPluginFunctionPluginMod.FunctionPlugin
+import typings.hyperformula.typingsInterpreterPluginFunctionPluginMod.ImplementedFunctions
 import typings.hyperformula.typingsParserAstMod.ProcedureAst
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -115,7 +115,7 @@ object typingsInterpreterPluginNumericAggregationPluginMod {
       * @param reducingFunction - reducing function
       * @param mapFunction
       * @param coercionFunction
-      * */
+      */
     /* private */ var reduce: Any = js.native
     
     /* private */ var reduceAggregate: Any = js.native
@@ -166,8 +166,8 @@ object typingsInterpreterPluginNumericAggregationPluginMod {
     
     @JSImport("hyperformula/typings/interpreter/plugin/NumericAggregationPlugin", "NumericAggregationPlugin.implementedFunctions")
     @js.native
-    def implementedFunctions: AVERAGE = js.native
-    inline def implementedFunctions_=(x: AVERAGE): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("implementedFunctions")(x.asInstanceOf[js.Any])
+    def implementedFunctions: ImplementedFunctions = js.native
+    inline def implementedFunctions_=(x: ImplementedFunctions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("implementedFunctions")(x.asInstanceOf[js.Any])
   }
   
   type BinaryOperation[T] = js.Function2[/* left */ T, /* right */ T, T]

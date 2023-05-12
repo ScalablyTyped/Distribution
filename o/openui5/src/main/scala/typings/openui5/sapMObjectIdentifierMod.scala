@@ -1,6 +1,6 @@
 package typings.openui5
 
-import typings.openui5.anon.`18`
+import typings.openui5.anon.`21`
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapMLibraryMod.EmptyIndicatorMode
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -239,6 +239,7 @@ object sapMObjectIdentifierMod {
     
     /**
       * @SINCE 1.26
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:titlePress titlePress} to attached listeners.
       *
@@ -248,7 +249,7 @@ object sapMObjectIdentifierMod {
     def fireTitlePress(/**
       * Parameters to pass along with the event
       */
-    mParameters: `18`): this.type = js.native
+    mParameters: `21`): this.type = js.native
     
     /**
       * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaLabelledBy

@@ -19,6 +19,16 @@ object typesSrcDisplayEditorEditorMod {
       */
     def this(parameters: AnnotationEditorParameters) = this()
     
+    var _uiManager: Null = js.native
+    
+    /**
+      * Add some commands into the CommandManager (undo/redo stuff).
+      * @param {Object} params
+      */
+    def addCommands(params: js.Object): Unit = js.native
+    
+    def addToAnnotationStorage(): Unit = js.native
+    
     /**
       * Commit the data contained in this editor.
       */
@@ -30,6 +40,8 @@ object typesSrcDisplayEditorEditorMod {
       * Get the div which really contains the displayed content.
       */
     def contentDiv: HTMLDivElement | Null = js.native
+    
+    def currentLayer: Any = js.native
     
     /**
       * Disable edit mode.
@@ -80,7 +92,7 @@ object typesSrcDisplayEditorEditorMod {
       */
     def getInitialTranslation(): js.Array[Double] = js.native
     
-    def getRect(tx: Any, ty: Any): js.Array[Double] = js.native
+    def getRect(tx: Any, ty: Any): js.Array[Any] = js.native
     
     def getRectInCurrentCoords(rect: Any, pageHeight: Any): js.Array[Any] = js.native
     
@@ -126,9 +138,21 @@ object typesSrcDisplayEditorEditorMod {
       */
     def onceAdded(): Unit = js.native
     
+    var pageDimensions: js.Array[Any] = js.native
+    
     var pageIndex: Double = js.native
     
+    var pageRotation: Double = js.native
+    
+    var pageTranslation: js.Array[Any] = js.native
+    
     var parent: typings.pdfjsDist.typesSrcDisplayEditorAnnotationEditorLayerMod.AnnotationEditorLayer = js.native
+    
+    def parentDimensions: js.Array[Double] = js.native
+    
+    def parentRotation: Double = js.native
+    
+    def parentScale: Any = js.native
     
     /**
       * Onpointerdown callback.
@@ -212,6 +236,8 @@ object typesSrcDisplayEditorEditorMod {
       */
     def setInForeground(): Unit = js.native
     
+    def setParent(parent: Any): Unit = js.native
+    
     /**
       * If it returns true, then this editor handle the keyboard
       * events itself.
@@ -271,9 +297,10 @@ object typesSrcDisplayEditorEditorMod {
       *
       * @param {Object} data
       * @param {AnnotationEditorLayer} parent
+      * @param {AnnotationEditorUIManager} uiManager
       * @returns {AnnotationEditor}
       */
-    inline def deserialize(data: js.Object, parent: AnnotationEditorLayer): AnnotationEditor = (^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(data.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[AnnotationEditor]
+    inline def deserialize(data: js.Object, parent: AnnotationEditorLayer, uiManager: AnnotationEditorUIManager): AnnotationEditor = (^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(data.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], uiManager.asInstanceOf[js.Any])).asInstanceOf[AnnotationEditor]
   }
   
   type AnnotationEditorLayer = typings.pdfjsDist.typesSrcDisplayEditorAnnotationEditorLayerMod.AnnotationEditorLayer
@@ -291,6 +318,11 @@ object typesSrcDisplayEditorEditorMod {
     var parent: AnnotationEditorLayer
     
     /**
+      * - the global manager
+      */
+    var uiManager: AnnotationEditorUIManager
+    
+    /**
       * - x-coordinate
       */
     var x: Double
@@ -302,8 +334,14 @@ object typesSrcDisplayEditorEditorMod {
   }
   object AnnotationEditorParameters {
     
-    inline def apply(id: String, parent: AnnotationEditorLayer, x: Double, y: Double): AnnotationEditorParameters = {
-      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+    inline def apply(
+      id: String,
+      parent: AnnotationEditorLayer,
+      uiManager: AnnotationEditorUIManager,
+      x: Double,
+      y: Double
+    ): AnnotationEditorParameters = {
+      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], uiManager = uiManager.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[AnnotationEditorParameters]
     }
     
@@ -314,9 +352,13 @@ object typesSrcDisplayEditorEditorMod {
       
       inline def setParent(value: AnnotationEditorLayer): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
       
+      inline def setUiManager(value: AnnotationEditorUIManager): Self = StObject.set(x, "uiManager", value.asInstanceOf[js.Any])
+      
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
       inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
+  
+  type AnnotationEditorUIManager = typings.pdfjsDist.typesSrcDisplayEditorToolsMod.AnnotationEditorUIManager
 }

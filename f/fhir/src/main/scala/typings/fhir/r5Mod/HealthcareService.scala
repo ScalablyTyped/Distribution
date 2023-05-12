@@ -13,8 +13,6 @@ trait HealthcareService
   
   var _appointmentRequired: js.UndefOr[Element] = js.undefined
   
-  var _availabilityExceptions: js.UndefOr[Element] = js.undefined
-  
   var _comment: js.UndefOr[Element] = js.undefined
   
   var _extraDetails: js.UndefOr[Element] = js.undefined
@@ -32,14 +30,11 @@ trait HealthcareService
   var appointmentRequired: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * A description of site availability exceptions, e.g. public holiday availability. Succinctly describing all possible exceptions to normal site availability as details in the available Times and not available Times.
-    */
-  var availabilityExceptions: js.UndefOr[String] = js.undefined
-  
-  /**
     * More detailed availability information may be provided in associated Schedule/Slot resources.
+    * Systems may choose to render availability differently than it is exchanged on the interface. For example, rather than "Mon, Tue, Wed, Thur, Fri from 9am-12am; Mon, Tue, Wed, Thur, Fri from 1pm-5pm" as would be implied by two availableTime repetitions, an application could render this information as "Mon-Fri 9-12am and 1-5pm".
+    * The NotAvailableTime(s) included indicate the general days/periods where the service is not available (for things such as public holidays).
     */
-  var availableTime: js.UndefOr[js.Array[HealthcareServiceAvailableTime]] = js.undefined
+  var availability: js.UndefOr[js.Array[Availability]] = js.undefined
   
   /**
     * Selecting a Service Category then determines the list of relevant service types that can be selected in the primary service type.
@@ -60,6 +55,12 @@ trait HealthcareService
     * When using this property it indicates that the service is available with this language, it is not derived from the practitioners, and not all are required to use this language, just that this language is available while scheduling.
     */
   var communication: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
+  
+  /**
+    * The address/telecom use code 'home' are not to be used. Note that these contacts are not the contact details of people who provide the service (that would be through PractitionerRole), these are official contacts for the HealthcareService itself for specific purposes. E.g. Mailing Addresses, Billing Addresses, Contact numbers for Booking or Billing Enquiries, general web address, web address for online bookings etc.
+    * If this is empty (or the type of interest is empty), refer to the location's contacts.
+    */
+  var contact: js.UndefOr[js.Array[ExtendedContactDetail]] = js.undefined
   
   /**
     * The locations referenced by the coverage area can include both specific locations, including areas, and also conceptual domains too (mode = kind), such as a physical area (tri-state area) and some other attribute (covered by Example Care Organization). These types of Locations are often not managed by any specific organization. This could also include generic locations such as "in-home".
@@ -97,9 +98,9 @@ trait HealthcareService
   var name: js.UndefOr[String] = js.undefined
   
   /**
-    * The HealthcareService is not available during this period of time due to the provided reason.
+    * For example, if there is a generic Radiology service that offers CT Scans, MRIs, etc.  You could have HealthcareService resources for the CT Scans and MRIs, which have an offeredIn reference to the Radiology HealthcareService.
     */
-  var notAvailable: js.UndefOr[js.Array[HealthcareServiceNotAvailable]] = js.undefined
+  var offeredIn: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
     * If there is a photo/symbol associated with this HealthcareService, it may be included here to facilitate quick identification of the service in a list.
@@ -131,14 +132,9 @@ trait HealthcareService
   var serviceProvisionCode: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
   /**
-    * Collection of specialties handled by the service site. This is more of a medical term.
+    * Collection of specialties handled by the Healthcare service. This is more of a medical term.
     */
   var specialty: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
-  
-  /**
-    * If this is empty, then refer to the location's contacts.
-    */
-  var telecom: js.UndefOr[js.Array[ContactPoint]] = js.undefined
   
   /**
     * The specific type of service that may be delivered or performed.
@@ -163,15 +159,11 @@ object HealthcareService {
     
     inline def setAppointmentRequiredUndefined: Self = StObject.set(x, "appointmentRequired", js.undefined)
     
-    inline def setAvailabilityExceptions(value: String): Self = StObject.set(x, "availabilityExceptions", value.asInstanceOf[js.Any])
+    inline def setAvailability(value: js.Array[Availability]): Self = StObject.set(x, "availability", value.asInstanceOf[js.Any])
     
-    inline def setAvailabilityExceptionsUndefined: Self = StObject.set(x, "availabilityExceptions", js.undefined)
+    inline def setAvailabilityUndefined: Self = StObject.set(x, "availability", js.undefined)
     
-    inline def setAvailableTime(value: js.Array[HealthcareServiceAvailableTime]): Self = StObject.set(x, "availableTime", value.asInstanceOf[js.Any])
-    
-    inline def setAvailableTimeUndefined: Self = StObject.set(x, "availableTime", js.undefined)
-    
-    inline def setAvailableTimeVarargs(value: HealthcareServiceAvailableTime*): Self = StObject.set(x, "availableTime", js.Array(value*))
+    inline def setAvailabilityVarargs(value: Availability*): Self = StObject.set(x, "availability", js.Array(value*))
     
     inline def setCategory(value: js.Array[CodeableConcept]): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
@@ -194,6 +186,12 @@ object HealthcareService {
     inline def setCommunicationUndefined: Self = StObject.set(x, "communication", js.undefined)
     
     inline def setCommunicationVarargs(value: CodeableConcept*): Self = StObject.set(x, "communication", js.Array(value*))
+    
+    inline def setContact(value: js.Array[ExtendedContactDetail]): Self = StObject.set(x, "contact", value.asInstanceOf[js.Any])
+    
+    inline def setContactUndefined: Self = StObject.set(x, "contact", js.undefined)
+    
+    inline def setContactVarargs(value: ExtendedContactDetail*): Self = StObject.set(x, "contact", js.Array(value*))
     
     inline def setCoverageArea(value: js.Array[Reference]): Self = StObject.set(x, "coverageArea", value.asInstanceOf[js.Any])
     
@@ -233,11 +231,11 @@ object HealthcareService {
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    inline def setNotAvailable(value: js.Array[HealthcareServiceNotAvailable]): Self = StObject.set(x, "notAvailable", value.asInstanceOf[js.Any])
+    inline def setOfferedIn(value: js.Array[Reference]): Self = StObject.set(x, "offeredIn", value.asInstanceOf[js.Any])
     
-    inline def setNotAvailableUndefined: Self = StObject.set(x, "notAvailable", js.undefined)
+    inline def setOfferedInUndefined: Self = StObject.set(x, "offeredIn", js.undefined)
     
-    inline def setNotAvailableVarargs(value: HealthcareServiceNotAvailable*): Self = StObject.set(x, "notAvailable", js.Array(value*))
+    inline def setOfferedInVarargs(value: Reference*): Self = StObject.set(x, "offeredIn", js.Array(value*))
     
     inline def setPhoto(value: Attachment): Self = StObject.set(x, "photo", value.asInstanceOf[js.Any])
     
@@ -273,12 +271,6 @@ object HealthcareService {
     
     inline def setSpecialtyVarargs(value: CodeableConcept*): Self = StObject.set(x, "specialty", js.Array(value*))
     
-    inline def setTelecom(value: js.Array[ContactPoint]): Self = StObject.set(x, "telecom", value.asInstanceOf[js.Any])
-    
-    inline def setTelecomUndefined: Self = StObject.set(x, "telecom", js.undefined)
-    
-    inline def setTelecomVarargs(value: ContactPoint*): Self = StObject.set(x, "telecom", js.Array(value*))
-    
     inline def setType(value: js.Array[CodeableConcept]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
@@ -292,10 +284,6 @@ object HealthcareService {
     inline def set_appointmentRequired(value: Element): Self = StObject.set(x, "_appointmentRequired", value.asInstanceOf[js.Any])
     
     inline def set_appointmentRequiredUndefined: Self = StObject.set(x, "_appointmentRequired", js.undefined)
-    
-    inline def set_availabilityExceptions(value: Element): Self = StObject.set(x, "_availabilityExceptions", value.asInstanceOf[js.Any])
-    
-    inline def set_availabilityExceptionsUndefined: Self = StObject.set(x, "_availabilityExceptions", js.undefined)
     
     inline def set_comment(value: Element): Self = StObject.set(x, "_comment", value.asInstanceOf[js.Any])
     

@@ -12,6 +12,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 trait DataFunctionArgs extends StObject {
   
+  var context: js.UndefOr[Any] = js.undefined
+  
   var params: Params[String]
   
   var request: Request
@@ -25,6 +27,10 @@ object DataFunctionArgs {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: DataFunctionArgs] (val x: Self) extends AnyVal {
+    
+    inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    
+    inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
     inline def setParams(value: Params[String]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     

@@ -50,7 +50,7 @@ object libSrcTypesMod {
     var onWarn: js.UndefOr[OnWarnFn] = js.undefined
     
     var textComponent: js.UndefOr[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 118, starting with typings.react.mod.ComponentType[js.Object], typings.reactIntl.reactIntlStrings.a, typings.reactIntl.reactIntlStrings.abbr */ Any
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 119, starting with typings.react.mod.ComponentType[js.Object], typings.reactIntl.reactIntlStrings.a, typings.reactIntl.reactIntlStrings.abbr */ Any
       ] = js.undefined
     
     var timeZone: js.UndefOr[String] = js.undefined
@@ -109,7 +109,7 @@ object libSrcTypesMod {
       inline def setOnWarnUndefined: Self = StObject.set(x, "onWarn", js.undefined)
       
       inline def setTextComponent(
-        value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 118, starting with typings.react.mod.ComponentType[js.Object], typings.reactIntl.reactIntlStrings.a, typings.reactIntl.reactIntlStrings.abbr */ Any
+        value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 119, starting with typings.react.mod.ComponentType[js.Object], typings.reactIntl.reactIntlStrings.a, typings.reactIntl.reactIntlStrings.abbr */ Any
       ): Self = StObject.set(x, "textComponent", value.asInstanceOf[js.Any])
       
       inline def setTextComponentUndefined: Self = StObject.set(x, "textComponent", js.undefined)
@@ -138,7 +138,7 @@ object libSrcTypesMod {
        with typings.formatjsIntl.srcTypesMod.ResolvedIntlConfig[ReactNode] {
     
     var textComponent: js.UndefOr[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 118, starting with typings.react.mod.ComponentType[js.Object], typings.reactIntl.reactIntlStrings.a, typings.reactIntl.reactIntlStrings.abbr */ Any
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 119, starting with typings.react.mod.ComponentType[js.Object], typings.reactIntl.reactIntlStrings.a, typings.reactIntl.reactIntlStrings.abbr */ Any
       ] = js.undefined
     
     var wrapRichTextChunksInFragment: js.UndefOr[Boolean] = js.undefined
@@ -161,7 +161,7 @@ object libSrcTypesMod {
     implicit open class MutableBuilder[Self <: ResolvedIntlConfig] (val x: Self) extends AnyVal {
       
       inline def setTextComponent(
-        value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 118, starting with typings.react.mod.ComponentType[js.Object], typings.reactIntl.reactIntlStrings.a, typings.reactIntl.reactIntlStrings.abbr */ Any
+        value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 119, starting with typings.react.mod.ComponentType[js.Object], typings.reactIntl.reactIntlStrings.a, typings.reactIntl.reactIntlStrings.abbr */ Any
       ): Self = StObject.set(x, "textComponent", value.asInstanceOf[js.Any])
       
       inline def setTextComponentUndefined: Self = StObject.set(x, "textComponent", js.undefined)

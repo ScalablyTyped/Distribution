@@ -1,5 +1,6 @@
 package typings.angularCore.mod
 
+import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StringDictionary
 import typings.angularCore.angularCoreBooleans.`false`
 import typings.angularCore.angularCoreStrings.Asterisk
@@ -12,9 +13,6 @@ import typings.angularCore.angularCoreStrings.Style
 import typings.angularCore.angularCoreStrings.URL
 import typings.angularCore.anon.AppProviders
 import typings.angularCore.anon.Bootstrap
-import typings.angularCore.anon.Call
-import typings.angularCore.anon.ChangeDetection
-import typings.angularCore.anon.ContentQueries
 import typings.angularCore.anon.CtorParameters
 import typings.angularCore.anon.Declarations
 import typings.angularCore.anon.ElementInjector
@@ -25,8 +23,12 @@ import typings.angularCore.anon.FnCallPropNameValueSanitizer
 import typings.angularCore.anon.FnCallValue
 import typings.angularCore.anon.Imports
 import typings.angularCore.anon.InjectOptionsoptionalfals
+import typings.angularCore.anon.MutableɵComponentDefanyke
+import typings.angularCore.anon.MutableɵDirectiveDefanyke
 import typings.angularCore.anon.Pure
 import typings.angularCore.anon.RElementownerDocumentDocu
+import typings.angularCore.anon.Required
+import typings.angularCore.anon.SIGNAL
 import typings.angularCore.anon.Text
 import typings.angularCore.mod.^
 import typings.rxjs.distTypesInternalTypesMod.Subscribable
@@ -37,14 +39,13 @@ import typings.std.EventTarget
 import typings.std.HTMLElement
 import typings.std.Map
 import typings.std.Node
+import typings.std.Set
 import typings.std.TemplateStringsArray
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-
-inline def ANALYZE_FOR_ENTRY_COMPONENTS: InjectionToken[Any] = ^.asInstanceOf[js.Dynamic].selectDynamic("ANALYZE_FOR_ENTRY_COMPONENTS").asInstanceOf[InjectionToken[Any]]
 
 inline def ANIMATION_MODULE_TYPE: InjectionToken[NoopAnimations | BrowserAnimations] = ^.asInstanceOf[js.Dynamic].selectDynamic("ANIMATION_MODULE_TYPE").asInstanceOf[InjectionToken[NoopAnimations | BrowserAnimations]]
 
@@ -55,6 +56,8 @@ inline def APP_ID: InjectionToken[String] = ^.asInstanceOf[js.Dynamic].selectDyn
 inline def APP_INITIALIZER: InjectionToken[js.Array[js.Function0[Observable_[Any] | js.Promise[Any] | Unit]]] = ^.asInstanceOf[js.Dynamic].selectDynamic("APP_INITIALIZER").asInstanceOf[InjectionToken[js.Array[js.Function0[Observable_[Any] | js.Promise[Any] | Unit]]]]
 
 inline def COMPILER_OPTIONS: InjectionToken[js.Array[CompilerOptions]] = ^.asInstanceOf[js.Dynamic].selectDynamic("COMPILER_OPTIONS").asInstanceOf[InjectionToken[js.Array[CompilerOptions]]]
+
+inline def CSP_NONCE: InjectionToken[String | Null] = ^.asInstanceOf[js.Dynamic].selectDynamic("CSP_NONCE").asInstanceOf[InjectionToken[String | Null]]
 
 inline def CUSTOM_ELEMENTS_SCHEMA: SchemaMetadata = ^.asInstanceOf[js.Dynamic].selectDynamic("CUSTOM_ELEMENTS_SCHEMA").asInstanceOf[SchemaMetadata]
 
@@ -94,13 +97,18 @@ type ViewChildren = Query
 
 inline def asNativeElements(debugEls: js.Array[DebugElement]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("asNativeElements")(debugEls.asInstanceOf[js.Any]).asInstanceOf[Any]
 
+inline def assertInInjectionContext(debugFn: js.Function): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("assertInInjectionContext")(debugFn.asInstanceOf[js.Any]).asInstanceOf[Unit]
+
 inline def assertPlatform(requiredToken: Any): PlatformRef = ^.asInstanceOf[js.Dynamic].applyDynamic("assertPlatform")(requiredToken.asInstanceOf[js.Any]).asInstanceOf[PlatformRef]
+
+inline def computed[T](computation: js.Function0[T]): Signal_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("computed")(computation.asInstanceOf[js.Any]).asInstanceOf[Signal_[T]]
+inline def computed[T](computation: js.Function0[T], options: CreateComputedOptions[T]): Signal_[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("computed")(computation.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Signal_[T]]
 
 inline def createComponent[C](component: Type[C], options: ElementInjector): ComponentRef[C] = (^.asInstanceOf[js.Dynamic].applyDynamic("createComponent")(component.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ComponentRef[C]]
 
-inline def createEnvironmentInjector(providers: js.Array[ImportedNgModuleProviders | Provider], parent: EnvironmentInjector): EnvironmentInjector = (^.asInstanceOf[js.Dynamic].applyDynamic("createEnvironmentInjector")(providers.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[EnvironmentInjector]
+inline def createEnvironmentInjector(providers: js.Array[EnvironmentProviders | Provider], parent: EnvironmentInjector): EnvironmentInjector = (^.asInstanceOf[js.Dynamic].applyDynamic("createEnvironmentInjector")(providers.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[EnvironmentInjector]
 inline def createEnvironmentInjector(
-  providers: js.Array[Provider | ImportedNgModuleProviders],
+  providers: js.Array[Provider | EnvironmentProviders],
   parent: EnvironmentInjector,
   debugName: String
 ): EnvironmentInjector = (^.asInstanceOf[js.Dynamic].applyDynamic("createEnvironmentInjector")(providers.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], debugName.asInstanceOf[js.Any])).asInstanceOf[EnvironmentInjector]
@@ -129,6 +137,12 @@ inline def defineInjectable[T](opts: Factory[T]): Any = ^.asInstanceOf[js.Dynami
 
 inline def destroyPlatform(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("destroyPlatform")().asInstanceOf[Unit]
 
+inline def effect(effectFn: js.Function1[/* onCleanup */ EffectCleanupRegisterFn, Unit]): EffectRef = ^.asInstanceOf[js.Dynamic].applyDynamic("effect")(effectFn.asInstanceOf[js.Any]).asInstanceOf[EffectRef]
+inline def effect(
+  effectFn: js.Function1[/* onCleanup */ EffectCleanupRegisterFn, Unit],
+  options: CreateEffectOptions
+): EffectRef = (^.asInstanceOf[js.Dynamic].applyDynamic("effect")(effectFn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[EffectRef]
+
 inline def enableProdMode(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableProdMode")().asInstanceOf[Unit]
 
 inline def forwardRef(forwardRefFn: ForwardRefFn): Type[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("forwardRef")(forwardRefFn.asInstanceOf[js.Any]).asInstanceOf[Type[Any]]
@@ -144,7 +158,7 @@ inline def getNgModuleById[T](id: String): Type[T] = ^.asInstanceOf[js.Dynamic].
 
 inline def getPlatform(): PlatformRef | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getPlatform")().asInstanceOf[PlatformRef | Null]
 
-inline def importProvidersFrom(sources: ImportProvidersSource*): ImportedNgModuleProviders = ^.asInstanceOf[js.Dynamic].applyDynamic("importProvidersFrom")(sources.asInstanceOf[Seq[js.Any]]*).asInstanceOf[ImportedNgModuleProviders]
+inline def importProvidersFrom(sources: ImportProvidersSource*): EnvironmentProviders = ^.asInstanceOf[js.Dynamic].applyDynamic("importProvidersFrom")(sources.asInstanceOf[Seq[js.Any]]*).asInstanceOf[EnvironmentProviders]
 
 inline def inject[T](token: ProviderToken[T]): T | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("inject")(token.asInstanceOf[js.Any]).asInstanceOf[T | Null]
 inline def inject[T](token: ProviderToken[T], flags: InjectFlags): T | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("inject")(token.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[T | Null]
@@ -155,20 +169,44 @@ inline def inject_T_T[T](token: ProviderToken[T]): T = ^.asInstanceOf[js.Dynamic
 
 inline def isDevMode(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDevMode")().asInstanceOf[Boolean]
 
+inline def isSignal(value: js.Function): /* is @angular/core.@angular/core.Signal<unknown> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSignal")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @angular/core.@angular/core.Signal<unknown> */ Boolean]
+
+inline def isStandalone(`type`: Type[Any]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStandalone")(`type`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+
+inline def makeEnvironmentProviders(providers: js.Array[Provider | EnvironmentProviders]): EnvironmentProviders = ^.asInstanceOf[js.Dynamic].applyDynamic("makeEnvironmentProviders")(providers.asInstanceOf[js.Any]).asInstanceOf[EnvironmentProviders]
+
+inline def makeStateKey[T](key: String): StateKey[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeStateKey")(key.asInstanceOf[js.Any]).asInstanceOf[StateKey[T]]
+
+inline def mergeApplicationConfig(configs: ApplicationConfig*): ApplicationConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeApplicationConfig")(configs.asInstanceOf[Seq[js.Any]]*).asInstanceOf[ApplicationConfig]
+
 inline def platformCore(): PlatformRef = ^.asInstanceOf[js.Dynamic].applyDynamic("platformCore")().asInstanceOf[PlatformRef]
 inline def platformCore(extraProviders: js.Array[StaticProvider]): PlatformRef = ^.asInstanceOf[js.Dynamic].applyDynamic("platformCore")(extraProviders.asInstanceOf[js.Any]).asInstanceOf[PlatformRef]
+
+inline def provideZoneChangeDetection(): EnvironmentProviders = ^.asInstanceOf[js.Dynamic].applyDynamic("provideZoneChangeDetection")().asInstanceOf[EnvironmentProviders]
+inline def provideZoneChangeDetection(options: NgZoneOptions): EnvironmentProviders = ^.asInstanceOf[js.Dynamic].applyDynamic("provideZoneChangeDetection")(options.asInstanceOf[js.Any]).asInstanceOf[EnvironmentProviders]
 
 inline def reflectComponentType[C](component: Type[C]): ComponentMirror[C] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("reflectComponentType")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentMirror[C] | Null]
 
 inline def resolveForwardRef[T](`type`: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveForwardRef")(`type`.asInstanceOf[js.Any]).asInstanceOf[T]
 
+inline def runInInjectionContext[ReturnT](injector: Injector, fn: js.Function0[ReturnT]): ReturnT = (^.asInstanceOf[js.Dynamic].applyDynamic("runInInjectionContext")(injector.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[ReturnT]
+
 inline def setTestabilityGetter(getter: GetTestability): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setTestabilityGetter")(getter.asInstanceOf[js.Any]).asInstanceOf[Unit]
+
+inline def signal[T](initialValue: T): WritableSignal[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("signal")(initialValue.asInstanceOf[js.Any]).asInstanceOf[WritableSignal[T]]
+inline def signal[T](initialValue: T, options: CreateSignalOptions[T]): WritableSignal[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("signal")(initialValue.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[WritableSignal[T]]
+
+inline def untracked[T](nonReactiveReadsFn: js.Function0[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("untracked")(nonReactiveReadsFn.asInstanceOf[js.Any]).asInstanceOf[T]
 
 inline def ɵALLOWMULTIPLEPLATFORMS: InjectionToken[Boolean] = ^.asInstanceOf[js.Dynamic].selectDynamic("\u0275ALLOW_MULTIPLE_PLATFORMS").asInstanceOf[InjectionToken[Boolean]]
 
 inline def ɵDEFAULTLOCALEID: /* "en-US" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("\u0275DEFAULT_LOCALE_ID").asInstanceOf[/* "en-US" */ String]
 
+inline def ɵENABLEDSSRFEATURES: InjectionToken[Set[String]] = ^.asInstanceOf[js.Dynamic].selectDynamic("\u0275ENABLED_SSR_FEATURES").asInstanceOf[InjectionToken[Set[String]]]
+
 inline def ɵINJECTORSCOPE: InjectionToken[InjectorScope | Null] = ^.asInstanceOf[js.Dynamic].selectDynamic("\u0275INJECTOR_SCOPE").asInstanceOf[InjectionToken[InjectorScope | Null]]
+
+inline def ɵISHYDRATIONDOMREUSEENABLED: InjectionToken[Boolean] = ^.asInstanceOf[js.Dynamic].selectDynamic("\u0275IS_HYDRATION_DOM_REUSE_ENABLED").asInstanceOf[InjectionToken[Boolean]]
 
 inline def ɵLifecycleHooksFeature(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275LifecycleHooksFeature")().asInstanceOf[Unit]
 
@@ -194,6 +232,8 @@ inline def ɵTESTABILITY: InjectionToken[Testability] = ^.asInstanceOf[js.Dynami
 
 inline def ɵTESTABILITYGETTER: InjectionToken[GetTestability] = ^.asInstanceOf[js.Dynamic].selectDynamic("\u0275TESTABILITY_GETTER").asInstanceOf[InjectionToken[GetTestability]]
 
+inline def ɵXSSSECURITYURL: /* "https://g.co/ng/security#xss" */ String = ^.asInstanceOf[js.Dynamic].selectDynamic("\u0275XSS_SECURITY_URL").asInstanceOf[/* "https://g.co/ng/security#xss" */ String]
+
 inline def ɵallowSanitizationBypassAndThrow(value: Any, `type`: ɵBypassType): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275allowSanitizationBypassAndThrow")(value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 
 inline def ɵallowSanitizationBypassAndThrow_HTML(value: Any, `type`: HTML): /* is @angular/core.@angular/core.ɵSafeHtml */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275allowSanitizationBypassAndThrow")(value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[/* is @angular/core.@angular/core.ɵSafeHtml */ Boolean]
@@ -205,6 +245,8 @@ inline def ɵallowSanitizationBypassAndThrow_Script(value: Any, `type`: Script):
 inline def ɵallowSanitizationBypassAndThrow_Style(value: Any, `type`: Style): /* is @angular/core.@angular/core.ɵSafeStyle */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275allowSanitizationBypassAndThrow")(value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[/* is @angular/core.@angular/core.ɵSafeStyle */ Boolean]
 
 inline def ɵallowSanitizationBypassAndThrow_URL(value: Any, `type`: URL): /* is @angular/core.@angular/core.ɵSafeUrl */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275allowSanitizationBypassAndThrow")(value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[/* is @angular/core.@angular/core.ɵSafeUrl */ Boolean]
+
+inline def ɵannotateForHydration(appRef: ApplicationRef, doc: Document): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275annotateForHydration")(appRef.asInstanceOf[js.Any], doc.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
 inline def ɵbypassSanitizationTrustHtml(trustedHtml: String): ɵSafeHtml = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275bypassSanitizationTrustHtml")(trustedHtml.asInstanceOf[js.Any]).asInstanceOf[ɵSafeHtml]
 
@@ -235,6 +277,10 @@ inline def ɵcompileNgModuleFactory[M](injector: Injector, options: CompilerOpti
 
 inline def ɵcompilePipe(`type`: Type[Any], meta: Pipe): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275compilePipe")(`type`.asInstanceOf[js.Any], meta.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
+inline def ɵconvertToBitFlags(): js.UndefOr[InjectFlags] = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275convertToBitFlags")().asInstanceOf[js.UndefOr[InjectFlags]]
+inline def ɵconvertToBitFlags(flags: InjectFlags): js.UndefOr[InjectFlags] = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275convertToBitFlags")(flags.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[InjectFlags]]
+inline def ɵconvertToBitFlags(flags: InjectOptions): js.UndefOr[InjectFlags] = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275convertToBitFlags")(flags.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[InjectFlags]]
+
 inline def ɵcreateInjector(defType: Any): Injector = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275createInjector")(defType.asInstanceOf[js.Any]).asInstanceOf[Injector]
 inline def ɵcreateInjector(defType: Any, parent: Null, additionalProviders: js.Array[StaticProvider]): Injector = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275createInjector")(defType.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], additionalProviders.asInstanceOf[js.Any])).asInstanceOf[Injector]
 inline def ɵcreateInjector(defType: Any, parent: Null, additionalProviders: js.Array[StaticProvider], name: String): Injector = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275createInjector")(defType.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], additionalProviders.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Injector]
@@ -258,6 +304,8 @@ inline def ɵdetectChanges(component: js.Object): Unit = ^.asInstanceOf[js.Dynam
 
 inline def ɵdevModeEqual(a: Any, b: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275devModeEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 
+inline def ɵescapeTransferStateContent(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275escapeTransferStateContent")(text.asInstanceOf[js.Any]).asInstanceOf[String]
+
 inline def ɵfindLocaleData(locale: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275findLocaleData")(locale.asInstanceOf[js.Any]).asInstanceOf[Any]
 
 inline def ɵflushModuleScopingQueueAsMuchAsPossible(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275flushModuleScopingQueueAsMuchAsPossible")().asInstanceOf[Unit]
@@ -271,8 +319,6 @@ inline def ɵformatRuntimeError_false[T /* <: Double */](code: T, message: `fals
   * @publicApi
   */
 inline def ɵgetDebugNode(nativeNode: Any): DebugNode | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275getDebugNode")(nativeNode.asInstanceOf[js.Any]).asInstanceOf[DebugNode | Null]
-
-inline def ɵgetDebugNodeR2(_nativeNode: Any): DebugNode | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275getDebugNodeR2")(_nativeNode.asInstanceOf[js.Any]).asInstanceOf[DebugNode | Null]
 
 inline def ɵgetDirectives(node: Node): js.Array[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275getDirectives")(node.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Object]]
 
@@ -300,108 +346,18 @@ inline def ɵinternalCreateApplication(config: AppProviders): js.Promise[Applica
 
 inline def ɵisBoundToModule[C](cf: ComponentFactory[C]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275isBoundToModule")(cf.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 
-inline def ɵisDefaultChangeDetectionStrategy(changeDetectionStrategy: ChangeDetectionStrategy): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275isDefaultChangeDetectionStrategy")(changeDetectionStrategy.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+inline def ɵisEnvironmentProviders(value: EnvironmentProviders): /* is @angular/core.@angular/core.ɵInternalEnvironmentProviders */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275isEnvironmentProviders")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @angular/core.@angular/core.ɵInternalEnvironmentProviders */ Boolean]
+inline def ɵisEnvironmentProviders(value: Provider): /* is @angular/core.@angular/core.ɵInternalEnvironmentProviders */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275isEnvironmentProviders")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @angular/core.@angular/core.ɵInternalEnvironmentProviders */ Boolean]
+inline def ɵisEnvironmentProviders(value: ɵInternalEnvironmentProviders): /* is @angular/core.@angular/core.ɵInternalEnvironmentProviders */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275isEnvironmentProviders")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @angular/core.@angular/core.ɵInternalEnvironmentProviders */ Boolean]
 
 inline def ɵisInjectable(`type`: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275isInjectable")(`type`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 
-inline def ɵisListLikeIterable(obj: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275isListLikeIterable")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-
-inline def ɵisObservable(obj: Any): /* is rxjs.rxjs.Observable<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275isObservable")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is rxjs.rxjs.Observable<any> */ Boolean]
-inline def ɵisObservable(obj: Observable_[Any]): /* is rxjs.rxjs.Observable<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275isObservable")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is rxjs.rxjs.Observable<any> */ Boolean]
+inline def ɵisNgModule[T](value: Type[T]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275isNgModule")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 
 inline def ɵisPromise[T](obj: Any): /* is std.Promise<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275isPromise")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is std.Promise<T> */ Boolean]
 
-inline def ɵisStandalone[T](`type`: Type[T]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275isStandalone")(`type`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-
-inline def ɵisSubscribable(obj: Any): /* is rxjs.rxjs/dist/types/internal/types.Subscribable<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275isSubscribable")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is rxjs.rxjs/dist/types/internal/types.Subscribable<any> */ Boolean]
-inline def ɵisSubscribable(obj: Subscribable[Any]): /* is rxjs.rxjs/dist/types/internal/types.Subscribable<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275isSubscribable")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is rxjs.rxjs/dist/types/internal/types.Subscribable<any> */ Boolean]
-
-inline def ɵivyEnabled: /* true */ Boolean = ^.asInstanceOf[js.Dynamic].selectDynamic("\u0275ivyEnabled").asInstanceOf[/* true */ Boolean]
-
-inline def ɵmakeDecorator[T](name: String): Call = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275makeDecorator")(name.asInstanceOf[js.Any]).asInstanceOf[Call]
-inline def ɵmakeDecorator[T](name: String, props: js.Function1[/* repeated */ Any, Any]): Call = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275makeDecorator")(name.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[Call]
-inline def ɵmakeDecorator[T](name: String, props: js.Function1[/* repeated */ Any, Any], parentClass: Any): Call = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275makeDecorator")(name.asInstanceOf[js.Any], props.asInstanceOf[js.Any], parentClass.asInstanceOf[js.Any])).asInstanceOf[Call]
-inline def ɵmakeDecorator[T](
-  name: String,
-  props: js.Function1[/* repeated */ Any, Any],
-  parentClass: Any,
-  additionalProcessing: js.Function1[/* type */ Type[T], Unit]
-): Call = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275makeDecorator")(name.asInstanceOf[js.Any], props.asInstanceOf[js.Any], parentClass.asInstanceOf[js.Any], additionalProcessing.asInstanceOf[js.Any])).asInstanceOf[Call]
-inline def ɵmakeDecorator[T](
-  name: String,
-  props: js.Function1[/* repeated */ Any, Any],
-  parentClass: Any,
-  additionalProcessing: js.Function1[/* type */ Type[T], Unit],
-  typeFn: js.Function2[/* type */ Type[T], /* repeated */ Any, Unit]
-): Call = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275makeDecorator")(name.asInstanceOf[js.Any], props.asInstanceOf[js.Any], parentClass.asInstanceOf[js.Any], additionalProcessing.asInstanceOf[js.Any], typeFn.asInstanceOf[js.Any])).asInstanceOf[Call]
-inline def ɵmakeDecorator[T](
-  name: String,
-  props: js.Function1[/* repeated */ Any, Any],
-  parentClass: Any,
-  additionalProcessing: Unit,
-  typeFn: js.Function2[/* type */ Type[T], /* repeated */ Any, Unit]
-): Call = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275makeDecorator")(name.asInstanceOf[js.Any], props.asInstanceOf[js.Any], parentClass.asInstanceOf[js.Any], additionalProcessing.asInstanceOf[js.Any], typeFn.asInstanceOf[js.Any])).asInstanceOf[Call]
-inline def ɵmakeDecorator[T](
-  name: String,
-  props: js.Function1[/* repeated */ Any, Any],
-  parentClass: Unit,
-  additionalProcessing: js.Function1[/* type */ Type[T], Unit]
-): Call = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275makeDecorator")(name.asInstanceOf[js.Any], props.asInstanceOf[js.Any], parentClass.asInstanceOf[js.Any], additionalProcessing.asInstanceOf[js.Any])).asInstanceOf[Call]
-inline def ɵmakeDecorator[T](
-  name: String,
-  props: js.Function1[/* repeated */ Any, Any],
-  parentClass: Unit,
-  additionalProcessing: js.Function1[/* type */ Type[T], Unit],
-  typeFn: js.Function2[/* type */ Type[T], /* repeated */ Any, Unit]
-): Call = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275makeDecorator")(name.asInstanceOf[js.Any], props.asInstanceOf[js.Any], parentClass.asInstanceOf[js.Any], additionalProcessing.asInstanceOf[js.Any], typeFn.asInstanceOf[js.Any])).asInstanceOf[Call]
-inline def ɵmakeDecorator[T](
-  name: String,
-  props: js.Function1[/* repeated */ Any, Any],
-  parentClass: Unit,
-  additionalProcessing: Unit,
-  typeFn: js.Function2[/* type */ Type[T], /* repeated */ Any, Unit]
-): Call = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275makeDecorator")(name.asInstanceOf[js.Any], props.asInstanceOf[js.Any], parentClass.asInstanceOf[js.Any], additionalProcessing.asInstanceOf[js.Any], typeFn.asInstanceOf[js.Any])).asInstanceOf[Call]
-inline def ɵmakeDecorator[T](name: String, props: Unit, parentClass: Any): Call = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275makeDecorator")(name.asInstanceOf[js.Any], props.asInstanceOf[js.Any], parentClass.asInstanceOf[js.Any])).asInstanceOf[Call]
-inline def ɵmakeDecorator[T](
-  name: String,
-  props: Unit,
-  parentClass: Any,
-  additionalProcessing: js.Function1[/* type */ Type[T], Unit]
-): Call = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275makeDecorator")(name.asInstanceOf[js.Any], props.asInstanceOf[js.Any], parentClass.asInstanceOf[js.Any], additionalProcessing.asInstanceOf[js.Any])).asInstanceOf[Call]
-inline def ɵmakeDecorator[T](
-  name: String,
-  props: Unit,
-  parentClass: Any,
-  additionalProcessing: js.Function1[/* type */ Type[T], Unit],
-  typeFn: js.Function2[/* type */ Type[T], /* repeated */ Any, Unit]
-): Call = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275makeDecorator")(name.asInstanceOf[js.Any], props.asInstanceOf[js.Any], parentClass.asInstanceOf[js.Any], additionalProcessing.asInstanceOf[js.Any], typeFn.asInstanceOf[js.Any])).asInstanceOf[Call]
-inline def ɵmakeDecorator[T](
-  name: String,
-  props: Unit,
-  parentClass: Any,
-  additionalProcessing: Unit,
-  typeFn: js.Function2[/* type */ Type[T], /* repeated */ Any, Unit]
-): Call = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275makeDecorator")(name.asInstanceOf[js.Any], props.asInstanceOf[js.Any], parentClass.asInstanceOf[js.Any], additionalProcessing.asInstanceOf[js.Any], typeFn.asInstanceOf[js.Any])).asInstanceOf[Call]
-inline def ɵmakeDecorator[T](
-  name: String,
-  props: Unit,
-  parentClass: Unit,
-  additionalProcessing: js.Function1[/* type */ Type[T], Unit]
-): Call = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275makeDecorator")(name.asInstanceOf[js.Any], props.asInstanceOf[js.Any], parentClass.asInstanceOf[js.Any], additionalProcessing.asInstanceOf[js.Any])).asInstanceOf[Call]
-inline def ɵmakeDecorator[T](
-  name: String,
-  props: Unit,
-  parentClass: Unit,
-  additionalProcessing: js.Function1[/* type */ Type[T], Unit],
-  typeFn: js.Function2[/* type */ Type[T], /* repeated */ Any, Unit]
-): Call = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275makeDecorator")(name.asInstanceOf[js.Any], props.asInstanceOf[js.Any], parentClass.asInstanceOf[js.Any], additionalProcessing.asInstanceOf[js.Any], typeFn.asInstanceOf[js.Any])).asInstanceOf[Call]
-inline def ɵmakeDecorator[T](
-  name: String,
-  props: Unit,
-  parentClass: Unit,
-  additionalProcessing: Unit,
-  typeFn: js.Function2[/* type */ Type[T], /* repeated */ Any, Unit]
-): Call = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275makeDecorator")(name.asInstanceOf[js.Any], props.asInstanceOf[js.Any], parentClass.asInstanceOf[js.Any], additionalProcessing.asInstanceOf[js.Any], typeFn.asInstanceOf[js.Any])).asInstanceOf[Call]
+inline def ɵisSubscribable[T](obj: Any): /* is rxjs.rxjs/dist/types/internal/types.Subscribable<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275isSubscribable")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is rxjs.rxjs/dist/types/internal/types.Subscribable<T> */ Boolean]
+inline def ɵisSubscribable[T](obj: Subscribable[T]): /* is rxjs.rxjs/dist/types/internal/types.Subscribable<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275isSubscribable")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is rxjs.rxjs/dist/types/internal/types.Subscribable<T> */ Boolean]
 
 inline def ɵnoSideEffects[T](fn: js.Function0[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275noSideEffects")(fn.asInstanceOf[js.Any]).asInstanceOf[T]
 
@@ -425,6 +381,8 @@ inline def ɵresetJitOptions(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("
 inline def ɵresolveComponentResources(resourceResolver: js.Function1[/* url */ String, js.Promise[String | Text]]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275resolveComponentResources")(resourceResolver.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
 
 inline def ɵsetAllowDuplicateNgModuleIdsForTest(allowDuplicates: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275setAllowDuplicateNgModuleIdsForTest")(allowDuplicates.asInstanceOf[js.Any]).asInstanceOf[Unit]
+
+inline def ɵsetAlternateWeakRefImpl(impl: WeakRefCtor): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275setAlternateWeakRefImpl")(impl.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
 inline def ɵsetClassMetadata(`type`: Type[Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275setClassMetadata")(`type`.asInstanceOf[js.Any]).asInstanceOf[Unit]
 inline def ɵsetClassMetadata(`type`: Type[Any], decorators: js.Array[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275setClassMetadata")(`type`.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -468,13 +426,20 @@ inline def ɵstringify(token: Any): String = ^.asInstanceOf[js.Dynamic].applyDyn
 
 inline def ɵtransitiveScopesFor[T](`type`: Type[T]): ɵNgModuleTransitiveScopes = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275transitiveScopesFor")(`type`.asInstanceOf[js.Any]).asInstanceOf[ɵNgModuleTransitiveScopes]
 
+inline def ɵunescapeTransferStateContent(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275unescapeTransferStateContent")(text.asInstanceOf[js.Any]).asInstanceOf[String]
+
 inline def ɵunregisterLocaleData(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275unregisterLocaleData")().asInstanceOf[Unit]
 
 inline def ɵunwrapSafeValue(value: ɵSafeValue): String = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275unwrapSafeValue")(value.asInstanceOf[js.Any]).asInstanceOf[String]
 inline def ɵunwrapSafeValue[T](value: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275unwrapSafeValue")(value.asInstanceOf[js.Any]).asInstanceOf[T]
 
+inline def ɵwithDomHydration(): EnvironmentProviders = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275withDomHydration")().asInstanceOf[EnvironmentProviders]
+
 inline def ɵɵCopyDefinitionFeature(definition: ɵComponentDef[Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275CopyDefinitionFeature")(definition.asInstanceOf[js.Any]).asInstanceOf[Unit]
 inline def ɵɵCopyDefinitionFeature(definition: ɵDirectiveDef[Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275CopyDefinitionFeature")(definition.asInstanceOf[js.Any]).asInstanceOf[Unit]
+
+inline def ɵɵHostDirectivesFeature(rawHostDirectives: js.Array[HostDirectiveConfig]): js.Function1[/* definition */ ɵDirectiveDef[Any], Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275HostDirectivesFeature")(rawHostDirectives.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* definition */ ɵDirectiveDef[Any], Unit]]
+inline def ɵɵHostDirectivesFeature(rawHostDirectives: js.Function0[js.Array[HostDirectiveConfig]]): js.Function1[/* definition */ ɵDirectiveDef[Any], Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275HostDirectivesFeature")(rawHostDirectives.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* definition */ ɵDirectiveDef[Any], Unit]]
 
 inline def ɵɵInheritDefinitionFeature(definition: ɵComponentDef[Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275InheritDefinitionFeature")(definition.asInstanceOf[js.Any]).asInstanceOf[Unit]
 inline def ɵɵInheritDefinitionFeature(definition: ɵDirectiveDef[Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275InheritDefinitionFeature")(definition.asInstanceOf[js.Any]).asInstanceOf[Unit]
@@ -2036,9 +2001,9 @@ inline def ɵɵcontentQuery[T](directiveIndex: Double, predicate: js.Array[Strin
 inline def ɵɵcontentQuery[T](directiveIndex: Double, predicate: ProviderToken[Any], flags: QueryFlags): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275contentQuery")(directiveIndex.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def ɵɵcontentQuery[T](directiveIndex: Double, predicate: ProviderToken[Any], flags: QueryFlags, read: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275contentQuery")(directiveIndex.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], read.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def ɵɵdefineComponent[T](componentDefinition: ChangeDetection[T]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275defineComponent")(componentDefinition.asInstanceOf[js.Any]).asInstanceOf[Any]
+inline def ɵɵdefineComponent[T](componentDefinition: ComponentDefinition[T]): MutableɵComponentDefanyke = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275defineComponent")(componentDefinition.asInstanceOf[js.Any]).asInstanceOf[MutableɵComponentDefanyke]
 
-inline def ɵɵdefineDirective[T](directiveDefinition: ContentQueries[T]): scala.Nothing = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275defineDirective")(directiveDefinition.asInstanceOf[js.Any]).asInstanceOf[scala.Nothing]
+inline def ɵɵdefineDirective[T](directiveDefinition: DirectiveDefinition[T]): MutableɵDirectiveDefanyke = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275defineDirective")(directiveDefinition.asInstanceOf[js.Any]).asInstanceOf[MutableɵDirectiveDefanyke]
 
 inline def ɵɵdefineInjectable[T](opts: Factory[T]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275defineInjectable")(opts.asInstanceOf[js.Any]).asInstanceOf[Any]
 
@@ -4407,6 +4372,8 @@ inline def ɵɵtrustConstantHtml(html: TemplateStringsArray): TrustedHTML | Stri
 
 inline def ɵɵtrustConstantResourceUrl(url: TemplateStringsArray): TrustedScriptURL | String = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275trustConstantResourceUrl")(url.asInstanceOf[js.Any]).asInstanceOf[TrustedScriptURL | String]
 
+inline def ɵɵvalidateIframeAttribute(attrValue: Any, tagName: String, attrName: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275validateIframeAttribute")(attrValue.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any], attrName.asInstanceOf[js.Any])).asInstanceOf[Any]
+
 inline def ɵɵviewQuery[T](predicate: js.Array[String], flags: QueryFlags): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275viewQuery")(predicate.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def ɵɵviewQuery[T](predicate: js.Array[String], flags: QueryFlags, read: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275viewQuery")(predicate.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], read.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def ɵɵviewQuery[T](predicate: ProviderToken[Any], flags: QueryFlags): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275\u0275viewQuery")(predicate.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -4415,6 +4382,8 @@ inline def ɵɵviewQuery[T](predicate: ProviderToken[Any], flags: QueryFlags, re
 type AbstractType[T] = js.Function
 
 type ChangeDetectionStrategy2 = Double
+
+type ChangeDetectorRefInterface = ChangeDetectorRef
 
 /**
   * Definition of what a template rendering function should look like for a component.
@@ -4496,6 +4465,13 @@ type DirectiveDefList = js.Array[ɵDirectiveDef[Any] | ɵComponentDef[Any]]
   */
 type DirectiveDefListOrFactory = js.Function0[DirectiveDefList] | DirectiveDefList
 
+type EffectCleanupFn = js.Function0[Unit]
+
+/**
+  * A callback passed to the effect function that makes it possible to register cleanup logic.
+  */
+type EffectCleanupRegisterFn = js.Function1[/* cleanupFn */ EffectCleanupFn, Unit]
+
 type ForwardRefFn = js.Function0[Any]
 
 type GlobalTargetResolver = js.Function1[/* element */ Any, EventTarget]
@@ -4525,6 +4501,22 @@ type HookFn = js.Function0[Unit]
 
 type HostBindingsFunction[T] = js.Function2[/* rf */ ɵRenderFlags, /* ctx */ T, Unit]
 
+/**
+  * Mapping between the public aliases of directive bindings and the underlying inputs/outputs that
+  * they represent. Also serves as an allowlist of the inputs/outputs from the host directive that
+  * the author has decided to expose.
+  */
+type HostDirectiveBindingMap = StringDictionary[String]
+
+/** Values that can be used to define a host directive through the `HostDirectivesFeature`. */
+type HostDirectiveConfig = Type[Any] | typings.angularCore.anon.Directive
+
+/**
+  * Mapping between a directive that was used as a host directive
+  * and the configuration that was used to define it as such.
+  */
+type HostDirectiveDefs = Map[ɵDirectiveDef[Any], HostDirectiveDef[Any]]
+
 /** 
 NOTE: Rewritten from type alias:
 {{{
@@ -4534,6 +4526,8 @@ to avoid circular code involving:
 - @angular/core.@angular/core.ImportProvidersSource
 */
 type ImportProvidersSource = Type[Any] | ModuleWithProviders[Any] | js.Array[Any]
+
+type ImportedNgModuleProviders = EnvironmentProviders
 
 /**
   * This array contains information about input properties that
@@ -4579,6 +4573,15 @@ type InsertBeforeIndex = Null | Double | js.Array[Double]
   * - `<ng-template #tplRef>` - `tplRef` should point to the `TemplateRef` instance;
   */
 type LocalRefExtractor = js.Function2[/* tNode */ TNodeWithLocalRefs, /* currentView */ LView[Any], Any]
+
+/** NOTE: Mapped type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+  * This translation is imprecise and ignores the effect of the type mapping. 
+  * TS definition: {{{
+  {[ P in K ]: T[P]}
+  }}}
+  */
+type Mutable[T /* <: StringDictionary[Any] */, K /* <: String */] = T
 
 type NgIterable[T] = js.Array[T] | js.Iterable[T]
 
@@ -4659,6 +4662,17 @@ type SanitizerFn = js.Function3[
 /* tagName */ js.UndefOr[String], 
 /* propName */ js.UndefOr[String], 
 String | TrustedHTML | TrustedScript | TrustedScriptURL]
+
+/**
+  * Represents element containers within this view, stored as key-value pairs
+  * where key is an index of a container in an LView (also used in the
+  * `elementContainerStart` instruction), the value is the number of root nodes
+  * in this container. This information is needed to locate an anchor comment
+  * node that goes after all container nodes.
+  */
+type SerializedElementContainers = NumberDictionary[Double]
+
+type Signal_[T] = js.Function0[T] & SIGNAL
 
 type SimpleChanges = StringDictionary[SimpleChange]
 
@@ -4821,12 +4835,12 @@ type TypeOrFactory[T] = T | js.Function0[T]
 
 type TypeProvider = Type[Any]
 
+type ValueEqualityFn[T] = js.Function2[/* a */ T, /* b */ T, Boolean]
+
 /**
   * Definition of what a view queries function should look like.
   */
 type ViewQueriesFunction[T] = js.Function2[/* rf */ ɵRenderFlags, /* ctx */ T, Unit]
-
-type viewEngineChangeDetectorRefInterface = ChangeDetectorRef
 
 type ɵCssSelectorList = js.Array[CssSelector]
 
@@ -4846,9 +4860,9 @@ type ɵSafeStyle = ɵSafeValue
 
 type ɵSafeUrl = ɵSafeValue
 
-type ɵɵComponentDeclaration[T, Selector /* <: String */, ExportAs /* <: js.Array[String] */, InputMap /* <: StringDictionary[String] */, OutputMap /* <: StringDictionary[String] */, QueryFields /* <: js.Array[String] */, NgContentSelectors /* <: js.Array[String] */, IsStandalone /* <: Boolean */] = Any
+type ɵɵComponentDeclaration[T, Selector /* <: String */, ExportAs /* <: js.Array[String] */, InputMap /* <: StringDictionary[String | Required] */, OutputMap /* <: StringDictionary[String] */, QueryFields /* <: js.Array[String] */, NgContentSelectors /* <: js.Array[String] */, IsStandalone /* <: Boolean */, HostDirectives] = Any
 
-type ɵɵDirectiveDeclaration[T, Selector /* <: String */, ExportAs /* <: js.Array[String] */, InputMap /* <: StringDictionary[String] */, OutputMap /* <: StringDictionary[String] */, QueryFields /* <: js.Array[String] */, NgContentSelectors /* <: scala.Nothing */, IsStandalone /* <: Boolean */] = Any
+type ɵɵDirectiveDeclaration[T, Selector /* <: String */, ExportAs /* <: js.Array[String] */, InputMap /* <: StringDictionary[String | Required] */, OutputMap /* <: StringDictionary[String] */, QueryFields /* <: js.Array[String] */, NgContentSelectors /* <: scala.Nothing */, IsStandalone /* <: Boolean */, HostDirectives] = Any
 
 type ɵɵFactoryDeclaration[T, CtorDependencies /* <: js.Array[CtorDependency] */] = Any
 

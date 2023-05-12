@@ -43,12 +43,16 @@ trait InvokeConfig[TContext, TEvent /* <: EventObject */] extends StObject {
   /**
     * The transition to take upon the invoked child machine reaching its final top-level state.
     */
-  var onDone: js.UndefOr[String | (SingleOrArray[TransitionConfig[TContext, DoneInvokeEvent[Any]]])] = js.undefined
+  var onDone: js.UndefOr[
+    String | (SingleOrArray[TransitionConfigOrTarget[TContext, DoneInvokeEvent[Any], DoneInvokeEvent[Any]]])
+  ] = js.undefined
   
   /**
     * The transition to take upon the invoked child machine sending an error event.
     */
-  var onError: js.UndefOr[String | (SingleOrArray[TransitionConfig[TContext, DoneInvokeEvent[Any]]])] = js.undefined
+  var onError: js.UndefOr[
+    String | (SingleOrArray[TransitionConfigOrTarget[TContext, DoneInvokeEvent[Any], DoneInvokeEvent[Any]]])
+  ] = js.undefined
   
   /**
     * The source of the machine to be invoked, or the machine itself.
@@ -89,17 +93,25 @@ object InvokeConfig {
     
     inline def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
     
-    inline def setOnDone(value: String | (SingleOrArray[TransitionConfig[TContext, DoneInvokeEvent[Any]]])): Self = StObject.set(x, "onDone", value.asInstanceOf[js.Any])
+    inline def setOnDone(
+      value: String | (SingleOrArray[TransitionConfigOrTarget[TContext, DoneInvokeEvent[Any], DoneInvokeEvent[Any]]])
+    ): Self = StObject.set(x, "onDone", value.asInstanceOf[js.Any])
     
     inline def setOnDoneUndefined: Self = StObject.set(x, "onDone", js.undefined)
     
-    inline def setOnDoneVarargs(value: (TransitionConfig[TContext, DoneInvokeEvent[Any]])*): Self = StObject.set(x, "onDone", js.Array(value*))
+    inline def setOnDoneVarargs(
+      value: ((TransitionConfig[TContext, DoneInvokeEvent[Any], DoneInvokeEvent[Any]]) | (TransitionConfigOrTarget[TContext, DoneInvokeEvent[Any], DoneInvokeEvent[Any]]) | (TransitionConfigTarget[TContext, DoneInvokeEvent[Any]]))*
+    ): Self = StObject.set(x, "onDone", js.Array(value*))
     
-    inline def setOnError(value: String | (SingleOrArray[TransitionConfig[TContext, DoneInvokeEvent[Any]]])): Self = StObject.set(x, "onError", value.asInstanceOf[js.Any])
+    inline def setOnError(
+      value: String | (SingleOrArray[TransitionConfigOrTarget[TContext, DoneInvokeEvent[Any], DoneInvokeEvent[Any]]])
+    ): Self = StObject.set(x, "onError", value.asInstanceOf[js.Any])
     
     inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
     
-    inline def setOnErrorVarargs(value: (TransitionConfig[TContext, DoneInvokeEvent[Any]])*): Self = StObject.set(x, "onError", js.Array(value*))
+    inline def setOnErrorVarargs(
+      value: ((TransitionConfig[TContext, DoneInvokeEvent[Any], DoneInvokeEvent[Any]]) | (TransitionConfigOrTarget[TContext, DoneInvokeEvent[Any], DoneInvokeEvent[Any]]) | (TransitionConfigTarget[TContext, DoneInvokeEvent[Any]]))*
+    ): Self = StObject.set(x, "onError", js.Array(value*))
     
     inline def setSrc(
       value: String | InvokeSourceDefinition | AnyStateMachine | (InvokeCreator[TContext, TEvent, Any, Any, TEvent])

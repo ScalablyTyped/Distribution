@@ -2,6 +2,7 @@ package typings.pixiCore
 
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StringDictionary
+import typings.pixiConstants.mod.PRECISION
 import typings.pixiCore.anon.BufferMode
 import typings.pixiCore.libShaderGlprogramMod.GLProgram
 import org.scalablytyped.runtime.StObject
@@ -63,6 +64,29 @@ object libShaderProgramMod {
     @JSImport("@pixi/core/lib/shader/Program", "Program")
     @js.native
     val ^ : js.Any = js.native
+    
+    /**
+      * Default specify float precision in fragment shader.
+      * iOS is best set at highp due to https://github.com/pixijs/pixijs/issues/3742
+      * @static
+      * @type {PIXI.PRECISION}
+      * @default PIXI.PRECISION.MEDIUM
+      */
+    @JSImport("@pixi/core/lib/shader/Program", "Program.defaultFragmentPrecision")
+    @js.native
+    def defaultFragmentPrecision: PRECISION = js.native
+    inline def defaultFragmentPrecision_=(x: PRECISION): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultFragmentPrecision")(x.asInstanceOf[js.Any])
+    
+    /**
+      * Default specify float precision in vertex shader.
+      * @static
+      * @type {PIXI.PRECISION}
+      * @default PIXI.PRECISION.HIGH
+      */
+    @JSImport("@pixi/core/lib/shader/Program", "Program.defaultVertexPrecision")
+    @js.native
+    def defaultVertexPrecision: PRECISION = js.native
+    inline def defaultVertexPrecision_=(x: PRECISION): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultVertexPrecision")(x.asInstanceOf[js.Any])
     
     /**
       * A short hand function to create a program based of a vertex and fragment shader.

@@ -113,7 +113,7 @@ open class ListElement protected () extends BoxElement {
   /**
     * Sets the list items to multiple strings.
     */
-  def setItems(items: js.Array[BlessedElement]): Unit = js.native
+  def setItems(items: js.Array[BlessedElement | String]): Unit = js.native
   
   /**
     * Shift an item off the list.

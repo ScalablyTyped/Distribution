@@ -12,9 +12,9 @@ object libUtilCheckBulletOrderedMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def checkBulletOrdered(context: Context): Exclude[js.UndefOr[Dot | (/* ) */ String)], Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("checkBulletOrdered")(context.asInstanceOf[js.Any]).asInstanceOf[Exclude[js.UndefOr[Dot | (/* ) */ String)], Unit]]
-  
-  type Context = typings.mdastUtilToMarkdown.libTypesMod.Context
+  inline def checkBulletOrdered(state: State): Exclude[js.UndefOr[Dot | (/* ) */ String) | Null], js.UndefOr[Null]] = ^.asInstanceOf[js.Dynamic].applyDynamic("checkBulletOrdered")(state.asInstanceOf[js.Any]).asInstanceOf[Exclude[js.UndefOr[Dot | (/* ) */ String) | Null], js.UndefOr[Null]]]
   
   type Options = typings.mdastUtilToMarkdown.libTypesMod.Options
+  
+  type State = typings.mdastUtilToMarkdown.libTypesMod.State
 }

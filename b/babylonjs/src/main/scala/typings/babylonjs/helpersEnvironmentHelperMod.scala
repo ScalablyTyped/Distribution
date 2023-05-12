@@ -202,6 +202,7 @@ object helpersEnvironmentHelperMod {
     
     /**
       * Creates the default options for the helper.
+      * @param scene The scene the environment helper belongs to.
       */
     @JSImport("babylonjs/Helpers/environmentHelper", "EnvironmentHelper._GetDefaultOptions")
     @js.native

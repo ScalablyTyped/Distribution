@@ -55,6 +55,10 @@ object verovioStrings {
   inline def drag: drag = "drag".asInstanceOf[drag]
   
   @js.native
+  sealed trait embedded extends StObject
+  inline def embedded: embedded = "embedded".asInstanceOf[embedded]
+  
+  @js.native
   sealed trait encoded extends StObject
   inline def encoded: encoded = "encoded".asInstanceOf[encoded]
   
@@ -83,12 +87,24 @@ object verovioStrings {
   inline def line: line = "line".asInstanceOf[line]
   
   @js.native
+  sealed trait linked extends StObject
+  inline def linked: linked = "linked".asInstanceOf[linked]
+  
+  @js.native
+  sealed trait narrow extends StObject
+  inline def narrow: narrow = "narrow".asInstanceOf[narrow]
+  
+  @js.native
   sealed trait none extends StObject
   inline def none: none = "none".asInstanceOf[none]
   
   @js.native
   sealed trait pedstar extends StObject
   inline def pedstar: pedstar = "pedstar".asInstanceOf[pedstar]
+  
+  @js.native
+  sealed trait regular extends StObject
+  inline def regular: regular = "regular".asInstanceOf[regular]
   
   @js.native
   sealed trait set extends StObject
@@ -109,4 +125,12 @@ object verovioStrings {
   @js.native
   sealed trait symbols extends StObject
   inline def symbols: symbols = "symbols".asInstanceOf[symbols]
+  
+  @js.native
+  sealed trait unicode extends StObject
+  inline def unicode: unicode = "unicode".asInstanceOf[unicode]
+  
+  @js.native
+  sealed trait wide extends StObject
+  inline def wide: wide = "wide".asInstanceOf[wide]
 }

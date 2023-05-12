@@ -14,7 +14,7 @@ object anon {
     
     var defaultViewEngine: String
     
-    var mapping: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PlainObject<string> */ Any
+    var mapping: PlainObject[String]
     
     var root: String
   }
@@ -24,7 +24,7 @@ object anon {
       cache: Boolean,
       defaultExtension: String,
       defaultViewEngine: String,
-      mapping: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PlainObject<string> */ Any,
+      mapping: PlainObject[String],
       root: String
     ): Cache = {
       val __obj = js.Dynamic.literal(cache = cache.asInstanceOf[js.Any], defaultExtension = defaultExtension.asInstanceOf[js.Any], defaultViewEngine = defaultViewEngine.asInstanceOf[js.Any], mapping = mapping.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
@@ -40,9 +40,7 @@ object anon {
       
       inline def setDefaultViewEngine(value: String): Self = StObject.set(x, "defaultViewEngine", value.asInstanceOf[js.Any])
       
-      inline def setMapping(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PlainObject<string> */ Any
-      ): Self = StObject.set(x, "mapping", value.asInstanceOf[js.Any])
+      inline def setMapping(value: PlainObject[String]): Self = StObject.set(x, "mapping", value.asInstanceOf[js.Any])
       
       inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     }

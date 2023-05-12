@@ -66,17 +66,18 @@ object typesTabpanelMod {
       * Get the whether the add button is enabled.
       *
       */
+    def addButtonEnabled: Boolean = js.native
     /**
       * Set the whether the add button is enabled.
       *
       */
-    var addButtonEnabled: Boolean = js.native
+    def addButtonEnabled_=(value: Boolean): Unit = js.native
     
     /**
       * A signal emitted when the add button on a tab bar is clicked.
       *
       */
-    val addRequested: ISignal[this.type, TabBar[Widget]] = js.native
+    def addRequested: ISignal[this.type, TabBar[Widget]] = js.native
     
     /**
       * Add a widget to the end of the tab panel.
@@ -101,7 +102,7 @@ object typesTabpanelMod {
       * tab changes due to tabs being inserted, removed, or moved. It is
       * only emitted when the actual current tab node is changed.
       */
-    val currentChanged: ISignal[this.type, ICurrentChangedArgs] = js.native
+    def currentChanged: ISignal[this.type, ICurrentChangedArgs] = js.native
     
     /**
       * Get the index of the currently selected tab.
@@ -109,13 +110,14 @@ object typesTabpanelMod {
       * #### Notes
       * This will be `-1` if no tab is selected.
       */
+    def currentIndex: Double = js.native
     /**
       * Set the index of the currently selected tab.
       *
       * #### Notes
       * If the index is out of range, it will be set to `-1`.
       */
-    var currentIndex: Double = js.native
+    def currentIndex_=(value: Double): Unit = js.native
     
     /**
       * Get the currently selected widget.
@@ -123,13 +125,14 @@ object typesTabpanelMod {
       * #### Notes
       * This will be `null` if there is no selected tab.
       */
+    def currentWidget: Widget | Null = js.native
     /**
       * Set the currently selected widget.
       *
       * #### Notes
       * If the widget is not in the panel, it will be set to `null`.
       */
-    var currentWidget: Widget | Null = js.native
+    def currentWidget_=(value: Widget | Null): Unit = js.native
     
     /**
       * Insert a widget into the tab panel at a specified index.
@@ -167,13 +170,14 @@ object typesTabpanelMod {
       * #### Notes
       * This controls the position of the tab bar relative to the content.
       */
+    def tabPlacement: TabPlacement = js.native
     /**
       * Set the tab placement for the tab panel.
       *
       * #### Notes
       * This controls the position of the tab bar relative to the content.
       */
-    var tabPlacement: TabPlacement = js.native
+    def tabPlacement_=(value: TabPlacement): Unit = js.native
     
     /**
       * Get the whether the tabs are movable by the user.
@@ -181,18 +185,19 @@ object typesTabpanelMod {
       * #### Notes
       * Tabs can always be moved programmatically.
       */
+    def tabsMovable: Boolean = js.native
     /**
       * Set the whether the tabs are movable by the user.
       *
       * #### Notes
       * Tabs can always be moved programmatically.
       */
-    var tabsMovable: Boolean = js.native
+    def tabsMovable_=(value: Boolean): Unit = js.native
     
     /**
       * A read-only array of the widgets in the panel.
       */
-    val widgets: js.Array[Widget] = js.native
+    def widgets: js.Array[Widget] = js.native
   }
   object TabPanel {
     

@@ -38,6 +38,8 @@ object distRequestAuthorizationUrlRequestMod {
     
     var loginHint: js.UndefOr[String] = js.undefined
     
+    var maxAge: js.UndefOr[Double] = js.undefined
+    
     var nonce: String
     
     var prompt: js.UndefOr[String] = js.undefined
@@ -129,6 +131,10 @@ object distRequestAuthorizationUrlRequestMod {
       inline def setLoginHint(value: String): Self = StObject.set(x, "loginHint", value.asInstanceOf[js.Any])
       
       inline def setLoginHintUndefined: Self = StObject.set(x, "loginHint", js.undefined)
+      
+      inline def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
+      
+      inline def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
       
       inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
       

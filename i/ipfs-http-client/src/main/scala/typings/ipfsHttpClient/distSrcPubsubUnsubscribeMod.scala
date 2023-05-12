@@ -1,5 +1,6 @@
 package typings.ipfsHttpClient
 
+import typings.ipfsCoreTypes.distSrcUtilsMod.AbortOptions
 import typings.ipfsHttpClient.distSrcPubsubSubscriptionTrackerMod.SubscriptionTracker
 import typings.libp2pInterfacePubsub.mod.Message
 import typings.libp2pInterfaces.distSrcEventsMod.EventHandler
@@ -13,13 +14,15 @@ object distSrcPubsubUnsubscribeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def createUnsubscribe(options: Options, subsTracker: SubscriptionTracker): js.Function2[
+  inline def createUnsubscribe(options: Options, subsTracker: SubscriptionTracker): js.Function3[
     /* topic */ String, 
     /* handler */ js.UndefOr[EventHandler[Message]], 
+    /* options */ js.UndefOr[AbortOptions & typings.ipfsHttpClient.distSrcTypesMod.HTTPClientExtraOptions], 
     js.Promise[Unit]
-  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("createUnsubscribe")(options.asInstanceOf[js.Any], subsTracker.asInstanceOf[js.Any])).asInstanceOf[js.Function2[
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("createUnsubscribe")(options.asInstanceOf[js.Any], subsTracker.asInstanceOf[js.Any])).asInstanceOf[js.Function3[
     /* topic */ String, 
     /* handler */ js.UndefOr[EventHandler[Message]], 
+    /* options */ js.UndefOr[AbortOptions & typings.ipfsHttpClient.distSrcTypesMod.HTTPClientExtraOptions], 
     js.Promise[Unit]
   ]]
   

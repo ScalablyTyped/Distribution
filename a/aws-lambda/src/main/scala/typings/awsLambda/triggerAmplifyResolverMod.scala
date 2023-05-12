@@ -65,5 +65,5 @@ object triggerAmplifyResolverMod {
     }
   }
   
-  type AmplifyGraphQlResolverHandler[TArguments, TSource] = Handler[AmplifyGraphQlResolverEvent[TArguments, TSource], Any]
+  type AmplifyGraphQlResolverHandler[TArguments, TSource, TResult] = Handler[AmplifyGraphQlResolverEvent[TArguments, TSource], TResult]
 }

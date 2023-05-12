@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@floating-ui/core" : "1.0.2"
+      "@floating-ui/core" : "1.2.6"
     }
   ],
   "test-dependencies" : [
     {
-      "@floating-ui/core" : "1.0.2"
+      "@floating-ui/core" : "1.2.6"
     }
   ],
   "compile-devDependencies" : [

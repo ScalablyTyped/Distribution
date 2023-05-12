@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Speaker extends StObject {
   
   /**
-    * A timestamp showing when the speaker is created. 
+    * A timestamp of when the speaker was created. 
     */
   var CreatedAt: js.UndefOr[js.Date] = js.undefined
   
@@ -27,7 +27,7 @@ trait Speaker extends StObject {
   var GeneratedSpeakerId: js.UndefOr[typings.awsSdk.clientsVoiceidMod.GeneratedSpeakerId] = js.undefined
   
   /**
-    * The timestamp when the speaker was last accessed for enrollment, re-enrollment or a successful authentication. This timestamp is accurate to one hour.
+    * The timestamp of when the speaker was last accessed for enrollment, re-enrollment or a successful authentication. This timestamp is accurate to one hour.
     */
   var LastAccessedAt: js.UndefOr[js.Date] = js.undefined
   
@@ -37,7 +37,7 @@ trait Speaker extends StObject {
   var Status: js.UndefOr[SpeakerStatus] = js.undefined
   
   /**
-    * A timestamp showing the speaker's last update.
+    * A timestamp of the speaker's last update.
     */
   var UpdatedAt: js.UndefOr[js.Date] = js.undefined
 }

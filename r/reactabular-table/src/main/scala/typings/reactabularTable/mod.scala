@@ -26,7 +26,7 @@ object mod {
     def this(props: BodyProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: BodyProps, context: Any) = this()
   }
@@ -38,7 +38,7 @@ object mod {
     def this(props: HeaderProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: HeaderProps, context: Any) = this()
   }
@@ -50,7 +50,7 @@ object mod {
     def this(props: ProviderProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: ProviderProps, context: Any) = this()
   }

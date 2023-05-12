@@ -41,10 +41,10 @@ object util {
   
   /**
     * This event indicates a change. It contains the old and the new value.
-    * @property target {*} - Object which triggered the event
-    * @property currentTarget {*} - Object which has listener attached
-    * @property type {string} - Name of the dispatched event
-    * @property defaultPrevented {boolean} - Indicates if preventDefault was called on the current event
+    * target {*} - Object which triggered the event
+    * currentTarget {*} - Object which has listener attached
+    * type {string} - Name of the dispatched event
+    * defaultPrevented {boolean} - Indicates if preventDefault was called on the current event
     */
   @JSGlobal("H.util.ChangeEvent")
   @js.native
@@ -86,7 +86,7 @@ object util {
   
   /**
     * This class represents a contextual information/action.
-    * @property SEPARATOR {H.util.ContextItem} - Separator for the context items
+    * SEPARATOR {H.util.ContextItem} - Separator for the context items
     */
   @JSGlobal("H.util.ContextItem")
   @js.native
@@ -126,10 +126,10 @@ object util {
   
   /**
     * Base Event class which is used for all events dispatched by any EventTarget within the api.
-    * @property target {*} - Object which triggered the event
-    * @property currentTarget {*} - Object which has listener attached
-    * @property type {string} - Name of the dispatched event
-    * @property defaultPrevented {boolean} - Indicates if preventDefault was called on the current event
+    * target {*} - Object which triggered the event
+    * currentTarget {*} - Object which has listener attached
+    * type {string} - Name of the dispatched event
+    * defaultPrevented {boolean} - Indicates if preventDefault was called on the current event
     */
   @JSGlobal("H.util.Event")
   @js.native
@@ -197,10 +197,10 @@ object util {
     
     /**
       * The event class for events that are dispatched by OList
-      * @property target {*} - Object which triggered the event
-      * @property currentTarget {*} - Object which has listener attached
-      * @property type {string} - Name of the dispatched event
-      * @property defaultPrevented {boolean} - Indicates if preventDefault was called on the current event
+      * target {*} - Object which triggered the event
+      * currentTarget {*} - Object which has listener attached
+      * type {string} - Name of the dispatched event
+      * defaultPrevented {boolean} - Indicates if preventDefault was called on the current event
       */
     @JSGlobal("H.util.OList.Event")
     @js.native

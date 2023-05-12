@@ -14,31 +14,31 @@ trait GPUBindGroupLayoutEntry extends StObject {
   var binding: GPUIndex32
   
   /**
-    * When not `undefined`, indicates the binding resource type for this {@link GPUBindGroupLayoutEntry}
+    * When map/exist|provided, indicates the binding resource type for this {@link GPUBindGroupLayoutEntry}
     * is {@link GPUBufferBinding}.
     */
   var buffer: js.UndefOr[GPUBufferBindingLayout] = js.undefined
   
   /**
-    * When not `undefined`, indicates the binding resource type for this {@link GPUBindGroupLayoutEntry}
+    * When map/exist|provided, indicates the binding resource type for this {@link GPUBindGroupLayoutEntry}
     * is {@link GPUExternalTexture}.
     */
   var externalTexture: js.UndefOr[GPUExternalTextureBindingLayout] = js.undefined
   
   /**
-    * When not `undefined`, indicates the binding resource type for this {@link GPUBindGroupLayoutEntry}
+    * When map/exist|provided, indicates the binding resource type for this {@link GPUBindGroupLayoutEntry}
     * is {@link GPUSampler}.
     */
   var sampler: js.UndefOr[GPUSamplerBindingLayout] = js.undefined
   
   /**
-    * When not `undefined`, indicates the binding resource type for this {@link GPUBindGroupLayoutEntry}
+    * When map/exist|provided, indicates the binding resource type for this {@link GPUBindGroupLayoutEntry}
     * is {@link GPUTextureView}.
     */
   var storageTexture: js.UndefOr[GPUStorageTextureBindingLayout] = js.undefined
   
   /**
-    * When not `undefined`, indicates the binding resource type for this {@link GPUBindGroupLayoutEntry}
+    * When map/exist|provided, indicates the binding resource type for this {@link GPUBindGroupLayoutEntry}
     * is {@link GPUTextureView}.
     */
   var texture: js.UndefOr[GPUTextureBindingLayout] = js.undefined

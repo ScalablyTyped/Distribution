@@ -8,11 +8,11 @@ trait ParametersQueryPackagetype extends StObject {
   
   var parameters: QueryPackagetype
   
-  var responses: `200401403`
+  var responses: `200400`
 }
 object ParametersQueryPackagetype {
   
-  inline def apply(parameters: QueryPackagetype, responses: `200401403`): ParametersQueryPackagetype = {
+  inline def apply(parameters: QueryPackagetype, responses: `200400`): ParametersQueryPackagetype = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersQueryPackagetype]
   }
@@ -22,6 +22,6 @@ object ParametersQueryPackagetype {
     
     inline def setParameters(value: QueryPackagetype): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `200401403`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `200400`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

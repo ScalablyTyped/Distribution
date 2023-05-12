@@ -10,8 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @classDescription Encapsulation of files (media items) in the file cabinet.
   * @return {nlobjFile}
-  * @constructor
-  *
   * @since 2009.1
   */
 @js.native

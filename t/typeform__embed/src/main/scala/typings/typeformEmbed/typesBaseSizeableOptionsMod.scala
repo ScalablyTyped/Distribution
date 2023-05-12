@@ -18,6 +18,11 @@ object typesBaseSizeableOptionsMod {
     var autoResize: js.UndefOr[Boolean | String] = js.undefined
     
     /**
+      * Make the widget embed full screen, resize on viewport change to fit window
+      */
+    var fullScreen: js.UndefOr[Boolean] = js.undefined
+    
+    /**
       * Specify the height of the embed.
       *
       * @type {number}
@@ -37,6 +42,10 @@ object typesBaseSizeableOptionsMod {
       inline def setAutoResize(value: Boolean | String): Self = StObject.set(x, "autoResize", value.asInstanceOf[js.Any])
       
       inline def setAutoResizeUndefined: Self = StObject.set(x, "autoResize", js.undefined)
+      
+      inline def setFullScreen(value: Boolean): Self = StObject.set(x, "fullScreen", value.asInstanceOf[js.Any])
+      
+      inline def setFullScreenUndefined: Self = StObject.set(x, "fullScreen", js.undefined)
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

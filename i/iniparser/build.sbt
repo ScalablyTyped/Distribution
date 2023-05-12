@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "iniparser"
-version := "0.0-unknown-dt-20221103Z-014a40"
+version := "0.0-unknown-dt-20221230Z-014a40"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

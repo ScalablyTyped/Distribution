@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object blueprintjsSelectStrings {
   
   @js.native
+  sealed trait _empty extends StObject
+  inline def _empty: _empty = "".asInstanceOf[_empty]
+  
+  @js.native
   sealed trait a extends StObject
   inline def a: a = "a".asInstanceOf[a]
   
@@ -45,6 +49,10 @@ object blueprintjsSelectStrings {
   @js.native
   sealed trait animateTransform extends StObject
   inline def animateTransform: animateTransform = "animateTransform".asInstanceOf[animateTransform]
+  
+  @js.native
+  sealed trait anonymous extends StObject
+  inline def anonymous: anonymous = "anonymous".asInstanceOf[anonymous]
   
   @js.native
   sealed trait area extends StObject
@@ -121,6 +129,10 @@ object blueprintjsSelectStrings {
   @js.native
   sealed trait caption extends StObject
   inline def caption: caption = "caption".asInstanceOf[caption]
+  
+  @js.native
+  sealed trait center extends StObject
+  inline def center: center = "center".asInstanceOf[center]
   
   @js.native
   sealed trait circle extends StObject
@@ -901,6 +913,10 @@ object blueprintjsSelectStrings {
   @js.native
   sealed trait use extends StObject
   inline def use: use = "use".asInstanceOf[use]
+  
+  @js.native
+  sealed trait `use-credentials` extends StObject
+  inline def `use-credentials`: `use-credentials` = "use-credentials".asInstanceOf[`use-credentials`]
   
   @js.native
   sealed trait user extends StObject

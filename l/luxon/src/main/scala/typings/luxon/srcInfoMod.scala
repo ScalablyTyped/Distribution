@@ -20,7 +20,7 @@ object srcInfoMod {
     /**
       * Return an array of eras, such as ['BC', 'AD']. The locale can be specified, but the calendar system is always Gregorian.
       *
-      * @param length - the length of the era representation, such as "short" or "long". Defaults to 'short'.
+      * @param length - the length of the era representation. Defaults to 'short'.
       * @param opts - options
       * @param opts.locale - the locale code
       *
@@ -32,15 +32,15 @@ object srcInfoMod {
       * Info.eras('long', { locale: 'fr' }) //=> [ 'avant Jésus-Christ', 'après Jésus-Christ' ]
       */
     inline def eras(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("eras")().asInstanceOf[js.Array[String]]
-    inline def eras(length: Unit, options: InfoOptions): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("eras")(length.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    inline def eras(length: Unit, opts: InfoOptions): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("eras")(length.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
     inline def eras(length: StringUnitLength): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("eras")(length.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
-    inline def eras(length: StringUnitLength, options: InfoOptions): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("eras")(length.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    inline def eras(length: StringUnitLength, opts: InfoOptions): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("eras")(length.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
     
     /**
       * Return the set of available features in this environment.
-      * Some features of Luxon are not available in all environments. For example, on older browsers, timezone support is not available. Use this function to figure out if that's the case.
-      * Keys:
-      * * `relative`: whether this environment supports relative time formatting
+      * Some features of Luxon are not available in all environments.
+      * For example, on older browsers, timezone support is not available.
+      * Use this function to figure out if that is the case.
       *
       * @example
       * Info.features() //=> { intl: true, intlTokens: false, zones: true, relative: false }
@@ -75,17 +75,17 @@ object srcInfoMod {
       * Info.meridiems({ locale: 'my' }) //=> [ 'နံနက်', 'ညနေ' ]
       */
     inline def meridiems(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("meridiems")().asInstanceOf[js.Array[String]]
-    inline def meridiems(options: InfoOptions): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("meridiems")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    inline def meridiems(opts: InfoOptions): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("meridiems")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
     
     /**
       * Return an array of standalone month names.
       * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DateTimeFormat
       *
-      * @param length - the length of the month representation, such as "numeric", "2-digit", "narrow", "short", "long". Defaults to 'long'.
+      * @param length - the length of the month representation. Defaults to 'long'.
       * @param opts - options
       * @param opts.locale - the locale code
-      * @param opts.numberingSystem - the numbering system. Defaults to null.
-      * @param opts.locObj - an existing locale object to use. Defaults to null.
+      * @param opts.numberingSystem - the numbering system.
+      * @param opts.locObj - an existing locale object to use.
       * @param opts.outputCalendar - the calendar. Defaults to 'gregory'.
       *
       * @example
@@ -108,21 +108,21 @@ object srcInfoMod {
     
     /**
       * Return an array of format month names.
-      * Format months differ from standalone months in that they're meant to appear next to the day of the month. In some languages, that
-      * changes the string.
+      * Format months differ from standalone months in that they are meant to appear next to the day of the month.
+      * In some languages, that changes the string.
       * See {@link Info#months}
       *
-      * @param length - the length of the month representation, such as "numeric", "2-digit", "narrow", "short", "long". Defaults to 'long'.
+      * @param length - the length of the month representation. Defaults to 'long'.
       * @param opts - options
       * @param opts.locale - the locale code
-      * @param opts.numberingSystem - the numbering system. Defaults to null.
-      * @param opts.locObj - an existing locale object to use. Defaults to null.
+      * @param opts.numberingSystem - the numbering system.
+      * @param opts.locObj - an existing locale object to use.
       * @param opts.outputCalendar - the calendar. Defaults to 'gregory'.
       */
     inline def monthsFormat(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("monthsFormat")().asInstanceOf[js.Array[String]]
-    inline def monthsFormat(length: Unit, options: InfoCalendarOptions): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("monthsFormat")(length.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    inline def monthsFormat(length: Unit, opts: InfoCalendarOptions): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("monthsFormat")(length.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
     inline def monthsFormat(length: UnitLength): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("monthsFormat")(length.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
-    inline def monthsFormat(length: UnitLength, options: InfoCalendarOptions): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("monthsFormat")(length.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    inline def monthsFormat(length: UnitLength, opts: InfoCalendarOptions): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("monthsFormat")(length.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
     
     /**
       * Converts the input into a {@link Zone} instance.
@@ -147,11 +147,11 @@ object srcInfoMod {
       * Return an array of standalone week names.
       * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DateTimeFormat
       *
-      * @param length - the length of the weekday representation, such as "narrow", "short", "long". Defaults to 'long'.
+      * @param length - the length of the weekday representation. Defaults to 'long'.
       * @param opts - options
       * @param opts.locale - the locale code
-      * @param opts.numberingSystem - the numbering system. Defaults to null.
-      * @param opts.locObj - an existing locale object to use. Defaults to null.
+      * @param opts.numberingSystem - the numbering system.
+      * @param opts.locObj - an existing locale object to use.
       *
       * @example
       * Info.weekdays()[0] //=> 'Monday'
@@ -163,26 +163,26 @@ object srcInfoMod {
       * Info.weekdays('short', { locale: 'ar' })[0] //=> 'الاثنين'
       */
     inline def weekdays(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("weekdays")().asInstanceOf[js.Array[String]]
-    inline def weekdays(length: Unit, options: InfoUnitOptions): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("weekdays")(length.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    inline def weekdays(length: Unit, opts: InfoUnitOptions): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("weekdays")(length.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
     inline def weekdays(length: StringUnitLength): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("weekdays")(length.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
-    inline def weekdays(length: StringUnitLength, options: InfoUnitOptions): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("weekdays")(length.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    inline def weekdays(length: StringUnitLength, opts: InfoUnitOptions): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("weekdays")(length.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
     
     /**
       * Return an array of format week names.
-      * Format weekdays differ from standalone weekdays in that they're meant to appear next to more date information. In some languages, that
-      * changes the string.
+      * Format weekdays differ from standalone weekdays in that they are meant to appear next to more date information.
+      * In some languages, that changes the string.
       * See {@link Info#weekdays}
       *
-      * @param length - the length of the month representation, such as "narrow", "short", "long". Defaults to 'long'.
+      * @param length - the length of the month representation. Defaults to 'long'.
       * @param opts - options
-      * @param opts.locale - the locale code. Defaults to null.
-      * @param opts.numberingSystem - the numbering system. Defaults to null.
-      * @param opts.locObj - an existing locale object to use. Defaults to null.
+      * @param opts.locale - the locale code.
+      * @param opts.numberingSystem - the numbering system.
+      * @param opts.locObj - an existing locale object to use.
       */
     inline def weekdaysFormat(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("weekdaysFormat")().asInstanceOf[js.Array[String]]
-    inline def weekdaysFormat(length: Unit, options: InfoUnitOptions): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("weekdaysFormat")(length.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    inline def weekdaysFormat(length: Unit, opts: InfoUnitOptions): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("weekdaysFormat")(length.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
     inline def weekdaysFormat(length: StringUnitLength): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("weekdaysFormat")(length.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
-    inline def weekdaysFormat(length: StringUnitLength, options: InfoUnitOptions): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("weekdaysFormat")(length.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    inline def weekdaysFormat(length: StringUnitLength, opts: InfoUnitOptions): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("weekdaysFormat")(length.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   }
   
   trait Features extends StObject {
@@ -210,6 +210,9 @@ object srcInfoMod {
     extends StObject
        with InfoUnitOptions {
     
+    /**
+      * @default gregory
+      */
     var outputCalendar: js.UndefOr[CalendarSystem] = js.undefined
   }
   object InfoCalendarOptions {

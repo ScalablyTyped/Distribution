@@ -34,7 +34,7 @@ object typesRenderermapMod {
     /**
       * A signal emitted when the renderer map has changed.
       */
-    val changed: ISignal[this.type, Unit] = js.native
+    def changed: ISignal[this.type, Unit] = js.native
     
     /**
       * Get the cell renderer to use for the given cell config.

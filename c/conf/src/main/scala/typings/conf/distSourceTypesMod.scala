@@ -1,6 +1,6 @@
 package typings.conf
 
-import typings.conf.mod.default
+import typings.conf.distSourceMod.default
 import typings.node.NodeJS.TypedArray
 import typings.node.bufferMod.global.Buffer
 import typings.node.eventsMod.EventEmitter
@@ -60,7 +60,7 @@ object distSourceTypesMod {
       @default true
       @example
       ```
-      const config = new Conf();
+      const config = new Conf({projectName: 'foo'});
       config.set({
       foo: {
       bar: {
@@ -74,7 +74,10 @@ object distSourceTypesMod {
       Alternatively, you can set this option to `false` so the whole string would be treated as one key.
       @example
       ```
-      const config = new Conf({accessPropertiesByDotNotation: false});
+      const config = new Conf({
+      projectName: 'foo',
+      accessPropertiesByDotNotation: false
+      });
       config.set({
       `foo.bar.foobar`: '🦄'
       });
@@ -151,8 +154,10 @@ object distSourceTypesMod {
       Note: The version the migrations use refers to the __project version__ by default. If you want to change this behavior, specify the `projectVersion` option.
       @example
       ```
-      import Conf = require('conf');
+      import Conf from 'conf';
       const store = new Conf({
+      projectName: 'foo',
+      projectVersion: …,
       migrations: {
       '0.0.1': store => {
       store.set('debugPhase', true);
@@ -174,8 +179,8 @@ object distSourceTypesMod {
     var migrations: js.UndefOr[Migrations[T]] = js.undefined
     
     /**
-      You only need to specify this if you don't have a package.json file in your project or if it doesn't have a name defined within it.
-      Default: The name field in the `package.json` closest to where `conf` is imported.
+      __Required unless you specify the `cwd` option.__
+      You can fetch the `name` field from package.json.
       */
     var projectName: js.UndefOr[String] = js.undefined
     
@@ -189,8 +194,8 @@ object distSourceTypesMod {
     val projectSuffix: js.UndefOr[String] = js.undefined
     
     /**
-      You only need to specify this if you don't have a package.json file in your project or if it doesn't have a version defined within it.
-      Default: The name field in the `package.json` closest to where `conf` is imported.
+      __Required if you specify the `migration` option.__
+      You can fetch the `version` field from package.json.
       */
     var projectVersion: js.UndefOr[String] = js.undefined
     
@@ -200,7 +205,7 @@ object distSourceTypesMod {
       You should define your schema as an object where each key is the name of your data's property and each value is a JSON schema used to validate that property. See more [here](https://json-schema.org/understanding-json-schema/reference/object.html#properties).
       @example
       ```
-      import Conf = require('conf');
+      import Conf from 'conf';
       const schema = {
       foo: {
       type: 'number',
@@ -213,7 +218,10 @@ object distSourceTypesMod {
       format: 'url'
       }
       };
-      const config = new Conf({schema});
+      const config = new Conf({
+      projectName: 'foo',
+      schema
+      });
       console.log(config.get('foo'));
       //=> 50
       config.set('foo', '1');

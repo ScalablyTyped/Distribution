@@ -58,7 +58,7 @@ object esComponentsWaterMarkWaterMarkMod {
   @js.native
   val WaterMark: FC[WaterMarkProps] = js.native
   
-  /* Inlined {  gapX :number | undefined,   gapY :number | undefined,   zIndex :number | undefined,   width :number | undefined,   height :number | undefined,   rotate :number | undefined,   image :string | undefined,   imageWidth :number | undefined,   imageHeight :number | undefined,   content :string | undefined,   fontColor :string | undefined,   fontStyle :'none' | 'normal' | 'italic' | 'oblique' | undefined,   fontFamily :string | undefined,   fontWeight :'normal' | 'light' | 'weight' | number | undefined,   fontSize :number | string | undefined,   fullPage :boolean | undefined} & antd-mobile.antd-mobile/es/utils/native-props.NativeProps<'--z-index'> */
+  /* Inlined {  gapX :number | undefined,   gapY :number | undefined,   zIndex :number | undefined,   width :number | undefined,   height :number | undefined,   rotate :number | undefined,   image :string | undefined,   imageWidth :number | undefined,   imageHeight :number | undefined,   content :string | std.Array<string> | undefined,   fontColor :string | undefined,   fontStyle :'none' | 'normal' | 'italic' | 'oblique' | undefined,   fontFamily :string | undefined,   fontWeight :'normal' | 'light' | 'weight' | number | undefined,   fontSize :number | string | undefined,   fullPage :boolean | undefined} & antd-mobile.antd-mobile/es/utils/native-props.NativeProps<'--z-index'> */
   trait WaterMarkProps extends StObject {
     
     /** Identifies the currently active element when DOM focus is on a composite widget, textbox, group, or application. */
@@ -297,7 +297,7 @@ object esComponentsWaterMarkWaterMarkMod {
     
     var className: js.UndefOr[String] = js.undefined
     
-    var content: js.UndefOr[String] = js.undefined
+    var content: js.UndefOr[String | js.Array[String]] = js.undefined
     
     var fontColor: js.UndefOr[String] = js.undefined
     
@@ -541,9 +541,11 @@ object esComponentsWaterMarkWaterMarkMod {
       
       inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: String | js.Array[String]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
       inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      
+      inline def setContentVarargs(value: String*): Self = StObject.set(x, "content", js.Array(value*))
       
       inline def setFontColor(value: String): Self = StObject.set(x, "fontColor", value.asInstanceOf[js.Any])
       

@@ -20,7 +20,7 @@ object mod {
     def this(props: PropsWithChildren[BreadcrumbProps]) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: PropsWithChildren[BreadcrumbProps], context: Any) = this()
   }
@@ -32,7 +32,7 @@ object mod {
     def this(props: PropsWithChildren[BreadcrumbsProps]) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: PropsWithChildren[BreadcrumbsProps], context: Any) = this()
   }

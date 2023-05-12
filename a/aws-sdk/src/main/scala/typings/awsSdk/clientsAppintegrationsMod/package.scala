@@ -26,6 +26,14 @@ type EventIntegrationAssociationsList = js.Array[EventIntegrationAssociation]
 
 type EventIntegrationsList = js.Array[EventIntegration]
 
+type Fields = String
+
+type FieldsList = js.Array[Fields]
+
+type FieldsMap = StringDictionary[FieldsList]
+
+type FolderList = js.Array[NonBlankLongString]
+
 type IdempotencyToken = String
 
 type Identifier = String
@@ -36,13 +44,17 @@ type Name = String
 
 type NextToken = String
 
+type NonBlankLongString = String
+
 type NonBlankString = String
 
 type Object = String
 
-type Schedule = String
+type ObjectConfiguration = StringDictionary[FieldsMap]
 
 type Source = String
+
+type SourceURI = String
 
 type TagKey = String
 

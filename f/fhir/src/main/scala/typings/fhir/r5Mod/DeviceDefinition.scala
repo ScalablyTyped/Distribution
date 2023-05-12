@@ -17,8 +17,6 @@ trait DeviceDefinition
   
   var _description: js.UndefOr[Element] = js.undefined
   
-  var _manufacturerString: js.UndefOr[Element] = js.undefined
-  
   var _modelNumber: js.UndefOr[Element] = js.undefined
   
   var _partNumber: js.UndefOr[Element] = js.undefined
@@ -34,6 +32,11 @@ trait DeviceDefinition
     * In this element various classifications can be used, such as GMDN, EMDN, SNOMED CT, risk classes, national product codes.
     */
   var classification: js.UndefOr[js.Array[DeviceDefinitionClassification]] = js.undefined
+  
+  /**
+    * Identifies the standards, specifications, or formal guidances for the capabilities supported by the device. The device may be certified as conformant to these specifications e.g., communication, performance, process, measurement, or specialization standards.
+    */
+  var conformsTo: js.UndefOr[js.Array[DeviceDefinitionConformsTo]] = js.undefined
   
   /**
     * used for troubleshooting etc.
@@ -56,7 +59,7 @@ trait DeviceDefinition
   var deviceName: js.UndefOr[js.Array[DeviceDefinitionDeviceName]] = js.undefined
   
   /**
-    * Information aimed at providing directions for the usage of this model of device.
+    * For more structured data, a ClinicalUseDefinition that points to the DeviceDefinition can be used.
     */
   var guideline: js.UndefOr[DeviceDefinitionGuideline] = js.undefined
   
@@ -83,12 +86,7 @@ trait DeviceDefinition
   /**
     * A name of the manufacturer  or legal representative e.g. labeler. Whether this is the actual manufacturer or the labeler or responsible depends on implementation and jurisdiction.
     */
-  var manufacturerReference: js.UndefOr[Reference] = js.undefined
-  
-  /**
-    * A name of the manufacturer  or legal representative e.g. labeler. Whether this is the actual manufacturer or the labeler or responsible depends on implementation and jurisdiction.
-    */
-  var manufacturerString: js.UndefOr[String] = js.undefined
+  var manufacturer: js.UndefOr[Reference] = js.undefined
   
   /**
     * A substance used to create the material(s) of which the device is made.
@@ -116,11 +114,6 @@ trait DeviceDefinition
   var packaging: js.UndefOr[js.Array[DeviceDefinitionPackaging]] = js.undefined
   
   /**
-    * The parent device it can be part of.
-    */
-  var parentDevice: js.UndefOr[Reference] = js.undefined
-  
-  /**
     * Alphanumeric Maximum 20.
     */
   var partNumber: js.UndefOr[String] = js.undefined
@@ -135,9 +128,14 @@ trait DeviceDefinition
   ] = js.undefined
   
   /**
-    * The potential, valid configuration settings of a device, e.g., regulation status, time properties.
+    * Dynamic or current properties, such as settings, of an individual device are described using a Device instance-specific DeviceMetric and recorded using Observation.  Static characteristics of an individual device could also be documented in a [Device] instance. The Device instance's properties, and their values, could be, but need not be, the same as in the associated DeviceDefinition.
     */
   var property: js.UndefOr[js.Array[DeviceDefinitionProperty]] = js.undefined
+  
+  /**
+    * This should not be used for regulatory authorization numbers which are to be captured elsewhere.
+    */
+  var regulatoryIdentifier: js.UndefOr[js.Array[DeviceDefinitionRegulatoryIdentifier]] = js.undefined
   
   /** Resource Type Name (for serialization) */
   @JSName("resourceType")
@@ -152,11 +150,6 @@ trait DeviceDefinition
     * Shelf Life and storage information.
     */
   var shelfLifeStorage: js.UndefOr[js.Array[ProductShelfLife]] = js.undefined
-  
-  /**
-    * The capabilities supported on a  device, the standards to which the device conforms for a particular purpose, and used for the communication.
-    */
-  var specialization: js.UndefOr[js.Array[RelatedArtifact]] = js.undefined
   
   /**
     * Unique device identifier (UDI) assigned to device label or package.  Note that the Device may include multiple udiCarriers as it either may include just the udiCarrier for the jurisdiction it is sold, or for multiple jurisdictions it could have been sold.
@@ -189,6 +182,12 @@ object DeviceDefinition {
     inline def setClassificationUndefined: Self = StObject.set(x, "classification", js.undefined)
     
     inline def setClassificationVarargs(value: DeviceDefinitionClassification*): Self = StObject.set(x, "classification", js.Array(value*))
+    
+    inline def setConformsTo(value: js.Array[DeviceDefinitionConformsTo]): Self = StObject.set(x, "conformsTo", value.asInstanceOf[js.Any])
+    
+    inline def setConformsToUndefined: Self = StObject.set(x, "conformsTo", js.undefined)
+    
+    inline def setConformsToVarargs(value: DeviceDefinitionConformsTo*): Self = StObject.set(x, "conformsTo", js.Array(value*))
     
     inline def setContact(value: js.Array[ContactPoint]): Self = StObject.set(x, "contact", value.asInstanceOf[js.Any])
     
@@ -238,13 +237,9 @@ object DeviceDefinition {
     
     inline def setLinkVarargs(value: DeviceDefinitionLink*): Self = StObject.set(x, "link", js.Array(value*))
     
-    inline def setManufacturerReference(value: Reference): Self = StObject.set(x, "manufacturerReference", value.asInstanceOf[js.Any])
+    inline def setManufacturer(value: Reference): Self = StObject.set(x, "manufacturer", value.asInstanceOf[js.Any])
     
-    inline def setManufacturerReferenceUndefined: Self = StObject.set(x, "manufacturerReference", js.undefined)
-    
-    inline def setManufacturerString(value: String): Self = StObject.set(x, "manufacturerString", value.asInstanceOf[js.Any])
-    
-    inline def setManufacturerStringUndefined: Self = StObject.set(x, "manufacturerString", js.undefined)
+    inline def setManufacturerUndefined: Self = StObject.set(x, "manufacturer", js.undefined)
     
     inline def setMaterial(value: js.Array[DeviceDefinitionMaterial]): Self = StObject.set(x, "material", value.asInstanceOf[js.Any])
     
@@ -272,10 +267,6 @@ object DeviceDefinition {
     
     inline def setPackagingVarargs(value: DeviceDefinitionPackaging*): Self = StObject.set(x, "packaging", js.Array(value*))
     
-    inline def setParentDevice(value: Reference): Self = StObject.set(x, "parentDevice", value.asInstanceOf[js.Any])
-    
-    inline def setParentDeviceUndefined: Self = StObject.set(x, "parentDevice", js.undefined)
-    
     inline def setPartNumber(value: String): Self = StObject.set(x, "partNumber", value.asInstanceOf[js.Any])
     
     inline def setPartNumberUndefined: Self = StObject.set(x, "partNumber", js.undefined)
@@ -298,6 +289,12 @@ object DeviceDefinition {
     
     inline def setPropertyVarargs(value: DeviceDefinitionProperty*): Self = StObject.set(x, "property", js.Array(value*))
     
+    inline def setRegulatoryIdentifier(value: js.Array[DeviceDefinitionRegulatoryIdentifier]): Self = StObject.set(x, "regulatoryIdentifier", value.asInstanceOf[js.Any])
+    
+    inline def setRegulatoryIdentifierUndefined: Self = StObject.set(x, "regulatoryIdentifier", js.undefined)
+    
+    inline def setRegulatoryIdentifierVarargs(value: DeviceDefinitionRegulatoryIdentifier*): Self = StObject.set(x, "regulatoryIdentifier", js.Array(value*))
+    
     inline def setResourceType(value: typings.fhir.fhirStrings.DeviceDefinition): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
     inline def setSafety(value: js.Array[CodeableConcept]): Self = StObject.set(x, "safety", value.asInstanceOf[js.Any])
@@ -311,12 +308,6 @@ object DeviceDefinition {
     inline def setShelfLifeStorageUndefined: Self = StObject.set(x, "shelfLifeStorage", js.undefined)
     
     inline def setShelfLifeStorageVarargs(value: ProductShelfLife*): Self = StObject.set(x, "shelfLifeStorage", js.Array(value*))
-    
-    inline def setSpecialization(value: js.Array[RelatedArtifact]): Self = StObject.set(x, "specialization", value.asInstanceOf[js.Any])
-    
-    inline def setSpecializationUndefined: Self = StObject.set(x, "specialization", js.undefined)
-    
-    inline def setSpecializationVarargs(value: RelatedArtifact*): Self = StObject.set(x, "specialization", js.Array(value*))
     
     inline def setUdiDeviceIdentifier(value: js.Array[DeviceDefinitionUdiDeviceIdentifier]): Self = StObject.set(x, "udiDeviceIdentifier", value.asInstanceOf[js.Any])
     
@@ -333,10 +324,6 @@ object DeviceDefinition {
     inline def set_description(value: Element): Self = StObject.set(x, "_description", value.asInstanceOf[js.Any])
     
     inline def set_descriptionUndefined: Self = StObject.set(x, "_description", js.undefined)
-    
-    inline def set_manufacturerString(value: Element): Self = StObject.set(x, "_manufacturerString", value.asInstanceOf[js.Any])
-    
-    inline def set_manufacturerStringUndefined: Self = StObject.set(x, "_manufacturerString", js.undefined)
     
     inline def set_modelNumber(value: Element): Self = StObject.set(x, "_modelNumber", value.asInstanceOf[js.Any])
     

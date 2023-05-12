@@ -548,6 +548,12 @@ object htmlTagsStrings {
   inline def script: script = "script".asInstanceOf[script]
   
   @js.native
+  sealed trait search
+    extends StObject
+       with typings.htmlTags.mod.htmlTags
+  inline def search: search = "search".asInstanceOf[search]
+  
+  @js.native
   sealed trait section
     extends StObject
        with typings.htmlTags.mod.htmlTags

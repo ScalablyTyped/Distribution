@@ -23,7 +23,7 @@ object componentsLayoutNavDrawerMod {
     def this(props: NavDrawerProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: NavDrawerProps, context: Any) = this()
   }

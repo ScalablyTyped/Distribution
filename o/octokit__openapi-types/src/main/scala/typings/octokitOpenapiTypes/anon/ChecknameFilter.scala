@@ -11,19 +11,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ChecknameFilter extends StObject {
   
-  /** Returns check runs with the specified `name`. */
   var check_name: js.UndefOr[String] = js.undefined
   
-  /** Filters check runs by their `completed_at` timestamp. `latest` returns the most recent check runs. */
+  /** @description Filters check runs by their `completed_at` timestamp. `latest` returns the most recent check runs. */
   var filter: js.UndefOr[latest | all] = js.undefined
   
-  /** Page number of the results to fetch. */
   var page: js.UndefOr[Double] = js.undefined
   
-  /** The number of results per page (max 100). */
   var per_page: js.UndefOr[Double] = js.undefined
   
-  /** Returns check runs with the specified `status`. */
   var status: js.UndefOr[queued_ | in_progress | completed] = js.undefined
 }
 object ChecknameFilter {

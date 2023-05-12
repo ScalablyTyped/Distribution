@@ -16,14 +16,6 @@ object typingsParserLexerConfigMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("hyperformula/typings/parser/LexerConfig", "ABSOLUTE_OPERATOR")
-  @js.native
-  val ABSOLUTE_OPERATOR: /* "$" */ String = js.native
-  
-  @JSImport("hyperformula/typings/parser/LexerConfig", "ALL_WHITESPACE_REGEXP")
-  @js.native
-  val ALL_WHITESPACE_REGEXP: js.RegExp = js.native
-  
   @JSImport("hyperformula/typings/parser/LexerConfig", "AdditionOp")
   @js.native
   val AdditionOp: TokenType = js.native
@@ -100,10 +92,6 @@ object typingsParserLexerConfigMod {
   @js.native
   val NotEqualOp: TokenType = js.native
   
-  @JSImport("hyperformula/typings/parser/LexerConfig", "ODFF_WHITESPACE_REGEXP")
-  @js.native
-  val ODFF_WHITESPACE_REGEXP: js.RegExp = js.native
-  
   @JSImport("hyperformula/typings/parser/LexerConfig", "PercentOp")
   @js.native
   val PercentOp: TokenType = js.native
@@ -119,10 +107,6 @@ object typingsParserLexerConfigMod {
   @JSImport("hyperformula/typings/parser/LexerConfig", "ProcedureName")
   @js.native
   val ProcedureName: TokenType = js.native
-  
-  @JSImport("hyperformula/typings/parser/LexerConfig", "RANGE_OPERATOR")
-  @js.native
-  val RANGE_OPERATOR: /* ":" */ String = js.native
   
   @JSImport("hyperformula/typings/parser/LexerConfig", "RParen")
   @js.native
@@ -144,21 +128,9 @@ object typingsParserLexerConfigMod {
   @js.native
   val TimesOp: TokenType = js.native
   
-  inline def buildLexerConfig(config: ParserConfig): ILexerConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("buildLexerConfig")(config.asInstanceOf[js.Any]).asInstanceOf[ILexerConfig]
+  inline def buildLexerConfig(config: ParserConfig): LexerConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("buildLexerConfig")(config.asInstanceOf[js.Any]).asInstanceOf[LexerConfig]
   
-  @JSImport("hyperformula/typings/parser/LexerConfig", "quotedSheetName")
-  @js.native
-  val quotedSheetName: /* "'(((?!').|'')*)'" */ String = js.native
-  
-  @JSImport("hyperformula/typings/parser/LexerConfig", "sheetNameRegexp")
-  @js.native
-  val sheetNameRegexp: String = js.native
-  
-  @JSImport("hyperformula/typings/parser/LexerConfig", "simpleSheetName")
-  @js.native
-  val simpleSheetName: /* "[A-Za-z0-9_\\u00C0-\\u02AF]+" */ String = js.native
-  
-  trait ILexerConfig extends StObject {
+  trait LexerConfig extends StObject {
     
     var ArgSeparator: TokenType
     
@@ -184,7 +156,7 @@ object typingsParserLexerConfigMod {
     
     var maxRows: Double
   }
-  object ILexerConfig {
+  object LexerConfig {
     
     inline def apply(
       ArgSeparator: TokenType,
@@ -199,13 +171,13 @@ object typingsParserLexerConfigMod {
       functionMapping: Record[String, String],
       maxColumns: Double,
       maxRows: Double
-    ): ILexerConfig = {
+    ): LexerConfig = {
       val __obj = js.Dynamic.literal(ArgSeparator = ArgSeparator.asInstanceOf[js.Any], ArrayColSeparator = ArrayColSeparator.asInstanceOf[js.Any], ArrayRowSeparator = ArrayRowSeparator.asInstanceOf[js.Any], NumberLiteral = NumberLiteral.asInstanceOf[js.Any], OffsetProcedureName = OffsetProcedureName.asInstanceOf[js.Any], WhiteSpace = WhiteSpace.asInstanceOf[js.Any], allTokens = allTokens.asInstanceOf[js.Any], decimalSeparator = decimalSeparator.asInstanceOf[js.Any], errorMapping = errorMapping.asInstanceOf[js.Any], functionMapping = functionMapping.asInstanceOf[js.Any], maxColumns = maxColumns.asInstanceOf[js.Any], maxRows = maxRows.asInstanceOf[js.Any])
-      __obj.asInstanceOf[ILexerConfig]
+      __obj.asInstanceOf[LexerConfig]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: ILexerConfig] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: LexerConfig] (val x: Self) extends AnyVal {
       
       inline def setAllTokens(value: js.Array[TokenType]): Self = StObject.set(x, "allTokens", value.asInstanceOf[js.Any])
       

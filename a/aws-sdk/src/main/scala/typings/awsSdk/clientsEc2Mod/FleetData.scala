@@ -32,7 +32,7 @@ trait FleetData extends StObject {
   var Errors: js.UndefOr[DescribeFleetsErrorSet] = js.undefined
   
   /**
-    * Indicates whether running instances should be terminated if the target capacity of the EC2 Fleet is decreased below the current size of the EC2 Fleet.
+    * Indicates whether running instances should be terminated if the target capacity of the EC2 Fleet is decreased below the current size of the EC2 Fleet. Supported only for fleets of type maintain.
     */
   var ExcessCapacityTerminationPolicy: js.UndefOr[FleetExcessCapacityTerminationPolicy] = js.undefined
   

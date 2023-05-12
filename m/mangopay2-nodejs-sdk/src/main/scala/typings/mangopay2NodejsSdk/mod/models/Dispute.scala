@@ -18,6 +18,12 @@ open class Dispute protected ()
   def this(data: PartialDisputeData) = this()
   
   /**
+    * The date and time the dispute was closed
+    */
+  /* CompleteClass */
+  var ClosedDate: Timestamp = js.native
+  
+  /**
     * The deadline by which you must contest the dispute (if you wish to contest it)
     */
   /* CompleteClass */

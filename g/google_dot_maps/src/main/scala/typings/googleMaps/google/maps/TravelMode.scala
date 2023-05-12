@@ -6,13 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @js.native
 sealed trait TravelMode extends StObject
-/**
-  * The valid travel modes that can be specified in a
-  * <code>DirectionsRequest</code> as well as the travel modes returned in a
-  * <code>DirectionsStep</code>. Specify these by value, or by using the
-  * constant&#39;s name. For example, <code>'BICYCLING'</code> or
-  * <code>google.maps.TravelMode.BICYCLING</code>.
-  */
 @JSGlobal("google.maps.TravelMode")
 @js.native
 object TravelMode extends StObject {

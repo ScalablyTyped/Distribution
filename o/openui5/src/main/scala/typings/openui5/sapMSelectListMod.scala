@@ -1,7 +1,7 @@
 package typings.openui5
 
 import typings.openui5.anon.Item
-import typings.openui5.anon.`13`
+import typings.openui5.anon.`16`
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapMLibraryMod.SelectListKeyboardNavigationMode
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
@@ -309,6 +309,8 @@ object sapMSelectListMod {
     oBindingInfo: AggregationBindingInfo): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Clear the selection.
       */
     def clearSelection(): Unit = js.native
@@ -373,6 +375,7 @@ object sapMSelectListMod {
     
     /**
       * @SINCE 1.32.4
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:itemPress itemPress} to attached listeners.
       *
@@ -385,6 +388,8 @@ object sapMSelectListMod {
     mParameters: Item): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:selectionChange selectionChange} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -393,7 +398,7 @@ object sapMSelectListMod {
     def fireSelectionChange(/**
       * Parameters to pass along with the event
       */
-    mParameters: `13`): this.type = js.native
+    mParameters: `16`): this.type = js.native
     
     /**
       * @SINCE 1.27.0
@@ -404,6 +409,8 @@ object sapMSelectListMod {
     def getAriaLabelledBy(): js.Array[ID] = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Retrieves the default selected item from the aggregation named `items`.
       */
     def getDefaultSelectedItem(): typings.openui5.sapUiCoreItemMod.default | Null = js.native
@@ -790,6 +797,8 @@ object sapMSelectListMod {
     sKey: String): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Updates and synchronizes `selectedItem` association, `selectedItemId` and `selectedKey` properties.
       */
     def setSelection(): Unit = js.native

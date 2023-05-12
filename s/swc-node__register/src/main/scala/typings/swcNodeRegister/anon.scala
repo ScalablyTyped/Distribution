@@ -22,6 +22,10 @@ object anon {
     extends StObject
        with /* option */ StringDictionary[js.UndefOr[CompilerOptionsValue | TsConfigSourceFile]] {
     
+    var allowArbitraryExtensions: js.UndefOr[Boolean] = js.undefined
+    
+    var allowImportingTsExtensions: js.UndefOr[Boolean] = js.undefined
+    
     var allowJs: js.UndefOr[Boolean] = js.undefined
     
     var allowSyntheticDefaultImports: js.UndefOr[Boolean] = js.undefined
@@ -43,6 +47,8 @@ object anon {
     var checkJs: js.UndefOr[Boolean] = js.undefined
     
     var composite: js.UndefOr[Boolean] = js.undefined
+    
+    var customConditions: js.UndefOr[js.Array[String]] = js.undefined
     
     var declaration: js.UndefOr[Boolean] = js.undefined
     
@@ -75,6 +81,8 @@ object anon {
     var fallbackToTs: js.UndefOr[js.Function1[/* filename */ String, Boolean]] = js.undefined
     
     var forceConsistentCasingInFileNames: js.UndefOr[Boolean] = js.undefined
+    
+    var ignoreDeprecations: js.UndefOr[String] = js.undefined
     
     var importHelpers: js.UndefOr[Boolean] = js.undefined
     
@@ -172,6 +180,10 @@ object anon {
     
     var resolveJsonModule: js.UndefOr[Boolean] = js.undefined
     
+    var resolvePackageJsonExports: js.UndefOr[Boolean] = js.undefined
+    
+    var resolvePackageJsonImports: js.UndefOr[Boolean] = js.undefined
+    
     var rootDir: js.UndefOr[String] = js.undefined
     
     var rootDirs: js.UndefOr[js.Array[String]] = js.undefined
@@ -214,6 +226,8 @@ object anon {
     var useDefineForClassFields: js.UndefOr[Boolean] = js.undefined
     
     var useUnknownInCatchVariables: js.UndefOr[Boolean] = js.undefined
+    
+    var verbatimModuleSyntax: js.UndefOr[Boolean] = js.undefined
   }
   object CompilerOptionsfallbackTo {
     
@@ -224,6 +238,14 @@ object anon {
     
     @scala.inline
     implicit open class MutableBuilder[Self <: CompilerOptionsfallbackTo] (val x: Self) extends AnyVal {
+      
+      inline def setAllowArbitraryExtensions(value: Boolean): Self = StObject.set(x, "allowArbitraryExtensions", value.asInstanceOf[js.Any])
+      
+      inline def setAllowArbitraryExtensionsUndefined: Self = StObject.set(x, "allowArbitraryExtensions", js.undefined)
+      
+      inline def setAllowImportingTsExtensions(value: Boolean): Self = StObject.set(x, "allowImportingTsExtensions", value.asInstanceOf[js.Any])
+      
+      inline def setAllowImportingTsExtensionsUndefined: Self = StObject.set(x, "allowImportingTsExtensions", js.undefined)
       
       inline def setAllowJs(value: Boolean): Self = StObject.set(x, "allowJs", value.asInstanceOf[js.Any])
       
@@ -268,6 +290,12 @@ object anon {
       inline def setComposite(value: Boolean): Self = StObject.set(x, "composite", value.asInstanceOf[js.Any])
       
       inline def setCompositeUndefined: Self = StObject.set(x, "composite", js.undefined)
+      
+      inline def setCustomConditions(value: js.Array[String]): Self = StObject.set(x, "customConditions", value.asInstanceOf[js.Any])
+      
+      inline def setCustomConditionsUndefined: Self = StObject.set(x, "customConditions", js.undefined)
+      
+      inline def setCustomConditionsVarargs(value: String*): Self = StObject.set(x, "customConditions", js.Array(value*))
       
       inline def setDeclaration(value: Boolean): Self = StObject.set(x, "declaration", value.asInstanceOf[js.Any])
       
@@ -333,6 +361,10 @@ object anon {
       
       inline def setForceConsistentCasingInFileNamesUndefined: Self = StObject.set(x, "forceConsistentCasingInFileNames", js.undefined)
       
+      inline def setIgnoreDeprecations(value: String): Self = StObject.set(x, "ignoreDeprecations", value.asInstanceOf[js.Any])
+      
+      inline def setIgnoreDeprecationsUndefined: Self = StObject.set(x, "ignoreDeprecations", js.undefined)
+      
       inline def setImportHelpers(value: Boolean): Self = StObject.set(x, "importHelpers", value.asInstanceOf[js.Any])
       
       inline def setImportHelpersUndefined: Self = StObject.set(x, "importHelpers", js.undefined)
@@ -529,6 +561,14 @@ object anon {
       
       inline def setResolveJsonModuleUndefined: Self = StObject.set(x, "resolveJsonModule", js.undefined)
       
+      inline def setResolvePackageJsonExports(value: Boolean): Self = StObject.set(x, "resolvePackageJsonExports", value.asInstanceOf[js.Any])
+      
+      inline def setResolvePackageJsonExportsUndefined: Self = StObject.set(x, "resolvePackageJsonExports", js.undefined)
+      
+      inline def setResolvePackageJsonImports(value: Boolean): Self = StObject.set(x, "resolvePackageJsonImports", value.asInstanceOf[js.Any])
+      
+      inline def setResolvePackageJsonImportsUndefined: Self = StObject.set(x, "resolvePackageJsonImports", js.undefined)
+      
       inline def setRootDir(value: String): Self = StObject.set(x, "rootDir", value.asInstanceOf[js.Any])
       
       inline def setRootDirUndefined: Self = StObject.set(x, "rootDir", js.undefined)
@@ -618,11 +658,19 @@ object anon {
       inline def setUseUnknownInCatchVariables(value: Boolean): Self = StObject.set(x, "useUnknownInCatchVariables", value.asInstanceOf[js.Any])
       
       inline def setUseUnknownInCatchVariablesUndefined: Self = StObject.set(x, "useUnknownInCatchVariables", js.undefined)
+      
+      inline def setVerbatimModuleSyntax(value: Boolean): Self = StObject.set(x, "verbatimModuleSyntax", value.asInstanceOf[js.Any])
+      
+      inline def setVerbatimModuleSyntaxUndefined: Self = StObject.set(x, "verbatimModuleSyntax", js.undefined)
     }
   }
   
   /* Inlined std.Partial<typescript.typescript.CompilerOptions & {fallbackToTs (path : string): boolean}> */
   trait PartialCompilerOptionsfal extends StObject {
+    
+    var allowArbitraryExtensions: js.UndefOr[Boolean] = js.undefined
+    
+    var allowImportingTsExtensions: js.UndefOr[Boolean] = js.undefined
     
     var allowJs: js.UndefOr[Boolean] = js.undefined
     
@@ -645,6 +693,8 @@ object anon {
     var checkJs: js.UndefOr[Boolean] = js.undefined
     
     var composite: js.UndefOr[Boolean] = js.undefined
+    
+    var customConditions: js.UndefOr[js.Array[String]] = js.undefined
     
     var declaration: js.UndefOr[Boolean] = js.undefined
     
@@ -677,6 +727,8 @@ object anon {
     var fallbackToTs: js.UndefOr[js.Function1[/* path */ String, Boolean]] = js.undefined
     
     var forceConsistentCasingInFileNames: js.UndefOr[Boolean] = js.undefined
+    
+    var ignoreDeprecations: js.UndefOr[String] = js.undefined
     
     var importHelpers: js.UndefOr[Boolean] = js.undefined
     
@@ -774,6 +826,10 @@ object anon {
     
     var resolveJsonModule: js.UndefOr[Boolean] = js.undefined
     
+    var resolvePackageJsonExports: js.UndefOr[Boolean] = js.undefined
+    
+    var resolvePackageJsonImports: js.UndefOr[Boolean] = js.undefined
+    
     var rootDir: js.UndefOr[String] = js.undefined
     
     var rootDirs: js.UndefOr[js.Array[String]] = js.undefined
@@ -815,6 +871,8 @@ object anon {
     var useDefineForClassFields: js.UndefOr[Boolean] = js.undefined
     
     var useUnknownInCatchVariables: js.UndefOr[Boolean] = js.undefined
+    
+    var verbatimModuleSyntax: js.UndefOr[Boolean] = js.undefined
   }
   object PartialCompilerOptionsfal {
     
@@ -825,6 +883,14 @@ object anon {
     
     @scala.inline
     implicit open class MutableBuilder[Self <: PartialCompilerOptionsfal] (val x: Self) extends AnyVal {
+      
+      inline def setAllowArbitraryExtensions(value: Boolean): Self = StObject.set(x, "allowArbitraryExtensions", value.asInstanceOf[js.Any])
+      
+      inline def setAllowArbitraryExtensionsUndefined: Self = StObject.set(x, "allowArbitraryExtensions", js.undefined)
+      
+      inline def setAllowImportingTsExtensions(value: Boolean): Self = StObject.set(x, "allowImportingTsExtensions", value.asInstanceOf[js.Any])
+      
+      inline def setAllowImportingTsExtensionsUndefined: Self = StObject.set(x, "allowImportingTsExtensions", js.undefined)
       
       inline def setAllowJs(value: Boolean): Self = StObject.set(x, "allowJs", value.asInstanceOf[js.Any])
       
@@ -869,6 +935,12 @@ object anon {
       inline def setComposite(value: Boolean): Self = StObject.set(x, "composite", value.asInstanceOf[js.Any])
       
       inline def setCompositeUndefined: Self = StObject.set(x, "composite", js.undefined)
+      
+      inline def setCustomConditions(value: js.Array[String]): Self = StObject.set(x, "customConditions", value.asInstanceOf[js.Any])
+      
+      inline def setCustomConditionsUndefined: Self = StObject.set(x, "customConditions", js.undefined)
+      
+      inline def setCustomConditionsVarargs(value: String*): Self = StObject.set(x, "customConditions", js.Array(value*))
       
       inline def setDeclaration(value: Boolean): Self = StObject.set(x, "declaration", value.asInstanceOf[js.Any])
       
@@ -933,6 +1005,10 @@ object anon {
       inline def setForceConsistentCasingInFileNames(value: Boolean): Self = StObject.set(x, "forceConsistentCasingInFileNames", value.asInstanceOf[js.Any])
       
       inline def setForceConsistentCasingInFileNamesUndefined: Self = StObject.set(x, "forceConsistentCasingInFileNames", js.undefined)
+      
+      inline def setIgnoreDeprecations(value: String): Self = StObject.set(x, "ignoreDeprecations", value.asInstanceOf[js.Any])
+      
+      inline def setIgnoreDeprecationsUndefined: Self = StObject.set(x, "ignoreDeprecations", js.undefined)
       
       inline def setImportHelpers(value: Boolean): Self = StObject.set(x, "importHelpers", value.asInstanceOf[js.Any])
       
@@ -1130,6 +1206,14 @@ object anon {
       
       inline def setResolveJsonModuleUndefined: Self = StObject.set(x, "resolveJsonModule", js.undefined)
       
+      inline def setResolvePackageJsonExports(value: Boolean): Self = StObject.set(x, "resolvePackageJsonExports", value.asInstanceOf[js.Any])
+      
+      inline def setResolvePackageJsonExportsUndefined: Self = StObject.set(x, "resolvePackageJsonExports", js.undefined)
+      
+      inline def setResolvePackageJsonImports(value: Boolean): Self = StObject.set(x, "resolvePackageJsonImports", value.asInstanceOf[js.Any])
+      
+      inline def setResolvePackageJsonImportsUndefined: Self = StObject.set(x, "resolvePackageJsonImports", js.undefined)
+      
       inline def setRootDir(value: String): Self = StObject.set(x, "rootDir", value.asInstanceOf[js.Any])
       
       inline def setRootDirUndefined: Self = StObject.set(x, "rootDir", js.undefined)
@@ -1219,6 +1303,10 @@ object anon {
       inline def setUseUnknownInCatchVariables(value: Boolean): Self = StObject.set(x, "useUnknownInCatchVariables", value.asInstanceOf[js.Any])
       
       inline def setUseUnknownInCatchVariablesUndefined: Self = StObject.set(x, "useUnknownInCatchVariables", js.undefined)
+      
+      inline def setVerbatimModuleSyntax(value: Boolean): Self = StObject.set(x, "verbatimModuleSyntax", value.asInstanceOf[js.Any])
+      
+      inline def setVerbatimModuleSyntaxUndefined: Self = StObject.set(x, "verbatimModuleSyntax", js.undefined)
     }
   }
 }

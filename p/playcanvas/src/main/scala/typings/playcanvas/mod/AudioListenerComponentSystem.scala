@@ -7,10 +7,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Component System for adding and removing {@link AudioComponent} objects to Entities.
+  * Component System for adding and removing {@link AudioListenerComponent} objects to Entities.
   *
   * @augments ComponentSystem
-  * @ignore
   */
 @JSImport("playcanvas", "AudioListenerComponentSystem")
 @js.native
@@ -18,7 +17,7 @@ open class AudioListenerComponentSystem protected () extends ComponentSystem {
   /**
     * Create a new ComponentSystem instance.
     *
-    * @param {AppBase} app - The application managing this system.
+    * @param {import('../app-base.js').AppBase} app - The application managing this system.
     */
   def this(app: AppBase) = this()
   

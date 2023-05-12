@@ -12,17 +12,17 @@ trait RegisterImageRequest extends StObject {
   var Architecture: js.UndefOr[ArchitectureValues] = js.undefined
   
   /**
-    * The billing product codes. Your account must be authorized to specify billing product codes. Otherwise, you can use the Amazon Web Services Marketplace to bill for the use of an AMI.
+    * The billing product codes. Your account must be authorized to specify billing product codes. If your account is not authorized to specify billing product codes, you can publish AMIs that include billable software and list them on the Amazon Web Services Marketplace. You must first register as a seller on the Amazon Web Services Marketplace. For more information, see Getting started as a seller and AMI-based products in the Amazon Web Services Marketplace Seller Guide.
     */
   var BillingProducts: js.UndefOr[BillingProductList] = js.undefined
   
   /**
-    * The block device mapping entries. If you specify an Amazon EBS volume using the ID of an Amazon EBS snapshot, you can't specify the encryption state of the volume. If you create an AMI on an Outpost, then all backing snapshots must be on the same Outpost or in the Region of that Outpost. AMIs on an Outpost that include local snapshots can be used to launch instances on the same Outpost only. For more information,  Amazon EBS local snapshots on Outposts in the Amazon Elastic Compute Cloud User Guide.
+    * The block device mapping entries. If you specify an Amazon EBS volume using the ID of an Amazon EBS snapshot, you can't specify the encryption state of the volume. If you create an AMI on an Outpost, then all backing snapshots must be on the same Outpost or in the Region of that Outpost. AMIs on an Outpost that include local snapshots can be used to launch instances on the same Outpost only. For more information, Amazon EBS local snapshots on Outposts in the Amazon EC2 User Guide.
     */
   var BlockDeviceMappings: js.UndefOr[BlockDeviceMappingRequestList] = js.undefined
   
   /**
-    * The boot mode of the AMI. For more information, see Boot modes in the Amazon Elastic Compute Cloud User Guide.
+    * The boot mode of the AMI. A value of uefi-preferred indicates that the AMI supports both UEFI and Legacy BIOS.  The operating system contained in the AMI must be configured to support the specified boot mode.  For more information, see Boot modes in the Amazon EC2 User Guide.
     */
   var BootMode: js.UndefOr[BootModeValues] = js.undefined
   
@@ -47,7 +47,7 @@ trait RegisterImageRequest extends StObject {
   var ImageLocation: js.UndefOr[String] = js.undefined
   
   /**
-    * Set to v2.0 to indicate that IMDSv2 is specified in the AMI. Instances launched from this AMI will have HttpTokens automatically set to required so that, by default, the instance requires that IMDSv2 is used when requesting instance metadata. In addition, HttpPutResponseHopLimit is set to 2. For more information, see Configure the AMI in the Amazon Elastic Compute Cloud User Guide.  If you set the value to v2.0, make sure that your AMI software can support IMDSv2. 
+    * Set to v2.0 to indicate that IMDSv2 is specified in the AMI. Instances launched from this AMI will have HttpTokens automatically set to required so that, by default, the instance requires that IMDSv2 is used when requesting instance metadata. In addition, HttpPutResponseHopLimit is set to 2. For more information, see Configure the AMI in the Amazon EC2 User Guide.  If you set the value to v2.0, make sure that your AMI software can support IMDSv2. 
     */
   var ImdsSupport: js.UndefOr[ImdsSupportValues] = js.undefined
   
@@ -77,12 +77,12 @@ trait RegisterImageRequest extends StObject {
   var SriovNetSupport: js.UndefOr[String] = js.undefined
   
   /**
-    * Set to v2.0 to enable Trusted Platform Module (TPM) support. For more information, see NitroTPM in the Amazon Elastic Compute Cloud User Guide.
+    * Set to v2.0 to enable Trusted Platform Module (TPM) support. For more information, see NitroTPM in the Amazon EC2 User Guide.
     */
   var TpmSupport: js.UndefOr[TpmSupportValues] = js.undefined
   
   /**
-    * Base64 representation of the non-volatile UEFI variable store. To retrieve the UEFI data, use the GetInstanceUefiData command. You can inspect and modify the UEFI data by using the python-uefivars tool on GitHub. For more information, see UEFI Secure Boot in the Amazon Elastic Compute Cloud User Guide.
+    * Base64 representation of the non-volatile UEFI variable store. To retrieve the UEFI data, use the GetInstanceUefiData command. You can inspect and modify the UEFI data by using the python-uefivars tool on GitHub. For more information, see UEFI Secure Boot in the Amazon EC2 User Guide.
     */
   var UefiData: js.UndefOr[StringType] = js.undefined
   

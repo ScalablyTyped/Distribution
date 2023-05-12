@@ -35,6 +35,8 @@ inline def UnaryFilterOpEnum: IUnaryFilterOpEnum = ^.asInstanceOf[js.Dynamic].se
 
 inline def ValueNullValueEnum: IValueNullValueEnum = ^.asInstanceOf[js.Dynamic].selectDynamic("ValueNullValueEnum").asInstanceOf[IValueNullValueEnum]
 
+type Aggregation = typings.firebaseFirestore.distFirestoreSrcProtosFirestoreProtoApiMod.firestoreV1ApiClientInterfaces.Aggregation
+
 type ApiClientHookFactory = Any
 
 type ApiClientObjectMap[T] = StringDictionary[T]
@@ -48,6 +50,8 @@ type BatchGetDocumentsResponse = typings.firebaseFirestore.distFirestoreSrcProto
 type BeginTransactionRequest = typings.firebaseFirestore.distFirestoreSrcProtosFirestoreProtoApiMod.firestoreV1ApiClientInterfaces.BeginTransactionRequest
 
 type BeginTransactionResponse = typings.firebaseFirestore.distFirestoreSrcProtosFirestoreProtoApiMod.firestoreV1ApiClientInterfaces.BeginTransactionResponse
+
+type BloomFilter = typings.firebaseFirestore.distFirestoreSrcProtosFirestoreProtoApiMod.firestoreV1ApiClientInterfaces.BloomFilter
 
 type CollectionSelector = typings.firebaseFirestore.distFirestoreSrcProtosFirestoreProtoApiMod.firestoreV1ApiClientInterfaces.CollectionSelector
 

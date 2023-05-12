@@ -155,6 +155,8 @@ type TagValue = java.lang.String
 
 type Tags = StringDictionary[TagValue]
 
+type UploadId = java.lang.String
+
 type Uri = java.lang.String
 
 type Url = java.lang.String

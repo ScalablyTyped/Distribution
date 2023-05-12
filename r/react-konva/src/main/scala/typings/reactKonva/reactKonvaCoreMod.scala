@@ -223,6 +223,10 @@ object reactKonvaCoreMod {
     
     var onDragStart: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[DragEvent], Unit]] = js.undefined
     
+    var onGotPointerCapture: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[PointerEvent], Unit]] = js.undefined
+    
+    var onLostPointerCapture: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[PointerEvent], Unit]] = js.undefined
+    
     var onMouseDown: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[MouseEvent], Unit]] = js.undefined
     
     var onMouseEnter: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[MouseEvent], Unit]] = js.undefined
@@ -236,6 +240,26 @@ object reactKonvaCoreMod {
     var onMouseOver: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[MouseEvent], Unit]] = js.undefined
     
     var onMouseUp: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[MouseEvent], Unit]] = js.undefined
+    
+    var onPointerCancel: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[PointerEvent], Unit]] = js.undefined
+    
+    var onPointerClick: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[PointerEvent], Unit]] = js.undefined
+    
+    var onPointerDblClick: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[PointerEvent], Unit]] = js.undefined
+    
+    var onPointerDown: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[PointerEvent], Unit]] = js.undefined
+    
+    var onPointerEnter: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[PointerEvent], Unit]] = js.undefined
+    
+    var onPointerLeave: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[PointerEvent], Unit]] = js.undefined
+    
+    var onPointerMove: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[PointerEvent], Unit]] = js.undefined
+    
+    var onPointerOut: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[PointerEvent], Unit]] = js.undefined
+    
+    var onPointerOver: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[PointerEvent], Unit]] = js.undefined
+    
+    var onPointerUp: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[PointerEvent], Unit]] = js.undefined
     
     var onTap: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[Event], Unit]] = js.undefined
     
@@ -291,6 +315,14 @@ object reactKonvaCoreMod {
       
       inline def setOnDragStartUndefined: Self = StObject.set(x, "onDragStart", js.undefined)
       
+      inline def setOnGotPointerCapture(value: /* evt */ KonvaEventObject[PointerEvent] => Unit): Self = StObject.set(x, "onGotPointerCapture", js.Any.fromFunction1(value))
+      
+      inline def setOnGotPointerCaptureUndefined: Self = StObject.set(x, "onGotPointerCapture", js.undefined)
+      
+      inline def setOnLostPointerCapture(value: /* evt */ KonvaEventObject[PointerEvent] => Unit): Self = StObject.set(x, "onLostPointerCapture", js.Any.fromFunction1(value))
+      
+      inline def setOnLostPointerCaptureUndefined: Self = StObject.set(x, "onLostPointerCapture", js.undefined)
+      
       inline def setOnMouseDown(value: /* evt */ KonvaEventObject[MouseEvent] => Unit): Self = StObject.set(x, "onMouseDown", js.Any.fromFunction1(value))
       
       inline def setOnMouseDownUndefined: Self = StObject.set(x, "onMouseDown", js.undefined)
@@ -318,6 +350,46 @@ object reactKonvaCoreMod {
       inline def setOnMouseUp(value: /* evt */ KonvaEventObject[MouseEvent] => Unit): Self = StObject.set(x, "onMouseUp", js.Any.fromFunction1(value))
       
       inline def setOnMouseUpUndefined: Self = StObject.set(x, "onMouseUp", js.undefined)
+      
+      inline def setOnPointerCancel(value: /* evt */ KonvaEventObject[PointerEvent] => Unit): Self = StObject.set(x, "onPointerCancel", js.Any.fromFunction1(value))
+      
+      inline def setOnPointerCancelUndefined: Self = StObject.set(x, "onPointerCancel", js.undefined)
+      
+      inline def setOnPointerClick(value: /* evt */ KonvaEventObject[PointerEvent] => Unit): Self = StObject.set(x, "onPointerClick", js.Any.fromFunction1(value))
+      
+      inline def setOnPointerClickUndefined: Self = StObject.set(x, "onPointerClick", js.undefined)
+      
+      inline def setOnPointerDblClick(value: /* evt */ KonvaEventObject[PointerEvent] => Unit): Self = StObject.set(x, "onPointerDblClick", js.Any.fromFunction1(value))
+      
+      inline def setOnPointerDblClickUndefined: Self = StObject.set(x, "onPointerDblClick", js.undefined)
+      
+      inline def setOnPointerDown(value: /* evt */ KonvaEventObject[PointerEvent] => Unit): Self = StObject.set(x, "onPointerDown", js.Any.fromFunction1(value))
+      
+      inline def setOnPointerDownUndefined: Self = StObject.set(x, "onPointerDown", js.undefined)
+      
+      inline def setOnPointerEnter(value: /* evt */ KonvaEventObject[PointerEvent] => Unit): Self = StObject.set(x, "onPointerEnter", js.Any.fromFunction1(value))
+      
+      inline def setOnPointerEnterUndefined: Self = StObject.set(x, "onPointerEnter", js.undefined)
+      
+      inline def setOnPointerLeave(value: /* evt */ KonvaEventObject[PointerEvent] => Unit): Self = StObject.set(x, "onPointerLeave", js.Any.fromFunction1(value))
+      
+      inline def setOnPointerLeaveUndefined: Self = StObject.set(x, "onPointerLeave", js.undefined)
+      
+      inline def setOnPointerMove(value: /* evt */ KonvaEventObject[PointerEvent] => Unit): Self = StObject.set(x, "onPointerMove", js.Any.fromFunction1(value))
+      
+      inline def setOnPointerMoveUndefined: Self = StObject.set(x, "onPointerMove", js.undefined)
+      
+      inline def setOnPointerOut(value: /* evt */ KonvaEventObject[PointerEvent] => Unit): Self = StObject.set(x, "onPointerOut", js.Any.fromFunction1(value))
+      
+      inline def setOnPointerOutUndefined: Self = StObject.set(x, "onPointerOut", js.undefined)
+      
+      inline def setOnPointerOver(value: /* evt */ KonvaEventObject[PointerEvent] => Unit): Self = StObject.set(x, "onPointerOver", js.Any.fromFunction1(value))
+      
+      inline def setOnPointerOverUndefined: Self = StObject.set(x, "onPointerOver", js.undefined)
+      
+      inline def setOnPointerUp(value: /* evt */ KonvaEventObject[PointerEvent] => Unit): Self = StObject.set(x, "onPointerUp", js.Any.fromFunction1(value))
+      
+      inline def setOnPointerUpUndefined: Self = StObject.set(x, "onPointerUp", js.undefined)
       
       inline def setOnTap(value: /* evt */ KonvaEventObject[Event] => Unit): Self = StObject.set(x, "onTap", js.Any.fromFunction1(value))
       
@@ -400,6 +472,10 @@ object reactKonvaCoreMod {
     
     var onDragStart: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[DragEvent], Unit]] = js.undefined
     
+    var onGotPointerCapture: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[PointerEvent], Unit]] = js.undefined
+    
+    var onLostPointerCapture: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[PointerEvent], Unit]] = js.undefined
+    
     var onMouseDown: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[MouseEvent], Unit]] = js.undefined
     
     var onMouseEnter: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[MouseEvent], Unit]] = js.undefined
@@ -413,6 +489,26 @@ object reactKonvaCoreMod {
     var onMouseOver: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[MouseEvent], Unit]] = js.undefined
     
     var onMouseUp: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[MouseEvent], Unit]] = js.undefined
+    
+    var onPointerCancel: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[PointerEvent], Unit]] = js.undefined
+    
+    var onPointerClick: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[PointerEvent], Unit]] = js.undefined
+    
+    var onPointerDblClick: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[PointerEvent], Unit]] = js.undefined
+    
+    var onPointerDown: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[PointerEvent], Unit]] = js.undefined
+    
+    var onPointerEnter: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[PointerEvent], Unit]] = js.undefined
+    
+    var onPointerLeave: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[PointerEvent], Unit]] = js.undefined
+    
+    var onPointerMove: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[PointerEvent], Unit]] = js.undefined
+    
+    var onPointerOut: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[PointerEvent], Unit]] = js.undefined
+    
+    var onPointerOver: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[PointerEvent], Unit]] = js.undefined
+    
+    var onPointerUp: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[PointerEvent], Unit]] = js.undefined
     
     var onTap: js.UndefOr[js.Function1[/* evt */ KonvaEventObject[Event], Unit]] = js.undefined
     
@@ -552,6 +648,14 @@ object reactKonvaCoreMod {
       
       inline def setOnDragStartUndefined: Self = StObject.set(x, "onDragStart", js.undefined)
       
+      inline def setOnGotPointerCapture(value: /* evt */ KonvaEventObject[PointerEvent] => Unit): Self = StObject.set(x, "onGotPointerCapture", js.Any.fromFunction1(value))
+      
+      inline def setOnGotPointerCaptureUndefined: Self = StObject.set(x, "onGotPointerCapture", js.undefined)
+      
+      inline def setOnLostPointerCapture(value: /* evt */ KonvaEventObject[PointerEvent] => Unit): Self = StObject.set(x, "onLostPointerCapture", js.Any.fromFunction1(value))
+      
+      inline def setOnLostPointerCaptureUndefined: Self = StObject.set(x, "onLostPointerCapture", js.undefined)
+      
       inline def setOnMouseDown(value: /* evt */ KonvaEventObject[MouseEvent] => Unit): Self = StObject.set(x, "onMouseDown", js.Any.fromFunction1(value))
       
       inline def setOnMouseDownUndefined: Self = StObject.set(x, "onMouseDown", js.undefined)
@@ -579,6 +683,46 @@ object reactKonvaCoreMod {
       inline def setOnMouseUp(value: /* evt */ KonvaEventObject[MouseEvent] => Unit): Self = StObject.set(x, "onMouseUp", js.Any.fromFunction1(value))
       
       inline def setOnMouseUpUndefined: Self = StObject.set(x, "onMouseUp", js.undefined)
+      
+      inline def setOnPointerCancel(value: /* evt */ KonvaEventObject[PointerEvent] => Unit): Self = StObject.set(x, "onPointerCancel", js.Any.fromFunction1(value))
+      
+      inline def setOnPointerCancelUndefined: Self = StObject.set(x, "onPointerCancel", js.undefined)
+      
+      inline def setOnPointerClick(value: /* evt */ KonvaEventObject[PointerEvent] => Unit): Self = StObject.set(x, "onPointerClick", js.Any.fromFunction1(value))
+      
+      inline def setOnPointerClickUndefined: Self = StObject.set(x, "onPointerClick", js.undefined)
+      
+      inline def setOnPointerDblClick(value: /* evt */ KonvaEventObject[PointerEvent] => Unit): Self = StObject.set(x, "onPointerDblClick", js.Any.fromFunction1(value))
+      
+      inline def setOnPointerDblClickUndefined: Self = StObject.set(x, "onPointerDblClick", js.undefined)
+      
+      inline def setOnPointerDown(value: /* evt */ KonvaEventObject[PointerEvent] => Unit): Self = StObject.set(x, "onPointerDown", js.Any.fromFunction1(value))
+      
+      inline def setOnPointerDownUndefined: Self = StObject.set(x, "onPointerDown", js.undefined)
+      
+      inline def setOnPointerEnter(value: /* evt */ KonvaEventObject[PointerEvent] => Unit): Self = StObject.set(x, "onPointerEnter", js.Any.fromFunction1(value))
+      
+      inline def setOnPointerEnterUndefined: Self = StObject.set(x, "onPointerEnter", js.undefined)
+      
+      inline def setOnPointerLeave(value: /* evt */ KonvaEventObject[PointerEvent] => Unit): Self = StObject.set(x, "onPointerLeave", js.Any.fromFunction1(value))
+      
+      inline def setOnPointerLeaveUndefined: Self = StObject.set(x, "onPointerLeave", js.undefined)
+      
+      inline def setOnPointerMove(value: /* evt */ KonvaEventObject[PointerEvent] => Unit): Self = StObject.set(x, "onPointerMove", js.Any.fromFunction1(value))
+      
+      inline def setOnPointerMoveUndefined: Self = StObject.set(x, "onPointerMove", js.undefined)
+      
+      inline def setOnPointerOut(value: /* evt */ KonvaEventObject[PointerEvent] => Unit): Self = StObject.set(x, "onPointerOut", js.Any.fromFunction1(value))
+      
+      inline def setOnPointerOutUndefined: Self = StObject.set(x, "onPointerOut", js.undefined)
+      
+      inline def setOnPointerOver(value: /* evt */ KonvaEventObject[PointerEvent] => Unit): Self = StObject.set(x, "onPointerOver", js.Any.fromFunction1(value))
+      
+      inline def setOnPointerOverUndefined: Self = StObject.set(x, "onPointerOver", js.undefined)
+      
+      inline def setOnPointerUp(value: /* evt */ KonvaEventObject[PointerEvent] => Unit): Self = StObject.set(x, "onPointerUp", js.Any.fromFunction1(value))
+      
+      inline def setOnPointerUpUndefined: Self = StObject.set(x, "onPointerUp", js.undefined)
       
       inline def setOnTap(value: /* evt */ KonvaEventObject[Event] => Unit): Self = StObject.set(x, "onTap", js.Any.fromFunction1(value))
       

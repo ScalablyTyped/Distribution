@@ -1,139 +1,141 @@
 package typings.shippo
 
-import typings.shippo.mod.Shippo.Address
-import typings.shippo.mod.Shippo.Carrier
-import typings.shippo.mod.Shippo.CreateAddressRequest
-import typings.shippo.mod.Shippo.CreateParcelRequest
-import typings.shippo.mod.Shippo.CreateShipmentRequest
-import typings.shippo.mod.Shippo.PaginatedList
-import typings.shippo.mod.Shippo.PaginationArgs
-import typings.shippo.mod.Shippo.Parcel
-import typings.shippo.mod.Shippo.Rate
-import typings.shippo.mod.Shippo.ServiceLevels
-import typings.shippo.mod.Shippo.Shipment
-import typings.shippo.mod.Shippo.Transaction
-import typings.shippo.mod.Shippo.TransactionCreateInstantRequest
-import typings.shippo.mod.Shippo.TransactionCreateRateRequest
-import typings.shippo.mod.Shippo.ValidationError
-import typings.shippo.shippoStrings.ANY
-import typings.shippo.shippoStrings.CASH
-import typings.shippo.shippoStrings.FEDEX
-import typings.shippo.shippoStrings.SECURED_FUNDS
-import typings.shippo.shippoStrings.UPS
+import typings.shippo.mod.Address
+import typings.shippo.mod.Batch
+import typings.shippo.mod.Batch.ObjectResult
+import typings.shippo.mod.BatchAddShipmentsRequest
+import typings.shippo.mod.BatchRemoveShipmentsRequest
+import typings.shippo.mod.Carrier
+import typings.shippo.mod.Carriers
+import typings.shippo.mod.CreateAddressRequest
+import typings.shippo.mod.CreateBatchRequest
+import typings.shippo.mod.CreateCustomsDeclarationRequest
+import typings.shippo.mod.CreateCustomsItemRequest
+import typings.shippo.mod.CreateManifestRequest
+import typings.shippo.mod.CreateParcelRequest
+import typings.shippo.mod.CreateRefundRequest
+import typings.shippo.mod.CreateShipmentRequest
+import typings.shippo.mod.CustomsDeclaration
+import typings.shippo.mod.CustomsItem
+import typings.shippo.mod.Manifest
+import typings.shippo.mod.PaginatedList
+import typings.shippo.mod.PaginationArgs
+import typings.shippo.mod.Parcel
+import typings.shippo.mod.Rate
+import typings.shippo.mod.Refund
+import typings.shippo.mod.RegisterTrackRequest
+import typings.shippo.mod.ServiceLevels
+import typings.shippo.mod.Shipment
+import typings.shippo.mod.Track
+import typings.shippo.mod.Transaction
+import typings.shippo.mod.TransactionCreateInstantRequest
+import typings.shippo.mod.TransactionCreateRateRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
+  @js.native
   trait `0` extends StObject {
+    
+    def list(): js.Promise[PaginatedList[Carrier]] = js.native
+    def list(args: PaginationArgs): js.Promise[PaginatedList[Carrier]] = js.native
+    
+    def retrieve(carrierId: String): js.Promise[Carrier] = js.native
+  }
+  
+  @js.native
+  trait `1` extends StObject {
+    
+    def create(request: CreateManifestRequest): js.Promise[Manifest] = js.native
+    
+    def list(): js.Promise[PaginatedList[Manifest]] = js.native
+    def list(args: PaginationArgs): js.Promise[PaginatedList[Manifest]] = js.native
+    
+    def retrieve(id: String): js.Promise[Manifest] = js.native
+  }
+  
+  @js.native
+  trait `2` extends StObject {
+    
+    def create(request: CreateRefundRequest): js.Promise[Refund] = js.native
+    
+    def list(): js.Promise[PaginatedList[Refund]] = js.native
+    def list(args: PaginationArgs): js.Promise[PaginatedList[Refund]] = js.native
+    
+    def retrieve(id: String): js.Promise[Refund] = js.native
+  }
+  
+  trait `3` extends StObject {
     
     def retrieve(id: String): js.Promise[Rate]
   }
-  object `0` {
+  object `3` {
     
-    inline def apply(retrieve: String => js.Promise[Rate]): `0` = {
+    inline def apply(retrieve: String => js.Promise[Rate]): `3` = {
       val __obj = js.Dynamic.literal(retrieve = js.Any.fromFunction1(retrieve))
-      __obj.asInstanceOf[`0`]
+      __obj.asInstanceOf[`3`]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: `3`] (val x: Self) extends AnyVal {
       
       inline def setRetrieve(value: String => js.Promise[Rate]): Self = StObject.set(x, "retrieve", js.Any.fromFunction1(value))
     }
   }
   
-  trait Amount extends StObject {
+  @js.native
+  trait Add extends StObject {
     
-    var amount: js.UndefOr[String] = js.undefined
+    def add(id: String, request: BatchAddShipmentsRequest): js.Promise[Batch] = js.native
     
-    var currency: js.UndefOr[String] = js.undefined
+    def create(request: CreateBatchRequest): js.Promise[Batch] = js.native
     
-    var payment_method: js.UndefOr[SECURED_FUNDS | CASH | ANY] = js.undefined
-  }
-  object Amount {
+    def purchase(id: String): js.Promise[Batch] = js.native
     
-    inline def apply(): Amount = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Amount]
-    }
+    def remove(id: String, request: BatchRemoveShipmentsRequest): js.Promise[Batch] = js.native
     
-    @scala.inline
-    implicit open class MutableBuilder[Self <: Amount] (val x: Self) extends AnyVal {
-      
-      inline def setAmount(value: String): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
-      
-      inline def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
-      
-      inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
-      
-      inline def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
-      
-      inline def setPayment_method(value: SECURED_FUNDS | CASH | ANY): Self = StObject.set(x, "payment_method", value.asInstanceOf[js.Any])
-      
-      inline def setPayment_methodUndefined: Self = StObject.set(x, "payment_method", js.undefined)
-    }
-  }
-  
-  trait Content extends StObject {
-    
-    var amount: js.UndefOr[String] = js.undefined
-    
-    var content: js.UndefOr[String] = js.undefined
-    
-    var currency: js.UndefOr[String] = js.undefined
-    
-    var provider: js.UndefOr[FEDEX | UPS] = js.undefined
-  }
-  object Content {
-    
-    inline def apply(): Content = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Content]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: Content] (val x: Self) extends AnyVal {
-      
-      inline def setAmount(value: String): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
-      
-      inline def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
-      
-      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
-      
-      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
-      
-      inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
-      
-      inline def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
-      
-      inline def setProvider(value: FEDEX | UPS): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
-      
-      inline def setProviderUndefined: Self = StObject.set(x, "provider", js.undefined)
-    }
+    def retrieve(id: String): js.Promise[Batch] = js.native
+    def retrieve(id: String, page: Double): js.Promise[Batch] = js.native
+    def retrieve(id: String, page: Double, filter: ObjectResult): js.Promise[Batch] = js.native
+    def retrieve(id: String, page: Unit, filter: ObjectResult): js.Promise[Batch] = js.native
   }
   
   @js.native
   trait Create extends StObject {
     
-    def create(request: CreateShipmentRequest): js.Promise[Shipment] = js.native
+    def create(request: CreateAddressRequest): js.Promise[Address] = js.native
     
-    def list(): js.Promise[PaginatedList[Shipment]] = js.native
-    def list(args: PaginationArgs): js.Promise[PaginatedList[Shipment]] = js.native
+    def list(): js.Promise[PaginatedList[Address]] = js.native
+    def list(args: PaginationArgs): js.Promise[PaginatedList[Address]] = js.native
     
-    def retrieve(id: String): js.Promise[Shipment] = js.native
+    def retrieve(id: String): js.Promise[Address] = js.native
+    
+    def validate(id: String): js.Promise[Address] = js.native
   }
   
   @js.native
   trait CreateList extends StObject {
     
-    def create(parcel: CreateParcelRequest): js.Promise[Parcel] = js.native
+    def create(request: TransactionCreateInstantRequest): js.Promise[Transaction] = js.native
+    def create(request: TransactionCreateRateRequest): js.Promise[Transaction] = js.native
     
-    def list(): js.Promise[PaginatedList[Parcel]] = js.native
-    def list(args: PaginationArgs): js.Promise[PaginatedList[Parcel]] = js.native
+    def list(): js.Promise[PaginatedList[Transaction]] = js.native
+    def list(args: PaginationArgs): js.Promise[PaginatedList[Transaction]] = js.native
     
-    def retrieve(id: String): js.Promise[Parcel] = js.native
+    def retrieve(id: String): js.Promise[Transaction] = js.native
+  }
+  
+  @js.native
+  trait CreateListRetrieve extends StObject {
+    
+    def create(request: CreateCustomsDeclarationRequest): js.Promise[CustomsDeclaration] = js.native
+    
+    def list(): js.Promise[PaginatedList[CustomsDeclaration]] = js.native
+    def list(args: PaginationArgs): js.Promise[PaginatedList[CustomsDeclaration]] = js.native
+    
+    def retrieve(id: String): js.Promise[CustomsDeclaration] = js.native
   }
   
   trait Extendedtoken extends StObject {
@@ -166,65 +168,61 @@ object anon {
     }
   }
   
-  trait Isvalid extends StObject {
+  trait Getstatus extends StObject {
     
-    var is_valid: js.UndefOr[Boolean] = js.undefined
+    def create(request: RegisterTrackRequest): js.Promise[Track]
     
-    var messages: js.UndefOr[js.Array[ValidationError]] = js.undefined
+    def get_status(carrier: Carriers, trackingNumber: String): js.Promise[Track]
   }
-  object Isvalid {
+  object Getstatus {
     
-    inline def apply(): Isvalid = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Isvalid]
+    inline def apply(
+      create: RegisterTrackRequest => js.Promise[Track],
+      get_status: (Carriers, String) => js.Promise[Track]
+    ): Getstatus = {
+      val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), get_status = js.Any.fromFunction2(get_status))
+      __obj.asInstanceOf[Getstatus]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: Isvalid] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: Getstatus] (val x: Self) extends AnyVal {
       
-      inline def setIs_valid(value: Boolean): Self = StObject.set(x, "is_valid", value.asInstanceOf[js.Any])
+      inline def setCreate(value: RegisterTrackRequest => js.Promise[Track]): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
       
-      inline def setIs_validUndefined: Self = StObject.set(x, "is_valid", js.undefined)
-      
-      inline def setMessages(value: js.Array[ValidationError]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
-      
-      inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
-      
-      inline def setMessagesVarargs(value: ValidationError*): Self = StObject.set(x, "messages", js.Array(value*))
+      inline def setGet_status(value: (Carriers, String) => js.Promise[Track]): Self = StObject.set(x, "get_status", js.Any.fromFunction2(value))
     }
   }
   
   @js.native
   trait List extends StObject {
     
-    def create(request: CreateAddressRequest): js.Promise[Address] = js.native
+    def create(parcel: CreateParcelRequest): js.Promise[Parcel] = js.native
     
-    def list(): js.Promise[PaginatedList[Address]] = js.native
-    def list(args: PaginationArgs): js.Promise[PaginatedList[Address]] = js.native
+    def list(): js.Promise[PaginatedList[Parcel]] = js.native
+    def list(args: PaginationArgs): js.Promise[PaginatedList[Parcel]] = js.native
     
-    def retrieve(id: String): js.Promise[Address] = js.native
-    
-    def validate(id: String): js.Promise[Address] = js.native
+    def retrieve(id: String): js.Promise[Parcel] = js.native
   }
   
   @js.native
   trait ListRetrieve extends StObject {
     
-    def list(): js.Promise[PaginatedList[Carrier]] = js.native
-    def list(args: PaginationArgs): js.Promise[PaginatedList[Carrier]] = js.native
+    def create(request: CreateCustomsItemRequest): js.Promise[CustomsItem] = js.native
     
-    def retrieve(carrierId: String): js.Promise[Carrier] = js.native
+    def list(): js.Promise[PaginatedList[CustomsItem]] = js.native
+    def list(args: PaginationArgs): js.Promise[PaginatedList[CustomsItem]] = js.native
+    
+    def retrieve(id: String): js.Promise[CustomsItem] = js.native
   }
   
   @js.native
   trait Retrieve extends StObject {
     
-    def create(request: TransactionCreateInstantRequest): js.Promise[Transaction] = js.native
-    def create(request: TransactionCreateRateRequest): js.Promise[Transaction] = js.native
+    def create(request: CreateShipmentRequest): js.Promise[Shipment] = js.native
     
-    def list(): js.Promise[PaginatedList[Transaction]] = js.native
-    def list(args: PaginationArgs): js.Promise[PaginatedList[Transaction]] = js.native
+    def list(): js.Promise[PaginatedList[Shipment]] = js.native
+    def list(args: PaginationArgs): js.Promise[PaginatedList[Shipment]] = js.native
     
-    def retrieve(id: String): js.Promise[Transaction] = js.native
+    def retrieve(id: String): js.Promise[Shipment] = js.native
   }
 }

@@ -14,3 +14,15 @@ open class LightBlock protected ()
     */
   def this(name: String) = this()
 }
+/* static members */
+object LightBlock {
+  
+  @JSImport("babylonjs", "LightBlock")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("babylonjs", "LightBlock._OnGenerateOnlyFragmentCodeChanged")
+  @js.native
+  def _OnGenerateOnlyFragmentCodeChanged: Any = js.native
+  inline def _OnGenerateOnlyFragmentCodeChanged_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_OnGenerateOnlyFragmentCodeChanged")(x.asInstanceOf[js.Any])
+}

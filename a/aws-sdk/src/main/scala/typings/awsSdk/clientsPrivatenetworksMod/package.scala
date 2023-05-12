@@ -130,6 +130,7 @@ type NetworkResourceList = js.Array[NetworkResource]
   - typings.awsSdk.awsSdkStrings.DELETING
   - typings.awsSdk.awsSdkStrings.PENDING_RETURN
   - typings.awsSdk.awsSdkStrings.DELETED
+  - typings.awsSdk.awsSdkStrings.CREATING_SHIPPING_LABEL
   - java.lang.String
 */
 type NetworkResourceStatus = _NetworkResourceStatus | java.lang.String
@@ -181,6 +182,8 @@ type OrderList = js.Array[Order]
 
 type PaginationToken = java.lang.String
 
+type StartNetworkResourceUpdateRequestReturnReasonString = java.lang.String
+
 type String = java.lang.String
 
 type TagKey = java.lang.String
@@ -194,6 +197,13 @@ type TagValue = java.lang.String
 type Timestamp = js.Date
 
 type TrackingInformationList = js.Array[TrackingInformation]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.REPLACE
+  - typings.awsSdk.awsSdkStrings.RETURN
+  - java.lang.String
+*/
+type UpdateType = _UpdateType | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2021-12-03`

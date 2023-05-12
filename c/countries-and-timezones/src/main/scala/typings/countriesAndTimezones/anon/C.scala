@@ -5,6 +5,7 @@ import typings.countriesAndTimezones.countriesAndTimezonesStrings.CI
 import typings.countriesAndTimezones.countriesAndTimezonesStrings.GH
 import typings.countriesAndTimezones.countriesAndTimezonesStrings.GM
 import typings.countriesAndTimezones.countriesAndTimezonesStrings.GN
+import typings.countriesAndTimezones.countriesAndTimezonesStrings.IS
 import typings.countriesAndTimezones.countriesAndTimezonesStrings.ML
 import typings.countriesAndTimezones.countriesAndTimezonesStrings.MR
 import typings.countriesAndTimezones.countriesAndTimezonesStrings.SH
@@ -17,13 +18,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait C extends StObject {
   
-  var c: js.Tuple11[CI, BF, GH, GM, GN, ML, MR, SH, SL, SN, TG]
+  var c: js.Tuple12[CI, BF, GH, GM, GN, IS, ML, MR, SH, SL, SN, TG]
   
   var u: typings.countriesAndTimezones.countriesAndTimezonesInts.`0`
 }
 object C {
   
-  inline def apply(c: js.Tuple11[CI, BF, GH, GM, GN, ML, MR, SH, SL, SN, TG]): C = {
+  inline def apply(c: js.Tuple12[CI, BF, GH, GM, GN, IS, ML, MR, SH, SL, SN, TG]): C = {
     val __obj = js.Dynamic.literal(c = c.asInstanceOf[js.Any], u = 0)
     __obj.asInstanceOf[C]
   }
@@ -31,7 +32,7 @@ object C {
   @scala.inline
   implicit open class MutableBuilder[Self <: C] (val x: Self) extends AnyVal {
     
-    inline def setC(value: js.Tuple11[CI, BF, GH, GM, GN, ML, MR, SH, SL, SN, TG]): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
+    inline def setC(value: js.Tuple12[CI, BF, GH, GM, GN, IS, ML, MR, SH, SL, SN, TG]): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
     
     inline def setU(value: typings.countriesAndTimezones.countriesAndTimezonesInts.`0`): Self = StObject.set(x, "u", value.asInstanceOf[js.Any])
   }

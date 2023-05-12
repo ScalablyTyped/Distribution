@@ -9,19 +9,23 @@ trait ConditionalAccessUsers extends StObject {
   // Group IDs excluded from scope of policy.
   var excludeGroups: js.UndefOr[js.Array[String]] = js.undefined
   
+  var excludeGuestsOrExternalUsers: js.UndefOr[NullableOption[ConditionalAccessGuestsOrExternalUsers]] = js.undefined
+  
   // Role IDs excluded from scope of policy.
   var excludeRoles: js.UndefOr[js.Array[String]] = js.undefined
   
   // User IDs excluded from scope of policy and/or GuestsOrExternalUsers.
   var excludeUsers: js.UndefOr[js.Array[String]] = js.undefined
   
-  // Group IDs in scope of policy unless explicitly excluded, or All.
+  // Group IDs in scope of policy unless explicitly excluded.
   var includeGroups: js.UndefOr[js.Array[String]] = js.undefined
   
-  // Role IDs in scope of policy unless explicitly excluded, or All.
+  var includeGuestsOrExternalUsers: js.UndefOr[NullableOption[ConditionalAccessGuestsOrExternalUsers]] = js.undefined
+  
+  // Role IDs in scope of policy unless explicitly excluded.
   var includeRoles: js.UndefOr[js.Array[String]] = js.undefined
   
-  // User IDs in scope of policy unless explicitly excluded, or None or All or GuestsOrExternalUsers.
+  // User IDs in scope of policy unless explicitly excluded, None, All, or GuestsOrExternalUsers.
   var includeUsers: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ConditionalAccessUsers {
@@ -40,6 +44,12 @@ object ConditionalAccessUsers {
     
     inline def setExcludeGroupsVarargs(value: String*): Self = StObject.set(x, "excludeGroups", js.Array(value*))
     
+    inline def setExcludeGuestsOrExternalUsers(value: NullableOption[ConditionalAccessGuestsOrExternalUsers]): Self = StObject.set(x, "excludeGuestsOrExternalUsers", value.asInstanceOf[js.Any])
+    
+    inline def setExcludeGuestsOrExternalUsersNull: Self = StObject.set(x, "excludeGuestsOrExternalUsers", null)
+    
+    inline def setExcludeGuestsOrExternalUsersUndefined: Self = StObject.set(x, "excludeGuestsOrExternalUsers", js.undefined)
+    
     inline def setExcludeRoles(value: js.Array[String]): Self = StObject.set(x, "excludeRoles", value.asInstanceOf[js.Any])
     
     inline def setExcludeRolesUndefined: Self = StObject.set(x, "excludeRoles", js.undefined)
@@ -57,6 +67,12 @@ object ConditionalAccessUsers {
     inline def setIncludeGroupsUndefined: Self = StObject.set(x, "includeGroups", js.undefined)
     
     inline def setIncludeGroupsVarargs(value: String*): Self = StObject.set(x, "includeGroups", js.Array(value*))
+    
+    inline def setIncludeGuestsOrExternalUsers(value: NullableOption[ConditionalAccessGuestsOrExternalUsers]): Self = StObject.set(x, "includeGuestsOrExternalUsers", value.asInstanceOf[js.Any])
+    
+    inline def setIncludeGuestsOrExternalUsersNull: Self = StObject.set(x, "includeGuestsOrExternalUsers", null)
+    
+    inline def setIncludeGuestsOrExternalUsersUndefined: Self = StObject.set(x, "includeGuestsOrExternalUsers", js.undefined)
     
     inline def setIncludeRoles(value: js.Array[String]): Self = StObject.set(x, "includeRoles", value.asInstanceOf[js.Any])
     

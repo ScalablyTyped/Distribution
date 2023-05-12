@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "v8-callsites"
-version := "1.2-dt-20211202Z-e0a8b2"
+version := "1.2-dt-20211202Z-7f5b62"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "callsite" % "1.0.0-dt-20221103Z-8ed677",
-  "org.scalablytyped" %%% "std" % "4.9-ecb5eb")
+  "org.scalablytyped" %%% "callsite" % "1.0.0-dt-20221103Z-3756c7",
+  "org.scalablytyped" %%% "std" % "5.0-e63739")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

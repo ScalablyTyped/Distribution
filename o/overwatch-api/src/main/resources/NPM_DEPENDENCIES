@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "overwatch-api" : "0.10.5"
+      "overwatch-api" : "0.13.0"
     }
   ],
   "test-dependencies" : [
     {
-      "overwatch-api" : "0.10.5"
+      "overwatch-api" : "0.13.0"
     }
   ],
   "compile-devDependencies" : [

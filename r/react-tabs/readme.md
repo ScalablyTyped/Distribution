@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-tabs
 
-Typings are for version 5.1.0
+Typings are for version 6.0.1
 
 ## Library description:
 An accessible and easy tab component for ReactJS

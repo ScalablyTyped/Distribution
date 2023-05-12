@@ -1,7 +1,7 @@
 package typings.dynamodbLockClient
 
-import typings.awsSdk.mod.DynamoDB.DocumentClient
-import typings.events.mod.EventEmitter
+import typings.dynamodbLockClient.anon.Delete
+import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,7 +35,7 @@ object mod {
   }
   object FailClosedConfig {
     
-    inline def apply(acquirePeriodMs: Double, dynamodb: DocumentClient, lockTable: String, partitionKey: String): FailClosedConfig = {
+    inline def apply(acquirePeriodMs: Double, dynamodb: Delete, lockTable: String, partitionKey: String): FailClosedConfig = {
       val __obj = js.Dynamic.literal(acquirePeriodMs = acquirePeriodMs.asInstanceOf[js.Any], dynamodb = dynamodb.asInstanceOf[js.Any], lockTable = lockTable.asInstanceOf[js.Any], partitionKey = partitionKey.asInstanceOf[js.Any])
       __obj.asInstanceOf[FailClosedConfig]
     }
@@ -59,7 +59,7 @@ object mod {
   }
   object FailOpenConfig {
     
-    inline def apply(dynamodb: DocumentClient, leaseDurationMs: Double, lockTable: String, partitionKey: String): FailOpenConfig = {
+    inline def apply(dynamodb: Delete, leaseDurationMs: Double, lockTable: String, partitionKey: String): FailOpenConfig = {
       val __obj = js.Dynamic.literal(dynamodb = dynamodb.asInstanceOf[js.Any], leaseDurationMs = leaseDurationMs.asInstanceOf[js.Any], lockTable = lockTable.asInstanceOf[js.Any], partitionKey = partitionKey.asInstanceOf[js.Any])
       __obj.asInstanceOf[FailOpenConfig]
     }
@@ -81,7 +81,7 @@ object mod {
   
   trait GenericConfig extends StObject {
     
-    var dynamodb: DocumentClient
+    var dynamodb: Delete
     
     var lockTable: String
     
@@ -93,7 +93,7 @@ object mod {
   }
   object GenericConfig {
     
-    inline def apply(dynamodb: DocumentClient, lockTable: String, partitionKey: String): GenericConfig = {
+    inline def apply(dynamodb: Delete, lockTable: String, partitionKey: String): GenericConfig = {
       val __obj = js.Dynamic.literal(dynamodb = dynamodb.asInstanceOf[js.Any], lockTable = lockTable.asInstanceOf[js.Any], partitionKey = partitionKey.asInstanceOf[js.Any])
       __obj.asInstanceOf[GenericConfig]
     }
@@ -101,7 +101,7 @@ object mod {
     @scala.inline
     implicit open class MutableBuilder[Self <: GenericConfig] (val x: Self) extends AnyVal {
       
-      inline def setDynamodb(value: DocumentClient): Self = StObject.set(x, "dynamodb", value.asInstanceOf[js.Any])
+      inline def setDynamodb(value: Delete): Self = StObject.set(x, "dynamodb", value.asInstanceOf[js.Any])
       
       inline def setLockTable(value: String): Self = StObject.set(x, "lockTable", value.asInstanceOf[js.Any])
       

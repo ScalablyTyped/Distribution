@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AcceptTransitGatewayMulticastDomainAssociationsResult extends StObject {
   
+  /**
+    * Information about the multicast domain associations.
+    */
   var Associations: js.UndefOr[TransitGatewayMulticastDomainAssociations] = js.undefined
 }
 object AcceptTransitGatewayMulticastDomainAssociationsResult {

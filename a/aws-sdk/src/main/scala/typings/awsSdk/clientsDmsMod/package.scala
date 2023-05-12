@@ -1,7 +1,6 @@
 package typings.awsSdk.clientsDmsMod
 
 import typings.awsSdk.awsSdkStrings.`replication-instance`
-import typings.awsSdk.awsSdkStrings.beta_
 import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -28,6 +27,8 @@ type AuthMechanismValue = _AuthMechanismValue | java.lang.String
 type AuthTypeValue = _AuthTypeValue | java.lang.String
 
 type AvailabilityZonesList = js.Array[String]
+
+type BatchStartRecommendationsErrorEntryList = js.Array[BatchStartRecommendationsErrorEntry]
 
 type Boolean = scala.Boolean
 
@@ -178,6 +179,13 @@ type IntegerList = js.Array[Integer]
 type IntegerOptional = Double
 
 /* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.`scram-sha-512`
+  - typings.awsSdk.awsSdkStrings.plain
+  - java.lang.String
+*/
+type KafkaSaslMechanism = _KafkaSaslMechanism | java.lang.String
+
+/* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.plaintext__
   - typings.awsSdk.awsSdkStrings.`ssl-authentication`
   - typings.awsSdk.awsSdkStrings.`ssl-encryption`
@@ -187,6 +195,8 @@ type IntegerOptional = Double
 type KafkaSecurityProtocol = _KafkaSecurityProtocol | java.lang.String
 
 type KeyList = js.Array[String]
+
+type LimitationList = js.Array[Limitation]
 
 type Long = Double
 
@@ -235,6 +245,8 @@ type PendingMaintenanceActions = js.Array[ResourcePendingMaintenanceActions]
 */
 type PluginNameValue = _PluginNameValue | java.lang.String
 
+type RecommendationList = js.Array[Recommendation]
+
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.none__
   - typings.awsSdk.awsSdkStrings.`auth-role`
@@ -251,7 +263,12 @@ type RedisAuthTypeValue = _RedisAuthTypeValue | java.lang.String
 */
 type RefreshSchemasStatusTypeValue = _RefreshSchemasStatusTypeValue | java.lang.String
 
-type ReleaseStatusValues = beta_ | java.lang.String
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.beta_
+  - typings.awsSdk.awsSdkStrings.prod
+  - java.lang.String
+*/
+type ReleaseStatusValues = _ReleaseStatusValues | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`data-reload`
@@ -266,6 +283,8 @@ type ReloadOptionValue = _ReloadOptionValue | java.lang.String
   - java.lang.String
 */
 type ReplicationEndpointTypeValue = _ReplicationEndpointTypeValue | java.lang.String
+
+type ReplicationInstanceIpv6AddressList = js.Array[String]
 
 type ReplicationInstanceList = js.Array[ReplicationInstance]
 
@@ -308,6 +327,8 @@ type SourceType = `replication-instance` | java.lang.String
 */
 type SslSecurityProtocolValue = _SslSecurityProtocolValue | java.lang.String
 
+type StartRecommendationsRequestEntryList = js.Array[StartRecommendationsRequestEntry]
+
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`start-replication`
   - typings.awsSdk.awsSdkStrings.`resume-processing`
@@ -340,6 +361,15 @@ type TagList = js.Array[Tag]
   - java.lang.String
 */
 type TargetDbType = _TargetDbType | java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.BackupOnly
+  - typings.awsSdk.awsSdkStrings.PreferBackup
+  - typings.awsSdk.awsSdkStrings.PreferTlog
+  - typings.awsSdk.awsSdkStrings.TlogOnly
+  - java.lang.String
+*/
+type TlogAccessMode = _TlogAccessMode | java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.UP_TO_DATE

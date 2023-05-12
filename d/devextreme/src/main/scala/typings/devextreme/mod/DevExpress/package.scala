@@ -1,5 +1,6 @@
 package typings.devextreme.mod.DevExpress
 
+import typings.devextreme.mod.DevExpress.common.GlobalConfig
 import typings.devextreme.mod.DevExpress.events.EventObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,3 +15,5 @@ type ExternalFormat = scala.Nothing
 type dxEvent = EventObject
 
 type event = typings.devextreme.mod.DevExpress.events.event
+
+type globalConfig = GlobalConfig

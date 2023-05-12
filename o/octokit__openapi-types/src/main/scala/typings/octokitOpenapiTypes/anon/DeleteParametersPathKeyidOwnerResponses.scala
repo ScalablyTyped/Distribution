@@ -6,9 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DeleteParametersPathKeyidOwnerResponses extends StObject {
   
-  /** Deploy keys are immutable. If you need to update a key, remove the key and create a new one instead. */
+  /**
+    * Delete a deploy key
+    * @description Deploy keys are immutable. If you need to update a key, remove the key and create a new one instead.
+    */
   var delete: ParametersPathKeyidOwnerResponses
   
+  /** Get a deploy key */
   var get: ParametersPathKeyidOwner
 }
 object DeleteParametersPathKeyidOwnerResponses {

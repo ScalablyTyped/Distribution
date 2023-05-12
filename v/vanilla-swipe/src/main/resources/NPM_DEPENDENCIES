@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "vanilla-swipe" : "2.4.0"
+      "vanilla-swipe" : "2.4.1"
     }
   ],
   "test-dependencies" : [
     {
-      "vanilla-swipe" : "2.4.0"
+      "vanilla-swipe" : "2.4.1"
     }
   ],
   "compile-devDependencies" : [

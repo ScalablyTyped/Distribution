@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListStreamingDistributionsResult extends StObject {
   
   /**
-    * The StreamingDistributionList type. 
+    * The StreamingDistributionList type.
     */
   var StreamingDistributionList: js.UndefOr[typings.awsSdk.clientsCloudfrontMod.StreamingDistributionList] = js.undefined
 }

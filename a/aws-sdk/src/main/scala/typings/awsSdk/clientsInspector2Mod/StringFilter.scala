@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StringFilter extends StObject {
   
   /**
-    * The operator to use when comparing values in the filter
+    * The operator to use when comparing values in the filter.
     */
   var comparison: StringComparison
   

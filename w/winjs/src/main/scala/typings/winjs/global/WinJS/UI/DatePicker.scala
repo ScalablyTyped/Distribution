@@ -13,7 +13,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 //#region Constructors
 /**
   * Initializes a new instance of the DatePicker control.
-  * @constructor
   * @param element The DOM element associated with the DatePicker control.
   * @param options The set of options to be applied initially to the DatePicker control. The options are the following: calendar, current, datePattern, disabled, maxYear, minYear, monthPattern, yearPattern.
   **/

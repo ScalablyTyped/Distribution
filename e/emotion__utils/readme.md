@@ -1,7 +1,7 @@
 
 # Scala.js typings for emotion__utils
 
-Typings are for version 1.2.0
+Typings are for version 1.2.1
 
 ## Library description:
 internal utils for emotion

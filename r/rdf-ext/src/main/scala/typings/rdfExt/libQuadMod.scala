@@ -1,6 +1,11 @@
 package typings.rdfExt
 
 import typings.rdfExt.anon.Graph
+import typings.rdfExt.libBlankNodeMod.BlankNodeExt
+import typings.rdfExt.libDefaultGraphMod.DefaultGraphExt
+import typings.rdfExt.libLiteralMod.LiteralExt
+import typings.rdfExt.libNamedNodeMod.NamedNodeExt
+import typings.rdfExt.libVariableMod.VariableExt
 import typings.rdfExt.rdfExtStrings._empty
 import typings.rdfjsTypes.dataModelMod.Quad
 import typings.rdfjsTypes.dataModelMod.QuadGraph
@@ -13,33 +18,32 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object libQuadMod {
   
-  // tslint:disable-next-line:no-unnecessary-class
-  @JSImport("rdf-ext/lib/Quad", JSImport.Namespace)
+  @JSImport("rdf-ext/lib/Quad", JSImport.Default)
   @js.native
-  open class ^ protected ()
-    extends StObject
-       with QuadExt {
+  open class default protected () extends QuadExt {
     def this(subject: QuadSubject, predicate: QuadPredicate, `object`: QuadObject) = this()
     def this(subject: QuadSubject, predicate: QuadPredicate, `object`: QuadObject, graph: QuadGraph) = this()
   }
   
-  // tslint:disable-next-line:no-unnecessary-class
+  @JSImport("rdf-ext/lib/Quad", "QuadExt")
   @js.native
-  trait QuadExt
+  open class QuadExt protected ()
     extends StObject
        with Quad {
+    def this(subject: QuadSubject, predicate: QuadPredicate, `object`: QuadObject) = this()
+    def this(subject: QuadSubject, predicate: QuadPredicate, `object`: QuadObject, graph: QuadGraph) = this()
     
     @JSName("graph")
-    var graph_QuadExt: typings.rdfExt.libDefaultGraphMod.^ | typings.rdfExt.libNamedNodeMod.^[String] | typings.rdfExt.libBlankNodeMod.^ | typings.rdfExt.libVariableMod.^ = js.native
+    var graph_QuadExt: DefaultGraphExt | NamedNodeExt[String] | BlankNodeExt | VariableExt = js.native
     
     @JSName("object")
-    var object_QuadExt: typings.rdfExt.libNamedNodeMod.^[String] | typings.rdfExt.libLiteralMod.^ | typings.rdfExt.libBlankNodeMod.^ | typings.rdfExt.libVariableMod.^ = js.native
+    var object_QuadExt: NamedNodeExt[String] | LiteralExt | BlankNodeExt | VariableExt = js.native
     
     @JSName("predicate")
-    var predicate_QuadExt: typings.rdfExt.libNamedNodeMod.^[String] | typings.rdfExt.libVariableMod.^ = js.native
+    var predicate_QuadExt: NamedNodeExt[String] | VariableExt = js.native
     
     @JSName("subject")
-    var subject_QuadExt: typings.rdfExt.libNamedNodeMod.^[String] | typings.rdfExt.libBlankNodeMod.^ | typings.rdfExt.libVariableMod.^ = js.native
+    var subject_QuadExt: NamedNodeExt[String] | BlankNodeExt | VariableExt = js.native
     
     @JSName("termType")
     var termType_QuadExt: typings.rdfExt.rdfExtStrings.Quad = js.native

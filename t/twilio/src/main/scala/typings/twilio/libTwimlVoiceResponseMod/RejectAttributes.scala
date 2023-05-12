@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RejectAttributes extends StObject {
   
+  /** reason - Rejection reason */
   var reason: js.UndefOr[RejectReason] = js.undefined
 }
 object RejectAttributes {

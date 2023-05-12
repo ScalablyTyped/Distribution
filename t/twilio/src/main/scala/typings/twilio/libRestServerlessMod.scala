@@ -8,21 +8,15 @@ object libRestServerlessMod {
   
   @JSImport("twilio/lib/rest/Serverless", JSImport.Namespace)
   @js.native
-  open class ^ protected () extends Serverless {
-    /**
-      * Initialize serverless domain
-      *
-      * @param twilio - The twilio client
-      */
-    def this(twilio: typings.twilio.libRestTwilioMod.^) = this()
-  }
+  open class ^ () extends Serverless
   
   @js.native
   trait Serverless
-    extends typings.twilio.libBaseDomainMod.^ {
+    extends typings.twilio.libRestServerlessBaseMod.^ {
     
-    val services: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ServiceListInstance */ Any = js.native
-    
-    val v1: typings.twilio.libRestServerlessV1Mod.^ = js.native
+    /**
+      * @deprecated - Use v1.services instead
+      */
+    def services: Any = js.native
   }
 }

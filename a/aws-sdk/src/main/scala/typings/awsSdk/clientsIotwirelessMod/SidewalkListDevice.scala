@@ -17,6 +17,11 @@ trait SidewalkListDevice extends StObject {
   var DeviceCertificates: js.UndefOr[DeviceCertificateList] = js.undefined
   
   /**
+    * Sidewalk object used by list functions.
+    */
+  var DeviceProfileId: js.UndefOr[typings.awsSdk.clientsIotwirelessMod.DeviceProfileId] = js.undefined
+  
+  /**
     * The sidewalk device identification.
     */
   var SidewalkId: js.UndefOr[typings.awsSdk.clientsIotwirelessMod.SidewalkId] = js.undefined
@@ -25,6 +30,11 @@ trait SidewalkListDevice extends StObject {
     * The Sidewalk manufacturing series number.
     */
   var SidewalkManufacturingSn: js.UndefOr[typings.awsSdk.clientsIotwirelessMod.SidewalkManufacturingSn] = js.undefined
+  
+  /**
+    * The status of the Sidewalk devices, such as provisioned or registered.
+    */
+  var Status: js.UndefOr[WirelessDeviceSidewalkStatus] = js.undefined
 }
 object SidewalkListDevice {
   
@@ -46,6 +56,10 @@ object SidewalkListDevice {
     
     inline def setDeviceCertificatesVarargs(value: CertificateList*): Self = StObject.set(x, "DeviceCertificates", js.Array(value*))
     
+    inline def setDeviceProfileId(value: DeviceProfileId): Self = StObject.set(x, "DeviceProfileId", value.asInstanceOf[js.Any])
+    
+    inline def setDeviceProfileIdUndefined: Self = StObject.set(x, "DeviceProfileId", js.undefined)
+    
     inline def setSidewalkId(value: SidewalkId): Self = StObject.set(x, "SidewalkId", value.asInstanceOf[js.Any])
     
     inline def setSidewalkIdUndefined: Self = StObject.set(x, "SidewalkId", js.undefined)
@@ -53,5 +67,9 @@ object SidewalkListDevice {
     inline def setSidewalkManufacturingSn(value: SidewalkManufacturingSn): Self = StObject.set(x, "SidewalkManufacturingSn", value.asInstanceOf[js.Any])
     
     inline def setSidewalkManufacturingSnUndefined: Self = StObject.set(x, "SidewalkManufacturingSn", js.undefined)
+    
+    inline def setStatus(value: WirelessDeviceSidewalkStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

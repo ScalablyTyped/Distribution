@@ -17,7 +17,7 @@ trait RegisterAppInstanceUserEndpointRequest extends StObject {
   var AppInstanceUserArn: SensitiveChimeArn
   
   /**
-    * The idempotency token for each client request. 
+    * The unique ID assigned to the request. Use different tokens to register other endpoints.
     */
   var ClientRequestToken: typings.awsSdk.clientsChimesdkidentityMod.ClientRequestToken
   
@@ -34,7 +34,7 @@ trait RegisterAppInstanceUserEndpointRequest extends StObject {
   /**
     * The ARN of the resource to which the endpoint belongs.
     */
-  var ResourceArn: SensitiveChimeArn
+  var ResourceArn: ChimeArn
   
   /**
     * The type of the AppInstanceUserEndpoint. Supported types:    APNS: The mobile notification service for an Apple device.    APNS_SANDBOX: The sandbox environment of the mobile notification service for an Apple device.    GCM: The mobile notification service for an Android device.   Populate the ResourceArn value of each type as PinpointAppArn.
@@ -47,7 +47,7 @@ object RegisterAppInstanceUserEndpointRequest {
     AppInstanceUserArn: SensitiveChimeArn,
     ClientRequestToken: ClientRequestToken,
     EndpointAttributes: EndpointAttributes,
-    ResourceArn: SensitiveChimeArn,
+    ResourceArn: ChimeArn,
     Type: AppInstanceUserEndpointType
   ): RegisterAppInstanceUserEndpointRequest = {
     val __obj = js.Dynamic.literal(AppInstanceUserArn = AppInstanceUserArn.asInstanceOf[js.Any], ClientRequestToken = ClientRequestToken.asInstanceOf[js.Any], EndpointAttributes = EndpointAttributes.asInstanceOf[js.Any], ResourceArn = ResourceArn.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
@@ -71,7 +71,7 @@ object RegisterAppInstanceUserEndpointRequest {
     
     inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    inline def setResourceArn(value: SensitiveChimeArn): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
+    inline def setResourceArn(value: ChimeArn): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
     
     inline def setType(value: AppInstanceUserEndpointType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }

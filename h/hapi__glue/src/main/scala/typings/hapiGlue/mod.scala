@@ -1,8 +1,9 @@
 package typings.hapiGlue
 
 import typings.hapiGlue.anon.Plugins
-import typings.hapiHapi.mod.Plugin
-import typings.hapiHapi.mod.ServerOptions
+import typings.hapiHapi.libTypesPluginMod.Plugin
+import typings.hapiHapi.libTypesServerOptionsMod.ServerOptions
+import typings.hapiHapi.libTypesServerServerMod.ServerApplicationState
 import typings.hapiHapi.mod.Server_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,8 +15,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def compose(manifest: Manifest): js.Promise[Server_] = ^.asInstanceOf[js.Dynamic].applyDynamic("compose")(manifest.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Server_]]
-  inline def compose(manifest: Manifest, options: Options): js.Promise[Server_] = (^.asInstanceOf[js.Dynamic].applyDynamic("compose")(manifest.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Server_]]
+  inline def compose(manifest: Manifest): js.Promise[Server_[ServerApplicationState]] = ^.asInstanceOf[js.Dynamic].applyDynamic("compose")(manifest.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Server_[ServerApplicationState]]]
+  inline def compose(manifest: Manifest, options: Options): js.Promise[Server_[ServerApplicationState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("compose")(manifest.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Server_[ServerApplicationState]]]
   
   trait Manifest extends StObject {
     
@@ -44,11 +45,19 @@ object mod {
   trait Options extends StObject {
     
     var preConnections: js.UndefOr[
-        js.Function2[/* Server */ Server_, /* next */ js.Function1[/* err */ Any, Unit], Unit]
+        js.Function2[
+          /* Server */ Server_[ServerApplicationState], 
+          /* next */ js.Function1[/* err */ Any, Unit], 
+          Unit
+        ]
       ] = js.undefined
     
     var preRegister: js.UndefOr[
-        js.Function2[/* Server */ Server_, /* next */ js.Function1[/* err */ Any, Unit], Unit]
+        js.Function2[
+          /* Server */ Server_[ServerApplicationState], 
+          /* next */ js.Function1[/* err */ Any, Unit], 
+          Unit
+        ]
       ] = js.undefined
     
     var relativeTo: String
@@ -63,11 +72,15 @@ object mod {
     @scala.inline
     implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
-      inline def setPreConnections(value: (/* Server */ Server_, /* next */ js.Function1[/* err */ Any, Unit]) => Unit): Self = StObject.set(x, "preConnections", js.Any.fromFunction2(value))
+      inline def setPreConnections(
+        value: (/* Server */ Server_[ServerApplicationState], /* next */ js.Function1[/* err */ Any, Unit]) => Unit
+      ): Self = StObject.set(x, "preConnections", js.Any.fromFunction2(value))
       
       inline def setPreConnectionsUndefined: Self = StObject.set(x, "preConnections", js.undefined)
       
-      inline def setPreRegister(value: (/* Server */ Server_, /* next */ js.Function1[/* err */ Any, Unit]) => Unit): Self = StObject.set(x, "preRegister", js.Any.fromFunction2(value))
+      inline def setPreRegister(
+        value: (/* Server */ Server_[ServerApplicationState], /* next */ js.Function1[/* err */ Any, Unit]) => Unit
+      ): Self = StObject.set(x, "preRegister", js.Any.fromFunction2(value))
       
       inline def setPreRegisterUndefined: Self = StObject.set(x, "preRegister", js.undefined)
       
@@ -79,13 +92,13 @@ object mod {
     
     var options: js.UndefOr[Any] = js.undefined
     
-    var plugin: String | Plugin[Any]
+    var plugin: String | (Plugin[Any, Unit])
     
     var routes: js.UndefOr[Any] = js.undefined
   }
   object PluginObject {
     
-    inline def apply(plugin: String | Plugin[Any]): PluginObject = {
+    inline def apply(plugin: String | (Plugin[Any, Unit])): PluginObject = {
       val __obj = js.Dynamic.literal(plugin = plugin.asInstanceOf[js.Any])
       __obj.asInstanceOf[PluginObject]
     }
@@ -97,7 +110,7 @@ object mod {
       
       inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      inline def setPlugin(value: String | Plugin[Any]): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
+      inline def setPlugin(value: String | (Plugin[Any, Unit])): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
       
       inline def setRoutes(value: Any): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
       

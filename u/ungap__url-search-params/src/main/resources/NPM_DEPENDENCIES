@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@ungap/url-search-params" : "0.2.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@ungap/url-search-params" : "0.2.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

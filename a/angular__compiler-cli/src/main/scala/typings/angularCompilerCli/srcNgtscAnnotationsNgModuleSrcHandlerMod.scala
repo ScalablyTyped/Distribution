@@ -5,25 +5,28 @@ import typings.angularCompiler.mod.R3ClassMetadata
 import typings.angularCompiler.mod.R3FactoryMetadata
 import typings.angularCompiler.mod.R3NgModuleMetadata
 import typings.angularCompiler.mod.SchemaMetadata
+import typings.angularCompilerCli.anon.ClassDeclarationDeclarati
+import typings.angularCompilerCli.anon.ClassDeclarationDeclaratiGetChildAt
 import typings.angularCompilerCli.anon.OmitR3InjectorMetadataimp
+import typings.angularCompilerCli.anon.ReadonlyDecorator
 import typings.angularCompilerCli.anon.ReadonlyNgModuleAnalysis
 import typings.angularCompilerCli.anon.ReadonlyNgModuleResolutio
+import typings.angularCompilerCli.srcNgtscAnnotationsCommonMod.InjectableClassRegistry
 import typings.angularCompilerCli.srcNgtscAnnotationsCommonSrcReferencesRegistryMod.ReferencesRegistry
 import typings.angularCompilerCli.srcNgtscImportsMod.Reference
 import typings.angularCompilerCli.srcNgtscImportsMod.ReferenceEmitter
+import typings.angularCompilerCli.srcNgtscIncrementalSemanticGraphMod.SemanticDepGraphUpdater
 import typings.angularCompilerCli.srcNgtscIncrementalSemanticGraphMod.SemanticSymbol
 import typings.angularCompilerCli.srcNgtscIncrementalSemanticGraphSrcApiMod.SemanticReference
-import typings.angularCompilerCli.srcNgtscMetadataMod.InjectableClassRegistry
+import typings.angularCompilerCli.srcNgtscMetadataMod.ExportedProviderStatusResolver
 import typings.angularCompilerCli.srcNgtscMetadataSrcApiMod.MetadataReader
 import typings.angularCompilerCli.srcNgtscMetadataSrcApiMod.MetadataRegistry
 import typings.angularCompilerCli.srcNgtscPartialEvaluatorMod.PartialEvaluator
 import typings.angularCompilerCli.srcNgtscPerfSrcApiMod.PerfRecorder
-import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.ClassDeclaration
-import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.DeclarationNode
 import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.Decorator
 import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.ReflectionHost
 import typings.angularCompilerCli.srcNgtscScopeMod.LocalModuleScopeRegistry
-import typings.angularCompilerCli.srcNgtscShimsApiMod.FactoryTracker
+import typings.angularCompilerCli.srcNgtscTransformSrcApiMod.AnalysisOutput
 import typings.angularCompilerCli.srcNgtscTransformSrcApiMod.CompileResult
 import typings.angularCompilerCli.srcNgtscTransformSrcApiMod.DecoratorHandler
 import typings.angularCompilerCli.srcNgtscTransformSrcApiMod.ResolveResult
@@ -46,9 +49,10 @@ object srcNgtscAnnotationsNgModuleSrcHandlerMod {
       metaRegistry: MetadataRegistry,
       scopeRegistry: LocalModuleScopeRegistry,
       referencesRegistry: ReferencesRegistry,
+      exportedProviderStatusResolver: ExportedProviderStatusResolver,
+      semanticDepGraphUpdater: Null,
       isCore: Boolean,
       refEmitter: ReferenceEmitter,
-      factoryTracker: Null,
       annotateForClosureCompiler: Boolean,
       onlyPublishPublicTypings: Boolean,
       injectableRegistry: InjectableClassRegistry,
@@ -61,9 +65,10 @@ object srcNgtscAnnotationsNgModuleSrcHandlerMod {
       metaRegistry: MetadataRegistry,
       scopeRegistry: LocalModuleScopeRegistry,
       referencesRegistry: ReferencesRegistry,
+      exportedProviderStatusResolver: ExportedProviderStatusResolver,
+      semanticDepGraphUpdater: SemanticDepGraphUpdater,
       isCore: Boolean,
       refEmitter: ReferenceEmitter,
-      factoryTracker: FactoryTracker,
       annotateForClosureCompiler: Boolean,
       onlyPublishPublicTypings: Boolean,
       injectableRegistry: InjectableClassRegistry,
@@ -71,6 +76,8 @@ object srcNgtscAnnotationsNgModuleSrcHandlerMod {
     ) = this()
     
     /* private */ var _toR3Reference: Any = js.native
+    
+    def analyze(node: ClassDeclarationDeclarati, decorator: ReadonlyDecorator): AnalysisOutput[NgModuleAnalysis] = js.native
     
     /* private */ var annotateForClosureCompiler: Any = js.native
     
@@ -80,7 +87,7 @@ object srcNgtscAnnotationsNgModuleSrcHandlerMod {
     /* private */ var appendRemoteScopingStatements: Any = js.native
     
     def compileFull(
-      node: ClassDeclaration[DeclarationNode],
+      node: ClassDeclarationDeclarati,
       param1: ReadonlyNgModuleAnalysis,
       param2: ReadonlyNgModuleResolutio
     ): js.Array[CompileResult] = js.native
@@ -89,14 +96,14 @@ object srcNgtscAnnotationsNgModuleSrcHandlerMod {
     
     @JSName("compilePartial")
     def compilePartial_MNgModuleDecoratorHandler(
-      node: ClassDeclaration[DeclarationNode],
+      node: ClassDeclarationDeclarati,
       param1: ReadonlyNgModuleAnalysis,
       param2: ReadonlyNgModuleResolutio
     ): js.Array[CompileResult] = js.native
     
     /* private */ var evaluator: Any = js.native
     
-    /* private */ var factoryTracker: Any = js.native
+    /* private */ var exportedProviderStatusResolver: Any = js.native
     
     /* private */ var injectableRegistry: Any = js.native
     
@@ -127,7 +134,7 @@ object srcNgtscAnnotationsNgModuleSrcHandlerMod {
     /* private */ var reflector: Any = js.native
     
     @JSName("register")
-    def register_MNgModuleDecoratorHandler(node: ClassDeclaration[DeclarationNode], analysis: NgModuleAnalysis): Unit = js.native
+    def register_MNgModuleDecoratorHandler(node: ClassDeclarationDeclarati, analysis: NgModuleAnalysis): Unit = js.native
     
     /**
       * Compute a list of `Reference`s from a resolved metadata value.
@@ -135,26 +142,27 @@ object srcNgtscAnnotationsNgModuleSrcHandlerMod {
     /* private */ var resolveTypeList: Any = js.native
     
     @JSName("resolve")
-    def resolve_MNgModuleDecoratorHandler(node: ClassDeclaration[DeclarationNode], analysis: ReadonlyNgModuleAnalysis): ResolveResult[NgModuleResolution] = js.native
+    def resolve_MNgModuleDecoratorHandler(node: ClassDeclarationDeclarati, analysis: ReadonlyNgModuleAnalysis): ResolveResult[NgModuleResolution] = js.native
     
     /* private */ var scopeRegistry: Any = js.native
     
-    def symbol(node: ClassDeclaration[DeclarationNode]): NgModuleSymbol = js.native
+    /* private */ var semanticDepGraphUpdater: Any = js.native
   }
   
   @JSImport("@angular/compiler-cli/src/ngtsc/annotations/ng_module/src/handler", "NgModuleSymbol")
   @js.native
   open class NgModuleSymbol protected () extends SemanticSymbol {
-    def this(/**
-      * The declaration for this symbol.
-      */
-    decl: ClassDeclaration[DeclarationNode]) = this()
+    def this(decl: ClassDeclarationDeclaratiGetChildAt, hasProviders: Boolean) = this()
     
     def addRemotelyScopedComponent(
       component: SemanticSymbol,
       usedDirectives: js.Array[SemanticReference],
       usedPipes: js.Array[SemanticReference]
     ): Unit = js.native
+    
+    def addTransitiveImportFromStandaloneComponent(importedSymbol: SemanticSymbol): Unit = js.native
+    
+    val hasProviders: Boolean = js.native
     
     @JSName("isEmitAffected")
     def isEmitAffected_MNgModuleSymbol(previousSymbol: SemanticSymbol): Boolean = js.native
@@ -164,17 +172,28 @@ object srcNgtscAnnotationsNgModuleSrcHandlerMod {
     def isTypeCheckApiAffected(previousSymbol: SemanticSymbol): Boolean = js.native
     
     /* private */ var remotelyScopedComponents: Any = js.native
+    
+    /**
+      * `SemanticSymbol`s of the transitive imports of this NgModule which came from imported
+      * standalone components.
+      *
+      * Standalone components are excluded/included in the `InjectorDef` emit output of the NgModule
+      * based on whether the compiler can prove that their transitive imports may contain exported
+      * providers, so a change in this set of symbols may affect the compilation output of this
+      * NgModule.
+      */
+    /* private */ var transitiveImportsFromStandaloneComponents: Any = js.native
   }
   
   trait NgModuleAnalysis extends StObject {
     
     var classMetadata: R3ClassMetadata | Null
     
-    var declarations: js.Array[Reference[ClassDeclaration[DeclarationNode]]]
+    var declarations: js.Array[Reference[ClassDeclarationDeclarati]]
     
     var decorator: typings.typescript.mod.Decorator | Null
     
-    var exports: js.Array[Reference[ClassDeclaration[DeclarationNode]]]
+    var exports: js.Array[Reference[ClassDeclarationDeclarati]]
     
     var fac: R3FactoryMetadata
     
@@ -182,7 +201,7 @@ object srcNgtscAnnotationsNgModuleSrcHandlerMod {
     
     var id: Expression | Null
     
-    var importRefs: js.Array[Reference[ClassDeclaration[DeclarationNode]]]
+    var importRefs: js.Array[Reference[ClassDeclarationDeclarati]]
     
     var imports: js.Array[TopLevelImportedExpression]
     
@@ -192,7 +211,7 @@ object srcNgtscAnnotationsNgModuleSrcHandlerMod {
     
     var providers: typings.typescript.mod.Expression | Null
     
-    var providersRequiringFactory: Set[Reference[ClassDeclaration[DeclarationNode]]] | Null
+    var providersRequiringFactory: Set[Reference[ClassDeclarationDeclarati]] | Null
     
     var rawDeclarations: typings.typescript.mod.Expression | Null
     
@@ -207,11 +226,11 @@ object srcNgtscAnnotationsNgModuleSrcHandlerMod {
   object NgModuleAnalysis {
     
     inline def apply(
-      declarations: js.Array[Reference[ClassDeclaration[DeclarationNode]]],
-      exports: js.Array[Reference[ClassDeclaration[DeclarationNode]]],
+      declarations: js.Array[Reference[ClassDeclarationDeclarati]],
+      exports: js.Array[Reference[ClassDeclarationDeclarati]],
       fac: R3FactoryMetadata,
       factorySymbolName: String,
-      importRefs: js.Array[Reference[ClassDeclaration[DeclarationNode]]],
+      importRefs: js.Array[Reference[ClassDeclarationDeclarati]],
       imports: js.Array[TopLevelImportedExpression],
       inj: OmitR3InjectorMetadataimp,
       mod: R3NgModuleMetadata,
@@ -229,17 +248,17 @@ object srcNgtscAnnotationsNgModuleSrcHandlerMod {
       
       inline def setClassMetadataNull: Self = StObject.set(x, "classMetadata", null)
       
-      inline def setDeclarations(value: js.Array[Reference[ClassDeclaration[DeclarationNode]]]): Self = StObject.set(x, "declarations", value.asInstanceOf[js.Any])
+      inline def setDeclarations(value: js.Array[Reference[ClassDeclarationDeclarati]]): Self = StObject.set(x, "declarations", value.asInstanceOf[js.Any])
       
-      inline def setDeclarationsVarargs(value: Reference[ClassDeclaration[DeclarationNode]]*): Self = StObject.set(x, "declarations", js.Array(value*))
+      inline def setDeclarationsVarargs(value: Reference[ClassDeclarationDeclarati]*): Self = StObject.set(x, "declarations", js.Array(value*))
       
       inline def setDecorator(value: typings.typescript.mod.Decorator): Self = StObject.set(x, "decorator", value.asInstanceOf[js.Any])
       
       inline def setDecoratorNull: Self = StObject.set(x, "decorator", null)
       
-      inline def setExports(value: js.Array[Reference[ClassDeclaration[DeclarationNode]]]): Self = StObject.set(x, "exports", value.asInstanceOf[js.Any])
+      inline def setExports(value: js.Array[Reference[ClassDeclarationDeclarati]]): Self = StObject.set(x, "exports", value.asInstanceOf[js.Any])
       
-      inline def setExportsVarargs(value: Reference[ClassDeclaration[DeclarationNode]]*): Self = StObject.set(x, "exports", js.Array(value*))
+      inline def setExportsVarargs(value: Reference[ClassDeclarationDeclarati]*): Self = StObject.set(x, "exports", js.Array(value*))
       
       inline def setFac(value: R3FactoryMetadata): Self = StObject.set(x, "fac", value.asInstanceOf[js.Any])
       
@@ -249,9 +268,9 @@ object srcNgtscAnnotationsNgModuleSrcHandlerMod {
       
       inline def setIdNull: Self = StObject.set(x, "id", null)
       
-      inline def setImportRefs(value: js.Array[Reference[ClassDeclaration[DeclarationNode]]]): Self = StObject.set(x, "importRefs", value.asInstanceOf[js.Any])
+      inline def setImportRefs(value: js.Array[Reference[ClassDeclarationDeclarati]]): Self = StObject.set(x, "importRefs", value.asInstanceOf[js.Any])
       
-      inline def setImportRefsVarargs(value: Reference[ClassDeclaration[DeclarationNode]]*): Self = StObject.set(x, "importRefs", js.Array(value*))
+      inline def setImportRefsVarargs(value: Reference[ClassDeclarationDeclarati]*): Self = StObject.set(x, "importRefs", js.Array(value*))
       
       inline def setImports(value: js.Array[TopLevelImportedExpression]): Self = StObject.set(x, "imports", value.asInstanceOf[js.Any])
       
@@ -265,7 +284,7 @@ object srcNgtscAnnotationsNgModuleSrcHandlerMod {
       
       inline def setProvidersNull: Self = StObject.set(x, "providers", null)
       
-      inline def setProvidersRequiringFactory(value: Set[Reference[ClassDeclaration[DeclarationNode]]]): Self = StObject.set(x, "providersRequiringFactory", value.asInstanceOf[js.Any])
+      inline def setProvidersRequiringFactory(value: Set[Reference[ClassDeclarationDeclarati]]): Self = StObject.set(x, "providersRequiringFactory", value.asInstanceOf[js.Any])
       
       inline def setProvidersRequiringFactoryNull: Self = StObject.set(x, "providersRequiringFactory", null)
       
@@ -315,14 +334,14 @@ object srcNgtscAnnotationsNgModuleSrcHandlerMod {
     
     var hasModuleWithProviders: Boolean
     
-    var resolvedReferences: js.Array[Reference[ClassDeclaration[DeclarationNode]]]
+    var resolvedReferences: js.Array[Reference[ClassDeclarationDeclarati]]
   }
   object TopLevelImportedExpression {
     
     inline def apply(
       expression: typings.typescript.mod.Expression,
       hasModuleWithProviders: Boolean,
-      resolvedReferences: js.Array[Reference[ClassDeclaration[DeclarationNode]]]
+      resolvedReferences: js.Array[Reference[ClassDeclarationDeclarati]]
     ): TopLevelImportedExpression = {
       val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], hasModuleWithProviders = hasModuleWithProviders.asInstanceOf[js.Any], resolvedReferences = resolvedReferences.asInstanceOf[js.Any])
       __obj.asInstanceOf[TopLevelImportedExpression]
@@ -335,9 +354,9 @@ object srcNgtscAnnotationsNgModuleSrcHandlerMod {
       
       inline def setHasModuleWithProviders(value: Boolean): Self = StObject.set(x, "hasModuleWithProviders", value.asInstanceOf[js.Any])
       
-      inline def setResolvedReferences(value: js.Array[Reference[ClassDeclaration[DeclarationNode]]]): Self = StObject.set(x, "resolvedReferences", value.asInstanceOf[js.Any])
+      inline def setResolvedReferences(value: js.Array[Reference[ClassDeclarationDeclarati]]): Self = StObject.set(x, "resolvedReferences", value.asInstanceOf[js.Any])
       
-      inline def setResolvedReferencesVarargs(value: Reference[ClassDeclaration[DeclarationNode]]*): Self = StObject.set(x, "resolvedReferences", js.Array(value*))
+      inline def setResolvedReferencesVarargs(value: Reference[ClassDeclarationDeclarati]*): Self = StObject.set(x, "resolvedReferences", js.Array(value*))
     }
   }
 }

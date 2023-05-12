@@ -41,6 +41,7 @@ import typings.formatjsEcma402Abstract.typesNumberMod.NumberFormatLocaleInternal
 import typings.formatjsEcma402Abstract.typesNumberMod.NumberFormatNotation
 import typings.formatjsEcma402Abstract.typesNumberMod.NumberFormatOptions
 import typings.formatjsEcma402Abstract.typesNumberMod.NumberFormatPart
+import typings.formatjsEcma402Abstract.typesNumberMod.NumberRangeToParts
 import typings.formatjsEcma402Abstract.typesNumberMod.RawNumberFormatResult
 import typings.formatjsEcma402Abstract.typesNumberMod.RoundingModeType
 import typings.formatjsEcma402Abstract.typesNumberMod.UnsignedRoundingModeType
@@ -94,6 +95,10 @@ object mod {
   inline def DaysInYear(y: Double): `365` | `366` = ^.asInstanceOf[js.Dynamic].applyDynamic("DaysInYear")(y.asInstanceOf[js.Any]).asInstanceOf[`365` | `366`]
   
   inline def FormatApproximately(numberFormat: NumberFormat, result: js.Array[NumberFormatPart], param2: GetInternalSlots): js.Array[NumberFormatPart] = (^.asInstanceOf[js.Dynamic].applyDynamic("FormatApproximately")(numberFormat.asInstanceOf[js.Any], result.asInstanceOf[js.Any], param2.asInstanceOf[js.Any])).asInstanceOf[js.Array[NumberFormatPart]]
+  
+  inline def FormatNumericRange(numberFormat: NumberFormat, x: Double, y: Double, param3: GetInternalSlots): String = (^.asInstanceOf[js.Dynamic].applyDynamic("FormatNumericRange")(numberFormat.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], param3.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  inline def FormatNumericRangeToParts(numberFormat: NumberFormat, x: Double, y: Double, param3: GetInternalSlots): js.Array[NumberRangeToParts] = (^.asInstanceOf[js.Dynamic].applyDynamic("FormatNumericRangeToParts")(numberFormat.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], param3.asInstanceOf[js.Any])).asInstanceOf[js.Array[NumberRangeToParts]]
   
   inline def FormatNumericToParts(nf: NumberFormat, x: Double, implDetails: GetInternalSlots): js.Array[NumberFormatPart] = (^.asInstanceOf[js.Dynamic].applyDynamic("FormatNumericToParts")(nf.asInstanceOf[js.Any], x.asInstanceOf[js.Any], implDetails.asInstanceOf[js.Any])).asInstanceOf[js.Array[NumberFormatPart]]
   

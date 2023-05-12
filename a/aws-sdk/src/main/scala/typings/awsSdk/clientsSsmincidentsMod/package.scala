@@ -60,6 +60,8 @@ type Integer = Double
 
 type IntegerList = js.Array[Integer]
 
+type Integrations = js.Array[Integration]
+
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.ANALYSIS
   - typings.awsSdk.awsSdkStrings.INCIDENT
@@ -81,6 +83,16 @@ type MetricDefinition = java.lang.String
 type NextToken = java.lang.String
 
 type NotificationTargetSet = js.Array[NotificationTargetItem]
+
+type PagerDutyConfigurationNameString = java.lang.String
+
+type PagerDutyConfigurationSecretIdString = java.lang.String
+
+type PagerDutyIncidentConfigurationServiceIdString = java.lang.String
+
+type PagerDutyIncidentDetailIdString = java.lang.String
+
+type PagerDutyIncidentDetailSecretIdString = java.lang.String
 
 type Policy = java.lang.String
 

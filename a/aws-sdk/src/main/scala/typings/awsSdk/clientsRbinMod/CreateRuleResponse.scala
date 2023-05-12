@@ -17,6 +17,16 @@ trait CreateRuleResponse extends StObject {
   var Identifier: js.UndefOr[RuleIdentifier] = js.undefined
   
   /**
+    * Information about the retention rule lock configuration.
+    */
+  var LockConfiguration: js.UndefOr[typings.awsSdk.clientsRbinMod.LockConfiguration] = js.undefined
+  
+  /**
+    * The lock state for the retention rule.    locked - The retention rule is locked and can't be modified or deleted.    pending_unlock - The retention rule has been unlocked but it is still within the unlock delay period. The retention rule can be modified or deleted only after the unlock delay period has expired.    unlocked - The retention rule is unlocked and it can be modified or deleted by any user with the required permissions.    null - The retention rule has never been locked. Once a retention rule has been locked, it can transition between the locked and unlocked states only; it can never transition back to null.  
+    */
+  var LockState: js.UndefOr[typings.awsSdk.clientsRbinMod.LockState] = js.undefined
+  
+  /**
     * Information about the resource tags used to identify resources that are retained by the retention rule.
     */
   var ResourceTags: js.UndefOr[typings.awsSdk.clientsRbinMod.ResourceTags] = js.undefined
@@ -55,6 +65,14 @@ object CreateRuleResponse {
     inline def setIdentifier(value: RuleIdentifier): Self = StObject.set(x, "Identifier", value.asInstanceOf[js.Any])
     
     inline def setIdentifierUndefined: Self = StObject.set(x, "Identifier", js.undefined)
+    
+    inline def setLockConfiguration(value: LockConfiguration): Self = StObject.set(x, "LockConfiguration", value.asInstanceOf[js.Any])
+    
+    inline def setLockConfigurationUndefined: Self = StObject.set(x, "LockConfiguration", js.undefined)
+    
+    inline def setLockState(value: LockState): Self = StObject.set(x, "LockState", value.asInstanceOf[js.Any])
+    
+    inline def setLockStateUndefined: Self = StObject.set(x, "LockState", js.undefined)
     
     inline def setResourceTags(value: ResourceTags): Self = StObject.set(x, "ResourceTags", value.asInstanceOf[js.Any])
     

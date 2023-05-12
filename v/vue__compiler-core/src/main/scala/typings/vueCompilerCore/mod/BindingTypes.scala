@@ -1,5 +1,6 @@
 package typings.vueCompilerCore.mod
 
+import typings.vueCompilerCore.vueCompilerCoreStrings.`literal-const`
 import typings.vueCompilerCore.vueCompilerCoreStrings.`props-aliased`
 import typings.vueCompilerCore.vueCompilerCoreStrings.`setup-const`
 import typings.vueCompilerCore.vueCompilerCoreStrings.`setup-let`
@@ -23,6 +24,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.vueCompilerCore.vueCompilerCoreStrings.`setup-maybe-ref`
   - typings.vueCompilerCore.vueCompilerCoreStrings.`setup-ref`
   - typings.vueCompilerCore.vueCompilerCoreStrings.options
+  - typings.vueCompilerCore.vueCompilerCoreStrings.`literal-const`
 */
 trait BindingTypes extends StObject
 object BindingTypes {
@@ -31,6 +33,11 @@ object BindingTypes {
     * returned from data()
     */
   inline def DATA: data = "data".asInstanceOf[data]
+  
+  /**
+    * a literal constant, e.g. 'foo', 1, true
+    */
+  inline def LITERAL_CONST: `literal-const` = "literal-const".asInstanceOf[`literal-const`]
   
   /**
     * declared by other options, e.g. computed, inject

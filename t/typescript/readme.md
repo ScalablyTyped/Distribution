@@ -1,7 +1,7 @@
 
 # Scala.js typings for typescript
 
-Typings are for version 4.9.3
+Typings are for version 5.0.4
 
 
 

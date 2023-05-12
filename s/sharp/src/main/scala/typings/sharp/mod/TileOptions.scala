@@ -12,6 +12,9 @@ trait TileOptions extends StObject {
   /** background colour, parsed by the color module, defaults to white without transparency. (optional, default {r:255,g:255,b:255,alpha:1}) */
   var background: js.UndefOr[String | RGBA] = js.undefined
   
+  /** The name of the directory within the zip file when container is `zip`. */
+  var basename: js.UndefOr[String] = js.undefined
+  
   /** Alternative spelling of centre. (optional, default false) */
   var center: js.UndefOr[Boolean] = js.undefined
   
@@ -19,7 +22,7 @@ trait TileOptions extends StObject {
   var centre: js.UndefOr[Boolean] = js.undefined
   
   /** Tile container, with value fs (filesystem) or zip (compressed file). (optional, default 'fs') */
-  var container: js.UndefOr[String] = js.undefined
+  var container: js.UndefOr[TileContainer] = js.undefined
   
   /** How deep to make the pyramid, possible values are "onepixel", "onetile" or "one" (default based on layout) */
   var depth: js.UndefOr[String] = js.undefined
@@ -57,6 +60,10 @@ object TileOptions {
     
     inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
+    inline def setBasename(value: String): Self = StObject.set(x, "basename", value.asInstanceOf[js.Any])
+    
+    inline def setBasenameUndefined: Self = StObject.set(x, "basename", js.undefined)
+    
     inline def setCenter(value: Boolean): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     
     inline def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
@@ -65,7 +72,7 @@ object TileOptions {
     
     inline def setCentreUndefined: Self = StObject.set(x, "centre", js.undefined)
     
-    inline def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: TileContainer): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
     inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     

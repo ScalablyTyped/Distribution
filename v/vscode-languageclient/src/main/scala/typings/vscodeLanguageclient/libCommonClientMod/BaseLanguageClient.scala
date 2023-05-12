@@ -84,7 +84,13 @@ open class BaseLanguageClient protected ()
   
   /* private */ val _p2c: Any = js.native
   
+  /* private */ val _pendingChangeDelayer: Any = js.native
+  
+  /* private */ val _pendingChangeSemaphore: Any = js.native
+  
   /* private */ val _pendingNotificationHandlers: Any = js.native
+  
+  /* private */ val _pendingOpenNotifications: Any = js.native
   
   /* private */ val _pendingProgressHandlers: Any = js.native
   
@@ -148,15 +154,13 @@ open class BaseLanguageClient protected ()
   
   /* protected */ def fillInitializeParams(params: InitializeParams): Unit = js.native
   
-  /* private */ var forceDocumentSync: Any = js.native
-  
   /* protected */ def getLocale(): String = js.native
   
   /* private */ var getPublicState: Any = js.native
   
   /* private */ var handleApplyWorkspaceEdit: Any = js.native
   
-  /* protected */ def handleConnectionClosed(): Unit = js.native
+  /* protected */ def handleConnectionClosed(): js.Promise[Unit] = js.native
   
   /* private */ var handleConnectionError: Any = js.native
   
@@ -211,6 +215,8 @@ open class BaseLanguageClient protected ()
   
   def registerProposedFeatures(): Unit = js.native
   
+  /* private */ var sendPendingFullTextDocumentChanges: Any = js.native
+  
   def sendProgress[P](`type`: ProgressType[P], token: String, value: P): js.Promise[Unit] = js.native
   def sendProgress[P](`type`: ProgressType[P], token: Double, value: P): js.Promise[Unit] = js.native
   
@@ -230,6 +236,8 @@ open class BaseLanguageClient protected ()
   
   /* private */ var triggerDiagnosticQueue: Any = js.native
   
+  /* private */ var triggerPendingChangeDelivery: Any = js.native
+  
   /* private */ var workDiagnosticQueue: Any = js.native
   
   /* private */ var workspaceEditLock: Any = js.native
@@ -240,6 +248,11 @@ object BaseLanguageClient {
   @JSImport("vscode-languageclient/lib/common/client", "BaseLanguageClient")
   @js.native
   val ^ : js.Any = js.native
+  
+  @JSImport("vscode-languageclient/lib/common/client", "BaseLanguageClient.CancellableResolveCalls")
+  @js.native
+  def CancellableResolveCalls: Any = js.native
+  inline def CancellableResolveCalls_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CancellableResolveCalls")(x.asInstanceOf[js.Any])
   
   @JSImport("vscode-languageclient/lib/common/client", "BaseLanguageClient.RequestsToCancelOnContentModified")
   @js.native

@@ -26,12 +26,12 @@ trait OpenSearch extends Service {
   ): Request[AcceptInboundConnectionResponse, AWSError] = js.native
   
   /**
-    * Attaches tags to an existing Amazon OpenSearch Service domain. Tags are a set of case-sensitive key-value pairs. An domain can have up to 10 tags. For more information, see  Tagging Amazon OpenSearch Service domains.
+    * Attaches tags to an existing Amazon OpenSearch Service domain. Tags are a set of case-sensitive key-value pairs. A domain can have up to 10 tags. For more information, see Tagging Amazon OpenSearch Service domains.
     */
   def addTags(): Request[js.Object, AWSError] = js.native
   def addTags(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Attaches tags to an existing Amazon OpenSearch Service domain. Tags are a set of case-sensitive key-value pairs. An domain can have up to 10 tags. For more information, see  Tagging Amazon OpenSearch Service domains.
+    * Attaches tags to an existing Amazon OpenSearch Service domain. Tags are a set of case-sensitive key-value pairs. A domain can have up to 10 tags. For more information, see Tagging Amazon OpenSearch Service domains.
     */
   def addTags(params: AddTagsRequest): Request[js.Object, AWSError] = js.native
   def addTags(params: AddTagsRequest, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
@@ -264,6 +264,34 @@ trait OpenSearch extends Service {
   ): Request[DescribeDomainConfigResponse, AWSError] = js.native
   
   /**
+    * Returns information about domain and node health, the standby Availability Zone, number of nodes per Availability Zone, and shard count per node.
+    */
+  def describeDomainHealth(): Request[DescribeDomainHealthResponse, AWSError] = js.native
+  def describeDomainHealth(callback: js.Function2[/* err */ AWSError, /* data */ DescribeDomainHealthResponse, Unit]): Request[DescribeDomainHealthResponse, AWSError] = js.native
+  /**
+    * Returns information about domain and node health, the standby Availability Zone, number of nodes per Availability Zone, and shard count per node.
+    */
+  def describeDomainHealth(params: DescribeDomainHealthRequest): Request[DescribeDomainHealthResponse, AWSError] = js.native
+  def describeDomainHealth(
+    params: DescribeDomainHealthRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeDomainHealthResponse, Unit]
+  ): Request[DescribeDomainHealthResponse, AWSError] = js.native
+  
+  /**
+    * Returns information about domain and nodes, including data nodes, master nodes, ultrawarm nodes, Availability Zone(s), standby nodes, node configurations, and node states.
+    */
+  def describeDomainNodes(): Request[DescribeDomainNodesResponse, AWSError] = js.native
+  def describeDomainNodes(callback: js.Function2[/* err */ AWSError, /* data */ DescribeDomainNodesResponse, Unit]): Request[DescribeDomainNodesResponse, AWSError] = js.native
+  /**
+    * Returns information about domain and nodes, including data nodes, master nodes, ultrawarm nodes, Availability Zone(s), standby nodes, node configurations, and node states.
+    */
+  def describeDomainNodes(params: DescribeDomainNodesRequest): Request[DescribeDomainNodesResponse, AWSError] = js.native
+  def describeDomainNodes(
+    params: DescribeDomainNodesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeDomainNodesResponse, Unit]
+  ): Request[DescribeDomainNodesResponse, AWSError] = js.native
+  
+  /**
     * Returns domain configuration information about the specified Amazon OpenSearch Service domains.
     */
   def describeDomains(): Request[DescribeDomainsResponse, AWSError] = js.native
@@ -276,6 +304,20 @@ trait OpenSearch extends Service {
     params: DescribeDomainsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeDomainsResponse, Unit]
   ): Request[DescribeDomainsResponse, AWSError] = js.native
+  
+  /**
+    * Describes the progress of a pre-update dry run analysis on an Amazon OpenSearch Service domain. For more information, see Determining whether a change will cause a blue/green deployment.
+    */
+  def describeDryRunProgress(): Request[DescribeDryRunProgressResponse, AWSError] = js.native
+  def describeDryRunProgress(callback: js.Function2[/* err */ AWSError, /* data */ DescribeDryRunProgressResponse, Unit]): Request[DescribeDryRunProgressResponse, AWSError] = js.native
+  /**
+    * Describes the progress of a pre-update dry run analysis on an Amazon OpenSearch Service domain. For more information, see Determining whether a change will cause a blue/green deployment.
+    */
+  def describeDryRunProgress(params: DescribeDryRunProgressRequest): Request[DescribeDryRunProgressResponse, AWSError] = js.native
+  def describeDryRunProgress(
+    params: DescribeDryRunProgressRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeDryRunProgressResponse, Unit]
+  ): Request[DescribeDryRunProgressResponse, AWSError] = js.native
   
   /**
     * Lists all the inbound cross-cluster search connections for a destination (remote) Amazon OpenSearch Service domain. For more information, see Cross-cluster search for Amazon OpenSearch Service.
@@ -406,12 +448,12 @@ trait OpenSearch extends Service {
   ): Request[GetCompatibleVersionsResponse, AWSError] = js.native
   
   /**
-    * Returns a list of Amazon OpenSearch Service package versions, along with their creation time and commit message. For more information, see Custom packages for Amazon OpenSearch Service.
+    * Returns a list of Amazon OpenSearch Service package versions, along with their creation time, commit message, and plugin properties (if the package is a zip plugin package). For more information, see Custom packages for Amazon OpenSearch Service.
     */
   def getPackageVersionHistory(): Request[GetPackageVersionHistoryResponse, AWSError] = js.native
   def getPackageVersionHistory(callback: js.Function2[/* err */ AWSError, /* data */ GetPackageVersionHistoryResponse, Unit]): Request[GetPackageVersionHistoryResponse, AWSError] = js.native
   /**
-    * Returns a list of Amazon OpenSearch Service package versions, along with their creation time and commit message. For more information, see Custom packages for Amazon OpenSearch Service.
+    * Returns a list of Amazon OpenSearch Service package versions, along with their creation time, commit message, and plugin properties (if the package is a zip plugin package). For more information, see Custom packages for Amazon OpenSearch Service.
     */
   def getPackageVersionHistory(params: GetPackageVersionHistoryRequest): Request[GetPackageVersionHistoryResponse, AWSError] = js.native
   def getPackageVersionHistory(
@@ -502,6 +544,20 @@ trait OpenSearch extends Service {
     params: ListPackagesForDomainRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListPackagesForDomainResponse, Unit]
   ): Request[ListPackagesForDomainResponse, AWSError] = js.native
+  
+  /**
+    * Retrieves a list of configuration changes that are scheduled for a domain. These changes can be service software updates or blue/green Auto-Tune enhancements.
+    */
+  def listScheduledActions(): Request[ListScheduledActionsResponse, AWSError] = js.native
+  def listScheduledActions(callback: js.Function2[/* err */ AWSError, /* data */ ListScheduledActionsResponse, Unit]): Request[ListScheduledActionsResponse, AWSError] = js.native
+  /**
+    * Retrieves a list of configuration changes that are scheduled for a domain. These changes can be service software updates or blue/green Auto-Tune enhancements.
+    */
+  def listScheduledActions(params: ListScheduledActionsRequest): Request[ListScheduledActionsResponse, AWSError] = js.native
+  def listScheduledActions(
+    params: ListScheduledActionsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListScheduledActionsResponse, Unit]
+  ): Request[ListScheduledActionsResponse, AWSError] = js.native
   
   /**
     * Returns all resource tags for an Amazon OpenSearch Service domain. For more information, see Tagging Amazon OpenSearch Service domains.
@@ -643,12 +699,12 @@ trait OpenSearch extends Service {
   ): Request[StartServiceSoftwareUpdateResponse, AWSError] = js.native
   
   /**
-    * Modifies the cluster configuration of the specified Amazon OpenSearch Service domain.
+    * Modifies the cluster configuration of the specified Amazon OpenSearch Service domain.sl
     */
   def updateDomainConfig(): Request[UpdateDomainConfigResponse, AWSError] = js.native
   def updateDomainConfig(callback: js.Function2[/* err */ AWSError, /* data */ UpdateDomainConfigResponse, Unit]): Request[UpdateDomainConfigResponse, AWSError] = js.native
   /**
-    * Modifies the cluster configuration of the specified Amazon OpenSearch Service domain.
+    * Modifies the cluster configuration of the specified Amazon OpenSearch Service domain.sl
     */
   def updateDomainConfig(params: UpdateDomainConfigRequest): Request[UpdateDomainConfigResponse, AWSError] = js.native
   def updateDomainConfig(
@@ -669,6 +725,20 @@ trait OpenSearch extends Service {
     params: UpdatePackageRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdatePackageResponse, Unit]
   ): Request[UpdatePackageResponse, AWSError] = js.native
+  
+  /**
+    * Reschedules a planned domain configuration change for a later time. This change can be a scheduled service software update or a blue/green Auto-Tune enhancement.
+    */
+  def updateScheduledAction(): Request[UpdateScheduledActionResponse, AWSError] = js.native
+  def updateScheduledAction(callback: js.Function2[/* err */ AWSError, /* data */ UpdateScheduledActionResponse, Unit]): Request[UpdateScheduledActionResponse, AWSError] = js.native
+  /**
+    * Reschedules a planned domain configuration change for a later time. This change can be a scheduled service software update or a blue/green Auto-Tune enhancement.
+    */
+  def updateScheduledAction(params: UpdateScheduledActionRequest): Request[UpdateScheduledActionResponse, AWSError] = js.native
+  def updateScheduledAction(
+    params: UpdateScheduledActionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateScheduledActionResponse, Unit]
+  ): Request[UpdateScheduledActionResponse, AWSError] = js.native
   
   /**
     * Modifies an Amazon OpenSearch Service-managed interface VPC endpoint.

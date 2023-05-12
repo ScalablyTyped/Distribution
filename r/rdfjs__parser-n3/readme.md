@@ -1,7 +1,7 @@
 
 # Scala.js typings for rdfjs__parser-n3
 
-Typings are for version 1.1
+Typings are for version 2.0
 
 ## Library description:
 N3 parser that implements the RDF/JS Sink interface

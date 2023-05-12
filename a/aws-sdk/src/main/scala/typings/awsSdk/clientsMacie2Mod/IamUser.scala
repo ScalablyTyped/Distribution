@@ -22,7 +22,7 @@ trait IamUser extends StObject {
   var principalId: js.UndefOr[string] = js.undefined
   
   /**
-    * The user name of the IAM user who performed the action.
+    * The username of the IAM user who performed the action.
     */
   var userName: js.UndefOr[string] = js.undefined
 }

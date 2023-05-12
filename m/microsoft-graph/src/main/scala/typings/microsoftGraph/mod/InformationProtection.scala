@@ -4,9 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait InformationProtection
-  extends StObject
-     with Entity {
+trait InformationProtection extends StObject {
   
   var bitlocker: js.UndefOr[NullableOption[Bitlocker]] = js.undefined
   

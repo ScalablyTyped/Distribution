@@ -15,7 +15,7 @@ import typings.fpTs.libExtendMod.Extend1
 import typings.fpTs.libFilterableMod.Filterable1
 import typings.fpTs.libFoldableMod.Foldable1
 import typings.fpTs.libFromEitherMod.FromEither1
-import typings.fpTs.libFunctionMod.Lazy
+import typings.fpTs.libFunctionMod.LazyArg
 import typings.fpTs.libFunctorMod.Functor1
 import typings.fpTs.libMonadMod.Monad1
 import typings.fpTs.libMonadThrowMod.MonadThrow1
@@ -128,9 +128,9 @@ object libOptionMod {
   @js.native
   val Zero_ : Zero1[typings.fpTs.libOptionMod.URI] = js.native
   
-  inline def alt[A](that: Lazy[Option_[A]]): js.Function1[/* fa */ Option_[A], Option_[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("alt")(that.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Option_[A], Option_[A]]]
+  inline def alt[A](that: LazyArg[Option_[A]]): js.Function1[/* fa */ Option_[A], Option_[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("alt")(that.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Option_[A], Option_[A]]]
   
-  inline def altW[B](that: Lazy[Option_[B]]): js.Function1[/* fa */ Option_[Any], Option_[Any | B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("altW")(that.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Option_[Any], Option_[Any | B]]]
+  inline def altW[B](that: LazyArg[Option_[B]]): js.Function1[/* fa */ Option_[Any], Option_[Any | B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("altW")(that.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Option_[Any], Option_[Any | B]]]
   
   inline def ap[A](fa: Option_[A]): js.Function1[/* fab */ Option_[js.Function1[/* a */ A, Any]], Option_[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ap")(fa.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fab */ Option_[js.Function1[/* a */ A, Any]], Option_[Any]]]
   
@@ -202,13 +202,16 @@ object libOptionMod {
   
   inline def flap[A](a: A): js.Function1[/* fab */ Option_[js.Function1[/* a */ A, Any]], Option_[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("flap")(a.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fab */ Option_[js.Function1[/* a */ A, Any]], Option_[Any]]]
   
+  inline def flatMap[A, B](f: js.Function1[/* a */ A, Option_[B]]): js.Function1[/* ma */ Option_[A], Option_[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatMap")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ Option_[A], Option_[B]]]
+  inline def flatMap[A, B](ma: Option_[A], f: js.Function1[/* a */ A, Option_[B]]): Option_[B] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatMap")(ma.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[Option_[B]]
+  
   inline def flatten[A](mma: Option_[Option_[A]]): Option_[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(mma.asInstanceOf[js.Any]).asInstanceOf[Option_[A]]
   
-  inline def fold[A, B](onNone: Lazy[B], onSome: js.Function1[/* a */ A, B]): js.Function1[/* ma */ Option_[A], B] = (^.asInstanceOf[js.Dynamic].applyDynamic("fold")(onNone.asInstanceOf[js.Any], onSome.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* ma */ Option_[A], B]]
+  inline def fold[A, B](onNone: LazyArg[B], onSome: js.Function1[/* a */ A, B]): js.Function1[/* ma */ Option_[A], B] = (^.asInstanceOf[js.Dynamic].applyDynamic("fold")(onNone.asInstanceOf[js.Any], onSome.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* ma */ Option_[A], B]]
   
   inline def foldMap[M](M: Monoid[M]): js.Function1[/* f */ js.Function1[/* a */ Any, M], js.Function1[/* fa */ Option_[Any], M]] = ^.asInstanceOf[js.Dynamic].applyDynamic("foldMap")(M.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* f */ js.Function1[/* a */ Any, M], js.Function1[/* fa */ Option_[Any], M]]]
   
-  inline def foldW[B, A, C](onNone: Lazy[B], onSome: js.Function1[/* a */ A, C]): js.Function1[/* ma */ Option_[A], B | C] = (^.asInstanceOf[js.Dynamic].applyDynamic("foldW")(onNone.asInstanceOf[js.Any], onSome.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* ma */ Option_[A], B | C]]
+  inline def foldW[B, A, C](onNone: LazyArg[B], onSome: js.Function1[/* a */ A, C]): js.Function1[/* ma */ Option_[A], B | C] = (^.asInstanceOf[js.Dynamic].applyDynamic("foldW")(onNone.asInstanceOf[js.Any], onSome.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* ma */ Option_[A], B | C]]
   
   inline def fromEither[A](fa: Either_[Any, A]): Option_[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEither")(fa.asInstanceOf[js.Any]).asInstanceOf[Option_[A]]
   
@@ -236,9 +239,9 @@ object libOptionMod {
   
   inline def getMonoid[A](S: Semigroup[A]): Monoid[Option_[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMonoid")(S.asInstanceOf[js.Any]).asInstanceOf[Monoid[Option_[A]]]
   
-  inline def getOrElse[A](onNone: Lazy[A]): js.Function1[/* ma */ Option_[A], A] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrElse")(onNone.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ Option_[A], A]]
+  inline def getOrElse[A](onNone: LazyArg[A]): js.Function1[/* ma */ Option_[A], A] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrElse")(onNone.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ Option_[A], A]]
   
-  inline def getOrElseW[B](onNone: Lazy[B]): js.Function1[/* ma */ Option_[Any], B | Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrElseW")(onNone.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ Option_[Any], B | Any]]
+  inline def getOrElseW[B](onNone: LazyArg[B]): js.Function1[/* ma */ Option_[Any], B | Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrElseW")(onNone.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ Option_[Any], B | Any]]
   
   inline def getOrd[A](O: Ord_[A]): Ord_[Option_[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrd")(O.asInstanceOf[js.Any]).asInstanceOf[Ord_[Option_[A]]]
   
@@ -270,9 +273,9 @@ object libOptionMod {
   
   inline def mapNullable[A, B](f: js.Function1[/* a */ A, js.UndefOr[B | Null]]): js.Function1[/* ma */ Option_[A], Option_[NonNullable[B]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("mapNullable")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ Option_[A], Option_[NonNullable[B]]]]
   
-  inline def `match`[A, B](onNone: Lazy[B], onSome: js.Function1[/* a */ A, B]): js.Function1[/* ma */ Option_[A], B] = (^.asInstanceOf[js.Dynamic].applyDynamic("match")(onNone.asInstanceOf[js.Any], onSome.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* ma */ Option_[A], B]]
+  inline def `match`[A, B](onNone: LazyArg[B], onSome: js.Function1[/* a */ A, B]): js.Function1[/* ma */ Option_[A], B] = (^.asInstanceOf[js.Dynamic].applyDynamic("match")(onNone.asInstanceOf[js.Any], onSome.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* ma */ Option_[A], B]]
   
-  inline def matchW[B, A, C](onNone: Lazy[B], onSome: js.Function1[/* a */ A, C]): js.Function1[/* ma */ Option_[A], B | C] = (^.asInstanceOf[js.Dynamic].applyDynamic("matchW")(onNone.asInstanceOf[js.Any], onSome.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* ma */ Option_[A], B | C]]
+  inline def matchW[B, A, C](onNone: LazyArg[B], onSome: js.Function1[/* a */ A, C]): js.Function1[/* ma */ Option_[A], B | C] = (^.asInstanceOf[js.Dynamic].applyDynamic("matchW")(onNone.asInstanceOf[js.Any], onSome.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* ma */ Option_[A], B | C]]
   
   @JSImport("fp-ts/lib/Option", "none")
   @js.native
@@ -304,6 +307,9 @@ object libOptionMod {
   
   inline def some[A](a: A): Option_[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("some")(a.asInstanceOf[js.Any]).asInstanceOf[Option_[A]]
   
+  inline def tap[A, _underscore](f: js.Function1[/* a */ A, Option_[_underscore]]): js.Function1[/* self */ Option_[A], Option_[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("tap")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* self */ Option_[A], Option_[A]]]
+  inline def tap[A, _underscore](self: Option_[A], f: js.Function1[/* a */ A, Option_[_underscore]]): Option_[A] = (^.asInstanceOf[js.Dynamic].applyDynamic("tap")(self.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[Option_[A]]
+  
   @JSImport("fp-ts/lib/Option", "throwError")
   @js.native
   val throwError: js.Function1[
@@ -327,7 +333,7 @@ object libOptionMod {
   
   inline def traverseReadonlyNonEmptyArrayWithIndex[A, B](f: js.Function2[/* index */ Double, /* a */ A, Option_[B]]): js.Function1[/* as */ ReadonlyNonEmptyArray_[A], Option_[ReadonlyNonEmptyArray_[B]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("traverseReadonlyNonEmptyArrayWithIndex")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* as */ ReadonlyNonEmptyArray_[A], Option_[ReadonlyNonEmptyArray_[B]]]]
   
-  inline def tryCatch[A](f: Lazy[A]): Option_[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("tryCatch")(f.asInstanceOf[js.Any]).asInstanceOf[Option_[A]]
+  inline def tryCatch[A](f: LazyArg[A]): Option_[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("tryCatch")(f.asInstanceOf[js.Any]).asInstanceOf[Option_[A]]
   
   inline def tryCatchK[A /* <: js.Array[Any] */, B](f: js.Function1[/* a */ A, B]): js.Function1[/* a */ A, Option_[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("tryCatchK")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* a */ A, Option_[B]]]
   

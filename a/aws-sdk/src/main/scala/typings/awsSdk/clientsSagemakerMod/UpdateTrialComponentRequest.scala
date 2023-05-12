@@ -17,7 +17,7 @@ trait UpdateTrialComponentRequest extends StObject {
   var EndTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * Replaces all of the component's input artifacts with the specified artifacts.
+    * Replaces all of the component's input artifacts with the specified artifacts or adds new input artifacts. Existing input artifacts are replaced if the trial component is updated with an identical input artifact key.
     */
   var InputArtifacts: js.UndefOr[TrialComponentArtifacts] = js.undefined
   
@@ -27,7 +27,7 @@ trait UpdateTrialComponentRequest extends StObject {
   var InputArtifactsToRemove: js.UndefOr[ListTrialComponentKey256] = js.undefined
   
   /**
-    * Replaces all of the component's output artifacts with the specified artifacts.
+    * Replaces all of the component's output artifacts with the specified artifacts or adds new output artifacts. Existing output artifacts are replaced if the trial component is updated with an identical output artifact key.
     */
   var OutputArtifacts: js.UndefOr[TrialComponentArtifacts] = js.undefined
   
@@ -37,7 +37,7 @@ trait UpdateTrialComponentRequest extends StObject {
   var OutputArtifactsToRemove: js.UndefOr[ListTrialComponentKey256] = js.undefined
   
   /**
-    * Replaces all of the component's hyperparameters with the specified hyperparameters.
+    * Replaces all of the component's hyperparameters with the specified hyperparameters or add new hyperparameters. Existing hyperparameters are replaced if the trial component is updated with an identical hyperparameter key.
     */
   var Parameters: js.UndefOr[TrialComponentParameters] = js.undefined
   

@@ -14,6 +14,8 @@ object sapMSelectionDetailsItemMod {
   @JSImport("sap/m/SelectionDetailsItem", JSImport.Default)
   @js.native
   /**
+    * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+    *
     * Constructor for a new SelectionDetailsItem.
     *
     * Accepts an object literal `mSettings` that defines initial property values, aggregated and associated
@@ -58,6 +60,8 @@ object sapMSelectionDetailsItemMod {
     val ^ : js.Any = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Creates a new subclass of class sap.m.SelectionDetailsItem with name `sClassName` and enriches it with
       * the information contained in `oClassInfo`.
       *
@@ -111,6 +115,8 @@ object sapMSelectionDetailsItemMod {
     ): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(sClassName.asInstanceOf[js.Any], oClassInfo.asInstanceOf[js.Any], FNMetaImpl.asInstanceOf[js.Any])).asInstanceOf[js.Function]
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Returns a metadata object for class sap.m.SelectionDetailsItem.
       *
       * @returns Metadata object describing this class
@@ -123,6 +129,8 @@ object sapMSelectionDetailsItemMod {
     extends typings.openui5.sapUiCoreElementMod.default {
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Adds some action to the aggregation {@link #getActions actions}.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -135,6 +143,8 @@ object sapMSelectionDetailsItemMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Adds some line to the aggregation {@link #getLines lines}.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -147,6 +157,8 @@ object sapMSelectionDetailsItemMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Binds aggregation {@link #getLines lines} to model data.
       *
       * See {@link sap.ui.base.ManagedObject#bindAggregation ManagedObject.bindAggregation} for a detailed description
@@ -160,6 +172,8 @@ object sapMSelectionDetailsItemMod {
     oBindingInfo: AggregationBindingInfo): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Destroys all the actions in the aggregation {@link #getActions actions}.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -167,6 +181,8 @@ object sapMSelectionDetailsItemMod {
     def destroyActions(): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Destroys all the lines in the aggregation {@link #getLines lines}.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -174,6 +190,8 @@ object sapMSelectionDetailsItemMod {
     def destroyLines(): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Gets content of aggregation {@link #getActions actions}.
       *
       * Contains custom actions shown below the main content of the item.
@@ -181,6 +199,8 @@ object sapMSelectionDetailsItemMod {
     def getActions(): js.Array[typings.openui5.sapUiCoreItemMod.default] = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Gets current value of property {@link #getEnableNav enableNav}.
       *
       * Determines whether or not the item is active and a navigation event is triggered on press.
@@ -192,6 +212,8 @@ object sapMSelectionDetailsItemMod {
     def getEnableNav(): Boolean = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Returns the public facade of the SelectionDetailsItem for non inner framework usages.
       *
       * @returns The reduced facade for outer framework usages.
@@ -199,6 +221,8 @@ object sapMSelectionDetailsItemMod {
     def getFacade(): typings.openui5.sapUiBaseInterfaceMod.default = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Gets content of aggregation {@link #getLines lines}.
       *
       * Contains a record of information about, for example, measures and dimensions. These entries are usually
@@ -207,6 +231,8 @@ object sapMSelectionDetailsItemMod {
     def getLines(): js.Array[typings.openui5.sapMSelectionDetailsItemLineMod.default] = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Checks for the provided `sap.ui.core.Item` in the aggregation {@link #getActions actions}. and returns
       * its index if found or -1 otherwise.
       *
@@ -220,6 +246,8 @@ object sapMSelectionDetailsItemMod {
     ): int = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Checks for the provided `sap.m.SelectionDetailsItemLine` in the aggregation {@link #getLines lines}.
       * and returns its index if found or -1 otherwise.
       *
@@ -233,6 +261,8 @@ object sapMSelectionDetailsItemMod {
     ): int = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Inserts a action into the aggregation {@link #getActions actions}.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -251,6 +281,8 @@ object sapMSelectionDetailsItemMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Inserts a line into the aggregation {@link #getLines lines}.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -273,6 +305,8 @@ object sapMSelectionDetailsItemMod {
       */
     vAction: String): typings.openui5.sapUiCoreItemMod.default | Null = js.native
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Removes a action from the aggregation {@link #getActions actions}.
       *
       * @returns The removed action or `null`
@@ -289,6 +323,8 @@ object sapMSelectionDetailsItemMod {
     ): typings.openui5.sapUiCoreItemMod.default | Null = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Removes all the controls from the aggregation {@link #getActions actions}.
       *
       * Additionally, it unregisters them from the hosting UIArea.
@@ -298,6 +334,8 @@ object sapMSelectionDetailsItemMod {
     def removeAllActions(): js.Array[typings.openui5.sapUiCoreItemMod.default] = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Removes all the controls from the aggregation {@link #getLines lines}.
       *
       * Additionally, it unregisters them from the hosting UIArea.
@@ -311,6 +349,8 @@ object sapMSelectionDetailsItemMod {
       */
     vLine: String): typings.openui5.sapMSelectionDetailsItemLineMod.default | Null = js.native
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Removes a line from the aggregation {@link #getLines lines}.
       *
       * @returns The removed line or `null`
@@ -327,6 +367,8 @@ object sapMSelectionDetailsItemMod {
     ): typings.openui5.sapMSelectionDetailsItemLineMod.default | Null = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Sets a new value for property {@link #getEnableNav enableNav}.
       *
       * Determines whether or not the item is active and a navigation event is triggered on press.
@@ -344,6 +386,8 @@ object sapMSelectionDetailsItemMod {
     bEnableNav: Boolean): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Unbinds aggregation {@link #getLines lines} from model data.
       *
       * @returns Reference to `this` in order to allow method chaining

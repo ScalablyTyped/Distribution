@@ -52,7 +52,7 @@ trait BarCommonProps[RawDatum] extends StObject {
   
   var indexScale: ScaleBandSpec
   
-  var initialHiddenIds: js.Array[String]
+  var initialHiddenIds: js.Array[String | Double]
   
   var innerPadding: Double
   
@@ -113,7 +113,7 @@ object BarCommonProps {
     groupMode: grouped | stacked,
     indexBy: PropertyAccessor[RawDatum, String],
     indexScale: ScaleBandSpec,
-    initialHiddenIds: js.Array[String],
+    initialHiddenIds: js.Array[String | Double],
     innerPadding: Double,
     isInteractive: Boolean,
     keys: js.Array[String],
@@ -184,9 +184,9 @@ object BarCommonProps {
     
     inline def setIndexScale(value: ScaleBandSpec): Self = StObject.set(x, "indexScale", value.asInstanceOf[js.Any])
     
-    inline def setInitialHiddenIds(value: js.Array[String]): Self = StObject.set(x, "initialHiddenIds", value.asInstanceOf[js.Any])
+    inline def setInitialHiddenIds(value: js.Array[String | Double]): Self = StObject.set(x, "initialHiddenIds", value.asInstanceOf[js.Any])
     
-    inline def setInitialHiddenIdsVarargs(value: String*): Self = StObject.set(x, "initialHiddenIds", js.Array(value*))
+    inline def setInitialHiddenIdsVarargs(value: (String | Double)*): Self = StObject.set(x, "initialHiddenIds", js.Array(value*))
     
     inline def setInnerPadding(value: Double): Self = StObject.set(x, "innerPadding", value.asInstanceOf[js.Any])
     

@@ -12,7 +12,7 @@ trait ListEntityRecognizerSummariesResponse extends StObject {
   var EntityRecognizerSummariesList: js.UndefOr[typings.awsSdk.clientsComprehendMod.EntityRecognizerSummariesList] = js.undefined
   
   /**
-    * The list entity recognizer summaries.
+    * Identifies the next page of results to return.
     */
   var NextToken: js.UndefOr[String] = js.undefined
 }

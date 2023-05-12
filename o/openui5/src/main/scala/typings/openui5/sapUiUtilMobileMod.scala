@@ -60,17 +60,17 @@ object sapUiUtilMobileMod extends Shortcut {
       * be removed. When at least one home icon is given, all existing home icons will be removed and new home
       * icon tags for all four resolutions will be created.
       *
-      * The home icons must be in PNG format and given in different sizes for iPad/iPhone with and without retina
-      * display. The favicon is used in the browser and for desktop shortcuts and should optimally be in ICO
-      * format: ICO files can contain different image sizes for different usage locations. E.g. a 16x16px version
-      * is used inside browsers.
+      * The home icons must be in PNG format and given in different sizes for iPad/iPhone with low and high pixel
+      * density display. The favicon is used in the browser and for desktop shortcuts and should optimally be
+      * in ICO format: ICO files can contain different image sizes for different usage locations. E.g. a 16x16px
+      * version is used inside browsers.
       *
       * All icons are given in an an object holding icon URLs and other settings. The properties of this object
       * are:
-      * 	 - phone: a 60x60 pixel version for non-retina iPhones
-      * 	 - tablet: a 76x76 pixel version for non-retina iPads
-      * 	 - phone@2: a 120x120 pixel version for retina iPhones
-      * 	 - tablet@2: a 152x152 pixel version for retina iPads
+      * 	 - phone: a 120x120 pixel version for iPhones with low pixel density
+      * 	 - tablet: a 152x152 pixel version for iPads with low pixel density
+      * 	 - phone@2: a 180x180 pixel version for iPhones with high pixel density
+      * 	 - tablet@2: a 167x167 pixel version for iPads with high pixel density
       * 	 - precomposed: whether the home icons already have some glare effect (otherwise iOS will add it) (default:
       * 			false)
       * 	 - favicon: the ICO file to be used inside the browser and for desktop shortcuts
@@ -79,10 +79,10 @@ object sapUiUtilMobileMod extends Shortcut {
       * ```javascript
       *
       * {
-      *    'phone':'phone-icon_60x60.png',
-      *    'phone@2':'phone-retina_120x120.png',
-      *    'tablet':'tablet-icon_76x76.png',
-      *    'tablet@2':'tablet-retina_152x152.png',
+      *    'phone':'phone-icon_120x120.png',
+      *    'phone@2':'phone-retina_180x180.png',
+      *    'tablet':'tablet-icon_152x152.png',
+      *    'tablet@2':'tablet-retina_167x167.png',
       *    'precomposed':true,
       *    'favicon':'desktop.ico'
       * }

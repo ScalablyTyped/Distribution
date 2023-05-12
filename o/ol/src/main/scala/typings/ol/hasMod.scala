@@ -30,6 +30,10 @@ object hasMod {
   @js.native
   val SAFARI: Boolean = js.native
   
+  @JSImport("ol/has", "SAFARI_BUG_237906")
+  @js.native
+  val SAFARI_BUG_237906: Boolean = js.native
+  
   @JSImport("ol/has", "WEBKIT")
   @js.native
   val WEBKIT: Boolean = js.native

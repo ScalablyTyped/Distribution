@@ -171,6 +171,11 @@ object mod {
     var reset: js.UndefOr[Boolean] = js.undefined
     
     /**
+      * Whether the exit reset will go to [0,0] (default) or [startX, startY].
+      */
+    var `reset-to-start`: js.UndefOr[Boolean] = js.undefined
+    
+    /**
       * Reverse the tilt direction
       */
     var reverse: js.UndefOr[Boolean] = js.undefined
@@ -273,6 +278,10 @@ object mod {
       inline def setPerspectiveUndefined: Self = StObject.set(x, "perspective", js.undefined)
       
       inline def setReset(value: Boolean): Self = StObject.set(x, "reset", value.asInstanceOf[js.Any])
+      
+      inline def `setReset-to-start`(value: Boolean): Self = StObject.set(x, "reset-to-start", value.asInstanceOf[js.Any])
+      
+      inline def `setReset-to-startUndefined`: Self = StObject.set(x, "reset-to-start", js.undefined)
       
       inline def setResetUndefined: Self = StObject.set(x, "reset", js.undefined)
       

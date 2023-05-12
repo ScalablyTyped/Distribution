@@ -1,5 +1,6 @@
 package typings.inferno.distCoreTypesMod.Inferno
 
+import typings.inferno.distCoreTypesMod.Key
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,6 +21,9 @@ trait Attributes extends StObject {
   
   @JSName("$HasVNodeChildren")
   var $HasVNodeChildren: js.UndefOr[Boolean] = js.undefined
+  
+  @JSName("$ReCreate")
+  var $ReCreate: js.UndefOr[Boolean] = js.undefined
   
   var key: js.UndefOr[Key] = js.undefined
 }
@@ -53,7 +57,13 @@ object Attributes {
     
     inline def set$HasVNodeChildrenUndefined: Self = StObject.set(x, "$HasVNodeChildren", js.undefined)
     
+    inline def set$ReCreate(value: Boolean): Self = StObject.set(x, "$ReCreate", value.asInstanceOf[js.Any])
+    
+    inline def set$ReCreateUndefined: Self = StObject.set(x, "$ReCreate", js.undefined)
+    
     inline def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    
+    inline def setKeyNull: Self = StObject.set(x, "key", null)
     
     inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
   }

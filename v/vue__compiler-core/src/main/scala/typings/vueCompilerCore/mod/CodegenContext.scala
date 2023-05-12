@@ -1,6 +1,6 @@
 package typings.vueCompilerCore.mod
 
-import typings.sourceMap.mod.SourceMapGenerator
+import typings.sourceMapJs.mod.SourceMapGenerator
 import typings.vueCompilerCore.vueCompilerCoreStrings.function
 import typings.vueCompilerCore.vueCompilerCoreStrings.module
 import org.scalablytyped.runtime.StObject

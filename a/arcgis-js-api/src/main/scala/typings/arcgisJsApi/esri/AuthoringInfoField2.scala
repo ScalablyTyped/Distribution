@@ -23,7 +23,7 @@ trait AuthoringInfoField2 extends StObject {
   /**
     * The label used to describe the field or variable in the legend.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-AuthoringInfo.html#field2)
+    * [Read more...](global.html)
     */
   var label: js.UndefOr[String] = js.undefined
   

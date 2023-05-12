@@ -9,17 +9,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class CancellationTokenSource () extends StObject {
   
   /**
-    * Signal cancellation on the token.
-    */
+  		 * Signal cancellation on the token.
+  		 */
   def cancel(): Unit = js.native
   
   /**
-    * Dispose object and free resources.
-    */
+  		 * Dispose object and free resources.
+  		 */
   def dispose(): Unit = js.native
   
   /**
-    * The cancellation token of this source.
-    */
+  		 * The cancellation token of this source.
+  		 */
   var token: CancellationToken = js.native
 }

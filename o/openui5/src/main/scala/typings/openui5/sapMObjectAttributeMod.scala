@@ -220,6 +220,8 @@ object sapMObjectAttributeMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:press press} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -277,6 +279,8 @@ object sapMObjectAttributeMod {
     def getCustomContent(): typings.openui5.sapUiCoreControlMod.default = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Defines to which DOM reference the Popup should be docked.
       *
       * @returns The DOM reference that Popup should dock to

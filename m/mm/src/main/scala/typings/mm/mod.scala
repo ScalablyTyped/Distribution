@@ -177,6 +177,11 @@ object mod {
   inline def restore(): MockMate = ^.asInstanceOf[js.Dynamic].applyDynamic("restore")().asInstanceOf[MockMate]
   
   /**
+    * spy a function
+    */
+  inline def spy(mod: Any, method: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("spy")(mod.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  /**
     * mock function sync return data
     */
   inline def syncData(mod: Any, method: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("syncData")(mod.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[Unit]

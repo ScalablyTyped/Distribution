@@ -1,5 +1,6 @@
 package typings.sinclairTypebox.mod
 
+import typings.sinclairTypebox.sinclairTypeboxStrings.Void
 import typings.sinclairTypebox.sinclairTypeboxStrings.`null`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,4 +16,6 @@ trait TVoid
   var static_TVoid: Unit = js.native
   
   var `type`: `null` = js.native
+  
+  var typeOf: Void = js.native
 }

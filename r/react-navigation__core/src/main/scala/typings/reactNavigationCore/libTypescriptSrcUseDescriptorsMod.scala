@@ -1,7 +1,7 @@
 package typings.reactNavigationCore
 
 import typings.reactNavigationCore.anon.Dispatch
-import typings.reactNavigationCore.anon.OptionsRoute
+import typings.reactNavigationCore.anon.NavigationOptions
 import typings.reactNavigationCore.anon.RouteRouteProp
 import typings.reactNavigationCore.anon.SetOptions
 import typings.reactNavigationCore.libTypescriptSrcNavigationBuilderContextMod.AddKeyedListener
@@ -65,7 +65,7 @@ object libTypescriptSrcUseDescriptorsMod {
     var addListener: AddListener
     
     var defaultScreenOptions: js.UndefOr[
-        ScreenOptions | (js.Function1[/* props */ OptionsRoute[ScreenOptions], ScreenOptions])
+        ScreenOptions | (js.Function1[/* props */ NavigationOptions[ScreenOptions], ScreenOptions])
       ] = js.undefined
     
     var emitter: NavigationEventEmitter[EventMap]
@@ -118,9 +118,9 @@ object libTypescriptSrcUseDescriptorsMod {
         value: (/* keyof @react-navigation/core.@react-navigation/core/lib/typescript/src/NavigationBuilderContext.ListenerMap */ /* type */ action | focus, /* import warning: importer.ImportType#apply Failed type conversion: @react-navigation/core.@react-navigation/core/lib/typescript/src/NavigationBuilderContext.ListenerMap[keyof @react-navigation/core.@react-navigation/core/lib/typescript/src/NavigationBuilderContext.ListenerMap] */ /* listener */ js.Any) => Unit
       ): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
       
-      inline def setDefaultScreenOptions(value: ScreenOptions | (js.Function1[/* props */ OptionsRoute[ScreenOptions], ScreenOptions])): Self = StObject.set(x, "defaultScreenOptions", value.asInstanceOf[js.Any])
+      inline def setDefaultScreenOptions(value: ScreenOptions | (js.Function1[/* props */ NavigationOptions[ScreenOptions], ScreenOptions])): Self = StObject.set(x, "defaultScreenOptions", value.asInstanceOf[js.Any])
       
-      inline def setDefaultScreenOptionsFunction1(value: /* props */ OptionsRoute[ScreenOptions] => ScreenOptions): Self = StObject.set(x, "defaultScreenOptions", js.Any.fromFunction1(value))
+      inline def setDefaultScreenOptionsFunction1(value: /* props */ NavigationOptions[ScreenOptions] => ScreenOptions): Self = StObject.set(x, "defaultScreenOptions", js.Any.fromFunction1(value))
       
       inline def setDefaultScreenOptionsUndefined: Self = StObject.set(x, "defaultScreenOptions", js.undefined)
       

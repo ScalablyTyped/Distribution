@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ReturnStatement
   extends StObject
      with Statement
+     with FlowContainer
      with HasJSDoc {
   
   val expression: js.UndefOr[Expression] = js.native

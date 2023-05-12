@@ -11,10 +11,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(a: js.Array[Any], b: js.Array[Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  inline def default(a: js.Array[Any], b: ComparableObject): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  inline def default(a: ComparableObject, b: js.Array[Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  inline def default(a: ComparableObject, b: ComparableObject): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def default(a: Any, b: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   inline def isShallowEqualArrays(a: js.Array[Any], b: js.Array[Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isShallowEqualArrays")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   

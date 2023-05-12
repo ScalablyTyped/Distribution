@@ -72,6 +72,9 @@ object esListMod extends Shortcut {
     
     var initialValue: js.UndefOr[js.Array[Any]] = js.undefined
     
+    /** @private Passed by Form.List props. Do not use since it will break by path check. */
+    var isListField: js.UndefOr[Boolean] = js.undefined
+    
     var name: NamePath
     
     var rules: js.UndefOr[js.Array[ValidatorRule]] = js.undefined
@@ -99,6 +102,10 @@ object esListMod extends Shortcut {
       inline def setInitialValueUndefined: Self = StObject.set(x, "initialValue", js.undefined)
       
       inline def setInitialValueVarargs(value: Any*): Self = StObject.set(x, "initialValue", js.Array(value*))
+      
+      inline def setIsListField(value: Boolean): Self = StObject.set(x, "isListField", value.asInstanceOf[js.Any])
+      
+      inline def setIsListFieldUndefined: Self = StObject.set(x, "isListField", js.undefined)
       
       inline def setName(value: NamePath): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

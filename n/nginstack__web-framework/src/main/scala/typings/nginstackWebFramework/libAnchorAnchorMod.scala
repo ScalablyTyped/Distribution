@@ -55,9 +55,6 @@ object libAnchorAnchorMod {
     var getChanges: Any = js.native
     
     /* private */ /* CompleteClass */
-    var getParameters: Any = js.native
-    
-    /* private */ /* CompleteClass */
     var getParametersNames: Any = js.native
     
     /* protected */ /* CompleteClass */
@@ -176,8 +173,6 @@ object libAnchorAnchorMod {
     
     /* private */ var getChanges: Any
     
-    /* private */ var getParameters: Any
-    
     /* private */ var getParametersNames: Any
     
     /* protected */ def getParamsInfo(parametersValues: Any): js.Array[Any]
@@ -249,7 +244,6 @@ object libAnchorAnchorMod {
       enabled: Boolean,
       forcingChanges_ : () => Boolean,
       getChanges: Any,
-      getParameters: Any,
       getParametersNames: Any,
       getParamsInfo: Any => js.Array[Any],
       getProcessedParameters: Any,
@@ -278,7 +272,7 @@ object libAnchorAnchorMod {
       toString_ : Any,
       validateLastInteraction: Boolean
     ): Anchor = {
-      val __obj = js.Dynamic.literal(_changedProperties = _changedProperties.asInstanceOf[js.Any], _clearChangedProperties = _clearChangedProperties.asInstanceOf[js.Any], _prepare = _prepare.asInstanceOf[js.Any], accessible = accessible.asInstanceOf[js.Any], assign = js.Any.fromFunction1(assign), changed = changed.asInstanceOf[js.Any], collection = collection.asInstanceOf[js.Any], config = js.Any.fromFunction3(config), convertParametersToParams = convertParametersToParams.asInstanceOf[js.Any], createNewTab = createNewTab.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any], forcingChanges_ = js.Any.fromFunction0(forcingChanges_), getChanges = getChanges.asInstanceOf[js.Any], getParameters = getParameters.asInstanceOf[js.Any], getParametersNames = getParametersNames.asInstanceOf[js.Any], getParamsInfo = js.Any.fromFunction1(getParamsInfo), getProcessedParameters = getProcessedParameters.asInstanceOf[js.Any], hasOnClickEvent = hasOnClickEvent.asInstanceOf[js.Any], hint = hint.asInstanceOf[js.Any], identifierName = identifierName.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], last_parameters = last_parameters.asInstanceOf[js.Any], logger_ = logger_.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], nextInteractionName = nextInteractionName.asInstanceOf[js.Any], nextProcessId = nextProcessId.asInstanceOf[js.Any], nextProcessKey = nextProcessKey.asInstanceOf[js.Any], onClick = onClick.asInstanceOf[js.Any], parameters_ = parameters_.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], permissionKeyWord = permissionKeyWord.asInstanceOf[js.Any], prepared = prepared.asInstanceOf[js.Any], process = process.asInstanceOf[js.Any], propertiesToSync_ = propertiesToSync_.asInstanceOf[js.Any], resetProperties = resetProperties.asInstanceOf[js.Any], resettingProperties_ = resettingProperties_.asInstanceOf[js.Any], setChangedProperty = js.Any.fromFunction2(setChangedProperty), setPropertiesDefaultValues = setPropertiesDefaultValues.asInstanceOf[js.Any], validateLastInteraction = validateLastInteraction.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(_changedProperties = _changedProperties.asInstanceOf[js.Any], _clearChangedProperties = _clearChangedProperties.asInstanceOf[js.Any], _prepare = _prepare.asInstanceOf[js.Any], accessible = accessible.asInstanceOf[js.Any], assign = js.Any.fromFunction1(assign), changed = changed.asInstanceOf[js.Any], collection = collection.asInstanceOf[js.Any], config = js.Any.fromFunction3(config), convertParametersToParams = convertParametersToParams.asInstanceOf[js.Any], createNewTab = createNewTab.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any], forcingChanges_ = js.Any.fromFunction0(forcingChanges_), getChanges = getChanges.asInstanceOf[js.Any], getParametersNames = getParametersNames.asInstanceOf[js.Any], getParamsInfo = js.Any.fromFunction1(getParamsInfo), getProcessedParameters = getProcessedParameters.asInstanceOf[js.Any], hasOnClickEvent = hasOnClickEvent.asInstanceOf[js.Any], hint = hint.asInstanceOf[js.Any], identifierName = identifierName.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], last_parameters = last_parameters.asInstanceOf[js.Any], logger_ = logger_.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], nextInteractionName = nextInteractionName.asInstanceOf[js.Any], nextProcessId = nextProcessId.asInstanceOf[js.Any], nextProcessKey = nextProcessKey.asInstanceOf[js.Any], onClick = onClick.asInstanceOf[js.Any], parameters_ = parameters_.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], permissionKeyWord = permissionKeyWord.asInstanceOf[js.Any], prepared = prepared.asInstanceOf[js.Any], process = process.asInstanceOf[js.Any], propertiesToSync_ = propertiesToSync_.asInstanceOf[js.Any], resetProperties = resetProperties.asInstanceOf[js.Any], resettingProperties_ = resettingProperties_.asInstanceOf[js.Any], setChangedProperty = js.Any.fromFunction2(setChangedProperty), setPropertiesDefaultValues = setPropertiesDefaultValues.asInstanceOf[js.Any], validateLastInteraction = validateLastInteraction.asInstanceOf[js.Any])
       __obj.updateDynamic("toString")(toString_.asInstanceOf[js.Any])
       __obj.asInstanceOf[Anchor]
     }
@@ -305,8 +299,6 @@ object libAnchorAnchorMod {
       inline def setForcingChanges_(value: () => Boolean): Self = StObject.set(x, "forcingChanges_", js.Any.fromFunction0(value))
       
       inline def setGetChanges(value: Any): Self = StObject.set(x, "getChanges", value.asInstanceOf[js.Any])
-      
-      inline def setGetParameters(value: Any): Self = StObject.set(x, "getParameters", value.asInstanceOf[js.Any])
       
       inline def setGetParametersNames(value: Any): Self = StObject.set(x, "getParametersNames", value.asInstanceOf[js.Any])
       

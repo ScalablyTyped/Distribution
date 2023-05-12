@@ -1,5 +1,7 @@
 package typings.std
 
+import typings.std.stdInts.`0x84FE`
+import typings.std.stdInts.`0x84FF`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,23 +10,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EXTTextureFilterAnisotropic extends StObject {
   
   /* standard dom */
-  val MAX_TEXTURE_MAX_ANISOTROPY_EXT: GLenum
+  val MAX_TEXTURE_MAX_ANISOTROPY_EXT: `0x84FF`
   
   /* standard dom */
-  val TEXTURE_MAX_ANISOTROPY_EXT: GLenum
+  val TEXTURE_MAX_ANISOTROPY_EXT: `0x84FE`
 }
 object EXTTextureFilterAnisotropic {
   
-  inline def apply(MAX_TEXTURE_MAX_ANISOTROPY_EXT: GLenum, TEXTURE_MAX_ANISOTROPY_EXT: GLenum): EXTTextureFilterAnisotropic = {
-    val __obj = js.Dynamic.literal(MAX_TEXTURE_MAX_ANISOTROPY_EXT = MAX_TEXTURE_MAX_ANISOTROPY_EXT.asInstanceOf[js.Any], TEXTURE_MAX_ANISOTROPY_EXT = TEXTURE_MAX_ANISOTROPY_EXT.asInstanceOf[js.Any])
+  inline def apply(): EXTTextureFilterAnisotropic = {
+    val __obj = js.Dynamic.literal(MAX_TEXTURE_MAX_ANISOTROPY_EXT = 0x84FF, TEXTURE_MAX_ANISOTROPY_EXT = 0x84FE)
     __obj.asInstanceOf[EXTTextureFilterAnisotropic]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: EXTTextureFilterAnisotropic] (val x: Self) extends AnyVal {
     
-    inline def setMAX_TEXTURE_MAX_ANISOTROPY_EXT(value: GLenum): Self = StObject.set(x, "MAX_TEXTURE_MAX_ANISOTROPY_EXT", value.asInstanceOf[js.Any])
+    inline def setMAX_TEXTURE_MAX_ANISOTROPY_EXT(value: `0x84FF`): Self = StObject.set(x, "MAX_TEXTURE_MAX_ANISOTROPY_EXT", value.asInstanceOf[js.Any])
     
-    inline def setTEXTURE_MAX_ANISOTROPY_EXT(value: GLenum): Self = StObject.set(x, "TEXTURE_MAX_ANISOTROPY_EXT", value.asInstanceOf[js.Any])
+    inline def setTEXTURE_MAX_ANISOTROPY_EXT(value: `0x84FE`): Self = StObject.set(x, "TEXTURE_MAX_ANISOTROPY_EXT", value.asInstanceOf[js.Any])
   }
 }

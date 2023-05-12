@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.ZIndex
+import typings.csstype.mod.Property.TransitionDelay
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,8 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `212` extends StObject {
   
   var value: js.UndefOr[
-    ZIndex | (js.Array[
-      (Extract[js.UndefOr[ZIndex | js.Array[NonNullable[js.UndefOr[ZIndex]]]], String]) | NonNullable[js.UndefOr[ZIndex]]
+    TransitionDelay[String] | (js.Array[
+      (Extract[
+        js.UndefOr[
+          TransitionDelay[String] | js.Array[NonNullable[js.UndefOr[TransitionDelay[String]]]]
+        ], 
+        String
+      ]) | NonNullable[js.UndefOr[TransitionDelay[String]]]
     ])
   ] = js.native
 }

@@ -7,8 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("twilio/lib/jwt/AccessToken", "SyncGrant")
 @js.native
+/**
+  * @param options.serviceSid - The service unique ID
+  * @param options.endpointId - The endpoint ID
+  */
 open class SyncGrant ()
   extends Grant[SyncGrantOptions, SyncGrantPayload, data_sync]
      with SyncGrantOptions {
-  def this(opts: SyncGrantOptions) = this()
+  def this(options: SyncGrantOptions) = this()
 }

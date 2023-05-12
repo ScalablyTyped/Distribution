@@ -375,7 +375,7 @@ trait VideoJsPlayer
     */
   def defaultMuted(defaultMuted: Boolean): Unit = js.native
   
-  def defaultPlaybackRate(): Boolean = js.native
+  def defaultPlaybackRate(): Double = js.native
   /**
     * Gets or sets the current default playback rate. A default playback rate of
     * 1.0 represents normal speed and 0.5 would indicate half-speed playback, for instance.

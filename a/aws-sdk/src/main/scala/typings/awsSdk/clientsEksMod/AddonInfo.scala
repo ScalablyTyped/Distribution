@@ -17,6 +17,21 @@ trait AddonInfo extends StObject {
   var addonVersions: js.UndefOr[AddonVersionInfoList] = js.undefined
   
   /**
+    * Information about the add-on from the Amazon Web Services Marketplace.
+    */
+  var marketplaceInformation: js.UndefOr[MarketplaceInformation] = js.undefined
+  
+  /**
+    * The owner of the add-on.
+    */
+  var owner: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The publisher of the add-on.
+    */
+  var publisher: js.UndefOr[String] = js.undefined
+  
+  /**
     * The type of the add-on.
     */
   var `type`: js.UndefOr[String] = js.undefined
@@ -40,6 +55,18 @@ object AddonInfo {
     inline def setAddonVersionsUndefined: Self = StObject.set(x, "addonVersions", js.undefined)
     
     inline def setAddonVersionsVarargs(value: AddonVersionInfo*): Self = StObject.set(x, "addonVersions", js.Array(value*))
+    
+    inline def setMarketplaceInformation(value: MarketplaceInformation): Self = StObject.set(x, "marketplaceInformation", value.asInstanceOf[js.Any])
+    
+    inline def setMarketplaceInformationUndefined: Self = StObject.set(x, "marketplaceInformation", js.undefined)
+    
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    
+    inline def setPublisher(value: String): Self = StObject.set(x, "publisher", value.asInstanceOf[js.Any])
+    
+    inline def setPublisherUndefined: Self = StObject.set(x, "publisher", js.undefined)
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

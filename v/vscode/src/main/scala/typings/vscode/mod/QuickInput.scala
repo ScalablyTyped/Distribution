@@ -7,83 +7,83 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait QuickInput extends StObject {
   
   /**
-    * If the UI should show a progress indicator. Defaults to false.
-    *
-    * Change this to true, e.g., while loading more data or validating
-    * user input.
-    */
+  		 * If the UI should show a progress indicator. Defaults to false.
+  		 *
+  		 * Change this to true, e.g., while loading more data or validating
+  		 * user input.
+  		 */
   var busy: Boolean
   
   /**
-    * Dispose of this input UI and any associated resources. If it is still
-    * visible, it is first hidden. After this call the input UI is no longer
-    * functional and no additional methods or properties on it should be
-    * accessed. Instead a new input UI should be created.
-    */
+  		 * Dispose of this input UI and any associated resources. If it is still
+  		 * visible, it is first hidden. After this call the input UI is no longer
+  		 * functional and no additional methods or properties on it should be
+  		 * accessed. Instead a new input UI should be created.
+  		 */
   def dispose(): Unit
   
   /**
-    * If the UI should allow for user input. Defaults to true.
-    *
-    * Change this to false, e.g., while validating user input or
-    * loading data for the next step in user input.
-    */
+  		 * If the UI should allow for user input. Defaults to true.
+  		 *
+  		 * Change this to false, e.g., while validating user input or
+  		 * loading data for the next step in user input.
+  		 */
   var enabled: Boolean
   
   /**
-    * Hides this input UI. This will also fire an {@link QuickInput.onDidHide}
-    * event.
-    */
+  		 * Hides this input UI. This will also fire an {@link QuickInput.onDidHide}
+  		 * event.
+  		 */
   def hide(): Unit
   
   /**
-    * If the UI should stay open even when loosing UI focus. Defaults to false.
-    * This setting is ignored on iPad and is always false.
-    */
+  		 * If the UI should stay open even when loosing UI focus. Defaults to false.
+  		 * This setting is ignored on iPad and is always false.
+  		 */
   var ignoreFocusOut: Boolean
   
   /**
-    * An event signaling when this input UI is hidden.
-    *
-    * There are several reasons why this UI might have to be hidden and
-    * the extension will be notified through {@link QuickInput.onDidHide}.
-    * (Examples include: an explicit call to {@link QuickInput.hide},
-    * the user pressing Esc, some other input UI opening, etc.)
-    */
+  		 * An event signaling when this input UI is hidden.
+  		 *
+  		 * There are several reasons why this UI might have to be hidden and
+  		 * the extension will be notified through {@link QuickInput.onDidHide}.
+  		 * (Examples include: an explicit call to {@link QuickInput.hide},
+  		 * the user pressing Esc, some other input UI opening, etc.)
+  		 */
   def onDidHide(listener: js.Function1[/* e */ Unit, Any]): Disposable
   def onDidHide(listener: js.Function1[/* e */ Unit, Any], thisArgs: Any): Disposable
   def onDidHide(listener: js.Function1[/* e */ Unit, Any], thisArgs: Any, disposables: js.Array[Disposable]): Disposable
   def onDidHide(listener: js.Function1[/* e */ Unit, Any], thisArgs: Unit, disposables: js.Array[Disposable]): Disposable
   /**
-    * An event signaling when this input UI is hidden.
-    *
-    * There are several reasons why this UI might have to be hidden and
-    * the extension will be notified through {@link QuickInput.onDidHide}.
-    * (Examples include: an explicit call to {@link QuickInput.hide},
-    * the user pressing Esc, some other input UI opening, etc.)
-    */
+  		 * An event signaling when this input UI is hidden.
+  		 *
+  		 * There are several reasons why this UI might have to be hidden and
+  		 * the extension will be notified through {@link QuickInput.onDidHide}.
+  		 * (Examples include: an explicit call to {@link QuickInput.hide},
+  		 * the user pressing Esc, some other input UI opening, etc.)
+  		 */
   @JSName("onDidHide")
   var onDidHide_Original: Event[Unit]
   
   /**
-    * Makes the input UI visible in its current configuration. Any other input
-    * UI will first fire an {@link QuickInput.onDidHide} event.
-    */
+  		 * Makes the input UI visible in its current configuration. Any other input
+  		 * UI will first fire an {@link QuickInput.onDidHide} event.
+  		 */
   def show(): Unit
   
   /**
-    * An optional current step count.
-    */
+  		 * An optional current step count.
+  		 */
   var step: js.UndefOr[Double] = js.undefined
   
   /**
-    * An optional title.
-    */
+  		 * An optional title.
+  		 */
   var title: js.UndefOr[String] = js.undefined
   
   /**
-    * An optional total step count.
-    */
+  		 * An optional total step count.
+  		 */
   var totalSteps: js.UndefOr[Double] = js.undefined
 }
 object QuickInput {

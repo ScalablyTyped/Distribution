@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Typeofclipboard extends StObject {
   
-  /** @enum */
   val DataItemType: TEXTHTML = js.native
   
   /**

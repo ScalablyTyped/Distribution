@@ -17,7 +17,7 @@ trait FilterLogEventsResponse extends StObject {
   var nextToken: js.UndefOr[NextToken] = js.undefined
   
   /**
-    *  IMPORTANT Starting on May 15, 2020, this parameter will be deprecated. This parameter will be an empty list after the deprecation occurs. Indicates which log streams have been searched and whether each has been searched completely.
+    *  Important As of May 15, 2020, this parameter is no longer supported. This parameter returns an empty list. Indicates which log streams have been searched and whether each has been searched completely.
     */
   var searchedLogStreams: js.UndefOr[SearchedLogStreams] = js.undefined
 }

@@ -1,18 +1,19 @@
 package typings.backstopjs
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.backstopjs.anon.Args
 import typings.backstopjs.anon.Bitmapsreference
 import typings.backstopjs.anon.ErrorColor
 import typings.backstopjs.anon.Format
+import typings.backstopjs.anon.browserchromiumfirefoxweb
+import typings.backstopjs.anon.browserneverundefinedstor
 import typings.backstopjs.backstopjsStrings.CI
 import typings.backstopjs.backstopjsStrings.approve
 import typings.backstopjs.backstopjsStrings.browser
-import typings.backstopjs.backstopjsStrings.chromy
 import typings.backstopjs.backstopjsStrings.desktop
 import typings.backstopjs.backstopjsStrings.init
 import typings.backstopjs.backstopjsStrings.json
 import typings.backstopjs.backstopjsStrings.phone
+import typings.backstopjs.backstopjsStrings.playwright
 import typings.backstopjs.backstopjsStrings.puppeteer
 import typings.backstopjs.backstopjsStrings.reference
 import typings.backstopjs.backstopjsStrings.tablet
@@ -30,7 +31,7 @@ object mod {
   inline def default(command: approve | init | reference | test): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(command.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   inline def default(command: approve | init | reference | test, options: typings.backstopjs.anon.Config): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(command.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  trait Config extends StObject {
+  trait CommonConfig extends StObject {
     
     var asyncCaptureLimit: js.UndefOr[Double] = js.undefined
     
@@ -45,10 +46,6 @@ object mod {
     var debugWindow: js.UndefOr[Boolean] = js.undefined
     
     var dockerCommandTemplate: js.UndefOr[String] = js.undefined
-    
-    var engine: js.UndefOr[chromy | puppeteer] = js.undefined
-    
-    var engineOptions: js.UndefOr[Args] = js.undefined
     
     var id: String
     
@@ -66,15 +63,15 @@ object mod {
     
     var viewports: js.Array[Viewport]
   }
-  object Config {
+  object CommonConfig {
     
-    inline def apply(id: String, scenarios: js.Array[Scenario], viewports: js.Array[Viewport]): Config = {
+    inline def apply(id: String, scenarios: js.Array[Scenario], viewports: js.Array[Viewport]): CommonConfig = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], scenarios = scenarios.asInstanceOf[js.Any], viewports = viewports.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Config]
+      __obj.asInstanceOf[CommonConfig]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: CommonConfig] (val x: Self) extends AnyVal {
       
       inline def setAsyncCaptureLimit(value: Double): Self = StObject.set(x, "asyncCaptureLimit", value.asInstanceOf[js.Any])
       
@@ -103,14 +100,6 @@ object mod {
       inline def setDockerCommandTemplate(value: String): Self = StObject.set(x, "dockerCommandTemplate", value.asInstanceOf[js.Any])
       
       inline def setDockerCommandTemplateUndefined: Self = StObject.set(x, "dockerCommandTemplate", js.undefined)
-      
-      inline def setEngine(value: chromy | puppeteer): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
-      
-      inline def setEngineOptions(value: Args): Self = StObject.set(x, "engineOptions", value.asInstanceOf[js.Any])
-      
-      inline def setEngineOptionsUndefined: Self = StObject.set(x, "engineOptions", js.undefined)
-      
-      inline def setEngineUndefined: Self = StObject.set(x, "engine", js.undefined)
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -146,6 +135,70 @@ object mod {
     }
   }
   
+  trait CommonEngineOptions extends StObject {
+    
+    var args: js.Array[String]
+    
+    var chromeFlags: js.UndefOr[js.Array[String]] = js.undefined
+    
+    var chromePath: js.UndefOr[String] = js.undefined
+    
+    var ignoreHTTPSErrors: js.UndefOr[Boolean] = js.undefined
+    
+    var waitTimeout: js.UndefOr[Double] = js.undefined
+  }
+  object CommonEngineOptions {
+    
+    inline def apply(args: js.Array[String]): CommonEngineOptions = {
+      val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any])
+      __obj.asInstanceOf[CommonEngineOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonEngineOptions] (val x: Self) extends AnyVal {
+      
+      inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      
+      inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value*))
+      
+      inline def setChromeFlags(value: js.Array[String]): Self = StObject.set(x, "chromeFlags", value.asInstanceOf[js.Any])
+      
+      inline def setChromeFlagsUndefined: Self = StObject.set(x, "chromeFlags", js.undefined)
+      
+      inline def setChromeFlagsVarargs(value: String*): Self = StObject.set(x, "chromeFlags", js.Array(value*))
+      
+      inline def setChromePath(value: String): Self = StObject.set(x, "chromePath", value.asInstanceOf[js.Any])
+      
+      inline def setChromePathUndefined: Self = StObject.set(x, "chromePath", js.undefined)
+      
+      inline def setIgnoreHTTPSErrors(value: Boolean): Self = StObject.set(x, "ignoreHTTPSErrors", value.asInstanceOf[js.Any])
+      
+      inline def setIgnoreHTTPSErrorsUndefined: Self = StObject.set(x, "ignoreHTTPSErrors", js.undefined)
+      
+      inline def setWaitTimeout(value: Double): Self = StObject.set(x, "waitTimeout", value.asInstanceOf[js.Any])
+      
+      inline def setWaitTimeoutUndefined: Self = StObject.set(x, "waitTimeout", js.undefined)
+    }
+  }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.backstopjs.mod.PlaywrightEngineConfig
+    - typings.backstopjs.mod.PuppeteerEngineConfig
+  */
+  trait Config extends StObject
+  object Config {
+    
+    inline def PlaywrightEngineConfig(id: String, scenarios: js.Array[Scenario], viewports: js.Array[Viewport]): typings.backstopjs.mod.PlaywrightEngineConfig = {
+      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], scenarios = scenarios.asInstanceOf[js.Any], viewports = viewports.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.backstopjs.mod.PlaywrightEngineConfig]
+    }
+    
+    inline def PuppeteerEngineConfig(id: String, scenarios: js.Array[Scenario], viewports: js.Array[Viewport]): typings.backstopjs.mod.PuppeteerEngineConfig = {
+      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], scenarios = scenarios.asInstanceOf[js.Any], viewports = viewports.asInstanceOf[js.Any])
+      __obj.asInstanceOf[typings.backstopjs.mod.PuppeteerEngineConfig]
+    }
+  }
+  
   trait KeypressSelector extends StObject {
     
     var keyPress: String
@@ -165,6 +218,64 @@ object mod {
       inline def setKeyPress(value: String): Self = StObject.set(x, "keyPress", value.asInstanceOf[js.Any])
       
       inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait PlaywrightEngineConfig
+    extends StObject
+       with CommonConfig
+       with Config {
+    
+    var engine: js.UndefOr[playwright] = js.undefined
+    
+    var engineOptions: js.UndefOr[browserchromiumfirefoxweb] = js.undefined
+  }
+  object PlaywrightEngineConfig {
+    
+    inline def apply(id: String, scenarios: js.Array[Scenario], viewports: js.Array[Viewport]): PlaywrightEngineConfig = {
+      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], scenarios = scenarios.asInstanceOf[js.Any], viewports = viewports.asInstanceOf[js.Any])
+      __obj.asInstanceOf[PlaywrightEngineConfig]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PlaywrightEngineConfig] (val x: Self) extends AnyVal {
+      
+      inline def setEngine(value: playwright): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
+      
+      inline def setEngineOptions(value: browserchromiumfirefoxweb): Self = StObject.set(x, "engineOptions", value.asInstanceOf[js.Any])
+      
+      inline def setEngineOptionsUndefined: Self = StObject.set(x, "engineOptions", js.undefined)
+      
+      inline def setEngineUndefined: Self = StObject.set(x, "engine", js.undefined)
+    }
+  }
+  
+  trait PuppeteerEngineConfig
+    extends StObject
+       with CommonConfig
+       with Config {
+    
+    var engine: js.UndefOr[puppeteer] = js.undefined
+    
+    var engineOptions: js.UndefOr[browserneverundefinedstor] = js.undefined
+  }
+  object PuppeteerEngineConfig {
+    
+    inline def apply(id: String, scenarios: js.Array[Scenario], viewports: js.Array[Viewport]): PuppeteerEngineConfig = {
+      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], scenarios = scenarios.asInstanceOf[js.Any], viewports = viewports.asInstanceOf[js.Any])
+      __obj.asInstanceOf[PuppeteerEngineConfig]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PuppeteerEngineConfig] (val x: Self) extends AnyVal {
+      
+      inline def setEngine(value: puppeteer): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
+      
+      inline def setEngineOptions(value: browserneverundefinedstor): Self = StObject.set(x, "engineOptions", value.asInstanceOf[js.Any])
+      
+      inline def setEngineOptionsUndefined: Self = StObject.set(x, "engineOptions", js.undefined)
+      
+      inline def setEngineUndefined: Self = StObject.set(x, "engine", js.undefined)
     }
   }
   

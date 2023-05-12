@@ -136,6 +136,13 @@ trait BrowserWindowConstructorOptions extends StObject {
   var height: js.UndefOr[Double] = js.undefined
   
   /**
+    * Whether window should be hidden when the user toggles into mission control.
+    *
+    * @platform darwin
+    */
+  var hiddenInMissionControl: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * The window icon. On Windows it is recommended to use `ICO` icons to get best
     * visual effects, you can also leave it undefined so the executable's icon will be
     * used.
@@ -251,10 +258,10 @@ trait BrowserWindowConstructorOptions extends StObject {
   var skipTaskbar: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Tab group name, allows opening the window as a native tab on macOS 10.12+.
-    * Windows with the same tabbing identifier will be grouped together. This also
-    * adds a native new tab button to your window's tab bar and allows your `app` and
-    * window to receive the `new-window-for-tab` event.
+    * Tab group name, allows opening the window as a native tab. Windows with the same
+    * tabbing identifier will be grouped together. This also adds a native new tab
+    * button to your window's tab bar and allows your `app` and window to receive the
+    * `new-window-for-tab` event.
     *
     * @platform darwin
     */
@@ -443,6 +450,10 @@ object BrowserWindowConstructorOptions {
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
+    inline def setHiddenInMissionControl(value: Boolean): Self = StObject.set(x, "hiddenInMissionControl", value.asInstanceOf[js.Any])
+    
+    inline def setHiddenInMissionControlUndefined: Self = StObject.set(x, "hiddenInMissionControl", js.undefined)
     
     inline def setIcon(value: NativeImage_ | String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     

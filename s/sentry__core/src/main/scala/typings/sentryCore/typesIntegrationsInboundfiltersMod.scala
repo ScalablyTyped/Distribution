@@ -72,6 +72,8 @@ object typesIntegrationsInboundfiltersMod {
     var ignoreErrors: js.Array[String | js.RegExp]
     
     var ignoreInternal: Boolean
+    
+    var ignoreTransactions: js.Array[String | js.RegExp]
   }
   object InboundFiltersOptions {
     
@@ -79,9 +81,10 @@ object typesIntegrationsInboundfiltersMod {
       allowUrls: js.Array[String | js.RegExp],
       denyUrls: js.Array[String | js.RegExp],
       ignoreErrors: js.Array[String | js.RegExp],
-      ignoreInternal: Boolean
+      ignoreInternal: Boolean,
+      ignoreTransactions: js.Array[String | js.RegExp]
     ): InboundFiltersOptions = {
-      val __obj = js.Dynamic.literal(allowUrls = allowUrls.asInstanceOf[js.Any], denyUrls = denyUrls.asInstanceOf[js.Any], ignoreErrors = ignoreErrors.asInstanceOf[js.Any], ignoreInternal = ignoreInternal.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(allowUrls = allowUrls.asInstanceOf[js.Any], denyUrls = denyUrls.asInstanceOf[js.Any], ignoreErrors = ignoreErrors.asInstanceOf[js.Any], ignoreInternal = ignoreInternal.asInstanceOf[js.Any], ignoreTransactions = ignoreTransactions.asInstanceOf[js.Any])
       __obj.asInstanceOf[InboundFiltersOptions]
     }
     
@@ -101,6 +104,10 @@ object typesIntegrationsInboundfiltersMod {
       inline def setIgnoreErrorsVarargs(value: (String | js.RegExp)*): Self = StObject.set(x, "ignoreErrors", js.Array(value*))
       
       inline def setIgnoreInternal(value: Boolean): Self = StObject.set(x, "ignoreInternal", value.asInstanceOf[js.Any])
+      
+      inline def setIgnoreTransactions(value: js.Array[String | js.RegExp]): Self = StObject.set(x, "ignoreTransactions", value.asInstanceOf[js.Any])
+      
+      inline def setIgnoreTransactionsVarargs(value: (String | js.RegExp)*): Self = StObject.set(x, "ignoreTransactions", js.Array(value*))
     }
   }
 }

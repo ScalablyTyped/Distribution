@@ -2,6 +2,7 @@ package typings.three
 
 import typings.three.examplesJsmPostprocessingPassMod.Pass
 import typings.three.srcCoreBufferGeometryMod.BufferGeometry
+import typings.three.srcCoreBufferGeometryMod.NormalBufferAttributes
 import typings.three.srcMaterialsMaterialMod.Material
 import typings.three.srcThreeMod.CubeTexture
 import typings.three.srcThreeMod.Mesh
@@ -25,7 +26,7 @@ object examplesJsmPostprocessingCubeTexturePassMod {
     
     var cubeCamera: PerspectiveCamera = js.native
     
-    var cubeMesh: Mesh[BufferGeometry, Material | js.Array[Material]] = js.native
+    var cubeMesh: Mesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]] = js.native
     
     var cubeScene: Scene = js.native
     

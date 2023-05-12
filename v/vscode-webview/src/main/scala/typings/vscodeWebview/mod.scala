@@ -16,7 +16,7 @@ object mod {
       *
       * @template StateType Type of the persisted state stored for the webview.
       */
-    // tslint:disable-next-line:no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
     inline def acquireVsCodeApi[StateType](): WebviewApi[StateType] = js.Dynamic.global.applyDynamic("acquireVsCodeApi")().asInstanceOf[WebviewApi[StateType]]
   }
   

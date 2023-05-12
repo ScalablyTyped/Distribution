@@ -22,6 +22,8 @@ trait ScriptHTMLAttributes
   
   var nonce: js.UndefOr[String] = js.undefined
   
+  var referrerpolicy: js.UndefOr[HTMLAttributeReferrerPolicy] = js.undefined
+  
   var src: js.UndefOr[String] = js.undefined
   
   var `type`: js.UndefOr[String] = js.undefined
@@ -63,6 +65,10 @@ object ScriptHTMLAttributes {
     inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
     
     inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
+    
+    inline def setReferrerpolicy(value: HTMLAttributeReferrerPolicy): Self = StObject.set(x, "referrerpolicy", value.asInstanceOf[js.Any])
+    
+    inline def setReferrerpolicyUndefined: Self = StObject.set(x, "referrerpolicy", js.undefined)
     
     inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     

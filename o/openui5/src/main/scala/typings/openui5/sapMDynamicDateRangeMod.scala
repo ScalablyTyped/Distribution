@@ -2,8 +2,10 @@ package typings.openui5
 
 import typings.openui5.anon.ValidValue
 import typings.openui5.sap.ClassInfo
+import typings.openui5.sapMLibraryMod.DynamicDateRangeValue
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
 import typings.openui5.sapUiCoreControlMod.ControlSettings
+import typings.openui5.sapUiCoreDateCalendarWeekNumberingMod.CalendarWeekNumbering
 import typings.openui5.sapUiCoreLibraryMod.CSSSize
 import typings.openui5.sapUiCoreLibraryMod.ID
 import typings.openui5.sapUiCoreLibraryMod.ValueState
@@ -120,6 +122,22 @@ object sapMDynamicDateRangeMod {
       * @returns Metadata object describing this class
       */
     inline def getMetadata(): typings.openui5.sapUiCoreElementMetadataMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("getMetadata")().asInstanceOf[typings.openui5.sapUiCoreElementMetadataMod.default]
+    
+    /**
+      * Returns a date range from a provided object in the format of the DynamicDateRange's value.
+      *
+      * @returns An array of two date objects - start and end date
+      */
+    inline def toDates(
+      /**
+      * A `sap.m.DynamicDateRangeValue`
+      */
+    oValue: DynamicDateRangeValue,
+      /**
+      * The type of calendar week numbering
+      */
+    sCalendarWeekNumbering: String
+    ): js.Array[js.Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("toDates")(oValue.asInstanceOf[js.Any], sCalendarWeekNumbering.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Date]]
   }
   
   @js.native
@@ -262,6 +280,8 @@ object sapMDynamicDateRangeMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:change change} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -287,6 +307,18 @@ object sapMDynamicDateRangeMod {
       * ariaLabelledBy}.
       */
     def getAriaLabelledBy(): js.Array[ID] = js.native
+    
+    /**
+      * @SINCE 1.111.0
+      *
+      * Gets current value of property {@link #getCalendarWeekNumbering calendarWeekNumbering}.
+      *
+      * If set, the calendar week numbering is used for display. If not set, the calendar week numbering of the
+      * global configuration is used.
+      *
+      * @returns Value of property `calendarWeekNumbering`
+      */
+    def getCalendarWeekNumbering(): CalendarWeekNumbering | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CalendarWeekNumbering * / any */ String) = js.native
     
     /**
       * @SINCE 1.92
@@ -382,11 +414,11 @@ object sapMDynamicDateRangeMod {
       *
       * Default value is `["DATE", "TODAY", "YESTERDAY", "TOMORROW", "FIRSTDAYWEEK", "LASTDAYWEEK", "FIRSTDAYMONTH",
       * "LASTDAYMONTH", "FIRSTDAYQUARTER", "LASTDAYQUARTER", "FIRSTDAYYEAR", "LASTDAYYEAR", "DATERANGE", "DATETIMERANGE",
-      * "FROM", "TO", "FROMDATETIME", "TODATETIME", "YEARTODATE", "DATETOYEAR", "LASTDAYS", "LASTWEEKS", "LASTMONTHS",
-      * "LASTQUARTERS", "LASTYEARS", "NEXTDAYS", "NEXTWEEKS", "NEXTMONTHS", "NEXTQUARTERS", "NEXTYEARS", "TODAYFROMTO",
-      * "THISWEEK", "LASTWEEK", "NEXTWEEK", "SPECIFICMONTH", "SPECIFICMONTHINYEAR", "THISMONTH", "LASTMONTH",
-      * "NEXTMONTH", "THISQUARTER", "LASTQUARTER", "NEXTQUARTER", "QUARTER1", "QUARTER2", "QUARTER3", "QUARTER4",
-      * "THISYEAR", "LASTYEAR", "NEXTYEAR", "DATETIME"]`.
+      * "FROM", "TO", "FROMDATETIME", "TODATETIME", "YEARTODATE", "DATETOYEAR", "LASTMINUTES", "LASTHOURS", "LASTDAYS",
+      * "LASTWEEKS", "LASTMONTHS", "LASTQUARTERS", "LASTYEARS", "NEXTMINUTES", "NEXTHOURS", "NEXTDAYS", "NEXTWEEKS",
+      * "NEXTMONTHS", "NEXTQUARTERS", "NEXTYEARS", "TODAYFROMTO", "THISWEEK", "LASTWEEK", "NEXTWEEK", "SPECIFICMONTH",
+      * "SPECIFICMONTHINYEAR", "THISMONTH", "LASTMONTH", "NEXTMONTH", "THISQUARTER", "LASTQUARTER", "NEXTQUARTER",
+      * "QUARTER1", "QUARTER2", "QUARTER3", "QUARTER4", "THISYEAR", "LASTYEAR", "NEXTYEAR", "DATETIME"]`.
       *
       * @returns Value of property `options`
       */
@@ -565,6 +597,32 @@ object sapMDynamicDateRangeMod {
     vAriaLabelledBy: ID): ID | Null = js.native
     
     /**
+      * @SINCE 1.111.0
+      *
+      * Sets a new value for property {@link #getCalendarWeekNumbering calendarWeekNumbering}.
+      *
+      * If set, the calendar week numbering is used for display. If not set, the calendar week numbering of the
+      * global configuration is used.
+      *
+      * When called with a value of `null` or `undefined`, the default value of the property will be restored.
+      *
+      * @returns Reference to `this` in order to allow method chaining
+      */
+    def setCalendarWeekNumbering(): this.type = js.native
+    def setCalendarWeekNumbering(
+      /**
+      * New value for property `calendarWeekNumbering`
+      */
+    sCalendarWeekNumbering: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CalendarWeekNumbering * / any */ String
+    ): this.type = js.native
+    def setCalendarWeekNumbering(
+      /**
+      * New value for property `calendarWeekNumbering`
+      */
+    sCalendarWeekNumbering: CalendarWeekNumbering
+    ): this.type = js.native
+    
+    /**
       * @SINCE 1.92
       *
       * Sets a new value for property {@link #getEditable editable}.
@@ -695,11 +753,11 @@ object sapMDynamicDateRangeMod {
       *
       * Default value is `["DATE", "TODAY", "YESTERDAY", "TOMORROW", "FIRSTDAYWEEK", "LASTDAYWEEK", "FIRSTDAYMONTH",
       * "LASTDAYMONTH", "FIRSTDAYQUARTER", "LASTDAYQUARTER", "FIRSTDAYYEAR", "LASTDAYYEAR", "DATERANGE", "DATETIMERANGE",
-      * "FROM", "TO", "FROMDATETIME", "TODATETIME", "YEARTODATE", "DATETOYEAR", "LASTDAYS", "LASTWEEKS", "LASTMONTHS",
-      * "LASTQUARTERS", "LASTYEARS", "NEXTDAYS", "NEXTWEEKS", "NEXTMONTHS", "NEXTQUARTERS", "NEXTYEARS", "TODAYFROMTO",
-      * "THISWEEK", "LASTWEEK", "NEXTWEEK", "SPECIFICMONTH", "SPECIFICMONTHINYEAR", "THISMONTH", "LASTMONTH",
-      * "NEXTMONTH", "THISQUARTER", "LASTQUARTER", "NEXTQUARTER", "QUARTER1", "QUARTER2", "QUARTER3", "QUARTER4",
-      * "THISYEAR", "LASTYEAR", "NEXTYEAR", "DATETIME"]`.
+      * "FROM", "TO", "FROMDATETIME", "TODATETIME", "YEARTODATE", "DATETOYEAR", "LASTMINUTES", "LASTHOURS", "LASTDAYS",
+      * "LASTWEEKS", "LASTMONTHS", "LASTQUARTERS", "LASTYEARS", "NEXTMINUTES", "NEXTHOURS", "NEXTDAYS", "NEXTWEEKS",
+      * "NEXTMONTHS", "NEXTQUARTERS", "NEXTYEARS", "TODAYFROMTO", "THISWEEK", "LASTWEEK", "NEXTWEEK", "SPECIFICMONTH",
+      * "SPECIFICMONTHINYEAR", "THISMONTH", "LASTMONTH", "NEXTMONTH", "THISQUARTER", "LASTQUARTER", "NEXTQUARTER",
+      * "QUARTER1", "QUARTER2", "QUARTER3", "QUARTER4", "THISYEAR", "LASTYEAR", "NEXTYEAR", "DATETIME"]`.
       *
       * @returns Reference to `this` in order to allow method chaining
       */
@@ -746,24 +804,6 @@ object sapMDynamicDateRangeMod {
       * New value for property `required`
       */
     bRequired: Boolean): this.type = js.native
-    
-    /**
-      * @SINCE 1.92
-      *
-      * Sets a new value for property {@link #getValue value}.
-      *
-      * Defines the control value. The object has two properties 'operator' - a string, the key of a DynamicDateOption
-      * and 'values' - an array of parameters for the same option. The control uses a special wrong-value object,
-      * when the input receives an unrecognized string - { operator: "PARSEERROR", values: [...]}
-      *
-      * When called with a value of `null` or `undefined`, the default value of the property will be restored.
-      *
-      * @returns Reference to `this` in order to allow method chaining
-      */
-    def setValue(/**
-      * New value for property `value`
-      */
-    oValue: js.Object): this.type = js.native
     
     /**
       * @SINCE 1.92
@@ -843,6 +883,16 @@ object sapMDynamicDateRangeMod {
       * Association to controls / IDs that label this control (see WAI-ARIA attribute aria-labelledby).
       */
     var ariaLabelledBy: js.UndefOr[js.Array[typings.openui5.sapUiCoreControlMod.default | String]] = js.undefined
+    
+    /**
+      * @SINCE 1.111.0
+      *
+      * If set, the calendar week numbering is used for display. If not set, the calendar week numbering of the
+      * global configuration is used.
+      */
+    var calendarWeekNumbering: js.UndefOr[
+        CalendarWeekNumbering | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CalendarWeekNumbering * / any */ String) | PropertyBindingInfo
+      ] = js.undefined
     
     /**
       * Is fired when the text in the input field has changed and the focus leaves the input field or the Enter
@@ -998,6 +1048,12 @@ object sapMDynamicDateRangeMod {
       inline def setAriaLabelledByUndefined: Self = StObject.set(x, "ariaLabelledBy", js.undefined)
       
       inline def setAriaLabelledByVarargs(value: (typings.openui5.sapUiCoreControlMod.default | String)*): Self = StObject.set(x, "ariaLabelledBy", js.Array(value*))
+      
+      inline def setCalendarWeekNumbering(
+        value: CalendarWeekNumbering | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CalendarWeekNumbering * / any */ String) | PropertyBindingInfo
+      ): Self = StObject.set(x, "calendarWeekNumbering", value.asInstanceOf[js.Any])
+      
+      inline def setCalendarWeekNumberingUndefined: Self = StObject.set(x, "calendarWeekNumbering", js.undefined)
       
       inline def setChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
       

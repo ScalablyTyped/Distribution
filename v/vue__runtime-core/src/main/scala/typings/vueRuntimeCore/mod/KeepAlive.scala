@@ -1,6 +1,6 @@
 package typings.vueRuntimeCore.mod
 
-import typings.vueRuntimeCore.anon.`2`
+import typings.vueRuntimeCore.anon.`0`
 import typings.vueRuntimeCore.vueRuntimeCoreBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,11 +11,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class KeepAlive ()
   extends StObject
-     with `2` {
+     with typings.vueRuntimeCore.anon.Slots {
   
   /* CompleteClass */
   @JSName("$props")
   var $props: VNodeProps & KeepAliveProps = js.native
+  
+  /* CompleteClass */
+  @JSName("$slots")
+  var $slots: `0` = js.native
 }
 object KeepAlive {
   

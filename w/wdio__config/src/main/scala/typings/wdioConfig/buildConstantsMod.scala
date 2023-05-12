@@ -30,6 +30,10 @@ object buildConstantsMod {
   
   inline def DEFAULT_CONFIGS(): OmitTestrunnercapabilitie = ^.asInstanceOf[js.Dynamic].applyDynamic("DEFAULT_CONFIGS")().asInstanceOf[OmitTestrunnercapabilitie]
   
+  @JSImport("@wdio/config/build/constants", "NO_NAMED_CONFIG_EXPORT")
+  @js.native
+  val NO_NAMED_CONFIG_EXPORT: String = js.native
+  
   @JSImport("@wdio/config/build/constants", "SUPPORTED_FILE_EXTENSIONS")
   @js.native
   val SUPPORTED_FILE_EXTENSIONS: js.Array[String] = js.native

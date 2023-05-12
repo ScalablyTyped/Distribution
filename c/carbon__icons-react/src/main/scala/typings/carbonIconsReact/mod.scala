@@ -332,6 +332,10 @@ object mod {
   @js.native
   val Apple: CarbonIconType = js.native
   
+  @JSImport("@carbon/icons-react", "AppleDash")
+  @js.native
+  val AppleDash: CarbonIconType = js.native
+  
   @JSImport("@carbon/icons-react", "Application")
   @js.native
   val Application: CarbonIconType = js.native
@@ -520,6 +524,14 @@ object mod {
   @js.native
   val Bat: CarbonIconType = js.native
   
+  @JSImport("@carbon/icons-react", "BatchJob")
+  @js.native
+  val BatchJob: CarbonIconType = js.native
+  
+  @JSImport("@carbon/icons-react", "BatchJobStep")
+  @js.native
+  val BatchJobStep: CarbonIconType = js.native
+  
   @JSImport("@carbon/icons-react", "BatteryCharging")
   @js.native
   val BatteryCharging: CarbonIconType = js.native
@@ -612,6 +624,14 @@ object mod {
   @js.native
   val Boot: CarbonIconType = js.native
   
+  @JSImport("@carbon/icons-react", "BootVolume")
+  @js.native
+  val BootVolume: CarbonIconType = js.native
+  
+  @JSImport("@carbon/icons-react", "BootVolumeAlt")
+  @js.native
+  val BootVolumeAlt: CarbonIconType = js.native
+  
   @JSImport("@carbon/icons-react", "BorderBottom")
   @js.native
   val BorderBottom: CarbonIconType = js.native
@@ -639,6 +659,26 @@ object mod {
   @JSImport("@carbon/icons-react", "Bot")
   @js.native
   val Bot: CarbonIconType = js.native
+  
+  @JSImport("@carbon/icons-react", "Bottles_01")
+  @js.native
+  val Bottles01: CarbonIconType = js.native
+  
+  @JSImport("@carbon/icons-react", "Bottles_01Dash")
+  @js.native
+  val Bottles01Dash: CarbonIconType = js.native
+  
+  @JSImport("@carbon/icons-react", "Bottles_02")
+  @js.native
+  val Bottles02: CarbonIconType = js.native
+  
+  @JSImport("@carbon/icons-react", "Bottles_02Dash")
+  @js.native
+  val Bottles02Dash: CarbonIconType = js.native
+  
+  @JSImport("@carbon/icons-react", "BottlesContainer")
+  @js.native
+  val BottlesContainer: CarbonIconType = js.native
   
   @JSImport("@carbon/icons-react", "Box")
   @js.native
@@ -823,6 +863,10 @@ object mod {
   @JSImport("@carbon/icons-react", "CarbonForIbmProduct")
   @js.native
   val CarbonForIbmProduct: CarbonIconType = js.native
+  
+  @JSImport("@carbon/icons-react", "CarbonUiBuilder")
+  @js.native
+  val CarbonUiBuilder: CarbonIconType = js.native
   
   @JSImport("@carbon/icons-react", "CaretDown")
   @js.native
@@ -1364,13 +1408,25 @@ object mod {
   @js.native
   val CicsCmas: CarbonIconType = js.native
   
+  @JSImport("@carbon/icons-react", "CicsDb2Connection")
+  @js.native
+  val CicsDb2Connection: CarbonIconType = js.native
+  
   @JSImport("@carbon/icons-react", "CicsExplorer")
   @js.native
   val CicsExplorer: CarbonIconType = js.native
   
+  @JSImport("@carbon/icons-react", "CicsProgram")
+  @js.native
+  val CicsProgram: CarbonIconType = js.native
+  
   @JSImport("@carbon/icons-react", "CicsRegion")
   @js.native
   val CicsRegion: CarbonIconType = js.native
+  
+  @JSImport("@carbon/icons-react", "CicsRegionAlt")
+  @js.native
+  val CicsRegionAlt: CarbonIconType = js.native
   
   @JSImport("@carbon/icons-react", "CicsRegionRouting")
   @js.native
@@ -1380,9 +1436,21 @@ object mod {
   @js.native
   val CicsRegionTarget: CarbonIconType = js.native
   
+  @JSImport("@carbon/icons-react", "CicsSit")
+  @js.native
+  val CicsSit: CarbonIconType = js.native
+  
+  @JSImport("@carbon/icons-react", "CicsSitOverrides")
+  @js.native
+  val CicsSitOverrides: CarbonIconType = js.native
+  
   @JSImport("@carbon/icons-react", "CicsSystemGroup")
   @js.native
   val CicsSystemGroup: CarbonIconType = js.native
+  
+  @JSImport("@carbon/icons-react", "CicsTransactionServerZos")
+  @js.native
+  val CicsTransactionServerZos: CarbonIconType = js.native
   
   @JSImport("@carbon/icons-react", "CicsWuiRegion")
   @js.native
@@ -1627,6 +1695,10 @@ object mod {
   @JSImport("@carbon/icons-react", "ConnectRecursive")
   @js.native
   val ConnectRecursive: CarbonIconType = js.native
+  
+  @JSImport("@carbon/icons-react", "ConnectReference")
+  @js.native
+  val ConnectReference: CarbonIconType = js.native
   
   @JSImport("@carbon/icons-react", "ConnectSource")
   @js.native
@@ -2020,6 +2092,14 @@ object mod {
   @js.native
   val DataVis4: CarbonIconType = js.native
   
+  @JSImport("@carbon/icons-react", "DataVolume")
+  @js.native
+  val DataVolume: CarbonIconType = js.native
+  
+  @JSImport("@carbon/icons-react", "DataVolumeAlt")
+  @js.native
+  val DataVolumeAlt: CarbonIconType = js.native
+  
   @JSImport("@carbon/icons-react", "DatabaseDatastax")
   @js.native
   val DatabaseDatastax: CarbonIconType = js.native
@@ -2055,6 +2135,18 @@ object mod {
   @JSImport("@carbon/icons-react", "Datastore")
   @js.native
   val Datastore: CarbonIconType = js.native
+  
+  @JSImport("@carbon/icons-react", "Db2BufferPool")
+  @js.native
+  val Db2BufferPool: CarbonIconType = js.native
+  
+  @JSImport("@carbon/icons-react", "Db2DataSharingGroup")
+  @js.native
+  val Db2DataSharingGroup: CarbonIconType = js.native
+  
+  @JSImport("@carbon/icons-react", "Db2Database")
+  @js.native
+  val Db2Database: CarbonIconType = js.native
   
   @JSImport("@carbon/icons-react", "Debug")
   @js.native
@@ -2159,6 +2251,10 @@ object mod {
   @JSImport("@carbon/icons-react", "DiagramReference")
   @js.native
   val DiagramReference: CarbonIconType = js.native
+  
+  @JSImport("@carbon/icons-react", "DiamondFillGlyph")
+  @js.native
+  val DiamondFillGlyph: CarbonIconType = js.native
   
   @JSImport("@carbon/icons-react", "DirectLink")
   @js.native
@@ -2368,6 +2464,14 @@ object mod {
   @js.native
   val DocumentImport: CarbonIconType = js.native
   
+  @JSImport("@carbon/icons-react", "DocumentMultiple_01")
+  @js.native
+  val DocumentMultiple01: CarbonIconType = js.native
+  
+  @JSImport("@carbon/icons-react", "DocumentMultiple_02")
+  @js.native
+  val DocumentMultiple02: CarbonIconType = js.native
+  
   @JSImport("@carbon/icons-react", "DocumentPdf")
   @js.native
   val DocumentPdf: CarbonIconType = js.native
@@ -2479,6 +2583,14 @@ object mod {
   @JSImport("@carbon/icons-react", "DrillThrough")
   @js.native
   val DrillThrough: CarbonIconType = js.native
+  
+  @JSImport("@carbon/icons-react", "Drink_01")
+  @js.native
+  val Drink01: CarbonIconType = js.native
+  
+  @JSImport("@carbon/icons-react", "Drink_02")
+  @js.native
+  val Drink02: CarbonIconType = js.native
   
   @JSImport("@carbon/icons-react", "DriverAnalysis")
   @js.native
@@ -2647,6 +2759,10 @@ object mod {
   @JSImport("@carbon/icons-react", "ExamMode")
   @js.native
   val ExamMode: CarbonIconType = js.native
+  
+  @JSImport("@carbon/icons-react", "ExecutableProgram")
+  @js.native
+  val ExecutableProgram: CarbonIconType = js.native
   
   @JSImport("@carbon/icons-react", "Exit")
   @js.native
@@ -3292,13 +3408,25 @@ object mod {
   @js.native
   val HybridNetworkingAlt: CarbonIconType = js.native
   
+  @JSImport("@carbon/icons-react", "IbmBluepay")
+  @js.native
+  val IbmBluepay: CarbonIconType = js.native
+  
   @JSImport("@carbon/icons-react", "IbmCloud")
   @js.native
   val IbmCloud: CarbonIconType = js.native
   
+  @JSImport("@carbon/icons-react", "IbmCloudAppId")
+  @js.native
+  val IbmCloudAppId: CarbonIconType = js.native
+  
   @JSImport("@carbon/icons-react", "IbmCloudCitrixDaas")
   @js.native
   val IbmCloudCitrixDaas: CarbonIconType = js.native
+  
+  @JSImport("@carbon/icons-react", "IbmCloudContinuousDelivery")
+  @js.native
+  val IbmCloudContinuousDelivery: CarbonIconType = js.native
   
   @JSImport("@carbon/icons-react", "IbmCloudDedicatedHost")
   @js.native
@@ -3340,6 +3468,14 @@ object mod {
   @js.native
   val IbmCloudEventStreams: CarbonIconType = js.native
   
+  @JSImport("@carbon/icons-react", "IbmCloudForEducation")
+  @js.native
+  val IbmCloudForEducation: CarbonIconType = js.native
+  
+  @JSImport("@carbon/icons-react", "IbmCloudHsm")
+  @js.native
+  val IbmCloudHsm: CarbonIconType = js.native
+  
   @JSImport("@carbon/icons-react", "IbmCloudHyperProtectCryptoServices")
   @js.native
   val IbmCloudHyperProtectCryptoServices: CarbonIconType = js.native
@@ -3355,6 +3491,10 @@ object mod {
   @JSImport("@carbon/icons-react", "IbmCloudInternetServices")
   @js.native
   val IbmCloudInternetServices: CarbonIconType = js.native
+  
+  @JSImport("@carbon/icons-react", "IbmCloudIpsecVpn")
+  @js.native
+  val IbmCloudIpsecVpn: CarbonIconType = js.native
   
   @JSImport("@carbon/icons-react", "IbmCloudKeyProtect")
   @js.native
@@ -3420,6 +3560,10 @@ object mod {
   @js.native
   val IbmCloudPal: CarbonIconType = js.native
   
+  @JSImport("@carbon/icons-react", "IbmCloudPrivilegedAccessGateway")
+  @js.native
+  val IbmCloudPrivilegedAccessGateway: CarbonIconType = js.native
+  
   @JSImport("@carbon/icons-react", "IbmCloudSecretsManager")
   @js.native
   val IbmCloudSecretsManager: CarbonIconType = js.native
@@ -3444,6 +3588,10 @@ object mod {
   @js.native
   val IbmCloudVpcEndpoints: CarbonIconType = js.native
   
+  @JSImport("@carbon/icons-react", "IbmContentServices")
+  @js.native
+  val IbmContentServices: CarbonIconType = js.native
+  
   @JSImport("@carbon/icons-react", "IbmDataReplication")
   @js.native
   val IbmDataReplication: CarbonIconType = js.native
@@ -3451,6 +3599,14 @@ object mod {
   @JSImport("@carbon/icons-react", "IbmDatastage")
   @js.native
   val IbmDatastage: CarbonIconType = js.native
+  
+  @JSImport("@carbon/icons-react", "IbmDb2")
+  @js.native
+  val IbmDb2: CarbonIconType = js.native
+  
+  @JSImport("@carbon/icons-react", "IbmDb2Alt")
+  @js.native
+  val IbmDb2Alt: CarbonIconType = js.native
   
   @JSImport("@carbon/icons-react", "IbmMatch_360")
   @js.native
@@ -3468,6 +3624,10 @@ object mod {
   @js.native
   val IbmPowerVs: CarbonIconType = js.native
   
+  @JSImport("@carbon/icons-react", "IbmProcessMining")
+  @js.native
+  val IbmProcessMining: CarbonIconType = js.native
+  
   @JSImport("@carbon/icons-react", "IbmSecurity")
   @js.native
   val IbmSecurity: CarbonIconType = js.native
@@ -3475,6 +3635,18 @@ object mod {
   @JSImport("@carbon/icons-react", "IbmSecurityServices")
   @js.native
   val IbmSecurityServices: CarbonIconType = js.native
+  
+  @JSImport("@carbon/icons-react", "IbmTelehealth")
+  @js.native
+  val IbmTelehealth: CarbonIconType = js.native
+  
+  @JSImport("@carbon/icons-react", "IbmTenet")
+  @js.native
+  val IbmTenet: CarbonIconType = js.native
+  
+  @JSImport("@carbon/icons-react", "IbmToolchain")
+  @js.native
+  val IbmToolchain: CarbonIconType = js.native
   
   @JSImport("@carbon/icons-react", "IbmWatsonAssistant")
   @js.native
@@ -4036,6 +4208,10 @@ object mod {
   @js.native
   val ListChecked: CarbonIconType = js.native
   
+  @JSImport("@carbon/icons-react", "ListCheckedMirror")
+  @js.native
+  val ListCheckedMirror: CarbonIconType = js.native
+  
   @JSImport("@carbon/icons-react", "ListDropdown")
   @js.native
   val ListDropdown: CarbonIconType = js.native
@@ -4043,6 +4219,10 @@ object mod {
   @JSImport("@carbon/icons-react", "ListNumbered")
   @js.native
   val ListNumbered: CarbonIconType = js.native
+  
+  @JSImport("@carbon/icons-react", "ListNumberedMirror")
+  @js.native
+  val ListNumberedMirror: CarbonIconType = js.native
   
   @JSImport("@carbon/icons-react", "LoadBalancerApplication")
   @js.native
@@ -4148,6 +4328,10 @@ object mod {
   @js.native
   val LogoAngular: CarbonIconType = js.native
   
+  @JSImport("@carbon/icons-react", "LogoAnsibleCommunity")
+  @js.native
+  val LogoAnsibleCommunity: CarbonIconType = js.native
+  
   @JSImport("@carbon/icons-react", "LogoDigg")
   @js.native
   val LogoDigg: CarbonIconType = js.native
@@ -4236,6 +4420,10 @@ object mod {
   @js.native
   val LogoReact: CarbonIconType = js.native
   
+  @JSImport("@carbon/icons-react", "LogoRedHatAnsible")
+  @js.native
+  val LogoRedHatAnsible: CarbonIconType = js.native
+  
   @JSImport("@carbon/icons-react", "LogoSketch")
   @js.native
   val LogoSketch: CarbonIconType = js.native
@@ -4267,6 +4455,10 @@ object mod {
   @JSImport("@carbon/icons-react", "LogoVmware")
   @js.native
   val LogoVmware: CarbonIconType = js.native
+  
+  @JSImport("@carbon/icons-react", "LogoVmwareAlt")
+  @js.native
+  val LogoVmwareAlt: CarbonIconType = js.native
   
   @JSImport("@carbon/icons-react", "LogoVue")
   @js.native
@@ -5292,6 +5484,14 @@ object mod {
   @js.native
   val Popup: CarbonIconType = js.native
   
+  @JSImport("@carbon/icons-react", "PortInput")
+  @js.native
+  val PortInput: CarbonIconType = js.native
+  
+  @JSImport("@carbon/icons-react", "PortOutput")
+  @js.native
+  val PortOutput: CarbonIconType = js.native
+  
   @JSImport("@carbon/icons-react", "Portfolio")
   @js.native
   val Portfolio: CarbonIconType = js.native
@@ -5568,6 +5768,10 @@ object mod {
   @js.native
   val RecordingFilledAlt: CarbonIconType = js.native
   
+  @JSImport("@carbon/icons-react", "Recycle")
+  @js.native
+  val Recycle: CarbonIconType = js.native
+  
   @JSImport("@carbon/icons-react", "Redo")
   @js.native
   val Redo: CarbonIconType = js.native
@@ -5575,6 +5779,10 @@ object mod {
   @JSImport("@carbon/icons-react", "RefEvapotranspiration")
   @js.native
   val RefEvapotranspiration: CarbonIconType = js.native
+  
+  @JSImport("@carbon/icons-react", "ReferenceArchitecture")
+  @js.native
+  val ReferenceArchitecture: CarbonIconType = js.native
   
   @JSImport("@carbon/icons-react", "ReflectHorizontal")
   @js.native
@@ -5812,6 +6020,10 @@ object mod {
   @js.native
   val Run: CarbonIconType = js.native
   
+  @JSImport("@carbon/icons-react", "RunMirror")
+  @js.native
+  val RunMirror: CarbonIconType = js.native
+  
   @JSImport("@carbon/icons-react", "SailboatCoastal")
   @js.native
   val SailboatCoastal: CarbonIconType = js.native
@@ -5904,6 +6116,14 @@ object mod {
   @js.native
   val Screen: CarbonIconType = js.native
   
+  @JSImport("@carbon/icons-react", "ScreenMap")
+  @js.native
+  val ScreenMap: CarbonIconType = js.native
+  
+  @JSImport("@carbon/icons-react", "ScreenMapSet")
+  @js.native
+  val ScreenMapSet: CarbonIconType = js.native
+  
   @JSImport("@carbon/icons-react", "ScreenOff")
   @js.native
   val ScreenOff: CarbonIconType = js.native
@@ -5931,6 +6151,10 @@ object mod {
   @JSImport("@carbon/icons-react", "SearchLocate")
   @js.native
   val SearchLocate: CarbonIconType = js.native
+  
+  @JSImport("@carbon/icons-react", "SearchLocateMirror")
+  @js.native
+  val SearchLocateMirror: CarbonIconType = js.native
   
   @JSImport("@carbon/icons-react", "Security")
   @js.native
@@ -6208,6 +6432,10 @@ object mod {
   @js.native
   val Slisor: CarbonIconType = js.native
   
+  @JSImport("@carbon/icons-react", "Slm")
+  @js.native
+  val Slm: CarbonIconType = js.native
+  
   @JSImport("@carbon/icons-react", "Smell")
   @js.native
   val Smell: CarbonIconType = js.native
@@ -6448,6 +6676,10 @@ object mod {
   @js.native
   val SummaryKpi: CarbonIconType = js.native
   
+  @JSImport("@carbon/icons-react", "SummaryKpiMirror")
+  @js.native
+  val SummaryKpiMirror: CarbonIconType = js.native
+  
   @JSImport("@carbon/icons-react", "Sun")
   @js.native
   val Sun: CarbonIconType = js.native
@@ -6595,6 +6827,10 @@ object mod {
   @JSImport("@carbon/icons-react", "Taxi")
   @js.native
   val Taxi: CarbonIconType = js.native
+  
+  @JSImport("@carbon/icons-react", "TcpIpService")
+  @js.native
+  val TcpIpService: CarbonIconType = js.native
   
   @JSImport("@carbon/icons-react", "Temperature")
   @js.native
@@ -6996,6 +7232,18 @@ object mod {
   @js.native
   val Tram: CarbonIconType = js.native
   
+  @JSImport("@carbon/icons-react", "TransformBinary")
+  @js.native
+  val TransformBinary: CarbonIconType = js.native
+  
+  @JSImport("@carbon/icons-react", "TransformInstructions")
+  @js.native
+  val TransformInstructions: CarbonIconType = js.native
+  
+  @JSImport("@carbon/icons-react", "TransformLanguage")
+  @js.native
+  val TransformLanguage: CarbonIconType = js.native
+  
   @JSImport("@carbon/icons-react", "Transgender")
   @js.native
   val Transgender: CarbonIconType = js.native
@@ -7056,6 +7304,10 @@ object mod {
   @js.native
   val TropicalWarning: CarbonIconType = js.native
   
+  @JSImport("@carbon/icons-react", "Tsq")
+  @js.native
+  val Tsq: CarbonIconType = js.native
+  
   @JSImport("@carbon/icons-react", "Tsunami")
   @js.native
   val Tsunami: CarbonIconType = js.native
@@ -7099,10 +7351,6 @@ object mod {
   @JSImport("@carbon/icons-react", "UndefinedFilled")
   @js.native
   val UndefinedFilled: CarbonIconType = js.native
-  
-  @JSImport("@carbon/icons-react", "UndefinedGlyph")
-  @js.native
-  val UndefinedGlyph: CarbonIconType = js.native
   
   @JSImport("@carbon/icons-react", "Undo")
   @js.native
@@ -7251,6 +7499,10 @@ object mod {
   @JSImport("@carbon/icons-react", "UserSpeaker")
   @js.native
   val UserSpeaker: CarbonIconType = js.native
+  
+  @JSImport("@carbon/icons-react", "UserSponsor")
+  @js.native
+  val UserSponsor: CarbonIconType = js.native
   
   @JSImport("@carbon/icons-react", "UserXRay")
   @js.native
@@ -8004,6 +8256,10 @@ object mod {
   @js.native
   val Wheat: CarbonIconType = js.native
   
+  @JSImport("@carbon/icons-react", "WhitePaper")
+  @js.native
+  val WhitePaper: CarbonIconType = js.native
+  
   @JSImport("@carbon/icons-react", "Wifi")
   @js.native
   val Wifi: CarbonIconType = js.native
@@ -8132,6 +8388,14 @@ object mod {
   @js.native
   val ZAxis: CarbonIconType = js.native
   
+  @JSImport("@carbon/icons-react", "ZLpar")
+  @js.native
+  val ZLpar: CarbonIconType = js.native
+  
+  @JSImport("@carbon/icons-react", "ZSystems")
+  @js.native
+  val ZSystems: CarbonIconType = js.native
+  
   @JSImport("@carbon/icons-react", "Zip")
   @js.native
   val Zip: CarbonIconType = js.native
@@ -8167,6 +8431,14 @@ object mod {
   @JSImport("@carbon/icons-react", "ZoomReset")
   @js.native
   val ZoomReset: CarbonIconType = js.native
+  
+  @JSImport("@carbon/icons-react", "Zos")
+  @js.native
+  val Zos: CarbonIconType = js.native
+  
+  @JSImport("@carbon/icons-react", "ZosSysplex")
+  @js.native
+  val ZosSysplex: CarbonIconType = js.native
   
   @JSImport("@carbon/icons-react", "_4K")
   @js.native

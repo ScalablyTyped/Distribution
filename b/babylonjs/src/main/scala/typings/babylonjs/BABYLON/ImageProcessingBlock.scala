@@ -23,4 +23,9 @@ trait ImageProcessingBlock
     * Gets the output component
     */
   def output: NodeMaterialConnectionPoint = js.native
+  
+  /**
+    * Gets the rgb component
+    */
+  def rgb: NodeMaterialConnectionPoint = js.native
 }

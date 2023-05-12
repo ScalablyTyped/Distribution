@@ -21,5 +21,5 @@ trait VideoEncoder extends StObject {
   
   def reset(): Unit = js.native
   
-  val state: CodecState = js.native
+  val state: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CodecState */ Any = js.native
 }

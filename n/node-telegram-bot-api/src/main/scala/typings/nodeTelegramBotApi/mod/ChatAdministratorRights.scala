@@ -16,6 +16,8 @@ trait ChatAdministratorRights extends StObject {
   
   var can_manage_chat: Boolean
   
+  var can_manage_topics: js.UndefOr[Boolean] = js.undefined
+  
   var can_manage_video_chats: Boolean
   
   var can_pin_messages: js.UndefOr[Boolean] = js.undefined
@@ -58,6 +60,10 @@ object ChatAdministratorRights {
     inline def setCan_invite_users(value: Boolean): Self = StObject.set(x, "can_invite_users", value.asInstanceOf[js.Any])
     
     inline def setCan_manage_chat(value: Boolean): Self = StObject.set(x, "can_manage_chat", value.asInstanceOf[js.Any])
+    
+    inline def setCan_manage_topics(value: Boolean): Self = StObject.set(x, "can_manage_topics", value.asInstanceOf[js.Any])
+    
+    inline def setCan_manage_topicsUndefined: Self = StObject.set(x, "can_manage_topics", js.undefined)
     
     inline def setCan_manage_video_chats(value: Boolean): Self = StObject.set(x, "can_manage_video_chats", value.asInstanceOf[js.Any])
     

@@ -17,6 +17,11 @@ trait UpdateHypervisorInput extends StObject {
   var HypervisorArn: ServerArn
   
   /**
+    * The Amazon Resource Name (ARN) of the group of gateways within the requested log.
+    */
+  var LogGroupArn: js.UndefOr[typings.awsSdk.clientsBackupgatewayMod.LogGroupArn] = js.undefined
+  
+  /**
     * The updated name for the hypervisor
     */
   var Name: js.UndefOr[typings.awsSdk.clientsBackupgatewayMod.Name] = js.undefined
@@ -46,6 +51,10 @@ object UpdateHypervisorInput {
     inline def setHostUndefined: Self = StObject.set(x, "Host", js.undefined)
     
     inline def setHypervisorArn(value: ServerArn): Self = StObject.set(x, "HypervisorArn", value.asInstanceOf[js.Any])
+    
+    inline def setLogGroupArn(value: LogGroupArn): Self = StObject.set(x, "LogGroupArn", value.asInstanceOf[js.Any])
+    
+    inline def setLogGroupArnUndefined: Self = StObject.set(x, "LogGroupArn", js.undefined)
     
     inline def setName(value: Name): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

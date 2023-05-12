@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `200ContentApplicationjsonBillableowner` extends StObject {
   
-  /** Response when a user is able to create codespaces from the repository. */
+  /** @description Response when a user is able to create codespaces from the repository. */
   var `200`: ContentApplicationjsonBillableowner
   
   var `401`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['requires_authentication'] */ js.Any

@@ -12,7 +12,7 @@ trait CreateGameSessionInput extends StObject {
   var AliasId: js.UndefOr[AliasIdOrArn] = js.undefined
   
   /**
-    * A unique identifier for a player or entity creating the game session. This parameter is required when requesting a new game session on a fleet with a resource creation limit policy. This type of policy limits the number of concurrent active game sessions that one player can create within a certain time span. GameLift uses the CreatorId to evaluate the new request against the policy.
+    * A unique identifier for a player or entity creating the game session.  If you add a resource creation limit policy to a fleet, the CreateGameSession operation requires a CreatorId. Amazon GameLift limits the number of game session creation requests with the same CreatorId in a specified time period. If you your fleet doesn't have a resource creation limit policy and you provide a CreatorId in your CreateGameSession requests, Amazon GameLift limits requests to one request per CreatorId per second. To not limit CreateGameSession requests with the same CreatorId, don't provide a CreatorId in your CreateGameSession request.
     */
   var CreatorId: js.UndefOr[NonZeroAndMaxString] = js.undefined
   
@@ -22,17 +22,17 @@ trait CreateGameSessionInput extends StObject {
   var FleetId: js.UndefOr[FleetIdOrArn] = js.undefined
   
   /**
-    * A set of custom properties for a game session, formatted as key:value pairs. These properties are passed to a game server process in the GameSession object with a request to start a new game session (see Start a Game Session).
+    * A set of custom properties for a game session, formatted as key:value pairs. These properties are passed to a game server process with a request to start a new game session (see Start a Game Session).
     */
   var GameProperties: js.UndefOr[GamePropertyList] = js.undefined
   
   /**
-    * A set of custom game session properties, formatted as a single string value. This data is passed to a game server process in the GameSession object with a request to start a new game session (see Start a Game Session).
+    * A set of custom game session properties, formatted as a single string value. This data is passed to a game server process with a request to start a new game session (see Start a Game Session).
     */
   var GameSessionData: js.UndefOr[LargeGameSessionData] = js.undefined
   
   /**
-    *  This parameter is no longer preferred. Please use IdempotencyToken instead. Custom string that uniquely identifies a request for a new game session. Maximum token length is 48 characters. If provided, this string is included in the new game session's ID.
+    *  This parameter is deprecated. Use IdempotencyToken instead.  Custom string that uniquely identifies a request for a new game session. Maximum token length is 48 characters. If provided, this string is included in the new game session's ID.
     */
   var GameSessionId: js.UndefOr[IdStringModel] = js.undefined
   

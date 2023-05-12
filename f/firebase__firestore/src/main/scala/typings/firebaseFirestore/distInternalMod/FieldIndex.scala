@@ -30,11 +30,11 @@ trait FieldIndex extends StObject {
   val indexId: Double
   
   /** Shows how up-to-date the index is for the current user. */
-  val indexState: IndexState2
+  val indexState: IndexState
 }
 object FieldIndex {
   
-  inline def apply(collectionGroup: String, fields: js.Array[IndexSegment], indexId: Double, indexState: IndexState2): FieldIndex = {
+  inline def apply(collectionGroup: String, fields: js.Array[IndexSegment], indexId: Double, indexState: IndexState): FieldIndex = {
     val __obj = js.Dynamic.literal(collectionGroup = collectionGroup.asInstanceOf[js.Any], fields = fields.asInstanceOf[js.Any], indexId = indexId.asInstanceOf[js.Any], indexState = indexState.asInstanceOf[js.Any])
     __obj.asInstanceOf[FieldIndex]
   }
@@ -50,6 +50,6 @@ object FieldIndex {
     
     inline def setIndexId(value: Double): Self = StObject.set(x, "indexId", value.asInstanceOf[js.Any])
     
-    inline def setIndexState(value: IndexState2): Self = StObject.set(x, "indexState", value.asInstanceOf[js.Any])
+    inline def setIndexState(value: IndexState): Self = StObject.set(x, "indexState", value.asInstanceOf[js.Any])
   }
 }

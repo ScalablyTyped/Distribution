@@ -8,10 +8,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ReadingOptions extends StObject {
   
+  /**
+    * The encoding format to use when reading the file.
+    * @default EncodingType.UTF8
+    */
   var encoding: js.UndefOr[EncodingType | utf8 | base64] = js.undefined
   
+  /**
+    * Optional number of bytes to read. This option is only used when `encoding: FileSystem.EncodingType.Base64` and `position` is defined.
+    */
   var length: js.UndefOr[Double] = js.undefined
   
+  /**
+    * Optional number of bytes to skip. This option is only used when `encoding: FileSystem.EncodingType.Base64` and `length` is defined.
+    * */
   var position: js.UndefOr[Double] = js.undefined
 }
 object ReadingOptions {

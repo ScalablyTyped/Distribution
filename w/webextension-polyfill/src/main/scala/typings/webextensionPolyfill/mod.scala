@@ -1,6 +1,5 @@
 package typings.webextensionPolyfill
 
-import org.scalablytyped.runtime.Shortcut
 import typings.webextensionPolyfill.namespacesActionMod.Action.Static
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -64,44 +63,9 @@ object mod {
   @js.native
   val cookies: typings.webextensionPolyfill.namespacesCookiesMod.Cookies.Static = js.native
   
-  object declarativeContent extends Shortcut {
-    
-    @JSImport("webextension-polyfill", "declarativeContent")
-    @js.native
-    val ^ : typings.webextensionPolyfill.namespacesDeclarativeContentMod.DeclarativeContent.Static = js.native
-    
-    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
-    @JSImport("webextension-polyfill", "declarativeContent.PageStateMatcher")
-    @js.native
-    open class PageStateMatcher ()
-      extends StObject
-         with typings.webextensionPolyfill.namespacesDeclarativeContentMod.DeclarativeContent.PageStateMatcher {
-      def this(options: typings.webextensionPolyfill.namespacesDeclarativeContentMod.DeclarativeContent.PageStateMatcher) = this()
-    }
-    
-    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
-    @JSImport("webextension-polyfill", "declarativeContent.RequestContentScript")
-    @js.native
-    open class RequestContentScript ()
-      extends StObject
-         with typings.webextensionPolyfill.namespacesDeclarativeContentMod.DeclarativeContent.RequestContentScript {
-      def this(options: typings.webextensionPolyfill.namespacesDeclarativeContentMod.DeclarativeContent.RequestContentScript) = this()
-    }
-    
-    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
-    @JSImport("webextension-polyfill", "declarativeContent.SetIcon")
-    @js.native
-    open class SetIcon ()
-      extends StObject
-         with typings.webextensionPolyfill.namespacesDeclarativeContentMod.DeclarativeContent.SetIcon {
-      def this(options: typings.webextensionPolyfill.namespacesDeclarativeContentMod.DeclarativeContent.SetIcon) = this()
-    }
-    
-    type _To = typings.webextensionPolyfill.namespacesDeclarativeContentMod.DeclarativeContent.Static
-    
-    /* This means you don't have to write `^`, but can instead just say `declarativeContent.foo` */
-    override def _to: typings.webextensionPolyfill.namespacesDeclarativeContentMod.DeclarativeContent.Static = ^
-  }
+  @JSImport("webextension-polyfill", "declarativeNetRequest")
+  @js.native
+  val declarativeNetRequest: typings.webextensionPolyfill.namespacesDeclarativeNetRequestMod.DeclarativeNetRequest.Static = js.native
   
   @JSImport("webextension-polyfill", "devtools")
   @js.native
@@ -293,7 +257,7 @@ object mod {
     
     var cookies: typings.webextensionPolyfill.namespacesCookiesMod.Cookies.Static
     
-    var declarativeContent: typings.webextensionPolyfill.namespacesDeclarativeContentMod.DeclarativeContent.Static
+    var declarativeNetRequest: typings.webextensionPolyfill.namespacesDeclarativeNetRequestMod.DeclarativeNetRequest.Static
     
     var devtools: typings.webextensionPolyfill.namespacesDevtoolsMod.Devtools.Static
     
@@ -392,7 +356,7 @@ object mod {
       contextMenus: typings.webextensionPolyfill.namespacesContextMenusMod.ContextMenus.Static,
       contextualIdentities: typings.webextensionPolyfill.namespacesContextualIdentitiesMod.ContextualIdentities.Static,
       cookies: typings.webextensionPolyfill.namespacesCookiesMod.Cookies.Static,
-      declarativeContent: typings.webextensionPolyfill.namespacesDeclarativeContentMod.DeclarativeContent.Static,
+      declarativeNetRequest: typings.webextensionPolyfill.namespacesDeclarativeNetRequestMod.DeclarativeNetRequest.Static,
       devtools: typings.webextensionPolyfill.namespacesDevtoolsMod.Devtools.Static,
       dns: typings.webextensionPolyfill.namespacesDnsMod.Dns.Static,
       downloads: typings.webextensionPolyfill.namespacesDownloadsMod.Downloads.Static,
@@ -434,7 +398,7 @@ object mod {
       webRequest: typings.webextensionPolyfill.namespacesWebRequestMod.WebRequest.Static,
       windows: typings.webextensionPolyfill.namespacesWindowsMod.Windows.Static
     ): Browser = {
-      val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], activityLog = activityLog.asInstanceOf[js.Any], alarms = alarms.asInstanceOf[js.Any], bookmarks = bookmarks.asInstanceOf[js.Any], browserAction = browserAction.asInstanceOf[js.Any], browserSettings = browserSettings.asInstanceOf[js.Any], browsingData = browsingData.asInstanceOf[js.Any], captivePortal = captivePortal.asInstanceOf[js.Any], clipboard = clipboard.asInstanceOf[js.Any], commands = commands.asInstanceOf[js.Any], contentScripts = contentScripts.asInstanceOf[js.Any], contextMenus = contextMenus.asInstanceOf[js.Any], contextualIdentities = contextualIdentities.asInstanceOf[js.Any], cookies = cookies.asInstanceOf[js.Any], declarativeContent = declarativeContent.asInstanceOf[js.Any], devtools = devtools.asInstanceOf[js.Any], dns = dns.asInstanceOf[js.Any], downloads = downloads.asInstanceOf[js.Any], events = events.asInstanceOf[js.Any], experiments = experiments.asInstanceOf[js.Any], extensionTypes = extensionTypes.asInstanceOf[js.Any], find = find.asInstanceOf[js.Any], geckoProfiler = geckoProfiler.asInstanceOf[js.Any], history = history.asInstanceOf[js.Any], i18n = i18n.asInstanceOf[js.Any], identity = identity.asInstanceOf[js.Any], idle = idle.asInstanceOf[js.Any], management = management.asInstanceOf[js.Any], manifest = manifest.asInstanceOf[js.Any], menus = menus.asInstanceOf[js.Any], networkStatus = networkStatus.asInstanceOf[js.Any], normandyAddonStudy = normandyAddonStudy.asInstanceOf[js.Any], notifications = notifications.asInstanceOf[js.Any], omnibox = omnibox.asInstanceOf[js.Any], pageAction = pageAction.asInstanceOf[js.Any], permissions = permissions.asInstanceOf[js.Any], pkcs11 = pkcs11.asInstanceOf[js.Any], privacy = privacy.asInstanceOf[js.Any], proxy = proxy.asInstanceOf[js.Any], runtime = runtime.asInstanceOf[js.Any], scripting = scripting.asInstanceOf[js.Any], search = search.asInstanceOf[js.Any], sessions = sessions.asInstanceOf[js.Any], sidebarAction = sidebarAction.asInstanceOf[js.Any], storage = storage.asInstanceOf[js.Any], tabs = tabs.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any], topSites = topSites.asInstanceOf[js.Any], types = types.asInstanceOf[js.Any], urlbar = urlbar.asInstanceOf[js.Any], userScripts = userScripts.asInstanceOf[js.Any], webNavigation = webNavigation.asInstanceOf[js.Any], webRequest = webRequest.asInstanceOf[js.Any], windows = windows.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], activityLog = activityLog.asInstanceOf[js.Any], alarms = alarms.asInstanceOf[js.Any], bookmarks = bookmarks.asInstanceOf[js.Any], browserAction = browserAction.asInstanceOf[js.Any], browserSettings = browserSettings.asInstanceOf[js.Any], browsingData = browsingData.asInstanceOf[js.Any], captivePortal = captivePortal.asInstanceOf[js.Any], clipboard = clipboard.asInstanceOf[js.Any], commands = commands.asInstanceOf[js.Any], contentScripts = contentScripts.asInstanceOf[js.Any], contextMenus = contextMenus.asInstanceOf[js.Any], contextualIdentities = contextualIdentities.asInstanceOf[js.Any], cookies = cookies.asInstanceOf[js.Any], declarativeNetRequest = declarativeNetRequest.asInstanceOf[js.Any], devtools = devtools.asInstanceOf[js.Any], dns = dns.asInstanceOf[js.Any], downloads = downloads.asInstanceOf[js.Any], events = events.asInstanceOf[js.Any], experiments = experiments.asInstanceOf[js.Any], extensionTypes = extensionTypes.asInstanceOf[js.Any], find = find.asInstanceOf[js.Any], geckoProfiler = geckoProfiler.asInstanceOf[js.Any], history = history.asInstanceOf[js.Any], i18n = i18n.asInstanceOf[js.Any], identity = identity.asInstanceOf[js.Any], idle = idle.asInstanceOf[js.Any], management = management.asInstanceOf[js.Any], manifest = manifest.asInstanceOf[js.Any], menus = menus.asInstanceOf[js.Any], networkStatus = networkStatus.asInstanceOf[js.Any], normandyAddonStudy = normandyAddonStudy.asInstanceOf[js.Any], notifications = notifications.asInstanceOf[js.Any], omnibox = omnibox.asInstanceOf[js.Any], pageAction = pageAction.asInstanceOf[js.Any], permissions = permissions.asInstanceOf[js.Any], pkcs11 = pkcs11.asInstanceOf[js.Any], privacy = privacy.asInstanceOf[js.Any], proxy = proxy.asInstanceOf[js.Any], runtime = runtime.asInstanceOf[js.Any], scripting = scripting.asInstanceOf[js.Any], search = search.asInstanceOf[js.Any], sessions = sessions.asInstanceOf[js.Any], sidebarAction = sidebarAction.asInstanceOf[js.Any], storage = storage.asInstanceOf[js.Any], tabs = tabs.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any], topSites = topSites.asInstanceOf[js.Any], types = types.asInstanceOf[js.Any], urlbar = urlbar.asInstanceOf[js.Any], userScripts = userScripts.asInstanceOf[js.Any], webNavigation = webNavigation.asInstanceOf[js.Any], webRequest = webRequest.asInstanceOf[js.Any], windows = windows.asInstanceOf[js.Any])
       __obj.updateDynamic("extension")(`extension`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Browser]
     }
@@ -470,7 +434,9 @@ object mod {
       
       inline def setCookies(value: typings.webextensionPolyfill.namespacesCookiesMod.Cookies.Static): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
       
-      inline def setDeclarativeContent(value: typings.webextensionPolyfill.namespacesDeclarativeContentMod.DeclarativeContent.Static): Self = StObject.set(x, "declarativeContent", value.asInstanceOf[js.Any])
+      inline def setDeclarativeNetRequest(
+        value: typings.webextensionPolyfill.namespacesDeclarativeNetRequestMod.DeclarativeNetRequest.Static
+      ): Self = StObject.set(x, "declarativeNetRequest", value.asInstanceOf[js.Any])
       
       inline def setDevtools(value: typings.webextensionPolyfill.namespacesDevtoolsMod.Devtools.Static): Self = StObject.set(x, "devtools", value.asInstanceOf[js.Any])
       

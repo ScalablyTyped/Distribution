@@ -231,6 +231,13 @@ trait NodeMaterial
   def generateCode(): String = js.native
   
   /**
+    * Gets the list of all texture blocks
+    * Note that this method will scan all attachedBlocks and return blocks that are texture blocks
+    * @returns
+    */
+  def getAllTextureBlocks(): js.Array[NodeMaterialTextureBlocks] = js.native
+  
+  /**
     * Get a block by its name
     * @param name defines the name of the block to retrieve
     * @returns the required block or null if not found
@@ -259,11 +266,10 @@ trait NodeMaterial
   
   /**
     * Gets the list of texture blocks
+    * Note that this method will only return blocks that are reachable from the final block(s) and only after the material has been built!
     * @returns an array of texture blocks
     */
-  def getTextureBlocks(): js.Array[
-    TextureBlock | ReflectionTextureBaseBlock | RefractionBlock | CurrentScreenBlock | ParticleTextureBlock | ImageSourceBlock
-  ] = js.native
+  def getTextureBlocks(): js.Array[NodeMaterialTextureBlocks] = js.native
   
   /**
     * Gets or sets a boolean indicating that alpha value must be ignored (This will turn alpha blending off even if an alpha value is produced by the material)

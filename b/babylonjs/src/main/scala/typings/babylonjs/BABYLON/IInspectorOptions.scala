@@ -1,5 +1,6 @@
 package typings.babylonjs.BABYLON
 
+import typings.babylonjs.anon.PartialRecordIInspectorCoMaterials
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,6 +12,16 @@ trait IInspectorOptions extends StObject {
     * Optional list of additional top level nodes
     */
   var additionalNodes: js.UndefOr[js.Array[IExplorerAdditionalNode]] = js.undefined
+  
+  /**
+    * Context menu for inspector tools such as "Post Process", "Nodes", "Materials", etc.
+    */
+  var contextMenu: js.UndefOr[PartialRecordIInspectorCoMaterials] = js.undefined
+  
+  /**
+    * List of context menu items that should be completely overridden by custom items from the contextMenu property.
+    */
+  var contextMenuOverride: js.UndefOr[js.Array[IInspectorContextMenuType]] = js.undefined
   
   /**
     * Display in embed mode (both panes on the right)
@@ -87,6 +98,16 @@ object IInspectorOptions {
     inline def setAdditionalNodesUndefined: Self = StObject.set(x, "additionalNodes", js.undefined)
     
     inline def setAdditionalNodesVarargs(value: IExplorerAdditionalNode*): Self = StObject.set(x, "additionalNodes", js.Array(value*))
+    
+    inline def setContextMenu(value: PartialRecordIInspectorCoMaterials): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
+    
+    inline def setContextMenuOverride(value: js.Array[IInspectorContextMenuType]): Self = StObject.set(x, "contextMenuOverride", value.asInstanceOf[js.Any])
+    
+    inline def setContextMenuOverrideUndefined: Self = StObject.set(x, "contextMenuOverride", js.undefined)
+    
+    inline def setContextMenuOverrideVarargs(value: IInspectorContextMenuType*): Self = StObject.set(x, "contextMenuOverride", js.Array(value*))
+    
+    inline def setContextMenuUndefined: Self = StObject.set(x, "contextMenu", js.undefined)
     
     inline def setEmbedMode(value: Boolean): Self = StObject.set(x, "embedMode", value.asInstanceOf[js.Any])
     

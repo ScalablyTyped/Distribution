@@ -17,7 +17,7 @@ trait ChangeLog extends StObject {
   var createdAt: js.UndefOr[js.Date] = js.undefined
   
   /**
-    *  The IAM user or role that performed the action. 
+    *  The user or role that performed the action. 
     */
   var createdBy: js.UndefOr[IamArn] = js.undefined
   

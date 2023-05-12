@@ -62,6 +62,7 @@ import typings.csstype.mod.Property.MaskBorderSource
 import typings.csstype.mod.Property.MaskBorderWidth
 import typings.csstype.mod.Property.MaxInlineSize
 import typings.csstype.mod.Property.MozAppearance
+import typings.csstype.mod.Property.MozBinding
 import typings.csstype.mod.Property.MozBorderBottomColors
 import typings.csstype.mod.Property.MozBorderLeftColors
 import typings.csstype.mod.Property.MozBorderRightColors
@@ -213,6 +214,10 @@ trait VendorLonghandPropertiesFallback[TLength, TTime] extends StObject {
   ] = js.undefined
   
   var MozBackfaceVisibility: js.UndefOr[BackfaceVisibility | js.Array[NonNullable[js.UndefOr[BackfaceVisibility]]]] = js.undefined
+  
+  var MozBinding: js.UndefOr[
+    typings.csstype.mod.Property.MozBinding | js.Array[NonNullable[js.UndefOr[typings.csstype.mod.Property.MozBinding]]]
+  ] = js.undefined
   
   var MozBorderBottomColors: js.UndefOr[
     typings.csstype.mod.Property.MozBorderBottomColors | js.Array[NonNullable[js.UndefOr[typings.csstype.mod.Property.MozBorderBottomColors]]]
@@ -895,6 +900,12 @@ object VendorLonghandPropertiesFallback {
     inline def setMozBackfaceVisibilityUndefined: Self = StObject.set(x, "MozBackfaceVisibility", js.undefined)
     
     inline def setMozBackfaceVisibilityVarargs(value: NonNullable[js.UndefOr[BackfaceVisibility]]*): Self = StObject.set(x, "MozBackfaceVisibility", js.Array(value*))
+    
+    inline def setMozBinding(value: MozBinding | js.Array[NonNullable[js.UndefOr[MozBinding]]]): Self = StObject.set(x, "MozBinding", value.asInstanceOf[js.Any])
+    
+    inline def setMozBindingUndefined: Self = StObject.set(x, "MozBinding", js.undefined)
+    
+    inline def setMozBindingVarargs(value: NonNullable[js.UndefOr[MozBinding]]*): Self = StObject.set(x, "MozBinding", js.Array(value*))
     
     inline def setMozBorderBottomColors(value: MozBorderBottomColors | js.Array[NonNullable[js.UndefOr[MozBorderBottomColors]]]): Self = StObject.set(x, "MozBorderBottomColors", value.asInstanceOf[js.Any])
     

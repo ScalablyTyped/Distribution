@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Element
 import typings.std.Omit
 import typings.std.Record
-import typings.vueRuntimeCore.mod.App
 import typings.vueRuntimeCore.mod.ComponentInternalInstance
 import typings.vueRuntimeCore.mod.ComponentOptionsBase
 import typings.vueRuntimeCore.mod.ComponentPublicInstance
@@ -18,7 +17,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Omit<@vue/test-utils.@vue/test-utils/dist/vueWrapper.VueWrapper<vue.vue.ComponentPublicInstance<{}, {}, {}, {}, {}, {}, {}, {}, false, @vue/runtime-core.@vue/runtime-core.ComponentOptionsBase<any, any, any, any, any, any, any, any, any, {}, {}, string>, {}>>, 'exists'> */
+/* Inlined std.Omit<@vue/test-utils.@vue/test-utils/dist/vueWrapper.VueWrapper<vue.vue.ComponentPublicInstance<{}, {}, {}, {}, {}, {}, {}, {}, false, @vue/runtime-core.@vue/runtime-core.ComponentOptionsBase<any, any, any, any, any, any, any, any, any, {}, {}, string, {}>, {}, {}>>, 'exists'> */
 trait OmitVueWrapperComponentPu extends StObject {
   
   var __app: Any
@@ -41,7 +40,7 @@ trait OmitVueWrapperComponentPu extends StObject {
   
   @JSName("constructor")
   var constructor_Original: js.Function3[
-    /* app */ App[Any] | Null, 
+    /* app */ typings.vueRuntimeCore.mod.App[Any] | Null, 
     /* vm */ ComponentPublicInstance[
       js.Object, 
       js.Object, 
@@ -52,7 +51,8 @@ trait OmitVueWrapperComponentPu extends StObject {
       js.Object, 
       js.Object, 
       `false`, 
-      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String, js.Object], 
+      js.Object, 
       js.Object
     ], 
     /* setProps */ js.UndefOr[js.Function1[/* props */ Record[String, Any], Unit]], 
@@ -204,7 +204,8 @@ trait OmitVueWrapperComponentPu extends StObject {
     js.Object, 
     js.Object, 
     `false`, 
-    ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+    ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String, js.Object], 
+    js.Object, 
     js.Object
   ]
   @JSName("vm")
@@ -219,7 +220,8 @@ trait OmitVueWrapperComponentPu extends StObject {
       js.Object, 
       js.Object, 
       `false`, 
-      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String, js.Object], 
+      js.Object, 
       js.Object
     ]
   ]
@@ -236,7 +238,7 @@ object OmitVueWrapperComponentPu {
     classes: () => js.Array[String],
     cleanUpCallbacks: Any,
     componentVM: Any,
-    constructor: (/* app */ App[Any] | Null, /* vm */ ComponentPublicInstance[
+    constructor: (/* app */ typings.vueRuntimeCore.mod.App[Any] | Null, /* vm */ ComponentPublicInstance[
       js.Object, 
       js.Object, 
       js.Object, 
@@ -246,7 +248,8 @@ object OmitVueWrapperComponentPu {
       js.Object, 
       js.Object, 
       `false`, 
-      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String, js.Object], 
+      js.Object, 
       js.Object
     ], /* setProps */ js.UndefOr[js.Function1[/* props */ Record[String, Any], Unit]]) => Any,
     element: () => Element,
@@ -294,7 +297,8 @@ object OmitVueWrapperComponentPu {
       js.Object, 
       js.Object, 
       `false`, 
-      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+      ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String, js.Object], 
+      js.Object, 
       js.Object
     ],
     wrapperElement: VueNodeNode
@@ -317,7 +321,7 @@ object OmitVueWrapperComponentPu {
     inline def setComponentVM(value: Any): Self = StObject.set(x, "componentVM", value.asInstanceOf[js.Any])
     
     inline def setConstructor(
-      value: (/* app */ App[Any] | Null, /* vm */ ComponentPublicInstance[
+      value: (/* app */ typings.vueRuntimeCore.mod.App[Any] | Null, /* vm */ ComponentPublicInstance[
           js.Object, 
           js.Object, 
           js.Object, 
@@ -327,7 +331,8 @@ object OmitVueWrapperComponentPu {
           js.Object, 
           js.Object, 
           `false`, 
-          ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+          ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String, js.Object], 
+          js.Object, 
           js.Object
         ], /* setProps */ js.UndefOr[js.Function1[/* props */ Record[String, Any], Unit]]) => Any
     ): Self = StObject.set(x, "constructor", js.Any.fromFunction3(value))
@@ -410,7 +415,8 @@ object OmitVueWrapperComponentPu {
           js.Object, 
           js.Object, 
           `false`, 
-          ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+          ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String, js.Object], 
+          js.Object, 
           js.Object
         ]
     ): Self = StObject.set(x, "vm", js.Any.fromFunction0(value))

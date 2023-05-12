@@ -21,7 +21,7 @@ object mod {
     def this(props: OffCanvasProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: OffCanvasProps, context: Any) = this()
   }
@@ -33,7 +33,7 @@ object mod {
     def this(props: OffCanvasBodyProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: OffCanvasBodyProps, context: Any) = this()
   }
@@ -45,7 +45,7 @@ object mod {
     def this(props: OffCanvasMenuProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: OffCanvasMenuProps, context: Any) = this()
   }

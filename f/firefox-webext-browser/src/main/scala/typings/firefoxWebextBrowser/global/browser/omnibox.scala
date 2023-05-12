@@ -21,6 +21,11 @@ object omnibox {
   @js.native
   val ^ : js.Any = js.native
   
+  /** User has deleted a suggested result. */
+  @JSGlobal("browser.omnibox.onDeleteSuggestion")
+  @js.native
+  val onDeleteSuggestion: WebExtEvent[js.Function1[/* text */ String, Unit]] = js.native
+  
   /** User has ended the keyword input session without accepting the input. */
   @JSGlobal("browser.omnibox.onInputCancelled")
   @js.native

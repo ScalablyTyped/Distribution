@@ -4,49 +4,79 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+  * A pool of reusable objects of the same type. Designed to promote reuse of objects to reduce
+  * garbage collection.
+  *
+  * @ignore
+  */
 trait ObjectPool extends StObject {
   
-  var _constructor: Any
+  var _constructor: js.Function
   
-  var _count: Double
+  /**
+    * The number of object instances that are currently allocated.
+    *
+    * @type {number}
+    * @private
+    */
+  /* private */ var _count: Any
   
-  var _pool: js.Array[Any]
+  /**
+    * Array of object instances.
+    *
+    * @type {object[]}
+    * @private
+    */
+  /* private */ var _pool: Any
   
-  def _resize(size: Any): Unit
+  /**
+    * @param {number} size - The number of object instances to allocate.
+    * @private
+    */
+  /* private */ var _resize: Any
   
-  def allocate(): Any
+  /**
+    * Returns an object instance from the pool. If no instances are available, the pool will be
+    * doubled in size and a new instance will be returned.
+    *
+    * @returns {object} An object instance from the pool.
+    */
+  def allocate(): js.Object
   
+  /**
+    * All object instances in the pool will be available again. The pool itself will not be
+    * resized.
+    */
   def freeAll(): Unit
 }
 object ObjectPool {
   
   inline def apply(
-    _constructor: Any,
-    _count: Double,
-    _pool: js.Array[Any],
-    _resize: Any => Unit,
-    allocate: () => Any,
+    _constructor: js.Function,
+    _count: Any,
+    _pool: Any,
+    _resize: Any,
+    allocate: () => js.Object,
     freeAll: () => Unit
   ): ObjectPool = {
-    val __obj = js.Dynamic.literal(_constructor = _constructor.asInstanceOf[js.Any], _count = _count.asInstanceOf[js.Any], _pool = _pool.asInstanceOf[js.Any], _resize = js.Any.fromFunction1(_resize), allocate = js.Any.fromFunction0(allocate), freeAll = js.Any.fromFunction0(freeAll))
+    val __obj = js.Dynamic.literal(_constructor = _constructor.asInstanceOf[js.Any], _count = _count.asInstanceOf[js.Any], _pool = _pool.asInstanceOf[js.Any], _resize = _resize.asInstanceOf[js.Any], allocate = js.Any.fromFunction0(allocate), freeAll = js.Any.fromFunction0(freeAll))
     __obj.asInstanceOf[ObjectPool]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: ObjectPool] (val x: Self) extends AnyVal {
     
-    inline def setAllocate(value: () => Any): Self = StObject.set(x, "allocate", js.Any.fromFunction0(value))
+    inline def setAllocate(value: () => js.Object): Self = StObject.set(x, "allocate", js.Any.fromFunction0(value))
     
     inline def setFreeAll(value: () => Unit): Self = StObject.set(x, "freeAll", js.Any.fromFunction0(value))
     
-    inline def set_constructor(value: Any): Self = StObject.set(x, "_constructor", value.asInstanceOf[js.Any])
+    inline def set_constructor(value: js.Function): Self = StObject.set(x, "_constructor", value.asInstanceOf[js.Any])
     
-    inline def set_count(value: Double): Self = StObject.set(x, "_count", value.asInstanceOf[js.Any])
+    inline def set_count(value: Any): Self = StObject.set(x, "_count", value.asInstanceOf[js.Any])
     
-    inline def set_pool(value: js.Array[Any]): Self = StObject.set(x, "_pool", value.asInstanceOf[js.Any])
+    inline def set_pool(value: Any): Self = StObject.set(x, "_pool", value.asInstanceOf[js.Any])
     
-    inline def set_poolVarargs(value: Any*): Self = StObject.set(x, "_pool", js.Array(value*))
-    
-    inline def set_resize(value: Any => Unit): Self = StObject.set(x, "_resize", js.Any.fromFunction1(value))
+    inline def set_resize(value: Any): Self = StObject.set(x, "_resize", value.asInstanceOf[js.Any])
   }
 }

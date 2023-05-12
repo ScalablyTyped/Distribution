@@ -66,7 +66,7 @@ trait FileSystem extends StObject {
   var OpenZFSConfiguration: js.UndefOr[OpenZFSFileSystemConfiguration] = js.undefined
   
   /**
-    * The Amazon Web Services account that created the file system. If the file system was created by an Identity and Access Management (IAM) user, the Amazon Web Services account to which the IAM user belongs is the owner.
+    * The Amazon Web Services account that created the file system. If the file system was created by a user in IAM Identity Center, the Amazon Web Services account to which the IAM user belongs is the owner.
     */
   var OwnerId: js.UndefOr[AWSAccountId] = js.undefined
   

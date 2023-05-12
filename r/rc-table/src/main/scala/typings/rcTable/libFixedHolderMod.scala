@@ -5,11 +5,11 @@ import typings.rcTable.anon.CurrentTarget
 import typings.rcTable.libHeaderHeaderMod.HeaderProps
 import typings.rcTable.libInterfaceMod.ColumnType
 import typings.rcTable.libInterfaceMod.ColumnsType
+import typings.rcTable.libInterfaceMod.Direction
 import typings.rcTable.libInterfaceMod.StickyOffsets
-import typings.rcTable.rcTableStrings.ltr
-import typings.rcTable.rcTableStrings.rtl
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.HTMLAttributes
+import typings.react.mod.MemoExoticComponent
 import typings.react.mod.ReactNode
 import typings.react.mod.RefAttributes
 import typings.react.mod.TdHTMLAttributes
@@ -20,9 +20,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object libFixedHolderMod extends Shortcut {
   
+  /** Return a table in div as fixed element which contains sticky info */
   @JSImport("rc-table/lib/FixedHolder", JSImport.Default)
   @js.native
-  val default: ForwardRefExoticComponent[FixedHeaderProps[Any] & RefAttributes[HTMLDivElement]] = js.native
+  val default: MemoExoticComponent[ForwardRefExoticComponent[FixedHeaderProps[Any] & RefAttributes[HTMLDivElement]]] = js.native
   
   trait FixedHeaderProps[RecordType]
     extends StObject
@@ -36,7 +37,7 @@ object libFixedHolderMod extends Shortcut {
     
     var columCount: Double
     
-    var direction: ltr | rtl
+    var direction: Direction
     
     var fixHeader: Boolean
     
@@ -60,7 +61,7 @@ object libFixedHolderMod extends Shortcut {
       colWidths: js.Array[Double],
       columCount: Double,
       columns: ColumnsType[RecordType],
-      direction: ltr | rtl,
+      direction: Direction,
       fixHeader: Boolean,
       flattenColumns: js.Array[ColumnType[RecordType]],
       maxContentScroll: Boolean,
@@ -86,7 +87,7 @@ object libFixedHolderMod extends Shortcut {
       
       inline def setColumCount(value: Double): Self = StObject.set(x, "columCount", value.asInstanceOf[js.Any])
       
-      inline def setDirection(value: ltr | rtl): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: Direction): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
       inline def setFixHeader(value: Boolean): Self = StObject.set(x, "fixHeader", value.asInstanceOf[js.Any])
       
@@ -110,8 +111,8 @@ object libFixedHolderMod extends Shortcut {
     }
   }
   
-  type _To = ForwardRefExoticComponent[FixedHeaderProps[Any] & RefAttributes[HTMLDivElement]]
+  type _To = MemoExoticComponent[ForwardRefExoticComponent[FixedHeaderProps[Any] & RefAttributes[HTMLDivElement]]]
   
   /* This means you don't have to write `default`, but can instead just say `libFixedHolderMod.foo` */
-  override def _to: ForwardRefExoticComponent[FixedHeaderProps[Any] & RefAttributes[HTMLDivElement]] = default
+  override def _to: MemoExoticComponent[ForwardRefExoticComponent[FixedHeaderProps[Any] & RefAttributes[HTMLDivElement]]] = default
 }

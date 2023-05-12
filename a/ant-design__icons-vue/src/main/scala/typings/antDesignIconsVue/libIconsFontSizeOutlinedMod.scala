@@ -16,7 +16,7 @@ object libIconsFontSizeOutlinedMod extends Shortcut {
   @js.native
   trait FontSizeOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_FontSizeOutlinedIconType: String = js.native

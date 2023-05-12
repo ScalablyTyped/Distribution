@@ -27,9 +27,14 @@ trait RecommendationJobInputConfig extends StObject {
   var JobDurationInSeconds: js.UndefOr[typings.awsSdk.clientsSagemakerMod.JobDurationInSeconds] = js.undefined
   
   /**
+    * The name of the created model.
+    */
+  var ModelName: js.UndefOr[typings.awsSdk.clientsSagemakerMod.ModelName] = js.undefined
+  
+  /**
     * The Amazon Resource Name (ARN) of a versioned model package.
     */
-  var ModelPackageVersionArn: ModelPackageArn
+  var ModelPackageVersionArn: js.UndefOr[ModelPackageArn] = js.undefined
   
   /**
     * Defines the resource limit of the job.
@@ -45,11 +50,16 @@ trait RecommendationJobInputConfig extends StObject {
     * The Amazon Resource Name (ARN) of a Amazon Web Services Key Management Service (Amazon Web Services KMS) key that Amazon SageMaker uses to encrypt data on the storage volume attached to the ML compute instance that hosts the endpoint. This key will be passed to SageMaker Hosting for endpoint creation.  The SageMaker execution role must have kms:CreateGrant permission in order to encrypt data on the storage volume of the endpoints created for inference recommendation. The inference recommendation job will fail asynchronously during endpoint configuration creation if the role passed does not have kms:CreateGrant permission. The KmsKeyId can be any of the following formats:   // KMS Key ID  "1234abcd-12ab-34cd-56ef-1234567890ab"    // Amazon Resource Name (ARN) of a KMS Key  "arn:aws:kms:&lt;region&gt;:&lt;account&gt;:key/&lt;key-id-12ab-34cd-56ef-1234567890ab&gt;"    // KMS Key Alias  "alias/ExampleAlias"    // Amazon Resource Name (ARN) of a KMS Key Alias  "arn:aws:kms:&lt;region&gt;:&lt;account&gt;:alias/&lt;ExampleAlias&gt;"    For more information about key identifiers, see Key identifiers (KeyID) in the Amazon Web Services Key Management Service (Amazon Web Services KMS) documentation.
     */
   var VolumeKmsKeyId: js.UndefOr[KmsKeyId] = js.undefined
+  
+  /**
+    * Inference Recommender provisions SageMaker endpoints with access to VPC in the inference recommendation job.
+    */
+  var VpcConfig: js.UndefOr[RecommendationJobVpcConfig] = js.undefined
 }
 object RecommendationJobInputConfig {
   
-  inline def apply(ModelPackageVersionArn: ModelPackageArn): RecommendationJobInputConfig = {
-    val __obj = js.Dynamic.literal(ModelPackageVersionArn = ModelPackageVersionArn.asInstanceOf[js.Any])
+  inline def apply(): RecommendationJobInputConfig = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RecommendationJobInputConfig]
   }
   
@@ -76,7 +86,13 @@ object RecommendationJobInputConfig {
     
     inline def setJobDurationInSecondsUndefined: Self = StObject.set(x, "JobDurationInSeconds", js.undefined)
     
+    inline def setModelName(value: ModelName): Self = StObject.set(x, "ModelName", value.asInstanceOf[js.Any])
+    
+    inline def setModelNameUndefined: Self = StObject.set(x, "ModelName", js.undefined)
+    
     inline def setModelPackageVersionArn(value: ModelPackageArn): Self = StObject.set(x, "ModelPackageVersionArn", value.asInstanceOf[js.Any])
+    
+    inline def setModelPackageVersionArnUndefined: Self = StObject.set(x, "ModelPackageVersionArn", js.undefined)
     
     inline def setResourceLimit(value: RecommendationJobResourceLimit): Self = StObject.set(x, "ResourceLimit", value.asInstanceOf[js.Any])
     
@@ -89,5 +105,9 @@ object RecommendationJobInputConfig {
     inline def setVolumeKmsKeyId(value: KmsKeyId): Self = StObject.set(x, "VolumeKmsKeyId", value.asInstanceOf[js.Any])
     
     inline def setVolumeKmsKeyIdUndefined: Self = StObject.set(x, "VolumeKmsKeyId", js.undefined)
+    
+    inline def setVpcConfig(value: RecommendationJobVpcConfig): Self = StObject.set(x, "VpcConfig", value.asInstanceOf[js.Any])
+    
+    inline def setVpcConfigUndefined: Self = StObject.set(x, "VpcConfig", js.undefined)
   }
 }

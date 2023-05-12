@@ -14,6 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CallSignatureDeclaration
   extends StObject
      with SignatureDeclarationBase
+     with LocalsContainer
      with HasJSDoc
      with SignatureDeclaration {
   

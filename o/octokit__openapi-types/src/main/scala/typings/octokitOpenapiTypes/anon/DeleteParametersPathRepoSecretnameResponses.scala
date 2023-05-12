@@ -6,41 +6,49 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DeleteParametersPathRepoSecretnameResponses extends StObject {
   
-  /** Deletes a secret in a repository using the secret name. You must authenticate using an access token with the `repo` scope to use this endpoint. GitHub Apps must have the `secrets` repository permission to use this endpoint. */
+  /**
+    * Delete a repository secret
+    * @description Deletes a secret in a repository using the secret name. You must authenticate using an access token with the `repo` scope to use this endpoint. GitHub Apps must have the `secrets` repository permission to use this endpoint.
+    */
   var delete: ParametersPathRepoSecretnameResponses
   
-  /** Gets a single repository secret without revealing its encrypted value. You must authenticate using an access token with the `repo` scope to use this endpoint. GitHub Apps must have the `secrets` repository permission to use this endpoint. */
+  /**
+    * Get a repository secret
+    * @description Gets a single repository secret without revealing its encrypted value. You must authenticate using an access token with the `repo` scope to use this endpoint. GitHub Apps must have the `secrets` repository permission to use this endpoint.
+    */
   var get: ParametersPathRepoSecretname
   
   /**
-    * Creates or updates a repository secret with an encrypted value. Encrypt your secret using
+    * Create or update a repository secret
+    * @description Creates or updates a repository secret with an encrypted value. Encrypt your secret using
     * [LibSodium](https://libsodium.gitbook.io/doc/bindings_for_other_languages). You must authenticate using an access
     * token with the `repo` scope to use this endpoint. GitHub Apps must have the `secrets` repository permission to use
     * this endpoint.
     *
     * #### Example encrypting a secret using Node.js
     *
-    * Encrypt your secret using the [tweetsodium](https://github.com/github/tweetsodium) library.
+    * Encrypt your secret using the [libsodium-wrappers](https://www.npmjs.com/package/libsodium-wrappers) library.
     *
     * ```
-    * const sodium = require('tweetsodium');
+    * const sodium = require('libsodium-wrappers')
+    * const secret = 'plain-text-secret' // replace with the secret you want to encrypt
+    * const key = 'base64-encoded-public-key' // replace with the Base64 encoded public key
     *
-    * const key = "base64-encoded-public-key";
-    * const value = "plain-text-secret";
+    * //Check if libsodium is ready and then proceed.
+    * sodium.ready.then(() => {
+    *   // Convert Secret & Base64 key to Uint8Array.
+    *   let binkey = sodium.from_base64(key, sodium.base64_variants.ORIGINAL)
+    *   let binsec = sodium.from_string(secret)
     *
-    * // Convert the message and key to Uint8Array's (Buffer implements that interface)
-    * const messageBytes = Buffer.from(value);
-    * const keyBytes = Buffer.from(key, 'base64');
+    *   //Encrypt the secret using LibSodium
+    *   let encBytes = sodium.crypto_box_seal(binsec, binkey)
     *
-    * // Encrypt using LibSodium.
-    * const encryptedBytes = sodium.seal(messageBytes, keyBytes);
+    *   // Convert encrypted Uint8Array to Base64
+    *   let output = sodium.to_base64(encBytes, sodium.base64_variants.ORIGINAL)
     *
-    * // Base64 the encrypted secret
-    * const encrypted = Buffer.from(encryptedBytes).toString('base64');
-    *
-    * console.log(encrypted);
+    *   console.log(output)
+    * });
     * ```
-    *
     *
     * #### Example encrypting a secret using Python
     *
@@ -89,14 +97,14 @@ trait DeleteParametersPathRepoSecretnameResponses extends StObject {
     * puts Base64.strict_encode64(encrypted_secret)
     * ```
     */
-  var put: RequestBodyContentApplicationjsonEncryptedvalueKeyid
+  var put: RequestBodyContentApplicationjson163
 }
 object DeleteParametersPathRepoSecretnameResponses {
   
   inline def apply(
     delete: ParametersPathRepoSecretnameResponses,
     get: ParametersPathRepoSecretname,
-    put: RequestBodyContentApplicationjsonEncryptedvalueKeyid
+    put: RequestBodyContentApplicationjson163
   ): DeleteParametersPathRepoSecretnameResponses = {
     val __obj = js.Dynamic.literal(delete = delete.asInstanceOf[js.Any], get = get.asInstanceOf[js.Any], put = put.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteParametersPathRepoSecretnameResponses]
@@ -109,6 +117,6 @@ object DeleteParametersPathRepoSecretnameResponses {
     
     inline def setGet(value: ParametersPathRepoSecretname): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     
-    inline def setPut(value: RequestBodyContentApplicationjsonEncryptedvalueKeyid): Self = StObject.set(x, "put", value.asInstanceOf[js.Any])
+    inline def setPut(value: RequestBodyContentApplicationjson163): Self = StObject.set(x, "put", value.asInstanceOf[js.Any])
   }
 }

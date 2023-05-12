@@ -1,7 +1,7 @@
 package typings.s3DownloadStream
 
-import typings.awsSdk.clientsS3Mod.GetObjectRequest
-import typings.awsSdk.mod.S3
+import typings.awsSdk2Types.clientsS3Mod.GetObjectRequest
+import typings.awsSdk2Types.mod.S3
 import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

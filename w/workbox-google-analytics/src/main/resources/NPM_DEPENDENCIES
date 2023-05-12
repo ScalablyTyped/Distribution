@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "workbox-google-analytics" : "6.5.4"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "workbox-google-analytics" : "6.5.4"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

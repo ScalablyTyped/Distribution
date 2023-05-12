@@ -12,7 +12,7 @@ trait TagResourceRequest extends StObject {
   var resourceArn: ResourceArn
   
   /**
-    * Array of tags to be added or updated. See Tagging Amazon Web Services Resources for more information, including restrictions that apply to tags and "Tag naming limits and requirements"; Amazon IVS has no service-specific constraints beyond what is documented there.
+    * Array of tags to be added or updated. Array of maps, each of the form string:string (key:value). See Tagging Amazon Web Services Resources for more information, including restrictions that apply to tags and "Tag naming limits and requirements"; Amazon IVS has no service-specific constraints beyond what is documented there.
     */
   var tags: Tags
 }

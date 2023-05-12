@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PersonasSummary extends StObject {
   
   /**
-    * The date-time the summary information was created.
+    * The Unix timestamp when the summary information was created.
     */
   var CreatedAt: js.UndefOr[js.Date] = js.undefined
   
@@ -22,7 +22,7 @@ trait PersonasSummary extends StObject {
   var Persona: js.UndefOr[typings.awsSdk.clientsKendraMod.Persona] = js.undefined
   
   /**
-    * The date-time the summary information was last updated.
+    * The Unix timestamp when the summary information was last updated.
     */
   var UpdatedAt: js.UndefOr[js.Date] = js.undefined
 }

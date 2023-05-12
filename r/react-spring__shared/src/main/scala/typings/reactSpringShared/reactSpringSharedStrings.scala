@@ -1,6 +1,7 @@
 package typings.reactSpringShared
 
-import typings.reactSpringShared.distDeclarationsSrcColorsMod.ColorName
+import typings.reactSpringShared.mod.ColorName
+import typings.reactSpringShared.mod.Direction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,6 +13,10 @@ object reactSpringSharedStrings {
     extends StObject
        with ColorName
   inline def aliceblue: aliceblue = "aliceblue".asInstanceOf[aliceblue]
+  
+  @js.native
+  sealed trait always extends StObject
+  inline def always: always = "always".asInstanceOf[always]
   
   @js.native
   sealed trait antiquewhite
@@ -266,6 +271,10 @@ object reactSpringSharedStrings {
   inline def deepskyblue: deepskyblue = "deepskyblue".asInstanceOf[deepskyblue]
   
   @js.native
+  sealed trait demand extends StObject
+  inline def demand: demand = "demand".asInstanceOf[demand]
+  
+  @js.native
   sealed trait dimgray
     extends StObject
        with ColorName
@@ -282,6 +291,12 @@ object reactSpringSharedStrings {
     extends StObject
        with ColorName
   inline def dodgerblue: dodgerblue = "dodgerblue".asInstanceOf[dodgerblue]
+  
+  @js.native
+  sealed trait end
+    extends StObject
+       with Direction
+  inline def end: end = "end".asInstanceOf[end]
   
   @js.native
   sealed trait firebrick
@@ -828,6 +843,12 @@ object reactSpringSharedStrings {
     extends StObject
        with ColorName
   inline def springgreen: springgreen = "springgreen".asInstanceOf[springgreen]
+  
+  @js.native
+  sealed trait start
+    extends StObject
+       with Direction
+  inline def start: start = "start".asInstanceOf[start]
   
   @js.native
   sealed trait steelblue

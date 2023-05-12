@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Represents a content control. Content controls are bounded and potentially labeled regions in a document that serve as containers for specific types of content. Individual content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently, only rich text content controls are supported.
+  * Represents a content control. Content controls are bounded and potentially labeled regions in a document that serve as containers for specific types of content. Individual content controls may contain contents such as images, tables, or paragraphs of formatted text. Currently, only rich text and plain text content controls are supported.
   *
   * @remarks
   * [Api set: WordApi 1.1]
@@ -155,7 +155,7 @@ trait ContentControlLoadOptions extends StObject {
   var styleBuiltIn: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Gets the content control subtype. The subtype can be 'RichTextInline', 'RichTextParagraphs', 'RichTextTableCell', 'RichTextTableRow' and 'RichTextTable' for rich text content controls.
+    * Gets the content control subtype. The subtype can be 'RichTextInline', 'RichTextParagraphs', 'RichTextTableCell', 'RichTextTableRow' and 'RichTextTable' for rich text content controls, or 'PlainTextInline' and 'PlainTextParagraph' for plain text content controls.
     *
     * @remarks
     * [Api set: WordApi 1.3]
@@ -187,7 +187,7 @@ trait ContentControlLoadOptions extends StObject {
   var title: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Gets the content control type. Only rich text content controls are supported currently.
+    * Gets the content control type. Only rich text and plain text content controls are supported currently.
     *
     * @remarks
     * [Api set: WordApi 1.1]

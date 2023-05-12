@@ -71,6 +71,20 @@ trait KinesisVideo extends Service {
   ): Request[DeleteStreamOutput, AWSError] = js.native
   
   /**
+    * Describes a stream’s edge configuration that was set using the StartEdgeConfigurationUpdate API. Use this API to get the status of the configuration if the configuration is in sync with the Edge Agent.
+    */
+  def describeEdgeConfiguration(): Request[DescribeEdgeConfigurationOutput, AWSError] = js.native
+  def describeEdgeConfiguration(callback: js.Function2[/* err */ AWSError, /* data */ DescribeEdgeConfigurationOutput, Unit]): Request[DescribeEdgeConfigurationOutput, AWSError] = js.native
+  /**
+    * Describes a stream’s edge configuration that was set using the StartEdgeConfigurationUpdate API. Use this API to get the status of the configuration if the configuration is in sync with the Edge Agent.
+    */
+  def describeEdgeConfiguration(params: DescribeEdgeConfigurationInput): Request[DescribeEdgeConfigurationOutput, AWSError] = js.native
+  def describeEdgeConfiguration(
+    params: DescribeEdgeConfigurationInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeEdgeConfigurationOutput, Unit]
+  ): Request[DescribeEdgeConfigurationOutput, AWSError] = js.native
+  
+  /**
     * Gets the ImageGenerationConfiguration for a given Kinesis video stream.
     */
   def describeImageGenerationConfiguration(): Request[DescribeImageGenerationConfigurationOutput, AWSError] = js.native
@@ -85,6 +99,38 @@ trait KinesisVideo extends Service {
     params: DescribeImageGenerationConfigurationInput,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeImageGenerationConfigurationOutput, Unit]
   ): Request[DescribeImageGenerationConfigurationOutput, AWSError] = js.native
+  
+  /**
+    * Returns the most current information about the stream. Either streamName or streamARN should be provided in the input. Returns the most current information about the stream. The streamName or streamARN should be provided in the input.
+    */
+  def describeMappedResourceConfiguration(): Request[DescribeMappedResourceConfigurationOutput, AWSError] = js.native
+  def describeMappedResourceConfiguration(
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeMappedResourceConfigurationOutput, Unit]
+  ): Request[DescribeMappedResourceConfigurationOutput, AWSError] = js.native
+  /**
+    * Returns the most current information about the stream. Either streamName or streamARN should be provided in the input. Returns the most current information about the stream. The streamName or streamARN should be provided in the input.
+    */
+  def describeMappedResourceConfiguration(params: DescribeMappedResourceConfigurationInput): Request[DescribeMappedResourceConfigurationOutput, AWSError] = js.native
+  def describeMappedResourceConfiguration(
+    params: DescribeMappedResourceConfigurationInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeMappedResourceConfigurationOutput, Unit]
+  ): Request[DescribeMappedResourceConfigurationOutput, AWSError] = js.native
+  
+  /**
+    * Returns the most current information about the channel. Specify the ChannelName or ChannelARN in the input.
+    */
+  def describeMediaStorageConfiguration(): Request[DescribeMediaStorageConfigurationOutput, AWSError] = js.native
+  def describeMediaStorageConfiguration(
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeMediaStorageConfigurationOutput, Unit]
+  ): Request[DescribeMediaStorageConfigurationOutput, AWSError] = js.native
+  /**
+    * Returns the most current information about the channel. Specify the ChannelName or ChannelARN in the input.
+    */
+  def describeMediaStorageConfiguration(params: DescribeMediaStorageConfigurationInput): Request[DescribeMediaStorageConfigurationOutput, AWSError] = js.native
+  def describeMediaStorageConfiguration(
+    params: DescribeMediaStorageConfigurationInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeMediaStorageConfigurationOutput, Unit]
+  ): Request[DescribeMediaStorageConfigurationOutput, AWSError] = js.native
   
   /**
     * Gets the NotificationConfiguration for a given Kinesis video stream.
@@ -215,6 +261,20 @@ trait KinesisVideo extends Service {
   ): Request[ListTagsForStreamOutput, AWSError] = js.native
   
   /**
+    * An asynchronous API that updates a stream’s existing edge configuration. The Kinesis Video Stream will sync the stream’s edge configuration with the Edge Agent IoT Greengrass component that runs on an IoT Hub Device, setup at your premise. The time to sync can vary and depends on the connectivity of the Hub Device. The SyncStatus will be updated as the edge configuration is acknowledged, and synced with the Edge Agent.  If this API is invoked for the first time, a new edge configuration will be created for the stream, and the sync status will be set to SYNCING. You will have to wait for the sync status to reach a terminal state such as: IN_SYNC, or SYNC_FAILED, before using this API again. If you invoke this API during the syncing process, a ResourceInUseException will be thrown. The connectivity of the stream’s edge configuration and the Edge Agent will be retried for 15 minutes. After 15 minutes, the status will transition into the SYNC_FAILED state.
+    */
+  def startEdgeConfigurationUpdate(): Request[StartEdgeConfigurationUpdateOutput, AWSError] = js.native
+  def startEdgeConfigurationUpdate(callback: js.Function2[/* err */ AWSError, /* data */ StartEdgeConfigurationUpdateOutput, Unit]): Request[StartEdgeConfigurationUpdateOutput, AWSError] = js.native
+  /**
+    * An asynchronous API that updates a stream’s existing edge configuration. The Kinesis Video Stream will sync the stream’s edge configuration with the Edge Agent IoT Greengrass component that runs on an IoT Hub Device, setup at your premise. The time to sync can vary and depends on the connectivity of the Hub Device. The SyncStatus will be updated as the edge configuration is acknowledged, and synced with the Edge Agent.  If this API is invoked for the first time, a new edge configuration will be created for the stream, and the sync status will be set to SYNCING. You will have to wait for the sync status to reach a terminal state such as: IN_SYNC, or SYNC_FAILED, before using this API again. If you invoke this API during the syncing process, a ResourceInUseException will be thrown. The connectivity of the stream’s edge configuration and the Edge Agent will be retried for 15 minutes. After 15 minutes, the status will transition into the SYNC_FAILED state.
+    */
+  def startEdgeConfigurationUpdate(params: StartEdgeConfigurationUpdateInput): Request[StartEdgeConfigurationUpdateOutput, AWSError] = js.native
+  def startEdgeConfigurationUpdate(
+    params: StartEdgeConfigurationUpdateInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ StartEdgeConfigurationUpdateOutput, Unit]
+  ): Request[StartEdgeConfigurationUpdateOutput, AWSError] = js.native
+  
+  /**
     * Adds one or more tags to a signaling channel. A tag is a key-value pair (the value is optional) that you can define and assign to Amazon Web Services resources. If you specify a tag that already exists, the tag value is replaced with the value that you specify in the request. For more information, see Using Cost Allocation Tags in the Billing and Cost Management and Cost Management User Guide.
     */
   def tagResource(): Request[TagResourceOutput, AWSError] = js.native
@@ -299,6 +359,20 @@ trait KinesisVideo extends Service {
     params: UpdateImageGenerationConfigurationInput,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateImageGenerationConfigurationOutput, Unit]
   ): Request[UpdateImageGenerationConfigurationOutput, AWSError] = js.native
+  
+  /**
+    * Associates a SignalingChannel to a stream to store the media. There are two signaling modes that can specified :   If the StorageStatus is disabled, no data will be stored, and the StreamARN parameter will not be needed.    If the StorageStatus is enabled, the data will be stored in the StreamARN provided.   
+    */
+  def updateMediaStorageConfiguration(): Request[UpdateMediaStorageConfigurationOutput, AWSError] = js.native
+  def updateMediaStorageConfiguration(callback: js.Function2[/* err */ AWSError, /* data */ UpdateMediaStorageConfigurationOutput, Unit]): Request[UpdateMediaStorageConfigurationOutput, AWSError] = js.native
+  /**
+    * Associates a SignalingChannel to a stream to store the media. There are two signaling modes that can specified :   If the StorageStatus is disabled, no data will be stored, and the StreamARN parameter will not be needed.    If the StorageStatus is enabled, the data will be stored in the StreamARN provided.   
+    */
+  def updateMediaStorageConfiguration(params: UpdateMediaStorageConfigurationInput): Request[UpdateMediaStorageConfigurationOutput, AWSError] = js.native
+  def updateMediaStorageConfiguration(
+    params: UpdateMediaStorageConfigurationInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateMediaStorageConfigurationOutput, Unit]
+  ): Request[UpdateMediaStorageConfigurationOutput, AWSError] = js.native
   
   /**
     * Updates the notification information for a stream.

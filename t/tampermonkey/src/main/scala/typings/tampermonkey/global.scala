@@ -2,7 +2,7 @@ package typings.tampermonkey
 
 import org.scalablytyped.runtime.NumberDictionary
 import typings.std.HTMLStyleElement
-import typings.std.Window
+import typings.std.Omit
 import typings.tampermonkey.Tampermonkey.AbortHandle
 import typings.tampermonkey.Tampermonkey.ContentType
 import typings.tampermonkey.Tampermonkey.DownloadRequest
@@ -15,6 +15,28 @@ import typings.tampermonkey.Tampermonkey.Request
 import typings.tampermonkey.Tampermonkey.Response
 import typings.tampermonkey.Tampermonkey.ScriptInfo
 import typings.tampermonkey.Tampermonkey.ValueChangeListener
+import typings.tampermonkey.tampermonkeyStrings.GM
+import typings.tampermonkey.tampermonkeyStrings.GM_addStyle
+import typings.tampermonkey.tampermonkeyStrings.GM_addValueChangeListener
+import typings.tampermonkey.tampermonkeyStrings.GM_deleteValue
+import typings.tampermonkey.tampermonkeyStrings.GM_download
+import typings.tampermonkey.tampermonkeyStrings.GM_getResourceText
+import typings.tampermonkey.tampermonkeyStrings.GM_getResourceURL
+import typings.tampermonkey.tampermonkeyStrings.GM_getTab
+import typings.tampermonkey.tampermonkeyStrings.GM_getTabs
+import typings.tampermonkey.tampermonkeyStrings.GM_getValue
+import typings.tampermonkey.tampermonkeyStrings.GM_info
+import typings.tampermonkey.tampermonkeyStrings.GM_listValues
+import typings.tampermonkey.tampermonkeyStrings.GM_log
+import typings.tampermonkey.tampermonkeyStrings.GM_notification
+import typings.tampermonkey.tampermonkeyStrings.GM_openInTab
+import typings.tampermonkey.tampermonkeyStrings.GM_registerMenuCommand
+import typings.tampermonkey.tampermonkeyStrings.GM_removeValueChangeListener
+import typings.tampermonkey.tampermonkeyStrings.GM_saveTab
+import typings.tampermonkey.tampermonkeyStrings.GM_setClipboard
+import typings.tampermonkey.tampermonkeyStrings.GM_setValue
+import typings.tampermonkey.tampermonkeyStrings.GM_unregisterMenuCommand
+import typings.tampermonkey.tampermonkeyStrings.GM_xmlhttpRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -130,7 +152,9 @@ object global {
   // Utils
   @JSGlobal("GM_info")
   @js.native
-  val GMInfo: ScriptInfo = js.native
+  def GMInfo: ScriptInfo = js.native
+  
+  inline def GMInfo_=(x: ScriptInfo): Unit = js.Dynamic.global.updateDynamic("GM_info")(x.asInstanceOf[js.Any])
   
   /** Lists all names of the storage */
   inline def GMListValues(): js.Array[String] = js.Dynamic.global.applyDynamic("GM_listValues")().asInstanceOf[js.Array[String]]
@@ -245,6 +269,14 @@ object global {
     */
   @JSGlobal("unsafeWindow")
   @js.native
-  def unsafeWindow: Window = js.native
-  inline def unsafeWindow_=(x: Window): Unit = js.Dynamic.global.updateDynamic("unsafeWindow")(x.asInstanceOf[js.Any])
+  def unsafeWindow: Window & (Omit[
+    /* globalThis */ Any, 
+    GM_addStyle | GM_addValueChangeListener | GM_deleteValue | GM_download | GM_getResourceText | GM_getResourceURL | GM_getTab | GM_getTabs | GM_getValue | GM_info | GM_listValues | GM_log | GM_notification | GM_openInTab | GM_registerMenuCommand | GM_removeValueChangeListener | GM_saveTab | GM_setClipboard | GM_setValue | GM_unregisterMenuCommand | GM_xmlhttpRequest | GM
+  ]) = js.native
+  inline def unsafeWindow_=(
+    x: Window & (Omit[
+      /* globalThis */ Any, 
+      GM_addStyle | GM_addValueChangeListener | GM_deleteValue | GM_download | GM_getResourceText | GM_getResourceURL | GM_getTab | GM_getTabs | GM_getValue | GM_info | GM_listValues | GM_log | GM_notification | GM_openInTab | GM_registerMenuCommand | GM_removeValueChangeListener | GM_saveTab | GM_setClipboard | GM_setValue | GM_unregisterMenuCommand | GM_xmlhttpRequest | GM
+    ])
+  ): Unit = js.Dynamic.global.updateDynamic("unsafeWindow")(x.asInstanceOf[js.Any])
 }

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 /**
   * Listen to mouse events to control the camera.
-  * @see https://doc.babylonjs.com/how_to/customizing_camera_inputs
+  * @see https://doc.babylonjs.com/features/featuresDeepDive/cameras/customizingCameraInputs
   */
 open class FlyCameraMouseInput ()
   extends typings.babylonjs.camerasIndexMod.FlyCameraMouseInput

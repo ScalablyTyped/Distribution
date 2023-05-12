@@ -47,18 +47,19 @@ trait WebDriverProtocolUserActions extends StObject {
     *   }
     * }
     *
+    * @see https://nightwatchjs.org/api/clickAndHold.html#apimethod-container
     */
-  def clickAndHold(selector: String): this.type = js.native
+  def clickAndHold(selector: String): Awaitable[this.type, Null] = js.native
   def clickAndHold(
     selector: String,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
-  ): this.type = js.native
-  def clickAndHold(`using`: LocateStrategy, selector: String): this.type = js.native
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
+  ): Awaitable[this.type, Null] = js.native
+  def clickAndHold(`using`: LocateStrategy, selector: String): Awaitable[this.type, Null] = js.native
   def clickAndHold(
     `using`: LocateStrategy,
     selector: String,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
-  ): this.type = js.native
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
+  ): Awaitable[this.type, Null] = js.native
   
   /**
     * Move to the element and peforms a double-click in the middle of the element.
@@ -93,31 +94,35 @@ trait WebDriverProtocolUserActions extends StObject {
     *     console.log('double click result', result);
     *   }
     * }
+    *
+    * @see https://nightwatchjs.org/api/doubleClick.html#apimethod-container
     */
-  def doubleClick(selector: String): this.type = js.native
+  def doubleClick(selector: String): Awaitable[this.type, Null] = js.native
   def doubleClick(
     selector: String,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
-  ): this.type = js.native
-  def doubleClick(`using`: LocateStrategy, selector: String): this.type = js.native
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
+  ): Awaitable[this.type, Null] = js.native
+  def doubleClick(`using`: LocateStrategy, selector: String): Awaitable[this.type, Null] = js.native
   def doubleClick(
     `using`: LocateStrategy,
     selector: String,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
-  ): this.type = js.native
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
+  ): Awaitable[this.type, Null] = js.native
   
   /**
     * Click at the current mouse coordinates (set by `.moveTo()`).
     *
     * The button can be (0, 1, 2) or ('left', 'middle', 'right'). It defaults to left mouse button.
     *
-    * @deprecated
+    * @see https://nightwatchjs.org/api/mouseButtonClick.html
+    *
+    * @deprecated Please use the new [User Actions API](https://nightwatchjs.org/api/useractions/) instead
     */
-  def mouseButtonClick(button: `0` | `1` | `2` | left | middle | right): this.type = js.native
+  def mouseButtonClick(button: `0` | `1` | `2` | left | middle | right): Awaitable[this.type, Null] = js.native
   def mouseButtonClick(
     button: `0` | `1` | `2` | left | middle | right,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
-  ): this.type = js.native
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
+  ): Awaitable[this.type, Null] = js.native
   
   /**
     * Click and hold the left mouse button (at the coordinates set by the last `moveTo` command). Note that the next mouse-related command that should follow is `mouseButtonUp` .
@@ -129,13 +134,15 @@ trait WebDriverProtocolUserActions extends StObject {
     * **Since v2.0, this command is deprecated.** It is only available on older JSONWire-based drivers.
     * Please use the new [User Actions API](/api/useractions/).
     *
-    * @deprecated
+    * @see https://nightwatchjs.org/api/mouseButtonDown.html
+    *
+    * @deprecated Please use the new [User Actions API](https://nightwatchjs.org/api/useractions/) instead
     */
-  def mouseButtonDown(button: `0` | `1` | `2` | left | middle | right): this.type = js.native
+  def mouseButtonDown(button: `0` | `1` | `2` | left | middle | right): Awaitable[this.type, Null] = js.native
   def mouseButtonDown(
     button: `0` | `1` | `2` | left | middle | right,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
-  ): this.type = js.native
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
+  ): Awaitable[this.type, Null] = js.native
   
   /**
     * Releases the mouse button previously held (where the mouse is currently at). Must be called once for every `mouseButtonDown` command issued.
@@ -146,13 +153,15 @@ trait WebDriverProtocolUserActions extends StObject {
     * **Since v2.0, this command is deprecated.** It is only available on older JSONWire-based drivers.
     * Please use the new [User Actions API](/api/useractions/).
     *
-    * @deprecated
+    * @see https://nightwatchjs.org/api/mouseButtonUp.html
+    *
+    * @deprecated Please use the new [User Actions API](https://nightwatchjs.org/api/useractions/) instead
     */
-  def mouseButtonUp(button: `0` | `1` | `2` | left | middle | right): this.type = js.native
+  def mouseButtonUp(button: `0` | `1` | `2` | left | middle | right): Awaitable[this.type, Null] = js.native
   def mouseButtonUp(
     button: `0` | `1` | `2` | left | middle | right,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
-  ): this.type = js.native
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
+  ): Awaitable[this.type, Null] = js.native
   
   /**
     * Move the mouse by an offset of the specified [Web Element ID](https://www.w3.org/TR/webdriver1/#dfn-web-elements) or relative to the current mouse cursor, if no element is specified.
@@ -164,30 +173,48 @@ trait WebDriverProtocolUserActions extends StObject {
     * this.demoTest = function (browser) {
     *   browser.moveTo(null, 110, 100);
     * };
+    *
+    * @see https://nightwatchjs.org/api/moveTo.html#apimethod-container
     */
-  def moveTo(element: String, xoffset: Double, yoffset: Double): this.type = js.native
+  def moveTo(): Awaitable[this.type, Null] = js.native
+  def moveTo(elementId: String): Awaitable[this.type, Null] = js.native
   def moveTo(
-    element: String,
+    elementId: String,
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
+  ): Awaitable[this.type, Null] = js.native
+  def moveTo(elementId: String, xoffset: Double, yoffset: Double): Awaitable[this.type, Null] = js.native
+  def moveTo(
+    elementId: String,
     xoffset: Double,
     yoffset: Double,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
-  ): this.type = js.native
-  def moveTo(element: Null, xoffset: Double, yoffset: Double): this.type = js.native
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
+  ): Awaitable[this.type, Null] = js.native
   def moveTo(
-    element: Null,
+    elementId: Null,
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
+  ): Awaitable[this.type, Null] = js.native
+  def moveTo(elementId: Null, xoffset: Double, yoffset: Double): Awaitable[this.type, Null] = js.native
+  def moveTo(
+    elementId: Null,
     xoffset: Double,
     yoffset: Double,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
-  ): this.type = js.native
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
+  ): Awaitable[this.type, Null] = js.native
+  def moveTo(xoffset: Double, yoffset: Double): Awaitable[this.type, Null] = js.native
+  def moveTo(
+    xoffset: Double,
+    yoffset: Double,
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
+  ): Awaitable[this.type, Null] = js.native
   
   /**
     * Release the depressed left mouse button at the current mouse coordinates (set by `.moveTo()`).
     *
     */
-  def releaseMouseButton(): this.type = js.native
+  def releaseMouseButton(): Awaitable[this.type, Null] = js.native
   def releaseMouseButton(
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
-  ): this.type = js.native
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
+  ): Awaitable[this.type, Null] = js.native
   
   /**
     * Simulates a context-click(right click) event on the given DOM element.
@@ -225,16 +252,17 @@ trait WebDriverProtocolUserActions extends StObject {
     *   }
     * }
     *
+    * @see https://nightwatchjs.org/api/rightClick.html#apimethod-container
     */
-  def rightClick(selector: Definition): this.type = js.native
+  def rightClick(selector: Definition): Awaitable[this.type, Null] = js.native
   def rightClick(
     selector: Definition,
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
-  ): this.type = js.native
-  def rightClick(`using`: LocateStrategy, selector: Definition): this.type = js.native
+  ): Awaitable[this.type, Null] = js.native
+  def rightClick(`using`: LocateStrategy, selector: Definition): Awaitable[this.type, Null] = js.native
   def rightClick(
     `using`: LocateStrategy,
     selector: Definition,
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
-  ): this.type = js.native
+  ): Awaitable[this.type, Null] = js.native
 }

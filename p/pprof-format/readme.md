@@ -1,7 +1,7 @@
 
 # Scala.js typings for pprof-format
 
-Typings are for version 2.0.4
+Typings are for version 2.0.7
 
 
 

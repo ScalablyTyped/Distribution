@@ -11,7 +11,7 @@ object distListDottestMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def testEnqueueDequeue(tc: TestCase): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testEnqueueDequeue")(tc.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def testEnqueueDequeue(_tc: TestCase): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testEnqueueDequeue")(_tc.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  inline def testSelectivePop(tc: TestCase): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testSelectivePop")(tc.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def testSelectivePop(_tc: TestCase): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testSelectivePop")(_tc.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

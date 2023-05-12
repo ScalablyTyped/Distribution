@@ -6,44 +6,45 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Version extends StObject {
   
-  var guid: js.UndefOr[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['code-scanning-analysis-tool-guid'] */ js.Any
-  ] = js.undefined
+  var change_status: Additions
   
-  var name: js.UndefOr[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['code-scanning-analysis-tool-name'] */ js.Any
-  ] = js.undefined
+  /**
+    * Format: date-time
+    * @example 2010-04-14T02:15:15Z
+    */
+  var committed_at: String
   
-  var version: js.UndefOr[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['code-scanning-analysis-tool-version'] */ js.Any
-  ] = js.undefined
+  /**
+    * Format: uri
+    * @example https://api.github.com/gists/aa5a315d61ae9438b18d/57a7f021a713b1c5a6a199b54cc514735d2d462f
+    */
+  var url: String
+  
+  var user: Avatarurl | Null
+  
+  /** @example 57a7f021a713b1c5a6a199b54cc514735d2d462f */
+  var version: String
 }
 object Version {
   
-  inline def apply(): Version = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(change_status: Additions, committed_at: String, url: String, version: String): Version = {
+    val __obj = js.Dynamic.literal(change_status = change_status.asInstanceOf[js.Any], committed_at = committed_at.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any], user = null)
     __obj.asInstanceOf[Version]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: Version] (val x: Self) extends AnyVal {
     
-    inline def setGuid(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['code-scanning-analysis-tool-guid'] */ js.Any
-    ): Self = StObject.set(x, "guid", value.asInstanceOf[js.Any])
+    inline def setChange_status(value: Additions): Self = StObject.set(x, "change_status", value.asInstanceOf[js.Any])
     
-    inline def setGuidUndefined: Self = StObject.set(x, "guid", js.undefined)
+    inline def setCommitted_at(value: String): Self = StObject.set(x, "committed_at", value.asInstanceOf[js.Any])
     
-    inline def setName(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['code-scanning-analysis-tool-name'] */ js.Any
-    ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setUser(value: Avatarurl): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
-    inline def setVersion(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['code-scanning-analysis-tool-version'] */ js.Any
-    ): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setUserNull: Self = StObject.set(x, "user", null)
     
-    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

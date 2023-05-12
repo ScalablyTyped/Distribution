@@ -21,7 +21,7 @@ object typesBroadcastChannelMod {
     def this(name: String) = this()
     def this(name: String, opts: BroadcastChannelOptions) = this()
     
-    // not defined in the offical standard
+    // not defined in the official standard
     def addEventListener(`type`: EventContext, handler: OnMessageHandler[T]): Unit = js.native
     
     def close(): js.Promise[Unit] = js.native

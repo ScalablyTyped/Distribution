@@ -106,6 +106,8 @@ object distAppPublicClientApplicationMod {
     /* InferMemberOverrides */
     override def addPerformanceCallback(callback: PerformanceCallbackFunction): String = js.native
     
+    /* private */ var astsAsyncMeasurement: Any = js.native
+    
     /**
       * Removes event listener that emits an event when a user account is added or removed from localstorage in a different browser tab or window
       */
@@ -143,11 +145,11 @@ object distAppPublicClientApplicationMod {
       * (the account object is created at the time of successful login)
       * or null when no matching account is found.
       * This API is provided for convenience but getAccountById should be used for best reliability
-      * @param userName
+      * @param username
       * @returns The account object stored in MSAL
       */
     /* InferMemberOverrides */
-    override def getAccountByUsername(userName: String): AccountInfo | Null = js.native
+    override def getAccountByUsername(username: String): AccountInfo | Null = js.native
     
     /**
       * Gets the currently active account
@@ -293,5 +295,7 @@ object distAppPublicClientApplicationMod {
       */
     /* InferMemberOverrides */
     override def ssoSilent(request: SsoSilentRequest): js.Promise[AuthenticationResult] = js.native
+    
+    /* private */ var trackPageVisibility: Any = js.native
   }
 }

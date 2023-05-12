@@ -11,14 +11,12 @@ object anon {
     /**
       * Transaction id. Id should be unique for each optimistic action
       *
-      * @type {number}
       */
     var id: Double
     
     /**
       * Type, BEGIN, COMMIT or REVERT
       *
-      * @type {string}
       */
     var `type`: String
   }

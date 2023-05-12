@@ -1,6 +1,6 @@
 package typings.tensorflowTfjsBackendWebgl
 
-import typings.tensorflowTfjsBackendWebgl.anon.NameStringType
+import typings.tensorflowTfjsBackendWebgl.anon.`0`
 import typings.tensorflowTfjsBackendWebgl.distGpgpuMathMod.GPGPUProgram
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,7 +16,7 @@ object distReshapePackedGpuMod {
     def this(outputShape: js.Tuple3[Double, Double, Double], inputShape: js.Tuple3[Double, Double, Double]) = this()
     
     @JSName("customUniforms")
-    var customUniforms_ReshapePackedProgram: js.Array[NameStringType] = js.native
+    var customUniforms_ReshapePackedProgram: js.Array[`0`] = js.native
     
     @JSName("enableShapeUniforms")
     var enableShapeUniforms_ReshapePackedProgram: Boolean = js.native

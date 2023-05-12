@@ -4,7 +4,7 @@ import typings.awsSdkClientSso.mod.SSOClient
 import typings.awsSdkCredentialProviderImds.distTypesRemoteProviderRemoteProviderInitMod.RemoteProviderInit
 import typings.awsSdkCredentialProviderIni.distTypesFromIniMod.FromIniInit
 import typings.awsSdkCredentialProviderWebIdentity.anon.Arn
-import typings.awsSdkTypes.distTypesCredentialsMod.Credentials
+import typings.awsSdkTypes.distTypesIdentityAwsCredentialIdentityMod.AwsCredentialIdentity
 import typings.awsSdkTypes.distTypesUtilMod.MemoizedProvider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,14 +16,14 @@ object distTypesDefaultProviderMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def defaultProvider(): MemoizedProvider[Credentials] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultProvider")().asInstanceOf[MemoizedProvider[Credentials]]
-  inline def defaultProvider(init: DefaultProviderInit): MemoizedProvider[Credentials] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultProvider")(init.asInstanceOf[js.Any]).asInstanceOf[MemoizedProvider[Credentials]]
+  inline def defaultProvider(): MemoizedProvider[AwsCredentialIdentity] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultProvider")().asInstanceOf[MemoizedProvider[AwsCredentialIdentity]]
+  inline def defaultProvider(init: DefaultProviderInit): MemoizedProvider[AwsCredentialIdentity] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultProvider")(init.asInstanceOf[js.Any]).asInstanceOf[MemoizedProvider[AwsCredentialIdentity]]
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.awsSdkSharedIniFileLoader.distTypesLoadSharedConfigFilesMod.SharedConfigInit because Already inherited
   - typings.awsSdkSharedIniFileLoader.distTypesParseKnownFilesMod.SourceProfileInit because Already inherited
   - typings.awsSdkCredentialProviderWebIdentity.distTypesFromTokenFileMod.FromTokenFileInit because var conflicts: roleAssumerWithWebIdentity. Inlined webIdentityTokenFile, PolicyArns, WebIdentityToken, roleSessionName, DurationSeconds, RoleSessionName, Policy, ProviderId, RoleArn
-  - typings.awsSdkCredentialProviderSso.distTypesFromSSOMod.FromSSOInit because var conflicts: configFilepath, filepath, profile. Inlined ssoClient */ trait DefaultProviderInit
+  - typings.awsSdkCredentialProviderSso.distTypesFromSSOMod.FromSSOInit because var conflicts: configFilepath, filepath, ignoreCache, profile. Inlined ssoClient */ trait DefaultProviderInit
     extends StObject
        with FromIniInit
        with RemoteProviderInit {

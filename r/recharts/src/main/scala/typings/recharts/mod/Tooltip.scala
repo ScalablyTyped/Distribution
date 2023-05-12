@@ -11,7 +11,7 @@ open class Tooltip protected () extends Component[TooltipProps, BoxSize, Any] {
   def this(props: TooltipProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: TooltipProps, context: Any) = this()
 }

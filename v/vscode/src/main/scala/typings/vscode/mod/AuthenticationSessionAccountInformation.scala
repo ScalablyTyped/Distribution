@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AuthenticationSessionAccountInformation extends StObject {
   
   /**
-    * The unique identifier of the account.
-    */
+  		 * The unique identifier of the account.
+  		 */
   val id: String
   
   /**
-    * The human-readable name of the account.
-    */
+  		 * The human-readable name of the account.
+  		 */
   val label: String
 }
 object AuthenticationSessionAccountInformation {

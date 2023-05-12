@@ -8,22 +8,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PressedPaintToken extends StObject {
   
-  var hover: PaintToken[BaseToken]
+  var `[default]`: PaintToken[BaseToken]
   
   var pressed: PaintToken[BaseToken]
 }
 object PressedPaintToken {
   
-  inline def apply(hover: PaintToken[BaseToken], pressed: PaintToken[BaseToken]): PressedPaintToken = {
-    val __obj = js.Dynamic.literal(hover = hover.asInstanceOf[js.Any], pressed = pressed.asInstanceOf[js.Any])
+  inline def apply(`[default]`: PaintToken[BaseToken], pressed: PaintToken[BaseToken]): PressedPaintToken = {
+    val __obj = js.Dynamic.literal(pressed = pressed.asInstanceOf[js.Any])
+    __obj.updateDynamic("[default]")(`[default]`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PressedPaintToken]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: PressedPaintToken] (val x: Self) extends AnyVal {
     
-    inline def setHover(value: PaintToken[BaseToken]): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
-    
     inline def setPressed(value: PaintToken[BaseToken]): Self = StObject.set(x, "pressed", value.asInstanceOf[js.Any])
+    
+    inline def `set[default]`(value: PaintToken[BaseToken]): Self = StObject.set(x, "[default]", value.asInstanceOf[js.Any])
   }
 }

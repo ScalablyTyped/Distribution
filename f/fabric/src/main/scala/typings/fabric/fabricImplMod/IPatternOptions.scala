@@ -13,7 +13,6 @@ trait IPatternOptions extends StObject {
   /**
     * crossOrigin value (one of "", "anonymous", "use-credentials")
     * @see https://developer.mozilla.org/en-US/docs/HTML/CORS_settings_attributes
-    * @type String
     */
   var crossOrigin: js.UndefOr[_empty | anonymous | `use-credentials`] = js.undefined
   

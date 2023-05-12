@@ -7,16 +7,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NotebookCellStatusBarItemProvider extends StObject {
   
   /**
-    * An optional event to signal that statusbar items have changed. The provide method will be called again.
-    */
+  		 * An optional event to signal that statusbar items have changed. The provide method will be called again.
+  		 */
   var onDidChangeCellStatusBarItems: js.UndefOr[Event[Unit]] = js.undefined
   
   /**
-    * The provider will be called when the cell scrolls into view, when its content, outputs, language, or metadata change, and when it changes execution state.
-    * @param cell The cell for which to return items.
-    * @param token A token triggered if this request should be cancelled.
-    * @return One or more {@link NotebookCellStatusBarItem cell statusbar items}
-    */
+  		 * The provider will be called when the cell scrolls into view, when its content, outputs, language, or metadata change, and when it changes execution state.
+  		 * @param cell The cell for which to return items.
+  		 * @param token A token triggered if this request should be cancelled.
+  		 * @return One or more {@link NotebookCellStatusBarItem cell statusbar items}
+  		 */
   def provideCellStatusBarItems(cell: NotebookCell, token: CancellationToken): ProviderResult[NotebookCellStatusBarItem | js.Array[NotebookCellStatusBarItem]]
 }
 object NotebookCellStatusBarItemProvider {

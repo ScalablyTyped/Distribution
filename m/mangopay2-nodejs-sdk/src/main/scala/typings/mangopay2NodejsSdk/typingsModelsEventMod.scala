@@ -109,9 +109,30 @@ object typingsModelsEventMod {
       - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.PREAUTHORIZATION_CREATED
       - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.PREAUTHORIZATION_SUCCEEDED
       - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.PREAUTHORIZATION_FAILED
+      - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DEPOSIT_PREAUTHORIZATION_CREATED
+      - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DEPOSIT_PREAUTHORIZATION_FAILED
+      - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DEPOSIT_PREAUTHORIZATION_PAYMENT_WAITING
+      - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DEPOSIT_PREAUTHORIZATION_PAYMENT_EXPIRED
+      - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DEPOSIT_PREAUTHORIZATION_PAYMENT_CANCEL_REQUEST
+      - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DEPOSIT_PREAUTHORIZATION_PAYMENT_CANCELED
+      - typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DEPOSIT_PREAUTHORIZATION_PAYMENT_VALIDATED
     */
     trait EventType extends StObject
     object EventType {
+      
+      inline def DEPOSIT_PREAUTHORIZATION_CREATED: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DEPOSIT_PREAUTHORIZATION_CREATED = "DEPOSIT_PREAUTHORIZATION_CREATED".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DEPOSIT_PREAUTHORIZATION_CREATED]
+      
+      inline def DEPOSIT_PREAUTHORIZATION_FAILED: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DEPOSIT_PREAUTHORIZATION_FAILED = "DEPOSIT_PREAUTHORIZATION_FAILED".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DEPOSIT_PREAUTHORIZATION_FAILED]
+      
+      inline def DEPOSIT_PREAUTHORIZATION_PAYMENT_CANCELED: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DEPOSIT_PREAUTHORIZATION_PAYMENT_CANCELED = "DEPOSIT_PREAUTHORIZATION_PAYMENT_CANCELED".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DEPOSIT_PREAUTHORIZATION_PAYMENT_CANCELED]
+      
+      inline def DEPOSIT_PREAUTHORIZATION_PAYMENT_CANCEL_REQUEST: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DEPOSIT_PREAUTHORIZATION_PAYMENT_CANCEL_REQUEST = "DEPOSIT_PREAUTHORIZATION_PAYMENT_CANCEL_REQUEST".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DEPOSIT_PREAUTHORIZATION_PAYMENT_CANCEL_REQUEST]
+      
+      inline def DEPOSIT_PREAUTHORIZATION_PAYMENT_EXPIRED: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DEPOSIT_PREAUTHORIZATION_PAYMENT_EXPIRED = "DEPOSIT_PREAUTHORIZATION_PAYMENT_EXPIRED".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DEPOSIT_PREAUTHORIZATION_PAYMENT_EXPIRED]
+      
+      inline def DEPOSIT_PREAUTHORIZATION_PAYMENT_VALIDATED: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DEPOSIT_PREAUTHORIZATION_PAYMENT_VALIDATED = "DEPOSIT_PREAUTHORIZATION_PAYMENT_VALIDATED".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DEPOSIT_PREAUTHORIZATION_PAYMENT_VALIDATED]
+      
+      inline def DEPOSIT_PREAUTHORIZATION_PAYMENT_WAITING: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DEPOSIT_PREAUTHORIZATION_PAYMENT_WAITING = "DEPOSIT_PREAUTHORIZATION_PAYMENT_WAITING".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DEPOSIT_PREAUTHORIZATION_PAYMENT_WAITING]
       
       inline def DISPUTE_ACTION_REQUIRED: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DISPUTE_ACTION_REQUIRED = "DISPUTE_ACTION_REQUIRED".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DISPUTE_ACTION_REQUIRED]
       

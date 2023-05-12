@@ -41,14 +41,14 @@ trait Render extends StObject {
     * You must send Markdown as plain text (using a `Content-Type` header of `text/plain` or `text/x-markdown`) to this endpoint, rather than using JSON format. In raw mode, [GitHub Flavored Markdown](https://github.github.com/gfm/) is not supported and Markdown will be rendered in plain format like a README.md file. Markdown content must be 400 KB or less.
     */
   @JSName("renderRaw")
-  var renderRaw_Original: `354`
+  var renderRaw_Original: `375`
   
   @JSName("render")
-  var render_Original: `353`
+  var render_Original: `374`
 }
 object Render {
   
-  inline def apply(render: `353`, renderRaw: `354`): Render = {
+  inline def apply(render: `374`, renderRaw: `375`): Render = {
     val __obj = js.Dynamic.literal(render = render.asInstanceOf[js.Any], renderRaw = renderRaw.asInstanceOf[js.Any])
     __obj.asInstanceOf[Render]
   }
@@ -56,8 +56,8 @@ object Render {
   @scala.inline
   implicit open class MutableBuilder[Self <: Render] (val x: Self) extends AnyVal {
     
-    inline def setRender(value: `353`): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
+    inline def setRender(value: `374`): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
     
-    inline def setRenderRaw(value: `354`): Self = StObject.set(x, "renderRaw", value.asInstanceOf[js.Any])
+    inline def setRenderRaw(value: `375`): Self = StObject.set(x, "renderRaw", value.asInstanceOf[js.Any])
   }
 }

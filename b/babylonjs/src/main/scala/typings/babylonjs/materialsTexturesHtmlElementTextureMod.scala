@@ -26,6 +26,8 @@ object materialsTexturesHtmlElementTextureMod {
     
     /* private */ var _createInternalTexture: Any = js.native
     
+    /* private */ var _externalTexture: Any = js.native
+    
     /* private */ val _format: Any = js.native
     
     /* private */ var _generateMipMaps: Any = js.native

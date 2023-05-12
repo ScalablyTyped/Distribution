@@ -17,7 +17,7 @@ trait AccountSettings extends StObject {
   var pipelineProvisioningRepository: js.UndefOr[RepositoryBranch] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the service role that Proton uses for provisioning pipelines. Proton assumes this role for Amazon Web Services-managed provisioning.
+    * The Amazon Resource Name (ARN) of the service role you want to use for provisioning pipelines. Assumed by Proton for Amazon Web Services-managed provisioning, and by customer-owned automation for self-managed provisioning.
     */
   var pipelineServiceRoleArn: js.UndefOr[RoleArnOrEmptyString] = js.undefined
 }

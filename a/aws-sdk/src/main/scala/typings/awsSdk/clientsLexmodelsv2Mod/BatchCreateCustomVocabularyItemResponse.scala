@@ -7,27 +7,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BatchCreateCustomVocabularyItemResponse extends StObject {
   
   /**
-    * The unique identifier of the bot to batch create response for the custom vocabulary item.
+    * The identifier of the bot associated with this custom vocabulary.
     */
   var botId: js.UndefOr[Id] = js.undefined
   
   /**
-    * The bot version of the bot to batch create the custom vocabulary item response for.
+    * The identifier of the version of the bot associated with this custom vocabulary.
     */
   var botVersion: js.UndefOr[BotVersion] = js.undefined
   
   /**
-    * The errors of the action to batch create the custom vocabulary item response for a bot.
+    * A list of custom vocabulary items that failed to create during the operation. The reason for the error is contained within each error object.
     */
   var errors: js.UndefOr[FailedCustomVocabularyItems] = js.undefined
   
   /**
-    * The unique locale identifier of the bot to batch create the custom vocabulary item response for.
+    * The identifier of the language and locale where this custom vocabulary is used. The string must match one of the supported locales. For more information, see  Supported Languages .
     */
   var localeId: js.UndefOr[LocaleId] = js.undefined
   
   /**
-    * The resources of the action to batch create the custom vocabulary item response for a bot.
+    * A list of custom vocabulary items that were successfully created during the operation.
     */
   var resources: js.UndefOr[CustomVocabularyItems] = js.undefined
 }

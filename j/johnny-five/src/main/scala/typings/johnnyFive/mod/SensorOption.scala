@@ -6,9 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SensorOption extends StObject {
   
+  var board: js.UndefOr[Board] = js.undefined
+  
   var enabled: js.UndefOr[Boolean] = js.undefined
   
-  var freq: js.UndefOr[Boolean] = js.undefined
+  var freq: js.UndefOr[Double] = js.undefined
   
   var pin: Double | String
   
@@ -24,11 +26,15 @@ object SensorOption {
   @scala.inline
   implicit open class MutableBuilder[Self <: SensorOption] (val x: Self) extends AnyVal {
     
+    inline def setBoard(value: Board): Self = StObject.set(x, "board", value.asInstanceOf[js.Any])
+    
+    inline def setBoardUndefined: Self = StObject.set(x, "board", js.undefined)
+    
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
     inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    inline def setFreq(value: Boolean): Self = StObject.set(x, "freq", value.asInstanceOf[js.Any])
+    inline def setFreq(value: Double): Self = StObject.set(x, "freq", value.asInstanceOf[js.Any])
     
     inline def setFreqUndefined: Self = StObject.set(x, "freq", js.undefined)
     

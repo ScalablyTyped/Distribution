@@ -7,9 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `5` extends StObject {
   
   /**
-    * Indicates whether to display the LinearGauge UI component vertically or horizontally.
+    * Specifies shutter color.
     */
-  var orientation: js.UndefOr[typings.devextreme.mod.DevExpress.common.Orientation] = js.undefined
+  var color: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Specifies the opacity of the color of shutters.
+    */
+  var opacity: js.UndefOr[Double] = js.undefined
 }
 object `5` {
   
@@ -21,8 +26,12 @@ object `5` {
   @scala.inline
   implicit open class MutableBuilder[Self <: `5`] (val x: Self) extends AnyVal {
     
-    inline def setOrientation(value: typings.devextreme.mod.DevExpress.common.Orientation): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    
+    inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
   }
 }

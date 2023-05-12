@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object typesReadableMod {
   
-  @JSImport("undici/types/readable", JSImport.Namespace)
+  @JSImport("undici/types/readable", JSImport.Default)
   @js.native
-  open class ^ () extends BodyReadable {
+  open class default () extends BodyReadable {
     def this(resume: js.ThisFunction1[/* this */ Readable, /* size */ Double, Unit | Null]) = this()
     def this(
       resume: js.ThisFunction1[/* this */ Readable, /* size */ Double, Unit | Null],

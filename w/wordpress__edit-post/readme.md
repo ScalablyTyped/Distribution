@@ -1,7 +1,7 @@
 
 # Scala.js typings for wordpress__edit-post
 
-Typings are for version 4.0
+Typings are for version 7.5
 
 ## Library description:
 Edit Post module for WordPress.

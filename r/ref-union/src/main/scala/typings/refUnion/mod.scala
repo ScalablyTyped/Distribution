@@ -55,7 +55,6 @@ object mod {
     * Pass in an Object containing the union fields to auto-populate the
     * union with the data.
     *
-    * @constructor
     */
   @js.native
   trait UnionType

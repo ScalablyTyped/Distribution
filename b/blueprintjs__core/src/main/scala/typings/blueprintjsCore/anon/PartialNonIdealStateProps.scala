@@ -4,7 +4,7 @@ import typings.blueprintjsCore.blueprintjsCoreStrings.horizontal
 import typings.blueprintjsCore.blueprintjsCoreStrings.vertical
 import typings.blueprintjsCore.libEsmCommonPropsMod.MaybeElement
 import typings.blueprintjsCore.libEsmComponentsNonIdealStateNonIdealStateMod.NonIdealStateIconSize
-import typings.blueprintjsIcons.libEsmGenerated16pxBlueprintIcons16Mod.BlueprintIcons16Id
+import typings.blueprintjsIcons.libEsmGeneratedIcons16pxBlueprintIcons16Mod.BlueprintIcons16Id
 import typings.react.mod.ReactChild
 import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element

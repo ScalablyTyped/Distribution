@@ -179,13 +179,11 @@ object PageJS {
     
     /**
       * enable case-sensitive routes
-      * @type {[type]}
       */
     var sensitive: js.UndefOr[Boolean] = js.undefined
     
     /**
       * enable strict matching for trailing slashes
-      * @type {[type]}
       */
     var strict: js.UndefOr[Boolean] = js.undefined
   }
@@ -276,13 +274,11 @@ object PageJS {
     
     /**
       * Export Context
-      * @type {Context}
       */
     var Context: typings.page.PageJS.Context = js.native
     
     /**
       * Expose Route
-      * @type {Route}
       */
     var Route: typings.page.PageJS.Route = js.native
     

@@ -168,11 +168,11 @@ trait ClientHttp2Session extends StObject {
     * This method is only available if `http2session.type` is equal to`http2.constants.NGHTTP2_SESSION_CLIENT`.
     *
     * ```js
-    * const http2 = require('http2');
+    * const http2 = require('node:http2');
     * const clientSession = http2.connect('https://localhost:1234');
     * const {
     *   HTTP2_HEADER_PATH,
-    *   HTTP2_HEADER_STATUS
+    *   HTTP2_HEADER_STATUS,
     * } = http2.constants;
     *
     * const req = clientSession.request({ [HTTP2_HEADER_PATH]: '/' });

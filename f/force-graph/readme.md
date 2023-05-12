@@ -1,7 +1,7 @@
 
 # Scala.js typings for force-graph
 
-Typings are for version 1.42.16
+Typings are for version 1.43.1
 
 ## Library description:
 2D force-directed graph rendered on HTML5 canvas

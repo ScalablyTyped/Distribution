@@ -74,12 +74,12 @@ trait Nimble extends Service {
   ): Request[CreateStreamingImageResponse, AWSError] = js.native
   
   /**
-    * Creates a streaming session in a studio. After invoking this operation, you must poll GetStreamingSession until the streaming session is in state READY.
+    * Creates a streaming session in a studio. After invoking this operation, you must poll GetStreamingSession until the streaming session is in the READY state.
     */
   def createStreamingSession(): Request[CreateStreamingSessionResponse, AWSError] = js.native
   def createStreamingSession(callback: js.Function2[/* err */ AWSError, /* data */ CreateStreamingSessionResponse, Unit]): Request[CreateStreamingSessionResponse, AWSError] = js.native
   /**
-    * Creates a streaming session in a studio. After invoking this operation, you must poll GetStreamingSession until the streaming session is in state READY.
+    * Creates a streaming session in a studio. After invoking this operation, you must poll GetStreamingSession until the streaming session is in the READY state.
     */
   def createStreamingSession(params: CreateStreamingSessionRequest): Request[CreateStreamingSessionResponse, AWSError] = js.native
   def createStreamingSession(
@@ -88,12 +88,12 @@ trait Nimble extends Service {
   ): Request[CreateStreamingSessionResponse, AWSError] = js.native
   
   /**
-    * Creates a streaming session stream for a streaming session. After invoking this API, invoke GetStreamingSessionStream with the returned streamId to poll the resource until it is in state READY.
+    * Creates a streaming session stream for a streaming session. After invoking this API, invoke GetStreamingSessionStream with the returned streamId to poll the resource until it is in the READY state.
     */
   def createStreamingSessionStream(): Request[CreateStreamingSessionStreamResponse, AWSError] = js.native
   def createStreamingSessionStream(callback: js.Function2[/* err */ AWSError, /* data */ CreateStreamingSessionStreamResponse, Unit]): Request[CreateStreamingSessionStreamResponse, AWSError] = js.native
   /**
-    * Creates a streaming session stream for a streaming session. After invoking this API, invoke GetStreamingSessionStream with the returned streamId to poll the resource until it is in state READY.
+    * Creates a streaming session stream for a streaming session. After invoking this API, invoke GetStreamingSessionStream with the returned streamId to poll the resource until it is in the READY state.
     */
   def createStreamingSessionStream(params: CreateStreamingSessionStreamRequest): Request[CreateStreamingSessionStreamResponse, AWSError] = js.native
   def createStreamingSessionStream(
@@ -102,12 +102,12 @@ trait Nimble extends Service {
   ): Request[CreateStreamingSessionStreamResponse, AWSError] = js.native
   
   /**
-    * Create a new Studio. When creating a Studio, two IAM roles must be provided: the admin role and the user Role. These roles are assumed by your users when they log in to the Nimble Studio portal. The user role must have the AmazonNimbleStudio-StudioUser managed policy attached for the portal to function properly. The Admin Role must have the AmazonNimbleStudio-StudioAdmin managed policy attached for the portal to function properly. You may optionally specify a KMS key in the StudioEncryptionConfiguration. In Nimble Studio, resource names, descriptions, initialization scripts, and other data you provide are always encrypted at rest using an KMS key. By default, this key is owned by Amazon Web Services and managed on your behalf. You may provide your own KMS key when calling CreateStudio to encrypt this data using a key you own and manage. When providing an KMS key during studio creation, Nimble Studio creates KMS grants in your account to provide your studio user and admin roles access to these KMS keys. If you delete this grant, the studio will no longer be accessible to your portal users. If you delete the studio KMS key, your studio will no longer be accessible.
+    * Create a new studio. When creating a studio, two IAM roles must be provided: the admin role and the user role. These roles are assumed by your users when they log in to the Nimble Studio portal. The user role must have the AmazonNimbleStudio-StudioUser managed policy attached for the portal to function properly. The admin role must have the AmazonNimbleStudio-StudioAdmin managed policy attached for the portal to function properly. You may optionally specify a KMS key in the StudioEncryptionConfiguration. In Nimble Studio, resource names, descriptions, initialization scripts, and other data you provide are always encrypted at rest using an KMS key. By default, this key is owned by Amazon Web Services and managed on your behalf. You may provide your own KMS key when calling CreateStudio to encrypt this data using a key you own and manage. When providing an KMS key during studio creation, Nimble Studio creates KMS grants in your account to provide your studio user and admin roles access to these KMS keys. If you delete this grant, the studio will no longer be accessible to your portal users. If you delete the studio KMS key, your studio will no longer be accessible.
     */
   def createStudio(): Request[CreateStudioResponse, AWSError] = js.native
   def createStudio(callback: js.Function2[/* err */ AWSError, /* data */ CreateStudioResponse, Unit]): Request[CreateStudioResponse, AWSError] = js.native
   /**
-    * Create a new Studio. When creating a Studio, two IAM roles must be provided: the admin role and the user Role. These roles are assumed by your users when they log in to the Nimble Studio portal. The user role must have the AmazonNimbleStudio-StudioUser managed policy attached for the portal to function properly. The Admin Role must have the AmazonNimbleStudio-StudioAdmin managed policy attached for the portal to function properly. You may optionally specify a KMS key in the StudioEncryptionConfiguration. In Nimble Studio, resource names, descriptions, initialization scripts, and other data you provide are always encrypted at rest using an KMS key. By default, this key is owned by Amazon Web Services and managed on your behalf. You may provide your own KMS key when calling CreateStudio to encrypt this data using a key you own and manage. When providing an KMS key during studio creation, Nimble Studio creates KMS grants in your account to provide your studio user and admin roles access to these KMS keys. If you delete this grant, the studio will no longer be accessible to your portal users. If you delete the studio KMS key, your studio will no longer be accessible.
+    * Create a new studio. When creating a studio, two IAM roles must be provided: the admin role and the user role. These roles are assumed by your users when they log in to the Nimble Studio portal. The user role must have the AmazonNimbleStudio-StudioUser managed policy attached for the portal to function properly. The admin role must have the AmazonNimbleStudio-StudioAdmin managed policy attached for the portal to function properly. You may optionally specify a KMS key in the StudioEncryptionConfiguration. In Nimble Studio, resource names, descriptions, initialization scripts, and other data you provide are always encrypted at rest using an KMS key. By default, this key is owned by Amazon Web Services and managed on your behalf. You may provide your own KMS key when calling CreateStudio to encrypt this data using a key you own and manage. When providing an KMS key during studio creation, Nimble Studio creates KMS grants in your account to provide your studio user and admin roles access to these KMS keys. If you delete this grant, the studio will no longer be accessible to your portal users. If you delete the studio KMS key, your studio will no longer be accessible.
     */
   def createStudio(params: CreateStudioRequest): Request[CreateStudioResponse, AWSError] = js.native
   def createStudio(
@@ -228,12 +228,12 @@ trait Nimble extends Service {
   ): Request[DeleteStudioMemberResponse, AWSError] = js.native
   
   /**
-    * Get Eula.
+    * Get EULA.
     */
   def getEula(): Request[GetEulaResponse, AWSError] = js.native
   def getEula(callback: js.Function2[/* err */ AWSError, /* data */ GetEulaResponse, Unit]): Request[GetEulaResponse, AWSError] = js.native
   /**
-    * Get Eula.
+    * Get EULA.
     */
   def getEula(params: GetEulaRequest): Request[GetEulaResponse, AWSError] = js.native
   def getEula(
@@ -328,12 +328,26 @@ trait Nimble extends Service {
   ): Request[GetStreamingSessionResponse, AWSError] = js.native
   
   /**
-    * Gets a StreamingSessionStream for a streaming session. Invoke this operation to poll the resource after invoking CreateStreamingSessionStream. After the StreamingSessionStream changes to the state READY, the url property will contain a stream to be used with the DCV streaming client.
+    * Gets StreamingSessionBackup resource. Invoke this operation to poll for a streaming session backup while stopping a streaming session.
+    */
+  def getStreamingSessionBackup(): Request[GetStreamingSessionBackupResponse, AWSError] = js.native
+  def getStreamingSessionBackup(callback: js.Function2[/* err */ AWSError, /* data */ GetStreamingSessionBackupResponse, Unit]): Request[GetStreamingSessionBackupResponse, AWSError] = js.native
+  /**
+    * Gets StreamingSessionBackup resource. Invoke this operation to poll for a streaming session backup while stopping a streaming session.
+    */
+  def getStreamingSessionBackup(params: GetStreamingSessionBackupRequest): Request[GetStreamingSessionBackupResponse, AWSError] = js.native
+  def getStreamingSessionBackup(
+    params: GetStreamingSessionBackupRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetStreamingSessionBackupResponse, Unit]
+  ): Request[GetStreamingSessionBackupResponse, AWSError] = js.native
+  
+  /**
+    * Gets a StreamingSessionStream for a streaming session. Invoke this operation to poll the resource after invoking CreateStreamingSessionStream. After the StreamingSessionStream changes to the READY state, the url property will contain a stream to be used with the DCV streaming client.
     */
   def getStreamingSessionStream(): Request[GetStreamingSessionStreamResponse, AWSError] = js.native
   def getStreamingSessionStream(callback: js.Function2[/* err */ AWSError, /* data */ GetStreamingSessionStreamResponse, Unit]): Request[GetStreamingSessionStreamResponse, AWSError] = js.native
   /**
-    * Gets a StreamingSessionStream for a streaming session. Invoke this operation to poll the resource after invoking CreateStreamingSessionStream. After the StreamingSessionStream changes to the state READY, the url property will contain a stream to be used with the DCV streaming client.
+    * Gets a StreamingSessionStream for a streaming session. Invoke this operation to poll the resource after invoking CreateStreamingSessionStream. After the StreamingSessionStream changes to the READY state, the url property will contain a stream to be used with the DCV streaming client.
     */
   def getStreamingSessionStream(params: GetStreamingSessionStreamRequest): Request[GetStreamingSessionStreamResponse, AWSError] = js.native
   def getStreamingSessionStream(
@@ -342,12 +356,12 @@ trait Nimble extends Service {
   ): Request[GetStreamingSessionStreamResponse, AWSError] = js.native
   
   /**
-    * Get a Studio resource.
+    * Get a studio resource.
     */
   def getStudio(): Request[GetStudioResponse, AWSError] = js.native
   def getStudio(callback: js.Function2[/* err */ AWSError, /* data */ GetStudioResponse, Unit]): Request[GetStudioResponse, AWSError] = js.native
   /**
-    * Get a Studio resource.
+    * Get a studio resource.
     */
   def getStudio(params: GetStudioRequest): Request[GetStudioResponse, AWSError] = js.native
   def getStudio(
@@ -384,12 +398,12 @@ trait Nimble extends Service {
   ): Request[GetStudioMemberResponse, AWSError] = js.native
   
   /**
-    * List Eula Acceptances.
+    * List EULA acceptances.
     */
   def listEulaAcceptances(): Request[ListEulaAcceptancesResponse, AWSError] = js.native
   def listEulaAcceptances(callback: js.Function2[/* err */ AWSError, /* data */ ListEulaAcceptancesResponse, Unit]): Request[ListEulaAcceptancesResponse, AWSError] = js.native
   /**
-    * List Eula Acceptances.
+    * List EULA acceptances.
     */
   def listEulaAcceptances(params: ListEulaAcceptancesRequest): Request[ListEulaAcceptancesResponse, AWSError] = js.native
   def listEulaAcceptances(
@@ -398,12 +412,12 @@ trait Nimble extends Service {
   ): Request[ListEulaAcceptancesResponse, AWSError] = js.native
   
   /**
-    * List Eulas.
+    * List EULAs.
     */
   def listEulas(): Request[ListEulasResponse, AWSError] = js.native
   def listEulas(callback: js.Function2[/* err */ AWSError, /* data */ ListEulasResponse, Unit]): Request[ListEulasResponse, AWSError] = js.native
   /**
-    * List Eulas.
+    * List EULAs.
     */
   def listEulas(params: ListEulasRequest): Request[ListEulasResponse, AWSError] = js.native
   def listEulas(
@@ -454,6 +468,20 @@ trait Nimble extends Service {
   ): Request[ListStreamingImagesResponse, AWSError] = js.native
   
   /**
+    * Lists the backups of a streaming session in a studio.
+    */
+  def listStreamingSessionBackups(): Request[ListStreamingSessionBackupsResponse, AWSError] = js.native
+  def listStreamingSessionBackups(callback: js.Function2[/* err */ AWSError, /* data */ ListStreamingSessionBackupsResponse, Unit]): Request[ListStreamingSessionBackupsResponse, AWSError] = js.native
+  /**
+    * Lists the backups of a streaming session in a studio.
+    */
+  def listStreamingSessionBackups(params: ListStreamingSessionBackupsRequest): Request[ListStreamingSessionBackupsResponse, AWSError] = js.native
+  def listStreamingSessionBackups(
+    params: ListStreamingSessionBackupsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListStreamingSessionBackupsResponse, Unit]
+  ): Request[ListStreamingSessionBackupsResponse, AWSError] = js.native
+  
+  /**
     * Lists the streaming sessions in a studio.
     */
   def listStreamingSessions(): Request[ListStreamingSessionsResponse, AWSError] = js.native
@@ -496,12 +524,12 @@ trait Nimble extends Service {
   ): Request[ListStudioMembersResponse, AWSError] = js.native
   
   /**
-    * List studios in your Amazon Web Services account in the requested Amazon Web Services Region.
+    * List studios in your Amazon Web Services accounts in the requested Amazon Web Services Region.
     */
   def listStudios(): Request[ListStudiosResponse, AWSError] = js.native
   def listStudios(callback: js.Function2[/* err */ AWSError, /* data */ ListStudiosResponse, Unit]): Request[ListStudiosResponse, AWSError] = js.native
   /**
-    * List studios in your Amazon Web Services account in the requested Amazon Web Services Region.
+    * List studios in your Amazon Web Services accounts in the requested Amazon Web Services Region.
     */
   def listStudios(params: ListStudiosRequest): Request[ListStudiosResponse, AWSError] = js.native
   def listStudios(
@@ -552,12 +580,12 @@ trait Nimble extends Service {
   ): Request[PutStudioMembersResponse, AWSError] = js.native
   
   /**
-    *  Transitions sessions from the STOPPED state into the READY state. The START_IN_PROGRESS state is the intermediate state between the STOPPED and READY states.
+    * Transitions sessions from the STOPPED state into the READY state. The START_IN_PROGRESS state is the intermediate state between the STOPPED and READY states.
     */
   def startStreamingSession(): Request[StartStreamingSessionResponse, AWSError] = js.native
   def startStreamingSession(callback: js.Function2[/* err */ AWSError, /* data */ StartStreamingSessionResponse, Unit]): Request[StartStreamingSessionResponse, AWSError] = js.native
   /**
-    *  Transitions sessions from the STOPPED state into the READY state. The START_IN_PROGRESS state is the intermediate state between the STOPPED and READY states.
+    * Transitions sessions from the STOPPED state into the READY state. The START_IN_PROGRESS state is the intermediate state between the STOPPED and READY states.
     */
   def startStreamingSession(params: StartStreamingSessionRequest): Request[StartStreamingSessionResponse, AWSError] = js.native
   def startStreamingSession(

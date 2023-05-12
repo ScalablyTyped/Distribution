@@ -115,7 +115,7 @@ open class BoundingBox () extends StObject {
   /**
     * Test if a Bounding Sphere is overlapping, enveloping, or inside this AABB.
     *
-    * @param {BoundingSphere} sphere - Bounding Sphere to test.
+    * @param {import('./bounding-sphere.js').BoundingSphere} sphere - Bounding Sphere to test.
     * @returns {boolean} True if the Bounding Sphere is overlapping, enveloping, or inside the
     * AABB and false otherwise.
     */
@@ -124,8 +124,9 @@ open class BoundingBox () extends StObject {
   /**
     * Test if a ray intersects with the AABB.
     *
-    * @param {Ray} ray - Ray to test against (direction must be normalized).
-    * @param {Vec3} [point] - If there is an intersection, the intersection point will be copied into here.
+    * @param {import('./ray.js').Ray} ray - Ray to test against (direction must be normalized).
+    * @param {Vec3} [point] - If there is an intersection, the intersection point will be copied
+    * into here.
     * @returns {boolean} True if there is an intersection.
     */
   def intersectsRay(ray: Ray): Boolean = js.native
@@ -136,7 +137,7 @@ open class BoundingBox () extends StObject {
     * matrix.
     *
     * @param {BoundingBox} aabb - Box to transform and enclose.
-    * @param {Mat4} m - Transformation matrix to apply to source AABB.
+    * @param {import('../math/mat4.js').Mat4} m - Transformation matrix to apply to source AABB.
     * @param {boolean} ignoreScale - If true is specified, a scale from the matrix is ignored. Defaults to false.
     */
   def setFromTransformedAabb(aabb: BoundingBox, m: Mat4): Unit = js.native

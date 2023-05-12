@@ -6,4 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@trimblemaps/trimblemaps-js", "TrafficIncident")
 @js.native
-open class TrafficIncident () extends ContentBase
+open class TrafficIncident () extends ContentBase {
+  def this(options: ContentOptions) = this()
+}

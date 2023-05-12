@@ -1,0 +1,48 @@
+package typings.awsSdk.clientsApplicationautoscalingMod
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait TargetTrackingMetric extends StObject {
+  
+  /**
+    * The dimensions for the metric. For the list of available dimensions, see the Amazon Web Services documentation available from the table in Amazon Web Services services that publish CloudWatch metrics  in the Amazon CloudWatch User Guide.  Conditional: If you published your metric with dimensions, you must specify the same dimensions in your scaling policy.
+    */
+  var Dimensions: js.UndefOr[TargetTrackingMetricDimensions] = js.undefined
+  
+  /**
+    * The name of the metric.
+    */
+  var MetricName: js.UndefOr[TargetTrackingMetricName] = js.undefined
+  
+  /**
+    * The namespace of the metric. For more information, see the table in Amazon Web Services services that publish CloudWatch metrics  in the Amazon CloudWatch User Guide.
+    */
+  var Namespace: js.UndefOr[TargetTrackingMetricNamespace] = js.undefined
+}
+object TargetTrackingMetric {
+  
+  inline def apply(): TargetTrackingMetric = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[TargetTrackingMetric]
+  }
+  
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetTrackingMetric] (val x: Self) extends AnyVal {
+    
+    inline def setDimensions(value: TargetTrackingMetricDimensions): Self = StObject.set(x, "Dimensions", value.asInstanceOf[js.Any])
+    
+    inline def setDimensionsUndefined: Self = StObject.set(x, "Dimensions", js.undefined)
+    
+    inline def setDimensionsVarargs(value: TargetTrackingMetricDimension*): Self = StObject.set(x, "Dimensions", js.Array(value*))
+    
+    inline def setMetricName(value: TargetTrackingMetricName): Self = StObject.set(x, "MetricName", value.asInstanceOf[js.Any])
+    
+    inline def setMetricNameUndefined: Self = StObject.set(x, "MetricName", js.undefined)
+    
+    inline def setNamespace(value: TargetTrackingMetricNamespace): Self = StObject.set(x, "Namespace", value.asInstanceOf[js.Any])
+    
+    inline def setNamespaceUndefined: Self = StObject.set(x, "Namespace", js.undefined)
+  }
+}

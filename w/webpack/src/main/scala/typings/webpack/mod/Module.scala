@@ -3,12 +3,31 @@ package typings.webpack.mod
 import typings.std.Map
 import typings.std.Record
 import typings.std.Set
-import typings.webpack.anon.Read
-import typings.webpack.anon.Write
+import typings.webpack.webpackStrings._empty
+import typings.webpack.webpackStrings.`assetSlashraw-data-url`
+import typings.webpack.webpackStrings.`consume-shared-module`
 import typings.webpack.webpackStrings.`default-only`
 import typings.webpack.webpackStrings.`default-with-named`
+import typings.webpack.webpackStrings.`fallback-module`
+import typings.webpack.webpackStrings.`lazy-compilation-proxy`
+import typings.webpack.webpackStrings.`provide-module`
+import typings.webpack.webpackStrings.`remote-module`
+import typings.webpack.webpackStrings.asset
+import typings.webpack.webpackStrings.assetSlashinline
+import typings.webpack.webpackStrings.assetSlashresource
+import typings.webpack.webpackStrings.assetSlashsource
+import typings.webpack.webpackStrings.css
+import typings.webpack.webpackStrings.cssSlashglobal
+import typings.webpack.webpackStrings.cssSlashmodule
 import typings.webpack.webpackStrings.dynamic
+import typings.webpack.webpackStrings.javascriptSlashauto
+import typings.webpack.webpackStrings.javascriptSlashdynamic
+import typings.webpack.webpackStrings.javascriptSlashesm
+import typings.webpack.webpackStrings.json
 import typings.webpack.webpackStrings.namespace
+import typings.webpack.webpackStrings.runtime
+import typings.webpack.webpackStrings.webassemblySlashasync
+import typings.webpack.webpackStrings.webassemblySlashsync
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,10 +37,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class Module protected ()
   extends StObject
      with DependenciesBlock {
-  def this(`type`: String) = this()
-  def this(`type`: String, context: String) = this()
-  def this(`type`: String, context: String, layer: String) = this()
-  def this(`type`: String, context: Unit, layer: String) = this()
+  def this(`type`: _empty | runtime | javascriptSlashauto | javascriptSlashdynamic | javascriptSlashesm | json | webassemblySlashasync | webassemblySlashsync | css | cssSlashglobal | cssSlashmodule | asset | assetSlashinline | assetSlashresource | assetSlashsource | `assetSlashraw-data-url` | `fallback-module` | `remote-module` | `provide-module` | `consume-shared-module` | `lazy-compilation-proxy`) = this()
+  def this(
+    `type`: _empty | runtime | javascriptSlashauto | javascriptSlashdynamic | javascriptSlashesm | json | webassemblySlashasync | webassemblySlashsync | css | cssSlashglobal | cssSlashmodule | asset | assetSlashinline | assetSlashresource | assetSlashsource | `assetSlashraw-data-url` | `fallback-module` | `remote-module` | `provide-module` | `consume-shared-module` | `lazy-compilation-proxy`,
+    context: String
+  ) = this()
+  def this(
+    `type`: _empty | runtime | javascriptSlashauto | javascriptSlashdynamic | javascriptSlashesm | json | webassemblySlashasync | webassemblySlashsync | css | cssSlashglobal | cssSlashmodule | asset | assetSlashinline | assetSlashresource | assetSlashsource | `assetSlashraw-data-url` | `fallback-module` | `remote-module` | `provide-module` | `consume-shared-module` | `lazy-compilation-proxy`,
+    context: String,
+    layer: String
+  ) = this()
+  def this(
+    `type`: _empty | runtime | javascriptSlashauto | javascriptSlashdynamic | javascriptSlashesm | json | webassemblySlashasync | webassemblySlashsync | css | cssSlashglobal | cssSlashmodule | asset | assetSlashinline | assetSlashresource | assetSlashsource | `assetSlashraw-data-url` | `fallback-module` | `remote-module` | `provide-module` | `consume-shared-module` | `lazy-compilation-proxy`,
+    context: Unit,
+    layer: String
+  ) = this()
   
   /**
   	 * Adds a DependencyBlock to DependencyBlock relationship.
@@ -100,7 +130,7 @@ open class Module protected ()
   var depth: Double = js.native
   
   /* CompleteClass */
-  override def deserialize(__0: Read): Unit = js.native
+  override def deserialize(__0: ObjectDeserializerContext): Unit = js.native
   
   def errors: Any = js.native
   
@@ -219,7 +249,7 @@ open class Module protected ()
   var resolveOptions: ResolveOptionsWebpackOptions = js.native
   
   /* CompleteClass */
-  override def serialize(__0: Write): Unit = js.native
+  override def serialize(__0: ObjectSerializerContext): Unit = js.native
   
   def size(): Double = js.native
   def size(`type`: String): Double = js.native
@@ -227,7 +257,7 @@ open class Module protected ()
   def source(dependencyTemplates: DependencyTemplates, runtimeTemplate: RuntimeTemplate): Source = js.native
   def source(dependencyTemplates: DependencyTemplates, runtimeTemplate: RuntimeTemplate, `type`: String): Source = js.native
   
-  var `type`: String = js.native
+  var `type`: _empty | runtime | javascriptSlashauto | javascriptSlashdynamic | javascriptSlashesm | json | webassemblySlashasync | webassemblySlashsync | css | cssSlashglobal | cssSlashmodule | asset | assetSlashinline | assetSlashresource | assetSlashsource | `assetSlashraw-data-url` | `fallback-module` | `remote-module` | `provide-module` | `consume-shared-module` | `lazy-compilation-proxy` = js.native
   
   /**
   	 * Assuming this module is in the cache. Update the (cached) module with

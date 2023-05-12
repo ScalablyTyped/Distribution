@@ -99,6 +99,11 @@ object libEsmComponentsFormsFileInputMod {
     var onInputChange: js.UndefOr[FormEventHandler[HTMLInputElement]] = js.undefined
     
     /**
+      * Whether the file input should appear with small styling.
+      */
+    var small: js.UndefOr[Boolean] = js.undefined
+    
+    /**
       * The text to display.
       *
       * @default "Choose file..."
@@ -142,6 +147,10 @@ object libEsmComponentsFormsFileInputMod {
       inline def setOnInputChange(value: FormEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onInputChange", js.Any.fromFunction1(value))
       
       inline def setOnInputChangeUndefined: Self = StObject.set(x, "onInputChange", js.undefined)
+      
+      inline def setSmall(value: Boolean): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
+      
+      inline def setSmallUndefined: Self = StObject.set(x, "small", js.undefined)
       
       inline def setText(value: ReactNode): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       

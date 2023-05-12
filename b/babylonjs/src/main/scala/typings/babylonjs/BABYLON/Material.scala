@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Material
   extends StObject
-     with IAnimatable {
+     with IAnimatable
+     with IClipPlanesHolder {
   
   /**
     * Processes to execute after binding the material to a mesh
@@ -83,6 +84,8 @@ trait Material
   /** @internal */
   def _callbackPluginEventPrepareDefinesBeforeAttributes(eventData: MaterialPluginPrepareDefines): Unit = js.native
   
+  /* protected */ def _checkScenePerformancePriority(): Unit = js.native
+  
   /**
     * Specifies if back or front faces should be culled (when culling is enabled)
     */
@@ -120,6 +123,12 @@ trait Material
   
   /** @internal */
   var _indexInSceneMaterialArray: Double = js.native
+  
+  /** @internal */
+  var _internalMetadata: Any = js.native
+  
+  /** @internal */
+  def _isMaterial: Boolean = js.native
   
   /** @internal */
   var _loadedUniqueId: String = js.native
@@ -658,7 +667,7 @@ trait Material
   
   /**
     * List of inspectable custom properties (used by the Inspector)
-    * @see https://doc.babylonjs.com/how_to/debug_layer#extensibility
+    * @see https://doc.babylonjs.com/toolsAndResources/inspector#extensibility
     */
   var inspectableCustomProperties: js.Array[IInspectable] = js.native
   
@@ -701,8 +710,10 @@ trait Material
   
   /**
     * Marks the material to indicate that it needs to be re-calculated
+    * @param forceMaterialDirty - Forces the material to be marked as dirty for all components (same as this.markAsDirty(Material.AllDirtyFlag)). You should use this flag if the material is frozen and you want to force a recompilation.
     */
   def markDirty(): Unit = js.native
+  def markDirty(forceMaterialDirty: Boolean): Unit = js.native
   
   /** @internal */
   var meshMap: Nullable[org.scalablytyped.runtime.StringDictionary[js.UndefOr[AbstractMesh]]] = js.native

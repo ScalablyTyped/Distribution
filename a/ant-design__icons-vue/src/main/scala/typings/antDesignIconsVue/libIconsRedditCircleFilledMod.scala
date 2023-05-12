@@ -16,7 +16,7 @@ object libIconsRedditCircleFilledMod extends Shortcut {
   @js.native
   trait RedditCircleFilledIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_RedditCircleFilledIconType: String = js.native

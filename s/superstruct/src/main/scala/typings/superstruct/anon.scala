@@ -1,36 +1,16 @@
 package typings.superstruct
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.superstruct.libStructMod.Context
-import typings.superstruct.libStructMod.Refiner
-import typings.superstruct.libStructMod.Result
-import typings.superstruct.libStructMod.Struct
-import typings.superstruct.libStructMod.Validator
+import typings.superstruct.distStructMod.Context
+import typings.superstruct.distStructMod.Refiner
+import typings.superstruct.distStructMod.Result
+import typings.superstruct.distStructMod.Struct
+import typings.superstruct.distStructMod.Validator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
-  
-  trait `0` extends StObject {
-    
-    var coerce: js.UndefOr[Boolean] = js.undefined
-  }
-  object `0` {
-    
-    inline def apply(): `0` = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[`0`]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
-      
-      inline def setCoerce(value: Boolean): Self = StObject.set(x, "coerce", value.asInstanceOf[js.Any])
-      
-      inline def setCoerceUndefined: Self = StObject.set(x, "coerce", js.undefined)
-    }
-  }
   
   trait Branch extends StObject {
     
@@ -39,6 +19,8 @@ object anon {
     var coerce: js.UndefOr[Boolean] = js.undefined
     
     var mask: js.UndefOr[Boolean] = js.undefined
+    
+    var message: js.UndefOr[String] = js.undefined
     
     var path: js.UndefOr[js.Array[Any]] = js.undefined
   }
@@ -66,6 +48,10 @@ object anon {
       
       inline def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
       
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      
       inline def setPath(value: js.Array[Any]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
       inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
@@ -79,6 +65,8 @@ object anon {
     var coerce: js.UndefOr[Boolean] = js.undefined
     
     var mask: js.UndefOr[Boolean] = js.undefined
+    
+    var message: js.UndefOr[String] = js.undefined
   }
   object Coerce {
     
@@ -97,12 +85,16 @@ object anon {
       inline def setMask(value: Boolean): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
       
       inline def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
+      
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     }
   }
   
   trait Coercer[S, T] extends StObject {
     
-    var coercer: js.UndefOr[typings.superstruct.libStructMod.Coercer[Any]] = js.undefined
+    var coercer: js.UndefOr[typings.superstruct.distStructMod.Coercer[Any]] = js.undefined
     
     var entries: js.UndefOr[
         js.Function2[
@@ -180,10 +172,38 @@ object anon {
     extends StObject
        with Instantiable1[/* args */ Any, Any]
   
-  /* Inlined std.Partial<superstruct.superstruct/lib/error.Failure> */
+  trait Message extends StObject {
+    
+    var coerce: js.UndefOr[Boolean] = js.undefined
+    
+    var message: js.UndefOr[String] = js.undefined
+  }
+  object Message {
+    
+    inline def apply(): Message = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Message]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
+      
+      inline def setCoerce(value: Boolean): Self = StObject.set(x, "coerce", value.asInstanceOf[js.Any])
+      
+      inline def setCoerceUndefined: Self = StObject.set(x, "coerce", js.undefined)
+      
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    }
+  }
+  
+  /* Inlined std.Partial<superstruct.superstruct/dist/error.Failure> */
   trait PartialFailure extends StObject {
     
     var branch: js.UndefOr[js.Array[Any]] = js.undefined
+    
+    var explanation: js.UndefOr[String] = js.undefined
     
     var key: js.UndefOr[Any] = js.undefined
     
@@ -212,6 +232,10 @@ object anon {
       inline def setBranchUndefined: Self = StObject.set(x, "branch", js.undefined)
       
       inline def setBranchVarargs(value: Any*): Self = StObject.set(x, "branch", js.Array(value*))
+      
+      inline def setExplanation(value: String): Self = StObject.set(x, "explanation", value.asInstanceOf[js.Any])
+      
+      inline def setExplanationUndefined: Self = StObject.set(x, "explanation", js.undefined)
       
       inline def setKey(value: Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       

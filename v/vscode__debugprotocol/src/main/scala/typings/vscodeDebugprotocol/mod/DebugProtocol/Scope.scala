@@ -7,13 +7,13 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** A Scope is a named container for variables. Optionally a scope can map to a source or a range within a source. */
+/** A `Scope` is a named container for variables. Optionally a scope can map to a source or a range within a source. */
 trait Scope extends StObject {
   
-  /** The start column of the range covered by this scope. */
+  /** Start position of the range covered by the scope. It is measured in UTF-16 code units and the client capability `columnsStartAt1` determines whether it is 0- or 1-based. */
   var column: js.UndefOr[Double] = js.undefined
   
-  /** The end column of the range covered by this scope. */
+  /** End position of the range covered by the scope. It is measured in UTF-16 code units and the client capability `columnsStartAt1` determines whether it is 0- or 1-based. */
   var endColumn: js.UndefOr[Double] = js.undefined
   
   /** The end line of the range covered by this scope. */
@@ -50,7 +50,7 @@ trait Scope extends StObject {
   /** The source for this scope. */
   var source: js.UndefOr[Source] = js.undefined
   
-  /** The variables of this scope can be retrieved by passing the value of variablesReference to the VariablesRequest. */
+  /** The variables of this scope can be retrieved by passing the value of `variablesReference` to the `variables` request as long as execution remains suspended. See 'Lifetime of Object References' in the Overview section for details. */
   var variablesReference: Double
 }
 object Scope {

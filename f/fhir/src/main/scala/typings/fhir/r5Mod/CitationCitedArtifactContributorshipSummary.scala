@@ -16,7 +16,7 @@ trait CitationCitedArtifactContributorshipSummary
   var source: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
-    * The format for the display string.
+    * The format for the display string, such as author last name with first letter capitalized followed by forename initials.
     */
   var style: js.UndefOr[CodeableConcept] = js.undefined
   

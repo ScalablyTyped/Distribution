@@ -1,6 +1,7 @@
 package typings.redisBloom
 
 import typings.redisBloom.anon.TypeofADD
+import typings.redisBloom.anon.TypeofCARD
 import typings.redisBloom.anon.TypeofEXISTS
 import typings.redisBloom.anon.TypeofINFO
 import typings.redisBloom.anon.TypeofINSERT
@@ -26,6 +27,12 @@ object distCommandsBloomMod {
     def ADD_ : TypeofADD = js.native
     
     inline def ADD__=(x: TypeofADD): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ADD")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@redis/bloom/dist/commands/bloom", "default.CARD")
+    @js.native
+    def CARD_ : TypeofCARD = js.native
+    
+    inline def CARD__=(x: TypeofCARD): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CARD")(x.asInstanceOf[js.Any])
     
     @JSImport("@redis/bloom/dist/commands/bloom", "default.EXISTS")
     @js.native
@@ -79,6 +86,11 @@ object distCommandsBloomMod {
     @js.native
     def add: TypeofADD = js.native
     inline def add_=(x: TypeofADD): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("add")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@redis/bloom/dist/commands/bloom", "default.card")
+    @js.native
+    def card: TypeofCARD = js.native
+    inline def card_=(x: TypeofCARD): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("card")(x.asInstanceOf[js.Any])
     
     @JSImport("@redis/bloom/dist/commands/bloom", "default.exists")
     @js.native

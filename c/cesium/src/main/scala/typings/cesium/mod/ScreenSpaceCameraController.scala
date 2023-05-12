@@ -26,7 +26,7 @@ open class ScreenSpaceCameraController protected () extends StObject {
   def destroy(): Unit = js.native
   
   /**
-    * Enables or disables camera collision detection with terrain.
+    * When disabled, the values of <code>maximumZoomDistance</code> and <code>minimumZoomDistance</code> are ignored.
     */
   var enableCollisionDetection: Boolean = js.native
   
@@ -129,7 +129,12 @@ open class ScreenSpaceCameraController protected () extends StObject {
   var minimumCollisionTerrainHeight: Double = js.native
   
   /**
-    * The minimum height the camera must be before picking the terrain instead of the ellipsoid.
+    * The minimum distance the camera must be before testing for collision with terrain when zoom with inertia.
+    */
+  var minimumPickingTerrainDistanceWithInertia: Double = js.native
+  
+  /**
+    * The minimum height the camera must be before picking the terrain or scene content instead of the ellipsoid.
     */
   var minimumPickingTerrainHeight: Double = js.native
   

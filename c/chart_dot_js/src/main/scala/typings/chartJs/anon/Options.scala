@@ -1,24 +1,27 @@
 package typings.chartJs.anon
 
-import typings.chartJs.mod.LinearScaleOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Options extends StObject {
   
-  var options: LinearScaleOptions
+  var options: js.Object
+  
+  var plugin: js.Object
 }
 object Options {
   
-  inline def apply(options: LinearScaleOptions): Options = {
-    val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
+  inline def apply(options: js.Object, plugin: js.Object): Options = {
+    val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any], plugin = plugin.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
     
-    inline def setOptions(value: LinearScaleOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: js.Object): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    
+    inline def setPlugin(value: js.Object): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "stream-to-string" : "1.2.0"
+      "stream-to-string" : "1.2.1"
     }
   ],
   "test-dependencies" : [
     {
-      "stream-to-string" : "1.2.0"
+      "stream-to-string" : "1.2.1"
     }
   ],
   "compile-devDependencies" : [

@@ -32,7 +32,7 @@ trait UpdateEndpointRequest extends StObject {
   var RoleArn: js.UndefOr[IamRoleArn] = js.undefined
   
   /**
-    * Configure the routing policy, including the health check and secondary Region..
+    * Configure the routing policy, including the health check and secondary Region.
     */
   var RoutingConfig: js.UndefOr[typings.awsSdk.clientsEventbridgeMod.RoutingConfig] = js.undefined
 }

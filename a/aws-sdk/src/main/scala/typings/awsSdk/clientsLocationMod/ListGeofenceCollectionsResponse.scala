@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListGeofenceCollectionsResponse extends StObject {
   
   /**
-    * Lists the geofence collections that exist in your AWS account.
+    * Lists the geofence collections that exist in your Amazon Web Services account.
     */
   var Entries: ListGeofenceCollectionsResponseEntryList
   

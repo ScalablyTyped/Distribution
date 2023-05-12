@@ -1,7 +1,7 @@
 
 # Scala.js typings for abortable-iterator
 
-Typings are for version 4.0.2
+Typings are for version 5.0.1
 
 ## Library description:
 Make any iterator or iterable abortable via an AbortSignal

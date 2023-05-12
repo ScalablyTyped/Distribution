@@ -6,13 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @js.native
 sealed trait StreetViewPreference extends StObject
-/**
-  * Options that bias a search result towards returning a Street View panorama
-  * that is nearest to the request location, or a panorama that is considered
-  * most likely to be what the user wants to see. Specify these by value, or by
-  * using the constant&#39;s name. For example, <code>'best'</code> or
-  * <code>google.maps.StreetViewPreference.BEST</code>.
-  */
 @JSGlobal("google.maps.StreetViewPreference")
 @js.native
 object StreetViewPreference extends StObject {

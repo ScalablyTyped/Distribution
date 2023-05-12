@@ -14,7 +14,7 @@ trait DescribeJobLogItemsRequest extends StObject {
   /**
     * Request to describe Job log item maximum results.
     */
-  var maxResults: js.UndefOr[StrictlyPositiveInteger] = js.undefined
+  var maxResults: js.UndefOr[MaxResultsType] = js.undefined
   
   /**
     * Request to describe Job log next token.
@@ -33,7 +33,7 @@ object DescribeJobLogItemsRequest {
     
     inline def setJobID(value: JobID): Self = StObject.set(x, "jobID", value.asInstanceOf[js.Any])
     
-    inline def setMaxResults(value: StrictlyPositiveInteger): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResultsType): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
     inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     

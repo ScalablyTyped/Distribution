@@ -43,7 +43,7 @@ trait Config extends StObject {
   
   var testId: js.Array[String]
   
-  var testTimeout: Double
+  var testTimeout: js.UndefOr[Double | Null] = js.undefined
   
   var urlConfig: js.Array[Id]
 }
@@ -68,10 +68,9 @@ object Config {
     scrolltop: Boolean,
     seed: String,
     testId: js.Array[String],
-    testTimeout: Double,
     urlConfig: js.Array[Id]
   ): Config = {
-    val __obj = js.Dynamic.literal(altertitle = altertitle.asInstanceOf[js.Any], autostart = autostart.asInstanceOf[js.Any], collapse = collapse.asInstanceOf[js.Any], current = current.asInstanceOf[js.Any], failOnZeroTests = failOnZeroTests.asInstanceOf[js.Any], filter = filter.asInstanceOf[js.Any], fixture = fixture.asInstanceOf[js.Any], hidepassed = hidepassed.asInstanceOf[js.Any], maxDepth = maxDepth.asInstanceOf[js.Any], module = module.asInstanceOf[js.Any], moduleId = moduleId.asInstanceOf[js.Any], noglobals = noglobals.asInstanceOf[js.Any], notrycatch = notrycatch.asInstanceOf[js.Any], reorder = reorder.asInstanceOf[js.Any], requireExpects = requireExpects.asInstanceOf[js.Any], scrolltop = scrolltop.asInstanceOf[js.Any], seed = seed.asInstanceOf[js.Any], testId = testId.asInstanceOf[js.Any], testTimeout = testTimeout.asInstanceOf[js.Any], urlConfig = urlConfig.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(altertitle = altertitle.asInstanceOf[js.Any], autostart = autostart.asInstanceOf[js.Any], collapse = collapse.asInstanceOf[js.Any], current = current.asInstanceOf[js.Any], failOnZeroTests = failOnZeroTests.asInstanceOf[js.Any], filter = filter.asInstanceOf[js.Any], fixture = fixture.asInstanceOf[js.Any], hidepassed = hidepassed.asInstanceOf[js.Any], maxDepth = maxDepth.asInstanceOf[js.Any], module = module.asInstanceOf[js.Any], moduleId = moduleId.asInstanceOf[js.Any], noglobals = noglobals.asInstanceOf[js.Any], notrycatch = notrycatch.asInstanceOf[js.Any], reorder = reorder.asInstanceOf[js.Any], requireExpects = requireExpects.asInstanceOf[js.Any], scrolltop = scrolltop.asInstanceOf[js.Any], seed = seed.asInstanceOf[js.Any], testId = testId.asInstanceOf[js.Any], urlConfig = urlConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[Config]
   }
   
@@ -119,6 +118,10 @@ object Config {
     inline def setTestIdVarargs(value: String*): Self = StObject.set(x, "testId", js.Array(value*))
     
     inline def setTestTimeout(value: Double): Self = StObject.set(x, "testTimeout", value.asInstanceOf[js.Any])
+    
+    inline def setTestTimeoutNull: Self = StObject.set(x, "testTimeout", null)
+    
+    inline def setTestTimeoutUndefined: Self = StObject.set(x, "testTimeout", js.undefined)
     
     inline def setUrlConfig(value: js.Array[Id]): Self = StObject.set(x, "urlConfig", value.asInstanceOf[js.Any])
     

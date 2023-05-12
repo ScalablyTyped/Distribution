@@ -165,6 +165,12 @@ object jestTypesStrings {
   inline def finish_describe_definition: finish_describe_definition = "finish_describe_definition".asInstanceOf[finish_describe_definition]
   
   @js.native
+  sealed trait focused
+    extends StObject
+       with Status
+  inline def focused: focused = "focused".asInstanceOf[focused]
+  
+  @js.native
   sealed trait hook_failure extends StObject
   inline def hook_failure: hook_failure = "hook_failure".asInstanceOf[hook_failure]
   

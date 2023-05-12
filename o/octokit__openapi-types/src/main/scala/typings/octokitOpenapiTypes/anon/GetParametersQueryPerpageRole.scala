@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetParametersQueryPerpageRole extends StObject {
   
   /**
-    * Team members will include the members of child teams.
+    * List team members
+    * @description Team members will include the members of child teams.
     *
     * To list members in a team, the team must be visible to the authenticated user.
     */

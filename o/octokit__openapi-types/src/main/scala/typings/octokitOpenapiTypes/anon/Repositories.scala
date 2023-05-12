@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Repositories extends StObject {
   
   /**
-    * @description The OAuth access token used to authenticate to the GitHub API.
+    * @description The access token used to authenticate to the GitHub API.
     * @example e72e16c7e42f292c6912e7710c838347ae178b4a
     */
   var access_token: String

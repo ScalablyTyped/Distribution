@@ -44,7 +44,7 @@ trait RasterMultidimensionalInfoVariables extends StObject {
   /**
     * Unit of the variable measured in.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html#RasterMultidimensionalInfo)
+    * [Read more...](global.html#unit)
     */
   var unit: js.UndefOr[String] = js.undefined
 }

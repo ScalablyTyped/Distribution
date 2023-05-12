@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CommentAuthorInformation extends StObject {
   
   /**
-    * The optional icon path for the author
-    */
+  		 * The optional icon path for the author
+  		 */
   var iconPath: js.UndefOr[Uri] = js.undefined
   
   /**
-    * The display name of the author of the comment
-    */
+  		 * The display name of the author of the comment
+  		 */
   var name: String
 }
 object CommentAuthorInformation {

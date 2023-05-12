@@ -4,8 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** @typedef {import('../../entity.js').Entity} Entity */
-/** @typedef {import('./system.js').AudioListenerComponentSystem} AudioListenerComponentSystem */
 /**
   * Represents the audio listener in the 3D world, so that 3D positioned audio sources are heard
   * correctly.
@@ -18,8 +16,10 @@ open class AudioListenerComponent protected () extends Component {
   /**
     * Create a new AudioListenerComponent instance.
     *
-    * @param {AudioListenerComponentSystem} system - The ComponentSystem that created this Component.
-    * @param {Entity} entity - The Entity that this Component is attached to.
+    * @param {import('./system.js').AudioListenerComponentSystem} system - The ComponentSystem
+    * that created this component.
+    * @param {import('../../entity.js').Entity} entity - The Entity that this component is
+    * attached to.
     */
   def this(system: AudioListenerComponentSystem, entity: Entity) = this()
   

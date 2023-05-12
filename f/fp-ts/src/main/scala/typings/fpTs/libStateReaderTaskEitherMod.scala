@@ -12,7 +12,7 @@ import typings.fpTs.libFromIOMod.FromIO4
 import typings.fpTs.libFromReaderMod.FromReader4
 import typings.fpTs.libFromStateMod.FromState4
 import typings.fpTs.libFromTaskMod.FromTask4
-import typings.fpTs.libFunctionMod.Lazy
+import typings.fpTs.libFunctionMod.LazyArg
 import typings.fpTs.libFunctorMod.Functor4
 import typings.fpTs.libIOMod.IO_
 import typings.fpTs.libIoeitherMod.IOEither_
@@ -111,7 +111,7 @@ object libStateReaderTaskEitherMod {
   val URI: /* "StateReaderTaskEither" */ String = js.native
   type URI = /* "StateReaderTaskEither" */ String
   
-  inline def alt[S, R, E, A](that: Lazy[StateReaderTaskEither_[S, R, E, A]]): js.Function1[/* fa */ StateReaderTaskEither_[S, R, E, A], StateReaderTaskEither_[S, R, E, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("alt")(that.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ StateReaderTaskEither_[S, R, E, A], StateReaderTaskEither_[S, R, E, A]]]
+  inline def alt[S, R, E, A](that: LazyArg[StateReaderTaskEither_[S, R, E, A]]): js.Function1[/* fa */ StateReaderTaskEither_[S, R, E, A], StateReaderTaskEither_[S, R, E, A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("alt")(that.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ StateReaderTaskEither_[S, R, E, A], StateReaderTaskEither_[S, R, E, A]]]
   
   inline def altW[S, R2, E2, B](that: js.Function0[StateReaderTaskEither_[S, R2, E2, B]]): js.Function1[
     /* fa */ StateReaderTaskEither_[S, Any, Any, Any], 
@@ -381,7 +381,7 @@ object libStateReaderTaskEitherMod {
     StateReaderTaskEither_[Any, Any, Any, B]
   ]]
   
-  inline def chainOptionK[E](onNone: Lazy[E]): js.Function1[
+  inline def chainOptionK[E](onNone: LazyArg[E]): js.Function1[
     /* f */ js.Function1[/* a */ Any, Option_[Any]], 
     js.Function1[
       /* ma */ StateReaderTaskEither_[Any, Any, E, Any], 
@@ -392,6 +392,20 @@ object libStateReaderTaskEitherMod {
     js.Function1[
       /* ma */ StateReaderTaskEither_[Any, Any, E, Any], 
       StateReaderTaskEither_[Any, Any, E, Any]
+    ]
+  ]]
+  
+  inline def chainOptionKW[E2](onNone: LazyArg[E2]): js.Function1[
+    /* f */ js.Function1[/* a */ Any, Option_[Any]], 
+    js.Function1[
+      /* ma */ StateReaderTaskEither_[Any, Any, Any, Any], 
+      StateReaderTaskEither_[Any, Any, Any | E2, Any]
+    ]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("chainOptionKW")(onNone.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* f */ js.Function1[/* a */ Any, Option_[Any]], 
+    js.Function1[
+      /* ma */ StateReaderTaskEither_[Any, Any, Any, Any], 
+      StateReaderTaskEither_[Any, Any, Any | E2, Any]
     ]
   ]]
   
@@ -521,6 +535,18 @@ object libStateReaderTaskEitherMod {
     StateReaderTaskEither_[Any, Any, Any, Any]
   ]]
   
+  inline def flatMap[A, S, R2, E2, B](f: js.Function1[/* a */ A, StateReaderTaskEither_[S, R2, E2, B]]): js.Function1[
+    /* ma */ StateReaderTaskEither_[S, Any, Any, A], 
+    StateReaderTaskEither_[S, Any & R2, Any | E2, B]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatMap")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* ma */ StateReaderTaskEither_[S, Any, Any, A], 
+    StateReaderTaskEither_[S, Any & R2, Any | E2, B]
+  ]]
+  inline def flatMap[S, R1, E1, A, R2, E2, B](
+    ma: StateReaderTaskEither_[S, R1, E1, A],
+    f: js.Function1[/* a */ A, StateReaderTaskEither_[S, R2, E2, B]]
+  ): StateReaderTaskEither_[S, R1 & R2, E1 | E2, B] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatMap")(ma.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[StateReaderTaskEither_[S, R1 & R2, E1 | E2, B]]
+  
   inline def flatten[S, R, E, A](mma: StateReaderTaskEither_[S, R, E, StateReaderTaskEither_[S, R, E, A]]): StateReaderTaskEither_[S, R, E, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(mma.asInstanceOf[js.Any]).asInstanceOf[StateReaderTaskEither_[S, R, E, A]]
   
   inline def flattenW[S, R1, E1, R2, E2, A](mma: StateReaderTaskEither_[S, R1, E1, StateReaderTaskEither_[S, R2, E2, A]]): StateReaderTaskEither_[S, R1 & R2, E1 | E2, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("flattenW")(mma.asInstanceOf[js.Any]).asInstanceOf[StateReaderTaskEither_[S, R1 & R2, E1 | E2, A]]
@@ -537,9 +563,9 @@ object libStateReaderTaskEitherMod {
   
   inline def fromIOK[A /* <: js.Array[Any] */, B](f: js.Function1[/* a */ A, IO_[B]]): js.Function1[/* a */ A, StateReaderTaskEither_[Any, Any, scala.Nothing, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIOK")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* a */ A, StateReaderTaskEither_[Any, Any, scala.Nothing, B]]]
   
-  inline def fromOption[E](onNone: Lazy[E]): js.Function1[/* fa */ Option_[Any], StateReaderTaskEither_[Any, Any, E, Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromOption")(onNone.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Option_[Any], StateReaderTaskEither_[Any, Any, E, Any]]]
+  inline def fromOption[E](onNone: LazyArg[E]): js.Function1[/* fa */ Option_[Any], StateReaderTaskEither_[Any, Any, E, Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromOption")(onNone.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ Option_[Any], StateReaderTaskEither_[Any, Any, E, Any]]]
   
-  inline def fromOptionK[E](onNone: Lazy[E]): js.Function1[
+  inline def fromOptionK[E](onNone: LazyArg[E]): js.Function1[
     /* f */ js.Function1[/* a */ js.Array[Any], Option_[Any]], 
     js.Function1[/* a */ js.Array[Any], StateReaderTaskEither_[Any, Any, E, Any]]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromOptionK")(onNone.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
@@ -656,6 +682,18 @@ object libStateReaderTaskEitherMod {
   @JSImport("fp-ts/lib/StateReaderTaskEither", "stateReaderTaskEitherSeq")
   @js.native
   val stateReaderTaskEitherSeq: Monad4[typings.fpTs.libStateReaderTaskEitherMod.URI] & Bifunctor4[typings.fpTs.libStateReaderTaskEitherMod.URI] & Alt4[typings.fpTs.libStateReaderTaskEitherMod.URI] & MonadTask4[typings.fpTs.libStateReaderTaskEitherMod.URI] & MonadThrow4[typings.fpTs.libStateReaderTaskEitherMod.URI] = js.native
+  
+  inline def tap[A, S, R2, E2, _underscore](f: js.Function1[/* a */ A, StateReaderTaskEither_[S, R2, E2, _underscore]]): js.Function1[
+    /* self */ StateReaderTaskEither_[S, Any, Any, A], 
+    StateReaderTaskEither_[S, Any & R2, E2 | Any, A]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("tap")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* self */ StateReaderTaskEither_[S, Any, Any, A], 
+    StateReaderTaskEither_[S, Any & R2, E2 | Any, A]
+  ]]
+  inline def tap[S, R1, E1, A, R2, E2, _underscore](
+    self: StateReaderTaskEither_[S, R1, E1, A],
+    f: js.Function1[/* a */ A, StateReaderTaskEither_[S, R2, E2, _underscore]]
+  ): StateReaderTaskEither_[S, R1 & R2, E1 | E2, A] = (^.asInstanceOf[js.Dynamic].applyDynamic("tap")(self.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[StateReaderTaskEither_[S, R1 & R2, E1 | E2, A]]
   
   @JSImport("fp-ts/lib/StateReaderTaskEither", "throwError")
   @js.native

@@ -1,6 +1,6 @@
 package typings.firebaseFirestore.anon
 
-import typings.firebaseFirestore.distPackagesFirestoreSrcApiSnapshotMod.DocumentSnapshot
+import typings.firebaseFirestore.distPackagesFirestoreSrcApiSnapshotMod.QuerySnapshot
 import typings.firebaseFirestore.distPackagesFirestoreSrcUtilErrorMod.FirestoreError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,7 +12,7 @@ trait `41`[T] extends StObject {
   
   var error: js.UndefOr[js.Function1[/* error */ FirestoreError, Unit]] = js.undefined
   
-  var next: js.UndefOr[js.Function1[/* snapshot */ DocumentSnapshot[T], Unit]] = js.undefined
+  var next: js.UndefOr[js.Function1[/* snapshot */ QuerySnapshot[T], Unit]] = js.undefined
 }
 object `41` {
   
@@ -32,7 +32,7 @@ object `41` {
     
     inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    inline def setNext(value: /* snapshot */ DocumentSnapshot[T] => Unit): Self = StObject.set(x, "next", js.Any.fromFunction1(value))
+    inline def setNext(value: /* snapshot */ QuerySnapshot[T] => Unit): Self = StObject.set(x, "next", js.Any.fromFunction1(value))
     
     inline def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
   }

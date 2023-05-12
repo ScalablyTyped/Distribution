@@ -1,7 +1,7 @@
 
 # Scala.js typings for fingerprintjs__fingerprintjs
 
-Typings are for version 3.3.6
+Typings are for version 3.4.1
 
 ## Library description:
 Browser fingerprinting library with the highest accuracy and stability

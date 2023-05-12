@@ -15,6 +15,7 @@ import typings.meteor.anon.ForceApprovalPrompt
 import typings.meteor.anon.Logout
 import typings.meteor.anon.Profile
 import typings.meteor.anon.Stop
+import typings.meteor.anon.UserId
 import typings.meteor.anon.`0`
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -76,7 +77,7 @@ object accountsBaseMod {
       * properties `digest` and `algorithm` (in which case we bcrypt
       * `password.digest`).
       */
-    inline def checkPassword(user: User, password: Password): typings.meteor.anon.Error = (^.asInstanceOf[js.Dynamic].applyDynamic("_checkPassword")(user.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[typings.meteor.anon.Error]
+    inline def checkPassword(user: User, password: Password): UserId = (^.asInstanceOf[js.Dynamic].applyDynamic("_checkPassword")(user.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[UserId]
     
     inline def config(options: AmbiguousErrorMessages): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("config")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
@@ -85,6 +86,12 @@ object accountsBaseMod {
       options: typings.meteor.anon.Email,
       callback: js.Function1[/* error */ js.UndefOr[js.Error | Error | TypedError], Unit]
     ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createUser")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[String]
+    
+    inline def createUserAsync(options: typings.meteor.anon.Email): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("createUserAsync")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+    inline def createUserAsync(
+      options: typings.meteor.anon.Email,
+      callback: js.Function1[/* error */ js.UndefOr[js.Error | Error | TypedError], Unit]
+    ): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("createUserAsync")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
     
     @JSImport("meteor/accounts-base", "Accounts.emailTemplates")
     @js.native
@@ -157,7 +164,8 @@ object accountsBaseMod {
       * - `undefined`, meaning don't handle;
       * - a login method result object
       **/
-    inline def registerLoginHandler(name: String, handler: js.Function1[/* options */ Any, js.UndefOr[js.Object]]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerLoginHandler")(name.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def registerLoginHandler(handler: js.Function1[/* options */ Any, js.UndefOr[LoginMethodResult]]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerLoginHandler")(handler.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def registerLoginHandler(name: String, handler: js.Function1[/* options */ Any, js.UndefOr[LoginMethodResult]]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerLoginHandler")(name.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     inline def removeEmail(userId: String, email: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEmail")(userId.asInstanceOf[js.Any], email.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
@@ -213,6 +221,9 @@ object accountsBaseMod {
     inline def setPassword(userId: String, newPassword: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setPassword")(userId.asInstanceOf[js.Any], newPassword.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def setPassword(userId: String, newPassword: String, options: Logout): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setPassword")(userId.asInstanceOf[js.Any], newPassword.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
+    inline def setPasswordAsync(userId: String, newPassword: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("setPasswordAsync")(userId.asInstanceOf[js.Any], newPassword.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    inline def setPasswordAsync(userId: String, newPassword: String, options: Logout): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("setPasswordAsync")(userId.asInstanceOf[js.Any], newPassword.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    
     inline def setUsername(userId: String, newUsername: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setUsername")(userId.asInstanceOf[js.Any], newUsername.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     object ui {
@@ -231,6 +242,9 @@ object accountsBaseMod {
     
     inline def user(): User | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("user")().asInstanceOf[User | Null]
     inline def user(options: Fields): User | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("user")(options.asInstanceOf[js.Any]).asInstanceOf[User | Null]
+    
+    inline def userAsync(): js.Promise[User | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("userAsync")().asInstanceOf[js.Promise[User | Null]]
+    inline def userAsync(options: Fields): js.Promise[User | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("userAsync")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[User | Null]]
     
     inline def userId(): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("userId")().asInstanceOf[String | Null]
     
@@ -371,7 +385,55 @@ object accountsBaseMod {
       }
     }
     
+    /* Rewritten from type alias, can be one of: 
+      - typings.meteor.anon.Error
+      - typings.meteor.anon.Options
+    */
+    trait LoginMethodResult extends StObject
+    object LoginMethodResult {
+      
+      inline def Error(error: js.Error): typings.meteor.anon.Error = {
+        val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.meteor.anon.Error]
+      }
+      
+      inline def Options(userId: String): typings.meteor.anon.Options = {
+        val __obj = js.Dynamic.literal(userId = userId.asInstanceOf[js.Any])
+        __obj.asInstanceOf[typings.meteor.anon.Options]
+      }
+    }
+    
     type Password = String | Digest
+    
+    /* Rewritten from type alias, can be one of: 
+      - typings.meteor.meteorStrings.USERNAME_AND_EMAIL
+      - typings.meteor.meteorStrings.USERNAME_AND_OPTIONAL_EMAIL
+      - typings.meteor.meteorStrings.USERNAME_ONLY
+      - typings.meteor.meteorStrings.EMAIL_ONLY
+    */
+    trait PasswordSignupField extends StObject
+    object PasswordSignupField {
+      
+      inline def EMAIL_ONLY: typings.meteor.meteorStrings.EMAIL_ONLY = "EMAIL_ONLY".asInstanceOf[typings.meteor.meteorStrings.EMAIL_ONLY]
+      
+      inline def USERNAME_AND_EMAIL: typings.meteor.meteorStrings.USERNAME_AND_EMAIL = "USERNAME_AND_EMAIL".asInstanceOf[typings.meteor.meteorStrings.USERNAME_AND_EMAIL]
+      
+      inline def USERNAME_AND_OPTIONAL_EMAIL: typings.meteor.meteorStrings.USERNAME_AND_OPTIONAL_EMAIL = "USERNAME_AND_OPTIONAL_EMAIL".asInstanceOf[typings.meteor.meteorStrings.USERNAME_AND_OPTIONAL_EMAIL]
+      
+      inline def USERNAME_ONLY: typings.meteor.meteorStrings.USERNAME_ONLY = "USERNAME_ONLY".asInstanceOf[typings.meteor.meteorStrings.USERNAME_ONLY]
+    }
+    
+    /* Rewritten from type alias, can be one of: 
+      - typings.meteor.meteorStrings.USERNAME_AND_EMAIL
+      - typings.meteor.meteorStrings.EMAIL_ONLY
+    */
+    trait PasswordlessSignupField extends StObject
+    object PasswordlessSignupField {
+      
+      inline def EMAIL_ONLY: typings.meteor.meteorStrings.EMAIL_ONLY = "EMAIL_ONLY".asInstanceOf[typings.meteor.meteorStrings.EMAIL_ONLY]
+      
+      inline def USERNAME_AND_EMAIL: typings.meteor.meteorStrings.USERNAME_AND_EMAIL = "USERNAME_AND_EMAIL".asInstanceOf[typings.meteor.meteorStrings.USERNAME_AND_EMAIL]
+    }
     
     trait StampedLoginToken extends StObject {
       

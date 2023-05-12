@@ -1,7 +1,7 @@
 
 # Scala.js typings for postcss-reduce-transforms
 
-Typings are for version 5.1.0
+Typings are for version 6.0.0
 
 ## Library description:
 Reduce transform functions with PostCSS.

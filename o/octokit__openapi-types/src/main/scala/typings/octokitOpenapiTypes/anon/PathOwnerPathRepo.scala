@@ -8,11 +8,11 @@ trait PathOwnerPathRepo extends StObject {
   
   var path: OwnerPathRepo
   
-  var query: `188`
+  var query: `205`
 }
 object PathOwnerPathRepo {
   
-  inline def apply(path: OwnerPathRepo, query: `188`): PathOwnerPathRepo = {
+  inline def apply(path: OwnerPathRepo, query: `205`): PathOwnerPathRepo = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
     __obj.asInstanceOf[PathOwnerPathRepo]
   }
@@ -22,6 +22,6 @@ object PathOwnerPathRepo {
     
     inline def setPath(value: OwnerPathRepo): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    inline def setQuery(value: `188`): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: `205`): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
   }
 }

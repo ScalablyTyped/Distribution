@@ -116,6 +116,8 @@ trait TypeChecker extends StObject {
   
   def getTypeOfAssignmentPattern(pattern: AssignmentPattern): Type = js.native
   
+  def getTypeOfSymbol(symbol: Symbol): Type = js.native
+  
   def getTypeOfSymbolAtLocation(symbol: Symbol, node: Node): Type = js.native
   
   def getTypePredicateOfSignature(signature: Signature): js.UndefOr[TypePredicate] = js.native
@@ -130,9 +132,27 @@ trait TypeChecker extends StObject {
   
   def isArgumentsSymbol(symbol: Symbol): Boolean = js.native
   
+  /**
+    * True if this type is assignable to `ReadonlyArray<any>`.
+    */
+  def isArrayLikeType(`type`: Type): Boolean = js.native
+  
+  /**
+    * True if this type is the `Array` or `ReadonlyArray` type from lib.d.ts.
+    * This function will _not_ return true if passed a type which
+    * extends `Array` (for example, the TypeScript AST's `NodeArray` type).
+    */
+  def isArrayType(`type`: Type): Boolean = js.native
+  
   def isImplementationOfOverload(node: SignatureDeclaration): js.UndefOr[Boolean] = js.native
   
   def isOptionalParameter(node: ParameterDeclaration): Boolean = js.native
+  
+  /**
+    * True if this type is a tuple type. This function will _not_ return true if
+    * passed a type which extends from a tuple.
+    */
+  def isTupleType(`type`: Type): Boolean = js.native
   
   def isUndefinedSymbol(symbol: Symbol): Boolean = js.native
   

@@ -19,7 +19,7 @@ trait Element extends StObject {
     *   Adds a new attribute or changes the value of an
     *   existing attribute on the specified element. If no
     *   value is specified, returns the value of the given
-    *   attribute, or null if attribute is not set.
+    *   attribute, or null if the attribute is not set.
     *   @return value of attribute
     */
   def attribute(): String = js.native
@@ -27,7 +27,7 @@ trait Element extends StObject {
     *   Adds a new attribute or changes the value of an
     *   existing attribute on the specified element. If no
     *   value is specified, returns the value of the given
-    *   attribute, or null if attribute is not set.
+    *   attribute, or null if the attribute is not set.
     *   @param attr attribute to set
     *   @param value value to assign to attribute
     *   @chainable
@@ -35,10 +35,10 @@ trait Element extends StObject {
   def attribute(attr: String, value: String): Element = js.native
   
   /**
-    *   Centers a p5 Element either vertically,
+    *   Centers a p5.Element either vertically,
     *   horizontally, or both, relative to its parent or
-    *   according to the body if the Element has no
-    *   parent. If no argument is passed the Element is
+    *   according to the body if the p5.Element has no
+    *   parent. If no argument is passed the p5.Element is
     *   aligned both vertically and horizontally.
     *   @param [align] passing 'vertical', 'horizontal'
     *   aligns element accordingly
@@ -86,10 +86,10 @@ trait Element extends StObject {
   def `class`(theClass: String): Element = js.native
   
   /**
-    *   The .doubleClicked() function is called once after
+    *   The doubleClicked() method is called once after
     *   every time a mouse button is pressed twice over
     *   the element. This can be used to attach element
-    *   and action specific event listeners.
+    *   and action-specific event listeners.
     *   @param fxn function to be fired when mouse is
     *   double clicked over the element. if false is
     *   passed instead, the previously firing function
@@ -99,10 +99,10 @@ trait Element extends StObject {
   def doubleClicked(fxn: Boolean): Element = js.native
   
   /**
-    *   The .dragLeave() function is called once after
-    *   every time a dragged file leaves the element area.
-    *   This can be used to attach an element specific
-    *   event listener.
+    *   The dragLeave() method is called once after every
+    *   time a dragged file leaves the element area. This
+    *   can be used to attach an element-specific event
+    *   listener.
     *   @param fxn function to be fired when a file is
     *   dragged off the element. if false is passed
     *   instead, the previously firing function will no
@@ -113,10 +113,10 @@ trait Element extends StObject {
   def dragLeave(fxn: Boolean): Element = js.native
   
   /**
-    *   The .dragOver() function is called once after
-    *   every time a file is dragged over the element.
-    *   This can be used to attach an element specific
-    *   event listener.
+    *   The dragOver() method is called once after every
+    *   time a file is dragged over the element. This can
+    *   be used to attach an element-specific event
+    *   listener.
     *   @param fxn function to be fired when a file is
     *   dragged over the element. if false is passed
     *   instead, the previously firing function will no
@@ -156,7 +156,8 @@ trait Element extends StObject {
   var elt: Any = js.native
   
   /**
-    *   Checks if specified class already set to element
+    *   Checks if specified class is already applied to
+    *   element.
     *   @param c class name of class to check
     *   @return a boolean value if element has specified
     *   class
@@ -172,9 +173,9 @@ trait Element extends StObject {
   
   /**
     *   If an argument is given, sets the inner HTML of
-    *   the element, replacing any existing html. If true
-    *   is included as a second argument, html is appended
-    *   instead of replacing existing html. If no
+    *   the element, replacing any existing HTML. If true
+    *   is included as a second argument, HTML is appended
+    *   instead of replacing existing HTML. If no
     *   arguments are given, returns the inner HTML of the
     *   element.
     *   @return the inner HTML of the element
@@ -185,9 +186,9 @@ trait Element extends StObject {
   def html(html: Unit, append: Boolean): Element = js.native
   /**
     *   If an argument is given, sets the inner HTML of
-    *   the element, replacing any existing html. If true
-    *   is included as a second argument, html is appended
-    *   instead of replacing existing html. If no
+    *   the element, replacing any existing HTML. If true
+    *   is included as a second argument, HTML is appended
+    *   instead of replacing existing HTML. If no
     *   arguments are given, returns the inner HTML of the
     *   element.
     *   @param [html] the HTML to be placed inside the
@@ -202,9 +203,9 @@ trait Element extends StObject {
     *   Sets the ID of the element. If no ID argument is
     *   passed in, it instead returns the current ID of
     *   the element. Note that only one element can have a
-    *   particular id in a page. The .class() function can
-    *   be used to identify multiple elements with the
-    *   same class name.
+    *   particular id in a page. The class() method can be
+    *   used to identify multiple elements with the same
+    *   class name.
     *   @return the id of the element
     */
   def id(): String = js.native
@@ -212,21 +213,21 @@ trait Element extends StObject {
     *   Sets the ID of the element. If no ID argument is
     *   passed in, it instead returns the current ID of
     *   the element. Note that only one element can have a
-    *   particular id in a page. The .class() function can
-    *   be used to identify multiple elements with the
-    *   same class name.
+    *   particular id in a page. The class() method can be
+    *   used to identify multiple elements with the same
+    *   class name.
     *   @param id ID of the element
     *   @chainable
     */
   def id(id: String): Element = js.native
   
   /**
-    *   The .mouseClicked() function is called once after
-    *   a mouse button is pressed and released over the
+    *   The mouseClicked() method is called once after a
+    *   mouse button is pressed and released over the
     *   element. Some mobile browsers may also trigger
     *   this event on a touch screen, if the user performs
-    *   a quick tap.This can be used to attach element
-    *   specific event listeners.
+    *   a quick tap. This can be used to attach
+    *   element-specific event listeners.
     *   @param fxn function to be fired when mouse is
     *   clicked over the element. if false is passed
     *   instead, the previously firing function will no
@@ -237,9 +238,9 @@ trait Element extends StObject {
   def mouseClicked(fxn: Boolean): Element = js.native
   
   /**
-    *   The .mouseMoved() function is called once every
-    *   time a mouse moves over the element. This can be
-    *   used to attach an element specific event listener.
+    *   The mouseMoved() method is called once every time
+    *   a mouse moves over the element. This can be used
+    *   to attach an element-specific event listener.
     *   @param fxn function to be fired when a mouse moves
     *   over the element. if false is passed instead, the
     *   previously firing function will no longer fire.
@@ -249,10 +250,9 @@ trait Element extends StObject {
   def mouseMoved(fxn: Boolean): Element = js.native
   
   /**
-    *   The .mouseOut() function is called once after
-    *   every time a mouse moves off the element. This can
-    *   be used to attach an element specific event
-    *   listener.
+    *   The mouseOut() method is called once after every
+    *   time a mouse moves off the element. This can be
+    *   used to attach an element-specific event listener.
     *   @param fxn function to be fired when a mouse moves
     *   off of an element. if false is passed instead, the
     *   previously firing function will no longer fire.
@@ -262,10 +262,9 @@ trait Element extends StObject {
   def mouseOut(fxn: Boolean): Element = js.native
   
   /**
-    *   The .mouseOver() function is called once after
-    *   every time a mouse moves onto the element. This
-    *   can be used to attach an element specific event
-    *   listener.
+    *   The mouseOver() method is called once after every
+    *   time a mouse moves onto the element. This can be
+    *   used to attach an element-specific event listener.
     *   @param fxn function to be fired when a mouse moves
     *   onto the element. if false is passed instead, the
     *   previously firing function will no longer fire.
@@ -275,12 +274,12 @@ trait Element extends StObject {
   def mouseOver(fxn: Boolean): Element = js.native
   
   /**
-    *   The .mousePressed() function is called once after
+    *   The mousePressed() method is called once after
     *   every time a mouse button is pressed over the
     *   element. Some mobile browsers may also trigger
     *   this event on a touch screen, if the user performs
-    *   a quick tap. This can be used to attach element
-    *   specific event listeners.
+    *   a quick tap. This can be used to attach
+    *   element-specific event listeners.
     *   @param fxn function to be fired when mouse is
     *   pressed over the element. if false is passed
     *   instead, the previously firing function will no
@@ -291,12 +290,12 @@ trait Element extends StObject {
   def mousePressed(fxn: Boolean): Element = js.native
   
   /**
-    *   The mouseReleased() function is called once after
+    *   The mouseReleased() method is called once after
     *   every time a mouse button is released over the
     *   element. Some mobile browsers may also trigger
     *   this event on a touch screen, if the user performs
-    *   a quick tap. This can be used to attach element
-    *   specific event listeners.
+    *   a quick tap. This can be used to attach
+    *   element-specific event listeners.
     *   @param fxn function to be fired when mouse is
     *   released over the element. if false is passed
     *   instead, the previously firing function will no
@@ -307,21 +306,21 @@ trait Element extends StObject {
   def mouseReleased(fxn: Boolean): Element = js.native
   
   /**
-    *   The mouseWheel() function is called once after
-    *   every time a mouse wheel is scrolled over the
-    *   element. This can be used to attach element
-    *   specific event listeners. The function accepts a
-    *   callback function as argument which will be
-    *   executed when the wheel event is triggered on the
-    *   element, the callback function is passed one
-    *   argument event. The event.deltaY property returns
-    *   negative values if the mouse wheel is rotated up
-    *   or away from the user and positive in the other
-    *   direction. The event.deltaX does the same as
-    *   event.deltaY except it reads the horizontal wheel
-    *   scroll of the mouse wheel.
+    *   The mouseWheel() method is called once after every
+    *   time a mouse wheel is scrolled over the element.
+    *   This can be used to attach element-specific event
+    *   listeners. The method accepts a callback function
+    *   as argument which will be executed when the wheel
+    *   event is triggered on the element, the callback
+    *   function is passed one argument event. The
+    *   event.deltaY property returns negative values if
+    *   the mouse wheel is rotated up or away from the
+    *   user and positive in the other direction. The
+    *   event.deltaX does the same as event.deltaY except
+    *   it reads the horizontal wheel scroll of the mouse
+    *   wheel.
     *
-    *   On OS X with "natural" scrolling enabled, the
+    *   On macOS with "natural" scrolling enabled, the
     *   event.deltaY values are reversed.
     *   @param fxn function to be fired when mouse is
     *   scrolled over the element. if false is passed
@@ -336,8 +335,8 @@ trait Element extends StObject {
     *   Attaches the element to the parent specified. A
     *   way of setting the container for the element.
     *   Accepts either a string ID, DOM node, or
-    *   p5.Element. If no arguments given, parent node is
-    *   returned. For more ways to position the canvas,
+    *   p5.Element. If no arguments are given, parent node
+    *   is returned. For more ways to position the canvas,
     *   see the  positioning the canvas wiki page.
     */
   def parent(): Element = js.native
@@ -345,8 +344,8 @@ trait Element extends StObject {
     *   Attaches the element to the parent specified. A
     *   way of setting the container for the element.
     *   Accepts either a string ID, DOM node, or
-    *   p5.Element. If no arguments given, parent node is
-    *   returned. For more ways to position the canvas,
+    *   p5.Element. If no arguments are given, parent node
+    *   is returned. For more ways to position the canvas,
     *   see the  positioning the canvas wiki page.
     *   @param parent the ID, DOM node, or p5.Element of
     *   desired parent element
@@ -362,8 +361,8 @@ trait Element extends StObject {
     *   relative to (0, 0) of the window. Essentially,
     *   this sets position:absolute and left and top
     *   properties of style. If an optional third argument
-    *   specifying position type is given, the x and y
-    *   coordinates will be interpreted based on the
+    *   specifying position type is given, the x and
+    *   y-coordinates will be interpreted based on the
     *   positioning scheme. If no arguments given, the
     *   function returns the x and y position of the
     *   element. found documentation on how to be more
@@ -386,8 +385,8 @@ trait Element extends StObject {
     *   relative to (0, 0) of the window. Essentially,
     *   this sets position:absolute and left and top
     *   properties of style. If an optional third argument
-    *   specifying position type is given, the x and y
-    *   coordinates will be interpreted based on the
+    *   specifying position type is given, the x and
+    *   y-coordinates will be interpreted based on the
     *   positioning scheme. If no arguments given, the
     *   function returns the x and y position of the
     *   element. found documentation on how to be more
@@ -435,8 +434,8 @@ trait Element extends StObject {
     *   Sets the width and height of the element. AUTO can
     *   be used to only adjust one dimension at a time. If
     *   no arguments are given, it returns the width and
-    *   height of the element in an object. In case of
-    *   elements which need to be loaded, such as images,
+    *   height of the element in an Object. In the case of
+    *   elements that need to be loaded, such as images,
     *   it is recommended to call the function after the
     *   element has finished loading.
     *   @return the width and height of the element in an
@@ -447,8 +446,8 @@ trait Element extends StObject {
     *   Sets the width and height of the element. AUTO can
     *   be used to only adjust one dimension at a time. If
     *   no arguments are given, it returns the width and
-    *   height of the element in an object. In case of
-    *   elements which need to be loaded, such as images,
+    *   height of the element in an Object. In the case of
+    *   elements that need to be loaded, such as images,
     *   it is recommended to call the function after the
     *   element has finished loading.
     *   @param w width of the element, either AUTO, or a
@@ -465,24 +464,24 @@ trait Element extends StObject {
   def size(w: SIZE_W, h: SIZE_H): Element = js.native
   
   /**
-    *   Sets the given style (css) property (1st arg) of
+    *   Sets the given style (CSS) property (1st arg) of
     *   the element with the given value (2nd arg). If a
     *   single argument is given, .style() returns the
-    *   value of the given property; however, if the
-    *   single argument is given in css syntax
-    *   ('text-align:center'), .style() sets the css
+    *   value of the given property; however, if a single
+    *   argument is given in CSS syntax
+    *   ('text-align:center'), .style() sets the CSS
     *   appropriately.
     *   @param property property to be set
     *   @return value of property
     */
   def style(property: String): String = js.native
   /**
-    *   Sets the given style (css) property (1st arg) of
+    *   Sets the given style (CSS) property (1st arg) of
     *   the element with the given value (2nd arg). If a
     *   single argument is given, .style() returns the
-    *   value of the given property; however, if the
-    *   single argument is given in css syntax
-    *   ('text-align:center'), .style() sets the css
+    *   value of the given property; however, if a single
+    *   argument is given in CSS syntax
+    *   ('text-align:center'), .style() sets the CSS
     *   appropriately.
     *   @param property property to be set
     *   @param value value to assign to property
@@ -492,16 +491,16 @@ trait Element extends StObject {
   def style(property: String, value: Color): Element = js.native
   
   /**
-    *   Toggles element class
+    *   Toggles element class.
     *   @param c class name to toggle
     *   @chainable
     */
   def toggleClass(c: String): Element = js.native
   
   /**
-    *   The .touchEnded() function is called once after
-    *   every time a touch is registered. This can be used
-    *   to attach element specific event listeners.
+    *   The touchEnded() method is called once after every
+    *   time a touch is registered. This can be used to
+    *   attach element-specific event listeners.
     *   @param fxn function to be fired when a touch ends
     *   over the element. if false is passed instead, the
     *   previously firing function will no longer fire.
@@ -511,9 +510,9 @@ trait Element extends StObject {
   def touchEnded(fxn: Boolean): Element = js.native
   
   /**
-    *   The .touchMoved() function is called once after
-    *   every time a touch move is registered. This can be
-    *   used to attach element specific event listeners.
+    *   The touchMoved() method is called once after every
+    *   time a touch move is registered. This can be used
+    *   to attach element-specific event listeners.
     *   @param fxn function to be fired when a touch moves
     *   over the element. if false is passed instead, the
     *   previously firing function will no longer fire.
@@ -523,9 +522,9 @@ trait Element extends StObject {
   def touchMoved(fxn: Boolean): Element = js.native
   
   /**
-    *   The .touchStarted() function is called once after
+    *   The touchStarted() method is called once after
     *   every time a touch is registered. This can be used
-    *   to attach element specific event listeners.
+    *   to attach element-specific event listeners.
     *   @param fxn function to be fired when a touch
     *   starts over the element. if false is passed
     *   instead, the previously firing function will no

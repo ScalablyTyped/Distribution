@@ -17,13 +17,11 @@ trait IGradientOptions extends StObject {
   
   /**
     * Horizontal offset for aligning gradients coming from SVG when outside pathgroups
-    * @type Number
     */
   var offsetX: js.UndefOr[Double] = js.undefined
   
   /**
     * Vertical offset for aligning gradients coming from SVG when outside pathgroups
-    * @type Number
     */
   var offsetY: js.UndefOr[Double] = js.undefined
   

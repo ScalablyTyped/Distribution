@@ -19,6 +19,8 @@ type ConfigurationList = js.Array[Configuration]
 
 type ContainerProviderType = EKS | String
 
+type CredentialType = String
+
 type Date = js.Date
 
 type EndpointArn = String
@@ -86,6 +88,8 @@ type KmsKeyArn = String
 
 type KubernetesNamespace = String
 
+type LogContext = String
+
 type LogGroupName = String
 
 type NextToken = String
@@ -147,6 +151,8 @@ type TemplateParameterDataType = _TemplateParameterDataType | String
 type TemplateParameterInputMap = StringDictionary[String1024]
 
 type TemplateParameterName = String
+
+type Token = String
 
 type UriString = String
 

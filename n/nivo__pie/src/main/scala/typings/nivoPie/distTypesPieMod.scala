@@ -1,5 +1,6 @@
 package typings.nivoPie
 
+import typings.nivoPie.distTypesTypesMod.MayHaveLabel
 import typings.nivoPie.distTypesTypesMod.PieSvgProps
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
@@ -12,5 +13,5 @@ object distTypesPieMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def Pie[RawDatum](param0: PieSvgProps[RawDatum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Pie")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def Pie[RawDatum /* <: MayHaveLabel */](param0: PieSvgProps[RawDatum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Pie")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

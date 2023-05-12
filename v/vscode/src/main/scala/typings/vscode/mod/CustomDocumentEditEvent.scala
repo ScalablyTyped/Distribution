@@ -6,40 +6,40 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Event triggered by extensions to signal to the editor that an edit has occurred on an {@linkcode CustomDocument}.
-  *
-  * @see {@linkcode CustomEditorProvider.onDidChangeCustomDocument}.
-  */
+	 * Event triggered by extensions to signal to the editor that an edit has occurred on an {@linkcode CustomDocument}.
+	 *
+	 * @see {@linkcode CustomEditorProvider.onDidChangeCustomDocument}.
+	 */
 trait CustomDocumentEditEvent[T /* <: CustomDocument */] extends StObject {
   
   /**
-    * The document that the edit is for.
-    */
+  		 * The document that the edit is for.
+  		 */
   val document: T
   
   /**
-    * Display name describing the edit.
-    *
-    * This will be shown to users in the UI for undo/redo operations.
-    */
+  		 * Display name describing the edit.
+  		 *
+  		 * This will be shown to users in the UI for undo/redo operations.
+  		 */
   val label: js.UndefOr[String] = js.undefined
   
   /**
-    * Redo the edit operation.
-    *
-    * This is invoked by the editor when the user redoes this edit. To implement `redo`, your
-    * extension should restore the document and editor to the state they were in just after this
-    * edit was added to the editor's internal edit stack by `onDidChangeCustomDocument`.
-    */
+  		 * Redo the edit operation.
+  		 *
+  		 * This is invoked by the editor when the user redoes this edit. To implement `redo`, your
+  		 * extension should restore the document and editor to the state they were in just after this
+  		 * edit was added to the editor's internal edit stack by `onDidChangeCustomDocument`.
+  		 */
   def redo(): Thenable[Unit] | Unit
   
   /**
-    * Undo the edit operation.
-    *
-    * This is invoked by the editor when the user undoes this edit. To implement `undo`, your
-    * extension should restore the document and editor to the state they were in just before this
-    * edit was added to the editor's internal edit stack by `onDidChangeCustomDocument`.
-    */
+  		 * Undo the edit operation.
+  		 *
+  		 * This is invoked by the editor when the user undoes this edit. To implement `undo`, your
+  		 * extension should restore the document and editor to the state they were in just before this
+  		 * edit was added to the editor's internal edit stack by `onDidChangeCustomDocument`.
+  		 */
   def undo(): Thenable[Unit] | Unit
 }
 object CustomDocumentEditEvent {

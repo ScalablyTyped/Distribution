@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.FlexShrink
+import typings.csstype.mod.Property.OverflowInline
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,8 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `193` extends StObject {
   
   var value: js.UndefOr[
-    FlexShrink | (js.Array[
-      (Extract[js.UndefOr[FlexShrink | js.Array[NonNullable[js.UndefOr[FlexShrink]]]], String]) | NonNullable[js.UndefOr[FlexShrink]]
+    OverflowInline | (js.Array[
+      (Extract[
+        js.UndefOr[OverflowInline | js.Array[NonNullable[js.UndefOr[OverflowInline]]]], 
+        String
+      ]) | NonNullable[js.UndefOr[OverflowInline]]
     ])
   ] = js.native
 }

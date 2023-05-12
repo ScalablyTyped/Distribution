@@ -1,10 +1,10 @@
 package typings.reactRouterDom
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.reactRouter.distLibContextMod.RelativeRoutingType
-import typings.reactRouterDom.anon.EncType
+import typings.reactRouterDom.anon.Action
+import typings.remixRunRouter.distRouterMod.RelativeRoutingType
 import typings.remixRunRouter.distUtilsMod.FormEncType
-import typings.remixRunRouter.distUtilsMod.FormMethod
+import typings.remixRunRouter.distUtilsMod.HTMLFormMethod
 import typings.std.FormData
 import typings.std.HTMLButtonElement
 import typings.std.HTMLFormElement
@@ -26,16 +26,17 @@ object distDomMod {
   
   @JSImport("react-router-dom/dist/dom", "defaultMethod")
   @js.native
-  val defaultMethod: /* "get" */ String = js.native
+  val defaultMethod: HTMLFormMethod = js.native
   
-  inline def getFormSubmissionInfo(target: StringDictionary[String], defaultAction: String, options: SubmitOptions): EncType = (^.asInstanceOf[js.Dynamic].applyDynamic("getFormSubmissionInfo")(target.asInstanceOf[js.Any], defaultAction.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[EncType]
-  inline def getFormSubmissionInfo(target: Null, defaultAction: String, options: SubmitOptions): EncType = (^.asInstanceOf[js.Dynamic].applyDynamic("getFormSubmissionInfo")(target.asInstanceOf[js.Any], defaultAction.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[EncType]
-  inline def getFormSubmissionInfo(target: FormData, defaultAction: String, options: SubmitOptions): EncType = (^.asInstanceOf[js.Dynamic].applyDynamic("getFormSubmissionInfo")(target.asInstanceOf[js.Any], defaultAction.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[EncType]
-  inline def getFormSubmissionInfo(target: HTMLButtonElement, defaultAction: String, options: SubmitOptions): EncType = (^.asInstanceOf[js.Dynamic].applyDynamic("getFormSubmissionInfo")(target.asInstanceOf[js.Any], defaultAction.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[EncType]
-  inline def getFormSubmissionInfo(target: HTMLFormElement, defaultAction: String, options: SubmitOptions): EncType = (^.asInstanceOf[js.Dynamic].applyDynamic("getFormSubmissionInfo")(target.asInstanceOf[js.Any], defaultAction.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[EncType]
-  inline def getFormSubmissionInfo(target: HTMLInputElement, defaultAction: String, options: SubmitOptions): EncType = (^.asInstanceOf[js.Dynamic].applyDynamic("getFormSubmissionInfo")(target.asInstanceOf[js.Any], defaultAction.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[EncType]
-  inline def getFormSubmissionInfo(target: URLSearchParams, defaultAction: String, options: SubmitOptions): EncType = (^.asInstanceOf[js.Dynamic].applyDynamic("getFormSubmissionInfo")(target.asInstanceOf[js.Any], defaultAction.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[EncType]
+  inline def getFormSubmissionInfo(target: StringDictionary[String], options: SubmitOptions, basename: String): Action = (^.asInstanceOf[js.Dynamic].applyDynamic("getFormSubmissionInfo")(target.asInstanceOf[js.Any], options.asInstanceOf[js.Any], basename.asInstanceOf[js.Any])).asInstanceOf[Action]
+  inline def getFormSubmissionInfo(target: Null, options: SubmitOptions, basename: String): Action = (^.asInstanceOf[js.Dynamic].applyDynamic("getFormSubmissionInfo")(target.asInstanceOf[js.Any], options.asInstanceOf[js.Any], basename.asInstanceOf[js.Any])).asInstanceOf[Action]
+  inline def getFormSubmissionInfo(target: FormData, options: SubmitOptions, basename: String): Action = (^.asInstanceOf[js.Dynamic].applyDynamic("getFormSubmissionInfo")(target.asInstanceOf[js.Any], options.asInstanceOf[js.Any], basename.asInstanceOf[js.Any])).asInstanceOf[Action]
+  inline def getFormSubmissionInfo(target: HTMLButtonElement, options: SubmitOptions, basename: String): Action = (^.asInstanceOf[js.Dynamic].applyDynamic("getFormSubmissionInfo")(target.asInstanceOf[js.Any], options.asInstanceOf[js.Any], basename.asInstanceOf[js.Any])).asInstanceOf[Action]
+  inline def getFormSubmissionInfo(target: HTMLFormElement, options: SubmitOptions, basename: String): Action = (^.asInstanceOf[js.Dynamic].applyDynamic("getFormSubmissionInfo")(target.asInstanceOf[js.Any], options.asInstanceOf[js.Any], basename.asInstanceOf[js.Any])).asInstanceOf[Action]
+  inline def getFormSubmissionInfo(target: HTMLInputElement, options: SubmitOptions, basename: String): Action = (^.asInstanceOf[js.Dynamic].applyDynamic("getFormSubmissionInfo")(target.asInstanceOf[js.Any], options.asInstanceOf[js.Any], basename.asInstanceOf[js.Any])).asInstanceOf[Action]
+  inline def getFormSubmissionInfo(target: URLSearchParams, options: SubmitOptions, basename: String): Action = (^.asInstanceOf[js.Dynamic].applyDynamic("getFormSubmissionInfo")(target.asInstanceOf[js.Any], options.asInstanceOf[js.Any], basename.asInstanceOf[js.Any])).asInstanceOf[Action]
   
+  inline def getSearchParamsForLocation(locationSearch: String): URLSearchParams = ^.asInstanceOf[js.Dynamic].applyDynamic("getSearchParamsForLocation")(locationSearch.asInstanceOf[js.Any]).asInstanceOf[URLSearchParams]
   inline def getSearchParamsForLocation(locationSearch: String, defaultSearchParams: URLSearchParams): URLSearchParams = (^.asInstanceOf[js.Dynamic].applyDynamic("getSearchParamsForLocation")(locationSearch.asInstanceOf[js.Any], defaultSearchParams.asInstanceOf[js.Any])).asInstanceOf[URLSearchParams]
   
   inline def isButtonElement(`object`: Any): /* is std.HTMLButtonElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isButtonElement")(`object`.asInstanceOf[js.Any]).asInstanceOf[/* is std.HTMLButtonElement */ Boolean]
@@ -91,9 +92,6 @@ object distDomMod {
     /**
       * The action URL path used to submit the form. Overrides `<form action>`.
       * Defaults to the path of the current route.
-      *
-      * Note: It is assumed the path is already resolved. If you need to resolve a
-      * relative path, use `useFormAction`.
       */
     var action: js.UndefOr[String] = js.undefined
     
@@ -107,7 +105,13 @@ object distDomMod {
       * The HTTP method used to submit the form. Overrides `<form method>`.
       * Defaults to "GET".
       */
-    var method: js.UndefOr[FormMethod] = js.undefined
+    var method: js.UndefOr[HTMLFormMethod] = js.undefined
+    
+    /**
+      * In browser-based environments, prevent resetting scroll after this
+      * navigation when using the <ScrollRestoration> component
+      */
+    var preventScrollReset: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Determines whether the form action is relative to the route hierarchy or
@@ -141,9 +145,13 @@ object distDomMod {
       
       inline def setEncTypeUndefined: Self = StObject.set(x, "encType", js.undefined)
       
-      inline def setMethod(value: FormMethod): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: HTMLFormMethod): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
       inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+      
+      inline def setPreventScrollReset(value: Boolean): Self = StObject.set(x, "preventScrollReset", value.asInstanceOf[js.Any])
+      
+      inline def setPreventScrollResetUndefined: Self = StObject.set(x, "preventScrollReset", js.undefined)
       
       inline def setRelative(value: RelativeRoutingType): Self = StObject.set(x, "relative", value.asInstanceOf[js.Any])
       

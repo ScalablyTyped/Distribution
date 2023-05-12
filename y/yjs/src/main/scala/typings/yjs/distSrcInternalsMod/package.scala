@@ -12,6 +12,7 @@ import typings.yjs.anon.Ds
 import typings.yjs.anon.From
 import typings.yjs.anon.I
 import typings.yjs.distSrcInternalsMod.^
+import typings.yjs.distSrcUtilsUpdatesMod.ObfuscatorOptions
 import typings.yjs.yjsInts.`0`
 import typings.yjs.yjsInts.`10`
 import typings.yjs.yjsInts.`1`
@@ -126,13 +127,17 @@ js.Function1[
 
 inline def convertUpdateFormat(
   update: js.typedarray.Uint8Array,
+  blockTransformer: js.Function1[
+  typings.yjs.distSrcStructsGCMod.GC | typings.yjs.distSrcStructsItemMod.Item | typings.yjs.distSrcStructsSkipMod.Skip, 
+  typings.yjs.distSrcStructsGCMod.GC | typings.yjs.distSrcStructsItemMod.Item | typings.yjs.distSrcStructsSkipMod.Skip
+],
   YDecoder: Instantiable0[
   typings.yjs.distSrcUtilsUpdateDecoderMod.UpdateDecoderV1 | typings.yjs.distSrcUtilsUpdateDecoderMod.UpdateDecoderV2
 ],
   YEncoder: Instantiable0[
   typings.yjs.distSrcUtilsUpdateEncoderMod.UpdateEncoderV1 | typings.yjs.distSrcUtilsUpdateEncoderMod.UpdateEncoderV2
 ]
-): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("convertUpdateFormat")(update.asInstanceOf[js.Any], YDecoder.asInstanceOf[js.Any], YEncoder.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("convertUpdateFormat")(update.asInstanceOf[js.Any], blockTransformer.asInstanceOf[js.Any], YDecoder.asInstanceOf[js.Any], YEncoder.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
 
 inline def convertUpdateFormatV1ToV2(update: js.typedarray.Uint8Array): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("convertUpdateFormatV1ToV2")(update.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
 
@@ -446,6 +451,12 @@ inline def mergeUpdatesV2(
 
 inline def nextID(transaction: typings.yjs.distSrcUtilsTransactionMod.Transaction): typings.yjs.distSrcUtilsIDMod.ID = ^.asInstanceOf[js.Dynamic].applyDynamic("nextID")(transaction.asInstanceOf[js.Any]).asInstanceOf[typings.yjs.distSrcUtilsIDMod.ID]
 
+inline def obfuscateUpdate(update: js.typedarray.Uint8Array): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("obfuscateUpdate")(update.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+inline def obfuscateUpdate(update: js.typedarray.Uint8Array, opts: ObfuscatorOptions): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("obfuscateUpdate")(update.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+
+inline def obfuscateUpdateV2(update: js.typedarray.Uint8Array): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("obfuscateUpdateV2")(update.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+inline def obfuscateUpdateV2(update: js.typedarray.Uint8Array, opts: ObfuscatorOptions): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("obfuscateUpdateV2")(update.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
+
 inline def parseUpdateMeta(update: js.typedarray.Uint8Array): From = ^.asInstanceOf[js.Dynamic].applyDynamic("parseUpdateMeta")(update.asInstanceOf[js.Any]).asInstanceOf[From]
 
 inline def parseUpdateMetaV2(update: js.typedarray.Uint8Array): From = ^.asInstanceOf[js.Dynamic].applyDynamic("parseUpdateMetaV2")(update.asInstanceOf[js.Any]).asInstanceOf[From]
@@ -546,20 +557,20 @@ inline def readUpdateV2(
   structDecoder: typings.yjs.distSrcUtilsUpdateDecoderMod.UpdateDecoderV2
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readUpdateV2")(decoder.asInstanceOf[js.Any], ydoc.asInstanceOf[js.Any], transactionOrigin.asInstanceOf[js.Any], structDecoder.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
-inline def readYArray(decoder: typings.yjs.distSrcUtilsUpdateDecoderMod.UpdateDecoderV1): typings.yjs.distSrcTypesYarrayMod.YArray[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("readYArray")(decoder.asInstanceOf[js.Any]).asInstanceOf[typings.yjs.distSrcTypesYarrayMod.YArray[Any]]
-inline def readYArray(decoder: typings.yjs.distSrcUtilsUpdateDecoderMod.UpdateDecoderV2): typings.yjs.distSrcTypesYarrayMod.YArray[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("readYArray")(decoder.asInstanceOf[js.Any]).asInstanceOf[typings.yjs.distSrcTypesYarrayMod.YArray[Any]]
+inline def readYArray(_decoder: typings.yjs.distSrcUtilsUpdateDecoderMod.UpdateDecoderV1): typings.yjs.distSrcTypesYarrayMod.YArray[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("readYArray")(_decoder.asInstanceOf[js.Any]).asInstanceOf[typings.yjs.distSrcTypesYarrayMod.YArray[Any]]
+inline def readYArray(_decoder: typings.yjs.distSrcUtilsUpdateDecoderMod.UpdateDecoderV2): typings.yjs.distSrcTypesYarrayMod.YArray[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("readYArray")(_decoder.asInstanceOf[js.Any]).asInstanceOf[typings.yjs.distSrcTypesYarrayMod.YArray[Any]]
 
-inline def readYMap(decoder: typings.yjs.distSrcUtilsUpdateDecoderMod.UpdateDecoderV1): typings.yjs.distSrcTypesYmapMod.YMap[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("readYMap")(decoder.asInstanceOf[js.Any]).asInstanceOf[typings.yjs.distSrcTypesYmapMod.YMap[Any]]
-inline def readYMap(decoder: typings.yjs.distSrcUtilsUpdateDecoderMod.UpdateDecoderV2): typings.yjs.distSrcTypesYmapMod.YMap[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("readYMap")(decoder.asInstanceOf[js.Any]).asInstanceOf[typings.yjs.distSrcTypesYmapMod.YMap[Any]]
+inline def readYMap(_decoder: typings.yjs.distSrcUtilsUpdateDecoderMod.UpdateDecoderV1): typings.yjs.distSrcTypesYmapMod.YMap[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("readYMap")(_decoder.asInstanceOf[js.Any]).asInstanceOf[typings.yjs.distSrcTypesYmapMod.YMap[Any]]
+inline def readYMap(_decoder: typings.yjs.distSrcUtilsUpdateDecoderMod.UpdateDecoderV2): typings.yjs.distSrcTypesYmapMod.YMap[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("readYMap")(_decoder.asInstanceOf[js.Any]).asInstanceOf[typings.yjs.distSrcTypesYmapMod.YMap[Any]]
 
-inline def readYText(decoder: typings.yjs.distSrcUtilsUpdateDecoderMod.UpdateDecoderV1): typings.yjs.distSrcTypesYtextMod.YText = ^.asInstanceOf[js.Dynamic].applyDynamic("readYText")(decoder.asInstanceOf[js.Any]).asInstanceOf[typings.yjs.distSrcTypesYtextMod.YText]
-inline def readYText(decoder: typings.yjs.distSrcUtilsUpdateDecoderMod.UpdateDecoderV2): typings.yjs.distSrcTypesYtextMod.YText = ^.asInstanceOf[js.Dynamic].applyDynamic("readYText")(decoder.asInstanceOf[js.Any]).asInstanceOf[typings.yjs.distSrcTypesYtextMod.YText]
+inline def readYText(_decoder: typings.yjs.distSrcUtilsUpdateDecoderMod.UpdateDecoderV1): typings.yjs.distSrcTypesYtextMod.YText = ^.asInstanceOf[js.Dynamic].applyDynamic("readYText")(_decoder.asInstanceOf[js.Any]).asInstanceOf[typings.yjs.distSrcTypesYtextMod.YText]
+inline def readYText(_decoder: typings.yjs.distSrcUtilsUpdateDecoderMod.UpdateDecoderV2): typings.yjs.distSrcTypesYtextMod.YText = ^.asInstanceOf[js.Dynamic].applyDynamic("readYText")(_decoder.asInstanceOf[js.Any]).asInstanceOf[typings.yjs.distSrcTypesYtextMod.YText]
 
-inline def readYXmlElement(decoder: typings.yjs.distSrcUtilsUpdateDecoderMod.UpdateDecoderV1): typings.yjs.distSrcTypesYxmlelementMod.YXmlElement = ^.asInstanceOf[js.Dynamic].applyDynamic("readYXmlElement")(decoder.asInstanceOf[js.Any]).asInstanceOf[typings.yjs.distSrcTypesYxmlelementMod.YXmlElement]
-inline def readYXmlElement(decoder: typings.yjs.distSrcUtilsUpdateDecoderMod.UpdateDecoderV2): typings.yjs.distSrcTypesYxmlelementMod.YXmlElement = ^.asInstanceOf[js.Dynamic].applyDynamic("readYXmlElement")(decoder.asInstanceOf[js.Any]).asInstanceOf[typings.yjs.distSrcTypesYxmlelementMod.YXmlElement]
+inline def readYXmlElement(decoder: typings.yjs.distSrcUtilsUpdateDecoderMod.UpdateDecoderV1): typings.yjs.distSrcTypesYxmlelementMod.YXmlElement[StringDictionary[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("readYXmlElement")(decoder.asInstanceOf[js.Any]).asInstanceOf[typings.yjs.distSrcTypesYxmlelementMod.YXmlElement[StringDictionary[String]]]
+inline def readYXmlElement(decoder: typings.yjs.distSrcUtilsUpdateDecoderMod.UpdateDecoderV2): typings.yjs.distSrcTypesYxmlelementMod.YXmlElement[StringDictionary[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("readYXmlElement")(decoder.asInstanceOf[js.Any]).asInstanceOf[typings.yjs.distSrcTypesYxmlelementMod.YXmlElement[StringDictionary[String]]]
 
-inline def readYXmlFragment(decoder: typings.yjs.distSrcUtilsUpdateDecoderMod.UpdateDecoderV1): typings.yjs.distSrcTypesYxmlfragmentMod.YXmlFragment = ^.asInstanceOf[js.Dynamic].applyDynamic("readYXmlFragment")(decoder.asInstanceOf[js.Any]).asInstanceOf[typings.yjs.distSrcTypesYxmlfragmentMod.YXmlFragment]
-inline def readYXmlFragment(decoder: typings.yjs.distSrcUtilsUpdateDecoderMod.UpdateDecoderV2): typings.yjs.distSrcTypesYxmlfragmentMod.YXmlFragment = ^.asInstanceOf[js.Dynamic].applyDynamic("readYXmlFragment")(decoder.asInstanceOf[js.Any]).asInstanceOf[typings.yjs.distSrcTypesYxmlfragmentMod.YXmlFragment]
+inline def readYXmlFragment(_decoder: typings.yjs.distSrcUtilsUpdateDecoderMod.UpdateDecoderV1): typings.yjs.distSrcTypesYxmlfragmentMod.YXmlFragment = ^.asInstanceOf[js.Dynamic].applyDynamic("readYXmlFragment")(_decoder.asInstanceOf[js.Any]).asInstanceOf[typings.yjs.distSrcTypesYxmlfragmentMod.YXmlFragment]
+inline def readYXmlFragment(_decoder: typings.yjs.distSrcUtilsUpdateDecoderMod.UpdateDecoderV2): typings.yjs.distSrcTypesYxmlfragmentMod.YXmlFragment = ^.asInstanceOf[js.Dynamic].applyDynamic("readYXmlFragment")(_decoder.asInstanceOf[js.Any]).asInstanceOf[typings.yjs.distSrcTypesYxmlfragmentMod.YXmlFragment]
 
 inline def readYXmlHook(decoder: typings.yjs.distSrcUtilsUpdateDecoderMod.UpdateDecoderV1): typings.yjs.distSrcTypesYxmlhookMod.YXmlHook = ^.asInstanceOf[js.Dynamic].applyDynamic("readYXmlHook")(decoder.asInstanceOf[js.Any]).asInstanceOf[typings.yjs.distSrcTypesYxmlhookMod.YXmlHook]
 inline def readYXmlHook(decoder: typings.yjs.distSrcUtilsUpdateDecoderMod.UpdateDecoderV2): typings.yjs.distSrcTypesYxmlhookMod.YXmlHook = ^.asInstanceOf[js.Dynamic].applyDynamic("readYXmlHook")(decoder.asInstanceOf[js.Any]).asInstanceOf[typings.yjs.distSrcTypesYxmlhookMod.YXmlHook]
@@ -572,8 +583,9 @@ inline def redoItem(
   item: typings.yjs.distSrcStructsItemMod.Item,
   redoitems: Set[typings.yjs.distSrcStructsItemMod.Item],
   itemsToDelete: typings.yjs.distSrcUtilsDeleteSetMod.DeleteSet,
-  ignoreRemoteMapChanges: Boolean
-): typings.yjs.distSrcStructsItemMod.Item | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("redoItem")(transaction.asInstanceOf[js.Any], item.asInstanceOf[js.Any], redoitems.asInstanceOf[js.Any], itemsToDelete.asInstanceOf[js.Any], ignoreRemoteMapChanges.asInstanceOf[js.Any])).asInstanceOf[typings.yjs.distSrcStructsItemMod.Item | Null]
+  ignoreRemoteMapChanges: Boolean,
+  um: typings.yjs.distSrcUtilsUndoManagerMod.UndoManager
+): typings.yjs.distSrcStructsItemMod.Item | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("redoItem")(transaction.asInstanceOf[js.Any], item.asInstanceOf[js.Any], redoitems.asInstanceOf[js.Any], itemsToDelete.asInstanceOf[js.Any], ignoreRemoteMapChanges.asInstanceOf[js.Any], um.asInstanceOf[js.Any])).asInstanceOf[typings.yjs.distSrcStructsItemMod.Item | Null]
 
 inline def relativePositionToJSON(rpos: typings.yjs.distSrcUtilsRelativePositionMod.RelativePosition): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("relativePositionToJSON")(rpos.asInstanceOf[js.Any]).asInstanceOf[Any]
 
@@ -624,27 +636,27 @@ inline def structGCRefNumber: `0` = ^.asInstanceOf[js.Dynamic].selectDynamic("st
 
 inline def structSkipRefNumber: `10` = ^.asInstanceOf[js.Dynamic].selectDynamic("structSkipRefNumber").asInstanceOf[`10`]
 
-inline def transact(
+inline def transact[T](
   doc: typings.yjs.distSrcUtilsDocMod.Doc,
-  f: js.Function1[/* arg0 */ typings.yjs.distSrcUtilsTransactionMod.Transaction, Unit]
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("transact")(doc.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def transact(
+  f: js.Function1[/* arg0 */ typings.yjs.distSrcUtilsTransactionMod.Transaction, T]
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("transact")(doc.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def transact[T](
   doc: typings.yjs.distSrcUtilsDocMod.Doc,
-  f: js.Function1[/* arg0 */ typings.yjs.distSrcUtilsTransactionMod.Transaction, Unit],
+  f: js.Function1[/* arg0 */ typings.yjs.distSrcUtilsTransactionMod.Transaction, T],
   origin: Any
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("transact")(doc.asInstanceOf[js.Any], f.asInstanceOf[js.Any], origin.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def transact(
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("transact")(doc.asInstanceOf[js.Any], f.asInstanceOf[js.Any], origin.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def transact[T](
   doc: typings.yjs.distSrcUtilsDocMod.Doc,
-  f: js.Function1[/* arg0 */ typings.yjs.distSrcUtilsTransactionMod.Transaction, Unit],
+  f: js.Function1[/* arg0 */ typings.yjs.distSrcUtilsTransactionMod.Transaction, T],
   origin: Any,
   local: Boolean
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("transact")(doc.asInstanceOf[js.Any], f.asInstanceOf[js.Any], origin.asInstanceOf[js.Any], local.asInstanceOf[js.Any])).asInstanceOf[Unit]
-inline def transact(
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("transact")(doc.asInstanceOf[js.Any], f.asInstanceOf[js.Any], origin.asInstanceOf[js.Any], local.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def transact[T](
   doc: typings.yjs.distSrcUtilsDocMod.Doc,
-  f: js.Function1[/* arg0 */ typings.yjs.distSrcUtilsTransactionMod.Transaction, Unit],
+  f: js.Function1[/* arg0 */ typings.yjs.distSrcUtilsTransactionMod.Transaction, T],
   origin: Unit,
   local: Boolean
-): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("transact")(doc.asInstanceOf[js.Any], f.asInstanceOf[js.Any], origin.asInstanceOf[js.Any], local.asInstanceOf[js.Any])).asInstanceOf[Unit]
+): T = (^.asInstanceOf[js.Dynamic].applyDynamic("transact")(doc.asInstanceOf[js.Any], f.asInstanceOf[js.Any], origin.asInstanceOf[js.Any], local.asInstanceOf[js.Any])).asInstanceOf[T]
 
 inline def tryGc(
   ds: typings.yjs.distSrcUtilsDeleteSetMod.DeleteSet,

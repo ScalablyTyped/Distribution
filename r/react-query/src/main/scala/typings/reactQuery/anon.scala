@@ -50,6 +50,7 @@ import typings.reactQuery.reactQueryStrings.Numbersign3f4e60
 import typings.reactQuery.reactQueryStrings.Numbersignff0085
 import typings.reactQuery.reactQueryStrings.Numbersignffb200
 import typings.reactQuery.reactQueryStrings.Numbersignfff
+import typings.reactQuery.reactQueryStrings._empty
 import typings.reactQuery.reactQueryStrings.`additions removals`
 import typings.reactQuery.reactQueryStrings.`additions text`
 import typings.reactQuery.reactQueryStrings.`inline`
@@ -57,8 +58,10 @@ import typings.reactQuery.reactQueryStrings.`removals additions`
 import typings.reactQuery.reactQueryStrings.`removals text`
 import typings.reactQuery.reactQueryStrings.`text additions`
 import typings.reactQuery.reactQueryStrings.`text removals`
+import typings.reactQuery.reactQueryStrings.`use-credentials`
 import typings.reactQuery.reactQueryStrings.additions
 import typings.reactQuery.reactQueryStrings.all
+import typings.reactQuery.reactQueryStrings.anonymous
 import typings.reactQuery.reactQueryStrings.ascending
 import typings.reactQuery.reactQueryStrings.assertive
 import typings.reactQuery.reactQueryStrings.both
@@ -116,6 +119,7 @@ import typings.reactQuery.typesReactTypesMod.UseMutateAsyncFunction
 import typings.reactQuery.typesReactTypesMod.UseMutateFunction
 import typings.std.Element
 import typings.std.Event
+import typings.std.FormData
 import typings.std.HTMLButtonElement
 import typings.std.HTMLInputElement
 import typings.std.HTMLSelectElement
@@ -440,7 +444,7 @@ object anon {
     
     var form: js.UndefOr[String] = js.undefined
     
-    var formAction: js.UndefOr[String] = js.undefined
+    var formAction: js.UndefOr[String | (js.Function1[/* formData */ FormData, Unit])] = js.undefined
     
     var formEncType: js.UndefOr[String] = js.undefined
     
@@ -804,6 +808,11 @@ object anon {
     
     var radioGroup: js.UndefOr[String] = js.undefined
     
+    /**
+      * Allows getting a ref to the component instance.
+      * Once the component unmounts, React will set `ref.current` to `null` (or call the ref with `null` if you passed a callback ref).
+      * @see https://react.dev/learn/referencing-values-with-refs#refs-and-the-dom
+      */
     var ref: js.UndefOr[Ref[HTMLButtonElement]] = js.undefined
     
     var resource: js.UndefOr[String] = js.undefined
@@ -1120,7 +1129,9 @@ object anon {
       
       inline def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
       
-      inline def setFormAction(value: String): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+      inline def setFormAction(value: String | (js.Function1[/* formData */ FormData, Unit])): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+      
+      inline def setFormActionFunction1(value: /* formData */ FormData => Unit): Self = StObject.set(x, "formAction", js.Any.fromFunction1(value))
       
       inline def setFormActionUndefined: Self = StObject.set(x, "formAction", js.undefined)
       
@@ -2065,7 +2076,7 @@ object anon {
     
     var contextMenu: js.UndefOr[String] = js.undefined
     
-    var crossOrigin: js.UndefOr[String] = js.undefined
+    var crossOrigin: js.UndefOr[anonymous | `use-credentials` | _empty] = js.undefined
     
     var dangerouslySetInnerHTML: js.UndefOr[Html] = js.undefined
     
@@ -2083,7 +2094,7 @@ object anon {
     
     var form: js.UndefOr[String] = js.undefined
     
-    var formAction: js.UndefOr[String] = js.undefined
+    var formAction: js.UndefOr[String | (js.Function1[/* formData */ FormData, Unit])] = js.undefined
     
     var formEncType: js.UndefOr[String] = js.undefined
     
@@ -2465,6 +2476,11 @@ object anon {
     
     var readOnly: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Allows getting a ref to the component instance.
+      * Once the component unmounts, React will set `ref.current` to `null` (or call the ref with `null` if you passed a callback ref).
+      * @see https://react.dev/learn/referencing-values-with-refs#refs-and-the-dom
+      */
     var ref: js.UndefOr[Ref[HTMLInputElement]] = js.undefined
     
     var required: js.UndefOr[Boolean] = js.undefined
@@ -2779,7 +2795,7 @@ object anon {
       
       inline def setContextMenuUndefined: Self = StObject.set(x, "contextMenu", js.undefined)
       
-      inline def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+      inline def setCrossOrigin(value: anonymous | `use-credentials` | _empty): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
       
       inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
       
@@ -2815,7 +2831,9 @@ object anon {
       
       inline def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
       
-      inline def setFormAction(value: String): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+      inline def setFormAction(value: String | (js.Function1[/* formData */ FormData, Unit])): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+      
+      inline def setFormActionFunction1(value: /* formData */ FormData => Unit): Self = StObject.set(x, "formAction", js.Any.fromFunction1(value))
       
       inline def setFormActionUndefined: Self = StObject.set(x, "formAction", js.undefined)
       
@@ -4180,6 +4198,11 @@ object anon {
     
     var radioGroup: js.UndefOr[String] = js.undefined
     
+    /**
+      * Allows getting a ref to the component instance.
+      * Once the component unmounts, React will set `ref.current` to `null` (or call the ref with `null` if you passed a callback ref).
+      * @see https://react.dev/learn/referencing-values-with-refs#refs-and-the-dom
+      */
     var ref: js.UndefOr[Ref[HTMLSelectElement]] = js.undefined
     
     var required: js.UndefOr[Boolean] = js.undefined

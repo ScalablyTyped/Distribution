@@ -1,9 +1,9 @@
 package typings.angularRouter.mod
 
-import typings.angularCore.mod.ComponentFactoryResolver
 import typings.angularCore.mod.ComponentRef
 import typings.angularCore.mod.EnvironmentInjector
 import typings.angularCore.mod.EventEmitter
+import typings.angularRouter.angularRouterBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,7 +21,6 @@ trait RouterOutletContract extends StObject {
     */
   def activateWith(activatedRoute: ActivatedRoute): Unit = js.native
   def activateWith(activatedRoute: ActivatedRoute, environmentInjector: EnvironmentInjector): Unit = js.native
-  def activateWith(activatedRoute: ActivatedRoute, resolver: ComponentFactoryResolver): Unit = js.native
   
   /**
     * The `ActivatedRoute` for the outlet or `null` if the outlet is not activated.
@@ -80,4 +79,14 @@ trait RouterOutletContract extends StObject {
     * An outlet is considered "activated" if it has an active component.
     */
   var isActivated: Boolean = js.native
+  
+  /**
+    * Used to indicate that the outlet is able to bind data from the `Router` to the outlet
+    * component's inputs.
+    *
+    * When this is `undefined` or `false` and the developer has opted in to the
+    * feature using `withComponentInputBinding`, a warning will be logged in dev mode if this outlet
+    * is used in the application.
+    */
+  val supportsBindingToComponentInputs: js.UndefOr[`true`] = js.native
 }

@@ -27,6 +27,11 @@ trait UpdateDataSourceRequest extends StObject {
   var elasticsearchConfig: js.UndefOr[ElasticsearchDataSourceConfig] = js.undefined
   
   /**
+    * The new Amazon EventBridge settings.
+    */
+  var eventBridgeConfig: js.UndefOr[EventBridgeDataSourceConfig] = js.undefined
+  
+  /**
     * The new HTTP endpoint configuration.
     */
   var httpConfig: js.UndefOr[HttpDataSourceConfig] = js.undefined
@@ -85,6 +90,10 @@ object UpdateDataSourceRequest {
     inline def setElasticsearchConfig(value: ElasticsearchDataSourceConfig): Self = StObject.set(x, "elasticsearchConfig", value.asInstanceOf[js.Any])
     
     inline def setElasticsearchConfigUndefined: Self = StObject.set(x, "elasticsearchConfig", js.undefined)
+    
+    inline def setEventBridgeConfig(value: EventBridgeDataSourceConfig): Self = StObject.set(x, "eventBridgeConfig", value.asInstanceOf[js.Any])
+    
+    inline def setEventBridgeConfigUndefined: Self = StObject.set(x, "eventBridgeConfig", js.undefined)
     
     inline def setHttpConfig(value: HttpDataSourceConfig): Self = StObject.set(x, "httpConfig", value.asInstanceOf[js.Any])
     

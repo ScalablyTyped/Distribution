@@ -117,12 +117,12 @@ trait Proton
   ): Request[CreateComponentOutput, AWSError] = js.native
   
   /**
-    * Deploy a new environment. An Proton environment is created from an environment template that defines infrastructure and resources that can be shared across services.  You can provision environments using the following methods:     Amazon Web Services-managed provisioning – Proton makes direct calls to provision your resources.    Self-managed provisioning – Proton makes pull requests on your repository to provide compiled infrastructure as code (IaC) files that your IaC engine uses to provision resources.    CodeBuild-based provisioning – Proton uses CodeBuild to run shell commands that you provide. Your commands can read inputs that Proton provides, and are responsible for provisioning or deprovisioning infrastructure and generating output values.   For more information, see Environments and Provisioning methods in the Proton User Guide.
+    * Deploy a new environment. An Proton environment is created from an environment template that defines infrastructure and resources that can be shared across services.  You can provision environments using the following methods:    Amazon Web Services-managed provisioning: Proton makes direct calls to provision your resources.   Self-managed provisioning: Proton makes pull requests on your repository to provide compiled infrastructure as code (IaC) files that your IaC engine uses to provision resources.   For more information, see Environments and Provisioning methods in the Proton User Guide.
     */
   def createEnvironment(): Request[CreateEnvironmentOutput, AWSError] = js.native
   def createEnvironment(callback: js.Function2[/* err */ AWSError, /* data */ CreateEnvironmentOutput, Unit]): Request[CreateEnvironmentOutput, AWSError] = js.native
   /**
-    * Deploy a new environment. An Proton environment is created from an environment template that defines infrastructure and resources that can be shared across services.  You can provision environments using the following methods:     Amazon Web Services-managed provisioning – Proton makes direct calls to provision your resources.    Self-managed provisioning – Proton makes pull requests on your repository to provide compiled infrastructure as code (IaC) files that your IaC engine uses to provision resources.    CodeBuild-based provisioning – Proton uses CodeBuild to run shell commands that you provide. Your commands can read inputs that Proton provides, and are responsible for provisioning or deprovisioning infrastructure and generating output values.   For more information, see Environments and Provisioning methods in the Proton User Guide.
+    * Deploy a new environment. An Proton environment is created from an environment template that defines infrastructure and resources that can be shared across services.  You can provision environments using the following methods:    Amazon Web Services-managed provisioning: Proton makes direct calls to provision your resources.   Self-managed provisioning: Proton makes pull requests on your repository to provide compiled infrastructure as code (IaC) files that your IaC engine uses to provision resources.   For more information, see Environments and Provisioning methods in the Proton User Guide.
     */
   def createEnvironment(params: CreateEnvironmentInput): Request[CreateEnvironmentOutput, AWSError] = js.native
   def createEnvironment(
@@ -203,6 +203,34 @@ trait Proton
     params: CreateServiceInput,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateServiceOutput, Unit]
   ): Request[CreateServiceOutput, AWSError] = js.native
+  
+  /**
+    * Create a service instance.
+    */
+  def createServiceInstance(): Request[CreateServiceInstanceOutput, AWSError] = js.native
+  def createServiceInstance(callback: js.Function2[/* err */ AWSError, /* data */ CreateServiceInstanceOutput, Unit]): Request[CreateServiceInstanceOutput, AWSError] = js.native
+  /**
+    * Create a service instance.
+    */
+  def createServiceInstance(params: CreateServiceInstanceInput): Request[CreateServiceInstanceOutput, AWSError] = js.native
+  def createServiceInstance(
+    params: CreateServiceInstanceInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateServiceInstanceOutput, Unit]
+  ): Request[CreateServiceInstanceOutput, AWSError] = js.native
+  
+  /**
+    * Create the Proton Ops configuration file.
+    */
+  def createServiceSyncConfig(): Request[CreateServiceSyncConfigOutput, AWSError] = js.native
+  def createServiceSyncConfig(callback: js.Function2[/* err */ AWSError, /* data */ CreateServiceSyncConfigOutput, Unit]): Request[CreateServiceSyncConfigOutput, AWSError] = js.native
+  /**
+    * Create the Proton Ops configuration file.
+    */
+  def createServiceSyncConfig(params: CreateServiceSyncConfigInput): Request[CreateServiceSyncConfigOutput, AWSError] = js.native
+  def createServiceSyncConfig(
+    params: CreateServiceSyncConfigInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateServiceSyncConfigOutput, Unit]
+  ): Request[CreateServiceSyncConfigOutput, AWSError] = js.native
   
   /**
     * Create a service template. The administrator creates a service template to define standardized infrastructure and an optional CI/CD service pipeline. Developers, in turn, select the service template from Proton. If the selected service template includes a service pipeline definition, they provide a link to their source code repository. Proton then deploys and manages the infrastructure defined by the selected service template. For more information, see Proton templates in the Proton User Guide.
@@ -347,6 +375,20 @@ trait Proton
     params: DeleteServiceInput,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteServiceOutput, Unit]
   ): Request[DeleteServiceOutput, AWSError] = js.native
+  
+  /**
+    * Delete the Proton Ops file.
+    */
+  def deleteServiceSyncConfig(): Request[DeleteServiceSyncConfigOutput, AWSError] = js.native
+  def deleteServiceSyncConfig(callback: js.Function2[/* err */ AWSError, /* data */ DeleteServiceSyncConfigOutput, Unit]): Request[DeleteServiceSyncConfigOutput, AWSError] = js.native
+  /**
+    * Delete the Proton Ops file.
+    */
+  def deleteServiceSyncConfig(params: DeleteServiceSyncConfigInput): Request[DeleteServiceSyncConfigOutput, AWSError] = js.native
+  def deleteServiceSyncConfig(
+    params: DeleteServiceSyncConfigInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteServiceSyncConfigOutput, Unit]
+  ): Request[DeleteServiceSyncConfigOutput, AWSError] = js.native
   
   /**
     * If no other major or minor versions of the service template exist, delete the service template.
@@ -503,6 +545,20 @@ trait Proton
   ): Request[GetRepositorySyncStatusOutput, AWSError] = js.native
   
   /**
+    * Get counts of Proton resources. For infrastructure-provisioning resources (environments, services, service instances, pipelines), the action returns staleness counts. A resource is stale when it's behind the recommended version of the Proton template that it uses and it needs an update to become current. The action returns staleness counts (counts of resources that are up-to-date, behind a template major version, or behind a template minor version), the total number of resources, and the number of resources that are in a failed state, grouped by resource type. Components, environments, and service templates return less information - see the components, environments, and serviceTemplates field descriptions. For context, the action also returns the total number of each type of Proton template in the Amazon Web Services account. For more information, see Proton dashboard in the Proton User Guide.
+    */
+  def getResourcesSummary(): Request[GetResourcesSummaryOutput, AWSError] = js.native
+  def getResourcesSummary(callback: js.Function2[/* err */ AWSError, /* data */ GetResourcesSummaryOutput, Unit]): Request[GetResourcesSummaryOutput, AWSError] = js.native
+  /**
+    * Get counts of Proton resources. For infrastructure-provisioning resources (environments, services, service instances, pipelines), the action returns staleness counts. A resource is stale when it's behind the recommended version of the Proton template that it uses and it needs an update to become current. The action returns staleness counts (counts of resources that are up-to-date, behind a template major version, or behind a template minor version), the total number of resources, and the number of resources that are in a failed state, grouped by resource type. Components, environments, and service templates return less information - see the components, environments, and serviceTemplates field descriptions. For context, the action also returns the total number of each type of Proton template in the Amazon Web Services account. For more information, see Proton dashboard in the Proton User Guide.
+    */
+  def getResourcesSummary(params: GetResourcesSummaryInput): Request[GetResourcesSummaryOutput, AWSError] = js.native
+  def getResourcesSummary(
+    params: GetResourcesSummaryInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetResourcesSummaryOutput, Unit]
+  ): Request[GetResourcesSummaryOutput, AWSError] = js.native
+  
+  /**
     * Get detailed data for a service.
     */
   def getService(): Request[GetServiceOutput, AWSError] = js.native
@@ -529,6 +585,48 @@ trait Proton
     params: GetServiceInstanceInput,
     callback: js.Function2[/* err */ AWSError, /* data */ GetServiceInstanceOutput, Unit]
   ): Request[GetServiceInstanceOutput, AWSError] = js.native
+  
+  /**
+    * Get the status of the synced service instance.
+    */
+  def getServiceInstanceSyncStatus(): Request[GetServiceInstanceSyncStatusOutput, AWSError] = js.native
+  def getServiceInstanceSyncStatus(callback: js.Function2[/* err */ AWSError, /* data */ GetServiceInstanceSyncStatusOutput, Unit]): Request[GetServiceInstanceSyncStatusOutput, AWSError] = js.native
+  /**
+    * Get the status of the synced service instance.
+    */
+  def getServiceInstanceSyncStatus(params: GetServiceInstanceSyncStatusInput): Request[GetServiceInstanceSyncStatusOutput, AWSError] = js.native
+  def getServiceInstanceSyncStatus(
+    params: GetServiceInstanceSyncStatusInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetServiceInstanceSyncStatusOutput, Unit]
+  ): Request[GetServiceInstanceSyncStatusOutput, AWSError] = js.native
+  
+  /**
+    * Get detailed data for the service sync blocker summary.
+    */
+  def getServiceSyncBlockerSummary(): Request[GetServiceSyncBlockerSummaryOutput, AWSError] = js.native
+  def getServiceSyncBlockerSummary(callback: js.Function2[/* err */ AWSError, /* data */ GetServiceSyncBlockerSummaryOutput, Unit]): Request[GetServiceSyncBlockerSummaryOutput, AWSError] = js.native
+  /**
+    * Get detailed data for the service sync blocker summary.
+    */
+  def getServiceSyncBlockerSummary(params: GetServiceSyncBlockerSummaryInput): Request[GetServiceSyncBlockerSummaryOutput, AWSError] = js.native
+  def getServiceSyncBlockerSummary(
+    params: GetServiceSyncBlockerSummaryInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetServiceSyncBlockerSummaryOutput, Unit]
+  ): Request[GetServiceSyncBlockerSummaryOutput, AWSError] = js.native
+  
+  /**
+    * Get detailed information for the service sync configuration.
+    */
+  def getServiceSyncConfig(): Request[GetServiceSyncConfigOutput, AWSError] = js.native
+  def getServiceSyncConfig(callback: js.Function2[/* err */ AWSError, /* data */ GetServiceSyncConfigOutput, Unit]): Request[GetServiceSyncConfigOutput, AWSError] = js.native
+  /**
+    * Get detailed information for the service sync configuration.
+    */
+  def getServiceSyncConfig(params: GetServiceSyncConfigInput): Request[GetServiceSyncConfigOutput, AWSError] = js.native
+  def getServiceSyncConfig(
+    params: GetServiceSyncConfigInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetServiceSyncConfigOutput, Unit]
+  ): Request[GetServiceSyncConfigOutput, AWSError] = js.native
   
   /**
     * Get detailed data for a service template.
@@ -777,12 +875,12 @@ trait Proton
   ): Request[ListServiceInstanceProvisionedResourcesOutput, AWSError] = js.native
   
   /**
-    * List service instances with summary data.
+    * List service instances with summary data. This action lists service instances of all services in the Amazon Web Services account.
     */
   def listServiceInstances(): Request[ListServiceInstancesOutput, AWSError] = js.native
   def listServiceInstances(callback: js.Function2[/* err */ AWSError, /* data */ ListServiceInstancesOutput, Unit]): Request[ListServiceInstancesOutput, AWSError] = js.native
   /**
-    * List service instances with summary data.
+    * List service instances with summary data. This action lists service instances of all services in the Amazon Web Services account.
     */
   def listServiceInstances(params: ListServiceInstancesInput): Request[ListServiceInstancesOutput, AWSError] = js.native
   def listServiceInstances(
@@ -877,14 +975,14 @@ trait Proton
   ): Request[ListTagsForResourceOutput, AWSError] = js.native
   
   /**
-    * Notify Proton of the following information related to a provisioned resource (environment, service instance, or service pipeline):   For CodeBuild-based provisioning, provide your provisioned resource output values to Proton.   For self-managed provisioning, notify Proton about the status of your provisioned resource. To disambiguate between different deployments of the same resource, set deploymentId to a unique deployment ID of your choice.  &lt;/li&gt; &lt;/ul&gt; 
+    * Notify Proton of status changes to a provisioned resource when you use self-managed provisioning. For more information, see Self-managed provisioning in the Proton User Guide.
     */
   def notifyResourceDeploymentStatusChange(): Request[NotifyResourceDeploymentStatusChangeOutput, AWSError] = js.native
   def notifyResourceDeploymentStatusChange(
     callback: js.Function2[/* err */ AWSError, /* data */ NotifyResourceDeploymentStatusChangeOutput, Unit]
   ): Request[NotifyResourceDeploymentStatusChangeOutput, AWSError] = js.native
   /**
-    * Notify Proton of the following information related to a provisioned resource (environment, service instance, or service pipeline):   For CodeBuild-based provisioning, provide your provisioned resource output values to Proton.   For self-managed provisioning, notify Proton about the status of your provisioned resource. To disambiguate between different deployments of the same resource, set deploymentId to a unique deployment ID of your choice.  &lt;/li&gt; &lt;/ul&gt; 
+    * Notify Proton of status changes to a provisioned resource when you use self-managed provisioning. For more information, see Self-managed provisioning in the Proton User Guide.
     */
   def notifyResourceDeploymentStatusChange(params: NotifyResourceDeploymentStatusChangeInput): Request[NotifyResourceDeploymentStatusChangeOutput, AWSError] = js.native
   def notifyResourceDeploymentStatusChange(
@@ -965,12 +1063,12 @@ trait Proton
   ): Request[UpdateComponentOutput, AWSError] = js.native
   
   /**
-    * Update an environment. If the environment is associated with an environment account connection, don't update or include the protonServiceRoleArn, codebuildRoleArn, and provisioningRepository parameters. You can only update to a new environment account connection if that connection was created in the same environment account that the current environment account connection was created in. The account connection must also be associated with the current environment. If the environment isn't associated with an environment account connection, don't update or include the environmentAccountConnectionId parameter. You can't update or connect the environment to an environment account connection if it isn't already associated with an environment connection. You can update either environmentAccountConnectionId or one or more of protonServiceRoleArn, codebuildRoleArn, and provisioningRepository. If the environment was configured for Amazon Web Services-managed or CodeBuild-based provisioning, omit the provisioningRepository parameter. If the environment was configured for self-managed provisioning, specify the provisioningRepository parameter and omit the protonServiceRoleArn, codebuildRoleArn, and provisioningRepository parameters. For more information, see Environments and Provisioning methods in the Proton User Guide. There are four modes for updating an environment. The deploymentType field defines the mode.     NONE  In this mode, a deployment doesn't occur. Only the requested metadata parameters are updated.     CURRENT_VERSION  In this mode, the environment is deployed and updated with the new spec that you provide. Only requested parameters are updated. Don’t include minor or major version parameters when you use this deployment-type.     MINOR_VERSION  In this mode, the environment is deployed and updated with the published, recommended (latest) minor version of the current major version in use, by default. You can also specify a different minor version of the current major version in use.     MAJOR_VERSION  In this mode, the environment is deployed and updated with the published, recommended (latest) major and minor version of the current template, by default. You can also specify a different major version that's higher than the major version in use and a minor version.  
+    * Update an environment. If the environment is associated with an environment account connection, don't update or include the protonServiceRoleArn and provisioningRepository parameter to update or connect to an environment account connection. You can only update to a new environment account connection if that connection was created in the same environment account that the current environment account connection was created in. The account connection must also be associated with the current environment. If the environment isn't associated with an environment account connection, don't update or include the environmentAccountConnectionId parameter. You can't update or connect the environment to an environment account connection if it isn't already associated with an environment connection. You can update either the environmentAccountConnectionId or protonServiceRoleArn parameter and value. You can’t update both. If the environment was configured for Amazon Web Services-managed provisioning, omit the provisioningRepository parameter. If the environment was configured for self-managed provisioning, specify the provisioningRepository parameter and omit the protonServiceRoleArn and environmentAccountConnectionId parameters. For more information, see Environments and Provisioning methods in the Proton User Guide. There are four modes for updating an environment. The deploymentType field defines the mode.     NONE  In this mode, a deployment doesn't occur. Only the requested metadata parameters are updated.     CURRENT_VERSION  In this mode, the environment is deployed and updated with the new spec that you provide. Only requested parameters are updated. Don’t include minor or major version parameters when you use this deployment-type.     MINOR_VERSION  In this mode, the environment is deployed and updated with the published, recommended (latest) minor version of the current major version in use, by default. You can also specify a different minor version of the current major version in use.     MAJOR_VERSION  In this mode, the environment is deployed and updated with the published, recommended (latest) major and minor version of the current template, by default. You can also specify a different major version that's higher than the major version in use and a minor version.  
     */
   def updateEnvironment(): Request[UpdateEnvironmentOutput, AWSError] = js.native
   def updateEnvironment(callback: js.Function2[/* err */ AWSError, /* data */ UpdateEnvironmentOutput, Unit]): Request[UpdateEnvironmentOutput, AWSError] = js.native
   /**
-    * Update an environment. If the environment is associated with an environment account connection, don't update or include the protonServiceRoleArn, codebuildRoleArn, and provisioningRepository parameters. You can only update to a new environment account connection if that connection was created in the same environment account that the current environment account connection was created in. The account connection must also be associated with the current environment. If the environment isn't associated with an environment account connection, don't update or include the environmentAccountConnectionId parameter. You can't update or connect the environment to an environment account connection if it isn't already associated with an environment connection. You can update either environmentAccountConnectionId or one or more of protonServiceRoleArn, codebuildRoleArn, and provisioningRepository. If the environment was configured for Amazon Web Services-managed or CodeBuild-based provisioning, omit the provisioningRepository parameter. If the environment was configured for self-managed provisioning, specify the provisioningRepository parameter and omit the protonServiceRoleArn, codebuildRoleArn, and provisioningRepository parameters. For more information, see Environments and Provisioning methods in the Proton User Guide. There are four modes for updating an environment. The deploymentType field defines the mode.     NONE  In this mode, a deployment doesn't occur. Only the requested metadata parameters are updated.     CURRENT_VERSION  In this mode, the environment is deployed and updated with the new spec that you provide. Only requested parameters are updated. Don’t include minor or major version parameters when you use this deployment-type.     MINOR_VERSION  In this mode, the environment is deployed and updated with the published, recommended (latest) minor version of the current major version in use, by default. You can also specify a different minor version of the current major version in use.     MAJOR_VERSION  In this mode, the environment is deployed and updated with the published, recommended (latest) major and minor version of the current template, by default. You can also specify a different major version that's higher than the major version in use and a minor version.  
+    * Update an environment. If the environment is associated with an environment account connection, don't update or include the protonServiceRoleArn and provisioningRepository parameter to update or connect to an environment account connection. You can only update to a new environment account connection if that connection was created in the same environment account that the current environment account connection was created in. The account connection must also be associated with the current environment. If the environment isn't associated with an environment account connection, don't update or include the environmentAccountConnectionId parameter. You can't update or connect the environment to an environment account connection if it isn't already associated with an environment connection. You can update either the environmentAccountConnectionId or protonServiceRoleArn parameter and value. You can’t update both. If the environment was configured for Amazon Web Services-managed provisioning, omit the provisioningRepository parameter. If the environment was configured for self-managed provisioning, specify the provisioningRepository parameter and omit the protonServiceRoleArn and environmentAccountConnectionId parameters. For more information, see Environments and Provisioning methods in the Proton User Guide. There are four modes for updating an environment. The deploymentType field defines the mode.     NONE  In this mode, a deployment doesn't occur. Only the requested metadata parameters are updated.     CURRENT_VERSION  In this mode, the environment is deployed and updated with the new spec that you provide. Only requested parameters are updated. Don’t include minor or major version parameters when you use this deployment-type.     MINOR_VERSION  In this mode, the environment is deployed and updated with the published, recommended (latest) minor version of the current major version in use, by default. You can also specify a different minor version of the current major version in use.     MAJOR_VERSION  In this mode, the environment is deployed and updated with the published, recommended (latest) major and minor version of the current template, by default. You can also specify a different major version that's higher than the major version in use and a minor version.  
     */
   def updateEnvironment(params: UpdateEnvironmentInput): Request[UpdateEnvironmentOutput, AWSError] = js.native
   def updateEnvironment(
@@ -1065,6 +1163,34 @@ trait Proton
     params: UpdateServicePipelineInput,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateServicePipelineOutput, Unit]
   ): Request[UpdateServicePipelineOutput, AWSError] = js.native
+  
+  /**
+    * Update the service sync blocker by resolving it.
+    */
+  def updateServiceSyncBlocker(): Request[UpdateServiceSyncBlockerOutput, AWSError] = js.native
+  def updateServiceSyncBlocker(callback: js.Function2[/* err */ AWSError, /* data */ UpdateServiceSyncBlockerOutput, Unit]): Request[UpdateServiceSyncBlockerOutput, AWSError] = js.native
+  /**
+    * Update the service sync blocker by resolving it.
+    */
+  def updateServiceSyncBlocker(params: UpdateServiceSyncBlockerInput): Request[UpdateServiceSyncBlockerOutput, AWSError] = js.native
+  def updateServiceSyncBlocker(
+    params: UpdateServiceSyncBlockerInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateServiceSyncBlockerOutput, Unit]
+  ): Request[UpdateServiceSyncBlockerOutput, AWSError] = js.native
+  
+  /**
+    * Update the Proton Ops config file.
+    */
+  def updateServiceSyncConfig(): Request[UpdateServiceSyncConfigOutput, AWSError] = js.native
+  def updateServiceSyncConfig(callback: js.Function2[/* err */ AWSError, /* data */ UpdateServiceSyncConfigOutput, Unit]): Request[UpdateServiceSyncConfigOutput, AWSError] = js.native
+  /**
+    * Update the Proton Ops config file.
+    */
+  def updateServiceSyncConfig(params: UpdateServiceSyncConfigInput): Request[UpdateServiceSyncConfigOutput, AWSError] = js.native
+  def updateServiceSyncConfig(
+    params: UpdateServiceSyncConfigInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateServiceSyncConfigOutput, Unit]
+  ): Request[UpdateServiceSyncConfigOutput, AWSError] = js.native
   
   /**
     * Update a service template.

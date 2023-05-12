@@ -22,6 +22,8 @@ object examplesJsmNodesAccessorsTextureNodeMod {
   trait TextureNode
     extends typings.three.examplesJsmNodesCoreUniformNodeMod.default {
     
+    def getDefaultUV(): Node = js.native
+    
     var isTextureNode: `true` = js.native
     
     var levelNode: Node | Null = js.native

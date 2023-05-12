@@ -1,5 +1,6 @@
 package typings.marked.mod.marked
 
+import typings.marked.anon.Postprocess
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,11 +25,7 @@ trait MarkedExtension extends StObject {
   /**
     * Add tokenizers and renderers to marked
     */
-  var extensions: js.UndefOr[
-    js.Array[
-      TokenizerExtension | RendererExtension | (TokenizerExtension & RendererExtension)
-    ]
-  ] = js.undefined
+  var extensions: js.UndefOr[js.Array[TokenizerAndRendererExtension]] = js.undefined
   
   /**
     * Enable GitHub flavored markdown.
@@ -59,6 +56,13 @@ trait MarkedExtension extends StObject {
       String | Unit
     ]
   ] = js.undefined
+  
+  /**
+    * Hooks are methods that hook into some part of marked.
+    * preprocess is called to process markdown before sending it to marked.
+    * postprocess is called to process html after marked has finished parsing.
+    */
+  var hooks: js.UndefOr[Postprocess] = js.undefined
   
   /**
     * Set the prefix for code block classes.
@@ -147,15 +151,11 @@ object MarkedExtension {
     
     inline def setBreaksUndefined: Self = StObject.set(x, "breaks", js.undefined)
     
-    inline def setExtensions(
-      value: js.Array[
-          TokenizerExtension | RendererExtension | (TokenizerExtension & RendererExtension)
-        ]
-    ): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+    inline def setExtensions(value: js.Array[TokenizerAndRendererExtension]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
     
     inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
     
-    inline def setExtensionsVarargs(value: (TokenizerExtension | RendererExtension | (TokenizerExtension & RendererExtension))*): Self = StObject.set(x, "extensions", js.Array(value*))
+    inline def setExtensionsVarargs(value: TokenizerAndRendererExtension*): Self = StObject.set(x, "extensions", js.Array(value*))
     
     inline def setGfm(value: Boolean): Self = StObject.set(x, "gfm", value.asInstanceOf[js.Any])
     
@@ -174,6 +174,10 @@ object MarkedExtension {
     ): Self = StObject.set(x, "highlight", js.Any.fromFunction3(value))
     
     inline def setHighlightUndefined: Self = StObject.set(x, "highlight", js.undefined)
+    
+    inline def setHooks(value: Postprocess): Self = StObject.set(x, "hooks", value.asInstanceOf[js.Any])
+    
+    inline def setHooksUndefined: Self = StObject.set(x, "hooks", js.undefined)
     
     inline def setLangPrefix(value: String): Self = StObject.set(x, "langPrefix", value.asInstanceOf[js.Any])
     

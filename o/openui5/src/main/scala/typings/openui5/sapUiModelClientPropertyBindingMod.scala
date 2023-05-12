@@ -13,6 +13,8 @@ object sapUiModelClientPropertyBindingMod {
   open class default protected ()
     extends typings.openui5.sapUiModelPropertyBindingMod.default {
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Creates a new ClientPropertyBinding.
       *
       * This constructor should only be called by subclasses or model implementations, not by application or
@@ -60,6 +62,8 @@ object sapUiModelClientPropertyBindingMod {
     val ^ : js.Any = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Creates a new subclass of class sap.ui.model.ClientPropertyBinding with name `sClassName` and enriches
       * it with the information contained in `oClassInfo`.
       *
@@ -113,6 +117,8 @@ object sapUiModelClientPropertyBindingMod {
     ): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(sClassName.asInstanceOf[js.Any], oClassInfo.asInstanceOf[js.Any], FNMetaImpl.asInstanceOf[js.Any])).asInstanceOf[js.Function]
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Returns a metadata object for class sap.ui.model.ClientPropertyBinding.
       *
       * @returns Metadata object describing this class

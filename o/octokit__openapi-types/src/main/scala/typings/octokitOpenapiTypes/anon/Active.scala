@@ -16,7 +16,7 @@ trait Active extends StObject {
   var config: Insecuressl
   
   /**
-    * @description Determines what [events](https://docs.github.com/webhooks/event-payloads) the hook is triggered for.
+    * @description Determines what [events](https://docs.github.com/webhooks/event-payloads) the hook is triggered for. Set to `["*"]` to receive all possible events.
     * @default [
     *   "push"
     * ]

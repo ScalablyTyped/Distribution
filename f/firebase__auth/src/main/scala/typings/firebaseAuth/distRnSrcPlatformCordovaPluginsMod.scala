@@ -1,12 +1,9 @@
 package typings.firebaseAuth
 
-import typings.firebaseAuth.anon.InAppBrowser31
+import typings.firebaseAuth.anon.InAppBrowser39
 import typings.firebaseAuth.anon.PackageName
 import typings.firebaseAuth.anon.Subscribe
-import typings.std.AddEventListenerOptions
-import typings.std.EventListenerOptions
-import typings.std.EventListenerOrEventListenerObject
-import typings.std.Window
+import typings.firebaseAuth.distSrcPlatformBrowserRecaptchaRecaptchaMod.global.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,38 +16,41 @@ object distRnSrcPlatformCordovaPluginsMod {
   
   inline def _cordovaWindow(): CordovaWindow = ^.asInstanceOf[js.Dynamic].applyDynamic("_cordovaWindow")().asInstanceOf[CordovaWindow]
   
-  @js.native
   trait CordovaWindow
     extends StObject
        with Window {
     
-    var BuildInfo: PackageName = js.native
+    var BuildInfo: PackageName
     
-    /* InferMemberOverrides */
-    /* InferMemberOverrides */
-    override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject): Unit = js.native
-    /* InferMemberOverrides */
-    /* InferMemberOverrides */
-    override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
-    /* InferMemberOverrides */
-    /* InferMemberOverrides */
-    override def addEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
+    var cordova: InAppBrowser39
     
-    var cordova: InAppBrowser31 = js.native
+    def handleOpenURL(url: String): Unit
     
-    def handleOpenURL(url: String): Unit = js.native
+    var universalLinks: Subscribe
+  }
+  object CordovaWindow {
     
-    /* InferMemberOverrides */
-    /* InferMemberOverrides */
-    override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject): Unit = js.native
-    /* InferMemberOverrides */
-    /* InferMemberOverrides */
-    override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
-    /* InferMemberOverrides */
-    /* InferMemberOverrides */
-    override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: EventListenerOptions): Unit = js.native
+    inline def apply(
+      BuildInfo: PackageName,
+      cordova: InAppBrowser39,
+      handleOpenURL: String => Unit,
+      universalLinks: Subscribe
+    ): CordovaWindow = {
+      val __obj = js.Dynamic.literal(BuildInfo = BuildInfo.asInstanceOf[js.Any], cordova = cordova.asInstanceOf[js.Any], handleOpenURL = js.Any.fromFunction1(handleOpenURL), universalLinks = universalLinks.asInstanceOf[js.Any])
+      __obj.asInstanceOf[CordovaWindow]
+    }
     
-    var universalLinks: Subscribe = js.native
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CordovaWindow] (val x: Self) extends AnyVal {
+      
+      inline def setBuildInfo(value: PackageName): Self = StObject.set(x, "BuildInfo", value.asInstanceOf[js.Any])
+      
+      inline def setCordova(value: InAppBrowser39): Self = StObject.set(x, "cordova", value.asInstanceOf[js.Any])
+      
+      inline def setHandleOpenURL(value: String => Unit): Self = StObject.set(x, "handleOpenURL", js.Any.fromFunction1(value))
+      
+      inline def setUniversalLinks(value: Subscribe): Self = StObject.set(x, "universalLinks", value.asInstanceOf[js.Any])
+    }
   }
   
   trait InAppBrowserRef extends StObject {

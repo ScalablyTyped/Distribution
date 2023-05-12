@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListGameServersInput extends StObject {
   
   /**
-    * An identifier for the game server group to retrieve a list of game servers from. Use either the GameServerGroup name or ARN value.
+    * An identifier for the game server group to retrieve a list of game servers from. Use either the name or ARN value.
     */
   var GameServerGroupName: GameServerGroupNameOrArn
   

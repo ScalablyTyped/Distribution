@@ -1,6 +1,7 @@
 package typings.openui5.sapMLibraryMod
 
 import typings.openui5.float
+import typings.openui5.sapMLibraryMod.^
 import typings.openui5.sapUiCoreLibraryMod.CSSColor
 import typings.openui5.sapUiCoreLibraryMod.URI
 import typings.openui5.sapUiCoreRenderManagerMod.default
@@ -8,22 +9,21 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object BackgroundHelper {
-  
-  @JSImport("sap/m/library", "BackgroundHelper")
-  @js.native
-  val ^ : js.Any = js.native
+@js.native
+trait BackgroundHelper extends StObject {
   
   /**
+    * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+    *
     * Adds CSS classes and styles to the given RenderManager, depending on the given configuration for background
     * color and background image. To be called by control renderers supporting the global themable background
     * image within their root tag, before they call openEnd, voidEnd, writeClasses() and writeStyles().
     */
-  inline def addBackgroundColorStyles(/**
+  def addBackgroundColorStyles(/**
     * The RenderManager
     */
-  rm: default): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addBackgroundColorStyles")(rm.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def addBackgroundColorStyles(
+  rm: default): Unit = js.native
+  def addBackgroundColorStyles(
     /**
     * The RenderManager
     */
@@ -36,8 +36,8 @@ object BackgroundHelper {
     * The configured custom background image for the control, if any
     */
   sBgImgUrl: URI
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addBackgroundColorStyles")(rm.asInstanceOf[js.Any], sBgColor.asInstanceOf[js.Any], sBgImgUrl.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def addBackgroundColorStyles(
+  ): Unit = js.native
+  def addBackgroundColorStyles(
     /**
     * The RenderManager
     */
@@ -46,8 +46,8 @@ object BackgroundHelper {
     * A configured custom background color for the control, if any
     */
   sBgColor: CSSColor
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addBackgroundColorStyles")(rm.asInstanceOf[js.Any], sBgColor.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def addBackgroundColorStyles(
+  ): Unit = js.native
+  def addBackgroundColorStyles(
     /**
     * The RenderManager
     */
@@ -60,14 +60,16 @@ object BackgroundHelper {
     * The configured custom background image for the control, if any
     */
   sBgImgUrl: URI
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addBackgroundColorStyles")(rm.asInstanceOf[js.Any], sBgColor.asInstanceOf[js.Any], sBgImgUrl.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  ): Unit = js.native
   
   /**
+    * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+    *
     * Renders an HTML tag into the given RenderManager which carries the background image which is either configured
     * and given or coming from the current theme. Should be called right after the opening root tag has been
     * completed, so this is the first child element inside the control.
     */
-  inline def renderBackgroundImageTag(
+  def renderBackgroundImageTag(
     /**
     * The RenderManager
     */
@@ -80,8 +82,8 @@ object BackgroundHelper {
     * A CSS class or an array of CSS classes to add to the element
     */
   vCssClass: String
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderBackgroundImageTag")(rm.asInstanceOf[js.Any], oControl.asInstanceOf[js.Any], vCssClass.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def renderBackgroundImageTag(
+  ): Unit = js.native
+  def renderBackgroundImageTag(
     /**
     * The RenderManager
     */
@@ -103,8 +105,8 @@ object BackgroundHelper {
     * Whether the background image should be repeated/tiled (or stretched)
     */
   bRepeat: Boolean
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderBackgroundImageTag")(rm.asInstanceOf[js.Any], oControl.asInstanceOf[js.Any], vCssClass.asInstanceOf[js.Any], sBgImgUrl.asInstanceOf[js.Any], bRepeat.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def renderBackgroundImageTag(
+  ): Unit = js.native
+  def renderBackgroundImageTag(
     /**
     * The RenderManager
     */
@@ -130,8 +132,8 @@ object BackgroundHelper {
     * The background image opacity, if any
     */
   fOpacity: float
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderBackgroundImageTag")(rm.asInstanceOf[js.Any], oControl.asInstanceOf[js.Any], vCssClass.asInstanceOf[js.Any], sBgImgUrl.asInstanceOf[js.Any], bRepeat.asInstanceOf[js.Any], fOpacity.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def renderBackgroundImageTag(
+  ): Unit = js.native
+  def renderBackgroundImageTag(
     /**
     * The RenderManager
     */
@@ -157,8 +159,8 @@ object BackgroundHelper {
     * The background image opacity, if any
     */
   fOpacity: float
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderBackgroundImageTag")(rm.asInstanceOf[js.Any], oControl.asInstanceOf[js.Any], vCssClass.asInstanceOf[js.Any], sBgImgUrl.asInstanceOf[js.Any], bRepeat.asInstanceOf[js.Any], fOpacity.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def renderBackgroundImageTag(
+  ): Unit = js.native
+  def renderBackgroundImageTag(
     /**
     * The RenderManager
     */
@@ -176,8 +178,8 @@ object BackgroundHelper {
     * also the other settings are ignored.
     */
   sBgImgUrl: URI
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderBackgroundImageTag")(rm.asInstanceOf[js.Any], oControl.asInstanceOf[js.Any], vCssClass.asInstanceOf[js.Any], sBgImgUrl.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def renderBackgroundImageTag(
+  ): Unit = js.native
+  def renderBackgroundImageTag(
     /**
     * The RenderManager
     */
@@ -199,8 +201,8 @@ object BackgroundHelper {
     * Whether the background image should be repeated/tiled (or stretched)
     */
   bRepeat: Boolean
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderBackgroundImageTag")(rm.asInstanceOf[js.Any], oControl.asInstanceOf[js.Any], vCssClass.asInstanceOf[js.Any], sBgImgUrl.asInstanceOf[js.Any], bRepeat.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def renderBackgroundImageTag(
+  ): Unit = js.native
+  def renderBackgroundImageTag(
     /**
     * The RenderManager
     */
@@ -226,8 +228,8 @@ object BackgroundHelper {
     * The background image opacity, if any
     */
   fOpacity: float
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderBackgroundImageTag")(rm.asInstanceOf[js.Any], oControl.asInstanceOf[js.Any], vCssClass.asInstanceOf[js.Any], sBgImgUrl.asInstanceOf[js.Any], bRepeat.asInstanceOf[js.Any], fOpacity.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def renderBackgroundImageTag(
+  ): Unit = js.native
+  def renderBackgroundImageTag(
     /**
     * The RenderManager
     */
@@ -253,8 +255,8 @@ object BackgroundHelper {
     * The background image opacity, if any
     */
   fOpacity: float
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderBackgroundImageTag")(rm.asInstanceOf[js.Any], oControl.asInstanceOf[js.Any], vCssClass.asInstanceOf[js.Any], sBgImgUrl.asInstanceOf[js.Any], bRepeat.asInstanceOf[js.Any], fOpacity.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def renderBackgroundImageTag(
+  ): Unit = js.native
+  def renderBackgroundImageTag(
     /**
     * The RenderManager
     */
@@ -267,8 +269,8 @@ object BackgroundHelper {
     * A CSS class or an array of CSS classes to add to the element
     */
   vCssClass: js.Array[String]
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderBackgroundImageTag")(rm.asInstanceOf[js.Any], oControl.asInstanceOf[js.Any], vCssClass.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def renderBackgroundImageTag(
+  ): Unit = js.native
+  def renderBackgroundImageTag(
     /**
     * The RenderManager
     */
@@ -290,8 +292,8 @@ object BackgroundHelper {
     * Whether the background image should be repeated/tiled (or stretched)
     */
   bRepeat: Boolean
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderBackgroundImageTag")(rm.asInstanceOf[js.Any], oControl.asInstanceOf[js.Any], vCssClass.asInstanceOf[js.Any], sBgImgUrl.asInstanceOf[js.Any], bRepeat.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def renderBackgroundImageTag(
+  ): Unit = js.native
+  def renderBackgroundImageTag(
     /**
     * The RenderManager
     */
@@ -317,8 +319,8 @@ object BackgroundHelper {
     * The background image opacity, if any
     */
   fOpacity: float
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderBackgroundImageTag")(rm.asInstanceOf[js.Any], oControl.asInstanceOf[js.Any], vCssClass.asInstanceOf[js.Any], sBgImgUrl.asInstanceOf[js.Any], bRepeat.asInstanceOf[js.Any], fOpacity.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def renderBackgroundImageTag(
+  ): Unit = js.native
+  def renderBackgroundImageTag(
     /**
     * The RenderManager
     */
@@ -344,8 +346,8 @@ object BackgroundHelper {
     * The background image opacity, if any
     */
   fOpacity: float
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderBackgroundImageTag")(rm.asInstanceOf[js.Any], oControl.asInstanceOf[js.Any], vCssClass.asInstanceOf[js.Any], sBgImgUrl.asInstanceOf[js.Any], bRepeat.asInstanceOf[js.Any], fOpacity.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def renderBackgroundImageTag(
+  ): Unit = js.native
+  def renderBackgroundImageTag(
     /**
     * The RenderManager
     */
@@ -363,8 +365,8 @@ object BackgroundHelper {
     * also the other settings are ignored.
     */
   sBgImgUrl: URI
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderBackgroundImageTag")(rm.asInstanceOf[js.Any], oControl.asInstanceOf[js.Any], vCssClass.asInstanceOf[js.Any], sBgImgUrl.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def renderBackgroundImageTag(
+  ): Unit = js.native
+  def renderBackgroundImageTag(
     /**
     * The RenderManager
     */
@@ -386,8 +388,8 @@ object BackgroundHelper {
     * Whether the background image should be repeated/tiled (or stretched)
     */
   bRepeat: Boolean
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderBackgroundImageTag")(rm.asInstanceOf[js.Any], oControl.asInstanceOf[js.Any], vCssClass.asInstanceOf[js.Any], sBgImgUrl.asInstanceOf[js.Any], bRepeat.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def renderBackgroundImageTag(
+  ): Unit = js.native
+  def renderBackgroundImageTag(
     /**
     * The RenderManager
     */
@@ -413,8 +415,8 @@ object BackgroundHelper {
     * The background image opacity, if any
     */
   fOpacity: float
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderBackgroundImageTag")(rm.asInstanceOf[js.Any], oControl.asInstanceOf[js.Any], vCssClass.asInstanceOf[js.Any], sBgImgUrl.asInstanceOf[js.Any], bRepeat.asInstanceOf[js.Any], fOpacity.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def renderBackgroundImageTag(
+  ): Unit = js.native
+  def renderBackgroundImageTag(
     /**
     * The RenderManager
     */
@@ -440,5 +442,9 @@ object BackgroundHelper {
     * The background image opacity, if any
     */
   fOpacity: float
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderBackgroundImageTag")(rm.asInstanceOf[js.Any], oControl.asInstanceOf[js.Any], vCssClass.asInstanceOf[js.Any], sBgImgUrl.asInstanceOf[js.Any], bRepeat.asInstanceOf[js.Any], fOpacity.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  ): Unit = js.native
+}
+object BackgroundHelper {
+  
+  inline def apply: BackgroundHelper = ^.asInstanceOf[js.Dynamic].selectDynamic("BackgroundHelper").asInstanceOf[BackgroundHelper]
 }

@@ -1,0 +1,14 @@
+package typings.csstoolsPostcssMediaMinmax
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+object distToLowerCaseAZMod {
+  
+  @JSImport("@csstools/postcss-media-minmax/dist/to-lower-case-a-z", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def toLowerCaseAZ(x: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toLowerCaseAZ")(x.asInstanceOf[js.Any]).asInstanceOf[String]
+}

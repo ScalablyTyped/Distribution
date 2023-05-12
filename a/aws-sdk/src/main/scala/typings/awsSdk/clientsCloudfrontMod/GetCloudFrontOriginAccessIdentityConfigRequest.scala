@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetCloudFrontOriginAccessIdentityConfigRequest extends StObject {
   
   /**
-    * The identity's ID. 
+    * The identity's ID.
     */
   var Id: String
 }

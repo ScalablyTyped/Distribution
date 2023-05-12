@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SourceControlResourceThemableDecorations extends StObject {
   
   /**
-    * The icon path for a specific
-    * {@link SourceControlResourceState source control resource state}.
-    */
+  		 * The icon path for a specific
+  		 * {@link SourceControlResourceState source control resource state}.
+  		 */
   val iconPath: js.UndefOr[String | Uri | ThemeIcon] = js.undefined
 }
 object SourceControlResourceThemableDecorations {

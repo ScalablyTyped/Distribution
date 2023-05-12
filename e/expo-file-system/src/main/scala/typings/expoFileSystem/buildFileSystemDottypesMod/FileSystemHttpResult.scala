@@ -7,10 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait FileSystemHttpResult extends StObject {
   
+  /**
+    * An object containing all the HTTP response header fields and their values for the download network request.
+    * The keys and values of the object are the header names and values respectively.
+    */
   var headers: Record[String, String]
   
   var mimeType: String | Null
   
+  /**
+    * The HTTP response status code for the download network request.
+    */
   var status: Double
 }
 object FileSystemHttpResult {

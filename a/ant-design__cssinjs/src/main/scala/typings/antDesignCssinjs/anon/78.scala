@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.BorderLeftStyle
+import typings.csstype.mod.Property.TransitionDuration
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,11 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `78` extends StObject {
   
   var value: js.UndefOr[
-    BorderLeftStyle | (js.Array[
+    TransitionDuration[String] | (js.Array[
       (Extract[
-        js.UndefOr[BorderLeftStyle | js.Array[NonNullable[js.UndefOr[BorderLeftStyle]]]], 
+        js.UndefOr[
+          TransitionDuration[String] | js.Array[NonNullable[js.UndefOr[TransitionDuration[String]]]]
+        ], 
         String
-      ]) | NonNullable[js.UndefOr[BorderLeftStyle]]
+      ]) | NonNullable[js.UndefOr[TransitionDuration[String]]]
     ])
   ] = js.native
 }

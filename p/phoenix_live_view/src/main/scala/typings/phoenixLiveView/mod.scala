@@ -197,6 +197,9 @@ object mod {
     
     def enableProfiling(): Unit = js.native
     
+    def execJS(el: HTMLElement, encodedJS: String): Unit = js.native
+    def execJS(el: HTMLElement, encodedJS: String, eventType: String): Unit = js.native
+    
     def getLatencySim(): Double | Null = js.native
     
     def getSocket(): Socket = js.native

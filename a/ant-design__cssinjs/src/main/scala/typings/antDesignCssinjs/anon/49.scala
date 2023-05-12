@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.OverscrollBehaviorBlock
+import typings.csstype.mod.Property.AnimationComposition
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,13 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `49` extends StObject {
   
   var value: js.UndefOr[
-    OverscrollBehaviorBlock | (js.Array[
+    AnimationComposition | (js.Array[
       (Extract[
-        js.UndefOr[
-          OverscrollBehaviorBlock | js.Array[NonNullable[js.UndefOr[OverscrollBehaviorBlock]]]
-        ], 
+        js.UndefOr[AnimationComposition | js.Array[NonNullable[js.UndefOr[AnimationComposition]]]], 
         String
-      ]) | NonNullable[js.UndefOr[OverscrollBehaviorBlock]]
+      ]) | NonNullable[js.UndefOr[AnimationComposition]]
     ])
   ] = js.native
 }

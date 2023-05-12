@@ -6,9 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @js.native
 sealed trait CollisionBehavior extends StObject
-/**
-  * Available only in the v=beta channel: https://goo.gle/3oAthT3.
-  */
 @JSGlobal("google.maps.CollisionBehavior")
 @js.native
 object CollisionBehavior extends StObject {

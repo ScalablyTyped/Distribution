@@ -35,7 +35,6 @@ object certificateProvider {
   
   /**
     * The types of errors that can be presented to the user through the requestPin function.
-    * @enum
     */
   object PinRequestErrorType {
     
@@ -66,7 +65,6 @@ object certificateProvider {
   
   /**
     * The type of code being requested by the extension with requestPin function.
-    * @enum
     */
   object PinRequestType {
     

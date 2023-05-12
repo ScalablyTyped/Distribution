@@ -15,9 +15,12 @@ trait AccessPackageAssignmentRequest
     */
   var accessPackage: js.UndefOr[NullableOption[AccessPackage]] = js.undefined
   
+  // Answers provided by the requestor to accessPackageQuestions asked of them at the time of request.
+  var answers: js.UndefOr[NullableOption[js.Array[AccessPackageAnswer]]] = js.undefined
+  
   /**
-    * For a requestType of UserAdd or AdminAdd, this is an access package assignment requested to be created. For a
-    * requestType of UserRemove, AdminRemove or SystemRemove, this has the id property of an existing assignment to be
+    * For a requestType of userAdd or adminAdd, this is an access package assignment requested to be created. For a
+    * requestType of userRemove, adminRemove or systemRemove, this has the id property of an existing assignment to be
     * removed. Supports $expand.
     */
   var assignment: js.UndefOr[NullableOption[AccessPackageAssignment]] = js.undefined
@@ -36,9 +39,10 @@ trait AccessPackageAssignmentRequest
   var createdDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
-    * The type of the request. The possible values are: notSpecified, userAdd, userUpdate, userRemove, adminAdd, adminUpdate,
-    * adminRemove, systemAdd, systemUpdate, systemRemove, onBehalfAdd, unknownFutureValue. A request from the user themselves
-    * would have requestType of UserAdd or UserRemove. This property cannot be changed once set.
+    * The type of the request. The possible values are: notSpecified, userAdd, UserExtend, userUpdate, userRemove, adminAdd,
+    * adminUpdate, adminRemove, systemAdd, systemUpdate, systemRemove, onBehalfAdd (not supported), unknownFutureValue. A
+    * request from the user themselves would have requestType of userAdd, userUpdate or userRemove. This property cannot be
+    * changed once set.
     */
   var requestType: js.UndefOr[NullableOption[AccessPackageRequestType]] = js.undefined
   
@@ -72,6 +76,14 @@ object AccessPackageAssignmentRequest {
     inline def setAccessPackageNull: Self = StObject.set(x, "accessPackage", null)
     
     inline def setAccessPackageUndefined: Self = StObject.set(x, "accessPackage", js.undefined)
+    
+    inline def setAnswers(value: NullableOption[js.Array[AccessPackageAnswer]]): Self = StObject.set(x, "answers", value.asInstanceOf[js.Any])
+    
+    inline def setAnswersNull: Self = StObject.set(x, "answers", null)
+    
+    inline def setAnswersUndefined: Self = StObject.set(x, "answers", js.undefined)
+    
+    inline def setAnswersVarargs(value: AccessPackageAnswer*): Self = StObject.set(x, "answers", js.Array(value*))
     
     inline def setAssignment(value: NullableOption[AccessPackageAssignment]): Self = StObject.set(x, "assignment", value.asInstanceOf[js.Any])
     

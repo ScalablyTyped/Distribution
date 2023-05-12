@@ -1,6 +1,7 @@
 package typings.openui5
 
 import org.scalablytyped.runtime.Shortcut
+import typings.openui5.sapMLibraryMod.DynamicDateRangeValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -52,9 +53,9 @@ object sapMDynamicDateUtilMod extends Shortcut {
     def getStandardKeys(): js.Array[String]
     
     /**
-      * Parses a string to an array of objects in the DynamicDateRange's value format. Uses the provided formatter.
+      * Parses a string to an array of objects of type `sap.m.DynamicDateRangeValue`. Uses the provided formatter.
       *
-      * @returns An array of value objects in the DynamicDateRange's value format
+      * @returns An array of `sap.m.DynamicDateRangeValue` objects
       */
     def parse(
       /**
@@ -68,8 +69,8 @@ object sapMDynamicDateUtilMod extends Shortcut {
       /**
       * array of option names
       */
-    aOptionKeys: js.Array[Any]
-    ): js.Array[js.Object]
+    aOptionKeys: js.Array[String]
+    ): js.Array[DynamicDateRangeValue]
     
     /**
       * Returns a date in machine timezone setting, removing the offset added by the application configuration.
@@ -86,10 +87,16 @@ object sapMDynamicDateUtilMod extends Shortcut {
       *
       * @returns An array of two date objects - start and end date
       */
-    def toDates(/**
+    def toDates(
+      /**
       * The provided value
       */
-    oValue: String): js.Array[/* was: sap.ui.core.date.UniversalDate */ Any]
+    oValue: String,
+      /**
+      * The type of calendar week numbering
+      */
+    sCalendarWeekNumbering: String
+    ): js.Array[/* was: sap.ui.core.date.UniversalDate */ Any]
   }
   object DynamicDateUtil {
     
@@ -98,11 +105,11 @@ object sapMDynamicDateUtilMod extends Shortcut {
       getAllOptionKeys: () => js.Array[String],
       getOption: String => typings.openui5.sapMDynamicDateOptionMod.default,
       getStandardKeys: () => js.Array[String],
-      parse: (String, typings.openui5.sapMDynamicDateFormatMod.default, js.Array[Any]) => js.Array[js.Object],
+      parse: (String, typings.openui5.sapMDynamicDateFormatMod.default, js.Array[String]) => js.Array[DynamicDateRangeValue],
       removeTimezoneOffset: js.Date => js.Date,
-      toDates: String => js.Array[/* was: sap.ui.core.date.UniversalDate */ Any]
+      toDates: (String, String) => js.Array[/* was: sap.ui.core.date.UniversalDate */ Any]
     ): DynamicDateUtil = {
-      val __obj = js.Dynamic.literal(addOption = js.Any.fromFunction1(addOption), getAllOptionKeys = js.Any.fromFunction0(getAllOptionKeys), getOption = js.Any.fromFunction1(getOption), getStandardKeys = js.Any.fromFunction0(getStandardKeys), parse = js.Any.fromFunction3(parse), removeTimezoneOffset = js.Any.fromFunction1(removeTimezoneOffset), toDates = js.Any.fromFunction1(toDates))
+      val __obj = js.Dynamic.literal(addOption = js.Any.fromFunction1(addOption), getAllOptionKeys = js.Any.fromFunction0(getAllOptionKeys), getOption = js.Any.fromFunction1(getOption), getStandardKeys = js.Any.fromFunction0(getStandardKeys), parse = js.Any.fromFunction3(parse), removeTimezoneOffset = js.Any.fromFunction1(removeTimezoneOffset), toDates = js.Any.fromFunction2(toDates))
       __obj.asInstanceOf[DynamicDateUtil]
     }
     
@@ -118,12 +125,12 @@ object sapMDynamicDateUtilMod extends Shortcut {
       inline def setGetStandardKeys(value: () => js.Array[String]): Self = StObject.set(x, "getStandardKeys", js.Any.fromFunction0(value))
       
       inline def setParse(
-        value: (String, typings.openui5.sapMDynamicDateFormatMod.default, js.Array[Any]) => js.Array[js.Object]
+        value: (String, typings.openui5.sapMDynamicDateFormatMod.default, js.Array[String]) => js.Array[DynamicDateRangeValue]
       ): Self = StObject.set(x, "parse", js.Any.fromFunction3(value))
       
       inline def setRemoveTimezoneOffset(value: js.Date => js.Date): Self = StObject.set(x, "removeTimezoneOffset", js.Any.fromFunction1(value))
       
-      inline def setToDates(value: String => js.Array[/* was: sap.ui.core.date.UniversalDate */ Any]): Self = StObject.set(x, "toDates", js.Any.fromFunction1(value))
+      inline def setToDates(value: (String, String) => js.Array[/* was: sap.ui.core.date.UniversalDate */ Any]): Self = StObject.set(x, "toDates", js.Any.fromFunction2(value))
     }
   }
   

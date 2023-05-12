@@ -1,6 +1,7 @@
 package typings.firebaseFirestore.distLiteFirestoreTestUnitSpecsSpecTestRunnerMod
 
 import typings.firebaseFirestore.firebaseFirestoreBooleans.`true`
+import typings.std.DocumentVisibilityState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,9 +12,7 @@ trait SpecClientState extends StObject {
   var primary: js.UndefOr[`true`] = js.undefined
   
   /** The visibility state of the browser tab running the client. */
-  var visibility: js.UndefOr[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VisibilityState */ Any
-  ] = js.undefined
+  var visibility: js.UndefOr[DocumentVisibilityState] = js.undefined
 }
 object SpecClientState {
   
@@ -29,9 +28,7 @@ object SpecClientState {
     
     inline def setPrimaryUndefined: Self = StObject.set(x, "primary", js.undefined)
     
-    inline def setVisibility(
-      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VisibilityState */ Any
-    ): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
+    inline def setVisibility(value: DocumentVisibilityState): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
     
     inline def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
   }

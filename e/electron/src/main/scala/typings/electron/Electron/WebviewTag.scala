@@ -4,6 +4,7 @@ import typings.electron.electronStrings.`console-message`
 import typings.electron.electronStrings.`context-menu`
 import typings.electron.electronStrings.`devtools-closed`
 import typings.electron.electronStrings.`devtools-focused`
+import typings.electron.electronStrings.`devtools-open-url`
 import typings.electron.electronStrings.`devtools-opened`
 import typings.electron.electronStrings.`did-attach`
 import typings.electron.electronStrings.`did-change-theme-color`
@@ -25,7 +26,6 @@ import typings.electron.electronStrings.`leave-html-full-screen`
 import typings.electron.electronStrings.`load-commit`
 import typings.electron.electronStrings.`media-paused`
 import typings.electron.electronStrings.`media-started-playing`
-import typings.electron.electronStrings.`new-window`
 import typings.electron.electronStrings.`page-favicon-updated`
 import typings.electron.electronStrings.`page-title-updated`
 import typings.electron.electronStrings.`plugin-crashed`
@@ -97,14 +97,14 @@ import typings.electron.electronStrings.paste
 import typings.electron.electronStrings.pause
 import typings.electron.electronStrings.play
 import typings.electron.electronStrings.playing
-import typings.electron.electronStrings.pointercancel
-import typings.electron.electronStrings.pointerdown
+import typings.electron.electronStrings.pointercancel_
+import typings.electron.electronStrings.pointerdown_
 import typings.electron.electronStrings.pointerenter
 import typings.electron.electronStrings.pointerleave
-import typings.electron.electronStrings.pointermove
+import typings.electron.electronStrings.pointermove_
 import typings.electron.electronStrings.pointerout
 import typings.electron.electronStrings.pointerover
-import typings.electron.electronStrings.pointerup
+import typings.electron.electronStrings.pointerup_
 import typings.electron.electronStrings.progress
 import typings.electron.electronStrings.ratechange
 import typings.electron.electronStrings.reset
@@ -122,10 +122,10 @@ import typings.electron.electronStrings.submit
 import typings.electron.electronStrings.suspend
 import typings.electron.electronStrings.timeupdate
 import typings.electron.electronStrings.toggle
-import typings.electron.electronStrings.touchcancel
-import typings.electron.electronStrings.touchend
-import typings.electron.electronStrings.touchmove
-import typings.electron.electronStrings.touchstart
+import typings.electron.electronStrings.touchcancel_
+import typings.electron.electronStrings.touchend_
+import typings.electron.electronStrings.touchmove_
+import typings.electron.electronStrings.touchstart_
 import typings.electron.electronStrings.transitioncancel
 import typings.electron.electronStrings.transitionend
 import typings.electron.electronStrings.transitionrun
@@ -458,6 +458,18 @@ trait WebviewTag
   def addEventListener_devtoolsopened(event: `devtools-opened`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
   @JSName("addEventListener")
   def addEventListener_devtoolsopened(event: `devtools-opened`, listener: js.Function1[/* event */ Event, Unit], useCapture: Boolean): this.type = js.native
+  /**
+    * Emitted when a link is clicked in DevTools or 'Open in new tab' is selected for
+    * a link in its context menu.
+    */
+  @JSName("addEventListener")
+  def addEventListener_devtoolsopenurl(event: `devtools-open-url`, listener: js.Function1[/* event */ DevtoolsOpenUrlEvent, Unit]): this.type = js.native
+  @JSName("addEventListener")
+  def addEventListener_devtoolsopenurl(
+    event: `devtools-open-url`,
+    listener: js.Function1[/* event */ DevtoolsOpenUrlEvent, Unit],
+    useCapture: Boolean
+  ): this.type = js.native
   /**
     * Fired when attached to the embedder web contents.
     */
@@ -1003,15 +1015,6 @@ trait WebviewTag
     useCapture: Boolean
   ): Unit = js.native
   /**
-    * Fired when the guest page attempts to open a new browser window.
-    *
-    * The following example code opens the new url in system's default browser.
-    */
-  @JSName("addEventListener")
-  def addEventListener_newwindow(event: `new-window`, listener: js.Function1[/* event */ NewWindowEvent, Unit]): this.type = js.native
-  @JSName("addEventListener")
-  def addEventListener_newwindow(event: `new-window`, listener: js.Function1[/* event */ NewWindowEvent, Unit], useCapture: Boolean): this.type = js.native
-  /**
     * Fired when page receives favicon urls.
     */
   @JSName("addEventListener")
@@ -1082,23 +1085,23 @@ trait WebviewTag
   ): this.type = js.native
   @JSName("addEventListener")
   def addEventListener_pointercancel(
-    `type`: pointercancel,
+    `type`: pointercancel_,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ PointerEvent, Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_pointercancel(
-    `type`: pointercancel,
+    `type`: pointercancel_,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ PointerEvent, Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_pointerdown(
-    `type`: pointerdown,
+    `type`: pointerdown_,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ PointerEvent, Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_pointerdown(
-    `type`: pointerdown,
+    `type`: pointerdown_,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ PointerEvent, Any],
     useCapture: Boolean
   ): Unit = js.native
@@ -1126,12 +1129,12 @@ trait WebviewTag
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_pointermove(
-    `type`: pointermove,
+    `type`: pointermove_,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ PointerEvent, Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_pointermove(
-    `type`: pointermove,
+    `type`: pointermove_,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ PointerEvent, Any],
     useCapture: Boolean
   ): Unit = js.native
@@ -1155,10 +1158,10 @@ trait WebviewTag
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_pointerup(`type`: pointerup, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ PointerEvent, Any]): Unit = js.native
+  def addEventListener_pointerup(`type`: pointerup_, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ PointerEvent, Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_pointerup(
-    `type`: pointerup,
+    `type`: pointerup_,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ PointerEvent, Any],
     useCapture: Boolean
   ): Unit = js.native
@@ -1341,34 +1344,34 @@ trait WebviewTag
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_touchcancel(`type`: touchcancel, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ TouchEvent, Any]): Unit = js.native
+  def addEventListener_touchcancel(`type`: touchcancel_, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ TouchEvent, Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_touchcancel(
-    `type`: touchcancel,
+    `type`: touchcancel_,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ TouchEvent, Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_touchend(`type`: touchend, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ TouchEvent, Any]): Unit = js.native
+  def addEventListener_touchend(`type`: touchend_, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ TouchEvent, Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_touchend(
-    `type`: touchend,
+    `type`: touchend_,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ TouchEvent, Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_touchmove(`type`: touchmove, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ TouchEvent, Any]): Unit = js.native
+  def addEventListener_touchmove(`type`: touchmove_, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ TouchEvent, Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_touchmove(
-    `type`: touchmove,
+    `type`: touchmove_,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ TouchEvent, Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_touchstart(`type`: touchstart, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ TouchEvent, Any]): Unit = js.native
+  def addEventListener_touchstart(`type`: touchstart_, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ TouchEvent, Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_touchstart(
-    `type`: touchstart,
+    `type`: touchstart_,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ TouchEvent, Any],
     useCapture: Boolean
   ): Unit = js.native
@@ -1512,7 +1515,7 @@ trait WebviewTag
     * or updating the `window.location.hash`. Use `did-navigate-in-page` event for
     * this purpose.
     *
-    * Calling `event.preventDefault()` does __NOT__ have any effect.
+    * Calling `event.preventDefault()` does **NOT** have any effect.
     */
   @JSName("addEventListener")
   def addEventListener_willnavigate(event: `will-navigate`, listener: js.Function1[/* event */ WillNavigateEvent, Unit]): this.type = js.native
@@ -2088,6 +2091,8 @@ trait WebviewTag
   @JSName("removeEventListener")
   def removeEventListener_devtoolsopened(event: `devtools-opened`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
   @JSName("removeEventListener")
+  def removeEventListener_devtoolsopenurl(event: `devtools-open-url`, listener: js.Function1[/* event */ DevtoolsOpenUrlEvent, Unit]): this.type = js.native
+  @JSName("removeEventListener")
   def removeEventListener_didattach(event: `did-attach`, listener: js.Function1[/* event */ Event, Unit]): this.type = js.native
   @JSName("removeEventListener")
   def removeEventListener_didchangethemecolor(
@@ -2453,8 +2458,6 @@ trait WebviewTag
     useCapture: Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_newwindow(event: `new-window`, listener: js.Function1[/* event */ NewWindowEvent, Unit]): this.type = js.native
-  @JSName("removeEventListener")
   def removeEventListener_pagefaviconupdated(event: `page-favicon-updated`, listener: js.Function1[/* event */ PageFaviconUpdatedEvent, Unit]): this.type = js.native
   @JSName("removeEventListener")
   def removeEventListener_pagetitleupdated(event: `page-title-updated`, listener: js.Function1[/* event */ PageTitleUpdatedEvent, Unit]): this.type = js.native
@@ -2497,23 +2500,23 @@ trait WebviewTag
   def removeEventListener_plugincrashed(event: `plugin-crashed`, listener: js.Function1[/* event */ PluginCrashedEvent, Unit]): this.type = js.native
   @JSName("removeEventListener")
   def removeEventListener_pointercancel(
-    `type`: pointercancel,
+    `type`: pointercancel_,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ PointerEvent, Any]
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_pointercancel(
-    `type`: pointercancel,
+    `type`: pointercancel_,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ PointerEvent, Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_pointerdown(
-    `type`: pointerdown,
+    `type`: pointerdown_,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ PointerEvent, Any]
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_pointerdown(
-    `type`: pointerdown,
+    `type`: pointerdown_,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ PointerEvent, Any],
     useCapture: Boolean
   ): Unit = js.native
@@ -2541,12 +2544,12 @@ trait WebviewTag
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_pointermove(
-    `type`: pointermove,
+    `type`: pointermove_,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ PointerEvent, Any]
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_pointermove(
-    `type`: pointermove,
+    `type`: pointermove_,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ PointerEvent, Any],
     useCapture: Boolean
   ): Unit = js.native
@@ -2570,10 +2573,10 @@ trait WebviewTag
     useCapture: Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_pointerup(`type`: pointerup, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ PointerEvent, Any]): Unit = js.native
+  def removeEventListener_pointerup(`type`: pointerup_, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ PointerEvent, Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_pointerup(
-    `type`: pointerup,
+    `type`: pointerup_,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ PointerEvent, Any],
     useCapture: Boolean
   ): Unit = js.native
@@ -2756,34 +2759,34 @@ trait WebviewTag
     useCapture: Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_touchcancel(`type`: touchcancel, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ TouchEvent, Any]): Unit = js.native
+  def removeEventListener_touchcancel(`type`: touchcancel_, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ TouchEvent, Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_touchcancel(
-    `type`: touchcancel,
+    `type`: touchcancel_,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ TouchEvent, Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_touchend(`type`: touchend, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ TouchEvent, Any]): Unit = js.native
+  def removeEventListener_touchend(`type`: touchend_, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ TouchEvent, Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_touchend(
-    `type`: touchend,
+    `type`: touchend_,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ TouchEvent, Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_touchmove(`type`: touchmove, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ TouchEvent, Any]): Unit = js.native
+  def removeEventListener_touchmove(`type`: touchmove_, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ TouchEvent, Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_touchmove(
-    `type`: touchmove,
+    `type`: touchmove_,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ TouchEvent, Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_touchstart(`type`: touchstart, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ TouchEvent, Any]): Unit = js.native
+  def removeEventListener_touchstart(`type`: touchstart_, listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ TouchEvent, Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_touchstart(
-    `type`: touchstart,
+    `type`: touchstart_,
     listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ TouchEvent, Any],
     useCapture: Boolean
   ): Unit = js.native

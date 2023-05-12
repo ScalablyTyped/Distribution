@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MetricDefinitionRequest extends StObject {
   
   /**
-    * Use this field only if you are sending the metric to CloudWatch. This field is a map of field paths to dimension names. It defines the dimensions to associate with this metric in CloudWatch. Valid values for the entries in this field are the following:    "metadata.pageId": "PageId"     "metadata.browserName": "BrowserName"     "metadata.deviceType": "DeviceType"     "metadata.osName": "OSName"     "metadata.countryCode": "CountryCode"     "event_details.fileType": "FileType"     &lt;p&gt; All dimensions listed in this field must also be included in &lt;code&gt;EventPattern&lt;/code&gt;.&lt;/p&gt; 
+    * Use this field only if you are sending the metric to CloudWatch. This field is a map of field paths to dimension names. It defines the dimensions to associate with this metric in CloudWatch. For extended metrics, valid values for the entries in this field are the following:    "metadata.pageId": "PageId"     "metadata.browserName": "BrowserName"     "metadata.deviceType": "DeviceType"     "metadata.osName": "OSName"     "metadata.countryCode": "CountryCode"     "event_details.fileType": "FileType"     For both extended metrics and custom metrics, all dimensions listed in this field must also be included in EventPattern.
     */
   var DimensionKeys: js.UndefOr[DimensionKeysMap] = js.undefined
   
@@ -17,9 +17,14 @@ trait MetricDefinitionRequest extends StObject {
   var EventPattern: js.UndefOr[typings.awsSdk.clientsRumMod.EventPattern] = js.undefined
   
   /**
-    * The name for the metric that is defined in this structure. Valid values are the following:    PerformanceNavigationDuration     PerformanceResourceDuration      NavigationSatisfiedTransaction     NavigationToleratedTransaction     NavigationFrustratedTransaction     WebVitalsCumulativeLayoutShift     WebVitalsFirstInputDelay     WebVitalsLargestContentfulPaint     JsErrorCount     HttpErrorCount     SessionCount   
+    * The name for the metric that is defined in this structure. For custom metrics, you can specify any name that you like. For extended metrics, valid values are the following:    PerformanceNavigationDuration     PerformanceResourceDuration      NavigationSatisfiedTransaction     NavigationToleratedTransaction     NavigationFrustratedTransaction     WebVitalsCumulativeLayoutShift     WebVitalsFirstInputDelay     WebVitalsLargestContentfulPaint     JsErrorCount     HttpErrorCount     SessionCount   
     */
   var Name: MetricName
+  
+  /**
+    * If this structure is for a custom metric instead of an extended metrics, use this parameter to define the metric namespace for that custom metric. Do not specify this parameter if this structure is for an extended metric. You cannot use any string that starts with AWS/ for your namespace.
+    */
+  var Namespace: js.UndefOr[typings.awsSdk.clientsRumMod.Namespace] = js.undefined
   
   /**
     * The CloudWatch metric unit to use for this metric. If you omit this field, the metric is recorded with no unit.
@@ -50,6 +55,10 @@ object MetricDefinitionRequest {
     inline def setEventPatternUndefined: Self = StObject.set(x, "EventPattern", js.undefined)
     
     inline def setName(value: MetricName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    
+    inline def setNamespace(value: Namespace): Self = StObject.set(x, "Namespace", value.asInstanceOf[js.Any])
+    
+    inline def setNamespaceUndefined: Self = StObject.set(x, "Namespace", js.undefined)
     
     inline def setUnitLabel(value: UnitLabel): Self = StObject.set(x, "UnitLabel", value.asInstanceOf[js.Any])
     

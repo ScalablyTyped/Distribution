@@ -41,12 +41,6 @@ trait BaseWidgetExport extends StObject {
   var printingEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Specifies the URL of the server-side proxy that streams the resulting file to the end user to enable exporting in the Safari browser.
-    * @deprecated Since v10, Safari browser supports API for saving files, and this property is no longer required.
-    */
-  var proxyUrl: js.UndefOr[String] = js.undefined
-  
-  /**
     * A function that renders SVG markup on the HTML canvas. Required to export custom SVG elements (for example, markerTemplate).
     */
   var svgToCanvas: js.UndefOr[
@@ -88,10 +82,6 @@ object BaseWidgetExport {
     inline def setPrintingEnabled(value: Boolean): Self = StObject.set(x, "printingEnabled", value.asInstanceOf[js.Any])
     
     inline def setPrintingEnabledUndefined: Self = StObject.set(x, "printingEnabled", js.undefined)
-    
-    inline def setProxyUrl(value: String): Self = StObject.set(x, "proxyUrl", value.asInstanceOf[js.Any])
-    
-    inline def setProxyUrlUndefined: Self = StObject.set(x, "proxyUrl", js.undefined)
     
     inline def setSvgToCanvas(value: (/* svg */ SVGElement, /* canvas */ HTMLCanvasElement) => PromiseLike[Unit]): Self = StObject.set(x, "svgToCanvas", js.Any.fromFunction2(value))
     

@@ -53,7 +53,7 @@ import typings.blueprintjsCore.blueprintjsCoreStrings.vertical
 import typings.blueprintjsCore.blueprintjsCoreStrings.yes
 import typings.blueprintjsCore.libEsmCommonIntentMod.Intent
 import typings.blueprintjsCore.libEsmCommonPropsMod.MaybeElement
-import typings.blueprintjsIcons.libEsmGenerated16pxBlueprintIcons16Mod.BlueprintIcons16Id
+import typings.blueprintjsIcons.libEsmGeneratedIcons16pxBlueprintIcons16Mod.BlueprintIcons16Id
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
 import typings.react.mod.AriaRole
@@ -69,6 +69,7 @@ import typings.react.mod.FocusEvent
 import typings.react.mod.FocusEventHandler
 import typings.react.mod.FormEvent
 import typings.react.mod.FormEventHandler
+import typings.react.mod.HTMLAttributes
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.KeyboardEventHandler
 import typings.react.mod.MouseEvent
@@ -91,6 +92,7 @@ import typings.react.mod.WheelEventHandler
 import typings.std.Element
 import typings.std.Event
 import typings.std.HTMLElement
+import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -204,6 +206,8 @@ trait IconPropsOmitHTMLAttribut extends StObject {
   
   var autoCorrect: js.UndefOr[String] = js.undefined
   
+  var autoFocus: js.UndefOr[Boolean] = js.undefined
+  
   var autoSave: js.UndefOr[String] = js.undefined
   
   /** This component does not support custom children. Use the `icon` prop. */
@@ -219,6 +223,8 @@ trait IconPropsOmitHTMLAttribut extends StObject {
     * surrounding text.
     */
   var color: js.UndefOr[String] = js.undefined
+  
+  var content: js.UndefOr[String] = js.undefined
   
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
   
@@ -459,9 +465,13 @@ trait IconPropsOmitHTMLAttribut extends StObject {
   
   var radioGroup: js.UndefOr[String] = js.undefined
   
+  var rel: js.UndefOr[String] = js.undefined
+  
   var resource: js.UndefOr[String] = js.undefined
   
   var results: js.UndefOr[Double] = js.undefined
+  
+  var rev: js.UndefOr[String] = js.undefined
   
   var role: js.UndefOr[AriaRole] = js.undefined
   
@@ -486,6 +496,9 @@ trait IconPropsOmitHTMLAttribut extends StObject {
   
   var suppressHydrationWarning: js.UndefOr[Boolean] = js.undefined
   
+  /** Props to apply to the `SVG` element */
+  var svgProps: js.UndefOr[HTMLAttributes[SVGElement]] = js.undefined
+  
   var tabIndex: js.UndefOr[Double] = js.undefined
   
   /**
@@ -494,7 +507,7 @@ trait IconPropsOmitHTMLAttribut extends StObject {
     * @default "span"
     */
   var tagName: js.UndefOr[
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.blueprintjsCore.blueprintjsCoreStrings.a, typings.blueprintjsCore.blueprintjsCoreStrings.abbr, typings.blueprintjsCore.blueprintjsCoreStrings.address */ Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177, starting with typings.blueprintjsCore.blueprintjsCoreStrings.a, typings.blueprintjsCore.blueprintjsCoreStrings.abbr, typings.blueprintjsCore.blueprintjsCoreStrings.address */ Any
   ] = js.undefined
   
   /**
@@ -503,7 +516,8 @@ trait IconPropsOmitHTMLAttribut extends StObject {
     * aural feedback.
     *
     * If this value is nullish, `false`, or an empty string, the component will assume
-    * that the icon is decorative and `aria-hidden="true"` will be applied.
+    * that the icon is decorative and `aria-hidden="true"` will be applied (can be overridden
+    * by manually passing `aria-hidden` prop).
     *
     * @see https://www.w3.org/WAI/tutorials/images/decorative/
     */
@@ -737,6 +751,10 @@ object IconPropsOmitHTMLAttribut {
     
     inline def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
     
+    inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+    
+    inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+    
     inline def setAutoSave(value: String): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
     
     inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
@@ -753,9 +771,13 @@ object IconPropsOmitHTMLAttribut {
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    
     inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
     
     inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+    
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
     inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
     
@@ -1189,6 +1211,10 @@ object IconPropsOmitHTMLAttribut {
     
     inline def setRadioGroupUndefined: Self = StObject.set(x, "radioGroup", js.undefined)
     
+    inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+    
+    inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+    
     inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
@@ -1196,6 +1222,10 @@ object IconPropsOmitHTMLAttribut {
     inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
     inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+    
+    inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+    
+    inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
     
     inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
@@ -1229,12 +1259,16 @@ object IconPropsOmitHTMLAttribut {
     
     inline def setSuppressHydrationWarningUndefined: Self = StObject.set(x, "suppressHydrationWarning", js.undefined)
     
+    inline def setSvgProps(value: HTMLAttributes[SVGElement]): Self = StObject.set(x, "svgProps", value.asInstanceOf[js.Any])
+    
+    inline def setSvgPropsUndefined: Self = StObject.set(x, "svgProps", js.undefined)
+    
     inline def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
     
     inline def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
     
     inline def setTagName(
-      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.blueprintjsCore.blueprintjsCoreStrings.a, typings.blueprintjsCore.blueprintjsCoreStrings.abbr, typings.blueprintjsCore.blueprintjsCoreStrings.address */ Any
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177, starting with typings.blueprintjsCore.blueprintjsCoreStrings.a, typings.blueprintjsCore.blueprintjsCoreStrings.abbr, typings.blueprintjsCore.blueprintjsCoreStrings.address */ Any
     ): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
     
     inline def setTagNameUndefined: Self = StObject.set(x, "tagName", js.undefined)

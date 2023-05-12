@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "postcss-color-functional-notation" : "4.2.4"
+      "postcss-color-functional-notation" : "5.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "postcss-color-functional-notation" : "4.2.4"
+      "postcss-color-functional-notation" : "5.0.2"
     }
   ],
   "compile-devDependencies" : [

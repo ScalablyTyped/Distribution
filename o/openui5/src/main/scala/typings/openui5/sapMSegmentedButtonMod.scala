@@ -1,7 +1,7 @@
 package typings.openui5
 
 import typings.openui5.anon.ButtonId
-import typings.openui5.anon.`20`
+import typings.openui5.anon.`26`
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapMLibraryMod.IOverflowToolbarContent
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
@@ -12,6 +12,8 @@ import typings.openui5.sapUiCoreLibraryMod.ID
 import typings.openui5.sapUiCoreLibraryMod.IFormContent
 import typings.openui5.sapUiCoreLibraryMod.TextDirection
 import typings.openui5.sapUiCoreLibraryMod.URI
+import typings.std.Object
+import typings.std.PropertyKey
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -65,6 +67,27 @@ object sapMSegmentedButtonMod {
     
     /* CompleteClass */
     var __implements__sap_ui_core_IFormContent: Boolean = js.native
+    
+    /** The initial value of Object.prototype.constructor is the standard built-in Object constructor. */
+    /* standard es5 */
+    /* CompleteClass */
+    var constructor: js.Function = js.native
+    
+    /**
+      * Determines whether an object has a property with the specified name.
+      * @param v A property name.
+      */
+    /* standard es5 */
+    /* CompleteClass */
+    override def hasOwnProperty(v: PropertyKey): Boolean = js.native
+    
+    /**
+      * Determines whether a specified property is enumerable.
+      * @param v A property name.
+      */
+    /* standard es5 */
+    /* CompleteClass */
+    override def propertyIsEnumerable(v: PropertyKey): Boolean = js.native
   }
   /* static members */
   object default {
@@ -138,7 +161,10 @@ object sapMSegmentedButtonMod {
   trait SegmentedButton
     extends typings.openui5.sapUiCoreControlMod.default
        with IFormContent
-       with IOverflowToolbarContent {
+       with IOverflowToolbarContent
+       with /* was: sap.m.IToolbarInteractiveControl */ Object {
+    
+    var __implements__sap_m_IToolbarInteractiveControl: Boolean = js.native
     
     def addAriaDescribedBy(
       /**
@@ -369,6 +395,106 @@ object sapMSegmentedButtonMod {
       *
       * @returns The created Button
       */
+    def createButton(/**
+      * Defines the title text of the newly created Button
+      */
+    sText: String): typings.openui5.sapMButtonMod.default = js.native
+    def createButton(
+      /**
+      * Defines the title text of the newly created Button
+      */
+    sText: String,
+      /**
+      * Icon to be displayed as graphical element within the Button. Density related image will be loaded if
+      * image with density awareness name in format [imageName]@[densityValue].[extension] is provided.
+      */
+    sURI: Unit,
+      /**
+      * Enables the control. Buttons that are disabled have other colors than enabled ones, depending on custom
+      * settings.
+      */
+    bEnabled: Boolean
+    ): typings.openui5.sapMButtonMod.default = js.native
+    def createButton(
+      /**
+      * Defines the title text of the newly created Button
+      */
+    sText: String,
+      /**
+      * Icon to be displayed as graphical element within the Button. Density related image will be loaded if
+      * image with density awareness name in format [imageName]@[densityValue].[extension] is provided.
+      */
+    sURI: Unit,
+      /**
+      * Enables the control. Buttons that are disabled have other colors than enabled ones, depending on custom
+      * settings.
+      */
+    bEnabled: Boolean,
+      /**
+      * Element's text directionality with enumerated options
+      */
+    sTextDirection: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TextDirection * / any */ String
+    ): typings.openui5.sapMButtonMod.default = js.native
+    def createButton(
+      /**
+      * Defines the title text of the newly created Button
+      */
+    sText: String,
+      /**
+      * Icon to be displayed as graphical element within the Button. Density related image will be loaded if
+      * image with density awareness name in format [imageName]@[densityValue].[extension] is provided.
+      */
+    sURI: Unit,
+      /**
+      * Enables the control. Buttons that are disabled have other colors than enabled ones, depending on custom
+      * settings.
+      */
+    bEnabled: Boolean,
+      /**
+      * Element's text directionality with enumerated options
+      */
+    sTextDirection: TextDirection
+    ): typings.openui5.sapMButtonMod.default = js.native
+    def createButton(
+      /**
+      * Defines the title text of the newly created Button
+      */
+    sText: String,
+      /**
+      * Icon to be displayed as graphical element within the Button. Density related image will be loaded if
+      * image with density awareness name in format [imageName]@[densityValue].[extension] is provided.
+      */
+    sURI: Unit,
+      /**
+      * Enables the control. Buttons that are disabled have other colors than enabled ones, depending on custom
+      * settings.
+      */
+    bEnabled: Unit,
+      /**
+      * Element's text directionality with enumerated options
+      */
+    sTextDirection: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TextDirection * / any */ String
+    ): typings.openui5.sapMButtonMod.default = js.native
+    def createButton(
+      /**
+      * Defines the title text of the newly created Button
+      */
+    sText: String,
+      /**
+      * Icon to be displayed as graphical element within the Button. Density related image will be loaded if
+      * image with density awareness name in format [imageName]@[densityValue].[extension] is provided.
+      */
+    sURI: Unit,
+      /**
+      * Enables the control. Buttons that are disabled have other colors than enabled ones, depending on custom
+      * settings.
+      */
+    bEnabled: Unit,
+      /**
+      * Element's text directionality with enumerated options
+      */
+    sTextDirection: TextDirection
+    ): typings.openui5.sapMButtonMod.default = js.native
     def createButton(
       /**
       * Defines the title text of the newly created Button
@@ -550,6 +676,7 @@ object sapMSegmentedButtonMod {
     
     /**
       * @deprecated (since 1.52) - replaced by `selectionChange` event
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:select select} to attached listeners.
       *
@@ -563,6 +690,7 @@ object sapMSegmentedButtonMod {
     
     /**
       * @SINCE 1.52
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:selectionChange selectionChange} to attached listeners.
       *
@@ -572,7 +700,7 @@ object sapMSegmentedButtonMod {
     def fireSelectionChange(/**
       * Parameters to pass along with the event
       */
-    mParameters: `20`): this.type = js.native
+    mParameters: `26`): this.type = js.native
     
     /**
       * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaDescribedBy
@@ -611,6 +739,8 @@ object sapMSegmentedButtonMod {
     def getEnabled(): Boolean = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * `SegmentedButton` must not be stretched in Form because ResizeHandler is used internally in order to
       * manage the width of the SegmentedButton depending on the container size
       *

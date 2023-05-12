@@ -1,7 +1,7 @@
 
 # Scala.js typings for avvio
 
-Typings are for version 8.2.0
+Typings are for version 8.2.1
 
 ## Library description:
 Asynchronous bootstrapping of Node applications

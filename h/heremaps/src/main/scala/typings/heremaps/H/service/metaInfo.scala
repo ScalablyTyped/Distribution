@@ -269,12 +269,12 @@ object metaInfo {
   object Service {
     
     /**
-      * @property maps {Object<string, Object>} -
-      * @property schemes {Object<string, Object>} -
-      * @property tiletypes {Object<string, Object>} -
-      * @property formats {Object<string, Object>} -
-      * @property resolutions {Object<string, Object>} -
-      * @property languages {Object<string, Object>} -
+      * maps {Object<string, Object>} -
+      * schemes {Object<string, Object>} -
+      * tiletypes {Object<string, Object>} -
+      * formats {Object<string, Object>} -
+      * resolutions {Object<string, Object>} -
+      * languages {Object<string, Object>} -
       */
     trait Info extends StObject {
       
@@ -322,10 +322,10 @@ object metaInfo {
     }
     
     /**
-      * @property type {string=} - the type of the map tile service to communicate with, e.g. 'base' (default), 'aerial', etc. (refer to the Map Tile REST API documentation for
+      * type {string=} - the type of the map tile service to communicate with, e.g. 'base' (default), 'aerial', etc. (refer to the Map Tile REST API documentation for
       * available types)
-      * @property version {string=} - the map version hash to use for retrieving tiles, default is newest and will be automatically updated
-      * @property subDomain {string=} - the sub-domain of the map tile service relative to the platform's base URL, default is 'maps'
+      * version {string=} - the map version hash to use for retrieving tiles, default is newest and will be automatically updated
+      * subDomain {string=} - the sub-domain of the map tile service relative to the platform's base URL, default is 'maps'
       */
     trait Options extends StObject {
       
@@ -364,12 +364,12 @@ object metaInfo {
     
     /**
       * Configuration object which can be used to initialize the TileProvider.
-      * @property tileType {string=} - The tile type for which to request meta info
-      * @property scheme {string=} - The map scheme for which to request meta info
-      * @property tileCacheSize {number=} - The number of fully rendered spatial tiles that are cached for immediate reuse, default is 32
-      * @property tileSize {number=} - The size of the tiles rendered by this provider (must be power of 2, default is 256)
-      * @property pixelRatio {number=} - The pixel ratio to use for over-sampling in cases of high-resolution displays
-      * @property categoryFilter {Array<string>=} - A list of meta-info category names which should be suppressed. See Metainfo Tile for valid category names.
+      * tileType {string=} - The tile type for which to request meta info
+      * scheme {string=} - The map scheme for which to request meta info
+      * tileCacheSize {number=} - The number of fully rendered spatial tiles that are cached for immediate reuse, default is 32
+      * tileSize {number=} - The size of the tiles rendered by this provider (must be power of 2, default is 256)
+      * pixelRatio {number=} - The pixel ratio to use for over-sampling in cases of high-resolution displays
+      * categoryFilter {Array<string>=} - A list of meta-info category names which should be suppressed. See Metainfo Tile for valid category names.
       */
     trait Options extends StObject {
       

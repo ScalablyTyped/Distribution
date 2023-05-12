@@ -17,8 +17,8 @@ trait networkService extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-networkService.html#fetchServiceDescription)
     */
-  def fetchServiceDescription(url: String): js.Promise[Any] = js.native
-  def fetchServiceDescription(url: String, apiKey: String): js.Promise[Any] = js.native
-  def fetchServiceDescription(url: String, apiKey: String, requestOptions: Any): js.Promise[Any] = js.native
-  def fetchServiceDescription(url: String, apiKey: scala.Unit, requestOptions: Any): js.Promise[Any] = js.native
+  def fetchServiceDescription(url: String): js.Promise[ServiceDescription] = js.native
+  def fetchServiceDescription(url: String, apiKey: String): js.Promise[ServiceDescription] = js.native
+  def fetchServiceDescription(url: String, apiKey: String, requestOptions: Any): js.Promise[ServiceDescription] = js.native
+  def fetchServiceDescription(url: String, apiKey: scala.Unit, requestOptions: Any): js.Promise[ServiceDescription] = js.native
 }

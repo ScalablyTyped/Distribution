@@ -13,10 +13,7 @@ object srcNgtscFileSystemSrcNodeJsFileSystemMod {
   @js.native
   open class NodeJSFileSystem ()
     extends NodeJSReadonlyFileSystem
-       with FileSystem {
-    
-    /* private */ var safeMkdir: Any = js.native
-  }
+       with FileSystem
   
   @JSImport("@angular/compiler-cli/src/ngtsc/file_system/src/node_js_file_system", "NodeJSPathManipulation")
   @js.native

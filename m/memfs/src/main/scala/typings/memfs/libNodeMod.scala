@@ -163,7 +163,22 @@ object libNodeMod {
     def this(ino: Double) = this()
     def this(ino: Double, perm: Double) = this()
     
-    var atime: js.Date = js.native
+    /* private */ var _atime: Any = js.native
+    
+    /* private */ var _ctime: Any = js.native
+    
+    /* private */ var _gid: Any = js.native
+    
+    /* private */ var _mtime: Any = js.native
+    
+    /* private */ var _nlink: Any = js.native
+    
+    /* private */ var _perm: Any = js.native
+    
+    /* private */ var _uid: Any = js.native
+    
+    def atime: js.Date = js.native
+    def atime_=(atime: js.Date): Unit = js.native
     
     var buf: Buffer = js.native
     
@@ -181,7 +196,8 @@ object libNodeMod {
     
     def chown(uid: Double, gid: Double): Unit = js.native
     
-    var ctime: js.Date = js.native
+    def ctime: js.Date = js.native
+    def ctime_=(ctime: js.Date): Unit = js.native
     
     def del(): Unit = js.native
     
@@ -192,7 +208,8 @@ object libNodeMod {
     def getString(): String = js.native
     def getString(encoding: String): String = js.native
     
-    var gid: Double = js.native
+    def gid: Double = js.native
+    def gid_=(gid: Double): Unit = js.native
     
     var ino: Double = js.native
     
@@ -206,11 +223,14 @@ object libNodeMod {
     
     var mode: Double = js.native
     
-    var mtime: js.Date = js.native
+    def mtime: js.Date = js.native
+    def mtime_=(mtime: js.Date): Unit = js.native
     
-    var nlink: Double = js.native
+    def nlink: Double = js.native
+    def nlink_=(nlink: Double): Unit = js.native
     
-    var perm: Double = js.native
+    def perm: Double = js.native
+    def perm_=(perm: Double): Unit = js.native
     
     def read(buf: js.typedarray.Uint8Array): Double = js.native
     def read(buf: js.typedarray.Uint8Array, off: Double): Double = js.native
@@ -250,7 +270,8 @@ object libNodeMod {
     def truncate(): Unit = js.native
     def truncate(len: Double): Unit = js.native
     
-    var uid: Double = js.native
+    def uid: Double = js.native
+    def uid_=(uid: Double): Unit = js.native
     
     def write(buf: Buffer): Double = js.native
     def write(buf: Buffer, off: Double): Double = js.native

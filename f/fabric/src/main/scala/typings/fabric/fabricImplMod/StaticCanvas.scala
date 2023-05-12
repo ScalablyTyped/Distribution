@@ -2,6 +2,7 @@ package typings.fabric.fabricImplMod
 
 import typings.fabric.anon.Bl
 import typings.fabric.anon.Left
+import typings.fabric.anon.Objects
 import typings.fabric.anon.Readonlyleftnumberundefin
 import typings.fabric.fabricStrings.getImageData
 import typings.fabric.fabricStrings.setLineDash
@@ -247,7 +248,6 @@ open class StaticCanvas ()
     * Let the fabricJS call it. If you call it manually you could have more
     * animationFrame stacking on to of each other
     * for an imperative rendering, use canvas.renderAll
-    * @private
     * @return {fabric.Canvas} instance
     * @chainable
     */
@@ -429,32 +429,40 @@ open class StaticCanvas ()
     * @param {Array} [propertiesToInclude] Any properties that you might want to additionally include in the output
     * @return {String} json string
     */
-  def toDatalessJSON(): String = js.native
-  def toDatalessJSON(propertiesToInclude: js.Array[String]): String = js.native
+  def toDatalessJSON(): Objects = js.native
+  def toDatalessJSON(propertiesToInclude: js.Array[String]): Objects = js.native
   
+  def toDatalessObject(): Objects = js.native
+  def toDatalessObject(propertiesToInclude: js.Array[String]): Objects = js.native
   /**
     * Returns dataless object representation of canvas
     * @param {Array} [propertiesToInclude] Any properties that you might want to additionally include in the output
     * @return {Object} object representation of an instance
     */
-  def toDatalessObject(): Any = js.native
-  def toDatalessObject(propertiesToInclude: js.Array[String]): Any = js.native
+  @JSName("toDatalessObject")
+  def toDatalessObject_Any(): Any = js.native
+  @JSName("toDatalessObject")
+  def toDatalessObject_Any(propertiesToInclude: js.Array[String]): Any = js.native
   
   /**
     * Returns JSON representation of canvas
     * @param {Array} [propertiesToInclude] Any properties that you might want to additionally include in the output
     * @return {String} JSON string
     */
-  def toJSON(): String = js.native
-  def toJSON(propertiesToInclude: js.Array[String]): String = js.native
+  def toJSON(): Objects = js.native
+  def toJSON(propertiesToInclude: js.Array[String]): Objects = js.native
   
+  def toObject(): Objects = js.native
+  def toObject(propertiesToInclude: js.Array[String]): Objects = js.native
   /**
     * Returns object representation of canvas
     * @param {Array} [propertiesToInclude] Any properties that you might want to additionally include in the output
     * @return {Object} object representation of an instance
     */
-  def toObject(): Any = js.native
-  def toObject(propertiesToInclude: js.Array[String]): Any = js.native
+  @JSName("toObject")
+  def toObject_Any(): Any = js.native
+  @JSName("toObject")
+  def toObject_Any(propertiesToInclude: js.Array[String]): Any = js.native
   
   /**
     * Returns SVG representation of canvas
@@ -509,7 +517,6 @@ object StaticCanvas {
   
   /**
     * @static
-    * @type String
     * @default
     */
   @JSImport("fabric/fabric-impl", "StaticCanvas.EMPTY_JSON")
@@ -532,6 +539,6 @@ object StaticCanvas {
     * Returns JSON representation of canvas
     * @param [propertiesToInclude] Any properties that you might want to additionally include in the output
     */
-  inline def toJSON(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toJSON")().asInstanceOf[String]
-  inline def toJSON(propertiesToInclude: js.Array[String]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toJSON")(propertiesToInclude.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def toJSON(): Objects = ^.asInstanceOf[js.Dynamic].applyDynamic("toJSON")().asInstanceOf[Objects]
+  inline def toJSON(propertiesToInclude: js.Array[String]): Objects = ^.asInstanceOf[js.Dynamic].applyDynamic("toJSON")(propertiesToInclude.asInstanceOf[js.Any]).asInstanceOf[Objects]
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeSnapshotsResult extends StObject {
   
   /**
-    * The NextToken value to include in a future DescribeSnapshots request. When the results of a DescribeSnapshots request exceed MaxResults, this value can be used to retrieve the next page of results. This value is null when there are no more results to return.
+    * The token to include in another request to return the next page of snapshots. This value is null when there are no more snapshots to return.
     */
   var NextToken: js.UndefOr[String] = js.undefined
   

@@ -7,7 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteParametersPathTeamidUsername extends StObject {
   
   /**
-    * The "Remove team member" endpoint (described below) is deprecated.
+    * Remove team member (Legacy)
+    * @deprecated
+    * @description The "Remove team member" endpoint (described below) is deprecated.
     *
     * We recommend using the [Remove team membership for a user](https://docs.github.com/rest/reference/teams#remove-team-membership-for-a-user) endpoint instead. It allows you to remove both active and pending memberships.
     *
@@ -20,7 +22,9 @@ trait DeleteParametersPathTeamidUsername extends StObject {
   var delete: ParametersPathTeamidUsername
   
   /**
-    * The "Get team member" endpoint (described below) is deprecated.
+    * Get team member (Legacy)
+    * @deprecated
+    * @description The "Get team member" endpoint (described below) is deprecated.
     *
     * We recommend using the [Get team membership for a user](https://docs.github.com/rest/reference/teams#get-team-membership-for-a-user) endpoint instead. It allows you to get both active and pending memberships.
     *
@@ -29,7 +33,9 @@ trait DeleteParametersPathTeamidUsername extends StObject {
   var get: ParametersPathTeamidUsername
   
   /**
-    * The "Add team member" endpoint (described below) is deprecated.
+    * Add team member (Legacy)
+    * @deprecated
+    * @description The "Add team member" endpoint (described below) is deprecated.
     *
     * We recommend using the [Add or update team membership for a user](https://docs.github.com/rest/reference/teams#add-or-update-team-membership-for-a-user) endpoint instead. It allows you to invite new organization members to your teams.
     *
@@ -41,14 +47,14 @@ trait DeleteParametersPathTeamidUsername extends StObject {
     *
     * Note that you'll need to set `Content-Length` to zero when calling out to this endpoint. For more information, see "[HTTP verbs](https://docs.github.com/rest/overview/resources-in-the-rest-api#http-verbs)."
     */
-  var put: Responses403404Unknown
+  var put: ParametersPathTeamidUsernameResponses88
 }
 object DeleteParametersPathTeamidUsername {
   
   inline def apply(
     delete: ParametersPathTeamidUsername,
     get: ParametersPathTeamidUsername,
-    put: Responses403404Unknown
+    put: ParametersPathTeamidUsernameResponses88
   ): DeleteParametersPathTeamidUsername = {
     val __obj = js.Dynamic.literal(delete = delete.asInstanceOf[js.Any], get = get.asInstanceOf[js.Any], put = put.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteParametersPathTeamidUsername]
@@ -61,6 +67,6 @@ object DeleteParametersPathTeamidUsername {
     
     inline def setGet(value: ParametersPathTeamidUsername): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     
-    inline def setPut(value: Responses403404Unknown): Self = StObject.set(x, "put", value.asInstanceOf[js.Any])
+    inline def setPut(value: ParametersPathTeamidUsernameResponses88): Self = StObject.set(x, "put", value.asInstanceOf[js.Any])
   }
 }

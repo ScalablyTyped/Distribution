@@ -151,6 +151,13 @@ type GeolocationFormat = java.lang.String
 
 type Hour = scala.Double
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.FULL
+  - typings.awsSdk.awsSdkStrings.INCREMENTAL
+  - java.lang.String
+*/
+type ImportMode = _ImportMode | java.lang.String
+
 type Integer = scala.Double
 
 type IntegerParameterRanges = js.Array[IntegerParameterRange]

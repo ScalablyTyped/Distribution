@@ -1,6 +1,6 @@
 package typings.pixiCore.libSystemsMod
 
-import typings.pixiCore.mod.Renderer
+import typings.pixiCore.libRendererMod.Renderer
 import typings.pixiExtensions.mod.ExtensionMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

@@ -9,7 +9,7 @@ trait ListDomainsResponse extends StObject {
   /**
     * A list of domains.
     */
-  var Domains: DomainSummaryList
+  var Domains: js.UndefOr[DomainSummaryList] = js.undefined
   
   /**
     * If there are more domains than you specified for MaxItems in the request, submit another request and include the value of NextPageMarker in the value of Marker.
@@ -18,8 +18,8 @@ trait ListDomainsResponse extends StObject {
 }
 object ListDomainsResponse {
   
-  inline def apply(Domains: DomainSummaryList): ListDomainsResponse = {
-    val __obj = js.Dynamic.literal(Domains = Domains.asInstanceOf[js.Any])
+  inline def apply(): ListDomainsResponse = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListDomainsResponse]
   }
   
@@ -27,6 +27,8 @@ object ListDomainsResponse {
   implicit open class MutableBuilder[Self <: ListDomainsResponse] (val x: Self) extends AnyVal {
     
     inline def setDomains(value: DomainSummaryList): Self = StObject.set(x, "Domains", value.asInstanceOf[js.Any])
+    
+    inline def setDomainsUndefined: Self = StObject.set(x, "Domains", js.undefined)
     
     inline def setDomainsVarargs(value: DomainSummary*): Self = StObject.set(x, "Domains", js.Array(value*))
     

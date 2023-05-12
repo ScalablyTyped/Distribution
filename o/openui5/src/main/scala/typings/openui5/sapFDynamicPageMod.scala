@@ -263,6 +263,7 @@ object sapFDynamicPageMod {
     
     /**
       * @SINCE 1.93
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:pinnedStateChange pinnedStateChange} to attached listeners.
       *

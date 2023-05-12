@@ -27,44 +27,46 @@ object libEnvironmentEnvironmentMod {
     def alert(message: String): Any = js.native
     
     def confirm(msg: String): Boolean = js.native
-    def confirm(msg: String, opt_negativeDefaultAnswer: Boolean): Boolean = js.native
+    def confirm(msg: String, negativeDefaultAnswer: Boolean): Boolean = js.native
     
     def exit(): Unit = js.native
     def exit(uri: String): Unit = js.native
     
     var exiting: Boolean = js.native
     
+    def lockScreen(): Boolean = js.native
+    
     def prompt(label: String, options: js.Array[Any]): Any = js.native
-    def prompt(label: String, options: js.Array[Any], opt_verticalAlign: Boolean): Any = js.native
-    def prompt(label: String, options: js.Array[Any], opt_verticalAlign: Boolean, opt_defaultOptionIndex: Double): Any = js.native
+    def prompt(label: String, options: js.Array[Any], verticalAlign: Boolean): Any = js.native
+    def prompt(label: String, options: js.Array[Any], verticalAlign: Boolean, defaultOptionIndex: Double): Any = js.native
     def prompt(
       label: String,
       options: js.Array[Any],
-      opt_verticalAlign: Boolean,
-      opt_defaultOptionIndex: Double,
-      opt_escapeIndex: Double
+      verticalAlign: Boolean,
+      defaultOptionIndex: Double,
+      escapeIndex: Double
     ): Any = js.native
     def prompt(
       label: String,
       options: js.Array[Any],
-      opt_verticalAlign: Boolean,
-      opt_defaultOptionIndex: Unit,
-      opt_escapeIndex: Double
+      verticalAlign: Boolean,
+      defaultOptionIndex: Unit,
+      escapeIndex: Double
     ): Any = js.native
-    def prompt(label: String, options: js.Array[Any], opt_verticalAlign: Unit, opt_defaultOptionIndex: Double): Any = js.native
+    def prompt(label: String, options: js.Array[Any], verticalAlign: Unit, defaultOptionIndex: Double): Any = js.native
     def prompt(
       label: String,
       options: js.Array[Any],
-      opt_verticalAlign: Unit,
-      opt_defaultOptionIndex: Double,
-      opt_escapeIndex: Double
+      verticalAlign: Unit,
+      defaultOptionIndex: Double,
+      escapeIndex: Double
     ): Any = js.native
     def prompt(
       label: String,
       options: js.Array[Any],
-      opt_verticalAlign: Unit,
-      opt_defaultOptionIndex: Unit,
-      opt_escapeIndex: Double
+      verticalAlign: Unit,
+      defaultOptionIndex: Unit,
+      escapeIndex: Double
     ): Any = js.native
   }
 }

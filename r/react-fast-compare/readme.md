@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-fast-compare
 
-Typings are for version 3.2.0
+Typings are for version 3.2.1
 
 ## Library description:
 Fastest deep equal comparison for React. Great for React.memo & shouldComponentUpdate. Also really fast general-purpose deep comparison.

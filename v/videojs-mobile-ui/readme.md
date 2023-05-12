@@ -1,7 +1,7 @@
 
 # Scala.js typings for videojs-mobile-ui
 
-Typings are for version 0.5
+Typings are for version 0.8
 
 ## Library description:
 Mobile tap controls and fullscreen on rotate for Video.js

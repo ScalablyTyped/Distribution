@@ -14,9 +14,9 @@ object libUtilCheckBulletMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def checkBullet(context: Context): Exclude[js.UndefOr[`-_` | Asterisk | Plussign], Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("checkBullet")(context.asInstanceOf[js.Any]).asInstanceOf[Exclude[js.UndefOr[`-_` | Asterisk | Plussign], Unit]]
-  
-  type Context = typings.mdastUtilToMarkdown.libTypesMod.Context
+  inline def checkBullet(state: State): Exclude[js.UndefOr[`-_` | Asterisk | Plussign | Null], js.UndefOr[Null]] = ^.asInstanceOf[js.Dynamic].applyDynamic("checkBullet")(state.asInstanceOf[js.Any]).asInstanceOf[Exclude[js.UndefOr[`-_` | Asterisk | Plussign | Null], js.UndefOr[Null]]]
   
   type Options = typings.mdastUtilToMarkdown.libTypesMod.Options
+  
+  type State = typings.mdastUtilToMarkdown.libTypesMod.State
 }

@@ -5,7 +5,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** The internal error handling mechanism.. */
+/**
+  * Internal error handling mechanism for Listr collects the errors and details for a failed task.
+  *
+  * @see {@link https://listr2.kilic.dev/task/error-handling.html}
+  */
 @JSImport("listr2", "ListrError")
 @js.native
 open class ListrError[Ctx /* <: ListrContext */] protected ()
@@ -25,7 +29,7 @@ open class ListrError[Ctx /* <: ListrContext */] protected ()
   /* CompleteClass */
   var name: String = js.native
   
-  var path: String = js.native
+  var path: js.Array[String] = js.native
   
   var task: Task[Ctx, ListrRendererFactory] = js.native
   

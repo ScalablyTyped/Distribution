@@ -1,5 +1,10 @@
 package typings.ipfsUnixfsExporter
 
+import typings.ipfsUnixfsExporter.mod.ExporterOptions
+import typings.ipfsUnixfsExporter.mod.ReadableStorage
+import typings.ipfsUnixfsExporter.mod.ShardTraversalContext
+import typings.ipldDagPb.mod.PBNode
+import typings.multiformats.cidMod.CID
 import typings.multiformats.distTypesSrcLinkInterfaceMod.Version
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,47 +16,14 @@ object distSrcUtilsFindCidInShardMod {
   @js.native
   val ^ : js.Any = js.native
   
-  /**
-    * @typedef {import('../types').ShardTraversalContext} ShardTraversalContext
-    *
-    * @param {PBNode} node
-    * @param {string} name
-    * @param {Blockstore} blockstore
-    * @param {ShardTraversalContext} [context]
-    * @param {ExporterOptions} [options]
-    * @returns {Promise<CID|null>}
-    */
-  inline def default(node: PBNode, name: String, blockstore: Blockstore): js.Promise[CID | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any], name.asInstanceOf[js.Any], blockstore.asInstanceOf[js.Any])).asInstanceOf[js.Promise[CID | Null]]
+  inline def default(node: PBNode, name: String, blockstore: ReadableStorage): js.Promise[js.UndefOr[CID[Any, Double, Double, Version]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any], name.asInstanceOf[js.Any], blockstore.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[CID[Any, Double, Double, Version]]]]
+  inline def default(node: PBNode, name: String, blockstore: ReadableStorage, context: Unit, options: ExporterOptions): js.Promise[js.UndefOr[CID[Any, Double, Double, Version]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any], name.asInstanceOf[js.Any], blockstore.asInstanceOf[js.Any], context.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[CID[Any, Double, Double, Version]]]]
+  inline def default(node: PBNode, name: String, blockstore: ReadableStorage, context: ShardTraversalContext): js.Promise[js.UndefOr[CID[Any, Double, Double, Version]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any], name.asInstanceOf[js.Any], blockstore.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[CID[Any, Double, Double, Version]]]]
   inline def default(
     node: PBNode,
     name: String,
-    blockstore: Blockstore,
-    context: Unit,
-    options: typings.ipfsUnixfsExporter.distSrcTypesMod.ExporterOptions
-  ): js.Promise[CID | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any], name.asInstanceOf[js.Any], blockstore.asInstanceOf[js.Any], context.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[CID | Null]]
-  inline def default(
-    node: PBNode,
-    name: String,
-    blockstore: Blockstore,
-    context: typings.ipfsUnixfsExporter.distSrcTypesMod.ShardTraversalContext
-  ): js.Promise[CID | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any], name.asInstanceOf[js.Any], blockstore.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Promise[CID | Null]]
-  inline def default(
-    node: PBNode,
-    name: String,
-    blockstore: Blockstore,
-    context: typings.ipfsUnixfsExporter.distSrcTypesMod.ShardTraversalContext,
-    options: typings.ipfsUnixfsExporter.distSrcTypesMod.ExporterOptions
-  ): js.Promise[CID | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any], name.asInstanceOf[js.Any], blockstore.asInstanceOf[js.Any], context.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[CID | Null]]
-  
-  type Blockstore = typings.interfaceBlockstore.mod.Blockstore
-  
-  type CID = typings.multiformats.cidMod.CID[Any, Double, Double, Version]
-  
-  type ExporterOptions = typings.ipfsUnixfsExporter.distSrcTypesMod.ExporterOptions
-  
-  type PBLink = typings.ipldDagPb.mod.PBLink
-  
-  type PBNode = typings.ipldDagPb.mod.PBNode
-  
-  type ShardTraversalContext = typings.ipfsUnixfsExporter.distSrcTypesMod.ShardTraversalContext
+    blockstore: ReadableStorage,
+    context: ShardTraversalContext,
+    options: ExporterOptions
+  ): js.Promise[js.UndefOr[CID[Any, Double, Double, Version]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any], name.asInstanceOf[js.Any], blockstore.asInstanceOf[js.Any], context.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[CID[Any, Double, Double, Version]]]]
 }

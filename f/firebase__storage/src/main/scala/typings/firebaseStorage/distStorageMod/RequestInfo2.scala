@@ -82,9 +82,7 @@ object RequestInfo2 {
     
     inline def setBodyNull: Self = StObject.set(x, "body", null)
     
-    inline def setErrorHandler(
-      value: (/* connection */ Connection[ConnectionType], /* response */ StorageError2) => StorageError2
-    ): Self = StObject.set(x, "errorHandler", js.Any.fromFunction2(value))
+    inline def setErrorHandler(value: (/* connection */ Connection[ConnectionType], /* response */ StorageError) => StorageError): Self = StObject.set(x, "errorHandler", js.Any.fromFunction2(value))
     
     inline def setErrorHandlerNull: Self = StObject.set(x, "errorHandler", null)
     

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "axios-case-converter" : "0.11.1"
+      "axios-case-converter" : "1.1.0"
     }
   ],
   "test-dependencies" : [
     {
-      "axios-case-converter" : "0.11.1"
+      "axios-case-converter" : "1.1.0"
     }
   ],
   "compile-devDependencies" : [

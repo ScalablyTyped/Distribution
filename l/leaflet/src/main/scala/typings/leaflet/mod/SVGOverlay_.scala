@@ -27,7 +27,8 @@ open class SVGOverlay_ protected () extends Layer {
   /** Get the img element that represents the SVGOverlay on the map */
   def getElement(): js.UndefOr[SVGElement] = js.native
   
-  var options: ImageOverlayOptions = js.native
+  @JSName("options")
+  var options_SVGOverlay_ : ImageOverlayOptions = js.native
   
   /** Update the bounds that this SVGOverlay covers */
   def setBounds(bounds: LatLngBounds_): this.type = js.native

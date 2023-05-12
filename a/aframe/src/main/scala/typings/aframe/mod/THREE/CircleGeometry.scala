@@ -8,10 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("aframe", "THREE.CircleGeometry")
 @js.native
 /**
-  * @param [radius=1]
-  * @param [segments=8]
-  * @param [thetaStart=0]
-  * @param [thetaLength=Math.PI * 2]
+  * Create a new instance of {@link CircleGeometry}
+  * @param radius Radius of the circle. Expects a `Float`. Default `1`
+  * @param segments Number of segments (triangles). Expects a `Integer`. Minimum `3`. Default `32`
+  * @param thetaStart Start angle for first segment. Expects a `Float`. Default `0`, _(three o'clock position)_.
+  * @param thetaLength The central angle, often called theta, of the circular sector. Expects a `Float`. Default `Math.PI * 2`, _which makes for a complete circle_.
   */
 open class CircleGeometry ()
   extends typings.three.mod.CircleGeometry

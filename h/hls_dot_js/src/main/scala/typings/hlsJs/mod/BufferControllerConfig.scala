@@ -10,6 +10,9 @@ trait BufferControllerConfig extends StObject {
   
   var backBufferLength: Double
   
+  /**
+    * @deprecated use backBufferLength
+    */
   var liveBackBufferLength: Double | Null
   
   var liveDurationInfinity: Boolean

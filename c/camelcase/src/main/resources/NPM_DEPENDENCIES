@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "camelcase" : "7.0.0"
+      "camelcase" : "7.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "camelcase" : "7.0.0"
+      "camelcase" : "7.0.1"
     }
   ],
   "compile-devDependencies" : [

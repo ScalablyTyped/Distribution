@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AddHeaderParameter extends StObject {
   
   /**
-    * Adds a header parameter to the file that will be uploaded.
+    * A function that adds a header parameter to the file that will be uploaded. The function accepts one parameter
+    * of type `sap.m.UploadCollectionParameter` which specifies the header parameter that will be added.
     */
   var addHeaderParameter: js.UndefOr[js.Function] = js.undefined
   
@@ -17,7 +18,9 @@ trait AddHeaderParameter extends StObject {
   var fileName: js.UndefOr[String] = js.undefined
   
   /**
-    * Returns the corresponding header parameter (type sap.m.UploadCollectionParameter) if available.
+    * A function that returns the corresponding header parameter (type `sap.m.UploadCollectionParameter`) if
+    * available. The function accepts one optional parameter of type `string`, which is the name of the header
+    * parameter. If no parameter is provided all header parameters are returned.
     */
   var getHeaderParameter: js.UndefOr[js.Function] = js.undefined
 }

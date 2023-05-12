@@ -1,7 +1,7 @@
 
 # Scala.js typings for azure__keyvault-keys
 
-Typings are for version 4.6.0
+Typings are for version 4.7.0
 
 
 

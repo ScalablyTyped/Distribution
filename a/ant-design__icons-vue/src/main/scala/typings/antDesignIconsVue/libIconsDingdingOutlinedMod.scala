@@ -16,7 +16,7 @@ object libIconsDingdingOutlinedMod extends Shortcut {
   @js.native
   trait DingdingOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_DingdingOutlinedIconType: String = js.native

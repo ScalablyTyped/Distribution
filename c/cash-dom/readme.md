@@ -1,7 +1,7 @@
 
 # Scala.js typings for cash-dom
 
-Typings are for version 8.1.1
+Typings are for version 8.1.5
 
 ## Library description:
 An absurdly small jQuery alternative for modern browsers.

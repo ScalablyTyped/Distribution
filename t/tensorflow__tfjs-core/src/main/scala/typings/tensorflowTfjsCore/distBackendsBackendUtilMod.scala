@@ -6,7 +6,6 @@ import typings.tensorflowTfjsCore.anon.ExpandDims
 import typings.tensorflowTfjsCore.anon.Imag
 import typings.tensorflowTfjsCore.anon.Path
 import typings.tensorflowTfjsCore.anon.Real
-import typings.tensorflowTfjsCore.distKernelRegistryMod.TensorInfo
 import typings.tensorflowTfjsCore.distOpsConvUtilMod.Conv2DInfo
 import typings.tensorflowTfjsCore.distOpsConvUtilMod.Conv3DInfo
 import typings.tensorflowTfjsCore.distOpsConvUtilMod.ExplicitPadding
@@ -15,6 +14,7 @@ import typings.tensorflowTfjsCore.distOpsRaggedToDenseUtilMod.RowPartitionType
 import typings.tensorflowTfjsCore.distOpsScatterNdUtilMod.ScatterShapeInfo
 import typings.tensorflowTfjsCore.distOpsSegmentUtilMod.GatherOpShapeInfo
 import typings.tensorflowTfjsCore.distOpsSliceUtilMod.SliceInfo_
+import typings.tensorflowTfjsCore.distTensorInfoMod.TensorInfo
 import typings.tensorflowTfjsCore.distTensorMod.Tensor
 import typings.tensorflowTfjsCore.distTypesMod.DataType
 import typings.tensorflowTfjsCore.distTypesMod.Rank
@@ -466,6 +466,9 @@ object distBackendsBackendUtilMod {
   }
   
   inline def splitRealAndImagArrays(complex: js.typedarray.Float32Array): Imag = ^.asInstanceOf[js.Dynamic].applyDynamic("splitRealAndImagArrays")(complex.asInstanceOf[js.Any]).asInstanceOf[Imag]
+  
+  inline def stridesOrDilationsArePositive(values: js.Array[Double]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("stridesOrDilationsArePositive")(values.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def stridesOrDilationsArePositive(values: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("stridesOrDilationsArePositive")(values.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def tupleValuesAreOne(param: js.Array[Double]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("tupleValuesAreOne")(param.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   inline def tupleValuesAreOne(param: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("tupleValuesAreOne")(param.asInstanceOf[js.Any]).asInstanceOf[Boolean]

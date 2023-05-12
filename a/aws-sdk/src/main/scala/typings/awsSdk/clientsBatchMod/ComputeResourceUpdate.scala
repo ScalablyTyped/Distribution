@@ -12,12 +12,12 @@ trait ComputeResourceUpdate extends StObject {
   var allocationStrategy: js.UndefOr[CRUpdateAllocationStrategy] = js.undefined
   
   /**
-    * The maximum percentage that a Spot Instance price can be when compared with the On-Demand price for that instance type before instances are launched. For example, if your maximum percentage is 20%, the Spot price must be less than 20% of the current On-Demand price for that Amazon EC2 instance. You always pay the lowest (market) price and never more than your maximum percentage. When updating a compute environment, changing the bid percentage requires an infrastructure update of the compute environment. For more information, see Updating compute environments in the Batch User Guide.  This parameter isn't applicable to jobs that are running on Fargate resources. Don't specify it. 
+    * The maximum percentage that a Spot Instance price can be when compared with the On-Demand price for that instance type before instances are launched. For example, if your maximum percentage is 20%, the Spot price must be less than 20% of the current On-Demand price for that Amazon EC2 instance. You always pay the lowest (market) price and never more than your maximum percentage. For most use cases, we recommend leaving this field empty. When updating a compute environment, changing the bid percentage requires an infrastructure update of the compute environment. For more information, see Updating compute environments in the Batch User Guide.  This parameter isn't applicable to jobs that are running on Fargate resources. Don't specify it. 
     */
   var bidPercentage: js.UndefOr[Integer] = js.undefined
   
   /**
-    * The desired number of Amazon EC2 vCPUS in the compute environment. Batch modifies this value between the minimum and maximum values based on job queue demand.  This parameter isn't applicable to jobs that are running on Fargate resources. Don't specify it. 
+    * The desired number of Amazon EC2 vCPUS in the compute environment. Batch modifies this value between the minimum and maximum values based on job queue demand.  This parameter isn't applicable to jobs that are running on Fargate resources. Don't specify it.   Batch doesn't support changing the desired number of vCPUs of an existing compute environment. Don't specify this parameter for compute environments using Amazon EKS clusters.   When you update the desiredvCpus setting, the value must be between the minvCpus and maxvCpus values.  Additionally, the updated desiredvCpus value must be greater than or equal to the current desiredvCpus value. For more information, see Troubleshooting Batch in the Batch User Guide. 
     */
   var desiredvCpus: js.UndefOr[Integer] = js.undefined
   
@@ -72,7 +72,7 @@ trait ComputeResourceUpdate extends StObject {
   var securityGroupIds: js.UndefOr[StringList] = js.undefined
   
   /**
-    * The VPC subnets where the compute resources are launched. Fargate compute resources can contain up to 16 subnets. For Fargate compute resources, providing an empty list will be handled as if this parameter wasn't specified and no change is made. For EC2 compute resources, providing an empty list removes the VPC subnets from the compute resource. For more information, see VPCs and subnets in the Amazon VPC User Guide. When updating a compute environment, changing the VPC subnets requires an infrastructure update of the compute environment. For more information, see Updating compute environments in the Batch User Guide.
+    * The VPC subnets where the compute resources are launched. Fargate compute resources can contain up to 16 subnets. For Fargate compute resources, providing an empty list will be handled as if this parameter wasn't specified and no change is made. For EC2 compute resources, providing an empty list removes the VPC subnets from the compute resource. For more information, see VPCs and subnets in the Amazon VPC User Guide. When updating a compute environment, changing the VPC subnets requires an infrastructure update of the compute environment. For more information, see Updating compute environments in the Batch User Guide.  Batch on Amazon EC2 and Batch on Amazon EKS support Local Zones. For more information, see  Local Zones in the Amazon EC2 User Guide for Linux Instances, Amazon EKS and Amazon Web Services Local Zones in the Amazon EKS User Guide and  Amazon ECS clusters in Local Zones, Wavelength Zones, and Amazon Web Services Outposts in the Amazon ECS Developer Guide. Batch on Fargate doesn't currently support Local Zones. 
     */
   var subnets: js.UndefOr[StringList] = js.undefined
   

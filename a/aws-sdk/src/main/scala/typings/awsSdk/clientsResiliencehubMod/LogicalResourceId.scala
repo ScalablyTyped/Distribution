@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LogicalResourceId extends StObject {
   
   /**
+    * The name of the Amazon Elastic Kubernetes Service cluster and namespace this resource belongs to.  This parameter accepts values in "eks-cluster/namespace" format. 
+    */
+  var eksSourceName: js.UndefOr[String255] = js.undefined
+  
+  /**
     * The identifier of the resource.
     */
   var identifier: String255
@@ -35,6 +40,10 @@ object LogicalResourceId {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: LogicalResourceId] (val x: Self) extends AnyVal {
+    
+    inline def setEksSourceName(value: String255): Self = StObject.set(x, "eksSourceName", value.asInstanceOf[js.Any])
+    
+    inline def setEksSourceNameUndefined: Self = StObject.set(x, "eksSourceName", js.undefined)
     
     inline def setIdentifier(value: String255): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     

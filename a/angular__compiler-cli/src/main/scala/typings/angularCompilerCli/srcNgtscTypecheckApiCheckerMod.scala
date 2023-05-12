@@ -10,15 +10,21 @@ import typings.angularCompiler.mod.TmplAstNode
 import typings.angularCompiler.mod.TmplAstTemplate
 import typings.angularCompiler.mod.TmplAstTextAttribute
 import typings.angularCompilerCli.anon.Attribute
+import typings.angularCompilerCli.anon.ClassDeclarationDeclarati
 import typings.angularCompilerCli.anon.End
 import typings.angularCompilerCli.srcNgtscDiagnosticsSrcErrorCodeMod.ErrorCode
 import typings.angularCompilerCli.srcNgtscFileSystemSrcTypesMod.AbsoluteFsPath
+import typings.angularCompilerCli.srcNgtscImportsMod.Reference
+import typings.angularCompilerCli.srcNgtscMetadataSrcApiMod.NgModuleMeta
+import typings.angularCompilerCli.srcNgtscMetadataSrcApiMod.PipeMeta
 import typings.angularCompilerCli.srcNgtscTypecheckApiApiMod.FullTemplateMapping
 import typings.angularCompilerCli.srcNgtscTypecheckApiApiMod.NgTemplateDiagnostic
 import typings.angularCompilerCli.srcNgtscTypecheckApiApiMod.TypeCheckableDirectiveMeta
 import typings.angularCompilerCli.srcNgtscTypecheckApiCompletionMod.GlobalCompletion
-import typings.angularCompilerCli.srcNgtscTypecheckApiScopeMod.DirectiveInScope
-import typings.angularCompilerCli.srcNgtscTypecheckApiScopeMod.PipeInScope
+import typings.angularCompilerCli.srcNgtscTypecheckApiScopeMod.PotentialDirective
+import typings.angularCompilerCli.srcNgtscTypecheckApiScopeMod.PotentialImport
+import typings.angularCompilerCli.srcNgtscTypecheckApiScopeMod.PotentialImportMode
+import typings.angularCompilerCli.srcNgtscTypecheckApiScopeMod.PotentialPipe
 import typings.angularCompilerCli.srcNgtscTypecheckApiSymbolsMod.ElementSymbol
 import typings.angularCompilerCli.srcNgtscTypecheckApiSymbolsMod.Symbol
 import typings.angularCompilerCli.srcNgtscTypecheckApiSymbolsMod.TcbLocation
@@ -112,11 +118,6 @@ object srcNgtscTypecheckApiCheckerMod {
     def getDirectiveMetadata(dir: ClassDeclaration): TypeCheckableDirectiveMeta | Null = js.native
     
     /**
-      * Get basic metadata on the directives which are in scope for the given component.
-      */
-    def getDirectivesInScope(component: ClassDeclaration): js.Array[DirectiveInScope] | Null = js.native
-    
-    /**
       * For the given expression node, retrieve a `TcbLocation` that can be used to perform
       * autocompletion at that point in the expression, if such a location exists.
       */
@@ -146,15 +147,20 @@ object srcNgtscTypecheckApiCheckerMod {
     def getLiteralCompletionLocation(strNode: TmplAstTextAttribute, component: ClassDeclaration): TcbLocation | Null = js.native
     
     /**
+      * Retrieve the type checking engine's metadata for the given NgModule class, if available.
+      */
+    def getNgModuleMetadata(module: ClassDeclaration): NgModuleMeta | Null = js.native
+    
+    /**
       * Get the class of the NgModule that owns this Angular trait. If the result is `null`, that
       * probably means the provided component is standalone.
       */
     def getOwningNgModule(component: ClassDeclaration): ClassDeclaration | Null = js.native
     
     /**
-      * Get basic metadata on the pipes which are in scope for the given component.
+      * Retrieve the type checking engine's metadata for the given pipe class, if available.
       */
-    def getPipesInScope(component: ClassDeclaration): js.Array[PipeInScope] | Null = js.native
+    def getPipeMetadata(pipe: ClassDeclaration): PipeMeta | Null = js.native
     
     /**
       * Retrieve any potential DOM bindings for the given element.
@@ -171,11 +177,31 @@ object srcNgtscTypecheckApiCheckerMod {
     def getPotentialDomEvents(tagName: String): js.Array[String] = js.native
     
     /**
-      * Retrieve a `Map` of potential template element tags, to either the `DirectiveInScope` that
+      * Retrieve a `Map` of potential template element tags, to either the `PotentialDirective` that
       * declares them (if the tag is from a directive/component), or `null` if the tag originates from
       * the DOM schema.
       */
-    def getPotentialElementTags(component: ClassDeclaration): Map[String, DirectiveInScope | Null] = js.native
+    def getPotentialElementTags(component: ClassDeclaration): Map[String, PotentialDirective | Null] = js.native
+    
+    /**
+      * In the context of an Angular trait, generate potential imports for a directive.
+      */
+    def getPotentialImportsFor(
+      toImport: Reference[ClassDeclarationDeclarati],
+      inComponent: ClassDeclaration,
+      importMode: PotentialImportMode
+    ): js.Array[PotentialImport] = js.native
+    
+    /**
+      * Get basic metadata on the pipes which are in scope or can be imported for the given component.
+      */
+    def getPotentialPipes(component: ClassDeclaration): js.Array[PotentialPipe] = js.native
+    
+    /**
+      * Get basic metadata on the directives which are in scope or can be imported for the given
+      * component.
+      */
+    def getPotentialTemplateDirectives(component: ClassDeclaration): js.Array[PotentialDirective] = js.native
     
     /**
       * Get the primary decorator for an Angular class (such as @Component). This does not work for
@@ -214,6 +240,16 @@ object srcNgtscTypecheckApiCheckerMod {
       * This method always runs in `OptimizeFor.SingleFile` mode.
       */
     def getTypeCheckBlock(component: ClassDeclaration): Node | Null = js.native
+    
+    /**
+      * Gets the directives that have been used in a component's template.
+      */
+    def getUsedDirectives(component: ClassDeclaration): js.Array[TypeCheckableDirectiveMeta] | Null = js.native
+    
+    /**
+      * Gets the pipes that have been used in a component's template.
+      */
+    def getUsedPipes(component: ClassDeclaration): js.Array[String] | Null = js.native
     
     /**
       * Reset the `TemplateTypeChecker`'s state for the given class, so that it will be recomputed on

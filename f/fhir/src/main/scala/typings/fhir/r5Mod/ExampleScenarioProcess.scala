@@ -17,27 +17,27 @@ trait ExampleScenarioProcess
   var _title: js.UndefOr[Element] = js.undefined
   
   /**
-    * A longer description of the group of operations.
+    * An explanation of what the process represents and what it does.
     */
   var description: js.UndefOr[String] = js.undefined
   
   /**
-    * Description of final status after the process ends.
+    * Alternate steps might not result in all post conditions holding
     */
   var postConditions: js.UndefOr[String] = js.undefined
   
   /**
-    * Description of initial status before the process starts.
+    * Description of the initial state of the actors, environment and data before the process starts.
     */
   var preConditions: js.UndefOr[String] = js.undefined
   
   /**
-    * Each step of the process.
+    * A significant action that occurs as part of the process.
     */
   var step: js.UndefOr[js.Array[ExampleScenarioProcessStep]] = js.undefined
   
   /**
-    * The diagram title of the group of operations.
+    * A short descriptive label the process to be used in tables or diagrams.
     */
   var title: String
 }

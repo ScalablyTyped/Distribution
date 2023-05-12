@@ -12,7 +12,7 @@ open class XAxis protected ()
   def this(props: XAxisProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: XAxisProps, context: Any) = this()
 }

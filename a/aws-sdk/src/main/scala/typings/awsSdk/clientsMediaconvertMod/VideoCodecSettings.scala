@@ -17,7 +17,7 @@ trait VideoCodecSettings extends StObject {
   var AvcIntraSettings: js.UndefOr[typings.awsSdk.clientsMediaconvertMod.AvcIntraSettings] = js.undefined
   
   /**
-    * Specifies the video codec. This must be equal to one of the enum values defined by the object  VideoCodec.
+    * Specifies the video codec. This must be equal to one of the enum values defined by the object VideoCodec. To passthrough the video stream of your input JPEG2000, VC-3, AVC-INTRA or Apple ProRes  video without any video encoding: Choose Passthrough. If you have multiple input videos, note that they must have identical encoding attributes. When you choose Passthrough, your output container must be MXF or QuickTime MOV.
     */
   var Codec: js.UndefOr[VideoCodec] = js.undefined
   

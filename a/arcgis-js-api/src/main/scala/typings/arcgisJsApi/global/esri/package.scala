@@ -35,6 +35,8 @@ inline def SceneViewPerformanceInfo: typings.arcgisJsApi.esri.SceneViewPerforman
 
 inline def SceneViewerColorUtils: typings.arcgisJsApi.esri.SceneViewerColorUtils = ^.asInstanceOf[js.Dynamic].selectDynamic("SceneViewerColorUtils").asInstanceOf[typings.arcgisJsApi.esri.SceneViewerColorUtils]
 
+inline def ServiceDefinition: typings.arcgisJsApi.esri.ServiceDefinition = ^.asInstanceOf[js.Dynamic].selectDynamic("ServiceDefinition").asInstanceOf[typings.arcgisJsApi.esri.ServiceDefinition]
+
 inline def StreamConnection: typings.arcgisJsApi.esri.StreamConnection = ^.asInstanceOf[js.Dynamic].selectDynamic("StreamConnection").asInstanceOf[typings.arcgisJsApi.esri.StreamConnection]
 
 inline def TableListViewModel: typings.arcgisJsApi.esri.TableListViewModel = ^.asInstanceOf[js.Dynamic].selectDynamic("TableListViewModel").asInstanceOf[typings.arcgisJsApi.esri.TableListViewModel]
@@ -131,6 +133,8 @@ inline def location: typings.arcgisJsApi.esri.location = ^.asInstanceOf[js.Dynam
 
 inline def locator: typings.arcgisJsApi.esri.locator = ^.asInstanceOf[js.Dynamic].selectDynamic("locator").asInstanceOf[typings.arcgisJsApi.esri.locator]
 
+inline def mediaUtils: typings.arcgisJsApi.esri.mediaUtils = ^.asInstanceOf[js.Dynamic].selectDynamic("mediaUtils").asInstanceOf[typings.arcgisJsApi.esri.mediaUtils]
+
 inline def meshUtils: typings.arcgisJsApi.esri.meshUtils = ^.asInstanceOf[js.Dynamic].selectDynamic("meshUtils").asInstanceOf[typings.arcgisJsApi.esri.meshUtils]
 
 inline def networkService: typings.arcgisJsApi.esri.networkService = ^.asInstanceOf[js.Dynamic].selectDynamic("networkService").asInstanceOf[typings.arcgisJsApi.esri.networkService]
@@ -168,6 +172,8 @@ inline def quantity: typings.arcgisJsApi.esri.quantity = ^.asInstanceOf[js.Dynam
 inline def query: typings.arcgisJsApi.esri.query = ^.asInstanceOf[js.Dynamic].selectDynamic("query").asInstanceOf[typings.arcgisJsApi.esri.query]
 
 inline def queryAssociations: typings.arcgisJsApi.esri.queryAssociations = ^.asInstanceOf[js.Dynamic].selectDynamic("queryAssociations").asInstanceOf[typings.arcgisJsApi.esri.queryAssociations]
+
+inline def rasterFunctionConstants: typings.arcgisJsApi.esri.rasterFunctionConstants = ^.asInstanceOf[js.Dynamic].selectDynamic("rasterFunctionConstants").asInstanceOf[typings.arcgisJsApi.esri.rasterFunctionConstants]
 
 inline def reactiveUtils: typings.arcgisJsApi.esri.reactiveUtils = ^.asInstanceOf[js.Dynamic].selectDynamic("reactiveUtils").asInstanceOf[typings.arcgisJsApi.esri.reactiveUtils]
 

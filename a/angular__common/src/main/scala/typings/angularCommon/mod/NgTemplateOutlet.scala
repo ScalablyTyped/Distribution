@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("@angular/common", "NgTemplateOutlet")
 @js.native
-open class NgTemplateOutlet protected ()
+open class NgTemplateOutlet[C] protected ()
   extends StObject
      with OnChanges {
   def this(_viewContainerRef: ViewContainerRef) = this()
@@ -37,7 +37,7 @@ open class NgTemplateOutlet protected ()
   /**
     * A string defining the template reference and optionally the context object for the template.
     */
-  var ngTemplateOutlet: TemplateRef[Any] | Null = js.native
+  var ngTemplateOutlet: TemplateRef[C] | Null = js.native
   
   /**
     * A context object to attach to the {@link EmbeddedViewRef}. This should be an
@@ -45,7 +45,7 @@ open class NgTemplateOutlet protected ()
     * declarations.
     * Using the key `$implicit` in the context object will set its value as default.
     */
-  var ngTemplateOutletContext: js.Object | Null = js.native
+  var ngTemplateOutletContext: C | Null = js.native
   
   /** Injector to be used within the embedded view. */
   var ngTemplateOutletInjector: Injector | Null = js.native
@@ -60,30 +60,32 @@ object NgTemplateOutlet {
   @JSImport("@angular/common", "NgTemplateOutlet.\u0275dir")
   @js.native
   def ɵdir: ɵɵDirectiveDeclaration[
-    NgTemplateOutlet, 
+    NgTemplateOutlet[Any], 
     `[ngTemplateOutlet]`, 
     scala.Nothing, 
     typings.angularCommon.anon.NgTemplateOutlet, 
     js.Object, 
     scala.Nothing, 
     scala.Nothing, 
-    `true`
+    `true`, 
+    scala.Nothing
   ] = js.native
   inline def ɵdir_=(
     x: ɵɵDirectiveDeclaration[
-      NgTemplateOutlet, 
+      NgTemplateOutlet[Any], 
       `[ngTemplateOutlet]`, 
       scala.Nothing, 
       typings.angularCommon.anon.NgTemplateOutlet, 
       js.Object, 
       scala.Nothing, 
       scala.Nothing, 
-      `true`
+      `true`, 
+      scala.Nothing
     ]
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275dir")(x.asInstanceOf[js.Any])
   
   @JSImport("@angular/common", "NgTemplateOutlet.\u0275fac")
   @js.native
-  def ɵfac: ɵɵFactoryDeclaration[NgTemplateOutlet, scala.Nothing] = js.native
-  inline def ɵfac_=(x: ɵɵFactoryDeclaration[NgTemplateOutlet, scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275fac")(x.asInstanceOf[js.Any])
+  def ɵfac: ɵɵFactoryDeclaration[NgTemplateOutlet[Any], scala.Nothing] = js.native
+  inline def ɵfac_=(x: ɵɵFactoryDeclaration[NgTemplateOutlet[Any], scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275fac")(x.asInstanceOf[js.Any])
 }

@@ -13,4 +13,4 @@ type BootCallback = js.Function1[/* game */ Game, Unit]
   */
 type NOOP = js.Function0[Unit]
 
-type TimeStepCallback = js.Function3[/* time */ Double, /* average */ Double, /* interpolation */ Double, Unit]
+type TimeStepCallback = js.Function2[/* time */ Double, /* average */ Double, Unit]

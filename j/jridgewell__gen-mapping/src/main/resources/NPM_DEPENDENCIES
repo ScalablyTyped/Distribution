@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@jridgewell/gen-mapping" : "0.3.2"
+      "@jridgewell/gen-mapping" : "0.3.3"
     }
   ],
   "test-dependencies" : [
     {
-      "@jridgewell/gen-mapping" : "0.3.2"
+      "@jridgewell/gen-mapping" : "0.3.3"
     }
   ],
   "compile-devDependencies" : [

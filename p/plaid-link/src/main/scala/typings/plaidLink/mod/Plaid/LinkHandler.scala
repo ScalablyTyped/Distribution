@@ -13,8 +13,6 @@ trait LinkHandler extends StObject {
   def exit(): Unit = js.native
   def exit(options: ExitOptions): Unit = js.native
   
-  var institutions: js.Array[Institution] = js.native
-  
   def open(): Unit = js.native
   def open(institution_id: String): Unit = js.native
 }

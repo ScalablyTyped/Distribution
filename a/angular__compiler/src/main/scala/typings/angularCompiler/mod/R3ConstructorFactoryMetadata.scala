@@ -23,15 +23,6 @@ trait R3ConstructorFactoryMetadata
   var deps: js.Array[R3DependencyMetadata] | invalid | Null
   
   /**
-    * An expression representing the constructor type, intended for use within a class definition
-    * itself.
-    *
-    * This can differ from the outer `type` if the class is being compiled by ngcc and is inside
-    * an IIFE structure that uses a different name internally.
-    */
-  var internalType: Expression
-  
-  /**
     * String name of the type being generated (used to name the factory function).
     */
   var name: String
@@ -51,14 +42,8 @@ trait R3ConstructorFactoryMetadata
 }
 object R3ConstructorFactoryMetadata {
   
-  inline def apply(
-    internalType: Expression,
-    name: String,
-    target: FactoryTarget,
-    `type`: R3Reference,
-    typeArgumentCount: Double
-  ): R3ConstructorFactoryMetadata = {
-    val __obj = js.Dynamic.literal(internalType = internalType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], typeArgumentCount = typeArgumentCount.asInstanceOf[js.Any], deps = null)
+  inline def apply(name: String, target: FactoryTarget, `type`: R3Reference, typeArgumentCount: Double): R3ConstructorFactoryMetadata = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], typeArgumentCount = typeArgumentCount.asInstanceOf[js.Any], deps = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[R3ConstructorFactoryMetadata]
   }
@@ -71,8 +56,6 @@ object R3ConstructorFactoryMetadata {
     inline def setDepsNull: Self = StObject.set(x, "deps", null)
     
     inline def setDepsVarargs(value: R3DependencyMetadata*): Self = StObject.set(x, "deps", js.Array(value*))
-    
-    inline def setInternalType(value: Expression): Self = StObject.set(x, "internalType", value.asInstanceOf[js.Any])
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

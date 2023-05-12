@@ -4,7 +4,9 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.node.childProcessMod.ForkOptions
 import typings.std.Error
 import typings.std.Parameters
+import typings.std.PromiseLike
 import typings.std.ReturnType
+import typings.std.Transferable
 import typings.workerpool.anon.On
 import typings.workerpool.workerpoolStrings.auto
 import typings.workerpool.workerpoolStrings.browser
@@ -88,6 +90,20 @@ object mod {
     inline def all(promises: js.Array[Promise[Any, Any]]): Promise[js.Array[Any], Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(promises.asInstanceOf[js.Any]).asInstanceOf[Promise[js.Array[Any], Any]]
   }
   
+  @JSImport("workerpool", "Transfer")
+  @js.native
+  open class Transfer protected () extends StObject {
+    /**
+      * @param message The object to deliver to the main thread.
+      * @param transfer An array of transferable Objects to transfer ownership of.
+      */
+    def this(message: Any, transfer: js.Array[Transferable]) = this()
+    
+    var message: Any = js.native
+    
+    var transfer: js.Array[Transferable] = js.native
+  }
+  
   @JSImport("workerpool", "cpus")
   @js.native
   val cpus: Double = js.native
@@ -108,6 +124,8 @@ object mod {
   
   inline def worker(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("worker")().asInstanceOf[Any]
   inline def worker(methods: StringDictionary[js.Function1[/* repeated */ Any, Any]]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("worker")(methods.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def worker(methods: StringDictionary[js.Function1[/* repeated */ Any, Any]], options: WorkerOptions): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("worker")(methods.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def worker(methods: Unit, options: WorkerOptions): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("worker")(methods.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
   
   inline def workerEmit(payload: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("workerEmit")(payload.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
@@ -121,11 +139,100 @@ object mod {
   @js.native
   trait Proxy[T /* <: StringDictionary[js.Function1[/* repeated */ Any, Any]] */] extends StObject
   
+  trait WorkerCreationOptions extends StObject {
+    
+    /** For process worker type. An array passed as args to child_process.fork */
+    var forkArgs: js.UndefOr[js.Array[String]] = js.undefined
+    
+    /**
+      * For process worker type. An object passed as options to child_process.fork.
+      */
+    var forkOpts: js.UndefOr[ForkOptions] = js.undefined
+    
+    /**
+      * For worker worker type. An object passed to worker_threads.options.
+      */
+    var workerThreadOpts: js.UndefOr[typings.node.workerThreadsMod.WorkerOptions] = js.undefined
+  }
+  object WorkerCreationOptions {
+    
+    inline def apply(): WorkerCreationOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[WorkerCreationOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WorkerCreationOptions] (val x: Self) extends AnyVal {
+      
+      inline def setForkArgs(value: js.Array[String]): Self = StObject.set(x, "forkArgs", value.asInstanceOf[js.Any])
+      
+      inline def setForkArgsUndefined: Self = StObject.set(x, "forkArgs", js.undefined)
+      
+      inline def setForkArgsVarargs(value: String*): Self = StObject.set(x, "forkArgs", js.Array(value*))
+      
+      inline def setForkOpts(value: ForkOptions): Self = StObject.set(x, "forkOpts", value.asInstanceOf[js.Any])
+      
+      inline def setForkOptsUndefined: Self = StObject.set(x, "forkOpts", js.undefined)
+      
+      inline def setWorkerThreadOpts(value: typings.node.workerThreadsMod.WorkerOptions): Self = StObject.set(x, "workerThreadOpts", value.asInstanceOf[js.Any])
+      
+      inline def setWorkerThreadOptsUndefined: Self = StObject.set(x, "workerThreadOpts", js.undefined)
+    }
+  }
+  
+  trait WorkerHandlerOptions
+    extends StObject
+       with WorkerCreationOptions {
+    
+    var script: js.UndefOr[String] = js.undefined
+  }
+  object WorkerHandlerOptions {
+    
+    inline def apply(): WorkerHandlerOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[WorkerHandlerOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WorkerHandlerOptions] (val x: Self) extends AnyVal {
+      
+      inline def setScript(value: String): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
+      
+      inline def setScriptUndefined: Self = StObject.set(x, "script", js.undefined)
+    }
+  }
+  
+  trait WorkerOptions extends StObject {
+    
+    /**
+      * A callback that is called whenever a worker is being terminated.
+      * It can be used to release resources that might have been allocated for this specific worker.
+      * The difference with pool's onTerminateWorker is that this callback runs in the worker context, while onTerminateWorker is executed on the main thread.
+      */
+    var onTerminate: js.UndefOr[js.Function1[/* code */ js.UndefOr[Double], PromiseLike[Unit] | Unit]] = js.undefined
+  }
+  object WorkerOptions {
+    
+    inline def apply(): WorkerOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[WorkerOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WorkerOptions] (val x: Self) extends AnyVal {
+      
+      inline def setOnTerminate(value: /* code */ js.UndefOr[Double] => PromiseLike[Unit] | Unit): Self = StObject.set(x, "onTerminate", js.Any.fromFunction1(value))
+      
+      inline def setOnTerminateUndefined: Self = StObject.set(x, "onTerminate", js.undefined)
+    }
+  }
+  
   @js.native
   trait WorkerPool extends StObject {
     
     /**
       * Execute a function on a worker with given arguments.
+      *
       * @param method When method is a string, a method with this name must exist at the worker
       * and must be registered to make it accessible via the pool.
       * The function will be executed on the worker with given parameters.
@@ -147,7 +254,7 @@ object mod {
       * The proxy contains a proxy for all methods available on the worker.
       * All methods return promises resolving the methods result.
       */
-    // tslint:disable-next-line: no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
     def proxy[T /* <: StringDictionary[js.Function1[/* repeated */ Any, Any]] */](): Promise[Proxy[T], js.Error] = js.native
     
     /** Retrieve statistics on workers, and active and pending tasks. */
@@ -164,12 +271,9 @@ object mod {
     def terminate(force: Unit, timeout: Double): Promise[js.Array[Any], js.Error] = js.native
   }
   
-  trait WorkerPoolOptions extends StObject {
-    
-    /** 2nd argument to pass to childProcess.fork() */
-    var forkArgs: js.UndefOr[js.Array[String]] = js.undefined
-    
-    var forkOpts: js.UndefOr[ForkOptions] = js.undefined
+  trait WorkerPoolOptions
+    extends StObject
+       with WorkerCreationOptions {
     
     /**
       * The default number of maxWorkers is the number of CPU's minus one.
@@ -182,6 +286,28 @@ object mod {
       * Setting this to 'max' will create maxWorkers default workers.
       */
     var minWorkers: js.UndefOr[Double | max] = js.undefined
+    
+    /**
+      * A callback that is called whenever a worker is being created.
+      * It can be used to allocate resources for each worker for example.
+      * Optionally, this callback can return an object containing one or more of the above properties.
+      * The provided properties will be used to override the Pool properties for the worker being created.
+      */
+    var onCreateWorker: js.UndefOr[js.Function1[/* options */ WorkerHandlerOptions, WorkerHandlerOptions | Unit]] = js.undefined
+    
+    /**
+      * A callback that is called whenever a worker is being terminated.
+      * It can be used to release resources that might have been allocated for this specific worker.
+      * The callback is passed as argument an object as described for onCreateWorker, with each property sets with the value for the worker being terminated.
+      */
+    var onTerminateWorker: js.UndefOr[js.Function1[/* options */ WorkerHandlerOptions, Unit]] = js.undefined
+    
+    /**
+      * The timeout in milliseconds to wait for a worker to cleanup it's resources on termination before stopping it forcefully.
+      *
+      * @default 1000.
+      */
+    var workerTerminateTimeout: js.UndefOr[Double] = js.undefined
     
     /**
       * - In case of `'auto'` (default), workerpool will automatically pick a suitable type of worker:
@@ -204,16 +330,6 @@ object mod {
     @scala.inline
     implicit open class MutableBuilder[Self <: WorkerPoolOptions] (val x: Self) extends AnyVal {
       
-      inline def setForkArgs(value: js.Array[String]): Self = StObject.set(x, "forkArgs", value.asInstanceOf[js.Any])
-      
-      inline def setForkArgsUndefined: Self = StObject.set(x, "forkArgs", js.undefined)
-      
-      inline def setForkArgsVarargs(value: String*): Self = StObject.set(x, "forkArgs", js.Array(value*))
-      
-      inline def setForkOpts(value: ForkOptions): Self = StObject.set(x, "forkOpts", value.asInstanceOf[js.Any])
-      
-      inline def setForkOptsUndefined: Self = StObject.set(x, "forkOpts", js.undefined)
-      
       inline def setMaxWorkers(value: Double): Self = StObject.set(x, "maxWorkers", value.asInstanceOf[js.Any])
       
       inline def setMaxWorkersUndefined: Self = StObject.set(x, "maxWorkers", js.undefined)
@@ -221,6 +337,18 @@ object mod {
       inline def setMinWorkers(value: Double | max): Self = StObject.set(x, "minWorkers", value.asInstanceOf[js.Any])
       
       inline def setMinWorkersUndefined: Self = StObject.set(x, "minWorkers", js.undefined)
+      
+      inline def setOnCreateWorker(value: /* options */ WorkerHandlerOptions => WorkerHandlerOptions | Unit): Self = StObject.set(x, "onCreateWorker", js.Any.fromFunction1(value))
+      
+      inline def setOnCreateWorkerUndefined: Self = StObject.set(x, "onCreateWorker", js.undefined)
+      
+      inline def setOnTerminateWorker(value: /* options */ WorkerHandlerOptions => Unit): Self = StObject.set(x, "onTerminateWorker", js.Any.fromFunction1(value))
+      
+      inline def setOnTerminateWorkerUndefined: Self = StObject.set(x, "onTerminateWorker", js.undefined)
+      
+      inline def setWorkerTerminateTimeout(value: Double): Self = StObject.set(x, "workerTerminateTimeout", value.asInstanceOf[js.Any])
+      
+      inline def setWorkerTerminateTimeoutUndefined: Self = StObject.set(x, "workerTerminateTimeout", js.undefined)
       
       inline def setWorkerType(value: auto | web | process | thread): Self = StObject.set(x, "workerType", value.asInstanceOf[js.Any])
       

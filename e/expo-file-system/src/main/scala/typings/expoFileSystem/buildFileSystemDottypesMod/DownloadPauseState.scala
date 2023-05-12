@@ -6,12 +6,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DownloadPauseState extends StObject {
   
+  /**
+    * The local URI of the file to download to. If there is no file at this URI, a new one is created. If there is a file at this URI, its contents are replaced.
+    */
   var fileUri: String
   
+  /**
+    * Object representing the file download options.
+    */
   var options: DownloadOptions
   
+  /**
+    * The string which allows the API to resume a paused download.
+    */
   var resumeData: js.UndefOr[String] = js.undefined
   
+  /**
+    * The remote URI to download from.
+    */
   var url: String
 }
 object DownloadPauseState {

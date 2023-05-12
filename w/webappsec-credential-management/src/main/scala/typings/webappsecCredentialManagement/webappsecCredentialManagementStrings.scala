@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object webappsecCredentialManagementStrings {
   
   @js.native
+  sealed trait conditional extends StObject
+  inline def conditional: conditional = "conditional".asInstanceOf[conditional]
+  
+  @js.native
   sealed trait `cross-platform` extends StObject
   inline def `cross-platform`: `cross-platform` = "cross-platform".asInstanceOf[`cross-platform`]
   

@@ -8,11 +8,11 @@ trait ParametersPathCodespacename extends StObject {
   
   var parameters: PathCodespacename
   
-  var responses: `202304`
+  var responses: `202304401`
 }
 object ParametersPathCodespacename {
   
-  inline def apply(parameters: PathCodespacename, responses: `202304`): ParametersPathCodespacename = {
+  inline def apply(parameters: PathCodespacename, responses: `202304401`): ParametersPathCodespacename = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersPathCodespacename]
   }
@@ -22,6 +22,6 @@ object ParametersPathCodespacename {
     
     inline def setParameters(value: PathCodespacename): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `202304`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `202304401`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

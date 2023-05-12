@@ -18,6 +18,11 @@ object BaseLanguageClient {
   @js.native
   val ^ : js.Any = js.native
   
+  @JSImport("vscode-languageclient", "BaseLanguageClient.CancellableResolveCalls")
+  @js.native
+  def CancellableResolveCalls: Any = js.native
+  inline def CancellableResolveCalls_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CancellableResolveCalls")(x.asInstanceOf[js.Any])
+  
   @JSImport("vscode-languageclient", "BaseLanguageClient.RequestsToCancelOnContentModified")
   @js.native
   def RequestsToCancelOnContentModified: Any = js.native

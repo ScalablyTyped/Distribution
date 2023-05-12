@@ -21,6 +21,8 @@ trait TransformOperation extends StObject {
     */
   var FilterOperation: js.UndefOr[typings.awsSdk.clientsQuicksightMod.FilterOperation] = js.undefined
   
+  var OverrideDatasetParameterOperation: js.UndefOr[typings.awsSdk.clientsQuicksightMod.OverrideDatasetParameterOperation] = js.undefined
+  
   /**
     * An operation that projects columns. Operations that come after a projection can only refer to projected columns.
     */
@@ -59,6 +61,10 @@ object TransformOperation {
     inline def setFilterOperation(value: FilterOperation): Self = StObject.set(x, "FilterOperation", value.asInstanceOf[js.Any])
     
     inline def setFilterOperationUndefined: Self = StObject.set(x, "FilterOperation", js.undefined)
+    
+    inline def setOverrideDatasetParameterOperation(value: OverrideDatasetParameterOperation): Self = StObject.set(x, "OverrideDatasetParameterOperation", value.asInstanceOf[js.Any])
+    
+    inline def setOverrideDatasetParameterOperationUndefined: Self = StObject.set(x, "OverrideDatasetParameterOperation", js.undefined)
     
     inline def setProjectOperation(value: ProjectOperation): Self = StObject.set(x, "ProjectOperation", value.asInstanceOf[js.Any])
     

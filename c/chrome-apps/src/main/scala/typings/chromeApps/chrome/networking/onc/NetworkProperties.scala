@@ -4,8 +4,8 @@ import typings.chromeApps.chrome.networking.onc.internal.NetworkConfigBase
 import typings.chromeApps.chromeAppsStrings.DevicePolicy
 import typings.chromeApps.chromeAppsStrings.Device_
 import typings.chromeApps.chromeAppsStrings.None
-import typings.chromeApps.chromeAppsStrings.User
 import typings.chromeApps.chromeAppsStrings.UserPolicy
+import typings.chromeApps.chromeAppsStrings.User_
 import typings.chromeApps.chromeAppsStrings.getter
 import typings.chromeApps.chromeAppsStrings.unmanaged
 import org.scalablytyped.runtime.StObject
@@ -72,7 +72,7 @@ trait NetworkProperties[M /* <: ManagedObject */, IF /* <: InterfaceType */]
     * 'None' conflicts with extension code generation,
     * so we must use a string for 'Source' instead of a SourceType enum.
     */
-  var Source: js.UndefOr[Device_ | DevicePolicy | User | UserPolicy | None] = js.undefined
+  var Source: js.UndefOr[Device_ | DevicePolicy | User_ | UserPolicy | None] = js.undefined
   
   /** The network's static IP configuration. */
   var StaticIPConfig: js.UndefOr[
@@ -161,7 +161,7 @@ object NetworkProperties {
     
     inline def setSavedIPConfigUndefined: Self = StObject.set(x, "SavedIPConfig", js.undefined)
     
-    inline def setSource(value: Device_ | DevicePolicy | User | UserPolicy | None): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
+    inline def setSource(value: Device_ | DevicePolicy | User_ | UserPolicy | None): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
     
     inline def setSourceUndefined: Self = StObject.set(x, "Source", js.undefined)
     

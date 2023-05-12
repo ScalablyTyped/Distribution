@@ -18,6 +18,34 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
+  @js.native
+  sealed trait FaultTolerance extends StObject
+  @JSImport("@libp2p/interface-transport", "FaultTolerance")
+  @js.native
+  object FaultTolerance extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[FaultTolerance & Double] = js.native
+    
+    /**
+      * should be used for failing in any listen circumstance
+      */
+    @js.native
+    sealed trait FATAL_ALL
+      extends StObject
+         with FaultTolerance
+    /* 0 */ val FATAL_ALL: typings.libp2pInterfaceTransport.mod.FaultTolerance.FATAL_ALL & Double = js.native
+    
+    /**
+      * should be used for not failing when not listening
+      */
+    @js.native
+    sealed trait NO_FATAL
+      extends StObject
+         with FaultTolerance
+    /* 1 */ val NO_FATAL: typings.libp2pInterfaceTransport.mod.FaultTolerance.NO_FATAL & Double = js.native
+  }
+  
   inline def isTransport(other: Any): /* is @libp2p/interface-transport.@libp2p/interface-transport.Transport */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTransport")(other.asInstanceOf[js.Any]).asInstanceOf[/* is @libp2p/interface-transport.@libp2p/interface-transport.Transport */ Boolean]
   
   @JSImport("@libp2p/interface-transport", "symbol")
@@ -129,7 +157,7 @@ object mod {
   type MultiaddrFilter = js.Function1[/* multiaddrs */ js.Array[Multiaddr_], js.Array[Multiaddr_]]
   
   type ProtocolHandler = js.Function2[
-    /* stream */ Duplex[js.typedarray.Uint8Array, js.typedarray.Uint8Array, js.Promise[Unit]], 
+    /* stream */ Duplex[js.typedarray.Uint8Array, js.typedarray.Uint8Array, Any], 
     /* connection */ Connection, 
     Unit
   ]
@@ -165,7 +193,7 @@ object mod {
   }
   
   @js.native
-  trait TransportManager extends EventEmitter[TransportManagerEvents] {
+  trait TransportManager extends StObject {
     
     def add(transport: Transport): Unit = js.native
     
@@ -185,34 +213,8 @@ object mod {
     def transportForMultiaddr(ma: Multiaddr_): js.UndefOr[Transport] = js.native
   }
   
-  trait TransportManagerEvents extends StObject {
-    
-    @JSName("listener:close")
-    var listenerColonclose: CustomEvent[Listener]
-    
-    @JSName("listener:listening")
-    var listenerColonlistening: CustomEvent[Listener]
-  }
-  object TransportManagerEvents {
-    
-    inline def apply(listenerColonclose: CustomEvent[Listener], listenerColonlistening: CustomEvent[Listener]): TransportManagerEvents = {
-      val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("listener:close")(listenerColonclose.asInstanceOf[js.Any])
-      __obj.updateDynamic("listener:listening")(listenerColonlistening.asInstanceOf[js.Any])
-      __obj.asInstanceOf[TransportManagerEvents]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: TransportManagerEvents] (val x: Self) extends AnyVal {
-      
-      inline def setListenerColonclose(value: CustomEvent[Listener]): Self = StObject.set(x, "listener:close", value.asInstanceOf[js.Any])
-      
-      inline def setListenerColonlistening(value: CustomEvent[Listener]): Self = StObject.set(x, "listener:listening", value.asInstanceOf[js.Any])
-    }
-  }
-  
   @js.native
-  trait Upgrader extends EventEmitter[UpgraderEvents] {
+  trait Upgrader extends StObject {
     
     /**
       * Upgrades an inbound connection on transport listener.
@@ -225,28 +227,6 @@ object mod {
       */
     def upgradeOutbound(maConn: MultiaddrConnection): js.Promise[Connection] = js.native
     def upgradeOutbound(maConn: MultiaddrConnection, opts: UpgraderOptions): js.Promise[Connection] = js.native
-  }
-  
-  trait UpgraderEvents extends StObject {
-    
-    var connection: CustomEvent[Connection]
-    
-    var connectionEnd: CustomEvent[Connection]
-  }
-  object UpgraderEvents {
-    
-    inline def apply(connection: CustomEvent[Connection], connectionEnd: CustomEvent[Connection]): UpgraderEvents = {
-      val __obj = js.Dynamic.literal(connection = connection.asInstanceOf[js.Any], connectionEnd = connectionEnd.asInstanceOf[js.Any])
-      __obj.asInstanceOf[UpgraderEvents]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: UpgraderEvents] (val x: Self) extends AnyVal {
-      
-      inline def setConnection(value: CustomEvent[Connection]): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
-      
-      inline def setConnectionEnd(value: CustomEvent[Connection]): Self = StObject.set(x, "connectionEnd", value.asInstanceOf[js.Any])
-    }
   }
   
   trait UpgraderOptions extends StObject {

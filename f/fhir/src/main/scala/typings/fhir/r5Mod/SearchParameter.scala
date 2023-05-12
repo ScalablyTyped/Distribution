@@ -1,6 +1,9 @@
 package typings.fhir.r5Mod
 
+import typings.fhir.fhirStrings.`code-text`
 import typings.fhir.fhirStrings.`not-in`
+import typings.fhir.fhirStrings.`of-type`
+import typings.fhir.fhirStrings.`text-advanced`
 import typings.fhir.fhirStrings.`type`
 import typings.fhir.fhirStrings.above
 import typings.fhir.fhirStrings.active
@@ -9,7 +12,6 @@ import typings.fhir.fhirStrings.below
 import typings.fhir.fhirStrings.composite
 import typings.fhir.fhirStrings.contains
 import typings.fhir.fhirStrings.date
-import typings.fhir.fhirStrings.distance
 import typings.fhir.fhirStrings.draft
 import typings.fhir.fhirStrings.eb
 import typings.fhir.fhirStrings.eq
@@ -18,15 +20,14 @@ import typings.fhir.fhirStrings.ge
 import typings.fhir.fhirStrings.gt
 import typings.fhir.fhirStrings.identifier
 import typings.fhir.fhirStrings.in
+import typings.fhir.fhirStrings.iterate
 import typings.fhir.fhirStrings.le
 import typings.fhir.fhirStrings.lt
 import typings.fhir.fhirStrings.missing
 import typings.fhir.fhirStrings.ne
-import typings.fhir.fhirStrings.nearby
 import typings.fhir.fhirStrings.normal
 import typings.fhir.fhirStrings.not
 import typings.fhir.fhirStrings.number
-import typings.fhir.fhirStrings.ofType
 import typings.fhir.fhirStrings.other
 import typings.fhir.fhirStrings.phonetic
 import typings.fhir.fhirStrings.quantity_
@@ -56,6 +57,12 @@ trait SearchParameter
   
   var _comparator: js.UndefOr[js.Array[Element]] = js.undefined
   
+  var _constraint: js.UndefOr[Element] = js.undefined
+  
+  var _copyright: js.UndefOr[Element] = js.undefined
+  
+  var _copyrightLabel: js.UndefOr[Element] = js.undefined
+  
   var _date: js.UndefOr[Element] = js.undefined
   
   var _derivedFrom: js.UndefOr[Element] = js.undefined
@@ -74,6 +81,8 @@ trait SearchParameter
   
   var _name: js.UndefOr[Element] = js.undefined
   
+  var _processingMode: js.UndefOr[Element] = js.undefined
+  
   var _publisher: js.UndefOr[Element] = js.undefined
   
   var _purpose: js.UndefOr[Element] = js.undefined
@@ -82,15 +91,15 @@ trait SearchParameter
   
   var _target: js.UndefOr[js.Array[Element]] = js.undefined
   
+  var _title: js.UndefOr[Element] = js.undefined
+  
   var _type: js.UndefOr[Element] = js.undefined
   
   var _url: js.UndefOr[Element] = js.undefined
   
   var _version: js.UndefOr[Element] = js.undefined
   
-  var _xpath: js.UndefOr[Element] = js.undefined
-  
-  var _xpathUsage: js.UndefOr[Element] = js.undefined
+  var _versionAlgorithmString: js.UndefOr[Element] = js.undefined
   
   /**
     * A search parameter must always apply to at least one resource type. When search parameters apply to more than one resource type, they can be used against any of the listed resource types, or in a cross-type search (see [Cross Resource Search](http.html#xres-search)).
@@ -98,12 +107,17 @@ trait SearchParameter
   var base: js.Array[String]
   
   /**
-    * Systems are not required to list all the chain names they support, but if they don't list them, clients might not know to use them.
+    * Notes:
+    * * Not all systems will declare chain values.  If no chain values are specified at all, then no presumptions can be made about the degree of chaining support available
+    * * A server may use a single chain value of '*' to mean that all reference search types supported can be chained rather than enumerating all chain values
+    * *  If a particular reference search parameter is supported, but not subsequent chaining, then just list that search parameter name - e.g. for Patient.practitioner, the chain value would be ```practitioner```
+    * * If a particular reference search parameter is supported with unlimited chaining beneath it, then follow the search parameter name with '.'.  E.g. ```practitioner.```
+    * * If there are specific (not unlimited) chaining paths allowed they can be explicitly enumerated.  E.g. ```practitioner.organization```
     */
   var chain: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
-    * For maximum compatibility, use only lowercase ASCII characters.
+    * For maximum compatibility, use only lowercase ASCII characters. Note that HL7 will never define multiple search parameters with the same code.
     */
   var code: String
   
@@ -118,12 +132,29 @@ trait SearchParameter
   var component: js.UndefOr[js.Array[SearchParameterComponent]] = js.undefined
   
   /**
+    * FHIRPath expression that defines/sets a complex constraint for when this SearchParameter is applicable.
+    */
+  var constraint: js.UndefOr[String] = js.undefined
+  
+  /**
     * May be a web site, an email address, a telephone number, etc.
+    * See guidance around (not) making local changes to elements [here](canonicalresource.html#localization).
     */
   var contact: js.UndefOr[js.Array[ContactDetail]] = js.undefined
   
   /**
-    * Note that this is not the same as the resource last-modified-date, since the resource may be a secondary representation of the search parameter. Additional specific dates may be added as extensions or be found by consulting Provenances associated with past versions of the resource.
+    * ...
+    */
+  var copyright: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The (c) symbol should NOT be included in this string. It will be added by software when rendering the notation. Full details about licensing, restrictions, warrantees, etc. goes in the more general 'copyright' element.
+    */
+  var copyrightLabel: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The date is often not tracked until the resource is published, but may be present on draft content. Note that this is not the same as the resource last-modified-date, since the resource may be a secondary representation of the search parameter. Additional specific dates may be added as extensions or be found by consulting Provenances associated with past versions of the resource.
+    * See guidance around (not) making local changes to elements [here](canonicalresource.html#localization).
     */
   var date: js.UndefOr[String] = js.undefined
   
@@ -133,7 +164,7 @@ trait SearchParameter
   var derivedFrom: js.UndefOr[String] = js.undefined
   
   /**
-    * This description can be used to capture details such as why the search parameter was built, comments about misuse, instructions for clinical use and interpretation, literature references, examples from the paper world, etc. It is not a rendering of the search parameter as conveyed in the 'text' field of the resource itself. This item SHOULD be populated unless the information is available from context (e.g. the language of the search parameter is presumed to be the predominant language in the place the search parameter was created).
+    * This description can be used to capture details such as comments about misuse, instructions for clinical use and interpretation, literature references, examples from the paper world, etc. It is not a rendering of the search parameter as conveyed in the 'text' field of the resource itself. This item SHOULD be populated unless the information is available from context (e.g. the language of the search parameter is presumed to be the predominant language in the place the search parameter was created).
     */
   var description: String
   
@@ -148,7 +179,13 @@ trait SearchParameter
   var expression: js.UndefOr[String] = js.undefined
   
   /**
+    * A formal identifier that is used to identify this search parameter when it is represented in other formats, or referenced in a specification, model, design or an instance.
+    */
+  var identifier: js.UndefOr[js.Array[Identifier]] = js.undefined
+  
+  /**
     * It may be possible for the search parameter to be used in jurisdictions other than those for which it was originally designed or intended.
+    * DEPRECATION NOTE: For consistency, implementations are encouraged to migrate to using the new 'jurisdiction' code in the useContext element.  (I.e. useContext.code indicating http://terminology.hl7.org/CodeSystem/usage-context-type#jurisdiction and useContext.valueCodeableConcept indicating the jurisdiction.)
     */
   var jurisdiction: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
@@ -157,7 +194,7 @@ trait SearchParameter
     */
   var modifier: js.UndefOr[
     js.Array[
-      missing | exact | contains | not | text | in | `not-in` | below | above | `type` | identifier | ofType
+      missing | exact | contains | not | text | in | `not-in` | below | above | `type` | identifier | `of-type` | `code-text` | `text-advanced` | iterate
     ]
   ] = js.undefined
   
@@ -177,6 +214,11 @@ trait SearchParameter
   var name: String
   
   /**
+    * How the search parameter relates to the set of elements returned by evaluating the expression query.
+    */
+  var processingMode: js.UndefOr[normal | phonetic | other] = js.undefined
+  
+  /**
     * Usually an organization but may be an individual. The publisher (or steward) of the search parameter is the organization or individual primarily responsible for the maintenance and upkeep of the search parameter. This is not necessarily the same individual or organization that developed and initially authored the content. The publisher is the primary point of contact for questions or issues with the search parameter. This item SHOULD be populated unless the information is available from context.
     */
   var publisher: js.UndefOr[String] = js.undefined
@@ -192,13 +234,20 @@ trait SearchParameter
   
   /**
     * Allows filtering of search parameters that are appropriate for use versus not.
+    * See guidance around (not) making local changes to elements [here](canonicalresource.html#localization).
     */
   var status: draft | active | retired | unknown
   
   /**
-    * Types of resource (if a resource is referenced).
+    * In some cases, targets may exist for a search parameter that do not exist for the specified FHIRPath for all of the resources identified in SearchParameter.base.  For example, the core clinical-encounter search parameter allows both Encounter and EpisodeOfCare as targets, even though not all of the base resources have EpisodeOfCare as a valid target.
+    * However, the list of targets SHOULD cover all targets that might appear that are permitted by the specified FHIRPath.
     */
   var target: js.UndefOr[js.Array[String]] = js.undefined
+  
+  /**
+    * This name does not need to be machine-processing friendly and may contain punctuation, white-space, etc.
+    */
+  var title: js.UndefOr[String] = js.undefined
   
   /**
     * The type of value that a search parameter may contain, and how the content is interpreted.
@@ -218,19 +267,19 @@ trait SearchParameter
   var useContext: js.UndefOr[js.Array[UsageContext]] = js.undefined
   
   /**
-    * There may be different search parameter instances that have the same identifier but different versions.  The version can be appended to the url in a reference to allow a reference to a particular business version of the search parameter with the format [url]|[version].
+    * There may be different search parameter instances that have the same identifier but different versions.  The version can be appended to the url in a reference to allow a reference to a particular business version of the search parameter with the format [url]|[version]. The version SHOULD NOT contain a '#' - see [Business Version](resource.html#bv-format).
     */
   var version: js.UndefOr[String] = js.undefined
   
   /**
-    * Note that the elements returned by the XPath are sometimes complex elements where logic is required to determine quite how to handle them; e.g. CodeableConcepts may contain text and/or multiple codings, where the codings themselves contain a code and a system.
+    * If set as a string, this is a FHIRPath expression that has two additional context variables passed in - %version1 and %version2 and will return a negative number if version1 is newer, a positive number if version2 and a 0 if the version ordering can't be successfully be determined.
     */
-  var xpath: js.UndefOr[String] = js.undefined
+  var versionAlgorithmCoding: js.UndefOr[Coding] = js.undefined
   
   /**
-    * How the search parameter relates to the set of elements returned by evaluating the xpath query.
+    * If set as a string, this is a FHIRPath expression that has two additional context variables passed in - %version1 and %version2 and will return a negative number if version1 is newer, a positive number if version2 and a 0 if the version ordering can't be successfully be determined.
     */
-  var xpathUsage: js.UndefOr[normal | phonetic | nearby | distance | other] = js.undefined
+  var versionAlgorithmString: js.UndefOr[String] = js.undefined
 }
 object SearchParameter {
   
@@ -275,11 +324,23 @@ object SearchParameter {
     
     inline def setComponentVarargs(value: SearchParameterComponent*): Self = StObject.set(x, "component", js.Array(value*))
     
+    inline def setConstraint(value: String): Self = StObject.set(x, "constraint", value.asInstanceOf[js.Any])
+    
+    inline def setConstraintUndefined: Self = StObject.set(x, "constraint", js.undefined)
+    
     inline def setContact(value: js.Array[ContactDetail]): Self = StObject.set(x, "contact", value.asInstanceOf[js.Any])
     
     inline def setContactUndefined: Self = StObject.set(x, "contact", js.undefined)
     
     inline def setContactVarargs(value: ContactDetail*): Self = StObject.set(x, "contact", js.Array(value*))
+    
+    inline def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
+    
+    inline def setCopyrightLabel(value: String): Self = StObject.set(x, "copyrightLabel", value.asInstanceOf[js.Any])
+    
+    inline def setCopyrightLabelUndefined: Self = StObject.set(x, "copyrightLabel", js.undefined)
+    
+    inline def setCopyrightUndefined: Self = StObject.set(x, "copyright", js.undefined)
     
     inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
@@ -299,6 +360,12 @@ object SearchParameter {
     
     inline def setExpressionUndefined: Self = StObject.set(x, "expression", js.undefined)
     
+    inline def setIdentifier(value: js.Array[Identifier]): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
+    
+    inline def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
+    
+    inline def setIdentifierVarargs(value: Identifier*): Self = StObject.set(x, "identifier", js.Array(value*))
+    
     inline def setJurisdiction(value: js.Array[CodeableConcept]): Self = StObject.set(x, "jurisdiction", value.asInstanceOf[js.Any])
     
     inline def setJurisdictionUndefined: Self = StObject.set(x, "jurisdiction", js.undefined)
@@ -307,14 +374,14 @@ object SearchParameter {
     
     inline def setModifier(
       value: js.Array[
-          missing | exact | contains | not | text | in | `not-in` | below | above | `type` | identifier | ofType
+          missing | exact | contains | not | text | in | `not-in` | below | above | `type` | identifier | `of-type` | `code-text` | `text-advanced` | iterate
         ]
     ): Self = StObject.set(x, "modifier", value.asInstanceOf[js.Any])
     
     inline def setModifierUndefined: Self = StObject.set(x, "modifier", js.undefined)
     
     inline def setModifierVarargs(
-      value: (missing | exact | contains | not | text | in | `not-in` | below | above | `type` | identifier | ofType)*
+      value: (missing | exact | contains | not | text | in | `not-in` | below | above | `type` | identifier | `of-type` | `code-text` | `text-advanced` | iterate)*
     ): Self = StObject.set(x, "modifier", js.Array(value*))
     
     inline def setMultipleAnd(value: Boolean): Self = StObject.set(x, "multipleAnd", value.asInstanceOf[js.Any])
@@ -326,6 +393,10 @@ object SearchParameter {
     inline def setMultipleOrUndefined: Self = StObject.set(x, "multipleOr", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setProcessingMode(value: normal | phonetic | other): Self = StObject.set(x, "processingMode", value.asInstanceOf[js.Any])
+    
+    inline def setProcessingModeUndefined: Self = StObject.set(x, "processingMode", js.undefined)
     
     inline def setPublisher(value: String): Self = StObject.set(x, "publisher", value.asInstanceOf[js.Any])
     
@@ -345,6 +416,10 @@ object SearchParameter {
     
     inline def setTargetVarargs(value: String*): Self = StObject.set(x, "target", js.Array(value*))
     
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    
     inline def setType(value: number | date | string | token | reference | composite | quantity_ | uri | special): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
@@ -357,15 +432,15 @@ object SearchParameter {
     
     inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
+    inline def setVersionAlgorithmCoding(value: Coding): Self = StObject.set(x, "versionAlgorithmCoding", value.asInstanceOf[js.Any])
+    
+    inline def setVersionAlgorithmCodingUndefined: Self = StObject.set(x, "versionAlgorithmCoding", js.undefined)
+    
+    inline def setVersionAlgorithmString(value: String): Self = StObject.set(x, "versionAlgorithmString", value.asInstanceOf[js.Any])
+    
+    inline def setVersionAlgorithmStringUndefined: Self = StObject.set(x, "versionAlgorithmString", js.undefined)
+    
     inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
-    
-    inline def setXpath(value: String): Self = StObject.set(x, "xpath", value.asInstanceOf[js.Any])
-    
-    inline def setXpathUndefined: Self = StObject.set(x, "xpath", js.undefined)
-    
-    inline def setXpathUsage(value: normal | phonetic | nearby | distance | other): Self = StObject.set(x, "xpathUsage", value.asInstanceOf[js.Any])
-    
-    inline def setXpathUsageUndefined: Self = StObject.set(x, "xpathUsage", js.undefined)
     
     inline def set_base(value: js.Array[Element]): Self = StObject.set(x, "_base", value.asInstanceOf[js.Any])
     
@@ -388,6 +463,18 @@ object SearchParameter {
     inline def set_comparatorUndefined: Self = StObject.set(x, "_comparator", js.undefined)
     
     inline def set_comparatorVarargs(value: Element*): Self = StObject.set(x, "_comparator", js.Array(value*))
+    
+    inline def set_constraint(value: Element): Self = StObject.set(x, "_constraint", value.asInstanceOf[js.Any])
+    
+    inline def set_constraintUndefined: Self = StObject.set(x, "_constraint", js.undefined)
+    
+    inline def set_copyright(value: Element): Self = StObject.set(x, "_copyright", value.asInstanceOf[js.Any])
+    
+    inline def set_copyrightLabel(value: Element): Self = StObject.set(x, "_copyrightLabel", value.asInstanceOf[js.Any])
+    
+    inline def set_copyrightLabelUndefined: Self = StObject.set(x, "_copyrightLabel", js.undefined)
+    
+    inline def set_copyrightUndefined: Self = StObject.set(x, "_copyright", js.undefined)
     
     inline def set_date(value: Element): Self = StObject.set(x, "_date", value.asInstanceOf[js.Any])
     
@@ -427,6 +514,10 @@ object SearchParameter {
     
     inline def set_nameUndefined: Self = StObject.set(x, "_name", js.undefined)
     
+    inline def set_processingMode(value: Element): Self = StObject.set(x, "_processingMode", value.asInstanceOf[js.Any])
+    
+    inline def set_processingModeUndefined: Self = StObject.set(x, "_processingMode", js.undefined)
+    
     inline def set_publisher(value: Element): Self = StObject.set(x, "_publisher", value.asInstanceOf[js.Any])
     
     inline def set_publisherUndefined: Self = StObject.set(x, "_publisher", js.undefined)
@@ -445,6 +536,10 @@ object SearchParameter {
     
     inline def set_targetVarargs(value: Element*): Self = StObject.set(x, "_target", js.Array(value*))
     
+    inline def set_title(value: Element): Self = StObject.set(x, "_title", value.asInstanceOf[js.Any])
+    
+    inline def set_titleUndefined: Self = StObject.set(x, "_title", js.undefined)
+    
     inline def set_type(value: Element): Self = StObject.set(x, "_type", value.asInstanceOf[js.Any])
     
     inline def set_typeUndefined: Self = StObject.set(x, "_type", js.undefined)
@@ -455,14 +550,10 @@ object SearchParameter {
     
     inline def set_version(value: Element): Self = StObject.set(x, "_version", value.asInstanceOf[js.Any])
     
+    inline def set_versionAlgorithmString(value: Element): Self = StObject.set(x, "_versionAlgorithmString", value.asInstanceOf[js.Any])
+    
+    inline def set_versionAlgorithmStringUndefined: Self = StObject.set(x, "_versionAlgorithmString", js.undefined)
+    
     inline def set_versionUndefined: Self = StObject.set(x, "_version", js.undefined)
-    
-    inline def set_xpath(value: Element): Self = StObject.set(x, "_xpath", value.asInstanceOf[js.Any])
-    
-    inline def set_xpathUndefined: Self = StObject.set(x, "_xpath", js.undefined)
-    
-    inline def set_xpathUsage(value: Element): Self = StObject.set(x, "_xpathUsage", value.asInstanceOf[js.Any])
-    
-    inline def set_xpathUsageUndefined: Self = StObject.set(x, "_xpathUsage", js.undefined)
   }
 }

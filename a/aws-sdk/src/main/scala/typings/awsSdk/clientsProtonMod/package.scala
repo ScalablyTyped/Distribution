@@ -1,8 +1,8 @@
 package typings.awsSdk.clientsProtonMod
 
+import typings.awsSdk.awsSdkStrings.AUTOMATED
 import typings.awsSdk.awsSdkStrings.CUSTOMER_MANAGED
 import typings.awsSdk.awsSdkStrings.DIRECTLY_DEFINED
-import typings.awsSdk.awsSdkStrings.TEMPLATE_SYNC
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,6 +11,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 type Arn = java.lang.String
 
 type AwsAccountId = java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ACTIVE
+  - typings.awsSdk.awsSdkStrings.RESOLVED
+  - java.lang.String
+*/
+type BlockerStatus = _BlockerStatus | java.lang.String
+
+type BlockerType = AUTOMATED | java.lang.String
 
 type Boolean = scala.Boolean
 
@@ -102,6 +111,41 @@ type FullTemplateVersionNumber = java.lang.String
 
 type GitBranchName = java.lang.String
 
+type Integer = Double
+
+type LatestSyncBlockers = js.Array[SyncBlocker]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.name__
+  - typings.awsSdk.awsSdkStrings.deploymentStatus
+  - typings.awsSdk.awsSdkStrings.templateName
+  - typings.awsSdk.awsSdkStrings.serviceName
+  - typings.awsSdk.awsSdkStrings.deployedTemplateVersionStatus
+  - typings.awsSdk.awsSdkStrings.environmentName
+  - typings.awsSdk.awsSdkStrings.lastDeploymentAttemptedAtBefore
+  - typings.awsSdk.awsSdkStrings.lastDeploymentAttemptedAtAfter
+  - typings.awsSdk.awsSdkStrings.createdAtBefore
+  - typings.awsSdk.awsSdkStrings.createdAtAfter
+  - java.lang.String
+*/
+type ListServiceInstancesFilterBy = _ListServiceInstancesFilterBy | java.lang.String
+
+type ListServiceInstancesFilterList = js.Array[ListServiceInstancesFilter]
+
+type ListServiceInstancesFilterValue = java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.name__
+  - typings.awsSdk.awsSdkStrings.deploymentStatus
+  - typings.awsSdk.awsSdkStrings.templateName
+  - typings.awsSdk.awsSdkStrings.serviceName
+  - typings.awsSdk.awsSdkStrings.environmentName
+  - typings.awsSdk.awsSdkStrings.lastDeploymentAttemptedAt
+  - typings.awsSdk.awsSdkStrings.createdAt_
+  - java.lang.String
+*/
+type ListServiceInstancesSortBy = _ListServiceInstancesSortBy | java.lang.String
+
 type MaxPageResults = Double
 
 type NextToken = java.lang.String
@@ -109,6 +153,8 @@ type NextToken = java.lang.String
 type NotifyResourceDeploymentStatusChangeInputOutputsList = js.Array[Output]
 
 type NotifyResourceDeploymentStatusChangeInputStatusMessageString = java.lang.String
+
+type OpsFilePath = java.lang.String
 
 type OutputKey = java.lang.String
 
@@ -233,6 +279,13 @@ type ServiceTemplateVersionArn = java.lang.String
 
 type ServiceTemplateVersionSummaryList = js.Array[ServiceTemplateVersionSummary]
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ASCENDING
+  - typings.awsSdk.awsSdkStrings.DESCENDING
+  - java.lang.String
+*/
+type SortOrder = _SortOrder | java.lang.String
+
 type SpecContents = java.lang.String
 
 type StatusMessage = java.lang.String
@@ -241,7 +294,14 @@ type String = java.lang.String
 
 type Subdirectory = java.lang.String
 
-type SyncType = TEMPLATE_SYNC | java.lang.String
+type SyncBlockerContexts = js.Array[SyncBlockerContext]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.TEMPLATE_SYNC
+  - typings.awsSdk.awsSdkStrings.SERVICE_SYNC
+  - java.lang.String
+*/
+type SyncType = _SyncType | java.lang.String
 
 type TagKey = java.lang.String
 

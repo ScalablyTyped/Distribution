@@ -6,6 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CollisionComponentData extends StObject {
   
+  var angularOffset: Quat
+  
   var asset: Any
   
   var axis: Double
@@ -17,6 +19,8 @@ trait CollisionComponentData extends StObject {
   var height: Double
   
   var initialized: Boolean
+  
+  var linearOffset: Vec3
   
   var model: Any
   
@@ -33,12 +37,14 @@ trait CollisionComponentData extends StObject {
 object CollisionComponentData {
   
   inline def apply(
+    angularOffset: Quat,
     asset: Any,
     axis: Double,
     enabled: Boolean,
     halfExtents: Vec3,
     height: Double,
     initialized: Boolean,
+    linearOffset: Vec3,
     model: Any,
     radius: Double,
     render: Any,
@@ -46,13 +52,15 @@ object CollisionComponentData {
     shape: Any,
     `type`: String
   ): CollisionComponentData = {
-    val __obj = js.Dynamic.literal(asset = asset.asInstanceOf[js.Any], axis = axis.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any], halfExtents = halfExtents.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], initialized = initialized.asInstanceOf[js.Any], model = model.asInstanceOf[js.Any], radius = radius.asInstanceOf[js.Any], render = render.asInstanceOf[js.Any], renderAsset = renderAsset.asInstanceOf[js.Any], shape = shape.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(angularOffset = angularOffset.asInstanceOf[js.Any], asset = asset.asInstanceOf[js.Any], axis = axis.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any], halfExtents = halfExtents.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], initialized = initialized.asInstanceOf[js.Any], linearOffset = linearOffset.asInstanceOf[js.Any], model = model.asInstanceOf[js.Any], radius = radius.asInstanceOf[js.Any], render = render.asInstanceOf[js.Any], renderAsset = renderAsset.asInstanceOf[js.Any], shape = shape.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CollisionComponentData]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: CollisionComponentData] (val x: Self) extends AnyVal {
+    
+    inline def setAngularOffset(value: Quat): Self = StObject.set(x, "angularOffset", value.asInstanceOf[js.Any])
     
     inline def setAsset(value: Any): Self = StObject.set(x, "asset", value.asInstanceOf[js.Any])
     
@@ -65,6 +73,8 @@ object CollisionComponentData {
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     inline def setInitialized(value: Boolean): Self = StObject.set(x, "initialized", value.asInstanceOf[js.Any])
+    
+    inline def setLinearOffset(value: Vec3): Self = StObject.set(x, "linearOffset", value.asInstanceOf[js.Any])
     
     inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     

@@ -11,11 +11,15 @@ trait WebGLHardwareTexture
   extends StObject
      with HardwareTextureWrapper {
   
-  var _MSAARenderBuffer: Nullable[WebGLRenderbuffer] = js.native
+  /* private */ var _MSAARenderBuffers: Any = js.native
   
   /* private */ var _context: Any = js.native
   
   /* private */ var _webGLTexture: Any = js.native
+  
+  def addMSAARenderBuffer(buffer: WebGLRenderbuffer): Unit = js.native
+  
+  def releaseMSAARenderBuffers(): Unit = js.native
   
   def set(hardwareTexture: WebGLTexture): Unit = js.native
   

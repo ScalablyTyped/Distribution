@@ -6,8 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GPUBlendState extends StObject {
   
+  /**
+    * Defines the blending behavior of the corresponding render target for the alpha channel.
+    */
   var alpha: GPUBlendComponent
   
+  /**
+    * Defines the blending behavior of the corresponding render target for color channels.
+    */
   var color: GPUBlendComponent
 }
 object GPUBlendState {

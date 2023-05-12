@@ -7,11 +7,6 @@ import typings.ioredis.builtConnectorsSentinelConnectorMod.PreferredSlaves
 import typings.ioredis.builtRedisRedisOptionsMod.ReconnectOnError
 import typings.ioredis.ioredisStrings.master_
 import typings.ioredis.ioredisStrings.slave
-import typings.node.AbortSignal
-import typings.node.NodeJS.ErrnoException
-import typings.node.dnsMod.LookupOneOptions
-import typings.node.netMod.LookupFunction
-import typings.node.netMod.OnReadOpts
 import typings.node.tlsMod.ConnectionOptions
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -22,8 +17,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OmitRedisOptionsporthostp extends StObject {
   
   var Connector: js.UndefOr[ConnectorConstructor] = js.undefined
-  
-  var allowHalfOpen: js.UndefOr[Boolean] = js.undefined
   
   var autoPipeliningIgnoredCommands: js.UndefOr[js.Array[String]] = js.undefined
   
@@ -53,23 +46,11 @@ trait OmitRedisOptionsporthostp extends StObject {
   
   var family: js.UndefOr[Double] = js.undefined
   
-  var fd: js.UndefOr[Double] = js.undefined
-  
-  var hints: js.UndefOr[Double] = js.undefined
-  
   var keepAlive: js.UndefOr[Double] = js.undefined
-  
-  var keepAliveInitialDelay: js.UndefOr[Double] = js.undefined
   
   var keyPrefix: js.UndefOr[String] = js.undefined
   
   var lazyConnect: js.UndefOr[Boolean] = js.undefined
-  
-  var localAddress: js.UndefOr[String] = js.undefined
-  
-  var localPort: js.UndefOr[Double] = js.undefined
-  
-  var lookup: js.UndefOr[LookupFunction] = js.undefined
   
   var maxLoadingRetryTime: js.UndefOr[Double] = js.undefined
   
@@ -85,13 +66,9 @@ trait OmitRedisOptionsporthostp extends StObject {
   
   var offlineQueue: js.UndefOr[Boolean] = js.undefined
   
-  var onread: js.UndefOr[OnReadOpts] = js.undefined
-  
   var password: js.UndefOr[String] = js.undefined
   
   var preferredSlaves: js.UndefOr[PreferredSlaves] = js.undefined
-  
-  var readable: js.UndefOr[Boolean] = js.undefined
   
   var reconnectOnError: js.UndefOr[ReconnectOnError | Null] = js.undefined
   
@@ -115,19 +92,13 @@ trait OmitRedisOptionsporthostp extends StObject {
   
   var showFriendlyErrorStack: js.UndefOr[Boolean] = js.undefined
   
-  var signal: js.UndefOr[AbortSignal] = js.undefined
-  
   var stringNumbers: js.UndefOr[Boolean] = js.undefined
-  
-  var timeout: js.UndefOr[Double] = js.undefined
   
   var tls: js.UndefOr[ConnectionOptions] = js.undefined
   
   var updateSentinels: js.UndefOr[Boolean] = js.undefined
   
   var username: js.UndefOr[String] = js.undefined
-  
-  var writable: js.UndefOr[Boolean] = js.undefined
 }
 object OmitRedisOptionsporthostp {
   
@@ -138,10 +109,6 @@ object OmitRedisOptionsporthostp {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: OmitRedisOptionsporthostp] (val x: Self) extends AnyVal {
-    
-    inline def setAllowHalfOpen(value: Boolean): Self = StObject.set(x, "allowHalfOpen", value.asInstanceOf[js.Any])
-    
-    inline def setAllowHalfOpenUndefined: Self = StObject.set(x, "allowHalfOpen", js.undefined)
     
     inline def setAutoPipeliningIgnoredCommands(value: js.Array[String]): Self = StObject.set(x, "autoPipeliningIgnoredCommands", value.asInstanceOf[js.Any])
     
@@ -205,19 +172,7 @@ object OmitRedisOptionsporthostp {
     
     inline def setFamilyUndefined: Self = StObject.set(x, "family", js.undefined)
     
-    inline def setFd(value: Double): Self = StObject.set(x, "fd", value.asInstanceOf[js.Any])
-    
-    inline def setFdUndefined: Self = StObject.set(x, "fd", js.undefined)
-    
-    inline def setHints(value: Double): Self = StObject.set(x, "hints", value.asInstanceOf[js.Any])
-    
-    inline def setHintsUndefined: Self = StObject.set(x, "hints", js.undefined)
-    
     inline def setKeepAlive(value: Double): Self = StObject.set(x, "keepAlive", value.asInstanceOf[js.Any])
-    
-    inline def setKeepAliveInitialDelay(value: Double): Self = StObject.set(x, "keepAliveInitialDelay", value.asInstanceOf[js.Any])
-    
-    inline def setKeepAliveInitialDelayUndefined: Self = StObject.set(x, "keepAliveInitialDelay", js.undefined)
     
     inline def setKeepAliveUndefined: Self = StObject.set(x, "keepAlive", js.undefined)
     
@@ -228,20 +183,6 @@ object OmitRedisOptionsporthostp {
     inline def setLazyConnect(value: Boolean): Self = StObject.set(x, "lazyConnect", value.asInstanceOf[js.Any])
     
     inline def setLazyConnectUndefined: Self = StObject.set(x, "lazyConnect", js.undefined)
-    
-    inline def setLocalAddress(value: String): Self = StObject.set(x, "localAddress", value.asInstanceOf[js.Any])
-    
-    inline def setLocalAddressUndefined: Self = StObject.set(x, "localAddress", js.undefined)
-    
-    inline def setLocalPort(value: Double): Self = StObject.set(x, "localPort", value.asInstanceOf[js.Any])
-    
-    inline def setLocalPortUndefined: Self = StObject.set(x, "localPort", js.undefined)
-    
-    inline def setLookup(
-      value: (/* hostname */ String, /* options */ LookupOneOptions, /* callback */ js.Function3[/* err */ ErrnoException | Null, /* address */ String, /* family */ Double, Unit]) => Unit
-    ): Self = StObject.set(x, "lookup", js.Any.fromFunction3(value))
-    
-    inline def setLookupUndefined: Self = StObject.set(x, "lookup", js.undefined)
     
     inline def setMaxLoadingRetryTime(value: Double): Self = StObject.set(x, "maxLoadingRetryTime", value.asInstanceOf[js.Any])
     
@@ -273,10 +214,6 @@ object OmitRedisOptionsporthostp {
     
     inline def setOfflineQueueUndefined: Self = StObject.set(x, "offlineQueue", js.undefined)
     
-    inline def setOnread(value: OnReadOpts): Self = StObject.set(x, "onread", value.asInstanceOf[js.Any])
-    
-    inline def setOnreadUndefined: Self = StObject.set(x, "onread", js.undefined)
-    
     inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
     inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
@@ -288,10 +225,6 @@ object OmitRedisOptionsporthostp {
     inline def setPreferredSlavesUndefined: Self = StObject.set(x, "preferredSlaves", js.undefined)
     
     inline def setPreferredSlavesVarargs(value: Ip*): Self = StObject.set(x, "preferredSlaves", js.Array(value*))
-    
-    inline def setReadable(value: Boolean): Self = StObject.set(x, "readable", value.asInstanceOf[js.Any])
-    
-    inline def setReadableUndefined: Self = StObject.set(x, "readable", js.undefined)
     
     inline def setReconnectOnError(
       value: /* err */ js.Error => Boolean | typings.ioredis.ioredisInts.`1` | typings.ioredis.ioredisInts.`2`
@@ -341,17 +274,9 @@ object OmitRedisOptionsporthostp {
     
     inline def setShowFriendlyErrorStackUndefined: Self = StObject.set(x, "showFriendlyErrorStack", js.undefined)
     
-    inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
-    
-    inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
-    
     inline def setStringNumbers(value: Boolean): Self = StObject.set(x, "stringNumbers", value.asInstanceOf[js.Any])
     
     inline def setStringNumbersUndefined: Self = StObject.set(x, "stringNumbers", js.undefined)
-    
-    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
-    
-    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
     inline def setTls(value: ConnectionOptions): Self = StObject.set(x, "tls", value.asInstanceOf[js.Any])
     
@@ -364,9 +289,5 @@ object OmitRedisOptionsporthostp {
     inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     
     inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
-    
-    inline def setWritable(value: Boolean): Self = StObject.set(x, "writable", value.asInstanceOf[js.Any])
-    
-    inline def setWritableUndefined: Self = StObject.set(x, "writable", js.undefined)
   }
 }

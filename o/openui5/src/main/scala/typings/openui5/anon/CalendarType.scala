@@ -21,7 +21,7 @@ trait CalendarType extends StObject {
   ] = js.undefined
   
   /**
-    * @since 1.108.0 specifies the calendar week numbering. If specified, this overwrites `oFormatOptions.firstDayOfWeek`
+    * since 1.108.0 specifies the calendar week numbering. If specified, this overwrites `oFormatOptions.firstDayOfWeek`
     * and `oFormatOptions.minimalDaysInFirstWeek`.
     */
   var calendarWeekNumbering: js.UndefOr[
@@ -29,13 +29,13 @@ trait CalendarType extends StObject {
   ] = js.undefined
   
   /**
-    * @since 1.105.0 specifies the first day of the week starting with `0` (which is Sunday); if not defined,
+    * since 1.105.0 specifies the first day of the week starting with `0` (which is Sunday); if not defined,
     * the value taken from the locale is used
     */
   var firstDayOfWeek: js.UndefOr[int] = js.undefined
   
   /**
-    * @since 1.34.0 contains pattern symbols (e.g. "yMMMd" or "Hms") which will be converted into the pattern
+    * since 1.34.0 contains pattern symbols (e.g. "yMMMd" or "Hms") which will be converted into the pattern
     * in the used locale, which matches the wanted symbols best. The symbols must be in canonical order, that
     * is: Era (G), Year (y/Y), Quarter (q/Q), Month (M/L), Week (w), Day-Of-Week (E/e/c), Day (d), Hour (h/H/k/K/j/J),
     * Minute (m), Second (s), Timezone (z/Z/v/V/O/X/x) See http://unicode.org/reports/tr35/tr35-dates.html#availableFormats_appendItems
@@ -43,7 +43,7 @@ trait CalendarType extends StObject {
   var format: js.UndefOr[String] = js.undefined
   
   /**
-    * @since 1.48.0 if true, the {@link sap.ui.core.format.DateFormat#format format} method expects an array
+    * since 1.48.0 if true, the {@link sap.ui.core.format.DateFormat#format format} method expects an array
     * with two dates as the first argument and formats them as interval. Further interval "Jan 10, 2008 - Jan
     * 12, 2008" will be formatted as "Jan 10-12, 2008" if the 'format' option is set with necessary symbols.
     * Otherwise the two given dates are formatted separately and concatenated with local dependent pattern.
@@ -51,7 +51,15 @@ trait CalendarType extends StObject {
   var interval: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * @since 1.105.0 minimal days at the beginning of the year which define the first calendar week; if not
+    * Since 1.113.0, a delimiter for intervals. With a given interval delimiter a specific interval format
+    * is created. **Example:** If `oFormatOptions.intervalDelimiter` is set to "...", an interval would be
+    * given as "09:15 AM...11:45 AM". **Note:** If this format option is set, the locale-specific interval
+    * notation is overruled, for example "09:15 – 11:45 AM" becomes "9:15 AM...11:45 AM".
+    */
+  var intervalDelimiter: js.UndefOr[String] = js.undefined
+  
+  /**
+    * since 1.105.0 minimal days at the beginning of the year which define the first calendar week; if not
     * defined, the value taken from the locale is used
     */
   var minimalDaysInFirstWeek: js.UndefOr[int] = js.undefined
@@ -82,7 +90,7 @@ trait CalendarType extends StObject {
   var relativeScale: js.UndefOr[String] = js.undefined
   
   /**
-    * @since 1.32.10, 1.34.4 the style of the relative format. The valid values are "wide", "short", "narrow"
+    * since 1.32.10, 1.34.4 the style of the relative format. The valid values are "wide", "short", "narrow"
     */
   var relativeStyle: js.UndefOr[String] = js.undefined
   
@@ -134,6 +142,10 @@ object CalendarType {
     inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
     inline def setInterval(value: Boolean): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+    
+    inline def setIntervalDelimiter(value: String): Self = StObject.set(x, "intervalDelimiter", value.asInstanceOf[js.Any])
+    
+    inline def setIntervalDelimiterUndefined: Self = StObject.set(x, "intervalDelimiter", js.undefined)
     
     inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
     

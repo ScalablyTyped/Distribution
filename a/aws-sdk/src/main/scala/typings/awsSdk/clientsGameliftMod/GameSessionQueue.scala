@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GameSessionQueue extends StObject {
   
   /**
-    *  Information that is added to all events that are related to this game session queue. 
+    *  Information that is added to all events that are related to this game session queue.
     */
   var CustomEventData: js.UndefOr[QueueCustomEventData] = js.undefined
   
@@ -22,7 +22,7 @@ trait GameSessionQueue extends StObject {
   var FilterConfiguration: js.UndefOr[typings.awsSdk.clientsGameliftMod.FilterConfiguration] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) that is assigned to a GameLift game session queue resource and uniquely identifies it. ARNs are unique across all Regions. Format is arn:aws:gamelift:&lt;region&gt;::gamesessionqueue/&lt;queue name&gt;. In a GameLift game session queue ARN, the resource ID matches the Name value.
+    * The Amazon Resource Name (ARN) that is assigned to a Amazon GameLift game session queue resource and uniquely identifies it. ARNs are unique across all Regions. Format is arn:aws:gamelift:&lt;region&gt;::gamesessionqueue/&lt;queue name&gt;. In a Amazon GameLift game session queue ARN, the resource ID matches the Name value.
     */
   var GameSessionQueueArn: js.UndefOr[typings.awsSdk.clientsGameliftMod.GameSessionQueueArn] = js.undefined
   

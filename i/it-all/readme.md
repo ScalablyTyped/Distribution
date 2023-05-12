@@ -1,7 +1,7 @@
 
 # Scala.js typings for it-all
 
-Typings are for version 2.0.0
+Typings are for version 3.0.2
 
 ## Library description:
 Collects all values from an (async) iterable and returns them as an array

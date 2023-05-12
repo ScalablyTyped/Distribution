@@ -20,6 +20,8 @@ object stdSerializers {
   
   inline def err(err: js.Error): typings.pinoStdSerializers.mod.SerializedError = ^.asInstanceOf[js.Dynamic].applyDynamic("err")(err.asInstanceOf[js.Any]).asInstanceOf[typings.pinoStdSerializers.mod.SerializedError]
   
+  inline def errWithCause(err: js.Error): typings.pinoStdSerializers.mod.SerializedError = ^.asInstanceOf[js.Dynamic].applyDynamic("errWithCause")(err.asInstanceOf[js.Any]).asInstanceOf[typings.pinoStdSerializers.mod.SerializedError]
+  
   inline def mapHttpRequest(req: IncomingMessage): Req = ^.asInstanceOf[js.Dynamic].applyDynamic("mapHttpRequest")(req.asInstanceOf[js.Any]).asInstanceOf[Req]
   
   inline def mapHttpResponse(res: ServerResponse[IncomingMessage]): Res = ^.asInstanceOf[js.Dynamic].applyDynamic("mapHttpResponse")(res.asInstanceOf[js.Any]).asInstanceOf[Res]

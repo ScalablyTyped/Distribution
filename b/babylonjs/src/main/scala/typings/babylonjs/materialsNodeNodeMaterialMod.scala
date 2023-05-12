@@ -9,13 +9,7 @@ import typings.babylonjs.materialsImageProcessingConfigurationMod.IImageProcessi
 import typings.babylonjs.materialsImageProcessingConfigurationMod.ImageProcessingConfiguration
 import typings.babylonjs.materialsMaterialDefinesMod.MaterialDefines
 import typings.babylonjs.materialsMaterialMod.Material
-import typings.babylonjs.materialsNodeBlocksDualCurrentScreenBlockMod.CurrentScreenBlock
-import typings.babylonjs.materialsNodeBlocksDualImageSourceBlockMod.ImageSourceBlock
-import typings.babylonjs.materialsNodeBlocksDualReflectionTextureBaseBlockMod.ReflectionTextureBaseBlock
-import typings.babylonjs.materialsNodeBlocksDualTextureBlockMod.TextureBlock
 import typings.babylonjs.materialsNodeBlocksInputInputBlockMod.InputBlock
-import typings.babylonjs.materialsNodeBlocksParticleParticleTextureBlockMod.ParticleTextureBlock
-import typings.babylonjs.materialsNodeBlocksPbrRefractionBlockMod.RefractionBlock
 import typings.babylonjs.materialsNodeEnumsNodeMaterialModesMod.NodeMaterialModes
 import typings.babylonjs.materialsNodeNodeMaterialBlockMod.NodeMaterialBlock
 import typings.babylonjs.materialsNodeOptimizersNodeMaterialOptimizerMod.NodeMaterialOptimizer
@@ -268,6 +262,13 @@ object materialsNodeNodeMaterialMod {
     def generateCode(): String = js.native
     
     /**
+      * Gets the list of all texture blocks
+      * Note that this method will scan all attachedBlocks and return blocks that are texture blocks
+      * @returns
+      */
+    def getAllTextureBlocks(): js.Array[NodeMaterialTextureBlocks] = js.native
+    
+    /**
       * Get a block by its name
       * @param name defines the name of the block to retrieve
       * @returns the required block or null if not found
@@ -296,11 +297,10 @@ object materialsNodeNodeMaterialMod {
     
     /**
       * Gets the list of texture blocks
+      * Note that this method will only return blocks that are reachable from the final block(s) and only after the material has been built!
       * @returns an array of texture blocks
       */
-    def getTextureBlocks(): js.Array[
-        TextureBlock | ReflectionTextureBaseBlock | RefractionBlock | CurrentScreenBlock | ParticleTextureBlock | ImageSourceBlock
-      ] = js.native
+    def getTextureBlocks(): js.Array[NodeMaterialTextureBlocks] = js.native
     
     /**
       * Gets or sets a boolean indicating that alpha value must be ignored (This will turn alpha blending off even if an alpha value is produced by the material)
@@ -547,6 +547,13 @@ object materialsNodeNodeMaterialMod {
     def SnippetUrl: String = js.native
     inline def SnippetUrl_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SnippetUrl")(x.asInstanceOf[js.Any])
     
+    /**
+      * Checks if a block is a texture block
+      * @param block The block to check
+      * @returns True if the block is a texture block
+      */
+    inline def _BlockIsTextureBlock(block: NodeMaterialBlock): /* is babylonjs.babylonjs/Materials/Node/nodeMaterial.NodeMaterialTextureBlocks */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("_BlockIsTextureBlock")(block.asInstanceOf[js.Any]).asInstanceOf[/* is babylonjs.babylonjs/Materials/Node/nodeMaterial.NodeMaterialTextureBlocks */ Boolean]
+    
     @JSImport("babylonjs/Materials/Node/nodeMaterial", "NodeMaterial._BuildIdGenerator")
     @js.native
     def _BuildIdGenerator: Any = js.native
@@ -565,6 +572,10 @@ object materialsNodeNodeMaterialMod {
     var BUMPDIRECTUV: Double = js.native
     
     var BonesPerMesh: Double = js.native
+    
+    var CAMERA_ORTHOGRAPHIC: Boolean = js.native
+    
+    var CAMERA_PERSPECTIVE: Boolean = js.native
     
     /* CompleteClass */
     var COLORCURVES: Boolean = js.native
@@ -637,6 +648,8 @@ object materialsNodeNodeMaterialMod {
     
     var UV6: Boolean = js.native
     
+    var VERTEXCOLOR_NME: Boolean = js.native
+    
     /* CompleteClass */
     var VIGNETTE: Boolean = js.native
     
@@ -691,4 +704,16 @@ object materialsNodeNodeMaterialMod {
       inline def setEmitComments(value: Boolean): Self = StObject.set(x, "emitComments", value.asInstanceOf[js.Any])
     }
   }
+  
+  /* Rewritten from type alias, can be one of: 
+    - typings.babylonjs.materialsNodeBlocksDualTextureBlockMod.TextureBlock
+    - typings.babylonjs.materialsNodeBlocksDualReflectionTextureBaseBlockMod.ReflectionTextureBaseBlock
+    - typings.babylonjs.materialsNodeBlocksPbrRefractionBlockMod.RefractionBlock
+    - typings.babylonjs.materialsNodeBlocksDualCurrentScreenBlockMod.CurrentScreenBlock
+    - typings.babylonjs.materialsNodeBlocksParticleParticleTextureBlockMod.ParticleTextureBlock
+    - typings.babylonjs.materialsNodeBlocksDualImageSourceBlockMod.ImageSourceBlock
+    - typings.babylonjs.materialsNodeBlocksTriPlanarBlockMod.TriPlanarBlock
+    - typings.babylonjs.materialsNodeBlocksBiPlanarBlockMod.BiPlanarBlock
+  */
+  trait NodeMaterialTextureBlocks extends StObject
 }

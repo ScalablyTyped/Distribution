@@ -8,7 +8,7 @@ trait GetDownloadAuthorizationOpts
   extends StObject
      with CommonArgs {
   
-  var b2ContentDisposition: String
+  var b2ContentDisposition: js.UndefOr[String] = js.undefined
   
   var bucketId: String
   
@@ -21,13 +21,8 @@ trait GetDownloadAuthorizationOpts
 }
 object GetDownloadAuthorizationOpts {
   
-  inline def apply(
-    b2ContentDisposition: String,
-    bucketId: String,
-    fileNamePrefix: String,
-    validDurationInSeconds: Double
-  ): GetDownloadAuthorizationOpts = {
-    val __obj = js.Dynamic.literal(b2ContentDisposition = b2ContentDisposition.asInstanceOf[js.Any], bucketId = bucketId.asInstanceOf[js.Any], fileNamePrefix = fileNamePrefix.asInstanceOf[js.Any], validDurationInSeconds = validDurationInSeconds.asInstanceOf[js.Any])
+  inline def apply(bucketId: String, fileNamePrefix: String, validDurationInSeconds: Double): GetDownloadAuthorizationOpts = {
+    val __obj = js.Dynamic.literal(bucketId = bucketId.asInstanceOf[js.Any], fileNamePrefix = fileNamePrefix.asInstanceOf[js.Any], validDurationInSeconds = validDurationInSeconds.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDownloadAuthorizationOpts]
   }
   
@@ -35,6 +30,8 @@ object GetDownloadAuthorizationOpts {
   implicit open class MutableBuilder[Self <: GetDownloadAuthorizationOpts] (val x: Self) extends AnyVal {
     
     inline def setB2ContentDisposition(value: String): Self = StObject.set(x, "b2ContentDisposition", value.asInstanceOf[js.Any])
+    
+    inline def setB2ContentDispositionUndefined: Self = StObject.set(x, "b2ContentDisposition", js.undefined)
     
     inline def setBucketId(value: String): Self = StObject.set(x, "bucketId", value.asInstanceOf[js.Any])
     

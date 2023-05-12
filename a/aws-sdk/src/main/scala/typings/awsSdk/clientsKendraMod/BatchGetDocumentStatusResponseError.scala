@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BatchGetDocumentStatusResponseError extends StObject {
   
   /**
-    * The unique identifier of the document whose status could not be retrieved.
+    * The identifier of the document whose status could not be retrieved.
     */
   var DocumentId: js.UndefOr[typings.awsSdk.clientsKendraMod.DocumentId] = js.undefined
   

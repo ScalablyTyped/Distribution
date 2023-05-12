@@ -1,6 +1,26 @@
 package typings.reactSelect
 
 import typings.reactSelect.anon.Bottom
+import typings.reactSelect.anon.Css
+import typings.reactSelect.distDeclarationsSrcComponentsContainersMod.ContainerProps
+import typings.reactSelect.distDeclarationsSrcComponentsContainersMod.IndicatorsContainerProps
+import typings.reactSelect.distDeclarationsSrcComponentsContainersMod.ValueContainerProps
+import typings.reactSelect.distDeclarationsSrcComponentsControlMod.ControlProps
+import typings.reactSelect.distDeclarationsSrcComponentsGroupMod.GroupHeadingProps
+import typings.reactSelect.distDeclarationsSrcComponentsGroupMod.GroupProps
+import typings.reactSelect.distDeclarationsSrcComponentsIndicatorsMod.ClearIndicatorProps
+import typings.reactSelect.distDeclarationsSrcComponentsIndicatorsMod.DropdownIndicatorProps
+import typings.reactSelect.distDeclarationsSrcComponentsIndicatorsMod.IndicatorSeparatorProps
+import typings.reactSelect.distDeclarationsSrcComponentsIndicatorsMod.LoadingIndicatorProps
+import typings.reactSelect.distDeclarationsSrcComponentsInputMod.InputProps
+import typings.reactSelect.distDeclarationsSrcComponentsMenuMod.MenuListProps
+import typings.reactSelect.distDeclarationsSrcComponentsMenuMod.MenuProps
+import typings.reactSelect.distDeclarationsSrcComponentsMenuMod.NoticeProps
+import typings.reactSelect.distDeclarationsSrcComponentsMenuMod.PortalStyleArgs
+import typings.reactSelect.distDeclarationsSrcComponentsMultiValueMod.MultiValueProps
+import typings.reactSelect.distDeclarationsSrcComponentsOptionMod.OptionProps
+import typings.reactSelect.distDeclarationsSrcComponentsPlaceholderMod.PlaceholderProps
+import typings.reactSelect.distDeclarationsSrcComponentsSingleValueMod.SingleValueProps
 import typings.reactSelect.distDeclarationsSrcTypesMod.ClassNamesState
 import typings.reactSelect.distDeclarationsSrcTypesMod.CommonPropsAndClassName
 import typings.reactSelect.distDeclarationsSrcTypesMod.GroupBase
@@ -11,21 +31,45 @@ import typings.reactSelect.distDeclarationsSrcTypesMod.Options
 import typings.reactSelect.distDeclarationsSrcTypesMod.PropsValue
 import typings.reactSelect.distDeclarationsSrcTypesMod.SingleValue
 import typings.reactSelect.reactSelectStrings.className
+import typings.reactSelect.reactSelectStrings.clearIndicator
 import typings.reactSelect.reactSelectStrings.clearValue
+import typings.reactSelect.reactSelectStrings.container
+import typings.reactSelect.reactSelectStrings.control
 import typings.reactSelect.reactSelectStrings.cx
+import typings.reactSelect.reactSelectStrings.dropdownIndicator
+import typings.reactSelect.reactSelectStrings.getClassNames
 import typings.reactSelect.reactSelectStrings.getStyles
 import typings.reactSelect.reactSelectStrings.getValue
+import typings.reactSelect.reactSelectStrings.group
+import typings.reactSelect.reactSelectStrings.groupHeading
 import typings.reactSelect.reactSelectStrings.hasValue
+import typings.reactSelect.reactSelectStrings.indicatorSeparator
+import typings.reactSelect.reactSelectStrings.indicatorsContainer
+import typings.reactSelect.reactSelectStrings.input
 import typings.reactSelect.reactSelectStrings.isMulti
 import typings.reactSelect.reactSelectStrings.isRtl
+import typings.reactSelect.reactSelectStrings.loadingIndicator
+import typings.reactSelect.reactSelectStrings.loadingMessage
+import typings.reactSelect.reactSelectStrings.menu
+import typings.reactSelect.reactSelectStrings.menuList
+import typings.reactSelect.reactSelectStrings.menuPortal
+import typings.reactSelect.reactSelectStrings.multiValue
+import typings.reactSelect.reactSelectStrings.multiValueLabel
+import typings.reactSelect.reactSelectStrings.multiValueRemove
+import typings.reactSelect.reactSelectStrings.noOptionsMessage
+import typings.reactSelect.reactSelectStrings.option
 import typings.reactSelect.reactSelectStrings.options
+import typings.reactSelect.reactSelectStrings.placeholder
 import typings.reactSelect.reactSelectStrings.selectOption
 import typings.reactSelect.reactSelectStrings.selectProps
 import typings.reactSelect.reactSelectStrings.setValue
+import typings.reactSelect.reactSelectStrings.singleValue
 import typings.reactSelect.reactSelectStrings.theme
+import typings.reactSelect.reactSelectStrings.valueContainer
 import typings.std.HTMLElement
 import typings.std.Omit
 import typings.std.Partial
+import typings.std.Pick
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -66,24 +110,19 @@ object distDeclarationsSrcUtilsMod {
     callback: js.Function1[/* element */ HTMLElement | (Window & (/* globalThis */ Any)), Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("animatedScrollTo")(element.asInstanceOf[js.Any], to.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def classNames(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("classNames")().asInstanceOf[String]
-  inline def classNames(prefix: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("classNames")(prefix.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def classNames(prefix: String, state: Unit, className: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("classNames")(prefix.asInstanceOf[js.Any], state.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def classNames(prefix: String, state: ClassNamesState): String = (^.asInstanceOf[js.Dynamic].applyDynamic("classNames")(prefix.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def classNames(prefix: String, state: ClassNamesState, className: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("classNames")(prefix.asInstanceOf[js.Any], state.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def classNames(prefix: Null, state: Unit, className: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("classNames")(prefix.asInstanceOf[js.Any], state.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def classNames(prefix: Null, state: ClassNamesState): String = (^.asInstanceOf[js.Dynamic].applyDynamic("classNames")(prefix.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def classNames(prefix: Null, state: ClassNamesState, className: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("classNames")(prefix.asInstanceOf[js.Any], state.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def classNames(prefix: Unit, state: Unit, className: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("classNames")(prefix.asInstanceOf[js.Any], state.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def classNames(prefix: Unit, state: ClassNamesState): String = (^.asInstanceOf[js.Dynamic].applyDynamic("classNames")(prefix.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def classNames(prefix: Unit, state: ClassNamesState, className: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("classNames")(prefix.asInstanceOf[js.Any], state.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def classNames(prefix: String, state: Unit, classNameList: String*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("classNames")((scala.List(prefix.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).`++`(classNameList.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[String]
+  inline def classNames(prefix: String, state: ClassNamesState, classNameList: String*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("classNames")((scala.List(prefix.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).`++`(classNameList.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[String]
+  inline def classNames(prefix: Null, state: Unit, classNameList: String*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("classNames")((scala.List(prefix.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).`++`(classNameList.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[String]
+  inline def classNames(prefix: Null, state: ClassNamesState, classNameList: String*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("classNames")((scala.List(prefix.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).`++`(classNameList.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[String]
+  inline def classNames(prefix: Unit, state: Unit, classNameList: String*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("classNames")((scala.List(prefix.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).`++`(classNameList.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[String]
+  inline def classNames(prefix: Unit, state: ClassNamesState, classNameList: String*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("classNames")((scala.List(prefix.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).`++`(classNameList.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[String]
   
   inline def cleanCommonProps[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */, AdditionalProps](props: (Partial[CommonPropsAndClassName[Option, IsMulti, Group]]) & AdditionalProps): Omit[
     AdditionalProps, 
-    /* keyof react-select.react-select/dist/declarations/src/types.CommonPropsAndClassName<Option, IsMulti, Group> */ className | cx | getStyles | hasValue | isMulti | isRtl | options | selectProps | theme | clearValue | getValue | selectOption | setValue
+    /* keyof react-select.react-select/dist/declarations/src/types.CommonPropsAndClassName<Option, IsMulti, Group> */ className | cx | getStyles | hasValue | isMulti | isRtl | options | selectProps | theme | clearValue | getClassNames | getValue | selectOption | setValue
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("cleanCommonProps")(props.asInstanceOf[js.Any]).asInstanceOf[Omit[
     AdditionalProps, 
-    /* keyof react-select.react-select/dist/declarations/src/types.CommonPropsAndClassName<Option, IsMulti, Group> */ className | cx | getStyles | hasValue | isMulti | isRtl | options | selectProps | theme | clearValue | getValue | selectOption | setValue
+    /* keyof react-select.react-select/dist/declarations/src/types.CommonPropsAndClassName<Option, IsMulti, Group> */ className | cx | getStyles | hasValue | isMulti | isRtl | options | selectProps | theme | clearValue | getClassNames | getValue | selectOption | setValue
   ]]
   
   inline def cleanValue[Option](value: PropsValue[Option]): Options[Option] = ^.asInstanceOf[js.Dynamic].applyDynamic("cleanValue")(value.asInstanceOf[js.Any]).asInstanceOf[Options[Option]]
@@ -96,6 +135,337 @@ object distDeclarationsSrcUtilsMod {
   
   inline def getScrollTop(el: Window & (/* globalThis */ Any)): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getScrollTop")(el.asInstanceOf[js.Any]).asInstanceOf[Double]
   inline def getScrollTop(el: HTMLElement): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getScrollTop")(el.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  inline def getStyleProps[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](
+    props: (Pick[
+      CommonPropsAndClassName[Option, IsMulti, Group], 
+      getClassNames | className | getStyles | cx
+    ]) & (ClearIndicatorProps[Option, IsMulti, Group]),
+    name: clearIndicator
+  ): Css = (^.asInstanceOf[js.Dynamic].applyDynamic("getStyleProps")(props.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Css]
+  inline def getStyleProps[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](
+    props: (Pick[
+      CommonPropsAndClassName[Option, IsMulti, Group], 
+      getClassNames | className | getStyles | cx
+    ]) & (ClearIndicatorProps[Option, IsMulti, Group]),
+    name: clearIndicator,
+    classNamesState: ClassNamesState
+  ): Css = (^.asInstanceOf[js.Dynamic].applyDynamic("getStyleProps")(props.asInstanceOf[js.Any], name.asInstanceOf[js.Any], classNamesState.asInstanceOf[js.Any])).asInstanceOf[Css]
+  inline def getStyleProps[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](
+    props: (Pick[
+      CommonPropsAndClassName[Option, IsMulti, Group], 
+      getClassNames | className | getStyles | cx
+    ]) & (ContainerProps[Option, IsMulti, Group]),
+    name: container
+  ): Css = (^.asInstanceOf[js.Dynamic].applyDynamic("getStyleProps")(props.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Css]
+  inline def getStyleProps[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](
+    props: (Pick[
+      CommonPropsAndClassName[Option, IsMulti, Group], 
+      getClassNames | className | getStyles | cx
+    ]) & (ContainerProps[Option, IsMulti, Group]),
+    name: container,
+    classNamesState: ClassNamesState
+  ): Css = (^.asInstanceOf[js.Dynamic].applyDynamic("getStyleProps")(props.asInstanceOf[js.Any], name.asInstanceOf[js.Any], classNamesState.asInstanceOf[js.Any])).asInstanceOf[Css]
+  inline def getStyleProps[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](
+    props: (Pick[
+      CommonPropsAndClassName[Option, IsMulti, Group], 
+      getClassNames | className | getStyles | cx
+    ]) & (ControlProps[Option, IsMulti, Group]),
+    name: control
+  ): Css = (^.asInstanceOf[js.Dynamic].applyDynamic("getStyleProps")(props.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Css]
+  inline def getStyleProps[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](
+    props: (Pick[
+      CommonPropsAndClassName[Option, IsMulti, Group], 
+      getClassNames | className | getStyles | cx
+    ]) & (ControlProps[Option, IsMulti, Group]),
+    name: control,
+    classNamesState: ClassNamesState
+  ): Css = (^.asInstanceOf[js.Dynamic].applyDynamic("getStyleProps")(props.asInstanceOf[js.Any], name.asInstanceOf[js.Any], classNamesState.asInstanceOf[js.Any])).asInstanceOf[Css]
+  inline def getStyleProps[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](
+    props: (Pick[
+      CommonPropsAndClassName[Option, IsMulti, Group], 
+      getClassNames | className | getStyles | cx
+    ]) & (DropdownIndicatorProps[Option, IsMulti, Group]),
+    name: dropdownIndicator
+  ): Css = (^.asInstanceOf[js.Dynamic].applyDynamic("getStyleProps")(props.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Css]
+  inline def getStyleProps[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](
+    props: (Pick[
+      CommonPropsAndClassName[Option, IsMulti, Group], 
+      getClassNames | className | getStyles | cx
+    ]) & (DropdownIndicatorProps[Option, IsMulti, Group]),
+    name: dropdownIndicator,
+    classNamesState: ClassNamesState
+  ): Css = (^.asInstanceOf[js.Dynamic].applyDynamic("getStyleProps")(props.asInstanceOf[js.Any], name.asInstanceOf[js.Any], classNamesState.asInstanceOf[js.Any])).asInstanceOf[Css]
+  inline def getStyleProps[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](
+    props: (Pick[
+      CommonPropsAndClassName[Option, IsMulti, Group], 
+      getClassNames | className | getStyles | cx
+    ]) & (GroupProps[Option, IsMulti, Group]),
+    name: group
+  ): Css = (^.asInstanceOf[js.Dynamic].applyDynamic("getStyleProps")(props.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Css]
+  inline def getStyleProps[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](
+    props: (Pick[
+      CommonPropsAndClassName[Option, IsMulti, Group], 
+      getClassNames | className | getStyles | cx
+    ]) & (GroupHeadingProps[Option, IsMulti, Group]),
+    name: groupHeading
+  ): Css = (^.asInstanceOf[js.Dynamic].applyDynamic("getStyleProps")(props.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Css]
+  inline def getStyleProps[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](
+    props: (Pick[
+      CommonPropsAndClassName[Option, IsMulti, Group], 
+      getClassNames | className | getStyles | cx
+    ]) & (GroupHeadingProps[Option, IsMulti, Group]),
+    name: groupHeading,
+    classNamesState: ClassNamesState
+  ): Css = (^.asInstanceOf[js.Dynamic].applyDynamic("getStyleProps")(props.asInstanceOf[js.Any], name.asInstanceOf[js.Any], classNamesState.asInstanceOf[js.Any])).asInstanceOf[Css]
+  inline def getStyleProps[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](
+    props: (Pick[
+      CommonPropsAndClassName[Option, IsMulti, Group], 
+      getClassNames | className | getStyles | cx
+    ]) & (GroupProps[Option, IsMulti, Group]),
+    name: group,
+    classNamesState: ClassNamesState
+  ): Css = (^.asInstanceOf[js.Dynamic].applyDynamic("getStyleProps")(props.asInstanceOf[js.Any], name.asInstanceOf[js.Any], classNamesState.asInstanceOf[js.Any])).asInstanceOf[Css]
+  inline def getStyleProps[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](
+    props: (Pick[
+      CommonPropsAndClassName[Option, IsMulti, Group], 
+      getClassNames | className | getStyles | cx
+    ]) & (IndicatorSeparatorProps[Option, IsMulti, Group]),
+    name: indicatorSeparator
+  ): Css = (^.asInstanceOf[js.Dynamic].applyDynamic("getStyleProps")(props.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Css]
+  inline def getStyleProps[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](
+    props: (Pick[
+      CommonPropsAndClassName[Option, IsMulti, Group], 
+      getClassNames | className | getStyles | cx
+    ]) & (IndicatorSeparatorProps[Option, IsMulti, Group]),
+    name: indicatorSeparator,
+    classNamesState: ClassNamesState
+  ): Css = (^.asInstanceOf[js.Dynamic].applyDynamic("getStyleProps")(props.asInstanceOf[js.Any], name.asInstanceOf[js.Any], classNamesState.asInstanceOf[js.Any])).asInstanceOf[Css]
+  inline def getStyleProps[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](
+    props: (Pick[
+      CommonPropsAndClassName[Option, IsMulti, Group], 
+      getClassNames | className | getStyles | cx
+    ]) & (IndicatorsContainerProps[Option, IsMulti, Group]),
+    name: indicatorsContainer
+  ): Css = (^.asInstanceOf[js.Dynamic].applyDynamic("getStyleProps")(props.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Css]
+  inline def getStyleProps[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](
+    props: (Pick[
+      CommonPropsAndClassName[Option, IsMulti, Group], 
+      getClassNames | className | getStyles | cx
+    ]) & (IndicatorsContainerProps[Option, IsMulti, Group]),
+    name: indicatorsContainer,
+    classNamesState: ClassNamesState
+  ): Css = (^.asInstanceOf[js.Dynamic].applyDynamic("getStyleProps")(props.asInstanceOf[js.Any], name.asInstanceOf[js.Any], classNamesState.asInstanceOf[js.Any])).asInstanceOf[Css]
+  inline def getStyleProps[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](
+    props: (Pick[
+      CommonPropsAndClassName[Option, IsMulti, Group], 
+      getClassNames | className | getStyles | cx
+    ]) & (InputProps[Option, IsMulti, Group]),
+    name: input
+  ): Css = (^.asInstanceOf[js.Dynamic].applyDynamic("getStyleProps")(props.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Css]
+  inline def getStyleProps[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](
+    props: (Pick[
+      CommonPropsAndClassName[Option, IsMulti, Group], 
+      getClassNames | className | getStyles | cx
+    ]) & (InputProps[Option, IsMulti, Group]),
+    name: input,
+    classNamesState: ClassNamesState
+  ): Css = (^.asInstanceOf[js.Dynamic].applyDynamic("getStyleProps")(props.asInstanceOf[js.Any], name.asInstanceOf[js.Any], classNamesState.asInstanceOf[js.Any])).asInstanceOf[Css]
+  inline def getStyleProps[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](
+    props: (Pick[
+      CommonPropsAndClassName[Option, IsMulti, Group], 
+      getClassNames | className | getStyles | cx
+    ]) & (LoadingIndicatorProps[Option, IsMulti, Group]),
+    name: loadingIndicator
+  ): Css = (^.asInstanceOf[js.Dynamic].applyDynamic("getStyleProps")(props.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Css]
+  inline def getStyleProps[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](
+    props: (Pick[
+      CommonPropsAndClassName[Option, IsMulti, Group], 
+      getClassNames | className | getStyles | cx
+    ]) & (LoadingIndicatorProps[Option, IsMulti, Group]),
+    name: loadingIndicator,
+    classNamesState: ClassNamesState
+  ): Css = (^.asInstanceOf[js.Dynamic].applyDynamic("getStyleProps")(props.asInstanceOf[js.Any], name.asInstanceOf[js.Any], classNamesState.asInstanceOf[js.Any])).asInstanceOf[Css]
+  inline def getStyleProps[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](
+    props: (Pick[
+      CommonPropsAndClassName[Option, IsMulti, Group], 
+      getClassNames | className | getStyles | cx
+    ]) & (NoticeProps[Option, IsMulti, Group]),
+    name: loadingMessage
+  ): Css = (^.asInstanceOf[js.Dynamic].applyDynamic("getStyleProps")(props.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Css]
+  inline def getStyleProps[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](
+    props: (Pick[
+      CommonPropsAndClassName[Option, IsMulti, Group], 
+      getClassNames | className | getStyles | cx
+    ]) & (NoticeProps[Option, IsMulti, Group]),
+    name: loadingMessage,
+    classNamesState: ClassNamesState
+  ): Css = (^.asInstanceOf[js.Dynamic].applyDynamic("getStyleProps")(props.asInstanceOf[js.Any], name.asInstanceOf[js.Any], classNamesState.asInstanceOf[js.Any])).asInstanceOf[Css]
+  inline def getStyleProps[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](
+    props: (Pick[
+      CommonPropsAndClassName[Option, IsMulti, Group], 
+      getClassNames | className | getStyles | cx
+    ]) & (MenuProps[Option, IsMulti, Group]),
+    name: menu
+  ): Css = (^.asInstanceOf[js.Dynamic].applyDynamic("getStyleProps")(props.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Css]
+  inline def getStyleProps[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](
+    props: (Pick[
+      CommonPropsAndClassName[Option, IsMulti, Group], 
+      getClassNames | className | getStyles | cx
+    ]) & (MenuListProps[Option, IsMulti, Group]),
+    name: menuList
+  ): Css = (^.asInstanceOf[js.Dynamic].applyDynamic("getStyleProps")(props.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Css]
+  inline def getStyleProps[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](
+    props: (Pick[
+      CommonPropsAndClassName[Option, IsMulti, Group], 
+      getClassNames | className | getStyles | cx
+    ]) & (MenuListProps[Option, IsMulti, Group]),
+    name: menuList,
+    classNamesState: ClassNamesState
+  ): Css = (^.asInstanceOf[js.Dynamic].applyDynamic("getStyleProps")(props.asInstanceOf[js.Any], name.asInstanceOf[js.Any], classNamesState.asInstanceOf[js.Any])).asInstanceOf[Css]
+  inline def getStyleProps[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](
+    props: (Pick[
+      CommonPropsAndClassName[Option, IsMulti, Group], 
+      getClassNames | className | getStyles | cx
+    ]) & PortalStyleArgs,
+    name: menuPortal
+  ): Css = (^.asInstanceOf[js.Dynamic].applyDynamic("getStyleProps")(props.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Css]
+  inline def getStyleProps[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](
+    props: (Pick[
+      CommonPropsAndClassName[Option, IsMulti, Group], 
+      getClassNames | className | getStyles | cx
+    ]) & PortalStyleArgs,
+    name: menuPortal,
+    classNamesState: ClassNamesState
+  ): Css = (^.asInstanceOf[js.Dynamic].applyDynamic("getStyleProps")(props.asInstanceOf[js.Any], name.asInstanceOf[js.Any], classNamesState.asInstanceOf[js.Any])).asInstanceOf[Css]
+  inline def getStyleProps[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](
+    props: (Pick[
+      CommonPropsAndClassName[Option, IsMulti, Group], 
+      getClassNames | className | getStyles | cx
+    ]) & (MenuProps[Option, IsMulti, Group]),
+    name: menu,
+    classNamesState: ClassNamesState
+  ): Css = (^.asInstanceOf[js.Dynamic].applyDynamic("getStyleProps")(props.asInstanceOf[js.Any], name.asInstanceOf[js.Any], classNamesState.asInstanceOf[js.Any])).asInstanceOf[Css]
+  inline def getStyleProps[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](
+    props: (Pick[
+      CommonPropsAndClassName[Option, IsMulti, Group], 
+      getClassNames | className | getStyles | cx
+    ]) & (MultiValueProps[Option, IsMulti, Group]),
+    name: multiValue
+  ): Css = (^.asInstanceOf[js.Dynamic].applyDynamic("getStyleProps")(props.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Css]
+  inline def getStyleProps[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](
+    props: (Pick[
+      CommonPropsAndClassName[Option, IsMulti, Group], 
+      getClassNames | className | getStyles | cx
+    ]) & (MultiValueProps[Option, IsMulti, Group]),
+    name: multiValueLabel
+  ): Css = (^.asInstanceOf[js.Dynamic].applyDynamic("getStyleProps")(props.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Css]
+  inline def getStyleProps[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](
+    props: (Pick[
+      CommonPropsAndClassName[Option, IsMulti, Group], 
+      getClassNames | className | getStyles | cx
+    ]) & (MultiValueProps[Option, IsMulti, Group]),
+    name: multiValueLabel,
+    classNamesState: ClassNamesState
+  ): Css = (^.asInstanceOf[js.Dynamic].applyDynamic("getStyleProps")(props.asInstanceOf[js.Any], name.asInstanceOf[js.Any], classNamesState.asInstanceOf[js.Any])).asInstanceOf[Css]
+  inline def getStyleProps[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](
+    props: (Pick[
+      CommonPropsAndClassName[Option, IsMulti, Group], 
+      getClassNames | className | getStyles | cx
+    ]) & (MultiValueProps[Option, IsMulti, Group]),
+    name: multiValueRemove
+  ): Css = (^.asInstanceOf[js.Dynamic].applyDynamic("getStyleProps")(props.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Css]
+  inline def getStyleProps[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](
+    props: (Pick[
+      CommonPropsAndClassName[Option, IsMulti, Group], 
+      getClassNames | className | getStyles | cx
+    ]) & (MultiValueProps[Option, IsMulti, Group]),
+    name: multiValueRemove,
+    classNamesState: ClassNamesState
+  ): Css = (^.asInstanceOf[js.Dynamic].applyDynamic("getStyleProps")(props.asInstanceOf[js.Any], name.asInstanceOf[js.Any], classNamesState.asInstanceOf[js.Any])).asInstanceOf[Css]
+  inline def getStyleProps[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](
+    props: (Pick[
+      CommonPropsAndClassName[Option, IsMulti, Group], 
+      getClassNames | className | getStyles | cx
+    ]) & (MultiValueProps[Option, IsMulti, Group]),
+    name: multiValue,
+    classNamesState: ClassNamesState
+  ): Css = (^.asInstanceOf[js.Dynamic].applyDynamic("getStyleProps")(props.asInstanceOf[js.Any], name.asInstanceOf[js.Any], classNamesState.asInstanceOf[js.Any])).asInstanceOf[Css]
+  inline def getStyleProps[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](
+    props: (Pick[
+      CommonPropsAndClassName[Option, IsMulti, Group], 
+      getClassNames | className | getStyles | cx
+    ]) & (NoticeProps[Option, IsMulti, Group]),
+    name: noOptionsMessage
+  ): Css = (^.asInstanceOf[js.Dynamic].applyDynamic("getStyleProps")(props.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Css]
+  inline def getStyleProps[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](
+    props: (Pick[
+      CommonPropsAndClassName[Option, IsMulti, Group], 
+      getClassNames | className | getStyles | cx
+    ]) & (NoticeProps[Option, IsMulti, Group]),
+    name: noOptionsMessage,
+    classNamesState: ClassNamesState
+  ): Css = (^.asInstanceOf[js.Dynamic].applyDynamic("getStyleProps")(props.asInstanceOf[js.Any], name.asInstanceOf[js.Any], classNamesState.asInstanceOf[js.Any])).asInstanceOf[Css]
+  inline def getStyleProps[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](
+    props: (Pick[
+      CommonPropsAndClassName[Option, IsMulti, Group], 
+      getClassNames | className | getStyles | cx
+    ]) & (OptionProps[Option, IsMulti, Group]),
+    name: option
+  ): Css = (^.asInstanceOf[js.Dynamic].applyDynamic("getStyleProps")(props.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Css]
+  inline def getStyleProps[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](
+    props: (Pick[
+      CommonPropsAndClassName[Option, IsMulti, Group], 
+      getClassNames | className | getStyles | cx
+    ]) & (OptionProps[Option, IsMulti, Group]),
+    name: option,
+    classNamesState: ClassNamesState
+  ): Css = (^.asInstanceOf[js.Dynamic].applyDynamic("getStyleProps")(props.asInstanceOf[js.Any], name.asInstanceOf[js.Any], classNamesState.asInstanceOf[js.Any])).asInstanceOf[Css]
+  inline def getStyleProps[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](
+    props: (Pick[
+      CommonPropsAndClassName[Option, IsMulti, Group], 
+      getClassNames | className | getStyles | cx
+    ]) & (PlaceholderProps[Option, IsMulti, Group]),
+    name: placeholder
+  ): Css = (^.asInstanceOf[js.Dynamic].applyDynamic("getStyleProps")(props.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Css]
+  inline def getStyleProps[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](
+    props: (Pick[
+      CommonPropsAndClassName[Option, IsMulti, Group], 
+      getClassNames | className | getStyles | cx
+    ]) & (PlaceholderProps[Option, IsMulti, Group]),
+    name: placeholder,
+    classNamesState: ClassNamesState
+  ): Css = (^.asInstanceOf[js.Dynamic].applyDynamic("getStyleProps")(props.asInstanceOf[js.Any], name.asInstanceOf[js.Any], classNamesState.asInstanceOf[js.Any])).asInstanceOf[Css]
+  inline def getStyleProps[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](
+    props: (Pick[
+      CommonPropsAndClassName[Option, IsMulti, Group], 
+      getClassNames | className | getStyles | cx
+    ]) & (SingleValueProps[Option, IsMulti, Group]),
+    name: singleValue
+  ): Css = (^.asInstanceOf[js.Dynamic].applyDynamic("getStyleProps")(props.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Css]
+  inline def getStyleProps[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](
+    props: (Pick[
+      CommonPropsAndClassName[Option, IsMulti, Group], 
+      getClassNames | className | getStyles | cx
+    ]) & (SingleValueProps[Option, IsMulti, Group]),
+    name: singleValue,
+    classNamesState: ClassNamesState
+  ): Css = (^.asInstanceOf[js.Dynamic].applyDynamic("getStyleProps")(props.asInstanceOf[js.Any], name.asInstanceOf[js.Any], classNamesState.asInstanceOf[js.Any])).asInstanceOf[Css]
+  inline def getStyleProps[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](
+    props: (Pick[
+      CommonPropsAndClassName[Option, IsMulti, Group], 
+      getClassNames | className | getStyles | cx
+    ]) & (ValueContainerProps[Option, IsMulti, Group]),
+    name: valueContainer
+  ): Css = (^.asInstanceOf[js.Dynamic].applyDynamic("getStyleProps")(props.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Css]
+  inline def getStyleProps[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](
+    props: (Pick[
+      CommonPropsAndClassName[Option, IsMulti, Group], 
+      getClassNames | className | getStyles | cx
+    ]) & (ValueContainerProps[Option, IsMulti, Group]),
+    name: valueContainer,
+    classNamesState: ClassNamesState
+  ): Css = (^.asInstanceOf[js.Dynamic].applyDynamic("getStyleProps")(props.asInstanceOf[js.Any], name.asInstanceOf[js.Any], classNamesState.asInstanceOf[js.Any])).asInstanceOf[Css]
   
   inline def handleInputChange(inputValue: String, actionMeta: InputActionMeta): String = (^.asInstanceOf[js.Dynamic].applyDynamic("handleInputChange")(inputValue.asInstanceOf[js.Any], actionMeta.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def handleInputChange(

@@ -86,9 +86,13 @@ object mod {
   
   inline def createAccount(): KeyPair = ^.asInstanceOf[js.Dynamic].applyDynamic("createAccount")().asInstanceOf[KeyPair]
   
+  inline def createCluster(): KeyPair = ^.asInstanceOf[js.Dynamic].applyDynamic("createCluster")().asInstanceOf[KeyPair]
+  
   inline def createOperator(): KeyPair = ^.asInstanceOf[js.Dynamic].applyDynamic("createOperator")().asInstanceOf[KeyPair]
   
   inline def createPair(prefix: Prefix): KeyPair = ^.asInstanceOf[js.Dynamic].applyDynamic("createPair")(prefix.asInstanceOf[js.Any]).asInstanceOf[KeyPair]
+  
+  inline def createServer(): KeyPair = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")().asInstanceOf[KeyPair]
   
   inline def createUser(): KeyPair = ^.asInstanceOf[js.Dynamic].applyDynamic("createUser")().asInstanceOf[KeyPair]
   

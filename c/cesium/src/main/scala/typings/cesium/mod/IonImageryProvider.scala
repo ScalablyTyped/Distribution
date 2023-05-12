@@ -12,8 +12,7 @@ open class IonImageryProvider protected () extends StObject {
   
   /**
     * Gets the credit to display when this imagery provider is active.  Typically this is used to credit
-    * the source of the imagery. This function should
-    * not be called before {@link IonImageryProvider#ready} returns true.
+    * the source of the imagery.
     */
   val credit: Credit = js.native
   
@@ -99,14 +98,12 @@ open class IonImageryProvider protected () extends StObject {
   val hasAlphaChannel: Boolean = js.native
   
   /**
-    * Gets the maximum level-of-detail that can be requested.  This function should
-    * not be called before {@link IonImageryProvider#ready} returns true.
+    * Gets the maximum level-of-detail that can be requested.
     */
   val maximumLevel: js.UndefOr[Double] = js.native
   
   /**
-    * Gets the minimum level-of-detail that can be requested.  This function should
-    * not be called before {@link IonImageryProvider#ready} returns true. Generally,
+    * Gets the minimum level-of-detail that can be requested. Generally,
     * a minimum level should only be used when the rectangle of the imagery is small
     * enough that the number of tiles at the minimum level is small.  An imagery
     * provider with more than a few tiles at the minimum level will lead to
@@ -116,8 +113,7 @@ open class IonImageryProvider protected () extends StObject {
   
   /**
     * Asynchronously determines what features, if any, are located at a given longitude and latitude within
-    * a tile.  This function should not be called before {@link IonImageryProvider#ready} returns true.
-    * This function is optional, so it may not exist on all ImageryProviders.
+    * a tile. This function is optional, so it may not exist on all ImageryProviders.
     * @param x - The tile X coordinate.
     * @param y - The tile Y coordinate.
     * @param level - The tile level.
@@ -146,14 +142,12 @@ open class IonImageryProvider protected () extends StObject {
   val readyPromise: js.Promise[Boolean] = js.native
   
   /**
-    * Gets the rectangle, in radians, of the imagery provided by the instance.  This function should
-    * not be called before {@link IonImageryProvider#ready} returns true.
+    * Gets the rectangle, in radians, of the imagery provided by the instance.
     */
   val rectangle: Rectangle = js.native
   
   /**
-    * Requests the image for a given tile.  This function should
-    * not be called before {@link IonImageryProvider#ready} returns true.
+    * Requests the image for a given tile.
     * @param x - The tile X coordinate.
     * @param y - The tile Y coordinate.
     * @param level - The tile level.
@@ -167,34 +161,46 @@ open class IonImageryProvider protected () extends StObject {
   /**
     * Gets the tile discard policy.  If not undefined, the discard policy is responsible
     * for filtering out "missing" tiles via its shouldDiscardImage function.  If this function
-    * returns undefined, no tiles are filtered.  This function should
-    * not be called before {@link IonImageryProvider#ready} returns true.
+    * returns undefined, no tiles are filtered.
     */
   val tileDiscardPolicy: TileDiscardPolicy = js.native
   
   /**
-    * Gets the height of each tile, in pixels.  This function should
-    * not be called before {@link IonImageryProvider#ready} returns true.
+    * Gets the height of each tile, in pixels.
     */
   val tileHeight: Double = js.native
   
   /**
-    * Gets the width of each tile, in pixels.  This function should
-    * not be called before {@link IonImageryProvider#ready} returns true.
+    * Gets the width of each tile, in pixels.
     */
   val tileWidth: Double = js.native
   
   /**
-    * Gets the tiling scheme used by the provider.  This function should
-    * not be called before {@link IonImageryProvider#ready} returns true.
+    * Gets the tiling scheme used by the provider.
     */
   val tilingScheme: TilingScheme = js.native
 }
+/* static members */
 object IonImageryProvider {
+  
+  @JSImport("cesium", "IonImageryProvider")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /**
+    * Creates a provider for tiled imagery using the Cesium ion REST API.
+    * @example
+    * const imageryLayer = Cesium.ImageryLayer.fromProviderAsync(Cesium.IonImageryProvider.fromAssetId(3812));
+    * viewer.imageryLayers.add(imageryLayer);
+    * @param assetId - An ion imagery asset ID.
+    * @param options - Object describing initialization options.
+    * @returns A promise which resolves to the created IonImageryProvider.
+    */
+  inline def fromAssetId(assetId: Double, options: ConstructorOptions): js.Promise[IonImageryProvider] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromAssetId")(assetId.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[IonImageryProvider]]
   
   /**
     * Initialization options for the TileMapServiceImageryProvider constructor
-    * @property assetId - An ion imagery asset ID
+    * @property [assetId] - An ion imagery asset ID. Deprecated.
     * @property [accessToken = Ion.defaultAccessToken] - The access token to use.
     * @property [server = Ion.defaultServer] - The resource to the Cesium ion API server.
     */
@@ -202,14 +208,14 @@ object IonImageryProvider {
     
     var accessToken: js.UndefOr[String] = js.undefined
     
-    var assetId: Double
+    var assetId: js.UndefOr[Double] = js.undefined
     
     var server: js.UndefOr[String | Resource] = js.undefined
   }
   object ConstructorOptions {
     
-    inline def apply(assetId: Double): ConstructorOptions = {
-      val __obj = js.Dynamic.literal(assetId = assetId.asInstanceOf[js.Any])
+    inline def apply(): ConstructorOptions = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConstructorOptions]
     }
     
@@ -221,6 +227,8 @@ object IonImageryProvider {
       inline def setAccessTokenUndefined: Self = StObject.set(x, "accessToken", js.undefined)
       
       inline def setAssetId(value: Double): Self = StObject.set(x, "assetId", value.asInstanceOf[js.Any])
+      
+      inline def setAssetIdUndefined: Self = StObject.set(x, "assetId", js.undefined)
       
       inline def setServer(value: String | Resource): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
       

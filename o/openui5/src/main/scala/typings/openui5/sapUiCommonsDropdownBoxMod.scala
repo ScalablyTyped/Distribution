@@ -220,6 +220,8 @@ object sapUiCommonsDropdownBoxMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:searchHelp searchHelp} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -283,6 +285,8 @@ object sapUiCommonsDropdownBoxMod {
     def getSearchHelpText(): String = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Handle the click event happening in the DropdownBox
       */
     def onclick(/**
@@ -291,6 +295,8 @@ object sapUiCommonsDropdownBoxMod {
     oEvent: Event): Unit = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Handle keydown event
       */
     def onkeydown(/**
@@ -299,6 +305,8 @@ object sapUiCommonsDropdownBoxMod {
     oEvent: Event): Unit = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Handle keypress event
       */
     def onkeypress(/**
@@ -307,6 +315,8 @@ object sapUiCommonsDropdownBoxMod {
     oEvent: Event): Unit = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Handle paste event
       */
     def onpaste(/**
@@ -315,6 +325,8 @@ object sapUiCommonsDropdownBoxMod {
     oEvent: Event): Unit = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Handle pseudo event onsapdelete. If triggered with open dropdown and current item provided by history
       * feature, removes the selected item from this instance's history.
       */
@@ -324,6 +336,8 @@ object sapUiCommonsDropdownBoxMod {
     oEvent: Event): Unit = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Handle pseudo event onsaphome
       */
     def onsaphome(/**
@@ -332,6 +346,8 @@ object sapUiCommonsDropdownBoxMod {
     oEvent: Event): Unit = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Move the cursor one step to the left (and adapt selection)
       */
     def onsapleft(/**
@@ -340,6 +356,8 @@ object sapUiCommonsDropdownBoxMod {
     oEvent: Event): Unit = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Move the cursor one step to the right (and adapt selection)
       */
     def onsapright(/**
@@ -348,6 +366,8 @@ object sapUiCommonsDropdownBoxMod {
     oEvent: Event): Unit = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Handle the select event happening in the DropdownBox
       */
     def onselect(/**

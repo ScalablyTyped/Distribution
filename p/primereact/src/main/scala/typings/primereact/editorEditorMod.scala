@@ -1,5 +1,6 @@
 package typings.primereact
 
+import typings.primereact.primereactStrings._empty
 import typings.primereact.primereactStrings.`additions removals`
 import typings.primereact.primereactStrings.`additions text`
 import typings.primereact.primereactStrings.`inline`
@@ -7,8 +8,10 @@ import typings.primereact.primereactStrings.`removals additions`
 import typings.primereact.primereactStrings.`removals text`
 import typings.primereact.primereactStrings.`text additions`
 import typings.primereact.primereactStrings.`text removals`
+import typings.primereact.primereactStrings.`use-credentials`
 import typings.primereact.primereactStrings.additions
 import typings.primereact.primereactStrings.all
+import typings.primereact.primereactStrings.anonymous
 import typings.primereact.primereactStrings.ascending
 import typings.primereact.primereactStrings.assertive
 import typings.primereact.primereactStrings.both
@@ -100,6 +103,7 @@ import typings.react.mod.WheelEvent
 import typings.react.mod.WheelEventHandler
 import typings.std.Element
 import typings.std.Event
+import typings.std.FormData
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -113,16 +117,37 @@ object editorEditorMod {
     def this(props: EditorProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: EditorProps, context: Any) = this()
     
+    /**
+      * Used to focus the component.
+      */
+    def focus(): Unit = js.native
+    
+    /**
+      * Used to get content element.
+      * @return {HTMLDivElement} Content element
+      */
     def getContent(): HTMLDivElement = js.native
     
+    /**
+      * Used to get container element.
+      * @return {HTMLDivElement} Container element
+      */
     def getElement(): HTMLDivElement = js.native
     
+    /**
+      * Used to get quill instance.
+      * @return {*} Quill Instance
+      */
     def getQuill(): Any = js.native
     
+    /**
+      * Used to get toolbar element.
+      * @return {HTMLDivElement} Toolbar element
+      */
     def getToolbar(): HTMLDivElement = js.native
   }
   
@@ -249,17 +274,23 @@ object editorEditorMod {
     
     var checked: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Used to get the child elements of the component.
+      * @readonly
+      */
     var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
     var color: js.UndefOr[String] = js.undefined
     
+    var content: js.UndefOr[String] = js.undefined
+    
     var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
     var contextMenu: js.UndefOr[String] = js.undefined
     
-    var crossOrigin: js.UndefOr[String] = js.undefined
+    var crossOrigin: js.UndefOr[anonymous | `use-credentials` | _empty] = js.undefined
     
     var dangerouslySetInnerHTML: js.UndefOr[Html] = js.undefined
     
@@ -279,7 +310,7 @@ object editorEditorMod {
     
     var form: js.UndefOr[String] = js.undefined
     
-    var formAction: js.UndefOr[String] = js.undefined
+    var formAction: js.UndefOr[String | (js.Function1[/* formData */ FormData, Unit])] = js.undefined
     
     var formEncType: js.UndefOr[String] = js.undefined
     
@@ -289,8 +320,14 @@ object editorEditorMod {
     
     var formTarget: js.UndefOr[String] = js.undefined
     
+    /**
+      * Whitelist of formats to display, see [here](https://quilljs.com/docs/formats/) for available options.
+      */
     var formats: js.UndefOr[js.Array[String]] = js.undefined
     
+    /**
+      * Style and modules of the toolbar.
+      */
     var headerTemplate: js.UndefOr[ReactNode] = js.undefined
     
     var height: js.UndefOr[Double | String] = js.undefined
@@ -329,6 +366,9 @@ object editorEditorMod {
     
     var minLength: js.UndefOr[Double] = js.undefined
     
+    /**
+      * Modules configuration, see [here](https://quilljs.com/docs/modules/) for available options.
+      */
     var modules: js.UndefOr[Any] = js.undefined
     
     var multiple: js.UndefOr[Boolean] = js.undefined
@@ -411,6 +451,10 @@ object editorEditorMod {
     
     var onKeyUp: js.UndefOr[KeyboardEventHandler[HTMLDivElement]] = js.undefined
     
+    /**
+      * Callback to invoke when the quill modules are loaded.
+      * @param {*} quill - Quill instance
+      */
     var onLoad: js.UndefOr[js.Function1[/* quill */ Any, Unit]] = js.undefined
     
     var onLoadStart: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
@@ -473,7 +517,11 @@ object editorEditorMod {
     
     var onSelect: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
-    var onSelectionChange: js.UndefOr[js.Function1[/* e */ EditorSelectionChangeParams, Unit]] = js.undefined
+    /**
+      * Callback to invoke when selected text of editor changes.
+      * @param {EditorSelectionChangeEvent} event - Custom selection change event
+      */
+    var onSelectionChange: js.UndefOr[js.Function1[/* event */ EditorSelectionChangeEvent, Unit]] = js.undefined
     
     var onStalled: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
@@ -481,7 +529,11 @@ object editorEditorMod {
     
     var onSuspend: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
-    var onTextChange: js.UndefOr[js.Function1[/* e */ EditorTextChangeParams, Unit]] = js.undefined
+    /**
+      * Callback to invoke when text of editor changes.
+      * @param {EditorTextChangeEvent} event - Custom text change event
+      */
+    var onTextChange: js.UndefOr[js.Function1[/* event */ EditorTextChangeEvent, Unit]] = js.undefined
     
     var onTimeUpdate: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
@@ -503,6 +555,9 @@ object editorEditorMod {
     
     var pattern: js.UndefOr[String] = js.undefined
     
+    /**
+      * Placeholder text to show when editor is empty.
+      */
     var placeholder: js.UndefOr[String] = js.undefined
     
     var prefix: js.UndefOr[String] = js.undefined
@@ -511,7 +566,13 @@ object editorEditorMod {
     
     var radioGroup: js.UndefOr[String] = js.undefined
     
+    /**
+      * Whether to instantiate the editor to read-only mode.
+      * @defaultValue false
+      */
     var readOnly: js.UndefOr[Boolean] = js.undefined
+    
+    var rel: js.UndefOr[String] = js.undefined
     
     var required: js.UndefOr[Boolean] = js.undefined
     
@@ -519,10 +580,16 @@ object editorEditorMod {
     
     var results: js.UndefOr[Double] = js.undefined
     
+    var rev: js.UndefOr[String] = js.undefined
+    
     var role: js.UndefOr[AriaRole] = js.undefined
     
     var security: js.UndefOr[String] = js.undefined
     
+    /**
+      * Whether to show the header of editor.
+      * @defaultValue false
+      */
     var showHeader: js.UndefOr[Boolean] = js.undefined
     
     var size: js.UndefOr[Double] = js.undefined
@@ -543,6 +610,9 @@ object editorEditorMod {
     
     var tabIndex: js.UndefOr[Double] = js.undefined
     
+    /**
+      * The theme of editor
+      */
     var theme: js.UndefOr[String] = js.undefined
     
     var title: js.UndefOr[String] = js.undefined
@@ -555,6 +625,9 @@ object editorEditorMod {
     
     var unselectable: js.UndefOr[on | off] = js.undefined
     
+    /**
+      * Value of the content.
+      */
     var value: js.UndefOr[String] = js.undefined
     
     var vocab: js.UndefOr[String] = js.undefined
@@ -821,15 +894,19 @@ object editorEditorMod {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
       inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
       inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
       inline def setContextMenuUndefined: Self = StObject.set(x, "contextMenu", js.undefined)
       
-      inline def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+      inline def setCrossOrigin(value: anonymous | `use-credentials` | _empty): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
       
       inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
       
@@ -869,7 +946,9 @@ object editorEditorMod {
       
       inline def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
       
-      inline def setFormAction(value: String): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+      inline def setFormAction(value: String | (js.Function1[/* formData */ FormData, Unit])): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+      
+      inline def setFormActionFunction1(value: /* formData */ FormData => Unit): Self = StObject.set(x, "formAction", js.Any.fromFunction1(value))
       
       inline def setFormActionUndefined: Self = StObject.set(x, "formAction", js.undefined)
       
@@ -1263,7 +1342,7 @@ object editorEditorMod {
       
       inline def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
       
-      inline def setOnSelectionChange(value: /* e */ EditorSelectionChangeParams => Unit): Self = StObject.set(x, "onSelectionChange", js.Any.fromFunction1(value))
+      inline def setOnSelectionChange(value: /* event */ EditorSelectionChangeEvent => Unit): Self = StObject.set(x, "onSelectionChange", js.Any.fromFunction1(value))
       
       inline def setOnSelectionChangeUndefined: Self = StObject.set(x, "onSelectionChange", js.undefined)
       
@@ -1279,7 +1358,7 @@ object editorEditorMod {
       
       inline def setOnSuspendUndefined: Self = StObject.set(x, "onSuspend", js.undefined)
       
-      inline def setOnTextChange(value: /* e */ EditorTextChangeParams => Unit): Self = StObject.set(x, "onTextChange", js.Any.fromFunction1(value))
+      inline def setOnTextChange(value: /* event */ EditorTextChangeEvent => Unit): Self = StObject.set(x, "onTextChange", js.Any.fromFunction1(value))
       
       inline def setOnTextChangeUndefined: Self = StObject.set(x, "onTextChange", js.undefined)
       
@@ -1343,6 +1422,10 @@ object editorEditorMod {
       
       inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
       
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      
+      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+      
       inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
       
       inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
@@ -1354,6 +1437,10 @@ object editorEditorMod {
       inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+      
+      inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+      
+      inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
       
       inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
@@ -1441,23 +1528,37 @@ object editorEditorMod {
     }
   }
   
-  trait EditorSelectionChangeParams extends StObject {
+  /**
+    * Custom selection change event
+    * @see {@link EditorProps.onSelectionChange}
+    * @event
+    */
+  trait EditorSelectionChangeEvent extends StObject {
     
+    /**
+      * Object with index and length keys indicating where the previous selection was.
+      */
     var oldRange: Any
     
+    /**
+      * Object with index and length keys indicating where the selection exists
+      */
     var range: Any
     
+    /**
+      * Source of change. Will be either "user" or "api".
+      */
     var source: String
   }
-  object EditorSelectionChangeParams {
+  object EditorSelectionChangeEvent {
     
-    inline def apply(oldRange: Any, range: Any, source: String): EditorSelectionChangeParams = {
+    inline def apply(oldRange: Any, range: Any, source: String): EditorSelectionChangeEvent = {
       val __obj = js.Dynamic.literal(oldRange = oldRange.asInstanceOf[js.Any], range = range.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
-      __obj.asInstanceOf[EditorSelectionChangeParams]
+      __obj.asInstanceOf[EditorSelectionChangeEvent]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: EditorSelectionChangeParams] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: EditorSelectionChangeEvent] (val x: Self) extends AnyVal {
       
       inline def setOldRange(value: Any): Self = StObject.set(x, "oldRange", value.asInstanceOf[js.Any])
       
@@ -1467,25 +1568,42 @@ object editorEditorMod {
     }
   }
   
-  trait EditorTextChangeParams extends StObject {
+  /**
+    * Custom text change event
+    * @see {@link EditorProps.onTextChange}
+    * @event
+    */
+  trait EditorTextChangeEvent extends StObject {
     
+    /**
+      * Representation of the change.
+      */
     var delta: Any
     
+    /**
+      * Current value as html.
+      */
     var htmlValue: String | Null
     
+    /**
+      * Source of change. Will be either "user" or "api".
+      */
     var source: String
     
+    /**
+      * Current value as text.
+      */
     var textValue: String
   }
-  object EditorTextChangeParams {
+  object EditorTextChangeEvent {
     
-    inline def apply(delta: Any, source: String, textValue: String): EditorTextChangeParams = {
+    inline def apply(delta: Any, source: String, textValue: String): EditorTextChangeEvent = {
       val __obj = js.Dynamic.literal(delta = delta.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], textValue = textValue.asInstanceOf[js.Any], htmlValue = null)
-      __obj.asInstanceOf[EditorTextChangeParams]
+      __obj.asInstanceOf[EditorTextChangeEvent]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: EditorTextChangeParams] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: EditorTextChangeEvent] (val x: Self) extends AnyVal {
       
       inline def setDelta(value: Any): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
       

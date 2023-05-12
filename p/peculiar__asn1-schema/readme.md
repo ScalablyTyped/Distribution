@@ -1,7 +1,7 @@
 
 # Scala.js typings for peculiar__asn1-schema
 
-Typings are for version 2.3.0
+Typings are for version 2.3.6
 
 ## Library description:
 Decorators for ASN.1 schemas building

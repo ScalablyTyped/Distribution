@@ -15,6 +15,11 @@ trait MediaConcurrency extends StObject {
     * The number of contacts an agent can have on a channel simultaneously. Valid Range for VOICE: Minimum value of 1. Maximum value of 1. Valid Range for CHAT: Minimum value of 1. Maximum value of 10. Valid Range for TASK: Minimum value of 1. Maximum value of 10.
     */
   var Concurrency: typings.awsSdk.clientsConnectMod.Concurrency
+  
+  /**
+    * Defines the cross-channel routing behavior for each channel that is enabled for this Routing Profile. For example, this allows you to offer an agent a different contact from another channel when they are currently working with a contact from a Voice channel.
+    */
+  var CrossChannelBehavior: js.UndefOr[typings.awsSdk.clientsConnectMod.CrossChannelBehavior] = js.undefined
 }
 object MediaConcurrency {
   
@@ -29,5 +34,9 @@ object MediaConcurrency {
     inline def setChannel(value: Channel): Self = StObject.set(x, "Channel", value.asInstanceOf[js.Any])
     
     inline def setConcurrency(value: Concurrency): Self = StObject.set(x, "Concurrency", value.asInstanceOf[js.Any])
+    
+    inline def setCrossChannelBehavior(value: CrossChannelBehavior): Self = StObject.set(x, "CrossChannelBehavior", value.asInstanceOf[js.Any])
+    
+    inline def setCrossChannelBehaviorUndefined: Self = StObject.set(x, "CrossChannelBehavior", js.undefined)
   }
 }

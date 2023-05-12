@@ -1,6 +1,7 @@
 package typings.mdastUtilToMarkdown
 
-import typings.mdastUtilToMarkdown.anon.Current
+import typings.mdastUtilToMarkdown.libTypesMod.TrackFields
+import typings.mdastUtilToMarkdown.libTypesMod.Tracker
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,9 +12,13 @@ object libUtilTrackMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def track(options_ : TrackFields): Current = ^.asInstanceOf[js.Dynamic].applyDynamic("track")(options_.asInstanceOf[js.Any]).asInstanceOf[Current]
+  inline def track(info: TrackFields): Tracker = ^.asInstanceOf[js.Dynamic].applyDynamic("track")(info.asInstanceOf[js.Any]).asInstanceOf[Tracker]
   
-  type Point = typings.unist.mod.Point
+  type CreateTracker = typings.mdastUtilToMarkdown.libTypesMod.CreateTracker
   
-  type TrackFields = typings.mdastUtilToMarkdown.libTypesMod.TrackFields
+  type TrackCurrent = typings.mdastUtilToMarkdown.libTypesMod.TrackCurrent
+  
+  type TrackMove = typings.mdastUtilToMarkdown.libTypesMod.TrackMove
+  
+  type TrackShift = typings.mdastUtilToMarkdown.libTypesMod.TrackShift
 }

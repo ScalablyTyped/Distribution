@@ -12,22 +12,22 @@ trait AddPermissionRequest extends StObject {
   var Action: typings.awsSdk.clientsLambdaMod.Action
   
   /**
-    * For Alexa Smart Home functions, a token that must be supplied by the invoker.
+    * For Alexa Smart Home functions, a token that the invoker must supply.
     */
   var EventSourceToken: js.UndefOr[typings.awsSdk.clientsLambdaMod.EventSourceToken] = js.undefined
   
   /**
-    * The name of the Lambda function, version, or alias.  Name formats     Function name - my-function (name-only), my-function:v1 (with alias).    Function ARN - arn:aws:lambda:us-west-2:123456789012:function:my-function.    Partial ARN - 123456789012:function:my-function.   You can append a version number or alias to any of the formats. The length constraint applies only to the full ARN. If you specify only the function name, it is limited to 64 characters in length.
+    * The name of the Lambda function, version, or alias.  Name formats     Function name – my-function (name-only), my-function:v1 (with alias).    Function ARN – arn:aws:lambda:us-west-2:123456789012:function:my-function.    Partial ARN – 123456789012:function:my-function.   You can append a version number or alias to any of the formats. The length constraint applies only to the full ARN. If you specify only the function name, it is limited to 64 characters in length.
     */
   var FunctionName: typings.awsSdk.clientsLambdaMod.FunctionName
   
   /**
-    * The type of authentication that your function URL uses. Set to AWS_IAM if you want to restrict access to authenticated IAM users only. Set to NONE if you want to bypass IAM authentication to create a public endpoint. For more information, see  Security and auth model for Lambda function URLs.
+    * The type of authentication that your function URL uses. Set to AWS_IAM if you want to restrict access to authenticated users only. Set to NONE if you want to bypass IAM authentication to create a public endpoint. For more information, see Security and auth model for Lambda function URLs.
     */
   var FunctionUrlAuthType: js.UndefOr[typings.awsSdk.clientsLambdaMod.FunctionUrlAuthType] = js.undefined
   
   /**
-    * The Amazon Web Services service or account that invokes the function. If you specify a service, use SourceArn or SourceAccount to limit who can invoke the function through that service.
+    * The Amazon Web Service or Amazon Web Services account that invokes the function. If you specify a service, use SourceArn or SourceAccount to limit who can invoke the function through that service.
     */
   var Principal: typings.awsSdk.clientsLambdaMod.Principal
   
@@ -42,17 +42,17 @@ trait AddPermissionRequest extends StObject {
   var Qualifier: js.UndefOr[typings.awsSdk.clientsLambdaMod.Qualifier] = js.undefined
   
   /**
-    * Only update the policy if the revision ID matches the ID that's specified. Use this option to avoid modifying a policy that has changed since you last read it.
+    * Update the policy only if the revision ID matches the ID that's specified. Use this option to avoid modifying a policy that has changed since you last read it.
     */
   var RevisionId: js.UndefOr[String] = js.undefined
   
   /**
-    * For Amazon S3, the ID of the account that owns the resource. Use this together with SourceArn to ensure that the resource is owned by the specified account. It is possible for an Amazon S3 bucket to be deleted by its owner and recreated by another account.
+    * For Amazon Web Service, the ID of the Amazon Web Services account that owns the resource. Use this together with SourceArn to ensure that the specified account owns the resource. It is possible for an Amazon S3 bucket to be deleted by its owner and recreated by another account.
     */
   var SourceAccount: js.UndefOr[SourceOwner] = js.undefined
   
   /**
-    * For Amazon Web Services services, the ARN of the Amazon Web Services resource that invokes the function. For example, an Amazon S3 bucket or Amazon SNS topic. Note that Lambda configures the comparison using the StringLike operator.
+    * For Amazon Web Services, the ARN of the Amazon Web Services resource that invokes the function. For example, an Amazon S3 bucket or Amazon SNS topic. Note that Lambda configures the comparison using the StringLike operator.
     */
   var SourceArn: js.UndefOr[Arn] = js.undefined
   

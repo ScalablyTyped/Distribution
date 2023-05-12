@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.TextDecorationSkip
+import typings.csstype.mod.Property.BorderInlineStartColor
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,11 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `160` extends StObject {
   
   var value: js.UndefOr[
-    TextDecorationSkip | (js.Array[
+    BorderInlineStartColor | (js.Array[
       (Extract[
-        js.UndefOr[TextDecorationSkip | js.Array[NonNullable[js.UndefOr[TextDecorationSkip]]]], 
+        js.UndefOr[
+          BorderInlineStartColor | js.Array[NonNullable[js.UndefOr[BorderInlineStartColor]]]
+        ], 
         String
-      ]) | NonNullable[js.UndefOr[TextDecorationSkip]]
+      ]) | NonNullable[js.UndefOr[BorderInlineStartColor]]
     ])
   ] = js.native
 }

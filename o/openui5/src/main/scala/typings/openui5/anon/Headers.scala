@@ -7,14 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Headers extends StObject {
   
   /**
-    * The URL of the resource.
-    */
-  var URL: String
-  
-  /**
-    * The expected Content-Type of the response. Possible values are "xml", "json", "text", "script", "html",
-    * "jsonp". Note: Complex Binding is not supported when a dataType is provided. Serialization of the response
-    * to an object is up to the developer.
+    * Deprecated. Use the correct Accept headers and correct Content-Type header in the response.
     */
   var dataType: js.UndefOr[String] = js.undefined
   
@@ -24,7 +17,7 @@ trait Headers extends StObject {
   var headers: js.UndefOr[js.Object] = js.undefined
   
   /**
-    * The HTTP method. Possible values are "GET", "POST".
+    * The HTTP method. Possible values are "GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS", and "HEAD".
     */
   var method: js.UndefOr[String] = js.undefined
   
@@ -34,10 +27,15 @@ trait Headers extends StObject {
   var mode: js.UndefOr[String] = js.undefined
   
   /**
-    * The request parameters. If the method is "POST" the parameters will be put as key/value pairs into the
-    * body of the request.
+    * The request parameters. If the HTTP method is "POST", "PUT", "PATCH", or "DELETE" the parameters will
+    * be put as key/value pairs into the body of the request.
     */
   var parameters: js.UndefOr[js.Object] = js.undefined
+  
+  /**
+    * The URL of the resource.
+    */
+  var url: String
   
   /**
     * Indicates whether cross-site requests should be made using credentials.
@@ -46,8 +44,8 @@ trait Headers extends StObject {
 }
 object Headers {
   
-  inline def apply(URL: String): Headers = {
-    val __obj = js.Dynamic.literal(URL = URL.asInstanceOf[js.Any])
+  inline def apply(url: String): Headers = {
+    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Headers]
   }
   
@@ -74,7 +72,7 @@ object Headers {
     
     inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
-    inline def setURL(value: String): Self = StObject.set(x, "URL", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
     inline def setWithCredentials(value: Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
     

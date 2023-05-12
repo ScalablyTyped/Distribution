@@ -163,6 +163,10 @@ object mod {
     @JSName("clearTimeout")
     var clearTimeout_Original: js.Function0[this.type] = js.native
     
+    def connect(`override`: String): this.type = js.native
+    @JSName("connect")
+    var connect_Original: js.Function1[/* override */ String, this.type] = js.native
+    
     var cookies: String = js.native
     
     def disableTLSCerts(): this.type = js.native

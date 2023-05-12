@@ -10,7 +10,7 @@ open class Badge protected () extends _MDLComponent[BadgeProps] {
   def this(props: BadgeProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: BadgeProps, context: Any) = this()
 }

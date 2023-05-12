@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ModuleDeclaration
   extends StObject
      with DeclarationStatement
+     with LocalsContainer
      with HasJSDoc
      with HasModifiers {
   
@@ -16,8 +17,7 @@ trait ModuleDeclaration
   @JSName("kind")
   val kind_ModuleDeclaration: typings.typescript.mod.SyntaxKind.ModuleDeclaration = js.native
   
-  @JSName("modifiers")
-  val modifiers_ModuleDeclaration: js.UndefOr[NodeArray[Modifier]] = js.native
+  val modifiers: js.UndefOr[NodeArray[ModifierLike]] = js.native
   
   @JSName("name")
   val name_ModuleDeclaration: ModuleName = js.native

@@ -11,17 +11,10 @@ trait CliOptions extends StObject {
     */
   var analytics: js.UndefOr[Analytics] = js.undefined
   
-  var analyticsSharing: js.UndefOr[AnalyticsSharing] = js.undefined
-  
   /**
     * Control disk cache.
     */
   var cache: js.UndefOr[Cache] = js.undefined
-  
-  /**
-    * The default schematics collection to use.
-    */
-  var defaultCollection: js.UndefOr[String] = js.undefined
   
   /**
     * Specify which package manager tool to use.
@@ -50,19 +43,11 @@ object CliOptions {
     
     inline def setAnalytics(value: Analytics): Self = StObject.set(x, "analytics", value.asInstanceOf[js.Any])
     
-    inline def setAnalyticsSharing(value: AnalyticsSharing): Self = StObject.set(x, "analyticsSharing", value.asInstanceOf[js.Any])
-    
-    inline def setAnalyticsSharingUndefined: Self = StObject.set(x, "analyticsSharing", js.undefined)
-    
     inline def setAnalyticsUndefined: Self = StObject.set(x, "analytics", js.undefined)
     
     inline def setCache(value: Cache): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     
     inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
-    
-    inline def setDefaultCollection(value: String): Self = StObject.set(x, "defaultCollection", value.asInstanceOf[js.Any])
-    
-    inline def setDefaultCollectionUndefined: Self = StObject.set(x, "defaultCollection", js.undefined)
     
     inline def setPackageManager(value: PackageManager): Self = StObject.set(x, "packageManager", value.asInstanceOf[js.Any])
     

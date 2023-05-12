@@ -106,6 +106,24 @@ trait Kafka extends Service {
   
   /**
     * 
+    Creates a new MSK VPC connection.
+    
+    */
+  def createVpcConnection(): Request[CreateVpcConnectionResponse, AWSError] = js.native
+  def createVpcConnection(callback: js.Function2[/* err */ AWSError, /* data */ CreateVpcConnectionResponse, Unit]): Request[CreateVpcConnectionResponse, AWSError] = js.native
+  /**
+    * 
+    Creates a new MSK VPC connection.
+    
+    */
+  def createVpcConnection(params: CreateVpcConnectionRequest): Request[CreateVpcConnectionResponse, AWSError] = js.native
+  def createVpcConnection(
+    params: CreateVpcConnectionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateVpcConnectionResponse, Unit]
+  ): Request[CreateVpcConnectionResponse, AWSError] = js.native
+  
+  /**
+    * 
     Deletes the MSK cluster specified by the Amazon Resource Name (ARN) in the request.
     
     */
@@ -124,6 +142,24 @@ trait Kafka extends Service {
   
   /**
     * 
+    Deletes the MSK cluster policy specified by the Amazon Resource Name (ARN) in the request.
+    
+    */
+  def deleteClusterPolicy(): Request[DeleteClusterPolicyResponse, AWSError] = js.native
+  def deleteClusterPolicy(callback: js.Function2[/* err */ AWSError, /* data */ DeleteClusterPolicyResponse, Unit]): Request[DeleteClusterPolicyResponse, AWSError] = js.native
+  /**
+    * 
+    Deletes the MSK cluster policy specified by the Amazon Resource Name (ARN) in the request.
+    
+    */
+  def deleteClusterPolicy(params: DeleteClusterPolicyRequest): Request[DeleteClusterPolicyResponse, AWSError] = js.native
+  def deleteClusterPolicy(
+    params: DeleteClusterPolicyRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteClusterPolicyResponse, Unit]
+  ): Request[DeleteClusterPolicyResponse, AWSError] = js.native
+  
+  /**
+    * 
     Deletes an MSK Configuration.
     
     */
@@ -139,6 +175,24 @@ trait Kafka extends Service {
     params: DeleteConfigurationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteConfigurationResponse, Unit]
   ): Request[DeleteConfigurationResponse, AWSError] = js.native
+  
+  /**
+    * 
+    Deletes a MSK VPC connection.
+    
+    */
+  def deleteVpcConnection(): Request[DeleteVpcConnectionResponse, AWSError] = js.native
+  def deleteVpcConnection(callback: js.Function2[/* err */ AWSError, /* data */ DeleteVpcConnectionResponse, Unit]): Request[DeleteVpcConnectionResponse, AWSError] = js.native
+  /**
+    * 
+    Deletes a MSK VPC connection.
+    
+    */
+  def deleteVpcConnection(params: DeleteVpcConnectionRequest): Request[DeleteVpcConnectionResponse, AWSError] = js.native
+  def deleteVpcConnection(
+    params: DeleteVpcConnectionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteVpcConnectionResponse, Unit]
+  ): Request[DeleteVpcConnectionResponse, AWSError] = js.native
   
   /**
     * 
@@ -232,6 +286,24 @@ trait Kafka extends Service {
   
   /**
     * 
+    Returns a description of this MSK VPC connection.
+    
+    */
+  def describeVpcConnection(): Request[DescribeVpcConnectionResponse, AWSError] = js.native
+  def describeVpcConnection(callback: js.Function2[/* err */ AWSError, /* data */ DescribeVpcConnectionResponse, Unit]): Request[DescribeVpcConnectionResponse, AWSError] = js.native
+  /**
+    * 
+    Returns a description of this MSK VPC connection.
+    
+    */
+  def describeVpcConnection(params: DescribeVpcConnectionRequest): Request[DescribeVpcConnectionResponse, AWSError] = js.native
+  def describeVpcConnection(
+    params: DescribeVpcConnectionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeVpcConnectionResponse, Unit]
+  ): Request[DescribeVpcConnectionResponse, AWSError] = js.native
+  
+  /**
+    * 
     A list of brokers that a client application can use to bootstrap.
     
     */
@@ -250,6 +322,24 @@ trait Kafka extends Service {
   
   /**
     * 
+    Get the MSK cluster policy specified by the Amazon Resource Name (ARN) in the request.
+    
+    */
+  def getClusterPolicy(): Request[GetClusterPolicyResponse, AWSError] = js.native
+  def getClusterPolicy(callback: js.Function2[/* err */ AWSError, /* data */ GetClusterPolicyResponse, Unit]): Request[GetClusterPolicyResponse, AWSError] = js.native
+  /**
+    * 
+    Get the MSK cluster policy specified by the Amazon Resource Name (ARN) in the request.
+    
+    */
+  def getClusterPolicy(params: GetClusterPolicyRequest): Request[GetClusterPolicyResponse, AWSError] = js.native
+  def getClusterPolicy(
+    params: GetClusterPolicyRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetClusterPolicyResponse, Unit]
+  ): Request[GetClusterPolicyResponse, AWSError] = js.native
+  
+  /**
+    * 
     Gets the Apache Kafka versions to which you can update the MSK cluster.
     
     */
@@ -265,6 +355,24 @@ trait Kafka extends Service {
     params: GetCompatibleKafkaVersionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetCompatibleKafkaVersionsResponse, Unit]
   ): Request[GetCompatibleKafkaVersionsResponse, AWSError] = js.native
+  
+  /**
+    * 
+    Returns a list of all the VPC connections in this Region.
+    
+    */
+  def listClientVpcConnections(): Request[ListClientVpcConnectionsResponse, AWSError] = js.native
+  def listClientVpcConnections(callback: js.Function2[/* err */ AWSError, /* data */ ListClientVpcConnectionsResponse, Unit]): Request[ListClientVpcConnectionsResponse, AWSError] = js.native
+  /**
+    * 
+    Returns a list of all the VPC connections in this Region.
+    
+    */
+  def listClientVpcConnections(params: ListClientVpcConnectionsRequest): Request[ListClientVpcConnectionsResponse, AWSError] = js.native
+  def listClientVpcConnections(
+    params: ListClientVpcConnectionsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListClientVpcConnectionsResponse, Unit]
+  ): Request[ListClientVpcConnectionsResponse, AWSError] = js.native
   
   /**
     * 
@@ -429,6 +537,42 @@ trait Kafka extends Service {
   ): Request[ListTagsForResourceResponse, AWSError] = js.native
   
   /**
+    * 
+    Returns a list of all the VPC connections in this Region.
+    
+    */
+  def listVpcConnections(): Request[ListVpcConnectionsResponse, AWSError] = js.native
+  def listVpcConnections(callback: js.Function2[/* err */ AWSError, /* data */ ListVpcConnectionsResponse, Unit]): Request[ListVpcConnectionsResponse, AWSError] = js.native
+  /**
+    * 
+    Returns a list of all the VPC connections in this Region.
+    
+    */
+  def listVpcConnections(params: ListVpcConnectionsRequest): Request[ListVpcConnectionsResponse, AWSError] = js.native
+  def listVpcConnections(
+    params: ListVpcConnectionsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListVpcConnectionsResponse, Unit]
+  ): Request[ListVpcConnectionsResponse, AWSError] = js.native
+  
+  /**
+    * 
+    Creates or updates the MSK cluster policy specified by the cluster Amazon Resource Name (ARN) in the request.
+    
+    */
+  def putClusterPolicy(): Request[PutClusterPolicyResponse, AWSError] = js.native
+  def putClusterPolicy(callback: js.Function2[/* err */ AWSError, /* data */ PutClusterPolicyResponse, Unit]): Request[PutClusterPolicyResponse, AWSError] = js.native
+  /**
+    * 
+    Creates or updates the MSK cluster policy specified by the cluster Amazon Resource Name (ARN) in the request.
+    
+    */
+  def putClusterPolicy(params: PutClusterPolicyRequest): Request[PutClusterPolicyResponse, AWSError] = js.native
+  def putClusterPolicy(
+    params: PutClusterPolicyRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ PutClusterPolicyResponse, Unit]
+  ): Request[PutClusterPolicyResponse, AWSError] = js.native
+  
+  /**
     * Reboots brokers.
     */
   def rebootBroker(): Request[RebootBrokerResponse, AWSError] = js.native
@@ -441,6 +585,24 @@ trait Kafka extends Service {
     params: RebootBrokerRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ RebootBrokerResponse, Unit]
   ): Request[RebootBrokerResponse, AWSError] = js.native
+  
+  /**
+    * 
+    Returns empty response.
+    
+    */
+  def rejectClientVpcConnection(): Request[RejectClientVpcConnectionResponse, AWSError] = js.native
+  def rejectClientVpcConnection(callback: js.Function2[/* err */ AWSError, /* data */ RejectClientVpcConnectionResponse, Unit]): Request[RejectClientVpcConnectionResponse, AWSError] = js.native
+  /**
+    * 
+    Returns empty response.
+    
+    */
+  def rejectClientVpcConnection(params: RejectClientVpcConnectionRequest): Request[RejectClientVpcConnectionResponse, AWSError] = js.native
+  def rejectClientVpcConnection(
+    params: RejectClientVpcConnectionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ RejectClientVpcConnectionResponse, Unit]
+  ): Request[RejectClientVpcConnectionResponse, AWSError] = js.native
   
   /**
     * 

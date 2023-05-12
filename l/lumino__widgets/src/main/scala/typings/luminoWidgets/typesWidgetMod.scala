@@ -1,6 +1,5 @@
 package typings.luminoWidgets
 
-import typings.luminoAlgorithm.typesIterMod.IIterator
 import typings.luminoDisposable.mod.IObservableDisposable
 import typings.luminoMessaging.mod.ConflatableMessage
 import typings.luminoMessaging.mod.IMessageHandler
@@ -15,6 +14,7 @@ import typings.luminoWidgets.typesWidgetMod.Widget.IOptions
 import typings.luminoWidgets.typesWidgetMod.Widget.ResizeMessage
 import typings.std.DOMStringMap
 import typings.std.HTMLElement
+import typings.std.IterableIterator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -43,6 +43,8 @@ object typesWidgetMod {
     /* private */ var _layout: Any = js.native
     
     /* private */ var _parent: Any = js.native
+    
+    /* private */ var _toggleHidden: Any = js.native
     
     /**
       * Post an `'activate-request'` message to the widget.
@@ -74,7 +76,7 @@ object typesWidgetMod {
       *
       * If a layout is not installed, the returned iterator will be empty.
       */
-    def children(): IIterator[Widget] = js.native
+    def children(): IterableIterator[Widget] = js.native
     
     /**
       * Clear the given widget flag.
@@ -104,7 +106,7 @@ object typesWidgetMod {
     /**
       * The dataset for the widget's DOM node.
       */
-    val dataset: DOMStringMap = js.native
+    def dataset: DOMStringMap = js.native
     
     /**
       * Dispose of the resources held by the object.
@@ -125,6 +127,11 @@ object typesWidgetMod {
       */
     /* CompleteClass */
     override val disposed: ISignal[this.type, Unit] = js.native
+    /**
+      * A signal emitted when the widget is disposed.
+      */
+    @JSName("disposed")
+    def disposed_MWidget: ISignal[this.type, Unit] = js.native
     
     /**
       * Post a `'fit-request'` message to the widget.
@@ -146,16 +153,17 @@ object typesWidgetMod {
     /**
       * Get the method for hiding the widget.
       */
+    def hiddenMode: HiddenMode = js.native
     /**
       * Set the method for hiding the widget.
       */
-    var hiddenMode: HiddenMode = js.native
+    def hiddenMode_=(value: HiddenMode): Unit = js.native
     
     /**
       * Hide the widget and make it hidden to its parent widget.
       *
       * #### Notes
-      * This causes the [[isHidden]] property to be `true`.
+      * This causes the {@link isHidden} property to be `true`.
       *
       * If the widget is explicitly hidden, this is a no-op.
       */
@@ -164,15 +172,16 @@ object typesWidgetMod {
     /**
       * Get the id of the widget's DOM node.
       */
+    def id: String = js.native
     /**
       * Set the id of the widget's DOM node.
       */
-    var id: String = js.native
+    def id_=(value: String): Unit = js.native
     
     /**
       * Test whether the widget's node is attached to the DOM.
       */
-    val isAttached: Boolean = js.native
+    def isAttached: Boolean = js.native
     
     /**
       * Test whether the object has been disposed.
@@ -182,11 +191,16 @@ object typesWidgetMod {
       */
     /* CompleteClass */
     override val isDisposed: Boolean = js.native
+    /**
+      * Test whether the widget has been disposed.
+      */
+    @JSName("isDisposed")
+    def isDisposed_MWidget: Boolean = js.native
     
     /**
       * Test whether the widget is explicitly hidden.
       */
-    val isHidden: Boolean = js.native
+    def isHidden: Boolean = js.native
     
     /**
       * Test whether the widget is visible.
@@ -195,11 +209,12 @@ object typesWidgetMod {
       * A widget is visible when it is attached to the DOM, is not
       * explicitly hidden, and has no explicitly hidden ancestors.
       */
-    val isVisible: Boolean = js.native
+    def isVisible: Boolean = js.native
     
     /**
       * Get the layout for the widget.
       */
+    def layout: Layout | Null = js.native
     /**
       * Set the layout for the widget.
       *
@@ -209,7 +224,7 @@ object typesWidgetMod {
       *
       * The layout is disposed automatically when the widget is disposed.
       */
-    var layout: Layout | Null = js.native
+    def layout_=(value: Layout | Null): Unit = js.native
     
     /**
       * Get the DOM node owned by the widget.
@@ -351,6 +366,7 @@ object typesWidgetMod {
     /**
       * Get the parent of the widget.
       */
+    def parent: Widget | Null = js.native
     /**
       * Set the parent of the widget.
       *
@@ -362,7 +378,7 @@ object typesWidgetMod {
       *
       * This is a no-op if there is no effective parent change.
       */
-    var parent: Widget | Null = js.native
+    def parent_=(value: Widget | Null): Unit = js.native
     
     /**
       * Process a message sent to the handler.
@@ -406,7 +422,7 @@ object typesWidgetMod {
       * Show the widget and make it visible to its parent widget.
       *
       * #### Notes
-      * This causes the [[isHidden]] property to be `false`.
+      * This causes the {@link isHidden} property to be `false`.
       *
       * If the widget is not explicitly hidden, this is a no-op.
       */
@@ -431,7 +447,7 @@ object typesWidgetMod {
       *
       * The `owner` property of the title is set to this widget.
       */
-    val title: Title[Widget] = js.native
+    def title: Title[Widget] = js.native
     
     /**
       * Toggle a class name on the widget's DOM node.
@@ -567,6 +583,15 @@ object typesWidgetMod {
       
       @JSBracketAccess
       def apply(value: Double): js.UndefOr[HiddenMode & Double] = js.native
+      
+      /**
+        *Hide the widget by setting the `content-visibility` to `'hidden'`.
+        */
+      @js.native
+      sealed trait ContentVisibility
+        extends StObject
+           with HiddenMode
+      /* 2 */ val ContentVisibility: typings.luminoWidgets.typesWidgetMod.Widget.HiddenMode.ContentVisibility & Double = js.native
       
       /**
         * Set a `lm-mod-hidden` CSS class to hide the widget using `display:none`

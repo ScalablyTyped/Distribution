@@ -19,9 +19,16 @@ object libUtilGetosMod {
   @js.native
   val ^ : js.Any = js.native
   
+  @JSImport("mongodb-memory-server-core/lib/util/getos", "UNKNOWN")
+  @js.native
+  val UNKNOWN: /* "unknown" */ String = js.native
+  
   inline def getOS(): js.Promise[AnyOS] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOS")().asInstanceOf[js.Promise[AnyOS]]
   
   inline def isLinuxOS(os: AnyOS): /* is mongodb-memory-server-core.mongodb-memory-server-core/lib/util/getos.LinuxOS */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLinuxOS")(os.asInstanceOf[js.Any]).asInstanceOf[/* is mongodb-memory-server-core.mongodb-memory-server-core/lib/util/getos.LinuxOS */ Boolean]
+  
+  inline def isValidOs(): /* is mongodb-memory-server-core.mongodb-memory-server-core/lib/util/getos.LinuxOS */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidOs")().asInstanceOf[/* is mongodb-memory-server-core.mongodb-memory-server-core/lib/util/getos.LinuxOS */ Boolean]
+  inline def isValidOs(os: LinuxOS): /* is mongodb-memory-server-core.mongodb-memory-server-core/lib/util/getos.LinuxOS */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidOs")(os.asInstanceOf[js.Any]).asInstanceOf[/* is mongodb-memory-server-core.mongodb-memory-server-core/lib/util/getos.LinuxOS */ Boolean]
   
   inline def parseLSB(input: String): LinuxOS = ^.asInstanceOf[js.Dynamic].applyDynamic("parseLSB")(input.asInstanceOf[js.Any]).asInstanceOf[LinuxOS]
   

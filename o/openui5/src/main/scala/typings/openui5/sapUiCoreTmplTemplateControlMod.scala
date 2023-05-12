@@ -253,6 +253,8 @@ object sapUiCoreTmplTemplateControlMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Creates a pseudo binding for an aggregation to get notified once the property changes to invalidate the
       * control and trigger a re-rendering.
       *
@@ -264,6 +266,8 @@ object sapUiCoreTmplTemplateControlMod {
     sPath: String): Any = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Creates a pseudo binding for a property to get notified once the property changes to invalidate the control
       * and trigger a re-rendering.
       *
@@ -275,6 +279,8 @@ object sapUiCoreTmplTemplateControlMod {
     sPath: String): Any = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * compiles (creates and registers) a new control
       *
       * @returns new control instance
@@ -291,6 +297,8 @@ object sapUiCoreTmplTemplateControlMod {
       oView: typings.openui5.sapUiCoreMvcViewMod.default
     ): typings.openui5.sapUiCoreControlMod.default = js.native
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * compiles (creates and registers) a new control
       *
       * @returns new control instance
@@ -303,6 +311,8 @@ object sapUiCoreTmplTemplateControlMod {
       oView: typings.openui5.sapUiCoreMvcViewMod.default
     ): typings.openui5.sapUiCoreControlMod.default = js.native
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * compiles (creates and registers) a new control
       *
       * @returns new control instance
@@ -323,6 +333,8 @@ object sapUiCoreTmplTemplateControlMod {
       oView: typings.openui5.sapUiCoreMvcViewMod.default
     ): typings.openui5.sapUiCoreControlMod.default = js.native
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * compiles (creates and registers) a new control
       *
       * @returns new control instance
@@ -340,6 +352,8 @@ object sapUiCoreTmplTemplateControlMod {
     ): typings.openui5.sapUiCoreControlMod.default = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * compiles (creates and registers) a new DOM element
       *
       * @returns new DOM element instance
@@ -438,6 +452,8 @@ object sapUiCoreTmplTemplateControlMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:afterRendering afterRendering} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -449,6 +465,8 @@ object sapUiCoreTmplTemplateControlMod {
     mParameters: js.Object): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:beforeRendering beforeRendering} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -476,6 +494,8 @@ object sapUiCoreTmplTemplateControlMod {
     def getTemplate(): ID = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Returns the instance specific renderer for an anonymous template control.
       *
       * @returns the instance specific renderer function
@@ -483,6 +503,8 @@ object sapUiCoreTmplTemplateControlMod {
     def getTemplateRenderer(): js.Function = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * checks whether the control is inline or not
       *
       * @returns flag, whether to control is inline or not
@@ -527,6 +549,8 @@ object sapUiCoreTmplTemplateControlMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Sets the instance specific renderer for an anonymous template control.
       *
       * @returns `this` to allow method chaining

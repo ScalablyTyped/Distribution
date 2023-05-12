@@ -15,6 +15,11 @@ trait EnrollmentJobFraudDetectionConfig extends StObject {
     * Threshold value for determining whether the speaker is a high risk to be fraudulent. If the detected risk score calculated by Voice ID is greater than or equal to the threshold, the speaker is considered a fraudster.
     */
   var RiskThreshold: js.UndefOr[Score] = js.undefined
+  
+  /**
+    * The identifier of watchlists against which fraud detection is performed. 
+    */
+  var WatchlistIds: js.UndefOr[EnrollmentJobFraudDetectionConfigWatchlistIds] = js.undefined
 }
 object EnrollmentJobFraudDetectionConfig {
   
@@ -33,5 +38,11 @@ object EnrollmentJobFraudDetectionConfig {
     inline def setRiskThreshold(value: Score): Self = StObject.set(x, "RiskThreshold", value.asInstanceOf[js.Any])
     
     inline def setRiskThresholdUndefined: Self = StObject.set(x, "RiskThreshold", js.undefined)
+    
+    inline def setWatchlistIds(value: EnrollmentJobFraudDetectionConfigWatchlistIds): Self = StObject.set(x, "WatchlistIds", value.asInstanceOf[js.Any])
+    
+    inline def setWatchlistIdsUndefined: Self = StObject.set(x, "WatchlistIds", js.undefined)
+    
+    inline def setWatchlistIdsVarargs(value: WatchlistId*): Self = StObject.set(x, "WatchlistIds", js.Array(value*))
   }
 }

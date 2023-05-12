@@ -2,10 +2,12 @@ package typings.three
 
 import typings.std.ArrayLike
 import typings.std.Generator
-import typings.std.Record
+import typings.three.anon.Aliceblue
 import typings.three.srcConstantsMod.ColorSpace
 import typings.three.srcCoreBufferAttributeMod.BufferAttribute
-import typings.three.srcUtilsMod.ColorRepresentation
+import typings.three.srcCoreInterleavedBufferAttributeMod.InterleavedBufferAttribute
+import typings.three.srcMathMatrix3Mod.Matrix3
+import typings.three.srcMathVector3Mod.Vector3
 import typings.three.threeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -28,6 +30,11 @@ object srcMathColorMod {
     def addColors(color1: Color, color2: Color): this.type = js.native
     
     def addScalar(s: Double): this.type = js.native
+    
+    /**
+      * Applies the transform {@link Matrix3 | m} to this color's RGB components.
+      */
+    def applyMatrix3(m: Matrix3): this.type = js.native
     
     /**
       * Blue channel value between 0 and 1. Default is 1.
@@ -76,6 +83,7 @@ object srcMathColorMod {
     def fromArray(array: ArrayLike[Double], offset: Double): this.type = js.native
     
     def fromBufferAttribute(attribute: BufferAttribute, index: Double): this.type = js.native
+    def fromBufferAttribute(attribute: InterleavedBufferAttribute, index: Double): this.type = js.native
     
     /**
       * Green channel value between 0 and 1. Default is 1.
@@ -142,6 +150,12 @@ object srcMathColorMod {
     def setColorName(style: String, colorSpace: ColorSpace): Color = js.native
     
     /**
+      * Sets this color's {@link r}, {@link g} and {@link b} components from the x, y, and z components of the specified
+      * {@link Vector3 | vector}.
+      */
+    def setFromVector3(vector: Vector3): this.type = js.native
+    
+    /**
       * Sets this color from HSL values.
       * Based on MochiKit implementation by Bob Ippolito.
       *
@@ -193,6 +207,12 @@ object srcMathColorMod {
       */
     def toArray(xyz: ArrayLike[Double]): ArrayLike[Double] = js.native
     def toArray(xyz: ArrayLike[Double], offset: Double): ArrayLike[Double] = js.native
+    
+    /**
+      * This method defines the serialization result of Color.
+      * @return The color as a hexadecimal value.
+      */
+    def toJSON(): Double = js.native
   }
   /* static members */
   object Color {
@@ -206,11 +226,13 @@ object srcMathColorMod {
       */
     @JSImport("three/src/math/Color", "Color.NAMES")
     @js.native
-    def NAMES: Record[String, Double] = js.native
-    inline def NAMES_=(x: Record[String, Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NAMES")(x.asInstanceOf[js.Any])
+    def NAMES: Aliceblue = js.native
+    inline def NAMES_=(x: Aliceblue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NAMES")(x.asInstanceOf[js.Any])
   }
   
   inline def SRGBToLinear(c: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("SRGBToLinear")(c.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  type ColorRepresentation = Color | String | Double
   
   trait HSL extends StObject {
     

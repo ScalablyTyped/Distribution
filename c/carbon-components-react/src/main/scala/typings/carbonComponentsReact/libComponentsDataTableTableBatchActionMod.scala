@@ -23,6 +23,7 @@ import typings.carbonComponentsReact.carbonComponentsReactStrings.br
 import typings.carbonComponentsReact.carbonComponentsReactStrings.button
 import typings.carbonComponentsReact.carbonComponentsReactStrings.canvas
 import typings.carbonComponentsReact.carbonComponentsReactStrings.caption
+import typings.carbonComponentsReact.carbonComponentsReactStrings.center
 import typings.carbonComponentsReact.carbonComponentsReactStrings.circle
 import typings.carbonComponentsReact.carbonComponentsReactStrings.cite
 import typings.carbonComponentsReact.carbonComponentsReactStrings.clipPath
@@ -253,6 +254,8 @@ object libComponentsDataTableTableBatchActionMod {
   inline def default_canvas[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[canvas] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   inline def default_caption[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[caption] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  
+  inline def default_center[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[center] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   inline def default_circle[R /* <: HTMLElement */](props: ForwardRefProps[R, ButtonIntrinsicProps[circle] & ButtonKindProps]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   

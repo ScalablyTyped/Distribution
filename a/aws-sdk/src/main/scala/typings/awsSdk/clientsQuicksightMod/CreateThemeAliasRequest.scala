@@ -19,7 +19,7 @@ trait CreateThemeAliasRequest extends StObject {
   /**
     * An ID for the theme alias.
     */
-  var ThemeId: RestrictiveResourceId
+  var ThemeId: ShortRestrictiveResourceId
   
   /**
     * The version number of the theme.
@@ -31,7 +31,7 @@ object CreateThemeAliasRequest {
   inline def apply(
     AliasName: AliasName,
     AwsAccountId: AwsAccountId,
-    ThemeId: RestrictiveResourceId,
+    ThemeId: ShortRestrictiveResourceId,
     ThemeVersionNumber: VersionNumber
   ): CreateThemeAliasRequest = {
     val __obj = js.Dynamic.literal(AliasName = AliasName.asInstanceOf[js.Any], AwsAccountId = AwsAccountId.asInstanceOf[js.Any], ThemeId = ThemeId.asInstanceOf[js.Any], ThemeVersionNumber = ThemeVersionNumber.asInstanceOf[js.Any])
@@ -45,7 +45,7 @@ object CreateThemeAliasRequest {
     
     inline def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
     
-    inline def setThemeId(value: RestrictiveResourceId): Self = StObject.set(x, "ThemeId", value.asInstanceOf[js.Any])
+    inline def setThemeId(value: ShortRestrictiveResourceId): Self = StObject.set(x, "ThemeId", value.asInstanceOf[js.Any])
     
     inline def setThemeVersionNumber(value: VersionNumber): Self = StObject.set(x, "ThemeVersionNumber", value.asInstanceOf[js.Any])
   }

@@ -8,25 +8,25 @@ object libRestMediaMod {
   
   @JSImport("twilio/lib/rest/Media", JSImport.Namespace)
   @js.native
-  open class ^ protected () extends Media {
-    /**
-      * Initialize media domain
-      *
-      * @param twilio - The twilio client
-      */
-    def this(twilio: typings.twilio.libRestTwilioMod.^) = this()
-  }
+  open class ^ () extends Media
   
   @js.native
   trait Media
-    extends typings.twilio.libBaseDomainMod.^ {
+    extends typings.twilio.libRestMediaBaseMod.^ {
     
-    val mediaProcessor: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MediaProcessorListInstance */ Any = js.native
+    /**
+      * @deprecated - Use v1.mediaProcessor instead
+      */
+    def mediaProcessor: Any = js.native
     
-    val mediaRecording: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MediaRecordingListInstance */ Any = js.native
+    /**
+      * @deprecated - Use v1.mediaRecording instead
+      */
+    def mediaRecording: Any = js.native
     
-    val playerStreamer: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PlayerStreamerListInstance */ Any = js.native
-    
-    val v1: typings.twilio.libRestMediaV1Mod.^ = js.native
+    /**
+      * @deprecated - Use v1.playerStreamer instead
+      */
+    def playerStreamer: Any = js.native
   }
 }

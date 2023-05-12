@@ -27,7 +27,7 @@ trait Image extends StObject {
   var FailureReason: js.UndefOr[typings.awsSdk.clientsSagemakerMod.FailureReason] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the image.
+    * The ARN of the image.
     */
   var ImageArn: typings.awsSdk.clientsSagemakerMod.ImageArn
   

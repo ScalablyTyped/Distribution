@@ -3,7 +3,7 @@ package typings.reactIcons
 import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.SVGAttributes
 import typings.react.mod.global.JSX.Element
-import typings.reactIcons.anon.IconBasePropsattrundefine
+import typings.reactIcons.anon.IconBasePropsattrRecordst
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,7 +17,7 @@ object libEsmIconBaseMod {
   
   inline def GenIcon(data: IconTree): js.Function1[/* props */ IconBaseProps, Element] = ^.asInstanceOf[js.Dynamic].applyDynamic("GenIcon")(data.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* props */ IconBaseProps, Element]]
   
-  inline def IconBase(props: IconBasePropsattrundefine): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("IconBase")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def IconBase(props: IconBasePropsattrRecordst): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("IconBase")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait IconBaseProps
     extends StObject

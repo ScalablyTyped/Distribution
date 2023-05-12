@@ -24,6 +24,8 @@ object buildSrcExportSimpleSpanProcessorMod {
     
     /* private */ var _shutdownOnce: Any = js.native
     
+    /* private */ var _unresolvedExports: Any = js.native
+    
     /**
       * Forces to export all finished spans
       */

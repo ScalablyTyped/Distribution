@@ -2,13 +2,14 @@ package typings.tensorflowTfjsCore
 
 import org.scalablytyped.runtime.NumberDictionary
 import typings.tensorflowTfjsCore.anon.KeptDims
+import typings.tensorflowTfjsCore.distTypesMod.BackendValues
 import typings.tensorflowTfjsCore.distTypesMod.DataType
 import typings.tensorflowTfjsCore.distTypesMod.FlatVector
 import typings.tensorflowTfjsCore.distTypesMod.NumericDataType
-import typings.tensorflowTfjsCore.distTypesMod.RecursiveArray
 import typings.tensorflowTfjsCore.distTypesMod.TensorLike
 import typings.tensorflowTfjsCore.distTypesMod.TypedArray
 import typings.tensorflowTfjsCore.distTypesMod.WebGLData
+import typings.tensorflowTfjsCore.distTypesMod.WebGPUData
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.bool
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.complex64
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.float32
@@ -25,6 +26,8 @@ object distUtilBaseMod {
   val ^ : js.Any = js.native
   
   inline def arraysEqual(n1: FlatVector, n2: FlatVector): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("arraysEqual")(n1.asInstanceOf[js.Any], n2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  inline def arraysEqualWithNull(n1: js.Array[Double], n2: js.Array[Double]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("arraysEqualWithNull")(n1.asInstanceOf[js.Any], n2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   inline def assert(expr: Boolean, msg: js.Function0[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assert")(expr.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
@@ -57,18 +60,12 @@ object distUtilBaseMod {
   
   inline def computeStrides(shape: js.Array[Double]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("computeStrides")(shape.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
   
+  inline def convertBackendValuesAndArrayBuffer(data: js.typedarray.ArrayBuffer, dtype: DataType): js.typedarray.Float32Array | js.typedarray.Int32Array | js.typedarray.Uint8Array | js.Array[js.typedarray.Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("convertBackendValuesAndArrayBuffer")(data.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Float32Array | js.typedarray.Int32Array | js.typedarray.Uint8Array | js.Array[js.typedarray.Uint8Array]]
+  inline def convertBackendValuesAndArrayBuffer(data: BackendValues, dtype: DataType): js.typedarray.Float32Array | js.typedarray.Int32Array | js.typedarray.Uint8Array | js.Array[js.typedarray.Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("convertBackendValuesAndArrayBuffer")(data.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Float32Array | js.typedarray.Int32Array | js.typedarray.Uint8Array | js.Array[js.typedarray.Uint8Array]]
+  
   inline def createShuffledIndices(n: Double): js.typedarray.Uint32Array = ^.asInstanceOf[js.Dynamic].applyDynamic("createShuffledIndices")(n.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint32Array]
   
   inline def distSquared(a: FlatVector, b: FlatVector): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("distSquared")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
-  
-  inline def flatten[T /* <: Double | Boolean | String | js.Promise[Double] | TypedArray */](arr: T): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(arr.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
-  inline def flatten[T /* <: Double | Boolean | String | js.Promise[Double] | TypedArray */](arr: T, result: js.Array[T]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(arr.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
-  inline def flatten[T /* <: Double | Boolean | String | js.Promise[Double] | TypedArray */](arr: T, result: js.Array[T], skipTypedArray: Boolean): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(arr.asInstanceOf[js.Any], result.asInstanceOf[js.Any], skipTypedArray.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
-  inline def flatten[T /* <: Double | Boolean | String | js.Promise[Double] | TypedArray */](arr: T, result: Unit, skipTypedArray: Boolean): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(arr.asInstanceOf[js.Any], result.asInstanceOf[js.Any], skipTypedArray.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
-  inline def flatten[T /* <: Double | Boolean | String | js.Promise[Double] | TypedArray */](arr: RecursiveArray[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(arr.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
-  inline def flatten[T /* <: Double | Boolean | String | js.Promise[Double] | TypedArray */](arr: RecursiveArray[T], result: js.Array[T]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(arr.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
-  inline def flatten[T /* <: Double | Boolean | String | js.Promise[Double] | TypedArray */](arr: RecursiveArray[T], result: js.Array[T], skipTypedArray: Boolean): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(arr.asInstanceOf[js.Any], result.asInstanceOf[js.Any], skipTypedArray.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
-  inline def flatten[T /* <: Double | Boolean | String | js.Promise[Double] | TypedArray */](arr: RecursiveArray[T], result: Unit, skipTypedArray: Boolean): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(arr.asInstanceOf[js.Any], result.asInstanceOf[js.Any], skipTypedArray.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
   inline def getArrayFromDType_bool(dtype: bool, size: Double): js.typedarray.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("getArrayFromDType")(dtype.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint8Array]
   
@@ -88,6 +85,7 @@ object distUtilBaseMod {
   
   inline def inferDtype(values: TensorLike): DataType = ^.asInstanceOf[js.Dynamic].applyDynamic("inferDtype")(values.asInstanceOf[js.Any]).asInstanceOf[DataType]
   inline def inferDtype(values: WebGLData): DataType = ^.asInstanceOf[js.Dynamic].applyDynamic("inferDtype")(values.asInstanceOf[js.Any]).asInstanceOf[DataType]
+  inline def inferDtype(values: WebGPUData): DataType = ^.asInstanceOf[js.Dynamic].applyDynamic("inferDtype")(values.asInstanceOf[js.Any]).asInstanceOf[DataType]
   
   inline def inferFromImplicitShape(shape: js.Array[Double], size: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("inferFromImplicitShape")(shape.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
@@ -104,8 +102,6 @@ object distUtilBaseMod {
   inline def isScalarShape(shape: js.Array[Double]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isScalarShape")(shape.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def isString(value: js.Object): /* is string */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isString")(value.asInstanceOf[js.Any]).asInstanceOf[/* is string */ Boolean]
-  
-  inline def isTypedArray(a: js.Object): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTypedArray")(a.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def isValidDtype(dtype: DataType): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidDtype")(dtype.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   

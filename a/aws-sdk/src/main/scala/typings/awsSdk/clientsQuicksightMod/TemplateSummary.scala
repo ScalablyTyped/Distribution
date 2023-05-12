@@ -34,7 +34,7 @@ trait TemplateSummary extends StObject {
   /**
     * The ID of the template. This ID is unique per Amazon Web Services Region for each Amazon Web Services account.
     */
-  var TemplateId: js.UndefOr[RestrictiveResourceId] = js.undefined
+  var TemplateId: js.UndefOr[ShortRestrictiveResourceId] = js.undefined
 }
 object TemplateSummary {
   
@@ -66,7 +66,7 @@ object TemplateSummary {
     
     inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    inline def setTemplateId(value: RestrictiveResourceId): Self = StObject.set(x, "TemplateId", value.asInstanceOf[js.Any])
+    inline def setTemplateId(value: ShortRestrictiveResourceId): Self = StObject.set(x, "TemplateId", value.asInstanceOf[js.Any])
     
     inline def setTemplateIdUndefined: Self = StObject.set(x, "TemplateId", js.undefined)
   }

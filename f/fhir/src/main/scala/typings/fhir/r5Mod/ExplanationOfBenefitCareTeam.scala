@@ -16,11 +16,6 @@ trait ExplanationOfBenefitCareTeam
   var provider: Reference
   
   /**
-    * The qualification of the practitioner which is applicable for this service.
-    */
-  var qualification: js.UndefOr[CodeableConcept] = js.undefined
-  
-  /**
     * Responsible might not be required when there is only a single provider listed.
     */
   var responsible: js.UndefOr[Boolean] = js.undefined
@@ -34,6 +29,11 @@ trait ExplanationOfBenefitCareTeam
     * A number to uniquely identify care team entries.
     */
   var sequence: Double
+  
+  /**
+    * The specialization of the practitioner or provider which is applicable for this service.
+    */
+  var specialty: js.UndefOr[CodeableConcept] = js.undefined
 }
 object ExplanationOfBenefitCareTeam {
   
@@ -47,10 +47,6 @@ object ExplanationOfBenefitCareTeam {
     
     inline def setProvider(value: Reference): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     
-    inline def setQualification(value: CodeableConcept): Self = StObject.set(x, "qualification", value.asInstanceOf[js.Any])
-    
-    inline def setQualificationUndefined: Self = StObject.set(x, "qualification", js.undefined)
-    
     inline def setResponsible(value: Boolean): Self = StObject.set(x, "responsible", value.asInstanceOf[js.Any])
     
     inline def setResponsibleUndefined: Self = StObject.set(x, "responsible", js.undefined)
@@ -60,6 +56,10 @@ object ExplanationOfBenefitCareTeam {
     inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
     
     inline def setSequence(value: Double): Self = StObject.set(x, "sequence", value.asInstanceOf[js.Any])
+    
+    inline def setSpecialty(value: CodeableConcept): Self = StObject.set(x, "specialty", value.asInstanceOf[js.Any])
+    
+    inline def setSpecialtyUndefined: Self = StObject.set(x, "specialty", js.undefined)
     
     inline def set_responsible(value: Element): Self = StObject.set(x, "_responsible", value.asInstanceOf[js.Any])
     

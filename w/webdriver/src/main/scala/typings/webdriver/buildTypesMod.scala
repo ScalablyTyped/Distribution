@@ -5,7 +5,6 @@ import typings.node.eventsMod.EventEmitter
 import typings.std.Error
 import typings.std.Record
 import typings.wdioProtocols.mod.ProtocolCommands
-import typings.wdioProtocols.mod.ProtocolCommandsAsync
 import typings.wdioTypes.anon.Http
 import typings.wdioTypes.buildCapabilitiesMod.DesiredCapabilities
 import typings.wdioTypes.buildCapabilitiesMod.W3CCapabilities
@@ -231,11 +230,6 @@ object buildTypesMod {
   
   @js.native
   trait Client
-    extends BaseClient
-       with ProtocolCommandsAsync
-  
-  @js.native
-  trait ClientSync
     extends BaseClient
        with ProtocolCommands
   

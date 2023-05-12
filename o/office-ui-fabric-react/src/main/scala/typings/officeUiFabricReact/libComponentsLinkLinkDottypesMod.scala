@@ -45,8 +45,6 @@ object libComponentsLinkLinkDottypesMod {
        with HTMLAttributes[T]
        with /* index */ StringDictionary[Any] {
     
-    var autoFocus: js.UndefOr[Boolean] = js.undefined
-    
     var disabled: js.UndefOr[Boolean] = js.undefined
     
     var download: js.UndefOr[Any] = js.undefined
@@ -71,8 +69,6 @@ object libComponentsLinkLinkDottypesMod {
     
     var name: js.UndefOr[String] = js.undefined
     
-    var rel: js.UndefOr[String] = js.undefined
-    
     var target: js.UndefOr[String] = js.undefined
     
     var `type`: js.UndefOr[String] = js.undefined
@@ -88,10 +84,6 @@ object libComponentsLinkLinkDottypesMod {
     
     @scala.inline
     implicit open class MutableBuilder[Self <: ILinkHTMLAttributes[?], T] (val x: Self & ILinkHTMLAttributes[T]) extends AnyVal {
-      
-      inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
-      
-      inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
@@ -140,10 +132,6 @@ object libComponentsLinkLinkDottypesMod {
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
-      
-      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
-      
-      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
       
       inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       

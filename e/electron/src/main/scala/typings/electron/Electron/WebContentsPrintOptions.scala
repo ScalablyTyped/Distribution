@@ -63,8 +63,9 @@ trait WebContentsPrintOptions extends StObject {
   var pageRanges: js.UndefOr[js.Array[PageRanges]] = js.undefined
   
   /**
-    * Specify page size of the printed document. Can be `A3`, `A4`, `A5`, `Legal`,
-    * `Letter`, `Tabloid` or an Object containing `height` and `width`.
+    * Specify page size of the printed document. Can be `A0`, `A1`, `A2`, `A3`, `A4`,
+    * `A5`, `A6`, `Legal`, `Letter`, `Tabloid` or an Object containing `height` and
+    * `width`.
     */
   var pageSize: js.UndefOr[String | Size] = js.undefined
   

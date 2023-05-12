@@ -1,53 +1,54 @@
 package typings.workboxCore
 
+import typings.workboxCore.typesMod.MapLikeObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  /* Inlined std.Partial<workbox-core.workbox-core/setCacheNameDetails.CacheNameDetails> */
-  trait PartialCacheNameDetails extends StObject {
+  trait HasMethod extends StObject {
     
-    var googleAnalytics: js.UndefOr[String] = js.undefined
+    def hasMethod(`object`: MapLikeObject, expectedMethod: String, details: MapLikeObject): Unit
     
-    var precache: js.UndefOr[String] = js.undefined
+    def isArray(value: js.Array[Any], details: MapLikeObject): Unit
     
-    var prefix: js.UndefOr[String] = js.undefined
+    def isArrayOfClass(value: Any, expectedClass: js.Function, details: MapLikeObject): Unit
     
-    var runtime: js.UndefOr[String] = js.undefined
+    def isInstance(`object`: Any, expectedClass: js.Function, details: MapLikeObject): Unit
     
-    var suffix: js.UndefOr[String] = js.undefined
+    def isOneOf(value: Any, validValues: js.Array[Any], details: MapLikeObject): Unit
+    
+    def isType(`object`: Any, expectedType: String, details: MapLikeObject): Unit
   }
-  object PartialCacheNameDetails {
+  object HasMethod {
     
-    inline def apply(): PartialCacheNameDetails = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[PartialCacheNameDetails]
+    inline def apply(
+      hasMethod: (MapLikeObject, String, MapLikeObject) => Unit,
+      isArray: (js.Array[Any], MapLikeObject) => Unit,
+      isArrayOfClass: (Any, js.Function, MapLikeObject) => Unit,
+      isInstance: (Any, js.Function, MapLikeObject) => Unit,
+      isOneOf: (Any, js.Array[Any], MapLikeObject) => Unit,
+      isType: (Any, String, MapLikeObject) => Unit
+    ): HasMethod = {
+      val __obj = js.Dynamic.literal(hasMethod = js.Any.fromFunction3(hasMethod), isArray = js.Any.fromFunction2(isArray), isArrayOfClass = js.Any.fromFunction3(isArrayOfClass), isInstance = js.Any.fromFunction3(isInstance), isOneOf = js.Any.fromFunction3(isOneOf), isType = js.Any.fromFunction3(isType))
+      __obj.asInstanceOf[HasMethod]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: PartialCacheNameDetails] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: HasMethod] (val x: Self) extends AnyVal {
       
-      inline def setGoogleAnalytics(value: String): Self = StObject.set(x, "googleAnalytics", value.asInstanceOf[js.Any])
+      inline def setHasMethod(value: (MapLikeObject, String, MapLikeObject) => Unit): Self = StObject.set(x, "hasMethod", js.Any.fromFunction3(value))
       
-      inline def setGoogleAnalyticsUndefined: Self = StObject.set(x, "googleAnalytics", js.undefined)
+      inline def setIsArray(value: (js.Array[Any], MapLikeObject) => Unit): Self = StObject.set(x, "isArray", js.Any.fromFunction2(value))
       
-      inline def setPrecache(value: String): Self = StObject.set(x, "precache", value.asInstanceOf[js.Any])
+      inline def setIsArrayOfClass(value: (Any, js.Function, MapLikeObject) => Unit): Self = StObject.set(x, "isArrayOfClass", js.Any.fromFunction3(value))
       
-      inline def setPrecacheUndefined: Self = StObject.set(x, "precache", js.undefined)
+      inline def setIsInstance(value: (Any, js.Function, MapLikeObject) => Unit): Self = StObject.set(x, "isInstance", js.Any.fromFunction3(value))
       
-      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setIsOneOf(value: (Any, js.Array[Any], MapLikeObject) => Unit): Self = StObject.set(x, "isOneOf", js.Any.fromFunction3(value))
       
-      inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
-      
-      inline def setRuntime(value: String): Self = StObject.set(x, "runtime", value.asInstanceOf[js.Any])
-      
-      inline def setRuntimeUndefined: Self = StObject.set(x, "runtime", js.undefined)
-      
-      inline def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
-      
-      inline def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
+      inline def setIsType(value: (Any, String, MapLikeObject) => Unit): Self = StObject.set(x, "isType", js.Any.fromFunction3(value))
     }
   }
 }

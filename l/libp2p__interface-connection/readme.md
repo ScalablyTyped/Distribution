@@ -1,7 +1,7 @@
 
 # Scala.js typings for libp2p__interface-connection
 
-Typings are for version 3.0.2
+Typings are for version 5.0.2
 
 ## Library description:
 Connection interface for libp2p

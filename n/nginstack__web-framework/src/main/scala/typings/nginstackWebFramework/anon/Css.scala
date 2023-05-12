@@ -1,6 +1,6 @@
 package typings.nginstackWebFramework.anon
 
-import typings.nginstackWebFramework.libSimpleLayoutHeaderMod.Mail
+import typings.nginstackWebFramework.libSimpleLayoutHeaderMod.Email
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,7 +17,7 @@ trait Css extends StObject {
   
   var layoutId: js.UndefOr[Double] = js.undefined
   
-  var mailObject: js.UndefOr[Mail] = js.undefined
+  var mailObject: js.UndefOr[Email] = js.undefined
 }
 object Css {
   
@@ -51,7 +51,7 @@ object Css {
     
     inline def setLayoutIdUndefined: Self = StObject.set(x, "layoutId", js.undefined)
     
-    inline def setMailObject(value: Mail): Self = StObject.set(x, "mailObject", value.asInstanceOf[js.Any])
+    inline def setMailObject(value: Email): Self = StObject.set(x, "mailObject", value.asInstanceOf[js.Any])
     
     inline def setMailObjectUndefined: Self = StObject.set(x, "mailObject", js.undefined)
   }

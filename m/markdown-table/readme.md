@@ -1,7 +1,7 @@
 
 # Scala.js typings for markdown-table
 
-Typings are for version 3.0.2
+Typings are for version 3.0.3
 
 ## Library description:
 Generate a markdown (GFM) table

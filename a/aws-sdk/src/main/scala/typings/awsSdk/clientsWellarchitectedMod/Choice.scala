@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Choice extends StObject {
   
   /**
-    * The additional resources for a choice. A choice can have up to two additional resources: one of type HELPFUL_RESOURCE, one of type IMPROVEMENT_PLAN, or both.
+    * The additional resources for a choice in a custom lens. A choice can have up to two additional resources: one of type HELPFUL_RESOURCE, one of type IMPROVEMENT_PLAN, or both.
     */
   var AdditionalResources: js.UndefOr[AdditionalResourcesList] = js.undefined
   
@@ -16,12 +16,12 @@ trait Choice extends StObject {
   var Description: js.UndefOr[ChoiceDescription] = js.undefined
   
   /**
-    * The choice level helpful resource.
+    * The helpful resource (both text and URL) for a particular choice. This field only applies to custom lenses. Each choice can have only one helpful resource.
     */
   var HelpfulResource: js.UndefOr[ChoiceContent] = js.undefined
   
   /**
-    * The choice level improvement plan.
+    * The improvement plan (both text and URL) for a particular choice. This field only applies to custom lenses. Each choice can have only one improvement plan.
     */
   var ImprovementPlan: js.UndefOr[ChoiceContent] = js.undefined
   

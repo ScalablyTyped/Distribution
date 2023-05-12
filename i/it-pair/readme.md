@@ -1,7 +1,7 @@
 
 # Scala.js typings for it-pair
 
-Typings are for version 2.0.3
+Typings are for version 2.0.6
 
 ## Library description:
 pair a source async iterable stream and a sink async iterable stream

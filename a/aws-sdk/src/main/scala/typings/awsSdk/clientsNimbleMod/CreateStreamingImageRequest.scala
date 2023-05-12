@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateStreamingImageRequest extends StObject {
   
   /**
-    * Unique, case-sensitive identifier that you provide to ensure the idempotency of the request. If you don’t specify a client token, the AWS SDK automatically generates a client token and uses it for the request to ensure idempotency.
+    * Unique, case-sensitive identifier that you provide to ensure the idempotency of the request. If you don’t specify a client token, the Amazon Web Services SDK automatically generates a client token and uses it for the request to ensure idempotency.
     */
   var clientToken: js.UndefOr[ClientToken] = js.undefined
   
@@ -32,7 +32,7 @@ trait CreateStreamingImageRequest extends StObject {
   var studioId: String
   
   /**
-    * A collection of labels, in the form of key:value pairs, that apply to this resource.
+    * A collection of labels, in the form of key-value pairs, that apply to this resource.
     */
   var tags: js.UndefOr[Tags] = js.undefined
 }

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "phin" : "3.6.1"
+      "phin" : "3.7.0"
     }
   ],
   "test-dependencies" : [
     {
-      "phin" : "3.6.1"
+      "phin" : "3.7.0"
     }
   ],
   "compile-devDependencies" : [

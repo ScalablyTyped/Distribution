@@ -20,6 +20,8 @@ trait AreaHTMLAttributes
   
   var media: js.UndefOr[String] = js.undefined
   
+  var referrerpolicy: js.UndefOr[HTMLAttributeReferrerPolicy] = js.undefined
+  
   var rel: js.UndefOr[String] = js.undefined
   
   var shape: js.UndefOr[String] = js.undefined
@@ -59,6 +61,10 @@ object AreaHTMLAttributes {
     inline def setMedia(value: String): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
     
     inline def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
+    
+    inline def setReferrerpolicy(value: HTMLAttributeReferrerPolicy): Self = StObject.set(x, "referrerpolicy", value.asInstanceOf[js.Any])
+    
+    inline def setReferrerpolicyUndefined: Self = StObject.set(x, "referrerpolicy", js.undefined)
     
     inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
     

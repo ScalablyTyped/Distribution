@@ -36,6 +36,28 @@ object anon {
     }
   }
   
+  trait Colour extends StObject {
+    
+    var colour: String
+    
+    var value: Double
+  }
+  object Colour {
+    
+    inline def apply(colour: String, value: Double): Colour = {
+      val __obj = js.Dynamic.literal(colour = colour.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Colour]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Colour] (val x: Self) extends AnyVal {
+      
+      inline def setColour(value: String): Self = StObject.set(x, "colour", value.asInstanceOf[js.Any])
+      
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    }
+  }
+  
   trait Context extends StObject {
     
     var context: js.UndefOr[Boolean] = js.undefined

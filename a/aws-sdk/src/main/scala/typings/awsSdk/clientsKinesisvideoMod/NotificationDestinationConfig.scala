@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NotificationDestinationConfig extends StObject {
   
   /**
-    * The Uniform Resource Idenifier (URI) that identifies where the images will be delivered.
+    * The Uniform Resource Identifier (URI) that identifies where the images will be delivered.
     */
   var Uri: DestinationUri
 }

@@ -1,8 +1,13 @@
 package typings.jsts.jsts
 
+import typings.jsts.java_.utils.ArrayList
+import typings.jsts.java_.utils.Collection
+import typings.jsts.java_.utils.HashSet
 import typings.jsts.jsts.geom.Coordinate
 import typings.jsts.jsts.geom.Geometry
 import typings.jsts.jsts.geom.IntersectionMatrix
+import typings.jsts.jsts.geom.LineString
+import typings.jsts.jsts.geom.Polygon
 import typings.jsts.jsts.geom.PrecisionModel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -358,6 +363,102 @@ object operation {
         
         inline def setIsInsideArea(value: () => Boolean): Self = StObject.set(x, "isInsideArea", js.Any.fromFunction0(value))
       }
+    }
+  }
+  
+  object linemerge {
+    
+    @js.native
+    trait LineMerger extends StObject {
+      
+      /**
+        *
+        * Adds a collection of Geometries to be processed. May be called multiple times.
+        * Any dimension of Geometry may be added; the constituent linework will be extracted.
+        *
+        * @param geometries the geometries to be line-merged
+        */
+      def add(geometries: Collection[Geometry]): Unit = js.native
+      /**
+        * Adds a Geometry to be processed. May be called multiple times.
+        * Any dimension of Geometry may be added; the constituent linework will be extracted.
+        *
+        * @param geometry geometry to be line-merged
+        */
+      def add(geometry: Geometry): Unit = js.native
+      
+      /**
+        * Gets the LineStrings created by the merging process.
+        *
+        * @returns the collection of merged LineStrings
+        */
+      def getMergedLineStrings(): Collection[LineString] = js.native
+    }
+  }
+  
+  object polygonize {
+    
+    @js.native
+    trait Polygonizer extends StObject {
+      
+      /**
+        * Adds a collection of geometries to the edges to be polygonized.
+        * May be called multiple times.
+        * Any dimension of Geometry may be added; the constituent linework will be extracted and used.
+        *
+        * @param geomList {Array} a list of Geometrys with linework to be polygonized
+        */
+      def add(geomList: js.Array[Geometry]): Unit = js.native
+      /**
+        * Add a Geometry to the edges to be polygonized.
+        * May be called multiple times.
+        * Any dimension of Geometry may be added; the constituent linework will be extracted and used
+        *
+        * @param g {Geometry} a Geometry with linework to be polygonized
+        */
+      def add(g: Geometry): Unit = js.native
+      
+      /**
+        * Gets the list of cut edges found during polygonization.
+        *
+        * @returns a collection of the input LineStrings which are cut edges
+        */
+      def getCutEdges(): ArrayList[LineString] = js.native
+      
+      /**
+        * Gets the list of dangling lines found during polygonization.
+        *
+        * @returns a collection of the input LineStrings which are dangles
+        */
+      def getDangles(): HashSet[LineString] = js.native
+      
+      /**
+        * Gets a geometry representing the polygons formed by the polygonization.
+        * If a valid polygonal geometry was extracted the result is a Polygonal geometry.
+        *
+        * @returns a geometry containing the polygons
+        */
+      def getGeometry(): Geometry = js.native
+      
+      /**
+        * Gets the list of lines forming invalid rings found during polygonization.
+        *
+        * @returns a collection of the input LineStrings which form invalid rings
+        */
+      def getInvalidRingLines(): ArrayList[LineString] = js.native
+      
+      /**
+        * Gets the list of polygons formed by the polygonization.
+        */
+      def getPolygons(): ArrayList[Polygon] = js.native
+      
+      /**
+        * Allows disabling the valid ring checking, to optimize situations where invalid rings are not expected.
+        * The default is true.
+        *
+        * @param isCheckingRingsValid {boolean} true if generated rings should be checked for validity
+        */
+      def setCheckRingsValid(isCheckingRingsValid: Boolean): Unit = js.native
     }
   }
   

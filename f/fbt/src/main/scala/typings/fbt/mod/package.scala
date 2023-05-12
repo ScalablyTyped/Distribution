@@ -9,7 +9,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-inline def default: Fbt_ = ^.asInstanceOf[js.Dynamic].selectDynamic("default").asInstanceOf[Fbt_]
+inline def default: FbtApi[FbtOutput] = ^.asInstanceOf[js.Dynamic].selectDynamic("default").asInstanceOf[FbtApi[FbtOutput]]
 
 inline def FbtEnum: FC[FbtEnumProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("FbtEnum").asInstanceOf[FC[FbtEnumProps]]
 
@@ -23,7 +23,9 @@ inline def FbtPronoun: FC[FbtPronounProps] = ^.asInstanceOf[js.Dynamic].selectDy
 
 inline def FbtSameParam: FC[FbtSameParamProps] = ^.asInstanceOf[js.Dynamic].selectDynamic("FbtSameParam").asInstanceOf[FC[FbtSameParamProps]]
 
-inline def fbt: Fbt_ = ^.asInstanceOf[js.Dynamic].selectDynamic("fbt").asInstanceOf[Fbt_]
+inline def fbs: FbtApi[FbsOutput] = ^.asInstanceOf[js.Dynamic].selectDynamic("fbs").asInstanceOf[FbtApi[FbsOutput]]
+
+inline def fbt: FbtApi[FbtOutput] = ^.asInstanceOf[js.Dynamic].selectDynamic("fbt").asInstanceOf[FbtApi[FbtOutput]]
 
 inline def init(options: Hooks): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
 

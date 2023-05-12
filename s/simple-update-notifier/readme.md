@@ -1,7 +1,7 @@
 
 # Scala.js typings for simple-update-notifier
 
-Typings are for version 1.0.7
+Typings are for version 1.1.0
 
 
 

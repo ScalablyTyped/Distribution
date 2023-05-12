@@ -30,7 +30,7 @@ object distCommandsSearchMod {
   inline def transformArguments(index: String, query: String): RedisCommandArguments = (^.asInstanceOf[js.Dynamic].applyDynamic("transformArguments")(index.asInstanceOf[js.Any], query.asInstanceOf[js.Any])).asInstanceOf[RedisCommandArguments]
   inline def transformArguments(index: String, query: String, options: SearchOptions): RedisCommandArguments = (^.asInstanceOf[js.Dynamic].applyDynamic("transformArguments")(index.asInstanceOf[js.Any], query.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RedisCommandArguments]
   
-  inline def transformReply(reply: SearchRawReply): SearchReply = ^.asInstanceOf[js.Dynamic].applyDynamic("transformReply")(reply.asInstanceOf[js.Any]).asInstanceOf[SearchReply]
+  inline def transformReply(reply: SearchRawReply, withoutDocuments: Boolean): SearchReply = (^.asInstanceOf[js.Dynamic].applyDynamic("transformReply")(reply.asInstanceOf[js.Any], withoutDocuments.asInstanceOf[js.Any])).asInstanceOf[SearchReply]
   
   trait SearchOptions extends StObject {
     

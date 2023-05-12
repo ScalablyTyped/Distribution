@@ -110,3 +110,30 @@ trait Url extends StObject {
     */
   def setScheme(scheme: String): Url = js.native
 }
+object Url {
+  
+  /**
+    * This class represents the set of values to be associated to a key in cases where it is required to be repeated multiple times in a query string.
+    */
+  trait MultiValueQueryParameter extends StObject {
+    
+    /**
+      * Returns the array of values.
+      * @returns {Array<string|number>}
+      */
+    def getValues(): js.Array[String | Double]
+  }
+  object MultiValueQueryParameter {
+    
+    inline def apply(getValues: () => js.Array[String | Double]): MultiValueQueryParameter = {
+      val __obj = js.Dynamic.literal(getValues = js.Any.fromFunction0(getValues))
+      __obj.asInstanceOf[MultiValueQueryParameter]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiValueQueryParameter] (val x: Self) extends AnyVal {
+      
+      inline def setGetValues(value: () => js.Array[String | Double]): Self = StObject.set(x, "getValues", js.Any.fromFunction0(value))
+    }
+  }
+}

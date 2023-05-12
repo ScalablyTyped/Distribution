@@ -10,7 +10,6 @@ import typings.devextreme.mod.DevExpress.events.EventInfo
 import typings.devextreme.mod.DevExpress.events.InitializedEventInfo
 import typings.devextreme.mod.DevExpress.events.NativeEventInfo
 import typings.devextreme.mod.DevExpress.ui.dxPopup.Properties
-import typings.std.Blob
 import typings.std.HTMLElement
 import typings.std.MouseEvent
 import typings.std.PointerEvent
@@ -29,12 +28,6 @@ trait dxPivotGrid
   def bindChart(chart: String, integrationOptions: AlternateDataFields): js.Function & Null = js.native
   def bindChart(chart: Any, integrationOptions: AlternateDataFields): js.Function & Null = js.native
   def bindChart(chart: DxElement_[HTMLElement], integrationOptions: AlternateDataFields): js.Function & Null = js.native
-  
-  /**
-    * Exports pivot grid data to the Excel file.
-    * @deprecated Use exportPivotGrid instead.
-    */
-  def exportToExcel(): Unit = js.native
   
   /**
     * Gets the PivotGridDataSource instance.
@@ -260,8 +253,6 @@ object dxPivotGrid {
   
   type DisposingEvent = EventInfo[dxPivotGrid]
   
-  type ExportedEvent = EventInfo[dxPivotGrid]
-  
   trait ExportingEvent
     extends StObject
        with Cancelable
@@ -282,48 +273,6 @@ object dxPivotGrid {
       inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
       
       inline def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
-    }
-  }
-  
-  trait FileSavingEvent
-    extends StObject
-       with Cancelable {
-    
-    val component: dxPivotGrid
-    
-    val data: js.UndefOr[Blob] = js.undefined
-    
-    val element: DxElement_[HTMLElement]
-    
-    var fileName: js.UndefOr[String] = js.undefined
-    
-    val format: js.UndefOr[String] = js.undefined
-  }
-  object FileSavingEvent {
-    
-    inline def apply(component: dxPivotGrid, element: DxElement_[HTMLElement]): FileSavingEvent = {
-      val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], element = element.asInstanceOf[js.Any])
-      __obj.asInstanceOf[FileSavingEvent]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: FileSavingEvent] (val x: Self) extends AnyVal {
-      
-      inline def setComponent(value: dxPivotGrid): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
-      
-      inline def setData(value: Blob): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
-      
-      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
-      
-      inline def setElement(value: DxElement_[HTMLElement]): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
-      
-      inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
-      
-      inline def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
-      
-      inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
-      
-      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     }
   }
   

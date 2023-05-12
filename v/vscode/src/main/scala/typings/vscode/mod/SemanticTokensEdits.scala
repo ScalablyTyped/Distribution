@@ -11,15 +11,15 @@ open class SemanticTokensEdits protected () extends StObject {
   def this(edits: js.Array[SemanticTokensEdit], resultId: String) = this()
   
   /**
-    * The edits to the tokens data.
-    * All edits refer to the initial data state.
-    */
+  		 * The edits to the tokens data.
+  		 * All edits refer to the initial data state.
+  		 */
   val edits: js.Array[SemanticTokensEdit] = js.native
   
   /**
-    * The result id of the tokens.
-    *
-    * This is the id that will be passed to `DocumentSemanticTokensProvider.provideDocumentSemanticTokensEdits` (if implemented).
-    */
+  		 * The result id of the tokens.
+  		 *
+  		 * This is the id that will be passed to `DocumentSemanticTokensProvider.provideDocumentSemanticTokensEdits` (if implemented).
+  		 */
   val resultId: js.UndefOr[String] = js.native
 }

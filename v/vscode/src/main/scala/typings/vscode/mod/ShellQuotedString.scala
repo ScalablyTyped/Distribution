@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ShellQuotedString extends StObject {
   
   /**
-    * The quoting style to use.
-    */
+  		 * The quoting style to use.
+  		 */
   var quoting: ShellQuoting
   
   /**
-    * The actual string value.
-    */
+  		 * The actual string value.
+  		 */
   var value: String
 }
 object ShellQuotedString {

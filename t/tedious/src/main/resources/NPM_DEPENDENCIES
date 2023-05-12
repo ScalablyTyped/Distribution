@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "tedious" : "15.1.0"
+      "tedious" : "16.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "tedious" : "15.1.0"
+      "tedious" : "16.0.0"
     }
   ],
   "compile-devDependencies" : [

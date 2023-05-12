@@ -20,7 +20,7 @@ object distTypesConstantsMod {
   
   @JSImport("@atlaskit/tokens/dist/types/constants", "DEFAULT_THEME")
   @js.native
-  val DEFAULT_THEME: /* "light spacing" */ String = js.native
+  val DEFAULT_THEME: /* "light" */ String = js.native
   
   @JSImport("@atlaskit/tokens/dist/types/constants", "THEME_DATA_ATTRIBUTE")
   @js.native

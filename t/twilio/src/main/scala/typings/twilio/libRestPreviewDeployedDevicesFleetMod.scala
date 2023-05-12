@@ -1,7 +1,8 @@
 package typings.twilio
 
+import typings.std.Record
+import typings.twilio.anon.AccountSid
 import typings.twilio.libBasePageMod.TwilioResponsePayload
-import typings.twilio.libInterfacesMod.SerializableClass
 import typings.twilio.libRestPreviewDeployedDevicesFleetCertificateMod.CertificateContext
 import typings.twilio.libRestPreviewDeployedDevicesFleetCertificateMod.CertificateListInstance
 import typings.twilio.libRestPreviewDeployedDevicesFleetDeploymentMod.DeploymentContext
@@ -10,284 +11,214 @@ import typings.twilio.libRestPreviewDeployedDevicesFleetDeviceMod.DeviceContext
 import typings.twilio.libRestPreviewDeployedDevicesFleetDeviceMod.DeviceListInstance
 import typings.twilio.libRestPreviewDeployedDevicesFleetKeyMod.KeyContext
 import typings.twilio.libRestPreviewDeployedDevicesFleetKeyMod.KeyListInstance
+import typings.twilio.libRestPreviewDeployedDevicesMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libRestPreviewDeployedDevicesFleetMod {
   
-  @JSImport("twilio/lib/rest/preview/deployed_devices/fleet", JSImport.Namespace)
+  @JSImport("twilio/lib/rest/preview/deployed_devices/fleet", "FleetContextImpl")
   @js.native
-  val ^ : js.Any = js.native
-  
-  @JSImport("twilio/lib/rest/preview/deployed_devices/fleet", "FleetContext")
-  @js.native
-  open class FleetContext protected () extends StObject {
-    /**
-      * Initialize the FleetContext
-      *
-      * PLEASE NOTE that this class contains preview products that are subject to
-      * change. Use them with caution. If you currently do not have developer preview
-      * access, please contact help@twilio.com.
-      *
-      * @param version - Version of the resource
-      * @param sid - A string that uniquely identifies the Fleet.
-      */
-    def this(version: typings.twilio.libRestPreviewDeployedDevicesMod.^, sid: String) = this()
+  open class FleetContextImpl protected ()
+    extends StObject
+       with FleetContext {
+    def this(_version: default, sid: String) = this()
     
-    /**
-      * @param sid - sid of instance
-      */
-    def certificates(sid: String): CertificateContext = js.native
-    @JSName("certificates")
-    var certificates_Original: CertificateListInstance = js.native
+    /* protected */ var _certificates: js.UndefOr[CertificateListInstance] = js.native
     
-    /**
-      * @param sid - sid of instance
-      */
-    def deployments(sid: String): DeploymentContext = js.native
-    @JSName("deployments")
-    var deployments_Original: DeploymentListInstance = js.native
+    /* protected */ var _deployments: js.UndefOr[DeploymentListInstance] = js.native
     
-    /**
-      * @param sid - sid of instance
-      */
-    def devices(sid: String): DeviceContext = js.native
-    @JSName("devices")
-    var devices_Original: DeviceListInstance = js.native
+    /* protected */ var _devices: js.UndefOr[DeviceListInstance] = js.native
     
-    /**
-      * fetch a FleetInstance
-      *
-      * @param callback - Callback to handle processed record
-      */
-    def fetch(): js.Promise[FleetInstance] = js.native
-    def fetch(callback: js.Function2[/* error */ js.Error | Null, /* items */ FleetInstance, Any]): js.Promise[FleetInstance] = js.native
+    /* protected */ var _keys: js.UndefOr[KeyListInstance] = js.native
     
-    /**
-      * @param sid - sid of instance
-      */
-    def keys(sid: String): KeyContext = js.native
-    @JSName("keys")
-    var keys_Original: KeyListInstance = js.native
+    /* protected */ var _solution: FleetContextSolution = js.native
     
-    /**
-      * remove a FleetInstance
-      *
-      * @param callback - Callback to handle processed record
-      */
-    def remove(): js.Promise[Boolean] = js.native
-    def remove(callback: js.Function2[/* error */ js.Error | Null, /* items */ FleetInstance, Any]): js.Promise[Boolean] = js.native
+    /* protected */ var _uri: String = js.native
     
-    /**
-      * Provide a user-friendly representation
-      */
-    def toJSON(): Any = js.native
+    /* protected */ var _version: default = js.native
     
-    /**
-      * update a FleetInstance
-      *
-      * @param callback - Callback to handle processed record
-      */
-    def update(): js.Promise[FleetInstance] = js.native
-    def update(callback: js.Function2[/* error */ js.Error | Null, /* items */ FleetInstance, Any]): js.Promise[FleetInstance] = js.native
-    def update(opts: Unit, callback: js.Function2[/* error */ js.Error | Null, /* items */ FleetInstance, Any]): js.Promise[FleetInstance] = js.native
-    def update(opts: FleetInstanceUpdateOptions): js.Promise[FleetInstance] = js.native
+    def certificates: CertificateListInstance = js.native
+    
+    def deployments: DeploymentListInstance = js.native
+    
+    def devices: DeviceListInstance = js.native
+    
+    def keys: KeyListInstance = js.native
+    
     def update(
-      opts: FleetInstanceUpdateOptions,
-      callback: js.Function2[/* error */ js.Error | Null, /* items */ FleetInstance, Any]
+      params: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[FleetInstance], Any],
+      callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[FleetInstance], Any]
+    ): js.Promise[FleetInstance] = js.native
+    def update(
+      params: Unit,
+      callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[FleetInstance], Any]
     ): js.Promise[FleetInstance] = js.native
   }
   
   @JSImport("twilio/lib/rest/preview/deployed_devices/fleet", "FleetInstance")
   @js.native
-  open class FleetInstance protected () extends SerializableClass {
+  open class FleetInstance protected () extends StObject {
+    def this(_version: default, payload: FleetResource) = this()
+    def this(_version: default, payload: FleetResource, sid: String) = this()
+    
+    /* protected */ var _context: js.UndefOr[FleetContext] = js.native
+    
+    /* private */ def _proxy: Any = js.native
+    
+    /* protected */ var _solution: FleetContextSolution = js.native
+    
+    /* protected */ var _version: default = js.native
+    
     /**
-      * Initialize the FleetContext
-      *
-      * PLEASE NOTE that this class contains preview products that are subject to
-      * change. Use them with caution. If you currently do not have developer preview
-      * access, please contact help@twilio.com.
-      *
-      * @param version - Version of the resource
-      * @param payload - The instance payload
-      * @param sid - A string that uniquely identifies the Fleet.
+      * Speicifies the unique string identifier of the Account responsible for this Fleet.
       */
-    def this(version: typings.twilio.libRestPreviewDeployedDevicesMod.^, payload: FleetPayload, sid: String) = this()
-    
-    /* private */ var _proxy: FleetContext = js.native
-    
     var accountSid: String = js.native
     
     /**
-      * Access the certificates
+      * Access the certificates.
       */
     def certificates(): CertificateListInstance = js.native
     
+    /**
+      * Specifies the date this Fleet was created, given in UTC ISO 8601 format.
+      */
     var dateCreated: js.Date = js.native
     
+    /**
+      * Specifies the date this Fleet was last updated, given in UTC ISO 8601 format.
+      */
     var dateUpdated: js.Date = js.native
     
+    /**
+      * Contains the string identifier of the automatically provisioned default Deployment of this Fleet.
+      */
     var defaultDeploymentSid: String = js.native
     
     /**
-      * Access the deployments
+      * Access the deployments.
       */
     def deployments(): DeploymentListInstance = js.native
     
     /**
-      * Access the devices
+      * Access the devices.
       */
     def devices(): DeviceListInstance = js.native
     
     /**
-      * fetch a FleetInstance
+      * Fetch a FleetInstance
       *
       * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed FleetInstance
       */
     def fetch(): js.Promise[FleetInstance] = js.native
-    def fetch(callback: js.Function2[/* error */ js.Error | Null, /* items */ this.type, Any]): js.Promise[FleetInstance] = js.native
+    def fetch(callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[this.type], Any]): js.Promise[FleetInstance] = js.native
     
+    /**
+      * Contains a human readable descriptive text for this Fleet, up to 256 characters long.
+      */
     var friendlyName: String = js.native
     
     /**
-      * Access the keys
+      * Access the keys.
       */
     def keys(): KeyListInstance = js.native
     
-    var links: String = js.native
+    /**
+      * Contains a dictionary of URL links to nested resources of this Fleet.
+      */
+    var links: Record[String, String] = js.native
     
     /**
-      * remove a FleetInstance
+      * Remove a FleetInstance
       *
       * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed boolean
       */
     def remove(): js.Promise[Boolean] = js.native
-    def remove(callback: js.Function2[/* error */ js.Error | Null, /* items */ this.type, Any]): js.Promise[Boolean] = js.native
+    def remove(callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[Boolean], Any]): js.Promise[Boolean] = js.native
     
+    /**
+      * Contains a 34 character string that uniquely identifies this Fleet resource.
+      */
     var sid: String = js.native
-    
-    var uniqueName: String = js.native
-    
-    /**
-      * update a FleetInstance
-      *
-      * @param callback - Callback to handle processed record
-      */
-    def update(): js.Promise[FleetInstance] = js.native
-    def update(callback: js.Function2[/* error */ js.Error | Null, /* items */ this.type, Any]): js.Promise[FleetInstance] = js.native
-    def update(opts: Unit, callback: js.Function2[/* error */ js.Error | Null, /* items */ this.type, Any]): js.Promise[FleetInstance] = js.native
-    def update(opts: FleetInstanceUpdateOptions): js.Promise[FleetInstance] = js.native
-    def update(
-      opts: FleetInstanceUpdateOptions,
-      callback: js.Function2[/* error */ js.Error | Null, /* items */ this.type, Any]
-    ): js.Promise[FleetInstance] = js.native
-    
-    var url: String = js.native
-  }
-  
-  /**
-    * Initialize the FleetList
-    *
-    * PLEASE NOTE that this class contains preview products that are subject to
-    * change. Use them with caution. If you currently do not have developer preview
-    * access, please contact help@twilio.com.
-    *
-    * @param version - Version of the resource
-    */
-  inline def FleetList(version: typings.twilio.libRestPreviewDeployedDevicesMod.^): FleetListInstance = ^.asInstanceOf[js.Dynamic].applyDynamic("FleetList")(version.asInstanceOf[js.Any]).asInstanceOf[FleetListInstance]
-  
-  @JSImport("twilio/lib/rest/preview/deployed_devices/fleet", "FleetPage")
-  @js.native
-  open class FleetPage protected ()
-    extends typings.twilio.libBasePageMod.^[
-          typings.twilio.libRestPreviewDeployedDevicesMod.^, 
-          FleetPayload, 
-          FleetResource, 
-          FleetInstance
-        ] {
-    /**
-      * Initialize the FleetPage
-      *
-      * PLEASE NOTE that this class contains preview products that are subject to
-      * change. Use them with caution. If you currently do not have developer preview
-      * access, please contact help@twilio.com.
-      *
-      * @param version - Version of the resource
-      * @param response - Response from the API
-      * @param solution - Path solution
-      */
-    def this(
-      version: typings.twilio.libRestPreviewDeployedDevicesMod.^,
-      response: typings.twilio.libHttpResponseMod.^[String],
-      solution: FleetSolution
-    ) = this()
-    
-    /**
-      * Build an instance of FleetInstance
-      *
-      * @param payload - Payload response from the API
-      */
-    def getInstance(payload: FleetPayload): FleetInstance = js.native
     
     /**
       * Provide a user-friendly representation
+      *
+      * @returns Object
       */
-    def toJSON(): Any = js.native
-  }
-  
-  /**
-    * Options to pass to update
-    *
-    * @property defaultDeploymentSid - A default Deployment SID.
-    * @property friendlyName - A human readable description for this Fleet.
-    */
-  trait FleetInstanceUpdateOptions extends StObject {
+    def toJSON(): AccountSid = js.native
     
-    var defaultDeploymentSid: js.UndefOr[String] = js.undefined
+    /**
+      * Contains a unique and addressable name of this Fleet, e.g. \'default\', up to 128 characters long.
+      */
+    var uniqueName: String = js.native
     
-    var friendlyName: js.UndefOr[String] = js.undefined
-  }
-  object FleetInstanceUpdateOptions {
+    /**
+      * Update a FleetInstance
+      *
+      * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed FleetInstance
+      */
+    def update(): js.Promise[FleetInstance] = js.native
+    def update(callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[this.type], Any]): js.Promise[FleetInstance] = js.native
+    /**
+      * Update a FleetInstance
+      *
+      * @param params - Parameter for request
+      * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed FleetInstance
+      */
+    def update(params: FleetContextUpdateOptions): js.Promise[FleetInstance] = js.native
+    def update(
+      params: FleetContextUpdateOptions,
+      callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[this.type], Any]
+    ): js.Promise[FleetInstance] = js.native
     
-    inline def apply(): FleetInstanceUpdateOptions = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[FleetInstanceUpdateOptions]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: FleetInstanceUpdateOptions] (val x: Self) extends AnyVal {
-      
-      inline def setDefaultDeploymentSid(value: String): Self = StObject.set(x, "defaultDeploymentSid", value.asInstanceOf[js.Any])
-      
-      inline def setDefaultDeploymentSidUndefined: Self = StObject.set(x, "defaultDeploymentSid", js.undefined)
-      
-      inline def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
-      
-      inline def setFriendlyNameUndefined: Self = StObject.set(x, "friendlyName", js.undefined)
-    }
+    /**
+      * Contains an absolute URL for this Fleet resource.
+      */
+    var url: String = js.native
   }
   
   @js.native
   trait FleetListInstance extends StObject {
     
-    /**
-      * @param sid - sid of instance
-      */
     def apply(sid: String): FleetContext = js.native
     
+    var _solution: FleetSolution = js.native
+    
+    var _uri: String = js.native
+    
+    var _version: default = js.native
+    
     /**
-      * create a FleetInstance
+      * Create a FleetInstance
       *
       * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed FleetInstance
       */
     def create(): js.Promise[FleetInstance] = js.native
-    def create(callback: js.Function2[/* error */ js.Error | Null, /* item */ FleetInstance, Any]): js.Promise[FleetInstance] = js.native
-    def create(opts: Unit, callback: js.Function2[/* error */ js.Error | Null, /* item */ FleetInstance, Any]): js.Promise[FleetInstance] = js.native
-    def create(opts: FleetListInstanceCreateOptions): js.Promise[FleetInstance] = js.native
+    def create(callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[FleetInstance], Any]): js.Promise[FleetInstance] = js.native
+    /**
+      * Create a FleetInstance
+      *
+      * @param params - Parameter for request
+      * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed FleetInstance
+      */
+    def create(params: FleetListInstanceCreateOptions): js.Promise[FleetInstance] = js.native
     def create(
-      opts: FleetListInstanceCreateOptions,
-      callback: js.Function2[/* error */ js.Error | Null, /* item */ FleetInstance, Any]
+      params: FleetListInstanceCreateOptions,
+      callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[FleetInstance], Any]
     ): js.Promise[FleetInstance] = js.native
     
     /**
@@ -302,7 +233,8 @@ object libRestPreviewDeployedDevicesFleetMod {
       * If a function is passed as the first argument, it will be used as the callback
       * function.
       *
-      * @param callback - Function to process each record
+      * @param { FleetListInstanceEachOptions } [params] - Options for request
+      * @param { function } [callback] - Function to process each record
       */
     def each(): Unit = js.native
     def each(
@@ -312,17 +244,9 @@ object libRestPreviewDeployedDevicesFleetMod {
           Unit
         ]
     ): Unit = js.native
+    def each(params: FleetListInstanceEachOptions): Unit = js.native
     def each(
-      opts: Unit,
-      callback: js.Function2[
-          /* item */ FleetInstance, 
-          /* done */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
-          Unit
-        ]
-    ): Unit = js.native
-    def each(opts: FleetListInstanceEachOptions): Unit = js.native
-    def each(
-      opts: FleetListInstanceEachOptions,
+      params: FleetListInstanceEachOptions,
       callback: js.Function2[
           /* item */ FleetInstance, 
           /* done */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
@@ -330,11 +254,6 @@ object libRestPreviewDeployedDevicesFleetMod {
         ]
     ): Unit = js.native
     
-    /**
-      * Constructs a fleet
-      *
-      * @param sid - A string that uniquely identifies the Fleet.
-      */
     def get(sid: String): FleetContext = js.native
     
     /**
@@ -342,16 +261,11 @@ object libRestPreviewDeployedDevicesFleetMod {
       *
       * The request is executed immediately.
       *
-      * If a function is passed as the first argument, it will be used as the callback
-      * function.
-      *
-      * @param callback - Callback to handle list of records
+      * @param { string } [targetUrl] - API-generated URL for the requested results page
+      * @param { function } [callback] - Callback to handle list of records
       */
-    def getPage(): js.Promise[FleetPage] = js.native
-    def getPage(callback: js.Function2[/* error */ js.Error | Null, /* items */ FleetPage, Any]): js.Promise[FleetPage] = js.native
     def getPage(targetUrl: String): js.Promise[FleetPage] = js.native
     def getPage(targetUrl: String, callback: js.Function2[/* error */ js.Error | Null, /* items */ FleetPage, Any]): js.Promise[FleetPage] = js.native
-    def getPage(targetUrl: Unit, callback: js.Function2[/* error */ js.Error | Null, /* items */ FleetPage, Any]): js.Promise[FleetPage] = js.native
     
     /**
       * Lists FleetInstance records from the API as a list.
@@ -359,17 +273,14 @@ object libRestPreviewDeployedDevicesFleetMod {
       * If a function is passed as the first argument, it will be used as the callback
       * function.
       *
-      * @param callback - Callback to handle list of records
+      * @param { FleetListInstanceOptions } [params] - Options for request
+      * @param { function } [callback] - Callback to handle list of records
       */
     def list(): js.Promise[js.Array[FleetInstance]] = js.native
     def list(callback: js.Function2[/* error */ js.Error | Null, /* items */ js.Array[FleetInstance], Any]): js.Promise[js.Array[FleetInstance]] = js.native
+    def list(params: FleetListInstanceOptions): js.Promise[js.Array[FleetInstance]] = js.native
     def list(
-      opts: Unit,
-      callback: js.Function2[/* error */ js.Error | Null, /* items */ js.Array[FleetInstance], Any]
-    ): js.Promise[js.Array[FleetInstance]] = js.native
-    def list(opts: FleetListInstanceOptions): js.Promise[js.Array[FleetInstance]] = js.native
-    def list(
-      opts: FleetListInstanceOptions,
+      params: FleetListInstanceOptions,
       callback: js.Function2[/* error */ js.Error | Null, /* items */ js.Array[FleetInstance], Any]
     ): js.Promise[js.Array[FleetInstance]] = js.native
     
@@ -381,14 +292,14 @@ object libRestPreviewDeployedDevicesFleetMod {
       * If a function is passed as the first argument, it will be used as the callback
       * function.
       *
-      * @param callback - Callback to handle list of records
+      * @param { FleetListInstancePageOptions } [params] - Options for request
+      * @param { function } [callback] - Callback to handle list of records
       */
     def page(): js.Promise[FleetPage] = js.native
     def page(callback: js.Function2[/* error */ js.Error | Null, /* items */ FleetPage, Any]): js.Promise[FleetPage] = js.native
-    def page(opts: Unit, callback: js.Function2[/* error */ js.Error | Null, /* items */ FleetPage, Any]): js.Promise[FleetPage] = js.native
-    def page(opts: FleetListInstancePageOptions): js.Promise[FleetPage] = js.native
+    def page(params: FleetListInstancePageOptions): js.Promise[FleetPage] = js.native
     def page(
-      opts: FleetListInstancePageOptions,
+      params: FleetListInstancePageOptions,
       callback: js.Function2[/* error */ js.Error | Null, /* items */ FleetPage, Any]
     ): js.Promise[FleetPage] = js.native
     
@@ -397,14 +308,155 @@ object libRestPreviewDeployedDevicesFleetMod {
       */
     def toJSON(): Any = js.native
   }
+  object FleetListInstance {
+    
+    @JSImport("twilio/lib/rest/preview/deployed_devices/fleet", "FleetListInstance")
+    @js.native
+    def apply(version: default): FleetListInstance = js.native
+  }
   
-  /**
-    * Options to pass to create
-    *
-    * @property friendlyName - A human readable description for this Fleet.
-    */
+  @JSImport("twilio/lib/rest/preview/deployed_devices/fleet", "FleetPage")
+  @js.native
+  open class FleetPage protected ()
+    extends typings.twilio.libBasePageMod.default[default, FleetPayload, FleetResource, FleetInstance] {
+    /**
+      * Initialize the FleetPage
+      *
+      * @param version - Version of the resource
+      * @param response - Response from the API
+      * @param solution - Path solution
+      */
+    def this(
+      version: default,
+      response: typings.twilio.libHttpResponseMod.default[String],
+      solution: FleetSolution
+    ) = this()
+    
+    /**
+      * Build an instance of FleetInstance
+      *
+      * @param payload - Payload response from the API
+      */
+    def getInstance(payload: FleetResource): FleetInstance = js.native
+  }
+  
+  @js.native
+  trait FleetContext extends StObject {
+    
+    def certificates(sid: String): CertificateContext = js.native
+    @JSName("certificates")
+    var certificates_Original: CertificateListInstance = js.native
+    
+    def deployments(sid: String): DeploymentContext = js.native
+    @JSName("deployments")
+    var deployments_Original: DeploymentListInstance = js.native
+    
+    def devices(sid: String): DeviceContext = js.native
+    @JSName("devices")
+    var devices_Original: DeviceListInstance = js.native
+    
+    /**
+      * Fetch a FleetInstance
+      *
+      * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed FleetInstance
+      */
+    def fetch(): js.Promise[FleetInstance] = js.native
+    def fetch(callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[FleetInstance], Any]): js.Promise[FleetInstance] = js.native
+    
+    def keys(sid: String): KeyContext = js.native
+    @JSName("keys")
+    var keys_Original: KeyListInstance = js.native
+    
+    /**
+      * Remove a FleetInstance
+      *
+      * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed boolean
+      */
+    def remove(): js.Promise[Boolean] = js.native
+    def remove(callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[Boolean], Any]): js.Promise[Boolean] = js.native
+    
+    /**
+      * Provide a user-friendly representation
+      */
+    def toJSON(): Any = js.native
+    
+    /**
+      * Update a FleetInstance
+      *
+      * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed FleetInstance
+      */
+    def update(): js.Promise[FleetInstance] = js.native
+    def update(callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[FleetInstance], Any]): js.Promise[FleetInstance] = js.native
+    /**
+      * Update a FleetInstance
+      *
+      * @param params - Parameter for request
+      * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed FleetInstance
+      */
+    def update(params: FleetContextUpdateOptions): js.Promise[FleetInstance] = js.native
+    def update(
+      params: FleetContextUpdateOptions,
+      callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[FleetInstance], Any]
+    ): js.Promise[FleetInstance] = js.native
+  }
+  
+  trait FleetContextSolution extends StObject {
+    
+    var sid: String
+  }
+  object FleetContextSolution {
+    
+    inline def apply(sid: String): FleetContextSolution = {
+      val __obj = js.Dynamic.literal(sid = sid.asInstanceOf[js.Any])
+      __obj.asInstanceOf[FleetContextSolution]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FleetContextSolution] (val x: Self) extends AnyVal {
+      
+      inline def setSid(value: String): Self = StObject.set(x, "sid", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait FleetContextUpdateOptions extends StObject {
+    
+    /** Provides a string identifier of a Deployment that is going to be used as a default one for this Fleet. */
+    var defaultDeploymentSid: js.UndefOr[String] = js.undefined
+    
+    /** Provides a human readable descriptive text for this Fleet, up to 256 characters long. */
+    var friendlyName: js.UndefOr[String] = js.undefined
+  }
+  object FleetContextUpdateOptions {
+    
+    inline def apply(): FleetContextUpdateOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[FleetContextUpdateOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FleetContextUpdateOptions] (val x: Self) extends AnyVal {
+      
+      inline def setDefaultDeploymentSid(value: String): Self = StObject.set(x, "defaultDeploymentSid", value.asInstanceOf[js.Any])
+      
+      inline def setDefaultDeploymentSidUndefined: Self = StObject.set(x, "defaultDeploymentSid", js.undefined)
+      
+      inline def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
+      
+      inline def setFriendlyNameUndefined: Self = StObject.set(x, "friendlyName", js.undefined)
+    }
+  }
+  
   trait FleetListInstanceCreateOptions extends StObject {
     
+    /** Provides a human readable descriptive text for this Fleet, up to 256 characters long. */
     var friendlyName: js.UndefOr[String] = js.undefined
   }
   object FleetListInstanceCreateOptions {
@@ -423,26 +475,9 @@ object libRestPreviewDeployedDevicesFleetMod {
     }
   }
   
-  /**
-    * Options to pass to each
-    *
-    * @property callback -
-    *                         Function to process each record. If this and a positional
-    *                         callback are passed, this one will be used
-    * @property done - Function to be called upon completion of streaming
-    * @property limit -
-    *                         Upper limit for the number of records to return.
-    *                         each() guarantees never to return more than limit.
-    *                         Default is no limit
-    * @property pageSize -
-    *                         Number of records to fetch per request,
-    *                         when not set will use the default value of 50 records.
-    *                         If no pageSize is defined but a limit is defined,
-    *                         each() will attempt to read the limit with the most efficient
-    *                         page size, i.e. min(limit, 1000)
-    */
   trait FleetListInstanceEachOptions extends StObject {
     
+    /** Function to process each record. If this and a positional callback are passed, this one will be used */
     var callback: js.UndefOr[
         js.Function2[
           /* item */ FleetInstance, 
@@ -451,10 +486,13 @@ object libRestPreviewDeployedDevicesFleetMod {
         ]
       ] = js.undefined
     
+    /** Function to be called upon completion of streaming */
     var done: js.UndefOr[js.Function] = js.undefined
     
+    /** Upper limit for the number of records to return. each() guarantees never to return more than limit. Default is no limit */
     var limit: js.UndefOr[Double] = js.undefined
     
+    /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
     var pageSize: js.UndefOr[Double] = js.undefined
   }
   object FleetListInstanceEachOptions {
@@ -487,24 +525,12 @@ object libRestPreviewDeployedDevicesFleetMod {
     }
   }
   
-  /**
-    * Options to pass to list
-    *
-    * @property limit -
-    *                         Upper limit for the number of records to return.
-    *                         list() guarantees never to return more than limit.
-    *                         Default is no limit
-    * @property pageSize -
-    *                         Number of records to fetch per request,
-    *                         when not set will use the default value of 50 records.
-    *                         If no page_size is defined but a limit is defined,
-    *                         list() will attempt to read the limit with the most
-    *                         efficient page size, i.e. min(limit, 1000)
-    */
   trait FleetListInstanceOptions extends StObject {
     
+    /** Upper limit for the number of records to return. list() guarantees never to return more than limit. Default is no limit */
     var limit: js.UndefOr[Double] = js.undefined
     
+    /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
     var pageSize: js.UndefOr[Double] = js.undefined
   }
   object FleetListInstanceOptions {
@@ -527,19 +553,15 @@ object libRestPreviewDeployedDevicesFleetMod {
     }
   }
   
-  /**
-    * Options to pass to page
-    *
-    * @property pageNumber - Page Number, this value is simply for client state
-    * @property pageSize - Number of records to return, defaults to 50
-    * @property pageToken - PageToken provided by the API
-    */
   trait FleetListInstancePageOptions extends StObject {
     
+    /** Page Number, this value is simply for client state */
     var pageNumber: js.UndefOr[Double] = js.undefined
     
+    /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
     var pageSize: js.UndefOr[Double] = js.undefined
     
+    /** PageToken provided by the API */
     var pageToken: js.UndefOr[String] = js.undefined
   }
   object FleetListInstancePageOptions {
@@ -568,29 +590,31 @@ object libRestPreviewDeployedDevicesFleetMod {
   
   trait FleetPayload
     extends StObject
-       with FleetResource
-       with TwilioResponsePayload
+       with TwilioResponsePayload {
+    
+    var fleets: js.Array[FleetResource]
+  }
   object FleetPayload {
     
     inline def apply(
-      account_sid: String,
-      date_created: js.Date,
-      date_updated: js.Date,
-      default_deployment_sid: String,
       first_page_uri: String,
-      friendly_name: String,
-      links: String,
+      fleets: js.Array[FleetResource],
       next_page_uri: String,
       page: Double,
       page_size: Double,
       previous_page_uri: String,
-      sid: String,
-      unique_name: String,
-      uri: String,
-      url: String
+      uri: String
     ): FleetPayload = {
-      val __obj = js.Dynamic.literal(account_sid = account_sid.asInstanceOf[js.Any], date_created = date_created.asInstanceOf[js.Any], date_updated = date_updated.asInstanceOf[js.Any], default_deployment_sid = default_deployment_sid.asInstanceOf[js.Any], first_page_uri = first_page_uri.asInstanceOf[js.Any], friendly_name = friendly_name.asInstanceOf[js.Any], links = links.asInstanceOf[js.Any], next_page_uri = next_page_uri.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any], page_size = page_size.asInstanceOf[js.Any], previous_page_uri = previous_page_uri.asInstanceOf[js.Any], sid = sid.asInstanceOf[js.Any], unique_name = unique_name.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(first_page_uri = first_page_uri.asInstanceOf[js.Any], fleets = fleets.asInstanceOf[js.Any], next_page_uri = next_page_uri.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any], page_size = page_size.asInstanceOf[js.Any], previous_page_uri = previous_page_uri.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
       __obj.asInstanceOf[FleetPayload]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FleetPayload] (val x: Self) extends AnyVal {
+      
+      inline def setFleets(value: js.Array[FleetResource]): Self = StObject.set(x, "fleets", value.asInstanceOf[js.Any])
+      
+      inline def setFleetsVarargs(value: FleetResource*): Self = StObject.set(x, "fleets", js.Array(value*))
     }
   }
   
@@ -606,7 +630,7 @@ object libRestPreviewDeployedDevicesFleetMod {
     
     var friendly_name: String
     
-    var links: String
+    var links: Record[String, String]
     
     var sid: String
     
@@ -622,7 +646,7 @@ object libRestPreviewDeployedDevicesFleetMod {
       date_updated: js.Date,
       default_deployment_sid: String,
       friendly_name: String,
-      links: String,
+      links: Record[String, String],
       sid: String,
       unique_name: String,
       url: String
@@ -644,7 +668,7 @@ object libRestPreviewDeployedDevicesFleetMod {
       
       inline def setFriendly_name(value: String): Self = StObject.set(x, "friendly_name", value.asInstanceOf[js.Any])
       
-      inline def setLinks(value: String): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
+      inline def setLinks(value: Record[String, String]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
       
       inline def setSid(value: String): Self = StObject.set(x, "sid", value.asInstanceOf[js.Any])
       

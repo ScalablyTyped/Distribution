@@ -1,28 +1,40 @@
 package typings.listr2.anon
 
-import typings.listr2.mod.Task
+import typings.listr2.mod.ListrSimpleRendererOptions
+import typings.listr2.mod.ListrSimpleRendererTaskOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofSimpleRenderer extends StObject {
   
   /* static member */
-  def formatTitle(): String = js.native
-  def formatTitle(
-    task: Task[
-      Any, 
-      /* import warning: importer.ImportType#apply Failed type conversion: typeof SimpleRenderer */ js.Any
-    ]
-  ): String = js.native
+  var nonTTY: Boolean
   
   /* static member */
-  var nonTTY: Boolean = js.native
+  var rendererOptions: ListrSimpleRendererOptions
   
   /* static member */
-  def now(): js.Date = js.native
+  var rendererTaskOptions: ListrSimpleRendererTaskOptions
+}
+object TypeofSimpleRenderer {
   
-  /* static member */
-  var rendererOptions: Output = js.native
+  inline def apply(
+    nonTTY: Boolean,
+    rendererOptions: ListrSimpleRendererOptions,
+    rendererTaskOptions: ListrSimpleRendererTaskOptions
+  ): TypeofSimpleRenderer = {
+    val __obj = js.Dynamic.literal(nonTTY = nonTTY.asInstanceOf[js.Any], rendererOptions = rendererOptions.asInstanceOf[js.Any], rendererTaskOptions = rendererTaskOptions.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TypeofSimpleRenderer]
+  }
+  
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofSimpleRenderer] (val x: Self) extends AnyVal {
+    
+    inline def setNonTTY(value: Boolean): Self = StObject.set(x, "nonTTY", value.asInstanceOf[js.Any])
+    
+    inline def setRendererOptions(value: ListrSimpleRendererOptions): Self = StObject.set(x, "rendererOptions", value.asInstanceOf[js.Any])
+    
+    inline def setRendererTaskOptions(value: ListrSimpleRendererTaskOptions): Self = StObject.set(x, "rendererTaskOptions", value.asInstanceOf[js.Any])
+  }
 }

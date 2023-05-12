@@ -241,13 +241,9 @@ trait PhysicsImpostor extends StObject {
   var `object`: IPhysicsEnabledObject = js.native
   
   /**
-    * event and body object due to cannon's event-based architecture.
+    *
     * @param e
-    * @param e.body
-    * @param e.point
-    * @param e.distance
-    * @param e.impulse
-    * @param e.normal
+    * @returns
     */
   def onCollide(e: Impulse): Unit = js.native
   

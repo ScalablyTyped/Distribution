@@ -14,8 +14,8 @@ object NotebookControllerAffinity extends StObject {
   def apply(value: Double): js.UndefOr[NotebookControllerAffinity & Double] = js.native
   
   /**
-    * Default affinity.
-    */
+  		 * Default affinity.
+  		 */
   @js.native
   sealed trait Default
     extends StObject
@@ -23,8 +23,8 @@ object NotebookControllerAffinity extends StObject {
   /* 1 */ val Default: typings.vscode.mod.NotebookControllerAffinity.Default & Double = js.native
   
   /**
-    * A controller is preferred for a notebook.
-    */
+  		 * A controller is preferred for a notebook.
+  		 */
   @js.native
   sealed trait Preferred
     extends StObject

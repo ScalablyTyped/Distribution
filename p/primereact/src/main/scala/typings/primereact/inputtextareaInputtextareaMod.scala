@@ -61,7 +61,6 @@ import typings.react.mod.ChangeEvent
 import typings.react.mod.ChangeEventHandler
 import typings.react.mod.ClipboardEvent
 import typings.react.mod.ClipboardEventHandler
-import typings.react.mod.Component
 import typings.react.mod.CompositionEvent
 import typings.react.mod.CompositionEventHandler
 import typings.react.mod.DragEvent
@@ -70,6 +69,7 @@ import typings.react.mod.FocusEvent
 import typings.react.mod.FocusEventHandler
 import typings.react.mod.FormEvent
 import typings.react.mod.FormEventHandler
+import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.Key
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.KeyboardEventHandler
@@ -81,6 +81,7 @@ import typings.react.mod.PointerEvent
 import typings.react.mod.PointerEventHandler
 import typings.react.mod.ReactEventHandler
 import typings.react.mod.ReactNode
+import typings.react.mod.RefAttributes
 import typings.react.mod.SyntheticEvent
 import typings.react.mod.TouchEvent
 import typings.react.mod.TouchEventHandler
@@ -101,18 +102,9 @@ object inputtextareaInputtextareaMod {
   
   @JSImport("primereact/inputtextarea/inputtextarea", "InputTextarea")
   @js.native
-  open class InputTextarea protected () extends Component[InputTextareaProps, Any, Any] {
-    def this(props: InputTextareaProps) = this()
-    /**
-      * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
-      */
-    def this(props: InputTextareaProps, context: Any) = this()
-    
-    var value: js.UndefOr[String] = js.native
-  }
+  val InputTextarea: ForwardRefExoticComponent[InputTextareaProps & RefAttributes[HTMLTextAreaElement]] = js.native
   
-  /* Inlined parent std.Omit<react.react.DetailedHTMLProps<react.react.TextareaHTMLAttributes<std.HTMLTextAreaElement>, std.HTMLTextAreaElement>, 'ref'> */
+  /* Inlined parent std.Omit<react.react.DetailedHTMLProps<react.react.TextareaHTMLAttributes<std.HTMLTextAreaElement>, std.HTMLTextAreaElement>, 'ref' | 'value'> */
   trait InputTextareaProps extends StObject {
     
     var about: js.UndefOr[String] = js.undefined
@@ -225,10 +217,18 @@ object inputtextareaInputtextareaMod {
     
     var autoFocus: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * When present, height of textarea changes as being typed.
+      * @defaultValue false
+      */
     var autoResize: js.UndefOr[Boolean] = js.undefined
     
     var autoSave: js.UndefOr[String] = js.undefined
     
+    /**
+      * Used to get the child elements of the component.
+      * @readonly
+      */
     var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
@@ -236,6 +236,8 @@ object inputtextareaInputtextareaMod {
     var color: js.UndefOr[String] = js.undefined
     
     var cols: js.UndefOr[Double] = js.undefined
+    
+    var content: js.UndefOr[String] = js.undefined
     
     var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
@@ -281,6 +283,9 @@ object inputtextareaInputtextareaMod {
     
     var key: js.UndefOr[Key | Null] = js.undefined
     
+    /**
+      * Format definition of the keys to block.
+      */
     var keyfilter: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KeyFilterType */ Any
       ] = js.undefined
@@ -465,11 +470,15 @@ object inputtextareaInputtextareaMod {
     
     var readOnly: js.UndefOr[Boolean] = js.undefined
     
+    var rel: js.UndefOr[String] = js.undefined
+    
     var required: js.UndefOr[Boolean] = js.undefined
     
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
+    
+    var rev: js.UndefOr[String] = js.undefined
     
     var role: js.UndefOr[AriaRole] = js.undefined
     
@@ -491,8 +500,15 @@ object inputtextareaInputtextareaMod {
     
     var title: js.UndefOr[String] = js.undefined
     
+    /**
+      * Content of the tooltip.
+      */
     var tooltip: js.UndefOr[String] = js.undefined
     
+    /**
+      * Configuration of the tooltip, refer to the tooltip documentation for more information.
+      * @type {TooltipOptions}
+      */
     var tooltipOptions: js.UndefOr[TooltipOptions] = js.undefined
     
     var translate: js.UndefOr[yes | no] = js.undefined
@@ -501,7 +517,10 @@ object inputtextareaInputtextareaMod {
     
     var unselectable: js.UndefOr[on | off] = js.undefined
     
-    var value: js.UndefOr[String | js.Array[String] | Double] = js.undefined
+    /**
+      * The value of component
+      */
+    var value: js.UndefOr[String] = js.undefined
     
     var vocab: js.UndefOr[String] = js.undefined
     
@@ -759,9 +778,13 @@ object inputtextareaInputtextareaMod {
       
       inline def setColsUndefined: Self = StObject.set(x, "cols", js.undefined)
       
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
       inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
       inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
@@ -1217,6 +1240,10 @@ object inputtextareaInputtextareaMod {
       
       inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
       
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      
+      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+      
       inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
       
       inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
@@ -1228,6 +1255,10 @@ object inputtextareaInputtextareaMod {
       inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+      
+      inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+      
+      inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
       
       inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
@@ -1289,11 +1320,9 @@ object inputtextareaInputtextareaMod {
       
       inline def setUnselectableUndefined: Self = StObject.set(x, "unselectable", js.undefined)
       
-      inline def setValue(value: String | js.Array[String] | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
-      
-      inline def setValueVarargs(value: String*): Self = StObject.set(x, "value", js.Array(value*))
       
       inline def setVocab(value: String): Self = StObject.set(x, "vocab", value.asInstanceOf[js.Any])
       

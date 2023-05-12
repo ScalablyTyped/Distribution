@@ -19,6 +19,7 @@ import typings.std.Record
 import typings.vega.mod.View
 import typings.vegaEmbed.anon.Bottom
 import typings.vegaEmbed.anon.PartialCLICKTOVIEWACTIONS
+import typings.vegaEmbed.anon.PngSvg
 import typings.vegaEmbed.anon.TypeofexpressionInterpret
 import typings.vegaEmbed.mod.Actions
 import typings.vegaEmbed.mod.Config
@@ -93,7 +94,7 @@ object libVegaLiteMod {
     
     var renderer: js.UndefOr[Renderers] = js.undefined
     
-    var scaleFactor: js.UndefOr[Double] = js.undefined
+    var scaleFactor: js.UndefOr[Double | PngSvg] = js.undefined
     
     var signalListeners: js.UndefOr[SignalListeners] = js.undefined
     
@@ -217,7 +218,7 @@ object libVegaLiteMod {
       
       inline def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
       
-      inline def setScaleFactor(value: Double): Self = StObject.set(x, "scaleFactor", value.asInstanceOf[js.Any])
+      inline def setScaleFactor(value: Double | PngSvg): Self = StObject.set(x, "scaleFactor", value.asInstanceOf[js.Any])
       
       inline def setScaleFactorUndefined: Self = StObject.set(x, "scaleFactor", js.undefined)
       

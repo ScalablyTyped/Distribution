@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.ipfsCli.distSrcTypesMod.Context
 import typings.multiformats.cidMod.CID
 import typings.multiformats.distTypesSrcLinkInterfaceMod.Version
-import typings.yargs.mod.CommandModule
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +19,7 @@ object distSrcCommandsObjectDataMod extends Shortcut {
   /** @type {import('yargs').CommandModule<Argv, Argv>} */
   @JSImport("ipfs-cli/dist/src/commands/object/data", JSImport.Default)
   @js.native
-  val default: CommandModule[Argv, Argv] = js.native
+  val default: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_yargs.CommandModule<Argv, Argv> */ Any = js.native
   
   trait Argv extends StObject {
     
@@ -48,8 +47,8 @@ object distSrcCommandsObjectDataMod extends Shortcut {
     }
   }
   
-  type _To = CommandModule[Argv, Argv]
+  type _To = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_yargs.CommandModule<Argv, Argv> */ Any
   
   /* This means you don't have to write `default`, but can instead just say `distSrcCommandsObjectDataMod.foo` */
-  override def _to: CommandModule[Argv, Argv] = default
+  override def _to: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_yargs.CommandModule<Argv, Argv> */ Any = default
 }

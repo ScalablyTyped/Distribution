@@ -1,6 +1,6 @@
 package typings.undici.mod
 
-import typings.undici.typesDispatcherMod.DispatchHandlers
+import typings.undici.typesDispatcherMod.Dispatcher.DispatchHandlers
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

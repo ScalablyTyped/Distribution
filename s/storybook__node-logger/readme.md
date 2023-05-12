@@ -1,7 +1,7 @@
 
 # Scala.js typings for storybook__node-logger
 
-Typings are for version 6.5.13
+Typings are for version 7.0.10
 
 ## Library description:
 Any node logging that is done through storybook should be done through this package.

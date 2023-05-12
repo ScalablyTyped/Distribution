@@ -493,6 +493,7 @@ object mod {
     - typings.countriesAndTimezones.countriesAndTimezonesStrings.AmericaSlashCayman
     - typings.countriesAndTimezones.countriesAndTimezonesStrings.AmericaSlashChicago
     - typings.countriesAndTimezones.countriesAndTimezonesStrings.AmericaSlashChihuahua
+    - typings.countriesAndTimezones.countriesAndTimezonesStrings.AmericaSlashCiudad_Juarez
     - typings.countriesAndTimezones.countriesAndTimezonesStrings.AmericaSlashCoral_Harbour
     - typings.countriesAndTimezones.countriesAndTimezonesStrings.AmericaSlashCordoba
     - typings.countriesAndTimezones.countriesAndTimezonesStrings.AmericaSlashCosta_Rica
@@ -847,6 +848,7 @@ object mod {
     - typings.countriesAndTimezones.countriesAndTimezonesStrings.EuropeSlashKaliningrad
     - typings.countriesAndTimezones.countriesAndTimezonesStrings.EuropeSlashKiev
     - typings.countriesAndTimezones.countriesAndTimezonesStrings.EuropeSlashKirov
+    - typings.countriesAndTimezones.countriesAndTimezonesStrings.EuropeSlashKyiv
     - typings.countriesAndTimezones.countriesAndTimezonesStrings.EuropeSlashLisbon
     - typings.countriesAndTimezones.countriesAndTimezonesStrings.EuropeSlashLjubljana
     - typings.countriesAndTimezones.countriesAndTimezonesStrings.EuropeSlashLondon

@@ -22,7 +22,7 @@ object libLocalisationEnglishMod extends Shortcut {
       step: String,
       fn: js.ThisFunction1[
           /* this */ StepFn, 
-          (/* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit]) | (/* repeated */ String), 
+          (/* repeated */ Any) | (/* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit]), 
           js.Promise[Unit] | Unit
         ]
     ): this.type = js.native
@@ -30,7 +30,7 @@ object libLocalisationEnglishMod extends Shortcut {
       step: String,
       fn: js.ThisFunction2[
           /* this */ StepFn, 
-          /* arg1 */ String, 
+          /* arg1 */ Any, 
           /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
@@ -39,8 +39,8 @@ object libLocalisationEnglishMod extends Shortcut {
       step: String,
       fn: js.ThisFunction3[
           /* this */ StepFn, 
-          /* arg1 */ String, 
-          /* arg2 */ String, 
+          /* arg1 */ Any, 
+          /* arg2 */ Any, 
           /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
@@ -49,9 +49,9 @@ object libLocalisationEnglishMod extends Shortcut {
       step: String,
       fn: js.ThisFunction4[
           /* this */ StepFn, 
-          /* arg1 */ String, 
-          /* arg2 */ String, 
-          /* arg3 */ String, 
+          /* arg1 */ Any, 
+          /* arg2 */ Any, 
+          /* arg3 */ Any, 
           /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
@@ -60,10 +60,10 @@ object libLocalisationEnglishMod extends Shortcut {
       step: String,
       fn: js.ThisFunction5[
           /* this */ StepFn, 
-          /* arg1 */ String, 
-          /* arg2 */ String, 
-          /* arg3 */ String, 
-          /* arg4 */ String, 
+          /* arg1 */ Any, 
+          /* arg2 */ Any, 
+          /* arg3 */ Any, 
+          /* arg4 */ Any, 
           /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
@@ -72,11 +72,11 @@ object libLocalisationEnglishMod extends Shortcut {
       step: String,
       fn: js.ThisFunction6[
           /* this */ StepFn, 
-          /* arg1 */ String, 
-          /* arg2 */ String, 
-          /* arg3 */ String, 
-          /* arg4 */ String, 
-          /* arg5 */ String, 
+          /* arg1 */ Any, 
+          /* arg2 */ Any, 
+          /* arg3 */ Any, 
+          /* arg4 */ Any, 
+          /* arg5 */ Any, 
           /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
@@ -85,12 +85,12 @@ object libLocalisationEnglishMod extends Shortcut {
       step: String,
       fn: js.ThisFunction7[
           /* this */ StepFn, 
-          /* arg1 */ String, 
-          /* arg2 */ String, 
-          /* arg3 */ String, 
-          /* arg4 */ String, 
-          /* arg5 */ String, 
-          /* arg6 */ String, 
+          /* arg1 */ Any, 
+          /* arg2 */ Any, 
+          /* arg3 */ Any, 
+          /* arg4 */ Any, 
+          /* arg5 */ Any, 
+          /* arg6 */ Any, 
           /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
@@ -100,7 +100,7 @@ object libLocalisationEnglishMod extends Shortcut {
       step: js.Array[js.RegExp | String],
       fn: js.ThisFunction1[
           /* this */ StepFn, 
-          (/* next */ js.Function1[js.UndefOr[js.Error], Unit]) | (/* repeated */ String), 
+          (/* repeated */ Any) | (/* next */ js.Function1[js.UndefOr[js.Error], Unit]), 
           js.Promise[Unit] | Unit
         ]
     ): this.type = js.native
@@ -108,7 +108,7 @@ object libLocalisationEnglishMod extends Shortcut {
       step: js.Array[js.RegExp | String],
       fn: js.ThisFunction2[
           /* this */ StepFn, 
-          /* arg1 */ String, 
+          /* arg1 */ Any, 
           /* next */ js.Function1[js.UndefOr[js.Error], Unit], 
           Unit
         ]
@@ -117,8 +117,8 @@ object libLocalisationEnglishMod extends Shortcut {
       step: js.Array[js.RegExp | String],
       fn: js.ThisFunction3[
           /* this */ StepFn, 
-          /* arg1 */ String, 
-          /* arg2 */ String, 
+          /* arg1 */ Any, 
+          /* arg2 */ Any, 
           /* next */ js.Function1[js.UndefOr[js.Error], Unit], 
           Unit
         ]
@@ -127,9 +127,9 @@ object libLocalisationEnglishMod extends Shortcut {
       step: js.Array[js.RegExp | String],
       fn: js.ThisFunction4[
           /* this */ StepFn, 
-          /* arg1 */ String, 
-          /* arg2 */ String, 
-          /* arg3 */ String, 
+          /* arg1 */ Any, 
+          /* arg2 */ Any, 
+          /* arg3 */ Any, 
           /* next */ js.Function1[js.UndefOr[js.Error], Unit], 
           Unit
         ]
@@ -138,10 +138,10 @@ object libLocalisationEnglishMod extends Shortcut {
       step: js.Array[js.RegExp | String],
       fn: js.ThisFunction5[
           /* this */ StepFn, 
-          /* arg1 */ String, 
-          /* arg2 */ String, 
-          /* arg3 */ String, 
-          /* arg4 */ String, 
+          /* arg1 */ Any, 
+          /* arg2 */ Any, 
+          /* arg3 */ Any, 
+          /* arg4 */ Any, 
           /* next */ js.Function1[js.UndefOr[js.Error], Unit], 
           Unit
         ]
@@ -150,11 +150,11 @@ object libLocalisationEnglishMod extends Shortcut {
       step: js.Array[js.RegExp | String],
       fn: js.ThisFunction6[
           /* this */ StepFn, 
-          /* arg1 */ String, 
-          /* arg2 */ String, 
-          /* arg3 */ String, 
-          /* arg4 */ String, 
-          /* arg5 */ String, 
+          /* arg1 */ Any, 
+          /* arg2 */ Any, 
+          /* arg3 */ Any, 
+          /* arg4 */ Any, 
+          /* arg5 */ Any, 
           /* next */ js.Function1[js.UndefOr[js.Error], Unit], 
           Unit
         ]
@@ -163,12 +163,12 @@ object libLocalisationEnglishMod extends Shortcut {
       step: js.Array[js.RegExp | String],
       fn: js.ThisFunction7[
           /* this */ StepFn, 
-          /* arg1 */ String, 
-          /* arg2 */ String, 
-          /* arg3 */ String, 
-          /* arg4 */ String, 
-          /* arg5 */ String, 
-          /* arg6 */ String, 
+          /* arg1 */ Any, 
+          /* arg2 */ Any, 
+          /* arg3 */ Any, 
+          /* arg4 */ Any, 
+          /* arg5 */ Any, 
+          /* arg6 */ Any, 
           /* next */ js.Function1[js.UndefOr[js.Error], Unit], 
           Unit
         ]
@@ -178,7 +178,7 @@ object libLocalisationEnglishMod extends Shortcut {
       step: js.RegExp,
       fn: js.ThisFunction1[
           /* this */ StepFn, 
-          (/* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit]) | (/* repeated */ String), 
+          (/* repeated */ Any) | (/* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit]), 
           js.Promise[Unit] | Unit
         ]
     ): this.type = js.native
@@ -186,7 +186,7 @@ object libLocalisationEnglishMod extends Shortcut {
       step: js.RegExp,
       fn: js.ThisFunction2[
           /* this */ StepFn, 
-          /* arg1 */ String, 
+          /* arg1 */ Any, 
           /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
@@ -195,8 +195,8 @@ object libLocalisationEnglishMod extends Shortcut {
       step: js.RegExp,
       fn: js.ThisFunction3[
           /* this */ StepFn, 
-          /* arg1 */ String, 
-          /* arg2 */ String, 
+          /* arg1 */ Any, 
+          /* arg2 */ Any, 
           /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
@@ -205,9 +205,9 @@ object libLocalisationEnglishMod extends Shortcut {
       step: js.RegExp,
       fn: js.ThisFunction4[
           /* this */ StepFn, 
-          /* arg1 */ String, 
-          /* arg2 */ String, 
-          /* arg3 */ String, 
+          /* arg1 */ Any, 
+          /* arg2 */ Any, 
+          /* arg3 */ Any, 
           /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
@@ -216,10 +216,10 @@ object libLocalisationEnglishMod extends Shortcut {
       step: js.RegExp,
       fn: js.ThisFunction5[
           /* this */ StepFn, 
-          /* arg1 */ String, 
-          /* arg2 */ String, 
-          /* arg3 */ String, 
-          /* arg4 */ String, 
+          /* arg1 */ Any, 
+          /* arg2 */ Any, 
+          /* arg3 */ Any, 
+          /* arg4 */ Any, 
           /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
@@ -228,11 +228,11 @@ object libLocalisationEnglishMod extends Shortcut {
       step: js.RegExp,
       fn: js.ThisFunction6[
           /* this */ StepFn, 
-          /* arg1 */ String, 
-          /* arg2 */ String, 
-          /* arg3 */ String, 
-          /* arg4 */ String, 
-          /* arg5 */ String, 
+          /* arg1 */ Any, 
+          /* arg2 */ Any, 
+          /* arg3 */ Any, 
+          /* arg4 */ Any, 
+          /* arg5 */ Any, 
           /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
@@ -241,12 +241,12 @@ object libLocalisationEnglishMod extends Shortcut {
       step: js.RegExp,
       fn: js.ThisFunction7[
           /* this */ StepFn, 
-          /* arg1 */ String, 
-          /* arg2 */ String, 
-          /* arg3 */ String, 
-          /* arg4 */ String, 
-          /* arg5 */ String, 
-          /* arg6 */ String, 
+          /* arg1 */ Any, 
+          /* arg2 */ Any, 
+          /* arg3 */ Any, 
+          /* arg4 */ Any, 
+          /* arg5 */ Any, 
+          /* arg6 */ Any, 
           /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
@@ -257,7 +257,7 @@ object libLocalisationEnglishMod extends Shortcut {
       step: String,
       fn: js.ThisFunction1[
           /* this */ StepFn, 
-          (/* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit]) | (/* repeated */ String), 
+          (/* repeated */ Any) | (/* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit]), 
           js.Promise[Unit] | Unit
         ]
     ): this.type = js.native
@@ -265,7 +265,7 @@ object libLocalisationEnglishMod extends Shortcut {
       step: String,
       fn: js.ThisFunction2[
           /* this */ StepFn, 
-          /* arg1 */ String, 
+          /* arg1 */ Any, 
           /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
@@ -274,8 +274,8 @@ object libLocalisationEnglishMod extends Shortcut {
       step: String,
       fn: js.ThisFunction3[
           /* this */ StepFn, 
-          /* arg1 */ String, 
-          /* arg2 */ String, 
+          /* arg1 */ Any, 
+          /* arg2 */ Any, 
           /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
@@ -284,9 +284,9 @@ object libLocalisationEnglishMod extends Shortcut {
       step: String,
       fn: js.ThisFunction4[
           /* this */ StepFn, 
-          /* arg1 */ String, 
-          /* arg2 */ String, 
-          /* arg3 */ String, 
+          /* arg1 */ Any, 
+          /* arg2 */ Any, 
+          /* arg3 */ Any, 
           /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
@@ -295,10 +295,10 @@ object libLocalisationEnglishMod extends Shortcut {
       step: String,
       fn: js.ThisFunction5[
           /* this */ StepFn, 
-          /* arg1 */ String, 
-          /* arg2 */ String, 
-          /* arg3 */ String, 
-          /* arg4 */ String, 
+          /* arg1 */ Any, 
+          /* arg2 */ Any, 
+          /* arg3 */ Any, 
+          /* arg4 */ Any, 
           /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
@@ -307,11 +307,11 @@ object libLocalisationEnglishMod extends Shortcut {
       step: String,
       fn: js.ThisFunction6[
           /* this */ StepFn, 
-          /* arg1 */ String, 
-          /* arg2 */ String, 
-          /* arg3 */ String, 
-          /* arg4 */ String, 
-          /* arg5 */ String, 
+          /* arg1 */ Any, 
+          /* arg2 */ Any, 
+          /* arg3 */ Any, 
+          /* arg4 */ Any, 
+          /* arg5 */ Any, 
           /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
@@ -320,12 +320,12 @@ object libLocalisationEnglishMod extends Shortcut {
       step: String,
       fn: js.ThisFunction7[
           /* this */ StepFn, 
-          /* arg1 */ String, 
-          /* arg2 */ String, 
-          /* arg3 */ String, 
-          /* arg4 */ String, 
-          /* arg5 */ String, 
-          /* arg6 */ String, 
+          /* arg1 */ Any, 
+          /* arg2 */ Any, 
+          /* arg3 */ Any, 
+          /* arg4 */ Any, 
+          /* arg5 */ Any, 
+          /* arg6 */ Any, 
           /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
@@ -335,7 +335,7 @@ object libLocalisationEnglishMod extends Shortcut {
       step: js.Array[js.RegExp | String],
       fn: js.ThisFunction1[
           /* this */ StepFn, 
-          (/* next */ js.Function1[js.UndefOr[js.Error], Unit]) | (/* repeated */ String), 
+          (/* repeated */ Any) | (/* next */ js.Function1[js.UndefOr[js.Error], Unit]), 
           js.Promise[Unit] | Unit
         ]
     ): this.type = js.native
@@ -343,7 +343,7 @@ object libLocalisationEnglishMod extends Shortcut {
       step: js.Array[js.RegExp | String],
       fn: js.ThisFunction2[
           /* this */ StepFn, 
-          /* arg1 */ String, 
+          /* arg1 */ Any, 
           /* next */ js.Function1[js.UndefOr[js.Error], Unit], 
           Unit
         ]
@@ -352,8 +352,8 @@ object libLocalisationEnglishMod extends Shortcut {
       step: js.Array[js.RegExp | String],
       fn: js.ThisFunction3[
           /* this */ StepFn, 
-          /* arg1 */ String, 
-          /* arg2 */ String, 
+          /* arg1 */ Any, 
+          /* arg2 */ Any, 
           /* next */ js.Function1[js.UndefOr[js.Error], Unit], 
           Unit
         ]
@@ -362,9 +362,9 @@ object libLocalisationEnglishMod extends Shortcut {
       step: js.Array[js.RegExp | String],
       fn: js.ThisFunction4[
           /* this */ StepFn, 
-          /* arg1 */ String, 
-          /* arg2 */ String, 
-          /* arg3 */ String, 
+          /* arg1 */ Any, 
+          /* arg2 */ Any, 
+          /* arg3 */ Any, 
           /* next */ js.Function1[js.UndefOr[js.Error], Unit], 
           Unit
         ]
@@ -373,10 +373,10 @@ object libLocalisationEnglishMod extends Shortcut {
       step: js.Array[js.RegExp | String],
       fn: js.ThisFunction5[
           /* this */ StepFn, 
-          /* arg1 */ String, 
-          /* arg2 */ String, 
-          /* arg3 */ String, 
-          /* arg4 */ String, 
+          /* arg1 */ Any, 
+          /* arg2 */ Any, 
+          /* arg3 */ Any, 
+          /* arg4 */ Any, 
           /* next */ js.Function1[js.UndefOr[js.Error], Unit], 
           Unit
         ]
@@ -385,11 +385,11 @@ object libLocalisationEnglishMod extends Shortcut {
       step: js.Array[js.RegExp | String],
       fn: js.ThisFunction6[
           /* this */ StepFn, 
-          /* arg1 */ String, 
-          /* arg2 */ String, 
-          /* arg3 */ String, 
-          /* arg4 */ String, 
-          /* arg5 */ String, 
+          /* arg1 */ Any, 
+          /* arg2 */ Any, 
+          /* arg3 */ Any, 
+          /* arg4 */ Any, 
+          /* arg5 */ Any, 
           /* next */ js.Function1[js.UndefOr[js.Error], Unit], 
           Unit
         ]
@@ -398,12 +398,12 @@ object libLocalisationEnglishMod extends Shortcut {
       step: js.Array[js.RegExp | String],
       fn: js.ThisFunction7[
           /* this */ StepFn, 
-          /* arg1 */ String, 
-          /* arg2 */ String, 
-          /* arg3 */ String, 
-          /* arg4 */ String, 
-          /* arg5 */ String, 
-          /* arg6 */ String, 
+          /* arg1 */ Any, 
+          /* arg2 */ Any, 
+          /* arg3 */ Any, 
+          /* arg4 */ Any, 
+          /* arg5 */ Any, 
+          /* arg6 */ Any, 
           /* next */ js.Function1[js.UndefOr[js.Error], Unit], 
           Unit
         ]
@@ -413,7 +413,7 @@ object libLocalisationEnglishMod extends Shortcut {
       step: js.RegExp,
       fn: js.ThisFunction1[
           /* this */ StepFn, 
-          (/* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit]) | (/* repeated */ String), 
+          (/* repeated */ Any) | (/* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit]), 
           js.Promise[Unit] | Unit
         ]
     ): this.type = js.native
@@ -421,7 +421,7 @@ object libLocalisationEnglishMod extends Shortcut {
       step: js.RegExp,
       fn: js.ThisFunction2[
           /* this */ StepFn, 
-          /* arg1 */ String, 
+          /* arg1 */ Any, 
           /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
@@ -430,8 +430,8 @@ object libLocalisationEnglishMod extends Shortcut {
       step: js.RegExp,
       fn: js.ThisFunction3[
           /* this */ StepFn, 
-          /* arg1 */ String, 
-          /* arg2 */ String, 
+          /* arg1 */ Any, 
+          /* arg2 */ Any, 
           /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
@@ -440,9 +440,9 @@ object libLocalisationEnglishMod extends Shortcut {
       step: js.RegExp,
       fn: js.ThisFunction4[
           /* this */ StepFn, 
-          /* arg1 */ String, 
-          /* arg2 */ String, 
-          /* arg3 */ String, 
+          /* arg1 */ Any, 
+          /* arg2 */ Any, 
+          /* arg3 */ Any, 
           /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
@@ -451,10 +451,10 @@ object libLocalisationEnglishMod extends Shortcut {
       step: js.RegExp,
       fn: js.ThisFunction5[
           /* this */ StepFn, 
-          /* arg1 */ String, 
-          /* arg2 */ String, 
-          /* arg3 */ String, 
-          /* arg4 */ String, 
+          /* arg1 */ Any, 
+          /* arg2 */ Any, 
+          /* arg3 */ Any, 
+          /* arg4 */ Any, 
           /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
@@ -463,11 +463,11 @@ object libLocalisationEnglishMod extends Shortcut {
       step: js.RegExp,
       fn: js.ThisFunction6[
           /* this */ StepFn, 
-          /* arg1 */ String, 
-          /* arg2 */ String, 
-          /* arg3 */ String, 
-          /* arg4 */ String, 
-          /* arg5 */ String, 
+          /* arg1 */ Any, 
+          /* arg2 */ Any, 
+          /* arg3 */ Any, 
+          /* arg4 */ Any, 
+          /* arg5 */ Any, 
           /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
@@ -476,12 +476,12 @@ object libLocalisationEnglishMod extends Shortcut {
       step: js.RegExp,
       fn: js.ThisFunction7[
           /* this */ StepFn, 
-          /* arg1 */ String, 
-          /* arg2 */ String, 
-          /* arg3 */ String, 
-          /* arg4 */ String, 
-          /* arg5 */ String, 
-          /* arg6 */ String, 
+          /* arg1 */ Any, 
+          /* arg2 */ Any, 
+          /* arg3 */ Any, 
+          /* arg4 */ Any, 
+          /* arg5 */ Any, 
+          /* arg6 */ Any, 
           /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
@@ -492,7 +492,7 @@ object libLocalisationEnglishMod extends Shortcut {
       step: String,
       fn: js.ThisFunction1[
           /* this */ StepFn, 
-          (/* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit]) | (/* repeated */ String), 
+          (/* repeated */ Any) | (/* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit]), 
           js.Promise[Unit] | Unit
         ]
     ): this.type = js.native
@@ -500,7 +500,7 @@ object libLocalisationEnglishMod extends Shortcut {
       step: String,
       fn: js.ThisFunction2[
           /* this */ StepFn, 
-          /* arg1 */ String, 
+          /* arg1 */ Any, 
           /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
@@ -509,8 +509,8 @@ object libLocalisationEnglishMod extends Shortcut {
       step: String,
       fn: js.ThisFunction3[
           /* this */ StepFn, 
-          /* arg1 */ String, 
-          /* arg2 */ String, 
+          /* arg1 */ Any, 
+          /* arg2 */ Any, 
           /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
@@ -519,9 +519,9 @@ object libLocalisationEnglishMod extends Shortcut {
       step: String,
       fn: js.ThisFunction4[
           /* this */ StepFn, 
-          /* arg1 */ String, 
-          /* arg2 */ String, 
-          /* arg3 */ String, 
+          /* arg1 */ Any, 
+          /* arg2 */ Any, 
+          /* arg3 */ Any, 
           /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
@@ -530,10 +530,10 @@ object libLocalisationEnglishMod extends Shortcut {
       step: String,
       fn: js.ThisFunction5[
           /* this */ StepFn, 
-          /* arg1 */ String, 
-          /* arg2 */ String, 
-          /* arg3 */ String, 
-          /* arg4 */ String, 
+          /* arg1 */ Any, 
+          /* arg2 */ Any, 
+          /* arg3 */ Any, 
+          /* arg4 */ Any, 
           /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
@@ -542,11 +542,11 @@ object libLocalisationEnglishMod extends Shortcut {
       step: String,
       fn: js.ThisFunction6[
           /* this */ StepFn, 
-          /* arg1 */ String, 
-          /* arg2 */ String, 
-          /* arg3 */ String, 
-          /* arg4 */ String, 
-          /* arg5 */ String, 
+          /* arg1 */ Any, 
+          /* arg2 */ Any, 
+          /* arg3 */ Any, 
+          /* arg4 */ Any, 
+          /* arg5 */ Any, 
           /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
@@ -555,12 +555,12 @@ object libLocalisationEnglishMod extends Shortcut {
       step: String,
       fn: js.ThisFunction7[
           /* this */ StepFn, 
-          /* arg1 */ String, 
-          /* arg2 */ String, 
-          /* arg3 */ String, 
-          /* arg4 */ String, 
-          /* arg5 */ String, 
-          /* arg6 */ String, 
+          /* arg1 */ Any, 
+          /* arg2 */ Any, 
+          /* arg3 */ Any, 
+          /* arg4 */ Any, 
+          /* arg5 */ Any, 
+          /* arg6 */ Any, 
           /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
@@ -570,7 +570,7 @@ object libLocalisationEnglishMod extends Shortcut {
       step: js.Array[js.RegExp | String],
       fn: js.ThisFunction1[
           /* this */ StepFn, 
-          (/* next */ js.Function1[js.UndefOr[js.Error], Unit]) | (/* repeated */ String), 
+          (/* repeated */ Any) | (/* next */ js.Function1[js.UndefOr[js.Error], Unit]), 
           js.Promise[Unit] | Unit
         ]
     ): this.type = js.native
@@ -578,7 +578,7 @@ object libLocalisationEnglishMod extends Shortcut {
       step: js.Array[js.RegExp | String],
       fn: js.ThisFunction2[
           /* this */ StepFn, 
-          /* arg1 */ String, 
+          /* arg1 */ Any, 
           /* next */ js.Function1[js.UndefOr[js.Error], Unit], 
           Unit
         ]
@@ -587,8 +587,8 @@ object libLocalisationEnglishMod extends Shortcut {
       step: js.Array[js.RegExp | String],
       fn: js.ThisFunction3[
           /* this */ StepFn, 
-          /* arg1 */ String, 
-          /* arg2 */ String, 
+          /* arg1 */ Any, 
+          /* arg2 */ Any, 
           /* next */ js.Function1[js.UndefOr[js.Error], Unit], 
           Unit
         ]
@@ -597,9 +597,9 @@ object libLocalisationEnglishMod extends Shortcut {
       step: js.Array[js.RegExp | String],
       fn: js.ThisFunction4[
           /* this */ StepFn, 
-          /* arg1 */ String, 
-          /* arg2 */ String, 
-          /* arg3 */ String, 
+          /* arg1 */ Any, 
+          /* arg2 */ Any, 
+          /* arg3 */ Any, 
           /* next */ js.Function1[js.UndefOr[js.Error], Unit], 
           Unit
         ]
@@ -608,10 +608,10 @@ object libLocalisationEnglishMod extends Shortcut {
       step: js.Array[js.RegExp | String],
       fn: js.ThisFunction5[
           /* this */ StepFn, 
-          /* arg1 */ String, 
-          /* arg2 */ String, 
-          /* arg3 */ String, 
-          /* arg4 */ String, 
+          /* arg1 */ Any, 
+          /* arg2 */ Any, 
+          /* arg3 */ Any, 
+          /* arg4 */ Any, 
           /* next */ js.Function1[js.UndefOr[js.Error], Unit], 
           Unit
         ]
@@ -620,11 +620,11 @@ object libLocalisationEnglishMod extends Shortcut {
       step: js.Array[js.RegExp | String],
       fn: js.ThisFunction6[
           /* this */ StepFn, 
-          /* arg1 */ String, 
-          /* arg2 */ String, 
-          /* arg3 */ String, 
-          /* arg4 */ String, 
-          /* arg5 */ String, 
+          /* arg1 */ Any, 
+          /* arg2 */ Any, 
+          /* arg3 */ Any, 
+          /* arg4 */ Any, 
+          /* arg5 */ Any, 
           /* next */ js.Function1[js.UndefOr[js.Error], Unit], 
           Unit
         ]
@@ -633,12 +633,12 @@ object libLocalisationEnglishMod extends Shortcut {
       step: js.Array[js.RegExp | String],
       fn: js.ThisFunction7[
           /* this */ StepFn, 
-          /* arg1 */ String, 
-          /* arg2 */ String, 
-          /* arg3 */ String, 
-          /* arg4 */ String, 
-          /* arg5 */ String, 
-          /* arg6 */ String, 
+          /* arg1 */ Any, 
+          /* arg2 */ Any, 
+          /* arg3 */ Any, 
+          /* arg4 */ Any, 
+          /* arg5 */ Any, 
+          /* arg6 */ Any, 
           /* next */ js.Function1[js.UndefOr[js.Error], Unit], 
           Unit
         ]
@@ -648,7 +648,7 @@ object libLocalisationEnglishMod extends Shortcut {
       step: js.RegExp,
       fn: js.ThisFunction1[
           /* this */ StepFn, 
-          (/* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit]) | (/* repeated */ String), 
+          (/* repeated */ Any) | (/* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit]), 
           js.Promise[Unit] | Unit
         ]
     ): this.type = js.native
@@ -656,7 +656,7 @@ object libLocalisationEnglishMod extends Shortcut {
       step: js.RegExp,
       fn: js.ThisFunction2[
           /* this */ StepFn, 
-          /* arg1 */ String, 
+          /* arg1 */ Any, 
           /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
@@ -665,8 +665,8 @@ object libLocalisationEnglishMod extends Shortcut {
       step: js.RegExp,
       fn: js.ThisFunction3[
           /* this */ StepFn, 
-          /* arg1 */ String, 
-          /* arg2 */ String, 
+          /* arg1 */ Any, 
+          /* arg2 */ Any, 
           /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
@@ -675,9 +675,9 @@ object libLocalisationEnglishMod extends Shortcut {
       step: js.RegExp,
       fn: js.ThisFunction4[
           /* this */ StepFn, 
-          /* arg1 */ String, 
-          /* arg2 */ String, 
-          /* arg3 */ String, 
+          /* arg1 */ Any, 
+          /* arg2 */ Any, 
+          /* arg3 */ Any, 
           /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
@@ -686,10 +686,10 @@ object libLocalisationEnglishMod extends Shortcut {
       step: js.RegExp,
       fn: js.ThisFunction5[
           /* this */ StepFn, 
-          /* arg1 */ String, 
-          /* arg2 */ String, 
-          /* arg3 */ String, 
-          /* arg4 */ String, 
+          /* arg1 */ Any, 
+          /* arg2 */ Any, 
+          /* arg3 */ Any, 
+          /* arg4 */ Any, 
           /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
@@ -698,11 +698,11 @@ object libLocalisationEnglishMod extends Shortcut {
       step: js.RegExp,
       fn: js.ThisFunction6[
           /* this */ StepFn, 
-          /* arg1 */ String, 
-          /* arg2 */ String, 
-          /* arg3 */ String, 
-          /* arg4 */ String, 
-          /* arg5 */ String, 
+          /* arg1 */ Any, 
+          /* arg2 */ Any, 
+          /* arg3 */ Any, 
+          /* arg4 */ Any, 
+          /* arg5 */ Any, 
           /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]
@@ -711,12 +711,12 @@ object libLocalisationEnglishMod extends Shortcut {
       step: js.RegExp,
       fn: js.ThisFunction7[
           /* this */ StepFn, 
-          /* arg1 */ String, 
-          /* arg2 */ String, 
-          /* arg3 */ String, 
-          /* arg4 */ String, 
-          /* arg5 */ String, 
-          /* arg6 */ String, 
+          /* arg1 */ Any, 
+          /* arg2 */ Any, 
+          /* arg3 */ Any, 
+          /* arg4 */ Any, 
+          /* arg5 */ Any, 
+          /* arg6 */ Any, 
           /* next */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
           Unit
         ]

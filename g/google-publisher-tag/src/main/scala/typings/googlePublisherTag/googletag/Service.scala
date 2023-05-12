@@ -59,7 +59,7 @@ trait Service extends StObject {
     *
     * @example
     *   // 1. Adding an event listener for the PubAdsService.
-    *   googletag.pubads().addEventListener('slotOnload', function(event) {
+    *   googletag.pubads().addEventListener('slotOnload', (event) => {
     *     console.log('Slot has been loaded:');
     *     console.log(event);
     *   });
@@ -69,8 +69,8 @@ trait Service extends StObject {
     *   // a listener for an event for a specific slot only. You can, however,
     *   // programmatically filter a listener to respond only to a certain ad
     *   // slot, using this pattern:
-    *   var targetSlot = googletag.defineSlot('/1234567/example', [160, 600]);
-    *   googletag.pubads().addEventListener('slotOnload', function(event) {
+    *   const targetSlot = googletag.defineSlot('/1234567/example', [160, 600]);
+    *   googletag.pubads().addEventListener('slotOnload', (event) => {
     *     if (event.slot === targetSlot) {
     *       // Slot specific logic.
     *     }
@@ -114,20 +114,21 @@ trait Service extends StObject {
     * Removes a previously registered listener.
     *
     * @example
-    * googletag.cmd.push(function() {
+    * googletag.cmd.push(() => {
     *   // Define a new ad slot.
-    *   googletag.defineSlot('/6355419/Travel', [728, 90], 'div-for-slot')
+    *   googletag.defineSlot('/6355419/Travel', [728, 90], 'div-for-slot')!
     *            .addService(googletag.pubads());
     *
     *   // Define a new function that removes itself via removeEventListener
     *   // after the impressionViewable event fires.
-    *   var onViewableListener = function(event) {
-    *     googletag.pubads().removeEventListener('impressionViewable',
-    *                                            onViewableListener);
-    *     setTimeout(function() {
-    *       googletag.pubads().refresh([event.slot]);
-    *     }, 30000);
-    *   };
+    *   const onViewableListener =
+    *       (event: googletag.events.ImpressionViewableEvent) => {
+    *         googletag.pubads().removeEventListener('impressionViewable',
+    *                                                onViewableListener);
+    *         setTimeout(() => {
+    *           googletag.pubads().refresh([event.slot]);
+    *         }, 30000);
+    *       };
     *
     *   // Add onViewableListener as a listener for impressionViewable events.
     *   googletag.pubads().addEventListener('impressionViewable',

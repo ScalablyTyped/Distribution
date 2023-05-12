@@ -36,6 +36,12 @@ open class DropDown protected () extends AttributeWidget {
     */
   def emptyOptionCaption: Text = js.native
   def emptyOptionCaption_=(newValue: Text): Unit = js.native
+  
+  /**
+    * In version 9.24.0: introduced
+    */
+  def nativeAccessibilitySettings: AccessibilitySettings | Null = js.native
+  def nativeAccessibilitySettings_=(newValue: AccessibilitySettings | Null): Unit = js.native
 }
 object DropDown {
   

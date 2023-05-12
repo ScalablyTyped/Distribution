@@ -12,7 +12,7 @@ trait GenerateMacResponse extends StObject {
   var KeyId: js.UndefOr[KeyIdType] = js.undefined
   
   /**
-    * The hash-based message authentication code (HMAC) for the given message, key, and MAC algorithm.
+    * The hash-based message authentication code (HMAC) that was generated for the specified message, HMAC KMS key, and MAC algorithm. This is the standard, raw HMAC defined in RFC 2104.
     */
   var Mac: js.UndefOr[CiphertextType] = js.undefined
   

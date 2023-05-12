@@ -99,12 +99,26 @@ trait CodeArtifact extends Service {
   ): Request[DeleteDomainPermissionsPolicyResult, AWSError] = js.native
   
   /**
-    *  Deletes one or more versions of a package. A deleted package version cannot be restored in your repository. If you want to remove a package version from your repository and be able to restore it later, set its status to Archived. Archived packages cannot be downloaded from a repository and don't show up with list package APIs (for example, ListackageVersions), but you can restore them using UpdatePackageVersionsStatus. 
+    * Deletes a package and all associated package versions. A deleted package cannot be restored. To delete one or more package versions, use the DeletePackageVersions API.
+    */
+  def deletePackage(): Request[DeletePackageResult, AWSError] = js.native
+  def deletePackage(callback: js.Function2[/* err */ AWSError, /* data */ DeletePackageResult, Unit]): Request[DeletePackageResult, AWSError] = js.native
+  /**
+    * Deletes a package and all associated package versions. A deleted package cannot be restored. To delete one or more package versions, use the DeletePackageVersions API.
+    */
+  def deletePackage(params: DeletePackageRequest): Request[DeletePackageResult, AWSError] = js.native
+  def deletePackage(
+    params: DeletePackageRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeletePackageResult, Unit]
+  ): Request[DeletePackageResult, AWSError] = js.native
+  
+  /**
+    *  Deletes one or more versions of a package. A deleted package version cannot be restored in your repository. If you want to remove a package version from your repository and be able to restore it later, set its status to Archived. Archived packages cannot be downloaded from a repository and don't show up with list package APIs (for example, ListPackageVersions), but you can restore them using UpdatePackageVersionsStatus. 
     */
   def deletePackageVersions(): Request[DeletePackageVersionsResult, AWSError] = js.native
   def deletePackageVersions(callback: js.Function2[/* err */ AWSError, /* data */ DeletePackageVersionsResult, Unit]): Request[DeletePackageVersionsResult, AWSError] = js.native
   /**
-    *  Deletes one or more versions of a package. A deleted package version cannot be restored in your repository. If you want to remove a package version from your repository and be able to restore it later, set its status to Archived. Archived packages cannot be downloaded from a repository and don't show up with list package APIs (for example, ListackageVersions), but you can restore them using UpdatePackageVersionsStatus. 
+    *  Deletes one or more versions of a package. A deleted package version cannot be restored in your repository. If you want to remove a package version from your repository and be able to restore it later, set its status to Archived. Archived packages cannot be downloaded from a repository and don't show up with list package APIs (for example, ListPackageVersions), but you can restore them using UpdatePackageVersionsStatus. 
     */
   def deletePackageVersions(params: DeletePackageVersionsRequest): Request[DeletePackageVersionsResult, AWSError] = js.native
   def deletePackageVersions(
@@ -269,12 +283,12 @@ trait CodeArtifact extends Service {
   ): Request[GetPackageVersionAssetResult, AWSError] = js.native
   
   /**
-    *  Gets the readme file or descriptive text for a package version. For packages that do not contain a readme file, CodeArtifact extracts a description from a metadata file. For example, from the &lt;description&gt; element in the pom.xml file of a Maven package.   The returned text might contain formatting. For example, it might contain formatting for Markdown or reStructuredText. 
+    *  Gets the readme file or descriptive text for a package version.   The returned text might contain formatting. For example, it might contain formatting for Markdown or reStructuredText. 
     */
   def getPackageVersionReadme(): Request[GetPackageVersionReadmeResult, AWSError] = js.native
   def getPackageVersionReadme(callback: js.Function2[/* err */ AWSError, /* data */ GetPackageVersionReadmeResult, Unit]): Request[GetPackageVersionReadmeResult, AWSError] = js.native
   /**
-    *  Gets the readme file or descriptive text for a package version. For packages that do not contain a readme file, CodeArtifact extracts a description from a metadata file. For example, from the &lt;description&gt; element in the pom.xml file of a Maven package.   The returned text might contain formatting. For example, it might contain formatting for Markdown or reStructuredText. 
+    *  Gets the readme file or descriptive text for a package version.   The returned text might contain formatting. For example, it might contain formatting for Markdown or reStructuredText. 
     */
   def getPackageVersionReadme(params: GetPackageVersionReadmeRequest): Request[GetPackageVersionReadmeResult, AWSError] = js.native
   def getPackageVersionReadme(
@@ -353,12 +367,12 @@ trait CodeArtifact extends Service {
   ): Request[ListPackageVersionDependenciesResult, AWSError] = js.native
   
   /**
-    *  Returns a list of PackageVersionSummary objects for package versions in a repository that match the request parameters. 
+    *  Returns a list of PackageVersionSummary objects for package versions in a repository that match the request parameters. Package versions of all statuses will be returned by default when calling list-package-versions with no --status parameter. 
     */
   def listPackageVersions(): Request[ListPackageVersionsResult, AWSError] = js.native
   def listPackageVersions(callback: js.Function2[/* err */ AWSError, /* data */ ListPackageVersionsResult, Unit]): Request[ListPackageVersionsResult, AWSError] = js.native
   /**
-    *  Returns a list of PackageVersionSummary objects for package versions in a repository that match the request parameters. 
+    *  Returns a list of PackageVersionSummary objects for package versions in a repository that match the request parameters. Package versions of all statuses will be returned by default when calling list-package-versions with no --status parameter. 
     */
   def listPackageVersions(params: ListPackageVersionsRequest): Request[ListPackageVersionsResult, AWSError] = js.native
   def listPackageVersions(
@@ -421,6 +435,20 @@ trait CodeArtifact extends Service {
     params: ListTagsForResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResult, Unit]
   ): Request[ListTagsForResourceResult, AWSError] = js.native
+  
+  /**
+    * Creates a new package version containing one or more assets (or files). The unfinished flag can be used to keep the package version in the Unfinished state until all of its assets have been uploaded (see Package version status in the CodeArtifact user guide). To set the package version’s status to Published, omit the unfinished flag when uploading the final asset, or set the status using UpdatePackageVersionStatus. Once a package version’s status is set to Published, it cannot change back to Unfinished.  Only generic packages can be published using this API. For more information, see Using generic packages in the CodeArtifact User Guide. 
+    */
+  def publishPackageVersion(): Request[PublishPackageVersionResult, AWSError] = js.native
+  def publishPackageVersion(callback: js.Function2[/* err */ AWSError, /* data */ PublishPackageVersionResult, Unit]): Request[PublishPackageVersionResult, AWSError] = js.native
+  /**
+    * Creates a new package version containing one or more assets (or files). The unfinished flag can be used to keep the package version in the Unfinished state until all of its assets have been uploaded (see Package version status in the CodeArtifact user guide). To set the package version’s status to Published, omit the unfinished flag when uploading the final asset, or set the status using UpdatePackageVersionStatus. Once a package version’s status is set to Published, it cannot change back to Unfinished.  Only generic packages can be published using this API. For more information, see Using generic packages in the CodeArtifact User Guide. 
+    */
+  def publishPackageVersion(params: PublishPackageVersionRequest): Request[PublishPackageVersionResult, AWSError] = js.native
+  def publishPackageVersion(
+    params: PublishPackageVersionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ PublishPackageVersionResult, Unit]
+  ): Request[PublishPackageVersionResult, AWSError] = js.native
   
   /**
     *  Sets a resource policy on a domain that specifies permissions to access it.   When you call PutDomainPermissionsPolicy, the resource policy on the domain is ignored when evaluting permissions. This ensures that the owner of a domain cannot lock themselves out of the domain, which would prevent them from being able to update the resource policy. 

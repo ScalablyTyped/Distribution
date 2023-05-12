@@ -153,6 +153,9 @@ object distOpsConvUtilMod {
   inline def eitherStridesOrDilationsAreOne(strides: Double, dilations: js.Array[Double]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("eitherStridesOrDilationsAreOne")(strides.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   inline def eitherStridesOrDilationsAreOne(strides: Double, dilations: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("eitherStridesOrDilationsAreOne")(strides.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
+  inline def stridesOrDilationsArePositive(values: js.Array[Double]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("stridesOrDilationsArePositive")(values.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def stridesOrDilationsArePositive(values: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("stridesOrDilationsArePositive")(values.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
   inline def tupleValuesAreOne(param: js.Array[Double]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("tupleValuesAreOne")(param.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   inline def tupleValuesAreOne(param: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("tupleValuesAreOne")(param.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   

@@ -36,7 +36,6 @@ open class Servo protected () extends StObject {
   
   def min(): Unit = js.native
   
-  def on(event: String, cb: js.Function0[Unit]): this.type = js.native
   @JSName("on")
   def on_movecomplete(event: moveColoncomplete, cb: js.Function0[Unit]): this.type = js.native
   
@@ -51,8 +50,8 @@ open class Servo protected () extends StObject {
   def stop(): Unit = js.native
   
   def sweep(): Unit = js.native
-  def sweep(opt: ServoSweepOpts): Unit = js.native
-  def sweep(range: js.Array[Double]): Unit = js.native
+  def sweep(arg: js.Array[Double]): Unit = js.native
+  def sweep(arg: ServoSweepOpts): Unit = js.native
   
   def to(degrees: Double): Unit = js.native
   def to(degrees: Double, ms: Double): Unit = js.native

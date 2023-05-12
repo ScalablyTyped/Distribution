@@ -73,6 +73,7 @@ import typings.react.mod.FormEvent
 import typings.react.mod.FormEventHandler
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.KeyboardEventHandler
+import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.NativeUIEvent
@@ -93,7 +94,6 @@ import typings.react.mod.WheelEventHandler
 import typings.std.Element
 import typings.std.Event
 import typings.std.HTMLButtonElement
-import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -207,6 +207,8 @@ trait PartialButtonProps extends StObject {
   
   var autoCorrect: js.UndefOr[String] = js.undefined
   
+  var autoFocus: js.UndefOr[Boolean] = js.undefined
+  
   var autoSave: js.UndefOr[String] = js.undefined
   
   var children: js.UndefOr[ReactNode] = js.undefined
@@ -216,6 +218,8 @@ trait PartialButtonProps extends StObject {
   var color: js.UndefOr[String] = js.undefined
   
   var compact: js.UndefOr[Boolean] = js.undefined
+  
+  var content: js.UndefOr[String] = js.undefined
   
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
   
@@ -240,6 +244,8 @@ trait PartialButtonProps extends StObject {
   var glyph: js.UndefOr[String] = js.undefined
   
   var hidden: js.UndefOr[Boolean] = js.undefined
+  
+  var iconBeforeText: js.UndefOr[Boolean] = js.undefined
   
   var id: js.UndefOr[String] = js.undefined
   
@@ -283,9 +289,7 @@ trait PartialButtonProps extends StObject {
   
   var onChange: js.UndefOr[FormEventHandler[HTMLButtonElement]] = js.undefined
   
-  var onClick: js.UndefOr[
-    js.Function1[/* event */ typings.react.mod.MouseEvent[HTMLButtonElement, MouseEvent], Unit]
-  ] = js.undefined
+  var onClick: js.UndefOr[MouseEventHandler[HTMLButtonElement]] = js.undefined
   
   var onCompositionEnd: js.UndefOr[CompositionEventHandler[HTMLButtonElement]] = js.undefined
   
@@ -437,9 +441,13 @@ trait PartialButtonProps extends StObject {
   
   var ref: js.UndefOr[RefObject[HTMLButtonElement]] = js.undefined
   
+  var rel: js.UndefOr[String] = js.undefined
+  
   var resource: js.UndefOr[String] = js.undefined
   
   var results: js.UndefOr[Double] = js.undefined
+  
+  var rev: js.UndefOr[String] = js.undefined
   
   var role: js.UndefOr[AriaRole] = js.undefined
   
@@ -693,6 +701,10 @@ object PartialButtonProps {
     
     inline def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
     
+    inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+    
+    inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+    
     inline def setAutoSave(value: String): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
     
     inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
@@ -713,9 +725,13 @@ object PartialButtonProps {
     
     inline def setCompactUndefined: Self = StObject.set(x, "compact", js.undefined)
     
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    
     inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
     
     inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+    
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
     inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
     
@@ -762,6 +778,10 @@ object PartialButtonProps {
     inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     
     inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
+    
+    inline def setIconBeforeText(value: Boolean): Self = StObject.set(x, "iconBeforeText", value.asInstanceOf[js.Any])
+    
+    inline def setIconBeforeTextUndefined: Self = StObject.set(x, "iconBeforeText", js.undefined)
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
@@ -823,7 +843,7 @@ object PartialButtonProps {
     
     inline def setOnAnimationStartUndefined: Self = StObject.set(x, "onAnimationStart", js.undefined)
     
-    inline def setOnAuxClick(value: typings.react.mod.MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onAuxClick", js.Any.fromFunction1(value))
+    inline def setOnAuxClick(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onAuxClick", js.Any.fromFunction1(value))
     
     inline def setOnAuxClickUndefined: Self = StObject.set(x, "onAuxClick", js.undefined)
     
@@ -847,7 +867,7 @@ object PartialButtonProps {
     
     inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     
-    inline def setOnClick(value: /* event */ typings.react.mod.MouseEvent[HTMLButtonElement, MouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+    inline def setOnClick(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     
     inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
     
@@ -863,7 +883,7 @@ object PartialButtonProps {
     
     inline def setOnCompositionUpdateUndefined: Self = StObject.set(x, "onCompositionUpdate", js.undefined)
     
-    inline def setOnContextMenu(value: typings.react.mod.MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onContextMenu", js.Any.fromFunction1(value))
+    inline def setOnContextMenu(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onContextMenu", js.Any.fromFunction1(value))
     
     inline def setOnContextMenuUndefined: Self = StObject.set(x, "onContextMenu", js.undefined)
     
@@ -875,7 +895,7 @@ object PartialButtonProps {
     
     inline def setOnCutUndefined: Self = StObject.set(x, "onCut", js.undefined)
     
-    inline def setOnDoubleClick(value: typings.react.mod.MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onDoubleClick", js.Any.fromFunction1(value))
+    inline def setOnDoubleClick(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onDoubleClick", js.Any.fromFunction1(value))
     
     inline def setOnDoubleClickUndefined: Self = StObject.set(x, "onDoubleClick", js.undefined)
     
@@ -971,31 +991,31 @@ object PartialButtonProps {
     
     inline def setOnLoadedMetadataUndefined: Self = StObject.set(x, "onLoadedMetadata", js.undefined)
     
-    inline def setOnMouseDown(value: typings.react.mod.MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseDown", js.Any.fromFunction1(value))
+    inline def setOnMouseDown(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseDown", js.Any.fromFunction1(value))
     
     inline def setOnMouseDownUndefined: Self = StObject.set(x, "onMouseDown", js.undefined)
     
-    inline def setOnMouseEnter(value: typings.react.mod.MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction1(value))
+    inline def setOnMouseEnter(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction1(value))
     
     inline def setOnMouseEnterUndefined: Self = StObject.set(x, "onMouseEnter", js.undefined)
     
-    inline def setOnMouseLeave(value: typings.react.mod.MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction1(value))
+    inline def setOnMouseLeave(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction1(value))
     
     inline def setOnMouseLeaveUndefined: Self = StObject.set(x, "onMouseLeave", js.undefined)
     
-    inline def setOnMouseMove(value: typings.react.mod.MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseMove", js.Any.fromFunction1(value))
+    inline def setOnMouseMove(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseMove", js.Any.fromFunction1(value))
     
     inline def setOnMouseMoveUndefined: Self = StObject.set(x, "onMouseMove", js.undefined)
     
-    inline def setOnMouseOut(value: typings.react.mod.MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseOut", js.Any.fromFunction1(value))
+    inline def setOnMouseOut(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseOut", js.Any.fromFunction1(value))
     
     inline def setOnMouseOutUndefined: Self = StObject.set(x, "onMouseOut", js.undefined)
     
-    inline def setOnMouseOver(value: typings.react.mod.MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseOver", js.Any.fromFunction1(value))
+    inline def setOnMouseOver(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseOver", js.Any.fromFunction1(value))
     
     inline def setOnMouseOverUndefined: Self = StObject.set(x, "onMouseOver", js.undefined)
     
-    inline def setOnMouseUp(value: typings.react.mod.MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseUp", js.Any.fromFunction1(value))
+    inline def setOnMouseUp(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseUp", js.Any.fromFunction1(value))
     
     inline def setOnMouseUpUndefined: Self = StObject.set(x, "onMouseUp", js.undefined)
     
@@ -1151,6 +1171,10 @@ object PartialButtonProps {
     
     inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
     
+    inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+    
+    inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+    
     inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
@@ -1158,6 +1182,10 @@ object PartialButtonProps {
     inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
     inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+    
+    inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+    
+    inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
     
     inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     

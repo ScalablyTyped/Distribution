@@ -11,6 +11,7 @@ import typings.antdMobile.anon.MarkItems
 import typings.antdMobile.anon.Name
 import typings.antdMobile.anon.Ok
 import typings.antdMobile.anon.Placeholder
+import typings.antdMobile.anon.TillNow
 import typings.antdMobile.anon.Upload
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -33,6 +34,11 @@ object esLocalesFaIRMod {
     @js.native
     def Cascader: Placeholder = js.native
     inline def Cascader_=(x: Placeholder): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Cascader")(x.asInstanceOf[js.Any])
+    
+    @JSImport("antd-mobile/es/locales/fa-IR", "default.DatePicker")
+    @js.native
+    def DatePicker: TillNow = js.native
+    inline def DatePicker_=(x: TillNow): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DatePicker")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile/es/locales/fa-IR", "default.Dialog")
     @js.native
@@ -88,6 +94,11 @@ object esLocalesFaIRMod {
     @js.native
     def SearchBar: Name = js.native
     inline def SearchBar_=(x: Name): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SearchBar")(x.asInstanceOf[js.Any])
+    
+    @JSImport("antd-mobile/es/locales/fa-IR", "default.Selector")
+    @js.native
+    def Selector: Name = js.native
+    inline def Selector_=(x: Name): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Selector")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile/es/locales/fa-IR", "default.Slider")
     @js.native

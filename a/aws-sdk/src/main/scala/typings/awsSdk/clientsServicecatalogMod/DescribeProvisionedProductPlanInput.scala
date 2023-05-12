@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeProvisionedProductPlanInput extends StObject {
   
   /**
-    * The language code.    en - English (default)    jp - Japanese    zh - Chinese  
+    * The language code.    jp - Japanese    zh - Chinese  
     */
   var AcceptLanguage: js.UndefOr[typings.awsSdk.clientsServicecatalogMod.AcceptLanguage] = js.undefined
   

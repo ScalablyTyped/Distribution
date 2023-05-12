@@ -1,6 +1,6 @@
 package typings.openui5
 
-import typings.openui5.anon.`22`
+import typings.openui5.anon.`28`
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapMLibraryMod.PageBackgroundDesign
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
@@ -422,6 +422,8 @@ object sapMTabContainerMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:addNewButtonPress addNewButtonPress} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -433,6 +435,8 @@ object sapMTabContainerMod {
     mParameters: js.Object): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:itemClose itemClose} to attached listeners.
       *
       * Listeners may prevent the default action of this event by calling the `preventDefault` method on the
@@ -444,9 +448,11 @@ object sapMTabContainerMod {
     def fireItemClose(/**
       * Parameters to pass along with the event
       */
-    mParameters: `22`): Boolean = js.native
+    mParameters: `28`): Boolean = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:itemSelect itemSelect} to attached listeners.
       *
       * Listeners may prevent the default action of this event by calling the `preventDefault` method on the
@@ -458,7 +464,7 @@ object sapMTabContainerMod {
     def fireItemSelect(/**
       * Parameters to pass along with the event
       */
-    mParameters: `22`): Boolean = js.native
+    mParameters: `28`): Boolean = js.native
     
     /**
       * @SINCE 1.71

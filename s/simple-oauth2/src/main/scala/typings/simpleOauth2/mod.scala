@@ -4,8 +4,10 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.simpleOauth2.anon.AuthorizationMethod
 import typings.simpleOauth2.anon.AuthorizeHost
 import typings.simpleOauth2.anon.Id
+import typings.simpleOauth2.anon.OmitWreckHttpOptionsbaseU
 import typings.simpleOauth2.anon.Redirecturi
-import typings.simpleOauth2.simpleOauth2Booleans.`true`
+import typings.simpleOauth2.anon.Scope
+import typings.simpleOauth2.simpleOauth2Booleans.`false`
 import typings.simpleOauth2.simpleOauth2Strings.force
 import typings.simpleOauth2.simpleOauth2Strings.strict
 import org.scalablytyped.runtime.StObject
@@ -35,8 +37,9 @@ object mod {
     ): String = js.native
     
     /**
-      * Creates a new access token by providing a token object as specified by RFC6750.
-      * @param token
+      * Creates a new access token instance from a plain object
+      *
+      * @param token Plain object representation of an access token
       */
     def createToken(token: Token): AccessToken = js.native
     
@@ -44,7 +47,7 @@ object mod {
       * Requests and returns an access token from the authorization server
       *
       * @param params
-      * @param params.code Authorization code received by the callback URL
+      * @param params.code Authorization code (from previous step)
       * @param params.redirectURI String representing the registered application URI where the user is redirected after authentication
       * @param [params.scope] String or array of strings representing the application privileges
       * @param [httpOptions] Optional http options passed through the underlying http library
@@ -59,7 +62,7 @@ object mod {
     def this(options: ModuleOptions[ClientIdName]) = this()
     
     /**
-      * Creates a new access token by providing a token object as specified by RFC6750.
+      * Creates a new access token instance from a plain object
       *
       * @param token Plain object representation of an access token
       */
@@ -82,7 +85,7 @@ object mod {
     def this(options: ModuleOptions[ClientIdName]) = this()
     
     /**
-      * Creates a new access token by providing a token object as specified by RFC6750.
+      * Creates a new access token instance from a plain object
       *
       * @param token Plain object representation of an access token
       */
@@ -111,15 +114,34 @@ object mod {
     def expired(): Boolean = js.native
     def expired(expirationWindowSeconds: Double): Boolean = js.native
     
-    /** Refresh the access token */
+    /**
+      * Refreshes the current access token
+      *
+      * @param params Optional argument for additional API request params.
+      * @param [params.scope] String or array of strings representing the application privileges
+      * @param [httpOptions] Optional http options passed through the underlying http library
+      */
     def refresh(): js.Promise[AccessToken] = js.native
-    def refresh(params: js.Object): js.Promise[AccessToken] = js.native
+    def refresh(params: Unit, httpOptions: WreckHttpOptions): js.Promise[AccessToken] = js.native
+    def refresh(params: Scope): js.Promise[AccessToken] = js.native
+    def refresh(params: Scope, httpOptions: WreckHttpOptions): js.Promise[AccessToken] = js.native
     
-    /** Revoke access or refresh token */
+    /**
+      * Revokes either the access or refresh token depending on the {tokenType} value
+      *
+      * @param tokenType A string containing the type of token to revoke (access_token or refresh_token)
+      * @param [httpOptions] Optional http options passed through the underlying http library
+      */
     def revoke(tokenType: TokenType): js.Promise[Unit] = js.native
+    def revoke(tokenType: TokenType, httpOptions: WreckHttpOptions): js.Promise[Unit] = js.native
     
-    /** Revoke both the existing access and refresh tokens */
+    /**
+      * Revokes both the current access and refresh tokens
+      *
+      * @param [httpOptions] Optional http options passed through the underlying http library
+      */
     def revokeAll(): js.Promise[Unit] = js.native
+    def revokeAll(httpOptions: WreckHttpOptions): js.Promise[Unit] = js.native
     
     /**
       * Immutable object containing the token object provided while constructing a new access token instance.
@@ -131,7 +153,7 @@ object mod {
   
   trait AuthorizationTokenConfig extends StObject {
     
-    /** Authorization code received by the callback URL */
+    /** Authorization code (from previous step) */
     var code: String
     
     /** String representing the registered application URI where the user is redirected after authentication */
@@ -201,7 +223,7 @@ object mod {
       * All options except baseUrl are allowed
       * Defaults to header.Accept = "application/json"
       */
-    var http: js.UndefOr[js.Object] = js.undefined
+    var http: js.UndefOr[OmitWreckHttpOptionsbaseU] = js.undefined
     
     var options: js.UndefOr[AuthorizationMethod] = js.undefined
   }
@@ -219,7 +241,7 @@ object mod {
       
       inline def setClient(value: Id[ClientIdName]): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       
-      inline def setHttp(value: js.Object): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
+      inline def setHttp(value: OmitWreckHttpOptionsbaseU): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
       
       inline def setHttpUndefined: Self = StObject.set(x, "http", js.undefined)
       
@@ -240,15 +262,15 @@ object mod {
     var password: String
     
     /** A string or array of strings that represents the application privileges */
-    var scope: String | js.Array[String]
+    var scope: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /** A string that represents the registered username */
     var username: String
   }
   object PasswordTokenConfig {
     
-    inline def apply(password: String, scope: String | js.Array[String], username: String): PasswordTokenConfig = {
-      val __obj = js.Dynamic.literal(password = password.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
+    inline def apply(password: String, username: String): PasswordTokenConfig = {
+      val __obj = js.Dynamic.literal(password = password.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
       __obj.asInstanceOf[PasswordTokenConfig]
     }
     
@@ -258,6 +280,8 @@ object mod {
       inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
       inline def setScope(value: String | js.Array[String]): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      
+      inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
       
       inline def setScopeVarargs(value: String*): Self = StObject.set(x, "scope", js.Array(value*))
       
@@ -299,15 +323,13 @@ object mod {
     
     var ciphers: js.UndefOr[String] = js.undefined
     
-    var downstreamRes: js.UndefOr[Any] = js.undefined
-    
     var events: js.UndefOr[Boolean] = js.undefined
     
     var gunzip: js.UndefOr[Boolean | force] = js.undefined
     
     var headers: js.UndefOr[StringDictionary[Any]] = js.undefined
     
-    var json: js.UndefOr[`true` | strict | force] = js.undefined
+    var json: js.UndefOr[Boolean | strict | force] = js.undefined
     
     var maxBytes: js.UndefOr[Double] = js.undefined
     
@@ -319,7 +341,7 @@ object mod {
         js.Function3[/* statusCode */ Double, /* location */ String, /* req */ Any, Unit]
       ] = js.undefined
     
-    var redirects: js.UndefOr[Double] = js.undefined
+    var redirects: js.UndefOr[`false` | Double] = js.undefined
     
     var rejectUnauthorized: js.UndefOr[Boolean] = js.undefined
     
@@ -357,10 +379,6 @@ object mod {
       
       inline def setCiphersUndefined: Self = StObject.set(x, "ciphers", js.undefined)
       
-      inline def setDownstreamRes(value: Any): Self = StObject.set(x, "downstreamRes", value.asInstanceOf[js.Any])
-      
-      inline def setDownstreamResUndefined: Self = StObject.set(x, "downstreamRes", js.undefined)
-      
       inline def setEvents(value: Boolean): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
       inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
@@ -373,7 +391,7 @@ object mod {
       
       inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      inline def setJson(value: `true` | strict | force): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
+      inline def setJson(value: Boolean | strict | force): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
       
       inline def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
       
@@ -393,7 +411,7 @@ object mod {
       
       inline def setRedirectedUndefined: Self = StObject.set(x, "redirected", js.undefined)
       
-      inline def setRedirects(value: Double): Self = StObject.set(x, "redirects", value.asInstanceOf[js.Any])
+      inline def setRedirects(value: `false` | Double): Self = StObject.set(x, "redirects", value.asInstanceOf[js.Any])
       
       inline def setRedirectsUndefined: Self = StObject.set(x, "redirects", js.undefined)
       

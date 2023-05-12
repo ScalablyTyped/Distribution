@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@react-aria/ssr" : "3.3.0"
+      "@react-aria/ssr" : "3.6.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@react-aria/ssr" : "3.3.0"
+      "@react-aria/ssr" : "3.6.0"
     }
   ],
   "compile-devDependencies" : [

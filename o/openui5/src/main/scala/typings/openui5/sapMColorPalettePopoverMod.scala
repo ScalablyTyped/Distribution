@@ -313,6 +313,8 @@ object sapMColorPalettePopoverMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:colorSelect colorSelect} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -325,6 +327,7 @@ object sapMColorPalettePopoverMod {
     
     /**
       * @SINCE 1.85
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:liveChange liveChange} to attached listeners.
       *

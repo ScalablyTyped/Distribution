@@ -72,7 +72,7 @@ object mod {
     */
   @JSImport("js-base64", "VERSION")
   @js.native
-  val VERSION_ : /* "3.7.2" */ String = js.native
+  val VERSION_ : /* "3.7.5" */ String = js.native
   
   /**
     * does what `window.atob` of web browsers do.
@@ -190,5 +190,5 @@ object mod {
   
   @JSImport("js-base64", "version")
   @js.native
-  val version: /* "3.7.2" */ String = js.native
+  val version: /* "3.7.5" */ String = js.native
 }

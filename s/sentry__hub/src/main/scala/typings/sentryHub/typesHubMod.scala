@@ -77,12 +77,6 @@ object typesHubMod {
     /** Returns the topmost scope layer in the order domain > local > process. */
     def getStackTop(): Layer = js.native
     
-    /**
-      * Returns if default PII should be sent to Sentry and propagated in ourgoing requests
-      * when Tracing is used.
-      */
-    def shouldSendDefaultPii(): Boolean = js.native
-    
     def startSession(context: SessionContext): Session = js.native
   }
   

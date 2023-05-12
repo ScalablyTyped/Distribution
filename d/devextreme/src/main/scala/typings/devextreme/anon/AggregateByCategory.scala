@@ -2,8 +2,8 @@ package typings.devextreme.anon
 
 import typings.devextreme.mod.DevExpress.common.charts.ChartsDataType
 import typings.devextreme.mod.DevExpress.common.charts.DiscreteAxisDivisionMode
-import typings.devextreme.mod.DevExpress.viz.ScaleBreak
-import typings.devextreme.mod.DevExpress.viz.VizTimeInterval
+import typings.devextreme.mod.DevExpress.common.charts.ScaleBreak
+import typings.devextreme.mod.DevExpress.common.charts.TimeIntervalConfig
 import typings.devextreme.mod.DevExpress.viz.dxRangeSelector.AxisScale
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -24,7 +24,7 @@ trait AggregateByCategory extends StObject {
   /**
     * Specifies the length of aggregation intervals in scale units. Applies only to the scale of the continuous or logarithmic type.
     */
-  var aggregationInterval: js.UndefOr[VizTimeInterval] = js.undefined
+  var aggregationInterval: js.UndefOr[TimeIntervalConfig] = js.undefined
   
   /**
     * Specifies whether to allow decimal values on the scale. When false, the scale contains integer values only.
@@ -89,12 +89,12 @@ trait AggregateByCategory extends StObject {
   /**
     * Specifies the maximum range that can be selected.
     */
-  var maxRange: js.UndefOr[VizTimeInterval] = js.undefined
+  var maxRange: js.UndefOr[TimeIntervalConfig] = js.undefined
   
   /**
     * Specifies the minimum range that can be selected.
     */
-  var minRange: js.UndefOr[VizTimeInterval] = js.undefined
+  var minRange: js.UndefOr[TimeIntervalConfig] = js.undefined
   
   /**
     * Specifies properties of the range selector&apos;s minor ticks.
@@ -109,7 +109,7 @@ trait AggregateByCategory extends StObject {
   /**
     * Specifies an interval between minor ticks.
     */
-  var minorTickInterval: js.UndefOr[VizTimeInterval] = js.undefined
+  var minorTickInterval: js.UndefOr[TimeIntervalConfig] = js.undefined
   
   /**
     * Specifies the height of the space reserved for the scale in pixels.
@@ -139,7 +139,7 @@ trait AggregateByCategory extends StObject {
   /**
     * Specifies an interval between axis ticks.
     */
-  var tickInterval: js.UndefOr[VizTimeInterval] = js.undefined
+  var tickInterval: js.UndefOr[TimeIntervalConfig] = js.undefined
   
   /**
     * Specifies the type of the scale.
@@ -179,7 +179,7 @@ object AggregateByCategory {
     
     inline def setAggregationGroupWidthUndefined: Self = StObject.set(x, "aggregationGroupWidth", js.undefined)
     
-    inline def setAggregationInterval(value: VizTimeInterval): Self = StObject.set(x, "aggregationInterval", value.asInstanceOf[js.Any])
+    inline def setAggregationInterval(value: TimeIntervalConfig): Self = StObject.set(x, "aggregationInterval", value.asInstanceOf[js.Any])
     
     inline def setAggregationIntervalUndefined: Self = StObject.set(x, "aggregationInterval", js.undefined)
     
@@ -237,11 +237,11 @@ object AggregateByCategory {
     
     inline def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
     
-    inline def setMaxRange(value: VizTimeInterval): Self = StObject.set(x, "maxRange", value.asInstanceOf[js.Any])
+    inline def setMaxRange(value: TimeIntervalConfig): Self = StObject.set(x, "maxRange", value.asInstanceOf[js.Any])
     
     inline def setMaxRangeUndefined: Self = StObject.set(x, "maxRange", js.undefined)
     
-    inline def setMinRange(value: VizTimeInterval): Self = StObject.set(x, "minRange", value.asInstanceOf[js.Any])
+    inline def setMinRange(value: TimeIntervalConfig): Self = StObject.set(x, "minRange", value.asInstanceOf[js.Any])
     
     inline def setMinRangeUndefined: Self = StObject.set(x, "minRange", js.undefined)
     
@@ -251,7 +251,7 @@ object AggregateByCategory {
     
     inline def setMinorTickCountUndefined: Self = StObject.set(x, "minorTickCount", js.undefined)
     
-    inline def setMinorTickInterval(value: VizTimeInterval): Self = StObject.set(x, "minorTickInterval", value.asInstanceOf[js.Any])
+    inline def setMinorTickInterval(value: TimeIntervalConfig): Self = StObject.set(x, "minorTickInterval", value.asInstanceOf[js.Any])
     
     inline def setMinorTickIntervalUndefined: Self = StObject.set(x, "minorTickInterval", js.undefined)
     
@@ -277,7 +277,7 @@ object AggregateByCategory {
     
     inline def setTick(value: OpacityWidth): Self = StObject.set(x, "tick", value.asInstanceOf[js.Any])
     
-    inline def setTickInterval(value: VizTimeInterval): Self = StObject.set(x, "tickInterval", value.asInstanceOf[js.Any])
+    inline def setTickInterval(value: TimeIntervalConfig): Self = StObject.set(x, "tickInterval", value.asInstanceOf[js.Any])
     
     inline def setTickIntervalUndefined: Self = StObject.set(x, "tickInterval", js.undefined)
     

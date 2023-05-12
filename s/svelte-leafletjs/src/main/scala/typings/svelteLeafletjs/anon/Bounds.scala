@@ -4,16 +4,16 @@ import typings.leaflet.mod.ImageOverlayOptions
 import typings.leaflet.mod.LatLngBoundsExpression
 import typings.leaflet.mod.LatLngTuple
 import typings.svelteLeafletjs.mod.PathEventKeys
-import typings.svelteLeafletjs.svelteLeafletjsStrings.onadd
-import typings.svelteLeafletjs.svelteLeafletjsStrings.onclick
-import typings.svelteLeafletjs.svelteLeafletjsStrings.oncontextmenu
-import typings.svelteLeafletjs.svelteLeafletjsStrings.ondblclick
-import typings.svelteLeafletjs.svelteLeafletjsStrings.onmousedown
-import typings.svelteLeafletjs.svelteLeafletjsStrings.onmouseout
-import typings.svelteLeafletjs.svelteLeafletjsStrings.onmouseover
-import typings.svelteLeafletjs.svelteLeafletjsStrings.onpopupclose
-import typings.svelteLeafletjs.svelteLeafletjsStrings.onpopupopen
-import typings.svelteLeafletjs.svelteLeafletjsStrings.onremove
+import typings.svelteLeafletjs.svelteLeafletjsStrings.add
+import typings.svelteLeafletjs.svelteLeafletjsStrings.click
+import typings.svelteLeafletjs.svelteLeafletjsStrings.contextmenu
+import typings.svelteLeafletjs.svelteLeafletjsStrings.dblclick
+import typings.svelteLeafletjs.svelteLeafletjsStrings.mousedown
+import typings.svelteLeafletjs.svelteLeafletjsStrings.mouseout
+import typings.svelteLeafletjs.svelteLeafletjsStrings.mouseover
+import typings.svelteLeafletjs.svelteLeafletjsStrings.popupclose
+import typings.svelteLeafletjs.svelteLeafletjsStrings.popupopen
+import typings.svelteLeafletjs.svelteLeafletjsStrings.remove
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -53,7 +53,7 @@ object Bounds {
     inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
     inline def setEventsVarargs(
-      value: (ondblclick | oncontextmenu | onremove | onmouseout | onadd | onclick | onmouseover | onpopupopen | onpopupclose | onmousedown)*
+      value: (click | dblclick | mousedown | mouseover | mouseout | contextmenu | add | remove | popupopen | popupclose)*
     ): Self = StObject.set(x, "events", js.Array(value*))
     
     inline def setGetImageOverlay(value: () => Bounds): Self = StObject.set(x, "getImageOverlay", js.Any.fromFunction0(value))

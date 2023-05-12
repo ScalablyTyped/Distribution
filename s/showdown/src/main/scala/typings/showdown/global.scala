@@ -33,7 +33,6 @@ object global {
     @JSGlobal("showdown.Converter")
     @js.native
     /**
-      * @constructor
       * @param converterOptions - Configuration object, describes which extensions to apply.
       */
     open class ConverterCls ()

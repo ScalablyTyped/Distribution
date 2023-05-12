@@ -54,6 +54,12 @@ object intercomWebStrings {
   inline def onUnreadCountChange: onUnreadCountChange = "onUnreadCountChange".asInstanceOf[onUnreadCountChange]
   
   @js.native
+  sealed trait reattach_activator
+    extends StObject
+       with IntercomCommand
+  inline def reattach_activator: reattach_activator = "reattach_activator".asInstanceOf[reattach_activator]
+  
+  @js.native
   sealed trait show
     extends StObject
        with IntercomCommand
@@ -76,6 +82,12 @@ object intercomWebStrings {
     extends StObject
        with IntercomCommand
   inline def showNewMessage: showNewMessage = "showNewMessage".asInstanceOf[showNewMessage]
+  
+  @js.native
+  sealed trait showSpace
+    extends StObject
+       with IntercomCommand
+  inline def showSpace: showSpace = "showSpace".asInstanceOf[showSpace]
   
   @js.native
   sealed trait shutdown

@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.MsScrollTranslation
+import typings.csstype.mod.Property.GridRowGap
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,11 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `440` extends StObject {
   
   var value: js.UndefOr[
-    MsScrollTranslation | (js.Array[
+    (GridRowGap[Double | String]) | (js.Array[
       (Extract[
-        js.UndefOr[MsScrollTranslation | js.Array[NonNullable[js.UndefOr[MsScrollTranslation]]]], 
+        js.UndefOr[
+          (GridRowGap[Double | String]) | (js.Array[NonNullable[js.UndefOr[GridRowGap[Double | String]]]])
+        ], 
         String
-      ]) | NonNullable[js.UndefOr[MsScrollTranslation]]
+      ]) | (NonNullable[js.UndefOr[GridRowGap[Double | String]]])
     ])
   ] = js.native
 }

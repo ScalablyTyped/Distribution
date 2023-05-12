@@ -1,6 +1,7 @@
 package typings.std.global
 
 import typings.std.ClipboardItemOptions
+import typings.std.PresentationStyle
 import typings.std.PromiseLike
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -29,6 +30,10 @@ open class ClipboardItem protected ()
   /* standard dom */
   /* CompleteClass */
   override def getType(`type`: java.lang.String): js.Promise[typings.std.Blob] = js.native
+  
+  /* standard dom */
+  /* CompleteClass */
+  override val presentationStyle: PresentationStyle = js.native
   
   /* standard dom */
   /* CompleteClass */

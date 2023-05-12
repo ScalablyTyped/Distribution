@@ -19,7 +19,7 @@ open class XrLightEstimation protected () extends EventHandler {
   /**
     * Create a new XrLightEstimation instance.
     *
-    * @param {XrManager} manager - WebXR Manager.
+    * @param {import('./xr-manager.js').XrManager} manager - WebXR Manager.
     * @hideconstructor
     */
   def this(manager: XrManager) = this()
@@ -55,7 +55,7 @@ open class XrLightEstimation protected () extends EventHandler {
   /* private */ var _lightProbeRequested: Any = js.native
   
   /**
-    * @type {XrManager}
+    * @type {import('./xr-manager.js').XrManager}
     * @private
     */
   /* private */ var _manager: Any = js.native

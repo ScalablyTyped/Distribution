@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListIndicesRequest extends StObject {
   
   /**
-    * The maximum number of data sources to return.
+    * The maximum number of indices to return.
     */
   var MaxResults: js.UndefOr[MaxResultsIntegerForListIndicesRequest] = js.undefined
   
   /**
-    * If the previous response was incomplete (because there is more data to retrieve), Amazon Kendra returns a pagination token in the response. You can use this pagination token to retrieve the next set of indexes (DataSourceSummaryItems). 
+    * If the previous response was incomplete (because there is more data to retrieve), Amazon Kendra returns a pagination token in the response. You can use this pagination token to retrieve the next set of indexes. 
     */
   var NextToken: js.UndefOr[typings.awsSdk.clientsKendraMod.NextToken] = js.undefined
 }

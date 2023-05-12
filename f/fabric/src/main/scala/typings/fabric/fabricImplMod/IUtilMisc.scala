@@ -1,8 +1,8 @@
 package typings.fabric.fabricImplMod
 
-import typings.fabric.anon.Angle
 import typings.fabric.anon.FlipX
 import typings.fabric.anon.FlipY
+import typings.fabric.anon.ScaleY
 import typings.fabric.anon.X
 import typings.std.CanvasRenderingContext2D
 import typings.std.HTMLCanvasElement
@@ -204,7 +204,7 @@ trait IUtilMisc extends StObject {
     * Decomposes standard 2x2 matrix into transform componentes
     * @param a transformMatrix
     */
-  def qrDecompose(a: js.Array[Double]): Angle = js.native
+  def qrDecompose(a: js.Array[Double]): ScaleY = js.native
   
   /**
     * Transforms radians to degrees.

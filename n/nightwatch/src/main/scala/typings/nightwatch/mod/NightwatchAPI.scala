@@ -20,6 +20,8 @@ trait NightwatchAPI
   def actions(): Actions = js.native
   def actions(options: Async): Actions = js.native
   
+  var appium: AppiumCommands = js.native
+  
   var assert: Assert = js.native
   
   var baseUrl: String = js.native

@@ -43,8 +43,6 @@ trait ServiceRequest
   
   var _occurrenceDateTime: js.UndefOr[Element] = js.undefined
   
-  var _patientInstruction: js.UndefOr[Element] = js.undefined
-  
   var _priority: js.UndefOr[Element] = js.undefined
   
   var _status: js.UndefOr[Element] = js.undefined
@@ -70,9 +68,14 @@ trait ServiceRequest
   var basedOn: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
-    * Only used if not implicit in the code found in ServiceRequest.code.  If the use case requires BodySite to be handled as a separate resource instead of an inline coded element (e.g. to identify and track separately)  then use the standard extension [procedure-targetBodyStructure](extension-procedure-targetbodystructure.html).
+    * Only used if not implicit in the code found in ServiceRequest.code.  If the use case requires BodySite to be handled as a separate resource instead of an inline coded element (e.g. to identify and track separately)  then use the standard extension [http://hl7.org/fhir/StructureDefinition/procedure-targetBodyStructure](http://hl7.org/fhir/extensions/StructureDefinition-procedure-targetBodyStructure.html).
     */
   var bodySite: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
+  
+  /**
+    * Anatomic location where the procedure should be performed. This is the target site.
+    */
+  var bodyStructure: js.UndefOr[Reference] = js.undefined
   
   /**
     * There may be multiple axis of categorization depending on the context or use case for retrieving or displaying the resource.  The level of granularity is defined by the category concepts in the value set.
@@ -82,7 +85,7 @@ trait ServiceRequest
   /**
     * Many laboratory and radiology procedure codes embed the specimen/organ system in the test order name, for example,  serum or serum/plasma glucose, or a chest x-ray. The specimen might not be recorded separately from the test code.
     */
-  var code: js.UndefOr[CodeableConcept] = js.undefined
+  var code: js.UndefOr[CodeableReference] = js.undefined
   
   /**
     * In general, only the code and timeframe will be present, though occasional additional qualifiers such as body site or even performer could be included to narrow the scope of the prohibition.  If the ServiceRequest.code and ServiceRequest.doNotPerform both contain negation, that will reinforce prohibition and should not have a double negative interpretation.
@@ -95,12 +98,17 @@ trait ServiceRequest
   var encounter: js.UndefOr[Reference] = js.undefined
   
   /**
-    * The identifier.type element is used to distinguish between the identifiers assigned by the orderer (known as the 'Placer' in HL7 v2) and the producer of the observations in response to the order (known as the 'Filler' in HL7 v2).  For further discussion and examples see the resource notes section below.
+    * The actual focus of a service request when it is not the subject of record representing something or someone associated with the subject such as a spouse, parent, fetus, or donor. The focus of a service request could also be an existing condition,  an intervention, the subject's diet,  another service request on the subject,  or a body structure such as tumor or implanted device.
+    */
+  var focus: js.UndefOr[js.Array[Reference]] = js.undefined
+  
+  /**
+    * The identifier.type element is used to distinguish between the identifiers assigned by the orderer (known as the 'Placer' in HL7 V2) and the producer of the observations in response to the order (known as the 'Filler' in HL7 V2).  For further discussion and examples see the resource notes section below.
     */
   var identifier: js.UndefOr[js.Array[Identifier]] = js.undefined
   
   /**
-    * Note: This is a business identifier, not a resource identifier (see [discussion](resource.html#identifiers)).  It is best practice for the identifier to only appear on a single resource instance, however business practices may occasionally dictate that multiple resource instances with the same identifier can exist - possibly even with different resource types.  For example, multiple Patient and a Person resource instance might share the same social insurance number.
+    * The PlanDefinition resource is used to describe series, sequences, or groups of actions to be taken, while the ActivityDefinition resource is used to define each specific step or activity to be performed. More information can be found in the [Boundaries and Relationships](plandefinition.html#12.23.2) section for PlanDefinition.
     */
   var instantiatesCanonical: js.UndefOr[js.Array[String]] = js.undefined
   
@@ -147,15 +155,15 @@ trait ServiceRequest
   /**
     * For information from the medical record intended to support the delivery of the requested services, use the `supportingInformation` element.
     */
-  var orderDetail: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
+  var orderDetail: js.UndefOr[js.Array[ServiceRequestOrderDetail]] = js.undefined
   
   /**
     * Instructions in terms that are understood by the patient or consumer.
     */
-  var patientInstruction: js.UndefOr[String] = js.undefined
+  var patientInstruction: js.UndefOr[js.Array[ServiceRequestPatientInstruction]] = js.undefined
   
   /**
-    * If multiple performers are present, it is interpreted as a list of *alternative* performers without any preference regardless of order.  If order of preference is needed use the [request-performerOrder extension](extension-request-performerorder.html).  Use CareTeam to represent a group of performers (for example, Practitioner A *and* Practitioner B).
+    * If multiple performers are present, it is interpreted as a list of *alternative* performers without any preference regardless of order.  If order of preference is needed use the [http://hl7.org/fhir/StructureDefinition/request-performerOrder](http://hl7.org/fhir/extensions/StructureDefinition-request-performerOrder.html).  Use CareTeam to represent a group of performers (for example, Practitioner A *and* Practitioner B).
     */
   var performer: js.UndefOr[js.Array[Reference]] = js.undefined
   
@@ -216,12 +224,12 @@ trait ServiceRequest
   val resourceType_ServiceRequest: typings.fhir.fhirStrings.ServiceRequest
   
   /**
-    * Many diagnostic procedures need a specimen, but the request itself is not actually about the specimen. This element is for when the diagnostic is requested on already existing specimens and the request points to the specimen it applies to.    Conversely, if the request is entered first with an unknown specimen, then the [Specimen](specimen.html) resource points to the ServiceRequest.
+    * The purpose of the ServiceRequest.specimen is to reflect the actual specimen that the requested test/procedure is asked to be performed on, whether the lab already has it or not.  References to specimens for purposes other than to perform a test/procedure on should be made using the ServiceRequest.supportingInfo or the Specimen.parent where the Specimen.parent would enable descendency and ServiceRequest.supportingInfo a general reference for context.
     */
   var specimen: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
-    * The status is generally fully in the control of the requester - they determine whether the order is draft or active and, after it has been activated, competed, cancelled or suspended. States relating to the activities of the performer are reflected on either the corresponding event (see [Event Pattern](event.html) for general discussion) or using the [Task](task.html) resource.
+    * The status is generally fully in the control of the requester - they determine whether the order is draft or active and, after it has been activated, competed, revoked or placed on-hold. States relating to the activities of the performer are reflected on either the corresponding event (see [Event Pattern](event.html) for general discussion) or using the [Task](task.html) resource.
     */
   var status: draft | active | `on-hold` | revoked | completed | `entered-in-error` | unknown
   
@@ -233,7 +241,7 @@ trait ServiceRequest
   /**
     * To represent information about how the services are to be delivered use the `instructions` element.
     */
-  var supportingInfo: js.UndefOr[js.Array[Reference]] = js.undefined
+  var supportingInfo: js.UndefOr[js.Array[CodeableReference]] = js.undefined
 }
 object ServiceRequest {
   
@@ -273,13 +281,17 @@ object ServiceRequest {
     
     inline def setBodySiteVarargs(value: CodeableConcept*): Self = StObject.set(x, "bodySite", js.Array(value*))
     
+    inline def setBodyStructure(value: Reference): Self = StObject.set(x, "bodyStructure", value.asInstanceOf[js.Any])
+    
+    inline def setBodyStructureUndefined: Self = StObject.set(x, "bodyStructure", js.undefined)
+    
     inline def setCategory(value: js.Array[CodeableConcept]): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
     inline def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
     
     inline def setCategoryVarargs(value: CodeableConcept*): Self = StObject.set(x, "category", js.Array(value*))
     
-    inline def setCode(value: CodeableConcept): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: CodeableReference): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
@@ -290,6 +302,12 @@ object ServiceRequest {
     inline def setEncounter(value: Reference): Self = StObject.set(x, "encounter", value.asInstanceOf[js.Any])
     
     inline def setEncounterUndefined: Self = StObject.set(x, "encounter", js.undefined)
+    
+    inline def setFocus(value: js.Array[Reference]): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
+    
+    inline def setFocusUndefined: Self = StObject.set(x, "focus", js.undefined)
+    
+    inline def setFocusVarargs(value: Reference*): Self = StObject.set(x, "focus", js.Array(value*))
     
     inline def setIdentifier(value: js.Array[Identifier]): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
@@ -343,15 +361,17 @@ object ServiceRequest {
     
     inline def setOccurrenceTimingUndefined: Self = StObject.set(x, "occurrenceTiming", js.undefined)
     
-    inline def setOrderDetail(value: js.Array[CodeableConcept]): Self = StObject.set(x, "orderDetail", value.asInstanceOf[js.Any])
+    inline def setOrderDetail(value: js.Array[ServiceRequestOrderDetail]): Self = StObject.set(x, "orderDetail", value.asInstanceOf[js.Any])
     
     inline def setOrderDetailUndefined: Self = StObject.set(x, "orderDetail", js.undefined)
     
-    inline def setOrderDetailVarargs(value: CodeableConcept*): Self = StObject.set(x, "orderDetail", js.Array(value*))
+    inline def setOrderDetailVarargs(value: ServiceRequestOrderDetail*): Self = StObject.set(x, "orderDetail", js.Array(value*))
     
-    inline def setPatientInstruction(value: String): Self = StObject.set(x, "patientInstruction", value.asInstanceOf[js.Any])
+    inline def setPatientInstruction(value: js.Array[ServiceRequestPatientInstruction]): Self = StObject.set(x, "patientInstruction", value.asInstanceOf[js.Any])
     
     inline def setPatientInstructionUndefined: Self = StObject.set(x, "patientInstruction", js.undefined)
+    
+    inline def setPatientInstructionVarargs(value: ServiceRequestPatientInstruction*): Self = StObject.set(x, "patientInstruction", js.Array(value*))
     
     inline def setPerformer(value: js.Array[Reference]): Self = StObject.set(x, "performer", value.asInstanceOf[js.Any])
     
@@ -417,11 +437,11 @@ object ServiceRequest {
     
     inline def setSubject(value: Reference): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     
-    inline def setSupportingInfo(value: js.Array[Reference]): Self = StObject.set(x, "supportingInfo", value.asInstanceOf[js.Any])
+    inline def setSupportingInfo(value: js.Array[CodeableReference]): Self = StObject.set(x, "supportingInfo", value.asInstanceOf[js.Any])
     
     inline def setSupportingInfoUndefined: Self = StObject.set(x, "supportingInfo", js.undefined)
     
-    inline def setSupportingInfoVarargs(value: Reference*): Self = StObject.set(x, "supportingInfo", js.Array(value*))
+    inline def setSupportingInfoVarargs(value: CodeableReference*): Self = StObject.set(x, "supportingInfo", js.Array(value*))
     
     inline def set_asNeededBoolean(value: Element): Self = StObject.set(x, "_asNeededBoolean", value.asInstanceOf[js.Any])
     
@@ -454,10 +474,6 @@ object ServiceRequest {
     inline def set_occurrenceDateTime(value: Element): Self = StObject.set(x, "_occurrenceDateTime", value.asInstanceOf[js.Any])
     
     inline def set_occurrenceDateTimeUndefined: Self = StObject.set(x, "_occurrenceDateTime", js.undefined)
-    
-    inline def set_patientInstruction(value: Element): Self = StObject.set(x, "_patientInstruction", value.asInstanceOf[js.Any])
-    
-    inline def set_patientInstructionUndefined: Self = StObject.set(x, "_patientInstruction", js.undefined)
     
     inline def set_priority(value: Element): Self = StObject.set(x, "_priority", value.asInstanceOf[js.Any])
     

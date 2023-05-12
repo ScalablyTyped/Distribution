@@ -16,7 +16,7 @@ object Command {
   inline def create(title: String, command: String, args: Any*): typings.vscodeLanguageserverTypes.mod.Command = (^.asInstanceOf[js.Dynamic].applyDynamic("create")((scala.List(title.asInstanceOf[js.Any], command.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[typings.vscodeLanguageserverTypes.mod.Command]
   
   /**
-    * Checks whether the given literal conforms to the [Command](#Command) interface.
+    * Checks whether the given literal conforms to the {@link Command} interface.
     */
   inline def is(value: Any): /* is vscode-languageserver-types.vscode-languageserver-types.Command */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.Command */ Boolean]
 }

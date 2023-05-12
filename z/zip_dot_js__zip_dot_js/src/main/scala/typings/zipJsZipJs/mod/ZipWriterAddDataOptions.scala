@@ -21,7 +21,7 @@ trait ZipWriterAddDataOptions
   
   /**
     * `true` if the entry is a directory.
-    * 
+    *
     * @defaultValue false
     */
   var directory: js.UndefOr[Boolean] = js.undefined

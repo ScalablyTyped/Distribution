@@ -8,29 +8,29 @@ trait Dosage
   extends StObject
      with BackboneType {
   
-  var _asNeededBoolean: js.UndefOr[Element] = js.undefined
+  var _asNeeded: js.UndefOr[Element] = js.undefined
   
   var _patientInstruction: js.UndefOr[Element] = js.undefined
   
   var _text: js.UndefOr[Element] = js.undefined
   
   /**
-    * Information about administration or preparation of the medication (e.g. "infuse as rapidly as possibly via intraperitoneal port" or "immediately following drug x") should be populated in dosage.text.
+    * Information about administration or preparation of the medication (e.g. "infuse as rapidly as possibly via intraperitoneal port" or take "immediately following drug x") should be populated in dosage.text.
     */
   var additionalInstruction: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
   /**
-    * Can express "as needed" without a reason by setting the Boolean = True.  In this case the CodeableConcept is not populated.  Or you can express "as needed" with a reason by including the CodeableConcept.  In this case the Boolean is assumed to be True.  If you set the Boolean to False, then the dose is given according to the schedule and is not "prn" or "as needed".
+    * Can express "as needed" without a reason by setting the Boolean = True.  In this case the CodeableConcept is not populated.
     */
-  var asNeededBoolean: js.UndefOr[Boolean] = js.undefined
+  var asNeeded: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Can express "as needed" without a reason by setting the Boolean = True.  In this case the CodeableConcept is not populated.  Or you can express "as needed" with a reason by including the CodeableConcept.  In this case the Boolean is assumed to be True.  If you set the Boolean to False, then the dose is given according to the schedule and is not "prn" or "as needed".
+    * Can express "as needed" with a reason by including the CodeableConcept.  In this case the Boolean is assumed to be False, then the dose is given according to the schedule and is not "prn" or "as needed".
     */
-  var asNeededCodeableConcept: js.UndefOr[CodeableConcept] = js.undefined
+  var asNeededFor: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
   /**
-    * The amount of medication administered.
+    * Depending on the resource,this is the amount of medication administered, to  be administered or typical amount to be administered.
     */
   var doseAndRate: js.UndefOr[js.Array[DosageDoseAndRate]] = js.undefined
   
@@ -47,7 +47,7 @@ trait Dosage
   /**
     * This is intended for use as an adjunct to the dosage when there is an upper cap.  For example "2 tablets every 4 hours to a maximum of 8/day".
     */
-  var maxDosePerPeriod: js.UndefOr[Ratio] = js.undefined
+  var maxDosePerPeriod: js.UndefOr[js.Array[Ratio]] = js.undefined
   
   /**
     * Terminologies used often pre-coordinate this term with the route and or form of administration.
@@ -70,7 +70,7 @@ trait Dosage
   var sequence: js.UndefOr[Double] = js.undefined
   
   /**
-    * If the use case requires attributes from the BodySite resource (e.g. to identify and track separately) then use the standard extension [bodySite](extension-bodysite.html).  May be a summary code, or a reference to a very precise definition of the location, or both.
+    * If the use case requires attributes from the BodySite resource (e.g. to identify and track separately) then use the standard extension [http://hl7.org/fhir/StructureDefinition/bodySite](http://hl7.org/fhir/extensions/StructureDefinition-bodySite.html).  May be a summary code, or a reference to a very precise definition of the location, or both.
     */
   var site: js.UndefOr[CodeableConcept] = js.undefined
   
@@ -100,13 +100,15 @@ object Dosage {
     
     inline def setAdditionalInstructionVarargs(value: CodeableConcept*): Self = StObject.set(x, "additionalInstruction", js.Array(value*))
     
-    inline def setAsNeededBoolean(value: Boolean): Self = StObject.set(x, "asNeededBoolean", value.asInstanceOf[js.Any])
+    inline def setAsNeeded(value: Boolean): Self = StObject.set(x, "asNeeded", value.asInstanceOf[js.Any])
     
-    inline def setAsNeededBooleanUndefined: Self = StObject.set(x, "asNeededBoolean", js.undefined)
+    inline def setAsNeededFor(value: js.Array[CodeableConcept]): Self = StObject.set(x, "asNeededFor", value.asInstanceOf[js.Any])
     
-    inline def setAsNeededCodeableConcept(value: CodeableConcept): Self = StObject.set(x, "asNeededCodeableConcept", value.asInstanceOf[js.Any])
+    inline def setAsNeededForUndefined: Self = StObject.set(x, "asNeededFor", js.undefined)
     
-    inline def setAsNeededCodeableConceptUndefined: Self = StObject.set(x, "asNeededCodeableConcept", js.undefined)
+    inline def setAsNeededForVarargs(value: CodeableConcept*): Self = StObject.set(x, "asNeededFor", js.Array(value*))
+    
+    inline def setAsNeededUndefined: Self = StObject.set(x, "asNeeded", js.undefined)
     
     inline def setDoseAndRate(value: js.Array[DosageDoseAndRate]): Self = StObject.set(x, "doseAndRate", value.asInstanceOf[js.Any])
     
@@ -122,9 +124,11 @@ object Dosage {
     
     inline def setMaxDosePerLifetimeUndefined: Self = StObject.set(x, "maxDosePerLifetime", js.undefined)
     
-    inline def setMaxDosePerPeriod(value: Ratio): Self = StObject.set(x, "maxDosePerPeriod", value.asInstanceOf[js.Any])
+    inline def setMaxDosePerPeriod(value: js.Array[Ratio]): Self = StObject.set(x, "maxDosePerPeriod", value.asInstanceOf[js.Any])
     
     inline def setMaxDosePerPeriodUndefined: Self = StObject.set(x, "maxDosePerPeriod", js.undefined)
+    
+    inline def setMaxDosePerPeriodVarargs(value: Ratio*): Self = StObject.set(x, "maxDosePerPeriod", js.Array(value*))
     
     inline def setMethod(value: CodeableConcept): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
@@ -154,9 +158,9 @@ object Dosage {
     
     inline def setTimingUndefined: Self = StObject.set(x, "timing", js.undefined)
     
-    inline def set_asNeededBoolean(value: Element): Self = StObject.set(x, "_asNeededBoolean", value.asInstanceOf[js.Any])
+    inline def set_asNeeded(value: Element): Self = StObject.set(x, "_asNeeded", value.asInstanceOf[js.Any])
     
-    inline def set_asNeededBooleanUndefined: Self = StObject.set(x, "_asNeededBoolean", js.undefined)
+    inline def set_asNeededUndefined: Self = StObject.set(x, "_asNeeded", js.undefined)
     
     inline def set_patientInstruction(value: Element): Self = StObject.set(x, "_patientInstruction", value.asInstanceOf[js.Any])
     

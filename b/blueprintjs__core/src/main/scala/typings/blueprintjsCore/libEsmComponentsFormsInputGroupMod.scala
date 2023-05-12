@@ -1,5 +1,6 @@
 package typings.blueprintjsCore
 
+import typings.blueprintjsCore.blueprintjsCoreStrings._empty
 import typings.blueprintjsCore.blueprintjsCoreStrings.`additions removals`
 import typings.blueprintjsCore.blueprintjsCoreStrings.`additions text`
 import typings.blueprintjsCore.blueprintjsCoreStrings.`inline`
@@ -7,8 +8,10 @@ import typings.blueprintjsCore.blueprintjsCoreStrings.`removals additions`
 import typings.blueprintjsCore.blueprintjsCoreStrings.`removals text`
 import typings.blueprintjsCore.blueprintjsCoreStrings.`text additions`
 import typings.blueprintjsCore.blueprintjsCoreStrings.`text removals`
+import typings.blueprintjsCore.blueprintjsCoreStrings.`use-credentials`
 import typings.blueprintjsCore.blueprintjsCoreStrings.additions
 import typings.blueprintjsCore.blueprintjsCoreStrings.all
+import typings.blueprintjsCore.blueprintjsCoreStrings.anonymous
 import typings.blueprintjsCore.blueprintjsCoreStrings.ascending
 import typings.blueprintjsCore.blueprintjsCoreStrings.assertive
 import typings.blueprintjsCore.blueprintjsCoreStrings.both
@@ -64,7 +67,7 @@ import typings.blueprintjsCore.libEsmCommonPropsMod.IControlledProps
 import typings.blueprintjsCore.libEsmCommonPropsMod.IIntentProps
 import typings.blueprintjsCore.libEsmCommonPropsMod.IProps
 import typings.blueprintjsCore.libEsmCommonPropsMod.MaybeElement
-import typings.blueprintjsIcons.libEsmGenerated16pxBlueprintIcons16Mod.BlueprintIcons16Id
+import typings.blueprintjsIcons.libEsmGeneratedIcons16pxBlueprintIcons16Mod.BlueprintIcons16Id
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
@@ -105,6 +108,7 @@ import typings.react.mod.WheelEvent
 import typings.react.mod.WheelEventHandler
 import typings.react.mod.global.JSX.Element
 import typings.std.Event
+import typings.std.FormData
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -166,7 +170,8 @@ object libEsmComponentsFormsInputGroupMod {
     var asyncControl: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * Whether the input is non-interactive.
+      * Whether the input is disabled.
+      *
       * Note that `rightElement` must be disabled separately; this prop will not affect it.
       *
       * @default false
@@ -185,8 +190,8 @@ object libEsmComponentsFormsInputGroupMod {
     var large: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * Element to render on the left side of input.  This prop is mutually exclusive
-      * with `leftIcon`.
+      * Element to render on the left side of input.
+      * This prop is mutually exclusive with `leftIcon`.
       */
     var leftElement: js.UndefOr[Element] = js.undefined
     
@@ -199,6 +204,16 @@ object libEsmComponentsFormsInputGroupMod {
     
     /** Placeholder text in the absence of any value. */
     var placeholder: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Whether the input is read-only.
+      *
+      * Note that `rightElement` must be disabled or made read-only separately;
+      * this prop will not affect it.
+      *
+      * @default false
+      */
+    var readOnly: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Element to render on right side of input.
@@ -267,6 +282,10 @@ object libEsmComponentsFormsInputGroupMod {
       
       inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
       
+      inline def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+      
+      inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
+      
       inline def setRightElement(value: Element): Self = StObject.set(x, "rightElement", value.asInstanceOf[js.Any])
       
       inline def setRightElementUndefined: Self = StObject.set(x, "rightElement", js.undefined)
@@ -285,10 +304,40 @@ object libEsmComponentsFormsInputGroupMod {
     }
   }
   
+  type IInputGroupProps2 = InputGroupProps2
+  
+  trait IInputGroupState extends StObject {
+    
+    var leftElementWidth: js.UndefOr[Double] = js.undefined
+    
+    var rightElementWidth: js.UndefOr[Double] = js.undefined
+  }
+  object IInputGroupState {
+    
+    inline def apply(): IInputGroupState = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[IInputGroupState]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IInputGroupState] (val x: Self) extends AnyVal {
+      
+      inline def setLeftElementWidth(value: Double): Self = StObject.set(x, "leftElementWidth", value.asInstanceOf[js.Any])
+      
+      inline def setLeftElementWidthUndefined: Self = StObject.set(x, "leftElementWidth", js.undefined)
+      
+      inline def setRightElementWidth(value: Double): Self = StObject.set(x, "rightElementWidth", value.asInstanceOf[js.Any])
+      
+      inline def setRightElementWidthUndefined: Self = StObject.set(x, "rightElementWidth", js.undefined)
+    }
+  }
+  
+  type InputGroupProps = IInputGroupProps
+  
   /* Inlined parent std.Omit<@blueprintjs/core.@blueprintjs/core/lib/esm/common/props.HTMLInputProps, keyof @blueprintjs/core.@blueprintjs/core/lib/esm/common/props.ControlledProps2> */
   /* Inlined parent @blueprintjs/core.@blueprintjs/core/lib/esm/common/props.ControlledProps2 */
   /* Inlined parent @blueprintjs/core.@blueprintjs/core/lib/esm/components/forms/inputSharedProps.InputSharedProps */
-  trait IInputGroupProps2 extends StObject {
+  trait InputGroupProps2 extends StObject {
     
     var about: js.UndefOr[String] = js.undefined
     
@@ -426,11 +475,13 @@ object libEsmComponentsFormsInputGroupMod {
     
     var color: js.UndefOr[String] = js.undefined
     
+    var content: js.UndefOr[String] = js.undefined
+    
     var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
     var contextMenu: js.UndefOr[String] = js.undefined
     
-    var crossOrigin: js.UndefOr[String] = js.undefined
+    var crossOrigin: js.UndefOr[anonymous | `use-credentials` | _empty] = js.undefined
     
     var dangerouslySetInnerHTML: js.UndefOr[Html] = js.undefined
     
@@ -464,7 +515,7 @@ object libEsmComponentsFormsInputGroupMod {
     
     var form: js.UndefOr[String] = js.undefined
     
-    var formAction: js.UndefOr[String] = js.undefined
+    var formAction: js.UndefOr[String | (js.Function1[/* formData */ FormData, Unit])] = js.undefined
     
     var formEncType: js.UndefOr[String] = js.undefined
     
@@ -481,6 +532,11 @@ object libEsmComponentsFormsInputGroupMod {
     var id: js.UndefOr[String] = js.undefined
     
     var inlist: js.UndefOr[Any] = js.undefined
+    
+    /**
+      * Class name to apply to the `<input>` element (not the InputGroup container).
+      */
+    var inputClassName: js.UndefOr[String] = js.undefined
     
     var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
     
@@ -716,11 +772,15 @@ object libEsmComponentsFormsInputGroupMod {
     
     var readOnly: js.UndefOr[Boolean] = js.undefined
     
+    var rel: js.UndefOr[String] = js.undefined
+    
     var required: js.UndefOr[Boolean] = js.undefined
     
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
+    
+    var rev: js.UndefOr[String] = js.undefined
     
     /**
       * Element to render on right side of input.
@@ -762,7 +822,7 @@ object libEsmComponentsFormsInputGroupMod {
       * @default "div"
       */
     var tagName: js.UndefOr[
-        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.blueprintjsCore.blueprintjsCoreStrings.a, typings.blueprintjsCore.blueprintjsCoreStrings.abbr, typings.blueprintjsCore.blueprintjsCoreStrings.address */ Any
+        /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177, starting with typings.blueprintjsCore.blueprintjsCoreStrings.a, typings.blueprintjsCore.blueprintjsCoreStrings.abbr, typings.blueprintjsCore.blueprintjsCoreStrings.address */ Any
       ] = js.undefined
     
     var title: js.UndefOr[String] = js.undefined
@@ -787,15 +847,15 @@ object libEsmComponentsFormsInputGroupMod {
     
     var width: js.UndefOr[Double | String] = js.undefined
   }
-  object IInputGroupProps2 {
+  object InputGroupProps2 {
     
-    inline def apply(): IInputGroupProps2 = {
+    inline def apply(): InputGroupProps2 = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[IInputGroupProps2]
+      __obj.asInstanceOf[InputGroupProps2]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: IInputGroupProps2] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: InputGroupProps2] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -1051,15 +1111,19 @@ object libEsmComponentsFormsInputGroupMod {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
       inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
       inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
       inline def setContextMenuUndefined: Self = StObject.set(x, "contextMenu", js.undefined)
       
-      inline def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+      inline def setCrossOrigin(value: anonymous | `use-credentials` | _empty): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
       
       inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
       
@@ -1101,7 +1165,9 @@ object libEsmComponentsFormsInputGroupMod {
       
       inline def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
       
-      inline def setFormAction(value: String): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+      inline def setFormAction(value: String | (js.Function1[/* formData */ FormData, Unit])): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+      
+      inline def setFormActionFunction1(value: /* formData */ FormData => Unit): Self = StObject.set(x, "formAction", js.Any.fromFunction1(value))
       
       inline def setFormActionUndefined: Self = StObject.set(x, "formAction", js.undefined)
       
@@ -1138,6 +1204,10 @@ object libEsmComponentsFormsInputGroupMod {
       inline def setInlist(value: Any): Self = StObject.set(x, "inlist", value.asInstanceOf[js.Any])
       
       inline def setInlistUndefined: Self = StObject.set(x, "inlist", js.undefined)
+      
+      inline def setInputClassName(value: String): Self = StObject.set(x, "inputClassName", value.asInstanceOf[js.Any])
+      
+      inline def setInputClassNameUndefined: Self = StObject.set(x, "inputClassName", js.undefined)
       
       inline def setInputMode(value: none | text | tel | url | email | numeric | decimal | search): Self = StObject.set(x, "inputMode", value.asInstanceOf[js.Any])
       
@@ -1573,6 +1643,10 @@ object libEsmComponentsFormsInputGroupMod {
       
       inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
       
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      
+      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+      
       inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
       
       inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
@@ -1584,6 +1658,10 @@ object libEsmComponentsFormsInputGroupMod {
       inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+      
+      inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+      
+      inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
       
       inline def setRightElement(value: Element): Self = StObject.set(x, "rightElement", value.asInstanceOf[js.Any])
       
@@ -1642,7 +1720,7 @@ object libEsmComponentsFormsInputGroupMod {
       inline def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
       
       inline def setTagName(
-        value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.blueprintjsCore.blueprintjsCoreStrings.a, typings.blueprintjsCore.blueprintjsCoreStrings.abbr, typings.blueprintjsCore.blueprintjsCoreStrings.address */ Any
+        value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177, starting with typings.blueprintjsCore.blueprintjsCoreStrings.a, typings.blueprintjsCore.blueprintjsCoreStrings.abbr, typings.blueprintjsCore.blueprintjsCoreStrings.address */ Any
       ): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
       
       inline def setTagNameUndefined: Self = StObject.set(x, "tagName", js.undefined)
@@ -1680,34 +1758,4 @@ object libEsmComponentsFormsInputGroupMod {
       inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
-  
-  trait IInputGroupState extends StObject {
-    
-    var leftElementWidth: js.UndefOr[Double] = js.undefined
-    
-    var rightElementWidth: js.UndefOr[Double] = js.undefined
-  }
-  object IInputGroupState {
-    
-    inline def apply(): IInputGroupState = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[IInputGroupState]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: IInputGroupState] (val x: Self) extends AnyVal {
-      
-      inline def setLeftElementWidth(value: Double): Self = StObject.set(x, "leftElementWidth", value.asInstanceOf[js.Any])
-      
-      inline def setLeftElementWidthUndefined: Self = StObject.set(x, "leftElementWidth", js.undefined)
-      
-      inline def setRightElementWidth(value: Double): Self = StObject.set(x, "rightElementWidth", value.asInstanceOf[js.Any])
-      
-      inline def setRightElementWidthUndefined: Self = StObject.set(x, "rightElementWidth", js.undefined)
-    }
-  }
-  
-  type InputGroupProps = IInputGroupProps
-  
-  type InputGroupProps2 = IInputGroupProps2
 }

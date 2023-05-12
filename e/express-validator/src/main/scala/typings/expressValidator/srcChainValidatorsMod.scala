@@ -1,20 +1,26 @@
 package typings.expressValidator
 
-import typings.expressValidator.anon.CheckFalsy
 import typings.expressValidator.anon.Max
 import typings.expressValidator.anon.Strict
+import typings.expressValidator.expressValidatorStrings.`null`
+import typings.expressValidator.expressValidatorStrings.falsy
+import typings.expressValidator.expressValidatorStrings.undefined
 import typings.expressValidator.srcBaseMod.CustomValidator
-import typings.expressValidator.srcBaseMod.DynamicMessageCreator
+import typings.expressValidator.srcBaseMod.ErrorMessage
+import typings.expressValidator.srcBaseMod.FieldMessageFactory
 import typings.expressValidator.srcOptionsMod.AlphaLocale
 import typings.expressValidator.srcOptionsMod.AlphanumericLocale
 import typings.expressValidator.srcOptionsMod.ContainsOptions
 import typings.expressValidator.srcOptionsMod.HashAlgorithm
 import typings.expressValidator.srcOptionsMod.IPVersion
 import typings.expressValidator.srcOptionsMod.IdentityCardLocale
+import typings.expressValidator.srcOptionsMod.IsAfterOptions
 import typings.expressValidator.srcOptionsMod.IsAlphaOptions
 import typings.expressValidator.srcOptionsMod.IsAlphanumericOptions
+import typings.expressValidator.srcOptionsMod.IsBase32Options
 import typings.expressValidator.srcOptionsMod.IsBase64Options
 import typings.expressValidator.srcOptionsMod.IsBooleanOptions
+import typings.expressValidator.srcOptionsMod.IsCreditCard
 import typings.expressValidator.srcOptionsMod.IsCurrencyOptions
 import typings.expressValidator.srcOptionsMod.IsDateOptions
 import typings.expressValidator.srcOptionsMod.IsDecimalOptions
@@ -23,6 +29,7 @@ import typings.expressValidator.srcOptionsMod.IsEmptyOptions
 import typings.expressValidator.srcOptionsMod.IsFQDNOptions
 import typings.expressValidator.srcOptionsMod.IsFloatOptions
 import typings.expressValidator.srcOptionsMod.IsIMEIOptions
+import typings.expressValidator.srcOptionsMod.IsISBNOptions
 import typings.expressValidator.srcOptionsMod.IsISO8601Options
 import typings.expressValidator.srcOptionsMod.IsISSNOptions
 import typings.expressValidator.srcOptionsMod.IsIntOptions
@@ -33,6 +40,7 @@ import typings.expressValidator.srcOptionsMod.IsMACAddressOptions
 import typings.expressValidator.srcOptionsMod.IsMobilePhoneOptions
 import typings.expressValidator.srcOptionsMod.IsNumericOptions
 import typings.expressValidator.srcOptionsMod.IsStrongPasswordOptions
+import typings.expressValidator.srcOptionsMod.IsTimeOptions
 import typings.expressValidator.srcOptionsMod.IsURLOptions
 import typings.expressValidator.srcOptionsMod.MinMaxExtendedOptions
 import typings.expressValidator.srcOptionsMod.MinMaxOptions
@@ -48,21 +56,87 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object srcChainValidatorsMod {
   
+  trait ExistsOptions extends StObject {
+    
+    /**
+      * Whether a field whose value is falsy should be considered non-existent.
+      * @default false
+      * @deprecated  Use `values` instead
+      */
+    var checkFalsy: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Whether a field whose value is `null` or `undefined` should be considered non-existent.
+      * @default false
+      * @deprecated  Use `values` instead
+      */
+    var checkNull: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Defines which kind of value makes a field _NOT_ exist.
+      *
+      * - `undefined`: only `undefined` values; equivalent to `value !== undefined`
+      * - `null`: only `undefined` and `null` values; equivalent to `value != null`
+      * - `falsy`: all falsy values; equivalent to `!!value`
+      *
+      * @default 'undefined'
+      */
+    var values: js.UndefOr[undefined | `null` | falsy] = js.undefined
+  }
+  object ExistsOptions {
+    
+    inline def apply(): ExistsOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ExistsOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExistsOptions] (val x: Self) extends AnyVal {
+      
+      inline def setCheckFalsy(value: Boolean): Self = StObject.set(x, "checkFalsy", value.asInstanceOf[js.Any])
+      
+      inline def setCheckFalsyUndefined: Self = StObject.set(x, "checkFalsy", js.undefined)
+      
+      inline def setCheckNull(value: Boolean): Self = StObject.set(x, "checkNull", value.asInstanceOf[js.Any])
+      
+      inline def setCheckNullUndefined: Self = StObject.set(x, "checkNull", js.undefined)
+      
+      inline def setValues(value: undefined | `null` | falsy): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      
+      inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    }
+  }
+  
   @js.native
   trait Validators[Return] extends StObject {
     
     def contains(elem: Any): Return = js.native
     def contains(elem: Any, options: ContainsOptions): Return = js.native
     
+    /**
+      * Adds a custom validator to the validation chain.
+      *
+      * @param validator the custom validator
+      * @returns the current validation chain
+      */
     def custom(validator: CustomValidator): Return = js.native
     
     def equals(comparison: String): Return = js.native
     
+    /**
+      * Adds a validator to check that the fields exist in the request.
+      * By default, this means that the value of the fields may not be `undefined`;
+      * all other values are acceptable.
+      *
+      * @param options
+      * @returns the current validation chain
+      */
     def exists(): Return = js.native
-    def exists(options: CheckFalsy): Return = js.native
+    def exists(options: ExistsOptions): Return = js.native
     
     def isAfter(): Return = js.native
-    def isAfter(date: String): Return = js.native
+    def isAfter(dateOrOptions: String): Return = js.native
+    def isAfter(dateOrOptions: IsAfterOptions): Return = js.native
     
     def isAlpha(): Return = js.native
     def isAlpha(locale: Unit, options: IsAlphaOptions): Return = js.native
@@ -74,6 +148,12 @@ object srcChainValidatorsMod {
     def isAlphanumeric(locale: AlphanumericLocale): Return = js.native
     def isAlphanumeric(locale: AlphanumericLocale, options: IsAlphanumericOptions): Return = js.native
     
+    /**
+      * Adds a validator to check if a value is an array.
+      *
+      * @param options
+      * @returns the current validation chain
+      */
     def isArray(): Return = js.native
     def isArray(options: Max): Return = js.native
     
@@ -82,6 +162,7 @@ object srcChainValidatorsMod {
     def isBIC(): Return = js.native
     
     def isBase32(): Return = js.native
+    def isBase32(options: IsBase32Options): Return = js.native
     
     def isBase58(): Return = js.native
     
@@ -99,6 +180,7 @@ object srcChainValidatorsMod {
     def isByteLength(options: MinMaxExtendedOptions): Return = js.native
     
     def isCreditCard(): Return = js.native
+    def isCreditCard(options: IsCreditCard): Return = js.native
     
     def isCurrency(): Return = js.native
     def isCurrency(options: IsCurrencyOptions): Return = js.native
@@ -153,7 +235,8 @@ object srcChainValidatorsMod {
     def isIPRange(version: IPVersion): Return = js.native
     
     def isISBN(): Return = js.native
-    def isISBN(version: Double): Return = js.native
+    def isISBN(versionOrOptions: Double): Return = js.native
+    def isISBN(versionOrOptions: IsISBNOptions): Return = js.native
     
     def isISIN(): Return = js.native
     
@@ -162,6 +245,8 @@ object srcChainValidatorsMod {
     def isISO31661Alpha3(): Return = js.native
     
     def isISO4217(): Return = js.native
+    
+    def isISO6391(): Return = js.native
     
     def isISO8601(): Return = js.native
     def isISO8601(options: IsISO8601Options): Return = js.native
@@ -195,6 +280,8 @@ object srcChainValidatorsMod {
     
     def isLowercase(): Return = js.native
     
+    def isLuhnNumber(): Return = js.native
+    
     def isMACAddress(): Return = js.native
     def isMACAddress(options: IsMACAddressOptions): Return = js.native
     
@@ -216,6 +303,12 @@ object srcChainValidatorsMod {
     def isNumeric(): Return = js.native
     def isNumeric(options: IsNumericOptions): Return = js.native
     
+    /**
+      * Adds a validator to check if a value is an object.
+      *
+      * @param options
+      * @returns the current validation chain
+      */
     def isObject(): Return = js.native
     def isObject(options: Strict): Return = js.native
     
@@ -237,6 +330,11 @@ object srcChainValidatorsMod {
     
     def isSlug(): Return = js.native
     
+    /**
+      * Adds a validator to check if a value is a string.
+      *
+      * @returns the current validation chain
+      */
     def isString(): Return = js.native
     
     def isStrongPassword(): Return = js.native
@@ -245,6 +343,8 @@ object srcChainValidatorsMod {
     def isSurrogatePair(): Return = js.native
     
     def isTaxID(locale: TaxIDLocale): Return = js.native
+    
+    def isTime(options: IsTimeOptions): Return = js.native
     
     def isURL(): Return = js.native
     def isURL(options: IsURLOptions): Return = js.native
@@ -266,12 +366,31 @@ object srcChainValidatorsMod {
     def matches(pattern: js.RegExp): Return = js.native
     def matches(pattern: js.RegExp, modifiers: String): Return = js.native
     
+    /**
+      * Negates the result of the next validator.
+      *
+      * @example check('weekday').not().isIn(['sunday', 'saturday'])
+      * @returns the current validation chain
+      */
     def not(): Return = js.native
     
+    /**
+      * Adds a validator to check if a value is not empty; that is, a string with length of 1 or more.
+      *
+      * @param options
+      * @returns the current validation chain
+      */
     def notEmpty(): Return = js.native
     def notEmpty(options: IsEmptyOptions): Return = js.native
     
-    def withMessage(message: Any): Return = js.native
-    def withMessage(message: DynamicMessageCreator): Return = js.native
+    def withMessage(message: ErrorMessage): Return = js.native
+    /**
+      * Sets the error message for the previous validator.
+      *
+      * @param message the message, which can be any value, or a function for dynamically creating the
+      *                error message based on the field value
+      * @returns the current validation chain
+      */
+    def withMessage(message: FieldMessageFactory): Return = js.native
   }
 }

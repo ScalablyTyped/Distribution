@@ -7,9 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AddTagsToStreamInput extends StObject {
   
   /**
+    * The ARN of the stream.
+    */
+  var StreamARN: js.UndefOr[typings.awsSdk.clientsKinesisMod.StreamARN] = js.undefined
+  
+  /**
     * The name of the stream.
     */
-  var StreamName: typings.awsSdk.clientsKinesisMod.StreamName
+  var StreamName: js.UndefOr[typings.awsSdk.clientsKinesisMod.StreamName] = js.undefined
   
   /**
     * A set of up to 10 key-value pairs to use to create the tags.
@@ -18,15 +23,21 @@ trait AddTagsToStreamInput extends StObject {
 }
 object AddTagsToStreamInput {
   
-  inline def apply(StreamName: StreamName, Tags: TagMap): AddTagsToStreamInput = {
-    val __obj = js.Dynamic.literal(StreamName = StreamName.asInstanceOf[js.Any], Tags = Tags.asInstanceOf[js.Any])
+  inline def apply(Tags: TagMap): AddTagsToStreamInput = {
+    val __obj = js.Dynamic.literal(Tags = Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddTagsToStreamInput]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: AddTagsToStreamInput] (val x: Self) extends AnyVal {
     
+    inline def setStreamARN(value: StreamARN): Self = StObject.set(x, "StreamARN", value.asInstanceOf[js.Any])
+    
+    inline def setStreamARNUndefined: Self = StObject.set(x, "StreamARN", js.undefined)
+    
     inline def setStreamName(value: StreamName): Self = StObject.set(x, "StreamName", value.asInstanceOf[js.Any])
+    
+    inline def setStreamNameUndefined: Self = StObject.set(x, "StreamName", js.undefined)
     
     inline def setTags(value: TagMap): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
   }

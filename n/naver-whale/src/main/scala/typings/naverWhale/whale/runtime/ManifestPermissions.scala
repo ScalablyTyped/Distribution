@@ -24,11 +24,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.naverWhale.naverWhaleStrings.desktopCapture
   - typings.naverWhale.naverWhaleStrings.documentScan
   - typings.naverWhale.naverWhaleStrings.downloads
+  - typings.naverWhale.naverWhaleStrings.downloadsDotshelf
+  - typings.naverWhale.naverWhaleStrings.downloadsDotui
   - typings.naverWhale.naverWhaleStrings.enterpriseDotdeviceAttributes
   - typings.naverWhale.naverWhaleStrings.enterpriseDothardwarePlatform
   - typings.naverWhale.naverWhaleStrings.enterpriseDotnetworkingAttributes
   - typings.naverWhale.naverWhaleStrings.enterpriseDotplatformKeys
   - typings.naverWhale.naverWhaleStrings.experimental
+  - typings.naverWhale.naverWhaleStrings.favicon
   - typings.naverWhale.naverWhaleStrings.fileBrowserHandler
   - typings.naverWhale.naverWhaleStrings.fileSystemProvider
   - typings.naverWhale.naverWhaleStrings.fontSettings
@@ -42,6 +45,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.naverWhale.naverWhaleStrings.management
   - typings.naverWhale.naverWhaleStrings.nativeMessaging
   - typings.naverWhale.naverWhaleStrings.notifications
+  - typings.naverWhale.naverWhaleStrings.offscreen
   - typings.naverWhale.naverWhaleStrings.pageCapture
   - typings.naverWhale.naverWhaleStrings.platformKeys
   - typings.naverWhale.naverWhaleStrings.power
@@ -114,6 +118,10 @@ object ManifestPermissions {
   
   inline def downloads: typings.naverWhale.naverWhaleStrings.downloads = "downloads".asInstanceOf[typings.naverWhale.naverWhaleStrings.downloads]
   
+  inline def downloadsDotshelf: typings.naverWhale.naverWhaleStrings.downloadsDotshelf = "downloads.shelf".asInstanceOf[typings.naverWhale.naverWhaleStrings.downloadsDotshelf]
+  
+  inline def downloadsDotui: typings.naverWhale.naverWhaleStrings.downloadsDotui = "downloads.ui".asInstanceOf[typings.naverWhale.naverWhaleStrings.downloadsDotui]
+  
   inline def enterpriseDotdeviceAttributes: typings.naverWhale.naverWhaleStrings.enterpriseDotdeviceAttributes = "enterprise.deviceAttributes".asInstanceOf[typings.naverWhale.naverWhaleStrings.enterpriseDotdeviceAttributes]
   
   inline def enterpriseDothardwarePlatform: typings.naverWhale.naverWhaleStrings.enterpriseDothardwarePlatform = "enterprise.hardwarePlatform".asInstanceOf[typings.naverWhale.naverWhaleStrings.enterpriseDothardwarePlatform]
@@ -123,6 +131,8 @@ object ManifestPermissions {
   inline def enterpriseDotplatformKeys: typings.naverWhale.naverWhaleStrings.enterpriseDotplatformKeys = "enterprise.platformKeys".asInstanceOf[typings.naverWhale.naverWhaleStrings.enterpriseDotplatformKeys]
   
   inline def experimental: typings.naverWhale.naverWhaleStrings.experimental = "experimental".asInstanceOf[typings.naverWhale.naverWhaleStrings.experimental]
+  
+  inline def favicon: typings.naverWhale.naverWhaleStrings.favicon = "favicon".asInstanceOf[typings.naverWhale.naverWhaleStrings.favicon]
   
   inline def fileBrowserHandler: typings.naverWhale.naverWhaleStrings.fileBrowserHandler = "fileBrowserHandler".asInstanceOf[typings.naverWhale.naverWhaleStrings.fileBrowserHandler]
   
@@ -149,6 +159,8 @@ object ManifestPermissions {
   inline def nativeMessaging: typings.naverWhale.naverWhaleStrings.nativeMessaging = "nativeMessaging".asInstanceOf[typings.naverWhale.naverWhaleStrings.nativeMessaging]
   
   inline def notifications: typings.naverWhale.naverWhaleStrings.notifications = "notifications".asInstanceOf[typings.naverWhale.naverWhaleStrings.notifications]
+  
+  inline def offscreen: typings.naverWhale.naverWhaleStrings.offscreen = "offscreen".asInstanceOf[typings.naverWhale.naverWhaleStrings.offscreen]
   
   inline def pageCapture: typings.naverWhale.naverWhaleStrings.pageCapture = "pageCapture".asInstanceOf[typings.naverWhale.naverWhaleStrings.pageCapture]
   

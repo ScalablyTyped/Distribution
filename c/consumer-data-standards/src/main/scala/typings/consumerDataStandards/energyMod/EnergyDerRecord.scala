@@ -14,12 +14,12 @@ trait EnergyDerRecord
   var acConnections: js.Array[CommissioningDate]
   
   /**
-    * Approved small generating unit capacity as agreed with NSP in the connection agreement, expressed in kVA
+    * Approved small generating unit capacity as agreed with NSP in the connection agreement, expressed in kVA. Value of 0 indicates no DER record exists for the given servicePointId
     */
   var approvedCapacity: Double
   
   /**
-    * The number of phases available for the installation of DER. Acceptable values are 1, 2 or 3.
+    * The number of phases available for the installation of DER. Acceptable values are 0, 1, 2 or 3. Value of 0 indicates no DER record exists for the given servicePointId
     */
   var availablePhasesCount: Double
   
@@ -29,7 +29,7 @@ trait EnergyDerRecord
   var hasCentralProtectionControl: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
-    * The number of phases that DER is connected to. Acceptable values are 1, 2 or 3.
+    * The number of phases that DER is connected to. Acceptable values are 0, 1, 2 or 3. Value of 0 indicates no DER record exists for the given servicePointId
     */
   var installedPhasesCount: Double
   

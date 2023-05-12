@@ -74,7 +74,7 @@ trait ISpriteManager
   
   /**
     * Specifies the rendering group id for this mesh (0 by default)
-    * @see https://doc.babylonjs.com/resources/transparency_and_how_meshes_are_rendered#rendering-groups
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/materials/advanced/transparent_rendering#rendering-groups
     */
   var renderingGroupId: Double = js.native
   

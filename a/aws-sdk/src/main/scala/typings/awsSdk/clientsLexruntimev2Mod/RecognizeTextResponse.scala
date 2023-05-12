@@ -17,6 +17,11 @@ trait RecognizeTextResponse extends StObject {
   var messages: js.UndefOr[Messages] = js.undefined
   
   /**
+    * The bot member that recognized the text.
+    */
+  var recognizedBotMember: js.UndefOr[RecognizedBotMember] = js.undefined
+  
+  /**
     * The attributes sent in the request.
     */
   var requestAttributes: js.UndefOr[StringMap] = js.undefined
@@ -52,6 +57,10 @@ object RecognizeTextResponse {
     inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
     
     inline def setMessagesVarargs(value: Message*): Self = StObject.set(x, "messages", js.Array(value*))
+    
+    inline def setRecognizedBotMember(value: RecognizedBotMember): Self = StObject.set(x, "recognizedBotMember", value.asInstanceOf[js.Any])
+    
+    inline def setRecognizedBotMemberUndefined: Self = StObject.set(x, "recognizedBotMember", js.undefined)
     
     inline def setRequestAttributes(value: StringMap): Self = StObject.set(x, "requestAttributes", value.asInstanceOf[js.Any])
     

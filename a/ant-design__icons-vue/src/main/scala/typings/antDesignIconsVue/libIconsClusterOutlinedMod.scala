@@ -16,7 +16,7 @@ object libIconsClusterOutlinedMod extends Shortcut {
   @js.native
   trait ClusterOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_ClusterOutlinedIconType: String = js.native

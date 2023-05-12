@@ -3,7 +3,7 @@ package typings.nivoBar.distTypesTypesMod
 import typings.nivoAnnotations.distTypesTypesMod.AnnotationMatcher
 import typings.nivoAxes.distTypesTypesMod.AxisProps
 import typings.nivoAxes.distTypesTypesMod.GridValues
-import typings.nivoBar.anon.Color
+import typings.nivoBar.anon.ColorString
 import typings.nivoBar.nivoBarStrings.auto
 import typings.nivoBar.nivoBarStrings.grouped
 import typings.nivoBar.nivoBarStrings.horizontal
@@ -26,12 +26,13 @@ import typings.nivoScales.distTypesTypesMod.ScaleSpec
 import typings.react.mod.FC
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
+import typings.reactSpringCore.mod.SpringConfig
 import typings.std.SVGRectElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Partial<@nivo/bar.@nivo/bar/dist/types/types.BarCommonProps<RawDatum>> & @nivo/bar.@nivo/bar/dist/types/types.DataProps<RawDatum> & @nivo/bar.@nivo/bar/dist/types/types.BarHandlers<RawDatum, std.SVGRectElement> & @nivo/core.@nivo/core.SvgDefsAndFill<@nivo/bar.@nivo/bar/dist/types/types.ComputedBarDatum<RawDatum>> & @nivo/core.@nivo/core.Dimensions & @nivo/core.@nivo/core.ModernMotionProps & std.Partial<{  axisBottom :@nivo/axes.@nivo/axes.AxisProps<any> | null,   axisLeft :@nivo/axes.@nivo/axes.AxisProps<any> | null,   axisRight :@nivo/axes.@nivo/axes.AxisProps<any> | null,   axisTop :@nivo/axes.@nivo/axes.AxisProps<any> | null,   barComponent :react.react.FC<@nivo/bar.@nivo/bar/dist/types/types.BarItemProps<RawDatum>>,   markers :std.Array<@nivo/core.@nivo/core.CartesianMarkerProps<@nivo/core.@nivo/core.DatumValue>>,   layers :std.Array<@nivo/bar.@nivo/bar/dist/types/types.BarLayer<RawDatum>>,   role :string,   ariaLabel :react.react.AriaAttributes['aria-label'] | undefined,   ariaLabelledBy :react.react.AriaAttributes['aria-labelledby'] | undefined,   ariaDescribedBy :react.react.AriaAttributes['aria-describedby'] | undefined,   isFocusable :boolean | undefined,   barAriaLabel :(data : @nivo/bar.@nivo/bar/dist/types/types.ComputedDatum<RawDatum>): react.react.AriaAttributes['aria-label'] | undefined,   barAriaLabelledBy :(data : @nivo/bar.@nivo/bar/dist/types/types.ComputedDatum<RawDatum>): react.react.AriaAttributes['aria-labelledby'] | undefined,   barAriaDescribedBy :(data : @nivo/bar.@nivo/bar/dist/types/types.ComputedDatum<RawDatum>): react.react.AriaAttributes['aria-describedby'] | undefined}> */
+/* Inlined std.Partial<@nivo/bar.@nivo/bar/dist/types/types.BarCommonProps<RawDatum>> & @nivo/bar.@nivo/bar/dist/types/types.DataProps<RawDatum> & @nivo/bar.@nivo/bar/dist/types/types.BarHandlers<RawDatum, std.SVGRectElement> & @nivo/core.@nivo/core.SvgDefsAndFill<@nivo/bar.@nivo/bar/dist/types/types.ComputedBarDatum<RawDatum>> & @nivo/core.@nivo/core.Dimensions & @nivo/core.@nivo/core.MotionProps & std.Partial<{  axisBottom :@nivo/axes.@nivo/axes.AxisProps<any> | null,   axisLeft :@nivo/axes.@nivo/axes.AxisProps<any> | null,   axisRight :@nivo/axes.@nivo/axes.AxisProps<any> | null,   axisTop :@nivo/axes.@nivo/axes.AxisProps<any> | null,   barComponent :react.react.FC<@nivo/bar.@nivo/bar/dist/types/types.BarItemProps<RawDatum>>,   markers :std.Array<@nivo/core.@nivo/core.CartesianMarkerProps<@nivo/core.@nivo/core.DatumValue>>,   layers :std.Array<@nivo/bar.@nivo/bar/dist/types/types.BarLayer<RawDatum>>,   role :string,   ariaLabel :react.react.AriaAttributes['aria-label'] | undefined,   ariaLabelledBy :react.react.AriaAttributes['aria-labelledby'] | undefined,   ariaDescribedBy :react.react.AriaAttributes['aria-describedby'] | undefined,   isFocusable :boolean | undefined,   barAriaLabel :(data : @nivo/bar.@nivo/bar/dist/types/types.ComputedDatum<RawDatum>): react.react.AriaAttributes['aria-label'] | undefined,   barAriaLabelledBy :(data : @nivo/bar.@nivo/bar/dist/types/types.ComputedDatum<RawDatum>): react.react.AriaAttributes['aria-labelledby'] | undefined,   barAriaDescribedBy :(data : @nivo/bar.@nivo/bar/dist/types/types.ComputedDatum<RawDatum>): react.react.AriaAttributes['aria-describedby'] | undefined}> */
 trait BarSvgProps[RawDatum /* <: BarDatum */] extends StObject {
   
   var animate: js.UndefOr[Boolean] = js.undefined
@@ -94,7 +95,7 @@ trait BarSvgProps[RawDatum /* <: BarDatum */] extends StObject {
   
   var indexScale: js.UndefOr[ScaleBandSpec] = js.undefined
   
-  var initialHiddenIds: js.UndefOr[js.Array[String]] = js.undefined
+  var initialHiddenIds: js.UndefOr[js.Array[String | Double]] = js.undefined
   
   var innerPadding: js.UndefOr[Double] = js.undefined
   
@@ -130,13 +131,11 @@ trait BarSvgProps[RawDatum /* <: BarDatum */] extends StObject {
   
   var minValue: js.UndefOr[auto | Double] = js.undefined
   
-  var motionConfig: js.UndefOr[
-    String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringConfig */ Any)
-  ] = js.undefined
+  var motionConfig: js.UndefOr[String | SpringConfig] = js.undefined
   
   var onClick: js.UndefOr[
     js.Function2[
-      /* datum */ ComputedDatum[RawDatum] & Color, 
+      /* datum */ ComputedDatum[RawDatum] & ColorString, 
       /* event */ MouseEvent[SVGRectElement, NativeMouseEvent], 
       Unit
     ]
@@ -330,11 +329,11 @@ object BarSvgProps {
     
     inline def setIndexScaleUndefined: Self = StObject.set(x, "indexScale", js.undefined)
     
-    inline def setInitialHiddenIds(value: js.Array[String]): Self = StObject.set(x, "initialHiddenIds", value.asInstanceOf[js.Any])
+    inline def setInitialHiddenIds(value: js.Array[String | Double]): Self = StObject.set(x, "initialHiddenIds", value.asInstanceOf[js.Any])
     
     inline def setInitialHiddenIdsUndefined: Self = StObject.set(x, "initialHiddenIds", js.undefined)
     
-    inline def setInitialHiddenIdsVarargs(value: String*): Self = StObject.set(x, "initialHiddenIds", js.Array(value*))
+    inline def setInitialHiddenIdsVarargs(value: (String | Double)*): Self = StObject.set(x, "initialHiddenIds", js.Array(value*))
     
     inline def setInnerPadding(value: Double): Self = StObject.set(x, "innerPadding", value.asInstanceOf[js.Any])
     
@@ -418,14 +417,12 @@ object BarSvgProps {
     
     inline def setMinValueUndefined: Self = StObject.set(x, "minValue", js.undefined)
     
-    inline def setMotionConfig(
-      value: String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringConfig */ Any)
-    ): Self = StObject.set(x, "motionConfig", value.asInstanceOf[js.Any])
+    inline def setMotionConfig(value: String | SpringConfig): Self = StObject.set(x, "motionConfig", value.asInstanceOf[js.Any])
     
     inline def setMotionConfigUndefined: Self = StObject.set(x, "motionConfig", js.undefined)
     
     inline def setOnClick(
-      value: (/* datum */ ComputedDatum[RawDatum] & Color, /* event */ MouseEvent[SVGRectElement, NativeMouseEvent]) => Unit
+      value: (/* datum */ ComputedDatum[RawDatum] & ColorString, /* event */ MouseEvent[SVGRectElement, NativeMouseEvent]) => Unit
     ): Self = StObject.set(x, "onClick", js.Any.fromFunction2(value))
     
     inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)

@@ -15,37 +15,37 @@ open class TapTarget ()
      with typings.materializecssMaterialize.M.TapTarget {
   
   /**
-    * Close Tap Target
+    * Close Tap Target.
     */
   /* CompleteClass */
   override def close(): Unit = js.native
   
   /**
-    * Destroy plugin instance and teardown
+    * Destroy plugin instance and teardown.
     */
   /* CompleteClass */
   override def destroy(): Unit = js.native
   
   /**
-    * The DOM element the plugin was initialized with
+    * The DOM element the plugin was initialized with.
     */
   /* CompleteClass */
   var el: Element = js.native
   
   /**
-    * If the tap target is open
+    * If the tap target is open.
     */
   /* CompleteClass */
   var isOpen: Boolean = js.native
   
   /**
-    * Open Tap Target
+    * Open Tap Target.
     */
   /* CompleteClass */
   override def open(): Unit = js.native
   
   /**
-    * The options the instance was initialized with
+    * The options the instance was initialized with.
     */
   /* CompleteClass */
   var options: TapTargetOptions = js.native
@@ -57,19 +57,19 @@ object TapTarget {
   val ^ : js.Any = js.native
   
   /**
-    * Get Instance
+    * Get Instance.
     */
   /* static member */
   inline def getInstance(elem: Element): typings.materializecssMaterialize.M.TapTarget = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(elem.asInstanceOf[js.Any]).asInstanceOf[typings.materializecssMaterialize.M.TapTarget]
   
   /**
-    * Init TapTargets
+    * Init TapTargets.
     */
   /* static member */
   inline def init(els: MElements): js.Array[typings.materializecssMaterialize.M.TapTarget] = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.materializecssMaterialize.M.TapTarget]]
   inline def init(els: MElements, options: PartialTapTargetOptions): js.Array[typings.materializecssMaterialize.M.TapTarget] = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.materializecssMaterialize.M.TapTarget]]
   /**
-    * Init TapTarget
+    * Init TapTarget.
     */
   /* static member */
   inline def init(els: Element): typings.materializecssMaterialize.M.TapTarget = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any]).asInstanceOf[typings.materializecssMaterialize.M.TapTarget]

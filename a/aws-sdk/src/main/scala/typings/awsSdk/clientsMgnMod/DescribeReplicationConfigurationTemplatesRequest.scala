@@ -9,7 +9,7 @@ trait DescribeReplicationConfigurationTemplatesRequest extends StObject {
   /**
     * Request to describe Replication Configuration template by max results.
     */
-  var maxResults: js.UndefOr[StrictlyPositiveInteger] = js.undefined
+  var maxResults: js.UndefOr[MaxResultsType] = js.undefined
   
   /**
     * Request to describe Replication Configuration template by next token.
@@ -31,7 +31,7 @@ object DescribeReplicationConfigurationTemplatesRequest {
   @scala.inline
   implicit open class MutableBuilder[Self <: DescribeReplicationConfigurationTemplatesRequest] (val x: Self) extends AnyVal {
     
-    inline def setMaxResults(value: StrictlyPositiveInteger): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResultsType): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
     inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     

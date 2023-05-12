@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "istanbuljs__nyc-config-babel"
-version := "3.0-dt-20220510Z-f779c7"
+version := "3.0-dt-20230328Z-f779c7"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

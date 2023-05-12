@@ -27,6 +27,11 @@ trait UpdateFormData extends StObject {
   var formActionType: js.UndefOr[FormActionType] = js.undefined
   
   /**
+    * Specifies an icon or decoration to display on the form.
+    */
+  var labelDecorator: js.UndefOr[LabelDecorator] = js.undefined
+  
+  /**
     * The name of the form.
     */
   var name: js.UndefOr[FormName] = js.undefined
@@ -71,6 +76,10 @@ object UpdateFormData {
     inline def setFormActionType(value: FormActionType): Self = StObject.set(x, "formActionType", value.asInstanceOf[js.Any])
     
     inline def setFormActionTypeUndefined: Self = StObject.set(x, "formActionType", js.undefined)
+    
+    inline def setLabelDecorator(value: LabelDecorator): Self = StObject.set(x, "labelDecorator", value.asInstanceOf[js.Any])
+    
+    inline def setLabelDecoratorUndefined: Self = StObject.set(x, "labelDecorator", js.undefined)
     
     inline def setName(value: FormName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,7 @@ open class XrInputSource protected () extends EventHandler {
   /**
     * Create a new XrInputSource instance.
     *
-    * @param {XrManager} manager - WebXR Manager.
+    * @param {import('./xr-manager.js').XrManager} manager - WebXR Manager.
     * @param {*} xrInputSource - [XRInputSource](https://developer.mozilla.org/en-US/docs/Web/API/XRInputSource)
     * object that is created by WebXR API.
     * @hideconstructor
@@ -40,7 +40,7 @@ open class XrInputSource protected () extends EventHandler {
   /* private */ var _dirtyRay: Any = js.native
   
   /**
-    * @type {Entity|null}
+    * @type {import('../entity.js').Entity|null}
     * @private
     */
   /* private */ var _elementEntity: Any = js.native
@@ -64,7 +64,7 @@ open class XrInputSource protected () extends EventHandler {
   /* private */ var _hand: Any = js.native
   
   /**
-    * @type {XrHitTestSource[]}
+    * @type {import('./xr-hit-test-source.js').XrHitTestSource[]}
     * @private
     */
   /* private */ var _hitTestSources: Any = js.native
@@ -94,7 +94,7 @@ open class XrInputSource protected () extends EventHandler {
   /* private */ var _localTransform: Any = js.native
   
   /**
-    * @type {XrManager}
+    * @type {import('./xr-manager.js').XrManager}
     * @private
     */
   /* private */ var _manager: Any = js.native
@@ -157,7 +157,7 @@ open class XrInputSource protected () extends EventHandler {
     * If {@link XrInputSource#elementInput} is true, this property will hold entity with Element
     * component at which this input source is hovering, or null if not hovering over any element.
     *
-    * @type {Entity|null}
+    * @type {import('../entity.js').Entity|null}
     */
   def elementEntity: Entity = js.native
   
@@ -254,7 +254,7 @@ open class XrInputSource protected () extends EventHandler {
   /**
     * List of active {@link XrHitTestSource} instances created by this input source.
     *
-    * @type {XrHitTestSource[]}
+    * @type {import('./xr-hit-test-source.js').XrHitTestSource[]}
     */
   def hitTestSources: js.Array[XrHitTestSource] = js.native
   
@@ -274,8 +274,8 @@ open class XrInputSource protected () extends EventHandler {
     * based on the meshes detected by the underlying Augmented Reality system.
     *
     * @param {Ray} [options.offsetRay] - Optional ray by which hit test ray can be offset.
-    * @param {XrHitTestStartCallback} [options.callback] - Optional callback function called once
-    * hit test source is created or failed.
+    * @param {import('./xr-hit-test.js').XrHitTestStartCallback} [options.callback] - Optional
+    * callback function called once hit test source is created or failed.
     * @example
     * app.xr.input.on('add', function (inputSource) {
     *     inputSource.hitTestStart({
@@ -308,7 +308,7 @@ open class XrInputSource protected () extends EventHandler {
     * @event XrInputSource#select
     * @param {object} evt - XRInputSourceEvent event data from WebXR API.
     * @example
-    * var ray = new pc.Ray();
+    * const ray = new pc.Ray();
     * inputSource.on('select', function (evt) {
     *     ray.set(inputSource.getOrigin(), inputSource.getDirection());
     *     if (obj.intersectsRay(ray)) {
@@ -357,7 +357,8 @@ open class XrInputSource protected () extends EventHandler {
     * Fired when new {@link XrHitTestSource} is added to the input source.
     *
     * @event XrInputSource#hittest:add
-    * @param {XrHitTestSource} hitTestSource - Hit test source that has been added.
+    * @param {import('./xr-hit-test-source.js').XrHitTestSource} hitTestSource - Hit test source
+    * that has been added.
     * @example
     * inputSource.on('hittest:add', function (hitTestSource) {
     *     // new hit test source is added
@@ -367,7 +368,8 @@ open class XrInputSource protected () extends EventHandler {
     * Fired when {@link XrHitTestSource} is removed to the the input source.
     *
     * @event XrInputSource#hittest:remove
-    * @param {XrHitTestSource} hitTestSource - Hit test source that has been removed.
+    * @param {import('./xr-hit-test-source.js').XrHitTestSource} hitTestSource - Hit test source
+    * that has been removed.
     * @example
     * inputSource.on('remove', function (hitTestSource) {
     *     // hit test source is removed
@@ -378,7 +380,8 @@ open class XrInputSource protected () extends EventHandler {
     * tries to match real world picked geometry.
     *
     * @event XrInputSource#hittest:result
-    * @param {XrHitTestSource} hitTestSource - Hit test source that produced the hit result.
+    * @param {import('./xr-hit-test-source.js').XrHitTestSource} hitTestSource - Hit test source
+    * that produced the hit result.
     * @param {Vec3} position - Position of hit test.
     * @param {Quat} rotation - Rotation of hit test.
     * @example
@@ -403,13 +406,15 @@ open class XrInputSource protected () extends EventHandler {
   def inputSource: Any = js.native
   
   /**
-    * @param {XrHitTestSource} hitTestSource - Hit test source to be added.
+    * @param {import('./xr-hit-test-source.js').XrHitTestSource} hitTestSource - Hit test source
+    * to be added.
     * @private
     */
   /* private */ var onHitTestSourceAdd: Any = js.native
   
   /**
-    * @param {XrHitTestSource} hitTestSource - Hit test source to be removed.
+    * @param {import('./xr-hit-test-source.js').XrHitTestSource} hitTestSource - Hit test source
+    * to be removed.
     * @private
     */
   /* private */ var onHitTestSourceRemove: Any = js.native

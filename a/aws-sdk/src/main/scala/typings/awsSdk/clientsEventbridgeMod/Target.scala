@@ -27,7 +27,7 @@ trait Target extends StObject {
   var EcsParameters: js.UndefOr[typings.awsSdk.clientsEventbridgeMod.EcsParameters] = js.undefined
   
   /**
-    * Contains the HTTP parameters to use when the target is a API Gateway REST endpoint or EventBridge ApiDestination. If you specify an API Gateway REST API or EventBridge ApiDestination as a target, you can use this parameter to specify headers, path parameters, and query string keys/values as part of your target invoking request. If you're using ApiDestinations, the corresponding Connection can also have these values configured. In case of any conflicting keys, values from the Connection take precedence.
+    * Contains the HTTP parameters to use when the target is a API Gateway endpoint or EventBridge ApiDestination. If you specify an API Gateway API or EventBridge ApiDestination as a target, you can use this parameter to specify headers, path parameters, and query string keys/values as part of your target invoking request. If you're using ApiDestinations, the corresponding Connection can also have these values configured. In case of any conflicting keys, values from the Connection take precedence.
     */
   var HttpParameters: js.UndefOr[typings.awsSdk.clientsEventbridgeMod.HttpParameters] = js.undefined
   
@@ -42,7 +42,7 @@ trait Target extends StObject {
   var Input: js.UndefOr[TargetInput] = js.undefined
   
   /**
-    * The value of the JSONPath that is used for extracting part of the matched event when passing it to the target. You must use JSON dot notation, not bracket notation. For more information about JSON paths, see JSONPath.
+    * The value of the JSONPath that is used for extracting part of the matched event when passing it to the target. You may use JSON dot notation or bracket notation. For more information about JSON paths, see JSONPath.
     */
   var InputPath: js.UndefOr[TargetInputPath] = js.undefined
   

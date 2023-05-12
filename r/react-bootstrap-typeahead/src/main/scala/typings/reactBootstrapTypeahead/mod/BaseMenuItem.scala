@@ -12,7 +12,7 @@ open class BaseMenuItem protected ()
   def this(props: BaseMenuItemProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: BaseMenuItemProps, context: Any) = this()
 }

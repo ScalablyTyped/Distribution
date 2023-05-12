@@ -1,5 +1,6 @@
 package typings.twilio
 
+import typings.node.bufferMod.global.Buffer
 import typings.node.http2Mod.IncomingHttpHeaders
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -16,17 +17,29 @@ object libWebhooksWebhooksMod {
   
   inline def getExpectedTwilioSignature(authToken: String, url: String, params: Record[String, Any]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getExpectedTwilioSignature")(authToken.asInstanceOf[js.Any], url.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[String]
   
+  inline def validateBody(body: String, bodyHash: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("validateBody")(body.asInstanceOf[js.Any], bodyHash.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def validateBody(body: String, bodyHash: js.Array[Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("validateBody")(body.asInstanceOf[js.Any], bodyHash.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def validateBody(body: String, bodyHash: Buffer): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("validateBody")(body.asInstanceOf[js.Any], bodyHash.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
   inline def validateExpressRequest(request: Request, authToken: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("validateExpressRequest")(request.asInstanceOf[js.Any], authToken.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   inline def validateExpressRequest(request: Request, authToken: String, opts: RequestValidatorOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("validateExpressRequest")(request.asInstanceOf[js.Any], authToken.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
+  inline def validateIncomingRequest(request: Request, authToken: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("validateIncomingRequest")(request.asInstanceOf[js.Any], authToken.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def validateIncomingRequest(request: Request, authToken: String, opts: RequestValidatorOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("validateIncomingRequest")(request.asInstanceOf[js.Any], authToken.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
   inline def validateRequest(authToken: String, twilioHeader: String, url: String, params: Record[String, Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("validateRequest")(authToken.asInstanceOf[js.Any], twilioHeader.asInstanceOf[js.Any], url.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def validateRequestWithBody(authToken: String, twilioHeader: String, requestUrl: String, body: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("validateRequestWithBody")(authToken.asInstanceOf[js.Any], twilioHeader.asInstanceOf[js.Any], requestUrl.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def validateRequestWithBody(authToken: String, twilioHeader: String, url: String, body: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("validateRequestWithBody")(authToken.asInstanceOf[js.Any], twilioHeader.asInstanceOf[js.Any], url.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  inline def webhook(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("webhook")().asInstanceOf[Any]
-  inline def webhook(authToken: String, opts: WebhookOptions): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("webhook")(authToken.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Any]
-  inline def webhook(opts: WebhookOptions): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("webhook")(opts.asInstanceOf[js.Any]).asInstanceOf[Any]
-  inline def webhook(opts: WebhookOptions, authToken: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("webhook")(opts.asInstanceOf[js.Any], authToken.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def webhook(): js.Function3[/* req */ Any, /* res */ Any, /* next */ Any, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("webhook")().asInstanceOf[js.Function3[/* req */ Any, /* res */ Any, /* next */ Any, Unit]]
+  inline def webhook(opts: String): js.Function3[/* req */ Any, /* res */ Any, /* next */ Any, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("webhook")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* req */ Any, /* res */ Any, /* next */ Any, Unit]]
+  inline def webhook(opts: String, authToken: String): js.Function3[/* req */ Any, /* res */ Any, /* next */ Any, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("webhook")(opts.asInstanceOf[js.Any], authToken.asInstanceOf[js.Any])).asInstanceOf[js.Function3[/* req */ Any, /* res */ Any, /* next */ Any, Unit]]
+  inline def webhook(opts: String, authToken: WebhookOptions): js.Function3[/* req */ Any, /* res */ Any, /* next */ Any, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("webhook")(opts.asInstanceOf[js.Any], authToken.asInstanceOf[js.Any])).asInstanceOf[js.Function3[/* req */ Any, /* res */ Any, /* next */ Any, Unit]]
+  inline def webhook(opts: Unit, authToken: String): js.Function3[/* req */ Any, /* res */ Any, /* next */ Any, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("webhook")(opts.asInstanceOf[js.Any], authToken.asInstanceOf[js.Any])).asInstanceOf[js.Function3[/* req */ Any, /* res */ Any, /* next */ Any, Unit]]
+  inline def webhook(opts: Unit, authToken: WebhookOptions): js.Function3[/* req */ Any, /* res */ Any, /* next */ Any, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("webhook")(opts.asInstanceOf[js.Any], authToken.asInstanceOf[js.Any])).asInstanceOf[js.Function3[/* req */ Any, /* res */ Any, /* next */ Any, Unit]]
+  inline def webhook(opts: WebhookOptions): js.Function3[/* req */ Any, /* res */ Any, /* next */ Any, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("webhook")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* req */ Any, /* res */ Any, /* next */ Any, Unit]]
+  inline def webhook(opts: WebhookOptions, authToken: String): js.Function3[/* req */ Any, /* res */ Any, /* next */ Any, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("webhook")(opts.asInstanceOf[js.Any], authToken.asInstanceOf[js.Any])).asInstanceOf[js.Function3[/* req */ Any, /* res */ Any, /* next */ Any, Unit]]
+  inline def webhook(opts: WebhookOptions, authToken: WebhookOptions): js.Function3[/* req */ Any, /* res */ Any, /* next */ Any, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("webhook")(opts.asInstanceOf[js.Any], authToken.asInstanceOf[js.Any])).asInstanceOf[js.Function3[/* req */ Any, /* res */ Any, /* next */ Any, Unit]]
   
   trait Request extends StObject {
     
@@ -118,6 +131,11 @@ object libWebhooksWebhooksMod {
   trait WebhookOptions extends StObject {
     
     /**
+      * Authentication token
+      */
+    var authToken: js.UndefOr[String] = js.undefined
+    
+    /**
       * Manually specify the host name used by Twilio in a number's webhook config
       */
     var host: js.UndefOr[String] = js.undefined
@@ -155,6 +173,10 @@ object libWebhooksWebhooksMod {
     
     @scala.inline
     implicit open class MutableBuilder[Self <: WebhookOptions] (val x: Self) extends AnyVal {
+      
+      inline def setAuthToken(value: String): Self = StObject.set(x, "authToken", value.asInstanceOf[js.Any])
+      
+      inline def setAuthTokenUndefined: Self = StObject.set(x, "authToken", js.undefined)
       
       inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       

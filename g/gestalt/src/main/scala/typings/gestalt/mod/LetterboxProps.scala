@@ -1,13 +1,12 @@
 package typings.gestalt.mod
 
-import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait LetterboxProps extends StObject {
   
-  var children: js.UndefOr[ReactNode] = js.undefined
+  var children: js.UndefOr[Node] = js.undefined
   
   var contentAspectRatio: Double
   
@@ -25,7 +24,7 @@ object LetterboxProps {
   @scala.inline
   implicit open class MutableBuilder[Self <: LetterboxProps] (val x: Self) extends AnyVal {
     
-    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: Node): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     

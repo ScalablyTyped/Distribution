@@ -19,8 +19,6 @@ object mod {
     
     def addListener(eventName: String, listener: Listener): Unit = js.native
     
-    def addPeerListener(eventName: String, listener: Listener): Unit = js.native
-    
     /* private */ var data: Any = js.native
     
     def emit(

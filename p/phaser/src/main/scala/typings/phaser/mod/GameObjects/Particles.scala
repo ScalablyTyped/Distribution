@@ -1,10 +1,9 @@
 package typings.phaser.mod.GameObjects
 
 import typings.phaser.Phaser.Geom.Point
-import typings.phaser.Phaser.Scene
-import typings.phaser.Phaser.Textures.Frame
 import typings.phaser.Phaser.Types.GameObjects.Particles.DeathZoneSource
 import typings.phaser.Phaser.Types.GameObjects.Particles.EdgeZoneSource
+import typings.phaser.Phaser.Types.GameObjects.Particles.EmitterOpOnEmitType
 import typings.phaser.Phaser.Types.GameObjects.Particles.GravityWellConfig
 import typings.phaser.Phaser.Types.GameObjects.Particles.ParticleEmitterConfig
 import typings.phaser.Phaser.Types.GameObjects.Particles.RandomZoneSource
@@ -15,9 +14,97 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object Particles {
   
   /**
-    * A Particle Emitter property.
+    * This class is responsible for taking control over the color property
+    * in the Particle class and managing its emission and updating functions.
     * 
-    * Facilitates changing Particle properties as they are emitted and throughout their lifetime.
+    * See the `ParticleEmitter` class for more details on emitter op configuration.
+    */
+  @JSImport("phaser", "GameObjects.Particles.EmitterColorOp")
+  @js.native
+  open class EmitterColorOp protected ()
+    extends StObject
+       with typings.phaser.Phaser.GameObjects.Particles.EmitterColorOp {
+    /**
+      * 
+      * @param key The name of the property.
+      */
+    def this(key: String) = this()
+    
+    /**
+      * An array containing the blue color values.
+      * 
+      * Populated during the `setMethods` method.
+      */
+    /* CompleteClass */
+    var b: js.Array[Double] = js.native
+    
+    /**
+      * An `onUpdate` callback that returns an eased value between the
+      * {@link Phaser.GameObjects.Particles.EmitterColorOp#start} and {@link Phaser.GameObjects.Particles.EmitterColorOp#end}
+      * range.
+      * @param particle The particle.
+      * @param key The name of the property.
+      * @param t The current normalized lifetime of the particle, between 0 (birth) and 1 (death).
+      */
+    /* CompleteClass */
+    override def easeValueUpdate(particle: typings.phaser.Phaser.GameObjects.Particles.Particle, key: String, t: Double): Double = js.native
+    
+    /**
+      * An `onEmit` callback for an eased property.
+      * 
+      * It prepares the particle for easing by {@link Phaser.GameObjects.Particles.EmitterColorOp#easeValueUpdate}.
+      * @param particle The particle.
+      * @param key The name of the property.
+      */
+    /* CompleteClass */
+    override def easedValueEmit(particle: typings.phaser.Phaser.GameObjects.Particles.Particle, key: String): Double = js.native
+    
+    /**
+      * An array containing the green color values.
+      * 
+      * Populated during the `setMethods` method.
+      */
+    /* CompleteClass */
+    var g: js.Array[Double] = js.native
+    
+    /**
+      * Checks the type of `EmitterOp.propertyValue` to determine which
+      * method is required in order to return values from this op function.
+      */
+    /* CompleteClass */
+    override def getMethod(): Double = js.native
+    
+    /**
+      * An array containing the red color values.
+      * 
+      * Populated during the `setMethods` method.
+      */
+    /* CompleteClass */
+    var r: js.Array[Double] = js.native
+    
+    /**
+      * Sets the Ease function to use for Color interpolation.
+      * @param ease The string-based name of the Ease function to use.
+      */
+    /* CompleteClass */
+    override def setEase(ease: String): Unit = js.native
+    
+    /**
+      * Sets the EmitterColorOp method values, if in use.
+      */
+    /* CompleteClass */
+    override def setMethods(): this.type = js.native
+  }
+  
+  /**
+    * This class is responsible for taking control over a single property
+    * in the Particle class and managing its emission and updating functions.
+    * 
+    * Particles properties such as `x`, `y`, `scaleX`, `lifespan` and others all use
+    * EmitterOp instances to manage them, as they can be given in a variety of
+    * formats: from simple values, to functions, to dynamic callbacks.
+    * 
+    * See the `ParticleEmitter` class for more details on emitter op configuration.
     */
   @JSImport("phaser", "GameObjects.Particles.EmitterOp")
   @js.native
@@ -26,19 +113,90 @@ object Particles {
        with typings.phaser.Phaser.GameObjects.Particles.EmitterOp {
     /**
       * 
-      * @param config Settings for the Particle Emitter that owns this property.
       * @param key The name of the property.
       * @param defaultValue The default value of the property.
       * @param emitOnly Whether the property can only be modified when a Particle is emitted. Default false.
       */
-    def this(config: ParticleEmitterConfig, key: String, defaultValue: Double) = this()
-    def this(config: ParticleEmitterConfig, key: String, defaultValue: Double, emitOnly: Boolean) = this()
+    def this(key: String, defaultValue: EmitterOpOnEmitType) = this()
+    def this(key: String, defaultValue: EmitterOpOnEmitType, emitOnly: Boolean) = this()
+  }
+  
+  object Events {
+    
+    /**
+      * The Particle Emitter Complete Event.
+      * 
+      * This event is dispatched when the final particle, emitted from a Particle Emitter that
+      * has been stopped, dies. Upon receipt of this event you know that no particles are
+      * still rendering at this point in time.
+      * 
+      * Listen for it on a Particle Emitter instance using `ParticleEmitter.on('complete', listener)`.
+      */
+    @JSImport("phaser", "GameObjects.Particles.Events.COMPLETE")
+    @js.native
+    val COMPLETE: String = js.native
+    
+    /**
+      * The Particle Emitter Death Zone Event.
+      * 
+      * This event is dispatched when a Death Zone kills a Particle instance.
+      * 
+      * Listen for it on a Particle Emitter instance using `ParticleEmitter.on('deathzone', listener)`.
+      * 
+      * If you wish to know when the final particle is killed, see the `COMPLETE` event.
+      */
+    @JSImport("phaser", "GameObjects.Particles.Events.DEATH_ZONE")
+    @js.native
+    val DEATH_ZONE: String = js.native
+    
+    /**
+      * The Particle Emitter Explode Event.
+      * 
+      * This event is dispatched when a Particle Emitter explodes a set of particles.
+      * 
+      * Listen for it on a Particle Emitter instance using `ParticleEmitter.on('explode', listener)`.
+      */
+    @JSImport("phaser", "GameObjects.Particles.Events.EXPLODE")
+    @js.native
+    val EXPLODE: String = js.native
+    
+    /**
+      * The Particle Emitter Start Event.
+      * 
+      * This event is dispatched when a Particle Emitter starts emission of particles.
+      * 
+      * Listen for it on a Particle Emitter instance using `ParticleEmitter.on('start', listener)`.
+      */
+    @JSImport("phaser", "GameObjects.Particles.Events.START")
+    @js.native
+    val START: String = js.native
+    
+    /**
+      * The Particle Emitter Stop Event.
+      * 
+      * This event is dispatched when a Particle Emitter is stopped. This can happen either
+      * when you directly call the `ParticleEmitter.stop` method, or if the emitter has
+      * been configured to stop after a set time via the `duration` property, or after a
+      * set number of particles via the `stopAfter` property.
+      * 
+      * Listen for it on a Particle Emitter instance using `ParticleEmitter.on('stop', listener)`.
+      * 
+      * Note that just because the emitter has stopped, that doesn't mean there aren't still
+      * particles alive and rendering. It just means the emitter has stopped emitting particles.
+      * 
+      * If you wish to know when the final particle is killed, see the `COMPLETE` event.
+      */
+    @JSImport("phaser", "GameObjects.Particles.Events.STOP")
+    @js.native
+    val STOP: String = js.native
   }
   
   /**
-    * The GravityWell action applies a force on the particle to draw it towards, or repel it from, a single point.
+    * The Gravity Well Particle Processor applies a force on the particles to draw
+    * them towards, or repel them from, a single point.
     * 
-    * The force applied is inversely proportional to the square of the distance from the particle to the point, in accordance with Newton's law of gravity.
+    * The force applied is inversely proportional to the square of the distance
+    * from the particle to the point, in accordance with Newton's law of gravity.
     * 
     * This simulates the effect of gravity over large distances (as between planets, for example).
     */
@@ -104,19 +262,50 @@ object Particles {
     def this(x: GravityWellConfig, y: Unit, power: Unit, epsilon: Unit, gravity: Double) = this()
     
     /**
-      * The active state of the Gravity Well. An inactive Gravity Well will not influence any particles.
+      * The active state of the Particle Processor.
+      * 
+      * An inactive Particle Processor will be skipped for processing by
+      * its parent Emitter.
       */
     /* CompleteClass */
     var active: Boolean = js.native
     
     /**
+      * Destroys this Particle Processor by removing all external references.
+      * 
+      * This is called automatically when the owning Particle Emitter is destroyed.
+      */
+    /* CompleteClass */
+    override def destroy(): Unit = js.native
+    
+    /**
       * The minimum distance for which the gravity force is calculated.
+      * 
+      * Defaults to 100.
       */
     /* CompleteClass */
     var epsilon: Double = js.native
     
     /**
+      * The gravitational force of this Gravity Well.
+      * 
+      * Defaults to 50.
+      */
+    /* CompleteClass */
+    var gravity: Double = js.native
+    
+    /**
+      * A reference to the Particle Emitter that owns this Processor.
+      * This is set automatically when the Processor is added to an Emitter
+      * and nulled when removed or destroyed.
+      */
+    /* CompleteClass */
+    var manager: typings.phaser.Phaser.GameObjects.Particles.ParticleEmitter = js.native
+    
+    /**
       * The strength of the gravity force - larger numbers produce a stronger force.
+      * 
+      * Defaults to 0.
       */
     /* CompleteClass */
     var power: Double = js.native
@@ -129,23 +318,41 @@ object Particles {
       */
     /* CompleteClass */
     override def update(particle: typings.phaser.Phaser.GameObjects.Particles.Particle, delta: Double, step: Double): Unit = js.native
+    /**
+      * The Particle Processor update method should be overriden by your own
+      * method and handle the processing of the particles, typically modifying
+      * their velocityX/Y values based on the criteria of this processor.
+      * @param particle The Particle to update.
+      * @param delta The delta time in ms.
+      * @param step The delta value divided by 1000.
+      * @param t The current normalized lifetime of the particle, between 0 (birth) and 1 (death).
+      */
+    /* CompleteClass */
+    override def update(
+      particle: typings.phaser.Phaser.GameObjects.Particles.Particle,
+      delta: Double,
+      step: Double,
+      t: Double
+    ): Unit = js.native
     
     /**
-      * The x coordinate of the Gravity Well, in world space.
+      * The x coordinate of the Particle Processor, in world space.
       */
     /* CompleteClass */
     var x: Double = js.native
     
     /**
-      * The y coordinate of the Gravity Well, in world space.
+      * The y coordinate of the Particle Processor, in world space.
       */
     /* CompleteClass */
     var y: Double = js.native
   }
   
   /**
-    * A Particle is a simple Game Object controlled by a Particle Emitter and Manager, and rendered by the Manager.
-    * It uses its own lightweight physics system, and can interact only with its Emitter's bounds and zones.
+    * A Particle is a simple object owned and controlled by a Particle Emitter.
+    * 
+    * It encapsulates all of the properties required to move and update according
+    * to the Emitters operations.
     */
   @JSImport("phaser", "GameObjects.Particles.Particle")
   @js.native
@@ -157,200 +364,461 @@ object Particles {
       * @param emitter The Emitter to which this Particle belongs.
       */
     def this(emitter: typings.phaser.Phaser.GameObjects.Particles.ParticleEmitter) = this()
-    
+  }
+  
+  /**
+    * The Particle Bounds Processor.
+    * 
+    * Defines a rectangular region, in world space, within which particle movement
+    * is restrained.
+    * 
+    * Use the properties `collideLeft`, `collideRight`, `collideTop` and
+    * `collideBottom` to control if a particle will rebound off the sides
+    * of this boundary, or not.
+    * 
+    * This happens when the particles worldPosition x/y coordinate hits the boundary.
+    * 
+    * The strength of the rebound is determined by the `Particle.bounce` property.
+    */
+  @JSImport("phaser", "GameObjects.Particles.ParticleBounds")
+  @js.native
+  open class ParticleBounds protected ()
+    extends StObject
+       with typings.phaser.Phaser.GameObjects.Particles.ParticleBounds {
     /**
-      * The x acceleration of this Particle.
-      */
-    /* CompleteClass */
-    var accelerationX: Double = js.native
-    
-    /**
-      * The y acceleration of this Particle.
-      */
-    /* CompleteClass */
-    var accelerationY: Double = js.native
-    
-    /**
-      * The alpha value of this Particle.
-      */
-    /* CompleteClass */
-    var alpha: Double = js.native
-    
-    /**
-      * The angle of this Particle in degrees.
-      */
-    /* CompleteClass */
-    var angle: Double = js.native
-    
-    /**
-      * The bounciness, or restitution, of this Particle.
-      */
-    /* CompleteClass */
-    var bounce: Double = js.native
-    
-    /**
-      * Checks if this Particle is still within the bounds defined by the given Emitter.
       * 
-      * If not, and depending on the Emitter collision flags, the Particle may either stop or rebound.
-      * @param emitter The Emitter to check the bounds against.
+      * @param x The x position (top-left) of the bounds, in world space.
+      * @param y The y position (top-left) of the bounds, in world space.
+      * @param width The width of the bounds.
+      * @param height The height of the bounds.
+      * @param collideLeft Whether particles interact with the left edge of the bounds. Default true.
+      * @param collideRight Whether particles interact with the right edge of the bounds. Default true.
+      * @param collideTop Whether particles interact with the top edge of the bounds. Default true.
+      * @param collideBottom Whether particles interact with the bottom edge of the bounds. Default true.
       */
-    /* CompleteClass */
-    override def checkBounds(emitter: typings.phaser.Phaser.GameObjects.Particles.ParticleEmitter): Unit = js.native
+    def this(x: Double, y: Double, width: Double, height: Double) = this()
+    def this(x: Double, y: Double, width: Double, height: Double, collideLeft: Boolean) = this()
+    def this(x: Double, y: Double, width: Double, height: Double, collideLeft: Boolean, collideRight: Boolean) = this()
+    def this(x: Double, y: Double, width: Double, height: Double, collideLeft: Unit, collideRight: Boolean) = this()
+    def this(
+      x: Double,
+      y: Double,
+      width: Double,
+      height: Double,
+      collideLeft: Boolean,
+      collideRight: Boolean,
+      collideTop: Boolean
+    ) = this()
+    def this(
+      x: Double,
+      y: Double,
+      width: Double,
+      height: Double,
+      collideLeft: Boolean,
+      collideRight: Unit,
+      collideTop: Boolean
+    ) = this()
+    def this(
+      x: Double,
+      y: Double,
+      width: Double,
+      height: Double,
+      collideLeft: Unit,
+      collideRight: Boolean,
+      collideTop: Boolean
+    ) = this()
+    def this(
+      x: Double,
+      y: Double,
+      width: Double,
+      height: Double,
+      collideLeft: Unit,
+      collideRight: Unit,
+      collideTop: Boolean
+    ) = this()
+    def this(
+      x: Double,
+      y: Double,
+      width: Double,
+      height: Double,
+      collideLeft: Boolean,
+      collideRight: Boolean,
+      collideTop: Boolean,
+      collideBottom: Boolean
+    ) = this()
+    def this(
+      x: Double,
+      y: Double,
+      width: Double,
+      height: Double,
+      collideLeft: Boolean,
+      collideRight: Boolean,
+      collideTop: Unit,
+      collideBottom: Boolean
+    ) = this()
+    def this(
+      x: Double,
+      y: Double,
+      width: Double,
+      height: Double,
+      collideLeft: Boolean,
+      collideRight: Unit,
+      collideTop: Boolean,
+      collideBottom: Boolean
+    ) = this()
+    def this(
+      x: Double,
+      y: Double,
+      width: Double,
+      height: Double,
+      collideLeft: Boolean,
+      collideRight: Unit,
+      collideTop: Unit,
+      collideBottom: Boolean
+    ) = this()
+    def this(
+      x: Double,
+      y: Double,
+      width: Double,
+      height: Double,
+      collideLeft: Unit,
+      collideRight: Boolean,
+      collideTop: Boolean,
+      collideBottom: Boolean
+    ) = this()
+    def this(
+      x: Double,
+      y: Double,
+      width: Double,
+      height: Double,
+      collideLeft: Unit,
+      collideRight: Boolean,
+      collideTop: Unit,
+      collideBottom: Boolean
+    ) = this()
+    def this(
+      x: Double,
+      y: Double,
+      width: Double,
+      height: Double,
+      collideLeft: Unit,
+      collideRight: Unit,
+      collideTop: Boolean,
+      collideBottom: Boolean
+    ) = this()
+    def this(
+      x: Double,
+      y: Double,
+      width: Double,
+      height: Double,
+      collideLeft: Unit,
+      collideRight: Unit,
+      collideTop: Unit,
+      collideBottom: Boolean
+    ) = this()
     
     /**
-      * An internal method that calculates the velocity of the Particle.
-      * @param emitter The Emitter that is updating this Particle.
+      * The active state of the Particle Processor.
+      * 
+      * An inactive Particle Processor will be skipped for processing by
+      * its parent Emitter.
+      */
+    /* CompleteClass */
+    var active: Boolean = js.native
+    
+    /**
+      * A rectangular boundary constraining particle movement. Use the Emitter properties `collideLeft`,
+      * `collideRight`, `collideTop` and `collideBottom` to control if a particle will rebound off
+      * the sides of this boundary, or not. This happens when the particles x/y coordinate hits
+      * the boundary.
+      */
+    /* CompleteClass */
+    var bounds: typings.phaser.Phaser.Geom.Rectangle = js.native
+    
+    /**
+      * Whether particles interact with the bottom edge of the emitter {@link Phaser.GameObjects.Particles.ParticleBounds#bounds}.
+      */
+    /* CompleteClass */
+    var collideBottom: Boolean = js.native
+    
+    /**
+      * Whether particles interact with the left edge of the emitter {@link Phaser.GameObjects.Particles.ParticleEmitter#bounds}.
+      */
+    /* CompleteClass */
+    var collideLeft: Boolean = js.native
+    
+    /**
+      * Whether particles interact with the right edge of the emitter {@link Phaser.GameObjects.Particles.ParticleBounds#bounds}.
+      */
+    /* CompleteClass */
+    var collideRight: Boolean = js.native
+    
+    /**
+      * Whether particles interact with the top edge of the emitter {@link Phaser.GameObjects.Particles.ParticleBounds#bounds}.
+      */
+    /* CompleteClass */
+    var collideTop: Boolean = js.native
+    
+    /**
+      * Destroys this Particle Processor by removing all external references.
+      * 
+      * This is called automatically when the owning Particle Emitter is destroyed.
+      */
+    /* CompleteClass */
+    override def destroy(): Unit = js.native
+    
+    /**
+      * A reference to the Particle Emitter that owns this Processor.
+      * This is set automatically when the Processor is added to an Emitter
+      * and nulled when removed or destroyed.
+      */
+    /* CompleteClass */
+    var manager: typings.phaser.Phaser.GameObjects.Particles.ParticleEmitter = js.native
+    
+    /**
+      * Takes a Particle and updates it against the bounds.
+      * @param particle The Particle to update.
+      */
+    /* CompleteClass */
+    override def update(particle: typings.phaser.Phaser.GameObjects.Particles.Particle): Unit = js.native
+    /**
+      * The Particle Processor update method should be overriden by your own
+      * method and handle the processing of the particles, typically modifying
+      * their velocityX/Y values based on the criteria of this processor.
+      * @param particle The Particle to update.
       * @param delta The delta time in ms.
       * @param step The delta value divided by 1000.
-      * @param processors Particle processors (gravity wells).
+      * @param t The current normalized lifetime of the particle, between 0 (birth) and 1 (death).
       */
     /* CompleteClass */
-    override def computeVelocity(
-      emitter: typings.phaser.Phaser.GameObjects.Particles.ParticleEmitter,
+    override def update(
+      particle: typings.phaser.Phaser.GameObjects.Particles.Particle,
       delta: Double,
       step: Double,
-      processors: js.Array[Any]
+      t: Double
     ): Unit = js.native
     
     /**
-      * The data used by the ease equation.
-      */
-    /* CompleteClass */
-    var data: js.Object = js.native
-    
-    /**
-      * The delay applied to this Particle upon emission, in ms.
-      */
-    /* CompleteClass */
-    var delayCurrent: Double = js.native
-    
-    /**
-      * The Emitter to which this Particle belongs.
-      * 
-      * A Particle can only belong to a single Emitter and is created, updated and destroyed via it.
-      */
-    /* CompleteClass */
-    var emitter: typings.phaser.Phaser.GameObjects.Particles.ParticleEmitter = js.native
-    
-    /**
-      * Starts this Particle from the given coordinates.
-      * @param x The x coordinate to launch this Particle from.
-      * @param y The y coordinate to launch this Particle from.
-      */
-    /* CompleteClass */
-    override def fire(x: Double, y: Double): Unit = js.native
-    
-    /**
-      * The texture frame used to render this Particle.
-      */
-    /* CompleteClass */
-    var frame: Frame = js.native
-    
-    /**
-      * Checks to see if this Particle is alive and updating.
-      */
-    /* CompleteClass */
-    override def isAlive(): Boolean = js.native
-    
-    /**
-      * The lifespan of this Particle in ms.
-      */
-    /* CompleteClass */
-    var life: Double = js.native
-    
-    /**
-      * The current life of this Particle in ms.
-      */
-    /* CompleteClass */
-    var lifeCurrent: Double = js.native
-    
-    /**
-      * The normalized lifespan T value, where 0 is the start and 1 is the end.
-      */
-    /* CompleteClass */
-    var lifeT: Double = js.native
-    
-    /**
-      * The maximum horizontal velocity this Particle can travel at.
-      */
-    /* CompleteClass */
-    var maxVelocityX: Double = js.native
-    
-    /**
-      * The maximum vertical velocity this Particle can travel at.
-      */
-    /* CompleteClass */
-    var maxVelocityY: Double = js.native
-    
-    /**
-      * Resets the position of this particle back to zero.
-      */
-    /* CompleteClass */
-    override def resetPosition(): Unit = js.native
-    
-    /**
-      * The angle of this Particle in radians.
-      */
-    /* CompleteClass */
-    var rotation: Double = js.native
-    
-    /**
-      * The horizontal scale of this Particle.
-      */
-    /* CompleteClass */
-    var scaleX: Double = js.native
-    
-    /**
-      * The vertical scale of this Particle.
-      */
-    /* CompleteClass */
-    var scaleY: Double = js.native
-    
-    /**
-      * The tint applied to this Particle.
-      */
-    /* CompleteClass */
-    var tint: Double = js.native
-    
-    /**
-      * The main update method for this Particle.
-      * 
-      * Updates its life values, computes the velocity and repositions the Particle.
-      * @param delta The delta time in ms.
-      * @param step The delta value divided by 1000.
-      * @param processors An optional array of update processors.
-      */
-    /* CompleteClass */
-    override def update(delta: Double, step: Double, processors: js.Array[Any]): Boolean = js.native
-    
-    /**
-      * The x velocity of this Particle.
-      */
-    /* CompleteClass */
-    var velocityX: Double = js.native
-    
-    /**
-      * The y velocity of this Particle.
-      */
-    /* CompleteClass */
-    var velocityY: Double = js.native
-    
-    /**
-      * The x coordinate of this Particle.
+      * The x coordinate of the Particle Processor, in world space.
       */
     /* CompleteClass */
     var x: Double = js.native
     
     /**
-      * The y coordinate of this Particle.
+      * The y coordinate of the Particle Processor, in world space.
       */
     /* CompleteClass */
     var y: Double = js.native
   }
   
   /**
-    * A particle emitter represents a single particle stream.
-    * It controls a pool of {@link Phaser.GameObjects.Particles.Particle Particles} and is controlled by a {@link Phaser.GameObjects.Particles.ParticleEmitterManager Particle Emitter Manager}.
+    * A Particle Emitter is a special kind of Game Object that controls a pool of {@link Phaser.GameObjects.Particles.Particle Particles}.
+    * 
+    * Particle Emitters are created via a configuration object. The properties of this object
+    * can be specified in a variety of formats, given you plenty of scope over the values they
+    * return, leading to complex visual effects. Here are the different forms of configuration
+    * value you can give:
+    * 
+    * ## An explicit static value:
+    * 
+    * ```js
+    * x: 400
+    * ```
+    * 
+    * The x value will always be 400 when the particle is spawned.
+    * 
+    * ## A random value:
+    * 
+    * ```js
+    * x: [ 100, 200, 300, 400 ]
+    * ```
+    * 
+    * The x value will be one of the 4 elements in the given array, picked at random on emission.
+    * 
+    * ## A custom callback:
+    * 
+    * ```js
+    * x: (particle, key, t, value) => {
+    *   return value + 50;
+    * }
+    * ```
+    * 
+    * The x value is the result of calling this function. This is only used when the
+    * particle is emitted, so it provides it's initial starting value. It is not used
+    * when the particle is updated (see the onUpdate callback for that)
+    * 
+    * ## A start / end object:
+    * 
+    * This allows you to control the change in value between the given start and
+    * end parameters over the course of the particles lifetime:
+    * 
+    * ```js
+    * scale: { start: 0, end: 1 }
+    * ```
+    * 
+    * The particle scale will start at 0 when emitted and ease to a scale of 1
+    * over the course of its lifetime. You can also specify the ease function
+    * used for this change (the default is Linear):
+    * 
+    * ```js
+    * scale: { start: 0, end: 1, ease: 'bounce.out' }
+    * ```
+    * 
+    * ## A start / end random object:
+    * 
+    * The start and end object can have an optional `random` parameter.
+    * This forces it to pick a random value between the two values and use
+    * this as the starting value, then easing to the 'end' parameter over
+    * its lifetime.
+    * 
+    * ```js
+    * scale: { start: 4, end: 0.5, random: true }
+    * ```
+    * 
+    * The particle will start with a random scale between 0.5 and 4 and then
+    * scale to the end value over its lifetime. You can combine the above
+    * with the `ease` parameter as well to control the value easing.
+    * 
+    * ## An interpolation object:
+    * 
+    * You can provide an array of values which will be used for interpolation
+    * during the particles lifetime. You can also define the interpolation
+    * function to be used. There are three provided: `linear` (the default),
+    * `bezier` and `catmull`, or you can provide your own function.
+    * 
+    * ```js
+    * x: { values: [ 50, 500, 200, 800 ], interpolation: 'catmull' }
+    * ```
+    * 
+    * The particle scale will interpolate from 50 when emitted to 800 via the other
+    * points over the course of its lifetime. You can also specify an ease function
+    * used to control the rate of change through the values (the default is Linear):
+    * 
+    * ```js
+    * x: { values: [ 50, 500, 200, 800 ], interpolation: 'catmull', ease: 'bounce.out }
+    * ```
+    * 
+    * ## A stepped emitter object:
+    * 
+    * The `steps` parameter allows you to control the placement of sequential
+    * particles across the start-end range:
+    * 
+    * ```js
+    * x: { steps: 32, start: 0, end: 576 }
+    * ```
+    * 
+    * Here we have a range of 576 (start to end). This is divided into 32 steps.
+    * 
+    * The first particle will emit at the x position of 0. The next will emit
+    * at the next 'step' along, which would be 18. The following particle will emit
+    * at the next step, which is 36, and so on. Because the range of 576 has been
+    * divided by 32, creating 18 pixels steps. When a particle reaches the 'end'
+    * value the next one will start from the beginning again.
+    * 
+    * ## A stepped emitter object with yoyo:
+    * 
+    * You can add the optional `yoyo` property to a stepped object:
+    * 
+    * ```js
+    * x: { steps: 32, start: 0, end: 576, yoyo: true }
+    * ```
+    * 
+    * As with the stepped emitter, particles are emitted in sequence, from 'start'
+    * to 'end' in step sized jumps. Normally, when a stepped emitter reaches the
+    * end it snaps around to the start value again. However, if you provide the 'yoyo'
+    * parameter then when it reaches the end it will reverse direction and start
+    * emitting back down to 'start' again. Depending on the effect you require this
+    * can often look better.
+    * 
+    * ## A min / max object:
+    * 
+    * This allows you to pick a random float value between the min and max properties:
+    * 
+    * ```js
+    * x: { min: 100, max: 700 }
+    * ```
+    * 
+    * The x value will be a random float between min and max.
+    * 
+    * You can force it select an integer by setting the 'int' flag:
+    * 
+    * ```js
+    * x: { min: 100, max: 700, int: true }
+    * ```
+    * 
+    * Or, you could use the 'random' array approach (see below)
+    * 
+    * ## A random object:
+    * 
+    * This allows you to pick a random integer value between the first and second array elements:
+    * 
+    * ```js
+    * x: { random: [ 100, 700 ] }
+    * ```
+    * 
+    * The x value will be a random integer between 100 and 700 as it takes the first
+    * element in the 'random' array as the 'min' value and the 2nd element as the 'max' value.
+    * 
+    * ## Custom onEmit and onUpdate callbacks:
+    * 
+    * If the above won't give you the effect you're after, you can provide your own
+    * callbacks that will be used when the particle is both emitted and updated:
+    * 
+    * ```js
+    * x: {
+    *   onEmit: (particle, key, t, value) => {
+    *     return value;
+    *   },
+    *   onUpdate: (particle, key, t, value) => {
+    *     return value;
+    *   }
+    * }
+    * ```
+    * 
+    * You can provide either one or both functions. The `onEmit` is called at the
+    * start of the particles life and defines the value of the property on birth.
+    * 
+    * The `onUpdate` function is called every time the Particle Emitter updates
+    * until the particle dies. Both must return a value.
+    * 
+    * The properties are:
+    * 
+    * particle - A reference to the Particle instance.
+    * key - The string based key of the property, i.e. 'x' or 'lifespan'.
+    * t - The current normalized lifetime of the particle, between 0 (birth) and 1 (death).
+    * value - The current property value. At a minimum you should return this.
+    * 
+    * By using the above configuration options you have an unlimited about of
+    * control over how your particles behave.
+    * 
+    * ## v3.55 Differences
+    * 
+    * Prior to v3.60 Phaser used a `ParticleEmitterManager`. This was removed in v3.60
+    * and now calling `this.add.particles` returns a `ParticleEmitter` instance instead.
+    * 
+    * In order to streamline memory and the display list we have removed the
+    * `ParticleEmitterManager` entirely. When you call `this.add.particles` you're now
+    * creating a `ParticleEmitter` instance, which is being added directly to the
+    * display list and can be manipulated just like any other Game Object, i.e.
+    * scaled, rotated, positioned, added to a Container, etc. It now extends the
+    * `GameObject` base class, meaning it's also an event emitter, which allowed us
+    * to create some handy new events for particles.
+    * 
+    * So, to create an emitter, you now give it an xy coordinate, a texture and an
+    * emitter configuration object (you can also set this later, but most commonly
+    * you'd do it on creation). I.e.:
+    * 
+    * ```js
+    * const emitter = this.add.particles(100, 300, 'flares', {
+    *   frame: 'red',
+    *   angle: { min: -30, max: 30 },
+    *   speed: 150
+    * });
+    * ```
+    * 
+    * This will create a 'red flare' emitter at 100 x 300.
+    * 
+    * Please update your code to ensure it adheres to the new function signatures.
     */
   @JSImport("phaser", "GameObjects.Particles.ParticleEmitter")
   @js.native
@@ -359,59 +827,12 @@ object Particles {
        with typings.phaser.Phaser.GameObjects.Particles.ParticleEmitter {
     /**
       * 
-      * @param manager The Emitter Manager this Emitter belongs to.
       * @param config Settings for this emitter.
       */
-    def this(
-      manager: typings.phaser.Phaser.GameObjects.Particles.ParticleEmitterManager,
-      config: ParticleEmitterConfig
-    ) = this()
+    def this(config: ParticleEmitterConfig) = this()
     
     /**
-      * Sets the visibility of this Game Object.
-      * 
-      * An invisible Game Object will skip rendering, but will still process update logic.
-      * @param value The visible state of the Game Object.
-      */
-    /* CompleteClass */
-    override def setVisible(value: Boolean): this.type = js.native
-    
-    /**
-      * The visible state of the Game Object.
-      * 
-      * An invisible Game Object will skip rendering, but will still process update logic.
-      */
-    /* CompleteClass */
-    var visible: Boolean = js.native
-  }
-  
-  /**
-    * A Particle Emitter Manager creates and controls {@link Phaser.GameObjects.Particles.ParticleEmitter Particle Emitters} and {@link Phaser.GameObjects.Particles.GravityWell Gravity Wells}.
-    */
-  @JSImport("phaser", "GameObjects.Particles.ParticleEmitterManager")
-  @js.native
-  open class ParticleEmitterManager protected ()
-    extends StObject
-       with typings.phaser.Phaser.GameObjects.Particles.ParticleEmitterManager {
-    /**
-      * 
-      * @param scene The Scene to which this Emitter Manager belongs.
-      * @param texture The key of the Texture this Emitter Manager will use to render particles, as stored in the Texture Manager.
-      * @param frame An optional frame from the Texture this Emitter Manager will use to render particles.
-      * @param emitters Configuration settings for one or more emitters to create.
-      */
-    def this(scene: Scene, texture: String) = this()
-    def this(scene: Scene, texture: String, frame: String) = this()
-    def this(scene: Scene, texture: String, frame: Double) = this()
-    def this(scene: Scene, texture: String, frame: String, emitters: js.Array[ParticleEmitterConfig]) = this()
-    def this(scene: Scene, texture: String, frame: String, emitters: ParticleEmitterConfig) = this()
-    def this(scene: Scene, texture: String, frame: Double, emitters: js.Array[ParticleEmitterConfig]) = this()
-    def this(scene: Scene, texture: String, frame: Double, emitters: ParticleEmitterConfig) = this()
-    def this(scene: Scene, texture: String, frame: Unit, emitters: js.Array[ParticleEmitterConfig]) = this()
-    def this(scene: Scene, texture: String, frame: Unit, emitters: ParticleEmitterConfig) = this()
-    
-    /**
-      * The depth of this Game Object within the Scene.
+      * The depth of this Game Object within the Scene. Ensure this value is only ever set to a number data-type.
       * 
       * The depth is also known as the 'z-index' in some environments, and allows you to change the rendering order
       * of Game Objects, without actually moving their position in the display list.
@@ -434,7 +855,7 @@ object Particles {
       * value will always render in front of one with a lower value.
       * 
       * Setting the depth will queue a depth sort event within the Scene.
-      * @param value The depth of this Game Object.
+      * @param value The depth of this Game Object. Ensure this value is only ever a number data-type.
       */
     /* CompleteClass */
     override def setDepth(value: Double): this.type = js.native
@@ -455,6 +876,88 @@ object Particles {
       */
     /* CompleteClass */
     var visible: Boolean = js.native
+  }
+  
+  /**
+    * This class provides the structured required for all Particle Processors.
+    * 
+    * You should extend it and add the functionality required for your processor,
+    * including tidying up any resources this may create in the `destroy` method.
+    * 
+    * See the GravityWell for an example of a processor.
+    */
+  @JSImport("phaser", "GameObjects.Particles.ParticleProcessor")
+  @js.native
+  /**
+    * 
+    * @param x The x coordinate of the Particle Processor, in world space. Default 0.
+    * @param y The y coordinate of the Particle Processor, in world space. Default 0.
+    * @param active The active state of this Particle Processor. Default true.
+    */
+  open class ParticleProcessor ()
+    extends StObject
+       with typings.phaser.Phaser.GameObjects.Particles.ParticleProcessor {
+    def this(x: Double) = this()
+    def this(x: Double, y: Double) = this()
+    def this(x: Unit, y: Double) = this()
+    def this(x: Double, y: Double, active: Boolean) = this()
+    def this(x: Double, y: Unit, active: Boolean) = this()
+    def this(x: Unit, y: Double, active: Boolean) = this()
+    def this(x: Unit, y: Unit, active: Boolean) = this()
+    
+    /**
+      * The active state of the Particle Processor.
+      * 
+      * An inactive Particle Processor will be skipped for processing by
+      * its parent Emitter.
+      */
+    /* CompleteClass */
+    var active: Boolean = js.native
+    
+    /**
+      * Destroys this Particle Processor by removing all external references.
+      * 
+      * This is called automatically when the owning Particle Emitter is destroyed.
+      */
+    /* CompleteClass */
+    override def destroy(): Unit = js.native
+    
+    /**
+      * A reference to the Particle Emitter that owns this Processor.
+      * This is set automatically when the Processor is added to an Emitter
+      * and nulled when removed or destroyed.
+      */
+    /* CompleteClass */
+    var manager: typings.phaser.Phaser.GameObjects.Particles.ParticleEmitter = js.native
+    
+    /**
+      * The Particle Processor update method should be overriden by your own
+      * method and handle the processing of the particles, typically modifying
+      * their velocityX/Y values based on the criteria of this processor.
+      * @param particle The Particle to update.
+      * @param delta The delta time in ms.
+      * @param step The delta value divided by 1000.
+      * @param t The current normalized lifetime of the particle, between 0 (birth) and 1 (death).
+      */
+    /* CompleteClass */
+    override def update(
+      particle: typings.phaser.Phaser.GameObjects.Particles.Particle,
+      delta: Double,
+      step: Double,
+      t: Double
+    ): Unit = js.native
+    
+    /**
+      * The x coordinate of the Particle Processor, in world space.
+      */
+    /* CompleteClass */
+    var x: Double = js.native
+    
+    /**
+      * The y coordinate of the Particle Processor, in world space.
+      */
+    /* CompleteClass */
+    var y: Double = js.native
   }
   
   object Zones {
@@ -495,7 +998,7 @@ object Particles {
       
       /**
         * Checks if the given Particle will be killed or not by this zone.
-        * @param particle The Particle to be checked against this zone.
+        * @param particle The particle to test against this Death Zones.
         */
       /* CompleteClass */
       override def willKill(particle: typings.phaser.Phaser.GameObjects.Particles.Particle): Boolean = js.native
@@ -516,11 +1019,44 @@ object Particles {
         * @param stepRate The distance between each particle. When set, `quantity` is implied and should be set to 0.
         * @param yoyo Whether particles are placed from start to end and then end to start. Default false.
         * @param seamless Whether one endpoint will be removed if it's identical to the other. Default true.
+        * @param total The total number of particles this zone will emit before passing over to the next emission zone in the Emitter. -1 means it will never pass over and you must use `setEmitZone` to change it. Default -1.
         */
       def this(source: EdgeZoneSource, quantity: Double, stepRate: Double) = this()
       def this(source: EdgeZoneSource, quantity: Double, stepRate: Double, yoyo: Boolean) = this()
       def this(source: EdgeZoneSource, quantity: Double, stepRate: Double, yoyo: Boolean, seamless: Boolean) = this()
       def this(source: EdgeZoneSource, quantity: Double, stepRate: Double, yoyo: Unit, seamless: Boolean) = this()
+      def this(
+        source: EdgeZoneSource,
+        quantity: Double,
+        stepRate: Double,
+        yoyo: Boolean,
+        seamless: Boolean,
+        total: Double
+      ) = this()
+      def this(
+        source: EdgeZoneSource,
+        quantity: Double,
+        stepRate: Double,
+        yoyo: Boolean,
+        seamless: Unit,
+        total: Double
+      ) = this()
+      def this(
+        source: EdgeZoneSource,
+        quantity: Double,
+        stepRate: Double,
+        yoyo: Unit,
+        seamless: Boolean,
+        total: Double
+      ) = this()
+      def this(
+        source: EdgeZoneSource,
+        quantity: Double,
+        stepRate: Double,
+        yoyo: Unit,
+        seamless: Unit,
+        total: Double
+      ) = this()
       
       /**
         * Change the source of the EdgeZone.
@@ -573,6 +1109,21 @@ object Particles {
       var stepRate: Double = js.native
       
       /**
+        * The total number of particles this zone will emit before the Emitter
+        * transfers control over to the next zone in its emission zone list.
+        * 
+        * By default this is -1, meaning it will never pass over from this
+        * zone to another one. You can call the `ParticleEmitter.setEmitZone`
+        * method to change it, or set this value to something else via the
+        * config, or directly at runtime.
+        * 
+        * A value of 1 would mean the zones rotate in order, but it can
+        * be set to any integer value.
+        */
+      /* CompleteClass */
+      var total: Double = js.native
+      
+      /**
         * Update the {@link Phaser.GameObjects.Particles.Zones.EdgeZone#points} from the EdgeZone's
         * {@link Phaser.GameObjects.Particles.Zones.EdgeZone#source}.
         * 
@@ -614,6 +1165,21 @@ object Particles {
         */
       /* CompleteClass */
       var source: RandomZoneSource = js.native
+      
+      /**
+        * The total number of particles this zone will emit before the Emitter
+        * transfers control over to the next zone in its emission zone list.
+        * 
+        * By default this is -1, meaning it will never pass over from this
+        * zone to another one. You can call the `ParticleEmitter.setEmitZone`
+        * method to change it, or set this value to something else via the
+        * config, or directly at runtime.
+        * 
+        * A value of 1 would mean the zones rotate in order, but it can
+        * be set to any integer value.
+        */
+      /* CompleteClass */
+      var total: Double = js.native
     }
   }
 }

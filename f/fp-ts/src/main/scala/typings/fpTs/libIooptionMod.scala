@@ -10,7 +10,7 @@ import typings.fpTs.libEitherMod.Either_
 import typings.fpTs.libFilterableMod.Filterable1
 import typings.fpTs.libFromEitherMod.FromEither1
 import typings.fpTs.libFromIOMod.FromIO1
-import typings.fpTs.libFunctionMod.Lazy
+import typings.fpTs.libFunctionMod.LazyArg
 import typings.fpTs.libFunctorMod.Functor1
 import typings.fpTs.libIOMod.IO_
 import typings.fpTs.libIoeitherMod.IOEither_
@@ -104,9 +104,9 @@ object libIooptionMod {
   @js.native
   val Zero_ : Zero1[typings.fpTs.libIooptionMod.URI] = js.native
   
-  inline def alt[A](second: Lazy[IOOption[A]]): js.Function1[/* first */ IOOption[A], IOOption[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("alt")(second.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* first */ IOOption[A], IOOption[A]]]
+  inline def alt[A](second: LazyArg[IOOption[A]]): js.Function1[/* first */ IOOption[A], IOOption[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("alt")(second.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* first */ IOOption[A], IOOption[A]]]
   
-  inline def altW[B](second: Lazy[IOOption[B]]): js.Function1[/* first */ IOOption[Any], IOOption[Any | B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("altW")(second.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* first */ IOOption[Any], IOOption[Any | B]]]
+  inline def altW[B](second: LazyArg[IOOption[B]]): js.Function1[/* first */ IOOption[Any], IOOption[Any | B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("altW")(second.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* first */ IOOption[Any], IOOption[Any | B]]]
   
   inline def ap[A](fa: IOOption[A]): js.Function1[/* fab */ IOOption[js.Function1[/* a */ A, Any]], IOOption[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ap")(fa.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fab */ IOOption[js.Function1[/* a */ A, Any]], IOOption[Any]]]
   
@@ -181,6 +181,9 @@ object libIooptionMod {
   
   inline def flap[A](a: A): js.Function1[/* fab */ IOOption[js.Function1[/* a */ A, Any]], IOOption[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("flap")(a.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fab */ IOOption[js.Function1[/* a */ A, Any]], IOOption[Any]]]
   
+  inline def flatMap[A, B](f: js.Function1[/* a */ A, IOOption[B]]): js.Function1[/* ma */ IOOption[A], IOOption[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatMap")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ IOOption[A], IOOption[B]]]
+  inline def flatMap[A, B](ma: IOOption[A], f: js.Function1[/* a */ A, IOOption[B]]): IOOption[B] = (^.asInstanceOf[js.Dynamic].applyDynamic("flatMap")(ma.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[IOOption[B]]
+  
   inline def flatten[A](mma: IOOption[IOOption[A]]): IOOption[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(mma.asInstanceOf[js.Any]).asInstanceOf[IOOption[A]]
   
   inline def fold[B, A](onNone: js.Function0[IO_[B]], onSome: js.Function1[/* a */ A, IO_[B]]): js.Function1[/* ma */ IOOption[A], IO_[B]] = (^.asInstanceOf[js.Dynamic].applyDynamic("fold")(onNone.asInstanceOf[js.Any], onSome.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* ma */ IOOption[A], IO_[B]]]
@@ -207,9 +210,9 @@ object libIooptionMod {
   
   inline def fromPredicate_AB[A, B /* <: A */](refinement: Refinement[A, B]): js.Function1[/* a */ A, IOOption[B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPredicate")(refinement.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* a */ A, IOOption[B]]]
   
-  inline def getOrElse[A](onNone: Lazy[IO_[A]]): js.Function1[/* fa */ IOOption[A], IO_[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrElse")(onNone.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ IOOption[A], IO_[A]]]
+  inline def getOrElse[A](onNone: LazyArg[IO_[A]]): js.Function1[/* fa */ IOOption[A], IO_[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrElse")(onNone.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* fa */ IOOption[A], IO_[A]]]
   
-  inline def getOrElseW[B](onNone: Lazy[IO_[B]]): js.Function1[/* ma */ IOOption[Any], IO_[Any | B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrElseW")(onNone.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ IOOption[Any], IO_[Any | B]]]
+  inline def getOrElseW[B](onNone: LazyArg[IO_[B]]): js.Function1[/* ma */ IOOption[Any], IO_[Any | B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrElseW")(onNone.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* ma */ IOOption[Any], IO_[Any | B]]]
   
   inline def guard(b: Boolean): IOOption[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("guard")(b.asInstanceOf[js.Any]).asInstanceOf[IOOption[Unit]]
   
@@ -258,6 +261,9 @@ object libIooptionMod {
   ] = js.native
   
   inline def some[A](a: A): IOOption[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("some")(a.asInstanceOf[js.Any]).asInstanceOf[IOOption[A]]
+  
+  inline def tap[A, _underscore](f: js.Function1[/* a */ A, IOOption[_underscore]]): js.Function1[/* self */ IOOption[A], IOOption[A]] = ^.asInstanceOf[js.Dynamic].applyDynamic("tap")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* self */ IOOption[A], IOOption[A]]]
+  inline def tap[A, _underscore](self: IOOption[A], f: js.Function1[/* a */ A, IOOption[_underscore]]): IOOption[A] = (^.asInstanceOf[js.Dynamic].applyDynamic("tap")(self.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[IOOption[A]]
   
   inline def toNullable[A](ma: IOOption[A]): IO_[A | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("toNullable")(ma.asInstanceOf[js.Any]).asInstanceOf[IO_[A | Null]]
   

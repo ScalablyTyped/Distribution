@@ -1,7 +1,7 @@
 package typings.redisClient
 
 import org.scalablytyped.runtime.Instantiable1
-import typings.redisClient.anon.Args
+import typings.redisClient.anon.JsArgs
 import typings.redisClient.distLibCommandsMod.RedisCommand
 import typings.redisClient.distLibCommandsMod.RedisCommandArgument
 import typings.redisClient.distLibCommandsMod.RedisCommandArguments
@@ -28,7 +28,7 @@ object distLibCommanderMod {
   
   inline def fCallArguments(name: RedisCommandArgument, fn: RedisFunction, args: RedisCommandArguments): RedisCommandArguments = (^.asInstanceOf[js.Dynamic].applyDynamic("fCallArguments")(name.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[RedisCommandArguments]
   
-  inline def transformCommandArguments[T](command: RedisCommand, args: js.Array[Any]): Args[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("transformCommandArguments")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Args[T]]
+  inline def transformCommandArguments[T](command: RedisCommand, args: js.Array[Any]): JsArgs[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("transformCommandArguments")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[JsArgs[T]]
   
   inline def transformCommandReply[C /* <: RedisCommand */](command: C, rawReply: Any, preserved: Any): RedisCommandReply[C] = (^.asInstanceOf[js.Dynamic].applyDynamic("transformCommandReply")(command.asInstanceOf[js.Any], rawReply.asInstanceOf[js.Any], preserved.asInstanceOf[js.Any])).asInstanceOf[RedisCommandReply[C]]
   

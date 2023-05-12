@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@react-spring/animated" : "9.5.5"
+      "@react-spring/animated" : "9.7.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@react-spring/animated" : "9.5.5"
+      "@react-spring/animated" : "9.7.2"
     }
   ],
   "compile-devDependencies" : [

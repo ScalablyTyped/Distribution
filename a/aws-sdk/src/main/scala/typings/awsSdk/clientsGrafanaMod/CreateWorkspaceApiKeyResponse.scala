@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateWorkspaceApiKeyResponse extends StObject {
   
   /**
-    * The key token that was created. Use this value as a bearer token to authenticate HTTP requests to the workspace.
+    * The key token. Use this value as a bearer token to authenticate HTTP requests to the workspace.
     */
   var key: ApiKeyToken
   

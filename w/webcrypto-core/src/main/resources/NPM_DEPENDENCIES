@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "webcrypto-core" : "1.7.5"
+      "webcrypto-core" : "1.7.7"
     }
   ],
   "test-dependencies" : [
     {
-      "webcrypto-core" : "1.7.5"
+      "webcrypto-core" : "1.7.7"
     }
   ],
   "compile-devDependencies" : [

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "monday-sdk-js" : "0.3.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "monday-sdk-js" : "0.3.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "type-fest" : "3.1.0"
+      "type-fest" : "3.10.0"
     }
   ],
   "test-dependencies" : [
     {
-      "type-fest" : "3.1.0"
+      "type-fest" : "3.10.0"
     }
   ],
   "compile-devDependencies" : [

@@ -7,21 +7,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NotebookDocumentContentChange extends StObject {
   
   /**
-    * Cells that have been added to the document.
-    */
+  		 * Cells that have been added to the document.
+  		 */
   val addedCells: js.Array[NotebookCell]
   
   /**
-    * The range at which cells have been either added or removed.
-    *
-    * Note that no cells have been {@link NotebookDocumentContentChange.removedCells removed}
-    * when this range is {@link NotebookRange.isEmpty empty}.
-    */
+  		 * The range at which cells have been either added or removed.
+  		 *
+  		 * Note that no cells have been {@link NotebookDocumentContentChange.removedCells removed}
+  		 * when this range is {@link NotebookRange.isEmpty empty}.
+  		 */
   val range: NotebookRange
   
   /**
-    * Cells that have been removed from the document.
-    */
+  		 * Cells that have been removed from the document.
+  		 */
   val removedCells: js.Array[NotebookCell]
 }
 object NotebookDocumentContentChange {

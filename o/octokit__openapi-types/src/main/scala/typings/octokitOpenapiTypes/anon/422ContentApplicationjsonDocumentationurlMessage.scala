@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `422ContentApplicationjsonDocumentationurlMessage` extends StObject {
   
-  /** Response */
+  /** @description Response */
   var `200`: ContentApplicationjsonCreatedatDeploymentbranchpolicy
   
-  /** Validation error when the environment name is invalid or when `protected_branches` and `custom_branch_policies` in `deployment_branch_policy` are set to the same value */
+  /** @description Validation error when the environment name is invalid or when `protected_branches` and `custom_branch_policies` in `deployment_branch_policy` are set to the same value */
   var `422`: ContentApplicationjsonDocumentationurlMessage
 }
 object `422ContentApplicationjsonDocumentationurlMessage` {

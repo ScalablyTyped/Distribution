@@ -3,6 +3,7 @@ package typings.leafletGeosearch
 import typings.leaflet.mod.Control_
 import typings.leafletGeosearch.distProvidersAlgoliaProviderMod.default
 import typings.leafletGeosearch.distProvidersGeoApiFrProviderMod.GeoApiFrProviderOptions
+import typings.leafletGeosearch.distProvidersGeoapifyProviderMod.GeoapifyProviderOptions
 import typings.leafletGeosearch.distProvidersGoogleProviderMod.GoogleProviderOptions
 import typings.leafletGeosearch.distProvidersMapBoxProviderMod.MapBoxProviderOptions
 import typings.leafletGeosearch.distProvidersOpenStreetMapProviderMod.OpenStreetMapProviderOptions
@@ -42,6 +43,13 @@ object mod {
   }
   
   inline def GeoSearchControl(options: Any*): SearchControl & Control_ = ^.asInstanceOf[js.Dynamic].applyDynamic("GeoSearchControl")(options.asInstanceOf[Seq[js.Any]]*).asInstanceOf[SearchControl & Control_]
+  
+  @JSImport("leaflet-geosearch", "GeoapifyProvider")
+  @js.native
+  open class GeoapifyProvider ()
+    extends typings.leafletGeosearch.distProvidersGeoapifyProviderMod.default {
+    def this(options: GeoapifyProviderOptions) = this()
+  }
   
   @JSImport("leaflet-geosearch", "GeocodeEarthProvider")
   @js.native

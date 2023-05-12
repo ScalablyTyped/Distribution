@@ -8,14 +8,15 @@ trait DraggableRubric extends StObject {
   
   var draggableId: DraggableId
   
-  var mode: MovementMode
-  
   var source: DraggableLocation
+  
+  var `type`: TypeId
 }
 object DraggableRubric {
   
-  inline def apply(draggableId: DraggableId, mode: MovementMode, source: DraggableLocation): DraggableRubric = {
-    val __obj = js.Dynamic.literal(draggableId = draggableId.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
+  inline def apply(draggableId: DraggableId, source: DraggableLocation, `type`: TypeId): DraggableRubric = {
+    val __obj = js.Dynamic.literal(draggableId = draggableId.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DraggableRubric]
   }
   
@@ -24,8 +25,8 @@ object DraggableRubric {
     
     inline def setDraggableId(value: DraggableId): Self = StObject.set(x, "draggableId", value.asInstanceOf[js.Any])
     
-    inline def setMode(value: MovementMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
-    
     inline def setSource(value: DraggableLocation): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: TypeId): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

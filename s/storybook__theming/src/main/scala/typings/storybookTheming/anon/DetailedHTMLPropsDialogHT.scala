@@ -40,7 +40,7 @@ import typings.react.mod.WheelEventHandler
 import typings.std.Element
 import typings.std.Event
 import typings.std.HTMLDialogElement
-import typings.storybookTheming.`distTs3Dot9Modules@emotionReactNodeModules@emotionSerializeTypesIndexMod`.Interpolation
+import typings.storybookTheming.distCreateC2b2ce6dMod.Interpolation
 import typings.storybookTheming.storybookThemingStrings.`additions removals`
 import typings.storybookTheming.storybookThemingStrings.`additions text`
 import typings.storybookTheming.storybookThemingStrings.`inline`
@@ -95,7 +95,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined react.react.DetailedHTMLProps<react.react.DialogHTMLAttributes<std.HTMLDialogElement>, std.HTMLDialogElement> & {  css :@storybook/theming.@storybook/theming/dist/ts3.9/_modules/@emotion-react-node_modules-@emotion-serialize-types-index.Interpolation<@storybook/theming.@storybook/theming/dist/ts3.9/_modules/@emotion-react-types-index.Theme> | undefined} */
+/* Inlined react.react.DetailedHTMLProps<react.react.DialogHTMLAttributes<std.HTMLDialogElement>, std.HTMLDialogElement> & {  css :@storybook/theming.@storybook/theming/dist/create-c2b2ce6d.I<@storybook/theming.@storybook/theming.Theme> | undefined} */
 trait DetailedHTMLPropsDialogHT extends StObject {
   
   // RDFa Attributes
@@ -343,6 +343,8 @@ trait DetailedHTMLPropsDialogHT extends StObject {
   
   var autoCorrect: js.UndefOr[String] = js.undefined
   
+  var autoFocus: js.UndefOr[Boolean] = js.undefined
+  
   var autoSave: js.UndefOr[String] = js.undefined
   
   var children: js.UndefOr[ReactNode] = js.undefined
@@ -351,13 +353,13 @@ trait DetailedHTMLPropsDialogHT extends StObject {
   
   var color: js.UndefOr[String] = js.undefined
   
+  var content: js.UndefOr[String] = js.undefined
+  
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
   
   var contextMenu: js.UndefOr[String] = js.undefined
   
-  var css: js.UndefOr[
-    Interpolation[typings.storybookTheming.`distTs3Dot9Modules@emotionReactTypesIndexMod`.Theme]
-  ] = js.undefined
+  var css: js.UndefOr[Interpolation[typings.storybookTheming.mod.Theme]] = js.undefined
   
   var dangerouslySetInnerHTML: js.UndefOr[Html] = js.undefined
   
@@ -599,11 +601,20 @@ trait DetailedHTMLPropsDialogHT extends StObject {
   // Unknown
   var radioGroup: js.UndefOr[String] = js.undefined
   
+  /**
+    * Allows getting a ref to the component instance.
+    * Once the component unmounts, React will set `ref.current` to `null` (or call the ref with `null` if you passed a callback ref).
+    * @see https://react.dev/learn/referencing-values-with-refs#refs-and-the-dom
+    */
   var ref: js.UndefOr[LegacyRef[HTMLDialogElement]] = js.undefined
+  
+  var rel: js.UndefOr[String] = js.undefined
   
   var resource: js.UndefOr[String] = js.undefined
   
   var results: js.UndefOr[Double] = js.undefined
+  
+  var rev: js.UndefOr[String] = js.undefined
   
   // <command>, <menuitem>
   // WAI-ARIA
@@ -853,6 +864,10 @@ object DetailedHTMLPropsDialogHT {
     
     inline def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
     
+    inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+    
+    inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+    
     inline def setAutoSave(value: String): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
     
     inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
@@ -869,17 +884,19 @@ object DetailedHTMLPropsDialogHT {
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    
     inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
     
     inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+    
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
     inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
     
     inline def setContextMenuUndefined: Self = StObject.set(x, "contextMenu", js.undefined)
     
-    inline def setCss(
-      value: Interpolation[typings.storybookTheming.`distTs3Dot9Modules@emotionReactTypesIndexMod`.Theme]
-    ): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+    inline def setCss(value: Interpolation[typings.storybookTheming.mod.Theme]): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     
     inline def setCssNull: Self = StObject.set(x, "css", null)
     
@@ -1321,6 +1338,10 @@ object DetailedHTMLPropsDialogHT {
     
     inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
     
+    inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+    
+    inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+    
     inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
@@ -1328,6 +1349,10 @@ object DetailedHTMLPropsDialogHT {
     inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
     inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+    
+    inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+    
+    inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
     
     inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     

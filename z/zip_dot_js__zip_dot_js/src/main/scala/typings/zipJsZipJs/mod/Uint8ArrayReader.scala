@@ -10,7 +10,7 @@ open class Uint8ArrayReader protected ()
   extends Reader[js.typedarray.Uint8Array] {
   /**
     * Creates the {@link Reader} instance
-    * 
+    *
     * @param value The data to read.
     */
   def this(value: js.typedarray.Uint8Array) = this()

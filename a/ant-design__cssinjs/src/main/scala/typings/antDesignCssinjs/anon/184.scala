@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.MaskBorderSlice
+import typings.csstype.mod.Property.BorderStyle
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,11 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `184` extends StObject {
   
   var value: js.UndefOr[
-    MaskBorderSlice | (js.Array[
-      (Extract[
-        js.UndefOr[MaskBorderSlice | js.Array[NonNullable[js.UndefOr[MaskBorderSlice]]]], 
-        String
-      ]) | NonNullable[js.UndefOr[MaskBorderSlice]]
+    BorderStyle | (js.Array[
+      (Extract[js.UndefOr[BorderStyle | js.Array[NonNullable[js.UndefOr[BorderStyle]]]], String]) | NonNullable[js.UndefOr[BorderStyle]]
     ])
   ] = js.native
 }

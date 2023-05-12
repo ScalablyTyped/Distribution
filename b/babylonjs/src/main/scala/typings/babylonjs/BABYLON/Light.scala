@@ -124,7 +124,6 @@ trait Light
     * @returns the new created light
     */
   def clone(name: String): Nullable[Light] = js.native
-  def clone(name: String, newParent: Nullable[Node]): Nullable[Light] = js.native
   
   /**
     * Diffuse gives the basic color to an object.

@@ -37,7 +37,7 @@ trait CreateFaqRequest extends StObject {
   var Name: FaqName
   
   /**
-    * The Amazon Resource Name (ARN) of a role with permission to access the S3 bucket that contains the FAQs. For more information, see IAM Roles for Amazon Kendra.
+    * The Amazon Resource Name (ARN) of an IAM role with permission to access the S3 bucket that contains the FAQs. For more information, see IAM access roles for Amazon Kendra.
     */
   var RoleArn: typings.awsSdk.clientsKendraMod.RoleArn
   

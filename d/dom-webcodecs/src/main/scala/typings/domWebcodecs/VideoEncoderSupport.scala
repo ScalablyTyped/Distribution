@@ -6,14 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait VideoEncoderSupport extends StObject {
   
-  var config: VideoEncoderConfig
+  var config: js.UndefOr[VideoEncoderConfig] = js.undefined
   
-  var supported: Boolean
+  var supported: js.UndefOr[Boolean] = js.undefined
 }
 object VideoEncoderSupport {
   
-  inline def apply(config: VideoEncoderConfig, supported: Boolean): VideoEncoderSupport = {
-    val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], supported = supported.asInstanceOf[js.Any])
+  inline def apply(): VideoEncoderSupport = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VideoEncoderSupport]
   }
   
@@ -22,6 +22,10 @@ object VideoEncoderSupport {
     
     inline def setConfig(value: VideoEncoderConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
+    inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+    
     inline def setSupported(value: Boolean): Self = StObject.set(x, "supported", value.asInstanceOf[js.Any])
+    
+    inline def setSupportedUndefined: Self = StObject.set(x, "supported", js.undefined)
   }
 }

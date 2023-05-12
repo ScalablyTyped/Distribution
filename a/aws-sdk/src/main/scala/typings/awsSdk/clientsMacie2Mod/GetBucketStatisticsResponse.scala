@@ -12,24 +12,29 @@ trait GetBucketStatisticsResponse extends StObject {
   var bucketCount: js.UndefOr[long] = js.undefined
   
   /**
-    * The total number of buckets that are publicly accessible based on a combination of permissions settings for each bucket.
+    * The total number of buckets that are publicly accessible due to a combination of permissions settings for each bucket.
     */
   var bucketCountByEffectivePermission: js.UndefOr[BucketCountByEffectivePermission] = js.undefined
   
   /**
-    * The total number of buckets that use certain types of server-side encryption to encrypt new objects by default. This object also reports the total number of buckets that don't encrypt new objects by default.
+    * The total number of buckets whose settings do or don't specify default server-side encryption behavior for objects that are added to the buckets.
     */
   var bucketCountByEncryptionType: js.UndefOr[BucketCountByEncryptionType] = js.undefined
   
   /**
-    * The total number of buckets whose bucket policies do or don't require server-side encryption of objects when objects are uploaded to the buckets.
+    * The total number of buckets whose bucket policies do or don't require server-side encryption of objects when objects are added to the buckets.
     */
   var bucketCountByObjectEncryptionRequirement: js.UndefOr[BucketCountPolicyAllowsUnencryptedObjectUploads] = js.undefined
   
   /**
-    * The total number of buckets that are or aren't shared with another Amazon Web Services account.
+    * The total number of buckets that are or aren't shared with other Amazon Web Services accounts, Amazon CloudFront origin access identities (OAIs), or CloudFront origin access controls (OACs).
     */
   var bucketCountBySharedAccessType: js.UndefOr[BucketCountBySharedAccessType] = js.undefined
+  
+  /**
+    * The aggregated sensitive data discovery statistics for the buckets. If automated sensitive data discovery is currently disabled for your account, the value for each statistic is 0.
+    */
+  var bucketStatisticsBySensitivity: js.UndefOr[BucketStatisticsBySensitivity] = js.undefined
   
   /**
     * The total number of objects that Amazon Macie can analyze in the buckets. These objects use a supported storage class and have a file name extension for a supported file or storage format.
@@ -37,12 +42,12 @@ trait GetBucketStatisticsResponse extends StObject {
   var classifiableObjectCount: js.UndefOr[long] = js.undefined
   
   /**
-    * The total storage size, in bytes, of all the objects that Amazon Macie can analyze in the buckets. These objects use a supported storage class and have a file name extension for a supported file or storage format. If versioning is enabled for any of the buckets, Macie calculates this value based on the size of the latest version of each applicable object in those buckets. This value doesn't reflect the storage size of all versions of all applicable objects in the buckets.
+    * The total storage size, in bytes, of all the objects that Amazon Macie can analyze in the buckets. These objects use a supported storage class and have a file name extension for a supported file or storage format. If versioning is enabled for any of the buckets, this value is based on the size of the latest version of each applicable object in the buckets. This value doesn't reflect the storage size of all versions of all applicable objects in the buckets.
     */
   var classifiableSizeInBytes: js.UndefOr[long] = js.undefined
   
   /**
-    * The date and time, in UTC and extended ISO 8601 format, when Amazon Macie most recently retrieved both bucket and object metadata from Amazon S3 for the buckets.
+    * The date and time, in UTC and extended ISO 8601 format, when Amazon Macie most recently retrieved bucket or object metadata from Amazon S3 for the buckets.
     */
   var lastUpdated: js.UndefOr[js.Date] = js.undefined
   
@@ -52,12 +57,12 @@ trait GetBucketStatisticsResponse extends StObject {
   var objectCount: js.UndefOr[long] = js.undefined
   
   /**
-    * The total storage size, in bytes, of the buckets. If versioning is enabled for any of the buckets, Amazon Macie calculates this value based on the size of the latest version of each object in those buckets. This value doesn't reflect the storage size of all versions of the objects in the buckets.
+    * The total storage size, in bytes, of the buckets. If versioning is enabled for any of the buckets, this value is based on the size of the latest version of each object in the buckets. This value doesn't reflect the storage size of all versions of the objects in the buckets.
     */
   var sizeInBytes: js.UndefOr[long] = js.undefined
   
   /**
-    * The total storage size, in bytes, of the objects that are compressed (.gz, .gzip, .zip) files in the buckets. If versioning is enabled for any of the buckets, Amazon Macie calculates this value based on the size of the latest version of each applicable object in those buckets. This value doesn't reflect the storage size of all versions of the applicable objects in the buckets.
+    * The total storage size, in bytes, of the objects that are compressed (.gz, .gzip, .zip) files in the buckets. If versioning is enabled for any of the buckets, this value is based on the size of the latest version of each applicable object in the buckets. This value doesn't reflect the storage size of all versions of the applicable objects in the buckets.
     */
   var sizeInBytesCompressed: js.UndefOr[long] = js.undefined
   
@@ -100,6 +105,10 @@ object GetBucketStatisticsResponse {
     inline def setBucketCountBySharedAccessTypeUndefined: Self = StObject.set(x, "bucketCountBySharedAccessType", js.undefined)
     
     inline def setBucketCountUndefined: Self = StObject.set(x, "bucketCount", js.undefined)
+    
+    inline def setBucketStatisticsBySensitivity(value: BucketStatisticsBySensitivity): Self = StObject.set(x, "bucketStatisticsBySensitivity", value.asInstanceOf[js.Any])
+    
+    inline def setBucketStatisticsBySensitivityUndefined: Self = StObject.set(x, "bucketStatisticsBySensitivity", js.undefined)
     
     inline def setClassifiableObjectCount(value: long): Self = StObject.set(x, "classifiableObjectCount", value.asInstanceOf[js.Any])
     

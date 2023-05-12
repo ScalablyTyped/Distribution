@@ -2,8 +2,8 @@ package typings.photoshop
 
 import typings.photoshop.anon.Get
 import typings.photoshop.domDocumentMod.Document
-import typings.photoshop.domObjectsCreateOptionsMod.DocumentCreateOptions
 import typings.photoshop.domPhotoshopMod.Photoshop
+import typings.photoshop.domTypesDocumentTypesMod.DocumentCreateOptions
 import typings.std.Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -32,9 +32,6 @@ object domCollectionsDocumentsMod {
       * resolution 300 pixels per inch, mode: @RGBColorMode and a fill of white with
       * no transparency.
       *
-      * @param options @DocumentCreateOptions
-      *
-      * @async
       * ```javascript
       * // "Default Photoshop Size" 7x5 inches at 300ppi
       * let newDoc1 = await app.documents.add();
@@ -47,12 +44,16 @@ object domCollectionsDocumentsMod {
       * });
       * let newDoc3 = await app.documents.add({preset: "My Default Size 1"});
       * ```
+      * @async
+      * @param options @DocumentCreateOptions
+      * @minVersion 22.5
       */
     def add(): js.Promise[Document | Null] = js.native
     def add(options: DocumentCreateOptions): js.Promise[Document | Null] = js.native
     
     /**
-      * Find the first document with the matching name
+      * Find the first document with the matching name.
+      * @minVersion 22.5
       */
     def getByName(name: String): Document = js.native
     
@@ -60,13 +61,15 @@ object domCollectionsDocumentsMod {
     def handler(): Get = js.native
     
     /**
-      * Number of [[Document]] elements in this collection
+      * Number of [[Document]] elements in this collection.
+      * @minVersion 22.5
       */
     @JSName("length")
     def length_MDocuments: Double = js.native
     
     /**
-      * The owner application of this Documents collection
+      * The owner application of this Documents collection.
+      * @minVersion 22.5
       */
     def parent: Photoshop = js.native
     
@@ -74,8 +77,9 @@ object domCollectionsDocumentsMod {
     /* private */ var proxy: Any = js.native
     
     /**
-      * The name for this object collection: Documents
+      * The name for this object collection: Documents.
+      * @minVersion 22.5
       */
-    def typename: String = js.native
+    def typename: typings.photoshop.photoshopStrings.Documents = js.native
   }
 }

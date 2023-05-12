@@ -12,7 +12,7 @@ trait InstanceDefinition extends StObject {
   var InstanceType: GameServerGroupInstanceType
   
   /**
-    * Instance weighting that indicates how much this instance type contributes to the total capacity of a game server group. Instance weights are used by GameLift FleetIQ to calculate the instance type's cost per unit hour and better identify the most cost-effective options. For detailed information on weighting instance capacity, see Instance Weighting in the Amazon Elastic Compute Cloud Auto Scaling User Guide. Default value is "1".
+    * Instance weighting that indicates how much this instance type contributes to the total capacity of a game server group. Instance weights are used by Amazon GameLift FleetIQ to calculate the instance type's cost per unit hour and better identify the most cost-effective options. For detailed information on weighting instance capacity, see Instance Weighting in the Amazon Elastic Compute Cloud Auto Scaling User Guide. Default value is "1".
     */
   var WeightedCapacity: js.UndefOr[typings.awsSdk.clientsGameliftMod.WeightedCapacity] = js.undefined
 }

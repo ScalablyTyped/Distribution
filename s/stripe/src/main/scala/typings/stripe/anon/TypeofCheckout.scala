@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TypeofCheckout extends StObject {
   
-  val Session: TypeofSession
+  val Session: TypeofSessionAfterExpiration
   
-  val SessionCreateParams: TypeofSessionCreateParams
+  val SessionCreateParams: TypeofSessionCreateParamsAfterExpiration
   
   val SessionListParams: Any
   
@@ -19,8 +19,8 @@ trait TypeofCheckout extends StObject {
 object TypeofCheckout {
   
   inline def apply(
-    Session: TypeofSession,
-    SessionCreateParams: TypeofSessionCreateParams,
+    Session: TypeofSessionAfterExpiration,
+    SessionCreateParams: TypeofSessionCreateParamsAfterExpiration,
     SessionListParams: Any,
     SessionsResource: Instantiable0[SessionsResource]
   ): TypeofCheckout = {
@@ -31,9 +31,9 @@ object TypeofCheckout {
   @scala.inline
   implicit open class MutableBuilder[Self <: TypeofCheckout] (val x: Self) extends AnyVal {
     
-    inline def setSession(value: TypeofSession): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
+    inline def setSession(value: TypeofSessionAfterExpiration): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
     
-    inline def setSessionCreateParams(value: TypeofSessionCreateParams): Self = StObject.set(x, "SessionCreateParams", value.asInstanceOf[js.Any])
+    inline def setSessionCreateParams(value: TypeofSessionCreateParamsAfterExpiration): Self = StObject.set(x, "SessionCreateParams", value.asInstanceOf[js.Any])
     
     inline def setSessionListParams(value: Any): Self = StObject.set(x, "SessionListParams", value.asInstanceOf[js.Any])
     

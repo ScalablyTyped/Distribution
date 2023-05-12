@@ -3,6 +3,7 @@ package typings.protonsRuntime
 import typings.protonsRuntime.distSrcCodecMod.Codec
 import typings.protonsRuntime.distSrcCodecMod.EncodeOptions
 import typings.protonsRuntime.protonsRuntimeBooleans.`true`
+import typings.std.Partial
 import typings.uint8arraylist.mod.Uint8ArrayList
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -22,7 +23,7 @@ object mod {
   inline def enumeration[T](v: Any): Codec[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("enumeration")(v.asInstanceOf[js.Any]).asInstanceOf[Codec[T]]
   
   inline def message[T](
-    encode: js.Function3[/* obj */ T, /* writer */ Writer_, /* opts */ js.UndefOr[EncodeOptions], Unit],
+    encode: js.Function3[/* obj */ Partial[T], /* writer */ Writer_, /* opts */ js.UndefOr[EncodeOptions], Unit],
     decode: js.Function2[/* reader */ Reader_, /* length */ js.UndefOr[Double], T]
   ): Codec[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("message")(encode.asInstanceOf[js.Any], decode.asInstanceOf[js.Any])).asInstanceOf[Codec[T]]
   

@@ -2,11 +2,12 @@ package typings.three
 
 import typings.three.srcConstantsMod.TextureEncoding
 import typings.three.srcCoreBufferGeometryMod.BufferGeometry
+import typings.three.srcCoreBufferGeometryMod.NormalBufferAttributes
 import typings.three.srcMaterialsMaterialMod.Material
+import typings.three.srcMathColorMod.ColorRepresentation
 import typings.three.srcThreeMod.Mesh
 import typings.three.srcThreeMod.PerspectiveCamera
 import typings.three.srcThreeMod.WebGLRenderTarget
-import typings.three.srcUtilsMod.ColorRepresentation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,10 +17,13 @@ object examplesJsmObjectsRefractorMod {
   @JSImport("three/examples/jsm/objects/Refractor", "Refractor")
   @js.native
   open class Refractor ()
-    extends Mesh[BufferGeometry, Material | js.Array[Material]] {
-    def this(geometry: typings.three.srcThreeMod.BufferGeometry) = this()
+    extends Mesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]] {
+    def this(geometry: typings.three.srcThreeMod.BufferGeometry[NormalBufferAttributes]) = this()
     def this(geometry: Unit, options: RefractorOptions) = this()
-    def this(geometry: typings.three.srcThreeMod.BufferGeometry, options: RefractorOptions) = this()
+    def this(
+      geometry: typings.three.srcThreeMod.BufferGeometry[NormalBufferAttributes],
+      options: RefractorOptions
+    ) = this()
     
     var camera: PerspectiveCamera = js.native
     

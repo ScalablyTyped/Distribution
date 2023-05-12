@@ -9,6 +9,9 @@ trait BroadcastMeetingSettings extends StObject {
   // Defines who can join the Teams live event. Possible values are listed in the following table.
   var allowedAudience: js.UndefOr[NullableOption[BroadcastMeetingAudience]] = js.undefined
   
+  // Caption settings of a Teams live event.
+  var captions: js.UndefOr[NullableOption[BroadcastMeetingCaptionSettings]] = js.undefined
+  
   // Indicates whether attendee report is enabled for this Teams live event. Default value is false.
   var isAttendeeReportEnabled: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
@@ -36,6 +39,12 @@ object BroadcastMeetingSettings {
     inline def setAllowedAudienceNull: Self = StObject.set(x, "allowedAudience", null)
     
     inline def setAllowedAudienceUndefined: Self = StObject.set(x, "allowedAudience", js.undefined)
+    
+    inline def setCaptions(value: NullableOption[BroadcastMeetingCaptionSettings]): Self = StObject.set(x, "captions", value.asInstanceOf[js.Any])
+    
+    inline def setCaptionsNull: Self = StObject.set(x, "captions", null)
+    
+    inline def setCaptionsUndefined: Self = StObject.set(x, "captions", js.undefined)
     
     inline def setIsAttendeeReportEnabled(value: NullableOption[Boolean]): Self = StObject.set(x, "isAttendeeReportEnabled", value.asInstanceOf[js.Any])
     

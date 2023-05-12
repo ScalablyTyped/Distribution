@@ -19,10 +19,13 @@ object mod extends Shortcut {
   
   trait pluginOptions extends StObject {
     
+    /** Disable the selector prefix that is used to prevent a flash of incorrectly styled content. default: false */
     var disablePolyfillReadyClass: js.UndefOr[Boolean] = js.undefined
     
+    /** Preserve the original notation. default: true */
     var preserve: js.UndefOr[Boolean] = js.undefined
     
+    /** The replacement class to be used in the polyfill. default: "[focus-within]" */
     var replaceWith: js.UndefOr[String] = js.undefined
   }
   object pluginOptions {

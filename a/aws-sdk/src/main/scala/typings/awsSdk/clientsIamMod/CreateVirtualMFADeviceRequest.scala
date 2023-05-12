@@ -17,7 +17,7 @@ trait CreateVirtualMFADeviceRequest extends StObject {
   var Tags: js.UndefOr[tagListType] = js.undefined
   
   /**
-    * The name of the virtual MFA device. Use with path to uniquely identify a virtual MFA device. This parameter allows (through its regex pattern) a string of characters consisting of upper and lowercase alphanumeric characters with no spaces. You can also include any of the following characters: _+=,.@-
+    * The name of the virtual MFA device, which must be unique. Use with path to uniquely identify a virtual MFA device. This parameter allows (through its regex pattern) a string of characters consisting of upper and lowercase alphanumeric characters with no spaces. You can also include any of the following characters: _+=,.@-
     */
   var VirtualMFADeviceName: virtualMFADeviceName
 }

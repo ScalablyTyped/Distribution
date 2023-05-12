@@ -146,17 +146,7 @@ object namespacesStorageMod {
     /**
       * Object mapping each key that changed to its corresponding $(ref:storage.StorageChange) for that item.
       */
-    trait StorageAreaOnChangedChangesType
-      extends StObject
-         with StorageChange
-         with /* s */ StringDictionary[Any]
-    object StorageAreaOnChangedChangesType {
-      
-      inline def apply(): StorageAreaOnChangedChangesType = {
-        val __obj = js.Dynamic.literal()
-        __obj.asInstanceOf[StorageAreaOnChangedChangesType]
-      }
-    }
+    type StorageAreaOnChangedChangesType = StringDictionary[StorageChange]
     
     @js.native
     trait StorageAreaSync extends StObject {
@@ -225,17 +215,7 @@ object namespacesStorageMod {
     /**
       * Object mapping each key that changed to its corresponding $(ref:storage.StorageChange) for that item.
       */
-    trait StorageAreaSyncOnChangedChangesType
-      extends StObject
-         with StorageChange
-         with /* s */ StringDictionary[Any]
-    object StorageAreaSyncOnChangedChangesType {
-      
-      inline def apply(): StorageAreaSyncOnChangedChangesType = {
-        val __obj = js.Dynamic.literal()
-        __obj.asInstanceOf[StorageAreaSyncOnChangedChangesType]
-      }
-    }
+    type StorageAreaSyncOnChangedChangesType = StringDictionary[StorageChange]
     
     trait StorageChange extends StObject {
       

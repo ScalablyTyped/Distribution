@@ -1,35 +1,51 @@
 package typings.photoshop.domConstantsMod
 
-import typings.photoshop.photoshopStrings.blackAndWhite
-import typings.photoshop.photoshopStrings.none
-import typings.photoshop.photoshopStrings.primaries
-import typings.photoshop.photoshopStrings.web
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Rewritten from type alias, can be one of: 
-  - typings.photoshop.photoshopStrings.none
-  - typings.photoshop.photoshopStrings.blackAndWhite
-  - typings.photoshop.photoshopStrings.primaries
-  - typings.photoshop.photoshopStrings.web
-*/
-trait ForcedColors extends StObject
-object ForcedColors {
+@js.native
+sealed trait ForcedColors extends StObject
+@JSImport("photoshop/dom/Constants", "ForcedColors")
+@js.native
+object ForcedColors extends StObject {
   
-  /** Pure black and pure white */
-  inline def BLACKANDWHITE: blackAndWhite = "blackAndWhite".asInstanceOf[blackAndWhite]
+  @JSBracketAccess
+  def apply(value: String): js.UndefOr[ForcedColors & String] = js.native
   
-  /** None */
-  inline def NONE: none = "none".asInstanceOf[none]
+  /**
+    * Pure black and pure white
+    */
+  @js.native
+  sealed trait BLACKANDWHITE
+    extends StObject
+       with ForcedColors
+  /* "blackAndWhite" */ val BLACKANDWHITE: typings.photoshop.domConstantsMod.ForcedColors.BLACKANDWHITE & String = js.native
+  
+  /**
+    * None
+    */
+  @js.native
+  sealed trait NONE
+    extends StObject
+       with ForcedColors
+  /* "none" */ val NONE: typings.photoshop.domConstantsMod.ForcedColors.NONE & String = js.native
   
   /**
     * Red, green, blue, cyan, magenta, yellow, black, and white.
     */
-  inline def PRIMARIES: primaries = "primaries".asInstanceOf[primaries]
+  @js.native
+  sealed trait PRIMARIES
+    extends StObject
+       with ForcedColors
+  /* "primaries" */ val PRIMARIES: typings.photoshop.domConstantsMod.ForcedColors.PRIMARIES & String = js.native
   
   /**
     * The 216 web-safe colors
     */
-  inline def WEB: web = "web".asInstanceOf[web]
+  @js.native
+  sealed trait WEB
+    extends StObject
+       with ForcedColors
+  /* "web" */ val WEB: typings.photoshop.domConstantsMod.ForcedColors.WEB & String = js.native
 }

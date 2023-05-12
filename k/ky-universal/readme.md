@@ -1,7 +1,7 @@
 
 # Scala.js typings for ky-universal
 
-Typings are for version 0.10.1
+Typings are for version 0.11.0
 
 ## Library description:
 Use Ky in both Node.js and browsers

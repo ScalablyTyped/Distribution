@@ -8,6 +8,7 @@ import typings.yjs.distSrcUtilsDeleteSetMod.DeleteSet
 import typings.yjs.distSrcUtilsIDMod.ID
 import typings.yjs.distSrcUtilsStructStoreMod.StructStore
 import typings.yjs.distSrcUtilsTransactionMod.Transaction
+import typings.yjs.distSrcUtilsUndoManagerMod.UndoManager
 import typings.yjs.distSrcUtilsUpdateDecoderMod.UpdateDecoderV1
 import typings.yjs.distSrcUtilsUpdateDecoderMod.UpdateDecoderV2
 import typings.yjs.distSrcUtilsUpdateEncoderMod.UpdateEncoderV1
@@ -32,14 +33,14 @@ object distSrcStructsItemMod {
     def copy(): AbstractContent = js.native
     
     /**
-      * @param {Transaction} transaction
+      * @param {Transaction} _transaction
       */
-    def delete(transaction: Transaction): Unit = js.native
+    def delete(_transaction: Transaction): Unit = js.native
     
     /**
-      * @param {StructStore} store
+      * @param {StructStore} _store
       */
-    def gc(store: StructStore): Unit = js.native
+    def gc(_store: StructStore): Unit = js.native
     
     /**
       * @return {Array<any>}
@@ -57,10 +58,10 @@ object distSrcStructsItemMod {
     def getRef(): Double = js.native
     
     /**
-      * @param {Transaction} transaction
-      * @param {Item} item
+      * @param {Transaction} _transaction
+      * @param {Item} _item
       */
-    def integrate(transaction: Transaction, item: Item): Unit = js.native
+    def integrate(_transaction: Transaction, _item: Item): Unit = js.native
     
     /**
       * Should return false if this Item is some kind of meta information
@@ -74,23 +75,23 @@ object distSrcStructsItemMod {
     def isCountable(): Boolean = js.native
     
     /**
-      * @param {AbstractContent} right
+      * @param {AbstractContent} _right
       * @return {boolean}
       */
-    def mergeWith(right: AbstractContent): Boolean = js.native
+    def mergeWith(_right: AbstractContent): Boolean = js.native
     
     /**
-      * @param {number} offset
+      * @param {number} _offset
       * @return {AbstractContent}
       */
-    def splice(offset: Double): AbstractContent = js.native
+    def splice(_offset: Double): AbstractContent = js.native
     
     /**
-      * @param {UpdateEncoderV1 | UpdateEncoderV2} encoder
-      * @param {number} offset
+      * @param {UpdateEncoderV1 | UpdateEncoderV2} _encoder
+      * @param {number} _offset
       */
-    def write(encoder: UpdateEncoderV1, offset: Double): Unit = js.native
-    def write(encoder: UpdateEncoderV2, offset: Double): Unit = js.native
+    def write(_encoder: UpdateEncoderV1, _offset: Double): Unit = js.native
+    def write(_encoder: UpdateEncoderV2, _offset: Double): Unit = js.native
   }
   
   @JSImport("yjs/dist/src/structs/Item", "Item")
@@ -271,8 +272,9 @@ object distSrcStructsItemMod {
     item: Item,
     redoitems: Set[Item],
     itemsToDelete: DeleteSet,
-    ignoreRemoteMapChanges: Boolean
-  ): Item | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("redoItem")(transaction.asInstanceOf[js.Any], item.asInstanceOf[js.Any], redoitems.asInstanceOf[js.Any], itemsToDelete.asInstanceOf[js.Any], ignoreRemoteMapChanges.asInstanceOf[js.Any])).asInstanceOf[Item | Null]
+    ignoreRemoteMapChanges: Boolean,
+    um: UndoManager
+  ): Item | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("redoItem")(transaction.asInstanceOf[js.Any], item.asInstanceOf[js.Any], redoitems.asInstanceOf[js.Any], itemsToDelete.asInstanceOf[js.Any], ignoreRemoteMapChanges.asInstanceOf[js.Any], um.asInstanceOf[js.Any])).asInstanceOf[Item | Null]
   
   inline def splitItem(transaction: Transaction, leftItem: Item, diff: Double): Item = (^.asInstanceOf[js.Dynamic].applyDynamic("splitItem")(transaction.asInstanceOf[js.Any], leftItem.asInstanceOf[js.Any], diff.asInstanceOf[js.Any])).asInstanceOf[Item]
 }

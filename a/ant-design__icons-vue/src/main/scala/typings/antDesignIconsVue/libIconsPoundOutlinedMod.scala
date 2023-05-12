@@ -16,7 +16,7 @@ object libIconsPoundOutlinedMod extends Shortcut {
   @js.native
   trait PoundOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_PoundOutlinedIconType: String = js.native

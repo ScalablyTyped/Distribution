@@ -1,7 +1,7 @@
 package typings.sinclairTypebox.mod
 
 import typings.sinclairTypebox.sinclairTypeboxStrings.Undefined
-import typings.sinclairTypebox.sinclairTypeboxStrings.`object`
+import typings.sinclairTypebox.sinclairTypeboxStrings.`null`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,10 +12,10 @@ trait TUndefined
   extends StObject
      with TSchema {
   
-  var specialized: Undefined = js.native
-  
   @JSName("static")
   var static_TUndefined: Unit = js.native
   
-  var `type`: `object` = js.native
+  var `type`: `null` = js.native
+  
+  var typeOf: Undefined = js.native
 }

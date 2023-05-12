@@ -1,7 +1,9 @@
 package typings.engineIo
 
 import org.scalablytyped.runtime.Instantiable1
+import typings.engineIo.anon.BADHANDSHAKEMETHOD
 import typings.engineIo.anon.Typeofpolling
+import typings.engineIo.anon.`0`
 import typings.engineIo.buildServerMod.AttachOptions
 import typings.engineIo.buildServerMod.ServerOptions
 import typings.engineIo.buildTransportsWebsocketMod.WebSocket
@@ -17,6 +19,39 @@ object mod {
   @JSImport("engine.io", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
+  
+  /* note: abstract class */ @JSImport("engine.io", "BaseServer")
+  @js.native
+  /**
+    * Server constructor.
+    *
+    * @param {Object} opts - options
+    * @api public
+    */
+  open class BaseServer ()
+    extends typings.engineIo.buildServerMod.BaseServer {
+    def this(opts: ServerOptions) = this()
+  }
+  /* static members */
+  object BaseServer {
+    
+    @JSImport("engine.io", "BaseServer")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("engine.io", "BaseServer.errorMessages")
+    @js.native
+    def errorMessages: `0` = js.native
+    inline def errorMessages_=(x: `0`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("errorMessages")(x.asInstanceOf[js.Any])
+    
+    /**
+      * Protocol errors mappings.
+      */
+    @JSImport("engine.io", "BaseServer.errors")
+    @js.native
+    def errors: BADHANDSHAKEMETHOD = js.native
+    inline def errors_=(x: BADHANDSHAKEMETHOD): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("errors")(x.asInstanceOf[js.Any])
+  }
   
   @JSImport("engine.io", "Server")
   @js.native

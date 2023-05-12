@@ -109,7 +109,7 @@ object typesCommandpaletteMod {
       *
       * Modifying this node directly can lead to undefined behavior.
       */
-    val contentNode: HTMLUListElement = js.native
+    def contentNode: HTMLUListElement = js.native
     
     /**
       * Handle the DOM events for the command palette.
@@ -129,12 +129,12 @@ object typesCommandpaletteMod {
       * #### Notes
       * This is the actual input node for the search area.
       */
-    val inputNode: HTMLInputElement = js.native
+    def inputNode: HTMLInputElement = js.native
     
     /**
       * A read-only array of the command items in the palette.
       */
-    val items: js.Array[IItem] = js.native
+    def items: js.Array[IItem] = js.native
     
     /**
       * Clear the search results and schedule an update.
@@ -182,7 +182,7 @@ object typesCommandpaletteMod {
       * #### Notes
       * This is the node which contains the search-related elements.
       */
-    val searchNode: HTMLDivElement = js.native
+    def searchNode: HTMLDivElement = js.native
   }
   object CommandPalette {
     
@@ -453,7 +453,7 @@ object typesCommandpaletteMod {
       /**
         * The icon renderer for the command item.
         */
-      val icon: js.UndefOr[typings.luminoVirtualdom.mod.VirtualElement.IRenderer | String] = js.undefined
+      val icon: js.UndefOr[typings.luminoVirtualdom.mod.VirtualElement.IRenderer] = js.undefined
       
       /**
         * The icon class for the command item.
@@ -537,7 +537,7 @@ object typesCommandpaletteMod {
         
         inline def setDataset(value: Dataset): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
         
-        inline def setIcon(value: typings.luminoVirtualdom.mod.VirtualElement.IRenderer | String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+        inline def setIcon(value: typings.luminoVirtualdom.mod.VirtualElement.IRenderer): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
         
         inline def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
         

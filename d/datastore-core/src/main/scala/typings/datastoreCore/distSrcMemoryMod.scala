@@ -1,9 +1,10 @@
 package typings.datastoreCore
 
-import typings.datastoreCore.anon.Key
 import typings.datastoreCore.distSrcBaseMod.BaseDatastore
-import typings.std.AsyncGenerator
-import typings.std.Record
+import typings.interfaceDatastore.keyMod.Key
+import typings.interfaceDatastore.mod.Pair
+import typings.interfaceStore.mod.Await
+import typings.interfaceStore.mod.AwaitIterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,38 +15,18 @@ object distSrcMemoryMod {
   @js.native
   open class MemoryDatastore () extends BaseDatastore {
     
-    def _all(): AsyncGenerator[Key, Unit, Unit] = js.native
+    def _all(): AwaitIterable[Pair] = js.native
     
-    def _allKeys(): AsyncGenerator[typings.interfaceDatastore.keyMod.Key, Unit, Unit] = js.native
+    def _allKeys(): AwaitIterable[Key] = js.native
     
-    /** @type {Record<string, Uint8Array>} */
-    var data: Record[String, js.typedarray.Uint8Array] = js.native
+    /* private */ val data: Any = js.native
     
-    /**
-      * @param {Key} key
-      */
-    def delete(key: typings.interfaceDatastore.keyMod.Key): js.Promise[Unit] = js.native
+    def delete(key: Key): Await[Unit] = js.native
     
-    /**
-      * @param {Key} key
-      */
-    def get(key: typings.interfaceDatastore.keyMod.Key): js.Promise[js.typedarray.Uint8Array] = js.native
+    def get(key: Key): Await[js.typedarray.Uint8Array] = js.native
     
-    /**
-      * @param {Key} key
-      */
-    def has(key: typings.interfaceDatastore.keyMod.Key): js.Promise[Boolean] = js.native
+    def has(key: Key): Await[Boolean] = js.native
     
-    /**
-      * @param {Key} key
-      * @param {Uint8Array} val
-      */
-    def put(key: typings.interfaceDatastore.keyMod.Key, `val`: js.typedarray.Uint8Array): js.Promise[Unit] = js.native
+    def put(key: Key, `val`: js.typedarray.Uint8Array): Await[Key] = js.native
   }
-  
-  type Datastore = typings.interfaceDatastore.mod.Datastore
-  
-  type Options = typings.interfaceStore.mod.Options
-  
-  type Pair = typings.interfaceDatastore.mod.Pair
 }

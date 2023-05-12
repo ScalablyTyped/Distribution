@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `405` extends StObject {
   
-  /** if merge was successful */
-  var `200`: Content303
+  /** @description if merge was successful */
+  var `200`: Content321
   
   var `403`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['forbidden'] */ js.Any
   
   var `404`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['not_found'] */ js.Any
   
-  /** Method Not Allowed if merge cannot be performed */
+  /** @description Method Not Allowed if merge cannot be performed */
   var `405`: ContentApplicationjsonDocumentationurl
   
-  /** Conflict if sha was provided and pull request head did not match */
+  /** @description Conflict if sha was provided and pull request head did not match */
   var `409`: ContentApplicationjsonDocumentationurl
   
   var `422`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['validation_failed'] */ js.Any
@@ -24,7 +24,7 @@ trait `405` extends StObject {
 object `405` {
   
   inline def apply(
-    `200`: Content303,
+    `200`: Content321,
     `403`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['forbidden'] */ js.Any,
     `404`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['not_found'] */ js.Any,
     `405`: ContentApplicationjsonDocumentationurl,
@@ -44,7 +44,7 @@ object `405` {
   @scala.inline
   implicit open class MutableBuilder[Self <: `405`] (val x: Self) extends AnyVal {
     
-    inline def set200(value: Content303): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
+    inline def set200(value: Content321): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
     
     inline def set403(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['forbidden'] */ js.Any

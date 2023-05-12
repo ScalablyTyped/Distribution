@@ -16,7 +16,7 @@ object libIconsDashboardOutlinedMod extends Shortcut {
   @js.native
   trait DashboardOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_DashboardOutlinedIconType: String = js.native

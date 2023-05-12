@@ -8,11 +8,11 @@ trait ParametersQueryPerpageSortState extends StObject {
   
   var parameters: QueryPerpageSortState
   
-  var responses: `200Content540`
+  var responses: `200Content607`
 }
 object ParametersQueryPerpageSortState {
   
-  inline def apply(parameters: QueryPerpageSortState, responses: `200Content540`): ParametersQueryPerpageSortState = {
+  inline def apply(parameters: QueryPerpageSortState, responses: `200Content607`): ParametersQueryPerpageSortState = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersQueryPerpageSortState]
   }
@@ -22,6 +22,6 @@ object ParametersQueryPerpageSortState {
     
     inline def setParameters(value: QueryPerpageSortState): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `200Content540`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `200Content607`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

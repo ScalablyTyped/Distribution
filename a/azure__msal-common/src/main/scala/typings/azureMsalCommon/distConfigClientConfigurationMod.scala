@@ -38,11 +38,6 @@ object distConfigClientConfigurationMod {
     def preventCorsPreflight: Boolean = js.native
     inline def preventCorsPreflight_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("preventCorsPreflight")(x.asInstanceOf[js.Any])
     
-    @JSImport("@azure/msal-common/dist/config/ClientConfiguration", "DEFAULT_SYSTEM_OPTIONS.proxyUrl")
-    @js.native
-    def proxyUrl: String = js.native
-    inline def proxyUrl_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("proxyUrl")(x.asInstanceOf[js.Any])
-    
     @JSImport("@azure/msal-common/dist/config/ClientConfiguration", "DEFAULT_SYSTEM_OPTIONS.tokenRenewalOffsetSeconds")
     @js.native
     def tokenRenewalOffsetSeconds: Double = js.native
@@ -379,8 +374,6 @@ object distConfigClientConfigurationMod {
     
     var preventCorsPreflight: js.UndefOr[Boolean] = js.undefined
     
-    var proxyUrl: js.UndefOr[String] = js.undefined
-    
     var tokenRenewalOffsetSeconds: js.UndefOr[Double] = js.undefined
   }
   object SystemOptions {
@@ -396,10 +389,6 @@ object distConfigClientConfigurationMod {
       inline def setPreventCorsPreflight(value: Boolean): Self = StObject.set(x, "preventCorsPreflight", value.asInstanceOf[js.Any])
       
       inline def setPreventCorsPreflightUndefined: Self = StObject.set(x, "preventCorsPreflight", js.undefined)
-      
-      inline def setProxyUrl(value: String): Self = StObject.set(x, "proxyUrl", value.asInstanceOf[js.Any])
-      
-      inline def setProxyUrlUndefined: Self = StObject.set(x, "proxyUrl", js.undefined)
       
       inline def setTokenRenewalOffsetSeconds(value: Double): Self = StObject.set(x, "tokenRenewalOffsetSeconds", value.asInstanceOf[js.Any])
       

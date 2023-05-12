@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("i18next", "ResourceStore")
 @js.native
 open class ResourceStore protected () extends StObject {
-  def this(data: Resource, options: InitOptions) = this()
+  def this(data: Resource, options: InitOptions[js.Object]) = this()
   
   var data: Resource = js.native
   
@@ -25,5 +25,5 @@ open class ResourceStore protected () extends StObject {
     */
   def on(event: added | removed, callback: js.Function2[/* lng */ String, /* ns */ String, Unit]): Unit = js.native
   
-  var options: InitOptions = js.native
+  var options: InitOptions[js.Object] = js.native
 }

@@ -57,7 +57,7 @@ trait VisionPrescriptionLensSpecification
   var duration: js.UndefOr[Quantity] = js.undefined
   
   /**
-    * May also appear as OD (oculus dexter) for the right eye and OS (oculus siniter) for the left eye.
+    * May also appear on the paper claim form or in the Medical Records as as OD (oculus dexter) for the right eye and OS (oculus sinister) for the left eye.
     */
   var eye: right | left
   

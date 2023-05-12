@@ -8,11 +8,11 @@ trait ParametersPathKey extends StObject {
   
   var parameters: PathKey
   
-  var responses: `200304`
+  var responses: `304404`
 }
 object ParametersPathKey {
   
-  inline def apply(parameters: PathKey, responses: `200304`): ParametersPathKey = {
+  inline def apply(parameters: PathKey, responses: `304404`): ParametersPathKey = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersPathKey]
   }
@@ -22,6 +22,6 @@ object ParametersPathKey {
     
     inline def setParameters(value: PathKey): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `200304`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `304404`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

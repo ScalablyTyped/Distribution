@@ -1,7 +1,7 @@
 
 # Scala.js typings for libp2p__webrtc-star-protocol
 
-Typings are for version 2.0.1
+Typings are for version 4.0.0
 
 ## Library description:
 shared types used by the libp2p webrtc transport and signalling server

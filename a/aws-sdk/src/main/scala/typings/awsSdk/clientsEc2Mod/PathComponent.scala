@@ -42,6 +42,16 @@ trait PathComponent extends StObject {
   var Explanations: js.UndefOr[ExplanationList] = js.undefined
   
   /**
+    * The Network Firewall stateful rule.
+    */
+  var FirewallStatefulRule: js.UndefOr[typings.awsSdk.clientsEc2Mod.FirewallStatefulRule] = js.undefined
+  
+  /**
+    * The Network Firewall stateless rule.
+    */
+  var FirewallStatelessRule: js.UndefOr[typings.awsSdk.clientsEc2Mod.FirewallStatelessRule] = js.undefined
+  
+  /**
     * The inbound header.
     */
   var InboundHeader: js.UndefOr[AnalysisPacketHeader] = js.undefined
@@ -65,6 +75,11 @@ trait PathComponent extends StObject {
     * The sequence number.
     */
   var SequenceNumber: js.UndefOr[Integer] = js.undefined
+  
+  /**
+    * The name of the VPC endpoint service.
+    */
+  var ServiceName: js.UndefOr[String] = js.undefined
   
   /**
     * The source VPC.
@@ -133,6 +148,14 @@ object PathComponent {
     
     inline def setExplanationsVarargs(value: Explanation*): Self = StObject.set(x, "Explanations", js.Array(value*))
     
+    inline def setFirewallStatefulRule(value: FirewallStatefulRule): Self = StObject.set(x, "FirewallStatefulRule", value.asInstanceOf[js.Any])
+    
+    inline def setFirewallStatefulRuleUndefined: Self = StObject.set(x, "FirewallStatefulRule", js.undefined)
+    
+    inline def setFirewallStatelessRule(value: FirewallStatelessRule): Self = StObject.set(x, "FirewallStatelessRule", value.asInstanceOf[js.Any])
+    
+    inline def setFirewallStatelessRuleUndefined: Self = StObject.set(x, "FirewallStatelessRule", js.undefined)
+    
     inline def setInboundHeader(value: AnalysisPacketHeader): Self = StObject.set(x, "InboundHeader", value.asInstanceOf[js.Any])
     
     inline def setInboundHeaderUndefined: Self = StObject.set(x, "InboundHeader", js.undefined)
@@ -152,6 +175,10 @@ object PathComponent {
     inline def setSequenceNumber(value: Integer): Self = StObject.set(x, "SequenceNumber", value.asInstanceOf[js.Any])
     
     inline def setSequenceNumberUndefined: Self = StObject.set(x, "SequenceNumber", js.undefined)
+    
+    inline def setServiceName(value: String): Self = StObject.set(x, "ServiceName", value.asInstanceOf[js.Any])
+    
+    inline def setServiceNameUndefined: Self = StObject.set(x, "ServiceName", js.undefined)
     
     inline def setSourceVpc(value: AnalysisComponent): Self = StObject.set(x, "SourceVpc", value.asInstanceOf[js.Any])
     

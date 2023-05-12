@@ -3,19 +3,22 @@ package typings.angularCompilerCli.anon
 import typings.angularCompilerCli.srcNgtscCoreApiSrcInterfacesMod.ResourceHostContext
 import typings.angularCompilerCli.srcNgtscCoreApiSrcInterfacesMod.TransformResourceResult
 import typings.std.Set
+import typings.typescript.mod.CancellationToken
 import typings.typescript.mod.CompilerOptions
 import typings.typescript.mod.CreateSourceFileOptions
 import typings.typescript.mod.FileReference
-import typings.typescript.mod.ModuleKind.CommonJS
-import typings.typescript.mod.ModuleKind.ESNext
 import typings.typescript.mod.ModuleResolutionCache
 import typings.typescript.mod.ParsedCommandLine
 import typings.typescript.mod.Path
+import typings.typescript.mod.ResolutionMode
 import typings.typescript.mod.ResolvedModule
+import typings.typescript.mod.ResolvedModuleWithFailedLookupLocations
 import typings.typescript.mod.ResolvedProjectReference
 import typings.typescript.mod.ResolvedTypeReferenceDirective
+import typings.typescript.mod.ResolvedTypeReferenceDirectiveWithFailedLookupLocations
 import typings.typescript.mod.ScriptTarget
 import typings.typescript.mod.SourceFile
+import typings.typescript.mod.StringLiteralLike
 import typings.typescript.mod.WriteFileCallback
 import typings.typescript.mod.WriteFileCallbackData
 import org.scalablytyped.runtime.StObject
@@ -37,7 +40,7 @@ trait RequiredDelegationsExtend extends StObject {
     js.Function2[/* importedFilePath */ String, /* containingFilePath */ String, String]
   ] = js.undefined
   
-  var getCancellationToken: js.UndefOr[js.Function0[typings.typescript.mod.CancellationToken]] = js.undefined
+  var getCancellationToken: js.UndefOr[js.Function0[CancellationToken]] = js.undefined
   
   def getCanonicalFileName(fileName: String): String
   @JSName("getCanonicalFileName")
@@ -106,6 +109,18 @@ trait RequiredDelegationsExtend extends StObject {
   
   var realpath: js.UndefOr[js.Function1[/* path */ String, String]] = js.undefined
   
+  var resolveModuleNameLiterals: js.UndefOr[
+    js.Function6[
+      /* moduleLiterals */ js.Array[StringLiteralLike], 
+      /* containingFile */ String, 
+      /* redirectedReference */ js.UndefOr[ResolvedProjectReference], 
+      /* options */ CompilerOptions, 
+      /* containingSourceFile */ SourceFile, 
+      /* reusedNames */ js.UndefOr[js.Array[StringLiteralLike]], 
+      js.Array[ResolvedModuleWithFailedLookupLocations]
+    ]
+  ] = js.undefined
+  
   var resolveModuleNames: js.UndefOr[
     js.Function6[
       /* moduleNames */ js.Array[String], 
@@ -118,13 +133,25 @@ trait RequiredDelegationsExtend extends StObject {
     ]
   ] = js.undefined
   
+  var resolveTypeReferenceDirectiveReferences: js.UndefOr[
+    js.Function6[
+      /* typeDirectiveReferences */ js.Array[FileReference | String], 
+      /* containingFile */ String, 
+      /* redirectedReference */ js.UndefOr[ResolvedProjectReference], 
+      /* options */ CompilerOptions, 
+      /* containingSourceFile */ js.UndefOr[SourceFile], 
+      /* reusedNames */ js.UndefOr[js.Array[FileReference | String]], 
+      js.Array[ResolvedTypeReferenceDirectiveWithFailedLookupLocations]
+    ]
+  ] = js.undefined
+  
   var resolveTypeReferenceDirectives: js.UndefOr[
     js.Function5[
       /* typeReferenceDirectiveNames */ js.Array[FileReference | String], 
       /* containingFile */ String, 
       /* redirectedReference */ js.UndefOr[ResolvedProjectReference], 
       /* options */ CompilerOptions, 
-      /* containingFileMode */ js.UndefOr[ESNext | CommonJS], 
+      /* containingFileMode */ js.UndefOr[ResolutionMode], 
       js.Array[js.UndefOr[ResolvedTypeReferenceDirective]]
     ]
   ] = js.undefined
@@ -238,7 +265,7 @@ object RequiredDelegationsExtend {
     
     inline def setFileNameToModuleNameUndefined: Self = StObject.set(x, "fileNameToModuleName", js.undefined)
     
-    inline def setGetCancellationToken(value: () => typings.typescript.mod.CancellationToken): Self = StObject.set(x, "getCancellationToken", js.Any.fromFunction0(value))
+    inline def setGetCancellationToken(value: () => CancellationToken): Self = StObject.set(x, "getCancellationToken", js.Any.fromFunction0(value))
     
     inline def setGetCancellationTokenUndefined: Self = StObject.set(x, "getCancellationToken", js.undefined)
     
@@ -306,14 +333,26 @@ object RequiredDelegationsExtend {
     
     inline def setRealpathUndefined: Self = StObject.set(x, "realpath", js.undefined)
     
+    inline def setResolveModuleNameLiterals(
+      value: (/* moduleLiterals */ js.Array[StringLiteralLike], /* containingFile */ String, /* redirectedReference */ js.UndefOr[ResolvedProjectReference], /* options */ CompilerOptions, /* containingSourceFile */ SourceFile, /* reusedNames */ js.UndefOr[js.Array[StringLiteralLike]]) => js.Array[ResolvedModuleWithFailedLookupLocations]
+    ): Self = StObject.set(x, "resolveModuleNameLiterals", js.Any.fromFunction6(value))
+    
+    inline def setResolveModuleNameLiteralsUndefined: Self = StObject.set(x, "resolveModuleNameLiterals", js.undefined)
+    
     inline def setResolveModuleNames(
       value: (/* moduleNames */ js.Array[String], /* containingFile */ String, /* reusedNames */ js.UndefOr[js.Array[String]], /* redirectedReference */ js.UndefOr[ResolvedProjectReference], /* options */ CompilerOptions, /* containingSourceFile */ js.UndefOr[SourceFile]) => js.Array[js.UndefOr[ResolvedModule]]
     ): Self = StObject.set(x, "resolveModuleNames", js.Any.fromFunction6(value))
     
     inline def setResolveModuleNamesUndefined: Self = StObject.set(x, "resolveModuleNames", js.undefined)
     
+    inline def setResolveTypeReferenceDirectiveReferences(
+      value: (/* typeDirectiveReferences */ js.Array[FileReference | String], /* containingFile */ String, /* redirectedReference */ js.UndefOr[ResolvedProjectReference], /* options */ CompilerOptions, /* containingSourceFile */ js.UndefOr[SourceFile], /* reusedNames */ js.UndefOr[js.Array[FileReference | String]]) => js.Array[ResolvedTypeReferenceDirectiveWithFailedLookupLocations]
+    ): Self = StObject.set(x, "resolveTypeReferenceDirectiveReferences", js.Any.fromFunction6(value))
+    
+    inline def setResolveTypeReferenceDirectiveReferencesUndefined: Self = StObject.set(x, "resolveTypeReferenceDirectiveReferences", js.undefined)
+    
     inline def setResolveTypeReferenceDirectives(
-      value: (/* typeReferenceDirectiveNames */ js.Array[FileReference | String], /* containingFile */ String, /* redirectedReference */ js.UndefOr[ResolvedProjectReference], /* options */ CompilerOptions, /* containingFileMode */ js.UndefOr[ESNext | CommonJS]) => js.Array[js.UndefOr[ResolvedTypeReferenceDirective]]
+      value: (/* typeReferenceDirectiveNames */ js.Array[FileReference | String], /* containingFile */ String, /* redirectedReference */ js.UndefOr[ResolvedProjectReference], /* options */ CompilerOptions, /* containingFileMode */ js.UndefOr[ResolutionMode]) => js.Array[js.UndefOr[ResolvedTypeReferenceDirective]]
     ): Self = StObject.set(x, "resolveTypeReferenceDirectives", js.Any.fromFunction5(value))
     
     inline def setResolveTypeReferenceDirectivesUndefined: Self = StObject.set(x, "resolveTypeReferenceDirectives", js.undefined)

@@ -9,7 +9,7 @@ trait ScheduleAdBreak extends StObject {
   /**
     * The approximate duration of the ad break, in seconds.
     */
-  var ApproximateDurationSeconds: js.UndefOr[long] = js.undefined
+  var ApproximateDurationSeconds: js.UndefOr[_Long] = js.undefined
   
   /**
     * The approximate time that the ad will start playing.
@@ -36,7 +36,7 @@ object ScheduleAdBreak {
   @scala.inline
   implicit open class MutableBuilder[Self <: ScheduleAdBreak] (val x: Self) extends AnyVal {
     
-    inline def setApproximateDurationSeconds(value: long): Self = StObject.set(x, "ApproximateDurationSeconds", value.asInstanceOf[js.Any])
+    inline def setApproximateDurationSeconds(value: _Long): Self = StObject.set(x, "ApproximateDurationSeconds", value.asInstanceOf[js.Any])
     
     inline def setApproximateDurationSecondsUndefined: Self = StObject.set(x, "ApproximateDurationSeconds", js.undefined)
     

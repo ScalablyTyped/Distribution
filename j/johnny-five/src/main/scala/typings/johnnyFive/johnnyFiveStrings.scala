@@ -1,10 +1,29 @@
 package typings.johnnyFive
 
+import typings.johnnyFive.mod.SupportedBarometers
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object johnnyFiveStrings {
+  
+  @js.native
+  sealed trait BME280
+    extends StObject
+       with SupportedBarometers
+  inline def BME280: BME280 = "BME280".asInstanceOf[BME280]
+  
+  @js.native
+  sealed trait BMP180
+    extends StObject
+       with SupportedBarometers
+  inline def BMP180: BMP180 = "BMP180".asInstanceOf[BMP180]
+  
+  @js.native
+  sealed trait BMP280
+    extends StObject
+       with SupportedBarometers
+  inline def BMP280: BMP280 = "BMP280".asInstanceOf[BMP280]
   
   @js.native
   sealed trait DEFAULT extends StObject
@@ -21,6 +40,24 @@ object johnnyFiveStrings {
   @js.native
   sealed trait FORWARD_REVERSE_BRAKE extends StObject
   inline def FORWARD_REVERSE_BRAKE: FORWARD_REVERSE_BRAKE = "FORWARD_REVERSE_BRAKE".asInstanceOf[FORWARD_REVERSE_BRAKE]
+  
+  @js.native
+  sealed trait MPL115A2
+    extends StObject
+       with SupportedBarometers
+  inline def MPL115A2: MPL115A2 = "MPL115A2".asInstanceOf[MPL115A2]
+  
+  @js.native
+  sealed trait MPL3115A2
+    extends StObject
+       with SupportedBarometers
+  inline def MPL3115A2: MPL3115A2 = "MPL3115A2".asInstanceOf[MPL3115A2]
+  
+  @js.native
+  sealed trait MS5611
+    extends StObject
+       with SupportedBarometers
+  inline def MS5611: MS5611 = "MS5611".asInstanceOf[MS5611]
   
   @js.native
   sealed trait NC extends StObject

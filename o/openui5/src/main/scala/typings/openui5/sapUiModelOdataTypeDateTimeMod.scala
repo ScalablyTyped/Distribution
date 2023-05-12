@@ -112,5 +112,31 @@ object sapUiModelOdataTypeDateTimeMod {
   
   @js.native
   trait DateTime
-    extends typings.openui5.sapUiModelOdataTypeDateTimeBaseMod.default
+    extends typings.openui5.sapUiModelOdataTypeDateTimeBaseMod.default {
+    
+    /**
+      * @SINCE 1.111.0
+      *
+      * Gets the model value according to this type's constraints and format options for the given date object
+      * which represents a timestamp in the configured time zone. Validates the resulting value against the constraints
+      * of this type instance.
+      * See:
+      * 	{@link sap.ui.core.Configuration.getTimezone}
+      *
+      * @returns The model representation for the given Date
+      */
+    def getModelValue(): js.Date | typings.openui5.sapUiCoreDateUi5dateMod.default | Null = js.native
+    def getModelValue(
+      /**
+      * The date object considering the configured time zone. Must be created via {@link module:sap/ui/core/date/UI5Date.getInstance}
+      */
+    oDate: js.Date
+    ): js.Date | typings.openui5.sapUiCoreDateUi5dateMod.default | Null = js.native
+    def getModelValue(
+      /**
+      * The date object considering the configured time zone. Must be created via {@link module:sap/ui/core/date/UI5Date.getInstance}
+      */
+    oDate: typings.openui5.sapUiCoreDateUi5dateMod.default
+    ): js.Date | typings.openui5.sapUiCoreDateUi5dateMod.default | Null = js.native
+  }
 }

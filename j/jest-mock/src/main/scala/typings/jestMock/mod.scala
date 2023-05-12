@@ -37,6 +37,8 @@ object mod {
       */
     def this(global: /* globalThis */ Any) = this()
     
+    /* private */ var _attachMockImplementation: Any = js.native
+    
     /* private */ var _createMockFunction: Any = js.native
     
     /* private */ var _defaultMockConfig: Any = js.native
@@ -48,6 +50,11 @@ object mod {
     /* private */ var _ensureMockState: Any = js.native
     
     /* private */ val _environmentGlobal: Any = js.native
+    
+    /**
+      * Check whether the given property of an object has been already replaced.
+      */
+    /* private */ var _findReplacedProperty: Any = js.native
     
     /* private */ var _generateMock: Any = js.native
     
@@ -94,6 +101,10 @@ object mod {
     def mocked[T /* <: js.Object */](source: T, options: Shallow): Mocked_[T] = js.native
     def mocked[T /* <: js.Object */](source: T, options: `0`): MockedShallow[T] = js.native
     
+    def replaceProperty[T /* <: js.Object */, K /* <: PropertyLikeKeys[T] */, V /* <: /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any */](`object`: T, propertyKey: K, value: V): Replaced[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+      ] = js.native
+    
     def resetAllMocks(): Unit = js.native
     
     def restoreAllMocks(): Unit = js.native
@@ -108,6 +119,15 @@ object mod {
   inline def mocked[T /* <: js.Object */](source: T): Mocked_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("mocked")(source.asInstanceOf[js.Any]).asInstanceOf[Mocked_[T]]
   inline def mocked[T_1 /* <: js.Object */](source: T_1, options: `0`): MockedShallow[T_1] = (^.asInstanceOf[js.Dynamic].applyDynamic("mocked")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[MockedShallow[T_1]]
   inline def mocked[T /* <: js.Object */](source: T, options: Shallow): Mocked_[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("mocked")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Mocked_[T]]
+  
+  inline def replaceProperty[T /* <: js.Object */, K_2 /* <: Exclude[
+    /* keyof T */ String, 
+    /* keyof {[ K in keyof T as std.Required<T>[K] extends jest-mock.jest-mock.ClassLike? K : never ]: T[K]} */ String
+  ] */, V /* <: /* import warning: importer.ImportType#apply Failed type conversion: T[K_2] */ js.Any */](`object`: T, propertyKey: K_2, value: V): Replaced[
+    /* import warning: importer.ImportType#apply Failed type conversion: T[K_2] */ js.Any
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceProperty")(`object`.asInstanceOf[js.Any], propertyKey.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Replaced[
+    /* import warning: importer.ImportType#apply Failed type conversion: T[K_2] */ js.Any
+  ]]
   
   inline def spyOn[T_1 /* <: js.Object */, K_5 /* <: /* keyof {[ K_3 in keyof T_1 as std.Required<T_1>[K_3] extends jest-mock.jest-mock.ClassLike? K_3 : never ]: T_1[K_3]} */ String */, V_1 /* <: /* import warning: importer.ImportType#apply Failed type conversion: std.Required<T_1>[K_5] */ js.Any */](`object`: T_1, methodKey: K_5): /* import warning: importer.ImportType#apply Failed type conversion: V_1 extends jest-mock.jest-mock.ClassLike | jest-mock.jest-mock.FunctionLike ? jest-mock.jest-mock.Spied<V_1> : never */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("spyOn")(`object`.asInstanceOf[js.Any], methodKey.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: V_1 extends jest-mock.jest-mock.ClassLike | jest-mock.jest-mock.FunctionLike ? jest-mock.jest-mock.Spied<V_1> : never */ js.Any]
   inline def spyOn[T /* <: js.Object */, K_2 /* <: Exclude[
@@ -505,6 +525,34 @@ object mod {
     */
   @js.native
   trait RejectType[T /* <: FunctionLike */] extends StObject
+  
+  trait Replaced[T] extends StObject {
+    
+    /**
+      * Change the value of the property.
+      */
+    def replaceValue(value: T): this.type
+    
+    /**
+      * Restore property to its original value known at the time of mocking.
+      */
+    def restore(): Unit
+  }
+  object Replaced {
+    
+    inline def apply[T](replaceValue: T => Replaced[T], restore: () => Unit): Replaced[T] = {
+      val __obj = js.Dynamic.literal(replaceValue = js.Any.fromFunction1(replaceValue), restore = js.Any.fromFunction0(restore))
+      __obj.asInstanceOf[Replaced[T]]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Replaced[?], T] (val x: Self & Replaced[T]) extends AnyVal {
+      
+      inline def setReplaceValue(value: T => Replaced[T]): Self = StObject.set(x, "replaceValue", js.Any.fromFunction1(value))
+      
+      inline def setRestore(value: () => Unit): Self = StObject.set(x, "restore", js.Any.fromFunction0(value))
+    }
+  }
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.

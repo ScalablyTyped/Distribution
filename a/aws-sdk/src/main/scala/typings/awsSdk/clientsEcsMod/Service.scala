@@ -52,7 +52,7 @@ trait Service extends StObject {
   var enableECSManagedTags: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Determines whether the execute command functionality is enabled for the service. If true, the execute command functionality is enabled for all containers in tasks as part of the service.
+    * Determines whether the execute command functionality is turned on for the service. If true, the execute command functionality is turned on for all containers in tasks as part of the service.
     */
   var enableExecuteCommand: js.UndefOr[Boolean] = js.undefined
   

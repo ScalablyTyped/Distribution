@@ -655,6 +655,7 @@ object sapUiUnifiedCalendarHeaderMod {
     
     /**
       * @SINCE 1.32.0
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:pressButton0 pressButton0} to attached listeners.
       *
@@ -667,6 +668,8 @@ object sapUiUnifiedCalendarHeaderMod {
     mParameters: js.Object): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:pressButton1 pressButton1} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -678,6 +681,8 @@ object sapUiUnifiedCalendarHeaderMod {
     mParameters: js.Object): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:pressButton2 pressButton2} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -689,6 +694,8 @@ object sapUiUnifiedCalendarHeaderMod {
     mParameters: js.Object): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:pressCurrentDate pressCurrentDate} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -700,6 +707,8 @@ object sapUiUnifiedCalendarHeaderMod {
     mParameters: js.Object): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:pressNext pressNext} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -711,6 +720,8 @@ object sapUiUnifiedCalendarHeaderMod {
     mParameters: js.Object): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:pressPrevious pressPrevious} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining

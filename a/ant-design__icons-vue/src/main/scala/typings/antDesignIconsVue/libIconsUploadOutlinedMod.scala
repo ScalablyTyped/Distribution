@@ -16,7 +16,7 @@ object libIconsUploadOutlinedMod extends Shortcut {
   @js.native
   trait UploadOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_UploadOutlinedIconType: String = js.native

@@ -1,7 +1,7 @@
 
 # Scala.js typings for victory-voronoi-container
 
-Typings are for version 36.6.8
+Typings are for version 36.6.10
 
 ## Library description:
 Interactive Voronoi Mouseover Component for Victory

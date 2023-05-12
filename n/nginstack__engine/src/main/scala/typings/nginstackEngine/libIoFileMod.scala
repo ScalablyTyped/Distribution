@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object libIoFileMod {
   
   inline def apply(fileName: String): Unit = ^.asInstanceOf[js.Dynamic].apply(fileName.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  inline def apply(fileName: String, opt_mode: String): Unit = (^.asInstanceOf[js.Dynamic].apply(fileName.asInstanceOf[js.Any], opt_mode.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def apply(fileName: String, opt_mode: String, opt_encoding: String): Unit = (^.asInstanceOf[js.Dynamic].apply(fileName.asInstanceOf[js.Any], opt_mode.asInstanceOf[js.Any], opt_encoding.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def apply(fileName: String, opt_mode: Unit, opt_encoding: String): Unit = (^.asInstanceOf[js.Dynamic].apply(fileName.asInstanceOf[js.Any], opt_mode.asInstanceOf[js.Any], opt_encoding.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(fileName: String, mode: String): Unit = (^.asInstanceOf[js.Dynamic].apply(fileName.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(fileName: String, mode: String, encoding: String): Unit = (^.asInstanceOf[js.Dynamic].apply(fileName.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(fileName: String, mode: Unit, encoding: String): Unit = (^.asInstanceOf[js.Dynamic].apply(fileName.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("@nginstack/engine/lib/io/File", JSImport.Namespace)
   @js.native
@@ -18,9 +18,9 @@ object libIoFileMod {
     extends StObject
        with File {
     def this(fileName: String) = this()
-    def this(fileName: String, opt_mode: String) = this()
-    def this(fileName: String, opt_mode: String, opt_encoding: String) = this()
-    def this(fileName: String, opt_mode: Unit, opt_encoding: String) = this()
+    def this(fileName: String, mode: String) = this()
+    def this(fileName: String, mode: String, encoding: String) = this()
+    def this(fileName: String, mode: Unit, encoding: String) = this()
   }
   @JSImport("@nginstack/engine/lib/io/File", JSImport.Namespace)
   @js.native
@@ -105,6 +105,7 @@ object libIoFileMod {
     
     def write(data: String): Unit = js.native
     def write(data: js.typedarray.ArrayBuffer): Unit = js.native
+    def write(data: js.typedarray.Uint8Array): Unit = js.native
     
     def writeln(data: String): Unit = js.native
   }

@@ -10,24 +10,22 @@ import typings.chartJs.chartJsStrings.time
 import typings.chartJs.chartJsStrings.timeseries
 import typings.chartJs.chartJsStrings.x
 import typings.chartJs.chartJsStrings.y
-import typings.chartJs.mod.ActiveElement
-import typings.chartJs.mod.AnimationsSpec
-import typings.chartJs.mod.ChartEvent
-import typings.chartJs.mod.ChartType
-import typings.chartJs.mod.CoreInteractionOptions
-import typings.chartJs.mod.ElementOptionsByType
-import typings.chartJs.mod.PluginOptionsByType
-import typings.chartJs.mod.ScaleOptionsByType
-import typings.chartJs.mod.Scriptable
-import typings.chartJs.mod.ScriptableContext
-import typings.chartJs.mod.TransitionsSpec
-import typings.chartJs.typesBasicMod.AnyObject
-import typings.chartJs.typesGeometricMod.ChartArea
+import typings.chartJs.distTypesBasicMod.AnyObject
+import typings.chartJs.distTypesGeometricMod.ChartArea
+import typings.chartJs.distTypesIndexMod.ActiveElement
+import typings.chartJs.distTypesIndexMod.AnimationsSpec
+import typings.chartJs.distTypesIndexMod.ChartEvent
+import typings.chartJs.distTypesIndexMod.CoreInteractionOptions
+import typings.chartJs.distTypesIndexMod.ElementOptionsByType
+import typings.chartJs.distTypesIndexMod.PluginOptionsByType
+import typings.chartJs.distTypesIndexMod.ScaleOptionsByType
+import typings.chartJs.distTypesIndexMod.ScriptableContext
+import typings.chartJs.distTypesIndexMod.TransitionsSpec
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined chart.js.chart.js.CoreChartOptions<'doughnut'> & chart.js.chart.js.ElementChartOptions<'doughnut'> & chart.js.chart.js.PluginChartOptions<'doughnut'> & chart.js.chart.js.DatasetChartOptions<chart.js.chart.js.ChartType> & chart.js.chart.js.ScaleChartOptions<'doughnut'> & chart.js.chart.js.DoughnutControllerChartOptions */
+/* Inlined chart.js.chart.js/dist/types/index.CoreChartOptions<'doughnut'> & chart.js.chart.js/dist/types/index.ElementChartOptions<'doughnut'> & chart.js.chart.js/dist/types/index.PluginChartOptions<'doughnut'> & chart.js.chart.js/dist/types/index.DatasetChartOptions<chart.js.chart.js/dist/types/index.ChartType> & chart.js.chart.js/dist/types/index.ScaleChartOptions<'doughnut'> & chart.js.chart.js/dist/types/index.DoughnutControllerChartOptions */
 trait CoreChartOptionsdoughnutE extends StObject {
   
   var animation: `false` | AnimationSpecdoughnutonPr
@@ -44,7 +42,7 @@ trait CoreChartOptionsdoughnutE extends StObject {
     * base background color
     * @see Defaults.backgroundColor
     */
-  var backgroundColor: Scriptable[typings.chartJs.typesColorMod.Color, ScriptableContext[doughnut]]
+  var backgroundColor: typings.chartJs.distTypesIndexMod.Scriptable[typings.chartJs.distTypesColorMod.Color, ScriptableContext[doughnut]]
   
   var bar: Datasets
   
@@ -52,7 +50,7 @@ trait CoreChartOptionsdoughnutE extends StObject {
     * base border color
     * @see Defaults.borderColor
     */
-  var borderColor: Scriptable[typings.chartJs.typesColorMod.Color, ScriptableContext[doughnut]]
+  var borderColor: typings.chartJs.distTypesIndexMod.Scriptable[typings.chartJs.distTypesColorMod.Color, ScriptableContext[doughnut]]
   
   var bubble: DatasetsBubbleControllerDatasetOptions
   
@@ -63,7 +61,7 @@ trait CoreChartOptionsdoughnutE extends StObject {
   var circumference: Double
   
   /**
-    * How to clip relative to chartArea. Positive value allows overflow, negative value clips that many pixels inside chartArea. 0 = clip at chartArea. Clipping can also be configured per side: clip: {left: 5, top: false, right: -2, bottom: 0}
+    * How to clip relative to chartArea. Positive value allows overflow, negative value clips that many pixels inside chartArea. 0 = clip at chartArea. Clipping can also be configured per side: `clip: {left: 5, top: false, right: -2, bottom: 0}`
     */
   var clip: Double | ChartArea | `false`
   
@@ -71,14 +69,14 @@ trait CoreChartOptionsdoughnutE extends StObject {
     * base color
     * @see Defaults.color
     */
-  var color: Scriptable[typings.chartJs.typesColorMod.Color, ScriptableContext[doughnut]]
+  var color: typings.chartJs.distTypesIndexMod.Scriptable[typings.chartJs.distTypesColorMod.Color, ScriptableContext[doughnut]]
   
   /**
     * The portion of the chart that is cut out of the middle. ('50%' - for doughnut, 0 - for pie)
     * String ending with '%' means percentage, number means pixels.
     * @default 50
     */
-  var cutout: Scriptable[Double | String, ScriptableContext[doughnut]]
+  var cutout: typings.chartJs.distTypesIndexMod.Scriptable[Double | String, ScriptableContext[doughnut]]
   
   var datasets: keyinChartTypeChartTypeReBar
   
@@ -97,7 +95,7 @@ trait CoreChartOptionsdoughnutE extends StObject {
     * @default ['mousemove', 'mouseout', 'click', 'touchstart', 'touchmove']
     */
   var events: js.Array[
-    /* keyof std.HTMLElementEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 101, starting with typings.chartJs.chartJsStrings.fullscreenchange, typings.chartJs.chartJsStrings.fullscreenerror, typings.chartJs.chartJsStrings.copy */ Any
+    /* keyof std.HTMLElementEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 101, starting with typings.chartJs.chartJsStrings.fullscreenchange, typings.chartJs.chartJsStrings.fullscreenerror, typings.chartJs.chartJsStrings.abort */ Any
   ]
   
   /**
@@ -140,7 +138,7 @@ trait CoreChartOptionsdoughnutE extends StObject {
   /**
     * Arc offset (in pixels).
     */
-  var offset: Double
+  var offset: Double | js.Array[Double]
   
   /**
     * Called if the event is of type 'mouseup' or 'click'. Passed the event, an array of active elements, and the chart.
@@ -148,7 +146,11 @@ trait CoreChartOptionsdoughnutE extends StObject {
   def onClick(
     event: ChartEvent,
     elements: js.Array[ActiveElement],
-    chart: typings.chartJs.mod.Chart[ChartType, typings.chartJs.mod.DefaultDataPoint[ChartType], Any]
+    chart: typings.chartJs.distTypesIndexMod.Chart[
+      typings.chartJs.distTypesIndexMod.ChartType, 
+      typings.chartJs.distTypesIndexMod.DefaultDataPoint[typings.chartJs.distTypesIndexMod.ChartType], 
+      Any
+    ]
   ): Unit
   
   /**
@@ -157,14 +159,22 @@ trait CoreChartOptionsdoughnutE extends StObject {
   def onHover(
     event: ChartEvent,
     elements: js.Array[ActiveElement],
-    chart: typings.chartJs.mod.Chart[ChartType, typings.chartJs.mod.DefaultDataPoint[ChartType], Any]
+    chart: typings.chartJs.distTypesIndexMod.Chart[
+      typings.chartJs.distTypesIndexMod.ChartType, 
+      typings.chartJs.distTypesIndexMod.DefaultDataPoint[typings.chartJs.distTypesIndexMod.ChartType], 
+      Any
+    ]
   ): Unit
   
   /**
     * Called when a resize occurs. Gets passed two arguments: the chart instance and the new size.
     */
   def onResize(
-    chart: typings.chartJs.mod.Chart[ChartType, typings.chartJs.mod.DefaultDataPoint[ChartType], Any],
+    chart: typings.chartJs.distTypesIndexMod.Chart[
+      typings.chartJs.distTypesIndexMod.ChartType, 
+      typings.chartJs.distTypesIndexMod.DefaultDataPoint[typings.chartJs.distTypesIndexMod.ChartType], 
+      Any
+    ],
     size: Height
   ): Unit
   
@@ -185,7 +195,7 @@ trait CoreChartOptionsdoughnutE extends StObject {
     * The outer radius of the chart. String ending with '%' means percentage of maximum radius, number means pixels.
     * @default '100%'
     */
-  var radius: Scriptable[Double | String, ScriptableContext[doughnut]]
+  var radius: typings.chartJs.distTypesIndexMod.Scriptable[Double | String, ScriptableContext[doughnut]]
   
   /**
     * Delay the resize update by give amount of milliseconds. This can ease the resize process by debouncing update of the elements.
@@ -223,20 +233,20 @@ object CoreChartOptionsdoughnutE {
     animation: `false` | AnimationSpecdoughnutonPr,
     animations: AnimationsSpec[doughnut],
     aspectRatio: Double,
-    backgroundColor: Scriptable[typings.chartJs.typesColorMod.Color, ScriptableContext[doughnut]],
+    backgroundColor: typings.chartJs.distTypesIndexMod.Scriptable[typings.chartJs.distTypesColorMod.Color, ScriptableContext[doughnut]],
     bar: Datasets,
-    borderColor: Scriptable[typings.chartJs.typesColorMod.Color, ScriptableContext[doughnut]],
+    borderColor: typings.chartJs.distTypesIndexMod.Scriptable[typings.chartJs.distTypesColorMod.Color, ScriptableContext[doughnut]],
     bubble: DatasetsBubbleControllerDatasetOptions,
     circumference: Double,
     clip: Double | ChartArea | `false`,
-    color: Scriptable[typings.chartJs.typesColorMod.Color, ScriptableContext[doughnut]],
-    cutout: Scriptable[Double | String, ScriptableContext[doughnut]],
+    color: typings.chartJs.distTypesIndexMod.Scriptable[typings.chartJs.distTypesColorMod.Color, ScriptableContext[doughnut]],
+    cutout: typings.chartJs.distTypesIndexMod.Scriptable[Double | String, ScriptableContext[doughnut]],
     datasets: keyinChartTypeChartTypeReBar,
     devicePixelRatio: Double,
     doughnut: DatasetsDoughnutControllerDatasetOptions,
     elements: ElementOptionsByType[doughnut],
     events: js.Array[
-      /* keyof std.HTMLElementEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 101, starting with typings.chartJs.chartJsStrings.fullscreenchange, typings.chartJs.chartJsStrings.fullscreenerror, typings.chartJs.chartJsStrings.copy */ Any
+      /* keyof std.HTMLElementEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 101, starting with typings.chartJs.chartJsStrings.fullscreenchange, typings.chartJs.chartJsStrings.fullscreenerror, typings.chartJs.chartJsStrings.abort */ Any
     ],
     font: PartialFontSpec,
     hover: CoreInteractionOptions,
@@ -247,16 +257,28 @@ object CoreChartOptionsdoughnutE {
     locale: String,
     maintainAspectRatio: Boolean,
     normalized: Boolean,
-    offset: Double,
-    onClick: (ChartEvent, js.Array[ActiveElement], typings.chartJs.mod.Chart[ChartType, typings.chartJs.mod.DefaultDataPoint[ChartType], Any]) => Unit,
-    onHover: (ChartEvent, js.Array[ActiveElement], typings.chartJs.mod.Chart[ChartType, typings.chartJs.mod.DefaultDataPoint[ChartType], Any]) => Unit,
-    onResize: (typings.chartJs.mod.Chart[ChartType, typings.chartJs.mod.DefaultDataPoint[ChartType], Any], Height) => Unit,
+    offset: Double | js.Array[Double],
+    onClick: (ChartEvent, js.Array[ActiveElement], typings.chartJs.distTypesIndexMod.Chart[
+      typings.chartJs.distTypesIndexMod.ChartType, 
+      typings.chartJs.distTypesIndexMod.DefaultDataPoint[typings.chartJs.distTypesIndexMod.ChartType], 
+      Any
+    ]) => Unit,
+    onHover: (ChartEvent, js.Array[ActiveElement], typings.chartJs.distTypesIndexMod.Chart[
+      typings.chartJs.distTypesIndexMod.ChartType, 
+      typings.chartJs.distTypesIndexMod.DefaultDataPoint[typings.chartJs.distTypesIndexMod.ChartType], 
+      Any
+    ]) => Unit,
+    onResize: (typings.chartJs.distTypesIndexMod.Chart[
+      typings.chartJs.distTypesIndexMod.ChartType, 
+      typings.chartJs.distTypesIndexMod.DefaultDataPoint[typings.chartJs.distTypesIndexMod.ChartType], 
+      Any
+    ], Height) => Unit,
     parsing: StringDictionary[String] | `false`,
     pie: DatasetsPieControllerDatasetOptions,
     plugins: PluginOptionsByType[doughnut],
     polarArea: DatasetsPolarAreaControllerDatasetOptions,
     radar: `0`,
-    radius: Scriptable[Double | String, ScriptableContext[doughnut]],
+    radius: typings.chartJs.distTypesIndexMod.Scriptable[Double | String, ScriptableContext[doughnut]],
     resizeDelay: Double,
     responsive: Boolean,
     rotation: Double,
@@ -278,18 +300,22 @@ object CoreChartOptionsdoughnutE {
     
     inline def setAspectRatio(value: Double): Self = StObject.set(x, "aspectRatio", value.asInstanceOf[js.Any])
     
-    inline def setBackgroundColor(value: Scriptable[typings.chartJs.typesColorMod.Color, ScriptableContext[doughnut]]): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    inline def setBackgroundColor(
+      value: typings.chartJs.distTypesIndexMod.Scriptable[typings.chartJs.distTypesColorMod.Color, ScriptableContext[doughnut]]
+    ): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     inline def setBackgroundColorFunction2(
-      value: (ScriptableContext[doughnut], /* options */ AnyObject) => js.UndefOr[typings.chartJs.typesColorMod.Color]
+      value: (ScriptableContext[doughnut], /* options */ AnyObject) => js.UndefOr[typings.chartJs.distTypesColorMod.Color]
     ): Self = StObject.set(x, "backgroundColor", js.Any.fromFunction2(value))
     
     inline def setBar(value: Datasets): Self = StObject.set(x, "bar", value.asInstanceOf[js.Any])
     
-    inline def setBorderColor(value: Scriptable[typings.chartJs.typesColorMod.Color, ScriptableContext[doughnut]]): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
+    inline def setBorderColor(
+      value: typings.chartJs.distTypesIndexMod.Scriptable[typings.chartJs.distTypesColorMod.Color, ScriptableContext[doughnut]]
+    ): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     
     inline def setBorderColorFunction2(
-      value: (ScriptableContext[doughnut], /* options */ AnyObject) => js.UndefOr[typings.chartJs.typesColorMod.Color]
+      value: (ScriptableContext[doughnut], /* options */ AnyObject) => js.UndefOr[typings.chartJs.distTypesColorMod.Color]
     ): Self = StObject.set(x, "borderColor", js.Any.fromFunction2(value))
     
     inline def setBubble(value: DatasetsBubbleControllerDatasetOptions): Self = StObject.set(x, "bubble", value.asInstanceOf[js.Any])
@@ -298,13 +324,15 @@ object CoreChartOptionsdoughnutE {
     
     inline def setClip(value: Double | ChartArea | `false`): Self = StObject.set(x, "clip", value.asInstanceOf[js.Any])
     
-    inline def setColor(value: Scriptable[typings.chartJs.typesColorMod.Color, ScriptableContext[doughnut]]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(
+      value: typings.chartJs.distTypesIndexMod.Scriptable[typings.chartJs.distTypesColorMod.Color, ScriptableContext[doughnut]]
+    ): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     inline def setColorFunction2(
-      value: (ScriptableContext[doughnut], /* options */ AnyObject) => js.UndefOr[typings.chartJs.typesColorMod.Color]
+      value: (ScriptableContext[doughnut], /* options */ AnyObject) => js.UndefOr[typings.chartJs.distTypesColorMod.Color]
     ): Self = StObject.set(x, "color", js.Any.fromFunction2(value))
     
-    inline def setCutout(value: Scriptable[Double | String, ScriptableContext[doughnut]]): Self = StObject.set(x, "cutout", value.asInstanceOf[js.Any])
+    inline def setCutout(value: typings.chartJs.distTypesIndexMod.Scriptable[Double | String, ScriptableContext[doughnut]]): Self = StObject.set(x, "cutout", value.asInstanceOf[js.Any])
     
     inline def setCutoutFunction2(value: (ScriptableContext[doughnut], /* options */ AnyObject) => js.UndefOr[Double | String]): Self = StObject.set(x, "cutout", js.Any.fromFunction2(value))
     
@@ -318,12 +346,12 @@ object CoreChartOptionsdoughnutE {
     
     inline def setEvents(
       value: js.Array[
-          /* keyof std.HTMLElementEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 101, starting with typings.chartJs.chartJsStrings.fullscreenchange, typings.chartJs.chartJsStrings.fullscreenerror, typings.chartJs.chartJsStrings.copy */ Any
+          /* keyof std.HTMLElementEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 101, starting with typings.chartJs.chartJsStrings.fullscreenchange, typings.chartJs.chartJsStrings.fullscreenerror, typings.chartJs.chartJsStrings.abort */ Any
         ]
     ): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     inline def setEventsVarargs(
-      value: (/* keyof std.HTMLElementEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 101, starting with typings.chartJs.chartJsStrings.fullscreenchange, typings.chartJs.chartJsStrings.fullscreenerror, typings.chartJs.chartJsStrings.copy */ Any)*
+      value: (/* keyof std.HTMLElementEventMap */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 101, starting with typings.chartJs.chartJsStrings.fullscreenchange, typings.chartJs.chartJsStrings.fullscreenerror, typings.chartJs.chartJsStrings.abort */ Any)*
     ): Self = StObject.set(x, "events", js.Array(value*))
     
     inline def setFont(value: PartialFontSpec): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
@@ -344,18 +372,32 @@ object CoreChartOptionsdoughnutE {
     
     inline def setNormalized(value: Boolean): Self = StObject.set(x, "normalized", value.asInstanceOf[js.Any])
     
-    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Double | js.Array[Double]): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    
+    inline def setOffsetVarargs(value: Double*): Self = StObject.set(x, "offset", js.Array(value*))
     
     inline def setOnClick(
-      value: (ChartEvent, js.Array[ActiveElement], typings.chartJs.mod.Chart[ChartType, typings.chartJs.mod.DefaultDataPoint[ChartType], Any]) => Unit
+      value: (ChartEvent, js.Array[ActiveElement], typings.chartJs.distTypesIndexMod.Chart[
+          typings.chartJs.distTypesIndexMod.ChartType, 
+          typings.chartJs.distTypesIndexMod.DefaultDataPoint[typings.chartJs.distTypesIndexMod.ChartType], 
+          Any
+        ]) => Unit
     ): Self = StObject.set(x, "onClick", js.Any.fromFunction3(value))
     
     inline def setOnHover(
-      value: (ChartEvent, js.Array[ActiveElement], typings.chartJs.mod.Chart[ChartType, typings.chartJs.mod.DefaultDataPoint[ChartType], Any]) => Unit
+      value: (ChartEvent, js.Array[ActiveElement], typings.chartJs.distTypesIndexMod.Chart[
+          typings.chartJs.distTypesIndexMod.ChartType, 
+          typings.chartJs.distTypesIndexMod.DefaultDataPoint[typings.chartJs.distTypesIndexMod.ChartType], 
+          Any
+        ]) => Unit
     ): Self = StObject.set(x, "onHover", js.Any.fromFunction3(value))
     
     inline def setOnResize(
-      value: (typings.chartJs.mod.Chart[ChartType, typings.chartJs.mod.DefaultDataPoint[ChartType], Any], Height) => Unit
+      value: (typings.chartJs.distTypesIndexMod.Chart[
+          typings.chartJs.distTypesIndexMod.ChartType, 
+          typings.chartJs.distTypesIndexMod.DefaultDataPoint[typings.chartJs.distTypesIndexMod.ChartType], 
+          Any
+        ], Height) => Unit
     ): Self = StObject.set(x, "onResize", js.Any.fromFunction2(value))
     
     inline def setParsing(value: StringDictionary[String] | `false`): Self = StObject.set(x, "parsing", value.asInstanceOf[js.Any])
@@ -368,7 +410,7 @@ object CoreChartOptionsdoughnutE {
     
     inline def setRadar(value: `0`): Self = StObject.set(x, "radar", value.asInstanceOf[js.Any])
     
-    inline def setRadius(value: Scriptable[Double | String, ScriptableContext[doughnut]]): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+    inline def setRadius(value: typings.chartJs.distTypesIndexMod.Scriptable[Double | String, ScriptableContext[doughnut]]): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
     inline def setRadiusFunction2(value: (ScriptableContext[doughnut], /* options */ AnyObject) => js.UndefOr[Double | String]): Self = StObject.set(x, "radius", js.Any.fromFunction2(value))
     

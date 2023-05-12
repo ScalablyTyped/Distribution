@@ -7,17 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ExecutionEngineConfig extends StObject {
   
   /**
-    * The unique identifier of the execution engine. For an EMR cluster, this is the cluster ID.
+    * The execution role ARN required for the notebook execution.
+    */
+  var ExecutionRoleArn: js.UndefOr[IAMRoleArn] = js.undefined
+  
+  /**
+    * The unique identifier of the execution engine. For an Amazon EMR cluster, this is the cluster ID.
     */
   var Id: XmlStringMaxLen256
   
   /**
-    * An optional unique ID of an EC2 security group to associate with the master instance of the EMR cluster for this notebook execution. For more information see Specifying EC2 Security Groups for EMR Notebooks in the EMR Management Guide.
+    * An optional unique ID of an Amazon EC2 security group to associate with the master instance of the Amazon EMR cluster for this notebook execution. For more information see Specifying Amazon EC2 Security Groups for Amazon EMR Notebooks in the EMR Management Guide.
     */
   var MasterInstanceSecurityGroupId: js.UndefOr[XmlStringMaxLen256] = js.undefined
   
   /**
-    * The type of execution engine. A value of EMR specifies an EMR cluster.
+    * The type of execution engine. A value of EMR specifies an Amazon EMR cluster.
     */
   var Type: js.UndefOr[ExecutionEngineType] = js.undefined
 }
@@ -30,6 +35,10 @@ object ExecutionEngineConfig {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: ExecutionEngineConfig] (val x: Self) extends AnyVal {
+    
+    inline def setExecutionRoleArn(value: IAMRoleArn): Self = StObject.set(x, "ExecutionRoleArn", value.asInstanceOf[js.Any])
+    
+    inline def setExecutionRoleArnUndefined: Self = StObject.set(x, "ExecutionRoleArn", js.undefined)
     
     inline def setId(value: XmlStringMaxLen256): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     

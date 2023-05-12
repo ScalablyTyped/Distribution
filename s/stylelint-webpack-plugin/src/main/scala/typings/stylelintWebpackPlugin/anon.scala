@@ -1,19 +1,12 @@
 package typings.stylelintWebpackPlugin
 
-import typings.postcss.mod.Root_
-import typings.postcss.mod.Warning
-import typings.std.NonNullable
 import typings.stylelint.mod.Config
-import typings.stylelint.mod.ConfigRuleSettings
 import typings.stylelint.mod.CustomSyntax
 import typings.stylelint.mod.Formatter
 import typings.stylelint.mod.LintResult
 import typings.stylelint.mod.LinterResult
-import typings.stylelint.mod.PostcssResult
-import typings.stylelint.mod.Problem
-import typings.stylelint.mod.RuleMessages
-import typings.stylelint.mod.RuleOptions
-import typings.stylelintWebpackPlugin.typesLinterMod.InternalApi
+import typings.stylelintWebpackPlugin.typesGetStylelintMod.Stylelint
+import typings.stylelintWebpackPlugin.typesGetStylelintMod.isPathIgnored
 import typings.stylelintWebpackPlugin.typesLinterMod.Linter
 import typings.stylelintWebpackPlugin.typesLinterMod.Report
 import typings.stylelintWebpackPlugin.typesLinterMod.Reporter
@@ -25,9 +18,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object anon {
   
-  trait Api extends StObject {
+  trait IsPathIgnored extends StObject {
     
-    var api: InternalApi
+    def isPathIgnored(stylelint: Stylelint, filePath: String): js.Promise[Boolean]
+    @JSName("isPathIgnored")
+    var isPathIgnored_Original: isPathIgnored
     
     def lint(files: String): Unit
     def lint(files: js.Array[String]): Unit
@@ -38,65 +33,35 @@ object anon {
     @JSName("report")
     var report_Original: Reporter
     
+    var stylelint: typings.stylelintWebpackPlugin.typesLinterMod.Stylelint
+    
     var threads: Double
   }
-  object Api {
+  object IsPathIgnored {
     
     inline def apply(
-      api: InternalApi,
+      isPathIgnored: (/* stylelint */ Stylelint, /* filePath */ String) => js.Promise[Boolean],
       lint: /* files */ String | js.Array[String] => Unit,
       report: () => js.Promise[Report],
+      stylelint: typings.stylelintWebpackPlugin.typesLinterMod.Stylelint,
       threads: Double
-    ): Api = {
-      val __obj = js.Dynamic.literal(api = api.asInstanceOf[js.Any], lint = js.Any.fromFunction1(lint), report = js.Any.fromFunction0(report), threads = threads.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Api]
+    ): IsPathIgnored = {
+      val __obj = js.Dynamic.literal(isPathIgnored = js.Any.fromFunction2(isPathIgnored), lint = js.Any.fromFunction1(lint), report = js.Any.fromFunction0(report), stylelint = stylelint.asInstanceOf[js.Any], threads = threads.asInstanceOf[js.Any])
+      __obj.asInstanceOf[IsPathIgnored]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: Api] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: IsPathIgnored] (val x: Self) extends AnyVal {
       
-      inline def setApi(value: InternalApi): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
+      inline def setIsPathIgnored(value: (/* stylelint */ Stylelint, /* filePath */ String) => js.Promise[Boolean]): Self = StObject.set(x, "isPathIgnored", js.Any.fromFunction2(value))
       
       inline def setLint(value: /* files */ String | js.Array[String] => Unit): Self = StObject.set(x, "lint", js.Any.fromFunction1(value))
       
       inline def setReport(value: () => js.Promise[Report]): Self = StObject.set(x, "report", js.Any.fromFunction0(value))
       
+      inline def setStylelint(value: typings.stylelintWebpackPlugin.typesLinterMod.Stylelint): Self = StObject.set(x, "stylelint", value.asInstanceOf[js.Any])
+      
       inline def setThreads(value: Double): Self = StObject.set(x, "threads", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait CheckAgainstRule extends StObject {
-    
-    def checkAgainstRule[T_1, O /* <: js.Object */](options: Root[T_1, O], callback: js.Function1[/* warning */ Warning, Unit]): Unit
-    
-    def report(problem: Problem): Unit
-    
-    def ruleMessages[T /* <: RuleMessages */, R /* <: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: T[K]} */ js.Any */](ruleName: String, messages: T): R
-    
-    def validateOptions(result: PostcssResult, ruleName: String, optionDescriptions: RuleOptions*): Boolean
-  }
-  object CheckAgainstRule {
-    
-    inline def apply(
-      checkAgainstRule: (Root[Any, Any], js.Function1[/* warning */ Warning, Unit]) => Unit,
-      report: Problem => Unit,
-      ruleMessages: (String, Any) => Any,
-      validateOptions: (PostcssResult, String, /* repeated */ RuleOptions) => Boolean
-    ): CheckAgainstRule = {
-      val __obj = js.Dynamic.literal(checkAgainstRule = js.Any.fromFunction2(checkAgainstRule), report = js.Any.fromFunction1(report), ruleMessages = js.Any.fromFunction2(ruleMessages), validateOptions = js.Any.fromFunction3(validateOptions))
-      __obj.asInstanceOf[CheckAgainstRule]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: CheckAgainstRule] (val x: Self) extends AnyVal {
-      
-      inline def setCheckAgainstRule(value: (Root[Any, Any], js.Function1[/* warning */ Warning, Unit]) => Unit): Self = StObject.set(x, "checkAgainstRule", js.Any.fromFunction2(value))
-      
-      inline def setReport(value: Problem => Unit): Self = StObject.set(x, "report", js.Any.fromFunction1(value))
-      
-      inline def setRuleMessages(value: (String, Any) => Any): Self = StObject.set(x, "ruleMessages", js.Any.fromFunction2(value))
-      
-      inline def setValidateOptions(value: (PostcssResult, String, /* repeated */ RuleOptions) => Boolean): Self = StObject.set(x, "validateOptions", js.Any.fromFunction3(value))
     }
   }
   
@@ -252,13 +217,13 @@ object anon {
     
     var quiet: js.UndefOr[Boolean] = js.undefined
     
+    var quietDeprecationWarnings: js.UndefOr[Boolean] = js.undefined
+    
     var reportDescriptionlessDisables: js.UndefOr[Boolean] = js.undefined
     
     var reportInvalidScopeDisables: js.UndefOr[Boolean] = js.undefined
     
     var reportNeedlessDisables: js.UndefOr[Boolean] = js.undefined
-    
-    var syntax: js.UndefOr[String] = js.undefined
   }
   object PartialStylelintOptions {
     
@@ -362,6 +327,10 @@ object anon {
       
       inline def setQuiet(value: Boolean): Self = StObject.set(x, "quiet", value.asInstanceOf[js.Any])
       
+      inline def setQuietDeprecationWarnings(value: Boolean): Self = StObject.set(x, "quietDeprecationWarnings", value.asInstanceOf[js.Any])
+      
+      inline def setQuietDeprecationWarningsUndefined: Self = StObject.set(x, "quietDeprecationWarnings", js.undefined)
+      
       inline def setQuietUndefined: Self = StObject.set(x, "quiet", js.undefined)
       
       inline def setReportDescriptionlessDisables(value: Boolean): Self = StObject.set(x, "reportDescriptionlessDisables", value.asInstanceOf[js.Any])
@@ -375,103 +344,6 @@ object anon {
       inline def setReportNeedlessDisables(value: Boolean): Self = StObject.set(x, "reportNeedlessDisables", value.asInstanceOf[js.Any])
       
       inline def setReportNeedlessDisablesUndefined: Self = StObject.set(x, "reportNeedlessDisables", js.undefined)
-      
-      inline def setSyntax(value: String): Self = StObject.set(x, "syntax", value.asInstanceOf[js.Any])
-      
-      inline def setSyntaxUndefined: Self = StObject.set(x, "syntax", js.undefined)
-    }
-  }
-  
-  /* Inlined std.Pick<stylelint.stylelint.LinterOptions, 'cwd' | 'config' | 'configFile' | 'configBasedir'> */
-  trait PickLinterOptionscwdconfi extends StObject {
-    
-    var config: js.UndefOr[Config] = js.undefined
-    
-    var configBasedir: js.UndefOr[String] = js.undefined
-    
-    var configFile: js.UndefOr[String] = js.undefined
-    
-    var cwd: js.UndefOr[String] = js.undefined
-  }
-  object PickLinterOptionscwdconfi {
-    
-    inline def apply(): PickLinterOptionscwdconfi = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[PickLinterOptionscwdconfi]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: PickLinterOptionscwdconfi] (val x: Self) extends AnyVal {
-      
-      inline def setConfig(value: Config): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
-      
-      inline def setConfigBasedir(value: String): Self = StObject.set(x, "configBasedir", value.asInstanceOf[js.Any])
-      
-      inline def setConfigBasedirUndefined: Self = StObject.set(x, "configBasedir", js.undefined)
-      
-      inline def setConfigFile(value: String): Self = StObject.set(x, "configFile", value.asInstanceOf[js.Any])
-      
-      inline def setConfigFileUndefined: Self = StObject.set(x, "configFile", js.undefined)
-      
-      inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
-      
-      inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
-      
-      inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
-    }
-  }
-  
-  trait Root[T_1, O /* <: js.Object */] extends StObject {
-    
-    var root: Root_
-    
-    var ruleName: String
-    
-    var ruleSettings: ConfigRuleSettings[T_1, O]
-  }
-  object Root {
-    
-    inline def apply[T_1, O /* <: js.Object */](root: Root_, ruleName: String): Root[T_1, O] = {
-      val __obj = js.Dynamic.literal(root = root.asInstanceOf[js.Any], ruleName = ruleName.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Root[T_1, O]]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: Root[?, ?], T_1, O /* <: js.Object */] (val x: Self & (Root[T_1, O])) extends AnyVal {
-      
-      inline def setRoot(value: Root_): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
-      
-      inline def setRuleName(value: String): Self = StObject.set(x, "ruleName", value.asInstanceOf[js.Any])
-      
-      inline def setRuleSettings(value: ConfigRuleSettings[T_1, O]): Self = StObject.set(x, "ruleSettings", value.asInstanceOf[js.Any])
-      
-      inline def setRuleSettingsNull: Self = StObject.set(x, "ruleSettings", null)
-      
-      inline def setRuleSettingsUndefined: Self = StObject.set(x, "ruleSettings", js.undefined)
-      
-      inline def setRuleSettingsVarargs(value: NonNullable[T_1]*): Self = StObject.set(x, "ruleSettings", js.Array(value*))
-    }
-  }
-  
-  trait Rule extends StObject {
-    
-    var rule: typings.stylelint.mod.Rule[Any, Any]
-    
-    var ruleName: String
-  }
-  object Rule {
-    
-    inline def apply(rule: typings.stylelint.mod.Rule[Any, Any], ruleName: String): Rule = {
-      val __obj = js.Dynamic.literal(rule = rule.asInstanceOf[js.Any], ruleName = ruleName.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Rule]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: Rule] (val x: Self) extends AnyVal {
-      
-      inline def setRule(value: typings.stylelint.mod.Rule[Any, Any]): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
-      
-      inline def setRuleName(value: String): Self = StObject.set(x, "ruleName", value.asInstanceOf[js.Any])
     }
   }
   

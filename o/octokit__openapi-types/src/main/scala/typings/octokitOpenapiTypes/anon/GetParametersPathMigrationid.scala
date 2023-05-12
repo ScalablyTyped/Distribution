@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetParametersPathMigrationid extends StObject {
   
   /**
-    * Fetches the status of a migration.
+    * Get an organization migration status
+    * @description Fetches the status of a migration.
     *
     * The `state` of a migration can be one of the following values:
     *

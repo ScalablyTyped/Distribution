@@ -51,6 +51,12 @@ object estreeStrings {
   inline def AmpersandAmpersand: AmpersandAmpersand = "&&".asInstanceOf[AmpersandAmpersand]
   
   @js.native
+  sealed trait AmpersandAmpersandEqualssign
+    extends StObject
+       with AssignmentOperator
+  inline def AmpersandAmpersandEqualssign: AmpersandAmpersandEqualssign = "&&=".asInstanceOf[AmpersandAmpersandEqualssign]
+  
+  @js.native
   sealed trait AmpersandEqualssign
     extends StObject
        with AssignmentOperator
@@ -422,6 +428,12 @@ object estreeStrings {
   inline def QuestionmarkQuestionmark: QuestionmarkQuestionmark = "??".asInstanceOf[QuestionmarkQuestionmark]
   
   @js.native
+  sealed trait QuestionmarkQuestionmarkEqualssign
+    extends StObject
+       with AssignmentOperator
+  inline def QuestionmarkQuestionmarkEqualssign: QuestionmarkQuestionmarkEqualssign = "??=".asInstanceOf[QuestionmarkQuestionmarkEqualssign]
+  
+  @js.native
   sealed trait RestElement extends StObject
   inline def RestElement: RestElement = "RestElement".asInstanceOf[RestElement]
   
@@ -528,6 +540,12 @@ object estreeStrings {
     extends StObject
        with LogicalOperator
   inline def VerticallineVerticalline: VerticallineVerticalline = "||".asInstanceOf[VerticallineVerticalline]
+  
+  @js.native
+  sealed trait VerticallineVerticallineEqualssign
+    extends StObject
+       with AssignmentOperator
+  inline def VerticallineVerticallineEqualssign: VerticallineVerticallineEqualssign = "||=".asInstanceOf[VerticallineVerticallineEqualssign]
   
   @js.native
   sealed trait WhileStatement extends StObject

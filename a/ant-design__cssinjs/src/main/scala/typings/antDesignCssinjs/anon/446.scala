@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.MozUserModify
+import typings.csstype.mod.Property.PlaceContent
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,11 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `446` extends StObject {
   
   var value: js.UndefOr[
-    MozUserModify | (js.Array[
-      (Extract[
-        js.UndefOr[MozUserModify | js.Array[NonNullable[js.UndefOr[MozUserModify]]]], 
-        String
-      ]) | NonNullable[js.UndefOr[MozUserModify]]
+    PlaceContent | (js.Array[
+      (Extract[js.UndefOr[PlaceContent | js.Array[NonNullable[js.UndefOr[PlaceContent]]]], String]) | NonNullable[js.UndefOr[PlaceContent]]
     ])
   ] = js.native
 }

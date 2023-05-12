@@ -48,7 +48,7 @@ object mod {
       * a `CID` otherwise returns `null`. If `value` is instanceof `CID`
       * it will return value back. If `value` is not instance of this CID
       * class, but is compatible CID it will return new instance of this
-      * `CID` class. Otherwise returs null.
+      * `CID` class. Otherwise returns null.
       *
       * This allows two different incompatible versions of CID library to
       * co-exist and interop as long as binary interface is compatible.
@@ -196,7 +196,7 @@ object mod {
   inline def multiaddr(): Multiaddr_ = ^.asInstanceOf[js.Dynamic].applyDynamic("multiaddr")().asInstanceOf[Multiaddr_]
   inline def multiaddr(addr: MultiaddrInput): Multiaddr_ = ^.asInstanceOf[js.Dynamic].applyDynamic("multiaddr")(addr.asInstanceOf[js.Any]).asInstanceOf[Multiaddr_]
   
-  type BlockCodec = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_interface.BlockCodec<any, any> */ Any
+  type BlockCodec = typings.multiformats.distTypesSrcCodecsInterfaceMod.BlockCodec[Any, Any]
   
   type EndpointConfig = typings.ipfsHttpClient.distSrcTypesMod.EndpointConfig
   
@@ -212,9 +212,9 @@ object mod {
   
   type LoadHasherFn = typings.ipfsHttpClient.distSrcTypesMod.LoadHasherFn
   
-  type MultibaseCodec = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_interface.MultibaseCodec<any> */ Any
+  type MultibaseCodec = typings.multiformats.distTypesSrcBasesInterfaceMod.MultibaseCodec[Any]
   
-  type MultihashHasher = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_interface.MultihashHasher */ Any
+  type MultihashHasher = typings.multiformats.distTypesSrcHashesInterfaceMod.MultihashHasher[Double]
   
   type Options = typings.ipfsHttpClient.distSrcTypesMod.Options
 }

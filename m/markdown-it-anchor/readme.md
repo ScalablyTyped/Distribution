@@ -1,7 +1,7 @@
 
 # Scala.js typings for markdown-it-anchor
 
-Typings are for version 8.6.5
+Typings are for version 8.6.7
 
 ## Library description:
 Header anchors for markdown-it.

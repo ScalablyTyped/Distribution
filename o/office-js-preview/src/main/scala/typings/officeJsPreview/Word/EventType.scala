@@ -17,9 +17,9 @@ sealed trait EventType extends StObject
 object EventType extends StObject {
   
   /**
-    * Represents that one or more new comments were added to the comment collection.
+    * Represents that one or more new comments were added.
     * @remarks
-    * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+    * [Api set: WordApi BETA (PREVIEW ONLY)]
     * @beta
     */
   @js.native
@@ -28,9 +28,9 @@ object EventType extends StObject {
        with EventType
   
   /**
-    * Represents that a comment or its reply was changed in the comment collection.
+    * Represents that a comment or its reply was changed.
     * @remarks
-    * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+    * [Api set: WordApi BETA (PREVIEW ONLY)]
     * @beta
     */
   @js.native
@@ -39,9 +39,9 @@ object EventType extends StObject {
        with EventType
   
   /**
-    * Represents that one or more comments were deleted from the comment collection.
+    * Represents that one or more comments were deleted.
     * @remarks
-    * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+    * [Api set: WordApi BETA (PREVIEW ONLY)]
     * @beta
     */
   @js.native
@@ -50,9 +50,9 @@ object EventType extends StObject {
        with EventType
   
   /**
-    * Represents that a comment was deselected in the comment collection.
+    * Represents that a comment was deselected.
     * @remarks
-    * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+    * [Api set: WordApi BETA (PREVIEW ONLY)]
     * @beta
     */
   @js.native
@@ -61,9 +61,9 @@ object EventType extends StObject {
        with EventType
   
   /**
-    * Represents that a comment was selected in the comment collection.
+    * Represents that a comment was selected.
     * @remarks
-    * [Api set: WordApiOnline BETA (PREVIEW ONLY)]
+    * [Api set: WordApi BETA (PREVIEW ONLY)]
     * @beta
     */
   @js.native
@@ -101,6 +101,28 @@ object EventType extends StObject {
     */
   @js.native
   sealed trait contentControlDeleted
+    extends StObject
+       with EventType
+  
+  /**
+    * Represents that a content control has been entered.
+    * @remarks
+    * [Api set: WordApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  @js.native
+  sealed trait contentControlEntered
+    extends StObject
+       with EventType
+  
+  /**
+    * Represents that a content control has been exited.
+    * @remarks
+    * [Api set: WordApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  @js.native
+  sealed trait contentControlExited
     extends StObject
        with EventType
   

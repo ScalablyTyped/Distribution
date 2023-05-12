@@ -1,5 +1,8 @@
 package typings.std
 
+import typings.std.stdInts.`0`
+import typings.std.stdInts.`1`
+import typings.std.stdInts.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,13 +14,13 @@ trait SVGTextContentElement
      with SVGGraphicsElement {
   
   /* standard dom */
-  val LENGTHADJUST_SPACING: Double = js.native
+  val LENGTHADJUST_SPACING: `1` = js.native
   
   /* standard dom */
-  val LENGTHADJUST_SPACINGANDGLYPHS: Double = js.native
+  val LENGTHADJUST_SPACINGANDGLYPHS: `2` = js.native
   
   /* standard dom */
-  val LENGTHADJUST_UNKNOWN: Double = js.native
+  val LENGTHADJUST_UNKNOWN: `0` = js.native
   
   /* InferMemberOverrides */
   override def addEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject): Unit = js.native

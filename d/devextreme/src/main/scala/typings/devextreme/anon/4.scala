@@ -7,14 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `4` extends StObject {
   
   /**
-    * Specifies shutter color.
+    * Specifies the name of the file to which the diagram is exported.
     */
-  var color: js.UndefOr[String] = js.undefined
-  
-  /**
-    * Specifies the opacity of the color of shutters.
-    */
-  var opacity: js.UndefOr[Double] = js.undefined
+  var fileName: js.UndefOr[String] = js.undefined
 }
 object `4` {
   
@@ -26,12 +21,8 @@ object `4` {
   @scala.inline
   implicit open class MutableBuilder[Self <: `4`] (val x: Self) extends AnyVal {
     
-    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
-    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
-    
-    inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
-    
-    inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+    inline def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
   }
 }

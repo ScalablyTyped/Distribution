@@ -4,8 +4,10 @@ import typings.focusLock.anon.Node
 import typings.focusLock.distEs5FocusablesMod.FocusableIn
 import typings.focusLock.distEs5SetFocusMod.FocusLockFocusOptions
 import typings.focusLock.distEs5SiblingMod.FocusNextOptions
+import typings.std.Document
 import typings.std.Element
 import typings.std.HTMLElement
+import typings.std.ShadowRoot
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -43,9 +45,12 @@ object mod {
   }
   
   inline def focusInside(topNode: js.Array[HTMLElement]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("focusInside")(topNode.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def focusInside(topNode: js.Array[HTMLElement], activeElement: HTMLElement): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("focusInside")(topNode.asInstanceOf[js.Any], activeElement.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   inline def focusInside(topNode: HTMLElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("focusInside")(topNode.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def focusInside(topNode: HTMLElement, activeElement: HTMLElement): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("focusInside")(topNode.asInstanceOf[js.Any], activeElement.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   inline def focusIsHidden(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("focusIsHidden")().asInstanceOf[Boolean]
+  inline def focusIsHidden(inDocument: Document): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("focusIsHidden")(inDocument.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def focusMerge(topNode: js.Array[Element]): js.UndefOr[Node] = ^.asInstanceOf[js.Dynamic].applyDynamic("focusMerge")(topNode.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Node]]
   inline def focusMerge(topNode: js.Array[Element], lastNode: Element): js.UndefOr[Node] = (^.asInstanceOf[js.Dynamic].applyDynamic("focusMerge")(topNode.asInstanceOf[js.Any], lastNode.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Node]]
@@ -59,6 +64,8 @@ object mod {
   inline def focusPrevElement(baseElement: Element, options: FocusNextOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("focusPrevElement")(baseElement.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def getActiveElement(): js.UndefOr[HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("getActiveElement")().asInstanceOf[js.UndefOr[HTMLElement]]
+  inline def getActiveElement(inDocument: Document): js.UndefOr[HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("getActiveElement")(inDocument.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[HTMLElement]]
+  inline def getActiveElement(inDocument: ShadowRoot): js.UndefOr[HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("getActiveElement")(inDocument.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[HTMLElement]]
   
   inline def getAllAffectedNodes(node: js.Array[Element]): js.Array[Element] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllAffectedNodes")(node.asInstanceOf[js.Any]).asInstanceOf[js.Array[Element]]
   inline def getAllAffectedNodes(node: Element): js.Array[Element] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllAffectedNodes")(node.asInstanceOf[js.Any]).asInstanceOf[js.Array[Element]]

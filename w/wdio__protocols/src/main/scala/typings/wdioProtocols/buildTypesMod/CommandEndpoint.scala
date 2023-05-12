@@ -14,7 +14,9 @@ trait CommandEndpoint extends StObject {
   /**
     * command description
     */
-  var description: String
+  var description: js.UndefOr[String] = js.undefined
+  
+  var examples: js.UndefOr[js.Array[js.Array[String]]] = js.undefined
   
   /**
     * set to true if command is only supported in Selenium Hub Node
@@ -48,8 +50,8 @@ trait CommandEndpoint extends StObject {
 }
 object CommandEndpoint {
   
-  inline def apply(command: String, description: String, parameters: js.Array[CommandParameters], ref: String): CommandEndpoint = {
-    val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], parameters = parameters.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any])
+  inline def apply(command: String, parameters: js.Array[CommandParameters], ref: String): CommandEndpoint = {
+    val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any], parameters = parameters.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommandEndpoint]
   }
   
@@ -59,6 +61,14 @@ object CommandEndpoint {
     inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    
+    inline def setExamples(value: js.Array[js.Array[String]]): Self = StObject.set(x, "examples", value.asInstanceOf[js.Any])
+    
+    inline def setExamplesUndefined: Self = StObject.set(x, "examples", js.undefined)
+    
+    inline def setExamplesVarargs(value: js.Array[String]*): Self = StObject.set(x, "examples", js.Array(value*))
     
     inline def setIsHubCommand(value: Boolean): Self = StObject.set(x, "isHubCommand", value.asInstanceOf[js.Any])
     

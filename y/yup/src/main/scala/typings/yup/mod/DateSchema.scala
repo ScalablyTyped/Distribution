@@ -1,65 +1,49 @@
 package typings.yup.mod
 
-import typings.std.Date
-import typings.std.Exclude
-import typings.std.Record
-import typings.yup.anon.Values
 import typings.yup.anon.`0`
 import typings.yup.anon.`1`
 import typings.yup.yupBooleans.`false`
 import typings.yup.yupBooleans.`true`
+import typings.yup.yupStrings._empty
+import typings.yup.yupStrings.s
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@JSImport("yup", "DateSchema")
 @js.native
-trait DateSchema[T /* <: js.UndefOr[Date | String | Null] */, C]
-  extends StObject
-     with Schema[T, C] {
+open class DateSchema[TType /* <: Maybe[js.Date] */, TContext, TDefault, TFlags /* <: Flags */] () extends Schema[TType, TContext, TDefault, TFlags] {
   
-  def defined(): DateSchema[Exclude[T, Unit], C] = js.native
+  def concat[TOther /* <: DateSchema[Any, Any, Unit, _empty] */](schema: TOther): TOther = js.native
   
-  def equals[U /* <: T */](arrayOfValues: js.Array[U | Ref_]): DateSchema[MaintainOptionality[T, U], C] = js.native
-  def equals[U /* <: T */](arrayOfValues: js.Array[U | Ref_], message: js.UndefOr[TestOptionsMessage[Values, js.Any]]): DateSchema[MaintainOptionality[T, U], C] = js.native
+  def max(max: Any): this.type = js.native
+  def max(max: Any, message: Message[`1`]): this.type = js.native
+  def max(max: Reference[Any]): this.type = js.native
+  def max(max: Reference[Any], message: Message[`1`]): this.type = js.native
   
-  def max(limit: String): DateSchema[T, C] = js.native
-  def max(limit: String, message: js.UndefOr[TestOptionsMessage[`1`, js.Any]]): DateSchema[T, C] = js.native
-  def max(limit: Date): DateSchema[T, C] = js.native
-  def max(limit: Date, message: js.UndefOr[TestOptionsMessage[`1`, js.Any]]): DateSchema[T, C] = js.native
-  def max(limit: Ref_): DateSchema[T, C] = js.native
-  def max(limit: Ref_, message: js.UndefOr[TestOptionsMessage[`1`, js.Any]]): DateSchema[T, C] = js.native
+  def min(min: Any): this.type = js.native
+  def min(min: Any, message: Message[`0`]): this.type = js.native
+  def min(min: Reference[js.Date]): this.type = js.native
+  def min(min: Reference[js.Date], message: Message[`0`]): this.type = js.native
   
-  def min(limit: String): DateSchema[T, C] = js.native
-  def min(limit: String, message: js.UndefOr[TestOptionsMessage[`0`, js.Any]]): DateSchema[T, C] = js.native
-  def min(limit: Date): DateSchema[T, C] = js.native
-  def min(limit: Date, message: js.UndefOr[TestOptionsMessage[`0`, js.Any]]): DateSchema[T, C] = js.native
-  def min(limit: Ref_): DateSchema[T, C] = js.native
-  def min(limit: Ref_, message: js.UndefOr[TestOptionsMessage[`0`, js.Any]]): DateSchema[T, C] = js.native
+  def nullable(msg: Message[Any]): DateSchema[TType | Null, TContext, TDefault, TFlags] = js.native
   
-  def notRequired(): DateSchema[js.UndefOr[T], C] = js.native
+  /* private */ var prepareParam: Any = js.native
   
-  def nullable(): DateSchema[T | Null, C] = js.native
-  def nullable(isNullable: Boolean): DateSchema[T, C] = js.native
-  @JSName("nullable")
-  def nullable_false(isNullable: `false`): DateSchema[Exclude[T, Null], C] = js.native
-  @JSName("nullable")
-  def nullable_true(isNullable: `true`): DateSchema[T | Null, C] = js.native
+  @JSName("strip")
+  def strip_false(enabled: `false`): DateSchema[TType, TContext, TDefault, UnsetFlag[TFlags, s]] = js.native
+  @JSName("strip")
+  def strip_true(enabled: `true`): DateSchema[TType, TContext, TDefault, SetFlag[TFlags, s]] = js.native
+}
+object DateSchema {
   
-  def oneOf[U /* <: T */](arrayOfValues: js.Array[U | Ref_]): DateSchema[MaintainOptionality[T, U], C] = js.native
-  def oneOf[U /* <: T */](arrayOfValues: js.Array[U | Ref_], message: js.UndefOr[TestOptionsMessage[Values, js.Any]]): DateSchema[MaintainOptionality[T, U], C] = js.native
+  @JSImport("yup", "DateSchema")
+  @js.native
+  val ^ : js.Any = js.native
   
-  def optional(): DateSchema[js.UndefOr[T], C] = js.native
-  
-  def required(): DateSchema[Exclude[T, js.UndefOr[Null]], C] = js.native
-  def required(message: TestOptionsMessage[js.Object, js.Any]): DateSchema[Exclude[T, js.UndefOr[Null]], C] = js.native
-  
-  def test(
-    name: String,
-    message: TestOptionsMessage[js.Object, js.Any],
-    test: TestFunction[js.UndefOr[T | Null], C]
-  ): this.type = js.native
-  def test(options: TestOptions[Record[String, js.Any], C]): this.type = js.native
-  def test[U /* <: T */](options: AssertingTestOptions[U, Record[String, js.Any], C]): DateSchema[U, C] = js.native
-  @JSName("test")
-  def test_U_T_DateSchema[U /* <: T */](name: String, message: TestOptionsMessage[js.Object, js.Any], test: AssertingTestFunction[U, C]): DateSchema[U, C] = js.native
+  /* static member */
+  @JSImport("yup", "DateSchema.INVALID_DATE")
+  @js.native
+  def INVALID_DATE: js.Date = js.native
+  inline def INVALID_DATE_=(x: js.Date): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INVALID_DATE")(x.asInstanceOf[js.Any])
 }

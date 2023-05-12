@@ -18,9 +18,6 @@ object mod {
     def this(target: HTMLElement, endVal: Double, options: CountUpOptions) = this()
     def this(target: HTMLInputElement, endVal: Double, options: CountUpOptions) = this()
     
-    def callback(): Any = js.native
-    def callback(args: Any): Any = js.native
-    
     def count(timestamp: Double): Unit = js.native
     
     /* private */ var countDown: Any = js.native
@@ -31,7 +28,7 @@ object mod {
       * Smart easing works by breaking the animation into 2 parts, the second part being the
       * smartEasingAmount and first part being the total amount minus the smartEasingAmount. It works
       * by disabling easing for the first part and enabling it on the second part. It is used if
-      * usingEasing is true and the total animation amount exceeds the smartEasingThreshold.
+      * useEasing is true and the total animation amount exceeds the smartEasingThreshold.
       */
     /* private */ var determineDirectionAndSmartEasing: Any = js.native
     
@@ -43,7 +40,7 @@ object mod {
         js.Function4[/* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double, Double]
       ] = js.native
     
-    /* private */ var el: Any = js.native
+    var el: HTMLElement | HTMLInputElement = js.native
     
     /* private */ var endVal: Any = js.native
     
@@ -115,6 +112,10 @@ object mod {
     
     var numerals: js.UndefOr[js.Array[String]] = js.undefined
     
+    var onCompleteCallback: js.UndefOr[js.Function0[Any]] = js.undefined
+    
+    var plugin: js.UndefOr[CountUpPlugin] = js.undefined
+    
     var prefix: js.UndefOr[String] = js.undefined
     
     var scrollSpyDelay: js.UndefOr[Double] = js.undefined
@@ -134,6 +135,8 @@ object mod {
     var useEasing: js.UndefOr[Boolean] = js.undefined
     
     var useGrouping: js.UndefOr[Boolean] = js.undefined
+    
+    var useIndianSeparators: js.UndefOr[Boolean] = js.undefined
   }
   object CountUpOptions {
     
@@ -175,6 +178,14 @@ object mod {
       
       inline def setNumeralsVarargs(value: String*): Self = StObject.set(x, "numerals", js.Array(value*))
       
+      inline def setOnCompleteCallback(value: () => Any): Self = StObject.set(x, "onCompleteCallback", js.Any.fromFunction0(value))
+      
+      inline def setOnCompleteCallbackUndefined: Self = StObject.set(x, "onCompleteCallback", js.undefined)
+      
+      inline def setPlugin(value: CountUpPlugin): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
+      
+      inline def setPluginUndefined: Self = StObject.set(x, "plugin", js.undefined)
+      
       inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
       inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
@@ -214,6 +225,28 @@ object mod {
       inline def setUseGrouping(value: Boolean): Self = StObject.set(x, "useGrouping", value.asInstanceOf[js.Any])
       
       inline def setUseGroupingUndefined: Self = StObject.set(x, "useGrouping", js.undefined)
+      
+      inline def setUseIndianSeparators(value: Boolean): Self = StObject.set(x, "useIndianSeparators", value.asInstanceOf[js.Any])
+      
+      inline def setUseIndianSeparatorsUndefined: Self = StObject.set(x, "useIndianSeparators", js.undefined)
+    }
+  }
+  
+  trait CountUpPlugin extends StObject {
+    
+    def render(elem: HTMLElement, formatted: String): Unit
+  }
+  object CountUpPlugin {
+    
+    inline def apply(render: (HTMLElement, String) => Unit): CountUpPlugin = {
+      val __obj = js.Dynamic.literal(render = js.Any.fromFunction2(render))
+      __obj.asInstanceOf[CountUpPlugin]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CountUpPlugin] (val x: Self) extends AnyVal {
+      
+      inline def setRender(value: (HTMLElement, String) => Unit): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
     }
   }
 }

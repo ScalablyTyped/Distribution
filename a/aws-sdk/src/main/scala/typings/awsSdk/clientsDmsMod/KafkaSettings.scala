@@ -57,6 +57,11 @@ trait KafkaSettings extends StObject {
   var PartitionIncludeSchemaTable: js.UndefOr[BooleanOptional] = js.undefined
   
   /**
+    * For SASL/SSL authentication, DMS supports the SCRAM-SHA-512 mechanism by default. DMS versions 3.5.0 and later also support the PLAIN mechanism. To use the PLAIN mechanism, set this parameter to PLAIN. 
+    */
+  var SaslMechanism: js.UndefOr[KafkaSaslMechanism] = js.undefined
+  
+  /**
     * The secure password you created when you first set up your MSK cluster to validate a client identity and make an encrypted connection between server and client using SASL-SSL authentication.
     */
   var SaslPassword: js.UndefOr[SecretString] = js.undefined
@@ -145,6 +150,10 @@ object KafkaSettings {
     inline def setPartitionIncludeSchemaTable(value: BooleanOptional): Self = StObject.set(x, "PartitionIncludeSchemaTable", value.asInstanceOf[js.Any])
     
     inline def setPartitionIncludeSchemaTableUndefined: Self = StObject.set(x, "PartitionIncludeSchemaTable", js.undefined)
+    
+    inline def setSaslMechanism(value: KafkaSaslMechanism): Self = StObject.set(x, "SaslMechanism", value.asInstanceOf[js.Any])
+    
+    inline def setSaslMechanismUndefined: Self = StObject.set(x, "SaslMechanism", js.undefined)
     
     inline def setSaslPassword(value: SecretString): Self = StObject.set(x, "SaslPassword", value.asInstanceOf[js.Any])
     

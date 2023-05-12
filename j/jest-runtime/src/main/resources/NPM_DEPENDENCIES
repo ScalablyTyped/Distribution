@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "jest-runtime" : "29.3.1"
+      "jest-runtime" : "29.5.0"
     }
   ],
   "test-dependencies" : [
     {
-      "jest-runtime" : "29.3.1"
+      "jest-runtime" : "29.5.0"
     }
   ],
   "compile-devDependencies" : [

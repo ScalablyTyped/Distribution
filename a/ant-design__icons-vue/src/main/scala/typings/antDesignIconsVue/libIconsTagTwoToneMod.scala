@@ -16,7 +16,7 @@ object libIconsTagTwoToneMod extends Shortcut {
   @js.native
   trait TagTwoToneIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_TagTwoToneIconType: String = js.native

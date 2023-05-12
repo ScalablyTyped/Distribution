@@ -40,7 +40,7 @@ object distReactDottagifyMod {
     * @returns The rendered React tagify element.
     */
   // Type parameter is used more than once within the TagifyTagsReactProps interface
-  // tslint:disable-next-line no-unnecessary-generics
+  // eslint-disable-next-line no-unnecessary-generics
   inline def apply[T /* <: BaseTagData */](props: TagifyTagsReactProps[T]): ReactElement = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   @JSImport("@yaireo/tagify/dist/react.tagify", JSImport.Namespace)
@@ -54,7 +54,7 @@ object distReactDottagifyMod {
     * @returns The rendered React tagify element.
     */
   // Type parameter is used more than once within the TagifyMixedTagsReactProps interface
-  // tslint:disable-next-line no-unnecessary-generics
+  // eslint-disable-next-line no-unnecessary-generics
   inline def MixedTags[T /* <: BaseTagData */](props: TagifyMixedTagsReactProps[T]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("MixedTags")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   /**

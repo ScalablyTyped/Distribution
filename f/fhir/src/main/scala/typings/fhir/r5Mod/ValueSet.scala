@@ -13,7 +13,11 @@ trait ValueSet
      with DomainResource
      with _FhirResource {
   
+  var _approvalDate: js.UndefOr[Element] = js.undefined
+  
   var _copyright: js.UndefOr[Element] = js.undefined
+  
+  var _copyrightLabel: js.UndefOr[Element] = js.undefined
   
   var _date: js.UndefOr[Element] = js.undefined
   
@@ -22,6 +26,8 @@ trait ValueSet
   var _experimental: js.UndefOr[Element] = js.undefined
   
   var _immutable: js.UndefOr[Element] = js.undefined
+  
+  var _lastReviewDate: js.UndefOr[Element] = js.undefined
   
   var _name: js.UndefOr[Element] = js.undefined
   
@@ -37,6 +43,19 @@ trait ValueSet
   
   var _version: js.UndefOr[Element] = js.undefined
   
+  var _versionAlgorithmString: js.UndefOr[Element] = js.undefined
+  
+  /**
+    * The 'date' element may be more recent than the approval date because of minor changes or editorial corrections.
+    * See guidance around (not) making local changes to elements [here](canonicalresource.html#localization).
+    */
+  var approvalDate: js.UndefOr[String] = js.undefined
+  
+  /**
+    * An individiual or organization primarily involved in the creation and maintenance of the ValueSet.
+    */
+  var author: js.UndefOr[js.Array[ContactDetail]] = js.undefined
+  
   /**
     * A set of criteria that define the contents of the value set by including or excluding codes selected from the specified code system(s) that the value set draws from. This is also known as the Content Logical Definition (CLD).
     */
@@ -44,6 +63,7 @@ trait ValueSet
   
   /**
     * May be a web site, an email address, a telephone number, etc.
+    * See guidance around (not) making local changes to elements [here](canonicalresource.html#localization).
     */
   var contact: js.UndefOr[js.Array[ContactDetail]] = js.undefined
   
@@ -53,14 +73,36 @@ trait ValueSet
   var copyright: js.UndefOr[String] = js.undefined
   
   /**
-    * Note that this is not the same as the resource last-modified-date, since the resource may be a secondary representation of the value set. Additional specific dates may be added as extensions or be found by consulting Provenances associated with past versions of the resource.
+    * The (c) symbol should NOT be included in this string. It will be added by software when rendering the notation. Full details about licensing, restrictions, warrantees, etc. goes in the more general 'copyright' element.
+    */
+  var copyrightLabel: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Note that this is not the same as the meta.lastUpdated which is specific to an instance of a value set resource on a server.  Additional specific dates may be added as extensions or be found by consulting Provenances associated with past versions of the resource.
+    * See guidance around (not) making local changes to elements [here](canonicalresource.html#localization).
     */
   var date: js.UndefOr[String] = js.undefined
   
   /**
-    * This description can be used to capture details such as why the value set was built, comments about misuse, instructions for clinical use and interpretation, literature references, examples from the paper world, etc. It is not a rendering of the value set as conveyed in the 'text' field of the resource itself. This item SHOULD be populated unless the information is available from context (e.g. the language of the value set is presumed to be the predominant language in the place the value set was created). The description should capture its intended use, which is needed for ensuring integrity for its use in models across future changes. A description should be provided unless the value set is a contained resource (e.g. an anonymous value set in a profile). Most registries will require a description.
+    * Description SHOULD contain instructions for clinical or administrative use and interpretation and information about misuse. Description SHOULD be populated unless the information is available from context. Description SHOULD be populated unless the value set is a contained resource (e.g. a value set defined solely in the context of a profile).
     */
   var description: js.UndefOr[String] = js.undefined
+  
+  /**
+    * An individual or organization primarily responsible for internal coherence of the ValueSet.
+    */
+  var editor: js.UndefOr[js.Array[ContactDetail]] = js.undefined
+  
+  /**
+    * The effective period for a ValueSet determines when the content is applicable for usage and is independent of publication and review dates. For example, a valueset intended to be used for the year 2016 might be published in 2015.
+    * See guidance around (not) making local changes to elements [here](canonicalresource.html#localization).
+    */
+  var effectivePeriod: js.UndefOr[Period] = js.undefined
+  
+  /**
+    * See guidance around (not) making local changes to elements [here](canonicalresource.html#localization).
+    */
+  var endorser: js.UndefOr[js.Array[ContactDetail]] = js.undefined
   
   /**
     * Expansion is performed to produce a collection of codes that are ready to use for data entry or validation. Value set expansions are always considered to be stateless - they are a record of the set of codes in the value set at a point in time under a given set of conditions, and are not subject to ongoing maintenance.
@@ -85,8 +127,15 @@ trait ValueSet
   
   /**
     * It may be possible for the value set to be used in jurisdictions other than those for which it was originally designed or intended.
+    * DEPRECATION NOTE: For consistency, implementations are encouraged to migrate to using the new 'jurisdiction' code in the useContext element.  (I.e. useContext.code indicating http://terminology.hl7.org/CodeSystem/usage-context-type#jurisdiction and useContext.valueCodeableConcept indicating the jurisdiction.)
     */
   var jurisdiction: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
+  
+  /**
+    * If specified, this date follows the original approval date.
+    * See guidance around (not) making local changes to elements [here](canonicalresource.html#localization).
+    */
+  var lastReviewDate: js.UndefOr[String] = js.undefined
   
   /**
     * The name is not expected to be globally unique. The name should be a simple alphanumeric type name to ensure that it is machine-processing friendly.A name should be provided unless the value set is a contained resource (e.g. an anonymous value set in a profile). Most registries will require a name.
@@ -103,17 +152,28 @@ trait ValueSet
     */
   var purpose: js.UndefOr[String] = js.undefined
   
+  /**
+    * Each related artifact is either an attachment, or a reference to another resource, but not both.
+    */
+  var relatedArtifact: js.UndefOr[js.Array[RelatedArtifact]] = js.undefined
+  
   /** Resource Type Name (for serialization) */
   @JSName("resourceType")
   val resourceType_ValueSet: typings.fhir.fhirStrings.ValueSet
   
   /**
-    * Description of the semantic space the Value Set Expansion is intended to cover.
+    * See guidance around (not) making local changes to elements [here](canonicalresource.html#localization).
+    */
+  var reviewer: js.UndefOr[js.Array[ContactDetail]] = js.undefined
+  
+  /**
+    * Description of the semantic space the Value Set Expansion is intended to cover and should further clarify the text in ValueSet.description.
     */
   var scope: js.UndefOr[ValueSetScope] = js.undefined
   
   /**
-    * Allows filtering of value sets that are appropriate for use versus not.See also the [valueset-workflowStatusDescription](extension-valueset-workflowstatusdescription.html) extension for additional status information related to the editorial process.
+    * Allows filtering of value sets that are appropriate for use versus not.See also the [http://hl7.org/fhir/StructureDefinition/valueset-workflowStatusDescription](http://hl7.org/fhir/extensions/StructureDefinition-valueset-workflowStatusDescription.html) extension for additional status information related to the editorial process.
+    * See guidance around (not) making local changes to elements [here](canonicalresource.html#localization).
     */
   var status: draft | active | retired | unknown
   
@@ -121,6 +181,11 @@ trait ValueSet
     * This name does not need to be machine-processing friendly and may contain punctuation, white-space, etc.
     */
   var title: js.UndefOr[String] = js.undefined
+  
+  /**
+    * DEPRECATION NOTE: For consistency, implementations are encouraged to migrate to using the new 'topic' code in the useContext element.  (I.e. useContext.code indicating http://terminology.hl7.org/CodeSystem/usage-context-type#topic and useContext.valueCodeableConcept indicating the topic)
+    */
+  var topic: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
   /**
     * Can be a urn:uuid: or a urn:oid: but real http: addresses are preferred.  Multiple instances may share the same URL if they have a distinct version.
@@ -135,9 +200,19 @@ trait ValueSet
   var useContext: js.UndefOr[js.Array[UsageContext]] = js.undefined
   
   /**
-    * There may be different value set instances that have the same identifier but different versions.  The version can be appended to the url in a reference to allow a reference to a particular business version of the value set with the format [url]|[version].
+    * There may be different value set instances that have the same identifier but different versions.  The version can be appended to the url in a reference to allow a reference to a particular business version of the value set with the format [url]|[version]. The version SHOULD NOT contain a '#' - see [Business Version](resource.html#bv-format).
     */
   var version: js.UndefOr[String] = js.undefined
+  
+  /**
+    * If set as a string, this is a FHIRPath expression that has two additional context variables passed in - %version1 and %version2 and will return a negative number if version1 is newer, a positive number if version2 and a 0 if the version ordering can't be successfully be determined.
+    */
+  var versionAlgorithmCoding: js.UndefOr[Coding] = js.undefined
+  
+  /**
+    * If set as a string, this is a FHIRPath expression that has two additional context variables passed in - %version1 and %version2 and will return a negative number if version1 is newer, a positive number if version2 and a 0 if the version ordering can't be successfully be determined.
+    */
+  var versionAlgorithmString: js.UndefOr[String] = js.undefined
 }
 object ValueSet {
   
@@ -148,6 +223,16 @@ object ValueSet {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: ValueSet] (val x: Self) extends AnyVal {
+    
+    inline def setApprovalDate(value: String): Self = StObject.set(x, "approvalDate", value.asInstanceOf[js.Any])
+    
+    inline def setApprovalDateUndefined: Self = StObject.set(x, "approvalDate", js.undefined)
+    
+    inline def setAuthor(value: js.Array[ContactDetail]): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
+    
+    inline def setAuthorUndefined: Self = StObject.set(x, "author", js.undefined)
+    
+    inline def setAuthorVarargs(value: ContactDetail*): Self = StObject.set(x, "author", js.Array(value*))
     
     inline def setCompose(value: ValueSetCompose): Self = StObject.set(x, "compose", value.asInstanceOf[js.Any])
     
@@ -161,6 +246,10 @@ object ValueSet {
     
     inline def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
     
+    inline def setCopyrightLabel(value: String): Self = StObject.set(x, "copyrightLabel", value.asInstanceOf[js.Any])
+    
+    inline def setCopyrightLabelUndefined: Self = StObject.set(x, "copyrightLabel", js.undefined)
+    
     inline def setCopyrightUndefined: Self = StObject.set(x, "copyright", js.undefined)
     
     inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
@@ -170,6 +259,22 @@ object ValueSet {
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    
+    inline def setEditor(value: js.Array[ContactDetail]): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
+    
+    inline def setEditorUndefined: Self = StObject.set(x, "editor", js.undefined)
+    
+    inline def setEditorVarargs(value: ContactDetail*): Self = StObject.set(x, "editor", js.Array(value*))
+    
+    inline def setEffectivePeriod(value: Period): Self = StObject.set(x, "effectivePeriod", value.asInstanceOf[js.Any])
+    
+    inline def setEffectivePeriodUndefined: Self = StObject.set(x, "effectivePeriod", js.undefined)
+    
+    inline def setEndorser(value: js.Array[ContactDetail]): Self = StObject.set(x, "endorser", value.asInstanceOf[js.Any])
+    
+    inline def setEndorserUndefined: Self = StObject.set(x, "endorser", js.undefined)
+    
+    inline def setEndorserVarargs(value: ContactDetail*): Self = StObject.set(x, "endorser", js.Array(value*))
     
     inline def setExpansion(value: ValueSetExpansion): Self = StObject.set(x, "expansion", value.asInstanceOf[js.Any])
     
@@ -195,6 +300,10 @@ object ValueSet {
     
     inline def setJurisdictionVarargs(value: CodeableConcept*): Self = StObject.set(x, "jurisdiction", js.Array(value*))
     
+    inline def setLastReviewDate(value: String): Self = StObject.set(x, "lastReviewDate", value.asInstanceOf[js.Any])
+    
+    inline def setLastReviewDateUndefined: Self = StObject.set(x, "lastReviewDate", js.undefined)
+    
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
@@ -207,7 +316,19 @@ object ValueSet {
     
     inline def setPurposeUndefined: Self = StObject.set(x, "purpose", js.undefined)
     
+    inline def setRelatedArtifact(value: js.Array[RelatedArtifact]): Self = StObject.set(x, "relatedArtifact", value.asInstanceOf[js.Any])
+    
+    inline def setRelatedArtifactUndefined: Self = StObject.set(x, "relatedArtifact", js.undefined)
+    
+    inline def setRelatedArtifactVarargs(value: RelatedArtifact*): Self = StObject.set(x, "relatedArtifact", js.Array(value*))
+    
     inline def setResourceType(value: typings.fhir.fhirStrings.ValueSet): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
+    
+    inline def setReviewer(value: js.Array[ContactDetail]): Self = StObject.set(x, "reviewer", value.asInstanceOf[js.Any])
+    
+    inline def setReviewerUndefined: Self = StObject.set(x, "reviewer", js.undefined)
+    
+    inline def setReviewerVarargs(value: ContactDetail*): Self = StObject.set(x, "reviewer", js.Array(value*))
     
     inline def setScope(value: ValueSetScope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
@@ -218,6 +339,12 @@ object ValueSet {
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
     inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    
+    inline def setTopic(value: js.Array[CodeableConcept]): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
+    
+    inline def setTopicUndefined: Self = StObject.set(x, "topic", js.undefined)
+    
+    inline def setTopicVarargs(value: CodeableConcept*): Self = StObject.set(x, "topic", js.Array(value*))
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
@@ -231,9 +358,25 @@ object ValueSet {
     
     inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
+    inline def setVersionAlgorithmCoding(value: Coding): Self = StObject.set(x, "versionAlgorithmCoding", value.asInstanceOf[js.Any])
+    
+    inline def setVersionAlgorithmCodingUndefined: Self = StObject.set(x, "versionAlgorithmCoding", js.undefined)
+    
+    inline def setVersionAlgorithmString(value: String): Self = StObject.set(x, "versionAlgorithmString", value.asInstanceOf[js.Any])
+    
+    inline def setVersionAlgorithmStringUndefined: Self = StObject.set(x, "versionAlgorithmString", js.undefined)
+    
     inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     
+    inline def set_approvalDate(value: Element): Self = StObject.set(x, "_approvalDate", value.asInstanceOf[js.Any])
+    
+    inline def set_approvalDateUndefined: Self = StObject.set(x, "_approvalDate", js.undefined)
+    
     inline def set_copyright(value: Element): Self = StObject.set(x, "_copyright", value.asInstanceOf[js.Any])
+    
+    inline def set_copyrightLabel(value: Element): Self = StObject.set(x, "_copyrightLabel", value.asInstanceOf[js.Any])
+    
+    inline def set_copyrightLabelUndefined: Self = StObject.set(x, "_copyrightLabel", js.undefined)
     
     inline def set_copyrightUndefined: Self = StObject.set(x, "_copyright", js.undefined)
     
@@ -252,6 +395,10 @@ object ValueSet {
     inline def set_immutable(value: Element): Self = StObject.set(x, "_immutable", value.asInstanceOf[js.Any])
     
     inline def set_immutableUndefined: Self = StObject.set(x, "_immutable", js.undefined)
+    
+    inline def set_lastReviewDate(value: Element): Self = StObject.set(x, "_lastReviewDate", value.asInstanceOf[js.Any])
+    
+    inline def set_lastReviewDateUndefined: Self = StObject.set(x, "_lastReviewDate", js.undefined)
     
     inline def set_name(value: Element): Self = StObject.set(x, "_name", value.asInstanceOf[js.Any])
     
@@ -278,6 +425,10 @@ object ValueSet {
     inline def set_urlUndefined: Self = StObject.set(x, "_url", js.undefined)
     
     inline def set_version(value: Element): Self = StObject.set(x, "_version", value.asInstanceOf[js.Any])
+    
+    inline def set_versionAlgorithmString(value: Element): Self = StObject.set(x, "_versionAlgorithmString", value.asInstanceOf[js.Any])
+    
+    inline def set_versionAlgorithmStringUndefined: Self = StObject.set(x, "_versionAlgorithmString", js.undefined)
     
     inline def set_versionUndefined: Self = StObject.set(x, "_version", js.undefined)
   }

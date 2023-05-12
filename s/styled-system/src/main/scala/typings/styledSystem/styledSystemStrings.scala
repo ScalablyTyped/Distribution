@@ -1503,8 +1503,16 @@ object styledSystemStrings {
   inline def captionSide: captionSide = "captionSide".asInstanceOf[captionSide]
   
   @js.native
+  sealed trait caret extends StObject
+  inline def caret: caret = "caret".asInstanceOf[caret]
+  
+  @js.native
   sealed trait caretColor extends StObject
   inline def caretColor: caretColor = "caretColor".asInstanceOf[caretColor]
+  
+  @js.native
+  sealed trait caretShape extends StObject
+  inline def caretShape: caretShape = "caretShape".asInstanceOf[caretShape]
   
   @js.native
   sealed trait clear extends StObject
@@ -1589,6 +1597,38 @@ object styledSystemStrings {
   @js.native
   sealed trait contain extends StObject
   inline def contain: contain = "contain".asInstanceOf[contain]
+  
+  @js.native
+  sealed trait containIntrinsicBlockSize extends StObject
+  inline def containIntrinsicBlockSize: containIntrinsicBlockSize = "containIntrinsicBlockSize".asInstanceOf[containIntrinsicBlockSize]
+  
+  @js.native
+  sealed trait containIntrinsicHeight extends StObject
+  inline def containIntrinsicHeight: containIntrinsicHeight = "containIntrinsicHeight".asInstanceOf[containIntrinsicHeight]
+  
+  @js.native
+  sealed trait containIntrinsicInlineSize extends StObject
+  inline def containIntrinsicInlineSize: containIntrinsicInlineSize = "containIntrinsicInlineSize".asInstanceOf[containIntrinsicInlineSize]
+  
+  @js.native
+  sealed trait containIntrinsicSize extends StObject
+  inline def containIntrinsicSize: containIntrinsicSize = "containIntrinsicSize".asInstanceOf[containIntrinsicSize]
+  
+  @js.native
+  sealed trait containIntrinsicWidth extends StObject
+  inline def containIntrinsicWidth: containIntrinsicWidth = "containIntrinsicWidth".asInstanceOf[containIntrinsicWidth]
+  
+  @js.native
+  sealed trait container extends StObject
+  inline def container: container = "container".asInstanceOf[container]
+  
+  @js.native
+  sealed trait containerName extends StObject
+  inline def containerName: containerName = "containerName".asInstanceOf[containerName]
+  
+  @js.native
+  sealed trait containerType extends StObject
+  inline def containerType: containerType = "containerType".asInstanceOf[containerType]
   
   @js.native
   sealed trait content extends StObject
@@ -1711,6 +1751,10 @@ object styledSystemStrings {
   inline def fontOpticalSizing: fontOpticalSizing = "fontOpticalSizing".asInstanceOf[fontOpticalSizing]
   
   @js.native
+  sealed trait fontPalette extends StObject
+  inline def fontPalette: fontPalette = "fontPalette".asInstanceOf[fontPalette]
+  
+  @js.native
   sealed trait fontSize extends StObject
   inline def fontSize: fontSize = "fontSize".asInstanceOf[fontSize]
   
@@ -1753,6 +1797,10 @@ object styledSystemStrings {
   @js.native
   sealed trait fontVariantEastAsian extends StObject
   inline def fontVariantEastAsian: fontVariantEastAsian = "fontVariantEastAsian".asInstanceOf[fontVariantEastAsian]
+  
+  @js.native
+  sealed trait fontVariantEmoji extends StObject
+  inline def fontVariantEmoji: fontVariantEmoji = "fontVariantEmoji".asInstanceOf[fontVariantEmoji]
   
   @js.native
   sealed trait fontVariantLigatures extends StObject
@@ -1873,6 +1921,10 @@ object styledSystemStrings {
   @js.native
   sealed trait hyphenateCharacter extends StObject
   inline def hyphenateCharacter: hyphenateCharacter = "hyphenateCharacter".asInstanceOf[hyphenateCharacter]
+  
+  @js.native
+  sealed trait hyphenateLimitChars extends StObject
+  inline def hyphenateLimitChars: hyphenateLimitChars = "hyphenateLimitChars".asInstanceOf[hyphenateLimitChars]
   
   @js.native
   sealed trait hyphens extends StObject
@@ -2049,6 +2101,10 @@ object styledSystemStrings {
   @js.native
   sealed trait marginTop extends StObject
   inline def marginTop: marginTop = "marginTop".asInstanceOf[marginTop]
+  
+  @js.native
+  sealed trait marginTrim extends StObject
+  inline def marginTrim: marginTrim = "marginTrim".asInstanceOf[marginTrim]
   
   @js.native
   sealed trait marker extends StObject
@@ -2527,6 +2583,10 @@ object styledSystemStrings {
   inline def offsetPath: offsetPath = "offsetPath".asInstanceOf[offsetPath]
   
   @js.native
+  sealed trait offsetPosition extends StObject
+  inline def offsetPosition: offsetPosition = "offsetPosition".asInstanceOf[offsetPosition]
+  
+  @js.native
   sealed trait offsetRotate extends StObject
   inline def offsetRotate: offsetRotate = "offsetRotate".asInstanceOf[offsetRotate]
   
@@ -2665,6 +2725,10 @@ object styledSystemStrings {
   @js.native
   sealed trait paddingTop extends StObject
   inline def paddingTop: paddingTop = "paddingTop".asInstanceOf[paddingTop]
+  
+  @js.native
+  sealed trait page extends StObject
+  inline def page: page = "page".asInstanceOf[page]
   
   @js.native
   sealed trait pageBreakAfter extends StObject
@@ -2901,6 +2965,18 @@ object styledSystemStrings {
   @js.native
   sealed trait scrollSnapTypeY extends StObject
   inline def scrollSnapTypeY: scrollSnapTypeY = "scrollSnapTypeY".asInstanceOf[scrollSnapTypeY]
+  
+  @js.native
+  sealed trait scrollTimeline extends StObject
+  inline def scrollTimeline: scrollTimeline = "scrollTimeline".asInstanceOf[scrollTimeline]
+  
+  @js.native
+  sealed trait scrollTimelineAxis extends StObject
+  inline def scrollTimelineAxis: scrollTimelineAxis = "scrollTimelineAxis".asInstanceOf[scrollTimelineAxis]
+  
+  @js.native
+  sealed trait scrollTimelineName extends StObject
+  inline def scrollTimelineName: scrollTimelineName = "scrollTimelineName".asInstanceOf[scrollTimelineName]
   
   @js.native
   sealed trait scrollbarColor extends StObject
@@ -3145,6 +3221,10 @@ object styledSystemStrings {
   @js.native
   sealed trait verticalAlign extends StObject
   inline def verticalAlign: verticalAlign = "verticalAlign".asInstanceOf[verticalAlign]
+  
+  @js.native
+  sealed trait viewTransitionName extends StObject
+  inline def viewTransitionName: viewTransitionName = "viewTransitionName".asInstanceOf[viewTransitionName]
   
   @js.native
   sealed trait visibility extends StObject

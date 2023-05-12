@@ -1,7 +1,7 @@
 
 # Scala.js typings for sqltools__formatter
 
-Typings are for version 1.2.3
+Typings are for version 1.2.5
 
 ## Library description:
 Formats SQL queries. Part of SQLTools

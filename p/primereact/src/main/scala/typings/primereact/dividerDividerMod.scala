@@ -12,17 +12,22 @@ import typings.primereact.primereactStrings.all
 import typings.primereact.primereactStrings.ascending
 import typings.primereact.primereactStrings.assertive
 import typings.primereact.primereactStrings.both
+import typings.primereact.primereactStrings.bottom
+import typings.primereact.primereactStrings.center
 import typings.primereact.primereactStrings.copy
+import typings.primereact.primereactStrings.dashed
 import typings.primereact.primereactStrings.date
 import typings.primereact.primereactStrings.decimal
 import typings.primereact.primereactStrings.descending
 import typings.primereact.primereactStrings.dialog
+import typings.primereact.primereactStrings.dotted
 import typings.primereact.primereactStrings.email
 import typings.primereact.primereactStrings.execute
 import typings.primereact.primereactStrings.grammar
 import typings.primereact.primereactStrings.grid
 import typings.primereact.primereactStrings.horizontal
 import typings.primereact.primereactStrings.inherit
+import typings.primereact.primereactStrings.left
 import typings.primereact.primereactStrings.link
 import typings.primereact.primereactStrings.list
 import typings.primereact.primereactStrings.listbox
@@ -40,12 +45,15 @@ import typings.primereact.primereactStrings.page
 import typings.primereact.primereactStrings.polite
 import typings.primereact.primereactStrings.popup
 import typings.primereact.primereactStrings.removals
+import typings.primereact.primereactStrings.right
 import typings.primereact.primereactStrings.search
+import typings.primereact.primereactStrings.solid
 import typings.primereact.primereactStrings.spelling
 import typings.primereact.primereactStrings.step
 import typings.primereact.primereactStrings.tel
 import typings.primereact.primereactStrings.text
 import typings.primereact.primereactStrings.time
+import typings.primereact.primereactStrings.top
 import typings.primereact.primereactStrings.tree
 import typings.primereact.primereactStrings.url
 import typings.primereact.primereactStrings.vertical
@@ -102,59 +110,15 @@ object dividerDividerMod {
     def this(props: DividerProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: DividerProps, context: Any) = this()
     
+    /**
+      * Used to get container element.
+      * @return {HTMLDivElement} Container element
+      */
     def getElement(): HTMLDivElement = js.native
-  }
-  
-  /* Rewritten from type alias, can be one of: 
-    - typings.primereact.primereactStrings.center
-    - typings.primereact.primereactStrings.left
-    - typings.primereact.primereactStrings.right
-    - typings.primereact.primereactStrings.bottom
-    - typings.primereact.primereactStrings.top
-  */
-  trait DividerAlignType extends StObject
-  object DividerAlignType {
-    
-    inline def bottom: typings.primereact.primereactStrings.bottom = "bottom".asInstanceOf[typings.primereact.primereactStrings.bottom]
-    
-    inline def center: typings.primereact.primereactStrings.center = "center".asInstanceOf[typings.primereact.primereactStrings.center]
-    
-    inline def left: typings.primereact.primereactStrings.left = "left".asInstanceOf[typings.primereact.primereactStrings.left]
-    
-    inline def right: typings.primereact.primereactStrings.right = "right".asInstanceOf[typings.primereact.primereactStrings.right]
-    
-    inline def top: typings.primereact.primereactStrings.top = "top".asInstanceOf[typings.primereact.primereactStrings.top]
-  }
-  
-  /* Rewritten from type alias, can be one of: 
-    - typings.primereact.primereactStrings.solid
-    - typings.primereact.primereactStrings.dashed
-    - typings.primereact.primereactStrings.dotted
-  */
-  trait DividerBorderType extends StObject
-  object DividerBorderType {
-    
-    inline def dashed: typings.primereact.primereactStrings.dashed = "dashed".asInstanceOf[typings.primereact.primereactStrings.dashed]
-    
-    inline def dotted: typings.primereact.primereactStrings.dotted = "dotted".asInstanceOf[typings.primereact.primereactStrings.dotted]
-    
-    inline def solid: typings.primereact.primereactStrings.solid = "solid".asInstanceOf[typings.primereact.primereactStrings.solid]
-  }
-  
-  /* Rewritten from type alias, can be one of: 
-    - typings.primereact.primereactStrings.vertical
-    - typings.primereact.primereactStrings.horizontal
-  */
-  trait DividerLayoutType extends StObject
-  object DividerLayoutType {
-    
-    inline def horizontal: typings.primereact.primereactStrings.horizontal = "horizontal".asInstanceOf[typings.primereact.primereactStrings.horizontal]
-    
-    inline def vertical: typings.primereact.primereactStrings.vertical = "vertical".asInstanceOf[typings.primereact.primereactStrings.vertical]
   }
   
   /* Inlined parent std.Omit<react.react.DetailedHTMLProps<react.react.HTMLAttributes<std.HTMLDivElement>, std.HTMLDivElement>, 'ref'> */
@@ -164,7 +128,10 @@ object dividerDividerMod {
     
     var accessKey: js.UndefOr[String] = js.undefined
     
-    var align: js.UndefOr[DividerAlignType] = js.undefined
+    /**
+      * Alignment of the content, options are "left", "center", "right" for horizontal layout and "top", "center", "bottom" for vertical.
+      */
+    var align: js.UndefOr[center | left | right | bottom | top] = js.undefined
     
     var `aria-activedescendant`: js.UndefOr[String] = js.undefined
     
@@ -268,13 +235,21 @@ object dividerDividerMod {
     
     var autoCorrect: js.UndefOr[String] = js.undefined
     
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
+    
     var autoSave: js.UndefOr[String] = js.undefined
     
+    /**
+      * Used to get the child elements of the component.
+      * @readonly
+      */
     var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
     var color: js.UndefOr[String] = js.undefined
+    
+    var content: js.UndefOr[String] = js.undefined
     
     var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
@@ -316,7 +291,11 @@ object dividerDividerMod {
     
     var lang: js.UndefOr[String] = js.undefined
     
-    var layout: js.UndefOr[DividerLayoutType] = js.undefined
+    /**
+      * Specifies the orientation, valid values are "horizontal" and "vertical".
+      * @defaultValue horizontal
+      */
+    var layout: js.UndefOr[vertical | horizontal] = js.undefined
     
     var nonce: js.UndefOr[String] = js.undefined
     
@@ -488,9 +467,13 @@ object dividerDividerMod {
     
     var radioGroup: js.UndefOr[String] = js.undefined
     
+    var rel: js.UndefOr[String] = js.undefined
+    
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
+    
+    var rev: js.UndefOr[String] = js.undefined
     
     var role: js.UndefOr[AriaRole] = js.undefined
     
@@ -512,7 +495,11 @@ object dividerDividerMod {
     
     var translate: js.UndefOr[yes | no] = js.undefined
     
-    var `type`: js.UndefOr[DividerBorderType] = js.undefined
+    /**
+      * Border style type, default is "solid" and other options are "dashed" and "dotted".
+      * @defaultValue solid
+      */
+    var `type`: js.UndefOr[solid | dashed | dotted] = js.undefined
     
     var typeof: js.UndefOr[String] = js.undefined
     
@@ -538,7 +525,7 @@ object dividerDividerMod {
       
       inline def setAccessKeyUndefined: Self = StObject.set(x, "accessKey", js.undefined)
       
-      inline def setAlign(value: DividerAlignType): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+      inline def setAlign(value: center | left | right | bottom | top): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
       inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
       
@@ -744,6 +731,10 @@ object dividerDividerMod {
       
       inline def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
       
+      inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+      
+      inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+      
       inline def setAutoSave(value: String): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
       
       inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
@@ -760,9 +751,13 @@ object dividerDividerMod {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
       inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
       inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
@@ -844,7 +839,7 @@ object dividerDividerMod {
       
       inline def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
       
-      inline def setLayout(value: DividerLayoutType): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+      inline def setLayout(value: vertical | horizontal): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
       
       inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
       
@@ -1188,6 +1183,10 @@ object dividerDividerMod {
       
       inline def setRadioGroupUndefined: Self = StObject.set(x, "radioGroup", js.undefined)
       
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      
+      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+      
       inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
       inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
@@ -1195,6 +1194,10 @@ object dividerDividerMod {
       inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+      
+      inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+      
+      inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
       
       inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
@@ -1236,7 +1239,7 @@ object dividerDividerMod {
       
       inline def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
       
-      inline def setType(value: DividerBorderType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: solid | dashed | dotted): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
       inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       

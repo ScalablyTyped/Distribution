@@ -6,7 +6,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RendererExtension extends StObject {
+trait RendererExtension
+  extends StObject
+     with _TokenizerAndRendererExtension {
   
   var name: String
   

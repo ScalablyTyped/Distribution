@@ -12,29 +12,34 @@ trait CustomizedMetricSpecification extends StObject {
   var Dimensions: js.UndefOr[MetricDimensions] = js.undefined
   
   /**
-    * The name of the metric. 
+    * The name of the metric. To get the exact metric name, namespace, and dimensions, inspect the Metric object that's returned by a call to ListMetrics.
     */
-  var MetricName: typings.awsSdk.clientsApplicationautoscalingMod.MetricName
+  var MetricName: js.UndefOr[typings.awsSdk.clientsApplicationautoscalingMod.MetricName] = js.undefined
+  
+  /**
+    * The metrics to include in the target tracking scaling policy, as a metric data query. This can include both raw metric and metric math expressions.
+    */
+  var Metrics: js.UndefOr[TargetTrackingMetricDataQueries] = js.undefined
   
   /**
     * The namespace of the metric.
     */
-  var Namespace: MetricNamespace
+  var Namespace: js.UndefOr[MetricNamespace] = js.undefined
   
   /**
     * The statistic of the metric.
     */
-  var Statistic: MetricStatistic
+  var Statistic: js.UndefOr[MetricStatistic] = js.undefined
   
   /**
-    * The unit of the metric.
+    * The unit of the metric. For a complete list of the units that CloudWatch supports, see the MetricDatum data type in the Amazon CloudWatch API Reference.
     */
   var Unit: js.UndefOr[MetricUnit] = js.undefined
 }
 object CustomizedMetricSpecification {
   
-  inline def apply(MetricName: MetricName, Namespace: MetricNamespace, Statistic: MetricStatistic): CustomizedMetricSpecification = {
-    val __obj = js.Dynamic.literal(MetricName = MetricName.asInstanceOf[js.Any], Namespace = Namespace.asInstanceOf[js.Any], Statistic = Statistic.asInstanceOf[js.Any])
+  inline def apply(): CustomizedMetricSpecification = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CustomizedMetricSpecification]
   }
   
@@ -49,9 +54,21 @@ object CustomizedMetricSpecification {
     
     inline def setMetricName(value: MetricName): Self = StObject.set(x, "MetricName", value.asInstanceOf[js.Any])
     
+    inline def setMetricNameUndefined: Self = StObject.set(x, "MetricName", js.undefined)
+    
+    inline def setMetrics(value: TargetTrackingMetricDataQueries): Self = StObject.set(x, "Metrics", value.asInstanceOf[js.Any])
+    
+    inline def setMetricsUndefined: Self = StObject.set(x, "Metrics", js.undefined)
+    
+    inline def setMetricsVarargs(value: TargetTrackingMetricDataQuery*): Self = StObject.set(x, "Metrics", js.Array(value*))
+    
     inline def setNamespace(value: MetricNamespace): Self = StObject.set(x, "Namespace", value.asInstanceOf[js.Any])
     
+    inline def setNamespaceUndefined: Self = StObject.set(x, "Namespace", js.undefined)
+    
     inline def setStatistic(value: MetricStatistic): Self = StObject.set(x, "Statistic", value.asInstanceOf[js.Any])
+    
+    inline def setStatisticUndefined: Self = StObject.set(x, "Statistic", js.undefined)
     
     inline def setUnit(value: MetricUnit): Self = StObject.set(x, "Unit", value.asInstanceOf[js.Any])
     

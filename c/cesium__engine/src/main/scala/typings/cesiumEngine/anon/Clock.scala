@@ -1,0 +1,45 @@
+package typings.cesiumEngine.anon
+
+import typings.cesiumEngine.mod.JulianDate
+import typings.std.HTMLVideoElement
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait Clock extends StObject {
+  
+  var clock: js.UndefOr[typings.cesiumEngine.mod.Clock] = js.undefined
+  
+  var element: js.UndefOr[HTMLVideoElement] = js.undefined
+  
+  var epoch: js.UndefOr[JulianDate] = js.undefined
+  
+  var tolerance: js.UndefOr[Double] = js.undefined
+}
+object Clock {
+  
+  inline def apply(): Clock = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[Clock]
+  }
+  
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Clock] (val x: Self) extends AnyVal {
+    
+    inline def setClock(value: typings.cesiumEngine.mod.Clock): Self = StObject.set(x, "clock", value.asInstanceOf[js.Any])
+    
+    inline def setClockUndefined: Self = StObject.set(x, "clock", js.undefined)
+    
+    inline def setElement(value: HTMLVideoElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    
+    inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
+    
+    inline def setEpoch(value: JulianDate): Self = StObject.set(x, "epoch", value.asInstanceOf[js.Any])
+    
+    inline def setEpochUndefined: Self = StObject.set(x, "epoch", js.undefined)
+    
+    inline def setTolerance(value: Double): Self = StObject.set(x, "tolerance", value.asInstanceOf[js.Any])
+    
+    inline def setToleranceUndefined: Self = StObject.set(x, "tolerance", js.undefined)
+  }
+}

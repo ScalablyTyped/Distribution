@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@cucumber/html-formatter" : "20.1.0"
+      "@cucumber/html-formatter" : "20.3.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@cucumber/html-formatter" : "20.1.0"
+      "@cucumber/html-formatter" : "20.3.0"
     }
   ],
   "compile-devDependencies" : [

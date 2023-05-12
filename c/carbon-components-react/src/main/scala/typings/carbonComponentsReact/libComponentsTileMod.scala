@@ -20,7 +20,7 @@ object libComponentsTileMod {
     def this(props: ClickableTileProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: ClickableTileProps, context: Any) = this()
   }
@@ -32,7 +32,7 @@ object libComponentsTileMod {
     def this(props: ExpandableTileProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: ExpandableTileProps, context: Any) = this()
   }
@@ -48,7 +48,7 @@ object libComponentsTileMod {
     def this(props: TileProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: TileProps, context: Any) = this()
   }
@@ -60,7 +60,7 @@ object libComponentsTileMod {
     def this(props: TileAboveTheFoldContentProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: TileAboveTheFoldContentProps, context: Any) = this()
   }
@@ -72,7 +72,7 @@ object libComponentsTileMod {
     def this(props: TileBelowTheFoldContentProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: TileBelowTheFoldContentProps, context: Any) = this()
   }

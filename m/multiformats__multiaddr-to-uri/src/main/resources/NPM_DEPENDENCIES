@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@multiformats/multiaddr-to-uri" : "9.0.2"
+      "@multiformats/multiaddr-to-uri" : "9.0.4"
     }
   ],
   "test-dependencies" : [
     {
-      "@multiformats/multiaddr-to-uri" : "9.0.2"
+      "@multiformats/multiaddr-to-uri" : "9.0.4"
     }
   ],
   "compile-devDependencies" : [

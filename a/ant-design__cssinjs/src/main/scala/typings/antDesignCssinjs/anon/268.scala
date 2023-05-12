@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.OverflowX
+import typings.csstype.mod.Property.InsetBlock
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,8 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `268` extends StObject {
   
   var value: js.UndefOr[
-    OverflowX | (js.Array[
-      (Extract[js.UndefOr[OverflowX | js.Array[NonNullable[js.UndefOr[OverflowX]]]], String]) | NonNullable[js.UndefOr[OverflowX]]
+    (InsetBlock[Double | String]) | (js.Array[
+      (Extract[
+        js.UndefOr[
+          (InsetBlock[Double | String]) | (js.Array[NonNullable[js.UndefOr[InsetBlock[Double | String]]]])
+        ], 
+        String
+      ]) | (NonNullable[js.UndefOr[InsetBlock[Double | String]]])
     ])
   ] = js.native
 }

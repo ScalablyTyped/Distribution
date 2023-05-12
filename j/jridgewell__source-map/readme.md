@@ -1,7 +1,7 @@
 
 # Scala.js typings for jridgewell__source-map
 
-Typings are for version 0.3.2
+Typings are for version 0.3.3
 
 ## Library description:
 Packages @jridgewell/trace-mapping and @jridgewell/gen-mapping into the familiar source-map API

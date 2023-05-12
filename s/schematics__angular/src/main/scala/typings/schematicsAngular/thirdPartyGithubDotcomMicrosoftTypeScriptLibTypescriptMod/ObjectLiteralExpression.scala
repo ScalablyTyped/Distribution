@@ -8,8 +8,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ObjectLiteralExpression
   extends StObject
      with ObjectLiteralExpressionBase[ObjectLiteralElementLike]
+     with JSDocContainer
      with AssignmentPattern
      with DestructuringPattern
+     with HasJSDoc
      with JsonObjectExpression
      with ObjectBindingOrAssignmentPattern
      with _ArrayBindingOrAssignmentElement {

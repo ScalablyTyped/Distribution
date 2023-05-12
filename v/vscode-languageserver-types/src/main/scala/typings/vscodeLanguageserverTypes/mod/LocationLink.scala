@@ -59,7 +59,7 @@ object LocationLink {
   ): LocationLink = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(targetUri.asInstanceOf[js.Any], targetRange.asInstanceOf[js.Any], targetSelectionRange.asInstanceOf[js.Any], originSelectionRange.asInstanceOf[js.Any])).asInstanceOf[LocationLink]
   
   /**
-    * Checks whether the given literal conforms to the [LocationLink](#LocationLink) interface.
+    * Checks whether the given literal conforms to the {@link LocationLink} interface.
     */
   inline def is(value: Any): /* is vscode-languageserver-types.vscode-languageserver-types.LocationLink */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.LocationLink */ Boolean]
   

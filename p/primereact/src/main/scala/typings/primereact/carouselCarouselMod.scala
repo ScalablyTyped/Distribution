@@ -50,6 +50,8 @@ import typings.primereact.primereactStrings.tree
 import typings.primereact.primereactStrings.url
 import typings.primereact.primereactStrings.vertical
 import typings.primereact.primereactStrings.yes
+import typings.primereact.utilsUtilsMod.IconOptions
+import typings.primereact.utilsUtilsMod.IconType
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
@@ -102,38 +104,38 @@ object carouselCarouselMod {
     def this(props: CarouselProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: CarouselProps, context: Any) = this()
     
+    /**
+      * Used to get container element.
+      * @return {HTMLDivElement} Container element
+      */
     def getElement(): HTMLDivElement = js.native
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.primereact.primereactStrings.vertical
-    - typings.primereact.primereactStrings.horizontal
-  */
-  trait CarouselOrientationType extends StObject
-  object CarouselOrientationType {
+  /**
+    * Custom complete method event.
+    * @see {@link CarouselProps.onPageChange}
+    * @event
+    */
+  trait CarouselPageChangeEvent extends StObject {
     
-    inline def horizontal: typings.primereact.primereactStrings.horizontal = "horizontal".asInstanceOf[typings.primereact.primereactStrings.horizontal]
-    
-    inline def vertical: typings.primereact.primereactStrings.vertical = "vertical".asInstanceOf[typings.primereact.primereactStrings.vertical]
-  }
-  
-  trait CarouselPageChangeParams extends StObject {
-    
+    /**
+      * Value of the new page.
+      */
     var page: Double
   }
-  object CarouselPageChangeParams {
+  object CarouselPageChangeEvent {
     
-    inline def apply(page: Double): CarouselPageChangeParams = {
+    inline def apply(page: Double): CarouselPageChangeEvent = {
       val __obj = js.Dynamic.literal(page = page.asInstanceOf[js.Any])
-      __obj.asInstanceOf[CarouselPageChangeParams]
+      __obj.asInstanceOf[CarouselPageChangeEvent]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: CarouselPageChangeParams] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: CarouselPageChangeEvent] (val x: Self) extends AnyVal {
       
       inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     }
@@ -248,20 +250,41 @@ object carouselCarouselMod {
     
     var autoCorrect: js.UndefOr[String] = js.undefined
     
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
+    
     var autoSave: js.UndefOr[String] = js.undefined
     
+    /**
+      * Time in milliseconds to scroll items automatically.
+      */
     var autoplayInterval: js.UndefOr[Double] = js.undefined
     
+    /**
+      * Used to get the child elements of the component.
+      * @readonly
+      */
     var children: js.UndefOr[ReactNode] = js.undefined
     
+    /**
+      * Defines if scrolling would be infinite.
+      * @defaultValue false
+      */
     var circular: js.UndefOr[Boolean] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
     var color: js.UndefOr[String] = js.undefined
     
+    /**
+      * Style class of the viewport container.
+      */
     var containerClassName: js.UndefOr[String] = js.undefined
     
+    var content: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Style class of main content.
+      */
     var contentClassName: js.UndefOr[String] = js.undefined
     
     var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
@@ -280,14 +303,23 @@ object carouselCarouselMod {
     
     var draggable: js.UndefOr[Booleanish] = js.undefined
     
+    /**
+      * Label of footer.
+      */
     var footer: js.UndefOr[ReactNode] = js.undefined
     
+    /**
+      * Label of header.
+      */
     var header: js.UndefOr[ReactNode] = js.undefined
     
     var hidden: js.UndefOr[Boolean] = js.undefined
     
     var id: js.UndefOr[String] = js.undefined
     
+    /**
+      * Style class of the paginator items.
+      */
     var indicatorsContentClassName: js.UndefOr[String] = js.undefined
     
     var inlist: js.UndefOr[Any] = js.undefined
@@ -304,7 +336,11 @@ object carouselCarouselMod {
     
     var itemScope: js.UndefOr[Boolean] = js.undefined
     
-    var itemTemplate: js.UndefOr[js.Function1[/* item */ Any, ReactNode]] = js.undefined
+    /**
+      * Function that gets an item in the value and returns the content for it.
+      * @param {*} item - Current item
+      */
+    var itemTemplate: js.UndefOr[js.Function1[/* item */ Any, js.UndefOr[ReactNode]]] = js.undefined
     
     var itemType: js.UndefOr[String] = js.undefined
     
@@ -312,10 +348,23 @@ object carouselCarouselMod {
     
     var lang: js.UndefOr[String] = js.undefined
     
+    /**
+      * Icon for the next button by orientation.
+      */
+    var nextIcon: js.UndefOr[IconType[CarouselProps]] = js.undefined
+    
     var nonce: js.UndefOr[String] = js.undefined
     
+    /**
+      * Number of items to scroll.
+      * @defaultValue 1
+      */
     var numScroll: js.UndefOr[Double] = js.undefined
     
+    /**
+      * Number of items per page.
+      * @defaultValue 1
+      */
     var numVisible: js.UndefOr[Double] = js.undefined
     
     var onAbort: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
@@ -414,7 +463,11 @@ object carouselCarouselMod {
     
     var onMouseUp: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
-    var onPageChange: js.UndefOr[js.Function1[/* e */ CarouselPageChangeParams, Unit]] = js.undefined
+    /**
+      * Callback to invoke after scroll.
+      * @param {CarouselPageChangeEvent} event - Custom change event.
+      */
+    var onPageChange: js.UndefOr[js.Function1[/* event */ CarouselPageChangeEvent, Unit]] = js.undefined
     
     var onPaste: js.UndefOr[ClipboardEventHandler[HTMLDivElement]] = js.undefined
     
@@ -480,30 +533,58 @@ object carouselCarouselMod {
     
     var onWheel: js.UndefOr[WheelEventHandler[HTMLDivElement]] = js.undefined
     
-    var orientation: js.UndefOr[CarouselOrientationType] = js.undefined
+    /**
+      * Specifies the layout of the component, valid values are "horizontal" and "vertical".
+      * @defaultValue horizontal
+      */
+    var orientation: js.UndefOr[vertical | horizontal] = js.undefined
     
+    /**
+      * Index of the first item.
+      */
     var page: js.UndefOr[Double] = js.undefined
     
     var placeholder: js.UndefOr[String] = js.undefined
     
     var prefix: js.UndefOr[String] = js.undefined
     
+    /**
+      * Icon for the previous button by orientation.
+      */
+    var prevIcon: js.UndefOr[IconType[CarouselProps]] = js.undefined
+    
     var property: js.UndefOr[String] = js.undefined
     
     var radioGroup: js.UndefOr[String] = js.undefined
     
+    var rel: js.UndefOr[String] = js.undefined
+    
     var resource: js.UndefOr[String] = js.undefined
     
-    var responsiveOptions: js.UndefOr[js.Array[CarouselResponsiveOptions]] = js.undefined
+    /**
+      * An array of options for responsive design.
+      * @type {CarouselResponsiveOption}
+      */
+    var responsiveOptions: js.UndefOr[js.Array[CarouselResponsiveOption]] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
+    
+    var rev: js.UndefOr[String] = js.undefined
     
     var role: js.UndefOr[AriaRole] = js.undefined
     
     var security: js.UndefOr[String] = js.undefined
     
+    /**
+      * Whether to display indicator container.
+      * @defaultValue true
+      */
     var showIndicators: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Whether to display navigation buttons in container.
+      * @defaultValue true
+      */
     var showNavigators: js.UndefOr[Boolean] = js.undefined
     
     var slot: js.UndefOr[String] = js.undefined
@@ -526,8 +607,15 @@ object carouselCarouselMod {
     
     var unselectable: js.UndefOr[on | off] = js.undefined
     
+    /**
+      * An array of objects to display.
+      */
     var value: js.UndefOr[js.Array[Any]] = js.undefined
     
+    /**
+      * Height of the viewport in vertical layout.
+      * @defaultValue 300px
+      */
     var verticalViewPortHeight: js.UndefOr[String] = js.undefined
     
     var vocab: js.UndefOr[String] = js.undefined
@@ -752,6 +840,10 @@ object carouselCarouselMod {
       
       inline def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
       
+      inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+      
+      inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+      
       inline def setAutoSave(value: String): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
       
       inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
@@ -780,6 +872,8 @@ object carouselCarouselMod {
       
       inline def setContainerClassNameUndefined: Self = StObject.set(x, "containerClassName", js.undefined)
       
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
       inline def setContentClassName(value: String): Self = StObject.set(x, "contentClassName", value.asInstanceOf[js.Any])
       
       inline def setContentClassNameUndefined: Self = StObject.set(x, "contentClassName", js.undefined)
@@ -787,6 +881,8 @@ object carouselCarouselMod {
       inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
       inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
@@ -866,7 +962,7 @@ object carouselCarouselMod {
       
       inline def setItemScopeUndefined: Self = StObject.set(x, "itemScope", js.undefined)
       
-      inline def setItemTemplate(value: /* item */ Any => ReactNode): Self = StObject.set(x, "itemTemplate", js.Any.fromFunction1(value))
+      inline def setItemTemplate(value: /* item */ Any => js.UndefOr[ReactNode]): Self = StObject.set(x, "itemTemplate", js.Any.fromFunction1(value))
       
       inline def setItemTemplateUndefined: Self = StObject.set(x, "itemTemplate", js.undefined)
       
@@ -883,6 +979,12 @@ object carouselCarouselMod {
       inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
       
       inline def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
+      
+      inline def setNextIcon(value: IconType[CarouselProps]): Self = StObject.set(x, "nextIcon", value.asInstanceOf[js.Any])
+      
+      inline def setNextIconFunction1(value: /* options */ IconOptions[CarouselProps] => ReactNode): Self = StObject.set(x, "nextIcon", js.Any.fromFunction1(value))
+      
+      inline def setNextIconUndefined: Self = StObject.set(x, "nextIcon", js.undefined)
       
       inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
       
@@ -1088,7 +1190,7 @@ object carouselCarouselMod {
       
       inline def setOnMouseUpUndefined: Self = StObject.set(x, "onMouseUp", js.undefined)
       
-      inline def setOnPageChange(value: /* e */ CarouselPageChangeParams => Unit): Self = StObject.set(x, "onPageChange", js.Any.fromFunction1(value))
+      inline def setOnPageChange(value: /* event */ CarouselPageChangeEvent => Unit): Self = StObject.set(x, "onPageChange", js.Any.fromFunction1(value))
       
       inline def setOnPageChangeUndefined: Self = StObject.set(x, "onPageChange", js.undefined)
       
@@ -1220,7 +1322,7 @@ object carouselCarouselMod {
       
       inline def setOnWheelUndefined: Self = StObject.set(x, "onWheel", js.undefined)
       
-      inline def setOrientation(value: CarouselOrientationType): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+      inline def setOrientation(value: vertical | horizontal): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
       
       inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
       
@@ -1236,6 +1338,12 @@ object carouselCarouselMod {
       
       inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
       
+      inline def setPrevIcon(value: IconType[CarouselProps]): Self = StObject.set(x, "prevIcon", value.asInstanceOf[js.Any])
+      
+      inline def setPrevIconFunction1(value: /* options */ IconOptions[CarouselProps] => ReactNode): Self = StObject.set(x, "prevIcon", js.Any.fromFunction1(value))
+      
+      inline def setPrevIconUndefined: Self = StObject.set(x, "prevIcon", js.undefined)
+      
       inline def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
       
       inline def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
@@ -1244,19 +1352,27 @@ object carouselCarouselMod {
       
       inline def setRadioGroupUndefined: Self = StObject.set(x, "radioGroup", js.undefined)
       
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      
+      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+      
       inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
       inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
       
-      inline def setResponsiveOptions(value: js.Array[CarouselResponsiveOptions]): Self = StObject.set(x, "responsiveOptions", value.asInstanceOf[js.Any])
+      inline def setResponsiveOptions(value: js.Array[CarouselResponsiveOption]): Self = StObject.set(x, "responsiveOptions", value.asInstanceOf[js.Any])
       
       inline def setResponsiveOptionsUndefined: Self = StObject.set(x, "responsiveOptions", js.undefined)
       
-      inline def setResponsiveOptionsVarargs(value: CarouselResponsiveOptions*): Self = StObject.set(x, "responsiveOptions", js.Array(value*))
+      inline def setResponsiveOptionsVarargs(value: CarouselResponsiveOption*): Self = StObject.set(x, "responsiveOptions", js.Array(value*))
       
       inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+      
+      inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+      
+      inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
       
       inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
@@ -1330,23 +1446,36 @@ object carouselCarouselMod {
     }
   }
   
-  trait CarouselResponsiveOptions extends StObject {
+  /**
+    * Custom responsive option
+    * @see {@link CarouselProps.responsiveOptions}
+    */
+  trait CarouselResponsiveOption extends StObject {
     
+    /**
+      * The breakpoint to define the maximum width boundary.
+      */
     var breakpoint: String
     
+    /**
+      * Number of items to scroll.
+      */
     var numScroll: Double
     
+    /**
+      * Number of items per page.
+      */
     var numVisible: Double
   }
-  object CarouselResponsiveOptions {
+  object CarouselResponsiveOption {
     
-    inline def apply(breakpoint: String, numScroll: Double, numVisible: Double): CarouselResponsiveOptions = {
+    inline def apply(breakpoint: String, numScroll: Double, numVisible: Double): CarouselResponsiveOption = {
       val __obj = js.Dynamic.literal(breakpoint = breakpoint.asInstanceOf[js.Any], numScroll = numScroll.asInstanceOf[js.Any], numVisible = numVisible.asInstanceOf[js.Any])
-      __obj.asInstanceOf[CarouselResponsiveOptions]
+      __obj.asInstanceOf[CarouselResponsiveOption]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: CarouselResponsiveOptions] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: CarouselResponsiveOption] (val x: Self) extends AnyVal {
       
       inline def setBreakpoint(value: String): Self = StObject.set(x, "breakpoint", value.asInstanceOf[js.Any])
       

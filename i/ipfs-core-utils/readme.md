@@ -1,7 +1,7 @@
 
 # Scala.js typings for ipfs-core-utils
 
-Typings are for version 0.17.0
+Typings are for version 0.18.0
 
 ## Library description:
 Package to share code between ipfs and ipfs-http-client

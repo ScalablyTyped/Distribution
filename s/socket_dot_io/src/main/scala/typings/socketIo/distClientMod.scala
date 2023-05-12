@@ -97,6 +97,7 @@ object distClientMod {
       * Called upon transport close.
       *
       * @param reason
+      * @param description
       * @private
       */
     /* private */ var onclose: Any = js.native

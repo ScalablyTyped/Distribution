@@ -3,7 +3,6 @@ package typings.webgpuTypes
 import typings.std.ReadonlySet
 import typings.webgpuTypes.webgpuTypesStrings.`write-only`
 import typings.webgpuTypes.webgpuTypesStrings.auto
-import typings.webgpuTypes.webgpuTypesStrings.destroyed
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,9 +14,6 @@ type GPUBufferDynamicOffset = Double
 
 type GPUBufferUsageFlags = Double
 
-/** @deprecated use GPUCanvasAlphaMode instead */
-type GPUCanvasCompositingAlphaMode = GPUCanvasAlphaMode
-
 type GPUColor = js.Iterable[Double] | GPUColorDict
 
 type GPUColorWriteFlags = Double
@@ -26,11 +22,7 @@ type GPUCommandBufferDescriptor = GPUObjectDescriptorBase
 
 type GPUCommandEncoderDescriptor = GPUObjectDescriptorBase
 
-type GPUComputePassTimestampWrites = js.Iterable[GPUComputePassTimestampWrite]
-
 type GPUDepthBias = Double
-
-type GPUDeviceLostReason = destroyed
 
 type GPUExtent3D = js.Iterable[GPUIntegerCoordinate] | GPUExtent3DDict
 
@@ -56,8 +48,6 @@ type GPUQueueDescriptor = GPUObjectDescriptorBase
 
 type GPURenderBundleDescriptor = GPUObjectDescriptorBase
 
-type GPURenderPassTimestampWrites = js.Iterable[GPURenderPassTimestampWrite]
-
 type GPUSampleMask = Double
 
 type GPUShaderStageFlags = Double
@@ -75,5 +65,7 @@ type GPUStorageTextureAccess = `write-only`
 type GPUSupportedFeatures = ReadonlySet[String]
 
 type GPUTextureUsageFlags = Double
+
+type WGSLLanguageFeatures = ReadonlySet[String]
 
 type WorkerNavigator = NavigatorGPU

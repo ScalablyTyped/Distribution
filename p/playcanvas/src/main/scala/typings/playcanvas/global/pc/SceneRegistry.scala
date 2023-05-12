@@ -4,14 +4,12 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** @typedef {import('./app-base.js').AppBase} AppBase */
-/** @typedef {import('./entity.js').Entity} Entity */
 /**
   * Callback used by {@link SceneRegistry#loadSceneHierarchy}.
   *
   * @callback LoadHierarchyCallback
   * @param {string|null} err - The error message in the case where the loading or parsing fails.
-  * @param {Entity} [entity] - The loaded root entity if no errors were encountered.
+  * @param {import('./entity.js').Entity} [entity] - The loaded root entity if no errors were encountered.
   */
 /**
   * Callback used by {@link SceneRegistry#loadSceneSettings}.
@@ -24,14 +22,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @callback ChangeSceneCallback
   * @param {string|null} err - The error message in the case where the loading or parsing fails.
-  * @param {Entity} [entity] - The loaded root entity if no errors were encountered.
+  * @param {import('./entity.js').Entity} [entity] - The loaded root entity if no errors were encountered.
   */
 /**
   * Callback used by {@link SceneRegistry#loadScene}.
   *
   * @callback LoadSceneCallback
   * @param {string|null} err - The error message in the case where the loading or parsing fails.
-  * @param {Entity} [entity] - The loaded root entity if no errors were encountered.
+  * @param {import('./entity.js').Entity} [entity] - The loaded root entity if no errors were encountered.
   */
 /**
   * Callback used by {@link SceneRegistry#loadSceneData}.
@@ -51,7 +49,7 @@ open class SceneRegistry protected ()
   /**
     * Create a new SceneRegistry instance.
     *
-    * @param {AppBase} app - The application.
+    * @param {import('./app-base.js').AppBase} app - The application.
     */
   def this(app: typings.playcanvas.mod.AppBase) = this()
 }

@@ -4,14 +4,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Options for the Custom Pano Provider.
-  */
 trait PanoProviderOptions extends StObject {
   
   /**
     * If set, the renderer will use technologies (like webgl) that only work
-    * when cors headers are appropiately set on the provided images. It is the
+    * when cors headers are appropriately set on the provided images. It is the
     * developer&#39;s task to serve the images correctly in combination with
     * this flag, which might otherwise lead to SecurityErrors.
     */

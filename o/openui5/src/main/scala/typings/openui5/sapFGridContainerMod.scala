@@ -1,8 +1,8 @@
 package typings.openui5
 
 import typings.openui5.anon.Column
-import typings.openui5.anon.Columns
 import typings.openui5.anon.Layout
+import typings.openui5.anon.`0`
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapFLibraryMod.NavigationDirection
 import typings.openui5.sapFLibraryMod.dnd.IGridDroppable
@@ -498,6 +498,8 @@ object sapFGridContainerMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:borderReached borderReached} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -509,6 +511,8 @@ object sapFGridContainerMod {
     mParameters: Column): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:columnsChange columnsChange} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -517,9 +521,11 @@ object sapFGridContainerMod {
     def fireColumnsChange(/**
       * Parameters to pass along with the event
       */
-    mParameters: Columns): this.type = js.native
+    mParameters: `0`): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:layoutChange layoutChange} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining

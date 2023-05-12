@@ -45,7 +45,11 @@ trait EvaluateRequest extends StObject {
   var generatePreview: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Whether the result should be serialized according to https://w3c.github.io/webdriver-bidi.
+    * Deprecated. Use `serializationOptions: {serialization:"deep"}` instead.
+    * Whether the result should contain `webDriverValue`, serialized
+    * according to
+    * https://w3c.github.io/webdriver-bidi. This is mutually exclusive with `returnByValue`, but
+    * resulting `objectId` is still provided.
     */
   var generateWebDriverValue: js.UndefOr[Boolean] = js.undefined
   
@@ -70,6 +74,12 @@ trait EvaluateRequest extends StObject {
     * Whether the result is expected to be a JSON object that should be sent by value.
     */
   var returnByValue: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Specifies the result serialization. If provided, overrides
+    * `returnByValue` and `generateWebDriverValue`.
+    */
+  var serializationOptions: js.UndefOr[SerializationOptions] = js.undefined
   
   /**
     * In silent mode exceptions thrown during evaluation are not reported and do not pause
@@ -154,6 +164,10 @@ object EvaluateRequest {
     inline def setReturnByValue(value: Boolean): Self = StObject.set(x, "returnByValue", value.asInstanceOf[js.Any])
     
     inline def setReturnByValueUndefined: Self = StObject.set(x, "returnByValue", js.undefined)
+    
+    inline def setSerializationOptions(value: SerializationOptions): Self = StObject.set(x, "serializationOptions", value.asInstanceOf[js.Any])
+    
+    inline def setSerializationOptionsUndefined: Self = StObject.set(x, "serializationOptions", js.undefined)
     
     inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
     

@@ -345,10 +345,14 @@ object libConnectionConnectionMod {
     
     var remoteInstanceId: String = js.native
     
-    def scheduledSendMail(mail: Mail): Unit = js.native
-    def scheduledSendMail(mail: Mail, maxSize: Double): Unit = js.native
+    def scheduledSendEmail(email: Email): Unit = js.native
+    def scheduledSendEmail(email: Email, maxSize: Double): Unit = js.native
     
-    def sendMail(mail: Mail): Unit = js.native
+    /* private */ var scheduledSendMail: Any = js.native
+    
+    def sendEmail(email: Email): Unit = js.native
+    
+    /* private */ var sendMail: Any = js.native
     
     var serverDate: js.Date = js.native
     
@@ -382,7 +386,7 @@ object libConnectionConnectionMod {
   
   type Database = typings.nginstackEngine.libDatabaseDatabaseMod.^
   
-  type Mail = typings.nginstackEngine.libMailMailMod.^
+  type Email = typings.nginstackEngine.libEmailEmailMod.^
   
   type ModelDef = typings.nginstackEngine.libClassdefModelDefMod.^
   

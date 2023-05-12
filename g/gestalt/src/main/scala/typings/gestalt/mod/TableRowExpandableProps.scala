@@ -6,7 +6,6 @@ import typings.gestalt.gestaltStrings.none
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
-import typings.react.mod.ReactNode
 import typings.std.HTMLAnchorElement
 import typings.std.HTMLButtonElement
 import org.scalablytyped.runtime.StObject
@@ -19,20 +18,17 @@ trait TableRowExpandableProps extends StObject {
   
   var accessibilityExpandLabel: String
   
-  var children: js.UndefOr[ReactNode] = js.undefined
+  var children: Node
   
-  var expandedContents: ReactNode
+  var expanded: js.UndefOr[String] = js.undefined
+  
+  var expandedContents: Node
   
   var hoverStyle: js.UndefOr[none | gray] = js.undefined
   
   var id: String
   
-  var onExpand: js.UndefOr[
-    AbstractEventHandler[
-      (MouseEvent[HTMLAnchorElement | HTMLButtonElement, NativeMouseEvent]) | (KeyboardEvent[HTMLAnchorElement | HTMLButtonElement]), 
-      js.Object
-    ]
-  ] = js.undefined
+  var onExpand: js.UndefOr[BareButtonEventHandlerType] = js.undefined
 }
 object TableRowExpandableProps {
   
@@ -48,13 +44,17 @@ object TableRowExpandableProps {
     
     inline def setAccessibilityExpandLabel(value: String): Self = StObject.set(x, "accessibilityExpandLabel", value.asInstanceOf[js.Any])
     
-    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: Node): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    inline def setExpandedContents(value: ReactNode): Self = StObject.set(x, "expandedContents", value.asInstanceOf[js.Any])
+    inline def setExpanded(value: String): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
+    
+    inline def setExpandedContents(value: Node): Self = StObject.set(x, "expandedContents", value.asInstanceOf[js.Any])
     
     inline def setExpandedContentsUndefined: Self = StObject.set(x, "expandedContents", js.undefined)
+    
+    inline def setExpandedUndefined: Self = StObject.set(x, "expanded", js.undefined)
     
     inline def setHoverStyle(value: none | gray): Self = StObject.set(x, "hoverStyle", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,7 @@ object lightsLightMod {
        with ISortableLight {
     /**
       * Creates a Light object in the scene.
-      * Documentation : https://doc.babylonjs.com/babylon101/lights
+      * Documentation : https://doc.babylonjs.com/features/featuresDeepDive/lights/lights_introduction
       * @param name The friendly name of the light
       * @param scene The scene the light belongs too
       */
@@ -144,7 +144,6 @@ object lightsLightMod {
       * @returns the new created light
       */
     def clone(name: String): Nullable[Light] = js.native
-    def clone(name: String, newParent: Nullable[Node]): Nullable[Light] = js.native
     
     /**
       * Diffuse gives the basic color to an object.

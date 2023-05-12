@@ -1,7 +1,7 @@
 
 # Scala.js typings for tempfile
 
-Typings are for version 4.0.0
+Typings are for version 5.0.0
 
 ## Library description:
 Get a random temporary file path

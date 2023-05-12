@@ -3,6 +3,24 @@ package typings.hastUtilRaw
 import typings.hast.mod.DocType
 import typings.hastUtilRaw.anon.Location
 import typings.hastUtilRaw.complexTypesMod.Raw
+import typings.hastUtilRaw.hastUtilRawInts.`0x01`
+import typings.hastUtilRaw.hastUtilRawInts.`0x02`
+import typings.hastUtilRaw.hastUtilRawInts.`0x04`
+import typings.hastUtilRaw.hastUtilRawInts.`0x08`
+import typings.hastUtilRaw.hastUtilRawInts.`0x10`
+import typings.hastUtilRaw.hastUtilRawInts.`0x20`
+import typings.hastUtilRaw.hastUtilRawInts.`10`
+import typings.hastUtilRaw.hastUtilRawInts.`11`
+import typings.hastUtilRaw.hastUtilRawInts.`12`
+import typings.hastUtilRaw.hastUtilRawInts.`1`
+import typings.hastUtilRaw.hastUtilRawInts.`2`
+import typings.hastUtilRaw.hastUtilRawInts.`3`
+import typings.hastUtilRaw.hastUtilRawInts.`4`
+import typings.hastUtilRaw.hastUtilRawInts.`5`
+import typings.hastUtilRaw.hastUtilRawInts.`6`
+import typings.hastUtilRaw.hastUtilRawInts.`7`
+import typings.hastUtilRaw.hastUtilRawInts.`8`
+import typings.hastUtilRaw.hastUtilRawInts.`9`
 import typings.hastUtilRaw.hastUtilRawStrings.a
 import typings.hastUtilRaw.hastUtilRawStrings.comment
 import typings.hastUtilRaw.hastUtilRawStrings.fullscreenchange
@@ -335,41 +353,41 @@ object libMod {
   /* Inlined std.Omit<std.Element, 'parentNode'> */
   trait P5Element extends StObject {
     
-    var ATTRIBUTE_NODE: Double
+    var ATTRIBUTE_NODE: `2`
     
-    var CDATA_SECTION_NODE: Double
+    var CDATA_SECTION_NODE: `4`
     
-    var COMMENT_NODE: Double
+    var COMMENT_NODE: `8`
     
-    var DOCUMENT_FRAGMENT_NODE: Double
+    var DOCUMENT_FRAGMENT_NODE: `11`
     
-    var DOCUMENT_NODE: Double
+    var DOCUMENT_NODE: `9`
     
-    var DOCUMENT_POSITION_CONTAINED_BY: Double
+    var DOCUMENT_POSITION_CONTAINED_BY: `0x10`
     
-    var DOCUMENT_POSITION_CONTAINS: Double
+    var DOCUMENT_POSITION_CONTAINS: `0x08`
     
-    var DOCUMENT_POSITION_DISCONNECTED: Double
+    var DOCUMENT_POSITION_DISCONNECTED: `0x01`
     
-    var DOCUMENT_POSITION_FOLLOWING: Double
+    var DOCUMENT_POSITION_FOLLOWING: `0x04`
     
-    var DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC: Double
+    var DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC: `0x20`
     
-    var DOCUMENT_POSITION_PRECEDING: Double
+    var DOCUMENT_POSITION_PRECEDING: `0x02`
     
-    var DOCUMENT_TYPE_NODE: Double
+    var DOCUMENT_TYPE_NODE: `10`
     
-    var ELEMENT_NODE: Double
+    var ELEMENT_NODE: `1`
     
-    var ENTITY_NODE: Double
+    var ENTITY_NODE: `6`
     
-    var ENTITY_REFERENCE_NODE: Double
+    var ENTITY_REFERENCE_NODE: `5`
     
-    var NOTATION_NODE: Double
+    var NOTATION_NODE: `12`
     
-    var PROCESSING_INSTRUCTION_NODE: Double
+    var PROCESSING_INSTRUCTION_NODE: `7`
     
-    var TEXT_NODE: Double
+    var TEXT_NODE: `3`
     
     @JSName("addEventListener")
     var addEventListener_Original: js.Function2[
@@ -408,8 +426,6 @@ object libMod {
     var ariaColCount: js.UndefOr[String | Null] = js.undefined
     
     var ariaColIndex: js.UndefOr[String | Null] = js.undefined
-    
-    var ariaColIndexText: js.UndefOr[String | Null] = js.undefined
     
     var ariaColSpan: js.UndefOr[String | Null] = js.undefined
     
@@ -457,8 +473,6 @@ object libMod {
     
     var ariaRowIndex: js.UndefOr[String | Null] = js.undefined
     
-    var ariaRowIndexText: js.UndefOr[String | Null] = js.undefined
-    
     var ariaRowSpan: js.UndefOr[String | Null] = js.undefined
     
     var ariaSelected: js.UndefOr[String | Null] = js.undefined
@@ -488,6 +502,10 @@ object libMod {
     def before(nodes: (typings.std.Node | String)*): Unit
     @JSName("before")
     var before_Original: js.Function1[/* repeated */ typings.std.Node | String, Unit]
+    
+    def checkVisibility(): Boolean
+    @JSName("checkVisibility")
+    var checkVisibility_Original: js.Function0[Boolean]
     
     var childElementCount: Double
     
@@ -836,24 +854,6 @@ object libMod {
   object P5Element {
     
     inline def apply(
-      ATTRIBUTE_NODE: Double,
-      CDATA_SECTION_NODE: Double,
-      COMMENT_NODE: Double,
-      DOCUMENT_FRAGMENT_NODE: Double,
-      DOCUMENT_NODE: Double,
-      DOCUMENT_POSITION_CONTAINED_BY: Double,
-      DOCUMENT_POSITION_CONTAINS: Double,
-      DOCUMENT_POSITION_DISCONNECTED: Double,
-      DOCUMENT_POSITION_FOLLOWING: Double,
-      DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC: Double,
-      DOCUMENT_POSITION_PRECEDING: Double,
-      DOCUMENT_TYPE_NODE: Double,
-      ELEMENT_NODE: Double,
-      ENTITY_NODE: Double,
-      ENTITY_REFERENCE_NODE: Double,
-      NOTATION_NODE: Double,
-      PROCESSING_INSTRUCTION_NODE: Double,
-      TEXT_NODE: Double,
       addEventListener: (fullscreenchange, /* listener */ js.ThisFunction1[P5Element, /* ev */ Event, Any]) => Unit,
       after: /* repeated */ typings.std.Node | String => Unit,
       animate: () => Animation,
@@ -863,6 +863,7 @@ object libMod {
       attributes: NamedNodeMap,
       baseURI: String,
       before: /* repeated */ typings.std.Node | String => Unit,
+      checkVisibility: () => Boolean,
       childElementCount: Double,
       childNodes: NodeListOf[ChildNode],
       children: HTMLCollection,
@@ -947,14 +948,14 @@ object libMod {
       toggleAttribute: /* qualifiedName */ String => Boolean,
       webkitMatchesSelector: /* selectors */ String => Boolean
     ): P5Element = {
-      val __obj = js.Dynamic.literal(ATTRIBUTE_NODE = ATTRIBUTE_NODE.asInstanceOf[js.Any], CDATA_SECTION_NODE = CDATA_SECTION_NODE.asInstanceOf[js.Any], COMMENT_NODE = COMMENT_NODE.asInstanceOf[js.Any], DOCUMENT_FRAGMENT_NODE = DOCUMENT_FRAGMENT_NODE.asInstanceOf[js.Any], DOCUMENT_NODE = DOCUMENT_NODE.asInstanceOf[js.Any], DOCUMENT_POSITION_CONTAINED_BY = DOCUMENT_POSITION_CONTAINED_BY.asInstanceOf[js.Any], DOCUMENT_POSITION_CONTAINS = DOCUMENT_POSITION_CONTAINS.asInstanceOf[js.Any], DOCUMENT_POSITION_DISCONNECTED = DOCUMENT_POSITION_DISCONNECTED.asInstanceOf[js.Any], DOCUMENT_POSITION_FOLLOWING = DOCUMENT_POSITION_FOLLOWING.asInstanceOf[js.Any], DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC = DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC.asInstanceOf[js.Any], DOCUMENT_POSITION_PRECEDING = DOCUMENT_POSITION_PRECEDING.asInstanceOf[js.Any], DOCUMENT_TYPE_NODE = DOCUMENT_TYPE_NODE.asInstanceOf[js.Any], ELEMENT_NODE = ELEMENT_NODE.asInstanceOf[js.Any], ENTITY_NODE = ENTITY_NODE.asInstanceOf[js.Any], ENTITY_REFERENCE_NODE = ENTITY_REFERENCE_NODE.asInstanceOf[js.Any], NOTATION_NODE = NOTATION_NODE.asInstanceOf[js.Any], PROCESSING_INSTRUCTION_NODE = PROCESSING_INSTRUCTION_NODE.asInstanceOf[js.Any], TEXT_NODE = TEXT_NODE.asInstanceOf[js.Any], addEventListener = js.Any.fromFunction2(addEventListener), after = js.Any.fromFunction1(after), animate = js.Any.fromFunction0(animate), append = js.Any.fromFunction1(append), appendChild = js.Any.fromFunction1(appendChild), attachShadow = js.Any.fromFunction1(attachShadow), attributes = attributes.asInstanceOf[js.Any], baseURI = baseURI.asInstanceOf[js.Any], before = js.Any.fromFunction1(before), childElementCount = childElementCount.asInstanceOf[js.Any], childNodes = childNodes.asInstanceOf[js.Any], children = children.asInstanceOf[js.Any], classList = classList.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], clientHeight = clientHeight.asInstanceOf[js.Any], clientLeft = clientLeft.asInstanceOf[js.Any], clientTop = clientTop.asInstanceOf[js.Any], clientWidth = clientWidth.asInstanceOf[js.Any], cloneNode = js.Any.fromFunction0(cloneNode), closest = js.Any.fromFunction1(closest), compareDocumentPosition = js.Any.fromFunction1(compareDocumentPosition), contains = js.Any.fromFunction0(contains), dispatchEvent = js.Any.fromFunction1(dispatchEvent), getAnimations = js.Any.fromFunction0(getAnimations), getAttribute = js.Any.fromFunction1(getAttribute), getAttributeNS = js.Any.fromFunction2(getAttributeNS), getAttributeNames = js.Any.fromFunction0(getAttributeNames), getAttributeNode = js.Any.fromFunction1(getAttributeNode), getAttributeNodeNS = js.Any.fromFunction2(getAttributeNodeNS), getBoundingClientRect = js.Any.fromFunction0(getBoundingClientRect), getClientRects = js.Any.fromFunction0(getClientRects), getElementsByClassName = js.Any.fromFunction1(getElementsByClassName), getElementsByTagName = js.Any.fromFunction1(getElementsByTagName), getElementsByTagNameNS = js.Any.fromFunction2(getElementsByTagNameNS), getRootNode = js.Any.fromFunction0(getRootNode), hasAttribute = js.Any.fromFunction1(hasAttribute), hasAttributeNS = js.Any.fromFunction2(hasAttributeNS), hasAttributes = js.Any.fromFunction0(hasAttributes), hasChildNodes = js.Any.fromFunction0(hasChildNodes), hasPointerCapture = js.Any.fromFunction1(hasPointerCapture), id = id.asInstanceOf[js.Any], innerHTML = innerHTML.asInstanceOf[js.Any], insertAdjacentElement = js.Any.fromFunction2(insertAdjacentElement), insertAdjacentHTML = js.Any.fromFunction2(insertAdjacentHTML), insertAdjacentText = js.Any.fromFunction2(insertAdjacentText), insertBefore = js.Any.fromFunction1(insertBefore), isConnected = isConnected.asInstanceOf[js.Any], isDefaultNamespace = js.Any.fromFunction0(isDefaultNamespace), isEqualNode = js.Any.fromFunction0(isEqualNode), isSameNode = js.Any.fromFunction0(isSameNode), localName = localName.asInstanceOf[js.Any], lookupNamespaceURI = js.Any.fromFunction0(lookupNamespaceURI), lookupPrefix = js.Any.fromFunction0(lookupPrefix), matches = js.Any.fromFunction1(matches), nodeName = nodeName.asInstanceOf[js.Any], nodeType = nodeType.asInstanceOf[js.Any], normalize = js.Any.fromFunction0(normalize), outerHTML = outerHTML.asInstanceOf[js.Any], ownerDocument = ownerDocument.asInstanceOf[js.Any], part = part.asInstanceOf[js.Any], prepend = js.Any.fromFunction1(prepend), querySelector = js.Any.fromFunction1(querySelector), querySelectorAll = js.Any.fromFunction1(querySelectorAll), releasePointerCapture = js.Any.fromFunction1(releasePointerCapture), remove = js.Any.fromFunction0(remove), removeAttribute = js.Any.fromFunction1(removeAttribute), removeAttributeNS = js.Any.fromFunction2(removeAttributeNS), removeAttributeNode = js.Any.fromFunction1(removeAttributeNode), removeChild = js.Any.fromFunction1(removeChild), removeEventListener = js.Any.fromFunction2(removeEventListener), replaceChild = js.Any.fromFunction2(replaceChild), replaceChildren = js.Any.fromFunction1(replaceChildren), replaceWith = js.Any.fromFunction1(replaceWith), requestFullscreen = js.Any.fromFunction0(requestFullscreen), requestPointerLock = js.Any.fromFunction0(requestPointerLock), scroll = js.Any.fromFunction0(scroll), scrollBy = js.Any.fromFunction0(scrollBy), scrollHeight = scrollHeight.asInstanceOf[js.Any], scrollIntoView = js.Any.fromFunction0(scrollIntoView), scrollLeft = scrollLeft.asInstanceOf[js.Any], scrollTo = js.Any.fromFunction0(scrollTo), scrollTop = scrollTop.asInstanceOf[js.Any], scrollWidth = scrollWidth.asInstanceOf[js.Any], setAttribute = js.Any.fromFunction2(setAttribute), setAttributeNS = js.Any.fromFunction3(setAttributeNS), setAttributeNode = js.Any.fromFunction1(setAttributeNode), setAttributeNodeNS = js.Any.fromFunction1(setAttributeNodeNS), setPointerCapture = js.Any.fromFunction1(setPointerCapture), slot = slot.asInstanceOf[js.Any], tagName = tagName.asInstanceOf[js.Any], toggleAttribute = js.Any.fromFunction1(toggleAttribute), webkitMatchesSelector = js.Any.fromFunction1(webkitMatchesSelector))
+      val __obj = js.Dynamic.literal(ATTRIBUTE_NODE = 2, CDATA_SECTION_NODE = 4, COMMENT_NODE = 8, DOCUMENT_FRAGMENT_NODE = 11, DOCUMENT_NODE = 9, DOCUMENT_POSITION_CONTAINED_BY = 0x10, DOCUMENT_POSITION_CONTAINS = 0x08, DOCUMENT_POSITION_DISCONNECTED = 0x01, DOCUMENT_POSITION_FOLLOWING = 0x04, DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC = 0x20, DOCUMENT_POSITION_PRECEDING = 0x02, DOCUMENT_TYPE_NODE = 10, ELEMENT_NODE = 1, ENTITY_NODE = 6, ENTITY_REFERENCE_NODE = 5, NOTATION_NODE = 12, PROCESSING_INSTRUCTION_NODE = 7, TEXT_NODE = 3, addEventListener = js.Any.fromFunction2(addEventListener), after = js.Any.fromFunction1(after), animate = js.Any.fromFunction0(animate), append = js.Any.fromFunction1(append), appendChild = js.Any.fromFunction1(appendChild), attachShadow = js.Any.fromFunction1(attachShadow), attributes = attributes.asInstanceOf[js.Any], baseURI = baseURI.asInstanceOf[js.Any], before = js.Any.fromFunction1(before), checkVisibility = js.Any.fromFunction0(checkVisibility), childElementCount = childElementCount.asInstanceOf[js.Any], childNodes = childNodes.asInstanceOf[js.Any], children = children.asInstanceOf[js.Any], classList = classList.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], clientHeight = clientHeight.asInstanceOf[js.Any], clientLeft = clientLeft.asInstanceOf[js.Any], clientTop = clientTop.asInstanceOf[js.Any], clientWidth = clientWidth.asInstanceOf[js.Any], cloneNode = js.Any.fromFunction0(cloneNode), closest = js.Any.fromFunction1(closest), compareDocumentPosition = js.Any.fromFunction1(compareDocumentPosition), contains = js.Any.fromFunction0(contains), dispatchEvent = js.Any.fromFunction1(dispatchEvent), getAnimations = js.Any.fromFunction0(getAnimations), getAttribute = js.Any.fromFunction1(getAttribute), getAttributeNS = js.Any.fromFunction2(getAttributeNS), getAttributeNames = js.Any.fromFunction0(getAttributeNames), getAttributeNode = js.Any.fromFunction1(getAttributeNode), getAttributeNodeNS = js.Any.fromFunction2(getAttributeNodeNS), getBoundingClientRect = js.Any.fromFunction0(getBoundingClientRect), getClientRects = js.Any.fromFunction0(getClientRects), getElementsByClassName = js.Any.fromFunction1(getElementsByClassName), getElementsByTagName = js.Any.fromFunction1(getElementsByTagName), getElementsByTagNameNS = js.Any.fromFunction2(getElementsByTagNameNS), getRootNode = js.Any.fromFunction0(getRootNode), hasAttribute = js.Any.fromFunction1(hasAttribute), hasAttributeNS = js.Any.fromFunction2(hasAttributeNS), hasAttributes = js.Any.fromFunction0(hasAttributes), hasChildNodes = js.Any.fromFunction0(hasChildNodes), hasPointerCapture = js.Any.fromFunction1(hasPointerCapture), id = id.asInstanceOf[js.Any], innerHTML = innerHTML.asInstanceOf[js.Any], insertAdjacentElement = js.Any.fromFunction2(insertAdjacentElement), insertAdjacentHTML = js.Any.fromFunction2(insertAdjacentHTML), insertAdjacentText = js.Any.fromFunction2(insertAdjacentText), insertBefore = js.Any.fromFunction1(insertBefore), isConnected = isConnected.asInstanceOf[js.Any], isDefaultNamespace = js.Any.fromFunction0(isDefaultNamespace), isEqualNode = js.Any.fromFunction0(isEqualNode), isSameNode = js.Any.fromFunction0(isSameNode), localName = localName.asInstanceOf[js.Any], lookupNamespaceURI = js.Any.fromFunction0(lookupNamespaceURI), lookupPrefix = js.Any.fromFunction0(lookupPrefix), matches = js.Any.fromFunction1(matches), nodeName = nodeName.asInstanceOf[js.Any], nodeType = nodeType.asInstanceOf[js.Any], normalize = js.Any.fromFunction0(normalize), outerHTML = outerHTML.asInstanceOf[js.Any], ownerDocument = ownerDocument.asInstanceOf[js.Any], part = part.asInstanceOf[js.Any], prepend = js.Any.fromFunction1(prepend), querySelector = js.Any.fromFunction1(querySelector), querySelectorAll = js.Any.fromFunction1(querySelectorAll), releasePointerCapture = js.Any.fromFunction1(releasePointerCapture), remove = js.Any.fromFunction0(remove), removeAttribute = js.Any.fromFunction1(removeAttribute), removeAttributeNS = js.Any.fromFunction2(removeAttributeNS), removeAttributeNode = js.Any.fromFunction1(removeAttributeNode), removeChild = js.Any.fromFunction1(removeChild), removeEventListener = js.Any.fromFunction2(removeEventListener), replaceChild = js.Any.fromFunction2(replaceChild), replaceChildren = js.Any.fromFunction1(replaceChildren), replaceWith = js.Any.fromFunction1(replaceWith), requestFullscreen = js.Any.fromFunction0(requestFullscreen), requestPointerLock = js.Any.fromFunction0(requestPointerLock), scroll = js.Any.fromFunction0(scroll), scrollBy = js.Any.fromFunction0(scrollBy), scrollHeight = scrollHeight.asInstanceOf[js.Any], scrollIntoView = js.Any.fromFunction0(scrollIntoView), scrollLeft = scrollLeft.asInstanceOf[js.Any], scrollTo = js.Any.fromFunction0(scrollTo), scrollTop = scrollTop.asInstanceOf[js.Any], scrollWidth = scrollWidth.asInstanceOf[js.Any], setAttribute = js.Any.fromFunction2(setAttribute), setAttributeNS = js.Any.fromFunction3(setAttributeNS), setAttributeNode = js.Any.fromFunction1(setAttributeNode), setAttributeNodeNS = js.Any.fromFunction1(setAttributeNodeNS), setPointerCapture = js.Any.fromFunction1(setPointerCapture), slot = slot.asInstanceOf[js.Any], tagName = tagName.asInstanceOf[js.Any], toggleAttribute = js.Any.fromFunction1(toggleAttribute), webkitMatchesSelector = js.Any.fromFunction1(webkitMatchesSelector))
       __obj.asInstanceOf[P5Element]
     }
     
     @scala.inline
     implicit open class MutableBuilder[Self <: P5Element] (val x: Self) extends AnyVal {
       
-      inline def setATTRIBUTE_NODE(value: Double): Self = StObject.set(x, "ATTRIBUTE_NODE", value.asInstanceOf[js.Any])
+      inline def setATTRIBUTE_NODE(value: `2`): Self = StObject.set(x, "ATTRIBUTE_NODE", value.asInstanceOf[js.Any])
       
       inline def setAddEventListener(value: (fullscreenchange, /* listener */ js.ThisFunction1[P5Element, /* ev */ Event, Any]) => Unit): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
       
@@ -999,12 +1000,6 @@ object libMod {
       inline def setAriaColIndex(value: String): Self = StObject.set(x, "ariaColIndex", value.asInstanceOf[js.Any])
       
       inline def setAriaColIndexNull: Self = StObject.set(x, "ariaColIndex", null)
-      
-      inline def setAriaColIndexText(value: String): Self = StObject.set(x, "ariaColIndexText", value.asInstanceOf[js.Any])
-      
-      inline def setAriaColIndexTextNull: Self = StObject.set(x, "ariaColIndexText", null)
-      
-      inline def setAriaColIndexTextUndefined: Self = StObject.set(x, "ariaColIndexText", js.undefined)
       
       inline def setAriaColIndexUndefined: Self = StObject.set(x, "ariaColIndex", js.undefined)
       
@@ -1144,12 +1139,6 @@ object libMod {
       
       inline def setAriaRowIndexNull: Self = StObject.set(x, "ariaRowIndex", null)
       
-      inline def setAriaRowIndexText(value: String): Self = StObject.set(x, "ariaRowIndexText", value.asInstanceOf[js.Any])
-      
-      inline def setAriaRowIndexTextNull: Self = StObject.set(x, "ariaRowIndexText", null)
-      
-      inline def setAriaRowIndexTextUndefined: Self = StObject.set(x, "ariaRowIndexText", js.undefined)
-      
       inline def setAriaRowIndexUndefined: Self = StObject.set(x, "ariaRowIndex", js.undefined)
       
       inline def setAriaRowSpan(value: String): Self = StObject.set(x, "ariaRowSpan", value.asInstanceOf[js.Any])
@@ -1214,9 +1203,11 @@ object libMod {
       
       inline def setBefore(value: /* repeated */ typings.std.Node | String => Unit): Self = StObject.set(x, "before", js.Any.fromFunction1(value))
       
-      inline def setCDATA_SECTION_NODE(value: Double): Self = StObject.set(x, "CDATA_SECTION_NODE", value.asInstanceOf[js.Any])
+      inline def setCDATA_SECTION_NODE(value: `4`): Self = StObject.set(x, "CDATA_SECTION_NODE", value.asInstanceOf[js.Any])
       
-      inline def setCOMMENT_NODE(value: Double): Self = StObject.set(x, "COMMENT_NODE", value.asInstanceOf[js.Any])
+      inline def setCOMMENT_NODE(value: `8`): Self = StObject.set(x, "COMMENT_NODE", value.asInstanceOf[js.Any])
+      
+      inline def setCheckVisibility(value: () => Boolean): Self = StObject.set(x, "checkVisibility", js.Any.fromFunction0(value))
       
       inline def setChildElementCount(value: Double): Self = StObject.set(x, "childElementCount", value.asInstanceOf[js.Any])
       
@@ -1244,31 +1235,31 @@ object libMod {
       
       inline def setContains(value: () => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction0(value))
       
-      inline def setDOCUMENT_FRAGMENT_NODE(value: Double): Self = StObject.set(x, "DOCUMENT_FRAGMENT_NODE", value.asInstanceOf[js.Any])
+      inline def setDOCUMENT_FRAGMENT_NODE(value: `11`): Self = StObject.set(x, "DOCUMENT_FRAGMENT_NODE", value.asInstanceOf[js.Any])
       
-      inline def setDOCUMENT_NODE(value: Double): Self = StObject.set(x, "DOCUMENT_NODE", value.asInstanceOf[js.Any])
+      inline def setDOCUMENT_NODE(value: `9`): Self = StObject.set(x, "DOCUMENT_NODE", value.asInstanceOf[js.Any])
       
-      inline def setDOCUMENT_POSITION_CONTAINED_BY(value: Double): Self = StObject.set(x, "DOCUMENT_POSITION_CONTAINED_BY", value.asInstanceOf[js.Any])
+      inline def setDOCUMENT_POSITION_CONTAINED_BY(value: `0x10`): Self = StObject.set(x, "DOCUMENT_POSITION_CONTAINED_BY", value.asInstanceOf[js.Any])
       
-      inline def setDOCUMENT_POSITION_CONTAINS(value: Double): Self = StObject.set(x, "DOCUMENT_POSITION_CONTAINS", value.asInstanceOf[js.Any])
+      inline def setDOCUMENT_POSITION_CONTAINS(value: `0x08`): Self = StObject.set(x, "DOCUMENT_POSITION_CONTAINS", value.asInstanceOf[js.Any])
       
-      inline def setDOCUMENT_POSITION_DISCONNECTED(value: Double): Self = StObject.set(x, "DOCUMENT_POSITION_DISCONNECTED", value.asInstanceOf[js.Any])
+      inline def setDOCUMENT_POSITION_DISCONNECTED(value: `0x01`): Self = StObject.set(x, "DOCUMENT_POSITION_DISCONNECTED", value.asInstanceOf[js.Any])
       
-      inline def setDOCUMENT_POSITION_FOLLOWING(value: Double): Self = StObject.set(x, "DOCUMENT_POSITION_FOLLOWING", value.asInstanceOf[js.Any])
+      inline def setDOCUMENT_POSITION_FOLLOWING(value: `0x04`): Self = StObject.set(x, "DOCUMENT_POSITION_FOLLOWING", value.asInstanceOf[js.Any])
       
-      inline def setDOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC(value: Double): Self = StObject.set(x, "DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC", value.asInstanceOf[js.Any])
+      inline def setDOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC(value: `0x20`): Self = StObject.set(x, "DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC", value.asInstanceOf[js.Any])
       
-      inline def setDOCUMENT_POSITION_PRECEDING(value: Double): Self = StObject.set(x, "DOCUMENT_POSITION_PRECEDING", value.asInstanceOf[js.Any])
+      inline def setDOCUMENT_POSITION_PRECEDING(value: `0x02`): Self = StObject.set(x, "DOCUMENT_POSITION_PRECEDING", value.asInstanceOf[js.Any])
       
-      inline def setDOCUMENT_TYPE_NODE(value: Double): Self = StObject.set(x, "DOCUMENT_TYPE_NODE", value.asInstanceOf[js.Any])
+      inline def setDOCUMENT_TYPE_NODE(value: `10`): Self = StObject.set(x, "DOCUMENT_TYPE_NODE", value.asInstanceOf[js.Any])
       
       inline def setDispatchEvent(value: /* event */ Event => Boolean): Self = StObject.set(x, "dispatchEvent", js.Any.fromFunction1(value))
       
-      inline def setELEMENT_NODE(value: Double): Self = StObject.set(x, "ELEMENT_NODE", value.asInstanceOf[js.Any])
+      inline def setELEMENT_NODE(value: `1`): Self = StObject.set(x, "ELEMENT_NODE", value.asInstanceOf[js.Any])
       
-      inline def setENTITY_NODE(value: Double): Self = StObject.set(x, "ENTITY_NODE", value.asInstanceOf[js.Any])
+      inline def setENTITY_NODE(value: `6`): Self = StObject.set(x, "ENTITY_NODE", value.asInstanceOf[js.Any])
       
-      inline def setENTITY_REFERENCE_NODE(value: Double): Self = StObject.set(x, "ENTITY_REFERENCE_NODE", value.asInstanceOf[js.Any])
+      inline def setENTITY_REFERENCE_NODE(value: `5`): Self = StObject.set(x, "ENTITY_REFERENCE_NODE", value.asInstanceOf[js.Any])
       
       inline def setFirstChild(value: ChildNode): Self = StObject.set(x, "firstChild", value.asInstanceOf[js.Any])
       
@@ -1360,7 +1351,7 @@ object libMod {
       
       inline def setMatches(value: /* selectors */ String => Boolean): Self = StObject.set(x, "matches", js.Any.fromFunction1(value))
       
-      inline def setNOTATION_NODE(value: Double): Self = StObject.set(x, "NOTATION_NODE", value.asInstanceOf[js.Any])
+      inline def setNOTATION_NODE(value: `12`): Self = StObject.set(x, "NOTATION_NODE", value.asInstanceOf[js.Any])
       
       inline def setNamespaceURI(value: String): Self = StObject.set(x, "namespaceURI", value.asInstanceOf[js.Any])
       
@@ -1408,7 +1399,7 @@ object libMod {
       
       inline def setOwnerDocument(value: Document): Self = StObject.set(x, "ownerDocument", value.asInstanceOf[js.Any])
       
-      inline def setPROCESSING_INSTRUCTION_NODE(value: Double): Self = StObject.set(x, "PROCESSING_INSTRUCTION_NODE", value.asInstanceOf[js.Any])
+      inline def setPROCESSING_INSTRUCTION_NODE(value: `7`): Self = StObject.set(x, "PROCESSING_INSTRUCTION_NODE", value.asInstanceOf[js.Any])
       
       inline def setParentElement(value: HTMLElement): Self = StObject.set(x, "parentElement", value.asInstanceOf[js.Any])
       
@@ -1506,7 +1497,7 @@ object libMod {
       
       inline def setSlot(value: String): Self = StObject.set(x, "slot", value.asInstanceOf[js.Any])
       
-      inline def setTEXT_NODE(value: Double): Self = StObject.set(x, "TEXT_NODE", value.asInstanceOf[js.Any])
+      inline def setTEXT_NODE(value: `3`): Self = StObject.set(x, "TEXT_NODE", value.asInstanceOf[js.Any])
       
       inline def setTagName(value: String): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
       

@@ -112,7 +112,7 @@ object resourcesOrganizationMod {
   @js.native
   trait Organization extends StObject {
     
-    def get(): js.Promise[js.Array[OnfleetOrganization]] = js.native
+    def get(): js.Promise[OnfleetOrganization] = js.native
     def get(id: String): js.Promise[OnfleetOrganization | Delegatee] = js.native
     
     def insertTask(id: String, obj: Tasks): js.Promise[Any] = js.native

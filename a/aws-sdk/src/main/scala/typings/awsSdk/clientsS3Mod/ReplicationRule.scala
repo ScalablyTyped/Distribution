@@ -14,7 +14,7 @@ trait ReplicationRule extends StObject {
   var Destination: typings.awsSdk.clientsS3Mod.Destination
   
   /**
-    * 
+    * Optional configuration to replicate existing source bucket objects. For more information, see Replicating Existing Objects in the Amazon S3 User Guide. 
     */
   var ExistingObjectReplication: js.UndefOr[typings.awsSdk.clientsS3Mod.ExistingObjectReplication] = js.undefined
   

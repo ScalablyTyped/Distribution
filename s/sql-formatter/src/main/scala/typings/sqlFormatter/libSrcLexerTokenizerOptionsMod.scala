@@ -13,6 +13,30 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object libSrcLexerTokenizerOptionsMod {
   
+  trait CustomParameter extends StObject {
+    
+    var key: js.UndefOr[js.Function1[/* text */ String, String]] = js.undefined
+    
+    var regex: String
+  }
+  object CustomParameter {
+    
+    inline def apply(regex: String): CustomParameter = {
+      val __obj = js.Dynamic.literal(regex = regex.asInstanceOf[js.Any])
+      __obj.asInstanceOf[CustomParameter]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomParameter] (val x: Self) extends AnyVal {
+      
+      inline def setKey(value: /* text */ String => String): Self = StObject.set(x, "key", js.Any.fromFunction1(value))
+      
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      
+      inline def setRegex(value: String): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
+    }
+  }
+  
   trait IdentChars extends StObject {
     
     var allowFirstCharNumber: js.UndefOr[Boolean] = js.undefined
@@ -53,6 +77,8 @@ object libSrcLexerTokenizerOptionsMod {
   
   trait ParamTypes extends StObject {
     
+    var custom: js.UndefOr[js.Array[CustomParameter]] = js.undefined
+    
     var named: js.UndefOr[js.Array[Colon | `@` | $]] = js.undefined
     
     var numbered: js.UndefOr[js.Array[Questionmark | Colon | $]] = js.undefined
@@ -70,6 +96,12 @@ object libSrcLexerTokenizerOptionsMod {
     
     @scala.inline
     implicit open class MutableBuilder[Self <: ParamTypes] (val x: Self) extends AnyVal {
+      
+      inline def setCustom(value: js.Array[CustomParameter]): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+      
+      inline def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
+      
+      inline def setCustomVarargs(value: CustomParameter*): Self = StObject.set(x, "custom", js.Array(value*))
       
       inline def setNamed(value: js.Array[Colon | `@` | $]): Self = StObject.set(x, "named", value.asInstanceOf[js.Any])
       

@@ -42,6 +42,8 @@ trait IClient extends EventEmitter {
   
   var readyForQuery: Boolean = js.native
   
+  def release(): Unit = js.native
+  
   var secretKey: Double = js.native
   
   //////////////////////////////////////////////////////////////

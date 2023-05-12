@@ -18,6 +18,7 @@ object infernoVnodeFlagsInts {
   sealed trait `0`
     extends StObject
        with ChildFlags
+       with VNodeFlags
   inline def `0`: `0` = 0.asInstanceOf[`0`]
   
   @js.native

@@ -1,7 +1,8 @@
 package typings.undici
 
-import typings.undici.typesAgentMod.DispatchOptions
-import typings.undici.typesDispatcherMod.DispatchHandlers
+import typings.undici.typesAgentMod.Agent.DispatchOptions
+import typings.undici.typesDispatcherMod.Dispatcher.DispatchHandlers
+import typings.undici.typesMockAgentMod.MockAgent.Options
 import typings.undici.typesMockInterceptorMod.Interceptable
 import typings.undici.typesMockInterceptorMod.MockInterceptor.MockDispatch
 import typings.undici.typesMockInterceptorMod.MockInterceptor.MockDispatchData
@@ -12,16 +13,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object typesMockAgentMod {
   
   /** A mocked Agent class that implements the Agent API. It allows one to intercept HTTP requests made through undici and return mocked responses instead. */
-  @JSImport("undici/types/mock-agent", JSImport.Namespace)
+  @JSImport("undici/types/mock-agent", JSImport.Default)
   @js.native
-  open class ^[TMockAgentOptions /* <: Options */] () extends MockAgent[TMockAgentOptions] {
+  open class default[TMockAgentOptions /* <: Options */] () extends MockAgent[TMockAgentOptions] {
     def this(options: Options) = this()
   }
   
   /** A mocked Agent class that implements the Agent API. It allows one to intercept HTTP requests made through undici and return mocked responses instead. */
   @js.native
   trait MockAgent[TMockAgentOptions /* <: Options */]
-    extends typings.undici.typesDispatcherMod.^ {
+    extends typings.undici.typesDispatcherMod.default {
     
     /** Enables mocking in a MockAgent instance. When instantiated, a MockAgent is automatically activated. Therefore, this method is only effective after `MockAgent.deactivate` has been called. */
     def activate(): Unit = js.native
@@ -51,27 +52,29 @@ object typesMockAgentMod {
     
     def pendingInterceptors(): js.Array[PendingInterceptor] = js.native
   }
-  
-  trait Options
-    extends StObject
-       with typings.undici.typesAgentMod.Options {
+  object MockAgent {
     
-    /** A custom agent to be encapsulated by the MockAgent. */
-    var agent: js.UndefOr[typings.undici.typesAgentMod.^] = js.undefined
-  }
-  object Options {
-    
-    inline def apply(): Options = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Options]
+    trait Options
+      extends StObject
+         with typings.undici.typesAgentMod.Agent.Options {
+      
+      /** A custom agent to be encapsulated by the MockAgent. */
+      var agent: js.UndefOr[typings.undici.typesAgentMod.default] = js.undefined
     }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    object Options {
       
-      inline def setAgent(value: typings.undici.typesAgentMod.^): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
+      inline def apply(): Options = {
+        val __obj = js.Dynamic.literal()
+        __obj.asInstanceOf[Options]
+      }
       
-      inline def setAgentUndefined: Self = StObject.set(x, "agent", js.undefined)
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+        
+        inline def setAgent(value: typings.undici.typesAgentMod.default): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
+        
+        inline def setAgentUndefined: Self = StObject.set(x, "agent", js.undefined)
+      }
     }
   }
   

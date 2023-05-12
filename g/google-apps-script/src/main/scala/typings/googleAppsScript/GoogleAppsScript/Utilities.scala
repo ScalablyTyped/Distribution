@@ -197,6 +197,8 @@ object Utilities {
     def parseCsv(csv: String): js.Array[js.Array[String]] = js.native
     def parseCsv(csv: String, delimiter: Char): js.Array[js.Array[String]] = js.native
     
+    def parseDate(date: String, timeZone: String, format: String): js.Date = js.native
+    
     def sleep(milliseconds: Integer): Unit = js.native
     
     def ungzip(blob: BlobSource): Blob = js.native

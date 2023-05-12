@@ -1,5 +1,6 @@
 package typings.hapiHawk
 
+import typings.hapiHapi.libTypesServerServerMod.ServerApplicationState
 import typings.hapiHapi.mod.Server_
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -18,7 +19,7 @@ object libPluginMod {
     @js.native
     val pkg: Record[String, Any] = js.native
     
-    inline def register(server: Server_): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register")(server.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def register(server: Server_[ServerApplicationState]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register")(server.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     @JSImport("@hapi/hawk/lib/plugin", "plugin.requirements")
     @js.native

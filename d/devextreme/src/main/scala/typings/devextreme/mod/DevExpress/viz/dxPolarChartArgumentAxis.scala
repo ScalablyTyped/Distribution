@@ -3,6 +3,7 @@ package typings.devextreme.mod.DevExpress.viz
 import typings.devextreme.mod.DevExpress.common.charts.ArgumentAxisHoverMode
 import typings.devextreme.mod.DevExpress.common.charts.AxisScaleType
 import typings.devextreme.mod.DevExpress.common.charts.ChartsDataType
+import typings.devextreme.mod.DevExpress.common.charts.TimeIntervalConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -65,7 +66,7 @@ trait dxPolarChartArgumentAxis
   /**
     * Specifies the interval between minor ticks.
     */
-  var minorTickInterval: js.UndefOr[VizTimeInterval] = js.undefined
+  var minorTickInterval: js.UndefOr[TimeIntervalConfig] = js.undefined
   
   /**
     * Specifies the properties of the minor ticks.
@@ -96,7 +97,7 @@ trait dxPolarChartArgumentAxis
   /**
     * Specifies an interval between axis ticks/grid lines.
     */
-  var tickInterval: js.UndefOr[VizTimeInterval] = js.undefined
+  var tickInterval: js.UndefOr[TimeIntervalConfig] = js.undefined
   
   /**
     * An object defining the configuration properties for axis ticks.
@@ -165,7 +166,7 @@ object dxPolarChartArgumentAxis {
     
     inline def setMinorTickCountUndefined: Self = StObject.set(x, "minorTickCount", js.undefined)
     
-    inline def setMinorTickInterval(value: VizTimeInterval): Self = StObject.set(x, "minorTickInterval", value.asInstanceOf[js.Any])
+    inline def setMinorTickInterval(value: TimeIntervalConfig): Self = StObject.set(x, "minorTickInterval", value.asInstanceOf[js.Any])
     
     inline def setMinorTickIntervalUndefined: Self = StObject.set(x, "minorTickInterval", js.undefined)
     
@@ -191,7 +192,7 @@ object dxPolarChartArgumentAxis {
     
     inline def setTick(value: dxPolarChartArgumentAxisTick): Self = StObject.set(x, "tick", value.asInstanceOf[js.Any])
     
-    inline def setTickInterval(value: VizTimeInterval): Self = StObject.set(x, "tickInterval", value.asInstanceOf[js.Any])
+    inline def setTickInterval(value: TimeIntervalConfig): Self = StObject.set(x, "tickInterval", value.asInstanceOf[js.Any])
     
     inline def setTickIntervalUndefined: Self = StObject.set(x, "tickInterval", js.undefined)
     

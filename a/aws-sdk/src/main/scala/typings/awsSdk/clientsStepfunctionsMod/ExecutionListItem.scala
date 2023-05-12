@@ -12,6 +12,16 @@ trait ExecutionListItem extends StObject {
   var executionArn: Arn
   
   /**
+    * The total number of items processed in a child workflow execution. This field is returned only if mapRunArn was specified in the ListExecutions API action. If stateMachineArn was specified in ListExecutions, the itemCount field isn't returned.
+    */
+  var itemCount: js.UndefOr[UnsignedInteger] = js.undefined
+  
+  /**
+    * The Amazon Resource Name (ARN) of a Map Run. This field is returned only if mapRunArn was specified in the ListExecutions API action. If stateMachineArn was specified in ListExecutions, the mapRunArn isn't returned.
+    */
+  var mapRunArn: js.UndefOr[LongArn] = js.undefined
+  
+  /**
     * The name of the execution. A name must not contain:   white space   brackets &lt; &gt; { } [ ]    wildcard characters ? *    special characters " # % \ ^ | ~ ` $ &amp; , ; : /    control characters (U+0000-001F, U+007F-009F)   To enable logging with CloudWatch Logs, the name should only contain 0-9, A-Z, a-z, - and _.
     */
   var name: Name
@@ -47,6 +57,14 @@ object ExecutionListItem {
   implicit open class MutableBuilder[Self <: ExecutionListItem] (val x: Self) extends AnyVal {
     
     inline def setExecutionArn(value: Arn): Self = StObject.set(x, "executionArn", value.asInstanceOf[js.Any])
+    
+    inline def setItemCount(value: UnsignedInteger): Self = StObject.set(x, "itemCount", value.asInstanceOf[js.Any])
+    
+    inline def setItemCountUndefined: Self = StObject.set(x, "itemCount", js.undefined)
+    
+    inline def setMapRunArn(value: LongArn): Self = StObject.set(x, "mapRunArn", value.asInstanceOf[js.Any])
+    
+    inline def setMapRunArnUndefined: Self = StObject.set(x, "mapRunArn", js.undefined)
     
     inline def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

@@ -1,7 +1,7 @@
 
 # Scala.js typings for aws-sdk__client-sso-oidc
 
-Typings are for version 3.211.0
+Typings are for version 3.332.0
 
 ## Library description:
 AWS SDK for JavaScript Sso Oidc Client for Node.js, Browser and React Native

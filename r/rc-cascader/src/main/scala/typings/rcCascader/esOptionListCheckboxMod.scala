@@ -1,9 +1,9 @@
 package typings.rcCascader
 
+import typings.react.mod.JSX.Element
 import typings.react.mod.MouseEvent
 import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
-import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,6 +20,8 @@ object esOptionListCheckboxMod {
     
     var checked: js.UndefOr[Boolean] = js.undefined
     
+    var disableCheckbox: Boolean
+    
     var disabled: js.UndefOr[Boolean] = js.undefined
     
     var halfChecked: js.UndefOr[Boolean] = js.undefined
@@ -30,8 +32,8 @@ object esOptionListCheckboxMod {
   }
   object CheckboxProps {
     
-    inline def apply(prefixCls: String): CheckboxProps = {
-      val __obj = js.Dynamic.literal(prefixCls = prefixCls.asInstanceOf[js.Any])
+    inline def apply(disableCheckbox: Boolean, prefixCls: String): CheckboxProps = {
+      val __obj = js.Dynamic.literal(disableCheckbox = disableCheckbox.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any])
       __obj.asInstanceOf[CheckboxProps]
     }
     
@@ -41,6 +43,8 @@ object esOptionListCheckboxMod {
       inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
       
       inline def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
+      
+      inline def setDisableCheckbox(value: Boolean): Self = StObject.set(x, "disableCheckbox", value.asInstanceOf[js.Any])
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       

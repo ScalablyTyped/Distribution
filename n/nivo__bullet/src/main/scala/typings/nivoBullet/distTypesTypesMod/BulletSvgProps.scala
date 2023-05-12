@@ -17,13 +17,14 @@ import typings.nivoCore.mod.Theme
 import typings.react.mod.ComponentType
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
+import typings.reactSpringCore.mod.SpringConfig
 import typings.std.SVGLineElement
 import typings.std.SVGRectElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Partial<@nivo/bullet.@nivo/bullet/dist/types/types.CommonBulletProps> & @nivo/core.@nivo/core.Dimensions & @nivo/bullet.@nivo/bullet/dist/types/types.BulletHandlers & @nivo/core.@nivo/core.ModernMotionProps & {  data :std.Array<@nivo/bullet.@nivo/bullet/dist/types/types.Datum>} */
+/* Inlined std.Partial<@nivo/bullet.@nivo/bullet/dist/types/types.CommonBulletProps> & @nivo/core.@nivo/core.Dimensions & @nivo/bullet.@nivo/bullet/dist/types/types.BulletHandlers & @nivo/core.@nivo/core.MotionProps & {  data :std.Array<@nivo/bullet.@nivo/bullet/dist/types/types.Datum>} */
 trait BulletSvgProps extends StObject {
   
   var animate: js.UndefOr[Boolean] = js.undefined
@@ -60,9 +61,7 @@ trait BulletSvgProps extends StObject {
   
   var minValue: js.UndefOr[auto | Double] = js.undefined
   
-  var motionConfig: js.UndefOr[
-    String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringConfig */ Any)
-  ] = js.undefined
+  var motionConfig: js.UndefOr[String | SpringConfig] = js.undefined
   
   var onMarkerClick: js.UndefOr[MouseEventHandler[WithDatumIdComputedMarker, SVGLineElement]] = js.undefined
   
@@ -182,9 +181,7 @@ object BulletSvgProps {
     
     inline def setMinValueUndefined: Self = StObject.set(x, "minValue", js.undefined)
     
-    inline def setMotionConfig(
-      value: String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringConfig */ Any)
-    ): Self = StObject.set(x, "motionConfig", value.asInstanceOf[js.Any])
+    inline def setMotionConfig(value: String | SpringConfig): Self = StObject.set(x, "motionConfig", value.asInstanceOf[js.Any])
     
     inline def setMotionConfigUndefined: Self = StObject.set(x, "motionConfig", js.undefined)
     

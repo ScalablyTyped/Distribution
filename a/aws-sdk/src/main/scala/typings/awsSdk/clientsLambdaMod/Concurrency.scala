@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Concurrency extends StObject {
   
   /**
-    * The number of concurrent executions that are reserved for this function. For more information, see Managing Concurrency.
+    * The number of concurrent executions that are reserved for this function. For more information, see Managing Lambda reserved concurrency.
     */
   var ReservedConcurrentExecutions: js.UndefOr[typings.awsSdk.clientsLambdaMod.ReservedConcurrentExecutions] = js.undefined
 }

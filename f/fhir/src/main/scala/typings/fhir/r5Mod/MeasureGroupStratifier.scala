@@ -10,6 +10,8 @@ trait MeasureGroupStratifier
   
   var _description: js.UndefOr[Element] = js.undefined
   
+  var _linkId: js.UndefOr[Element] = js.undefined
+  
   /**
     * Indicates a meaning for the stratifier. This can be as simple as a unique identifier, or it can establish meaning in a broader context by drawing from a terminology, allowing stratifiers to be correlated across measures.
     */
@@ -29,6 +31,17 @@ trait MeasureGroupStratifier
     * The human readable description of this stratifier criteria.
     */
   var description: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Note that this approach can only be used for measures where the basis is of the same type as the populations (e.g. a Patient-based measure, rather than an Encounter-based measure). In addition, the referenced Group SHALL be a definitional (as opposed to an actual) group.
+    */
+  var groupDefinition: js.UndefOr[Reference] = js.undefined
+  
+  /**
+    * This ''can'' be a meaningful identifier (e.g. a LOINC code) but is not intended to have any meaning.  GUIDs or sequential numbers are appropriate here.
+    * LinkIds can have whitespaces and slashes by design. Tooling should not rely on linkIds being valid XHTML element IDs, and should not directly embed them as such
+    */
+  var linkId: js.UndefOr[String] = js.undefined
 }
 object MeasureGroupStratifier {
   
@@ -58,8 +71,20 @@ object MeasureGroupStratifier {
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
+    inline def setGroupDefinition(value: Reference): Self = StObject.set(x, "groupDefinition", value.asInstanceOf[js.Any])
+    
+    inline def setGroupDefinitionUndefined: Self = StObject.set(x, "groupDefinition", js.undefined)
+    
+    inline def setLinkId(value: String): Self = StObject.set(x, "linkId", value.asInstanceOf[js.Any])
+    
+    inline def setLinkIdUndefined: Self = StObject.set(x, "linkId", js.undefined)
+    
     inline def set_description(value: Element): Self = StObject.set(x, "_description", value.asInstanceOf[js.Any])
     
     inline def set_descriptionUndefined: Self = StObject.set(x, "_description", js.undefined)
+    
+    inline def set_linkId(value: Element): Self = StObject.set(x, "_linkId", value.asInstanceOf[js.Any])
+    
+    inline def set_linkIdUndefined: Self = StObject.set(x, "_linkId", js.undefined)
   }
 }

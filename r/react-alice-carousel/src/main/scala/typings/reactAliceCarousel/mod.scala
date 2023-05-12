@@ -1,8 +1,12 @@
 package typings.reactAliceCarousel
 
+import typings.react.mod.MouseEvent
+import typings.react.mod.NativeMouseEvent
 import typings.react.mod.PureComponent
+import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
 import typings.reactAliceCarousel.anon.ActiveIndex
+import typings.reactAliceCarousel.anon.Eventcodestring
 import typings.reactAliceCarousel.anon.ReadonlyProps
 import typings.reactAliceCarousel.anon.ReadonlyState
 import typings.reactAliceCarousel.libTypesMod.EventObject
@@ -12,6 +16,8 @@ import typings.reactAliceCarousel.libTypesMod.SlideTo
 import typings.reactAliceCarousel.libTypesMod.State
 import typings.reactAliceCarousel.reactAliceCarouselBooleans.`false`
 import typings.std.Event
+import typings.std.HTMLDivElement
+import typings.std.HTMLUListElement
 import typings.vanillaSwipe.libTypesMod.EventData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -22,7 +28,7 @@ object mod {
   @JSImport("react-alice-carousel", JSImport.Default)
   @js.native
   open class default protected () extends AliceCarousel {
-    def this(props: Any) = this()
+    def this(props: Props) = this()
   }
   /* static members */
   object default {
@@ -180,6 +186,8 @@ object mod {
     
     def _addEventListeners(): Unit = js.native
     
+    /* private */ var _cancelResizeDebounced: Any = js.native
+    
     def _cancelTimeoutAnimations(): Unit = js.native
     
     def _clearAutoPlayTimeout(): Unit = js.native
@@ -193,9 +201,9 @@ object mod {
     
     def _handleBeforeTouchEnd(position: Double): Unit = js.native
     
-    def _handleDotClick(index: Any): Unit = js.native
+    def _handleDotClick(index: Double): Unit = js.native
     
-    def _handleKeyboardEvents(e: Any): `false` | Unit | js.Promise[Unit] = js.native
+    def _handleKeyboardEvents(e: Eventcodestring): `false` | Unit | js.Promise[Unit] = js.native
     
     def _handleMouseEnter(): Unit = js.native
     
@@ -221,11 +229,11 @@ object mod {
     
     def _handleSlideTo(param0: SlideTo): js.Promise[Unit] = js.native
     
-    def _handleTouchend(e: Any, param1: EventData): Unit = js.native
+    def _handleTouchend(e: Event, param1: EventData): Unit = js.native
     
-    def _handleTouchmove(e: Any, eventData: EventData): Unit = js.native
+    def _handleTouchmove(e: Event, eventData: EventData): Unit = js.native
     
-    def _handleUpdateSlidePosition(activeIndex: Any): js.Promise[Unit] = js.native
+    def _handleUpdateSlidePosition(activeIndex: Double): js.Promise[Unit] = js.native
     
     def _removeEventListeners(): Unit = js.native
     
@@ -239,15 +247,15 @@ object mod {
     
     def _renderSlideInfo(): Element = js.native
     
-    def _renderStageItem(item: Any, i: Double): Element = js.native
+    def _renderStageItem(item: ReactNode, i: Double): Element = js.native
     
     def _setAutoPlayInterval(): Unit = js.native
     
     def _setInitialState(): js.Promise[Unit] = js.native
     
-    def _setRootComponentRef(node: Any): Any = js.native
+    def _setRootComponentRef(node: HTMLDivElement): HTMLDivElement = js.native
     
-    def _setStageComponentRef(node: Any): Any = js.native
+    def _setStageComponentRef(node: HTMLUListElement): HTMLUListElement = js.native
     
     def _setTouchmovePosition(): Unit = js.native
     
@@ -293,9 +301,13 @@ object mod {
     
     /* private */ var slideEndTimeoutId: Any = js.native
     
-    def slideNext(e: Any): Unit = js.native
+    def slideNext(): Unit = js.native
+    def slideNext(e: MouseEvent[typings.std.Element, NativeMouseEvent]): Unit = js.native
+    def slideNext(e: Event): Unit = js.native
     
-    def slidePrev(e: Any): Unit = js.native
+    def slidePrev(): Unit = js.native
+    def slidePrev(e: MouseEvent[typings.std.Element, NativeMouseEvent]): Unit = js.native
+    def slidePrev(e: Event): Unit = js.native
     
     def slideTo(): Unit = js.native
     def slideTo(activeIndex: Double): Unit = js.native

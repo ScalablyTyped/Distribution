@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object mod {
   
   inline def apply(str: String): Expression = ^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any]).asInstanceOf[Expression]
+  inline def apply(str: String, options: JsonataOptions): Expression = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Expression]
   
   @JSImport("jsonata", JSImport.Namespace)
   @js.native
@@ -50,7 +51,7 @@ object mod {
     
     var expressions: js.UndefOr[js.Array[ExprNode]] = js.undefined
     
-    var lhs: js.UndefOr[ExprNode] = js.undefined
+    var lhs: js.UndefOr[js.Array[ExprNode]] = js.undefined
     
     var name: js.UndefOr[String] = js.undefined
     
@@ -91,9 +92,11 @@ object mod {
       
       inline def setExpressionsVarargs(value: ExprNode*): Self = StObject.set(x, "expressions", js.Array(value*))
       
-      inline def setLhs(value: ExprNode): Self = StObject.set(x, "lhs", value.asInstanceOf[js.Any])
+      inline def setLhs(value: js.Array[ExprNode]): Self = StObject.set(x, "lhs", value.asInstanceOf[js.Any])
       
       inline def setLhsUndefined: Self = StObject.set(x, "lhs", js.undefined)
+      
+      inline def setLhsVarargs(value: ExprNode*): Self = StObject.set(x, "lhs", js.Array(value*))
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -138,9 +141,9 @@ object mod {
     
     def ast(): ExprNode = js.native
     
-    def evaluate(input: Any): Any = js.native
+    def evaluate(input: Any): js.Promise[Any] = js.native
     def evaluate(input: Any, bindings: Unit, callback: js.Function2[/* err */ JsonataError, /* resp */ Any, Unit]): Unit = js.native
-    def evaluate(input: Any, bindings: Record[String, Any]): Any = js.native
+    def evaluate(input: Any, bindings: Record[String, Any]): js.Promise[Any] = js.native
     def evaluate(
       input: Any,
       bindings: Record[String, Any],
@@ -202,6 +205,32 @@ object mod {
       inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
       inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait JsonataOptions extends StObject {
+    
+    var RegexEngine: js.UndefOr[js.RegExp] = js.undefined
+    
+    var recover: js.UndefOr[Boolean] = js.undefined
+  }
+  object JsonataOptions {
+    
+    inline def apply(): JsonataOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[JsonataOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JsonataOptions] (val x: Self) extends AnyVal {
+      
+      inline def setRecover(value: Boolean): Self = StObject.set(x, "recover", value.asInstanceOf[js.Any])
+      
+      inline def setRecoverUndefined: Self = StObject.set(x, "recover", js.undefined)
+      
+      inline def setRegexEngine(value: js.RegExp): Self = StObject.set(x, "RegexEngine", value.asInstanceOf[js.Any])
+      
+      inline def setRegexEngineUndefined: Self = StObject.set(x, "RegexEngine", js.undefined)
     }
   }
 }

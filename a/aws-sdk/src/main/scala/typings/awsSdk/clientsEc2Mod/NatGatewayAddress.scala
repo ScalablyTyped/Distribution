@@ -12,6 +12,21 @@ trait NatGatewayAddress extends StObject {
   var AllocationId: js.UndefOr[String] = js.undefined
   
   /**
+    * [Public NAT gateway only] The association ID of the Elastic IP address that's associated with the NAT gateway.
+    */
+  var AssociationId: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The address failure message.
+    */
+  var FailureMessage: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Defines if the IP address is the primary address.
+    */
+  var IsPrimary: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * The ID of the network interface associated with the NAT gateway.
     */
   var NetworkInterfaceId: js.UndefOr[String] = js.undefined
@@ -25,6 +40,11 @@ trait NatGatewayAddress extends StObject {
     * [Public NAT gateway only] The Elastic IP address associated with the NAT gateway.
     */
   var PublicIp: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The address status.
+    */
+  var Status: js.UndefOr[NatGatewayAddressStatus] = js.undefined
 }
 object NatGatewayAddress {
   
@@ -40,6 +60,18 @@ object NatGatewayAddress {
     
     inline def setAllocationIdUndefined: Self = StObject.set(x, "AllocationId", js.undefined)
     
+    inline def setAssociationId(value: String): Self = StObject.set(x, "AssociationId", value.asInstanceOf[js.Any])
+    
+    inline def setAssociationIdUndefined: Self = StObject.set(x, "AssociationId", js.undefined)
+    
+    inline def setFailureMessage(value: String): Self = StObject.set(x, "FailureMessage", value.asInstanceOf[js.Any])
+    
+    inline def setFailureMessageUndefined: Self = StObject.set(x, "FailureMessage", js.undefined)
+    
+    inline def setIsPrimary(value: Boolean): Self = StObject.set(x, "IsPrimary", value.asInstanceOf[js.Any])
+    
+    inline def setIsPrimaryUndefined: Self = StObject.set(x, "IsPrimary", js.undefined)
+    
     inline def setNetworkInterfaceId(value: String): Self = StObject.set(x, "NetworkInterfaceId", value.asInstanceOf[js.Any])
     
     inline def setNetworkInterfaceIdUndefined: Self = StObject.set(x, "NetworkInterfaceId", js.undefined)
@@ -51,5 +83,9 @@ object NatGatewayAddress {
     inline def setPublicIp(value: String): Self = StObject.set(x, "PublicIp", value.asInstanceOf[js.Any])
     
     inline def setPublicIpUndefined: Self = StObject.set(x, "PublicIp", js.undefined)
+    
+    inline def setStatus(value: NatGatewayAddressStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

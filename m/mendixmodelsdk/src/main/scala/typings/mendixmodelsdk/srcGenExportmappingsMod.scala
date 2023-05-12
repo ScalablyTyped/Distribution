@@ -8,6 +8,7 @@ import typings.mendixmodelsdk.srcGenMappingsMod.mappings.ValueMappingElement
 import typings.mendixmodelsdk.srcGenMicroflowsMod.microflows.NullValueOption
 import typings.mendixmodelsdk.srcGenProjectsMod.projects.FolderBase
 import typings.mendixmodelsdk.srcGenProjectsMod.projects.IFolderBase
+import typings.mendixmodelsdk.srcGenRestMod.rest.ImplicitExportMapping
 import typings.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
 import typings.mendixmodelsdk.srcSdkInternalMod.AbstractElement
 import typings.mendixmodelsdk.srcSdkInternalMod.AbstractModel
@@ -129,6 +130,17 @@ object srcGenExportmappingsMod {
         */
       /* static member */
       inline def create(model: IModel): ExportObjectMappingElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[ExportObjectMappingElement]
+      
+      /**
+        * Creates and returns a new ExportObjectMappingElement instance in the SDK and on the server.
+        * The new ExportObjectMappingElement will be automatically stored in the 'mapping' property
+        * of the parent rest.ImplicitExportMapping element passed as argument.
+        *
+        * Warning! Can only be used on models with the following Mendix meta model versions:
+        *  9.23.0 and higher
+        */
+      /* static member */
+      inline def createInImplicitExportMappingUnderMapping(container: ImplicitExportMapping): ExportObjectMappingElement = ^.asInstanceOf[js.Dynamic].applyDynamic("createInImplicitExportMappingUnderMapping")(container.asInstanceOf[js.Any]).asInstanceOf[ExportObjectMappingElement]
       
       /**
         * Creates and returns a new ExportObjectMappingElement instance in the SDK and on the server.

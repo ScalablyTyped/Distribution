@@ -1,6 +1,7 @@
 package typings.gestalt.mod
 
 import typings.gestalt.anon.Duration
+import typings.gestalt.anon.Error
 import typings.gestalt.anon.Fullscreen
 import typings.gestalt.anon.Loaded
 import typings.gestalt.anon.Src
@@ -21,32 +22,40 @@ import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.SyntheticEvent
 import typings.std.Event
+import typings.std.HTMLAnchorElement
 import typings.std.HTMLDivElement
 import typings.std.HTMLVideoElement
-import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait VideoProps extends StObject {
   
-  var accessibilityMaximizeLabel: js.UndefOr[String] = js.undefined
+  var accessibilityHideCaptionsLabel: js.UndefOr[String] = js.undefined
   
-  var accessibilityMinimizeLabel: js.UndefOr[String] = js.undefined
+  var accessibilityMaximizeLabel: String
   
-  var accessibilityMuteLabel: js.UndefOr[String] = js.undefined
+  var accessibilityMinimizeLabel: String
   
-  var accessibilityPauseLabel: js.UndefOr[String] = js.undefined
+  var accessibilityMuteLabel: String
   
-  var accessibilityPlayLabel: js.UndefOr[String] = js.undefined
+  var accessibilityPauseLabel: String
   
-  var accessibilityUnmuteLabel: js.UndefOr[String] = js.undefined
+  var accessibilityPlayLabel: String
+  
+  var accessibilityProgressBarLabel: String
+  
+  var accessibilityShowCaptionsLabel: js.UndefOr[String] = js.undefined
+  
+  var accessibilityUnmuteLabel: String
   
   var aspectRatio: Double
   
+  var autoplay: js.UndefOr[Boolean] = js.undefined
+  
   var backgroundColor: js.UndefOr[black | transparent] = js.undefined
   
-  var captions: String
+  var captions: js.UndefOr[String] = js.undefined
   
   var children: js.UndefOr[Node] = js.undefined
   
@@ -60,41 +69,51 @@ trait VideoProps extends StObject {
   
   var objectFit: js.UndefOr[fill | contain | cover | none | `scale-down`] = js.undefined
   
-  var onDurationChange: js.UndefOr[js.Function1[/* args */ Duration, Unit]] = js.undefined
+  var onControlsPause: js.UndefOr[
+    AbstractEventHandler[SyntheticEvent[HTMLAnchorElement | HTMLDivElement, Event], js.Object]
+  ] = js.undefined
   
-  var onEnded: js.UndefOr[AbstractEventHandler[SyntheticEvent[HTMLVideoElement, Event], js.Object]] = js.undefined
+  var onControlsPlay: js.UndefOr[
+    AbstractEventHandler[SyntheticEvent[HTMLAnchorElement | HTMLDivElement, Event], js.Object]
+  ] = js.undefined
   
-  var onError: js.UndefOr[AbstractEventHandler[SyntheticEvent[HTMLVideoElement, Event], js.Object]] = js.undefined
+  var onDurationChange: js.UndefOr[AbstractEventHandler[SyntheticEvent[HTMLVideoElement, Event], Duration]] = js.undefined
+  
+  var onEnded: js.UndefOr[VideoEventHandlerType] = js.undefined
+  
+  var onError: js.UndefOr[VideoEventHandlerType] = js.undefined
   
   var onFullscreenChange: js.UndefOr[AbstractEventHandler[SyntheticEvent[HTMLVideoElement, Event], Fullscreen]] = js.undefined
   
-  var onLoadStart: js.UndefOr[AbstractEventHandler[SyntheticEvent[HTMLVideoElement, Event], js.Object]] = js.undefined
+  var onLoadStart: js.UndefOr[VideoEventHandlerType] = js.undefined
   
   var onLoadedChange: js.UndefOr[AbstractEventHandler[SyntheticEvent[HTMLVideoElement, Event], Loaded]] = js.undefined
   
   var onPause: js.UndefOr[AbstractEventHandler[SyntheticEvent[HTMLDivElement, Event], js.Object]] = js.undefined
   
-  var onPlay: js.UndefOr[AbstractEventHandler[SyntheticEvent[HTMLDivElement, Event], js.Object]] = js.undefined
+  var onPlay: AbstractEventHandler[SyntheticEvent[HTMLVideoElement, Event], js.Object]
+  
+  def onPlayError(args: Error): Unit
   
   var onPlayheadDown: js.UndefOr[AbstractEventHandler[MouseEvent[HTMLDivElement, NativeMouseEvent], js.Object]] = js.undefined
   
   var onPlayheadUp: js.UndefOr[AbstractEventHandler[MouseEvent[HTMLDivElement, NativeMouseEvent], js.Object]] = js.undefined
   
-  var onPlaying: js.UndefOr[AbstractEventHandler[SyntheticEvent[HTMLVideoElement, Event], js.Object]] = js.undefined
+  var onPlaying: js.UndefOr[VideoEventHandlerType] = js.undefined
   
-  var onReady: js.UndefOr[AbstractEventHandler[SyntheticEvent[HTMLVideoElement, Event], js.Object]] = js.undefined
+  var onReady: js.UndefOr[VideoEventHandlerType] = js.undefined
   
-  var onSeek: js.UndefOr[AbstractEventHandler[SyntheticEvent[HTMLVideoElement, Event], js.Object]] = js.undefined
+  var onSeek: js.UndefOr[VideoEventHandlerType] = js.undefined
   
-  var onSeeking: js.UndefOr[AbstractEventHandler[SyntheticEvent[HTMLVideoElement, Event], js.Object]] = js.undefined
+  var onSeeking: js.UndefOr[VideoEventHandlerType] = js.undefined
   
-  var onStalled: js.UndefOr[AbstractEventHandler[SyntheticEvent[HTMLVideoElement, Event], js.Object]] = js.undefined
+  var onStalled: js.UndefOr[VideoEventHandlerType] = js.undefined
   
   var onTimeChange: js.UndefOr[AbstractEventHandler[SyntheticEvent[HTMLVideoElement, Event], Time]] = js.undefined
   
   var onVolumeChange: js.UndefOr[AbstractEventHandler[SyntheticEvent[HTMLDivElement, Event], Volume]] = js.undefined
   
-  var onWaiting: js.UndefOr[AbstractEventHandler[SyntheticEvent[HTMLVideoElement, Event], js.Object]] = js.undefined
+  var onWaiting: js.UndefOr[VideoEventHandlerType] = js.undefined
   
   var playbackRate: js.UndefOr[Double] = js.undefined
   
@@ -114,45 +133,61 @@ trait VideoProps extends StObject {
 }
 object VideoProps {
   
-  inline def apply(aspectRatio: Double, captions: String, src: String | js.Array[Src]): VideoProps = {
-    val __obj = js.Dynamic.literal(aspectRatio = aspectRatio.asInstanceOf[js.Any], captions = captions.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any])
+  inline def apply(
+    accessibilityMaximizeLabel: String,
+    accessibilityMinimizeLabel: String,
+    accessibilityMuteLabel: String,
+    accessibilityPauseLabel: String,
+    accessibilityPlayLabel: String,
+    accessibilityProgressBarLabel: String,
+    accessibilityUnmuteLabel: String,
+    aspectRatio: Double,
+    onPlay: /* arg */ js.Object & (typings.gestalt.anon.Event[SyntheticEvent[HTMLVideoElement, Event]]) => Unit,
+    onPlayError: Error => Unit,
+    src: String | js.Array[Src]
+  ): VideoProps = {
+    val __obj = js.Dynamic.literal(accessibilityMaximizeLabel = accessibilityMaximizeLabel.asInstanceOf[js.Any], accessibilityMinimizeLabel = accessibilityMinimizeLabel.asInstanceOf[js.Any], accessibilityMuteLabel = accessibilityMuteLabel.asInstanceOf[js.Any], accessibilityPauseLabel = accessibilityPauseLabel.asInstanceOf[js.Any], accessibilityPlayLabel = accessibilityPlayLabel.asInstanceOf[js.Any], accessibilityProgressBarLabel = accessibilityProgressBarLabel.asInstanceOf[js.Any], accessibilityUnmuteLabel = accessibilityUnmuteLabel.asInstanceOf[js.Any], aspectRatio = aspectRatio.asInstanceOf[js.Any], onPlay = js.Any.fromFunction1(onPlay), onPlayError = js.Any.fromFunction1(onPlayError), src = src.asInstanceOf[js.Any])
     __obj.asInstanceOf[VideoProps]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: VideoProps] (val x: Self) extends AnyVal {
     
-    inline def setAccessibilityMaximizeLabel(value: String): Self = StObject.set(x, "accessibilityMaximizeLabel", value.asInstanceOf[js.Any])
+    inline def setAccessibilityHideCaptionsLabel(value: String): Self = StObject.set(x, "accessibilityHideCaptionsLabel", value.asInstanceOf[js.Any])
     
-    inline def setAccessibilityMaximizeLabelUndefined: Self = StObject.set(x, "accessibilityMaximizeLabel", js.undefined)
+    inline def setAccessibilityHideCaptionsLabelUndefined: Self = StObject.set(x, "accessibilityHideCaptionsLabel", js.undefined)
+    
+    inline def setAccessibilityMaximizeLabel(value: String): Self = StObject.set(x, "accessibilityMaximizeLabel", value.asInstanceOf[js.Any])
     
     inline def setAccessibilityMinimizeLabel(value: String): Self = StObject.set(x, "accessibilityMinimizeLabel", value.asInstanceOf[js.Any])
     
-    inline def setAccessibilityMinimizeLabelUndefined: Self = StObject.set(x, "accessibilityMinimizeLabel", js.undefined)
-    
     inline def setAccessibilityMuteLabel(value: String): Self = StObject.set(x, "accessibilityMuteLabel", value.asInstanceOf[js.Any])
-    
-    inline def setAccessibilityMuteLabelUndefined: Self = StObject.set(x, "accessibilityMuteLabel", js.undefined)
     
     inline def setAccessibilityPauseLabel(value: String): Self = StObject.set(x, "accessibilityPauseLabel", value.asInstanceOf[js.Any])
     
-    inline def setAccessibilityPauseLabelUndefined: Self = StObject.set(x, "accessibilityPauseLabel", js.undefined)
-    
     inline def setAccessibilityPlayLabel(value: String): Self = StObject.set(x, "accessibilityPlayLabel", value.asInstanceOf[js.Any])
     
-    inline def setAccessibilityPlayLabelUndefined: Self = StObject.set(x, "accessibilityPlayLabel", js.undefined)
+    inline def setAccessibilityProgressBarLabel(value: String): Self = StObject.set(x, "accessibilityProgressBarLabel", value.asInstanceOf[js.Any])
+    
+    inline def setAccessibilityShowCaptionsLabel(value: String): Self = StObject.set(x, "accessibilityShowCaptionsLabel", value.asInstanceOf[js.Any])
+    
+    inline def setAccessibilityShowCaptionsLabelUndefined: Self = StObject.set(x, "accessibilityShowCaptionsLabel", js.undefined)
     
     inline def setAccessibilityUnmuteLabel(value: String): Self = StObject.set(x, "accessibilityUnmuteLabel", value.asInstanceOf[js.Any])
     
-    inline def setAccessibilityUnmuteLabelUndefined: Self = StObject.set(x, "accessibilityUnmuteLabel", js.undefined)
-    
     inline def setAspectRatio(value: Double): Self = StObject.set(x, "aspectRatio", value.asInstanceOf[js.Any])
+    
+    inline def setAutoplay(value: Boolean): Self = StObject.set(x, "autoplay", value.asInstanceOf[js.Any])
+    
+    inline def setAutoplayUndefined: Self = StObject.set(x, "autoplay", js.undefined)
     
     inline def setBackgroundColor(value: black | transparent): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
     inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
     inline def setCaptions(value: String): Self = StObject.set(x, "captions", value.asInstanceOf[js.Any])
+    
+    inline def setCaptionsUndefined: Self = StObject.set(x, "captions", js.undefined)
     
     inline def setChildren(value: Node): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
@@ -178,7 +213,21 @@ object VideoProps {
     
     inline def setObjectFitUndefined: Self = StObject.set(x, "objectFit", js.undefined)
     
-    inline def setOnDurationChange(value: /* args */ Duration => Unit): Self = StObject.set(x, "onDurationChange", js.Any.fromFunction1(value))
+    inline def setOnControlsPause(
+      value: /* arg */ js.Object & (typings.gestalt.anon.Event[SyntheticEvent[HTMLAnchorElement | HTMLDivElement, Event]]) => Unit
+    ): Self = StObject.set(x, "onControlsPause", js.Any.fromFunction1(value))
+    
+    inline def setOnControlsPauseUndefined: Self = StObject.set(x, "onControlsPause", js.undefined)
+    
+    inline def setOnControlsPlay(
+      value: /* arg */ js.Object & (typings.gestalt.anon.Event[SyntheticEvent[HTMLAnchorElement | HTMLDivElement, Event]]) => Unit
+    ): Self = StObject.set(x, "onControlsPlay", js.Any.fromFunction1(value))
+    
+    inline def setOnControlsPlayUndefined: Self = StObject.set(x, "onControlsPlay", js.undefined)
+    
+    inline def setOnDurationChange(
+      value: /* arg */ Duration & (typings.gestalt.anon.Event[SyntheticEvent[HTMLVideoElement, Event]]) => Unit
+    ): Self = StObject.set(x, "onDurationChange", js.Any.fromFunction1(value))
     
     inline def setOnDurationChangeUndefined: Self = StObject.set(x, "onDurationChange", js.undefined)
     
@@ -219,10 +268,10 @@ object VideoProps {
     inline def setOnPauseUndefined: Self = StObject.set(x, "onPause", js.undefined)
     
     inline def setOnPlay(
-      value: /* arg */ js.Object & (typings.gestalt.anon.Event[SyntheticEvent[HTMLDivElement, Event]]) => Unit
+      value: /* arg */ js.Object & (typings.gestalt.anon.Event[SyntheticEvent[HTMLVideoElement, Event]]) => Unit
     ): Self = StObject.set(x, "onPlay", js.Any.fromFunction1(value))
     
-    inline def setOnPlayUndefined: Self = StObject.set(x, "onPlay", js.undefined)
+    inline def setOnPlayError(value: Error => Unit): Self = StObject.set(x, "onPlayError", js.Any.fromFunction1(value))
     
     inline def setOnPlayheadDown(
       value: /* arg */ js.Object & (typings.gestalt.anon.Event[MouseEvent[HTMLDivElement, NativeMouseEvent]]) => Unit

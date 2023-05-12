@@ -1,7 +1,7 @@
 
 # Scala.js typings for thread-stream
 
-Typings are for version 2.2.0
+Typings are for version 2.3.0
 
 ## Library description:
 A streaming way to send data to a Node.js Worker Thread

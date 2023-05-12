@@ -165,6 +165,8 @@ object mod {
     
     var reactNativePath: String
     
+    var reactNativeVersion: String
+    
     var root: String
   }
   object Config {
@@ -176,9 +178,10 @@ object mod {
       platforms: Dictname,
       project: ProjectConfig,
       reactNativePath: String,
+      reactNativeVersion: String,
       root: String
     ): Config = {
-      val __obj = js.Dynamic.literal(commands = commands.asInstanceOf[js.Any], dependencies = dependencies.asInstanceOf[js.Any], healthChecks = healthChecks.asInstanceOf[js.Any], platforms = platforms.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any], reactNativePath = reactNativePath.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(commands = commands.asInstanceOf[js.Any], dependencies = dependencies.asInstanceOf[js.Any], healthChecks = healthChecks.asInstanceOf[js.Any], platforms = platforms.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any], reactNativePath = reactNativePath.asInstanceOf[js.Any], reactNativeVersion = reactNativeVersion.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
       __obj.asInstanceOf[Config]
     }
     
@@ -200,6 +203,8 @@ object mod {
       inline def setProject(value: ProjectConfig): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
       
       inline def setReactNativePath(value: String): Self = StObject.set(x, "reactNativePath", value.asInstanceOf[js.Any])
+      
+      inline def setReactNativeVersion(value: String): Self = StObject.set(x, "reactNativeVersion", value.asInstanceOf[js.Any])
       
       inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     }
@@ -233,7 +238,12 @@ object mod {
   
   type DetachedCommand = Command[`true`]
   
-  type DetachedCommandFunction[Args] = js.Function2[/* argv */ js.Array[String], /* args */ Args, js.Promise[Unit] | Unit]
+  type DetachedCommandFunction[Args] = js.Function3[
+    /* argv */ js.Array[String], 
+    /* args */ Args, 
+    /* ctx */ Config, 
+    js.Promise[Unit] | Unit
+  ]
   
   type IOSPlatformConfig = PlatformConfig[IOSProjectConfig, IOSProjectParams, IOSDependencyConfig, IOSDependencyParams]
   
@@ -338,6 +348,8 @@ object mod {
     var project: ProjectConfig
     
     var reactNativePath: String
+    
+    var reactNativeVersion: String
   }
   object UserConfig {
     
@@ -347,9 +359,10 @@ object mod {
       healthChecks: js.Array[Any],
       platforms: Dictname,
       project: ProjectConfig,
-      reactNativePath: String
+      reactNativePath: String,
+      reactNativeVersion: String
     ): UserConfig = {
-      val __obj = js.Dynamic.literal(commands = commands.asInstanceOf[js.Any], dependencies = dependencies.asInstanceOf[js.Any], healthChecks = healthChecks.asInstanceOf[js.Any], platforms = platforms.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any], reactNativePath = reactNativePath.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(commands = commands.asInstanceOf[js.Any], dependencies = dependencies.asInstanceOf[js.Any], healthChecks = healthChecks.asInstanceOf[js.Any], platforms = platforms.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any], reactNativePath = reactNativePath.asInstanceOf[js.Any], reactNativeVersion = reactNativeVersion.asInstanceOf[js.Any])
       __obj.asInstanceOf[UserConfig]
     }
     
@@ -371,6 +384,8 @@ object mod {
       inline def setProject(value: ProjectConfig): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
       
       inline def setReactNativePath(value: String): Self = StObject.set(x, "reactNativePath", value.asInstanceOf[js.Any])
+      
+      inline def setReactNativeVersion(value: String): Self = StObject.set(x, "reactNativeVersion", value.asInstanceOf[js.Any])
     }
   }
   

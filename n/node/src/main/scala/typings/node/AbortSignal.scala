@@ -1,5 +1,6 @@
 package typings.node
 
+import typings.std.Event
 import typings.std.EventTarget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -15,4 +16,8 @@ trait AbortSignal
     * Returns true if this AbortSignal's AbortController has signaled to abort, and false otherwise.
     */
   val aborted: Boolean = js.native
+  
+  var onabort: Null | (js.ThisFunction1[/* this */ this.type, /* event */ Event, Any]) = js.native
+  
+  val reason: Any = js.native
 }

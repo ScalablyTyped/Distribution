@@ -76,14 +76,14 @@ object TileProviderError {
     * @param previousError - The error instance returned by this function the last
     *        time it was called for this error, or undefined if this is the first time this error has
     *        occurred.
-    * @param provider - The imagery or terrain provider that encountered the error.
-    * @param event - The event to raise to inform listeners of the error.
-    * @param message - The message describing the error.
-    * @param x - The X coordinate of the tile that experienced the error, or undefined if the
+    * @param [provider] - The imagery or terrain provider that encountered the error.
+    * @param [event] - The event to raise to inform listeners of the error.
+    * @param [message] - The message describing the error.
+    * @param [x] - The X coordinate of the tile that experienced the error, or undefined if the
     *        error is not specific to a particular tile.
-    * @param y - The Y coordinate of the tile that experienced the error, or undefined if the
+    * @param [y] - The Y coordinate of the tile that experienced the error, or undefined if the
     *        error is not specific to a particular tile.
-    * @param level - The level-of-detail of the tile that experienced the error, or undefined if the
+    * @param [level] - The level-of-detail of the tile that experienced the error, or undefined if the
     *        error is not specific to a particular tile.
     * @param [errorDetails] - The error or exception that occurred, if any.
     * @returns The error instance that was passed to the event listeners and that
@@ -92,41 +92,13 @@ object TileProviderError {
     */
   inline def reportError(
     previousError: TileProviderError,
-    provider: ImageryProvider,
-    event: Event[js.Function1[/* repeated */ Any, Unit]],
-    message: String,
-    x: Double,
-    y: Double,
-    level: Double
-  ): TileProviderError = (^.asInstanceOf[js.Dynamic].applyDynamic("reportError")(previousError.asInstanceOf[js.Any], provider.asInstanceOf[js.Any], event.asInstanceOf[js.Any], message.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[TileProviderError]
-  inline def reportError(
-    previousError: TileProviderError,
-    provider: ImageryProvider,
-    event: Event[js.Function1[/* repeated */ Any, Unit]],
-    message: String,
-    x: Double,
-    y: Double,
-    level: Double,
-    errorDetails: js.Error
-  ): TileProviderError = (^.asInstanceOf[js.Dynamic].applyDynamic("reportError")(previousError.asInstanceOf[js.Any], provider.asInstanceOf[js.Any], event.asInstanceOf[js.Any], message.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], level.asInstanceOf[js.Any], errorDetails.asInstanceOf[js.Any])).asInstanceOf[TileProviderError]
-  inline def reportError(
-    previousError: TileProviderError,
-    provider: TerrainProvider,
-    event: Event[js.Function1[/* repeated */ Any, Unit]],
-    message: String,
-    x: Double,
-    y: Double,
-    level: Double
-  ): TileProviderError = (^.asInstanceOf[js.Dynamic].applyDynamic("reportError")(previousError.asInstanceOf[js.Any], provider.asInstanceOf[js.Any], event.asInstanceOf[js.Any], message.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[TileProviderError]
-  inline def reportError(
-    previousError: TileProviderError,
-    provider: TerrainProvider,
-    event: Event[js.Function1[/* repeated */ Any, Unit]],
-    message: String,
-    x: Double,
-    y: Double,
-    level: Double,
-    errorDetails: js.Error
+    provider: js.UndefOr[ImageryProvider | TerrainProvider],
+    event: js.UndefOr[Event[js.Function1[/* repeated */ Any, Unit]]],
+    message: js.UndefOr[String],
+    x: js.UndefOr[Double],
+    y: js.UndefOr[Double],
+    level: js.UndefOr[Double],
+    errorDetails: js.UndefOr[js.Error]
   ): TileProviderError = (^.asInstanceOf[js.Dynamic].applyDynamic("reportError")(previousError.asInstanceOf[js.Any], provider.asInstanceOf[js.Any], event.asInstanceOf[js.Any], message.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], level.asInstanceOf[js.Any], errorDetails.asInstanceOf[js.Any])).asInstanceOf[TileProviderError]
   
   /**

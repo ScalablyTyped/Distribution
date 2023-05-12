@@ -8,11 +8,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TransitionConfig[TContext, TEvent /* <: EventObject */] extends StObject {
+trait TransitionConfig[TContext, TExpressionEvent /* <: EventObject */, TEvent /* <: EventObject */] extends StObject {
   
-  var actions: js.UndefOr[Actions[TContext, TEvent]] = js.undefined
+  var actions: js.UndefOr[BaseActions[TContext, TExpressionEvent, TEvent, BaseActionObject]] = js.undefined
   
-  var cond: js.UndefOr[Condition[TContext, TEvent]] = js.undefined
+  var cond: js.UndefOr[Condition[TContext, TExpressionEvent]] = js.undefined
   
   var description: js.UndefOr[String] = js.undefined
   
@@ -26,25 +26,27 @@ trait TransitionConfig[TContext, TEvent /* <: EventObject */] extends StObject {
 }
 object TransitionConfig {
   
-  inline def apply[TContext, TEvent /* <: EventObject */](): TransitionConfig[TContext, TEvent] = {
+  inline def apply[TContext, TExpressionEvent /* <: EventObject */, TEvent /* <: EventObject */](): TransitionConfig[TContext, TExpressionEvent, TEvent] = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[TransitionConfig[TContext, TEvent]]
+    __obj.asInstanceOf[TransitionConfig[TContext, TExpressionEvent, TEvent]]
   }
   
   @scala.inline
-  implicit open class MutableBuilder[Self <: TransitionConfig[?, ?], TContext, TEvent /* <: EventObject */] (val x: Self & (TransitionConfig[TContext, TEvent])) extends AnyVal {
+  implicit open class MutableBuilder[Self <: TransitionConfig[?, ?, ?], TContext, TExpressionEvent /* <: EventObject */, TEvent /* <: EventObject */] (val x: Self & (TransitionConfig[TContext, TExpressionEvent, TEvent])) extends AnyVal {
     
-    inline def setActions(value: Actions[TContext, TEvent]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+    inline def setActions(value: BaseActions[TContext, TExpressionEvent, TEvent, BaseActionObject]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
-    inline def setActionsFunction3(value: (TContext, TEvent, /* meta */ ActionMeta[TContext, TEvent, BaseActionObject]) => Unit): Self = StObject.set(x, "actions", js.Any.fromFunction3(value))
+    inline def setActionsFunction3(
+      value: (TContext, TExpressionEvent, /* meta */ ActionMeta[TContext, TEvent, BaseActionObject]) => Unit
+    ): Self = StObject.set(x, "actions", js.Any.fromFunction3(value))
     
     inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
     
-    inline def setActionsVarargs(value: (Action[TContext, TEvent])*): Self = StObject.set(x, "actions", js.Array(value*))
+    inline def setActionsVarargs(value: (BaseAction[TContext, TExpressionEvent, BaseActionObject, TEvent])*): Self = StObject.set(x, "actions", js.Array(value*))
     
-    inline def setCond(value: Condition[TContext, TEvent]): Self = StObject.set(x, "cond", value.asInstanceOf[js.Any])
+    inline def setCond(value: Condition[TContext, TExpressionEvent]): Self = StObject.set(x, "cond", value.asInstanceOf[js.Any])
     
-    inline def setCondFunction3(value: (TContext, TEvent, /* meta */ GuardMeta[TContext, TEvent]) => Boolean): Self = StObject.set(x, "cond", js.Any.fromFunction3(value))
+    inline def setCondFunction3(value: (TContext, TExpressionEvent, /* meta */ GuardMeta[TContext, TExpressionEvent]) => Boolean): Self = StObject.set(x, "cond", js.Any.fromFunction3(value))
     
     inline def setCondUndefined: Self = StObject.set(x, "cond", js.undefined)
     

@@ -16,7 +16,7 @@ object libIconsSortAscendingOutlinedMod extends Shortcut {
   @js.native
   trait SortAscendingOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_SortAscendingOutlinedIconType: String = js.native

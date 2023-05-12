@@ -4,16 +4,18 @@ import typings.angularCompiler.mod.ConstantPool
 import typings.angularCompiler.mod.Expression
 import typings.angularCompiler.mod.Statement
 import typings.angularCompiler.mod.Type
+import typings.angularCompilerCli.anon.ClassDeclarationDeclarati
+import typings.angularCompilerCli.srcNgtscImportsMod.ReferenceEmitter
 import typings.angularCompilerCli.srcNgtscImportsSrcReexportMod.Reexport
 import typings.angularCompilerCli.srcNgtscIncrementalSemanticGraphMod.SemanticSymbol
 import typings.angularCompilerCli.srcNgtscIndexerMod.IndexingContext
-import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.ClassDeclaration
-import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.DeclarationNode
 import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.Decorator
+import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.ReflectionHost
 import typings.angularCompilerCli.srcNgtscTranslatorMod.ImportManager
 import typings.angularCompilerCli.srcNgtscTypecheckApiContextMod.TypeCheckContext
 import typings.angularCompilerCli.srcNgtscTypecheckExtendedApiExtendedTemplateCheckerMod.ExtendedTemplateChecker
 import typings.angularCompilerCli.srcNgtscXi18nSrcContextMod.Xi18nContext
+import typings.typescript.mod.ClassDeclaration
 import typings.typescript.mod.ClassElement
 import typings.typescript.mod.Diagnostic
 import typings.typescript.mod.FunctionDeclaration
@@ -41,6 +43,16 @@ object srcNgtscTransformSrcApiMod {
       extends StObject
          with CompilationMode
     /* 0 */ val FULL: typings.angularCompilerCli.srcNgtscTransformSrcApiMod.CompilationMode.FULL & Double = js.native
+    
+    /**
+      * Generates code based on each individual source file without using its
+      * dependencies (suitable for local dev edit/refresh workflow).
+      */
+    @js.native
+    sealed trait LOCAL
+      extends StObject
+         with CompilationMode
+    /* 2 */ val LOCAL: typings.angularCompilerCli.srcNgtscTransformSrcApiMod.CompilationMode.LOCAL & Double = js.native
     
     /**
       * Generates code using a stable, but intermediate format suitable to be published to NPM.
@@ -204,8 +216,8 @@ object srcNgtscTransformSrcApiMod {
       * builds. Any side effects required for compilation (e.g. registration of metadata) should happen
       * in the `register` phase, which is guaranteed to run even for incremental builds.
       */
-    def analyze(node: ClassDeclaration[DeclarationNode], metadata: D): AnalysisOutput[A] = js.native
-    def analyze(node: ClassDeclaration[DeclarationNode], metadata: D, handlerFlags: HandlerFlags): AnalysisOutput[A] = js.native
+    def analyze(node: ClassDeclarationDeclarati, metadata: D): AnalysisOutput[A] = js.native
+    def analyze(node: ClassDeclarationDeclarati, metadata: D, handlerFlags: HandlerFlags): AnalysisOutput[A] = js.native
     
     /**
       * Generate a description of the field which should be added to the class, including any
@@ -214,7 +226,7 @@ object srcNgtscTransformSrcApiMod {
       * If the compilation mode is configured as partial, and an implementation of `compilePartial` is
       * provided, then this method is not called.
       */
-    def compileFull(node: ClassDeclaration[DeclarationNode], analysis: A, resolution: R, constantPool: ConstantPool): CompileResult | js.Array[CompileResult] = js.native
+    def compileFull(node: ClassDeclarationDeclarati, analysis: A, resolution: R, constantPool: ConstantPool): CompileResult | js.Array[CompileResult] = js.native
     
     /**
       * Generates code for the decorator using a stable, but intermediate format suitable to be
@@ -226,7 +238,7 @@ object srcNgtscTransformSrcApiMod {
       */
     var compilePartial: js.UndefOr[
         js.Function3[
-          /* node */ ClassDeclaration[DeclarationNode], 
+          /* node */ ClassDeclarationDeclarati, 
           /* analysis */ A, 
           /* resolution */ R, 
           CompileResult | js.Array[CompileResult]
@@ -237,12 +249,12 @@ object srcNgtscTransformSrcApiMod {
       * Scan a set of reflected decorators and determine if this handler is responsible for compilation
       * of one of them.
       */
-    def detect(node: ClassDeclaration[DeclarationNode]): js.UndefOr[DetectResult[D]] = js.native
-    def detect(node: ClassDeclaration[DeclarationNode], decorators: js.Array[Decorator]): js.UndefOr[DetectResult[D]] = js.native
+    def detect(node: ClassDeclarationDeclarati): js.UndefOr[DetectResult[D]] = js.native
+    def detect(node: ClassDeclarationDeclarati, decorators: js.Array[Decorator]): js.UndefOr[DetectResult[D]] = js.native
     
     var extendedTemplateCheck: js.UndefOr[
         js.Function2[
-          /* component */ typings.typescript.mod.ClassDeclaration, 
+          /* component */ ClassDeclaration, 
           /* extendedTemplateChecker */ ExtendedTemplateChecker, 
           js.Array[Diagnostic]
         ]
@@ -256,7 +268,7 @@ object srcNgtscTransformSrcApiMod {
     var index: js.UndefOr[
         js.Function4[
           /* context */ IndexingContext, 
-          /* node */ ClassDeclaration[DeclarationNode], 
+          /* node */ ClassDeclarationDeclarati, 
           /* analysis */ A, 
           /* resolution */ R, 
           Unit
@@ -272,11 +284,7 @@ object srcNgtscTransformSrcApiMod {
       * will only be called if asynchronicity is supported in the CompilerHost.
       */
     var preanalyze: js.UndefOr[
-        js.Function2[
-          /* node */ ClassDeclaration[DeclarationNode], 
-          /* metadata */ D, 
-          js.UndefOr[js.Promise[Unit]]
-        ]
+        js.Function2[/* node */ ClassDeclarationDeclarati, /* metadata */ D, js.UndefOr[js.Promise[Unit]]]
       ] = js.native
     
     /**
@@ -294,9 +302,7 @@ object srcNgtscTransformSrcApiMod {
       * Registration always occurs for a given decorator/class, regardless of whether analysis was
       * performed directly or whether the analysis results were reused from the previous program.
       */
-    var register: js.UndefOr[
-        js.Function2[/* node */ ClassDeclaration[DeclarationNode], /* analysis */ A, Unit]
-      ] = js.native
+    var register: js.UndefOr[js.Function2[/* node */ ClassDeclarationDeclarati, /* analysis */ A, Unit]] = js.native
     
     /**
       * Perform resolution on the given decorator along with the result of analysis.
@@ -307,7 +313,7 @@ object srcNgtscTransformSrcApiMod {
       */
     var resolve: js.UndefOr[
         js.Function3[
-          /* node */ ClassDeclaration[DeclarationNode], 
+          /* node */ ClassDeclarationDeclarati, 
           /* analysis */ A, 
           /* symbol */ S, 
           ResolveResult[R]
@@ -326,12 +332,12 @@ object srcNgtscTransformSrcApiMod {
       * Only primary handlers are allowed to have symbols; handlers with `precedence` other than
       * `HandlerPrecedence.PRIMARY` must return a `null` symbol.
       */
-    def symbol(node: ClassDeclaration[DeclarationNode], analysis: A): S = js.native
+    def symbol(node: ClassDeclarationDeclarati, analysis: A): S = js.native
     
     var typeCheck: js.UndefOr[
         js.Function4[
           /* ctx */ TypeCheckContext, 
-          /* node */ ClassDeclaration[DeclarationNode], 
+          /* node */ ClassDeclarationDeclarati, 
           /* analysis */ A, 
           /* resolution */ R, 
           Unit
@@ -343,12 +349,7 @@ object srcNgtscTransformSrcApiMod {
       * assumption that nothing in the TypeScript code has changed.
       */
     var updateResources: js.UndefOr[
-        js.Function3[
-          /* node */ ClassDeclaration[DeclarationNode], 
-          /* analysis */ A, 
-          /* resolution */ R, 
-          Unit
-        ]
+        js.Function3[/* node */ ClassDeclarationDeclarati, /* analysis */ A, /* resolution */ R, Unit]
       ] = js.native
     
     /**
@@ -358,7 +359,7 @@ object srcNgtscTransformSrcApiMod {
     var xi18n: js.UndefOr[
         js.Function3[
           /* bundle */ Xi18nContext, 
-          /* node */ ClassDeclaration[DeclarationNode], 
+          /* node */ ClassDeclarationDeclarati, 
           /* analysis */ A, 
           Unit
         ]
@@ -409,11 +410,13 @@ object srcNgtscTransformSrcApiMod {
   trait DtsTransform extends StObject {
     
     var transformClass: js.UndefOr[
-        js.Function3[
-          /* clazz */ typings.typescript.mod.ClassDeclaration, 
+        js.Function5[
+          /* clazz */ ClassDeclaration, 
           /* elements */ js.Array[ClassElement], 
+          /* reflector */ ReflectionHost, 
+          /* refEmitter */ ReferenceEmitter, 
           /* imports */ ImportManager, 
-          typings.typescript.mod.ClassDeclaration
+          ClassDeclaration
         ]
       ] = js.undefined
     
@@ -436,8 +439,8 @@ object srcNgtscTransformSrcApiMod {
     implicit open class MutableBuilder[Self <: DtsTransform] (val x: Self) extends AnyVal {
       
       inline def setTransformClass(
-        value: (/* clazz */ typings.typescript.mod.ClassDeclaration, /* elements */ js.Array[ClassElement], /* imports */ ImportManager) => typings.typescript.mod.ClassDeclaration
-      ): Self = StObject.set(x, "transformClass", js.Any.fromFunction3(value))
+        value: (/* clazz */ ClassDeclaration, /* elements */ js.Array[ClassElement], /* reflector */ ReflectionHost, /* refEmitter */ ReferenceEmitter, /* imports */ ImportManager) => ClassDeclaration
+      ): Self = StObject.set(x, "transformClass", js.Any.fromFunction5(value))
       
       inline def setTransformClassElement(value: (/* element */ ClassElement, /* imports */ ImportManager) => ClassElement): Self = StObject.set(x, "transformClassElement", js.Any.fromFunction2(value))
       

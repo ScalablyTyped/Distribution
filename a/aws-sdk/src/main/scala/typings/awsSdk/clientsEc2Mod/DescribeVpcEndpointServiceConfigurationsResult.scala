@@ -12,7 +12,7 @@ trait DescribeVpcEndpointServiceConfigurationsResult extends StObject {
   var NextToken: js.UndefOr[String] = js.undefined
   
   /**
-    * Information about one or more services.
+    * Information about the services.
     */
   var ServiceConfigurations: js.UndefOr[ServiceConfigurationSet] = js.undefined
 }

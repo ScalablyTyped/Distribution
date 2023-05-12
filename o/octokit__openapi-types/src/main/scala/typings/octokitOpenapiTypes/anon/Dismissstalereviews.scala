@@ -17,6 +17,13 @@ trait Dismissstalereviews extends StObject {
   /** @example true */
   var require_code_owner_reviews: Boolean
   
+  /**
+    * @description Whether the most recent push must be approved by someone other than the person who pushed it.
+    * @default false
+    * @example true
+    */
+  var require_last_push_approval: js.UndefOr[Boolean] = js.undefined
+  
   /** @example 2 */
   var required_approving_review_count: js.UndefOr[Double] = js.undefined
   
@@ -47,6 +54,10 @@ object Dismissstalereviews {
     inline def setDismissal_restrictionsUndefined: Self = StObject.set(x, "dismissal_restrictions", js.undefined)
     
     inline def setRequire_code_owner_reviews(value: Boolean): Self = StObject.set(x, "require_code_owner_reviews", value.asInstanceOf[js.Any])
+    
+    inline def setRequire_last_push_approval(value: Boolean): Self = StObject.set(x, "require_last_push_approval", value.asInstanceOf[js.Any])
+    
+    inline def setRequire_last_push_approvalUndefined: Self = StObject.set(x, "require_last_push_approval", js.undefined)
     
     inline def setRequired_approving_review_count(value: Double): Self = StObject.set(x, "required_approving_review_count", value.asInstanceOf[js.Any])
     

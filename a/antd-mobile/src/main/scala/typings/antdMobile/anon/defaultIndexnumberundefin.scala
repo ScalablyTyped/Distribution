@@ -26,6 +26,9 @@ import typings.antdMobile.antdMobileStrings.listbox
 import typings.antdMobile.antdMobileStrings.location
 import typings.antdMobile.antdMobileStrings.menu
 import typings.antdMobile.antdMobileStrings.mixed
+import typings.antdMobile.antdMobileStrings.mousedown
+import typings.antdMobile.antdMobileStrings.mousemove
+import typings.antdMobile.antdMobileStrings.mouseup
 import typings.antdMobile.antdMobileStrings.move
 import typings.antdMobile.antdMobileStrings.none
 import typings.antdMobile.antdMobileStrings.off
@@ -50,7 +53,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined {  defaultIndex :number | undefined,   allowTouchMove :boolean | undefined,   autoplay :boolean | undefined,   autoplayInterval :number | undefined,   loop :boolean | undefined,   direction :'vertical' | 'horizontal' | undefined,   onIndexChange :(index : number): void | undefined,   indicatorProps :std.Pick<antd-mobile.antd-mobile/es/components/page-indicator.PageIndicatorProps, 'style' | 'className' | 'color'> | undefined,   indicator :(total : number, current : number): react.react.ReactNode | undefined,   slideSize :number | undefined,   trackOffset :number | undefined,   stuckAtBoundary :boolean | undefined,   rubberband :boolean | undefined,   children :react.react.ReactElement | std.Array<react.react.ReactElement> | undefined,   className :string | undefined,   style :react.react.CSSProperties & std.Partial<std.Record<'--width' | '--height' | '--border-radius' | '--track-padding', string>> | undefined,   tabIndex :number | undefined} & react.react.AriaAttributes & react.react.RefAttributes<antd-mobile.antd-mobile/es/components/swiper/swiper.SwiperRef> */
+/* Inlined {  defaultIndex :number | undefined,   allowTouchMove :boolean | undefined,   autoplay :boolean | undefined,   autoplayInterval :number | undefined,   loop :boolean | undefined,   direction :'vertical' | 'horizontal' | undefined,   onIndexChange :(index : number): void | undefined,   indicatorProps :std.Pick<antd-mobile.antd-mobile/es/components/page-indicator.PageIndicatorProps, 'style' | 'className' | 'color'> | undefined,   indicator :(total : number, current : number): react.react.ReactNode | undefined,   slideSize :number | undefined,   trackOffset :number | undefined,   stuckAtBoundary :boolean | undefined,   rubberband :boolean | undefined,   stopPropagation :std.Array<'mousedown' | 'mousemove' | 'mouseup'> | undefined,   children :react.react.ReactElement | std.Array<react.react.ReactElement> | undefined,   className :string | undefined,   style :react.react.CSSProperties & std.Partial<std.Record<'--width' | '--height' | '--border-radius' | '--track-padding', string>> | undefined,   tabIndex :number | undefined} & react.react.AriaAttributes & react.react.RefAttributes<antd-mobile.antd-mobile/es/components/swiper/swiper.SwiperRef> */
 trait defaultIndexnumberundefin extends StObject {
   
   var allowTouchMove: js.UndefOr[Boolean] = js.undefined
@@ -311,11 +314,18 @@ trait defaultIndexnumberundefin extends StObject {
   
   var onIndexChange: js.UndefOr[js.Function1[/* index */ Double, Unit]] = js.undefined
   
+  /**
+    * Allows getting a ref to the component instance.
+    * Once the component unmounts, React will set `ref.current` to `null` (or call the ref with `null` if you passed a callback ref).
+    * @see https://react.dev/learn/referencing-values-with-refs#refs-and-the-dom
+    */
   var ref: js.UndefOr[Ref[SwiperRef]] = js.undefined
   
   var rubberband: js.UndefOr[Boolean] = js.undefined
   
   var slideSize: js.UndefOr[Double] = js.undefined
+  
+  var stopPropagation: js.UndefOr[js.Array[mousedown | mousemove | mouseup]] = js.undefined
   
   var stuckAtBoundary: js.UndefOr[Boolean] = js.undefined
   
@@ -596,6 +606,12 @@ object defaultIndexnumberundefin {
     inline def setSlideSize(value: Double): Self = StObject.set(x, "slideSize", value.asInstanceOf[js.Any])
     
     inline def setSlideSizeUndefined: Self = StObject.set(x, "slideSize", js.undefined)
+    
+    inline def setStopPropagation(value: js.Array[mousedown | mousemove | mouseup]): Self = StObject.set(x, "stopPropagation", value.asInstanceOf[js.Any])
+    
+    inline def setStopPropagationUndefined: Self = StObject.set(x, "stopPropagation", js.undefined)
+    
+    inline def setStopPropagationVarargs(value: (mousedown | mousemove | mouseup)*): Self = StObject.set(x, "stopPropagation", js.Array(value*))
     
     inline def setStuckAtBoundary(value: Boolean): Self = StObject.set(x, "stuckAtBoundary", value.asInstanceOf[js.Any])
     

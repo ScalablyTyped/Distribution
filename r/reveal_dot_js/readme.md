@@ -1,7 +1,7 @@
 
 # Scala.js typings for reveal_dot_js
 
-Typings are for version 4.3
+Typings are for version 4.4
 
 ## Library description:
 The HTML Presentation Framework

@@ -19,7 +19,7 @@ trait UpdateDashboardResponse extends StObject {
   /**
     * The ID for the dashboard.
     */
-  var DashboardId: js.UndefOr[RestrictiveResourceId] = js.undefined
+  var DashboardId: js.UndefOr[ShortRestrictiveResourceId] = js.undefined
   
   /**
     * The Amazon Web Services request ID for this operation.
@@ -54,7 +54,7 @@ object UpdateDashboardResponse {
     
     inline def setCreationStatusUndefined: Self = StObject.set(x, "CreationStatus", js.undefined)
     
-    inline def setDashboardId(value: RestrictiveResourceId): Self = StObject.set(x, "DashboardId", value.asInstanceOf[js.Any])
+    inline def setDashboardId(value: ShortRestrictiveResourceId): Self = StObject.set(x, "DashboardId", value.asInstanceOf[js.Any])
     
     inline def setDashboardIdUndefined: Self = StObject.set(x, "DashboardId", js.undefined)
     

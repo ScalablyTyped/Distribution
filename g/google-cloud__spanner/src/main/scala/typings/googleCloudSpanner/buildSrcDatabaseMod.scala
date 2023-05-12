@@ -104,6 +104,15 @@ object buildSrcDatabaseMod {
     ) = this()
     
     /**
+      * Gets the Spanner object
+      *
+      * @private
+      *
+      * @returns {Spanner}
+      */
+    /* private */ var _getSpanner: Any = js.native
+    
+    /**
       * Decorates transaction so that when end() is called it will return the session
       * back into the pool.
       *
@@ -431,6 +440,8 @@ object buildSrcDatabaseMod {
     def createTable(schema: Schema, gaxOptions: CallOptions): js.Promise[CreateTableResponse] = js.native
     def createTable(schema: Schema, gaxOptions: CallOptions, callback: CreateTableCallback): Unit = js.native
     
+    var databaseRole: js.UndefOr[String | Null] = js.native
+    
     /**
       * @typedef {array} DatabaseDeleteResponse
       * @property {object} 0 The full API response.
@@ -580,6 +591,118 @@ object buildSrcDatabaseMod {
     def get(callback: DatabaseCallback): Unit = js.native
     def get(options: GetDatabaseConfig): js.Promise[DatabaseResponse] = js.native
     def get(options: GetDatabaseConfig, callback: DatabaseCallback): Unit = js.native
+    
+    /**
+      * @typedef {array} GetDatabaseRolesResponse
+      * @property {IDatabaseRolees[]} 0 Array of list of database roles.
+      * @property {object} 1 A query object to receive more results.
+      * @property {object} 2 The full API response.
+      */
+    /**
+      * @callback GetDatabaseRolesCallback
+      * @param {?Error} err Request error, if any.
+      * @param {object} apiResponse The full API response.
+      */
+    /**
+      * Gets a list of database roles
+      *
+      * @see {@link v1.DatabaseAdminClient#getDatabaseRoles}
+      * @see [GetDatabaseRoles API Documentation](https://cloud.google.com/spanner/docs/reference/rpc/google.spanner.admin.database.v1#google.spanner.admin.database.v1.DatabaseAdmin.GetDatabaseRoles)
+      *
+      * @param {object} [gaxOptions] Request configuration options,
+      *     See {@link https://googleapis.dev/nodejs/google-gax/latest/interfaces/CallOptions.html|CallOptions}
+      *     for more details.
+      * @param {GetDatabaseRolesCallback} [callback] Callback function.
+      * @returns {Promise<GetDatabaseRolesResponse>}
+      *
+      * @example
+      * ```
+      * const {Spanner} = require('@google-cloud/spanner');
+      * const spanner = new Spanner();
+      *
+      * const instance = spanner.instance('my-instance');
+      * const database = instance.database('my-database');
+      *
+      * database.getDatabaseRoles(function(err, roles) {
+      *   // `roles` is an array of `DatabaseRoles` objects.
+      * });
+      *
+      * //-
+      * // To control how many API requests are made and page through the results
+      * // manually, set `autoPaginate` to `false`.
+      * //-
+      * function callback(err, roles, nextQuery, apiResponse) {
+      *   if (nextQuery) {
+      *     // More results exist.
+      *     database.getDatabaseRoles(nextQuery, callback);
+      *   }
+      * }
+      *
+      * database.getInstances({
+      *   gaxOptions: {autoPaginate: false}
+      * }, callback);
+      *
+      * //-
+      * // If the callback is omitted, we'll return a Promise.
+      * //-
+      * database.getInstances().then(function(data) {
+      *   const roles = data[0];
+      * });
+      * ```
+      */
+    def getDatabaseRoles(): js.Promise[GetDatabaseRolesResponse] = js.native
+    def getDatabaseRoles(callback: GetDatabaseRolesCallback): Unit = js.native
+    def getDatabaseRoles(gaxOptions: CallOptions): js.Promise[GetDatabaseRolesResponse] = js.native
+    def getDatabaseRoles(gaxOptions: CallOptions, callback: GetDatabaseRolesCallback): Unit = js.native
+    
+    /**
+      * Options object for requested policy version.
+      *
+      * @typedef {object} GetIamPolicyOptions
+      * @property {number|null} [requestedPolicyVersion] policy version requested, possible values are 0, 1 and 3,
+      *     See {@link https://cloud.google.com/iam/docs/policies#versions} for more details
+      * @property {object} [gaxOptions] Request configuration options,
+      *     See {@link https://googleapis.dev/nodejs/google-gax/latest/interfaces/CallOptions.html|CallOptions}
+      *     for more details.
+      */
+    /**
+      * @callback GetIamPolicyCallback
+      * @param {?Error} err Request error, if any.
+      * @param {google.iam.v1.Policy| undefined} policy Returns policy for the give database
+      */
+    /**
+      * Retrieves the policy of the database.
+      *
+      * A Policy is a collection of bindings. A binding binds one or more members, or principals,
+      * to a single role. Principals can be user accounts, service accounts, Google groups, and
+      * domains (such as G Suite). A role is a named list of permissions; each role can be an IAM
+      * predefined role or a user-created custom role.
+      *
+      * @see {@link #getIamPolicy}
+      *
+      * @method Database#getIamPolicy
+      * @param {object} [options] requestedPolicyVersion and gax options(configuration options)
+      *     See {@link https://googleapis.dev/nodejs/google-gax/latest/interfaces/CallOptions.html}
+      *     for more details on gax options.
+      * @param {GetIamPolicyCallback} [callback] Callback function.
+      * @returns {Promise<Policy | undefined>}
+      *     When resolved, contains the current policy of the database.
+      *
+      * @example
+      * ```
+      * const {Spanner} = require('@google-cloud/spanner');
+      * const spanner = new Spanner();
+      * const instance = spanner.instance('my-instance');
+      * const database = instance.database('my-database');
+      * const policy = await database.getIamPolicy();
+      * console.log(policy.bindings, policy.version, policy.etag, policy.auditConfigs)
+      * const policyWithVersion specified = await database.getIamPolicy({requestedPolicyVersion: 3});
+      * ```
+      */
+    def getIamPolicy(): js.Promise[GetIamPolicyResponse] = js.native
+    def getIamPolicy(callback: GetIamPolicyCallback): Unit = js.native
+    def getIamPolicy(options: GetIamPolicyOptions): js.Promise[GetIamPolicyResponse] = js.native
+    def getIamPolicy(options: GetIamPolicyOptions, callback: GetIamPolicyCallback): Unit = js.native
     
     /**
       * @typedef {array} GetDatabaseMetadataResponse
@@ -1637,6 +1760,58 @@ object buildSrcDatabaseMod {
       * const table = database.table('Singers');
       * ```
       */
+    /**
+      * @callback SetIamPolicyCallback
+      * @param {?Error} err Request error, if any.
+      * @param {google.iam.v1.Policy| undefined} policy Returns policy for the give database
+      */
+    /**
+      * Sets the policy for the database.
+      *
+      * A Policy is a collection of bindings. A binding binds one or more members, or principals,
+      * to a single role. Principals can be user accounts, service accounts, Google groups, and
+      * domains (such as G Suite). A role is a named list of permissions; each role can be an IAM
+      * predefined role or a user-created custom role.
+      *
+      * @see {@link #setIamPolicy}
+      *
+      * @method Database#setIamPolicy
+      * @param {object} [policy] requestedPolicyVersion and gax options(configuration options)
+      *     See {@link https://googleapis.dev/nodejs/google-gax/latest/interfaces/CallOptions.html}
+      *     for more details on gax options.
+      * @param {object} [options] Requested configuration options,
+      *     See {@link https://googleapis.dev/nodejs/google-gax/latest/interfaces/CallOptions.html}
+      *     for more details on Call Options.
+      * @param {SetIamPolicyCallback} [callback] Callback function.
+      * @returns {Promise<Policy | undefined>}
+      *     When resolved, contains the current policy of the database.
+      *
+      * @example
+      * ```
+      * const {Spanner} = require('@google-cloud/spanner');
+      * const spanner = new Spanner();
+      * const instance = spanner.instance('my-instance');
+      * const database = instance.database('my-database');
+      * const binding = {
+      *     role: 'roles/spanner.fineGrainedAccessUser',
+      *     members: ['user:asthamohta@google.com'],
+      *     condition: {
+      *         title: 'new condition',
+      *         expression: 'resource.name.endsWith("/databaseRoles/parent")',
+      *     },
+      * };
+      * const policy = {
+      *     bindings: [newBinding],
+      *     version: 3,
+      *};
+      * const policy = await database.setIamPolicy({policy: policy});
+      * ```
+      */
+    def setIamPolicy(policy: SetIamPolicyRequest): js.Promise[SetIamPolicyResponse] = js.native
+    def setIamPolicy(policy: SetIamPolicyRequest, callback: SetIamPolicyCallback): Unit = js.native
+    def setIamPolicy(policy: SetIamPolicyRequest, options: CallOptions): js.Promise[SetIamPolicyResponse] = js.native
+    def setIamPolicy(policy: SetIamPolicyRequest, options: CallOptions, callback: SetIamPolicyCallback): Unit = js.native
+    
     def table(name: String): Table = js.native
     
     /**
@@ -1806,6 +1981,8 @@ object buildSrcDatabaseMod {
   
   trait CreateSessionOptions extends StObject {
     
+    var databaseRole: js.UndefOr[String | Null] = js.undefined
+    
     var gaxOptions: js.UndefOr[CallOptions] = js.undefined
     
     var labels: js.UndefOr[StringDictionary[String] | Null] = js.undefined
@@ -1819,6 +1996,12 @@ object buildSrcDatabaseMod {
     
     @scala.inline
     implicit open class MutableBuilder[Self <: CreateSessionOptions] (val x: Self) extends AnyVal {
+      
+      inline def setDatabaseRole(value: String): Self = StObject.set(x, "databaseRole", value.asInstanceOf[js.Any])
+      
+      inline def setDatabaseRoleNull: Self = StObject.set(x, "databaseRole", null)
+      
+      inline def setDatabaseRoleUndefined: Self = StObject.set(x, "databaseRole", js.undefined)
       
       inline def setGaxOptions(value: CallOptions): Self = StObject.set(x, "gaxOptions", value.asInstanceOf[js.Any])
       
@@ -1887,6 +2070,53 @@ object buildSrcDatabaseMod {
   
   type GetDatabaseMetadataResponse = js.Array[IDatabaseTranslatedEnum]
   
+  type GetDatabaseRolesCallback = RequestCallback[
+    IDatabaseRole, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify databaseAdmin.spanner.admin.database.v1.IListDatabaseRolesResponse */ Any
+  ]
+  
+  type GetDatabaseRolesOptions = PagedOptionsWithFilter
+  
+  type GetDatabaseRolesResponse = PagedResponse[
+    IDatabaseRole, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify databaseAdmin.spanner.admin.database.v1.IListDatabaseRolesResponse */ Any
+  ]
+  
+  type GetIamPolicyCallback = RequestCallback[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IPolicy */ Any, 
+    Unit
+  ]
+  
+  trait GetIamPolicyOptions extends StObject {
+    
+    var gaxOptions: js.UndefOr[CallOptions] = js.undefined
+    
+    var requestedPolicyVersion: js.UndefOr[Double | Null] = js.undefined
+  }
+  object GetIamPolicyOptions {
+    
+    inline def apply(): GetIamPolicyOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[GetIamPolicyOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetIamPolicyOptions] (val x: Self) extends AnyVal {
+      
+      inline def setGaxOptions(value: CallOptions): Self = StObject.set(x, "gaxOptions", value.asInstanceOf[js.Any])
+      
+      inline def setGaxOptionsUndefined: Self = StObject.set(x, "gaxOptions", js.undefined)
+      
+      inline def setRequestedPolicyVersion(value: Double): Self = StObject.set(x, "requestedPolicyVersion", value.asInstanceOf[js.Any])
+      
+      inline def setRequestedPolicyVersionNull: Self = StObject.set(x, "requestedPolicyVersion", null)
+      
+      inline def setRequestedPolicyVersionUndefined: Self = StObject.set(x, "requestedPolicyVersion", js.undefined)
+    }
+  }
+  
+  type GetIamPolicyResponse = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IPolicy */ Any
+  
   type GetRestoreInfoCallback = NormalCallback[IRestoreInfoTranslatedEnum]
   
   type GetSchemaCallback = RequestCallback[
@@ -1920,6 +2150,8 @@ object buildSrcDatabaseMod {
   ]
   
   type GetTransactionCallback = NormalCallback[Transaction]
+  
+  type IDatabaseRole = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify databaseAdmin.spanner.admin.database.v1.IDatabaseRole */ Any
   
   /**
     * IDatabase structure with database state enum translated to string form.
@@ -1987,6 +2219,47 @@ object buildSrcDatabaseMod {
     extends StObject
        with Instantiable1[/* database */ Database, SessionPoolInterface]
        with Instantiable2[/* database */ Database, /* options */ SessionPoolOptions, SessionPoolInterface]
+  
+  type SetIamPolicyCallback = RequestCallback[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IPolicy */ Any, 
+    Unit
+  ]
+  
+  trait SetIamPolicyRequest extends StObject {
+    
+    var policy: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Policy */ Any) | Null
+    
+    var updateMask: js.UndefOr[
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FieldMask */ Any) | Null
+      ] = js.undefined
+  }
+  object SetIamPolicyRequest {
+    
+    inline def apply(): SetIamPolicyRequest = {
+      val __obj = js.Dynamic.literal(policy = null)
+      __obj.asInstanceOf[SetIamPolicyRequest]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SetIamPolicyRequest] (val x: Self) extends AnyVal {
+      
+      inline def setPolicy(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Policy */ Any
+      ): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
+      
+      inline def setPolicyNull: Self = StObject.set(x, "policy", null)
+      
+      inline def setUpdateMask(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FieldMask */ Any
+      ): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
+      
+      inline def setUpdateMaskNull: Self = StObject.set(x, "updateMask", null)
+      
+      inline def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
+    }
+  }
+  
+  type SetIamPolicyResponse = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IPolicy */ Any
   
   type UpdateSchemaCallback = ResourceCallback[
     Operation_, 

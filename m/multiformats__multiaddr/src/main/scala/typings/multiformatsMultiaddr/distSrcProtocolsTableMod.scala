@@ -1,5 +1,6 @@
 package typings.multiformatsMultiaddr
 
+import typings.multiformatsMultiaddr.mod.Protocol
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -30,42 +31,4 @@ object distSrcProtocolsTableMod {
   @JSImport("@multiformats/multiaddr/dist/src/protocols-table", "table")
   @js.native
   val table: js.Array[js.Tuple5[Double, Double, String, js.UndefOr[Boolean], js.UndefOr[Boolean]]] = js.native
-  
-  trait Protocol extends StObject {
-    
-    var code: Double
-    
-    var name: String
-    
-    var path: js.UndefOr[Boolean] = js.undefined
-    
-    var resolvable: js.UndefOr[Boolean] = js.undefined
-    
-    var size: Double
-  }
-  object Protocol {
-    
-    inline def apply(code: Double, name: String, size: Double): Protocol = {
-      val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Protocol]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: Protocol] (val x: Self) extends AnyVal {
-      
-      inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
-      
-      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-      
-      inline def setPath(value: Boolean): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
-      
-      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
-      
-      inline def setResolvable(value: Boolean): Self = StObject.set(x, "resolvable", value.asInstanceOf[js.Any])
-      
-      inline def setResolvableUndefined: Self = StObject.set(x, "resolvable", js.undefined)
-      
-      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
-    }
-  }
 }

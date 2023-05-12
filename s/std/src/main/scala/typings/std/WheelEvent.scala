@@ -1,5 +1,8 @@
 package typings.std
 
+import typings.std.stdInts.`0x00`
+import typings.std.stdInts.`0x01`
+import typings.std.stdInts.`0x02`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,13 +14,13 @@ trait WheelEvent
      with MouseEvent {
   
   /* standard dom */
-  val DOM_DELTA_LINE: Double = js.native
+  val DOM_DELTA_LINE: `0x01` = js.native
   
   /* standard dom */
-  val DOM_DELTA_PAGE: Double = js.native
+  val DOM_DELTA_PAGE: `0x02` = js.native
   
   /* standard dom */
-  val DOM_DELTA_PIXEL: Double = js.native
+  val DOM_DELTA_PIXEL: `0x00` = js.native
   
   /* standard dom */
   val deltaMode: Double = js.native

@@ -24,6 +24,14 @@ object auth0Strings {
   inline def HS256: HS256 = "HS256".asInstanceOf[HS256]
   
   @js.native
+  sealed trait JSONARRAY extends StObject
+  inline def JSONARRAY: JSONARRAY = "JSONARRAY".asInstanceOf[JSONARRAY]
+  
+  @js.native
+  sealed trait JSONLINES extends StObject
+  inline def JSONLINES: JSONLINES = "JSONLINES".asInstanceOf[JSONLINES]
+  
+  @js.native
   sealed trait RS256 extends StObject
   inline def RS256: RS256 = "RS256".asInstanceOf[RS256]
   
@@ -34,6 +42,10 @@ object auth0Strings {
   @js.native
   sealed trait access_token_authz extends StObject
   inline def access_token_authz: access_token_authz = "access_token_authz".asInstanceOf[access_token_authz]
+  
+  @js.native
+  sealed trait active extends StObject
+  inline def active: active = "active".asInstanceOf[active]
   
   @js.native
   sealed trait ad
@@ -211,6 +223,10 @@ object auth0Strings {
   inline def daccount: daccount = "daccount".asInstanceOf[daccount]
   
   @js.native
+  sealed trait datadog extends StObject
+  inline def datadog: datadog = "datadog".asInstanceOf[datadog]
+  
+  @js.native
   sealed trait depnote
     extends StObject
        with LogEventTypeCode
@@ -267,6 +283,14 @@ object auth0Strings {
        with Strategy
        with UnlinkAccountsParamsProvider
   inline def email: email = "email".asInstanceOf[email]
+  
+  @js.native
+  sealed trait eventbridge extends StObject
+  inline def eventbridge: eventbridge = "eventbridge".asInstanceOf[eventbridge]
+  
+  @js.native
+  sealed trait eventgrid extends StObject
+  inline def eventgrid: eventgrid = "eventgrid".asInstanceOf[eventgrid]
   
   @js.native
   sealed trait evernote
@@ -688,6 +712,10 @@ object auth0Strings {
   inline def guardian: guardian = "guardian".asInstanceOf[guardian]
   
   @js.native
+  sealed trait http extends StObject
+  inline def http: http = "http".asInstanceOf[http]
+  
+  @js.native
   sealed trait `implicit`
     extends StObject
        with Grant
@@ -829,10 +857,20 @@ object auth0Strings {
   inline def oidc: oidc = "oidc".asInstanceOf[oidc]
   
   @js.native
+  sealed trait okta
+    extends StObject
+       with Strategy
+  inline def okta: okta = "okta".asInstanceOf[okta]
+  
+  @js.native
   sealed trait password
     extends StObject
        with Grant
   inline def password: password = "password".asInstanceOf[password]
+  
+  @js.native
+  sealed trait paused extends StObject
+  inline def paused: paused = "paused".asInstanceOf[paused]
   
   @js.native
   sealed trait paypal
@@ -1149,6 +1187,10 @@ object auth0Strings {
   inline def spa: spa = "spa".asInstanceOf[spa]
   
   @js.native
+  sealed trait splunk extends StObject
+  inline def splunk: splunk = "splunk".asInstanceOf[splunk]
+  
+  @js.native
   sealed trait springcm
     extends StObject
        with ClientAppType
@@ -1177,6 +1219,14 @@ object auth0Strings {
     extends StObject
        with LogEventTypeCode
   inline def sui: sui = "sui".asInstanceOf[sui]
+  
+  @js.native
+  sealed trait sumo extends StObject
+  inline def sumo: sumo = "sumo".asInstanceOf[sumo]
+  
+  @js.native
+  sealed trait suspended extends StObject
+  inline def suspended: suspended = "suspended".asInstanceOf[suspended]
   
   @js.native
   sealed trait sv

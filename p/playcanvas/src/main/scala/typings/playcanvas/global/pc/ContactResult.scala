@@ -14,7 +14,8 @@ open class ContactResult protected ()
   /**
     * Create a new ContactResult instance.
     *
-    * @param {Entity} other - The entity that was involved in the contact with this entity.
+    * @param {import('../../entity.js').Entity} other - The entity that was involved in the
+    * contact with this entity.
     * @param {ContactPoint[]} contacts - An array of ContactPoints with the other entity.
     * @hideconstructor
     */

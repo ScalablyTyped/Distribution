@@ -14,6 +14,7 @@ trait SignIn
   // Unique GUID representing the app ID in the Azure Active Directory. Supports $filter (eq operator only).
   var appId: js.UndefOr[NullableOption[String]] = js.undefined
   
+  // Provides a list of conditional access policies that are triggered by the corresponding sign-in activity.
   var appliedConditionalAccessPolicies: js.UndefOr[NullableOption[js.Array[AppliedConditionalAccessPolicy]]] = js.undefined
   
   /**

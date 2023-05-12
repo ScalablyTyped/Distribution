@@ -6,57 +6,36 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Waittimer extends StObject {
   
-  /**
-    * @description Whether the currently authenticated user can approve the deployment
-    * @example true
-    */
-  var current_user_can_approve: Boolean
+  /** @example 3515 */
+  var id: Double
   
-  var environment: HtmlurlId
+  /** @example MDQ6R2F0ZTM1MTU= */
+  var node_id: String
   
-  /** @description The people or teams that may approve jobs that reference the environment. You can list up to six users or teams as reviewers. The reviewers must have at least read access to the repository. Only one of the required reviewers needs to approve the job for it to proceed. */
-  var reviewers: js.Array[`480`]
+  /** @example wait_timer */
+  var `type`: String
   
-  /**
-    * @description The set duration of the wait timer
-    * @example 30
-    */
-  var wait_timer: Double
-  
-  /**
-    * Format: date-time
-    * @description The time that the wait timer began.
-    * @example 2020-11-23T22:00:40Z
-    */
-  var wait_timer_started_at: String | Null
+  var wait_timer: js.UndefOr[Double] = js.undefined
 }
 object Waittimer {
   
-  inline def apply(
-    current_user_can_approve: Boolean,
-    environment: HtmlurlId,
-    reviewers: js.Array[`480`],
-    wait_timer: Double
-  ): Waittimer = {
-    val __obj = js.Dynamic.literal(current_user_can_approve = current_user_can_approve.asInstanceOf[js.Any], environment = environment.asInstanceOf[js.Any], reviewers = reviewers.asInstanceOf[js.Any], wait_timer = wait_timer.asInstanceOf[js.Any], wait_timer_started_at = null)
+  inline def apply(id: Double, node_id: String, `type`: String): Waittimer = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], node_id = node_id.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Waittimer]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: Waittimer] (val x: Self) extends AnyVal {
     
-    inline def setCurrent_user_can_approve(value: Boolean): Self = StObject.set(x, "current_user_can_approve", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    inline def setEnvironment(value: HtmlurlId): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
+    inline def setNode_id(value: String): Self = StObject.set(x, "node_id", value.asInstanceOf[js.Any])
     
-    inline def setReviewers(value: js.Array[`480`]): Self = StObject.set(x, "reviewers", value.asInstanceOf[js.Any])
-    
-    inline def setReviewersVarargs(value: `480`*): Self = StObject.set(x, "reviewers", js.Array(value*))
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setWait_timer(value: Double): Self = StObject.set(x, "wait_timer", value.asInstanceOf[js.Any])
     
-    inline def setWait_timer_started_at(value: String): Self = StObject.set(x, "wait_timer_started_at", value.asInstanceOf[js.Any])
-    
-    inline def setWait_timer_started_atNull: Self = StObject.set(x, "wait_timer_started_at", null)
+    inline def setWait_timerUndefined: Self = StObject.set(x, "wait_timer", js.undefined)
   }
 }

@@ -380,6 +380,8 @@ object sapUiCommonsTreeNodeMod {
     ): Unit = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:selected selected} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -391,6 +393,8 @@ object sapUiCommonsTreeNodeMod {
     mParameters: js.Object): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:toggleOpenState toggleOpenState} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining

@@ -12,6 +12,8 @@ trait PartialSetCookieOptions extends StObject {
   
   var expiry: js.UndefOr[Double] = js.undefined
   
+  var hostOnly: js.UndefOr[Boolean] = js.undefined
+  
   var httpOnly: js.UndefOr[Boolean] = js.undefined
   
   var log: js.UndefOr[Boolean] = js.undefined
@@ -41,6 +43,10 @@ object PartialSetCookieOptions {
     inline def setExpiry(value: Double): Self = StObject.set(x, "expiry", value.asInstanceOf[js.Any])
     
     inline def setExpiryUndefined: Self = StObject.set(x, "expiry", js.undefined)
+    
+    inline def setHostOnly(value: Boolean): Self = StObject.set(x, "hostOnly", value.asInstanceOf[js.Any])
+    
+    inline def setHostOnlyUndefined: Self = StObject.set(x, "hostOnly", js.undefined)
     
     inline def setHttpOnly(value: Boolean): Self = StObject.set(x, "httpOnly", value.asInstanceOf[js.Any])
     

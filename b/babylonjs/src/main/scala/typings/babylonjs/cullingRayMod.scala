@@ -85,7 +85,7 @@ object cullingRayMod {
     def intersectsBoxMinMax(minimum: DeepImmutable[Vector3], maximum: DeepImmutable[Vector3], intersectionTreshold: Double): Boolean = js.native
     
     /**
-      * Checks if ray intersects a mesh
+      * Checks if ray intersects a mesh. The ray is defined in WORLD space.
       * @param mesh the mesh to check
       * @param fastCheck defines if the first intersection will be used (and not the closest)
       * @returns picking info of the intersection
@@ -269,7 +269,16 @@ object cullingRayMod {
     val _TmpVector3: Any = js.native
   }
   
-  type TrianglePickingPredicate = js.Function4[/* p0 */ Vector3, /* p1 */ Vector3, /* p2 */ Vector3, /* ray */ Ray, Boolean]
+  type TrianglePickingPredicate = js.Function7[
+    /* p0 */ Vector3, 
+    /* p1 */ Vector3, 
+    /* p2 */ Vector3, 
+    /* ray */ Ray, 
+    /* i0 */ Double, 
+    /* i1 */ Double, 
+    /* i2 */ Double, 
+    Boolean
+  ]
   
   /* augmented module */
   object babylonjsSceneAugmentingMod {

@@ -38,8 +38,10 @@ open class ScriptType protected () extends EventHandler {
     * Create a new ScriptType instance.
     *
     * @param {object} args - The input arguments object.
-    * @param {AppBase} args.app - The {@link AppBase} that is running the script.
-    * @param {Entity} args.entity - The {@link Entity} that the script is attached to.
+    * @param {import('../app-base.js').AppBase} args.app - The {@link AppBase} that is running the
+    * script.
+    * @param {import('../entity.js').Entity} args.entity - The {@link Entity} that the script is
+    * attached to.
     */
   def this(args: App) = this()
   
@@ -85,7 +87,7 @@ open class ScriptType protected () extends EventHandler {
   /**
     * The {@link AppBase} that the instance of this type belongs to.
     *
-    * @type {AppBase}
+    * @type {import('../app-base.js').AppBase}
     */
   var app: AppBase = js.native
   
@@ -192,12 +194,13 @@ open class ScriptType protected () extends EventHandler {
   /**
     * The {@link Entity} that the instance of this type belongs to.
     *
-    * @type {Entity}
+    * @type {import('../entity.js').Entity}
     */
   var entity: Entity = js.native
   
   /**
-    * @param {{entity: Entity, app: AppBase}} args - The entity and app.
+    * @param {{entity: import('../entity.js').Entity, app: import('../app-base.js').AppBase}} args -
+    * The entity and app.
     * @private
     */
   /* private */ var initScriptType: Any = js.native

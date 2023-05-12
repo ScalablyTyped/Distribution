@@ -1,7 +1,6 @@
 package typings.awsSdk.clientsServicecatalogappregistryMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.awsSdk.awsSdkStrings.CFN_STACK
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,6 +34,8 @@ type Attributes = java.lang.String
 
 type ClientToken = java.lang.String
 
+type CreatedBy = java.lang.String
+
 type Description = java.lang.String
 
 type MaxResults = Double
@@ -56,7 +57,12 @@ type ResourceGroupState = _ResourceGroupState | java.lang.String
 
 type ResourceSpecifier = java.lang.String
 
-type ResourceType = CFN_STACK | java.lang.String
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.CFN_STACK
+  - typings.awsSdk.awsSdkStrings.RESOURCE_TAG_VALUE
+  - java.lang.String
+*/
+type ResourceType = _ResourceType | java.lang.String
 
 type Resources = js.Array[ResourceInfo]
 
@@ -72,6 +78,8 @@ type String = java.lang.String
 type SyncAction = _SyncAction | java.lang.String
 
 type TagKey = java.lang.String
+
+type TagKeyConfig = java.lang.String
 
 type TagKeys = js.Array[TagKey]
 

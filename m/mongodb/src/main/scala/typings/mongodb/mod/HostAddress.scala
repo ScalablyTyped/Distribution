@@ -1,5 +1,6 @@
 package typings.mongodb.mod
 
+import typings.mongodb.anon.Host
 import typings.node.dnsMod.SrvRecord
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -19,6 +20,8 @@ open class HostAddress protected () extends StObject {
   var port: js.UndefOr[scala.Double] = js.native
   
   var socketPath: js.UndefOr[String] = js.native
+  
+  def toHostPort(): Host = js.native
 }
 /* static members */
 object HostAddress {

@@ -8,11 +8,11 @@ trait ParametersPathAnalysisidOwnerQueryConfirmdelete extends StObject {
   
   var parameters: PathAnalysisidOwnerQueryConfirmdelete
   
-  var responses: `400403`
+  var responses: `400403404`
 }
 object ParametersPathAnalysisidOwnerQueryConfirmdelete {
   
-  inline def apply(parameters: PathAnalysisidOwnerQueryConfirmdelete, responses: `400403`): ParametersPathAnalysisidOwnerQueryConfirmdelete = {
+  inline def apply(parameters: PathAnalysisidOwnerQueryConfirmdelete, responses: `400403404`): ParametersPathAnalysisidOwnerQueryConfirmdelete = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersPathAnalysisidOwnerQueryConfirmdelete]
   }
@@ -22,6 +22,6 @@ object ParametersPathAnalysisidOwnerQueryConfirmdelete {
     
     inline def setParameters(value: PathAnalysisidOwnerQueryConfirmdelete): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `400403`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `400403404`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

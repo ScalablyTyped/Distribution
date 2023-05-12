@@ -8,11 +8,56 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object libPreviousMapMod {
   
+  @JSImport("postcss/lib/previous-map", JSImport.Namespace)
+  @js.native
+  open class ^ ()
+    extends StObject
+       with PreviousMap_ {
+    
+    /**
+      * Create a instance of `SourceMapGenerator` class
+      * from the `source-map` library to work with source map information.
+      *
+      * It is lazy method, so it will create object only on first call
+      * and then it will use cache.
+      *
+      * @return Object with source map information.
+      */
+    /* CompleteClass */
+    override def consumer(): SourceMapConsumer = js.native
+    
+    /**
+      * Was source map inlined by data-uri to input CSS.
+      */
+    /* CompleteClass */
+    var `inline`: Boolean = js.native
+    
+    /**
+      * Does source map contains `sourcesContent` with input source text.
+      *
+      * @return Is `sourcesContent` present.
+      */
+    /* CompleteClass */
+    override def withContent(): Boolean = js.native
+  }
+  
+  /**
+    * Source map information from input CSS.
+    * For example, source map after Sass compiler.
+    *
+    * This class will automatically find source map in input CSS or in file system
+    * near input file (according `from` option).
+    *
+    * ```js
+    * const root = parse(css, { from: 'a.sass.css' })
+    * root.input.map //=> PreviousMap
+    * ```
+    */
   @JSImport("postcss/lib/previous-map", JSImport.Default)
   @js.native
   open class default protected ()
     extends StObject
-       with PreviousMap {
+       with PreviousMap_ {
     /**
       * @param css  Input CSS source.
       * @param opts Process options.
@@ -47,7 +92,21 @@ object libPreviousMapMod {
     override def withContent(): Boolean = js.native
   }
   
-  trait PreviousMap extends StObject {
+  type PreviousMap = PreviousMap_
+  
+  /**
+    * Source map information from input CSS.
+    * For example, source map after Sass compiler.
+    *
+    * This class will automatically find source map in input CSS or in file system
+    * near input file (according `from` option).
+    *
+    * ```js
+    * const root = parse(css, { from: 'a.sass.css' })
+    * root.input.map //=> PreviousMap
+    * ```
+    */
+  trait PreviousMap_ extends StObject {
     
     /**
       * `sourceMappingURL` content.
@@ -98,16 +157,16 @@ object libPreviousMapMod {
       */
     def withContent(): Boolean
   }
-  object PreviousMap {
+  object PreviousMap_ {
     
-    inline def apply(consumer: () => SourceMapConsumer, `inline`: Boolean, withContent: () => Boolean): PreviousMap = {
+    inline def apply(consumer: () => SourceMapConsumer, `inline`: Boolean, withContent: () => Boolean): PreviousMap_ = {
       val __obj = js.Dynamic.literal(consumer = js.Any.fromFunction0(consumer), withContent = js.Any.fromFunction0(withContent))
       __obj.updateDynamic("inline")(`inline`.asInstanceOf[js.Any])
-      __obj.asInstanceOf[PreviousMap]
+      __obj.asInstanceOf[PreviousMap_]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: PreviousMap] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: PreviousMap_] (val x: Self) extends AnyVal {
       
       inline def setAnnotation(value: String): Self = StObject.set(x, "annotation", value.asInstanceOf[js.Any])
       

@@ -6,17 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Depth extends StObject {
   
-  var depth: Double
+  val depth: Double
   
-  var depthSegments: Double
+  val depthSegments: Double
   
-  var height: Double
+  val height: Double
   
-  var heightSegments: Double
+  val heightSegments: Double
   
-  var width: Double
+  val width: Double
   
-  var widthSegments: Double
+  val widthSegments: Double
 }
 object Depth {
   

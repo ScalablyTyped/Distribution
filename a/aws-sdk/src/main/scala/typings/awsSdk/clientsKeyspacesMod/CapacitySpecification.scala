@@ -12,7 +12,7 @@ trait CapacitySpecification extends StObject {
   var readCapacityUnits: js.UndefOr[CapacityUnits] = js.undefined
   
   /**
-    * The read/write throughput capacity mode for a table. The options are: • throughputMode:PAY_PER_REQUEST and  • throughputMode:PROVISIONED - Provisioned capacity mode requires readCapacityUnits and writeCapacityUnits as input. The default is throughput_mode:PAY_PER_REQUEST. For more information, see Read/write capacity modes in the Amazon Keyspaces Developer Guide.
+    * The read/write throughput capacity mode for a table. The options are:    throughputMode:PAY_PER_REQUEST and     throughputMode:PROVISIONED - Provisioned capacity mode requires readCapacityUnits and writeCapacityUnits as input.   The default is throughput_mode:PAY_PER_REQUEST. For more information, see Read/write capacity modes in the Amazon Keyspaces Developer Guide.
     */
   var throughputMode: ThroughputMode
   

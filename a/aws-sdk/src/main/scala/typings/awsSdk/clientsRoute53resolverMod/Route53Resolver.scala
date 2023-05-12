@@ -375,12 +375,12 @@ trait Route53Resolver extends Service {
   ): Request[GetFirewallRuleGroupPolicyResponse, AWSError] = js.native
   
   /**
-    * Retrieves the behavior configuration of Route 53 Resolver behavior for a single VPC from Amazon Virtual Private Cloud.
+    * Retrieves the behavior configuration of Route 53 Resolver behavior for a single VPC from Amazon Virtual Private Cloud.
     */
   def getResolverConfig(): Request[GetResolverConfigResponse, AWSError] = js.native
   def getResolverConfig(callback: js.Function2[/* err */ AWSError, /* data */ GetResolverConfigResponse, Unit]): Request[GetResolverConfigResponse, AWSError] = js.native
   /**
-    * Retrieves the behavior configuration of Route 53 Resolver behavior for a single VPC from Amazon Virtual Private Cloud.
+    * Retrieves the behavior configuration of Route 53 Resolver behavior for a single VPC from Amazon Virtual Private Cloud.
     */
   def getResolverConfig(params: GetResolverConfigRequest): Request[GetResolverConfigResponse, AWSError] = js.native
   def getResolverConfig(
@@ -605,12 +605,12 @@ trait Route53Resolver extends Service {
   ): Request[ListFirewallRulesResponse, AWSError] = js.native
   
   /**
-    * Retrieves the Resolver configurations that you have defined. Route 53 Resolver uses the configurations to manage DNS resolution behavior for your VPCs.
+    * Retrieves the Resolver configurations that you have defined. Route 53 Resolver uses the configurations to manage DNS resolution behavior for your VPCs.
     */
   def listResolverConfigs(): Request[ListResolverConfigsResponse, AWSError] = js.native
   def listResolverConfigs(callback: js.Function2[/* err */ AWSError, /* data */ ListResolverConfigsResponse, Unit]): Request[ListResolverConfigsResponse, AWSError] = js.native
   /**
-    * Retrieves the Resolver configurations that you have defined. Route 53 Resolver uses the configurations to manage DNS resolution behavior for your VPCs.
+    * Retrieves the Resolver configurations that you have defined. Route 53 Resolver uses the configurations to manage DNS resolution behavior for your VPCs.
     */
   def listResolverConfigs(params: ListResolverConfigsRequest): Request[ListResolverConfigsResponse, AWSError] = js.native
   def listResolverConfigs(
@@ -865,12 +865,12 @@ trait Route53Resolver extends Service {
   ): Request[UpdateFirewallRuleGroupAssociationResponse, AWSError] = js.native
   
   /**
-    * Updates the behavior configuration of Route 53 Resolver behavior for a single VPC from Amazon Virtual Private Cloud.
+    * Updates the behavior configuration of Route 53 Resolver behavior for a single VPC from Amazon Virtual Private Cloud.
     */
   def updateResolverConfig(): Request[UpdateResolverConfigResponse, AWSError] = js.native
   def updateResolverConfig(callback: js.Function2[/* err */ AWSError, /* data */ UpdateResolverConfigResponse, Unit]): Request[UpdateResolverConfigResponse, AWSError] = js.native
   /**
-    * Updates the behavior configuration of Route 53 Resolver behavior for a single VPC from Amazon Virtual Private Cloud.
+    * Updates the behavior configuration of Route 53 Resolver behavior for a single VPC from Amazon Virtual Private Cloud.
     */
   def updateResolverConfig(params: UpdateResolverConfigRequest): Request[UpdateResolverConfigResponse, AWSError] = js.native
   def updateResolverConfig(
@@ -893,12 +893,12 @@ trait Route53Resolver extends Service {
   ): Request[UpdateResolverDnssecConfigResponse, AWSError] = js.native
   
   /**
-    * Updates the name of an inbound or an outbound Resolver endpoint. 
+    * Updates the name, or enpoint type for an inbound or an outbound Resolver endpoint. You can only update between IPV4 and DUALSTACK, IPV6 endpoint type can't be updated to other type. 
     */
   def updateResolverEndpoint(): Request[UpdateResolverEndpointResponse, AWSError] = js.native
   def updateResolverEndpoint(callback: js.Function2[/* err */ AWSError, /* data */ UpdateResolverEndpointResponse, Unit]): Request[UpdateResolverEndpointResponse, AWSError] = js.native
   /**
-    * Updates the name of an inbound or an outbound Resolver endpoint. 
+    * Updates the name, or enpoint type for an inbound or an outbound Resolver endpoint. You can only update between IPV4 and DUALSTACK, IPV6 endpoint type can't be updated to other type. 
     */
   def updateResolverEndpoint(params: UpdateResolverEndpointRequest): Request[UpdateResolverEndpointResponse, AWSError] = js.native
   def updateResolverEndpoint(

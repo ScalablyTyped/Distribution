@@ -12,6 +12,11 @@ trait UpdateShardCountOutput extends StObject {
   var CurrentShardCount: js.UndefOr[PositiveIntegerObject] = js.undefined
   
   /**
+    * The ARN of the stream.
+    */
+  var StreamARN: js.UndefOr[typings.awsSdk.clientsKinesisMod.StreamARN] = js.undefined
+  
+  /**
     * The name of the stream.
     */
   var StreamName: js.UndefOr[typings.awsSdk.clientsKinesisMod.StreamName] = js.undefined
@@ -34,6 +39,10 @@ object UpdateShardCountOutput {
     inline def setCurrentShardCount(value: PositiveIntegerObject): Self = StObject.set(x, "CurrentShardCount", value.asInstanceOf[js.Any])
     
     inline def setCurrentShardCountUndefined: Self = StObject.set(x, "CurrentShardCount", js.undefined)
+    
+    inline def setStreamARN(value: StreamARN): Self = StObject.set(x, "StreamARN", value.asInstanceOf[js.Any])
+    
+    inline def setStreamARNUndefined: Self = StObject.set(x, "StreamARN", js.undefined)
     
     inline def setStreamName(value: StreamName): Self = StObject.set(x, "StreamName", value.asInstanceOf[js.Any])
     

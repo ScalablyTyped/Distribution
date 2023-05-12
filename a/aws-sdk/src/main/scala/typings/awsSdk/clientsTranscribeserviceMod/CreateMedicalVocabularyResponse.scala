@@ -12,7 +12,7 @@ trait CreateMedicalVocabularyResponse extends StObject {
   var FailureReason: js.UndefOr[typings.awsSdk.clientsTranscribeserviceMod.FailureReason] = js.undefined
   
   /**
-    * The language code you selected for your medical vocabulary. US English (en-US) is the only language supported with Amazon Transcribe Medical.
+    * The language code you selected for your custom medical vocabulary. US English (en-US) is the only language supported with Amazon Transcribe Medical.
     */
   var LanguageCode: js.UndefOr[typings.awsSdk.clientsTranscribeserviceMod.LanguageCode] = js.undefined
   
@@ -27,7 +27,7 @@ trait CreateMedicalVocabularyResponse extends StObject {
   var VocabularyName: js.UndefOr[typings.awsSdk.clientsTranscribeserviceMod.VocabularyName] = js.undefined
   
   /**
-    * The processing state of your custom medical vocabulary. If the state is READY, you can use the vocabulary in a StartMedicalTranscriptionJob request.
+    * The processing state of your custom medical vocabulary. If the state is READY, you can use the custom vocabulary in a StartMedicalTranscriptionJob request.
     */
   var VocabularyState: js.UndefOr[typings.awsSdk.clientsTranscribeserviceMod.VocabularyState] = js.undefined
 }

@@ -12,12 +12,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ECRPUBLIC extends Service {
   
   /**
-    * Checks the availability of one or more image layers within a repository in a public registry. When an image is pushed to a repository, each image layer is checked to verify if it has been uploaded before. If it has been uploaded, then the image layer is skipped.  This operation is used by the Amazon ECR proxy and is not generally used by customers for pulling and pushing images. In most cases, you should use the docker CLI to pull, tag, and push images. 
+    * Checks the availability of one or more image layers that are within a repository in a public registry. When an image is pushed to a repository, each image layer is checked to verify if it has been uploaded before. If it has been uploaded, then the image layer is skipped.  This operation is used by the Amazon ECR proxy and is not generally used by customers for pulling and pushing images. In most cases, you should use the docker CLI to pull, tag, and push images. 
     */
   def batchCheckLayerAvailability(): Request[BatchCheckLayerAvailabilityResponse, AWSError] = js.native
   def batchCheckLayerAvailability(callback: js.Function2[/* err */ AWSError, /* data */ BatchCheckLayerAvailabilityResponse, Unit]): Request[BatchCheckLayerAvailabilityResponse, AWSError] = js.native
   /**
-    * Checks the availability of one or more image layers within a repository in a public registry. When an image is pushed to a repository, each image layer is checked to verify if it has been uploaded before. If it has been uploaded, then the image layer is skipped.  This operation is used by the Amazon ECR proxy and is not generally used by customers for pulling and pushing images. In most cases, you should use the docker CLI to pull, tag, and push images. 
+    * Checks the availability of one or more image layers that are within a repository in a public registry. When an image is pushed to a repository, each image layer is checked to verify if it has been uploaded before. If it has been uploaded, then the image layer is skipped.  This operation is used by the Amazon ECR proxy and is not generally used by customers for pulling and pushing images. In most cases, you should use the docker CLI to pull, tag, and push images. 
     */
   def batchCheckLayerAvailability(params: BatchCheckLayerAvailabilityRequest): Request[BatchCheckLayerAvailabilityResponse, AWSError] = js.native
   def batchCheckLayerAvailability(
@@ -26,12 +26,12 @@ trait ECRPUBLIC extends Service {
   ): Request[BatchCheckLayerAvailabilityResponse, AWSError] = js.native
   
   /**
-    * Deletes a list of specified images within a repository in a public registry. Images are specified with either an imageTag or imageDigest. You can remove a tag from an image by specifying the image's tag in your request. When you remove the last tag from an image, the image is deleted from your repository. You can completely delete an image (and all of its tags) by specifying the image's digest in your request.
+    * Deletes a list of specified images that are within a repository in a public registry. Images are specified with either an imageTag or imageDigest. You can remove a tag from an image by specifying the image's tag in your request. When you remove the last tag from an image, the image is deleted from your repository. You can completely delete an image (and all of its tags) by specifying the digest of the image in your request.
     */
   def batchDeleteImage(): Request[BatchDeleteImageResponse, AWSError] = js.native
   def batchDeleteImage(callback: js.Function2[/* err */ AWSError, /* data */ BatchDeleteImageResponse, Unit]): Request[BatchDeleteImageResponse, AWSError] = js.native
   /**
-    * Deletes a list of specified images within a repository in a public registry. Images are specified with either an imageTag or imageDigest. You can remove a tag from an image by specifying the image's tag in your request. When you remove the last tag from an image, the image is deleted from your repository. You can completely delete an image (and all of its tags) by specifying the image's digest in your request.
+    * Deletes a list of specified images that are within a repository in a public registry. Images are specified with either an imageTag or imageDigest. You can remove a tag from an image by specifying the image's tag in your request. When you remove the last tag from an image, the image is deleted from your repository. You can completely delete an image (and all of its tags) by specifying the digest of the image in your request.
     */
   def batchDeleteImage(params: BatchDeleteImageRequest): Request[BatchDeleteImageResponse, AWSError] = js.native
   def batchDeleteImage(
@@ -40,12 +40,12 @@ trait ECRPUBLIC extends Service {
   ): Request[BatchDeleteImageResponse, AWSError] = js.native
   
   /**
-    * Informs Amazon ECR that the image layer upload has completed for a specified public registry, repository name, and upload ID. You can optionally provide a sha256 digest of the image layer for data validation purposes. When an image is pushed, the CompleteLayerUpload API is called once per each new image layer to verify that the upload has completed.  This operation is used by the Amazon ECR proxy and is not generally used by customers for pulling and pushing images. In most cases, you should use the docker CLI to pull, tag, and push images. 
+    * Informs Amazon ECR that the image layer upload is complete for a specified public registry, repository name, and upload ID. You can optionally provide a sha256 digest of the image layer for data validation purposes. When an image is pushed, the CompleteLayerUpload API is called once for each new image layer to verify that the upload is complete.  This operation is used by the Amazon ECR proxy and is not generally used by customers for pulling and pushing images. In most cases, you should use the docker CLI to pull, tag, and push images. 
     */
   def completeLayerUpload(): Request[CompleteLayerUploadResponse, AWSError] = js.native
   def completeLayerUpload(callback: js.Function2[/* err */ AWSError, /* data */ CompleteLayerUploadResponse, Unit]): Request[CompleteLayerUploadResponse, AWSError] = js.native
   /**
-    * Informs Amazon ECR that the image layer upload has completed for a specified public registry, repository name, and upload ID. You can optionally provide a sha256 digest of the image layer for data validation purposes. When an image is pushed, the CompleteLayerUpload API is called once per each new image layer to verify that the upload has completed.  This operation is used by the Amazon ECR proxy and is not generally used by customers for pulling and pushing images. In most cases, you should use the docker CLI to pull, tag, and push images. 
+    * Informs Amazon ECR that the image layer upload is complete for a specified public registry, repository name, and upload ID. You can optionally provide a sha256 digest of the image layer for data validation purposes. When an image is pushed, the CompleteLayerUpload API is called once for each new image layer to verify that the upload is complete.  This operation is used by the Amazon ECR proxy and is not generally used by customers for pulling and pushing images. In most cases, you should use the docker CLI to pull, tag, and push images. 
     */
   def completeLayerUpload(params: CompleteLayerUploadRequest): Request[CompleteLayerUploadResponse, AWSError] = js.native
   def completeLayerUpload(
@@ -71,12 +71,12 @@ trait ECRPUBLIC extends Service {
   ): Request[CreateRepositoryResponse, AWSError] = js.native
   
   /**
-    * Deletes a repository in a public registry. If the repository contains images, you must either delete all images in the repository or use the force option which deletes all images on your behalf before deleting the repository.
+    * Deletes a repository in a public registry. If the repository contains images, you must either manually delete all images in the repository or use the force option. This option deletes all images on your behalf before deleting the repository.
     */
   def deleteRepository(): Request[DeleteRepositoryResponse, AWSError] = js.native
   def deleteRepository(callback: js.Function2[/* err */ AWSError, /* data */ DeleteRepositoryResponse, Unit]): Request[DeleteRepositoryResponse, AWSError] = js.native
   /**
-    * Deletes a repository in a public registry. If the repository contains images, you must either delete all images in the repository or use the force option which deletes all images on your behalf before deleting the repository.
+    * Deletes a repository in a public registry. If the repository contains images, you must either manually delete all images in the repository or use the force option. This option deletes all images on your behalf before deleting the repository.
     */
   def deleteRepository(params: DeleteRepositoryRequest): Request[DeleteRepositoryResponse, AWSError] = js.native
   def deleteRepository(
@@ -85,12 +85,12 @@ trait ECRPUBLIC extends Service {
   ): Request[DeleteRepositoryResponse, AWSError] = js.native
   
   /**
-    * Deletes the repository policy associated with the specified repository.
+    * Deletes the repository policy that's associated with the specified repository.
     */
   def deleteRepositoryPolicy(): Request[DeleteRepositoryPolicyResponse, AWSError] = js.native
   def deleteRepositoryPolicy(callback: js.Function2[/* err */ AWSError, /* data */ DeleteRepositoryPolicyResponse, Unit]): Request[DeleteRepositoryPolicyResponse, AWSError] = js.native
   /**
-    * Deletes the repository policy associated with the specified repository.
+    * Deletes the repository policy that's associated with the specified repository.
     */
   def deleteRepositoryPolicy(params: DeleteRepositoryPolicyRequest): Request[DeleteRepositoryPolicyResponse, AWSError] = js.native
   def deleteRepositoryPolicy(
@@ -113,12 +113,12 @@ trait ECRPUBLIC extends Service {
   ): Request[DescribeImageTagsResponse, AWSError] = js.native
   
   /**
-    * Returns metadata about the images in a repository in a public registry.  Beginning with Docker version 1.9, the Docker client compresses image layers before pushing them to a V2 Docker registry. The output of the docker images command shows the uncompressed image size, so it may return a larger image size than the image sizes returned by DescribeImages. 
+    * Returns metadata that's related to the images in a repository in a public registry.  Beginning with Docker version 1.9, the Docker client compresses image layers before pushing them to a V2 Docker registry. The output of the docker images command shows the uncompressed image size. Therefore, it might return a larger image size than the image sizes that are returned by DescribeImages. 
     */
   def describeImages(): Request[DescribeImagesResponse, AWSError] = js.native
   def describeImages(callback: js.Function2[/* err */ AWSError, /* data */ DescribeImagesResponse, Unit]): Request[DescribeImagesResponse, AWSError] = js.native
   /**
-    * Returns metadata about the images in a repository in a public registry.  Beginning with Docker version 1.9, the Docker client compresses image layers before pushing them to a V2 Docker registry. The output of the docker images command shows the uncompressed image size, so it may return a larger image size than the image sizes returned by DescribeImages. 
+    * Returns metadata that's related to the images in a repository in a public registry.  Beginning with Docker version 1.9, the Docker client compresses image layers before pushing them to a V2 Docker registry. The output of the docker images command shows the uncompressed image size. Therefore, it might return a larger image size than the image sizes that are returned by DescribeImages. 
     */
   def describeImages(params: DescribeImagesRequest): Request[DescribeImagesResponse, AWSError] = js.native
   def describeImages(
@@ -141,12 +141,12 @@ trait ECRPUBLIC extends Service {
   ): Request[DescribeRegistriesResponse, AWSError] = js.native
   
   /**
-    * Describes repositories in a public registry.
+    * Describes repositories that are in a public registry.
     */
   def describeRepositories(): Request[DescribeRepositoriesResponse, AWSError] = js.native
   def describeRepositories(callback: js.Function2[/* err */ AWSError, /* data */ DescribeRepositoriesResponse, Unit]): Request[DescribeRepositoriesResponse, AWSError] = js.native
   /**
-    * Describes repositories in a public registry.
+    * Describes repositories that are in a public registry.
     */
   def describeRepositories(params: DescribeRepositoriesRequest): Request[DescribeRepositoriesResponse, AWSError] = js.native
   def describeRepositories(
@@ -155,12 +155,12 @@ trait ECRPUBLIC extends Service {
   ): Request[DescribeRepositoriesResponse, AWSError] = js.native
   
   /**
-    * Retrieves an authorization token. An authorization token represents your IAM authentication credentials and can be used to access any Amazon ECR registry that your IAM principal has access to. The authorization token is valid for 12 hours. This API requires the ecr-public:GetAuthorizationToken and sts:GetServiceBearerToken permissions.
+    * Retrieves an authorization token. An authorization token represents your IAM authentication credentials. You can use it to access any Amazon ECR registry that your IAM principal has access to. The authorization token is valid for 12 hours. This API requires the ecr-public:GetAuthorizationToken and sts:GetServiceBearerToken permissions.
     */
   def getAuthorizationToken(): Request[GetAuthorizationTokenResponse, AWSError] = js.native
   def getAuthorizationToken(callback: js.Function2[/* err */ AWSError, /* data */ GetAuthorizationTokenResponse, Unit]): Request[GetAuthorizationTokenResponse, AWSError] = js.native
   /**
-    * Retrieves an authorization token. An authorization token represents your IAM authentication credentials and can be used to access any Amazon ECR registry that your IAM principal has access to. The authorization token is valid for 12 hours. This API requires the ecr-public:GetAuthorizationToken and sts:GetServiceBearerToken permissions.
+    * Retrieves an authorization token. An authorization token represents your IAM authentication credentials. You can use it to access any Amazon ECR registry that your IAM principal has access to. The authorization token is valid for 12 hours. This API requires the ecr-public:GetAuthorizationToken and sts:GetServiceBearerToken permissions.
     */
   def getAuthorizationToken(params: GetAuthorizationTokenRequest): Request[GetAuthorizationTokenResponse, AWSError] = js.native
   def getAuthorizationToken(
@@ -211,12 +211,12 @@ trait ECRPUBLIC extends Service {
   ): Request[GetRepositoryPolicyResponse, AWSError] = js.native
   
   /**
-    * Notifies Amazon ECR that you intend to upload an image layer. When an image is pushed, the InitiateLayerUpload API is called once per image layer that has not already been uploaded. Whether or not an image layer has been uploaded is determined by the BatchCheckLayerAvailability API action.  This operation is used by the Amazon ECR proxy and is not generally used by customers for pulling and pushing images. In most cases, you should use the docker CLI to pull, tag, and push images. 
+    * Notifies Amazon ECR that you intend to upload an image layer. When an image is pushed, the InitiateLayerUpload API is called once for each image layer that hasn't already been uploaded. Whether an image layer uploads is determined by the BatchCheckLayerAvailability API action.  This operation is used by the Amazon ECR proxy and is not generally used by customers for pulling and pushing images. In most cases, you should use the docker CLI to pull, tag, and push images. 
     */
   def initiateLayerUpload(): Request[InitiateLayerUploadResponse, AWSError] = js.native
   def initiateLayerUpload(callback: js.Function2[/* err */ AWSError, /* data */ InitiateLayerUploadResponse, Unit]): Request[InitiateLayerUploadResponse, AWSError] = js.native
   /**
-    * Notifies Amazon ECR that you intend to upload an image layer. When an image is pushed, the InitiateLayerUpload API is called once per image layer that has not already been uploaded. Whether or not an image layer has been uploaded is determined by the BatchCheckLayerAvailability API action.  This operation is used by the Amazon ECR proxy and is not generally used by customers for pulling and pushing images. In most cases, you should use the docker CLI to pull, tag, and push images. 
+    * Notifies Amazon ECR that you intend to upload an image layer. When an image is pushed, the InitiateLayerUpload API is called once for each image layer that hasn't already been uploaded. Whether an image layer uploads is determined by the BatchCheckLayerAvailability API action.  This operation is used by the Amazon ECR proxy and is not generally used by customers for pulling and pushing images. In most cases, you should use the docker CLI to pull, tag, and push images. 
     */
   def initiateLayerUpload(params: InitiateLayerUploadRequest): Request[InitiateLayerUploadResponse, AWSError] = js.native
   def initiateLayerUpload(
@@ -239,12 +239,12 @@ trait ECRPUBLIC extends Service {
   ): Request[ListTagsForResourceResponse, AWSError] = js.native
   
   /**
-    * Creates or updates the image manifest and tags associated with an image. When an image is pushed and all new image layers have been uploaded, the PutImage API is called once to create or update the image manifest and the tags associated with the image.  This operation is used by the Amazon ECR proxy and is not generally used by customers for pulling and pushing images. In most cases, you should use the docker CLI to pull, tag, and push images. 
+    * Creates or updates the image manifest and tags that are associated with an image. When an image is pushed and all new image layers have been uploaded, the PutImage API is called once to create or update the image manifest and the tags that are associated with the image.  This operation is used by the Amazon ECR proxy and is not generally used by customers for pulling and pushing images. In most cases, you should use the docker CLI to pull, tag, and push images. 
     */
   def putImage(): Request[PutImageResponse, AWSError] = js.native
   def putImage(callback: js.Function2[/* err */ AWSError, /* data */ PutImageResponse, Unit]): Request[PutImageResponse, AWSError] = js.native
   /**
-    * Creates or updates the image manifest and tags associated with an image. When an image is pushed and all new image layers have been uploaded, the PutImage API is called once to create or update the image manifest and the tags associated with the image.  This operation is used by the Amazon ECR proxy and is not generally used by customers for pulling and pushing images. In most cases, you should use the docker CLI to pull, tag, and push images. 
+    * Creates or updates the image manifest and tags that are associated with an image. When an image is pushed and all new image layers have been uploaded, the PutImage API is called once to create or update the image manifest and the tags that are associated with the image.  This operation is used by the Amazon ECR proxy and is not generally used by customers for pulling and pushing images. In most cases, you should use the docker CLI to pull, tag, and push images. 
     */
   def putImage(params: PutImageRequest): Request[PutImageResponse, AWSError] = js.native
   def putImage(
@@ -253,12 +253,12 @@ trait ECRPUBLIC extends Service {
   ): Request[PutImageResponse, AWSError] = js.native
   
   /**
-    * Create or updates the catalog data for a public registry.
+    * Create or update the catalog data for a public registry.
     */
   def putRegistryCatalogData(): Request[PutRegistryCatalogDataResponse, AWSError] = js.native
   def putRegistryCatalogData(callback: js.Function2[/* err */ AWSError, /* data */ PutRegistryCatalogDataResponse, Unit]): Request[PutRegistryCatalogDataResponse, AWSError] = js.native
   /**
-    * Create or updates the catalog data for a public registry.
+    * Create or update the catalog data for a public registry.
     */
   def putRegistryCatalogData(params: PutRegistryCatalogDataRequest): Request[PutRegistryCatalogDataResponse, AWSError] = js.native
   def putRegistryCatalogData(
@@ -295,12 +295,12 @@ trait ECRPUBLIC extends Service {
   ): Request[SetRepositoryPolicyResponse, AWSError] = js.native
   
   /**
-    * Associates the specified tags to a resource with the specified resourceArn. If existing tags on a resource are not specified in the request parameters, they are not changed. When a resource is deleted, the tags associated with that resource are deleted as well.
+    * Associates the specified tags to a resource with the specified resourceArn. If existing tags on a resource aren't specified in the request parameters, they aren't changed. When a resource is deleted, the tags associated with that resource are also deleted.
     */
   def tagResource(): Request[TagResourceResponse, AWSError] = js.native
   def tagResource(callback: js.Function2[/* err */ AWSError, /* data */ TagResourceResponse, Unit]): Request[TagResourceResponse, AWSError] = js.native
   /**
-    * Associates the specified tags to a resource with the specified resourceArn. If existing tags on a resource are not specified in the request parameters, they are not changed. When a resource is deleted, the tags associated with that resource are deleted as well.
+    * Associates the specified tags to a resource with the specified resourceArn. If existing tags on a resource aren't specified in the request parameters, they aren't changed. When a resource is deleted, the tags associated with that resource are also deleted.
     */
   def tagResource(params: TagResourceRequest): Request[TagResourceResponse, AWSError] = js.native
   def tagResource(
@@ -323,12 +323,12 @@ trait ECRPUBLIC extends Service {
   ): Request[UntagResourceResponse, AWSError] = js.native
   
   /**
-    * Uploads an image layer part to Amazon ECR. When an image is pushed, each new image layer is uploaded in parts. The maximum size of each image layer part can be 20971520 bytes (or about 20MB). The UploadLayerPart API is called once per each new image layer part.  This operation is used by the Amazon ECR proxy and is not generally used by customers for pulling and pushing images. In most cases, you should use the docker CLI to pull, tag, and push images. 
+    * Uploads an image layer part to Amazon ECR. When an image is pushed, each new image layer is uploaded in parts. The maximum size of each image layer part can be 20971520 bytes (about 20MB). The UploadLayerPart API is called once for each new image layer part.  This operation is used by the Amazon ECR proxy and is not generally used by customers for pulling and pushing images. In most cases, you should use the docker CLI to pull, tag, and push images. 
     */
   def uploadLayerPart(): Request[UploadLayerPartResponse, AWSError] = js.native
   def uploadLayerPart(callback: js.Function2[/* err */ AWSError, /* data */ UploadLayerPartResponse, Unit]): Request[UploadLayerPartResponse, AWSError] = js.native
   /**
-    * Uploads an image layer part to Amazon ECR. When an image is pushed, each new image layer is uploaded in parts. The maximum size of each image layer part can be 20971520 bytes (or about 20MB). The UploadLayerPart API is called once per each new image layer part.  This operation is used by the Amazon ECR proxy and is not generally used by customers for pulling and pushing images. In most cases, you should use the docker CLI to pull, tag, and push images. 
+    * Uploads an image layer part to Amazon ECR. When an image is pushed, each new image layer is uploaded in parts. The maximum size of each image layer part can be 20971520 bytes (about 20MB). The UploadLayerPart API is called once for each new image layer part.  This operation is used by the Amazon ECR proxy and is not generally used by customers for pulling and pushing images. In most cases, you should use the docker CLI to pull, tag, and push images. 
     */
   def uploadLayerPart(params: UploadLayerPartRequest): Request[UploadLayerPartResponse, AWSError] = js.native
   def uploadLayerPart(

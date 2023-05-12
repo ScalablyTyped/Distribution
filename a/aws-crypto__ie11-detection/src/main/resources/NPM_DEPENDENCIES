@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@aws-crypto/ie11-detection" : "2.0.2"
+      "@aws-crypto/ie11-detection" : "4.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@aws-crypto/ie11-detection" : "2.0.2"
+      "@aws-crypto/ie11-detection" : "4.0.0"
     }
   ],
   "compile-devDependencies" : [

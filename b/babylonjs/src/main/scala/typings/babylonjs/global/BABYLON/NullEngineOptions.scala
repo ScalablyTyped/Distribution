@@ -12,14 +12,14 @@ open class NullEngineOptions ()
   
   /**
     * If delta time between frames should be constant
-    * @see https://doc.babylonjs.com/babylon101/animations#deterministic-lockstep
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/animation/advanced_animations#deterministic-lockstep
     */
   /* CompleteClass */
   var deterministicLockstep: Boolean = js.native
   
   /**
     * Maximum about of steps between frames (Default: 4)
-    * @see https://doc.babylonjs.com/babylon101/animations#deterministic-lockstep
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/animation/advanced_animations#deterministic-lockstep
     */
   /* CompleteClass */
   var lockstepMaxSteps: Double = js.native

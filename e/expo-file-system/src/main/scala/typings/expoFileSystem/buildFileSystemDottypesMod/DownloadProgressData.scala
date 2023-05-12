@@ -6,8 +6,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DownloadProgressData extends StObject {
   
+  /**
+    * The total bytes expected to be written by the download operation. A value of `-1` means that the server did not return the `Content-Length` header
+    * and the total size is unknown. Without this header, you won't be able to track the download progress.
+    */
   var totalBytesExpectedToWrite: Double
   
+  /**
+    * The total bytes written by the download operation.
+    */
   var totalBytesWritten: Double
 }
 object DownloadProgressData {

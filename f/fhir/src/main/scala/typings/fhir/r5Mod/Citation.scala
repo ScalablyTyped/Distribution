@@ -17,6 +17,8 @@ trait Citation
   
   var _copyright: js.UndefOr[Element] = js.undefined
   
+  var _copyrightLabel: js.UndefOr[Element] = js.undefined
+  
   var _date: js.UndefOr[Element] = js.undefined
   
   var _description: js.UndefOr[Element] = js.undefined
@@ -39,13 +41,16 @@ trait Citation
   
   var _version: js.UndefOr[Element] = js.undefined
   
+  var _versionAlgorithmString: js.UndefOr[Element] = js.undefined
+  
   /**
     * The 'date' element may be more recent than the approval date because of minor changes or editorial corrections.
+    * See guidance around (not) making local changes to elements [here](canonicalresource.html#localization).
     */
   var approvalDate: js.UndefOr[String] = js.undefined
   
   /**
-    * Who authored the Citation.
+    * The Citation.author element is structured to support a name (with a string datatype) and contact point information for the author/creator, and is not structured to support unique identifiers for the author. If detailed contributorship data is needed for the authorship of the citation record, then one can create a Citation Resource for the Citation Resource.
     */
   var author: js.UndefOr[js.Array[ContactDetail]] = js.undefined
   
@@ -55,67 +60,78 @@ trait Citation
   var citedArtifact: js.UndefOr[CitationCitedArtifact] = js.undefined
   
   /**
-    * The assignment to an organizing scheme.
+    * Use this element if you need to classify the citation record independently from classifying the cited artifact.
     */
   var classification: js.UndefOr[js.Array[CitationClassification]] = js.undefined
   
   /**
     * May be a web site, an email address, a telephone number, etc.
+    * See guidance around (not) making local changes to elements [here](canonicalresource.html#localization).
     */
   var contact: js.UndefOr[js.Array[ContactDetail]] = js.undefined
   
   /**
-    * Use and/or publishing restrictions for the Citation, not for the cited artifact.
+    * Use and/or publishing restrictions for the citation record, not for the cited artifact.
     */
   var copyright: js.UndefOr[String] = js.undefined
   
   /**
-    * The status of the citation.
+    * The (c) symbol should NOT be included in this string. It will be added by software when rendering the notation. Full details about licensing, restrictions, warrantees, etc. goes in the more general 'copyright' element.
+    */
+  var copyrightLabel: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Use this if needed for reporting the state or status of the citation record, NOT FOR reporting the state or status of the cited article.
     */
   var currentState: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
   /**
-    * Note that this is not the same as the resource last-modified-date, since the resource may be a secondary representation of the citation. Additional specific dates may be added as extensions or be found by consulting Provenances associated with past versions of the resource.
+    * The date is often not tracked until the resource is published, but may be present on draft content. Note that this is not the same as the resource last-modified-date, since the resource may be a secondary representation of the citation record. Additional specific dates may be added as extensions or be found by consulting Provenances associated with past versions of the resource.
+    * See guidance around (not) making local changes to elements [here](canonicalresource.html#localization).
     */
   var date: js.UndefOr[String] = js.undefined
   
   /**
-    * This description can be used to capture details such as why the citation was built, comments about misuse, instructions for clinical use and interpretation, literature references, examples from the paper world, etc. It is not a rendering of the citation as conveyed in the 'text' field of the resource itself. This item SHOULD be populated unless the information is available from context (e.g. the language of the citation is presumed to be the predominant language in the place the citation was created).
+    * This description can be used to capture details such as comments about misuse, instructions for clinical use and interpretation, literature references, examples from the paper world, etc. It is not a rendering of the citation as conveyed in the 'text' field of the resource itself. This item SHOULD be populated unless the information is available from context (e.g. the language of the citation is presumed to be the predominant language in the place the citation was created).
     */
   var description: js.UndefOr[String] = js.undefined
   
   /**
-    * Who edited the Citation.
+    * The Citation.editor element is structured to support a name (with a string datatype) and contact point information for the editor, and is not structured to support unique identifiers for the editor. If detailed contributorship data is needed for the editing of the citation record, then one can create a Citation Resource for the Citation Resource.
     */
   var editor: js.UndefOr[js.Array[ContactDetail]] = js.undefined
   
   /**
-    * The effective period for a citation  determines when the content is applicable for usage and is independent of publication and review dates. For example, a measure intended to be used for the year 2016 might be published in 2015.
+    * The effective period for a citation record determines when the content is applicable for usage and is independent of publication and review dates. For example, a citation intended to be used for the year 2016 might be published in 2015.
+    * See guidance around (not) making local changes to elements [here](canonicalresource.html#localization).
     */
   var effectivePeriod: js.UndefOr[Period] = js.undefined
   
   /**
-    * Who endorsed the Citation.
+    * The Citation.endorser element is structured to support a name (with a string datatype) and contact point information for the endorser, and is not structured to support unique identifiers for the endorser. If detailed contributorship data is needed for the endorsement of the citation record, then one can create a Citation Resource for the Citation Resource.
+    * See guidance around (not) making local changes to elements [here](canonicalresource.html#localization).
     */
   var endorser: js.UndefOr[js.Array[ContactDetail]] = js.undefined
   
   /**
-    * Allows filtering of citations that are appropriate for use versus not.
+    * Allows filtering of citation records that are appropriate for use versus not.
     */
   var experimental: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * May include DOI, PMID, PMCID, etc. This element will contain unique identifiers that support de-duplication of citations. This identifier can be valid for only one citation resource.
+    * Use this element if you need to identify the citation record independently from identifying the cited artifact.
     */
   var identifier: js.UndefOr[js.Array[Identifier]] = js.undefined
   
   /**
-    * It may be possible for the citation to be used in jurisdictions other than those for which it was originally designed or intended.
+    * It may be possible for the citation record to be used in jurisdictions other than those for which it was originally designed or intended.
+    * DEPRECATION NOTE: For consistency, implementations are encouraged to migrate to using the new 'jurisdiction' code in the useContext element.  (I.e. useContext.code indicating http://terminology.hl7.org/CodeSystem/usage-context-type#jurisdiction and useContext.valueCodeableConcept indicating the jurisdiction.)
     */
   var jurisdiction: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
   /**
     * If specified, this date follows the original approval date.
+    * See guidance around (not) making local changes to elements [here](canonicalresource.html#localization).
     */
   var lastReviewDate: js.UndefOr[String] = js.undefined
   
@@ -130,7 +146,7 @@ trait Citation
   var note: js.UndefOr[js.Array[Annotation]] = js.undefined
   
   /**
-    * Usually an organization but may be an individual. The publisher (or steward) of the citation is the organization or individual primarily responsible for the maintenance and upkeep of the citation. This is not necessarily the same individual or organization that developed and initially authored the content. The publisher is the primary point of contact for questions or issues with the citation. This item SHOULD be populated unless the information is available from context.
+    * Usually an organization but may be an individual. The publisher (or steward) of the citation record is the organization or individual primarily responsible for the maintenance and upkeep of the citation record. This is not necessarily the same individual or organization that developed and initially authored the content. The publisher is the primary point of contact for questions or issues with the citation record. This item SHOULD be populated unless the information is available from context.
     */
   var publisher: js.UndefOr[String] = js.undefined
   
@@ -140,7 +156,7 @@ trait Citation
   var purpose: js.UndefOr[String] = js.undefined
   
   /**
-    * Artifact related to the Citation Resource.
+    * Use this if needed for reporting artifacts related to the citation record, NOT FOR reporting artifacts related to the cited article. For example, one may use this element to report the data source for generation of the Citation Resource instance if it was automatically generated, such as conversion from a citation repository.
     */
   var relatedArtifact: js.UndefOr[js.Array[RelatedArtifact]] = js.undefined
   
@@ -149,32 +165,34 @@ trait Citation
   val resourceType_Citation: typings.fhir.fhirStrings.Citation
   
   /**
-    * Who reviewed the Citation.
+    * The Citation.reviewer element is structured to support a name (with a string datatype) and contact point information for the reviewer, and is not structured to support unique identifiers for the reviewer. If detailed contributorship data is needed for the review of the citation record, then one can create a Citation Resource for the Citation Resource.
+    * See guidance around (not) making local changes to elements [here](canonicalresource.html#localization).
     */
   var reviewer: js.UndefOr[js.Array[ContactDetail]] = js.undefined
   
   /**
-    * Allows filtering of summarys s that are appropriate for use versus not.
+    * Allows filtering of summaries that are appropriate for use versus not. Use "active" when the citation record is the version for others to actively use, "draft" while you are developing the content, and "retired" when this record should no longer be used for any purpose.
+    * See guidance around (not) making local changes to elements [here](canonicalresource.html#localization).
     */
   var status: draft | active | retired | unknown
   
   /**
-    * An effective date or period for a status of the citation.
+    * Use this if needed for reporting the state or status of the citation record, NOT FOR reporting the state or status of the cited article.
     */
   var statusDate: js.UndefOr[js.Array[CitationStatusDate]] = js.undefined
   
   /**
-    * A human-readable display of the citation.
+    * A human-readable display of key concepts to represent the citation.
     */
   var summary: js.UndefOr[js.Array[CitationSummary]] = js.undefined
   
   /**
-    * This name does not need to be machine-processing friendly and may contain punctuation, white-space, etc.
+    * This name does not need to be machine-processing friendly and may contain punctuation, white-space, etc. Use this element if you have a need for naming the citation record for human use, such as a display name for the citation record that is used when selecting citations from a list.
     */
   var title: js.UndefOr[String] = js.undefined
   
   /**
-    * Can be a urn:uuid: or a urn:oid: but real http: addresses are preferred. Multiple instances may share the same URL if they have a distinct version.
+    * In some cases, the resource can no longer be found at the stated url, but the url itself cannot change. Implementations can use the meta.source element to indicate where the current master source of the resource can be found.
     */
   var url: js.UndefOr[String] = js.undefined
   
@@ -184,9 +202,19 @@ trait Citation
   var useContext: js.UndefOr[js.Array[UsageContext]] = js.undefined
   
   /**
-    * There may be different citation instances that have the same identifier but different versions.  The version can be appended to the url in a reference to allow a reference to a particular business version of the citation with the format [url]|[version].
+    * There may be different citation record instances that have the same identifier but different versions. The version can be appended to the url in a reference to allow a reference to a particular business version of the citation record with the format [url]|[version]. The version SHOULD NOT contain a '#' - see [Business Version](resource.html#bv-format).
     */
   var version: js.UndefOr[String] = js.undefined
+  
+  /**
+    * If set as a string, this is a FHIRPath expression that has two additional context variables passed in - %version1 and %version2 and will return a negative number if version1 is newer, a positive number if version2 is newer, and a 0 if the version ordering can't successfully be determined.
+    */
+  var versionAlgorithmCoding: js.UndefOr[Coding] = js.undefined
+  
+  /**
+    * If set as a string, this is a FHIRPath expression that has two additional context variables passed in - %version1 and %version2 and will return a negative number if version1 is newer, a positive number if version2 is newer, and a 0 if the version ordering can't successfully be determined.
+    */
+  var versionAlgorithmString: js.UndefOr[String] = js.undefined
 }
 object Citation {
   
@@ -225,6 +253,10 @@ object Citation {
     inline def setContactVarargs(value: ContactDetail*): Self = StObject.set(x, "contact", js.Array(value*))
     
     inline def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
+    
+    inline def setCopyrightLabel(value: String): Self = StObject.set(x, "copyrightLabel", value.asInstanceOf[js.Any])
+    
+    inline def setCopyrightLabelUndefined: Self = StObject.set(x, "copyrightLabel", js.undefined)
     
     inline def setCopyrightUndefined: Self = StObject.set(x, "copyright", js.undefined)
     
@@ -340,6 +372,14 @@ object Citation {
     
     inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
+    inline def setVersionAlgorithmCoding(value: Coding): Self = StObject.set(x, "versionAlgorithmCoding", value.asInstanceOf[js.Any])
+    
+    inline def setVersionAlgorithmCodingUndefined: Self = StObject.set(x, "versionAlgorithmCoding", js.undefined)
+    
+    inline def setVersionAlgorithmString(value: String): Self = StObject.set(x, "versionAlgorithmString", value.asInstanceOf[js.Any])
+    
+    inline def setVersionAlgorithmStringUndefined: Self = StObject.set(x, "versionAlgorithmString", js.undefined)
+    
     inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     
     inline def set_approvalDate(value: Element): Self = StObject.set(x, "_approvalDate", value.asInstanceOf[js.Any])
@@ -347,6 +387,10 @@ object Citation {
     inline def set_approvalDateUndefined: Self = StObject.set(x, "_approvalDate", js.undefined)
     
     inline def set_copyright(value: Element): Self = StObject.set(x, "_copyright", value.asInstanceOf[js.Any])
+    
+    inline def set_copyrightLabel(value: Element): Self = StObject.set(x, "_copyrightLabel", value.asInstanceOf[js.Any])
+    
+    inline def set_copyrightLabelUndefined: Self = StObject.set(x, "_copyrightLabel", js.undefined)
     
     inline def set_copyrightUndefined: Self = StObject.set(x, "_copyright", js.undefined)
     
@@ -391,6 +435,10 @@ object Citation {
     inline def set_urlUndefined: Self = StObject.set(x, "_url", js.undefined)
     
     inline def set_version(value: Element): Self = StObject.set(x, "_version", value.asInstanceOf[js.Any])
+    
+    inline def set_versionAlgorithmString(value: Element): Self = StObject.set(x, "_versionAlgorithmString", value.asInstanceOf[js.Any])
+    
+    inline def set_versionAlgorithmStringUndefined: Self = StObject.set(x, "_versionAlgorithmString", js.undefined)
     
     inline def set_versionUndefined: Self = StObject.set(x, "_version", js.undefined)
   }

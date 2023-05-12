@@ -1,477 +1,204 @@
 package typings.svelteLeafletjs.mod
 
-import typings.std.NonNullable
+import typings.leaflet.mod.DragEndEvent
+import typings.leaflet.mod.ErrorEvent
+import typings.leaflet.mod.LayerEvent
+import typings.leaflet.mod.LayersControlEvent
+import typings.leaflet.mod.LeafletEvent
+import typings.leaflet.mod.LeafletMouseEvent
+import typings.leaflet.mod.LocationEvent
+import typings.leaflet.mod.PopupEvent
+import typings.leaflet.mod.ResizeEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined svelte-leafletjs.svelte-leafletjs.CreateSvelteEventMap<react-leaflet.react-leaflet.MapEvents> */
 trait MapEvents extends StObject {
   
-  var onautopanstart: NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LeafletEvent): void | undefined>>>[0] */ js.Any
-  ]
+  var autopanstart: LeafletEvent
   
-  var onbaselayerchange: NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LayersControlEvent): void | undefined>>>[0] */ js.Any
-  ]
+  var baselayerchange: LayersControlEvent
   
-  var onblur: NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LeafletEvent): void | undefined>>>[0] */ js.Any
-  ]
+  var blur: LeafletEvent
   
-  var onclick: NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LeafletMouseEvent): void | undefined>>>[0] */ js.Any
-  ]
+  var click: LeafletMouseEvent
   
-  var oncontextmenu: NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LeafletMouseEvent): void | undefined>>>[0] */ js.Any
-  ]
+  var contextmenu: LeafletMouseEvent
   
-  var ondblclick: NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LeafletMouseEvent): void | undefined>>>[0] */ js.Any
-  ]
+  var dblclick: LeafletMouseEvent
   
-  var ondrag: NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LeafletEvent): void | undefined>>>[0] */ js.Any
-  ]
+  var drag: LeafletEvent
   
-  var ondragend: NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.DragEndEvent): void | undefined>>>[0] */ js.Any
-  ]
+  var dragend: DragEndEvent
   
-  var ondragstart: NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LeafletEvent): void | undefined>>>[0] */ js.Any
-  ]
+  var dragstart: LeafletEvent
   
-  var onfocus: NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LeafletEvent): void | undefined>>>[0] */ js.Any
-  ]
+  var focus: LeafletEvent
   
-  var onlayeradd: NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LayerEvent): void | undefined>>>[0] */ js.Any
-  ]
+  var layeradd: LayerEvent
   
-  var onlayerremove: NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LayerEvent): void | undefined>>>[0] */ js.Any
-  ]
+  var layerremove: LayerEvent
   
-  var onload: NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LeafletEvent): void | undefined>>>[0] */ js.Any
-  ]
+  var load: LeafletEvent
   
-  var onlocationerror: NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.ErrorEvent): void | undefined>>>[0] */ js.Any
-  ]
+  var locationerror: ErrorEvent
   
-  var onlocationfound: NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LocationEvent): void | undefined>>>[0] */ js.Any
-  ]
+  var locationfound: LocationEvent
   
-  var onmousedown: NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LeafletMouseEvent): void | undefined>>>[0] */ js.Any
-  ]
+  var mousedown: LeafletMouseEvent
   
-  var onmousemove: NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LeafletMouseEvent): void | undefined>>>[0] */ js.Any
-  ]
+  var mousemove: LeafletMouseEvent
   
-  var onmouseout: NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LeafletMouseEvent): void | undefined>>>[0] */ js.Any
-  ]
+  var mouseout: LeafletMouseEvent
   
-  var onmouseover: NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LeafletMouseEvent): void | undefined>>>[0] */ js.Any
-  ]
+  var mouseover: LeafletMouseEvent
   
-  var onmouseup: NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LeafletMouseEvent): void | undefined>>>[0] */ js.Any
-  ]
+  var mouseup: LeafletMouseEvent
   
-  var onmove: NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LeafletEvent): void | undefined>>>[0] */ js.Any
-  ]
+  var move: LeafletEvent
   
-  var onmoveend: NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LeafletEvent): void | undefined>>>[0] */ js.Any
-  ]
+  var moveend: LeafletEvent
   
-  var onmovestart: NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LeafletEvent): void | undefined>>>[0] */ js.Any
-  ]
+  var movestart: LeafletEvent
   
-  var onoverlayadd: NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LayersControlEvent): void | undefined>>>[0] */ js.Any
-  ]
+  var overlayadd: LayersControlEvent
   
-  var onoverlayremove: NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LayersControlEvent): void | undefined>>>[0] */ js.Any
-  ]
+  var overlayremove: LayersControlEvent
   
-  var onpopupclose: NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.PopupEvent): void | undefined>>>[0] */ js.Any
-  ]
+  var popupclose: PopupEvent
   
-  var onpopupopen: NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.PopupEvent): void | undefined>>>[0] */ js.Any
-  ]
+  var popupopen: PopupEvent
   
-  var onpreclick: NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LeafletMouseEvent): void | undefined>>>[0] */ js.Any
-  ]
+  var preclick: LeafletMouseEvent
   
-  var onresize: NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.ResizeEvent): void | undefined>>>[0] */ js.Any
-  ]
+  var resize: ResizeEvent
   
-  var onunload: NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LeafletEvent): void | undefined>>>[0] */ js.Any
-  ]
+  var unload: LeafletEvent
   
-  var onviewreset: NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LeafletEvent): void | undefined>>>[0] */ js.Any
-  ]
+  var viewreset: LeafletEvent
   
-  var onzoom: NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LeafletEvent): void | undefined>>>[0] */ js.Any
-  ]
+  var zoom: LeafletEvent
   
-  var onzoomend: NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LeafletEvent): void | undefined>>>[0] */ js.Any
-  ]
+  var zoomend: LeafletEvent
   
-  var onzoomlevelschange: NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LeafletEvent): void | undefined>>>[0] */ js.Any
-  ]
+  var zoomlevelschange: LeafletEvent
   
-  var onzoomstart: NonNullable[
-    /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LeafletEvent): void | undefined>>>[0] */ js.Any
-  ]
+  var zoomstart: LeafletEvent
 }
 object MapEvents {
   
   inline def apply(
-    onautopanstart: NonNullable[
-      /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LeafletEvent): void | undefined>>>[0] */ js.Any
-    ],
-    onbaselayerchange: NonNullable[
-      /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LayersControlEvent): void | undefined>>>[0] */ js.Any
-    ],
-    onblur: NonNullable[
-      /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LeafletEvent): void | undefined>>>[0] */ js.Any
-    ],
-    onclick: NonNullable[
-      /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LeafletMouseEvent): void | undefined>>>[0] */ js.Any
-    ],
-    oncontextmenu: NonNullable[
-      /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LeafletMouseEvent): void | undefined>>>[0] */ js.Any
-    ],
-    ondblclick: NonNullable[
-      /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LeafletMouseEvent): void | undefined>>>[0] */ js.Any
-    ],
-    ondrag: NonNullable[
-      /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LeafletEvent): void | undefined>>>[0] */ js.Any
-    ],
-    ondragend: NonNullable[
-      /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.DragEndEvent): void | undefined>>>[0] */ js.Any
-    ],
-    ondragstart: NonNullable[
-      /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LeafletEvent): void | undefined>>>[0] */ js.Any
-    ],
-    onfocus: NonNullable[
-      /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LeafletEvent): void | undefined>>>[0] */ js.Any
-    ],
-    onlayeradd: NonNullable[
-      /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LayerEvent): void | undefined>>>[0] */ js.Any
-    ],
-    onlayerremove: NonNullable[
-      /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LayerEvent): void | undefined>>>[0] */ js.Any
-    ],
-    onload: NonNullable[
-      /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LeafletEvent): void | undefined>>>[0] */ js.Any
-    ],
-    onlocationerror: NonNullable[
-      /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.ErrorEvent): void | undefined>>>[0] */ js.Any
-    ],
-    onlocationfound: NonNullable[
-      /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LocationEvent): void | undefined>>>[0] */ js.Any
-    ],
-    onmousedown: NonNullable[
-      /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LeafletMouseEvent): void | undefined>>>[0] */ js.Any
-    ],
-    onmousemove: NonNullable[
-      /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LeafletMouseEvent): void | undefined>>>[0] */ js.Any
-    ],
-    onmouseout: NonNullable[
-      /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LeafletMouseEvent): void | undefined>>>[0] */ js.Any
-    ],
-    onmouseover: NonNullable[
-      /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LeafletMouseEvent): void | undefined>>>[0] */ js.Any
-    ],
-    onmouseup: NonNullable[
-      /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LeafletMouseEvent): void | undefined>>>[0] */ js.Any
-    ],
-    onmove: NonNullable[
-      /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LeafletEvent): void | undefined>>>[0] */ js.Any
-    ],
-    onmoveend: NonNullable[
-      /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LeafletEvent): void | undefined>>>[0] */ js.Any
-    ],
-    onmovestart: NonNullable[
-      /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LeafletEvent): void | undefined>>>[0] */ js.Any
-    ],
-    onoverlayadd: NonNullable[
-      /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LayersControlEvent): void | undefined>>>[0] */ js.Any
-    ],
-    onoverlayremove: NonNullable[
-      /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LayersControlEvent): void | undefined>>>[0] */ js.Any
-    ],
-    onpopupclose: NonNullable[
-      /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.PopupEvent): void | undefined>>>[0] */ js.Any
-    ],
-    onpopupopen: NonNullable[
-      /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.PopupEvent): void | undefined>>>[0] */ js.Any
-    ],
-    onpreclick: NonNullable[
-      /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LeafletMouseEvent): void | undefined>>>[0] */ js.Any
-    ],
-    onresize: NonNullable[
-      /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.ResizeEvent): void | undefined>>>[0] */ js.Any
-    ],
-    onunload: NonNullable[
-      /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LeafletEvent): void | undefined>>>[0] */ js.Any
-    ],
-    onviewreset: NonNullable[
-      /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LeafletEvent): void | undefined>>>[0] */ js.Any
-    ],
-    onzoom: NonNullable[
-      /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LeafletEvent): void | undefined>>>[0] */ js.Any
-    ],
-    onzoomend: NonNullable[
-      /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LeafletEvent): void | undefined>>>[0] */ js.Any
-    ],
-    onzoomlevelschange: NonNullable[
-      /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LeafletEvent): void | undefined>>>[0] */ js.Any
-    ],
-    onzoomstart: NonNullable[
-      /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LeafletEvent): void | undefined>>>[0] */ js.Any
-    ]
+    autopanstart: LeafletEvent,
+    baselayerchange: LayersControlEvent,
+    blur: LeafletEvent,
+    click: LeafletMouseEvent,
+    contextmenu: LeafletMouseEvent,
+    dblclick: LeafletMouseEvent,
+    drag: LeafletEvent,
+    dragend: DragEndEvent,
+    dragstart: LeafletEvent,
+    focus: LeafletEvent,
+    layeradd: LayerEvent,
+    layerremove: LayerEvent,
+    load: LeafletEvent,
+    locationerror: ErrorEvent,
+    locationfound: LocationEvent,
+    mousedown: LeafletMouseEvent,
+    mousemove: LeafletMouseEvent,
+    mouseout: LeafletMouseEvent,
+    mouseover: LeafletMouseEvent,
+    mouseup: LeafletMouseEvent,
+    move: LeafletEvent,
+    moveend: LeafletEvent,
+    movestart: LeafletEvent,
+    overlayadd: LayersControlEvent,
+    overlayremove: LayersControlEvent,
+    popupclose: PopupEvent,
+    popupopen: PopupEvent,
+    preclick: LeafletMouseEvent,
+    resize: ResizeEvent,
+    unload: LeafletEvent,
+    viewreset: LeafletEvent,
+    zoom: LeafletEvent,
+    zoomend: LeafletEvent,
+    zoomlevelschange: LeafletEvent,
+    zoomstart: LeafletEvent
   ): MapEvents = {
-    val __obj = js.Dynamic.literal(onautopanstart = onautopanstart.asInstanceOf[js.Any], onbaselayerchange = onbaselayerchange.asInstanceOf[js.Any], onblur = onblur.asInstanceOf[js.Any], onclick = onclick.asInstanceOf[js.Any], oncontextmenu = oncontextmenu.asInstanceOf[js.Any], ondblclick = ondblclick.asInstanceOf[js.Any], ondrag = ondrag.asInstanceOf[js.Any], ondragend = ondragend.asInstanceOf[js.Any], ondragstart = ondragstart.asInstanceOf[js.Any], onfocus = onfocus.asInstanceOf[js.Any], onlayeradd = onlayeradd.asInstanceOf[js.Any], onlayerremove = onlayerremove.asInstanceOf[js.Any], onload = onload.asInstanceOf[js.Any], onlocationerror = onlocationerror.asInstanceOf[js.Any], onlocationfound = onlocationfound.asInstanceOf[js.Any], onmousedown = onmousedown.asInstanceOf[js.Any], onmousemove = onmousemove.asInstanceOf[js.Any], onmouseout = onmouseout.asInstanceOf[js.Any], onmouseover = onmouseover.asInstanceOf[js.Any], onmouseup = onmouseup.asInstanceOf[js.Any], onmove = onmove.asInstanceOf[js.Any], onmoveend = onmoveend.asInstanceOf[js.Any], onmovestart = onmovestart.asInstanceOf[js.Any], onoverlayadd = onoverlayadd.asInstanceOf[js.Any], onoverlayremove = onoverlayremove.asInstanceOf[js.Any], onpopupclose = onpopupclose.asInstanceOf[js.Any], onpopupopen = onpopupopen.asInstanceOf[js.Any], onpreclick = onpreclick.asInstanceOf[js.Any], onresize = onresize.asInstanceOf[js.Any], onunload = onunload.asInstanceOf[js.Any], onviewreset = onviewreset.asInstanceOf[js.Any], onzoom = onzoom.asInstanceOf[js.Any], onzoomend = onzoomend.asInstanceOf[js.Any], onzoomlevelschange = onzoomlevelschange.asInstanceOf[js.Any], onzoomstart = onzoomstart.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(autopanstart = autopanstart.asInstanceOf[js.Any], baselayerchange = baselayerchange.asInstanceOf[js.Any], blur = blur.asInstanceOf[js.Any], click = click.asInstanceOf[js.Any], contextmenu = contextmenu.asInstanceOf[js.Any], dblclick = dblclick.asInstanceOf[js.Any], drag = drag.asInstanceOf[js.Any], dragend = dragend.asInstanceOf[js.Any], dragstart = dragstart.asInstanceOf[js.Any], focus = focus.asInstanceOf[js.Any], layeradd = layeradd.asInstanceOf[js.Any], layerremove = layerremove.asInstanceOf[js.Any], load = load.asInstanceOf[js.Any], locationerror = locationerror.asInstanceOf[js.Any], locationfound = locationfound.asInstanceOf[js.Any], mousedown = mousedown.asInstanceOf[js.Any], mousemove = mousemove.asInstanceOf[js.Any], mouseout = mouseout.asInstanceOf[js.Any], mouseover = mouseover.asInstanceOf[js.Any], mouseup = mouseup.asInstanceOf[js.Any], move = move.asInstanceOf[js.Any], moveend = moveend.asInstanceOf[js.Any], movestart = movestart.asInstanceOf[js.Any], overlayadd = overlayadd.asInstanceOf[js.Any], overlayremove = overlayremove.asInstanceOf[js.Any], popupclose = popupclose.asInstanceOf[js.Any], popupopen = popupopen.asInstanceOf[js.Any], preclick = preclick.asInstanceOf[js.Any], resize = resize.asInstanceOf[js.Any], unload = unload.asInstanceOf[js.Any], viewreset = viewreset.asInstanceOf[js.Any], zoom = zoom.asInstanceOf[js.Any], zoomend = zoomend.asInstanceOf[js.Any], zoomlevelschange = zoomlevelschange.asInstanceOf[js.Any], zoomstart = zoomstart.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapEvents]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: MapEvents] (val x: Self) extends AnyVal {
     
-    inline def setOnautopanstart(
-      value: NonNullable[
-          /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LeafletEvent): void | undefined>>>[0] */ js.Any
-        ]
-    ): Self = StObject.set(x, "onautopanstart", value.asInstanceOf[js.Any])
+    inline def setAutopanstart(value: LeafletEvent): Self = StObject.set(x, "autopanstart", value.asInstanceOf[js.Any])
     
-    inline def setOnbaselayerchange(
-      value: NonNullable[
-          /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LayersControlEvent): void | undefined>>>[0] */ js.Any
-        ]
-    ): Self = StObject.set(x, "onbaselayerchange", value.asInstanceOf[js.Any])
+    inline def setBaselayerchange(value: LayersControlEvent): Self = StObject.set(x, "baselayerchange", value.asInstanceOf[js.Any])
     
-    inline def setOnblur(
-      value: NonNullable[
-          /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LeafletEvent): void | undefined>>>[0] */ js.Any
-        ]
-    ): Self = StObject.set(x, "onblur", value.asInstanceOf[js.Any])
+    inline def setBlur(value: LeafletEvent): Self = StObject.set(x, "blur", value.asInstanceOf[js.Any])
     
-    inline def setOnclick(
-      value: NonNullable[
-          /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LeafletMouseEvent): void | undefined>>>[0] */ js.Any
-        ]
-    ): Self = StObject.set(x, "onclick", value.asInstanceOf[js.Any])
+    inline def setClick(value: LeafletMouseEvent): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
     
-    inline def setOncontextmenu(
-      value: NonNullable[
-          /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LeafletMouseEvent): void | undefined>>>[0] */ js.Any
-        ]
-    ): Self = StObject.set(x, "oncontextmenu", value.asInstanceOf[js.Any])
+    inline def setContextmenu(value: LeafletMouseEvent): Self = StObject.set(x, "contextmenu", value.asInstanceOf[js.Any])
     
-    inline def setOndblclick(
-      value: NonNullable[
-          /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LeafletMouseEvent): void | undefined>>>[0] */ js.Any
-        ]
-    ): Self = StObject.set(x, "ondblclick", value.asInstanceOf[js.Any])
+    inline def setDblclick(value: LeafletMouseEvent): Self = StObject.set(x, "dblclick", value.asInstanceOf[js.Any])
     
-    inline def setOndrag(
-      value: NonNullable[
-          /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LeafletEvent): void | undefined>>>[0] */ js.Any
-        ]
-    ): Self = StObject.set(x, "ondrag", value.asInstanceOf[js.Any])
+    inline def setDrag(value: LeafletEvent): Self = StObject.set(x, "drag", value.asInstanceOf[js.Any])
     
-    inline def setOndragend(
-      value: NonNullable[
-          /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.DragEndEvent): void | undefined>>>[0] */ js.Any
-        ]
-    ): Self = StObject.set(x, "ondragend", value.asInstanceOf[js.Any])
+    inline def setDragend(value: DragEndEvent): Self = StObject.set(x, "dragend", value.asInstanceOf[js.Any])
     
-    inline def setOndragstart(
-      value: NonNullable[
-          /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LeafletEvent): void | undefined>>>[0] */ js.Any
-        ]
-    ): Self = StObject.set(x, "ondragstart", value.asInstanceOf[js.Any])
+    inline def setDragstart(value: LeafletEvent): Self = StObject.set(x, "dragstart", value.asInstanceOf[js.Any])
     
-    inline def setOnfocus(
-      value: NonNullable[
-          /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LeafletEvent): void | undefined>>>[0] */ js.Any
-        ]
-    ): Self = StObject.set(x, "onfocus", value.asInstanceOf[js.Any])
+    inline def setFocus(value: LeafletEvent): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
     
-    inline def setOnlayeradd(
-      value: NonNullable[
-          /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LayerEvent): void | undefined>>>[0] */ js.Any
-        ]
-    ): Self = StObject.set(x, "onlayeradd", value.asInstanceOf[js.Any])
+    inline def setLayeradd(value: LayerEvent): Self = StObject.set(x, "layeradd", value.asInstanceOf[js.Any])
     
-    inline def setOnlayerremove(
-      value: NonNullable[
-          /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LayerEvent): void | undefined>>>[0] */ js.Any
-        ]
-    ): Self = StObject.set(x, "onlayerremove", value.asInstanceOf[js.Any])
+    inline def setLayerremove(value: LayerEvent): Self = StObject.set(x, "layerremove", value.asInstanceOf[js.Any])
     
-    inline def setOnload(
-      value: NonNullable[
-          /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LeafletEvent): void | undefined>>>[0] */ js.Any
-        ]
-    ): Self = StObject.set(x, "onload", value.asInstanceOf[js.Any])
+    inline def setLoad(value: LeafletEvent): Self = StObject.set(x, "load", value.asInstanceOf[js.Any])
     
-    inline def setOnlocationerror(
-      value: NonNullable[
-          /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.ErrorEvent): void | undefined>>>[0] */ js.Any
-        ]
-    ): Self = StObject.set(x, "onlocationerror", value.asInstanceOf[js.Any])
+    inline def setLocationerror(value: ErrorEvent): Self = StObject.set(x, "locationerror", value.asInstanceOf[js.Any])
     
-    inline def setOnlocationfound(
-      value: NonNullable[
-          /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LocationEvent): void | undefined>>>[0] */ js.Any
-        ]
-    ): Self = StObject.set(x, "onlocationfound", value.asInstanceOf[js.Any])
+    inline def setLocationfound(value: LocationEvent): Self = StObject.set(x, "locationfound", value.asInstanceOf[js.Any])
     
-    inline def setOnmousedown(
-      value: NonNullable[
-          /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LeafletMouseEvent): void | undefined>>>[0] */ js.Any
-        ]
-    ): Self = StObject.set(x, "onmousedown", value.asInstanceOf[js.Any])
+    inline def setMousedown(value: LeafletMouseEvent): Self = StObject.set(x, "mousedown", value.asInstanceOf[js.Any])
     
-    inline def setOnmousemove(
-      value: NonNullable[
-          /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LeafletMouseEvent): void | undefined>>>[0] */ js.Any
-        ]
-    ): Self = StObject.set(x, "onmousemove", value.asInstanceOf[js.Any])
+    inline def setMousemove(value: LeafletMouseEvent): Self = StObject.set(x, "mousemove", value.asInstanceOf[js.Any])
     
-    inline def setOnmouseout(
-      value: NonNullable[
-          /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LeafletMouseEvent): void | undefined>>>[0] */ js.Any
-        ]
-    ): Self = StObject.set(x, "onmouseout", value.asInstanceOf[js.Any])
+    inline def setMouseout(value: LeafletMouseEvent): Self = StObject.set(x, "mouseout", value.asInstanceOf[js.Any])
     
-    inline def setOnmouseover(
-      value: NonNullable[
-          /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LeafletMouseEvent): void | undefined>>>[0] */ js.Any
-        ]
-    ): Self = StObject.set(x, "onmouseover", value.asInstanceOf[js.Any])
+    inline def setMouseover(value: LeafletMouseEvent): Self = StObject.set(x, "mouseover", value.asInstanceOf[js.Any])
     
-    inline def setOnmouseup(
-      value: NonNullable[
-          /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LeafletMouseEvent): void | undefined>>>[0] */ js.Any
-        ]
-    ): Self = StObject.set(x, "onmouseup", value.asInstanceOf[js.Any])
+    inline def setMouseup(value: LeafletMouseEvent): Self = StObject.set(x, "mouseup", value.asInstanceOf[js.Any])
     
-    inline def setOnmove(
-      value: NonNullable[
-          /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LeafletEvent): void | undefined>>>[0] */ js.Any
-        ]
-    ): Self = StObject.set(x, "onmove", value.asInstanceOf[js.Any])
+    inline def setMove(value: LeafletEvent): Self = StObject.set(x, "move", value.asInstanceOf[js.Any])
     
-    inline def setOnmoveend(
-      value: NonNullable[
-          /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LeafletEvent): void | undefined>>>[0] */ js.Any
-        ]
-    ): Self = StObject.set(x, "onmoveend", value.asInstanceOf[js.Any])
+    inline def setMoveend(value: LeafletEvent): Self = StObject.set(x, "moveend", value.asInstanceOf[js.Any])
     
-    inline def setOnmovestart(
-      value: NonNullable[
-          /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LeafletEvent): void | undefined>>>[0] */ js.Any
-        ]
-    ): Self = StObject.set(x, "onmovestart", value.asInstanceOf[js.Any])
+    inline def setMovestart(value: LeafletEvent): Self = StObject.set(x, "movestart", value.asInstanceOf[js.Any])
     
-    inline def setOnoverlayadd(
-      value: NonNullable[
-          /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LayersControlEvent): void | undefined>>>[0] */ js.Any
-        ]
-    ): Self = StObject.set(x, "onoverlayadd", value.asInstanceOf[js.Any])
+    inline def setOverlayadd(value: LayersControlEvent): Self = StObject.set(x, "overlayadd", value.asInstanceOf[js.Any])
     
-    inline def setOnoverlayremove(
-      value: NonNullable[
-          /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LayersControlEvent): void | undefined>>>[0] */ js.Any
-        ]
-    ): Self = StObject.set(x, "onoverlayremove", value.asInstanceOf[js.Any])
+    inline def setOverlayremove(value: LayersControlEvent): Self = StObject.set(x, "overlayremove", value.asInstanceOf[js.Any])
     
-    inline def setOnpopupclose(
-      value: NonNullable[
-          /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.PopupEvent): void | undefined>>>[0] */ js.Any
-        ]
-    ): Self = StObject.set(x, "onpopupclose", value.asInstanceOf[js.Any])
+    inline def setPopupclose(value: PopupEvent): Self = StObject.set(x, "popupclose", value.asInstanceOf[js.Any])
     
-    inline def setOnpopupopen(
-      value: NonNullable[
-          /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.PopupEvent): void | undefined>>>[0] */ js.Any
-        ]
-    ): Self = StObject.set(x, "onpopupopen", value.asInstanceOf[js.Any])
+    inline def setPopupopen(value: PopupEvent): Self = StObject.set(x, "popupopen", value.asInstanceOf[js.Any])
     
-    inline def setOnpreclick(
-      value: NonNullable[
-          /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LeafletMouseEvent): void | undefined>>>[0] */ js.Any
-        ]
-    ): Self = StObject.set(x, "onpreclick", value.asInstanceOf[js.Any])
+    inline def setPreclick(value: LeafletMouseEvent): Self = StObject.set(x, "preclick", value.asInstanceOf[js.Any])
     
-    inline def setOnresize(
-      value: NonNullable[
-          /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.ResizeEvent): void | undefined>>>[0] */ js.Any
-        ]
-    ): Self = StObject.set(x, "onresize", value.asInstanceOf[js.Any])
+    inline def setResize(value: ResizeEvent): Self = StObject.set(x, "resize", value.asInstanceOf[js.Any])
     
-    inline def setOnunload(
-      value: NonNullable[
-          /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LeafletEvent): void | undefined>>>[0] */ js.Any
-        ]
-    ): Self = StObject.set(x, "onunload", value.asInstanceOf[js.Any])
+    inline def setUnload(value: LeafletEvent): Self = StObject.set(x, "unload", value.asInstanceOf[js.Any])
     
-    inline def setOnviewreset(
-      value: NonNullable[
-          /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LeafletEvent): void | undefined>>>[0] */ js.Any
-        ]
-    ): Self = StObject.set(x, "onviewreset", value.asInstanceOf[js.Any])
+    inline def setViewreset(value: LeafletEvent): Self = StObject.set(x, "viewreset", value.asInstanceOf[js.Any])
     
-    inline def setOnzoom(
-      value: NonNullable[
-          /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LeafletEvent): void | undefined>>>[0] */ js.Any
-        ]
-    ): Self = StObject.set(x, "onzoom", value.asInstanceOf[js.Any])
+    inline def setZoom(value: LeafletEvent): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
     
-    inline def setOnzoomend(
-      value: NonNullable[
-          /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LeafletEvent): void | undefined>>>[0] */ js.Any
-        ]
-    ): Self = StObject.set(x, "onzoomend", value.asInstanceOf[js.Any])
+    inline def setZoomend(value: LeafletEvent): Self = StObject.set(x, "zoomend", value.asInstanceOf[js.Any])
     
-    inline def setOnzoomlevelschange(
-      value: NonNullable[
-          /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LeafletEvent): void | undefined>>>[0] */ js.Any
-        ]
-    ): Self = StObject.set(x, "onzoomlevelschange", value.asInstanceOf[js.Any])
+    inline def setZoomlevelschange(value: LeafletEvent): Self = StObject.set(x, "zoomlevelschange", value.asInstanceOf[js.Any])
     
-    inline def setOnzoomstart(
-      value: NonNullable[
-          /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<svelte-leafletjs.svelte-leafletjs.AssertIsFunction<std.NonNullable<(event : leaflet.leaflet.LeafletEvent): void | undefined>>>[0] */ js.Any
-        ]
-    ): Self = StObject.set(x, "onzoomstart", value.asInstanceOf[js.Any])
+    inline def setZoomstart(value: LeafletEvent): Self = StObject.set(x, "zoomstart", value.asInstanceOf[js.Any])
   }
 }

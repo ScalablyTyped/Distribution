@@ -1,7 +1,7 @@
 
 # Scala.js typings for wojtekmaj__react-datetimerange-picker
 
-Typings are for version 3.0
+Typings are for version 5.0.2
 
 ## Library description:
 A datetime range picker for your React app.
@@ -24,7 +24,7 @@ A datetime range picker for your React app.
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

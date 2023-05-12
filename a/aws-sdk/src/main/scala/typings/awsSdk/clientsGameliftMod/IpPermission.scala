@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IpPermission extends StObject {
   
   /**
-    * A starting value for a range of allowed port numbers. For fleets using Windows and Linux builds, only ports 1026-60000 are valid.
+    * A starting value for a range of allowed port numbers. For fleets using Linux builds, only ports 22 and 1026-60000 are valid. For fleets using Windows builds, only ports 1026-60000 are valid.
     */
   var FromPort: PortNumber
   
@@ -22,7 +22,7 @@ trait IpPermission extends StObject {
   var Protocol: IpProtocol
   
   /**
-    * An ending value for a range of allowed port numbers. Port numbers are end-inclusive. This value must be higher than FromPort. For fleets using Windows and Linux builds, only ports 1026-60000 are valid.
+    * An ending value for a range of allowed port numbers. Port numbers are end-inclusive. This value must be equal to or greater than FromPort. For fleets using Linux builds, only ports 22 and 1026-60000 are valid. For fleets using Windows builds, only ports 1026-60000 are valid.
     */
   var ToPort: PortNumber
 }

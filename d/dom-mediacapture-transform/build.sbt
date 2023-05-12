@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "dom-mediacapture-transform"
-version := "0.1-dt-20221026Z-5a10fa"
+version := "0.1-dt-20230311Z-c894ab"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "dom-webcodecs" % "0.1-dt-20221026Z-ce747e",
-  "org.scalablytyped" %%% "std" % "4.9-ecb5eb")
+  "org.scalablytyped" %%% "dom-webcodecs" % "0.1-dt-20230406Z-1a5586",
+  "org.scalablytyped" %%% "std" % "5.0-e63739")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

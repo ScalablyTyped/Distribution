@@ -5,6 +5,8 @@ import typings.angularCompilerCli.srcNgtscFileSystemSrcTypesMod.AbsoluteFsPath
 import typings.angularCompilerCli.srcNgtscImportsMod.ReferenceEmitter
 import typings.angularCompilerCli.srcNgtscIncrementalApiMod.IncrementalBuild
 import typings.angularCompilerCli.srcNgtscMetadataSrcApiMod.MetadataReader
+import typings.angularCompilerCli.srcNgtscMetadataSrcApiMod.MetadataReaderWithIndex
+import typings.angularCompilerCli.srcNgtscMetadataSrcApiMod.NgModuleIndex
 import typings.angularCompilerCli.srcNgtscPerfSrcApiMod.PerfRecorder
 import typings.angularCompilerCli.srcNgtscProgramDriverSrcApiMod.ProgramDriver
 import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.ReflectionHost
@@ -38,6 +40,8 @@ object srcNgtscTypecheckSrcCheckerMod {
       compilerHost: PickCompilerHostgetCanoni,
       priorBuild: IncrementalBuild[Any, FileTypeCheckingData],
       metaReader: MetadataReader,
+      localMetaReader: MetadataReaderWithIndex,
+      ngModuleIndex: NgModuleIndex,
       componentScopeReader: ComponentScopeReader,
       typeCheckScopeRegistry: TypeCheckScopeRegistry,
       perf: PerfRecorder
@@ -76,6 +80,8 @@ object srcNgtscTypecheckSrcCheckerMod {
       */
     /* private */ var elementTagCache: Any = js.native
     
+    /* private */ var emit: Any = js.native
+    
     /* private */ var ensureAllShimsForAllFiles: Any = js.native
     
     /* private */ var ensureAllShimsForOneFile: Any = js.native
@@ -98,11 +104,15 @@ object srcNgtscTypecheckSrcCheckerMod {
     
     /* private */ var isComplete: Any = js.native
     
+    /* private */ val localMetaReader: Any = js.native
+    
     /* private */ var maybeAdoptPriorResultsForFile: Any = js.native
     
     /* private */ val metaReader: Any = js.native
     
     /* private */ var newContext: Any = js.native
+    
+    /* private */ val ngModuleIndex: Any = js.native
     
     /* private */ var originalProgram: Any = js.native
     
@@ -124,6 +134,10 @@ object srcNgtscTypecheckSrcCheckerMod {
       * destroyed and replaced.
       */
     /* private */ var scopeCache: Any = js.native
+    
+    /* private */ var scopeDataOfDirectiveMeta: Any = js.native
+    
+    /* private */ var scopeDataOfPipeMeta: Any = js.native
     
     /* private */ var state: Any = js.native
     

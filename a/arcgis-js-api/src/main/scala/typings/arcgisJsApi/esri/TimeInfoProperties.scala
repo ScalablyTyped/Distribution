@@ -37,15 +37,6 @@ trait TimeInfoProperties extends StObject {
   var startField: js.UndefOr[String] = js.undefined
   
   /**
-    * Defines information about daylight savings time and the time zone in which data was collected.
-    *
-    * @default null
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TimeInfo.html#timeReference)
-    */
-  var timeReference: js.UndefOr[TimeReferenceProperties] = js.undefined
-  
-  /**
     * The name of the field used to join or group discrete locations.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TimeInfo.html#trackIdField)
@@ -77,10 +68,6 @@ object TimeInfoProperties {
     inline def setStartField(value: String): Self = StObject.set(x, "startField", value.asInstanceOf[js.Any])
     
     inline def setStartFieldUndefined: Self = StObject.set(x, "startField", js.undefined)
-    
-    inline def setTimeReference(value: TimeReferenceProperties): Self = StObject.set(x, "timeReference", value.asInstanceOf[js.Any])
-    
-    inline def setTimeReferenceUndefined: Self = StObject.set(x, "timeReference", js.undefined)
     
     inline def setTrackIdField(value: String): Self = StObject.set(x, "trackIdField", value.asInstanceOf[js.Any])
     

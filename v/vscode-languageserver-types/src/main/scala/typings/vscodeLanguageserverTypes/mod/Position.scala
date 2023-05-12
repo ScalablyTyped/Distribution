@@ -44,7 +44,7 @@ object Position {
   inline def create(line: uinteger, character: uinteger): Position = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(line.asInstanceOf[js.Any], character.asInstanceOf[js.Any])).asInstanceOf[Position]
   
   /**
-    * Checks whether the given literal conforms to the [Position](#Position) interface.
+    * Checks whether the given literal conforms to the {@link Position} interface.
     */
   inline def is(value: Any): /* is vscode-languageserver-types.vscode-languageserver-types.Position */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.Position */ Boolean]
   

@@ -1,7 +1,7 @@
 
 # Scala.js typings for unist-util-visit-parents
 
-Typings are for version 5.1.1
+Typings are for version 5.1.3
 
 ## Library description:
 unist utility to recursively walk over nodes, with ancestral information

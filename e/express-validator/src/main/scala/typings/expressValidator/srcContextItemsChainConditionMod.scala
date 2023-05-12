@@ -1,7 +1,7 @@
 package typings.expressValidator
 
 import typings.expressValidator.srcBaseMod.Meta
-import typings.expressValidator.srcChainValidationChainMod.ValidationChain
+import typings.expressValidator.srcChainContextRunnerMod.ContextRunner
 import typings.expressValidator.srcContextItemsContextItemMod.ContextItem
 import typings.expressValidator.srcContextMod.Context
 import org.scalablytyped.runtime.StObject
@@ -15,7 +15,7 @@ object srcContextItemsChainConditionMod {
   open class ChainCondition protected ()
     extends StObject
        with ContextItem {
-    def this(chain: ValidationChain) = this()
+    def this(chain: ContextRunner) = this()
     
     /* private */ val chain: Any = js.native
     

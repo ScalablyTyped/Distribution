@@ -6,13 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait QuerySubjectid extends StObject {
   
-  var path: `348`
+  var path: `370`
   
   var query: Subjectid
 }
 object QuerySubjectid {
   
-  inline def apply(path: `348`, query: Subjectid): QuerySubjectid = {
+  inline def apply(path: `370`, query: Subjectid): QuerySubjectid = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
     __obj.asInstanceOf[QuerySubjectid]
   }
@@ -20,7 +20,7 @@ object QuerySubjectid {
   @scala.inline
   implicit open class MutableBuilder[Self <: QuerySubjectid] (val x: Self) extends AnyVal {
     
-    inline def setPath(value: `348`): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: `370`): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     inline def setQuery(value: Subjectid): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
   }

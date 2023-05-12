@@ -16,7 +16,7 @@ object libIconsAliwangwangFilledMod extends Shortcut {
   @js.native
   trait AliwangwangFilledIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_AliwangwangFilledIconType: String = js.native

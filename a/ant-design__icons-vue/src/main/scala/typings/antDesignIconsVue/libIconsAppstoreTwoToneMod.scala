@@ -16,7 +16,7 @@ object libIconsAppstoreTwoToneMod extends Shortcut {
   @js.native
   trait AppstoreTwoToneIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_AppstoreTwoToneIconType: String = js.native

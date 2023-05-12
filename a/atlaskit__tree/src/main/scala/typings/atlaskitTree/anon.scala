@@ -3,6 +3,7 @@ package typings.atlaskitTree
 import typings.atlaskitTree.distTypesTypesMod.FlattenedItem
 import typings.atlaskitTree.distTypesTypesMod.ItemId
 import typings.atlaskitTree.distTypesTypesMod.Path
+import typings.atlaskitTree.distTypesTypesMod.TreeData
 import typings.atlaskitTree.distTypesTypesMod.TreeDestinationPosition
 import typings.atlaskitTree.distTypesTypesMod.TreeSourcePosition
 import org.scalablytyped.runtime.StObject
@@ -203,6 +204,28 @@ object anon {
       inline def setRenderItem(value: () => Unit): Self = StObject.set(x, "renderItem", js.Any.fromFunction0(value))
       
       inline def setTree(value: Children): Self = StObject.set(x, "tree", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait ItemRemoved extends StObject {
+    
+    var itemRemoved: ItemId
+    
+    var tree: TreeData
+  }
+  object ItemRemoved {
+    
+    inline def apply(itemRemoved: ItemId, tree: TreeData): ItemRemoved = {
+      val __obj = js.Dynamic.literal(itemRemoved = itemRemoved.asInstanceOf[js.Any], tree = tree.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ItemRemoved]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ItemRemoved] (val x: Self) extends AnyVal {
+      
+      inline def setItemRemoved(value: ItemId): Self = StObject.set(x, "itemRemoved", value.asInstanceOf[js.Any])
+      
+      inline def setTree(value: TreeData): Self = StObject.set(x, "tree", value.asInstanceOf[js.Any])
     }
   }
 }

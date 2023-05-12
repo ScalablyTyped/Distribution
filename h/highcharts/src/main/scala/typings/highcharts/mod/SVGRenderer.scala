@@ -12,8 +12,7 @@ open class SVGRenderer protected () extends StObject {
     * Allows direct access to the Highcharts rendering layer in order to draw
     * primitive shapes like circles, rectangles, paths or text directly on a
     * chart, or independent from any chart. The SVGRenderer represents a
-    * wrapper object for SVG in modern browsers. Through the VMLRenderer, part
-    * of the `oldie.js` module, it also brings vector graphics to IE <= 8.
+    * wrapper object for SVG in modern browsers.
     *
     * An existing chart's renderer can be accessed through Chart.renderer. The
     * renderer can also be used completely decoupled from a chart.
@@ -152,8 +151,7 @@ open class SVGRenderer protected () extends StObject {
   ) = this()
   
   /**
-    * A pointer to the renderer's associated Element class. The VMLRenderer
-    * will have a pointer to VMLElement here.
+    * A pointer to the renderer's associated Element class.
     */
   var Element: SVGElement = js.native
   
@@ -373,24 +371,16 @@ open class SVGRenderer protected () extends StObject {
     * Utility to return the baseline offset and total line height from the font
     * size.
     *
-    * @param fontSize
-    *        The current font size to inspect. If not given, the font size will
-    *        be found from the DOM element.
-    *
-    * @param elem
-    *        The element to inspect for a current font size.
+    * @param element
+    *        The element to inspect for a current font size. If a number is
+    *        given, it's used as a fall back for direct font size in pixels.
     *
     * @return The font metrics.
     */
   def fontMetrics(): FontMetricsObject = js.native
-  def fontMetrics(fontSize: String): FontMetricsObject = js.native
-  def fontMetrics(fontSize: String, elem: SVGDOMElement): FontMetricsObject = js.native
-  def fontMetrics(fontSize: String, elem: SVGElement): FontMetricsObject = js.native
-  def fontMetrics(fontSize: Double): FontMetricsObject = js.native
-  def fontMetrics(fontSize: Double, elem: SVGDOMElement): FontMetricsObject = js.native
-  def fontMetrics(fontSize: Double, elem: SVGElement): FontMetricsObject = js.native
-  def fontMetrics(fontSize: Unit, elem: SVGDOMElement): FontMetricsObject = js.native
-  def fontMetrics(fontSize: Unit, elem: SVGElement): FontMetricsObject = js.native
+  def fontMetrics(element: Double): FontMetricsObject = js.native
+  def fontMetrics(element: SVGDOMElement): FontMetricsObject = js.native
+  def fontMetrics(element: SVGElement): FontMetricsObject = js.native
   
   /**
     * Create and return an svg group element. Child Highcharts.SVGElement
@@ -728,6 +718,16 @@ open class SVGRenderer protected () extends StObject {
     r: js.UndefOr[Double],
     strokeWidth: js.UndefOr[Double]
   ): SVGElement = js.native
+  
+  /**
+    * Draw and return a rectangle with advanced corner rounding options.
+    *
+    * @param attribs
+    *        Attributes
+    *
+    * @return The generated wrapper element.
+    */
+  def roundedRect(attribs: SVGAttributes): SVGElement = js.native
   
   /**
     * Resize the SVGRenderer#box and re-align all aligned child elements.

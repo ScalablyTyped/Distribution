@@ -1,7 +1,6 @@
 package typings.vscodeLanguageserverProtocol.mod
 
 import typings.vscodeLanguageserverProtocol.libCommonProtocolDotconfigurationMod.ConfigurationParams
-import typings.vscodeLanguageserverProtocol.libCommonProtocolMod.PartialResultParams
 import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.workspaceSlashconfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -19,5 +18,5 @@ object ConfigurationRequest {
   
   @JSImport("vscode-languageserver-protocol", "ConfigurationRequest.type")
   @js.native
-  val `type`: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.ProtocolRequestType[ConfigurationParams & PartialResultParams, js.Array[Any], scala.Nothing, Unit, Unit] = js.native
+  val `type`: typings.vscodeLanguageserverProtocol.libCommonMessagesMod.ProtocolRequestType[ConfigurationParams, js.Array[Any], scala.Nothing, Unit, Unit] = js.native
 }

@@ -17,14 +17,19 @@ trait EventSourceMappingConfiguration extends StObject {
   var BatchSize: js.UndefOr[typings.awsSdk.clientsLambdaMod.BatchSize] = js.undefined
   
   /**
-    * (Streams only) If the function returns an error, split the batch in two and retry. The default value is false.
+    * (Kinesis and DynamoDB Streams only) If the function returns an error, split the batch in two and retry. The default value is false.
     */
   var BisectBatchOnFunctionError: js.UndefOr[typings.awsSdk.clientsLambdaMod.BisectBatchOnFunctionError] = js.undefined
   
   /**
-    * (Streams only) An Amazon SQS queue or Amazon SNS topic destination for discarded records.
+    * (Kinesis and DynamoDB Streams only) An Amazon SQS queue or Amazon SNS topic destination for discarded records.
     */
   var DestinationConfig: js.UndefOr[typings.awsSdk.clientsLambdaMod.DestinationConfig] = js.undefined
+  
+  /**
+    * Specific configuration settings for a DocumentDB event source.
+    */
+  var DocumentDBEventSourceConfig: js.UndefOr[typings.awsSdk.clientsLambdaMod.DocumentDBEventSourceConfig] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the event source.
@@ -32,7 +37,7 @@ trait EventSourceMappingConfiguration extends StObject {
   var EventSourceArn: js.UndefOr[Arn] = js.undefined
   
   /**
-    * (Streams and Amazon SQS) An object that defines the filter criteria that determine whether Lambda should process an event. For more information, see Lambda event filtering.
+    * An object that defines the filter criteria that determine whether Lambda should process an event. For more information, see Lambda event filtering.
     */
   var FilterCriteria: js.UndefOr[typings.awsSdk.clientsLambdaMod.FilterCriteria] = js.undefined
   
@@ -42,7 +47,7 @@ trait EventSourceMappingConfiguration extends StObject {
   var FunctionArn: js.UndefOr[typings.awsSdk.clientsLambdaMod.FunctionArn] = js.undefined
   
   /**
-    * (Streams and Amazon SQS) A list of current response type enums applied to the event source mapping.
+    * (Kinesis, DynamoDB Streams, and Amazon SQS) A list of current response type enums applied to the event source mapping.
     */
   var FunctionResponseTypes: js.UndefOr[FunctionResponseTypeList] = js.undefined
   
@@ -57,22 +62,22 @@ trait EventSourceMappingConfiguration extends StObject {
   var LastProcessingResult: js.UndefOr[String] = js.undefined
   
   /**
-    * (Streams and Amazon SQS standard queues) The maximum amount of time, in seconds, that Lambda spends gathering records before invoking the function. Default: 0 Related setting: When you set BatchSize to a value greater than 10, you must set MaximumBatchingWindowInSeconds to at least 1.
+    * The maximum amount of time, in seconds, that Lambda spends gathering records before invoking the function. You can configure MaximumBatchingWindowInSeconds to any value from 0 seconds to 300 seconds in increments of seconds. For streams and Amazon SQS event sources, the default batching window is 0 seconds. For Amazon MSK, Self-managed Apache Kafka, Amazon MQ, and DocumentDB event sources, the default batching window is 500 ms. Note that because you can only change MaximumBatchingWindowInSeconds in increments of seconds, you cannot revert back to the 500 ms default batching window after you have changed it. To restore the default batching window, you must create a new event source mapping. Related setting: For streams and Amazon SQS event sources, when you set BatchSize to a value greater than 10, you must set MaximumBatchingWindowInSeconds to at least 1.
     */
   var MaximumBatchingWindowInSeconds: js.UndefOr[typings.awsSdk.clientsLambdaMod.MaximumBatchingWindowInSeconds] = js.undefined
   
   /**
-    * (Streams only) Discard records older than the specified age. The default value is -1, which sets the maximum age to infinite. When the value is set to infinite, Lambda never discards old records. 
+    * (Kinesis and DynamoDB Streams only) Discard records older than the specified age. The default value is -1, which sets the maximum age to infinite. When the value is set to infinite, Lambda never discards old records.  The minimum value that can be set is 60 seconds. 
     */
   var MaximumRecordAgeInSeconds: js.UndefOr[typings.awsSdk.clientsLambdaMod.MaximumRecordAgeInSeconds] = js.undefined
   
   /**
-    * (Streams only) Discard records after the specified number of retries. The default value is -1, which sets the maximum number of retries to infinite. When MaximumRetryAttempts is infinite, Lambda retries failed records until the record expires in the event source.
+    * (Kinesis and DynamoDB Streams only) Discard records after the specified number of retries. The default value is -1, which sets the maximum number of retries to infinite. When MaximumRetryAttempts is infinite, Lambda retries failed records until the record expires in the event source.
     */
   var MaximumRetryAttempts: js.UndefOr[MaximumRetryAttemptsEventSourceMapping] = js.undefined
   
   /**
-    * (Streams only) The number of batches to process concurrently from each shard. The default value is 1.
+    * (Kinesis and DynamoDB Streams only) The number of batches to process concurrently from each shard. The default value is 1.
     */
   var ParallelizationFactor: js.UndefOr[typings.awsSdk.clientsLambdaMod.ParallelizationFactor] = js.undefined
   
@@ -80,6 +85,11 @@ trait EventSourceMappingConfiguration extends StObject {
     *  (Amazon MQ) The name of the Amazon MQ broker destination queue to consume.
     */
   var Queues: js.UndefOr[typings.awsSdk.clientsLambdaMod.Queues] = js.undefined
+  
+  /**
+    * (Amazon SQS only) The scaling configuration for the event source. For more information, see Configuring maximum concurrency for Amazon SQS event sources.
+    */
+  var ScalingConfig: js.UndefOr[typings.awsSdk.clientsLambdaMod.ScalingConfig] = js.undefined
   
   /**
     * The self-managed Apache Kafka cluster for your event source.
@@ -97,7 +107,7 @@ trait EventSourceMappingConfiguration extends StObject {
   var SourceAccessConfigurations: js.UndefOr[typings.awsSdk.clientsLambdaMod.SourceAccessConfigurations] = js.undefined
   
   /**
-    * The position in a stream from which to start reading. Required for Amazon Kinesis, Amazon DynamoDB, and Amazon MSK stream sources. AT_TIMESTAMP is supported only for Amazon Kinesis streams.
+    * The position in a stream from which to start reading. Required for Amazon Kinesis, Amazon DynamoDB, and Amazon MSK stream sources. AT_TIMESTAMP is supported only for Amazon Kinesis streams and Amazon DocumentDB.
     */
   var StartingPosition: js.UndefOr[EventSourcePosition] = js.undefined
   
@@ -122,7 +132,7 @@ trait EventSourceMappingConfiguration extends StObject {
   var Topics: js.UndefOr[typings.awsSdk.clientsLambdaMod.Topics] = js.undefined
   
   /**
-    * (Streams only) The duration in seconds of a processing window. The range is 1–900 seconds.
+    * (Kinesis and DynamoDB Streams only) The duration in seconds of a processing window for DynamoDB and Kinesis Streams event sources. A value of 0 seconds indicates no tumbling window.
     */
   var TumblingWindowInSeconds: js.UndefOr[typings.awsSdk.clientsLambdaMod.TumblingWindowInSeconds] = js.undefined
   
@@ -156,6 +166,10 @@ object EventSourceMappingConfiguration {
     inline def setDestinationConfig(value: DestinationConfig): Self = StObject.set(x, "DestinationConfig", value.asInstanceOf[js.Any])
     
     inline def setDestinationConfigUndefined: Self = StObject.set(x, "DestinationConfig", js.undefined)
+    
+    inline def setDocumentDBEventSourceConfig(value: DocumentDBEventSourceConfig): Self = StObject.set(x, "DocumentDBEventSourceConfig", value.asInstanceOf[js.Any])
+    
+    inline def setDocumentDBEventSourceConfigUndefined: Self = StObject.set(x, "DocumentDBEventSourceConfig", js.undefined)
     
     inline def setEventSourceArn(value: Arn): Self = StObject.set(x, "EventSourceArn", value.asInstanceOf[js.Any])
     
@@ -204,6 +218,10 @@ object EventSourceMappingConfiguration {
     inline def setQueuesUndefined: Self = StObject.set(x, "Queues", js.undefined)
     
     inline def setQueuesVarargs(value: Queue*): Self = StObject.set(x, "Queues", js.Array(value*))
+    
+    inline def setScalingConfig(value: ScalingConfig): Self = StObject.set(x, "ScalingConfig", value.asInstanceOf[js.Any])
+    
+    inline def setScalingConfigUndefined: Self = StObject.set(x, "ScalingConfig", js.undefined)
     
     inline def setSelfManagedEventSource(value: SelfManagedEventSource): Self = StObject.set(x, "SelfManagedEventSource", value.asInstanceOf[js.Any])
     

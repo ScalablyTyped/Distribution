@@ -11,7 +11,7 @@ open class WidgetTag protected () extends Component[WidgetTagProps, Any, Any] {
   def this(props: WidgetTagProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: WidgetTagProps, context: Any) = this()
 }

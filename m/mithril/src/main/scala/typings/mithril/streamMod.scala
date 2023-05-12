@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object streamMod {
   
   inline def apply[T](): Stream[T] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Stream[T]]
-  // tslint:disable-line no-unnecessary-generics
+  // eslint-disable-line no-unnecessary-generics
   /** Creates a stream with an initial value. */
   inline def apply[T](value: T): Stream[T] = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[Stream[T]]
   

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ImageTagDetail extends StObject {
   
   /**
-    * The time stamp indicating when the image tag was created.
+    * The time stamp that indicates when the image tag was created.
     */
   var createdAt: js.UndefOr[js.Date] = js.undefined
   
@@ -17,7 +17,7 @@ trait ImageTagDetail extends StObject {
   var imageDetail: js.UndefOr[ReferencedImageDetail] = js.undefined
   
   /**
-    * The tag associated with the image.
+    * The tag that's associated with the image.
     */
   var imageTag: js.UndefOr[ImageTag] = js.undefined
 }

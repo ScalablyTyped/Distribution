@@ -16,11 +16,6 @@ object FeatureName extends StObject {
        with FeatureName
   
   @js.native
-  sealed trait Depth24UnormStencil8
-    extends StObject
-       with FeatureName
-  
-  @js.native
   sealed trait Depth32FloatStencil8
     extends StObject
        with FeatureName
@@ -31,7 +26,17 @@ object FeatureName extends StObject {
        with FeatureName
   
   @js.native
+  sealed trait Float32Filterable
+    extends StObject
+       with FeatureName
+  
+  @js.native
   sealed trait IndirectFirstInstance
+    extends StObject
+       with FeatureName
+  
+  @js.native
+  sealed trait RG11B10UFloatRenderable
     extends StObject
        with FeatureName
   

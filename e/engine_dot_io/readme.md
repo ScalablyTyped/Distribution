@@ -1,7 +1,7 @@
 
 # Scala.js typings for engine_dot_io
 
-Typings are for version 6.2.0
+Typings are for version 6.4.2
 
 ## Library description:
 The realtime engine behind Socket.IO. Provides the foundation of a bidirectional connection between client and server

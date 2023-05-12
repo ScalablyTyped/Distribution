@@ -26,7 +26,7 @@ open class FSWatcher protected () extends EventEmitter {
   
   var _link: Link = js.native
   
-  /* private */ var _onNodeChange: Any = js.native
+  /* private */ var _listenerRemovers: Any = js.native
   
   /* private */ var _onParentChild: Any = js.native
   

@@ -6,22 +6,50 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ColumnEditorOptions extends StObject {
   
+  /**
+    * Column of the editor.
+    */
   var column: Column
   
-  var editorCallback: js.UndefOr[js.Function1[/* val */ Any, Unit]] = js.undefined
+  /**
+    * Callback function triggered on editor change.
+    * @param {*} value - Browser event
+    */
+  var editorCallback: js.UndefOr[js.Function1[/* value */ Any, Unit]] = js.undefined
   
+  /**
+    * Field name of the column.
+    */
   var field: String
   
+  /**
+    * Whether the row is frozen or not.
+    */
   var frozenRow: js.UndefOr[Boolean] = js.undefined
   
+  /**
+    * Node element of the editor.
+    */
   var node: js.UndefOr[Any] = js.undefined
   
+  /**
+    * Additional properties passed to the body component.
+    */
   var props: Any
   
+  /**
+    * Data of the edited row.
+    */
   var rowData: Any
   
+  /**
+    * Index of the edited row.
+    */
   var rowIndex: Double
   
+  /**
+    * Value of the editor.
+    */
   var value: Any
 }
 object ColumnEditorOptions {
@@ -36,7 +64,7 @@ object ColumnEditorOptions {
     
     inline def setColumn(value: Column): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
-    inline def setEditorCallback(value: /* val */ Any => Unit): Self = StObject.set(x, "editorCallback", js.Any.fromFunction1(value))
+    inline def setEditorCallback(value: /* value */ Any => Unit): Self = StObject.set(x, "editorCallback", js.Any.fromFunction1(value))
     
     inline def setEditorCallbackUndefined: Self = StObject.set(x, "editorCallback", js.undefined)
     

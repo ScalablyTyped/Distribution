@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetLabelDetectionRequest extends StObject {
   
   /**
+    * Defines how to aggregate the returned results. Results can be aggregated by timestamps or segments.
+    */
+  var AggregateBy: js.UndefOr[LabelDetectionAggregateBy] = js.undefined
+  
+  /**
     * Job identifier for the label detection operation for which you want results returned. You get the job identifer from an initial call to StartlabelDetection.
     */
   var JobId: typings.awsSdk.clientsRekognitionMod.JobId
@@ -35,6 +40,10 @@ object GetLabelDetectionRequest {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: GetLabelDetectionRequest] (val x: Self) extends AnyVal {
+    
+    inline def setAggregateBy(value: LabelDetectionAggregateBy): Self = StObject.set(x, "AggregateBy", value.asInstanceOf[js.Any])
+    
+    inline def setAggregateByUndefined: Self = StObject.set(x, "AggregateBy", js.undefined)
     
     inline def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
     

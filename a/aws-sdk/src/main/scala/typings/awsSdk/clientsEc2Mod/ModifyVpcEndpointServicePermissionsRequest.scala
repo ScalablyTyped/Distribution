@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ModifyVpcEndpointServicePermissionsRequest extends StObject {
   
   /**
-    * The Amazon Resource Names (ARN) of one or more principals. Permissions are granted to the principals in this list. To grant permissions to all principals, specify an asterisk (*).
+    * The Amazon Resource Names (ARN) of the principals. Permissions are granted to the principals in this list. To grant permissions to all principals, specify an asterisk (*).
     */
   var AddAllowedPrincipals: js.UndefOr[ValueStringList] = js.undefined
   
@@ -17,7 +17,7 @@ trait ModifyVpcEndpointServicePermissionsRequest extends StObject {
   var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The Amazon Resource Names (ARN) of one or more principals. Permissions are revoked for principals in this list.
+    * The Amazon Resource Names (ARN) of the principals. Permissions are revoked for principals in this list.
     */
   var RemoveAllowedPrincipals: js.UndefOr[ValueStringList] = js.undefined
   

@@ -5,18 +5,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Available only in the v=beta channel: https://goo.gle/3oAthT3.
-  * Shipment location provider.
-  */
 trait FleetEngineShipmentLocationProvider
   extends StObject
-     with LocationProvider {
-  
-  /**
-    * Returns the currently tracked task.
-    */
-  def getTask(): Task | Null
+     with PollingLocationProvider {
   
   /**
     * Explicitly refreshes the tracked location.
@@ -33,18 +24,17 @@ object FleetEngineShipmentLocationProvider {
   
   inline def apply(
     addListener: (String, js.Function) => MapsEventListener,
-    getTask: () => Task | Null,
+    isPolling: Boolean,
+    pollingIntervalMillis: Double,
     refresh: () => Unit,
     trackingId: String
   ): FleetEngineShipmentLocationProvider = {
-    val __obj = js.Dynamic.literal(addListener = js.Any.fromFunction2(addListener), getTask = js.Any.fromFunction0(getTask), refresh = js.Any.fromFunction0(refresh), trackingId = trackingId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(addListener = js.Any.fromFunction2(addListener), isPolling = isPolling.asInstanceOf[js.Any], pollingIntervalMillis = pollingIntervalMillis.asInstanceOf[js.Any], refresh = js.Any.fromFunction0(refresh), trackingId = trackingId.asInstanceOf[js.Any])
     __obj.asInstanceOf[FleetEngineShipmentLocationProvider]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: FleetEngineShipmentLocationProvider] (val x: Self) extends AnyVal {
-    
-    inline def setGetTask(value: () => Task | Null): Self = StObject.set(x, "getTask", js.Any.fromFunction0(value))
     
     inline def setRefresh(value: () => Unit): Self = StObject.set(x, "refresh", js.Any.fromFunction0(value))
     

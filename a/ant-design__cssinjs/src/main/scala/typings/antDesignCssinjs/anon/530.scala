@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.PaddingLeft
+import typings.csstype.mod.Property.RubyAlign
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,13 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `530` extends StObject {
   
   var value: js.UndefOr[
-    (PaddingLeft[Double | String]) | (js.Array[
-      (Extract[
-        js.UndefOr[
-          (PaddingLeft[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingLeft[Double | String]]]])
-        ], 
-        String
-      ]) | (NonNullable[js.UndefOr[PaddingLeft[Double | String]]])
+    RubyAlign | (js.Array[
+      (Extract[js.UndefOr[RubyAlign | js.Array[NonNullable[js.UndefOr[RubyAlign]]]], String]) | NonNullable[js.UndefOr[RubyAlign]]
     ])
   ] = js.native
 }

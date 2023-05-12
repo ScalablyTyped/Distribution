@@ -325,6 +325,8 @@ object sapUiUx3ExactMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:refineSearch refineSearch} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -336,6 +338,8 @@ object sapUiUx3ExactMod {
     mParameters: AllSelectedAttributes): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:search search} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining

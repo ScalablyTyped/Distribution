@@ -51,6 +51,15 @@ object buildSrcCodecMod {
     var value: String = js.native
   }
   
+  @JSImport("@google-cloud/spanner/build/src/codec", "PGJsonb")
+  @js.native
+  open class PGJsonb protected () extends StObject {
+    def this(pgValue: String) = this()
+    def this(pgValue: js.Object) = this()
+    
+    var value: js.Object = js.native
+  }
+  
   @JSImport("@google-cloud/spanner/build/src/codec", "PGNumeric")
   @js.native
   open class PGNumeric protected () extends StObject {
@@ -158,6 +167,23 @@ object buildSrcCodecMod {
     }
     
     inline def Numeric_=(x: Instantiable1[/* value */ String, Numeric]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Numeric")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@google-cloud/spanner/build/src/codec", "codec.PGJsonb")
+    @js.native
+    def PGJsonb: Instantiable1[
+        /* pgValue */ js.Object | String, 
+        typings.googleCloudSpanner.buildSrcCodecMod.PGJsonb
+      ] = js.native
+    
+    /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+    @JSImport("@google-cloud/spanner/build/src/codec", "codec.PGJsonb")
+    @js.native
+    open class PGJsonbCls protected () extends PGJsonb {
+      def this(pgValue: String) = this()
+      def this(pgValue: js.Object) = this()
+    }
+    
+    inline def PGJsonb_=(x: Instantiable1[/* pgValue */ js.Object | String, PGJsonb]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PGJsonb")(x.asInstanceOf[js.Any])
     
     @JSImport("@google-cloud/spanner/build/src/codec", "codec.PGNumeric")
     @js.native

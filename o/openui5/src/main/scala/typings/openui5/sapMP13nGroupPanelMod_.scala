@@ -422,6 +422,8 @@ object sapMP13nGroupPanelMod_ {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:addGroupItem addGroupItem} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -433,6 +435,8 @@ object sapMP13nGroupPanelMod_ {
     mParameters: js.Object): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:removeGroupItem removeGroupItem} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -444,6 +448,8 @@ object sapMP13nGroupPanelMod_ {
     mParameters: js.Object): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:updateGroupItem updateGroupItem} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining

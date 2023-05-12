@@ -7,23 +7,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TextDocumentContentChangeEvent extends StObject {
   
   /**
-    * The range that got replaced.
-    */
+  		 * The range that got replaced.
+  		 */
   val range: Range
   
   /**
-    * The length of the range that got replaced.
-    */
+  		 * The length of the range that got replaced.
+  		 */
   val rangeLength: Double
   
   /**
-    * The offset of the range that got replaced.
-    */
+  		 * The offset of the range that got replaced.
+  		 */
   val rangeOffset: Double
   
   /**
-    * The new text for the range.
-    */
+  		 * The new text for the range.
+  		 */
   val text: String
 }
 object TextDocumentContentChangeEvent {

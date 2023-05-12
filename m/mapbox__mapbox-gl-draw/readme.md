@@ -1,7 +1,7 @@
 
 # Scala.js typings for mapbox__mapbox-gl-draw
 
-Typings are for version 1.3
+Typings are for version 1.4
 
 ## Library description:
 A drawing component for Mapbox GL JS

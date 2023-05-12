@@ -16,7 +16,7 @@ open class MouseEvent protected ()
   /**
     * Create a new MouseEvent instance.
     *
-    * @param {Mouse} mouse - The Mouse device that is firing this event.
+    * @param {import('./mouse.js').Mouse} mouse - The Mouse device that is firing this event.
     * @param {globalThis.MouseEvent} event - The original browser event that fired.
     */
   def this(

@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateFlowRequest extends StObject {
   
   /**
+    * The clientToken parameter is an idempotency token. It ensures that your CreateFlow request completes only once. You choose the value to pass. For example, if you don't receive a response from your request, you can safely retry the request with the same clientToken parameter value. If you omit a clientToken value, the Amazon Web Services SDK that you are using inserts a value for you. This way, the SDK can safely retry requests multiple times after a network error. You must provide your own value for other use cases. If you specify input parameters that differ from your first request, an error occurs. If you use a different value for clientToken, Amazon AppFlow considers it a new call to CreateFlow. The token is active for 8 hours.
+    */
+  var clientToken: js.UndefOr[ClientToken] = js.undefined
+  
+  /**
     *  A description of the flow you want to create. 
     */
   var description: js.UndefOr[FlowDescription] = js.undefined
@@ -25,6 +30,11 @@ trait CreateFlowRequest extends StObject {
     *  The ARN (Amazon Resource Name) of the Key Management Service (KMS) key you provide for encryption. This is required if you do not want to use the Amazon AppFlow-managed KMS key. If you don't provide anything here, Amazon AppFlow uses the Amazon AppFlow-managed KMS key. 
     */
   var kmsArn: js.UndefOr[KMSArn] = js.undefined
+  
+  /**
+    * Specifies the configuration that Amazon AppFlow uses when it catalogs the data that's transferred by the associated flow. When Amazon AppFlow catalogs the data from a flow, it stores metadata in a data catalog.
+    */
+  var metadataCatalogConfig: js.UndefOr[MetadataCatalogConfig] = js.undefined
   
   /**
     *  The configuration that controls how Amazon AppFlow retrieves data from the source connector. 
@@ -62,6 +72,10 @@ object CreateFlowRequest {
   @scala.inline
   implicit open class MutableBuilder[Self <: CreateFlowRequest] (val x: Self) extends AnyVal {
     
+    inline def setClientToken(value: ClientToken): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
+    
+    inline def setClientTokenUndefined: Self = StObject.set(x, "clientToken", js.undefined)
+    
     inline def setDescription(value: FlowDescription): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
@@ -75,6 +89,10 @@ object CreateFlowRequest {
     inline def setKmsArn(value: KMSArn): Self = StObject.set(x, "kmsArn", value.asInstanceOf[js.Any])
     
     inline def setKmsArnUndefined: Self = StObject.set(x, "kmsArn", js.undefined)
+    
+    inline def setMetadataCatalogConfig(value: MetadataCatalogConfig): Self = StObject.set(x, "metadataCatalogConfig", value.asInstanceOf[js.Any])
+    
+    inline def setMetadataCatalogConfigUndefined: Self = StObject.set(x, "metadataCatalogConfig", js.undefined)
     
     inline def setSourceFlowConfig(value: SourceFlowConfig): Self = StObject.set(x, "sourceFlowConfig", value.asInstanceOf[js.Any])
     

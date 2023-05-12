@@ -3,10 +3,10 @@ package typings.maxmind
 import typings.maxmind.anon.FnCall
 import typings.node.anon.WatchFileOptionsbigintfal
 import typings.node.anon.WatchFileOptionsbiginttru
-import typings.node.fsMod.BigIntStats
+import typings.node.fsMod.BigIntStatsListener
 import typings.node.fsMod.PathLike
 import typings.node.fsMod.StatWatcher
-import typings.node.fsMod.Stats
+import typings.node.fsMod.StatsListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,26 +35,10 @@ object libFsMod {
     @JSImport("maxmind/lib/fs", "default.watchFile")
     @js.native
     def watchFile: FnCall = js.native
-    inline def watchFile(filename: PathLike, listener: js.Function2[/* curr */ Stats, /* prev */ Stats, Unit]): StatWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("watchFile")(filename.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[StatWatcher]
-    inline def watchFile(
-      filename: PathLike,
-      options: Unit,
-      listener: js.Function2[
-          (/* curr */ BigIntStats) | (/* curr */ Stats), 
-          (/* prev */ BigIntStats) | (/* prev */ Stats), 
-          Unit
-        ]
-    ): StatWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("watchFile")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[StatWatcher]
-    inline def watchFile(
-      filename: PathLike,
-      options: WatchFileOptionsbigintfal,
-      listener: js.Function2[/* curr */ Stats, /* prev */ Stats, Unit]
-    ): StatWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("watchFile")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[StatWatcher]
-    inline def watchFile(
-      filename: PathLike,
-      options: WatchFileOptionsbiginttru,
-      listener: js.Function2[/* curr */ BigIntStats, /* prev */ BigIntStats, Unit]
-    ): StatWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("watchFile")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[StatWatcher]
+    inline def watchFile(filename: PathLike, listener: StatsListener): StatWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("watchFile")(filename.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[StatWatcher]
+    inline def watchFile(filename: PathLike, options: Unit, listener: BigIntStatsListener | StatsListener): StatWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("watchFile")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[StatWatcher]
+    inline def watchFile(filename: PathLike, options: WatchFileOptionsbigintfal, listener: StatsListener): StatWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("watchFile")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[StatWatcher]
+    inline def watchFile(filename: PathLike, options: WatchFileOptionsbiginttru, listener: BigIntStatsListener): StatWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("watchFile")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[StatWatcher]
     inline def watchFile_=(x: FnCall): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("watchFile")(x.asInstanceOf[js.Any])
   }
 }

@@ -27,7 +27,11 @@ open class Tags () extends EventHandler {
     */
   /* private */ var _has: Any = js.native
   
-  var _list: js.Array[Any] = js.native
+  /** @private */
+  /* private */ var _index: Any = js.native
+  
+  /** @private */
+  /* private */ var _list: Any = js.native
   
   var _parent: Any = js.native
   

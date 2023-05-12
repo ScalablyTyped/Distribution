@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object distFrameworkConstructorMod {
   
-  type Constructor = Instantiable1[/* args (repeated) */ Any, Any]
+  type Constructor[T] = Instantiable1[/* args (repeated) */ Any, T]
 }

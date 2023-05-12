@@ -15,11 +15,16 @@ trait CacheStorageContentUpdatedEvent extends StObject {
     * Origin to update.
     */
   var origin: String
+  
+  /**
+    * Storage key to update.
+    */
+  var storageKey: String
 }
 object CacheStorageContentUpdatedEvent {
   
-  inline def apply(cacheName: String, origin: String): CacheStorageContentUpdatedEvent = {
-    val __obj = js.Dynamic.literal(cacheName = cacheName.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any])
+  inline def apply(cacheName: String, origin: String, storageKey: String): CacheStorageContentUpdatedEvent = {
+    val __obj = js.Dynamic.literal(cacheName = cacheName.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any], storageKey = storageKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[CacheStorageContentUpdatedEvent]
   }
   
@@ -29,5 +34,7 @@ object CacheStorageContentUpdatedEvent {
     inline def setCacheName(value: String): Self = StObject.set(x, "cacheName", value.asInstanceOf[js.Any])
     
     inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    
+    inline def setStorageKey(value: String): Self = StObject.set(x, "storageKey", value.asInstanceOf[js.Any])
   }
 }

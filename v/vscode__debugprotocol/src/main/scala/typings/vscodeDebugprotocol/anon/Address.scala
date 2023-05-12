@@ -11,7 +11,7 @@ trait Address extends StObject {
   			*/
   var address: String
   
-  /** The bytes read from memory, encoded using base64. */
+  /** The bytes read from memory, encoded using base64. If the decoded length of `data` is less than the requested `count` in the original `readMemory` request, and `unreadableBytes` is zero or omitted, then the client should assume it's reached the end of readable memory. */
   var data: js.UndefOr[String] = js.undefined
   
   /** The number of unreadable bytes encountered after the last successfully read byte.

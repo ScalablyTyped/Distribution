@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.TextDecorationStyle
+import typings.csstype.mod.Property.StrokeLinecap
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,11 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `246` extends StObject {
   
   var value: js.UndefOr[
-    TextDecorationStyle | (js.Array[
+    StrokeLinecap | (js.Array[
       (Extract[
-        js.UndefOr[TextDecorationStyle | js.Array[NonNullable[js.UndefOr[TextDecorationStyle]]]], 
+        js.UndefOr[StrokeLinecap | js.Array[NonNullable[js.UndefOr[StrokeLinecap]]]], 
         String
-      ]) | NonNullable[js.UndefOr[TextDecorationStyle]]
+      ]) | NonNullable[js.UndefOr[StrokeLinecap]]
     ])
   ] = js.native
 }

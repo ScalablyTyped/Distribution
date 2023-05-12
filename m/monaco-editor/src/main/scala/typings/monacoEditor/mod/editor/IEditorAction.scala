@@ -4,36 +4,17 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
 trait IEditorAction extends StObject {
   
-  val alias: String
+  val alias: String = js.native
   
-  val id: String
+  val id: String = js.native
   
-  def isSupported(): Boolean
+  def isSupported(): Boolean = js.native
   
-  val label: String
+  val label: String = js.native
   
-  def run(): js.Promise[Unit]
-}
-object IEditorAction {
-  
-  inline def apply(alias: String, id: String, isSupported: () => Boolean, label: String, run: () => js.Promise[Unit]): IEditorAction = {
-    val __obj = js.Dynamic.literal(alias = alias.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], isSupported = js.Any.fromFunction0(isSupported), label = label.asInstanceOf[js.Any], run = js.Any.fromFunction0(run))
-    __obj.asInstanceOf[IEditorAction]
-  }
-  
-  @scala.inline
-  implicit open class MutableBuilder[Self <: IEditorAction] (val x: Self) extends AnyVal {
-    
-    inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
-    
-    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
-    
-    inline def setIsSupported(value: () => Boolean): Self = StObject.set(x, "isSupported", js.Any.fromFunction0(value))
-    
-    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
-    
-    inline def setRun(value: () => js.Promise[Unit]): Self = StObject.set(x, "run", js.Any.fromFunction0(value))
-  }
+  def run(): js.Promise[Unit] = js.native
+  def run(args: Any): js.Promise[Unit] = js.native
 }

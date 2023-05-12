@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListComponentsInput extends StObject {
   
   /**
-    * 
+    * The ID of the application.
     */
   var ApplicationId: js.UndefOr[typings.awsSdk.clientsSsmsapMod.ApplicationId] = js.undefined
   
   /**
-    * 
+    * The maximum number of results to return with a single call. To retrieve the remaining results, make another call with the returned nextToken value. If you do not specify a value for MaxResults, the request returns 50 items per page by default.
     */
   var MaxResults: js.UndefOr[typings.awsSdk.clientsSsmsapMod.MaxResults] = js.undefined
   
   /**
-    * 
+    * The token for the next page of results.
     */
   var NextToken: js.UndefOr[typings.awsSdk.clientsSsmsapMod.NextToken] = js.undefined
 }

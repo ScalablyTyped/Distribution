@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@remix-run/router" : "1.0.2"
+      "@remix-run/router" : "1.6.1"
     }
   ],
   "test-dependencies" : [
     {
-      "@remix-run/router" : "1.0.2"
+      "@remix-run/router" : "1.6.1"
     }
   ],
   "compile-devDependencies" : [

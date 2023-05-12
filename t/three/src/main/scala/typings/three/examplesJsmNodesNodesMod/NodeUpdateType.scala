@@ -3,6 +3,7 @@ package typings.three.examplesJsmNodesNodesMod
 import typings.three.threeStrings.`object`
 import typings.three.threeStrings.frame
 import typings.three.threeStrings.none
+import typings.three.threeStrings.render
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,4 +28,9 @@ object NodeUpdateType {
   @js.native
   def OBJECT: `object` = js.native
   inline def OBJECT_=(x: `object`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OBJECT")(x.asInstanceOf[js.Any])
+  
+  @JSImport("three/examples/jsm/nodes/Nodes", "NodeUpdateType.RENDER")
+  @js.native
+  def RENDER: render = js.native
+  inline def RENDER_=(x: render): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RENDER")(x.asInstanceOf[js.Any])
 }

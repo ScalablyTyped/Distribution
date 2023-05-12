@@ -1,6 +1,6 @@
 package typings.tensorflowTfjsBackendWasm
 
-import typings.tensorflowTfjsBackendWasm.anon.AttrsBackendInputs
+import typings.tensorflowTfjsBackendWasm.anon.AttrsExpandDimsAttrs
 import typings.tensorflowTfjsBackendWasm.anon.DataId
 import typings.tensorflowTfjsCore.distKernelRegistryMod.KernelConfig
 import org.scalablytyped.runtime.StObject
@@ -13,7 +13,7 @@ object distKernelsExpandDimsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def expandDims(args: AttrsBackendInputs): DataId = ^.asInstanceOf[js.Dynamic].applyDynamic("expandDims")(args.asInstanceOf[js.Any]).asInstanceOf[DataId]
+  inline def expandDims(args: AttrsExpandDimsAttrs): DataId = ^.asInstanceOf[js.Dynamic].applyDynamic("expandDims")(args.asInstanceOf[js.Any]).asInstanceOf[DataId]
   
   @JSImport("@tensorflow/tfjs-backend-wasm/dist/kernels/ExpandDims", "expandDimsConfig")
   @js.native

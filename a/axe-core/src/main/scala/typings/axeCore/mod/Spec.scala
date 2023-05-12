@@ -20,7 +20,7 @@ trait Spec extends StObject {
   
   var noHtml: js.UndefOr[Boolean] = js.undefined
   
-  var reporter: js.UndefOr[ReporterVersion] = js.undefined
+  var reporter: js.UndefOr[ReporterVersion | String | AxeReporter[Any]] = js.undefined
   
   var rules: js.UndefOr[js.Array[Rule]] = js.undefined
   
@@ -71,7 +71,11 @@ object Spec {
     
     inline def setNoHtmlUndefined: Self = StObject.set(x, "noHtml", js.undefined)
     
-    inline def setReporter(value: ReporterVersion): Self = StObject.set(x, "reporter", value.asInstanceOf[js.Any])
+    inline def setReporter(value: ReporterVersion | String | AxeReporter[Any]): Self = StObject.set(x, "reporter", value.asInstanceOf[js.Any])
+    
+    inline def setReporterFunction3(
+      value: (/* rawResults */ js.Array[RawResult], /* option */ RunOptions, /* callback */ js.Function1[Any, Unit]) => Unit
+    ): Self = StObject.set(x, "reporter", js.Any.fromFunction3(value))
     
     inline def setReporterUndefined: Self = StObject.set(x, "reporter", js.undefined)
     

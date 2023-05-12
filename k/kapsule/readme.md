@@ -1,7 +1,7 @@
 
 # Scala.js typings for kapsule
 
-Typings are for version 1.13.8
+Typings are for version 1.14.2
 
 ## Library description:
 A closure based Web Component library

@@ -11,7 +11,7 @@ object mod {
   
   @JSImport("react-timeago", JSImport.Namespace)
   @js.native
-  open class ^[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.react.mod.ComponentType[js.Object], typings.reactTimeago.reactTimeagoStrings.a, typings.reactTimeago.reactTimeagoStrings.abbr */ Any */] ()
+  open class ^[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177, starting with typings.react.mod.ComponentType[js.Object], typings.reactTimeago.reactTimeagoStrings.a, typings.reactTimeago.reactTimeagoStrings.abbr */ Any */] ()
     extends Component[ReactTimeagoProps[T] & ComponentProps[T], js.Object, Any]
   
   /** 
@@ -29,9 +29,9 @@ object mod {
     def apply(value: Double, unit: Unit, suffix: Suffix, epochMiliseconds: Double, nextFormatter: Formatter): ReactNode = js.native
   }
   
-  type ReactTimeago[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.react.mod.ComponentType[js.Object], typings.reactTimeago.reactTimeagoStrings.a, typings.reactTimeago.reactTimeagoStrings.abbr */ Any */] = Component[ReactTimeagoProps[T] & ComponentProps[T], js.Object, Any]
+  type ReactTimeago[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177, starting with typings.react.mod.ComponentType[js.Object], typings.reactTimeago.reactTimeagoStrings.a, typings.reactTimeago.reactTimeagoStrings.abbr */ Any */] = Component[ReactTimeagoProps[T] & ComponentProps[T], js.Object, Any]
   
-  trait ReactTimeagoProps[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.react.mod.ComponentType[js.Object], typings.reactTimeago.reactTimeagoStrings.a, typings.reactTimeago.reactTimeagoStrings.abbr */ Any */] extends StObject {
+  trait ReactTimeagoProps[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177, starting with typings.react.mod.ComponentType[js.Object], typings.reactTimeago.reactTimeagoStrings.a, typings.reactTimeago.reactTimeagoStrings.abbr */ Any */] extends StObject {
     
     val component: js.UndefOr[T] = js.undefined
     
@@ -51,13 +51,13 @@ object mod {
   }
   object ReactTimeagoProps {
     
-    inline def apply[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.react.mod.ComponentType[js.Object], typings.reactTimeago.reactTimeagoStrings.a, typings.reactTimeago.reactTimeagoStrings.abbr */ Any */](date: String | Double | js.Date): ReactTimeagoProps[T] = {
+    inline def apply[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177, starting with typings.react.mod.ComponentType[js.Object], typings.reactTimeago.reactTimeagoStrings.a, typings.reactTimeago.reactTimeagoStrings.abbr */ Any */](date: String | Double | js.Date): ReactTimeagoProps[T] = {
       val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReactTimeagoProps[T]]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: ReactTimeagoProps[?], T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.react.mod.ComponentType[js.Object], typings.reactTimeago.reactTimeagoStrings.a, typings.reactTimeago.reactTimeagoStrings.abbr */ Any */] (val x: Self & ReactTimeagoProps[T]) extends AnyVal {
+    implicit open class MutableBuilder[Self <: ReactTimeagoProps[?], T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177, starting with typings.react.mod.ComponentType[js.Object], typings.reactTimeago.reactTimeagoStrings.a, typings.reactTimeago.reactTimeagoStrings.abbr */ Any */] (val x: Self & ReactTimeagoProps[T]) extends AnyVal {
       
       inline def setComponent(value: T): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       

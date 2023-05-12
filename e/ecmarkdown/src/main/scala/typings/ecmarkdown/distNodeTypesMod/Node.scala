@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.ecmarkdown.distNodeTypesMod.CommentNode
   - typings.ecmarkdown.distNodeTypesMod.AlgorithmNode
   - typings.ecmarkdown.distNodeTypesMod.TextNode
+  - typings.ecmarkdown.distNodeTypesMod.DoubleBracketsNode
   - typings.ecmarkdown.distNodeTypesMod.StarNode
   - typings.ecmarkdown.distNodeTypesMod.UnderscoreNode
   - typings.ecmarkdown.distNodeTypesMod.TickNode
@@ -34,6 +35,11 @@ object Node {
     __obj.asInstanceOf[typings.ecmarkdown.distNodeTypesMod.CommentNode]
   }
   
+  inline def DoubleBracketsNode(contents: String, location: LocationRange): typings.ecmarkdown.distNodeTypesMod.DoubleBracketsNode = {
+    val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = "double-brackets")
+    __obj.asInstanceOf[typings.ecmarkdown.distNodeTypesMod.DoubleBracketsNode]
+  }
+  
   inline def OpaqueTagNode(contents: String, location: LocationRange): typings.ecmarkdown.distNodeTypesMod.OpaqueTagNode = {
     val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = "opaqueTag")
     __obj.asInstanceOf[typings.ecmarkdown.distNodeTypesMod.OpaqueTagNode]
@@ -54,7 +60,7 @@ object Node {
     __obj.asInstanceOf[typings.ecmarkdown.distNodeTypesMod.PipeNode]
   }
   
-  inline def StarNode(contents: js.Array[FragmentNode], location: LocationRange): typings.ecmarkdown.distNodeTypesMod.StarNode = {
+  inline def StarNode(contents: js.Array[TextNode | CommentNode | TagNode], location: LocationRange): typings.ecmarkdown.distNodeTypesMod.StarNode = {
     val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = "star")
     __obj.asInstanceOf[typings.ecmarkdown.distNodeTypesMod.StarNode]
   }
@@ -69,17 +75,17 @@ object Node {
     __obj.asInstanceOf[typings.ecmarkdown.distNodeTypesMod.TextNode]
   }
   
-  inline def TickNode(contents: js.Array[FragmentNode], location: LocationRange): typings.ecmarkdown.distNodeTypesMod.TickNode = {
+  inline def TickNode(contents: js.Array[TextNode | CommentNode | TagNode], location: LocationRange): typings.ecmarkdown.distNodeTypesMod.TickNode = {
     val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = "tick")
     __obj.asInstanceOf[typings.ecmarkdown.distNodeTypesMod.TickNode]
   }
   
-  inline def TildeNode(contents: js.Array[FragmentNode], location: LocationRange): typings.ecmarkdown.distNodeTypesMod.TildeNode = {
+  inline def TildeNode(contents: js.Array[TextNode | CommentNode | TagNode], location: LocationRange): typings.ecmarkdown.distNodeTypesMod.TildeNode = {
     val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = "tilde")
     __obj.asInstanceOf[typings.ecmarkdown.distNodeTypesMod.TildeNode]
   }
   
-  inline def UnderscoreNode(contents: js.Array[FragmentNode], location: LocationRange): typings.ecmarkdown.distNodeTypesMod.UnderscoreNode = {
+  inline def UnderscoreNode(contents: String, location: LocationRange): typings.ecmarkdown.distNodeTypesMod.UnderscoreNode = {
     val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = "underscore")
     __obj.asInstanceOf[typings.ecmarkdown.distNodeTypesMod.UnderscoreNode]
   }

@@ -27,7 +27,7 @@ object ColorPresentation {
   ): typings.vscodeLanguageserverTypes.mod.ColorPresentation = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(label.asInstanceOf[js.Any], textEdit.asInstanceOf[js.Any], additionalTextEdits.asInstanceOf[js.Any])).asInstanceOf[typings.vscodeLanguageserverTypes.mod.ColorPresentation]
   
   /**
-    * Checks whether the given literal conforms to the [ColorInformation](#ColorInformation) interface.
+    * Checks whether the given literal conforms to the {@link ColorInformation} interface.
     */
   inline def is(value: Any): /* is vscode-languageserver-types.vscode-languageserver-types.ColorPresentation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.ColorPresentation */ Boolean]
 }

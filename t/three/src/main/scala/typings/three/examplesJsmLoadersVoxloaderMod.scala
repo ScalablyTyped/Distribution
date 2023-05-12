@@ -5,6 +5,7 @@ import typings.std.EventTarget
 import typings.std.ProgressEvent
 import typings.three.anon.X
 import typings.three.srcCoreBufferGeometryMod.BufferGeometry
+import typings.three.srcCoreBufferGeometryMod.NormalBufferAttributes
 import typings.three.srcMaterialsMaterialMod.Material
 import typings.three.srcThreeMod.Data3DTexture
 import typings.three.srcThreeMod.Loader
@@ -46,13 +47,16 @@ object examplesJsmLoadersVoxloaderMod {
       onError: js.Function1[/* event */ ErrorEvent, Unit]
     ): Unit = js.native
     
+    def loadAsync(url: String): js.Promise[js.Array[Chunk]] = js.native
+    def loadAsync(url: String, onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit]): js.Promise[js.Array[Chunk]] = js.native
+    
     def parse(data: js.typedarray.ArrayBuffer): js.Array[js.Object] = js.native
   }
   
   @JSImport("three/examples/jsm/loaders/VOXLoader", "VOXMesh")
   @js.native
   open class VOXMesh protected ()
-    extends Mesh[BufferGeometry, Material | js.Array[Material]] {
+    extends Mesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]] {
     def this(chunk: Chunk) = this()
   }
   

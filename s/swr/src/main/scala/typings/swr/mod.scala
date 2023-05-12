@@ -5,9 +5,6 @@ import typings.react.mod.ValidationMap
 import typings.swr.anon.PartialPropsWithChildrenv
 import typings.swr.anon.PropsWithChildrenvaluePar
 import typings.swr.anon.WeakValidationMapPropsWit
-import typings.swr.distTypesMod.FullConfiguration
-import typings.swr.distTypesMod.Key
-import typings.swr.distTypesMod.SWRHook
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,11 +15,26 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
+  /**
+    * A hook to fetch data.
+    *
+    * @link https://swr.vercel.app
+    * @example
+    * ```jsx
+    * import useSWR from 'swr'
+    * function Profile() {
+    *   const { data, error } = useSWR('/api/user', fetcher)
+    *   if (error) return <div>failed to load</div>
+    *   if (!data) return <div>loading...</div>
+    *   return <div>hello {data.name}!</div>
+    * }
+    * ```
+    */
   @JSImport("swr", JSImport.Default)
   @js.native
-  val default: SWRHook = js.native
+  val default: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SWRHook */ Any = js.native
   
-  /* Inlined react.react.FC<react.react.PropsWithChildren<{  value :std.Partial<swr.swr/dist/types.PublicConfiguration<any, any, swr.swr/dist/types.BareFetcher<any>>> & std.Partial<swr.swr/dist/types.ProviderConfiguration> & {  provider :(cache : std.Readonly<swr.swr/dist/types.Cache<any>>): swr.swr/dist/types.Cache<any> | undefined} | undefined}>> & {  default :swr.swr/dist/types.FullConfiguration} */
+  /* Inlined react.react.FC<react.react.PropsWithChildren<{  value :std.Partial</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify swr__internal.PublicConfiguration<any, any, swr__internal.BareFetcher<any>> * / any> & std.Partial</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify swr__internal.ProviderConfiguration * / any> & {  provider :(cache : std.Readonly<swr.swr.Cache>): swr.swr.Cache | undefined} | (parentConfig : std.Partial</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify swr__internal.PublicConfiguration<any, any, swr__internal.BareFetcher<any>> * / any> & std.Partial</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify swr__internal.ProviderConfiguration * / any> & {  provider :(cache : std.Readonly<swr.swr.Cache>): swr.swr.Cache | undefined} | undefined): std.Partial</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify swr__internal.PublicConfiguration<any, any, swr__internal.BareFetcher<any>> * / any> & std.Partial</ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify swr__internal.ProviderConfiguration * / any> & {  provider :(cache : std.Readonly<swr.swr.Cache>): swr.swr.Cache | undefined} | undefined}>> & {  defaultValue :/ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FullConfiguration * / any} */
   object SWRConfig {
     
     inline def apply(props: PropsWithChildrenvaluePar): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
@@ -31,10 +43,6 @@ object mod {
     @JSImport("swr", "SWRConfig")
     @js.native
     val ^ : js.Any = js.native
-    
-    @JSImport("swr", "SWRConfig.default")
-    @js.native
-    def default: FullConfiguration = js.native
     
     @JSImport("swr", "SWRConfig.contextTypes")
     @js.native
@@ -46,7 +54,12 @@ object mod {
     def defaultProps: js.UndefOr[PartialPropsWithChildrenv] = js.native
     inline def defaultProps_=(x: js.UndefOr[PartialPropsWithChildrenv]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
-    inline def default_=(x: FullConfiguration): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
+    @JSImport("swr", "SWRConfig.defaultValue")
+    @js.native
+    def defaultValue: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FullConfiguration */ Any = js.native
+    inline def defaultValue_=(
+      x: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FullConfiguration */ Any
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultValue")(x.asInstanceOf[js.Any])
     
     @JSImport("swr", "SWRConfig.displayName")
     @js.native
@@ -59,7 +72,7 @@ object mod {
     inline def propTypes_=(x: js.UndefOr[WeakValidationMapPropsWit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
   }
   
-  inline def unstableSerialize(key: Key): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_serialize")(key.asInstanceOf[js.Any]).asInstanceOf[String]
-  
-  inline def useSWRConfig(): FullConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("useSWRConfig")().asInstanceOf[FullConfiguration]
+  inline def unstableSerialize(
+    key: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Key */ Any
+  ): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_serialize")(key.asInstanceOf[js.Any]).asInstanceOf[String]
 }

@@ -16,7 +16,7 @@ object libIconsBankFilledMod extends Shortcut {
   @js.native
   trait BankFilledIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_BankFilledIconType: String = js.native

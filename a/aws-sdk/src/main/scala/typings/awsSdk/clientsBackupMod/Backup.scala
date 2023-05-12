@@ -11,6 +11,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Backup extends Service {
   
+  /**
+    * This action removes the specified legal hold on a recovery point. This action can only be performed by a user with sufficient permissions.
+    */
+  def cancelLegalHold(): Request[CancelLegalHoldOutput, AWSError] = js.native
+  def cancelLegalHold(callback: js.Function2[/* err */ AWSError, /* data */ CancelLegalHoldOutput, Unit]): Request[CancelLegalHoldOutput, AWSError] = js.native
+  /**
+    * This action removes the specified legal hold on a recovery point. This action can only be performed by a user with sufficient permissions.
+    */
+  def cancelLegalHold(params: CancelLegalHoldInput): Request[CancelLegalHoldOutput, AWSError] = js.native
+  def cancelLegalHold(
+    params: CancelLegalHoldInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ CancelLegalHoldOutput, Unit]
+  ): Request[CancelLegalHoldOutput, AWSError] = js.native
+  
   @JSName("config")
   var config_Backup: ConfigBase & ClientConfiguration = js.native
   
@@ -69,6 +83,20 @@ trait Backup extends Service {
     params: CreateFrameworkInput,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateFrameworkOutput, Unit]
   ): Request[CreateFrameworkOutput, AWSError] = js.native
+  
+  /**
+    * This action creates a legal hold on a recovery point (backup). A legal hold is a restraint on altering or deleting a backup until an authorized user cancels the legal hold. Any actions to delete or disassociate a recovery point will fail with an error if one or more active legal holds are on the recovery point.
+    */
+  def createLegalHold(): Request[CreateLegalHoldOutput, AWSError] = js.native
+  def createLegalHold(callback: js.Function2[/* err */ AWSError, /* data */ CreateLegalHoldOutput, Unit]): Request[CreateLegalHoldOutput, AWSError] = js.native
+  /**
+    * This action creates a legal hold on a recovery point (backup). A legal hold is a restraint on altering or deleting a backup until an authorized user cancels the legal hold. Any actions to delete or disassociate a recovery point will fail with an error if one or more active legal holds are on the recovery point.
+    */
+  def createLegalHold(params: CreateLegalHoldInput): Request[CreateLegalHoldOutput, AWSError] = js.native
+  def createLegalHold(
+    params: CreateLegalHoldInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateLegalHoldOutput, Unit]
+  ): Request[CreateLegalHoldOutput, AWSError] = js.native
   
   /**
     * Creates a report plan. A report plan is a document that contains information about the contents of the report and where Backup will deliver it. If you call CreateReportPlan with a plan that already exists, you receive an AlreadyExistsException exception.
@@ -183,12 +211,12 @@ trait Backup extends Service {
   ): Request[js.Object, AWSError] = js.native
   
   /**
-    * Deletes the recovery point specified by a recovery point ID. If the recovery point ID belongs to a continuous backup, calling this endpoint deletes the existing continuous backup and stops future continuous backup.
+    * Deletes the recovery point specified by a recovery point ID. If the recovery point ID belongs to a continuous backup, calling this endpoint deletes the existing continuous backup and stops future continuous backup. When an IAM role's permissions are insufficient to call this API, the service sends back an HTTP 200 response with an empty HTTP body, but the recovery point is not deleted. Instead, it enters an EXPIRED state.  EXPIRED recovery points can be deleted with this API once the IAM role has the iam:CreateServiceLinkedRole action. To learn more about adding this role, see  Troubleshooting manual deletions. If the user or role is deleted or the permission within the role is removed, the deletion will not be successful and will enter an EXPIRED state.
     */
   def deleteRecoveryPoint(): Request[js.Object, AWSError] = js.native
   def deleteRecoveryPoint(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Deletes the recovery point specified by a recovery point ID. If the recovery point ID belongs to a continuous backup, calling this endpoint deletes the existing continuous backup and stops future continuous backup.
+    * Deletes the recovery point specified by a recovery point ID. If the recovery point ID belongs to a continuous backup, calling this endpoint deletes the existing continuous backup and stops future continuous backup. When an IAM role's permissions are insufficient to call this API, the service sends back an HTTP 200 response with an empty HTTP body, but the recovery point is not deleted. Instead, it enters an EXPIRED state.  EXPIRED recovery points can be deleted with this API once the IAM role has the iam:CreateServiceLinkedRole action. To learn more about adding this role, see  Troubleshooting manual deletions. If the user or role is deleted or the permission within the role is removed, the deletion will not be successful and will enter an EXPIRED state.
     */
   def deleteRecoveryPoint(params: DeleteRecoveryPointInput): Request[js.Object, AWSError] = js.native
   def deleteRecoveryPoint(
@@ -379,6 +407,20 @@ trait Backup extends Service {
   ): Request[js.Object, AWSError] = js.native
   
   /**
+    * This action to a specific child (nested) recovery point removes the relationship between the specified recovery point and its parent (composite) recovery point.
+    */
+  def disassociateRecoveryPointFromParent(): Request[js.Object, AWSError] = js.native
+  def disassociateRecoveryPointFromParent(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * This action to a specific child (nested) recovery point removes the relationship between the specified recovery point and its parent (composite) recovery point.
+    */
+  def disassociateRecoveryPointFromParent(params: DisassociateRecoveryPointFromParentInput): Request[js.Object, AWSError] = js.native
+  def disassociateRecoveryPointFromParent(
+    params: DisassociateRecoveryPointFromParentInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
     * Returns the backup plan that is specified by the plan ID as a backup template.
     */
   def exportBackupPlanTemplate(): Request[ExportBackupPlanTemplateOutput, AWSError] = js.native
@@ -475,6 +517,20 @@ trait Backup extends Service {
     params: GetBackupVaultNotificationsInput,
     callback: js.Function2[/* err */ AWSError, /* data */ GetBackupVaultNotificationsOutput, Unit]
   ): Request[GetBackupVaultNotificationsOutput, AWSError] = js.native
+  
+  /**
+    * This action returns details for a specified legal hold. The details are the body of a legal hold in JSON format, in addition to metadata.
+    */
+  def getLegalHold(): Request[GetLegalHoldOutput, AWSError] = js.native
+  def getLegalHold(callback: js.Function2[/* err */ AWSError, /* data */ GetLegalHoldOutput, Unit]): Request[GetLegalHoldOutput, AWSError] = js.native
+  /**
+    * This action returns details for a specified legal hold. The details are the body of a legal hold in JSON format, in addition to metadata.
+    */
+  def getLegalHold(params: GetLegalHoldInput): Request[GetLegalHoldOutput, AWSError] = js.native
+  def getLegalHold(
+    params: GetLegalHoldInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetLegalHoldOutput, Unit]
+  ): Request[GetLegalHoldOutput, AWSError] = js.native
   
   /**
     * Returns a set of metadata key-value pairs that were used to create the backup.
@@ -609,6 +665,20 @@ trait Backup extends Service {
   ): Request[ListFrameworksOutput, AWSError] = js.native
   
   /**
+    * This action returns metadata about active and previous legal holds.
+    */
+  def listLegalHolds(): Request[ListLegalHoldsOutput, AWSError] = js.native
+  def listLegalHolds(callback: js.Function2[/* err */ AWSError, /* data */ ListLegalHoldsOutput, Unit]): Request[ListLegalHoldsOutput, AWSError] = js.native
+  /**
+    * This action returns metadata about active and previous legal holds.
+    */
+  def listLegalHolds(params: ListLegalHoldsInput): Request[ListLegalHoldsOutput, AWSError] = js.native
+  def listLegalHolds(
+    params: ListLegalHoldsInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListLegalHoldsOutput, Unit]
+  ): Request[ListLegalHoldsOutput, AWSError] = js.native
+  
+  /**
     * Returns an array of resources successfully backed up by Backup, including the time the resource was saved, an Amazon Resource Name (ARN) of the resource, and a resource type.
     */
   def listProtectedResources(): Request[ListProtectedResourcesOutput, AWSError] = js.native
@@ -635,6 +705,20 @@ trait Backup extends Service {
     params: ListRecoveryPointsByBackupVaultInput,
     callback: js.Function2[/* err */ AWSError, /* data */ ListRecoveryPointsByBackupVaultOutput, Unit]
   ): Request[ListRecoveryPointsByBackupVaultOutput, AWSError] = js.native
+  
+  /**
+    * This action returns recovery point ARNs (Amazon Resource Names) of the specified legal hold.
+    */
+  def listRecoveryPointsByLegalHold(): Request[ListRecoveryPointsByLegalHoldOutput, AWSError] = js.native
+  def listRecoveryPointsByLegalHold(callback: js.Function2[/* err */ AWSError, /* data */ ListRecoveryPointsByLegalHoldOutput, Unit]): Request[ListRecoveryPointsByLegalHoldOutput, AWSError] = js.native
+  /**
+    * This action returns recovery point ARNs (Amazon Resource Names) of the specified legal hold.
+    */
+  def listRecoveryPointsByLegalHold(params: ListRecoveryPointsByLegalHoldInput): Request[ListRecoveryPointsByLegalHoldOutput, AWSError] = js.native
+  def listRecoveryPointsByLegalHold(
+    params: ListRecoveryPointsByLegalHoldInput,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListRecoveryPointsByLegalHoldOutput, Unit]
+  ): Request[ListRecoveryPointsByLegalHoldOutput, AWSError] = js.native
   
   /**
     * Returns detailed information about all the recovery points of the type specified by a resource Amazon Resource Name (ARN).  For Amazon EFS and Amazon EC2, this action only lists recovery points created by Backup. 
@@ -718,12 +802,12 @@ trait Backup extends Service {
   ): Request[js.Object, AWSError] = js.native
   
   /**
-    * Applies Backup Vault Lock to a backup vault, preventing attempts to delete any recovery point stored in or created in a backup vault. Vault Lock also prevents attempts to update the lifecycle policy that controls the retention period of any recovery point currently stored in a backup vault. If specified, Vault Lock enforces a minimum and maximum retention period for future backup and copy jobs that target a backup vault.  Backup Vault Lock has yet to receive a third-party assessment for SEC 17a-4(f) and CFTC. 
+    * Applies Backup Vault Lock to a backup vault, preventing attempts to delete any recovery point stored in or created in a backup vault. Vault Lock also prevents attempts to update the lifecycle policy that controls the retention period of any recovery point currently stored in a backup vault. If specified, Vault Lock enforces a minimum and maximum retention period for future backup and copy jobs that target a backup vault.  Backup Vault Lock has been assessed by Cohasset Associates for use in environments that are subject to SEC 17a-4, CFTC, and FINRA regulations. For more information about how Backup Vault Lock relates to these regulations, see the Cohasset Associates Compliance Assessment.  
     */
   def putBackupVaultLockConfiguration(): Request[js.Object, AWSError] = js.native
   def putBackupVaultLockConfiguration(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Applies Backup Vault Lock to a backup vault, preventing attempts to delete any recovery point stored in or created in a backup vault. Vault Lock also prevents attempts to update the lifecycle policy that controls the retention period of any recovery point currently stored in a backup vault. If specified, Vault Lock enforces a minimum and maximum retention period for future backup and copy jobs that target a backup vault.  Backup Vault Lock has yet to receive a third-party assessment for SEC 17a-4(f) and CFTC. 
+    * Applies Backup Vault Lock to a backup vault, preventing attempts to delete any recovery point stored in or created in a backup vault. Vault Lock also prevents attempts to update the lifecycle policy that controls the retention period of any recovery point currently stored in a backup vault. If specified, Vault Lock enforces a minimum and maximum retention period for future backup and copy jobs that target a backup vault.  Backup Vault Lock has been assessed by Cohasset Associates for use in environments that are subject to SEC 17a-4, CFTC, and FINRA regulations. For more information about how Backup Vault Lock relates to these regulations, see the Cohasset Associates Compliance Assessment.  
     */
   def putBackupVaultLockConfiguration(params: PutBackupVaultLockConfigurationInput): Request[js.Object, AWSError] = js.native
   def putBackupVaultLockConfiguration(
@@ -802,12 +886,12 @@ trait Backup extends Service {
   ): Request[StartRestoreJobOutput, AWSError] = js.native
   
   /**
-    * Attempts to cancel a job to create a one-time backup of a resource.
+    * Attempts to cancel a job to create a one-time backup of a resource. This action is not supported for the following services: Amazon FSx for Windows File Server, Amazon FSx for Lustre, FSx for ONTAP , Amazon FSx for OpenZFS, Amazon DocumentDB (with MongoDB compatibility), Amazon RDS, Amazon Aurora, and Amazon Neptune.
     */
   def stopBackupJob(): Request[js.Object, AWSError] = js.native
   def stopBackupJob(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Attempts to cancel a job to create a one-time backup of a resource.
+    * Attempts to cancel a job to create a one-time backup of a resource. This action is not supported for the following services: Amazon FSx for Windows File Server, Amazon FSx for Lustre, FSx for ONTAP , Amazon FSx for OpenZFS, Amazon DocumentDB (with MongoDB compatibility), Amazon RDS, Amazon Aurora, and Amazon Neptune.
     */
   def stopBackupJob(params: StopBackupJobInput): Request[js.Object, AWSError] = js.native
   def stopBackupJob(params: StopBackupJobInput, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native

@@ -1,13 +1,17 @@
 package typings.three.srcConstantsMod
 
-import typings.three.srcConstantsMod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-sealed trait NormalMapTypes extends StObject
+/* Rewritten from type alias, can be one of: 
+  - typings.three.threeInts.`0`
+  - typings.three.threeInts.`1`
+*/
+trait NormalMapTypes extends StObject
 object NormalMapTypes {
   
-  inline def apply(value: scala.Nothing): js.UndefOr[NormalMapTypes & scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("NormalMapTypes")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[NormalMapTypes & scala.Nothing]]
+  inline def `0`: typings.three.threeInts.`0` = 0.asInstanceOf[typings.three.threeInts.`0`]
+  
+  inline def `1`: typings.three.threeInts.`1` = 1.asInstanceOf[typings.three.threeInts.`1`]
 }

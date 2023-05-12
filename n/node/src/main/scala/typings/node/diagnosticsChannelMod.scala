@@ -12,7 +12,7 @@ object diagnosticsChannelMod {
   
   /**
     * The class `Channel` represents an individual named channel within the data
-    * pipeline. It is use to track subscribers and to publish messages when there
+    * pipeline. It is used to track subscribers and to publish messages when there
     * are subscribers present. It exists as a separate object to avoid channel
     * lookups at publish time, enabling very fast publish speeds and allowing
     * for heavy use while incurring very minimal cost. Channels are created with {@link channel}, constructing a channel directly
@@ -23,6 +23,7 @@ object diagnosticsChannelMod {
   @js.native
   open class Channel_ protected () extends StObject {
     /* private */ def this(name: String) = this()
+    /* private */ def this(name: js.Symbol) = this()
     
     /**
       * Check if there are active subscribers to this channel. This is helpful if
@@ -32,7 +33,7 @@ object diagnosticsChannelMod {
       * performance-sensitive code.
       *
       * ```js
-      * import diagnostics_channel from 'diagnostics_channel';
+      * import diagnostics_channel from 'node:diagnostics_channel';
       *
       * const channel = diagnostics_channel.channel('my-channel');
       *
@@ -44,20 +45,19 @@ object diagnosticsChannelMod {
       */
     val hasSubscribers: Boolean = js.native
     
-    val name: String = js.native
+    val name: String | js.Symbol = js.native
     
     /**
-      * Publish a message to any subscribers to the channel. This will
-      * trigger message handlers synchronously so they will execute within
-      * the same context.
+      * Publish a message to any subscribers to the channel. This will trigger
+      * message handlers synchronously so they will execute within the same context.
       *
       * ```js
-      * import diagnostics_channel from 'diagnostics_channel';
+      * import diagnostics_channel from 'node:diagnostics_channel';
       *
       * const channel = diagnostics_channel.channel('my-channel');
       *
       * channel.publish({
-      *   some: 'message'
+      *   some: 'message',
       * });
       * ```
       * @since v15.1.0, v14.17.0
@@ -71,7 +71,7 @@ object diagnosticsChannelMod {
       * errors thrown in the message handler will trigger an `'uncaughtException'`.
       *
       * ```js
-      * import diagnostics_channel from 'diagnostics_channel';
+      * import diagnostics_channel from 'node:diagnostics_channel';
       *
       * const channel = diagnostics_channel.channel('my-channel');
       *
@@ -80,6 +80,7 @@ object diagnosticsChannelMod {
       * });
       * ```
       * @since v15.1.0, v14.17.0
+      * @deprecated Since v18.7.0,v16.17.0 - Use {@link subscribe(name, onMessage)}
       * @param onMessage The handler to receive channel messages
       */
     def subscribe(onMessage: ChannelListener): Unit = js.native
@@ -88,7 +89,7 @@ object diagnosticsChannelMod {
       * Remove a message handler previously registered to this channel with `channel.subscribe(onMessage)`.
       *
       * ```js
-      * import diagnostics_channel from 'diagnostics_channel';
+      * import diagnostics_channel from 'node:diagnostics_channel';
       *
       * const channel = diagnostics_channel.channel('my-channel');
       *
@@ -101,6 +102,7 @@ object diagnosticsChannelMod {
       * channel.unsubscribe(onMessage);
       * ```
       * @since v15.1.0, v14.17.0
+      * @deprecated Since v18.7.0,v16.17.0 - Use {@link unsubscribe(name, onMessage)}
       * @param onMessage The previous subscribed handler to remove
       * @return `true` if the handler was found, `false` otherwise.
       */
@@ -108,12 +110,12 @@ object diagnosticsChannelMod {
   }
   
   /**
-    * This is the primary entry-point for anyone wanting to interact with a named
+    * This is the primary entry-point for anyone wanting to publish to a named
     * channel. It produces a channel object which is optimized to reduce overhead at
     * publish time as much as possible.
     *
     * ```js
-    * import diagnostics_channel from 'diagnostics_channel';
+    * import diagnostics_channel from 'node:diagnostics_channel';
     *
     * const channel = diagnostics_channel.channel('my-channel');
     * ```
@@ -122,6 +124,7 @@ object diagnosticsChannelMod {
     * @return The named channel object
     */
   inline def channel(name: String): Channel_ = ^.asInstanceOf[js.Dynamic].applyDynamic("channel")(name.asInstanceOf[js.Any]).asInstanceOf[Channel_]
+  inline def channel(name: js.Symbol): Channel_ = ^.asInstanceOf[js.Dynamic].applyDynamic("channel")(name.asInstanceOf[js.Any]).asInstanceOf[Channel_]
   
   /**
     * Check if there are active subscribers to the named channel. This is helpful if
@@ -131,7 +134,7 @@ object diagnosticsChannelMod {
     * performance-sensitive code.
     *
     * ```js
-    * import diagnostics_channel from 'diagnostics_channel';
+    * import diagnostics_channel from 'node:diagnostics_channel';
     *
     * if (diagnostics_channel.hasSubscribers('my-channel')) {
     *   // There are subscribers, prepare and publish message
@@ -142,6 +145,48 @@ object diagnosticsChannelMod {
     * @return If there are active subscribers
     */
   inline def hasSubscribers(name: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasSubscribers")(name.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def hasSubscribers(name: js.Symbol): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasSubscribers")(name.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  type ChannelListener = js.Function2[/* message */ Any, /* name */ String, Unit]
+  /**
+    * Register a message handler to subscribe to this channel. This message handler
+    * will be run synchronously whenever a message is published to the channel. Any
+    * errors thrown in the message handler will trigger an `'uncaughtException'`.
+    *
+    * ```js
+    * import diagnostics_channel from 'node:diagnostics_channel';
+    *
+    * diagnostics_channel.subscribe('my-channel', (message, name) => {
+    *   // Received data
+    * });
+    * ```
+    * @since v18.7.0, v16.17.0
+    * @param name The channel name
+    * @param onMessage The handler to receive channel messages
+    */
+  inline def subscribe(name: String, onMessage: ChannelListener): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("subscribe")(name.asInstanceOf[js.Any], onMessage.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def subscribe(name: js.Symbol, onMessage: ChannelListener): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("subscribe")(name.asInstanceOf[js.Any], onMessage.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  /**
+    * Remove a message handler previously registered to this channel with {@link subscribe}.
+    *
+    * ```js
+    * import diagnostics_channel from 'node:diagnostics_channel';
+    *
+    * function onMessage(message, name) {
+    *   // Received data
+    * }
+    *
+    * diagnostics_channel.subscribe('my-channel', onMessage);
+    *
+    * diagnostics_channel.unsubscribe('my-channel', onMessage);
+    * ```
+    * @since v18.7.0, v16.17.0
+    * @param name The channel name
+    * @param onMessage The previous subscribed handler to remove
+    * @return `true` if the handler was found, `false` otherwise.
+    */
+  inline def unsubscribe(name: String, onMessage: ChannelListener): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("unsubscribe")(name.asInstanceOf[js.Any], onMessage.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def unsubscribe(name: js.Symbol, onMessage: ChannelListener): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("unsubscribe")(name.asInstanceOf[js.Any], onMessage.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  type ChannelListener = js.Function2[/* message */ Any, /* name */ String | js.Symbol, Unit]
 }

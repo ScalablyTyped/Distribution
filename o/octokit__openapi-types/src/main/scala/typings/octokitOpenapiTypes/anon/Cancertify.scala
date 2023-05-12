@@ -16,7 +16,7 @@ trait Cancertify extends StObject {
   
   var created_at: js.UndefOr[String] = js.undefined
   
-  var emails: js.UndefOr[js.Array[Any]] = js.undefined
+  var emails: js.UndefOr[js.Array[EmailVerified]] = js.undefined
   
   var expires_at: js.UndefOr[String | Null] = js.undefined
   
@@ -64,11 +64,11 @@ object Cancertify {
     
     inline def setCreated_atUndefined: Self = StObject.set(x, "created_at", js.undefined)
     
-    inline def setEmails(value: js.Array[Any]): Self = StObject.set(x, "emails", value.asInstanceOf[js.Any])
+    inline def setEmails(value: js.Array[EmailVerified]): Self = StObject.set(x, "emails", value.asInstanceOf[js.Any])
     
     inline def setEmailsUndefined: Self = StObject.set(x, "emails", js.undefined)
     
-    inline def setEmailsVarargs(value: Any*): Self = StObject.set(x, "emails", js.Array(value*))
+    inline def setEmailsVarargs(value: EmailVerified*): Self = StObject.set(x, "emails", js.Array(value*))
     
     inline def setExpires_at(value: String): Self = StObject.set(x, "expires_at", value.asInstanceOf[js.Any])
     

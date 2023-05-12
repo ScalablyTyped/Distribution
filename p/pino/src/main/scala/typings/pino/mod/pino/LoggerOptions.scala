@@ -26,6 +26,11 @@ trait LoggerOptions extends StObject {
   var browser: js.UndefOr[AsObject] = js.undefined
   
   /**
+    * logs newline delimited JSON with `\r\n` instead of `\n`. Default: `false`.
+    */
+  var crlf: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * Use this option to define additional logging levels.
     * The keys of the object correspond the namespace of the log level, and the values should be the numerical value of the level.
     */
@@ -97,6 +102,11 @@ trait LoggerOptions extends StObject {
   var mixinMergeStrategy: js.UndefOr[MixinMergeStrategyFn] = js.undefined
   
   /**
+    * A string that would be prefixed to every message (and child message)
+    */
+  var msgPrefix: js.UndefOr[String] = js.undefined
+  
+  /**
     * The name of the logger. Default: `undefined`.
     */
   var name: js.UndefOr[String] = js.undefined
@@ -110,11 +120,6 @@ trait LoggerOptions extends StObject {
     * Optional child creation callback.
     */
   var onChild: js.UndefOr[OnChildCallback[typings.pino.mod.LoggerOptions]] = js.undefined
-  
-  /**
-    * Allows to optionally define which prettifier module to use.
-    */
-  var prettifier: js.UndefOr[Any] = js.undefined
   
   /**
     * As an array, the redact option specifies paths that should have their values redacted from any log output.
@@ -180,6 +185,10 @@ object LoggerOptions {
     
     inline def setBrowserUndefined: Self = StObject.set(x, "browser", js.undefined)
     
+    inline def setCrlf(value: Boolean): Self = StObject.set(x, "crlf", value.asInstanceOf[js.Any])
+    
+    inline def setCrlfUndefined: Self = StObject.set(x, "crlf", js.undefined)
+    
     inline def setCustomLevels(value: StringDictionary[Double]): Self = StObject.set(x, "customLevels", value.asInstanceOf[js.Any])
     
     inline def setCustomLevelsUndefined: Self = StObject.set(x, "customLevels", js.undefined)
@@ -228,6 +237,10 @@ object LoggerOptions {
     
     inline def setMixinUndefined: Self = StObject.set(x, "mixin", js.undefined)
     
+    inline def setMsgPrefix(value: String): Self = StObject.set(x, "msgPrefix", value.asInstanceOf[js.Any])
+    
+    inline def setMsgPrefixUndefined: Self = StObject.set(x, "msgPrefix", js.undefined)
+    
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
@@ -239,10 +252,6 @@ object LoggerOptions {
     inline def setOnChild(value: /* child */ Logger[typings.pino.mod.LoggerOptions & ChildLoggerOptions] => Unit): Self = StObject.set(x, "onChild", js.Any.fromFunction1(value))
     
     inline def setOnChildUndefined: Self = StObject.set(x, "onChild", js.undefined)
-    
-    inline def setPrettifier(value: Any): Self = StObject.set(x, "prettifier", value.asInstanceOf[js.Any])
-    
-    inline def setPrettifierUndefined: Self = StObject.set(x, "prettifier", js.undefined)
     
     inline def setRedact(value: js.Array[String] | redactOptions): Self = StObject.set(x, "redact", value.asInstanceOf[js.Any])
     

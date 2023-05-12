@@ -15,6 +15,11 @@ trait FrameCaptureSettings extends StObject {
     * Unit for the frame capture interval.
     */
   var CaptureIntervalUnits: js.UndefOr[FrameCaptureIntervalUnit] = js.undefined
+  
+  /**
+    * Timecode burn-in settings
+    */
+  var TimecodeBurninSettings: js.UndefOr[typings.awsSdk.clientsMedialiveMod.TimecodeBurninSettings] = js.undefined
 }
 object FrameCaptureSettings {
   
@@ -33,5 +38,9 @@ object FrameCaptureSettings {
     inline def setCaptureIntervalUnits(value: FrameCaptureIntervalUnit): Self = StObject.set(x, "CaptureIntervalUnits", value.asInstanceOf[js.Any])
     
     inline def setCaptureIntervalUnitsUndefined: Self = StObject.set(x, "CaptureIntervalUnits", js.undefined)
+    
+    inline def setTimecodeBurninSettings(value: TimecodeBurninSettings): Self = StObject.set(x, "TimecodeBurninSettings", value.asInstanceOf[js.Any])
+    
+    inline def setTimecodeBurninSettingsUndefined: Self = StObject.set(x, "TimecodeBurninSettings", js.undefined)
   }
 }

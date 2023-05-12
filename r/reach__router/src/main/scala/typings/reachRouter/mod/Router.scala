@@ -14,7 +14,7 @@ open class Router protected ()
   def this(props: RouterProps & HTMLProps[HTMLDivElement]) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: RouterProps & HTMLProps[HTMLDivElement], context: Any) = this()
 }

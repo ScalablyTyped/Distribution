@@ -92,7 +92,7 @@ trait SceneViewProperties
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#highlightOptions)
     */
-  var highlightOptions: js.UndefOr[SceneViewHighlightOptionsProperties] = js.undefined
+  var highlightOptions: js.UndefOr[HighlightOptions] = js.undefined
   
   /**
     * SceneView can draw scenes in three different quality modes: `high`, `medium` and `low`.
@@ -189,7 +189,7 @@ object SceneViewProperties {
     
     inline def setFloorsVarargs(value: String*): Self = StObject.set(x, "floors", js.Array(value*))
     
-    inline def setHighlightOptions(value: SceneViewHighlightOptionsProperties): Self = StObject.set(x, "highlightOptions", value.asInstanceOf[js.Any])
+    inline def setHighlightOptions(value: HighlightOptions): Self = StObject.set(x, "highlightOptions", value.asInstanceOf[js.Any])
     
     inline def setHighlightOptionsUndefined: Self = StObject.set(x, "highlightOptions", js.undefined)
     

@@ -5,9 +5,9 @@ import typings.openui5.anon.AsyncRequests
 import typings.openui5.anon.BatchGroupId
 import typings.openui5.anon.BatchGroupIdError
 import typings.openui5.anon.BindableResponseHeaders
+import typings.openui5.anon.CreatePreliminaryContext
 import typings.openui5.anon.Created
 import typings.openui5.anon.CreatedEntitiesKey
-import typings.openui5.anon.Custom
 import typings.openui5.anon.ID_
 import typings.openui5.anon.IgnoreMessages
 import typings.openui5.anon.Metadata
@@ -18,7 +18,7 @@ import typings.openui5.anon.ResponseText
 import typings.openui5.anon.Select
 import typings.openui5.anon.Sorters
 import typings.openui5.anon.UrlParameters
-import typings.openui5.anon.`34`
+import typings.openui5.anon.`42`
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiModelOdataCountModeMod.CountMode
 import typings.openui5.sapUiModelOdataMessageScopeMod.MessageScope
@@ -184,6 +184,8 @@ object sapUiModelOdataV2OdatamodelMod {
     extends typings.openui5.sapUiModelModelMod.default {
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Adds (a) new URL(s) whose content should be parsed as OData annotations, which are then merged into the
       * annotations object which can be retrieved by calling the {@link #getServiceAnnotations}-method. If a
       * `$metadata` URL is passed, the data will also be merged into the metadata object, which can be reached
@@ -205,6 +207,8 @@ object sapUiModelOdataV2OdatamodelMod {
     vUrl: js.Array[String]): js.Promise[Any] = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Adds new XML content to be parsed for OData annotations, which are then merged into the annotations object
       * which can be retrieved by calling the {@link #getServiceAnnotations}-method.
       *
@@ -1833,7 +1837,7 @@ object sapUiModelOdataV2OdatamodelMod {
       /**
       * Map which contains additional parameters for the binding
       */
-    mParameters: Custom
+    mParameters: CreatePreliminaryContext
     ): js.UndefOr[typings.openui5.sapUiModelOdataV2ContextMod.default] = js.native
     def createBindingContext(
       /**
@@ -1847,7 +1851,7 @@ object sapUiModelOdataV2OdatamodelMod {
       /**
       * Map which contains additional parameters for the binding
       */
-    mParameters: Custom,
+    mParameters: CreatePreliminaryContext,
       /**
       * The function to be called when the context has been created. The parameter of the callback function is
       * the newly created binding context, an instance of {@link sap.ui.model.odata.v2.Context}.
@@ -1866,7 +1870,7 @@ object sapUiModelOdataV2OdatamodelMod {
       /**
       * Map which contains additional parameters for the binding
       */
-    mParameters: Custom,
+    mParameters: CreatePreliminaryContext,
       /**
       * The function to be called when the context has been created. The parameter of the callback function is
       * the newly created binding context, an instance of {@link sap.ui.model.odata.v2.Context}.
@@ -1889,7 +1893,7 @@ object sapUiModelOdataV2OdatamodelMod {
       /**
       * Map which contains additional parameters for the binding
       */
-    mParameters: Custom,
+    mParameters: CreatePreliminaryContext,
       /**
       * The function to be called when the context has been created. The parameter of the callback function is
       * the newly created binding context, an instance of {@link sap.ui.model.odata.v2.Context}.
@@ -1912,7 +1916,7 @@ object sapUiModelOdataV2OdatamodelMod {
       /**
       * Map which contains additional parameters for the binding
       */
-    mParameters: Custom
+    mParameters: CreatePreliminaryContext
     ): js.UndefOr[typings.openui5.sapUiModelOdataV2ContextMod.default] = js.native
     def createBindingContext(
       /**
@@ -1926,7 +1930,7 @@ object sapUiModelOdataV2OdatamodelMod {
       /**
       * Map which contains additional parameters for the binding
       */
-    mParameters: Custom,
+    mParameters: CreatePreliminaryContext,
       /**
       * The function to be called when the context has been created. The parameter of the callback function is
       * the newly created binding context, an instance of {@link sap.ui.model.odata.v2.Context}.
@@ -1945,7 +1949,7 @@ object sapUiModelOdataV2OdatamodelMod {
       /**
       * Map which contains additional parameters for the binding
       */
-    mParameters: Custom,
+    mParameters: CreatePreliminaryContext,
       /**
       * The function to be called when the context has been created. The parameter of the callback function is
       * the newly created binding context, an instance of {@link sap.ui.model.odata.v2.Context}.
@@ -1968,7 +1972,7 @@ object sapUiModelOdataV2OdatamodelMod {
       /**
       * Map which contains additional parameters for the binding
       */
-    mParameters: Custom,
+    mParameters: CreatePreliminaryContext,
       /**
       * The function to be called when the context has been created. The parameter of the callback function is
       * the newly created binding context, an instance of {@link sap.ui.model.odata.v2.Context}.
@@ -2240,6 +2244,8 @@ object sapUiModelOdataV2OdatamodelMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:annotationsFailed annotationsFailed} to attached listeners.
       *
       * @returns Reference to `this` to allow method chaining
@@ -2251,6 +2257,8 @@ object sapUiModelOdataV2OdatamodelMod {
     oParameters: ResponseText): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:annotationsLoaded annotationsLoaded} to attached listeners.
       *
       * @returns Reference to `this` to allow method chaining
@@ -2259,9 +2267,11 @@ object sapUiModelOdataV2OdatamodelMod {
     def fireAnnotationsLoaded(/**
       * Parameters to pass along with the event
       */
-    oParameters: `34`): this.type = js.native
+    oParameters: `42`): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:batchRequestCompleted batchRequestCompleted} to attached listeners.
       *
       * @returns Reference to `this` to allow method chaining
@@ -2272,6 +2282,8 @@ object sapUiModelOdataV2OdatamodelMod {
     oParameters: ID_): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:batchRequestFailed batchRequestFailed} to attached listeners.
       *
       * @returns Reference to `this` to allow method chaining
@@ -2282,6 +2294,8 @@ object sapUiModelOdataV2OdatamodelMod {
     oParameters: Requests): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:batchRequestSent batchRequestSent} to attached listeners.
       *
       * @returns Reference to `this` to allow method chaining
@@ -2293,6 +2307,8 @@ object sapUiModelOdataV2OdatamodelMod {
     oParameters: AsyncRequests): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:metadataFailed metadataFailed} to attached listeners.
       *
       * @returns Reference to `this` to allow method chaining
@@ -2304,6 +2320,8 @@ object sapUiModelOdataV2OdatamodelMod {
     oParameters: ResponseText): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:metadataLoaded metadataLoaded} to attached listeners.
       *
       * @returns Reference to `this` to allow method chaining
@@ -2553,6 +2571,16 @@ object sapUiModelOdataV2OdatamodelMod {
       */
     def getMessageScope(): MessageScope | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof MessageScope * / any */ String) = js.native
     
+    def getObject(
+      /**
+      * The path referencing the object
+      */
+    sPath: String,
+      /**
+      * Map of parameters
+      */
+    mParameters: Select
+    ): js.UndefOr[Any] = js.native
     def getObject(
       /**
       * The path referencing the object
@@ -3088,10 +3116,11 @@ object sapUiModelOdataV2OdatamodelMod {
       * With a given `aPath` only specified entities are reset. Note that tree hierarchy changes are only affected
       * if a given path is equal to the tree binding's resolved binding path.
       *
-      * If `bDeleteCreatedEntities` is set, the entity is completely removed, provided it has been created
-      *
-      * 	 - via {@link #createEntry} and it is not yet persisted in the back end, or
-      * 	 - via {@link #callFunction}.
+      * If `bDeleteCreatedEntities` is set, the entity is completely removed, provided it has been created by
+      * one of the following methods:
+      * 	 - {@link #createEntry}, provided it is not yet persisted in the back end and is active (see {@link
+      * 			sap.ui.model.odata.v2.Context#isInactive}),
+      * 	 - {@link #callFunction}.
       *
       * @returns Resolves when all regarded changes have been reset.
       */

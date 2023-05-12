@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LifecycleExpiration extends StObject {
   
   /**
-    * Indicates at what date the object is to be moved or deleted. Should be in GMT ISO 8601 Format.
+    * Indicates at what date the object is to be moved or deleted. The date value must conform to the ISO 8601 format. The time is always midnight UTC.
     */
   var Date: js.UndefOr[js.Date] = js.undefined
   

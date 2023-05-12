@@ -1,5 +1,9 @@
 package typings.std
 
+import typings.std.stdInts.`0`
+import typings.std.stdInts.`1`
+import typings.std.stdInts.`2`
+import typings.std.stdInts.`3`
 import typings.std.stdStrings.close
 import typings.std.stdStrings.error
 import typings.std.stdStrings.message
@@ -15,16 +19,16 @@ trait WebSocket
      with EventTarget {
   
   /* standard dom */
-  val CLOSED: Double = js.native
+  val CLOSED: `3` = js.native
   
   /* standard dom */
-  val CLOSING: Double = js.native
+  val CLOSING: `2` = js.native
   
   /* standard dom */
-  val CONNECTING: Double = js.native
+  val CONNECTING: `0` = js.native
   
   /* standard dom */
-  val OPEN: Double = js.native
+  val OPEN: `1` = js.native
   
   /* standard dom */
   @JSName("addEventListener")

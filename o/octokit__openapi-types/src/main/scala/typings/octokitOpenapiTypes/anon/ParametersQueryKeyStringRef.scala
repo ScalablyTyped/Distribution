@@ -8,11 +8,11 @@ trait ParametersQueryKeyStringRef extends StObject {
   
   var parameters: QueryKeyStringRef
   
-  var responses: `200473`
+  var responses: `200541`
 }
 object ParametersQueryKeyStringRef {
   
-  inline def apply(parameters: QueryKeyStringRef, responses: `200473`): ParametersQueryKeyStringRef = {
+  inline def apply(parameters: QueryKeyStringRef, responses: `200541`): ParametersQueryKeyStringRef = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersQueryKeyStringRef]
   }
@@ -22,6 +22,6 @@ object ParametersQueryKeyStringRef {
     
     inline def setParameters(value: QueryKeyStringRef): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `200473`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `200541`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

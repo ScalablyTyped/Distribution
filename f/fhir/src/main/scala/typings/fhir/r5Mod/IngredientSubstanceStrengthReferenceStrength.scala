@@ -38,12 +38,12 @@ trait IngredientSubstanceStrengthReferenceStrength
   /**
     * Relevant reference substance.
     */
-  var substance: js.UndefOr[CodeableReference] = js.undefined
+  var substance: CodeableReference
 }
 object IngredientSubstanceStrengthReferenceStrength {
   
-  inline def apply(): IngredientSubstanceStrengthReferenceStrength = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(substance: CodeableReference): IngredientSubstanceStrengthReferenceStrength = {
+    val __obj = js.Dynamic.literal(substance = substance.asInstanceOf[js.Any])
     __obj.asInstanceOf[IngredientSubstanceStrengthReferenceStrength]
   }
   
@@ -73,8 +73,6 @@ object IngredientSubstanceStrengthReferenceStrength {
     inline def setStrengthRatioUndefined: Self = StObject.set(x, "strengthRatio", js.undefined)
     
     inline def setSubstance(value: CodeableReference): Self = StObject.set(x, "substance", value.asInstanceOf[js.Any])
-    
-    inline def setSubstanceUndefined: Self = StObject.set(x, "substance", js.undefined)
     
     inline def set_measurementPoint(value: Element): Self = StObject.set(x, "_measurementPoint", value.asInstanceOf[js.Any])
     

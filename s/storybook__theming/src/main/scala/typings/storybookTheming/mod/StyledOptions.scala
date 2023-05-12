@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait StyledOptions extends StObject {
+trait StyledOptions[Props] extends StObject {
   
   var label: js.UndefOr[String] = js.undefined
   
@@ -14,13 +14,13 @@ trait StyledOptions extends StObject {
 }
 object StyledOptions {
   
-  inline def apply(): StyledOptions = {
+  inline def apply[Props](): StyledOptions[Props] = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[StyledOptions]
+    __obj.asInstanceOf[StyledOptions[Props]]
   }
   
   @scala.inline
-  implicit open class MutableBuilder[Self <: StyledOptions] (val x: Self) extends AnyVal {
+  implicit open class MutableBuilder[Self <: StyledOptions[?], Props] (val x: Self & StyledOptions[Props]) extends AnyVal {
     
     inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     

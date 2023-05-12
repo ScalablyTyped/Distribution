@@ -1,46 +1,28 @@
 package typings.atlaskitTokens.anon
 
-import typings.atlaskitTokens.distTypesPalettesSpacingScaleMod.BaseToken
-import typings.atlaskitTokens.distTypesTypesMod.SpacingToken
+import typings.atlaskitTokens.atlaskitTokensStrings.`0Dot75rem`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `4` extends StObject {
   
-  var `2`: SpacingToken[BaseToken]
+  val attributes: `0`
   
-  var `4`: SpacingToken[BaseToken]
-  
-  var `6`: SpacingToken[BaseToken]
-  
-  var `8`: SpacingToken[BaseToken]
+  val value: `0Dot75rem`
 }
 object `4` {
   
-  inline def apply(
-    `2`: SpacingToken[BaseToken],
-    `4`: SpacingToken[BaseToken],
-    `6`: SpacingToken[BaseToken],
-    `8`: SpacingToken[BaseToken]
-  ): `4` = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("2")(`2`.asInstanceOf[js.Any])
-    __obj.updateDynamic("4")(`4`.asInstanceOf[js.Any])
-    __obj.updateDynamic("6")(`6`.asInstanceOf[js.Any])
-    __obj.updateDynamic("8")(`8`.asInstanceOf[js.Any])
+  inline def apply(attributes: `0`): `4` = {
+    val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], value = "0.75rem")
     __obj.asInstanceOf[`4`]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: `4`] (val x: Self) extends AnyVal {
     
-    inline def set2(value: SpacingToken[BaseToken]): Self = StObject.set(x, "2", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: `0`): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    inline def set4(value: SpacingToken[BaseToken]): Self = StObject.set(x, "4", value.asInstanceOf[js.Any])
-    
-    inline def set6(value: SpacingToken[BaseToken]): Self = StObject.set(x, "6", value.asInstanceOf[js.Any])
-    
-    inline def set8(value: SpacingToken[BaseToken]): Self = StObject.set(x, "8", value.asInstanceOf[js.Any])
+    inline def setValue(value: `0Dot75rem`): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

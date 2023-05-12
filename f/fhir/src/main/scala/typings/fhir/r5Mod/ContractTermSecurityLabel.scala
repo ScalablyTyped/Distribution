@@ -9,17 +9,17 @@ trait ContractTermSecurityLabel
      with BackboneElement {
   
   /**
-    * Security label privacy tag that species the applicable privacy and security policies governing this term and/or term elements.
+    * Security label privacy tag that specifies the applicable privacy and security policies governing this term and/or term elements.
     */
   var category: js.UndefOr[js.Array[Coding]] = js.undefined
   
   /**
-    * Security label privacy tag that species the level of confidentiality protection required for this term and/or term elements.
+    * Security label privacy tag that specifies the level of confidentiality protection required for this term and/or term elements.
     */
   var classification: Coding
   
   /**
-    * Security label privacy tag that species the manner in which term and/or term elements are to be protected.
+    * Security label privacy tag that specifies the manner in which term and/or term elements are to be protected.
     */
   var control: js.UndefOr[js.Array[Coding]] = js.undefined
   

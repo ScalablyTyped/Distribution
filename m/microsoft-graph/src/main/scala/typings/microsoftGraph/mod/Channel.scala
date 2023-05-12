@@ -14,7 +14,7 @@ trait Channel
   // Optional textual description for the channel.
   var description: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // Channel name as it will appear to the user in Microsoft Teams.
+  // Channel name as it will appear to the user in Microsoft Teams. The maximum length is 50 characters.
   var displayName: js.UndefOr[String] = js.undefined
   
   // The email address for sending messages to the channel. Read-only.

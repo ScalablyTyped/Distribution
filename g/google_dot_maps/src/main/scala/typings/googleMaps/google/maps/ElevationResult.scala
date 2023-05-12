@@ -4,11 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The result of an <code>ElevationService</code> request, consisting of the
-  * set of elevation coordinates and their elevation values. Note that a single
-  * request may produce multiple <code>ElevationResult</code>s.
-  */
 trait ElevationResult extends StObject {
   
   /**

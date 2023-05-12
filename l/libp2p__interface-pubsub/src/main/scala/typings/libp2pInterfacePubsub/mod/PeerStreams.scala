@@ -15,7 +15,7 @@ trait PeerStreams extends EventEmitter[PeerStreamEvents] {
   
   def attachInboundStream(stream: Stream): AsyncIterable[Uint8ArrayList] = js.native
   
-  def attachOutboundStream(stream: Stream): js.Promise[Pushable_[Uint8ArrayList]] = js.native
+  def attachOutboundStream(stream: Stream): js.Promise[Pushable_[Uint8ArrayList, Unit, Any]] = js.native
   
   def close(): Unit = js.native
   
@@ -25,7 +25,7 @@ trait PeerStreams extends EventEmitter[PeerStreamEvents] {
   
   var isWritable: Boolean = js.native
   
-  var outboundStream: js.UndefOr[Pushable_[Uint8ArrayList]] = js.native
+  var outboundStream: js.UndefOr[Pushable_[Uint8ArrayList, Unit, Any]] = js.native
   
   var protocol: String = js.native
   

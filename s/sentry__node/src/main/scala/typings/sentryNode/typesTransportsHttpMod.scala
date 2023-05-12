@@ -4,6 +4,7 @@ import typings.node.bufferMod.global.Buffer
 import typings.sentryNode.typesTransportsHttpModuleMod.HTTPModule
 import typings.sentryTypes.typesClientreportMod.EventDropReason
 import typings.sentryTypes.typesDatacategoryMod.DataCategory
+import typings.sentryTypes.typesEventMod.Event
 import typings.sentryTypes.typesTransportMod.BaseTransportOptions
 import typings.sentryTypes.typesTransportMod.Transport
 import typings.std.Record
@@ -37,8 +38,11 @@ object typesTransportsHttpMod {
   }
   object NodeTransportOptions {
     
-    inline def apply(recordDroppedEvent: (EventDropReason, DataCategory) => Unit, url: String): NodeTransportOptions = {
-      val __obj = js.Dynamic.literal(recordDroppedEvent = js.Any.fromFunction2(recordDroppedEvent), url = url.asInstanceOf[js.Any])
+    inline def apply(
+      recordDroppedEvent: (/* reason */ EventDropReason, /* dataCategory */ DataCategory, /* event */ js.UndefOr[Event]) => Unit,
+      url: String
+    ): NodeTransportOptions = {
+      val __obj = js.Dynamic.literal(recordDroppedEvent = js.Any.fromFunction3(recordDroppedEvent), url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[NodeTransportOptions]
     }
     

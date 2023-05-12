@@ -16,7 +16,7 @@ object libIconsUpSquareOutlinedMod extends Shortcut {
   @js.native
   trait UpSquareOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_UpSquareOutlinedIconType: String = js.native

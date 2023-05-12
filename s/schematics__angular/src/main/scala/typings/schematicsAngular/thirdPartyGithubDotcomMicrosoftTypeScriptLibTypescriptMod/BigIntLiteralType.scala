@@ -15,7 +15,7 @@ object BigIntLiteralType {
   
   inline def apply(
     flags: TypeFlags,
-    freshType: LiteralType,
+    freshType: FreshableType,
     getApparentProperties: () => js.Array[Symbol],
     getBaseTypes: () => js.UndefOr[js.Array[BaseType]],
     getCallSignatures: () => js.Array[Signature],
@@ -39,7 +39,7 @@ object BigIntLiteralType {
     isTypeParameter: () => /* is @schematics/angular.@schematics/angular/third_party/github.com/Microsoft/TypeScript/lib/typescript.TypeParameter */ Boolean,
     isUnion: () => /* is @schematics/angular.@schematics/angular/third_party/github.com/Microsoft/TypeScript/lib/typescript.UnionType */ Boolean,
     isUnionOrIntersection: () => /* is @schematics/angular.@schematics/angular/third_party/github.com/Microsoft/TypeScript/lib/typescript.UnionOrIntersectionType */ Boolean,
-    regularType: LiteralType,
+    regularType: FreshableType,
     symbol: Symbol,
     value: PseudoBigInt
   ): BigIntLiteralType = {

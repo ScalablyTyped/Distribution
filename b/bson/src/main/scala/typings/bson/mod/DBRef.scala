@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("bson", "DBRef")
 @js.native
-open class DBRef protected () extends StObject {
+open class DBRef protected () extends BSONValue {
   /**
     * @param collection - the collection name.
     * @param oid - the reference ObjectId.
@@ -17,17 +17,11 @@ open class DBRef protected () extends StObject {
   def this(collection: String, oid: ObjectId, db: String, fields: Document) = this()
   def this(collection: String, oid: ObjectId, db: Unit, fields: Document) = this()
   
-  var _bsontype: typings.bson.bsonStrings.DBRef = js.native
-  
   var collection: String = js.native
   
   var db: js.UndefOr[String] = js.native
   
   var fields: Document = js.native
-  
-  /* Excluded from this release type: toExtendedJSON */
-  /* Excluded from this release type: fromExtendedJSON */
-  def inspect(): String = js.native
   
   var oid: ObjectId = js.native
   

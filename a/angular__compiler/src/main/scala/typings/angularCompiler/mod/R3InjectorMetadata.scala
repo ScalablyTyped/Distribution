@@ -8,8 +8,6 @@ trait R3InjectorMetadata extends StObject {
   
   var imports: js.Array[Expression]
   
-  var internalType: Expression
-  
   var name: String
   
   var providers: Expression | Null
@@ -18,8 +16,8 @@ trait R3InjectorMetadata extends StObject {
 }
 object R3InjectorMetadata {
   
-  inline def apply(imports: js.Array[Expression], internalType: Expression, name: String, `type`: R3Reference): R3InjectorMetadata = {
-    val __obj = js.Dynamic.literal(imports = imports.asInstanceOf[js.Any], internalType = internalType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], providers = null)
+  inline def apply(imports: js.Array[Expression], name: String, `type`: R3Reference): R3InjectorMetadata = {
+    val __obj = js.Dynamic.literal(imports = imports.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], providers = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[R3InjectorMetadata]
   }
@@ -30,8 +28,6 @@ object R3InjectorMetadata {
     inline def setImports(value: js.Array[Expression]): Self = StObject.set(x, "imports", value.asInstanceOf[js.Any])
     
     inline def setImportsVarargs(value: Expression*): Self = StObject.set(x, "imports", js.Array(value*))
-    
-    inline def setInternalType(value: Expression): Self = StObject.set(x, "internalType", value.asInstanceOf[js.Any])
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

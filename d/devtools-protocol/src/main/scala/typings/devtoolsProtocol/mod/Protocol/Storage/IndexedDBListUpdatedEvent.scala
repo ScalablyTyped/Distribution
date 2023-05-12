@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IndexedDBListUpdatedEvent extends StObject {
   
   /**
+    * Storage bucket to update.
+    */
+  var bucketId: String
+  
+  /**
     * Origin to update.
     */
   var origin: String
@@ -18,13 +23,15 @@ trait IndexedDBListUpdatedEvent extends StObject {
 }
 object IndexedDBListUpdatedEvent {
   
-  inline def apply(origin: String, storageKey: String): IndexedDBListUpdatedEvent = {
-    val __obj = js.Dynamic.literal(origin = origin.asInstanceOf[js.Any], storageKey = storageKey.asInstanceOf[js.Any])
+  inline def apply(bucketId: String, origin: String, storageKey: String): IndexedDBListUpdatedEvent = {
+    val __obj = js.Dynamic.literal(bucketId = bucketId.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any], storageKey = storageKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[IndexedDBListUpdatedEvent]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: IndexedDBListUpdatedEvent] (val x: Self) extends AnyVal {
+    
+    inline def setBucketId(value: String): Self = StObject.set(x, "bucketId", value.asInstanceOf[js.Any])
     
     inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     

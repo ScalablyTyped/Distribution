@@ -10,7 +10,7 @@ object libMinurlDotsharedMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def isUrl(fileURLOrPath: Any): /* is vfile.vfile/lib/minurl.shared.URL */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUrl")(fileURLOrPath.asInstanceOf[js.Any]).asInstanceOf[/* is vfile.vfile/lib/minurl.shared.URL */ Boolean]
+  inline def isUrl(fileUrlOrPath: Any): /* is vfile.vfile/lib/minurl.shared.URL */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUrl")(fileUrlOrPath.asInstanceOf[js.Any]).asInstanceOf[/* is vfile.vfile/lib/minurl.shared.URL */ Boolean]
   
   trait URL extends StObject {
     

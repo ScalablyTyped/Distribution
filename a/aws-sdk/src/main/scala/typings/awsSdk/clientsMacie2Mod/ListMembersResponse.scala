@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListMembersResponse extends StObject {
   
   /**
-    * An array of objects, one for each account that's associated with the administrator account and meets the criteria specified in the request.
+    * An array of objects, one for each account that's associated with the administrator account and matches the criteria specified in the request.
     */
   var members: js.UndefOr[listOfMember] = js.undefined
   

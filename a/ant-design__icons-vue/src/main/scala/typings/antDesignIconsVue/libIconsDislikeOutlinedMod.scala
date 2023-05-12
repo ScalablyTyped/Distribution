@@ -16,7 +16,7 @@ object libIconsDislikeOutlinedMod extends Shortcut {
   @js.native
   trait DislikeOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_DislikeOutlinedIconType: String = js.native

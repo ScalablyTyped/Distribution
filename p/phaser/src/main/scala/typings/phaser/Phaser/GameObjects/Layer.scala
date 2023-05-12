@@ -8,7 +8,7 @@ import typings.phaser.Phaser.GameObjects.Components.AlphaSingle
 import typings.phaser.Phaser.GameObjects.Components.BlendMode
 import typings.phaser.Phaser.GameObjects.Components.Depth
 import typings.phaser.Phaser.GameObjects.Components.Mask
-import typings.phaser.Phaser.GameObjects.Components.Pipeline
+import typings.phaser.Phaser.GameObjects.Components.PostPipeline
 import typings.phaser.Phaser.GameObjects.Components.Visible
 import typings.phaser.Phaser.Physics.Arcade.Body
 import typings.phaser.Phaser.Physics.Arcade.StaticBody
@@ -71,7 +71,7 @@ trait Layer
      with BlendMode
      with Depth
      with Mask
-     with Pipeline
+     with PostPipeline
      with Visible {
   
   /**
@@ -80,6 +80,27 @@ trait Layer
     * An active object is one which is having its logic and internal systems updated.
     */
   var active: Boolean = js.native
+  
+  /**
+    * Adds this Layer to the given Display List.
+    * 
+    * If no Display List is specified, it will default to the Display List owned by the Scene to which
+    * this Layer belongs.
+    * 
+    * A Layer can only exist on one Display List at any given time, but may move freely between them.
+    * 
+    * If this Layer is already on another Display List when this method is called, it will first
+    * be removed from it, before being added to the new list.
+    * 
+    * You can query which list it is on by looking at the `Phaser.GameObjects.Layer#displayList` property.
+    * 
+    * If a Layer isn't on any display list, it will not be rendered. If you just wish to temporarily
+    * disable it from rendering, consider using the `setVisible` method, instead.
+    * @param displayList The Display List to add to. Defaults to the Scene Display List.
+    */
+  def addToDisplayList(): this.type = js.native
+  def addToDisplayList(displayList: DisplayList): this.type = js.native
+  def addToDisplayList(displayList: Layer): this.type = js.native
   
   /**
     * This callback is invoked when this Game Object is added to a Scene.
@@ -95,7 +116,7 @@ trait Layer
     * This property is kept purely so a Layer has the same
     * shape as a Game Object. You cannot give a Layer a physics body.
     */
-  var body: Body | StaticBody | BodyType = js.native
+  var body: Body | StaticBody | BodyType | Null = js.native
   
   /**
     * A bitmask that controls if this Game Object is drawn by a Camera or not.
@@ -115,6 +136,8 @@ trait Layer
     * Immediately sorts the display list if the flag is set.
     */
   def depthSort(): Unit = js.native
+  
+  def destroy(fromScene: Boolean): Unit = js.native
   
   /**
     * A Layer cannot be enabled for input.
@@ -211,7 +234,7 @@ trait Layer
     * This property is kept purely so a Layer has the same
     * shape as a Game Object. You cannot input enable a Layer.
     */
-  var input: InteractiveObject = js.native
+  var input: InteractiveObject | Null = js.native
   
   /**
     * The name of this Game Object.
@@ -231,6 +254,19 @@ trait Layer
     * Force a sort of the display list on the next call to depthSort.
     */
   def queueDepthSort(): Unit = js.native
+  
+  /**
+    * Removes this Layer from the Display List it is currently on.
+    * 
+    * A Layer can only exist on one Display List at any given time, but may move freely removed
+    * and added back at a later stage.
+    * 
+    * You can query which list it is on by looking at the `Phaser.GameObjects.GameObject#displayList` property.
+    * 
+    * If a Layer isn't on any Display List, it will not be rendered. If you just wish to temporarily
+    * disable it from rendering, consider using the `setVisible` method, instead.
+    */
+  def removeFromDisplayList(): this.type = js.native
   
   /**
     * A Layer cannot be enabled for input.

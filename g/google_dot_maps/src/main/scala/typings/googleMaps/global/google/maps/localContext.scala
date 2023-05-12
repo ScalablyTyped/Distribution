@@ -10,10 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object localContext {
   
-  /**
-    * Available only in the v=beta channel: https://goo.gle/3oAthT3.
-    * Shows a Local Context experience with a {@link google.maps.Map}.
-    */
   @JSGlobal("google.maps.localContext.LocalContextMapView")
   @js.native
   open class LocalContextMapView protected ()
@@ -21,7 +17,25 @@ object localContext {
        with typings.googleMaps.google.maps.localContext.LocalContextMapView {
     /**
       * Available only in the v=beta channel: https://goo.gle/3oAthT3.
+      *
       * Shows a Local Context experience with a {@link google.maps.Map}.
+      *
+      * Access by calling `const {LocalContextMapView} = await
+      * google.maps.importLibrary("localContext")`. See
+      * https://developers.google.com/maps/documentation/javascript/libraries.
+      * @deprecated Local Context is deprecated, and no longer recommended for
+      *     new websites. The feature will continue to work, and 12 months notice
+      *     will be given before support is discontinued. If you are interested
+      *     in building a Local Context-like experience yourself, we suggest that
+      *     you check out the &quot;Neighborhood Discovery&quot; solution in <a
+      *     href="https://mapsplatform.google.com/resources/quick-builder/">Quick
+      *     Builder</a> or use the <a
+      *     href="https://developers.google.com/maps/documentation/javascript/places">Places
+      *     Library</a>, Maps JavaScript API. <a
+      *     href="https://developers.google.com/maps/documentation/javascript/examples#places">Code
+      *     samples</a> and <a
+      *     href="https://codelabs.developers.google.com/?product=googlemapsplatform&text=places">codelabs</a>
+      *     for the Places Library can help you.
       */
     def this(options: LocalContextMapViewOptions) = this()
     
@@ -73,11 +87,6 @@ object localContext {
     override def search(): Unit = js.native
   }
   
-  /**
-    * Available only in the v=beta channel: https://goo.gle/3oAthT3.
-    * Provides settings for directions with a {@link
-    * google.maps.localContext.LocalContextMapView}.
-    */
   @JSGlobal("google.maps.localContext.MapDirectionsOptions")
   @js.native
   open class MapDirectionsOptions ()
@@ -97,10 +106,6 @@ object localContext {
     var origin: typings.googleMaps.google.maps.LatLng | LatLngLiteral = js.native
   }
   
-  /**
-    * Available only in the v=beta channel: https://goo.gle/3oAthT3.
-    * Layout modes for the place chooser.
-    */
   @JSGlobal("google.maps.localContext.PlaceChooserLayoutMode")
   @js.native
   object PlaceChooserLayoutMode extends StObject {
@@ -113,10 +118,6 @@ object localContext {
     /* "SHEET" */ val SHEET: typings.googleMaps.google.maps.localContext.PlaceChooserLayoutMode.SHEET & String = js.native
   }
   
-  /**
-    * Available only in the v=beta channel: https://goo.gle/3oAthT3.
-    * Display positions for the place chooser.
-    */
   @JSGlobal("google.maps.localContext.PlaceChooserPosition")
   @js.native
   object PlaceChooserPosition extends StObject {
@@ -131,10 +132,6 @@ object localContext {
     /* "INLINE_START" */ val INLINE_START: typings.googleMaps.google.maps.localContext.PlaceChooserPosition.INLINE_START & String = js.native
   }
   
-  /**
-    * Available only in the v=beta channel: https://goo.gle/3oAthT3.
-    * Layout modes for the place details.
-    */
   @JSGlobal("google.maps.localContext.PlaceDetailsLayoutMode")
   @js.native
   object PlaceDetailsLayoutMode extends StObject {
@@ -147,10 +144,6 @@ object localContext {
     /* "SHEET" */ val SHEET: typings.googleMaps.google.maps.localContext.PlaceDetailsLayoutMode.SHEET & String = js.native
   }
   
-  /**
-    * Available only in the v=beta channel: https://goo.gle/3oAthT3.
-    * Display positions for the place details.
-    */
   @JSGlobal("google.maps.localContext.PlaceDetailsPosition")
   @js.native
   object PlaceDetailsPosition extends StObject {

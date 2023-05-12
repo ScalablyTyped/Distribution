@@ -55,6 +55,10 @@ object wdioConfigStrings {
   inline def beforeTest: beforeTest = "beforeTest".asInstanceOf[beforeTest]
   
   @js.native
+  sealed trait browser extends StObject
+  inline def browser: browser = "browser".asInstanceOf[browser]
+  
+  @js.native
   sealed trait local extends StObject
   inline def local: local = "local".asInstanceOf[local]
   

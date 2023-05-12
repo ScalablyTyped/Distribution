@@ -24,6 +24,11 @@ trait DetectedIssueMitigation
     * This might not be the same as when the mitigating step was actually taken.
     */
   var date: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Clinicians may add additional notes or justifications about the mitigation action. For example, patient can have this drug because they have had it before without any issues. Multiple justifications may be provided.
+    */
+  var note: js.UndefOr[js.Array[Annotation]] = js.undefined
 }
 object DetectedIssueMitigation {
   
@@ -44,6 +49,12 @@ object DetectedIssueMitigation {
     inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
     inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+    
+    inline def setNote(value: js.Array[Annotation]): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
+    
+    inline def setNoteUndefined: Self = StObject.set(x, "note", js.undefined)
+    
+    inline def setNoteVarargs(value: Annotation*): Self = StObject.set(x, "note", js.Array(value*))
     
     inline def set_date(value: Element): Self = StObject.set(x, "_date", value.asInstanceOf[js.Any])
     

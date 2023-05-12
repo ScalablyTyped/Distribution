@@ -6,32 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object layerTilePropertyMod {
   
-  @JSImport("ol/layer/TileProperty", JSImport.Default)
-  @js.native
-  object default extends StObject {
+  object default {
     
-    @JSBracketAccess
-    def apply(value: String): js.UndefOr[TileProperty & String] = js.native
-    
-    /* "preload" */ val PRELOAD: typings.ol.layerTilePropertyMod.TileProperty.PRELOAD & String = js.native
-    
-    /* "useInterimTilesOnError" */ val USE_INTERIM_TILES_ON_ERROR: typings.ol.layerTilePropertyMod.TileProperty.USE_INTERIM_TILES_ON_ERROR & String = js.native
-  }
-  
-  @js.native
-  sealed trait TileProperty extends StObject
-  @JSImport("ol/layer/TileProperty", "TileProperty")
-  @js.native
-  object TileProperty extends StObject {
-    
+    @JSImport("ol/layer/TileProperty", "default.PRELOAD")
     @js.native
-    sealed trait PRELOAD
-      extends StObject
-         with TileProperty
+    val PRELOAD: String = js.native
     
+    @JSImport("ol/layer/TileProperty", "default.USE_INTERIM_TILES_ON_ERROR")
     @js.native
-    sealed trait USE_INTERIM_TILES_ON_ERROR
-      extends StObject
-         with TileProperty
+    val USE_INTERIM_TILES_ON_ERROR: String = js.native
   }
 }

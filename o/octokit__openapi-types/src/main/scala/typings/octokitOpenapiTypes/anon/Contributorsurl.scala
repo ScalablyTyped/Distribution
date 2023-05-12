@@ -1,53 +1,44 @@
 package typings.octokitOpenapiTypes.anon
 
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.BLANK
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.COMMIT_MESSAGES
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.COMMIT_OR_PR_TITLE
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.MERGE_MESSAGE
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.PR_BODY
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.PR_TITLE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Contributorsurl extends StObject {
   
-  /**
-    * @description Whether to allow Auto-merge to be used on pull requests.
-    * @default false
-    * @example false
-    */
+  /** @example false */
   var allow_auto_merge: js.UndefOr[Boolean] = js.undefined
   
-  /**
-    * @description Whether to allow forking this repo
-    * @default false
-    * @example false
-    */
+  /** @example true */
   var allow_forking: js.UndefOr[Boolean] = js.undefined
   
-  /**
-    * @description Whether to allow merge commits for pull requests.
-    * @default true
-    * @example true
-    */
+  /** @example true */
   var allow_merge_commit: js.UndefOr[Boolean] = js.undefined
   
-  /**
-    * @description Whether to allow rebase merges for pull requests.
-    * @default true
-    * @example true
-    */
+  /** @example true */
   var allow_rebase_merge: js.UndefOr[Boolean] = js.undefined
   
-  /**
-    * @description Whether to allow squash merges for pull requests.
-    * @default true
-    * @example true
-    */
+  /** @example true */
   var allow_squash_merge: js.UndefOr[Boolean] = js.undefined
+  
+  /** @example true */
+  var allow_update_branch: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * @description Whether anonymous git access is allowed.
+    * @default true
+    */
+  var anonymous_access_enabled: js.UndefOr[Boolean] = js.undefined
   
   /** @example http://api.github.com/repos/octocat/Hello-World/{archive_format}{/ref} */
   var archive_url: String
   
-  /**
-    * @description Whether the repository is archived.
-    * @default false
-    */
   var archived: Boolean
   
   /** @example http://api.github.com/repos/octocat/Hello-World/assignees{/user} */
@@ -61,6 +52,10 @@ trait Contributorsurl extends StObject {
   
   /** @example https://github.com/octocat/Hello-World.git */
   var clone_url: String
+  
+  var code_of_conduct: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['code-of-conduct-simple'] */ js.Any
+  ] = js.undefined
   
   /** @example http://api.github.com/repos/octocat/Hello-World/collaborators{/collaborator} */
   var collaborators_url: String
@@ -87,19 +82,12 @@ trait Contributorsurl extends StObject {
     * Format: date-time
     * @example 2011-01-26T19:01:12Z
     */
-  var created_at: String | Null
+  var created_at: String
   
-  /**
-    * @description The default branch of the repository.
-    * @example master
-    */
+  /** @example master */
   var default_branch: String
   
-  /**
-    * @description Whether to delete head branches when pull requests are merged
-    * @default false
-    * @example false
-    */
+  /** @example false */
   var delete_branch_on_merge: js.UndefOr[Boolean] = js.undefined
   
   /**
@@ -154,34 +142,21 @@ trait Contributorsurl extends StObject {
   /** @example git:github.com/octocat/Hello-World.git */
   var git_url: String
   
-  /**
-    * @description Whether downloads are enabled.
-    * @default true
-    * @example true
-    */
+  /** @example true */
+  var has_discussions: Boolean
+  
+  /** @example true */
   var has_downloads: Boolean
   
-  /**
-    * @description Whether issues are enabled.
-    * @default true
-    * @example true
-    */
+  /** @example true */
   var has_issues: Boolean
   
   var has_pages: Boolean
   
-  /**
-    * @description Whether projects are enabled.
-    * @default true
-    * @example true
-    */
+  /** @example true */
   var has_projects: Boolean
   
-  /**
-    * @description Whether the wiki is enabled.
-    * @default true
-    * @example true
-    */
+  /** @example true */
   var has_wiki: Boolean
   
   /**
@@ -202,17 +177,10 @@ trait Contributorsurl extends StObject {
     */
   var html_url: String
   
-  /**
-    * @description Unique identifier of the repository
-    * @example 42
-    */
+  /** @example 1296269 */
   var id: Double
   
-  /**
-    * @description Whether this repository acts as a template that can be used to generate new repositories.
-    * @default false
-    * @example true
-    */
+  /** @example true */
   var is_template: js.UndefOr[Boolean] = js.undefined
   
   /** @example http://api.github.com/repos/octocat/Hello-World/issues/comments{/number} */
@@ -243,6 +211,27 @@ trait Contributorsurl extends StObject {
   var master_branch: js.UndefOr[String] = js.undefined
   
   /**
+    * @description The default value for a merge commit message.
+    *
+    * - `PR_TITLE` - default to the pull request's title.
+    * - `PR_BODY` - default to the pull request's body.
+    * - `BLANK` - default to a blank commit message.
+    * @example PR_BODY
+    * @enum {string}
+    */
+  var merge_commit_message: js.UndefOr[PR_BODY | PR_TITLE | BLANK] = js.undefined
+  
+  /**
+    * @description The default value for a merge commit title.
+    *
+    *   - `PR_TITLE` - default to the pull request's title.
+    *   - `MERGE_MESSAGE` - default to the classic title for a merge message (e.g., Merge pull request #123 from branch-name).
+    * @example PR_TITLE
+    * @enum {string}
+    */
+  var merge_commit_title: js.UndefOr[PR_TITLE | MERGE_MESSAGE] = js.undefined
+  
+  /**
     * Format: uri
     * @example http://api.github.com/repos/octocat/Hello-World/merges
     */
@@ -257,13 +246,11 @@ trait Contributorsurl extends StObject {
     */
   var mirror_url: String | Null
   
-  /**
-    * @description The name of the repository.
-    * @example Team Environment
-    */
+  /** @example Hello-World */
   var name: String
   
-  var network_count: js.UndefOr[Double] = js.undefined
+  /** @example 0 */
+  var network_count: Double
   
   /** @example MDEwOlJlcG9zaXRvcnkxMjk2MjY5 */
   var node_id: String
@@ -276,14 +263,18 @@ trait Contributorsurl extends StObject {
   /** @example 0 */
   var open_issues_count: Double
   
-  var owner: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-simple-user'] */ js.Any
+  var organization: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-simple-user'] */ js.Any
+  ] = js.undefined
   
-  var permissions: js.UndefOr[Admin] = js.undefined
+  var owner: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['simple-user'] */ js.Any
   
-  /**
-    * @description Whether the repository is private or public.
-    * @default false
-    */
+  var parent: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['repository'] */ js.Any
+  ] = js.undefined
+  
+  var permissions: js.UndefOr[Push] = js.undefined
+  
   var `private`: Boolean
   
   /** @example http://api.github.com/repos/octocat/Hello-World/pulls{/number} */
@@ -293,16 +284,45 @@ trait Contributorsurl extends StObject {
     * Format: date-time
     * @example 2011-01-26T19:06:43Z
     */
-  var pushed_at: String | Null
+  var pushed_at: String
   
   /** @example http://api.github.com/repos/octocat/Hello-World/releases{/id} */
   var releases_url: String
   
-  /** @example admin */
-  var role_name: js.UndefOr[String] = js.undefined
+  var security_and_analysis: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['security-and-analysis'] */ js.Any
+  ] = js.undefined
   
-  /** @example 108 */
+  /**
+    * @description The size of the repository. Size is calculated hourly. When a repository is initially created, the size is 0.
+    * @example 108
+    */
   var size: Double
+  
+  var source: js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['repository'] */ js.Any
+  ] = js.undefined
+  
+  /**
+    * @description The default value for a squash merge commit message:
+    *
+    * - `PR_BODY` - default to the pull request's body.
+    * - `COMMIT_MESSAGES` - default to the branch's commit messages.
+    * - `BLANK` - default to a blank commit message.
+    * @example PR_BODY
+    * @enum {string}
+    */
+  var squash_merge_commit_message: js.UndefOr[PR_BODY | COMMIT_MESSAGES | BLANK] = js.undefined
+  
+  /**
+    * @description The default value for a squash merge commit title:
+    *
+    * - `PR_TITLE` - default to the pull request's title.
+    * - `COMMIT_OR_PR_TITLE` - default to the commit's title (if only one commit) or the pull request's title (when more than one commit).
+    * @example PR_TITLE
+    * @enum {string}
+    */
+  var squash_merge_commit_title: js.UndefOr[PR_TITLE | COMMIT_OR_PR_TITLE] = js.undefined
   
   /** @example git@github.com:octocat/Hello-World.git */
   var ssh_url: String
@@ -319,7 +339,8 @@ trait Contributorsurl extends StObject {
   /** @example http://api.github.com/repos/octocat/Hello-World/statuses/{sha} */
   var statuses_url: String
   
-  var subscribers_count: js.UndefOr[Double] = js.undefined
+  /** @example 42 */
+  var subscribers_count: Double
   
   /**
     * Format: uri
@@ -351,12 +372,20 @@ trait Contributorsurl extends StObject {
     */
   var teams_url: String
   
-  var temp_clone_token: js.UndefOr[String] = js.undefined
+  var temp_clone_token: js.UndefOr[String | Null] = js.undefined
   
   var template_repository: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-repository'] */ js.Any
   ] = js.undefined
   
+  /**
+    * @example [
+    *   "octocat",
+    *   "atom",
+    *   "electron",
+    *   "API"
+    * ]
+    */
   var topics: js.UndefOr[js.Array[String]] = js.undefined
   
   /** @example http://api.github.com/repos/octocat/Hello-World/git/trees{/sha} */
@@ -366,7 +395,7 @@ trait Contributorsurl extends StObject {
     * Format: date-time
     * @example 2011-01-26T19:14:43Z
     */
-  var updated_at: String | Null
+  var updated_at: String
   
   /**
     * Format: uri
@@ -374,9 +403,12 @@ trait Contributorsurl extends StObject {
     */
   var url: String
   
+  /** @example false */
+  var use_squash_pr_title_as_default: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * @description The repository visibility: public, private, or internal.
-    * @default public
+    * @example public
     */
   var visibility: js.UndefOr[String] = js.undefined
   
@@ -385,11 +417,7 @@ trait Contributorsurl extends StObject {
   /** @example 80 */
   var watchers_count: Double
   
-  /**
-    * @description Whether to require contributors to sign off on web-based commits
-    * @default false
-    * @example false
-    */
+  /** @example false */
   var web_commit_signoff_required: js.UndefOr[Boolean] = js.undefined
 }
 object Contributorsurl {
@@ -407,6 +435,7 @@ object Contributorsurl {
     compare_url: String,
     contents_url: String,
     contributors_url: String,
+    created_at: String,
     default_branch: String,
     deployments_url: String,
     disabled: Boolean,
@@ -421,6 +450,7 @@ object Contributorsurl {
     git_refs_url: String,
     git_tags_url: String,
     git_url: String,
+    has_discussions: Boolean,
     has_downloads: Boolean,
     has_issues: Boolean,
     has_pages: Boolean,
@@ -439,30 +469,34 @@ object Contributorsurl {
     merges_url: String,
     milestones_url: String,
     name: String,
+    network_count: Double,
     node_id: String,
     notifications_url: String,
     open_issues: Double,
     open_issues_count: Double,
-    owner: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-simple-user'] */ js.Any,
+    owner: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['simple-user'] */ js.Any,
     `private`: Boolean,
     pulls_url: String,
+    pushed_at: String,
     releases_url: String,
     size: Double,
     ssh_url: String,
     stargazers_count: Double,
     stargazers_url: String,
     statuses_url: String,
+    subscribers_count: Double,
     subscribers_url: String,
     subscription_url: String,
     svn_url: String,
     tags_url: String,
     teams_url: String,
     trees_url: String,
+    updated_at: String,
     url: String,
     watchers: Double,
     watchers_count: Double
   ): Contributorsurl = {
-    val __obj = js.Dynamic.literal(archive_url = archive_url.asInstanceOf[js.Any], archived = archived.asInstanceOf[js.Any], assignees_url = assignees_url.asInstanceOf[js.Any], blobs_url = blobs_url.asInstanceOf[js.Any], branches_url = branches_url.asInstanceOf[js.Any], clone_url = clone_url.asInstanceOf[js.Any], collaborators_url = collaborators_url.asInstanceOf[js.Any], comments_url = comments_url.asInstanceOf[js.Any], commits_url = commits_url.asInstanceOf[js.Any], compare_url = compare_url.asInstanceOf[js.Any], contents_url = contents_url.asInstanceOf[js.Any], contributors_url = contributors_url.asInstanceOf[js.Any], default_branch = default_branch.asInstanceOf[js.Any], deployments_url = deployments_url.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], downloads_url = downloads_url.asInstanceOf[js.Any], events_url = events_url.asInstanceOf[js.Any], fork = fork.asInstanceOf[js.Any], forks = forks.asInstanceOf[js.Any], forks_count = forks_count.asInstanceOf[js.Any], forks_url = forks_url.asInstanceOf[js.Any], full_name = full_name.asInstanceOf[js.Any], git_commits_url = git_commits_url.asInstanceOf[js.Any], git_refs_url = git_refs_url.asInstanceOf[js.Any], git_tags_url = git_tags_url.asInstanceOf[js.Any], git_url = git_url.asInstanceOf[js.Any], has_downloads = has_downloads.asInstanceOf[js.Any], has_issues = has_issues.asInstanceOf[js.Any], has_pages = has_pages.asInstanceOf[js.Any], has_projects = has_projects.asInstanceOf[js.Any], has_wiki = has_wiki.asInstanceOf[js.Any], hooks_url = hooks_url.asInstanceOf[js.Any], html_url = html_url.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], issue_comment_url = issue_comment_url.asInstanceOf[js.Any], issue_events_url = issue_events_url.asInstanceOf[js.Any], issues_url = issues_url.asInstanceOf[js.Any], keys_url = keys_url.asInstanceOf[js.Any], labels_url = labels_url.asInstanceOf[js.Any], languages_url = languages_url.asInstanceOf[js.Any], license = license.asInstanceOf[js.Any], merges_url = merges_url.asInstanceOf[js.Any], milestones_url = milestones_url.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], node_id = node_id.asInstanceOf[js.Any], notifications_url = notifications_url.asInstanceOf[js.Any], open_issues = open_issues.asInstanceOf[js.Any], open_issues_count = open_issues_count.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], pulls_url = pulls_url.asInstanceOf[js.Any], releases_url = releases_url.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], ssh_url = ssh_url.asInstanceOf[js.Any], stargazers_count = stargazers_count.asInstanceOf[js.Any], stargazers_url = stargazers_url.asInstanceOf[js.Any], statuses_url = statuses_url.asInstanceOf[js.Any], subscribers_url = subscribers_url.asInstanceOf[js.Any], subscription_url = subscription_url.asInstanceOf[js.Any], svn_url = svn_url.asInstanceOf[js.Any], tags_url = tags_url.asInstanceOf[js.Any], teams_url = teams_url.asInstanceOf[js.Any], trees_url = trees_url.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], watchers = watchers.asInstanceOf[js.Any], watchers_count = watchers_count.asInstanceOf[js.Any], created_at = null, description = null, homepage = null, language = null, mirror_url = null, pushed_at = null, updated_at = null)
+    val __obj = js.Dynamic.literal(archive_url = archive_url.asInstanceOf[js.Any], archived = archived.asInstanceOf[js.Any], assignees_url = assignees_url.asInstanceOf[js.Any], blobs_url = blobs_url.asInstanceOf[js.Any], branches_url = branches_url.asInstanceOf[js.Any], clone_url = clone_url.asInstanceOf[js.Any], collaborators_url = collaborators_url.asInstanceOf[js.Any], comments_url = comments_url.asInstanceOf[js.Any], commits_url = commits_url.asInstanceOf[js.Any], compare_url = compare_url.asInstanceOf[js.Any], contents_url = contents_url.asInstanceOf[js.Any], contributors_url = contributors_url.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], default_branch = default_branch.asInstanceOf[js.Any], deployments_url = deployments_url.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], downloads_url = downloads_url.asInstanceOf[js.Any], events_url = events_url.asInstanceOf[js.Any], fork = fork.asInstanceOf[js.Any], forks = forks.asInstanceOf[js.Any], forks_count = forks_count.asInstanceOf[js.Any], forks_url = forks_url.asInstanceOf[js.Any], full_name = full_name.asInstanceOf[js.Any], git_commits_url = git_commits_url.asInstanceOf[js.Any], git_refs_url = git_refs_url.asInstanceOf[js.Any], git_tags_url = git_tags_url.asInstanceOf[js.Any], git_url = git_url.asInstanceOf[js.Any], has_discussions = has_discussions.asInstanceOf[js.Any], has_downloads = has_downloads.asInstanceOf[js.Any], has_issues = has_issues.asInstanceOf[js.Any], has_pages = has_pages.asInstanceOf[js.Any], has_projects = has_projects.asInstanceOf[js.Any], has_wiki = has_wiki.asInstanceOf[js.Any], hooks_url = hooks_url.asInstanceOf[js.Any], html_url = html_url.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], issue_comment_url = issue_comment_url.asInstanceOf[js.Any], issue_events_url = issue_events_url.asInstanceOf[js.Any], issues_url = issues_url.asInstanceOf[js.Any], keys_url = keys_url.asInstanceOf[js.Any], labels_url = labels_url.asInstanceOf[js.Any], languages_url = languages_url.asInstanceOf[js.Any], license = license.asInstanceOf[js.Any], merges_url = merges_url.asInstanceOf[js.Any], milestones_url = milestones_url.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], network_count = network_count.asInstanceOf[js.Any], node_id = node_id.asInstanceOf[js.Any], notifications_url = notifications_url.asInstanceOf[js.Any], open_issues = open_issues.asInstanceOf[js.Any], open_issues_count = open_issues_count.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], pulls_url = pulls_url.asInstanceOf[js.Any], pushed_at = pushed_at.asInstanceOf[js.Any], releases_url = releases_url.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], ssh_url = ssh_url.asInstanceOf[js.Any], stargazers_count = stargazers_count.asInstanceOf[js.Any], stargazers_url = stargazers_url.asInstanceOf[js.Any], statuses_url = statuses_url.asInstanceOf[js.Any], subscribers_count = subscribers_count.asInstanceOf[js.Any], subscribers_url = subscribers_url.asInstanceOf[js.Any], subscription_url = subscription_url.asInstanceOf[js.Any], svn_url = svn_url.asInstanceOf[js.Any], tags_url = tags_url.asInstanceOf[js.Any], teams_url = teams_url.asInstanceOf[js.Any], trees_url = trees_url.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], watchers = watchers.asInstanceOf[js.Any], watchers_count = watchers_count.asInstanceOf[js.Any], description = null, homepage = null, language = null, mirror_url = null)
     __obj.updateDynamic("private")(`private`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Contributorsurl]
   }
@@ -490,6 +524,14 @@ object Contributorsurl {
     
     inline def setAllow_squash_mergeUndefined: Self = StObject.set(x, "allow_squash_merge", js.undefined)
     
+    inline def setAllow_update_branch(value: Boolean): Self = StObject.set(x, "allow_update_branch", value.asInstanceOf[js.Any])
+    
+    inline def setAllow_update_branchUndefined: Self = StObject.set(x, "allow_update_branch", js.undefined)
+    
+    inline def setAnonymous_access_enabled(value: Boolean): Self = StObject.set(x, "anonymous_access_enabled", value.asInstanceOf[js.Any])
+    
+    inline def setAnonymous_access_enabledUndefined: Self = StObject.set(x, "anonymous_access_enabled", js.undefined)
+    
     inline def setArchive_url(value: String): Self = StObject.set(x, "archive_url", value.asInstanceOf[js.Any])
     
     inline def setArchived(value: Boolean): Self = StObject.set(x, "archived", value.asInstanceOf[js.Any])
@@ -501,6 +543,12 @@ object Contributorsurl {
     inline def setBranches_url(value: String): Self = StObject.set(x, "branches_url", value.asInstanceOf[js.Any])
     
     inline def setClone_url(value: String): Self = StObject.set(x, "clone_url", value.asInstanceOf[js.Any])
+    
+    inline def setCode_of_conduct(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['code-of-conduct-simple'] */ js.Any
+    ): Self = StObject.set(x, "code_of_conduct", value.asInstanceOf[js.Any])
+    
+    inline def setCode_of_conductUndefined: Self = StObject.set(x, "code_of_conduct", js.undefined)
     
     inline def setCollaborators_url(value: String): Self = StObject.set(x, "collaborators_url", value.asInstanceOf[js.Any])
     
@@ -515,8 +563,6 @@ object Contributorsurl {
     inline def setContributors_url(value: String): Self = StObject.set(x, "contributors_url", value.asInstanceOf[js.Any])
     
     inline def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
-    
-    inline def setCreated_atNull: Self = StObject.set(x, "created_at", null)
     
     inline def setDefault_branch(value: String): Self = StObject.set(x, "default_branch", value.asInstanceOf[js.Any])
     
@@ -553,6 +599,8 @@ object Contributorsurl {
     inline def setGit_tags_url(value: String): Self = StObject.set(x, "git_tags_url", value.asInstanceOf[js.Any])
     
     inline def setGit_url(value: String): Self = StObject.set(x, "git_url", value.asInstanceOf[js.Any])
+    
+    inline def setHas_discussions(value: Boolean): Self = StObject.set(x, "has_discussions", value.asInstanceOf[js.Any])
     
     inline def setHas_downloads(value: Boolean): Self = StObject.set(x, "has_downloads", value.asInstanceOf[js.Any])
     
@@ -602,6 +650,14 @@ object Contributorsurl {
     
     inline def setMaster_branchUndefined: Self = StObject.set(x, "master_branch", js.undefined)
     
+    inline def setMerge_commit_message(value: PR_BODY | PR_TITLE | BLANK): Self = StObject.set(x, "merge_commit_message", value.asInstanceOf[js.Any])
+    
+    inline def setMerge_commit_messageUndefined: Self = StObject.set(x, "merge_commit_message", js.undefined)
+    
+    inline def setMerge_commit_title(value: PR_TITLE | MERGE_MESSAGE): Self = StObject.set(x, "merge_commit_title", value.asInstanceOf[js.Any])
+    
+    inline def setMerge_commit_titleUndefined: Self = StObject.set(x, "merge_commit_title", js.undefined)
+    
     inline def setMerges_url(value: String): Self = StObject.set(x, "merges_url", value.asInstanceOf[js.Any])
     
     inline def setMilestones_url(value: String): Self = StObject.set(x, "milestones_url", value.asInstanceOf[js.Any])
@@ -614,8 +670,6 @@ object Contributorsurl {
     
     inline def setNetwork_count(value: Double): Self = StObject.set(x, "network_count", value.asInstanceOf[js.Any])
     
-    inline def setNetwork_countUndefined: Self = StObject.set(x, "network_count", js.undefined)
-    
     inline def setNode_id(value: String): Self = StObject.set(x, "node_id", value.asInstanceOf[js.Any])
     
     inline def setNotifications_url(value: String): Self = StObject.set(x, "notifications_url", value.asInstanceOf[js.Any])
@@ -624,11 +678,23 @@ object Contributorsurl {
     
     inline def setOpen_issues_count(value: Double): Self = StObject.set(x, "open_issues_count", value.asInstanceOf[js.Any])
     
-    inline def setOwner(
+    inline def setOrganization(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-simple-user'] */ js.Any
+    ): Self = StObject.set(x, "organization", value.asInstanceOf[js.Any])
+    
+    inline def setOrganizationUndefined: Self = StObject.set(x, "organization", js.undefined)
+    
+    inline def setOwner(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['simple-user'] */ js.Any
     ): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    inline def setPermissions(value: Admin): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
+    inline def setParent(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['repository'] */ js.Any
+    ): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    
+    inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+    
+    inline def setPermissions(value: Push): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
     
     inline def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
     
@@ -638,15 +704,29 @@ object Contributorsurl {
     
     inline def setPushed_at(value: String): Self = StObject.set(x, "pushed_at", value.asInstanceOf[js.Any])
     
-    inline def setPushed_atNull: Self = StObject.set(x, "pushed_at", null)
-    
     inline def setReleases_url(value: String): Self = StObject.set(x, "releases_url", value.asInstanceOf[js.Any])
     
-    inline def setRole_name(value: String): Self = StObject.set(x, "role_name", value.asInstanceOf[js.Any])
+    inline def setSecurity_and_analysis(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['security-and-analysis'] */ js.Any
+    ): Self = StObject.set(x, "security_and_analysis", value.asInstanceOf[js.Any])
     
-    inline def setRole_nameUndefined: Self = StObject.set(x, "role_name", js.undefined)
+    inline def setSecurity_and_analysisUndefined: Self = StObject.set(x, "security_and_analysis", js.undefined)
     
     inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    
+    inline def setSource(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['repository'] */ js.Any
+    ): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    
+    inline def setSquash_merge_commit_message(value: PR_BODY | COMMIT_MESSAGES | BLANK): Self = StObject.set(x, "squash_merge_commit_message", value.asInstanceOf[js.Any])
+    
+    inline def setSquash_merge_commit_messageUndefined: Self = StObject.set(x, "squash_merge_commit_message", js.undefined)
+    
+    inline def setSquash_merge_commit_title(value: PR_TITLE | COMMIT_OR_PR_TITLE): Self = StObject.set(x, "squash_merge_commit_title", value.asInstanceOf[js.Any])
+    
+    inline def setSquash_merge_commit_titleUndefined: Self = StObject.set(x, "squash_merge_commit_title", js.undefined)
     
     inline def setSsh_url(value: String): Self = StObject.set(x, "ssh_url", value.asInstanceOf[js.Any])
     
@@ -657,8 +737,6 @@ object Contributorsurl {
     inline def setStatuses_url(value: String): Self = StObject.set(x, "statuses_url", value.asInstanceOf[js.Any])
     
     inline def setSubscribers_count(value: Double): Self = StObject.set(x, "subscribers_count", value.asInstanceOf[js.Any])
-    
-    inline def setSubscribers_countUndefined: Self = StObject.set(x, "subscribers_count", js.undefined)
     
     inline def setSubscribers_url(value: String): Self = StObject.set(x, "subscribers_url", value.asInstanceOf[js.Any])
     
@@ -671,6 +749,8 @@ object Contributorsurl {
     inline def setTeams_url(value: String): Self = StObject.set(x, "teams_url", value.asInstanceOf[js.Any])
     
     inline def setTemp_clone_token(value: String): Self = StObject.set(x, "temp_clone_token", value.asInstanceOf[js.Any])
+    
+    inline def setTemp_clone_tokenNull: Self = StObject.set(x, "temp_clone_token", null)
     
     inline def setTemp_clone_tokenUndefined: Self = StObject.set(x, "temp_clone_token", js.undefined)
     
@@ -690,9 +770,11 @@ object Contributorsurl {
     
     inline def setUpdated_at(value: String): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])
     
-    inline def setUpdated_atNull: Self = StObject.set(x, "updated_at", null)
-    
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUse_squash_pr_title_as_default(value: Boolean): Self = StObject.set(x, "use_squash_pr_title_as_default", value.asInstanceOf[js.Any])
+    
+    inline def setUse_squash_pr_title_as_defaultUndefined: Self = StObject.set(x, "use_squash_pr_title_as_default", js.undefined)
     
     inline def setVisibility(value: String): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
     

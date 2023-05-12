@@ -86,6 +86,8 @@ object Widget {
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[typings.luminoWidgets.typesWidgetMod.Widget.HiddenMode & Double] = js.native
     
+    /* 2 */ val ContentVisibility: typings.luminoWidgets.typesWidgetMod.Widget.HiddenMode.ContentVisibility & Double = js.native
+    
     /* 0 */ val Display: typings.luminoWidgets.typesWidgetMod.Widget.HiddenMode.Display & Double = js.native
     
     /* 1 */ val Scale: typings.luminoWidgets.typesWidgetMod.Widget.HiddenMode.Scale & Double = js.native

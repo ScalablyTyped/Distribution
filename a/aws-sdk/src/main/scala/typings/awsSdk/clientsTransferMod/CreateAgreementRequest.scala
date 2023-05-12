@@ -12,7 +12,7 @@ trait CreateAgreementRequest extends StObject {
   var AccessRole: Role
   
   /**
-    * The landing directory (folder) for files transferred by using the AS2 protocol. A BaseDirectory example is DOC-EXAMPLE-BUCKET/home/mydirectory.
+    * The landing directory (folder) for files transferred by using the AS2 protocol. A BaseDirectory example is /DOC-EXAMPLE-BUCKET/home/mydirectory.
     */
   var BaseDirectory: HomeDirectory
   

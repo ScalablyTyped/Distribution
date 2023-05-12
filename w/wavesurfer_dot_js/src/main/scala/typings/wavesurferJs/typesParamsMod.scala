@@ -198,7 +198,7 @@ object typesParamsMod {
     var plugins: js.UndefOr[js.Array[PluginDefinition]] = js.undefined
     
     /** The fill color of the part of the waveform behind the cursor (default: '#555'). */
-    var progressColor: js.UndefOr[String] = js.undefined
+    var progressColor: js.UndefOr[String | CanvasGradient] = js.undefined
     
     /** Set to false to keep the media element in the DOM when the player is destroyed (default: true). */
     var removeMediaElementOnDestroy: js.UndefOr[Boolean] = js.undefined
@@ -387,7 +387,7 @@ object typesParamsMod {
       
       inline def setPluginsVarargs(value: PluginDefinition*): Self = StObject.set(x, "plugins", js.Array(value*))
       
-      inline def setProgressColor(value: String): Self = StObject.set(x, "progressColor", value.asInstanceOf[js.Any])
+      inline def setProgressColor(value: String | CanvasGradient): Self = StObject.set(x, "progressColor", value.asInstanceOf[js.Any])
       
       inline def setProgressColorUndefined: Self = StObject.set(x, "progressColor", js.undefined)
       

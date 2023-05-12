@@ -25,6 +25,11 @@ trait GetDeviceProfileResponse extends StObject {
     * The name of the resource.
     */
   var Name: js.UndefOr[DeviceProfileName] = js.undefined
+  
+  /**
+    * Information about the Sidewalk parameters in the device profile.
+    */
+  var Sidewalk: js.UndefOr[SidewalkGetDeviceProfile] = js.undefined
 }
 object GetDeviceProfileResponse {
   
@@ -51,5 +56,9 @@ object GetDeviceProfileResponse {
     inline def setName(value: DeviceProfileName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    
+    inline def setSidewalk(value: SidewalkGetDeviceProfile): Self = StObject.set(x, "Sidewalk", value.asInstanceOf[js.Any])
+    
+    inline def setSidewalkUndefined: Self = StObject.set(x, "Sidewalk", js.undefined)
   }
 }

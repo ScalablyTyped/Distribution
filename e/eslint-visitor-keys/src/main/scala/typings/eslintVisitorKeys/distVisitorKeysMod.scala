@@ -1,6 +1,7 @@
 package typings.eslintVisitorKeys
 
 import org.scalablytyped.runtime.Shortcut
+import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object distVisitorKeysMod extends Shortcut {
   
   /**
-    * @typedef {import('./index.js').VisitorKeys} VisitorKeys
+    * @typedef {{ readonly [type: string]: ReadonlyArray<string> }} VisitorKeys
     */
   /**
     * @type {VisitorKeys}
@@ -17,7 +18,7 @@ object distVisitorKeysMod extends Shortcut {
   @js.native
   val default: VisitorKeys = js.native
   
-  type VisitorKeys = typings.eslintVisitorKeys.mod.VisitorKeys
+  type VisitorKeys = StringDictionary[js.Array[String]]
   
   type _To = VisitorKeys
   

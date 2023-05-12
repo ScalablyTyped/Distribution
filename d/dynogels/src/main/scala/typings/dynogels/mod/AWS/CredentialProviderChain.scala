@@ -1,6 +1,6 @@
 package typings.dynogels.mod.AWS
 
-import typings.awsSdk.libCredentialsCredentialProviderChainMod.provider
+import typings.awsSdk2Types.libCredentialsCredentialProviderChainMod.provider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Creates a new CredentialProviderChain with a default set of providers specified by defaultProviders.
   */
 open class CredentialProviderChain ()
-  extends typings.awsSdk.mod.CredentialProviderChain {
+  extends typings.awsSdk2Types.mod.CredentialProviderChain {
   def this(providers: js.Array[provider]) = this()
 }
 /* static members */

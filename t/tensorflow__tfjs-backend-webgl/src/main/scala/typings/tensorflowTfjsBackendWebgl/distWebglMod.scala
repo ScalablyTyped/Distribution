@@ -18,7 +18,7 @@ import typings.tensorflowTfjsBackendWebgl.distTexUtilMod.Texture
 import typings.tensorflowTfjsBackendWebgl.distTexUtilMod.TextureConfig
 import typings.tensorflowTfjsBackendWebgl.tensorflowTfjsBackendWebglInts.`1`
 import typings.tensorflowTfjsBackendWebgl.tensorflowTfjsBackendWebglInts.`2`
-import typings.tensorflowTfjsCore.distKernelRegistryMod.TensorInfo
+import typings.tensorflowTfjsCore.distTensorInfoMod.TensorInfo
 import typings.tensorflowTfjsCore.distTypesMod.PixelData
 import typings.tensorflowTfjsCore.distTypesMod.TypedArray
 import org.scalablytyped.runtime.StObject

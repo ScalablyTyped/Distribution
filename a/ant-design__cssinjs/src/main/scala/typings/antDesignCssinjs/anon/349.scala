@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.TextEmphasisColor
+import typings.csstype.mod.Property.StrokeDashoffset
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,11 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `349` extends StObject {
   
   var value: js.UndefOr[
-    TextEmphasisColor | (js.Array[
+    (StrokeDashoffset[Double | String]) | (js.Array[
       (Extract[
-        js.UndefOr[TextEmphasisColor | js.Array[NonNullable[js.UndefOr[TextEmphasisColor]]]], 
+        js.UndefOr[
+          (StrokeDashoffset[Double | String]) | (js.Array[NonNullable[js.UndefOr[StrokeDashoffset[Double | String]]]])
+        ], 
         String
-      ]) | NonNullable[js.UndefOr[TextEmphasisColor]]
+      ]) | (NonNullable[js.UndefOr[StrokeDashoffset[Double | String]]])
     ])
   ] = js.native
 }

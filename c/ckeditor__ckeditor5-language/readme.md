@@ -1,7 +1,7 @@
 
 # Scala.js typings for ckeditor__ckeditor5-language
 
-Typings are for version 32.0
+Typings are for version 37.1.0
 
 ## Library description:
 Text part language feature for CKEditor 5.
@@ -24,7 +24,7 @@ Text part language feature for CKEditor 5.
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

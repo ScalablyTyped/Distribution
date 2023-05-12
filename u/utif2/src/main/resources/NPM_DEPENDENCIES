@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "utif2" : "4.1.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "utif2" : "4.1.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ProfilerConfigForUpdate extends StObject {
   
   /**
-    * To disable Debugger monitoring and profiling, set to True.
+    * To turn off Amazon SageMaker Debugger monitoring and profiling while a training job is in progress, set to True.
     */
   var DisableProfiler: js.UndefOr[typings.awsSdk.clientsSagemakerMod.DisableProfiler] = js.undefined
   

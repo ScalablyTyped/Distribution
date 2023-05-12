@@ -6,10 +6,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TeamSummary extends StObject {
   
+  // Count of guests in a team.
   var guestsCount: js.UndefOr[NullableOption[Double]] = js.undefined
   
+  // Count of members in a team.
   var membersCount: js.UndefOr[NullableOption[Double]] = js.undefined
   
+  // Count of owners in a team.
   var ownersCount: js.UndefOr[NullableOption[Double]] = js.undefined
 }
 object TeamSummary {

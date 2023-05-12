@@ -44,6 +44,9 @@ object srcNgtscDiagnosticsSrcErrorMod {
     def toDiagnostic(): DiagnosticWithLocation = js.native
   }
   
+  inline def addDiagnosticChain(messageText: String, add: js.Array[DiagnosticMessageChain]): DiagnosticMessageChain = (^.asInstanceOf[js.Dynamic].applyDynamic("addDiagnosticChain")(messageText.asInstanceOf[js.Any], add.asInstanceOf[js.Any])).asInstanceOf[DiagnosticMessageChain]
+  inline def addDiagnosticChain(messageText: DiagnosticMessageChain, add: js.Array[DiagnosticMessageChain]): DiagnosticMessageChain = (^.asInstanceOf[js.Dynamic].applyDynamic("addDiagnosticChain")(messageText.asInstanceOf[js.Any], add.asInstanceOf[js.Any])).asInstanceOf[DiagnosticMessageChain]
+  
   inline def isFatalDiagnosticError(err: Any): /* is @angular/compiler-cli.@angular/compiler-cli/src/ngtsc/diagnostics/src/error.FatalDiagnosticError */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFatalDiagnosticError")(err.asInstanceOf[js.Any]).asInstanceOf[/* is @angular/compiler-cli.@angular/compiler-cli/src/ngtsc/diagnostics/src/error.FatalDiagnosticError */ Boolean]
   
   inline def makeDiagnostic(code: ErrorCode, node: Node, messageText: String): DiagnosticWithLocation = (^.asInstanceOf[js.Dynamic].applyDynamic("makeDiagnostic")(code.asInstanceOf[js.Any], node.asInstanceOf[js.Any], messageText.asInstanceOf[js.Any])).asInstanceOf[DiagnosticWithLocation]

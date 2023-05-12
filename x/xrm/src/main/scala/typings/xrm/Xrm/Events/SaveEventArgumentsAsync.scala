@@ -17,7 +17,7 @@ trait SaveEventArgumentsAsync
     * disableAsyncTimeout is set, the timeout for that handler will not be applied. It will continue
     * to wait for that handler's promise to be fulfilled.
     * This should be used with caution as it might affect the performance of the form save.
-    * @see {@link https://learn.microsoft.com/power-apps/developer/model-driven-apps/clientapi/reference/events/form-onsave#async-onsave-timeouts Async onSave timeouts}
+    * @see {@link https://learn.microsoft.com/power-apps/developer/model-driven-apps/clientapi/reference/events/form-onsave#async-onsave-timeouts External Link: Async onSave timeouts}
     */
   def disableAsyncTimeout(): Unit
 }

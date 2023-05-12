@@ -10,11 +10,11 @@ trait TypeofTokenCreateParams extends StObject {
   
   val BankAccount: Any
   
-  val Person: TypeofPersonDocuments
+  val Person: TypeofPerson
 }
 object TypeofTokenCreateParams {
   
-  inline def apply(Account: TypeofAccountCompany, BankAccount: Any, Person: TypeofPersonDocuments): TypeofTokenCreateParams = {
+  inline def apply(Account: TypeofAccountCompany, BankAccount: Any, Person: TypeofPerson): TypeofTokenCreateParams = {
     val __obj = js.Dynamic.literal(Account = Account.asInstanceOf[js.Any], BankAccount = BankAccount.asInstanceOf[js.Any], Person = Person.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofTokenCreateParams]
   }
@@ -26,6 +26,6 @@ object TypeofTokenCreateParams {
     
     inline def setBankAccount(value: Any): Self = StObject.set(x, "BankAccount", value.asInstanceOf[js.Any])
     
-    inline def setPerson(value: TypeofPersonDocuments): Self = StObject.set(x, "Person", value.asInstanceOf[js.Any])
+    inline def setPerson(value: TypeofPerson): Self = StObject.set(x, "Person", value.asInstanceOf[js.Any])
   }
 }

@@ -1,7 +1,7 @@
 package typings.openui5
 
 import typings.openui5.anon.Component
-import typings.openui5.anon.`26`
+import typings.openui5.anon.`34`
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
 import typings.openui5.sapUiCoreControlMod.ControlSettings
@@ -332,6 +332,7 @@ object sapUiCoreComponentContainerMod {
     
     /**
       * @SINCE 1.50
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:componentCreated componentCreated} to attached listeners.
       *
@@ -345,6 +346,7 @@ object sapUiCoreComponentContainerMod {
     
     /**
       * @SINCE 1.60
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:componentFailed componentFailed} to attached listeners.
       *
@@ -357,7 +359,7 @@ object sapUiCoreComponentContainerMod {
     def fireComponentFailed(/**
       * Parameters to pass along with the event
       */
-    mParameters: `26`): Boolean = js.native
+    mParameters: `34`): Boolean = js.native
     
     /**
       * Gets current value of property {@link #getAsync async}.

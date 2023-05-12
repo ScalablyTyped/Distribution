@@ -1,20 +1,20 @@
 package typings.tensorflowTfjsBackendCpu
 
+import typings.std.ArrayLike
 import typings.tensorflowTfjsCore.distKernelRegistryMod.NamedAttrMap
-import typings.tensorflowTfjsCore.distTypesMod.DataType
-import typings.tensorflowTfjsCore.distTypesMod.TypedArray
+import typings.tensorflowTfjsCore.distTypesMod.DataTypeFor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object distUtilsUnaryTypesMod {
   
-  type SimpleUnaryImpl = js.Function3[
-    /* values */ TypedArray, 
-    /* dtype */ DataType, 
+  type SimpleUnaryImpl[I /* <: Double | String */, O /* <: Double | String */] = js.Function3[
+    /* values */ ArrayLike[I], 
+    /* dtype */ DataTypeFor[O], 
     /* attrs */ js.UndefOr[NamedAttrMap], 
-    TypedArray
+    /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.DataTypeMap[@tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.DataTypeFor<O>] */ js.Any
   ]
   
-  type SimpleUnaryOperation = js.Function2[/* x */ Double, /* attrs */ js.UndefOr[NamedAttrMap], Double]
+  type SimpleUnaryOperation[I /* <: Double | String */, O /* <: Double | String */] = js.Function2[/* x */ I, /* attrs */ js.UndefOr[NamedAttrMap], O]
 }

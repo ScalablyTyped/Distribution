@@ -102,10 +102,14 @@ object stepsStepsMod {
     def this(props: StepsProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: StepsProps, context: Any) = this()
     
+    /**
+      * Used to get container element.
+      * @return {HTMLDivElement} Container element
+      */
     def getElement(): HTMLDivElement = js.native
   }
   
@@ -116,6 +120,10 @@ object stepsStepsMod {
     
     var accessKey: js.UndefOr[String] = js.undefined
     
+    /**
+      * Index of the active item.
+      * @defaultValue 0
+      */
     var activeIndex: js.UndefOr[Double] = js.undefined
     
     var `aria-activedescendant`: js.UndefOr[String] = js.undefined
@@ -220,13 +228,21 @@ object stepsStepsMod {
     
     var autoCorrect: js.UndefOr[String] = js.undefined
     
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
+    
     var autoSave: js.UndefOr[String] = js.undefined
     
+    /**
+      * Used to get the child elements of the component.
+      * @readonly
+      */
     var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
     var color: js.UndefOr[String] = js.undefined
+    
+    var content: js.UndefOr[String] = js.undefined
     
     var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
@@ -268,9 +284,14 @@ object stepsStepsMod {
     
     var lang: js.UndefOr[String] = js.undefined
     
-    var model: js.Array[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MenuItem */ Any
-      ]
+    /**
+      * An array of menuitems.
+      */
+    var model: js.UndefOr[
+        js.Array[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MenuItem */ Any
+        ]
+      ] = js.undefined
     
     var nonce: js.UndefOr[String] = js.undefined
     
@@ -408,7 +429,11 @@ object stepsStepsMod {
     
     var onSeeking: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
-    var onSelect: js.UndefOr[js.Function1[/* e */ StepsSelectParams, Unit]] = js.undefined
+    /**
+      * Callback to invoke when the new step is selected.
+      * @param {StepsSelectEvent} event - Custom select event
+      */
+    var onSelect: js.UndefOr[js.Function1[/* event */ StepsSelectEvent, Unit]] = js.undefined
     
     var onStalled: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
@@ -442,11 +467,19 @@ object stepsStepsMod {
     
     var radioGroup: js.UndefOr[String] = js.undefined
     
+    /**
+      * Whether the items are clickable or not.
+      * @defaultValue true
+      */
     var readOnly: js.UndefOr[Boolean] = js.undefined
+    
+    var rel: js.UndefOr[String] = js.undefined
     
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
+    
+    var rev: js.UndefOr[String] = js.undefined
     
     var role: js.UndefOr[AriaRole] = js.undefined
     
@@ -476,12 +509,8 @@ object stepsStepsMod {
   }
   object StepsProps {
     
-    inline def apply(
-      model: js.Array[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MenuItem */ Any
-        ]
-    ): StepsProps = {
-      val __obj = js.Dynamic.literal(model = model.asInstanceOf[js.Any])
+    inline def apply(): StepsProps = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StepsProps]
     }
     
@@ -702,6 +731,10 @@ object stepsStepsMod {
       
       inline def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
       
+      inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+      
+      inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+      
       inline def setAutoSave(value: String): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
       
       inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
@@ -718,9 +751,13 @@ object stepsStepsMod {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
       inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
       inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
@@ -807,6 +844,8 @@ object stepsStepsMod {
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MenuItem */ Any
             ]
       ): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      
+      inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
       inline def setModelVarargs(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MenuItem */ Any)*
@@ -1084,7 +1123,7 @@ object stepsStepsMod {
       
       inline def setOnSeekingUndefined: Self = StObject.set(x, "onSeeking", js.undefined)
       
-      inline def setOnSelect(value: /* e */ StepsSelectParams => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
+      inline def setOnSelect(value: /* event */ StepsSelectEvent => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
       
       inline def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
       
@@ -1156,6 +1195,10 @@ object stepsStepsMod {
       
       inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
       
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      
+      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+      
       inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
       inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
@@ -1163,6 +1206,10 @@ object stepsStepsMod {
       inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+      
+      inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+      
+      inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
       
       inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
@@ -1218,27 +1265,41 @@ object stepsStepsMod {
     }
   }
   
-  trait StepsSelectParams extends StObject {
+  /**
+    * Custom select event
+    * @see {@link StepsProps.onSelect}
+    * @event
+    */
+  trait StepsSelectEvent extends StObject {
     
+    /**
+      * Index of selected item instance
+      */
     var index: Double
     
+    /**
+      * Selected item instance
+      */
     var item: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MenuItem */ Any
     
+    /**
+      * Browser event
+      */
     var originalEvent: SyntheticEvent[Element, Event]
   }
-  object StepsSelectParams {
+  object StepsSelectEvent {
     
     inline def apply(
       index: Double,
       item: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MenuItem */ Any,
       originalEvent: SyntheticEvent[Element, Event]
-    ): StepsSelectParams = {
+    ): StepsSelectEvent = {
       val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], originalEvent = originalEvent.asInstanceOf[js.Any])
-      __obj.asInstanceOf[StepsSelectParams]
+      __obj.asInstanceOf[StepsSelectEvent]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: StepsSelectParams] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: StepsSelectEvent] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "prom-client" : "14.1.0"
+      "prom-client" : "14.2.0"
     }
   ],
   "test-dependencies" : [
     {
-      "prom-client" : "14.1.0"
+      "prom-client" : "14.2.0"
     }
   ],
   "compile-devDependencies" : [

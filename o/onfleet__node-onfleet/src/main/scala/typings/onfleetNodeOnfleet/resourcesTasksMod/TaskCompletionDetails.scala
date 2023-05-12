@@ -20,6 +20,12 @@ trait TaskCompletionDetails extends StObject {
   
   var notes: js.UndefOr[String] = js.undefined
   
+  var photoUploadId: js.UndefOr[String | Null] = js.undefined
+  
+  var photoUploadIds: js.UndefOr[js.Array[String]] = js.undefined
+  
+  var signatureUploadId: js.UndefOr[String | Null] = js.undefined
+  
   var success: js.UndefOr[Boolean] = js.undefined
   
   var time: Double | Null
@@ -69,6 +75,24 @@ object TaskCompletionDetails {
     inline def setNotes(value: String): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
     
     inline def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
+    
+    inline def setPhotoUploadId(value: String): Self = StObject.set(x, "photoUploadId", value.asInstanceOf[js.Any])
+    
+    inline def setPhotoUploadIdNull: Self = StObject.set(x, "photoUploadId", null)
+    
+    inline def setPhotoUploadIdUndefined: Self = StObject.set(x, "photoUploadId", js.undefined)
+    
+    inline def setPhotoUploadIds(value: js.Array[String]): Self = StObject.set(x, "photoUploadIds", value.asInstanceOf[js.Any])
+    
+    inline def setPhotoUploadIdsUndefined: Self = StObject.set(x, "photoUploadIds", js.undefined)
+    
+    inline def setPhotoUploadIdsVarargs(value: String*): Self = StObject.set(x, "photoUploadIds", js.Array(value*))
+    
+    inline def setSignatureUploadId(value: String): Self = StObject.set(x, "signatureUploadId", value.asInstanceOf[js.Any])
+    
+    inline def setSignatureUploadIdNull: Self = StObject.set(x, "signatureUploadId", null)
+    
+    inline def setSignatureUploadIdUndefined: Self = StObject.set(x, "signatureUploadId", js.undefined)
     
     inline def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
     

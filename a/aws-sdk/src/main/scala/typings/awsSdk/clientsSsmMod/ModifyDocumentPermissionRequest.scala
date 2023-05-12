@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ModifyDocumentPermissionRequest extends StObject {
   
   /**
-    * The Amazon Web Services user accounts that should have access to the document. The account IDs can either be a group of account IDs or All.
+    * The Amazon Web Services users that should have access to the document. The account IDs can either be a group of account IDs or All.
     */
   var AccountIdsToAdd: js.UndefOr[AccountIdList] = js.undefined
   
   /**
-    * The Amazon Web Services user accounts that should no longer have access to the document. The Amazon Web Services user account can either be a group of account IDs or All. This action has a higher priority than AccountIdsToAdd. If you specify an account ID to add and the same ID to remove, the system removes access to the document.
+    * The Amazon Web Services users that should no longer have access to the document. The Amazon Web Services user can either be a group of account IDs or All. This action has a higher priority than AccountIdsToAdd. If you specify an ID to add and the same ID to remove, the system removes access to the document.
     */
   var AccountIdsToRemove: js.UndefOr[AccountIdList] = js.undefined
   

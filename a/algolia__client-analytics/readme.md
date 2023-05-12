@@ -1,7 +1,7 @@
 
 # Scala.js typings for algolia__client-analytics
 
-Typings are for version 4.14.2
+Typings are for version 4.17.0
 
 
 

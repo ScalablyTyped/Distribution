@@ -16,13 +16,13 @@ object BanMode {
   @js.native
   val ^ : js.Any = js.native
   
-  /** @type {number} User is banned by IP address. */
+  /** User is banned by IP address. */
   @JSGlobal("SFS2X.Requests.BanMode.BY_ADDRESS")
   @js.native
   def BY_ADDRESS: Double = js.native
   inline def BY_ADDRESS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BY_ADDRESS")(x.asInstanceOf[js.Any])
   
-  /** @type {number} User is banned by name. */
+  /** User is banned by name. */
   @JSGlobal("SFS2X.Requests.BanMode.BY_NAME")
   @js.native
   def BY_NAME: Double = js.native

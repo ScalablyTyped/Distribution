@@ -6,13 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Animated extends StObject {
   
-  var animated: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnimatedProps<{  radius :number,   startAngle :number,   endAngle :number,   opacity :number}> */ Any
+  var animated: AnimatedPropsradiusnumber
 }
 object Animated {
   
-  inline def apply(
-    animated: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnimatedProps<{  radius :number,   startAngle :number,   endAngle :number,   opacity :number}> */ Any
-  ): Animated = {
+  inline def apply(animated: AnimatedPropsradiusnumber): Animated = {
     val __obj = js.Dynamic.literal(animated = animated.asInstanceOf[js.Any])
     __obj.asInstanceOf[Animated]
   }
@@ -20,8 +18,6 @@ object Animated {
   @scala.inline
   implicit open class MutableBuilder[Self <: Animated] (val x: Self) extends AnyVal {
     
-    inline def setAnimated(
-      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnimatedProps<{  radius :number,   startAngle :number,   endAngle :number,   opacity :number}> */ Any
-    ): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
+    inline def setAnimated(value: AnimatedPropsradiusnumber): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
   }
 }

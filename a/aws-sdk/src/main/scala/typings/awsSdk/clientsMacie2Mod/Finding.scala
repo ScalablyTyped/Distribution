@@ -27,12 +27,12 @@ trait Finding extends StObject {
   var classificationDetails: js.UndefOr[ClassificationDetails] = js.undefined
   
   /**
-    * The total number of occurrences of the finding. For sensitive data findings, this value is always 1. All sensitive data findings are considered new (unique) because they derive from individual classification jobs.
+    * The total number of occurrences of the finding. For sensitive data findings, this value is always 1. All sensitive data findings are considered unique.
     */
   var count: js.UndefOr[long] = js.undefined
   
   /**
-    * The date and time, in UTC and extended ISO 8601 format, when the finding was created.
+    * The date and time, in UTC and extended ISO 8601 format, when Amazon Macie created the finding.
     */
   var createdAt: js.UndefOr[js.Date] = js.undefined
   
@@ -92,7 +92,7 @@ trait Finding extends StObject {
   var `type`: js.UndefOr[FindingType] = js.undefined
   
   /**
-    * The date and time, in UTC and extended ISO 8601 format, when the finding was last updated. For sensitive data findings, this value is the same as the value for the createdAt property. All sensitive data findings are considered new (unique) because they derive from individual classification jobs.
+    * The date and time, in UTC and extended ISO 8601 format, when Amazon Macie last updated the finding. For sensitive data findings, this value is the same as the value for the createdAt property. All sensitive data findings are considered new.
     */
   var updatedAt: js.UndefOr[js.Date] = js.undefined
 }

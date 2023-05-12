@@ -1,7 +1,7 @@
 package typings.nodeTelegramBotApi.mod
 
+import typings.eventemitter3.mod.EventEmitter
 import typings.node.bufferMod.global.Buffer
-import typings.node.eventsMod.EventEmitter
 import typings.node.streamMod.Readable
 import typings.node.streamMod.Stream
 import typings.nodeTelegramBotApi.anon.Chatid
@@ -39,7 +39,10 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TelegramBot extends EventEmitter {
+trait TelegramBot extends EventEmitter[
+      MessageType | message | callback_query | inline_query | poll_answer | chat_member | my_chat_member | chosen_inline_result | channel_post | edited_message | edited_message_text | edited_message_caption | edited_channel_post | edited_channel_post_text | edited_channel_post_caption | shipping_query | pre_checkout_query | polling_error | webhook_error | error, 
+      Any
+    ] {
   
   def addListener(
     event: channel_post | chat_member | edited_channel_post | edited_channel_post_caption | edited_channel_post_text | edited_message | edited_message_caption | edited_message_text | error | my_chat_member | polling_error | webhook_error,
@@ -67,14 +70,14 @@ trait TelegramBot extends EventEmitter {
   def addListener_shippingquery(event: shipping_query, listener: js.Function1[/* query */ ShippingQuery, Unit]): this.type = js.native
   
   def addStickerToSet(
-    userId: String,
+    userId: Double,
     name: String,
     sticker: String,
     emojis: String,
     stickerType: png_sticker | tgs_sticker | webm_sticker
   ): js.Promise[Boolean] = js.native
   def addStickerToSet(
-    userId: String,
+    userId: Double,
     name: String,
     sticker: String,
     emojis: String,
@@ -83,7 +86,7 @@ trait TelegramBot extends EventEmitter {
     fileOptions: FileOptions
   ): js.Promise[Boolean] = js.native
   def addStickerToSet(
-    userId: String,
+    userId: Double,
     name: String,
     sticker: String,
     emojis: String,
@@ -91,7 +94,7 @@ trait TelegramBot extends EventEmitter {
     options: AddStickerToSetOptions
   ): js.Promise[Boolean] = js.native
   def addStickerToSet(
-    userId: String,
+    userId: Double,
     name: String,
     sticker: String,
     emojis: String,
@@ -100,14 +103,14 @@ trait TelegramBot extends EventEmitter {
     fileOptions: FileOptions
   ): js.Promise[Boolean] = js.native
   def addStickerToSet(
-    userId: String,
+    userId: Double,
     name: String,
     sticker: Buffer,
     emojis: String,
     stickerType: png_sticker | tgs_sticker | webm_sticker
   ): js.Promise[Boolean] = js.native
   def addStickerToSet(
-    userId: String,
+    userId: Double,
     name: String,
     sticker: Buffer,
     emojis: String,
@@ -116,7 +119,7 @@ trait TelegramBot extends EventEmitter {
     fileOptions: FileOptions
   ): js.Promise[Boolean] = js.native
   def addStickerToSet(
-    userId: String,
+    userId: Double,
     name: String,
     sticker: Buffer,
     emojis: String,
@@ -124,7 +127,7 @@ trait TelegramBot extends EventEmitter {
     options: AddStickerToSetOptions
   ): js.Promise[Boolean] = js.native
   def addStickerToSet(
-    userId: String,
+    userId: Double,
     name: String,
     sticker: Buffer,
     emojis: String,
@@ -133,14 +136,14 @@ trait TelegramBot extends EventEmitter {
     fileOptions: FileOptions
   ): js.Promise[Boolean] = js.native
   def addStickerToSet(
-    userId: String,
+    userId: Double,
     name: String,
     sticker: Stream,
     emojis: String,
     stickerType: png_sticker | tgs_sticker | webm_sticker
   ): js.Promise[Boolean] = js.native
   def addStickerToSet(
-    userId: String,
+    userId: Double,
     name: String,
     sticker: Stream,
     emojis: String,
@@ -149,7 +152,7 @@ trait TelegramBot extends EventEmitter {
     fileOptions: FileOptions
   ): js.Promise[Boolean] = js.native
   def addStickerToSet(
-    userId: String,
+    userId: Double,
     name: String,
     sticker: Stream,
     emojis: String,
@@ -157,7 +160,7 @@ trait TelegramBot extends EventEmitter {
     options: AddStickerToSetOptions
   ): js.Promise[Boolean] = js.native
   def addStickerToSet(
-    userId: String,
+    userId: Double,
     name: String,
     sticker: Stream,
     emojis: String,
@@ -185,17 +188,13 @@ trait TelegramBot extends EventEmitter {
   
   def answerWebAppQuery(web_app_query_id: String, result: InlineQueryResult): js.Promise[SentWebAppMessage] = js.native
   
-  def approveChatJoinRequest(chatId: ChatId, userId: String): js.Promise[Boolean] = js.native
-  def approveChatJoinRequest(chatId: ChatId, userId: String, form: js.Object): js.Promise[Boolean] = js.native
+  def approveChatJoinRequest(chatId: ChatId, userId: Double): js.Promise[Boolean] = js.native
+  def approveChatJoinRequest(chatId: ChatId, userId: Double, form: js.Object): js.Promise[Boolean] = js.native
   
-  def banChatMember(chatId: String, userId: String): js.Promise[Boolean] = js.native
-  def banChatMember(chatId: String, userId: String, untilDate: Double): js.Promise[Boolean] = js.native
-  def banChatMember(chatId: String, userId: String, untilDate: Double, revokeMessages: Boolean): js.Promise[Boolean] = js.native
-  def banChatMember(chatId: String, userId: String, untilDate: Unit, revokeMessages: Boolean): js.Promise[Boolean] = js.native
-  def banChatMember(chatId: Double, userId: String): js.Promise[Boolean] = js.native
-  def banChatMember(chatId: Double, userId: String, untilDate: Double): js.Promise[Boolean] = js.native
-  def banChatMember(chatId: Double, userId: String, untilDate: Double, revokeMessages: Boolean): js.Promise[Boolean] = js.native
-  def banChatMember(chatId: Double, userId: String, untilDate: Unit, revokeMessages: Boolean): js.Promise[Boolean] = js.native
+  def banChatMember(chatId: ChatId, userId: Double): js.Promise[Boolean] = js.native
+  def banChatMember(chatId: ChatId, userId: Double, untilDate: Double): js.Promise[Boolean] = js.native
+  def banChatMember(chatId: ChatId, userId: Double, untilDate: Double, revokeMessages: Boolean): js.Promise[Boolean] = js.native
+  def banChatMember(chatId: ChatId, userId: Double, untilDate: Unit, revokeMessages: Boolean): js.Promise[Boolean] = js.native
   
   def banChatSenderChat(chatId: ChatId, senderChatId: ChatId): js.Promise[Boolean] = js.native
   
@@ -205,10 +204,12 @@ trait TelegramBot extends EventEmitter {
   
   def close(): js.Promise[Boolean] = js.native
   
+  def closeForumTopic(chatId: ChatId, messageThreadId: Double): js.Promise[Boolean] = js.native
+  
+  def closeGeneralForumTopic(chatId: ChatId): js.Promise[Boolean] = js.native
+  
   def closeWebHook(): js.Promise[Any] = js.native
   
-  def copyMessage(chatId: ChatId, fromChatId: ChatId, messageId: String): js.Promise[MessageId] = js.native
-  def copyMessage(chatId: ChatId, fromChatId: ChatId, messageId: String, options: CopyMessageOptions): js.Promise[MessageId] = js.native
   def copyMessage(chatId: ChatId, fromChatId: ChatId, messageId: Double): js.Promise[MessageId] = js.native
   def copyMessage(chatId: ChatId, fromChatId: ChatId, messageId: Double, options: CopyMessageOptions): js.Promise[MessageId] = js.native
   
@@ -253,9 +254,12 @@ trait TelegramBot extends EventEmitter {
   def createChatInviteLink(chatId: ChatId, name: Unit, expire_date: Unit, member_limit: Double, creates_join_request: Boolean): js.Promise[ChatInviteLink] = js.native
   def createChatInviteLink(chatId: ChatId, name: Unit, expire_date: Unit, member_limit: Unit, creates_join_request: Boolean): js.Promise[ChatInviteLink] = js.native
   
-  def createNewStickerSet(userId: String, name: String, title: String, pngSticker: String, emojis: String): js.Promise[Boolean] = js.native
+  def createForumTopic(chatId: ChatId, name: String): js.Promise[Boolean] = js.native
+  def createForumTopic(chatId: ChatId, name: String, options: CreateForumTopicOptions): js.Promise[Boolean] = js.native
+  
+  def createNewStickerSet(userId: Double, name: String, title: String, pngSticker: String, emojis: String): js.Promise[Boolean] = js.native
   def createNewStickerSet(
-    userId: String,
+    userId: Double,
     name: String,
     title: String,
     pngSticker: String,
@@ -264,7 +268,7 @@ trait TelegramBot extends EventEmitter {
     fileOptions: FileOptions
   ): js.Promise[Boolean] = js.native
   def createNewStickerSet(
-    userId: String,
+    userId: Double,
     name: String,
     title: String,
     pngSticker: String,
@@ -272,7 +276,7 @@ trait TelegramBot extends EventEmitter {
     options: CreateStickerSetOptions
   ): js.Promise[Boolean] = js.native
   def createNewStickerSet(
-    userId: String,
+    userId: Double,
     name: String,
     title: String,
     pngSticker: String,
@@ -280,9 +284,9 @@ trait TelegramBot extends EventEmitter {
     options: CreateStickerSetOptions,
     fileOptions: FileOptions
   ): js.Promise[Boolean] = js.native
-  def createNewStickerSet(userId: String, name: String, title: String, pngSticker: Buffer, emojis: String): js.Promise[Boolean] = js.native
+  def createNewStickerSet(userId: Double, name: String, title: String, pngSticker: Buffer, emojis: String): js.Promise[Boolean] = js.native
   def createNewStickerSet(
-    userId: String,
+    userId: Double,
     name: String,
     title: String,
     pngSticker: Buffer,
@@ -291,7 +295,7 @@ trait TelegramBot extends EventEmitter {
     fileOptions: FileOptions
   ): js.Promise[Boolean] = js.native
   def createNewStickerSet(
-    userId: String,
+    userId: Double,
     name: String,
     title: String,
     pngSticker: Buffer,
@@ -299,7 +303,7 @@ trait TelegramBot extends EventEmitter {
     options: CreateStickerSetOptions
   ): js.Promise[Boolean] = js.native
   def createNewStickerSet(
-    userId: String,
+    userId: Double,
     name: String,
     title: String,
     pngSticker: Buffer,
@@ -307,9 +311,9 @@ trait TelegramBot extends EventEmitter {
     options: CreateStickerSetOptions,
     fileOptions: FileOptions
   ): js.Promise[Boolean] = js.native
-  def createNewStickerSet(userId: String, name: String, title: String, pngSticker: Stream, emojis: String): js.Promise[Boolean] = js.native
+  def createNewStickerSet(userId: Double, name: String, title: String, pngSticker: Stream, emojis: String): js.Promise[Boolean] = js.native
   def createNewStickerSet(
-    userId: String,
+    userId: Double,
     name: String,
     title: String,
     pngSticker: Stream,
@@ -318,7 +322,7 @@ trait TelegramBot extends EventEmitter {
     fileOptions: FileOptions
   ): js.Promise[Boolean] = js.native
   def createNewStickerSet(
-    userId: String,
+    userId: Double,
     name: String,
     title: String,
     pngSticker: Stream,
@@ -326,7 +330,7 @@ trait TelegramBot extends EventEmitter {
     options: CreateStickerSetOptions
   ): js.Promise[Boolean] = js.native
   def createNewStickerSet(
-    userId: String,
+    userId: Double,
     name: String,
     title: String,
     pngSticker: Stream,
@@ -335,15 +339,17 @@ trait TelegramBot extends EventEmitter {
     fileOptions: FileOptions
   ): js.Promise[Boolean] = js.native
   
-  def declineChatJoinRequest(chatId: ChatId, userId: String): js.Promise[Boolean] = js.native
-  def declineChatJoinRequest(chatId: ChatId, userId: String, form: js.Object): js.Promise[Boolean] = js.native
+  def declineChatJoinRequest(chatId: ChatId, userId: Double): js.Promise[Boolean] = js.native
+  def declineChatJoinRequest(chatId: ChatId, userId: Double, form: js.Object): js.Promise[Boolean] = js.native
   
   def deleteChatPhoto(chatId: ChatId): js.Promise[Boolean] = js.native
   
   def deleteChatStickerSet(chatId: ChatId): js.Promise[Boolean] = js.native
   
-  def deleteMessage(chatId: ChatId, messageId: String): js.Promise[Boolean] = js.native
-  def deleteMessage(chatId: ChatId, messageId: String, options: Any): js.Promise[Boolean] = js.native
+  def deleteForumTopic(chatId: ChatId, messageThreadId: Double): js.Promise[Boolean] = js.native
+  
+  def deleteMessage(chatId: ChatId, messageId: Double): js.Promise[Boolean] = js.native
+  def deleteMessage(chatId: ChatId, messageId: Double, options: Any): js.Promise[Boolean] = js.native
   
   def deleteStickerFromSet(sticker: String): js.Promise[Boolean] = js.native
   def deleteStickerFromSet(sticker: String, options: js.Object): js.Promise[Boolean] = js.native
@@ -425,6 +431,11 @@ trait TelegramBot extends EventEmitter {
     creates_join_request: Boolean
   ): js.Promise[ChatInviteLink] = js.native
   
+  def editForumTopic(chatId: ChatId, messageThreadId: Double): js.Promise[Boolean] = js.native
+  def editForumTopic(chatId: ChatId, messageThreadId: Double, options: EditForumTopicOptions): js.Promise[Boolean] = js.native
+  
+  def editGeneralForumTopic(chatId: ChatId, name: String): js.Promise[Boolean] = js.native
+  
   def editMessageCaption(caption: String): js.Promise[Message | Boolean] = js.native
   def editMessageCaption(caption: String, options: EditMessageCaptionOptions): js.Promise[Message | Boolean] = js.native
   
@@ -441,8 +452,6 @@ trait TelegramBot extends EventEmitter {
   
   def exportChatInviteLink(chatId: ChatId): js.Promise[String] = js.native
   
-  def forwardMessage(chatId: ChatId, fromChatId: ChatId, messageId: String): js.Promise[Message] = js.native
-  def forwardMessage(chatId: ChatId, fromChatId: ChatId, messageId: String, options: ForwardMessageOptions): js.Promise[Message] = js.native
   def forwardMessage(chatId: ChatId, fromChatId: ChatId, messageId: Double): js.Promise[Message] = js.native
   def forwardMessage(chatId: ChatId, fromChatId: ChatId, messageId: Double, options: ForwardMessageOptions): js.Promise[Message] = js.native
   
@@ -450,9 +459,9 @@ trait TelegramBot extends EventEmitter {
   
   def getChatAdministrators(chatId: ChatId): js.Promise[js.Array[ChatMember]] = js.native
   
-  def getChatMember(chatId: ChatId, userId: String): js.Promise[ChatMember] = js.native
+  def getChatMember(chatId: ChatId, userId: Double): js.Promise[ChatMember] = js.native
   
-  def getChatMembersCount(chatId: ChatId): js.Promise[Double] = js.native
+  def getChatMemberCount(chatId: ChatId): js.Promise[Double] = js.native
   
   def getChatMenuButton(form: `0`): js.Promise[MenuButton] = js.native
   
@@ -465,8 +474,8 @@ trait TelegramBot extends EventEmitter {
   
   def getFileStream(fileId: String): Readable = js.native
   
-  def getGameHighScores(userId: String): js.Promise[js.Array[GameHighScore]] = js.native
-  def getGameHighScores(userId: String, options: GetGameHighScoresOptions): js.Promise[js.Array[GameHighScore]] = js.native
+  def getGameHighScores(userId: Double): js.Promise[js.Array[GameHighScore]] = js.native
+  def getGameHighScores(userId: Double, options: GetGameHighScoresOptions): js.Promise[js.Array[GameHighScore]] = js.native
   
   def getMe(): js.Promise[User] = js.native
   
@@ -483,8 +492,6 @@ trait TelegramBot extends EventEmitter {
   def getUpdates(): js.Promise[js.Array[Update]] = js.native
   def getUpdates(options: GetUpdatesOptions): js.Promise[js.Array[Update]] = js.native
   
-  def getUserProfilePhotos(userId: String): js.Promise[UserProfilePhotos] = js.native
-  def getUserProfilePhotos(userId: String, options: GetUserProfilePhotosOptions): js.Promise[UserProfilePhotos] = js.native
   def getUserProfilePhotos(userId: Double): js.Promise[UserProfilePhotos] = js.native
   def getUserProfilePhotos(userId: Double, options: GetUserProfilePhotosOptions): js.Promise[UserProfilePhotos] = js.native
   
@@ -492,15 +499,12 @@ trait TelegramBot extends EventEmitter {
   
   def hasOpenWebHook(): Boolean = js.native
   
-  def isPolling(): Boolean = js.native
+  def hideGeneralForumTopic(chatId: ChatId): js.Promise[Boolean] = js.native
   
-  def kickChatMember(chatId: ChatId, userId: String): js.Promise[Boolean] = js.native
+  def isPolling(): Boolean = js.native
   
   def leaveChat(chatId: ChatId): js.Promise[Boolean] = js.native
   
-  def listenerCount(
-    event: message | callback_query | inline_query | poll_answer | chat_member | my_chat_member | chosen_inline_result | channel_post | edited_message | edited_message_text | edited_message_caption | edited_channel_post | edited_channel_post_text | edited_channel_post_caption | shipping_query | pre_checkout_query | polling_error | webhook_error | error
-  ): Double = js.native
   def listenerCount(event: MessageType): Double = js.native
   
   def listeners(
@@ -542,7 +546,6 @@ trait TelegramBot extends EventEmitter {
   ): this.type = js.native
   def on(event: MessageType, listener: js.Function2[/* message */ Message, /* metadata */ Metadata, Unit]): this.type = js.native
   
-  def onReplyToMessage(chatId: ChatId, messageId: String, callback: js.Function1[/* msg */ Message, Unit]): Double = js.native
   def onReplyToMessage(chatId: ChatId, messageId: Double, callback: js.Function1[/* msg */ Message, Unit]): Double = js.native
   
   def onText(
@@ -593,6 +596,7 @@ trait TelegramBot extends EventEmitter {
   def openWebHook(): js.Promise[Any] = js.native
   
   def pinChatMessage(chatId: ChatId, messageId: Double): js.Promise[Boolean] = js.native
+  def pinChatMessage(chatId: ChatId, messageId: Double, options: PinChatMessageOptions): js.Promise[Boolean] = js.native
   
   def prependListener(
     event: channel_post | chat_member | edited_channel_post | edited_channel_post_caption | edited_channel_post_text | edited_message | edited_message_caption | edited_message_text | error | my_chat_member | polling_error | webhook_error,
@@ -642,17 +646,14 @@ trait TelegramBot extends EventEmitter {
   
   def processUpdate(update: Update): Unit = js.native
   
-  def promoteChatMember(chatId: ChatId, userId: String): js.Promise[Boolean] = js.native
-  def promoteChatMember(chatId: ChatId, userId: String, options: PromoteChatMemberOptions): js.Promise[Boolean] = js.native
+  def promoteChatMember(chatId: ChatId, userId: Double): js.Promise[Boolean] = js.native
+  def promoteChatMember(chatId: ChatId, userId: Double, options: PromoteChatMemberOptions): js.Promise[Boolean] = js.native
   
   def rawListeners(
     event: message | callback_query | inline_query | poll_answer | chat_member | my_chat_member | chosen_inline_result | channel_post | edited_message | edited_message_text | edited_message_caption | edited_channel_post | edited_channel_post_text | edited_channel_post_caption | shipping_query | pre_checkout_query | polling_error | webhook_error | error
   ): js.Array[js.Function2[/* data */ Any, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
   def rawListeners(event: MessageType): js.Array[js.Function2[/* data */ Any, /* metadata */ js.UndefOr[Metadata], Unit]] = js.native
   
-  def removeAllListeners(
-    event: message | callback_query | inline_query | poll_answer | chat_member | my_chat_member | chosen_inline_result | channel_post | edited_message | edited_message_text | edited_message_caption | edited_channel_post | edited_channel_post_text | edited_channel_post_caption | shipping_query | pre_checkout_query | polling_error | webhook_error | error
-  ): this.type = js.native
   def removeAllListeners(event: MessageType): this.type = js.native
   
   def removeListener(
@@ -682,8 +683,12 @@ trait TelegramBot extends EventEmitter {
   
   def removeTextListener(regexp: js.RegExp): TextListener | Null = js.native
   
-  def restrictChatMember(chatId: ChatId, userId: String): js.Promise[Boolean] = js.native
-  def restrictChatMember(chatId: ChatId, userId: String, options: RestrictChatMemberOptions): js.Promise[Boolean] = js.native
+  def reopenForumTopic(chatId: ChatId, messageThreadId: Double): js.Promise[Boolean] = js.native
+  
+  def reopenGeneralForumTopic(chatId: ChatId): js.Promise[Boolean] = js.native
+  
+  def restrictChatMember(chatId: ChatId, userId: Double): js.Promise[Boolean] = js.native
+  def restrictChatMember(chatId: ChatId, userId: Double, options: RestrictChatMemberOptions): js.Promise[Boolean] = js.native
   
   def revokeChatInviteLink(chatId: ChatId, inviteLink: String): js.Promise[ChatInviteLink] = js.native
   
@@ -708,6 +713,7 @@ trait TelegramBot extends EventEmitter {
   def sendAudio(chatId: ChatId, audio: Stream, options: SendAudioOptions, fileOptions: FileOptions): js.Promise[Message] = js.native
   
   def sendChatAction(chatId: ChatId, action: ChatAction): js.Promise[Boolean] = js.native
+  def sendChatAction(chatId: ChatId, action: ChatAction, options: SendChatActionOptions): js.Promise[Boolean] = js.native
   
   def sendContact(chatId: ChatId, phoneNumber: String, firstName: String): js.Promise[Message] = js.native
   def sendContact(chatId: ChatId, phoneNumber: String, firstName: String, options: SendContactOptions): js.Promise[Message] = js.native
@@ -737,7 +743,6 @@ trait TelegramBot extends EventEmitter {
     description: String,
     payload: String,
     providerToken: String,
-    startParameter: String,
     currency: String,
     prices: js.Array[LabeledPrice]
   ): js.Promise[Message] = js.native
@@ -747,7 +752,6 @@ trait TelegramBot extends EventEmitter {
     description: String,
     payload: String,
     providerToken: String,
-    startParameter: String,
     currency: String,
     prices: js.Array[LabeledPrice],
     options: SendInvoiceOptions
@@ -840,13 +844,14 @@ trait TelegramBot extends EventEmitter {
   def sendVoice(chatId: ChatId, voice: Stream, options: SendVoiceOptions): js.Promise[Message] = js.native
   def sendVoice(chatId: ChatId, voice: Stream, options: SendVoiceOptions, fileOptions: FileOptions): js.Promise[Message] = js.native
   
-  def setChatAdministratorCustomTitle(chatId: ChatId, userId: String, customTitle: String): js.Promise[Boolean] = js.native
+  def setChatAdministratorCustomTitle(chatId: ChatId, userId: Double, customTitle: String): js.Promise[Boolean] = js.native
   
   def setChatDescription(chatId: ChatId, description: String): js.Promise[Boolean] = js.native
   
   def setChatMenuButton(form: Chatid): js.Promise[Boolean] = js.native
   
   def setChatPermissions(chatId: ChatId, chatPermissions: ChatPermissions): js.Promise[Boolean] = js.native
+  def setChatPermissions(chatId: ChatId, chatPermissions: ChatPermissions, options: SetChatPermissionsOptions): js.Promise[Boolean] = js.native
   
   def setChatPhoto(chatId: ChatId, photo: String): js.Promise[Boolean] = js.native
   def setChatPhoto(chatId: ChatId, photo: String, options: js.Object): js.Promise[Boolean] = js.native
@@ -865,8 +870,8 @@ trait TelegramBot extends EventEmitter {
   
   def setChatTitle(chatId: ChatId, title: String): js.Promise[Boolean] = js.native
   
-  def setGameScore(userId: String, score: Double): js.Promise[Message | Boolean] = js.native
-  def setGameScore(userId: String, score: Double, options: SetGameScoreOptions): js.Promise[Message | Boolean] = js.native
+  def setGameScore(userId: Double, score: Double): js.Promise[Message | Boolean] = js.native
+  def setGameScore(userId: Double, score: Double, options: SetGameScoreOptions): js.Promise[Message | Boolean] = js.native
   
   def setMyCommands(commands: js.Array[BotCommand]): js.Promise[Boolean] = js.native
   def setMyCommands(commands: js.Array[BotCommand], options: Languagecode): js.Promise[Boolean] = js.native
@@ -875,18 +880,18 @@ trait TelegramBot extends EventEmitter {
   
   def setStickerPositionInSet(sticker: String, position: Double): js.Promise[Boolean] = js.native
   
-  def setStickerSetThumb(userId: String, name: String, pngThumb: String): js.Promise[Boolean] = js.native
-  def setStickerSetThumb(userId: String, name: String, pngThumb: String, options: js.Object): js.Promise[Boolean] = js.native
-  def setStickerSetThumb(userId: String, name: String, pngThumb: String, options: js.Object, fileOptions: FileOptions): js.Promise[Boolean] = js.native
-  def setStickerSetThumb(userId: String, name: String, pngThumb: String, options: Unit, fileOptions: FileOptions): js.Promise[Boolean] = js.native
-  def setStickerSetThumb(userId: String, name: String, pngThumb: Buffer): js.Promise[Boolean] = js.native
-  def setStickerSetThumb(userId: String, name: String, pngThumb: Buffer, options: js.Object): js.Promise[Boolean] = js.native
-  def setStickerSetThumb(userId: String, name: String, pngThumb: Buffer, options: js.Object, fileOptions: FileOptions): js.Promise[Boolean] = js.native
-  def setStickerSetThumb(userId: String, name: String, pngThumb: Buffer, options: Unit, fileOptions: FileOptions): js.Promise[Boolean] = js.native
-  def setStickerSetThumb(userId: String, name: String, pngThumb: Stream): js.Promise[Boolean] = js.native
-  def setStickerSetThumb(userId: String, name: String, pngThumb: Stream, options: js.Object): js.Promise[Boolean] = js.native
-  def setStickerSetThumb(userId: String, name: String, pngThumb: Stream, options: js.Object, fileOptions: FileOptions): js.Promise[Boolean] = js.native
-  def setStickerSetThumb(userId: String, name: String, pngThumb: Stream, options: Unit, fileOptions: FileOptions): js.Promise[Boolean] = js.native
+  def setStickerSetThumb(userId: Double, name: String, pngThumb: String): js.Promise[Boolean] = js.native
+  def setStickerSetThumb(userId: Double, name: String, pngThumb: String, options: js.Object): js.Promise[Boolean] = js.native
+  def setStickerSetThumb(userId: Double, name: String, pngThumb: String, options: js.Object, fileOptions: FileOptions): js.Promise[Boolean] = js.native
+  def setStickerSetThumb(userId: Double, name: String, pngThumb: String, options: Unit, fileOptions: FileOptions): js.Promise[Boolean] = js.native
+  def setStickerSetThumb(userId: Double, name: String, pngThumb: Buffer): js.Promise[Boolean] = js.native
+  def setStickerSetThumb(userId: Double, name: String, pngThumb: Buffer, options: js.Object): js.Promise[Boolean] = js.native
+  def setStickerSetThumb(userId: Double, name: String, pngThumb: Buffer, options: js.Object, fileOptions: FileOptions): js.Promise[Boolean] = js.native
+  def setStickerSetThumb(userId: Double, name: String, pngThumb: Buffer, options: Unit, fileOptions: FileOptions): js.Promise[Boolean] = js.native
+  def setStickerSetThumb(userId: Double, name: String, pngThumb: Stream): js.Promise[Boolean] = js.native
+  def setStickerSetThumb(userId: Double, name: String, pngThumb: Stream, options: js.Object): js.Promise[Boolean] = js.native
+  def setStickerSetThumb(userId: Double, name: String, pngThumb: Stream, options: js.Object, fileOptions: FileOptions): js.Promise[Boolean] = js.native
+  def setStickerSetThumb(userId: Double, name: String, pngThumb: Stream, options: Unit, fileOptions: FileOptions): js.Promise[Boolean] = js.native
   
   def setWebHook(url: String): js.Promise[Any] = js.native
   def setWebHook(url: String, options: Unit, fileOptions: FileOptions): js.Promise[Any] = js.native
@@ -908,25 +913,29 @@ trait TelegramBot extends EventEmitter {
   def stopPolling(): js.Promise[Any] = js.native
   def stopPolling(options: StopPollingOptions): js.Promise[Any] = js.native
   
-  def unbanChatMember(chatId: ChatId, userId: String): js.Promise[Boolean] = js.native
+  def unbanChatMember(chatId: ChatId, userId: Double): js.Promise[Boolean] = js.native
   
   def unbanChatSenderChat(chatId: ChatId, senderChatId: ChatId): js.Promise[Boolean] = js.native
   
+  def unhideGeneralForumTopic(chatId: ChatId): js.Promise[Boolean] = js.native
+  
   def unpinAllChatMessages(chatId: ChatId): js.Promise[Boolean] = js.native
+  
+  def unpinAllForumTopicMessages(chatId: ChatId, messageThreadId: Double): js.Promise[Boolean] = js.native
   
   def unpinChatMessage(chatId: ChatId): js.Promise[Boolean] = js.native
   def unpinChatMessage(chatId: ChatId, messageId: Double): js.Promise[Boolean] = js.native
   
-  def uploadStickerFile(userId: String, pngSticker: String): js.Promise[File] = js.native
-  def uploadStickerFile(userId: String, pngSticker: String, options: js.Object): js.Promise[File] = js.native
-  def uploadStickerFile(userId: String, pngSticker: String, options: js.Object, fileOptions: FileOptions): js.Promise[File] = js.native
-  def uploadStickerFile(userId: String, pngSticker: String, options: Unit, fileOptions: FileOptions): js.Promise[File] = js.native
-  def uploadStickerFile(userId: String, pngSticker: Buffer): js.Promise[File] = js.native
-  def uploadStickerFile(userId: String, pngSticker: Buffer, options: js.Object): js.Promise[File] = js.native
-  def uploadStickerFile(userId: String, pngSticker: Buffer, options: js.Object, fileOptions: FileOptions): js.Promise[File] = js.native
-  def uploadStickerFile(userId: String, pngSticker: Buffer, options: Unit, fileOptions: FileOptions): js.Promise[File] = js.native
-  def uploadStickerFile(userId: String, pngSticker: Stream): js.Promise[File] = js.native
-  def uploadStickerFile(userId: String, pngSticker: Stream, options: js.Object): js.Promise[File] = js.native
-  def uploadStickerFile(userId: String, pngSticker: Stream, options: js.Object, fileOptions: FileOptions): js.Promise[File] = js.native
-  def uploadStickerFile(userId: String, pngSticker: Stream, options: Unit, fileOptions: FileOptions): js.Promise[File] = js.native
+  def uploadStickerFile(userId: Double, pngSticker: String): js.Promise[File] = js.native
+  def uploadStickerFile(userId: Double, pngSticker: String, options: js.Object): js.Promise[File] = js.native
+  def uploadStickerFile(userId: Double, pngSticker: String, options: js.Object, fileOptions: FileOptions): js.Promise[File] = js.native
+  def uploadStickerFile(userId: Double, pngSticker: String, options: Unit, fileOptions: FileOptions): js.Promise[File] = js.native
+  def uploadStickerFile(userId: Double, pngSticker: Buffer): js.Promise[File] = js.native
+  def uploadStickerFile(userId: Double, pngSticker: Buffer, options: js.Object): js.Promise[File] = js.native
+  def uploadStickerFile(userId: Double, pngSticker: Buffer, options: js.Object, fileOptions: FileOptions): js.Promise[File] = js.native
+  def uploadStickerFile(userId: Double, pngSticker: Buffer, options: Unit, fileOptions: FileOptions): js.Promise[File] = js.native
+  def uploadStickerFile(userId: Double, pngSticker: Stream): js.Promise[File] = js.native
+  def uploadStickerFile(userId: Double, pngSticker: Stream, options: js.Object): js.Promise[File] = js.native
+  def uploadStickerFile(userId: Double, pngSticker: Stream, options: js.Object, fileOptions: FileOptions): js.Promise[File] = js.native
+  def uploadStickerFile(userId: Double, pngSticker: Stream, options: Unit, fileOptions: FileOptions): js.Promise[File] = js.native
 }

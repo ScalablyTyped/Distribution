@@ -4,7 +4,7 @@ import typings.fpTs.libApplicativeMod.ApplicativeComposition12C
 import typings.fpTs.libApplicativeMod.ApplicativeComposition22C
 import typings.fpTs.libApplicativeMod.ApplicativeCompositionHKT2C
 import typings.fpTs.libEitherMod.URI
-import typings.fpTs.libFunctionMod.Lazy
+import typings.fpTs.libFunctionMod.LazyArg
 import typings.fpTs.libMonadMod.Monad
 import typings.fpTs.libMonadMod.Monad1
 import typings.fpTs.libMonadMod.Monad2
@@ -27,14 +27,14 @@ object libValidationTMod {
     extends StObject
        with ApplicativeCompositionHKT2C[M, URI, E] {
     
-    def alt[A](fa: ValidationT[M, E, A], that: Lazy[ValidationT[M, E, A]]): ValidationT[M, E, A]
+    def alt[A](fa: ValidationT[M, E, A], that: LazyArg[ValidationT[M, E, A]]): ValidationT[M, E, A]
     
     def chain[A, B](ma: ValidationT[M, E, A], f: js.Function1[/* a */ A, ValidationT[M, E, B]]): ValidationT[M, E, B]
   }
   object ValidationM {
     
     inline def apply[M, E](
-      alt: (ValidationT[M, E, Any], Lazy[ValidationT[M, E, Any]]) => ValidationT[M, E, Any],
+      alt: (ValidationT[M, E, Any], LazyArg[ValidationT[M, E, Any]]) => ValidationT[M, E, Any],
       ap: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, Kind2<G, E, (a : A): B>> */ Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, Kind2<G, E, A>> */ Any) => Any,
       chain: (ValidationT[M, E, Any], js.Function1[Any, ValidationT[M, E, Any]]) => ValidationT[M, E, Any],
       map: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, Kind2<G, E, A>> */ Any, js.Function1[Any, Any]) => Any,
@@ -47,7 +47,7 @@ object libValidationTMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: ValidationM[?, ?], M, E] (val x: Self & (ValidationM[M, E])) extends AnyVal {
       
-      inline def setAlt(value: (ValidationT[M, E, Any], Lazy[ValidationT[M, E, Any]]) => ValidationT[M, E, Any]): Self = StObject.set(x, "alt", js.Any.fromFunction2(value))
+      inline def setAlt(value: (ValidationT[M, E, Any], LazyArg[ValidationT[M, E, Any]]) => ValidationT[M, E, Any]): Self = StObject.set(x, "alt", js.Any.fromFunction2(value))
       
       inline def setChain(
         value: (ValidationT[M, E, Any], js.Function1[Any, ValidationT[M, E, Any]]) => ValidationT[M, E, Any]
@@ -59,14 +59,14 @@ object libValidationTMod {
     extends StObject
        with ApplicativeComposition12C[M, URI, E] {
     
-    def alt[A](fa: ValidationT1[M, E, A], that: Lazy[ValidationT1[M, E, A]]): ValidationT1[M, E, A]
+    def alt[A](fa: ValidationT1[M, E, A], that: LazyArg[ValidationT1[M, E, A]]): ValidationT1[M, E, A]
     
     def chain[A, B](ma: ValidationT1[M, E, A], f: js.Function1[/* a */ A, ValidationT1[M, E, B]]): ValidationT1[M, E, B]
   }
   object ValidationM1 {
     
     inline def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */, E](
-      alt: (ValidationT1[M, E, Any], Lazy[ValidationT1[M, E, Any]]) => ValidationT1[M, E, Any],
+      alt: (ValidationT1[M, E, Any], LazyArg[ValidationT1[M, E, Any]]) => ValidationT1[M, E, Any],
       ap: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, Kind2<G, E, (a : A): B>> */ Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, Kind2<G, E, A>> */ Any) => Any,
       chain: (ValidationT1[M, E, Any], js.Function1[Any, ValidationT1[M, E, Any]]) => ValidationT1[M, E, Any],
       map: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, Kind2<G, E, A>> */ Any, js.Function1[Any, Any]) => Any,
@@ -79,7 +79,7 @@ object libValidationTMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: ValidationM1[?, ?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */, E] (val x: Self & (ValidationM1[M, E])) extends AnyVal {
       
-      inline def setAlt(value: (ValidationT1[M, E, Any], Lazy[ValidationT1[M, E, Any]]) => ValidationT1[M, E, Any]): Self = StObject.set(x, "alt", js.Any.fromFunction2(value))
+      inline def setAlt(value: (ValidationT1[M, E, Any], LazyArg[ValidationT1[M, E, Any]]) => ValidationT1[M, E, Any]): Self = StObject.set(x, "alt", js.Any.fromFunction2(value))
       
       inline def setChain(
         value: (ValidationT1[M, E, Any], js.Function1[Any, ValidationT1[M, E, Any]]) => ValidationT1[M, E, Any]
@@ -91,14 +91,14 @@ object libValidationTMod {
     extends StObject
        with ApplicativeComposition22C[M, URI, E] {
     
-    def alt[R, A](fa: ValidationT2[M, R, E, A], that: Lazy[ValidationT2[M, R, E, A]]): ValidationT2[M, R, E, A]
+    def alt[R, A](fa: ValidationT2[M, R, E, A], that: LazyArg[ValidationT2[M, R, E, A]]): ValidationT2[M, R, E, A]
     
     def chain[R, A, B](ma: ValidationT2[M, R, E, A], f: js.Function1[/* a */ A, ValidationT2[M, R, E, B]]): ValidationT2[M, R, E, B]
   }
   object ValidationM2 {
     
     inline def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E](
-      alt: (ValidationT2[M, Any, E, Any], Lazy[ValidationT2[M, Any, E, Any]]) => ValidationT2[M, Any, E, Any],
+      alt: (ValidationT2[M, Any, E, Any], LazyArg[ValidationT2[M, Any, E, Any]]) => ValidationT2[M, Any, E, Any],
       ap: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, FE, Kind2<G, E, (a : A): B>> */ Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, FE, Kind2<G, E, A>> */ Any) => Any,
       chain: (ValidationT2[M, Any, E, Any], js.Function1[Any, ValidationT2[M, Any, E, Any]]) => ValidationT2[M, Any, E, Any],
       map: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, FE, Kind2<G, E, A>> */ Any, js.Function1[Any, Any]) => Any,
@@ -112,7 +112,7 @@ object libValidationTMod {
     implicit open class MutableBuilder[Self <: ValidationM2[?, ?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E] (val x: Self & (ValidationM2[M, E])) extends AnyVal {
       
       inline def setAlt(
-        value: (ValidationT2[M, Any, E, Any], Lazy[ValidationT2[M, Any, E, Any]]) => ValidationT2[M, Any, E, Any]
+        value: (ValidationT2[M, Any, E, Any], LazyArg[ValidationT2[M, Any, E, Any]]) => ValidationT2[M, Any, E, Any]
       ): Self = StObject.set(x, "alt", js.Any.fromFunction2(value))
       
       inline def setChain(

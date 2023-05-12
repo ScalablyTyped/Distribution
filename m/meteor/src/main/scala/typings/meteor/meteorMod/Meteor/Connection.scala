@@ -1,5 +1,6 @@
 package typings.meteor.meteorMod.Meteor
 
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,7 +12,7 @@ trait Connection extends StObject {
   
   def close(): Unit
   
-  var httpHeaders: js.Object
+  var httpHeaders: Record[String, String]
   
   var id: String
   
@@ -22,7 +23,7 @@ object Connection {
   inline def apply(
     clientAddress: String,
     close: () => Unit,
-    httpHeaders: js.Object,
+    httpHeaders: Record[String, String],
     id: String,
     onClose: js.Function0[Unit] => Unit
   ): Connection = {
@@ -37,7 +38,7 @@ object Connection {
     
     inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
-    inline def setHttpHeaders(value: js.Object): Self = StObject.set(x, "httpHeaders", value.asInstanceOf[js.Any])
+    inline def setHttpHeaders(value: Record[String, String]): Self = StObject.set(x, "httpHeaders", value.asInstanceOf[js.Any])
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

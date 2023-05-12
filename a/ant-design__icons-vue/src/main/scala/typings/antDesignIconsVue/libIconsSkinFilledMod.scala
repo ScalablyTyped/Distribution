@@ -16,7 +16,7 @@ object libIconsSkinFilledMod extends Shortcut {
   @js.native
   trait SkinFilledIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_SkinFilledIconType: String = js.native

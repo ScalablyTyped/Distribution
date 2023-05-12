@@ -27,7 +27,7 @@ trait ListPermissionsRequest extends StObject {
   var userId: js.UndefOr[SsoId] = js.undefined
   
   /**
-    * (Optional) If you specify SSO_USER, then only the permissions of Amazon Web Services SSO users are returned. If you specify SSO_GROUP, only the permissions of Amazon Web Services SSO groups are returned.
+    * (Optional) If you specify SSO_USER, then only the permissions of IAM Identity Center users are returned. If you specify SSO_GROUP, only the permissions of IAM Identity Center groups are returned.
     */
   var userType: js.UndefOr[UserType] = js.undefined
   

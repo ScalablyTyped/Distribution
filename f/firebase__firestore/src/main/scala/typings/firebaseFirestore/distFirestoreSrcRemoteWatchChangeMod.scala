@@ -1,5 +1,6 @@
 package typings.firebaseFirestore
 
+import typings.firebaseFirestore.distFirestoreSrcCoreDatabaseInfoMod.DatabaseId
 import typings.firebaseFirestore.distFirestoreSrcCoreSnapshotVersionMod.SnapshotVersion
 import typings.firebaseFirestore.distFirestoreSrcCoreTypesMod.TargetId
 import typings.firebaseFirestore.distFirestoreSrcLocalTargetDataMod.TargetData
@@ -88,6 +89,12 @@ object distFirestoreSrcRemoteWatchChangeMod {
     def addDocumentToTarget(targetId: TargetId, document: MutableDocument): Unit = js.native
     
     /**
+      * Apply bloom filter to remove the deleted documents, and return the
+      * application status.
+      */
+    /* private */ var applyBloomFilter: Any = js.native
+    
+    /**
       * Converts the currently accumulated state into a remote event at the
       * provided snapshot version. Resets the accumulated changes before returning.
       */
@@ -96,6 +103,12 @@ object distFirestoreSrcRemoteWatchChangeMod {
     /* private */ var ensureDocumentTargetMapping: Any = js.native
     
     /* private */ var ensureTargetState: Any = js.native
+    
+    /**
+      * Filter out removed documents based on bloom filter membership result and
+      * return number of documents removed.
+      */
+    /* private */ var filterRemovedDocuments: Any = js.native
     
     /**
       * Iterates over all targetIds that the watch change applies to: either the
@@ -142,7 +155,7 @@ object distFirestoreSrcRemoteWatchChangeMod {
     /* private */ var pendingDocumentUpdates: Any = js.native
     
     /**
-      * A list of targets with existence filter mismatches. These targets are
+      * A map of targets with existence filter mismatches. These targets are
       * known to be inconsistent and their listens needs to be re-established by
       * RemoteStore.
       */
@@ -265,6 +278,11 @@ object distFirestoreSrcRemoteWatchChangeMod {
   trait TargetMetadataProvider extends StObject {
     
     /**
+      * Returns the database ID of the Firestore instance.
+      */
+    def getDatabaseId(): DatabaseId
+    
+    /**
       * Returns the set of remote document keys for the given target ID as of the
       * last raised snapshot.
       */
@@ -279,15 +297,18 @@ object distFirestoreSrcRemoteWatchChangeMod {
   object TargetMetadataProvider {
     
     inline def apply(
+      getDatabaseId: () => DatabaseId,
       getRemoteKeysForTarget: TargetId => DocumentKeySet_,
       getTargetDataForTarget: TargetId => TargetData | Null
     ): TargetMetadataProvider = {
-      val __obj = js.Dynamic.literal(getRemoteKeysForTarget = js.Any.fromFunction1(getRemoteKeysForTarget), getTargetDataForTarget = js.Any.fromFunction1(getTargetDataForTarget))
+      val __obj = js.Dynamic.literal(getDatabaseId = js.Any.fromFunction0(getDatabaseId), getRemoteKeysForTarget = js.Any.fromFunction1(getRemoteKeysForTarget), getTargetDataForTarget = js.Any.fromFunction1(getTargetDataForTarget))
       __obj.asInstanceOf[TargetMetadataProvider]
     }
     
     @scala.inline
     implicit open class MutableBuilder[Self <: TargetMetadataProvider] (val x: Self) extends AnyVal {
+      
+      inline def setGetDatabaseId(value: () => DatabaseId): Self = StObject.set(x, "getDatabaseId", js.Any.fromFunction0(value))
       
       inline def setGetRemoteKeysForTarget(value: TargetId => DocumentKeySet_): Self = StObject.set(x, "getRemoteKeysForTarget", js.Any.fromFunction1(value))
       

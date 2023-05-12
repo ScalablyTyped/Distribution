@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ValidateOptions[C] extends StObject {
+trait ValidateOptions[TContext] extends StObject {
   
   /**
     * Return from validation methods on the first error rather than after all validations run. Default - true
@@ -14,7 +14,7 @@ trait ValidateOptions[C] extends StObject {
   /**
     * Any context needed for validating schema conditions (see: when())
     */
-  var context: js.UndefOr[C] = js.undefined
+  var context: js.UndefOr[TContext] = js.undefined
   
   /**
     * When false validations will not descend into nested schema (relevant for objects or arrays). Default - true
@@ -22,7 +22,7 @@ trait ValidateOptions[C] extends StObject {
   var recursive: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Only validate the input, and skip and coercion or transformation. Default - false
+    * Only validate the input, skipping type casting and transformation. Default - false
     */
   var strict: js.UndefOr[Boolean] = js.undefined
   
@@ -33,18 +33,19 @@ trait ValidateOptions[C] extends StObject {
 }
 object ValidateOptions {
   
-  inline def apply[C](): ValidateOptions[C] = {
+  inline def apply[TContext](): ValidateOptions[TContext] = {
     val __obj = js.Dynamic.literal()
-    __obj.asInstanceOf[ValidateOptions[C]]
+    __obj.asInstanceOf[ValidateOptions[TContext]]
   }
   
-  extension [Self <: ValidateOptions[?], C](x: Self & ValidateOptions[C]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValidateOptions[?], TContext] (val x: Self & ValidateOptions[TContext]) extends AnyVal {
     
     inline def setAbortEarly(value: Boolean): Self = StObject.set(x, "abortEarly", value.asInstanceOf[js.Any])
     
     inline def setAbortEarlyUndefined: Self = StObject.set(x, "abortEarly", js.undefined)
     
-    inline def setContext(value: C): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: TContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     

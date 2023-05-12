@@ -1,7 +1,7 @@
 
 # Scala.js typings for coffee
 
-Typings are for version 5.4.0
+Typings are for version 5.5.0
 
 ## Library description:
 Test command line on Node.js.

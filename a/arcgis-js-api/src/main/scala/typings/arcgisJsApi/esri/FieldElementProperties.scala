@@ -28,6 +28,7 @@ trait FieldElementProperties
     * A Boolean determining whether users can edit this form element.
     *
     * @default true
+    * @deprecated since version 4.26. Use [`editableExpression`](#editableExpression) instead. Assigning `editableExpression` values of `"true"` and `"false"` will have the same effect as assigning `true` and `false` to `editable`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-elements-FieldElement.html#editable)
     */

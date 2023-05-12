@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TerminalProfileProvider extends StObject {
   
   /**
-    * Provide the terminal profile.
-    * @param token A cancellation token that indicates the result is no longer needed.
-    * @returns The terminal profile.
-    */
+  		 * Provide the terminal profile.
+  		 * @param token A cancellation token that indicates the result is no longer needed.
+  		 * @returns The terminal profile.
+  		 */
   def provideTerminalProfile(token: CancellationToken): ProviderResult[TerminalProfile]
 }
 object TerminalProfileProvider {

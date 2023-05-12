@@ -9,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @classDescription search column.
   * @return {nlobjSearchColumn}
-  * @constructor
   * @param {string} name column name.
   * @param {string} join internal ID for joined search where this column is defined
   * @param {string} summary

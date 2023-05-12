@@ -34,8 +34,8 @@ open class Compiler () extends StObject {
   def compileModuleAsync[T](moduleType: Type[T]): js.Promise[NgModuleFactory[T]] = js.native
   
   /**
-    * Compiles the given NgModule and all of its components. All templates of the components listed
-    * in `entryComponents` have to be inlined.
+    * Compiles the given NgModule and all of its components. All templates of the components
+    * have to be inlined.
     */
   def compileModuleSync[T](moduleType: Type[T]): NgModuleFactory[T] = js.native
   

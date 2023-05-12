@@ -1,10 +1,10 @@
 package typings.devextremeRuntime
 
-import typings.devextremeRuntime.anon.ComponentDidMount
 import typings.devextremeRuntime.anon.Id
-import typings.devextremeRuntime.anon.RenderRef
-import typings.inferno.distCoreTypesMod.global.JSX.Element
+import typings.devextremeRuntime.anon.RenderProps
+import typings.devextremeRuntime.esmInfernoHooksRecorderMod.Recorder
 import typings.inferno.mod.Component
+import typings.react.mod.global.JSX.Element
 import typings.std.Record
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
@@ -15,10 +15,10 @@ object esmInfernoHooksContainerMod {
   
   @JSImport("@devextreme/runtime/esm/inferno-hooks/container", "HookContainer")
   @js.native
-  open class HookContainer () extends Component[RenderRef, Record[String, Any]] {
-    def this(props: RenderRef) = this()
+  open class HookContainer () extends Component[RenderProps, Record[String, Any]] {
+    def this(props: RenderProps) = this()
     def this(props: Unit, context: Any) = this()
-    def this(props: RenderRef, context: Any) = this()
+    def this(props: RenderProps, context: Any) = this()
     
     @JSName("componentDidMount")
     def componentDidMount_MHookContainer(): Unit = js.native
@@ -40,7 +40,7 @@ object esmInfernoHooksContainerMod {
     def getHook(dependencies: Double, fn: Any): Any = js.native
     def getHook(dependencies: Unit, fn: Any): Any = js.native
     
-    var recorder: js.UndefOr[ReturnType[js.Function1[/* component */ this.type, ComponentDidMount]]] = js.native
+    var recorder: js.UndefOr[ReturnType[js.Function1[/* component */ this.type, Recorder]]] = js.native
     
     def render(): Element = js.native
     

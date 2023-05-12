@@ -16,11 +16,17 @@ trait GetFuotaTaskResponse extends StObject {
   
   var FirmwareUpdateRole: js.UndefOr[typings.awsSdk.clientsIotwirelessMod.FirmwareUpdateRole] = js.undefined
   
+  var FragmentIntervalMS: js.UndefOr[typings.awsSdk.clientsIotwirelessMod.FragmentIntervalMS] = js.undefined
+  
+  var FragmentSizeBytes: js.UndefOr[typings.awsSdk.clientsIotwirelessMod.FragmentSizeBytes] = js.undefined
+  
   var Id: js.UndefOr[FuotaTaskId] = js.undefined
   
   var LoRaWAN: js.UndefOr[LoRaWANFuotaTaskGetInfo] = js.undefined
   
   var Name: js.UndefOr[FuotaTaskName] = js.undefined
+  
+  var RedundancyPercent: js.UndefOr[typings.awsSdk.clientsIotwirelessMod.RedundancyPercent] = js.undefined
   
   var Status: js.UndefOr[FuotaTaskStatus] = js.undefined
 }
@@ -54,6 +60,14 @@ object GetFuotaTaskResponse {
     
     inline def setFirmwareUpdateRoleUndefined: Self = StObject.set(x, "FirmwareUpdateRole", js.undefined)
     
+    inline def setFragmentIntervalMS(value: FragmentIntervalMS): Self = StObject.set(x, "FragmentIntervalMS", value.asInstanceOf[js.Any])
+    
+    inline def setFragmentIntervalMSUndefined: Self = StObject.set(x, "FragmentIntervalMS", js.undefined)
+    
+    inline def setFragmentSizeBytes(value: FragmentSizeBytes): Self = StObject.set(x, "FragmentSizeBytes", value.asInstanceOf[js.Any])
+    
+    inline def setFragmentSizeBytesUndefined: Self = StObject.set(x, "FragmentSizeBytes", js.undefined)
+    
     inline def setId(value: FuotaTaskId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
@@ -65,6 +79,10 @@ object GetFuotaTaskResponse {
     inline def setName(value: FuotaTaskName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    
+    inline def setRedundancyPercent(value: RedundancyPercent): Self = StObject.set(x, "RedundancyPercent", value.asInstanceOf[js.Any])
+    
+    inline def setRedundancyPercentUndefined: Self = StObject.set(x, "RedundancyPercent", js.undefined)
     
     inline def setStatus(value: FuotaTaskStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     

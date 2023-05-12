@@ -112,6 +112,7 @@ import typings.csstype.mod.Property.BreakBefore
 import typings.csstype.mod.Property.BreakInside
 import typings.csstype.mod.Property.CaptionSide
 import typings.csstype.mod.Property.CaretColor
+import typings.csstype.mod.Property.CaretShape
 import typings.csstype.mod.Property.ClipPath
 import typings.csstype.mod.Property.ClipRule
 import typings.csstype.mod.Property.ColorInterpolation
@@ -126,6 +127,13 @@ import typings.csstype.mod.Property.ColumnRuleStyle
 import typings.csstype.mod.Property.ColumnRuleWidth
 import typings.csstype.mod.Property.ColumnSpan
 import typings.csstype.mod.Property.ColumnWidth
+import typings.csstype.mod.Property.ContainIntrinsicBlockSize
+import typings.csstype.mod.Property.ContainIntrinsicHeight
+import typings.csstype.mod.Property.ContainIntrinsicInlineSize
+import typings.csstype.mod.Property.ContainIntrinsicSize
+import typings.csstype.mod.Property.ContainIntrinsicWidth
+import typings.csstype.mod.Property.ContainerName
+import typings.csstype.mod.Property.ContainerType
 import typings.csstype.mod.Property.ContentVisibility
 import typings.csstype.mod.Property.CounterIncrement
 import typings.csstype.mod.Property.CounterReset
@@ -147,6 +155,7 @@ import typings.csstype.mod.Property.FontFeatureSettings
 import typings.csstype.mod.Property.FontKerning
 import typings.csstype.mod.Property.FontLanguageOverride
 import typings.csstype.mod.Property.FontOpticalSizing
+import typings.csstype.mod.Property.FontPalette
 import typings.csstype.mod.Property.FontSize
 import typings.csstype.mod.Property.FontSizeAdjust
 import typings.csstype.mod.Property.FontSmooth
@@ -157,6 +166,7 @@ import typings.csstype.mod.Property.FontVariant
 import typings.csstype.mod.Property.FontVariantAlternates
 import typings.csstype.mod.Property.FontVariantCaps
 import typings.csstype.mod.Property.FontVariantEastAsian
+import typings.csstype.mod.Property.FontVariantEmoji
 import typings.csstype.mod.Property.FontVariantLigatures
 import typings.csstype.mod.Property.FontVariantNumeric
 import typings.csstype.mod.Property.FontVariantPosition
@@ -183,6 +193,7 @@ import typings.csstype.mod.Property.GridTemplateColumns
 import typings.csstype.mod.Property.GridTemplateRows
 import typings.csstype.mod.Property.HangingPunctuation
 import typings.csstype.mod.Property.HyphenateCharacter
+import typings.csstype.mod.Property.HyphenateLimitChars
 import typings.csstype.mod.Property.ImageOrientation
 import typings.csstype.mod.Property.ImageRendering
 import typings.csstype.mod.Property.ImageResolution
@@ -220,6 +231,7 @@ import typings.csstype.mod.Property.MarginInlineStart
 import typings.csstype.mod.Property.MarginLeft
 import typings.csstype.mod.Property.MarginRight
 import typings.csstype.mod.Property.MarginTop
+import typings.csstype.mod.Property.MarginTrim
 import typings.csstype.mod.Property.MarkerEnd
 import typings.csstype.mod.Property.MarkerMid
 import typings.csstype.mod.Property.MarkerStart
@@ -252,7 +264,6 @@ import typings.csstype.mod.Property.MinHeight
 import typings.csstype.mod.Property.MinInlineSize
 import typings.csstype.mod.Property.MinWidth
 import typings.csstype.mod.Property.MixBlendMode
-import typings.csstype.mod.Property.MozBinding
 import typings.csstype.mod.Property.MozFloatEdge
 import typings.csstype.mod.Property.MozForceBrokenImageIcon
 import typings.csstype.mod.Property.MozOutlineRadius
@@ -266,6 +277,7 @@ import typings.csstype.mod.Property.ObjectPosition
 import typings.csstype.mod.Property.OffsetAnchor
 import typings.csstype.mod.Property.OffsetDistance
 import typings.csstype.mod.Property.OffsetPath
+import typings.csstype.mod.Property.OffsetPosition
 import typings.csstype.mod.Property.OffsetRotate
 import typings.csstype.mod.Property.Opacity
 import typings.csstype.mod.Property.Outline
@@ -342,6 +354,9 @@ import typings.csstype.mod.Property.ScrollSnapStop
 import typings.csstype.mod.Property.ScrollSnapType
 import typings.csstype.mod.Property.ScrollSnapTypeX
 import typings.csstype.mod.Property.ScrollSnapTypeY
+import typings.csstype.mod.Property.ScrollTimeline
+import typings.csstype.mod.Property.ScrollTimelineAxis
+import typings.csstype.mod.Property.ScrollTimelineName
 import typings.csstype.mod.Property.ScrollbarColor
 import typings.csstype.mod.Property.ScrollbarGutter
 import typings.csstype.mod.Property.ScrollbarWidth
@@ -398,6 +413,7 @@ import typings.csstype.mod.Property.UnicodeBidi
 import typings.csstype.mod.Property.UserSelect
 import typings.csstype.mod.Property.VectorEffect
 import typings.csstype.mod.Property.VerticalAlign
+import typings.csstype.mod.Property.ViewTransitionName
 import typings.csstype.mod.Property.WhiteSpace
 import typings.csstype.mod.Property.WillChange
 import typings.csstype.mod.Property.WordBreak
@@ -411,11 +427,11 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.csstype.mod.StandardShorthandPropertiesHyphen because var conflicts: all, animation, background, border, columns, flex, font, gap, grid, margin, mask, motion, offset, outline, overflow, padding, transition. Inlined `border-width`, `border-block-end`, `grid-template`, `column-rule`, `border-style`, `border-right`, `border-inline-end`, `text-decoration`, `border-block`, `place-items`, `border-image`, `border-left`, `grid-column`, `border-block-start`, `border-radius`, `background-position`, `border-inline`, `text-emphasis`, `place-self`, `flex-flow`, `grid-area`, `grid-row`, `line-clamp`, `list-style`, `border-top`, `border-color`, `border-inline-start`, `mask-border`, `overscroll-behavior`, `border-bottom`
-- typings.csstype.mod.StandardLonghandPropertiesHyphen because var conflicts: appearance, bottom, clear, color, contain, content, cursor, direction, display, filter, float, height, hyphens, inset, isolation, left, opacity, order, orphans, perspective, position, quotes, resize, right, rotate, scale, top, transform, translate, visibility, widows, width, zoom. Inlined `color-adjust`, `image-rendering`, `border-bottom-width`, `math-depth`, `line-height-step`, `font-variant-numeric`, `justify-self`, `scrollbar-color`, `will-change`, `offset-distance`, `column-span`, `list-style-image`, `border-inline-color`, `transform-origin`, `border-block-end-style`, `scroll-padding-bottom`, `tab-size`, `border-bottom-left-radius`, `block-size`, `border-top-style`, `hyphenate-character`, `math-shift`, `break-inside`, `inset-inline-start`, `grid-auto-flow`, `background-image`, `background-size`, `column-count`, `border-image-repeat`, `box-shadow`, `border-top-color`, `text-emphasis-color`, `scroll-margin-left`, `offset-anchor`, `transition-property`, `scroll-snap-margin-bottom`, `border-bottom-style`, `margin-right`, `scroll-margin-top`, `mask-border-mode`, `scroll-padding-top`, `font-smooth`, `border-start-start-radius`, `padding-right`, `ruby-align`, `border-inline-end-width`, `motion-distance`, `font-weight`, `border-block-width`, `object-fit`, `column-fill`, `scroll-snap-align`, `place-content`, `motion-rotation`, `backdrop-filter`, `touch-action`, `scroll-margin-bottom`, `mask-composite`, `pointer-events`, `font-variant-caps`, `column-width`, `scrollbar-gutter`, `outline-offset`, `mix-blend-mode`, `grid-template-columns`, `padding-block-end`, `mask-position`, `font-family`, `text-decoration-style`, `background-origin`, `paint-order`, `overflow-clip-margin`, `grid-column-start`, `color-scheme`, `overflow-inline`, `margin-top`, `padding-block`, `scroll-padding-block`, `scroll-margin-block-start`, `overscroll-behavior-inline`, `border-block-style`, `overscroll-behavior-y`, `empty-cells`, `white-space`, `margin-inline-end`, `animation-delay`, `counter-reset`, `margin-inline`, `font-synthesis`, `border-bottom-right-radius`, `max-width`, `mask-image`, `scroll-snap-stop`, `transform-box`, `text-decoration-thickness`, `transition-timing-function`, `overscroll-behavior-block`, `inline-size`, `margin-inline-start`, `shape-margin`, `min-height`, `font-kerning`, `block-overflow`, `text-align`, `border-start-end-radius`, `padding-inline-end`, `content-visibility`, `font-size`, `justify-tracks`, `counter-set`, `scroll-padding-inline-end`, `line-break`, `scroll-margin-block`, `overflow-anchor`, `border-image-source`, `scroll-snap-margin-right`, `scroll-margin-inline-end`, `column-rule-color`, `flex-shrink`, `scroll-padding-block-start`, `mask-border-outset`, `padding-inline-start`, `text-decoration-skip-ink`, `column-rule-style`, `text-emphasis-style`, `margin-block-end`, `scroll-margin-inline`, `grid-row-end`, `max-height`, `grid-row-start`, `border-image-outset`, `border-inline-style`, `border-left-width`, `font-variant-position`, `object-position`, `border-end-start-radius`, `outline-width`, `caret-color`, `outline-style`, `mask-size`, `caption-side`, `aspect-ratio`, `animation-fill-mode`, `padding-inline`, `border-block-end-width`, `image-orientation`, `scroll-padding-left`, `row-gap`, `scrollbar-width`, `break-after`, `text-orientation`, `text-transform`, `inset-block-start`, `scroll-snap-margin`, `inset-inline`, `offset-rotation`, `border-inline-end-color`, `grid-template-areas`, `scroll-padding-inline-start`, `list-style-position`, `scroll-snap-type`, `text-emphasis-position`, `text-indent`, `scroll-snap-margin-left`, `word-break`, `background-position-y`, `transition-duration`, `math-style`, `animation-timeline`, `background-attachment`, `initial-letter`, `border-inline-width`, `text-size-adjust`, `margin-block-start`, `animation-play-state`, `print-color-adjust`, `border-block-color`, `mask-type`, `border-top-right-radius`, `grid-auto-rows`, `border-block-end-color`, `border-right-color`, `overflow-x`, `border-top-width`, `border-inline-start-color`, `justify-content`, `align-items`, `text-overflow`, `flex-basis`, `accent-color`, `text-shadow`, `scroll-margin-block-end`, `image-resolution`, `mask-mode`, `flex-wrap`, `border-image-width`, `offset-path`, `column-gap`, `scroll-snap-margin-top`, `border-left-color`, `border-top-left-radius`, `background-clip`, `scroll-margin-right`, `font-variant-alternates`, `max-lines`, `grid-column-end`, `backface-visibility`, `line-height`, `margin-bottom`, `word-wrap`, `text-decoration-skip`, `table-layout`, `mask-border-slice`, `input-security`, `letter-spacing`, `border-bottom-color`, `mask-border-repeat`, `hanging-punctuation`, `animation-name`, `user-select`, `motion-path`, `page-break-after`, `justify-items`, `flex-direction`, `forced-color-adjust`, `text-decoration-line`, `mask-border-width`, `padding-block-start`, `animation-duration`, `counter-increment`, `mask-origin`, `border-inline-end-style`, `inset-inline-end`, `align-tracks`, `border-end-end-radius`, `border-right-width`, `font-style`, `scroll-padding`, `text-underline-position`, `border-collapse`, `min-width`, `font-variant-east-asian`, `text-rendering`, `clip-path`, `overflow-clip-box`, `z-index`, `animation-direction`, `align-self`, `padding-left`, `max-block-size`, `margin-left`, `background-color`, `mask-clip`, `text-justify`, `scroll-padding-inline`, `page-break-before`, `padding-top`, `text-underline-offset`, `box-decoration-break`, `mask-border-source`, `min-block-size`, `perspective-origin`, `min-inline-size`, `grid-template-rows`, `transition-delay`, `unicode-bidi`, `grid-auto-columns`, `scroll-behavior`, `transform-style`, `text-combine-upright`, `font-variant-ligatures`, `font-size-adjust`, `font-variant`, `animation-timing-function`, `background-blend-mode`, `border-block-start-width`, `page-break-inside`, `border-inline-start-style`, `padding-bottom`, `font-feature-settings`, `ruby-position`, `column-rule-width`, `inset-block`, `border-spacing`, `flex-grow`, `shape-outside`, `border-left-style`, `font-stretch`, `font-language-override`, `outline-color`, `border-image-slice`, `offset-rotate`, `background-position-x`, `scroll-padding-block-end`, `background-repeat`, `text-decoration-color`, `ruby-merge`, `mask-repeat`, `text-align-last`, `font-optical-sizing`, `border-inline-start-width`, `vertical-align`, `writing-mode`, `font-variation-settings`, `animation-iteration-count`, `overscroll-behavior-x`, `overflow-block`, `border-block-start-style`, `scroll-margin-inline-start`, `shape-image-threshold`, `scroll-padding-right`, `animation-composition`, `border-block-start-color`, `break-before`, `box-sizing`, `inset-block-end`, `margin-block`, `overflow-y`, `border-right-style`, `word-spacing`, `scroll-margin`, `overflow-wrap`, `list-style-type`, `max-inline-size`, `align-content`
-- typings.csstype.mod.ObsoletePropertiesHyphen because var conflicts: azimuth, clip. Inlined `-moz-outline-radius-bottomleft`, `offset-inline`, `offset-block`, `ime-mode`, `-o-transform`, `-webkit-scroll-snap-points-x`, `-moz-binding`, `-webkit-scroll-snap-points-y`, `-webkit-box-flex-group`, `-moz-box-orient`, `-moz-force-broken-image-icon`, `-o-tab-size`, `scroll-snap-type-x`, `-webkit-box-ordinal-group`, `scroll-snap-destination`, `-o-transition-timing-function`, `-o-animation-play-state`, `-o-transform-origin`, `-moz-box-ordinal-group`, `-o-animation`, `-o-animation-timing-function`, `-moz-border-radius-bottomright`, `scroll-snap-coordinate`, `-moz-text-align-last`, `-moz-border-radius-topleft`, `-moz-outline-width`, `-moz-opacity`, `-webkit-box-pack`, `offset-block-start`, `-webkit-box-lines`, `-moz-background-size`, `-o-text-overflow`, `-o-animation-delay`, `-khtml-box-flex-group`, `-moz-outline-style`, `-moz-box-direction`, `-o-background-size`, `offset-inline-start`, `scroll-snap-type-y`, `box-orient`, `-moz-box-shadow`, `box-ordinal-group`, `-moz-outline-radius-topleft`, `-o-animation-direction`, `-o-object-position`, `-webkit-box-align`, `-moz-box-align`, `box-lines`, `-moz-outline-radius-topright`, `-moz-text-decoration-line`, `-moz-border-radius-bottomleft`, `box-flex-group`, `-moz-outline-color`, `-khtml-box-orient`, `-moz-float-edge`, `-moz-outline`, `-moz-background-inline-policy`, `-o-animation-duration`, `-khtml-box-pack`, `box-align`, `-webkit-box-direction`, `-khtml-user-select`, `-o-object-fit`, `-moz-box-pack`, `-webkit-box-flex`, `-khtml-line-break`, `-khtml-box-align`, `-moz-outline-radius`, `-o-animation-name`, `-o-transition-property`, `-khtml-box-lines`, `-ms-ime-mode`, `-moz-background-origin`, `-moz-text-decoration-style`, `-webkit-box-orient`, `scroll-snap-points-y`, `offset-block-end`, `-moz-box-flex`, `box-direction`, `offset-inline-end`, `grid-column-gap`, `-khtml-opacity`, `-moz-text-decoration-color`, `grid-gap`, `grid-row-gap`, `-o-transition-delay`, `-o-animation-fill-mode`, `-moz-border-radius`, `box-pack`, `-moz-user-input`, `-khtml-box-direction`, `-moz-outline-radius-bottomright`, `box-flex`, `-o-transition`, `-o-transition-duration`, `scroll-snap-points-x`, `-moz-border-radius-topright`, `-khtml-box-ordinal-group`, `-o-animation-iteration-count`, `-khtml-box-flex`, `-moz-background-clip`, `-o-border-image`
-- typings.csstype.mod.StandardPropertiesHyphen because var conflicts: all, animation, appearance, background, border, bottom, clear, color, columns, contain, content, cursor, direction, display, filter, flex, float, font, gap, grid, height, hyphens, inset, isolation, left, margin, mask, motion, offset, opacity, order, orphans, outline, overflow, padding, perspective, position, quotes, resize, right, rotate, scale, top, transform, transition, translate, visibility, widows, width, zoom. Inlined 
-- typings.csstype.mod.PropertiesHyphen because var conflicts: all, animation, appearance, azimuth, background, border, bottom, clear, clip, color, columns, contain, content, cursor, direction, display, fill, filter, flex, float, font, gap, grid, height, hyphens, inset, isolation, left, margin, marker, mask, motion, offset, opacity, order, orphans, outline, overflow, padding, perspective, position, quotes, resize, right, rotate, scale, stroke, top, transform, transition, translate, visibility, widows, width, zoom. Inlined `stroke-width`, `dominant-baseline`, `fill-opacity`, `baseline-shift`, `flood-color`, `marker-mid`, `stroke-opacity`, `color-rendering`, `stroke-dashoffset`, `stroke-miterlimit`, `stroke-linecap`, `fill-rule`, `lighting-color`, `stop-color`, `vector-effect`, `marker-end`, `clip-rule`, `shape-rendering`, `flood-opacity`, `alignment-baseline`, `stroke-linejoin`, `color-interpolation`, `glyph-orientation-vertical`, `text-anchor`, `stroke-dasharray`, `stop-opacity`, `marker-start` */ trait CSSProperties
+- typings.csstype.mod.StandardShorthandPropertiesHyphen because var conflicts: all, animation, background, border, caret, columns, container, flex, font, gap, grid, inset, margin, mask, motion, offset, outline, overflow, padding, transition. Inlined `border-width`, `border-block-end`, `grid-template`, `column-rule`, `border-style`, `border-right`, `border-inline-end`, `place-content`, `text-decoration`, `border-block`, `place-items`, `border-image`, `padding-block`, `scroll-padding-block`, `margin-inline`, `border-left`, `grid-column`, `border-block-start`, `border-radius`, `background-position`, `scroll-margin-block`, `border-inline`, `contain-intrinsic-size`, `scroll-margin-inline`, `padding-inline`, `text-emphasis`, `place-self`, `flex-flow`, `scroll-snap-margin`, `inset-inline`, `grid-area`, `grid-row`, `line-clamp`, `scroll-timeline`, `list-style`, `border-top`, `border-color`, `scroll-padding`, `scroll-padding-inline`, `inset-block`, `border-inline-start`, `mask-border`, `overscroll-behavior`, `margin-block`, `scroll-margin`, `border-bottom`
+- typings.csstype.mod.StandardLonghandPropertiesHyphen because var conflicts: appearance, bottom, clear, color, contain, content, cursor, direction, display, filter, float, height, hyphens, isolation, left, opacity, order, orphans, page, perspective, position, quotes, resize, right, rotate, scale, top, transform, translate, visibility, widows, width, zoom. Inlined `color-adjust`, `image-rendering`, `border-bottom-width`, `math-depth`, `line-height-step`, `font-variant-numeric`, `justify-self`, `scrollbar-color`, `will-change`, `offset-distance`, `column-span`, `list-style-image`, `border-inline-color`, `transform-origin`, `border-block-end-style`, `scroll-padding-bottom`, `tab-size`, `caret-shape`, `border-bottom-left-radius`, `block-size`, `border-top-style`, `hyphenate-character`, `math-shift`, `break-inside`, `inset-inline-start`, `grid-auto-flow`, `background-image`, `background-size`, `column-count`, `border-image-repeat`, `box-shadow`, `border-top-color`, `text-emphasis-color`, `scroll-margin-left`, `offset-anchor`, `transition-property`, `scroll-snap-margin-bottom`, `border-bottom-style`, `margin-right`, `scroll-margin-top`, `mask-border-mode`, `scroll-padding-top`, `font-smooth`, `font-variant-emoji`, `border-start-start-radius`, `padding-right`, `ruby-align`, `border-inline-end-width`, `motion-distance`, `font-weight`, `border-block-width`, `object-fit`, `column-fill`, `scroll-snap-align`, `motion-rotation`, `backdrop-filter`, `touch-action`, `scroll-margin-bottom`, `mask-composite`, `pointer-events`, `font-variant-caps`, `column-width`, `scrollbar-gutter`, `outline-offset`, `mix-blend-mode`, `grid-template-columns`, `padding-block-end`, `mask-position`, `margin-trim`, `font-family`, `text-decoration-style`, `background-origin`, `paint-order`, `overflow-clip-margin`, `grid-column-start`, `color-scheme`, `overflow-inline`, `margin-top`, `scroll-timeline-name`, `scroll-margin-block-start`, `overscroll-behavior-inline`, `scroll-timeline-axis`, `border-block-style`, `overscroll-behavior-y`, `empty-cells`, `white-space`, `margin-inline-end`, `animation-delay`, `counter-reset`, `font-synthesis`, `border-bottom-right-radius`, `max-width`, `mask-image`, `scroll-snap-stop`, `transform-box`, `text-decoration-thickness`, `transition-timing-function`, `overscroll-behavior-block`, `inline-size`, `margin-inline-start`, `shape-margin`, `min-height`, `font-kerning`, `block-overflow`, `text-align`, `border-start-end-radius`, `container-type`, `padding-inline-end`, `content-visibility`, `font-size`, `justify-tracks`, `counter-set`, `scroll-padding-inline-end`, `line-break`, `overflow-anchor`, `border-image-source`, `scroll-snap-margin-right`, `scroll-margin-inline-end`, `column-rule-color`, `flex-shrink`, `scroll-padding-block-start`, `mask-border-outset`, `padding-inline-start`, `text-decoration-skip-ink`, `column-rule-style`, `text-emphasis-style`, `margin-block-end`, `grid-row-end`, `max-height`, `grid-row-start`, `border-image-outset`, `border-inline-style`, `border-left-width`, `font-variant-position`, `object-position`, `border-end-start-radius`, `outline-width`, `caret-color`, `outline-style`, `mask-size`, `caption-side`, `aspect-ratio`, `animation-fill-mode`, `border-block-end-width`, `image-orientation`, `scroll-padding-left`, `row-gap`, `scrollbar-width`, `break-after`, `text-orientation`, `text-transform`, `inset-block-start`, `contain-intrinsic-block-size`, `offset-rotation`, `border-inline-end-color`, `grid-template-areas`, `scroll-padding-inline-start`, `list-style-position`, `scroll-snap-type`, `text-emphasis-position`, `text-indent`, `scroll-snap-margin-left`, `word-break`, `background-position-y`, `transition-duration`, `math-style`, `animation-timeline`, `background-attachment`, `initial-letter`, `border-inline-width`, `text-size-adjust`, `margin-block-start`, `animation-play-state`, `print-color-adjust`, `border-block-color`, `mask-type`, `border-top-right-radius`, `grid-auto-rows`, `border-block-end-color`, `border-right-color`, `overflow-x`, `border-top-width`, `border-inline-start-color`, `justify-content`, `align-items`, `text-overflow`, `flex-basis`, `accent-color`, `text-shadow`, `scroll-margin-block-end`, `image-resolution`, `mask-mode`, `flex-wrap`, `border-image-width`, `offset-path`, `column-gap`, `scroll-snap-margin-top`, `view-transition-name`, `border-left-color`, `border-top-left-radius`, `background-clip`, `scroll-margin-right`, `font-variant-alternates`, `max-lines`, `grid-column-end`, `backface-visibility`, `line-height`, `margin-bottom`, `word-wrap`, `text-decoration-skip`, `table-layout`, `mask-border-slice`, `input-security`, `letter-spacing`, `contain-intrinsic-inline-size`, `border-bottom-color`, `mask-border-repeat`, `hanging-punctuation`, `animation-name`, `user-select`, `motion-path`, `page-break-after`, `justify-items`, `flex-direction`, `forced-color-adjust`, `text-decoration-line`, `mask-border-width`, `padding-block-start`, `animation-duration`, `counter-increment`, `mask-origin`, `border-inline-end-style`, `inset-inline-end`, `align-tracks`, `border-end-end-radius`, `border-right-width`, `font-style`, `text-underline-position`, `border-collapse`, `min-width`, `font-variant-east-asian`, `text-rendering`, `clip-path`, `overflow-clip-box`, `z-index`, `animation-direction`, `align-self`, `padding-left`, `max-block-size`, `margin-left`, `background-color`, `mask-clip`, `text-justify`, `page-break-before`, `padding-top`, `text-underline-offset`, `box-decoration-break`, `mask-border-source`, `min-block-size`, `perspective-origin`, `min-inline-size`, `grid-template-rows`, `transition-delay`, `unicode-bidi`, `grid-auto-columns`, `scroll-behavior`, `transform-style`, `text-combine-upright`, `font-variant-ligatures`, `font-size-adjust`, `font-variant`, `animation-timing-function`, `background-blend-mode`, `border-block-start-width`, `page-break-inside`, `border-inline-start-style`, `padding-bottom`, `font-feature-settings`, `ruby-position`, `contain-intrinsic-height`, `column-rule-width`, `hyphenate-limit-chars`, `border-spacing`, `flex-grow`, `shape-outside`, `border-left-style`, `font-stretch`, `font-language-override`, `outline-color`, `border-image-slice`, `font-palette`, `offset-rotate`, `contain-intrinsic-width`, `background-position-x`, `offset-position`, `scroll-padding-block-end`, `background-repeat`, `text-decoration-color`, `ruby-merge`, `mask-repeat`, `text-align-last`, `font-optical-sizing`, `border-inline-start-width`, `vertical-align`, `writing-mode`, `font-variation-settings`, `animation-iteration-count`, `overscroll-behavior-x`, `container-name`, `overflow-block`, `border-block-start-style`, `scroll-margin-inline-start`, `shape-image-threshold`, `scroll-padding-right`, `animation-composition`, `border-block-start-color`, `break-before`, `box-sizing`, `inset-block-end`, `overflow-y`, `border-right-style`, `word-spacing`, `overflow-wrap`, `list-style-type`, `max-inline-size`, `align-content`
+- typings.csstype.mod.ObsoletePropertiesHyphen because var conflicts: azimuth, clip. Inlined `-moz-outline-radius-bottomleft`, `offset-inline`, `offset-block`, `ime-mode`, `-o-transform`, `-webkit-scroll-snap-points-x`, `-webkit-scroll-snap-points-y`, `-webkit-box-flex-group`, `-moz-box-orient`, `-moz-force-broken-image-icon`, `-o-tab-size`, `scroll-snap-type-x`, `-webkit-box-ordinal-group`, `scroll-snap-destination`, `-o-transition-timing-function`, `-o-animation-play-state`, `-o-transform-origin`, `-moz-box-ordinal-group`, `-o-animation`, `-o-animation-timing-function`, `-moz-border-radius-bottomright`, `scroll-snap-coordinate`, `-moz-text-align-last`, `-moz-border-radius-topleft`, `-moz-outline-width`, `-moz-opacity`, `-webkit-box-pack`, `offset-block-start`, `-webkit-box-lines`, `-moz-background-size`, `-o-text-overflow`, `-o-animation-delay`, `-khtml-box-flex-group`, `-moz-outline-style`, `-moz-box-direction`, `-o-background-size`, `offset-inline-start`, `scroll-snap-type-y`, `box-orient`, `-moz-box-shadow`, `box-ordinal-group`, `-moz-outline-radius-topleft`, `-o-animation-direction`, `-o-object-position`, `-webkit-box-align`, `-moz-box-align`, `box-lines`, `-moz-outline-radius-topright`, `-moz-text-decoration-line`, `-moz-border-radius-bottomleft`, `box-flex-group`, `-moz-outline-color`, `-khtml-box-orient`, `-moz-float-edge`, `-moz-outline`, `-moz-background-inline-policy`, `-o-animation-duration`, `-khtml-box-pack`, `box-align`, `-webkit-box-direction`, `-khtml-user-select`, `-o-object-fit`, `-moz-box-pack`, `-webkit-box-flex`, `-khtml-line-break`, `-khtml-box-align`, `-moz-outline-radius`, `-o-animation-name`, `-o-transition-property`, `-khtml-box-lines`, `-ms-ime-mode`, `-moz-background-origin`, `-moz-text-decoration-style`, `-webkit-box-orient`, `scroll-snap-points-y`, `offset-block-end`, `-moz-box-flex`, `box-direction`, `offset-inline-end`, `grid-column-gap`, `-khtml-opacity`, `-moz-text-decoration-color`, `grid-gap`, `grid-row-gap`, `-o-transition-delay`, `-o-animation-fill-mode`, `-moz-border-radius`, `box-pack`, `-moz-user-input`, `-khtml-box-direction`, `-moz-outline-radius-bottomright`, `box-flex`, `-o-transition`, `-o-transition-duration`, `scroll-snap-points-x`, `-moz-border-radius-topright`, `-khtml-box-ordinal-group`, `-o-animation-iteration-count`, `-khtml-box-flex`, `-moz-background-clip`, `-o-border-image`
+- typings.csstype.mod.StandardPropertiesHyphen because var conflicts: all, animation, appearance, background, border, bottom, caret, clear, color, columns, contain, container, content, cursor, direction, display, filter, flex, float, font, gap, grid, height, hyphens, inset, isolation, left, margin, mask, motion, offset, opacity, order, orphans, outline, overflow, padding, page, perspective, position, quotes, resize, right, rotate, scale, top, transform, transition, translate, visibility, widows, width, zoom. Inlined 
+- typings.csstype.mod.PropertiesHyphen because var conflicts: all, animation, appearance, azimuth, background, border, bottom, caret, clear, clip, color, columns, contain, container, content, cursor, direction, display, fill, filter, flex, float, font, gap, grid, height, hyphens, inset, isolation, left, margin, marker, mask, motion, offset, opacity, order, orphans, outline, overflow, padding, page, perspective, position, quotes, resize, right, rotate, scale, stroke, top, transform, transition, translate, visibility, widows, width, zoom. Inlined `stroke-width`, `dominant-baseline`, `fill-opacity`, `baseline-shift`, `flood-color`, `marker-mid`, `stroke-opacity`, `color-rendering`, `stroke-dashoffset`, `stroke-miterlimit`, `stroke-linecap`, `fill-rule`, `lighting-color`, `stop-color`, `vector-effect`, `marker-end`, `clip-rule`, `shape-rendering`, `flood-opacity`, `alignment-baseline`, `stroke-linejoin`, `color-interpolation`, `glyph-orientation-vertical`, `text-anchor`, `stroke-dasharray`, `stop-opacity`, `marker-start` */ trait CSSProperties
   extends StObject
      with Properties[String | Double, String]
      with /**
@@ -595,17 +611,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var `-moz-background-size`: js.UndefOr[BackgroundSize[String | Double]] = js.undefined
   
   /**
-    * The **`-moz-binding`** CSS property is used by Mozilla-based applications to attach an XBL binding to a DOM element.
-    *
-    * **Syntax**: `<url> | none`
-    *
-    * **Initial value**: `none`
-    *
-    * @deprecated
-    */
-  var `-moz-binding`: js.UndefOr[MozBinding] = js.undefined
-  
-  /**
     * The **`border-radius`** CSS property rounds the corners of an element's outer border edge. You can set a single radius to make circular corners, or two radii to make elliptical corners.
     *
     * **Syntax**: `<length-percentage>{1,4} [ / <length-percentage>{1,4} ]?`
@@ -769,7 +774,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var `-moz-opacity`: js.UndefOr[Opacity] = js.undefined
   
   /**
-    * The **`outline`** CSS shorthand property set all the outline properties in a single declaration.
+    * The **`outline`** CSS shorthand property sets most of the outline properties in a single declaration.
     *
     * **Syntax**: `[ <'outline-color'> || <'outline-style'> || <'outline-width'> ]`
     *
@@ -994,7 +999,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var `-o-animation-iteration-count`: js.UndefOr[AnimationIterationCount] = js.undefined
   
   /**
-    * The **`animation-name`** CSS property specifies the names of one or more `@keyframes` at-rules describing the animation or animations to apply to the element.
+    * The **`animation-name`** CSS property specifies the names of one or more `@keyframes` at-rules that describe the animation to apply to an element. Multiple `@keyframe` at-rules are specified as a comma-separated list of names. If the specified name does not match any `@keyframe` at-rule, no properties are animated.
     *
     * **Syntax**: `[ none | <keyframes-name> ]#`
     *
@@ -1362,9 +1367,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     *
     * **Initial value**: `replace`
     *
-    * | Chrome | Firefox | Safari | Edge | IE  |
-    * | :----: | :-----: | :----: | :--: | :-: |
-    * |   No   |   n/a   |   No   | n/a  | No  |
+    * | Chrome  | Firefox | Safari | Edge | IE  |
+    * | :-----: | :-----: | :----: | :--: | :-: |
+    * | **112** |   n/a   | **16** | n/a  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/animation-composition
     */
@@ -1451,7 +1456,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var `animation-iteration-count`: js.UndefOr[AnimationIterationCount] = js.undefined
   
   /**
-    * The **`animation-name`** CSS property specifies the names of one or more `@keyframes` at-rules describing the animation or animations to apply to the element.
+    * The **`animation-name`** CSS property specifies the names of one or more `@keyframes` at-rules that describe the animation to apply to an element. Multiple `@keyframe` at-rules are specified as a comma-separated list of names. If the specified name does not match any `@keyframe` at-rule, no properties are animated.
     *
     * **Syntax**: `[ none | <keyframes-name> ]#`
     *
@@ -1483,7 +1488,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var `animation-play-state`: js.UndefOr[AnimationPlayState] = js.undefined
   
   /**
-    * The **`animation-timeline`** CSS property specifies the names of one or more `@scroll-timeline` at-rules describing the scroll animations to apply to the element.
+    * The **`animation-timeline`** CSS property specifies the timeline that is used to control the progress of an animation.
     *
     * **Syntax**: `<single-animation-timeline>#`
     *
@@ -2102,7 +2107,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var `border-image-outset`: js.UndefOr[BorderImageOutset[String | Double]] = js.undefined
   
   /**
-    * The **`border-image-repeat`** CSS property defines how the edge regions of a source image are adjusted to fit the dimensions of an element's border image.
+    * The **`border-image-repeat`** CSS property defines how the edge regions and middle region of a source image are adjusted to fit the dimensions of an element's border image. The middle region can be displayed by using the keyword "fill" in the border-image-slice property.
     *
     * **Syntax**: `[ stretch | repeat | round | space ]{1,2}`
     *
@@ -2471,7 +2476,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var `border-right-width`: js.UndefOr[BorderRightWidth[String | Double]] = js.undefined
   
   /**
-    * The **`border-spacing`** CSS property sets the distance between the borders of adjacent `<table>` cells. This property applies only when `border-collapse` is `separate`.
+    * The **`border-spacing`** CSS property sets the distance between the borders of adjacent cells in a `<table>`. This property applies only when `border-collapse` is `separate`.
     *
     * **Syntax**: `<length> <length>?`
     *
@@ -2842,6 +2847,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var `caret-color`: js.UndefOr[CaretColor] = js.undefined
   
   /**
+    * **Syntax**: `auto | bar | block | underscore`
+    *
+    * **Initial value**: `auto`
+    */
+  var `caret-shape`: js.UndefOr[CaretShape] = js.undefined
+  
+  /**
     * The **`clip-path`** CSS property creates a clipping region that sets what part of an element should be shown. Parts that are inside the region are shown, while those outside are hidden.
     *
     * **Syntax**: `<clip-source> | [ <basic-shape> || <geometry-box> ] | none`
@@ -3036,7 +3048,110 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var `column-width`: js.UndefOr[ColumnWidth[String | Double]] = js.undefined
   
   /**
-    * The **`content-visibility`** CSS property controls whether or not an element renders its contents at all, along with forcing a strong set of containments, allowing user agents to potentially omit large swathes of layout and rendering work until it becomes needed. Basically it enables the user agent to skip an element's rendering work (including layout and painting) until it is needed — which makes the initial page load much faster.
+    * The **`contain-intrinsic-block-size`** CSS logical property defines the block size of an element that a browser can use for layout when the element is subject to size containment.
+    *
+    * **Syntax**: `none | <length> | auto <length>`
+    *
+    * **Initial value**: `none`
+    *
+    * | Chrome | Firefox | Safari | Edge | IE  |
+    * | :----: | :-----: | :----: | :--: | :-: |
+    * | **95** | **107** |   No   | n/a  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/contain-intrinsic-contain-intrinsic-block-size
+    */
+  var `contain-intrinsic-block-size`: js.UndefOr[ContainIntrinsicBlockSize[String | Double]] = js.undefined
+  
+  /**
+    * The **`contain-intrinsic-length`** CSS property sets the height of an element that a browser can use for layout when the element is subject to size containment.
+    *
+    * **Syntax**: `none | <length> | auto <length>`
+    *
+    * **Initial value**: `none`
+    *
+    * | Chrome | Firefox | Safari | Edge | IE  |
+    * | :----: | :-----: | :----: | :--: | :-: |
+    * | **83** | **107** |   No   | n/a  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/contain-intrinsic-height
+    */
+  var `contain-intrinsic-height`: js.UndefOr[ContainIntrinsicHeight[String | Double]] = js.undefined
+  
+  /**
+    * The **`contain-intrinsic-inline-size`** CSS logical property defines the inline-size of an element that a browser can use for layout when the element is subject to size containment.
+    *
+    * **Syntax**: `none | <length> | auto <length>`
+    *
+    * **Initial value**: `none`
+    *
+    * | Chrome | Firefox | Safari | Edge | IE  |
+    * | :----: | :-----: | :----: | :--: | :-: |
+    * | **95** | **107** |   No   | n/a  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/contain-intrinsic-contain-intrinsic-inline-size
+    */
+  var `contain-intrinsic-inline-size`: js.UndefOr[ContainIntrinsicInlineSize[String | Double]] = js.undefined
+  
+  /**
+    * The **`contain-intrinsic-size`** CSS shorthand property sets the size of an element that a browser will use for layout when the element is subject to size containment.
+    *
+    * **Syntax**: `[ none | <length> | auto <length> ]{1,2}`
+    *
+    * | Chrome | Firefox | Safari | Edge | IE  |
+    * | :----: | :-----: | :----: | :--: | :-: |
+    * | **83** | **107** |   No   | n/a  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/contain-intrinsic-size
+    */
+  var `contain-intrinsic-size`: js.UndefOr[ContainIntrinsicSize[String | Double]] = js.undefined
+  
+  /**
+    * The **`contain-intrinsic-width`** CSS property sets the width of an element that a browser will use for layout when the element is subject to size containment.
+    *
+    * **Syntax**: `none | <length> | auto <length>`
+    *
+    * **Initial value**: `none`
+    *
+    * | Chrome | Firefox | Safari | Edge | IE  |
+    * | :----: | :-----: | :----: | :--: | :-: |
+    * | **83** | **107** |   No   | n/a  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/contain-intrinsic-width
+    */
+  var `contain-intrinsic-width`: js.UndefOr[ContainIntrinsicWidth[String | Double]] = js.undefined
+  
+  /**
+    * The **container-name** CSS property specifies a list of query container names used by the @container at-rule in a container query. A container query will apply styles to elements based on the size of the nearest ancestor with a containment context. When a containment context is given a name, it can be specifically targeted using the `@container` at-rule instead of the nearest ancestor with containment.
+    *
+    * **Syntax**: `none | <custom-ident>+`
+    *
+    * **Initial value**: `none`
+    *
+    * | Chrome  | Firefox | Safari | Edge | IE  |
+    * | :-----: | :-----: | :----: | :--: | :-: |
+    * | **105** | **110** | **16** | n/a  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/container-name
+    */
+  var `container-name`: js.UndefOr[ContainerName] = js.undefined
+  
+  /**
+    * The **container-type** CSS property is used to define the type of containment used in a container query.
+    *
+    * **Syntax**: `normal | size | inline-size`
+    *
+    * **Initial value**: `normal`
+    *
+    * | Chrome  | Firefox | Safari | Edge | IE  |
+    * | :-----: | :-----: | :----: | :--: | :-: |
+    * | **105** | **110** | **16** | n/a  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/container-type
+    */
+  var `container-type`: js.UndefOr[ContainerType] = js.undefined
+  
+  /**
+    * The **`content-visibility`** CSS property controls whether or not an element renders its contents at all, along with forcing a strong set of containments, allowing user agents to potentially omit large swathes of layout and rendering work until it becomes needed. It enables the user agent to skip an element's rendering work (including layout and painting) until it is needed — which makes the initial page load much faster.
     *
     * **Syntax**: `visible | auto | hidden`
     *
@@ -3044,7 +3159,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * | **85** |   No    |   No   | n/a  | No  |
+    * | **85** |   n/a   |   No   | n/a  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/content-visibility
     */
@@ -3293,6 +3408,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var `font-optical-sizing`: js.UndefOr[FontOpticalSizing] = js.undefined
   
   /**
+    * **Syntax**: `normal | light | dark | <palette-identifier>`
+    *
+    * **Initial value**: `normal`
+    *
+    * | Chrome  | Firefox |  Safari  | Edge | IE  |
+    * | :-----: | :-----: | :------: | :--: | :-: |
+    * | **101** | **107** | **15.4** | n/a  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/font-palette
+    */
+  var `font-palette`: js.UndefOr[FontPalette] = js.undefined
+  
+  /**
     * The **`font-size`** CSS property sets the size of the font. Changing the font size also updates the sizes of the font size-relative `<length>` units, such as `em`, `ex`, and so forth.
     *
     * **Syntax**: `<absolute-size> | <relative-size> | <length-percentage>`
@@ -3314,9 +3442,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     *
     * **Initial value**: `none`
     *
-    * | Chrome | Firefox | Safari | Edge | IE  |
-    * | :----: | :-----: | :----: | :--: | :-: |
-    * |   No   |  **3**  |   No   | n/a  | No  |
+    * | Chrome | Firefox |  Safari  | Edge | IE  |
+    * | :----: | :-----: | :------: | :--: | :-: |
+    * |   No   |  **3**  | **16.4** | n/a  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/font-size-adjust
     */
@@ -3441,6 +3569,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * @see https://developer.mozilla.org/docs/Web/CSS/font-variant-east-asian
     */
   var `font-variant-east-asian`: js.UndefOr[FontVariantEastAsian] = js.undefined
+  
+  /**
+    * **Syntax**: `normal | text | emoji | unicode`
+    *
+    * **Initial value**: `normal`
+    *
+    * | Chrome | Firefox | Safari | Edge | IE  |
+    * | :----: | :-----: | :----: | :--: | :-: |
+    * |   No   | **108** |   No   | n/a  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/font-variant-emoji
+    */
+  var `font-variant-emoji`: js.UndefOr[FontVariantEmoji] = js.undefined
   
   /**
     * The **`font-variant-ligatures`** CSS property controls which ligatures and contextual forms are used in textual content of the elements it applies to. This leads to more harmonized forms in the resulting text.
@@ -3658,7 +3799,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var `grid-gap`: js.UndefOr[GridGap[String | Double]] = js.undefined
   
   /**
-    * The **`grid-row`** CSS shorthand property specifies a grid item's size and location within the grid row by contributing a line, a span, or nothing (automatic) to its grid placement, thereby specifying the inline-start and inline-end edge of its grid area.
+    * The **`grid-row`** CSS shorthand property specifies a grid item's size and location within a grid row by contributing a line, a span, or nothing (automatic) to its grid placement, thereby specifying the inline-start and inline-end edge of its grid area.
     *
     * **Syntax**: `<grid-line> [ / <grid-line> ]?`
     *
@@ -3686,7 +3827,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var `grid-row-end`: js.UndefOr[GridRowEnd] = js.undefined
   
   /**
-    * The **`row-gap`** CSS property sets the size of the gap (gutter) between an element's grid rows.
+    * The **`row-gap`** CSS property sets the size of the gap (gutter) between an element's rows.
     *
     * **Syntax**: `<length-percentage>`
     *
@@ -3712,7 +3853,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var `grid-row-start`: js.UndefOr[GridRowStart] = js.undefined
   
   /**
-    * The **`grid-template`** CSS property is a shorthand property for defining grid columns, rows, and areas.
+    * The **`grid-template`** CSS property is a shorthand property for defining grid columns, grid rows, and grid areas.
     *
     * **Syntax**: `none | [ <'grid-template-rows'> / <'grid-template-columns'> ] | [ <line-names>? <string> <track-size>? <line-names>? ]+ [ / <explicit-track-list> ]?`
     *
@@ -3791,13 +3932,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     *
     * **Initial value**: `auto`
     *
-    * |   Chrome    | Firefox |    Safari     | Edge | IE  |
-    * | :---------: | :-----: | :-----------: | :--: | :-: |
-    * | **6** _-x-_ | **98**  | **5.1** _-x-_ | n/a  | No  |
+    * | Chrome  | Firefox |    Safari     | Edge | IE  |
+    * | :-----: | :-----: | :-----------: | :--: | :-: |
+    * | **106** | **98**  | **5.1** _-x-_ | n/a  | No  |
+    * | 6 _-x-_ |         |               |      |     |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/hyphenate-character
     */
   var `hyphenate-character`: js.UndefOr[HyphenateCharacter] = js.undefined
+  
+  /**
+    * The **`hyphenate-limit-chars`** CSS property specifies the minimum word length to allow hyphenation of words as well as the the minimum number of characters before and after the hyphen.
+    *
+    * **Syntax**: `[ auto | <integer> ]{1,3}`
+    *
+    * **Initial value**: `auto`
+    *
+    * | Chrome  | Firefox | Safari | Edge | IE  |
+    * | :-----: | :-----: | :----: | :--: | :-: |
+    * | **109** |   No    |   No   | n/a  | No  |
+    */
+  var `hyphenate-limit-chars`: js.UndefOr[HyphenateLimitChars] = js.undefined
   
   /**
     * The **`image-orientation`** CSS property specifies a layout-independent correction to the orientation of an image.
@@ -3854,9 +4009,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     *
     * **Initial value**: `normal`
     *
-    * | Chrome | Firefox |   Safari    | Edge | IE  |
-    * | :----: | :-----: | :---------: | :--: | :-: |
-    * |   No   |   No    | **9** _-x-_ | n/a  | No  |
+    * | Chrome  | Firefox |   Safari    | Edge | IE  |
+    * | :-----: | :-----: | :---------: | :--: | :-: |
+    * | **110** |   No    | **9** _-x-_ | n/a  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/initial-letter
     */
@@ -3888,8 +4043,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * The **`inset-block`** CSS property defines the logical block start and end offsets of an element, which maps to physical offsets depending on the element's writing mode, directionality, and text orientation. It corresponds to the `top` and `bottom`, or `right` and `left` properties depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
     *
     * **Syntax**: `<'top'>{1,2}`
-    *
-    * **Initial value**: `auto`
     *
     * | Chrome | Firefox |  Safari  | Edge | IE  |
     * | :----: | :-----: | :------: | :--: | :-: |
@@ -3933,8 +4086,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * The **`inset-inline`** CSS property defines the logical start and end offsets of an element in the inline direction, which maps to physical offsets depending on the element's writing mode, directionality, and text orientation. It corresponds to the `top` and `bottom`, or `right` and `left` properties depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
     *
     * **Syntax**: `<'top'>{1,2}`
-    *
-    * **Initial value**: `auto`
     *
     * | Chrome | Firefox |  Safari  | Edge | IE  |
     * | :----: | :-----: | :------: | :--: | :-: |
@@ -4168,8 +4319,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     *
     * **Syntax**: `<'margin-left'>{1,2}`
     *
-    * **Initial value**: `0`
-    *
     * | Chrome | Firefox |  Safari  | Edge | IE  |
     * | :----: | :-----: | :------: | :--: | :-: |
     * | **87** | **66**  | **14.1** | n/a  | No  |
@@ -4227,8 +4376,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * The **`margin-inline`** CSS shorthand property is a shorthand property that defines both the logical inline start and end margins of an element, which maps to physical margins depending on the element's writing mode, directionality, and text orientation.
     *
     * **Syntax**: `<'margin-left'>{1,2}`
-    *
-    * **Initial value**: `0`
     *
     * | Chrome | Firefox |  Safari  | Edge | IE  |
     * | :----: | :-----: | :------: | :--: | :-: |
@@ -4314,6 +4461,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * @see https://developer.mozilla.org/docs/Web/CSS/margin-top
     */
   var `margin-top`: js.UndefOr[MarginTop[String | Double]] = js.undefined
+  
+  /**
+    * The `margin-trim` property allows the container to trim the margins of its children where they adjoin the container's edges.
+    *
+    * **Syntax**: `none | in-flow | all`
+    *
+    * **Initial value**: `none`
+    *
+    * | Chrome | Firefox |  Safari  | Edge | IE  |
+    * | :----: | :-----: | :------: | :--: | :-: |
+    * |   No   |   No    | **16.4** | n/a  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/margin-trim
+    */
+  var `margin-trim`: js.UndefOr[MarginTrim] = js.undefined
   
   var `marker-end`: js.UndefOr[MarkerEnd] = js.undefined
   
@@ -4517,7 +4679,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     *
     * **Syntax**: `<repeat-style>#`
     *
-    * **Initial value**: `no-repeat`
+    * **Initial value**: `repeat`
     *
     * |   Chrome    | Firefox |  Safari   | Edge  | IE  |
     * | :---------: | :-----: | :-------: | :---: | :-: |
@@ -4566,9 +4728,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     *
     * **Initial value**: `0`
     *
-    * | Chrome | Firefox | Safari | Edge | IE  |
-    * | :----: | :-----: | :----: | :--: | :-: |
-    * |  n/a   |   n/a   |   No   | n/a  | No  |
+    * | Chrome  | Firefox | Safari | Edge | IE  |
+    * | :-----: | :-----: | :----: | :--: | :-: |
+    * | **109** |   n/a   |   No   | n/a  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/math-depth
     */
@@ -4581,9 +4743,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     *
     * **Initial value**: `normal`
     *
-    * | Chrome | Firefox | Safari | Edge | IE  |
-    * | :----: | :-----: | :----: | :--: | :-: |
-    * |  n/a   |   No    |   No   | n/a  | No  |
+    * | Chrome  | Firefox | Safari | Edge | IE  |
+    * | :-----: | :-----: | :----: | :--: | :-: |
+    * | **109** |   No    |   No   | n/a  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/math-shift
     */
@@ -4596,9 +4758,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     *
     * **Initial value**: `normal`
     *
-    * | Chrome | Firefox |  Safari  | Edge | IE  |
-    * | :----: | :-----: | :------: | :--: | :-: |
-    * |  n/a   |   n/a   | **14.1** | n/a  | No  |
+    * | Chrome  | Firefox |  Safari  | Edge | IE  |
+    * | :-----: | :-----: | :------: | :--: | :-: |
+    * | **109** |   n/a   | **14.1** | n/a  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/math-style
     */
@@ -4754,10 +4916,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     *
     * **Initial value**: `0`
     *
-    * |         Chrome         | Firefox | Safari | Edge | IE  |
-    * | :--------------------: | :-----: | :----: | :--: | :-: |
-    * |         **55**         | **72**  |   No   | n/a  | No  |
-    * | 46 _(motion-distance)_ |         |        |      |     |
+    * |         Chrome         | Firefox |   Safari    | Edge | IE  |
+    * | :--------------------: | :-----: | :---------: | :--: | :-: |
+    * |         **55**         | **72**  | **preview** | n/a  | No  |
+    * | 46 _(motion-distance)_ |         |             |      |     |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/offset-distance
     */
@@ -4786,10 +4948,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     *
     * **Initial value**: `auto`
     *
-    * |         Chrome         | Firefox | Safari | Edge | IE  |
-    * | :--------------------: | :-----: | :----: | :--: | :-: |
-    * |         **56**         | **72**  |   No   | n/a  | No  |
-    * | 46 _(motion-rotation)_ |         |        |      |     |
+    * |         Chrome         | Firefox |   Safari    | Edge | IE  |
+    * | :--------------------: | :-----: | :---------: | :--: | :-: |
+    * |         **56**         | **72**  | **preview** | n/a  | No  |
+    * | 46 _(motion-rotation)_ |         |             |      |     |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/offset-rotate
     */
@@ -4830,9 +4992,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     *
     * **Initial value**: `auto`
     *
-    * | Chrome | Firefox | Safari | Edge | IE  |
-    * | :----: | :-----: | :----: | :--: | :-: |
-    * |   No   | **72**  |   No   | n/a  | No  |
+    * | Chrome | Firefox |   Safari    | Edge | IE  |
+    * | :----: | :-----: | :---------: | :--: | :-: |
+    * |   No   | **72**  | **preview** | n/a  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/offset-anchor
     */
@@ -4842,8 +5004,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * The **`inset-block`** CSS property defines the logical block start and end offsets of an element, which maps to physical offsets depending on the element's writing mode, directionality, and text orientation. It corresponds to the `top` and `bottom`, or `right` and `left` properties depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
     *
     * **Syntax**: `<'top'>{1,2}`
-    *
-    * **Initial value**: `auto`
     *
     * @deprecated
     */
@@ -4878,10 +5038,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     *
     * **Initial value**: `0`
     *
-    * |         Chrome         | Firefox | Safari | Edge | IE  |
-    * | :--------------------: | :-----: | :----: | :--: | :-: |
-    * |         **55**         | **72**  |   No   | n/a  | No  |
-    * | 46 _(motion-distance)_ |         |        |      |     |
+    * |         Chrome         | Firefox |   Safari    | Edge | IE  |
+    * | :--------------------: | :-----: | :---------: | :--: | :-: |
+    * |         **55**         | **72**  | **preview** | n/a  | No  |
+    * | 46 _(motion-distance)_ |         |             |      |     |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/offset-distance
     */
@@ -4891,8 +5051,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * The **`inset-inline`** CSS property defines the logical start and end offsets of an element in the inline direction, which maps to physical offsets depending on the element's writing mode, directionality, and text orientation. It corresponds to the `top` and `bottom`, or `right` and `left` properties depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
     *
     * **Syntax**: `<'top'>{1,2}`
-    *
-    * **Initial value**: `auto`
     *
     * @deprecated
     */
@@ -4937,16 +5095,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var `offset-path`: js.UndefOr[OffsetPath] = js.undefined
   
   /**
+    * **Syntax**: `auto | <position>`
+    *
+    * **Initial value**: `auto`
+    *
+    * | Chrome | Firefox |   Safari    | Edge | IE  |
+    * | :----: | :-----: | :---------: | :--: | :-: |
+    * |   No   |   No    | **preview** | n/a  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/offset-position
+    */
+  var `offset-position`: js.UndefOr[OffsetPosition[String | Double]] = js.undefined
+  
+  /**
     * The **`offset-rotate`** CSS property defines the orientation/direction of the element as it is positioned along the `offset-path`.
     *
     * **Syntax**: `[ auto | reverse ] || <angle>`
     *
     * **Initial value**: `auto`
     *
-    * |         Chrome         | Firefox | Safari | Edge | IE  |
-    * | :--------------------: | :-----: | :----: | :--: | :-: |
-    * |         **56**         | **72**  |   No   | n/a  | No  |
-    * | 46 _(motion-rotation)_ |         |        |      |     |
+    * |         Chrome         | Firefox |   Safari    | Edge | IE  |
+    * | :--------------------: | :-----: | :---------: | :--: | :-: |
+    * |         **56**         | **72**  | **preview** | n/a  | No  |
+    * | 46 _(motion-rotation)_ |         |             |      |     |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/offset-rotate
     */
@@ -4959,10 +5130,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     *
     * **Initial value**: `auto`
     *
-    * |         Chrome         | Firefox | Safari | Edge | IE  |
-    * | :--------------------: | :-----: | :----: | :--: | :-: |
-    * |         **56**         | **72**  |   No   | n/a  | No  |
-    * | 46 _(motion-rotation)_ |         |        |      |     |
+    * |         Chrome         | Firefox |   Safari    | Edge | IE  |
+    * | :--------------------: | :-----: | :---------: | :--: | :-: |
+    * |         **56**         | **72**  | **preview** | n/a  | No  |
+    * | 46 _(motion-rotation)_ |         |             |      |     |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/offset-rotate
     */
@@ -5076,7 +5247,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * | **90** |   No    |   No   | n/a  | No  |
+    * | **90** | **102** |   No   | n/a  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/overflow-clip-margin
     */
@@ -5221,8 +5392,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     *
     * **Syntax**: `<'padding-left'>{1,2}`
     *
-    * **Initial value**: `0`
-    *
     * | Chrome | Firefox |  Safari  | Edge | IE  |
     * | :----: | :-----: | :------: | :--: | :-: |
     * | **87** | **66**  | **14.1** | n/a  | No  |
@@ -5280,8 +5449,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * The **`padding-inline`** CSS shorthand property defines the logical inline start and end padding of an element, which maps to physical padding properties depending on the element's writing mode, directionality, and text orientation.
     *
     * **Syntax**: `<'padding-left'>{1,2}`
-    *
-    * **Initial value**: `0`
     *
     * | Chrome | Firefox |  Safari  | Edge | IE  |
     * | :----: | :-----: | :------: | :--: | :-: |
@@ -5449,8 +5616,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     *
     * **Syntax**: `<'align-content'> <'justify-content'>?`
     *
-    * **Initial value**: `normal`
-    *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
     * | **59** | **45**  | **9**  | n/a  | No  |
@@ -5517,7 +5682,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var `print-color-adjust`: js.UndefOr[PrintColorAdjust] = js.undefined
   
   /**
-    * The **`row-gap`** CSS property sets the size of the gap (gutter) between an element's grid rows.
+    * The **`row-gap`** CSS property sets the size of the gap (gutter) between an element's rows.
     *
     * **Syntax**: `normal | <length-percentage>`
     *
@@ -5589,8 +5754,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     *
     * **Syntax**: `<length>{1,4}`
     *
-    * **Initial value**: `0`
-    *
     * | Chrome | Firefox |          Safari           | Edge | IE  |
     * | :----: | :-----: | :-----------------------: | :--: | :-: |
     * | **69** | **90**  |         **14.1**          | n/a  | No  |
@@ -5604,8 +5767,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * The `scroll-margin-block` shorthand property sets the scroll margins of an element in the block dimension.
     *
     * **Syntax**: `<length>{1,2}`
-    *
-    * **Initial value**: `0`
     *
     * | Chrome | Firefox |  Safari  | Edge | IE  |
     * | :----: | :-----: | :------: | :--: | :-: |
@@ -5665,8 +5826,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * The `scroll-margin-inline` shorthand property sets the scroll margins of an element in the inline dimension.
     *
     * **Syntax**: `<length>{1,2}`
-    *
-    * **Initial value**: `0`
     *
     * | Chrome | Firefox |  Safari  | Edge | IE  |
     * | :----: | :-----: | :------: | :--: | :-: |
@@ -5759,8 +5918,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     *
     * **Syntax**: `[ auto | <length-percentage> ]{1,4}`
     *
-    * **Initial value**: `auto`
-    *
     * | Chrome | Firefox |  Safari  | Edge | IE  |
     * | :----: | :-----: | :------: | :--: | :-: |
     * | **69** | **68**  | **14.1** | n/a  | No  |
@@ -5773,8 +5930,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * The `scroll-padding-block` shorthand property sets the scroll padding of an element in the block dimension.
     *
     * **Syntax**: `[ auto | <length-percentage> ]{1,2}`
-    *
-    * **Initial value**: `auto`
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
@@ -5833,8 +5988,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * The `scroll-padding-inline` shorthand property sets the scroll padding of an element in the inline dimension.
     *
     * **Syntax**: `[ auto | <length-percentage> ]{1,2}`
-    *
-    * **Initial value**: `auto`
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
@@ -5961,8 +6114,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     *
     * **Syntax**: `<length>{1,4}`
     *
-    * **Initial value**: `0`
-    *
     * | Chrome | Firefox |          Safari           | Edge | IE  |
     * | :----: | :-----: | :-----------------------: | :--: | :-: |
     * | **69** |  68-90  |         **14.1**          | n/a  | No  |
@@ -6059,7 +6210,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var `scroll-snap-points-y`: js.UndefOr[ScrollSnapPointsY] = js.undefined
   
   /**
-    * The **`scroll-snap-stop`** CSS property defines whether the scroll container is allowed to "pass over" possible snap positions.
+    * The **`scroll-snap-stop`** CSS property defines whether or not the scroll container is allowed to "pass over" possible snap positions.
     *
     * **Syntax**: `normal | always`
     *
@@ -6110,6 +6261,49 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * @deprecated
     */
   var `scroll-snap-type-y`: js.UndefOr[ScrollSnapTypeY] = js.undefined
+  
+  /**
+    * The **`scroll-timeline`** CSS shorthand property defines a name that can be used to identify the source element of a scroll timeline, along with the scrollbar axis that should provide the timeline.
+    *
+    * **Syntax**: `[<'scroll-timeline-name'> <'scroll-timeline-axis'>?]#`
+    *
+    * | Chrome | Firefox | Safari | Edge | IE  |
+    * | :----: | :-----: | :----: | :--: | :-: |
+    * |   No   |   n/a   |   No   | n/a  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/scroll-timeline
+    */
+  var `scroll-timeline`: js.UndefOr[ScrollTimeline] = js.undefined
+  
+  /**
+    * The **`scroll-timeline-axis`** CSS property can be used to specify the scrollbar that will be used to provide the timeline for a scroll-timeline animation.
+    *
+    * **Syntax**: `[ block | inline | vertical | horizontal ]#`
+    *
+    * **Initial value**: `block`
+    *
+    * | Chrome | Firefox | Safari | Edge | IE  |
+    * | :----: | :-----: | :----: | :--: | :-: |
+    * |   No   |   n/a   |   No   | n/a  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/scroll-timeline-axis
+    */
+  var `scroll-timeline-axis`: js.UndefOr[ScrollTimelineAxis] = js.undefined
+  
+  /**
+    * The **`scroll-timeline-name`** CSS property defines a name that can be used to identify an element as the source of a scroll timeline for an animation.
+    *
+    * **Syntax**: `none | <custom-ident>#`
+    *
+    * **Initial value**: `none`
+    *
+    * | Chrome | Firefox | Safari | Edge | IE  |
+    * | :----: | :-----: | :----: | :--: | :-: |
+    * |   No   |   n/a   |   No   | n/a  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/scroll-timeline-name
+    */
+  var `scroll-timeline-name`: js.UndefOr[ScrollTimelineName] = js.undefined
   
   /**
     * The **`scrollbar-color`** CSS property sets the color of the scrollbar track and thumb.
@@ -6253,7 +6447,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var `table-layout`: js.UndefOr[TableLayout] = js.undefined
   
   /**
-    * The **`text-align`** CSS property sets the horizontal alignment of the content inside a block element or table-cell box. This means it works like `vertical-align` but in the horizontal direction.
+    * The **`text-align`** CSS property sets the horizontal alignment of the inline-level content inside a block element or table-cell box. This means it works like `vertical-align` but in the horizontal direction.
     *
     * **Syntax**: `start | end | left | right | center | justify | match-parent`
     *
@@ -6291,10 +6485,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     *
     * **Initial value**: `none`
     *
-    * |           Chrome           | Firefox |              Safari              | Edge  |                   IE                   |
-    * | :------------------------: | :-----: | :------------------------------: | :---: | :------------------------------------: |
-    * |           **48**           | **48**  | **5.1** _(-webkit-text-combine)_ | 15-79 | **11** _(-ms-text-combine-horizontal)_ |
-    * | 9 _(-webkit-text-combine)_ |         |                                  |       |                                        |
+    * |           Chrome           | Firefox |            Safari            | Edge  |                   IE                   |
+    * | :------------------------: | :-----: | :--------------------------: | :---: | :------------------------------------: |
+    * |           **48**           | **48**  |         **preview**          | 15-79 | **11** _(-ms-text-combine-horizontal)_ |
+    * | 9 _(-webkit-text-combine)_ |         | 5.1 _(-webkit-text-combine)_ |       |                                        |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/text-combine-upright
     */
@@ -6638,7 +6832,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var `touch-action`: js.UndefOr[TouchAction] = js.undefined
   
   /**
-    * The **`transform-box`** CSS property defines the layout box to which the `transform` and `transform-origin` properties relate.
+    * The **`transform-box`** CSS property defines the layout box to which the `transform`, individual transform properties `translate`,`scale`, and `rotate`, and `transform-origin` properties relate.
     *
     * **Syntax**: `content-box | border-box | fill-box | stroke-box | view-box`
     *
@@ -6795,6 +6989,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
     * @see https://developer.mozilla.org/docs/Web/CSS/vertical-align
     */
   var `vertical-align`: js.UndefOr[VerticalAlign[String | Double]] = js.undefined
+  
+  /**
+    * The **`view-transition-name`** CSS property provides the selected element with a distinct identifying name (a `<custom-ident>`) and causes it to participate in a separate view transition from the root view transition — or no view transition if the `none` value is specified.
+    *
+    * **Syntax**: `none | <custom-ident>`
+    *
+    * **Initial value**: `none`
+    *
+    * | Chrome  | Firefox | Safari | Edge | IE  |
+    * | :-----: | :-----: | :----: | :--: | :-: |
+    * | **111** |   No    |   No   | n/a  | No  |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/view-transition-name
+    */
+  var `view-transition-name`: js.UndefOr[ViewTransitionName] = js.undefined
   
   /**
     * The **`white-space`** CSS property sets how white space inside an element is handled.
@@ -6966,10 +7175,6 @@ object CSSProperties {
     inline def `set-moz-background-size`(value: BackgroundSize[String | Double]): Self = StObject.set(x, "-moz-background-size", value.asInstanceOf[js.Any])
     
     inline def `set-moz-background-sizeUndefined`: Self = StObject.set(x, "-moz-background-size", js.undefined)
-    
-    inline def `set-moz-binding`(value: MozBinding): Self = StObject.set(x, "-moz-binding", value.asInstanceOf[js.Any])
-    
-    inline def `set-moz-bindingUndefined`: Self = StObject.set(x, "-moz-binding", js.undefined)
     
     inline def `set-moz-border-radius`(value: BorderRadius[String | Double]): Self = StObject.set(x, "-moz-border-radius", value.asInstanceOf[js.Any])
     
@@ -7655,6 +7860,10 @@ object CSSProperties {
     
     inline def `setCaret-colorUndefined`: Self = StObject.set(x, "caret-color", js.undefined)
     
+    inline def `setCaret-shape`(value: CaretShape): Self = StObject.set(x, "caret-shape", value.asInstanceOf[js.Any])
+    
+    inline def `setCaret-shapeUndefined`: Self = StObject.set(x, "caret-shape", js.undefined)
+    
     inline def `setClip-path`(value: ClipPath): Self = StObject.set(x, "clip-path", value.asInstanceOf[js.Any])
     
     inline def `setClip-pathUndefined`: Self = StObject.set(x, "clip-path", js.undefined)
@@ -7714,6 +7923,34 @@ object CSSProperties {
     inline def `setColumn-width`(value: ColumnWidth[String | Double]): Self = StObject.set(x, "column-width", value.asInstanceOf[js.Any])
     
     inline def `setColumn-widthUndefined`: Self = StObject.set(x, "column-width", js.undefined)
+    
+    inline def `setContain-intrinsic-block-size`(value: ContainIntrinsicBlockSize[String | Double]): Self = StObject.set(x, "contain-intrinsic-block-size", value.asInstanceOf[js.Any])
+    
+    inline def `setContain-intrinsic-block-sizeUndefined`: Self = StObject.set(x, "contain-intrinsic-block-size", js.undefined)
+    
+    inline def `setContain-intrinsic-height`(value: ContainIntrinsicHeight[String | Double]): Self = StObject.set(x, "contain-intrinsic-height", value.asInstanceOf[js.Any])
+    
+    inline def `setContain-intrinsic-heightUndefined`: Self = StObject.set(x, "contain-intrinsic-height", js.undefined)
+    
+    inline def `setContain-intrinsic-inline-size`(value: ContainIntrinsicInlineSize[String | Double]): Self = StObject.set(x, "contain-intrinsic-inline-size", value.asInstanceOf[js.Any])
+    
+    inline def `setContain-intrinsic-inline-sizeUndefined`: Self = StObject.set(x, "contain-intrinsic-inline-size", js.undefined)
+    
+    inline def `setContain-intrinsic-size`(value: ContainIntrinsicSize[String | Double]): Self = StObject.set(x, "contain-intrinsic-size", value.asInstanceOf[js.Any])
+    
+    inline def `setContain-intrinsic-sizeUndefined`: Self = StObject.set(x, "contain-intrinsic-size", js.undefined)
+    
+    inline def `setContain-intrinsic-width`(value: ContainIntrinsicWidth[String | Double]): Self = StObject.set(x, "contain-intrinsic-width", value.asInstanceOf[js.Any])
+    
+    inline def `setContain-intrinsic-widthUndefined`: Self = StObject.set(x, "contain-intrinsic-width", js.undefined)
+    
+    inline def `setContainer-name`(value: ContainerName): Self = StObject.set(x, "container-name", value.asInstanceOf[js.Any])
+    
+    inline def `setContainer-nameUndefined`: Self = StObject.set(x, "container-name", js.undefined)
+    
+    inline def `setContainer-type`(value: ContainerType): Self = StObject.set(x, "container-type", value.asInstanceOf[js.Any])
+    
+    inline def `setContainer-typeUndefined`: Self = StObject.set(x, "container-type", js.undefined)
     
     inline def `setContent-visibility`(value: ContentVisibility): Self = StObject.set(x, "content-visibility", value.asInstanceOf[js.Any])
     
@@ -7799,6 +8036,10 @@ object CSSProperties {
     
     inline def `setFont-optical-sizingUndefined`: Self = StObject.set(x, "font-optical-sizing", js.undefined)
     
+    inline def `setFont-palette`(value: FontPalette): Self = StObject.set(x, "font-palette", value.asInstanceOf[js.Any])
+    
+    inline def `setFont-paletteUndefined`: Self = StObject.set(x, "font-palette", js.undefined)
+    
     inline def `setFont-size`(value: FontSize[String | Double]): Self = StObject.set(x, "font-size", value.asInstanceOf[js.Any])
     
     inline def `setFont-size-adjust`(value: FontSizeAdjust): Self = StObject.set(x, "font-size-adjust", value.asInstanceOf[js.Any])
@@ -7836,6 +8077,10 @@ object CSSProperties {
     inline def `setFont-variant-east-asian`(value: FontVariantEastAsian): Self = StObject.set(x, "font-variant-east-asian", value.asInstanceOf[js.Any])
     
     inline def `setFont-variant-east-asianUndefined`: Self = StObject.set(x, "font-variant-east-asian", js.undefined)
+    
+    inline def `setFont-variant-emoji`(value: FontVariantEmoji): Self = StObject.set(x, "font-variant-emoji", value.asInstanceOf[js.Any])
+    
+    inline def `setFont-variant-emojiUndefined`: Self = StObject.set(x, "font-variant-emoji", js.undefined)
     
     inline def `setFont-variant-ligatures`(value: FontVariantLigatures): Self = StObject.set(x, "font-variant-ligatures", value.asInstanceOf[js.Any])
     
@@ -7942,6 +8187,10 @@ object CSSProperties {
     inline def `setHyphenate-character`(value: HyphenateCharacter): Self = StObject.set(x, "hyphenate-character", value.asInstanceOf[js.Any])
     
     inline def `setHyphenate-characterUndefined`: Self = StObject.set(x, "hyphenate-character", js.undefined)
+    
+    inline def `setHyphenate-limit-chars`(value: HyphenateLimitChars): Self = StObject.set(x, "hyphenate-limit-chars", value.asInstanceOf[js.Any])
+    
+    inline def `setHyphenate-limit-charsUndefined`: Self = StObject.set(x, "hyphenate-limit-chars", js.undefined)
     
     inline def `setImage-orientation`(value: ImageOrientation): Self = StObject.set(x, "image-orientation", value.asInstanceOf[js.Any])
     
@@ -8090,6 +8339,10 @@ object CSSProperties {
     inline def `setMargin-top`(value: MarginTop[String | Double]): Self = StObject.set(x, "margin-top", value.asInstanceOf[js.Any])
     
     inline def `setMargin-topUndefined`: Self = StObject.set(x, "margin-top", js.undefined)
+    
+    inline def `setMargin-trim`(value: MarginTrim): Self = StObject.set(x, "margin-trim", value.asInstanceOf[js.Any])
+    
+    inline def `setMargin-trimUndefined`: Self = StObject.set(x, "margin-trim", js.undefined)
     
     inline def `setMarker-end`(value: MarkerEnd): Self = StObject.set(x, "marker-end", value.asInstanceOf[js.Any])
     
@@ -8274,6 +8527,10 @@ object CSSProperties {
     inline def `setOffset-path`(value: OffsetPath): Self = StObject.set(x, "offset-path", value.asInstanceOf[js.Any])
     
     inline def `setOffset-pathUndefined`: Self = StObject.set(x, "offset-path", js.undefined)
+    
+    inline def `setOffset-position`(value: OffsetPosition[String | Double]): Self = StObject.set(x, "offset-position", value.asInstanceOf[js.Any])
+    
+    inline def `setOffset-positionUndefined`: Self = StObject.set(x, "offset-position", js.undefined)
     
     inline def `setOffset-rotate`(value: OffsetRotate): Self = StObject.set(x, "offset-rotate", value.asInstanceOf[js.Any])
     
@@ -8595,6 +8852,18 @@ object CSSProperties {
     
     inline def `setScroll-snap-typeUndefined`: Self = StObject.set(x, "scroll-snap-type", js.undefined)
     
+    inline def `setScroll-timeline`(value: ScrollTimeline): Self = StObject.set(x, "scroll-timeline", value.asInstanceOf[js.Any])
+    
+    inline def `setScroll-timeline-axis`(value: ScrollTimelineAxis): Self = StObject.set(x, "scroll-timeline-axis", value.asInstanceOf[js.Any])
+    
+    inline def `setScroll-timeline-axisUndefined`: Self = StObject.set(x, "scroll-timeline-axis", js.undefined)
+    
+    inline def `setScroll-timeline-name`(value: ScrollTimelineName): Self = StObject.set(x, "scroll-timeline-name", value.asInstanceOf[js.Any])
+    
+    inline def `setScroll-timeline-nameUndefined`: Self = StObject.set(x, "scroll-timeline-name", js.undefined)
+    
+    inline def `setScroll-timelineUndefined`: Self = StObject.set(x, "scroll-timeline", js.undefined)
+    
     inline def `setScrollbar-color`(value: ScrollbarColor): Self = StObject.set(x, "scrollbar-color", value.asInstanceOf[js.Any])
     
     inline def `setScrollbar-colorUndefined`: Self = StObject.set(x, "scrollbar-color", js.undefined)
@@ -8814,6 +9083,10 @@ object CSSProperties {
     inline def `setVertical-align`(value: VerticalAlign[String | Double]): Self = StObject.set(x, "vertical-align", value.asInstanceOf[js.Any])
     
     inline def `setVertical-alignUndefined`: Self = StObject.set(x, "vertical-align", js.undefined)
+    
+    inline def `setView-transition-name`(value: ViewTransitionName): Self = StObject.set(x, "view-transition-name", value.asInstanceOf[js.Any])
+    
+    inline def `setView-transition-nameUndefined`: Self = StObject.set(x, "view-transition-name", js.undefined)
     
     inline def `setWhite-space`(value: WhiteSpace): Self = StObject.set(x, "white-space", value.asInstanceOf[js.Any])
     

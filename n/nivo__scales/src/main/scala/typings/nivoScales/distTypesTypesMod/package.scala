@@ -8,6 +8,8 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
+type AnyScale = Scale[Any, Any]
+
 /** NOTE: Conditional type definitions are impossible to translate to Scala.
   * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
   * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
@@ -16,6 +18,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   }}}
   */
 type OtherScaleAxis[Axis /* <: ScaleAxis */] = y
+
+type Scale[Input, Output] = /* import warning: importer.ImportType#apply Failed type conversion: Input extends @nivo/scales.@nivo/scales/dist/types/types.StringValue | std.Date ? @nivo/scales.@nivo/scales/dist/types/types.ScaleTime<Input> : never */ js.Any
 
 /* Rewritten from type alias, can be one of: 
   - typings.nivoScales.distTypesTypesMod.NumericValue

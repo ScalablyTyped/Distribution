@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@remix-run/web-fetch" : "4.3.4"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@remix-run/web-fetch" : "4.3.4"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

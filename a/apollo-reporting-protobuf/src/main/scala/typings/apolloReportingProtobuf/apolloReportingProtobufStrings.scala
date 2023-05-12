@@ -7,6 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object apolloReportingProtobufStrings {
   
   @js.native
+  sealed trait condition extends StObject
+  inline def condition: condition = "condition".asInstanceOf[condition]
+  
+  @js.native
+  sealed trait defer extends StObject
+  inline def defer: defer = "defer".asInstanceOf[defer]
+  
+  @js.native
   sealed trait fetch extends StObject
   inline def fetch: fetch = "fetch".asInstanceOf[fetch]
   

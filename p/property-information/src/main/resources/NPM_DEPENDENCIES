@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "property-information" : "6.1.1"
+      "property-information" : "6.2.0"
     }
   ],
   "test-dependencies" : [
     {
-      "property-information" : "6.1.1"
+      "property-information" : "6.2.0"
     }
   ],
   "compile-devDependencies" : [

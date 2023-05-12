@@ -3,7 +3,7 @@ package typings.firebaseAuth
 import org.scalablytyped.runtime.Instantiable0
 import typings.firebaseApp.mod.FirebaseApp
 import typings.firebaseApp.mod.FirebaseError
-import typings.firebaseAuth.distCordovaSrcModelPublicTypesMod.Persistence
+import typings.firebaseAuth.distBrowserCjsSrcModelPublicTypesMod.Persistence
 import typings.firebaseAuth.distRnSrcModelPublicTypesMod.Auth
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

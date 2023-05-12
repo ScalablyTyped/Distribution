@@ -109,7 +109,7 @@ object mod extends Shortcut {
     def create[M, S](x: Unit, y: Unit, panelTitle: String, parent: HTMLElement): QuickSettingsPanel[M, S] = js.native
     def create[M, S](x: Unit, y: Unit, panelTitle: Unit, parent: HTMLElement): QuickSettingsPanel[M, S] = js.native
     
-    // tslint:disable-line no-unnecessary-generics
+    // eslint-disable-line no-unnecessary-generics
     def useExtStyleSheet(): Unit = js.native
   }
   

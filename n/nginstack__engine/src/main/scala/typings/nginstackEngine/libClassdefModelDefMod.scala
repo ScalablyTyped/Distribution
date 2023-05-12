@@ -71,9 +71,13 @@ object libClassdefModelDefMod {
     
     var dataDictionary: String = js.native
     
+    var datasourceDefaultFilters: js.Array[String] = js.native
+    
     var dbIndexSpace: String = js.native
     
     var dbPrimaryKey: String = js.native
+    
+    var dbSums: js.Array[Any] = js.native
     
     var dbTableSpace: String = js.native
     
@@ -139,6 +143,8 @@ object libClassdefModelDefMod {
     
     def getNormalizedDef(classKey: Double): ModelDef = js.native
     
+    var groups: typings.nginstackEngine.libClassdefFieldGroupSetMod.^ = js.native
+    
     def hasEvent(eventName: String): Boolean = js.native
     
     def hasObjectProperty(propertyName: String): Boolean = js.native
@@ -154,6 +160,8 @@ object libClassdefModelDefMod {
     var help: String = js.native
     
     def hideFiles(files: js.Array[Double]): Unit = js.native
+    
+    var indexes: js.Array[String] = js.native
     
     def init(opt_parentDef: Unit, args: Any*): Unit = js.native
     def init(opt_parentDef: typings.nginstackEngine.libClassdefClassDefMod.^, args: Any*): Unit = js.native
@@ -189,6 +197,10 @@ object libClassdefModelDefMod {
     /* private */ var notifyFieldUsage_ : Any = js.native
     
     var occurrenceLimit: Double = js.native
+    
+    var onLookupAddResult: Event = js.native
+    
+    var onValidate: typings.nginstackEngine.libClassdefDataEventMod.^ = js.native
     
     var ownFields: js.Array[typings.nginstackEngine.libClassdefFieldMod.^] = js.native
     

@@ -2,7 +2,6 @@ package typings.firebaseFirestore.distPackagesFirestoreDistIndexDotesm2017Mod
 
 import typings.firebaseFirestore.distPackagesFirestoreDistIndexDotesm2017Mod.^
 import typings.firebaseFirestore.firebaseFirestoreInts.`-1`
-import typings.firebaseUtil.distSrcErrorsMod.FirebaseError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,7 +23,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * See the License for the specific language governing permissions and
   * limitations under the License.
   */
-/** DOMException error code constants. */ inline def CACHE_SIZE_UNLIMITED: `-1` = ^.asInstanceOf[js.Dynamic].selectDynamic("CACHE_SIZE_UNLIMITED").asInstanceOf[`-1`]
+/**
+  * Constant used to indicate the LRU garbage collection should be disabled.
+  * Set this value as the `cacheSizeBytes` on the settings passed to the
+  * {@link Firestore} instance.
+  */ inline def CACHE_SIZE_UNLIMITED: `-1` = ^.asInstanceOf[js.Dynamic].selectDynamic("CACHE_SIZE_UNLIMITED").asInstanceOf[`-1`]
 
 /**
   * Add a new document to specified `CollectionReference` with the given data,
@@ -35,24 +38,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @returns A `Promise` resolved with a `DocumentReference` pointing to the
   * newly created document after it has been written to the backend (Note that it
   * won't resolve while you're offline).
-  */ inline def addDoc(t: Any, e: Any): js.Promise[Xc] = (^.asInstanceOf[js.Dynamic].applyDynamic("addDoc")(t.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Xc]]
+  */ inline def addDoc(t: Any, e: Any): js.Promise[lh] = (^.asInstanceOf[js.Dynamic].applyDynamic("addDoc")(t.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[js.Promise[lh]]
 
 /**
-  * @license
-  * Copyright 2022 Google LLC
+  * Compares two 'AggregateField` instances for equality.
   *
-  * Licensed under the Apache License, Version 2.0 (the "License");
-  * you may not use this file except in compliance with the License.
-  * You may obtain a copy of the License at
-  *
-  *   http://www.apache.org/licenses/LICENSE-2.0
-  *
-  * Unless required by applicable law or agreed to in writing, software
-  * distributed under the License is distributed on an "AS IS" BASIS,
-  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  * See the License for the specific language governing permissions and
-  * limitations under the License.
-  */
+  * @param left Compare this AggregateField to the `right`.
+  * @param right Compare this AggregateField to the `left`.
+  * @internal TODO (sum/avg) remove when public
+  */ inline def aggregateFieldEqual(t: Any, e: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("aggregateFieldEqual")(t.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+
 /**
   * Compares two `AggregateQuerySnapshot` instances for equality.
   *
@@ -67,6 +62,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */ inline def aggregateQuerySnapshotEqual(t: Any, e: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("aggregateQuerySnapshotEqual")(t.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 
 /**
+  * Creates a new {@link QueryCompositeFilterConstraint} that is a conjunction of
+  * the given filter constraints. A conjunction filter includes a document if it
+  * satisfies all of the given filters.
+  *
+  * @param queryConstraints - Optional. The list of
+  * {@link QueryFilterConstraint}s to perform a conjunction for. These must be
+  * created with calls to {@link where}, {@link or}, or {@link and}.
+  * @returns The newly created {@link QueryCompositeFilterConstraint}.
+  */ inline def and(t: Any*): bl = ^.asInstanceOf[js.Dynamic].applyDynamic("and")(t.asInstanceOf[Seq[js.Any]]*).asInstanceOf[bl]
+
+/**
   * Returns a special value that can be used with {@link (setDoc:1)} or {@link
   * updateDoc:1} that tells the server to remove the given elements from any
   * array value that already exists on the server. All instances of each element
@@ -76,7 +82,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param elements - The elements to remove from the array.
   * @returns The `FieldValue` sentinel for use in a call to `setDoc()` or
   * `updateDoc()`
-  */ inline def arrayRemove(t: Any*): gh = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayRemove")(t.asInstanceOf[Seq[js.Any]]*).asInstanceOf[gh]
+  */ inline def arrayRemove(t: Any*): il = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayRemove")(t.asInstanceOf[Seq[js.Any]]*).asInstanceOf[il]
 
 /**
   * Returns a special value that can be used with {@link @firebase/firestore/lite#(setDoc:1)} or {@link
@@ -89,13 +95,41 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param elements - The elements to union into the array.
   * @returns The `FieldValue` sentinel for use in a call to `setDoc()` or
   * `updateDoc()`.
-  */ inline def arrayUnion(t: Any*): mh = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayUnion")(t.asInstanceOf[Seq[js.Any]]*).asInstanceOf[mh]
+  */ inline def arrayUnion(t: Any*): sl = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayUnion")(t.asInstanceOf[Seq[js.Any]]*).asInstanceOf[sl]
+
+/**
+  * Create an AggregateField object that can be used to compute the average of
+  * a specified field over a range of documents in the result set of a query.
+  * @param field Specifies the field to average across the result set.
+  * @internal TODO (sum/avg) remove when public
+  */ inline def average(t: Any): Bh = ^.asInstanceOf[js.Dynamic].applyDynamic("average")(t.asInstanceOf[js.Any]).asInstanceOf[Bh]
 
 inline def cast(t: Any, e: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_cast")(t.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[Any]
 
-inline def clearIndexedDbPersistence(t: Any): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("clearIndexedDbPersistence")(t.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
+/**
+  * Clears the persistent storage. This includes pending writes and cached
+  * documents.
+  *
+  * Must be called while the {@link Firestore} instance is not started (after the app is
+  * terminated or when the app is first initialized). On startup, this function
+  * must be called before other functions (other than {@link
+  * initializeFirestore} or {@link (getFirestore:1)})). If the {@link Firestore}
+  * instance is still running, the promise will be rejected with the error code
+  * of `failed-precondition`.
+  *
+  * Note: `clearIndexedDbPersistence()` is primarily intended to help write
+  * reliable tests that use Cloud Firestore. It uses an efficient mechanism for
+  * dropping existing data but does not attempt to securely overwrite or
+  * otherwise make cached data unrecoverable. For applications that are sensitive
+  * to the disclosure of cached data in between user sessions, we strongly
+  * recommend not enabling persistence at all.
+  *
+  * @param firestore - The {@link Firestore} instance to clear persistence for.
+  * @returns A `Promise` that is resolved when the persistent storage is
+  * cleared. Otherwise, the promise is rejected with an error.
+  */ inline def clearIndexedDbPersistence(t: Any): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("clearIndexedDbPersistence")(t.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
 
-inline def collection(t: Any, e: Any, n: Any*): ta = (^.asInstanceOf[js.Dynamic].applyDynamic("collection")((scala.List(t.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).`++`(n.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[ta]
+inline def collection(t: Any, e: Any, n: Any*): dh = (^.asInstanceOf[js.Dynamic].applyDynamic("collection")((scala.List(t.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).`++`(n.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[dh]
 
 /**
   * Creates and returns a new `Query` instance that includes all documents in the
@@ -107,7 +141,7 @@ inline def collection(t: Any, e: Any, n: Any*): ta = (^.asInstanceOf[js.Dynamic]
   * collection or subcollection with this ID as the last segment of its path
   * will be included. Cannot contain a slash.
   * @returns The created `Query`.
-  */ inline def collectionGroup(t: Any, e: Any): Zc = (^.asInstanceOf[js.Dynamic].applyDynamic("collectionGroup")(t.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[Zc]
+  */ inline def collectionGroup(t: Any, e: Any): fh = (^.asInstanceOf[js.Dynamic].applyDynamic("collectionGroup")(t.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[fh]
 
 /**
   * Modify this instance to communicate with the Cloud Firestore emulator.
@@ -123,6 +157,12 @@ inline def collection(t: Any, e: Any, n: Any*): ta = (^.asInstanceOf[js.Dynamic]
   * Security Rules.
   */ inline def connectFirestoreEmulator(t: Any, e: Any, n: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("connectFirestoreEmulator")(t.asInstanceOf[js.Any], e.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[Unit]
 inline def connectFirestoreEmulator(t: Any, e: Any, n: Any, s: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("connectFirestoreEmulator")(t.asInstanceOf[js.Any], e.asInstanceOf[js.Any], n.asInstanceOf[js.Any], s.asInstanceOf[js.Any])).asInstanceOf[Unit]
+
+/**
+  * Create an AggregateField object that can be used to compute the count of
+  * documents in the result set of a query.
+  * @internal TODO (sum/avg) remove when public
+  */ inline def count(): Bh = ^.asInstanceOf[js.Dynamic].applyDynamic("count")().asInstanceOf[Bh]
 
 /**
   * Fails if the given assertion condition is false, throwing an Error with the
@@ -162,7 +202,7 @@ inline def connectFirestoreEmulator(t: Any, e: Any, n: Any, s: js.Object): Unit 
 /**
   * Returns a sentinel for use with {@link @firebase/firestore/lite#(updateDoc:1)} or
   * {@link @firebase/firestore/lite#(setDoc:1)} with `{merge: true}` to mark a field for deletion.
-  */ inline def deleteField(): dh = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteField")().asInstanceOf[dh]
+  */ inline def deleteField(): tl = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteField")().asInstanceOf[tl]
 
 /**
   * Disables network usage for this instance. It can be re-enabled via {@link
@@ -173,12 +213,12 @@ inline def connectFirestoreEmulator(t: Any, e: Any, n: Any, s: js.Object): Unit 
   * @returns A `Promise` that is resolved once the network has been disabled.
   */ inline def disableNetwork(t: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("disableNetwork")(t.asInstanceOf[js.Any]).asInstanceOf[Any]
 
-inline def doc(t: Any, e: Any, n: Any*): Xc = (^.asInstanceOf[js.Dynamic].applyDynamic("doc")((scala.List(t.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).`++`(n.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Xc]
+inline def doc(t: Any, e: Any, n: Any*): lh = (^.asInstanceOf[js.Dynamic].applyDynamic("doc")((scala.List(t.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).`++`(n.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[lh]
 
 /**
   * Returns a special sentinel `FieldPath` to refer to the ID of a document.
   * It can be used in queries to sort or filter by the document ID.
-  */ inline def documentId(): eh = ^.asInstanceOf[js.Dynamic].applyDynamic("documentId")().asInstanceOf[eh]
+  */ inline def documentId(): Uh = ^.asInstanceOf[js.Dynamic].applyDynamic("documentId")().asInstanceOf[Uh]
 
 /**
   * Attempts to enable persistent storage, if possible.
@@ -202,6 +242,10 @@ inline def doc(t: Any, e: Any, n: Any*): Xc = (^.asInstanceOf[js.Dynamic].applyD
   * @param persistenceSettings - Optional settings object to configure
   * persistence.
   * @returns A `Promise` that represents successfully enabling persistent storage.
+  * @deprecated This function will be removed in a future major release. Instead, set
+  * `FirestoreSettings.cache` to an instance of `IndexedDbLocalCache` to
+  * turn on IndexedDb cache. Calling this function when `FirestoreSettings.cache`
+  * is already specified will throw an exception.
   */ inline def enableIndexedDbPersistence(t: Any, e: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("enableIndexedDbPersistence")(t.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[Any]
 
 /**
@@ -225,6 +269,10 @@ inline def doc(t: Any, e: Any, n: Any*): Xc = (^.asInstanceOf[js.Dynamic].applyD
   * @param firestore - The {@link Firestore} instance to enable persistence for.
   * @returns A `Promise` that represents successfully enabling persistent
   * storage.
+  * @deprecated This function will be removed in a future major release. Instead, set
+  * `FirestoreSettings.cache` to an instance of `IndexedDbLocalCache` to
+  * turn on indexeddb cache. Calling this function when `FirestoreSettings.cache`
+  * is already specified will throw an exception.
   */ inline def enableMultiTabIndexedDbPersistence(t: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("enableMultiTabIndexedDbPersistence")(t.asInstanceOf[js.Any]).asInstanceOf[Any]
 
 /**
@@ -234,9 +282,9 @@ inline def doc(t: Any, e: Any, n: Any*): Xc = (^.asInstanceOf[js.Dynamic].applyD
   * @returns A `Promise` that is resolved once the network has been enabled.
   */ inline def enableNetwork(t: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("enableNetwork")(t.asInstanceOf[js.Any]).asInstanceOf[Any]
 
-inline def endAt(t: Any*): Wh_ = ^.asInstanceOf[js.Dynamic].applyDynamic("endAt")(t.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Wh_]
+inline def endAt(t: Any*): Fl = ^.asInstanceOf[js.Dynamic].applyDynamic("endAt")(t.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Fl]
 
-inline def endBefore(t: Any*): Wh_ = ^.asInstanceOf[js.Dynamic].applyDynamic("endBefore")(t.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Wh_]
+inline def endBefore(t: Any*): Fl = ^.asInstanceOf[js.Dynamic].applyDynamic("endBefore")(t.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Fl]
 
 /**
   * @internal
@@ -246,6 +294,41 @@ inline def endBefore(t: Any*): Wh_ = ^.asInstanceOf[js.Dynamic].applyDynamic("en
   * Locally writes `mutations` on the async queue.
   * @internal
   */ inline def executeWrite(t: Any, e: Any): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("executeWrite")(t.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
+
+/**
+  * Calculates the specified aggregations over the documents in the result
+  * set of the given query, without actually downloading the documents.
+  *
+  * Using this function to perform aggregations is efficient because only the
+  * final aggregation values, not the documents' data, is downloaded. This
+  * function can even perform aggregations of the documents if the result set
+  * would be prohibitively large to download entirely (e.g. thousands of documents).
+  *
+  * The result received from the server is presented, unaltered, without
+  * considering any local state. That is, documents in the local cache are not
+  * taken into consideration, neither are local modifications not yet
+  * synchronized with the server. Previously-downloaded results, if any, are not
+  * used: every request using this source necessarily involves a round trip to
+  * the server.
+  *
+  * @param query The query whose result set to aggregate over.
+  * @param aggregateSpec An `AggregateSpec` object that specifies the aggregates
+  * to perform over the result set. The AggregateSpec specifies aliases for each
+  * aggregate, which can be used to retrieve the aggregate result.
+  * @example
+  * ```typescript
+  * const aggregateSnapshot = await getAggregateFromServer(query, {
+  *   countOfDocs: count(),
+  *   totalHours: sum('hours'),
+  *   averageScore: average('score')
+  * });
+  *
+  * const countOfDocs: number = aggregateSnapshot.data().countOfDocs;
+  * const totalHours: number = aggregateSnapshot.data().totalHours;
+  * const averageScore: number | null = aggregateSnapshot.data().averageScore;
+  * ```
+  * @internal TODO (sum/avg) remove when public
+  */ inline def getAggregateFromServer(t: Any, e: Any): js.Promise[Lh_] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAggregateFromServer")(t.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Lh_]]
 
 /**
   * @license
@@ -283,7 +366,7 @@ inline def endBefore(t: Any*): Wh_ = ^.asInstanceOf[js.Dynamic].applyDynamic("en
   * @returns A Promise that will be resolved with the count; the count can be
   * retrieved from `snapshot.data().count`, where `snapshot` is the
   * `AggregateQuerySnapshot` to which the returned Promise resolves.
-  */ inline def getCountFromServer(t: Any): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCountFromServer")(t.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
+  */ inline def getCountFromServer(t: Any): js.Promise[Lh_] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCountFromServer")(t.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Lh_]]
 
 /**
   * @license
@@ -312,7 +395,7 @@ inline def endBefore(t: Any*): Wh_ = ^.asInstanceOf[js.Dynamic].applyDynamic("en
   * @param reference - The reference of the document to fetch.
   * @returns A Promise resolved with a `DocumentSnapshot` containing the
   * current document contents.
-  */ inline def getDoc(t: Any): js.Promise[il] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDoc")(t.asInstanceOf[js.Any]).asInstanceOf[js.Promise[il]]
+  */ inline def getDoc(t: Any): js.Promise[nf] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDoc")(t.asInstanceOf[js.Any]).asInstanceOf[js.Promise[nf]]
 
 /**
   * Reads the document referred to by this `DocumentReference` from cache.
@@ -320,7 +403,7 @@ inline def endBefore(t: Any*): Wh_ = ^.asInstanceOf[js.Dynamic].applyDynamic("en
   *
   * @returns A `Promise` resolved with a `DocumentSnapshot` containing the
   * current document contents.
-  */ inline def getDocFromCache(t: Any): js.Promise[il] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDocFromCache")(t.asInstanceOf[js.Any]).asInstanceOf[js.Promise[il]]
+  */ inline def getDocFromCache(t: Any): js.Promise[nf] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDocFromCache")(t.asInstanceOf[js.Any]).asInstanceOf[js.Promise[nf]]
 
 /**
   * Reads the document referred to by this `DocumentReference` from the server.
@@ -328,7 +411,7 @@ inline def endBefore(t: Any*): Wh_ = ^.asInstanceOf[js.Dynamic].applyDynamic("en
   *
   * @returns A `Promise` resolved with a `DocumentSnapshot` containing the
   * current document contents.
-  */ inline def getDocFromServer(t: Any): js.Promise[il] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDocFromServer")(t.asInstanceOf[js.Any]).asInstanceOf[js.Promise[il]]
+  */ inline def getDocFromServer(t: Any): js.Promise[nf] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDocFromServer")(t.asInstanceOf[js.Any]).asInstanceOf[js.Promise[nf]]
 
 /**
   * Executes the query and returns the results as a `QuerySnapshot`.
@@ -339,21 +422,22 @@ inline def endBefore(t: Any*): Wh_ = ^.asInstanceOf[js.Dynamic].applyDynamic("en
   * invoke {@link getDocsFromCache} or {@link getDocsFromServer}.
   *
   * @returns A `Promise` that will be resolved with the results of the query.
-  */ inline def getDocs(t: Any): js.Promise[ol] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDocs")(t.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ol]]
+  */ inline def getDocs(t: Any): js.Promise[rf] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDocs")(t.asInstanceOf[js.Any]).asInstanceOf[js.Promise[rf]]
 
 /**
   * Executes the query and returns the results as a `QuerySnapshot` from cache.
-  * Returns an error if the document is not currently cached.
+  * Returns an empty result set if no documents matching the query are currently
+  * cached.
   *
   * @returns A `Promise` that will be resolved with the results of the query.
-  */ inline def getDocsFromCache(t: Any): js.Promise[ol] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDocsFromCache")(t.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ol]]
+  */ inline def getDocsFromCache(t: Any): js.Promise[rf] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDocsFromCache")(t.asInstanceOf[js.Any]).asInstanceOf[js.Promise[rf]]
 
 /**
   * Executes the query and returns the results as a `QuerySnapshot` from the
   * server. Returns an error if the network is not available.
   *
   * @returns A `Promise` that will be resolved with the results of the query.
-  */ inline def getDocsFromServer(t: Any): js.Promise[ol] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDocsFromServer")(t.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ol]]
+  */ inline def getDocsFromServer(t: Any): js.Promise[rf] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDocsFromServer")(t.asInstanceOf[js.Any]).asInstanceOf[js.Promise[rf]]
 
 inline def getFirestore(e: Any, n: Any): typings.firebaseFirestore.distPackagesFirestoreSrcMod.Firestore = (^.asInstanceOf[js.Dynamic].applyDynamic("getFirestore")(e.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[typings.firebaseFirestore.distPackagesFirestoreSrcMod.Firestore]
 
@@ -375,7 +459,7 @@ inline def getFirestore(e: Any, n: Any): typings.firebaseFirestore.distPackagesF
   * @param n - The value to increment by.
   * @returns The `FieldValue` sentinel for use in a call to `setDoc()` or
   * `updateDoc()`
-  */ inline def increment(t: Any): yh = ^.asInstanceOf[js.Dynamic].applyDynamic("increment")(t.asInstanceOf[js.Any]).asInstanceOf[yh]
+  */ inline def increment(t: Any): rl = ^.asInstanceOf[js.Dynamic].applyDynamic("increment")(t.asInstanceOf[js.Any]).asInstanceOf[rl]
 
 /**
   * Initializes a new instance of {@link Firestore} with the provided settings.
@@ -411,21 +495,23 @@ inline def getFirestore(e: Any, n: Any): typings.firebaseFirestore.distPackagesF
 inline def isBase64Available(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("_isBase64Available")().asInstanceOf[Boolean]
 
 /**
-  * Creates a {@link QueryConstraint} that only returns the first matching documents.
+  * Creates a {@link QueryLimitConstraint} that only returns the first matching
+  * documents.
   *
   * @param limit - The maximum number of items to return.
-  * @returns The created {@link Query}.
-  */ inline def limit(t: Any): Uh = ^.asInstanceOf[js.Dynamic].applyDynamic("limit")(t.asInstanceOf[js.Any]).asInstanceOf[Uh]
+  * @returns The created {@link QueryLimitConstraint}.
+  */ inline def limit(t: Any): xl = ^.asInstanceOf[js.Dynamic].applyDynamic("limit")(t.asInstanceOf[js.Any]).asInstanceOf[xl]
 
 /**
-  * Creates a {@link QueryConstraint} that only returns the last matching documents.
+  * Creates a {@link QueryLimitConstraint} that only returns the last matching
+  * documents.
   *
   * You must specify at least one `orderBy` clause for `limitToLast` queries,
   * otherwise an exception will be thrown during execution.
   *
   * @param limit - The maximum number of items to return.
-  * @returns The created {@link Query}.
-  */ inline def limitToLast(t: Any): Uh = ^.asInstanceOf[js.Dynamic].applyDynamic("limitToLast")(t.asInstanceOf[js.Any]).asInstanceOf[Uh]
+  * @returns The created {@link QueryLimitConstraint}.
+  */ inline def limitToLast(t: Any): xl = ^.asInstanceOf[js.Dynamic].applyDynamic("limitToLast")(t.asInstanceOf[js.Any]).asInstanceOf[xl]
 
 /**
   * Loads a Firestore bundle into the local cache.
@@ -437,11 +523,29 @@ inline def isBase64Available(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynami
   * @returns A `LoadBundleTask` object, which notifies callers with progress
   * updates, and completion or error events. It can be used as a
   * `Promise<LoadBundleTaskProgress>`.
-  */ inline def loadBundle(t: Any, e: Any): Ma = (^.asInstanceOf[js.Dynamic].applyDynamic("loadBundle")(t.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[Ma]
+  */ inline def loadBundle(t: Any, e: Any): Th = (^.asInstanceOf[js.Dynamic].applyDynamic("loadBundle")(t.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[Th]
 
 /**
   * @internal
   */ inline def logWarn(t: Any, e: Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_logWarn")(scala.List(t.asInstanceOf[js.Any]).`++`(e.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Unit]
+
+/**
+  * Creates an instance of `MemoryEagerGarbageCollector`. This is also the
+  * default garbage collector unless it is explicitly specified otherwise.
+  */ inline def memoryEagerGarbageCollector(): bf = ^.asInstanceOf[js.Dynamic].applyDynamic("memoryEagerGarbageCollector")().asInstanceOf[bf]
+
+/**
+  * Creates an instance of `MemoryLocalCache`. The instance can be set to
+  * `FirestoreSettings.cache` to tell the SDK which cache layer to use.
+  */ inline def memoryLocalCache(t: Any): vf = ^.asInstanceOf[js.Dynamic].applyDynamic("memoryLocalCache")(t.asInstanceOf[js.Any]).asInstanceOf[vf]
+
+/**
+  * Creates an instance of `MemoryLruGarbageCollector`.
+  *
+  * A target size can be specified as part of the setting parameter. The
+  * collector will start deleting documents once the cache size exceeds
+  * the given size. The default cache size is 40MB (40 * 1024 * 1024 bytes).
+  */ inline def memoryLruGarbageCollector(t: Any): Vf_ = ^.asInstanceOf[js.Dynamic].applyDynamic("memoryLruGarbageCollector")(t.asInstanceOf[js.Any]).asInstanceOf[Vf_]
 
 /**
   * Reads a Firestore {@link Query} from local cache, identified by the given
@@ -461,25 +565,46 @@ inline def onSnapshot(t: Any, e: Any*): js.Function0[Unit] = ^.asInstanceOf[js.D
 inline def onSnapshotsInSync(t: Any, e: Any): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("onSnapshotsInSync")(t.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
 
 /**
-  * Creates a {@link QueryConstraint} that sorts the query result by the
+  * Creates a new {@link QueryCompositeFilterConstraint} that is a disjunction of
+  * the given filter constraints. A disjunction filter includes a document if it
+  * satisfies any of the given filters.
+  *
+  * @param queryConstraints - Optional. The list of
+  * {@link QueryFilterConstraint}s to perform a disjunction for. These must be
+  * created with calls to {@link where}, {@link or}, or {@link and}.
+  * @returns The newly created {@link QueryCompositeFilterConstraint}.
+  */ inline def or(t: Any*): bl = ^.asInstanceOf[js.Dynamic].applyDynamic("or")(t.asInstanceOf[Seq[js.Any]]*).asInstanceOf[bl]
+
+/**
+  * Creates a {@link QueryOrderByConstraint} that sorts the query result by the
   * specified field, optionally in descending order instead of ascending.
+  *
+  * Note: Documents that do not contain the specified field will not be present
+  * in the query result.
   *
   * @param fieldPath - The field to sort by.
   * @param directionStr - Optional direction to sort by ('asc' or 'desc'). If
   * not specified, order will be ascending.
-  * @returns The created {@link Query}.
-  */ inline def orderBy(t: Any): Bh = ^.asInstanceOf[js.Dynamic].applyDynamic("orderBy")(t.asInstanceOf[js.Any]).asInstanceOf[Bh]
-inline def orderBy(t: Any, e: String): Bh = (^.asInstanceOf[js.Dynamic].applyDynamic("orderBy")(t.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[Bh]
+  * @returns The created {@link QueryOrderByConstraint}.
+  */ inline def orderBy(t: Any): Dl = ^.asInstanceOf[js.Dynamic].applyDynamic("orderBy")(t.asInstanceOf[js.Any]).asInstanceOf[Dl]
+inline def orderBy(t: Any, e: String): Dl = (^.asInstanceOf[js.Dynamic].applyDynamic("orderBy")(t.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[Dl]
 
 /**
-  * Creates a new immutable instance of {@link Query} that is extended to also include
-  * additional query constraints.
+  * Creates an instance of `PersistentLocalCache`. The instance can be set to
+  * `FirestoreSettings.cache` to tell the SDK which cache layer to use.
+  */ inline def persistentLocalCache(t: Any): Pf = ^.asInstanceOf[js.Dynamic].applyDynamic("persistentLocalCache")(t.asInstanceOf[js.Any]).asInstanceOf[Pf]
+
+/**
+  * Creates an instance of `PersistentMultipleTabManager`.
+  */ inline def persistentMultipleTabManager(): kf = ^.asInstanceOf[js.Dynamic].applyDynamic("persistentMultipleTabManager")().asInstanceOf[kf]
+
+/**
+  * Creates an instance of `PersistentSingleTabManager`.
   *
-  * @param query - The {@link Query} instance to use as a base for the new constraints.
-  * @param queryConstraints - The list of {@link QueryConstraint}s to apply.
-  * @throws if any of the provided query constraints cannot be combined with the
-  * existing or new constraints.
-  */ inline def query(t: Any, e: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("query")(scala.List(t.asInstanceOf[js.Any]).`++`(e.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
+  * @param settings Configures the created tab manager.
+  */ inline def persistentSingleTabManager(t: Any): Nf_ = ^.asInstanceOf[js.Dynamic].applyDynamic("persistentSingleTabManager")(t.asInstanceOf[js.Any]).asInstanceOf[Nf_]
+
+inline def query(t: Any, e: Any, n: Any*): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("query")((scala.List(t.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).`++`(n.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Any]
 
 /**
   * Returns true if the provided queries point to the same collection and apply
@@ -523,7 +648,7 @@ inline def orderBy(t: Any, e: String): Bh = (^.asInstanceOf[js.Dynamic].applyDyn
 /**
   * Returns a sentinel used with {@link @firebase/firestore/lite#(setDoc:1)} or {@link @firebase/firestore/lite#(updateDoc:1)} to
   * include a server-generated timestamp in the written data.
-  */ inline def serverTimestamp(): wh = ^.asInstanceOf[js.Dynamic].applyDynamic("serverTimestamp")().asInstanceOf[wh]
+  */ inline def serverTimestamp(): nl = ^.asInstanceOf[js.Dynamic].applyDynamic("serverTimestamp")().asInstanceOf[nl]
 
 inline def setDoc(t: Any, e: Any, n: Any): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("setDoc")(t.asInstanceOf[js.Any], e.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
 
@@ -542,7 +667,7 @@ inline def setDoc(t: Any, e: Any, n: Any): js.Promise[Any] = (^.asInstanceOf[js.
   * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
   * See the License for the specific language governing permissions and
   * limitations under the License.
-  */ inline def setIndexConfiguration(t: Any, e: Any): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("setIndexConfiguration")(t.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
+  */ inline def setIndexConfiguration(t: Any, e: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("setIndexConfiguration")(t.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[Any]
 
 /**
   * Sets the verbosity of Cloud Firestore logs (debug, error, or silent).
@@ -566,9 +691,32 @@ inline def setDoc(t: Any, e: Any, n: Any): js.Promise[Any] = (^.asInstanceOf[js.
   * @returns true if the snapshots are equal.
   */ inline def snapshotEqual(t: Any, e: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("snapshotEqual")(t.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[Any]
 
-inline def startAfter(t: Any*): Gh_ = ^.asInstanceOf[js.Dynamic].applyDynamic("startAfter")(t.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Gh_]
+inline def startAfter(t: Any*): Ml = ^.asInstanceOf[js.Dynamic].applyDynamic("startAfter")(t.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Ml]
 
-inline def startAt(t: Any*): Gh_ = ^.asInstanceOf[js.Dynamic].applyDynamic("startAt")(t.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Gh_]
+inline def startAt(t: Any*): Ml = ^.asInstanceOf[js.Dynamic].applyDynamic("startAt")(t.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Ml]
+
+/**
+  * @license
+  * Copyright 2022 Google LLC
+  *
+  * Licensed under the Apache License, Version 2.0 (the "License");
+  * you may not use this file except in compliance with the License.
+  * You may obtain a copy of the License at
+  *
+  *   http://www.apache.org/licenses/LICENSE-2.0
+  *
+  * Unless required by applicable law or agreed to in writing, software
+  * distributed under the License is distributed on an "AS IS" BASIS,
+  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  * See the License for the specific language governing permissions and
+  * limitations under the License.
+  */
+/**
+  * Create an AggregateField object that can be used to compute the sum of
+  * a specified field over a range of documents in the result set of a query.
+  * @param field Specifies the field to sum across the result set.
+  * @internal TODO (sum/avg) remove when public
+  */ inline def sum(t: Any): Bh = ^.asInstanceOf[js.Dynamic].applyDynamic("sum")(t.asInstanceOf[js.Any]).asInstanceOf[Bh]
 
 /**
   * Terminates the provided {@link Firestore} instance.
@@ -618,16 +766,16 @@ inline def updateDoc(t: Any, e: Any, n: Any, s: Any*): js.Promise[Any] = (^.asIn
   */ inline def waitForPendingWrites(t: Any): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitForPendingWrites")(t.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
 
 /**
-  * Creates a {@link QueryConstraint} that enforces that documents must contain the
-  * specified field and that the value should satisfy the relation constraint
-  * provided.
+  * Creates a {@link QueryFieldFilterConstraint} that enforces that documents
+  * must contain the specified field and that the value should satisfy the
+  * relation constraint provided.
   *
   * @param fieldPath - The path to compare
   * @param opStr - The operation string (e.g "&lt;", "&lt;=", "==", "&lt;",
   *   "&lt;=", "!=").
   * @param value - The value for comparison
-  * @returns The created {@link Query}.
-  */ inline def where(t: Any, e: Any, n: Any): Fh = (^.asInstanceOf[js.Dynamic].applyDynamic("where")(t.asInstanceOf[js.Any], e.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[Fh]
+  * @returns The created {@link QueryFieldFilterConstraint}.
+  */ inline def where(t: Any, e: Any, n: Any): vl = (^.asInstanceOf[js.Dynamic].applyDynamic("where")(t.asInstanceOf[js.Any], e.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[vl]
 
 /**
   * @license
@@ -655,9 +803,16 @@ inline def updateDoc(t: Any, e: Any, n: Any, s: Any*): js.Promise[Any] = (^.asIn
   *
   * @returns A {@link WriteBatch} that can be used to atomically execute multiple
   * writes.
-  */ inline def writeBatch(t: Any): vl = ^.asInstanceOf[js.Dynamic].applyDynamic("writeBatch")(t.asInstanceOf[js.Any]).asInstanceOf[vl]
+  */ inline def writeBatch(t: Any): Ff = ^.asInstanceOf[js.Dynamic].applyDynamic("writeBatch")(t.asInstanceOf[js.Any]).asInstanceOf[Ff]
 
-/** An error returned by a Firestore operation. */ type L = FirebaseError
+/**
+  * A `QueryConstraint` is used to narrow the set of documents returned by a
+  * Firestore query. `QueryConstraint`s are created by invoking {@link where},
+  * {@link orderBy}, {@link (startAt:1)}, {@link (startAfter:1)}, {@link
+  * (endBefore:1)}, {@link (endAt:1)}, {@link limit}, {@link limitToLast} and
+  * can then be passed to {@link (query:1)} to create a new query instance that
+  * also contains this `QueryConstraint`.
+  */ type Al = El
 
 /**
   * A `QueryDocumentSnapshot` contains data read from a document in your
@@ -669,4 +824,4 @@ inline def updateDoc(t: Any, e: Any, n: Any, s: Any*): js.Promise[Any] = (^.asIn
   * `DocumentSnapshot`. Since query results contain only existing documents, the
   * `exists` property will always be true and `data()` will never return
   * 'undefined'.
-  */ type rl = il
+  */ type sf = nf

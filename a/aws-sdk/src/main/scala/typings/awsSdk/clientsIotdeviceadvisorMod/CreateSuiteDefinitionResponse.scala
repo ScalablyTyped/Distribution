@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateSuiteDefinitionResponse extends StObject {
   
   /**
-    * Creates a Device Advisor test suite with TimeStamp of when it was created.
+    * The timestamp of when the test suite was created.
     */
   var createdAt: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * Creates a Device Advisor test suite with Amazon Resource Name (ARN).
+    * The Amazon Resource Name (ARN) of the test suite.
     */
   var suiteDefinitionArn: js.UndefOr[AmazonResourceName] = js.undefined
   
   /**
-    * Creates a Device Advisor test suite with suite UUID.
+    * The UUID of the test suite created.
     */
   var suiteDefinitionId: js.UndefOr[UUID] = js.undefined
   
   /**
-    * Creates a Device Advisor test suite with suite definition name.
+    * The suite definition name of the test suite. This is a required parameter.
     */
   var suiteDefinitionName: js.UndefOr[SuiteDefinitionName] = js.undefined
 }

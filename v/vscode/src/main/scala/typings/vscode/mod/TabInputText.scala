@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class TabInputText protected () extends StObject {
   /**
-    * Constructs a text tab input with the given URI.
-    * @param uri The URI of the tab.
-    */
+  		 * Constructs a text tab input with the given URI.
+  		 * @param uri The URI of the tab.
+  		 */
   def this(uri: Uri) = this()
   
   /**
-    * The uri represented by the tab.
-    */
+  		 * The uri represented by the tab.
+  		 */
   val uri: Uri = js.native
 }

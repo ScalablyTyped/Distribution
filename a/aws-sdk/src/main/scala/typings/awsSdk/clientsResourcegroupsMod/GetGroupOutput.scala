@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetGroupOutput extends StObject {
   
   /**
-    * A full description of the resource group.
+    * A structure that contains the metadata details for the specified resource group. Use GetGroupQuery and GetGroupConfiguration to get those additional details of the resource group.
     */
   var Group: js.UndefOr[typings.awsSdk.clientsResourcegroupsMod.Group] = js.undefined
 }

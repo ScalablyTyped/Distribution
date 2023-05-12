@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "tesseract.js" : "3.0.3"
+      "tesseract.js" : "4.0.5"
     }
   ],
   "test-dependencies" : [
     {
-      "tesseract.js" : "3.0.3"
+      "tesseract.js" : "4.0.5"
     }
   ],
   "compile-devDependencies" : [

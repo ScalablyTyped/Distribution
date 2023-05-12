@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StudioComponentConfiguration extends StObject {
   
   /**
-    * The configuration for a Microsoft Active Directory (Microsoft AD) studio resource.
+    * The configuration for a Directory Service for Microsoft Active Directory studio resource.
     */
   var activeDirectoryConfiguration: js.UndefOr[ActiveDirectoryConfiguration] = js.undefined
   

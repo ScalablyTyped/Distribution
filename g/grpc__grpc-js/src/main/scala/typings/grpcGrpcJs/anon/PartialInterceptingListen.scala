@@ -1,12 +1,12 @@
 package typings.grpcGrpcJs.anon
 
-import typings.grpcGrpcJs.buildSrcCallStreamMod.StatusObject
+import typings.grpcGrpcJs.buildSrcCallInterfaceMod.StatusObject
 import typings.grpcGrpcJs.buildSrcMetadataMod.Metadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Partial<@grpc/grpc-js.@grpc/grpc-js/build/src/call-stream.InterceptingListener> */
+/* Inlined std.Partial<@grpc/grpc-js.@grpc/grpc-js/build/src/call-interface.InterceptingListener> */
 trait PartialInterceptingListen extends StObject {
   
   var onReceiveMessage: js.UndefOr[js.Function1[/* message */ scala.Any, Unit]] = js.undefined

@@ -2,6 +2,7 @@ package typings.firebaseFirestore
 
 import typings.firebaseFirestore.distPackagesFirestoreSrcUtilTypesMod.DocumentLike
 import typings.firebaseFirestore.distPackagesFirestoreSrcUtilTypesMod.WindowLike
+import typings.std.DocumentVisibilityState
 import typings.std.EventListener
 import typings.std.IDBFactory
 import typings.std.Storage
@@ -26,9 +27,7 @@ object distPackagesFirestoreTestUtilTestPlatformMod {
     /* CompleteClass */
     override def addEventListener(`type`: String, listener: EventListener): Unit = js.native
     
-    def raiseVisibilityEvent(
-      visibility: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VisibilityState */ Any
-    ): Unit = js.native
+    def raiseVisibilityEvent(visibility: DocumentVisibilityState): Unit = js.native
     
     /* CompleteClass */
     override def removeEventListener(`type`: String, listener: EventListener): Unit = js.native
@@ -36,9 +35,9 @@ object distPackagesFirestoreTestUtilTestPlatformMod {
     /* private */ var visibilityListener: Any = js.native
     
     /* CompleteClass */
-    override val visibilityState: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VisibilityState */ Any = js.native
+    override val visibilityState: DocumentVisibilityState = js.native
     @JSName("visibilityState")
-    def visibilityState_MFakeDocument: Any = js.native
+    def visibilityState_MFakeDocument: DocumentVisibilityState = js.native
   }
   
   @JSImport("@firebase/firestore/dist/packages/firestore/test/util/test_platform", "FakeWindow")

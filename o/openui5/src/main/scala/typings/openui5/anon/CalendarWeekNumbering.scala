@@ -16,7 +16,7 @@ trait CalendarWeekNumbering extends StObject {
   ] = js.undefined
   
   /**
-    * @since 1.108.0 specifies the calendar week numbering. If specified, this overwrites `oFormatOptions.firstDayOfWeek`
+    * since 1.108.0 specifies the calendar week numbering. If specified, this overwrites `oFormatOptions.firstDayOfWeek`
     * and `oFormatOptions.minimalDaysInFirstWeek`.
     */
   var calendarWeekNumbering: js.UndefOr[
@@ -24,7 +24,7 @@ trait CalendarWeekNumbering extends StObject {
   ] = js.undefined
   
   /**
-    * @since 1.105.0 specifies the first day of the week starting with `0` (which is Sunday); if not defined,
+    * since 1.105.0 specifies the first day of the week starting with `0` (which is Sunday); if not defined,
     * the value taken from the locale is used
     */
   var firstDayOfWeek: js.UndefOr[int] = js.undefined
@@ -38,7 +38,7 @@ trait CalendarWeekNumbering extends StObject {
   var format: js.UndefOr[String] = js.undefined
   
   /**
-    * @since 1.105.0 minimal days at the beginning of the year which define the first calendar week; if not
+    * since 1.105.0 minimal days at the beginning of the year which define the first calendar week; if not
     * defined, the value taken from the locale is used
     */
   var minimalDaysInFirstWeek: js.UndefOr[int] = js.undefined

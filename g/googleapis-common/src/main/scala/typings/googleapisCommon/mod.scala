@@ -56,6 +56,23 @@ object mod {
     def this(options: AwsClientOptions) = this()
     def this(options: AwsClientOptions, additionalOptions: RefreshOptions) = this()
   }
+  /* static members */
+  object AwsClient {
+    
+    @JSImport("googleapis-common", "AwsClient")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("googleapis-common", "AwsClient.AWS_EC2_METADATA_IPV4_ADDRESS")
+    @js.native
+    def AWS_EC2_METADATA_IPV4_ADDRESS: String = js.native
+    inline def AWS_EC2_METADATA_IPV4_ADDRESS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AWS_EC2_METADATA_IPV4_ADDRESS")(x.asInstanceOf[js.Any])
+    
+    @JSImport("googleapis-common", "AwsClient.AWS_EC2_METADATA_IPV6_ADDRESS")
+    @js.native
+    def AWS_EC2_METADATA_IPV6_ADDRESS: String = js.native
+    inline def AWS_EC2_METADATA_IPV6_ADDRESS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AWS_EC2_METADATA_IPV6_ADDRESS")(x.asInstanceOf[js.Any])
+  }
   
   /* note: abstract class */ @JSImport("googleapis-common", "BaseExternalAccountClient")
   @js.native

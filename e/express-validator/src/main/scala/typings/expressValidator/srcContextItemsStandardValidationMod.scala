@@ -17,6 +17,18 @@ object srcContextItemsStandardValidationMod {
        with ContextItem {
     def this(validator: StandardValidator, negated: Boolean) = this()
     def this(validator: StandardValidator, negated: Boolean, options: js.Array[Any]) = this()
+    def this(
+      validator: StandardValidator,
+      negated: Boolean,
+      options: js.Array[Any],
+      stringify: js.Function1[/* value */ Any, String]
+    ) = this()
+    def this(
+      validator: StandardValidator,
+      negated: Boolean,
+      options: Unit,
+      stringify: js.Function1[/* value */ Any, String]
+    ) = this()
     
     var message: Any = js.native
     
@@ -26,6 +38,8 @@ object srcContextItemsStandardValidationMod {
     
     /* CompleteClass */
     override def run(context: Context, value: Any, meta: Meta): js.Promise[Unit] = js.native
+    
+    /* private */ val stringify: Any = js.native
     
     /* private */ val validator: Any = js.native
   }

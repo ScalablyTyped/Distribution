@@ -1,6 +1,5 @@
 package typings.svgSpritemapWebpackPlugin
 
-import typings.glob.mod.IOptions
 import typings.svgSpritemapWebpackPlugin.anon.Assets
 import typings.svgSpritemapWebpackPlugin.anon.Callback
 import typings.svgSpritemapWebpackPlugin.anon.Chunk
@@ -47,7 +46,9 @@ object mod {
     /**
       * Options object to pass to [`glob`](http://npmjs.com/package/glob) to find the sprites.
       */
-    var options: js.UndefOr[IOptions] = js.undefined
+    var options: js.UndefOr[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify GlobOptions */ Any
+      ] = js.undefined
   }
   object InputOptions {
     
@@ -63,7 +64,9 @@ object mod {
       
       inline def setAllowDuplicatesUndefined: Self = StObject.set(x, "allowDuplicates", js.undefined)
       
-      inline def setOptions(value: IOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify GlobOptions */ Any
+      ): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
       inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     }

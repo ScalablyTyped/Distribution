@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeUserResponse extends StObject {
   
   /**
-    * The user's physical address.
+    * The physical address of the user.
     */
   var Addresses: js.UndefOr[typings.awsSdk.clientsIdentitystoreMod.Addresses] = js.undefined
   
   /**
-    * The user's name value for display.
+    * The display name of the user.
     */
   var DisplayName: js.UndefOr[SensitiveStringType] = js.undefined
   
   /**
-    * The user's email value.
+    * The email address of the user.
     */
   var Emails: js.UndefOr[typings.awsSdk.clientsIdentitystoreMod.Emails] = js.undefined
   
@@ -32,7 +32,7 @@ trait DescribeUserResponse extends StObject {
   var IdentityStoreId: typings.awsSdk.clientsIdentitystoreMod.IdentityStoreId
   
   /**
-    * A string containing the user's geographical region or location.
+    * A string containing the geographical region or location of the user.
     */
   var Locale: js.UndefOr[SensitiveStringType] = js.undefined
   
@@ -67,7 +67,7 @@ trait DescribeUserResponse extends StObject {
   var Timezone: js.UndefOr[SensitiveStringType] = js.undefined
   
   /**
-    * A string containing the user's title.
+    * A string containing the title of the user.
     */
   var Title: js.UndefOr[SensitiveStringType] = js.undefined
   
@@ -82,7 +82,7 @@ trait DescribeUserResponse extends StObject {
   var UserName: js.UndefOr[typings.awsSdk.clientsIdentitystoreMod.UserName] = js.undefined
   
   /**
-    * A string indicating the user's type.
+    * A string indicating the type of user.
     */
   var UserType: js.UndefOr[SensitiveStringType] = js.undefined
 }

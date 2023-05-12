@@ -15,7 +15,7 @@ trait UiKeyPressable extends StObject {
     * Use this to add a function as an event handler for the keypress event so that the function is called when you type a character in the specific text or number field.
     * For a sample JavaScript code that uses the addOnKeyPress method to configure the auto-completion experience, see Sample: Auto-complete in CRM controls.
     * @deprecated Deprecated in v9.1; Use a custom control.
-    * @see {@link https://docs.microsoft.com/en-us/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#some-client-apis-are-deprecated External Link: Deprecated Client APIs}
+    * @see {@link https://learn.microsoft.com/en-us/power-platform/important-changes-coming#some-client-apis-are-deprecated External Link: Deprecated Client APIs}
     * @param handler The function reference.
     */
   def addOnKeyPress(handler: ContextSensitiveHandler): Unit
@@ -23,14 +23,14 @@ trait UiKeyPressable extends StObject {
   /**
     * Use this to manually fire an event handler that you created for a specific text or number field to be executed on the keypress event.
     * @deprecated Deprecated in v9.1; Use a custom control.
-    * @see {@link https://docs.microsoft.com/en-us/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#some-client-apis-are-deprecated External Link: Deprecated Client APIs}
+    * @see {@link https://learn.microsoft.com/en-us/power-platform/important-changes-coming#some-client-apis-are-deprecated External Link: Deprecated Client APIs}
     */
   def fireOnKeyPress(): Unit
   
   /**
     * Use this to remove an event handler for a text or number field that you added using addOnKeyPress.
     * @deprecated Deprecated in v9.1; Use a custom control.
-    * @see {@link https://docs.microsoft.com/en-us/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#some-client-apis-are-deprecated External Link: Deprecated Client APIs}
+    * @see {@link https://learn.microsoft.com/en-us/power-platform/important-changes-coming#some-client-apis-are-deprecated External Link: Deprecated Client APIs}
     * Remarks:  If an anonymous function is set using addOnKeyPress, it can’t be removed using this method.
     * @param handler The function reference.
     */

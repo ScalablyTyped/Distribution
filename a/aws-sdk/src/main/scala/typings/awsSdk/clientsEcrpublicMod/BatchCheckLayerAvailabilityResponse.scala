@@ -12,7 +12,7 @@ trait BatchCheckLayerAvailabilityResponse extends StObject {
   var failures: js.UndefOr[LayerFailureList] = js.undefined
   
   /**
-    * A list of image layer objects corresponding to the image layer references in the request.
+    * A list of image layer objects that correspond to the image layer references in the request.
     */
   var layers: js.UndefOr[LayerList] = js.undefined
 }

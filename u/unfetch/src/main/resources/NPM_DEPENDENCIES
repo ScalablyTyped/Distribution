@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "unfetch" : "4.2.0"
+      "unfetch" : "5.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "unfetch" : "4.2.0"
+      "unfetch" : "5.0.0"
     }
   ],
   "compile-devDependencies" : [

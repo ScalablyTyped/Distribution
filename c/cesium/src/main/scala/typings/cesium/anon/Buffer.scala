@@ -1,5 +1,6 @@
 package typings.cesium.anon
 
+import typings.cesium.mod.Credit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -12,7 +13,7 @@ trait Buffer extends StObject {
   
   var createdByUpsampling: js.UndefOr[Boolean] = js.undefined
   
-  var credits: js.UndefOr[js.Array[typings.cesium.mod.Credit]] = js.undefined
+  var credits: js.UndefOr[js.Array[Credit]] = js.undefined
   
   var negativeAltitudeExponentBias: Double
   
@@ -42,11 +43,11 @@ object Buffer {
     
     inline def setCreatedByUpsamplingUndefined: Self = StObject.set(x, "createdByUpsampling", js.undefined)
     
-    inline def setCredits(value: js.Array[typings.cesium.mod.Credit]): Self = StObject.set(x, "credits", value.asInstanceOf[js.Any])
+    inline def setCredits(value: js.Array[Credit]): Self = StObject.set(x, "credits", value.asInstanceOf[js.Any])
     
     inline def setCreditsUndefined: Self = StObject.set(x, "credits", js.undefined)
     
-    inline def setCreditsVarargs(value: typings.cesium.mod.Credit*): Self = StObject.set(x, "credits", js.Array(value*))
+    inline def setCreditsVarargs(value: Credit*): Self = StObject.set(x, "credits", js.Array(value*))
     
     inline def setNegativeAltitudeExponentBias(value: Double): Self = StObject.set(x, "negativeAltitudeExponentBias", value.asInstanceOf[js.Any])
     

@@ -1,7 +1,7 @@
 
 # Scala.js typings for nouislider
 
-Typings are for version 15.6.1
+Typings are for version 15.7.0
 
 ## Library description:
 noUiSlider is a lightweight JavaScript range slider.

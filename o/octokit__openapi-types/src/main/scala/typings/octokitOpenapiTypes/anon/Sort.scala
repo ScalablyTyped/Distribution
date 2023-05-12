@@ -7,7 +7,6 @@ import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.created_
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.desc
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.forks
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.full_name
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.internal
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.member_
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.public
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.pushed
@@ -19,24 +18,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Sort extends StObject {
   
-  /** The order to sort by. Default: `asc` when using `full_name`, otherwise `desc`. */
+  /** @description The order to sort by. Default: `asc` when using `full_name`, otherwise `desc`. */
   var direction: js.UndefOr[asc | desc] = js.undefined
   
-  /** Page number of the results to fetch. */
   var page: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['page'] */ js.Any
   ] = js.undefined
   
-  /** The number of results per page (max 100). */
   var per_page: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['per-page'] */ js.Any
   ] = js.undefined
   
-  /** The property to sort the results by. */
+  /** @description The property to sort the results by. */
   var sort: js.UndefOr[created_ | updated | pushed | full_name] = js.undefined
   
-  /** Specifies the types of repositories you want returned. If your organization is associated with an enterprise account using GitHub Enterprise Cloud or GitHub Enterprise Server 2.20+, `type` can also be `internal`. However, the `internal` value is not yet supported when a GitHub App calls this API with an installation access token. */
-  var `type`: js.UndefOr[all | public | `private` | forks | sources | member_ | internal] = js.undefined
+  /** @description Specifies the types of repositories you want returned. */
+  var `type`: js.UndefOr[all | public | `private` | forks | sources | member_] = js.undefined
 }
 object Sort {
   
@@ -68,7 +65,7 @@ object Sort {
     
     inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     
-    inline def setType(value: all | public | `private` | forks | sources | member_ | internal): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: all | public | `private` | forks | sources | member_): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }

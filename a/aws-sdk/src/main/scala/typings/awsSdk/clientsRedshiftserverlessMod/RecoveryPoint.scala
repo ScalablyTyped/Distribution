@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RecoveryPoint extends StObject {
   
   /**
+    * The Amazon Resource Name (ARN) of the namespace the recovery point is associated with.
+    */
+  var namespaceArn: js.UndefOr[String] = js.undefined
+  
+  /**
     * The name of the namespace the recovery point is associated with.
     */
   var namespaceName: js.UndefOr[NamespaceName] = js.undefined
@@ -40,6 +45,10 @@ object RecoveryPoint {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: RecoveryPoint] (val x: Self) extends AnyVal {
+    
+    inline def setNamespaceArn(value: String): Self = StObject.set(x, "namespaceArn", value.asInstanceOf[js.Any])
+    
+    inline def setNamespaceArnUndefined: Self = StObject.set(x, "namespaceArn", js.undefined)
     
     inline def setNamespaceName(value: NamespaceName): Self = StObject.set(x, "namespaceName", value.asInstanceOf[js.Any])
     

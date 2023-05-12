@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DeleteLocalGatewayRouteTableVirtualInterfaceGroupAssociationResult extends StObject {
   
+  /**
+    * Information about the association.
+    */
   var LocalGatewayRouteTableVirtualInterfaceGroupAssociation: js.UndefOr[
     typings.awsSdk.clientsEc2Mod.LocalGatewayRouteTableVirtualInterfaceGroupAssociation
   ] = js.undefined

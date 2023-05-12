@@ -1,8 +1,7 @@
 package typings.angularCompilerCli
 
+import typings.angularCompilerCli.anon.ClassDeclarationDeclarati
 import typings.angularCompilerCli.srcNgtscFileSystemSrcTypesMod.AbsoluteFsPath
-import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.ClassDeclaration
-import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.DeclarationNode
 import typings.std.ReadonlySet
 import typings.std.Set
 import typings.typescript.mod.Expression
@@ -28,19 +27,19 @@ object srcNgtscMetadataSrcResourceRegistryMod {
     
     /* private */ var externalTemplateToComponentsMap: Any = js.native
     
-    def getComponentsWithStyle(styleUrl: AbsoluteFsPath): ReadonlySet[ClassDeclaration[DeclarationNode]] = js.native
+    def getComponentsWithStyle(styleUrl: AbsoluteFsPath): ReadonlySet[ClassDeclarationDeclarati] = js.native
     
-    def getComponentsWithTemplate(template: AbsoluteFsPath): ReadonlySet[ClassDeclaration[DeclarationNode]] = js.native
+    def getComponentsWithTemplate(template: AbsoluteFsPath): ReadonlySet[ClassDeclarationDeclarati] = js.native
     
-    def getStyles(component: ClassDeclaration[DeclarationNode]): Set[Resource] = js.native
+    def getStyles(component: ClassDeclarationDeclarati): Set[Resource] = js.native
     
-    def getTemplate(component: ClassDeclaration[DeclarationNode]): Resource | Null = js.native
+    def getTemplate(component: ClassDeclarationDeclarati): Resource | Null = js.native
     
-    def registerResources(resources: ComponentResources, component: ClassDeclaration[DeclarationNode]): Unit = js.native
+    def registerResources(resources: ComponentResources, component: ClassDeclarationDeclarati): Unit = js.native
     
-    def registerStyle(styleResource: Resource, component: ClassDeclaration[DeclarationNode]): Unit = js.native
+    def registerStyle(styleResource: Resource, component: ClassDeclarationDeclarati): Unit = js.native
     
-    def registerTemplate(templateResource: Resource, component: ClassDeclaration[DeclarationNode]): Unit = js.native
+    def registerTemplate(templateResource: Resource, component: ClassDeclarationDeclarati): Unit = js.native
   }
   
   inline def isExternalResource(resource: Resource): /* is @angular/compiler-cli.@angular/compiler-cli/src/ngtsc/metadata/src/resource_registry.ExternalResource */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isExternalResource")(resource.asInstanceOf[js.Any]).asInstanceOf[/* is @angular/compiler-cli.@angular/compiler-cli/src/ngtsc/metadata/src/resource_registry.ExternalResource */ Boolean]

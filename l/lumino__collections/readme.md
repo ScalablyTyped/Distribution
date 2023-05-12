@@ -1,7 +1,7 @@
 
 # Scala.js typings for lumino__collections
 
-Typings are for version 1.9.3
+Typings are for version 2.0.0
 
 ## Library description:
 Lumino Generic Collections

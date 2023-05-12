@@ -14,11 +14,11 @@ object CodeActionTriggerKind extends StObject {
   def apply(value: Double): js.UndefOr[CodeActionTriggerKind & Double] = js.native
   
   /**
-    * Code actions were requested automatically.
-    *
-    * This typically happens when current selection in a file changes, but can
-    * also be triggered when file content changes.
-    */
+  		 * Code actions were requested automatically.
+  		 *
+  		 * This typically happens when current selection in a file changes, but can
+  		 * also be triggered when file content changes.
+  		 */
   @js.native
   sealed trait Automatic
     extends StObject
@@ -26,8 +26,8 @@ object CodeActionTriggerKind extends StObject {
   /* 2 */ val Automatic: typings.vscode.mod.CodeActionTriggerKind.Automatic & Double = js.native
   
   /**
-    * Code actions were explicitly requested by the user or by an extension.
-    */
+  		 * Code actions were explicitly requested by the user or by an extension.
+  		 */
   @js.native
   sealed trait Invoke
     extends StObject

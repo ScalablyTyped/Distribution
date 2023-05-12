@@ -3,10 +3,10 @@ package typings.hapiYar
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
 import typings.hapiCatbox.mod.Id
-import typings.hapiHapi.mod.CachePolicyOptions
-import typings.hapiHapi.mod.Plugin
-import typings.hapiHapi.mod.ReqRefDefaults
-import typings.hapiHapi.mod.ResponseToolkit
+import typings.hapiHapi.libTypesPluginMod.Plugin
+import typings.hapiHapi.libTypesRequestMod.ReqRefDefaults
+import typings.hapiHapi.libTypesResponseMod.ResponseToolkit
+import typings.hapiHapi.libTypesServerCacheMod.CachePolicyOptions
 import typings.hapiYar.anon.ClearInvalid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,7 +16,7 @@ object mod extends Shortcut {
   
   @JSImport("@hapi/yar", JSImport.Namespace)
   @js.native
-  val ^ : Plugin[YarOptions] = js.native
+  val ^ : Plugin[YarOptions, Unit] = js.native
   
   trait ServerYar extends StObject {
     
@@ -181,10 +181,10 @@ object mod extends Shortcut {
     }
   }
   
-  type _To = Plugin[YarOptions]
+  type _To = Plugin[YarOptions, Unit]
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: Plugin[YarOptions] = ^
+  override def _to: Plugin[YarOptions, Unit] = ^
   
   /* augmented module */
   object hapiHapiAugmentingMod {

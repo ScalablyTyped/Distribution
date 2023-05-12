@@ -6,38 +6,37 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Totalcount extends StObject {
   
-  var runners: js.UndefOr[
-    js.Array[
-      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['runner'] */ js.Any
-    ]
-  ] = js.undefined
+  var repositories: js.Array[
+    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['repository'] */ js.Any
+  ]
   
-  var total_count: js.UndefOr[Double] = js.undefined
+  var total_count: Double
 }
 object Totalcount {
   
-  inline def apply(): Totalcount = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(
+    repositories: js.Array[
+      /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['repository'] */ js.Any
+    ],
+    total_count: Double
+  ): Totalcount = {
+    val __obj = js.Dynamic.literal(repositories = repositories.asInstanceOf[js.Any], total_count = total_count.asInstanceOf[js.Any])
     __obj.asInstanceOf[Totalcount]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: Totalcount] (val x: Self) extends AnyVal {
     
-    inline def setRunners(
+    inline def setRepositories(
       value: js.Array[
-          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['runner'] */ js.Any
+          /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['repository'] */ js.Any
         ]
-    ): Self = StObject.set(x, "runners", value.asInstanceOf[js.Any])
+    ): Self = StObject.set(x, "repositories", value.asInstanceOf[js.Any])
     
-    inline def setRunnersUndefined: Self = StObject.set(x, "runners", js.undefined)
-    
-    inline def setRunnersVarargs(
-      value: (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['runner'] */ js.Any)*
-    ): Self = StObject.set(x, "runners", js.Array(value*))
+    inline def setRepositoriesVarargs(
+      value: (/* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['repository'] */ js.Any)*
+    ): Self = StObject.set(x, "repositories", js.Array(value*))
     
     inline def setTotal_count(value: Double): Self = StObject.set(x, "total_count", value.asInstanceOf[js.Any])
-    
-    inline def setTotal_countUndefined: Self = StObject.set(x, "total_count", js.undefined)
   }
 }

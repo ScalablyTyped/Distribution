@@ -27,6 +27,8 @@ object mod {
        with AgentOptions {
     
     var proxy: String | URL_
+    
+    var proxyRequestOptions: js.UndefOr[ProxyAgentRequestOptions] = js.undefined
   }
   object HttpProxyAgentOptions {
     
@@ -39,6 +41,10 @@ object mod {
     implicit open class MutableBuilder[Self <: HttpProxyAgentOptions] (val x: Self) extends AnyVal {
       
       inline def setProxy(value: String | URL_): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
+      
+      inline def setProxyRequestOptions(value: ProxyAgentRequestOptions): Self = StObject.set(x, "proxyRequestOptions", value.asInstanceOf[js.Any])
+      
+      inline def setProxyRequestOptionsUndefined: Self = StObject.set(x, "proxyRequestOptions", js.undefined)
     }
   }
   
@@ -47,6 +53,8 @@ object mod {
        with typings.node.httpsMod.AgentOptions {
     
     var proxy: String | URL_
+    
+    var proxyRequestOptions: js.UndefOr[ProxyAgentRequestOptions] = js.undefined
   }
   object HttpsProxyAgentOptions {
     
@@ -59,6 +67,44 @@ object mod {
     implicit open class MutableBuilder[Self <: HttpsProxyAgentOptions] (val x: Self) extends AnyVal {
       
       inline def setProxy(value: String | URL_): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
+      
+      inline def setProxyRequestOptions(value: ProxyAgentRequestOptions): Self = StObject.set(x, "proxyRequestOptions", value.asInstanceOf[js.Any])
+      
+      inline def setProxyRequestOptionsUndefined: Self = StObject.set(x, "proxyRequestOptions", js.undefined)
+    }
+  }
+  
+  trait ProxyAgentRequestOptions extends StObject {
+    
+    var ca: js.UndefOr[js.Array[String]] = js.undefined
+    
+    var headers: js.UndefOr[js.Object] = js.undefined
+    
+    var rejectUnauthorized: js.UndefOr[Boolean] = js.undefined
+  }
+  object ProxyAgentRequestOptions {
+    
+    inline def apply(): ProxyAgentRequestOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ProxyAgentRequestOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProxyAgentRequestOptions] (val x: Self) extends AnyVal {
+      
+      inline def setCa(value: js.Array[String]): Self = StObject.set(x, "ca", value.asInstanceOf[js.Any])
+      
+      inline def setCaUndefined: Self = StObject.set(x, "ca", js.undefined)
+      
+      inline def setCaVarargs(value: String*): Self = StObject.set(x, "ca", js.Array(value*))
+      
+      inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      
+      inline def setRejectUnauthorized(value: Boolean): Self = StObject.set(x, "rejectUnauthorized", value.asInstanceOf[js.Any])
+      
+      inline def setRejectUnauthorizedUndefined: Self = StObject.set(x, "rejectUnauthorized", js.undefined)
     }
   }
 }

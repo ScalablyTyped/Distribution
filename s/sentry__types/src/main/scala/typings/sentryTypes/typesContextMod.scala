@@ -1,7 +1,9 @@
 package typings.sentryTypes
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.sentryTypes.sentryTypesStrings.landscape
 import typings.sentryTypes.sentryTypesStrings.portrait
+import typings.sentryTypes.typesMiscMod.Primitive
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -72,6 +74,8 @@ object typesContextMod {
     var device: js.UndefOr[DeviceContext] = js.undefined
     
     var os: js.UndefOr[OsContext] = js.undefined
+    
+    var response: js.UndefOr[ResponseContext] = js.undefined
   }
   object Contexts {
     
@@ -98,6 +102,10 @@ object typesContextMod {
       inline def setOs(value: OsContext): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
       
       inline def setOsUndefined: Self = StObject.set(x, "os", js.undefined)
+      
+      inline def setResponse(value: ResponseContext): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+      
+      inline def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
     }
   }
   
@@ -419,6 +427,112 @@ object typesContextMod {
       inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
       inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    }
+  }
+  
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped {[ P in string ]: unknown} */ trait ResponseContext extends StObject {
+    
+    var body_size: js.UndefOr[Double] = js.undefined
+    
+    var cookies: js.UndefOr[js.Array[js.Array[String]] | (Record[String, String])] = js.undefined
+    
+    var headers: js.UndefOr[Record[String, String]] = js.undefined
+    
+    var status_code: js.UndefOr[Double] = js.undefined
+    
+    var `type`: js.UndefOr[String] = js.undefined
+  }
+  object ResponseContext {
+    
+    inline def apply(): ResponseContext = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ResponseContext]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResponseContext] (val x: Self) extends AnyVal {
+      
+      inline def setBody_size(value: Double): Self = StObject.set(x, "body_size", value.asInstanceOf[js.Any])
+      
+      inline def setBody_sizeUndefined: Self = StObject.set(x, "body_size", js.undefined)
+      
+      inline def setCookies(value: js.Array[js.Array[String]] | (Record[String, String])): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
+      
+      inline def setCookiesUndefined: Self = StObject.set(x, "cookies", js.undefined)
+      
+      inline def setCookiesVarargs(value: js.Array[String]*): Self = StObject.set(x, "cookies", js.Array(value*))
+      
+      inline def setHeaders(value: Record[String, String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      
+      inline def setStatus_code(value: Double): Self = StObject.set(x, "status_code", value.asInstanceOf[js.Any])
+      
+      inline def setStatus_codeUndefined: Self = StObject.set(x, "status_code", js.undefined)
+      
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    }
+  }
+  
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped {[ P in string ]: unknown} */ trait TraceContext extends StObject {
+    
+    var data: js.UndefOr[StringDictionary[Any]] = js.undefined
+    
+    var description: js.UndefOr[String] = js.undefined
+    
+    var op: js.UndefOr[String] = js.undefined
+    
+    var parent_span_id: js.UndefOr[String] = js.undefined
+    
+    var span_id: String
+    
+    var status: js.UndefOr[String] = js.undefined
+    
+    var tags: js.UndefOr[StringDictionary[Primitive]] = js.undefined
+    
+    var trace_id: String
+  }
+  object TraceContext {
+    
+    inline def apply(span_id: String, trace_id: String): TraceContext = {
+      val __obj = js.Dynamic.literal(span_id = span_id.asInstanceOf[js.Any], trace_id = trace_id.asInstanceOf[js.Any])
+      __obj.asInstanceOf[TraceContext]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TraceContext] (val x: Self) extends AnyVal {
+      
+      inline def setData(value: StringDictionary[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      
+      inline def setOp(value: String): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
+      
+      inline def setOpUndefined: Self = StObject.set(x, "op", js.undefined)
+      
+      inline def setParent_span_id(value: String): Self = StObject.set(x, "parent_span_id", value.asInstanceOf[js.Any])
+      
+      inline def setParent_span_idUndefined: Self = StObject.set(x, "parent_span_id", js.undefined)
+      
+      inline def setSpan_id(value: String): Self = StObject.set(x, "span_id", value.asInstanceOf[js.Any])
+      
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      
+      inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+      
+      inline def setTags(value: StringDictionary[Primitive]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      
+      inline def setTrace_id(value: String): Self = StObject.set(x, "trace_id", value.asInstanceOf[js.Any])
     }
   }
 }

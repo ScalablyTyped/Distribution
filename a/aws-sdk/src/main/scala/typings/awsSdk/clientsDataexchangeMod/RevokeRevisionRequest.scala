@@ -9,12 +9,12 @@ trait RevokeRevisionRequest extends StObject {
   /**
     * The unique identifier for a data set.
     */
-  var DataSetId: string
+  var DataSetId: _String
   
   /**
     * The unique identifier for a revision.
     */
-  var RevisionId: string
+  var RevisionId: _String
   
   /**
     * A required comment to inform subscribers of the reason their access to the revision was revoked.
@@ -23,7 +23,7 @@ trait RevokeRevisionRequest extends StObject {
 }
 object RevokeRevisionRequest {
   
-  inline def apply(DataSetId: string, RevisionId: string, RevocationComment: stringMin10Max512): RevokeRevisionRequest = {
+  inline def apply(DataSetId: _String, RevisionId: _String, RevocationComment: stringMin10Max512): RevokeRevisionRequest = {
     val __obj = js.Dynamic.literal(DataSetId = DataSetId.asInstanceOf[js.Any], RevisionId = RevisionId.asInstanceOf[js.Any], RevocationComment = RevocationComment.asInstanceOf[js.Any])
     __obj.asInstanceOf[RevokeRevisionRequest]
   }
@@ -31,9 +31,9 @@ object RevokeRevisionRequest {
   @scala.inline
   implicit open class MutableBuilder[Self <: RevokeRevisionRequest] (val x: Self) extends AnyVal {
     
-    inline def setDataSetId(value: string): Self = StObject.set(x, "DataSetId", value.asInstanceOf[js.Any])
+    inline def setDataSetId(value: _String): Self = StObject.set(x, "DataSetId", value.asInstanceOf[js.Any])
     
-    inline def setRevisionId(value: string): Self = StObject.set(x, "RevisionId", value.asInstanceOf[js.Any])
+    inline def setRevisionId(value: _String): Self = StObject.set(x, "RevisionId", value.asInstanceOf[js.Any])
     
     inline def setRevocationComment(value: stringMin10Max512): Self = StObject.set(x, "RevocationComment", value.asInstanceOf[js.Any])
   }

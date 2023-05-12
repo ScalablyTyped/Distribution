@@ -1,7 +1,7 @@
 
 # Scala.js typings for it-multipart
 
-Typings are for version 3.0.0
+Typings are for version 3.0.3
 
 ## Library description:
 Async iterable http multipart message parser

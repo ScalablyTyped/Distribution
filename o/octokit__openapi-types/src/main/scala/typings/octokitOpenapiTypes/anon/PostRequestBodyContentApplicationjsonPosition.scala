@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PostRequestBodyContentApplicationjsonPosition extends StObject {
   
+  /** Move a project column */
   var post: RequestBodyContentApplicationjsonPosition
 }
 object PostRequestBodyContentApplicationjsonPosition {

@@ -582,7 +582,7 @@ object libGridGridMod {
     
     /* private */ var getTableRecordsSyncCommands_ : Any = js.native
     
-    var groups: typings.nginstackWebFramework.libClassdefFieldGroupSetMod.^ = js.native
+    var groups: typings.nginstackEngine.libClassdefFieldGroupSetMod.^ = js.native
     
     /* private */ var handleAction: Any = js.native
     

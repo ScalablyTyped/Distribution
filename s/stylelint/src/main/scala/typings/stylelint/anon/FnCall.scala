@@ -1,7 +1,7 @@
 package typings.stylelint.anon
 
-import typings.cosmiconfig.anon.ClearCaches
 import typings.cosmiconfig.mod.Options
+import typings.cosmiconfig.mod.PublicExplorer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait FnCall extends StObject {
   
-  def apply(moduleName: String): ClearCaches = js.native
-  def apply(moduleName: String, options: Options): ClearCaches = js.native
+  def apply(moduleName: String): PublicExplorer = js.native
+  def apply(moduleName: String, options: Options): PublicExplorer = js.native
 }

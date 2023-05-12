@@ -4,7 +4,10 @@ import typings.floatingUiCore.srcTypesMod.ElementContext
 import typings.floatingUiCore.srcTypesMod.Padding
 import typings.floatingUiCore.srcTypesMod.Placement
 import typings.floatingUiDom.floatingUiDomStrings.bestFit
+import typings.floatingUiDom.floatingUiDomStrings.end
 import typings.floatingUiDom.floatingUiDomStrings.initialPlacement
+import typings.floatingUiDom.floatingUiDomStrings.none
+import typings.floatingUiDom.floatingUiDomStrings.start
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,6 +22,8 @@ trait PartialFlipOptionsDetectO extends StObject {
   var crossAxis: js.UndefOr[Boolean] = js.undefined
   
   var elementContext: js.UndefOr[ElementContext] = js.undefined
+  
+  var fallbackAxisSideDirection: js.UndefOr[none | start | end] = js.undefined
   
   var fallbackPlacements: js.UndefOr[js.Array[Placement]] = js.undefined
   
@@ -59,6 +64,10 @@ object PartialFlipOptionsDetectO {
     inline def setElementContext(value: ElementContext): Self = StObject.set(x, "elementContext", value.asInstanceOf[js.Any])
     
     inline def setElementContextUndefined: Self = StObject.set(x, "elementContext", js.undefined)
+    
+    inline def setFallbackAxisSideDirection(value: none | start | end): Self = StObject.set(x, "fallbackAxisSideDirection", value.asInstanceOf[js.Any])
+    
+    inline def setFallbackAxisSideDirectionUndefined: Self = StObject.set(x, "fallbackAxisSideDirection", js.undefined)
     
     inline def setFallbackPlacements(value: js.Array[Placement]): Self = StObject.set(x, "fallbackPlacements", value.asInstanceOf[js.Any])
     

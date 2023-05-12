@@ -2,6 +2,7 @@ package typings.three
 
 import typings.three.examplesJsmWebxrXrhandmeshmodelMod.XRHandMeshModel
 import typings.three.srcCoreBufferGeometryMod.BufferGeometry
+import typings.three.srcCoreBufferGeometryMod.NormalBufferAttributes
 import typings.three.srcCoreEventDispatcherMod.Event
 import typings.three.srcCoreRaycasterMod.Intersection
 import typings.three.srcMaterialsMaterialMod.Material
@@ -9,6 +10,7 @@ import typings.three.srcThreeMod.Mesh
 import typings.three.srcThreeMod.MeshBasicMaterial
 import typings.three.srcThreeMod.Object3D
 import typings.three.srcThreeMod.Raycaster
+import typings.three.srcThreeMod.SphereGeometry
 import typings.three.srcThreeMod.Texture
 import typings.three.srcThreeMod.Vector3
 import typings.webxr.XRInputSource
@@ -40,10 +42,7 @@ object examplesJsmWebxrOculusHandPointerModelMod {
     
     def createPointer(): Unit = js.native
     
-    var cursorObject: (Mesh[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SphereBufferGeometry */ Any, 
-        MeshBasicMaterial
-      ]) | Null = js.native
+    var cursorObject: (Mesh[SphereGeometry, MeshBasicMaterial]) | Null = js.native
     
     var envMap: Texture | Null = js.native
     
@@ -59,15 +58,18 @@ object examplesJsmWebxrOculusHandPointerModelMod {
     
     def isPinched(): Boolean = js.native
     
-    var mesh: (Mesh[BufferGeometry, Material | js.Array[Material]]) | Null = js.native
+    var mesh: (Mesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]]) | Null = js.native
     
     var motionController: XRHandMeshModel | Null = js.native
     
     var pinched: Boolean = js.native
     
-    var pointerGeometry: typings.three.srcThreeMod.BufferGeometry | Null = js.native
+    var pointerGeometry: typings.three.srcThreeMod.BufferGeometry[NormalBufferAttributes] | Null = js.native
     
-    var pointerMesh: (Mesh[typings.three.srcThreeMod.BufferGeometry, MeshBasicMaterial]) | Null = js.native
+    var pointerMesh: (Mesh[
+        typings.three.srcThreeMod.BufferGeometry[NormalBufferAttributes], 
+        MeshBasicMaterial
+      ]) | Null = js.native
     
     var pointerObject: Object3D[Event] | Null = js.native
     

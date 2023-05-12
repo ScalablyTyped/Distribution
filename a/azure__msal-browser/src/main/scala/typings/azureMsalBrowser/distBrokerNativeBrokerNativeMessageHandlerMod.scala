@@ -2,6 +2,7 @@ package typings.azureMsalBrowser
 
 import typings.azureMsalBrowser.distBrokerNativeBrokerNativeRequestMod.NativeExtensionRequestBody
 import typings.azureMsalBrowser.distConfigConfigurationMod.BrowserConfiguration
+import typings.azureMsalCommon.distTelemetryPerformanceIperformanceclientMod.IPerformanceClient
 import typings.azureMsalCommon.distUtilsConstantsMod.AuthenticationScheme
 import typings.azureMsalCommon.mod.Logger
 import org.scalablytyped.runtime.StObject
@@ -13,14 +14,35 @@ object distBrokerNativeBrokerNativeMessageHandlerMod {
   @JSImport("@azure/msal-browser/dist/broker/nativeBroker/NativeMessageHandler", "NativeMessageHandler")
   @js.native
   open class NativeMessageHandler protected () extends StObject {
-    def this(logger: Logger, handshakeTimeoutMs: Double) = this()
-    def this(logger: Logger, handshakeTimeoutMs: Double, extensionId: String) = this()
+    def this(logger: Logger, handshakeTimeoutMs: Double, performanceClient: IPerformanceClient) = this()
+    def this(
+      logger: Logger,
+      handshakeTimeoutMs: Double,
+      performanceClient: IPerformanceClient,
+      extensionId: String
+    ) = this()
     
     /* private */ var extensionId: Any = js.native
     
+    /* private */ var extensionVersion: Any = js.native
+    
+    /**
+      * Returns the Id for the browser extension this handler is communicating with
+      * @returns
+      */
+    def getExtensionId(): js.UndefOr[String] = js.native
+    
+    /**
+      * Returns the version for the browser extension this handler is communicating with
+      * @returns
+      */
+    def getExtensionVersion(): js.UndefOr[String] = js.native
+    
+    /* private */ val handshakeEvent: Any = js.native
+    
     /* private */ var handshakeResolvers: Any = js.native
     
-    /* private */ var handshakeTimeoutMs: Any = js.native
+    /* private */ val handshakeTimeoutMs: Any = js.native
     
     /* private */ var logger: Any = js.native
     
@@ -37,6 +59,8 @@ object distBrokerNativeBrokerNativeMessageHandlerMod {
       * @param event
       */
     /* private */ var onWindowMessage: Any = js.native
+    
+    /* private */ val performanceClient: Any = js.native
     
     /* private */ var resolvers: Any = js.native
     
@@ -55,7 +79,7 @@ object distBrokerNativeBrokerNativeMessageHandlerMod {
     
     /* private */ var timeoutId: Any = js.native
     
-    /* private */ var windowListener: Any = js.native
+    /* private */ val windowListener: Any = js.native
   }
   /* static members */
   object NativeMessageHandler {
@@ -66,10 +90,11 @@ object distBrokerNativeBrokerNativeMessageHandlerMod {
     
     /**
       * Returns an instance of the MessageHandler that has successfully established a connection with an extension
-      * @param logger
-      * @param handshakeTimeoutMs
+      * @param {Logger} logger
+      * @param {number} handshakeTimeoutMs
+      * @param {IPerformanceClient} performanceClient
       */
-    inline def createProvider(logger: Logger, handshakeTimeoutMs: Double): js.Promise[NativeMessageHandler] = (^.asInstanceOf[js.Dynamic].applyDynamic("createProvider")(logger.asInstanceOf[js.Any], handshakeTimeoutMs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[NativeMessageHandler]]
+    inline def createProvider(logger: Logger, handshakeTimeoutMs: Double, performanceClient: IPerformanceClient): js.Promise[NativeMessageHandler] = (^.asInstanceOf[js.Dynamic].applyDynamic("createProvider")(logger.asInstanceOf[js.Any], handshakeTimeoutMs.asInstanceOf[js.Any], performanceClient.asInstanceOf[js.Any])).asInstanceOf[js.Promise[NativeMessageHandler]]
     
     /**
       * Returns boolean indicating whether or not the request should attempt to use native broker

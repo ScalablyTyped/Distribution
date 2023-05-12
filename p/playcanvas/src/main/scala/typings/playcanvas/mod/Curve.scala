@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param {number[]} [data] - An array of keys (pairs of numbers with the time first and value
   * second).
   * @example
-  * var curve = new pc.Curve([
+  * const curve = new pc.Curve([
   *     0, 0,        // At 0 time, value of 0
   *     0.33, 2,     // At 0.33 time, value of 2
   *     0.66, 2.6,   // At 0.66 time, value of 2.6
@@ -41,7 +41,7 @@ open class Curve () extends StObject {
     */
   def add(time: Double, value: Double): js.Array[Double] = js.native
   
-  def closest(time: Any): js.Array[Double] = js.native
+  def closest(time: Any): Any = js.native
   
   /**
     * Return a specific key.
@@ -51,7 +51,7 @@ open class Curve () extends StObject {
     */
   def get(index: Double): js.Array[Double] = js.native
   
-  var keys: js.Array[js.Array[Double]] = js.native
+  var keys: js.Array[Any] = js.native
   
   /**
     * Get the number of keys in the curve.
@@ -87,9 +87,9 @@ open class Curve () extends StObject {
   def sort(): Unit = js.native
   
   /**
-    * Controls how {@link CURVE_SPLINE} tangents are calculated. Valid range is between 0 and
-    * 1 where 0 results in a non-smooth curve (equivalent to linear interpolation) and 1
-    * results in a very smooth curve. Use 0.5 for a Catmull-rom spline.
+    * Controls how {@link CURVE_SPLINE} tangents are calculated. Valid range is between 0 and 1
+    * where 0 results in a non-smooth curve (equivalent to linear interpolation) and 1 results in
+    * a very smooth curve. Use 0.5 for a Catmull-rom spline.
     *
     * @type {number}
     */

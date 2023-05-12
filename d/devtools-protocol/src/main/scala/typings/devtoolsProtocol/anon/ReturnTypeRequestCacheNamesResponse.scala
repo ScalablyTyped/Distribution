@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ReturnTypeRequestCacheNamesResponse extends StObject {
   
-  var paramsType: js.Array[RequestCacheNamesRequest]
+  var paramsType: js.Array[js.UndefOr[RequestCacheNamesRequest]]
   
   var returnType: RequestCacheNamesResponse
 }
 object ReturnTypeRequestCacheNamesResponse {
   
-  inline def apply(paramsType: js.Array[RequestCacheNamesRequest], returnType: RequestCacheNamesResponse): ReturnTypeRequestCacheNamesResponse = {
+  inline def apply(paramsType: js.Array[js.UndefOr[RequestCacheNamesRequest]], returnType: RequestCacheNamesResponse): ReturnTypeRequestCacheNamesResponse = {
     val __obj = js.Dynamic.literal(paramsType = paramsType.asInstanceOf[js.Any], returnType = returnType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReturnTypeRequestCacheNamesResponse]
   }
@@ -22,9 +22,9 @@ object ReturnTypeRequestCacheNamesResponse {
   @scala.inline
   implicit open class MutableBuilder[Self <: ReturnTypeRequestCacheNamesResponse] (val x: Self) extends AnyVal {
     
-    inline def setParamsType(value: js.Array[RequestCacheNamesRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
+    inline def setParamsType(value: js.Array[js.UndefOr[RequestCacheNamesRequest]]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    inline def setParamsTypeVarargs(value: RequestCacheNamesRequest*): Self = StObject.set(x, "paramsType", js.Array(value*))
+    inline def setParamsTypeVarargs(value: js.UndefOr[RequestCacheNamesRequest]*): Self = StObject.set(x, "paramsType", js.Array(value*))
     
     inline def setReturnType(value: RequestCacheNamesResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }

@@ -1,7 +1,7 @@
 package typings.openui5
 
 import typings.openui5.anon.Bypassed
-import typings.openui5.anon.`30`
+import typings.openui5.anon.`38`
 import typings.openui5.sap.ClassInfo
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -3661,6 +3661,8 @@ object sapUiCoreRoutingRouterMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:beforeRouteMatched beforeRouteMatched} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -3672,6 +3674,8 @@ object sapUiCoreRoutingRouterMod {
     oParameters: js.Object): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:bypassed bypassed} to attached listeners.
       *
       * The event will get fired, if none of the routes of the router is matching.
@@ -3685,6 +3689,8 @@ object sapUiCoreRoutingRouterMod {
     oParameters: js.Object): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:routeMatched routeMatched} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -3696,6 +3702,8 @@ object sapUiCoreRoutingRouterMod {
     oParameters: js.Object): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:routePatternMatched routePatternMatched} to attached listeners.
       *
       * This event is similar to `routeMatched`. But it will only fire for the route that has a matching pattern,
@@ -3711,6 +3719,7 @@ object sapUiCoreRoutingRouterMod {
     
     /**
       * @deprecated (since 1.28) - use {@link #getViews} instead.
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:viewCreated viewCreated} to attached listeners.
       *
@@ -3980,6 +3989,34 @@ object sapUiCoreRoutingRouterMod {
       */
     oParameters: js.Object,
       /**
+      * If set to `true`, the hash is replaced, and there will be no entry in the browser history. If set to
+      * `false`, the hash is set and the entry is stored in the browser history.
+      */
+    bReplace: Boolean
+    ): this.type = js.native
+    def navTo(
+      /**
+      * The name of the route
+      */
+    sName: String,
+      /**
+      * The parameters for the route. As of Version 1.75 the recommendation is naming the query parameter with
+      * a leading "?" character, which is identical to the definition in the route's pattern. The old syntax
+      * without a leading "?" character is deprecated. e.g. **Route:** `{parameterName1}/:parameterName2:/{?queryParameterName}`
+      * **Parameter:**
+      * ```javascript
+      *
+      * 				{
+      * 					parameterName1: "parameterValue1",
+      * 					parameterName2: "parameterValue2",
+      * 					"?queryParameterName": {
+      * 						queryParameterName1: "queryParameterValue1"
+      * 					}
+      * 				}
+      * 				```
+      */
+    oParameters: js.Object,
+      /**
       * Information for route name and parameters of the router in nested components. When any target of the
       * route which is specified with the `sName` parameter loads a component and a route of this component whose
       * pattern is different than an empty string should be matched directly with this navTo call, the route
@@ -4024,7 +4061,7 @@ object sapUiCoreRoutingRouterMod {
       * target can be given within the `componentTargetInfo` property which contains the same properties as the
       * top level.
       */
-    oComponentTargetInfo: `30`
+    oComponentTargetInfo: `38`
     ): this.type = js.native
     def navTo(
       /**
@@ -4056,7 +4093,35 @@ object sapUiCoreRoutingRouterMod {
       * target can be given within the `componentTargetInfo` property which contains the same properties as the
       * top level.
       */
-    oComponentTargetInfo: `30`,
+    oComponentTargetInfo: `38`,
+      /**
+      * If set to `true`, the hash is replaced, and there will be no entry in the browser history. If set to
+      * `false`, the hash is set and the entry is stored in the browser history.
+      */
+    bReplace: Boolean
+    ): this.type = js.native
+    def navTo(
+      /**
+      * The name of the route
+      */
+    sName: String,
+      /**
+      * The parameters for the route. As of Version 1.75 the recommendation is naming the query parameter with
+      * a leading "?" character, which is identical to the definition in the route's pattern. The old syntax
+      * without a leading "?" character is deprecated. e.g. **Route:** `{parameterName1}/:parameterName2:/{?queryParameterName}`
+      * **Parameter:**
+      * ```javascript
+      *
+      * 				{
+      * 					parameterName1: "parameterValue1",
+      * 					parameterName2: "parameterValue2",
+      * 					"?queryParameterName": {
+      * 						queryParameterName1: "queryParameterValue1"
+      * 					}
+      * 				}
+      * 				```
+      */
+    oParameters: Unit,
       /**
       * If set to `true`, the hash is replaced, and there will be no entry in the browser history. If set to
       * `false`, the hash is set and the entry is stored in the browser history.
@@ -4130,7 +4195,7 @@ object sapUiCoreRoutingRouterMod {
       * target can be given within the `componentTargetInfo` property which contains the same properties as the
       * top level.
       */
-    oComponentTargetInfo: `30`
+    oComponentTargetInfo: `38`
     ): this.type = js.native
     def navTo(
       /**
@@ -4162,7 +4227,7 @@ object sapUiCoreRoutingRouterMod {
       * target can be given within the `componentTargetInfo` property which contains the same properties as the
       * top level.
       */
-    oComponentTargetInfo: `30`,
+    oComponentTargetInfo: `38`,
       /**
       * If set to `true`, the hash is replaced, and there will be no entry in the browser history. If set to
       * `false`, the hash is set and the entry is stored in the browser history.
@@ -4171,6 +4236,8 @@ object sapUiCoreRoutingRouterMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Will trigger routing events + place targets for routes matching the string.
       */
     def parse(/**

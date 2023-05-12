@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetParametersQueryPerpageRepositoryid extends StObject {
   
   /**
-    * Lists the authenticated user's codespaces.
+    * List codespaces for the authenticated user
+    * @description Lists the authenticated user's codespaces.
     *
     * You must authenticate using an access token with the `codespace` scope to use this endpoint.
     *
@@ -16,7 +17,8 @@ trait GetParametersQueryPerpageRepositoryid extends StObject {
   var get: ParametersQueryPerpageRepositoryid
   
   /**
-    * Creates a new codespace, owned by the authenticated user.
+    * Create a codespace for the authenticated user
+    * @description Creates a new codespace, owned by the authenticated user.
     *
     * This endpoint requires either a `repository_id` OR a `pull_request` but not both.
     *
@@ -24,11 +26,11 @@ trait GetParametersQueryPerpageRepositoryid extends StObject {
     *
     * GitHub Apps must have write access to the `codespaces` repository permission to use this endpoint.
     */
-  var post: RequestBodyContent350
+  var post: RequestBodyContent372
 }
 object GetParametersQueryPerpageRepositoryid {
   
-  inline def apply(get: ParametersQueryPerpageRepositoryid, post: RequestBodyContent350): GetParametersQueryPerpageRepositoryid = {
+  inline def apply(get: ParametersQueryPerpageRepositoryid, post: RequestBodyContent372): GetParametersQueryPerpageRepositoryid = {
     val __obj = js.Dynamic.literal(get = get.asInstanceOf[js.Any], post = post.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetParametersQueryPerpageRepositoryid]
   }
@@ -38,6 +40,6 @@ object GetParametersQueryPerpageRepositoryid {
     
     inline def setGet(value: ParametersQueryPerpageRepositoryid): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     
-    inline def setPost(value: RequestBodyContent350): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
+    inline def setPost(value: RequestBodyContent372): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
   }
 }

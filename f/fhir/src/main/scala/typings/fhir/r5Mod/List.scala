@@ -83,9 +83,9 @@ trait List
   var status: current | retired | `entered-in-error`
   
   /**
-    * Some purely arbitrary lists do not have a common subject, so this is optional.
+    * Some purely arbitrary lists do not have a common subject, so this is optional. Lists having multiple subjects may raise challenges for systems that base access control or other security considerations on linkages to 'subject'. E.g. if a List is associated with multiple Patient subjects, then it would be nominally part of multiple patient compartments, which might drive access rights.
     */
-  var subject: js.UndefOr[Reference] = js.undefined
+  var subject: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
     * A label for the list assigned by the author.
@@ -150,9 +150,11 @@ object List {
     
     inline def setStatus(value: current | retired | `entered-in-error`): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    inline def setSubject(value: Reference): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
+    inline def setSubject(value: js.Array[Reference]): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     
     inline def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
+    
+    inline def setSubjectVarargs(value: Reference*): Self = StObject.set(x, "subject", js.Array(value*))
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     

@@ -9,12 +9,17 @@ import typings.bitcoinjsLib.srcPaymentsMod.PaymentOpts
 import typings.bitcoinjsLib.srcPaymentsMod.Stack
 import typings.bitcoinjsLib.srcPsbtMod.PsbtOptsOptional
 import typings.bitcoinjsLib.srcScriptSignatureMod.ScriptSignature
+import typings.bitcoinjsLib.srcTypesMod.TinySecp256k1Interface
 import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("bitcoinjs-lib", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("bitcoinjs-lib", "Block")
   @js.native
@@ -161,6 +166,9 @@ object mod {
     inline def taggedHash(prefix: TaggedHashPrefix, data: Buffer): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("taggedHash")(prefix.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   }
   
+  inline def initEccLib(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initEccLib")().asInstanceOf[Unit]
+  inline def initEccLib(eccLib: TinySecp256k1Interface): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initEccLib")(eccLib.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
   object networks {
     
     @JSImport("bitcoinjs-lib", "networks.bitcoin")
@@ -196,6 +204,9 @@ object mod {
     
     inline def p2sh(a: Payment): Payment = ^.asInstanceOf[js.Dynamic].applyDynamic("p2sh")(a.asInstanceOf[js.Any]).asInstanceOf[Payment]
     inline def p2sh(a: Payment, opts: PaymentOpts): Payment = (^.asInstanceOf[js.Dynamic].applyDynamic("p2sh")(a.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Payment]
+    
+    inline def p2tr(a: Payment): Payment = ^.asInstanceOf[js.Dynamic].applyDynamic("p2tr")(a.asInstanceOf[js.Any]).asInstanceOf[Payment]
+    inline def p2tr(a: Payment, opts: PaymentOpts): Payment = (^.asInstanceOf[js.Dynamic].applyDynamic("p2tr")(a.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Payment]
     
     inline def p2wpkh(a: Payment): Payment = ^.asInstanceOf[js.Dynamic].applyDynamic("p2wpkh")(a.asInstanceOf[js.Any]).asInstanceOf[Payment]
     inline def p2wpkh(a: Payment, opts: PaymentOpts): Payment = (^.asInstanceOf[js.Dynamic].applyDynamic("p2wpkh")(a.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Payment]

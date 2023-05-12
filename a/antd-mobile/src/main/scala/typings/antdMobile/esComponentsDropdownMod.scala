@@ -2,7 +2,7 @@ package typings.antdMobile
 
 import typings.antdMobile.anon.PartialactiveKeystringnul
 import typings.antdMobile.anon.WeakValidationMapactiveKe
-import typings.antdMobile.anon.activeKeystringnullundefi
+import typings.antdMobile.anon.activeKeystringnullundefiActiveKey
 import typings.antdMobile.esComponentsDropdownItemMod.DropdownItemProps
 import typings.react.mod.FC
 import typings.react.mod.ReactElement
@@ -12,13 +12,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object esComponentsDropdownMod {
   
-  /* Inlined react.react.ForwardRefExoticComponent<{  activeKey :string | null | undefined,   defaultActiveKey :string | null | undefined,   closeOnMaskClick :boolean | undefined,   closeOnClickAway :boolean | undefined,   onChange :(key : string | null): void | undefined,   arrow :react.react.ReactNode | undefined,   className :string | undefined,   style :react.react.CSSProperties & std.Partial<std.Record<never, string>> | undefined,   tabIndex :number | undefined,   children :react.react.ReactNode | undefined} & react.react.AriaAttributes & react.react.RefAttributes<antd-mobile.antd-mobile/es/components/dropdown/dropdown.DropdownRef>> & {  Item :react.react.FC<antd-mobile.antd-mobile/es/components/dropdown/item.DropdownItemProps>} */
+  /* Inlined react.react.ForwardRefExoticComponent<{  activeKey :string | null | undefined,   defaultActiveKey :string | null | undefined,   closeOnMaskClick :boolean | undefined,   closeOnClickAway :boolean | undefined,   onChange :(key : string | null): void | undefined,   arrow :react.react.ReactNode | undefined,   getContainer :antd-mobile.antd-mobile/es/utils/render-to-container.GetContainer | undefined,   className :string | undefined,   style :react.react.CSSProperties & std.Partial<std.Record<never, string>> | undefined,   tabIndex :number | undefined,   children :react.react.ReactNode | undefined} & react.react.AriaAttributes & react.react.RefAttributes<antd-mobile.antd-mobile/es/components/dropdown/dropdown.DropdownRef>> & {  Item :react.react.FC<antd-mobile.antd-mobile/es/components/dropdown/item.DropdownItemProps>} */
   object default {
     
     /**
       * **NOTE**: Exotic components are not callable.
       */
-    inline def apply(props: activeKeystringnullundefi): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+    inline def apply(props: activeKeystringnullundefiActiveKey): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
     
     @JSImport("antd-mobile/es/components/dropdown", JSImport.Default)
     @js.native

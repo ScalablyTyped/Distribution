@@ -17,7 +17,7 @@ object camerasFollowCameraMod {
   open class ArcFollowCamera protected () extends TargetCamera {
     /**
       * Instantiates a new ArcFollowCamera
-      * @see https://doc.babylonjs.com/features/cameras#follow-camera
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/cameras/camera_introduction#followcamera
       * @param name Define the name of the camera
       * @param alpha Define the rotation angle of the camera around the longitudinal axis
       * @param beta Define the rotation angle of the camera around the elevation axis
@@ -66,7 +66,7 @@ object camerasFollowCameraMod {
   open class FollowCamera protected () extends TargetCamera {
     /**
       * Instantiates the follow camera.
-      * @see https://doc.babylonjs.com/features/cameras#follow-camera
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/cameras/camera_introduction#followcamera
       * @param name Define the name of the camera in the scene
       * @param position Define the position of the camera
       * @param scene Define the scene the camera belong to

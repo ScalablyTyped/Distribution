@@ -2,8 +2,9 @@ package typings.libp2pInterfaceDht.mod
 
 import typings.libp2pInterfaceDht.libp2pInterfaceDhtStrings.client
 import typings.libp2pInterfaceDht.libp2pInterfaceDhtStrings.server
-import typings.libp2pInterfacePeerDiscovery.mod.PeerDiscovery
+import typings.libp2pInterfacePeerDiscovery.mod.PeerDiscoveryEvents
 import typings.libp2pInterfacePeerId.mod.PeerId
+import typings.libp2pInterfaces.eventsMod.EventEmitter
 import typings.multiformats.cidMod.CID
 import typings.multiformats.distTypesSrcLinkInterfaceMod.Version
 import typings.std.AsyncIterable
@@ -12,7 +13,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DHT extends PeerDiscovery {
+trait DHT extends EventEmitter[PeerDiscoveryEvents] {
   
   /**
     * Find a peer on the DHT

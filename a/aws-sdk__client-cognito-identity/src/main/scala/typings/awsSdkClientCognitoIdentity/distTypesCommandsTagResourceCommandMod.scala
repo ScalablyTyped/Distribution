@@ -28,8 +28,14 @@ object distTypesCommandsTagResourceCommandMod {
           Any, 
           Any
         ] {
+    /**
+      * @public
+      */
     def this(input: TagResourceCommandInput) = this()
     
+    /**
+      * @internal
+      */
     /* private */ var deserialize: Any = js.native
     
     /**
@@ -45,6 +51,9 @@ object distTypesCommandsTagResourceCommandMod {
       options: HttpHandlerOptions
     ): Handler[TagResourceCommandInput, TagResourceCommandOutput] = js.native
     
+    /**
+      * @internal
+      */
     /* private */ var serialize: Any = js.native
   }
   /* static members */

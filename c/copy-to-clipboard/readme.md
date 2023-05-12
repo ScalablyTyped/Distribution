@@ -1,7 +1,7 @@
 
 # Scala.js typings for copy-to-clipboard
 
-Typings are for version 3.3.2
+Typings are for version 3.3.3
 
 ## Library description:
 Copy stuff into clipboard using JS with fallbacks

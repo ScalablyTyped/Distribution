@@ -10,7 +10,7 @@ open class TableHeader protected () extends _MDLComponent[TableHeaderProps] {
   def this(props: TableHeaderProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: TableHeaderProps, context: Any) = this()
 }

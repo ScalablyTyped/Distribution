@@ -17,6 +17,10 @@ trait NodeMaterialDefines
   
   var BonesPerMesh: Double = js.native
   
+  var CAMERA_ORTHOGRAPHIC: Boolean = js.native
+  
+  var CAMERA_PERSPECTIVE: Boolean = js.native
+  
   /** MORPH TARGETS */
   var MORPHTARGETS: Boolean = js.native
   
@@ -48,6 +52,8 @@ trait NodeMaterialDefines
   var UV5: Boolean = js.native
   
   var UV6: Boolean = js.native
+  
+  var VERTEXCOLOR_NME: Boolean = js.native
   
   def setValue(name: String, value: Any): Unit = js.native
   def setValue(name: String, value: Any, markAsUnprocessedIfDirty: Boolean): Unit = js.native

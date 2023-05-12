@@ -15,6 +15,8 @@ trait ResourceState extends StObject {
     * An object detailing the state of Amazon Inspector scanning for Amazon ECR resources.
     */
   var ecr: State
+  
+  var lambda: js.UndefOr[State] = js.undefined
 }
 object ResourceState {
   
@@ -29,5 +31,9 @@ object ResourceState {
     inline def setEc2(value: State): Self = StObject.set(x, "ec2", value.asInstanceOf[js.Any])
     
     inline def setEcr(value: State): Self = StObject.set(x, "ecr", value.asInstanceOf[js.Any])
+    
+    inline def setLambda(value: State): Self = StObject.set(x, "lambda", value.asInstanceOf[js.Any])
+    
+    inline def setLambdaUndefined: Self = StObject.set(x, "lambda", js.undefined)
   }
 }

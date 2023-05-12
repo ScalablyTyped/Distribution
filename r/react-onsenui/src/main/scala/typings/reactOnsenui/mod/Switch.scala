@@ -12,7 +12,7 @@ open class Switch protected () extends Component[AutoFocus_, Any] {
   def this(props: HTMLAttributesidclassName & AutoFocus_) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: HTMLAttributesidclassName & AutoFocus_, context: Any) = this()
 }

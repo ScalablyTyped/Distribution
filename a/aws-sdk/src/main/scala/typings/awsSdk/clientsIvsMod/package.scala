@@ -38,6 +38,8 @@ type Channels = js.Array[Channel]
 
 type IngestEndpoint = java.lang.String
 
+type InsecureIngest = scala.Boolean
+
 type Integer = Double
 
 type IsAuthorized = scala.Boolean

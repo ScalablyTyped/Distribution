@@ -11,6 +11,7 @@ import typings.firebaseStorage.mod.FullMetadata
 import typings.firebaseStorage.mod.ListOptions
 import typings.firebaseStorage.mod.ListResult
 import typings.firebaseStorage.mod.SettableMetadata
+import typings.firebaseStorage.mod.StorageErrorCode
 import typings.firebaseStorage.mod.StorageReference
 import typings.firebaseStorage.mod.StringFormat
 import typings.firebaseStorage.mod.UploadMetadata
@@ -27,6 +28,78 @@ object authCordovaDistStorageMod {
   @JSImport("firebase/auth/cordova/dist/storage", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
+  
+  @JSImport("firebase/auth/cordova/dist/storage", "StorageError")
+  @js.native
+  open class StorageError protected ()
+    extends typings.firebaseStorage.mod.StorageError {
+    /**
+      * @param code - A `StorageErrorCode` string to be prefixed with 'storage/' and
+      *  added to the end of the message.
+      * @param message  - Error message.
+      * @param status_ - Corresponding HTTP Status Code
+      */
+    def this(code: StorageErrorCode, message: String) = this()
+    def this(code: StorageErrorCode, message: String, status_ : Double) = this()
+  }
+  
+  @JSImport("firebase/auth/cordova/dist/storage", "StorageErrorCode")
+  @js.native
+  object StorageErrorCode extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[typings.firebaseStorage.mod.StorageErrorCode & String] = js.native
+    
+    /* "app-deleted" */ val APP_DELETED: typings.firebaseStorage.mod.StorageErrorCode.APP_DELETED & String = js.native
+    
+    /* "bucket-not-found" */ val BUCKET_NOT_FOUND: typings.firebaseStorage.mod.StorageErrorCode.BUCKET_NOT_FOUND & String = js.native
+    
+    /* "canceled" */ val CANCELED: typings.firebaseStorage.mod.StorageErrorCode.CANCELED & String = js.native
+    
+    /* "cannot-slice-blob" */ val CANNOT_SLICE_BLOB: typings.firebaseStorage.mod.StorageErrorCode.CANNOT_SLICE_BLOB & String = js.native
+    
+    /* "internal-error" */ val INTERNAL_ERROR: typings.firebaseStorage.mod.StorageErrorCode.INTERNAL_ERROR & String = js.native
+    
+    /* "invalid-argument" */ val INVALID_ARGUMENT: typings.firebaseStorage.mod.StorageErrorCode.INVALID_ARGUMENT & String = js.native
+    
+    /* "invalid-argument-count" */ val INVALID_ARGUMENT_COUNT: typings.firebaseStorage.mod.StorageErrorCode.INVALID_ARGUMENT_COUNT & String = js.native
+    
+    /* "invalid-checksum" */ val INVALID_CHECKSUM: typings.firebaseStorage.mod.StorageErrorCode.INVALID_CHECKSUM & String = js.native
+    
+    /* "invalid-default-bucket" */ val INVALID_DEFAULT_BUCKET: typings.firebaseStorage.mod.StorageErrorCode.INVALID_DEFAULT_BUCKET & String = js.native
+    
+    /* "invalid-event-name" */ val INVALID_EVENT_NAME: typings.firebaseStorage.mod.StorageErrorCode.INVALID_EVENT_NAME & String = js.native
+    
+    /* "invalid-format" */ val INVALID_FORMAT: typings.firebaseStorage.mod.StorageErrorCode.INVALID_FORMAT & String = js.native
+    
+    /* "invalid-root-operation" */ val INVALID_ROOT_OPERATION: typings.firebaseStorage.mod.StorageErrorCode.INVALID_ROOT_OPERATION & String = js.native
+    
+    /* "invalid-url" */ val INVALID_URL: typings.firebaseStorage.mod.StorageErrorCode.INVALID_URL & String = js.native
+    
+    /* "no-default-bucket" */ val NO_DEFAULT_BUCKET: typings.firebaseStorage.mod.StorageErrorCode.NO_DEFAULT_BUCKET & String = js.native
+    
+    /* "no-download-url" */ val NO_DOWNLOAD_URL: typings.firebaseStorage.mod.StorageErrorCode.NO_DOWNLOAD_URL & String = js.native
+    
+    /* "object-not-found" */ val OBJECT_NOT_FOUND: typings.firebaseStorage.mod.StorageErrorCode.OBJECT_NOT_FOUND & String = js.native
+    
+    /* "project-not-found" */ val PROJECT_NOT_FOUND: typings.firebaseStorage.mod.StorageErrorCode.PROJECT_NOT_FOUND & String = js.native
+    
+    /* "quota-exceeded" */ val QUOTA_EXCEEDED: typings.firebaseStorage.mod.StorageErrorCode.QUOTA_EXCEEDED & String = js.native
+    
+    /* "retry-limit-exceeded" */ val RETRY_LIMIT_EXCEEDED: typings.firebaseStorage.mod.StorageErrorCode.RETRY_LIMIT_EXCEEDED & String = js.native
+    
+    /* "server-file-wrong-size" */ val SERVER_FILE_WRONG_SIZE: typings.firebaseStorage.mod.StorageErrorCode.SERVER_FILE_WRONG_SIZE & String = js.native
+    
+    /* "unauthenticated" */ val UNAUTHENTICATED: typings.firebaseStorage.mod.StorageErrorCode.UNAUTHENTICATED & String = js.native
+    
+    /* "unauthorized" */ val UNAUTHORIZED: typings.firebaseStorage.mod.StorageErrorCode.UNAUTHORIZED & String = js.native
+    
+    /* "unauthorized-app" */ val UNAUTHORIZED_APP: typings.firebaseStorage.mod.StorageErrorCode.UNAUTHORIZED_APP & String = js.native
+    
+    /* "unknown" */ val UNKNOWN: typings.firebaseStorage.mod.StorageErrorCode.UNKNOWN & String = js.native
+    
+    /* "unsupported-environment" */ val UNSUPPORTED_ENVIRONMENT: typings.firebaseStorage.mod.StorageErrorCode.UNSUPPORTED_ENVIRONMENT & String = js.native
+  }
   
   object StringFormat {
     

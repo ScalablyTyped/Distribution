@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@messageformat/parser" : "5.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@messageformat/parser" : "5.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

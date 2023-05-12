@@ -8,7 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Scopes request; value of command field is 'scopes'.
-		The request returns the variable scopes for a given stackframe ID.
+		The request returns the variable scopes for a given stack frame ID.
 	*/
 trait ScopesRequest
   extends StObject

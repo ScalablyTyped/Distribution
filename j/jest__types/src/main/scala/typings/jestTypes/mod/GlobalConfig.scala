@@ -75,11 +75,15 @@ trait GlobalConfig extends StObject {
   
   var onlyFailures: Boolean
   
+  var openHandlesTimeout: Double
+  
   var outputFile: js.UndefOr[String] = js.undefined
   
   var passWithNoTests: Boolean
   
   var projects: js.Array[String]
+  
+  var randomize: js.UndefOr[Boolean] = js.undefined
   
   var replname: js.UndefOr[String] = js.undefined
   
@@ -128,6 +132,8 @@ trait GlobalConfig extends StObject {
   var watchman: Boolean
   
   var workerIdleMemoryLimit: js.UndefOr[Double] = js.undefined
+  
+  var workerThreads: js.UndefOr[Boolean] = js.undefined
 }
 object GlobalConfig {
   
@@ -158,6 +164,7 @@ object GlobalConfig {
     notify_ : Boolean,
     onlyChanged: Boolean,
     onlyFailures: Boolean,
+    openHandlesTimeout: Double,
     passWithNoTests: Boolean,
     projects: js.Array[String],
     rootDir: String,
@@ -174,7 +181,7 @@ object GlobalConfig {
     watchAll: Boolean,
     watchman: Boolean
   ): GlobalConfig = {
-    val __obj = js.Dynamic.literal(bail = bail.asInstanceOf[js.Any], changedFilesWithAncestor = changedFilesWithAncestor.asInstanceOf[js.Any], ci = ci.asInstanceOf[js.Any], collectCoverage = collectCoverage.asInstanceOf[js.Any], collectCoverageFrom = collectCoverageFrom.asInstanceOf[js.Any], coverageDirectory = coverageDirectory.asInstanceOf[js.Any], coverageProvider = coverageProvider.asInstanceOf[js.Any], coverageReporters = coverageReporters.asInstanceOf[js.Any], detectLeaks = detectLeaks.asInstanceOf[js.Any], detectOpenHandles = detectOpenHandles.asInstanceOf[js.Any], errorOnDeprecated = errorOnDeprecated.asInstanceOf[js.Any], expand = expand.asInstanceOf[js.Any], findRelatedTests = findRelatedTests.asInstanceOf[js.Any], forceExit = forceExit.asInstanceOf[js.Any], json = json.asInstanceOf[js.Any], lastCommit = lastCommit.asInstanceOf[js.Any], listTests = listTests.asInstanceOf[js.Any], logHeapUsage = logHeapUsage.asInstanceOf[js.Any], maxConcurrency = maxConcurrency.asInstanceOf[js.Any], maxWorkers = maxWorkers.asInstanceOf[js.Any], noStackTrace = noStackTrace.asInstanceOf[js.Any], nonFlagArgs = nonFlagArgs.asInstanceOf[js.Any], notifyMode = notifyMode.asInstanceOf[js.Any], onlyChanged = onlyChanged.asInstanceOf[js.Any], onlyFailures = onlyFailures.asInstanceOf[js.Any], passWithNoTests = passWithNoTests.asInstanceOf[js.Any], projects = projects.asInstanceOf[js.Any], rootDir = rootDir.asInstanceOf[js.Any], runTestsByPath = runTestsByPath.asInstanceOf[js.Any], seed = seed.asInstanceOf[js.Any], skipFilter = skipFilter.asInstanceOf[js.Any], snapshotFormat = snapshotFormat.asInstanceOf[js.Any], testFailureExitCode = testFailureExitCode.asInstanceOf[js.Any], testPathPattern = testPathPattern.asInstanceOf[js.Any], testSequencer = testSequencer.asInstanceOf[js.Any], updateSnapshot = updateSnapshot.asInstanceOf[js.Any], useStderr = useStderr.asInstanceOf[js.Any], watch = watch.asInstanceOf[js.Any], watchAll = watchAll.asInstanceOf[js.Any], watchman = watchman.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(bail = bail.asInstanceOf[js.Any], changedFilesWithAncestor = changedFilesWithAncestor.asInstanceOf[js.Any], ci = ci.asInstanceOf[js.Any], collectCoverage = collectCoverage.asInstanceOf[js.Any], collectCoverageFrom = collectCoverageFrom.asInstanceOf[js.Any], coverageDirectory = coverageDirectory.asInstanceOf[js.Any], coverageProvider = coverageProvider.asInstanceOf[js.Any], coverageReporters = coverageReporters.asInstanceOf[js.Any], detectLeaks = detectLeaks.asInstanceOf[js.Any], detectOpenHandles = detectOpenHandles.asInstanceOf[js.Any], errorOnDeprecated = errorOnDeprecated.asInstanceOf[js.Any], expand = expand.asInstanceOf[js.Any], findRelatedTests = findRelatedTests.asInstanceOf[js.Any], forceExit = forceExit.asInstanceOf[js.Any], json = json.asInstanceOf[js.Any], lastCommit = lastCommit.asInstanceOf[js.Any], listTests = listTests.asInstanceOf[js.Any], logHeapUsage = logHeapUsage.asInstanceOf[js.Any], maxConcurrency = maxConcurrency.asInstanceOf[js.Any], maxWorkers = maxWorkers.asInstanceOf[js.Any], noStackTrace = noStackTrace.asInstanceOf[js.Any], nonFlagArgs = nonFlagArgs.asInstanceOf[js.Any], notifyMode = notifyMode.asInstanceOf[js.Any], onlyChanged = onlyChanged.asInstanceOf[js.Any], onlyFailures = onlyFailures.asInstanceOf[js.Any], openHandlesTimeout = openHandlesTimeout.asInstanceOf[js.Any], passWithNoTests = passWithNoTests.asInstanceOf[js.Any], projects = projects.asInstanceOf[js.Any], rootDir = rootDir.asInstanceOf[js.Any], runTestsByPath = runTestsByPath.asInstanceOf[js.Any], seed = seed.asInstanceOf[js.Any], skipFilter = skipFilter.asInstanceOf[js.Any], snapshotFormat = snapshotFormat.asInstanceOf[js.Any], testFailureExitCode = testFailureExitCode.asInstanceOf[js.Any], testPathPattern = testPathPattern.asInstanceOf[js.Any], testSequencer = testSequencer.asInstanceOf[js.Any], updateSnapshot = updateSnapshot.asInstanceOf[js.Any], useStderr = useStderr.asInstanceOf[js.Any], watch = watch.asInstanceOf[js.Any], watchAll = watchAll.asInstanceOf[js.Any], watchman = watchman.asInstanceOf[js.Any])
     __obj.updateDynamic("notify")(notify_.asInstanceOf[js.Any])
     __obj.asInstanceOf[GlobalConfig]
   }
@@ -270,6 +277,8 @@ object GlobalConfig {
     
     inline def setOnlyFailures(value: Boolean): Self = StObject.set(x, "onlyFailures", value.asInstanceOf[js.Any])
     
+    inline def setOpenHandlesTimeout(value: Double): Self = StObject.set(x, "openHandlesTimeout", value.asInstanceOf[js.Any])
+    
     inline def setOutputFile(value: String): Self = StObject.set(x, "outputFile", value.asInstanceOf[js.Any])
     
     inline def setOutputFileUndefined: Self = StObject.set(x, "outputFile", js.undefined)
@@ -279,6 +288,10 @@ object GlobalConfig {
     inline def setProjects(value: js.Array[String]): Self = StObject.set(x, "projects", value.asInstanceOf[js.Any])
     
     inline def setProjectsVarargs(value: String*): Self = StObject.set(x, "projects", js.Array(value*))
+    
+    inline def setRandomize(value: Boolean): Self = StObject.set(x, "randomize", value.asInstanceOf[js.Any])
+    
+    inline def setRandomizeUndefined: Self = StObject.set(x, "randomize", js.undefined)
     
     inline def setReplname(value: String): Self = StObject.set(x, "replname", value.asInstanceOf[js.Any])
     
@@ -355,5 +368,9 @@ object GlobalConfig {
     inline def setWorkerIdleMemoryLimit(value: Double): Self = StObject.set(x, "workerIdleMemoryLimit", value.asInstanceOf[js.Any])
     
     inline def setWorkerIdleMemoryLimitUndefined: Self = StObject.set(x, "workerIdleMemoryLimit", js.undefined)
+    
+    inline def setWorkerThreads(value: Boolean): Self = StObject.set(x, "workerThreads", value.asInstanceOf[js.Any])
+    
+    inline def setWorkerThreadsUndefined: Self = StObject.set(x, "workerThreads", js.undefined)
   }
 }

@@ -18,7 +18,7 @@ object mod {
     def this(props: StickyBodyProps & BodyProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: StickyBodyProps & BodyProps, context: Any) = this()
     
@@ -32,7 +32,7 @@ object mod {
     def this(props: StickyHeaderProps & HeaderProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: StickyHeaderProps & HeaderProps, context: Any) = this()
     

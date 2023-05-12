@@ -20,7 +20,7 @@ trait DocumentLink extends StObject {
   /**
     * The uri this link points to. If missing a resolve request is sent later.
     */
-  var target: js.UndefOr[String] = js.undefined
+  var target: js.UndefOr[URI] = js.undefined
   
   /**
     * The tooltip text when you hover over this link.
@@ -53,7 +53,7 @@ object DocumentLink {
   inline def create(range: Range, target: Unit, data: LSPAny): DocumentLink = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], target.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[DocumentLink]
   
   /**
-    * Checks whether the given literal conforms to the [DocumentLink](#DocumentLink) interface.
+    * Checks whether the given literal conforms to the {@link DocumentLink} interface.
     */
   inline def is(value: Any): /* is vscode-languageserver-types.vscode-languageserver-types.DocumentLink */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.DocumentLink */ Boolean]
   
@@ -66,7 +66,7 @@ object DocumentLink {
     
     inline def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: URI): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     

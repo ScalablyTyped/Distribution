@@ -60,7 +60,11 @@ object dateRangePickerMod {
     
     var allowOneSidedRange: js.UndefOr[Boolean] = js.undefined
     
+    var format: js.UndefOr[String] = js.undefined
+    
     var inputs: js.UndefOr[js.Array[HTMLElement]] = js.undefined
+    
+    var language: js.UndefOr[String] = js.undefined
   }
   object DateRangePickerOptions {
     
@@ -76,11 +80,19 @@ object dateRangePickerMod {
       
       inline def setAllowOneSidedRangeUndefined: Self = StObject.set(x, "allowOneSidedRange", js.undefined)
       
+      inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      
       inline def setInputs(value: js.Array[HTMLElement]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
       
       inline def setInputsUndefined: Self = StObject.set(x, "inputs", js.undefined)
       
       inline def setInputsVarargs(value: HTMLElement*): Self = StObject.set(x, "inputs", js.Array(value*))
+      
+      inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+      
+      inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     }
   }
 }

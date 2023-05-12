@@ -11,7 +11,13 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(signals: js.Array[AbortSignal]): AbortSignal = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(signals.asInstanceOf[js.Any]).asInstanceOf[AbortSignal]
+  inline def anySignal(signals: js.Array[js.UndefOr[AbortSignal | Null]]): ClearableSignal = ^.asInstanceOf[js.Dynamic].applyDynamic("anySignal")(signals.asInstanceOf[js.Any]).asInstanceOf[ClearableSignal]
   
-  inline def anySignal(signals: js.Array[AbortSignal]): AbortSignal = ^.asInstanceOf[js.Dynamic].applyDynamic("anySignal")(signals.asInstanceOf[js.Any]).asInstanceOf[AbortSignal]
+  @js.native
+  trait ClearableSignal
+    extends StObject
+       with AbortSignal {
+    
+    def clear(): Unit = js.native
+  }
 }

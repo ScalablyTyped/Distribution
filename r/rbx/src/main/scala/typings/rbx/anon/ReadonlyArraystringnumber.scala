@@ -40,8 +40,7 @@ trait ReadonlyArraystringnumber extends StObject {
   ]
   
   val find: js.Function1[
-    /* predicate */ js.ThisFunction3[
-      /* this */ Unit, 
+    /* predicate */ js.Function3[
       /* value */ String | Double, 
       /* index */ Double, 
       /* obj */ js.Array[String | Double], 
@@ -55,6 +54,26 @@ trait ReadonlyArraystringnumber extends StObject {
       /* value */ String | Double, 
       /* index */ Double, 
       /* obj */ js.Array[String | Double], 
+      Any
+    ], 
+    Double
+  ]
+  
+  val findLast: js.Function1[
+    /* predicate */ js.Function3[
+      /* value */ String | Double, 
+      /* index */ Double, 
+      /* array */ js.Array[String | Double], 
+      Boolean
+    ], 
+    js.UndefOr[String | Double]
+  ]
+  
+  val findLastIndex: js.Function1[
+    /* predicate */ js.Function3[
+      /* value */ String | Double, 
+      /* index */ Double, 
+      /* array */ js.Array[String | Double], 
       Any
     ], 
     Double
@@ -181,8 +200,7 @@ object ReadonlyArraystringnumber {
       /* array */ js.Array[String | Double], 
       Boolean
     ] => js.Array[String | Double],
-    find: /* predicate */ js.ThisFunction3[
-      /* this */ Unit, 
+    find: /* predicate */ js.Function3[
       /* value */ String | Double, 
       /* index */ Double, 
       /* obj */ js.Array[String | Double], 
@@ -192,6 +210,18 @@ object ReadonlyArraystringnumber {
       /* value */ String | Double, 
       /* index */ Double, 
       /* obj */ js.Array[String | Double], 
+      Any
+    ] => Double,
+    findLast: /* predicate */ js.Function3[
+      /* value */ String | Double, 
+      /* index */ Double, 
+      /* array */ js.Array[String | Double], 
+      Boolean
+    ] => js.UndefOr[String | Double],
+    findLastIndex: /* predicate */ js.Function3[
+      /* value */ String | Double, 
+      /* index */ Double, 
+      /* array */ js.Array[String | Double], 
       Any
     ] => Double,
     flat: js.ThisFunction0[/* this */ Any, js.Array[FlatArray[Any, typings.rbx.rbxInts.`1`]]],
@@ -252,7 +282,7 @@ object ReadonlyArraystringnumber {
     unshift: /* repeated */ String | Double => Double,
     values: () => IterableIterator[String | Double]
   ): ReadonlyArraystringnumber = {
-    val __obj = js.Dynamic.literal(at = js.Any.fromFunction1(at), concat = js.Any.fromFunction1(concat), copyWithin = js.Any.fromFunction2(copyWithin), entries = js.Any.fromFunction0(entries), every = js.Any.fromFunction1(every), fill = js.Any.fromFunction1(fill), filter = js.Any.fromFunction1(filter), find = js.Any.fromFunction1(find), findIndex = js.Any.fromFunction1(findIndex), flat = flat.asInstanceOf[js.Any], flatMap = js.Any.fromFunction1(flatMap), forEach = js.Any.fromFunction1(forEach), includes = js.Any.fromFunction1(includes), indexOf = js.Any.fromFunction1(indexOf), join = js.Any.fromFunction0(join), keys = js.Any.fromFunction0(keys), lastIndexOf = js.Any.fromFunction1(lastIndexOf), length = length.asInstanceOf[js.Any], map = js.Any.fromFunction1(map), pop = js.Any.fromFunction0(pop), push = js.Any.fromFunction1(push), reduce = js.Any.fromFunction1(reduce), reduceRight = js.Any.fromFunction1(reduceRight), reverse = js.Any.fromFunction0(reverse), shift = js.Any.fromFunction0(shift), slice = js.Any.fromFunction0(slice), some = js.Any.fromFunction1(some), sort = js.Any.fromFunction0(sort), splice = js.Any.fromFunction1(splice), toLocaleString = js.Any.fromFunction0(toLocaleString), unshift = js.Any.fromFunction1(unshift), values = js.Any.fromFunction0(values))
+    val __obj = js.Dynamic.literal(at = js.Any.fromFunction1(at), concat = js.Any.fromFunction1(concat), copyWithin = js.Any.fromFunction2(copyWithin), entries = js.Any.fromFunction0(entries), every = js.Any.fromFunction1(every), fill = js.Any.fromFunction1(fill), filter = js.Any.fromFunction1(filter), find = js.Any.fromFunction1(find), findIndex = js.Any.fromFunction1(findIndex), findLast = js.Any.fromFunction1(findLast), findLastIndex = js.Any.fromFunction1(findLastIndex), flat = flat.asInstanceOf[js.Any], flatMap = js.Any.fromFunction1(flatMap), forEach = js.Any.fromFunction1(forEach), includes = js.Any.fromFunction1(includes), indexOf = js.Any.fromFunction1(indexOf), join = js.Any.fromFunction0(join), keys = js.Any.fromFunction0(keys), lastIndexOf = js.Any.fromFunction1(lastIndexOf), length = length.asInstanceOf[js.Any], map = js.Any.fromFunction1(map), pop = js.Any.fromFunction0(pop), push = js.Any.fromFunction1(push), reduce = js.Any.fromFunction1(reduce), reduceRight = js.Any.fromFunction1(reduceRight), reverse = js.Any.fromFunction0(reverse), shift = js.Any.fromFunction0(shift), slice = js.Any.fromFunction0(slice), some = js.Any.fromFunction1(some), sort = js.Any.fromFunction0(sort), splice = js.Any.fromFunction1(splice), toLocaleString = js.Any.fromFunction0(toLocaleString), unshift = js.Any.fromFunction1(unshift), values = js.Any.fromFunction0(values))
     __obj.updateDynamic("toString")(js.Any.fromFunction0(toString_))
     __obj.asInstanceOf[ReadonlyArraystringnumber]
   }
@@ -289,8 +319,7 @@ object ReadonlyArraystringnumber {
     ): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
     
     inline def setFind(
-      value: /* predicate */ js.ThisFunction3[
-          /* this */ Unit, 
+      value: /* predicate */ js.Function3[
           /* value */ String | Double, 
           /* index */ Double, 
           /* obj */ js.Array[String | Double], 
@@ -306,6 +335,24 @@ object ReadonlyArraystringnumber {
           Any
         ] => Double
     ): Self = StObject.set(x, "findIndex", js.Any.fromFunction1(value))
+    
+    inline def setFindLast(
+      value: /* predicate */ js.Function3[
+          /* value */ String | Double, 
+          /* index */ Double, 
+          /* array */ js.Array[String | Double], 
+          Boolean
+        ] => js.UndefOr[String | Double]
+    ): Self = StObject.set(x, "findLast", js.Any.fromFunction1(value))
+    
+    inline def setFindLastIndex(
+      value: /* predicate */ js.Function3[
+          /* value */ String | Double, 
+          /* index */ Double, 
+          /* array */ js.Array[String | Double], 
+          Any
+        ] => Double
+    ): Self = StObject.set(x, "findLastIndex", js.Any.fromFunction1(value))
     
     inline def setFlat(value: js.ThisFunction0[/* this */ Any, js.Array[FlatArray[Any, typings.rbx.rbxInts.`1`]]]): Self = StObject.set(x, "flat", value.asInstanceOf[js.Any])
     

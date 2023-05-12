@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateDetectorRequest extends StObject {
   
   /**
-    * Describes which data sources will be updated.
+    * Describes which data sources will be updated. There might be regional differences because some data sources might not be available in all the Amazon Web Services Regions where GuardDuty is presently supported. For more information, see Regions and endpoints.
     */
   var DataSources: js.UndefOr[DataSourceConfigurations] = js.undefined
   
@@ -20,6 +20,11 @@ trait UpdateDetectorRequest extends StObject {
     * Specifies whether the detector is enabled or not enabled.
     */
   var Enable: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Provides the features that will be updated for the detector.
+    */
+  var Features: js.UndefOr[DetectorFeatureConfigurations] = js.undefined
   
   /**
     * An enum value that specifies how frequently findings are exported, such as to CloudWatch Events.
@@ -45,6 +50,12 @@ object UpdateDetectorRequest {
     inline def setEnable(value: Boolean): Self = StObject.set(x, "Enable", value.asInstanceOf[js.Any])
     
     inline def setEnableUndefined: Self = StObject.set(x, "Enable", js.undefined)
+    
+    inline def setFeatures(value: DetectorFeatureConfigurations): Self = StObject.set(x, "Features", value.asInstanceOf[js.Any])
+    
+    inline def setFeaturesUndefined: Self = StObject.set(x, "Features", js.undefined)
+    
+    inline def setFeaturesVarargs(value: DetectorFeatureConfiguration*): Self = StObject.set(x, "Features", js.Array(value*))
     
     inline def setFindingPublishingFrequency(value: FindingPublishingFrequency): Self = StObject.set(x, "FindingPublishingFrequency", value.asInstanceOf[js.Any])
     

@@ -1,5 +1,6 @@
 package typings.dc.mod
 
+import typings.d3Axis.mod.Axis
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -51,15 +52,10 @@ trait RowChart
   def x(): Scale[Double] = js.native
   def x(t: Scale[Double]): RowChart = js.native
   
-  def xAxis(): Any = js.native
-  def xAxis(
-    t: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify d3.svg.Axis */ Any
-  ): RowChart = js.native
+  def xAxis(): Axis[Any] = js.native
+  def xAxis(t: Axis[Any]): RowChart = js.native
   @JSName("xAxis")
-  var xAxis_Original: IGetSet[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify d3.svg.Axis */ Any, 
-    RowChart
-  ] = js.native
+  var xAxis_Original: IGetSet[Axis[Any], RowChart] = js.native
   
   @JSName("x")
   var x_Original: IGetSet[Scale[Double], RowChart] = js.native

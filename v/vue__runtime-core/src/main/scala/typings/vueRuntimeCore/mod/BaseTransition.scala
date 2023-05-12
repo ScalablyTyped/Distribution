@@ -1,7 +1,8 @@
 package typings.vueRuntimeCore.mod
 
 import org.scalablytyped.runtime.Instantiable0
-import typings.vueRuntimeCore.anon.Props
+import typings.vueRuntimeCore.anon.PropsSlots
+import typings.vueRuntimeCore.anon.`0`
 import typings.vueRuntimeCore.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -12,13 +13,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class BaseTransition ()
   extends StObject
-     with Props {
+     with PropsSlots {
   
   /* CompleteClass */
   @JSName("$props")
   var $props: BaseTransitionProps[Any] = js.native
+  
+  /* CompleteClass */
+  @JSName("$slots")
+  var $slots: `0` = js.native
 }
 object BaseTransition {
   
-  inline def apply: Instantiable0[Props] = ^.asInstanceOf[js.Dynamic].selectDynamic("BaseTransition").asInstanceOf[Instantiable0[Props]]
+  inline def apply: Instantiable0[PropsSlots] = ^.asInstanceOf[js.Dynamic].selectDynamic("BaseTransition").asInstanceOf[Instantiable0[PropsSlots]]
 }

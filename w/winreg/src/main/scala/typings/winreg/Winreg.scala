@@ -60,7 +60,6 @@ object Winreg {
     
     /**
       * The registry hive architecture ('x86' or 'x64').
-      * @readonly
       */
     var arch: String
     
@@ -110,19 +109,16 @@ object Winreg {
     
     /**
       * The hive id.
-      * @readonly
       */
     var hive: String
     
     /**
       * The hostname.
-      * @readonly
       */
     var host: String
     
     /**
       * The registry key name.
-      * @readonly
       */
     var key: String
     
@@ -146,13 +142,11 @@ object Winreg {
     
     /**
       * Creates a new {@link Registry} instance that points to the parent registry key.
-      * @readonly
       */
     var parent: Registry
     
     /**
       * The full path to the registry key.
-      * @readonly
       */
     var path: String
     
@@ -264,43 +258,36 @@ object Winreg {
     
     /**
       * The hive architecture.
-      * @readonly
       */
     var arch: String
     
     /**
       * The hive id.
-      * @readonly
       */
     var hive: String
     
     /**
       * The hostname.
-      * @readonly
       */
     var host: String
     
     /**
       * The registry key.
-      * @readonly
       */
     var key: String
     
     /**
       * The value name.
-      * @readonly
       */
     var name: String
     
     /**
       * The value type.
-      * @readonly
       */
     var `type`: String
     
     /**
       * The value.
-      * @readonly
       */
     var value: String
   }

@@ -7,13 +7,16 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+	 * A lint result.
+	 */
 trait LintResult extends StObject {
   
   /**
-  			 * Internal use only. Do not use or rely on this property. It may
-  			 * change at any time.
-  			 * @internal
-  			 */
+  		 * Internal use only. Do not use or rely on this property. It may
+  		 * change at any time.
+  		 * @internal
+  		 */
   var _postcssResult: js.UndefOr[PostcssResult] = js.undefined
   
   var deprecations: js.Array[Reference]

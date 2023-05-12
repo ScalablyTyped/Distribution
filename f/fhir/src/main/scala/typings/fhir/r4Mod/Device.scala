@@ -84,7 +84,7 @@ trait Device
   var manufacturer: js.UndefOr[String] = js.undefined
   
   /**
-    * The manufacturer's model number for the device.
+    * The model number for the device.
     */
   var modelNumber: js.UndefOr[String] = js.undefined
   
@@ -99,7 +99,7 @@ trait Device
   var owner: js.UndefOr[Reference] = js.undefined
   
   /**
-    * The device that this device is attached to or is part of.
+    * The parent device.
     */
   var parent: js.UndefOr[Reference] = js.undefined
   

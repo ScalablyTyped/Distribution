@@ -23,5 +23,5 @@ object libUtilsValueUtilMod {
   
   inline def getSeparatedContent(text: String, tokens: js.Array[String]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSeparatedContent")(text.asInstanceOf[js.Any], tokens.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
-  inline def injectPropsWithOption[T](option: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("injectPropsWithOption")(option.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def injectPropsWithOption[T /* <: js.Object */](option: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("injectPropsWithOption")(option.asInstanceOf[js.Any]).asInstanceOf[T]
 }

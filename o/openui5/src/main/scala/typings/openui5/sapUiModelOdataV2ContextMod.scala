@@ -116,8 +116,11 @@ object sapUiModelOdataV2ContextMod {
     /**
       * @SINCE 1.101
       *
-      * Deletes the OData entity this context points to. **Note:** The context must not be used anymore after
-      * successful deletion.
+      * Deletes the OData entity this context points to. Persisted contexts are only removed from the UI after
+      * their successful deletion in the back end. In this case, the `Promise` returned by this method is only
+      * resolved when the back-end request has been successful. **Example:** A persisted entry in a table control
+      * is deleted by this method. It remains visible on the UI and only disappears upon successful deletion
+      * in the back end. **Note:** The context must not be used anymore after successful deletion.
       *
       * @returns A promise resolving with `undefined` in case of successful deletion or rejecting with an error
       * in case the deletion failed
@@ -135,10 +138,10 @@ object sapUiModelOdataV2ContextMod {
     /**
       * @SINCE 1.98.0
       *
-      * Returns whether this context is inactive. An inactive context will only be sent to the server after the
-      * first property update. From then on it behaves like any other created context. The result of this function
-      * can also be accessed via the "@$ui5.context.isInactive" instance annotation at the entity, see {@link
-      * sap.ui.model.odata.v2.ODataModel#getProperty} for details.
+      * Returns whether this context is inactive. An inactive context will not be sent to the server until it
+      * is activated. From then on it behaves like any other created context. The result of this function can
+      * also be accessed via the "@$ui5.context.isInactive" instance annotation at the entity, see {@link sap.ui.model.odata.v2.ODataModel#getProperty}
+      * for details.
       * See:
       * 	sap.ui.model.odata.v2.ODataListBinding#create
       * 	sap.ui.model.odata.v2.ODataModel#createEntry

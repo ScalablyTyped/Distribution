@@ -3,6 +3,7 @@ package typings.chainsafeLibp2pNoise
 import typings.chainsafeLibp2pNoise.distSrcCryptoMod.ICryptoInterface
 import typings.chainsafeLibp2pNoise.distSrcProtoPayloadMod.NoiseExtensions
 import typings.libp2pInterfaceConnectionEncrypter.mod.ConnectionEncrypter
+import typings.libp2pInterfaceMetrics.mod.Metrics
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,6 +22,8 @@ object distSrcNoiseMod {
     var crypto: ICryptoInterface = js.native
     
     /* private */ val extensions: Any = js.native
+    
+    /* private */ val metrics: Any = js.native
     
     /**
       * If Noise pipes supported, tries IK handshake first with XX as fallback if it fails.
@@ -42,6 +45,8 @@ object distSrcNoiseMod {
     var crypto: js.UndefOr[ICryptoInterface] = js.undefined
     
     var extensions: js.UndefOr[NoiseExtensions] = js.undefined
+    
+    var metrics: js.UndefOr[Metrics] = js.undefined
     
     var prologueBytes: js.UndefOr[js.typedarray.Uint8Array] = js.undefined
     
@@ -67,6 +72,10 @@ object distSrcNoiseMod {
       inline def setExtensions(value: NoiseExtensions): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
       
       inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
+      
+      inline def setMetrics(value: Metrics): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
+      
+      inline def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
       
       inline def setPrologueBytes(value: js.typedarray.Uint8Array): Self = StObject.set(x, "prologueBytes", value.asInstanceOf[js.Any])
       

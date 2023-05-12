@@ -1,5 +1,6 @@
 package typings.pixiSprite
 
+import typings.pixiColor.libColorMod.ColorSource
 import typings.pixiConstants.mod.BLEND_MODES
 import typings.pixiCore.libTexturesBaseTextureMod.IBaseTextureOptions
 import typings.pixiCore.libTexturesResourcesResourceMod.Resource
@@ -73,7 +74,7 @@ object libSpriteMod {
       * The tint applied to the sprite. This is a hex value. A value of 0xFFFFFF will remove any tint effect.
       * @default 0xFFFFFF
       */
-    /* private */ var _tint: Any = js.native
+    /* private */ var _tintColor: Any = js.native
     
     /**
       * The tint applied to the sprite. This is a RGB value. A value of 0xFFFFFF will remove any tint effect.
@@ -160,8 +161,15 @@ object libSpriteMod {
       * A value of 0xFFFFFF will remove any tint effect.
       * @default 0xFFFFFF
       */
-    def tint: Double = js.native
-    def tint_=(value: Double): Unit = js.native
+    def tint: ColorSource = js.native
+    
+    /**
+      * Get the tint as a RGB integer.
+      * @ignore
+      */
+    def tintValue: Double = js.native
+    
+    def tint_=(value: ColorSource): Unit = js.native
     
     /**
       * This is used to store the uvs data of the sprite, assigned at the same time

@@ -15,7 +15,7 @@ object componentsListListItemActionMod {
     def this(props: ListItemActionProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: ListItemActionProps, context: Any) = this()
   }

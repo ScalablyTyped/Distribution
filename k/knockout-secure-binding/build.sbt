@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "knockout-secure-binding"
-version := "0.0-unknown-dt-20221103Z-51e748"
+version := "0.0-unknown-dt-20230322Z-51e748"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

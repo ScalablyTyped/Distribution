@@ -1,6 +1,6 @@
 package typings.maplibreGl.mod
 
-import typings.maplibreGl.anon.`2`
+import typings.maplibreGl.anon.`5`
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -60,7 +60,7 @@ open class TouchZoomRotateHandler protected () extends StObject {
   	 *   map.touchZoomRotate.enable({ around: 'center' });
   	 */
   def enable(): scala.Unit = js.native
-  def enable(options: `2`): scala.Unit = js.native
+  def enable(options: `5`): scala.Unit = js.native
   
   /**
   	 * Enables the "pinch to rotate" interaction.

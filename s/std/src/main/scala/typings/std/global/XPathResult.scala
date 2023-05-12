@@ -1,5 +1,15 @@
 package typings.std.global
 
+import typings.std.stdInts.`0`
+import typings.std.stdInts.`1`
+import typings.std.stdInts.`2`
+import typings.std.stdInts.`3`
+import typings.std.stdInts.`4`
+import typings.std.stdInts.`5`
+import typings.std.stdInts.`6`
+import typings.std.stdInts.`7`
+import typings.std.stdInts.`8`
+import typings.std.stdInts.`9`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,43 +24,43 @@ open class XPathResult ()
   
   /* standard dom */
   /* CompleteClass */
-  override val ANY_TYPE: Double = js.native
+  override val ANY_TYPE: `0` = js.native
   
   /* standard dom */
   /* CompleteClass */
-  override val ANY_UNORDERED_NODE_TYPE: Double = js.native
+  override val ANY_UNORDERED_NODE_TYPE: `8` = js.native
   
   /* standard dom */
   /* CompleteClass */
-  override val BOOLEAN_TYPE: Double = js.native
+  override val BOOLEAN_TYPE: `3` = js.native
   
   /* standard dom */
   /* CompleteClass */
-  override val FIRST_ORDERED_NODE_TYPE: Double = js.native
+  override val FIRST_ORDERED_NODE_TYPE: `9` = js.native
   
   /* standard dom */
   /* CompleteClass */
-  override val NUMBER_TYPE: Double = js.native
+  override val NUMBER_TYPE: `1` = js.native
   
   /* standard dom */
   /* CompleteClass */
-  override val ORDERED_NODE_ITERATOR_TYPE: Double = js.native
+  override val ORDERED_NODE_ITERATOR_TYPE: `5` = js.native
   
   /* standard dom */
   /* CompleteClass */
-  override val ORDERED_NODE_SNAPSHOT_TYPE: Double = js.native
+  override val ORDERED_NODE_SNAPSHOT_TYPE: `7` = js.native
   
   /* standard dom */
   /* CompleteClass */
-  override val STRING_TYPE: Double = js.native
+  override val STRING_TYPE: `2` = js.native
   
   /* standard dom */
   /* CompleteClass */
-  override val UNORDERED_NODE_ITERATOR_TYPE: Double = js.native
+  override val UNORDERED_NODE_ITERATOR_TYPE: `4` = js.native
   
   /* standard dom */
   /* CompleteClass */
-  override val UNORDERED_NODE_SNAPSHOT_TYPE: Double = js.native
+  override val UNORDERED_NODE_SNAPSHOT_TYPE: `6` = js.native
   
   /* standard dom */
   /* CompleteClass */
@@ -93,50 +103,50 @@ object XPathResult {
   /* standard dom */
   @JSGlobal("XPathResult.ANY_TYPE")
   @js.native
-  val ANY_TYPE: Double = js.native
+  val ANY_TYPE: `0` = js.native
   
   /* standard dom */
   @JSGlobal("XPathResult.ANY_UNORDERED_NODE_TYPE")
   @js.native
-  val ANY_UNORDERED_NODE_TYPE: Double = js.native
+  val ANY_UNORDERED_NODE_TYPE: `8` = js.native
   
   /* standard dom */
   @JSGlobal("XPathResult.BOOLEAN_TYPE")
   @js.native
-  val BOOLEAN_TYPE: Double = js.native
+  val BOOLEAN_TYPE: `3` = js.native
   
   /* standard dom */
   @JSGlobal("XPathResult.FIRST_ORDERED_NODE_TYPE")
   @js.native
-  val FIRST_ORDERED_NODE_TYPE: Double = js.native
+  val FIRST_ORDERED_NODE_TYPE: `9` = js.native
   
   /* standard dom */
   @JSGlobal("XPathResult.NUMBER_TYPE")
   @js.native
-  val NUMBER_TYPE: Double = js.native
+  val NUMBER_TYPE: `1` = js.native
   
   /* standard dom */
   @JSGlobal("XPathResult.ORDERED_NODE_ITERATOR_TYPE")
   @js.native
-  val ORDERED_NODE_ITERATOR_TYPE: Double = js.native
+  val ORDERED_NODE_ITERATOR_TYPE: `5` = js.native
   
   /* standard dom */
   @JSGlobal("XPathResult.ORDERED_NODE_SNAPSHOT_TYPE")
   @js.native
-  val ORDERED_NODE_SNAPSHOT_TYPE: Double = js.native
+  val ORDERED_NODE_SNAPSHOT_TYPE: `7` = js.native
   
   /* standard dom */
   @JSGlobal("XPathResult.STRING_TYPE")
   @js.native
-  val STRING_TYPE: Double = js.native
+  val STRING_TYPE: `2` = js.native
   
   /* standard dom */
   @JSGlobal("XPathResult.UNORDERED_NODE_ITERATOR_TYPE")
   @js.native
-  val UNORDERED_NODE_ITERATOR_TYPE: Double = js.native
+  val UNORDERED_NODE_ITERATOR_TYPE: `4` = js.native
   
   /* standard dom */
   @JSGlobal("XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE")
   @js.native
-  val UNORDERED_NODE_SNAPSHOT_TYPE: Double = js.native
+  val UNORDERED_NODE_SNAPSHOT_TYPE: `6` = js.native
 }

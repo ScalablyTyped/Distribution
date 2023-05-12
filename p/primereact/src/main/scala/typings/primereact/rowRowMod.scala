@@ -15,17 +15,27 @@ object rowRowMod {
     def this(props: RowProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: RowProps, context: Any) = this()
   }
   
   trait RowProps extends StObject {
     
+    /**
+      * Used to get the child elements of the component.
+      * @readonly
+      */
     var children: js.UndefOr[ReactNode] = js.undefined
     
+    /**
+      * Style class of the row.
+      */
     var className: js.UndefOr[String] = js.undefined
     
+    /**
+      * Inline style of the element.
+      */
     var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object RowProps {

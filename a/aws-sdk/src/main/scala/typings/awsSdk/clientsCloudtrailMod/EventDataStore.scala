@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EventDataStore extends StObject {
   
   /**
-    * This field is being deprecated. The advanced event selectors that were used to select events for the data store.
+    * The advanced event selectors that were used to select events for the data store.
     */
   var AdvancedEventSelectors: js.UndefOr[typings.awsSdk.clientsCloudtrailMod.AdvancedEventSelectors] = js.undefined
   
   /**
-    * This field is being deprecated. The timestamp of the event data store's creation.
+    * The timestamp of the event data store's creation.
     */
   var CreatedTimestamp: js.UndefOr[js.Date] = js.undefined
   
@@ -22,7 +22,7 @@ trait EventDataStore extends StObject {
   var EventDataStoreArn: js.UndefOr[typings.awsSdk.clientsCloudtrailMod.EventDataStoreArn] = js.undefined
   
   /**
-    * This field is being deprecated. Indicates whether the event data store includes events from all regions, or only from the region in which it was created.
+    * Indicates whether the event data store includes events from all regions, or only from the region in which it was created.
     */
   var MultiRegionEnabled: js.UndefOr[Boolean] = js.undefined
   
@@ -32,27 +32,27 @@ trait EventDataStore extends StObject {
   var Name: js.UndefOr[EventDataStoreName] = js.undefined
   
   /**
-    * This field is being deprecated. Indicates that an event data store is collecting logged events for an organization.
+    * Indicates that an event data store is collecting logged events for an organization.
     */
   var OrganizationEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * This field is being deprecated. The retention period, in days.
+    * The retention period, in days.
     */
   var RetentionPeriod: js.UndefOr[typings.awsSdk.clientsCloudtrailMod.RetentionPeriod] = js.undefined
   
   /**
-    * This field is being deprecated. The status of an event data store. Values are ENABLED and PENDING_DELETION.
+    * The status of an event data store. Values are ENABLED and PENDING_DELETION.
     */
   var Status: js.UndefOr[EventDataStoreStatus] = js.undefined
   
   /**
-    * This field is being deprecated. Indicates whether the event data store is protected from termination.
+    * Indicates whether the event data store is protected from termination.
     */
   var TerminationProtectionEnabled: js.UndefOr[typings.awsSdk.clientsCloudtrailMod.TerminationProtectionEnabled] = js.undefined
   
   /**
-    * This field is being deprecated. The timestamp showing when an event data store was updated, if applicable. UpdatedTimestamp is always either the same or newer than the time shown in CreatedTimestamp.
+    * The timestamp showing when an event data store was updated, if applicable. UpdatedTimestamp is always either the same or newer than the time shown in CreatedTimestamp.
     */
   var UpdatedTimestamp: js.UndefOr[js.Date] = js.undefined
 }

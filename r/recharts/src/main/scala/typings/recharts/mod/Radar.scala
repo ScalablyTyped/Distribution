@@ -12,7 +12,7 @@ open class Radar protected ()
   def this(props: RadarProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: RadarProps, context: Any) = this()
 }

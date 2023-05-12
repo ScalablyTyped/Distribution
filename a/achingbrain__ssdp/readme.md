@@ -1,7 +1,7 @@
 
 # Scala.js typings for achingbrain__ssdp
 
-Typings are for version 4.0.1
+Typings are for version 4.0.4
 
 
 

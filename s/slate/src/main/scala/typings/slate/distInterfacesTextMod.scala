@@ -1,7 +1,7 @@
 package typings.slate
 
-import typings.slate.distInterfacesCustomTypesMod.ExtendedType
 import typings.slate.distInterfacesRangeMod.Range
+import typings.slate.distTypesCustomTypesMod.ExtendedType
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -55,8 +55,17 @@ object distInterfacesTextMod {
   @js.native
   trait TextInterface extends StObject {
     
+    /**
+      * Get the leaves for a text node given decorations.
+      */
     def decorations(node: typings.slate.distInterfacesTextMod.Text, decorations: js.Array[Range]): js.Array[typings.slate.distInterfacesTextMod.Text] = js.native
     
+    /**
+      * Check if two text nodes are equal.
+      *
+      * When loose is set, the text is not compared. This is
+      * used to check whether sibling text nodes can be merged.
+      */
     def equals(text: typings.slate.distInterfacesTextMod.Text, another: typings.slate.distInterfacesTextMod.Text): Boolean = js.native
     def equals(
       text: typings.slate.distInterfacesTextMod.Text,
@@ -64,12 +73,27 @@ object distInterfacesTextMod {
       options: TextEqualsOptions
     ): Boolean = js.native
     
+    /**
+      * Check if a value implements the `Text` interface.
+      */
     def isText(value: Any): /* is slate.slate/dist/interfaces/text.Text */ Boolean = js.native
     
+    /**
+      * Check if a value is a list of `Text` objects.
+      */
     def isTextList(value: Any): /* is std.Array<slate.slate/dist/interfaces/text.Text> */ Boolean = js.native
     
+    /**
+      * Check if some props are a partial of Text.
+      */
     def isTextProps(props: Any): /* is std.Partial<slate.slate/dist/interfaces/text.Text> */ Boolean = js.native
     
+    /**
+      * Check if an text matches set of properties.
+      *
+      * Note: this is for matching custom properties, and it does not ensure that
+      * the `text` property are two nodes equal.
+      */
     def matches(
       text: typings.slate.distInterfacesTextMod.Text,
       props: Partial[typings.slate.distInterfacesTextMod.Text]

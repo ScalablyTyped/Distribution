@@ -31,12 +31,18 @@ object distSrcTaskMod {
     def on(
       `type`: TaskEvent,
       nextOrObserver: js.Function1[/* a */ UploadTaskSnapshotCompat, Any],
-      error: js.Function1[/* error */ StorageError, Unit | Null]
+      error: js.Function1[/* error */ StorageError, Unit]
     ): Unsubscribe | Subscribe[UploadTaskSnapshotCompat] = js.native
     def on(
       `type`: TaskEvent,
       nextOrObserver: js.Function1[/* a */ UploadTaskSnapshotCompat, Any],
-      error: js.Function1[/* error */ StorageError, Unit | Null],
+      error: js.Function1[/* error */ StorageError, Unit],
+      completed: js.Function0[Unit | Null]
+    ): Unsubscribe | Subscribe[UploadTaskSnapshotCompat] = js.native
+    def on(
+      `type`: TaskEvent,
+      nextOrObserver: js.Function1[/* a */ UploadTaskSnapshotCompat, Any],
+      error: Null,
       completed: js.Function0[Unit | Null]
     ): Unsubscribe | Subscribe[UploadTaskSnapshotCompat] = js.native
     def on(
@@ -45,40 +51,40 @@ object distSrcTaskMod {
       error: Unit,
       completed: js.Function0[Unit | Null]
     ): Unsubscribe | Subscribe[UploadTaskSnapshotCompat] = js.native
+    def on(`type`: TaskEvent, nextOrObserver: Null, error: js.Function1[/* error */ StorageError, Unit]): Unsubscribe | Subscribe[UploadTaskSnapshotCompat] = js.native
     def on(
       `type`: TaskEvent,
       nextOrObserver: Null,
-      error: js.Function1[/* error */ StorageError, Unit | Null]
-    ): Unsubscribe | Subscribe[UploadTaskSnapshotCompat] = js.native
-    def on(
-      `type`: TaskEvent,
-      nextOrObserver: Null,
-      error: js.Function1[/* error */ StorageError, Unit | Null],
+      error: js.Function1[/* error */ StorageError, Unit],
       completed: js.Function0[Unit | Null]
     ): Unsubscribe | Subscribe[UploadTaskSnapshotCompat] = js.native
+    def on(`type`: TaskEvent, nextOrObserver: Null, error: Null, completed: js.Function0[Unit | Null]): Unsubscribe | Subscribe[UploadTaskSnapshotCompat] = js.native
     def on(`type`: TaskEvent, nextOrObserver: Null, error: Unit, completed: js.Function0[Unit | Null]): Unsubscribe | Subscribe[UploadTaskSnapshotCompat] = js.native
+    def on(`type`: TaskEvent, nextOrObserver: Unit, error: js.Function1[/* error */ StorageError, Unit]): Unsubscribe | Subscribe[UploadTaskSnapshotCompat] = js.native
     def on(
       `type`: TaskEvent,
       nextOrObserver: Unit,
-      error: js.Function1[/* error */ StorageError, Unit | Null]
-    ): Unsubscribe | Subscribe[UploadTaskSnapshotCompat] = js.native
-    def on(
-      `type`: TaskEvent,
-      nextOrObserver: Unit,
-      error: js.Function1[/* error */ StorageError, Unit | Null],
+      error: js.Function1[/* error */ StorageError, Unit],
       completed: js.Function0[Unit | Null]
     ): Unsubscribe | Subscribe[UploadTaskSnapshotCompat] = js.native
+    def on(`type`: TaskEvent, nextOrObserver: Unit, error: Null, completed: js.Function0[Unit | Null]): Unsubscribe | Subscribe[UploadTaskSnapshotCompat] = js.native
     def on(`type`: TaskEvent, nextOrObserver: Unit, error: Unit, completed: js.Function0[Unit | Null]): Unsubscribe | Subscribe[UploadTaskSnapshotCompat] = js.native
     def on(`type`: TaskEvent, nextOrObserver: StorageObserver[UploadTaskSnapshotCompat]): Unsubscribe | Subscribe[UploadTaskSnapshotCompat] = js.native
     def on(
       `type`: TaskEvent,
       nextOrObserver: StorageObserver[UploadTaskSnapshotCompat],
-      error: js.Function1[/* error */ StorageError, Unit | Null]
+      error: js.Function1[/* error */ StorageError, Unit]
     ): Unsubscribe | Subscribe[UploadTaskSnapshotCompat] = js.native
     def on(
       `type`: TaskEvent,
       nextOrObserver: StorageObserver[UploadTaskSnapshotCompat],
-      error: js.Function1[/* error */ StorageError, Unit | Null],
+      error: js.Function1[/* error */ StorageError, Unit],
+      completed: js.Function0[Unit | Null]
+    ): Unsubscribe | Subscribe[UploadTaskSnapshotCompat] = js.native
+    def on(
+      `type`: TaskEvent,
+      nextOrObserver: StorageObserver[UploadTaskSnapshotCompat],
+      error: Null,
       completed: js.Function0[Unit | Null]
     ): Unsubscribe | Subscribe[UploadTaskSnapshotCompat] = js.native
     def on(

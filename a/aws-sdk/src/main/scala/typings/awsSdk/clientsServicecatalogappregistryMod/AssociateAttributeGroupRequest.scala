@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AssociateAttributeGroupRequest extends StObject {
   
   /**
-    * The name or ID of the application.
+    *  The name, ID, or ARN of the application. 
     */
   var application: ApplicationSpecifier
   
   /**
-    * The name or ID of the attribute group that holds the attributes to describe the application.
+    *  The name, ID, or ARN of the attribute group that holds the attributes to describe the application. 
     */
   var attributeGroup: AttributeGroupSpecifier
 }

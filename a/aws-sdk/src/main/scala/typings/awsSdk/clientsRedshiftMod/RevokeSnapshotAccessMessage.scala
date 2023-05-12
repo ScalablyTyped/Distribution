@@ -17,7 +17,7 @@ trait RevokeSnapshotAccessMessage extends StObject {
   var SnapshotArn: js.UndefOr[String] = js.undefined
   
   /**
-    * The identifier of the cluster the snapshot was created from. This parameter is required if your IAM user has a policy containing a snapshot resource element that specifies anything other than * for the cluster name.
+    * The identifier of the cluster the snapshot was created from. This parameter is required if your IAM user or role has a policy containing a snapshot resource element that specifies anything other than * for the cluster name.
     */
   var SnapshotClusterIdentifier: js.UndefOr[String] = js.undefined
   

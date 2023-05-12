@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "fast-equals" : "4.0.3"
+      "fast-equals" : "5.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "fast-equals" : "4.0.3"
+      "fast-equals" : "5.0.1"
     }
   ],
   "compile-devDependencies" : [

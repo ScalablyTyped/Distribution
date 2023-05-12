@@ -13,11 +13,11 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CustomTransformers extends StObject {
+trait CustomTransformers[CbEmitRes /* <: EmitResult */] extends StObject {
   
   var customTransformers: js.UndefOr[typings.angularCompilerCli.srcTransformersApiMod.CustomTransformers] = js.undefined
   
-  var emitCallback: js.UndefOr[TsEmitCallback] = js.undefined
+  var emitCallback: js.UndefOr[TsEmitCallback[CbEmitRes]] = js.undefined
   
   var emitFlags: js.UndefOr[EmitFlags] = js.undefined
   
@@ -32,7 +32,7 @@ trait CustomTransformers extends StObject {
   
   var host: js.UndefOr[CompilerHost] = js.undefined
   
-  var mergeEmitResultsCallback: js.UndefOr[TsMergeEmitResultsCallback] = js.undefined
+  var mergeEmitResultsCallback: js.UndefOr[TsMergeEmitResultsCallback[CbEmitRes]] = js.undefined
   
   var modifiedResourceFiles: js.UndefOr[Set[String] | Null] = js.undefined
   
@@ -44,19 +44,19 @@ trait CustomTransformers extends StObject {
 }
 object CustomTransformers {
   
-  inline def apply(options: CompilerOptions, rootNames: js.Array[String]): CustomTransformers = {
+  inline def apply[CbEmitRes /* <: EmitResult */](options: CompilerOptions, rootNames: js.Array[String]): CustomTransformers[CbEmitRes] = {
     val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any], rootNames = rootNames.asInstanceOf[js.Any])
-    __obj.asInstanceOf[CustomTransformers]
+    __obj.asInstanceOf[CustomTransformers[CbEmitRes]]
   }
   
   @scala.inline
-  implicit open class MutableBuilder[Self <: CustomTransformers] (val x: Self) extends AnyVal {
+  implicit open class MutableBuilder[Self <: CustomTransformers[?], CbEmitRes /* <: EmitResult */] (val x: Self & CustomTransformers[CbEmitRes]) extends AnyVal {
     
     inline def setCustomTransformers(value: typings.angularCompilerCli.srcTransformersApiMod.CustomTransformers): Self = StObject.set(x, "customTransformers", value.asInstanceOf[js.Any])
     
     inline def setCustomTransformersUndefined: Self = StObject.set(x, "customTransformers", js.undefined)
     
-    inline def setEmitCallback(value: /* args */ TsEmitArguments => EmitResult): Self = StObject.set(x, "emitCallback", js.Any.fromFunction1(value))
+    inline def setEmitCallback(value: /* args */ TsEmitArguments => CbEmitRes): Self = StObject.set(x, "emitCallback", js.Any.fromFunction1(value))
     
     inline def setEmitCallbackUndefined: Self = StObject.set(x, "emitCallback", js.undefined)
     
@@ -78,7 +78,7 @@ object CustomTransformers {
     
     inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
     
-    inline def setMergeEmitResultsCallback(value: /* results */ js.Array[EmitResult] => EmitResult): Self = StObject.set(x, "mergeEmitResultsCallback", js.Any.fromFunction1(value))
+    inline def setMergeEmitResultsCallback(value: /* results */ js.Array[CbEmitRes] => CbEmitRes): Self = StObject.set(x, "mergeEmitResultsCallback", js.Any.fromFunction1(value))
     
     inline def setMergeEmitResultsCallbackUndefined: Self = StObject.set(x, "mergeEmitResultsCallback", js.undefined)
     

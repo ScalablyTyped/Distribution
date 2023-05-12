@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PostResponses202 extends StObject {
   
   /**
-    * Redeliver a delivery for the webhook configured for a GitHub App.
+    * Redeliver a delivery for an app webhook
+    * @description Redeliver a delivery for the webhook configured for a GitHub App.
     *
     * You must use a [JWT](https://docs.github.com/apps/building-github-apps/authenticating-with-github-apps/#authenticating-as-a-github-app) to access this endpoint.
     */

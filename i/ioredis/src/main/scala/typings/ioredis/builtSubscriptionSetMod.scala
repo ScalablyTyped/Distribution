@@ -15,12 +15,14 @@ object builtSubscriptionSetMod {
   /* Rewritten from type alias, can be one of: 
     - typings.ioredis.ioredisStrings.subscribe
     - typings.ioredis.ioredisStrings.psubscribe
+    - typings.ioredis.ioredisStrings.ssubscribe
   */
   trait AddSet extends StObject
   
   /* Rewritten from type alias, can be one of: 
     - typings.ioredis.ioredisStrings.unsubscribe
     - typings.ioredis.ioredisStrings.punsubscribe
+    - typings.ioredis.ioredisStrings.sunsubscribe
   */
   trait DelSet extends StObject
   

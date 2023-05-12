@@ -1,19 +1,19 @@
 package typings.angularCompilerCli
 
+import typings.angularCompilerCli.anon.ClassDeclarationDeclaratiForEachChild
+import typings.angularCompilerCli.srcNgtscAnnotationsCommonMod.InjectableClassRegistry
 import typings.angularCompilerCli.srcNgtscAnnotationsCommonSrcReferencesRegistryMod.ReferencesRegistry
 import typings.angularCompilerCli.srcNgtscImportsMod.ReferenceEmitter
-import typings.angularCompilerCli.srcNgtscMetadataMod.InjectableClassRegistry
+import typings.angularCompilerCli.srcNgtscIncrementalSemanticGraphMod.SemanticDepGraphUpdater
+import typings.angularCompilerCli.srcNgtscMetadataMod.ExportedProviderStatusResolver
 import typings.angularCompilerCli.srcNgtscMetadataSrcApiMod.MetadataReader
 import typings.angularCompilerCli.srcNgtscMetadataSrcApiMod.MetadataRegistry
 import typings.angularCompilerCli.srcNgtscPartialEvaluatorMod.PartialEvaluator
 import typings.angularCompilerCli.srcNgtscPartialEvaluatorMod.SyntheticValue
 import typings.angularCompilerCli.srcNgtscPartialEvaluatorSrcInterfaceMod.ForeignFunctionResolver
 import typings.angularCompilerCli.srcNgtscPerfSrcApiMod.PerfRecorder
-import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.ClassDeclaration
-import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.DeclarationNode
 import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.ReflectionHost
 import typings.angularCompilerCli.srcNgtscScopeMod.LocalModuleScopeRegistry
-import typings.angularCompilerCli.srcNgtscShimsApiMod.FactoryTracker
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,9 +35,10 @@ object srcNgtscAnnotationsNgModuleMod {
       metaRegistry: MetadataRegistry,
       scopeRegistry: LocalModuleScopeRegistry,
       referencesRegistry: ReferencesRegistry,
+      exportedProviderStatusResolver: ExportedProviderStatusResolver,
+      semanticDepGraphUpdater: Null,
       isCore: Boolean,
       refEmitter: ReferenceEmitter,
-      factoryTracker: Null,
       annotateForClosureCompiler: Boolean,
       onlyPublishPublicTypings: Boolean,
       injectableRegistry: InjectableClassRegistry,
@@ -50,9 +51,10 @@ object srcNgtscAnnotationsNgModuleMod {
       metaRegistry: MetadataRegistry,
       scopeRegistry: LocalModuleScopeRegistry,
       referencesRegistry: ReferencesRegistry,
+      exportedProviderStatusResolver: ExportedProviderStatusResolver,
+      semanticDepGraphUpdater: SemanticDepGraphUpdater,
       isCore: Boolean,
       refEmitter: ReferenceEmitter,
-      factoryTracker: FactoryTracker,
       annotateForClosureCompiler: Boolean,
       onlyPublishPublicTypings: Boolean,
       injectableRegistry: InjectableClassRegistry,
@@ -64,10 +66,7 @@ object srcNgtscAnnotationsNgModuleMod {
   @js.native
   open class NgModuleSymbol protected ()
     extends typings.angularCompilerCli.srcNgtscAnnotationsNgModuleSrcHandlerMod.NgModuleSymbol {
-    def this(/**
-      * The declaration for this symbol.
-      */
-    decl: ClassDeclaration[DeclarationNode]) = this()
+    def this(decl: ClassDeclarationDeclaratiForEachChild, hasProviders: Boolean) = this()
   }
   
   inline def createModuleWithProvidersResolver(reflector: ReflectionHost, isCore: Boolean): ForeignFunctionResolver = (^.asInstanceOf[js.Dynamic].applyDynamic("createModuleWithProvidersResolver")(reflector.asInstanceOf[js.Any], isCore.asInstanceOf[js.Any])).asInstanceOf[ForeignFunctionResolver]

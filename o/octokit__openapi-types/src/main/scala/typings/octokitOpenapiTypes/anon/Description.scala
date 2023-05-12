@@ -21,13 +21,13 @@ trait Description extends StObject {
     *   }
     * }
     */
-  var files: StringDictionary[ContentString]
+  var files: StringDictionary[js.UndefOr[ContentString]]
   
   var public: js.UndefOr[Boolean] = js.undefined
 }
 object Description {
   
-  inline def apply(files: StringDictionary[ContentString]): Description = {
+  inline def apply(files: StringDictionary[js.UndefOr[ContentString]]): Description = {
     val __obj = js.Dynamic.literal(files = files.asInstanceOf[js.Any])
     __obj.asInstanceOf[Description]
   }
@@ -39,7 +39,7 @@ object Description {
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    inline def setFiles(value: StringDictionary[ContentString]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+    inline def setFiles(value: StringDictionary[js.UndefOr[ContentString]]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
     inline def setPublic(value: Boolean): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
     

@@ -7,6 +7,7 @@ import typings.devtoolsProtocol.devtoolsProtocolStrings.exception
 import typings.devtoolsProtocol.devtoolsProtocolStrings.instrumentation
 import typings.devtoolsProtocol.devtoolsProtocolStrings.other_
 import typings.devtoolsProtocol.devtoolsProtocolStrings.promiseRejection
+import typings.devtoolsProtocol.devtoolsProtocolStrings.step
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,6 +25,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.devtoolsProtocol.devtoolsProtocolStrings.other_
   - typings.devtoolsProtocol.devtoolsProtocolStrings.promiseRejection
   - typings.devtoolsProtocol.devtoolsProtocolStrings.XHR
+  - typings.devtoolsProtocol.devtoolsProtocolStrings.step
 */
 trait PausedEventReason extends StObject
 object PausedEventReason {
@@ -49,6 +51,8 @@ object PausedEventReason {
   inline def Other: other_ = "other".asInstanceOf[other_]
   
   inline def PromiseRejection: promiseRejection = "promiseRejection".asInstanceOf[promiseRejection]
+  
+  inline def Step: step = "step".asInstanceOf[step]
   
   inline def XHR: typings.devtoolsProtocol.devtoolsProtocolStrings.XHR = "XHR".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.XHR]
 }

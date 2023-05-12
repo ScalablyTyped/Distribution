@@ -206,18 +206,21 @@ object nodeColonstreamMod {
   }
   
   /**
+    * A stream to attach a signal to.
+    *
     * Attaches an AbortSignal to a readable or writeable stream. This lets code
     * control stream destruction using an `AbortController`.
     *
-    * Calling `abort` on the `AbortController` corresponding to the passed`AbortSignal` will behave the same way as calling `.destroy(new AbortError())`on the stream.
+    * Calling `abort` on the `AbortController` corresponding to the passed`AbortSignal` will behave the same way as calling `.destroy(new AbortError())`on the stream, and `controller.error(new
+    * AbortError())` for webstreams.
     *
     * ```js
-    * const fs = require('fs');
+    * const fs = require('node:fs');
     *
     * const controller = new AbortController();
     * const read = addAbortSignal(
     *   controller.signal,
-    *   fs.createReadStream(('object.json'))
+    *   fs.createReadStream(('object.json')),
     * );
     * // Later, abort the operation closing the stream
     * controller.abort();
@@ -230,7 +233,7 @@ object nodeColonstreamMod {
     * setTimeout(() => controller.abort(), 10_000); // set a timeout
     * const stream = addAbortSignal(
     *   controller.signal,
-    *   fs.createReadStream(('object.json'))
+    *   fs.createReadStream(('object.json')),
     * );
     * (async () => {
     *   try {
@@ -245,6 +248,37 @@ object nodeColonstreamMod {
     *     }
     *   }
     * })();
+    * ```
+    *
+    * Or using an `AbortSignal` with a ReadableStream:
+    *
+    * ```js
+    * const controller = new AbortController();
+    * const rs = new ReadableStream({
+    *   start(controller) {
+    *     controller.enqueue('hello');
+    *     controller.enqueue('world');
+    *     controller.close();
+    *   },
+    * });
+    *
+    * addAbortSignal(controller.signal, rs);
+    *
+    * finished(rs, (err) => {
+    *   if (err) {
+    *     if (err.name === 'AbortError') {
+    *       // The operation was cancelled
+    *     }
+    *   }
+    * });
+    *
+    * const reader = rs.getReader();
+    *
+    * reader.read().then(({ value, done }) => {
+    *   console.log(value); // hello
+    *   console.log(done); // false
+    *   controller.abort();
+    * });
     * ```
     * @since v15.4.0
     * @param signal A signal representing possible cancellation
@@ -290,11 +324,14 @@ object nodeColonstreamMod {
     callback: js.Function1[/* err */ js.UndefOr[ErrnoException | Null], Unit]
   ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("finished")(stream.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   /**
+    * A readable and/or writable stream/webstream.
+    *
     * A function to get notified when a stream is no longer readable, writable
     * or has experienced an error or a premature close event.
     *
     * ```js
-    * const { finished } = require('stream');
+    * const { finished } = require('node:stream');
+    * const fs = require('node:fs');
     *
     * const rs = fs.createReadStream('archive.tar');
     *
@@ -312,21 +349,7 @@ object nodeColonstreamMod {
     * Especially useful in error handling scenarios where a stream is destroyed
     * prematurely (like an aborted HTTP request), and will not emit `'end'`or `'finish'`.
     *
-    * The `finished` API provides promise version:
-    *
-    * ```js
-    * const { finished } = require('stream/promises');
-    *
-    * const rs = fs.createReadStream('archive.tar');
-    *
-    * async function run() {
-    *   await finished(rs);
-    *   console.log('Stream is done reading.');
-    * }
-    *
-    * run().catch(console.error);
-    * rs.resume(); // Drain the stream.
-    * ```
+    * The `finished` API provides `promise version`.
     *
     * `stream.finished()` leaves dangling event listeners (in particular`'error'`, `'end'`, `'finish'` and `'close'`) after `callback` has been
     * invoked. The reason for this is so that unexpected `'error'` events (due to
@@ -360,11 +383,20 @@ object nodeColonstreamMod {
     callback: js.Function1[/* err */ js.UndefOr[ErrnoException | Null], Unit]
   ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("finished")(stream.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   
+  /**
+    * Returns the default highWaterMark used by streams.
+    * Defaults to `16384` (16 KiB), or `16` for `objectMode`.
+    * @since v19.9.0
+    * @param objectMode
+    */
+  inline def getDefaultHighWaterMark(objectMode: Boolean): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultHighWaterMark")(objectMode.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
   inline def isErrored(stream: typings.node.NodeJS.ReadableStream): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isErrored")(stream.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   inline def isErrored(stream: typings.node.NodeJS.WritableStream): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isErrored")(stream.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   /**
     * Returns whether the stream has encountered an error.
-    * @since v17.3.0
+    * @since v17.3.0, v16.14.0
+    * @experimental
     */
   inline def isErrored(stream: typings.node.streamMod.Readable): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isErrored")(stream.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   inline def isErrored(stream: typings.node.streamMod.Writable): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isErrored")(stream.asInstanceOf[js.Any]).asInstanceOf[Boolean]
@@ -372,7 +404,8 @@ object nodeColonstreamMod {
   inline def isReadable(stream: typings.node.NodeJS.ReadableStream): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isReadable")(stream.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   /**
     * Returns whether the stream is readable.
-    * @since v17.4.0
+    * @since v17.4.0, v16.14.0
+    * @experimental
     */
   inline def isReadable(stream: typings.node.streamMod.Readable): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isReadable")(stream.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
@@ -402,9 +435,9 @@ object nodeColonstreamMod {
     * properly cleaning up and provide a callback when the pipeline is complete.
     *
     * ```js
-    * const { pipeline } = require('stream');
-    * const fs = require('fs');
-    * const zlib = require('zlib');
+    * const { pipeline } = require('node:stream');
+    * const fs = require('node:fs');
+    * const zlib = require('node:zlib');
     *
     * // Use the pipeline API to easily pipe a series of streams
     * // together and get notified when the pipeline is fully done.
@@ -421,95 +454,11 @@ object nodeColonstreamMod {
     *     } else {
     *       console.log('Pipeline succeeded.');
     *     }
-    *   }
+    *   },
     * );
     * ```
     *
-    * The `pipeline` API provides a promise version, which can also
-    * receive an options argument as the last parameter with a`signal` `AbortSignal` property. When the signal is aborted,`destroy` will be called on the underlying pipeline, with
-    * an`AbortError`.
-    *
-    * ```js
-    * const { pipeline } = require('stream/promises');
-    *
-    * async function run() {
-    *   await pipeline(
-    *     fs.createReadStream('archive.tar'),
-    *     zlib.createGzip(),
-    *     fs.createWriteStream('archive.tar.gz')
-    *   );
-    *   console.log('Pipeline succeeded.');
-    * }
-    *
-    * run().catch(console.error);
-    * ```
-    *
-    * To use an `AbortSignal`, pass it inside an options object,
-    * as the last argument:
-    *
-    * ```js
-    * const { pipeline } = require('stream/promises');
-    *
-    * async function run() {
-    *   const ac = new AbortController();
-    *   const signal = ac.signal;
-    *
-    *   setTimeout(() => ac.abort(), 1);
-    *   await pipeline(
-    *     fs.createReadStream('archive.tar'),
-    *     zlib.createGzip(),
-    *     fs.createWriteStream('archive.tar.gz'),
-    *     { signal },
-    *   );
-    * }
-    *
-    * run().catch(console.error); // AbortError
-    * ```
-    *
-    * The `pipeline` API also supports async generators:
-    *
-    * ```js
-    * const { pipeline } = require('stream/promises');
-    * const fs = require('fs');
-    *
-    * async function run() {
-    *   await pipeline(
-    *     fs.createReadStream('lowercase.txt'),
-    *     async function* (source, { signal }) {
-    *       source.setEncoding('utf8');  // Work with strings rather than `Buffer`s.
-    *       for await (const chunk of source) {
-    *         yield await processChunk(chunk, { signal });
-    *       }
-    *     },
-    *     fs.createWriteStream('uppercase.txt')
-    *   );
-    *   console.log('Pipeline succeeded.');
-    * }
-    *
-    * run().catch(console.error);
-    * ```
-    *
-    * Remember to handle the `signal` argument passed into the async generator.
-    * Especially in the case where the async generator is the source for the
-    * pipeline (i.e. first argument) or the pipeline will never complete.
-    *
-    * ```js
-    * const { pipeline } = require('stream/promises');
-    * const fs = require('fs');
-    *
-    * async function run() {
-    *   await pipeline(
-    *     async function* ({ signal }) {
-    *       await someLongRunningfn({ signal });
-    *       yield 'asd';
-    *     },
-    *     fs.createWriteStream('uppercase.txt')
-    *   );
-    *   console.log('Pipeline succeeded.');
-    * }
-    *
-    * run().catch(console.error);
-    * ```
+    * The `pipeline` API provides a `promise version`.
     *
     * `stream.pipeline()` will call `stream.destroy(err)` on all streams except:
     *
@@ -528,9 +477,9 @@ object nodeColonstreamMod {
     * See the example below:
     *
     * ```js
-    * const fs = require('fs');
-    * const http = require('http');
-    * const { pipeline } = require('stream');
+    * const fs = require('node:fs');
+    * const http = require('node:http');
+    * const { pipeline } = require('node:stream');
     *
     * const server = http.createServer((req, res) => {
     *   const fileStream = fs.createReadStream('./fileNotExist.txt');
@@ -632,4 +581,12 @@ object nodeColonstreamMod {
       options: PipelineOptions
     ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("pipeline")(source.asInstanceOf[js.Any], transform1.asInstanceOf[js.Any], transform2.asInstanceOf[js.Any], transform3.asInstanceOf[js.Any], transform4.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   }
+  
+  /**
+    * Sets the default highWaterMark used by streams.
+    * @since v19.9.0
+    * @param objectMode
+    * @param value highWaterMark value
+    */
+  inline def setDefaultHighWaterMark(objectMode: Boolean, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultHighWaterMark")(objectMode.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

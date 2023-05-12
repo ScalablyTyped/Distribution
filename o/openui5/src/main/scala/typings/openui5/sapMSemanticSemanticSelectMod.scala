@@ -1,6 +1,6 @@
 package typings.openui5
 
-import typings.openui5.anon.`13`
+import typings.openui5.anon.`16`
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapMSemanticSemanticControlMod.SemanticControlSettings
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
@@ -244,6 +244,8 @@ object sapMSemanticSemanticSelectMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:change change} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -252,7 +254,7 @@ object sapMSemanticSemanticSelectMod {
     def fireChange(/**
       * Parameters to pass along with the event
       */
-    mParameters: `13`): this.type = js.native
+    mParameters: `16`): this.type = js.native
     
     /**
       * Gets current value of property {@link #getEnabled enabled}.

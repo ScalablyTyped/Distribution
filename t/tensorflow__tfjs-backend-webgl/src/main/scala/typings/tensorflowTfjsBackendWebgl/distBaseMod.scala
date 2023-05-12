@@ -18,7 +18,7 @@ import typings.tensorflowTfjsBackendWebgl.distTexUtilMod.Texture
 import typings.tensorflowTfjsBackendWebgl.distTexUtilMod.TextureConfig
 import typings.tensorflowTfjsBackendWebgl.tensorflowTfjsBackendWebglInts.`1`
 import typings.tensorflowTfjsBackendWebgl.tensorflowTfjsBackendWebglInts.`2`
-import typings.tensorflowTfjsCore.distKernelRegistryMod.TensorInfo
+import typings.tensorflowTfjsCore.distTensorInfoMod.TensorInfo
 import typings.tensorflowTfjsCore.distTypesMod.PixelData
 import typings.tensorflowTfjsCore.distTypesMod.TypedArray
 import org.scalablytyped.runtime.StObject
@@ -135,7 +135,7 @@ object distBaseMod {
   
   @JSImport("@tensorflow/tfjs-backend-webgl/dist/base", "version_webgl")
   @js.native
-  val versionWebgl: /* "4.0.0" */ String = js.native
+  val versionWebgl: /* "4.5.0" */ String = js.native
   
   object webgl {
     

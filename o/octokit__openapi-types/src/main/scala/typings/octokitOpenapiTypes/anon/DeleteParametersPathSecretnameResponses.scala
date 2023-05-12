@@ -6,14 +6,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DeleteParametersPathSecretnameResponses extends StObject {
   
-  /** Deletes a secret in an organization using the secret name. You must authenticate using an access token with the `admin:org` scope to use this endpoint. GitHub Apps must have the `secrets` organization permission to use this endpoint. */
+  /**
+    * Delete an organization secret
+    * @description Deletes a secret in an organization using the secret name. You must authenticate using an access token with the `admin:org` scope to use this endpoint. GitHub Apps must have the `secrets` organization permission to use this endpoint.
+    */
   var delete: ParametersPathSecretnameResponses
   
-  /** Gets a single organization secret without revealing its encrypted value. You must authenticate using an access token with the `admin:org` scope to use this endpoint. GitHub Apps must have the `secrets` organization permission to use this endpoint. */
-  var get: Responses200Content68
+  /**
+    * Get an organization secret
+    * @description Gets a single organization secret without revealing its encrypted value. You must authenticate using an access token with the `admin:org` scope to use this endpoint. GitHub Apps must have the `secrets` organization permission to use this endpoint.
+    */
+  var get: ParametersPathSecretname
   
   /**
-    * Creates or updates an organization secret with an encrypted value. Encrypt your secret using
+    * Create or update an organization secret
+    * @description Creates or updates an organization secret with an encrypted value. Encrypt your secret using
     * [LibSodium](https://libsodium.gitbook.io/doc/bindings_for_other_languages). You must authenticate using an access
     * token with the `admin:org` scope to use this endpoint. GitHub Apps must have the `secrets` organization permission to
     * use this endpoint.
@@ -89,14 +96,14 @@ trait DeleteParametersPathSecretnameResponses extends StObject {
     * puts Base64.strict_encode64(encrypted_secret)
     * ```
     */
-  var put: RequestBodyContentApplicationjsonKeyid
+  var put: RequestBodyContentApplicationjsonEncryptedvalue
 }
 object DeleteParametersPathSecretnameResponses {
   
   inline def apply(
     delete: ParametersPathSecretnameResponses,
-    get: Responses200Content68,
-    put: RequestBodyContentApplicationjsonKeyid
+    get: ParametersPathSecretname,
+    put: RequestBodyContentApplicationjsonEncryptedvalue
   ): DeleteParametersPathSecretnameResponses = {
     val __obj = js.Dynamic.literal(delete = delete.asInstanceOf[js.Any], get = get.asInstanceOf[js.Any], put = put.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteParametersPathSecretnameResponses]
@@ -107,8 +114,8 @@ object DeleteParametersPathSecretnameResponses {
     
     inline def setDelete(value: ParametersPathSecretnameResponses): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
     
-    inline def setGet(value: Responses200Content68): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
+    inline def setGet(value: ParametersPathSecretname): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     
-    inline def setPut(value: RequestBodyContentApplicationjsonKeyid): Self = StObject.set(x, "put", value.asInstanceOf[js.Any])
+    inline def setPut(value: RequestBodyContentApplicationjsonEncryptedvalue): Self = StObject.set(x, "put", value.asInstanceOf[js.Any])
   }
 }

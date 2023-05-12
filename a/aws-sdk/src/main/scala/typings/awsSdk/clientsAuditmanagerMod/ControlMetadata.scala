@@ -17,7 +17,7 @@ trait ControlMetadata extends StObject {
   var controlSources: js.UndefOr[ControlSources] = js.undefined
   
   /**
-    *  Specifies when the control was created. 
+    *  The time when the control was created. 
     */
   var createdAt: js.UndefOr[js.Date] = js.undefined
   
@@ -27,7 +27,7 @@ trait ControlMetadata extends StObject {
   var id: js.UndefOr[UUID] = js.undefined
   
   /**
-    *  Specifies when the control was most recently updated. 
+    *  The time when the control was most recently updated. 
     */
   var lastUpdatedAt: js.UndefOr[js.Date] = js.undefined
   

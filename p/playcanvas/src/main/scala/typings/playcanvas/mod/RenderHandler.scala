@@ -17,7 +17,7 @@ open class RenderHandler protected ()
   /**
     * Create a new RenderHandler instance.
     *
-    * @param {AppBase} app - The running {@link AppBase}.
+    * @param {import('../app-base.js').AppBase} app - The running {@link AppBase}.
     * @hideconstructor
     */
   def this(app: AppBase) = this()

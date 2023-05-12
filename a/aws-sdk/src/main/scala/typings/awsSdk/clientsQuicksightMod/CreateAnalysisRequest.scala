@@ -9,12 +9,17 @@ trait CreateAnalysisRequest extends StObject {
   /**
     * The ID for the analysis that you're creating. This ID displays in the URL of the analysis.
     */
-  var AnalysisId: RestrictiveResourceId
+  var AnalysisId: ShortRestrictiveResourceId
   
   /**
     * The ID of the Amazon Web Services account where you are creating an analysis.
     */
   var AwsAccountId: typings.awsSdk.clientsQuicksightMod.AwsAccountId
+  
+  /**
+    * The definition of an analysis. A definition is the data model of all features in a Dashboard, Template, or Analysis. Either a SourceEntity or a Definition must be provided in order for the request to be valid.
+    */
+  var Definition: js.UndefOr[AnalysisDefinition] = js.undefined
   
   /**
     * A descriptive name for the analysis that you're creating. This name displays for the analysis in the Amazon QuickSight console. 
@@ -32,9 +37,9 @@ trait CreateAnalysisRequest extends StObject {
   var Permissions: js.UndefOr[ResourcePermissionList] = js.undefined
   
   /**
-    * A source entity to use for the analysis that you're creating. This metadata structure contains details that describe a source template and one or more datasets.
+    * A source entity to use for the analysis that you're creating. This metadata structure contains details that describe a source template and one or more datasets. Either a SourceEntity or a Definition must be provided in order for the request to be valid.
     */
-  var SourceEntity: AnalysisSourceEntity
+  var SourceEntity: js.UndefOr[AnalysisSourceEntity] = js.undefined
   
   /**
     * Contains a map of the key-value pairs for the resource tag or tags assigned to the analysis.
@@ -48,22 +53,21 @@ trait CreateAnalysisRequest extends StObject {
 }
 object CreateAnalysisRequest {
   
-  inline def apply(
-    AnalysisId: RestrictiveResourceId,
-    AwsAccountId: AwsAccountId,
-    Name: AnalysisName,
-    SourceEntity: AnalysisSourceEntity
-  ): CreateAnalysisRequest = {
-    val __obj = js.Dynamic.literal(AnalysisId = AnalysisId.asInstanceOf[js.Any], AwsAccountId = AwsAccountId.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], SourceEntity = SourceEntity.asInstanceOf[js.Any])
+  inline def apply(AnalysisId: ShortRestrictiveResourceId, AwsAccountId: AwsAccountId, Name: AnalysisName): CreateAnalysisRequest = {
+    val __obj = js.Dynamic.literal(AnalysisId = AnalysisId.asInstanceOf[js.Any], AwsAccountId = AwsAccountId.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateAnalysisRequest]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: CreateAnalysisRequest] (val x: Self) extends AnyVal {
     
-    inline def setAnalysisId(value: RestrictiveResourceId): Self = StObject.set(x, "AnalysisId", value.asInstanceOf[js.Any])
+    inline def setAnalysisId(value: ShortRestrictiveResourceId): Self = StObject.set(x, "AnalysisId", value.asInstanceOf[js.Any])
     
     inline def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
+    
+    inline def setDefinition(value: AnalysisDefinition): Self = StObject.set(x, "Definition", value.asInstanceOf[js.Any])
+    
+    inline def setDefinitionUndefined: Self = StObject.set(x, "Definition", js.undefined)
     
     inline def setName(value: AnalysisName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
@@ -78,6 +82,8 @@ object CreateAnalysisRequest {
     inline def setPermissionsVarargs(value: ResourcePermission*): Self = StObject.set(x, "Permissions", js.Array(value*))
     
     inline def setSourceEntity(value: AnalysisSourceEntity): Self = StObject.set(x, "SourceEntity", value.asInstanceOf[js.Any])
+    
+    inline def setSourceEntityUndefined: Self = StObject.set(x, "SourceEntity", js.undefined)
     
     inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     

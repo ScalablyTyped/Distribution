@@ -6,6 +6,7 @@ import typings.std.HTMLDocument
 import typings.std.HTMLElement
 import typings.std.Parameters
 import typings.std.ReturnType
+import typings.testingLibraryDom.typesMatchesMod.Matcher
 import typings.testingLibraryDom.typesQueriesMod.AllByBoundAttribute
 import typings.testingLibraryDom.typesQueriesMod.AllByRole
 import typings.testingLibraryDom.typesQueriesMod.AllByText
@@ -83,6 +84,46 @@ object anon {
       inline def setEventType(value: String): Self = StObject.set(x, "EventType", value.asInstanceOf[js.Any])
       
       inline def setEventTypeUndefined: Self = StObject.set(x, "EventType", js.undefined)
+    }
+  }
+  
+  trait Max extends StObject {
+    
+    var max: js.UndefOr[Double] = js.undefined
+    
+    var min: js.UndefOr[Double] = js.undefined
+    
+    var now: js.UndefOr[Double] = js.undefined
+    
+    var text: js.UndefOr[Matcher] = js.undefined
+  }
+  object Max {
+    
+    inline def apply(): Max = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Max]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Max] (val x: Self) extends AnyVal {
+      
+      inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      
+      inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+      
+      inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+      
+      inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+      
+      inline def setNow(value: Double): Self = StObject.set(x, "now", value.asInstanceOf[js.Any])
+      
+      inline def setNowUndefined: Self = StObject.set(x, "now", js.undefined)
+      
+      inline def setText(value: Matcher): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      
+      inline def setTextFunction2(value: (/* content */ String, /* element */ Element | Null) => Boolean): Self = StObject.set(x, "text", js.Any.fromFunction2(value))
+      
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     }
   }
   

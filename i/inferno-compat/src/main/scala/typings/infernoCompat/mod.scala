@@ -6,8 +6,8 @@ import typings.inferno.distCoreTypesMod.ForwardRef
 import typings.inferno.distCoreTypesMod.Inferno.ComponentClass
 import typings.inferno.distCoreTypesMod.Inferno.ExoticComponent
 import typings.inferno.distCoreTypesMod.Inferno.InfernoElement
-import typings.inferno.distCoreTypesMod.Inferno.InfernoNode
 import typings.inferno.distCoreTypesMod.Inferno.StatelessComponent
+import typings.inferno.distCoreTypesMod.InfernoNode
 import typings.inferno.distCoreTypesMod.LinkedEvent
 import typings.inferno.distCoreTypesMod.Props
 import typings.inferno.distCoreTypesMod.Ref
@@ -25,6 +25,7 @@ import typings.infernoCompat.anon.FnCallDataEvent
 import typings.infernoCompat.anon.FnCallFlagsTypeClassNameChildrenChildFlagsPropsKeyRef
 import typings.infernoCompat.anon.FnCallFlagsTypePropsKeyRef
 import typings.infernoCompat.anon.FnCallInputParentDOMCallback
+import typings.infernoCompat.anon.FnCallInputParentDOMCallbackContext
 import typings.infernoCompat.anon.FnCallObj
 import typings.infernoCompat.anon.FnCallParentDOM
 import typings.infernoCompat.anon.FnCallRef
@@ -289,29 +290,37 @@ object mod {
     
     @JSImport("inferno-compat", "default.__render")
     @js.native
-    def _Render: js.Function4[
-        /* input */ js.UndefOr[VNode | Null | InfernoNode], 
-        /* parentDOM */ Element | SVGAElement | ShadowRoot | DocumentFragment | HTMLElement | Node | Null, 
-        /* callback */ js.Function | Null, 
-        /* context */ Any, 
-        Unit
-      ] = js.native
+    def _Render: FnCallInputParentDOMCallbackContext = js.native
     
-    inline def _Render(
-      input: js.UndefOr[VNode | Null | InfernoNode],
-      parentDOM: Element | SVGAElement | ShadowRoot | DocumentFragment | HTMLElement | Node | Null,
-      callback: js.Function | Null,
-      context: Any
-    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("__render")(input.asInstanceOf[js.Any], parentDOM.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    inline def _Render_=(
-      x: js.Function4[
-          /* input */ js.UndefOr[VNode | Null | InfernoNode], 
-          /* parentDOM */ Element | SVGAElement | ShadowRoot | DocumentFragment | HTMLElement | Node | Null, 
-          /* callback */ js.Function | Null, 
-          /* context */ Any, 
-          Unit
-        ]
-    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("__render")(x.asInstanceOf[js.Any])
+    inline def _Render(input: InfernoNode, parentDOM: Null, callback: js.Function, context: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("__render")(input.asInstanceOf[js.Any], parentDOM.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def _Render(input: InfernoNode, parentDOM: Null, callback: Null, context: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("__render")(input.asInstanceOf[js.Any], parentDOM.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def _Render(input: InfernoNode, parentDOM: DocumentFragment, callback: js.Function, context: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("__render")(input.asInstanceOf[js.Any], parentDOM.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def _Render(input: InfernoNode, parentDOM: DocumentFragment, callback: Null, context: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("__render")(input.asInstanceOf[js.Any], parentDOM.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def _Render(input: InfernoNode, parentDOM: Element, callback: js.Function, context: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("__render")(input.asInstanceOf[js.Any], parentDOM.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def _Render(input: InfernoNode, parentDOM: Element, callback: Null, context: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("__render")(input.asInstanceOf[js.Any], parentDOM.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def _Render(input: InfernoNode, parentDOM: HTMLElement, callback: js.Function, context: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("__render")(input.asInstanceOf[js.Any], parentDOM.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def _Render(input: InfernoNode, parentDOM: HTMLElement, callback: Null, context: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("__render")(input.asInstanceOf[js.Any], parentDOM.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def _Render(input: InfernoNode, parentDOM: Node, callback: js.Function, context: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("__render")(input.asInstanceOf[js.Any], parentDOM.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def _Render(input: InfernoNode, parentDOM: Node, callback: Null, context: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("__render")(input.asInstanceOf[js.Any], parentDOM.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def _Render(input: InfernoNode, parentDOM: SVGAElement, callback: js.Function, context: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("__render")(input.asInstanceOf[js.Any], parentDOM.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def _Render(input: InfernoNode, parentDOM: SVGAElement, callback: Null, context: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("__render")(input.asInstanceOf[js.Any], parentDOM.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def _Render(input: InfernoNode, parentDOM: ShadowRoot, callback: js.Function, context: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("__render")(input.asInstanceOf[js.Any], parentDOM.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def _Render(input: InfernoNode, parentDOM: ShadowRoot, callback: Null, context: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("__render")(input.asInstanceOf[js.Any], parentDOM.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def _Render(input: VNode, parentDOM: Null, callback: js.Function, context: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("__render")(input.asInstanceOf[js.Any], parentDOM.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def _Render(input: VNode, parentDOM: Null, callback: Null, context: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("__render")(input.asInstanceOf[js.Any], parentDOM.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def _Render(input: VNode, parentDOM: DocumentFragment, callback: js.Function, context: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("__render")(input.asInstanceOf[js.Any], parentDOM.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def _Render(input: VNode, parentDOM: DocumentFragment, callback: Null, context: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("__render")(input.asInstanceOf[js.Any], parentDOM.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def _Render(input: VNode, parentDOM: Element, callback: js.Function, context: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("__render")(input.asInstanceOf[js.Any], parentDOM.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def _Render(input: VNode, parentDOM: Element, callback: Null, context: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("__render")(input.asInstanceOf[js.Any], parentDOM.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def _Render(input: VNode, parentDOM: HTMLElement, callback: js.Function, context: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("__render")(input.asInstanceOf[js.Any], parentDOM.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def _Render(input: VNode, parentDOM: HTMLElement, callback: Null, context: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("__render")(input.asInstanceOf[js.Any], parentDOM.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def _Render(input: VNode, parentDOM: Node, callback: js.Function, context: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("__render")(input.asInstanceOf[js.Any], parentDOM.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def _Render(input: VNode, parentDOM: Node, callback: Null, context: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("__render")(input.asInstanceOf[js.Any], parentDOM.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def _Render(input: VNode, parentDOM: SVGAElement, callback: js.Function, context: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("__render")(input.asInstanceOf[js.Any], parentDOM.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def _Render(input: VNode, parentDOM: SVGAElement, callback: Null, context: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("__render")(input.asInstanceOf[js.Any], parentDOM.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def _Render(input: VNode, parentDOM: ShadowRoot, callback: js.Function, context: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("__render")(input.asInstanceOf[js.Any], parentDOM.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def _Render(input: VNode, parentDOM: ShadowRoot, callback: Null, context: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("__render")(input.asInstanceOf[js.Any], parentDOM.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def _Render_=(x: FnCallInputParentDOMCallbackContext): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("__render")(x.asInstanceOf[js.Any])
     
     @JSImport("inferno-compat", "default.cloneElement")
     @js.native
@@ -787,12 +796,34 @@ object mod {
   
   inline def _MR(ref: Any, value: Any, lifecycle: js.Array[js.Function]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("_MR")(ref.asInstanceOf[js.Any], value.asInstanceOf[js.Any], lifecycle.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def _Render(
-    input: js.UndefOr[VNode | Null | InfernoNode],
-    parentDOM: Element | SVGAElement | ShadowRoot | DocumentFragment | HTMLElement | Node | Null,
-    callback: js.Function | Null,
-    context: Any
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("__render")(input.asInstanceOf[js.Any], parentDOM.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def _Render(input: InfernoNode, parentDOM: Null, callback: js.Function, context: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("__render")(input.asInstanceOf[js.Any], parentDOM.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def _Render(input: InfernoNode, parentDOM: Null, callback: Null, context: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("__render")(input.asInstanceOf[js.Any], parentDOM.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def _Render(input: InfernoNode, parentDOM: DocumentFragment, callback: js.Function, context: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("__render")(input.asInstanceOf[js.Any], parentDOM.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def _Render(input: InfernoNode, parentDOM: DocumentFragment, callback: Null, context: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("__render")(input.asInstanceOf[js.Any], parentDOM.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def _Render(input: InfernoNode, parentDOM: Element, callback: js.Function, context: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("__render")(input.asInstanceOf[js.Any], parentDOM.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def _Render(input: InfernoNode, parentDOM: Element, callback: Null, context: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("__render")(input.asInstanceOf[js.Any], parentDOM.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def _Render(input: InfernoNode, parentDOM: HTMLElement, callback: js.Function, context: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("__render")(input.asInstanceOf[js.Any], parentDOM.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def _Render(input: InfernoNode, parentDOM: HTMLElement, callback: Null, context: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("__render")(input.asInstanceOf[js.Any], parentDOM.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def _Render(input: InfernoNode, parentDOM: Node, callback: js.Function, context: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("__render")(input.asInstanceOf[js.Any], parentDOM.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def _Render(input: InfernoNode, parentDOM: Node, callback: Null, context: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("__render")(input.asInstanceOf[js.Any], parentDOM.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def _Render(input: InfernoNode, parentDOM: SVGAElement, callback: js.Function, context: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("__render")(input.asInstanceOf[js.Any], parentDOM.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def _Render(input: InfernoNode, parentDOM: SVGAElement, callback: Null, context: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("__render")(input.asInstanceOf[js.Any], parentDOM.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def _Render(input: InfernoNode, parentDOM: ShadowRoot, callback: js.Function, context: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("__render")(input.asInstanceOf[js.Any], parentDOM.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def _Render(input: InfernoNode, parentDOM: ShadowRoot, callback: Null, context: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("__render")(input.asInstanceOf[js.Any], parentDOM.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def _Render(input: VNode, parentDOM: Null, callback: js.Function, context: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("__render")(input.asInstanceOf[js.Any], parentDOM.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def _Render(input: VNode, parentDOM: Null, callback: Null, context: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("__render")(input.asInstanceOf[js.Any], parentDOM.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def _Render(input: VNode, parentDOM: DocumentFragment, callback: js.Function, context: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("__render")(input.asInstanceOf[js.Any], parentDOM.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def _Render(input: VNode, parentDOM: DocumentFragment, callback: Null, context: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("__render")(input.asInstanceOf[js.Any], parentDOM.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def _Render(input: VNode, parentDOM: Element, callback: js.Function, context: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("__render")(input.asInstanceOf[js.Any], parentDOM.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def _Render(input: VNode, parentDOM: Element, callback: Null, context: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("__render")(input.asInstanceOf[js.Any], parentDOM.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def _Render(input: VNode, parentDOM: HTMLElement, callback: js.Function, context: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("__render")(input.asInstanceOf[js.Any], parentDOM.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def _Render(input: VNode, parentDOM: HTMLElement, callback: Null, context: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("__render")(input.asInstanceOf[js.Any], parentDOM.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def _Render(input: VNode, parentDOM: Node, callback: js.Function, context: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("__render")(input.asInstanceOf[js.Any], parentDOM.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def _Render(input: VNode, parentDOM: Node, callback: Null, context: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("__render")(input.asInstanceOf[js.Any], parentDOM.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def _Render(input: VNode, parentDOM: SVGAElement, callback: js.Function, context: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("__render")(input.asInstanceOf[js.Any], parentDOM.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def _Render(input: VNode, parentDOM: SVGAElement, callback: Null, context: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("__render")(input.asInstanceOf[js.Any], parentDOM.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def _Render(input: VNode, parentDOM: ShadowRoot, callback: js.Function, context: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("__render")(input.asInstanceOf[js.Any], parentDOM.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def _Render(input: VNode, parentDOM: ShadowRoot, callback: Null, context: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("__render")(input.asInstanceOf[js.Any], parentDOM.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   inline def cloneElement(vNodeToClone: VNode): VNode = ^.asInstanceOf[js.Dynamic].applyDynamic("cloneElement")(vNodeToClone.asInstanceOf[js.Any]).asInstanceOf[VNode]
   inline def cloneElement(vNodeToClone: VNode, props: Any): VNode = (^.asInstanceOf[js.Dynamic].applyDynamic("cloneElement")(vNodeToClone.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[VNode]

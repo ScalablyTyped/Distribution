@@ -1,7 +1,7 @@
 
 # Scala.js typings for expo__plist
 
-Typings are for version 0.0.19
+Typings are for version 0.0.20
 
 ## Library description:
 Mac OS X Plist parser/builder for Node.js and browsers

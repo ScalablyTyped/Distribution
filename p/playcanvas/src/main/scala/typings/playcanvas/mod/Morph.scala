@@ -1,5 +1,6 @@
 package typings.playcanvas.mod
 
+import typings.playcanvas.anon.PreferHighPrecision
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,15 +16,23 @@ open class Morph protected ()
   /**
     * Create a new Morph instance.
     *
-    * @param {MorphTarget[]} targets - A list of morph targets.
-    * @param {GraphicsDevice} graphicsDevice - The graphics device used to manage this morph
-    * target. If it is not provided, a device is obtained from the {@link Application}.
+    * @param {import('./morph-target.js').MorphTarget[]} targets - A list of morph targets.
+    * @param {import('../platform/graphics/graphics-device.js').GraphicsDevice} graphicsDevice -
+    * The graphics device used to manage this morph target.
+    * @param {object} options - Object for passing optional arguments.
+    * @param {boolean} options.preferHighPrecision - True if high precision storage should be
+    * prefered. This is faster to create and allows higher precision, but takes more memory and
+    * might be slower to render. Defaults to false.
     */
   def this(targets: js.Array[MorphTarget], graphicsDevice: GraphicsDevice) = this()
+  def this(targets: js.Array[MorphTarget], graphicsDevice: GraphicsDevice, options: PreferHighPrecision) = this()
   
-  def _calculateAabb(): Unit = js.native
+  /** @type {BoundingBox} */
+  var _aabb: BoundingBox = js.native
   
-  def _createTexture(name: Any, format: Any, pixelData: Any): Texture = js.native
+  def _createTexture(name: Any, format: Any): Texture = js.native
+  
+  def _findSparseSet(deltaArrays: Any, ids: Any, usedDataIndices: Any): Double = js.native
   
   def _init(): Unit = js.native
   
@@ -43,7 +52,7 @@ open class Morph protected ()
   
   var _useTextureMorph: Boolean = js.native
   
-  var aabb: BoundingBox = js.native
+  def aabb: BoundingBox = js.native
   
   /**
     * Frees video memory allocated by this object.
@@ -62,32 +71,17 @@ open class Morph protected ()
   
   var morphTextureWidth: Double = js.native
   
+  /** @type {boolean} */
+  var preferHighPrecision: Boolean = js.native
+  
   /**
     * The array of morph targets.
     *
-    * @type {MorphTarget[]}
+    * @type {import('./morph-target.js').MorphTarget[]}
     */
   def targets: js.Array[MorphTarget] = js.native
   
   def useTextureMorph: Boolean = js.native
   
   var vertexBufferIds: VertexBuffer = js.native
-}
-object Morph {
-  
-  @JSImport("playcanvas", "Morph")
-  @js.native
-  val ^ : js.Any = js.native
-  
-  /* static member */
-  @JSImport("playcanvas", "Morph.FORMAT_FLOAT")
-  @js.native
-  def FORMAT_FLOAT: Double = js.native
-  inline def FORMAT_FLOAT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FORMAT_FLOAT")(x.asInstanceOf[js.Any])
-  
-  /* static member */
-  @JSImport("playcanvas", "Morph.FORMAT_HALF_FLOAT")
-  @js.native
-  def FORMAT_HALF_FLOAT: Double = js.native
-  inline def FORMAT_HALF_FLOAT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FORMAT_HALF_FLOAT")(x.asInstanceOf[js.Any])
 }

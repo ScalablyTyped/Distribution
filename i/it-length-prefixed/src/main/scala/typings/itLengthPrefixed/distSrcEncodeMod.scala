@@ -1,7 +1,9 @@
 package typings.itLengthPrefixed
 
 import typings.itLengthPrefixed.mod.LengthEncoderFunction
-import typings.itStreamTypes.mod.Transform
+import typings.itStreamTypes.mod.Source
+import typings.std.AsyncGenerator
+import typings.std.Generator
 import typings.uint8arraylist.mod.Uint8ArrayList
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -11,8 +13,10 @@ object distSrcEncodeMod {
   
   object encode {
     
-    inline def apply(): Transform[Uint8ArrayList | js.typedarray.Uint8Array, js.typedarray.Uint8Array] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Transform[Uint8ArrayList | js.typedarray.Uint8Array, js.typedarray.Uint8Array]]
-    inline def apply(options: EncoderOptions): Transform[Uint8ArrayList | js.typedarray.Uint8Array, js.typedarray.Uint8Array] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Transform[Uint8ArrayList | js.typedarray.Uint8Array, js.typedarray.Uint8Array]]
+    inline def apply(source: js.Iterable[Uint8ArrayList | js.typedarray.Uint8Array]): Generator[js.typedarray.Uint8Array, Unit, Unit] = ^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any]).asInstanceOf[Generator[js.typedarray.Uint8Array, Unit, Unit]]
+    inline def apply(source: js.Iterable[Uint8ArrayList | js.typedarray.Uint8Array], options: EncoderOptions): Generator[js.typedarray.Uint8Array, Unit, Unit] = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Generator[js.typedarray.Uint8Array, Unit, Unit]]
+    inline def apply(source: Source[Uint8ArrayList | js.typedarray.Uint8Array]): AsyncGenerator[js.typedarray.Uint8Array, Unit, Unit] = ^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any]).asInstanceOf[AsyncGenerator[js.typedarray.Uint8Array, Unit, Unit]]
+    inline def apply(source: Source[Uint8ArrayList | js.typedarray.Uint8Array], options: EncoderOptions): AsyncGenerator[js.typedarray.Uint8Array, Unit, Unit] = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AsyncGenerator[js.typedarray.Uint8Array, Unit, Unit]]
     
     @JSImport("it-length-prefixed/dist/src/encode", "encode")
     @js.native

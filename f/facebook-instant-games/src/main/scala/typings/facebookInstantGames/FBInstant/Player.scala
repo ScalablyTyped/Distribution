@@ -30,6 +30,22 @@ trait Player extends StObject {
   def flushDataAsync(): js.Promise[Unit] = js.native
   
   /**
+    * A unique identifier for the player. This is the standard Facebook Application-Scoped ID which is used for all
+    * Graph API calls. If your game shares an AppID with a native game this is the ID you will see in the native
+    * game too.
+    *
+    * @example
+    * // This function should be called after FBInstant.initializeAsync()
+    * // resolves.
+    * var playerASID = FBInstant.player.getASIDAsync().then(
+    *  asid => console.log(asid)
+    * );
+    * @returns A unique identifier for the player.
+    * @since 7.0
+    */
+  def getASIDAsync(): js.Promise[String | Null] = js.native
+  
+  /**
     * Fetches an array of ConnectedPlayer objects containing information about players that are connected to the current player.
     * @returns A promise that resolves with a list of connected player objects. NOTE: This promise will not resolve until FBInstant.startGameAsync() has resolved.
     * @throws NETWORK_FAILURE
@@ -76,6 +92,23 @@ trait Player extends StObject {
     * @returns Url to the player's public profile photo.
     */
   def getPhoto(): String | Null = js.native
+  
+  /**
+    * A unique identifier for the player. This is the standard Facebook Application-Scoped ID which is used for all
+    * Graph API calls. If your game shares an AppID with a native game this is the ID you will see in the native
+    * game too.
+    *
+    * @example
+    * // This function should be called after FBInstant.initializeAsync()
+    * // resolves.
+    * var playerASID = FBInstant.player.getSignedASIDAsync()
+    *   .then(function (result) {
+    *     result.getASID();
+    *   });
+    * @returns A promise that resolves with a SignedASID object.
+    * @since 7.1
+    */
+  def getSignedASIDAsync(): js.Promise[SignedASID | Null] = js.native
   
   /**
     * Fetch the player's unique identifier along with a signature that verifies that the identifier indeed

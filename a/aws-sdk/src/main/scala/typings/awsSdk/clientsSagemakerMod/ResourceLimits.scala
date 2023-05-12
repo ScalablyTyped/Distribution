@@ -15,6 +15,11 @@ trait ResourceLimits extends StObject {
     * The maximum number of concurrent training jobs that a hyperparameter tuning job can launch.
     */
   var MaxParallelTrainingJobs: typings.awsSdk.clientsSagemakerMod.MaxParallelTrainingJobs
+  
+  /**
+    * The maximum time in seconds that a hyperparameter tuning job can run.
+    */
+  var MaxRuntimeInSeconds: js.UndefOr[HyperParameterTuningMaxRuntimeInSeconds] = js.undefined
 }
 object ResourceLimits {
   
@@ -31,5 +36,9 @@ object ResourceLimits {
     inline def setMaxNumberOfTrainingJobsUndefined: Self = StObject.set(x, "MaxNumberOfTrainingJobs", js.undefined)
     
     inline def setMaxParallelTrainingJobs(value: MaxParallelTrainingJobs): Self = StObject.set(x, "MaxParallelTrainingJobs", value.asInstanceOf[js.Any])
+    
+    inline def setMaxRuntimeInSeconds(value: HyperParameterTuningMaxRuntimeInSeconds): Self = StObject.set(x, "MaxRuntimeInSeconds", value.asInstanceOf[js.Any])
+    
+    inline def setMaxRuntimeInSecondsUndefined: Self = StObject.set(x, "MaxRuntimeInSeconds", js.undefined)
   }
 }

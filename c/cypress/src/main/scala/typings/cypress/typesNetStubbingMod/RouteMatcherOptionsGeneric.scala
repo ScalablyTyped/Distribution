@@ -63,6 +63,11 @@ trait RouteMatcherOptionsGeneric[S] extends StObject {
   var query: js.UndefOr[DictMatcher[S]] = js.undefined
   
   /**
+    * Match on the request's resource type, according to the browser.
+    */
+  var resourceType: js.UndefOr[ResourceType | S] = js.undefined
+  
+  /**
     * If set, this `RouteMatcher` will only match the first `times` requests.
     */
   var times: js.UndefOr[Double] = js.undefined
@@ -125,6 +130,10 @@ object RouteMatcherOptionsGeneric {
     inline def setQuery(value: DictMatcher[S]): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
     inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+    
+    inline def setResourceType(value: ResourceType | S): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
+    
+    inline def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
     
     inline def setTimes(value: Double): Self = StObject.set(x, "times", value.asInstanceOf[js.Any])
     

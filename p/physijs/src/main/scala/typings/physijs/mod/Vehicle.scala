@@ -2,6 +2,7 @@ package typings.physijs.mod
 
 import typings.three.mod.Vector3
 import typings.three.srcCoreBufferGeometryMod.BufferGeometry
+import typings.three.srcCoreBufferGeometryMod.NormalBufferAttributes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -38,13 +39,13 @@ open class Vehicle protected () extends StObject {
   def applyEngineForce(
     amount: Double,
     wheel: typings.three.mod.Mesh[
-      BufferGeometry, 
+      BufferGeometry[NormalBufferAttributes], 
       typings.three.srcMaterialsMaterialMod.Material | js.Array[typings.three.srcMaterialsMaterialMod.Material]
     ]
   ): Unit = js.native
   
   var mesh: typings.three.mod.Mesh[
-    BufferGeometry, 
+    BufferGeometry[NormalBufferAttributes], 
     typings.three.srcMaterialsMaterialMod.Material | js.Array[typings.three.srcMaterialsMaterialMod.Material]
   ] = js.native
   
@@ -52,7 +53,7 @@ open class Vehicle protected () extends StObject {
   def setBrake(
     amount: Double,
     wheel: typings.three.mod.Mesh[
-      BufferGeometry, 
+      BufferGeometry[NormalBufferAttributes], 
       typings.three.srcMaterialsMaterialMod.Material | js.Array[typings.three.srcMaterialsMaterialMod.Material]
     ]
   ): Unit = js.native
@@ -61,14 +62,14 @@ open class Vehicle protected () extends StObject {
   def setSteering(
     amount: Double,
     wheel: typings.three.mod.Mesh[
-      BufferGeometry, 
+      BufferGeometry[NormalBufferAttributes], 
       typings.three.srcMaterialsMaterialMod.Material | js.Array[typings.three.srcMaterialsMaterialMod.Material]
     ]
   ): Unit = js.native
   
   var wheels: js.Array[
     typings.three.mod.Mesh[
-      BufferGeometry, 
+      BufferGeometry[NormalBufferAttributes], 
       typings.three.srcMaterialsMaterialMod.Material | js.Array[typings.three.srcMaterialsMaterialMod.Material]
     ]
   ] = js.native

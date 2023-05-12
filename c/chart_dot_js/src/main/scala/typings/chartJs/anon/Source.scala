@@ -1,35 +1,35 @@
 package typings.chartJs.anon
 
-import typings.chartJs.chartJsStrings.auto
-import typings.chartJs.chartJsStrings.data
-import typings.chartJs.chartJsStrings.labels
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Source extends StObject {
   
-  /**
-    * Ticks generation input values:
-    * - 'auto': generates "optimal" ticks based on scale size and time options.
-    * - 'data': generates ticks from data (including labels from data {t|x|y} objects).
-    * - 'labels': generates ticks from user given `data.labels` values ONLY.
-    * @see https://github.com/chartjs/Chart.js/pull/4507
-    * @since 2.7.0
-    * @default 'auto'
-    */
-  var source: labels | auto | data
+  var end: Any
+  
+  var source: Any
+  
+  var start: Any
+  
+  var target: Start
 }
 object Source {
   
-  inline def apply(source: labels | auto | data): Source = {
-    val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
+  inline def apply(end: Any, source: Any, start: Any, target: Start): Source = {
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
     __obj.asInstanceOf[Source]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: Source] (val x: Self) extends AnyVal {
     
-    inline def setSource(value: labels | auto | data): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setEnd(value: Any): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    
+    inline def setSource(value: Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    
+    inline def setStart(value: Any): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    
+    inline def setTarget(value: Start): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }
 }

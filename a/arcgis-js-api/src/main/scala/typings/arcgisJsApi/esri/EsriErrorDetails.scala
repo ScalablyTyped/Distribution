@@ -21,7 +21,7 @@ trait EsriErrorDetails extends StObject {
   var getHeader_Original: GetHeader
   
   /**
-    * The status of the http request.
+    * The status code of the http response.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#EsriErrorDetails)
     */

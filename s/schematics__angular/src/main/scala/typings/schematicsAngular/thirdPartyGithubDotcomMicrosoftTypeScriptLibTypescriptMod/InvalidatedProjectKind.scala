@@ -19,7 +19,7 @@ object InvalidatedProjectKind extends StObject {
        with InvalidatedProjectKind
   /* 0 */ val Build: typings.schematicsAngular.thirdPartyGithubDotcomMicrosoftTypeScriptLibTypescriptMod.InvalidatedProjectKind.Build & Double = js.native
   
-  @js.native
+  /** @deprecated */ @js.native
   sealed trait UpdateBundle
     extends StObject
        with InvalidatedProjectKind

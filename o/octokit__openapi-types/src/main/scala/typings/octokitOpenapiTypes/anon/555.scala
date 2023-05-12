@@ -1,46 +1,23 @@
 package typings.octokitOpenapiTypes.anon
 
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.Plussign1
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.eyes
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.heart
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.hooray
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.laugh
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.rocket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `555` extends StObject {
   
-  /** Returns a single [reaction type](https://docs.github.com/rest/reference/reactions#reaction-types). Omit this parameter to list all reactions to a release. */
-  var content: js.UndefOr[Plussign1 | laugh | heart | hooray | rocket | eyes] = js.undefined
-  
-  /** Page number of the results to fetch. */
-  var page: js.UndefOr[Double] = js.undefined
-  
-  /** The number of results per page (max 100). */
-  var per_page: js.UndefOr[Double] = js.undefined
+  var content: ApplicationjsonKeyprefix
 }
 object `555` {
   
-  inline def apply(): `555` = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(content: ApplicationjsonKeyprefix): `555` = {
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
     __obj.asInstanceOf[`555`]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: `555`] (val x: Self) extends AnyVal {
     
-    inline def setContent(value: Plussign1 | laugh | heart | hooray | rocket | eyes): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
-    
-    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
-    
-    inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
-    
-    inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
-    
-    inline def setPer_page(value: Double): Self = StObject.set(x, "per_page", value.asInstanceOf[js.Any])
-    
-    inline def setPer_pageUndefined: Self = StObject.set(x, "per_page", js.undefined)
+    inline def setContent(value: ApplicationjsonKeyprefix): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
   }
 }

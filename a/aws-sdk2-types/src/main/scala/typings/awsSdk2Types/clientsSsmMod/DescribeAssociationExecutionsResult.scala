@@ -1,0 +1,39 @@
+package typings.awsSdk2Types.clientsSsmMod
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait DescribeAssociationExecutionsResult extends StObject {
+  
+  /**
+    * A list of the executions for the specified association ID.
+    */
+  var AssociationExecutions: js.UndefOr[AssociationExecutionsList] = js.undefined
+  
+  /**
+    * The token for the next set of items to return. Use this token to get the next set of results.
+    */
+  var NextToken: js.UndefOr[typings.awsSdk2Types.clientsSsmMod.NextToken] = js.undefined
+}
+object DescribeAssociationExecutionsResult {
+  
+  inline def apply(): DescribeAssociationExecutionsResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[DescribeAssociationExecutionsResult]
+  }
+  
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeAssociationExecutionsResult] (val x: Self) extends AnyVal {
+    
+    inline def setAssociationExecutions(value: AssociationExecutionsList): Self = StObject.set(x, "AssociationExecutions", value.asInstanceOf[js.Any])
+    
+    inline def setAssociationExecutionsUndefined: Self = StObject.set(x, "AssociationExecutions", js.undefined)
+    
+    inline def setAssociationExecutionsVarargs(value: AssociationExecution*): Self = StObject.set(x, "AssociationExecutions", js.Array(value*))
+    
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+  }
+}

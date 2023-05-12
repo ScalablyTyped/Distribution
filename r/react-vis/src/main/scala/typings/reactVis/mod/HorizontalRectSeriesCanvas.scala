@@ -10,7 +10,7 @@ open class HorizontalRectSeriesCanvas protected () extends AbstractSeries[Horizo
   def this(props: HorizontalRectSeriesCanvasProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: HorizontalRectSeriesCanvasProps, context: Any) = this()
 }

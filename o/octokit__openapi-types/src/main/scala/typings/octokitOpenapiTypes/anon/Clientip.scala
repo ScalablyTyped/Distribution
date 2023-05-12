@@ -18,7 +18,7 @@ trait Clientip extends StObject {
   /** @description Time in minutes before codespace stops from inactivity */
   var idle_timeout_minutes: js.UndefOr[Double] = js.undefined
   
-  /** @description Location for this codespace. Assigned by IP if not provided */
+  /** @description The requested location for a new codespace. Best efforts are made to respect this upon creation. Assigned by IP if not provided. */
   var location: js.UndefOr[String] = js.undefined
   
   /** @description Machine type to use for this codespace */

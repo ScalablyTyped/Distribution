@@ -648,6 +648,14 @@ object libContentsMod {
       val path: String
       
       /**
+        * The path as returned by the server contents API.
+        *
+        * #### Notes
+        * Differently to `path` it does not include IDrive API prefix.
+        */
+      val serverPath: js.UndefOr[String] = js.undefined
+      
+      /**
         * The size of then file in bytes.
         */
       val size: js.UndefOr[Double] = js.undefined
@@ -709,6 +717,10 @@ object libContentsMod {
         inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
         inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+        
+        inline def setServerPath(value: String): Self = StObject.set(x, "serverPath", value.asInstanceOf[js.Any])
+        
+        inline def setServerPathUndefined: Self = StObject.set(x, "serverPath", js.undefined)
         
         inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
         

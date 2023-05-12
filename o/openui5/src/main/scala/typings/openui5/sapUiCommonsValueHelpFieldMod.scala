@@ -214,6 +214,8 @@ object sapUiCommonsValueHelpFieldMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:valueHelpRequest valueHelpRequest} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -255,6 +257,8 @@ object sapUiCommonsValueHelpFieldMod {
     def getIconURL(): URI = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Handle F4 event
       */
     def onsapshow(/**

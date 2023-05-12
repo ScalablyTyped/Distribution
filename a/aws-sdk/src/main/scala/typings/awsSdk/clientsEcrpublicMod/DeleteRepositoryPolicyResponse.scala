@@ -12,12 +12,12 @@ trait DeleteRepositoryPolicyResponse extends StObject {
   var policyText: js.UndefOr[RepositoryPolicyText] = js.undefined
   
   /**
-    * The registry ID associated with the request.
+    * The registry ID that's associated with the request.
     */
   var registryId: js.UndefOr[RegistryId] = js.undefined
   
   /**
-    * The repository name associated with the request.
+    * The repository name that's associated with the request.
     */
   var repositoryName: js.UndefOr[RepositoryName] = js.undefined
 }

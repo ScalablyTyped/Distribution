@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CommentReply extends StObject {
   
   /**
-    * The value in the comment editor
-    */
+  		 * The value in the comment editor
+  		 */
   var text: String
   
   /**
-    * The active {@link CommentThread comment thread}
-    */
+  		 * The active {@link CommentThread comment thread}
+  		 */
   var thread: CommentThread
 }
 object CommentReply {

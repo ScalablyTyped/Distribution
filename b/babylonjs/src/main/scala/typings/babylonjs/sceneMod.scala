@@ -77,7 +77,8 @@ import typings.babylonjs.nodeMod.Node
 import typings.babylonjs.offlineIofflineproviderMod.IOfflineProvider
 import typings.babylonjs.particlesIparticlesystemMod.IParticleSystem
 import typings.babylonjs.physicsIphysicsengineMod.IPhysicsEngine
-import typings.babylonjs.physicsIphysicsengineMod.IPhysicsEnginePlugin
+import typings.babylonjs.physicsV1IphysicsenginepluginMod.IPhysicsEnginePlugin
+import typings.babylonjs.physicsV2IphysicsenginepluginMod.IPhysicsEnginePluginV2
 import typings.babylonjs.postProcessesPostProcessManagerMod.PostProcessManager
 import typings.babylonjs.postProcessesPostProcessMod.PostProcess
 import typings.babylonjs.postProcessesRenderPipelinePostProcessRenderPipelineManagerMod.PostProcessRenderPipelineManager
@@ -119,6 +120,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object sceneMod {
   
+  /**
+    *
+    */
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.babylonjs.animationsAnimatableDotinterfaceMod.IAnimatable because var conflicts: animations. Inlined  */ @JSImport("babylonjs/scene", "Scene")
   @js.native
@@ -453,6 +457,8 @@ object sceneMod {
     def _getDefaultSubMeshCandidates(mesh: AbstractMesh): ISmartArrayLike[SubMesh] = js.native
     
     /* private */ var _getGeometryByUniqueId: Any = js.native
+    
+    /* private */ var _getMaterial: Any = js.native
     
     /** @internal */
     /* protected */ var _imageProcessingConfiguration: ImageProcessingConfiguration = js.native
@@ -942,6 +948,9 @@ object sceneMod {
     var _mainSoundTrack: SoundTrack = js.native
     
     /* private */ var _materialsRenderTargets: Any = js.native
+    
+    /** @internal */
+    var _meshUVSpaceRendererShader: Nullable[ShaderMaterial] = js.native
     
     /* private */ var _meshesForIntersections: Any = js.native
     
@@ -1684,13 +1693,13 @@ object sceneMod {
     
     /**
       * Gets or sets the action manager associated with the scene
-      * @see https://doc.babylonjs.com/how_to/how_to_use_actions
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/events/actions
       */
     var actionManager: AbstractActionManager = js.native
     
     /**
       * Gets the performance counter for active bones
-      * @see https://doc.babylonjs.com/how_to/optimizing_your_scene#instrumentation
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/scene/optimize_your_scene#instrumentation
       */
     def activeBonesPerfCounter: PerfCounter = js.native
     
@@ -1704,7 +1713,7 @@ object sceneMod {
     
     /**
       * Gets the performance counter for active particles
-      * @see https://doc.babylonjs.com/how_to/optimizing_your_scene#instrumentation
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/scene/optimize_your_scene#instrumentation
       */
     def activeParticlesPerfCounter: PerfCounter = js.native
     
@@ -1864,15 +1873,21 @@ object sceneMod {
     
     /**
       * Gets or sets if audio support is enabled
-      * @see https://doc.babylonjs.com/how_to/playing_sounds_and_music
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/audio/playingSoundsMusic
       */
     var audioEnabled: Boolean = js.native
     
     /**
       * Gets or sets custom audio listener position provider
-      * @see https://doc.babylonjs.com/how_to/playing_sounds_and_music
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/audio/playingSoundsMusic
       */
     var audioListenerPositionProvider: Nullable[js.Function0[Vector3]] = js.native
+    
+    /**
+      * Gets or sets custom audio listener rotation provider
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/audio/playingSoundsMusic
+      */
+    var audioListenerRotationProvider: Nullable[js.Function0[Vector3]] = js.native
     
     /**
       * Gets or sets a refresh rate when using 3D audio positioning
@@ -2792,7 +2807,7 @@ object sceneMod {
     
     /**
       * Gets or sets a boolean indicating if collisions are enabled on this scene
-      * @see https://doc.babylonjs.com/babylon101/cameras,_mesh_collisions_and_gravity
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/cameras/camera_collisions
       */
     var collisionsEnabled: Boolean = js.native
     
@@ -2804,7 +2819,7 @@ object sceneMod {
     
     /**
       * Creates a default camera for the scene.
-      * @see https://doc.babylonjs.com/How_To/Fast_Build#create-default-camera
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/scene/fastBuildWorld#create-default-camera
       * @param createArcRotateCamera has the default false which creates a free camera, when true creates an arc rotate camera
       * @param replace has default false, when true replaces the active camera in the scene
       * @param attachCameraControls has default false, when true attaches camera controls to the canvas.
@@ -2820,7 +2835,7 @@ object sceneMod {
     
     /**
       * Creates a default camera and a default light.
-      * @see https://doc.babylonjs.com/divingDeeper/scene/fastBuildWorld#create-default-camera-or-light
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/scene/fastBuildWorld#create-default-camera-or-light
       * @param createArcRotateCamera has the default false which creates a free camera, when true creates an arc rotate camera
       * @param replace has the default false, when true replaces the active camera/light in the scene
       * @param attachCameraControls has the default false, when true attaches camera controls to the canvas.
@@ -2836,7 +2851,7 @@ object sceneMod {
     
     /**
       * Creates a new environment
-      * @see https://doc.babylonjs.com/How_To/Fast_Build#create-default-environment
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/scene/fastBuildWorld#create-default-environment
       * @param options defines the options you can use to configure the environment
       * @returns the new EnvironmentHelper
       */
@@ -2845,7 +2860,7 @@ object sceneMod {
     
     /**
       * Creates a default light for the scene.
-      * @see https://doc.babylonjs.com/How_To/Fast_Build#create-default-light
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/scene/fastBuildWorld#create-default-light
       * @param replace has the default false, when true replaces the existing lights in the scene with a hemispheric light
       */
     def createDefaultLight(): Unit = js.native
@@ -2853,7 +2868,7 @@ object sceneMod {
     
     /**
       * Creates a new sky box
-      * @see https://doc.babylonjs.com/divingDeeper/scene/fastBuildWorld#create-default-skybox
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/scene/fastBuildWorld#create-default-skybox
       * @param environmentTexture defines the texture to use as environment texture
       * @param pbr has default false which requires the StandardMaterial to be used, when true PBRMaterial must be used
       * @param scale defines the overall scale of the skybox
@@ -2938,7 +2953,7 @@ object sceneMod {
     
     /**
       * Creates a new VREXperienceHelper
-      * @see https://doc.babylonjs.com/divingDeeper/cameras/webVRHelper
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/cameras/webVRHelper
       * @param webVROptions defines the options used to create the new VREXperienceHelper
       * @deprecated Please use createDefaultXRExperienceAsync instead
       * @returns a new VREXperienceHelper
@@ -2948,7 +2963,7 @@ object sceneMod {
     
     /**
       * Creates a new WebXRDefaultExperience
-      * @see https://doc.babylonjs.com/how_to/introduction_to_webxr
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/webXR/introToWebXR
       * @param options experience options
       * @returns a promise for a new WebXRDefaultExperience
       */
@@ -2957,7 +2972,7 @@ object sceneMod {
     
     /**
       * Creates or updates the octree used to boost selection (picking)
-      * @see https://doc.babylonjs.com/how_to/optimizing_your_scene_with_octrees
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/scene/optimizeOctrees
       * @param maxCapacity defines the maximum capacity per leaf
       * @param maxDepth defines the maximum depth of the octree
       * @returns an octree of AbstractMesh
@@ -3142,16 +3157,153 @@ object sceneMod {
       * @param camera The camera to create the depth renderer on (default: scene's active camera)
       * @param storeNonLinearDepth Defines whether the depth is stored linearly like in Babylon Shadows or directly like glFragCoord.z
       * @param force32bitsFloat Forces 32 bits float when supported (else 16 bits float is prioritized over 32 bits float if supported)
+      * @param samplingMode The sampling mode to be used with the render target (Linear, Nearest...)
+      * @param storeCameraSpaceZ Defines whether the depth stored is the Z coordinate in camera space. If true, storeNonLinearDepth has no effect. (Default: false)
       * @returns the created depth renderer
       */
     def enableDepthRenderer(): DepthRenderer = js.native
     def enableDepthRenderer(camera: Unit, storeNonLinearDepth: Boolean): DepthRenderer = js.native
     def enableDepthRenderer(camera: Unit, storeNonLinearDepth: Boolean, force32bitsFloat: Boolean): DepthRenderer = js.native
+    def enableDepthRenderer(camera: Unit, storeNonLinearDepth: Boolean, force32bitsFloat: Boolean, samplingMode: Double): DepthRenderer = js.native
+    def enableDepthRenderer(
+      camera: Unit,
+      storeNonLinearDepth: Boolean,
+      force32bitsFloat: Boolean,
+      samplingMode: Double,
+      storeCameraSpaceZ: Boolean
+    ): DepthRenderer = js.native
+    def enableDepthRenderer(
+      camera: Unit,
+      storeNonLinearDepth: Boolean,
+      force32bitsFloat: Boolean,
+      samplingMode: Unit,
+      storeCameraSpaceZ: Boolean
+    ): DepthRenderer = js.native
+    def enableDepthRenderer(camera: Unit, storeNonLinearDepth: Boolean, force32bitsFloat: Unit, samplingMode: Double): DepthRenderer = js.native
+    def enableDepthRenderer(
+      camera: Unit,
+      storeNonLinearDepth: Boolean,
+      force32bitsFloat: Unit,
+      samplingMode: Double,
+      storeCameraSpaceZ: Boolean
+    ): DepthRenderer = js.native
+    def enableDepthRenderer(
+      camera: Unit,
+      storeNonLinearDepth: Boolean,
+      force32bitsFloat: Unit,
+      samplingMode: Unit,
+      storeCameraSpaceZ: Boolean
+    ): DepthRenderer = js.native
     def enableDepthRenderer(camera: Unit, storeNonLinearDepth: Unit, force32bitsFloat: Boolean): DepthRenderer = js.native
+    def enableDepthRenderer(camera: Unit, storeNonLinearDepth: Unit, force32bitsFloat: Boolean, samplingMode: Double): DepthRenderer = js.native
+    def enableDepthRenderer(
+      camera: Unit,
+      storeNonLinearDepth: Unit,
+      force32bitsFloat: Boolean,
+      samplingMode: Double,
+      storeCameraSpaceZ: Boolean
+    ): DepthRenderer = js.native
+    def enableDepthRenderer(
+      camera: Unit,
+      storeNonLinearDepth: Unit,
+      force32bitsFloat: Boolean,
+      samplingMode: Unit,
+      storeCameraSpaceZ: Boolean
+    ): DepthRenderer = js.native
+    def enableDepthRenderer(camera: Unit, storeNonLinearDepth: Unit, force32bitsFloat: Unit, samplingMode: Double): DepthRenderer = js.native
+    def enableDepthRenderer(
+      camera: Unit,
+      storeNonLinearDepth: Unit,
+      force32bitsFloat: Unit,
+      samplingMode: Double,
+      storeCameraSpaceZ: Boolean
+    ): DepthRenderer = js.native
+    def enableDepthRenderer(
+      camera: Unit,
+      storeNonLinearDepth: Unit,
+      force32bitsFloat: Unit,
+      samplingMode: Unit,
+      storeCameraSpaceZ: Boolean
+    ): DepthRenderer = js.native
     def enableDepthRenderer(camera: Nullable[Camera]): DepthRenderer = js.native
     def enableDepthRenderer(camera: Nullable[Camera], storeNonLinearDepth: Boolean): DepthRenderer = js.native
     def enableDepthRenderer(camera: Nullable[Camera], storeNonLinearDepth: Boolean, force32bitsFloat: Boolean): DepthRenderer = js.native
+    def enableDepthRenderer(
+      camera: Nullable[Camera],
+      storeNonLinearDepth: Boolean,
+      force32bitsFloat: Boolean,
+      samplingMode: Double
+    ): DepthRenderer = js.native
+    def enableDepthRenderer(
+      camera: Nullable[Camera],
+      storeNonLinearDepth: Boolean,
+      force32bitsFloat: Boolean,
+      samplingMode: Double,
+      storeCameraSpaceZ: Boolean
+    ): DepthRenderer = js.native
+    def enableDepthRenderer(
+      camera: Nullable[Camera],
+      storeNonLinearDepth: Boolean,
+      force32bitsFloat: Boolean,
+      samplingMode: Unit,
+      storeCameraSpaceZ: Boolean
+    ): DepthRenderer = js.native
+    def enableDepthRenderer(
+      camera: Nullable[Camera],
+      storeNonLinearDepth: Boolean,
+      force32bitsFloat: Unit,
+      samplingMode: Double
+    ): DepthRenderer = js.native
+    def enableDepthRenderer(
+      camera: Nullable[Camera],
+      storeNonLinearDepth: Boolean,
+      force32bitsFloat: Unit,
+      samplingMode: Double,
+      storeCameraSpaceZ: Boolean
+    ): DepthRenderer = js.native
+    def enableDepthRenderer(
+      camera: Nullable[Camera],
+      storeNonLinearDepth: Boolean,
+      force32bitsFloat: Unit,
+      samplingMode: Unit,
+      storeCameraSpaceZ: Boolean
+    ): DepthRenderer = js.native
     def enableDepthRenderer(camera: Nullable[Camera], storeNonLinearDepth: Unit, force32bitsFloat: Boolean): DepthRenderer = js.native
+    def enableDepthRenderer(
+      camera: Nullable[Camera],
+      storeNonLinearDepth: Unit,
+      force32bitsFloat: Boolean,
+      samplingMode: Double
+    ): DepthRenderer = js.native
+    def enableDepthRenderer(
+      camera: Nullable[Camera],
+      storeNonLinearDepth: Unit,
+      force32bitsFloat: Boolean,
+      samplingMode: Double,
+      storeCameraSpaceZ: Boolean
+    ): DepthRenderer = js.native
+    def enableDepthRenderer(
+      camera: Nullable[Camera],
+      storeNonLinearDepth: Unit,
+      force32bitsFloat: Boolean,
+      samplingMode: Unit,
+      storeCameraSpaceZ: Boolean
+    ): DepthRenderer = js.native
+    def enableDepthRenderer(camera: Nullable[Camera], storeNonLinearDepth: Unit, force32bitsFloat: Unit, samplingMode: Double): DepthRenderer = js.native
+    def enableDepthRenderer(
+      camera: Nullable[Camera],
+      storeNonLinearDepth: Unit,
+      force32bitsFloat: Unit,
+      samplingMode: Double,
+      storeCameraSpaceZ: Boolean
+    ): DepthRenderer = js.native
+    def enableDepthRenderer(
+      camera: Nullable[Camera],
+      storeNonLinearDepth: Unit,
+      force32bitsFloat: Unit,
+      samplingMode: Unit,
+      storeCameraSpaceZ: Boolean
+    ): DepthRenderer = js.native
     
     /**
       * Enables a GeometryBufferRender and associates it with the scene
@@ -3172,8 +3324,10 @@ object sceneMod {
       */
     def enablePhysics(): Boolean = js.native
     def enablePhysics(gravity: Unit, plugin: IPhysicsEnginePlugin): Boolean = js.native
+    def enablePhysics(gravity: Unit, plugin: IPhysicsEnginePluginV2): Boolean = js.native
     def enablePhysics(gravity: Nullable[Vector3]): Boolean = js.native
     def enablePhysics(gravity: Nullable[Vector3], plugin: IPhysicsEnginePlugin): Boolean = js.native
+    def enablePhysics(gravity: Nullable[Vector3], plugin: IPhysicsEnginePluginV2): Boolean = js.native
     
     /**
       * This is use to store the default BRDF lookup for PBR materials in your scene.
@@ -3205,7 +3359,7 @@ object sceneMod {
     
     /**
       * Registers a function to be executed when the scene is ready
-      * @param {Function} func - the function to be executed
+      * @param func - the function to be executed
       * @param checkRenderTargets true to also check that the meshes rendered as part of a render target are ready (default: false)
       */
     def executeWhenReady(func: js.Function0[Unit]): Unit = js.native
@@ -3219,14 +3373,14 @@ object sceneMod {
     
     /**
       * Gets or sets the fog color to use
-      * @see https://doc.babylonjs.com/babylon101/environment#fog
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/environment/environment_introduction#fog
       * (Default is Color3(0.2, 0.2, 0.3))
       */
     var fogColor: Color3 = js.native
     
     /**
       * Gets or sets the fog density to use
-      * @see https://doc.babylonjs.com/babylon101/environment#fog
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/environment/environment_introduction#fog
       * (Default is 0.1)
       */
     var fogDensity: Double = js.native
@@ -3234,14 +3388,14 @@ object sceneMod {
     def fogEnabled: Boolean = js.native
     /**
       * Gets or sets a boolean indicating if fog is enabled on this scene
-      * @see https://doc.babylonjs.com/babylon101/environment#fog
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/environment/environment_introduction#fog
       * (Default is true)
       */
     def fogEnabled_=(value: Boolean): Unit = js.native
     
     /**
       * Gets or sets the fog end distance to use
-      * @see https://doc.babylonjs.com/babylon101/environment#fog
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/environment/environment_introduction#fog
       * (Default is 1000)
       */
     var fogEnd: Double = js.native
@@ -3249,7 +3403,7 @@ object sceneMod {
     def fogMode: Double = js.native
     /**
       * Gets or sets the fog mode to use
-      * @see https://doc.babylonjs.com/babylon101/environment#fog
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/environment/environment_introduction#fog
       * | mode | value |
       * | --- | --- |
       * | FOGMODE_NONE | 0 |
@@ -3261,7 +3415,7 @@ object sceneMod {
     
     /**
       * Gets or sets the fog start distance to use
-      * @see https://doc.babylonjs.com/babylon101/environment#fog
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/environment/environment_introduction#fog
       * (Default is 0)
       */
     var fogStart: Double = js.native
@@ -3481,6 +3635,7 @@ object sceneMod {
     /**
       * Freeze all materials
       * A frozen material will not be updatable but should be faster to render
+      * Note: multimaterials will not be frozen, but their submaterials will
       */
     def freezeMaterials(): Unit = js.native
     
@@ -3491,7 +3646,7 @@ object sceneMod {
     
     /**
       * Gets the gamepad manager associated with the scene
-      * @see https://doc.babylonjs.com/how_to/how_to_use_gamepads
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/input/gamepads
       */
     var gamepadManager: GamepadManager = js.native
     
@@ -3719,7 +3874,7 @@ object sceneMod {
     
     /**
       * Gets the internal step used by deterministic lock step
-      * @see https://doc.babylonjs.com/babylon101/animations#deterministic-lockstep
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/animation/advanced_animations#deterministic-lockstep
       * @returns the internal step
       */
     def getInternalStep(): Double = js.native
@@ -3753,8 +3908,8 @@ object sceneMod {
     def getLastMaterialByID(id: String): Nullable[Material] = js.native
     
     /**
-      * Gets a the last added material using a given id
-      * @param id defines the material's Id
+      * Gets a last added material using a given id
+      * @param id defines the material's id
       * @param allowMultiMaterials determines whether multimaterials should be considered
       * @returns the last material with the given id or null if none found.
       */
@@ -3848,16 +4003,20 @@ object sceneMod {
     /**
       * get a material using its id
       * @param id defines the material's Id
+      * @param allowMultiMaterials determines whether multimaterials should be considered
       * @returns the material or null if none found.
       */
     def getMaterialById(id: String): Nullable[Material] = js.native
+    def getMaterialById(id: String, allowMultiMaterials: Boolean): Nullable[Material] = js.native
     
     /**
       * Gets a material using its name
       * @param name defines the material's name
+      * @param allowMultiMaterials determines whether multimaterials should be considered
       * @returns the material or null if none found.
       */
     def getMaterialByName(name: String): Nullable[Material] = js.native
+    def getMaterialByName(name: String, allowMultiMaterials: Boolean): Nullable[Material] = js.native
     
     /**
       * Get a list of materials by tags
@@ -3871,9 +4030,11 @@ object sceneMod {
     /**
       * Get a material using its unique id
       * @param uniqueId defines the material's unique id
+      * @param allowMultiMaterials determines whether multimaterials should be considered
       * @returns the material or null if none found.
       */
     def getMaterialByUniqueID(uniqueId: Double): Nullable[Material] = js.native
+    def getMaterialByUniqueID(uniqueId: Double, allowMultiMaterials: Boolean): Nullable[Material] = js.native
     
     /**
       * Gets the first added mesh found of a given Id
@@ -4087,7 +4248,7 @@ object sceneMod {
     
     /**
       * Gets the step Id used by deterministic lock step
-      * @see https://doc.babylonjs.com/babylon101/animations#deterministic-lockstep
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/animation/advanced_animations#deterministic-lockstep
       * @returns the step Id
       */
     def getStepId(): Double = js.native
@@ -4216,13 +4377,13 @@ object sceneMod {
     
     /**
       * Defines the gravity applied to this scene (used only for collisions)
-      * @see https://doc.babylonjs.com/babylon101/cameras,_mesh_collisions_and_gravity
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/cameras/camera_collisions
       */
     var gravity: Vector3 = js.native
     
     /**
       * Gets or sets if audio will be output to headphones
-      * @see https://doc.babylonjs.com/how_to/playing_sounds_and_music
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/audio/playingSoundsMusic
       */
     var headphone: Boolean = js.native
     
@@ -4415,7 +4576,7 @@ object sceneMod {
     
     /**
       * Gets or sets the current offline provider to use to store scene data
-      * @see https://doc.babylonjs.com/how_to/caching_resources_in_indexeddb
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/scene/optimizeCached
       */
     var offlineProvider: IOfflineProvider = js.native
     
@@ -4460,7 +4621,7 @@ object sceneMod {
       * An event triggered when physic simulation has been done
       */
     var onAfterPhysicsObservable: Observable[
-        typings.babylonjs.physicsPhysicsEngineComponentMod.babylonjsSceneAugmentingMod.Scene
+        typings.babylonjs.physicsJoinedPhysicsEngineComponentMod.babylonjsSceneAugmentingMod.Scene
       ] = js.native
     
     /**
@@ -4535,7 +4696,7 @@ object sceneMod {
       * An event triggered when physic simulation is about to be run
       */
     var onBeforePhysicsObservable: Observable[
-        typings.babylonjs.physicsPhysicsEngineComponentMod.babylonjsSceneAugmentingMod.Scene
+        typings.babylonjs.physicsJoinedPhysicsEngineComponentMod.babylonjsSceneAugmentingMod.Scene
       ] = js.native
     
     /**
@@ -4668,10 +4829,24 @@ object sceneMod {
     var onNewTransformNodeAddedObservable: Observable[TransformNode] = js.native
     
     /** Callback called when a pointer down is detected  */
-    def onPointerDown(evt: IPointerEvent, pickInfo: PickingInfo, `type`: PointerEventTypes): Unit = js.native
+    var onPointerDown: js.UndefOr[
+        js.Function3[
+          /* evt */ IPointerEvent, 
+          /* pickInfo */ PickingInfo, 
+          /* type */ PointerEventTypes, 
+          Unit
+        ]
+      ] = js.native
     
     /** Callback called when a pointer move is detected */
-    def onPointerMove(evt: IPointerEvent, pickInfo: PickingInfo, `type`: PointerEventTypes): Unit = js.native
+    var onPointerMove: js.UndefOr[
+        js.Function3[
+          /* evt */ IPointerEvent, 
+          /* pickInfo */ PickingInfo, 
+          /* type */ PointerEventTypes, 
+          Unit
+        ]
+      ] = js.native
     
     /**
       * Observable event triggered each time an input event is received from the rendering canvas
@@ -4679,10 +4854,17 @@ object sceneMod {
     var onPointerObservable: Observable[PointerInfo] = js.native
     
     /** Callback called when a pointer pick is detected */
-    def onPointerPick(evt: IPointerEvent, pickInfo: PickingInfo): Unit = js.native
+    var onPointerPick: js.UndefOr[js.Function2[/* evt */ IPointerEvent, /* pickInfo */ PickingInfo, Unit]] = js.native
     
     /** Callback called when a pointer up is detected  */
-    def onPointerUp(evt: IPointerEvent, pickInfo: Nullable[PickingInfo], `type`: PointerEventTypes): Unit = js.native
+    var onPointerUp: js.UndefOr[
+        js.Function3[
+          /* evt */ IPointerEvent, 
+          /* pickInfo */ Nullable[PickingInfo], 
+          /* type */ PointerEventTypes, 
+          Unit
+        ]
+      ] = js.native
     
     /**
       * This observable event is triggered when any keyboard event si raised and registered during Scene.attachControl()
@@ -4700,6 +4882,11 @@ object sceneMod {
       * An event triggered when the scene is ready
       */
     var onReadyObservable: Observable[Scene] = js.native
+    
+    /**
+      * Observable triggered when the performance priority is changed
+      */
+    var onScenePerformancePriorityChangedObservable: Observable[ScenePerformancePriority] = js.native
     
     /**
       * An event triggered when a skeleton is removed
@@ -4982,8 +5169,8 @@ object sceneMod {
     
     /**
       * Gets the postprocess render pipeline manager
-      * @see https://doc.babylonjs.com/how_to/how_to_use_postprocessrenderpipeline
-      * @see https://doc.babylonjs.com/how_to/using_default_rendering_pipeline
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/postProcesses/postProcessRenderPipeline
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/postProcesses/defaultRenderingPipeline
       */
     val postProcessRenderPipelineManager: PostProcessRenderPipelineManager = js.native
     
@@ -5203,7 +5390,7 @@ object sceneMod {
     
     /**
       * Gets the octree used to boost mesh selection (picking)
-      * @see https://doc.babylonjs.com/how_to/optimizing_your_scene_with_octrees
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/scene/optimizeOctrees
       */
     var selectionOctree: Octree[AbstractMesh] = js.native
     
@@ -5323,7 +5510,7 @@ object sceneMod {
     
     /**
       * Sets the step Id used by deterministic lock step
-      * @see https://doc.babylonjs.com/babylon101/animations#deterministic-lockstep
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/animation/advanced_animations#deterministic-lockstep
       * @param newStepId defines the step Id
       */
     def setStepId(newStepId: Double): Unit = js.native
@@ -5348,7 +5535,7 @@ object sceneMod {
     
     /**
       * Gets or sets the simplification queue attached to the scene
-      * @see https://doc.babylonjs.com/how_to/in-browser_mesh_simplification
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/mesh/simplifyingMeshes
       */
     var simplificationQueue: SimplificationQueue = js.native
     
@@ -5419,15 +5606,15 @@ object sceneMod {
     
     /**
       * The list of sound tracks added to the scene
-      * @see https://doc.babylonjs.com/how_to/playing_sounds_and_music
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/audio/playingSoundsMusic
       */
     var soundTracks: Nullable[js.Array[SoundTrack]] = js.native
     
     /**
       * All of the sprite managers added to this scene
-      * @see https://doc.babylonjs.com/babylon101/sprites
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/sprites
       */
-    var spriteManagers: js.Array[ISpriteManager] = js.native
+    var spriteManagers: js.UndefOr[js.Array[ISpriteManager]] = js.native
     
     /**
       * Gets or sets a boolean indicating if sprites are enabled on this scene
@@ -5466,13 +5653,13 @@ object sceneMod {
     
     /**
       * Gets the performance counter for active indices
-      * @see https://doc.babylonjs.com/how_to/optimizing_your_scene#instrumentation
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/scene/optimize_your_scene#instrumentation
       */
     def totalActiveIndicesPerfCounter: PerfCounter = js.native
     
     /**
       * Gets the performance counter for total vertices
-      * @see https://doc.babylonjs.com/how_to/optimizing_your_scene#instrumentation
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/scene/optimize_your_scene#instrumentation
       */
     def totalVerticesPerfCounter: PerfCounter = js.native
     
@@ -5596,7 +5783,7 @@ object sceneMod {
     
     /**
       * Gets or sets the maximum deltatime when deterministic lock step is enabled
-      * @see https://doc.babylonjs.com/babylon101/animations#deterministic-lockstep
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/animation/advanced_animations#deterministic-lockstep
       */
     @JSImport("babylonjs/scene", "Scene.MaxDeltaTime")
     @js.native
@@ -5605,7 +5792,7 @@ object sceneMod {
     
     /**
       * Gets or sets the minimum deltatime when deterministic lock step is enabled
-      * @see https://doc.babylonjs.com/babylon101/animations#deterministic-lockstep
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/animation/advanced_animations#deterministic-lockstep
       */
     @JSImport("babylonjs/scene", "Scene.MinDeltaTime")
     @js.native

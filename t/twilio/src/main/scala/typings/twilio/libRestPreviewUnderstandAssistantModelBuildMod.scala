@@ -1,246 +1,177 @@
 package typings.twilio
 
+import typings.twilio.anon.BuildDuration
 import typings.twilio.libBasePageMod.TwilioResponsePayload
-import typings.twilio.libInterfacesMod.SerializableClass
+import typings.twilio.libRestPreviewUnderstandMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libRestPreviewUnderstandAssistantModelBuildMod {
   
-  @JSImport("twilio/lib/rest/preview/understand/assistant/modelBuild", JSImport.Namespace)
+  @JSImport("twilio/lib/rest/preview/understand/assistant/modelBuild", "ModelBuildContextImpl")
   @js.native
-  val ^ : js.Any = js.native
-  
-  @JSImport("twilio/lib/rest/preview/understand/assistant/modelBuild", "ModelBuildContext")
-  @js.native
-  open class ModelBuildContext protected () extends StObject {
-    /**
-      * Initialize the ModelBuildContext
-      *
-      * PLEASE NOTE that this class contains preview products that are subject to
-      * change. Use them with caution. If you currently do not have developer preview
-      * access, please contact help@twilio.com.
-      *
-      * @param version - Version of the resource
-      * @param assistantSid - The assistant_sid
-      * @param sid - The sid
-      */
-    def this(version: typings.twilio.libRestPreviewUnderstandMod.^, assistantSid: String, sid: String) = this()
+  open class ModelBuildContextImpl protected ()
+    extends StObject
+       with ModelBuildContext {
+    def this(_version: default, assistantSid: String, sid: String) = this()
     
-    /**
-      * fetch a ModelBuildInstance
-      *
-      * @param callback - Callback to handle processed record
-      */
-    def fetch(): js.Promise[ModelBuildInstance] = js.native
-    def fetch(callback: js.Function2[/* error */ js.Error | Null, /* items */ ModelBuildInstance, Any]): js.Promise[ModelBuildInstance] = js.native
+    /* protected */ var _solution: ModelBuildContextSolution = js.native
     
-    /**
-      * remove a ModelBuildInstance
-      *
-      * @param callback - Callback to handle processed record
-      */
-    def remove(): js.Promise[Boolean] = js.native
-    def remove(callback: js.Function2[/* error */ js.Error | Null, /* items */ ModelBuildInstance, Any]): js.Promise[Boolean] = js.native
+    /* protected */ var _uri: String = js.native
     
-    /**
-      * Provide a user-friendly representation
-      */
-    def toJSON(): Any = js.native
+    /* protected */ var _version: default = js.native
     
-    /**
-      * update a ModelBuildInstance
-      *
-      * @param callback - Callback to handle processed record
-      */
-    def update(): js.Promise[ModelBuildInstance] = js.native
-    def update(callback: js.Function2[/* error */ js.Error | Null, /* items */ ModelBuildInstance, Any]): js.Promise[ModelBuildInstance] = js.native
     def update(
-      opts: Unit,
-      callback: js.Function2[/* error */ js.Error | Null, /* items */ ModelBuildInstance, Any]
+      params: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[ModelBuildInstance], Any],
+      callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[ModelBuildInstance], Any]
     ): js.Promise[ModelBuildInstance] = js.native
-    def update(opts: ModelBuildInstanceUpdateOptions): js.Promise[ModelBuildInstance] = js.native
     def update(
-      opts: ModelBuildInstanceUpdateOptions,
-      callback: js.Function2[/* error */ js.Error | Null, /* items */ ModelBuildInstance, Any]
+      params: Unit,
+      callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[ModelBuildInstance], Any]
     ): js.Promise[ModelBuildInstance] = js.native
   }
   
   @JSImport("twilio/lib/rest/preview/understand/assistant/modelBuild", "ModelBuildInstance")
   @js.native
-  open class ModelBuildInstance protected () extends SerializableClass {
+  open class ModelBuildInstance protected () extends StObject {
+    def this(_version: default, payload: ModelBuildResource, assistantSid: String) = this()
+    def this(_version: default, payload: ModelBuildResource, assistantSid: String, sid: String) = this()
+    
+    /* protected */ var _context: js.UndefOr[ModelBuildContext] = js.native
+    
+    /* private */ def _proxy: Any = js.native
+    
+    /* protected */ var _solution: ModelBuildContextSolution = js.native
+    
+    /* protected */ var _version: default = js.native
+    
     /**
-      * Initialize the ModelBuildContext
-      *
-      * PLEASE NOTE that this class contains preview products that are subject to
-      * change. Use them with caution. If you currently do not have developer preview
-      * access, please contact help@twilio.com.
-      *
-      * @param version - Version of the resource
-      * @param payload - The instance payload
-      * @param assistantSid - The unique ID of the parent Assistant.
-      * @param sid - The sid
+      * The unique ID of the Account that created this Model Build.
       */
-    def this(
-      version: typings.twilio.libRestPreviewUnderstandMod.^,
-      payload: ModelBuildPayload,
-      assistantSid: String,
-      sid: String
-    ) = this()
-    
-    /* private */ var _proxy: ModelBuildContext = js.native
-    
     var accountSid: String = js.native
     
+    /**
+      * The unique ID of the parent Assistant.
+      */
     var assistantSid: String = js.native
     
+    /**
+      * The time in seconds it took to build the model.
+      */
     var buildDuration: Double = js.native
     
+    /**
+      * The date that this resource was created
+      */
     var dateCreated: js.Date = js.native
     
+    /**
+      * The date that this resource was last updated
+      */
     var dateUpdated: js.Date = js.native
     
     var errorCode: Double = js.native
     
     /**
-      * fetch a ModelBuildInstance
+      * Fetch a ModelBuildInstance
       *
       * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed ModelBuildInstance
       */
     def fetch(): js.Promise[ModelBuildInstance] = js.native
-    def fetch(callback: js.Function2[/* error */ js.Error | Null, /* items */ this.type, Any]): js.Promise[ModelBuildInstance] = js.native
+    def fetch(callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[this.type], Any]): js.Promise[ModelBuildInstance] = js.native
     
     /**
-      * remove a ModelBuildInstance
+      * Remove a ModelBuildInstance
       *
       * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed boolean
       */
     def remove(): js.Promise[Boolean] = js.native
-    def remove(callback: js.Function2[/* error */ js.Error | Null, /* items */ this.type, Any]): js.Promise[Boolean] = js.native
+    def remove(callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[Boolean], Any]): js.Promise[Boolean] = js.native
     
+    /**
+      * A 34 character string that uniquely identifies this resource.
+      */
     var sid: String = js.native
     
     var status: ModelBuildStatus = js.native
     
+    /**
+      * Provide a user-friendly representation
+      *
+      * @returns Object
+      */
+    def toJSON(): BuildDuration = js.native
+    
+    /**
+      * A user-provided string that uniquely identifies this resource as an alternative to the sid. Unique up to 64 characters long.
+      */
     var uniqueName: String = js.native
     
     /**
-      * update a ModelBuildInstance
+      * Update a ModelBuildInstance
       *
       * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed ModelBuildInstance
       */
     def update(): js.Promise[ModelBuildInstance] = js.native
-    def update(callback: js.Function2[/* error */ js.Error | Null, /* items */ this.type, Any]): js.Promise[ModelBuildInstance] = js.native
-    def update(opts: Unit, callback: js.Function2[/* error */ js.Error | Null, /* items */ this.type, Any]): js.Promise[ModelBuildInstance] = js.native
-    def update(opts: ModelBuildInstanceUpdateOptions): js.Promise[ModelBuildInstance] = js.native
+    def update(callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[this.type], Any]): js.Promise[ModelBuildInstance] = js.native
+    /**
+      * Update a ModelBuildInstance
+      *
+      * @param params - Parameter for request
+      * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed ModelBuildInstance
+      */
+    def update(params: ModelBuildContextUpdateOptions): js.Promise[ModelBuildInstance] = js.native
     def update(
-      opts: ModelBuildInstanceUpdateOptions,
-      callback: js.Function2[/* error */ js.Error | Null, /* items */ this.type, Any]
+      params: ModelBuildContextUpdateOptions,
+      callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[this.type], Any]
     ): js.Promise[ModelBuildInstance] = js.native
     
     var url: String = js.native
   }
   
-  /**
-    * Initialize the ModelBuildList
-    *
-    * PLEASE NOTE that this class contains preview products that are subject to
-    * change. Use them with caution. If you currently do not have developer preview
-    * access, please contact help@twilio.com.
-    *
-    * @param version - Version of the resource
-    * @param assistantSid - The unique ID of the parent Assistant.
-    */
-  inline def ModelBuildList(version: typings.twilio.libRestPreviewUnderstandMod.^, assistantSid: String): ModelBuildListInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("ModelBuildList")(version.asInstanceOf[js.Any], assistantSid.asInstanceOf[js.Any])).asInstanceOf[ModelBuildListInstance]
-  
-  @JSImport("twilio/lib/rest/preview/understand/assistant/modelBuild", "ModelBuildPage")
-  @js.native
-  open class ModelBuildPage protected ()
-    extends typings.twilio.libBasePageMod.^[
-          typings.twilio.libRestPreviewUnderstandMod.^, 
-          ModelBuildPayload, 
-          ModelBuildResource, 
-          ModelBuildInstance
-        ] {
-    /**
-      * Initialize the ModelBuildPage
-      *
-      * PLEASE NOTE that this class contains preview products that are subject to
-      * change. Use them with caution. If you currently do not have developer preview
-      * access, please contact help@twilio.com.
-      *
-      * @param version - Version of the resource
-      * @param response - Response from the API
-      * @param solution - Path solution
-      */
-    def this(
-      version: typings.twilio.libRestPreviewUnderstandMod.^,
-      response: typings.twilio.libHttpResponseMod.^[String],
-      solution: ModelBuildSolution
-    ) = this()
-    
-    /**
-      * Build an instance of ModelBuildInstance
-      *
-      * @param payload - Payload response from the API
-      */
-    def getInstance(payload: ModelBuildPayload): ModelBuildInstance = js.native
-    
-    /**
-      * Provide a user-friendly representation
-      */
-    def toJSON(): Any = js.native
-  }
-  
-  /**
-    * Options to pass to update
-    *
-    * @property uniqueName - A user-provided string that uniquely identifies this resource as an alternative to the sid. Unique up to 64 characters long. For example: v0.1
-    */
-  trait ModelBuildInstanceUpdateOptions extends StObject {
-    
-    var uniqueName: js.UndefOr[String] = js.undefined
-  }
-  object ModelBuildInstanceUpdateOptions {
-    
-    inline def apply(): ModelBuildInstanceUpdateOptions = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[ModelBuildInstanceUpdateOptions]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: ModelBuildInstanceUpdateOptions] (val x: Self) extends AnyVal {
-      
-      inline def setUniqueName(value: String): Self = StObject.set(x, "uniqueName", value.asInstanceOf[js.Any])
-      
-      inline def setUniqueNameUndefined: Self = StObject.set(x, "uniqueName", js.undefined)
-    }
-  }
-  
   @js.native
   trait ModelBuildListInstance extends StObject {
     
-    /**
-      * @param sid - sid of instance
-      */
     def apply(sid: String): ModelBuildContext = js.native
     
+    var _solution: ModelBuildSolution = js.native
+    
+    var _uri: String = js.native
+    
+    var _version: default = js.native
+    
     /**
-      * create a ModelBuildInstance
+      * Create a ModelBuildInstance
       *
       * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed ModelBuildInstance
       */
     def create(): js.Promise[ModelBuildInstance] = js.native
-    def create(callback: js.Function2[/* error */ js.Error | Null, /* item */ ModelBuildInstance, Any]): js.Promise[ModelBuildInstance] = js.native
     def create(
-      opts: Unit,
-      callback: js.Function2[/* error */ js.Error | Null, /* item */ ModelBuildInstance, Any]
+      callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[ModelBuildInstance], Any]
     ): js.Promise[ModelBuildInstance] = js.native
-    def create(opts: ModelBuildListInstanceCreateOptions): js.Promise[ModelBuildInstance] = js.native
+    /**
+      * Create a ModelBuildInstance
+      *
+      * @param params - Parameter for request
+      * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed ModelBuildInstance
+      */
+    def create(params: ModelBuildListInstanceCreateOptions): js.Promise[ModelBuildInstance] = js.native
     def create(
-      opts: ModelBuildListInstanceCreateOptions,
-      callback: js.Function2[/* error */ js.Error | Null, /* item */ ModelBuildInstance, Any]
+      params: ModelBuildListInstanceCreateOptions,
+      callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[ModelBuildInstance], Any]
     ): js.Promise[ModelBuildInstance] = js.native
     
     /**
@@ -255,7 +186,8 @@ object libRestPreviewUnderstandAssistantModelBuildMod {
       * If a function is passed as the first argument, it will be used as the callback
       * function.
       *
-      * @param callback - Function to process each record
+      * @param { ModelBuildListInstanceEachOptions } [params] - Options for request
+      * @param { function } [callback] - Function to process each record
       */
     def each(): Unit = js.native
     def each(
@@ -265,17 +197,9 @@ object libRestPreviewUnderstandAssistantModelBuildMod {
           Unit
         ]
     ): Unit = js.native
+    def each(params: ModelBuildListInstanceEachOptions): Unit = js.native
     def each(
-      opts: Unit,
-      callback: js.Function2[
-          /* item */ ModelBuildInstance, 
-          /* done */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
-          Unit
-        ]
-    ): Unit = js.native
-    def each(opts: ModelBuildListInstanceEachOptions): Unit = js.native
-    def each(
-      opts: ModelBuildListInstanceEachOptions,
+      params: ModelBuildListInstanceEachOptions,
       callback: js.Function2[
           /* item */ ModelBuildInstance, 
           /* done */ js.Function1[/* err */ js.UndefOr[js.Error], Unit], 
@@ -283,11 +207,6 @@ object libRestPreviewUnderstandAssistantModelBuildMod {
         ]
     ): Unit = js.native
     
-    /**
-      * Constructs a model_build
-      *
-      * @param sid - The sid
-      */
     def get(sid: String): ModelBuildContext = js.native
     
     /**
@@ -295,20 +214,12 @@ object libRestPreviewUnderstandAssistantModelBuildMod {
       *
       * The request is executed immediately.
       *
-      * If a function is passed as the first argument, it will be used as the callback
-      * function.
-      *
-      * @param callback - Callback to handle list of records
+      * @param { string } [targetUrl] - API-generated URL for the requested results page
+      * @param { function } [callback] - Callback to handle list of records
       */
-    def getPage(): js.Promise[ModelBuildPage] = js.native
-    def getPage(callback: js.Function2[/* error */ js.Error | Null, /* items */ ModelBuildPage, Any]): js.Promise[ModelBuildPage] = js.native
     def getPage(targetUrl: String): js.Promise[ModelBuildPage] = js.native
     def getPage(
       targetUrl: String,
-      callback: js.Function2[/* error */ js.Error | Null, /* items */ ModelBuildPage, Any]
-    ): js.Promise[ModelBuildPage] = js.native
-    def getPage(
-      targetUrl: Unit,
       callback: js.Function2[/* error */ js.Error | Null, /* items */ ModelBuildPage, Any]
     ): js.Promise[ModelBuildPage] = js.native
     
@@ -318,17 +229,14 @@ object libRestPreviewUnderstandAssistantModelBuildMod {
       * If a function is passed as the first argument, it will be used as the callback
       * function.
       *
-      * @param callback - Callback to handle list of records
+      * @param { ModelBuildListInstanceOptions } [params] - Options for request
+      * @param { function } [callback] - Callback to handle list of records
       */
     def list(): js.Promise[js.Array[ModelBuildInstance]] = js.native
     def list(callback: js.Function2[/* error */ js.Error | Null, /* items */ js.Array[ModelBuildInstance], Any]): js.Promise[js.Array[ModelBuildInstance]] = js.native
+    def list(params: ModelBuildListInstanceOptions): js.Promise[js.Array[ModelBuildInstance]] = js.native
     def list(
-      opts: Unit,
-      callback: js.Function2[/* error */ js.Error | Null, /* items */ js.Array[ModelBuildInstance], Any]
-    ): js.Promise[js.Array[ModelBuildInstance]] = js.native
-    def list(opts: ModelBuildListInstanceOptions): js.Promise[js.Array[ModelBuildInstance]] = js.native
-    def list(
-      opts: ModelBuildListInstanceOptions,
+      params: ModelBuildListInstanceOptions,
       callback: js.Function2[/* error */ js.Error | Null, /* items */ js.Array[ModelBuildInstance], Any]
     ): js.Promise[js.Array[ModelBuildInstance]] = js.native
     
@@ -340,14 +248,14 @@ object libRestPreviewUnderstandAssistantModelBuildMod {
       * If a function is passed as the first argument, it will be used as the callback
       * function.
       *
-      * @param callback - Callback to handle list of records
+      * @param { ModelBuildListInstancePageOptions } [params] - Options for request
+      * @param { function } [callback] - Callback to handle list of records
       */
     def page(): js.Promise[ModelBuildPage] = js.native
     def page(callback: js.Function2[/* error */ js.Error | Null, /* items */ ModelBuildPage, Any]): js.Promise[ModelBuildPage] = js.native
-    def page(opts: Unit, callback: js.Function2[/* error */ js.Error | Null, /* items */ ModelBuildPage, Any]): js.Promise[ModelBuildPage] = js.native
-    def page(opts: ModelBuildListInstancePageOptions): js.Promise[ModelBuildPage] = js.native
+    def page(params: ModelBuildListInstancePageOptions): js.Promise[ModelBuildPage] = js.native
     def page(
-      opts: ModelBuildListInstancePageOptions,
+      params: ModelBuildListInstancePageOptions,
       callback: js.Function2[/* error */ js.Error | Null, /* items */ ModelBuildPage, Any]
     ): js.Promise[ModelBuildPage] = js.native
     
@@ -356,17 +264,143 @@ object libRestPreviewUnderstandAssistantModelBuildMod {
       */
     def toJSON(): Any = js.native
   }
+  object ModelBuildListInstance {
+    
+    @JSImport("twilio/lib/rest/preview/understand/assistant/modelBuild", "ModelBuildListInstance")
+    @js.native
+    def apply(version: default, assistantSid: String): ModelBuildListInstance = js.native
+  }
   
-  /**
-    * Options to pass to create
-    *
-    * @property statusCallback - The status_callback
-    * @property uniqueName - A user-provided string that uniquely identifies this resource as an alternative to the sid. Unique up to 64 characters long. For example: v0.1
-    */
+  @JSImport("twilio/lib/rest/preview/understand/assistant/modelBuild", "ModelBuildPage")
+  @js.native
+  open class ModelBuildPage protected ()
+    extends typings.twilio.libBasePageMod.default[default, ModelBuildPayload, ModelBuildResource, ModelBuildInstance] {
+    /**
+      * Initialize the ModelBuildPage
+      *
+      * @param version - Version of the resource
+      * @param response - Response from the API
+      * @param solution - Path solution
+      */
+    def this(
+      version: default,
+      response: typings.twilio.libHttpResponseMod.default[String],
+      solution: ModelBuildSolution
+    ) = this()
+    
+    /**
+      * Build an instance of ModelBuildInstance
+      *
+      * @param payload - Payload response from the API
+      */
+    def getInstance(payload: ModelBuildResource): ModelBuildInstance = js.native
+  }
+  
+  @js.native
+  trait ModelBuildContext extends StObject {
+    
+    /**
+      * Fetch a ModelBuildInstance
+      *
+      * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed ModelBuildInstance
+      */
+    def fetch(): js.Promise[ModelBuildInstance] = js.native
+    def fetch(
+      callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[ModelBuildInstance], Any]
+    ): js.Promise[ModelBuildInstance] = js.native
+    
+    /**
+      * Remove a ModelBuildInstance
+      *
+      * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed boolean
+      */
+    def remove(): js.Promise[Boolean] = js.native
+    def remove(callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[Boolean], Any]): js.Promise[Boolean] = js.native
+    
+    /**
+      * Provide a user-friendly representation
+      */
+    def toJSON(): Any = js.native
+    
+    /**
+      * Update a ModelBuildInstance
+      *
+      * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed ModelBuildInstance
+      */
+    def update(): js.Promise[ModelBuildInstance] = js.native
+    def update(
+      callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[ModelBuildInstance], Any]
+    ): js.Promise[ModelBuildInstance] = js.native
+    /**
+      * Update a ModelBuildInstance
+      *
+      * @param params - Parameter for request
+      * @param callback - Callback to handle processed record
+      *
+      * @returns Resolves to processed ModelBuildInstance
+      */
+    def update(params: ModelBuildContextUpdateOptions): js.Promise[ModelBuildInstance] = js.native
+    def update(
+      params: ModelBuildContextUpdateOptions,
+      callback: js.Function2[/* error */ js.Error | Null, /* item */ js.UndefOr[ModelBuildInstance], Any]
+    ): js.Promise[ModelBuildInstance] = js.native
+  }
+  
+  trait ModelBuildContextSolution extends StObject {
+    
+    var assistantSid: String
+    
+    var sid: String
+  }
+  object ModelBuildContextSolution {
+    
+    inline def apply(assistantSid: String, sid: String): ModelBuildContextSolution = {
+      val __obj = js.Dynamic.literal(assistantSid = assistantSid.asInstanceOf[js.Any], sid = sid.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ModelBuildContextSolution]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModelBuildContextSolution] (val x: Self) extends AnyVal {
+      
+      inline def setAssistantSid(value: String): Self = StObject.set(x, "assistantSid", value.asInstanceOf[js.Any])
+      
+      inline def setSid(value: String): Self = StObject.set(x, "sid", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait ModelBuildContextUpdateOptions extends StObject {
+    
+    /** A user-provided string that uniquely identifies this resource as an alternative to the sid. Unique up to 64 characters long. For example: v0.1 */
+    var uniqueName: js.UndefOr[String] = js.undefined
+  }
+  object ModelBuildContextUpdateOptions {
+    
+    inline def apply(): ModelBuildContextUpdateOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ModelBuildContextUpdateOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModelBuildContextUpdateOptions] (val x: Self) extends AnyVal {
+      
+      inline def setUniqueName(value: String): Self = StObject.set(x, "uniqueName", value.asInstanceOf[js.Any])
+      
+      inline def setUniqueNameUndefined: Self = StObject.set(x, "uniqueName", js.undefined)
+    }
+  }
+  
   trait ModelBuildListInstanceCreateOptions extends StObject {
     
+    /**  */
     var statusCallback: js.UndefOr[String] = js.undefined
     
+    /** A user-provided string that uniquely identifies this resource as an alternative to the sid. Unique up to 64 characters long. For example: v0.1 */
     var uniqueName: js.UndefOr[String] = js.undefined
   }
   object ModelBuildListInstanceCreateOptions {
@@ -389,26 +423,9 @@ object libRestPreviewUnderstandAssistantModelBuildMod {
     }
   }
   
-  /**
-    * Options to pass to each
-    *
-    * @property callback -
-    *                         Function to process each record. If this and a positional
-    *                         callback are passed, this one will be used
-    * @property done - Function to be called upon completion of streaming
-    * @property limit -
-    *                         Upper limit for the number of records to return.
-    *                         each() guarantees never to return more than limit.
-    *                         Default is no limit
-    * @property pageSize -
-    *                         Number of records to fetch per request,
-    *                         when not set will use the default value of 50 records.
-    *                         If no pageSize is defined but a limit is defined,
-    *                         each() will attempt to read the limit with the most efficient
-    *                         page size, i.e. min(limit, 1000)
-    */
   trait ModelBuildListInstanceEachOptions extends StObject {
     
+    /** Function to process each record. If this and a positional callback are passed, this one will be used */
     var callback: js.UndefOr[
         js.Function2[
           /* item */ ModelBuildInstance, 
@@ -417,10 +434,13 @@ object libRestPreviewUnderstandAssistantModelBuildMod {
         ]
       ] = js.undefined
     
+    /** Function to be called upon completion of streaming */
     var done: js.UndefOr[js.Function] = js.undefined
     
+    /** Upper limit for the number of records to return. each() guarantees never to return more than limit. Default is no limit */
     var limit: js.UndefOr[Double] = js.undefined
     
+    /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
     var pageSize: js.UndefOr[Double] = js.undefined
   }
   object ModelBuildListInstanceEachOptions {
@@ -453,24 +473,12 @@ object libRestPreviewUnderstandAssistantModelBuildMod {
     }
   }
   
-  /**
-    * Options to pass to list
-    *
-    * @property limit -
-    *                         Upper limit for the number of records to return.
-    *                         list() guarantees never to return more than limit.
-    *                         Default is no limit
-    * @property pageSize -
-    *                         Number of records to fetch per request,
-    *                         when not set will use the default value of 50 records.
-    *                         If no page_size is defined but a limit is defined,
-    *                         list() will attempt to read the limit with the most
-    *                         efficient page size, i.e. min(limit, 1000)
-    */
   trait ModelBuildListInstanceOptions extends StObject {
     
+    /** Upper limit for the number of records to return. list() guarantees never to return more than limit. Default is no limit */
     var limit: js.UndefOr[Double] = js.undefined
     
+    /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
     var pageSize: js.UndefOr[Double] = js.undefined
   }
   object ModelBuildListInstanceOptions {
@@ -493,19 +501,15 @@ object libRestPreviewUnderstandAssistantModelBuildMod {
     }
   }
   
-  /**
-    * Options to pass to page
-    *
-    * @property pageNumber - Page Number, this value is simply for client state
-    * @property pageSize - Number of records to return, defaults to 50
-    * @property pageToken - PageToken provided by the API
-    */
   trait ModelBuildListInstancePageOptions extends StObject {
     
+    /** Page Number, this value is simply for client state */
     var pageNumber: js.UndefOr[Double] = js.undefined
     
+    /** How many resources to return in each list page. The default is 50, and the maximum is 1000. */
     var pageSize: js.UndefOr[Double] = js.undefined
     
+    /** PageToken provided by the API */
     var pageToken: js.UndefOr[String] = js.undefined
   }
   object ModelBuildListInstancePageOptions {
@@ -534,30 +538,31 @@ object libRestPreviewUnderstandAssistantModelBuildMod {
   
   trait ModelBuildPayload
     extends StObject
-       with ModelBuildResource
-       with TwilioResponsePayload
+       with TwilioResponsePayload {
+    
+    var model_builds: js.Array[ModelBuildResource]
+  }
   object ModelBuildPayload {
     
     inline def apply(
-      account_sid: String,
-      assistant_sid: String,
-      build_duration: Double,
-      date_created: js.Date,
-      date_updated: js.Date,
-      error_code: Double,
       first_page_uri: String,
+      model_builds: js.Array[ModelBuildResource],
       next_page_uri: String,
       page: Double,
       page_size: Double,
       previous_page_uri: String,
-      sid: String,
-      status: ModelBuildStatus,
-      unique_name: String,
-      uri: String,
-      url: String
+      uri: String
     ): ModelBuildPayload = {
-      val __obj = js.Dynamic.literal(account_sid = account_sid.asInstanceOf[js.Any], assistant_sid = assistant_sid.asInstanceOf[js.Any], build_duration = build_duration.asInstanceOf[js.Any], date_created = date_created.asInstanceOf[js.Any], date_updated = date_updated.asInstanceOf[js.Any], error_code = error_code.asInstanceOf[js.Any], first_page_uri = first_page_uri.asInstanceOf[js.Any], next_page_uri = next_page_uri.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any], page_size = page_size.asInstanceOf[js.Any], previous_page_uri = previous_page_uri.asInstanceOf[js.Any], sid = sid.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], unique_name = unique_name.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(first_page_uri = first_page_uri.asInstanceOf[js.Any], model_builds = model_builds.asInstanceOf[js.Any], next_page_uri = next_page_uri.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any], page_size = page_size.asInstanceOf[js.Any], previous_page_uri = previous_page_uri.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
       __obj.asInstanceOf[ModelBuildPayload]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModelBuildPayload] (val x: Self) extends AnyVal {
+      
+      inline def setModel_builds(value: js.Array[ModelBuildResource]): Self = StObject.set(x, "model_builds", value.asInstanceOf[js.Any])
+      
+      inline def setModel_buildsVarargs(value: ModelBuildResource*): Self = StObject.set(x, "model_builds", js.Array(value*))
     }
   }
   
@@ -628,12 +633,12 @@ object libRestPreviewUnderstandAssistantModelBuildMod {
   
   trait ModelBuildSolution extends StObject {
     
-    var assistantSid: js.UndefOr[String] = js.undefined
+    var assistantSid: String
   }
   object ModelBuildSolution {
     
-    inline def apply(): ModelBuildSolution = {
-      val __obj = js.Dynamic.literal()
+    inline def apply(assistantSid: String): ModelBuildSolution = {
+      val __obj = js.Dynamic.literal(assistantSid = assistantSid.asInstanceOf[js.Any])
       __obj.asInstanceOf[ModelBuildSolution]
     }
     
@@ -641,8 +646,6 @@ object libRestPreviewUnderstandAssistantModelBuildMod {
     implicit open class MutableBuilder[Self <: ModelBuildSolution] (val x: Self) extends AnyVal {
       
       inline def setAssistantSid(value: String): Self = StObject.set(x, "assistantSid", value.asInstanceOf[js.Any])
-      
-      inline def setAssistantSidUndefined: Self = StObject.set(x, "assistantSid", js.undefined)
     }
   }
   

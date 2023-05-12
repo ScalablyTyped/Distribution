@@ -1,5 +1,6 @@
 package typings.monacoEditor.mod.editor
 
+import typings.monacoEditor.monacoEditorStrings.tabSize
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +9,7 @@ trait ITextModelUpdateOptions extends StObject {
   
   var bracketColorizationOptions: js.UndefOr[BracketPairColorizationOptions] = js.undefined
   
-  var indentSize: js.UndefOr[Double] = js.undefined
+  var indentSize: js.UndefOr[Double | tabSize] = js.undefined
   
   var insertSpaces: js.UndefOr[Boolean] = js.undefined
   
@@ -30,7 +31,7 @@ object ITextModelUpdateOptions {
     
     inline def setBracketColorizationOptionsUndefined: Self = StObject.set(x, "bracketColorizationOptions", js.undefined)
     
-    inline def setIndentSize(value: Double): Self = StObject.set(x, "indentSize", value.asInstanceOf[js.Any])
+    inline def setIndentSize(value: Double | tabSize): Self = StObject.set(x, "indentSize", value.asInstanceOf[js.Any])
     
     inline def setIndentSizeUndefined: Self = StObject.set(x, "indentSize", js.undefined)
     

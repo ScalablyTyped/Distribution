@@ -144,8 +144,8 @@ object namespacesAlarmsMod {
         *
         * @param name Optional. The name of the alarm to get. Defaults to the empty string.
         */
-      def get(): js.Promise[Alarm] = js.native
-      def get(name: String): js.Promise[Alarm] = js.native
+      def get(): js.Promise[js.UndefOr[Alarm]] = js.native
+      def get(name: String): js.Promise[js.UndefOr[Alarm]] = js.native
       
       /**
         * Gets an array of all the alarms.

@@ -55,22 +55,16 @@ trait Gizmo
     */
   /* protected */ def _setGizmoMeshMaterial(gizmoMeshes: js.Array[Mesh], material: StandardMaterial): Unit = js.native
   
-  /* private */ var _tempMatrix1: Any = js.native
-  
-  /* private */ var _tempMatrix2: Any = js.native
-  
-  /* private */ var _tempQuaternion: Any = js.native
-  
-  /* private */ var _tempVector: Any = js.native
-  
-  /* private */ var _tempVector2: Any = js.native
-  
   /**
     * Updates the gizmo to match the attached mesh's position/rotation
     */
   /* protected */ def _update(): Unit = js.native
   
+  /* protected */ var _updateGizmoPositionToMatchAttachedMesh: Boolean = js.native
+  
   /* protected */ var _updateGizmoRotationToMatchAttachedMesh: Boolean = js.native
+  
+  /* protected */ var _updateScale: Boolean = js.native
   
   /**
     * Mesh that the gizmo will be attached to. (eg. on a drag gizmo the mesh that will be dragged)
@@ -102,6 +96,12 @@ trait Gizmo
   @JSName("scaleRatio")
   def scaleRatio_MGizmo: Double = js.native
   
+  @JSName("updateGizmoPositionToMatchAttachedMesh")
+  def updateGizmoPositionToMatchAttachedMesh_MGizmo: Boolean = js.native
+  
   @JSName("updateGizmoRotationToMatchAttachedMesh")
   def updateGizmoRotationToMatchAttachedMesh_MGizmo: Boolean = js.native
+  
+  @JSName("updateScale")
+  def updateScale_MGizmo: Boolean = js.native
 }

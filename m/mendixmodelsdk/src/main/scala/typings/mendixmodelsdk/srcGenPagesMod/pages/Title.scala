@@ -29,6 +29,12 @@ open class Title protected () extends ConditionallyVisibleWidget {
     unit: ModelUnit[IAbstractModel],
     container: AbstractElement[IAbstractModel, Container]
   ) = this()
+  
+  /**
+    * In version 9.24.0: introduced
+    */
+  def nativeAccessibilitySettings: AccessibilitySettings | Null = js.native
+  def nativeAccessibilitySettings_=(newValue: AccessibilitySettings | Null): Unit = js.native
 }
 object Title {
   

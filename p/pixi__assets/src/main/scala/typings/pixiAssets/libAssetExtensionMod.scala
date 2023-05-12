@@ -6,6 +6,7 @@ import typings.pixiAssets.libCacheCacheParserMod.CacheParser
 import typings.pixiAssets.libLoaderParsersLoaderParserMod.LoaderParser
 import typings.pixiExtensions.mod.ExtensionType.Asset
 import typings.std.Partial
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -25,7 +26,7 @@ object libAssetExtensionMod {
     
     var `extension`: Asset
     
-    var loader: js.UndefOr[Partial[LoaderParser[ASSET, META_DATA]]] = js.undefined
+    var loader: js.UndefOr[Partial[LoaderParser[ASSET, META_DATA, Record[String, Any]]]] = js.undefined
     
     var resolver: js.UndefOr[PartialResolveURLParser] = js.undefined
   }
@@ -50,7 +51,7 @@ object libAssetExtensionMod {
       
       inline def setExtension(value: Asset): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
       
-      inline def setLoader(value: Partial[LoaderParser[ASSET, META_DATA]]): Self = StObject.set(x, "loader", value.asInstanceOf[js.Any])
+      inline def setLoader(value: Partial[LoaderParser[ASSET, META_DATA, Record[String, Any]]]): Self = StObject.set(x, "loader", value.asInstanceOf[js.Any])
       
       inline def setLoaderUndefined: Self = StObject.set(x, "loader", js.undefined)
       

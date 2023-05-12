@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeFleetLocationAttributesOutput extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) that is assigned to a GameLift fleet resource and uniquely identifies it. ARNs are unique across all Regions. Format is arn:aws:gamelift:&lt;region&gt;::fleet/fleet-a1234567-b8c9-0d1e-2fa3-b45c6d7e8912. 
+    * The Amazon Resource Name (ARN) that is assigned to a Amazon GameLift fleet resource and uniquely identifies it. ARNs are unique across all Regions. Format is arn:aws:gamelift:&lt;region&gt;::fleet/fleet-a1234567-b8c9-0d1e-2fa3-b45c6d7e8912.
     */
   var FleetArn: js.UndefOr[typings.awsSdk.clientsGameliftMod.FleetArn] = js.undefined
   
@@ -17,7 +17,7 @@ trait DescribeFleetLocationAttributesOutput extends StObject {
   var FleetId: js.UndefOr[FleetIdOrArn] = js.undefined
   
   /**
-    *  Location-specific information on the requested fleet's remote locations. 
+    *  Location-specific information on the requested fleet's remote locations.
     */
   var LocationAttributes: js.UndefOr[LocationAttributesList] = js.undefined
   

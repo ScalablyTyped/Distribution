@@ -69,7 +69,7 @@ object libCommonCodeConverterMod {
     
     def asCallHierarchyItem(value: CallHierarchyItem): typings.vscodeLanguageserverTypes.mod.CallHierarchyItem = js.native
     
-    def asChangeTextDocumentParams(event: TextDocumentChangeEvent): DidChangeTextDocumentParams = js.native
+    def asChangeTextDocumentParams(event: TextDocumentChangeEvent, uri: Uri, version: Double): DidChangeTextDocumentParams = js.native
     def asChangeTextDocumentParams(textDocument: TextDocument): DidChangeTextDocumentParams = js.native
     
     def asCloseTextDocumentParams(textDocument: TextDocument): DidCloseTextDocumentParams = js.native

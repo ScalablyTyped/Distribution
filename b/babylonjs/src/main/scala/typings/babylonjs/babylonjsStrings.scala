@@ -1,8 +1,11 @@
 package typings.babylonjs
 
+import typings.babylonjs.debugDebugLayerMod.IInspectorContextMenuType
 import typings.babylonjs.iaccessibilitytagMod.AcceptedARIA
 import typings.babylonjs.iaccessibilitytagMod.AcceptedRole
 import typings.babylonjs.xRFeaturesWebXRDOMOverlayMod.WebXRDomOverlayType
+import typings.babylonjs.xRFeaturesWebXRDepthSensingMod.WebXRDepthDataFormat
+import typings.babylonjs.xRFeaturesWebXRDepthSensingMod.WebXRDepthUsage
 import typings.babylonjs.xRMotionControllerWebXRAbstractMotionControllerMod.MotionControllerComponentStateType
 import typings.babylonjs.xRMotionControllerWebXRAbstractMotionControllerMod.MotionControllerComponentType
 import typings.babylonjs.xRMotionControllerWebXRAbstractMotionControllerMod.MotionControllerHandedness
@@ -824,6 +827,10 @@ object babylonjsStrings {
   inline def `bgra8unorm-storage`: `bgra8unorm-storage` = "bgra8unorm-storage".asInstanceOf[`bgra8unorm-storage`]
   
   @js.native
+  sealed trait bitmaprenderer extends StObject
+  inline def bitmaprenderer: bitmaprenderer = "bitmaprenderer".asInstanceOf[bitmaprenderer]
+  
+  @js.native
   sealed trait `bounded-floor`
     extends StObject
        with XRReferenceSpaceType
@@ -920,8 +927,25 @@ object babylonjsStrings {
   inline def contentinfo: contentinfo = "contentinfo".asInstanceOf[contentinfo]
   
   @js.native
-  sealed trait cpu extends StObject
+  sealed trait contextlost extends StObject
+  inline def contextlost: contextlost = "contextlost".asInstanceOf[contextlost]
+  
+  @js.native
+  sealed trait contextrestored extends StObject
+  inline def contextrestored: contextrestored = "contextrestored".asInstanceOf[contextrestored]
+  
+  @js.native
+  sealed trait cpu
+    extends StObject
+       with WebXRDepthUsage
+       with typings.babylonjs.BABYLON.WebXRDepthUsage
   inline def cpu: cpu = "cpu".asInstanceOf[cpu]
+  
+  @js.native
+  sealed trait `cpu-optimized`
+    extends StObject
+       with XRDepthUsage
+  inline def `cpu-optimized`: `cpu-optimized` = "cpu-optimized".asInstanceOf[`cpu-optimized`]
   
   @js.native
   sealed trait critical
@@ -1005,7 +1029,6 @@ object babylonjsStrings {
   @js.native
   sealed trait `depth24unorm-stencil8`
     extends StObject
-       with GPUFeatureName
        with GPUTextureFormat
   inline def `depth24unorm-stencil8`: `depth24unorm-stencil8` = "depth24unorm-stencil8".asInstanceOf[`depth24unorm-stencil8`]
   
@@ -1023,7 +1046,9 @@ object babylonjsStrings {
   inline def `depth32float-stencil8`: `depth32float-stencil8` = "depth32float-stencil8".asInstanceOf[`depth32float-stencil8`]
   
   @js.native
-  sealed trait destroyed extends StObject
+  sealed trait destroyed
+    extends StObject
+       with GPUDeviceLostReason
   inline def destroyed: destroyed = "destroyed".asInstanceOf[destroyed]
   
   @js.native
@@ -1198,6 +1223,8 @@ object babylonjsStrings {
   sealed trait float
     extends StObject
        with GPUTextureSampleType
+       with WebXRDepthDataFormat
+       with typings.babylonjs.BABYLON.WebXRDepthDataFormat
   inline def float: float = "float".asInstanceOf[float]
   
   @js.native
@@ -1216,7 +1243,14 @@ object babylonjsStrings {
   sealed trait float32
     extends StObject
        with GPUVertexFormat
+       with XRDepthDataFormat
   inline def float32: float32 = "float32".asInstanceOf[float32]
+  
+  @js.native
+  sealed trait `float32-filterable`
+    extends StObject
+       with GPUFeatureName
+  inline def `float32-filterable`: `float32-filterable` = "float32-filterable".asInstanceOf[`float32-filterable`]
   
   @js.native
   sealed trait float32x2
@@ -1283,6 +1317,19 @@ object babylonjsStrings {
     extends StObject
        with XRTargetRayMode
   inline def gaze: gaze = "gaze".asInstanceOf[gaze]
+  
+  @js.native
+  sealed trait gpu
+    extends StObject
+       with WebXRDepthUsage
+       with typings.babylonjs.BABYLON.WebXRDepthUsage
+  inline def gpu: gpu = "gpu".asInstanceOf[gpu]
+  
+  @js.native
+  sealed trait `gpu-optimized`
+    extends StObject
+       with XRDepthUsage
+  inline def `gpu-optimized`: `gpu-optimized` = "gpu-optimized".asInstanceOf[`gpu-optimized`]
   
   @js.native
   sealed trait greater
@@ -1434,6 +1481,13 @@ object babylonjsStrings {
   inline def instance: instance = "instance".asInstanceOf[instance]
   
   @js.native
+  sealed trait internal
+    extends StObject
+       with GPUErrorFilter
+       with GPUPipelineErrorReason
+  inline def internal: internal = "internal".asInstanceOf[internal]
+  
+  @js.native
   sealed trait invert
     extends StObject
        with GPUStencilOperation
@@ -1482,6 +1536,7 @@ object babylonjsStrings {
   sealed trait linear
     extends StObject
        with GPUFilterMode
+       with GPUMipmapFilterMode
   inline def linear: linear = "linear".asInstanceOf[linear]
   
   @js.native
@@ -1538,6 +1593,12 @@ object babylonjsStrings {
   inline def `low-power`: `low-power` = "low-power".asInstanceOf[`low-power`]
   
   @js.native
+  sealed trait `luminance-alpha`
+    extends StObject
+       with XRDepthDataFormat
+  inline def `luminance-alpha`: `luminance-alpha` = "luminance-alpha".asInstanceOf[`luminance-alpha`]
+  
+  @js.native
   sealed trait main
     extends StObject
        with AcceptedRole
@@ -1545,11 +1606,24 @@ object babylonjsStrings {
   inline def main: main = "main".asInstanceOf[main]
   
   @js.native
+  sealed trait mapped
+    extends StObject
+       with GPUBufferMapState
+  inline def mapped: mapped = "mapped".asInstanceOf[mapped]
+  
+  @js.native
   sealed trait marquee
     extends StObject
        with AcceptedRole
        with typings.babylonjs.BABYLON.AcceptedRole
   inline def marquee: marquee = "marquee".asInstanceOf[marquee]
+  
+  @js.native
+  sealed trait materials
+    extends StObject
+       with IInspectorContextMenuType
+       with typings.babylonjs.BABYLON.IInspectorContextMenuType
+  inline def materials: materials = "materials".asInstanceOf[materials]
   
   @js.native
   sealed trait math
@@ -1650,6 +1724,7 @@ object babylonjsStrings {
   sealed trait nearest
     extends StObject
        with GPUFilterMode
+       with GPUMipmapFilterMode
   inline def nearest: nearest = "nearest".asInstanceOf[nearest]
   
   @js.native
@@ -1657,6 +1732,13 @@ object babylonjsStrings {
     extends StObject
        with GPUCompareFunction
   inline def never: never = "never".asInstanceOf[never]
+  
+  @js.native
+  sealed trait node
+    extends StObject
+       with IInspectorContextMenuType
+       with typings.babylonjs.BABYLON.IInspectorContextMenuType
+  inline def node: node = "node".asInstanceOf[node]
   
   @js.native
   sealed trait nominal
@@ -1751,6 +1833,19 @@ object babylonjsStrings {
   inline def `out-of-memory`: `out-of-memory` = "out-of-memory".asInstanceOf[`out-of-memory`]
   
   @js.native
+  sealed trait particleSystems
+    extends StObject
+       with IInspectorContextMenuType
+       with typings.babylonjs.BABYLON.IInspectorContextMenuType
+  inline def particleSystems: particleSystems = "particleSystems".asInstanceOf[particleSystems]
+  
+  @js.native
+  sealed trait pending
+    extends StObject
+       with GPUBufferMapState
+  inline def pending: pending = "pending".asInstanceOf[pending]
+  
+  @js.native
   sealed trait `pinky-finger-metacarpal`
     extends StObject
        with XRHandJoint
@@ -1779,6 +1874,13 @@ object babylonjsStrings {
     extends StObject
        with XRHandJoint
   inline def `pinky-finger-tip`: `pinky-finger-tip` = "pinky-finger-tip".asInstanceOf[`pinky-finger-tip`]
+  
+  @js.native
+  sealed trait pipeline
+    extends StObject
+       with IInspectorContextMenuType
+       with typings.babylonjs.BABYLON.IInspectorContextMenuType
+  inline def pipeline: pipeline = "pipeline".asInstanceOf[pipeline]
   
   @js.native
   sealed trait plane
@@ -1946,6 +2048,12 @@ object babylonjsStrings {
     extends StObject
        with GPUTextureFormat
   inline def rg11b10ufloat: rg11b10ufloat = "rg11b10ufloat".asInstanceOf[rg11b10ufloat]
+  
+  @js.native
+  sealed trait `rg11b10ufloat-renderable`
+    extends StObject
+       with GPUFeatureName
+  inline def `rg11b10ufloat-renderable`: `rg11b10ufloat-renderable` = "rg11b10ufloat-renderable".asInstanceOf[`rg11b10ufloat-renderable`]
   
   @js.native
   sealed trait rg16float
@@ -2322,6 +2430,13 @@ object babylonjsStrings {
   inline def spinbutton: spinbutton = "spinbutton".asInstanceOf[spinbutton]
   
   @js.native
+  sealed trait spriteManagers
+    extends StObject
+       with IInspectorContextMenuType
+       with typings.babylonjs.BABYLON.IInspectorContextMenuType
+  inline def spriteManagers: spriteManagers = "spriteManagers".asInstanceOf[spriteManagers]
+  
+  @js.native
   sealed trait squeeze
     extends StObject
        with MotionControllerComponentType
@@ -2361,10 +2476,6 @@ object babylonjsStrings {
     extends StObject
        with GPUBlendFactor
   inline def `src-alpha-saturated`: `src-alpha-saturated` = "src-alpha-saturated".asInstanceOf[`src-alpha-saturated`]
-  
-  @js.native
-  sealed trait srgb extends StObject
-  inline def srgb: srgb = "srgb".asInstanceOf[srgb]
   
   @js.native
   sealed trait srgba8
@@ -2735,8 +2846,15 @@ object babylonjsStrings {
   @js.native
   sealed trait unknown
     extends StObject
+       with GPUDeviceLostReason
        with XRSceneObjectType
   inline def unknown: unknown = "unknown".asInstanceOf[unknown]
+  
+  @js.native
+  sealed trait unmapped
+    extends StObject
+       with GPUBufferMapState
+  inline def unmapped: unmapped = "unmapped".asInstanceOf[unmapped]
   
   @js.native
   sealed trait unorm16x2
@@ -2769,9 +2887,17 @@ object babylonjsStrings {
   inline def untrackable: untrackable = "untrackable".asInstanceOf[untrackable]
   
   @js.native
+  sealed trait ushort
+    extends StObject
+       with WebXRDepthDataFormat
+       with typings.babylonjs.BABYLON.WebXRDepthDataFormat
+  inline def ushort: ushort = "ushort".asInstanceOf[ushort]
+  
+  @js.native
   sealed trait validation
     extends StObject
        with GPUErrorFilter
+       with GPUPipelineErrorReason
   inline def validation: validation = "validation".asInstanceOf[validation]
   
   @js.native
@@ -2842,6 +2968,14 @@ object babylonjsStrings {
     extends StObject
        with GPUCompilationMessageType
   inline def warning: warning = "warning".asInstanceOf[warning]
+  
+  @js.native
+  sealed trait webgl extends StObject
+  inline def webgl: webgl = "webgl".asInstanceOf[webgl]
+  
+  @js.native
+  sealed trait webgl2 extends StObject
+  inline def webgl2: webgl2 = "webgl2".asInstanceOf[webgl2]
   
   @js.native
   sealed trait world

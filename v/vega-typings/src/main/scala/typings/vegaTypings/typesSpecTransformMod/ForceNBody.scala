@@ -1,5 +1,6 @@
 package typings.vegaTypings.typesSpecTransformMod
 
+import typings.vegaTypings.typesSpecExprMod.ExprRef
 import typings.vegaTypings.typesSpecSignalMod.SignalRef
 import typings.vegaTypings.vegaTypingsStrings.nbody
 import org.scalablytyped.runtime.StObject
@@ -16,7 +17,7 @@ trait ForceNBody
   
   var force: nbody
   
-  var strength: js.UndefOr[Double | SignalRef] = js.undefined
+  var strength: js.UndefOr[Double | SignalRef | ExprRef] = js.undefined
   
   var theta: js.UndefOr[Double | SignalRef] = js.undefined
 }
@@ -40,7 +41,7 @@ object ForceNBody {
     
     inline def setForce(value: nbody): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
     
-    inline def setStrength(value: Double | SignalRef): Self = StObject.set(x, "strength", value.asInstanceOf[js.Any])
+    inline def setStrength(value: Double | SignalRef | ExprRef): Self = StObject.set(x, "strength", value.asInstanceOf[js.Any])
     
     inline def setStrengthUndefined: Self = StObject.set(x, "strength", js.undefined)
     

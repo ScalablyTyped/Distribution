@@ -22,7 +22,7 @@ trait AgentServicesProvider
   
   def createOperator(ownerUri: String, operatorInfo: AgentOperatorInfo): Thenable[CreateAgentOperatorResult]
   
-  def createProxy(ownerUri: String, proxyInfo: AgentProxyInfo): Thenable[CreateAgentOperatorResult]
+  def createProxy(ownerUri: String, proxyInfo: AgentProxyInfo): Thenable[CreateAgentProxyResult]
   
   def deleteAlert(ownerUri: String, alertInfo: AgentAlertInfo): Thenable[ResultStatus]
   
@@ -106,7 +106,7 @@ trait AgentServicesProvider
   
   def updateOperator(ownerUri: String, originalOperatorName: String, operatorInfo: AgentOperatorInfo): Thenable[UpdateAgentOperatorResult]
   
-  def updateProxy(ownerUri: String, originalProxyName: String, proxyInfo: AgentProxyInfo): Thenable[UpdateAgentOperatorResult]
+  def updateProxy(ownerUri: String, originalProxyName: String, proxyInfo: AgentProxyInfo): Thenable[UpdateAgentProxyResult]
 }
 object AgentServicesProvider {
   
@@ -117,7 +117,7 @@ object AgentServicesProvider {
     createJobStep: (String, AgentJobStepInfo) => Thenable[CreateAgentJobStepResult],
     createNotebook: (String, AgentNotebookInfo, String) => Thenable[CreateAgentNotebookResult],
     createOperator: (String, AgentOperatorInfo) => Thenable[CreateAgentOperatorResult],
-    createProxy: (String, AgentProxyInfo) => Thenable[CreateAgentOperatorResult],
+    createProxy: (String, AgentProxyInfo) => Thenable[CreateAgentProxyResult],
     deleteAlert: (String, AgentAlertInfo) => Thenable[ResultStatus],
     deleteJob: (String, AgentJobInfo) => Thenable[ResultStatus],
     deleteJobSchedule: (String, AgentJobScheduleInfo) => Thenable[ResultStatus],
@@ -149,7 +149,7 @@ object AgentServicesProvider {
     updateNotebookMaterializedName: (String, AgentNotebookHistoryInfo, String, String) => Thenable[ResultStatus],
     updateNotebookMaterializedPin: (String, AgentNotebookHistoryInfo, String, Boolean) => Thenable[ResultStatus],
     updateOperator: (String, String, AgentOperatorInfo) => Thenable[UpdateAgentOperatorResult],
-    updateProxy: (String, String, AgentProxyInfo) => Thenable[UpdateAgentOperatorResult]
+    updateProxy: (String, String, AgentProxyInfo) => Thenable[UpdateAgentProxyResult]
   ): AgentServicesProvider = {
     val __obj = js.Dynamic.literal(createAlert = js.Any.fromFunction2(createAlert), createJob = js.Any.fromFunction2(createJob), createJobSchedule = js.Any.fromFunction2(createJobSchedule), createJobStep = js.Any.fromFunction2(createJobStep), createNotebook = js.Any.fromFunction3(createNotebook), createOperator = js.Any.fromFunction2(createOperator), createProxy = js.Any.fromFunction2(createProxy), deleteAlert = js.Any.fromFunction2(deleteAlert), deleteJob = js.Any.fromFunction2(deleteJob), deleteJobSchedule = js.Any.fromFunction2(deleteJobSchedule), deleteJobStep = js.Any.fromFunction2(deleteJobStep), deleteMaterializedNotebook = js.Any.fromFunction3(deleteMaterializedNotebook), deleteNotebook = js.Any.fromFunction2(deleteNotebook), deleteOperator = js.Any.fromFunction2(deleteOperator), deleteProxy = js.Any.fromFunction2(deleteProxy), getAlerts = js.Any.fromFunction1(getAlerts), getCredentials = js.Any.fromFunction1(getCredentials), getJobDefaults = js.Any.fromFunction1(getJobDefaults), getJobHistory = js.Any.fromFunction3(getJobHistory), getJobSchedules = js.Any.fromFunction1(getJobSchedules), getJobs = js.Any.fromFunction1(getJobs), getMaterializedNotebook = js.Any.fromFunction3(getMaterializedNotebook), getNotebookHistory = js.Any.fromFunction4(getNotebookHistory), getNotebooks = js.Any.fromFunction1(getNotebooks), getOperators = js.Any.fromFunction1(getOperators), getProxies = js.Any.fromFunction1(getProxies), getTemplateNotebook = js.Any.fromFunction3(getTemplateNotebook), jobAction = js.Any.fromFunction3(jobAction), providerId = providerId.asInstanceOf[js.Any], registerOnUpdated = js.Any.fromFunction1(registerOnUpdated), updateAlert = js.Any.fromFunction3(updateAlert), updateJob = js.Any.fromFunction3(updateJob), updateJobSchedule = js.Any.fromFunction3(updateJobSchedule), updateJobStep = js.Any.fromFunction3(updateJobStep), updateNotebook = js.Any.fromFunction4(updateNotebook), updateNotebookMaterializedName = js.Any.fromFunction4(updateNotebookMaterializedName), updateNotebookMaterializedPin = js.Any.fromFunction4(updateNotebookMaterializedPin), updateOperator = js.Any.fromFunction3(updateOperator), updateProxy = js.Any.fromFunction3(updateProxy))
     __obj.asInstanceOf[AgentServicesProvider]
@@ -170,7 +170,7 @@ object AgentServicesProvider {
     
     inline def setCreateOperator(value: (String, AgentOperatorInfo) => Thenable[CreateAgentOperatorResult]): Self = StObject.set(x, "createOperator", js.Any.fromFunction2(value))
     
-    inline def setCreateProxy(value: (String, AgentProxyInfo) => Thenable[CreateAgentOperatorResult]): Self = StObject.set(x, "createProxy", js.Any.fromFunction2(value))
+    inline def setCreateProxy(value: (String, AgentProxyInfo) => Thenable[CreateAgentProxyResult]): Self = StObject.set(x, "createProxy", js.Any.fromFunction2(value))
     
     inline def setDeleteAlert(value: (String, AgentAlertInfo) => Thenable[ResultStatus]): Self = StObject.set(x, "deleteAlert", js.Any.fromFunction2(value))
     
@@ -232,6 +232,6 @@ object AgentServicesProvider {
     
     inline def setUpdateOperator(value: (String, String, AgentOperatorInfo) => Thenable[UpdateAgentOperatorResult]): Self = StObject.set(x, "updateOperator", js.Any.fromFunction3(value))
     
-    inline def setUpdateProxy(value: (String, String, AgentProxyInfo) => Thenable[UpdateAgentOperatorResult]): Self = StObject.set(x, "updateProxy", js.Any.fromFunction3(value))
+    inline def setUpdateProxy(value: (String, String, AgentProxyInfo) => Thenable[UpdateAgentProxyResult]): Self = StObject.set(x, "updateProxy", js.Any.fromFunction3(value))
   }
 }

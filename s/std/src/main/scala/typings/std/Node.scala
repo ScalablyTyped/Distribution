@@ -1,5 +1,23 @@
 package typings.std
 
+import typings.std.stdInts.`0x01`
+import typings.std.stdInts.`0x02`
+import typings.std.stdInts.`0x04`
+import typings.std.stdInts.`0x08`
+import typings.std.stdInts.`0x10`
+import typings.std.stdInts.`0x20`
+import typings.std.stdInts.`10`
+import typings.std.stdInts.`11`
+import typings.std.stdInts.`12`
+import typings.std.stdInts.`1`
+import typings.std.stdInts.`2`
+import typings.std.stdInts.`3`
+import typings.std.stdInts.`4`
+import typings.std.stdInts.`5`
+import typings.std.stdInts.`6`
+import typings.std.stdInts.`7`
+import typings.std.stdInts.`8`
+import typings.std.stdInts.`9`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,71 +29,71 @@ trait Node
      with EventTarget {
   
   /* standard dom */
-  val ATTRIBUTE_NODE: Double = js.native
+  val ATTRIBUTE_NODE: `2` = js.native
   
   /** node is a CDATASection node. */
   /* standard dom */
-  val CDATA_SECTION_NODE: Double = js.native
+  val CDATA_SECTION_NODE: `4` = js.native
   
   /** node is a Comment node. */
   /* standard dom */
-  val COMMENT_NODE: Double = js.native
+  val COMMENT_NODE: `8` = js.native
   
   /** node is a DocumentFragment node. */
   /* standard dom */
-  val DOCUMENT_FRAGMENT_NODE: Double = js.native
+  val DOCUMENT_FRAGMENT_NODE: `11` = js.native
   
   /** node is a document. */
   /* standard dom */
-  val DOCUMENT_NODE: Double = js.native
+  val DOCUMENT_NODE: `9` = js.native
   
   /** Set when other is a descendant of node. */
   /* standard dom */
-  val DOCUMENT_POSITION_CONTAINED_BY: Double = js.native
+  val DOCUMENT_POSITION_CONTAINED_BY: `0x10` = js.native
   
   /** Set when other is an ancestor of node. */
   /* standard dom */
-  val DOCUMENT_POSITION_CONTAINS: Double = js.native
+  val DOCUMENT_POSITION_CONTAINS: `0x08` = js.native
   
   /** Set when node and other are not in the same tree. */
   /* standard dom */
-  val DOCUMENT_POSITION_DISCONNECTED: Double = js.native
+  val DOCUMENT_POSITION_DISCONNECTED: `0x01` = js.native
   
   /** Set when other is following node. */
   /* standard dom */
-  val DOCUMENT_POSITION_FOLLOWING: Double = js.native
+  val DOCUMENT_POSITION_FOLLOWING: `0x04` = js.native
   
   /* standard dom */
-  val DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC: Double = js.native
+  val DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC: `0x20` = js.native
   
   /** Set when other is preceding node. */
   /* standard dom */
-  val DOCUMENT_POSITION_PRECEDING: Double = js.native
+  val DOCUMENT_POSITION_PRECEDING: `0x02` = js.native
   
   /** node is a doctype. */
   /* standard dom */
-  val DOCUMENT_TYPE_NODE: Double = js.native
+  val DOCUMENT_TYPE_NODE: `10` = js.native
   
   /** node is an element. */
   /* standard dom */
-  val ELEMENT_NODE: Double = js.native
+  val ELEMENT_NODE: `1` = js.native
   
   /* standard dom */
-  val ENTITY_NODE: Double = js.native
+  val ENTITY_NODE: `6` = js.native
   
   /* standard dom */
-  val ENTITY_REFERENCE_NODE: Double = js.native
+  val ENTITY_REFERENCE_NODE: `5` = js.native
   
   /* standard dom */
-  val NOTATION_NODE: Double = js.native
+  val NOTATION_NODE: `12` = js.native
   
   /** node is a ProcessingInstruction node. */
   /* standard dom */
-  val PROCESSING_INSTRUCTION_NODE: Double = js.native
+  val PROCESSING_INSTRUCTION_NODE: `7` = js.native
   
   /** node is a Text node. */
   /* standard dom */
-  val TEXT_NODE: Double = js.native
+  val TEXT_NODE: `3` = js.native
   
   /* standard dom */
   def appendChild[T /* <: Node */](node: T): T = js.native

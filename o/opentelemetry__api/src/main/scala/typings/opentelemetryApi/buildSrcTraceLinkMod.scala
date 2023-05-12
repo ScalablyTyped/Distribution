@@ -15,6 +15,9 @@ object buildSrcTraceLinkMod {
     
     /** The {@link SpanContext} of a linked span. */
     var context: SpanContext
+    
+    /** Count of attributes of the link that were dropped due to collection limits */
+    var droppedAttributesCount: js.UndefOr[Double] = js.undefined
   }
   object Link {
     
@@ -31,6 +34,10 @@ object buildSrcTraceLinkMod {
       inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
       
       inline def setContext(value: SpanContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      
+      inline def setDroppedAttributesCount(value: Double): Self = StObject.set(x, "droppedAttributesCount", value.asInstanceOf[js.Any])
+      
+      inline def setDroppedAttributesCountUndefined: Self = StObject.set(x, "droppedAttributesCount", js.undefined)
     }
   }
 }

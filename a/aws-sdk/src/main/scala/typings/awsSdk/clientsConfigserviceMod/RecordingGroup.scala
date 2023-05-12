@@ -17,7 +17,7 @@ trait RecordingGroup extends StObject {
   var includeGlobalResourceTypes: js.UndefOr[IncludeGlobalResourceTypes] = js.undefined
   
   /**
-    * A comma-separated list that specifies the types of Amazon Web Services resources for which Config records configuration changes (for example, AWS::EC2::Instance or AWS::CloudTrail::Trail). To record all configuration changes, you must set the allSupported option to true. If you set this option to false, when Config adds support for a new type of resource, it will not record resources of that type unless you manually add that type to your recording group. For a list of valid resourceTypes values, see the resourceType Value column in Supported Amazon Web Services resource Types.
+    * A comma-separated list that specifies the types of Amazon Web Services resources for which Config records configuration changes (for example, AWS::EC2::Instance or AWS::CloudTrail::Trail). To record all configuration changes, you must set the allSupported option to true. If you set the AllSupported option to false and populate the ResourceTypes option with values, when Config adds support for a new type of resource, it will not record resources of that type unless you manually add that type to your recording group. For a list of valid resourceTypes values, see the resourceType Value column in Supported Amazon Web Services resource Types.
     */
   var resourceTypes: js.UndefOr[ResourceTypeList] = js.undefined
 }

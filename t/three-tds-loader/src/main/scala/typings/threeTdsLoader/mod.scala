@@ -8,6 +8,7 @@ import typings.three.mod.Mesh
 import typings.three.mod.Object3D
 import typings.three.mod.Texture
 import typings.three.srcCoreBufferGeometryMod.BufferGeometry
+import typings.three.srcCoreBufferGeometryMod.NormalBufferAttributes
 import typings.three.srcCoreEventDispatcherMod.Event
 import typings.three.srcMaterialsMaterialMod.Material
 import typings.threeTdsLoader.anon.TypeofTHREE
@@ -126,7 +127,10 @@ object mod {
       * @param data Dataview in use.
       * @param mesh Mesh to be filled with the data read.
       */
-    def readFaceArray(data: js.typedarray.DataView, mesh: Mesh[BufferGeometry, Material | js.Array[Material]]): Unit = js.native
+    def readFaceArray(
+      data: js.typedarray.DataView,
+      mesh: Mesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]]
+    ): Unit = js.native
     
     /**
       * Decode file content to read 3ds data.

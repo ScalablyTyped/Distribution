@@ -12,6 +12,9 @@ object babylonjsAbstractSceneAugmentingMod {
   trait AbstractScene extends StObject {
     
     /** @internal (Backing field) */
+    var _fluidRenderer: Nullable[typings.babylonjs.renderingFluidRendererFluidRendererMod.FluidRenderer]
+    
+    /** @internal (Backing field) */
     var _prePassRenderer: Nullable[typings.babylonjs.renderingPrePassRendererMod.PrePassRenderer]
     
     /** @internal (Backing field) */
@@ -36,6 +39,11 @@ object babylonjsAbstractSceneAugmentingMod {
     def addReflectionProbe(newReflectionProbe: typings.babylonjs.probesReflectionProbeMod.ReflectionProbe): Unit
     
     /**
+      * Disables the fluid renderer associated with the scene
+      */
+    def disableFluidRenderer(): Unit
+    
+    /**
       * Disables the prepass associated with the scene
       */
     def disablePrePassRenderer(): Unit
@@ -47,10 +55,16 @@ object babylonjsAbstractSceneAugmentingMod {
     
     /**
       * The list of effect layers (highlights/glow) added to the scene
-      * @see https://doc.babylonjs.com/how_to/highlight_layer
-      * @see https://doc.babylonjs.com/how_to/glow_layer
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/mesh/highlightLayer
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/mesh/glowLayer
       */
     var effectLayers: js.Array[typings.babylonjs.layersEffectLayerMod.EffectLayer]
+    
+    /**
+      * Enables the fluid renderer and associates it with the scene
+      * @returns the FluidRenderer
+      */
+    def enableFluidRenderer(): Nullable[typings.babylonjs.renderingFluidRendererFluidRendererMod.FluidRenderer]
     
     /**
       * Enables the prepass and associates it with the scene
@@ -65,9 +79,14 @@ object babylonjsAbstractSceneAugmentingMod {
     def enableSubSurfaceForPrePass(): Nullable[SubSurfaceConfiguration]
     
     /**
-      * Return a the first highlight layer of the scene with a given name.
-      * @param name The name of the highlight layer to look for.
-      * @returns The highlight layer if found otherwise null.
+      * Gets or Sets the fluid renderer associated to the scene.
+      */
+    var fluidRenderer: Nullable[typings.babylonjs.renderingFluidRendererFluidRendererMod.FluidRenderer]
+    
+    /**
+      * Return the first glow layer of the scene with a given name.
+      * @param name The name of the glow layer to look for.
+      * @returns The glow layer if found otherwise null.
       */
     def getGlowLayerByName(name: String): Nullable[typings.babylonjs.layersGlowLayerMod.GlowLayer]
     
@@ -107,7 +126,7 @@ object babylonjsAbstractSceneAugmentingMod {
     
     /**
       * The list of lens flare system added to the scene
-      * @see https://doc.babylonjs.com/how_to/how_to_use_lens_flares
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/environment/lenseFlare
       */
     var lensFlareSystems: js.Array[typings.babylonjs.lensFlaresLensFlareSystemMod.LensFlareSystem]
     
@@ -118,7 +137,7 @@ object babylonjsAbstractSceneAugmentingMod {
     
     /**
       * The list of procedural textures added to the scene
-      * @see https://doc.babylonjs.com/how_to/how_to_use_procedural_textures
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/materials/using/proceduralTextures
       */
     var proceduralTextures: js.Array[
         typings.babylonjs.materialsTexturesProceduralsProceduralTextureMod.ProceduralTexture
@@ -126,7 +145,7 @@ object babylonjsAbstractSceneAugmentingMod {
     
     /**
       * The list of reflection probes added to the scene
-      * @see https://doc.babylonjs.com/how_to/how_to_use_reflection_probes
+      * @see https://doc.babylonjs.com/features/featuresDeepDive/environment/reflectionProbes
       */
     var reflectionProbes: js.Array[typings.babylonjs.probesReflectionProbeMod.ReflectionProbe]
     
@@ -167,9 +186,11 @@ object babylonjsAbstractSceneAugmentingMod {
       addEffectLayer: typings.babylonjs.layersEffectLayerMod.EffectLayer => Unit,
       addLensFlareSystem: typings.babylonjs.lensFlaresLensFlareSystemMod.LensFlareSystem => Unit,
       addReflectionProbe: typings.babylonjs.probesReflectionProbeMod.ReflectionProbe => Unit,
+      disableFluidRenderer: () => Unit,
       disablePrePassRenderer: () => Unit,
       disableSubSurfaceForPrePass: () => Unit,
       effectLayers: js.Array[typings.babylonjs.layersEffectLayerMod.EffectLayer],
+      enableFluidRenderer: () => Nullable[typings.babylonjs.renderingFluidRendererFluidRendererMod.FluidRenderer],
       enablePrePassRenderer: () => Nullable[typings.babylonjs.renderingPrePassRendererMod.PrePassRenderer],
       enableSubSurfaceForPrePass: () => Nullable[SubSurfaceConfiguration],
       getGlowLayerByName: String => Nullable[typings.babylonjs.layersGlowLayerMod.GlowLayer],
@@ -187,7 +208,7 @@ object babylonjsAbstractSceneAugmentingMod {
       removeLensFlareSystem: typings.babylonjs.lensFlaresLensFlareSystemMod.LensFlareSystem => Double,
       removeReflectionProbe: typings.babylonjs.probesReflectionProbeMod.ReflectionProbe => Double
     ): typings.babylonjs.legacyLegacyMod.babylonjsAbstractSceneAugmentingMod.AbstractScene = {
-      val __obj = js.Dynamic.literal(addEffectLayer = js.Any.fromFunction1(addEffectLayer), addLensFlareSystem = js.Any.fromFunction1(addLensFlareSystem), addReflectionProbe = js.Any.fromFunction1(addReflectionProbe), disablePrePassRenderer = js.Any.fromFunction0(disablePrePassRenderer), disableSubSurfaceForPrePass = js.Any.fromFunction0(disableSubSurfaceForPrePass), effectLayers = effectLayers.asInstanceOf[js.Any], enablePrePassRenderer = js.Any.fromFunction0(enablePrePassRenderer), enableSubSurfaceForPrePass = js.Any.fromFunction0(enableSubSurfaceForPrePass), getGlowLayerByName = js.Any.fromFunction1(getGlowLayerByName), getHighlightLayerByName = js.Any.fromFunction1(getHighlightLayerByName), getLensFlareSystemByID = js.Any.fromFunction1(getLensFlareSystemByID), getLensFlareSystemById = js.Any.fromFunction1(getLensFlareSystemById), getLensFlareSystemByName = js.Any.fromFunction1(getLensFlareSystemByName), layers = layers.asInstanceOf[js.Any], lensFlareSystems = lensFlareSystems.asInstanceOf[js.Any], proceduralTextures = proceduralTextures.asInstanceOf[js.Any], reflectionProbes = reflectionProbes.asInstanceOf[js.Any], removeEffectLayer = js.Any.fromFunction1(removeEffectLayer), removeLensFlareSystem = js.Any.fromFunction1(removeLensFlareSystem), removeReflectionProbe = js.Any.fromFunction1(removeReflectionProbe), _prePassRenderer = null, _subSurfaceConfiguration = null, prePassRenderer = null, sounds = null, subSurfaceConfiguration = null)
+      val __obj = js.Dynamic.literal(addEffectLayer = js.Any.fromFunction1(addEffectLayer), addLensFlareSystem = js.Any.fromFunction1(addLensFlareSystem), addReflectionProbe = js.Any.fromFunction1(addReflectionProbe), disableFluidRenderer = js.Any.fromFunction0(disableFluidRenderer), disablePrePassRenderer = js.Any.fromFunction0(disablePrePassRenderer), disableSubSurfaceForPrePass = js.Any.fromFunction0(disableSubSurfaceForPrePass), effectLayers = effectLayers.asInstanceOf[js.Any], enableFluidRenderer = js.Any.fromFunction0(enableFluidRenderer), enablePrePassRenderer = js.Any.fromFunction0(enablePrePassRenderer), enableSubSurfaceForPrePass = js.Any.fromFunction0(enableSubSurfaceForPrePass), getGlowLayerByName = js.Any.fromFunction1(getGlowLayerByName), getHighlightLayerByName = js.Any.fromFunction1(getHighlightLayerByName), getLensFlareSystemByID = js.Any.fromFunction1(getLensFlareSystemByID), getLensFlareSystemById = js.Any.fromFunction1(getLensFlareSystemById), getLensFlareSystemByName = js.Any.fromFunction1(getLensFlareSystemByName), layers = layers.asInstanceOf[js.Any], lensFlareSystems = lensFlareSystems.asInstanceOf[js.Any], proceduralTextures = proceduralTextures.asInstanceOf[js.Any], reflectionProbes = reflectionProbes.asInstanceOf[js.Any], removeEffectLayer = js.Any.fromFunction1(removeEffectLayer), removeLensFlareSystem = js.Any.fromFunction1(removeLensFlareSystem), removeReflectionProbe = js.Any.fromFunction1(removeReflectionProbe), _fluidRenderer = null, _prePassRenderer = null, _subSurfaceConfiguration = null, fluidRenderer = null, prePassRenderer = null, sounds = null, subSurfaceConfiguration = null)
       __obj.asInstanceOf[typings.babylonjs.legacyLegacyMod.babylonjsAbstractSceneAugmentingMod.AbstractScene]
     }
     
@@ -200,6 +221,8 @@ object babylonjsAbstractSceneAugmentingMod {
       
       inline def setAddReflectionProbe(value: typings.babylonjs.probesReflectionProbeMod.ReflectionProbe => Unit): Self = StObject.set(x, "addReflectionProbe", js.Any.fromFunction1(value))
       
+      inline def setDisableFluidRenderer(value: () => Unit): Self = StObject.set(x, "disableFluidRenderer", js.Any.fromFunction0(value))
+      
       inline def setDisablePrePassRenderer(value: () => Unit): Self = StObject.set(x, "disablePrePassRenderer", js.Any.fromFunction0(value))
       
       inline def setDisableSubSurfaceForPrePass(value: () => Unit): Self = StObject.set(x, "disableSubSurfaceForPrePass", js.Any.fromFunction0(value))
@@ -208,9 +231,15 @@ object babylonjsAbstractSceneAugmentingMod {
       
       inline def setEffectLayersVarargs(value: typings.babylonjs.layersEffectLayerMod.EffectLayer*): Self = StObject.set(x, "effectLayers", js.Array(value*))
       
+      inline def setEnableFluidRenderer(value: () => Nullable[typings.babylonjs.renderingFluidRendererFluidRendererMod.FluidRenderer]): Self = StObject.set(x, "enableFluidRenderer", js.Any.fromFunction0(value))
+      
       inline def setEnablePrePassRenderer(value: () => Nullable[typings.babylonjs.renderingPrePassRendererMod.PrePassRenderer]): Self = StObject.set(x, "enablePrePassRenderer", js.Any.fromFunction0(value))
       
       inline def setEnableSubSurfaceForPrePass(value: () => Nullable[SubSurfaceConfiguration]): Self = StObject.set(x, "enableSubSurfaceForPrePass", js.Any.fromFunction0(value))
+      
+      inline def setFluidRenderer(value: Nullable[typings.babylonjs.renderingFluidRendererFluidRendererMod.FluidRenderer]): Self = StObject.set(x, "fluidRenderer", value.asInstanceOf[js.Any])
+      
+      inline def setFluidRendererNull: Self = StObject.set(x, "fluidRenderer", null)
       
       inline def setGetGlowLayerByName(value: String => Nullable[typings.babylonjs.layersGlowLayerMod.GlowLayer]): Self = StObject.set(x, "getGlowLayerByName", js.Any.fromFunction1(value))
       
@@ -259,6 +288,10 @@ object babylonjsAbstractSceneAugmentingMod {
       inline def setSubSurfaceConfiguration(value: Nullable[SubSurfaceConfiguration]): Self = StObject.set(x, "subSurfaceConfiguration", value.asInstanceOf[js.Any])
       
       inline def setSubSurfaceConfigurationNull: Self = StObject.set(x, "subSurfaceConfiguration", null)
+      
+      inline def set_fluidRenderer(value: Nullable[typings.babylonjs.renderingFluidRendererFluidRendererMod.FluidRenderer]): Self = StObject.set(x, "_fluidRenderer", value.asInstanceOf[js.Any])
+      
+      inline def set_fluidRendererNull: Self = StObject.set(x, "_fluidRenderer", null)
       
       inline def set_prePassRenderer(value: Nullable[typings.babylonjs.renderingPrePassRendererMod.PrePassRenderer]): Self = StObject.set(x, "_prePassRenderer", value.asInstanceOf[js.Any])
       

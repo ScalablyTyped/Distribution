@@ -1,5 +1,9 @@
 package typings.std
 
+import typings.std.stdInts.`0`
+import typings.std.stdInts.`1`
+import typings.std.stdInts.`2`
+import typings.std.stdInts.`3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,16 +18,16 @@ trait HTMLTrackElement
   var default: scala.Boolean = js.native
   
   /* standard dom */
-  val ERROR: Double = js.native
+  val ERROR: `3` = js.native
   
   /* standard dom */
-  val LOADED: Double = js.native
+  val LOADED: `2` = js.native
   
   /* standard dom */
-  val LOADING: Double = js.native
+  val LOADING: `1` = js.native
   
   /* standard dom */
-  val NONE: Double = js.native
+  val NONE: `0` = js.native
   
   /* InferMemberOverrides */
   override def addEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject): Unit = js.native

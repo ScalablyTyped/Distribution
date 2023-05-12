@@ -32,6 +32,10 @@ open class Report ()
   /** Report tracesPerQuery. */
   @JSName("tracesPerQuery")
   var tracesPerQuery_Report: StringDictionary[ITracesAndStats] = js.native
+  
+  /** Report tracesPreAggregated. */
+  @JSName("tracesPreAggregated")
+  var tracesPreAggregated_Report: Boolean = js.native
 }
 /* static members */
 object Report {

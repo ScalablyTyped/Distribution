@@ -6,16 +6,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait EnvironmentnameString extends StObject {
   
-  /** The name of the environment. */
   var environment_name: String
   
-  /** The unique identifier of the repository. */
-  var repository_id: Double
+  var owner: String
+  
+  var repo: String
 }
 object EnvironmentnameString {
   
-  inline def apply(environment_name: String, repository_id: Double): EnvironmentnameString = {
-    val __obj = js.Dynamic.literal(environment_name = environment_name.asInstanceOf[js.Any], repository_id = repository_id.asInstanceOf[js.Any])
+  inline def apply(environment_name: String, owner: String, repo: String): EnvironmentnameString = {
+    val __obj = js.Dynamic.literal(environment_name = environment_name.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnvironmentnameString]
   }
   
@@ -24,6 +24,8 @@ object EnvironmentnameString {
     
     inline def setEnvironment_name(value: String): Self = StObject.set(x, "environment_name", value.asInstanceOf[js.Any])
     
-    inline def setRepository_id(value: Double): Self = StObject.set(x, "repository_id", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    
+    inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
   }
 }

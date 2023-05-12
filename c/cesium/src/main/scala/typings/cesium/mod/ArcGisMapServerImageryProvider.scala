@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("cesium", "ArcGisMapServerImageryProvider")
 @js.native
-open class ArcGisMapServerImageryProvider protected () extends StObject {
+open class ArcGisMapServerImageryProvider () extends StObject {
   def this(options: ConstructorOptions) = this()
   
   /**
@@ -111,21 +111,19 @@ open class ArcGisMapServerImageryProvider protected () extends StObject {
   var layers: String = js.native
   
   /**
-    * Gets the maximum level-of-detail that can be requested.  This function should
-    * not be called before {@link ArcGisMapServerImageryProvider#ready} returns true.
+    * Gets the maximum level-of-detail that can be requested.
     */
   val maximumLevel: js.UndefOr[Double] = js.native
   
   /**
-    * Gets the minimum level-of-detail that can be requested.  This function should
-    * not be called before {@link ArcGisMapServerImageryProvider#ready} returns true.
+    * Gets the minimum level-of-detail that can be requested.
     */
   val minimumLevel: Double = js.native
   
   /**
     * / **
     * Asynchronously determines what features, if any, are located at a given longitude and latitude within
-    * a tile.  This function should not be called before {@link ImageryProvider#ready} returns true.
+    * a tile.
     * @param x - The tile X coordinate.
     * @param y - The tile Y coordinate.
     * @param level - The tile level.
@@ -153,14 +151,12 @@ open class ArcGisMapServerImageryProvider protected () extends StObject {
   val readyPromise: js.Promise[Boolean] = js.native
   
   /**
-    * Gets the rectangle, in radians, of the imagery provided by this instance.  This function should
-    * not be called before {@link ArcGisMapServerImageryProvider#ready} returns true.
+    * Gets the rectangle, in radians, of the imagery provided by this instance.
     */
   val rectangle: Rectangle = js.native
   
   /**
-    * Requests the image for a given tile.  This function should
-    * not be called before {@link ArcGisMapServerImageryProvider#ready} returns true.
+    * Requests the image for a given tile.
     * @param x - The tile X coordinate.
     * @param y - The tile Y coordinate.
     * @param level - The tile level.
@@ -174,26 +170,22 @@ open class ArcGisMapServerImageryProvider protected () extends StObject {
   /**
     * Gets the tile discard policy.  If not undefined, the discard policy is responsible
     * for filtering out "missing" tiles via its shouldDiscardImage function.  If this function
-    * returns undefined, no tiles are filtered.  This function should
-    * not be called before {@link ArcGisMapServerImageryProvider#ready} returns true.
+    * returns undefined, no tiles are filtered.
     */
   val tileDiscardPolicy: TileDiscardPolicy = js.native
   
   /**
-    * Gets the height of each tile, in pixels.  This function should
-    * not be called before {@link ArcGisMapServerImageryProvider#ready} returns true.
+    * Gets the height of each tile, in pixels.
     */
   val tileHeight: Double = js.native
   
   /**
-    * Gets the width of each tile, in pixels. This function should
-    * not be called before {@link ArcGisMapServerImageryProvider#ready} returns true.
+    * Gets the width of each tile, in pixels.
     */
   val tileWidth: Double = js.native
   
   /**
-    * Gets the tiling scheme used by this provider.  This function should
-    * not be called before {@link ArcGisMapServerImageryProvider#ready} returns true.
+    * Gets the tiling scheme used by this provider.
     */
   val tilingScheme: TilingScheme = js.native
   
@@ -209,18 +201,64 @@ open class ArcGisMapServerImageryProvider protected () extends StObject {
   
   /**
     * Gets a value indicating whether this imagery provider is using pre-cached tiles from the
-    * ArcGIS MapServer.  If the imagery provider is not yet ready ({@link ArcGisMapServerImageryProvider#ready}), this function
-    * will return the value of `options.usePreCachedTilesIfAvailable`, even if the MapServer does
-    * not have pre-cached tiles.
+    * ArcGIS MapServer.
     */
   val usingPrecachedTiles: Boolean = js.native
 }
+/* static members */
 object ArcGisMapServerImageryProvider {
+  
+  @JSImport("cesium", "ArcGisMapServerImageryProvider")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /**
+    * Creates an {@link ImageryProvider} which provides tiled imagery from an ArcGIS base map.
+    * @example
+    * // Set the default access token for accessing ArcGIS Image Tile service
+    * Cesium.ArcGisMapService.defaultAccessToken = "<ArcGIS Access Token>";
+    *
+    * // Add a base layer from a default ArcGIS basemap
+    * const provider = await Cesium.ArcGisMapServerImageryProvider.fromBasemapType(
+    *   Cesium.ArcGisBaseMapType.SATELLITE);
+    * @example
+    * // Add a base layer from a default ArcGIS Basemap
+    * const viewer = new Cesium.Viewer("cesiumContainer", {
+    *   baseLayer: Cesium.ImageryLayer.fromProviderAsync(
+    *     Cesium.ArcGisMapServerImageryProvider.fromBasemapType(
+    *       Cesium.ArcGisBaseMapType.HILLSHADE, {
+    *         token: "<ArcGIS Access Token>"
+    *       }
+    *     )
+    *   ),
+    * });
+    * @param style - The style of the ArcGIS base map imagery. Valid options are {@link ArcGisBaseMapType.SATELLITE}, {@link ArcGisBaseMapType.OCEANS}, and {@link ArcGisBaseMapType.HILLSHADE}.
+    * @param [options] - Object describing initialization options.
+    * @returns A promise that resolves to the created ArcGisMapServerImageryProvider.
+    */
+  inline def fromBasemapType(style: ArcGisBaseMapType): js.Promise[ArcGisMapServerImageryProvider] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBasemapType")(style.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ArcGisMapServerImageryProvider]]
+  inline def fromBasemapType(style: ArcGisBaseMapType, options: ConstructorOptions): js.Promise[ArcGisMapServerImageryProvider] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBasemapType")(style.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ArcGisMapServerImageryProvider]]
+  
+  inline def fromUrl(url: String): js.Promise[ArcGisMapServerImageryProvider] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromUrl")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ArcGisMapServerImageryProvider]]
+  inline def fromUrl(url: String, options: ConstructorOptions): js.Promise[ArcGisMapServerImageryProvider] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromUrl")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ArcGisMapServerImageryProvider]]
+  /**
+    * Creates an {@link ImageryProvider} which provides tiled imagery hosted by an ArcGIS MapServer.  By default, the server's pre-cached tiles are
+    * used, if available.
+    * @example
+    * const esri = await Cesium.ArcGisMapServerImageryProvider.fromUrl(
+    *     "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer"
+    * );
+    * @param url - The URL of the ArcGIS MapServer service.
+    * @param [options] - Object describing initialization options.
+    * @returns A promise that resolves to the created ArcGisMapServerImageryProvider.
+    */
+  inline def fromUrl(url: Resource): js.Promise[ArcGisMapServerImageryProvider] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromUrl")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ArcGisMapServerImageryProvider]]
+  inline def fromUrl(url: Resource, options: ConstructorOptions): js.Promise[ArcGisMapServerImageryProvider] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromUrl")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ArcGisMapServerImageryProvider]]
   
   /**
     * Initialization options for the ArcGisMapServerImageryProvider constructor
-    * @property url - The URL of the ArcGIS MapServer service.
-    * @property [token] - The ArcGIS token used to authenticate with the ArcGIS MapServer service.
+    * @property [url] - The URL of the ArcGIS MapServer service. Deprecated.
+    * @property [token] - The ArcGIS token used to authenticate with the ArcGIS MapServer service. Deprecated.
     * @property [tileDiscardPolicy] - The policy that determines if a tile
     *        is invalid and should be discarded.  If this value is not specified, a default
     *        {@link DiscardMissingTileImagePolicy} is used for tiled map servers, and a
@@ -233,8 +271,7 @@ object ArcGisMapServerImageryProvider {
     *        that no tiles are discarded, construct and pass a {@link NeverTileDiscardPolicy} for this
     *        parameter.
     * @property [usePreCachedTilesIfAvailable = true] - If true, the server's pre-cached
-    *        tiles are used if they are available.  If false, any pre-cached tiles are ignored and the
-    *        'export' service is used.
+    *        tiles are used if they are available. Exporting Tiles is only supported with deprecated APIs.
     * @property [layers] - A comma-separated list of the layers to show, or undefined if all layers should be shown.
     * @property [enablePickFeatures = true] - If true, {@link ArcGisMapServerImageryProvider#pickFeatures} will invoke
     *        the Identify service on the MapServer and return the features included in the response.  If false,
@@ -278,14 +315,14 @@ object ArcGisMapServerImageryProvider {
     
     var token: js.UndefOr[String] = js.undefined
     
-    var url: Resource | String
+    var url: js.UndefOr[Resource | String] = js.undefined
     
     var usePreCachedTilesIfAvailable: js.UndefOr[Boolean] = js.undefined
   }
   object ConstructorOptions {
     
-    inline def apply(url: Resource | String): ConstructorOptions = {
-      val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
+    inline def apply(): ConstructorOptions = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConstructorOptions]
     }
     
@@ -337,6 +374,8 @@ object ArcGisMapServerImageryProvider {
       inline def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
       
       inline def setUrl(value: Resource | String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
       
       inline def setUsePreCachedTilesIfAvailable(value: Boolean): Self = StObject.set(x, "usePreCachedTilesIfAvailable", value.asInstanceOf[js.Any])
       

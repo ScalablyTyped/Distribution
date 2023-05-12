@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "vue-router" : "4.1.6"
+      "vue-router" : "4.2.0"
     }
   ],
   "test-dependencies" : [
     {
-      "vue-router" : "4.1.6"
+      "vue-router" : "4.2.0"
     }
   ],
   "compile-devDependencies" : [

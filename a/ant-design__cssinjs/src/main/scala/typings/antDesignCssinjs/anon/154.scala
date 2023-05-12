@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.BoxDecorationBreak
+import typings.csstype.mod.Property.TransformStyle
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,11 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `154` extends StObject {
   
   var value: js.UndefOr[
-    BoxDecorationBreak | (js.Array[
+    TransformStyle | (js.Array[
       (Extract[
-        js.UndefOr[BoxDecorationBreak | js.Array[NonNullable[js.UndefOr[BoxDecorationBreak]]]], 
+        js.UndefOr[TransformStyle | js.Array[NonNullable[js.UndefOr[TransformStyle]]]], 
         String
-      ]) | NonNullable[js.UndefOr[BoxDecorationBreak]]
+      ]) | NonNullable[js.UndefOr[TransformStyle]]
     ])
   ] = js.native
 }

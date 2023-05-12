@@ -68,7 +68,6 @@ object vpnProvider {
     * The extension is not guaranteed to receive this event prior to suspending.
     * **'resume'**
     * The OS has resumed and the user has logged back in, so the VPN should try to reconnect.
-    * @enum
     */
   object PlatformMessage {
     
@@ -124,7 +123,6 @@ object vpnProvider {
     * Request the VPN client to show add configuration dialog to the user.
     * **'showConfigureDialog'**
     * Request the VPN client to show configuration settings dialog to the user.
-    * @enum
     */
   object UIEvent {
     
@@ -151,7 +149,6 @@ object vpnProvider {
     * VPN connection was successful.
     * **'failure'**
     * VPN connection failed.
-    * @enum
     */
   object VpnConnectionState {
     

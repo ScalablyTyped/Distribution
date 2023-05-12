@@ -31,22 +31,32 @@ object distTypesJtdSchemaMod {
     */
   type IsElements[T] = `false`
   
+  /** true if type represents an empty record */
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+    * TS definition: {{{
+    [T] extends [std.Record<string, never>] ? [T] extends [never] ? false : true : false
+    }}}
+    */
+  type IsEmptyRecord[T] = `false`
+  
   /** true if type is a union of string literals */
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
     * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
-    null extends ajv.ajv/dist/types/jtd-schema.EnumString<std.Exclude<T, null>> ? false : true
+    null extends ajv.ajv/dist/types/jtd-schema.EnumString<T> ? false : true
     }}}
     */
   type IsEnum[T] = `false`
   
-  /** true if type is a proeprties type and Union is false, or type is a discriminator type and Union is true */
+  /** true if type is a properties type and Union is false, or type is a discriminator type and Union is true */
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
     * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
-    Union extends ajv.ajv/dist/types/jtd-schema.IsUnion<std.Exclude<T, null>> ? null extends ajv.ajv/dist/types/jtd-schema.EnumString<keyof std.Exclude<T, null>> ? false : true : false
+    Union extends ajv.ajv/dist/types/jtd-schema.IsUnion<T> ? null extends ajv.ajv/dist/types/jtd-schema.EnumString<keyof T> ? false : true : false
     }}}
     */
   type IsRecord[T, Union /* <: Boolean */] = `false`
@@ -68,7 +78,7 @@ object distTypesJtdSchemaMod {
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
     * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
-    false extends ajv.ajv/dist/types/jtd-schema.IsUnion<std.Exclude<T, null>> ? ajv.ajv/dist/types/jtd-schema.TypeEquality<keyof std.Exclude<T, null>, string> : false
+    false extends ajv.ajv/dist/types/jtd-schema.IsUnion<T> ? ajv.ajv/dist/types/jtd-schema.TypeEquality<keyof T, string> : false
     }}}
     */
   type IsValues[T] = `true`

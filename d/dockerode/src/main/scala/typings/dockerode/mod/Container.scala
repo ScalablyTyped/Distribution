@@ -17,8 +17,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class Container protected () extends StObject {
   def this(modem: Any, id: String) = this()
   
-  def attach(options: js.Object): js.Promise[ReadWriteStream] = js.native
-  def attach(options: js.Object, callback: Callback[ReadWriteStream]): Unit = js.native
+  def attach(options: ContainerAttachOptions): js.Promise[ReadWriteStream] = js.native
+  def attach(options: ContainerAttachOptions, callback: Callback[ReadWriteStream]): Unit = js.native
   
   def changes(): js.Promise[Any] = js.native
   def changes(callback: Callback[Any]): Unit = js.native
@@ -118,8 +118,8 @@ open class Container protected () extends StObject {
   
   def stop(): js.Promise[Any] = js.native
   def stop(callback: Callback[Any]): Unit = js.native
-  def stop(options: js.Object): js.Promise[Any] = js.native
-  def stop(options: js.Object, callback: Callback[Any]): Unit = js.native
+  def stop(options: ContainerStopOptions): js.Promise[Any] = js.native
+  def stop(options: ContainerStopOptions, callback: Callback[Any]): Unit = js.native
   
   def top(): js.Promise[Any] = js.native
   def top(callback: Callback[Any]): Unit = js.native

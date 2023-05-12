@@ -1,10 +1,13 @@
 package typings.angularCli.libConfigWorkspaceSchemaMod
 
+import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SchematicOptions extends StObject {
+trait SchematicOptions
+  extends StObject
+     with /* property */ StringDictionary[Any] {
   
   @JSName("@schematics/angular:application")
   var `@schematicsSlashangularColonapplication`: js.UndefOr[AngularApplicationOptionsSchema] = js.undefined

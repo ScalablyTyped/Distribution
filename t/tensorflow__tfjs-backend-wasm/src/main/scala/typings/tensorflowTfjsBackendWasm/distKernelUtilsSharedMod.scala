@@ -1,5 +1,6 @@
 package typings.tensorflowTfjsBackendWasm
 
+import typings.tensorflowTfjsBackendCpu.anon.Indices
 import typings.tensorflowTfjsBackendCpu.anon.Shape
 import typings.tensorflowTfjsBackendWasm.tensorflowTfjsBackendWasmStrings.float32
 import typings.tensorflowTfjsBackendWasm.tensorflowTfjsBackendWasmStrings.int32
@@ -42,4 +43,6 @@ object distKernelUtilsSharedMod {
   inline def stringSplitImplCPU(input: js.Array[js.typedarray.Uint8Array], delimiter: js.typedarray.Uint8Array, skipEmpty: Boolean): js.Tuple3[TypedArray, js.Array[js.typedarray.Uint8Array], js.Tuple2[Double, Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("stringSplitImplCPU")(input.asInstanceOf[js.Any], delimiter.asInstanceOf[js.Any], skipEmpty.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[TypedArray, js.Array[js.typedarray.Uint8Array], js.Tuple2[Double, Double]]]
   
   inline def stringToHashBucketFastImplCPU(input: js.Array[js.typedarray.Uint8Array], numBuckets: Double): TypedArray = (^.asInstanceOf[js.Dynamic].applyDynamic("stringToHashBucketFastImplCPU")(input.asInstanceOf[js.Any], numBuckets.asInstanceOf[js.Any])).asInstanceOf[TypedArray]
+  
+  inline def uniqueImplCPU(values: BackendValues, axis: Double, shape: js.Array[Double], dtype: DataType): Indices = (^.asInstanceOf[js.Dynamic].applyDynamic("uniqueImplCPU")(values.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Indices]
 }

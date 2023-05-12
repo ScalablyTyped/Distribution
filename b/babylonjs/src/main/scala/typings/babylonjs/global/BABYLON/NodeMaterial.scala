@@ -27,6 +27,42 @@ open class NodeMaterial protected ()
     */
   /* CompleteClass */
   var animations: Nullable[js.Array[typings.babylonjs.BABYLON.Animation]] = js.native
+  
+  /**
+    * Gets or sets the active clipplane 1
+    */
+  /* CompleteClass */
+  var clipPlane: Nullable[typings.babylonjs.BABYLON.Plane] = js.native
+  
+  /**
+    * Gets or sets the active clipplane 2
+    */
+  /* CompleteClass */
+  var clipPlane2: Nullable[typings.babylonjs.BABYLON.Plane] = js.native
+  
+  /**
+    * Gets or sets the active clipplane 3
+    */
+  /* CompleteClass */
+  var clipPlane3: Nullable[typings.babylonjs.BABYLON.Plane] = js.native
+  
+  /**
+    * Gets or sets the active clipplane 4
+    */
+  /* CompleteClass */
+  var clipPlane4: Nullable[typings.babylonjs.BABYLON.Plane] = js.native
+  
+  /**
+    * Gets or sets the active clipplane 5
+    */
+  /* CompleteClass */
+  var clipPlane5: Nullable[typings.babylonjs.BABYLON.Plane] = js.native
+  
+  /**
+    * Gets or sets the active clipplane 6
+    */
+  /* CompleteClass */
+  var clipPlane6: Nullable[typings.babylonjs.BABYLON.Plane] = js.native
 }
 /* static members */
 object NodeMaterial {
@@ -212,6 +248,13 @@ object NodeMaterial {
   @js.native
   def SnippetUrl: String = js.native
   inline def SnippetUrl_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SnippetUrl")(x.asInstanceOf[js.Any])
+  
+  /**
+    * Checks if a block is a texture block
+    * @param block The block to check
+    * @returns True if the block is a texture block
+    */
+  inline def _BlockIsTextureBlock(block: typings.babylonjs.BABYLON.NodeMaterialBlock): /* is babylonjs.BABYLON.NodeMaterialTextureBlocks */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("_BlockIsTextureBlock")(block.asInstanceOf[js.Any]).asInstanceOf[/* is babylonjs.BABYLON.NodeMaterialTextureBlocks */ Boolean]
   
   @JSGlobal("BABYLON.NodeMaterial._BuildIdGenerator")
   @js.native

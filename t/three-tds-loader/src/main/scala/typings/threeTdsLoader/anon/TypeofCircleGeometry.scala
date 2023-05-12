@@ -11,5 +11,6 @@ trait TypeofCircleGeometry
   extends StObject
      with Instantiable0[CircleGeometry] {
   
-  def fromJSON(data: Any): typings.three.srcGeometriesCircleGeometryMod.CircleGeometry = js.native
+  /** @internal */
+  def fromJSON(data: js.Object): typings.three.srcGeometriesCircleGeometryMod.CircleGeometry = js.native
 }

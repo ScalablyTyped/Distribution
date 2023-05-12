@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Block extends StObject {
   
   /**
-    * The type of text item that's recognized. In operations for text detection, the following types are returned:    PAGE - Contains a list of the LINE Block objects that are detected on a document page.    WORD - A word detected on a document page. A word is one or more ISO basic Latin script characters that aren't separated by spaces.    LINE - A string of tab-delimited, contiguous words that are detected on a document page.   In text analysis operations, the following types are returned:    PAGE - Contains a list of child Block objects that are detected on a document page.    KEY_VALUE_SET - Stores the KEY and VALUE Block objects for linked text that's detected on a document page. Use the EntityType field to determine if a KEY_VALUE_SET object is a KEY Block object or a VALUE Block object.     WORD - A word that's detected on a document page. A word is one or more ISO basic Latin script characters that aren't separated by spaces.    LINE - A string of tab-delimited, contiguous words that are detected on a document page.    TABLE - A table that's detected on a document page. A table is grid-based information with two or more rows or columns, with a cell span of one row and one column each.     CELL - A cell within a detected table. The cell is the parent of the block that contains the text in the cell.    SELECTION_ELEMENT - A selection element such as an option button (radio button) or a check box that's detected on a document page. Use the value of SelectionStatus to determine the status of the selection element.    QUERY - A question asked during the call of AnalyzeDocument. Contains an alias and an ID that attaches it to its answer.    QUERY_RESULT - A response to a question asked during the call of analyze document. Comes with an alias and ID for ease of locating in a response. Also contains location and confidence score.  
+    * The type of text item that's recognized. In operations for text detection, the following types are returned:    PAGE - Contains a list of the LINE Block objects that are detected on a document page.    WORD - A word detected on a document page. A word is one or more ISO basic Latin script characters that aren't separated by spaces.    LINE - A string of tab-delimited, contiguous words that are detected on a document page.   In text analysis operations, the following types are returned:    PAGE - Contains a list of child Block objects that are detected on a document page.    KEY_VALUE_SET - Stores the KEY and VALUE Block objects for linked text that's detected on a document page. Use the EntityType field to determine if a KEY_VALUE_SET object is a KEY Block object or a VALUE Block object.     WORD - A word that's detected on a document page. A word is one or more ISO basic Latin script characters that aren't separated by spaces.    LINE - A string of tab-delimited, contiguous words that are detected on a document page.    TABLE - A table that's detected on a document page. A table is grid-based information with two or more rows or columns, with a cell span of one row and one column each.     TABLE_TITLE - The title of a table. A title is typically a line of text above or below a table, or embedded as the first row of a table.     TABLE_FOOTER - The footer associated with a table. A footer is typically a line or lines of text below a table or embedded as the last row of a table.     CELL - A cell within a detected table. The cell is the parent of the block that contains the text in the cell.    MERGED_CELL - A cell in a table whose content spans more than one row or column. The Relationships array for this cell contain data from individual cells.    SELECTION_ELEMENT - A selection element such as an option button (radio button) or a check box that's detected on a document page. Use the value of SelectionStatus to determine the status of the selection element.    SIGNATURE - The location and confidene score of a signature detected on a document page. Can be returned as part of a Key-Value pair or a detected cell.    QUERY - A question asked during the call of AnalyzeDocument. Contains an alias and an ID that attaches it to its answer.    QUERY_RESULT - A response to a question asked during the call of analyze document. Comes with an alias and ID for ease of locating in a response. Also contains location and confidence score.  
     */
   var BlockType: js.UndefOr[typings.awsSdk.clientsTextractMod.BlockType] = js.undefined
   
@@ -17,7 +17,7 @@ trait Block extends StObject {
   var ColumnIndex: js.UndefOr[UInteger] = js.undefined
   
   /**
-    * The number of columns that a table cell spans. Currently this value is always 1, even if the number of columns spanned is greater than 1. ColumnSpan isn't returned by DetectDocumentText and GetDocumentTextDetection. 
+    * The number of columns that a table cell spans. ColumnSpan isn't returned by DetectDocumentText and GetDocumentTextDetection. 
     */
   var ColumnSpan: js.UndefOr[UInteger] = js.undefined
   
@@ -27,7 +27,7 @@ trait Block extends StObject {
   var Confidence: js.UndefOr[Percent] = js.undefined
   
   /**
-    * The type of entity. The following can be returned:    KEY - An identifier for a field on the document.    VALUE - The field text.    EntityTypes isn't returned by DetectDocumentText and GetDocumentTextDetection.
+    * The type of entity.  The following entity types can be returned by FORMS analysis:    KEY - An identifier for a field on the document.    VALUE - The field text.   The following entity types can be returned by TABLES analysis:    COLUMN_HEADER - Identifies a cell that is a header of a column.     TABLE_TITLE - Identifies a cell that is a title within the table.     TABLE_SECTION_TITLE - Identifies a cell that is a title of a section within a table. A section title is a cell that typically spans an entire row above a section.     TABLE_FOOTER - Identifies a cell that is a footer of a table.     TABLE_SUMMARY - Identifies a summary cell of a table. A summary cell can be a row of a table or an additional, smaller table that contains summary information for another table.     STRUCTURED_TABLE  - Identifies a table with column headers where the content of each row corresponds to the headers.     SEMI_STRUCTURED_TABLE - Identifies a non-structured table.     EntityTypes isn't returned by DetectDocumentText and GetDocumentTextDetection.
     */
   var EntityTypes: js.UndefOr[typings.awsSdk.clientsTextractMod.EntityTypes] = js.undefined
   
@@ -42,7 +42,7 @@ trait Block extends StObject {
   var Id: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * The page on which a block was detected. Page is returned by synchronous and asynchronous operations. Page values greater than 1 are only returned for multipage documents that are in PDF or TIFF format. A scanned image (JPEG/PNG) provided to an asynchronous operation, even if it contains multiple document pages, is considered a single-page document. This means that for scanned images the value of Page is always 1. Synchronous operations operations will also return a Page value of 1 because every input document is considered to be a single-page document.
+    * The page on which a block was detected. Page is returned by synchronous and asynchronous operations. Page values greater than 1 are only returned for multipage documents that are in PDF or TIFF format. A scanned image (JPEG/PNG) provided to an asynchronous operation, even if it contains multiple document pages, is considered a single-page document. This means that for scanned images the value of Page is always 1. Synchronous operations will also return a Page value of 1 because every input document is considered to be a single-page document.
     */
   var Page: js.UndefOr[UInteger] = js.undefined
   
@@ -52,7 +52,7 @@ trait Block extends StObject {
   var Query: js.UndefOr[typings.awsSdk.clientsTextractMod.Query] = js.undefined
   
   /**
-    * A list of child blocks of the current block. For example, a LINE object has child blocks for each WORD block that's part of the line of text. There aren't Relationship objects in the list for relationships that don't exist, such as when the current block has no child blocks. The list size can be the following:   0 - The block has no child blocks.   1 - The block has child blocks.  
+    * A list of relationship objects that describe how blocks are related to each other. For example, a LINE block object contains a CHILD relationship type with the WORD blocks that make up the line of text. There aren't Relationship objects in the list for relationships that don't exist, such as when the current block has no child blocks.
     */
   var Relationships: js.UndefOr[RelationshipList] = js.undefined
   
@@ -62,7 +62,7 @@ trait Block extends StObject {
   var RowIndex: js.UndefOr[UInteger] = js.undefined
   
   /**
-    * The number of rows that a table cell spans. Currently this value is always 1, even if the number of rows spanned is greater than 1. RowSpan isn't returned by DetectDocumentText and GetDocumentTextDetection.
+    * The number of rows that a table cell spans. RowSpan isn't returned by DetectDocumentText and GetDocumentTextDetection.
     */
   var RowSpan: js.UndefOr[UInteger] = js.undefined
   

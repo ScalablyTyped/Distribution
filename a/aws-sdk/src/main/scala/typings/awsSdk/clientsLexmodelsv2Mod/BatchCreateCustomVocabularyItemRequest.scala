@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BatchCreateCustomVocabularyItemRequest extends StObject {
   
   /**
-    * The unique identifier of the bot to batch create the custom vocabulary item for.
+    * The identifier of the bot associated with this custom vocabulary.
     */
   var botId: Id
   
   /**
-    * The bot version of the bot to batch create the custom vocabulary item for.
+    * The identifier of the version of the bot associated with this custom vocabulary.
     */
   var botVersion: BotVersion
   
   /**
-    * The custom vocabulary item list of the bot to batch create the custom vocabulary item for.
+    * A list of new custom vocabulary items. Each entry must contain a phrase and can optionally contain a displayAs and/or a weight.
     */
   var customVocabularyItemList: CreateCustomVocabularyItemsList
   
   /**
-    * The unique locale identifier of the bot to batch create the custom vocabulary item for.
+    * The identifier of the language and locale where this custom vocabulary is used. The string must match one of the supported locales. For more information, see  Supported Languages .
     */
   var localeId: LocaleId
 }

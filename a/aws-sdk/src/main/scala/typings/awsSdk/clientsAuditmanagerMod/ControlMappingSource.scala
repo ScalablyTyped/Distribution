@@ -34,7 +34,7 @@ trait ControlMappingSource extends StObject {
   var sourceSetUpOption: js.UndefOr[SourceSetUpOption] = js.undefined
   
   /**
-    *  Specifies one of the five types of data sources for evidence collection. 
+    *  Specifies one of the five data source types for evidence collection. 
     */
   var sourceType: js.UndefOr[SourceType] = js.undefined
   

@@ -12,12 +12,12 @@ trait StreamingDistribution extends StObject {
   var ARN: String
   
   /**
-    * A complex type that lists the Amazon Web Services accounts, if any, that you included in the TrustedSigners complex type for this distribution. These are the accounts that you want to allow to create signed URLs for private content. The Signer complex type lists the Amazon Web Services account number of the trusted signer or self if the signer is the Amazon Web Services account that created the distribution. The Signer element also includes the IDs of any active CloudFront key pairs that are associated with the trusted signer's Amazon Web Services account. If no KeyPairId element appears for a Signer, that signer can't create signed URLs. For more information, see Serving Private Content through CloudFront in the Amazon CloudFront Developer Guide. 
+    * A complex type that lists the Amazon Web Services accounts, if any, that you included in the TrustedSigners complex type for this distribution. These are the accounts that you want to allow to create signed URLs for private content. The Signer complex type lists the Amazon Web Services account number of the trusted signer or self if the signer is the Amazon Web Services account that created the distribution. The Signer element also includes the IDs of any active CloudFront key pairs that are associated with the trusted signer's Amazon Web Services account. If no KeyPairId element appears for a Signer, that signer can't create signed URLs. For more information, see Serving Private Content through CloudFront in the Amazon CloudFront Developer Guide.
     */
   var ActiveTrustedSigners: typings.awsSdk.clientsCloudfrontMod.ActiveTrustedSigners
   
   /**
-    * The domain name that corresponds to the streaming distribution, for example, s5c39gqb8ow64r.cloudfront.net. 
+    * The domain name that corresponds to the streaming distribution, for example, s5c39gqb8ow64r.cloudfront.net.
     */
   var DomainName: String
   
@@ -27,7 +27,7 @@ trait StreamingDistribution extends StObject {
   var Id: String
   
   /**
-    * The date and time that the distribution was last modified. 
+    * The date and time that the distribution was last modified.
     */
   var LastModifiedTime: js.UndefOr[js.Date] = js.undefined
   

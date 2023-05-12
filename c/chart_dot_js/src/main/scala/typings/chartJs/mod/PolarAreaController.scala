@@ -1,17 +1,12 @@
 package typings.chartJs.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.chartJs.typesBasicMod.AnyObject
+import typings.chartJs.distTypesBasicMod.AnyObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PolarAreaController extends DoughnutController {
-  
-  def countVisibleElements(): Double = js.native
-}
-/* Inlined chart.js.chart.js.ChartComponent & {  prototype :chart.js.chart.js.PolarAreaController, new (chart : chart.js.chart.js.Chart<chart.js.chart.js.ChartType, chart.js.chart.js.DefaultDataPoint<chart.js.chart.js.ChartType>, unknown>, datasetIndex : number): chart.js.chart.js.PolarAreaController} */
+/* Inlined chart.js.chart.js/dist/types/index.ChartComponent & {  prototype :chart.js.chart.js/dist/types/index.PolarAreaController, new (chart : chart.js.chart.js/dist/types/index.Chart<chart.js.chart.js/dist/types/index.ChartType, chart.js.chart.js/dist/types/index.DefaultDataPoint<chart.js.chart.js/dist/types/index.ChartType>, unknown>, datasetIndex : number): chart.js.chart.js/dist/types/index.PolarAreaController} */
 object PolarAreaController {
   
   @JSImport("chart.js", "PolarAreaController")

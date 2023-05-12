@@ -3,6 +3,19 @@ package typings.prosemirrorSchemaBasic
 import typings.prosemirrorModel.mod.MarkSpec
 import typings.prosemirrorModel.mod.NodeSpec
 import typings.prosemirrorModel.mod.Schema
+import typings.prosemirrorSchemaBasic.prosemirrorSchemaBasicStrings.blockquote
+import typings.prosemirrorSchemaBasic.prosemirrorSchemaBasicStrings.code
+import typings.prosemirrorSchemaBasic.prosemirrorSchemaBasicStrings.code_block
+import typings.prosemirrorSchemaBasic.prosemirrorSchemaBasicStrings.doc
+import typings.prosemirrorSchemaBasic.prosemirrorSchemaBasicStrings.em
+import typings.prosemirrorSchemaBasic.prosemirrorSchemaBasicStrings.hard_break
+import typings.prosemirrorSchemaBasic.prosemirrorSchemaBasicStrings.heading
+import typings.prosemirrorSchemaBasic.prosemirrorSchemaBasicStrings.horizontal_rule
+import typings.prosemirrorSchemaBasic.prosemirrorSchemaBasicStrings.image
+import typings.prosemirrorSchemaBasic.prosemirrorSchemaBasicStrings.link
+import typings.prosemirrorSchemaBasic.prosemirrorSchemaBasicStrings.paragraph
+import typings.prosemirrorSchemaBasic.prosemirrorSchemaBasicStrings.strong
+import typings.prosemirrorSchemaBasic.prosemirrorSchemaBasicStrings.text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -157,5 +170,8 @@ object mod {
   */
   @JSImport("prosemirror-schema-basic", "schema")
   @js.native
-  val schema: Schema[Any, Any] = js.native
+  val schema: Schema[
+    blockquote | image | text | doc | paragraph | horizontal_rule | heading | code_block | hard_break, 
+    link | code | em | strong
+  ] = js.native
 }

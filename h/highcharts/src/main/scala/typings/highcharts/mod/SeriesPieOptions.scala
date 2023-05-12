@@ -28,6 +28,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   ] = js.undefined
   
   /**
+    * Not available
+    */
+  var dataParser: Unit
+  
+  /**
+    * Not available
+    */
+  var dataURL: Unit
+  
+  /**
     * (Highcharts, Highstock, Highmaps, Gantt) An id for the series. This can
     * be used after render time to get a pointer to the series object through
     * `chart.get()`.
@@ -62,12 +72,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var name: js.UndefOr[String] = js.undefined
   
   /**
-    * (Highcharts, Highstock) This option allows grouping series in a stacked
-    * chart. The stack option can be a string or anything else, as long as the
-    * grouped series' stack options match each other after conversion into a
-    * string.
+    * Not available
     */
-  var stack: js.UndefOr[Double | String] = js.undefined
+  var stack: js.UndefOr[Double | String | Unit]
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) This property is only in
@@ -77,25 +84,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var `type`: String | pie
   
   /**
-    * (Highcharts, Highstock) When using dual or multiple x axes, this number
-    * defines which xAxis the particular series is connected to. It refers to
-    * either the axis id or the index of the axis in the xAxis array, with 0
-    * being the first.
+    * Not available
     */
-  var xAxis: js.UndefOr[Double | String] = js.undefined
+  var xAxis: js.UndefOr[Double | String | Unit]
   
   /**
-    * (Highcharts, Highstock) When using dual or multiple y axes, this number
-    * defines which yAxis the particular series is connected to. It refers to
-    * either the axis id or the index of the axis in the yAxis array, with 0
-    * being the first.
+    * Not available
     */
-  var yAxis: js.UndefOr[Double | String] = js.undefined
+  var yAxis: js.UndefOr[Double | String | Unit]
 }
 object SeriesPieOptions {
   
-  inline def apply(`type`: String | pie): SeriesPieOptions = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(dataParser: Unit, dataURL: Unit, `type`: String | pie): SeriesPieOptions = {
+    val __obj = js.Dynamic.literal(dataParser = dataParser.asInstanceOf[js.Any], dataURL = dataURL.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeriesPieOptions]
   }
@@ -104,6 +105,10 @@ object SeriesPieOptions {
   implicit open class MutableBuilder[Self <: SeriesPieOptions] (val x: Self) extends AnyVal {
     
     inline def setData(value: js.Array[Double | (js.Tuple2[String, Double | Null]) | Null | PointOptionsObject]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataParser(value: Unit): Self = StObject.set(x, "dataParser", value.asInstanceOf[js.Any])
+    
+    inline def setDataURL(value: Unit): Self = StObject.set(x, "dataURL", value.asInstanceOf[js.Any])
     
     inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
@@ -131,17 +136,17 @@ object SeriesPieOptions {
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    inline def setStack(value: Double | String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+    inline def setStack(value: Double | String | Unit): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
     
     inline def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
     
     inline def setType(value: String | pie): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    inline def setXAxis(value: Double | String): Self = StObject.set(x, "xAxis", value.asInstanceOf[js.Any])
+    inline def setXAxis(value: Double | String | Unit): Self = StObject.set(x, "xAxis", value.asInstanceOf[js.Any])
     
     inline def setXAxisUndefined: Self = StObject.set(x, "xAxis", js.undefined)
     
-    inline def setYAxis(value: Double | String): Self = StObject.set(x, "yAxis", value.asInstanceOf[js.Any])
+    inline def setYAxis(value: Double | String | Unit): Self = StObject.set(x, "yAxis", value.asInstanceOf[js.Any])
     
     inline def setYAxisUndefined: Self = StObject.set(x, "yAxis", js.undefined)
   }

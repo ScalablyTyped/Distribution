@@ -151,6 +151,8 @@ type StreamNameList = js.Array[StreamName]
 */
 type StreamStatus = _StreamStatus | String
 
+type StreamSummaryList = js.Array[StreamSummary]
+
 type TagKey = String
 
 type TagKeyList = js.Array[TagKey]

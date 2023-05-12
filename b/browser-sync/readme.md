@@ -1,7 +1,7 @@
 
 # Scala.js typings for browser-sync
 
-Typings are for version 2.26
+Typings are for version 2.27
 
 ## Library description:
 Live CSS Reload & Browser Syncing

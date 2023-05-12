@@ -8,10 +8,8 @@ trait DeliveryidHookidOrg extends StObject {
   
   var delivery_id: Double
   
-  /** The unique identifier of the hook. */
   var hook_id: Double
   
-  /** The organization name. The name is not case sensitive. */
   @JSName("org")
   var org_ : String
 }

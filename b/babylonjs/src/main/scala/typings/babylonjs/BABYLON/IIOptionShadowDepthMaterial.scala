@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IIOptionShadowDepthMaterial extends StObject {
   
+  /** Set doNotInjectCode if the specific shadow map generation code is already implemented by the material. That will prevent this code to be injected twice by ShadowDepthWrapper */
+  var doNotInjectCode: js.UndefOr[Boolean] = js.undefined
+  
   /** Variables in the vertex shader code that need to have their names remapped.
     * The format is: ["var_name", "var_remapped_name", "var_name", "var_remapped_name", ...]
     * "var_name" should be either: worldPos or vNormalW
@@ -27,6 +30,10 @@ object IIOptionShadowDepthMaterial {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: IIOptionShadowDepthMaterial] (val x: Self) extends AnyVal {
+    
+    inline def setDoNotInjectCode(value: Boolean): Self = StObject.set(x, "doNotInjectCode", value.asInstanceOf[js.Any])
+    
+    inline def setDoNotInjectCodeUndefined: Self = StObject.set(x, "doNotInjectCode", js.undefined)
     
     inline def setRemappedVariables(value: js.Array[String]): Self = StObject.set(x, "remappedVariables", value.asInstanceOf[js.Any])
     

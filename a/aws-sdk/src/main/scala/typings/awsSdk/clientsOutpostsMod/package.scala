@@ -143,6 +143,7 @@ type LineItemRequestListDefinition = js.Array[LineItemRequest]
   - typings.awsSdk.awsSdkStrings.INSTALLED
   - typings.awsSdk.awsSdkStrings.ERROR
   - typings.awsSdk.awsSdkStrings.CANCELLED
+  - typings.awsSdk.awsSdkStrings.REPLACED
   - java.lang.String
 */
 type LineItemStatus = _LineItemStatus | String
@@ -259,6 +260,7 @@ type PowerConnector = _PowerConnector | String
   - typings.awsSdk.awsSdkStrings.POWER_5_KVA
   - typings.awsSdk.awsSdkStrings.POWER_10_KVA
   - typings.awsSdk.awsSdkStrings.POWER_15_KVA
+  - typings.awsSdk.awsSdkStrings.POWER_30_KVA
   - java.lang.String
 */
 type PowerDrawKva = _PowerDrawKva | String

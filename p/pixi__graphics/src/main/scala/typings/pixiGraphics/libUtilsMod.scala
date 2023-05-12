@@ -57,16 +57,14 @@ object libUtilsMod {
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("arc")(_startX.asInstanceOf[js.Any], _startY.asInstanceOf[js.Any], cx.asInstanceOf[js.Any], cy.asInstanceOf[js.Any], radius.asInstanceOf[js.Any], startAngle.asInstanceOf[js.Any], endAngle.asInstanceOf[js.Any], _anticlockwise.asInstanceOf[js.Any], points.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
-      * The arcTo() method creates an arc/curve between two tangents on the canvas.
-      *
-      * "borrowed" from https://code.google.com/p/fxcanvas/ - thanks google!
+      * Calculate information of the arc for {@link PIXI.Graphics.arcTo}.
       * @private
-      * @param x1 - The x-coordinate of the beginning of the arc
-      * @param y1 - The y-coordinate of the beginning of the arc
-      * @param x2 - The x-coordinate of the end of the arc
-      * @param y2 - The y-coordinate of the end of the arc
+      * @param x1 - The x-coordinate of the first control point of the arc
+      * @param y1 - The y-coordinate of the first control point of the arc
+      * @param x2 - The x-coordinate of the second control point of the arc
+      * @param y2 - The y-coordinate of the second control point of the arc
       * @param radius - The radius of the arc
-      * @param points -
+      * @param points - Collection of points to add to
       * @returns - If the arc length is valid, return center of circle, radius and other info otherwise `null`.
       */
     inline def curveTo(x1: Double, y1: Double, x2: Double, y2: Double, radius: Double, points: js.Array[Double]): IArcLikeShape = (^.asInstanceOf[js.Dynamic].applyDynamic("curveTo")(x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any], radius.asInstanceOf[js.Any], points.asInstanceOf[js.Any])).asInstanceOf[IArcLikeShape]

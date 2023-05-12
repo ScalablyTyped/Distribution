@@ -2,6 +2,7 @@ package typings.linkifyjs
 
 import typings.linkifyjs.linkifyjsStrings.abort
 import typings.std.AnimationEvent
+import typings.std.ClipboardEvent
 import typings.std.DragEvent
 import typings.std.Event
 import typings.std.EventTarget
@@ -66,7 +67,11 @@ object anon {
     
     var oncontextmenu: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]) | Null] = js.undefined
     
+    var oncopy: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any]) | Null] = js.undefined
+    
     var oncuechange: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null] = js.undefined
+    
+    var oncut: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any]) | Null] = js.undefined
     
     var ondblclick: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]) | Null] = js.undefined
     
@@ -131,6 +136,8 @@ object anon {
     var onmouseover: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]) | Null] = js.undefined
     
     var onmouseup: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]) | Null] = js.undefined
+    
+    var onpaste: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any]) | Null] = js.undefined
     
     var onpause: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null] = js.undefined
     
@@ -336,11 +343,23 @@ object anon {
       
       inline def setOncontextmenuUndefined: Self = StObject.set(x, "oncontextmenu", js.undefined)
       
+      inline def setOncopy(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ ClipboardEvent, Any]): Self = StObject.set(x, "oncopy", value.asInstanceOf[js.Any])
+      
+      inline def setOncopyNull: Self = StObject.set(x, "oncopy", null)
+      
+      inline def setOncopyUndefined: Self = StObject.set(x, "oncopy", js.undefined)
+      
       inline def setOncuechange(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ Event, Any]): Self = StObject.set(x, "oncuechange", value.asInstanceOf[js.Any])
       
       inline def setOncuechangeNull: Self = StObject.set(x, "oncuechange", null)
       
       inline def setOncuechangeUndefined: Self = StObject.set(x, "oncuechange", js.undefined)
+      
+      inline def setOncut(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ ClipboardEvent, Any]): Self = StObject.set(x, "oncut", value.asInstanceOf[js.Any])
+      
+      inline def setOncutNull: Self = StObject.set(x, "oncut", null)
+      
+      inline def setOncutUndefined: Self = StObject.set(x, "oncut", js.undefined)
       
       inline def setOndblclick(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ MouseEvent, Any]): Self = StObject.set(x, "ondblclick", value.asInstanceOf[js.Any])
       
@@ -535,6 +554,12 @@ object anon {
       inline def setOnmouseupNull: Self = StObject.set(x, "onmouseup", null)
       
       inline def setOnmouseupUndefined: Self = StObject.set(x, "onmouseup", js.undefined)
+      
+      inline def setOnpaste(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ ClipboardEvent, Any]): Self = StObject.set(x, "onpaste", value.asInstanceOf[js.Any])
+      
+      inline def setOnpasteNull: Self = StObject.set(x, "onpaste", null)
+      
+      inline def setOnpasteUndefined: Self = StObject.set(x, "onpaste", js.undefined)
       
       inline def setOnpause(value: js.ThisFunction1[PartialGlobalEventHandler, /* ev */ Event, Any]): Self = StObject.set(x, "onpause", value.asInstanceOf[js.Any])
       

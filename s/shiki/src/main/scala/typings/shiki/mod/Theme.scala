@@ -14,11 +14,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.shiki.shikiStrings.`github-light`
   - typings.shiki.shikiStrings.hc_light
   - typings.shiki.shikiStrings.`light-plus`
-  - typings.shiki.shikiStrings.`material-darker`
-  - typings.shiki.shikiStrings.`material-default`
-  - typings.shiki.shikiStrings.`material-lighter`
-  - typings.shiki.shikiStrings.`material-ocean`
-  - typings.shiki.shikiStrings.`material-palenight`
+  - typings.shiki.shikiStrings.`material-theme-darker`
+  - typings.shiki.shikiStrings.`material-theme-lighter`
+  - typings.shiki.shikiStrings.`material-theme-ocean`
+  - typings.shiki.shikiStrings.`material-theme-palenight`
+  - typings.shiki.shikiStrings.`material-theme`
   - typings.shiki.shikiStrings.`min-dark`
   - typings.shiki.shikiStrings.`min-light`
   - typings.shiki.shikiStrings.monokai
@@ -56,15 +56,15 @@ object Theme {
   
   inline def `light-plus`: typings.shiki.shikiStrings.`light-plus` = "light-plus".asInstanceOf[typings.shiki.shikiStrings.`light-plus`]
   
-  inline def `material-darker`: typings.shiki.shikiStrings.`material-darker` = "material-darker".asInstanceOf[typings.shiki.shikiStrings.`material-darker`]
+  inline def `material-theme`: typings.shiki.shikiStrings.`material-theme` = "material-theme".asInstanceOf[typings.shiki.shikiStrings.`material-theme`]
   
-  inline def `material-default`: typings.shiki.shikiStrings.`material-default` = "material-default".asInstanceOf[typings.shiki.shikiStrings.`material-default`]
+  inline def `material-theme-darker`: typings.shiki.shikiStrings.`material-theme-darker` = "material-theme-darker".asInstanceOf[typings.shiki.shikiStrings.`material-theme-darker`]
   
-  inline def `material-lighter`: typings.shiki.shikiStrings.`material-lighter` = "material-lighter".asInstanceOf[typings.shiki.shikiStrings.`material-lighter`]
+  inline def `material-theme-lighter`: typings.shiki.shikiStrings.`material-theme-lighter` = "material-theme-lighter".asInstanceOf[typings.shiki.shikiStrings.`material-theme-lighter`]
   
-  inline def `material-ocean`: typings.shiki.shikiStrings.`material-ocean` = "material-ocean".asInstanceOf[typings.shiki.shikiStrings.`material-ocean`]
+  inline def `material-theme-ocean`: typings.shiki.shikiStrings.`material-theme-ocean` = "material-theme-ocean".asInstanceOf[typings.shiki.shikiStrings.`material-theme-ocean`]
   
-  inline def `material-palenight`: typings.shiki.shikiStrings.`material-palenight` = "material-palenight".asInstanceOf[typings.shiki.shikiStrings.`material-palenight`]
+  inline def `material-theme-palenight`: typings.shiki.shikiStrings.`material-theme-palenight` = "material-theme-palenight".asInstanceOf[typings.shiki.shikiStrings.`material-theme-palenight`]
   
   inline def `min-dark`: typings.shiki.shikiStrings.`min-dark` = "min-dark".asInstanceOf[typings.shiki.shikiStrings.`min-dark`]
   

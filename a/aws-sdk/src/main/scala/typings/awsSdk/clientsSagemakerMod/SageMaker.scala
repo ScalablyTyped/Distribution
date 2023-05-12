@@ -158,18 +158,32 @@ trait SageMaker extends Service {
   ): Request[CreateArtifactResponse, AWSError] = js.native
   
   /**
-    * Creates an Autopilot job. Find the best-performing model after you run an Autopilot job by calling . For information about how to use Autopilot, see Automate Model Development with Amazon SageMaker Autopilot.
+    * Creates an Autopilot job. Find the best-performing model after you run an Autopilot job by calling DescribeAutoMLJob. For information about how to use Autopilot, see Automate Model Development with Amazon SageMaker Autopilot.
     */
   def createAutoMLJob(): Request[CreateAutoMLJobResponse, AWSError] = js.native
   def createAutoMLJob(callback: js.Function2[/* err */ AWSError, /* data */ CreateAutoMLJobResponse, Unit]): Request[CreateAutoMLJobResponse, AWSError] = js.native
   /**
-    * Creates an Autopilot job. Find the best-performing model after you run an Autopilot job by calling . For information about how to use Autopilot, see Automate Model Development with Amazon SageMaker Autopilot.
+    * Creates an Autopilot job. Find the best-performing model after you run an Autopilot job by calling DescribeAutoMLJob. For information about how to use Autopilot, see Automate Model Development with Amazon SageMaker Autopilot.
     */
   def createAutoMLJob(params: CreateAutoMLJobRequest): Request[CreateAutoMLJobResponse, AWSError] = js.native
   def createAutoMLJob(
     params: CreateAutoMLJobRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateAutoMLJobResponse, Unit]
   ): Request[CreateAutoMLJobResponse, AWSError] = js.native
+  
+  /**
+    * Creates an Amazon SageMaker AutoML job that uses non-tabular data such as images or text for Computer Vision or Natural Language Processing problems. Find the resulting model after you run an AutoML job V2 by calling DescribeAutoMLJobV2. To create an AutoMLJob using tabular data, see CreateAutoMLJob.  This API action is callable through SageMaker Canvas only. Calling it directly from the CLI or an SDK results in an error. 
+    */
+  def createAutoMLJobV2(): Request[CreateAutoMLJobV2Response, AWSError] = js.native
+  def createAutoMLJobV2(callback: js.Function2[/* err */ AWSError, /* data */ CreateAutoMLJobV2Response, Unit]): Request[CreateAutoMLJobV2Response, AWSError] = js.native
+  /**
+    * Creates an Amazon SageMaker AutoML job that uses non-tabular data such as images or text for Computer Vision or Natural Language Processing problems. Find the resulting model after you run an AutoML job V2 by calling DescribeAutoMLJobV2. To create an AutoMLJob using tabular data, see CreateAutoMLJob.  This API action is callable through SageMaker Canvas only. Calling it directly from the CLI or an SDK results in an error. 
+    */
+  def createAutoMLJobV2(params: CreateAutoMLJobV2Request): Request[CreateAutoMLJobV2Response, AWSError] = js.native
+  def createAutoMLJobV2(
+    params: CreateAutoMLJobV2Request,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateAutoMLJobV2Response, Unit]
+  ): Request[CreateAutoMLJobV2Response, AWSError] = js.native
   
   /**
     * Creates a Git repository as a resource in your SageMaker account. You can associate the repository with notebook instances so that you can use Git source control for the notebooks you create. The Git repository is a resource in your SageMaker account, so it can be associated with more than one notebook instance, and it persists independently from the lifecycle of any notebook instances it is associated with. The repository can be hosted either in Amazon Web Services CodeCommit or in any other Git repository.
@@ -244,12 +258,12 @@ trait SageMaker extends Service {
   ): Request[js.Object, AWSError] = js.native
   
   /**
-    * Creates a Domain used by Amazon SageMaker Studio. A domain consists of an associated Amazon Elastic File System (EFS) volume, a list of authorized users, and a variety of security, application, policy, and Amazon Virtual Private Cloud (VPC) configurations. An Amazon Web Services account is limited to one domain per region. Users within a domain can share notebook files and other artifacts with each other.  EFS storage  When a domain is created, an EFS volume is created for use by all of the users within the domain. Each user receives a private home directory within the EFS volume for notebooks, Git repositories, and data files. SageMaker uses the Amazon Web Services Key Management Service (Amazon Web Services KMS) to encrypt the EFS volume attached to the domain with an Amazon Web Services managed key by default. For more control, you can specify a customer managed key. For more information, see Protect Data at Rest Using Encryption.  VPC configuration  All SageMaker Studio traffic between the domain and the EFS volume is through the specified VPC and subnets. For other Studio traffic, you can specify the AppNetworkAccessType parameter. AppNetworkAccessType corresponds to the network access type that you choose when you onboard to Studio. The following options are available:    PublicInternetOnly - Non-EFS traffic goes through a VPC managed by Amazon SageMaker, which allows internet access. This is the default value.    VpcOnly - All Studio traffic is through the specified VPC and subnets. Internet access is disabled by default. To allow internet access, you must specify a NAT gateway. When internet access is disabled, you won't be able to run a Studio notebook or to train or host models unless your VPC has an interface endpoint to the SageMaker API and runtime or a NAT gateway and your security groups allow outbound connections.    NFS traffic over TCP on port 2049 needs to be allowed in both inbound and outbound rules in order to launch a SageMaker Studio app successfully.  For more information, see Connect SageMaker Studio Notebooks to Resources in a VPC.
+    * Creates a Domain used by Amazon SageMaker Studio. A domain consists of an associated Amazon Elastic File System (EFS) volume, a list of authorized users, and a variety of security, application, policy, and Amazon Virtual Private Cloud (VPC) configurations. Users within a domain can share notebook files and other artifacts with each other.  EFS storage  When a domain is created, an EFS volume is created for use by all of the users within the domain. Each user receives a private home directory within the EFS volume for notebooks, Git repositories, and data files. SageMaker uses the Amazon Web Services Key Management Service (Amazon Web Services KMS) to encrypt the EFS volume attached to the domain with an Amazon Web Services managed key by default. For more control, you can specify a customer managed key. For more information, see Protect Data at Rest Using Encryption.  VPC configuration  All SageMaker Studio traffic between the domain and the EFS volume is through the specified VPC and subnets. For other Studio traffic, you can specify the AppNetworkAccessType parameter. AppNetworkAccessType corresponds to the network access type that you choose when you onboard to Studio. The following options are available:    PublicInternetOnly - Non-EFS traffic goes through a VPC managed by Amazon SageMaker, which allows internet access. This is the default value.    VpcOnly - All Studio traffic is through the specified VPC and subnets. Internet access is disabled by default. To allow internet access, you must specify a NAT gateway. When internet access is disabled, you won't be able to run a Studio notebook or to train or host models unless your VPC has an interface endpoint to the SageMaker API and runtime or a NAT gateway and your security groups allow outbound connections.    NFS traffic over TCP on port 2049 needs to be allowed in both inbound and outbound rules in order to launch a SageMaker Studio app successfully.  For more information, see Connect SageMaker Studio Notebooks to Resources in a VPC.
     */
   def createDomain(): Request[CreateDomainResponse, AWSError] = js.native
   def createDomain(callback: js.Function2[/* err */ AWSError, /* data */ CreateDomainResponse, Unit]): Request[CreateDomainResponse, AWSError] = js.native
   /**
-    * Creates a Domain used by Amazon SageMaker Studio. A domain consists of an associated Amazon Elastic File System (EFS) volume, a list of authorized users, and a variety of security, application, policy, and Amazon Virtual Private Cloud (VPC) configurations. An Amazon Web Services account is limited to one domain per region. Users within a domain can share notebook files and other artifacts with each other.  EFS storage  When a domain is created, an EFS volume is created for use by all of the users within the domain. Each user receives a private home directory within the EFS volume for notebooks, Git repositories, and data files. SageMaker uses the Amazon Web Services Key Management Service (Amazon Web Services KMS) to encrypt the EFS volume attached to the domain with an Amazon Web Services managed key by default. For more control, you can specify a customer managed key. For more information, see Protect Data at Rest Using Encryption.  VPC configuration  All SageMaker Studio traffic between the domain and the EFS volume is through the specified VPC and subnets. For other Studio traffic, you can specify the AppNetworkAccessType parameter. AppNetworkAccessType corresponds to the network access type that you choose when you onboard to Studio. The following options are available:    PublicInternetOnly - Non-EFS traffic goes through a VPC managed by Amazon SageMaker, which allows internet access. This is the default value.    VpcOnly - All Studio traffic is through the specified VPC and subnets. Internet access is disabled by default. To allow internet access, you must specify a NAT gateway. When internet access is disabled, you won't be able to run a Studio notebook or to train or host models unless your VPC has an interface endpoint to the SageMaker API and runtime or a NAT gateway and your security groups allow outbound connections.    NFS traffic over TCP on port 2049 needs to be allowed in both inbound and outbound rules in order to launch a SageMaker Studio app successfully.  For more information, see Connect SageMaker Studio Notebooks to Resources in a VPC.
+    * Creates a Domain used by Amazon SageMaker Studio. A domain consists of an associated Amazon Elastic File System (EFS) volume, a list of authorized users, and a variety of security, application, policy, and Amazon Virtual Private Cloud (VPC) configurations. Users within a domain can share notebook files and other artifacts with each other.  EFS storage  When a domain is created, an EFS volume is created for use by all of the users within the domain. Each user receives a private home directory within the EFS volume for notebooks, Git repositories, and data files. SageMaker uses the Amazon Web Services Key Management Service (Amazon Web Services KMS) to encrypt the EFS volume attached to the domain with an Amazon Web Services managed key by default. For more control, you can specify a customer managed key. For more information, see Protect Data at Rest Using Encryption.  VPC configuration  All SageMaker Studio traffic between the domain and the EFS volume is through the specified VPC and subnets. For other Studio traffic, you can specify the AppNetworkAccessType parameter. AppNetworkAccessType corresponds to the network access type that you choose when you onboard to Studio. The following options are available:    PublicInternetOnly - Non-EFS traffic goes through a VPC managed by Amazon SageMaker, which allows internet access. This is the default value.    VpcOnly - All Studio traffic is through the specified VPC and subnets. Internet access is disabled by default. To allow internet access, you must specify a NAT gateway. When internet access is disabled, you won't be able to run a Studio notebook or to train or host models unless your VPC has an interface endpoint to the SageMaker API and runtime or a NAT gateway and your security groups allow outbound connections.    NFS traffic over TCP on port 2049 needs to be allowed in both inbound and outbound rules in order to launch a SageMaker Studio app successfully.  For more information, see Connect SageMaker Studio Notebooks to Resources in a VPC.
     */
   def createDomain(params: CreateDomainRequest): Request[CreateDomainResponse, AWSError] = js.native
   def createDomain(
@@ -300,12 +314,12 @@ trait SageMaker extends Service {
   ): Request[js.Object, AWSError] = js.native
   
   /**
-    * Creates an endpoint using the endpoint configuration specified in the request. SageMaker uses the endpoint to provision resources and deploy models. You create the endpoint configuration with the CreateEndpointConfig API.   Use this API to deploy models using SageMaker hosting services.  For an example that calls this method when deploying a model to SageMaker hosting services, see the Create Endpoint example notebook.    You must not delete an EndpointConfig that is in use by an endpoint that is live or while the UpdateEndpoint or CreateEndpoint operations are being performed on the endpoint. To update an endpoint, you must create a new EndpointConfig.  The endpoint name must be unique within an Amazon Web Services Region in your Amazon Web Services account.  When it receives the request, SageMaker creates the endpoint, launches the resources (ML compute instances), and deploys the model(s) on them.   When you call CreateEndpoint, a load call is made to DynamoDB to verify that your endpoint configuration exists. When you read data from a DynamoDB table supporting  Eventually Consistent Reads , the response might not reflect the results of a recently completed write operation. The response might include some stale data. If the dependent entities are not yet in DynamoDB, this causes a validation error. If you repeat your read request after a short time, the response should return the latest data. So retry logic is recommended to handle these possible issues. We also recommend that customers call DescribeEndpointConfig before calling CreateEndpoint to minimize the potential impact of a DynamoDB eventually consistent read.  When SageMaker receives the request, it sets the endpoint status to Creating. After it creates the endpoint, it sets the status to InService. SageMaker can then process incoming requests for inferences. To check the status of an endpoint, use the DescribeEndpoint API. If any of the models hosted at this endpoint get model data from an Amazon S3 location, SageMaker uses Amazon Web Services Security Token Service to download model artifacts from the S3 path you provided. Amazon Web Services STS is activated in your IAM user account by default. If you previously deactivated Amazon Web Services STS for a region, you need to reactivate Amazon Web Services STS for that region. For more information, see Activating and Deactivating Amazon Web Services STS in an Amazon Web Services Region in the Amazon Web Services Identity and Access Management User Guide.   To add the IAM role policies for using this API operation, go to the IAM console, and choose Roles in the left navigation pane. Search the IAM role that you want to grant access to use the CreateEndpoint and CreateEndpointConfig API operations, add the following policies to the role.    Option 1: For a full SageMaker access, search and attach the AmazonSageMakerFullAccess policy.   Option 2: For granting a limited access to an IAM role, paste the following Action elements manually into the JSON file of the IAM role:   "Action": ["sagemaker:CreateEndpoint", "sagemaker:CreateEndpointConfig"]   "Resource": [   "arn:aws:sagemaker:region:account-id:endpoint/endpointName"   "arn:aws:sagemaker:region:account-id:endpoint-config/endpointConfigName"   ]  For more information, see SageMaker API Permissions: Actions, Permissions, and Resources Reference.   
+    * Creates an endpoint using the endpoint configuration specified in the request. SageMaker uses the endpoint to provision resources and deploy models. You create the endpoint configuration with the CreateEndpointConfig API.   Use this API to deploy models using SageMaker hosting services.  For an example that calls this method when deploying a model to SageMaker hosting services, see the Create Endpoint example notebook.    You must not delete an EndpointConfig that is in use by an endpoint that is live or while the UpdateEndpoint or CreateEndpoint operations are being performed on the endpoint. To update an endpoint, you must create a new EndpointConfig.  The endpoint name must be unique within an Amazon Web Services Region in your Amazon Web Services account.  When it receives the request, SageMaker creates the endpoint, launches the resources (ML compute instances), and deploys the model(s) on them.   When you call CreateEndpoint, a load call is made to DynamoDB to verify that your endpoint configuration exists. When you read data from a DynamoDB table supporting  Eventually Consistent Reads , the response might not reflect the results of a recently completed write operation. The response might include some stale data. If the dependent entities are not yet in DynamoDB, this causes a validation error. If you repeat your read request after a short time, the response should return the latest data. So retry logic is recommended to handle these possible issues. We also recommend that customers call DescribeEndpointConfig before calling CreateEndpoint to minimize the potential impact of a DynamoDB eventually consistent read.  When SageMaker receives the request, it sets the endpoint status to Creating. After it creates the endpoint, it sets the status to InService. SageMaker can then process incoming requests for inferences. To check the status of an endpoint, use the DescribeEndpoint API. If any of the models hosted at this endpoint get model data from an Amazon S3 location, SageMaker uses Amazon Web Services Security Token Service to download model artifacts from the S3 path you provided. Amazon Web Services STS is activated in your Amazon Web Services account by default. If you previously deactivated Amazon Web Services STS for a region, you need to reactivate Amazon Web Services STS for that region. For more information, see Activating and Deactivating Amazon Web Services STS in an Amazon Web Services Region in the Amazon Web Services Identity and Access Management User Guide.   To add the IAM role policies for using this API operation, go to the IAM console, and choose Roles in the left navigation pane. Search the IAM role that you want to grant access to use the CreateEndpoint and CreateEndpointConfig API operations, add the following policies to the role.    Option 1: For a full SageMaker access, search and attach the AmazonSageMakerFullAccess policy.   Option 2: For granting a limited access to an IAM role, paste the following Action elements manually into the JSON file of the IAM role:   "Action": ["sagemaker:CreateEndpoint", "sagemaker:CreateEndpointConfig"]   "Resource": [   "arn:aws:sagemaker:region:account-id:endpoint/endpointName"   "arn:aws:sagemaker:region:account-id:endpoint-config/endpointConfigName"   ]  For more information, see SageMaker API Permissions: Actions, Permissions, and Resources Reference.   
     */
   def createEndpoint(): Request[CreateEndpointOutput, AWSError] = js.native
   def createEndpoint(callback: js.Function2[/* err */ AWSError, /* data */ CreateEndpointOutput, Unit]): Request[CreateEndpointOutput, AWSError] = js.native
   /**
-    * Creates an endpoint using the endpoint configuration specified in the request. SageMaker uses the endpoint to provision resources and deploy models. You create the endpoint configuration with the CreateEndpointConfig API.   Use this API to deploy models using SageMaker hosting services.  For an example that calls this method when deploying a model to SageMaker hosting services, see the Create Endpoint example notebook.    You must not delete an EndpointConfig that is in use by an endpoint that is live or while the UpdateEndpoint or CreateEndpoint operations are being performed on the endpoint. To update an endpoint, you must create a new EndpointConfig.  The endpoint name must be unique within an Amazon Web Services Region in your Amazon Web Services account.  When it receives the request, SageMaker creates the endpoint, launches the resources (ML compute instances), and deploys the model(s) on them.   When you call CreateEndpoint, a load call is made to DynamoDB to verify that your endpoint configuration exists. When you read data from a DynamoDB table supporting  Eventually Consistent Reads , the response might not reflect the results of a recently completed write operation. The response might include some stale data. If the dependent entities are not yet in DynamoDB, this causes a validation error. If you repeat your read request after a short time, the response should return the latest data. So retry logic is recommended to handle these possible issues. We also recommend that customers call DescribeEndpointConfig before calling CreateEndpoint to minimize the potential impact of a DynamoDB eventually consistent read.  When SageMaker receives the request, it sets the endpoint status to Creating. After it creates the endpoint, it sets the status to InService. SageMaker can then process incoming requests for inferences. To check the status of an endpoint, use the DescribeEndpoint API. If any of the models hosted at this endpoint get model data from an Amazon S3 location, SageMaker uses Amazon Web Services Security Token Service to download model artifacts from the S3 path you provided. Amazon Web Services STS is activated in your IAM user account by default. If you previously deactivated Amazon Web Services STS for a region, you need to reactivate Amazon Web Services STS for that region. For more information, see Activating and Deactivating Amazon Web Services STS in an Amazon Web Services Region in the Amazon Web Services Identity and Access Management User Guide.   To add the IAM role policies for using this API operation, go to the IAM console, and choose Roles in the left navigation pane. Search the IAM role that you want to grant access to use the CreateEndpoint and CreateEndpointConfig API operations, add the following policies to the role.    Option 1: For a full SageMaker access, search and attach the AmazonSageMakerFullAccess policy.   Option 2: For granting a limited access to an IAM role, paste the following Action elements manually into the JSON file of the IAM role:   "Action": ["sagemaker:CreateEndpoint", "sagemaker:CreateEndpointConfig"]   "Resource": [   "arn:aws:sagemaker:region:account-id:endpoint/endpointName"   "arn:aws:sagemaker:region:account-id:endpoint-config/endpointConfigName"   ]  For more information, see SageMaker API Permissions: Actions, Permissions, and Resources Reference.   
+    * Creates an endpoint using the endpoint configuration specified in the request. SageMaker uses the endpoint to provision resources and deploy models. You create the endpoint configuration with the CreateEndpointConfig API.   Use this API to deploy models using SageMaker hosting services.  For an example that calls this method when deploying a model to SageMaker hosting services, see the Create Endpoint example notebook.    You must not delete an EndpointConfig that is in use by an endpoint that is live or while the UpdateEndpoint or CreateEndpoint operations are being performed on the endpoint. To update an endpoint, you must create a new EndpointConfig.  The endpoint name must be unique within an Amazon Web Services Region in your Amazon Web Services account.  When it receives the request, SageMaker creates the endpoint, launches the resources (ML compute instances), and deploys the model(s) on them.   When you call CreateEndpoint, a load call is made to DynamoDB to verify that your endpoint configuration exists. When you read data from a DynamoDB table supporting  Eventually Consistent Reads , the response might not reflect the results of a recently completed write operation. The response might include some stale data. If the dependent entities are not yet in DynamoDB, this causes a validation error. If you repeat your read request after a short time, the response should return the latest data. So retry logic is recommended to handle these possible issues. We also recommend that customers call DescribeEndpointConfig before calling CreateEndpoint to minimize the potential impact of a DynamoDB eventually consistent read.  When SageMaker receives the request, it sets the endpoint status to Creating. After it creates the endpoint, it sets the status to InService. SageMaker can then process incoming requests for inferences. To check the status of an endpoint, use the DescribeEndpoint API. If any of the models hosted at this endpoint get model data from an Amazon S3 location, SageMaker uses Amazon Web Services Security Token Service to download model artifacts from the S3 path you provided. Amazon Web Services STS is activated in your Amazon Web Services account by default. If you previously deactivated Amazon Web Services STS for a region, you need to reactivate Amazon Web Services STS for that region. For more information, see Activating and Deactivating Amazon Web Services STS in an Amazon Web Services Region in the Amazon Web Services Identity and Access Management User Guide.   To add the IAM role policies for using this API operation, go to the IAM console, and choose Roles in the left navigation pane. Search the IAM role that you want to grant access to use the CreateEndpoint and CreateEndpointConfig API operations, add the following policies to the role.    Option 1: For a full SageMaker access, search and attach the AmazonSageMakerFullAccess policy.   Option 2: For granting a limited access to an IAM role, paste the following Action elements manually into the JSON file of the IAM role:   "Action": ["sagemaker:CreateEndpoint", "sagemaker:CreateEndpointConfig"]   "Resource": [   "arn:aws:sagemaker:region:account-id:endpoint/endpointName"   "arn:aws:sagemaker:region:account-id:endpoint-config/endpointConfigName"   ]  For more information, see SageMaker API Permissions: Actions, Permissions, and Resources Reference.   
     */
   def createEndpoint(params: CreateEndpointInput): Request[CreateEndpointOutput, AWSError] = js.native
   def createEndpoint(
@@ -328,12 +342,12 @@ trait SageMaker extends Service {
   ): Request[CreateEndpointConfigOutput, AWSError] = js.native
   
   /**
-    * Creates an SageMaker experiment. An experiment is a collection of trials that are observed, compared and evaluated as a group. A trial is a set of steps, called trial components, that produce a machine learning model. The goal of an experiment is to determine the components that produce the best model. Multiple trials are performed, each one isolating and measuring the impact of a change to one or more inputs, while keeping the remaining inputs constant. When you use SageMaker Studio or the SageMaker Python SDK, all experiments, trials, and trial components are automatically tracked, logged, and indexed. When you use the Amazon Web Services SDK for Python (Boto), you must use the logging APIs provided by the SDK. You can add tags to experiments, trials, trial components and then use the Search API to search for the tags. To add a description to an experiment, specify the optional Description parameter. To add a description later, or to change the description, call the UpdateExperiment API. To get a list of all your experiments, call the ListExperiments API. To view an experiment's properties, call the DescribeExperiment API. To get a list of all the trials associated with an experiment, call the ListTrials API. To create a trial call the CreateTrial API.
+    * Creates a SageMaker experiment. An experiment is a collection of trials that are observed, compared and evaluated as a group. A trial is a set of steps, called trial components, that produce a machine learning model.  In the Studio UI, trials are referred to as run groups and trial components are referred to as runs.  The goal of an experiment is to determine the components that produce the best model. Multiple trials are performed, each one isolating and measuring the impact of a change to one or more inputs, while keeping the remaining inputs constant. When you use SageMaker Studio or the SageMaker Python SDK, all experiments, trials, and trial components are automatically tracked, logged, and indexed. When you use the Amazon Web Services SDK for Python (Boto), you must use the logging APIs provided by the SDK. You can add tags to experiments, trials, trial components and then use the Search API to search for the tags. To add a description to an experiment, specify the optional Description parameter. To add a description later, or to change the description, call the UpdateExperiment API. To get a list of all your experiments, call the ListExperiments API. To view an experiment's properties, call the DescribeExperiment API. To get a list of all the trials associated with an experiment, call the ListTrials API. To create a trial call the CreateTrial API.
     */
   def createExperiment(): Request[CreateExperimentResponse, AWSError] = js.native
   def createExperiment(callback: js.Function2[/* err */ AWSError, /* data */ CreateExperimentResponse, Unit]): Request[CreateExperimentResponse, AWSError] = js.native
   /**
-    * Creates an SageMaker experiment. An experiment is a collection of trials that are observed, compared and evaluated as a group. A trial is a set of steps, called trial components, that produce a machine learning model. The goal of an experiment is to determine the components that produce the best model. Multiple trials are performed, each one isolating and measuring the impact of a change to one or more inputs, while keeping the remaining inputs constant. When you use SageMaker Studio or the SageMaker Python SDK, all experiments, trials, and trial components are automatically tracked, logged, and indexed. When you use the Amazon Web Services SDK for Python (Boto), you must use the logging APIs provided by the SDK. You can add tags to experiments, trials, trial components and then use the Search API to search for the tags. To add a description to an experiment, specify the optional Description parameter. To add a description later, or to change the description, call the UpdateExperiment API. To get a list of all your experiments, call the ListExperiments API. To view an experiment's properties, call the DescribeExperiment API. To get a list of all the trials associated with an experiment, call the ListTrials API. To create a trial call the CreateTrial API.
+    * Creates a SageMaker experiment. An experiment is a collection of trials that are observed, compared and evaluated as a group. A trial is a set of steps, called trial components, that produce a machine learning model.  In the Studio UI, trials are referred to as run groups and trial components are referred to as runs.  The goal of an experiment is to determine the components that produce the best model. Multiple trials are performed, each one isolating and measuring the impact of a change to one or more inputs, while keeping the remaining inputs constant. When you use SageMaker Studio or the SageMaker Python SDK, all experiments, trials, and trial components are automatically tracked, logged, and indexed. When you use the Amazon Web Services SDK for Python (Boto), you must use the logging APIs provided by the SDK. You can add tags to experiments, trials, trial components and then use the Search API to search for the tags. To add a description to an experiment, specify the optional Description parameter. To add a description later, or to change the description, call the UpdateExperiment API. To get a list of all your experiments, call the ListExperiments API. To view an experiment's properties, call the DescribeExperiment API. To get a list of all the trials associated with an experiment, call the ListTrials API. To create a trial call the CreateTrial API.
     */
   def createExperiment(params: CreateExperimentRequest): Request[CreateExperimentResponse, AWSError] = js.native
   def createExperiment(
@@ -368,6 +382,20 @@ trait SageMaker extends Service {
     params: CreateFlowDefinitionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateFlowDefinitionResponse, Unit]
   ): Request[CreateFlowDefinitionResponse, AWSError] = js.native
+  
+  /**
+    * Create a hub.  Hub APIs are only callable through SageMaker Studio. 
+    */
+  def createHub(): Request[CreateHubResponse, AWSError] = js.native
+  def createHub(callback: js.Function2[/* err */ AWSError, /* data */ CreateHubResponse, Unit]): Request[CreateHubResponse, AWSError] = js.native
+  /**
+    * Create a hub.  Hub APIs are only callable through SageMaker Studio. 
+    */
+  def createHub(params: CreateHubRequest): Request[CreateHubResponse, AWSError] = js.native
+  def createHub(
+    params: CreateHubRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateHubResponse, Unit]
+  ): Request[CreateHubResponse, AWSError] = js.native
   
   /**
     * Defines the settings you will use for the human review workflow user interface. Reviewers will see a three-panel interface with an instruction area, the item to review, and an input area.
@@ -426,6 +454,20 @@ trait SageMaker extends Service {
   ): Request[CreateImageVersionResponse, AWSError] = js.native
   
   /**
+    *  Creates an inference experiment using the configurations specified in the request.   Use this API to setup and schedule an experiment to compare model variants on a Amazon SageMaker inference endpoint. For more information about inference experiments, see Shadow tests.   Amazon SageMaker begins your experiment at the scheduled time and routes traffic to your endpoint's model variants based on your specified configuration.   While the experiment is in progress or after it has concluded, you can view metrics that compare your model variants. For more information, see View, monitor, and edit shadow tests. 
+    */
+  def createInferenceExperiment(): Request[CreateInferenceExperimentResponse, AWSError] = js.native
+  def createInferenceExperiment(callback: js.Function2[/* err */ AWSError, /* data */ CreateInferenceExperimentResponse, Unit]): Request[CreateInferenceExperimentResponse, AWSError] = js.native
+  /**
+    *  Creates an inference experiment using the configurations specified in the request.   Use this API to setup and schedule an experiment to compare model variants on a Amazon SageMaker inference endpoint. For more information about inference experiments, see Shadow tests.   Amazon SageMaker begins your experiment at the scheduled time and routes traffic to your endpoint's model variants based on your specified configuration.   While the experiment is in progress or after it has concluded, you can view metrics that compare your model variants. For more information, see View, monitor, and edit shadow tests. 
+    */
+  def createInferenceExperiment(params: CreateInferenceExperimentRequest): Request[CreateInferenceExperimentResponse, AWSError] = js.native
+  def createInferenceExperiment(
+    params: CreateInferenceExperimentRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateInferenceExperimentResponse, Unit]
+  ): Request[CreateInferenceExperimentResponse, AWSError] = js.native
+  
+  /**
     * Starts a recommendation job. You can create either an instance recommendation or load test job.
     */
   def createInferenceRecommendationsJob(): Request[CreateInferenceRecommendationsJobResponse, AWSError] = js.native
@@ -482,6 +524,34 @@ trait SageMaker extends Service {
     params: CreateModelBiasJobDefinitionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateModelBiasJobDefinitionResponse, Unit]
   ): Request[CreateModelBiasJobDefinitionResponse, AWSError] = js.native
+  
+  /**
+    * Creates an Amazon SageMaker Model Card. For information about how to use model cards, see Amazon SageMaker Model Card.
+    */
+  def createModelCard(): Request[CreateModelCardResponse, AWSError] = js.native
+  def createModelCard(callback: js.Function2[/* err */ AWSError, /* data */ CreateModelCardResponse, Unit]): Request[CreateModelCardResponse, AWSError] = js.native
+  /**
+    * Creates an Amazon SageMaker Model Card. For information about how to use model cards, see Amazon SageMaker Model Card.
+    */
+  def createModelCard(params: CreateModelCardRequest): Request[CreateModelCardResponse, AWSError] = js.native
+  def createModelCard(
+    params: CreateModelCardRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateModelCardResponse, Unit]
+  ): Request[CreateModelCardResponse, AWSError] = js.native
+  
+  /**
+    * Creates an Amazon SageMaker Model Card export job.
+    */
+  def createModelCardExportJob(): Request[CreateModelCardExportJobResponse, AWSError] = js.native
+  def createModelCardExportJob(callback: js.Function2[/* err */ AWSError, /* data */ CreateModelCardExportJobResponse, Unit]): Request[CreateModelCardExportJobResponse, AWSError] = js.native
+  /**
+    * Creates an Amazon SageMaker Model Card export job.
+    */
+  def createModelCardExportJob(params: CreateModelCardExportJobRequest): Request[CreateModelCardExportJobResponse, AWSError] = js.native
+  def createModelCardExportJob(
+    params: CreateModelCardExportJobRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateModelCardExportJobResponse, Unit]
+  ): Request[CreateModelCardExportJobResponse, AWSError] = js.native
   
   /**
     * Creates the definition for a model explainability job.
@@ -544,12 +614,12 @@ trait SageMaker extends Service {
   ): Request[CreateModelQualityJobDefinitionResponse, AWSError] = js.native
   
   /**
-    * Creates a schedule that regularly starts Amazon SageMaker Processing Jobs to monitor the data captured for an Amazon SageMaker Endoint.
+    * Creates a schedule that regularly starts Amazon SageMaker Processing Jobs to monitor the data captured for an Amazon SageMaker Endpoint.
     */
   def createMonitoringSchedule(): Request[CreateMonitoringScheduleResponse, AWSError] = js.native
   def createMonitoringSchedule(callback: js.Function2[/* err */ AWSError, /* data */ CreateMonitoringScheduleResponse, Unit]): Request[CreateMonitoringScheduleResponse, AWSError] = js.native
   /**
-    * Creates a schedule that regularly starts Amazon SageMaker Processing Jobs to monitor the data captured for an Amazon SageMaker Endoint.
+    * Creates a schedule that regularly starts Amazon SageMaker Processing Jobs to monitor the data captured for an Amazon SageMaker Endpoint.
     */
   def createMonitoringSchedule(params: CreateMonitoringScheduleRequest): Request[CreateMonitoringScheduleResponse, AWSError] = js.native
   def createMonitoringSchedule(
@@ -660,6 +730,20 @@ trait SageMaker extends Service {
   ): Request[CreateProjectOutput, AWSError] = js.native
   
   /**
+    * Creates a space used for real time collaboration in a Domain.
+    */
+  def createSpace(): Request[CreateSpaceResponse, AWSError] = js.native
+  def createSpace(callback: js.Function2[/* err */ AWSError, /* data */ CreateSpaceResponse, Unit]): Request[CreateSpaceResponse, AWSError] = js.native
+  /**
+    * Creates a space used for real time collaboration in a Domain.
+    */
+  def createSpace(params: CreateSpaceRequest): Request[CreateSpaceResponse, AWSError] = js.native
+  def createSpace(
+    params: CreateSpaceRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateSpaceResponse, Unit]
+  ): Request[CreateSpaceResponse, AWSError] = js.native
+  
+  /**
     * Creates a new Studio Lifecycle Configuration.
     */
   def createStudioLifecycleConfig(): Request[CreateStudioLifecycleConfigResponse, AWSError] = js.native
@@ -744,12 +828,12 @@ trait SageMaker extends Service {
   ): Request[CreateUserProfileResponse, AWSError] = js.native
   
   /**
-    * Use this operation to create a workforce. This operation will return an error if a workforce already exists in the Amazon Web Services Region that you specify. You can only create one workforce in each Amazon Web Services Region per Amazon Web Services account. If you want to create a new workforce in an Amazon Web Services Region where a workforce already exists, use the API operation to delete the existing workforce and then use CreateWorkforce to create a new workforce. To create a private workforce using Amazon Cognito, you must specify a Cognito user pool in CognitoConfig. You can also create an Amazon Cognito workforce using the Amazon SageMaker console. For more information, see  Create a Private Workforce (Amazon Cognito). To create a private workforce using your own OIDC Identity Provider (IdP), specify your IdP configuration in OidcConfig. Your OIDC IdP must support groups because groups are used by Ground Truth and Amazon A2I to create work teams. For more information, see  Create a Private Workforce (OIDC IdP).
+    * Use this operation to create a workforce. This operation will return an error if a workforce already exists in the Amazon Web Services Region that you specify. You can only create one workforce in each Amazon Web Services Region per Amazon Web Services account. If you want to create a new workforce in an Amazon Web Services Region where a workforce already exists, use the DeleteWorkforce API operation to delete the existing workforce and then use CreateWorkforce to create a new workforce. To create a private workforce using Amazon Cognito, you must specify a Cognito user pool in CognitoConfig. You can also create an Amazon Cognito workforce using the Amazon SageMaker console. For more information, see  Create a Private Workforce (Amazon Cognito). To create a private workforce using your own OIDC Identity Provider (IdP), specify your IdP configuration in OidcConfig. Your OIDC IdP must support groups because groups are used by Ground Truth and Amazon A2I to create work teams. For more information, see  Create a Private Workforce (OIDC IdP).
     */
   def createWorkforce(): Request[CreateWorkforceResponse, AWSError] = js.native
   def createWorkforce(callback: js.Function2[/* err */ AWSError, /* data */ CreateWorkforceResponse, Unit]): Request[CreateWorkforceResponse, AWSError] = js.native
   /**
-    * Use this operation to create a workforce. This operation will return an error if a workforce already exists in the Amazon Web Services Region that you specify. You can only create one workforce in each Amazon Web Services Region per Amazon Web Services account. If you want to create a new workforce in an Amazon Web Services Region where a workforce already exists, use the API operation to delete the existing workforce and then use CreateWorkforce to create a new workforce. To create a private workforce using Amazon Cognito, you must specify a Cognito user pool in CognitoConfig. You can also create an Amazon Cognito workforce using the Amazon SageMaker console. For more information, see  Create a Private Workforce (Amazon Cognito). To create a private workforce using your own OIDC Identity Provider (IdP), specify your IdP configuration in OidcConfig. Your OIDC IdP must support groups because groups are used by Ground Truth and Amazon A2I to create work teams. For more information, see  Create a Private Workforce (OIDC IdP).
+    * Use this operation to create a workforce. This operation will return an error if a workforce already exists in the Amazon Web Services Region that you specify. You can only create one workforce in each Amazon Web Services Region per Amazon Web Services account. If you want to create a new workforce in an Amazon Web Services Region where a workforce already exists, use the DeleteWorkforce API operation to delete the existing workforce and then use CreateWorkforce to create a new workforce. To create a private workforce using Amazon Cognito, you must specify a Cognito user pool in CognitoConfig. You can also create an Amazon Cognito workforce using the Amazon SageMaker console. For more information, see  Create a Private Workforce (Amazon Cognito). To create a private workforce using your own OIDC Identity Provider (IdP), specify your IdP configuration in OidcConfig. Your OIDC IdP must support groups because groups are used by Ground Truth and Amazon A2I to create work teams. For more information, see  Create a Private Workforce (OIDC IdP).
     */
   def createWorkforce(params: CreateWorkforceRequest): Request[CreateWorkforceResponse, AWSError] = js.native
   def createWorkforce(
@@ -1021,12 +1105,37 @@ trait SageMaker extends Service {
   ): Request[DeleteFlowDefinitionResponse, AWSError] = js.native
   
   /**
-    * Use this operation to delete a human task user interface (worker task template).  To see a list of human task user interfaces (work task templates) in your account, use . When you delete a worker task template, it no longer appears when you call ListHumanTaskUis.
+    * Delete a hub.  Hub APIs are only callable through SageMaker Studio. 
+    */
+  def deleteHub(): Request[js.Object, AWSError] = js.native
+  def deleteHub(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Delete a hub.  Hub APIs are only callable through SageMaker Studio. 
+    */
+  def deleteHub(params: DeleteHubRequest): Request[js.Object, AWSError] = js.native
+  def deleteHub(params: DeleteHubRequest, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Delete the contents of a hub.  Hub APIs are only callable through SageMaker Studio. 
+    */
+  def deleteHubContent(): Request[js.Object, AWSError] = js.native
+  def deleteHubContent(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Delete the contents of a hub.  Hub APIs are only callable through SageMaker Studio. 
+    */
+  def deleteHubContent(params: DeleteHubContentRequest): Request[js.Object, AWSError] = js.native
+  def deleteHubContent(
+    params: DeleteHubContentRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Use this operation to delete a human task user interface (worker task template).  To see a list of human task user interfaces (work task templates) in your account, use ListHumanTaskUis. When you delete a worker task template, it no longer appears when you call ListHumanTaskUis.
     */
   def deleteHumanTaskUi(): Request[DeleteHumanTaskUiResponse, AWSError] = js.native
   def deleteHumanTaskUi(callback: js.Function2[/* err */ AWSError, /* data */ DeleteHumanTaskUiResponse, Unit]): Request[DeleteHumanTaskUiResponse, AWSError] = js.native
   /**
-    * Use this operation to delete a human task user interface (worker task template).  To see a list of human task user interfaces (work task templates) in your account, use . When you delete a worker task template, it no longer appears when you call ListHumanTaskUis.
+    * Use this operation to delete a human task user interface (worker task template).  To see a list of human task user interfaces (work task templates) in your account, use ListHumanTaskUis. When you delete a worker task template, it no longer appears when you call ListHumanTaskUis.
     */
   def deleteHumanTaskUi(params: DeleteHumanTaskUiRequest): Request[DeleteHumanTaskUiResponse, AWSError] = js.native
   def deleteHumanTaskUi(
@@ -1063,6 +1172,20 @@ trait SageMaker extends Service {
   ): Request[DeleteImageVersionResponse, AWSError] = js.native
   
   /**
+    * Deletes an inference experiment.   This operation does not delete your endpoint, variants, or any underlying resources. This operation only deletes the metadata of your experiment.  
+    */
+  def deleteInferenceExperiment(): Request[DeleteInferenceExperimentResponse, AWSError] = js.native
+  def deleteInferenceExperiment(callback: js.Function2[/* err */ AWSError, /* data */ DeleteInferenceExperimentResponse, Unit]): Request[DeleteInferenceExperimentResponse, AWSError] = js.native
+  /**
+    * Deletes an inference experiment.   This operation does not delete your endpoint, variants, or any underlying resources. This operation only deletes the metadata of your experiment.  
+    */
+  def deleteInferenceExperiment(params: DeleteInferenceExperimentRequest): Request[DeleteInferenceExperimentResponse, AWSError] = js.native
+  def deleteInferenceExperiment(
+    params: DeleteInferenceExperimentRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteInferenceExperimentResponse, Unit]
+  ): Request[DeleteInferenceExperimentResponse, AWSError] = js.native
+  
+  /**
     * Deletes a model. The DeleteModel API deletes only the model entry that was created in SageMaker when you called the CreateModel API. It does not delete model artifacts, inference code, or the IAM role that you specified when creating the model. 
     */
   def deleteModel(): Request[js.Object, AWSError] = js.native
@@ -1084,6 +1207,20 @@ trait SageMaker extends Service {
   def deleteModelBiasJobDefinition(params: DeleteModelBiasJobDefinitionRequest): Request[js.Object, AWSError] = js.native
   def deleteModelBiasJobDefinition(
     params: DeleteModelBiasJobDefinitionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Deletes an Amazon SageMaker Model Card.
+    */
+  def deleteModelCard(): Request[js.Object, AWSError] = js.native
+  def deleteModelCard(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Deletes an Amazon SageMaker Model Card.
+    */
+  def deleteModelCard(params: DeleteModelCardRequest): Request[js.Object, AWSError] = js.native
+  def deleteModelCard(
+    params: DeleteModelCardRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
   
@@ -1225,6 +1362,17 @@ trait SageMaker extends Service {
   def deleteProject(params: DeleteProjectInput, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   
   /**
+    * Used to delete a space.
+    */
+  def deleteSpace(): Request[js.Object, AWSError] = js.native
+  def deleteSpace(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Used to delete a space.
+    */
+  def deleteSpace(params: DeleteSpaceRequest): Request[js.Object, AWSError] = js.native
+  def deleteSpace(params: DeleteSpaceRequest, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  
+  /**
     * Deletes the Studio Lifecycle Configuration. In order to delete the Lifecycle Configuration, there must be no running apps using the Lifecycle Configuration. You must also remove the Lifecycle Configuration from UserSettings in all Domains and UserProfiles.
     */
   def deleteStudioLifecycleConfig(): Request[js.Object, AWSError] = js.native
@@ -1295,12 +1443,12 @@ trait SageMaker extends Service {
   ): Request[js.Object, AWSError] = js.native
   
   /**
-    * Use this operation to delete a workforce. If you want to create a new workforce in an Amazon Web Services Region where a workforce already exists, use this operation to delete the existing workforce and then use to create a new workforce.  If a private workforce contains one or more work teams, you must use the operation to delete all work teams before you delete the workforce. If you try to delete a workforce that contains one or more work teams, you will recieve a ResourceInUse error. 
+    * Use this operation to delete a workforce. If you want to create a new workforce in an Amazon Web Services Region where a workforce already exists, use this operation to delete the existing workforce and then use CreateWorkforce to create a new workforce.  If a private workforce contains one or more work teams, you must use the DeleteWorkteam operation to delete all work teams before you delete the workforce. If you try to delete a workforce that contains one or more work teams, you will recieve a ResourceInUse error. 
     */
   def deleteWorkforce(): Request[DeleteWorkforceResponse, AWSError] = js.native
   def deleteWorkforce(callback: js.Function2[/* err */ AWSError, /* data */ DeleteWorkforceResponse, Unit]): Request[DeleteWorkforceResponse, AWSError] = js.native
   /**
-    * Use this operation to delete a workforce. If you want to create a new workforce in an Amazon Web Services Region where a workforce already exists, use this operation to delete the existing workforce and then use to create a new workforce.  If a private workforce contains one or more work teams, you must use the operation to delete all work teams before you delete the workforce. If you try to delete a workforce that contains one or more work teams, you will recieve a ResourceInUse error. 
+    * Use this operation to delete a workforce. If you want to create a new workforce in an Amazon Web Services Region where a workforce already exists, use this operation to delete the existing workforce and then use CreateWorkforce to create a new workforce.  If a private workforce contains one or more work teams, you must use the DeleteWorkteam operation to delete all work teams before you delete the workforce. If you try to delete a workforce that contains one or more work teams, you will recieve a ResourceInUse error. 
     */
   def deleteWorkforce(params: DeleteWorkforceRequest): Request[DeleteWorkforceResponse, AWSError] = js.native
   def deleteWorkforce(
@@ -1419,6 +1567,20 @@ trait SageMaker extends Service {
     params: DescribeAutoMLJobRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeAutoMLJobResponse, Unit]
   ): Request[DescribeAutoMLJobResponse, AWSError] = js.native
+  
+  /**
+    * Returns information about an Amazon SageMaker AutoML V2 job.  This API action is callable through SageMaker Canvas only. Calling it directly from the CLI or an SDK results in an error. 
+    */
+  def describeAutoMLJobV2(): Request[DescribeAutoMLJobV2Response, AWSError] = js.native
+  def describeAutoMLJobV2(callback: js.Function2[/* err */ AWSError, /* data */ DescribeAutoMLJobV2Response, Unit]): Request[DescribeAutoMLJobV2Response, AWSError] = js.native
+  /**
+    * Returns information about an Amazon SageMaker AutoML V2 job.  This API action is callable through SageMaker Canvas only. Calling it directly from the CLI or an SDK results in an error. 
+    */
+  def describeAutoMLJobV2(params: DescribeAutoMLJobV2Request): Request[DescribeAutoMLJobV2Response, AWSError] = js.native
+  def describeAutoMLJobV2(
+    params: DescribeAutoMLJobV2Request,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeAutoMLJobV2Response, Unit]
+  ): Request[DescribeAutoMLJobV2Response, AWSError] = js.native
   
   /**
     * Gets details about the specified Git repository.
@@ -1633,6 +1795,34 @@ trait SageMaker extends Service {
   ): Request[DescribeFlowDefinitionResponse, AWSError] = js.native
   
   /**
+    * Describe a hub.  Hub APIs are only callable through SageMaker Studio. 
+    */
+  def describeHub(): Request[DescribeHubResponse, AWSError] = js.native
+  def describeHub(callback: js.Function2[/* err */ AWSError, /* data */ DescribeHubResponse, Unit]): Request[DescribeHubResponse, AWSError] = js.native
+  /**
+    * Describe a hub.  Hub APIs are only callable through SageMaker Studio. 
+    */
+  def describeHub(params: DescribeHubRequest): Request[DescribeHubResponse, AWSError] = js.native
+  def describeHub(
+    params: DescribeHubRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeHubResponse, Unit]
+  ): Request[DescribeHubResponse, AWSError] = js.native
+  
+  /**
+    * Describe the content of a hub.  Hub APIs are only callable through SageMaker Studio. 
+    */
+  def describeHubContent(): Request[DescribeHubContentResponse, AWSError] = js.native
+  def describeHubContent(callback: js.Function2[/* err */ AWSError, /* data */ DescribeHubContentResponse, Unit]): Request[DescribeHubContentResponse, AWSError] = js.native
+  /**
+    * Describe the content of a hub.  Hub APIs are only callable through SageMaker Studio. 
+    */
+  def describeHubContent(params: DescribeHubContentRequest): Request[DescribeHubContentResponse, AWSError] = js.native
+  def describeHubContent(
+    params: DescribeHubContentRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeHubContentResponse, Unit]
+  ): Request[DescribeHubContentResponse, AWSError] = js.native
+  
+  /**
     * Returns information about the requested human task user interface (worker task template).
     */
   def describeHumanTaskUi(): Request[DescribeHumanTaskUiResponse, AWSError] = js.native
@@ -1689,6 +1879,20 @@ trait SageMaker extends Service {
     params: DescribeImageVersionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeImageVersionResponse, Unit]
   ): Request[DescribeImageVersionResponse, AWSError] = js.native
+  
+  /**
+    * Returns details about an inference experiment.
+    */
+  def describeInferenceExperiment(): Request[DescribeInferenceExperimentResponse, AWSError] = js.native
+  def describeInferenceExperiment(callback: js.Function2[/* err */ AWSError, /* data */ DescribeInferenceExperimentResponse, Unit]): Request[DescribeInferenceExperimentResponse, AWSError] = js.native
+  /**
+    * Returns details about an inference experiment.
+    */
+  def describeInferenceExperiment(params: DescribeInferenceExperimentRequest): Request[DescribeInferenceExperimentResponse, AWSError] = js.native
+  def describeInferenceExperiment(
+    params: DescribeInferenceExperimentRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeInferenceExperimentResponse, Unit]
+  ): Request[DescribeInferenceExperimentResponse, AWSError] = js.native
   
   /**
     * Provides the results of the Inference Recommender job. One or more recommendation jobs are returned.
@@ -1763,6 +1967,34 @@ trait SageMaker extends Service {
     params: DescribeModelBiasJobDefinitionRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeModelBiasJobDefinitionResponse, Unit]
   ): Request[DescribeModelBiasJobDefinitionResponse, AWSError] = js.native
+  
+  /**
+    * Describes the content, creation time, and security configuration of an Amazon SageMaker Model Card.
+    */
+  def describeModelCard(): Request[DescribeModelCardResponse, AWSError] = js.native
+  def describeModelCard(callback: js.Function2[/* err */ AWSError, /* data */ DescribeModelCardResponse, Unit]): Request[DescribeModelCardResponse, AWSError] = js.native
+  /**
+    * Describes the content, creation time, and security configuration of an Amazon SageMaker Model Card.
+    */
+  def describeModelCard(params: DescribeModelCardRequest): Request[DescribeModelCardResponse, AWSError] = js.native
+  def describeModelCard(
+    params: DescribeModelCardRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeModelCardResponse, Unit]
+  ): Request[DescribeModelCardResponse, AWSError] = js.native
+  
+  /**
+    * Describes an Amazon SageMaker Model Card export job.
+    */
+  def describeModelCardExportJob(): Request[DescribeModelCardExportJobResponse, AWSError] = js.native
+  def describeModelCardExportJob(callback: js.Function2[/* err */ AWSError, /* data */ DescribeModelCardExportJobResponse, Unit]): Request[DescribeModelCardExportJobResponse, AWSError] = js.native
+  /**
+    * Describes an Amazon SageMaker Model Card export job.
+    */
+  def describeModelCardExportJob(params: DescribeModelCardExportJobRequest): Request[DescribeModelCardExportJobResponse, AWSError] = js.native
+  def describeModelCardExportJob(
+    params: DescribeModelCardExportJobRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeModelCardExportJobResponse, Unit]
+  ): Request[DescribeModelCardExportJobResponse, AWSError] = js.native
   
   /**
     * Returns a description of a model explainability job definition.
@@ -1947,6 +2179,20 @@ trait SageMaker extends Service {
     params: DescribeProjectInput,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeProjectOutput, Unit]
   ): Request[DescribeProjectOutput, AWSError] = js.native
+  
+  /**
+    * Describes the space.
+    */
+  def describeSpace(): Request[DescribeSpaceResponse, AWSError] = js.native
+  def describeSpace(callback: js.Function2[/* err */ AWSError, /* data */ DescribeSpaceResponse, Unit]): Request[DescribeSpaceResponse, AWSError] = js.native
+  /**
+    * Describes the space.
+    */
+  def describeSpace(params: DescribeSpaceRequest): Request[DescribeSpaceResponse, AWSError] = js.native
+  def describeSpace(
+    params: DescribeSpaceRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeSpaceResponse, Unit]
+  ): Request[DescribeSpaceResponse, AWSError] = js.native
   
   /**
     * Describes the Studio Lifecycle Configuration.
@@ -2179,18 +2425,32 @@ trait SageMaker extends Service {
   ): Request[GetSagemakerServicecatalogPortfolioStatusOutput, AWSError] = js.native
   
   /**
-    * An auto-complete API for the search functionality in the Amazon SageMaker console. It returns suggestions of possible matches for the property name to use in Search queries. Provides suggestions for HyperParameters, Tags, and Metrics.
+    * An auto-complete API for the search functionality in the SageMaker console. It returns suggestions of possible matches for the property name to use in Search queries. Provides suggestions for HyperParameters, Tags, and Metrics.
     */
   def getSearchSuggestions(): Request[GetSearchSuggestionsResponse, AWSError] = js.native
   def getSearchSuggestions(callback: js.Function2[/* err */ AWSError, /* data */ GetSearchSuggestionsResponse, Unit]): Request[GetSearchSuggestionsResponse, AWSError] = js.native
   /**
-    * An auto-complete API for the search functionality in the Amazon SageMaker console. It returns suggestions of possible matches for the property name to use in Search queries. Provides suggestions for HyperParameters, Tags, and Metrics.
+    * An auto-complete API for the search functionality in the SageMaker console. It returns suggestions of possible matches for the property name to use in Search queries. Provides suggestions for HyperParameters, Tags, and Metrics.
     */
   def getSearchSuggestions(params: GetSearchSuggestionsRequest): Request[GetSearchSuggestionsResponse, AWSError] = js.native
   def getSearchSuggestions(
     params: GetSearchSuggestionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetSearchSuggestionsResponse, Unit]
   ): Request[GetSearchSuggestionsResponse, AWSError] = js.native
+  
+  /**
+    * Import hub content.  Hub APIs are only callable through SageMaker Studio. 
+    */
+  def importHubContent(): Request[ImportHubContentResponse, AWSError] = js.native
+  def importHubContent(callback: js.Function2[/* err */ AWSError, /* data */ ImportHubContentResponse, Unit]): Request[ImportHubContentResponse, AWSError] = js.native
+  /**
+    * Import hub content.  Hub APIs are only callable through SageMaker Studio. 
+    */
+  def importHubContent(params: ImportHubContentRequest): Request[ImportHubContentResponse, AWSError] = js.native
+  def importHubContent(
+    params: ImportHubContentRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ImportHubContentResponse, Unit]
+  ): Request[ImportHubContentResponse, AWSError] = js.native
   
   /**
     * Lists the actions in your account and their properties.
@@ -2219,6 +2479,20 @@ trait SageMaker extends Service {
     params: ListAlgorithmsInput,
     callback: js.Function2[/* err */ AWSError, /* data */ ListAlgorithmsOutput, Unit]
   ): Request[ListAlgorithmsOutput, AWSError] = js.native
+  
+  /**
+    * Lists the aliases of a specified image or image version.
+    */
+  def listAliases(): Request[ListAliasesResponse, AWSError] = js.native
+  def listAliases(callback: js.Function2[/* err */ AWSError, /* data */ ListAliasesResponse, Unit]): Request[ListAliasesResponse, AWSError] = js.native
+  /**
+    * Lists the aliases of a specified image or image version.
+    */
+  def listAliases(params: ListAliasesRequest): Request[ListAliasesResponse, AWSError] = js.native
+  def listAliases(
+    params: ListAliasesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListAliasesResponse, Unit]
+  ): Request[ListAliasesResponse, AWSError] = js.native
   
   /**
     * Lists the AppImageConfigs in your account and their properties. The list can be filtered by creation time or modified time, and whether the AppImageConfig name contains a specified string.
@@ -2501,6 +2775,48 @@ trait SageMaker extends Service {
   ): Request[ListFlowDefinitionsResponse, AWSError] = js.native
   
   /**
+    * List hub content versions.  Hub APIs are only callable through SageMaker Studio. 
+    */
+  def listHubContentVersions(): Request[ListHubContentVersionsResponse, AWSError] = js.native
+  def listHubContentVersions(callback: js.Function2[/* err */ AWSError, /* data */ ListHubContentVersionsResponse, Unit]): Request[ListHubContentVersionsResponse, AWSError] = js.native
+  /**
+    * List hub content versions.  Hub APIs are only callable through SageMaker Studio. 
+    */
+  def listHubContentVersions(params: ListHubContentVersionsRequest): Request[ListHubContentVersionsResponse, AWSError] = js.native
+  def listHubContentVersions(
+    params: ListHubContentVersionsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListHubContentVersionsResponse, Unit]
+  ): Request[ListHubContentVersionsResponse, AWSError] = js.native
+  
+  /**
+    * List the contents of a hub.  Hub APIs are only callable through SageMaker Studio. 
+    */
+  def listHubContents(): Request[ListHubContentsResponse, AWSError] = js.native
+  def listHubContents(callback: js.Function2[/* err */ AWSError, /* data */ ListHubContentsResponse, Unit]): Request[ListHubContentsResponse, AWSError] = js.native
+  /**
+    * List the contents of a hub.  Hub APIs are only callable through SageMaker Studio. 
+    */
+  def listHubContents(params: ListHubContentsRequest): Request[ListHubContentsResponse, AWSError] = js.native
+  def listHubContents(
+    params: ListHubContentsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListHubContentsResponse, Unit]
+  ): Request[ListHubContentsResponse, AWSError] = js.native
+  
+  /**
+    * List all existing hubs.  Hub APIs are only callable through SageMaker Studio. 
+    */
+  def listHubs(): Request[ListHubsResponse, AWSError] = js.native
+  def listHubs(callback: js.Function2[/* err */ AWSError, /* data */ ListHubsResponse, Unit]): Request[ListHubsResponse, AWSError] = js.native
+  /**
+    * List all existing hubs.  Hub APIs are only callable through SageMaker Studio. 
+    */
+  def listHubs(params: ListHubsRequest): Request[ListHubsResponse, AWSError] = js.native
+  def listHubs(
+    params: ListHubsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListHubsResponse, Unit]
+  ): Request[ListHubsResponse, AWSError] = js.native
+  
+  /**
     * Returns information about the human task user interfaces in your account.
     */
   def listHumanTaskUis(): Request[ListHumanTaskUisResponse, AWSError] = js.native
@@ -2555,6 +2871,20 @@ trait SageMaker extends Service {
     params: ListImagesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListImagesResponse, Unit]
   ): Request[ListImagesResponse, AWSError] = js.native
+  
+  /**
+    * Returns the list of all inference experiments.
+    */
+  def listInferenceExperiments(): Request[ListInferenceExperimentsResponse, AWSError] = js.native
+  def listInferenceExperiments(callback: js.Function2[/* err */ AWSError, /* data */ ListInferenceExperimentsResponse, Unit]): Request[ListInferenceExperimentsResponse, AWSError] = js.native
+  /**
+    * Returns the list of all inference experiments.
+    */
+  def listInferenceExperiments(params: ListInferenceExperimentsRequest): Request[ListInferenceExperimentsResponse, AWSError] = js.native
+  def listInferenceExperiments(
+    params: ListInferenceExperimentsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListInferenceExperimentsResponse, Unit]
+  ): Request[ListInferenceExperimentsResponse, AWSError] = js.native
   
   /**
     * Returns a list of the subtasks for an Inference Recommender job. The supported subtasks are benchmarks, which evaluate the performance of your model on different instance types.
@@ -2645,6 +2975,48 @@ trait SageMaker extends Service {
   ): Request[ListModelBiasJobDefinitionsResponse, AWSError] = js.native
   
   /**
+    * List the export jobs for the Amazon SageMaker Model Card.
+    */
+  def listModelCardExportJobs(): Request[ListModelCardExportJobsResponse, AWSError] = js.native
+  def listModelCardExportJobs(callback: js.Function2[/* err */ AWSError, /* data */ ListModelCardExportJobsResponse, Unit]): Request[ListModelCardExportJobsResponse, AWSError] = js.native
+  /**
+    * List the export jobs for the Amazon SageMaker Model Card.
+    */
+  def listModelCardExportJobs(params: ListModelCardExportJobsRequest): Request[ListModelCardExportJobsResponse, AWSError] = js.native
+  def listModelCardExportJobs(
+    params: ListModelCardExportJobsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListModelCardExportJobsResponse, Unit]
+  ): Request[ListModelCardExportJobsResponse, AWSError] = js.native
+  
+  /**
+    * List existing versions of an Amazon SageMaker Model Card.
+    */
+  def listModelCardVersions(): Request[ListModelCardVersionsResponse, AWSError] = js.native
+  def listModelCardVersions(callback: js.Function2[/* err */ AWSError, /* data */ ListModelCardVersionsResponse, Unit]): Request[ListModelCardVersionsResponse, AWSError] = js.native
+  /**
+    * List existing versions of an Amazon SageMaker Model Card.
+    */
+  def listModelCardVersions(params: ListModelCardVersionsRequest): Request[ListModelCardVersionsResponse, AWSError] = js.native
+  def listModelCardVersions(
+    params: ListModelCardVersionsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListModelCardVersionsResponse, Unit]
+  ): Request[ListModelCardVersionsResponse, AWSError] = js.native
+  
+  /**
+    * List existing model cards.
+    */
+  def listModelCards(): Request[ListModelCardsResponse, AWSError] = js.native
+  def listModelCards(callback: js.Function2[/* err */ AWSError, /* data */ ListModelCardsResponse, Unit]): Request[ListModelCardsResponse, AWSError] = js.native
+  /**
+    * List existing model cards.
+    */
+  def listModelCards(params: ListModelCardsRequest): Request[ListModelCardsResponse, AWSError] = js.native
+  def listModelCards(
+    params: ListModelCardsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListModelCardsResponse, Unit]
+  ): Request[ListModelCardsResponse, AWSError] = js.native
+  
+  /**
     * Lists model explainability job definitions that satisfy various filters.
     */
   def listModelExplainabilityJobDefinitions(): Request[ListModelExplainabilityJobDefinitionsResponse, AWSError] = js.native
@@ -2731,6 +3103,34 @@ trait SageMaker extends Service {
     params: ListModelsInput,
     callback: js.Function2[/* err */ AWSError, /* data */ ListModelsOutput, Unit]
   ): Request[ListModelsOutput, AWSError] = js.native
+  
+  /**
+    * Gets a list of past alerts in a model monitoring schedule.
+    */
+  def listMonitoringAlertHistory(): Request[ListMonitoringAlertHistoryResponse, AWSError] = js.native
+  def listMonitoringAlertHistory(callback: js.Function2[/* err */ AWSError, /* data */ ListMonitoringAlertHistoryResponse, Unit]): Request[ListMonitoringAlertHistoryResponse, AWSError] = js.native
+  /**
+    * Gets a list of past alerts in a model monitoring schedule.
+    */
+  def listMonitoringAlertHistory(params: ListMonitoringAlertHistoryRequest): Request[ListMonitoringAlertHistoryResponse, AWSError] = js.native
+  def listMonitoringAlertHistory(
+    params: ListMonitoringAlertHistoryRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListMonitoringAlertHistoryResponse, Unit]
+  ): Request[ListMonitoringAlertHistoryResponse, AWSError] = js.native
+  
+  /**
+    * Gets the alerts for a single monitoring schedule.
+    */
+  def listMonitoringAlerts(): Request[ListMonitoringAlertsResponse, AWSError] = js.native
+  def listMonitoringAlerts(callback: js.Function2[/* err */ AWSError, /* data */ ListMonitoringAlertsResponse, Unit]): Request[ListMonitoringAlertsResponse, AWSError] = js.native
+  /**
+    * Gets the alerts for a single monitoring schedule.
+    */
+  def listMonitoringAlerts(params: ListMonitoringAlertsRequest): Request[ListMonitoringAlertsResponse, AWSError] = js.native
+  def listMonitoringAlerts(
+    params: ListMonitoringAlertsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListMonitoringAlertsResponse, Unit]
+  ): Request[ListMonitoringAlertsResponse, AWSError] = js.native
   
   /**
     * Returns list of all monitoring job executions.
@@ -2875,6 +3275,20 @@ trait SageMaker extends Service {
     params: ListProjectsInput,
     callback: js.Function2[/* err */ AWSError, /* data */ ListProjectsOutput, Unit]
   ): Request[ListProjectsOutput, AWSError] = js.native
+  
+  /**
+    * Lists spaces.
+    */
+  def listSpaces(): Request[ListSpacesResponse, AWSError] = js.native
+  def listSpaces(callback: js.Function2[/* err */ AWSError, /* data */ ListSpacesResponse, Unit]): Request[ListSpacesResponse, AWSError] = js.native
+  /**
+    * Lists spaces.
+    */
+  def listSpaces(params: ListSpacesRequest): Request[ListSpacesResponse, AWSError] = js.native
+  def listSpaces(
+    params: ListSpacesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListSpacesResponse, Unit]
+  ): Request[ListSpacesResponse, AWSError] = js.native
   
   /**
     * Lists devices allocated to the stage, containing detailed device information and deployment status.
@@ -3122,12 +3536,12 @@ trait SageMaker extends Service {
   ): Request[RetryPipelineExecutionResponse, AWSError] = js.native
   
   /**
-    * Finds Amazon SageMaker resources that match a search query. Matching resources are returned as a list of SearchRecord objects in the response. You can sort the search results by any resource property in a ascending or descending order. You can query against the following value types: numeric, text, Boolean, and timestamp.
+    * Finds SageMaker resources that match a search query. Matching resources are returned as a list of SearchRecord objects in the response. You can sort the search results by any resource property in a ascending or descending order. You can query against the following value types: numeric, text, Boolean, and timestamp.  The Search API may provide access to otherwise restricted data. See Amazon SageMaker API Permissions: Actions, Permissions, and Resources Reference for more information. 
     */
   def search(): Request[SearchResponse, AWSError] = js.native
   def search(callback: js.Function2[/* err */ AWSError, /* data */ SearchResponse, Unit]): Request[SearchResponse, AWSError] = js.native
   /**
-    * Finds Amazon SageMaker resources that match a search query. Matching resources are returned as a list of SearchRecord objects in the response. You can sort the search results by any resource property in a ascending or descending order. You can query against the following value types: numeric, text, Boolean, and timestamp.
+    * Finds SageMaker resources that match a search query. Matching resources are returned as a list of SearchRecord objects in the response. You can sort the search results by any resource property in a ascending or descending order. You can query against the following value types: numeric, text, Boolean, and timestamp.  The Search API may provide access to otherwise restricted data. See Amazon SageMaker API Permissions: Actions, Permissions, and Resources Reference for more information. 
     */
   def search(params: SearchRequest): Request[SearchResponse, AWSError] = js.native
   def search(params: SearchRequest, callback: js.Function2[/* err */ AWSError, /* data */ SearchResponse, Unit]): Request[SearchResponse, AWSError] = js.native
@@ -3179,6 +3593,20 @@ trait SageMaker extends Service {
   ): Request[js.Object, AWSError] = js.native
   
   /**
+    * Starts an inference experiment.
+    */
+  def startInferenceExperiment(): Request[StartInferenceExperimentResponse, AWSError] = js.native
+  def startInferenceExperiment(callback: js.Function2[/* err */ AWSError, /* data */ StartInferenceExperimentResponse, Unit]): Request[StartInferenceExperimentResponse, AWSError] = js.native
+  /**
+    * Starts an inference experiment.
+    */
+  def startInferenceExperiment(params: StartInferenceExperimentRequest): Request[StartInferenceExperimentResponse, AWSError] = js.native
+  def startInferenceExperiment(
+    params: StartInferenceExperimentRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ StartInferenceExperimentResponse, Unit]
+  ): Request[StartInferenceExperimentResponse, AWSError] = js.native
+  
+  /**
     * Starts a previously stopped monitoring schedule.  By default, when you successfully create a new schedule, the status of a monitoring schedule is scheduled. 
     */
   def startMonitoringSchedule(): Request[js.Object, AWSError] = js.native
@@ -3221,12 +3649,12 @@ trait SageMaker extends Service {
   ): Request[StartPipelineExecutionResponse, AWSError] = js.native
   
   /**
-    * A method for forcing the termination of a running job.
+    * A method for forcing a running job to shut down.
     */
   def stopAutoMLJob(): Request[js.Object, AWSError] = js.native
   def stopAutoMLJob(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * A method for forcing the termination of a running job.
+    * A method for forcing a running job to shut down.
     */
   def stopAutoMLJob(params: StopAutoMLJobRequest): Request[js.Object, AWSError] = js.native
   def stopAutoMLJob(
@@ -3235,12 +3663,12 @@ trait SageMaker extends Service {
   ): Request[js.Object, AWSError] = js.native
   
   /**
-    * Stops a model compilation job.  To stop a job, Amazon SageMaker sends the algorithm the SIGTERM signal. This gracefully shuts the job down. If the job hasn't stopped, it sends the SIGKILL signal. When it receives a StopCompilationJob request, Amazon SageMaker changes the CompilationJobSummary$CompilationJobStatus of the job to Stopping. After Amazon SageMaker stops the job, it sets the CompilationJobSummary$CompilationJobStatus to Stopped. 
+    * Stops a model compilation job.  To stop a job, Amazon SageMaker sends the algorithm the SIGTERM signal. This gracefully shuts the job down. If the job hasn't stopped, it sends the SIGKILL signal. When it receives a StopCompilationJob request, Amazon SageMaker changes the CompilationJobStatus of the job to Stopping. After Amazon SageMaker stops the job, it sets the CompilationJobStatus to Stopped. 
     */
   def stopCompilationJob(): Request[js.Object, AWSError] = js.native
   def stopCompilationJob(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Stops a model compilation job.  To stop a job, Amazon SageMaker sends the algorithm the SIGTERM signal. This gracefully shuts the job down. If the job hasn't stopped, it sends the SIGKILL signal. When it receives a StopCompilationJob request, Amazon SageMaker changes the CompilationJobSummary$CompilationJobStatus of the job to Stopping. After Amazon SageMaker stops the job, it sets the CompilationJobSummary$CompilationJobStatus to Stopped. 
+    * Stops a model compilation job.  To stop a job, Amazon SageMaker sends the algorithm the SIGTERM signal. This gracefully shuts the job down. If the job hasn't stopped, it sends the SIGKILL signal. When it receives a StopCompilationJob request, Amazon SageMaker changes the CompilationJobStatus of the job to Stopping. After Amazon SageMaker stops the job, it sets the CompilationJobStatus to Stopped. 
     */
   def stopCompilationJob(params: StopCompilationJobRequest): Request[js.Object, AWSError] = js.native
   def stopCompilationJob(
@@ -3289,6 +3717,20 @@ trait SageMaker extends Service {
     params: StopHyperParameterTuningJobRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Stops an inference experiment.
+    */
+  def stopInferenceExperiment(): Request[StopInferenceExperimentResponse, AWSError] = js.native
+  def stopInferenceExperiment(callback: js.Function2[/* err */ AWSError, /* data */ StopInferenceExperimentResponse, Unit]): Request[StopInferenceExperimentResponse, AWSError] = js.native
+  /**
+    * Stops an inference experiment.
+    */
+  def stopInferenceExperiment(params: StopInferenceExperimentRequest): Request[StopInferenceExperimentResponse, AWSError] = js.native
+  def stopInferenceExperiment(
+    params: StopInferenceExperimentRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ StopInferenceExperimentResponse, Unit]
+  ): Request[StopInferenceExperimentResponse, AWSError] = js.native
   
   /**
     * Stops an Inference Recommender job.
@@ -3587,6 +4029,20 @@ trait SageMaker extends Service {
   ): Request[js.Object, AWSError] = js.native
   
   /**
+    * Update a hub.  Hub APIs are only callable through SageMaker Studio. 
+    */
+  def updateHub(): Request[UpdateHubResponse, AWSError] = js.native
+  def updateHub(callback: js.Function2[/* err */ AWSError, /* data */ UpdateHubResponse, Unit]): Request[UpdateHubResponse, AWSError] = js.native
+  /**
+    * Update a hub.  Hub APIs are only callable through SageMaker Studio. 
+    */
+  def updateHub(params: UpdateHubRequest): Request[UpdateHubResponse, AWSError] = js.native
+  def updateHub(
+    params: UpdateHubRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateHubResponse, Unit]
+  ): Request[UpdateHubResponse, AWSError] = js.native
+  
+  /**
     * Updates the properties of a SageMaker image. To change the image's tags, use the AddTags and DeleteTags APIs.
     */
   def updateImage(): Request[UpdateImageResponse, AWSError] = js.native
@@ -3601,6 +4057,48 @@ trait SageMaker extends Service {
   ): Request[UpdateImageResponse, AWSError] = js.native
   
   /**
+    * Updates the properties of a SageMaker image version.
+    */
+  def updateImageVersion(): Request[UpdateImageVersionResponse, AWSError] = js.native
+  def updateImageVersion(callback: js.Function2[/* err */ AWSError, /* data */ UpdateImageVersionResponse, Unit]): Request[UpdateImageVersionResponse, AWSError] = js.native
+  /**
+    * Updates the properties of a SageMaker image version.
+    */
+  def updateImageVersion(params: UpdateImageVersionRequest): Request[UpdateImageVersionResponse, AWSError] = js.native
+  def updateImageVersion(
+    params: UpdateImageVersionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateImageVersionResponse, Unit]
+  ): Request[UpdateImageVersionResponse, AWSError] = js.native
+  
+  /**
+    *  Updates an inference experiment that you created. The status of the inference experiment has to be either Created, Running. For more information on the status of an inference experiment, see DescribeInferenceExperiment. 
+    */
+  def updateInferenceExperiment(): Request[UpdateInferenceExperimentResponse, AWSError] = js.native
+  def updateInferenceExperiment(callback: js.Function2[/* err */ AWSError, /* data */ UpdateInferenceExperimentResponse, Unit]): Request[UpdateInferenceExperimentResponse, AWSError] = js.native
+  /**
+    *  Updates an inference experiment that you created. The status of the inference experiment has to be either Created, Running. For more information on the status of an inference experiment, see DescribeInferenceExperiment. 
+    */
+  def updateInferenceExperiment(params: UpdateInferenceExperimentRequest): Request[UpdateInferenceExperimentResponse, AWSError] = js.native
+  def updateInferenceExperiment(
+    params: UpdateInferenceExperimentRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateInferenceExperimentResponse, Unit]
+  ): Request[UpdateInferenceExperimentResponse, AWSError] = js.native
+  
+  /**
+    * Update an Amazon SageMaker Model Card.  You cannot update both model card content and model card status in a single call. 
+    */
+  def updateModelCard(): Request[UpdateModelCardResponse, AWSError] = js.native
+  def updateModelCard(callback: js.Function2[/* err */ AWSError, /* data */ UpdateModelCardResponse, Unit]): Request[UpdateModelCardResponse, AWSError] = js.native
+  /**
+    * Update an Amazon SageMaker Model Card.  You cannot update both model card content and model card status in a single call. 
+    */
+  def updateModelCard(params: UpdateModelCardRequest): Request[UpdateModelCardResponse, AWSError] = js.native
+  def updateModelCard(
+    params: UpdateModelCardRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateModelCardResponse, Unit]
+  ): Request[UpdateModelCardResponse, AWSError] = js.native
+  
+  /**
     * Updates a versioned model.
     */
   def updateModelPackage(): Request[UpdateModelPackageOutput, AWSError] = js.native
@@ -3613,6 +4111,20 @@ trait SageMaker extends Service {
     params: UpdateModelPackageInput,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateModelPackageOutput, Unit]
   ): Request[UpdateModelPackageOutput, AWSError] = js.native
+  
+  /**
+    * Update the parameters of a model monitor alert.
+    */
+  def updateMonitoringAlert(): Request[UpdateMonitoringAlertResponse, AWSError] = js.native
+  def updateMonitoringAlert(callback: js.Function2[/* err */ AWSError, /* data */ UpdateMonitoringAlertResponse, Unit]): Request[UpdateMonitoringAlertResponse, AWSError] = js.native
+  /**
+    * Update the parameters of a model monitor alert.
+    */
+  def updateMonitoringAlert(params: UpdateMonitoringAlertRequest): Request[UpdateMonitoringAlertResponse, AWSError] = js.native
+  def updateMonitoringAlert(
+    params: UpdateMonitoringAlertRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateMonitoringAlertResponse, Unit]
+  ): Request[UpdateMonitoringAlertResponse, AWSError] = js.native
   
   /**
     * Updates a previously created schedule.
@@ -3701,6 +4213,20 @@ trait SageMaker extends Service {
   ): Request[UpdateProjectOutput, AWSError] = js.native
   
   /**
+    * Updates the settings of a space.
+    */
+  def updateSpace(): Request[UpdateSpaceResponse, AWSError] = js.native
+  def updateSpace(callback: js.Function2[/* err */ AWSError, /* data */ UpdateSpaceResponse, Unit]): Request[UpdateSpaceResponse, AWSError] = js.native
+  /**
+    * Updates the settings of a space.
+    */
+  def updateSpace(params: UpdateSpaceRequest): Request[UpdateSpaceResponse, AWSError] = js.native
+  def updateSpace(
+    params: UpdateSpaceRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateSpaceResponse, Unit]
+  ): Request[UpdateSpaceResponse, AWSError] = js.native
+  
+  /**
     * Update a model training job to request a new Debugger profiling configuration or to change warm pool retention length.
     */
   def updateTrainingJob(): Request[UpdateTrainingJobResponse, AWSError] = js.native
@@ -3757,12 +4283,12 @@ trait SageMaker extends Service {
   ): Request[UpdateUserProfileResponse, AWSError] = js.native
   
   /**
-    * Use this operation to update your workforce. You can use this operation to require that workers use specific IP addresses to work on tasks and to update your OpenID Connect (OIDC) Identity Provider (IdP) workforce configuration. The worker portal is now supported in VPC and public internet.  Use SourceIpConfig to restrict worker access to tasks to a specific range of IP addresses. You specify allowed IP addresses by creating a list of up to ten CIDRs. By default, a workforce isn't restricted to specific IP addresses. If you specify a range of IP addresses, workers who attempt to access tasks using any IP address outside the specified range are denied and get a Not Found error message on the worker portal. To restrict access to all the workers in public internet, add the SourceIpConfig CIDR value as "0.0.0.0/0".  Amazon SageMaker does not support Source Ip restriction for worker portals in VPC.  Use OidcConfig to update the configuration of a workforce created using your own OIDC IdP.   You can only update your OIDC IdP configuration when there are no work teams associated with your workforce. You can delete work teams using the operation.  After restricting access to a range of IP addresses or updating your OIDC IdP configuration with this operation, you can view details about your update workforce using the operation.  This operation only applies to private workforces. 
+    * Use this operation to update your workforce. You can use this operation to require that workers use specific IP addresses to work on tasks and to update your OpenID Connect (OIDC) Identity Provider (IdP) workforce configuration. The worker portal is now supported in VPC and public internet.  Use SourceIpConfig to restrict worker access to tasks to a specific range of IP addresses. You specify allowed IP addresses by creating a list of up to ten CIDRs. By default, a workforce isn't restricted to specific IP addresses. If you specify a range of IP addresses, workers who attempt to access tasks using any IP address outside the specified range are denied and get a Not Found error message on the worker portal. To restrict access to all the workers in public internet, add the SourceIpConfig CIDR value as "10.0.0.0/16".  Amazon SageMaker does not support Source Ip restriction for worker portals in VPC.  Use OidcConfig to update the configuration of a workforce created using your own OIDC IdP.   You can only update your OIDC IdP configuration when there are no work teams associated with your workforce. You can delete work teams using the DeleteWorkteam operation.  After restricting access to a range of IP addresses or updating your OIDC IdP configuration with this operation, you can view details about your update workforce using the DescribeWorkforce operation.  This operation only applies to private workforces. 
     */
   def updateWorkforce(): Request[UpdateWorkforceResponse, AWSError] = js.native
   def updateWorkforce(callback: js.Function2[/* err */ AWSError, /* data */ UpdateWorkforceResponse, Unit]): Request[UpdateWorkforceResponse, AWSError] = js.native
   /**
-    * Use this operation to update your workforce. You can use this operation to require that workers use specific IP addresses to work on tasks and to update your OpenID Connect (OIDC) Identity Provider (IdP) workforce configuration. The worker portal is now supported in VPC and public internet.  Use SourceIpConfig to restrict worker access to tasks to a specific range of IP addresses. You specify allowed IP addresses by creating a list of up to ten CIDRs. By default, a workforce isn't restricted to specific IP addresses. If you specify a range of IP addresses, workers who attempt to access tasks using any IP address outside the specified range are denied and get a Not Found error message on the worker portal. To restrict access to all the workers in public internet, add the SourceIpConfig CIDR value as "0.0.0.0/0".  Amazon SageMaker does not support Source Ip restriction for worker portals in VPC.  Use OidcConfig to update the configuration of a workforce created using your own OIDC IdP.   You can only update your OIDC IdP configuration when there are no work teams associated with your workforce. You can delete work teams using the operation.  After restricting access to a range of IP addresses or updating your OIDC IdP configuration with this operation, you can view details about your update workforce using the operation.  This operation only applies to private workforces. 
+    * Use this operation to update your workforce. You can use this operation to require that workers use specific IP addresses to work on tasks and to update your OpenID Connect (OIDC) Identity Provider (IdP) workforce configuration. The worker portal is now supported in VPC and public internet.  Use SourceIpConfig to restrict worker access to tasks to a specific range of IP addresses. You specify allowed IP addresses by creating a list of up to ten CIDRs. By default, a workforce isn't restricted to specific IP addresses. If you specify a range of IP addresses, workers who attempt to access tasks using any IP address outside the specified range are denied and get a Not Found error message on the worker portal. To restrict access to all the workers in public internet, add the SourceIpConfig CIDR value as "10.0.0.0/16".  Amazon SageMaker does not support Source Ip restriction for worker portals in VPC.  Use OidcConfig to update the configuration of a workforce created using your own OIDC IdP.   You can only update your OIDC IdP configuration when there are no work teams associated with your workforce. You can delete work teams using the DeleteWorkteam operation.  After restricting access to a range of IP addresses or updating your OIDC IdP configuration with this operation, you can view details about your update workforce using the DescribeWorkforce operation.  This operation only applies to private workforces. 
     */
   def updateWorkforce(params: UpdateWorkforceRequest): Request[UpdateWorkforceResponse, AWSError] = js.native
   def updateWorkforce(

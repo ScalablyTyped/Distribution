@@ -24,7 +24,7 @@ object mod {
       * A function which creates a new `Stamp`s from a list of `Composable`s.
       * @template Obj The type of the object instance being created by the `Stamp` or the type of the `Stamp` being created (when extending a `Stamp`.)
       */
-    // tslint:disable-next-line: no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
     inline def apply[Obj](composables: Composable*): StampType[Obj] = ^.asInstanceOf[js.Dynamic].apply(composables.asInstanceOf[Seq[js.Any]]*).asInstanceOf[StampType[Obj]]
     
     @JSImport("stampit", JSImport.Default)
@@ -53,7 +53,7 @@ object mod {
       * @template Obj The type of the object instance being produced by the `Stamp`. or the type of the `Stamp` being created.
       * @param confs The object(s) containing metadata properties
       */
-    // tslint:disable-next-line: no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
     inline def conf[Obj](confs: PropertyMap*): StampType[Obj] = ^.asInstanceOf[js.Dynamic].applyDynamic("conf")(confs.asInstanceOf[Seq[js.Any]]*).asInstanceOf[StampType[Obj]]
     
     /**
@@ -63,7 +63,7 @@ object mod {
       * @template Obj The type of the object instance being produced by the `Stamp`. or the type of the `Stamp` being created.
       * @param confs The object(s) containing metadata properties
       */
-    // tslint:disable-next-line: no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
     inline def configuration[Obj](confs: PropertyMap*): StampType[Obj] = ^.asInstanceOf[js.Dynamic].applyDynamic("configuration")(confs.asInstanceOf[Seq[js.Any]]*).asInstanceOf[StampType[Obj]]
     
     /**
@@ -73,7 +73,7 @@ object mod {
       * @template Obj The type of the object instance being produced by the `Stamp`. or the type of the `Stamp` being created.
       * @param deepConfs The object(s) containing metadata properties
       */
-    // tslint:disable-next-line: no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
     inline def deepConf[Obj](deepConfs: PropertyMap*): StampType[Obj] = ^.asInstanceOf[js.Dynamic].applyDynamic("deepConf")(deepConfs.asInstanceOf[Seq[js.Any]]*).asInstanceOf[StampType[Obj]]
     
     /**
@@ -83,7 +83,7 @@ object mod {
       * @template Obj The type of the object instance being produced by the `Stamp`. or the type of the `Stamp` being created.
       * @param deepConfs The object(s) containing metadata properties
       */
-    // tslint:disable-next-line: no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
     inline def deepConfiguration[Obj](deepConfs: PropertyMap*): StampType[Obj] = ^.asInstanceOf[js.Dynamic].applyDynamic("deepConfiguration")(deepConfs.asInstanceOf[Seq[js.Any]]*).asInstanceOf[StampType[Obj]]
     
     /**
@@ -93,7 +93,7 @@ object mod {
       * @template Obj The type of the object instance being produced by the `Stamp`. or the type of the `Stamp` being created.
       * @param deepObjects The object(s) to deeply merge for each new object
       */
-    // tslint:disable-next-line: no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
     inline def deepProperties[Obj](deepObjects: PropertyMap*): StampType[Obj] = ^.asInstanceOf[js.Dynamic].applyDynamic("deepProperties")(deepObjects.asInstanceOf[Seq[js.Any]]*).asInstanceOf[StampType[Obj]]
     
     /**
@@ -103,7 +103,7 @@ object mod {
       * @template Obj The type of the object instance being produced by the `Stamp`. or the type of the `Stamp` being created.
       * @param deepObjects The object(s) to deeply merge for each new object
       */
-    // tslint:disable-next-line: no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
     inline def deepProps[Obj](deepObjects: PropertyMap*): StampType[Obj] = ^.asInstanceOf[js.Dynamic].applyDynamic("deepProps")(deepObjects.asInstanceOf[Seq[js.Any]]*).asInstanceOf[StampType[Obj]]
     
     /**
@@ -113,7 +113,7 @@ object mod {
       * @template Obj The type of the object instance being produced by the `Stamp`. or the type of the `Stamp` being created.
       * @param deepStatics The object(s) containing static properties to be merged
       */
-    // tslint:disable-next-line: no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
     inline def deepStatics[Obj](deepStatics: PropertyMap*): StampType[Obj] = ^.asInstanceOf[js.Dynamic].applyDynamic("deepStatics")(deepStatics.asInstanceOf[Seq[js.Any]]*).asInstanceOf[StampType[Obj]]
     
     /**
@@ -124,11 +124,11 @@ object mod {
       * @param functions Initializer functions used to create private data and privileged methods
       */
     inline def init[Obj, S̤t̤a̤m̤p̤ /* <: StampSignature */](
-      // tslint:disable-next-line: no-unnecessary-generics
+      // eslint-disable-next-line no-unnecessary-generics
     functions: (Initializer[StampObjectType[Obj], S̤t̤a̤m̤p̤])*
     ): S̤t̤a̤m̤p̤ = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(functions.asInstanceOf[Seq[js.Any]]*).asInstanceOf[S̤t̤a̤m̤p̤]
     inline def init[Obj, S̤t̤a̤m̤p̤ /* <: StampSignature */](
-      // tslint:disable-next-line: no-unnecessary-generics
+      // eslint-disable-next-line no-unnecessary-generics
     functions: js.Array[Initializer[StampObjectType[Obj], S̤t̤a̤m̤p̤]]
     ): S̤t̤a̤m̤p̤ = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(functions.asInstanceOf[js.Any]).asInstanceOf[S̤t̤a̤m̤p̤]
     
@@ -140,11 +140,11 @@ object mod {
       * @param functions Initializer functions used to create private data and privileged methods
       */
     inline def initializers[Obj, S̤t̤a̤m̤p̤ /* <: StampSignature */](
-      // tslint:disable-next-line: no-unnecessary-generics
+      // eslint-disable-next-line no-unnecessary-generics
     functions: (Initializer[StampObjectType[Obj], S̤t̤a̤m̤p̤])*
     ): S̤t̤a̤m̤p̤ = ^.asInstanceOf[js.Dynamic].applyDynamic("initializers")(functions.asInstanceOf[Seq[js.Any]]*).asInstanceOf[S̤t̤a̤m̤p̤]
     inline def initializers[Obj, S̤t̤a̤m̤p̤ /* <: StampSignature */](
-      // tslint:disable-next-line: no-unnecessary-generics
+      // eslint-disable-next-line no-unnecessary-generics
     functions: js.Array[Initializer[StampObjectType[Obj], S̤t̤a̤m̤p̤]]
     ): S̤t̤a̤m̤p̤ = ^.asInstanceOf[js.Dynamic].applyDynamic("initializers")(functions.asInstanceOf[js.Any]).asInstanceOf[S̤t̤a̤m̤p̤]
     
@@ -165,7 +165,7 @@ object mod {
       * @template Obj The type of the object instance being produced by the `Stamp`. or the type of the `Stamp` being created.
       * @param objects Object(s) to shallow assign for each new object.
       */
-    // tslint:disable-next-line: no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
     inline def properties[Obj](objects: PropertyMap*): StampType[Obj] = ^.asInstanceOf[js.Dynamic].applyDynamic("properties")(objects.asInstanceOf[Seq[js.Any]]*).asInstanceOf[StampType[Obj]]
     
     /**
@@ -175,7 +175,7 @@ object mod {
       * @template Obj The type of the object instance being produced by the `Stamp`. or the type of the `Stamp` being created.
       * @param descriptors
       */
-    // tslint:disable-next-line: no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
     inline def propertyDescriptors[Obj](descriptors: PropertyDescriptorMap*): StampType[Obj] = ^.asInstanceOf[js.Dynamic].applyDynamic("propertyDescriptors")(descriptors.asInstanceOf[Seq[js.Any]]*).asInstanceOf[StampType[Obj]]
     
     /**
@@ -185,7 +185,7 @@ object mod {
       * @template Obj The type of the object instance being produced by the `Stamp`. or the type of the `Stamp` being created.
       * @param objects Object(s) to shallow assign for each new object.
       */
-    // tslint:disable-next-line: no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
     inline def props[Obj](objects: PropertyMap*): StampType[Obj] = ^.asInstanceOf[js.Dynamic].applyDynamic("props")(objects.asInstanceOf[Seq[js.Any]]*).asInstanceOf[StampType[Obj]]
     
     /**
@@ -195,7 +195,7 @@ object mod {
       * @template Obj The type of the object instance being produced by the `Stamp`. or the type of the `Stamp` being created.
       * @param deepStatics The object(s) containing static properties to be merged
       */
-    // tslint:disable-next-line: no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
     inline def staticDeepProperties[Obj](deepStatics: PropertyMap*): StampType[Obj] = ^.asInstanceOf[js.Dynamic].applyDynamic("staticDeepProperties")(deepStatics.asInstanceOf[Seq[js.Any]]*).asInstanceOf[StampType[Obj]]
     
     /**
@@ -205,7 +205,7 @@ object mod {
       * @template Obj The type of the object instance being produced by the `Stamp`. or the type of the `Stamp` being created.
       * @param statics Object(s) containing map of property names and values to mixin into each new stamp.
       */
-    // tslint:disable-next-line: no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
     inline def staticProperties[Obj](statics: PropertyMap*): StampType[Obj] = ^.asInstanceOf[js.Dynamic].applyDynamic("staticProperties")(statics.asInstanceOf[Seq[js.Any]]*).asInstanceOf[StampType[Obj]]
     
     /**
@@ -215,7 +215,7 @@ object mod {
       * @template Obj The type of the object instance being produced by the `Stamp`. or the type of the `Stamp` being created.
       * @param descriptors
       */
-    // tslint:disable-next-line: no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
     inline def staticPropertyDescriptors[Obj](descriptors: PropertyDescriptorMap*): StampType[Obj] = ^.asInstanceOf[js.Dynamic].applyDynamic("staticPropertyDescriptors")(descriptors.asInstanceOf[Seq[js.Any]]*).asInstanceOf[StampType[Obj]]
     
     /**
@@ -225,7 +225,7 @@ object mod {
       * @template Obj The type of the object instance being produced by the `Stamp`. or the type of the `Stamp` being created.
       * @param statics Object(s) containing map of property names and values to mixin into each new stamp.
       */
-    // tslint:disable-next-line: no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
     inline def statics[Obj](statics: PropertyMap*): StampType[Obj] = ^.asInstanceOf[js.Dynamic].applyDynamic("statics")(statics.asInstanceOf[Seq[js.Any]]*).asInstanceOf[StampType[Obj]]
     
     /** the version of the NPM `stampit` package. */
@@ -256,20 +256,20 @@ object mod {
   inline def deepStatics[Obj](deepStatics: PropertyMap*): StampType[Obj] = ^.asInstanceOf[js.Dynamic].applyDynamic("deepStatics")(deepStatics.asInstanceOf[Seq[js.Any]]*).asInstanceOf[StampType[Obj]]
   
   inline def init[Obj, S̤t̤a̤m̤p̤ /* <: StampSignature */](
-    // tslint:disable-next-line: no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
   functions: (Initializer[StampObjectType[Obj], S̤t̤a̤m̤p̤])*
   ): S̤t̤a̤m̤p̤ = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(functions.asInstanceOf[Seq[js.Any]]*).asInstanceOf[S̤t̤a̤m̤p̤]
   inline def init[Obj, S̤t̤a̤m̤p̤ /* <: StampSignature */](
-    // tslint:disable-next-line: no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
   functions: js.Array[Initializer[StampObjectType[Obj], S̤t̤a̤m̤p̤]]
   ): S̤t̤a̤m̤p̤ = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(functions.asInstanceOf[js.Any]).asInstanceOf[S̤t̤a̤m̤p̤]
   
   inline def initializers[Obj, S̤t̤a̤m̤p̤ /* <: StampSignature */](
-    // tslint:disable-next-line: no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
   functions: (Initializer[StampObjectType[Obj], S̤t̤a̤m̤p̤])*
   ): S̤t̤a̤m̤p̤ = ^.asInstanceOf[js.Dynamic].applyDynamic("initializers")(functions.asInstanceOf[Seq[js.Any]]*).asInstanceOf[S̤t̤a̤m̤p̤]
   inline def initializers[Obj, S̤t̤a̤m̤p̤ /* <: StampSignature */](
-    // tslint:disable-next-line: no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
   functions: js.Array[Initializer[StampObjectType[Obj], S̤t̤a̤m̤p̤]]
   ): S̤t̤a̤m̤p̤ = ^.asInstanceOf[js.Dynamic].applyDynamic("initializers")(functions.asInstanceOf[js.Any]).asInstanceOf[S̤t̤a̤m̤p̤]
   
@@ -367,7 +367,7 @@ object mod {
       * @template This The type to use for `this` within methods.
       * @param methods Object(s) containing map of method names and bodies for delegation.
       */
-    // tslint:disable-next-line: no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
     def methods[This](methods: MethodMap[This]*): S̤t̤a̤m̤p̤ = js.native
     
     /**
@@ -424,7 +424,7 @@ object mod {
       * A function which creates a new `Stamp`s from a list of `Composable`s.
       * @template Obj The type of the object instance being created by the `Stamp` or the type of the `Stamp` being created (when extending a `Stamp`.)
       */
-    // tslint:disable-next-line: no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
     def apply[Obj](composables: Composable*): StampType[Obj] = js.native
     
     /** A function which creates a new `Stamp`s from a list of `Composable`s. */
@@ -447,7 +447,7 @@ object mod {
       * @template Obj The type of the object instance being produced by the `Stamp`. or the type of the `Stamp` being created.
       * @param confs The object(s) containing metadata properties
       */
-    // tslint:disable-next-line: no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
     def conf[Obj](confs: PropertyMap*): StampType[Obj] = js.native
     
     /**
@@ -457,7 +457,7 @@ object mod {
       * @template Obj The type of the object instance being produced by the `Stamp`. or the type of the `Stamp` being created.
       * @param confs The object(s) containing metadata properties
       */
-    // tslint:disable-next-line: no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
     def configuration[Obj](confs: PropertyMap*): StampType[Obj] = js.native
     
     /**
@@ -467,7 +467,7 @@ object mod {
       * @template Obj The type of the object instance being produced by the `Stamp`. or the type of the `Stamp` being created.
       * @param deepConfs The object(s) containing metadata properties
       */
-    // tslint:disable-next-line: no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
     def deepConf[Obj](deepConfs: PropertyMap*): StampType[Obj] = js.native
     
     /**
@@ -477,7 +477,7 @@ object mod {
       * @template Obj The type of the object instance being produced by the `Stamp`. or the type of the `Stamp` being created.
       * @param deepConfs The object(s) containing metadata properties
       */
-    // tslint:disable-next-line: no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
     def deepConfiguration[Obj](deepConfs: PropertyMap*): StampType[Obj] = js.native
     
     /**
@@ -487,7 +487,7 @@ object mod {
       * @template Obj The type of the object instance being produced by the `Stamp`. or the type of the `Stamp` being created.
       * @param deepObjects The object(s) to deeply merge for each new object
       */
-    // tslint:disable-next-line: no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
     def deepProperties[Obj](deepObjects: PropertyMap*): StampType[Obj] = js.native
     
     /**
@@ -497,7 +497,7 @@ object mod {
       * @template Obj The type of the object instance being produced by the `Stamp`. or the type of the `Stamp` being created.
       * @param deepObjects The object(s) to deeply merge for each new object
       */
-    // tslint:disable-next-line: no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
     def deepProps[Obj](deepObjects: PropertyMap*): StampType[Obj] = js.native
     
     /**
@@ -507,7 +507,7 @@ object mod {
       * @template Obj The type of the object instance being produced by the `Stamp`. or the type of the `Stamp` being created.
       * @param deepStatics The object(s) containing static properties to be merged
       */
-    // tslint:disable-next-line: no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
     def deepStatics[Obj](deepStatics: PropertyMap*): StampType[Obj] = js.native
     
     /**
@@ -518,11 +518,11 @@ object mod {
       * @param functions Initializer functions used to create private data and privileged methods
       */
     def init[Obj, S̤t̤a̤m̤p̤ /* <: StampSignature */](
-      // tslint:disable-next-line: no-unnecessary-generics
+      // eslint-disable-next-line no-unnecessary-generics
     functions: (Initializer[StampObjectType[Obj], S̤t̤a̤m̤p̤])*
     ): S̤t̤a̤m̤p̤ = js.native
     def init[Obj, S̤t̤a̤m̤p̤ /* <: StampSignature */](
-      // tslint:disable-next-line: no-unnecessary-generics
+      // eslint-disable-next-line no-unnecessary-generics
     functions: js.Array[Initializer[StampObjectType[Obj], S̤t̤a̤m̤p̤]]
     ): S̤t̤a̤m̤p̤ = js.native
     
@@ -534,11 +534,11 @@ object mod {
       * @param functions Initializer functions used to create private data and privileged methods
       */
     def initializers[Obj, S̤t̤a̤m̤p̤ /* <: StampSignature */](
-      // tslint:disable-next-line: no-unnecessary-generics
+      // eslint-disable-next-line no-unnecessary-generics
     functions: (Initializer[StampObjectType[Obj], S̤t̤a̤m̤p̤])*
     ): S̤t̤a̤m̤p̤ = js.native
     def initializers[Obj, S̤t̤a̤m̤p̤ /* <: StampSignature */](
-      // tslint:disable-next-line: no-unnecessary-generics
+      // eslint-disable-next-line no-unnecessary-generics
     functions: js.Array[Initializer[StampObjectType[Obj], S̤t̤a̤m̤p̤]]
     ): S̤t̤a̤m̤p̤ = js.native
     
@@ -559,7 +559,7 @@ object mod {
       * @template Obj The type of the object instance being produced by the `Stamp`. or the type of the `Stamp` being created.
       * @param objects Object(s) to shallow assign for each new object.
       */
-    // tslint:disable-next-line: no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
     def properties[Obj](objects: PropertyMap*): StampType[Obj] = js.native
     
     /**
@@ -569,7 +569,7 @@ object mod {
       * @template Obj The type of the object instance being produced by the `Stamp`. or the type of the `Stamp` being created.
       * @param descriptors
       */
-    // tslint:disable-next-line: no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
     def propertyDescriptors[Obj](descriptors: PropertyDescriptorMap*): StampType[Obj] = js.native
     
     /**
@@ -579,7 +579,7 @@ object mod {
       * @template Obj The type of the object instance being produced by the `Stamp`. or the type of the `Stamp` being created.
       * @param objects Object(s) to shallow assign for each new object.
       */
-    // tslint:disable-next-line: no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
     def props[Obj](objects: PropertyMap*): StampType[Obj] = js.native
     
     /**
@@ -589,7 +589,7 @@ object mod {
       * @template Obj The type of the object instance being produced by the `Stamp`. or the type of the `Stamp` being created.
       * @param deepStatics The object(s) containing static properties to be merged
       */
-    // tslint:disable-next-line: no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
     def staticDeepProperties[Obj](deepStatics: PropertyMap*): StampType[Obj] = js.native
     
     /**
@@ -599,7 +599,7 @@ object mod {
       * @template Obj The type of the object instance being produced by the `Stamp`. or the type of the `Stamp` being created.
       * @param statics Object(s) containing map of property names and values to mixin into each new stamp.
       */
-    // tslint:disable-next-line: no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
     def staticProperties[Obj](statics: PropertyMap*): StampType[Obj] = js.native
     
     /**
@@ -609,7 +609,7 @@ object mod {
       * @template Obj The type of the object instance being produced by the `Stamp`. or the type of the `Stamp` being created.
       * @param descriptors
       */
-    // tslint:disable-next-line: no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
     def staticPropertyDescriptors[Obj](descriptors: PropertyDescriptorMap*): StampType[Obj] = js.native
     
     /**
@@ -619,7 +619,7 @@ object mod {
       * @template Obj The type of the object instance being produced by the `Stamp`. or the type of the `Stamp` being created.
       * @param statics Object(s) containing map of property names and values to mixin into each new stamp.
       */
-    // tslint:disable-next-line: no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
     def statics[Obj](statics: PropertyMap*): StampType[Obj] = js.native
     
     /** the version of the NPM `stampit` package. */

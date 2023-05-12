@@ -11,7 +11,7 @@ object distSrcConfigProfilesApplyMod {
   @js.native
   val createApply: Factory[
     js.Function2[
-      /* profile */ String, 
+      /* name */ String, 
       /* options */ js.UndefOr[
         (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_profiles.ProfilesApplyOptions */ Any) & typings.ipfsHttpClient.distSrcTypesMod.HTTPClientExtraOptions
       ], 

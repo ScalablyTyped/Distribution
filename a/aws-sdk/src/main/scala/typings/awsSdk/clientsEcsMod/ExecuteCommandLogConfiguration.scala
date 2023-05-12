@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ExecuteCommandLogConfiguration extends StObject {
   
   /**
-    * Determines whether to use encryption on the CloudWatch logs. If not specified, encryption will be disabled.
+    * Determines whether to use encryption on the CloudWatch logs. If not specified, encryption will be off.
     */
   var cloudWatchEncryptionEnabled: js.UndefOr[Boolean] = js.undefined
   

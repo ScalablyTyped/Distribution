@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-md__autocomplete
 
-Typings are for version 5.1.4
+Typings are for version 5.1.5
 
 ## Library description:
 Create an accessible autocomplete component that allows a user to get real-time suggestions as they type within an input. This component can also be hooked up to a backend API that handles additional filtering or sorting.

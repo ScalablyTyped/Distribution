@@ -1,7 +1,7 @@
 
 # Scala.js typings for bl
 
-Typings are for version 6.0.0
+Typings are for version 6.0.1
 
 ## Library description:
 Buffer List: collect buffers and access with a standard readable Buffer interface, streamable too!

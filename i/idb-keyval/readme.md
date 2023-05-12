@@ -1,7 +1,7 @@
 
 # Scala.js typings for idb-keyval
 
-Typings are for version 6.2.0
+Typings are for version 6.2.1
 
 ## Library description:
 A super-simple-small keyval store built on top of IndexedDB

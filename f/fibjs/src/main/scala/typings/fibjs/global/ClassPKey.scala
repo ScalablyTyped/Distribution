@@ -12,28 +12,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Class_PKey")
 @js.native
 /**
-  * 
+  *
   * @brief PKey 构造函数
-  * 
-  * 
+  *
+  *
   */
 open class ClassPKey ()
   extends StObject
      with typings.fibjs.ClassPKey {
   /**
-    * 
+    *
     * @brief 通过 DER 格式的密钥构造 PKey
     * @param DerKey DER 格式的密钥
     * @param password 解密密码
-    * 
-    * 
-    * 
+    *
+    *
+    *
     */
   def this(DerKey: typings.fibjs.ClassBuffer) = this()
   /**
-    * 
+    *
     * @brief 通过 JSON 格式的密钥构造 PKey
-    * 
+    *
     * jsonKey 的格式支持以下四种，RSA 私钥：
     * ```JavaScript
     * {
@@ -76,19 +76,19 @@ open class ClassPKey ()
     * }
     * ```
     * @param jsonKey JSON 格式的密钥
-    * 
-    * 
-    * 
+    *
+    *
+    *
     */
   def this(jsonKey: js.Object) = this()
   /**
-    * 
+    *
     * @brief 通过 PEM 格式的密钥构造 PKey
     * @param pemKey PEM 格式的密钥
     * @param password 解密密码
-    * 
-    * 
-    * 
+    *
+    *
+    *
     */
   def this(pemKey: String) = this()
   def this(DerKey: typings.fibjs.ClassBuffer, password: String) = this()

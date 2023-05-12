@@ -57,12 +57,12 @@ trait QuickSight extends Service {
   ): Request[CreateAccountSubscriptionResponse, AWSError] = js.native
   
   /**
-    * Creates an analysis in Amazon QuickSight.
+    * Creates an analysis in Amazon QuickSight. Analyses can be created either from a template or from an AnalysisDefinition.
     */
   def createAnalysis(): Request[CreateAnalysisResponse, AWSError] = js.native
   def createAnalysis(callback: js.Function2[/* err */ AWSError, /* data */ CreateAnalysisResponse, Unit]): Request[CreateAnalysisResponse, AWSError] = js.native
   /**
-    * Creates an analysis in Amazon QuickSight.
+    * Creates an analysis in Amazon QuickSight. Analyses can be created either from a template or from an AnalysisDefinition.
     */
   def createAnalysis(params: CreateAnalysisRequest): Request[CreateAnalysisResponse, AWSError] = js.native
   def createAnalysis(
@@ -71,12 +71,12 @@ trait QuickSight extends Service {
   ): Request[CreateAnalysisResponse, AWSError] = js.native
   
   /**
-    * Creates a dashboard from a template. To first create a template, see the  CreateTemplate  API operation. A dashboard is an entity in Amazon QuickSight that identifies Amazon QuickSight reports, created from analyses. You can share Amazon QuickSight dashboards. With the right permissions, you can create scheduled email reports from them. If you have the correct permissions, you can create a dashboard from a template that exists in a different Amazon Web Services account.
+    * Creates a dashboard from either a template or directly with a DashboardDefinition. To first create a template, see the  CreateTemplate  API operation. A dashboard is an entity in Amazon QuickSight that identifies Amazon QuickSight reports, created from analyses. You can share Amazon QuickSight dashboards. With the right permissions, you can create scheduled email reports from them. If you have the correct permissions, you can create a dashboard from a template that exists in a different Amazon Web Services account.
     */
   def createDashboard(): Request[CreateDashboardResponse, AWSError] = js.native
   def createDashboard(callback: js.Function2[/* err */ AWSError, /* data */ CreateDashboardResponse, Unit]): Request[CreateDashboardResponse, AWSError] = js.native
   /**
-    * Creates a dashboard from a template. To first create a template, see the  CreateTemplate  API operation. A dashboard is an entity in Amazon QuickSight that identifies Amazon QuickSight reports, created from analyses. You can share Amazon QuickSight dashboards. With the right permissions, you can create scheduled email reports from them. If you have the correct permissions, you can create a dashboard from a template that exists in a different Amazon Web Services account.
+    * Creates a dashboard from either a template or directly with a DashboardDefinition. To first create a template, see the  CreateTemplate  API operation. A dashboard is an entity in Amazon QuickSight that identifies Amazon QuickSight reports, created from analyses. You can share Amazon QuickSight dashboards. With the right permissions, you can create scheduled email reports from them. If you have the correct permissions, you can create a dashboard from a template that exists in a different Amazon Web Services account.
     */
   def createDashboard(params: CreateDashboardRequest): Request[CreateDashboardResponse, AWSError] = js.native
   def createDashboard(
@@ -211,12 +211,26 @@ trait QuickSight extends Service {
   ): Request[CreateNamespaceResponse, AWSError] = js.native
   
   /**
-    * Creates a template from an existing Amazon QuickSight analysis or template. You can use the resulting template to create a dashboard. A template is an entity in Amazon QuickSight that encapsulates the metadata required to create an analysis and that you can use to create s dashboard. A template adds a layer of abstraction by using placeholders to replace the dataset associated with the analysis. You can use templates to create dashboards by replacing dataset placeholders with datasets that follow the same schema that was used to create the source analysis and template.
+    * Creates a refresh schedule for a dataset. You can create up to 5 different schedules for a single dataset.
+    */
+  def createRefreshSchedule(): Request[CreateRefreshScheduleResponse, AWSError] = js.native
+  def createRefreshSchedule(callback: js.Function2[/* err */ AWSError, /* data */ CreateRefreshScheduleResponse, Unit]): Request[CreateRefreshScheduleResponse, AWSError] = js.native
+  /**
+    * Creates a refresh schedule for a dataset. You can create up to 5 different schedules for a single dataset.
+    */
+  def createRefreshSchedule(params: CreateRefreshScheduleRequest): Request[CreateRefreshScheduleResponse, AWSError] = js.native
+  def createRefreshSchedule(
+    params: CreateRefreshScheduleRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateRefreshScheduleResponse, Unit]
+  ): Request[CreateRefreshScheduleResponse, AWSError] = js.native
+  
+  /**
+    * Creates a template either from a TemplateDefinition or from an existing Amazon QuickSight analysis or template. You can use the resulting template to create additional dashboards, templates, or analyses. A template is an entity in Amazon QuickSight that encapsulates the metadata required to create an analysis and that you can use to create s dashboard. A template adds a layer of abstraction by using placeholders to replace the dataset associated with the analysis. You can use templates to create dashboards by replacing dataset placeholders with datasets that follow the same schema that was used to create the source analysis and template.
     */
   def createTemplate(): Request[CreateTemplateResponse, AWSError] = js.native
   def createTemplate(callback: js.Function2[/* err */ AWSError, /* data */ CreateTemplateResponse, Unit]): Request[CreateTemplateResponse, AWSError] = js.native
   /**
-    * Creates a template from an existing Amazon QuickSight analysis or template. You can use the resulting template to create a dashboard. A template is an entity in Amazon QuickSight that encapsulates the metadata required to create an analysis and that you can use to create s dashboard. A template adds a layer of abstraction by using placeholders to replace the dataset associated with the analysis. You can use templates to create dashboards by replacing dataset placeholders with datasets that follow the same schema that was used to create the source analysis and template.
+    * Creates a template either from a TemplateDefinition or from an existing Amazon QuickSight analysis or template. You can use the resulting template to create additional dashboards, templates, or analyses. A template is an entity in Amazon QuickSight that encapsulates the metadata required to create an analysis and that you can use to create s dashboard. A template adds a layer of abstraction by using placeholders to replace the dataset associated with the analysis. You can use templates to create dashboards by replacing dataset placeholders with datasets that follow the same schema that was used to create the source analysis and template.
     */
   def createTemplate(params: CreateTemplateRequest): Request[CreateTemplateResponse, AWSError] = js.native
   def createTemplate(
@@ -267,6 +281,48 @@ trait QuickSight extends Service {
   ): Request[CreateThemeAliasResponse, AWSError] = js.native
   
   /**
+    * Creates a new Q topic.
+    */
+  def createTopic(): Request[CreateTopicResponse, AWSError] = js.native
+  def createTopic(callback: js.Function2[/* err */ AWSError, /* data */ CreateTopicResponse, Unit]): Request[CreateTopicResponse, AWSError] = js.native
+  /**
+    * Creates a new Q topic.
+    */
+  def createTopic(params: CreateTopicRequest): Request[CreateTopicResponse, AWSError] = js.native
+  def createTopic(
+    params: CreateTopicRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateTopicResponse, Unit]
+  ): Request[CreateTopicResponse, AWSError] = js.native
+  
+  /**
+    * Creates a topic refresh schedule.
+    */
+  def createTopicRefreshSchedule(): Request[CreateTopicRefreshScheduleResponse, AWSError] = js.native
+  def createTopicRefreshSchedule(callback: js.Function2[/* err */ AWSError, /* data */ CreateTopicRefreshScheduleResponse, Unit]): Request[CreateTopicRefreshScheduleResponse, AWSError] = js.native
+  /**
+    * Creates a topic refresh schedule.
+    */
+  def createTopicRefreshSchedule(params: CreateTopicRefreshScheduleRequest): Request[CreateTopicRefreshScheduleResponse, AWSError] = js.native
+  def createTopicRefreshSchedule(
+    params: CreateTopicRefreshScheduleRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateTopicRefreshScheduleResponse, Unit]
+  ): Request[CreateTopicRefreshScheduleResponse, AWSError] = js.native
+  
+  /**
+    * Creates a new VPC connection.
+    */
+  def createVPCConnection(): Request[CreateVPCConnectionResponse, AWSError] = js.native
+  def createVPCConnection(callback: js.Function2[/* err */ AWSError, /* data */ CreateVPCConnectionResponse, Unit]): Request[CreateVPCConnectionResponse, AWSError] = js.native
+  /**
+    * Creates a new VPC connection.
+    */
+  def createVPCConnection(params: CreateVPCConnectionRequest): Request[CreateVPCConnectionResponse, AWSError] = js.native
+  def createVPCConnection(
+    params: CreateVPCConnectionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateVPCConnectionResponse, Unit]
+  ): Request[CreateVPCConnectionResponse, AWSError] = js.native
+  
+  /**
     * Deletes all Amazon QuickSight customizations in this Amazon Web Services Region for the specified Amazon Web Services account and Amazon QuickSight namespace.
     */
   def deleteAccountCustomization(): Request[DeleteAccountCustomizationResponse, AWSError] = js.native
@@ -279,6 +335,20 @@ trait QuickSight extends Service {
     params: DeleteAccountCustomizationRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteAccountCustomizationResponse, Unit]
   ): Request[DeleteAccountCustomizationResponse, AWSError] = js.native
+  
+  /**
+    * Use the DeleteAccountSubscription operation to delete an Amazon QuickSight account. This operation will result in an error message if you have configured your account termination protection settings to True. To change this setting and delete your account, call the UpdateAccountSettings API and set the value of the TerminationProtectionEnabled parameter to False, then make another call to the DeleteAccountSubscription API.
+    */
+  def deleteAccountSubscription(): Request[DeleteAccountSubscriptionResponse, AWSError] = js.native
+  def deleteAccountSubscription(callback: js.Function2[/* err */ AWSError, /* data */ DeleteAccountSubscriptionResponse, Unit]): Request[DeleteAccountSubscriptionResponse, AWSError] = js.native
+  /**
+    * Use the DeleteAccountSubscription operation to delete an Amazon QuickSight account. This operation will result in an error message if you have configured your account termination protection settings to True. To change this setting and delete your account, call the UpdateAccountSettings API and set the value of the TerminationProtectionEnabled parameter to False, then make another call to the DeleteAccountSubscription API.
+    */
+  def deleteAccountSubscription(params: DeleteAccountSubscriptionRequest): Request[DeleteAccountSubscriptionResponse, AWSError] = js.native
+  def deleteAccountSubscription(
+    params: DeleteAccountSubscriptionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteAccountSubscriptionResponse, Unit]
+  ): Request[DeleteAccountSubscriptionResponse, AWSError] = js.native
   
   /**
     * Deletes an analysis from Amazon QuickSight. You can optionally include a recovery window during which you can restore the analysis. If you don't specify a recovery window value, the operation defaults to 30 days. Amazon QuickSight attaches a DeletionTime stamp to the response that specifies the end of the recovery window. At the end of the recovery window, Amazon QuickSight deletes the analysis permanently. At any time before recovery window ends, you can use the RestoreAnalysis API operation to remove the DeletionTime stamp and cancel the deletion of the analysis. The analysis remains visible in the API until it's deleted, so you can describe it but you can't make a template from it. An analysis that's scheduled for deletion isn't accessible in the Amazon QuickSight console. To access it in the console, restore it. Deleting an analysis doesn't delete the dashboards that you publish from it.
@@ -321,6 +391,22 @@ trait QuickSight extends Service {
     params: DeleteDataSetRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteDataSetResponse, Unit]
   ): Request[DeleteDataSetResponse, AWSError] = js.native
+  
+  /**
+    * Deletes the dataset refresh properties of the dataset.
+    */
+  def deleteDataSetRefreshProperties(): Request[DeleteDataSetRefreshPropertiesResponse, AWSError] = js.native
+  def deleteDataSetRefreshProperties(
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteDataSetRefreshPropertiesResponse, Unit]
+  ): Request[DeleteDataSetRefreshPropertiesResponse, AWSError] = js.native
+  /**
+    * Deletes the dataset refresh properties of the dataset.
+    */
+  def deleteDataSetRefreshProperties(params: DeleteDataSetRefreshPropertiesRequest): Request[DeleteDataSetRefreshPropertiesResponse, AWSError] = js.native
+  def deleteDataSetRefreshProperties(
+    params: DeleteDataSetRefreshPropertiesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteDataSetRefreshPropertiesResponse, Unit]
+  ): Request[DeleteDataSetRefreshPropertiesResponse, AWSError] = js.native
   
   /**
     * Deletes the data source permanently. This operation breaks all the datasets that reference the deleted data source.
@@ -421,6 +507,20 @@ trait QuickSight extends Service {
   ): Request[DeleteNamespaceResponse, AWSError] = js.native
   
   /**
+    * Deletes a refresh schedule from a dataset.
+    */
+  def deleteRefreshSchedule(): Request[DeleteRefreshScheduleResponse, AWSError] = js.native
+  def deleteRefreshSchedule(callback: js.Function2[/* err */ AWSError, /* data */ DeleteRefreshScheduleResponse, Unit]): Request[DeleteRefreshScheduleResponse, AWSError] = js.native
+  /**
+    * Deletes a refresh schedule from a dataset.
+    */
+  def deleteRefreshSchedule(params: DeleteRefreshScheduleRequest): Request[DeleteRefreshScheduleResponse, AWSError] = js.native
+  def deleteRefreshSchedule(
+    params: DeleteRefreshScheduleRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteRefreshScheduleResponse, Unit]
+  ): Request[DeleteRefreshScheduleResponse, AWSError] = js.native
+  
+  /**
     * Deletes a template.
     */
   def deleteTemplate(): Request[DeleteTemplateResponse, AWSError] = js.native
@@ -477,12 +577,40 @@ trait QuickSight extends Service {
   ): Request[DeleteThemeAliasResponse, AWSError] = js.native
   
   /**
-    * Deletes the Amazon QuickSight user that is associated with the identity of the Identity and Access Management (IAM) user or role that's making the call. The IAM user isn't deleted as a result of this call. 
+    * Deletes a topic.
+    */
+  def deleteTopic(): Request[DeleteTopicResponse, AWSError] = js.native
+  def deleteTopic(callback: js.Function2[/* err */ AWSError, /* data */ DeleteTopicResponse, Unit]): Request[DeleteTopicResponse, AWSError] = js.native
+  /**
+    * Deletes a topic.
+    */
+  def deleteTopic(params: DeleteTopicRequest): Request[DeleteTopicResponse, AWSError] = js.native
+  def deleteTopic(
+    params: DeleteTopicRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteTopicResponse, Unit]
+  ): Request[DeleteTopicResponse, AWSError] = js.native
+  
+  /**
+    * Deletes a topic refresh schedule.
+    */
+  def deleteTopicRefreshSchedule(): Request[DeleteTopicRefreshScheduleResponse, AWSError] = js.native
+  def deleteTopicRefreshSchedule(callback: js.Function2[/* err */ AWSError, /* data */ DeleteTopicRefreshScheduleResponse, Unit]): Request[DeleteTopicRefreshScheduleResponse, AWSError] = js.native
+  /**
+    * Deletes a topic refresh schedule.
+    */
+  def deleteTopicRefreshSchedule(params: DeleteTopicRefreshScheduleRequest): Request[DeleteTopicRefreshScheduleResponse, AWSError] = js.native
+  def deleteTopicRefreshSchedule(
+    params: DeleteTopicRefreshScheduleRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteTopicRefreshScheduleResponse, Unit]
+  ): Request[DeleteTopicRefreshScheduleResponse, AWSError] = js.native
+  
+  /**
+    * Deletes the Amazon QuickSight user that is associated with the identity of the IAM user or role that's making the call. The IAM user isn't deleted as a result of this call. 
     */
   def deleteUser(): Request[DeleteUserResponse, AWSError] = js.native
   def deleteUser(callback: js.Function2[/* err */ AWSError, /* data */ DeleteUserResponse, Unit]): Request[DeleteUserResponse, AWSError] = js.native
   /**
-    * Deletes the Amazon QuickSight user that is associated with the identity of the Identity and Access Management (IAM) user or role that's making the call. The IAM user isn't deleted as a result of this call. 
+    * Deletes the Amazon QuickSight user that is associated with the identity of the IAM user or role that's making the call. The IAM user isn't deleted as a result of this call. 
     */
   def deleteUser(params: DeleteUserRequest): Request[DeleteUserResponse, AWSError] = js.native
   def deleteUser(
@@ -503,6 +631,20 @@ trait QuickSight extends Service {
     params: DeleteUserByPrincipalIdRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DeleteUserByPrincipalIdResponse, Unit]
   ): Request[DeleteUserByPrincipalIdResponse, AWSError] = js.native
+  
+  /**
+    * Deletes a VPC connection.
+    */
+  def deleteVPCConnection(): Request[DeleteVPCConnectionResponse, AWSError] = js.native
+  def deleteVPCConnection(callback: js.Function2[/* err */ AWSError, /* data */ DeleteVPCConnectionResponse, Unit]): Request[DeleteVPCConnectionResponse, AWSError] = js.native
+  /**
+    * Deletes a VPC connection.
+    */
+  def deleteVPCConnection(params: DeleteVPCConnectionRequest): Request[DeleteVPCConnectionResponse, AWSError] = js.native
+  def deleteVPCConnection(
+    params: DeleteVPCConnectionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DeleteVPCConnectionResponse, Unit]
+  ): Request[DeleteVPCConnectionResponse, AWSError] = js.native
   
   /**
     * Describes the customizations associated with the provided Amazon Web Services account and Amazon Amazon QuickSight namespace in an Amazon Web Services Region. The Amazon QuickSight console evaluates which customizations to apply by running this API operation with the Resolved flag included.  To determine what customizations display when you run this command, it can help to visualize the relationship of the entities involved.     Amazon Web Services account - The Amazon Web Services account exists at the top of the hierarchy. It has the potential to use all of the Amazon Web Services Regions and Amazon Web Services Services. When you subscribe to Amazon QuickSight, you choose one Amazon Web Services Region to use as your home Region. That's where your free SPICE capacity is located. You can use Amazon QuickSight in any supported Amazon Web Services Region.     Amazon Web Services Region - In each Amazon Web Services Region where you sign in to Amazon QuickSight at least once, Amazon QuickSight acts as a separate instance of the same service. If you have a user directory, it resides in us-east-1, which is the US East (N. Virginia). Generally speaking, these users have access to Amazon QuickSight in any Amazon Web Services Region, unless they are constrained to a namespace.  To run the command in a different Amazon Web Services Region, you change your Region settings. If you're using the CLI, you can use one of the following options:   Use command line options.    Use named profiles.    Run aws configure to change your default Amazon Web Services Region. Use Enter to key the same settings for your keys. For more information, see Configuring the CLI.      Namespace - A QuickSight namespace is a partition that contains users and assets (data sources, datasets, dashboards, and so on). To access assets that are in a specific namespace, users and groups must also be part of the same namespace. People who share a namespace are completely isolated from users and assets in other namespaces, even if they are in the same Amazon Web Services account and Amazon Web Services Region.    Applied customizations - Within an Amazon Web Services Region, a set of Amazon QuickSight customizations can apply to an Amazon Web Services account or to a namespace. Settings that you apply to a namespace override settings that you apply to an Amazon Web Services account. All settings are isolated to a single Amazon Web Services Region. To apply them in other Amazon Web Services Regions, run the CreateAccountCustomization command in each Amazon Web Services Region where you want to apply the same customizations.   
@@ -533,12 +675,12 @@ trait QuickSight extends Service {
   ): Request[DescribeAccountSettingsResponse, AWSError] = js.native
   
   /**
-    * Use the DescribeAccountSubscription operation to receive a description of a Amazon QuickSight account's subscription. A successful API call returns an AccountInfo object that includes an account's name, subscription status, authentication type, edition, and notification email address.
+    * Use the DescribeAccountSubscription operation to receive a description of an Amazon QuickSight account's subscription. A successful API call returns an AccountInfo object that includes an account's name, subscription status, authentication type, edition, and notification email address.
     */
   def describeAccountSubscription(): Request[DescribeAccountSubscriptionResponse, AWSError] = js.native
   def describeAccountSubscription(callback: js.Function2[/* err */ AWSError, /* data */ DescribeAccountSubscriptionResponse, Unit]): Request[DescribeAccountSubscriptionResponse, AWSError] = js.native
   /**
-    * Use the DescribeAccountSubscription operation to receive a description of a Amazon QuickSight account's subscription. A successful API call returns an AccountInfo object that includes an account's name, subscription status, authentication type, edition, and notification email address.
+    * Use the DescribeAccountSubscription operation to receive a description of an Amazon QuickSight account's subscription. A successful API call returns an AccountInfo object that includes an account's name, subscription status, authentication type, edition, and notification email address.
     */
   def describeAccountSubscription(params: DescribeAccountSubscriptionRequest): Request[DescribeAccountSubscriptionResponse, AWSError] = js.native
   def describeAccountSubscription(
@@ -559,6 +701,20 @@ trait QuickSight extends Service {
     params: DescribeAnalysisRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeAnalysisResponse, Unit]
   ): Request[DescribeAnalysisResponse, AWSError] = js.native
+  
+  /**
+    * Provides a detailed description of the definition of an analysis.  If you do not need to know details about the content of an Analysis, for instance if you are trying to check the status of a recently created or updated Analysis, use the  DescribeAnalysis  instead.  
+    */
+  def describeAnalysisDefinition(): Request[DescribeAnalysisDefinitionResponse, AWSError] = js.native
+  def describeAnalysisDefinition(callback: js.Function2[/* err */ AWSError, /* data */ DescribeAnalysisDefinitionResponse, Unit]): Request[DescribeAnalysisDefinitionResponse, AWSError] = js.native
+  /**
+    * Provides a detailed description of the definition of an analysis.  If you do not need to know details about the content of an Analysis, for instance if you are trying to check the status of a recently created or updated Analysis, use the  DescribeAnalysis  instead.  
+    */
+  def describeAnalysisDefinition(params: DescribeAnalysisDefinitionRequest): Request[DescribeAnalysisDefinitionResponse, AWSError] = js.native
+  def describeAnalysisDefinition(
+    params: DescribeAnalysisDefinitionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeAnalysisDefinitionResponse, Unit]
+  ): Request[DescribeAnalysisDefinitionResponse, AWSError] = js.native
   
   /**
     * Provides the read and write permissions for an analysis.
@@ -587,6 +743,20 @@ trait QuickSight extends Service {
     params: DescribeDashboardRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeDashboardResponse, Unit]
   ): Request[DescribeDashboardResponse, AWSError] = js.native
+  
+  /**
+    * Provides a detailed description of the definition of a dashboard.  If you do not need to know details about the content of a dashboard, for instance if you are trying to check the status of a recently created or updated dashboard, use the  DescribeDashboard  instead.  
+    */
+  def describeDashboardDefinition(): Request[DescribeDashboardDefinitionResponse, AWSError] = js.native
+  def describeDashboardDefinition(callback: js.Function2[/* err */ AWSError, /* data */ DescribeDashboardDefinitionResponse, Unit]): Request[DescribeDashboardDefinitionResponse, AWSError] = js.native
+  /**
+    * Provides a detailed description of the definition of a dashboard.  If you do not need to know details about the content of a dashboard, for instance if you are trying to check the status of a recently created or updated dashboard, use the  DescribeDashboard  instead.  
+    */
+  def describeDashboardDefinition(params: DescribeDashboardDefinitionRequest): Request[DescribeDashboardDefinitionResponse, AWSError] = js.native
+  def describeDashboardDefinition(
+    params: DescribeDashboardDefinitionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeDashboardDefinitionResponse, Unit]
+  ): Request[DescribeDashboardDefinitionResponse, AWSError] = js.native
   
   /**
     * Describes read and write permissions for a dashboard.
@@ -629,6 +799,22 @@ trait QuickSight extends Service {
     params: DescribeDataSetPermissionsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeDataSetPermissionsResponse, Unit]
   ): Request[DescribeDataSetPermissionsResponse, AWSError] = js.native
+  
+  /**
+    * Describes the refresh properties of a dataset.
+    */
+  def describeDataSetRefreshProperties(): Request[DescribeDataSetRefreshPropertiesResponse, AWSError] = js.native
+  def describeDataSetRefreshProperties(
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeDataSetRefreshPropertiesResponse, Unit]
+  ): Request[DescribeDataSetRefreshPropertiesResponse, AWSError] = js.native
+  /**
+    * Describes the refresh properties of a dataset.
+    */
+  def describeDataSetRefreshProperties(params: DescribeDataSetRefreshPropertiesRequest): Request[DescribeDataSetRefreshPropertiesResponse, AWSError] = js.native
+  def describeDataSetRefreshProperties(
+    params: DescribeDataSetRefreshPropertiesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeDataSetRefreshPropertiesResponse, Unit]
+  ): Request[DescribeDataSetRefreshPropertiesResponse, AWSError] = js.native
   
   /**
     * Describes a data source.
@@ -787,6 +973,20 @@ trait QuickSight extends Service {
   ): Request[DescribeNamespaceResponse, AWSError] = js.native
   
   /**
+    * Provides a summary of a refresh schedule.
+    */
+  def describeRefreshSchedule(): Request[DescribeRefreshScheduleResponse, AWSError] = js.native
+  def describeRefreshSchedule(callback: js.Function2[/* err */ AWSError, /* data */ DescribeRefreshScheduleResponse, Unit]): Request[DescribeRefreshScheduleResponse, AWSError] = js.native
+  /**
+    * Provides a summary of a refresh schedule.
+    */
+  def describeRefreshSchedule(params: DescribeRefreshScheduleRequest): Request[DescribeRefreshScheduleResponse, AWSError] = js.native
+  def describeRefreshSchedule(
+    params: DescribeRefreshScheduleRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeRefreshScheduleResponse, Unit]
+  ): Request[DescribeRefreshScheduleResponse, AWSError] = js.native
+  
+  /**
     * Describes a template's metadata.
     */
   def describeTemplate(): Request[DescribeTemplateResponse, AWSError] = js.native
@@ -813,6 +1013,20 @@ trait QuickSight extends Service {
     params: DescribeTemplateAliasRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeTemplateAliasResponse, Unit]
   ): Request[DescribeTemplateAliasResponse, AWSError] = js.native
+  
+  /**
+    * Provides a detailed description of the definition of a template.  If you do not need to know details about the content of a template, for instance if you are trying to check the status of a recently created or updated template, use the  DescribeTemplate  instead.  
+    */
+  def describeTemplateDefinition(): Request[DescribeTemplateDefinitionResponse, AWSError] = js.native
+  def describeTemplateDefinition(callback: js.Function2[/* err */ AWSError, /* data */ DescribeTemplateDefinitionResponse, Unit]): Request[DescribeTemplateDefinitionResponse, AWSError] = js.native
+  /**
+    * Provides a detailed description of the definition of a template.  If you do not need to know details about the content of a template, for instance if you are trying to check the status of a recently created or updated template, use the  DescribeTemplate  instead.  
+    */
+  def describeTemplateDefinition(params: DescribeTemplateDefinitionRequest): Request[DescribeTemplateDefinitionResponse, AWSError] = js.native
+  def describeTemplateDefinition(
+    params: DescribeTemplateDefinitionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeTemplateDefinitionResponse, Unit]
+  ): Request[DescribeTemplateDefinitionResponse, AWSError] = js.native
   
   /**
     * Describes read and write permissions on a template.
@@ -871,6 +1085,62 @@ trait QuickSight extends Service {
   ): Request[DescribeThemePermissionsResponse, AWSError] = js.native
   
   /**
+    * Describes a topic.
+    */
+  def describeTopic(): Request[DescribeTopicResponse, AWSError] = js.native
+  def describeTopic(callback: js.Function2[/* err */ AWSError, /* data */ DescribeTopicResponse, Unit]): Request[DescribeTopicResponse, AWSError] = js.native
+  /**
+    * Describes a topic.
+    */
+  def describeTopic(params: DescribeTopicRequest): Request[DescribeTopicResponse, AWSError] = js.native
+  def describeTopic(
+    params: DescribeTopicRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeTopicResponse, Unit]
+  ): Request[DescribeTopicResponse, AWSError] = js.native
+  
+  /**
+    * Describes the permissions of a topic.
+    */
+  def describeTopicPermissions(): Request[DescribeTopicPermissionsResponse, AWSError] = js.native
+  def describeTopicPermissions(callback: js.Function2[/* err */ AWSError, /* data */ DescribeTopicPermissionsResponse, Unit]): Request[DescribeTopicPermissionsResponse, AWSError] = js.native
+  /**
+    * Describes the permissions of a topic.
+    */
+  def describeTopicPermissions(params: DescribeTopicPermissionsRequest): Request[DescribeTopicPermissionsResponse, AWSError] = js.native
+  def describeTopicPermissions(
+    params: DescribeTopicPermissionsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeTopicPermissionsResponse, Unit]
+  ): Request[DescribeTopicPermissionsResponse, AWSError] = js.native
+  
+  /**
+    * Describes the status of a topic refresh.
+    */
+  def describeTopicRefresh(): Request[DescribeTopicRefreshResponse, AWSError] = js.native
+  def describeTopicRefresh(callback: js.Function2[/* err */ AWSError, /* data */ DescribeTopicRefreshResponse, Unit]): Request[DescribeTopicRefreshResponse, AWSError] = js.native
+  /**
+    * Describes the status of a topic refresh.
+    */
+  def describeTopicRefresh(params: DescribeTopicRefreshRequest): Request[DescribeTopicRefreshResponse, AWSError] = js.native
+  def describeTopicRefresh(
+    params: DescribeTopicRefreshRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeTopicRefreshResponse, Unit]
+  ): Request[DescribeTopicRefreshResponse, AWSError] = js.native
+  
+  /**
+    * Deletes a topic refresh schedule.
+    */
+  def describeTopicRefreshSchedule(): Request[DescribeTopicRefreshScheduleResponse, AWSError] = js.native
+  def describeTopicRefreshSchedule(callback: js.Function2[/* err */ AWSError, /* data */ DescribeTopicRefreshScheduleResponse, Unit]): Request[DescribeTopicRefreshScheduleResponse, AWSError] = js.native
+  /**
+    * Deletes a topic refresh schedule.
+    */
+  def describeTopicRefreshSchedule(params: DescribeTopicRefreshScheduleRequest): Request[DescribeTopicRefreshScheduleResponse, AWSError] = js.native
+  def describeTopicRefreshSchedule(
+    params: DescribeTopicRefreshScheduleRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeTopicRefreshScheduleResponse, Unit]
+  ): Request[DescribeTopicRefreshScheduleResponse, AWSError] = js.native
+  
+  /**
     * Returns information about a user, given the user name. 
     */
   def describeUser(): Request[DescribeUserResponse, AWSError] = js.native
@@ -883,6 +1153,20 @@ trait QuickSight extends Service {
     params: DescribeUserRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ DescribeUserResponse, Unit]
   ): Request[DescribeUserResponse, AWSError] = js.native
+  
+  /**
+    * Describes a VPC connection.
+    */
+  def describeVPCConnection(): Request[DescribeVPCConnectionResponse, AWSError] = js.native
+  def describeVPCConnection(callback: js.Function2[/* err */ AWSError, /* data */ DescribeVPCConnectionResponse, Unit]): Request[DescribeVPCConnectionResponse, AWSError] = js.native
+  /**
+    * Describes a VPC connection.
+    */
+  def describeVPCConnection(params: DescribeVPCConnectionRequest): Request[DescribeVPCConnectionResponse, AWSError] = js.native
+  def describeVPCConnection(
+    params: DescribeVPCConnectionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeVPCConnectionResponse, Unit]
+  ): Request[DescribeVPCConnectionResponse, AWSError] = js.native
   
   /**
     * Generates an embed URL that you can use to embed an Amazon QuickSight dashboard or visual in your website, without having to register any reader users. Before you use this action, make sure that you have configured the dashboards and permissions. The following rules apply to the generated URL:   It contains a temporary bearer token. It is valid for 5 minutes after it is generated. Once redeemed within this period, it cannot be re-used again.   The URL validity period should not be confused with the actual session lifetime that can be customized using the  SessionLifetimeInMinutes  parameter. The resulting user session is valid for 15 minutes (minimum) to 10 hours (maximum). The default session duration is 10 hours.   You are charged only when the URL is used or there is interaction with Amazon QuickSight.   For more information, see Embedded Analytics in the Amazon QuickSight User Guide. For more information about the high-level steps for embedding and for an interactive demo of the ways you can customize embedding, visit the Amazon QuickSight Developer Portal.
@@ -1071,12 +1355,12 @@ trait QuickSight extends Service {
   ): Request[ListGroupsResponse, AWSError] = js.native
   
   /**
-    * Lists IAM policy assignments in the current Amazon QuickSight account.
+    * Lists the IAM policy assignments in the current Amazon QuickSight account.
     */
   def listIAMPolicyAssignments(): Request[ListIAMPolicyAssignmentsResponse, AWSError] = js.native
   def listIAMPolicyAssignments(callback: js.Function2[/* err */ AWSError, /* data */ ListIAMPolicyAssignmentsResponse, Unit]): Request[ListIAMPolicyAssignmentsResponse, AWSError] = js.native
   /**
-    * Lists IAM policy assignments in the current Amazon QuickSight account.
+    * Lists the IAM policy assignments in the current Amazon QuickSight account.
     */
   def listIAMPolicyAssignments(params: ListIAMPolicyAssignmentsRequest): Request[ListIAMPolicyAssignmentsResponse, AWSError] = js.native
   def listIAMPolicyAssignments(
@@ -1085,14 +1369,14 @@ trait QuickSight extends Service {
   ): Request[ListIAMPolicyAssignmentsResponse, AWSError] = js.native
   
   /**
-    * Lists all the IAM policy assignments, including the Amazon Resource Names (ARNs) for the IAM policies assigned to the specified user and group or groups that the user belongs to.
+    * Lists all of the IAM policy assignments, including the Amazon Resource Names (ARNs), for the IAM policies assigned to the specified user and group, or groups that the user belongs to.
     */
   def listIAMPolicyAssignmentsForUser(): Request[ListIAMPolicyAssignmentsForUserResponse, AWSError] = js.native
   def listIAMPolicyAssignmentsForUser(
     callback: js.Function2[/* err */ AWSError, /* data */ ListIAMPolicyAssignmentsForUserResponse, Unit]
   ): Request[ListIAMPolicyAssignmentsForUserResponse, AWSError] = js.native
   /**
-    * Lists all the IAM policy assignments, including the Amazon Resource Names (ARNs) for the IAM policies assigned to the specified user and group or groups that the user belongs to.
+    * Lists all of the IAM policy assignments, including the Amazon Resource Names (ARNs), for the IAM policies assigned to the specified user and group, or groups that the user belongs to.
     */
   def listIAMPolicyAssignmentsForUser(params: ListIAMPolicyAssignmentsForUserRequest): Request[ListIAMPolicyAssignmentsForUserResponse, AWSError] = js.native
   def listIAMPolicyAssignmentsForUser(
@@ -1127,6 +1411,20 @@ trait QuickSight extends Service {
     params: ListNamespacesRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListNamespacesResponse, Unit]
   ): Request[ListNamespacesResponse, AWSError] = js.native
+  
+  /**
+    * Lists the refresh schedules of a dataset. Each dataset can have up to 5 schedules. 
+    */
+  def listRefreshSchedules(): Request[ListRefreshSchedulesResponse, AWSError] = js.native
+  def listRefreshSchedules(callback: js.Function2[/* err */ AWSError, /* data */ ListRefreshSchedulesResponse, Unit]): Request[ListRefreshSchedulesResponse, AWSError] = js.native
+  /**
+    * Lists the refresh schedules of a dataset. Each dataset can have up to 5 schedules. 
+    */
+  def listRefreshSchedules(params: ListRefreshSchedulesRequest): Request[ListRefreshSchedulesResponse, AWSError] = js.native
+  def listRefreshSchedules(
+    params: ListRefreshSchedulesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListRefreshSchedulesResponse, Unit]
+  ): Request[ListRefreshSchedulesResponse, AWSError] = js.native
   
   /**
     * Lists the tags assigned to a resource.
@@ -1227,6 +1525,34 @@ trait QuickSight extends Service {
   ): Request[ListThemesResponse, AWSError] = js.native
   
   /**
+    * Lists all of the refresh schedules for a topic.
+    */
+  def listTopicRefreshSchedules(): Request[ListTopicRefreshSchedulesResponse, AWSError] = js.native
+  def listTopicRefreshSchedules(callback: js.Function2[/* err */ AWSError, /* data */ ListTopicRefreshSchedulesResponse, Unit]): Request[ListTopicRefreshSchedulesResponse, AWSError] = js.native
+  /**
+    * Lists all of the refresh schedules for a topic.
+    */
+  def listTopicRefreshSchedules(params: ListTopicRefreshSchedulesRequest): Request[ListTopicRefreshSchedulesResponse, AWSError] = js.native
+  def listTopicRefreshSchedules(
+    params: ListTopicRefreshSchedulesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListTopicRefreshSchedulesResponse, Unit]
+  ): Request[ListTopicRefreshSchedulesResponse, AWSError] = js.native
+  
+  /**
+    * Lists all of the topics within an account.
+    */
+  def listTopics(): Request[ListTopicsResponse, AWSError] = js.native
+  def listTopics(callback: js.Function2[/* err */ AWSError, /* data */ ListTopicsResponse, Unit]): Request[ListTopicsResponse, AWSError] = js.native
+  /**
+    * Lists all of the topics within an account.
+    */
+  def listTopics(params: ListTopicsRequest): Request[ListTopicsResponse, AWSError] = js.native
+  def listTopics(
+    params: ListTopicsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListTopicsResponse, Unit]
+  ): Request[ListTopicsResponse, AWSError] = js.native
+  
+  /**
     * Lists the Amazon QuickSight groups that an Amazon QuickSight user is a member of.
     */
   def listUserGroups(): Request[ListUserGroupsResponse, AWSError] = js.native
@@ -1255,12 +1581,40 @@ trait QuickSight extends Service {
   ): Request[ListUsersResponse, AWSError] = js.native
   
   /**
-    * Creates an Amazon QuickSight user, whose identity is associated with the Identity and Access Management (IAM) identity or role specified in the request. 
+    * Lists all of the VPC connections in the current set Amazon Web Services Region of an Amazon Web Services account.
+    */
+  def listVPCConnections(): Request[ListVPCConnectionsResponse, AWSError] = js.native
+  def listVPCConnections(callback: js.Function2[/* err */ AWSError, /* data */ ListVPCConnectionsResponse, Unit]): Request[ListVPCConnectionsResponse, AWSError] = js.native
+  /**
+    * Lists all of the VPC connections in the current set Amazon Web Services Region of an Amazon Web Services account.
+    */
+  def listVPCConnections(params: ListVPCConnectionsRequest): Request[ListVPCConnectionsResponse, AWSError] = js.native
+  def listVPCConnections(
+    params: ListVPCConnectionsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListVPCConnectionsResponse, Unit]
+  ): Request[ListVPCConnectionsResponse, AWSError] = js.native
+  
+  /**
+    * Creates or updates the dataset refresh properties for the dataset.
+    */
+  def putDataSetRefreshProperties(): Request[PutDataSetRefreshPropertiesResponse, AWSError] = js.native
+  def putDataSetRefreshProperties(callback: js.Function2[/* err */ AWSError, /* data */ PutDataSetRefreshPropertiesResponse, Unit]): Request[PutDataSetRefreshPropertiesResponse, AWSError] = js.native
+  /**
+    * Creates or updates the dataset refresh properties for the dataset.
+    */
+  def putDataSetRefreshProperties(params: PutDataSetRefreshPropertiesRequest): Request[PutDataSetRefreshPropertiesResponse, AWSError] = js.native
+  def putDataSetRefreshProperties(
+    params: PutDataSetRefreshPropertiesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ PutDataSetRefreshPropertiesResponse, Unit]
+  ): Request[PutDataSetRefreshPropertiesResponse, AWSError] = js.native
+  
+  /**
+    * Creates an Amazon QuickSight user whose identity is associated with the Identity and Access Management (IAM) identity or role specified in the request. When you register a new user from the Amazon QuickSight API, Amazon QuickSight generates a registration URL. The user accesses this registration URL to create their account. Amazon QuickSight doesn't send a registration email to users who are registered from the Amazon QuickSight API. If you want new users to receive a registration email, then add those users in the Amazon QuickSight console. For more information on registering a new user in the Amazon QuickSight console, see  Inviting users to access Amazon QuickSight.
     */
   def registerUser(): Request[RegisterUserResponse, AWSError] = js.native
   def registerUser(callback: js.Function2[/* err */ AWSError, /* data */ RegisterUserResponse, Unit]): Request[RegisterUserResponse, AWSError] = js.native
   /**
-    * Creates an Amazon QuickSight user, whose identity is associated with the Identity and Access Management (IAM) identity or role specified in the request. 
+    * Creates an Amazon QuickSight user whose identity is associated with the Identity and Access Management (IAM) identity or role specified in the request. When you register a new user from the Amazon QuickSight API, Amazon QuickSight generates a registration URL. The user accesses this registration URL to create their account. Amazon QuickSight doesn't send a registration email to users who are registered from the Amazon QuickSight API. If you want new users to receive a registration email, then add those users in the Amazon QuickSight console. For more information on registering a new user in the Amazon QuickSight console, see  Inviting users to access Amazon QuickSight.
     */
   def registerUser(params: RegisterUserRequest): Request[RegisterUserResponse, AWSError] = js.native
   def registerUser(
@@ -1311,6 +1665,34 @@ trait QuickSight extends Service {
   ): Request[SearchDashboardsResponse, AWSError] = js.native
   
   /**
+    * Use the SearchDataSets operation to search for datasets that belong to an account.
+    */
+  def searchDataSets(): Request[SearchDataSetsResponse, AWSError] = js.native
+  def searchDataSets(callback: js.Function2[/* err */ AWSError, /* data */ SearchDataSetsResponse, Unit]): Request[SearchDataSetsResponse, AWSError] = js.native
+  /**
+    * Use the SearchDataSets operation to search for datasets that belong to an account.
+    */
+  def searchDataSets(params: SearchDataSetsRequest): Request[SearchDataSetsResponse, AWSError] = js.native
+  def searchDataSets(
+    params: SearchDataSetsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ SearchDataSetsResponse, Unit]
+  ): Request[SearchDataSetsResponse, AWSError] = js.native
+  
+  /**
+    * Use the SearchDataSources operation to search for data sources that belong to an account.
+    */
+  def searchDataSources(): Request[SearchDataSourcesResponse, AWSError] = js.native
+  def searchDataSources(callback: js.Function2[/* err */ AWSError, /* data */ SearchDataSourcesResponse, Unit]): Request[SearchDataSourcesResponse, AWSError] = js.native
+  /**
+    * Use the SearchDataSources operation to search for data sources that belong to an account.
+    */
+  def searchDataSources(params: SearchDataSourcesRequest): Request[SearchDataSourcesResponse, AWSError] = js.native
+  def searchDataSources(
+    params: SearchDataSourcesRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ SearchDataSourcesResponse, Unit]
+  ): Request[SearchDataSourcesResponse, AWSError] = js.native
+  
+  /**
     * Searches the subfolders in a folder.
     */
   def searchFolders(): Request[SearchFoldersResponse, AWSError] = js.native
@@ -1339,12 +1721,12 @@ trait QuickSight extends Service {
   ): Request[SearchGroupsResponse, AWSError] = js.native
   
   /**
-    * Assigns one or more tags (key-value pairs) to the specified Amazon QuickSight resource.  Tags can help you organize and categorize your resources. You can also use them to scope user permissions, by granting a user permission to access or change only resources with certain tag values. You can use the TagResource operation with a resource that already has tags. If you specify a new tag key for the resource, this tag is appended to the list of tags associated with the resource. If you specify a tag key that is already associated with the resource, the new tag value that you specify replaces the previous value for that tag. You can associate as many as 50 tags with a resource. Amazon QuickSight supports tagging on data set, data source, dashboard, and template.  Tagging for Amazon QuickSight works in a similar way to tagging for other Amazon Web Services services, except for the following:   You can't use tags to track costs for Amazon QuickSight. This isn't possible because you can't tag the resources that Amazon QuickSight costs are based on, for example Amazon QuickSight storage capacity (SPICE), number of users, type of users, and usage metrics.   Amazon QuickSight doesn't currently support the tag editor for Resource Groups.  
+    * Assigns one or more tags (key-value pairs) to the specified Amazon QuickSight resource.  Tags can help you organize and categorize your resources. You can also use them to scope user permissions, by granting a user permission to access or change only resources with certain tag values. You can use the TagResource operation with a resource that already has tags. If you specify a new tag key for the resource, this tag is appended to the list of tags associated with the resource. If you specify a tag key that is already associated with the resource, the new tag value that you specify replaces the previous value for that tag. You can associate as many as 50 tags with a resource. Amazon QuickSight supports tagging on data set, data source, dashboard, template, and topic.  Tagging for Amazon QuickSight works in a similar way to tagging for other Amazon Web Services services, except for the following:   You can't use tags to track costs for Amazon QuickSight. This isn't possible because you can't tag the resources that Amazon QuickSight costs are based on, for example Amazon QuickSight storage capacity (SPICE), number of users, type of users, and usage metrics.   Amazon QuickSight doesn't currently support the tag editor for Resource Groups.  
     */
   def tagResource(): Request[TagResourceResponse, AWSError] = js.native
   def tagResource(callback: js.Function2[/* err */ AWSError, /* data */ TagResourceResponse, Unit]): Request[TagResourceResponse, AWSError] = js.native
   /**
-    * Assigns one or more tags (key-value pairs) to the specified Amazon QuickSight resource.  Tags can help you organize and categorize your resources. You can also use them to scope user permissions, by granting a user permission to access or change only resources with certain tag values. You can use the TagResource operation with a resource that already has tags. If you specify a new tag key for the resource, this tag is appended to the list of tags associated with the resource. If you specify a tag key that is already associated with the resource, the new tag value that you specify replaces the previous value for that tag. You can associate as many as 50 tags with a resource. Amazon QuickSight supports tagging on data set, data source, dashboard, and template.  Tagging for Amazon QuickSight works in a similar way to tagging for other Amazon Web Services services, except for the following:   You can't use tags to track costs for Amazon QuickSight. This isn't possible because you can't tag the resources that Amazon QuickSight costs are based on, for example Amazon QuickSight storage capacity (SPICE), number of users, type of users, and usage metrics.   Amazon QuickSight doesn't currently support the tag editor for Resource Groups.  
+    * Assigns one or more tags (key-value pairs) to the specified Amazon QuickSight resource.  Tags can help you organize and categorize your resources. You can also use them to scope user permissions, by granting a user permission to access or change only resources with certain tag values. You can use the TagResource operation with a resource that already has tags. If you specify a new tag key for the resource, this tag is appended to the list of tags associated with the resource. If you specify a tag key that is already associated with the resource, the new tag value that you specify replaces the previous value for that tag. You can associate as many as 50 tags with a resource. Amazon QuickSight supports tagging on data set, data source, dashboard, template, and topic.  Tagging for Amazon QuickSight works in a similar way to tagging for other Amazon Web Services services, except for the following:   You can't use tags to track costs for Amazon QuickSight. This isn't possible because you can't tag the resources that Amazon QuickSight costs are based on, for example Amazon QuickSight storage capacity (SPICE), number of users, type of users, and usage metrics.   Amazon QuickSight doesn't currently support the tag editor for Resource Groups.  
     */
   def tagResource(params: TagResourceRequest): Request[TagResourceResponse, AWSError] = js.native
   def tagResource(
@@ -1579,12 +1961,12 @@ trait QuickSight extends Service {
   ): Request[UpdateIAMPolicyAssignmentResponse, AWSError] = js.native
   
   /**
-    * Updates the content and status of IP rules. To use this operation, you need to provide the entire map of rules. You can use the DescribeIpRestriction operation to get the current rule map.
+    * Updates the content and status of IP rules. To use this operation, you must provide the entire map of rules. You can use the DescribeIpRestriction operation to get the current rule map.
     */
   def updateIpRestriction(): Request[UpdateIpRestrictionResponse, AWSError] = js.native
   def updateIpRestriction(callback: js.Function2[/* err */ AWSError, /* data */ UpdateIpRestrictionResponse, Unit]): Request[UpdateIpRestrictionResponse, AWSError] = js.native
   /**
-    * Updates the content and status of IP rules. To use this operation, you need to provide the entire map of rules. You can use the DescribeIpRestriction operation to get the current rule map.
+    * Updates the content and status of IP rules. To use this operation, you must provide the entire map of rules. You can use the DescribeIpRestriction operation to get the current rule map.
     */
   def updateIpRestriction(params: UpdateIpRestrictionRequest): Request[UpdateIpRestrictionResponse, AWSError] = js.native
   def updateIpRestriction(
@@ -1605,6 +1987,20 @@ trait QuickSight extends Service {
     params: UpdatePublicSharingSettingsRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdatePublicSharingSettingsResponse, Unit]
   ): Request[UpdatePublicSharingSettingsResponse, AWSError] = js.native
+  
+  /**
+    * Updates a refresh schedule for a dataset.
+    */
+  def updateRefreshSchedule(): Request[UpdateRefreshScheduleResponse, AWSError] = js.native
+  def updateRefreshSchedule(callback: js.Function2[/* err */ AWSError, /* data */ UpdateRefreshScheduleResponse, Unit]): Request[UpdateRefreshScheduleResponse, AWSError] = js.native
+  /**
+    * Updates a refresh schedule for a dataset.
+    */
+  def updateRefreshSchedule(params: UpdateRefreshScheduleRequest): Request[UpdateRefreshScheduleResponse, AWSError] = js.native
+  def updateRefreshSchedule(
+    params: UpdateRefreshScheduleRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateRefreshScheduleResponse, Unit]
+  ): Request[UpdateRefreshScheduleResponse, AWSError] = js.native
   
   /**
     * Updates a template from an existing Amazon QuickSight analysis or another template.
@@ -1691,6 +2087,48 @@ trait QuickSight extends Service {
   ): Request[UpdateThemePermissionsResponse, AWSError] = js.native
   
   /**
+    * Updates a topic.
+    */
+  def updateTopic(): Request[UpdateTopicResponse, AWSError] = js.native
+  def updateTopic(callback: js.Function2[/* err */ AWSError, /* data */ UpdateTopicResponse, Unit]): Request[UpdateTopicResponse, AWSError] = js.native
+  /**
+    * Updates a topic.
+    */
+  def updateTopic(params: UpdateTopicRequest): Request[UpdateTopicResponse, AWSError] = js.native
+  def updateTopic(
+    params: UpdateTopicRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateTopicResponse, Unit]
+  ): Request[UpdateTopicResponse, AWSError] = js.native
+  
+  /**
+    * Updates the permissions of a topic.
+    */
+  def updateTopicPermissions(): Request[UpdateTopicPermissionsResponse, AWSError] = js.native
+  def updateTopicPermissions(callback: js.Function2[/* err */ AWSError, /* data */ UpdateTopicPermissionsResponse, Unit]): Request[UpdateTopicPermissionsResponse, AWSError] = js.native
+  /**
+    * Updates the permissions of a topic.
+    */
+  def updateTopicPermissions(params: UpdateTopicPermissionsRequest): Request[UpdateTopicPermissionsResponse, AWSError] = js.native
+  def updateTopicPermissions(
+    params: UpdateTopicPermissionsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateTopicPermissionsResponse, Unit]
+  ): Request[UpdateTopicPermissionsResponse, AWSError] = js.native
+  
+  /**
+    * Updates a topic refresh schedule.
+    */
+  def updateTopicRefreshSchedule(): Request[UpdateTopicRefreshScheduleResponse, AWSError] = js.native
+  def updateTopicRefreshSchedule(callback: js.Function2[/* err */ AWSError, /* data */ UpdateTopicRefreshScheduleResponse, Unit]): Request[UpdateTopicRefreshScheduleResponse, AWSError] = js.native
+  /**
+    * Updates a topic refresh schedule.
+    */
+  def updateTopicRefreshSchedule(params: UpdateTopicRefreshScheduleRequest): Request[UpdateTopicRefreshScheduleResponse, AWSError] = js.native
+  def updateTopicRefreshSchedule(
+    params: UpdateTopicRefreshScheduleRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateTopicRefreshScheduleResponse, Unit]
+  ): Request[UpdateTopicRefreshScheduleResponse, AWSError] = js.native
+  
+  /**
     * Updates an Amazon QuickSight user.
     */
   def updateUser(): Request[UpdateUserResponse, AWSError] = js.native
@@ -1703,4 +2141,18 @@ trait QuickSight extends Service {
     params: UpdateUserRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateUserResponse, Unit]
   ): Request[UpdateUserResponse, AWSError] = js.native
+  
+  /**
+    * Updates a VPC connection.
+    */
+  def updateVPCConnection(): Request[UpdateVPCConnectionResponse, AWSError] = js.native
+  def updateVPCConnection(callback: js.Function2[/* err */ AWSError, /* data */ UpdateVPCConnectionResponse, Unit]): Request[UpdateVPCConnectionResponse, AWSError] = js.native
+  /**
+    * Updates a VPC connection.
+    */
+  def updateVPCConnection(params: UpdateVPCConnectionRequest): Request[UpdateVPCConnectionResponse, AWSError] = js.native
+  def updateVPCConnection(
+    params: UpdateVPCConnectionRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateVPCConnectionResponse, Unit]
+  ): Request[UpdateVPCConnectionResponse, AWSError] = js.native
 }

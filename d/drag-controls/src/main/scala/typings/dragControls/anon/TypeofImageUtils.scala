@@ -1,9 +1,11 @@
 package typings.dragControls.anon
 
+import typings.std.CanvasImageSource
 import typings.std.HTMLCanvasElement
+import typings.std.HTMLImageElement
+import typings.std.ImageBitmap
+import typings.std.ImageData
 import typings.three.anon.Data
-import typings.three.srcConstantsMod.Mapping
-import typings.three.srcTexturesTextureMod.Texture
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,66 +13,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait TypeofImageUtils extends StObject {
   
+  def getDataURL(image: CanvasImageSource): String = js.native
+  def getDataURL(image: HTMLCanvasElement): String = js.native
   /**
-    * @deprecated
+    * Returns a data URI containing a representation of the given image.
+    * @param image The image object.
     */
-  var crossOrigin: String = js.native
+  def getDataURL(image: HTMLImageElement): String = js.native
+  def getDataURL(image: ImageBitmap): String = js.native
+  def getDataURL(image: ImageData): String = js.native
   
-  def getDataURL(image: Any): String = js.native
-  
+  def sRGBToLinear(image: HTMLCanvasElement): HTMLCanvasElement = js.native
   /**
-    * @deprecated Use {@link TextureLoader THREE.TextureLoader()} instead.
+    * Converts the given sRGB image data to linear color space.
+    * @param image
     */
-  def loadTexture(url: String): Texture = js.native
-  def loadTexture(url: String, mapping: Unit, onLoad: js.Function1[/* texture */ Texture, Unit]): Texture = js.native
-  def loadTexture(
-    url: String,
-    mapping: Unit,
-    onLoad: js.Function1[/* texture */ Texture, Unit],
-    onError: js.Function1[/* message */ String, Unit]
-  ): Texture = js.native
-  def loadTexture(url: String, mapping: Unit, onLoad: Unit, onError: js.Function1[/* message */ String, Unit]): Texture = js.native
-  def loadTexture(url: String, mapping: Mapping): Texture = js.native
-  def loadTexture(url: String, mapping: Mapping, onLoad: js.Function1[/* texture */ Texture, Unit]): Texture = js.native
-  def loadTexture(
-    url: String,
-    mapping: Mapping,
-    onLoad: js.Function1[/* texture */ Texture, Unit],
-    onError: js.Function1[/* message */ String, Unit]
-  ): Texture = js.native
-  def loadTexture(url: String, mapping: Mapping, onLoad: Unit, onError: js.Function1[/* message */ String, Unit]): Texture = js.native
-  
+  def sRGBToLinear(image: HTMLImageElement): HTMLCanvasElement = js.native
+  def sRGBToLinear(image: ImageBitmap): HTMLCanvasElement = js.native
   /**
-    * @deprecated Use {@link CubeTextureLoader THREE.CubeTextureLoader()} instead.
+    * Converts the given sRGB image data to linear color space.
+    * @param image
     */
-  def loadTextureCube(array: js.Array[String]): Texture = js.native
-  def loadTextureCube(array: js.Array[String], mapping: Unit, onLoad: js.Function1[/* texture */ Texture, Unit]): Texture = js.native
-  def loadTextureCube(
-    array: js.Array[String],
-    mapping: Unit,
-    onLoad: js.Function1[/* texture */ Texture, Unit],
-    onError: js.Function1[/* message */ String, Unit]
-  ): Texture = js.native
-  def loadTextureCube(
-    array: js.Array[String],
-    mapping: Unit,
-    onLoad: Unit,
-    onError: js.Function1[/* message */ String, Unit]
-  ): Texture = js.native
-  def loadTextureCube(array: js.Array[String], mapping: Mapping): Texture = js.native
-  def loadTextureCube(array: js.Array[String], mapping: Mapping, onLoad: js.Function1[/* texture */ Texture, Unit]): Texture = js.native
-  def loadTextureCube(
-    array: js.Array[String],
-    mapping: Mapping,
-    onLoad: js.Function1[/* texture */ Texture, Unit],
-    onError: js.Function1[/* message */ String, Unit]
-  ): Texture = js.native
-  def loadTextureCube(
-    array: js.Array[String],
-    mapping: Mapping,
-    onLoad: Unit,
-    onError: js.Function1[/* message */ String, Unit]
-  ): Texture = js.native
-  
-  def sRGBToLinear(image: Any): HTMLCanvasElement | Data = js.native
+  def sRGBToLinear(image: ImageData): Data = js.native
 }

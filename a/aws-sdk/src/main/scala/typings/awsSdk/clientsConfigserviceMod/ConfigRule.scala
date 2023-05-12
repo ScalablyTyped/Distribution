@@ -37,6 +37,11 @@ trait ConfigRule extends StObject {
   var Description: js.UndefOr[EmptiableStringWithCharLimit256] = js.undefined
   
   /**
+    * The modes the Config rule can be evaluated in. The valid values are distinct objects. By default, the value is Detective evaluation mode only.
+    */
+  var EvaluationModes: js.UndefOr[typings.awsSdk.clientsConfigserviceMod.EvaluationModes] = js.undefined
+  
+  /**
     * A string, in JSON format, that is passed to the Config rule Lambda function.
     */
   var InputParameters: js.UndefOr[StringWithCharLimit1024] = js.undefined
@@ -89,6 +94,12 @@ object ConfigRule {
     inline def setDescription(value: EmptiableStringWithCharLimit256): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    
+    inline def setEvaluationModes(value: EvaluationModes): Self = StObject.set(x, "EvaluationModes", value.asInstanceOf[js.Any])
+    
+    inline def setEvaluationModesUndefined: Self = StObject.set(x, "EvaluationModes", js.undefined)
+    
+    inline def setEvaluationModesVarargs(value: EvaluationModeConfiguration*): Self = StObject.set(x, "EvaluationModes", js.Array(value*))
     
     inline def setInputParameters(value: StringWithCharLimit1024): Self = StObject.set(x, "InputParameters", value.asInstanceOf[js.Any])
     

@@ -1,7 +1,7 @@
 
 # Scala.js typings for expo-file-system
 
-Typings are for version 15.1.1
+Typings are for version 15.2.2
 
 ## Library description:
 Provides access to the local file system on the device.

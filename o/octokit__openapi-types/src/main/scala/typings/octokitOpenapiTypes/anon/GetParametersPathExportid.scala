@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetParametersPathExportid extends StObject {
   
   /**
-    * Gets information about an export of a codespace.
+    * Get details about a codespace export
+    * @description Gets information about an export of a codespace.
     *
     * You must authenticate using a personal access token with the `codespace` scope to use this endpoint.
     *

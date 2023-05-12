@@ -1,6 +1,6 @@
 package typings.plotlyJs.anon
 
-import typings.plotlyJs.mod.ModeBarButton
+import typings.plotlyJs.mod.ModeBarButtonAny
 import typings.plotlyJs.mod.ModeBarDefaultButtons
 import typings.plotlyJs.mod.PlotlyHTMLElement
 import typings.plotlyJs.plotlyJsBooleans.`false`
@@ -50,9 +50,9 @@ trait PartialConfig extends StObject {
   
   var mapboxAccessToken: js.UndefOr[String] = js.undefined
   
-  var modeBarButtons: js.UndefOr[(js.Array[js.Array[ModeBarDefaultButtons | ModeBarButton]]) | `false`] = js.undefined
+  var modeBarButtons: js.UndefOr[js.Array[js.Array[ModeBarButtonAny]] | `false`] = js.undefined
   
-  var modeBarButtonsToAdd: js.UndefOr[js.Array[ModeBarButton | ModeBarDefaultButtons]] = js.undefined
+  var modeBarButtonsToAdd: js.UndefOr[js.Array[ModeBarButtonAny]] = js.undefined
   
   var modeBarButtonsToRemove: js.UndefOr[js.Array[ModeBarDefaultButtons]] = js.undefined
   
@@ -168,13 +168,13 @@ object PartialConfig {
     
     inline def setMapboxAccessTokenUndefined: Self = StObject.set(x, "mapboxAccessToken", js.undefined)
     
-    inline def setModeBarButtons(value: (js.Array[js.Array[ModeBarDefaultButtons | ModeBarButton]]) | `false`): Self = StObject.set(x, "modeBarButtons", value.asInstanceOf[js.Any])
+    inline def setModeBarButtons(value: js.Array[js.Array[ModeBarButtonAny]] | `false`): Self = StObject.set(x, "modeBarButtons", value.asInstanceOf[js.Any])
     
-    inline def setModeBarButtonsToAdd(value: js.Array[ModeBarButton | ModeBarDefaultButtons]): Self = StObject.set(x, "modeBarButtonsToAdd", value.asInstanceOf[js.Any])
+    inline def setModeBarButtonsToAdd(value: js.Array[ModeBarButtonAny]): Self = StObject.set(x, "modeBarButtonsToAdd", value.asInstanceOf[js.Any])
     
     inline def setModeBarButtonsToAddUndefined: Self = StObject.set(x, "modeBarButtonsToAdd", js.undefined)
     
-    inline def setModeBarButtonsToAddVarargs(value: (ModeBarButton | ModeBarDefaultButtons)*): Self = StObject.set(x, "modeBarButtonsToAdd", js.Array(value*))
+    inline def setModeBarButtonsToAddVarargs(value: ModeBarButtonAny*): Self = StObject.set(x, "modeBarButtonsToAdd", js.Array(value*))
     
     inline def setModeBarButtonsToRemove(value: js.Array[ModeBarDefaultButtons]): Self = StObject.set(x, "modeBarButtonsToRemove", value.asInstanceOf[js.Any])
     
@@ -184,7 +184,7 @@ object PartialConfig {
     
     inline def setModeBarButtonsUndefined: Self = StObject.set(x, "modeBarButtons", js.undefined)
     
-    inline def setModeBarButtonsVarargs(value: (js.Array[ModeBarDefaultButtons | ModeBarButton])*): Self = StObject.set(x, "modeBarButtons", js.Array(value*))
+    inline def setModeBarButtonsVarargs(value: js.Array[ModeBarButtonAny]*): Self = StObject.set(x, "modeBarButtons", js.Array(value*))
     
     inline def setPlotGlPixelRatio(value: Double): Self = StObject.set(x, "plotGlPixelRatio", value.asInstanceOf[js.Any])
     

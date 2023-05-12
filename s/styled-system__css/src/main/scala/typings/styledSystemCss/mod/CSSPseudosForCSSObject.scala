@@ -187,6 +187,21 @@ trait CSSPseudosForCSSObject extends StObject {
   @JSName("::target-text")
   var `ColonColontarget-text`: js.UndefOr[CSSObject] = js.undefined
   
+  @JSName("::view-transition")
+  var `ColonColonview-transition`: js.UndefOr[CSSObject] = js.undefined
+  
+  @JSName("::view-transition-group")
+  var `ColonColonview-transition-group`: js.UndefOr[CSSObject] = js.undefined
+  
+  @JSName("::view-transition-image-pair")
+  var `ColonColonview-transition-image-pair`: js.UndefOr[CSSObject] = js.undefined
+  
+  @JSName("::view-transition-new")
+  var `ColonColonview-transition-new`: js.UndefOr[CSSObject] = js.undefined
+  
+  @JSName("::view-transition-old")
+  var `ColonColonview-transition-old`: js.UndefOr[CSSObject] = js.undefined
+  
   @JSName(":active")
   var Colonactive: js.UndefOr[CSSObject] = js.undefined
   
@@ -637,6 +652,26 @@ object CSSPseudosForCSSObject {
     inline def `setColonColontarget-text`(value: CSSObject): Self = StObject.set(x, "::target-text", value.asInstanceOf[js.Any])
     
     inline def `setColonColontarget-textUndefined`: Self = StObject.set(x, "::target-text", js.undefined)
+    
+    inline def `setColonColonview-transition`(value: CSSObject): Self = StObject.set(x, "::view-transition", value.asInstanceOf[js.Any])
+    
+    inline def `setColonColonview-transition-group`(value: CSSObject): Self = StObject.set(x, "::view-transition-group", value.asInstanceOf[js.Any])
+    
+    inline def `setColonColonview-transition-groupUndefined`: Self = StObject.set(x, "::view-transition-group", js.undefined)
+    
+    inline def `setColonColonview-transition-image-pair`(value: CSSObject): Self = StObject.set(x, "::view-transition-image-pair", value.asInstanceOf[js.Any])
+    
+    inline def `setColonColonview-transition-image-pairUndefined`: Self = StObject.set(x, "::view-transition-image-pair", js.undefined)
+    
+    inline def `setColonColonview-transition-new`(value: CSSObject): Self = StObject.set(x, "::view-transition-new", value.asInstanceOf[js.Any])
+    
+    inline def `setColonColonview-transition-newUndefined`: Self = StObject.set(x, "::view-transition-new", js.undefined)
+    
+    inline def `setColonColonview-transition-old`(value: CSSObject): Self = StObject.set(x, "::view-transition-old", value.asInstanceOf[js.Any])
+    
+    inline def `setColonColonview-transition-oldUndefined`: Self = StObject.set(x, "::view-transition-old", js.undefined)
+    
+    inline def `setColonColonview-transitionUndefined`: Self = StObject.set(x, "::view-transition", js.undefined)
     
     inline def setColonactive(value: CSSObject): Self = StObject.set(x, ":active", value.asInstanceOf[js.Any])
     

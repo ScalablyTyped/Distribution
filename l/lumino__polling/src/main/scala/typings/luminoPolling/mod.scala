@@ -5,6 +5,7 @@ import typings.luminoPolling.mod.IPoll.Frequency
 import typings.luminoPolling.mod.IPoll.State
 import typings.luminoPolling.typesPollMod.Poll.IOptions
 import typings.luminoSignaling.mod.ISignal
+import typings.std.AsyncIterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,7 +41,7 @@ object mod {
   object Poll {
     
     /**
-      * An interval value that indicates the poll should tick immediately.
+      * An interval value in ms that indicates the poll should tick immediately.
       */
     @JSImport("@lumino/polling", "Poll.IMMEDIATE")
     @js.native
@@ -101,62 +102,52 @@ object mod {
     ) = this()
   }
   
-  trait IPoll[T, U, V /* <: String */] extends StObject {
+  @js.native
+  trait IPoll[T, U, V /* <: String */]
+    extends StObject
+       with AsyncIterable[State[T, U, V]] {
     
     /**
       * A signal emitted when the poll is disposed.
       */
-    val disposed: ISignal[this.type, Unit]
+    val disposed: ISignal[this.type, Unit] = js.native
     
     /**
       * The polling frequency data.
       */
-    val frequency: Frequency
+    val frequency: Frequency = js.native
     
     /**
       * Whether the poll is disposed.
       */
-    val isDisposed: Boolean
+    val isDisposed: Boolean = js.native
     
     /**
       * The name of the poll.
       */
-    val name: String
+    val name: String = js.native
     
     /**
       * The poll state, which is the content of the currently-scheduled poll tick.
       */
-    val state: State[T, U, V]
+    val state: State[T, U, V] = js.native
     
     /**
       * A promise that resolves when the currently-scheduled tick completes.
       *
       * #### Notes
       * Usually this will resolve after `state.interval` milliseconds from
-      * `state.timestamp`. It can resolve earlier if the user starts or refreshes the
-      * poll, etc.
+      * `state.timestamp`. It can resolve earlier if the user starts or refreshes
+      * the poll, etc.
       */
-    val tick: js.Promise[IPoll[T, U, V]]
+    val tick: js.Promise[IPoll[T, U, V]] = js.native
     
     /**
       * A signal emitted when the poll state changes, i.e., a new tick is scheduled.
       */
-    val ticked: ISignal[IPoll[T, U, V], State[T, U, V]]
+    val ticked: ISignal[IPoll[T, U, V], State[T, U, V]] = js.native
   }
   object IPoll {
-    
-    inline def apply[T, U, V /* <: String */](
-      disposed: ISignal[IPoll[T, U, V], Unit],
-      frequency: Frequency,
-      isDisposed: Boolean,
-      name: String,
-      state: State[T, U, V],
-      tick: js.Promise[IPoll[T, U, V]],
-      ticked: ISignal[IPoll[T, U, V], State[T, U, V]]
-    ): IPoll[T, U, V] = {
-      val __obj = js.Dynamic.literal(disposed = disposed.asInstanceOf[js.Any], frequency = frequency.asInstanceOf[js.Any], isDisposed = isDisposed.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], tick = tick.asInstanceOf[js.Any], ticked = ticked.asInstanceOf[js.Any])
-      __obj.asInstanceOf[IPoll[T, U, V]]
-    }
     
     /**
       * The polling frequency parameters.
@@ -209,24 +200,6 @@ object mod {
         
         inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       }
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: IPoll[?, ?, ?], T, U, V /* <: String */] (val x: Self & (IPoll[T, U, V])) extends AnyVal {
-      
-      inline def setDisposed(value: ISignal[IPoll[T, U, V], Unit]): Self = StObject.set(x, "disposed", value.asInstanceOf[js.Any])
-      
-      inline def setFrequency(value: Frequency): Self = StObject.set(x, "frequency", value.asInstanceOf[js.Any])
-      
-      inline def setIsDisposed(value: Boolean): Self = StObject.set(x, "isDisposed", value.asInstanceOf[js.Any])
-      
-      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-      
-      inline def setState(value: State[T, U, V]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
-      
-      inline def setTick(value: js.Promise[IPoll[T, U, V]]): Self = StObject.set(x, "tick", value.asInstanceOf[js.Any])
-      
-      inline def setTicked(value: ISignal[IPoll[T, U, V], State[T, U, V]]): Self = StObject.set(x, "ticked", value.asInstanceOf[js.Any])
     }
     
     /**

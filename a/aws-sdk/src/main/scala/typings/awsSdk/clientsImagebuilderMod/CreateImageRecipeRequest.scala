@@ -22,17 +22,17 @@ trait CreateImageRecipeRequest extends StObject {
   var clientToken: ClientToken
   
   /**
-    * The components of the image recipe.
+    * The components included in the image recipe.
     */
   var components: ComponentConfigurationList
   
   /**
-    *  The description of the image recipe.
+    * The description of the image recipe.
     */
   var description: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    *  The name of the image recipe.
+    * The name of the image recipe.
     */
   var name: ResourceName
   
@@ -47,7 +47,7 @@ trait CreateImageRecipeRequest extends StObject {
   var semanticVersion: VersionNumber
   
   /**
-    *  The tags of the image recipe.
+    * The tags of the image recipe.
     */
   var tags: js.UndefOr[TagMap] = js.undefined
   

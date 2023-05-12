@@ -1,8 +1,8 @@
 package typings.devextreme.mod.DevExpress
 
-import typings.devextreme.anon.Bottom
 import typings.devextreme.anon.Cancel
 import typings.devextreme.anon.GridCell
+import typings.devextreme.anon.Right
 import typings.devextreme.anon.RowCells
 import typings.devextreme.anon.Size
 import typings.devextreme.anon.Y
@@ -72,7 +72,7 @@ object pdfExporter {
     /**
       * 
       */
-    var padding: js.UndefOr[Bottom] = js.undefined
+    var padding: js.UndefOr[Right] = js.undefined
     
     /**
       * 
@@ -140,7 +140,7 @@ object pdfExporter {
       
       inline def setHorizontalAlignUndefined: Self = StObject.set(x, "horizontalAlign", js.undefined)
       
-      inline def setPadding(value: Bottom): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+      inline def setPadding(value: Right): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
       
       inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
       
@@ -206,7 +206,7 @@ object pdfExporter {
     /**
       * 
       */
-    var margin: js.UndefOr[Bottom] = js.undefined
+    var margin: js.UndefOr[Right] = js.undefined
     
     /**
       * 
@@ -268,7 +268,7 @@ object pdfExporter {
       
       inline def setLoadPanelUndefined: Self = StObject.set(x, "loadPanel", js.undefined)
       
-      inline def setMargin(value: Bottom): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+      inline def setMargin(value: Right): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
       
       inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
       

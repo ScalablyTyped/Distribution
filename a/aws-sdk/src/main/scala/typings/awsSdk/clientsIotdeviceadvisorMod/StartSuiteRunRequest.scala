@@ -19,7 +19,7 @@ trait StartSuiteRunRequest extends StObject {
   /**
     * Suite run configuration.
     */
-  var suiteRunConfiguration: js.UndefOr[SuiteRunConfiguration] = js.undefined
+  var suiteRunConfiguration: SuiteRunConfiguration
   
   /**
     * The tags to be attached to the suite run.
@@ -28,8 +28,8 @@ trait StartSuiteRunRequest extends StObject {
 }
 object StartSuiteRunRequest {
   
-  inline def apply(suiteDefinitionId: UUID): StartSuiteRunRequest = {
-    val __obj = js.Dynamic.literal(suiteDefinitionId = suiteDefinitionId.asInstanceOf[js.Any])
+  inline def apply(suiteDefinitionId: UUID, suiteRunConfiguration: SuiteRunConfiguration): StartSuiteRunRequest = {
+    val __obj = js.Dynamic.literal(suiteDefinitionId = suiteDefinitionId.asInstanceOf[js.Any], suiteRunConfiguration = suiteRunConfiguration.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartSuiteRunRequest]
   }
   
@@ -43,8 +43,6 @@ object StartSuiteRunRequest {
     inline def setSuiteDefinitionVersionUndefined: Self = StObject.set(x, "suiteDefinitionVersion", js.undefined)
     
     inline def setSuiteRunConfiguration(value: SuiteRunConfiguration): Self = StObject.set(x, "suiteRunConfiguration", value.asInstanceOf[js.Any])
-    
-    inline def setSuiteRunConfigurationUndefined: Self = StObject.set(x, "suiteRunConfiguration", js.undefined)
     
     inline def setTags(value: TagMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     

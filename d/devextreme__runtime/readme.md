@@ -1,7 +1,7 @@
 
 # Scala.js typings for devextreme__runtime
 
-Typings are for version 3.0.11
+Typings are for version 4.0.0
 
 ## Library description:
 DevExtreme virtual DOM common components

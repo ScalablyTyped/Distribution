@@ -1,5 +1,6 @@
 package typings.openui5
 
+import typings.openui5.anon.`33`
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapMLibraryMod.UploadState
 import typings.openui5.sapUiBaseManagedObjectMod.AggregationBindingInfo
@@ -393,6 +394,8 @@ object sapMUploadUploadSetItemMod {
     ): Boolean = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:openPressed openPressed} to attached listeners.
       *
       * Listeners may prevent the default action of this event by calling the `preventDefault` method on the
@@ -404,9 +407,11 @@ object sapMUploadUploadSetItemMod {
     def fireOpenPressed(/**
       * Parameters to pass along with the event
       */
-    mParameters: js.Object): Boolean = js.native
+    mParameters: `33`): Boolean = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:removePressed removePressed} to attached listeners.
       *
       * Listeners may prevent the default action of this event by calling the `preventDefault` method on the
@@ -418,7 +423,7 @@ object sapMUploadUploadSetItemMod {
     def fireRemovePressed(/**
       * Parameters to pass along with the event
       */
-    mParameters: js.Object): Boolean = js.native
+    mParameters: `33`): Boolean = js.native
     
     /**
       * Gets content of aggregation {@link #getAttributes attributes}.

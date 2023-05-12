@@ -5,7 +5,7 @@ import typings.rollup.mod.LoadResult
 import typings.rollup.mod.ModuleInfo
 import typings.rollup.mod.PartialResolvedId
 import typings.rollup.mod.SourceDescription
-import typings.vite.anon.Custom
+import typings.vite.anon.Assertions
 import typings.vite.anon.InMap
 import typings.vite.anon.Ssr
 import org.scalablytyped.runtime.StObject
@@ -28,8 +28,8 @@ trait PluginContainer extends StObject {
   
   def resolveId(id: String): js.Promise[PartialResolvedId | Null] = js.native
   def resolveId(id: String, importer: String): js.Promise[PartialResolvedId | Null] = js.native
-  def resolveId(id: String, importer: String, options: Custom): js.Promise[PartialResolvedId | Null] = js.native
-  def resolveId(id: String, importer: Unit, options: Custom): js.Promise[PartialResolvedId | Null] = js.native
+  def resolveId(id: String, importer: String, options: Assertions): js.Promise[PartialResolvedId | Null] = js.native
+  def resolveId(id: String, importer: Unit, options: Assertions): js.Promise[PartialResolvedId | Null] = js.native
   
   def transform(code: String, id: String): js.Promise[SourceDescription | Null] = js.native
   def transform(code: String, id: String, options: InMap): js.Promise[SourceDescription | Null] = js.native

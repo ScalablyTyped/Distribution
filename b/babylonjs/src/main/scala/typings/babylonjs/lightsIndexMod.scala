@@ -71,14 +71,16 @@ object lightsIndexMod {
       */
     @JSImport("babylonjs/Lights/index", "CascadedShadowGenerator.MAX_CASCADES_COUNT")
     @js.native
-    val MAX_CASCADES_COUNT: Double = js.native
+    def MAX_CASCADES_COUNT: Double = js.native
+    inline def MAX_CASCADES_COUNT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MAX_CASCADES_COUNT")(x.asInstanceOf[js.Any])
     
     /**
       * Defines the minimum number of cascades used by the CSM.
       */
     @JSImport("babylonjs/Lights/index", "CascadedShadowGenerator.MIN_CASCADES_COUNT")
     @js.native
-    val MIN_CASCADES_COUNT: Double = js.native
+    def MIN_CASCADES_COUNT: Double = js.native
+    inline def MIN_CASCADES_COUNT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MIN_CASCADES_COUNT")(x.asInstanceOf[js.Any])
     
     /**
       * Parses a serialized ShadowGenerator and returns a new ShadowGenerator.
@@ -106,7 +108,7 @@ object lightsIndexMod {
       * Creates a DirectionalLight object in the scene, oriented towards the passed direction (Vector3).
       * The directional light is emitted from everywhere in the given direction.
       * It can cast shadows.
-      * Documentation : https://doc.babylonjs.com/babylon101/lights
+      * Documentation : https://doc.babylonjs.com/features/featuresDeepDive/lights/lights_introduction
       * @param name The friendly name of the light
       * @param direction The direction of the light
       * @param scene The scene the light belongs to
@@ -122,7 +124,7 @@ object lightsIndexMod {
       * Creates a HemisphericLight object in the scene according to the passed direction (Vector3).
       * The HemisphericLight simulates the ambient environment light, so the passed direction is the light reflection direction, not the incoming direction.
       * The HemisphericLight can't cast shadows.
-      * Documentation : https://doc.babylonjs.com/babylon101/lights
+      * Documentation : https://doc.babylonjs.com/features/featuresDeepDive/lights/lights_introduction
       * @param name The friendly name of the light
       * @param direction The direction of the light reflection
       * @param scene The scene the light belongs to
@@ -136,7 +138,7 @@ object lightsIndexMod {
     extends typings.babylonjs.lightsLightMod.Light {
     /**
       * Creates a Light object in the scene.
-      * Documentation : https://doc.babylonjs.com/babylon101/lights
+      * Documentation : https://doc.babylonjs.com/features/featuresDeepDive/lights/lights_introduction
       * @param name The friendly name of the light
       * @param scene The scene the light belongs too
       */
@@ -304,7 +306,7 @@ object lightsIndexMod {
       * ```javascript
       * var pointLight = new PointLight("pl", camera.position, scene);
       * ```
-      * Documentation : https://doc.babylonjs.com/babylon101/lights
+      * Documentation : https://doc.babylonjs.com/features/featuresDeepDive/lights/lights_introduction
       * @param name The light friendly name
       * @param position The position of the point light in the scene
       * @param scene The scene the lights belongs to
@@ -320,7 +322,7 @@ object lightsIndexMod {
       * Creates a ShadowGenerator object.
       * A ShadowGenerator is the required tool to use the shadows.
       * Each light casting shadows needs to use its own ShadowGenerator.
-      * Documentation : https://doc.babylonjs.com/babylon101/shadows
+      * Documentation : https://doc.babylonjs.com/features/featuresDeepDive/lights/shadows
       * @param mapSize The size of the texture what stores the shadows. Example : 1024.
       * @param light The light object generating the shadows.
       * @param usefullFloatFirst By default the generator will try to use half float textures but if you need precision (for self shadowing for instance), you can use this option to enforce full float texture.
@@ -499,7 +501,7 @@ object lightsIndexMod {
     extends typings.babylonjs.lightsShadowLightMod.ShadowLight {
     /**
       * Creates a Light object in the scene.
-      * Documentation : https://doc.babylonjs.com/babylon101/lights
+      * Documentation : https://doc.babylonjs.com/features/featuresDeepDive/lights/lights_introduction
       * @param name The friendly name of the light
       * @param scene The scene the light belongs too
       */
@@ -513,7 +515,7 @@ object lightsIndexMod {
     /**
       * Creates a SpotLight object in the scene. A spot light is a simply light oriented cone.
       * It can cast shadows.
-      * Documentation : https://doc.babylonjs.com/babylon101/lights
+      * Documentation : https://doc.babylonjs.com/features/featuresDeepDive/lights/lights_introduction
       * @param name The light friendly name
       * @param position The position of the spot light in the scene
       * @param direction The direction of the light in the scene

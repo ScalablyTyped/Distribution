@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SettingEntry extends StObject {
   
   /**
-    * The valid range of values for the directory setting.
+    * The valid range of values for the directory setting. These values depend on the DataType of your directory.
     */
   var AllowedValues: js.UndefOr[DirectoryConfigurationSettingAllowedValues] = js.undefined
   
@@ -15,6 +15,11 @@ trait SettingEntry extends StObject {
     * The value of the directory setting that is applied to the directory.
     */
   var AppliedValue: js.UndefOr[DirectoryConfigurationSettingValue] = js.undefined
+  
+  /**
+    * The data type of a directory setting. This is used to define the AllowedValues of a setting. For example a data type can be Boolean, DurationInSeconds, or Enum.
+    */
+  var DataType: js.UndefOr[DirectoryConfigurationSettingDataType] = js.undefined
   
   /**
     * The date and time when the request to update a directory setting was last submitted.
@@ -52,7 +57,7 @@ trait SettingEntry extends StObject {
   var RequestedValue: js.UndefOr[DirectoryConfigurationSettingValue] = js.undefined
   
   /**
-    * The type of directory setting. For example, Protocol or Cipher.
+    * The type, or category, of a directory setting. Similar settings have the same type. For example, Protocol, Cipher, or Certificate-Based Authentication.
     */
   var Type: js.UndefOr[DirectoryConfigurationSettingType] = js.undefined
 }
@@ -73,6 +78,10 @@ object SettingEntry {
     inline def setAppliedValue(value: DirectoryConfigurationSettingValue): Self = StObject.set(x, "AppliedValue", value.asInstanceOf[js.Any])
     
     inline def setAppliedValueUndefined: Self = StObject.set(x, "AppliedValue", js.undefined)
+    
+    inline def setDataType(value: DirectoryConfigurationSettingDataType): Self = StObject.set(x, "DataType", value.asInstanceOf[js.Any])
+    
+    inline def setDataTypeUndefined: Self = StObject.set(x, "DataType", js.undefined)
     
     inline def setLastRequestedDateTime(value: js.Date): Self = StObject.set(x, "LastRequestedDateTime", value.asInstanceOf[js.Any])
     

@@ -76,103 +76,101 @@ trait OmitNightwatchAssertionsn extends StObject {
     AwaitableNightwatchAPINigAcceptAlert
   ]
   
-  def cssProperty(selector: Definition, cssProperty: String, expected: String): AwaitableNightwatchAPINigActions
-  def cssProperty(selector: Definition, cssProperty: String, expected: String, msg: String): AwaitableNightwatchAPINigActions
-  def cssProperty(selector: Definition, cssProperty: String, expected: Double): AwaitableNightwatchAPINigActions
-  def cssProperty(selector: Definition, cssProperty: String, expected: Double, msg: String): AwaitableNightwatchAPINigActions
+  def cssProperty(selector: Definition, cssProperty: String, expected: String): AwaitableNightwatchAPINigAcceptAlert
+  def cssProperty(selector: Definition, cssProperty: String, expected: String, msg: String): AwaitableNightwatchAPINigAcceptAlert
   @JSName("cssProperty")
   var cssProperty_Original: js.Function4[
     /* selector */ Definition, 
     /* cssProperty */ String, 
-    /* expected */ String | Double, 
+    /* expected */ String, 
     /* msg */ js.UndefOr[String], 
-    AwaitableNightwatchAPINigActions
+    AwaitableNightwatchAPINigAcceptAlert
   ]
   
-  def domPropertyContains(selector: Definition, domProperty: String, expected: String): AwaitableNightwatchAPINigAssert
-  def domPropertyContains(selector: Definition, domProperty: String, expected: String, msg: String): AwaitableNightwatchAPINigAssert
-  def domPropertyContains(selector: Definition, domProperty: String, expected: Double): AwaitableNightwatchAPINigAssert
-  def domPropertyContains(selector: Definition, domProperty: String, expected: Double, msg: String): AwaitableNightwatchAPINigAssert
+  def domPropertyContains(selector: Definition, domProperty: String, expected: String): AwaitableNightwatchAPINigActions
+  def domPropertyContains(selector: Definition, domProperty: String, expected: String, msg: String): AwaitableNightwatchAPINigActions
+  def domPropertyContains(selector: Definition, domProperty: String, expected: Double): AwaitableNightwatchAPINigActions
+  def domPropertyContains(selector: Definition, domProperty: String, expected: Double, msg: String): AwaitableNightwatchAPINigActions
   @JSName("domPropertyContains")
   var domPropertyContains_Original: js.Function4[
     /* selector */ Definition, 
     /* domProperty */ String, 
     /* expected */ String | Double, 
     /* msg */ js.UndefOr[String], 
-    AwaitableNightwatchAPINigAssert
+    AwaitableNightwatchAPINigActions
   ]
   
-  def domPropertyEquals(selector: Definition, domProperty: String, expected: String): AwaitableNightwatchAPINigAssert
-  def domPropertyEquals(selector: Definition, domProperty: String, expected: String, msg: String): AwaitableNightwatchAPINigAssert
-  def domPropertyEquals(selector: Definition, domProperty: String, expected: Double): AwaitableNightwatchAPINigAssert
-  def domPropertyEquals(selector: Definition, domProperty: String, expected: Double, msg: String): AwaitableNightwatchAPINigAssert
+  def domPropertyEquals(selector: Definition, domProperty: String, expected: String): AwaitableNightwatchAPINigActions
+  def domPropertyEquals(selector: Definition, domProperty: String, expected: String, msg: String): AwaitableNightwatchAPINigActions
+  def domPropertyEquals(selector: Definition, domProperty: String, expected: Double): AwaitableNightwatchAPINigActions
+  def domPropertyEquals(selector: Definition, domProperty: String, expected: Double, msg: String): AwaitableNightwatchAPINigActions
   @JSName("domPropertyEquals")
   var domPropertyEquals_Original: js.Function4[
     /* selector */ Definition, 
     /* domProperty */ String, 
     /* expected */ String | Double, 
     /* msg */ js.UndefOr[String], 
-    AwaitableNightwatchAPINigAssert
+    AwaitableNightwatchAPINigActions
   ]
   
-  def domPropertyMatches(selector: Definition, domProperty: String, expected: String): AwaitableNightwatchAPINigAssert
-  def domPropertyMatches(selector: Definition, domProperty: String, expected: String, msg: String): AwaitableNightwatchAPINigAssert
-  def domPropertyMatches(selector: Definition, domProperty: String, expected: js.RegExp): AwaitableNightwatchAPINigAssert
-  def domPropertyMatches(selector: Definition, domProperty: String, expected: js.RegExp, msg: String): AwaitableNightwatchAPINigAssert
+  def domPropertyMatches(selector: Definition, domProperty: String, expected: String): AwaitableNightwatchAPINigActions
+  def domPropertyMatches(selector: Definition, domProperty: String, expected: String, msg: String): AwaitableNightwatchAPINigActions
+  def domPropertyMatches(selector: Definition, domProperty: String, expected: js.RegExp): AwaitableNightwatchAPINigActions
+  def domPropertyMatches(selector: Definition, domProperty: String, expected: js.RegExp, msg: String): AwaitableNightwatchAPINigActions
   @JSName("domPropertyMatches")
   var domPropertyMatches_Original: js.Function4[
     /* selector */ Definition, 
     /* domProperty */ String, 
     /* expected */ String | js.RegExp, 
     /* msg */ js.UndefOr[String], 
-    AwaitableNightwatchAPINigAssert
+    AwaitableNightwatchAPINigActions
   ]
   
-  def elementNotPresent(selector: Definition): AwaitableNightwatchAPINigBaseUrl
-  def elementNotPresent(selector: Definition, msg: String): AwaitableNightwatchAPINigBaseUrl
+  def elementNotPresent(selector: Definition): AwaitableNightwatchAPINigAxeRun
+  def elementNotPresent(selector: Definition, msg: String): AwaitableNightwatchAPINigAxeRun
   @JSName("elementNotPresent")
   var elementNotPresent_Original: js.Function2[
     /* selector */ Definition, 
     /* msg */ js.UndefOr[String], 
-    AwaitableNightwatchAPINigBaseUrl
+    AwaitableNightwatchAPINigAxeRun
   ]
   
-  def elementPresent(selector: Definition): AwaitableNightwatchAPINigBaseUrl
-  def elementPresent(selector: Definition, msg: String): AwaitableNightwatchAPINigBaseUrl
+  def elementPresent(selector: Definition): AwaitableNightwatchAPINigAxeRun
+  def elementPresent(selector: Definition, msg: String): AwaitableNightwatchAPINigAxeRun
   @JSName("elementPresent")
   var elementPresent_Original: js.Function2[
     /* selector */ Definition, 
     /* msg */ js.UndefOr[String], 
-    AwaitableNightwatchAPINigBaseUrl
+    AwaitableNightwatchAPINigAxeRun
   ]
   
-  def elementsCount(selector: Definition, count: Double): AwaitableNightwatchAPINigBack
-  def elementsCount(selector: Definition, count: Double, msg: String): AwaitableNightwatchAPINigBack
+  def elementsCount(selector: Definition, count: Double): AwaitableNightwatchAPINigAxeInject
+  def elementsCount(selector: Definition, count: Double, msg: String): AwaitableNightwatchAPINigAxeInject
   @JSName("elementsCount")
   var elementsCount_Original: js.Function3[
     /* selector */ Definition, 
     /* count */ Double, 
     /* msg */ js.UndefOr[String], 
-    AwaitableNightwatchAPINigBack
+    AwaitableNightwatchAPINigAxeInject
   ]
   
-  def enabled(selector: Definition): AwaitableNightwatchAPINigAxeInject
-  def enabled(selector: Definition, message: String): AwaitableNightwatchAPINigAxeInject
+  def enabled(selector: Definition): AwaitableNightwatchAPINigAppium
+  def enabled(selector: Definition, message: String): AwaitableNightwatchAPINigAppium
   @JSName("enabled")
   var enabled_Original: js.Function2[
     /* selector */ Definition, 
     /* message */ js.UndefOr[String], 
-    AwaitableNightwatchAPINigAxeInject
+    AwaitableNightwatchAPINigAppium
   ]
   
-  def hasAttribute(selector: Definition, expectedAttribute: String): AwaitableNightwatchAPINigAxeRun
-  def hasAttribute(selector: Definition, expectedAttribute: String, msg: String): AwaitableNightwatchAPINigAxeRun
+  def hasAttribute(selector: Definition, expectedAttribute: String): AwaitableNightwatchAPINigAssert
+  def hasAttribute(selector: Definition, expectedAttribute: String, msg: String): AwaitableNightwatchAPINigAssert
   @JSName("hasAttribute")
   var hasAttribute_Original: js.Function3[
     /* selector */ Definition, 
     /* expectedAttribute */ String, 
     /* msg */ js.UndefOr[String], 
-    AwaitableNightwatchAPINigAxeRun
+    AwaitableNightwatchAPINigAssert
   ]
   
   def hasClass(selector: Definition, className: String): AwaitableNightwatchAPINigAcceptAlert
@@ -187,22 +185,22 @@ trait OmitNightwatchAssertionsn extends StObject {
     AwaitableNightwatchAPINigAcceptAlert
   ]
   
-  def hidden(selector: Definition): AwaitableNightwatchAPINigAxeInject
-  def hidden(selector: Definition, msg: String): AwaitableNightwatchAPINigAxeInject
+  def hidden(selector: Definition): AwaitableNightwatchAPINigAppium
+  def hidden(selector: Definition, msg: String): AwaitableNightwatchAPINigAppium
   @JSName("hidden")
   var hidden_Original: js.Function2[
     /* selector */ Definition, 
     /* msg */ js.UndefOr[String], 
-    AwaitableNightwatchAPINigAxeInject
+    AwaitableNightwatchAPINigAppium
   ]
   
-  def selected(selector: Definition): AwaitableNightwatchAPINigAxeInject
-  def selected(selector: Definition, message: String): AwaitableNightwatchAPINigAxeInject
+  def selected(selector: Definition): AwaitableNightwatchAPINigAppium
+  def selected(selector: Definition, message: String): AwaitableNightwatchAPINigAppium
   @JSName("selected")
   var selected_Original: js.Function2[
     /* selector */ Definition, 
     /* message */ js.UndefOr[String], 
-    AwaitableNightwatchAPINigAxeInject
+    AwaitableNightwatchAPINigAppium
   ]
   
   def textContains(selector: Definition, expectedText: String): AwaitableNightwatchAPINigAcceptAlert
@@ -336,13 +334,13 @@ trait OmitNightwatchAssertionsn extends StObject {
     AwaitableNightwatchAPINigAcceptAlert
   ]
   
-  def visible(selector: Definition): AwaitableNightwatchAPINigAxeInject
-  def visible(selector: Definition, message: String): AwaitableNightwatchAPINigAxeInject
+  def visible(selector: Definition): AwaitableNightwatchAPINigAppium
+  def visible(selector: Definition, message: String): AwaitableNightwatchAPINigAppium
   @JSName("visible")
   var visible_Original: js.Function2[
     /* selector */ Definition, 
     /* message */ js.UndefOr[String], 
-    AwaitableNightwatchAPINigAxeInject
+    AwaitableNightwatchAPINigAppium
   ]
 }
 object OmitNightwatchAssertionsn {
@@ -355,18 +353,18 @@ object OmitNightwatchAssertionsn {
     containsText: (/* selector */ Definition, /* expectedText */ String, /* message */ js.UndefOr[String]) => AwaitableNightwatchAPINigAcceptAlert,
     cssClassNotPresent: (/* selector */ Definition, /* className */ String, /* msg */ js.UndefOr[String]) => AwaitableNightwatchAPINigAcceptAlert,
     cssClassPresent: (/* selector */ Definition, /* className */ String, /* message */ js.UndefOr[String]) => AwaitableNightwatchAPINigAcceptAlert,
-    cssProperty: (/* selector */ Definition, /* cssProperty */ String, /* expected */ String | Double, /* msg */ js.UndefOr[String]) => AwaitableNightwatchAPINigActions,
-    domPropertyContains: (/* selector */ Definition, /* domProperty */ String, /* expected */ String | Double, /* msg */ js.UndefOr[String]) => AwaitableNightwatchAPINigAssert,
-    domPropertyEquals: (/* selector */ Definition, /* domProperty */ String, /* expected */ String | Double, /* msg */ js.UndefOr[String]) => AwaitableNightwatchAPINigAssert,
-    domPropertyMatches: (/* selector */ Definition, /* domProperty */ String, /* expected */ String | js.RegExp, /* msg */ js.UndefOr[String]) => AwaitableNightwatchAPINigAssert,
-    elementNotPresent: (/* selector */ Definition, /* msg */ js.UndefOr[String]) => AwaitableNightwatchAPINigBaseUrl,
-    elementPresent: (/* selector */ Definition, /* msg */ js.UndefOr[String]) => AwaitableNightwatchAPINigBaseUrl,
-    elementsCount: (/* selector */ Definition, /* count */ Double, /* msg */ js.UndefOr[String]) => AwaitableNightwatchAPINigBack,
-    enabled: (/* selector */ Definition, /* message */ js.UndefOr[String]) => AwaitableNightwatchAPINigAxeInject,
-    hasAttribute: (/* selector */ Definition, /* expectedAttribute */ String, /* msg */ js.UndefOr[String]) => AwaitableNightwatchAPINigAxeRun,
+    cssProperty: (/* selector */ Definition, /* cssProperty */ String, /* expected */ String, /* msg */ js.UndefOr[String]) => AwaitableNightwatchAPINigAcceptAlert,
+    domPropertyContains: (/* selector */ Definition, /* domProperty */ String, /* expected */ String | Double, /* msg */ js.UndefOr[String]) => AwaitableNightwatchAPINigActions,
+    domPropertyEquals: (/* selector */ Definition, /* domProperty */ String, /* expected */ String | Double, /* msg */ js.UndefOr[String]) => AwaitableNightwatchAPINigActions,
+    domPropertyMatches: (/* selector */ Definition, /* domProperty */ String, /* expected */ String | js.RegExp, /* msg */ js.UndefOr[String]) => AwaitableNightwatchAPINigActions,
+    elementNotPresent: (/* selector */ Definition, /* msg */ js.UndefOr[String]) => AwaitableNightwatchAPINigAxeRun,
+    elementPresent: (/* selector */ Definition, /* msg */ js.UndefOr[String]) => AwaitableNightwatchAPINigAxeRun,
+    elementsCount: (/* selector */ Definition, /* count */ Double, /* msg */ js.UndefOr[String]) => AwaitableNightwatchAPINigAxeInject,
+    enabled: (/* selector */ Definition, /* message */ js.UndefOr[String]) => AwaitableNightwatchAPINigAppium,
+    hasAttribute: (/* selector */ Definition, /* expectedAttribute */ String, /* msg */ js.UndefOr[String]) => AwaitableNightwatchAPINigAssert,
     hasClass: (/* selector */ Definition, /* className */ String | js.Array[String], /* msg */ js.UndefOr[String]) => AwaitableNightwatchAPINigAcceptAlert,
-    hidden: (/* selector */ Definition, /* msg */ js.UndefOr[String]) => AwaitableNightwatchAPINigAxeInject,
-    selected: (/* selector */ Definition, /* message */ js.UndefOr[String]) => AwaitableNightwatchAPINigAxeInject,
+    hidden: (/* selector */ Definition, /* msg */ js.UndefOr[String]) => AwaitableNightwatchAPINigAppium,
+    selected: (/* selector */ Definition, /* message */ js.UndefOr[String]) => AwaitableNightwatchAPINigAppium,
     textContains: (/* selector */ Definition, /* expectedText */ String, /* msg */ js.UndefOr[String]) => AwaitableNightwatchAPINigAcceptAlert,
     textEquals: (/* selector */ Definition, /* expectedText */ String, /* msg */ js.UndefOr[String]) => AwaitableNightwatchAPINigAcceptAlert,
     textMatches: (/* selector */ Definition, /* regex */ String | js.RegExp, /* msg */ js.UndefOr[String]) => AwaitableNightwatchAPINigAcceptAlert,
@@ -380,7 +378,7 @@ object OmitNightwatchAssertionsn {
     value: (/* selector */ Definition, /* expectedText */ String, /* message */ js.UndefOr[String]) => AwaitableNightwatchAPINigAcceptAlert,
     valueContains: (/* selector */ Definition, /* expectedText */ String, /* message */ js.UndefOr[String]) => AwaitableNightwatchAPINigAcceptAlert,
     valueEquals: (/* selector */ Definition, /* expected */ String, /* msg */ js.UndefOr[String]) => AwaitableNightwatchAPINigAcceptAlert,
-    visible: (/* selector */ Definition, /* message */ js.UndefOr[String]) => AwaitableNightwatchAPINigAxeInject
+    visible: (/* selector */ Definition, /* message */ js.UndefOr[String]) => AwaitableNightwatchAPINigAppium
   ): OmitNightwatchAssertionsn = {
     val __obj = js.Dynamic.literal(NightwatchAssertionsError = NightwatchAssertionsError.asInstanceOf[js.Any], attributeContains = js.Any.fromFunction4(attributeContains), attributeEquals = js.Any.fromFunction4(attributeEquals), attributeMatches = js.Any.fromFunction4(attributeMatches), containsText = js.Any.fromFunction3(containsText), cssClassNotPresent = js.Any.fromFunction3(cssClassNotPresent), cssClassPresent = js.Any.fromFunction3(cssClassPresent), cssProperty = js.Any.fromFunction4(cssProperty), domPropertyContains = js.Any.fromFunction4(domPropertyContains), domPropertyEquals = js.Any.fromFunction4(domPropertyEquals), domPropertyMatches = js.Any.fromFunction4(domPropertyMatches), elementNotPresent = js.Any.fromFunction2(elementNotPresent), elementPresent = js.Any.fromFunction2(elementPresent), elementsCount = js.Any.fromFunction3(elementsCount), enabled = js.Any.fromFunction2(enabled), hasAttribute = js.Any.fromFunction3(hasAttribute), hasClass = js.Any.fromFunction3(hasClass), hidden = js.Any.fromFunction2(hidden), selected = js.Any.fromFunction2(selected), textContains = js.Any.fromFunction3(textContains), textEquals = js.Any.fromFunction3(textEquals), textMatches = js.Any.fromFunction3(textMatches), title = js.Any.fromFunction2(title), titleContains = js.Any.fromFunction2(titleContains), titleEquals = js.Any.fromFunction2(titleEquals), titleMatches = js.Any.fromFunction2(titleMatches), urlContains = js.Any.fromFunction2(urlContains), urlEquals = js.Any.fromFunction2(urlEquals), urlMatches = js.Any.fromFunction2(urlMatches), value = js.Any.fromFunction3(value), valueContains = js.Any.fromFunction3(valueContains), valueEquals = js.Any.fromFunction3(valueEquals), visible = js.Any.fromFunction2(visible))
     __obj.asInstanceOf[OmitNightwatchAssertionsn]
@@ -414,39 +412,39 @@ object OmitNightwatchAssertionsn {
     ): Self = StObject.set(x, "cssClassPresent", js.Any.fromFunction3(value))
     
     inline def setCssProperty(
-      value: (/* selector */ Definition, /* cssProperty */ String, /* expected */ String | Double, /* msg */ js.UndefOr[String]) => AwaitableNightwatchAPINigActions
+      value: (/* selector */ Definition, /* cssProperty */ String, /* expected */ String, /* msg */ js.UndefOr[String]) => AwaitableNightwatchAPINigAcceptAlert
     ): Self = StObject.set(x, "cssProperty", js.Any.fromFunction4(value))
     
     inline def setDomPropertyContains(
-      value: (/* selector */ Definition, /* domProperty */ String, /* expected */ String | Double, /* msg */ js.UndefOr[String]) => AwaitableNightwatchAPINigAssert
+      value: (/* selector */ Definition, /* domProperty */ String, /* expected */ String | Double, /* msg */ js.UndefOr[String]) => AwaitableNightwatchAPINigActions
     ): Self = StObject.set(x, "domPropertyContains", js.Any.fromFunction4(value))
     
     inline def setDomPropertyEquals(
-      value: (/* selector */ Definition, /* domProperty */ String, /* expected */ String | Double, /* msg */ js.UndefOr[String]) => AwaitableNightwatchAPINigAssert
+      value: (/* selector */ Definition, /* domProperty */ String, /* expected */ String | Double, /* msg */ js.UndefOr[String]) => AwaitableNightwatchAPINigActions
     ): Self = StObject.set(x, "domPropertyEquals", js.Any.fromFunction4(value))
     
     inline def setDomPropertyMatches(
-      value: (/* selector */ Definition, /* domProperty */ String, /* expected */ String | js.RegExp, /* msg */ js.UndefOr[String]) => AwaitableNightwatchAPINigAssert
+      value: (/* selector */ Definition, /* domProperty */ String, /* expected */ String | js.RegExp, /* msg */ js.UndefOr[String]) => AwaitableNightwatchAPINigActions
     ): Self = StObject.set(x, "domPropertyMatches", js.Any.fromFunction4(value))
     
     inline def setElementNotPresent(
-      value: (/* selector */ Definition, /* msg */ js.UndefOr[String]) => AwaitableNightwatchAPINigBaseUrl
+      value: (/* selector */ Definition, /* msg */ js.UndefOr[String]) => AwaitableNightwatchAPINigAxeRun
     ): Self = StObject.set(x, "elementNotPresent", js.Any.fromFunction2(value))
     
     inline def setElementPresent(
-      value: (/* selector */ Definition, /* msg */ js.UndefOr[String]) => AwaitableNightwatchAPINigBaseUrl
+      value: (/* selector */ Definition, /* msg */ js.UndefOr[String]) => AwaitableNightwatchAPINigAxeRun
     ): Self = StObject.set(x, "elementPresent", js.Any.fromFunction2(value))
     
     inline def setElementsCount(
-      value: (/* selector */ Definition, /* count */ Double, /* msg */ js.UndefOr[String]) => AwaitableNightwatchAPINigBack
+      value: (/* selector */ Definition, /* count */ Double, /* msg */ js.UndefOr[String]) => AwaitableNightwatchAPINigAxeInject
     ): Self = StObject.set(x, "elementsCount", js.Any.fromFunction3(value))
     
     inline def setEnabled(
-      value: (/* selector */ Definition, /* message */ js.UndefOr[String]) => AwaitableNightwatchAPINigAxeInject
+      value: (/* selector */ Definition, /* message */ js.UndefOr[String]) => AwaitableNightwatchAPINigAppium
     ): Self = StObject.set(x, "enabled", js.Any.fromFunction2(value))
     
     inline def setHasAttribute(
-      value: (/* selector */ Definition, /* expectedAttribute */ String, /* msg */ js.UndefOr[String]) => AwaitableNightwatchAPINigAxeRun
+      value: (/* selector */ Definition, /* expectedAttribute */ String, /* msg */ js.UndefOr[String]) => AwaitableNightwatchAPINigAssert
     ): Self = StObject.set(x, "hasAttribute", js.Any.fromFunction3(value))
     
     inline def setHasClass(
@@ -454,13 +452,13 @@ object OmitNightwatchAssertionsn {
     ): Self = StObject.set(x, "hasClass", js.Any.fromFunction3(value))
     
     inline def setHidden(
-      value: (/* selector */ Definition, /* msg */ js.UndefOr[String]) => AwaitableNightwatchAPINigAxeInject
+      value: (/* selector */ Definition, /* msg */ js.UndefOr[String]) => AwaitableNightwatchAPINigAppium
     ): Self = StObject.set(x, "hidden", js.Any.fromFunction2(value))
     
     inline def setNightwatchAssertionsError(value: NightwatchAssertionsError): Self = StObject.set(x, "NightwatchAssertionsError", value.asInstanceOf[js.Any])
     
     inline def setSelected(
-      value: (/* selector */ Definition, /* message */ js.UndefOr[String]) => AwaitableNightwatchAPINigAxeInject
+      value: (/* selector */ Definition, /* message */ js.UndefOr[String]) => AwaitableNightwatchAPINigAppium
     ): Self = StObject.set(x, "selected", js.Any.fromFunction2(value))
     
     inline def setTextContains(
@@ -516,7 +514,7 @@ object OmitNightwatchAssertionsn {
     ): Self = StObject.set(x, "valueEquals", js.Any.fromFunction3(value))
     
     inline def setVisible(
-      value: (/* selector */ Definition, /* message */ js.UndefOr[String]) => AwaitableNightwatchAPINigAxeInject
+      value: (/* selector */ Definition, /* message */ js.UndefOr[String]) => AwaitableNightwatchAPINigAppium
     ): Self = StObject.set(x, "visible", js.Any.fromFunction2(value))
   }
 }

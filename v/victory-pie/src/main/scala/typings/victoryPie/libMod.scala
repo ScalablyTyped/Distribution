@@ -15,7 +15,7 @@ object libMod {
     def this(props: SliceProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: SliceProps, context: Any) = this()
   }
@@ -26,7 +26,7 @@ object libMod {
     def this(props: VictoryPieProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: VictoryPieProps, context: Any) = this()
   }

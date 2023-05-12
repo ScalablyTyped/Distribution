@@ -23,8 +23,8 @@ object mod {
   
   @JSImport("forge-di", "Binding")
   @js.native
-  open class Binding protected ()
-    extends typings.forgeDi.distFrameworkBindingMod.default {
+  open class Binding[T] protected ()
+    extends typings.forgeDi.distFrameworkBindingMod.default[T] {
     def this(forge: typings.forgeDi.distForgeMod.default, name: String) = this()
   }
   
@@ -53,7 +53,7 @@ object mod {
     extends typings.forgeDi.distResolversFunctionResolverMod.default {
     def this(
       forge: typings.forgeDi.distForgeMod.default,
-      binding: typings.forgeDi.distFrameworkBindingMod.default,
+      binding: typings.forgeDi.distFrameworkBindingMod.default[Any],
       func: js.Function
     ) = this()
   }
@@ -64,7 +64,7 @@ object mod {
     extends typings.forgeDi.distResolversInstanceResolverMod.default {
     def this(
       forge: typings.forgeDi.distForgeMod.default,
-      binding: typings.forgeDi.distFrameworkBindingMod.default,
+      binding: typings.forgeDi.distFrameworkBindingMod.default[Any],
       instance: Any
     ) = this()
   }
@@ -101,7 +101,7 @@ object mod {
     extends typings.forgeDi.distResolversResolverMod.default {
     def this(
       forge: typings.forgeDi.distForgeMod.default,
-      binding: typings.forgeDi.distFrameworkBindingMod.default
+      binding: typings.forgeDi.distFrameworkBindingMod.default[Any]
     ) = this()
   }
   
@@ -121,8 +121,8 @@ object mod {
     extends typings.forgeDi.distResolversTypeResolverMod.default {
     def this(
       forge: typings.forgeDi.distForgeMod.default,
-      binding: typings.forgeDi.distFrameworkBindingMod.default,
-      `type`: Constructor
+      binding: typings.forgeDi.distFrameworkBindingMod.default[Any],
+      `type`: Constructor[Any]
     ) = this()
   }
   

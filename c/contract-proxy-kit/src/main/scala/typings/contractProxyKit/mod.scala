@@ -4,8 +4,7 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.contractProxyKit.anon.Typeofethers
 import typings.contractProxyKit.contractProxyKitInts.`0`
 import typings.contractProxyKit.contractProxyKitInts.`1`
-import typings.ethers.mod.ethers.Signer
-import typings.ethersprojectAbstractProvider.mod.TransactionResponse
+import typings.ethers.typesProvidersSignerMod.Signer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -188,7 +187,9 @@ object mod {
     
     var promiEvent: js.UndefOr[js.Object] = js.undefined
     
-    var transactionResponse: js.UndefOr[TransactionResponse] = js.undefined
+    var transactionResponse: js.UndefOr[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ethers.providers.TransactionResponse */ Any
+      ] = js.undefined
   }
   object TransactionResult {
     
@@ -206,7 +207,9 @@ object mod {
       
       inline def setPromiEventUndefined: Self = StObject.set(x, "promiEvent", js.undefined)
       
-      inline def setTransactionResponse(value: TransactionResponse): Self = StObject.set(x, "transactionResponse", value.asInstanceOf[js.Any])
+      inline def setTransactionResponse(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ethers.providers.TransactionResponse */ Any
+      ): Self = StObject.set(x, "transactionResponse", value.asInstanceOf[js.Any])
       
       inline def setTransactionResponseUndefined: Self = StObject.set(x, "transactionResponse", js.undefined)
     }

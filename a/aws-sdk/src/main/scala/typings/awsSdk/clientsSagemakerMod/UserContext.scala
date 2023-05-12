@@ -12,6 +12,11 @@ trait UserContext extends StObject {
   var DomainId: js.UndefOr[String] = js.undefined
   
   /**
+    * The IAM Identity details associated with the user. These details are associated with model package groups, model packages, and project entities only.
+    */
+  var IamIdentity: js.UndefOr[typings.awsSdk.clientsSagemakerMod.IamIdentity] = js.undefined
+  
+  /**
     * The Amazon Resource Name (ARN) of the user's profile.
     */
   var UserProfileArn: js.UndefOr[String] = js.undefined
@@ -34,6 +39,10 @@ object UserContext {
     inline def setDomainId(value: String): Self = StObject.set(x, "DomainId", value.asInstanceOf[js.Any])
     
     inline def setDomainIdUndefined: Self = StObject.set(x, "DomainId", js.undefined)
+    
+    inline def setIamIdentity(value: IamIdentity): Self = StObject.set(x, "IamIdentity", value.asInstanceOf[js.Any])
+    
+    inline def setIamIdentityUndefined: Self = StObject.set(x, "IamIdentity", js.undefined)
     
     inline def setUserProfileArn(value: String): Self = StObject.set(x, "UserProfileArn", value.asInstanceOf[js.Any])
     

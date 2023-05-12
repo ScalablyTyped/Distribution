@@ -42,6 +42,16 @@ trait RecoveryInstance extends StObject {
   var jobID: js.UndefOr[JobID] = js.undefined
   
   /**
+    * AWS availability zone associated with the recovery instance.
+    */
+  var originAvailabilityZone: js.UndefOr[AwsAvailabilityZone] = js.undefined
+  
+  /**
+    * Environment (On Premises / AWS) of the instance that the recovery instance originated from.
+    */
+  var originEnvironment: js.UndefOr[OriginEnvironment] = js.undefined
+  
+  /**
     * The date and time of the Point in Time (PIT) snapshot that this Recovery Instance was launched from.
     */
   var pointInTimeSnapshotDateTime: js.UndefOr[ISO8601DatetimeString] = js.undefined
@@ -103,6 +113,14 @@ object RecoveryInstance {
     inline def setJobID(value: JobID): Self = StObject.set(x, "jobID", value.asInstanceOf[js.Any])
     
     inline def setJobIDUndefined: Self = StObject.set(x, "jobID", js.undefined)
+    
+    inline def setOriginAvailabilityZone(value: AwsAvailabilityZone): Self = StObject.set(x, "originAvailabilityZone", value.asInstanceOf[js.Any])
+    
+    inline def setOriginAvailabilityZoneUndefined: Self = StObject.set(x, "originAvailabilityZone", js.undefined)
+    
+    inline def setOriginEnvironment(value: OriginEnvironment): Self = StObject.set(x, "originEnvironment", value.asInstanceOf[js.Any])
+    
+    inline def setOriginEnvironmentUndefined: Self = StObject.set(x, "originEnvironment", js.undefined)
     
     inline def setPointInTimeSnapshotDateTime(value: ISO8601DatetimeString): Self = StObject.set(x, "pointInTimeSnapshotDateTime", value.asInstanceOf[js.Any])
     

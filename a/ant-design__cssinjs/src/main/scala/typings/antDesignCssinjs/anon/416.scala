@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.InsetInlineEnd
+import typings.csstype.mod.Property.FontSize
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,13 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `416` extends StObject {
   
   var value: js.UndefOr[
-    (InsetInlineEnd[Double | String]) | (js.Array[
+    (FontSize[Double | String]) | (js.Array[
       (Extract[
         js.UndefOr[
-          (InsetInlineEnd[Double | String]) | (js.Array[NonNullable[js.UndefOr[InsetInlineEnd[Double | String]]]])
+          (FontSize[Double | String]) | (js.Array[NonNullable[js.UndefOr[FontSize[Double | String]]]])
         ], 
         String
-      ]) | (NonNullable[js.UndefOr[InsetInlineEnd[Double | String]]])
+      ]) | (NonNullable[js.UndefOr[FontSize[Double | String]]])
     ])
   ] = js.native
 }

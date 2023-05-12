@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@datadog/pprof" : "1.1.1"
+      "@datadog/pprof" : "2.2.1"
     }
   ],
   "test-dependencies" : [
     {
-      "@datadog/pprof" : "1.1.1"
+      "@datadog/pprof" : "2.2.1"
     }
   ],
   "compile-devDependencies" : [

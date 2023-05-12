@@ -32,9 +32,19 @@ trait ComponentResponse extends StObject {
   var properties: js.UndefOr[PropertyResponses] = js.undefined
   
   /**
+    * The property groups.
+    */
+  var propertyGroups: js.UndefOr[ComponentPropertyGroupResponses] = js.undefined
+  
+  /**
     * The status of the component type.
     */
   var status: js.UndefOr[Status] = js.undefined
+  
+  /**
+    * The syncSource of the sync job, if this entity was created by a sync job.
+    */
+  var syncSource: js.UndefOr[SyncSource] = js.undefined
 }
 object ComponentResponse {
   
@@ -66,8 +76,16 @@ object ComponentResponse {
     
     inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
+    inline def setPropertyGroups(value: ComponentPropertyGroupResponses): Self = StObject.set(x, "propertyGroups", value.asInstanceOf[js.Any])
+    
+    inline def setPropertyGroupsUndefined: Self = StObject.set(x, "propertyGroups", js.undefined)
+    
     inline def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    
+    inline def setSyncSource(value: SyncSource): Self = StObject.set(x, "syncSource", value.asInstanceOf[js.Any])
+    
+    inline def setSyncSourceUndefined: Self = StObject.set(x, "syncSource", js.undefined)
   }
 }

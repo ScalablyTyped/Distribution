@@ -12,12 +12,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SNS extends Service {
   
   /**
-    * Adds a statement to a topic's access control policy, granting access for the specified Amazon Web Services accounts to the specified actions.
+    * Adds a statement to a topic's access control policy, granting access for the specified Amazon Web Services accounts to the specified actions.  To remove the ability to change topic permissions, you must deny permissions to the AddPermission, RemovePermission, and SetTopicAttributes actions in your IAM policy. 
     */
   def addPermission(): Request[js.Object, AWSError] = js.native
   def addPermission(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Adds a statement to a topic's access control policy, granting access for the specified Amazon Web Services accounts to the specified actions.
+    * Adds a statement to a topic's access control policy, granting access for the specified Amazon Web Services accounts to the specified actions.  To remove the ability to change topic permissions, you must deny permissions to the AddPermission, RemovePermission, and SetTopicAttributes actions in your IAM policy. 
     */
   def addPermission(params: AddPermissionInput): Request[js.Object, AWSError] = js.native
   def addPermission(params: AddPermissionInput, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
@@ -444,12 +444,12 @@ trait SNS extends Service {
   ): Request[js.Object, AWSError] = js.native
   
   /**
-    * Removes a statement from a topic's access control policy.
+    * Removes a statement from a topic's access control policy.  To remove the ability to change topic permissions, you must deny permissions to the AddPermission, RemovePermission, and SetTopicAttributes actions in your IAM policy. 
     */
   def removePermission(): Request[js.Object, AWSError] = js.native
   def removePermission(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Removes a statement from a topic's access control policy.
+    * Removes a statement from a topic's access control policy.  To remove the ability to change topic permissions, you must deny permissions to the AddPermission, RemovePermission, and SetTopicAttributes actions in your IAM policy. 
     */
   def removePermission(params: RemovePermissionInput): Request[js.Object, AWSError] = js.native
   def removePermission(
@@ -514,12 +514,12 @@ trait SNS extends Service {
   ): Request[js.Object, AWSError] = js.native
   
   /**
-    * Allows a topic owner to set an attribute of the topic to a new value.
+    * Allows a topic owner to set an attribute of the topic to a new value.  To remove the ability to change topic permissions, you must deny permissions to the AddPermission, RemovePermission, and SetTopicAttributes actions in your IAM policy. 
     */
   def setTopicAttributes(): Request[js.Object, AWSError] = js.native
   def setTopicAttributes(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Allows a topic owner to set an attribute of the topic to a new value.
+    * Allows a topic owner to set an attribute of the topic to a new value.  To remove the ability to change topic permissions, you must deny permissions to the AddPermission, RemovePermission, and SetTopicAttributes actions in your IAM policy. 
     */
   def setTopicAttributes(params: SetTopicAttributesInput): Request[js.Object, AWSError] = js.native
   def setTopicAttributes(
@@ -556,12 +556,12 @@ trait SNS extends Service {
   ): Request[TagResourceResponse, AWSError] = js.native
   
   /**
-    * Deletes a subscription. If the subscription requires authentication for deletion, only the owner of the subscription or the topic's owner can unsubscribe, and an Amazon Web Services signature is required. If the Unsubscribe call does not require authentication and the requester is not the subscription owner, a final cancellation message is delivered to the endpoint, so that the endpoint owner can easily resubscribe to the topic if the Unsubscribe request was unintended. This action is throttled at 100 transactions per second (TPS).
+    * Deletes a subscription. If the subscription requires authentication for deletion, only the owner of the subscription or the topic's owner can unsubscribe, and an Amazon Web Services signature is required. If the Unsubscribe call does not require authentication and the requester is not the subscription owner, a final cancellation message is delivered to the endpoint, so that the endpoint owner can easily resubscribe to the topic if the Unsubscribe request was unintended.  Amazon SQS queue subscriptions require authentication for deletion. Only the owner of the subscription, or the owner of the topic can unsubscribe using the required Amazon Web Services signature.  This action is throttled at 100 transactions per second (TPS).
     */
   def unsubscribe(): Request[js.Object, AWSError] = js.native
   def unsubscribe(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Deletes a subscription. If the subscription requires authentication for deletion, only the owner of the subscription or the topic's owner can unsubscribe, and an Amazon Web Services signature is required. If the Unsubscribe call does not require authentication and the requester is not the subscription owner, a final cancellation message is delivered to the endpoint, so that the endpoint owner can easily resubscribe to the topic if the Unsubscribe request was unintended. This action is throttled at 100 transactions per second (TPS).
+    * Deletes a subscription. If the subscription requires authentication for deletion, only the owner of the subscription or the topic's owner can unsubscribe, and an Amazon Web Services signature is required. If the Unsubscribe call does not require authentication and the requester is not the subscription owner, a final cancellation message is delivered to the endpoint, so that the endpoint owner can easily resubscribe to the topic if the Unsubscribe request was unintended.  Amazon SQS queue subscriptions require authentication for deletion. Only the owner of the subscription, or the owner of the topic can unsubscribe using the required Amazon Web Services signature.  This action is throttled at 100 transactions per second (TPS).
     */
   def unsubscribe(params: UnsubscribeInput): Request[js.Object, AWSError] = js.native
   def unsubscribe(params: UnsubscribeInput, callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native

@@ -6,9 +6,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** @typedef {import('../../entity.js').Entity} Entity */
-/** @typedef {import('../../../platform/sound/instance.js').SoundInstance} SoundInstance */
-/** @typedef {import('./system.js').SoundComponentSystem} SoundComponentSystem */
 /**
   * The Sound Component controls playback of {@link Sound}s.
   *
@@ -20,13 +17,25 @@ open class SoundComponent protected () extends Component {
   /**
     * Create a new Sound Component.
     *
-    * @param {SoundComponentSystem} system - The ComponentSystem that created this component.
-    * @param {Entity} entity - The entity that the Component is attached to.
+    * @param {import('./system.js').SoundComponentSystem} system - The ComponentSystem that
+    * created this component.
+    * @param {import('../../entity.js').Entity} entity - The entity that the Component is attached
+    * to.
     */
   def this(system: SoundComponentSystem, entity: Entity) = this()
   
   /** @private */
   /* private */ var _distanceModel: Any = js.native
+  
+  /**
+    * Return a property from the slot with the specified name.
+    *
+    * @param {string} name - The name of the {@link SoundSlot} to look for.
+    * @param {string} property - The name of the property to look for.
+    * @returns {*} The value from the looked property inside the slot with specified name. May be undefined if slot does not exist.
+    * @private
+    */
+  /* private */ var _getSlotProperty: Any = js.native
   
   /** @private */
   /* private */ var _maxDistance: Any = js.native
@@ -57,35 +66,40 @@ open class SoundComponent protected () extends Component {
     *
     * @event SoundComponent#play
     * @param {SoundSlot} slot - The slot whose instance started playing.
-    * @param {SoundInstance} instance - The instance that started playing.
+    * @param {import('../../../platform/sound/instance.js').SoundInstance} instance - The instance
+    * that started playing.
     */
   /**
     * Fired when a sound instance is paused.
     *
     * @event SoundComponent#pause
     * @param {SoundSlot} slot - The slot whose instance was paused.
-    * @param {SoundInstance} instance - The instance that was paused created to play the sound.
+    * @param {import('../../../platform/sound/instance.js').SoundInstance} instance - The instance
+    * that was paused created to play the sound.
     */
   /**
     * Fired when a sound instance is resumed.
     *
     * @event SoundComponent#resume
     * @param {SoundSlot} slot - The slot whose instance was resumed.
-    * @param {SoundInstance} instance - The instance that was resumed.
+    * @param {import('../../../platform/sound/instance.js').SoundInstance} instance - The instance
+    * that was resumed.
     */
   /**
     * Fired when a sound instance is stopped.
     *
     * @event SoundComponent#stop
     * @param {SoundSlot} slot - The slot whose instance was stopped.
-    * @param {SoundInstance} instance - The instance that was stopped.
+    * @param {import('../../../platform/sound/instance.js').SoundInstance} instance - The instance
+    * that was stopped.
     */
   /**
     * Fired when a sound instance stops playing because it reached its ending.
     *
     * @event SoundComponent#end
     * @param {SoundSlot} slot - The slot whose instance ended.
-    * @param {SoundInstance} instance - The instance that ended.
+    * @param {import('../../../platform/sound/instance.js').SoundInstance} instance - The instance
+    * that ended.
     */
   /**
     * Update the specified property on all sound instances.
@@ -122,7 +136,7 @@ open class SoundComponent protected () extends Component {
     * @returns {SoundSlot|null} The new slot or null if the slot already exists.
     * @example
     * // get an asset by id
-    * var asset = app.assets.get(10);
+    * const asset = app.assets.get(10);
     * // add a slot
     * this.entity.sound.addSlot('beep', {
     *     asset: asset
@@ -147,6 +161,38 @@ open class SoundComponent protected () extends Component {
     * @type {string}
     */
   def distanceModel_=(arg: String): Unit = js.native
+  
+  /**
+    * Returns true if the asset of the slot with the specified name is loaded..
+    *
+    * @param {string} name - The name of the {@link SoundSlot} to look for.
+    * @returns {boolean} True if the slot with the specified name exists and its asset is loaded.
+    */
+  def isLoaded(name: String): Boolean = js.native
+  
+  /**
+    * Returns true if the slot with the specified name is currently paused.
+    *
+    * @param {string} name - The name of the {@link SoundSlot} to look for.
+    * @returns {boolean} True if the slot with the specified name exists and is currently paused.
+    */
+  def isPaused(name: String): Boolean = js.native
+  
+  /**
+    * Returns true if the slot with the specified name is currently playing.
+    *
+    * @param {string} name - The name of the {@link SoundSlot} to look for.
+    * @returns {boolean} True if the slot with the specified name exists and is currently playing.
+    */
+  def isPlaying(name: String): Boolean = js.native
+  
+  /**
+    * Returns true if the slot with the specified name is currently stopped.
+    *
+    * @param {string} name - The name of the {@link SoundSlot} to look for.
+    * @returns {boolean} True if the slot with the specified name exists and is currently stopped.
+    */
+  def isStopped(name: String): Boolean = js.native
   
   def maxDistance: Double = js.native
   /**
@@ -187,12 +233,12 @@ open class SoundComponent protected () extends Component {
     * created and played.
     *
     * @param {string} name - The name of the {@link SoundSlot} to play.
-    * @returns {SoundInstance|null} The sound instance that will be played. Returns null if the
-    * component or its parent entity is disabled or if the SoundComponent has no slot with the
-    * specified name.
+    * @returns {import('../../../platform/sound/instance.js').SoundInstance|null} The sound
+    * instance that will be played. Returns null if the component or its parent entity is disabled
+    * or if the SoundComponent has no slot with the specified name.
     * @example
     * // get asset by id
-    * var asset = app.assets.get(10);
+    * const asset = app.assets.get(10);
     * // create a slot and play it
     * this.entity.sound.addSlot('beep', {
     *     asset: asset

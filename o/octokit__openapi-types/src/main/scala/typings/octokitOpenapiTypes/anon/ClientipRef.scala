@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ClientipRef extends StObject {
   
-  /** An alternative IP for default location auto-detection, such as when proxying a request. */
+  /** @description An alternative IP for default location auto-detection, such as when proxying a request. */
   var client_ip: js.UndefOr[String] = js.undefined
   
-  /** The branch or commit to check for a default devcontainer path. If not specified, the default branch will be checked. */
+  /** @description The branch or commit to check for a default devcontainer path. If not specified, the default branch will be checked. */
   var ref: js.UndefOr[String] = js.undefined
 }
 object ClientipRef {

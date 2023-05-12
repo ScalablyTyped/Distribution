@@ -4,10 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Describes a symbol, which consists of a vector path with styling. A symbol
-  * can be used as the icon of a marker, or placed on a polyline.
-  */
 trait Symbol extends StObject {
   
   /**

@@ -14,7 +14,8 @@ open class VertexIterator protected ()
   /**
     * Create a new VertexIterator instance.
     *
-    * @param {VertexBuffer} vertexBuffer - The vertex buffer to be iterated.
+    * @param {import('./vertex-buffer.js').VertexBuffer} vertexBuffer - The vertex buffer to be
+    * iterated.
     */
   def this(vertexBuffer: typings.playcanvas.mod.VertexBuffer) = this()
 }

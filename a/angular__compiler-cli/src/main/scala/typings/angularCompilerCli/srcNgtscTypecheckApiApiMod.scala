@@ -10,17 +10,20 @@ import typings.angularCompilerCli.angularCompilerCliStrings.direct
 import typings.angularCompilerCli.angularCompilerCliStrings.external
 import typings.angularCompilerCli.angularCompilerCliStrings.indirect
 import typings.angularCompilerCli.anon.ClassDeclarationClassDecl
+import typings.angularCompilerCli.anon.ClassDeclarationDeclarati
 import typings.angularCompilerCli.anon.Inputs
 import typings.angularCompilerCli.srcNgtscDiagnosticsSrcErrorCodeMod.ErrorCode
 import typings.angularCompilerCli.srcNgtscImportsMod.Reference
 import typings.angularCompilerCli.srcNgtscMetadataMod.ClassPropertyMapping
 import typings.angularCompilerCli.srcNgtscMetadataSrcApiMod.DirectiveTypeCheckMeta
+import typings.angularCompilerCli.srcNgtscMetadataSrcApiMod.HostDirectiveMeta
+import typings.angularCompilerCli.srcNgtscMetadataSrcApiMod.InputMapping
 import typings.angularCompilerCli.srcNgtscMetadataSrcApiMod.TemplateGuardMeta
 import typings.angularCompilerCli.srcNgtscMetadataSrcPropertyMappingMod.ClassPropertyName
-import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.ClassDeclaration
-import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.DeclarationNode
+import typings.angularCompilerCli.srcNgtscMetadataSrcPropertyMappingMod.InputOrOutput
 import typings.std.Map
 import typings.std.Set
+import typings.typescript.mod.Decorator
 import typings.typescript.mod.Diagnostic
 import typings.typescript.mod.DiagnosticCategory
 import typings.typescript.mod.DiagnosticMessageChain
@@ -63,7 +66,7 @@ object srcNgtscTypecheckApiApiMod {
     extends StObject
        with TemplateSourceMapping {
     
-    var componentClass: ClassDeclaration[DeclarationNode]
+    var componentClass: ClassDeclarationDeclarati
     
     var node: Expression
     
@@ -75,12 +78,7 @@ object srcNgtscTypecheckApiApiMod {
   }
   object ExternalTemplateSourceMapping {
     
-    inline def apply(
-      componentClass: ClassDeclaration[DeclarationNode],
-      node: Expression,
-      template: String,
-      templateUrl: String
-    ): ExternalTemplateSourceMapping = {
+    inline def apply(componentClass: ClassDeclarationDeclarati, node: Expression, template: String, templateUrl: String): ExternalTemplateSourceMapping = {
       val __obj = js.Dynamic.literal(componentClass = componentClass.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any], templateUrl = templateUrl.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("external")
       __obj.asInstanceOf[ExternalTemplateSourceMapping]
@@ -89,7 +87,7 @@ object srcNgtscTypecheckApiApiMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: ExternalTemplateSourceMapping] (val x: Self) extends AnyVal {
       
-      inline def setComponentClass(value: ClassDeclaration[DeclarationNode]): Self = StObject.set(x, "componentClass", value.asInstanceOf[js.Any])
+      inline def setComponentClass(value: ClassDeclarationDeclarati): Self = StObject.set(x, "componentClass", value.asInstanceOf[js.Any])
       
       inline def setNode(value: Expression): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       
@@ -135,7 +133,7 @@ object srcNgtscTypecheckApiApiMod {
     extends StObject
        with TemplateSourceMapping {
     
-    var componentClass: ClassDeclaration[DeclarationNode]
+    var componentClass: ClassDeclarationDeclarati
     
     var node: Expression
     
@@ -145,7 +143,7 @@ object srcNgtscTypecheckApiApiMod {
   }
   object IndirectTemplateSourceMapping {
     
-    inline def apply(componentClass: ClassDeclaration[DeclarationNode], node: Expression, template: String): IndirectTemplateSourceMapping = {
+    inline def apply(componentClass: ClassDeclarationDeclarati, node: Expression, template: String): IndirectTemplateSourceMapping = {
       val __obj = js.Dynamic.literal(componentClass = componentClass.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("indirect")
       __obj.asInstanceOf[IndirectTemplateSourceMapping]
@@ -154,7 +152,7 @@ object srcNgtscTypecheckApiApiMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: IndirectTemplateSourceMapping] (val x: Self) extends AnyVal {
       
-      inline def setComponentClass(value: ClassDeclaration[DeclarationNode]): Self = StObject.set(x, "componentClass", value.asInstanceOf[js.Any])
+      inline def setComponentClass(value: ClassDeclarationDeclarati): Self = StObject.set(x, "componentClass", value.asInstanceOf[js.Any])
       
       inline def setNode(value: Expression): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       
@@ -271,18 +269,13 @@ object srcNgtscTypecheckApiApiMod {
       __obj.asInstanceOf[typings.angularCompilerCli.srcNgtscTypecheckApiApiMod.DirectTemplateSourceMapping]
     }
     
-    inline def ExternalTemplateSourceMapping(
-      componentClass: ClassDeclaration[DeclarationNode],
-      node: Expression,
-      template: String,
-      templateUrl: String
-    ): typings.angularCompilerCli.srcNgtscTypecheckApiApiMod.ExternalTemplateSourceMapping = {
+    inline def ExternalTemplateSourceMapping(componentClass: ClassDeclarationDeclarati, node: Expression, template: String, templateUrl: String): typings.angularCompilerCli.srcNgtscTypecheckApiApiMod.ExternalTemplateSourceMapping = {
       val __obj = js.Dynamic.literal(componentClass = componentClass.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any], templateUrl = templateUrl.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("external")
       __obj.asInstanceOf[typings.angularCompilerCli.srcNgtscTypecheckApiApiMod.ExternalTemplateSourceMapping]
     }
     
-    inline def IndirectTemplateSourceMapping(componentClass: ClassDeclaration[DeclarationNode], node: Expression, template: String): typings.angularCompilerCli.srcNgtscTypecheckApiApiMod.IndirectTemplateSourceMapping = {
+    inline def IndirectTemplateSourceMapping(componentClass: ClassDeclarationDeclarati, node: Expression, template: String): typings.angularCompilerCli.srcNgtscTypecheckApiApiMod.IndirectTemplateSourceMapping = {
       val __obj = js.Dynamic.literal(componentClass = componentClass.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("indirect")
       __obj.asInstanceOf[typings.angularCompilerCli.srcNgtscTypecheckApiApiMod.IndirectTemplateSourceMapping]
@@ -347,55 +340,69 @@ object srcNgtscTypecheckApiApiMod {
        with DirectiveMeta
        with DirectiveTypeCheckMeta {
     
+    var decorator: Decorator | Null
+    
+    var hostDirectives: js.Array[HostDirectiveMeta] | Null
+    
     @JSName("inputs")
-    var inputs_TypeCheckableDirectiveMeta: ClassPropertyMapping
+    var inputs_TypeCheckableDirectiveMeta: ClassPropertyMapping[InputMapping]
     
     var isStandalone: Boolean
     
     @JSName("outputs")
-    var outputs_TypeCheckableDirectiveMeta: ClassPropertyMapping
+    var outputs_TypeCheckableDirectiveMeta: ClassPropertyMapping[InputOrOutput]
     
     var queries: js.Array[String]
     
-    var ref: Reference[ClassDeclaration[DeclarationNode]]
+    var ref: Reference[ClassDeclarationDeclarati]
   }
   object TypeCheckableDirectiveMeta {
     
     inline def apply(
       coercedInputFields: Set[ClassPropertyName],
       hasNgTemplateContextGuard: Boolean,
-      inputs: ClassPropertyMapping,
+      inputs: ClassPropertyMapping[InputMapping],
       isComponent: Boolean,
       isGeneric: Boolean,
       isStandalone: Boolean,
       isStructural: Boolean,
       name: String,
       ngTemplateGuards: js.Array[TemplateGuardMeta],
-      outputs: ClassPropertyMapping,
+      outputs: ClassPropertyMapping[InputOrOutput],
       queries: js.Array[String],
-      ref: Reference[ClassDeclaration[DeclarationNode]],
+      ref: Reference[ClassDeclarationDeclarati],
       restrictedInputFields: Set[ClassPropertyName],
       stringLiteralInputFields: Set[ClassPropertyName],
       undeclaredInputFields: Set[ClassPropertyName]
     ): TypeCheckableDirectiveMeta = {
-      val __obj = js.Dynamic.literal(coercedInputFields = coercedInputFields.asInstanceOf[js.Any], hasNgTemplateContextGuard = hasNgTemplateContextGuard.asInstanceOf[js.Any], inputs = inputs.asInstanceOf[js.Any], isComponent = isComponent.asInstanceOf[js.Any], isGeneric = isGeneric.asInstanceOf[js.Any], isStandalone = isStandalone.asInstanceOf[js.Any], isStructural = isStructural.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], ngTemplateGuards = ngTemplateGuards.asInstanceOf[js.Any], outputs = outputs.asInstanceOf[js.Any], queries = queries.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any], restrictedInputFields = restrictedInputFields.asInstanceOf[js.Any], stringLiteralInputFields = stringLiteralInputFields.asInstanceOf[js.Any], undeclaredInputFields = undeclaredInputFields.asInstanceOf[js.Any], animationTriggerNames = null, exportAs = null, selector = null)
+      val __obj = js.Dynamic.literal(coercedInputFields = coercedInputFields.asInstanceOf[js.Any], hasNgTemplateContextGuard = hasNgTemplateContextGuard.asInstanceOf[js.Any], inputs = inputs.asInstanceOf[js.Any], isComponent = isComponent.asInstanceOf[js.Any], isGeneric = isGeneric.asInstanceOf[js.Any], isStandalone = isStandalone.asInstanceOf[js.Any], isStructural = isStructural.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], ngTemplateGuards = ngTemplateGuards.asInstanceOf[js.Any], outputs = outputs.asInstanceOf[js.Any], queries = queries.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any], restrictedInputFields = restrictedInputFields.asInstanceOf[js.Any], stringLiteralInputFields = stringLiteralInputFields.asInstanceOf[js.Any], undeclaredInputFields = undeclaredInputFields.asInstanceOf[js.Any], animationTriggerNames = null, decorator = null, exportAs = null, hostDirectives = null, selector = null)
       __obj.asInstanceOf[TypeCheckableDirectiveMeta]
     }
     
     @scala.inline
     implicit open class MutableBuilder[Self <: TypeCheckableDirectiveMeta] (val x: Self) extends AnyVal {
       
-      inline def setInputs(value: ClassPropertyMapping): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
+      inline def setDecorator(value: Decorator): Self = StObject.set(x, "decorator", value.asInstanceOf[js.Any])
+      
+      inline def setDecoratorNull: Self = StObject.set(x, "decorator", null)
+      
+      inline def setHostDirectives(value: js.Array[HostDirectiveMeta]): Self = StObject.set(x, "hostDirectives", value.asInstanceOf[js.Any])
+      
+      inline def setHostDirectivesNull: Self = StObject.set(x, "hostDirectives", null)
+      
+      inline def setHostDirectivesVarargs(value: HostDirectiveMeta*): Self = StObject.set(x, "hostDirectives", js.Array(value*))
+      
+      inline def setInputs(value: ClassPropertyMapping[InputMapping]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
       
       inline def setIsStandalone(value: Boolean): Self = StObject.set(x, "isStandalone", value.asInstanceOf[js.Any])
       
-      inline def setOutputs(value: ClassPropertyMapping): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
+      inline def setOutputs(value: ClassPropertyMapping[InputOrOutput]): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
       
       inline def setQueries(value: js.Array[String]): Self = StObject.set(x, "queries", value.asInstanceOf[js.Any])
       
       inline def setQueriesVarargs(value: String*): Self = StObject.set(x, "queries", js.Array(value*))
       
-      inline def setRef(value: Reference[ClassDeclaration[DeclarationNode]]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      inline def setRef(value: Reference[ClassDeclarationDeclarati]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     }
   }
   

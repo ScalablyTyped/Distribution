@@ -42,4 +42,16 @@ object _SupportOption {
     __obj.updateDynamic("type")("path")
     __obj.asInstanceOf[typings.prettier.mod.PathSupportOption]
   }
+  
+  inline def StringArraySupportOption(category: String, since: String): typings.prettier.mod.StringArraySupportOption = {
+    val __obj = js.Dynamic.literal(array = true, category = category.asInstanceOf[js.Any], since = since.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("string")
+    __obj.asInstanceOf[typings.prettier.mod.StringArraySupportOption]
+  }
+  
+  inline def StringSupportOption(category: String, since: String): typings.prettier.mod.StringSupportOption = {
+    val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any], since = since.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("string")
+    __obj.asInstanceOf[typings.prettier.mod.StringSupportOption]
+  }
 }

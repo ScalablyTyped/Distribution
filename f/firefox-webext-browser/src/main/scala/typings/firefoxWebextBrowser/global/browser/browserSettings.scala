@@ -112,6 +112,13 @@ object browserSettings {
   @js.native
   val openUrlbarResultsInNewTabs: Setting = js.native
   
+  /**
+    * This setting controls whether a light or dark color scheme overrides the page's preferred color scheme.
+    */
+  @JSGlobal("browser.browserSettings.overrideContentColorScheme")
+  @js.native
+  val overrideContentColorScheme: Setting = js.native
+  
   /** This setting controls whether the user-chosen colors override the page's colors. */
   @JSGlobal("browser.browserSettings.overrideDocumentColors")
   @js.native

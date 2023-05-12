@@ -1,20 +1,32 @@
 package typings.phaser.Phaser.GameObjects
 
 import typings.phaser.Phaser.Events.EventEmitter
-import typings.phaser.Phaser.GameObjects.Particles.ParticleEmitterManager
+import typings.phaser.Phaser.GameObjects.Particles.ParticleEmitter
 import typings.phaser.Phaser.Scene
 import typings.phaser.Phaser.Scenes.Systems
 import typings.phaser.Phaser.Tilemaps.Tilemap
 import typings.phaser.Phaser.Tweens.Tween
+import typings.phaser.Phaser.Tweens.TweenChain
 import typings.phaser.Phaser.Types.GameObjects.BitmapText.BitmapTextConfig
+import typings.phaser.Phaser.Types.GameObjects.Container.ContainerConfig
+import typings.phaser.Phaser.Types.GameObjects.Graphics.Options
 import typings.phaser.Phaser.Types.GameObjects.Group.GroupConfig
 import typings.phaser.Phaser.Types.GameObjects.Group.GroupCreateConfig
+import typings.phaser.Phaser.Types.GameObjects.Mesh.MeshConfig
+import typings.phaser.Phaser.Types.GameObjects.NineSlice.NineSliceConfig
+import typings.phaser.Phaser.Types.GameObjects.Particles.ParticleEmitterCreatorConfig
+import typings.phaser.Phaser.Types.GameObjects.Plane.PlaneConfig
 import typings.phaser.Phaser.Types.GameObjects.RenderTexture.RenderTextureConfig
+import typings.phaser.Phaser.Types.GameObjects.Rope.RopeConfig
+import typings.phaser.Phaser.Types.GameObjects.Shader.ShaderConfig
 import typings.phaser.Phaser.Types.GameObjects.Sprite.SpriteConfig
 import typings.phaser.Phaser.Types.GameObjects.Text.TextConfig
 import typings.phaser.Phaser.Types.GameObjects.TileSprite.TileSpriteConfig
+import typings.phaser.Phaser.Types.GameObjects.Video.VideoConfig
+import typings.phaser.Phaser.Types.GameObjects.Zone.ZoneConfig
 import typings.phaser.Phaser.Types.Tilemaps.TilemapConfig
 import typings.phaser.Phaser.Types.Tweens.TweenBuilderConfig
+import typings.phaser.Phaser.Types.Tweens.TweenChainBuilderConfig
 import typings.phaser.SpineContainer
 import typings.phaser.SpineContainerConfig
 import typings.phaser.SpineGameObject
@@ -25,11 +37,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /**
   * The Game Object Creator is a Scene plugin that allows you to quickly create many common
-  * types of Game Objects and return them. Unlike the Game Object Factory, they are not automatically
-  * added to the Scene.
+  * types of Game Objects and return them using a configuration object, rather than
+  * having to specify a limited set of parameters such as with the GameObjectFactory.
   * 
-  * Game Objects directly register themselves with the Creator and inject their own creation
-  * methods into the class.
+  * Game Objects made via this class are automatically added to the Scene and Update List
+  * unless you explicitly set the `add` property in the configuration object to `false`.
   */
 @js.native
 trait GameObjectCreator extends StObject {
@@ -51,8 +63,8 @@ trait GameObjectCreator extends StObject {
     * @param config The configuration object this Game Object will use to create itself.
     * @param addToScene Add this Game Object to the Scene after creating it? If set this argument overrides the `add` property in the config object.
     */
-  def blitter(config: js.Object): Blitter = js.native
-  def blitter(config: js.Object, addToScene: Boolean): Blitter = js.native
+  def blitter(config: SpriteConfig): Blitter = js.native
+  def blitter(config: SpriteConfig, addToScene: Boolean): Blitter = js.native
   
   /**
     * Creates a new Container Game Object and returns it.
@@ -61,8 +73,8 @@ trait GameObjectCreator extends StObject {
     * @param config The configuration object this Game Object will use to create itself.
     * @param addToScene Add this Game Object to the Scene after creating it? If set this argument overrides the `add` property in the config object.
     */
-  def container(config: js.Object): Container = js.native
-  def container(config: js.Object, addToScene: Boolean): Container = js.native
+  def container(config: ContainerConfig): Container = js.native
+  def container(config: ContainerConfig, addToScene: Boolean): Container = js.native
   
   /**
     * A reference to the Scene Display List.
@@ -91,8 +103,10 @@ trait GameObjectCreator extends StObject {
     * @param config The configuration object this Game Object will use to create itself.
     * @param addToScene Add this Game Object to the Scene after creating it? If set this argument overrides the `add` property in the config object.
     */
-  def graphics(config: js.Object): Graphics = js.native
-  def graphics(config: js.Object, addToScene: Boolean): Graphics = js.native
+  def graphics(): Graphics = js.native
+  def graphics(config: Unit, addToScene: Boolean): Graphics = js.native
+  def graphics(config: Options): Graphics = js.native
+  def graphics(config: Options, addToScene: Boolean): Graphics = js.native
   
   /**
     * Creates a new Group Game Object and returns it.
@@ -110,8 +124,8 @@ trait GameObjectCreator extends StObject {
     * @param config The configuration object this Game Object will use to create itself.
     * @param addToScene Add this Game Object to the Scene after creating it? If set this argument overrides the `add` property in the config object.
     */
-  def image(config: js.Object): Image = js.native
-  def image(config: js.Object, addToScene: Boolean): Image = js.native
+  def image(config: SpriteConfig): Image = js.native
+  def image(config: SpriteConfig, addToScene: Boolean): Image = js.native
   
   /**
     * Creates a new Layer Game Object and returns it.
@@ -120,8 +134,8 @@ trait GameObjectCreator extends StObject {
     * @param config The configuration object this Game Object will use to create itself.
     * @param addToScene Add this Game Object to the Scene after creating it? If set this argument overrides the `add` property in the config object.
     */
-  def layer(config: js.Object): Layer = js.native
-  def layer(config: js.Object, addToScene: Boolean): Layer = js.native
+  def layer(config: SpriteConfig): Layer = js.native
+  def layer(config: SpriteConfig, addToScene: Boolean): Layer = js.native
   
   /**
     * Creates a new Mesh Game Object and returns it.
@@ -130,18 +144,42 @@ trait GameObjectCreator extends StObject {
     * @param config The configuration object this Game Object will use to create itself.
     * @param addToScene Add this Game Object to the Scene after creating it? If set this argument overrides the `add` property in the config object.
     */
-  def mesh(config: js.Object): Mesh = js.native
-  def mesh(config: js.Object, addToScene: Boolean): Mesh = js.native
+  def mesh(config: MeshConfig): Mesh = js.native
+  def mesh(config: MeshConfig, addToScene: Boolean): Mesh = js.native
   
   /**
-    * Creates a new Particle Emitter Manager Game Object and returns it.
+    * Creates a new Nine Slice Game Object and returns it.
+    * 
+    * Note: This method will only be available if the Nine Slice Game Object and WebGL support have been built into Phaser.
+    * @param config The configuration object this Game Object will use to create itself.
+    * @param addToScene Add this Game Object to the Scene after creating it? If set this argument overrides the `add` property in the config object.
+    */
+  def nineslice(config: NineSliceConfig): NineSlice = js.native
+  def nineslice(config: NineSliceConfig, addToScene: Boolean): NineSlice = js.native
+  
+  /**
+    * Creates a new Particle Emitter Game Object and returns it.
+    * 
+    * Prior to Phaser v3.60 this function would create a `ParticleEmitterManager`. These were removed
+    * in v3.60 and replaced with creating a `ParticleEmitter` instance directly. Please see the
+    * updated function parameters and class documentation for more details.
     * 
     * Note: This method will only be available if the Particles Game Object has been built into Phaser.
     * @param config The configuration object this Game Object will use to create itself.
     * @param addToScene Add this Game Object to the Scene after creating it? If set this argument overrides the `add` property in the config object.
     */
-  def particles(config: js.Object): ParticleEmitterManager = js.native
-  def particles(config: js.Object, addToScene: Boolean): ParticleEmitterManager = js.native
+  def particles(config: ParticleEmitterCreatorConfig): ParticleEmitter = js.native
+  def particles(config: ParticleEmitterCreatorConfig, addToScene: Boolean): ParticleEmitter = js.native
+  
+  /**
+    * Creates a new Plane Game Object and returns it.
+    * 
+    * Note: This method will only be available if the Plane Game Object and WebGL support have been built into Phaser.
+    * @param config The configuration object this Game Object will use to create itself.
+    * @param addToScene Add this Game Object to the Scene after creating it? If set this argument overrides the `add` property in the config object.
+    */
+  def plane(config: PlaneConfig): Plane = js.native
+  def plane(config: PlaneConfig, addToScene: Boolean): Plane = js.native
   
   /**
     * Creates a new Point Light Game Object and returns it.
@@ -157,6 +195,19 @@ trait GameObjectCreator extends StObject {
     * Creates a new Render Texture Game Object and returns it.
     * 
     * Note: This method will only be available if the Render Texture Game Object has been built into Phaser.
+    * 
+    * A Render Texture is a combination of Dynamic Texture and an Image Game Object, that uses the
+    * Dynamic Texture to display itself with.
+    * 
+    * A Dynamic Texture is a special texture that allows you to draw textures, frames and most kind of
+    * Game Objects directly to it.
+    * 
+    * You can take many complex objects and draw them to this one texture, which can then be used as the
+    * base texture for other Game Objects, such as Sprites. Should you then update this texture, all
+    * Game Objects using it will instantly be updated as well, reflecting the changes immediately.
+    * 
+    * It's a powerful way to generate dynamic textures at run-time that are WebGL friendly and don't invoke
+    * expensive GPU uploads on each change.
     * @param config The configuration object this Game Object will use to create itself.
     * @param addToScene Add this Game Object to the Scene after creating it? If set this argument overrides the `add` property in the config object.
     */
@@ -170,8 +221,8 @@ trait GameObjectCreator extends StObject {
     * @param config The configuration object this Game Object will use to create itself.
     * @param addToScene Add this Game Object to the Scene after creating it? If set this argument overrides the `add` property in the config object.
     */
-  def rope(config: js.Object): Rope = js.native
-  def rope(config: js.Object, addToScene: Boolean): Rope = js.native
+  def rope(config: RopeConfig): Rope = js.native
+  def rope(config: RopeConfig, addToScene: Boolean): Rope = js.native
   
   /**
     * The Scene to which this Game Object Creator belongs.
@@ -185,8 +236,8 @@ trait GameObjectCreator extends StObject {
     * @param config The configuration object this Game Object will use to create itself.
     * @param addToScene Add this Game Object to the Scene after creating it? If set this argument overrides the `add` property in the config object.
     */
-  def shader(config: js.Object): Shader = js.native
-  def shader(config: js.Object, addToScene: Boolean): Shader = js.native
+  def shader(config: ShaderConfig): Shader = js.native
+  def shader(config: ShaderConfig, addToScene: Boolean): Shader = js.native
   
   def spine(config: SpineGameObjectConfig): SpineGameObject = js.native
   def spine(config: SpineGameObjectConfig, addToScene: Boolean): SpineGameObject = js.native
@@ -239,14 +290,25 @@ trait GameObjectCreator extends StObject {
   def tilemap(): Tilemap = js.native
   def tilemap(config: TilemapConfig): Tilemap = js.native
   
-  def tween(config: js.Object): Tween = js.native
+  def tween(config: Tween): Tween = js.native
+  def tween(config: TweenChain): Tween = js.native
   /**
     * Creates a new Tween object and returns it.
     * 
     * Note: This method will only be available if Tweens have been built into Phaser.
-    * @param config The Tween configuration.
+    * @param config A Tween Configuration object, or a Tween or TweenChain instance.
     */
   def tween(config: TweenBuilderConfig): Tween = js.native
+  def tween(config: TweenChainBuilderConfig): Tween = js.native
+  
+  def tweenchain(config: js.Object): TweenChain = js.native
+  /**
+    * Creates a new TweenChain object and returns it, without adding it to the Tween Manager.
+    * 
+    * Note: This method will only be available if Tweens have been built into Phaser.
+    * @param config The TweenChain configuration.
+    */
+  def tweenchain(config: TweenBuilderConfig): TweenChain = js.native
   
   /**
     * A reference to the Scene Update List.
@@ -260,8 +322,8 @@ trait GameObjectCreator extends StObject {
     * @param config The configuration object this Game Object will use to create itself.
     * @param addToScene Add this Game Object to the Scene after creating it? If set this argument overrides the `add` property in the config object.
     */
-  def video(config: js.Object): Video = js.native
-  def video(config: js.Object, addToScene: Boolean): Video = js.native
+  def video(config: VideoConfig): Video = js.native
+  def video(config: VideoConfig, addToScene: Boolean): Video = js.native
   
   /**
     * Creates a new Zone Game Object and returns it.
@@ -269,5 +331,5 @@ trait GameObjectCreator extends StObject {
     * Note: This method will only be available if the Zone Game Object has been built into Phaser.
     * @param config The configuration object this Game Object will use to create itself.
     */
-  def zone(config: js.Object): Zone = js.native
+  def zone(config: ZoneConfig): Zone = js.native
 }

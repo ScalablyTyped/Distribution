@@ -14,12 +14,10 @@ import typings.cypress.anon.Debug
 import typings.cypress.anon.Defaults
 import typings.cypress.anon.GetContainsSelector
 import typings.cypress.anon.GetSelector
-import typings.cypress.anon.OmitCoreConfigOptionsinde
 import typings.cypress.anon.OpenMode
 import typings.cypress.anon.PartialLogConfig
 import typings.cypress.anon.Title
 import typings.cypress.anon.`10`
-import typings.cypress.anon.`11`
 import typings.cypress.cypressBooleans.`false`
 import typings.cypress.cypressStrings.animationDistanceThreshold
 import typings.cypress.cypressStrings.arch
@@ -51,8 +49,9 @@ import typings.cypress.cypressStrings.excludeSpecPattern
 import typings.cypress.cypressStrings.execTimeout
 import typings.cypress.cypressStrings.experimentalFetchPolyfill
 import typings.cypress.cypressStrings.experimentalInteractiveRunEvents
+import typings.cypress.cypressStrings.experimentalMemoryManagement
 import typings.cypress.cypressStrings.experimentalModifyObstructiveThirdPartyCode
-import typings.cypress.cypressStrings.experimentalSessionAndOrigin
+import typings.cypress.cypressStrings.experimentalSkipDomainInjection
 import typings.cypress.cypressStrings.experimentalSourceRewriting
 import typings.cypress.cypressStrings.experimentalStudio
 import typings.cypress.cypressStrings.experimentalWebKitSupport
@@ -76,8 +75,6 @@ import typings.cypress.cypressStrings.namespace
 import typings.cypress.cypressStrings.net
 import typings.cypress.cypressStrings.nodeVersion
 import typings.cypress.cypressStrings.numTestsKeptInMemory
-import typings.cypress.cypressStrings.off
-import typings.cypress.cypressStrings.on
 import typings.cypress.cypressStrings.pageLoadTimeout
 import typings.cypress.cypressStrings.parentTestsFolder
 import typings.cypress.cypressStrings.parentTestsFolderDisplay
@@ -141,8 +138,6 @@ import typings.cypress.cypressStrings.windowColonbeforeColonunload
 import typings.cypress.cypressStrings.windowColonconfirm
 import typings.cypress.cypressStrings.windowColonload
 import typings.cypress.cypressStrings.windowColonunload
-import typings.cypress.cypressStrings.xhrRoute
-import typings.cypress.cypressStrings.xhrUrl
 import typings.cypress.typesCyBlobUtilMod.BlobUtilStatic
 import typings.cypress.typesCyBluebirdMod.BluebirdStatic
 import typings.cypress.typesCyBluebirdMod.Promise
@@ -413,9 +408,6 @@ trait Cypress extends StObject {
     */
   var Buffer: BufferType = js.native
   
-  /**
-    * @see https://on.cypress.io/api/commands
-    */
   var Commands: AddAll = js.native
   
   /**
@@ -446,17 +438,12 @@ trait Cypress extends StObject {
   /**
     * @see https://on.cypress.io/screenshot-api
     */
-  var Screenshot: `11` = js.native
+  var Screenshot: `10` = js.native
   
   /**
     * @see https://on.cypress.io/selector-playground-api
     */
   var SelectorPlayground: GetSelector = js.native
-  
-  /**
-    * @see https://on.cypress.io/api/api-server
-    */
-  var Server: `10` = js.native
   
   /**
     * Lodash library
@@ -753,7 +740,7 @@ trait Cypress extends StObject {
   @JSName("config")
   def config_downloadsFolder(key: downloadsFolder): java.lang.String = js.native
   @JSName("config")
-  def config_e2e(key: e2e): OmitCoreConfigOptionsinde = js.native
+  def config_e2e(key: e2e): EndToEndConfigOptions = js.native
   @JSName("config")
   def config_env(key: env): Unit = js.native
   @JSName("config")
@@ -773,13 +760,11 @@ trait Cypress extends StObject {
   @JSName("config")
   def config_experimentalInteractiveRunEvents(key: experimentalInteractiveRunEvents): Boolean = js.native
   @JSName("config")
+  def config_experimentalMemoryManagement(key: experimentalMemoryManagement): Boolean = js.native
+  @JSName("config")
   def config_experimentalModifyObstructiveThirdPartyCode(key: experimentalModifyObstructiveThirdPartyCode): Boolean = js.native
   @JSName("config")
-  def config_experimentalSessionAndOrigin(key: experimentalSessionAndOrigin): Unit = js.native
-  @JSName("config")
-  def config_experimentalSessionAndOrigin(key: experimentalSessionAndOrigin, value: Boolean): Unit = js.native
-  @JSName("config")
-  def config_experimentalSessionAndOrigin_Boolean(key: experimentalSessionAndOrigin): Boolean = js.native
+  def config_experimentalSkipDomainInjection(key: experimentalSkipDomainInjection): js.Array[java.lang.String] | Null = js.native
   @JSName("config")
   def config_experimentalSourceRewriting(key: experimentalSourceRewriting): Boolean = js.native
   @JSName("config")
@@ -957,7 +942,7 @@ trait Cypress extends StObject {
   @JSName("config")
   def config_taskTimeout_Double(key: taskTimeout): Double = js.native
   @JSName("config")
-  def config_testIsolation(key: testIsolation): Null | on | off = js.native
+  def config_testIsolation(key: testIsolation): Boolean = js.native
   @JSName("config")
   def config_trashAssetsBeforeRuns(key: trashAssetsBeforeRuns): Boolean = js.native
   @JSName("config")
@@ -992,14 +977,11 @@ trait Cypress extends StObject {
   def config_waitForAnimations_Boolean(key: waitForAnimations): Boolean = js.native
   @JSName("config")
   def config_watchForFileChanges(key: watchForFileChanges): Boolean = js.native
-  @JSName("config")
-  def config_xhrRoute(key: xhrRoute): java.lang.String = js.native
-  @JSName("config")
-  def config_xhrRoute_Union(key: xhrRoute): js.UndefOr[java.lang.String] = js.native
-  @JSName("config")
-  def config_xhrUrl(key: xhrUrl): java.lang.String = js.native
-  @JSName("config")
-  def config_xhrUrl_Union(key: xhrUrl): js.UndefOr[java.lang.String] = js.native
+  
+  /**
+    * Information about current test retry
+    */
+  var currentRetry: Double = js.native
   
   /**
     * Currently executing test runnable instance.
@@ -1010,6 +992,12 @@ trait Cypress extends StObject {
     * @see https://on.cypress.io/dom
     */
   var dom: GetContainsSelector = js.native
+  
+  /**
+    * Utility functions for ensuring various properties about a subject.
+    * @see https://on.cypress.io/api/custom-queries
+    */
+  var ensure: Ensure = js.native
   
   // no real way to type without generics
   /**
@@ -1179,7 +1167,7 @@ trait Cypress extends StObject {
     * @see https://on.cypress.io/catalog-of-events#App-Events
     */
   @JSName("off")
-  def off_commandenqueued(action: commandColonenqueued, fn: js.Function1[/* command */ EnqueuedCommand, Unit]): typings.cypress.Cypress.Cypress = js.native
+  def off_commandenqueued(action: commandColonenqueued, fn: js.Function1[/* command */ EnqueuedCommandAttributes, Unit]): typings.cypress.Cypress.Cypress = js.native
   /**
     * Fires whenever a command begins its retrying routines.
     * This is called on the trailing edge after Cypress has internally
@@ -1229,7 +1217,7 @@ trait Cypress extends StObject {
     * @see https://on.cypress.io/catalog-of-events#App-Events
     */
   @JSName("off")
-  def off_logadded(action: logColonadded, fn: js.Function2[/* log */ Any, /* interactive */ Boolean, Unit]): typings.cypress.Cypress.Cypress = js.native
+  def off_logadded(action: logColonadded, fn: js.Function2[/* attributes */ ObjectLike, /* log */ Any, Unit]): typings.cypress.Cypress.Cypress = js.native
   /**
     * Fires whenever a command's attributes changes.
     * This event is debounced to prevent it from firing too quickly and too often.
@@ -1241,7 +1229,7 @@ trait Cypress extends StObject {
     * @see https://on.cypress.io/catalog-of-events#App-Events
     */
   @JSName("off")
-  def off_logchanged(action: logColonchanged, fn: js.Function2[/* log */ Any, /* interactive */ Boolean, Unit]): typings.cypress.Cypress.Cypress = js.native
+  def off_logchanged(action: logColonchanged, fn: js.Function2[/* attributes */ ObjectLike, /* log */ Any, Unit]): typings.cypress.Cypress.Cypress = js.native
   /**
     * Fires whenever **Cypress** is scrolling your application.
     * This event is fired when Cypress is {% url 'waiting for and calculating
@@ -1464,7 +1452,7 @@ trait Cypress extends StObject {
   def on(action: windowColonconfirm, fn: js.Function1[/* text */ java.lang.String, `false` | Unit]): typings.cypress.Cypress.Cypress = js.native
   
   /**
-    * Load  files
+    * Load files
     * @private
     */
   def onSpecWindow(window: Window, specList: js.Array[js.Function0[js.Promise[Unit]] | java.lang.String]): Unit = js.native
@@ -1496,7 +1484,7 @@ trait Cypress extends StObject {
     * @see https://on.cypress.io/catalog-of-events#App-Events
     */
   @JSName("on")
-  def on_commandenqueued(action: commandColonenqueued, fn: js.Function1[/* command */ EnqueuedCommand, Unit]): typings.cypress.Cypress.Cypress = js.native
+  def on_commandenqueued(action: commandColonenqueued, fn: js.Function1[/* command */ EnqueuedCommandAttributes, Unit]): typings.cypress.Cypress.Cypress = js.native
   /**
     * Fires whenever a command begins its retrying routines.
     * This is called on the trailing edge after Cypress has internally
@@ -1546,7 +1534,7 @@ trait Cypress extends StObject {
     * @see https://on.cypress.io/catalog-of-events#App-Events
     */
   @JSName("on")
-  def on_logadded(action: logColonadded, fn: js.Function2[/* log */ Any, /* interactive */ Boolean, Unit]): typings.cypress.Cypress.Cypress = js.native
+  def on_logadded(action: logColonadded, fn: js.Function2[/* attributes */ ObjectLike, /* log */ Any, Unit]): typings.cypress.Cypress.Cypress = js.native
   /**
     * Fires whenever a command's attributes changes.
     * This event is debounced to prevent it from firing too quickly and too often.
@@ -1558,7 +1546,7 @@ trait Cypress extends StObject {
     * @see https://on.cypress.io/catalog-of-events#App-Events
     */
   @JSName("on")
-  def on_logchanged(action: logColonchanged, fn: js.Function2[/* log */ Any, /* interactive */ Boolean, Unit]): typings.cypress.Cypress.Cypress = js.native
+  def on_logchanged(action: logColonchanged, fn: js.Function2[/* attributes */ ObjectLike, /* log */ Any, Unit]): typings.cypress.Cypress.Cypress = js.native
   /**
     * Fires whenever **Cypress** is scrolling your application.
     * This event is fired when Cypress is {% url 'waiting for and calculating
@@ -1806,7 +1794,7 @@ trait Cypress extends StObject {
     * @see https://on.cypress.io/catalog-of-events#App-Events
     */
   @JSName("once")
-  def once_commandenqueued(action: commandColonenqueued, fn: js.Function1[/* command */ EnqueuedCommand, Unit]): typings.cypress.Cypress.Cypress = js.native
+  def once_commandenqueued(action: commandColonenqueued, fn: js.Function1[/* command */ EnqueuedCommandAttributes, Unit]): typings.cypress.Cypress.Cypress = js.native
   /**
     * Fires whenever a command begins its retrying routines.
     * This is called on the trailing edge after Cypress has internally
@@ -1856,7 +1844,7 @@ trait Cypress extends StObject {
     * @see https://on.cypress.io/catalog-of-events#App-Events
     */
   @JSName("once")
-  def once_logadded(action: logColonadded, fn: js.Function2[/* log */ Any, /* interactive */ Boolean, Unit]): typings.cypress.Cypress.Cypress = js.native
+  def once_logadded(action: logColonadded, fn: js.Function2[/* attributes */ ObjectLike, /* log */ Any, Unit]): typings.cypress.Cypress.Cypress = js.native
   /**
     * Fires whenever a command's attributes changes.
     * This event is debounced to prevent it from firing too quickly and too often.
@@ -1868,7 +1856,7 @@ trait Cypress extends StObject {
     * @see https://on.cypress.io/catalog-of-events#App-Events
     */
   @JSName("once")
-  def once_logchanged(action: logColonchanged, fn: js.Function2[/* log */ Any, /* interactive */ Boolean, Unit]): typings.cypress.Cypress.Cypress = js.native
+  def once_logchanged(action: logColonchanged, fn: js.Function2[/* attributes */ ObjectLike, /* log */ Any, Unit]): typings.cypress.Cypress.Cypress = js.native
   /**
     * Fires whenever **Cypress** is scrolling your application.
     * This event is fired when Cypress is {% url 'waiting for and calculating
@@ -2041,6 +2029,12 @@ trait Cypress extends StObject {
     *    Cypress.platform // "darwin"
     */
   var platform: java.lang.String = js.native
+  
+  /**
+    * Used to include dependencies within the cy.origin() callback
+    * @see https://on.cypress.io/origin
+    */
+  def require[T](id: java.lang.String): T = js.native
   
   /**
     * Internal class for session management.

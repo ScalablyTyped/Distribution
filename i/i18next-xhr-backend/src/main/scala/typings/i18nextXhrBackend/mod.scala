@@ -24,7 +24,7 @@ object mod {
     def this(services: Unit, options: BackendOptions) = this()
     
     /* CompleteClass */
-    override def init(services: Services, backendOptions: BackendOptions, i18nextOptions: InitOptions): Unit = js.native
+    override def init(services: Services, backendOptions: BackendOptions, i18nextOptions: InitOptions[js.Object]): Unit = js.native
     
     /* CompleteClass */
     override def read(language: String, namespace: String, callback: ReadCallback): Unit = js.native

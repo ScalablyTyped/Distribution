@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.MozOutlineRadiusTopright
+import typings.csstype.mod.Property.OutlineOffset
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,13 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `200` extends StObject {
   
   var value: js.UndefOr[
-    (MozOutlineRadiusTopright[Double | String]) | (js.Array[
+    (OutlineOffset[Double | String]) | (js.Array[
       (Extract[
         js.UndefOr[
-          (MozOutlineRadiusTopright[Double | String]) | (js.Array[NonNullable[js.UndefOr[MozOutlineRadiusTopright[Double | String]]]])
+          (OutlineOffset[Double | String]) | (js.Array[NonNullable[js.UndefOr[OutlineOffset[Double | String]]]])
         ], 
         String
-      ]) | (NonNullable[js.UndefOr[MozOutlineRadiusTopright[Double | String]]])
+      ]) | (NonNullable[js.UndefOr[OutlineOffset[Double | String]]])
     ])
   ] = js.native
 }

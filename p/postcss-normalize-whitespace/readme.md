@@ -1,7 +1,7 @@
 
 # Scala.js typings for postcss-normalize-whitespace
 
-Typings are for version 5.1.1
+Typings are for version 6.0.0
 
 ## Library description:
 Trim whitespace inside and around CSS rules & declarations.

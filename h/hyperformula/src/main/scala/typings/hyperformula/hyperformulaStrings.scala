@@ -56,6 +56,10 @@ object hyperformulaStrings {
   inline def arrayRowSeparator: arrayRowSeparator = "arrayRowSeparator".asInstanceOf[arrayRowSeparator]
   
   @js.native
+  sealed trait asc extends StObject
+  inline def asc: asc = "asc".asInstanceOf[asc]
+  
+  @js.native
   sealed trait binarySearchThreshold
     extends StObject
        with ConfigParamsList
@@ -104,6 +108,10 @@ object hyperformulaStrings {
     extends StObject
        with ConfigParamsList
   inline def decimalSeparator: decimalSeparator = "decimalSeparator".asInstanceOf[decimalSeparator]
+  
+  @js.native
+  sealed trait desc extends StObject
+  inline def desc: desc = "desc".asInstanceOf[desc]
   
   @js.native
   sealed trait evaluateNullToZero
@@ -188,6 +196,10 @@ object hyperformulaStrings {
   inline def lower: lower = "lower".asInstanceOf[lower]
   
   @js.native
+  sealed trait lowerBound extends StObject
+  inline def lowerBound: lowerBound = "lowerBound".asInstanceOf[lowerBound]
+  
+  @js.native
   sealed trait matchWholeCell
     extends StObject
        with ConfigParamsList
@@ -242,6 +254,10 @@ object hyperformulaStrings {
     extends StObject
        with NormalizationForm
   inline def nfkd: nfkd = "nfkd".asInstanceOf[nfkd]
+  
+  @js.native
+  sealed trait none extends StObject
+  inline def none: none = "none".asInstanceOf[none]
   
   @js.native
   sealed trait nullDate
@@ -314,6 +330,10 @@ object hyperformulaStrings {
   @js.native
   sealed trait upper extends StObject
   inline def upper: upper = "upper".asInstanceOf[upper]
+  
+  @js.native
+  sealed trait upperBound extends StObject
+  inline def upperBound: upperBound = "upperBound".asInstanceOf[upperBound]
   
   @js.native
   sealed trait useArrayArithmetic

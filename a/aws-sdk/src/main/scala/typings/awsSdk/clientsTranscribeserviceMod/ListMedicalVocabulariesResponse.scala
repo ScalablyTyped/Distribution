@@ -12,7 +12,7 @@ trait ListMedicalVocabulariesResponse extends StObject {
   var NextToken: js.UndefOr[typings.awsSdk.clientsTranscribeserviceMod.NextToken] = js.undefined
   
   /**
-    * Lists all custom medical vocabularies that have the status specified in your request. Vocabularies are ordered by creation date, with the newest vocabulary first.
+    * Lists all custom medical vocabularies that have the status specified in your request. Custom vocabularies are ordered by creation date, with the newest vocabulary first.
     */
   var Status: js.UndefOr[VocabularyState] = js.undefined
   

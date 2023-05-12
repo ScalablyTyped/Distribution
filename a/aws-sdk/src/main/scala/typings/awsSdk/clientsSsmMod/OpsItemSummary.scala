@@ -52,7 +52,7 @@ trait OpsItemSummary extends StObject {
   var OpsItemId: js.UndefOr[typings.awsSdk.clientsSsmMod.OpsItemId] = js.undefined
   
   /**
-    * The type of OpsItem. Currently, the only valid values are /aws/changerequest and /aws/issue.
+    * The type of OpsItem. Systems Manager supports the following types of OpsItems:    /aws/issue  This type of OpsItem is used for default OpsItems created by OpsCenter.     /aws/changerequest  This type of OpsItem is used by Change Manager for reviewing and approving or rejecting change requests.     /aws/insights  This type of OpsItem is used by OpsCenter for aggregating and reporting on duplicate OpsItems.   
     */
   var OpsItemType: js.UndefOr[typings.awsSdk.clientsSsmMod.OpsItemType] = js.undefined
   

@@ -2,8 +2,12 @@ package typings.downshift.mod
 
 import typings.react.mod.ClassAttributes
 import typings.react.mod.HTMLAttributes
+import typings.react.reactStrings._empty
+import typings.react.reactStrings.`use-credentials`
+import typings.react.reactStrings.anonymous
 import typings.react.reactStrings.environment
 import typings.react.reactStrings.user
+import typings.std.FormData
 import typings.std.HTMLButtonElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,7 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - scala.AnyRef because Inheritance from two classes. Inlined 
 - js.Any because Inheritance from two classes. Inlined 
 - js.Object because Inheritance from two classes. Inlined hasOwnProperty, propertyIsEnumerable, valueOf, toLocaleString, isPrototypeOf
-- typings.react.mod.AllHTMLAttributes because Inheritance from two classes. Inlined formAction, srcDoc, alt, coords, src, max, marginWidth, keyParams, required, selected, kind, charSet, srcLang, sizes, dateTime, multiple, height, rowSpan, as, method, content, start, httpEquiv, default, optimum, target, scope, sandbox, seamless, classID, noValidate, autoPlay, min, cols, capture, encType, wmode, wrap, keyType, frameBorder, media, preload, useMap, size, scoped, rel, maxLength, manifest, colSpan, data, formEncType, pattern, form, open, accept, step, defer, shape, value, cite, minLength, cellSpacing, label, readOnly, challenge, poster, name, formMethod, playsInline, marginHeight, htmlFor, allowTransparency, headers, width, summary, formTarget, rows, href, action, scrolling, low, acceptCharset, reversed, autoFocus, controls, loop, mediaGroup, download, crossOrigin, muted, async, integrity, high, `type`, checked, srcSet, formNoValidate, allowFullScreen, list, cellPadding, autoComplete, hrefLang, span
+- typings.react.mod.AllHTMLAttributes because Inheritance from two classes. Inlined formAction, srcDoc, alt, coords, src, max, marginWidth, keyParams, required, selected, kind, charSet, srcLang, sizes, dateTime, multiple, height, rowSpan, as, method, start, httpEquiv, default, optimum, target, scope, sandbox, seamless, classID, noValidate, autoPlay, min, cols, capture, encType, wmode, wrap, keyType, frameBorder, media, preload, useMap, size, scoped, maxLength, manifest, colSpan, data, formEncType, pattern, form, open, accept, step, defer, shape, value, cite, minLength, cellSpacing, label, readOnly, challenge, poster, name, formMethod, playsInline, marginHeight, htmlFor, allowTransparency, headers, width, summary, formTarget, rows, href, action, scrolling, low, acceptCharset, reversed, controls, loop, mediaGroup, download, crossOrigin, muted, async, integrity, high, `type`, checked, srcSet, formNoValidate, allowFullScreen, list, cellPadding, autoComplete, hrefLang, span
 - typings.react.mod.HTMLProps because Inheritance from two classes. Inlined 
 - typings.downshift.mod.GetToggleButtonPropsOptions because Inheritance from two classes. Inlined disabled */ trait UseSelectGetToggleButtonPropsOptions
   extends StObject
@@ -29,7 +33,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   
   var acceptCharset: js.UndefOr[String] = js.undefined
   
-  var action: js.UndefOr[String] = js.undefined
+  var action: js.UndefOr[String | (js.Function1[/* formData */ FormData, Unit])] = js.undefined
   
   var allowFullScreen: js.UndefOr[Boolean] = js.undefined
   
@@ -42,8 +46,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   var async: js.UndefOr[Boolean] = js.undefined
   
   var autoComplete: js.UndefOr[String] = js.undefined
-  
-  var autoFocus: js.UndefOr[Boolean] = js.undefined
   
   var autoPlay: js.UndefOr[Boolean] = js.undefined
   
@@ -67,13 +69,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   
   var cols: js.UndefOr[Double] = js.undefined
   
-  var content: js.UndefOr[String] = js.undefined
-  
   var controls: js.UndefOr[Boolean] = js.undefined
   
   var coords: js.UndefOr[String] = js.undefined
   
-  var crossOrigin: js.UndefOr[String] = js.undefined
+  var crossOrigin: js.UndefOr[anonymous | `use-credentials` | _empty] = js.undefined
   
   var data: js.UndefOr[String] = js.undefined
   
@@ -89,7 +89,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   
   var form: js.UndefOr[String] = js.undefined
   
-  var formAction: js.UndefOr[String] = js.undefined
+  var formAction: js.UndefOr[String | (js.Function1[/* formData */ FormData, Unit])] = js.undefined
   
   var formEncType: js.UndefOr[String] = js.undefined
   
@@ -173,8 +173,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   
   var readOnly: js.UndefOr[Boolean] = js.undefined
   
-  var rel: js.UndefOr[String] = js.undefined
-  
   var required: js.UndefOr[Boolean] = js.undefined
   
   var reversed: js.UndefOr[Boolean] = js.undefined
@@ -249,7 +247,9 @@ object UseSelectGetToggleButtonPropsOptions {
     
     inline def setAcceptUndefined: Self = StObject.set(x, "accept", js.undefined)
     
-    inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: String | (js.Function1[/* formData */ FormData, Unit])): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    
+    inline def setActionFunction1(value: /* formData */ FormData => Unit): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
     
     inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
@@ -276,10 +276,6 @@ object UseSelectGetToggleButtonPropsOptions {
     inline def setAutoComplete(value: String): Self = StObject.set(x, "autoComplete", value.asInstanceOf[js.Any])
     
     inline def setAutoCompleteUndefined: Self = StObject.set(x, "autoComplete", js.undefined)
-    
-    inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
-    
-    inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
     
     inline def setAutoPlay(value: Boolean): Self = StObject.set(x, "autoPlay", value.asInstanceOf[js.Any])
     
@@ -325,10 +321,6 @@ object UseSelectGetToggleButtonPropsOptions {
     
     inline def setColsUndefined: Self = StObject.set(x, "cols", js.undefined)
     
-    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
-    
-    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
-    
     inline def setControls(value: Boolean): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
     
     inline def setControlsUndefined: Self = StObject.set(x, "controls", js.undefined)
@@ -337,7 +329,7 @@ object UseSelectGetToggleButtonPropsOptions {
     
     inline def setCoordsUndefined: Self = StObject.set(x, "coords", js.undefined)
     
-    inline def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+    inline def setCrossOrigin(value: anonymous | `use-credentials` | _empty): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
     
     inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
     
@@ -371,7 +363,9 @@ object UseSelectGetToggleButtonPropsOptions {
     
     inline def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
     
-    inline def setFormAction(value: String): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+    inline def setFormAction(value: String | (js.Function1[/* formData */ FormData, Unit])): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+    
+    inline def setFormActionFunction1(value: /* formData */ FormData => Unit): Self = StObject.set(x, "formAction", js.Any.fromFunction1(value))
     
     inline def setFormActionUndefined: Self = StObject.set(x, "formAction", js.undefined)
     
@@ -540,10 +534,6 @@ object UseSelectGetToggleButtonPropsOptions {
     inline def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
     inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
-    
-    inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
-    
-    inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
     
     inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     

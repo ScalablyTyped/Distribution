@@ -2,11 +2,10 @@ package typings.nightwatch.mod
 
 import typings.nightwatch.anon.AwaitableNightwatchAPINigAcceptAlert
 import typings.nightwatch.anon.AwaitableNightwatchAPINigActions
+import typings.nightwatch.anon.AwaitableNightwatchAPINigAppium
 import typings.nightwatch.anon.AwaitableNightwatchAPINigAssert
 import typings.nightwatch.anon.AwaitableNightwatchAPINigAxeInject
 import typings.nightwatch.anon.AwaitableNightwatchAPINigAxeRun
-import typings.nightwatch.anon.AwaitableNightwatchAPINigBack
-import typings.nightwatch.anon.AwaitableNightwatchAPINigBaseUrl
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -108,39 +107,37 @@ trait NightwatchCommonAssertions extends StObject {
     *    };
     * ```
     */
-  def cssProperty(selector: Definition, cssProperty: String, expected: String): AwaitableNightwatchAPINigActions = js.native
-  def cssProperty(selector: Definition, cssProperty: String, expected: String, msg: String): AwaitableNightwatchAPINigActions = js.native
-  def cssProperty(selector: Definition, cssProperty: String, expected: Double): AwaitableNightwatchAPINigActions = js.native
-  def cssProperty(selector: Definition, cssProperty: String, expected: Double, msg: String): AwaitableNightwatchAPINigActions = js.native
+  def cssProperty(selector: Definition, cssProperty: String, expected: String): AwaitableNightwatchAPINigAcceptAlert = js.native
+  def cssProperty(selector: Definition, cssProperty: String, expected: String, msg: String): AwaitableNightwatchAPINigAcceptAlert = js.native
   
   /**
     * Checks if the specified DOM property of a given element has the expected value.
     * For all the available DOM element properties, consult the [Element doc at MDN](https://developer.mozilla.org/en-US/docs/Web/API/element).
     * Several properties can be specified (either as an array or command-separated list). Nightwatch will check each one for presence.
     */
-  def domPropertyContains(selector: Definition, domProperty: String, expected: String): AwaitableNightwatchAPINigAssert = js.native
-  def domPropertyContains(selector: Definition, domProperty: String, expected: String, msg: String): AwaitableNightwatchAPINigAssert = js.native
-  def domPropertyContains(selector: Definition, domProperty: String, expected: Double): AwaitableNightwatchAPINigAssert = js.native
-  def domPropertyContains(selector: Definition, domProperty: String, expected: Double, msg: String): AwaitableNightwatchAPINigAssert = js.native
+  def domPropertyContains(selector: Definition, domProperty: String, expected: String): AwaitableNightwatchAPINigActions = js.native
+  def domPropertyContains(selector: Definition, domProperty: String, expected: String, msg: String): AwaitableNightwatchAPINigActions = js.native
+  def domPropertyContains(selector: Definition, domProperty: String, expected: Double): AwaitableNightwatchAPINigActions = js.native
+  def domPropertyContains(selector: Definition, domProperty: String, expected: Double, msg: String): AwaitableNightwatchAPINigActions = js.native
   
   /**
     * Checks if the specified DOM property of a given element has the expected value.
     * For all the available DOM element properties, consult the [Element doc at MDN](https://developer.mozilla.org/en-US/docs/Web/API/element).
     * If the result value is JSON object or array, a deep equality comparison will be performed.
     */
-  def domPropertyEquals(selector: Definition, domProperty: String, expected: String): AwaitableNightwatchAPINigAssert = js.native
-  def domPropertyEquals(selector: Definition, domProperty: String, expected: String, msg: String): AwaitableNightwatchAPINigAssert = js.native
-  def domPropertyEquals(selector: Definition, domProperty: String, expected: Double): AwaitableNightwatchAPINigAssert = js.native
-  def domPropertyEquals(selector: Definition, domProperty: String, expected: Double, msg: String): AwaitableNightwatchAPINigAssert = js.native
+  def domPropertyEquals(selector: Definition, domProperty: String, expected: String): AwaitableNightwatchAPINigActions = js.native
+  def domPropertyEquals(selector: Definition, domProperty: String, expected: String, msg: String): AwaitableNightwatchAPINigActions = js.native
+  def domPropertyEquals(selector: Definition, domProperty: String, expected: Double): AwaitableNightwatchAPINigActions = js.native
+  def domPropertyEquals(selector: Definition, domProperty: String, expected: Double, msg: String): AwaitableNightwatchAPINigActions = js.native
   
   /**
     * Check if specified DOM property value of a given element matches a regex.
     * For all the available DOM element properties, consult the [Element doc at MDN](https://developer.mozilla.org/en-US/docs/Web/API/element).
     */
-  def domPropertyMatches(selector: Definition, domProperty: String, expected: String): AwaitableNightwatchAPINigAssert = js.native
-  def domPropertyMatches(selector: Definition, domProperty: String, expected: String, msg: String): AwaitableNightwatchAPINigAssert = js.native
-  def domPropertyMatches(selector: Definition, domProperty: String, expected: js.RegExp): AwaitableNightwatchAPINigAssert = js.native
-  def domPropertyMatches(selector: Definition, domProperty: String, expected: js.RegExp, msg: String): AwaitableNightwatchAPINigAssert = js.native
+  def domPropertyMatches(selector: Definition, domProperty: String, expected: String): AwaitableNightwatchAPINigActions = js.native
+  def domPropertyMatches(selector: Definition, domProperty: String, expected: String, msg: String): AwaitableNightwatchAPINigActions = js.native
+  def domPropertyMatches(selector: Definition, domProperty: String, expected: js.RegExp): AwaitableNightwatchAPINigActions = js.native
+  def domPropertyMatches(selector: Definition, domProperty: String, expected: js.RegExp, msg: String): AwaitableNightwatchAPINigActions = js.native
   
   /**
     * Checks if the given element does not exists in the DOM.
@@ -154,8 +151,8 @@ trait NightwatchCommonAssertions extends StObject {
     *
     * @deprecated In favour of `assert.not.elementPresent()`.
     */
-  def elementNotPresent(selector: Definition): AwaitableNightwatchAPINigBaseUrl = js.native
-  def elementNotPresent(selector: Definition, msg: String): AwaitableNightwatchAPINigBaseUrl = js.native
+  def elementNotPresent(selector: Definition): AwaitableNightwatchAPINigAxeRun = js.native
+  def elementNotPresent(selector: Definition, msg: String): AwaitableNightwatchAPINigAxeRun = js.native
   
   /**
     * Checks if the given element exists in the DOM.
@@ -166,8 +163,8 @@ trait NightwatchCommonAssertions extends StObject {
     *    };
     * ```
     */
-  def elementPresent(selector: Definition): AwaitableNightwatchAPINigBaseUrl = js.native
-  def elementPresent(selector: Definition, msg: String): AwaitableNightwatchAPINigBaseUrl = js.native
+  def elementPresent(selector: Definition): AwaitableNightwatchAPINigAxeRun = js.native
+  def elementPresent(selector: Definition, msg: String): AwaitableNightwatchAPINigAxeRun = js.native
   
   /**
     * Checks if the number of elements specified by a selector is equal to a given value.
@@ -180,8 +177,8 @@ trait NightwatchCommonAssertions extends StObject {
     * }
     *
     */
-  def elementsCount(selector: Definition, count: Double): AwaitableNightwatchAPINigBack = js.native
-  def elementsCount(selector: Definition, count: Double, msg: String): AwaitableNightwatchAPINigBack = js.native
+  def elementsCount(selector: Definition, count: Double): AwaitableNightwatchAPINigAxeInject = js.native
+  def elementsCount(selector: Definition, count: Double, msg: String): AwaitableNightwatchAPINigAxeInject = js.native
   
   /**
     * Checks if the given element is enabled (as indicated by the 'disabled' attribute).
@@ -193,8 +190,8 @@ trait NightwatchCommonAssertions extends StObject {
     *    browser.assert.enabled({selector: '.should_be_enabled', suppressNotFoundErrors: true});
     *  };
     */
-  def enabled(selector: Definition): AwaitableNightwatchAPINigAxeInject = js.native
-  def enabled(selector: Definition, message: String): AwaitableNightwatchAPINigAxeInject = js.native
+  def enabled(selector: Definition): AwaitableNightwatchAPINigAppium = js.native
+  def enabled(selector: Definition, message: String): AwaitableNightwatchAPINigAppium = js.native
   
   /**
     * Checks if the given element contains the specified DOM attribute.
@@ -210,8 +207,8 @@ trait NightwatchCommonAssertions extends StObject {
     * ```
     *
     */
-  def hasAttribute(selector: Definition, expectedAttribute: String): AwaitableNightwatchAPINigAxeRun = js.native
-  def hasAttribute(selector: Definition, expectedAttribute: String, msg: String): AwaitableNightwatchAPINigAxeRun = js.native
+  def hasAttribute(selector: Definition, expectedAttribute: String): AwaitableNightwatchAPINigAssert = js.native
+  def hasAttribute(selector: Definition, expectedAttribute: String, msg: String): AwaitableNightwatchAPINigAssert = js.native
   
   /**
     * Checks if the given element has the specified CSS class.
@@ -245,8 +242,8 @@ trait NightwatchCommonAssertions extends StObject {
     *
     * @deprecated In favour of `assert.not.visible()`.
     */
-  def hidden(selector: Definition): AwaitableNightwatchAPINigAxeInject = js.native
-  def hidden(selector: Definition, msg: String): AwaitableNightwatchAPINigAxeInject = js.native
+  def hidden(selector: Definition): AwaitableNightwatchAPINigAppium = js.native
+  def hidden(selector: Definition, msg: String): AwaitableNightwatchAPINigAppium = js.native
   
   /**
     * Checks if the given element is selected.
@@ -258,8 +255,8 @@ trait NightwatchCommonAssertions extends StObject {
     *    browser.assert.selected({selector: '.should_be_selected', suppressNotFoundErrors: true});
     *  };
     */
-  def selected(selector: Definition): AwaitableNightwatchAPINigAxeInject = js.native
-  def selected(selector: Definition, message: String): AwaitableNightwatchAPINigAxeInject = js.native
+  def selected(selector: Definition): AwaitableNightwatchAPINigAppium = js.native
+  def selected(selector: Definition, message: String): AwaitableNightwatchAPINigAppium = js.native
   
   /**
     * Checks if the given element contains the specified text.
@@ -453,6 +450,6 @@ trait NightwatchCommonAssertions extends StObject {
     *    };
     * ```
     */
-  def visible(selector: Definition): AwaitableNightwatchAPINigAxeInject = js.native
-  def visible(selector: Definition, message: String): AwaitableNightwatchAPINigAxeInject = js.native
+  def visible(selector: Definition): AwaitableNightwatchAPINigAppium = js.native
+  def visible(selector: Definition, message: String): AwaitableNightwatchAPINigAppium = js.native
 }

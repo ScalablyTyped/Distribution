@@ -12,20 +12,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Publish extends StObject {
   
-  def publish(path: String): js.Promise[
+  def publish(value: String): js.Promise[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_index.PublishResult */ Any
   ] = js.native
   def publish(
-    path: String,
+    value: String,
     options: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_index.PublishOptions */ Any) & HTTPClientExtraOptions
   ): js.Promise[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_index.PublishResult */ Any
   ] = js.native
-  def publish(path: CID[Any, Double, Double, Version]): js.Promise[
+  def publish(value: CID[Any, Double, Double, Version]): js.Promise[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_index.PublishResult */ Any
   ] = js.native
   def publish(
-    path: CID[Any, Double, Double, Version],
+    value: CID[Any, Double, Double, Version],
     options: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_index.PublishOptions */ Any) & HTTPClientExtraOptions
   ): js.Promise[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_index.PublishResult */ Any
@@ -33,14 +33,14 @@ trait Publish extends StObject {
   
   var pubsub: Cancel = js.native
   
-  def resolve(path: String): AsyncIterable[String] = js.native
+  def resolve(value: String): AsyncIterable[String] = js.native
   def resolve(
-    path: String,
+    value: String,
     options: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_index.ResolveOptions */ Any) & HTTPClientExtraOptions
   ): AsyncIterable[String] = js.native
-  def resolve(path: PeerId): AsyncIterable[String] = js.native
+  def resolve(value: PeerId): AsyncIterable[String] = js.native
   def resolve(
-    path: PeerId,
+    value: PeerId,
     options: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_index.ResolveOptions */ Any) & HTTPClientExtraOptions
   ): AsyncIterable[String] = js.native
 }

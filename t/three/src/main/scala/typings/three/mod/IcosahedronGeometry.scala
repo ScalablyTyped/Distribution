@@ -7,8 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("three", "IcosahedronGeometry")
 @js.native
 /**
-  * @param [radius=1]
-  * @param [detail=0]
+  * Create a new instance of {@link IcosahedronGeometry}
+  * @param radius Expects a `Float`. Default `1`
+  * @param detail Setting this to a value greater than 0 adds more vertices making it no longer an icosahedron.
+  *               When detail is greater than 1, it's effectively a sphere. Expects a `Integer`. Default `0`
   */
 open class IcosahedronGeometry ()
   extends typings.three.srcThreeMod.IcosahedronGeometry {
@@ -23,5 +25,6 @@ object IcosahedronGeometry {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def fromJSON(data: Any): typings.three.srcGeometriesIcosahedronGeometryMod.IcosahedronGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(data.asInstanceOf[js.Any]).asInstanceOf[typings.three.srcGeometriesIcosahedronGeometryMod.IcosahedronGeometry]
+  /** @internal */
+  inline def fromJSON(data: js.Object): typings.three.srcGeometriesIcosahedronGeometryMod.IcosahedronGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(data.asInstanceOf[js.Any]).asInstanceOf[typings.three.srcGeometriesIcosahedronGeometryMod.IcosahedronGeometry]
 }

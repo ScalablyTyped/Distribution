@@ -1,7 +1,5 @@
 package typings.ckeditorCkeditor5Indent
 
-import typings.ckeditorCkeditor5Indent.anon.TypeofIndentEditing
-import typings.ckeditorCkeditor5Indent.anon.TypeofIndentUI
 import typings.std.Plugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,39 +12,6 @@ object srcIndentMod {
   open class default ()
     extends StObject
        with Plugin
-  /* static members */
-  object default {
-    
-    @JSImport("@ckeditor/ckeditor5-indent/src/indent", "default.pluginName")
-    @js.native
-    val pluginName: typings.ckeditorCkeditor5Indent.ckeditorCkeditor5IndentStrings.Indent = js.native
-    
-    @JSImport("@ckeditor/ckeditor5-indent/src/indent", "default.requires")
-    @js.native
-    val requires: js.Tuple2[TypeofIndentEditing, TypeofIndentUI] = js.native
-  }
   
   type Indent = Plugin
-  
-  /* augmented module */
-  object ckeditorCkeditor5CoreSrcPlugincollectionAugmentingMod {
-    
-    trait Plugins extends StObject {
-      
-      var Indent: typings.ckeditorCkeditor5Indent.srcIndentMod.Indent
-    }
-    object Plugins {
-      
-      inline def apply(Indent: Indent): Plugins = {
-        val __obj = js.Dynamic.literal(Indent = Indent.asInstanceOf[js.Any])
-        __obj.asInstanceOf[Plugins]
-      }
-      
-      @scala.inline
-      implicit open class MutableBuilder[Self <: Plugins] (val x: Self) extends AnyVal {
-        
-        inline def setIndent(value: Indent): Self = StObject.set(x, "Indent", value.asInstanceOf[js.Any])
-      }
-    }
-  }
 }

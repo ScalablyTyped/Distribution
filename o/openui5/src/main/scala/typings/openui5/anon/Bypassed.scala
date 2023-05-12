@@ -15,7 +15,7 @@ trait Bypassed extends StObject {
   /**
     * Since 1.28. Settings which are used when no route of the router is matched after a hash change.
     */
-  var bypassed: js.UndefOr[`29`] = js.undefined
+  var bypassed: js.UndefOr[`37`] = js.undefined
 }
 object Bypassed {
   
@@ -31,7 +31,7 @@ object Bypassed {
     
     inline def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
     
-    inline def setBypassed(value: `29`): Self = StObject.set(x, "bypassed", value.asInstanceOf[js.Any])
+    inline def setBypassed(value: `37`): Self = StObject.set(x, "bypassed", value.asInstanceOf[js.Any])
     
     inline def setBypassedUndefined: Self = StObject.set(x, "bypassed", js.undefined)
   }

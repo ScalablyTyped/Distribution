@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "ipfs-cli" : "0.15.0"
+      "ipfs-cli" : "0.16.0"
     }
   ],
   "test-dependencies" : [
     {
-      "ipfs-cli" : "0.15.0"
+      "ipfs-cli" : "0.16.0"
     }
   ],
   "compile-devDependencies" : [

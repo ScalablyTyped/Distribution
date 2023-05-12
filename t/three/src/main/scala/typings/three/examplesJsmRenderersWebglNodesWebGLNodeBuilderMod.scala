@@ -29,27 +29,7 @@ object examplesJsmRenderersWebglNodesWebGLNodeBuilderMod {
     
     def getAttributes(shaderStage: String): String = js.native
     
-    def getCubeTexture(texturePropert: String, uvSnippet: String, shaderStage: NodeShaderStageOption): String = js.native
-    
-    def getCubeTextureBias(textureProperty: String, uvSnippet: String, biasSnippet: String): String = js.native
-    
-    def getCubeTextureLevel(
-      textureProperty: String,
-      uvSnippet: String,
-      biasSnippet: String,
-      shaderStage: NodeShaderStageOption
-    ): String = js.native
-    
     def getSlot(shaderStage: String, name: String): typings.three.examplesJsmNodesCoreNodeMod.default = js.native
-    
-    def getTextureBias(textureProperty: String, uvSnippet: String, biasSnippet: String): String = js.native
-    
-    def getTextureLevel(
-      textureProperty: String,
-      uvSnippet: String,
-      biasSnippet: String,
-      shaderStage: NodeShaderStageOption
-    ): String = js.native
     
     def getUniforms(shaderStage: String): String = js.native
     

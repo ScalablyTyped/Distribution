@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@libp2p/interface-keychain" : "1.0.4"
+      "@libp2p/interface-keychain" : "2.0.5"
     }
   ],
   "test-dependencies" : [
     {
-      "@libp2p/interface-keychain" : "1.0.4"
+      "@libp2p/interface-keychain" : "2.0.5"
     }
   ],
   "compile-devDependencies" : [

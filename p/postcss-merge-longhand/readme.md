@@ -1,7 +1,7 @@
 
 # Scala.js typings for postcss-merge-longhand
 
-Typings are for version 5.1.7
+Typings are for version 6.0.0
 
 ## Library description:
 Merge longhand properties into shorthand with PostCSS.

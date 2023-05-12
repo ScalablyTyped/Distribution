@@ -17,14 +17,19 @@ trait MergeShardsInput extends StObject {
   var ShardToMerge: ShardId
   
   /**
+    * The ARN of the stream.
+    */
+  var StreamARN: js.UndefOr[typings.awsSdk.clientsKinesisMod.StreamARN] = js.undefined
+  
+  /**
     * The name of the stream for the merge.
     */
-  var StreamName: typings.awsSdk.clientsKinesisMod.StreamName
+  var StreamName: js.UndefOr[typings.awsSdk.clientsKinesisMod.StreamName] = js.undefined
 }
 object MergeShardsInput {
   
-  inline def apply(AdjacentShardToMerge: ShardId, ShardToMerge: ShardId, StreamName: StreamName): MergeShardsInput = {
-    val __obj = js.Dynamic.literal(AdjacentShardToMerge = AdjacentShardToMerge.asInstanceOf[js.Any], ShardToMerge = ShardToMerge.asInstanceOf[js.Any], StreamName = StreamName.asInstanceOf[js.Any])
+  inline def apply(AdjacentShardToMerge: ShardId, ShardToMerge: ShardId): MergeShardsInput = {
+    val __obj = js.Dynamic.literal(AdjacentShardToMerge = AdjacentShardToMerge.asInstanceOf[js.Any], ShardToMerge = ShardToMerge.asInstanceOf[js.Any])
     __obj.asInstanceOf[MergeShardsInput]
   }
   
@@ -35,6 +40,12 @@ object MergeShardsInput {
     
     inline def setShardToMerge(value: ShardId): Self = StObject.set(x, "ShardToMerge", value.asInstanceOf[js.Any])
     
+    inline def setStreamARN(value: StreamARN): Self = StObject.set(x, "StreamARN", value.asInstanceOf[js.Any])
+    
+    inline def setStreamARNUndefined: Self = StObject.set(x, "StreamARN", js.undefined)
+    
     inline def setStreamName(value: StreamName): Self = StObject.set(x, "StreamName", value.asInstanceOf[js.Any])
+    
+    inline def setStreamNameUndefined: Self = StObject.set(x, "StreamName", js.undefined)
   }
 }

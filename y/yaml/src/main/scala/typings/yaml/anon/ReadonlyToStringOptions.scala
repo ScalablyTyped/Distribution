@@ -30,6 +30,8 @@ trait ReadonlyToStringOptions extends StObject {
   
   val falseStr: js.UndefOr[String] = js.undefined
   
+  val flowCollectionPadding: js.UndefOr[Boolean] = js.undefined
+  
   val indent: js.UndefOr[Double] = js.undefined
   
   val indentSeq: js.UndefOr[Boolean] = js.undefined
@@ -97,6 +99,10 @@ object ReadonlyToStringOptions {
     inline def setFalseStr(value: String): Self = StObject.set(x, "falseStr", value.asInstanceOf[js.Any])
     
     inline def setFalseStrUndefined: Self = StObject.set(x, "falseStr", js.undefined)
+    
+    inline def setFlowCollectionPadding(value: Boolean): Self = StObject.set(x, "flowCollectionPadding", value.asInstanceOf[js.Any])
+    
+    inline def setFlowCollectionPaddingUndefined: Self = StObject.set(x, "flowCollectionPadding", js.undefined)
     
     inline def setIndent(value: Double): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
     

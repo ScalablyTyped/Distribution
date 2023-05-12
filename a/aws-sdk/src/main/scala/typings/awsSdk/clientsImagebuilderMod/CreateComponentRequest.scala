@@ -22,12 +22,12 @@ trait CreateComponentRequest extends StObject {
   var data: js.UndefOr[InlineComponentData] = js.undefined
   
   /**
-    * The description of the component. Describes the contents of the component.
+    * Describes the contents of the component.
     */
   var description: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * The ID of the KMS key that should be used to encrypt this component.
+    * The ID of the KMS key that is used to encrypt this component.
     */
   var kmsKeyId: js.UndefOr[NonEmptyString] = js.undefined
   
@@ -37,7 +37,7 @@ trait CreateComponentRequest extends StObject {
   var name: ResourceName
   
   /**
-    * The platform of the component.
+    * The operating system platform of the component.
     */
   var platform: Platform
   
@@ -47,12 +47,12 @@ trait CreateComponentRequest extends StObject {
   var semanticVersion: VersionNumber
   
   /**
-    *  The operating system (OS) version supported by the component. If the OS information is available, a prefix match is performed against the base image OS version during image recipe creation.
+    * The operating system (OS) version supported by the component. If the OS information is available, a prefix match is performed against the base image OS version during image recipe creation.
     */
   var supportedOsVersions: js.UndefOr[OsVersionList] = js.undefined
   
   /**
-    * The tags of the component.
+    * The tags that apply to the component.
     */
   var tags: js.UndefOr[TagMap] = js.undefined
   

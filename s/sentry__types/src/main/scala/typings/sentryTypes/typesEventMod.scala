@@ -1,8 +1,9 @@
 package typings.sentryTypes
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.sentryTypes.anon.Changes
+import typings.sentryTypes.anon.Source
 import typings.sentryTypes.anon.Values
+import typings.sentryTypes.anon.ValuesArray
 import typings.sentryTypes.sentryTypesStrings.transaction
 import typings.sentryTypes.typesAttachmentMod.Attachment
 import typings.sentryTypes.typesBreadcrumbMod.Breadcrumb
@@ -24,6 +25,28 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesEventMod {
+  
+  trait ErrorEvent
+    extends StObject
+       with Event {
+    
+    @JSName("type")
+    var type_ErrorEvent: Unit
+  }
+  object ErrorEvent {
+    
+    inline def apply(`type`: Unit): ErrorEvent = {
+      val __obj = js.Dynamic.literal()
+      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ErrorEvent]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorEvent] (val x: Self) extends AnyVal {
+      
+      inline def setType(value: Unit): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    }
+  }
   
   trait Event extends StObject {
     
@@ -73,11 +96,13 @@ object typesEventMod {
     
     var tags: js.UndefOr[StringDictionary[Primitive]] = js.undefined
     
+    var threads: js.UndefOr[ValuesArray] = js.undefined
+    
     var timestamp: js.UndefOr[Double] = js.undefined
     
     var transaction: js.UndefOr[String] = js.undefined
     
-    var transaction_info: js.UndefOr[Changes] = js.undefined
+    var transaction_info: js.UndefOr[Source] = js.undefined
     
     var `type`: js.UndefOr[EventType] = js.undefined
     
@@ -191,6 +216,10 @@ object typesEventMod {
       
       inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
+      inline def setThreads(value: ValuesArray): Self = StObject.set(x, "threads", value.asInstanceOf[js.Any])
+      
+      inline def setThreadsUndefined: Self = StObject.set(x, "threads", js.undefined)
+      
       inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
       
       inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
@@ -199,7 +228,7 @@ object typesEventMod {
       
       inline def setTransactionUndefined: Self = StObject.set(x, "transaction", js.undefined)
       
-      inline def setTransaction_info(value: Changes): Self = StObject.set(x, "transaction_info", value.asInstanceOf[js.Any])
+      inline def setTransaction_info(value: Source): Self = StObject.set(x, "transaction_info", value.asInstanceOf[js.Any])
       
       inline def setTransaction_infoUndefined: Self = StObject.set(x, "transaction_info", js.undefined)
       
@@ -223,7 +252,9 @@ object typesEventMod {
     
     var event_id: js.UndefOr[String] = js.undefined
     
-    var originalException: js.UndefOr[js.Error | String | Null] = js.undefined
+    var integrations: js.UndefOr[js.Array[String]] = js.undefined
+    
+    var originalException: js.UndefOr[Any] = js.undefined
     
     var syntheticException: js.UndefOr[js.Error | Null] = js.undefined
   }
@@ -257,9 +288,13 @@ object typesEventMod {
       
       inline def setEvent_idUndefined: Self = StObject.set(x, "event_id", js.undefined)
       
-      inline def setOriginalException(value: js.Error | String): Self = StObject.set(x, "originalException", value.asInstanceOf[js.Any])
+      inline def setIntegrations(value: js.Array[String]): Self = StObject.set(x, "integrations", value.asInstanceOf[js.Any])
       
-      inline def setOriginalExceptionNull: Self = StObject.set(x, "originalException", null)
+      inline def setIntegrationsUndefined: Self = StObject.set(x, "integrations", js.undefined)
+      
+      inline def setIntegrationsVarargs(value: String*): Self = StObject.set(x, "integrations", js.Array(value*))
+      
+      inline def setOriginalException(value: Any): Self = StObject.set(x, "originalException", value.asInstanceOf[js.Any])
       
       inline def setOriginalExceptionUndefined: Self = StObject.set(x, "originalException", js.undefined)
       
@@ -271,5 +306,35 @@ object typesEventMod {
     }
   }
   
-  type EventType = transaction
+  /* Rewritten from type alias, can be one of: 
+    - typings.sentryTypes.sentryTypesStrings.transaction
+    - typings.sentryTypes.sentryTypesStrings.profile
+    - typings.sentryTypes.sentryTypesStrings.replay_event
+    - scala.Unit
+  */
+  type EventType = js.UndefOr[_EventType]
+  
+  trait TransactionEvent
+    extends StObject
+       with Event {
+    
+    @JSName("type")
+    var type_TransactionEvent: transaction
+  }
+  object TransactionEvent {
+    
+    inline def apply(): TransactionEvent = {
+      val __obj = js.Dynamic.literal()
+      __obj.updateDynamic("type")("transaction")
+      __obj.asInstanceOf[TransactionEvent]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransactionEvent] (val x: Self) extends AnyVal {
+      
+      inline def setType(value: transaction): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait _EventType extends StObject
 }

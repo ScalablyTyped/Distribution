@@ -1,7 +1,7 @@
 
 # Scala.js typings for lz-string
 
-Typings are for version 1.4.4
+Typings are for version 1.5.0
 
 ## Library description:
 LZ-based compression algorithm

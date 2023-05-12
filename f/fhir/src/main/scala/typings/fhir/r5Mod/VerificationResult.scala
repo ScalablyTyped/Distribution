@@ -1,5 +1,6 @@
 package typings.fhir.r5Mod
 
+import typings.fhir.fhirStrings.`entered-in-error`
 import typings.fhir.fhirStrings.`in-process`
 import typings.fhir.fhirStrings.`req-revalid`
 import typings.fhir.fhirStrings.`reval-fail`
@@ -67,7 +68,7 @@ trait VerificationResult
   /**
     * The validation status of the target (attested; validated; in process; requires revalidation; validation failed; revalidation failed).
     */
-  var status: attested | validated | `in-process` | `req-revalid` | `val-fail` | `reval-fail`
+  var status: attested | validated | `in-process` | `req-revalid` | `val-fail` | `reval-fail` | `entered-in-error`
   
   /**
     * When the validation status was updated.
@@ -101,7 +102,9 @@ trait VerificationResult
 }
 object VerificationResult {
   
-  inline def apply(status: attested | validated | `in-process` | `req-revalid` | `val-fail` | `reval-fail`): VerificationResult = {
+  inline def apply(
+    status: attested | validated | `in-process` | `req-revalid` | `val-fail` | `reval-fail` | `entered-in-error`
+  ): VerificationResult = {
     val __obj = js.Dynamic.literal(resourceType = "VerificationResult", status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[VerificationResult]
   }
@@ -141,7 +144,9 @@ object VerificationResult {
     
     inline def setResourceType(value: typings.fhir.fhirStrings.VerificationResult): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
-    inline def setStatus(value: attested | validated | `in-process` | `req-revalid` | `val-fail` | `reval-fail`): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(
+      value: attested | validated | `in-process` | `req-revalid` | `val-fail` | `reval-fail` | `entered-in-error`
+    ): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
     inline def setStatusDate(value: String): Self = StObject.set(x, "statusDate", value.asInstanceOf[js.Any])
     

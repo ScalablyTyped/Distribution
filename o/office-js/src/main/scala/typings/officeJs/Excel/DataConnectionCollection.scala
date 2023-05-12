@@ -7,7 +7,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * Represents a collection of all the data connections that are part of the workbook or worksheet.
+  * Represents a collection of all the data connections that are part of the workbook.
   *
   * @remarks
   * [Api set: ExcelApi 1.7]

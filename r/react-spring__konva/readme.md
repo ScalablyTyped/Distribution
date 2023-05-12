@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-spring__konva
 
-Typings are for version 9.5.4
+Typings are for version 9.7.2
 
 ## Library description:
 [`konva`](https://github.com/konvajs/konva) support

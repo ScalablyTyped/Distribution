@@ -6,29 +6,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Y extends StObject {
   
-  /** Padding on the (relative) bottom side of this axis label. */
-  var bottom: Double
+  var angle: Any
   
-  /** Padding on the (relative) top side of this axis label. */
-  var top: Double
+  var x: Any
   
-  /** This is a shorthand for defining top/bottom to the same values. */
-  var y: Double
+  var y: Any
 }
 object Y {
   
-  inline def apply(bottom: Double, top: Double, y: Double): Y = {
-    val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+  inline def apply(angle: Any, x: Any, y: Any): Y = {
+    val __obj = js.Dynamic.literal(angle = angle.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     __obj.asInstanceOf[Y]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: Y] (val x: Self) extends AnyVal {
     
-    inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+    inline def setAngle(value: Any): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     
-    inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    inline def setX(value: Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Any): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

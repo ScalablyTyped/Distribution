@@ -29,7 +29,7 @@ trait FoldingRange extends StObject {
   /**
     * Describes the kind of the folding range such as `comment' or 'region'. The kind
     * is used to categorize folding ranges and used by commands like 'Fold all comments'.
-    * See [FoldingRangeKind](#FoldingRangeKind) for an enumeration of standardized kinds.
+    * See {@link FoldingRangeKind} for an enumeration of standardized kinds.
     */
   var kind: js.UndefOr[FoldingRangeKind] = js.undefined
   
@@ -156,7 +156,7 @@ object FoldingRange {
   ): FoldingRange = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(startLine.asInstanceOf[js.Any], endLine.asInstanceOf[js.Any], startCharacter.asInstanceOf[js.Any], endCharacter.asInstanceOf[js.Any], kind.asInstanceOf[js.Any], collapsedText.asInstanceOf[js.Any])).asInstanceOf[FoldingRange]
   
   /**
-    * Checks whether the given literal conforms to the [FoldingRange](#FoldingRange) interface.
+    * Checks whether the given literal conforms to the {@link FoldingRange} interface.
     */
   inline def is(value: Any): /* is vscode-languageserver-types.vscode-languageserver-types.FoldingRange */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.FoldingRange */ Boolean]
   

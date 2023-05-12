@@ -19,7 +19,7 @@ object distRequestRequestValidatorMod {
     val ^ : js.Any = js.native
     
     /**
-      * Removes unnecessary or duplicate query parameters from extraQueryParameters
+      * Removes unnecessary, duplicate, and empty string query parameters from extraQueryParameters
       * @param request
       */
     inline def sanitizeEQParams(eQParams: StringDict, queryParams: Map[String, String]): StringDict = (^.asInstanceOf[js.Dynamic].applyDynamic("sanitizeEQParams")(eQParams.asInstanceOf[js.Any], queryParams.asInstanceOf[js.Any])).asInstanceOf[StringDict]

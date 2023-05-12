@@ -15,7 +15,7 @@ object componentsMenuMenuItemMod {
     def this(props: MenuItemProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: MenuItemProps, context: Any) = this()
   }
@@ -27,7 +27,7 @@ object componentsMenuMenuItemMod {
     def this(props: MenuItemProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: MenuItemProps, context: Any) = this()
   }

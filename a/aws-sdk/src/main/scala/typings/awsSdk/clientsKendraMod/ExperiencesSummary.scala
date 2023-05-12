@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ExperiencesSummary extends StObject {
   
   /**
-    * The date-time your Amazon Kendra experience was created.
+    * The Unix timestamp when your Amazon Kendra experience was created.
     */
   var CreatedAt: js.UndefOr[js.Date] = js.undefined
   

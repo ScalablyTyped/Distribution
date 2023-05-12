@@ -13,7 +13,9 @@ object distHelpersUseMediaRecorderMod {
   val ^ : js.Any = js.native
   
   inline def useMediaRecorder(): MediaRecorderHook = ^.asInstanceOf[js.Dynamic].applyDynamic("useMediaRecorder")().asInstanceOf[MediaRecorderHook]
+  inline def useMediaRecorder(stream: Null, webmMimeTypes: js.Array[String]): MediaRecorderHook = (^.asInstanceOf[js.Dynamic].applyDynamic("useMediaRecorder")(stream.asInstanceOf[js.Any], webmMimeTypes.asInstanceOf[js.Any])).asInstanceOf[MediaRecorderHook]
   inline def useMediaRecorder(stream: MediaStream): MediaRecorderHook = ^.asInstanceOf[js.Dynamic].applyDynamic("useMediaRecorder")(stream.asInstanceOf[js.Any]).asInstanceOf[MediaRecorderHook]
+  inline def useMediaRecorder(stream: MediaStream, webmMimeTypes: js.Array[String]): MediaRecorderHook = (^.asInstanceOf[js.Dynamic].applyDynamic("useMediaRecorder")(stream.asInstanceOf[js.Any], webmMimeTypes.asInstanceOf[js.Any])).asInstanceOf[MediaRecorderHook]
   
   trait MediaRecorderHook extends StObject {
     

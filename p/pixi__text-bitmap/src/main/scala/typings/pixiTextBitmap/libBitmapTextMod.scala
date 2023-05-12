@@ -1,5 +1,7 @@
 package typings.pixiTextBitmap
 
+import typings.pixiColor.libColorMod.ColorSource
+import typings.pixiCore.mod.Color
 import typings.pixiCore.mod.ObservablePoint
 import typings.pixiDisplay.libDisplayObjectMod.DisplayObject
 import typings.pixiDisplay.mod.Container
@@ -25,7 +27,7 @@ object libBitmapTextMod {
       *.     this will default to the BitmapFont size.
       * @param {string} [style.align='left'] - Alignment for multiline text ('left', 'center', 'right' or 'justify'),
       *      does not affect single line text.
-      * @param {number} [style.tint=0xFFFFFF] - The tint color.
+      * @param {PIXI.ColorSource} [style.tint=0xFFFFFF] - The tint color.
       * @param {number} [style.letterSpacing=0] - The amount of spacing between letters.
       * @param {number} [style.maxWidth=0] - The max width of the text before line wrapping.
       */
@@ -129,7 +131,7 @@ object libBitmapTextMod {
       * Private tracker for the current tint.
       * @private
       */
-    /* protected */ var _tint: Double = js.native
+    /* protected */ var _tintColor: Color = js.native
     
     /**
       * The alignment of the BitmapText object.
@@ -223,8 +225,8 @@ object libBitmapTextMod {
       * The tint of the BitmapText object.
       * @default 0xffffff
       */
-    def tint: Double = js.native
-    def tint_=(value: Double): Unit = js.native
+    def tint: ColorSource = js.native
+    def tint_=(value: ColorSource): Unit = js.native
     
     /** Renders text and updates it when needed. This should only be called if the BitmapFont is regenerated. */
     def updateText(): Unit = js.native

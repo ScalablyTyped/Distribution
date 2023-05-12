@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BatchDeleteCustomVocabularyItemRequest extends StObject {
   
   /**
-    * The unique identifier of the bot to batch delete request for the custom vocabulary item.
+    * The identifier of the bot associated with this custom vocabulary.
     */
   var botId: Id
   
   /**
-    * The version of the bot to batch delete request for the custom vocabulary item.
+    * The identifier of the version of the bot associated with this custom vocabulary.
     */
   var botVersion: BotVersion
   
   /**
-    * The custom vocabulary list to batch delete request for the custom vocabulary item.
+    * A list of custom vocabulary items requested to be deleted. Each entry must contain the unique custom vocabulary entry identifier.
     */
   var customVocabularyItemList: DeleteCustomVocabularyItemsList
   
   /**
-    * The locale identifier of the bot to batch delete request for the custom vocabulary item.
+    * The identifier of the language and locale where this custom vocabulary is used. The string must match one of the supported locales. For more information, see  Supported Languages .
     */
   var localeId: LocaleId
 }

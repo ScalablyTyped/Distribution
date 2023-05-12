@@ -18,6 +18,30 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 type Algorithm = _Algorithm | String
 
 /* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.AVAILABLE
+  - typings.awsSdk.awsSdkStrings.LOCKED
+  - java.lang.String
+*/
+type BridgePlacement = _BridgePlacement | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.CREATING
+  - typings.awsSdk.awsSdkStrings.STANDBY
+  - typings.awsSdk.awsSdkStrings.STARTING
+  - typings.awsSdk.awsSdkStrings.DEPLOYING
+  - typings.awsSdk.awsSdkStrings.ACTIVE
+  - typings.awsSdk.awsSdkStrings.STOPPING
+  - typings.awsSdk.awsSdkStrings.DELETING
+  - typings.awsSdk.awsSdkStrings.DELETED
+  - typings.awsSdk.awsSdkStrings.START_FAILED
+  - typings.awsSdk.awsSdkStrings.START_PENDING
+  - typings.awsSdk.awsSdkStrings.STOP_FAILED
+  - typings.awsSdk.awsSdkStrings.UPDATING
+  - java.lang.String
+*/
+type BridgeState = _BridgeState | String
+
+/* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.BT601
   - typings.awsSdk.awsSdkStrings.BT709
   - typings.awsSdk.awsSdkStrings.BT2020
@@ -28,6 +52,21 @@ type Algorithm = _Algorithm | String
   - java.lang.String
 */
 type Colorimetry = _Colorimetry | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.CONNECTED
+  - typings.awsSdk.awsSdkStrings.DISCONNECTED
+  - java.lang.String
+*/
+type ConnectionStatus = _ConnectionStatus | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ACTIVE
+  - typings.awsSdk.awsSdkStrings.STANDBY
+  - typings.awsSdk.awsSdkStrings.DELETED
+  - java.lang.String
+*/
+type DesiredState = _DesiredState | String
 
 type DurationUnits = MONTHS | String
 
@@ -60,6 +99,28 @@ type EntitlementStatus = _EntitlementStatus | String
   - java.lang.String
 */
 type FailoverMode = _FailoverMode | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.CREATING
+  - typings.awsSdk.awsSdkStrings.ACTIVE
+  - typings.awsSdk.awsSdkStrings.UPDATING
+  - typings.awsSdk.awsSdkStrings.ERROR
+  - typings.awsSdk.awsSdkStrings.DELETING
+  - typings.awsSdk.awsSdkStrings.DELETED
+  - java.lang.String
+*/
+type GatewayState = _GatewayState | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.REGISTERING
+  - typings.awsSdk.awsSdkStrings.ACTIVE
+  - typings.awsSdk.awsSdkStrings.DEREGISTERING
+  - typings.awsSdk.awsSdkStrings.DEREGISTERED
+  - typings.awsSdk.awsSdkStrings.REGISTRATION_ERROR
+  - typings.awsSdk.awsSdkStrings.DEREGISTRATION_ERROR
+  - java.lang.String
+*/
+type InstanceState = _InstanceState | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.speke_
@@ -111,6 +172,7 @@ type PriceUnits = HOURLY | String
   - typings.awsSdk.awsSdkStrings.`srt-listener`
   - typings.awsSdk.awsSdkStrings.`srt-caller`
   - typings.awsSdk.awsSdkStrings.`fujitsu-qos`
+  - typings.awsSdk.awsSdkStrings.udp_
   - java.lang.String
 */
 type Protocol = _Protocol | String
@@ -189,13 +251,23 @@ type Tcs = _Tcs | String
 */
 type apiVersion = _apiVersion | String
 
+type boolean = Boolean
+
 type double = Double
 
 type integer = Double
 
+type listOfAddBridgeOutputRequest = js.Array[AddBridgeOutputRequest]
+
+type listOfAddBridgeSourceRequest = js.Array[AddBridgeSourceRequest]
+
 type listOfAddMediaStreamRequest = js.Array[AddMediaStreamRequest]
 
 type listOfAddOutputRequest = js.Array[AddOutputRequest]
+
+type listOfBridgeOutput = js.Array[BridgeOutput]
+
+type listOfBridgeSource = js.Array[BridgeSource]
 
 type listOfDestinationConfiguration = js.Array[DestinationConfiguration]
 
@@ -203,15 +275,25 @@ type listOfDestinationConfigurationRequest = js.Array[DestinationConfigurationRe
 
 type listOfEntitlement = js.Array[Entitlement]
 
+type listOfGatewayNetwork = js.Array[GatewayNetwork]
+
 type listOfGrantEntitlementRequest = js.Array[GrantEntitlementRequest]
 
 type listOfInputConfiguration = js.Array[InputConfiguration]
 
 type listOfInputConfigurationRequest = js.Array[InputConfigurationRequest]
 
+type listOfInteger = js.Array[integer]
+
+type listOfListedBridge = js.Array[ListedBridge]
+
 type listOfListedEntitlement = js.Array[ListedEntitlement]
 
 type listOfListedFlow = js.Array[ListedFlow]
+
+type listOfListedGateway = js.Array[ListedGateway]
+
+type listOfListedGatewayInstance = js.Array[ListedGatewayInstance]
 
 type listOfMediaStream = js.Array[MediaStream]
 
@@ -222,6 +304,8 @@ type listOfMediaStreamOutputConfigurationRequest = js.Array[MediaStreamOutputCon
 type listOfMediaStreamSourceConfiguration = js.Array[MediaStreamSourceConfiguration]
 
 type listOfMediaStreamSourceConfigurationRequest = js.Array[MediaStreamSourceConfigurationRequest]
+
+type listOfMessageDetail = js.Array[MessageDetail]
 
 type listOfOffering = js.Array[Offering]
 

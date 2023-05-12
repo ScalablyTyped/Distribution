@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.MarginBottom
+import typings.csstype.mod.Property.BorderEndEndRadius
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,13 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `431` extends StObject {
   
   var value: js.UndefOr[
-    (MarginBottom[Double | String]) | (js.Array[
+    (BorderEndEndRadius[Double | String]) | (js.Array[
       (Extract[
         js.UndefOr[
-          (MarginBottom[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginBottom[Double | String]]]])
+          (BorderEndEndRadius[Double | String]) | (js.Array[NonNullable[js.UndefOr[BorderEndEndRadius[Double | String]]]])
         ], 
         String
-      ]) | (NonNullable[js.UndefOr[MarginBottom[Double | String]]])
+      ]) | (NonNullable[js.UndefOr[BorderEndEndRadius[Double | String]]])
     ])
   ] = js.native
 }

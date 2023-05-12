@@ -1,18 +1,12 @@
 package typings.wicgFileSystemAccess
 
-import typings.std.Blob
-import typings.std.BufferSource
 import typings.wicgFileSystemAccess.mod.global.ChooseFileSystemEntriesOptionsAccepts
 import typings.wicgFileSystemAccess.mod.global.FilePickerAcceptType
-import typings.wicgFileSystemAccess.mod.global.WriteParams
 import typings.wicgFileSystemAccess.wicgFileSystemAccessBooleans.`false`
 import typings.wicgFileSystemAccess.wicgFileSystemAccessBooleans.`true`
 import typings.wicgFileSystemAccess.wicgFileSystemAccessStrings.`open-directory`
 import typings.wicgFileSystemAccess.wicgFileSystemAccessStrings.`open-file`
 import typings.wicgFileSystemAccess.wicgFileSystemAccessStrings.`save-file`
-import typings.wicgFileSystemAccess.wicgFileSystemAccessStrings.seek
-import typings.wicgFileSystemAccess.wicgFileSystemAccessStrings.truncate
-import typings.wicgFileSystemAccess.wicgFileSystemAccessStrings.write
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -133,37 +127,6 @@ object anon {
     }
   }
   
-  trait Data
-    extends StObject
-       with WriteParams {
-    
-    var data: BufferSource | Blob | String
-    
-    var position: js.UndefOr[Double] = js.undefined
-    
-    var `type`: write
-  }
-  object Data {
-    
-    inline def apply(data: BufferSource | Blob | String): Data = {
-      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")("write")
-      __obj.asInstanceOf[Data]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
-      
-      inline def setData(value: BufferSource | Blob | String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
-      
-      inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
-      
-      inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
-      
-      inline def setType(value: write): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-    }
-  }
-  
   /* Inlined wicg-file-system-access.wicg-file-system-access.<global>.OpenFilePickerOptions & {  multiple :false | undefined} */
   trait OpenFilePickerOptionsmult extends StObject {
     
@@ -196,56 +159,6 @@ object anon {
       inline def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
       
       inline def setTypesVarargs(value: FilePickerAcceptType*): Self = StObject.set(x, "types", js.Array(value*))
-    }
-  }
-  
-  trait Position
-    extends StObject
-       with WriteParams {
-    
-    var position: Double
-    
-    var `type`: seek
-  }
-  object Position {
-    
-    inline def apply(position: Double): Position = {
-      val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")("seek")
-      __obj.asInstanceOf[Position]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: Position] (val x: Self) extends AnyVal {
-      
-      inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
-      
-      inline def setType(value: seek): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait Size
-    extends StObject
-       with WriteParams {
-    
-    var size: Double
-    
-    var `type`: truncate
-  }
-  object Size {
-    
-    inline def apply(size: Double): Size = {
-      val __obj = js.Dynamic.literal(size = size.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")("truncate")
-      __obj.asInstanceOf[Size]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: Size] (val x: Self) extends AnyVal {
-      
-      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
-      
-      inline def setType(value: truncate): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   

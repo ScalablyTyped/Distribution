@@ -17,12 +17,12 @@ trait RestoreFromSnapshotRequest extends StObject {
   var ownerAccount: js.UndefOr[String] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the snapshot to restore from.
+    * The Amazon Resource Name (ARN) of the snapshot to restore from. Required if restoring from Amazon Redshift Serverless to a provisioned cluster. Must not be specified at the same time as snapshotName. The format of the ARN is arn:aws:redshift:&lt;region&gt;:&lt;account_id&gt;:snapshot:&lt;cluster_identifier&gt;/&lt;snapshot_identifier&gt;.
     */
   var snapshotArn: js.UndefOr[String] = js.undefined
   
   /**
-    * The name of the snapshot to restore from.
+    * The name of the snapshot to restore from. Must not be specified at the same time as snapshotArn.
     */
   var snapshotName: js.UndefOr[String] = js.undefined
   

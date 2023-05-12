@@ -35,6 +35,11 @@ trait VirtualMachineDetails extends StObject {
     * The Amazon Resource Name (ARN) of the virtual machine. For example, arn:aws:backup-gateway:us-west-1:0000000000000:vm/vm-0000ABCDEFGIJKL.
     */
   var ResourceArn: js.UndefOr[typings.awsSdk.clientsBackupgatewayMod.ResourceArn] = js.undefined
+  
+  /**
+    * These are the details of the VMware tags associated with the specified virtual machine.
+    */
+  var VmwareTags: js.UndefOr[typings.awsSdk.clientsBackupgatewayMod.VmwareTags] = js.undefined
 }
 object VirtualMachineDetails {
   
@@ -69,5 +74,11 @@ object VirtualMachineDetails {
     inline def setResourceArn(value: ResourceArn): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
     
     inline def setResourceArnUndefined: Self = StObject.set(x, "ResourceArn", js.undefined)
+    
+    inline def setVmwareTags(value: VmwareTags): Self = StObject.set(x, "VmwareTags", value.asInstanceOf[js.Any])
+    
+    inline def setVmwareTagsUndefined: Self = StObject.set(x, "VmwareTags", js.undefined)
+    
+    inline def setVmwareTagsVarargs(value: VmwareTag*): Self = StObject.set(x, "VmwareTags", js.Array(value*))
   }
 }

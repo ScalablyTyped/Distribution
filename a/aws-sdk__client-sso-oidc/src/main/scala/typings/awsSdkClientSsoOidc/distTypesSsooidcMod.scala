@@ -21,9 +21,7 @@ object distTypesSsooidcMod {
     def this(configuration: SSOOIDCClientConfig) = this()
     
     /**
-      * <p>Creates and returns an access token for the authorized client. The access token issued
-      *       will be used to fetch short-term credentials for the assigned roles in the AWS
-      *       account.</p>
+      * @see {@link CreateTokenCommand}
       */
     def createToken(args: CreateTokenCommandInput): js.Promise[CreateTokenCommandOutput] = js.native
     def createToken(
@@ -38,8 +36,7 @@ object distTypesSsooidcMod {
     ): Unit = js.native
     
     /**
-      * <p>Registers a client with IAM Identity Center. This allows clients to initiate device authorization.
-      *       The output should be persisted for reuse through many authentication requests.</p>
+      * @see {@link RegisterClientCommand}
       */
     def registerClient(args: RegisterClientCommandInput): js.Promise[RegisterClientCommandOutput] = js.native
     def registerClient(
@@ -54,8 +51,7 @@ object distTypesSsooidcMod {
     ): Unit = js.native
     
     /**
-      * <p>Initiates device authorization by requesting a pair of verification codes from the
-      *       authorization service.</p>
+      * @see {@link StartDeviceAuthorizationCommand}
       */
     def startDeviceAuthorization(args: StartDeviceAuthorizationCommandInput): js.Promise[StartDeviceAuthorizationCommandOutput] = js.native
     def startDeviceAuthorization(

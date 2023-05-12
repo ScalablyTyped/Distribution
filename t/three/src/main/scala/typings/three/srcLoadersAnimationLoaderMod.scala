@@ -36,6 +36,9 @@ object srcLoadersAnimationLoaderMod {
       onError: js.Function1[/* event */ ErrorEvent, Unit]
     ): Unit = js.native
     
+    def loadAsync(url: String): js.Promise[js.Array[AnimationClip]] = js.native
+    def loadAsync(url: String, onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit]): js.Promise[js.Array[AnimationClip]] = js.native
+    
     def parse(json: Any): js.Array[AnimationClip] = js.native
   }
 }

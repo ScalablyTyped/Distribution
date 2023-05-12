@@ -956,6 +956,50 @@ trait Pinpoint extends Service {
   ): Request[GetJourneyExecutionMetricsResponse, AWSError] = js.native
   
   /**
+    * Retrieves (queries) pre-aggregated data for a standard run execution metric that applies to a journey activity.
+    */
+  def getJourneyRunExecutionActivityMetrics(): Request[GetJourneyRunExecutionActivityMetricsResponse, AWSError] = js.native
+  def getJourneyRunExecutionActivityMetrics(
+    callback: js.Function2[/* err */ AWSError, /* data */ GetJourneyRunExecutionActivityMetricsResponse, Unit]
+  ): Request[GetJourneyRunExecutionActivityMetricsResponse, AWSError] = js.native
+  /**
+    * Retrieves (queries) pre-aggregated data for a standard run execution metric that applies to a journey activity.
+    */
+  def getJourneyRunExecutionActivityMetrics(params: GetJourneyRunExecutionActivityMetricsRequest): Request[GetJourneyRunExecutionActivityMetricsResponse, AWSError] = js.native
+  def getJourneyRunExecutionActivityMetrics(
+    params: GetJourneyRunExecutionActivityMetricsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetJourneyRunExecutionActivityMetricsResponse, Unit]
+  ): Request[GetJourneyRunExecutionActivityMetricsResponse, AWSError] = js.native
+  
+  /**
+    * Retrieves (queries) pre-aggregated data for a standard run execution metric that applies to a journey.
+    */
+  def getJourneyRunExecutionMetrics(): Request[GetJourneyRunExecutionMetricsResponse, AWSError] = js.native
+  def getJourneyRunExecutionMetrics(callback: js.Function2[/* err */ AWSError, /* data */ GetJourneyRunExecutionMetricsResponse, Unit]): Request[GetJourneyRunExecutionMetricsResponse, AWSError] = js.native
+  /**
+    * Retrieves (queries) pre-aggregated data for a standard run execution metric that applies to a journey.
+    */
+  def getJourneyRunExecutionMetrics(params: GetJourneyRunExecutionMetricsRequest): Request[GetJourneyRunExecutionMetricsResponse, AWSError] = js.native
+  def getJourneyRunExecutionMetrics(
+    params: GetJourneyRunExecutionMetricsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetJourneyRunExecutionMetricsResponse, Unit]
+  ): Request[GetJourneyRunExecutionMetricsResponse, AWSError] = js.native
+  
+  /**
+    * Provides information about the runs of a journey.
+    */
+  def getJourneyRuns(): Request[GetJourneyRunsResponse, AWSError] = js.native
+  def getJourneyRuns(callback: js.Function2[/* err */ AWSError, /* data */ GetJourneyRunsResponse, Unit]): Request[GetJourneyRunsResponse, AWSError] = js.native
+  /**
+    * Provides information about the runs of a journey.
+    */
+  def getJourneyRuns(params: GetJourneyRunsRequest): Request[GetJourneyRunsResponse, AWSError] = js.native
+  def getJourneyRuns(
+    params: GetJourneyRunsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetJourneyRunsResponse, Unit]
+  ): Request[GetJourneyRunsResponse, AWSError] = js.native
+  
+  /**
     * Retrieves the content and settings of a message template for messages that are sent through a push notification channel.
     */
   def getPushTemplate(): Request[GetPushTemplateResponse, AWSError] = js.native

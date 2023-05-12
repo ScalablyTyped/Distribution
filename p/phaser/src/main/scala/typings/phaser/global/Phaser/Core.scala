@@ -67,6 +67,12 @@ object Core {
     override val autoFocus: Boolean = js.native
     
     /**
+      * Automatically enable the Mobile Pipeline if iOS or Android detected?
+      */
+    /* CompleteClass */
+    override val autoMobilePipeline: Boolean = js.native
+    
+    /**
       * Automatically round the display and style sizes of the canvas. This can help with performance in lower-powered devices.
       */
     /* CompleteClass */
@@ -100,13 +106,13 @@ object Core {
       * Force Phaser to use your own Canvas element instead of creating one.
       */
     /* CompleteClass */
-    override val canvas: HTMLCanvasElement = js.native
+    override val canvas: HTMLCanvasElement | Null = js.native
     
     /**
       * Optional CSS attributes to be set on the canvas object created by the renderer.
       */
     /* CompleteClass */
-    override val canvasStyle: String = js.native
+    override val canvasStyle: String | Null = js.native
     
     /**
       * Whether the game canvas will be cleared between each rendering frame. You can disable this if you have a full-screen background image or game object.
@@ -118,7 +124,7 @@ object Core {
       * Force Phaser to use your own Canvas context instead of creating one.
       */
     /* CompleteClass */
-    override val context: CanvasRenderingContext2D | WebGLRenderingContext = js.native
+    override val context: CanvasRenderingContext2D | WebGLRenderingContext | Null = js.native
     
     /**
       * Is Phaser running under a custom (non-native web) environment? If so, set this to `true` to skip internal Feature detection. If `true` the `renderType` cannot be left as `AUTO`.
@@ -139,6 +145,12 @@ object Core {
     override val defaultPhysicsSystem: Boolean | String = js.native
     
     /**
+      * The WebGL Pipeline that Game Objects will use by default. Set to 'MultiPipeline' as standard. See also 'autoMobilePipeline'.
+      */
+    /* CompleteClass */
+    override val defaultPipeline: String = js.native
+    
+    /**
       * The plugins installed into every Scene (in addition to CoreScene and Global).
       */
     /* CompleteClass */
@@ -157,22 +169,16 @@ object Core {
     override val disableContextMenu: Boolean = js.native
     
     /**
-      * Should the DOM Container that is created (if `dom.createContainer` is true) be positioned behind (true) or over the top (false, the default) of the game canvas?
-      */
-    /* CompleteClass */
-    override val domBehindCanvas: Boolean = js.native
-    
-    /**
       * Should the game create a div element to act as a DOM Container? Only enable if you're using DOM Element objects. You must provide a parent object if you use this feature.
       */
     /* CompleteClass */
-    override val domCreateContainer: Boolean = js.native
+    override val domCreateContainer: Boolean | Null = js.native
     
     /**
       * The default `pointerEvents` attribute set on the DOM Container.
       */
     /* CompleteClass */
-    override val domPointerEvents: String = js.native
+    override val domPointerEvents: String | Null = js.native
     
     /**
       * Is the Scale Manager allowed to adjust the CSS height property of the parent to be 100%?
@@ -196,7 +202,7 @@ object Core {
       * The DOM element that will be sent into full screen mode, or its `id`. If undefined Phaser will create its own div and insert the canvas into it when entering fullscreen mode.
       */
     /* CompleteClass */
-    override val fullscreenTarget: HTMLElement | String = js.native
+    override val fullscreenTarget: HTMLElement | String | Null = js.native
     
     /**
       * The title of the game.
@@ -215,6 +221,18 @@ object Core {
       */
     /* CompleteClass */
     override val gameVersion: String = js.native
+    
+    /**
+      * The distance of the Glow FX (defaults to 10)
+      */
+    /* CompleteClass */
+    override val glowFXDistance: Double = js.native
+    
+    /**
+      * The quality of the Glow FX (defaults to 0.1)
+      */
+    /* CompleteClass */
+    override val glowFXQuality: Double = js.native
     
     /**
       * The height of the underlying canvas, in pixels.
@@ -262,7 +280,7 @@ object Core {
       * `preventDefault` will be called on every non-modified key which has a key code in this array. By default, it is empty.
       */
     /* CompleteClass */
-    override val inputKeyboardCapture: js.Array[Double] = js.native
+    override val inputKeyboardCapture: js.Array[Double] | Null = js.native
     
     /**
       * The DOM Target to listen for keyboard events on. Defaults to `window` if not specified.
@@ -280,7 +298,7 @@ object Core {
       * The DOM Target to listen for mouse events on. Defaults to the game canvas if not specified.
       */
     /* CompleteClass */
-    override val inputMouseEventTarget: Any = js.native
+    override val inputMouseEventTarget: Any | Null = js.native
     
     /**
       * Should `mousedown` DOM events have `preventDefault` called on them?
@@ -328,7 +346,7 @@ object Core {
       * The DOM Target to listen for touch events on. Defaults to the game canvas if not specified.
       */
     /* CompleteClass */
-    override val inputTouchEventTarget: Any = js.native
+    override val inputTouchEventTarget: Any | Null = js.native
     
     /**
       * Should Phaser listen for input events on the Window? If you disable this, events like 'POINTER_UP_OUTSIDE' will no longer fire.
@@ -359,6 +377,18 @@ object Core {
       */
     /* CompleteClass */
     override val loaderBaseURL: String = js.native
+    
+    /**
+      * Optional load type for image, `XHR` is default, or `HTMLImageElement` for a lightweight way.
+      */
+    /* CompleteClass */
+    override val loaderImageLoadType: String = js.native
+    
+    /**
+      * An array of schemes that the Loader considers as being 'local' files. Defaults to: `[ 'file://', 'capacitor://' ]`.
+      */
+    /* CompleteClass */
+    override val loaderLocalScheme: js.Array[String] = js.native
     
     /**
       * Maximum parallel downloads allowed for resources (Default to 32).
@@ -454,7 +484,7 @@ object Core {
       * A parent DOM element into which the canvas created by the renderer will be injected.
       */
     /* CompleteClass */
-    override val parent: Any = js.native
+    override val parent: Any | Null = js.native
     
     /**
       * The Physics Configuration object.
@@ -532,13 +562,19 @@ object Core {
       * The default Scene configuration object.
       */
     /* CompleteClass */
-    override val sceneConfig: js.Object = js.native
+    override val sceneConfig: js.Object | Null = js.native
     
     /**
       * A seed which the Random Data Generator will use. If not given, a dynamic seed based on the time is used.
       */
     /* CompleteClass */
     override val seed: js.Array[String] = js.native
+    
+    /**
+      * `false` or `0` = Use the built-in StableSort (needed for older browsers), `true` or `1` = Rely on ES2019 Array.sort being stable (modern browsers only), or `-1` = Try and determine this automatically based on browser inspection (not guaranteed to work, errs on side of caution).
+      */
+    /* CompleteClass */
+    override val stableSort: Double | Boolean = js.native
     
     /**
       * Whether the game canvas will have a transparent background.
@@ -592,7 +628,7 @@ object Core {
       */
     @JSGlobal("Phaser.Core.Events.BLUR")
     @js.native
-    val BLUR: Any = js.native
+    val BLUR: String = js.native
     
     /**
       * The Game Boot Event.
@@ -602,29 +638,18 @@ object Core {
       */
     @JSGlobal("Phaser.Core.Events.BOOT")
     @js.native
-    val BOOT: Any = js.native
+    val BOOT: String = js.native
     
     /**
       * The Game Context Lost Event.
       * 
       * This event is dispatched by the Game if the WebGL Renderer it is using encounters a WebGL Context Lost event from the browser.
       * 
-      * The partner event is `CONTEXT_RESTORED`.
+      * The renderer halts all rendering and cannot resume after this happens.
       */
     @JSGlobal("Phaser.Core.Events.CONTEXT_LOST")
     @js.native
-    val CONTEXT_LOST: Any = js.native
-    
-    /**
-      * The Game Context Restored Event.
-      * 
-      * This event is dispatched by the Game if the WebGL Renderer it is using encounters a WebGL Context Restored event from the browser.
-      * 
-      * The partner event is `CONTEXT_LOST`.
-      */
-    @JSGlobal("Phaser.Core.Events.CONTEXT_RESTORED")
-    @js.native
-    val CONTEXT_RESTORED: Any = js.native
+    val CONTEXT_LOST: String = js.native
     
     /**
       * The Game Destroy Event.
@@ -635,7 +660,7 @@ object Core {
       */
     @JSGlobal("Phaser.Core.Events.DESTROY")
     @js.native
-    val DESTROY: Any = js.native
+    val DESTROY: String = js.native
     
     /**
       * The Game Focus Event.
@@ -645,7 +670,7 @@ object Core {
       */
     @JSGlobal("Phaser.Core.Events.FOCUS")
     @js.native
-    val FOCUS: Any = js.native
+    val FOCUS: String = js.native
     
     /**
       * The Game Hidden Event.
@@ -659,7 +684,7 @@ object Core {
       */
     @JSGlobal("Phaser.Core.Events.HIDDEN")
     @js.native
-    val HIDDEN: Any = js.native
+    val HIDDEN: String = js.native
     
     /**
       * The Game Pause Event.
@@ -668,7 +693,7 @@ object Core {
       */
     @JSGlobal("Phaser.Core.Events.PAUSE")
     @js.native
-    val PAUSE: Any = js.native
+    val PAUSE: String = js.native
     
     /**
       * The Game Post-Render Event.
@@ -680,7 +705,7 @@ object Core {
       */
     @JSGlobal("Phaser.Core.Events.POST_RENDER")
     @js.native
-    val POST_RENDER: Any = js.native
+    val POST_RENDER: String = js.native
     
     /**
       * The Game Post-Step Event.
@@ -690,7 +715,7 @@ object Core {
       */
     @JSGlobal("Phaser.Core.Events.POST_STEP")
     @js.native
-    val POST_STEP: Any = js.native
+    val POST_STEP: String = js.native
     
     /**
       * The Game Pre-Render Event.
@@ -701,7 +726,7 @@ object Core {
       */
     @JSGlobal("Phaser.Core.Events.PRE_RENDER")
     @js.native
-    val PRE_RENDER: Any = js.native
+    val PRE_RENDER: String = js.native
     
     /**
       * The Game Pre-Step Event.
@@ -711,7 +736,7 @@ object Core {
       */
     @JSGlobal("Phaser.Core.Events.PRE_STEP")
     @js.native
-    val PRE_STEP: Any = js.native
+    val PRE_STEP: String = js.native
     
     /**
       * The Game Ready Event.
@@ -721,7 +746,7 @@ object Core {
       */
     @JSGlobal("Phaser.Core.Events.READY")
     @js.native
-    val READY: Any = js.native
+    val READY: String = js.native
     
     /**
       * The Game Resume Event.
@@ -730,7 +755,7 @@ object Core {
       */
     @JSGlobal("Phaser.Core.Events.RESUME")
     @js.native
-    val RESUME: Any = js.native
+    val RESUME: String = js.native
     
     /**
       * The Game Step Event.
@@ -740,7 +765,7 @@ object Core {
       */
     @JSGlobal("Phaser.Core.Events.STEP")
     @js.native
-    val STEP: Any = js.native
+    val STEP: String = js.native
     
     /**
       * The Game Visible Event.
@@ -752,7 +777,7 @@ object Core {
       */
     @JSGlobal("Phaser.Core.Events.VISIBLE")
     @js.native
-    val VISIBLE: Any = js.native
+    val VISIBLE: String = js.native
   }
   
   /**

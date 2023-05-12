@@ -1,10 +1,19 @@
 package typings.googleAuthLibrary.buildSrcAuthOauth2clientMod
 
+import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GenerateAuthUrlOpts extends StObject {
+trait GenerateAuthUrlOpts
+  extends StObject
+     with /**
+  * A way for developers and/or the auth team to provide a set of key value
+  * pairs to be added as query parameters to the authorization url.
+  */
+/* key */ StringDictionary[
+      /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify querystring.ParsedUrlQueryInput * / any[keyof / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify querystring.ParsedUrlQueryInput * / any] */ js.Any
+    ] {
   
   /**
     * Recommended. Indicates whether your application can refresh access tokens

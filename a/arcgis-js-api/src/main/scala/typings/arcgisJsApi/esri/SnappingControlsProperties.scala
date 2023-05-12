@@ -11,6 +11,13 @@ trait SnappingControlsProperties
      with WidgetProperties {
   
   /**
+    * The widget's default CSS icon class.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-SnappingControls.html#iconClass)
+    */
+  var iconClass: js.UndefOr[String] = js.undefined
+  
+  /**
     * The [SnappingOptions](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-interactive-snapping-SnappingOptions.html) for sketching.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-SnappingControls.html#snappingOptions)
@@ -47,6 +54,10 @@ object SnappingControlsProperties {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: SnappingControlsProperties] (val x: Self) extends AnyVal {
+    
+    inline def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
+    
+    inline def setIconClassUndefined: Self = StObject.set(x, "iconClass", js.undefined)
     
     inline def setSnappingOptions(value: SnappingOptionsProperties): Self = StObject.set(x, "snappingOptions", value.asInstanceOf[js.Any])
     

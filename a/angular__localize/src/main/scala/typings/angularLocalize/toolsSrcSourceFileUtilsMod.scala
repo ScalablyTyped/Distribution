@@ -1,10 +1,12 @@
 package typings.angularLocalize
 
 import typings.angularCompilerCli.srcNgtscFileSystemSrcTypesMod.PathManipulation
-import typings.angularLocalize.mod.ɵParsedTranslation
-import typings.angularLocalize.mod.ɵSourceLocation
+import typings.angularLocalize.localizeMod.ɵParsedTranslation
+import typings.angularLocalize.localizeMod.ɵSourceLocation
 import typings.angularLocalize.toolsSrcDiagnosticsMod.DiagnosticHandlingStrategy
 import typings.angularLocalize.toolsSrcDiagnosticsMod.Diagnostics
+import typings.babelTypes.mod.Expression
+import typings.babelTypes.mod.Node
 import typings.std.Error
 import typings.std.Record
 import typings.std.TemplateStringsArray
@@ -23,10 +25,7 @@ object toolsSrcSourceFileUtilsMod {
   open class BabelParseError protected ()
     extends StObject
        with Error {
-    def this(
-      node: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify t.Node */ Any,
-      message: String
-    ) = this()
+    def this(node: Node, message: String) = this()
     
     /* standard es5 */
     /* CompleteClass */
@@ -36,7 +35,7 @@ object toolsSrcSourceFileUtilsMod {
     /* CompleteClass */
     var name: String = js.native
     
-    var node: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify t.Node */ Any = js.native
+    var node: Node = js.native
     
     /* private */ val `type`: Any = js.native
   }
@@ -47,12 +46,7 @@ object toolsSrcSourceFileUtilsMod {
     e: BabelParseError
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("buildCodeFrameError")(fs.asInstanceOf[js.Any], path.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def buildLocalizeReplacement(
-    messageParts: TemplateStringsArray,
-    substitutions: js.Array[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify t.Expression */ Any
-    ]
-  ): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("buildLocalizeReplacement")(messageParts.asInstanceOf[js.Any], substitutions.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def buildLocalizeReplacement(messageParts: TemplateStringsArray, substitutions: js.Array[Expression]): Expression = (^.asInstanceOf[js.Dynamic].applyDynamic("buildLocalizeReplacement")(messageParts.asInstanceOf[js.Any], substitutions.asInstanceOf[js.Any])).asInstanceOf[Expression]
   
   inline def getLocation(
     fs: PathManipulation,
@@ -86,9 +80,7 @@ object toolsSrcSourceFileUtilsMod {
     name: String
   ): /* is / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodePath<t.Identifier> * / any */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isNamedIdentifier")(expression.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[/* is / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodePath<t.Identifier> * / any */ Boolean]
   
-  inline def isStringLiteralArray(
-    node: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify t.Node */ Any
-  ): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStringLiteralArray")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isStringLiteralArray(node: Node): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStringLiteralArray")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def serializeLocationPosition(location: ɵSourceLocation): String = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeLocationPosition")(location.asInstanceOf[js.Any]).asInstanceOf[String]
   
@@ -102,31 +94,11 @@ object toolsSrcSourceFileUtilsMod {
   
   inline def unwrapExpressionsFromTemplateLiteral(
     quasi: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodePath<t.TemplateLiteral> */ Any
-  ): js.Tuple2[
-    js.Array[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify t.Expression */ Any
-    ], 
-    js.Array[js.UndefOr[ɵSourceLocation]]
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("unwrapExpressionsFromTemplateLiteral")(quasi.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[
-    js.Array[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify t.Expression */ Any
-    ], 
-    js.Array[js.UndefOr[ɵSourceLocation]]
-  ]]
+  ): js.Tuple2[js.Array[Expression], js.Array[js.UndefOr[ɵSourceLocation]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("unwrapExpressionsFromTemplateLiteral")(quasi.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[js.Array[Expression], js.Array[js.UndefOr[ɵSourceLocation]]]]
   inline def unwrapExpressionsFromTemplateLiteral(
     quasi: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodePath<t.TemplateLiteral> */ Any,
     fs: PathManipulation
-  ): js.Tuple2[
-    js.Array[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify t.Expression */ Any
-    ], 
-    js.Array[js.UndefOr[ɵSourceLocation]]
-  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("unwrapExpressionsFromTemplateLiteral")(quasi.asInstanceOf[js.Any], fs.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[
-    js.Array[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify t.Expression */ Any
-    ], 
-    js.Array[js.UndefOr[ɵSourceLocation]]
-  ]]
+  ): js.Tuple2[js.Array[Expression], js.Array[js.UndefOr[ɵSourceLocation]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("unwrapExpressionsFromTemplateLiteral")(quasi.asInstanceOf[js.Any], fs.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Expression], js.Array[js.UndefOr[ɵSourceLocation]]]]
   
   inline def unwrapLazyLoadHelperCall(
     call: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodePath<t.CallExpression> */ Any
@@ -162,35 +134,13 @@ object toolsSrcSourceFileUtilsMod {
   
   inline def unwrapSubstitutionsFromLocalizeCall(
     call: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodePath<t.CallExpression> */ Any
-  ): js.Tuple2[
-    js.Array[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify t.Expression */ Any
-    ], 
-    js.Array[js.UndefOr[ɵSourceLocation]]
-  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("unwrapSubstitutionsFromLocalizeCall")(call.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[
-    js.Array[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify t.Expression */ Any
-    ], 
-    js.Array[js.UndefOr[ɵSourceLocation]]
-  ]]
+  ): js.Tuple2[js.Array[Expression], js.Array[js.UndefOr[ɵSourceLocation]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("unwrapSubstitutionsFromLocalizeCall")(call.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[js.Array[Expression], js.Array[js.UndefOr[ɵSourceLocation]]]]
   inline def unwrapSubstitutionsFromLocalizeCall(
     call: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify NodePath<t.CallExpression> */ Any,
     fs: PathManipulation
-  ): js.Tuple2[
-    js.Array[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify t.Expression */ Any
-    ], 
-    js.Array[js.UndefOr[ɵSourceLocation]]
-  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("unwrapSubstitutionsFromLocalizeCall")(call.asInstanceOf[js.Any], fs.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[
-    js.Array[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify t.Expression */ Any
-    ], 
-    js.Array[js.UndefOr[ɵSourceLocation]]
-  ]]
+  ): js.Tuple2[js.Array[Expression], js.Array[js.UndefOr[ɵSourceLocation]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("unwrapSubstitutionsFromLocalizeCall")(call.asInstanceOf[js.Any], fs.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Expression], js.Array[js.UndefOr[ɵSourceLocation]]]]
   
-  inline def wrapInParensIfNecessary(
-    expression: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify t.Expression */ Any
-  ): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapInParensIfNecessary")(expression.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def wrapInParensIfNecessary(expression: Expression): Expression = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapInParensIfNecessary")(expression.asInstanceOf[js.Any]).asInstanceOf[Expression]
   
   trait TranslatePluginOptions extends StObject {
     

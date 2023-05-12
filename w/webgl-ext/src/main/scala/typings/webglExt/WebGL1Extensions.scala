@@ -1,6 +1,8 @@
 package typings.webglExt
 
+import typings.std.EXTColorBufferHalfFloat
 import typings.std.EXTTextureFilterAnisotropic
+import typings.std.WEBGLCompressedTextureEtc1
 import typings.std.WEBGLCompressedTextureS3tc
 import typings.std.WEBGLDepthTexture
 import typings.std.WEBGLLoseContext

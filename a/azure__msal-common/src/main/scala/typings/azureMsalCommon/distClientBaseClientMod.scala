@@ -11,6 +11,7 @@ import typings.azureMsalCommon.distNetworkInetworkmoduleMod.INetworkModule
 import typings.azureMsalCommon.distNetworkNetworkManagerMod.NetworkManager
 import typings.azureMsalCommon.distNetworkNetworkManagerMod.NetworkResponse
 import typings.azureMsalCommon.distNetworkRequestThumbprintMod.RequestThumbprint
+import typings.azureMsalCommon.distRequestBaseAuthRequestMod.BaseAuthRequest
 import typings.azureMsalCommon.distResponseServerAuthorizationTokenResponseMod.ServerAuthorizationTokenResponse
 import typings.azureMsalCommon.distTelemetryPerformanceIperformanceclientMod.IPerformanceClient
 import typings.azureMsalCommon.distTelemetryServerServerTelemetryManagerMod.ServerTelemetryManager
@@ -32,6 +33,12 @@ object distClientBaseClientMod {
     /* protected */ var cacheManager: CacheManager = js.native
     
     /* protected */ var config: CommonClientConfiguration = js.native
+    
+    /**
+      * Creates query string for the /token request
+      * @param request
+      */
+    def createTokenQueryParameters(request: BaseAuthRequest): String = js.native
     
     /**
       * Creates default headers for requests to token endpoint

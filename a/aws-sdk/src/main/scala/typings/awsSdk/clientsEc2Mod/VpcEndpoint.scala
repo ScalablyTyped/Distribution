@@ -37,7 +37,7 @@ trait VpcEndpoint extends StObject {
   var LastError: js.UndefOr[typings.awsSdk.clientsEc2Mod.LastError] = js.undefined
   
   /**
-    * (Interface endpoint) One or more network interfaces for the endpoint.
+    * (Interface endpoint) The network interfaces for the endpoint.
     */
   var NetworkInterfaceIds: js.UndefOr[ValueStringList] = js.undefined
   
@@ -62,7 +62,7 @@ trait VpcEndpoint extends StObject {
   var RequesterManaged: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * (Gateway endpoint) One or more route tables associated with the endpoint.
+    * (Gateway endpoint) The IDs of the route tables associated with the endpoint.
     */
   var RouteTableIds: js.UndefOr[ValueStringList] = js.undefined
   
@@ -82,7 +82,7 @@ trait VpcEndpoint extends StObject {
   var SubnetIds: js.UndefOr[ValueStringList] = js.undefined
   
   /**
-    * Any tags assigned to the endpoint.
+    * The tags assigned to the endpoint.
     */
   var Tags: js.UndefOr[TagList] = js.undefined
   

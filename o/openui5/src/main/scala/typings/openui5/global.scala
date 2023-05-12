@@ -2,24 +2,18 @@ package typings.openui5
 
 import typings.openui5.anon.AsyncCache
 import typings.openui5.anon.Bundles
-import typings.openui5.anon.Cloned
+import typings.openui5.anon.Details
 import typings.openui5.anon.Domref
 import typings.openui5.anon.FailOnError
 import typings.openui5.anon.FragmentContent
 import typings.openui5.anon.FragmentName
 import typings.openui5.anon.HandleValidation
-import typings.openui5.anon.To
 import typings.openui5.anon.ViewContent
 import typings.openui5.anon.ViewData
-import typings.openui5.anon.`19`
+import typings.openui5.anon.`25`
+import typings.openui5.sapUiCoreComponentMod.default
 import typings.openui5.sapUiCoreCoreMod.Core
-import typings.openui5.sapUiCoreLibraryMod.CSSColor
-import typings.openui5.sapUiCoreLibraryMod.URI
-import typings.openui5.sapUiCoreRenderManagerMod.default
 import typings.std.Element
-import typings.std.HTMLElement
-import typings.std.Touch
-import typings.std.TouchList
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -41,562 +35,6 @@ object global {
       */
     object m {
       
-      @JSGlobal("sap.m")
-      @js.native
-      val ^ : js.Any = js.native
-      
-      /**
-        * @SINCE 1.12
-        *
-        * Helper for rendering themable background.
-        */
-      object BackgroundHelper {
-        
-        @JSGlobal("sap.m.BackgroundHelper")
-        @js.native
-        val ^ : js.Any = js.native
-        
-        /**
-          * Adds CSS classes and styles to the given RenderManager, depending on the given configuration for background
-          * color and background image. To be called by control renderers supporting the global themable background
-          * image within their root tag, before they call openEnd, voidEnd, writeClasses() and writeStyles().
-          */
-        inline def addBackgroundColorStyles(/**
-          * The RenderManager
-          */
-        rm: default): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addBackgroundColorStyles")(rm.asInstanceOf[js.Any]).asInstanceOf[Unit]
-        inline def addBackgroundColorStyles(
-          /**
-          * The RenderManager
-          */
-        rm: default,
-          /**
-          * A configured custom background color for the control, if any
-          */
-        sBgColor: Unit,
-          /**
-          * The configured custom background image for the control, if any
-          */
-        sBgImgUrl: URI
-        ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addBackgroundColorStyles")(rm.asInstanceOf[js.Any], sBgColor.asInstanceOf[js.Any], sBgImgUrl.asInstanceOf[js.Any])).asInstanceOf[Unit]
-        inline def addBackgroundColorStyles(
-          /**
-          * The RenderManager
-          */
-        rm: default,
-          /**
-          * A configured custom background color for the control, if any
-          */
-        sBgColor: CSSColor
-        ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addBackgroundColorStyles")(rm.asInstanceOf[js.Any], sBgColor.asInstanceOf[js.Any])).asInstanceOf[Unit]
-        inline def addBackgroundColorStyles(
-          /**
-          * The RenderManager
-          */
-        rm: default,
-          /**
-          * A configured custom background color for the control, if any
-          */
-        sBgColor: CSSColor,
-          /**
-          * The configured custom background image for the control, if any
-          */
-        sBgImgUrl: URI
-        ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addBackgroundColorStyles")(rm.asInstanceOf[js.Any], sBgColor.asInstanceOf[js.Any], sBgImgUrl.asInstanceOf[js.Any])).asInstanceOf[Unit]
-        
-        /**
-          * Renders an HTML tag into the given RenderManager which carries the background image which is either configured
-          * and given or coming from the current theme. Should be called right after the opening root tag has been
-          * completed, so this is the first child element inside the control.
-          */
-        inline def renderBackgroundImageTag(
-          /**
-          * The RenderManager
-          */
-        rm: default,
-          /**
-          * Control within which the tag will be rendered; its ID will be used to generate the element ID
-          */
-        oControl: typings.openui5.sapUiCoreControlMod.default,
-          /**
-          * A CSS class or an array of CSS classes to add to the element
-          */
-        vCssClass: String
-        ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderBackgroundImageTag")(rm.asInstanceOf[js.Any], oControl.asInstanceOf[js.Any], vCssClass.asInstanceOf[js.Any])).asInstanceOf[Unit]
-        inline def renderBackgroundImageTag(
-          /**
-          * The RenderManager
-          */
-        rm: default,
-          /**
-          * Control within which the tag will be rendered; its ID will be used to generate the element ID
-          */
-        oControl: typings.openui5.sapUiCoreControlMod.default,
-          /**
-          * A CSS class or an array of CSS classes to add to the element
-          */
-        vCssClass: String,
-          /**
-          * The image of a configured background image; if this is not given, the theme background will be used and
-          * also the other settings are ignored.
-          */
-        sBgImgUrl: Unit,
-          /**
-          * Whether the background image should be repeated/tiled (or stretched)
-          */
-        bRepeat: Boolean
-        ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderBackgroundImageTag")(rm.asInstanceOf[js.Any], oControl.asInstanceOf[js.Any], vCssClass.asInstanceOf[js.Any], sBgImgUrl.asInstanceOf[js.Any], bRepeat.asInstanceOf[js.Any])).asInstanceOf[Unit]
-        inline def renderBackgroundImageTag(
-          /**
-          * The RenderManager
-          */
-        rm: default,
-          /**
-          * Control within which the tag will be rendered; its ID will be used to generate the element ID
-          */
-        oControl: typings.openui5.sapUiCoreControlMod.default,
-          /**
-          * A CSS class or an array of CSS classes to add to the element
-          */
-        vCssClass: String,
-          /**
-          * The image of a configured background image; if this is not given, the theme background will be used and
-          * also the other settings are ignored.
-          */
-        sBgImgUrl: Unit,
-          /**
-          * Whether the background image should be repeated/tiled (or stretched)
-          */
-        bRepeat: Boolean,
-          /**
-          * The background image opacity, if any
-          */
-        fOpacity: float
-        ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderBackgroundImageTag")(rm.asInstanceOf[js.Any], oControl.asInstanceOf[js.Any], vCssClass.asInstanceOf[js.Any], sBgImgUrl.asInstanceOf[js.Any], bRepeat.asInstanceOf[js.Any], fOpacity.asInstanceOf[js.Any])).asInstanceOf[Unit]
-        inline def renderBackgroundImageTag(
-          /**
-          * The RenderManager
-          */
-        rm: default,
-          /**
-          * Control within which the tag will be rendered; its ID will be used to generate the element ID
-          */
-        oControl: typings.openui5.sapUiCoreControlMod.default,
-          /**
-          * A CSS class or an array of CSS classes to add to the element
-          */
-        vCssClass: String,
-          /**
-          * The image of a configured background image; if this is not given, the theme background will be used and
-          * also the other settings are ignored.
-          */
-        sBgImgUrl: Unit,
-          /**
-          * Whether the background image should be repeated/tiled (or stretched)
-          */
-        bRepeat: Unit,
-          /**
-          * The background image opacity, if any
-          */
-        fOpacity: float
-        ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderBackgroundImageTag")(rm.asInstanceOf[js.Any], oControl.asInstanceOf[js.Any], vCssClass.asInstanceOf[js.Any], sBgImgUrl.asInstanceOf[js.Any], bRepeat.asInstanceOf[js.Any], fOpacity.asInstanceOf[js.Any])).asInstanceOf[Unit]
-        inline def renderBackgroundImageTag(
-          /**
-          * The RenderManager
-          */
-        rm: default,
-          /**
-          * Control within which the tag will be rendered; its ID will be used to generate the element ID
-          */
-        oControl: typings.openui5.sapUiCoreControlMod.default,
-          /**
-          * A CSS class or an array of CSS classes to add to the element
-          */
-        vCssClass: String,
-          /**
-          * The image of a configured background image; if this is not given, the theme background will be used and
-          * also the other settings are ignored.
-          */
-        sBgImgUrl: URI
-        ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderBackgroundImageTag")(rm.asInstanceOf[js.Any], oControl.asInstanceOf[js.Any], vCssClass.asInstanceOf[js.Any], sBgImgUrl.asInstanceOf[js.Any])).asInstanceOf[Unit]
-        inline def renderBackgroundImageTag(
-          /**
-          * The RenderManager
-          */
-        rm: default,
-          /**
-          * Control within which the tag will be rendered; its ID will be used to generate the element ID
-          */
-        oControl: typings.openui5.sapUiCoreControlMod.default,
-          /**
-          * A CSS class or an array of CSS classes to add to the element
-          */
-        vCssClass: String,
-          /**
-          * The image of a configured background image; if this is not given, the theme background will be used and
-          * also the other settings are ignored.
-          */
-        sBgImgUrl: URI,
-          /**
-          * Whether the background image should be repeated/tiled (or stretched)
-          */
-        bRepeat: Boolean
-        ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderBackgroundImageTag")(rm.asInstanceOf[js.Any], oControl.asInstanceOf[js.Any], vCssClass.asInstanceOf[js.Any], sBgImgUrl.asInstanceOf[js.Any], bRepeat.asInstanceOf[js.Any])).asInstanceOf[Unit]
-        inline def renderBackgroundImageTag(
-          /**
-          * The RenderManager
-          */
-        rm: default,
-          /**
-          * Control within which the tag will be rendered; its ID will be used to generate the element ID
-          */
-        oControl: typings.openui5.sapUiCoreControlMod.default,
-          /**
-          * A CSS class or an array of CSS classes to add to the element
-          */
-        vCssClass: String,
-          /**
-          * The image of a configured background image; if this is not given, the theme background will be used and
-          * also the other settings are ignored.
-          */
-        sBgImgUrl: URI,
-          /**
-          * Whether the background image should be repeated/tiled (or stretched)
-          */
-        bRepeat: Boolean,
-          /**
-          * The background image opacity, if any
-          */
-        fOpacity: float
-        ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderBackgroundImageTag")(rm.asInstanceOf[js.Any], oControl.asInstanceOf[js.Any], vCssClass.asInstanceOf[js.Any], sBgImgUrl.asInstanceOf[js.Any], bRepeat.asInstanceOf[js.Any], fOpacity.asInstanceOf[js.Any])).asInstanceOf[Unit]
-        inline def renderBackgroundImageTag(
-          /**
-          * The RenderManager
-          */
-        rm: default,
-          /**
-          * Control within which the tag will be rendered; its ID will be used to generate the element ID
-          */
-        oControl: typings.openui5.sapUiCoreControlMod.default,
-          /**
-          * A CSS class or an array of CSS classes to add to the element
-          */
-        vCssClass: String,
-          /**
-          * The image of a configured background image; if this is not given, the theme background will be used and
-          * also the other settings are ignored.
-          */
-        sBgImgUrl: URI,
-          /**
-          * Whether the background image should be repeated/tiled (or stretched)
-          */
-        bRepeat: Unit,
-          /**
-          * The background image opacity, if any
-          */
-        fOpacity: float
-        ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderBackgroundImageTag")(rm.asInstanceOf[js.Any], oControl.asInstanceOf[js.Any], vCssClass.asInstanceOf[js.Any], sBgImgUrl.asInstanceOf[js.Any], bRepeat.asInstanceOf[js.Any], fOpacity.asInstanceOf[js.Any])).asInstanceOf[Unit]
-        inline def renderBackgroundImageTag(
-          /**
-          * The RenderManager
-          */
-        rm: default,
-          /**
-          * Control within which the tag will be rendered; its ID will be used to generate the element ID
-          */
-        oControl: typings.openui5.sapUiCoreControlMod.default,
-          /**
-          * A CSS class or an array of CSS classes to add to the element
-          */
-        vCssClass: js.Array[String]
-        ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderBackgroundImageTag")(rm.asInstanceOf[js.Any], oControl.asInstanceOf[js.Any], vCssClass.asInstanceOf[js.Any])).asInstanceOf[Unit]
-        inline def renderBackgroundImageTag(
-          /**
-          * The RenderManager
-          */
-        rm: default,
-          /**
-          * Control within which the tag will be rendered; its ID will be used to generate the element ID
-          */
-        oControl: typings.openui5.sapUiCoreControlMod.default,
-          /**
-          * A CSS class or an array of CSS classes to add to the element
-          */
-        vCssClass: js.Array[String],
-          /**
-          * The image of a configured background image; if this is not given, the theme background will be used and
-          * also the other settings are ignored.
-          */
-        sBgImgUrl: Unit,
-          /**
-          * Whether the background image should be repeated/tiled (or stretched)
-          */
-        bRepeat: Boolean
-        ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderBackgroundImageTag")(rm.asInstanceOf[js.Any], oControl.asInstanceOf[js.Any], vCssClass.asInstanceOf[js.Any], sBgImgUrl.asInstanceOf[js.Any], bRepeat.asInstanceOf[js.Any])).asInstanceOf[Unit]
-        inline def renderBackgroundImageTag(
-          /**
-          * The RenderManager
-          */
-        rm: default,
-          /**
-          * Control within which the tag will be rendered; its ID will be used to generate the element ID
-          */
-        oControl: typings.openui5.sapUiCoreControlMod.default,
-          /**
-          * A CSS class or an array of CSS classes to add to the element
-          */
-        vCssClass: js.Array[String],
-          /**
-          * The image of a configured background image; if this is not given, the theme background will be used and
-          * also the other settings are ignored.
-          */
-        sBgImgUrl: Unit,
-          /**
-          * Whether the background image should be repeated/tiled (or stretched)
-          */
-        bRepeat: Boolean,
-          /**
-          * The background image opacity, if any
-          */
-        fOpacity: float
-        ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderBackgroundImageTag")(rm.asInstanceOf[js.Any], oControl.asInstanceOf[js.Any], vCssClass.asInstanceOf[js.Any], sBgImgUrl.asInstanceOf[js.Any], bRepeat.asInstanceOf[js.Any], fOpacity.asInstanceOf[js.Any])).asInstanceOf[Unit]
-        inline def renderBackgroundImageTag(
-          /**
-          * The RenderManager
-          */
-        rm: default,
-          /**
-          * Control within which the tag will be rendered; its ID will be used to generate the element ID
-          */
-        oControl: typings.openui5.sapUiCoreControlMod.default,
-          /**
-          * A CSS class or an array of CSS classes to add to the element
-          */
-        vCssClass: js.Array[String],
-          /**
-          * The image of a configured background image; if this is not given, the theme background will be used and
-          * also the other settings are ignored.
-          */
-        sBgImgUrl: Unit,
-          /**
-          * Whether the background image should be repeated/tiled (or stretched)
-          */
-        bRepeat: Unit,
-          /**
-          * The background image opacity, if any
-          */
-        fOpacity: float
-        ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderBackgroundImageTag")(rm.asInstanceOf[js.Any], oControl.asInstanceOf[js.Any], vCssClass.asInstanceOf[js.Any], sBgImgUrl.asInstanceOf[js.Any], bRepeat.asInstanceOf[js.Any], fOpacity.asInstanceOf[js.Any])).asInstanceOf[Unit]
-        inline def renderBackgroundImageTag(
-          /**
-          * The RenderManager
-          */
-        rm: default,
-          /**
-          * Control within which the tag will be rendered; its ID will be used to generate the element ID
-          */
-        oControl: typings.openui5.sapUiCoreControlMod.default,
-          /**
-          * A CSS class or an array of CSS classes to add to the element
-          */
-        vCssClass: js.Array[String],
-          /**
-          * The image of a configured background image; if this is not given, the theme background will be used and
-          * also the other settings are ignored.
-          */
-        sBgImgUrl: URI
-        ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderBackgroundImageTag")(rm.asInstanceOf[js.Any], oControl.asInstanceOf[js.Any], vCssClass.asInstanceOf[js.Any], sBgImgUrl.asInstanceOf[js.Any])).asInstanceOf[Unit]
-        inline def renderBackgroundImageTag(
-          /**
-          * The RenderManager
-          */
-        rm: default,
-          /**
-          * Control within which the tag will be rendered; its ID will be used to generate the element ID
-          */
-        oControl: typings.openui5.sapUiCoreControlMod.default,
-          /**
-          * A CSS class or an array of CSS classes to add to the element
-          */
-        vCssClass: js.Array[String],
-          /**
-          * The image of a configured background image; if this is not given, the theme background will be used and
-          * also the other settings are ignored.
-          */
-        sBgImgUrl: URI,
-          /**
-          * Whether the background image should be repeated/tiled (or stretched)
-          */
-        bRepeat: Boolean
-        ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderBackgroundImageTag")(rm.asInstanceOf[js.Any], oControl.asInstanceOf[js.Any], vCssClass.asInstanceOf[js.Any], sBgImgUrl.asInstanceOf[js.Any], bRepeat.asInstanceOf[js.Any])).asInstanceOf[Unit]
-        inline def renderBackgroundImageTag(
-          /**
-          * The RenderManager
-          */
-        rm: default,
-          /**
-          * Control within which the tag will be rendered; its ID will be used to generate the element ID
-          */
-        oControl: typings.openui5.sapUiCoreControlMod.default,
-          /**
-          * A CSS class or an array of CSS classes to add to the element
-          */
-        vCssClass: js.Array[String],
-          /**
-          * The image of a configured background image; if this is not given, the theme background will be used and
-          * also the other settings are ignored.
-          */
-        sBgImgUrl: URI,
-          /**
-          * Whether the background image should be repeated/tiled (or stretched)
-          */
-        bRepeat: Boolean,
-          /**
-          * The background image opacity, if any
-          */
-        fOpacity: float
-        ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderBackgroundImageTag")(rm.asInstanceOf[js.Any], oControl.asInstanceOf[js.Any], vCssClass.asInstanceOf[js.Any], sBgImgUrl.asInstanceOf[js.Any], bRepeat.asInstanceOf[js.Any], fOpacity.asInstanceOf[js.Any])).asInstanceOf[Unit]
-        inline def renderBackgroundImageTag(
-          /**
-          * The RenderManager
-          */
-        rm: default,
-          /**
-          * Control within which the tag will be rendered; its ID will be used to generate the element ID
-          */
-        oControl: typings.openui5.sapUiCoreControlMod.default,
-          /**
-          * A CSS class or an array of CSS classes to add to the element
-          */
-        vCssClass: js.Array[String],
-          /**
-          * The image of a configured background image; if this is not given, the theme background will be used and
-          * also the other settings are ignored.
-          */
-        sBgImgUrl: URI,
-          /**
-          * Whether the background image should be repeated/tiled (or stretched)
-          */
-        bRepeat: Unit,
-          /**
-          * The background image opacity, if any
-          */
-        fOpacity: float
-        ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderBackgroundImageTag")(rm.asInstanceOf[js.Any], oControl.asInstanceOf[js.Any], vCssClass.asInstanceOf[js.Any], sBgImgUrl.asInstanceOf[js.Any], bRepeat.asInstanceOf[js.Any], fOpacity.asInstanceOf[js.Any])).asInstanceOf[Unit]
-      }
-      
-      /**
-        * @SINCE 1.12
-        *
-        * Helper for Images.
-        */
-      object ImageHelper {
-        
-        @JSGlobal("sap.m.ImageHelper")
-        @js.native
-        val ^ : js.Any = js.native
-        
-        /**
-          * Creates or updates an image control.
-          *
-          * @returns The new or updated image control or icon
-          */
-        inline def getImageControl(
-          /**
-          * UD of the image to be dealt with.
-          */
-        sImgId: String,
-          /**
-          * The image to update. If undefined, a new image will be created.
-          */
-        oImage: typings.openui5.sapMImageMod.default,
-          /**
-          * oImageControl's parentControl.
-          */
-        oParent: typings.openui5.sapUiCoreControlMod.default,
-          /**
-          * Settings for the image control; the `src` property MUST be contained; the keys of the object must be
-          * valid names of image settings
-          */
-        mProperties: js.Object,
-          /**
-          * Array of CSS classes which will be added if the image needs to be created.
-          */
-        aCssClassesToAdd: js.Array[String],
-          /**
-          * All CSS classes that oImageControl has and which are contained in this array are removed before adding
-          * the CSS classes listed in aCssClassesToAdd.
-          */
-        aCssClassesToRemove: js.Array[String]
-        ): typings.openui5.sapMImageMod.default | typings.openui5.sapUiCoreIconMod.default = (^.asInstanceOf[js.Dynamic].applyDynamic("getImageControl")(sImgId.asInstanceOf[js.Any], oImage.asInstanceOf[js.Any], oParent.asInstanceOf[js.Any], mProperties.asInstanceOf[js.Any], aCssClassesToAdd.asInstanceOf[js.Any], aCssClassesToRemove.asInstanceOf[js.Any])).asInstanceOf[typings.openui5.sapMImageMod.default | typings.openui5.sapUiCoreIconMod.default]
-      }
-      
-      /**
-        * @SINCE 1.21.2
-        *
-        * Suggestion helper for `sap.m.Input` fields when used with an OData model.
-        *
-        * Creates a multi-column suggest list for an `sap.m.Input` field based on a `ValueList` annotation. The
-        * `ValueList` annotation will be resolved via the binding information of the input field.
-        *
-        * If the annotation describes multiple input parameters, the suggest provider will resolve all of these
-        * relative to the context of the input field and use them for the suggest query. The suggest provider will
-        * write all values that are described as output parameters back to the model (relative to the context of
-        * the input field). This can only be done if the model runs in "TwoWay" binding mode. Both features can
-        * be switched off via the `bResolveInput/bResolveOutput` parameter of the suggest function.
-        */
-      object InputODataSuggestProvider {
-        
-        @JSGlobal("sap.m.InputODataSuggestProvider")
-        @js.native
-        val ^ : js.Any = js.native
-        
-        inline def suggest(
-          oEvent: typings.openui5.sapUiBaseEventMod.default,
-          /**
-          * SuggestProvider resolves all input parameters for the data query
-          */
-        bResolveInput: Boolean,
-          /**
-          * SuggestProvider writes back all output parameters.
-          */
-        bResolveOutput: Boolean,
-          /**
-          * If iLength is provided only these number of entries will be requested.
-          */
-        iLength: int
-        ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("suggest")(oEvent.asInstanceOf[js.Any], bResolveInput.asInstanceOf[js.Any], bResolveOutput.asInstanceOf[js.Any], iLength.asInstanceOf[js.Any])).asInstanceOf[Unit]
-      }
-      
-      /**
-        * @SINCE 1.16.7
-        *
-        * Helper for Popups.
-        */
-      object PopupHelper {
-        
-        @JSGlobal("sap.m.PopupHelper")
-        @js.native
-        val ^ : js.Any = js.native
-        
-        /**
-          * Converts the given percentage value to an absolute number based on the given base size.
-          *
-          * @returns The calculated size string with "px" as unit or `null` when the format of given parameter is
-          * wrong.
-          */
-        inline def calcPercentageSize(
-          /**
-          * A percentage value in string format, for example "25%"
-          */
-        sPercentage: String,
-          /**
-          * A float number which the calculation is based on.
-          */
-        fBaseSize: float
-        ): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("calcPercentageSize")(sPercentage.asInstanceOf[js.Any], fBaseSize.asInstanceOf[js.Any])).asInstanceOf[String | Null]
-      }
-      
       /**
         * @SINCE 1.48.0
         *
@@ -610,164 +48,6 @@ object global {
       open class SelectionDetailsItemFacade ()
         extends StObject
            with typings.openui5.sap.m.SelectionDetailsItemFacade
-      
-      @JSGlobal("sap.m.Support")
-      @js.native
-      val Support: /* undefined */ Any = js.native
-      
-      /**
-        * @SINCE 1.20
-        *
-        * Hide the soft keyboard.
-        */
-      inline def closeKeyboard(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("closeKeyboard")().asInstanceOf[Unit]
-      
-      /**
-        * @SINCE 1.11
-        *
-        * Search given control's parents and try to find iScroll.
-        *
-        * @returns iScroll reference or `undefined` if cannot find
-        */
-      inline def getIScroll(/**
-        * Control to start the search at
-        */
-      oControl: typings.openui5.sapUiCoreControlMod.default): js.UndefOr[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("getIScroll")(oControl.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Object]]
-      
-      /**
-        * @SINCE 1.10
-        * @deprecated (since 1.12) - UI5 returns null for invalid date
-        *
-        * Returns invalid date value of UI5.
-        *
-        * @returns `null` as value for an invalid date
-        */
-      inline def getInvalidDate(): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getInvalidDate")().asInstanceOf[Null]
-      
-      /**
-        * @SINCE 1.10
-        *
-        * Finds default locale settings once and returns always the same.
-        *
-        * We should not need to create new instance to get same locale settings This method keeps the locale instance
-        * in the scope and returns the same after first run
-        *
-        * @returns Locale instance
-        */
-      inline def getLocale(): typings.openui5.sapUiCoreLocaleMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocale")().asInstanceOf[typings.openui5.sapUiCoreLocaleMod.default]
-      
-      /**
-        * @SINCE 1.10
-        *
-        * Finds default locale data once and returns always the same.
-        *
-        * @returns LocaleData instance
-        */
-      inline def getLocaleData(): typings.openui5.sapUiCoreLocaleDataMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocaleData")().asInstanceOf[typings.openui5.sapUiCoreLocaleDataMod.default]
-      
-      /**
-        * @SINCE 1.11
-        *
-        * Search given control's parents and try to find a ScrollDelegate.
-        *
-        * @returns ScrollDelegate or `undefined` if it cannot be found
-        */
-      inline def getScrollDelegate(
-        /**
-        * Starting point for the search
-        */
-      oControl: typings.openui5.sapUiCoreControlMod.default,
-        /**
-        * Whether the search should stop on component level (`false`) or not
-        */
-      bGlobal: Boolean
-      ): js.UndefOr[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("getScrollDelegate")(oControl.asInstanceOf[js.Any], bGlobal.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Object]]
-      
-      /**
-        * @SINCE 1.10
-        *
-        * Checks if the given parameter is a valid JsDate Object.
-        *
-        * @returns Whether the given parameter is a valid JsDate Object.
-        */
-      inline def isDate(/**
-        * Any variable to test.
-        */
-      value: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDate")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-      
-      /**
-        * Touch helper.
-        */
-      object touch {
-        
-        @JSGlobal("sap.m.touch")
-        @js.native
-        val ^ : js.Any = js.native
-        
-        inline def countContained(
-          /**
-          * The list of touch objects to search.
-          */
-        oTouchList: TouchList,
-          /**
-          * A jQuery element or an element reference or an element id.
-          */
-        vElement: String
-        ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("countContained")(oTouchList.asInstanceOf[js.Any], vElement.asInstanceOf[js.Any])).asInstanceOf[Double]
-        /**
-          * Given a list of touches, count the number of touches related with the given element.
-          *
-          * @returns The number of touches related with the given element.
-          */
-        inline def countContained(
-          /**
-          * The list of touch objects to search.
-          */
-        oTouchList: TouchList,
-          /**
-          * A jQuery element or an element reference or an element id.
-          */
-        vElement: jQuery[HTMLElement]
-        ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("countContained")(oTouchList.asInstanceOf[js.Any], vElement.asInstanceOf[js.Any])).asInstanceOf[Double]
-        inline def countContained(
-          /**
-          * The list of touch objects to search.
-          */
-        oTouchList: TouchList,
-          /**
-          * A jQuery element or an element reference or an element id.
-          */
-        vElement: Element
-        ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("countContained")(oTouchList.asInstanceOf[js.Any], vElement.asInstanceOf[js.Any])).asInstanceOf[Double]
-        
-        inline def find(
-          /**
-          * The list of touch objects to search.
-          */
-        oTouchList: TouchList,
-          /**
-          * A touch object to find or a Touch.identifier that uniquely identifies the current finger in the touch
-          * session.
-          */
-        oTouch: Double
-        ): js.UndefOr[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(oTouchList.asInstanceOf[js.Any], oTouch.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Object]]
-        /**
-          * Given a list of touch objects, find the touch that matches the given one.
-          *
-          * @returns The touch matching if any.
-          */
-        inline def find(
-          /**
-          * The list of touch objects to search.
-          */
-        oTouchList: TouchList,
-          /**
-          * A touch object to find or a Touch.identifier that uniquely identifies the current finger in the touch
-          * session.
-          */
-        oTouch: Touch
-        ): js.UndefOr[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(oTouchList.asInstanceOf[js.Any], oTouch.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Object]]
-      }
     }
     
     /**
@@ -779,990 +59,6 @@ object global {
       @JSGlobal("sap.ui")
       @js.native
       val ^ : js.Any = js.native
-      
-      object Device {
-        
-        /**
-          * Contains information about the used browser.
-          */
-        object browser {
-          
-          /**
-            * Enumeration containing the names of known browsers.
-            */
-          object BROWSER {
-            
-            @JSGlobal("sap.ui.Device.browser.BROWSER.ANDROID")
-            @js.native
-            val ANDROID: /* undefined */ Any = js.native
-            
-            @JSGlobal("sap.ui.Device.browser.BROWSER.CHROME")
-            @js.native
-            val CHROME: /* undefined */ Any = js.native
-            
-            @JSGlobal("sap.ui.Device.browser.BROWSER.FIREFOX")
-            @js.native
-            val FIREFOX: /* undefined */ Any = js.native
-            
-            @JSGlobal("sap.ui.Device.browser.BROWSER.SAFARI")
-            @js.native
-            val SAFARI: /* undefined */ Any = js.native
-          }
-          
-          @JSGlobal("sap.ui.Device.browser.blink")
-          @js.native
-          val blink: Boolean = js.native
-          
-          @JSGlobal("sap.ui.Device.browser.chrome")
-          @js.native
-          val chrome: Boolean = js.native
-          
-          @JSGlobal("sap.ui.Device.browser.firefox")
-          @js.native
-          val firefox: Boolean = js.native
-          
-          @JSGlobal("sap.ui.Device.browser.fullscreen")
-          @js.native
-          val fullscreen: Boolean = js.native
-          
-          @JSGlobal("sap.ui.Device.browser.mobile")
-          @js.native
-          val mobile: Boolean = js.native
-          
-          @JSGlobal("sap.ui.Device.browser.mozilla")
-          @js.native
-          val mozilla: Boolean = js.native
-          
-          @JSGlobal("sap.ui.Device.browser.name")
-          @js.native
-          val name: String = js.native
-          
-          @JSGlobal("sap.ui.Device.browser.safari")
-          @js.native
-          val safari: Boolean = js.native
-          
-          @JSGlobal("sap.ui.Device.browser.version")
-          @js.native
-          val version: float = js.native
-          
-          @JSGlobal("sap.ui.Device.browser.versionStr")
-          @js.native
-          val versionStr: String = js.native
-          
-          @JSGlobal("sap.ui.Device.browser.webkit")
-          @js.native
-          val webkit: Boolean = js.native
-          
-          @JSGlobal("sap.ui.Device.browser.webview")
-          @js.native
-          val webview: Boolean = js.native
-        }
-        
-        /**
-          * Event API for screen width changes.
-          *
-          * This API is based on media queries but can also be used if media queries are not natively supported by
-          * the used browser. In this case, the behavior of media queries is simulated by this API.
-          *
-          * There are several predefined {@link sap.ui.Device.media.RANGESETS range sets} available. Each of them
-          * defines a set of intervals for the screen width (from small to large). Whenever the screen width changes
-          * and the current screen width is in a different interval to the one before the change, the registered
-          * event handlers for the range set are called.
-          *
-          * If needed, it is also possible to define a custom set of intervals.
-          *
-          * The following example shows a typical use case:
-          * ```javascript
-          *
-          * function sizeChanged(mParams) {
-          *     switch(mParams.name) {
-          *         case "Phone":
-          *             // Do what is needed for a little screen
-          *             break;
-          *         case "Tablet":
-          *             // Do what is needed for a medium sized screen
-          *             break;
-          *         case "Desktop":
-          *             // Do what is needed for a large screen
-          *     }
-          * }
-          *
-          * // Register an event handler to changes of the screen size
-          * sap.ui.Device.media.attachHandler(sizeChanged, null, sap.ui.Device.media.RANGESETS.SAP_STANDARD);
-          * // Do some initialization work based on the current size
-          * sizeChanged(sap.ui.Device.media.getCurrentRange(sap.ui.Device.media.RANGESETS.SAP_STANDARD));
-          * ```
-          */
-        object media {
-          
-          @JSGlobal("sap.ui.Device.media")
-          @js.native
-          val ^ : js.Any = js.native
-          
-          /**
-            * Enumeration containing the names and settings of predefined screen width media query range sets.
-            */
-          object RANGESETS {
-            
-            @JSGlobal("sap.ui.Device.media.RANGESETS.SAP_3STEPS")
-            @js.native
-            val SAP_3STEPS: /* undefined */ Any = js.native
-            
-            @JSGlobal("sap.ui.Device.media.RANGESETS.SAP_4STEPS")
-            @js.native
-            val SAP_4STEPS: /* undefined */ Any = js.native
-            
-            @JSGlobal("sap.ui.Device.media.RANGESETS.SAP_6STEPS")
-            @js.native
-            val SAP_6STEPS: /* undefined */ Any = js.native
-            
-            @JSGlobal("sap.ui.Device.media.RANGESETS.SAP_STANDARD")
-            @js.native
-            val SAP_STANDARD: /* undefined */ Any = js.native
-            
-            @JSGlobal("sap.ui.Device.media.RANGESETS.SAP_STANDARD_EXTENDED")
-            @js.native
-            val SAP_STANDARD_EXTENDED: /* undefined */ Any = js.native
-          }
-          
-          /**
-            * Registers the given event handler to change events of the screen width based on the range set with the
-            * specified name.
-            *
-            * The event is fired whenever the screen width changes and the current screen width is in a different interval
-            * of the given range set than before the width change.
-            *
-            * The event handler is called with a single argument: a map `mParams` which provides the following information
-            * about the entered interval:
-            * 	 - `mParams.from`: The start value (inclusive) of the entered interval as a number
-            * 	 - `mParams.to`: The end value (exclusive) range of the entered interval as a number or undefined for
-            * 			the last interval (infinity)
-            * 	 - `mParams.unit`: The unit used for the values above, e.g. `"px"`
-            * 	 - `mParams.name`: The name of the entered interval, if available
-            */
-          inline def attachHandler(
-            /**
-            * The handler function to call when the event occurs. This function will be called in the context of the
-            * `oListener` instance (if present) or on the `window` instance. A map with information about the entered
-            * range set is provided as a single argument to the handler (see details above).
-            */
-          fnFunction: js.Function1[/* p1 */ To, Unit]
-          ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("attachHandler")(fnFunction.asInstanceOf[js.Any]).asInstanceOf[Unit]
-          inline def attachHandler(
-            /**
-            * The handler function to call when the event occurs. This function will be called in the context of the
-            * `oListener` instance (if present) or on the `window` instance. A map with information about the entered
-            * range set is provided as a single argument to the handler (see details above).
-            */
-          fnFunction: js.Function1[/* p1 */ To, Unit],
-            /**
-            * The object that wants to be notified when the event occurs (`this` context within the handler function).
-            * If it is not specified, the handler function is called in the context of the `window`.
-            */
-          oListener: js.Object
-          ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("attachHandler")(fnFunction.asInstanceOf[js.Any], oListener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-          inline def attachHandler(
-            /**
-            * The handler function to call when the event occurs. This function will be called in the context of the
-            * `oListener` instance (if present) or on the `window` instance. A map with information about the entered
-            * range set is provided as a single argument to the handler (see details above).
-            */
-          fnFunction: js.Function1[/* p1 */ To, Unit],
-            /**
-            * The object that wants to be notified when the event occurs (`this` context within the handler function).
-            * If it is not specified, the handler function is called in the context of the `window`.
-            */
-          oListener: js.Object,
-            /**
-            * The name of the range set to listen to. The range set must be initialized beforehand ({@link sap.ui.Device.media.initRangeSet}).
-            * If no name is provided, the {@link sap.ui.Device.media.RANGESETS.SAP_STANDARD default range set} is used.
-            */
-          sName: String
-          ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("attachHandler")(fnFunction.asInstanceOf[js.Any], oListener.asInstanceOf[js.Any], sName.asInstanceOf[js.Any])).asInstanceOf[Unit]
-          inline def attachHandler(
-            /**
-            * The handler function to call when the event occurs. This function will be called in the context of the
-            * `oListener` instance (if present) or on the `window` instance. A map with information about the entered
-            * range set is provided as a single argument to the handler (see details above).
-            */
-          fnFunction: js.Function1[/* p1 */ To, Unit],
-            /**
-            * The object that wants to be notified when the event occurs (`this` context within the handler function).
-            * If it is not specified, the handler function is called in the context of the `window`.
-            */
-          oListener: Unit,
-            /**
-            * The name of the range set to listen to. The range set must be initialized beforehand ({@link sap.ui.Device.media.initRangeSet}).
-            * If no name is provided, the {@link sap.ui.Device.media.RANGESETS.SAP_STANDARD default range set} is used.
-            */
-          sName: String
-          ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("attachHandler")(fnFunction.asInstanceOf[js.Any], oListener.asInstanceOf[js.Any], sName.asInstanceOf[js.Any])).asInstanceOf[Unit]
-          
-          /**
-            * Removes a previously attached event handler from the change events of the screen width.
-            *
-            * The passed parameters must match those used for registration with {@link #.attachHandler} beforehand.
-            */
-          inline def detachHandler(/**
-            * The handler function to detach from the event
-            */
-          fnFunction: js.Function): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("detachHandler")(fnFunction.asInstanceOf[js.Any]).asInstanceOf[Unit]
-          inline def detachHandler(
-            /**
-            * The handler function to detach from the event
-            */
-          fnFunction: js.Function,
-            /**
-            * The object that wanted to be notified when the event occurred
-            */
-          oListener: js.Object
-          ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("detachHandler")(fnFunction.asInstanceOf[js.Any], oListener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-          inline def detachHandler(
-            /**
-            * The handler function to detach from the event
-            */
-          fnFunction: js.Function,
-            /**
-            * The object that wanted to be notified when the event occurred
-            */
-          oListener: js.Object,
-            /**
-            * The name of the range set to listen to. If no name is provided, the {@link sap.ui.Device.media.RANGESETS.SAP_STANDARD
-            * default range set} is used.
-            */
-          sName: String
-          ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("detachHandler")(fnFunction.asInstanceOf[js.Any], oListener.asInstanceOf[js.Any], sName.asInstanceOf[js.Any])).asInstanceOf[Unit]
-          inline def detachHandler(
-            /**
-            * The handler function to detach from the event
-            */
-          fnFunction: js.Function,
-            /**
-            * The object that wanted to be notified when the event occurred
-            */
-          oListener: Unit,
-            /**
-            * The name of the range set to listen to. If no name is provided, the {@link sap.ui.Device.media.RANGESETS.SAP_STANDARD
-            * default range set} is used.
-            */
-          sName: String
-          ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("detachHandler")(fnFunction.asInstanceOf[js.Any], oListener.asInstanceOf[js.Any], sName.asInstanceOf[js.Any])).asInstanceOf[Unit]
-          
-          /**
-            * Returns information about the current active range of the range set with the given name.
-            *
-            * If the optional parameter `iWidth` is given, the active range will be determined for that width, otherwise
-            * it is determined for the current window size.
-            *
-            * @returns Information about the current active interval of the range set. The returned object has the
-            * same structure as the argument of the event handlers ({@link sap.ui.Device.media.attachHandler})
-            */
-          inline def getCurrentRange(
-            /**
-            * The name of the range set. The range set must be initialized beforehand ({@link sap.ui.Device.media.initRangeSet})
-            */
-          sName: String
-          ): To = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentRange")(sName.asInstanceOf[js.Any]).asInstanceOf[To]
-          inline def getCurrentRange(
-            /**
-            * The name of the range set. The range set must be initialized beforehand ({@link sap.ui.Device.media.initRangeSet})
-            */
-          sName: String,
-            /**
-            * An optional width, based on which the range should be determined; If `iWidth` is not a number, the window
-            * size will be used.
-            */
-          iWidth: int
-          ): To = (^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentRange")(sName.asInstanceOf[js.Any], iWidth.asInstanceOf[js.Any])).asInstanceOf[To]
-          
-          /**
-            * Returns `true` if a range set with the given name is already initialized.
-            *
-            * @returns Returns `true` if a range set with the given name is already initialized
-            */
-          inline def hasRangeSet(/**
-            * The name of the range set.
-            */
-          sName: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasRangeSet")(sName.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-          
-          /**
-            * Initializes a screen width media query range set.
-            *
-            * This initialization step makes the range set ready to be used for one of the other functions in namespace
-            * `sap.ui.Device.media`. The most important {@link sap.ui.Device.media.RANGESETS predefined range sets}
-            * are initialized automatically.
-            *
-            * To make a not yet initialized {@link sap.ui.Device.media.RANGESETS predefined range set} ready to be
-            * used, call this function with the name of the range set to be initialized:
-            * ```javascript
-            *
-            * sap.ui.Device.media.initRangeSet(sap.ui.Device.media.RANGESETS.SAP_3STEPS);
-            * ```
-            *
-            *
-            * Alternatively it is possible to define custom range sets as shown in the following example:
-            * ```javascript
-            *
-            * sap.ui.Device.media.initRangeSet("MyRangeSet", [200, 400], "px", ["Small", "Medium", "Large"]);
-            * ```
-            *  This example defines the following named ranges:
-            * 	 - `"Small"`: For screens smaller than 200 pixels.
-            * 	 - `"Medium"`: For screens greater than or equal to 200 pixels and smaller than 400 pixels.
-            * 	 - `"Large"`: For screens greater than or equal to 400 pixels.  The range names are optional. If
-            * 			they are specified a CSS class (e.g. `sapUiMedia-MyRangeSet-Small`) is also added to the document root
-            * 			depending on the current active range. This can be suppressed via parameter `bSuppressClasses`.
-            */
-          inline def initRangeSet(
-            /**
-            * The name of the range set to be initialized - either a {@link sap.ui.Device.media.RANGESETS predefined}
-            * or custom one. The name must be a valid id and consist only of letters and numeric digits.
-            */
-          sName: String
-          ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initRangeSet")(sName.asInstanceOf[js.Any]).asInstanceOf[Unit]
-          inline def initRangeSet(
-            /**
-            * The name of the range set to be initialized - either a {@link sap.ui.Device.media.RANGESETS predefined}
-            * or custom one. The name must be a valid id and consist only of letters and numeric digits.
-            */
-          sName: String,
-            /**
-            * The range borders
-            */
-          aRangeBorders: js.Array[int]
-          ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initRangeSet")(sName.asInstanceOf[js.Any], aRangeBorders.asInstanceOf[js.Any])).asInstanceOf[Unit]
-          inline def initRangeSet(
-            /**
-            * The name of the range set to be initialized - either a {@link sap.ui.Device.media.RANGESETS predefined}
-            * or custom one. The name must be a valid id and consist only of letters and numeric digits.
-            */
-          sName: String,
-            /**
-            * The range borders
-            */
-          aRangeBorders: js.Array[int],
-            /**
-            * The unit which should be used for the values given in `aRangeBorders`. The allowed values are `"px"`
-            * (default), `"em"` or `"rem"`
-            */
-          sUnit: String
-          ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initRangeSet")(sName.asInstanceOf[js.Any], aRangeBorders.asInstanceOf[js.Any], sUnit.asInstanceOf[js.Any])).asInstanceOf[Unit]
-          inline def initRangeSet(
-            /**
-            * The name of the range set to be initialized - either a {@link sap.ui.Device.media.RANGESETS predefined}
-            * or custom one. The name must be a valid id and consist only of letters and numeric digits.
-            */
-          sName: String,
-            /**
-            * The range borders
-            */
-          aRangeBorders: js.Array[int],
-            /**
-            * The unit which should be used for the values given in `aRangeBorders`. The allowed values are `"px"`
-            * (default), `"em"` or `"rem"`
-            */
-          sUnit: String,
-            /**
-            * The names of the ranges. The names must be a valid id and consist only of letters and digits. If names
-            * are specified, CSS classes are also added to the document root as described above. This behavior can
-            * be switched off explicitly by using `bSuppressClasses`. **Note:** `aRangeBorders` with `n` entries define
-            * `n+1` ranges. Therefore `n+1` names must be provided.
-            */
-          aRangeNames: js.Array[String]
-          ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initRangeSet")(sName.asInstanceOf[js.Any], aRangeBorders.asInstanceOf[js.Any], sUnit.asInstanceOf[js.Any], aRangeNames.asInstanceOf[js.Any])).asInstanceOf[Unit]
-          inline def initRangeSet(
-            /**
-            * The name of the range set to be initialized - either a {@link sap.ui.Device.media.RANGESETS predefined}
-            * or custom one. The name must be a valid id and consist only of letters and numeric digits.
-            */
-          sName: String,
-            /**
-            * The range borders
-            */
-          aRangeBorders: js.Array[int],
-            /**
-            * The unit which should be used for the values given in `aRangeBorders`. The allowed values are `"px"`
-            * (default), `"em"` or `"rem"`
-            */
-          sUnit: String,
-            /**
-            * The names of the ranges. The names must be a valid id and consist only of letters and digits. If names
-            * are specified, CSS classes are also added to the document root as described above. This behavior can
-            * be switched off explicitly by using `bSuppressClasses`. **Note:** `aRangeBorders` with `n` entries define
-            * `n+1` ranges. Therefore `n+1` names must be provided.
-            */
-          aRangeNames: js.Array[String],
-            /**
-            * Whether or not writing of CSS classes to the document root should be suppressed when `aRangeNames` are
-            * provided
-            */
-          bSuppressClasses: Boolean
-          ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initRangeSet")(sName.asInstanceOf[js.Any], aRangeBorders.asInstanceOf[js.Any], sUnit.asInstanceOf[js.Any], aRangeNames.asInstanceOf[js.Any], bSuppressClasses.asInstanceOf[js.Any])).asInstanceOf[Unit]
-          inline def initRangeSet(
-            /**
-            * The name of the range set to be initialized - either a {@link sap.ui.Device.media.RANGESETS predefined}
-            * or custom one. The name must be a valid id and consist only of letters and numeric digits.
-            */
-          sName: String,
-            /**
-            * The range borders
-            */
-          aRangeBorders: js.Array[int],
-            /**
-            * The unit which should be used for the values given in `aRangeBorders`. The allowed values are `"px"`
-            * (default), `"em"` or `"rem"`
-            */
-          sUnit: String,
-            /**
-            * The names of the ranges. The names must be a valid id and consist only of letters and digits. If names
-            * are specified, CSS classes are also added to the document root as described above. This behavior can
-            * be switched off explicitly by using `bSuppressClasses`. **Note:** `aRangeBorders` with `n` entries define
-            * `n+1` ranges. Therefore `n+1` names must be provided.
-            */
-          aRangeNames: Unit,
-            /**
-            * Whether or not writing of CSS classes to the document root should be suppressed when `aRangeNames` are
-            * provided
-            */
-          bSuppressClasses: Boolean
-          ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initRangeSet")(sName.asInstanceOf[js.Any], aRangeBorders.asInstanceOf[js.Any], sUnit.asInstanceOf[js.Any], aRangeNames.asInstanceOf[js.Any], bSuppressClasses.asInstanceOf[js.Any])).asInstanceOf[Unit]
-          inline def initRangeSet(
-            /**
-            * The name of the range set to be initialized - either a {@link sap.ui.Device.media.RANGESETS predefined}
-            * or custom one. The name must be a valid id and consist only of letters and numeric digits.
-            */
-          sName: String,
-            /**
-            * The range borders
-            */
-          aRangeBorders: js.Array[int],
-            /**
-            * The unit which should be used for the values given in `aRangeBorders`. The allowed values are `"px"`
-            * (default), `"em"` or `"rem"`
-            */
-          sUnit: Unit,
-            /**
-            * The names of the ranges. The names must be a valid id and consist only of letters and digits. If names
-            * are specified, CSS classes are also added to the document root as described above. This behavior can
-            * be switched off explicitly by using `bSuppressClasses`. **Note:** `aRangeBorders` with `n` entries define
-            * `n+1` ranges. Therefore `n+1` names must be provided.
-            */
-          aRangeNames: js.Array[String]
-          ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initRangeSet")(sName.asInstanceOf[js.Any], aRangeBorders.asInstanceOf[js.Any], sUnit.asInstanceOf[js.Any], aRangeNames.asInstanceOf[js.Any])).asInstanceOf[Unit]
-          inline def initRangeSet(
-            /**
-            * The name of the range set to be initialized - either a {@link sap.ui.Device.media.RANGESETS predefined}
-            * or custom one. The name must be a valid id and consist only of letters and numeric digits.
-            */
-          sName: String,
-            /**
-            * The range borders
-            */
-          aRangeBorders: js.Array[int],
-            /**
-            * The unit which should be used for the values given in `aRangeBorders`. The allowed values are `"px"`
-            * (default), `"em"` or `"rem"`
-            */
-          sUnit: Unit,
-            /**
-            * The names of the ranges. The names must be a valid id and consist only of letters and digits. If names
-            * are specified, CSS classes are also added to the document root as described above. This behavior can
-            * be switched off explicitly by using `bSuppressClasses`. **Note:** `aRangeBorders` with `n` entries define
-            * `n+1` ranges. Therefore `n+1` names must be provided.
-            */
-          aRangeNames: js.Array[String],
-            /**
-            * Whether or not writing of CSS classes to the document root should be suppressed when `aRangeNames` are
-            * provided
-            */
-          bSuppressClasses: Boolean
-          ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initRangeSet")(sName.asInstanceOf[js.Any], aRangeBorders.asInstanceOf[js.Any], sUnit.asInstanceOf[js.Any], aRangeNames.asInstanceOf[js.Any], bSuppressClasses.asInstanceOf[js.Any])).asInstanceOf[Unit]
-          inline def initRangeSet(
-            /**
-            * The name of the range set to be initialized - either a {@link sap.ui.Device.media.RANGESETS predefined}
-            * or custom one. The name must be a valid id and consist only of letters and numeric digits.
-            */
-          sName: String,
-            /**
-            * The range borders
-            */
-          aRangeBorders: js.Array[int],
-            /**
-            * The unit which should be used for the values given in `aRangeBorders`. The allowed values are `"px"`
-            * (default), `"em"` or `"rem"`
-            */
-          sUnit: Unit,
-            /**
-            * The names of the ranges. The names must be a valid id and consist only of letters and digits. If names
-            * are specified, CSS classes are also added to the document root as described above. This behavior can
-            * be switched off explicitly by using `bSuppressClasses`. **Note:** `aRangeBorders` with `n` entries define
-            * `n+1` ranges. Therefore `n+1` names must be provided.
-            */
-          aRangeNames: Unit,
-            /**
-            * Whether or not writing of CSS classes to the document root should be suppressed when `aRangeNames` are
-            * provided
-            */
-          bSuppressClasses: Boolean
-          ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initRangeSet")(sName.asInstanceOf[js.Any], aRangeBorders.asInstanceOf[js.Any], sUnit.asInstanceOf[js.Any], aRangeNames.asInstanceOf[js.Any], bSuppressClasses.asInstanceOf[js.Any])).asInstanceOf[Unit]
-          inline def initRangeSet(
-            /**
-            * The name of the range set to be initialized - either a {@link sap.ui.Device.media.RANGESETS predefined}
-            * or custom one. The name must be a valid id and consist only of letters and numeric digits.
-            */
-          sName: String,
-            /**
-            * The range borders
-            */
-          aRangeBorders: Unit,
-            /**
-            * The unit which should be used for the values given in `aRangeBorders`. The allowed values are `"px"`
-            * (default), `"em"` or `"rem"`
-            */
-          sUnit: String
-          ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initRangeSet")(sName.asInstanceOf[js.Any], aRangeBorders.asInstanceOf[js.Any], sUnit.asInstanceOf[js.Any])).asInstanceOf[Unit]
-          inline def initRangeSet(
-            /**
-            * The name of the range set to be initialized - either a {@link sap.ui.Device.media.RANGESETS predefined}
-            * or custom one. The name must be a valid id and consist only of letters and numeric digits.
-            */
-          sName: String,
-            /**
-            * The range borders
-            */
-          aRangeBorders: Unit,
-            /**
-            * The unit which should be used for the values given in `aRangeBorders`. The allowed values are `"px"`
-            * (default), `"em"` or `"rem"`
-            */
-          sUnit: String,
-            /**
-            * The names of the ranges. The names must be a valid id and consist only of letters and digits. If names
-            * are specified, CSS classes are also added to the document root as described above. This behavior can
-            * be switched off explicitly by using `bSuppressClasses`. **Note:** `aRangeBorders` with `n` entries define
-            * `n+1` ranges. Therefore `n+1` names must be provided.
-            */
-          aRangeNames: js.Array[String]
-          ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initRangeSet")(sName.asInstanceOf[js.Any], aRangeBorders.asInstanceOf[js.Any], sUnit.asInstanceOf[js.Any], aRangeNames.asInstanceOf[js.Any])).asInstanceOf[Unit]
-          inline def initRangeSet(
-            /**
-            * The name of the range set to be initialized - either a {@link sap.ui.Device.media.RANGESETS predefined}
-            * or custom one. The name must be a valid id and consist only of letters and numeric digits.
-            */
-          sName: String,
-            /**
-            * The range borders
-            */
-          aRangeBorders: Unit,
-            /**
-            * The unit which should be used for the values given in `aRangeBorders`. The allowed values are `"px"`
-            * (default), `"em"` or `"rem"`
-            */
-          sUnit: String,
-            /**
-            * The names of the ranges. The names must be a valid id and consist only of letters and digits. If names
-            * are specified, CSS classes are also added to the document root as described above. This behavior can
-            * be switched off explicitly by using `bSuppressClasses`. **Note:** `aRangeBorders` with `n` entries define
-            * `n+1` ranges. Therefore `n+1` names must be provided.
-            */
-          aRangeNames: js.Array[String],
-            /**
-            * Whether or not writing of CSS classes to the document root should be suppressed when `aRangeNames` are
-            * provided
-            */
-          bSuppressClasses: Boolean
-          ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initRangeSet")(sName.asInstanceOf[js.Any], aRangeBorders.asInstanceOf[js.Any], sUnit.asInstanceOf[js.Any], aRangeNames.asInstanceOf[js.Any], bSuppressClasses.asInstanceOf[js.Any])).asInstanceOf[Unit]
-          inline def initRangeSet(
-            /**
-            * The name of the range set to be initialized - either a {@link sap.ui.Device.media.RANGESETS predefined}
-            * or custom one. The name must be a valid id and consist only of letters and numeric digits.
-            */
-          sName: String,
-            /**
-            * The range borders
-            */
-          aRangeBorders: Unit,
-            /**
-            * The unit which should be used for the values given in `aRangeBorders`. The allowed values are `"px"`
-            * (default), `"em"` or `"rem"`
-            */
-          sUnit: String,
-            /**
-            * The names of the ranges. The names must be a valid id and consist only of letters and digits. If names
-            * are specified, CSS classes are also added to the document root as described above. This behavior can
-            * be switched off explicitly by using `bSuppressClasses`. **Note:** `aRangeBorders` with `n` entries define
-            * `n+1` ranges. Therefore `n+1` names must be provided.
-            */
-          aRangeNames: Unit,
-            /**
-            * Whether or not writing of CSS classes to the document root should be suppressed when `aRangeNames` are
-            * provided
-            */
-          bSuppressClasses: Boolean
-          ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initRangeSet")(sName.asInstanceOf[js.Any], aRangeBorders.asInstanceOf[js.Any], sUnit.asInstanceOf[js.Any], aRangeNames.asInstanceOf[js.Any], bSuppressClasses.asInstanceOf[js.Any])).asInstanceOf[Unit]
-          inline def initRangeSet(
-            /**
-            * The name of the range set to be initialized - either a {@link sap.ui.Device.media.RANGESETS predefined}
-            * or custom one. The name must be a valid id and consist only of letters and numeric digits.
-            */
-          sName: String,
-            /**
-            * The range borders
-            */
-          aRangeBorders: Unit,
-            /**
-            * The unit which should be used for the values given in `aRangeBorders`. The allowed values are `"px"`
-            * (default), `"em"` or `"rem"`
-            */
-          sUnit: Unit,
-            /**
-            * The names of the ranges. The names must be a valid id and consist only of letters and digits. If names
-            * are specified, CSS classes are also added to the document root as described above. This behavior can
-            * be switched off explicitly by using `bSuppressClasses`. **Note:** `aRangeBorders` with `n` entries define
-            * `n+1` ranges. Therefore `n+1` names must be provided.
-            */
-          aRangeNames: js.Array[String]
-          ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initRangeSet")(sName.asInstanceOf[js.Any], aRangeBorders.asInstanceOf[js.Any], sUnit.asInstanceOf[js.Any], aRangeNames.asInstanceOf[js.Any])).asInstanceOf[Unit]
-          inline def initRangeSet(
-            /**
-            * The name of the range set to be initialized - either a {@link sap.ui.Device.media.RANGESETS predefined}
-            * or custom one. The name must be a valid id and consist only of letters and numeric digits.
-            */
-          sName: String,
-            /**
-            * The range borders
-            */
-          aRangeBorders: Unit,
-            /**
-            * The unit which should be used for the values given in `aRangeBorders`. The allowed values are `"px"`
-            * (default), `"em"` or `"rem"`
-            */
-          sUnit: Unit,
-            /**
-            * The names of the ranges. The names must be a valid id and consist only of letters and digits. If names
-            * are specified, CSS classes are also added to the document root as described above. This behavior can
-            * be switched off explicitly by using `bSuppressClasses`. **Note:** `aRangeBorders` with `n` entries define
-            * `n+1` ranges. Therefore `n+1` names must be provided.
-            */
-          aRangeNames: js.Array[String],
-            /**
-            * Whether or not writing of CSS classes to the document root should be suppressed when `aRangeNames` are
-            * provided
-            */
-          bSuppressClasses: Boolean
-          ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initRangeSet")(sName.asInstanceOf[js.Any], aRangeBorders.asInstanceOf[js.Any], sUnit.asInstanceOf[js.Any], aRangeNames.asInstanceOf[js.Any], bSuppressClasses.asInstanceOf[js.Any])).asInstanceOf[Unit]
-          inline def initRangeSet(
-            /**
-            * The name of the range set to be initialized - either a {@link sap.ui.Device.media.RANGESETS predefined}
-            * or custom one. The name must be a valid id and consist only of letters and numeric digits.
-            */
-          sName: String,
-            /**
-            * The range borders
-            */
-          aRangeBorders: Unit,
-            /**
-            * The unit which should be used for the values given in `aRangeBorders`. The allowed values are `"px"`
-            * (default), `"em"` or `"rem"`
-            */
-          sUnit: Unit,
-            /**
-            * The names of the ranges. The names must be a valid id and consist only of letters and digits. If names
-            * are specified, CSS classes are also added to the document root as described above. This behavior can
-            * be switched off explicitly by using `bSuppressClasses`. **Note:** `aRangeBorders` with `n` entries define
-            * `n+1` ranges. Therefore `n+1` names must be provided.
-            */
-          aRangeNames: Unit,
-            /**
-            * Whether or not writing of CSS classes to the document root should be suppressed when `aRangeNames` are
-            * provided
-            */
-          bSuppressClasses: Boolean
-          ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initRangeSet")(sName.asInstanceOf[js.Any], aRangeBorders.asInstanceOf[js.Any], sUnit.asInstanceOf[js.Any], aRangeNames.asInstanceOf[js.Any], bSuppressClasses.asInstanceOf[js.Any])).asInstanceOf[Unit]
-          
-          /**
-            * Removes a previously initialized range set and detaches all registered handlers.
-            *
-            * Only custom range sets can be removed via this function. Initialized predefined range sets ({@link sap.ui.Device.media.RANGESETS})
-            * cannot be removed.
-            */
-          inline def removeRangeSet(/**
-            * The name of the range set which should be removed.
-            */
-          sName: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeRangeSet")(sName.asInstanceOf[js.Any]).asInstanceOf[Unit]
-        }
-        
-        /**
-          * Common API for orientation change notifications across all platforms.
-          *
-          * For browsers or devices that do not provide native support for orientation change events the API simulates
-          * them based on the ratio of the document's width and height.
-          */
-        object orientation {
-          
-          @JSGlobal("sap.ui.Device.orientation")
-          @js.native
-          val ^ : js.Any = js.native
-          
-          /**
-            * Registers the given event handler to orientation change events of the document's window.
-            *
-            * The event is fired whenever the screen orientation changes and the width of the document's window becomes
-            * greater than its height or the other way round.
-            *
-            * The event handler is called with a single argument: a map `mParams` which provides the following information:
-            *
-            * 	 - `mParams.landscape`: If this flag is set to `true`, the screen is currently in landscape mode, otherwise
-            * 			in portrait mode.
-            */
-          inline def attachHandler(
-            /**
-            * The handler function to call when the event occurs. This function will be called in the context of the
-            * `oListener` instance (if present) or on the `window` instance. A map with information about the orientation
-            * is provided as a single argument to the handler (see details above).
-            */
-          fnFunction: js.Function
-          ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("attachHandler")(fnFunction.asInstanceOf[js.Any]).asInstanceOf[Unit]
-          inline def attachHandler(
-            /**
-            * The handler function to call when the event occurs. This function will be called in the context of the
-            * `oListener` instance (if present) or on the `window` instance. A map with information about the orientation
-            * is provided as a single argument to the handler (see details above).
-            */
-          fnFunction: js.Function,
-            /**
-            * The object that wants to be notified when the event occurs (`this` context within the handler function).
-            * If it is not specified, the handler function is called in the context of the `window`.
-            */
-          oListener: js.Object
-          ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("attachHandler")(fnFunction.asInstanceOf[js.Any], oListener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-          
-          /**
-            * Removes a previously attached event handler from the orientation change events.
-            *
-            * The passed parameters must match those used for registration with {@link #.attachHandler} beforehand.
-            */
-          inline def detachHandler(/**
-            * The handler function to detach from the event
-            */
-          fnFunction: js.Function): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("detachHandler")(fnFunction.asInstanceOf[js.Any]).asInstanceOf[Unit]
-          inline def detachHandler(
-            /**
-            * The handler function to detach from the event
-            */
-          fnFunction: js.Function,
-            /**
-            * The object that wanted to be notified when the event occurred
-            */
-          oListener: js.Object
-          ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("detachHandler")(fnFunction.asInstanceOf[js.Any], oListener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-          
-          @JSGlobal("sap.ui.Device.orientation.landscape")
-          @js.native
-          val landscape: Boolean = js.native
-          
-          @JSGlobal("sap.ui.Device.orientation.portrait")
-          @js.native
-          val portrait: Boolean = js.native
-        }
-        
-        /**
-          * Contains information about the operating system of the Device.
-          */
-        object os {
-          
-          /**
-            * Enumeration containing the names of known operating systems.
-            */
-          object OS {
-            
-            @JSGlobal("sap.ui.Device.os.OS.ANDROID")
-            @js.native
-            val ANDROID: /* undefined */ Any = js.native
-            
-            @JSGlobal("sap.ui.Device.os.OS.IOS")
-            @js.native
-            val IOS: /* undefined */ Any = js.native
-            
-            @JSGlobal("sap.ui.Device.os.OS.LINUX")
-            @js.native
-            val LINUX: /* undefined */ Any = js.native
-            
-            @JSGlobal("sap.ui.Device.os.OS.MACINTOSH")
-            @js.native
-            val MACINTOSH: /* undefined */ Any = js.native
-            
-            @JSGlobal("sap.ui.Device.os.OS.WINDOWS")
-            @js.native
-            val WINDOWS: /* undefined */ Any = js.native
-          }
-          
-          @JSGlobal("sap.ui.Device.os.android")
-          @js.native
-          val android: Boolean = js.native
-          
-          @JSGlobal("sap.ui.Device.os.ios")
-          @js.native
-          val ios: Boolean = js.native
-          
-          @JSGlobal("sap.ui.Device.os.linux")
-          @js.native
-          val linux: Boolean = js.native
-          
-          @JSGlobal("sap.ui.Device.os.macintosh")
-          @js.native
-          val macintosh: Boolean = js.native
-          
-          @JSGlobal("sap.ui.Device.os.name")
-          @js.native
-          val name: String = js.native
-          
-          @JSGlobal("sap.ui.Device.os.version")
-          @js.native
-          val version: float = js.native
-          
-          @JSGlobal("sap.ui.Device.os.versionStr")
-          @js.native
-          val versionStr: String = js.native
-          
-          @JSGlobal("sap.ui.Device.os.windows")
-          @js.native
-          val windows: Boolean = js.native
-        }
-        
-        /**
-          * Common API for document window size change notifications across all platforms.
-          */
-        object resize {
-          
-          @JSGlobal("sap.ui.Device.resize")
-          @js.native
-          val ^ : js.Any = js.native
-          
-          /**
-            * Registers the given event handler to resize change events of the document's window.
-            *
-            * The event is fired whenever the document's window size changes.
-            *
-            * The event handler is called with a single argument: a map `mParams` which provides the following information:
-            *
-            * 	 - `mParams.height`: The height of the document's window in pixels.
-            * 	 - `mParams.width`: The width of the document's window in pixels.
-            */
-          inline def attachHandler(
-            /**
-            * The handler function to call when the event occurs. This function will be called in the context of the
-            * `oListener` instance (if present) or on the `window` instance. A map with information about the size
-            * is provided as a single argument to the handler (see details above).
-            */
-          fnFunction: js.Function
-          ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("attachHandler")(fnFunction.asInstanceOf[js.Any]).asInstanceOf[Unit]
-          inline def attachHandler(
-            /**
-            * The handler function to call when the event occurs. This function will be called in the context of the
-            * `oListener` instance (if present) or on the `window` instance. A map with information about the size
-            * is provided as a single argument to the handler (see details above).
-            */
-          fnFunction: js.Function,
-            /**
-            * The object that wants to be notified when the event occurs (`this` context within the handler function).
-            * If it is not specified, the handler function is called in the context of the `window`.
-            */
-          oListener: js.Object
-          ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("attachHandler")(fnFunction.asInstanceOf[js.Any], oListener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-          
-          /**
-            * Removes a previously attached event handler from the resize events.
-            *
-            * The passed parameters must match those used for registration with {@link #.attachHandler} beforehand.
-            */
-          inline def detachHandler(/**
-            * The handler function to detach from the event
-            */
-          fnFunction: js.Function): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("detachHandler")(fnFunction.asInstanceOf[js.Any]).asInstanceOf[Unit]
-          inline def detachHandler(
-            /**
-            * The handler function to detach from the event
-            */
-          fnFunction: js.Function,
-            /**
-            * The object that wanted to be notified when the event occurred
-            */
-          oListener: js.Object
-          ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("detachHandler")(fnFunction.asInstanceOf[js.Any], oListener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-          
-          @JSGlobal("sap.ui.Device.resize.height")
-          @js.native
-          val height: int = js.native
-          
-          @JSGlobal("sap.ui.Device.resize.width")
-          @js.native
-          val width: int = js.native
-        }
-        
-        /**
-          * Contains information about detected capabilities of the used browser or Device.
-          */
-        object support {
-          
-          @JSGlobal("sap.ui.Device.support.matchmedia")
-          @js.native
-          val matchmedia: Boolean = js.native
-          
-          @JSGlobal("sap.ui.Device.support.matchmedialistener")
-          @js.native
-          val matchmedialistener: Boolean = js.native
-          
-          @JSGlobal("sap.ui.Device.support.orientation")
-          @js.native
-          val orientation: Boolean = js.native
-          
-          @JSGlobal("sap.ui.Device.support.pointer")
-          @js.native
-          val pointer: Boolean = js.native
-          
-          @JSGlobal("sap.ui.Device.support.retina")
-          @js.native
-          val retina: Boolean = js.native
-          
-          @JSGlobal("sap.ui.Device.support.touch")
-          @js.native
-          val touch: Boolean = js.native
-          
-          @JSGlobal("sap.ui.Device.support.websocket")
-          @js.native
-          val websocket: Boolean = js.native
-        }
-        
-        /**
-          * Provides a basic categorization of the used device based on various indicators.
-          *
-          * These indicators are, for example, the support of touch events, the used operating system, and the user
-          * agent of the browser.
-          *
-          * **Note:** There is no easy way to precisely determine the used device from the information provided by
-          * the browser. We therefore rely especially on the user agent. In combination with given device capabilities,
-          * it is therefore possible that multiple flags are set to `true`. This is mostly the case for desktop devices
-          * with touch capability, and for mobile devices requesting web pages as desktop pages.
-          */
-        object system {
-          
-          @JSGlobal("sap.ui.Device.system.combi")
-          @js.native
-          val combi: Boolean = js.native
-          
-          @JSGlobal("sap.ui.Device.system.desktop")
-          @js.native
-          val desktop: Boolean = js.native
-          
-          @JSGlobal("sap.ui.Device.system.phone")
-          @js.native
-          val phone: Boolean = js.native
-          
-          @JSGlobal("sap.ui.Device.system.tablet")
-          @js.native
-          val tablet: Boolean = js.native
-        }
-      }
       
       object component {
         
@@ -1801,13 +97,13 @@ object global {
           * ID of an existing Component or the configuration object to create the Component
           */
         vConfig: String
-        ): typings.openui5.sapUiCoreComponentMod.default | js.Promise[Any] = ^.asInstanceOf[js.Dynamic].apply(vConfig.asInstanceOf[js.Any]).asInstanceOf[typings.openui5.sapUiCoreComponentMod.default | js.Promise[Any]]
+        ): default | js.Promise[Any] = ^.asInstanceOf[js.Dynamic].apply(vConfig.asInstanceOf[js.Any]).asInstanceOf[default | js.Promise[Any]]
         inline def apply(
           /**
           * ID of an existing Component or the configuration object to create the Component
           */
         vConfig: HandleValidation
-        ): typings.openui5.sapUiCoreComponentMod.default | js.Promise[Any] = ^.asInstanceOf[js.Dynamic].apply(vConfig.asInstanceOf[js.Any]).asInstanceOf[typings.openui5.sapUiCoreComponentMod.default | js.Promise[Any]]
+        ): default | js.Promise[Any] = ^.asInstanceOf[js.Dynamic].apply(vConfig.asInstanceOf[js.Any]).asInstanceOf[default | js.Promise[Any]]
         
         @JSGlobal("sap.ui.component")
         @js.native
@@ -1929,68 +225,6 @@ object global {
         */
       bAsync: Boolean
       ): Unit | typings.openui5.sapUiCoreMvcControllerMod.default | js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("controller")(sName.asInstanceOf[js.Any], oControllerImpl.asInstanceOf[js.Any], bAsync.asInstanceOf[js.Any])).asInstanceOf[Unit | typings.openui5.sapUiCoreMvcControllerMod.default | js.Promise[Any]]
-      
-      /**
-        * @SINCE 0.8
-        *
-        * The SAPUI5 Core Runtime.
-        *
-        * Contains the UI5 Core and all its components, base classes for Controls, Components and the Model View
-        * Controller classes.
-        */
-      object core {
-        
-        @JSGlobal("sap.ui.core")
-        @js.native
-        val ^ : js.Any = js.native
-        
-        /**
-          * Applies the support for custom style classes on the prototype of a `sap.ui.core.Element`.
-          *
-          * All controls (subclasses of `sap.ui.core.Control`) provide the support custom style classes. The control
-          * API provides functions to the application which allow it to add, remove or change style classes for the
-          * control. In general, this option is not available for elements because elements do not necessarily have
-          * a representation in the DOM.
-          *
-          * This function can be used by a control developer to explicitly enrich the API of his/her element implementation
-          * with the API functions for the custom style class support. It must be called on the prototype of the
-          * element.
-          *
-          * **Usage Example:**
-          * ```javascript
-          *
-          * sap.ui.define(['sap/ui/core/Element', 'sap/ui/core/CustomStyleClassSupport'], function(Element, CustomStyleClassSupport) {
-          *    "use strict";
-          *    var MyElement = Element.extend("my.MyElement", {
-          *       metadata : {
-          *          //...
-          *       }
-          *       //...
-          *    });
-          *
-          *    CustomStyleClassSupport.apply(MyElement.prototype);
-          *
-          *    return MyElement;
-          * }, true);
-          * ```
-          *
-          *
-          * Furthermore, the function `oRenderManager.writeClasses(oElement);` ({@link sap.ui.core.RenderManager#writeClasses})
-          * must be called within the renderer of the control to which the element belongs, when writing the root
-          * tag of the element. This ensures the classes are written to the HTML.
-          *
-          * This function adds the following functions to the elements prototype:
-          * 	 - `addStyleClass`: {@link sap.ui.core.Control#addStyleClass}
-          * 	 - `removeStyleClass`: {@link sap.ui.core.Control#removeStyleClass}
-          * 	 - `toggleStyleClass`: {@link sap.ui.core.Control#toggleStyleClass}
-          * 	 - `hasStyleClass`: {@link sap.ui.core.Control#hasStyleClass}  In addition the clone function of
-          * 			the element is extended to ensure that the custom style classes are also available on the cloned element.
-          *
-          * **Note:** This function can only be used within control development. An application cannot add
-          * style class support on existing elements by calling this function.
-          */
-        inline def CustomStyleClassSupport(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("CustomStyleClassSupport")().asInstanceOf[Unit]
-      }
       
       /**
         * @SINCE 1.27.0
@@ -2225,7 +459,7 @@ object global {
         * List of dependencies of the module
         */
       aDependencies: js.Array[
-              /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1407, starting with typings.openui5.openui5Strings.sapSlashfSlashAvatar, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroup, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroupItem */ Any
+              /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1413, starting with typings.openui5.openui5Strings.sapSlashfSlashAvatar, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroup, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroupItem */ Any
             ],
         /**
         * The module export value or a function that calculates that value
@@ -2237,7 +471,7 @@ object global {
         * List of dependencies of the module
         */
       aDependencies: js.Array[
-              /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1407, starting with typings.openui5.openui5Strings.sapSlashfSlashAvatar, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroup, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroupItem */ Any
+              /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1413, starting with typings.openui5.openui5Strings.sapSlashfSlashAvatar, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroup, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroupItem */ Any
             ],
         /**
         * The module export value or a function that calculates that value
@@ -2253,7 +487,7 @@ object global {
         * List of dependencies of the module
         */
       aDependencies: js.Array[
-              /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1407, starting with typings.openui5.openui5Strings.sapSlashfSlashAvatar, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroup, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroupItem */ Any
+              /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1413, starting with typings.openui5.openui5Strings.sapSlashfSlashAvatar, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroup, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroupItem */ Any
             ],
         /**
         * The module export value or a function that calculates that value
@@ -2265,7 +499,7 @@ object global {
         * List of dependencies of the module
         */
       aDependencies: js.Array[
-              /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1407, starting with typings.openui5.openui5Strings.sapSlashfSlashAvatar, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroup, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroupItem */ Any
+              /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1413, starting with typings.openui5.openui5Strings.sapSlashfSlashAvatar, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroup, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroupItem */ Any
             ],
         /**
         * The module export value or a function that calculates that value
@@ -2514,7 +748,7 @@ object global {
         * List of dependencies of the module
         */
       aDependencies: js.Array[
-              /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1407, starting with typings.openui5.openui5Strings.sapSlashfSlashAvatar, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroup, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroupItem */ Any
+              /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1413, starting with typings.openui5.openui5Strings.sapSlashfSlashAvatar, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroup, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroupItem */ Any
             ],
         /**
         * The module export value or a function that calculates that value
@@ -2531,7 +765,7 @@ object global {
         * List of dependencies of the module
         */
       aDependencies: js.Array[
-              /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1407, starting with typings.openui5.openui5Strings.sapSlashfSlashAvatar, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroup, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroupItem */ Any
+              /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1413, starting with typings.openui5.openui5Strings.sapSlashfSlashAvatar, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroup, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroupItem */ Any
             ],
         /**
         * The module export value or a function that calculates that value
@@ -2552,7 +786,7 @@ object global {
         * List of dependencies of the module
         */
       aDependencies: js.Array[
-              /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1407, starting with typings.openui5.openui5Strings.sapSlashfSlashAvatar, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroup, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroupItem */ Any
+              /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1413, starting with typings.openui5.openui5Strings.sapSlashfSlashAvatar, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroup, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroupItem */ Any
             ],
         /**
         * The module export value or a function that calculates that value
@@ -2569,7 +803,7 @@ object global {
         * List of dependencies of the module
         */
       aDependencies: js.Array[
-              /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1407, starting with typings.openui5.openui5Strings.sapSlashfSlashAvatar, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroup, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroupItem */ Any
+              /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1413, starting with typings.openui5.openui5Strings.sapSlashfSlashAvatar, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroup, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroupItem */ Any
             ],
         /**
         * The module export value or a function that calculates that value
@@ -3903,7 +2137,7 @@ object global {
         /**
         * name or implementation of the view.
         */
-      vView: `19`
+      vView: `25`
       ): js.UndefOr[typings.openui5.sapUiCoreMvcHtmlviewMod.default] = (^.asInstanceOf[js.Dynamic].applyDynamic("htmlview")(sId.asInstanceOf[js.Any], vView.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[typings.openui5.sapUiCoreMvcHtmlviewMod.default]]
       /**
         * @deprecated (since 1.56) - Use {@link sap.ui.core.mvc.HTMLView.create HTMLView.create} to create view
@@ -3932,7 +2166,7 @@ object global {
       inline def htmlview(/**
         * name or implementation of the view.
         */
-      vView: `19`): js.UndefOr[typings.openui5.sapUiCoreMvcHtmlviewMod.default] = ^.asInstanceOf[js.Dynamic].applyDynamic("htmlview")(vView.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.openui5.sapUiCoreMvcHtmlviewMod.default]]
+      vView: `25`): js.UndefOr[typings.openui5.sapUiCoreMvcHtmlviewMod.default] = ^.asInstanceOf[js.Dynamic].applyDynamic("htmlview")(vView.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.openui5.sapUiCoreMvcHtmlviewMod.default]]
       
       /**
         * @SINCE 1.62
@@ -4792,35 +3026,11 @@ object global {
           
           /**
             * @EXPERIMENTAL - This module is only for experimental use!
+            * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
             *
             * If called on an instance of an (v1/v2) ODataModel it will enrich it with analytics capabilities.
             */
           inline def ODataModelAdapter(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ODataModelAdapter")().asInstanceOf[Unit]
-        }
-        
-        /**
-          * OData-based DataBinding Utility Class
-          */
-        object odata {
-          
-          @JSGlobal("sap.ui.model.odata")
-          @js.native
-          val ^ : js.Any = js.native
-          
-          /**
-            * @EXPERIMENTAL - This module is only for experimental and internal use!
-            *
-            * Adapter for TreeBindings to add the ListBinding functionality and use the tree structure in list based
-            * controls. Only usable with the sap.ui.table.TreeTable control. The functions defined here are only available
-            * when you are using a TreeTable and an ODataModel.
-            */
-          inline def ODataTreeBindingAdapter(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ODataTreeBindingAdapter")().asInstanceOf[Unit]
-          
-          /**
-            * Adapter for TreeBindings to add the ListBinding functionality and use the tree structure in list based
-            * controls.
-            */
-          inline def ODataTreeBindingFlat(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ODataTreeBindingFlat")().asInstanceOf[Unit]
         }
       }
       
@@ -4938,7 +3148,7 @@ object global {
           * Dependency (dependencies) to resolve
           */
         vDependencies: js.Array[
-                  /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1407, starting with typings.openui5.openui5Strings.sapSlashfSlashAvatar, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroup, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroupItem */ Any
+                  /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1413, starting with typings.openui5.openui5Strings.sapSlashfSlashAvatar, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroup, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroupItem */ Any
                 ]
         ): js.UndefOr[Any] = ^.asInstanceOf[js.Dynamic].apply(vDependencies.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Any]]
         inline def apply(
@@ -4946,7 +3156,7 @@ object global {
           * Dependency (dependencies) to resolve
           */
         vDependencies: js.Array[
-                  /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1407, starting with typings.openui5.openui5Strings.sapSlashfSlashAvatar, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroup, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroupItem */ Any
+                  /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1413, starting with typings.openui5.openui5Strings.sapSlashfSlashAvatar, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroup, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroupItem */ Any
                 ],
           /**
           * Callback function to execute after resolving an array of dependencies
@@ -4958,7 +3168,7 @@ object global {
           * Dependency (dependencies) to resolve
           */
         vDependencies: js.Array[
-                  /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1407, starting with typings.openui5.openui5Strings.sapSlashfSlashAvatar, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroup, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroupItem */ Any
+                  /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1413, starting with typings.openui5.openui5Strings.sapSlashfSlashAvatar, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroup, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroupItem */ Any
                 ],
           /**
           * Callback function to execute after resolving an array of dependencies
@@ -4976,7 +3186,7 @@ object global {
           * Dependency (dependencies) to resolve
           */
         vDependencies: js.Array[
-                  /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1407, starting with typings.openui5.openui5Strings.sapSlashfSlashAvatar, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroup, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroupItem */ Any
+                  /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 1413, starting with typings.openui5.openui5Strings.sapSlashfSlashAvatar, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroup, typings.openui5.openui5Strings.sapSlashfSlashAvatarGroupItem */ Any
                 ],
           /**
           * Callback function to execute after resolving an array of dependencies
@@ -5132,166 +3342,62 @@ object global {
         */
       object support {
         
+        /**
+          * The CoreFacade interface allows rule developers to access the metadata, models, UI areas and components
+          * of the Core.
+          *
+          * Usage: The CoreFacade is passed as second argument to all rule check functions.
+          */
         @JSGlobal("sap.ui.support.CoreFacade")
         @js.native
-        val CoreFacade: /* undefined */ Any = js.native
-        
-        /**
-          * @SINCE 1.48
-          *
-          * Allows to select the scope of analysis on an application.
-          *
-          * Overview:
-          *
-          * `ExecutionScope` is the third parameter of a rule check function. It provides access to internal UI5
-          * objects available for inspection. The `getElements` API method allows the user to select a specific subset
-          * of elements valid for their case. It accepts one query object argument.
-          *
-          * Usage:
-          *
-          * When a rule is executed, three parameters are passed: `oIssueManager`, `oCoreFacade` and `oScope`.
-          *
-          * An `ExecutionScope` instance is passed to every call of a rule check function. When you analyze your
-          * application, available objects are collected depending on the settings passed to the Support Assistant
-          * at the moment when you start it.
-          */
-        @JSGlobal("sap.ui.support.ExecutionScope")
-        @js.native
-        open class ExecutionScope ()
+        open class CoreFacade ()
           extends StObject
-             with typings.openui5.sap.ui.support.ExecutionScope
-        object ExecutionScope {
-          
-          @JSGlobal("sap.ui.support.ExecutionScope")
-          @js.native
-          val ^ : js.Any = js.native
+             with typings.openui5.sap.ui.support.CoreFacade {
           
           /**
-            *
-            * @returns Array of matched elements
+            * Gets the Components from the Core object.
             */
-          /* static member */
-          inline def getElements(/**
-            * Object with specific filtering options
-            */
-          oConfig: Cloned): js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getElements")(oConfig.asInstanceOf[js.Any]).asInstanceOf[js.Array[Any]]
+          /* CompleteClass */
+          override def getComponents(): Unit = js.native
           
           /**
-            * Gets elements by their type
-            *
-            * @returns Array of matched elements
+            * Gets the Metadata from the Core object.
             */
-          /* static member */
-          inline def getElementsByClassName(
-            /**
-            * Either string or function to be used when selecting a subset of elements
-            */
-          classNameSelector: String
-          ): js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getElementsByClassName")(classNameSelector.asInstanceOf[js.Any]).asInstanceOf[js.Array[Any]]
-          inline def getElementsByClassName(
-            /**
-            * Either string or function to be used when selecting a subset of elements
-            */
-          classNameSelector: js.Function
-          ): js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getElementsByClassName")(classNameSelector.asInstanceOf[js.Any]).asInstanceOf[js.Array[Any]]
+          /* CompleteClass */
+          override def getMetadata(): Unit = js.native
           
           /**
-            * Gets the logged objects by object type
-            *
-            * @returns Array of logged objects
+            * Gets the Models from the Core object.
             */
-          /* static member */
-          inline def getLoggedObjects(/**
-            * Type of logged objects
-            */
-          `type`: Any): js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLoggedObjects")(`type`.asInstanceOf[js.Any]).asInstanceOf[js.Array[Any]]
+          /* CompleteClass */
+          override def getModels(): Unit = js.native
           
           /**
-            * Returns all public elements, i.e. elements that are part of public API aggregations
-            *
-            * @returns Array of matched elements
+            * Gets the UI areas from the Core object.
             */
-          /* static member */
-          inline def getPublicElements(): js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPublicElements")().asInstanceOf[js.Array[Any]]
-          
-          /**
-            * Gets the type of the execution scope
-            *
-            * @returns The type of the execution scope. Possible values are `global`, `subtree` or `components`.
-            */
-          /* static member */
-          inline def getType(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getType")().asInstanceOf[String]
+          /* CompleteClass */
+          override def getUIAreas(): Unit = js.native
         }
         
         /**
-          * Creates a RuleSet. The RuleSet can store multiple rules concerning namespaces. Usage: The RuleSet is
-          * an interface used to create, update and delete rulesets.
+          * The IssueManagerFacade allows rule developers to add new issues.
+          *
+          * Usage: The IssueManagerFacade is passed as first argument to all rule check functions.
           */
-        object RuleSet {
-          
-          @JSGlobal("sap.ui.support.RuleSet")
-          @js.native
-          val ^ : js.Any = js.native
-          
-          /**
-            * Adds rules to RuleSet.
-            *
-            * @returns sRuleVerificationStatus Verification status
-            */
-          inline def addRule(/**
-            * Settings object with rule information
-            */
-          oSettings: js.Object): String = ^.asInstanceOf[js.Dynamic].applyDynamic("addRule")(oSettings.asInstanceOf[js.Any]).asInstanceOf[String]
+        @JSGlobal("sap.ui.support.IssueManagerFacade")
+        @js.native
+        open class IssueManagerFacade ()
+          extends StObject
+             with typings.openui5.sap.ui.support.IssueManagerFacade {
           
           /**
-            * Clears all rulesets inside the RuleSet.
+            * Adds issue
             */
-          inline def clearAllRuleSets(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearAllRuleSets")().asInstanceOf[Unit]
-          
-          /**
-            * Gets all rules from the RuleSet.
-            *
-            * @returns All rules within the current RuleSet
+          /* CompleteClass */
+          override def addIssue(/**
+            * Issue object to be added
             */
-          inline def getRules(): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("getRules")().asInstanceOf[js.Object]
-          
-          /**
-            * Loads the previous selection of the user - which rules are selected to be run by the Rule Analyzer. The
-            * method applies the settings to the currently loaded rules.
-            */
-          inline def loadSelectionOfRules(/**
-            * The current loaded libraries and their rules
-            */
-          aLibraries: js.Array[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("loadSelectionOfRules")(aLibraries.asInstanceOf[js.Any]).asInstanceOf[Unit]
-          
-          /**
-            * Remove rule from RuleSet.
-            */
-          inline def removeRule(/**
-            * Rule object that will be removed
-            */
-          oRule: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeRule")(oRule.asInstanceOf[js.Any]).asInstanceOf[Unit]
-          
-          /**
-            * Stores which rules are selected to be run by the analyzer on the next check
-            */
-          inline def storeSelectionOfRules(/**
-            * The data for the libraries and their rules
-            */
-          aLibraries: js.Array[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("storeSelectionOfRules")(aLibraries.asInstanceOf[js.Any]).asInstanceOf[Unit]
-          
-          /**
-            * Updates rules from the RuleSet.
-            *
-            * @returns sRuleVerification Rule Verification status
-            */
-          inline def updateRule(/**
-            * Rule ID
-            */
-          sRuleId: String, /**
-            * Rule settings
-            */
-          ORuleSettings: js.Object): String = (^.asInstanceOf[js.Dynamic].applyDynamic("updateRule")(sRuleId.asInstanceOf[js.Any], ORuleSettings.asInstanceOf[js.Any])).asInstanceOf[String]
+          oIssue: Details): Unit = js.native
         }
       }
       
@@ -5454,19 +3560,6 @@ object global {
         * name or implementation of the view.
         */
       vView: js.Object): js.UndefOr[typings.openui5.sapUiCoreMvcTemplateViewMod.default] = ^.asInstanceOf[js.Dynamic].applyDynamic("templateview")(vView.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.openui5.sapUiCoreMvcTemplateViewMod.default]]
-      
-      /**
-        * @SINCE 0.13
-        * @deprecated (since 1.38)
-        *
-        * Controls that implement the SAP User Experience (UX) Guidelines 3.0
-        */
-      object ux3 {
-        
-        @JSGlobal("sap.ui.ux3.ShellPersonalization")
-        @js.native
-        val ShellPersonalization: /* undefined */ Any = js.native
-      }
       
       /**
         * @deprecated (since 1.56) - Use {@link sap.ui.core.mvc.View.extend View.extend} to define the view class

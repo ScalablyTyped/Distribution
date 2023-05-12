@@ -8,10 +8,8 @@ trait EventidOwner extends StObject {
   
   var event_id: Double
   
-  /** The account owner of the repository. The name is not case sensitive. */
   var owner: String
   
-  /** The name of the repository. The name is not case sensitive. */
   var repo: String
 }
 object EventidOwner {

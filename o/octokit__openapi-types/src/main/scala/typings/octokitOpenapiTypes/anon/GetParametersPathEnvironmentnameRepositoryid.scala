@@ -6,7 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GetParametersPathEnvironmentnameRepositoryid extends StObject {
   
-  /** Lists all secrets available in an environment without revealing their encrypted values. You must authenticate using an access token with the `repo` scope to use this endpoint. GitHub Apps must have the `secrets` repository permission to use this endpoint. */
+  /**
+    * List environment secrets
+    * @description Lists all secrets available in an environment without revealing their encrypted values. You must authenticate using an access token with the `repo` scope to use this endpoint. GitHub Apps must have the `secrets` repository permission to use this endpoint.
+    */
   var get: ParametersPathEnvironmentnameRepositoryid
 }
 object GetParametersPathEnvironmentnameRepositoryid {

@@ -1,14 +1,10 @@
 package typings.node.http2Mod
 
-import typings.node.nodeColonstreamMod.Duplex
-import typings.node.nodeColonurlMod.URL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait SessionOptions extends StObject {
-  
-  var createConnection: js.UndefOr[js.Function2[/* authority */ URL, /* option */ this.type, Duplex]] = js.undefined
   
   var maxDeflateDynamicTableSize: js.UndefOr[Double] = js.undefined
   
@@ -45,10 +41,6 @@ object SessionOptions {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: SessionOptions] (val x: Self) extends AnyVal {
-    
-    inline def setCreateConnection(value: (/* authority */ URL, SessionOptions) => Duplex): Self = StObject.set(x, "createConnection", js.Any.fromFunction2(value))
-    
-    inline def setCreateConnectionUndefined: Self = StObject.set(x, "createConnection", js.undefined)
     
     inline def setMaxDeflateDynamicTableSize(value: Double): Self = StObject.set(x, "maxDeflateDynamicTableSize", value.asInstanceOf[js.Any])
     

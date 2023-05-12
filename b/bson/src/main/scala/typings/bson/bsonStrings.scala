@@ -1,6 +1,6 @@
 package typings.bson
 
-import typings.bson.mod.TimestampOverrides
+import typings.bson.libTimestampMod.TimestampOverrides
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,6 +10,18 @@ object bsonStrings {
   @js.native
   sealed trait BSONRegExp extends StObject
   inline def BSONRegExp: BSONRegExp = "BSONRegExp".asInstanceOf[BSONRegExp]
+  
+  @js.native
+  sealed trait BSONRuntimeError extends StObject
+  inline def BSONRuntimeError: BSONRuntimeError = "BSONRuntimeError".asInstanceOf[BSONRuntimeError]
+  
+  @js.native
+  sealed trait BSONSymbol extends StObject
+  inline def BSONSymbol: BSONSymbol = "BSONSymbol".asInstanceOf[BSONSymbol]
+  
+  @js.native
+  sealed trait BSONVersionError extends StObject
+  inline def BSONVersionError: BSONVersionError = "BSONVersionError".asInstanceOf[BSONVersionError]
   
   @js.native
   sealed trait Binary extends StObject
@@ -48,12 +60,8 @@ object bsonStrings {
   inline def MinKey: MinKey = "MinKey".asInstanceOf[MinKey]
   
   @js.native
-  sealed trait ObjectID extends StObject
-  inline def ObjectID: ObjectID = "ObjectID".asInstanceOf[ObjectID]
-  
-  @js.native
-  sealed trait Symbol extends StObject
-  inline def Symbol: Symbol = "Symbol".asInstanceOf[Symbol]
+  sealed trait ObjectId extends StObject
+  inline def ObjectId: ObjectId = "ObjectId".asInstanceOf[ObjectId]
   
   @js.native
   sealed trait Timestamp extends StObject
@@ -63,23 +71,43 @@ object bsonStrings {
   sealed trait _bsontype
     extends StObject
        with TimestampOverrides
+       with typings.bson.mod.TimestampOverrides
   inline def _bsontype: _bsontype = "_bsontype".asInstanceOf[_bsontype]
+  
+  @js.native
+  sealed trait base64 extends StObject
+  inline def base64: base64 = "base64".asInstanceOf[base64]
   
   @js.native
   sealed trait fromExtendedJSON
     extends StObject
        with TimestampOverrides
+       with typings.bson.mod.TimestampOverrides
   inline def fromExtendedJSON: fromExtendedJSON = "fromExtendedJSON".asInstanceOf[fromExtendedJSON]
+  
+  @js.native
+  sealed trait hex extends StObject
+  inline def hex: hex = "hex".asInstanceOf[hex]
   
   @js.native
   sealed trait inspect
     extends StObject
        with TimestampOverrides
+       with typings.bson.mod.TimestampOverrides
   inline def inspect: inspect = "inspect".asInstanceOf[inspect]
   
   @js.native
   sealed trait toExtendedJSON
     extends StObject
        with TimestampOverrides
+       with typings.bson.mod.TimestampOverrides
   inline def toExtendedJSON: toExtendedJSON = "toExtendedJSON".asInstanceOf[toExtendedJSON]
+  
+  @js.native
+  sealed trait `utf-8` extends StObject
+  inline def `utf-8`: `utf-8` = "utf-8".asInstanceOf[`utf-8`]
+  
+  @js.native
+  sealed trait utf8 extends StObject
+  inline def utf8: utf8 = "utf8".asInstanceOf[utf8]
 }

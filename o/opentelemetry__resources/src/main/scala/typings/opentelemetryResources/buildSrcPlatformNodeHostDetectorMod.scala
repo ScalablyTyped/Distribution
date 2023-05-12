@@ -18,8 +18,5 @@ object buildSrcPlatformNodeHostDetectorMod {
   @js.native
   trait HostDetector_
     extends StObject
-       with Detector {
-    
-    /* private */ var _normalizeArch: Any = js.native
-  }
+       with Detector
 }

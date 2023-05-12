@@ -106,7 +106,7 @@ trait Player extends StObject {
   /**
     * The current playback state of the music player.
     */
-  val playbackState: PlaybackState
+  val playbackState: PlaybackStates
   
   /**
     * A Boolean value that indicates whether a playback target is available.
@@ -195,7 +195,7 @@ object Player {
     pause: () => Unit,
     play: () => js.Promise[MediaItemPosition],
     playbackRate: Double,
-    playbackState: PlaybackState,
+    playbackState: PlaybackStates,
     prepareToPlay: Descriptor => js.Promise[Unit],
     queue: Queue,
     removeEventListener: (String, js.Function0[Any]) => Unit,
@@ -251,7 +251,7 @@ object Player {
     
     inline def setPlaybackRate(value: Double): Self = StObject.set(x, "playbackRate", value.asInstanceOf[js.Any])
     
-    inline def setPlaybackState(value: PlaybackState): Self = StObject.set(x, "playbackState", value.asInstanceOf[js.Any])
+    inline def setPlaybackState(value: PlaybackStates): Self = StObject.set(x, "playbackState", value.asInstanceOf[js.Any])
     
     inline def setPlaybackTargetAvailable(value: Boolean): Self = StObject.set(x, "playbackTargetAvailable", value.asInstanceOf[js.Any])
     

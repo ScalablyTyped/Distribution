@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetGroupConfigurationOutput extends StObject {
   
   /**
-    * The service configuration associated with the specified group. For details about the service configuration syntax, see Service configurations for resource groups.
+    * A structure that describes the service configuration attached with the specified group. For details about the service configuration syntax, see Service configurations for Resource Groups.
     */
   var GroupConfiguration: js.UndefOr[typings.awsSdk.clientsResourcegroupsMod.GroupConfiguration] = js.undefined
 }

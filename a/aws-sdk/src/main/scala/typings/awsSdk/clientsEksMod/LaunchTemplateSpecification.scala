@@ -17,7 +17,7 @@ trait LaunchTemplateSpecification extends StObject {
   var name: js.UndefOr[String] = js.undefined
   
   /**
-    * The launch template version number, $Latest, or $Default. If the value is $Latest, Amazon EKS uses the latest version of the launch template. If the value is $Default, Amazon EKS uses the default version of the launch template. Default: The default version of the launch template.
+    * The version number of the launch template to use. If no version is specified, then the template's default version is used.
     */
   var version: js.UndefOr[String] = js.undefined
 }

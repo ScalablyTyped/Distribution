@@ -1,7 +1,9 @@
 package typings.gestalt.mod
 
+import typings.gestalt.gestaltStrings.default
 import typings.gestalt.gestaltStrings.md
 import typings.gestalt.gestaltStrings.sm
+import typings.gestalt.gestaltStrings.subtle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,6 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SpinnerProps extends StObject {
   
   var accessibilityLabel: String
+  
+  var color: js.UndefOr[default | subtle] = js.undefined
   
   var delay: js.UndefOr[Boolean] = js.undefined
   
@@ -27,6 +31,10 @@ object SpinnerProps {
   implicit open class MutableBuilder[Self <: SpinnerProps] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityLabel(value: String): Self = StObject.set(x, "accessibilityLabel", value.asInstanceOf[js.Any])
+    
+    inline def setColor(value: default | subtle): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     inline def setDelay(value: Boolean): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     

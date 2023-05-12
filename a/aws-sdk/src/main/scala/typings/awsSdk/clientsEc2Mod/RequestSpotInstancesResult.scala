@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RequestSpotInstancesResult extends StObject {
   
   /**
-    * One or more Spot Instance requests.
+    * The Spot Instance requests.
     */
   var SpotInstanceRequests: js.UndefOr[SpotInstanceRequestList] = js.undefined
 }

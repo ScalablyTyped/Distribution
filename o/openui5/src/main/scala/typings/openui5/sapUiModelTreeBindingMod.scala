@@ -947,6 +947,7 @@ object sapUiModelTreeBindingMod {
     /**
       * @deprecated (since 1.11) - use the `change` event. It now contains a parameter `(reason : "filter")`
       * when a filter event is fired.
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Attaches event handler `fnFunction` to the {@link #event:_filter _filter} event of this `sap.ui.model.TreeBinding`.
       *
@@ -970,6 +971,7 @@ object sapUiModelTreeBindingMod {
     
     /**
       * @deprecated (since 1.11) - use the `change` event.
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Detaches event handler `fnFunction` from the {@link #event:_filter _filter} event of this `sap.ui.model.TreeBinding`.
       *

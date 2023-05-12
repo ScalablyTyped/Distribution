@@ -22,7 +22,6 @@ open class OauthAuthenticatorCls protected ()
     *     be either the object returned from an access token request (which
     *     contains the token and some other metadata) or just the `access_token`
     *     field.
-    * @constructor
     */
   def this(options: OauthAuthenticatorOptions) = this()
   

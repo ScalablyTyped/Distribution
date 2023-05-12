@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.MaskOrigin
+import typings.csstype.mod.Property.ColumnCount
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `357` extends StObject {
   
   var value: js.UndefOr[
-    MaskOrigin | (js.Array[
-      (Extract[js.UndefOr[MaskOrigin | js.Array[NonNullable[js.UndefOr[MaskOrigin]]]], String]) | NonNullable[js.UndefOr[MaskOrigin]]
+    ColumnCount | (js.Array[
+      (Extract[js.UndefOr[ColumnCount | js.Array[NonNullable[js.UndefOr[ColumnCount]]]], String]) | NonNullable[js.UndefOr[ColumnCount]]
     ])
   ] = js.native
 }

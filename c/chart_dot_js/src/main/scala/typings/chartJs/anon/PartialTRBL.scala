@@ -1,11 +1,14 @@
 package typings.chartJs.anon
 
+import typings.chartJs.distTypesGeometricMod._Padding
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Partial<chart.js.chart.js/types/geometric.TRBL> */
-trait PartialTRBL extends StObject {
+/* Inlined std.Partial<chart.js.chart.js/dist/types/geometric.TRBL> */
+trait PartialTRBL
+  extends StObject
+     with _Padding {
   
   var bottom: js.UndefOr[Double] = js.undefined
   

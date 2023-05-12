@@ -7,10 +7,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object ckeditorCkeditor5HighlightStrings {
   
   @js.native
-  sealed trait Highlight extends StObject
-  inline def Highlight: Highlight = "Highlight".asInstanceOf[Highlight]
-  
-  @js.native
   sealed trait HighlightEditing extends StObject
   inline def HighlightEditing: HighlightEditing = "HighlightEditing".asInstanceOf[HighlightEditing]
   

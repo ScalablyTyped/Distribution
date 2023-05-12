@@ -4,10 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The representation of a panorama returned from the provider defined using
-  * <code>registerPanoProvider</code>.
-  */
 trait StreetViewPanoramaData extends StObject {
   
   /**

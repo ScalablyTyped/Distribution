@@ -29,7 +29,6 @@ object clipboard {
   @js.native
   val ^ : js.Any = js.native
   
-  /** @enum */
   object DataItemType {
     
     @JSGlobal("chrome.clipboard.DataItemType")

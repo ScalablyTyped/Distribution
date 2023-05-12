@@ -12,7 +12,7 @@ trait NielsenNonLinearWatermarkSettings extends StObject {
   var ActiveWatermarkProcess: js.UndefOr[NielsenActiveWatermarkProcessType] = js.undefined
   
   /**
-    * Optional. Use this setting when you want the service to include an ADI file in the Nielsen  metadata .zip file. To provide an ADI file, store it in Amazon S3 and provide a URL to it  here. The URL should be in the following format: S3://bucket/path/ADI-file. For more information about the metadata .zip file, see the setting Metadata destination (metadataDestination).
+    * Optional. Use this setting when you want the service to include an ADI file in the Nielsen metadata .zip file. To provide an ADI file, store it in Amazon S3 and provide a URL to it here. The URL should be in the following format: S3://bucket/path/ADI-file. For more information about the metadata .zip file, see the setting Metadata destination (metadataDestination).
     */
   var AdiFilename: js.UndefOr[stringPatternS3] = js.undefined
   
@@ -47,7 +47,7 @@ trait NielsenNonLinearWatermarkSettings extends StObject {
   var SourceId: js.UndefOr[integerMin0Max65534] = js.undefined
   
   /**
-    * Required. Specify whether your source content already contains Nielsen non-linear watermarks. When you set this value to Watermarked (WATERMARKED), the service fails the job. Nielsen requires that you add non-linear watermarking to only clean content that doesn't already  have non-linear Nielsen watermarks.
+    * Required. Specify whether your source content already contains Nielsen non-linear watermarks. When you set this value to Watermarked (WATERMARKED), the service fails the job. Nielsen requires that you add non-linear watermarking to only clean content that doesn't already have non-linear Nielsen watermarks.
     */
   var SourceWatermarkStatus: js.UndefOr[NielsenSourceWatermarkStatusType] = js.undefined
   

@@ -92,6 +92,16 @@ trait Explanation extends StObject {
   var ExplanationCode: js.UndefOr[String] = js.undefined
   
   /**
+    * The Network Firewall stateful rule.
+    */
+  var FirewallStatefulRule: js.UndefOr[typings.awsSdk.clientsEc2Mod.FirewallStatefulRule] = js.undefined
+  
+  /**
+    * The Network Firewall stateless rule.
+    */
+  var FirewallStatelessRule: js.UndefOr[typings.awsSdk.clientsEc2Mod.FirewallStatelessRule] = js.undefined
+  
+  /**
     * The route table.
     */
   var IngressRouteTable: js.UndefOr[AnalysisComponent] = js.undefined
@@ -344,6 +354,14 @@ object Explanation {
     inline def setExplanationCode(value: String): Self = StObject.set(x, "ExplanationCode", value.asInstanceOf[js.Any])
     
     inline def setExplanationCodeUndefined: Self = StObject.set(x, "ExplanationCode", js.undefined)
+    
+    inline def setFirewallStatefulRule(value: FirewallStatefulRule): Self = StObject.set(x, "FirewallStatefulRule", value.asInstanceOf[js.Any])
+    
+    inline def setFirewallStatefulRuleUndefined: Self = StObject.set(x, "FirewallStatefulRule", js.undefined)
+    
+    inline def setFirewallStatelessRule(value: FirewallStatelessRule): Self = StObject.set(x, "FirewallStatelessRule", value.asInstanceOf[js.Any])
+    
+    inline def setFirewallStatelessRuleUndefined: Self = StObject.set(x, "FirewallStatelessRule", js.undefined)
     
     inline def setIngressRouteTable(value: AnalysisComponent): Self = StObject.set(x, "IngressRouteTable", value.asInstanceOf[js.Any])
     

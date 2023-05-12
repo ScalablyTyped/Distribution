@@ -11,6 +11,11 @@ object BrowserConfigurationAuthErrorMessage {
   @js.native
   val ^ : js.Any = js.native
   
+  @JSImport("@azure/msal-browser", "BrowserConfigurationAuthErrorMessage.entropyNotProvided")
+  @js.native
+  def entropyNotProvided: Code = js.native
+  inline def entropyNotProvided_=(x: Code): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("entropyNotProvided")(x.asInstanceOf[js.Any])
+  
   @JSImport("@azure/msal-browser", "BrowserConfigurationAuthErrorMessage.inMemRedirectUnavailable")
   @js.native
   def inMemRedirectUnavailable: Code = js.native

@@ -1,5 +1,6 @@
 package typings.angularServiceWorker
 
+import typings.angularCore.mod.EnvironmentProviders
 import typings.angularCore.mod.ModuleWithProviders
 import typings.angularCore.mod.ɵɵFactoryDeclaration
 import typings.angularCore.mod.ɵɵInjectableDeclaration
@@ -26,6 +27,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
+  @JSImport("@angular/service-worker", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("@angular/service-worker", "ServiceWorkerModule")
   @js.native
   open class ServiceWorkerModule () extends StObject
@@ -43,7 +48,7 @@ object mod {
       * workers are not supported by the browser, and the service worker will not be registered.
       */
     inline def register(script: String): ModuleWithProviders[ServiceWorkerModule] = ^.asInstanceOf[js.Dynamic].applyDynamic("register")(script.asInstanceOf[js.Any]).asInstanceOf[ModuleWithProviders[ServiceWorkerModule]]
-    inline def register(script: String, opts: SwRegistrationOptions): ModuleWithProviders[ServiceWorkerModule] = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(script.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ModuleWithProviders[ServiceWorkerModule]]
+    inline def register(script: String, options: SwRegistrationOptions): ModuleWithProviders[ServiceWorkerModule] = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(script.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ModuleWithProviders[ServiceWorkerModule]]
     
     @JSImport("@angular/service-worker", "ServiceWorkerModule.\u0275fac")
     @js.native
@@ -297,6 +302,9 @@ object mod {
     def ɵprov: ɵɵInjectableDeclaration[SwUpdate] = js.native
     inline def ɵprov_=(x: ɵɵInjectableDeclaration[SwUpdate]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275prov")(x.asInstanceOf[js.Any])
   }
+  
+  inline def provideServiceWorker(script: String): EnvironmentProviders = ^.asInstanceOf[js.Dynamic].applyDynamic("provideServiceWorker")(script.asInstanceOf[js.Any]).asInstanceOf[EnvironmentProviders]
+  inline def provideServiceWorker(script: String, options: SwRegistrationOptions): EnvironmentProviders = (^.asInstanceOf[js.Dynamic].applyDynamic("provideServiceWorker")(script.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[EnvironmentProviders]
   
   /**
     * @publicApi

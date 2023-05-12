@@ -2,13 +2,13 @@ package typings.luminoDatagrid
 
 import typings.luminoDatagrid.typesBasicmousehandlerMod.ResizeHandle
 import typings.luminoDatagrid.typesCelleditorMod.CellDataType
+import typings.luminoDatagrid.typesCelleditorMod.CellEditor.Notification.Placement
 import typings.luminoDatagrid.typesCelleditorcontrollerMod._EditorOverrideIdentifier
 import typings.luminoDatagrid.typesDatagridMod.DataGrid.ColumnFitType
 import typings.luminoDatagrid.typesDatagridMod.DataGrid.HeaderVisibility
 import typings.luminoDatagrid.typesDatamodelMod.DataModel.CellRegion
 import typings.luminoDatagrid.typesDatamodelMod.DataModel.ColumnRegion
 import typings.luminoDatagrid.typesDatamodelMod.DataModel.RowRegion
-import typings.luminoDatagrid.typesNotificationMod.Notification.Placement
 import typings.luminoDatagrid.typesSelectionmodelMod.SelectionModel.ClearMode
 import typings.luminoDatagrid.typesSelectionmodelMod.SelectionModel.CursorMoveDirection
 import typings.luminoDatagrid.typesSelectionmodelMod.SelectionModel.SelectionMode
@@ -189,6 +189,8 @@ object luminoDatagridStrings {
     extends StObject
        with ClearMode
        with CursorMoveDirection
+       with ElideDirection
+       with typings.luminoDatagrid.typesHyperlinkrendererMod.HyperlinkRenderer.ElideDirection
        with HeaderVisibility
        with ResizeHandle
   inline def none: none = "none".asInstanceOf[none]

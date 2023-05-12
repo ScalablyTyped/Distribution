@@ -2,7 +2,6 @@ package typings.azureMsalCommon
 
 import typings.azureMsalCommon.distAccountAccountInfoMod.AccountInfo
 import typings.azureMsalCommon.distRequestBaseAuthRequestMod.BaseAuthRequest
-import typings.azureMsalCommon.distUtilsMsalTypesMod.StringDict
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,8 +15,6 @@ object distRequestCommonSilentFlowRequestMod {
     var account: AccountInfo
     
     var forceRefresh: Boolean
-    
-    var tokenQueryParameters: js.UndefOr[StringDict] = js.undefined
   }
   object CommonSilentFlowRequest {
     
@@ -38,10 +35,6 @@ object distRequestCommonSilentFlowRequestMod {
       inline def setAccount(value: AccountInfo): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
       
       inline def setForceRefresh(value: Boolean): Self = StObject.set(x, "forceRefresh", value.asInstanceOf[js.Any])
-      
-      inline def setTokenQueryParameters(value: StringDict): Self = StObject.set(x, "tokenQueryParameters", value.asInstanceOf[js.Any])
-      
-      inline def setTokenQueryParametersUndefined: Self = StObject.set(x, "tokenQueryParameters", js.undefined)
     }
   }
 }

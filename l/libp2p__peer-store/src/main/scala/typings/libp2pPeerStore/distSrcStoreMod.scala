@@ -1,13 +1,13 @@
 package typings.libp2pPeerStore
 
-import typings.interfaceDatastore.keyMod.Key
 import typings.libp2pInterfacePeerId.mod.PeerId
 import typings.libp2pInterfacePeerStore.mod.Peer
-import typings.libp2pPeerStore.anon.PartialPeer
-import typings.libp2pPeerStore.anon.ReadLock
+import typings.libp2pInterfacePeerStore.mod.PeerData
+import typings.libp2pPeerStore.anon.PartialPeerData
 import typings.libp2pPeerStore.mod.PersistentPeerStoreComponents
+import typings.libp2pPeerStore.mod.PersistentPeerStoreInit
+import typings.mortice.mod.Mortice
 import typings.std.AsyncGenerator
-import typings.std.AsyncIterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,16 +18,13 @@ object distSrcStoreMod {
   @js.native
   open class PersistentStore protected () extends StObject {
     def this(components: PersistentPeerStoreComponents) = this()
+    def this(components: PersistentPeerStoreComponents, init: PersistentPeerStoreInit) = this()
     
-    def _merge(peerId: PeerId, data: PartialPeer, peer: Peer): js.Promise[Peer] = js.native
-    
-    def _patch(peerId: PeerId, data: PartialPeer, peer: Peer): js.Promise[Peer] = js.native
-    
-    def _peerIdToDatastoreKey(peerId: PeerId): Key = js.native
+    /* private */ val addressFilter: Any = js.native
     
     def all(): AsyncGenerator[Peer, Unit, Any] = js.native
     
-    /* private */ val components: Any = js.native
+    /* private */ val datastore: Any = js.native
     
     def delete(peerId: PeerId): js.Promise[Unit] = js.native
     
@@ -35,81 +32,36 @@ object distSrcStoreMod {
     
     def load(peerId: PeerId): js.Promise[Peer] = js.native
     
-    var lock: Any = js.native
+    val lock: Mortice = js.native
     
-    def merge(peerId: PeerId, data: PartialPeer): js.Promise[Peer] = js.native
+    def merge(peerId: PeerId, data: PeerData): js.Promise[PeerUpdate] = js.native
     
-    def mergeOrCreate(peerId: PeerId, data: PartialPeer): js.Promise[Peer] = js.native
+    def patch(peerId: PeerId, data: PartialPeerData): js.Promise[PeerUpdate] = js.native
     
-    def patch(peerId: PeerId, data: PartialPeer): js.Promise[Peer] = js.native
+    /* private */ val peerId: Any = js.native
     
-    def patchOrCreate(peerId: PeerId, data: PartialPeer): js.Promise[Peer] = js.native
+    /* private */ var `private`: Any = js.native
     
-    def save(peer: Peer): js.Promise[Peer] = js.native
+    def save(peerId: PeerId, data: PeerData): js.Promise[PeerUpdate] = js.native
   }
   
-  trait Store extends StObject {
+  trait PeerUpdate
+    extends StObject
+       with typings.libp2pInterfaceLibp2p.mod.PeerUpdate {
     
-    def all(): AsyncIterable[Peer]
-    
-    def delete(peerId: PeerId): js.Promise[Unit]
-    
-    def has(peerId: PeerId): js.Promise[Boolean]
-    
-    def load(peerId: PeerId): js.Promise[Peer]
-    
-    var lock: ReadLock
-    
-    def merge(peerId: PeerId, data: PartialPeer): js.Promise[Peer]
-    
-    def mergeOrCreate(peerId: PeerId, data: PartialPeer): js.Promise[Peer]
-    
-    def patch(peerId: PeerId, data: PartialPeer): js.Promise[Peer]
-    
-    def patchOrCreate(peerId: PeerId, data: PartialPeer): js.Promise[Peer]
-    
-    def save(peer: Peer): js.Promise[Peer]
+    var updated: Boolean
   }
-  object Store {
+  object PeerUpdate {
     
-    inline def apply(
-      all: () => AsyncIterable[Peer],
-      delete: PeerId => js.Promise[Unit],
-      has: PeerId => js.Promise[Boolean],
-      load: PeerId => js.Promise[Peer],
-      lock: ReadLock,
-      merge: (PeerId, PartialPeer) => js.Promise[Peer],
-      mergeOrCreate: (PeerId, PartialPeer) => js.Promise[Peer],
-      patch: (PeerId, PartialPeer) => js.Promise[Peer],
-      patchOrCreate: (PeerId, PartialPeer) => js.Promise[Peer],
-      save: Peer => js.Promise[Peer]
-    ): Store = {
-      val __obj = js.Dynamic.literal(all = js.Any.fromFunction0(all), delete = js.Any.fromFunction1(delete), has = js.Any.fromFunction1(has), load = js.Any.fromFunction1(load), lock = lock.asInstanceOf[js.Any], merge = js.Any.fromFunction2(merge), mergeOrCreate = js.Any.fromFunction2(mergeOrCreate), patch = js.Any.fromFunction2(patch), patchOrCreate = js.Any.fromFunction2(patchOrCreate), save = js.Any.fromFunction1(save))
-      __obj.asInstanceOf[Store]
+    inline def apply(peer: Peer, updated: Boolean): PeerUpdate = {
+      val __obj = js.Dynamic.literal(peer = peer.asInstanceOf[js.Any], updated = updated.asInstanceOf[js.Any])
+      __obj.asInstanceOf[PeerUpdate]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: Store] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: PeerUpdate] (val x: Self) extends AnyVal {
       
-      inline def setAll(value: () => AsyncIterable[Peer]): Self = StObject.set(x, "all", js.Any.fromFunction0(value))
-      
-      inline def setDelete(value: PeerId => js.Promise[Unit]): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
-      
-      inline def setHas(value: PeerId => js.Promise[Boolean]): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
-      
-      inline def setLoad(value: PeerId => js.Promise[Peer]): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
-      
-      inline def setLock(value: ReadLock): Self = StObject.set(x, "lock", value.asInstanceOf[js.Any])
-      
-      inline def setMerge(value: (PeerId, PartialPeer) => js.Promise[Peer]): Self = StObject.set(x, "merge", js.Any.fromFunction2(value))
-      
-      inline def setMergeOrCreate(value: (PeerId, PartialPeer) => js.Promise[Peer]): Self = StObject.set(x, "mergeOrCreate", js.Any.fromFunction2(value))
-      
-      inline def setPatch(value: (PeerId, PartialPeer) => js.Promise[Peer]): Self = StObject.set(x, "patch", js.Any.fromFunction2(value))
-      
-      inline def setPatchOrCreate(value: (PeerId, PartialPeer) => js.Promise[Peer]): Self = StObject.set(x, "patchOrCreate", js.Any.fromFunction2(value))
-      
-      inline def setSave(value: Peer => js.Promise[Peer]): Self = StObject.set(x, "save", js.Any.fromFunction1(value))
+      inline def setUpdated(value: Boolean): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
     }
   }
 }

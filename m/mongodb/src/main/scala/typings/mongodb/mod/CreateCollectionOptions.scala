@@ -10,7 +10,7 @@ trait CreateCollectionOptions
   extends StObject
      with CommandOperationOptions {
   
-  /** @deprecated Create an index on the _id field of the document, True by default on MongoDB 2.6 - 3.0 */
+  /** @deprecated Create an index on the _id field of the document. This option is deprecated in MongoDB 3.2+ and will be removed once no longer supported by the server. */
   var autoIndexId: js.UndefOr[Boolean] = js.undefined
   
   /** Create a capped collection */
@@ -34,13 +34,13 @@ trait CreateCollectionOptions
   /** Available for the MMAPv1 storage engine only to set the usePowerOf2Sizes and the noPadding flag */
   var flags: js.UndefOr[scala.Double] = js.undefined
   
-  /** Allows users to specify a default configuration for indexes when creating a collection on MongoDB 3.2 or higher */
+  /** Allows users to specify a default configuration for indexes when creating a collection */
   var indexOptionDefaults: js.UndefOr[Document] = js.undefined
   
   /** The maximum number of documents in the capped collection */
   var max: js.UndefOr[scala.Double] = js.undefined
   
-  /** An array that consists of the aggregation pipeline stage. Creates the view by applying the specified pipeline to the viewOn collection or view on MongoDB 3.4 or higher */
+  /** An array that consists of the aggregation pipeline stage. Creates the view by applying the specified pipeline to the viewOn collection or view */
   var pipeline: js.UndefOr[js.Array[Document]] = js.undefined
   
   /** A primary key factory function for generation of custom _id keys. */
@@ -49,7 +49,7 @@ trait CreateCollectionOptions
   /** The size of the capped collection in bytes */
   var size: js.UndefOr[scala.Double] = js.undefined
   
-  /** Allows users to specify configuration to the storage engine on a per-collection basis when creating a collection on MongoDB 3.0 or higher */
+  /** Allows users to specify configuration to the storage engine on a per-collection basis when creating a collection */
   var storageEngine: js.UndefOr[Document] = js.undefined
   
   /** Returns an error if the collection does not exist */
@@ -58,16 +58,16 @@ trait CreateCollectionOptions
   /** A document specifying configuration options for timeseries collections. */
   var timeseries: js.UndefOr[TimeSeriesCollectionOptions] = js.undefined
   
-  /** Determines whether to error on invalid documents or just warn about the violations but allow invalid documents to be inserted on MongoDB 3.2 or higher */
+  /** Determines whether to error on invalid documents or just warn about the violations but allow invalid documents to be inserted */
   var validationAction: js.UndefOr[String] = js.undefined
   
-  /** Determines how strictly MongoDB applies the validation rules to existing documents during an update on MongoDB 3.2 or higher */
+  /** Determines how strictly MongoDB applies the validation rules to existing documents during an update */
   var validationLevel: js.UndefOr[String] = js.undefined
   
-  /** Allows users to specify validation rules or expressions for the collection. For more information, see Document Validation on MongoDB 3.2 or higher */
+  /** Allows users to specify validation rules or expressions for the collection. For more information, see Document Validation */
   var validator: js.UndefOr[Document] = js.undefined
   
-  /** The name of the source collection or view from which to create the view. The name is not the full namespace of the collection or view; i.e. does not include the database name and implies the same database as the view to create on MongoDB 3.4 or higher */
+  /** The name of the source collection or view from which to create the view. The name is not the full namespace of the collection or view (i.e., does not include the database name and implies the same database as the view to create) */
   var viewOn: js.UndefOr[String] = js.undefined
 }
 object CreateCollectionOptions {

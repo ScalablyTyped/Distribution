@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AccessDetail extends StObject {
   
   /**
-    * The path of the Organizations entity (root, organizational unit, or account) from which an authenticated principal last attempted to access the service. Amazon Web Services does not report unauthenticated requests. This field is null if no principals (IAM users, IAM roles, or root users) in the reported Organizations entity attempted to access the service within the tracking period.
+    * The path of the Organizations entity (root, organizational unit, or account) from which an authenticated principal last attempted to access the service. Amazon Web Services does not report unauthenticated requests. This field is null if no principals (IAM users, IAM roles, or root user) in the reported Organizations entity attempted to access the service within the tracking period.
     */
   var EntityPath: js.UndefOr[organizationsEntityPathType] = js.undefined
   
@@ -32,7 +32,7 @@ trait AccessDetail extends StObject {
   var ServiceNamespace: serviceNamespaceType
   
   /**
-    * The number of accounts with authenticated principals (root users, IAM users, and IAM roles) that attempted to access the service in the tracking period.
+    * The number of accounts with authenticated principals (root user, IAM users, and IAM roles) that attempted to access the service in the tracking period.
     */
   var TotalAuthenticatedEntities: js.UndefOr[integerType] = js.undefined
 }

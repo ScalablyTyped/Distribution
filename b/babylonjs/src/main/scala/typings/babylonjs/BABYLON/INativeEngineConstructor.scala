@@ -133,6 +133,8 @@ trait INativeEngineConstructor
   
   val COMMAND_SETTEXTUREWRAPMODE: js.typedarray.Uint32Array = js.native
   
+  val COMMAND_SETVIEWPORT: js.typedarray.Uint32Array = js.native
+  
   val COMMAND_SETZOFFSET: js.typedarray.Uint32Array = js.native
   
   val COMMAND_SETZOFFSETUNITS: js.typedarray.Uint32Array = js.native
@@ -222,6 +224,8 @@ trait INativeEngineConstructor
   val STENCIL_TEST_NOTEQUAL: Double = js.native
   
   val TEXTURE_FORMAT_RGB8: Double = js.native
+  
+  val TEXTURE_FORMAT_RGBA16F: Double = js.native
   
   val TEXTURE_FORMAT_RGBA32F: Double = js.native
   

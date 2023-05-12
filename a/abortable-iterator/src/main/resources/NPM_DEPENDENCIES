@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "abortable-iterator" : "4.0.2"
+      "abortable-iterator" : "5.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "abortable-iterator" : "4.0.2"
+      "abortable-iterator" : "5.0.1"
     }
   ],
   "compile-devDependencies" : [

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gapi_dot_client_dot_realtimebidding-v1"
-version := "0.0-dt-20220912Z-91e3a9"
+version := "0.0-dt-20230214Z-91e3a9"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

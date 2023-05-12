@@ -13,6 +13,11 @@ trait CodeSystemConceptDesignation
   var _value: js.UndefOr[Element] = js.undefined
   
   /**
+    * This was added rather than increasing the cardinality of .use to 0..* in order to maintain backward compatibility.
+    */
+  var additionalUse: js.UndefOr[js.Array[Coding]] = js.undefined
+  
+  /**
     * In the absence of a language, the resource language applies.
     */
   var language: js.UndefOr[String] = js.undefined
@@ -36,6 +41,12 @@ object CodeSystemConceptDesignation {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: CodeSystemConceptDesignation] (val x: Self) extends AnyVal {
+    
+    inline def setAdditionalUse(value: js.Array[Coding]): Self = StObject.set(x, "additionalUse", value.asInstanceOf[js.Any])
+    
+    inline def setAdditionalUseUndefined: Self = StObject.set(x, "additionalUse", js.undefined)
+    
+    inline def setAdditionalUseVarargs(value: Coding*): Self = StObject.set(x, "additionalUse", js.Array(value*))
     
     inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     

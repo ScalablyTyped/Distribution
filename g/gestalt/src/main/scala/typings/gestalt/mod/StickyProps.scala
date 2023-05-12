@@ -1,6 +1,5 @@
 package typings.gestalt.mod
 
-import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +8,7 @@ trait StickyProps extends StObject {
   
   var bottom: js.UndefOr[Double | String] = js.undefined
   
-  var children: js.UndefOr[ReactNode] = js.undefined
+  var children: Node
   
   var height: js.UndefOr[Double] = js.undefined
   
@@ -35,7 +34,7 @@ object StickyProps {
     
     inline def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
     
-    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: Node): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     

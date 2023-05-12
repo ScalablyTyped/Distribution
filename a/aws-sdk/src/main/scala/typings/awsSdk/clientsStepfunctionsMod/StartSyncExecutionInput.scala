@@ -22,7 +22,7 @@ trait StartSyncExecutionInput extends StObject {
   var stateMachineArn: Arn
   
   /**
-    * Passes the AWS X-Ray trace header. The trace header can also be passed in the request payload.
+    * Passes the X-Ray trace header. The trace header can also be passed in the request payload.
     */
   var traceHeader: js.UndefOr[TraceHeader] = js.undefined
 }

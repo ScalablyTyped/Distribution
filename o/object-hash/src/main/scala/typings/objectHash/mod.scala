@@ -17,12 +17,9 @@ object mod {
   /**
     * @see https://github.com/puleos/object-hash#hashvalue-options
     */
-  inline def apply(): String = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[String]
-  inline def apply(`object`: js.Object): String = ^.asInstanceOf[js.Dynamic].apply(`object`.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def apply(`object`: js.Object, options: NormalOption): String = (^.asInstanceOf[js.Dynamic].apply(`object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def apply(`object`: js.Object, options: WithBufferOption): Buffer = (^.asInstanceOf[js.Dynamic].apply(`object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Buffer]
-  inline def apply(`object`: Null, options: NormalOption): String = (^.asInstanceOf[js.Dynamic].apply(`object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def apply(`object`: Null, options: WithBufferOption): Buffer = (^.asInstanceOf[js.Dynamic].apply(`object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  inline def apply(`object`: NotUndefined): String = ^.asInstanceOf[js.Dynamic].apply(`object`.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(`object`: NotUndefined, options: NormalOption): String = (^.asInstanceOf[js.Dynamic].apply(`object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(`object`: NotUndefined, options: WithBufferOption): Buffer = (^.asInstanceOf[js.Dynamic].apply(`object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
   @JSImport("object-hash", JSImport.Namespace)
   @js.native
@@ -31,26 +28,22 @@ object mod {
   /**
     * @see https://github.com/puleos/object-hash#hashmd5value
     */
-  inline def MD5(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("MD5")().asInstanceOf[String]
-  inline def MD5(`object`: js.Object): String = ^.asInstanceOf[js.Dynamic].applyDynamic("MD5")(`object`.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def MD5(`object`: NotUndefined): String = ^.asInstanceOf[js.Dynamic].applyDynamic("MD5")(`object`.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * @see https://github.com/puleos/object-hash#hashkeysvalue
     */
-  inline def keys(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("keys")().asInstanceOf[String]
-  inline def keys(`object`: js.Object): String = ^.asInstanceOf[js.Dynamic].applyDynamic("keys")(`object`.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def keys(`object`: NotUndefined): String = ^.asInstanceOf[js.Dynamic].applyDynamic("keys")(`object`.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * @see https://github.com/puleos/object-hash#hashkeysmd5value
     */
-  inline def keysMD5(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("keysMD5")().asInstanceOf[String]
-  inline def keysMD5(`object`: js.Object): String = ^.asInstanceOf[js.Dynamic].applyDynamic("keysMD5")(`object`.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def keysMD5(`object`: NotUndefined): String = ^.asInstanceOf[js.Dynamic].applyDynamic("keysMD5")(`object`.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * @see https://github.com/puleos/object-hash#hashsha1value
     */
-  inline def sha1(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sha1")().asInstanceOf[String]
-  inline def sha1(`object`: js.Object): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sha1")(`object`.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def sha1(`object`: NotUndefined): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sha1")(`object`.asInstanceOf[js.Any]).asInstanceOf[String]
   
   inline def writeToStream(value: Any, options: Options, stream: Stream): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeToStream")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any], stream.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /**
@@ -226,6 +219,16 @@ object mod {
       inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
     }
   }
+  
+  /** 
+  NOTE: Rewritten from type alias:
+  {{{
+  type NotUndefined = object | string | number | boolean | null | std.Array<object-hash.object-hash.NotUndefined>
+  }}}
+  to avoid circular code involving: 
+  - object-hash.object-hash.NotUndefined
+  */
+  type NotUndefined = js.Object | String | Double | Boolean | Null | js.Array[Any]
   
   /* Rewritten from type alias, can be one of: 
     - typings.objectHash.mod.NormalOption

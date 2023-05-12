@@ -8,7 +8,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CommandOriginalFn[T /* <: /* keyof cypress.Cypress.ChainableMethods<any> */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 88, starting with typings.cypress.cypressStrings.as, typings.cypress.cypressStrings.title, typings.cypress.cypressStrings.clearLocalStorage */ Any */] extends CallableFunction {
+trait CommandOriginalFn[T /* <: /* keyof cypress.Cypress.ChainableMethods<any> */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 93, starting with typings.cypress.cypressStrings.as, typings.cypress.cypressStrings.title, typings.cypress.cypressStrings.clearAllCookies */ Any */] extends CallableFunction {
   
   def apply(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<ChainableMethods[T]> is not an array type */ args: Parameters[

@@ -35,8 +35,8 @@ object workerThreadsMod {
     * const {
     *   isMainThread,
     *   BroadcastChannel,
-    *   Worker
-    * } = require('worker_threads');
+    *   Worker,
+    * } = require('node:worker_threads');
     *
     * const bc = new BroadcastChannel('hello');
     *
@@ -101,7 +101,7 @@ object workerThreadsMod {
     * The `MessageChannel` has no methods of its own. `new MessageChannel()`yields an object with `port1` and `port2` properties, which refer to linked `MessagePort` instances.
     *
     * ```js
-    * const { MessageChannel } = require('worker_threads');
+    * const { MessageChannel } = require('node:worker_threads');
     *
     * const { port1, port2 } = new MessageChannel();
     * port1.on('message', (message) => console.log('received', message));
@@ -202,7 +202,7 @@ object workerThreadsMod {
       * * `value` may not contain native (C++-backed) objects other than:
       *
       * ```js
-      * const { MessageChannel } = require('worker_threads');
+      * const { MessageChannel } = require('node:worker_threads');
       * const { port1, port2 } = new MessageChannel();
       *
       * port1.on('message', (message) => console.log(message));
@@ -213,7 +213,7 @@ object workerThreadsMod {
       * port2.postMessage(circularData);
       * ```
       *
-      * `transferList` may be a list of [`ArrayBuffer`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer), `MessagePort` and `FileHandle` objects.
+      * `transferList` may be a list of [`ArrayBuffer`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer), `MessagePort`, and `FileHandle` objects.
       * After transferring, they are not usable on the sending side of the channel
       * anymore (even if they are not contained in `value`). Unlike with `child processes`, transferring handles such as network sockets is currently
       * not supported.
@@ -224,7 +224,7 @@ object workerThreadsMod {
       * `value` may still contain `ArrayBuffer` instances that are not in`transferList`; in that case, the underlying memory is copied rather than moved.
       *
       * ```js
-      * const { MessageChannel } = require('worker_threads');
+      * const { MessageChannel } = require('node:worker_threads');
       * const { port1, port2 } = new MessageChannel();
       *
       * port1.on('message', (message) => console.log(message));
@@ -251,7 +251,7 @@ object workerThreadsMod {
       * posting without having side effects.
       *
       * For more information on the serialization and deserialization mechanisms
-      * behind this API, see the `serialization API of the v8 module`.
+      * behind this API, see the `serialization API of the node:v8 module`.
       * @since v10.5.0
       */
     def postMessage(value: Any): Unit = js.native
@@ -329,9 +329,9 @@ object workerThreadsMod {
     *
     * Notable differences inside a Worker environment are:
     *
-    * * The `process.stdin`, `process.stdout` and `process.stderr` may be redirected by the parent thread.
-    * * The `require('worker_threads').isMainThread` property is set to `false`.
-    * * The `require('worker_threads').parentPort` message port is available.
+    * * The `process.stdin`, `process.stdout`, and `process.stderr` streams may be redirected by the parent thread.
+    * * The `require('node:worker_threads').isMainThread` property is set to `false`.
+    * * The `require('node:worker_threads').parentPort` message port is available.
     * * `process.exit()` does not stop the whole program, just the single thread,
     * and `process.abort()` is not available.
     * * `process.chdir()` and `process` methods that set group or user ids
@@ -348,11 +348,11 @@ object workerThreadsMod {
     *
     * Creating `Worker` instances inside of other `Worker`s is possible.
     *
-    * Like [Web Workers](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API) and the `cluster module`, two-way communication can be
-    * achieved through inter-thread message passing. Internally, a `Worker` has a
-    * built-in pair of `MessagePort` s that are already associated with each other
-    * when the `Worker` is created. While the `MessagePort` object on the parent side
-    * is not directly exposed, its functionalities are exposed through `worker.postMessage()` and the `worker.on('message')` event
+    * Like [Web Workers](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API) and the `node:cluster module`, two-way communication
+    * can be achieved through inter-thread message passing. Internally, a `Worker` has
+    * a built-in pair of `MessagePort` s that are already associated with each
+    * other when the `Worker` is created. While the `MessagePort` object on the parent
+    * side is not directly exposed, its functionalities are exposed through `worker.postMessage()` and the `worker.on('message')` event
     * on the `Worker` object for the parent thread.
     *
     * To create custom messaging channels (which is encouraged over using the default
@@ -365,10 +365,10 @@ object workerThreadsMod {
     * the thread barrier.
     *
     * ```js
-    * const assert = require('assert');
+    * const assert = require('node:assert');
     * const {
-    *   Worker, MessageChannel, MessagePort, isMainThread, parentPort
-    * } = require('worker_threads');
+    *   Worker, MessageChannel, MessagePort, isMainThread, parentPort,
+    * } = require('node:worker_threads');
     * if (isMainThread) {
     *   const worker = new Worker(__filename);
     *   const subChannel = new MessageChannel();
@@ -483,7 +483,7 @@ object workerThreadsMod {
     val performance: WorkerPerformance = js.native
     
     /**
-      * Send a message to the worker that is received via `require('worker_threads').parentPort.on('message')`.
+      * Send a message to the worker that is received via `require('node:worker_threads').parentPort.on('message')`.
       * See `port.postMessage()` for more details.
       * @since v10.5.0
       */
@@ -578,7 +578,7 @@ object workerThreadsMod {
     
     /**
       * An integer identifier for the referenced thread. Inside the worker thread,
-      * it is available as `require('worker_threads').threadId`.
+      * it is available as `require('node:worker_threads').threadId`.
       * This value is unique for each `Worker` instance inside a single process.
       * @since v10.5.0
       */
@@ -604,7 +604,7 @@ object workerThreadsMod {
     *   isMainThread,
     *   setEnvironmentData,
     *   getEnvironmentData,
-    * } = require('worker_threads');
+    * } = require('node:worker_threads');
     *
     * if (isMainThread) {
     *   setEnvironmentData('Hello', 'World!');
@@ -672,7 +672,7 @@ object workerThreadsMod {
     * This operation cannot be undone.
     *
     * ```js
-    * const { MessageChannel, markAsUntransferable } = require('worker_threads');
+    * const { MessageChannel, markAsUntransferable } = require('node:worker_threads');
     *
     * const pooledBuffer = new ArrayBuffer(8);
     * const typedArray1 = new Uint8Array(pooledBuffer);
@@ -720,10 +720,10 @@ object workerThreadsMod {
   
   /**
     * Receive a single message from a given `MessagePort`. If no message is available,`undefined` is returned, otherwise an object with a single `message` property
-    * that contains the message payload, corresponding to the oldest message in the`MessagePort`’s queue.
+    * that contains the message payload, corresponding to the oldest message in the`MessagePort`'s queue.
     *
     * ```js
-    * const { MessageChannel, receiveMessageOnPort } = require('worker_threads');
+    * const { MessageChannel, receiveMessageOnPort } = require('node:worker_threads');
     * const { port1, port2 } = new MessageChannel();
     * port1.postMessage({ hello: 'world' });
     *
@@ -837,6 +837,13 @@ object workerThreadsMod {
     
     var execArgv: js.UndefOr[js.Array[String]] = js.undefined
     
+    /**
+      * An optional `name` to be appended to the worker title
+      * for debuggin/identification purposes, making the final title as
+      * `[worker ${id}] ${name}`.
+      */
+    var name: js.UndefOr[String] = js.undefined
+    
     var resourceLimits: js.UndefOr[ResourceLimits_] = js.undefined
     
     var stderr: js.UndefOr[Boolean] = js.undefined
@@ -886,6 +893,10 @@ object workerThreadsMod {
       inline def setExecArgvUndefined: Self = StObject.set(x, "execArgv", js.undefined)
       
       inline def setExecArgvVarargs(value: String*): Self = StObject.set(x, "execArgv", js.Array(value*))
+      
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
       inline def setResourceLimits(value: ResourceLimits_): Self = StObject.set(x, "resourceLimits", value.asInstanceOf[js.Any])
       

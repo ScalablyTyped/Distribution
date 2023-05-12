@@ -71,8 +71,6 @@ object buildSrcResumableUploadMod {
     
     var cacheKey: String = js.native
     
-    /* private */ var chunkBufferEncoding: Any = js.native
-    
     var chunkSize: js.UndefOr[Double] = js.native
     
     var contentLength: Double | Asterisk = js.native
@@ -114,11 +112,13 @@ object buildSrcResumableUploadMod {
     var kmsKeyName: js.UndefOr[String] = js.native
     
     /**
-      * A chunk used for caching the most recent upload chunk.
+      * An array of buffers used for caching the most recent upload chunk.
       * We should not assume that the server received all bytes sent in the request.
       *  - https://cloud.google.com/storage/docs/performing-resumable-uploads#chunked-upload
       */
-    /* private */ var lastChunkSent: Any = js.native
+    /* private */ var localWriteCache: Any = js.native
+    
+    /* private */ var localWriteCacheByteLength: Any = js.native
     
     /* private */ var makeRequest: Any = js.native
     
@@ -145,7 +145,14 @@ object buildSrcResumableUploadMod {
     
     var predefinedAcl: js.UndefOr[PredefinedAcl] = js.native
     
-    var `private`: js.UndefOr[Boolean] = js.native
+    /**
+      * Prepends the local buffer to write buffer and resets it.
+      *
+      * @param keepLastBytes number of bytes to keep from the end of the local buffer.
+      */
+    /* private */ var prependLocalBufferToUpstream: Any = js.native
+    
+    /* private */ var `private`: js.UndefOr[Boolean] = js.native
     
     var public: js.UndefOr[Boolean] = js.native
     
@@ -167,15 +174,6 @@ object buildSrcResumableUploadMod {
     
     var timeOfFirstRequest: Double = js.native
     
-    /**
-      * Prepends data back to the upstream chunk buffer.
-      *
-      * @param chunk The data to prepend
-      */
-    /* private */ var unshiftChunkBuffer: Any = js.native
-    
-    /* private */ var upstreamChunkBuffer: Any = js.native
-    
     /* private */ var upstreamEnded: Any = js.native
     
     /**
@@ -183,7 +181,6 @@ object buildSrcResumableUploadMod {
       * Ends when the limit has reached or no data is expected to be pushed from upstream.
       *
       * @param limit The most amount of data this iterator should return. `Infinity` by default.
-      * @param oneChunkMode Determines if one, exhaustive chunk is yielded for the iterator
       */
     /* private */ var upstreamIterator: Any = js.native
     
@@ -199,6 +196,11 @@ object buildSrcResumableUploadMod {
       * @returns If there will be more chunks to read in the future
       */
     /* private */ var waitForNextChunk: Any = js.native
+    
+    /**
+      * A cache of buffers written to this instance, ready for consuming
+      */
+    /* private */ var writeBuffers: Any = js.native
   }
   
   inline def createURI(cfg: UploadConfig): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("createURI")(cfg.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
@@ -384,6 +386,7 @@ object buildSrcResumableUploadMod {
     }
   }
   
+  /* Inlined parent std.Pick<node.stream.WritableOptions, 'highWaterMark'> */
   trait UploadConfig extends StObject {
     
     /**
@@ -440,6 +443,8 @@ object buildSrcResumableUploadMod {
       * object does not match the one provided here.
       */
     var generation: js.UndefOr[Double] = js.undefined
+    
+    var highWaterMark: js.UndefOr[Double] = js.undefined
     
     /**
       * A customer-supplied encryption key. See
@@ -549,6 +554,10 @@ object buildSrcResumableUploadMod {
       inline def setGeneration(value: Double): Self = StObject.set(x, "generation", value.asInstanceOf[js.Any])
       
       inline def setGenerationUndefined: Self = StObject.set(x, "generation", js.undefined)
+      
+      inline def setHighWaterMark(value: Double): Self = StObject.set(x, "highWaterMark", value.asInstanceOf[js.Any])
+      
+      inline def setHighWaterMarkUndefined: Self = StObject.set(x, "highWaterMark", js.undefined)
       
       inline def setKey(value: String | Buffer): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       

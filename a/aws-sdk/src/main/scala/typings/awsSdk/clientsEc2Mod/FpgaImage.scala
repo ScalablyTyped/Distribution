@@ -32,6 +32,11 @@ trait FpgaImage extends StObject {
   var FpgaImageId: js.UndefOr[String] = js.undefined
   
   /**
+    * The instance types supported by the AFI.
+    */
+  var InstanceTypes: js.UndefOr[InstanceTypesList] = js.undefined
+  
+  /**
     * The name of the AFI.
     */
   var Name: js.UndefOr[String] = js.undefined
@@ -110,6 +115,12 @@ object FpgaImage {
     inline def setFpgaImageId(value: String): Self = StObject.set(x, "FpgaImageId", value.asInstanceOf[js.Any])
     
     inline def setFpgaImageIdUndefined: Self = StObject.set(x, "FpgaImageId", js.undefined)
+    
+    inline def setInstanceTypes(value: InstanceTypesList): Self = StObject.set(x, "InstanceTypes", value.asInstanceOf[js.Any])
+    
+    inline def setInstanceTypesUndefined: Self = StObject.set(x, "InstanceTypes", js.undefined)
+    
+    inline def setInstanceTypesVarargs(value: String*): Self = StObject.set(x, "InstanceTypes", js.Array(value*))
     
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

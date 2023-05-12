@@ -1,7 +1,7 @@
 
 # Scala.js typings for domutils
 
-Typings are for version 3.0.1
+Typings are for version 3.1.0
 
 ## Library description:
 Utilities for working with htmlparser2's dom

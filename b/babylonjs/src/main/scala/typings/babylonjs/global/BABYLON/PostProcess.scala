@@ -1,6 +1,7 @@
 package typings.babylonjs.global.BABYLON
 
 import typings.babylonjs.BABYLON.Nullable
+import typings.babylonjs.BABYLON.PostProcessCustomShaderCodeProcessing
 import typings.babylonjs.BABYLON.PostProcessOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -44,7 +45,8 @@ open class PostProcess protected ()
     vertexUrl: js.UndefOr[String],
     indexParameters: js.UndefOr[Any],
     blockCompilation: js.UndefOr[Boolean],
-    textureFormat: js.UndefOr[Double]
+    textureFormat: js.UndefOr[Double],
+    shaderLanguage: js.UndefOr[typings.babylonjs.BABYLON.ShaderLanguage]
   ) = this()
 }
 /* static members */
@@ -62,6 +64,28 @@ object PostProcess {
     * @returns a new post process
     */
   inline def Parse(parsedPostProcess: Any, scene: typings.babylonjs.BABYLON.Scene, rootUrl: String): Nullable[typings.babylonjs.BABYLON.PostProcess] = (^.asInstanceOf[js.Dynamic].applyDynamic("Parse")(parsedPostProcess.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], rootUrl.asInstanceOf[js.Any])).asInstanceOf[Nullable[typings.babylonjs.BABYLON.PostProcess]]
+  
+  /**
+    * Registers a shader code processing with a post process name.
+    * @param postProcessName name of the post process. Use null for the fallback shader code processing. This is the shader code processing that will be used in case no specific shader code processing has been associated to a post process name
+    * @param customShaderCodeProcessing shader code processing to associate to the post process name
+    * @returns
+    */
+  inline def RegisterShaderCodeProcessing(postProcessName: Nullable[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("RegisterShaderCodeProcessing")(postProcessName.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def RegisterShaderCodeProcessing(
+    postProcessName: Nullable[String],
+    customShaderCodeProcessing: PostProcessCustomShaderCodeProcessing
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("RegisterShaderCodeProcessing")(postProcessName.asInstanceOf[js.Any], customShaderCodeProcessing.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @JSGlobal("BABYLON.PostProcess._CustomShaderCodeProcessing")
+  @js.native
+  def _CustomShaderCodeProcessing: Any = js.native
+  inline def _CustomShaderCodeProcessing_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_CustomShaderCodeProcessing")(x.asInstanceOf[js.Any])
+  
+  @JSGlobal("BABYLON.PostProcess._GetShaderCodeProcessing")
+  @js.native
+  def _GetShaderCodeProcessing: Any = js.native
+  inline def _GetShaderCodeProcessing_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_GetShaderCodeProcessing")(x.asInstanceOf[js.Any])
   
   /**
     * @internal

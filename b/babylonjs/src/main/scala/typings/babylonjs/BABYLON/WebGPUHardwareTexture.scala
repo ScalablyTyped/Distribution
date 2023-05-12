@@ -63,10 +63,15 @@ trait WebGPUHardwareTexture
   
   var format: GPUTextureFormat = js.native
   
-  def msaaTexture: Nullable[GPUTexture] = js.native
-  def msaaTexture_=(texture: Nullable[GPUTexture]): Unit = js.native
+  def getMSAATexture(): Nullable[GPUTexture] = js.native
+  def getMSAATexture(index: Double): Nullable[GPUTexture] = js.native
+  
+  def releaseMSAATexture(): Unit = js.native
   
   def set(hardwareTexture: GPUTexture): Unit = js.native
+  
+  def setMSAATexture(texture: GPUTexture): Unit = js.native
+  def setMSAATexture(texture: GPUTexture, index: Double): Unit = js.native
   
   var textureAdditionalUsages: Double = js.native
   

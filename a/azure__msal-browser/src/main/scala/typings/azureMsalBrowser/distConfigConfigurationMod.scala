@@ -221,6 +221,11 @@ object distConfigConfigurationMod {
     var asyncPopups: js.UndefOr[Boolean] = js.undefined
     
     /**
+      * Options related to browser crypto APIs
+      */
+    var cryptoOptions: js.UndefOr[CryptoOptions] = js.undefined
+    
+    /**
       * Sets the timeout for waiting for a response hash in an iframe. Will take precedence over loadFrameTimeout if both are set.
       */
     var iframeHashTimeout: js.UndefOr[Double] = js.undefined
@@ -256,6 +261,11 @@ object distConfigConfigurationMod {
     var networkClient: js.UndefOr[INetworkModule] = js.undefined
     
     /**
+      * Sets the interval length in milliseconds for polling the location attribute in popup windows (default is 30ms)
+      */
+    var pollIntervalMilliseconds: js.UndefOr[Double] = js.undefined
+    
+    /**
       * Time to wait for redirection to occur before resolving promise
       */
     var redirectNavigationTimeout: js.UndefOr[Double] = js.undefined
@@ -287,6 +297,10 @@ object distConfigConfigurationMod {
       
       inline def setAsyncPopupsUndefined: Self = StObject.set(x, "asyncPopups", js.undefined)
       
+      inline def setCryptoOptions(value: CryptoOptions): Self = StObject.set(x, "cryptoOptions", value.asInstanceOf[js.Any])
+      
+      inline def setCryptoOptionsUndefined: Self = StObject.set(x, "cryptoOptions", js.undefined)
+      
       inline def setIframeHashTimeout(value: Double): Self = StObject.set(x, "iframeHashTimeout", value.asInstanceOf[js.Any])
       
       inline def setIframeHashTimeoutUndefined: Self = StObject.set(x, "iframeHashTimeout", js.undefined)
@@ -314,6 +328,10 @@ object distConfigConfigurationMod {
       inline def setNetworkClient(value: INetworkModule): Self = StObject.set(x, "networkClient", value.asInstanceOf[js.Any])
       
       inline def setNetworkClientUndefined: Self = StObject.set(x, "networkClient", js.undefined)
+      
+      inline def setPollIntervalMilliseconds(value: Double): Self = StObject.set(x, "pollIntervalMilliseconds", value.asInstanceOf[js.Any])
+      
+      inline def setPollIntervalMillisecondsUndefined: Self = StObject.set(x, "pollIntervalMilliseconds", js.undefined)
       
       inline def setRedirectNavigationTimeout(value: Double): Self = StObject.set(x, "redirectNavigationTimeout", value.asInstanceOf[js.Any])
       
@@ -353,9 +371,14 @@ object distConfigConfigurationMod {
   trait CacheOptions extends StObject {
     
     /**
-      * Used to specify the cacheLocation user wants to set. Valid values are "localStorage" and "sessionStorage"
+      * Used to specify the cacheLocation user wants to set. Valid values are "localStorage", "sessionStorage" and "memoryStorage".
       */
     var cacheLocation: js.UndefOr[BrowserCacheLocation | String] = js.undefined
+    
+    /**
+      * If set, MSAL will attempt to migrate cache entries from older versions on initialization. By default this flag is set to true if cacheLocation is localStorage, otherwise false.
+      */
+    var cacheMigrationEnabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If set, MSAL sets the "Secure" flag on cookies so they can only be sent over HTTPS. By default this flag is set to false.
@@ -366,6 +389,11 @@ object distConfigConfigurationMod {
       * If set, MSAL stores the auth request state required for validation of the auth flows in the browser cookies. By default this flag is set to false.
       */
     var storeAuthStateInCookie: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Used to specify the temporaryCacheLocation user wants to set. Valid values are "localStorage", "sessionStorage" and "memoryStorage".
+      */
+    var temporaryCacheLocation: js.UndefOr[BrowserCacheLocation | String] = js.undefined
   }
   object CacheOptions {
     
@@ -381,6 +409,10 @@ object distConfigConfigurationMod {
       
       inline def setCacheLocationUndefined: Self = StObject.set(x, "cacheLocation", js.undefined)
       
+      inline def setCacheMigrationEnabled(value: Boolean): Self = StObject.set(x, "cacheMigrationEnabled", value.asInstanceOf[js.Any])
+      
+      inline def setCacheMigrationEnabledUndefined: Self = StObject.set(x, "cacheMigrationEnabled", js.undefined)
+      
       inline def setSecureCookies(value: Boolean): Self = StObject.set(x, "secureCookies", value.asInstanceOf[js.Any])
       
       inline def setSecureCookiesUndefined: Self = StObject.set(x, "secureCookies", js.undefined)
@@ -388,6 +420,10 @@ object distConfigConfigurationMod {
       inline def setStoreAuthStateInCookie(value: Boolean): Self = StObject.set(x, "storeAuthStateInCookie", value.asInstanceOf[js.Any])
       
       inline def setStoreAuthStateInCookieUndefined: Self = StObject.set(x, "storeAuthStateInCookie", js.undefined)
+      
+      inline def setTemporaryCacheLocation(value: BrowserCacheLocation | String): Self = StObject.set(x, "temporaryCacheLocation", value.asInstanceOf[js.Any])
+      
+      inline def setTemporaryCacheLocationUndefined: Self = StObject.set(x, "temporaryCacheLocation", js.undefined)
     }
   }
   
@@ -436,6 +472,40 @@ object distConfigConfigurationMod {
       inline def setTelemetry(value: BrowserTelemetryOptions): Self = StObject.set(x, "telemetry", value.asInstanceOf[js.Any])
       
       inline def setTelemetryUndefined: Self = StObject.set(x, "telemetry", js.undefined)
+    }
+  }
+  
+  trait CryptoOptions extends StObject {
+    
+    /**
+      * Entropy to seed browser crypto API (needed for MSR Crypto). Must be cryptographically strong random numbers (e.g. crypto.randomBytes(48) from Node)
+      * @type {?Uint8Array}
+      */
+    var entropy: js.UndefOr[js.typedarray.Uint8Array] = js.undefined
+    
+    /**
+      * Enables the application to use the MSR Crypto interface, if available (and other interfaces are not)
+      * @type {?boolean}
+      */
+    var useMsrCrypto: js.UndefOr[Boolean] = js.undefined
+  }
+  object CryptoOptions {
+    
+    inline def apply(): CryptoOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[CryptoOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CryptoOptions] (val x: Self) extends AnyVal {
+      
+      inline def setEntropy(value: js.typedarray.Uint8Array): Self = StObject.set(x, "entropy", value.asInstanceOf[js.Any])
+      
+      inline def setEntropyUndefined: Self = StObject.set(x, "entropy", js.undefined)
+      
+      inline def setUseMsrCrypto(value: Boolean): Self = StObject.set(x, "useMsrCrypto", value.asInstanceOf[js.Any])
+      
+      inline def setUseMsrCryptoUndefined: Self = StObject.set(x, "useMsrCrypto", js.undefined)
     }
   }
 }

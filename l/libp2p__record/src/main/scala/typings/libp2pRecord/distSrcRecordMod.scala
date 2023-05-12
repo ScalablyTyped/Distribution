@@ -1,5 +1,6 @@
 package typings.libp2pRecord
 
+import typings.libp2pRecord.anon.PartialRecord
 import typings.protonsRuntime.distSrcCodecMod.Codec
 import typings.uint8arraylist.mod.Uint8ArrayList
 import org.scalablytyped.runtime.StObject
@@ -32,7 +33,7 @@ object distSrcRecordMod {
     inline def decode(buf: js.typedarray.Uint8Array): Record = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(buf.asInstanceOf[js.Any]).asInstanceOf[Record]
     inline def decode(buf: Uint8ArrayList): Record = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(buf.asInstanceOf[js.Any]).asInstanceOf[Record]
     
-    inline def encode(obj: Record): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
+    inline def encode(obj: PartialRecord): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
     
     @scala.inline
     implicit open class MutableBuilder[Self <: Record] (val x: Self) extends AnyVal {

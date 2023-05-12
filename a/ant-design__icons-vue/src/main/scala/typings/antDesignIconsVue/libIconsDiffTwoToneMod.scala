@@ -16,7 +16,7 @@ object libIconsDiffTwoToneMod extends Shortcut {
   @js.native
   trait DiffTwoToneIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_DiffTwoToneIconType: String = js.native

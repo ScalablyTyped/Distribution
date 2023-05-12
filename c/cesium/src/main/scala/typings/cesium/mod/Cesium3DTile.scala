@@ -6,7 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("cesium", "Cesium3DTile")
 @js.native
-open class Cesium3DTile () extends StObject {
+open class Cesium3DTile protected () extends StObject {
+  def this(tileset: Cesium3DTileset, baseResource: Resource, header: Any, parent: Cesium3DTile) = this()
   
   /**
     * Get the bounding sphere derived from the tile's bounding volume.

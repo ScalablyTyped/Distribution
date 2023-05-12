@@ -105,27 +105,46 @@ object mentionMentionMod {
     def this(props: MentionProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: MentionProps, context: Any) = this()
     
+    /**
+      * Used to focus the component.
+      */
+    def focus(): Unit = js.native
+    
+    /**
+      * Used to get container element.
+      * @return {HTMLDivElement} Container element
+      */
     def getElement(): HTMLDivElement = js.native
     
+    /**
+      * Used to get input element.
+      * @return {InputTextarea} Input element
+      */
     def getInput(): Any = js.native
     
+    /**
+      * Used to get overlay element.
+      * @return {HTMLElement} Overlay element
+      */
     def getOverlay(): HTMLElement = js.native
   }
   
-  type MentionFieldType = String | js.Array[String]
-  
-  type MentionFooterTemplateType = ReactNode | (js.Function1[/* props */ MentionProps, ReactNode])
-  
-  type MentionHeaderTemplateType = ReactNode | (js.Function1[/* props */ MentionProps, ReactNode])
-  
+  /**
+    */
   trait MentionItemTemplateOptions extends StObject {
     
+    /**
+      * Index of the menu item.
+      */
     var index: Double
     
+    /**
+      * Triggered the mention item.
+      */
     var trigger: String
   }
   object MentionItemTemplateOptions {
@@ -143,8 +162,6 @@ object mentionMentionMod {
       inline def setTrigger(value: String): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
     }
   }
-  
-  type MentionItemTemplateType = ReactNode | (js.Function2[/* suggestion */ Any, /* options */ MentionItemTemplateOptions, ReactNode])
   
   /* Inlined parent std.Omit<react.react.DetailedHTMLProps<react.react.TextareaHTMLAttributes<std.HTMLTextAreaElement>, std.HTMLTextAreaElement>, 'onSelect' | 'onChange' | 'onInput' | 'onFocus' | 'onBlur' | 'ref'> */
   trait MentionProps extends StObject {
@@ -259,12 +276,23 @@ object mentionMentionMod {
     
     var autoFocus: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * When enabled, highlights the first item in the list by default.
+      * @defaultValue true
+      */
     var autoHighlight: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * When present, height of textarea changes as being typed.
+      */
     var autoResize: js.UndefOr[Boolean] = js.undefined
     
     var autoSave: js.UndefOr[String] = js.undefined
     
+    /**
+      * Used to get the child elements of the component.
+      * @readonly
+      */
     var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
@@ -272,6 +300,8 @@ object mentionMentionMod {
     var color: js.UndefOr[String] = js.undefined
     
     var cols: js.UndefOr[Double] = js.undefined
+    
+    var content: js.UndefOr[String] = js.undefined
     
     var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
@@ -285,6 +315,10 @@ object mentionMentionMod {
     
     var defaultValue: js.UndefOr[String | Double | js.Array[String]] = js.undefined
     
+    /**
+      * Delay between keystrokes to wait before sending a query.
+      * @defaultValue 0
+      */
     var delay: js.UndefOr[Double] = js.undefined
     
     var dir: js.UndefOr[String] = js.undefined
@@ -295,13 +329,22 @@ object mentionMentionMod {
     
     var draggable: js.UndefOr[Booleanish] = js.undefined
     
-    var field: js.UndefOr[MentionFieldType] = js.undefined
+    /**
+      * Field of a suggested object to resolve and display.
+      */
+    var field: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var footerTemplate: js.UndefOr[MentionFooterTemplateType] = js.undefined
+    /**
+      * Custom template of footer.
+      */
+    var footerTemplate: js.UndefOr[ReactNode | (js.Function1[/* props */ this.type, ReactNode])] = js.undefined
     
     var form: js.UndefOr[String] = js.undefined
     
-    var headerTemplate: js.UndefOr[MentionHeaderTemplateType] = js.undefined
+    /**
+      * Custom template of header.
+      */
+    var headerTemplate: js.UndefOr[ReactNode | (js.Function1[/* props */ this.type, ReactNode])] = js.undefined
     
     var hidden: js.UndefOr[Boolean] = js.undefined
     
@@ -309,14 +352,26 @@ object mentionMentionMod {
     
     var inlist: js.UndefOr[Any] = js.undefined
     
+    /**
+      * Style class of the input field.
+      */
     var inputClassName: js.UndefOr[String] = js.undefined
     
+    /**
+      * Identifier of the input element.
+      */
     var inputId: js.UndefOr[String] = js.undefined
     
     var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
     
+    /**
+      * Reference of the input element.
+      */
     var inputRef: js.UndefOr[Ref[HTMLInputElement]] = js.undefined
     
+    /**
+      * Inline style of the input field.
+      */
     var inputStyle: js.UndefOr[CSSProperties] = js.undefined
     
     var is: js.UndefOr[String] = js.undefined
@@ -329,7 +384,12 @@ object mentionMentionMod {
     
     var itemScope: js.UndefOr[Boolean] = js.undefined
     
-    var itemTemplate: js.UndefOr[MentionItemTemplateType] = js.undefined
+    /**
+      * Custom template for the items.
+      */
+    var itemTemplate: js.UndefOr[
+        ReactNode | (js.Function2[/* suggestion */ Any, /* options */ MentionItemTemplateOptions, ReactNode])
+      ] = js.undefined
     
     var itemType: js.UndefOr[String] = js.undefined
     
@@ -357,12 +417,20 @@ object mentionMentionMod {
     
     var onBeforeInput: js.UndefOr[FormEventHandler[HTMLTextAreaElement]] = js.undefined
     
+    /**
+      * Callback to invoke when the element loses focus.
+      * @param {React.FocusEvent<HTMLInputElement>} event Browser event
+      */
     var onBlur: js.UndefOr[js.Function1[/* event */ FocusEvent[HTMLInputElement, Element], Unit]] = js.undefined
     
     var onCanPlay: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] = js.undefined
     
     var onCanPlayThrough: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] = js.undefined
     
+    /**
+      * Callback to invoke when value changes.
+      * @param {React.FormEvent<HTMLInputElement>} event Browser event
+      */
     var onChange: js.UndefOr[js.Function1[/* event */ FormEvent[HTMLInputElement], Unit]] = js.undefined
     
     var onClick: js.UndefOr[MouseEventHandler[HTMLTextAreaElement]] = js.undefined
@@ -407,10 +475,21 @@ object mentionMentionMod {
     
     var onError: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] = js.undefined
     
+    /**
+      * Callback to invoke when the element receives focus.
+      * @param {React.FocusEvent<HTMLInputElement>} event Browser event
+      */
     var onFocus: js.UndefOr[js.Function1[/* event */ FocusEvent[HTMLInputElement, Element], Unit]] = js.undefined
     
+    /**
+      * Callback to invoke when overlay panel becomes hidden.
+      */
     var onHide: js.UndefOr[js.Function0[Unit]] = js.undefined
     
+    /**
+      * Callback to invoke on input event of input field.
+      * @param {React.FormEvent<HTMLInputElement>} event Browser event
+      */
     var onInput: js.UndefOr[js.Function1[/* event */ FormEvent[HTMLInputElement], Unit]] = js.undefined
     
     var onInvalid: js.UndefOr[FormEventHandler[HTMLTextAreaElement]] = js.undefined
@@ -477,14 +556,25 @@ object mentionMentionMod {
     
     var onScroll: js.UndefOr[UIEventHandler[HTMLTextAreaElement]] = js.undefined
     
-    var onSearch: js.UndefOr[js.Function1[/* e */ MentionSearchParams, Unit]] = js.undefined
+    /**
+      * Callback to invoke when search.
+      * @param {MentionSearchEvent} event Custom search event
+      */
+    var onSearch: js.UndefOr[js.Function1[/* event */ MentionSearchEvent, Unit]] = js.undefined
     
     var onSeeked: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] = js.undefined
     
     var onSeeking: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] = js.undefined
     
-    var onSelect: js.UndefOr[js.Function1[/* e */ MentionSelectParams, Unit]] = js.undefined
+    /**
+      * Callback to invoke when selection changes.
+      * @param {MentionSelectEvent} event Custom select event
+      */
+    var onSelect: js.UndefOr[js.Function1[/* event */ MentionSelectEvent, Unit]] = js.undefined
     
+    /**
+      * Callback to invoke when overlay panel becomes visible.
+      */
     var onShow: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     var onStalled: js.UndefOr[ReactEventHandler[HTMLTextAreaElement]] = js.undefined
@@ -511,8 +601,14 @@ object mentionMentionMod {
     
     var onWheel: js.UndefOr[WheelEventHandler[HTMLTextAreaElement]] = js.undefined
     
+    /**
+      * Style class of the overlay panel element.
+      */
     var panelClassName: js.UndefOr[String] = js.undefined
     
+    /**
+      * Inline style of the overlay panel element.
+      */
     var panelStyle: js.UndefOr[CSSProperties] = js.undefined
     
     var placeholder: js.UndefOr[String] = js.undefined
@@ -525,16 +621,24 @@ object mentionMentionMod {
     
     var readOnly: js.UndefOr[Boolean] = js.undefined
     
+    var rel: js.UndefOr[String] = js.undefined
+    
     var required: js.UndefOr[Boolean] = js.undefined
     
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
     
+    var rev: js.UndefOr[String] = js.undefined
+    
     var role: js.UndefOr[AriaRole] = js.undefined
     
     var rows: js.UndefOr[Double] = js.undefined
     
+    /**
+      * Maximum height of the suggestions panel.
+      * @defaultValue 200px
+      */
     var scrollHeight: js.UndefOr[String] = js.undefined
     
     var security: js.UndefOr[String] = js.undefined
@@ -545,6 +649,9 @@ object mentionMentionMod {
     
     var style: js.UndefOr[CSSProperties] = js.undefined
     
+    /**
+      * An array of suggestions to display.
+      */
     var suggestions: js.UndefOr[js.Array[Any]] = js.undefined
     
     var suppressContentEditableWarning: js.UndefOr[Boolean] = js.undefined
@@ -555,13 +662,21 @@ object mentionMentionMod {
     
     var title: js.UndefOr[String] = js.undefined
     
+    /**
+      * The properties of CSSTransition can be customized, except for "nodeRef" and "in" properties.
+      * @type {CSSTransitionProps}
+      */
     var transitionOptions: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSSTransitionProps */ Any
       ] = js.undefined
     
     var translate: js.UndefOr[yes | no] = js.undefined
     
-    var trigger: js.UndefOr[MentionTriggerType] = js.undefined
+    /**
+      * Set trigger keyword.
+      * @defaultValue "@"
+      */
+    var trigger: js.UndefOr[String | js.Array[String]] = js.undefined
     
     var typeof: js.UndefOr[String] = js.undefined
     
@@ -829,9 +944,13 @@ object mentionMentionMod {
       
       inline def setColsUndefined: Self = StObject.set(x, "cols", js.undefined)
       
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
       inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
       inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
@@ -875,15 +994,15 @@ object mentionMentionMod {
       
       inline def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
       
-      inline def setField(value: MentionFieldType): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+      inline def setField(value: String | js.Array[String]): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
       
       inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
       
       inline def setFieldVarargs(value: String*): Self = StObject.set(x, "field", js.Array(value*))
       
-      inline def setFooterTemplate(value: MentionFooterTemplateType): Self = StObject.set(x, "footerTemplate", value.asInstanceOf[js.Any])
+      inline def setFooterTemplate(value: ReactNode | (js.Function1[MentionProps, ReactNode])): Self = StObject.set(x, "footerTemplate", value.asInstanceOf[js.Any])
       
-      inline def setFooterTemplateFunction1(value: /* props */ MentionProps => ReactNode): Self = StObject.set(x, "footerTemplate", js.Any.fromFunction1(value))
+      inline def setFooterTemplateFunction1(value: MentionProps => ReactNode): Self = StObject.set(x, "footerTemplate", js.Any.fromFunction1(value))
       
       inline def setFooterTemplateUndefined: Self = StObject.set(x, "footerTemplate", js.undefined)
       
@@ -891,9 +1010,9 @@ object mentionMentionMod {
       
       inline def setFormUndefined: Self = StObject.set(x, "form", js.undefined)
       
-      inline def setHeaderTemplate(value: MentionHeaderTemplateType): Self = StObject.set(x, "headerTemplate", value.asInstanceOf[js.Any])
+      inline def setHeaderTemplate(value: ReactNode | (js.Function1[MentionProps, ReactNode])): Self = StObject.set(x, "headerTemplate", value.asInstanceOf[js.Any])
       
-      inline def setHeaderTemplateFunction1(value: /* props */ MentionProps => ReactNode): Self = StObject.set(x, "headerTemplate", js.Any.fromFunction1(value))
+      inline def setHeaderTemplateFunction1(value: MentionProps => ReactNode): Self = StObject.set(x, "headerTemplate", js.Any.fromFunction1(value))
       
       inline def setHeaderTemplateUndefined: Self = StObject.set(x, "headerTemplate", js.undefined)
       
@@ -953,7 +1072,9 @@ object mentionMentionMod {
       
       inline def setItemScopeUndefined: Self = StObject.set(x, "itemScope", js.undefined)
       
-      inline def setItemTemplate(value: MentionItemTemplateType): Self = StObject.set(x, "itemTemplate", value.asInstanceOf[js.Any])
+      inline def setItemTemplate(
+        value: ReactNode | (js.Function2[/* suggestion */ Any, /* options */ MentionItemTemplateOptions, ReactNode])
+      ): Self = StObject.set(x, "itemTemplate", value.asInstanceOf[js.Any])
       
       inline def setItemTemplateFunction2(value: (/* suggestion */ Any, /* options */ MentionItemTemplateOptions) => ReactNode): Self = StObject.set(x, "itemTemplate", js.Any.fromFunction2(value))
       
@@ -1253,7 +1374,7 @@ object mentionMentionMod {
       
       inline def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
       
-      inline def setOnSearch(value: /* e */ MentionSearchParams => Unit): Self = StObject.set(x, "onSearch", js.Any.fromFunction1(value))
+      inline def setOnSearch(value: /* event */ MentionSearchEvent => Unit): Self = StObject.set(x, "onSearch", js.Any.fromFunction1(value))
       
       inline def setOnSearchUndefined: Self = StObject.set(x, "onSearch", js.undefined)
       
@@ -1265,7 +1386,7 @@ object mentionMentionMod {
       
       inline def setOnSeekingUndefined: Self = StObject.set(x, "onSeeking", js.undefined)
       
-      inline def setOnSelect(value: /* e */ MentionSelectParams => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
+      inline def setOnSelect(value: /* event */ MentionSelectEvent => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
       
       inline def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
       
@@ -1349,6 +1470,10 @@ object mentionMentionMod {
       
       inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
       
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      
+      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+      
       inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
       
       inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
@@ -1360,6 +1485,10 @@ object mentionMentionMod {
       inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+      
+      inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+      
+      inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
       
       inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
@@ -1421,7 +1550,7 @@ object mentionMentionMod {
       
       inline def setTranslateUndefined: Self = StObject.set(x, "translate", js.undefined)
       
-      inline def setTrigger(value: MentionTriggerType): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
+      inline def setTrigger(value: String | js.Array[String]): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
       
       inline def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
       
@@ -1451,23 +1580,37 @@ object mentionMentionMod {
     }
   }
   
-  trait MentionSearchParams extends StObject {
+  /**
+    * Custom search event
+    * @see {@link MentionProps.onSearch}
+    * @event
+    */
+  trait MentionSearchEvent extends StObject {
     
+    /**
+      * Browser event.
+      */
     var originalEvent: SyntheticEvent[Element, Event]
     
+    /**
+      * Current query string entered by the user.
+      */
     var query: String
     
+    /**
+      * Current trigger keyword.
+      */
     var trigger: String
   }
-  object MentionSearchParams {
+  object MentionSearchEvent {
     
-    inline def apply(originalEvent: SyntheticEvent[Element, Event], query: String, trigger: String): MentionSearchParams = {
+    inline def apply(originalEvent: SyntheticEvent[Element, Event], query: String, trigger: String): MentionSearchEvent = {
       val __obj = js.Dynamic.literal(originalEvent = originalEvent.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], trigger = trigger.asInstanceOf[js.Any])
-      __obj.asInstanceOf[MentionSearchParams]
+      __obj.asInstanceOf[MentionSearchEvent]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: MentionSearchParams] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: MentionSearchEvent] (val x: Self) extends AnyVal {
       
       inline def setOriginalEvent(value: SyntheticEvent[Element, Event]): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
@@ -1477,27 +1620,36 @@ object mentionMentionMod {
     }
   }
   
-  trait MentionSelectParams extends StObject {
+  /**
+    * Custom select event
+    * @see {@link MentionProps.onSelect}
+    * @event
+    */
+  trait MentionSelectEvent extends StObject {
     
+    /**
+      * Browser event
+      */
     var originalEvent: SyntheticEvent[Element, Event]
     
+    /**
+      * Selected item
+      */
     var suggestion: Any
   }
-  object MentionSelectParams {
+  object MentionSelectEvent {
     
-    inline def apply(originalEvent: SyntheticEvent[Element, Event], suggestion: Any): MentionSelectParams = {
+    inline def apply(originalEvent: SyntheticEvent[Element, Event], suggestion: Any): MentionSelectEvent = {
       val __obj = js.Dynamic.literal(originalEvent = originalEvent.asInstanceOf[js.Any], suggestion = suggestion.asInstanceOf[js.Any])
-      __obj.asInstanceOf[MentionSelectParams]
+      __obj.asInstanceOf[MentionSelectEvent]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: MentionSelectParams] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: MentionSelectEvent] (val x: Self) extends AnyVal {
       
       inline def setOriginalEvent(value: SyntheticEvent[Element, Event]): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
       inline def setSuggestion(value: Any): Self = StObject.set(x, "suggestion", value.asInstanceOf[js.Any])
     }
   }
-  
-  type MentionTriggerType = String | js.Array[String]
 }

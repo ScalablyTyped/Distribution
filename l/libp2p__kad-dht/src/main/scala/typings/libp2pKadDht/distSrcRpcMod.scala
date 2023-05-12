@@ -2,7 +2,6 @@ package typings.libp2pKadDht
 
 import typings.interfaceDatastore.mod.Datastore
 import typings.libp2pInterfaceAddressManager.mod.AddressManager
-import typings.libp2pInterfaceDht.mod.Validators
 import typings.libp2pInterfacePeerId.mod.PeerId
 import typings.libp2pInterfacePeerStore.mod.PeerStore
 import typings.libp2pInterfaceRegistrar.mod.IncomingStreamData
@@ -12,6 +11,7 @@ import typings.libp2pKadDht.distSrcProvidersMod.Providers
 import typings.libp2pKadDht.distSrcRoutingTableMod.RoutingTable
 import typings.libp2pKadDht.distSrcRpcHandlersFindNodeMod.FindNodeHandlerComponents
 import typings.libp2pKadDht.distSrcRpcHandlersGetValueMod.GetValueHandlerComponents
+import typings.libp2pKadDht.mod.Validators
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -66,7 +66,23 @@ object distSrcRpcMod {
        with FindNodeHandlerComponents
   object RPCComponents {
     
-    inline def apply(addressManager: AddressManager, datastore: Datastore, peerId: PeerId, peerStore: PeerStore): RPCComponents = {
+    inline def apply(
+      addressManager: AddressManager,
+      datastore: Datastore[
+          js.Object, 
+          js.Object, 
+          js.Object, 
+          js.Object, 
+          js.Object, 
+          js.Object, 
+          js.Object, 
+          js.Object, 
+          js.Object, 
+          js.Object
+        ],
+      peerId: PeerId,
+      peerStore: PeerStore
+    ): RPCComponents = {
       val __obj = js.Dynamic.literal(addressManager = addressManager.asInstanceOf[js.Any], datastore = datastore.asInstanceOf[js.Any], peerId = peerId.asInstanceOf[js.Any], peerStore = peerStore.asInstanceOf[js.Any])
       __obj.asInstanceOf[RPCComponents]
     }

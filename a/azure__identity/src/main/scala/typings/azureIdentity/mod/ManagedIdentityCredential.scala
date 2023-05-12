@@ -35,7 +35,18 @@ open class ManagedIdentityCredential ()
   
   /* private */ var clientId: Any = js.native
   
+  /* private */ var confidentialApp: Any = js.native
+  
+  /**
+    * Handles the MSAL authentication result.
+    * If the result has an account, we update the local account reference.
+    * If the token received is invalid, an error will be thrown depending on what's missing.
+    */
+  /* private */ var handleResult: Any = js.native
+  
   /* private */ var identityClient: Any = js.native
+  
+  /* private */ var isAppTokenProviderInitialized: Any = js.native
   
   /* private */ var isAvailableIdentityClient: Any = js.native
   

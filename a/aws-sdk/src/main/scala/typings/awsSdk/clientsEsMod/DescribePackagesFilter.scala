@@ -12,7 +12,7 @@ trait DescribePackagesFilter extends StObject {
   var Name: js.UndefOr[DescribePackagesFilterName] = js.undefined
   
   /**
-    * A list of values for the specified field.
+    * A non-empty list of values for the specified field.
     */
   var Value: js.UndefOr[DescribePackagesFilterValues] = js.undefined
 }

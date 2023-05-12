@@ -96,7 +96,6 @@ import typings.maplibreGl.maplibreGlStrings.tan
 import typings.maplibreGl.maplibreGlStrings.upcase
 import typings.maplibreGl.maplibreGlStrings.within
 import typings.maplibreGl.maplibreGlStrings.zoom
-import typings.std.GLenum
 import typings.std.HTMLImageElement
 import typings.std.ImageBitmap
 import typings.std.KeyboardEvent
@@ -113,10 +112,6 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-type BlendEquationType = GLenum
-
-type BlendFuncConstant = GLenum
-
 type BlendFuncType = js.Tuple2[BlendFuncConstant, BlendFuncConstant]
 
 type Callback[T] = js.Function2[
@@ -130,8 +125,6 @@ type ColorMaskType = js.Tuple4[Boolean, Boolean, Boolean, Boolean]
 
 type ColorSpecification = String
 
-type CompareFuncType = GLenum
-
 type Coordinates = js.Tuple4[
 js.Tuple2[Double, Double], 
 js.Tuple2[Double, Double], 
@@ -139,8 +132,6 @@ js.Tuple2[Double, Double],
 js.Tuple2[Double, Double]]
 
 type CrossTileID = String | Double
-
-type CullFaceModeType = GLenum
 
 type CustomRenderMethod = js.Function2[/* gl */ WebGLRenderingContext, /* matrix */ mat4, scala.Unit]
 
@@ -153,13 +144,9 @@ type CustomRenderMethod = js.Function2[/* gl */ WebGLRenderingContext, /* matrix
 */
 type DataDrivenPropertyValueSpecification[T] = _DataDrivenPropertyValueSpecification[T] | T | ExpressionSpecification
 
-type DepthFuncType = CompareFuncType
-
 type DepthMaskType = Boolean
 
 type DepthRangeType = js.Tuple2[Double, Double]
-
-type DrawMode = GLenum
 
 type ExpressionFilterSpecification = Boolean | ExpressionSpecification
 
@@ -213,8 +200,6 @@ to avoid circular code involving:
 type FilterSpecification = Any | LegacyFilterSpecification
 
 type FormattedSpecification = String
-
-type FrontFaceType = GLenum
 
 type GetImageCallback = js.Function3[
 /* error */ js.UndefOr[js.Error | Null], 
@@ -307,23 +292,15 @@ type ResponseCallback[T] = js.Function4[
 /* expires */ js.UndefOr[String | Null], 
 scala.Unit]
 
-type StencilOpConstant = GLenum
-
 type StencilOpType = js.Tuple3[StencilOpConstant, StencilOpConstant, StencilOpConstant]
 
 type SymbolInstance = SymbolInstanceStruct
 
 type TaskID = Double
 
-type TextureFilter = GLenum
-
-type TextureFormat = GLenum
-
 type TextureImage = TexImageSource | DataTextureImage
 
 type TextureUnitType = Double
-
-type TextureWrap = GLenum
 
 type TimePoint = Double
 

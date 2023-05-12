@@ -1,9 +1,9 @@
 package typings.pixiText
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.pixiSettings.libIcanvasMod.ICanvas
 import typings.pixiText.anon.PartialITextStyle
 import typings.pixiText.libTextMetricsMod.IFontMetrics
+import typings.pixiText.libTextStyleMod.ITextStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -26,7 +26,7 @@ object mod {
   @js.native
   /**
     * @param text - The string that you would like the text to display
-    * @param {object|PIXI.TextStyle} [style] - The style parameters
+    * @param style - The style parameters
     * @param canvas - The canvas element for drawing text
     */
   open class Text ()
@@ -57,14 +57,36 @@ object mod {
     val ^ : js.Any = js.native
     
     /**
-      * New rendering behavior for letter-spacing which uses Chrome's new native API. This will
-      * lead to more accurate letter-spacing results because it does not try to manually draw
-      * each character. However, this Chrome API is experimental and may not serve all cases yet.
+      * Override whether or not the resolution of the text is automatically adjusted to match the resolution of the renderer.
+      * Setting this to false can allow you to get crisper text at lower render resolutions.
+      * @example
+      * // renderer has a resolution of 1
+      * const app = new Application();
+      *
+      * Text.defaultResolution = 2;
+      * Text.defaultAutoResolution = false;
+      * // text has a resolution of 2
+      * const text = new Text('This is a PixiJS text');
       */
-    @JSImport("@pixi/text", "Text.experimentalLetterSpacing")
+    @JSImport("@pixi/text", "Text.defaultAutoResolution")
     @js.native
-    def experimentalLetterSpacing: Boolean = js.native
-    inline def experimentalLetterSpacing_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("experimentalLetterSpacing")(x.asInstanceOf[js.Any])
+    def defaultAutoResolution: Boolean = js.native
+    inline def defaultAutoResolution_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultAutoResolution")(x.asInstanceOf[js.Any])
+    
+    /**
+      * If {@link PIXI.Text.defaultAutoResolution} is false, this will be the default resolution of the text.
+      * If not set it will default to {@link PIXI.settings.RESOLUTION}.
+      * @example
+      * Text.defaultResolution = 2;
+      * Text.defaultAutoResolution = false;
+      *
+      * // text has a resolution of 2
+      * const text = new Text('This is a PixiJS text');
+      */
+    @JSImport("@pixi/text", "Text.defaultResolution")
+    @js.native
+    def defaultResolution: Double = js.native
+    inline def defaultResolution_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultResolution")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("@pixi/text", "TextMetrics")
@@ -101,21 +123,28 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
+    /** Baseline multiplier for calculate font metrics. */
     @JSImport("@pixi/text", "TextMetrics.BASELINE_MULTIPLIER")
     @js.native
     def BASELINE_MULTIPLIER: Double = js.native
     inline def BASELINE_MULTIPLIER_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BASELINE_MULTIPLIER")(x.asInstanceOf[js.Any])
     
+    /** Baseline symbol for calculate font metrics. */
     @JSImport("@pixi/text", "TextMetrics.BASELINE_SYMBOL")
     @js.native
     def BASELINE_SYMBOL: String = js.native
     inline def BASELINE_SYMBOL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BASELINE_SYMBOL")(x.asInstanceOf[js.Any])
     
+    /** Height multiplier for setting height of canvas to calculate font metrics. */
     @JSImport("@pixi/text", "TextMetrics.HEIGHT_MULTIPLIER")
     @js.native
     def HEIGHT_MULTIPLIER: Double = js.native
     inline def HEIGHT_MULTIPLIER_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HEIGHT_MULTIPLIER")(x.asInstanceOf[js.Any])
     
+    /**
+      * String used for calculate font metrics.
+      * These characters are all tall to help calculate the height required for text.
+      */
     @JSImport("@pixi/text", "TextMetrics.METRICS_STRING")
     @js.native
     def METRICS_STRING: String = js.native
@@ -131,20 +160,33 @@ object mod {
     def __context: Any = js.native
     inline def __context_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("__context")(x.asInstanceOf[js.Any])
     
+    /** Cache of breaking spaces. */
     @JSImport("@pixi/text", "TextMetrics._breakingSpaces")
     @js.native
-    def _breakingSpaces: js.Array[Double] = js.native
-    inline def _breakingSpaces_=(x: js.Array[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_breakingSpaces")(x.asInstanceOf[js.Any])
+    def _breakingSpaces: Any = js.native
+    inline def _breakingSpaces_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_breakingSpaces")(x.asInstanceOf[js.Any])
     
+    @JSImport("@pixi/text", "TextMetrics._experimentalLetterSpacingSupported")
+    @js.native
+    def _experimentalLetterSpacingSupported: js.UndefOr[Boolean] = js.native
+    inline def _experimentalLetterSpacingSupported_=(x: js.UndefOr[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_experimentalLetterSpacingSupported")(x.asInstanceOf[js.Any])
+    
+    /** Cache of {@see PIXI.TextMetrics.FontMetrics} objects. */
     @JSImport("@pixi/text", "TextMetrics._fonts")
     @js.native
-    def _fonts: StringDictionary[IFontMetrics] = js.native
-    inline def _fonts_=(x: StringDictionary[IFontMetrics]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_fonts")(x.asInstanceOf[js.Any])
+    def _fonts: Any = js.native
+    inline def _fonts_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_fonts")(x.asInstanceOf[js.Any])
     
+    @JSImport("@pixi/text", "TextMetrics._measureText")
+    @js.native
+    def _measureText: Any = js.native
+    inline def _measureText_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_measureText")(x.asInstanceOf[js.Any])
+    
+    /** Cache of new line chars. */
     @JSImport("@pixi/text", "TextMetrics._newlines")
     @js.native
-    def _newlines: js.Array[Double] = js.native
-    inline def _newlines_=(x: js.Array[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_newlines")(x.asInstanceOf[js.Any])
+    def _newlines: Any = js.native
+    inline def _newlines_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_newlines")(x.asInstanceOf[js.Any])
     
     /**
       * Convienience function for logging each line added during the wordWrap method.
@@ -180,7 +222,7 @@ object mod {
       * Examples are if the token is CJK or numbers.
       * It must return a boolean.
       * @param _token - The token
-      * @param  breakWords - The style attr break words
+      * @param breakWords - The style attr break words
       * @returns Whether to break word or not
       */
     inline def canBreakWords(_token: String, breakWords: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("canBreakWords")(_token.asInstanceOf[js.Any], breakWords.asInstanceOf[js.Any])).asInstanceOf[Boolean]
@@ -195,7 +237,7 @@ object mod {
     /**
       * Determines whether we should collapse newLine chars.
       * @param whiteSpace - The white space
-      * @returns  should collapse
+      * @returns should collapse
       */
     @JSImport("@pixi/text", "TextMetrics.collapseNewlines")
     @js.native
@@ -213,6 +255,17 @@ object mod {
     inline def collapseSpaces_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("collapseSpaces")(x.asInstanceOf[js.Any])
     
     /**
+      * New rendering behavior for letter-spacing which uses Chrome's new native API. This will
+      * lead to more accurate letter-spacing results because it does not try to manually draw
+      * each character. However, this Chrome API is experimental and may not serve all cases yet.
+      * @see PIXI.TextMetrics.experimentalLetterSpacingSupported
+      */
+    @JSImport("@pixi/text", "TextMetrics.experimentalLetterSpacing")
+    @js.native
+    def experimentalLetterSpacing: Boolean = js.native
+    inline def experimentalLetterSpacing_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("experimentalLetterSpacing")(x.asInstanceOf[js.Any])
+    
+    /**
       * Gets & sets the widths of calculated characters in a cache object
       * @param key            - The key
       * @param letterSpacing  - The letter spacing
@@ -224,6 +277,19 @@ object mod {
     @js.native
     def getFromCache: Any = js.native
     inline def getFromCache_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getFromCache")(x.asInstanceOf[js.Any])
+    
+    /**
+      * A Unicode "character", or "grapheme cluster", can be composed of multiple Unicode code points,
+      * such as letters with diacritical marks (e.g. `'\\u0065\\u0301'`, letter e with acute)
+      * or emojis with modifiers (e.g. `'\\uD83E\\uDDD1\\u200D\\uD83D\\uDCBB'`, technologist).
+      * The new `Intl.Segmenter` API in ES2022 can split the string into grapheme clusters correctly. If it is not available,
+      * PixiJS will fallback to use the iterator of String, which can only spilt the string into code points.
+      * If you want to get full functionality in environments that don't support `Intl.Segmenter` (such as Firefox),
+      * you can use other libraries such as [grapheme-splitter]{@link https://www.npmjs.com/package/grapheme-splitter}
+      * or [graphemer]{@link https://www.npmjs.com/package/graphemer} to create a polyfill. Since these libraries can be
+      * relatively large in size to handle various Unicode grapheme clusters properly, PixiJS won't use them directly.
+      */
+    inline def graphemeSegmenter(s: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("graphemeSegmenter")(s.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
     
     /**
       * Determines if char is a breaking whitespace.
@@ -240,7 +306,7 @@ object mod {
     
     /**
       * Determines if char is a newline.
-      * @param  char - The character
+      * @param char - The character
       * @returns True if newline, False otherwise.
       */
     @JSImport("@pixi/text", "TextMetrics.isNewline")
@@ -275,8 +341,8 @@ object mod {
     
     /**
       * Splits a string into words, breaking-spaces and newLine characters
-      * @param  text - The text
-      * @returns  A tokenized array
+      * @param text - The text
+      * @returns A tokenized array
       */
     @JSImport("@pixi/text", "TextMetrics.tokenize")
     @js.native
@@ -285,7 +351,7 @@ object mod {
     
     /**
       * Trims breaking whitespaces from string.
-      * @param  text - The text
+      * @param text - The text
       * @returns Trimmed string
       */
     @JSImport("@pixi/text", "TextMetrics.trimRight")
@@ -311,11 +377,9 @@ object mod {
       * It is called when a token (usually a word) has to be split into separate pieces
       * in order to determine the point to break a word.
       * It must return an array of characters.
-      * @example
-      * // Correctly splits emojis, eg "🤪🤪" will result in two element array, each with one emoji.
-      * TextMetrics.wordWrapSplit = (token) => [...token];
-      * @param  token - The token to split
+      * @param token - The token to split
       * @returns The characters of the token
+      * @see TextMetrics.graphemeSegmenter
       */
     inline def wordWrapSplit(token: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("wordWrapSplit")(token.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
     
@@ -325,55 +389,27 @@ object mod {
   @JSImport("@pixi/text", "TextStyle")
   @js.native
   /**
-    * @param {object} [style] - The style parameters
-    * @param {string} [style.align='left'] - Alignment for multiline text ('left', 'center' or 'right'),
-    *  does not affect single line text
-    * @param {boolean} [style.breakWords=false] - Indicates if lines can be wrapped within words, it
-    *  needs wordWrap to be set to true
-    * @param {boolean} [style.dropShadow=false] - Set a drop shadow for the text
-    * @param {number} [style.dropShadowAlpha=1] - Set alpha for the drop shadow
-    * @param {number} [style.dropShadowAngle=Math.PI/6] - Set a angle of the drop shadow
-    * @param {number} [style.dropShadowBlur=0] - Set a shadow blur radius
-    * @param {string|number} [style.dropShadowColor='black'] - A fill style to be used on the dropshadow e.g 'red', '#00FF00'
-    * @param {number} [style.dropShadowDistance=5] - Set a distance of the drop shadow
-    * @param {string|string[]|number|number[]|CanvasGradient|CanvasPattern} [style.fill='black'] - A canvas
-    *  fillstyle that will be used on the text e.g 'red', '#00FF00'. Can be an array to create a gradient
-    *  eg ['#000000','#FFFFFF']
-    * {@link https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/fillStyle|MDN}
-    * @param {number} [style.fillGradientType=PIXI.TEXT_GRADIENT.LINEAR_VERTICAL] - If fill is an array of colours
-    *  to create a gradient, this can change the type/direction of the gradient. See {@link PIXI.TEXT_GRADIENT}
-    * @param {number[]} [style.fillGradientStops] - If fill is an array of colours to create a gradient, this array can set
-    * the stop points (numbers between 0 and 1) for the color, overriding the default behaviour of evenly spacing them.
-    * @param {string|string[]} [style.fontFamily='Arial'] - The font family
-    * @param {number|string} [style.fontSize=26] - The font size (as a number it converts to px, but as a string,
-    *  equivalents are '26px','20pt','160%' or '1.6em')
-    * @param {string} [style.fontStyle='normal'] - The font style ('normal', 'italic' or 'oblique')
-    * @param {string} [style.fontVariant='normal'] - The font variant ('normal' or 'small-caps')
-    * @param {string} [style.fontWeight='normal'] - The font weight ('normal', 'bold', 'bolder', 'lighter' and '100',
-    *  '200', '300', '400', '500', '600', '700', '800' or '900')
-    * @param {number} [style.leading=0] - The space between lines
-    * @param {number} [style.letterSpacing=0] - The amount of spacing between letters, default is 0
-    * @param {number} [style.lineHeight] - The line height, a number that represents the vertical space that a letter uses
-    * @param {string} [style.lineJoin='miter'] - The lineJoin property sets the type of corner created, it can resolve
-    *      spiked text issues. Possible values "miter" (creates a sharp corner), "round" (creates a round corner) or "bevel"
-    *      (creates a squared corner).
-    * @param {number} [style.miterLimit=10] - The miter limit to use when using the 'miter' lineJoin mode. This can reduce
-    *      or increase the spikiness of rendered text.
-    * @param {number} [style.padding=0] - Occasionally some fonts are cropped. Adding some padding will prevent this from
-    *     happening by adding padding to all sides of the text.
-    * @param {string|number} [style.stroke='black'] - A canvas fillstyle that will be used on the text stroke
-    *  e.g 'blue', '#FCFF00'
-    * @param {number} [style.strokeThickness=0] - A number that represents the thickness of the stroke.
-    *  Default is 0 (no stroke)
-    * @param {boolean} [style.trim=false] - Trim transparent borders
-    * @param {string} [style.textBaseline='alphabetic'] - The baseline of the text that is rendered.
-    * @param {string} [style.whiteSpace='pre'] - Determines whether newlines & spaces are collapsed or preserved "normal"
-    *      (collapse, collapse), "pre" (preserve, preserve) | "pre-line" (preserve, collapse). It needs wordWrap to be set to true
-    * @param {boolean} [style.wordWrap=false] - Indicates if word wrap should be used
-    * @param {number} [style.wordWrapWidth=100] - The width at which text will wrap, it needs wordWrap to be set to true
+    * @param style - TextStyle properties to be set on the text. See {@link PIXI.TextStyle.defaultStyle}
+    *       for the default values.
     */
   open class TextStyle ()
     extends typings.pixiText.libTextStyleMod.TextStyle {
     def this(style: PartialITextStyle) = this()
+  }
+  /* static members */
+  object TextStyle {
+    
+    @JSImport("@pixi/text", "TextStyle")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * Default style options used for all TextStyle instances.
+      * @type {PIXI.ITextStyle}
+      */
+    @JSImport("@pixi/text", "TextStyle.defaultStyle")
+    @js.native
+    def defaultStyle: ITextStyle = js.native
+    inline def defaultStyle_=(x: ITextStyle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultStyle")(x.asInstanceOf[js.Any])
   }
 }

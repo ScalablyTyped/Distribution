@@ -25,26 +25,22 @@ open class Group ()
   def this(objects: Unit, options: IGroupOptions, isAlreadyGrouped: Boolean) = this()
   
   /**
-    * @private
     */
   def _calcBounds(): Unit = js.native
   def _calcBounds(onlyWidthHeight: Boolean): Unit = js.native
   
   /**
-    * @private
     */
   def _onObjectRemoved(`object`: Object): Unit = js.native
   
   /**
     * Retores original state of each of group objects (original state is that which was before group was created).
-    * @private
     * @return {fabric.Group} thisArg
     * @chainable
     */
   def _restoreObjectsState(): Group = js.native
   
   /**
-    * @private
     * @param {Boolean} [skipCoordsChange] if true, coordinates of objects enclosed in a group do not change
     */
   def _updateObjectsCoords(): Unit = js.native
@@ -104,7 +100,6 @@ open class Group ()
   
   /**
     * Indicates if click, mouseover, mouseout events & hoverCursor should also check for subtargets
-    * @type Boolean
     */
   var subTargetCheck: js.UndefOr[Boolean] = js.native
   
@@ -126,7 +121,6 @@ open class Group ()
   /**
     * setOnGroup is a method used for TextBox that is no more used since 2.0.0 The behavior is still
     * available setting this boolean to true.
-    * @type Boolean
     * @since 2.0.0
     * @default
     */

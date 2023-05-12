@@ -8,6 +8,10 @@ trait GPUVertexState
   extends StObject
      with GPUProgrammableStage {
   
+  /**
+    * A list of {@link GPUVertexBufferLayout}s defining the layout of the vertex attribute data in the
+    * vertex buffers used by this pipeline.
+    */
   var buffers: js.UndefOr[js.Iterable[GPUVertexBufferLayout | Null]] = js.undefined
 }
 object GPUVertexState {

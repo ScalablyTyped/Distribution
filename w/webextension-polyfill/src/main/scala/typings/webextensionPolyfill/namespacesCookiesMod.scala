@@ -732,7 +732,7 @@ object namespacesCookiesMod {
         *
         * @param details Details to identify the cookie being retrieved.
         */
-      def get(details: GetDetailsType): js.Promise[Cookie]
+      def get(details: GetDetailsType): js.Promise[Cookie | Null]
       
       /**
         * Retrieves all cookies from a single cookie store that match the given information.  The cookies returned will be sorted,
@@ -763,7 +763,7 @@ object namespacesCookiesMod {
         *
         * @param details Information to identify the cookie to remove.
         */
-      def remove(details: RemoveDetailsType): js.Promise[RemoveCallbackDetailsType]
+      def remove(details: RemoveDetailsType): js.Promise[RemoveCallbackDetailsType | Null]
       
       /**
         * Sets a cookie with the given cookie data; may overwrite equivalent cookies if they exist.
@@ -775,11 +775,11 @@ object namespacesCookiesMod {
     object Static {
       
       inline def apply(
-        get: GetDetailsType => js.Promise[Cookie],
+        get: GetDetailsType => js.Promise[Cookie | Null],
         getAll: GetAllDetailsType => js.Promise[js.Array[Cookie]],
         getAllCookieStores: () => js.Promise[js.Array[CookieStore]],
         onChanged: Event[js.Function1[/* changeInfo */ OnChangedChangeInfoType, Unit]],
-        remove: RemoveDetailsType => js.Promise[RemoveCallbackDetailsType],
+        remove: RemoveDetailsType => js.Promise[RemoveCallbackDetailsType | Null],
         set: SetDetailsType => js.Promise[Cookie]
       ): Static = {
         val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), getAll = js.Any.fromFunction1(getAll), getAllCookieStores = js.Any.fromFunction0(getAllCookieStores), onChanged = onChanged.asInstanceOf[js.Any], remove = js.Any.fromFunction1(remove), set = js.Any.fromFunction1(set))
@@ -789,7 +789,7 @@ object namespacesCookiesMod {
       @scala.inline
       implicit open class MutableBuilder[Self <: Static] (val x: Self) extends AnyVal {
         
-        inline def setGet(value: GetDetailsType => js.Promise[Cookie]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+        inline def setGet(value: GetDetailsType => js.Promise[Cookie | Null]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
         
         inline def setGetAll(value: GetAllDetailsType => js.Promise[js.Array[Cookie]]): Self = StObject.set(x, "getAll", js.Any.fromFunction1(value))
         
@@ -797,7 +797,7 @@ object namespacesCookiesMod {
         
         inline def setOnChanged(value: Event[js.Function1[/* changeInfo */ OnChangedChangeInfoType, Unit]]): Self = StObject.set(x, "onChanged", value.asInstanceOf[js.Any])
         
-        inline def setRemove(value: RemoveDetailsType => js.Promise[RemoveCallbackDetailsType]): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+        inline def setRemove(value: RemoveDetailsType => js.Promise[RemoveCallbackDetailsType | Null]): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
         
         inline def setSet(value: SetDetailsType => js.Promise[Cookie]): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
       }

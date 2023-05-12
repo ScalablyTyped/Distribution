@@ -1,18 +1,18 @@
 organization := "org.scalablytyped"
 name := "socket_dot_io"
-version := "4.5.3-1054e8"
+version := "4.6.1-7535d7"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "cors" % "2.8-dt-20221103Z-32c34c",
-  "org.scalablytyped" %%% "engine_dot_io" % "6.2.0-d19328",
-  "org.scalablytyped" %%% "engine_dot_io-parser" % "5.0.4-2f7cdd",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-874609",
-  "org.scalablytyped" %%% "socket_dot_io-adapter" % "2.4.0-7419ed",
-  "org.scalablytyped" %%% "socket_dot_io-parser" % "4.2.1-652824",
-  "org.scalablytyped" %%% "socket_dot_io__component-emitter" % "3.1.0-859bca",
-  "org.scalablytyped" %%% "std" % "4.9-ecb5eb")
+  "org.scalablytyped" %%% "cors" % "2.8-dt-20221205Z-9881d5",
+  "org.scalablytyped" %%% "engine_dot_io" % "6.4.2-ae3ba8",
+  "org.scalablytyped" %%% "engine_dot_io-parser" % "5.0.6-7db265",
+  "org.scalablytyped" %%% "node" % "20.1-dt-20230511Z-0320fc",
+  "org.scalablytyped" %%% "socket_dot_io-adapter" % "2.5.2-3c3f47",
+  "org.scalablytyped" %%% "socket_dot_io-parser" % "4.2.2-e1b854",
+  "org.scalablytyped" %%% "socket_dot_io__component-emitter" % "4.0.0-7185bd",
+  "org.scalablytyped" %%% "std" % "5.0-e63739")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

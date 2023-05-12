@@ -16,6 +16,7 @@ import typings.googleCloudSpanner.buildSrcPartialResultStreamMod.Row
 import typings.googleCloudSpanner.buildSrcSessionMod.Session
 import typings.googleCloudSpanner.buildSrcTableMod.Key
 import typings.googleCloudSpanner.googleCloudSpannerStrings.transactionTag
+import typings.googleCloudSpanner.mod.Spanner
 import typings.googleGax.buildSrcGaxMod.CallOptions
 import typings.grpcGrpcJs.buildSrcCallMod.ServiceError
 import typings.grpcGrpcJs.buildSrcConstantsMod.Status
@@ -187,9 +188,44 @@ object buildSrcTransactionMod {
       queryOptions: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IQueryOptions */ Any
     ) = this()
     
+    /**
+      * Gets the Spanner object
+      *
+      * @private
+      *
+      * @returns {Spanner}
+      */
+    /* protected */ def _getSpanner(): Spanner = js.native
+    
+    /* protected */ var _idWaiter: Readable = js.native
+    
+    /* protected */ var _inlineBeginStarted: Any = js.native
+    
     /* protected */ var _options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify spannerClient.spanner.v1.ITransactionOptions */ Any = js.native
     
     /* protected */ var _seqno: Double = js.native
+    
+    /**
+      * Update transaction properties from the response.
+      *
+      * @private
+      *
+      * @param {spannerClient.spanner.v1.ITransaction} resp Response object.
+      */
+    /* protected */ def _update(
+      resp: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify spannerClient.spanner.v1.ITransaction */ Any
+    ): Unit = js.native
+    
+    /* protected */ var _useInRunner: Boolean = js.native
+    
+    /**
+      * Wrap `makeRequest` function with the lock to make sure the inline begin
+      * transaction can happen only once.
+      *
+      * @param makeRequest
+      * @private
+      */
+    /* private */ var _wrapWithIdWaiter: Any = js.native
     
     /**
       * @typedef {object} TransactionResponse
@@ -1352,6 +1388,23 @@ object buildSrcTransactionMod {
       * ```
       */
     def upsert(table: String, rows: js.Object): Unit = js.native
+    
+    /**
+      * Mark transaction as started from the runner.
+      */
+    def useInRunner(): Unit = js.native
+    
+    /**
+      * Use optimistic concurrency control for the transaction.
+      *
+      * In this concurrency mode, operations during the execution phase, i.e.,
+      * reads and queries, are performed without acquiring locks, and transactional
+      * consistency is ensured by running a validation process in the commit phase
+      * (when any needed locks are acquired). The validation process succeeds only
+      * if there are no conflicting committed transactions (that committed
+      * mutations to the read data at a commit timestamp after the read timestamp).
+      */
+    def useOptimisticLock(): Unit = js.native
   }
   /* static members */
   object Transaction {

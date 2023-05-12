@@ -10,7 +10,7 @@ open class HorizontalBarSeries protected () extends AbstractSeries[HorizontalBar
   def this(props: HorizontalBarSeriesProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: HorizontalBarSeriesProps, context: Any) = this()
 }

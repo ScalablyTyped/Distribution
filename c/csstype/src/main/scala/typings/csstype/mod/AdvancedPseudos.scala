@@ -20,6 +20,14 @@ object AdvancedPseudos {
   
   inline def ColonColonslotted: typings.csstype.csstypeStrings.ColonColonslotted = "::slotted".asInstanceOf[typings.csstype.csstypeStrings.ColonColonslotted]
   
+  inline def `ColonColonview-transition-group`: typings.csstype.csstypeStrings.`ColonColonview-transition-group` = "::view-transition-group".asInstanceOf[typings.csstype.csstypeStrings.`ColonColonview-transition-group`]
+  
+  inline def `ColonColonview-transition-image-pair`: typings.csstype.csstypeStrings.`ColonColonview-transition-image-pair` = "::view-transition-image-pair".asInstanceOf[typings.csstype.csstypeStrings.`ColonColonview-transition-image-pair`]
+  
+  inline def `ColonColonview-transition-new`: typings.csstype.csstypeStrings.`ColonColonview-transition-new` = "::view-transition-new".asInstanceOf[typings.csstype.csstypeStrings.`ColonColonview-transition-new`]
+  
+  inline def `ColonColonview-transition-old`: typings.csstype.csstypeStrings.`ColonColonview-transition-old` = "::view-transition-old".asInstanceOf[typings.csstype.csstypeStrings.`ColonColonview-transition-old`]
+  
   inline def Colondir: typings.csstype.csstypeStrings.Colondir = ":dir".asInstanceOf[typings.csstype.csstypeStrings.Colondir]
   
   inline def Colonhas: typings.csstype.csstypeStrings.Colonhas = ":has".asInstanceOf[typings.csstype.csstypeStrings.Colonhas]

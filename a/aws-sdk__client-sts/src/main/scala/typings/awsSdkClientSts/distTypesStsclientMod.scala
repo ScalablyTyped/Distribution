@@ -17,13 +17,16 @@ import typings.awsSdkSmithyClient.distTypesDefaultsModeMod.DefaultsMode
 import typings.awsSdkSmithyClient.mod.Client
 import typings.awsSdkTypes.anon.ForceRefresh
 import typings.awsSdkTypes.distTypesAuthMod.AuthScheme
+import typings.awsSdkTypes.distTypesChecksumMod.ChecksumConstructor
 import typings.awsSdkTypes.distTypesCredentialsMod.Credentials
 import typings.awsSdkTypes.distTypesCryptoMod.HashConstructor
 import typings.awsSdkTypes.distTypesEndpointMod.EndpointV2
 import typings.awsSdkTypes.distTypesHttpMod.Endpoint
 import typings.awsSdkTypes.distTypesHttpMod.HttpHandlerOptions
+import typings.awsSdkTypes.distTypesIdentityAwsCredentialIdentityMod.AwsCredentialIdentity
 import typings.awsSdkTypes.distTypesLoggerMod.Logger
 import typings.awsSdkTypes.distTypesResponseMod.ResponseMetadata
+import typings.awsSdkTypes.distTypesRetryMod.RetryStrategyV2
 import typings.awsSdkTypes.distTypesSerdeMod.StreamCollector
 import typings.awsSdkTypes.distTypesSignatureMod.RequestSigner
 import typings.awsSdkTypes.distTypesTransferMod.RequestHandler
@@ -85,7 +88,7 @@ object distTypesStsclientMod {
     var defaultUserAgentProvider: js.UndefOr[Provider[UserAgent]] = js.undefined
     
     /**
-      * The {@link DefaultsMode} that will be used to determine how certain default configuration options are resolved in the SDK.
+      * The {@link @aws-sdk/smithy-client#DefaultsMode} that will be used to determine how certain default configuration options are resolved in the SDK.
       */
     var defaultsMode: js.UndefOr[DefaultsMode | Provider[DefaultsMode]] = js.undefined
     
@@ -133,11 +136,11 @@ object distTypesStsclientMod {
     var serviceId: js.UndefOr[String] = js.undefined
     
     /**
-      * A constructor for a class implementing the {@link __Hash} interface
+      * A constructor for a class implementing the {@link @aws-sdk/types#ChecksumConstructor} interface
       * that computes the SHA-256 HMAC or checksum of a string or binary buffer.
       * @internal
       */
-    var sha256: js.UndefOr[HashConstructor] = js.undefined
+    var sha256: js.UndefOr[ChecksumConstructor | HashConstructor] = js.undefined
     
     /**
       * A function that converts a stream into an array of bytes.
@@ -251,7 +254,7 @@ object distTypesStsclientMod {
       
       inline def setServiceIdUndefined: Self = StObject.set(x, "serviceId", js.undefined)
       
-      inline def setSha256(value: HashConstructor): Self = StObject.set(x, "sha256", value.asInstanceOf[js.Any])
+      inline def setSha256(value: ChecksumConstructor | HashConstructor): Self = StObject.set(x, "sha256", value.asInstanceOf[js.Any])
       
       inline def setSha256Undefined: Self = StObject.set(x, "sha256", js.undefined)
       
@@ -287,6 +290,9 @@ object distTypesStsclientMod {
   
   type STSClientConfig = STSClientConfigType
   
+  /**
+    * @public
+    */
   /* Inlined std.Partial<@aws-sdk/smithy-client.@aws-sdk/smithy-client.SmithyConfiguration<@aws-sdk/types.@aws-sdk/types.HttpHandlerOptions>> & @aws-sdk/client-sts.@aws-sdk/client-sts/dist-types/STSClient.ClientDefaults & @aws-sdk/config-resolver.@aws-sdk/config-resolver.RegionInputConfig & @aws-sdk/middleware-endpoint.@aws-sdk/middleware-endpoint.EndpointInputConfig<@aws-sdk/client-sts.@aws-sdk/client-sts/dist-types/endpoint/EndpointParameters.EndpointParameters> & @aws-sdk/middleware-retry.@aws-sdk/middleware-retry.RetryInputConfig & @aws-sdk/middleware-host-header.@aws-sdk/middleware-host-header.HostHeaderInputConfig & @aws-sdk/middleware-sdk-sts.@aws-sdk/middleware-sdk-sts.StsAuthInputConfig & @aws-sdk/middleware-user-agent.@aws-sdk/middleware-user-agent.UserAgentInputConfig & @aws-sdk/client-sts.@aws-sdk/client-sts/dist-types/endpoint/EndpointParameters.ClientInputEndpointParameters */
   trait STSClientConfigType extends StObject {
     
@@ -319,7 +325,7 @@ object distTypesStsclientMod {
     /**
       * The credentials used to sign requests.
       */
-    var credentials: js.UndefOr[Credentials | Provider[Credentials]] = js.undefined
+    var credentials: js.UndefOr[AwsCredentialIdentity | Provider[AwsCredentialIdentity]] = js.undefined
     
     /**
       * The custom user agent header that would be appended to default one
@@ -333,7 +339,7 @@ object distTypesStsclientMod {
     var defaultUserAgentProvider: js.UndefOr[Provider[UserAgent]] = js.undefined
     
     /**
-      * The {@link DefaultsMode} that will be used to determine how certain default configuration options are resolved in the SDK.
+      * The {@link @aws-sdk/smithy-client#DefaultsMode} that will be used to determine how certain default configuration options are resolved in the SDK.
       */
     var defaultsMode: js.UndefOr[DefaultsMode | Provider[DefaultsMode]] = js.undefined
     
@@ -344,11 +350,19 @@ object distTypesStsclientMod {
     var disableHostPrefix: js.UndefOr[Boolean] = js.undefined
     
     /**
-      * The fully qualified endpoint of the webservice. This is only required when using
+      * The fully qualified endpoint of the webservice. This is only for using
       * a custom endpoint (for example, when using a local version of S3).
+      *
+      * Endpoint transformations such as S3 applying a bucket to the hostname are
+      * still applicable to this custom endpoint.
       */
     var endpoint: js.UndefOr[String | Endpoint | (Provider[Endpoint | EndpointV2]) | EndpointV2] = js.undefined
     
+    /**
+      * Providing a custom endpointProvider will override
+      * built-in transformations of the endpoint such as S3 adding the bucket
+      * name to the hostname, since they are part of the default endpointProvider.
+      */
     var endpointProvider: js.UndefOr[
         js.Function2[
           /* params */ EndpointParameters, 
@@ -388,7 +402,7 @@ object distTypesStsclientMod {
     /**
       * The strategy to retry the request. Using built-in exponential backoff strategy by default.
       */
-    var retryStrategy: js.UndefOr[RetryStrategy] = js.undefined
+    var retryStrategy: js.UndefOr[RetryStrategy | RetryStrategyV2] = js.undefined
     
     /**
       * The runtime environment.
@@ -403,11 +417,11 @@ object distTypesStsclientMod {
     var serviceId: js.UndefOr[String] = js.undefined
     
     /**
-      * A constructor for a class implementing the {@link __Hash} interface
+      * A constructor for a class implementing the {@link @aws-sdk/types#ChecksumConstructor} interface
       * that computes the SHA-256 HMAC or checksum of a string or binary buffer.
       * @internal
       */
-    var sha256: js.UndefOr[HashConstructor] = js.undefined
+    var sha256: js.UndefOr[ChecksumConstructor | HashConstructor] = js.undefined
     
     /**
       * The signer to use when signing requests.
@@ -513,9 +527,9 @@ object distTypesStsclientMod {
       
       inline def setCredentialDefaultProviderUndefined: Self = StObject.set(x, "credentialDefaultProvider", js.undefined)
       
-      inline def setCredentials(value: Credentials | Provider[Credentials]): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
+      inline def setCredentials(value: AwsCredentialIdentity | Provider[AwsCredentialIdentity]): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
       
-      inline def setCredentialsFunction0(value: () => js.Promise[Credentials]): Self = StObject.set(x, "credentials", js.Any.fromFunction0(value))
+      inline def setCredentialsFunction0(value: () => js.Promise[AwsCredentialIdentity]): Self = StObject.set(x, "credentials", js.Any.fromFunction0(value))
       
       inline def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
       
@@ -577,7 +591,7 @@ object distTypesStsclientMod {
       
       inline def setRetryModeUndefined: Self = StObject.set(x, "retryMode", js.undefined)
       
-      inline def setRetryStrategy(value: RetryStrategy): Self = StObject.set(x, "retryStrategy", value.asInstanceOf[js.Any])
+      inline def setRetryStrategy(value: RetryStrategy | RetryStrategyV2): Self = StObject.set(x, "retryStrategy", value.asInstanceOf[js.Any])
       
       inline def setRetryStrategyUndefined: Self = StObject.set(x, "retryStrategy", js.undefined)
       
@@ -589,7 +603,7 @@ object distTypesStsclientMod {
       
       inline def setServiceIdUndefined: Self = StObject.set(x, "serviceId", js.undefined)
       
-      inline def setSha256(value: HashConstructor): Self = StObject.set(x, "sha256", value.asInstanceOf[js.Any])
+      inline def setSha256(value: ChecksumConstructor | HashConstructor): Self = StObject.set(x, "sha256", value.asInstanceOf[js.Any])
       
       inline def setSha256Undefined: Self = StObject.set(x, "sha256", js.undefined)
       
@@ -659,6 +673,9 @@ object distTypesStsclientMod {
   
   type STSClientResolvedConfig = STSClientResolvedConfigType
   
+  /**
+    * @public
+    */
   /* Inlined @aws-sdk/smithy-client.@aws-sdk/smithy-client.SmithyResolvedConfiguration<@aws-sdk/types.@aws-sdk/types.HttpHandlerOptions> & std.Required<@aws-sdk/client-sts.@aws-sdk/client-sts/dist-types/STSClient.ClientDefaults> & @aws-sdk/config-resolver.@aws-sdk/config-resolver.RegionResolvedConfig & @aws-sdk/middleware-endpoint.@aws-sdk/middleware-endpoint.EndpointResolvedConfig<@aws-sdk/client-sts.@aws-sdk/client-sts/dist-types/endpoint/EndpointParameters.EndpointParameters> & @aws-sdk/middleware-retry.@aws-sdk/middleware-retry.RetryResolvedConfig & @aws-sdk/middleware-host-header.@aws-sdk/middleware-host-header.HostHeaderResolvedConfig & @aws-sdk/middleware-sdk-sts.@aws-sdk/middleware-sdk-sts.StsAuthResolvedConfig & @aws-sdk/middleware-user-agent.@aws-sdk/middleware-user-agent.UserAgentResolvedConfig & @aws-sdk/client-sts.@aws-sdk/client-sts/dist-types/endpoint/EndpointParameters.ClientResolvedEndpointParameters */
   @js.native
   trait STSClientResolvedConfigType extends StObject {
@@ -691,15 +708,15 @@ object distTypesStsclientMod {
       * This provider MAY memoize the loaded credentials for certain period.
       * See {@link MemoizedProvider} for more information.
       */
-    def credentials(): js.Promise[Credentials] = js.native
-    def credentials(options: ForceRefresh): js.Promise[Credentials] = js.native
+    def credentials(): js.Promise[AwsCredentialIdentity] = js.native
+    def credentials(options: ForceRefresh): js.Promise[AwsCredentialIdentity] = js.native
     /**
       * Resolved value for input config {@link AwsAuthInputConfig.credentials}
       * This provider MAY memoize the loaded credentials for certain period.
       * See {@link MemoizedProvider} for more information.
       */
     @JSName("credentials")
-    var credentials_Original: MemoizedProvider[Credentials] = js.native
+    var credentials_Original: MemoizedProvider[AwsCredentialIdentity] = js.native
     
     /**
       * The custom user agent header that would be appended to default one
@@ -724,12 +741,6 @@ object distTypesStsclientMod {
       * Custom endpoint provided by the user.
       * This is normalized to a single interface from the various acceptable types.
       * This field will be undefined if a custom endpoint is not provided.
-      *
-      * As of endpoints 2.0, this config method can not be used to resolve
-      * the endpoint for a service and region.
-      *
-      * @see https://github.com/aws/aws-sdk-js-v3/issues/4122
-      * @deprecated Use {@link EndpointResolvedConfig.endpointProvider} instead.
       */
     var endpoint: js.UndefOr[Provider[Endpoint]] = js.native
     
@@ -775,12 +786,12 @@ object distTypesStsclientMod {
     /**
       * Resolved value for input config {@link RetryInputConfig.retryStrategy}
       */
-    def retryStrategy(): js.Promise[RetryStrategy] = js.native
+    def retryStrategy(): js.Promise[RetryStrategyV2 | RetryStrategy] = js.native
     /**
       * Resolved value for input config {@link RetryInputConfig.retryStrategy}
       */
     @JSName("retryStrategy")
-    var retryStrategy_Original: Provider[RetryStrategy] = js.native
+    var retryStrategy_Original: Provider[RetryStrategyV2 | RetryStrategy] = js.native
     
     /**
       * The runtime environment
@@ -789,7 +800,7 @@ object distTypesStsclientMod {
     
     var serviceId: String = js.native
     
-    var sha256: HashConstructor = js.native
+    var sha256: ChecksumConstructor | HashConstructor = js.native
     
     /**
       * Resolved value for input config {@link AwsAuthInputConfig.signer}

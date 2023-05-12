@@ -12,7 +12,7 @@ open class ReferenceDot protected ()
   def this(props: ReferenceDotProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: ReferenceDotProps, context: Any) = this()
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /**
   * <CrmParameter> used in RibbonDiffXml actions
-  * @see {@link https://docs.microsoft.com/en-us/previous-versions/dynamicscrm-2016/developers-guide/gg309332(v=crm.8)}
+  * @see {@link https://learn.microsoft.com/en-us/previous-versions/dynamicscrm-2016/developers-guide/gg309332(v=crm.8) External Link: <CrmParameter> (RibbonDiffXml)}
   */
 trait CommandProperties extends StObject {
   
@@ -19,23 +19,23 @@ trait CommandProperties extends StObject {
     * A reference from a control to the Id of a menu item.
     *
     * Most entities will not return a MenuItemId value. Only the following entities will return this value:
-    * BusinessUnit
-    * Connection
-    * CustomerAddress
-    * Equipment
-    * Goal
-    * InvoiceDetail
-    * Mailbox
-    * MailMergeTemplate
-    * PartnerApplication
-    * QueueItem
-    * QuoteDetail
-    * RoutingRuleItem
-    * SalesOrderDetail
-    * ServiceAppointment
-    * SharePointDocumentLocation
-    * SharePointSite
-    * Territory
+    * - BusinessUnit
+    * - Connection
+    * - CustomerAddress
+    * - Equipment
+    * - Goal
+    * - InvoiceDetail
+    * - Mailbox
+    * - MailMergeTemplate
+    * - PartnerApplication
+    * - QueueItem
+    * - QuoteDetail
+    * - RoutingRuleItem
+    * - SalesOrderDetail
+    * - ServiceAppointment
+    * - SharePointDocumentLocation
+    * - SharePointSite
+    * - Territory
     */
   var MenuItemId: String
   

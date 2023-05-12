@@ -137,6 +137,11 @@ trait DBCluster extends StObject {
   var DBSubnetGroup: js.UndefOr[String] = js.undefined
   
   /**
+    * Reserved for future use.
+    */
+  var DBSystemId: js.UndefOr[String] = js.undefined
+  
+  /**
     * Contains the name of the initial database of this DB cluster that was provided at create time, if one was specified when the DB cluster was created. This same name is returned for the life of the DB cluster.
     */
   var DatabaseName: js.UndefOr[String] = js.undefined
@@ -182,7 +187,7 @@ trait DBCluster extends StObject {
   var Engine: js.UndefOr[String] = js.undefined
   
   /**
-    * The DB engine mode of the DB cluster, either provisioned, serverless, parallelquery, global, or multimaster. For more information, see  CreateDBCluster.
+    * The DB engine mode of the DB cluster, either provisioned or serverless. For more information, see  CreateDBCluster.
     */
   var EngineMode: js.UndefOr[String] = js.undefined
   
@@ -217,6 +222,11 @@ trait DBCluster extends StObject {
   var IAMDatabaseAuthenticationEnabled: js.UndefOr[BooleanOptional] = js.undefined
   
   /**
+    * The next time you can modify the DB cluster to use the aurora-iopt1 storage type. This setting is only for Aurora DB clusters.
+    */
+  var IOOptimizedNextAllowedModificationTime: js.UndefOr[js.Date] = js.undefined
+  
+  /**
     * The Provisioned IOPS (I/O operations per second) value. This setting is only for non-Aurora Multi-AZ DB clusters.
     */
   var Iops: js.UndefOr[IntegerOptional] = js.undefined
@@ -230,6 +240,11 @@ trait DBCluster extends StObject {
     * Specifies the latest time to which a database can be restored with point-in-time restore.
     */
   var LatestRestorableTime: js.UndefOr[js.Date] = js.undefined
+  
+  /**
+    * Contains the secret managed by RDS in Amazon Web Services Secrets Manager for the master user password. For more information, see Password management with Amazon Web Services Secrets Manager in the Amazon RDS User Guide and Password management with Amazon Web Services Secrets Manager in the Amazon Aurora User Guide. 
+    */
+  var MasterUserSecret: js.UndefOr[typings.awsSdk.clientsRdsMod.MasterUserSecret] = js.undefined
   
   /**
     * Contains the master username for the DB cluster.
@@ -331,7 +346,7 @@ trait DBCluster extends StObject {
   var StorageEncrypted: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The storage type associated with the DB cluster. This setting is only for non-Aurora Multi-AZ DB clusters.
+    * The storage type associated with the DB cluster.
     */
   var StorageType: js.UndefOr[String] = js.undefined
   
@@ -466,6 +481,10 @@ object DBCluster {
     
     inline def setDBSubnetGroupUndefined: Self = StObject.set(x, "DBSubnetGroup", js.undefined)
     
+    inline def setDBSystemId(value: String): Self = StObject.set(x, "DBSystemId", value.asInstanceOf[js.Any])
+    
+    inline def setDBSystemIdUndefined: Self = StObject.set(x, "DBSystemId", js.undefined)
+    
     inline def setDatabaseName(value: String): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
     
     inline def setDatabaseNameUndefined: Self = StObject.set(x, "DatabaseName", js.undefined)
@@ -534,6 +553,10 @@ object DBCluster {
     
     inline def setIAMDatabaseAuthenticationEnabledUndefined: Self = StObject.set(x, "IAMDatabaseAuthenticationEnabled", js.undefined)
     
+    inline def setIOOptimizedNextAllowedModificationTime(value: js.Date): Self = StObject.set(x, "IOOptimizedNextAllowedModificationTime", value.asInstanceOf[js.Any])
+    
+    inline def setIOOptimizedNextAllowedModificationTimeUndefined: Self = StObject.set(x, "IOOptimizedNextAllowedModificationTime", js.undefined)
+    
     inline def setIops(value: IntegerOptional): Self = StObject.set(x, "Iops", value.asInstanceOf[js.Any])
     
     inline def setIopsUndefined: Self = StObject.set(x, "Iops", js.undefined)
@@ -545,6 +568,10 @@ object DBCluster {
     inline def setLatestRestorableTime(value: js.Date): Self = StObject.set(x, "LatestRestorableTime", value.asInstanceOf[js.Any])
     
     inline def setLatestRestorableTimeUndefined: Self = StObject.set(x, "LatestRestorableTime", js.undefined)
+    
+    inline def setMasterUserSecret(value: MasterUserSecret): Self = StObject.set(x, "MasterUserSecret", value.asInstanceOf[js.Any])
+    
+    inline def setMasterUserSecretUndefined: Self = StObject.set(x, "MasterUserSecret", js.undefined)
     
     inline def setMasterUsername(value: String): Self = StObject.set(x, "MasterUsername", value.asInstanceOf[js.Any])
     

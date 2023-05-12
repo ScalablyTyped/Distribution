@@ -12,8 +12,6 @@ open class CompilerConfig () extends StObject {
   
   var defaultEncapsulation: ViewEncapsulation | Null = js.native
   
-  var jitDevMode: Boolean = js.native
-  
   var missingTranslation: MissingTranslationStrategy | Null = js.native
   
   var preserveWhitespaces: Boolean = js.native

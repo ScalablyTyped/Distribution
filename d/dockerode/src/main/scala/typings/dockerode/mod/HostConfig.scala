@@ -133,7 +133,7 @@ trait HostConfig extends StObject {
   
   var UTSMode: js.UndefOr[String] = js.undefined
   
-  var Ulimits: js.UndefOr[Any] = js.undefined
+  var Ulimits: js.UndefOr[js.Array[Ulimit]] = js.undefined
   
   var UsernsMode: js.UndefOr[String] = js.undefined
   
@@ -425,9 +425,11 @@ object HostConfig {
     
     inline def setUTSModeUndefined: Self = StObject.set(x, "UTSMode", js.undefined)
     
-    inline def setUlimits(value: Any): Self = StObject.set(x, "Ulimits", value.asInstanceOf[js.Any])
+    inline def setUlimits(value: js.Array[Ulimit]): Self = StObject.set(x, "Ulimits", value.asInstanceOf[js.Any])
     
     inline def setUlimitsUndefined: Self = StObject.set(x, "Ulimits", js.undefined)
+    
+    inline def setUlimitsVarargs(value: Ulimit*): Self = StObject.set(x, "Ulimits", js.Array(value*))
     
     inline def setUsernsMode(value: String): Self = StObject.set(x, "UsernsMode", value.asInstanceOf[js.Any])
     

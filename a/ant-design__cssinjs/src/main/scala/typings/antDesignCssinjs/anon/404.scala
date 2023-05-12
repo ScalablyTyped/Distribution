@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.FontSize
+import typings.csstype.mod.Property.MozBorderBottomColors
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,13 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `404` extends StObject {
   
   var value: js.UndefOr[
-    (FontSize[Double | String]) | (js.Array[
+    MozBorderBottomColors | (js.Array[
       (Extract[
-        js.UndefOr[
-          (FontSize[Double | String]) | (js.Array[NonNullable[js.UndefOr[FontSize[Double | String]]]])
-        ], 
+        js.UndefOr[MozBorderBottomColors | js.Array[NonNullable[js.UndefOr[MozBorderBottomColors]]]], 
         String
-      ]) | (NonNullable[js.UndefOr[FontSize[Double | String]]])
+      ]) | NonNullable[js.UndefOr[MozBorderBottomColors]]
     ])
   ] = js.native
 }

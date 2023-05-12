@@ -276,6 +276,8 @@ object buildSrcAuthGoogleauthMod {
     
     /* private */ var keyFilename: Any = js.native
     
+    /* private */ var prepareAndCacheADC: Any = js.native
+    
     /**
       * Automatically obtain application default credentials, and make an
       * HTTP request using the given options.
@@ -435,6 +437,7 @@ object buildSrcAuthGoogleauthMod {
     - typings.googleAuthLibrary.buildSrcAuthJwtclientMod.JWT
     - typings.googleAuthLibrary.buildSrcAuthRefreshclientMod.UserRefreshClient
     - typings.googleAuthLibrary.buildSrcAuthBaseexternalclientMod.BaseExternalAccountClient
+    - typings.googleAuthLibrary.buildSrcAuthExternalAccountAuthorizedUserClientMod.ExternalAccountAuthorizedUserClient
     - typings.googleAuthLibrary.buildSrcAuthImpersonatedMod.Impersonated
   */
   trait JSONClient extends StObject

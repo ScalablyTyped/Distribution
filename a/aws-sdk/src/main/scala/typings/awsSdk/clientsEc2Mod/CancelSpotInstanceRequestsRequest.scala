@@ -12,7 +12,7 @@ trait CancelSpotInstanceRequestsRequest extends StObject {
   var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * One or more Spot Instance request IDs.
+    * The IDs of the Spot Instance requests.
     */
   var SpotInstanceRequestIds: SpotInstanceRequestIdList
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /**
   * Options which are used to initialize the tile provider.
-  * @property crossOrigin {boolean=} - The string to be set for the crossOrigin attribute for loaded images
+  * crossOrigin {boolean=} - The string to be set for the crossOrigin attribute for loaded images
   */
 trait TileProviderOptions extends StObject {
   

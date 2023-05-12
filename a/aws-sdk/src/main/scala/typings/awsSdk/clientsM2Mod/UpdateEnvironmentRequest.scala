@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateEnvironmentRequest extends StObject {
   
   /**
-    * Indicates whether to update the environment during the maintenance window. The default is false. Currently, Amazon Web Services Mainframe Modernization accepts the engineVersion parameter only if applyDuringMaintenanceWindow is true. If any parameter other than engineVersion is provided in UpdateEnvironmentRequest, it will fail if applyDuringMaintenanceWindow is set to true.
+    * Indicates whether to update the runtime environment during the maintenance window. The default is false. Currently, Amazon Web Services Mainframe Modernization accepts the engineVersion parameter only if applyDuringMaintenanceWindow is true. If any parameter other than engineVersion is provided in UpdateEnvironmentRequest, it will fail if applyDuringMaintenanceWindow is set to true.
     */
   var applyDuringMaintenanceWindow: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * The desired capacity for the environment to update.
+    * The desired capacity for the runtime environment to update.
     */
   var desiredCapacity: js.UndefOr[CapacityValue] = js.undefined
   
   /**
-    * The version of the runtime engine for the environment.
+    * The version of the runtime engine for the runtime environment.
     */
   var engineVersion: js.UndefOr[EngineVersion] = js.undefined
   
@@ -27,12 +27,12 @@ trait UpdateEnvironmentRequest extends StObject {
   var environmentId: Identifier
   
   /**
-    * The instance type for the environment to update.
+    * The instance type for the runtime environment to update.
     */
   var instanceType: js.UndefOr[String20] = js.undefined
   
   /**
-    * Configures a desired maintenance window for the environment. If you do not provide a value, a random system-generated value will be assigned.
+    * Configures the maintenance window you want for the runtime environment. If you do not provide a value, a random system-generated value will be assigned.
     */
   var preferredMaintenanceWindow: js.UndefOr[String] = js.undefined
 }

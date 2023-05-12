@@ -63,10 +63,10 @@ trait Code extends StObject {
     * language:go`](https://github.com/search?utf8=%E2%9C%93&q=amazing+language%3Ago&type=Code) is.
     */
   @JSName("code")
-  var code_Original: `701`
+  var code_Original: `718`
   
   /**
-    * Find commits via various criteria on the default branch (usually `master`). This method returns up to 100 results [per page](https://docs.github.com/rest/overview/resources-in-the-rest-api#pagination).
+    * Find commits via various criteria on the default branch (usually `main`). This method returns up to 100 results [per page](https://docs.github.com/rest/overview/resources-in-the-rest-api#pagination).
     *
     * When searching for commits, you can get text match metadata for the **message** field when you provide the `text-match` media type. For more details about how to receive highlighted search results, see [Text match
     * metadata](https://docs.github.com/rest/reference/search#text-match-metadata).
@@ -87,7 +87,7 @@ trait Code extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /search/commits']['response'] */ js.Any
   ]
   /**
-    * Find commits via various criteria on the default branch (usually `master`). This method returns up to 100 results [per page](https://docs.github.com/rest/overview/resources-in-the-rest-api#pagination).
+    * Find commits via various criteria on the default branch (usually `main`). This method returns up to 100 results [per page](https://docs.github.com/rest/overview/resources-in-the-rest-api#pagination).
     *
     * When searching for commits, you can get text match metadata for the **message** field when you provide the `text-match` media type. For more details about how to receive highlighted search results, see [Text match
     * metadata](https://docs.github.com/rest/reference/search#text-match-metadata).
@@ -97,7 +97,7 @@ trait Code extends StObject {
     * `q=repo:octocat/Spoon-Knife+css`
     */
   @JSName("commits")
-  var commits_Original: `702`
+  var commits_Original: `719`
   
   /**
     * Find issues by state and keyword. This method returns up to 100 results [per page](https://docs.github.com/rest/overview/resources-in-the-rest-api#pagination).
@@ -139,7 +139,7 @@ trait Code extends StObject {
     * **Note:** For [user-to-server](https://docs.github.com/developers/apps/identifying-and-authorizing-users-for-github-apps#user-to-server-requests) GitHub App requests, you can't retrieve a combination of issues and pull requests in a single query. Requests that don't include the `is:issue` or `is:pull-request` qualifier will receive an HTTP `422 Unprocessable Entity` response. To get results for both issues and pull requests, you must send separate queries for issues and pull requests. For more information about the `is` qualifier, see "[Searching only issues or pull requests](https://docs.github.com/github/searching-for-information-on-github/searching-issues-and-pull-requests#search-only-issues-or-pull-requests)."
     */
   @JSName("issuesAndPullRequests")
-  var issuesAndPullRequests_Original: `703`
+  var issuesAndPullRequests_Original: `720`
   
   /**
     * Find labels in a repository with names or descriptions that match search keywords. Returns up to 100 results [per page](https://docs.github.com/rest/overview/resources-in-the-rest-api#pagination).
@@ -175,7 +175,7 @@ trait Code extends StObject {
     * The labels that best match the query appear first in the search results.
     */
   @JSName("labels")
-  var labels_Original: `704`
+  var labels_Original: `721`
   
   /**
     * Find repositories via various criteria. This method returns up to 100 results [per page](https://docs.github.com/rest/overview/resources-in-the-rest-api#pagination).
@@ -211,7 +211,7 @@ trait Code extends StObject {
     * This query searches for repositories with the word `tetris` in the name, the description, or the README. The results are limited to repositories where the primary language is assembly. The results are sorted by stars in descending order, so that the most popular repositories appear first in the search results.
     */
   @JSName("repos")
-  var repos_Original: `705`
+  var repos_Original: `722`
   
   /**
     * Find topics via various criteria. Results are sorted by best match. This method returns up to 100 results [per page](https://docs.github.com/rest/overview/resources-in-the-rest-api#pagination). See "[Searching topics](https://docs.github.com/articles/searching-topics/)" for a detailed list of qualifiers.
@@ -247,7 +247,7 @@ trait Code extends StObject {
     * This query searches for topics with the keyword `ruby` and limits the results to find only topics that are featured. The topics that are the best match for the query appear first in the search results.
     */
   @JSName("topics")
-  var topics_Original: `706`
+  var topics_Original: `723`
   
   /**
     * Find users via various criteria. This method returns up to 100 results [per page](https://docs.github.com/rest/overview/resources-in-the-rest-api#pagination).
@@ -283,18 +283,18 @@ trait Code extends StObject {
     * This query searches for users with the name `tom`. The results are restricted to users with more than 42 repositories and over 1,000 followers.
     */
   @JSName("users")
-  var users_Original: `707`
+  var users_Original: `724`
 }
 object Code {
   
   inline def apply(
-    code: `701`,
-    commits: `702`,
-    issuesAndPullRequests: `703`,
-    labels: `704`,
-    repos: `705`,
-    topics: `706`,
-    users: `707`
+    code: `718`,
+    commits: `719`,
+    issuesAndPullRequests: `720`,
+    labels: `721`,
+    repos: `722`,
+    topics: `723`,
+    users: `724`
   ): Code = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], commits = commits.asInstanceOf[js.Any], issuesAndPullRequests = issuesAndPullRequests.asInstanceOf[js.Any], labels = labels.asInstanceOf[js.Any], repos = repos.asInstanceOf[js.Any], topics = topics.asInstanceOf[js.Any], users = users.asInstanceOf[js.Any])
     __obj.asInstanceOf[Code]
@@ -303,18 +303,18 @@ object Code {
   @scala.inline
   implicit open class MutableBuilder[Self <: Code] (val x: Self) extends AnyVal {
     
-    inline def setCode(value: `701`): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: `718`): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    inline def setCommits(value: `702`): Self = StObject.set(x, "commits", value.asInstanceOf[js.Any])
+    inline def setCommits(value: `719`): Self = StObject.set(x, "commits", value.asInstanceOf[js.Any])
     
-    inline def setIssuesAndPullRequests(value: `703`): Self = StObject.set(x, "issuesAndPullRequests", value.asInstanceOf[js.Any])
+    inline def setIssuesAndPullRequests(value: `720`): Self = StObject.set(x, "issuesAndPullRequests", value.asInstanceOf[js.Any])
     
-    inline def setLabels(value: `704`): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: `721`): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    inline def setRepos(value: `705`): Self = StObject.set(x, "repos", value.asInstanceOf[js.Any])
+    inline def setRepos(value: `722`): Self = StObject.set(x, "repos", value.asInstanceOf[js.Any])
     
-    inline def setTopics(value: `706`): Self = StObject.set(x, "topics", value.asInstanceOf[js.Any])
+    inline def setTopics(value: `723`): Self = StObject.set(x, "topics", value.asInstanceOf[js.Any])
     
-    inline def setUsers(value: `707`): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
+    inline def setUsers(value: `724`): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
   }
 }

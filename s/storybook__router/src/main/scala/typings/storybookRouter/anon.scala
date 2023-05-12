@@ -1,82 +1,18 @@
 package typings.storybookRouter
 
-import typings.react.mod.HTMLAttributeAnchorTarget
 import typings.std.DOMStringList
-import typings.storybookRouter.distTs3Dot9ModulesReactRouterNodeModulesHistoryIndexMod.Hash
-import typings.storybookRouter.distTs3Dot9ModulesReactRouterNodeModulesHistoryIndexMod.Key
-import typings.storybookRouter.distTs3Dot9ModulesReactRouterNodeModulesHistoryIndexMod.Pathname
-import typings.storybookRouter.distTs3Dot9ModulesReactRouterNodeModulesHistoryIndexMod.Search
+import typings.storybookRouter.mod.Hash
+import typings.storybookRouter.mod.Key
+import typings.storybookRouter.mod.Pathname
+import typings.storybookRouter.mod.Search
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  trait IsActive extends StObject {
-    
-    var isActive: Boolean
-  }
-  object IsActive {
-    
-    inline def apply(isActive: Boolean): IsActive = {
-      val __obj = js.Dynamic.literal(isActive = isActive.asInstanceOf[js.Any])
-      __obj.asInstanceOf[IsActive]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: IsActive] (val x: Self) extends AnyVal {
-      
-      inline def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  /* Inlined std.Partial<@storybook/router.@storybook/router/dist/ts3.9/_modules/react-router-node_modules-history-index.Location> */
-  trait PartialLocation extends StObject {
-    
-    var hash: js.UndefOr[Hash] = js.undefined
-    
-    var key: js.UndefOr[Key] = js.undefined
-    
-    var pathname: js.UndefOr[Pathname] = js.undefined
-    
-    var search: js.UndefOr[Search] = js.undefined
-    
-    var state: js.UndefOr[Any] = js.undefined
-  }
-  object PartialLocation {
-    
-    inline def apply(): PartialLocation = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[PartialLocation]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: PartialLocation] (val x: Self) extends AnyVal {
-      
-      inline def setHash(value: Hash): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
-      
-      inline def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
-      
-      inline def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
-      
-      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
-      
-      inline def setPathname(value: Pathname): Self = StObject.set(x, "pathname", value.asInstanceOf[js.Any])
-      
-      inline def setPathnameUndefined: Self = StObject.set(x, "pathname", js.undefined)
-      
-      inline def setSearch(value: Search): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
-      
-      inline def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
-      
-      inline def setState(value: Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
-      
-      inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
-    }
-  }
-  
   /* Inlined std.Partial<std.Location> */
-  trait PartialLocationAncestorOrigins extends StObject {
+  trait PartialLocation extends StObject {
     
     var ancestorOrigins: js.UndefOr[DOMStringList] = js.undefined
     
@@ -105,17 +41,17 @@ object anon {
     var search: js.UndefOr[String] = js.undefined
     
     @JSName("toString")
-    var toString_FPartialLocationAncestorOrigins: js.UndefOr[js.Function0[String]] = js.undefined
+    var toString_FPartialLocation: js.UndefOr[js.Function0[String]] = js.undefined
   }
-  object PartialLocationAncestorOrigins {
+  object PartialLocation {
     
-    inline def apply(): PartialLocationAncestorOrigins = {
+    inline def apply(): PartialLocation = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[PartialLocationAncestorOrigins]
+      __obj.asInstanceOf[PartialLocation]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: PartialLocationAncestorOrigins] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: PartialLocation] (val x: Self) extends AnyVal {
       
       inline def setAncestorOrigins(value: DOMStringList): Self = StObject.set(x, "ancestorOrigins", value.asInstanceOf[js.Any])
       
@@ -175,7 +111,52 @@ object anon {
     }
   }
   
-  /* Inlined std.Partial<@storybook/router.@storybook/router/dist/ts3.9/_modules/react-router-node_modules-history-index.Path> */
+  /* Inlined std.Partial<@storybook/router.@storybook/router.Location$1> */
+  trait PartialLocation1 extends StObject {
+    
+    var hash: js.UndefOr[Hash] = js.undefined
+    
+    var key: js.UndefOr[Key] = js.undefined
+    
+    var pathname: js.UndefOr[Pathname] = js.undefined
+    
+    var search: js.UndefOr[Search] = js.undefined
+    
+    var state: js.UndefOr[Any] = js.undefined
+  }
+  object PartialLocation1 {
+    
+    inline def apply(): PartialLocation1 = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[PartialLocation1]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialLocation1] (val x: Self) extends AnyVal {
+      
+      inline def setHash(value: Hash): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+      
+      inline def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
+      
+      inline def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      
+      inline def setPathname(value: Pathname): Self = StObject.set(x, "pathname", value.asInstanceOf[js.Any])
+      
+      inline def setPathnameUndefined: Self = StObject.set(x, "pathname", js.undefined)
+      
+      inline def setSearch(value: Search): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+      
+      inline def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
+      
+      inline def setState(value: Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      
+      inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    }
+  }
+  
+  /* Inlined std.Partial<@storybook/router.@storybook/router.Path> */
   trait PartialPath extends StObject {
     
     var hash: js.UndefOr[Hash] = js.undefined
@@ -223,84 +204,6 @@ object anon {
     implicit open class MutableBuilder[Self <: Path] (val x: Self) extends AnyVal {
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait Plain extends StObject {
-    
-    var plain: js.UndefOr[Boolean] = js.undefined
-  }
-  object Plain {
-    
-    inline def apply(): Plain = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Plain]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: Plain] (val x: Self) extends AnyVal {
-      
-      inline def setPlain(value: Boolean): Self = StObject.set(x, "plain", value.asInstanceOf[js.Any])
-      
-      inline def setPlainUndefined: Self = StObject.set(x, "plain", js.undefined)
-    }
-  }
-  
-  trait Replace extends StObject {
-    
-    var replace: js.UndefOr[Boolean] = js.undefined
-    
-    var state: js.UndefOr[Any] = js.undefined
-    
-    var target: js.UndefOr[HTMLAttributeAnchorTarget] = js.undefined
-  }
-  object Replace {
-    
-    inline def apply(): Replace = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Replace]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: Replace] (val x: Self) extends AnyVal {
-      
-      inline def setReplace(value: Boolean): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
-      
-      inline def setReplaceUndefined: Self = StObject.set(x, "replace", js.undefined)
-      
-      inline def setState(value: Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
-      
-      inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
-      
-      inline def setTarget(value: HTMLAttributeAnchorTarget): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
-      
-      inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
-    }
-  }
-  
-  trait State extends StObject {
-    
-    var replace: js.UndefOr[Boolean] = js.undefined
-    
-    var state: js.UndefOr[Any] = js.undefined
-  }
-  object State {
-    
-    inline def apply(): State = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[State]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: State] (val x: Self) extends AnyVal {
-      
-      inline def setReplace(value: Boolean): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
-      
-      inline def setReplaceUndefined: Self = StObject.set(x, "replace", js.undefined)
-      
-      inline def setState(value: Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
-      
-      inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     }
   }
 }

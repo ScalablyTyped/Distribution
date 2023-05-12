@@ -22,15 +22,17 @@ object jsUsaModalMod extends Shortcut {
     def init(root: Document): Unit = js.native
     def init(root: HTMLElement): Unit = js.native
     
-    def off(el: HTMLElement): Unit = js.native
+    def off(root: Document): Unit = js.native
+    def off(root: HTMLElement): Unit = js.native
     
-    def on(el: HTMLElement): Unit = js.native
+    def on(root: Document): Unit = js.native
+    def on(root: HTMLElement): Unit = js.native
+    
+    def teardown(root: Document): Unit = js.native
+    def teardown(root: HTMLElement): Unit = js.native
     
     /**
       *  Toggle the visibility of a modal window
-      *
-      * @param event the keydown event
-      * @returns safeActive if mobile is open
       */
     def toggleModal(event: KeyboardEvent): Boolean = js.native
   }

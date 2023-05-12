@@ -482,7 +482,7 @@ object libFetcherMod {
     def addType(rdfType: NamedNode, req: QuadSubject, kb: typings.rdflib.libStoreMod.default, locURI: String): Unit = js.native
     
     /** Denoting this session */
-    var appNode: BlankNode = js.native
+    var appNode: NamedNode = js.native
     
     /**
       * @param _options - DEPRECATED

@@ -35,11 +35,11 @@ trait NotebookEditor extends StObject {
   /**
     * Perform an edit on the document associated with this notebook editor.
     *
-    * The given callback-function is invoked with an [edit-builder](#NotebookEditorEdit) which must
+    * The given callback-function is invoked with an {@link NotebookEditorEdit} which must
     * be used to make edits. Note that the edit-builder is only valid while the
     * callback executes.
     *
-    * @param callback A function which can create edits using an [edit-builder](#NotebookEditorEdit).
+    * @param callback A function which can create edits using an {@link NotebookEditorEdit}.
     * @param options The undo/redo behavior around this edit. By default, undo stops will be created before and after this edit.
     * @return A promise that resolves with a value indicating if the edits could be applied.
     */

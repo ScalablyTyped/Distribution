@@ -16,7 +16,7 @@ object typesMatchesMod {
   inline def getDefaultNormalizer(): NormalizerFn = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultNormalizer")().asInstanceOf[NormalizerFn]
   inline def getDefaultNormalizer(options: DefaultNormalizerOptions): NormalizerFn = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultNormalizer")(options.asInstanceOf[js.Any]).asInstanceOf[NormalizerFn]
   
-  type ByRoleMatcher = ARIARole | MatcherFunction | js.Object
+  type ByRoleMatcher = ARIARole | String
   
   trait DefaultNormalizerOptions extends StObject {
     

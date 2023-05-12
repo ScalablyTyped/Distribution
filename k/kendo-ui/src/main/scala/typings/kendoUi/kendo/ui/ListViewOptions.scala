@@ -9,6 +9,8 @@ trait ListViewOptions extends StObject {
   
   var altTemplate: js.UndefOr[js.Function] = js.undefined
   
+  var ariaLabel: js.UndefOr[String] = js.undefined
+  
   var autoBind: js.UndefOr[Boolean] = js.undefined
   
   var cancel: js.UndefOr[js.Function1[/* e */ ListViewCancelEvent, Unit]] = js.undefined
@@ -30,6 +32,8 @@ trait ListViewOptions extends StObject {
   var name: js.UndefOr[String] = js.undefined
   
   var navigatable: js.UndefOr[Boolean] = js.undefined
+  
+  var pageable: js.UndefOr[Boolean | ListViewPageable] = js.undefined
   
   var remove: js.UndefOr[js.Function1[/* e */ ListViewRemoveEvent, Unit]] = js.undefined
   
@@ -54,6 +58,10 @@ object ListViewOptions {
     inline def setAltTemplate(value: js.Function): Self = StObject.set(x, "altTemplate", value.asInstanceOf[js.Any])
     
     inline def setAltTemplateUndefined: Self = StObject.set(x, "altTemplate", js.undefined)
+    
+    inline def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
+    
+    inline def setAriaLabelUndefined: Self = StObject.set(x, "ariaLabel", js.undefined)
     
     inline def setAutoBind(value: Boolean): Self = StObject.set(x, "autoBind", value.asInstanceOf[js.Any])
     
@@ -98,6 +106,10 @@ object ListViewOptions {
     inline def setNavigatable(value: Boolean): Self = StObject.set(x, "navigatable", value.asInstanceOf[js.Any])
     
     inline def setNavigatableUndefined: Self = StObject.set(x, "navigatable", js.undefined)
+    
+    inline def setPageable(value: Boolean | ListViewPageable): Self = StObject.set(x, "pageable", value.asInstanceOf[js.Any])
+    
+    inline def setPageableUndefined: Self = StObject.set(x, "pageable", js.undefined)
     
     inline def setRemove(value: /* e */ ListViewRemoveEvent => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
     

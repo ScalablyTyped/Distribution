@@ -12,7 +12,12 @@ trait AngularGuardOptionsSchema extends StObject {
   var flat: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Specifies which interfaces to implement.
+    * Specifies whether to generate a guard as a function.
+    */
+  var functional: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Specifies which type of guard to create.
     */
   var implements: js.UndefOr[js.Array[Implement]] = js.undefined
   
@@ -30,7 +35,7 @@ trait AngularGuardOptionsSchema extends StObject {
   /**
     * The name of the project.
     */
-  var project: js.UndefOr[String] = js.undefined
+  var project: String
   
   /**
     * Do not create "spec.ts" test files for the new guard.
@@ -39,8 +44,8 @@ trait AngularGuardOptionsSchema extends StObject {
 }
 object AngularGuardOptionsSchema {
   
-  inline def apply(name: String): AngularGuardOptionsSchema = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+  inline def apply(name: String, project: String): AngularGuardOptionsSchema = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], project = project.asInstanceOf[js.Any])
     __obj.asInstanceOf[AngularGuardOptionsSchema]
   }
   
@@ -50,6 +55,10 @@ object AngularGuardOptionsSchema {
     inline def setFlat(value: Boolean): Self = StObject.set(x, "flat", value.asInstanceOf[js.Any])
     
     inline def setFlatUndefined: Self = StObject.set(x, "flat", js.undefined)
+    
+    inline def setFunctional(value: Boolean): Self = StObject.set(x, "functional", value.asInstanceOf[js.Any])
+    
+    inline def setFunctionalUndefined: Self = StObject.set(x, "functional", js.undefined)
     
     inline def setImplements(value: js.Array[Implement]): Self = StObject.set(x, "implements", value.asInstanceOf[js.Any])
     
@@ -64,8 +73,6 @@ object AngularGuardOptionsSchema {
     inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
     inline def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
-    
-    inline def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
     
     inline def setSkipTests(value: Boolean): Self = StObject.set(x, "skipTests", value.asInstanceOf[js.Any])
     

@@ -46,13 +46,16 @@ object srcCollectionsMod {
        with Iterable[T] {
     
     /** Get an item by the index of its key. */
-    def at(idx: Double): T = js.native
+    def at(idx: Double): T | Null = js.native
+    
+    /** Iterate over the child items of the given key. */
+    var getChildren: js.UndefOr[js.Function1[/* key */ Key, js.Iterable[T]]] = js.native
     
     /** Get the first key in the collection. */
     def getFirstKey(): Key | Null = js.native
     
     /** Get an item by its key. */
-    def getItem(key: Key): T = js.native
+    def getItem(key: Key): T | Null = js.native
     
     /** Get the key that comes after the given key in the collection. */
     def getKeyAfter(key: Key): Key | Null = js.native
@@ -65,6 +68,9 @@ object srcCollectionsMod {
     
     /** Get the last key in the collection. */
     def getLastKey(): Key | Null = js.native
+    
+    /** Returns a string representation of the item's contents. */
+    var getTextValue: js.UndefOr[js.Function1[/* key */ Key, String]] = js.native
     
     /** The number of items in the collection. */
     val size: Double = js.native
@@ -110,6 +116,50 @@ object srcCollectionsMod {
   type CollectionChildren[T] = CollectionElement[T] | js.Array[CollectionElement[T]] | (js.Function1[/* item */ T, CollectionElement[T]])
   
   type CollectionElement[T] = SectionElement[T] | ItemElement[T]
+  
+  /* Inlined parent std.Partial<@react-types/shared.@react-types/shared/src/collections.CollectionBase<T>> */
+  trait CollectionStateBase[T, C /* <: Collection[Node[T]] */] extends StObject {
+    
+    var children: js.UndefOr[CollectionChildren[T]] = js.undefined
+    
+    /** A pre-constructed collection to use instead of building one from items and children. */
+    var collection: js.UndefOr[C] = js.undefined
+    
+    var disabledKeys: js.UndefOr[js.Iterable[Key]] = js.undefined
+    
+    var items: js.UndefOr[js.Iterable[T]] = js.undefined
+  }
+  object CollectionStateBase {
+    
+    inline def apply[T, C /* <: Collection[Node[T]] */](): CollectionStateBase[T, C] = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[CollectionStateBase[T, C]]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CollectionStateBase[?, ?], T, C /* <: Collection[Node[T]] */] (val x: Self & (CollectionStateBase[T, C])) extends AnyVal {
+      
+      inline def setChildren(value: CollectionChildren[T]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenFunction1(value: T => CollectionElement[T]): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
+      inline def setChildrenVarargs(value: CollectionElement[T]*): Self = StObject.set(x, "children", js.Array(value*))
+      
+      inline def setCollection(value: C): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
+      
+      inline def setCollectionUndefined: Self = StObject.set(x, "collection", js.undefined)
+      
+      inline def setDisabledKeys(value: js.Iterable[Key]): Self = StObject.set(x, "disabledKeys", value.asInstanceOf[js.Any])
+      
+      inline def setDisabledKeysUndefined: Self = StObject.set(x, "disabledKeys", js.undefined)
+      
+      inline def setItems(value: js.Iterable[T]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      
+      inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    }
+  }
   
   trait Expandable extends StObject {
     
@@ -317,7 +367,10 @@ object srcCollectionsMod {
     /** An accessibility label for this node. */
     var `aria-label`: js.UndefOr[String] = js.undefined
     
-    /** The loaded children of this node. */
+    /**
+      * The loaded children of this node.
+      * @deprecated Use `collection.getChildren(node.key)` instead.
+      */
     var childNodes: js.Iterable[Node[T]]
     
     /** Whether this item has children, even if not loaded yet. */
@@ -333,13 +386,13 @@ object srcCollectionsMod {
     var level: Double
     
     /** The key of the node after this node. */
-    var nextKey: js.UndefOr[Key] = js.undefined
+    var nextKey: js.UndefOr[Key | Null] = js.undefined
     
     /** The key of the parent node. */
-    var parentKey: js.UndefOr[Key] = js.undefined
+    var parentKey: js.UndefOr[Key | Null] = js.undefined
     
     /** The key of the node before this node. */
-    var prevKey: js.UndefOr[Key] = js.undefined
+    var prevKey: js.UndefOr[Key | Null] = js.undefined
     
     /** Additional properties specific to a particular node type. */
     var props: js.UndefOr[Any] = js.undefined
@@ -357,7 +410,7 @@ object srcCollectionsMod {
     var `type`: String
     
     /** The object value the node was created from. */
-    var value: T
+    var value: T | Null
     
     /** A function that should be called to wrap the rendered node. */
     var wrapper: js.UndefOr[js.Function1[/* element */ ReactElement, ReactElement]] = js.undefined
@@ -370,10 +423,9 @@ object srcCollectionsMod {
       key: Key,
       level: Double,
       textValue: String,
-      `type`: String,
-      value: T
+      `type`: String
     ): Node[T] = {
-      val __obj = js.Dynamic.literal(childNodes = childNodes.asInstanceOf[js.Any], hasChildNodes = hasChildNodes.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], textValue = textValue.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(childNodes = childNodes.asInstanceOf[js.Any], hasChildNodes = hasChildNodes.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], textValue = textValue.asInstanceOf[js.Any], value = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Node[T]]
     }
@@ -399,13 +451,19 @@ object srcCollectionsMod {
       
       inline def setNextKey(value: Key): Self = StObject.set(x, "nextKey", value.asInstanceOf[js.Any])
       
+      inline def setNextKeyNull: Self = StObject.set(x, "nextKey", null)
+      
       inline def setNextKeyUndefined: Self = StObject.set(x, "nextKey", js.undefined)
       
       inline def setParentKey(value: Key): Self = StObject.set(x, "parentKey", value.asInstanceOf[js.Any])
       
+      inline def setParentKeyNull: Self = StObject.set(x, "parentKey", null)
+      
       inline def setParentKeyUndefined: Self = StObject.set(x, "parentKey", js.undefined)
       
       inline def setPrevKey(value: Key): Self = StObject.set(x, "prevKey", value.asInstanceOf[js.Any])
+      
+      inline def setPrevKeyNull: Self = StObject.set(x, "prevKey", null)
       
       inline def setPrevKeyUndefined: Self = StObject.set(x, "prevKey", js.undefined)
       
@@ -426,6 +484,8 @@ object srcCollectionsMod {
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
       inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      
+      inline def setValueNull: Self = StObject.set(x, "value", null)
       
       inline def setWrapper(value: /* element */ ReactElement => ReactElement): Self = StObject.set(x, "wrapper", js.Any.fromFunction1(value))
       

@@ -6,7 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GetParametersPathReviewidQueryPage extends StObject {
   
-  /** List comments for a specific pull request review. */
+  /**
+    * List comments for a pull request review
+    * @description List comments for a specific pull request review.
+    */
   var get: ParametersPathReviewidQueryPage
 }
 object GetParametersPathReviewidQueryPage {

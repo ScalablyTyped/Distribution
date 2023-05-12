@@ -10,15 +10,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A map type is an object holding tile layers corresponding to a map type (e.g. 'normal', 'satellite' or 'terrain'). A map type contains at least a map property which defines the basic
   * map layer for a given map type. In addition it can hold other map layers with the given style, e.g. base, xbase, traffic etc.
   * {@link https://developer.here.com/documentation/maps/content/api_reference/H.service.html#.MapType}
-  * @property map {H.map.layer.TileLayer} - the basic map tiles with all features and labels
-  * @property mapnight {H.map.layer.TileLayer} - the basic map tiles with all features and labels (night mode)
-  * @property xbase {H.map.layer.TileLayer=} - map tiles without features and labels
-  * @property xbasenight {H.map.layer.TileLayer=} - map tiles without features and labels (night mode)
-  * @property base {H.map.layer.TileLayer=} - map tiles without labels
-  * @property basenight {H.map.layer.TileLayer=} - map tiles without labels (night mode)
-  * @property trafficincidents {H.map.layer.TileLayer=} - map tiles with traffic flow highlighting
-  * @property transit {H.map.layer.TileLayer=} - map tiles with public transit lines highlighted
-  * @property labels {H.map.layer.TileLayer=} - transparent map tiles with labels only
+  * map {H.map.layer.TileLayer} - the basic map tiles with all features and labels
+  * mapnight {H.map.layer.TileLayer} - the basic map tiles with all features and labels (night mode)
+  * xbase {H.map.layer.TileLayer=} - map tiles without features and labels
+  * xbasenight {H.map.layer.TileLayer=} - map tiles without features and labels (night mode)
+  * base {H.map.layer.TileLayer=} - map tiles without labels
+  * basenight {H.map.layer.TileLayer=} - map tiles without labels (night mode)
+  * trafficincidents {H.map.layer.TileLayer=} - map tiles with traffic flow highlighting
+  * transit {H.map.layer.TileLayer=} - map tiles with public transit lines highlighted
+  * labels {H.map.layer.TileLayer=} - transparent map tiles with labels only
   */
 trait MapType extends StObject {
   

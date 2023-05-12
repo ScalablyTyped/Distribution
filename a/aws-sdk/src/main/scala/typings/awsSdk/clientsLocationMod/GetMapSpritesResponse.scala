@@ -12,6 +12,11 @@ trait GetMapSpritesResponse extends StObject {
   var Blob: js.UndefOr[_Blob] = js.undefined
   
   /**
+    * The HTTP Cache-Control directive for the value.
+    */
+  var CacheControl: js.UndefOr[String] = js.undefined
+  
+  /**
     * The content type of the sprite sheet and offsets. For example, the sprite sheet content type is image/png, and the sprite offset JSON document is application/json. 
     */
   var ContentType: js.UndefOr[String] = js.undefined
@@ -29,6 +34,10 @@ object GetMapSpritesResponse {
     inline def setBlob(value: _Blob): Self = StObject.set(x, "Blob", value.asInstanceOf[js.Any])
     
     inline def setBlobUndefined: Self = StObject.set(x, "Blob", js.undefined)
+    
+    inline def setCacheControl(value: String): Self = StObject.set(x, "CacheControl", value.asInstanceOf[js.Any])
+    
+    inline def setCacheControlUndefined: Self = StObject.set(x, "CacheControl", js.undefined)
     
     inline def setContentType(value: String): Self = StObject.set(x, "ContentType", value.asInstanceOf[js.Any])
     

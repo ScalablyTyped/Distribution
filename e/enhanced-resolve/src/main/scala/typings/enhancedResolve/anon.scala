@@ -53,11 +53,11 @@ object anon {
     
     var forceRelative: Boolean
     
-    var name: js.Array[String]
+    var name: String | js.Array[String]
   }
   object ForceRelative {
     
-    inline def apply(forceRelative: Boolean, name: js.Array[String]): ForceRelative = {
+    inline def apply(forceRelative: Boolean, name: String | js.Array[String]): ForceRelative = {
       val __obj = js.Dynamic.literal(forceRelative = forceRelative.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[ForceRelative]
     }
@@ -67,7 +67,7 @@ object anon {
       
       inline def setForceRelative(value: Boolean): Self = StObject.set(x, "forceRelative", value.asInstanceOf[js.Any])
       
-      inline def setName(value: js.Array[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String | js.Array[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       inline def setNameVarargs(value: String*): Self = StObject.set(x, "name", js.Array(value*))
     }
@@ -77,11 +77,11 @@ object anon {
     
     var forceRelative: Boolean
     
-    var name: String | js.Array[String]
+    var name: js.Array[String]
   }
   object Name {
     
-    inline def apply(forceRelative: Boolean, name: String | js.Array[String]): Name = {
+    inline def apply(forceRelative: Boolean, name: js.Array[String]): Name = {
       val __obj = js.Dynamic.literal(forceRelative = forceRelative.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Name]
     }
@@ -91,7 +91,7 @@ object anon {
       
       inline def setForceRelative(value: Boolean): Self = StObject.set(x, "forceRelative", value.asInstanceOf[js.Any])
       
-      inline def setName(value: String | js.Array[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: js.Array[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       inline def setNameVarargs(value: String*): Self = StObject.set(x, "name", js.Array(value*))
     }

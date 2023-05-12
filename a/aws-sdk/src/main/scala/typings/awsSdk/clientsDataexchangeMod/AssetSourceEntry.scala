@@ -7,18 +7,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AssetSourceEntry extends StObject {
   
   /**
-    * The S3 bucket that's part of the source of the asset.
+    * The Amazon S3 bucket that's part of the source of the asset.
     */
-  var Bucket: string
+  var Bucket: _String
   
   /**
     * The name of the object in Amazon S3 for the asset.
     */
-  var Key: string
+  var Key: _String
 }
 object AssetSourceEntry {
   
-  inline def apply(Bucket: string, Key: string): AssetSourceEntry = {
+  inline def apply(Bucket: _String, Key: _String): AssetSourceEntry = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], Key = Key.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssetSourceEntry]
   }
@@ -26,8 +26,8 @@ object AssetSourceEntry {
   @scala.inline
   implicit open class MutableBuilder[Self <: AssetSourceEntry] (val x: Self) extends AnyVal {
     
-    inline def setBucket(value: string): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
+    inline def setBucket(value: _String): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     
-    inline def setKey(value: string): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+    inline def setKey(value: _String): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
   }
 }

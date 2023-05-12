@@ -270,6 +270,8 @@ object mod {
       
       var omitDefault: js.UndefOr[Boolean] = js.undefined
       
+      var omitGraph: js.UndefOr[Boolean] = js.undefined
+      
       var requireAll: js.UndefOr[Boolean] = js.undefined
     }
     object Frame {
@@ -293,6 +295,10 @@ object mod {
         inline def setOmitDefault(value: Boolean): Self = StObject.set(x, "omitDefault", value.asInstanceOf[js.Any])
         
         inline def setOmitDefaultUndefined: Self = StObject.set(x, "omitDefault", js.undefined)
+        
+        inline def setOmitGraph(value: Boolean): Self = StObject.set(x, "omitGraph", value.asInstanceOf[js.Any])
+        
+        inline def setOmitGraphUndefined: Self = StObject.set(x, "omitGraph", js.undefined)
         
         inline def setRequireAll(value: Boolean): Self = StObject.set(x, "requireAll", value.asInstanceOf[js.Any])
         

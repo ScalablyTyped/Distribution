@@ -22,7 +22,7 @@ trait EvidenceReport
   var _url: js.UndefOr[Element] = js.undefined
   
   /**
-    * Extensions to ContactDetail include: contactReference, contactAddress, and contributionTime (Details at: http://build.fhir.org/clinicalreasoning-module.html).
+    * Extensions to ContactDetail include: contactReference, contactAddress, and contributionTime (see [Clinical Reasoning Module](clinicalreasoning-module.html)).
     */
   var author: js.UndefOr[js.Array[ContactDetail]] = js.undefined
   
@@ -37,17 +37,19 @@ trait EvidenceReport
   var citeAsReference: js.UndefOr[Reference] = js.undefined
   
   /**
-    * Extensions to ContactDetail include: contactReference, contactAddress, and contributionTime (Details at: http://build.fhir.org/clinicalreasoning-module.html).
+    * Extensions to ContactDetail include: contactReference, contactAddress, and contributionTime (see [Clinical Reasoning Module](clinicalreasoning-module.html)).
+    * See guidance around (not) making local changes to elements [here](canonicalresource.html#localization).
     */
   var contact: js.UndefOr[js.Array[ContactDetail]] = js.undefined
   
   /**
-    * Extensions to ContactDetail include: contactReference, contactAddress, and contributionTime (Details at: http://build.fhir.org/clinicalreasoning-module.html).
+    * Extensions to ContactDetail include: contactReference, contactAddress, and contributionTime (see [Clinical Reasoning Module](clinicalreasoning-module.html)).
     */
   var editor: js.UndefOr[js.Array[ContactDetail]] = js.undefined
   
   /**
-    * Extensions to ContactDetail include: contactReference, contactAddress, and contributionTime (Details at: http://build.fhir.org/clinicalreasoning-module.html).
+    * Extensions to ContactDetail include: contactReference, contactAddress, and contributionTime (see [Clinical Reasoning Module](clinicalreasoning-module.html)).
+    * See guidance around (not) making local changes to elements [here](canonicalresource.html#localization).
     */
   var endorser: js.UndefOr[js.Array[ContactDetail]] = js.undefined
   
@@ -86,7 +88,8 @@ trait EvidenceReport
   val resourceType_EvidenceReport: typings.fhir.fhirStrings.EvidenceReport
   
   /**
-    * Extensions to ContactDetail include: contactReference, contactAddress, and contributionTime (Details at: http://build.fhir.org/clinicalreasoning-module.html).
+    * Extensions to ContactDetail include: contactReference, contactAddress, and contributionTime (see [Clinical Reasoning Module](clinicalreasoning-module.html)).
+    * See guidance around (not) making local changes to elements [here](canonicalresource.html#localization).
     */
   var reviewer: js.UndefOr[js.Array[ContactDetail]] = js.undefined
   
@@ -97,6 +100,7 @@ trait EvidenceReport
   
   /**
     * Allows filtering of summaries that are appropriate for use versus not.
+    * See guidance around (not) making local changes to elements [here](canonicalresource.html#localization).
     */
   var status: draft | active | retired | unknown
   

@@ -17,7 +17,7 @@ object sourceDelimiterCaseMod {
   
   type SplitIncludingDelimiters[Source /* <: String */, Delimiter /* <: String */] = SplitIncludingDelimiters_[UpperCaseToLowerCase[Source], Delimiter]
   
-  // This implemntation does not supports SCREMAING_SNAKE_CASE, it used internaly by `SplitIncludingDelimiters`.
+  // This implementation does not support SCREAMING_SNAKE_CASE, it is used internally by `SplitIncludingDelimiters`.
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
     * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
@@ -54,7 +54,7 @@ object sourceDelimiterCaseMod {
     */
   type StringPartToDelimiterCase[StringPart /* <: String */, Start /* <: Boolean */, UsedWordSeparators /* <: String */, UsedUpperCaseCharacters /* <: String */, Delimiter /* <: String */] = Delimiter
   
-  // Transforms a string that is fully uppercase into a fully lowercase version. Needed to add support for SCREMAING_SNAKE_CASE, see https://github.com/sindresorhus/type-fest/issues/385
+  // Transforms a string that is fully uppercase into a fully lowercase version. Needed to add support for SCREAMING_SNAKE_CASE, see https://github.com/sindresorhus/type-fest/issues/385
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
     * This RHS of the type alias is guess work. You should cast if it's not correct in your case.

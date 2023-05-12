@@ -17,7 +17,7 @@ trait ManagedAgent extends StObject {
   var lastStatus: js.UndefOr[String] = js.undefined
   
   /**
-    * The name of the managed agent. When the execute command feature is enabled, the managed agent name is ExecuteCommandAgent.
+    * The name of the managed agent. When the execute command feature is turned on, the managed agent name is ExecuteCommandAgent.
     */
   var name: js.UndefOr[ManagedAgentName] = js.undefined
   

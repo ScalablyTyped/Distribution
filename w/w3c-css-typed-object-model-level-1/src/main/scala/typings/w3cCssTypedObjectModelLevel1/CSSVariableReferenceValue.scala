@@ -6,14 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CSSVariableReferenceValue extends StObject {
   
-  val fallback: js.UndefOr[CSSUnparsedValue] = js.undefined
+  val fallback: CSSUnparsedValue | Null
   
   var variable: String
 }
 object CSSVariableReferenceValue {
   
   inline def apply(variable: String): CSSVariableReferenceValue = {
-    val __obj = js.Dynamic.literal(variable = variable.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(variable = variable.asInstanceOf[js.Any], fallback = null)
     __obj.asInstanceOf[CSSVariableReferenceValue]
   }
   
@@ -22,7 +22,7 @@ object CSSVariableReferenceValue {
     
     inline def setFallback(value: CSSUnparsedValue): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
     
-    inline def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
+    inline def setFallbackNull: Self = StObject.set(x, "fallback", null)
     
     inline def setVariable(value: String): Self = StObject.set(x, "variable", value.asInstanceOf[js.Any])
   }

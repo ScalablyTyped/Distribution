@@ -20,6 +20,9 @@ trait BubbleNode extends StObject {
   def findViewableParent(): BubbleNode = js.native
   
   def getDefaultGeometry(): Any = js.native
+  def getDefaultGeometry(searchMasterview: Boolean): Any = js.native
+  def getDefaultGeometry(searchMasterview: Boolean, loadLargestView: Boolean): Any = js.native
+  def getDefaultGeometry(searchMasterview: Unit, loadLargestView: Boolean): Any = js.native
   
   def getDocument(): Document = js.native
   

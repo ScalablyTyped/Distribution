@@ -38,14 +38,6 @@ object nodeGeocoderStrings {
   inline def here: here = "here".asInstanceOf[here]
   
   @js.native
-  sealed trait http extends StObject
-  inline def http: http = "http".asInstanceOf[http]
-  
-  @js.native
-  sealed trait https extends StObject
-  inline def https: https = "https".asInstanceOf[https]
-  
-  @js.native
   sealed trait locationiq
     extends StObject
        with Providers
@@ -96,10 +88,6 @@ object nodeGeocoderStrings {
   inline def pickpoint: pickpoint = "pickpoint".asInstanceOf[pickpoint]
   
   @js.native
-  sealed trait request extends StObject
-  inline def request: request = "request".asInstanceOf[request]
-  
-  @js.native
   sealed trait smartyStreet extends StObject
   inline def smartyStreet: smartyStreet = "smartyStreet".asInstanceOf[smartyStreet]
   
@@ -114,6 +102,12 @@ object nodeGeocoderStrings {
     extends StObject
        with Providers
   inline def tomtom: tomtom = "tomtom".asInstanceOf[tomtom]
+  
+  @js.native
+  sealed trait virtualearth
+    extends StObject
+       with Providers
+  inline def virtualearth: virtualearth = "virtualearth".asInstanceOf[virtualearth]
   
   @js.native
   sealed trait yandex

@@ -17,7 +17,7 @@ trait ColumnConfiguration extends StObject {
   var DocumentDataColumnName: ColumnName
   
   /**
-    * The column that provides the document's unique identifier.
+    * The column that provides the document's identifier.
     */
   var DocumentIdColumnName: ColumnName
   

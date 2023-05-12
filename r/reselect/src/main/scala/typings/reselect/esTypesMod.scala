@@ -177,11 +177,12 @@ object esTypesMod {
     */
   type ObjValueTuple[T, KS /* <: js.Array[Any] */, R /* <: js.Array[Any] */] = R
   
-  type OutputParametricSelector[State, Props, Result, Combiner /* <: UnknownFunction */] = (ParametricSelector[State, Props, Result]) & OutputSelectorFields[Combiner]
+  type OutputParametricSelector[State, Props, Result, Combiner /* <: UnknownFunction */, Keys] = (ParametricSelector[State, Props, Result]) & (OutputSelectorFields[Combiner, Keys])
   
-  type OutputSelector[S /* <: SelectorArray */, Result, Combiner /* <: UnknownFunction */, Params /* <: js.Array[Any] */] = (Selector[GetStateFromSelectors[S], Result, Params]) & OutputSelectorFields[Combiner]
+  type OutputSelector[S /* <: SelectorArray */, Result, Combiner /* <: UnknownFunction */, Params /* <: js.Array[Any] */, // MergeParameters<S>
+  Keys] = (Selector[GetStateFromSelectors[S], Result, Params]) & (OutputSelectorFields[Combiner, Keys])
   
-  trait OutputSelectorFields[Combiner /* <: UnknownFunction */] extends StObject {
+  trait OutputSelectorFields[Combiner /* <: UnknownFunction */, Keys] extends StObject {
     
     /** An array of the input selectors */
     var dependencies: SelectorArray
@@ -190,7 +191,7 @@ object esTypesMod {
     def lastResult(): ReturnType[Combiner]
     
     /** The same function, memoized */
-    var memoizedResultFunc: Combiner
+    var memoizedResultFunc: Combiner & Keys
     
     /** Counts the number of times the output has been recalculated */
     def recomputations(): Double
@@ -203,20 +204,20 @@ object esTypesMod {
   }
   object OutputSelectorFields {
     
-    inline def apply[Combiner /* <: UnknownFunction */](
+    inline def apply[Combiner /* <: UnknownFunction */, Keys](
       dependencies: SelectorArray,
       lastResult: () => ReturnType[Combiner],
-      memoizedResultFunc: Combiner,
+      memoizedResultFunc: Combiner & Keys,
       recomputations: () => Double,
       resetRecomputations: () => Double,
       resultFunc: Combiner
-    ): OutputSelectorFields[Combiner] = {
+    ): OutputSelectorFields[Combiner, Keys] = {
       val __obj = js.Dynamic.literal(dependencies = dependencies.asInstanceOf[js.Any], lastResult = js.Any.fromFunction0(lastResult), memoizedResultFunc = memoizedResultFunc.asInstanceOf[js.Any], recomputations = js.Any.fromFunction0(recomputations), resetRecomputations = js.Any.fromFunction0(resetRecomputations), resultFunc = resultFunc.asInstanceOf[js.Any])
-      __obj.asInstanceOf[OutputSelectorFields[Combiner]]
+      __obj.asInstanceOf[OutputSelectorFields[Combiner, Keys]]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: OutputSelectorFields[?], Combiner /* <: UnknownFunction */] (val x: Self & OutputSelectorFields[Combiner]) extends AnyVal {
+    implicit open class MutableBuilder[Self <: OutputSelectorFields[?, ?], Combiner /* <: UnknownFunction */, Keys] (val x: Self & (OutputSelectorFields[Combiner, Keys])) extends AnyVal {
       
       inline def setDependencies(value: SelectorArray): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
       
@@ -224,7 +225,7 @@ object esTypesMod {
       
       inline def setLastResult(value: () => ReturnType[Combiner]): Self = StObject.set(x, "lastResult", js.Any.fromFunction0(value))
       
-      inline def setMemoizedResultFunc(value: Combiner): Self = StObject.set(x, "memoizedResultFunc", value.asInstanceOf[js.Any])
+      inline def setMemoizedResultFunc(value: Combiner & Keys): Self = StObject.set(x, "memoizedResultFunc", value.asInstanceOf[js.Any])
       
       inline def setRecomputations(value: () => Double): Self = StObject.set(x, "recomputations", js.Any.fromFunction0(value))
       
@@ -245,6 +246,17 @@ object esTypesMod {
     * Source: https://stackoverflow.com/a/55128956/62937
     */
   type Push[T /* <: js.Array[Any] */, V] = /* import warning: importer.ImportType#apply c repeated non-array type: T */ js.Array[T]
+  
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+    * TS definition: {{{
+    reselect.reselect/es/types.Tail<S> extends [unknown] ? S : reselect.reselect/es/types.Tail<S> extends std.Array<std.Array<unknown>> ? reselect.reselect/es/types.ReverseHead<reselect.reselect/es/types.Tail<S>> : never
+    }}}
+    */
+  type ReverseHead[S /* <: js.Array[js.Array[Any]] */] = S
+  
+  type ReverseTail[S] = _ReverseTail[_ReverseTail[S]]
   
   /** NOTE: Conditional type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
@@ -293,4 +305,13 @@ object esTypesMod {
     
     def apply(args: Any*): Any = js.native
   }
+  
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+    * TS definition: {{{
+    reselect.reselect/es/types.Tail<S> extends [unknown] ? [reselect.reselect/es/types.Head<S>] : reselect.reselect/es/types.Tail<S> extends std.Array<unknown> ? [reselect.reselect/es/types.Head<S>, ...reselect.reselect/es/types._ReverseTail<reselect.reselect/es/types.Tail<S>>] : never
+    }}}
+    */
+  type _ReverseTail[S] = js.Array[Head[S]]
 }

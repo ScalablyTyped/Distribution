@@ -12,6 +12,11 @@ trait DescribeBotResponse extends StObject {
   var botId: js.UndefOr[Id] = js.undefined
   
   /**
+    * The list of bots in the network that was described.
+    */
+  var botMembers: js.UndefOr[BotMembers] = js.undefined
+  
+  /**
     * The name of the bot.
     */
   var botName: js.UndefOr[Name] = js.undefined
@@ -20,6 +25,11 @@ trait DescribeBotResponse extends StObject {
     * The current status of the bot. When the status is Available the bot is ready to be used in conversations with users.
     */
   var botStatus: js.UndefOr[BotStatus] = js.undefined
+  
+  /**
+    * The type of the bot that was described.
+    */
+  var botType: js.UndefOr[BotType] = js.undefined
   
   /**
     * A timestamp of the date and time that the bot was created.
@@ -35,6 +45,11 @@ trait DescribeBotResponse extends StObject {
     * The description of the bot. 
     */
   var description: js.UndefOr[Description] = js.undefined
+  
+  /**
+    * If the botStatus is Failed, this contains a list of reasons that the bot couldn't be built.
+    */
+  var failureReasons: js.UndefOr[FailureReasons] = js.undefined
   
   /**
     * The maximum time in seconds that Amazon Lex retains the data gathered in a conversation.
@@ -65,6 +80,12 @@ object DescribeBotResponse {
     
     inline def setBotIdUndefined: Self = StObject.set(x, "botId", js.undefined)
     
+    inline def setBotMembers(value: BotMembers): Self = StObject.set(x, "botMembers", value.asInstanceOf[js.Any])
+    
+    inline def setBotMembersUndefined: Self = StObject.set(x, "botMembers", js.undefined)
+    
+    inline def setBotMembersVarargs(value: BotMember*): Self = StObject.set(x, "botMembers", js.Array(value*))
+    
     inline def setBotName(value: Name): Self = StObject.set(x, "botName", value.asInstanceOf[js.Any])
     
     inline def setBotNameUndefined: Self = StObject.set(x, "botName", js.undefined)
@@ -72,6 +93,10 @@ object DescribeBotResponse {
     inline def setBotStatus(value: BotStatus): Self = StObject.set(x, "botStatus", value.asInstanceOf[js.Any])
     
     inline def setBotStatusUndefined: Self = StObject.set(x, "botStatus", js.undefined)
+    
+    inline def setBotType(value: BotType): Self = StObject.set(x, "botType", value.asInstanceOf[js.Any])
+    
+    inline def setBotTypeUndefined: Self = StObject.set(x, "botType", js.undefined)
     
     inline def setCreationDateTime(value: js.Date): Self = StObject.set(x, "creationDateTime", value.asInstanceOf[js.Any])
     
@@ -84,6 +109,12 @@ object DescribeBotResponse {
     inline def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    
+    inline def setFailureReasons(value: FailureReasons): Self = StObject.set(x, "failureReasons", value.asInstanceOf[js.Any])
+    
+    inline def setFailureReasonsUndefined: Self = StObject.set(x, "failureReasons", js.undefined)
+    
+    inline def setFailureReasonsVarargs(value: FailureReason*): Self = StObject.set(x, "failureReasons", js.Array(value*))
     
     inline def setIdleSessionTTLInSeconds(value: SessionTTL): Self = StObject.set(x, "idleSessionTTLInSeconds", value.asInstanceOf[js.Any])
     

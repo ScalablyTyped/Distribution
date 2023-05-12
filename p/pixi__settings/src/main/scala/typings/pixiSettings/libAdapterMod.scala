@@ -3,6 +3,7 @@ package typings.pixiSettings
 import typings.pixiSettings.anon.TypeofWebGLRenderingConte
 import typings.pixiSettings.anon.UserAgent
 import typings.pixiSettings.libIcanvasMod.ICanvas
+import typings.std.Document
 import typings.std.FontFaceSet
 import typings.std.RequestInfo
 import typings.std.RequestInit
@@ -32,12 +33,17 @@ object libAdapterMod {
     /** Returns the current base URL For browser environments this is either the document.baseURI or window.location.href */
     def getBaseUrl(): String = js.native
     
+    /** Returns a 2D rendering context. */
+    def getCanvasRenderingContext2D(): js.Object = js.native
+    
     def getFontFaceSet(): FontFaceSet | Null = js.native
     
     /** Returns a partial implementation of the browsers window.navigator */
     def getNavigator(): UserAgent = js.native
     
-    /** Returns a webgl rendering context. */
+    /** Returns a WebGL rendering context. */
     def getWebGLRenderingContext(): TypeofWebGLRenderingConte = js.native
+    
+    def parseXML(xml: String): Document = js.native
   }
 }

@@ -86,6 +86,8 @@ object buildSrcSubscriberMod {
       param1: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.pubsub.v1.IReceivedMessage */ Any
     ) = this()
     
+    /* private */ var _ackFailed: Any = js.native
+    
     /* private */ var _handled: Any = js.native
     
     /* private */ var _length: Any = js.native
@@ -103,6 +105,14 @@ object buildSrcSubscriberMod {
       * ```
       */
     def ack(): Unit = js.native
+    
+    /**
+      * Sets this message's exactly once delivery acks to permanent failure. This is
+      * meant for internal library use only.
+      *
+      * @private
+      */
+    def ackFailed(error: AckError): Unit = js.native
     
     var ackId: String = js.native
     
@@ -199,6 +209,8 @@ object buildSrcSubscriberMod {
       * @private
       */
     /* private */ var _constructSpan: Any = js.native
+    
+    /* private */ var _discardMessage: Any = js.native
     
     /* private */ var _histogram: Any = js.native
     

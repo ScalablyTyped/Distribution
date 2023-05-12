@@ -14,12 +14,8 @@ open class ClientSession () extends TypedEventEmitter[ClientSessionEvents] {
   
   /**
     * Aborts the currently active transaction in this session.
-    *
-    * @param callback - An optional callback, a Promise will be returned if none is provided
     */
   def abortTransaction(): js.Promise[Document] = js.native
-  /** @deprecated Callbacks are deprecated and will be removed in the next major version. See [mongodb-legacy](https://github.com/mongodb-js/nodejs-mongodb-legacy) for migration assistance */
-  def abortTransaction(callback: Callback[Document]): Unit = js.native
   
   /**
     * Advances the clusterTime for a ClientSession to the provided clusterTime of another ClientSession
@@ -41,12 +37,8 @@ open class ClientSession () extends TypedEventEmitter[ClientSessionEvents] {
   
   /**
     * Commits the currently active transaction in this session.
-    *
-    * @param callback - An optional callback, a Promise will be returned if none is provided
     */
   def commitTransaction(): js.Promise[Document] = js.native
-  /** @deprecated Callbacks are deprecated and will be removed in the next major version. See [mongodb-legacy](https://github.com/mongodb-js/nodejs-mongodb-legacy) for migration assistance */
-  def commitTransaction(callback: Callback[Document]): Unit = js.native
   
   /* Excluded from this release type: owner */
   var defaultTransactionOptions: TransactionOptions = js.native
@@ -55,14 +47,9 @@ open class ClientSession () extends TypedEventEmitter[ClientSessionEvents] {
     * Ends this session on the server
     *
     * @param options - Optional settings. Currently reserved for future use
-    * @param callback - Optional callback for completion of this operation
     */
   def endSession(): js.Promise[Unit] = js.native
-  /** @deprecated Callbacks are deprecated and will be removed in the next major version. See [mongodb-legacy](https://github.com/mongodb-js/nodejs-mongodb-legacy) for migration assistance */
-  def endSession(callback: Callback[Unit]): Unit = js.native
   def endSession(options: EndSessionOptions): js.Promise[Unit] = js.native
-  /** @deprecated Callbacks are deprecated and will be removed in the next major version. See [mongodb-legacy](https://github.com/mongodb-js/nodejs-mongodb-legacy) for migration assistance */
-  def endSession(options: EndSessionOptions, callback: Callback[Unit]): Unit = js.native
   
   /**
     * Used to determine if this session equals another

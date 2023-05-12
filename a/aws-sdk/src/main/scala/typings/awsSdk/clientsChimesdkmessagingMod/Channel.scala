@@ -32,6 +32,11 @@ trait Channel extends StObject {
   var ElasticChannelConfiguration: js.UndefOr[typings.awsSdk.clientsChimesdkmessagingMod.ElasticChannelConfiguration] = js.undefined
   
   /**
+    * Settings that control when a channel expires.
+    */
+  var ExpirationSettings: js.UndefOr[typings.awsSdk.clientsChimesdkmessagingMod.ExpirationSettings] = js.undefined
+  
+  /**
     * The time at which a member sent the last message in the channel.
     */
   var LastMessageTimestamp: js.UndefOr[js.Date] = js.undefined
@@ -90,6 +95,10 @@ object Channel {
     inline def setElasticChannelConfiguration(value: ElasticChannelConfiguration): Self = StObject.set(x, "ElasticChannelConfiguration", value.asInstanceOf[js.Any])
     
     inline def setElasticChannelConfigurationUndefined: Self = StObject.set(x, "ElasticChannelConfiguration", js.undefined)
+    
+    inline def setExpirationSettings(value: ExpirationSettings): Self = StObject.set(x, "ExpirationSettings", value.asInstanceOf[js.Any])
+    
+    inline def setExpirationSettingsUndefined: Self = StObject.set(x, "ExpirationSettings", js.undefined)
     
     inline def setLastMessageTimestamp(value: js.Date): Self = StObject.set(x, "LastMessageTimestamp", value.asInstanceOf[js.Any])
     

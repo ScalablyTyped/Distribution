@@ -8,7 +8,6 @@ import typings.gestalt.gestaltStrings.basicCentered
 import typings.gestalt.gestaltStrings.flexible
 import typings.gestalt.gestaltStrings.serverRenderedFlexible
 import typings.gestalt.gestaltStrings.uniformRow
-import typings.react.mod.ComponentType
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,11 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait MasonryProps[T] extends StObject {
   
-  var Item: ComponentType[Data[T]]
+  var _batchPaints: js.UndefOr[Boolean] = js.undefined
   
   var columnWidth: js.UndefOr[Double] = js.undefined
-  
-  var flexible: js.UndefOr[Boolean] = js.undefined
   
   var gutterWidth: js.UndefOr[Double] = js.undefined
   
@@ -32,9 +29,11 @@ trait MasonryProps[T] extends StObject {
     `false` | (js.Function1[/* _arg */ js.UndefOr[From], js.UndefOr[Boolean | js.Object]])
   ] = js.undefined
   
-  var measurementStore: js.UndefOr[Any] = js.undefined
+  var measurementStore: js.UndefOr[MeasurementStore[T, Any]] = js.undefined
   
   var minCols: js.UndefOr[Double] = js.undefined
+  
+  def renderItem(args: Data[T]): Node
   
   var scrollContainer: js.UndefOr[js.Function0[HTMLElement]] = js.undefined
   
@@ -42,12 +41,14 @@ trait MasonryProps[T] extends StObject {
   
   var virtualBoundsTop: js.UndefOr[Double] = js.undefined
   
+  var virtualBufferFactor: js.UndefOr[Double] = js.undefined
+  
   var virtualize: js.UndefOr[Boolean] = js.undefined
 }
 object MasonryProps {
   
-  inline def apply[T](Item: ComponentType[Data[T]], items: js.Array[T]): MasonryProps[T] = {
-    val __obj = js.Dynamic.literal(Item = Item.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any])
+  inline def apply[T](items: js.Array[T], renderItem: Data[T] => Node): MasonryProps[T] = {
+    val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], renderItem = js.Any.fromFunction1(renderItem))
     __obj.asInstanceOf[MasonryProps[T]]
   }
   
@@ -58,15 +59,9 @@ object MasonryProps {
     
     inline def setColumnWidthUndefined: Self = StObject.set(x, "columnWidth", js.undefined)
     
-    inline def setFlexible(value: Boolean): Self = StObject.set(x, "flexible", value.asInstanceOf[js.Any])
-    
-    inline def setFlexibleUndefined: Self = StObject.set(x, "flexible", js.undefined)
-    
     inline def setGutterWidth(value: Double): Self = StObject.set(x, "gutterWidth", value.asInstanceOf[js.Any])
     
     inline def setGutterWidthUndefined: Self = StObject.set(x, "gutterWidth", js.undefined)
-    
-    inline def setItem(value: ComponentType[Data[T]]): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
     
     inline def setItems(value: js.Array[T]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
@@ -82,13 +77,15 @@ object MasonryProps {
     
     inline def setLoadItemsUndefined: Self = StObject.set(x, "loadItems", js.undefined)
     
-    inline def setMeasurementStore(value: Any): Self = StObject.set(x, "measurementStore", value.asInstanceOf[js.Any])
+    inline def setMeasurementStore(value: MeasurementStore[T, Any]): Self = StObject.set(x, "measurementStore", value.asInstanceOf[js.Any])
     
     inline def setMeasurementStoreUndefined: Self = StObject.set(x, "measurementStore", js.undefined)
     
     inline def setMinCols(value: Double): Self = StObject.set(x, "minCols", value.asInstanceOf[js.Any])
     
     inline def setMinColsUndefined: Self = StObject.set(x, "minCols", js.undefined)
+    
+    inline def setRenderItem(value: Data[T] => Node): Self = StObject.set(x, "renderItem", js.Any.fromFunction1(value))
     
     inline def setScrollContainer(value: () => HTMLElement): Self = StObject.set(x, "scrollContainer", js.Any.fromFunction0(value))
     
@@ -102,8 +99,16 @@ object MasonryProps {
     
     inline def setVirtualBoundsTopUndefined: Self = StObject.set(x, "virtualBoundsTop", js.undefined)
     
+    inline def setVirtualBufferFactor(value: Double): Self = StObject.set(x, "virtualBufferFactor", value.asInstanceOf[js.Any])
+    
+    inline def setVirtualBufferFactorUndefined: Self = StObject.set(x, "virtualBufferFactor", js.undefined)
+    
     inline def setVirtualize(value: Boolean): Self = StObject.set(x, "virtualize", value.asInstanceOf[js.Any])
     
     inline def setVirtualizeUndefined: Self = StObject.set(x, "virtualize", js.undefined)
+    
+    inline def set_batchPaints(value: Boolean): Self = StObject.set(x, "_batchPaints", value.asInstanceOf[js.Any])
+    
+    inline def set_batchPaintsUndefined: Self = StObject.set(x, "_batchPaints", js.undefined)
   }
 }

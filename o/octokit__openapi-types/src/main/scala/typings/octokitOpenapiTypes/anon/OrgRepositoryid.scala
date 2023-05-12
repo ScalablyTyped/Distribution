@@ -6,20 +6,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait OrgRepositoryid extends StObject {
   
-  /** The organization name. The name is not case sensitive. */
   @JSName("org")
   var org_ : /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['org'] */ js.Any
   
-  /** The unique identifier of the repository. */
   var repository_id: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['repository-id'] */ js.Any
+  
+  var required_workflow_id: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['required-workflow-id'] */ js.Any
 }
 object OrgRepositoryid {
   
   inline def apply(
     org_ : /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['org'] */ js.Any,
-    repository_id: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['repository-id'] */ js.Any
+    repository_id: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['repository-id'] */ js.Any,
+    required_workflow_id: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['required-workflow-id'] */ js.Any
   ): OrgRepositoryid = {
-    val __obj = js.Dynamic.literal(repository_id = repository_id.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(repository_id = repository_id.asInstanceOf[js.Any], required_workflow_id = required_workflow_id.asInstanceOf[js.Any])
     __obj.updateDynamic("org")(org_.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrgRepositoryid]
   }
@@ -34,5 +35,9 @@ object OrgRepositoryid {
     inline def setRepository_id(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['repository-id'] */ js.Any
     ): Self = StObject.set(x, "repository_id", value.asInstanceOf[js.Any])
+    
+    inline def setRequired_workflow_id(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['required-workflow-id'] */ js.Any
+    ): Self = StObject.set(x, "required_workflow_id", value.asInstanceOf[js.Any])
   }
 }

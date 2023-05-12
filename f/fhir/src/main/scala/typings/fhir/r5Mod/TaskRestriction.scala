@@ -9,6 +9,7 @@ trait TaskRestriction
      with BackboneElement {
   
   /**
+    * This is distinct from Task.executionPeriod. ExecutionPeriod indicates when the task needs to be initiated, while Task.restriction.period specifies the subset of the overall authorization that this period covers. For example, a MedicationRequest with an overall effective period of 1 year might have a Task whose restriction.period is 2 months (i.e. satisfy 2 months of medication therapy), while the execution period might be 'between now and 5 days from now' - i.e. If you say yes to this, then you're agreeing to supply medication for that 2 month period within the next 5 days.
     * Note that period.high is the due date representing the time by which the task should be completed.
     */
   var period: js.UndefOr[Period] = js.undefined

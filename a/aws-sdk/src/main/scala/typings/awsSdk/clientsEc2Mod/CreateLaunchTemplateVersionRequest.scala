@@ -32,6 +32,11 @@ trait CreateLaunchTemplateVersionRequest extends StObject {
   var LaunchTemplateName: js.UndefOr[typings.awsSdk.clientsEc2Mod.LaunchTemplateName] = js.undefined
   
   /**
+    * If true, and if a Systems Manager parameter is specified for ImageId, the AMI ID is displayed in the response for imageID. For more information, see Use a Systems Manager parameter instead of an AMI ID in the Amazon Elastic Compute Cloud User Guide. Default: false 
+    */
+  var ResolveAlias: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * The version number of the launch template version on which to base the new version. The new version inherits the same launch parameters as the source version, except for parameters that you specify in LaunchTemplateData. Snapshots applied to the block device mapping are ignored when creating a new version unless they are explicitly included.
     */
   var SourceVersion: js.UndefOr[String] = js.undefined
@@ -68,6 +73,10 @@ object CreateLaunchTemplateVersionRequest {
     inline def setLaunchTemplateName(value: LaunchTemplateName): Self = StObject.set(x, "LaunchTemplateName", value.asInstanceOf[js.Any])
     
     inline def setLaunchTemplateNameUndefined: Self = StObject.set(x, "LaunchTemplateName", js.undefined)
+    
+    inline def setResolveAlias(value: Boolean): Self = StObject.set(x, "ResolveAlias", value.asInstanceOf[js.Any])
+    
+    inline def setResolveAliasUndefined: Self = StObject.set(x, "ResolveAlias", js.undefined)
     
     inline def setSourceVersion(value: String): Self = StObject.set(x, "SourceVersion", value.asInstanceOf[js.Any])
     

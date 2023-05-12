@@ -17,7 +17,7 @@ trait DescribeLedgerResponse extends StObject {
   var CreationDateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The flag that prevents a ledger from being deleted by any user. If not provided on ledger creation, this feature is enabled (true) by default. If deletion protection is enabled, you must first disable it before you can delete the ledger. You can disable it by calling the UpdateLedger operation to set the flag to false.
+    * Specifies whether the ledger is protected from being deleted by any user. If not defined during ledger creation, this feature is enabled (true) by default. If deletion protection is enabled, you must first disable it before you can delete the ledger. You can disable it by calling the UpdateLedger operation to set this parameter to false.
     */
   var DeletionProtection: js.UndefOr[typings.awsSdk.clientsQldbMod.DeletionProtection] = js.undefined
   

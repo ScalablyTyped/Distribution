@@ -12,7 +12,7 @@ open class Col protected () extends Component[VerticalAlign, Any] {
   def this(props: HTMLAttributesidclassName & VerticalAlign) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: HTMLAttributesidclassName & VerticalAlign, context: Any) = this()
 }

@@ -31,7 +31,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class FieldPath protected ()
   extends StObject
-     with eh {
+     with Uh {
   /**
     * Creates a `FieldPath` from the provided field names. If more than one field
     * name is provided, the path will point to a nested field in a document.
@@ -41,7 +41,7 @@ open class FieldPath protected ()
   def this(t: Any*) = this()
   
   /* CompleteClass */
-  var _internalPath: ut = js.native
+  var _internalPath: at = js.native
   
   /**
     * Returns true if this `FieldPath` is equal to the provided one.

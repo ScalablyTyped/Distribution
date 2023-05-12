@@ -1,7 +1,7 @@
 package typings.babylonjs.legacyLegacyMod
 
 import typings.babylonjs.anon.Max
-import typings.babylonjs.physicsPhysicsImpostorMod.IPhysicsEnabledObject
+import typings.babylonjs.physicsV1PhysicsImpostorMod.IPhysicsEnabledObject
 import typings.babylonjs.typesMod.Nullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -901,7 +901,7 @@ object Mesh {
   /**
     * @internal
     */
-  inline def _PhysicsImpostorParser(scene: typings.babylonjs.sceneMod.Scene, physicObject: IPhysicsEnabledObject, jsonObject: Any): typings.babylonjs.physicsPhysicsImpostorMod.PhysicsImpostor = (^.asInstanceOf[js.Dynamic].applyDynamic("_PhysicsImpostorParser")(scene.asInstanceOf[js.Any], physicObject.asInstanceOf[js.Any], jsonObject.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.physicsPhysicsImpostorMod.PhysicsImpostor]
+  inline def _PhysicsImpostorParser(scene: typings.babylonjs.sceneMod.Scene, physicObject: IPhysicsEnabledObject, jsonObject: Any): typings.babylonjs.physicsV1PhysicsImpostorMod.PhysicsImpostor = (^.asInstanceOf[js.Dynamic].applyDynamic("_PhysicsImpostorParser")(scene.asInstanceOf[js.Any], physicObject.asInstanceOf[js.Any], jsonObject.asInstanceOf[js.Any])).asInstanceOf[typings.babylonjs.physicsV1PhysicsImpostorMod.PhysicsImpostor]
   
   /**
     * @internal

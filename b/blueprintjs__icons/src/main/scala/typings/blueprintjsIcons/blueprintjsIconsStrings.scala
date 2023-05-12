@@ -1,9 +1,9 @@
 package typings.blueprintjsIcons
 
-import typings.blueprintjsIcons.libEsmGenerated16pxBlueprintIcons16Mod.BlueprintIcons16Id
-import typings.blueprintjsIcons.libEsmGenerated16pxBlueprintIcons16Mod.BlueprintIcons16Key
-import typings.blueprintjsIcons.libEsmGenerated20pxBlueprintIcons20Mod.BlueprintIcons20Id
-import typings.blueprintjsIcons.libEsmGenerated20pxBlueprintIcons20Mod.BlueprintIcons20Key
+import typings.blueprintjsIcons.libEsmGeneratedIcons16pxBlueprintIcons16Mod.BlueprintIcons16Id
+import typings.blueprintjsIcons.libEsmGeneratedIcons16pxBlueprintIcons16Mod.BlueprintIcons16Key
+import typings.blueprintjsIcons.libEsmGeneratedIcons20pxBlueprintIcons20Mod.BlueprintIcons20Id
+import typings.blueprintjsIcons.libEsmGeneratedIcons20pxBlueprintIcons20Mod.BlueprintIcons20Key
 import typings.blueprintjsIcons.libEsmTypeUtilsSourceUtilitiesMod.StringDigit
 import typings.blueprintjsIcons.libEsmTypeUtilsSourceUtilitiesMod.UpperCaseCharacters
 import typings.blueprintjsIcons.libEsmTypeUtilsSourceUtilitiesMod.WordSeparators
@@ -427,6 +427,13 @@ object blueprintjsIconsStrings {
        with BlueprintIcons16Key
        with BlueprintIcons20Key
   inline def AutomaticUpdates: AutomaticUpdates = "AutomaticUpdates".asInstanceOf[AutomaticUpdates]
+  
+  @js.native
+  sealed trait Axle
+    extends StObject
+       with BlueprintIcons16Key
+       with BlueprintIcons20Key
+  inline def Axle: Axle = "Axle".asInstanceOf[Axle]
   
   @js.native
   sealed trait B
@@ -873,6 +880,13 @@ object blueprintjsIconsStrings {
        with BlueprintIcons16Key
        with BlueprintIcons20Key
   inline def Cross: Cross = "Cross".asInstanceOf[Cross]
+  
+  @js.native
+  sealed trait CrossCircle
+    extends StObject
+       with BlueprintIcons16Key
+       with BlueprintIcons20Key
+  inline def CrossCircle: CrossCircle = "CrossCircle".asInstanceOf[CrossCircle]
   
   @js.native
   sealed trait Crown
@@ -2031,6 +2045,13 @@ object blueprintjsIconsStrings {
   inline def Insert: Insert = "Insert".asInstanceOf[Insert]
   
   @js.native
+  sealed trait Intelligence
+    extends StObject
+       with BlueprintIcons16Key
+       with BlueprintIcons20Key
+  inline def Intelligence: Intelligence = "Intelligence".asInstanceOf[Intelligence]
+  
+  @js.native
   sealed trait Intersection
     extends StObject
        with BlueprintIcons16Key
@@ -2371,6 +2392,13 @@ object blueprintjsIconsStrings {
   inline def Lock: Lock = "Lock".asInstanceOf[Lock]
   
   @js.native
+  sealed trait Locomotive
+    extends StObject
+       with BlueprintIcons16Key
+       with BlueprintIcons20Key
+  inline def Locomotive: Locomotive = "Locomotive".asInstanceOf[Locomotive]
+  
+  @js.native
   sealed trait LogIn
     extends StObject
        with BlueprintIcons16Key
@@ -2536,6 +2564,13 @@ object blueprintjsIconsStrings {
        with BlueprintIcons16Key
        with BlueprintIcons20Key
   inline def ModalFilled: ModalFilled = "ModalFilled".asInstanceOf[ModalFilled]
+  
+  @js.native
+  sealed trait Model
+    extends StObject
+       with BlueprintIcons16Key
+       with BlueprintIcons20Key
+  inline def Model: Model = "Model".asInstanceOf[Model]
   
   @js.native
   sealed trait Moon
@@ -3295,6 +3330,13 @@ object blueprintjsIconsStrings {
   inline def SendToMap: SendToMap = "SendToMap".asInstanceOf[SendToMap]
   
   @js.native
+  sealed trait Sensor
+    extends StObject
+       with BlueprintIcons16Key
+       with BlueprintIcons20Key
+  inline def Sensor: Sensor = "Sensor".asInstanceOf[Sensor]
+  
+  @js.native
   sealed trait SeriesAdd
     extends StObject
        with BlueprintIcons16Key
@@ -3607,6 +3649,20 @@ object blueprintjsIconsStrings {
        with BlueprintIcons16Key
        with BlueprintIcons20Key
   inline def Style: Style = "Style".asInstanceOf[Style]
+  
+  @js.native
+  sealed trait Subscript
+    extends StObject
+       with BlueprintIcons16Key
+       with BlueprintIcons20Key
+  inline def Subscript: Subscript = "Subscript".asInstanceOf[Subscript]
+  
+  @js.native
+  sealed trait Superscript
+    extends StObject
+       with BlueprintIcons16Key
+       with BlueprintIcons20Key
+  inline def Superscript: Superscript = "Superscript".asInstanceOf[Superscript]
   
   @js.native
   sealed trait SwapHorizontal
@@ -4550,6 +4606,13 @@ object blueprintjsIconsStrings {
   inline def `automatic-updates`: `automatic-updates` = "automatic-updates".asInstanceOf[`automatic-updates`]
   
   @js.native
+  sealed trait axle_
+    extends StObject
+       with BlueprintIcons16Id
+       with BlueprintIcons20Id
+  inline def axle_ : axle_ = "axle".asInstanceOf[axle_]
+  
+  @js.native
   sealed trait backlink_
     extends StObject
        with BlueprintIcons16Id
@@ -4975,6 +5038,13 @@ object blueprintjsIconsStrings {
        with BlueprintIcons16Id
        with BlueprintIcons20Id
   inline def `credit-card`: `credit-card` = "credit-card".asInstanceOf[`credit-card`]
+  
+  @js.native
+  sealed trait `cross-circle`
+    extends StObject
+       with BlueprintIcons16Id
+       with BlueprintIcons20Id
+  inline def `cross-circle`: `cross-circle` = "cross-circle".asInstanceOf[`cross-circle`]
   
   @js.native
   sealed trait cross_
@@ -6104,6 +6174,13 @@ object blueprintjsIconsStrings {
   inline def insert_ : insert_ = "insert".asInstanceOf[insert_]
   
   @js.native
+  sealed trait intelligence_
+    extends StObject
+       with BlueprintIcons16Id
+       with BlueprintIcons20Id
+  inline def intelligence_ : intelligence_ = "intelligence".asInstanceOf[intelligence_]
+  
+  @js.native
   sealed trait intersection_
     extends StObject
        with BlueprintIcons16Id
@@ -6426,6 +6503,13 @@ object blueprintjsIconsStrings {
   inline def lock_ : lock_ = "lock".asInstanceOf[lock_]
   
   @js.native
+  sealed trait locomotive_
+    extends StObject
+       with BlueprintIcons16Id
+       with BlueprintIcons20Id
+  inline def locomotive_ : locomotive_ = "locomotive".asInstanceOf[locomotive_]
+  
+  @js.native
   sealed trait `log-in`
     extends StObject
        with BlueprintIcons16Id
@@ -6585,6 +6669,13 @@ object blueprintjsIconsStrings {
        with BlueprintIcons16Id
        with BlueprintIcons20Id
   inline def modal_ : modal_ = "modal".asInstanceOf[modal_]
+  
+  @js.native
+  sealed trait model_
+    extends StObject
+       with BlueprintIcons16Id
+       with BlueprintIcons20Id
+  inline def model_ : model_ = "model".asInstanceOf[model_]
   
   @js.native
   sealed trait moon_
@@ -7308,6 +7399,13 @@ object blueprintjsIconsStrings {
   inline def `send-to-map`: `send-to-map` = "send-to-map".asInstanceOf[`send-to-map`]
   
   @js.native
+  sealed trait sensor_
+    extends StObject
+       with BlueprintIcons16Id
+       with BlueprintIcons20Id
+  inline def sensor_ : sensor_ = "sensor".asInstanceOf[sensor_]
+  
+  @js.native
   sealed trait `series-add`
     extends StObject
        with BlueprintIcons16Id
@@ -7614,6 +7712,20 @@ object blueprintjsIconsStrings {
        with BlueprintIcons16Id
        with BlueprintIcons20Id
   inline def style_ : style_ = "style".asInstanceOf[style_]
+  
+  @js.native
+  sealed trait subscript_
+    extends StObject
+       with BlueprintIcons16Id
+       with BlueprintIcons20Id
+  inline def subscript_ : subscript_ = "subscript".asInstanceOf[subscript_]
+  
+  @js.native
+  sealed trait superscript_
+    extends StObject
+       with BlueprintIcons16Id
+       with BlueprintIcons20Id
+  inline def superscript_ : superscript_ = "superscript".asInstanceOf[superscript_]
   
   @js.native
   sealed trait `swap-horizontal`

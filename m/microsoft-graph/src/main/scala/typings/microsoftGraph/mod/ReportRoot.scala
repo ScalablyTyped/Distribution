@@ -4,9 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ReportRoot
-  extends StObject
-     with Entity {
+trait ReportRoot extends StObject {
   
   var dailyPrintUsageByPrinter: js.UndefOr[NullableOption[js.Array[PrintUsageByPrinter]]] = js.undefined
   
@@ -15,6 +13,8 @@ trait ReportRoot
   var monthlyPrintUsageByPrinter: js.UndefOr[NullableOption[js.Array[PrintUsageByPrinter]]] = js.undefined
   
   var monthlyPrintUsageByUser: js.UndefOr[NullableOption[js.Array[PrintUsageByUser]]] = js.undefined
+  
+  var security: js.UndefOr[NullableOption[SecurityReportsRoot]] = js.undefined
 }
 object ReportRoot {
   
@@ -57,5 +57,11 @@ object ReportRoot {
     inline def setMonthlyPrintUsageByUserUndefined: Self = StObject.set(x, "monthlyPrintUsageByUser", js.undefined)
     
     inline def setMonthlyPrintUsageByUserVarargs(value: PrintUsageByUser*): Self = StObject.set(x, "monthlyPrintUsageByUser", js.Array(value*))
+    
+    inline def setSecurity(value: NullableOption[SecurityReportsRoot]): Self = StObject.set(x, "security", value.asInstanceOf[js.Any])
+    
+    inline def setSecurityNull: Self = StObject.set(x, "security", null)
+    
+    inline def setSecurityUndefined: Self = StObject.set(x, "security", js.undefined)
   }
 }

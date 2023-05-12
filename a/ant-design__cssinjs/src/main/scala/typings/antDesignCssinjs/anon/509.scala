@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.Gap
+import typings.csstype.mod.Property.WebkitMaskAttachment
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,13 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `509` extends StObject {
   
   var value: js.UndefOr[
-    (Gap[Double | String]) | (js.Array[
+    WebkitMaskAttachment | (js.Array[
       (Extract[
-        js.UndefOr[
-          (Gap[Double | String]) | (js.Array[NonNullable[js.UndefOr[Gap[Double | String]]]])
-        ], 
+        js.UndefOr[WebkitMaskAttachment | js.Array[NonNullable[js.UndefOr[WebkitMaskAttachment]]]], 
         String
-      ]) | (NonNullable[js.UndefOr[Gap[Double | String]]])
+      ]) | NonNullable[js.UndefOr[WebkitMaskAttachment]]
     ])
   ] = js.native
 }

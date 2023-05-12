@@ -25,6 +25,13 @@ trait WCSLayer
   var coverageId: String = js.native
   
   /**
+    * Coverage information retrieved from the WCS Server.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#coverageInfo)
+    */
+  var coverageInfo: CoverageInfo = js.native
+  
+  /**
     * Creates a default popup template for the layer, populated with all the fields of the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WCSLayer.html#createPopupTemplate)

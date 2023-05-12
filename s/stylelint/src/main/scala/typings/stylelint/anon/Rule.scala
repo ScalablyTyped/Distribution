@@ -1,10 +1,13 @@
 package typings.stylelint.anon
 
+import typings.stylelint.mod.Plugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Rule extends StObject {
+trait Rule
+  extends StObject
+     with Plugin {
   
   var rule: typings.stylelint.mod.Rule[Any, Any]
   

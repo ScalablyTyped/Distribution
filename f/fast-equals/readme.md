@@ -1,7 +1,7 @@
 
 # Scala.js typings for fast-equals
 
-Typings are for version 4.0.3
+Typings are for version 5.0.1
 
 ## Library description:
 A blazing fast equality comparison, either shallow or deep

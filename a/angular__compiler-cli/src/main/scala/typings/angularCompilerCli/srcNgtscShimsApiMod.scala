@@ -1,75 +1,12 @@
 package typings.angularCompilerCli
 
 import typings.angularCompilerCli.srcNgtscFileSystemSrcTypesMod.AbsoluteFsPath
-import typings.std.Map
 import typings.typescript.mod.SourceFile
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object srcNgtscShimsApiMod {
-  
-  trait FactoryInfo extends StObject {
-    
-    var moduleSymbols: Map[String, ModuleInfo]
-    
-    var sourceFilePath: String
-  }
-  object FactoryInfo {
-    
-    inline def apply(moduleSymbols: Map[String, ModuleInfo], sourceFilePath: String): FactoryInfo = {
-      val __obj = js.Dynamic.literal(moduleSymbols = moduleSymbols.asInstanceOf[js.Any], sourceFilePath = sourceFilePath.asInstanceOf[js.Any])
-      __obj.asInstanceOf[FactoryInfo]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: FactoryInfo] (val x: Self) extends AnyVal {
-      
-      inline def setModuleSymbols(value: Map[String, ModuleInfo]): Self = StObject.set(x, "moduleSymbols", value.asInstanceOf[js.Any])
-      
-      inline def setSourceFilePath(value: String): Self = StObject.set(x, "sourceFilePath", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait FactoryTracker extends StObject {
-    
-    val sourceInfo: Map[String, FactoryInfo]
-    
-    def track(sf: SourceFile, moduleInfo: ModuleInfo): Unit
-  }
-  object FactoryTracker {
-    
-    inline def apply(sourceInfo: Map[String, FactoryInfo], track: (SourceFile, ModuleInfo) => Unit): FactoryTracker = {
-      val __obj = js.Dynamic.literal(sourceInfo = sourceInfo.asInstanceOf[js.Any], track = js.Any.fromFunction2(track))
-      __obj.asInstanceOf[FactoryTracker]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: FactoryTracker] (val x: Self) extends AnyVal {
-      
-      inline def setSourceInfo(value: Map[String, FactoryInfo]): Self = StObject.set(x, "sourceInfo", value.asInstanceOf[js.Any])
-      
-      inline def setTrack(value: (SourceFile, ModuleInfo) => Unit): Self = StObject.set(x, "track", js.Any.fromFunction2(value))
-    }
-  }
-  
-  trait ModuleInfo extends StObject {
-    
-    var name: String
-  }
-  object ModuleInfo {
-    
-    inline def apply(name: String): ModuleInfo = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-      __obj.asInstanceOf[ModuleInfo]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: ModuleInfo] (val x: Self) extends AnyVal {
-      
-      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-    }
-  }
   
   @js.native
   trait PerFileShimGenerator extends StObject {

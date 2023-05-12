@@ -27,6 +27,11 @@ trait AppDetails extends StObject {
   var DomainId: js.UndefOr[typings.awsSdk.clientsSagemakerMod.DomainId] = js.undefined
   
   /**
+    * The name of the space.
+    */
+  var SpaceName: js.UndefOr[typings.awsSdk.clientsSagemakerMod.SpaceName] = js.undefined
+  
+  /**
     * The status.
     */
   var Status: js.UndefOr[AppStatus] = js.undefined
@@ -61,6 +66,10 @@ object AppDetails {
     inline def setDomainId(value: DomainId): Self = StObject.set(x, "DomainId", value.asInstanceOf[js.Any])
     
     inline def setDomainIdUndefined: Self = StObject.set(x, "DomainId", js.undefined)
+    
+    inline def setSpaceName(value: SpaceName): Self = StObject.set(x, "SpaceName", value.asInstanceOf[js.Any])
+    
+    inline def setSpaceNameUndefined: Self = StObject.set(x, "SpaceName", js.undefined)
     
     inline def setStatus(value: AppStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     

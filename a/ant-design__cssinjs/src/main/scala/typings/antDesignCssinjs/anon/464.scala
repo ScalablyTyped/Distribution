@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.MinWidth
+import typings.csstype.mod.Property.WebkitMaskRepeatX
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,13 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `464` extends StObject {
   
   var value: js.UndefOr[
-    (MinWidth[Double | String]) | (js.Array[
+    WebkitMaskRepeatX | (js.Array[
       (Extract[
-        js.UndefOr[
-          (MinWidth[Double | String]) | (js.Array[NonNullable[js.UndefOr[MinWidth[Double | String]]]])
-        ], 
+        js.UndefOr[WebkitMaskRepeatX | js.Array[NonNullable[js.UndefOr[WebkitMaskRepeatX]]]], 
         String
-      ]) | (NonNullable[js.UndefOr[MinWidth[Double | String]]])
+      ]) | NonNullable[js.UndefOr[WebkitMaskRepeatX]]
     ])
   ] = js.native
 }

@@ -3,7 +3,8 @@ package typings.blueprintjsCore
 import org.scalablytyped.runtime.StringDictionary
 import typings.blueprintjsCore.blueprintjsCoreBooleans.`false`
 import typings.blueprintjsCore.libEsmCommonIntentMod.Intent
-import typings.blueprintjsIcons.libEsmGenerated16pxBlueprintIcons16Mod.BlueprintIcons16Id
+import typings.blueprintjsIcons.libEsmGeneratedIcons16pxBlueprintIcons16Mod.BlueprintIcons16Id
+import typings.react.mod.FocusEvent
 import typings.react.mod.FormEvent
 import typings.react.mod.FormEventHandler
 import typings.react.mod.HTMLAttributes
@@ -12,7 +13,7 @@ import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactNode
 import typings.react.mod.Ref
-import typings.react.mod.global.JSX.Element
+import typings.std.Element
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import typings.std.HTMLInputElement
@@ -35,15 +36,7 @@ object libEsmCommonPropsMod {
   inline def removeNonHTMLProps(props: StringDictionary[Any], invalidProps: js.Array[String], shouldMerge: Boolean): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("removeNonHTMLProps")(props.asInstanceOf[js.Any], invalidProps.asInstanceOf[js.Any], shouldMerge.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   inline def removeNonHTMLProps(props: StringDictionary[Any], invalidProps: Unit, shouldMerge: Boolean): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("removeNonHTMLProps")(props.asInstanceOf[js.Any], invalidProps.asInstanceOf[js.Any], shouldMerge.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   
-  type ActionProps = IActionProps
-  
-  type ControlledProps2 = IControlledProps2
-  
-  type HTMLDivProps = HTMLAttributes[HTMLDivElement]
-  
-  type HTMLInputProps = InputHTMLAttributes[HTMLInputElement]
-  
-  trait IActionProps
+  trait ActionProps[T /* <: HTMLElement */]
     extends StObject
        with IIntentProps
        with IProps {
@@ -55,20 +48,23 @@ object libEsmCommonPropsMod {
     var icon: js.UndefOr[BlueprintIcons16Id | MaybeElement] = js.undefined
     
     /** Click event handler. */
-    var onClick: js.UndefOr[js.Function1[/* event */ MouseEvent[HTMLElement, NativeMouseEvent], Unit]] = js.undefined
+    var onClick: js.UndefOr[js.Function1[/* event */ MouseEvent[T, NativeMouseEvent], Unit]] = js.undefined
+    
+    /** Focus event handler. */
+    var onFocus: js.UndefOr[js.Function1[/* event */ FocusEvent[T, Element], Unit]] = js.undefined
     
     /** Action text. Can be any single React renderable. */
     var text: js.UndefOr[ReactNode] = js.undefined
   }
-  object IActionProps {
+  object ActionProps {
     
-    inline def apply(): IActionProps = {
+    inline def apply[T /* <: HTMLElement */](): ActionProps[T] = {
       val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[IActionProps]
+      __obj.asInstanceOf[ActionProps[T]]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: IActionProps] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: ActionProps[?], T /* <: HTMLElement */] (val x: Self & ActionProps[T]) extends AnyVal {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
@@ -80,15 +76,27 @@ object libEsmCommonPropsMod {
       
       inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
-      inline def setOnClick(value: /* event */ MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: /* event */ MouseEvent[T, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
       inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      
+      inline def setOnFocus(value: /* event */ FocusEvent[T, Element] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      
+      inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
       inline def setText(value: ReactNode): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
       inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     }
   }
+  
+  type ControlledProps2 = IControlledProps2
+  
+  type HTMLDivProps = HTMLAttributes[HTMLDivElement]
+  
+  type HTMLInputProps = InputHTMLAttributes[HTMLInputElement]
+  
+  type IActionProps = ActionProps[HTMLElement]
   
   trait IControlledProps extends StObject {
     
@@ -287,7 +295,7 @@ object libEsmCommonPropsMod {
   
   type LinkProps = ILinkProps
   
-  type MaybeElement = js.UndefOr[Element | `false` | Null]
+  type MaybeElement = js.UndefOr[typings.react.mod.global.JSX.Element | `false` | Null]
   
   type OptionProps = IOptionProps
   

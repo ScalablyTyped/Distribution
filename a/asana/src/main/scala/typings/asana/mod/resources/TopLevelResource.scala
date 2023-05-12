@@ -9,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Base class for a resource accessible via the API. Uses a `Dispatcher` to
   * access the resources.
   * @param {Dispatcher} dispatcher
-  * @constructor
   */
 @js.native
 trait TopLevelResource extends StObject {

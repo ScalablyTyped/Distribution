@@ -12,6 +12,11 @@ trait RootCause extends StObject {
   var LinkedAccount: js.UndefOr[GenericString] = js.undefined
   
   /**
+    * The member account name value that's associated with the cost anomaly.
+    */
+  var LinkedAccountName: js.UndefOr[GenericString] = js.undefined
+  
+  /**
     * The Amazon Web Services Region that's associated with the cost anomaly. 
     */
   var Region: js.UndefOr[GenericString] = js.undefined
@@ -37,6 +42,10 @@ object RootCause {
   implicit open class MutableBuilder[Self <: RootCause] (val x: Self) extends AnyVal {
     
     inline def setLinkedAccount(value: GenericString): Self = StObject.set(x, "LinkedAccount", value.asInstanceOf[js.Any])
+    
+    inline def setLinkedAccountName(value: GenericString): Self = StObject.set(x, "LinkedAccountName", value.asInstanceOf[js.Any])
+    
+    inline def setLinkedAccountNameUndefined: Self = StObject.set(x, "LinkedAccountName", js.undefined)
     
     inline def setLinkedAccountUndefined: Self = StObject.set(x, "LinkedAccount", js.undefined)
     

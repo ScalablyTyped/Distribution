@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@wordpress/data" : "9.3.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@wordpress/data" : "9.3.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

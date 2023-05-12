@@ -6,7 +6,7 @@ import typings.maplibreGl.anon.DataHeight
 import typings.maplibreGl.anon.Delegates
 import typings.maplibreGl.anon.Filter
 import typings.maplibreGl.anon.PartialStyleImageMetadata
-import typings.maplibreGl.anon.`5`
+import typings.maplibreGl.anon.`8`
 import typings.maplibreGl.anon.diffbooleanundefinedStyle
 import typings.maplibreGl.maplibreGlStrings.boxzoomcancel
 import typings.maplibreGl.maplibreGlStrings.boxzoomend
@@ -418,8 +418,8 @@ open class Map protected () extends Camera {
   	 * @see [Add a vector tile source](https://maplibre.org/maplibre-gl-js-docs/example/vector-source/)
   	 * @see [Add a WMS source](https://maplibre.org/maplibre-gl-js-docs/example/wms/)
   	 */
-  def addLayer(layer: LayerSpecification & `5`): this.type = js.native
-  def addLayer(layer: LayerSpecification & `5`, beforeId: String): this.type = js.native
+  def addLayer(layer: LayerSpecification & `8`): this.type = js.native
+  def addLayer(layer: LayerSpecification & `8`, beforeId: String): this.type = js.native
   def addLayer(layer: CustomLayerInterface): this.type = js.native
   def addLayer(layer: CustomLayerInterface, beforeId: String): this.type = js.native
   

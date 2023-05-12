@@ -23,8 +23,7 @@ object distTypesSsoMod {
     def this(configuration: SSOClientConfig) = this()
     
     /**
-      * <p>Returns the STS short-term credentials for a given role name that is assigned to the
-      *       user.</p>
+      * @see {@link GetRoleCredentialsCommand}
       */
     def getRoleCredentials(args: GetRoleCredentialsCommandInput): js.Promise[GetRoleCredentialsCommandOutput] = js.native
     def getRoleCredentials(
@@ -39,7 +38,7 @@ object distTypesSsoMod {
     ): Unit = js.native
     
     /**
-      * <p>Lists all roles that are assigned to the user for a given AWS account.</p>
+      * @see {@link ListAccountRolesCommand}
       */
     def listAccountRoles(args: ListAccountRolesCommandInput): js.Promise[ListAccountRolesCommandOutput] = js.native
     def listAccountRoles(
@@ -54,9 +53,7 @@ object distTypesSsoMod {
     ): Unit = js.native
     
     /**
-      * <p>Lists all AWS accounts assigned to the user. These AWS accounts are assigned by the
-      *       administrator of the account. For more information, see <a href="https://docs.aws.amazon.com/singlesignon/latest/userguide/useraccess.html#assignusers">Assign User Access</a> in the <i>IAM Identity Center User Guide</i>. This operation
-      *       returns a paginated response.</p>
+      * @see {@link ListAccountsCommand}
       */
     def listAccounts(args: ListAccountsCommandInput): js.Promise[ListAccountsCommandOutput] = js.native
     def listAccounts(
@@ -71,22 +68,7 @@ object distTypesSsoMod {
     ): Unit = js.native
     
     /**
-      * <p>Removes the locally stored SSO tokens from the client-side cache and sends an API call to
-      *       the IAM Identity Center service to invalidate the corresponding server-side IAM Identity Center sign in
-      *       session.</p>
-      *
-      *          <note>
-      *             <p>If a user uses IAM Identity Center to access the AWS CLI, the user’s IAM Identity Center sign in session is
-      *         used to obtain an IAM session, as specified in the corresponding IAM Identity Center permission set.
-      *         More specifically, IAM Identity Center assumes an IAM role in the target account on behalf of the user,
-      *         and the corresponding temporary AWS credentials are returned to the client.</p>
-      *
-      *             <p>After user logout, any existing IAM role sessions that were created by using IAM Identity Center
-      *         permission sets continue based on the duration configured in the permission set.
-      *         For more information, see <a href="https://docs.aws.amazon.com/singlesignon/latest/userguide/authconcept.html">User
-      *           authentications</a> in the <i>IAM Identity Center User
-      *         Guide</i>.</p>
-      *          </note>
+      * @see {@link LogoutCommand}
       */
     def logout(args: LogoutCommandInput): js.Promise[LogoutCommandOutput] = js.native
     def logout(

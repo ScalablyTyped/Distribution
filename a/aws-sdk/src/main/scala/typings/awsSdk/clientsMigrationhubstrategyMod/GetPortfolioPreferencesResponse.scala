@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetPortfolioPreferencesResponse extends StObject {
   
   /**
+    * The classification for application component types.
+    */
+  var applicationMode: js.UndefOr[ApplicationMode] = js.undefined
+  
+  /**
     *  The transformation preferences for non-database applications. 
     */
   var applicationPreferences: js.UndefOr[ApplicationPreferences] = js.undefined
@@ -30,6 +35,10 @@ object GetPortfolioPreferencesResponse {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: GetPortfolioPreferencesResponse] (val x: Self) extends AnyVal {
+    
+    inline def setApplicationMode(value: ApplicationMode): Self = StObject.set(x, "applicationMode", value.asInstanceOf[js.Any])
+    
+    inline def setApplicationModeUndefined: Self = StObject.set(x, "applicationMode", js.undefined)
     
     inline def setApplicationPreferences(value: ApplicationPreferences): Self = StObject.set(x, "applicationPreferences", value.asInstanceOf[js.Any])
     

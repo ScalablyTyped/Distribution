@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PlacementGroupConfig extends StObject {
   
   /**
-    * Role of the instance in the cluster. Starting with Amazon EMR version 5.23.0, the only supported instance role is MASTER.
+    * Role of the instance in the cluster. Starting with Amazon EMR release 5.23.0, the only supported instance role is MASTER.
     */
   var InstanceRole: InstanceRoleType
   
   /**
-    * EC2 Placement Group strategy associated with instance role. Starting with Amazon EMR version 5.23.0, the only supported placement strategy is SPREAD for the MASTER instance role.
+    * Amazon EC2 Placement Group strategy associated with instance role. Starting with Amazon EMR release 5.23.0, the only supported placement strategy is SPREAD for the MASTER instance role.
     */
   var PlacementStrategy: js.UndefOr[PlacementGroupStrategy] = js.undefined
 }

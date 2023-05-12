@@ -1,7 +1,7 @@
 
 # Scala.js typings for sass-embedded
 
-Typings are for version 1.55.0
+Typings are for version 1.62.0
 
 ## Library description:
 Node.js library that communicates with Embedded Dart Sass using the Embedded Sass protocol

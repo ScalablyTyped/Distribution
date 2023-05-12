@@ -8,6 +8,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 type Description = String
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.locked_
+  - typings.awsSdk.awsSdkStrings.pending_unlock
+  - typings.awsSdk.awsSdkStrings.unlocked_
+  - java.lang.String
+*/
+type LockState = _LockState | String
+
 type MaxResults = Double
 
 type NextToken = String
@@ -49,6 +57,12 @@ type TagKeyList = js.Array[TagKey]
 type TagList = js.Array[Tag]
 
 type TagValue = String
+
+type TimeStamp = js.Date
+
+type UnlockDelayUnit = DAYS | String
+
+type UnlockDelayValue = Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.`2021-06-15`

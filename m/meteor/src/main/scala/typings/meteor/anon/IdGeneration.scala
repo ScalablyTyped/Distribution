@@ -1,5 +1,6 @@
 package typings.meteor.anon
 
+import typings.meteor.DDP.DDPStatic
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,7 @@ trait IdGeneration[T, U] extends StObject {
     * The server connection that will manage this collection. Uses the default connection if not specified. Pass the return value of calling `DDP.connect` to specify a different
     * server. Pass `null` to specify no connection. Unmanaged (`name` is null) collections cannot specify a connection.
     */
-  var connection: js.UndefOr[js.Object | Null] = js.undefined
+  var connection: js.UndefOr[DDPStatic | Null] = js.undefined
   
   /** Set to `false` to skip setting up the mutation methods that enable insert/update/remove from client code. Default `true`. */
   var defineMutationMethods: js.UndefOr[Boolean] = js.undefined
@@ -39,7 +40,7 @@ object IdGeneration {
   @scala.inline
   implicit open class MutableBuilder[Self <: IdGeneration[?, ?], T, U] (val x: Self & (IdGeneration[T, U])) extends AnyVal {
     
-    inline def setConnection(value: js.Object): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
+    inline def setConnection(value: DDPStatic): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     
     inline def setConnectionNull: Self = StObject.set(x, "connection", null)
     

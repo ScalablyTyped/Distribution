@@ -5,9 +5,9 @@ import typings.chartJs.chartJsStrings.linear
 import typings.chartJs.chartJsStrings.logarithmic
 import typings.chartJs.chartJsStrings.time
 import typings.chartJs.chartJsStrings.timeseries
-import typings.chartJs.mod.BarControllerChartOptions
-import typings.chartJs.mod.BarControllerDatasetOptions
-import typings.chartJs.mod.BarParsedData
+import typings.chartJs.distTypesIndexMod.BarControllerChartOptions
+import typings.chartJs.distTypesIndexMod.BarControllerDatasetOptions
+import typings.chartJs.distTypesIndexMod.BarParsedData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,7 +18,7 @@ trait ChartOptions extends StObject {
   
   var datasetOptions: BarControllerDatasetOptions
   
-  var defaultDataPoint: Double
+  var defaultDataPoint: Double | (js.Tuple2[Double, Double]) | Null
   
   var parsedDataType: BarParsedData
   
@@ -29,11 +29,10 @@ object ChartOptions {
   inline def apply(
     chartOptions: BarControllerChartOptions,
     datasetOptions: BarControllerDatasetOptions,
-    defaultDataPoint: Double,
     parsedDataType: BarParsedData,
     scales: linear | logarithmic | category | time | timeseries
   ): ChartOptions = {
-    val __obj = js.Dynamic.literal(chartOptions = chartOptions.asInstanceOf[js.Any], datasetOptions = datasetOptions.asInstanceOf[js.Any], defaultDataPoint = defaultDataPoint.asInstanceOf[js.Any], parsedDataType = parsedDataType.asInstanceOf[js.Any], scales = scales.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(chartOptions = chartOptions.asInstanceOf[js.Any], datasetOptions = datasetOptions.asInstanceOf[js.Any], parsedDataType = parsedDataType.asInstanceOf[js.Any], scales = scales.asInstanceOf[js.Any], defaultDataPoint = null)
     __obj.asInstanceOf[ChartOptions]
   }
   
@@ -44,7 +43,9 @@ object ChartOptions {
     
     inline def setDatasetOptions(value: BarControllerDatasetOptions): Self = StObject.set(x, "datasetOptions", value.asInstanceOf[js.Any])
     
-    inline def setDefaultDataPoint(value: Double): Self = StObject.set(x, "defaultDataPoint", value.asInstanceOf[js.Any])
+    inline def setDefaultDataPoint(value: Double | (js.Tuple2[Double, Double])): Self = StObject.set(x, "defaultDataPoint", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultDataPointNull: Self = StObject.set(x, "defaultDataPoint", null)
     
     inline def setParsedDataType(value: BarParsedData): Self = StObject.set(x, "parsedDataType", value.asInstanceOf[js.Any])
     

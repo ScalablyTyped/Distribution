@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.BorderBlockEndStyle
+import typings.csstype.mod.Property.MsScrollLimitXMax
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,11 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `402` extends StObject {
   
   var value: js.UndefOr[
-    BorderBlockEndStyle | (js.Array[
+    (MsScrollLimitXMax[Double | String]) | (js.Array[
       (Extract[
-        js.UndefOr[BorderBlockEndStyle | js.Array[NonNullable[js.UndefOr[BorderBlockEndStyle]]]], 
+        js.UndefOr[
+          (MsScrollLimitXMax[Double | String]) | (js.Array[NonNullable[js.UndefOr[MsScrollLimitXMax[Double | String]]]])
+        ], 
         String
-      ]) | NonNullable[js.UndefOr[BorderBlockEndStyle]]
+      ]) | (NonNullable[js.UndefOr[MsScrollLimitXMax[Double | String]]])
     ])
   ] = js.native
 }

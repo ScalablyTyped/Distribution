@@ -9,8 +9,8 @@ trait ExecuteActionRequestedOptions extends StObject {
   /** The identifier of the action to be executed. */
   var actionId: String
   
-  /** The path of the entry to be used for the action. */
-  var entryPath: String
+  /** The set of paths of the entries to be used for the action. */
+  var entryPaths: js.Array[String]
   
   /** The identifier of the file system related to this operation. */
   var fileSystemId: String
@@ -20,8 +20,8 @@ trait ExecuteActionRequestedOptions extends StObject {
 }
 object ExecuteActionRequestedOptions {
   
-  inline def apply(actionId: String, entryPath: String, fileSystemId: String, requestId: Double): ExecuteActionRequestedOptions = {
-    val __obj = js.Dynamic.literal(actionId = actionId.asInstanceOf[js.Any], entryPath = entryPath.asInstanceOf[js.Any], fileSystemId = fileSystemId.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any])
+  inline def apply(actionId: String, entryPaths: js.Array[String], fileSystemId: String, requestId: Double): ExecuteActionRequestedOptions = {
+    val __obj = js.Dynamic.literal(actionId = actionId.asInstanceOf[js.Any], entryPaths = entryPaths.asInstanceOf[js.Any], fileSystemId = fileSystemId.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExecuteActionRequestedOptions]
   }
   
@@ -30,7 +30,9 @@ object ExecuteActionRequestedOptions {
     
     inline def setActionId(value: String): Self = StObject.set(x, "actionId", value.asInstanceOf[js.Any])
     
-    inline def setEntryPath(value: String): Self = StObject.set(x, "entryPath", value.asInstanceOf[js.Any])
+    inline def setEntryPaths(value: js.Array[String]): Self = StObject.set(x, "entryPaths", value.asInstanceOf[js.Any])
+    
+    inline def setEntryPathsVarargs(value: String*): Self = StObject.set(x, "entryPaths", js.Array(value*))
     
     inline def setFileSystemId(value: String): Self = StObject.set(x, "fileSystemId", value.asInstanceOf[js.Any])
     

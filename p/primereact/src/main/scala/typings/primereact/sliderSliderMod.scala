@@ -1,5 +1,6 @@
 package typings.primereact
 
+import typings.primereact.primereactStrings._empty
 import typings.primereact.primereactStrings.`additions removals`
 import typings.primereact.primereactStrings.`additions text`
 import typings.primereact.primereactStrings.`inline`
@@ -7,8 +8,10 @@ import typings.primereact.primereactStrings.`removals additions`
 import typings.primereact.primereactStrings.`removals text`
 import typings.primereact.primereactStrings.`text additions`
 import typings.primereact.primereactStrings.`text removals`
+import typings.primereact.primereactStrings.`use-credentials`
 import typings.primereact.primereactStrings.additions
 import typings.primereact.primereactStrings.all
+import typings.primereact.primereactStrings.anonymous
 import typings.primereact.primereactStrings.ascending
 import typings.primereact.primereactStrings.assertive
 import typings.primereact.primereactStrings.both
@@ -98,6 +101,7 @@ import typings.react.mod.WheelEvent
 import typings.react.mod.WheelEventHandler
 import typings.std.Element
 import typings.std.Event
+import typings.std.FormData
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -111,45 +115,47 @@ object sliderSliderMod {
     def this(props: SliderProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: SliderProps, context: Any) = this()
     
+    /**
+      * Returns the reference of virtualScroller's container.
+      */
     def getElement(): HTMLDivElement = js.native
   }
   
-  trait SliderChangeParams extends StObject {
+  /**
+    * Custom change event.
+    * @see {@link SliderProps.onChange}
+    * @event
+    */
+  trait SliderChangeEvent extends StObject {
     
+    /**
+      * Slide event
+      */
     var originalEvent: SyntheticEvent[Element, Event]
     
-    var value: SliderValueType
+    /**
+      * New value
+      */
+    var value: Double | (js.Tuple2[Double, Double])
   }
-  object SliderChangeParams {
+  object SliderChangeEvent {
     
-    inline def apply(originalEvent: SyntheticEvent[Element, Event], value: SliderValueType): SliderChangeParams = {
+    inline def apply(originalEvent: SyntheticEvent[Element, Event], value: Double | (js.Tuple2[Double, Double])): SliderChangeEvent = {
       val __obj = js.Dynamic.literal(originalEvent = originalEvent.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.asInstanceOf[SliderChangeParams]
+      __obj.asInstanceOf[SliderChangeEvent]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: SliderChangeParams] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: SliderChangeEvent] (val x: Self) extends AnyVal {
       
       inline def setOriginalEvent(value: SyntheticEvent[Element, Event]): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
-      inline def setValue(value: SliderValueType): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double | (js.Tuple2[Double, Double])): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
-  }
-  
-  /* Rewritten from type alias, can be one of: 
-    - typings.primereact.primereactStrings.horizontal
-    - typings.primereact.primereactStrings.vertical
-  */
-  trait SliderOrientationType extends StObject
-  object SliderOrientationType {
-    
-    inline def horizontal: typings.primereact.primereactStrings.horizontal = "horizontal".asInstanceOf[typings.primereact.primereactStrings.horizontal]
-    
-    inline def vertical: typings.primereact.primereactStrings.vertical = "vertical".asInstanceOf[typings.primereact.primereactStrings.vertical]
   }
   
   /* Inlined parent std.Omit<react.react.DetailedHTMLProps<react.react.InputHTMLAttributes<std.HTMLDivElement>, std.HTMLDivElement>, 'onChange' | 'value' | 'ref'> */
@@ -261,6 +267,9 @@ object sliderSliderMod {
     
     var `aria-valuetext`: js.UndefOr[String] = js.undefined
     
+    /**
+      * Establishes relationships between the component and label(s) where its value should be one or more element IDs.
+      */
     var ariaLabelledBy: js.UndefOr[String] = js.undefined
     
     var autoCapitalize: js.UndefOr[String] = js.undefined
@@ -277,17 +286,23 @@ object sliderSliderMod {
     
     var checked: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Used to get the child elements of the component.
+      * @readonly
+      */
     var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
     var color: js.UndefOr[String] = js.undefined
     
+    var content: js.UndefOr[String] = js.undefined
+    
     var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
     var contextMenu: js.UndefOr[String] = js.undefined
     
-    var crossOrigin: js.UndefOr[String] = js.undefined
+    var crossOrigin: js.UndefOr[anonymous | `use-credentials` | _empty] = js.undefined
     
     var dangerouslySetInnerHTML: js.UndefOr[Html] = js.undefined
     
@@ -299,6 +314,10 @@ object sliderSliderMod {
     
     var dir: js.UndefOr[String] = js.undefined
     
+    /**
+      * When present, it specifies that the component should be disabled.
+      * @defaultValue false
+      */
     var disabled: js.UndefOr[Boolean] = js.undefined
     
     var draggable: js.UndefOr[Booleanish] = js.undefined
@@ -307,7 +326,7 @@ object sliderSliderMod {
     
     var form: js.UndefOr[String] = js.undefined
     
-    var formAction: js.UndefOr[String] = js.undefined
+    var formAction: js.UndefOr[String | (js.Function1[/* formData */ FormData, Unit])] = js.undefined
     
     var formEncType: js.UndefOr[String] = js.undefined
     
@@ -345,10 +364,18 @@ object sliderSliderMod {
     
     var list: js.UndefOr[String] = js.undefined
     
+    /**
+      * Maximum boundary value.
+      * @defaultValue 100
+      */
     var max: js.UndefOr[Double] = js.undefined
     
     var maxLength: js.UndefOr[Double] = js.undefined
     
+    /**
+      * Mininum boundary value.
+      * @defaultValue 0
+      */
     var min: js.UndefOr[Double] = js.undefined
     
     var minLength: js.UndefOr[Double] = js.undefined
@@ -377,7 +404,11 @@ object sliderSliderMod {
     
     var onCanPlayThrough: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* e */ SliderChangeParams, Unit]] = js.undefined
+    /**
+      * Callback to invoke on value change via slide.
+      * @param {SliderChangeEvent} event - Custom change event
+      */
+    var onChange: js.UndefOr[js.Function1[/* event */ SliderChangeEvent, Unit]] = js.undefined
     
     var onClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
@@ -495,7 +526,11 @@ object sliderSliderMod {
     
     var onSelect: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
-    var onSlideEnd: js.UndefOr[js.Function1[/* e */ SliderSlideEndParams, Unit]] = js.undefined
+    /**
+      * Callback to invoke when slide ends.
+      * @param {SliderSlideEndEvent} event - Custom slide event
+      */
+    var onSlideEnd: js.UndefOr[js.Function1[/* event */ SliderSlideEndEvent, Unit]] = js.undefined
     
     var onStalled: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
@@ -521,7 +556,11 @@ object sliderSliderMod {
     
     var onWheel: js.UndefOr[WheelEventHandler[HTMLDivElement]] = js.undefined
     
-    var orientation: js.UndefOr[SliderOrientationType] = js.undefined
+    /**
+      * Orientation of the slider, valid values are horizontal and vertical.
+      * @defaultValue horizontal
+      */
+    var orientation: js.UndefOr[horizontal | vertical] = js.undefined
     
     var pattern: js.UndefOr[String] = js.undefined
     
@@ -533,15 +572,23 @@ object sliderSliderMod {
     
     var radioGroup: js.UndefOr[String] = js.undefined
     
+    /**
+      * When speficed, allows two boundary values to be picked.
+      * @defaultValue false
+      */
     var range: js.UndefOr[Boolean] = js.undefined
     
     var readOnly: js.UndefOr[Boolean] = js.undefined
+    
+    var rel: js.UndefOr[String] = js.undefined
     
     var required: js.UndefOr[Boolean] = js.undefined
     
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
+    
+    var rev: js.UndefOr[String] = js.undefined
     
     var role: js.UndefOr[AriaRole] = js.undefined
     
@@ -555,6 +602,10 @@ object sliderSliderMod {
     
     var src: js.UndefOr[String] = js.undefined
     
+    /**
+      * Step factor to increment/decrement the value.
+      * @defaultValue 1
+      */
     var step: js.UndefOr[Double] = js.undefined
     
     var style: js.UndefOr[CSSProperties] = js.undefined
@@ -575,7 +626,11 @@ object sliderSliderMod {
     
     var unselectable: js.UndefOr[on | off] = js.undefined
     
-    var value: js.UndefOr[SliderValueType] = js.undefined
+    /**
+      * Value of the component.
+      * @defaultValue 0
+      */
+    var value: js.UndefOr[Double | (js.Tuple2[Double, Double])] = js.undefined
     
     var vocab: js.UndefOr[String] = js.undefined
     
@@ -845,15 +900,19 @@ object sliderSliderMod {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
       inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
       inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
       inline def setContextMenuUndefined: Self = StObject.set(x, "contextMenu", js.undefined)
       
-      inline def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+      inline def setCrossOrigin(value: anonymous | `use-credentials` | _empty): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
       
       inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
       
@@ -893,7 +952,9 @@ object sliderSliderMod {
       
       inline def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
       
-      inline def setFormAction(value: String): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+      inline def setFormAction(value: String | (js.Function1[/* formData */ FormData, Unit])): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+      
+      inline def setFormActionFunction1(value: /* formData */ FormData => Unit): Self = StObject.set(x, "formAction", js.Any.fromFunction1(value))
       
       inline def setFormActionUndefined: Self = StObject.set(x, "formAction", js.undefined)
       
@@ -1037,7 +1098,7 @@ object sliderSliderMod {
       
       inline def setOnCanPlayUndefined: Self = StObject.set(x, "onCanPlay", js.undefined)
       
-      inline def setOnChange(value: /* e */ SliderChangeParams => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* event */ SliderChangeEvent => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
@@ -1273,7 +1334,7 @@ object sliderSliderMod {
       
       inline def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
       
-      inline def setOnSlideEnd(value: /* e */ SliderSlideEndParams => Unit): Self = StObject.set(x, "onSlideEnd", js.Any.fromFunction1(value))
+      inline def setOnSlideEnd(value: /* event */ SliderSlideEndEvent => Unit): Self = StObject.set(x, "onSlideEnd", js.Any.fromFunction1(value))
       
       inline def setOnSlideEndUndefined: Self = StObject.set(x, "onSlideEnd", js.undefined)
       
@@ -1325,7 +1386,7 @@ object sliderSliderMod {
       
       inline def setOnWheelUndefined: Self = StObject.set(x, "onWheel", js.undefined)
       
-      inline def setOrientation(value: SliderOrientationType): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+      inline def setOrientation(value: horizontal | vertical): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
       
       inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
       
@@ -1357,6 +1418,10 @@ object sliderSliderMod {
       
       inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
       
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      
+      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+      
       inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
       
       inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
@@ -1368,6 +1433,10 @@ object sliderSliderMod {
       inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+      
+      inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+      
+      inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
       
       inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
@@ -1433,7 +1502,7 @@ object sliderSliderMod {
       
       inline def setUnselectableUndefined: Self = StObject.set(x, "unselectable", js.undefined)
       
-      inline def setValue(value: SliderValueType): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double | (js.Tuple2[Double, Double])): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
@@ -1447,7 +1516,11 @@ object sliderSliderMod {
     }
   }
   
-  type SliderSlideEndParams = SliderChangeParams
-  
-  type SliderValueType = Double | (js.Tuple2[Double, Double])
+  /**
+    * Custom slide event.
+    * @see {@link SliderProps.onSlideEnd}
+    * @extends {SliderChangeEvent}
+    * @event
+    */
+  type SliderSlideEndEvent = SliderChangeEvent
 }

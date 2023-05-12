@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.RubyMerge
+import typings.csstype.mod.Property.BorderLeftStyle
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,8 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `80` extends StObject {
   
   var value: js.UndefOr[
-    RubyMerge | (js.Array[
-      (Extract[js.UndefOr[RubyMerge | js.Array[NonNullable[js.UndefOr[RubyMerge]]]], String]) | NonNullable[js.UndefOr[RubyMerge]]
+    BorderLeftStyle | (js.Array[
+      (Extract[
+        js.UndefOr[BorderLeftStyle | js.Array[NonNullable[js.UndefOr[BorderLeftStyle]]]], 
+        String
+      ]) | NonNullable[js.UndefOr[BorderLeftStyle]]
     ])
   ] = js.native
 }

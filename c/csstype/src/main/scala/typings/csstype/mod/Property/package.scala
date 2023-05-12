@@ -65,7 +65,12 @@ type All = Globals
 */
 type Animation[TTime] = _Animation[TTime] | String | TTime | Double
 
-type AnimationComposition = Globals | String
+/* Rewritten from type alias, can be one of: 
+  - typings.csstype.mod.Globals
+  - typings.csstype.mod.DataType.SingleAnimationComposition
+  - java.lang.String
+*/
+type AnimationComposition = _AnimationComposition | String
 
 type AnimationDelay[TTime] = Globals | TTime | String
 
@@ -610,6 +615,17 @@ type BoxShadow = _BoxShadow | String
   - typings.csstype.mod.Globals
   - typings.csstype.mod.DataType.Color
   - typings.csstype.csstypeStrings.auto
+  - typings.csstype.csstypeStrings.bar
+  - typings.csstype.csstypeStrings.block
+  - typings.csstype.csstypeStrings.underscore
+  - java.lang.String
+*/
+type Caret = _Caret | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.csstype.mod.Globals
+  - typings.csstype.mod.DataType.Color
+  - typings.csstype.csstypeStrings.auto
 */
 type CaretColor = _CaretColor | String
 
@@ -717,6 +733,60 @@ type Columns[TLength] = _Columns[TLength] | TLength | String | Double
   - java.lang.String
 */
 type Contain = _Contain | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.csstype.mod.Globals
+  - TLength
+  - typings.csstype.csstypeStrings.none
+  - java.lang.String
+*/
+type ContainIntrinsicBlockSize[TLength] = _ContainIntrinsicBlockSize[TLength] | TLength | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.csstype.mod.Globals
+  - TLength
+  - typings.csstype.csstypeStrings.none
+  - java.lang.String
+*/
+type ContainIntrinsicHeight[TLength] = _ContainIntrinsicHeight[TLength] | TLength | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.csstype.mod.Globals
+  - TLength
+  - typings.csstype.csstypeStrings.none
+  - java.lang.String
+*/
+type ContainIntrinsicInlineSize[TLength] = _ContainIntrinsicInlineSize[TLength] | TLength | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.csstype.mod.Globals
+  - TLength
+  - typings.csstype.csstypeStrings.none
+  - java.lang.String
+*/
+type ContainIntrinsicSize[TLength] = _ContainIntrinsicSize[TLength] | TLength | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.csstype.mod.Globals
+  - TLength
+  - typings.csstype.csstypeStrings.none
+  - java.lang.String
+*/
+type ContainIntrinsicWidth[TLength] = _ContainIntrinsicWidth[TLength] | TLength | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.csstype.mod.Globals
+  - typings.csstype.csstypeStrings.none
+  - java.lang.String
+*/
+type Container = _Container | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.csstype.mod.Globals
+  - typings.csstype.csstypeStrings.none
+  - java.lang.String
+*/
+type ContainerName = _ContainerName | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.csstype.mod.Globals
@@ -908,6 +978,15 @@ type FontFeatureSettings = _FontFeatureSettings | String
   - java.lang.String
 */
 type FontLanguageOverride = _FontLanguageOverride | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.csstype.mod.Globals
+  - typings.csstype.csstypeStrings.dark
+  - typings.csstype.csstypeStrings.light
+  - typings.csstype.csstypeStrings.normal
+  - java.lang.String
+*/
+type FontPalette = _FontPalette | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.csstype.mod.Globals
@@ -1192,6 +1271,14 @@ type Height[TLength] = _Height[TLength] | TLength | String
   - java.lang.String
 */
 type HyphenateCharacter = _HyphenateCharacter | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.csstype.mod.Globals
+  - typings.csstype.csstypeStrings.auto
+  - java.lang.String
+  - scala.Double
+*/
+type HyphenateLimitChars = _HyphenateLimitChars | String | Double
 
 /* Rewritten from type alias, can be one of: 
   - typings.csstype.mod.Globals
@@ -2026,6 +2113,13 @@ type OffsetPath = _OffsetPath | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.csstype.mod.Globals
+  - typings.csstype.mod.DataType.Position[TLength]
+  - typings.csstype.csstypeStrings.auto
+*/
+type OffsetPosition[TLength] = _OffsetPosition[TLength] | TLength | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.csstype.mod.Globals
   - typings.csstype.csstypeStrings.auto
   - typings.csstype.csstypeStrings.reverse
   - java.lang.String
@@ -2122,6 +2216,13 @@ type PaddingLeft[TLength] = Globals | TLength | String
 type PaddingRight[TLength] = Globals | TLength | String
 
 type PaddingTop[TLength] = Globals | TLength | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.csstype.mod.Globals
+  - typings.csstype.csstypeStrings.auto
+  - java.lang.String
+*/
+type Page = _Page | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.csstype.mod.Globals
@@ -2385,6 +2486,30 @@ type ScrollSnapPointsY = _ScrollSnapPointsY | String
   - java.lang.String
 */
 type ScrollSnapType = _ScrollSnapType | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.csstype.mod.Globals
+  - typings.csstype.csstypeStrings.none
+  - java.lang.String
+*/
+type ScrollTimeline = _ScrollTimeline | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.csstype.mod.Globals
+  - typings.csstype.csstypeStrings.block
+  - typings.csstype.csstypeStrings.horizontal
+  - typings.csstype.csstypeStrings.`inline`
+  - typings.csstype.csstypeStrings.vertical
+  - java.lang.String
+*/
+type ScrollTimelineAxis = _ScrollTimelineAxis | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.csstype.mod.Globals
+  - typings.csstype.csstypeStrings.none
+  - java.lang.String
+*/
+type ScrollTimelineName = _ScrollTimelineName | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.csstype.mod.Globals
@@ -2692,6 +2817,13 @@ type Translate[TLength] = _Translate[TLength] | TLength | String
   - java.lang.String
 */
 type VerticalAlign[TLength] = _VerticalAlign[TLength] | TLength | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.csstype.mod.Globals
+  - typings.csstype.csstypeStrings.none
+  - java.lang.String
+*/
+type ViewTransitionName = _ViewTransitionName | String
 
 /* Rewritten from type alias, can be one of: 
   - typings.csstype.mod.Globals

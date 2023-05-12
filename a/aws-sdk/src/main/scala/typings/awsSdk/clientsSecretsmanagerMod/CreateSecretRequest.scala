@@ -22,7 +22,7 @@ trait CreateSecretRequest extends StObject {
   var Description: js.UndefOr[DescriptionType] = js.undefined
   
   /**
-    * Specifies whether to overwrite a secret with the same name in the destination Region.
+    * Specifies whether to overwrite a secret with the same name in the destination Region. By default, secrets aren't overwritten.
     */
   var ForceOverwriteReplicaSecret: js.UndefOr[BooleanType] = js.undefined
   

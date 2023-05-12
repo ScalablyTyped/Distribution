@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-native-sqlite-storage
 
-Typings are for version 5.0
+Typings are for version 6.0
 
 ## Library description:
 SQLite3 bindings for React Native (Android & iOS)

@@ -54,6 +54,12 @@ open class ClientTemplateParameter protected () extends Element[IModel] {
     */
   def formattingInfo: FormattingInfo = js.native
   def formattingInfo_=(newValue: FormattingInfo): Unit = js.native
+  
+  /**
+    * In version 9.24.0: introduced
+    */
+  def sourceVariable: PageVariable | Null = js.native
+  def sourceVariable_=(newValue: PageVariable | Null): Unit = js.native
 }
 object ClientTemplateParameter {
   

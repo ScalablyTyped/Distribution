@@ -1,24 +1,24 @@
 organization := "org.scalablytyped"
 name := "uifabric__styling"
-version := "7.25.1-e82bdb"
+version := "7.25.1-60b259"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "csstype" % "3.1.1-9b270c",
-  "org.scalablytyped" %%% "enzyme" % "3.10-dt-20220818Z-ef418c",
-  "org.scalablytyped" %%% "fluentui__dom-utilities" % "2.2.2-188e54",
-  "org.scalablytyped" %%% "fluentui__merge-styles" % "8.5.3-dd69fa",
-  "org.scalablytyped" %%% "fluentui__theme" % "2.6.17-bc89ca",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-9c1d48",
-  "org.scalablytyped" %%% "react" % "18.0-dt-20221104Z-c1aa2f",
-  "org.scalablytyped" %%% "react-test-renderer" % "18.0-dt-20220805Z-a531dd",
-  "org.scalablytyped" %%% "scheduler" % "0.16-dt-20211202Z-fd69ea",
-  "org.scalablytyped" %%% "sinon" % "10.0-dt-20220720Z-a1b7c7",
-  "org.scalablytyped" %%% "sinonjs__fake-timers" % "8.1-dt-20220323Z-ea1648",
-  "org.scalablytyped" %%% "std" % "4.9-ecb5eb",
-  "org.scalablytyped" %%% "uifabric__merge-styles" % "7.20.2-a50b7d",
-  "org.scalablytyped" %%% "uifabric__utilities" % "7.38.2-0c61dc")
+  "org.scalablytyped" %%% "csstype" % "3.1.2-5927f3",
+  "org.scalablytyped" %%% "enzyme" % "3.10-dt-20230415Z-747887",
+  "org.scalablytyped" %%% "fluentui__dom-utilities" % "2.2.9-f23484",
+  "org.scalablytyped" %%% "fluentui__merge-styles" % "8.5.10-184f07",
+  "org.scalablytyped" %%% "fluentui__theme" % "2.6.29-7f2b7a",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20220407Z-4446ee",
+  "org.scalablytyped" %%% "react" % "18.2-dt-20230506Z-14ab9d",
+  "org.scalablytyped" %%% "react-test-renderer" % "18.0-dt-20221230Z-086cc6",
+  "org.scalablytyped" %%% "scheduler" % "0.16-dt-20230322Z-da1b40",
+  "org.scalablytyped" %%% "sinon" % "10.0-dt-20230417Z-66be90",
+  "org.scalablytyped" %%% "sinonjs__fake-timers" % "8.1-dt-20220323Z-bc3c2e",
+  "org.scalablytyped" %%% "std" % "5.0-e63739",
+  "org.scalablytyped" %%% "uifabric__merge-styles" % "7.20.2-4f2ebe",
+  "org.scalablytyped" %%% "uifabric__utilities" % "7.38.2-fe6e06")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

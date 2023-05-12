@@ -12,11 +12,13 @@ trait Value
   
   var action: replace
   
-  var value: typings.wordpressRichText.mod.Value
+  var value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Value */ Any
 }
 object Value {
   
-  inline def apply(value: typings.wordpressRichText.mod.Value): Value = {
+  inline def apply(
+    value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Value */ Any
+  ): Value = {
     val __obj = js.Dynamic.literal(action = "replace", value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Value]
   }
@@ -26,6 +28,8 @@ object Value {
     
     inline def setAction(value: replace): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: typings.wordpressRichText.mod.Value): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Value */ Any
+    ): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

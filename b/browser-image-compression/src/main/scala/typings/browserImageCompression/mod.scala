@@ -58,6 +58,9 @@ object mod {
     /** @default 1.0 */
     var initialQuality: js.UndefOr[Double] = js.undefined
     
+    /** @default https://cdn.jsdelivr.net/npm/browser-image-compression/dist/browser-image-compression.js */
+    var libURL: js.UndefOr[String] = js.undefined
+    
     /** @default 10 */
     var maxIteration: js.UndefOr[Double] = js.undefined
     
@@ -69,6 +72,9 @@ object mod {
     
     /** A function takes one progress argument (progress from 0 to 100) */
     var onProgress: js.UndefOr[js.Function1[/* progress */ Double, Unit]] = js.undefined
+    
+    /** @default false */
+    var preserveExif: js.UndefOr[Boolean] = js.undefined
     
     /** @default undefined */
     var signal: js.UndefOr[AbortSignal] = js.undefined
@@ -102,6 +108,10 @@ object mod {
       
       inline def setInitialQualityUndefined: Self = StObject.set(x, "initialQuality", js.undefined)
       
+      inline def setLibURL(value: String): Self = StObject.set(x, "libURL", value.asInstanceOf[js.Any])
+      
+      inline def setLibURLUndefined: Self = StObject.set(x, "libURL", js.undefined)
+      
       inline def setMaxIteration(value: Double): Self = StObject.set(x, "maxIteration", value.asInstanceOf[js.Any])
       
       inline def setMaxIterationUndefined: Self = StObject.set(x, "maxIteration", js.undefined)
@@ -117,6 +127,10 @@ object mod {
       inline def setOnProgress(value: /* progress */ Double => Unit): Self = StObject.set(x, "onProgress", js.Any.fromFunction1(value))
       
       inline def setOnProgressUndefined: Self = StObject.set(x, "onProgress", js.undefined)
+      
+      inline def setPreserveExif(value: Boolean): Self = StObject.set(x, "preserveExif", value.asInstanceOf[js.Any])
+      
+      inline def setPreserveExifUndefined: Self = StObject.set(x, "preserveExif", js.undefined)
       
       inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
       

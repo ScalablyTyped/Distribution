@@ -125,6 +125,7 @@ object sapMColumnListItemMod {
     
     /**
       * @SINCE 1.26
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Returns pop-in DOMRef as a jQuery Object
       */
@@ -173,6 +174,7 @@ object sapMColumnListItemMod {
     
     /**
       * @SINCE 1.30.9
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Returns the pop-in element.
       */
@@ -194,6 +196,8 @@ object sapMColumnListItemMod {
     def getVAlign(): VerticalAlign | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof VerticalAlign * / any */ String) = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Determines whether control has pop-in or not.
       */
     def hasPopin(): Unit = js.native
@@ -257,6 +261,8 @@ object sapMColumnListItemMod {
     ): typings.openui5.sapUiCoreControlMod.default | Null = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Pemove pop-in from DOM
       */
     def removePopin(): Unit = js.native

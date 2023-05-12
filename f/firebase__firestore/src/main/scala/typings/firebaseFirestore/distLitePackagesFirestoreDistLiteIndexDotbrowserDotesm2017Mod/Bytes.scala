@@ -26,7 +26,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class Bytes protected ()
   extends StObject
-     with Vn_ {
+     with Cn {
   /** @hideconstructor */
   def this(t: Any) = this()
   
@@ -67,12 +67,12 @@ object Bytes {
     *
     * @param base64 - The Base64 string used to create the `Bytes` object.
     */ /* static member */
-  inline def fromBase64String(t: Any): Vn_ = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBase64String")(t.asInstanceOf[js.Any]).asInstanceOf[Vn_]
+  inline def fromBase64String(t: Any): Cn = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBase64String")(t.asInstanceOf[js.Any]).asInstanceOf[Cn]
   
   /**
     * Creates a new `Bytes` object from the given Uint8Array.
     *
     * @param array - The Uint8Array used to create the `Bytes` object.
     */ /* static member */
-  inline def fromUint8Array(t: Any): Vn_ = ^.asInstanceOf[js.Dynamic].applyDynamic("fromUint8Array")(t.asInstanceOf[js.Any]).asInstanceOf[Vn_]
+  inline def fromUint8Array(t: Any): Cn = ^.asInstanceOf[js.Dynamic].applyDynamic("fromUint8Array")(t.asInstanceOf[js.Any]).asInstanceOf[Cn]
 }

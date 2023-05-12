@@ -11,12 +11,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * ViewPort object holds information about the HTML element where the map is rendered. It contains information regarding the element (view port) size and triggers events when the element size
   * is changed.
-  * @property element {Element} - This property holds the HTML element, which defines the viewport.
-  * @property width {number} - This property holds this viewport&#x27;s current width
-  * @property height {number} - This property holds this viewport&#x27;s current height
-  * @property margin {number} - This property holds this viewport&#x27;s current margin value
-  * @property padding {H.map.ViewPort.Padding} - This property holds this viewport&#x27;s current padding
-  * @property center {H.math.Point} - This property holds this viewport&#x27;s current center point
+  * element {Element} - This property holds the HTML element, which defines the viewport.
+  * width {number} - This property holds this viewport&#x27;s current width
+  * height {number} - This property holds this viewport&#x27;s current height
+  * margin {number} - This property holds this viewport&#x27;s current margin value
+  * padding {H.map.ViewPort.Padding} - This property holds this viewport&#x27;s current padding
+  * center {H.math.Point} - This property holds this viewport&#x27;s current center point
   */
 @js.native
 trait ViewPort
@@ -62,9 +62,9 @@ object ViewPort {
   
   /**
     * Options which may be used to initialize new ViewPort instance
-    * @property margin {number=} - The size in pixel of the supplemental area to render for each side of the map
-    * @property padding {H.map.ViewPort.Padding=} - The padding in pixels for each side of the map
-    * @property fixedCenter {boolean=} - Indicates whether the center of the map should remain unchanged if the viewport's size or or padding has been changed, default is true
+    * margin {number=} - The size in pixel of the supplemental area to render for each side of the map
+    * padding {H.map.ViewPort.Padding=} - The padding in pixels for each side of the map
+    * fixedCenter {boolean=} - Indicates whether the center of the map should remain unchanged if the viewport's size or or padding has been changed, default is true
     */
   trait Options extends StObject {
     
@@ -100,10 +100,10 @@ object ViewPort {
   
   /**
     * Represents viewport padding definition.
-    * @property top {number} - the padding on the top edge (in pixels)
-    * @property right {number} - the padding on the right edge (in pixels)
-    * @property bottom {number} - the padding on the bottom edge (in pixels)
-    * @property left {number} - the padding on the left edge (in pixels)
+    * top {number} - the padding on the top edge (in pixels)
+    * right {number} - the padding on the right edge (in pixels)
+    * bottom {number} - the padding on the bottom edge (in pixels)
+    * left {number} - the padding on the left edge (in pixels)
     */
   trait Padding extends StObject {
     

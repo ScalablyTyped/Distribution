@@ -8,6 +8,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object openStrings {
   
   @js.native
+  sealed trait browser
+    extends StObject
+       with AppName
+  inline def browser: browser = "browser".asInstanceOf[browser]
+  
+  @js.native
+  sealed trait browserPrivate
+    extends StObject
+       with AppName
+  inline def browserPrivate: browserPrivate = "browserPrivate".asInstanceOf[browserPrivate]
+  
+  @js.native
   sealed trait chrome
     extends StObject
        with AppName

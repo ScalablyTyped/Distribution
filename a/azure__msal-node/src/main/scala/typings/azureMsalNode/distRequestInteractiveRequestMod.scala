@@ -3,13 +3,15 @@ package typings.azureMsalNode
 import typings.azureMsalCommon.distAccountAccountInfoMod.AccountInfo
 import typings.azureMsalCommon.distConfigClientConfigurationMod.AzureCloudOptions
 import typings.azureMsalCommon.distUtilsMsalTypesMod.StringDict
+import typings.azureMsalNode.distNetworkIloopbackclientMod.ILoopbackClient
+import typings.node.bufferMod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object distRequestInteractiveRequestMod {
   
-  /* Inlined std.Pick<@azure/msal-node.@azure/msal-node/dist/request/AuthorizationUrlRequest.AuthorizationUrlRequest, 'authority' | 'correlationId' | 'claims' | 'azureCloudOptions' | 'account' | 'extraQueryParameters' | 'tokenQueryParameters' | 'extraScopesToConsent' | 'loginHint' | 'prompt'> & {openBrowser (url : string): std.Promise<void>,   scopes :std.Array<string> | undefined,   successTemplate :string | undefined,   errorTemplate :string | undefined} */
+  /* Inlined std.Pick<@azure/msal-node.@azure/msal-node/dist/request/AuthorizationUrlRequest.AuthorizationUrlRequest, 'authority' | 'correlationId' | 'claims' | 'azureCloudOptions' | 'account' | 'extraQueryParameters' | 'tokenQueryParameters' | 'extraScopesToConsent' | 'loginHint' | 'prompt'> & {openBrowser (url : string): std.Promise<void>,   scopes :std.Array<string> | undefined,   successTemplate :string | undefined,   errorTemplate :string | undefined,   windowHandle :node.buffer.<global>.Buffer | undefined,   loopbackClient :@azure/msal-node.@azure/msal-node/dist/network/ILoopbackClient.ILoopbackClient | undefined} */
   trait InteractiveRequest extends StObject {
     
     var account: js.UndefOr[AccountInfo] = js.undefined
@@ -30,6 +32,8 @@ object distRequestInteractiveRequestMod {
     
     var loginHint: js.UndefOr[String] = js.undefined
     
+    var loopbackClient: js.UndefOr[ILoopbackClient] = js.undefined
+    
     def openBrowser(url: String): js.Promise[Unit]
     
     var prompt: js.UndefOr[String] = js.undefined
@@ -39,6 +43,8 @@ object distRequestInteractiveRequestMod {
     var successTemplate: js.UndefOr[String] = js.undefined
     
     var tokenQueryParameters: js.UndefOr[StringDict] = js.undefined
+    
+    var windowHandle: js.UndefOr[Buffer] = js.undefined
   }
   object InteractiveRequest {
     
@@ -88,6 +94,10 @@ object distRequestInteractiveRequestMod {
       
       inline def setLoginHintUndefined: Self = StObject.set(x, "loginHint", js.undefined)
       
+      inline def setLoopbackClient(value: ILoopbackClient): Self = StObject.set(x, "loopbackClient", value.asInstanceOf[js.Any])
+      
+      inline def setLoopbackClientUndefined: Self = StObject.set(x, "loopbackClient", js.undefined)
+      
       inline def setOpenBrowser(value: String => js.Promise[Unit]): Self = StObject.set(x, "openBrowser", js.Any.fromFunction1(value))
       
       inline def setPrompt(value: String): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
@@ -107,6 +117,10 @@ object distRequestInteractiveRequestMod {
       inline def setTokenQueryParameters(value: StringDict): Self = StObject.set(x, "tokenQueryParameters", value.asInstanceOf[js.Any])
       
       inline def setTokenQueryParametersUndefined: Self = StObject.set(x, "tokenQueryParameters", js.undefined)
+      
+      inline def setWindowHandle(value: Buffer): Self = StObject.set(x, "windowHandle", value.asInstanceOf[js.Any])
+      
+      inline def setWindowHandleUndefined: Self = StObject.set(x, "windowHandle", js.undefined)
     }
   }
 }

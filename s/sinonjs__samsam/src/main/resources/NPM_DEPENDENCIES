@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@sinonjs/samsam" : "6.1.1"
+      "@sinonjs/samsam" : "8.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@sinonjs/samsam" : "6.1.1"
+      "@sinonjs/samsam" : "8.0.0"
     }
   ],
   "compile-devDependencies" : [

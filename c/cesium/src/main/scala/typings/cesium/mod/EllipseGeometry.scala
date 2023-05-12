@@ -1,6 +1,6 @@
 package typings.cesium.mod
 
-import typings.cesium.anon.Height
+import typings.cesium.anon.Granularity
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("cesium", "EllipseGeometry")
 @js.native
 open class EllipseGeometry protected () extends StObject {
-  def this(options: Height) = this()
+  def this(options: Granularity) = this()
 }
 /* static members */
 object EllipseGeometry {

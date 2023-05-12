@@ -45,19 +45,46 @@ object mod {
   @js.native
   trait Registrar extends StObject {
     
+    /**
+      * Return the handler for the passed protocol
+      */
     def getHandler(protocol: String): StreamHandlerRecord = js.native
     
+    /**
+      * Return the list of protocols with registered handlers
+      */
     def getProtocols(): js.Array[String] = js.native
     
+    /**
+      * Return all topology handlers that wish to be informed about peers
+      * that support the passed protocol.
+      */
     def getTopologies(protocol: String): js.Array[Topology] = js.native
     
+    /**
+      * Add a protocol handler
+      */
     def handle(protocol: String, handler: StreamHandler): js.Promise[Unit] = js.native
     def handle(protocol: String, handler: StreamHandler, options: StreamHandlerOptions): js.Promise[Unit] = js.native
     
+    /**
+      * Register a topology handler for a protocol - the topology will be
+      * invoked when peers are discovered on the network that support the
+      * passed protocol.
+      *
+      * An id will be returned that can later be used to unregister the
+      * topology.
+      */
     def register(protocol: String, topology: Topology): js.Promise[String] = js.native
     
+    /**
+      * Remove a protocol handler
+      */
     def unhandle(protocol: String): js.Promise[Unit] = js.native
     
+    /**
+      * Remove the topology handler with the passed id.
+      */
     def unregister(id: String): Unit = js.native
   }
   
@@ -66,12 +93,12 @@ object mod {
   trait StreamHandlerOptions extends StObject {
     
     /**
-      * How many incoming streams can be open for this protocol at the same time on each connection (default: 1)
+      * How many incoming streams can be open for this protocol at the same time on each connection (default: 32)
       */
     var maxInboundStreams: js.UndefOr[Double] = js.undefined
     
     /**
-      * How many outgoing streams can be open for this protocol at the same time on each connection (default: 1)
+      * How many outgoing streams can be open for this protocol at the same time on each connection (default: 64)
       */
     var maxOutboundStreams: js.UndefOr[Double] = js.undefined
   }
@@ -176,8 +203,15 @@ object mod {
       */
     var min: js.UndefOr[Double] = js.undefined
     
+    /**
+      * Invoked when a new peer is connects that supports the configured
+      * protocol
+      */
     var onConnect: js.UndefOr[onConnectHandler] = js.undefined
     
+    /**
+      * Invoked when a peer that supports the configured protocol disconnects
+      */
     var onDisconnect: js.UndefOr[onDisconnectHandler] = js.undefined
   }
   object TopologyInit {

@@ -11,8 +11,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OverlayedDocument extends StObject {
   
   /**
-    * The fields that are locally mutated by patch mutations. If the overlayed
-    * document is from set or delete mutations, this returns null.
+    * The fields that are locally mutated by patch mutations.
+    *
+    * If the overlayed	document is from set or delete mutations, this is `null`.
+    * If there is no overlay (mutation) for the document, this is an empty `FieldMask`.
     */
   val mutatedFields: FieldMask | Null
   

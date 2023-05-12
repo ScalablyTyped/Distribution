@@ -25,12 +25,12 @@ object Metadata {
     var EntityLogicalName: String
     
     /**
-      * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/collections External Link: Collections (Client API reference)}
+      * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/reference/collections External Link: Collections (Client API reference)}
       */
     var LogicalName: String
     
     /**
-      * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/collections External Link: Collections (Client API reference)}
+      * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/reference/collections External Link: Collections (Client API reference)}
       */
     var OptionSet: js.Array[OptionMetadata]
   }
@@ -75,7 +75,7 @@ object Metadata {
     var ActivityTypeMask: Double
     
     /**
-      * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/collections External Link: Collections (Client API reference)}
+      * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/reference/collections External Link: Collections (Client API reference)}
       */
     var Attributes: StringIndexableItemCollection[AttributeMetadata]
     
@@ -369,7 +369,7 @@ object Metadata {
   trait Label extends StObject {
     
     /**
-      * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/collections External Link: Collections (Client API reference)}
+      * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/reference/collections External Link: Collections (Client API reference)}
       */
     var LocalizedLabels: js.Array[LocalizedLabel]
     

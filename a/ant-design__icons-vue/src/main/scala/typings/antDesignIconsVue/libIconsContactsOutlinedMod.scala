@@ -16,7 +16,7 @@ object libIconsContactsOutlinedMod extends Shortcut {
   @js.native
   trait ContactsOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_ContactsOutlinedIconType: String = js.native

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Children extends StObject {
   
   def apply[T](Index: String): T = js.native
-  // tslint:disable-next-line:no-unnecessary-generics
+  // eslint-disable-next-line no-unnecessary-generics
   def apply[T](Index: Double): T = js.native
   
   val Count: Double = js.native
@@ -16,6 +16,6 @@ trait Children extends StObject {
   def IsMemberSafe(dispid: Double): Boolean = js.native
   
   def Item[T](Index: String): T = js.native
-  // tslint:disable-next-line:no-unnecessary-generics
+  // eslint-disable-next-line no-unnecessary-generics
   def Item[T](Index: Double): T = js.native
 }

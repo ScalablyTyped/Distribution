@@ -28,7 +28,7 @@ trait DescribePackageVersionRequest extends StObject {
   var format: PackageFormat
   
   /**
-    * The namespace of the requested package version. The package version component that specifies its namespace depends on its type. For example:    The namespace of a Maven package version is its groupId.     The namespace of an npm package version is its scope.     Python and NuGet package versions do not contain a corresponding component, package versions of those formats do not have a namespace.   
+    * The namespace of the requested package version. The package version component that specifies its namespace depends on its type. For example:    The namespace of a Maven package version is its groupId.     The namespace of an npm package version is its scope.     Python and NuGet package versions do not contain a corresponding component, package versions of those formats do not have a namespace.     The namespace of a generic package is its namespace.   
     */
   var namespace: js.UndefOr[PackageNamespace] = js.undefined
   

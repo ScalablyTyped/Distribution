@@ -1,6 +1,5 @@
 package typings.sinon.mod
 
-import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -43,11 +42,11 @@ trait SinonSpyCallApi[TArgs /* <: js.Array[Any] */, TReturnValue] extends StObje
     * @param args
     */
   def calledOnceWith(
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type MatchArguments<TArgs> is not an array type */ args: MatchArguments[TArgs]
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type MatchPartialArguments<TArgs> is not an array type */ args: MatchPartialArguments[TArgs]
   ): Boolean = js.native
   
   def calledOnceWithExactly(
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type MatchArguments<TArgs> is not an array type */ args: MatchArguments[TArgs]
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type MatchExactArguments<TArgs> is not an array type */ args: MatchExactArguments[TArgs]
   ): Boolean = js.native
   
   /**
@@ -57,14 +56,14 @@ trait SinonSpyCallApi[TArgs /* <: js.Array[Any] */, TReturnValue] extends StObje
     * @param args
     */
   def calledWith(
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Partial<MatchArguments<TArgs>> is not an array type */ args: Partial[MatchArguments[TArgs]]
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type MatchPartialArguments<TArgs> is not an array type */ args: MatchPartialArguments[TArgs]
   ): Boolean = js.native
   
   /**
     * Returns true if spy was called at least once with the provided arguments and no others.
     */
   def calledWithExactly(
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type MatchArguments<TArgs> is not an array type */ args: MatchArguments[TArgs]
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type MatchExactArguments<TArgs> is not an array type */ args: MatchExactArguments[TArgs]
   ): Boolean = js.native
   
   /**
@@ -73,7 +72,7 @@ trait SinonSpyCallApi[TArgs /* <: js.Array[Any] */, TReturnValue] extends StObje
     * @param args
     */
   def calledWithMatch(
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type DeepPartialOrMatcher<TArgs> is not an array type */ args: DeepPartialOrMatcher[TArgs]
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type MatchPartialArguments<TArgs> is not an array type */ args: MatchPartialArguments[TArgs]
   ): Boolean = js.native
   
   /**
@@ -88,7 +87,7 @@ trait SinonSpyCallApi[TArgs /* <: js.Array[Any] */, TReturnValue] extends StObje
     * @param args
     */
   def notCalledWith(
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type MatchArguments<TArgs> is not an array type */ args: MatchArguments[TArgs]
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type MatchExactArguments<TArgs> is not an array type */ args: MatchExactArguments[TArgs]
   ): Boolean = js.native
   
   /**
@@ -97,7 +96,7 @@ trait SinonSpyCallApi[TArgs /* <: js.Array[Any] */, TReturnValue] extends StObje
     * @param args
     */
   def notCalledWithMatch(
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type DeepPartialOrMatcher<TArgs> is not an array type */ args: DeepPartialOrMatcher[TArgs]
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type MatchPartialArguments<TArgs> is not an array type */ args: MatchPartialArguments[TArgs]
   ): Boolean = js.native
   
   /**

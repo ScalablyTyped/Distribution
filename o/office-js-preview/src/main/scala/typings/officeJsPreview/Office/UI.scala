@@ -100,7 +100,7 @@ trait UI extends StObject {
     *
     * This method is available in the DialogApi requirement set for Excel, PowerPoint, or Word add-ins, and in the Mailbox requirement set 1.4
     * for Outlook. For more on how to specify a requirement set in your manifest, see
-    * {@link https://learn.microsoft.com/office/dev/add-ins/develop/specify-office-hosts-and-api-requirements | Specify Office applications and API requirements}.
+    * {@link https://learn.microsoft.com/office/dev/add-ins/develop/specify-office-hosts-and-api-requirements | Specify Office applications and API requirements}, if you're using the XML manifest. If you're using the Teams manifest (preview), see {@link https://learn.microsoft.com/office/dev/add-ins/develop/json-manifest-overview | Teams manifest for Office Add-ins (preview)}.
     *
     * The initial page must be on the same domain as the parent page (the startAddress parameter). After the initial page loads, you can go to
     * other domains.

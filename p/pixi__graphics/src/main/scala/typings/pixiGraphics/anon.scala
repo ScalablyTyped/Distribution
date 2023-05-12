@@ -12,6 +12,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object anon {
   
   @js.native
+  trait Adaptive extends StObject {
+    
+    def _segmentsCount(length: Double): Double = js.native
+    def _segmentsCount(length: Double, defaultSegments: Double): Double = js.native
+    
+    var adaptive: Boolean = js.native
+    
+    var epsilon: Double = js.native
+    
+    var maxLength: Double = js.native
+    
+    var maxSegments: Double = js.native
+    
+    var minSegments: Double = js.native
+  }
+  
+  @js.native
   trait TypeofArcUtils
     extends StObject
        with Instantiable0[ArcUtils] {
@@ -45,16 +62,14 @@ object anon {
     ): Unit = js.native
     
     /**
-      * The arcTo() method creates an arc/curve between two tangents on the canvas.
-      *
-      * "borrowed" from https://code.google.com/p/fxcanvas/ - thanks google!
+      * Calculate information of the arc for {@link PIXI.Graphics.arcTo}.
       * @private
-      * @param x1 - The x-coordinate of the beginning of the arc
-      * @param y1 - The y-coordinate of the beginning of the arc
-      * @param x2 - The x-coordinate of the end of the arc
-      * @param y2 - The y-coordinate of the end of the arc
+      * @param x1 - The x-coordinate of the first control point of the arc
+      * @param y1 - The y-coordinate of the first control point of the arc
+      * @param x2 - The x-coordinate of the second control point of the arc
+      * @param y2 - The y-coordinate of the second control point of the arc
       * @param radius - The radius of the arc
-      * @param points -
+      * @param points - Collection of points to add to
       * @returns - If the arc length is valid, return center of circle, radius and other info otherwise `null`.
       */
     def curveTo(x1: Double, y1: Double, x2: Double, y2: Double, radius: Double, points: js.Array[Double]): IArcLikeShape = js.native

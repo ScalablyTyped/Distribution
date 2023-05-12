@@ -22,7 +22,7 @@ trait PhysicalResourceId extends StObject {
   var identifier: String255
   
   /**
-    * Specifies the type of physical resource identifier.  Arn  The resource identifier is an Amazon Resource Name (ARN) .  Native  The resource identifier is a Resilience Hub-native identifier.  
+    * Specifies the type of physical resource identifier.  Arn  The resource identifier is an Amazon Resource Name (ARN) .  Native  The resource identifier is an Resilience Hub-native identifier.  
     */
   var `type`: PhysicalIdentifierType
 }

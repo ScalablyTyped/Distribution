@@ -18,7 +18,7 @@ trait ImgParser extends TextureParser {
   
   def _loadImageBitmap(url: Any, originalUrl: Any, crossOrigin: Any, callback: Any): Unit = js.native
   
-  def _loadImageBitmapFromData(data: Any, callback: Any): Unit = js.native
+  def _loadImageBitmapFromBlob(blob: Any, callback: Any): Unit = js.native
   
   var crossOrigin: String = js.native
   
@@ -29,4 +29,5 @@ trait ImgParser extends TextureParser {
   var maxRetries: Double = js.native
   
   def open(url: Any, data: Any, device: Any): Texture = js.native
+  def open(url: Any, data: Any, device: Any, textureOptions: js.Object): Texture = js.native
 }

@@ -2,6 +2,7 @@ package typings.jestEnvironmentVscodeExtension.mod.global.vscode
 
 import typings.vscode.Thenable
 import typings.vscode.anon.Increment
+import typings.vscode.anon.Log
 import typings.vscode.anon.PreserveFocus
 import typings.vscode.anon.QuickPickOptionscanPickMa
 import typings.vscode.anon.SupportsMultipleEditorsPerDocument
@@ -17,6 +18,7 @@ import typings.vscode.mod.ExtensionTerminalOptions
 import typings.vscode.mod.FileDecorationProvider
 import typings.vscode.mod.InputBox
 import typings.vscode.mod.InputBoxOptions
+import typings.vscode.mod.LogOutputChannel
 import typings.vscode.mod.MessageOptions
 import typings.vscode.mod.NotebookDocument
 import typings.vscode.mod.NotebookDocumentShowOptions
@@ -89,6 +91,7 @@ object window {
   
   inline def createOutputChannel(name: String): OutputChannel = ^.asInstanceOf[js.Dynamic].applyDynamic("createOutputChannel")(name.asInstanceOf[js.Any]).asInstanceOf[OutputChannel]
   inline def createOutputChannel(name: String, languageId: String): OutputChannel = (^.asInstanceOf[js.Dynamic].applyDynamic("createOutputChannel")(name.asInstanceOf[js.Any], languageId.asInstanceOf[js.Any])).asInstanceOf[OutputChannel]
+  inline def createOutputChannel(name: String, options: Log): LogOutputChannel = (^.asInstanceOf[js.Dynamic].applyDynamic("createOutputChannel")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[LogOutputChannel]
   
   inline def createQuickPick[T /* <: QuickPickItem */](): QuickPick[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createQuickPick")().asInstanceOf[QuickPick[T]]
   

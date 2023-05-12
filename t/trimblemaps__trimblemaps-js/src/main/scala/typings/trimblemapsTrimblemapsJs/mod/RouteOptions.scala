@@ -1,5 +1,6 @@
 package typings.trimblemapsTrimblemapsJs.mod
 
+import typings.trimblemapsTrimblemapsJs.trimblemapsTrimblemapsJsBooleans.`true`
 import typings.trimblemapsTrimblemapsJs.trimblemapsTrimblemapsJsInts.`0`
 import typings.trimblemapsTrimblemapsJs.trimblemapsTrimblemapsJsInts.`10`
 import typings.trimblemapsTrimblemapsJs.trimblemapsTrimblemapsJsInts.`11`
@@ -113,6 +114,8 @@ trait RouteOptions
   var includeVehicleRestrictedCleanupPoints: js.UndefOr[Boolean] = js.undefined
   
   var isDraggable: js.UndefOr[Boolean] = js.undefined
+  
+  var isVisible: js.UndefOr[`true`] = js.undefined
   
   var originIcon: js.UndefOr[RouteIconOptions] = js.undefined
   
@@ -263,6 +266,10 @@ object RouteOptions {
     inline def setIsDraggable(value: Boolean): Self = StObject.set(x, "isDraggable", value.asInstanceOf[js.Any])
     
     inline def setIsDraggableUndefined: Self = StObject.set(x, "isDraggable", js.undefined)
+    
+    inline def setIsVisible(value: `true`): Self = StObject.set(x, "isVisible", value.asInstanceOf[js.Any])
+    
+    inline def setIsVisibleUndefined: Self = StObject.set(x, "isVisible", js.undefined)
     
     inline def setOriginIcon(value: RouteIconOptions): Self = StObject.set(x, "originIcon", value.asInstanceOf[js.Any])
     

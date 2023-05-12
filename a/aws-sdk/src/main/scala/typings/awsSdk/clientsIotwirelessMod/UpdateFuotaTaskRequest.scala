@@ -12,11 +12,17 @@ trait UpdateFuotaTaskRequest extends StObject {
   
   var FirmwareUpdateRole: js.UndefOr[typings.awsSdk.clientsIotwirelessMod.FirmwareUpdateRole] = js.undefined
   
+  var FragmentIntervalMS: js.UndefOr[typings.awsSdk.clientsIotwirelessMod.FragmentIntervalMS] = js.undefined
+  
+  var FragmentSizeBytes: js.UndefOr[typings.awsSdk.clientsIotwirelessMod.FragmentSizeBytes] = js.undefined
+  
   var Id: FuotaTaskId
   
   var LoRaWAN: js.UndefOr[LoRaWANFuotaTask] = js.undefined
   
   var Name: js.UndefOr[FuotaTaskName] = js.undefined
+  
+  var RedundancyPercent: js.UndefOr[typings.awsSdk.clientsIotwirelessMod.RedundancyPercent] = js.undefined
 }
 object UpdateFuotaTaskRequest {
   
@@ -40,6 +46,14 @@ object UpdateFuotaTaskRequest {
     
     inline def setFirmwareUpdateRoleUndefined: Self = StObject.set(x, "FirmwareUpdateRole", js.undefined)
     
+    inline def setFragmentIntervalMS(value: FragmentIntervalMS): Self = StObject.set(x, "FragmentIntervalMS", value.asInstanceOf[js.Any])
+    
+    inline def setFragmentIntervalMSUndefined: Self = StObject.set(x, "FragmentIntervalMS", js.undefined)
+    
+    inline def setFragmentSizeBytes(value: FragmentSizeBytes): Self = StObject.set(x, "FragmentSizeBytes", value.asInstanceOf[js.Any])
+    
+    inline def setFragmentSizeBytesUndefined: Self = StObject.set(x, "FragmentSizeBytes", js.undefined)
+    
     inline def setId(value: FuotaTaskId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
     inline def setLoRaWAN(value: LoRaWANFuotaTask): Self = StObject.set(x, "LoRaWAN", value.asInstanceOf[js.Any])
@@ -49,5 +63,9 @@ object UpdateFuotaTaskRequest {
     inline def setName(value: FuotaTaskName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    
+    inline def setRedundancyPercent(value: RedundancyPercent): Self = StObject.set(x, "RedundancyPercent", value.asInstanceOf[js.Any])
+    
+    inline def setRedundancyPercentUndefined: Self = StObject.set(x, "RedundancyPercent", js.undefined)
   }
 }

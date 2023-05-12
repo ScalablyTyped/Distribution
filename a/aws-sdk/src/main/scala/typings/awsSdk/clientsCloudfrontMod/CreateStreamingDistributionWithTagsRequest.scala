@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateStreamingDistributionWithTagsRequest extends StObject {
   
   /**
-    *  The streaming distribution's configuration information. 
+    * The streaming distribution's configuration information.
     */
   var StreamingDistributionConfigWithTags: typings.awsSdk.clientsCloudfrontMod.StreamingDistributionConfigWithTags
 }

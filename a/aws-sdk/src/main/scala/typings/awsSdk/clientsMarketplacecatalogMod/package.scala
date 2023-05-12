@@ -62,9 +62,18 @@ type Identifier = String
 
 type Json = String
 
-type MaxResultInteger = Double
+type ListChangeSetsMaxResultInteger = Double
+
+type ListEntitiesMaxResultInteger = Double
 
 type NextToken = String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.SELF
+  - typings.awsSdk.awsSdkStrings.SHARED
+  - java.lang.String
+*/
+type OwnershipType = _OwnershipType | String
 
 type RequestedChangeList = js.Array[Change]
 
@@ -73,6 +82,8 @@ type ResourceARN = String
 type ResourceId = String
 
 type ResourceIdList = js.Array[ResourceId]
+
+type ResourcePolicyJson = String
 
 type SortBy = String
 

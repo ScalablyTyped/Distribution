@@ -13,8 +13,8 @@ object distSrcFilesWriteMod {
   @js.native
   val createWrite: Factory[
     js.Function3[
-      /* path */ String, 
-      /* input */ String | Blob | js.typedarray.Uint8Array | js.Iterable[js.typedarray.Uint8Array] | AsyncIterable[js.typedarray.Uint8Array], 
+      /* ipfsPath */ String, 
+      /* content */ String | Blob | js.typedarray.Uint8Array | js.Iterable[js.typedarray.Uint8Array] | AsyncIterable[js.typedarray.Uint8Array], 
       /* options */ js.UndefOr[
         (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_files.WriteOptions */ Any) & typings.ipfsHttpClient.distSrcTypesMod.HTTPClientExtraOptions
       ], 

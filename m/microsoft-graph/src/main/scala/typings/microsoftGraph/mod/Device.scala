@@ -32,8 +32,8 @@ trait Device
   var complianceExpirationDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
-    * Unique identifier set by Azure Device Registration Service at the time of registration. Supports $filter (eq, ne, not,
-    * startsWith).
+    * Unique identifier set by Azure Device Registration Service at the time of registration. This is an alternate key that
+    * can be used to reference the device object. Supports $filter (eq, ne, not, startsWith).
     */
   var deviceId: js.UndefOr[NullableOption[String]] = js.undefined
   
@@ -97,7 +97,7 @@ trait Device
     */
   var operatingSystemVersion: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // For internal use only. Not nullable. Supports $filter (eq, not, ge, le, startsWith, and counting empty collections).
+  // For internal use only. Not nullable. Supports $filter (eq, not, ge, le, startsWith,/$count eq 0, /$count ne 0).
   var physicalIds: js.UndefOr[js.Array[String]] = js.undefined
   
   // The profile type of the device. Possible values: RegisteredDevice (default), SecureVM, Printer, Shared, IoT.
@@ -105,7 +105,7 @@ trait Device
   
   /**
     * The user that cloud joined the device or registered their personal device. The registered owner is set at the time of
-    * registration. Currently, there can be only one owner. Read-only. Nullable. Supports $expand.
+    * registration. Read-only. Nullable. Supports $expand.
     */
   var registeredOwners: js.UndefOr[NullableOption[js.Array[DirectoryObject]]] = js.undefined
   
@@ -116,7 +116,7 @@ trait Device
     */
   var registeredUsers: js.UndefOr[NullableOption[js.Array[DirectoryObject]]] = js.undefined
   
-  // List of labels applied to the device by the system. Supports $filter (eq when counting empty collections).
+  // List of labels applied to the device by the system. Supports $filter (/$count eq 0, /$count ne 0).
   var systemLabels: js.UndefOr[js.Array[String]] = js.undefined
   
   // Groups and administrative units that the device is a member of. This operation is transitive. Supports $expand.

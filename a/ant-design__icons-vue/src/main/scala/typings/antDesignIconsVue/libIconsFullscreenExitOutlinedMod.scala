@@ -16,7 +16,7 @@ object libIconsFullscreenExitOutlinedMod extends Shortcut {
   @js.native
   trait FullscreenExitOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_FullscreenExitOutlinedIconType: String = js.native

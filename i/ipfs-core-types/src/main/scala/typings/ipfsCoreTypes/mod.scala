@@ -5,6 +5,9 @@ import typings.ipfsCoreTypes.distSrcRefsMod.Refs
 import typings.ipfsCoreTypes.distSrcRefsMod.RefsResult
 import typings.ipfsCoreTypes.distSrcRootMod.API
 import typings.ipfsCoreTypes.distSrcUtilsMod.AbortOptions
+import typings.multiformats.distTypesSrcBasesInterfaceMod.MultibaseCodec
+import typings.multiformats.distTypesSrcCodecsInterfaceMod.BlockCodec
+import typings.multiformats.distTypesSrcHashesInterfaceMod.MultihashHasher
 import typings.std.AsyncIterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,24 +17,13 @@ object mod {
   
   trait Bases extends StObject {
     
-    def getBase(code: String): js.Promise[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MultibaseCodec<any> */ Any
-      ]
+    def getBase(code: String): js.Promise[MultibaseCodec[Any]]
     
-    def listBases(): js.Array[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MultibaseCodec<any> */ Any
-      ]
+    def listBases(): js.Array[MultibaseCodec[Any]]
   }
   object Bases {
     
-    inline def apply(
-      getBase: String => js.Promise[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MultibaseCodec<any> */ Any
-        ],
-      listBases: () => js.Array[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MultibaseCodec<any> */ Any
-        ]
-    ): Bases = {
+    inline def apply(getBase: String => js.Promise[MultibaseCodec[Any]], listBases: () => js.Array[MultibaseCodec[Any]]): Bases = {
       val __obj = js.Dynamic.literal(getBase = js.Any.fromFunction1(getBase), listBases = js.Any.fromFunction0(listBases))
       __obj.asInstanceOf[Bases]
     }
@@ -39,48 +31,28 @@ object mod {
     @scala.inline
     implicit open class MutableBuilder[Self <: Bases] (val x: Self) extends AnyVal {
       
-      inline def setGetBase(
-        value: String => js.Promise[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MultibaseCodec<any> */ Any
-            ]
-      ): Self = StObject.set(x, "getBase", js.Any.fromFunction1(value))
+      inline def setGetBase(value: String => js.Promise[MultibaseCodec[Any]]): Self = StObject.set(x, "getBase", js.Any.fromFunction1(value))
       
-      inline def setListBases(
-        value: () => js.Array[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MultibaseCodec<any> */ Any
-            ]
-      ): Self = StObject.set(x, "listBases", js.Any.fromFunction0(value))
+      inline def setListBases(value: () => js.Array[MultibaseCodec[Any]]): Self = StObject.set(x, "listBases", js.Any.fromFunction0(value))
     }
   }
   
   @js.native
   trait Codecs extends StObject {
     
-    def getCodec(code: String): js.Promise[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BlockCodec<any, any> */ Any
-      ] = js.native
-    def getCodec(code: Double): js.Promise[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BlockCodec<any, any> */ Any
-      ] = js.native
+    def getCodec(code: String): js.Promise[BlockCodec[Any, Any]] = js.native
+    def getCodec(code: Double): js.Promise[BlockCodec[Any, Any]] = js.native
     
-    def listCodecs(): js.Array[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BlockCodec<any, any> */ Any
-      ] = js.native
+    def listCodecs(): js.Array[BlockCodec[Any, Any]] = js.native
   }
   
   @js.native
   trait Hashers extends StObject {
     
-    def getHasher(code: String): js.Promise[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MultihashHasher */ Any
-      ] = js.native
-    def getHasher(code: Double): js.Promise[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MultihashHasher */ Any
-      ] = js.native
+    def getHasher(code: String): js.Promise[MultihashHasher[Double]] = js.native
+    def getHasher(code: Double): js.Promise[MultihashHasher[Double]] = js.native
     
-    def listHashers(): js.Array[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MultihashHasher */ Any
-      ] = js.native
+    def listHashers(): js.Array[MultihashHasher[Double]] = js.native
   }
   
   @js.native

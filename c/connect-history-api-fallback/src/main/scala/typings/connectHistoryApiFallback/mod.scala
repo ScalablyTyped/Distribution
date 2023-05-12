@@ -1,6 +1,7 @@
 package typings.connectHistoryApiFallback
 
 import typings.connectHistoryApiFallback.connectHistoryApiFallbackBooleans.`true`
+import typings.expressServeStaticCore.mod.Request
 import typings.expressServeStaticCore.mod.RequestHandler
 import typings.node.urlMod.Url
 import typings.std.RegExpMatchArray
@@ -22,11 +23,13 @@ object mod {
     val `match`: RegExpMatchArray
     
     val parsedUrl: Url
+    
+    val request: Request
   }
   object Context {
     
-    inline def apply(`match`: RegExpMatchArray, parsedUrl: Url): Context = {
-      val __obj = js.Dynamic.literal(parsedUrl = parsedUrl.asInstanceOf[js.Any])
+    inline def apply(`match`: RegExpMatchArray, parsedUrl: Url, request: Request): Context = {
+      val __obj = js.Dynamic.literal(parsedUrl = parsedUrl.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any])
       __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Context]
     }
@@ -37,6 +40,8 @@ object mod {
       inline def setMatch(value: RegExpMatchArray): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
       
       inline def setParsedUrl(value: Url): Self = StObject.set(x, "parsedUrl", value.asInstanceOf[js.Any])
+      
+      inline def setRequest(value: Request): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     }
   }
   

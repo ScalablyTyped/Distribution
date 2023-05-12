@@ -3,6 +3,7 @@ package typings.mangopay2NodejsSdk.typingsEnumsMod.enums
 import typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.BUSINESS
 import typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.NotSpecified
 import typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.ORGANIZATION
+import typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.PARTNERSHIP
 import typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SOLETRADER
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -16,12 +17,14 @@ trait ILegalPersonType extends StObject {
   
   var Organization: ORGANIZATION
   
+  var Partnership: PARTNERSHIP
+  
   var Soletrader: SOLETRADER
 }
 object ILegalPersonType {
   
   inline def apply(): ILegalPersonType = {
-    val __obj = js.Dynamic.literal(Business = "BUSINESS", NotSpecified = "NotSpecified", Organization = "ORGANIZATION", Soletrader = "SOLETRADER")
+    val __obj = js.Dynamic.literal(Business = "BUSINESS", NotSpecified = "NotSpecified", Organization = "ORGANIZATION", Partnership = "PARTNERSHIP", Soletrader = "SOLETRADER")
     __obj.asInstanceOf[ILegalPersonType]
   }
   
@@ -33,6 +36,8 @@ object ILegalPersonType {
     inline def setNotSpecified(value: NotSpecified): Self = StObject.set(x, "NotSpecified", value.asInstanceOf[js.Any])
     
     inline def setOrganization(value: ORGANIZATION): Self = StObject.set(x, "Organization", value.asInstanceOf[js.Any])
+    
+    inline def setPartnership(value: PARTNERSHIP): Self = StObject.set(x, "Partnership", value.asInstanceOf[js.Any])
     
     inline def setSoletrader(value: SOLETRADER): Self = StObject.set(x, "Soletrader", value.asInstanceOf[js.Any])
   }

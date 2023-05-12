@@ -11,6 +11,8 @@ trait GetBatchJobExecutionResponse extends StObject {
     */
   var applicationId: Identifier
   
+  var batchJobIdentifier: js.UndefOr[BatchJobIdentifier] = js.undefined
+  
   /**
     * The timestamp when the batch job execution ended.
     */
@@ -40,6 +42,11 @@ trait GetBatchJobExecutionResponse extends StObject {
     * The user for the job.
     */
   var jobUser: js.UndefOr[String100] = js.undefined
+  
+  /**
+    * 
+    */
+  var returnCode: js.UndefOr[String] = js.undefined
   
   /**
     * The timestamp when the batch job execution started.
@@ -73,6 +80,10 @@ object GetBatchJobExecutionResponse {
     
     inline def setApplicationId(value: Identifier): Self = StObject.set(x, "applicationId", value.asInstanceOf[js.Any])
     
+    inline def setBatchJobIdentifier(value: BatchJobIdentifier): Self = StObject.set(x, "batchJobIdentifier", value.asInstanceOf[js.Any])
+    
+    inline def setBatchJobIdentifierUndefined: Self = StObject.set(x, "batchJobIdentifier", js.undefined)
+    
     inline def setEndTime(value: js.Date): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
     inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
@@ -94,6 +105,10 @@ object GetBatchJobExecutionResponse {
     inline def setJobUser(value: String100): Self = StObject.set(x, "jobUser", value.asInstanceOf[js.Any])
     
     inline def setJobUserUndefined: Self = StObject.set(x, "jobUser", js.undefined)
+    
+    inline def setReturnCode(value: String): Self = StObject.set(x, "returnCode", value.asInstanceOf[js.Any])
+    
+    inline def setReturnCodeUndefined: Self = StObject.set(x, "returnCode", js.undefined)
     
     inline def setStartTime(value: js.Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     

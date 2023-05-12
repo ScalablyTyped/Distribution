@@ -32,9 +32,7 @@ trait Versioncount extends StObject {
     */
   var name: String
   
-  var owner: js.UndefOr[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-simple-user'] */ js.Any
-  ] = js.undefined
+  var owner: js.UndefOr[Avatarurl | Null] = js.undefined
   
   /**
     * @example docker
@@ -42,9 +40,7 @@ trait Versioncount extends StObject {
     */
   var package_type: npm | maven | rubygems | docker | nuget | container
   
-  var repository: js.UndefOr[
-    /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-minimal-repository'] */ js.Any
-  ] = js.undefined
+  var repository: js.UndefOr[Branchesurl | Null] = js.undefined
   
   /** Format: date-time */
   var updated_at: String
@@ -92,17 +88,17 @@ object Versioncount {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    inline def setOwner(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-simple-user'] */ js.Any
-    ): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: Avatarurl): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerNull: Self = StObject.set(x, "owner", null)
     
     inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
     inline def setPackage_type(value: npm | maven | rubygems | docker | nuget | container): Self = StObject.set(x, "package_type", value.asInstanceOf[js.Any])
     
-    inline def setRepository(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['nullable-minimal-repository'] */ js.Any
-    ): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
+    inline def setRepository(value: Branchesurl): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
+    
+    inline def setRepositoryNull: Self = StObject.set(x, "repository", null)
     
     inline def setRepositoryUndefined: Self = StObject.set(x, "repository", js.undefined)
     

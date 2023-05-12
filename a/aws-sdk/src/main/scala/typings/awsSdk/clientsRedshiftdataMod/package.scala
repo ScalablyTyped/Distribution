@@ -14,6 +14,8 @@ type BoxedDouble = Double
 
 type BoxedLong = Double
 
+type ClientToken = java.lang.String
+
 type ColumnList = js.Array[ColumnMetadata]
 
 type ColumnMetadataList = js.Array[ColumnMetadata]

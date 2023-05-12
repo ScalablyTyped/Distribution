@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "idb-keyval" : "6.2.0"
+      "idb-keyval" : "6.2.1"
     }
   ],
   "test-dependencies" : [
     {
-      "idb-keyval" : "6.2.0"
+      "idb-keyval" : "6.2.1"
     }
   ],
   "compile-devDependencies" : [

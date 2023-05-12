@@ -26,7 +26,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * using workspace-based APIs for organizations. Currently, and until after
   * some reasonable grace period following any further announcements, you can
   * still reference organizations in any `workspace` parameter.
-  * @class
   * @param {Dispatcher} dispatcher The API dispatcher
   */
 @js.native

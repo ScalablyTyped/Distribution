@@ -36,6 +36,7 @@ import typings.blueprintjsCore.libEsmCommonUtilsCompareUtilsMod.KeyDenylist
 import typings.blueprintjsCore.libEsmCommonUtilsDomUtilsMod.IThrottledReactEventOptions
 import typings.blueprintjsCore.libEsmCommonUtilsReactUtilsMod.INamed
 import typings.react.mod.ComponentType
+import typings.react.mod.KeyboardEvent
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import typings.react.mod.Ref
@@ -235,6 +236,10 @@ object libEsmCommonMod {
     @js.native
     val COLLAPSIBLE_LIST: String = js.native
     
+    @JSImport("@blueprintjs/core/lib/esm/common", "Classes.COMPACT")
+    @js.native
+    val COMPACT: String = js.native
+    
     @JSImport("@blueprintjs/core/lib/esm/common", "Classes.CONTEXT_MENU")
     @js.native
     val CONTEXT_MENU: String = js.native
@@ -271,6 +276,10 @@ object libEsmCommonMod {
     @js.native
     val DIALOG_BODY: String = js.native
     
+    @JSImport("@blueprintjs/core/lib/esm/common", "Classes.DIALOG_BODY_SCROLL_CONTAINER")
+    @js.native
+    val DIALOG_BODY_SCROLL_CONTAINER: String = js.native
+    
     @JSImport("@blueprintjs/core/lib/esm/common", "Classes.DIALOG_CLOSE_BUTTON")
     @js.native
     val DIALOG_CLOSE_BUTTON: String = js.native
@@ -286,6 +295,14 @@ object libEsmCommonMod {
     @JSImport("@blueprintjs/core/lib/esm/common", "Classes.DIALOG_FOOTER_ACTIONS")
     @js.native
     val DIALOG_FOOTER_ACTIONS: String = js.native
+    
+    @JSImport("@blueprintjs/core/lib/esm/common", "Classes.DIALOG_FOOTER_FIXED")
+    @js.native
+    val DIALOG_FOOTER_FIXED: String = js.native
+    
+    @JSImport("@blueprintjs/core/lib/esm/common", "Classes.DIALOG_FOOTER_MAIN_SECTION")
+    @js.native
+    val DIALOG_FOOTER_MAIN_SECTION: String = js.native
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Classes.DIALOG_HEADER")
     @js.native
@@ -835,6 +852,14 @@ object libEsmCommonMod {
     @js.native
     val RADIO: String = js.native
     
+    @JSImport("@blueprintjs/core/lib/esm/common", "Classes.READ_ONLY")
+    @js.native
+    val READ_ONLY: String = js.native
+    
+    @JSImport("@blueprintjs/core/lib/esm/common", "Classes.RESIZABLE_INPUT_SPAN")
+    @js.native
+    val RESIZABLE_INPUT_SPAN: String = js.native
+    
     @JSImport("@blueprintjs/core/lib/esm/common", "Classes.ROUND")
     @js.native
     val ROUND: String = js.native
@@ -927,6 +952,10 @@ object libEsmCommonMod {
     @js.native
     val TABS: String = js.native
     
+    @JSImport("@blueprintjs/core/lib/esm/common", "Classes.TAB_ICON")
+    @js.native
+    val TAB_ICON: String = js.native
+    
     @JSImport("@blueprintjs/core/lib/esm/common", "Classes.TAB_INDICATOR")
     @js.native
     val TAB_INDICATOR: String = js.native
@@ -942,6 +971,10 @@ object libEsmCommonMod {
     @JSImport("@blueprintjs/core/lib/esm/common", "Classes.TAB_PANEL")
     @js.native
     val TAB_PANEL: String = js.native
+    
+    @JSImport("@blueprintjs/core/lib/esm/common", "Classes.TAB_TAG")
+    @js.native
+    val TAB_TAG: String = js.native
     
     @JSImport("@blueprintjs/core/lib/esm/common", "Classes.TAG")
     @js.native
@@ -1311,6 +1344,8 @@ object libEsmCommonMod {
     
     inline def clamp(`val`: Double, min: Double, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("clamp")(`val`.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
     
+    inline def clickElementOnKeyPress(keys: js.Array[String]): js.Function1[/* e */ KeyboardEvent[Element], Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("clickElementOnKeyPress")(keys.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* e */ KeyboardEvent[Element], Boolean]]
+    
     inline def countDecimalPlaces(num: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("countDecimalPlaces")(num.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     inline def deepCompareKeys(objA: Any, objB: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("deepCompareKeys")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
@@ -1318,15 +1353,17 @@ object libEsmCommonMod {
     
     inline def elementIsOrContains(element: HTMLElement, testElement: HTMLElement): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("elementIsOrContains")(element.asInstanceOf[js.Any], testElement.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
+    inline def elementIsTextInput(elem: HTMLElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("elementIsTextInput")(elem.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    
     inline def ensureElement(): js.UndefOr[ReactElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureElement")().asInstanceOf[js.UndefOr[ReactElement]]
     inline def ensureElement(
       child: Unit,
-      tagName: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175, starting with typings.blueprintjsCore.blueprintjsCoreStrings.a, typings.blueprintjsCore.blueprintjsCoreStrings.abbr, typings.blueprintjsCore.blueprintjsCoreStrings.address */ Any
+      tagName: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.blueprintjsCore.blueprintjsCoreStrings.a, typings.blueprintjsCore.blueprintjsCoreStrings.abbr, typings.blueprintjsCore.blueprintjsCoreStrings.address */ Any
     ): js.UndefOr[ReactElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureElement")(child.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ReactElement]]
     inline def ensureElement(child: ReactNode): js.UndefOr[ReactElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureElement")(child.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[ReactElement]]
     inline def ensureElement(
       child: ReactNode,
-      tagName: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175, starting with typings.blueprintjsCore.blueprintjsCoreStrings.a, typings.blueprintjsCore.blueprintjsCoreStrings.abbr, typings.blueprintjsCore.blueprintjsCoreStrings.address */ Any
+      tagName: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176, starting with typings.blueprintjsCore.blueprintjsCoreStrings.a, typings.blueprintjsCore.blueprintjsCoreStrings.abbr, typings.blueprintjsCore.blueprintjsCoreStrings.address */ Any
     ): js.UndefOr[ReactElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureElement")(child.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ReactElement]]
     
     inline def getActiveElement(): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getActiveElement")().asInstanceOf[Element | Null]

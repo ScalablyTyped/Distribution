@@ -43,7 +43,9 @@ import typings.react.mod.OutputHTMLAttributes
 import typings.react.mod.ParamHTMLAttributes
 import typings.react.mod.ProgressHTMLAttributes
 import typings.react.mod.QuoteHTMLAttributes
+import typings.react.mod.SVGLineElementAttributes
 import typings.react.mod.SVGProps
+import typings.react.mod.SVGTextElementAttributes
 import typings.react.mod.ScriptHTMLAttributes
 import typings.react.mod.SelectHTMLAttributes
 import typings.react.mod.SlotHTMLAttributes
@@ -262,6 +264,8 @@ object mod extends Shortcut {
       ]
     
     var caption: CreateStyledComponent[As, DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], js.Object]
+    
+    var center: CreateStyledComponent[As, DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], js.Object]
     
     var circle: CreateStyledComponent[As, SVGProps[SVGCircleElement], js.Object]
     
@@ -499,7 +503,7 @@ object mod extends Shortcut {
     
     var li: CreateStyledComponent[As, DetailedHTMLProps[LiHTMLAttributes[HTMLLIElement], HTMLLIElement], js.Object]
     
-    var line: CreateStyledComponent[As, SVGProps[SVGLineElement], js.Object]
+    var line: CreateStyledComponent[As, SVGLineElementAttributes[SVGLineElement], js.Object]
     
     var linearGradient: CreateStyledComponent[As, SVGProps[SVGLinearGradientElement], js.Object]
     
@@ -701,7 +705,7 @@ object mod extends Shortcut {
         js.Object
       ]
     
-    var text: CreateStyledComponent[As, SVGProps[SVGTextElement], js.Object]
+    var text: CreateStyledComponent[As, SVGTextElementAttributes[SVGTextElement], js.Object]
     
     var textPath: CreateStyledComponent[As, SVGProps[SVGTextPathElement], js.Object]
     
@@ -885,6 +889,10 @@ object mod extends Shortcut {
       inline def setCaption(
         value: CreateStyledComponent[As, DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], js.Object]
       ): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
+      
+      inline def setCenter(
+        value: CreateStyledComponent[As, DetailedHTMLProps[HTMLAttributes[HTMLElement], HTMLElement], js.Object]
+      ): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
       
       inline def setCircle(value: CreateStyledComponent[As, SVGProps[SVGCircleElement], js.Object]): Self = StObject.set(x, "circle", value.asInstanceOf[js.Any])
       
@@ -1206,7 +1214,7 @@ object mod extends Shortcut {
         value: CreateStyledComponent[As, DetailedHTMLProps[LiHTMLAttributes[HTMLLIElement], HTMLLIElement], js.Object]
       ): Self = StObject.set(x, "li", value.asInstanceOf[js.Any])
       
-      inline def setLine(value: CreateStyledComponent[As, SVGProps[SVGLineElement], js.Object]): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      inline def setLine(value: CreateStyledComponent[As, SVGLineElementAttributes[SVGLineElement], js.Object]): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
       
       inline def setLinearGradient(value: CreateStyledComponent[As, SVGProps[SVGLinearGradientElement], js.Object]): Self = StObject.set(x, "linearGradient", value.asInstanceOf[js.Any])
       
@@ -1494,7 +1502,7 @@ object mod extends Shortcut {
             ]
       ): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
       
-      inline def setText(value: CreateStyledComponent[As, SVGProps[SVGTextElement], js.Object]): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: CreateStyledComponent[As, SVGTextElementAttributes[SVGTextElement], js.Object]): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
       inline def setTextPath(value: CreateStyledComponent[As, SVGProps[SVGTextPathElement], js.Object]): Self = StObject.set(x, "textPath", value.asInstanceOf[js.Any])
       

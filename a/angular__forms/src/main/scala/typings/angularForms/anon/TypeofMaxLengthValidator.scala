@@ -22,7 +22,8 @@ trait TypeofMaxLengthValidator
     js.Object, 
     scala.Nothing, 
     scala.Nothing, 
-    `false`
+    `false`, 
+    scala.Nothing
   ] = js.native
   
   var ɵfac: ɵɵFactoryDeclaration[MaxLengthValidator, scala.Nothing] = js.native

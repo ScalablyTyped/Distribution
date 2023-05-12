@@ -22,21 +22,7 @@ trait Utils extends StObject {
   def add(l: Double, r: Double, t: String): js.Date | Double = js.native
   def add(l: Double, r: Double, t: js.Function): js.Date | Double = js.native
   
-  def appendOrSelect(
-    parent: Selection_[
-      Any, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-      BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-    ],
-    selector: String,
-    tag: String
-  ): Selection_[
-    Any, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ Any, 
-    BaseType, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ Any
-  ] = js.native
+  def appendOrSelect(parent: Selection_[BaseType, Any, BaseType, Any], selector: String, tag: String): Selection_[BaseType, Any, BaseType, Any] = js.native
   
   def arraysEqual(): Boolean = js.native
   def arraysEqual(a1: js.Array[Any]): Boolean = js.native

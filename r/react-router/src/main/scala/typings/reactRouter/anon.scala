@@ -1,8 +1,9 @@
 package typings.reactRouter
 
 import typings.reactRouter.distLibContextMod.DataRouteObject
-import typings.reactRouter.distLibContextMod.RelativeRoutingType
+import typings.remixRunRouter.distHistoryMod.InitialEntry
 import typings.remixRunRouter.distRouterMod.HydrationState
+import typings.remixRunRouter.distRouterMod.RelativeRoutingType
 import typings.remixRunRouter.distRouterMod.RevalidationState
 import typings.remixRunRouter.distUtilsMod.Params
 import org.scalablytyped.runtime.StObject
@@ -15,9 +16,11 @@ object anon {
     
     var basename: js.UndefOr[String] = js.undefined
     
+    var future: js.UndefOr[PartialOmitFutureConfigv7] = js.undefined
+    
     var hydrationData: js.UndefOr[HydrationState] = js.undefined
     
-    var initialEntries: js.UndefOr[js.Array[String]] = js.undefined
+    var initialEntries: js.UndefOr[js.Array[InitialEntry]] = js.undefined
     
     var initialIndex: js.UndefOr[Double] = js.undefined
   }
@@ -35,15 +38,19 @@ object anon {
       
       inline def setBasenameUndefined: Self = StObject.set(x, "basename", js.undefined)
       
+      inline def setFuture(value: PartialOmitFutureConfigv7): Self = StObject.set(x, "future", value.asInstanceOf[js.Any])
+      
+      inline def setFutureUndefined: Self = StObject.set(x, "future", js.undefined)
+      
       inline def setHydrationData(value: HydrationState): Self = StObject.set(x, "hydrationData", value.asInstanceOf[js.Any])
       
       inline def setHydrationDataUndefined: Self = StObject.set(x, "hydrationData", js.undefined)
       
-      inline def setInitialEntries(value: js.Array[String]): Self = StObject.set(x, "initialEntries", value.asInstanceOf[js.Any])
+      inline def setInitialEntries(value: js.Array[InitialEntry]): Self = StObject.set(x, "initialEntries", value.asInstanceOf[js.Any])
       
       inline def setInitialEntriesUndefined: Self = StObject.set(x, "initialEntries", js.undefined)
       
-      inline def setInitialEntriesVarargs(value: String*): Self = StObject.set(x, "initialEntries", js.Array(value*))
+      inline def setInitialEntriesVarargs(value: InitialEntry*): Self = StObject.set(x, "initialEntries", js.Array(value*))
       
       inline def setInitialIndex(value: Double): Self = StObject.set(x, "initialIndex", value.asInstanceOf[js.Any])
       
@@ -129,16 +136,40 @@ object anon {
     }
   }
   
+  trait HasErrorBoundary extends StObject {
+    
+    var hasErrorBoundary: Boolean
+  }
+  object HasErrorBoundary {
+    
+    inline def apply(hasErrorBoundary: Boolean): HasErrorBoundary = {
+      val __obj = js.Dynamic.literal(hasErrorBoundary = hasErrorBoundary.asInstanceOf[js.Any])
+      __obj.asInstanceOf[HasErrorBoundary]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HasErrorBoundary] (val x: Self) extends AnyVal {
+      
+      inline def setHasErrorBoundary(value: Boolean): Self = StObject.set(x, "hasErrorBoundary", value.asInstanceOf[js.Any])
+    }
+  }
+  
   trait Location extends StObject {
     
     var error: Any
     
     var location: typings.remixRunRouter.distHistoryMod.Location
+    
+    var revalidation: RevalidationState
   }
   object Location {
     
-    inline def apply(error: Any, location: typings.remixRunRouter.distHistoryMod.Location): Location = {
-      val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any])
+    inline def apply(
+      error: Any,
+      location: typings.remixRunRouter.distHistoryMod.Location,
+      revalidation: RevalidationState
+    ): Location = {
+      val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], revalidation = revalidation.asInstanceOf[js.Any])
       __obj.asInstanceOf[Location]
     }
     
@@ -148,6 +179,8 @@ object anon {
       inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
       inline def setLocation(value: typings.remixRunRouter.distHistoryMod.Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      
+      inline def setRevalidation(value: RevalidationState): Self = StObject.set(x, "revalidation", value.asInstanceOf[js.Any])
     }
   }
   
@@ -193,6 +226,27 @@ object anon {
       inline def setState(value: Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
       inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    }
+  }
+  
+  /* Inlined std.Partial<std.Omit<@remix-run/router.@remix-run/router.FutureConfig, 'v7_prependBasename'>> */
+  trait PartialOmitFutureConfigv7 extends StObject {
+    
+    var v7_normalizeFormMethod: js.UndefOr[Boolean] = js.undefined
+  }
+  object PartialOmitFutureConfigv7 {
+    
+    inline def apply(): PartialOmitFutureConfigv7 = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[PartialOmitFutureConfigv7]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialOmitFutureConfigv7] (val x: Self) extends AnyVal {
+      
+      inline def setV7_normalizeFormMethod(value: Boolean): Self = StObject.set(x, "v7_normalizeFormMethod", value.asInstanceOf[js.Any])
+      
+      inline def setV7_normalizeFormMethodUndefined: Self = StObject.set(x, "v7_normalizeFormMethod", js.undefined)
     }
   }
   

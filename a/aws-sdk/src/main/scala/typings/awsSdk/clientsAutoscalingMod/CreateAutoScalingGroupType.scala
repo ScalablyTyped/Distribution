@@ -32,7 +32,7 @@ trait CreateAutoScalingGroupType extends StObject {
   var DefaultCooldown: js.UndefOr[Cooldown] = js.undefined
   
   /**
-    * The amount of time, in seconds, until a newly launched instance can contribute to the Amazon CloudWatch metrics. This delay lets an instance finish initializing before Amazon EC2 Auto Scaling aggregates instance metrics, resulting in more reliable usage data. Set this value equal to the amount of time that it takes for resource consumption to become stable after an instance reaches the InService state. For more information, see Set the default instance warmup for an Auto Scaling group in the Amazon EC2 Auto Scaling User Guide.  To manage your warm-up settings at the group level, we recommend that you set the default instance warmup, even if its value is set to 0 seconds. This also optimizes the performance of scaling policies that scale continuously, such as target tracking and step scaling policies.  If you need to remove a value that you previously set, include the property but specify -1 for the value. However, we strongly recommend keeping the default instance warmup enabled by specifying a minimum value of 0.  Default: None 
+    * The amount of time, in seconds, until a new instance is considered to have finished initializing and resource consumption to become stable after it enters the InService state.  During an instance refresh, Amazon EC2 Auto Scaling waits for the warm-up period after it replaces an instance before it moves on to replacing the next instance. Amazon EC2 Auto Scaling also waits for the warm-up period before aggregating the metrics for new instances with existing instances in the Amazon CloudWatch metrics that are used for scaling, resulting in more reliable usage data. For more information, see Set the default instance warmup for an Auto Scaling group in the Amazon EC2 Auto Scaling User Guide.  To manage various warm-up settings at the group level, we recommend that you set the default instance warmup, even if it is set to 0 seconds. To remove a value that you previously set, include the property but specify -1 for the value. However, we strongly recommend keeping the default instance warmup enabled by specifying a value of 0 or other nominal value.  Default: None 
     */
   var DefaultInstanceWarmup: js.UndefOr[typings.awsSdk.clientsAutoscalingMod.DefaultInstanceWarmup] = js.undefined
   
@@ -47,12 +47,12 @@ trait CreateAutoScalingGroupType extends StObject {
   var DesiredCapacityType: js.UndefOr[XmlStringMaxLen255] = js.undefined
   
   /**
-    * The amount of time, in seconds, that Amazon EC2 Auto Scaling waits before checking the health status of an EC2 instance that has come into service and marking it unhealthy due to a failed Elastic Load Balancing or custom health check. This is useful if your instances do not immediately pass these health checks after they enter the InService state. For more information, see Set the health check grace period for an Auto Scaling group in the Amazon EC2 Auto Scaling User Guide. Default: 0 seconds
+    * The amount of time, in seconds, that Amazon EC2 Auto Scaling waits before checking the health status of an EC2 instance that has come into service and marking it unhealthy due to a failed health check. This is useful if your instances do not immediately pass their health checks after they enter the InService state. For more information, see Set the health check grace period for an Auto Scaling group in the Amazon EC2 Auto Scaling User Guide. Default: 0 seconds
     */
   var HealthCheckGracePeriod: js.UndefOr[typings.awsSdk.clientsAutoscalingMod.HealthCheckGracePeriod] = js.undefined
   
   /**
-    * The service to use for the health checks. The valid values are EC2 (default) and ELB. If you configure an Auto Scaling group to use load balancer (ELB) health checks, it considers the instance unhealthy if it fails either the EC2 status checks or the load balancer health checks. For more information, see Health checks for Auto Scaling instances in the Amazon EC2 Auto Scaling User Guide.
+    * A comma-separated value string of one or more health check types. The valid values are EC2, ELB, and VPC_LATTICE. EC2 is the default health check and cannot be disabled. For more information, see Health checks for Auto Scaling instances in the Amazon EC2 Auto Scaling User Guide. Only specify EC2 if you must clear a value that was previously set.
     */
   var HealthCheckType: js.UndefOr[XmlStringMaxLen32] = js.undefined
   
@@ -77,7 +77,7 @@ trait CreateAutoScalingGroupType extends StObject {
   var LifecycleHookSpecificationList: js.UndefOr[LifecycleHookSpecifications] = js.undefined
   
   /**
-    * A list of Classic Load Balancers associated with this Auto Scaling group. For Application Load Balancers, Network Load Balancers, and Gateway Load Balancer, specify the TargetGroupARNs property instead.
+    * A list of Classic Load Balancers associated with this Auto Scaling group. For Application Load Balancers, Network Load Balancers, and Gateway Load Balancers, specify the TargetGroupARNs property instead.
     */
   var LoadBalancerNames: js.UndefOr[typings.awsSdk.clientsAutoscalingMod.LoadBalancerNames] = js.undefined
   
@@ -122,7 +122,7 @@ trait CreateAutoScalingGroupType extends StObject {
   var Tags: js.UndefOr[typings.awsSdk.clientsAutoscalingMod.Tags] = js.undefined
   
   /**
-    * The Amazon Resource Names (ARN) of the target groups to associate with the Auto Scaling group. Instances are registered as targets with the target groups. The target groups receive incoming traffic and route requests to one or more registered targets. For more information, see Use Elastic Load Balancing to distribute traffic across the instances in your Auto Scaling group in the Amazon EC2 Auto Scaling User Guide.
+    * The Amazon Resource Names (ARN) of the Elastic Load Balancing target groups to associate with the Auto Scaling group. Instances are registered as targets with the target groups. The target groups receive incoming traffic and route requests to one or more registered targets. For more information, see Use Elastic Load Balancing to distribute traffic across the instances in your Auto Scaling group in the Amazon EC2 Auto Scaling User Guide.
     */
   var TargetGroupARNs: js.UndefOr[typings.awsSdk.clientsAutoscalingMod.TargetGroupARNs] = js.undefined
   
@@ -130,6 +130,11 @@ trait CreateAutoScalingGroupType extends StObject {
     * A policy or a list of policies that are used to select the instance to terminate. These policies are executed in the order that you list them. For more information, see Work with Amazon EC2 Auto Scaling termination policies in the Amazon EC2 Auto Scaling User Guide. Valid values: Default | AllocationStrategy | ClosestToNextInstanceHour | NewestInstance | OldestInstance | OldestLaunchConfiguration | OldestLaunchTemplate | arn:aws:lambda:region:account-id:function:my-function:my-alias 
     */
   var TerminationPolicies: js.UndefOr[typings.awsSdk.clientsAutoscalingMod.TerminationPolicies] = js.undefined
+  
+  /**
+    * The list of traffic sources to attach to this Auto Scaling group. You can use any of the following as traffic sources for an Auto Scaling group: Classic Load Balancer, Application Load Balancer, Gateway Load Balancer, Network Load Balancer, and VPC Lattice.
+    */
+  var TrafficSources: js.UndefOr[typings.awsSdk.clientsAutoscalingMod.TrafficSources] = js.undefined
   
   /**
     * A comma-separated list of subnet IDs for a virtual private cloud (VPC) where instances in the Auto Scaling group can be created. If you specify VPCZoneIdentifier with AvailabilityZones, the subnets that you specify must reside in those Availability Zones.
@@ -255,6 +260,12 @@ object CreateAutoScalingGroupType {
     inline def setTerminationPoliciesUndefined: Self = StObject.set(x, "TerminationPolicies", js.undefined)
     
     inline def setTerminationPoliciesVarargs(value: XmlStringMaxLen1600*): Self = StObject.set(x, "TerminationPolicies", js.Array(value*))
+    
+    inline def setTrafficSources(value: TrafficSources): Self = StObject.set(x, "TrafficSources", value.asInstanceOf[js.Any])
+    
+    inline def setTrafficSourcesUndefined: Self = StObject.set(x, "TrafficSources", js.undefined)
+    
+    inline def setTrafficSourcesVarargs(value: TrafficSourceIdentifier*): Self = StObject.set(x, "TrafficSources", js.Array(value*))
     
     inline def setVPCZoneIdentifier(value: XmlStringMaxLen2047): Self = StObject.set(x, "VPCZoneIdentifier", value.asInstanceOf[js.Any])
     

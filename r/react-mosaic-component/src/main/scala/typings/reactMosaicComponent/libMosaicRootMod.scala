@@ -22,7 +22,7 @@ object libMosaicRootMod {
     def this(props: MosaicRootProps[T]) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: MosaicRootProps[T], context: Any) = this()
     

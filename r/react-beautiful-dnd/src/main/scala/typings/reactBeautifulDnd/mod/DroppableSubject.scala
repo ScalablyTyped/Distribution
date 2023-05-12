@@ -12,12 +12,12 @@ trait DroppableSubject extends StObject {
   // - with any additional droppable placeholder
   // - clipped by frame
   // The subject will be null if the hit area is completely empty
-  var active: js.UndefOr[Rect] = js.undefined
+  var active: js.UndefOr[Rect | Null] = js.undefined
   
   // raw, unchanging
   var page: BoxModel
   
-  var withPlaceholder: js.UndefOr[PlaceholderInSubject] = js.undefined
+  var withPlaceholder: js.UndefOr[PlaceholderInSubject | Null] = js.undefined
 }
 object DroppableSubject {
   
@@ -31,11 +31,15 @@ object DroppableSubject {
     
     inline def setActive(value: Rect): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
+    inline def setActiveNull: Self = StObject.set(x, "active", null)
+    
     inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
     inline def setPage(value: BoxModel): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
     inline def setWithPlaceholder(value: PlaceholderInSubject): Self = StObject.set(x, "withPlaceholder", value.asInstanceOf[js.Any])
+    
+    inline def setWithPlaceholderNull: Self = StObject.set(x, "withPlaceholder", null)
     
     inline def setWithPlaceholderUndefined: Self = StObject.set(x, "withPlaceholder", js.undefined)
   }

@@ -33,7 +33,7 @@ object mod {
     def this(props: FluentLinkProps[NavigationInfo, Key]) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: FluentLinkProps[NavigationInfo, Key], context: Any) = this()
   }
@@ -45,7 +45,7 @@ object mod {
     def this(props: NavigationBackLinkProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: NavigationBackLinkProps, context: Any) = this()
   }
@@ -62,7 +62,7 @@ object mod {
     def this(props: NavigationHandlerProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: NavigationHandlerProps, context: Any) = this()
   }
@@ -74,7 +74,7 @@ object mod {
     def this(props: NavigationLinkProps[NavigationInfo, StateKey]) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: NavigationLinkProps[NavigationInfo, StateKey], context: Any) = this()
   }
@@ -86,7 +86,7 @@ object mod {
     def this(props: RefreshLinkProps[NavigationInfo, Key]) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: RefreshLinkProps[NavigationInfo, Key], context: Any) = this()
   }
@@ -98,7 +98,7 @@ object mod {
     def this(props: SceneViewProps[NavigationInfo]) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: SceneViewProps[NavigationInfo], context: Any) = this()
   }

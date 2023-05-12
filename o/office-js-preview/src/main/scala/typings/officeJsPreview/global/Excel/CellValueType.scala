@@ -33,6 +33,8 @@ object CellValueType extends StObject {
   
   /* "LinkedEntity" */ val linkedEntity: typings.officeJsPreview.Excel.CellValueType.linkedEntity & String = js.native
   
+  /* "LocalImage" */ val localImage: typings.officeJsPreview.Excel.CellValueType.localImage & String = js.native
+  
   /* "NotAvailable" */ val notAvailable: typings.officeJsPreview.Excel.CellValueType.notAvailable & String = js.native
   
   /* "Reference" */ val reference: typings.officeJsPreview.Excel.CellValueType.reference & String = js.native

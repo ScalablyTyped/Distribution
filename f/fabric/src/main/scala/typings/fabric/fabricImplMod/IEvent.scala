@@ -1,6 +1,5 @@
 package typings.fabric.fabricImplMod
 
-import typings.fabric.anon.Corner
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,11 +9,15 @@ trait IEvent[E /* <: Event */] extends StObject {
   
   var absolutePointer: js.UndefOr[Point] = js.undefined
   
+  var action: js.UndefOr[String] = js.undefined
+  
   var button: js.UndefOr[Double] = js.undefined
   
   var currentSubTargets: js.UndefOr[js.Array[Object]] = js.undefined
   
   var currentTarget: js.UndefOr[Object] = js.undefined
+  
+  var deselected: js.UndefOr[js.Array[Object]] = js.undefined
   
   var e: E
   
@@ -28,7 +31,7 @@ trait IEvent[E /* <: Event */] extends StObject {
   
   var target: js.UndefOr[Object] = js.undefined
   
-  var transform: js.UndefOr[Corner] = js.undefined
+  var transform: js.UndefOr[Transform] = js.undefined
 }
 object IEvent {
   
@@ -44,6 +47,10 @@ object IEvent {
     
     inline def setAbsolutePointerUndefined: Self = StObject.set(x, "absolutePointer", js.undefined)
     
+    inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    
+    inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+    
     inline def setButton(value: Double): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     
     inline def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
@@ -57,6 +64,12 @@ object IEvent {
     inline def setCurrentTarget(value: Object): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
     
     inline def setCurrentTargetUndefined: Self = StObject.set(x, "currentTarget", js.undefined)
+    
+    inline def setDeselected(value: js.Array[Object]): Self = StObject.set(x, "deselected", value.asInstanceOf[js.Any])
+    
+    inline def setDeselectedUndefined: Self = StObject.set(x, "deselected", js.undefined)
+    
+    inline def setDeselectedVarargs(value: Object*): Self = StObject.set(x, "deselected", js.Array(value*))
     
     inline def setE(value: E): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
     
@@ -84,7 +97,7 @@ object IEvent {
     
     inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     
-    inline def setTransform(value: Corner): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+    inline def setTransform(value: Transform): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
     
     inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
   }

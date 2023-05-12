@@ -7,8 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("THREE.DodecahedronGeometry")
 @js.native
 /**
-  * @param [radius=1]
-  * @param [detail=0]
+  * Create a new instance of {@link DodecahedronGeometry}
+  * @param radius Radius of the dodecahedron. Expects a `Float`. Default `1`
+  * @param detail Setting this to a value greater than 0 adds vertices making it no longer a dodecahedron. Expects a `Integer`. Default `0`
   */
 open class DodecahedronGeometry ()
   extends typings.three.mod.DodecahedronGeometry {
@@ -23,5 +24,6 @@ object DodecahedronGeometry {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def fromJSON(data: Any): typings.three.srcGeometriesDodecahedronGeometryMod.DodecahedronGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(data.asInstanceOf[js.Any]).asInstanceOf[typings.three.srcGeometriesDodecahedronGeometryMod.DodecahedronGeometry]
+  /** @internal */
+  inline def fromJSON(data: js.Object): typings.three.srcGeometriesDodecahedronGeometryMod.DodecahedronGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(data.asInstanceOf[js.Any]).asInstanceOf[typings.three.srcGeometriesDodecahedronGeometryMod.DodecahedronGeometry]
 }

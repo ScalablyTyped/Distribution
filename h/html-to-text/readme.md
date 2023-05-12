@@ -1,7 +1,7 @@
 
 # Scala.js typings for html-to-text
 
-Typings are for version 8.1
+Typings are for version 9.0
 
 ## Library description:
 Advanced html to plain text converter

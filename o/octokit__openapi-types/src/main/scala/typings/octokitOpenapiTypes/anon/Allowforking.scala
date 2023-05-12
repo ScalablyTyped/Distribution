@@ -7,7 +7,6 @@ import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.MERGE_MESSAGE
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.PR_BODY
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.PR_TITLE
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.`private`
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.internal
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.public
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -52,7 +51,7 @@ trait Allowforking extends StObject {
   var allow_update_branch: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * @description `true` to archive this repository. **Note**: You cannot unarchive repositories through the API.
+    * @description Whether to archive this repository. `false` will unarchive a previously archived repository.
     * @default false
     */
   var archived: js.UndefOr[Boolean] = js.undefined
@@ -164,10 +163,10 @@ trait Allowforking extends StObject {
   var use_squash_pr_title_as_default: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * @description Can be `public` or `private`. If your organization is associated with an enterprise account using GitHub Enterprise Cloud or GitHub Enterprise Server 2.20+, `visibility` can also be `internal`."
+    * @description The visibility of the repository.
     * @enum {string}
     */
-  var visibility: js.UndefOr[public | `private` | internal] = js.undefined
+  var visibility: js.UndefOr[public | `private`] = js.undefined
   
   /**
     * @description Either `true` to require contributors to sign off on web-based commits, or `false` to not require contributors to sign off on web-based commits.
@@ -279,7 +278,7 @@ object Allowforking {
     
     inline def setUse_squash_pr_title_as_defaultUndefined: Self = StObject.set(x, "use_squash_pr_title_as_default", js.undefined)
     
-    inline def setVisibility(value: public | `private` | internal): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
+    inline def setVisibility(value: public | `private`): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
     
     inline def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
     

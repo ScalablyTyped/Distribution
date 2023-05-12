@@ -11,7 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object mod {
   
   /**
-    * @class TwitterStreamChannels
     * @param {object} credentials
     * @param {String} credentials.consumer_key
     * @param {String} credentials.consumer_secret
@@ -165,7 +164,6 @@ object mod {
   }
   
   /**
-    * @class TwitterStreamChannels
     * @param {object} credentials
     * @param {String} credentials.consumer_key
     * @param {String} credentials.consumer_secret

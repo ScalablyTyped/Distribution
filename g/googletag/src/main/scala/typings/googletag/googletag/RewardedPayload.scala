@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * An object representing the reward associated with a [rewarded ad](https://support.google.com/admanager/answer/9116812).
   *
-  * **See also**
-  * - [Display a rewarded ad](https://developers.google.com/publisher-tag/samples/display-rewarded-ad)
+  * @see [Display a rewarded ad](https://developers.google.com/publisher-tag/samples/display-rewarded-ad)
   */
 trait RewardedPayload extends StObject {
   

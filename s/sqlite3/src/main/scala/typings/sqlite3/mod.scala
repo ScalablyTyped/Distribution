@@ -55,17 +55,17 @@ object mod {
     def this(filename: String, mode: Double, callback: js.Function1[/* err */ js.Error | Null, Unit]) = this()
     def this(filename: String, mode: Unit, callback: js.Function1[/* err */ js.Error | Null, Unit]) = this()
     
-    def all(sql: String): this.type = js.native
-    def all(
-      sql: String,
-      callback: js.ThisFunction2[/* this */ Statement, /* err */ js.Error | Null, /* rows */ js.Array[Any], Unit]
-    ): this.type = js.native
     def all(sql: String, params: Any*): this.type = js.native
-    def all(sql: String, params: Any): this.type = js.native
-    def all(
+    def all[T](sql: String): this.type = js.native
+    def all[T](
+      sql: String,
+      callback: js.ThisFunction2[/* this */ Statement, /* err */ js.Error | Null, /* rows */ js.Array[T], Unit]
+    ): this.type = js.native
+    def all[T](sql: String, params: Any): this.type = js.native
+    def all[T](
       sql: String,
       params: Any,
-      callback: js.ThisFunction2[/* this */ Statement, /* err */ js.Error | Null, /* rows */ js.Array[Any], Unit]
+      callback: js.ThisFunction2[/* this */ Statement, /* err */ js.Error | Null, /* rows */ js.Array[T], Unit]
     ): this.type = js.native
     
     def close(): Unit = js.native
@@ -76,35 +76,35 @@ object mod {
     @JSName("configure")
     def configure_limit(option: limit, id: Double, value: Double): Unit = js.native
     
-    def each(sql: String): this.type = js.native
-    def each(
+    def each(sql: String, params: Any*): this.type = js.native
+    def each[T](sql: String): this.type = js.native
+    def each[T](
       sql: String,
-      callback: js.ThisFunction2[/* this */ Statement, /* err */ js.Error | Null, /* row */ Any, Unit]
+      callback: js.ThisFunction2[/* this */ Statement, /* err */ js.Error | Null, /* row */ T, Unit]
     ): this.type = js.native
-    def each(
+    def each[T](
       sql: String,
-      callback: js.ThisFunction2[/* this */ Statement, /* err */ js.Error | Null, /* row */ Any, Unit],
+      callback: js.ThisFunction2[/* this */ Statement, /* err */ js.Error | Null, /* row */ T, Unit],
       complete: js.Function2[/* err */ js.Error | Null, /* count */ Double, Unit]
     ): this.type = js.native
-    def each(
+    def each[T](
       sql: String,
       callback: Unit,
       complete: js.Function2[/* err */ js.Error | Null, /* count */ Double, Unit]
     ): this.type = js.native
-    def each(sql: String, params: Any*): this.type = js.native
-    def each(sql: String, params: Any): this.type = js.native
-    def each(
+    def each[T](sql: String, params: Any): this.type = js.native
+    def each[T](
       sql: String,
       params: Any,
-      callback: js.ThisFunction2[/* this */ Statement, /* err */ js.Error | Null, /* row */ Any, Unit]
+      callback: js.ThisFunction2[/* this */ Statement, /* err */ js.Error | Null, /* row */ T, Unit]
     ): this.type = js.native
-    def each(
+    def each[T](
       sql: String,
       params: Any,
-      callback: js.ThisFunction2[/* this */ Statement, /* err */ js.Error | Null, /* row */ Any, Unit],
+      callback: js.ThisFunction2[/* this */ Statement, /* err */ js.Error | Null, /* row */ T, Unit],
       complete: js.Function2[/* err */ js.Error | Null, /* count */ Double, Unit]
     ): this.type = js.native
-    def each(
+    def each[T](
       sql: String,
       params: Any,
       callback: Unit,
@@ -114,17 +114,17 @@ object mod {
     def exec(sql: String): this.type = js.native
     def exec(sql: String, callback: js.ThisFunction1[/* this */ Statement, /* err */ js.Error | Null, Unit]): this.type = js.native
     
-    def get(sql: String): this.type = js.native
-    def get(
-      sql: String,
-      callback: js.ThisFunction2[/* this */ Statement, /* err */ js.Error | Null, /* row */ Any, Unit]
-    ): this.type = js.native
     def get(sql: String, params: Any*): this.type = js.native
-    def get(sql: String, params: Any): this.type = js.native
-    def get(
+    def get[T](sql: String): this.type = js.native
+    def get[T](
+      sql: String,
+      callback: js.ThisFunction2[/* this */ Statement, /* err */ js.Error | Null, /* row */ T, Unit]
+    ): this.type = js.native
+    def get[T](sql: String, params: Any): this.type = js.native
+    def get[T](
       sql: String,
       params: Any,
-      callback: js.ThisFunction2[/* this */ Statement, /* err */ js.Error | Null, /* row */ Any, Unit]
+      callback: js.ThisFunction2[/* this */ Statement, /* err */ js.Error | Null, /* row */ T, Unit]
     ): this.type = js.native
     
     def interrupt(): Unit = js.native
@@ -339,38 +339,38 @@ object mod {
   open class Statement () extends EventEmitter {
     def this(options: EventEmitterOptions) = this()
     
-    def all(): this.type = js.native
-    def all(callback: js.Function2[/* err */ js.Error | Null, /* rows */ js.Array[Any], Unit]): this.type = js.native
     def all(params: Any*): this.type = js.native
-    def all(params: Any): this.type = js.native
-    def all(
+    def all[T](): this.type = js.native
+    def all[T](callback: js.Function2[/* err */ js.Error | Null, /* rows */ js.Array[T], Unit]): this.type = js.native
+    def all[T](params: Any): this.type = js.native
+    def all[T](
       params: Any,
-      callback: js.ThisFunction2[/* this */ RunResult, /* err */ js.Error | Null, /* rows */ js.Array[Any], Unit]
+      callback: js.ThisFunction2[/* this */ RunResult, /* err */ js.Error | Null, /* rows */ js.Array[T], Unit]
     ): this.type = js.native
     
     def bind(): this.type = js.native
     def bind(callback: js.Function1[/* err */ js.Error | Null, Unit]): this.type = js.native
     def bind(params: Any*): this.type = js.native
     
-    def each(): this.type = js.native
-    def each(callback: js.Function2[/* err */ js.Error | Null, /* row */ Any, Unit]): this.type = js.native
-    def each(
-      callback: js.Function2[/* err */ js.Error | Null, /* row */ Any, Unit],
-      complete: js.Function2[/* err */ js.Error | Null, /* count */ Double, Unit]
-    ): this.type = js.native
-    def each(callback: Unit, complete: js.Function2[/* err */ js.Error | Null, /* count */ Double, Unit]): this.type = js.native
     def each(params: Any*): this.type = js.native
-    def each(params: Any): this.type = js.native
-    def each(
-      params: Any,
-      callback: js.ThisFunction2[/* this */ RunResult, /* err */ js.Error | Null, /* row */ Any, Unit]
-    ): this.type = js.native
-    def each(
-      params: Any,
-      callback: js.ThisFunction2[/* this */ RunResult, /* err */ js.Error | Null, /* row */ Any, Unit],
+    def each[T](): this.type = js.native
+    def each[T](callback: js.Function2[/* err */ js.Error | Null, /* row */ T, Unit]): this.type = js.native
+    def each[T](
+      callback: js.Function2[/* err */ js.Error | Null, /* row */ T, Unit],
       complete: js.Function2[/* err */ js.Error | Null, /* count */ Double, Unit]
     ): this.type = js.native
-    def each(
+    def each[T](callback: Unit, complete: js.Function2[/* err */ js.Error | Null, /* count */ Double, Unit]): this.type = js.native
+    def each[T](params: Any): this.type = js.native
+    def each[T](
+      params: Any,
+      callback: js.ThisFunction2[/* this */ RunResult, /* err */ js.Error | Null, /* row */ T, Unit]
+    ): this.type = js.native
+    def each[T](
+      params: Any,
+      callback: js.ThisFunction2[/* this */ RunResult, /* err */ js.Error | Null, /* row */ T, Unit],
+      complete: js.Function2[/* err */ js.Error | Null, /* count */ Double, Unit]
+    ): this.type = js.native
+    def each[T](
       params: Any,
       callback: Unit,
       complete: js.Function2[/* err */ js.Error | Null, /* count */ Double, Unit]
@@ -378,13 +378,13 @@ object mod {
     
     def finalize(callback: js.Function1[/* err */ js.Error, Unit]): Database = js.native
     
-    def get(): this.type = js.native
-    def get(callback: js.Function2[/* err */ js.Error | Null, /* row */ js.UndefOr[Any], Unit]): this.type = js.native
     def get(params: Any*): this.type = js.native
-    def get(params: Any): this.type = js.native
-    def get(
+    def get[T](): this.type = js.native
+    def get[T](callback: js.Function2[/* err */ js.Error | Null, /* row */ js.UndefOr[T], Unit]): this.type = js.native
+    def get[T](params: Any): this.type = js.native
+    def get[T](
       params: Any,
-      callback: js.ThisFunction2[/* this */ RunResult, /* err */ js.Error | Null, /* row */ js.UndefOr[Any], Unit]
+      callback: js.ThisFunction2[/* this */ RunResult, /* err */ js.Error | Null, /* row */ js.UndefOr[T], Unit]
     ): this.type = js.native
     
     def reset(): this.type = js.native

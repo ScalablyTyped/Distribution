@@ -26,9 +26,9 @@ trait NutritionOrderOralDiet
   var nutrient: js.UndefOr[js.Array[NutritionOrderOralDietNutrient]] = js.undefined
   
   /**
-    * The time period and frequency at which the diet should be given.  The diet should be given for the combination of all schedules if more than one schedule is present.
+    * Schedule information for an oral diet.
     */
-  var schedule: js.UndefOr[js.Array[Timing]] = js.undefined
+  var schedule: js.UndefOr[NutritionOrderOralDietSchedule] = js.undefined
   
   /**
     * Class that describes any texture modifications required for the patient to safely consume various types of solid foods.
@@ -66,11 +66,9 @@ object NutritionOrderOralDiet {
     
     inline def setNutrientVarargs(value: NutritionOrderOralDietNutrient*): Self = StObject.set(x, "nutrient", js.Array(value*))
     
-    inline def setSchedule(value: js.Array[Timing]): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
+    inline def setSchedule(value: NutritionOrderOralDietSchedule): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
     
     inline def setScheduleUndefined: Self = StObject.set(x, "schedule", js.undefined)
-    
-    inline def setScheduleVarargs(value: Timing*): Self = StObject.set(x, "schedule", js.Array(value*))
     
     inline def setTexture(value: js.Array[NutritionOrderOralDietTexture]): Self = StObject.set(x, "texture", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,9 @@ import typings.std.stdStrings.compositionend
 import typings.std.stdStrings.compositionstart
 import typings.std.stdStrings.compositionupdate
 import typings.std.stdStrings.contextmenu
+import typings.std.stdStrings.copy
 import typings.std.stdStrings.cuechange
+import typings.std.stdStrings.cut
 import typings.std.stdStrings.dblclick
 import typings.std.stdStrings.drag
 import typings.std.stdStrings.dragend
@@ -53,6 +55,7 @@ import typings.std.stdStrings.mousemove
 import typings.std.stdStrings.mouseout
 import typings.std.stdStrings.mouseover
 import typings.std.stdStrings.mouseup
+import typings.std.stdStrings.paste
 import typings.std.stdStrings.pause
 import typings.std.stdStrings.play
 import typings.std.stdStrings.playing
@@ -386,6 +389,20 @@ trait GlobalEventHandlers extends StObject {
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
+  def addEventListener_copy(`type`: copy, listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any]): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_copy(
+    `type`: copy,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_copy(
+    `type`: copy,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
   def addEventListener_cuechange(`type`: cuechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_cuechange(
@@ -397,6 +414,20 @@ trait GlobalEventHandlers extends StObject {
   def addEventListener_cuechange(
     `type`: cuechange,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_cut(`type`: cut, listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any]): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_cut(
+    `type`: cut,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_cut(
+    `type`: cut,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
@@ -879,6 +910,20 @@ trait GlobalEventHandlers extends StObject {
   def addEventListener_mouseup(
     `type`: mouseup,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_paste(`type`: paste, listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any]): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_paste(
+    `type`: paste,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_paste(
+    `type`: paste,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
@@ -1581,7 +1626,13 @@ trait GlobalEventHandlers extends StObject {
   var oncontextmenu: (js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]) | Null = js.native
   
   /* standard dom */
+  var oncopy: (js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any]) | Null = js.native
+  
+  /* standard dom */
   var oncuechange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]) | Null = js.native
+  
+  /* standard dom */
+  var oncut: (js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any]) | Null = js.native
   
   /**
     * Fires when the user double-clicks the object.
@@ -1775,6 +1826,9 @@ trait GlobalEventHandlers extends StObject {
     */
   /* standard dom */
   var onmouseup: (js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any]) | Null = js.native
+  
+  /* standard dom */
+  var onpaste: (js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any]) | Null = js.native
   
   /**
     * Occurs when playback is paused.
@@ -2252,6 +2306,20 @@ trait GlobalEventHandlers extends StObject {
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
+  def removeEventListener_copy(`type`: copy, listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_copy(
+    `type`: copy,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_copy(
+    `type`: copy,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any],
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
   def removeEventListener_cuechange(`type`: cuechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_cuechange(
@@ -2263,6 +2331,20 @@ trait GlobalEventHandlers extends StObject {
   def removeEventListener_cuechange(
     `type`: cuechange,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, Any],
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_cut(`type`: cut, listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_cut(
+    `type`: cut,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_cut(
+    `type`: cut,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
@@ -2745,6 +2827,20 @@ trait GlobalEventHandlers extends StObject {
   def removeEventListener_mouseup(
     `type`: mouseup,
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MouseEvent, Any],
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_paste(`type`: paste, listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any]): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_paste(
+    `type`: paste,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_paste(
+    `type`: paste,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ ClipboardEvent, Any],
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")

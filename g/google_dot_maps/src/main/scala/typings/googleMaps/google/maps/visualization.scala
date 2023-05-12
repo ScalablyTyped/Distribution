@@ -6,10 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object visualization {
   
-  /**
-    * A layer that provides a client-side rendered heatmap, depicting the
-    * intensity of data at geographical points.
-    */
   @js.native
   trait HeatmapLayer
     extends StObject
@@ -39,10 +35,6 @@ object visualization {
     def setOptions(options: HeatmapLayerOptions): Unit = js.native
   }
   
-  /**
-    * This object defines the properties that can be set on a
-    * <code>HeatmapLayer</code> object.
-    */
   trait HeatmapLayerOptions extends StObject {
     
     /**
@@ -148,10 +140,6 @@ object visualization {
     }
   }
   
-  /**
-    * A data point entry for a heatmap. This is a geographical data point with a
-    * weight attribute.
-    */
   trait WeightedLocation extends StObject {
     
     /**

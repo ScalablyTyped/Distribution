@@ -22,7 +22,6 @@ open class Model protected () extends StObject {
   /**
     * Destroys model reference in database
     * @param {function} callback Method to execute upon completion, returns error if failed
-    * @private
     */
   /* private */ def __destroy__(callback: Any): Any = js.native
   
@@ -30,7 +29,6 @@ open class Model protected () extends StObject {
   
   /**
     * Prepare model for use
-    * @private
     */
   /* private */ def __initialize__(): Any = js.native
   
@@ -49,13 +47,11 @@ open class Model protected () extends StObject {
   /**
     * Saves model to database
     * @param {function} callback Method to execute upon completion, returns error if failed (including validations didn't pass)
-    * @private
     */
   /* private */ def __save__(callback: Any): Any = js.native
   
   /**
     * Validates provided fieldList (or all fields if not provided)
-    * @private
     * @param {optional Array} fieldList fields to validate
     */
   /* private */ def __validate__(field: Any): Any = js.native
@@ -63,7 +59,6 @@ open class Model protected () extends StObject {
   /**
     * Runs all verifications before saving
     * @param {function} callback Method to execute upon completion. Returns true if OK, false if failed
-    * @private
     */
   def __verify__(callback: js.Function): Any = js.native
   

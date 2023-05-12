@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@pixi/filter-displacement" : "7.0.4"
+      "@pixi/filter-displacement" : "7.2.4"
     }
   ],
   "test-dependencies" : [
     {
-      "@pixi/filter-displacement" : "7.0.4"
+      "@pixi/filter-displacement" : "7.2.4"
     }
   ],
   "compile-devDependencies" : [

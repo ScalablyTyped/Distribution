@@ -18,11 +18,11 @@ trait SpyAnd[Fn /* <: Func */] extends StObject {
   
   /** Tell the spy to return a promise rejecting with the specified value when invoked. */
   def rejectWith(): Spy[Fn] = js.native
-  def rejectWith(`val`: PromisedRejectType[Fn]): Spy[Fn] = js.native
+  def rejectWith(`val`: PromisedRejectType[ReturnType[Fn]]): Spy[Fn] = js.native
   
   /** Tell the spy to return a promise resolving to the specified value when invoked. */
   def resolveTo(): Spy[Fn] = js.native
-  def resolveTo(`val`: PromisedReturnType[Fn]): Spy[Fn] = js.native
+  def resolveTo(`val`: PromisedResolveType[ReturnType[Fn]]): Spy[Fn] = js.native
   
   /** By chaining the spy with and.returnValue, all calls to the function will return a specific value. */
   def returnValue(`val`: ReturnType[Fn]): Spy[Fn] = js.native

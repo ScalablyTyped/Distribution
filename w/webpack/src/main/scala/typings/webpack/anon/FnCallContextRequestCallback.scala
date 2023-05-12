@@ -1,5 +1,6 @@
 package typings.webpack.anon
 
+import typings.webpack.mod.ErrorWithDetail
 import typings.webpack.mod.ResolveRequest
 import typings.webpack.webpackBooleans.`false`
 import org.scalablytyped.runtime.StObject
@@ -14,9 +15,9 @@ trait FnCallContextRequestCallback extends StObject {
     context: String,
     request: String,
     callback: js.Function3[
-      /* arg0 */ Null | js.Error, 
-      /* arg1 */ js.UndefOr[String | `false`], 
-      /* arg2 */ js.UndefOr[ResolveRequest], 
+      /* err */ Null | ErrorWithDetail, 
+      /* res */ js.UndefOr[String | `false`], 
+      /* req */ js.UndefOr[ResolveRequest], 
       Unit
     ]
   ): Unit = js.native

@@ -6,16 +6,34 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GetUnfilteredPartitionMetadataRequest extends StObject {
   
+  /**
+    * A structure containing Lake Formation audit context information.
+    */
   var AuditContext: js.UndefOr[typings.awsSdk.clientsGlueMod.AuditContext] = js.undefined
   
+  /**
+    * The catalog ID where the partition resides.
+    */
   var CatalogId: CatalogIdString
   
+  /**
+    * (Required) Specifies the name of a database that contains the partition.
+    */
   var DatabaseName: NameString
   
+  /**
+    * (Required) A list of partition key values.
+    */
   var PartitionValues: ValueStringList
   
+  /**
+    * (Required) A list of supported permission types. 
+    */
   var SupportedPermissionTypes: PermissionTypeList
   
+  /**
+    * (Required) Specifies the name of a table that contains the partition.
+    */
   var TableName: NameString
 }
 object GetUnfilteredPartitionMetadataRequest {

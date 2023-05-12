@@ -31,11 +31,11 @@ object distDeclarationsSrcComponentsMultiValueMod {
   
   inline def MultiValueRemove[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](param0: MultiValueRemoveProps[Option, IsMulti, Group]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("MultiValueRemove")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def multiValueCSS[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](param0: MultiValueProps[Option, IsMulti, Group]): CSSObjectWithLabel = ^.asInstanceOf[js.Dynamic].applyDynamic("multiValueCSS")(param0.asInstanceOf[js.Any]).asInstanceOf[CSSObjectWithLabel]
+  inline def multiValueCSS[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](param0: MultiValueProps[Option, IsMulti, Group], unstyled: Boolean): CSSObjectWithLabel = (^.asInstanceOf[js.Dynamic].applyDynamic("multiValueCSS")(param0.asInstanceOf[js.Any], unstyled.asInstanceOf[js.Any])).asInstanceOf[CSSObjectWithLabel]
   
-  inline def multiValueLabelCSS[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](param0: MultiValueProps[Option, IsMulti, Group]): CSSObjectWithLabel = ^.asInstanceOf[js.Dynamic].applyDynamic("multiValueLabelCSS")(param0.asInstanceOf[js.Any]).asInstanceOf[CSSObjectWithLabel]
+  inline def multiValueLabelCSS[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](param0: MultiValueProps[Option, IsMulti, Group], unstyled: Boolean): CSSObjectWithLabel = (^.asInstanceOf[js.Dynamic].applyDynamic("multiValueLabelCSS")(param0.asInstanceOf[js.Any], unstyled.asInstanceOf[js.Any])).asInstanceOf[CSSObjectWithLabel]
   
-  inline def multiValueRemoveCSS[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](param0: MultiValueProps[Option, IsMulti, Group]): CSSObjectWithLabel = ^.asInstanceOf[js.Dynamic].applyDynamic("multiValueRemoveCSS")(param0.asInstanceOf[js.Any]).asInstanceOf[CSSObjectWithLabel]
+  inline def multiValueRemoveCSS[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */](param0: MultiValueProps[Option, IsMulti, Group], unstyled: Boolean): CSSObjectWithLabel = (^.asInstanceOf[js.Dynamic].applyDynamic("multiValueRemoveCSS")(param0.asInstanceOf[js.Any], unstyled.asInstanceOf[js.Any])).asInstanceOf[CSSObjectWithLabel]
   
   trait MultiValueComponents[Option, IsMulti /* <: Boolean */, Group /* <: GroupBase[Option] */] extends StObject {
     

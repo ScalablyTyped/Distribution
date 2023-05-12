@@ -1,5 +1,6 @@
 package typings.sentryUtils
 
+import typings.sentryUtils.anon.Method
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,7 +11,13 @@ object typesInstrumentMod {
   @js.native
   val ^ : js.Any = js.native
   
+  @JSImport("@sentry/utils/types/instrument", "SENTRY_XHR_DATA_KEY")
+  @js.native
+  val SENTRY_XHR_DATA_KEY: /* "__sentry_xhr_v2__" */ String = js.native
+  
   inline def addInstrumentationHandler(`type`: InstrumentHandlerType, callback: InstrumentHandlerCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addInstrumentationHandler")(`type`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def parseFetchArgs(fetchArgs: js.Array[Any]): Method = ^.asInstanceOf[js.Dynamic].applyDynamic("parseFetchArgs")(fetchArgs.asInstanceOf[js.Any]).asInstanceOf[Method]
   
   type InstrumentHandlerCallback = js.Function1[/* data */ Any, Unit]
   

@@ -38,7 +38,7 @@ trait Module extends StObject {
   /** Logical full path to the symbol file. The exact definition is implementation defined. */
   var symbolFilePath: js.UndefOr[String] = js.undefined
   
-  /** User-understandable description of if symbols were found for the module (ex: 'Symbols Loaded', 'Symbols not found', etc. */
+  /** User-understandable description of if symbols were found for the module (ex: 'Symbols Loaded', 'Symbols not found', etc.) */
   var symbolStatus: js.UndefOr[String] = js.undefined
   
   /** Version of Module. */

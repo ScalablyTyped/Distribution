@@ -1,15 +1,12 @@
 organization := "org.scalablytyped"
 name := "contentstack"
-version := "3.15.4-484465"
+version := "3.17.1-446b82"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "contentstack__utils" % "1.1.3-5837f4",
-  "org.scalablytyped" %%% "css-select" % "5.1.0-38a641",
-  "org.scalablytyped" %%% "css-what" % "6.1.0-7a7c34",
-  "org.scalablytyped" %%% "node-html-parser" % "6.1.1-66421d",
-  "org.scalablytyped" %%% "std" % "4.9-ecb5eb")
+  "org.scalablytyped" %%% "contentstack__utils" % "1.3.0-eea47a",
+  "org.scalablytyped" %%% "std" % "5.0-e63739")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

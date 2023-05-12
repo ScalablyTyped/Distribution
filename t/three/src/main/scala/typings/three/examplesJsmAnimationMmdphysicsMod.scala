@@ -2,6 +2,7 @@ package typings.three
 
 import typings.three.mod.MeshBasicMaterial
 import typings.three.srcCoreBufferGeometryMod.BufferGeometry
+import typings.three.srcCoreBufferGeometryMod.NormalBufferAttributes
 import typings.three.srcCoreEventDispatcherMod.Event
 import typings.three.srcMaterialsMaterialMod.Material
 import typings.three.srcThreeMod.Bone
@@ -21,7 +22,7 @@ object examplesJsmAnimationMmdphysicsMod {
   @js.native
   open class Constraint protected () extends StObject {
     def this(
-      mesh: SkinnedMesh[BufferGeometry, Material | js.Array[Material]],
+      mesh: SkinnedMesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]],
       world: js.Object,
       bodyA: RigidBody,
       bodyB: RigidBody,
@@ -35,7 +36,7 @@ object examplesJsmAnimationMmdphysicsMod {
     
     var manager: ResourceManager = js.native
     
-    var mesh: SkinnedMesh[BufferGeometry, Material | js.Array[Material]] = js.native
+    var mesh: SkinnedMesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]] = js.native
     
     var params: js.Object = js.native
     
@@ -46,22 +47,22 @@ object examplesJsmAnimationMmdphysicsMod {
   @js.native
   open class MMDPhysics protected () extends StObject {
     def this(
-      mesh: SkinnedMesh[BufferGeometry, Material | js.Array[Material]],
+      mesh: SkinnedMesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]],
       rigidBodyParams: js.Array[js.Object]
     ) = this()
     def this(
-      mesh: SkinnedMesh[BufferGeometry, Material | js.Array[Material]],
+      mesh: SkinnedMesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]],
       rigidBodyParams: js.Array[js.Object],
       constraintParams: js.Array[js.Object]
     ) = this()
     def this(
-      mesh: SkinnedMesh[BufferGeometry, Material | js.Array[Material]],
+      mesh: SkinnedMesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]],
       rigidBodyParams: js.Array[js.Object],
       constraintParams: js.Array[js.Object],
       params: MMDPhysicsParameter
     ) = this()
     def this(
-      mesh: SkinnedMesh[BufferGeometry, Material | js.Array[Material]],
+      mesh: SkinnedMesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]],
       rigidBodyParams: js.Array[js.Object],
       constraintParams: Unit,
       params: MMDPhysicsParameter
@@ -79,7 +80,7 @@ object examplesJsmAnimationMmdphysicsMod {
     
     var maxStepNum: Double = js.native
     
-    var mesh: SkinnedMesh[BufferGeometry, Material | js.Array[Material]] = js.native
+    var mesh: SkinnedMesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]] = js.native
     
     def reset(): this.type = js.native
     
@@ -98,7 +99,7 @@ object examplesJsmAnimationMmdphysicsMod {
   @js.native
   open class MMDPhysicsHelper protected () extends Object3D[Event] {
     def this(
-      mesh: typings.three.mod.SkinnedMesh[BufferGeometry, Material | js.Array[Material]],
+      mesh: typings.three.mod.SkinnedMesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]],
       physics: MMDPhysics
     ) = this()
     
@@ -106,7 +107,7 @@ object examplesJsmAnimationMmdphysicsMod {
     
     var materials: js.Tuple3[MeshBasicMaterial, MeshBasicMaterial, MeshBasicMaterial] = js.native
     
-    var mesh: typings.three.mod.SkinnedMesh[BufferGeometry, Material | js.Array[Material]] = js.native
+    var mesh: typings.three.mod.SkinnedMesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]] = js.native
     
     var physics: MMDPhysics = js.native
   }
@@ -210,7 +211,7 @@ object examplesJsmAnimationMmdphysicsMod {
   @js.native
   open class RigidBody protected () extends StObject {
     def this(
-      mesh: SkinnedMesh[BufferGeometry, Material | js.Array[Material]],
+      mesh: SkinnedMesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]],
       world: js.Object,
       params: js.Object,
       manager: ResourceManager
@@ -226,7 +227,7 @@ object examplesJsmAnimationMmdphysicsMod {
     
     var manager: ResourceManager = js.native
     
-    var mesh: SkinnedMesh[BufferGeometry, Material | js.Array[Material]] = js.native
+    var mesh: SkinnedMesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]] = js.native
     
     var params: js.Object = js.native
     

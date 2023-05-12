@@ -46,6 +46,13 @@ trait RegExp extends StObject {
   /* standard es5 */
   val global: scala.Boolean = js.native
   
+  /**
+    * Returns a Boolean value indicating the state of the hasIndices flag (d) used with with a regular expression.
+    * Default is false. Read-only.
+    */
+  /* standard es2022.regexp */
+  val hasIndices: scala.Boolean = js.native
+  
   /** Returns a Boolean value indicating the state of the ignoreCase flag (i) used with a regular expression. Default is false. Read-only. */
   /* standard es5 */
   val ignoreCase: scala.Boolean = js.native

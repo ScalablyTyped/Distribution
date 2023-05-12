@@ -244,7 +244,7 @@ object mod {
   inline def getBoundedDateRange(dateRange: js.Array[js.Date], minDate: js.Date, maxDate: js.Date): js.Array[js.Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("getBoundedDateRange")(dateRange.asInstanceOf[js.Any], minDate.asInstanceOf[js.Any], maxDate.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Date]]
   inline def getBoundedDateRange(dateRange: js.Array[js.Date], minDate: Unit, maxDate: js.Date): js.Array[js.Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("getBoundedDateRange")(dateRange.asInstanceOf[js.Any], minDate.asInstanceOf[js.Any], maxDate.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Date]]
   
-  inline def getDateFromTimeSelection(useHour12: Boolean, baseDate: js.Date, selectedTime: String): js.Date = (^.asInstanceOf[js.Dynamic].applyDynamic("getDateFromTimeSelection")(useHour12.asInstanceOf[js.Any], baseDate.asInstanceOf[js.Any], selectedTime.asInstanceOf[js.Any])).asInstanceOf[js.Date]
+  inline def getDateFromTimeSelection(useHour12: Boolean, dateStartAnchor: js.Date, selectedTime: String): js.Date = (^.asInstanceOf[js.Dynamic].applyDynamic("getDateFromTimeSelection")(useHour12.asInstanceOf[js.Any], dateStartAnchor.asInstanceOf[js.Any], selectedTime.asInstanceOf[js.Any])).asInstanceOf[js.Date]
   
   inline def getDatePartHashValue(date: js.Date): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getDatePartHashValue")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
   

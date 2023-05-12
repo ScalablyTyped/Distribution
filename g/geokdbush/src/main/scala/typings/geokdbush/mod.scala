@@ -11,11 +11,11 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def around[T](index: KDBush[T], longitude: Double, latitude: Double): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("around")(index.asInstanceOf[js.Any], longitude.asInstanceOf[js.Any], latitude.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
-  inline def around[T](index: KDBush[T], longitude: Double, latitude: Double, maxResults: Double): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("around")(index.asInstanceOf[js.Any], longitude.asInstanceOf[js.Any], latitude.asInstanceOf[js.Any], maxResults.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
-  inline def around[T](index: KDBush[T], longitude: Double, latitude: Double, maxResults: Double, maxDistance: Double): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("around")(index.asInstanceOf[js.Any], longitude.asInstanceOf[js.Any], latitude.asInstanceOf[js.Any], maxResults.asInstanceOf[js.Any], maxDistance.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  inline def around[T](index: KDBush, longitude: Double, latitude: Double): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("around")(index.asInstanceOf[js.Any], longitude.asInstanceOf[js.Any], latitude.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  inline def around[T](index: KDBush, longitude: Double, latitude: Double, maxResults: Double): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("around")(index.asInstanceOf[js.Any], longitude.asInstanceOf[js.Any], latitude.asInstanceOf[js.Any], maxResults.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  inline def around[T](index: KDBush, longitude: Double, latitude: Double, maxResults: Double, maxDistance: Double): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("around")(index.asInstanceOf[js.Any], longitude.asInstanceOf[js.Any], latitude.asInstanceOf[js.Any], maxResults.asInstanceOf[js.Any], maxDistance.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   inline def around[T](
-    index: KDBush[T],
+    index: KDBush,
     longitude: Double,
     latitude: Double,
     maxResults: Double,
@@ -23,16 +23,16 @@ object mod {
     filterFn: Any
   ): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("around")(index.asInstanceOf[js.Any], longitude.asInstanceOf[js.Any], latitude.asInstanceOf[js.Any], maxResults.asInstanceOf[js.Any], maxDistance.asInstanceOf[js.Any], filterFn.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   inline def around[T](
-    index: KDBush[T],
+    index: KDBush,
     longitude: Double,
     latitude: Double,
     maxResults: Double,
     maxDistance: Unit,
     filterFn: Any
   ): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("around")(index.asInstanceOf[js.Any], longitude.asInstanceOf[js.Any], latitude.asInstanceOf[js.Any], maxResults.asInstanceOf[js.Any], maxDistance.asInstanceOf[js.Any], filterFn.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
-  inline def around[T](index: KDBush[T], longitude: Double, latitude: Double, maxResults: Unit, maxDistance: Double): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("around")(index.asInstanceOf[js.Any], longitude.asInstanceOf[js.Any], latitude.asInstanceOf[js.Any], maxResults.asInstanceOf[js.Any], maxDistance.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  inline def around[T](index: KDBush, longitude: Double, latitude: Double, maxResults: Unit, maxDistance: Double): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("around")(index.asInstanceOf[js.Any], longitude.asInstanceOf[js.Any], latitude.asInstanceOf[js.Any], maxResults.asInstanceOf[js.Any], maxDistance.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   inline def around[T](
-    index: KDBush[T],
+    index: KDBush,
     longitude: Double,
     latitude: Double,
     maxResults: Unit,
@@ -40,7 +40,7 @@ object mod {
     filterFn: Any
   ): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("around")(index.asInstanceOf[js.Any], longitude.asInstanceOf[js.Any], latitude.asInstanceOf[js.Any], maxResults.asInstanceOf[js.Any], maxDistance.asInstanceOf[js.Any], filterFn.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   inline def around[T](
-    index: KDBush[T],
+    index: KDBush,
     longitude: Double,
     latitude: Double,
     maxResults: Unit,

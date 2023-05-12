@@ -16,7 +16,7 @@ trait dxValidationMessageOptions
   
   var offset: js.UndefOr[js.Object] = js.undefined
   
-  var positionRequest: js.UndefOr[String] = js.undefined
+  var positionSide: js.UndefOr[String] = js.undefined
   
   var validationErrors: js.UndefOr[js.Array[js.Object] | Null] = js.undefined
 }
@@ -42,9 +42,9 @@ object dxValidationMessageOptions {
     
     inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
-    inline def setPositionRequest(value: String): Self = StObject.set(x, "positionRequest", value.asInstanceOf[js.Any])
+    inline def setPositionSide(value: String): Self = StObject.set(x, "positionSide", value.asInstanceOf[js.Any])
     
-    inline def setPositionRequestUndefined: Self = StObject.set(x, "positionRequest", js.undefined)
+    inline def setPositionSideUndefined: Self = StObject.set(x, "positionSide", js.undefined)
     
     inline def setValidationErrors(value: js.Array[js.Object]): Self = StObject.set(x, "validationErrors", value.asInstanceOf[js.Any])
     

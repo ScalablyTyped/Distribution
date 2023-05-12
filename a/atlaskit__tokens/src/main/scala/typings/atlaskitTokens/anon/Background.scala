@@ -6,30 +6,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Background extends StObject {
   
-  var background: AccentGreen
+  var background: String
   
-  var border: AccentGray
+  var desiredContrast: Double
   
-  var icon: AccentGray
-  
-  var text: Accent
+  var foreground: String
 }
 object Background {
   
-  inline def apply(background: AccentGreen, border: AccentGray, icon: AccentGray, text: Accent): Background = {
-    val __obj = js.Dynamic.literal(background = background.asInstanceOf[js.Any], border = border.asInstanceOf[js.Any], icon = icon.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
+  inline def apply(background: String, desiredContrast: Double, foreground: String): Background = {
+    val __obj = js.Dynamic.literal(background = background.asInstanceOf[js.Any], desiredContrast = desiredContrast.asInstanceOf[js.Any], foreground = foreground.asInstanceOf[js.Any])
     __obj.asInstanceOf[Background]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: Background] (val x: Self) extends AnyVal {
     
-    inline def setBackground(value: AccentGreen): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+    inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
-    inline def setBorder(value: AccentGray): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
+    inline def setDesiredContrast(value: Double): Self = StObject.set(x, "desiredContrast", value.asInstanceOf[js.Any])
     
-    inline def setIcon(value: AccentGray): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
-    
-    inline def setText(value: Accent): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setForeground(value: String): Self = StObject.set(x, "foreground", value.asInstanceOf[js.Any])
   }
 }

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "it-length-prefixed" : "8.0.3"
+      "it-length-prefixed" : "9.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "it-length-prefixed" : "8.0.3"
+      "it-length-prefixed" : "9.0.1"
     }
   ],
   "compile-devDependencies" : [

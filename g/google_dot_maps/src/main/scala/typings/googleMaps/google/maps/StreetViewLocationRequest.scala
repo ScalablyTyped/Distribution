@@ -4,37 +4,32 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A Street View request to be sent with <code>getPanorama</code>.
-  * <code>StreetViewLocationRequest</code> lets you search for a Street View
-  * panoroma at a specified location.
-  */
 trait StreetViewLocationRequest extends StObject {
   
   /**
     * Specifies the location where to search for a Street View panorama.
     */
-  var location: js.UndefOr[LatLng | Null | LatLngLiteral] = js.undefined
+  var location: js.UndefOr[Null | LatLng | LatLngLiteral] = js.undefined
   
   /**
     * Sets a preference for which panorama should be found within the radius:
     * the one nearest to the provided location, or the best one within the
     * radius.
     */
-  var preference: js.UndefOr[StreetViewPreference | Null] = js.undefined
+  var preference: js.UndefOr[Null | StreetViewPreference] = js.undefined
   
   /**
     * Sets a radius in meters in which to search for a panorama.
     * @defaultValue <code>50</code>
     */
-  var radius: js.UndefOr[Double | Null] = js.undefined
+  var radius: js.UndefOr[Null | Double] = js.undefined
   
   /**
     * Specifies the source of panoramas to search. This allows a restriction to
     * search for just outdoor panoramas for example.
     * @defaultValue {@link google.maps.StreetViewSource.DEFAULT}
     */
-  var source: js.UndefOr[StreetViewSource | Null] = js.undefined
+  var source: js.UndefOr[Null | StreetViewSource] = js.undefined
 }
 object StreetViewLocationRequest {
   

@@ -42,7 +42,7 @@ trait GlobalCluster extends StObject {
   var GlobalClusterIdentifier: js.UndefOr[String] = js.undefined
   
   /**
-    * The list of cluster IDs for secondary clusters within the global database cluster. Currently limited to 1 item.
+    * The list of primary and secondary clusters within the global database cluster.
     */
   var GlobalClusterMembers: js.UndefOr[GlobalClusterMemberList] = js.undefined
   

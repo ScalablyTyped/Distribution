@@ -132,6 +132,8 @@ object typingsAbsoluteCellRangeMod {
     
     inline def fromCoordinates(sheet: Double, x1: Double, y1: Double, x2: Double, y2: Double): AbsoluteCellRange = (^.asInstanceOf[js.Dynamic].applyDynamic("fromCoordinates")(sheet.asInstanceOf[js.Any], x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any])).asInstanceOf[AbsoluteCellRange]
     
+    inline def fromSimpleCellAddresses(start: SimpleCellAddress_, end: SimpleCellAddress_): AbsoluteCellRange = (^.asInstanceOf[js.Dynamic].applyDynamic("fromSimpleCellAddresses")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[AbsoluteCellRange]
+    
     inline def spanFrom(topLeftCorner: SimpleCellAddress_, width: Double, height: Double): AbsoluteCellRange = (^.asInstanceOf[js.Dynamic].applyDynamic("spanFrom")(topLeftCorner.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[AbsoluteCellRange]
     
     inline def spanFromOrUndef(topLeftCorner: SimpleCellAddress_, width: Double, height: Double): Maybe[AbsoluteCellRange] = (^.asInstanceOf[js.Dynamic].applyDynamic("spanFromOrUndef")(topLeftCorner.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[Maybe[AbsoluteCellRange]]

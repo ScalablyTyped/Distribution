@@ -6,15 +6,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Data extends StObject {
   
-  /**
-    * Data received; on error cases it will be undefined
-    */
-  var data: js.UndefOr[js.Object] = js.undefined
+  var data: js.Object
 }
 object Data {
   
-  inline def apply(): Data = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(data: js.Object): Data = {
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[Data]
   }
   
@@ -22,7 +19,5 @@ object Data {
   implicit open class MutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
     
     inline def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
-    
-    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
   }
 }

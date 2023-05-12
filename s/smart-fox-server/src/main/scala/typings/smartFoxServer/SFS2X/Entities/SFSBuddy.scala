@@ -51,7 +51,7 @@ trait SFSBuddy extends StObject {
     */
   def getVariables(): js.Array[SFSBuddyVariable]
   
-  /** @type {number} Indicates the id of this buddy. */
+  /** Indicates the id of this buddy. */
   var id: Double
   
   /**
@@ -72,7 +72,7 @@ trait SFSBuddy extends StObject {
     */
   def isTemp(): Boolean
   
-  /** @type {string} Indicates the name of this buddy. */
+  /** Indicates the name of this buddy. */
   var name: String
 }
 object SFSBuddy {

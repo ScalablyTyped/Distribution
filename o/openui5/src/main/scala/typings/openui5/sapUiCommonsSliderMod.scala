@@ -1,6 +1,6 @@
 package typings.openui5
 
-import typings.openui5.anon.`1`
+import typings.openui5.anon.`2`
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
 import typings.openui5.sapUiCoreControlMod.ControlSettings
@@ -338,6 +338,8 @@ object sapUiCommonsSliderMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:change change} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -346,9 +348,11 @@ object sapUiCommonsSliderMod {
     def fireChange(/**
       * Parameters to pass along with the event
       */
-    mParameters: `1`): this.type = js.native
+    mParameters: `2`): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:liveChange liveChange} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -357,7 +361,7 @@ object sapUiCommonsSliderMod {
     def fireLiveChange(/**
       * Parameters to pass along with the event
       */
-    mParameters: `1`): this.type = js.native
+    mParameters: `2`): this.type = js.native
     
     /**
       * Returns array of IDs of the elements which are the current targets of the association {@link #getAriaDescribedBy

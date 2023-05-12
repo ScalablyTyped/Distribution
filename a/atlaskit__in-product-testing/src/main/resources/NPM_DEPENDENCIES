@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@atlaskit/in-product-testing" : "0.2.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@atlaskit/in-product-testing" : "0.2.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -19,11 +19,11 @@ object centerconstraintMod {
   inline def none(center: Coordinate): js.UndefOr[Coordinate] = ^.asInstanceOf[js.Dynamic].applyDynamic("none")(center.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Coordinate]]
   
   type Type = js.Function5[
-    /* p0 */ js.UndefOr[Coordinate], 
-    /* p1 */ Double, 
-    /* p2 */ Size, 
-    /* p3 */ js.UndefOr[Boolean], 
-    /* p4 */ js.UndefOr[js.Array[Double]], 
+    /* arg0 */ js.UndefOr[Coordinate], 
+    /* arg1 */ Double, 
+    /* arg2 */ Size, 
+    /* arg3 */ js.UndefOr[Boolean], 
+    /* arg4 */ js.UndefOr[js.Array[Double]], 
     js.UndefOr[Coordinate]
   ]
 }

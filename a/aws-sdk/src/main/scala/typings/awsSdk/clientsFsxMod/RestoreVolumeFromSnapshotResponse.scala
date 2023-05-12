@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RestoreVolumeFromSnapshotResponse extends StObject {
   
   /**
+    * A list of administrative actions for the file system that are in process or waiting to be processed. Administrative actions describe changes to the Amazon FSx system.
+    */
+  var AdministrativeActions: js.UndefOr[typings.awsSdk.clientsFsxMod.AdministrativeActions] = js.undefined
+  
+  /**
     * The lifecycle state of the volume being restored.
     */
   var Lifecycle: js.UndefOr[VolumeLifecycle] = js.undefined
@@ -25,6 +30,12 @@ object RestoreVolumeFromSnapshotResponse {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: RestoreVolumeFromSnapshotResponse] (val x: Self) extends AnyVal {
+    
+    inline def setAdministrativeActions(value: AdministrativeActions): Self = StObject.set(x, "AdministrativeActions", value.asInstanceOf[js.Any])
+    
+    inline def setAdministrativeActionsUndefined: Self = StObject.set(x, "AdministrativeActions", js.undefined)
+    
+    inline def setAdministrativeActionsVarargs(value: AdministrativeAction*): Self = StObject.set(x, "AdministrativeActions", js.Array(value*))
     
     inline def setLifecycle(value: VolumeLifecycle): Self = StObject.set(x, "Lifecycle", value.asInstanceOf[js.Any])
     

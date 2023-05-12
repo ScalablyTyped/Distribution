@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "victory-scatter" : "36.6.8"
+      "victory-scatter" : "36.6.10"
     }
   ],
   "test-dependencies" : [
     {
-      "victory-scatter" : "36.6.8"
+      "victory-scatter" : "36.6.10"
     }
   ],
   "compile-devDependencies" : [

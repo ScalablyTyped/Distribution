@@ -3,6 +3,7 @@ package typings.three
 import typings.std.WebGLRenderingContext
 import typings.three.srcCoreBufferAttributeMod.BufferAttribute
 import typings.three.srcCoreBufferGeometryMod.BufferGeometry
+import typings.three.srcCoreBufferGeometryMod.NormalBufferAttributes
 import typings.three.srcCoreEventDispatcherMod.Event
 import typings.three.srcCoreObject3DMod.Object3D
 import typings.three.srcMaterialsMaterialMod.Material
@@ -46,7 +47,7 @@ object srcRenderersWebglWebGLBindingStatesMod {
       `object`: Object3D[Event],
       material: Material,
       program: WebGLProgram,
-      geometry: BufferGeometry,
+      geometry: BufferGeometry[NormalBufferAttributes],
       index: BufferAttribute
     ): Unit = js.native
   }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for workbox-broadcast-update
 
-Typings are for version 4.3
+Typings are for version 6.5.4
 
 ## Library description:
 A service worker helper library that uses the Broadcast Channel API to announce when a cached response has updated
@@ -24,7 +24,7 @@ A service worker helper library that uses the Broadcast Channel API to announce 
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

@@ -1,7 +1,7 @@
 
 # Scala.js typings for ci-info
 
-Typings are for version 3.6.1
+Typings are for version 3.8.0
 
 ## Library description:
 Get details about the current Continuous Integration environment

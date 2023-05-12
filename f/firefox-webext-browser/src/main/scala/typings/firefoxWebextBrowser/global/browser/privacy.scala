@@ -22,6 +22,13 @@ object privacy {
   object network {
     
     /**
+      * Allow users to query the status of 'Global Privacy Control'. This setting's value is of type boolean, defaulting to `false`.
+      */
+    @JSGlobal("browser.privacy.network.globalPrivacyControl")
+    @js.native
+    val globalPrivacyControl: Setting = js.native
+    
+    /**
       * Allow users to query the mode for 'HTTPS-Only Mode'. This setting's value is of type HTTPSOnlyModeOption, defaulting to `never`.
       */
     @JSGlobal("browser.privacy.network.httpsOnlyMode")

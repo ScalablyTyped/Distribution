@@ -1,27 +1,39 @@
 package typings.tesseractJs.mod
 
-import typings.tesseractJs.tesseractJsInts.`0`
-import typings.tesseractJs.tesseractJsInts.`1`
-import typings.tesseractJs.tesseractJsInts.`2`
-import typings.tesseractJs.tesseractJsInts.`3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Rewritten from type alias, can be one of: 
-  - typings.tesseractJs.tesseractJsInts.`0`
-  - typings.tesseractJs.tesseractJsInts.`1`
-  - typings.tesseractJs.tesseractJsInts.`2`
-  - typings.tesseractJs.tesseractJsInts.`3`
-*/
-trait OEM extends StObject
-object OEM {
+@js.native
+sealed trait OEM extends StObject
+@JSImport("tesseract.js", "OEM")
+@js.native
+object OEM extends StObject {
   
-  inline def DEFAULT: `3` = 3.asInstanceOf[`3`]
+  @JSBracketAccess
+  def apply(value: Double): js.UndefOr[OEM & Double] = js.native
   
-  inline def LSTM_ONLY: `1` = 1.asInstanceOf[`1`]
+  @js.native
+  sealed trait DEFAULT
+    extends StObject
+       with OEM
+  /* 3 */ val DEFAULT: typings.tesseractJs.mod.OEM.DEFAULT & Double = js.native
   
-  inline def TESSERACT_LSTM_COMBINED: `2` = 2.asInstanceOf[`2`]
+  @js.native
+  sealed trait LSTM_ONLY
+    extends StObject
+       with OEM
+  /* 1 */ val LSTM_ONLY: typings.tesseractJs.mod.OEM.LSTM_ONLY & Double = js.native
   
-  inline def TESSERACT_ONLY: `0` = 0.asInstanceOf[`0`]
+  @js.native
+  sealed trait TESSERACT_LSTM_COMBINED
+    extends StObject
+       with OEM
+  /* 2 */ val TESSERACT_LSTM_COMBINED: typings.tesseractJs.mod.OEM.TESSERACT_LSTM_COMBINED & Double = js.native
+  
+  @js.native
+  sealed trait TESSERACT_ONLY
+    extends StObject
+       with OEM
+  /* 0 */ val TESSERACT_ONLY: typings.tesseractJs.mod.OEM.TESSERACT_ONLY & Double = js.native
 }

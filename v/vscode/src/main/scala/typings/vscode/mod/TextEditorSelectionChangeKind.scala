@@ -14,8 +14,8 @@ object TextEditorSelectionChangeKind extends StObject {
   def apply(value: Double): js.UndefOr[TextEditorSelectionChangeKind & Double] = js.native
   
   /**
-    * Selection changed because a command ran.
-    */
+  		 * Selection changed because a command ran.
+  		 */
   @js.native
   sealed trait Command
     extends StObject
@@ -23,8 +23,8 @@ object TextEditorSelectionChangeKind extends StObject {
   /* 3 */ val Command: typings.vscode.mod.TextEditorSelectionChangeKind.Command & Double = js.native
   
   /**
-    * Selection changed due to typing in the editor.
-    */
+  		 * Selection changed due to typing in the editor.
+  		 */
   @js.native
   sealed trait Keyboard
     extends StObject
@@ -32,8 +32,8 @@ object TextEditorSelectionChangeKind extends StObject {
   /* 1 */ val Keyboard: typings.vscode.mod.TextEditorSelectionChangeKind.Keyboard & Double = js.native
   
   /**
-    * Selection change due to clicking in the editor.
-    */
+  		 * Selection change due to clicking in the editor.
+  		 */
   @js.native
   sealed trait Mouse
     extends StObject

@@ -1,5 +1,6 @@
 package typings.three
 
+import typings.three.srcCoreBufferGeometryMod.NormalBufferAttributes
 import typings.three.srcThreeMod.BufferGeometry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,7 +10,7 @@ object examplesJsmGeometriesBoxLineGeometryMod {
   
   @JSImport("three/examples/jsm/geometries/BoxLineGeometry", "BoxLineGeometry")
   @js.native
-  open class BoxLineGeometry protected () extends BufferGeometry {
+  open class BoxLineGeometry protected () extends BufferGeometry[NormalBufferAttributes] {
     def this(
       width: js.UndefOr[Double],
       height: js.UndefOr[Double],

@@ -164,7 +164,7 @@ object mod {
   }
   
   type Replacer = js.UndefOr[
-    (js.Array[Double | String]) | Null | (js.Function2[/* key */ String, /* value */ Any, String | Double | Boolean | Null])
+    (js.Array[Double | String]) | Null | (js.Function2[/* key */ String, /* value */ Any, String | Double | Boolean | Null | js.Object])
   ]
   
   trait StringifyOptions extends StObject {

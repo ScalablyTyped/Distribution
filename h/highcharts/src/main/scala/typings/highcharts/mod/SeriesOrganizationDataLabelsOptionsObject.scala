@@ -27,9 +27,10 @@ trait SeriesOrganizationDataLabelsOptionsObject extends StObject {
     * (Highcharts, Highstock, Highmaps, Gantt) Enable or disable the initial
     * animation when a series is displayed for the `dataLabels`. The animation
     * can also be set as a configuration object. Please note that this option
-    * only applies to the initial animation. For other animations, see
-    * chart.animation and the animation parameter under the API methods. The
-    * following properties are supported:
+    * only applies to the initial animation.
+    *
+    * For other animations, see chart.animation and the animation parameter
+    * under the API methods. The following properties are supported:
     *
     * - `defer`: The animation delay time in milliseconds.
     */
@@ -37,13 +38,14 @@ trait SeriesOrganizationDataLabelsOptionsObject extends StObject {
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The background color or gradient
-    * for the data label.
+    * for the data label. Setting it to `auto` will use the point's color.
     */
   var backgroundColor: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The border color for the data
-    * label. Defaults to `undefined`.
+    * label. Setting it to `auto` will use the point's color. Defaults to
+    * `undefined`.
     */
   var borderColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
@@ -95,10 +97,9 @@ trait SeriesOrganizationDataLabelsOptionsObject extends StObject {
     * (Highcharts, Highstock, Gantt) Whether to defer displaying the data
     * labels until the initial series animation has finished. Setting to
     * `false` renders the data label immediately. If set to `true` inherits the
-    * defer time set in plotOptions.series.animation. If set to a number, a
-    * defer time is specified in milliseconds.
+    * defer time set in plotOptions.series.animation.
     */
-  var defer: js.UndefOr[Boolean | Double] = js.undefined
+  var defer: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Enable or disable the data
@@ -136,6 +137,8 @@ trait SeriesOrganizationDataLabelsOptionsObject extends StObject {
     * stacked columns.
     */
   var inside: js.UndefOr[Boolean] = js.undefined
+  
+  var linkTextPath: js.UndefOr[PlotOrganizationDataLabelsLinkTextPathOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The format string specifying
@@ -336,7 +339,7 @@ object SeriesOrganizationDataLabelsOptionsObject {
     
     inline def setCropUndefined: Self = StObject.set(x, "crop", js.undefined)
     
-    inline def setDefer(value: Boolean | Double): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
+    inline def setDefer(value: Boolean): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
     
     inline def setDeferUndefined: Self = StObject.set(x, "defer", js.undefined)
     
@@ -359,6 +362,10 @@ object SeriesOrganizationDataLabelsOptionsObject {
     inline def setInside(value: Boolean): Self = StObject.set(x, "inside", value.asInstanceOf[js.Any])
     
     inline def setInsideUndefined: Self = StObject.set(x, "inside", js.undefined)
+    
+    inline def setLinkTextPath(value: PlotOrganizationDataLabelsLinkTextPathOptions): Self = StObject.set(x, "linkTextPath", value.asInstanceOf[js.Any])
+    
+    inline def setLinkTextPathUndefined: Self = StObject.set(x, "linkTextPath", js.undefined)
     
     inline def setNodeFormat(value: String): Self = StObject.set(x, "nodeFormat", value.asInstanceOf[js.Any])
     

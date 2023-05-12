@@ -73,7 +73,6 @@ object typesCreateMatcherMod {
     * @param {*} object A value to examine
     * @returns {boolean} Returns `true` when `object` is a matcher
     */
-  /* was `typeof imported_is-matcher` */
   inline def isMatcher(`object`: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMatcher")(`object`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   inline def json(value: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("json")(value.asInstanceOf[js.Any]).asInstanceOf[Any]

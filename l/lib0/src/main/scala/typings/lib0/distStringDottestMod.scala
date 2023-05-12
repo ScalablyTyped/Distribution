@@ -20,4 +20,6 @@ object distStringDottestMod {
   inline def testRepeatStringUtf8Encoding(tc: TestCase): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testRepeatStringUtf8Encoding")(tc.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   inline def testSplice(tc: TestCase): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testSplice")(tc.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  inline def testUtilities(tc: TestCase): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testUtilities")(tc.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

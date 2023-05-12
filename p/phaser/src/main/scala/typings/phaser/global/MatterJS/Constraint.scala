@@ -36,4 +36,15 @@ object Constraint {
     */
   /* static member */
   inline def create(options: IConstraintDefinition): ConstraintType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[ConstraintType]
+  
+  /**
+    * Returns the current length of the constraint.
+    * This is the distance between both of the constraint's end points.
+    * See `constraint.length` for the target rest length.
+    * @method currentLength
+    * @param {constraint} ConstraintType
+    * @return {number} the current length
+    */
+  /* static member */
+  inline def currentLength(constraint: ConstraintType): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("currentLength")(constraint.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

@@ -171,6 +171,42 @@ object SystemInfo {
     }
   }
   
+  trait GetFeatureStateRequest extends StObject {
+    
+    var featureState: String
+  }
+  object GetFeatureStateRequest {
+    
+    inline def apply(featureState: String): GetFeatureStateRequest = {
+      val __obj = js.Dynamic.literal(featureState = featureState.asInstanceOf[js.Any])
+      __obj.asInstanceOf[GetFeatureStateRequest]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetFeatureStateRequest] (val x: Self) extends AnyVal {
+      
+      inline def setFeatureState(value: String): Self = StObject.set(x, "featureState", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait GetFeatureStateResponse extends StObject {
+    
+    var featureEnabled: Boolean
+  }
+  object GetFeatureStateResponse {
+    
+    inline def apply(featureEnabled: Boolean): GetFeatureStateResponse = {
+      val __obj = js.Dynamic.literal(featureEnabled = featureEnabled.asInstanceOf[js.Any])
+      __obj.asInstanceOf[GetFeatureStateResponse]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetFeatureStateResponse] (val x: Self) extends AnyVal {
+      
+      inline def setFeatureEnabled(value: Boolean): Self = StObject.set(x, "featureEnabled", value.asInstanceOf[js.Any])
+    }
+  }
+  
   trait GetInfoResponse extends StObject {
     
     /**

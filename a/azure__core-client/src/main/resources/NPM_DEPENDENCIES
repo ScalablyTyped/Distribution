@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@azure/core-client" : "1.6.1"
+      "@azure/core-client" : "1.7.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@azure/core-client" : "1.6.1"
+      "@azure/core-client" : "1.7.2"
     }
   ],
   "compile-devDependencies" : [

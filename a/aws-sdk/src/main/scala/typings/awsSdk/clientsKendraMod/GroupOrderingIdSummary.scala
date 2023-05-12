@@ -12,7 +12,7 @@ trait GroupOrderingIdSummary extends StObject {
   var FailureReason: js.UndefOr[typings.awsSdk.clientsKendraMod.FailureReason] = js.undefined
   
   /**
-    * The last date-time an action was updated. An action can be a PUT or DELETE action for mapping users to their groups.
+    * The Unix timestamp when an action was last updated. An action can be a PUT or DELETE action for mapping users to their groups.
     */
   var LastUpdatedAt: js.UndefOr[js.Date] = js.undefined
   
@@ -22,7 +22,7 @@ trait GroupOrderingIdSummary extends StObject {
   var OrderingId: js.UndefOr[PrincipalOrderingId] = js.undefined
   
   /**
-    * The date-time an action was received by Amazon Kendra. An action can be a PUT or DELETE action for mapping users to their groups.
+    * The Unix timestamp when an action was received by Amazon Kendra. An action can be a PUT or DELETE action for mapping users to their groups.
     */
   var ReceivedAt: js.UndefOr[js.Date] = js.undefined
   

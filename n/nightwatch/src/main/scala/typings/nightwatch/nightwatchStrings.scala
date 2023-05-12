@@ -1,6 +1,7 @@
 package typings.nightwatch
 
 import typings.nightwatch.mod.LocateStrategy
+import typings.nightwatch.mod.NightwatchLogTypes
 import typings.nightwatch.mod.WindowType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -17,6 +18,10 @@ object nightwatchStrings {
   inline def DEBUG: DEBUG = "DEBUG".asInstanceOf[DEBUG]
   
   @js.native
+  sealed trait DELETE extends StObject
+  inline def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
+  
+  @js.native
   sealed trait FINE extends StObject
   inline def FINE: FINE = "FINE".asInstanceOf[FINE]
   
@@ -27,6 +32,10 @@ object nightwatchStrings {
   @js.native
   sealed trait FINEST extends StObject
   inline def FINEST: FINEST = "FINEST".asInstanceOf[FINEST]
+  
+  @js.native
+  sealed trait GET extends StObject
+  inline def GET: GET = "GET".asInstanceOf[GET]
   
   @js.native
   sealed trait INFO extends StObject
@@ -45,6 +54,10 @@ object nightwatchStrings {
   inline def PORTRAIT: PORTRAIT = "PORTRAIT".asInstanceOf[PORTRAIT]
   
   @js.native
+  sealed trait POST extends StObject
+  inline def POST: POST = "POST".asInstanceOf[POST]
+  
+  @js.native
   sealed trait SEVERE extends StObject
   inline def SEVERE: SEVERE = "SEVERE".asInstanceOf[SEVERE]
   
@@ -61,7 +74,9 @@ object nightwatchStrings {
   inline def assert: assert = "assert".asInstanceOf[assert]
   
   @js.native
-  sealed trait browser extends StObject
+  sealed trait browser
+    extends StObject
+       with NightwatchLogTypes
   inline def browser: browser = "browser".asInstanceOf[browser]
   
   @js.native
@@ -75,7 +90,9 @@ object nightwatchStrings {
   inline def clear: clear = "clear".asInstanceOf[clear]
   
   @js.native
-  sealed trait client extends StObject
+  sealed trait client
+    extends StObject
+       with NightwatchLogTypes
   inline def client: client = "client".asInstanceOf[client]
   
   @js.native
@@ -93,6 +110,10 @@ object nightwatchStrings {
   inline def debug_ : debug_ = "debug".asInstanceOf[debug_]
   
   @js.native
+  sealed trait delete_ extends StObject
+  inline def delete_ : delete_ = "delete".asInstanceOf[delete_]
+  
+  @js.native
   sealed trait dir extends StObject
   inline def dir: dir = "dir".asInstanceOf[dir]
   
@@ -101,7 +122,9 @@ object nightwatchStrings {
   inline def dirxml: dirxml = "dirxml".asInstanceOf[dirxml]
   
   @js.native
-  sealed trait driver extends StObject
+  sealed trait driver
+    extends StObject
+       with NightwatchLogTypes
   inline def driver: driver = "driver".asInstanceOf[driver]
   
   @js.native
@@ -113,10 +136,18 @@ object nightwatchStrings {
   inline def error: error = "error".asInstanceOf[error]
   
   @js.native
+  sealed trait get_ extends StObject
+  inline def get_ : get_ = "get".asInstanceOf[get_]
+  
+  @js.native
   sealed trait id
     extends StObject
        with LocateStrategy
   inline def id: id = "id".asInstanceOf[id]
+  
+  @js.native
+  sealed trait `implicit` extends StObject
+  inline def `implicit`: `implicit` = "implicit".asInstanceOf[`implicit`]
   
   @js.native
   sealed trait info_ extends StObject
@@ -147,14 +178,24 @@ object nightwatchStrings {
   inline def name: name = "name".asInstanceOf[name]
   
   @js.native
+  sealed trait pageLoad extends StObject
+  inline def pageLoad: pageLoad = "pageLoad".asInstanceOf[pageLoad]
+  
+  @js.native
   sealed trait `partial link text`
     extends StObject
        with LocateStrategy
   inline def `partial link text`: `partial link text` = ("partial link text").asInstanceOf[`partial link text`]
   
   @js.native
-  sealed trait performance extends StObject
+  sealed trait performance
+    extends StObject
+       with NightwatchLogTypes
   inline def performance: performance = "performance".asInstanceOf[performance]
+  
+  @js.native
+  sealed trait post_ extends StObject
+  inline def post_ : post_ = "post".asInstanceOf[post_]
   
   @js.native
   sealed trait profile extends StObject
@@ -169,7 +210,13 @@ object nightwatchStrings {
   inline def right: right = "right".asInstanceOf[right]
   
   @js.native
-  sealed trait server extends StObject
+  sealed trait script extends StObject
+  inline def script: script = "script".asInstanceOf[script]
+  
+  @js.native
+  sealed trait server
+    extends StObject
+       with NightwatchLogTypes
   inline def server: server = "server".asInstanceOf[server]
   
   @js.native

@@ -438,6 +438,15 @@ object buildSrcCommonMod {
     var retry: js.UndefOr[Double] = js.undefined
     
     /**
+      * Function to invoke which returns a promise. After the promise resolves,
+      * the retry will be triggered. If provided, this will be used in-place of
+      * the `retryDelay`
+      */
+    var retryBackoff: js.UndefOr[
+        js.Function2[/* err */ GaxiosError[Any], /* defaultBackoffMs */ Double, js.Promise[Unit]]
+      ] = js.undefined
+    
+    /**
       * The amount of time to initially delay the retry, in ms.  Defaults to 100ms.
       */
     var retryDelay: js.UndefOr[Double] = js.undefined
@@ -482,6 +491,10 @@ object buildSrcCommonMod {
       inline def setOnRetryAttemptUndefined: Self = StObject.set(x, "onRetryAttempt", js.undefined)
       
       inline def setRetry(value: Double): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])
+      
+      inline def setRetryBackoff(value: (/* err */ GaxiosError[Any], /* defaultBackoffMs */ Double) => js.Promise[Unit]): Self = StObject.set(x, "retryBackoff", js.Any.fromFunction2(value))
+      
+      inline def setRetryBackoffUndefined: Self = StObject.set(x, "retryBackoff", js.undefined)
       
       inline def setRetryDelay(value: Double): Self = StObject.set(x, "retryDelay", value.asInstanceOf[js.Any])
       

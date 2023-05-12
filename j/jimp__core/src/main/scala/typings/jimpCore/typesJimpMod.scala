@@ -85,6 +85,11 @@ object typesJimpMod {
     def getBase64(mime: String, cb: GenericCallback[String, Any, this.type]): this.type = js.native
     
     def getBase64Async(mime: String): js.Promise[String] = js.native
+    @JSName("getBase64Async")
+    def getBase64Async_1(mime: `-1`): js.Promise[String] = js.native
+    
+    @JSName("getBase64")
+    def getBase64_1(mime: `-1`, cb: GenericCallback[String, Any, this.type]): this.type = js.native
     
     def getBuffer(mime: String, cb: GenericCallback[Buffer, Any, Any]): this.type = js.native
     
@@ -104,8 +109,8 @@ object typesJimpMod {
     
     def getPixelIndex(x: Double, y: Double): Double = js.native
     def getPixelIndex(x: Double, y: Double, cb: GenericCallback[Double, Any, this.type]): Double = js.native
-    def getPixelIndex(x: Double, y: Double, edgeHandling: String): Double = js.native
-    def getPixelIndex(x: Double, y: Double, edgeHandling: String, cb: GenericCallback[Double, Any, this.type]): Double = js.native
+    def getPixelIndex(x: Double, y: Double, edgeHandling: Double): Double = js.native
+    def getPixelIndex(x: Double, y: Double, edgeHandling: Double, cb: GenericCallback[Double, Any, this.type]): Double = js.native
     
     def getWidth(): Double = js.native
     
@@ -122,6 +127,8 @@ object typesJimpMod {
     
     // Methods
     def on[T /* <: ListenableName */](event: T, cb: js.Function1[/* data */ ListenerData[T], Any]): Any = js.native
+    
+    def pHash(): String = js.native
     
     def parseBitmap(data: Buffer): Unit = js.native
     def parseBitmap(data: Buffer, path: String): Unit = js.native

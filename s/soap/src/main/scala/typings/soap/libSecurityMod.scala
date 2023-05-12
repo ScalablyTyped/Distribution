@@ -108,4 +108,14 @@ object libSecurityMod {
     def this(privatePEM: Any, publicP12PEM: Any, password: Any) = this()
     def this(privatePEM: Any, publicP12PEM: Any, password: Any, options: IWSSecurityCertOptions) = this()
   }
+  
+  @JSImport("soap/lib/security", "WSSecurityPlusCert")
+  @js.native
+  open class WSSecurityPlusCert protected ()
+    extends typings.soap.libSecurityWssecuritypluscertMod.WSSecurityPlusCert {
+    def this(
+      wsSecurity: typings.soap.libSecurityWssecurityMod.WSSecurity,
+      wsSecurityCert: typings.soap.libSecurityWssecuritycertMod.WSSecurityCert
+    ) = this()
+  }
 }

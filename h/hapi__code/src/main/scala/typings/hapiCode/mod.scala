@@ -423,6 +423,15 @@ object mod {
          with BaseAssertion[T, T] {
       
       /**
+        * Asserts that the reference value is within a delta difference from the provided value.
+        * 
+        * @param value - the value to compare to.
+        * @param delta - the delta +/- range value.
+        *
+        * @returns assertion chain object.
+        */
+      def about(value: T, delta: Double): Assertion[T, T] = js.native
+      /**
         * Asserts that the reference value is about the provided value within a delta margin of difference.
         * 
         * @param value - the value to be near.

@@ -15,6 +15,8 @@ object anon {
     def apply(): Sharp = js.native
     def apply(input: String): Sharp = js.native
     def apply(input: String, options: SharpOptions): Sharp = js.native
+    def apply(input: js.typedarray.ArrayBuffer): Sharp = js.native
+    def apply(input: js.typedarray.ArrayBuffer, options: SharpOptions): Sharp = js.native
     def apply(input: js.typedarray.Float32Array): Sharp = js.native
     def apply(input: js.typedarray.Float32Array, options: SharpOptions): Sharp = js.native
     def apply(input: js.typedarray.Float64Array): Sharp = js.native

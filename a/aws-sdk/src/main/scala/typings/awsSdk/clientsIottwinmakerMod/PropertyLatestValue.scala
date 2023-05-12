@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PropertyLatestValue extends StObject {
   
   /**
-    * An object that specifies information about a property.&gt;
+    * An object that specifies information about a property.
     */
   var propertyReference: EntityPropertyReference
   

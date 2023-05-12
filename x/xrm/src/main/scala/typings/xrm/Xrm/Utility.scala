@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /**
   * Interface for the Xrm.Utility API
-  * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/xrm-utility External Link: Xrm.Utility (Client API reference)}
+  * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/reference/xrm-utility External Link: Xrm.Utility (Client API reference)}
   */
 @js.native
 trait Utility extends StObject {
@@ -25,7 +25,7 @@ trait Utility extends StObject {
   /**
     * Displays an alert dialog, with an "OK" button.
     * @deprecated Deprecated in v9. Use {@link Xrm.Navigation.openAlertDialog} instead.
-    * @see {@link https://docs.microsoft.com/en-us/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#some-client-apis-are-deprecated External Link: Deprecated Client APIs}
+    * @see {@link https://learn.microsoft.com/en-us/power-platform/important-changes-coming#some-client-apis-are-deprecated External Link: Deprecated Client APIs}
     * @param message The message.
     * @param onCloseCallback The "OK" callback.
     */
@@ -33,14 +33,14 @@ trait Utility extends StObject {
   
   /**
     * Closes a progress dialog box.
-    * @see {@link https://docs.microsoft.com/powerapps/developer/model-driven-apps/clientapi/reference/xrm-utility/closeprogressindicator External Link: closeProgressIndicator (Client API reference)}
+    * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/reference/xrm-utility/closeprogressindicator External Link: closeProgressIndicator (Client API reference)}
     */
   def closeProgressIndicator(): Unit = js.native
   
   /**
     * Displays a confirmation dialog, with "OK" and "Cancel" buttons.
     * @deprecated Deprecated in v9. Use {@link Xrm.Navigation.openConfirmDialog} instead.
-    * @see {@link https://docs.microsoft.com/en-us/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#some-client-apis-are-deprecated External Link: Deprecated Client APIs}
+    * @see {@link https://learn.microsoft.com/en-us/power-platform/important-changes-coming#some-client-apis-are-deprecated External Link: Deprecated Client APIs}
     * @param message The message.
     * @param yesCloseCallback The "OK" callback.
     * @param noCloseCallback The "Cancel" callback.
@@ -52,7 +52,7 @@ trait Utility extends StObject {
     * @param entityName    The logical name of the entity.
     * @param stateCode     The state code to find out the allowed status transition values.
     * @returns Returns an object with .then() function. The parameter to the delegate is an array of numbers representing the valid status transitions.
-    * @see {@link https://docs.microsoft.com/powerapps/developer/model-driven-apps/clientapi/reference/xrm-utility/getallowedstatustransitions getAllowedStatusTransitions (Client API reference)}
+    * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/reference/xrm-utility/getallowedstatustransitions External Link: getAllowedStatusTransitions (Client API reference)}
     */
   def getAllowedStatusTransitions(entityName: String, stateCode: Double): PromiseLike[js.Array[Double]] = js.native
   
@@ -60,14 +60,14 @@ trait Utility extends StObject {
     * Returns the entity metadata for the specified entity.
     * @param entityName The logical name of the entity.
     * @param attributes The attributes to get metadata for.
-    * @see {@link https://docs.microsoft.com/powerapps/developer/model-driven-apps/clientapi/reference/xrm-utility/getentitymetadata External Link: getEntityMetadata}
+    * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/reference/xrm-utility/getentitymetadata External Link: getEntityMetadata}
     */
   def getEntityMetadata(entityName: String): typings.xrm.Xrm.Async.PromiseLike[EntityMetadata] = js.native
   def getEntityMetadata(entityName: String, attributes: js.Array[String]): typings.xrm.Xrm.Async.PromiseLike[EntityMetadata] = js.native
   
   /**
     * The method provides access to the global context without going through the form context.
-    * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/xrm-utility/getglobalcontext External Link: getGlobalContext (Client API reference)}
+    * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/reference/xrm-utility/getglobalcontext External Link: getGlobalContext (Client API reference)}
     */
   def getGlobalContext(): GlobalContext = js.native
   
@@ -75,14 +75,14 @@ trait Utility extends StObject {
     * Returns the name of the DOM attribute expected by the Learning Path (guided help) Content Designer for identifying UI controls in the model-driven apps forms.
     * An attribute by this name must be added to the UI element that needs to be exposed to Learning Path (guided help).
     * @returns DOM attribute expected by the Learning Path (guided help) Content Designer.
-    * @see {@link https://docs.microsoft.com/powerapps/developer/model-driven-apps/clientapi/reference/xrm-utility/getlearningpathattributename External Link: getLearningPathAttributeName (Client API reference)}
+    * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/reference/xrm-utility/getlearningpathattributename External Link: getLearningPathAttributeName (Client API reference)}
     */
   def getLearningPathAttributeName(): String = js.native
   
   /**
     * Gets the page context as an object representing the page.
     * @returns The method returns an object with the input property. The input property is an object with the following attributes depending on whether you are currently on the entity form or entity list
-    * @see {@link https://docs.microsoft.com/powerapps/developer/model-driven-apps/clientapi/reference/xrm-utility/getpagecontext#entity-form External Link: getPageContext (Client API reference)}
+    * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/reference/xrm-utility/getpagecontext#entity-form External Link: getPageContext (Client API reference)}
     */
   def getPageContext(): PageContext = js.native
   
@@ -98,9 +98,9 @@ trait Utility extends StObject {
     * Invokes an action based on the specified parameters
     * @param name Name of the process action to invoke.
     * @param parameters An object containing input parameters for the action. You define an object using key:value pairs of items, where key is of String type.
-    * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/xrm-utility/invokeprocessaction External Link: invokeProcessAction (Client API reference)}
-    * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/customize/actions External Link: Actions overview}
-    * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/create-own-actions External Link: Create your own actions}
+    * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/reference/xrm-utility/invokeprocessaction External Link: invokeProcessAction (Client API reference)}
+    * @see {@link https://learn.microsoft.com/en-us/dynamics365/customerengagement/on-premises/customize/actions External Link: Actions overview}
+    * @see {@link https://learn.microsoft.com/en-us/dynamics365/customerengagement/on-premises/developer/create-own-actions External Link: Create your own actions}
     */
   def invokeProcessAction(name: String, parameters: Dictionary[Any]): typings.xrm.Xrm.Async.PromiseLike[Any] = js.native
   
@@ -109,7 +109,7 @@ trait Utility extends StObject {
     * @deprecated Deprecated in v9. Use {@link Xrm.Utility.getEntityMetadata  Xrm.Utility.getEntityMetadata(entityName, ["IsActivity"])} instead.
     * @remarks The isActivityType method is synchronous so it was suitable for ribbon rules.
     * However, the replacement method, getEntityMetadata, is asynchronous, and is not suitable for ribbon rules.
-    * @see {@link https://docs.microsoft.com/en-us/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#some-client-apis-are-deprecated External Link: Deprecated Client APIs}
+    * @see {@link https://learn.microsoft.com/en-us/power-platform/important-changes-coming#some-client-apis-are-deprecated External Link: Deprecated Client APIs}
     * @param entityType Type of the entity.
     * @returns true if the entity is an Activity, false if not.
     */
@@ -118,14 +118,14 @@ trait Utility extends StObject {
   /**
     * Opens a lookup control to select one or more items.
     * @param lookupOptions Defines the options for opening the lookup dialog
-    * @see {@link https://docs.microsoft.com/powerapps/developer/model-driven-apps/clientapi/reference/xrm-utility/lookupobjects}
+    * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/reference/xrm-utility/lookupobjects External Link: lookupObjects (Client API reference)}
     */
   def lookupObjects(lookupOptions: LookupOptions): typings.xrm.Xrm.Async.PromiseLike[js.Array[LookupValue]] = js.native
   
   /**
     * Opens an entity form.
     * @deprecated Deprecated in v9. Use {@link Xrm.Navigation.openForm} instead.
-    * @see {@link https://docs.microsoft.com/en-us/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#some-client-apis-are-deprecated External Link: Deprecated Client APIs}
+    * @see {@link https://learn.microsoft.com/en-us/power-platform/important-changes-coming#some-client-apis-are-deprecated External Link: Deprecated Client APIs}
     * @param name The entity's logical name.
     * @param id (Optional) The unique identifier for the record.
     * @param parameters (Optional) A dictionary object that passes extra query string parameters to the form.
@@ -143,7 +143,7 @@ trait Utility extends StObject {
   /**
     * Opens quick create.
     * @deprecated Deprecated in v9. Use {@link Xrm.Navigation.openForm} instead with the option {useQuickCreateForm:true}.
-    * @see {@link https://docs.microsoft.com/en-us/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#some-client-apis-are-deprecated External Link: Deprecated Client APIs}
+    * @see {@link https://learn.microsoft.com/en-us/power-platform/important-changes-coming#some-client-apis-are-deprecated External Link: Deprecated Client APIs}
     * @param entityLogicalName  The logical name of the entity to create.
     * @param createFromEntity (Optional) Designates a record that will provide default values based on mapped attribute values.
     * @param parameters (Optional) A dictionary object that passes extra query string parameters to the form. Invalid query string parameters will cause an error.
@@ -157,7 +157,7 @@ trait Utility extends StObject {
   /**
     * Opens an HTML Web Resource in a new browser window.
     * @deprecated Deprecated in v9. Use {@link Xrm.Navigation.openWebResource} instead.
-    * @see {@link https://docs.microsoft.com/en-us/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#some-client-apis-are-deprecated External Link: Deprecated Client APIs}
+    * @see {@link https://learn.microsoft.com/en-us/power-platform/important-changes-coming#some-client-apis-are-deprecated External Link: Deprecated Client APIs}
     * @param webResourceName Name of the HTML web resource. Can be used to pass URL parameters.  See Remarks.
     * @param webResourceData (Optional) Data to pass into the Web Resource's data parameter. It is advised to use encodeURIcomponent() to encode the value.
     * @param width (Optional) The width of the new window.
@@ -185,7 +185,7 @@ trait Utility extends StObject {
   /**
     * Refreshes the parent grid containing the specified record.
     * @param lookupOptions: The lookup value of the parent object to refresh.
-    * @see {@link https://docs.microsoft.com/powerapps/developer/model-driven-apps/clientapi/reference/xrm-utility/refreshparentgrid}
+    * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/reference/xrm-utility/refreshparentgrid External Link: refreshParentGrid (Client API reference)}
     */
   def refreshParentGrid(lookupOptions: LookupValue): Unit = js.native
   
@@ -193,14 +193,14 @@ trait Utility extends StObject {
     * Displays a progress dialog with the specified message.
     * Any subsequent call to this method will update the displayed message in the existing progress dialog with the message specified in the latest method call.
     * @param message The message to be displayed in the progress dialog.
-    * @see {@link https://docs.microsoft.com/powerapps/developer/model-driven-apps/clientapi/reference/xrm-utility/showprogressindicator}
+    * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/reference/xrm-utility/showprogressindicator External Link: showProgressIndicator (Client API reference)}
     */
   def showProgressIndicator(message: String): Unit = js.native
 }
 /**
   * The Xrm.Utility API
   *
-  * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/xrm-utility External Link: Xrm.Utility (Client API reference)}
+  * @see {@link https://learn.microsoft.com/en-us/power-apps/developer/model-driven-apps/clientapi/reference/xrm-utility External Link: Xrm.Utility (Client API reference)}
   */
 object Utility {
   

@@ -23,13 +23,13 @@ object mod extends Shortcut {
       
       trait Assertion extends StObject {
         
-        // tslint:disable-next-line no-unnecessary-generics
+        // eslint-disable-next-line no-unnecessary-generics
         def containAll[T](cb: js.Function1[/* item */ T, Boolean]): Unit
         
-        // tslint:disable-next-line no-unnecessary-generics
+        // eslint-disable-next-line no-unnecessary-generics
         def containExactlyOne[T](cb: js.Function1[/* item */ T, Boolean]): Unit
         
-        // tslint:disable-next-line no-unnecessary-generics
+        // eslint-disable-next-line no-unnecessary-generics
         def containOne[T](cb: js.Function1[/* item */ T, Boolean]): Unit
       }
       object Assertion {

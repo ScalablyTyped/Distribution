@@ -35,6 +35,11 @@ trait MultiFile extends StObject {
   var config: Any
   
   /**
+    * Destroy this Multi File and any references it holds.
+    */
+  def destroy(): Unit
+  
+  /**
     * The number of files that failed to load.
     */
   var failed: Double
@@ -83,10 +88,23 @@ trait MultiFile extends StObject {
   var pending: Double
   
   /**
+    * Called once all children of this multi file have been added to their caches and is now
+    * ready for deletion from the Loader.
+    * 
+    * It will emit a `filecomplete` event from the LoaderPlugin.
+    */
+  def pendingDestroy(): Unit
+  
+  /**
     * A reference to the Loaders prefix at the time this MultiFile was created.
     * Used to populate child-files.
     */
   var prefix: String
+  
+  /**
+    * The current state of the file. One of the FILE_CONST values.
+    */
+  var state: Double
   
   /**
     * The file type string for sorting within the Loader.
@@ -100,6 +118,7 @@ object MultiFile {
     baseURL: String,
     complete: Boolean,
     config: Any,
+    destroy: () => Unit,
     failed: Double,
     files: js.Array[File],
     isReadyToProcess: () => Boolean,
@@ -109,10 +128,12 @@ object MultiFile {
     onFileFailed: File => Unit,
     path: String,
     pending: Double,
+    pendingDestroy: () => Unit,
     prefix: String,
+    state: Double,
     `type`: String
   ): MultiFile = {
-    val __obj = js.Dynamic.literal(addToMultiFile = js.Any.fromFunction1(addToMultiFile), baseURL = baseURL.asInstanceOf[js.Any], complete = complete.asInstanceOf[js.Any], config = config.asInstanceOf[js.Any], failed = failed.asInstanceOf[js.Any], files = files.asInstanceOf[js.Any], isReadyToProcess = js.Any.fromFunction0(isReadyToProcess), key = key.asInstanceOf[js.Any], loader = loader.asInstanceOf[js.Any], onFileComplete = js.Any.fromFunction1(onFileComplete), onFileFailed = js.Any.fromFunction1(onFileFailed), path = path.asInstanceOf[js.Any], pending = pending.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(addToMultiFile = js.Any.fromFunction1(addToMultiFile), baseURL = baseURL.asInstanceOf[js.Any], complete = complete.asInstanceOf[js.Any], config = config.asInstanceOf[js.Any], destroy = js.Any.fromFunction0(destroy), failed = failed.asInstanceOf[js.Any], files = files.asInstanceOf[js.Any], isReadyToProcess = js.Any.fromFunction0(isReadyToProcess), key = key.asInstanceOf[js.Any], loader = loader.asInstanceOf[js.Any], onFileComplete = js.Any.fromFunction1(onFileComplete), onFileFailed = js.Any.fromFunction1(onFileFailed), path = path.asInstanceOf[js.Any], pending = pending.asInstanceOf[js.Any], pendingDestroy = js.Any.fromFunction0(pendingDestroy), prefix = prefix.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultiFile]
   }
@@ -127,6 +148,8 @@ object MultiFile {
     inline def setComplete(value: Boolean): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
     
     inline def setConfig(value: Any): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    
+    inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
     inline def setFailed(value: Double): Self = StObject.set(x, "failed", value.asInstanceOf[js.Any])
     
@@ -148,7 +171,11 @@ object MultiFile {
     
     inline def setPending(value: Double): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
     
+    inline def setPendingDestroy(value: () => Unit): Self = StObject.set(x, "pendingDestroy", js.Any.fromFunction0(value))
+    
     inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+    
+    inline def setState(value: Double): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

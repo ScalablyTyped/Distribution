@@ -1,7 +1,7 @@
 
 # Scala.js typings for opentelemetry__exporter-zipkin
 
-Typings are for version 1.7.0
+Typings are for version 1.13.0
 
 ## Library description:
 OpenTelemetry Zipkin Exporter allows the user to send collected traces to Zipkin.

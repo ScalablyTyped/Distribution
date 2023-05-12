@@ -6,7 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GetResponses200202204 extends StObject {
   
-  /** Returns the last year of commit activity grouped by week. The `days` array is a group of commits per day, starting on `Sunday`. */
+  /**
+    * Get the last year of commit activity
+    * @description Returns the last year of commit activity grouped by week. The `days` array is a group of commits per day, starting on `Sunday`.
+    */
   var get: Responses200202204
 }
 object GetResponses200202204 {

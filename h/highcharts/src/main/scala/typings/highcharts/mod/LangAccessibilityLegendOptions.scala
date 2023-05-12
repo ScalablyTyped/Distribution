@@ -6,10 +6,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait LangAccessibilityLegendOptions extends StObject {
   
+  /**
+    * (Highcharts, Highstock, Highmaps, Gantt) Accessible label for individual
+    * legend items. `{itemName}` refers to the visual text in the legend for
+    * that item.
+    */
   var legendItem: js.UndefOr[String] = js.undefined
   
+  /**
+    * (Highcharts, Highstock, Highmaps, Gantt) Accessible label for the legend,
+    * for charts where there is a legend title defined. `{legendTitle}` refers
+    * to the visual text in the legend title.
+    */
   var legendLabel: js.UndefOr[String] = js.undefined
   
+  /**
+    * (Highcharts, Highstock, Highmaps, Gantt) Accessible label for the legend,
+    * for charts where there is no legend title defined.
+    */
   var legendLabelNoTitle: js.UndefOr[String] = js.undefined
 }
 object LangAccessibilityLegendOptions {

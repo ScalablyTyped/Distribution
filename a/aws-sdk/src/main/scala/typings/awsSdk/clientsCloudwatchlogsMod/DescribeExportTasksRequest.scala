@@ -22,7 +22,7 @@ trait DescribeExportTasksRequest extends StObject {
   var statusCode: js.UndefOr[ExportTaskStatusCode] = js.undefined
   
   /**
-    * The ID of the export task. Specifying a task ID filters the results to zero or one export tasks.
+    * The ID of the export task. Specifying a task ID filters the results to one or zero export tasks.
     */
   var taskId: js.UndefOr[ExportTaskId] = js.undefined
 }

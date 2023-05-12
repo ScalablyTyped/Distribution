@@ -3,6 +3,8 @@ package typings.antvComponent.libTypesMod
 import typings.antvComponent.anon.DisplayLength
 import typings.antvComponent.anon.DisplayStyle
 import typings.antvComponent.antvComponentStrings.downward
+import typings.antvComponent.antvComponentStrings.leftward
+import typings.antvComponent.antvComponentStrings.rightward
 import typings.antvComponent.antvComponentStrings.upward
 import typings.antvGBase.libInterfacesMod.IGroup
 import typings.antvGBase.libTypesMod.BBox
@@ -27,7 +29,7 @@ trait DataMarkerAnnotationCfg
   /**
     * 方向
     */
-  var direction: js.UndefOr[upward | downward] = js.undefined
+  var direction: js.UndefOr[upward | downward | leftward | rightward] = js.undefined
   
   var line: js.UndefOr[DisplayLength] = js.undefined
   
@@ -65,7 +67,7 @@ object DataMarkerAnnotationCfg {
     
     inline def setCoordBBoxUndefined: Self = StObject.set(x, "coordBBox", js.undefined)
     
-    inline def setDirection(value: upward | downward): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: upward | downward | leftward | rightward): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
     inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     

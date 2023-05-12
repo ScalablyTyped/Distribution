@@ -1,7 +1,11 @@
 package typings.luxon
 
+import typings.luxon.luxonBooleans.`false`
+import typings.luxon.luxonStrings._empty
+import typings.luxon.luxonStrings.invalid
 import typings.luxon.luxonStrings.long
 import typings.luxon.luxonStrings.short
+import typings.luxon.srcUtilMod.IfInvalid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -95,7 +99,10 @@ object srcZoneMod {
   
   @JSImport("luxon/src/zone", "InvalidZone")
   @js.native
-  open class InvalidZone () extends Zone
+  open class InvalidZone () extends Zone {
+    
+    def offsetFormat: _empty = js.native
+  }
   
   @JSImport("luxon/src/zone", "SystemZone")
   @js.native
@@ -110,7 +117,7 @@ object srcZoneMod {
       *
       * @param other - the zone to compare
       */
-    def equals(other: Zone): Boolean = js.native
+    def equals(other: Zone): Boolean | IfInvalid[`false`] = js.native
     
     /**
       * Returns the offset's value as a string
@@ -119,17 +126,17 @@ object srcZoneMod {
       * @param format - What style of offset to return.
       *                 Accepts 'narrow', 'short', or 'techie'. Returning '+6', '+06:00', or '+0600' respectively
       */
-    def formatOffset(ts: Double, format: ZoneOffsetFormat): String = js.native
+    def formatOffset(ts: Double, format: ZoneOffsetFormat): String | IfInvalid[_empty] = js.native
     
     /**
       * Returns whether the offset is known to be fixed for the whole year.
       */
-    def isUniversal: Boolean = js.native
+    def isUniversal: Boolean | IfInvalid[`false`] = js.native
     
     /**
       * Return whether this Zone is valid.
       */
-    def isValid: Boolean = js.native
+    def isValid: Boolean | IfInvalid[`false`] = js.native
     
     /**
       * The name of this zone.
@@ -141,7 +148,7 @@ object srcZoneMod {
       *
       * @param ts - Epoch milliseconds for which to compute the offset
       */
-    def offset(ts: Double): Double = js.native
+    def offset(ts: Double): Double | IfInvalid[Double] = js.native
     
     /**
       * Returns the offset's common name (such as EST) at the specified timestamp
@@ -151,12 +158,12 @@ object srcZoneMod {
       * @param options.format - What style of offset to return.
       * @param options.locale - What locale to return the offset name in.
       */
-    def offsetName(ts: Double, options: ZoneOffsetOptions): String = js.native
+    def offsetName(ts: Double, options: ZoneOffsetOptions): String | IfInvalid[Null] = js.native
     
     /**
       * The type of zone
       */
-    def `type`: String = js.native
+    def `type`: String | IfInvalid[invalid] = js.native
   }
   
   /* Rewritten from type alias, can be one of: 

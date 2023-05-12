@@ -1,5 +1,6 @@
 package typings.angularCompilerCli.srcNgtscReflectionSrcHostMod
 
+import typings.angularCompilerCli.anon.ClassDeclarationDeclarati
 import typings.std.Map
 import typings.typescript.mod.Expression
 import typings.typescript.mod.Identifier
@@ -12,17 +13,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ReflectionHost extends StObject {
   
   /**
-    * Get a `ts.Identifier` for a given `ClassDeclaration` which can be used to refer to the class
-    * from statements that are "adjacent", and conceptually tightly bound, to the class but not
-    * actually inside it.
-    *
-    * Similar to `getInternalNameOfClass()`, this name can differ from `clazz.name` when ngcc runs
-    * over ES5 code, since these "adjacent" statements need to exist in the IIFE where the class may
-    * have a different name than it does externally.
-    */
-  def getAdjacentNameOfClass(clazz: ClassDeclaration[DeclarationNode]): Identifier
-  
-  /**
     * Get an expression representing the base class (if any) of the given `clazz`.
     *
     * This expression is most commonly an Identifier, but is possible to inherit from a more dynamic
@@ -30,7 +20,7 @@ trait ReflectionHost extends StObject {
     *
     * @param clazz the class whose base we want to get.
     */
-  def getBaseClassExpression(clazz: ClassDeclaration[DeclarationNode]): Expression | Null
+  def getBaseClassExpression(clazz: ClassDeclarationDeclarati): Expression | Null
   
   /**
     * Reflect over the constructor of a class and return metadata about its parameters.
@@ -44,7 +34,7 @@ trait ReflectionHost extends StObject {
     * a constructor exists. If the constructor exists and has 0 parameters, this array will be empty.
     * If the class has no constructor, this method returns `null`.
     */
-  def getConstructorParameters(clazz: ClassDeclaration[DeclarationNode]): js.Array[CtorParameter] | Null
+  def getConstructorParameters(clazz: ClassDeclarationDeclarati): js.Array[CtorParameter] | Null
   
   /**
     * Trace an identifier to its declaration, if possible.
@@ -118,20 +108,6 @@ trait ReflectionHost extends StObject {
   def getDefinitionOfFunction(fn: Node): FunctionDefinition | Null
   
   /**
-    * Take an exported declaration (maybe a class down-leveled to a variable) and look up the
-    * declaration of its type in a separate .d.ts tree.
-    *
-    * This function is allowed to return `null` if the current compilation unit does not have a
-    * separate .d.ts tree. When compiling TypeScript code this is always the case, since .d.ts files
-    * are produced only during the emit of such a compilation. When compiling .js code, however,
-    * there is frequently a parallel .d.ts tree which this method exposes.
-    *
-    * Note that the `ts.Declaration` returned from this function may not be from the same
-    * `ts.Program` as the input declaration.
-    */
-  def getDtsDeclaration(declaration: DeclarationNode): typings.typescript.mod.Declaration | Null
-  
-  /**
     * Collect the declarations exported from a module by name.
     *
     * Iterates over the exports of a module (including re-exports) and returns a map of export
@@ -153,7 +129,7 @@ trait ReflectionHost extends StObject {
     * @returns the number of type parameters of the class, if known, or `null` if the declaration
     * is not a class or has an unknown number of type parameters.
     */
-  def getGenericArityOfClass(clazz: ClassDeclaration[DeclarationNode]): Double | Null
+  def getGenericArityOfClass(clazz: ClassDeclarationDeclarati): Double | Null
   
   /**
     * Determine if an identifier was imported from another module and return `Import` metadata
@@ -167,15 +143,6 @@ trait ReflectionHost extends StObject {
   def getImportOfIdentifier(id: Identifier): Import | Null
   
   /**
-    * Get a `ts.Identifier` for a given `ClassDeclaration` which can be used to refer to the class
-    * within its definition (such as in static fields).
-    *
-    * This can differ from `clazz.name` when ngcc runs over ES5 code, since the class may have a
-    * different name within its IIFE wrapper than it does externally.
-    */
-  def getInternalNameOfClass(clazz: ClassDeclaration[DeclarationNode]): Identifier
-  
-  /**
     * Examine a declaration which should be of a class, and return metadata about the members of the
     * class.
     *
@@ -185,7 +152,7 @@ trait ReflectionHost extends StObject {
     *
     * @throws if `declaration` does not resolve to a class declaration.
     */
-  def getMembersOfClass(clazz: ClassDeclaration[DeclarationNode]): js.Array[ClassMember]
+  def getMembersOfClass(clazz: ClassDeclarationDeclarati): js.Array[ClassMember]
   
   /**
     * Find the assigned value of a variable declaration.
@@ -204,12 +171,12 @@ trait ReflectionHost extends StObject {
     *
     * @param clazz a `ClassDeclaration` representing the class over which to reflect.
     */
-  def hasBaseClass(clazz: ClassDeclaration[DeclarationNode]): Boolean
+  def hasBaseClass(clazz: ClassDeclarationDeclarati): Boolean
   
   /**
     * Check whether the given node actually represents a class.
     */
-  def isClass(node: Node): /* is @angular/compiler-cli.@angular/compiler-cli/src/ngtsc/reflection/src/host.ClassDeclaration<@angular/compiler-cli.@angular/compiler-cli/src/ngtsc/reflection/src/host.DeclarationNode> */ Boolean
+  def isClass(node: Node): /* is @angular/compiler-cli.anon.ClassDeclarationDeclarati */ Boolean
   
   /**
     * Returns `true` if a declaration is exported from the module in which it's defined.
@@ -224,35 +191,30 @@ trait ReflectionHost extends StObject {
 object ReflectionHost {
   
   inline def apply(
-    getAdjacentNameOfClass: ClassDeclaration[DeclarationNode] => Identifier,
-    getBaseClassExpression: ClassDeclaration[DeclarationNode] => Expression | Null,
-    getConstructorParameters: ClassDeclaration[DeclarationNode] => js.Array[CtorParameter] | Null,
+    getBaseClassExpression: ClassDeclarationDeclarati => Expression | Null,
+    getConstructorParameters: ClassDeclarationDeclarati => js.Array[CtorParameter] | Null,
     getDeclarationOfIdentifier: Identifier => Declaration[typings.typescript.mod.Declaration] | Null,
     getDecoratorsOfDeclaration: DeclarationNode => js.Array[Decorator] | Null,
     getDefinitionOfFunction: Node => FunctionDefinition | Null,
-    getDtsDeclaration: DeclarationNode => typings.typescript.mod.Declaration | Null,
     getExportsOfModule: Node => (Map[String, Declaration[typings.typescript.mod.Declaration]]) | Null,
-    getGenericArityOfClass: ClassDeclaration[DeclarationNode] => Double | Null,
+    getGenericArityOfClass: ClassDeclarationDeclarati => Double | Null,
     getImportOfIdentifier: Identifier => Import | Null,
-    getInternalNameOfClass: ClassDeclaration[DeclarationNode] => Identifier,
-    getMembersOfClass: ClassDeclaration[DeclarationNode] => js.Array[ClassMember],
+    getMembersOfClass: ClassDeclarationDeclarati => js.Array[ClassMember],
     getVariableValue: VariableDeclaration => Expression | Null,
-    hasBaseClass: ClassDeclaration[DeclarationNode] => Boolean,
-    isClass: Node => /* is @angular/compiler-cli.@angular/compiler-cli/src/ngtsc/reflection/src/host.ClassDeclaration<@angular/compiler-cli.@angular/compiler-cli/src/ngtsc/reflection/src/host.DeclarationNode> */ Boolean,
+    hasBaseClass: ClassDeclarationDeclarati => Boolean,
+    isClass: Node => /* is @angular/compiler-cli.anon.ClassDeclarationDeclarati */ Boolean,
     isStaticallyExported: Node => Boolean
   ): ReflectionHost = {
-    val __obj = js.Dynamic.literal(getAdjacentNameOfClass = js.Any.fromFunction1(getAdjacentNameOfClass), getBaseClassExpression = js.Any.fromFunction1(getBaseClassExpression), getConstructorParameters = js.Any.fromFunction1(getConstructorParameters), getDeclarationOfIdentifier = js.Any.fromFunction1(getDeclarationOfIdentifier), getDecoratorsOfDeclaration = js.Any.fromFunction1(getDecoratorsOfDeclaration), getDefinitionOfFunction = js.Any.fromFunction1(getDefinitionOfFunction), getDtsDeclaration = js.Any.fromFunction1(getDtsDeclaration), getExportsOfModule = js.Any.fromFunction1(getExportsOfModule), getGenericArityOfClass = js.Any.fromFunction1(getGenericArityOfClass), getImportOfIdentifier = js.Any.fromFunction1(getImportOfIdentifier), getInternalNameOfClass = js.Any.fromFunction1(getInternalNameOfClass), getMembersOfClass = js.Any.fromFunction1(getMembersOfClass), getVariableValue = js.Any.fromFunction1(getVariableValue), hasBaseClass = js.Any.fromFunction1(hasBaseClass), isClass = js.Any.fromFunction1(isClass), isStaticallyExported = js.Any.fromFunction1(isStaticallyExported))
+    val __obj = js.Dynamic.literal(getBaseClassExpression = js.Any.fromFunction1(getBaseClassExpression), getConstructorParameters = js.Any.fromFunction1(getConstructorParameters), getDeclarationOfIdentifier = js.Any.fromFunction1(getDeclarationOfIdentifier), getDecoratorsOfDeclaration = js.Any.fromFunction1(getDecoratorsOfDeclaration), getDefinitionOfFunction = js.Any.fromFunction1(getDefinitionOfFunction), getExportsOfModule = js.Any.fromFunction1(getExportsOfModule), getGenericArityOfClass = js.Any.fromFunction1(getGenericArityOfClass), getImportOfIdentifier = js.Any.fromFunction1(getImportOfIdentifier), getMembersOfClass = js.Any.fromFunction1(getMembersOfClass), getVariableValue = js.Any.fromFunction1(getVariableValue), hasBaseClass = js.Any.fromFunction1(hasBaseClass), isClass = js.Any.fromFunction1(isClass), isStaticallyExported = js.Any.fromFunction1(isStaticallyExported))
     __obj.asInstanceOf[ReflectionHost]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: ReflectionHost] (val x: Self) extends AnyVal {
     
-    inline def setGetAdjacentNameOfClass(value: ClassDeclaration[DeclarationNode] => Identifier): Self = StObject.set(x, "getAdjacentNameOfClass", js.Any.fromFunction1(value))
+    inline def setGetBaseClassExpression(value: ClassDeclarationDeclarati => Expression | Null): Self = StObject.set(x, "getBaseClassExpression", js.Any.fromFunction1(value))
     
-    inline def setGetBaseClassExpression(value: ClassDeclaration[DeclarationNode] => Expression | Null): Self = StObject.set(x, "getBaseClassExpression", js.Any.fromFunction1(value))
-    
-    inline def setGetConstructorParameters(value: ClassDeclaration[DeclarationNode] => js.Array[CtorParameter] | Null): Self = StObject.set(x, "getConstructorParameters", js.Any.fromFunction1(value))
+    inline def setGetConstructorParameters(value: ClassDeclarationDeclarati => js.Array[CtorParameter] | Null): Self = StObject.set(x, "getConstructorParameters", js.Any.fromFunction1(value))
     
     inline def setGetDeclarationOfIdentifier(value: Identifier => Declaration[typings.typescript.mod.Declaration] | Null): Self = StObject.set(x, "getDeclarationOfIdentifier", js.Any.fromFunction1(value))
     
@@ -260,25 +222,19 @@ object ReflectionHost {
     
     inline def setGetDefinitionOfFunction(value: Node => FunctionDefinition | Null): Self = StObject.set(x, "getDefinitionOfFunction", js.Any.fromFunction1(value))
     
-    inline def setGetDtsDeclaration(value: DeclarationNode => typings.typescript.mod.Declaration | Null): Self = StObject.set(x, "getDtsDeclaration", js.Any.fromFunction1(value))
-    
     inline def setGetExportsOfModule(value: Node => (Map[String, Declaration[typings.typescript.mod.Declaration]]) | Null): Self = StObject.set(x, "getExportsOfModule", js.Any.fromFunction1(value))
     
-    inline def setGetGenericArityOfClass(value: ClassDeclaration[DeclarationNode] => Double | Null): Self = StObject.set(x, "getGenericArityOfClass", js.Any.fromFunction1(value))
+    inline def setGetGenericArityOfClass(value: ClassDeclarationDeclarati => Double | Null): Self = StObject.set(x, "getGenericArityOfClass", js.Any.fromFunction1(value))
     
     inline def setGetImportOfIdentifier(value: Identifier => Import | Null): Self = StObject.set(x, "getImportOfIdentifier", js.Any.fromFunction1(value))
     
-    inline def setGetInternalNameOfClass(value: ClassDeclaration[DeclarationNode] => Identifier): Self = StObject.set(x, "getInternalNameOfClass", js.Any.fromFunction1(value))
-    
-    inline def setGetMembersOfClass(value: ClassDeclaration[DeclarationNode] => js.Array[ClassMember]): Self = StObject.set(x, "getMembersOfClass", js.Any.fromFunction1(value))
+    inline def setGetMembersOfClass(value: ClassDeclarationDeclarati => js.Array[ClassMember]): Self = StObject.set(x, "getMembersOfClass", js.Any.fromFunction1(value))
     
     inline def setGetVariableValue(value: VariableDeclaration => Expression | Null): Self = StObject.set(x, "getVariableValue", js.Any.fromFunction1(value))
     
-    inline def setHasBaseClass(value: ClassDeclaration[DeclarationNode] => Boolean): Self = StObject.set(x, "hasBaseClass", js.Any.fromFunction1(value))
+    inline def setHasBaseClass(value: ClassDeclarationDeclarati => Boolean): Self = StObject.set(x, "hasBaseClass", js.Any.fromFunction1(value))
     
-    inline def setIsClass(
-      value: Node => /* is @angular/compiler-cli.@angular/compiler-cli/src/ngtsc/reflection/src/host.ClassDeclaration<@angular/compiler-cli.@angular/compiler-cli/src/ngtsc/reflection/src/host.DeclarationNode> */ Boolean
-    ): Self = StObject.set(x, "isClass", js.Any.fromFunction1(value))
+    inline def setIsClass(value: Node => /* is @angular/compiler-cli.anon.ClassDeclarationDeclarati */ Boolean): Self = StObject.set(x, "isClass", js.Any.fromFunction1(value))
     
     inline def setIsStaticallyExported(value: Node => Boolean): Self = StObject.set(x, "isStaticallyExported", js.Any.fromFunction1(value))
   }

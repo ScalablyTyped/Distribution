@@ -10,12 +10,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Apply extends StObject {
   
   @JSName("apply")
-  def apply(profile: String): js.Promise[
+  def apply(name: String): js.Promise[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_index.ProfilesApplyResult */ Any
   ] = js.native
   @JSName("apply")
   def apply(
-    profile: String,
+    name: String,
     options: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_index.ProfilesApplyOptions */ Any) & HTTPClientExtraOptions
   ): js.Promise[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_index.ProfilesApplyResult */ Any

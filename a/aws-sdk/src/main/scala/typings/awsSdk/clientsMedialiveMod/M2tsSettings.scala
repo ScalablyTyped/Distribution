@@ -207,6 +207,11 @@ trait M2tsSettings extends StObject {
   var Scte35Pid: js.UndefOr[string] = js.undefined
   
   /**
+    * Defines the amount SCTE-35 preroll will be increased (in milliseconds) on the output. Preroll is the amount of time between the presence of a SCTE-35 indication in a transport stream and the PTS of the video frame it references. Zero means don't add pullup (it doesn't mean set the preroll to zero). Negative pullup is not supported, which means that you can't make the preroll shorter. Be aware that latency in the output will increase by the pullup amount.
+    */
+  var Scte35PrerollPullupMilliseconds: js.UndefOr[doubleMin0Max5000] = js.undefined
+  
+  /**
     * Inserts segmentation markers at each segmentationTime period. raiSegstart sets the Random Access Indicator bit in the adaptation field. raiAdapt sets the RAI bit and adds the current timecode in the private data bytes. psiSegstart inserts PAT and PMT tables at the start of segments. ebp adds Encoder Boundary Point information to the adaptation field as per OpenCable specification OC-SP-EBP-I01-130118. ebpLegacy adds Encoder Boundary Point information to the adaptation field using a legacy proprietary format.
     */
   var SegmentationMarkers: js.UndefOr[M2tsSegmentationMarkers] = js.undefined
@@ -412,6 +417,10 @@ object M2tsSettings {
     inline def setScte35Pid(value: string): Self = StObject.set(x, "Scte35Pid", value.asInstanceOf[js.Any])
     
     inline def setScte35PidUndefined: Self = StObject.set(x, "Scte35Pid", js.undefined)
+    
+    inline def setScte35PrerollPullupMilliseconds(value: doubleMin0Max5000): Self = StObject.set(x, "Scte35PrerollPullupMilliseconds", value.asInstanceOf[js.Any])
+    
+    inline def setScte35PrerollPullupMillisecondsUndefined: Self = StObject.set(x, "Scte35PrerollPullupMilliseconds", js.undefined)
     
     inline def setSegmentationMarkers(value: M2tsSegmentationMarkers): Self = StObject.set(x, "SegmentationMarkers", value.asInstanceOf[js.Any])
     

@@ -326,6 +326,11 @@ trait TypeofVector3Instantiable
   def Left(): Vector3 = js.native
   
   /**
+    * Gets a backward Vector3 that must not be updated
+    */
+  def LeftHandedBackwardReadOnly: DeepImmutable[Vector3] = js.native
+  
+  /**
     * Gets a forward Vector3 that must not be updated
     */
   def LeftHandedForwardReadOnly: DeepImmutable[Vector3] = js.native
@@ -472,11 +477,44 @@ trait TypeofVector3Instantiable
   ): T = js.native
   
   /**
+    * Returns a new Vector3 with random values between min and max
+    * @param min the minimum random value
+    * @param max the maximum random value
+    * @returns a Vector3 with random values between min and max
+    */
+  def Random(): Vector3 = js.native
+  def Random(min: Double): Vector3 = js.native
+  def Random(min: Double, max: Double): Vector3 = js.native
+  def Random(min: Unit, max: Double): Vector3 = js.native
+  
+  /**
+    * Reflects a vector off the plane defined by a normalized normal
+    * @param inDirection defines the vector direction
+    * @param normal defines the normal - Must be normalized
+    * @returns the resulting vector
+    */
+  def Reflect[T /* <: Vector3 */](inDirection: DeepImmutable[Vector3], normal: DeepImmutable[Vector3]): Vector3 = js.native
+  
+  /**
+    * Reflects a vector off the plane defined by a normalized normal to reference
+    * @param inDirection defines the vector direction
+    * @param normal defines the normal - Must be normalized
+    * @param result defines the Vector3 where to store the result
+    * @returns the resulting vector
+    */
+  def ReflectToRef[T /* <: Vector3 */](inDirection: DeepImmutable[Vector3], normal: DeepImmutable[Vector3], ref: T): T = js.native
+  
+  /**
     * Returns a new Vector3 set to (1.0, 0.0, 0.0)
     * Example Playground https://playground.babylonjs.com/#R1F8YU#71
     * @returns a new right Vector3
     */
   def Right(): Vector3 = js.native
+  
+  /**
+    * Gets a backward Vector3 that must not be updated
+    */
+  def RightHandedBackwardReadOnly: DeepImmutable[Vector3] = js.native
   
   /**
     * Gets a forward Vector3 that must not be updated
@@ -498,7 +536,7 @@ trait TypeofVector3Instantiable
     * @param axis2 defines the second axis
     * @param axis3 defines the third axis
     * @returns a new Vector3
-    * @see https://doc.babylonjs.com/divingDeeper/mesh/transforms/center_origin/target_align
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/mesh/transforms/center_origin/target_align
     */
   def RotationFromAxis[T /* <: Vector3 */](axis1: DeepImmutable[T], axis2: DeepImmutable[Vector3], axis3: DeepImmutable[Vector3]): T = js.native
   
@@ -721,9 +759,13 @@ trait TypeofVector3Instantiable
   
   /* private */ var _DownReadOnly: Any = js.native
   
+  /* private */ var _LeftHandedBackwardReadOnly: Any = js.native
+  
   /* private */ var _LeftHandedForwardReadOnly: Any = js.native
   
   /* private */ var _LeftReadOnly: Any = js.native
+  
+  /* private */ var _RightHandedBackwardReadOnly: Any = js.native
   
   /* private */ var _RightHandedForwardReadOnly: Any = js.native
   

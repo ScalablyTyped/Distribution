@@ -1,6 +1,7 @@
 package typings.primereact
 
 import typings.primereact.keyfilterKeyfilteroptionsMod.KeyFilterType
+import typings.primereact.primereactStrings._empty
 import typings.primereact.primereactStrings.`additions removals`
 import typings.primereact.primereactStrings.`additions text`
 import typings.primereact.primereactStrings.`inline`
@@ -8,8 +9,10 @@ import typings.primereact.primereactStrings.`removals additions`
 import typings.primereact.primereactStrings.`removals text`
 import typings.primereact.primereactStrings.`text additions`
 import typings.primereact.primereactStrings.`text removals`
+import typings.primereact.primereactStrings.`use-credentials`
 import typings.primereact.primereactStrings.additions
 import typings.primereact.primereactStrings.all
+import typings.primereact.primereactStrings.anonymous
 import typings.primereact.primereactStrings.ascending
 import typings.primereact.primereactStrings.assertive
 import typings.primereact.primereactStrings.both
@@ -61,6 +64,8 @@ import typings.primereact.primereactStrings.user
 import typings.primereact.primereactStrings.vertical
 import typings.primereact.primereactStrings.yes
 import typings.primereact.tooltipTooltipoptionsMod.TooltipOptions
+import typings.primereact.utilsUtilsMod.IconOptions
+import typings.primereact.utilsUtilsMod.IconType
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
@@ -104,6 +109,7 @@ import typings.react.mod.WheelEvent
 import typings.react.mod.WheelEventHandler
 import typings.react.mod.global.JSX.Element
 import typings.std.Event
+import typings.std.FormData
 import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import typings.std.HTMLInputElement
@@ -119,44 +125,70 @@ object passwordPasswordMod {
     def this(props: PasswordProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: PasswordProps, context: Any) = this()
     
+    /**
+      * Used to focus the component.
+      */
+    def focus(): Unit = js.native
+    
+    /**
+      * Used to get container element.
+      * @return {HTMLDivElement} Container element
+      */
     def getElement(): HTMLDivElement = js.native
     
+    /**
+      * Used to get input element.
+      * @return {HTMLInputElement} Input element
+      */
     def getInput(): Any = js.native
     
+    /**
+      * Used to get overlay element.
+      * @return {HTMLElement} Overlay element
+      */
     def getOverlay(): HTMLElement = js.native
   }
   
-  type PasswordAppendToType = js.UndefOr[self | HTMLElement | Null]
-  
-  type PasswordContentType = ReactNode | (js.Function1[/* props */ PasswordProps, ReactNode])
-  
-  type PasswordFooterType = ReactNode | (js.Function1[/* props */ PasswordProps, ReactNode])
-  
-  type PasswordHeaderType = ReactNode | (js.Function1[/* props */ PasswordProps, ReactNode])
-  
-  trait PasswordIconParams extends StObject {
+  /**
+    * Custom icon event
+    * @see {@link PasswordProps.icon}
+    * @event
+    */
+  trait PasswordIconEvent extends StObject {
     
+    /**
+      * Style class of the default element.
+      */
     var className: String
     
+    /**
+      * Default element created by the component.
+      */
     var element: Element
     
+    /**
+      * Click event for the default element.
+      */
     def onClick(): Unit
     
+    /**
+      * All component props.
+      */
     var props: PasswordProps
   }
-  object PasswordIconParams {
+  object PasswordIconEvent {
     
-    inline def apply(className: String, element: Element, onClick: () => Unit, props: PasswordProps): PasswordIconParams = {
+    inline def apply(className: String, element: Element, onClick: () => Unit, props: PasswordProps): PasswordIconEvent = {
       val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], element = element.asInstanceOf[js.Any], onClick = js.Any.fromFunction0(onClick), props = props.asInstanceOf[js.Any])
-      __obj.asInstanceOf[PasswordIconParams]
+      __obj.asInstanceOf[PasswordIconEvent]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: PasswordIconParams] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: PasswordIconEvent] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -168,9 +200,7 @@ object passwordPasswordMod {
     }
   }
   
-  type PasswordIconType = ReactNode | (js.Function1[/* e */ PasswordIconParams, ReactNode])
-  
-  /* Inlined parent std.Omit<react.react.DetailedHTMLProps<react.react.InputHTMLAttributes<std.HTMLInputElement>, std.HTMLInputElement>, 'onInput' | 'ref'> */
+  /* Inlined parent std.Omit<react.react.DetailedHTMLProps<react.react.InputHTMLAttributes<std.HTMLInputElement>, std.HTMLInputElement>, 'onInput' | 'ref' | 'content'> */
   trait PasswordProps extends StObject {
     
     var about: js.UndefOr[String] = js.undefined
@@ -181,7 +211,11 @@ object passwordPasswordMod {
     
     var alt: js.UndefOr[String] = js.undefined
     
-    var appendTo: js.UndefOr[PasswordAppendToType] = js.undefined
+    /**
+      * DOM element instance where the overlay panel should be mounted. Valid values are any DOM Element and 'self'. The self value is used to render a component where it is located.
+      * @defaultValue document.body
+      */
+    var appendTo: js.UndefOr[self | HTMLElement | Null] = js.undefined
     
     var `aria-activedescendant`: js.UndefOr[String] = js.undefined
     
@@ -295,19 +329,26 @@ object passwordPasswordMod {
     
     var checked: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Used to get the child elements of the component.
+      * @readonly
+      */
     var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
     var color: js.UndefOr[String] = js.undefined
     
-    var content: js.UndefOr[PasswordContentType] = js.undefined
+    /**
+      * Template of panel content if "feedback" is enabled.
+      */
+    var content: js.UndefOr[ReactNode | (js.Function1[/* props */ this.type, ReactNode])] = js.undefined
     
     var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
     var contextMenu: js.UndefOr[String] = js.undefined
     
-    var crossOrigin: js.UndefOr[String] = js.undefined
+    var crossOrigin: js.UndefOr[anonymous | `use-credentials` | _empty] = js.undefined
     
     var dangerouslySetInnerHTML: js.UndefOr[Html] = js.undefined
     
@@ -325,13 +366,20 @@ object passwordPasswordMod {
     
     var enterKeyHint: js.UndefOr[enter | done | go | next | previous | search | send] = js.undefined
     
+    /**
+      * Whether to show the strength indicator or not.
+      * @defaultValue true
+      */
     var feedback: js.UndefOr[Boolean] = js.undefined
     
-    var footer: js.UndefOr[PasswordFooterType] = js.undefined
+    /**
+      * Template of panel footer if "feedback" is enabled.
+      */
+    var footer: js.UndefOr[ReactNode | (js.Function1[/* props */ this.type, ReactNode])] = js.undefined
     
     var form: js.UndefOr[String] = js.undefined
     
-    var formAction: js.UndefOr[String] = js.undefined
+    var formAction: js.UndefOr[String | (js.Function1[/* formData */ FormData, Unit])] = js.undefined
     
     var formEncType: js.UndefOr[String] = js.undefined
     
@@ -341,26 +389,49 @@ object passwordPasswordMod {
     
     var formTarget: js.UndefOr[String] = js.undefined
     
-    var header: js.UndefOr[PasswordHeaderType] = js.undefined
+    /**
+      * Template of panel header if "feedback" is enabled.
+      */
+    var header: js.UndefOr[ReactNode | (js.Function1[/* props */ this.type, ReactNode])] = js.undefined
     
     var height: js.UndefOr[Double | String] = js.undefined
     
     var hidden: js.UndefOr[Boolean] = js.undefined
     
-    var icon: js.UndefOr[PasswordIconType] = js.undefined
+    /**
+      * Hide icon template.
+      */
+    var hideIcon: js.UndefOr[IconType[PasswordProps]] = js.undefined
+    
+    /**
+      * Template of mask icon if "toggleMask" is enabled.
+      */
+    var icon: js.UndefOr[ReactNode | (js.Function1[/* event */ PasswordIconEvent, ReactNode])] = js.undefined
     
     var id: js.UndefOr[String] = js.undefined
     
     var inlist: js.UndefOr[Any] = js.undefined
     
+    /**
+      * Style class of the input field.
+      */
     var inputClassName: js.UndefOr[String] = js.undefined
     
+    /**
+      * Identifier of the input element.
+      */
     var inputId: js.UndefOr[String] = js.undefined
     
     var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
     
+    /**
+      * Reference of the input element.
+      */
     var inputRef: js.UndefOr[Ref[HTMLInputElement]] = js.undefined
     
+    /**
+      * Inline style of the input field.
+      */
     var inputStyle: js.UndefOr[CSSProperties] = js.undefined
     
     var is: js.UndefOr[String] = js.undefined
@@ -377,6 +448,9 @@ object passwordPasswordMod {
     
     var key: js.UndefOr[Key | Null] = js.undefined
     
+    /**
+      * Format definition of the keys to block.
+      */
     var keyfilter: js.UndefOr[KeyFilterType] = js.undefined
     
     var lang: js.UndefOr[String] = js.undefined
@@ -387,8 +461,16 @@ object passwordPasswordMod {
     
     var maxLength: js.UndefOr[Double] = js.undefined
     
+    /**
+      * Text for a medium password.
+      * @defaultValue Medium
+      */
     var mediumLabel: js.UndefOr[String] = js.undefined
     
+    /**
+      * Regex for a medium level password.
+      * @defaultValue ^(((?=.*[a-z])(?=.*[A-Z]))|((?=.*[a-z])(?=.*[0-9]))|((?=.*[A-Z])(?=.*[0-9])))(?=.&#123;6,&#125;).
+      */
     var mediumRegex: js.UndefOr[String] = js.undefined
     
     var min: js.UndefOr[Double | String] = js.undefined
@@ -465,8 +547,16 @@ object passwordPasswordMod {
     
     var onFocus: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.undefined
     
+    /**
+      * Callback to invoke when overlay becomes hidden.
+      */
     var onHide: js.UndefOr[js.Function0[Unit]] = js.undefined
     
+    /**
+      * Callback to invoke on input event of input field.
+      * @param {React.FormEvent<HTMLInputElement>} event - Browser event
+      * @param {boolean} validatePattern - Whether to validate the value
+      */
     var onInput: js.UndefOr[
         js.Function2[/* event */ FormEvent[HTMLInputElement], /* validatePattern */ Boolean, Unit]
       ] = js.undefined
@@ -541,6 +631,9 @@ object passwordPasswordMod {
     
     var onSelect: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
     
+    /**
+      * Callback to invoke when overlay becomes visible.
+      */
     var onShow: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     var onStalled: js.UndefOr[ReactEventHandler[HTMLInputElement]] = js.undefined
@@ -567,8 +660,14 @@ object passwordPasswordMod {
     
     var onWheel: js.UndefOr[WheelEventHandler[HTMLInputElement]] = js.undefined
     
+    /**
+      * Style class of the overlay panel element.
+      */
     var panelClassName: js.UndefOr[String] = js.undefined
     
+    /**
+      * Inline style of the overlay panel element.
+      */
     var panelStyle: js.UndefOr[CSSProperties] = js.undefined
     
     var pattern: js.UndefOr[String] = js.undefined
@@ -577,6 +676,10 @@ object passwordPasswordMod {
     
     var prefix: js.UndefOr[String] = js.undefined
     
+    /**
+      * Text to prompt password entry.
+      * @defaultValue Please enter a password
+      */
     var promptLabel: js.UndefOr[String] = js.undefined
     
     var property: js.UndefOr[String] = js.undefined
@@ -585,15 +688,24 @@ object passwordPasswordMod {
     
     var readOnly: js.UndefOr[Boolean] = js.undefined
     
+    var rel: js.UndefOr[String] = js.undefined
+    
     var required: js.UndefOr[Boolean] = js.undefined
     
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
     
+    var rev: js.UndefOr[String] = js.undefined
+    
     var role: js.UndefOr[AriaRole] = js.undefined
     
     var security: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Show icon template.
+      */
+    var showIcon: js.UndefOr[IconType[PasswordProps]] = js.undefined
     
     var size: js.UndefOr[Double] = js.undefined
     
@@ -605,8 +717,16 @@ object passwordPasswordMod {
     
     var step: js.UndefOr[Double | String] = js.undefined
     
+    /**
+      * Text for a strong password.
+      * @defaultValue Strong
+      */
     var strongLabel: js.UndefOr[String] = js.undefined
     
+    /**
+      * Regex for a strong level password.
+      * @defaultValue ^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.&#123;8,&#125;)
+      */
     var strongRegex: js.UndefOr[String] = js.undefined
     
     var style: js.UndefOr[CSSProperties] = js.undefined
@@ -619,12 +739,25 @@ object passwordPasswordMod {
     
     var title: js.UndefOr[String] = js.undefined
     
+    /**
+      * Whether to show an icon to display the password as plain text.
+      * @defaultValue false
+      */
     var toggleMask: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Content of the tooltip.
+      */
     var tooltip: js.UndefOr[String] = js.undefined
     
+    /**
+      * Configuration of the tooltip, refer to the tooltip documentation for more information.
+      */
     var tooltipOptions: js.UndefOr[TooltipOptions] = js.undefined
     
+    /**
+      * The properties of CSSTransition can be customized, except for "nodeRef" and "in" properties.
+      */
     var transitionOptions: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSSTransitionProps */ Any
       ] = js.undefined
@@ -641,6 +774,10 @@ object passwordPasswordMod {
     
     var vocab: js.UndefOr[String] = js.undefined
     
+    /**
+      * Text for a weak password.
+      * @defaultValue Weak
+      */
     var weakLabel: js.UndefOr[String] = js.undefined
     
     var width: js.UndefOr[Double | String] = js.undefined
@@ -671,7 +808,7 @@ object passwordPasswordMod {
       
       inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
       
-      inline def setAppendTo(value: PasswordAppendToType): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
+      inline def setAppendTo(value: self | HTMLElement): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
       
       inline def setAppendToNull: Self = StObject.set(x, "appendTo", null)
       
@@ -911,13 +1048,13 @@ object passwordPasswordMod {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      inline def setContent(value: PasswordContentType): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: ReactNode | (js.Function1[PasswordProps, ReactNode])): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
       inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
       
-      inline def setContentFunction1(value: /* props */ PasswordProps => ReactNode): Self = StObject.set(x, "content", js.Any.fromFunction1(value))
+      inline def setContentFunction1(value: PasswordProps => ReactNode): Self = StObject.set(x, "content", js.Any.fromFunction1(value))
       
       inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
@@ -925,7 +1062,7 @@ object passwordPasswordMod {
       
       inline def setContextMenuUndefined: Self = StObject.set(x, "contextMenu", js.undefined)
       
-      inline def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+      inline def setCrossOrigin(value: anonymous | `use-credentials` | _empty): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
       
       inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
       
@@ -967,15 +1104,17 @@ object passwordPasswordMod {
       
       inline def setFeedbackUndefined: Self = StObject.set(x, "feedback", js.undefined)
       
-      inline def setFooter(value: PasswordFooterType): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
+      inline def setFooter(value: ReactNode | (js.Function1[PasswordProps, ReactNode])): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
       
-      inline def setFooterFunction1(value: /* props */ PasswordProps => ReactNode): Self = StObject.set(x, "footer", js.Any.fromFunction1(value))
+      inline def setFooterFunction1(value: PasswordProps => ReactNode): Self = StObject.set(x, "footer", js.Any.fromFunction1(value))
       
       inline def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
       
       inline def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
       
-      inline def setFormAction(value: String): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+      inline def setFormAction(value: String | (js.Function1[/* formData */ FormData, Unit])): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+      
+      inline def setFormActionFunction1(value: /* formData */ FormData => Unit): Self = StObject.set(x, "formAction", js.Any.fromFunction1(value))
       
       inline def setFormActionUndefined: Self = StObject.set(x, "formAction", js.undefined)
       
@@ -997,9 +1136,9 @@ object passwordPasswordMod {
       
       inline def setFormUndefined: Self = StObject.set(x, "form", js.undefined)
       
-      inline def setHeader(value: PasswordHeaderType): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      inline def setHeader(value: ReactNode | (js.Function1[PasswordProps, ReactNode])): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
-      inline def setHeaderFunction1(value: /* props */ PasswordProps => ReactNode): Self = StObject.set(x, "header", js.Any.fromFunction1(value))
+      inline def setHeaderFunction1(value: PasswordProps => ReactNode): Self = StObject.set(x, "header", js.Any.fromFunction1(value))
       
       inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
       
@@ -1011,9 +1150,15 @@ object passwordPasswordMod {
       
       inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
       
-      inline def setIcon(value: PasswordIconType): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setHideIcon(value: IconType[PasswordProps]): Self = StObject.set(x, "hideIcon", value.asInstanceOf[js.Any])
       
-      inline def setIconFunction1(value: /* e */ PasswordIconParams => ReactNode): Self = StObject.set(x, "icon", js.Any.fromFunction1(value))
+      inline def setHideIconFunction1(value: /* options */ IconOptions[PasswordProps] => ReactNode): Self = StObject.set(x, "hideIcon", js.Any.fromFunction1(value))
+      
+      inline def setHideIconUndefined: Self = StObject.set(x, "hideIcon", js.undefined)
+      
+      inline def setIcon(value: ReactNode | (js.Function1[/* event */ PasswordIconEvent, ReactNode])): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      
+      inline def setIconFunction1(value: /* event */ PasswordIconEvent => ReactNode): Self = StObject.set(x, "icon", js.Any.fromFunction1(value))
       
       inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
@@ -1491,6 +1636,10 @@ object passwordPasswordMod {
       
       inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
       
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      
+      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+      
       inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
       
       inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
@@ -1503,6 +1652,10 @@ object passwordPasswordMod {
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
       
+      inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+      
+      inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
+      
       inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
       inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
@@ -1510,6 +1663,12 @@ object passwordPasswordMod {
       inline def setSecurity(value: String): Self = StObject.set(x, "security", value.asInstanceOf[js.Any])
       
       inline def setSecurityUndefined: Self = StObject.set(x, "security", js.undefined)
+      
+      inline def setShowIcon(value: IconType[PasswordProps]): Self = StObject.set(x, "showIcon", value.asInstanceOf[js.Any])
+      
+      inline def setShowIconFunction1(value: /* options */ IconOptions[PasswordProps] => ReactNode): Self = StObject.set(x, "showIcon", js.Any.fromFunction1(value))
+      
+      inline def setShowIconUndefined: Self = StObject.set(x, "showIcon", js.undefined)
       
       inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

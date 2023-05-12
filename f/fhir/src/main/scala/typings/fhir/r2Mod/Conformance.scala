@@ -8,7 +8,7 @@ import typings.fhir.fhirStrings.elements
 import typings.fhir.fhirStrings.extensions
 import typings.fhir.fhirStrings.instance
 import typings.fhir.fhirStrings.no
-import typings.fhir.fhirStrings.requirements
+import typings.fhir.fhirStrings.requirements_
 import typings.fhir.fhirStrings.retired
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -100,7 +100,7 @@ trait Conformance
   /**
     * Allow searching the 3 modes.
     */
-  var kind: instance | capability | requirements
+  var kind: instance | capability | requirements_
   
   /**
     * A description of the messaging capabilities of the solution.
@@ -163,7 +163,7 @@ object Conformance {
     date: String,
     fhirVersion: String,
     format: js.Array[String],
-    kind: instance | capability | requirements
+    kind: instance | capability | requirements_
   ): Conformance = {
     val __obj = js.Dynamic.literal(acceptUnknown = acceptUnknown.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any], fhirVersion = fhirVersion.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], resourceType = "Conformance")
     __obj.asInstanceOf[Conformance]
@@ -210,7 +210,7 @@ object Conformance {
     
     inline def setImplementationUndefined: Self = StObject.set(x, "implementation", js.undefined)
     
-    inline def setKind(value: instance | capability | requirements): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: instance | capability | requirements_): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
     inline def setMessaging(value: js.Array[ConformanceMessaging]): Self = StObject.set(x, "messaging", value.asInstanceOf[js.Any])
     

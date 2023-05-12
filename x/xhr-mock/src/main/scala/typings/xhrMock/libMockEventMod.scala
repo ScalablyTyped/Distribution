@@ -24,6 +24,15 @@ object libMockEventMod {
     extends StObject
        with Event {
     
+    @JSName("AT_TARGET")
+    val AT_TARGET_MockEvent: Double = js.native
+    
+    @JSName("BUBBLING_PHASE")
+    val BUBBLING_PHASE_MockEvent: Double = js.native
+    
+    @JSName("CAPTURING_PHASE")
+    val CAPTURING_PHASE_MockEvent: Double = js.native
+    
     @JSName("currentTarget")
     val currentTarget_MockEvent: EventTarget = js.native
     

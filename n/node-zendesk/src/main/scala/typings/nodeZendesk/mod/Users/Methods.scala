@@ -66,7 +66,7 @@ trait Methods extends StObject {
   /** Searching Users */
   def search(params: Any, cb: ZendeskCallback[Any, Any]): ListPayload = js.native
   
-  def show(userId: ZendeskID): js.Promise[ResponsePayload] = js.native
+  def show(userId: ZendeskID): js.Promise[ResponseModel] = js.native
   /** Showing Users */
   def show(userId: ZendeskID, cb: ZendeskCallback[Any, Any]): ResponsePayload = js.native
   

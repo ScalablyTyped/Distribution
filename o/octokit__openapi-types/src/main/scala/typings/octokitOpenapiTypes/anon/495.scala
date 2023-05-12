@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `495` extends StObject {
   
   @JSName("application/json")
-  var applicationSlashjson: js.Array[Uploader]
+  var applicationSlashjson: js.Array[Tokenexpiresat]
 }
 object `495` {
   
-  inline def apply(applicationSlashjson: js.Array[Uploader]): `495` = {
+  inline def apply(applicationSlashjson: js.Array[Tokenexpiresat]): `495` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("application/json")(applicationSlashjson.asInstanceOf[js.Any])
     __obj.asInstanceOf[`495`]
@@ -20,8 +20,8 @@ object `495` {
   @scala.inline
   implicit open class MutableBuilder[Self <: `495`] (val x: Self) extends AnyVal {
     
-    inline def setApplicationSlashjson(value: js.Array[Uploader]): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
+    inline def setApplicationSlashjson(value: js.Array[Tokenexpiresat]): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
     
-    inline def setApplicationSlashjsonVarargs(value: Uploader*): Self = StObject.set(x, "application/json", js.Array(value*))
+    inline def setApplicationSlashjsonVarargs(value: Tokenexpiresat*): Self = StObject.set(x, "application/json", js.Array(value*))
   }
 }

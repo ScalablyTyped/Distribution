@@ -72,6 +72,11 @@ trait Profile extends StObject {
   var Gender: js.UndefOr[typings.awsSdk.clientsCustomerprofilesMod.Gender] = js.undefined
   
   /**
+    * An alternative to Gender which accepts any string as input.
+    */
+  var GenderString: js.UndefOr[string1To255] = js.undefined
+  
+  /**
     * The customer’s home phone number.
     */
   var HomePhoneNumber: js.UndefOr[string1To255] = js.undefined
@@ -100,6 +105,11 @@ trait Profile extends StObject {
     * The type of profile used to describe the customer.
     */
   var PartyType: js.UndefOr[typings.awsSdk.clientsCustomerprofilesMod.PartyType] = js.undefined
+  
+  /**
+    * An alternative to PartyType which accepts any string as input.
+    */
+  var PartyTypeString: js.UndefOr[string1To255] = js.undefined
   
   /**
     * The customer’s personal email address.
@@ -183,6 +193,10 @@ object Profile {
     
     inline def setGender(value: Gender): Self = StObject.set(x, "Gender", value.asInstanceOf[js.Any])
     
+    inline def setGenderString(value: string1To255): Self = StObject.set(x, "GenderString", value.asInstanceOf[js.Any])
+    
+    inline def setGenderStringUndefined: Self = StObject.set(x, "GenderString", js.undefined)
+    
     inline def setGenderUndefined: Self = StObject.set(x, "Gender", js.undefined)
     
     inline def setHomePhoneNumber(value: string1To255): Self = StObject.set(x, "HomePhoneNumber", value.asInstanceOf[js.Any])
@@ -206,6 +220,10 @@ object Profile {
     inline def setMobilePhoneNumberUndefined: Self = StObject.set(x, "MobilePhoneNumber", js.undefined)
     
     inline def setPartyType(value: PartyType): Self = StObject.set(x, "PartyType", value.asInstanceOf[js.Any])
+    
+    inline def setPartyTypeString(value: string1To255): Self = StObject.set(x, "PartyTypeString", value.asInstanceOf[js.Any])
+    
+    inline def setPartyTypeStringUndefined: Self = StObject.set(x, "PartyTypeString", js.undefined)
     
     inline def setPartyTypeUndefined: Self = StObject.set(x, "PartyType", js.undefined)
     

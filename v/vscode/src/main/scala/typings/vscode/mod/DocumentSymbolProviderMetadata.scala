@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DocumentSymbolProviderMetadata extends StObject {
   
   /**
-    * A human-readable string that is shown when multiple outlines trees show for one document.
-    */
+  		 * A human-readable string that is shown when multiple outlines trees show for one document.
+  		 */
   var label: js.UndefOr[String] = js.undefined
 }
 object DocumentSymbolProviderMetadata {

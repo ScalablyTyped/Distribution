@@ -202,6 +202,11 @@ trait Engine
   
   /* private */ var _renderPassNames: Any = js.native
   
+  /**
+    * @internal
+    */
+  def _renderViewStep(view: EngineView): Boolean = js.native
+  
   /** @internal */
   def _renderViews(): Boolean = js.native
   
@@ -233,6 +238,9 @@ trait Engine
   def _uploadImageToTexture(texture: InternalTexture, image: ImageBitmap, faceIndex: Unit, lod: Double): Unit = js.native
   
   /** @internal */
+  def _verifyPointerLock(): Unit = js.native
+  
+  /** @internal */
   var _virtualScenes: js.Array[Scene] = js.native
   
   /** @internal */
@@ -249,7 +257,7 @@ trait Engine
   
   /**
     * Gets the current engine view
-    * @see https://doc.babylonjs.com/how_to/multi_canvases
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/scene/multiCanvas
     */
   var activeView: Nullable[EngineView] = js.native
   
@@ -258,7 +266,7 @@ trait Engine
     * @param algorithmType defines the algorithm to use
     * @param query defines the query to use
     * @returns the current engine
-    * @see https://doc.babylonjs.com/features/occlusionquery
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/occlusionQueries
     */
   def beginOcclusionQuery(algorithmType: Double, query: OcclusionQuery): Boolean = js.native
   
@@ -303,7 +311,7 @@ trait Engine
   /**
     * (WebGPU only) True (default) to be in compatibility mode, meaning rendering all existing scenes without artifacts (same rendering than WebGL).
     * Setting the property to false will improve performances but may not work in some scenes if some precautions are not taken.
-    * See https://doc.babylonjs.com/advanced_topics/webGPU/webGPUOptimization/webGPUNonCompatibilityMode for more details
+    * See https://doc.babylonjs.com/setup/support/webGPU/webGPUOptimization/webGPUNonCompatibilityMode for more details
     */
   def compatibilityMode: Boolean = js.native
   def compatibilityMode_=(mode: Boolean): Unit = js.native
@@ -567,13 +575,13 @@ trait Engine
   /**
     * Call this function to leave webVR mode
     * Will do nothing if webVR is not supported or if there is no webVR device
-    * @see https://doc.babylonjs.com/how_to/webvr_camera
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/cameras/webVRCamera
     */
   def disableVR(): Unit = js.native
   
   /**
     * Display the loading screen
-    * @see https://doc.babylonjs.com/how_to/creating_a_custom_loading_screen
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/scene/customLoadingScreen
     */
   def displayLoadingUI(): Unit = js.native
   
@@ -595,13 +603,13 @@ trait Engine
     * Call this function to switch to webVR mode
     * Will do nothing if webVR is not supported or if there is no webVR device
     * @param options the webvr options provided to the camera. mainly used for multiview
-    * @see https://doc.babylonjs.com/how_to/webvr_camera
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/cameras/webVRCamera
     */
   def enableVR(options: WebVROptions): Unit = js.native
   
   /**
     * Ends an occlusion query
-    * @see https://doc.babylonjs.com/features/occlusionquery
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/occlusionQueries
     * @param algorithmType defines the algorithm to use
     * @returns the current engine
     */
@@ -722,7 +730,7 @@ trait Engine
   
   /**
     * Gets the max steps when engine is running in deterministic lock step
-    * @see https://doc.babylonjs.com/babylon101/animations#deterministic-lockstep
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/animation/advanced_animations#deterministic-lockstep
     * @returns the max steps
     */
   def getLockstepMaxSteps(): Double = js.native
@@ -821,7 +829,7 @@ trait Engine
   
   /**
     * Hide the loading screen
-    * @see https://doc.babylonjs.com/how_to/creating_a_custom_loading_screen
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/scene/customLoadingScreen
     */
   def hideLoadingUI(): Unit = js.native
   
@@ -846,7 +854,7 @@ trait Engine
   
   /**
     * Gets a boolean indicating that the engine is running in deterministic lock step mode
-    * @see https://doc.babylonjs.com/babylon101/animations#deterministic-lockstep
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/animation/advanced_animations#deterministic-lockstep
     * @returns true if engine is in deterministic lock step mode
     */
   def isDeterministicLockStep(): Boolean = js.native
@@ -883,24 +891,24 @@ trait Engine
   
   /**
     * Gets the current loading screen object
-    * @see https://doc.babylonjs.com/how_to/creating_a_custom_loading_screen
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/scene/customLoadingScreen
     */
   def loadingScreen: ILoadingScreen = js.native
   /**
     * Sets the current loading screen object
-    * @see https://doc.babylonjs.com/how_to/creating_a_custom_loading_screen
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/scene/customLoadingScreen
     */
   def loadingScreen_=(loadingScreen: ILoadingScreen): Unit = js.native
   
   /**
     * Sets the current loading screen background color
-    * @see https://doc.babylonjs.com/how_to/creating_a_custom_loading_screen
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/scene/customLoadingScreen
     */
   def loadingUIBackgroundColor_=(color: String): Unit = js.native
   
   /**
     * Sets the current loading screen text
-    * @see https://doc.babylonjs.com/how_to/creating_a_custom_loading_screen
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/scene/customLoadingScreen
     */
   def loadingUIText_=(text: String): Unit = js.native
   
@@ -976,7 +984,7 @@ trait Engine
   
   /**
     * Gets the performance monitor attached to this engine
-    * @see https://doc.babylonjs.com/how_to/optimizing_your_scene#engineinstrumentation
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/scene/optimize_your_scene#engineinstrumentation
     */
   def performanceMonitor: PerformanceMonitor = js.native
   
@@ -1253,7 +1261,12 @@ trait Engine
   /**
     * Wraps an external web gl texture in a Babylon texture.
     * @param texture defines the external texture
+    * @param hasMipMaps defines whether the external texture has mip maps (default: false)
+    * @param samplingMode defines the sampling mode for the external texture (default: Constants.TEXTURE_TRILINEAR_SAMPLINGMODE)
     * @returns the babylon internal texture
     */
   def wrapWebGLTexture(texture: WebGLTexture): InternalTexture = js.native
+  def wrapWebGLTexture(texture: WebGLTexture, hasMipMaps: Boolean): InternalTexture = js.native
+  def wrapWebGLTexture(texture: WebGLTexture, hasMipMaps: Boolean, samplingMode: Double): InternalTexture = js.native
+  def wrapWebGLTexture(texture: WebGLTexture, hasMipMaps: Unit, samplingMode: Double): InternalTexture = js.native
 }

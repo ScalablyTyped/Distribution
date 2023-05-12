@@ -1,5 +1,6 @@
 package typings.fabric.fabricImplMod
 
+import typings.fabric.anon.Objects
 import typings.fabric.anon.X
 import typings.fabric.fabricStrings.equally
 import typings.fabric.fabricStrings.getImageData
@@ -35,7 +36,6 @@ open class Canvas () extends StaticCanvas {
   var _activeObject_Canvas: Object = js.native
   
   /**
-    * @private
     * Compares the old activeObject with the current one and fires correct events
     * @param {fabric.Object} obj old activeObject
     */
@@ -43,26 +43,22 @@ open class Canvas () extends StaticCanvas {
   def _fireSelectionEvents(oldObjects: js.Array[Object], e: Event): Unit = js.native
   
   /**
-    * @private
     * @param {fabric.Object} obj Object that was added
     */
   def _onObjectAdded(obj: Object): Unit = js.native
   
   /**
-    * @private
     * @param {fabric.Object} obj Object that was removed
     */
   def _onObjectRemoved(obj: Object): Unit = js.native
   
   /**
     * Resets the current transform to its original values and chooses the type of resizing based on the event
-    * @private
     */
   def _resetCurrentTransform(): Unit = js.native
   
   /**
     * Scales object by invoking its scaleX/scaleY methods
-    * @private
     * @param {Number} x pointer's x coordinate
     * @param {Number} y pointer's y coordinate
     * @param {String} by Either 'x' or 'y' - specifies dimension constraint by which to scale an object.
@@ -77,12 +73,10 @@ open class Canvas () extends StaticCanvas {
     * @param {Array} [objects] objects array to look into
     * @param {Object} [pointer] x,y object of point coordinates we want to check.
     * @return {fabric.Object} object that contains pointer
-    * @private
     */
   def _searchPossibleTargets(objects: js.Array[Object], pointer: X): Object = js.native
   
   /**
-    * @private
     * @param {Object} object to set as active
     * @param {Event} [e] Event (passed along when firing "object:selected")
     * @return {Boolean} true if the selection happened
@@ -100,7 +94,6 @@ open class Canvas () extends StaticCanvas {
     _dim: Point
   ): Boolean = js.native
   /**
-    * @private
     * @return {Boolean} true if the scaling occurred
     */
   def _setObjectScale(
@@ -119,7 +112,6 @@ open class Canvas () extends StaticCanvas {
     * If `null` or 'none' or any other string that is not a modifier key
     * feature is disabled feature disabled.
     * @since 1.6.2
-    * @type String
     * @default
     */
   var altActionKey: js.UndefOr[String] = js.native
@@ -133,7 +125,6 @@ open class Canvas () extends StaticCanvas {
     * If `null` or 'none' or any other string that is not a modifier key
     * feature is disabled.
     * @since 1.6.5
-    * @type null|String
     * @default
     */
   var altSelectionKey: js.UndefOr[Null | String] = js.native
@@ -144,7 +135,6 @@ open class Canvas () extends StaticCanvas {
     * If `null` or 'none' or any other string that is not a modifier key
     * feature is disabled feature disabled.
     * @since 1.6.2
-    * @type String
     * @default
     */
   var centeredKey: js.UndefOr[String] = js.native
@@ -217,7 +207,6 @@ open class Canvas () extends StaticCanvas {
   
   /**
     * Indicates if the canvas can fire middle click events
-    * @type Boolean
     * @since 1.7.8
     * @default
     */
@@ -225,7 +214,6 @@ open class Canvas () extends StaticCanvas {
   
   /**
     * Indicates if the canvas can fire right click events
-    * @type Boolean
     * @since 1.6.5
     * @default
     */
@@ -240,7 +228,7 @@ open class Canvas () extends StaticCanvas {
     * Returns currently active object
     * @return {fabric.Object} active object
     */
-  def getActiveObject(): Object = js.native
+  def getActiveObject(): Object | Null = js.native
   
   /**
     * Returns an array with the current selected objects
@@ -283,7 +271,6 @@ open class Canvas () extends StaticCanvas {
   
   /**
     * Canvas height
-    * @type number
     * @default
     */
   var height: js.UndefOr[Double] = js.native
@@ -334,7 +321,6 @@ open class Canvas () extends StaticCanvas {
   
   /**
     * Cursor value used for disabled elements ( corners with disabled action )
-    * @type String
     * @since 2.0.0
     * @default
     */
@@ -348,7 +334,6 @@ open class Canvas () extends StaticCanvas {
   /**
     * Indicates whether objects should remain in current stack position when selected.
     * When false objects are brought to top and rendered as part of the selection group
-    * @type Boolean
     */
   var preserveObjectStacking: js.UndefOr[Boolean] = js.native
   
@@ -400,7 +385,6 @@ open class Canvas () extends StaticCanvas {
   
   /**
     * Select only shapes that are fully contained in the dragged selection rectangle.
-    * @type Boolean
     * @default
     */
   var selectionFullyContained: js.UndefOr[Boolean] = js.native
@@ -412,7 +396,6 @@ open class Canvas () extends StaticCanvas {
     * If `null` or empty or containing any other string that is not a modifier key
     * feature is disabled.
     * @since 1.6.2
-    * @type String|Array
     * @default
     */
   var selectionKey: js.UndefOr[String | js.Array[String]] = js.native
@@ -441,14 +424,12 @@ open class Canvas () extends StaticCanvas {
   
   /**
     * When true, target detection is skipped when hovering over canvas. This can be used to improve performance.
-    * @type Boolean
     * @default
     */
   var skipTargetFind: js.UndefOr[Boolean] = js.native
   
   /**
     * Indicates the angle that an object will lock to while rotating.
-    * @type Number
     * @since 1.6.7
     */
   var snapAngle: js.UndefOr[Double] = js.native
@@ -456,7 +437,6 @@ open class Canvas () extends StaticCanvas {
   /**
     * Indicates the distance from the snapAngle the rotation will lock to the snapAngle.
     * When `null`, the snapThreshold will default to the snapAngle.
-    * @type null|Number
     * @since 1.6.7
     * @default
     */
@@ -464,7 +444,6 @@ open class Canvas () extends StaticCanvas {
   
   /**
     * Indicates if the right click on canvas can output the context menu or not
-    * @type Boolean
     * @since 1.6.5
     * @default
     */
@@ -483,14 +462,12 @@ open class Canvas () extends StaticCanvas {
     * If `null` or 'none' or any other string that is not a modifier key
     * feature is disabled feature disabled.
     * @since 1.6.2
-    * @type String
     */
   var uniScaleKey: js.UndefOr[String] = js.native
   
   /**
     * When true, objects can be transformed by one side (unproportionally)
     * when dragged on the corners that normally would not do that.
-    * @type Boolean
     * @default
     * @since fabric 4.0 // changed name and default value
     */
@@ -498,7 +475,6 @@ open class Canvas () extends StaticCanvas {
   
   /**
     * Canvas width
-    * @type number
     * @default
     */
   var width: js.UndefOr[Double] = js.native
@@ -526,6 +502,6 @@ object Canvas {
     * Returns JSON representation of canvas
     * @param [propertiesToInclude] Any properties that you might want to additionally include in the output
     */
-  inline def toJSON(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toJSON")().asInstanceOf[String]
-  inline def toJSON(propertiesToInclude: js.Array[String]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toJSON")(propertiesToInclude.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def toJSON(): Objects = ^.asInstanceOf[js.Dynamic].applyDynamic("toJSON")().asInstanceOf[Objects]
+  inline def toJSON(propertiesToInclude: js.Array[String]): Objects = ^.asInstanceOf[js.Dynamic].applyDynamic("toJSON")(propertiesToInclude.asInstanceOf[js.Any]).asInstanceOf[Objects]
 }

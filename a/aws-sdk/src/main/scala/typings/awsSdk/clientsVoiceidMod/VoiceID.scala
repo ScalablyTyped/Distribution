@@ -11,22 +11,50 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait VoiceID extends Service {
   
+  /**
+    * Associates the fraudsters with the watchlist specified in the same domain. 
+    */
+  def associateFraudster(): Request[AssociateFraudsterResponse, AWSError] = js.native
+  def associateFraudster(callback: js.Function2[/* err */ AWSError, /* data */ AssociateFraudsterResponse, Unit]): Request[AssociateFraudsterResponse, AWSError] = js.native
+  /**
+    * Associates the fraudsters with the watchlist specified in the same domain. 
+    */
+  def associateFraudster(params: AssociateFraudsterRequest): Request[AssociateFraudsterResponse, AWSError] = js.native
+  def associateFraudster(
+    params: AssociateFraudsterRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ AssociateFraudsterResponse, Unit]
+  ): Request[AssociateFraudsterResponse, AWSError] = js.native
+  
   @JSName("config")
   var config_VoiceID: ConfigBase & ClientConfiguration = js.native
   
   /**
-    * Creates a domain that contains all Amazon Connect Voice ID data, such as speakers, fraudsters, customer audio, and voiceprints. 
+    * Creates a domain that contains all Amazon Connect Voice ID data, such as speakers, fraudsters, customer audio, and voiceprints. Every domain is created with a default watchlist that fraudsters can be a part of.
     */
   def createDomain(): Request[CreateDomainResponse, AWSError] = js.native
   def createDomain(callback: js.Function2[/* err */ AWSError, /* data */ CreateDomainResponse, Unit]): Request[CreateDomainResponse, AWSError] = js.native
   /**
-    * Creates a domain that contains all Amazon Connect Voice ID data, such as speakers, fraudsters, customer audio, and voiceprints. 
+    * Creates a domain that contains all Amazon Connect Voice ID data, such as speakers, fraudsters, customer audio, and voiceprints. Every domain is created with a default watchlist that fraudsters can be a part of.
     */
   def createDomain(params: CreateDomainRequest): Request[CreateDomainResponse, AWSError] = js.native
   def createDomain(
     params: CreateDomainRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ CreateDomainResponse, Unit]
   ): Request[CreateDomainResponse, AWSError] = js.native
+  
+  /**
+    * Creates a watchlist that fraudsters can be a part of.
+    */
+  def createWatchlist(): Request[CreateWatchlistResponse, AWSError] = js.native
+  def createWatchlist(callback: js.Function2[/* err */ AWSError, /* data */ CreateWatchlistResponse, Unit]): Request[CreateWatchlistResponse, AWSError] = js.native
+  /**
+    * Creates a watchlist that fraudsters can be a part of.
+    */
+  def createWatchlist(params: CreateWatchlistRequest): Request[CreateWatchlistResponse, AWSError] = js.native
+  def createWatchlist(
+    params: CreateWatchlistRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ CreateWatchlistResponse, Unit]
+  ): Request[CreateWatchlistResponse, AWSError] = js.native
   
   /**
     * Deletes the specified domain from Voice ID.
@@ -43,12 +71,12 @@ trait VoiceID extends Service {
   ): Request[js.Object, AWSError] = js.native
   
   /**
-    * Deletes the specified fraudster from Voice ID.
+    * Deletes the specified fraudster from Voice ID. This action disassociates the fraudster from any watchlists it is a part of.
     */
   def deleteFraudster(): Request[js.Object, AWSError] = js.native
   def deleteFraudster(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
   /**
-    * Deletes the specified fraudster from Voice ID.
+    * Deletes the specified fraudster from Voice ID. This action disassociates the fraudster from any watchlists it is a part of.
     */
   def deleteFraudster(params: DeleteFraudsterRequest): Request[js.Object, AWSError] = js.native
   def deleteFraudster(
@@ -67,6 +95,20 @@ trait VoiceID extends Service {
   def deleteSpeaker(params: DeleteSpeakerRequest): Request[js.Object, AWSError] = js.native
   def deleteSpeaker(
     params: DeleteSpeakerRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
+  ): Request[js.Object, AWSError] = js.native
+  
+  /**
+    * Deletes the specified watchlist from Voice ID. This API throws an exception when there are fraudsters in the watchlist that you are trying to delete. You must delete the fraudsters, and then delete the watchlist. Every domain has a default watchlist which cannot be deleted. 
+    */
+  def deleteWatchlist(): Request[js.Object, AWSError] = js.native
+  def deleteWatchlist(callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]): Request[js.Object, AWSError] = js.native
+  /**
+    * Deletes the specified watchlist from Voice ID. This API throws an exception when there are fraudsters in the watchlist that you are trying to delete. You must delete the fraudsters, and then delete the watchlist. Every domain has a default watchlist which cannot be deleted. 
+    */
+  def deleteWatchlist(params: DeleteWatchlistRequest): Request[js.Object, AWSError] = js.native
+  def deleteWatchlist(
+    params: DeleteWatchlistRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ js.Object, Unit]
   ): Request[js.Object, AWSError] = js.native
   
@@ -143,6 +185,34 @@ trait VoiceID extends Service {
   ): Request[DescribeSpeakerEnrollmentJobResponse, AWSError] = js.native
   
   /**
+    * Describes the specified watchlist.
+    */
+  def describeWatchlist(): Request[DescribeWatchlistResponse, AWSError] = js.native
+  def describeWatchlist(callback: js.Function2[/* err */ AWSError, /* data */ DescribeWatchlistResponse, Unit]): Request[DescribeWatchlistResponse, AWSError] = js.native
+  /**
+    * Describes the specified watchlist.
+    */
+  def describeWatchlist(params: DescribeWatchlistRequest): Request[DescribeWatchlistResponse, AWSError] = js.native
+  def describeWatchlist(
+    params: DescribeWatchlistRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DescribeWatchlistResponse, Unit]
+  ): Request[DescribeWatchlistResponse, AWSError] = js.native
+  
+  /**
+    * Disassociates the fraudsters from the watchlist specified. Voice ID always expects a fraudster to be a part of at least one watchlist. If you try to disassociate a fraudster from its only watchlist, a ValidationException is thrown. 
+    */
+  def disassociateFraudster(): Request[DisassociateFraudsterResponse, AWSError] = js.native
+  def disassociateFraudster(callback: js.Function2[/* err */ AWSError, /* data */ DisassociateFraudsterResponse, Unit]): Request[DisassociateFraudsterResponse, AWSError] = js.native
+  /**
+    * Disassociates the fraudsters from the watchlist specified. Voice ID always expects a fraudster to be a part of at least one watchlist. If you try to disassociate a fraudster from its only watchlist, a ValidationException is thrown. 
+    */
+  def disassociateFraudster(params: DisassociateFraudsterRequest): Request[DisassociateFraudsterResponse, AWSError] = js.native
+  def disassociateFraudster(
+    params: DisassociateFraudsterRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ DisassociateFraudsterResponse, Unit]
+  ): Request[DisassociateFraudsterResponse, AWSError] = js.native
+  
+  /**
     * Evaluates a specified session based on audio data accumulated during a streaming Amazon Connect Voice ID call.
     */
   def evaluateSession(): Request[EvaluateSessionResponse, AWSError] = js.native
@@ -185,6 +255,20 @@ trait VoiceID extends Service {
   ): Request[ListFraudsterRegistrationJobsResponse, AWSError] = js.native
   
   /**
+    * Lists all fraudsters in a specified watchlist or domain.
+    */
+  def listFraudsters(): Request[ListFraudstersResponse, AWSError] = js.native
+  def listFraudsters(callback: js.Function2[/* err */ AWSError, /* data */ ListFraudstersResponse, Unit]): Request[ListFraudstersResponse, AWSError] = js.native
+  /**
+    * Lists all fraudsters in a specified watchlist or domain.
+    */
+  def listFraudsters(params: ListFraudstersRequest): Request[ListFraudstersResponse, AWSError] = js.native
+  def listFraudsters(
+    params: ListFraudstersRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListFraudstersResponse, Unit]
+  ): Request[ListFraudstersResponse, AWSError] = js.native
+  
+  /**
     * Lists all the speaker enrollment jobs in the domain with the specified JobStatus. If JobStatus is not provided, this lists all jobs with all possible speaker enrollment job statuses.
     */
   def listSpeakerEnrollmentJobs(): Request[ListSpeakerEnrollmentJobsResponse, AWSError] = js.native
@@ -225,6 +309,20 @@ trait VoiceID extends Service {
     params: ListTagsForResourceRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ ListTagsForResourceResponse, Unit]
   ): Request[ListTagsForResourceResponse, AWSError] = js.native
+  
+  /**
+    * Lists all watchlists in a specified domain.
+    */
+  def listWatchlists(): Request[ListWatchlistsResponse, AWSError] = js.native
+  def listWatchlists(callback: js.Function2[/* err */ AWSError, /* data */ ListWatchlistsResponse, Unit]): Request[ListWatchlistsResponse, AWSError] = js.native
+  /**
+    * Lists all watchlists in a specified domain.
+    */
+  def listWatchlists(params: ListWatchlistsRequest): Request[ListWatchlistsResponse, AWSError] = js.native
+  def listWatchlists(
+    params: ListWatchlistsRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListWatchlistsResponse, Unit]
+  ): Request[ListWatchlistsResponse, AWSError] = js.native
   
   /**
     * Opts out a speaker from Voice ID. A speaker can be opted out regardless of whether or not they already exist in Voice ID. If they don't yet exist, a new speaker is created in an opted out state. If they already exist, their existing status is overridden and they are opted out. Enrollment and evaluation authentication requests are rejected for opted out speakers, and opted out speakers have no voice embeddings stored in Voice ID.
@@ -309,4 +407,18 @@ trait VoiceID extends Service {
     params: UpdateDomainRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ UpdateDomainResponse, Unit]
   ): Request[UpdateDomainResponse, AWSError] = js.native
+  
+  /**
+    * Updates the specified watchlist. Every domain has a default watchlist which cannot be updated. 
+    */
+  def updateWatchlist(): Request[UpdateWatchlistResponse, AWSError] = js.native
+  def updateWatchlist(callback: js.Function2[/* err */ AWSError, /* data */ UpdateWatchlistResponse, Unit]): Request[UpdateWatchlistResponse, AWSError] = js.native
+  /**
+    * Updates the specified watchlist. Every domain has a default watchlist which cannot be updated. 
+    */
+  def updateWatchlist(params: UpdateWatchlistRequest): Request[UpdateWatchlistResponse, AWSError] = js.native
+  def updateWatchlist(
+    params: UpdateWatchlistRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ UpdateWatchlistResponse, Unit]
+  ): Request[UpdateWatchlistResponse, AWSError] = js.native
 }

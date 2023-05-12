@@ -40,6 +40,9 @@ object examplesJsmLoadersLwoloaderMod {
       onError: js.Function1[/* event */ ErrorEvent, Unit]
     ): Unit = js.native
     
+    def loadAsync(url: String): js.Promise[LWO] = js.native
+    def loadAsync(url: String, onProgress: js.Function1[/* event */ ProgressEvent[EventTarget], Unit]): js.Promise[LWO] = js.native
+    
     def parse(data: js.typedarray.ArrayBuffer, path: String, modelName: String): LWO = js.native
   }
   

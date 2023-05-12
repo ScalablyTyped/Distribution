@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `301` extends StObject {
   
-  /** Response */
-  var `200`: Content28
+  /** @description Response */
+  var `200`: Content16
   
   var `301`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['moved_permanently'] */ js.Any
   
@@ -20,7 +20,7 @@ trait `301` extends StObject {
 object `301` {
   
   inline def apply(
-    `200`: Content28,
+    `200`: Content16,
     `301`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['moved_permanently'] */ js.Any,
     `304`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['not_modified'] */ js.Any,
     `403`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['forbidden'] */ js.Any,
@@ -38,7 +38,7 @@ object `301` {
   @scala.inline
   implicit open class MutableBuilder[Self <: `301`] (val x: Self) extends AnyVal {
     
-    inline def set200(value: Content28): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
+    inline def set200(value: Content16): Self = StObject.set(x, "200", value.asInstanceOf[js.Any])
     
     inline def set301(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['moved_permanently'] */ js.Any

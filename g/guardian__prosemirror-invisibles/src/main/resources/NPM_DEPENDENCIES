@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@guardian/prosemirror-invisibles" : "3.0.2"
+      "@guardian/prosemirror-invisibles" : "3.0.3"
     }
   ],
   "test-dependencies" : [
     {
-      "@guardian/prosemirror-invisibles" : "3.0.2"
+      "@guardian/prosemirror-invisibles" : "3.0.3"
     }
   ],
   "compile-devDependencies" : [

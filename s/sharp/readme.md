@@ -1,7 +1,7 @@
 
 # Scala.js typings for sharp
 
-Typings are for version 0.31
+Typings are for version 0.32.1
 
 ## Library description:
 High performance Node.js image processing, the fastest module to resize JPEG, PNG, WebP, GIF, AVIF and TIFF images
@@ -24,7 +24,7 @@ High performance Node.js image processing, the fastest module to resize JPEG, PN
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

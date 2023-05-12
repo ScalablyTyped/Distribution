@@ -1,6 +1,7 @@
 package typings.kendoUi.kendo.ui
 
 import typings.kendoUi.JQuery
+import typings.kendoUi.kendo.data.HierarchicalDataSource
 import typings.kendoUi.kendo.data.Node
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
@@ -90,6 +91,8 @@ trait PanelBar
   def select(element: Element): Unit = js.native
   @JSName("select")
   def select_Unit(): Unit = js.native
+  
+  def setDataSource(dataSource: HierarchicalDataSource): Unit = js.native
   
   var wrapper: JQuery = js.native
 }

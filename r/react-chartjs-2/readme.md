@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-chartjs-2
 
-Typings are for version 4.3.1
+Typings are for version 5.2.0
 
 ## Library description:
 React components for Chart.js

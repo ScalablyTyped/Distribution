@@ -19,5 +19,5 @@ object typesDecoratorTypecheckerIsDateMod {
   inline def IsDate_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsDate")().asInstanceOf[PropertyDecorator]
   inline def IsDate_(validationOptions: ValidationOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsDate")(validationOptions.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
-  inline def isDate(value: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDate")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isDate(value: Any): /* is std.Date */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDate")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.Date */ Boolean]
 }

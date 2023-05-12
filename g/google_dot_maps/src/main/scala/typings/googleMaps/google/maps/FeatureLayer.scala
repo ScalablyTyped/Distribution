@@ -4,12 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Available only in the v=beta channel: https://goo.gle/3oAthT3.
-  * An interface representing a map layer containing features of a
-  * specific {@link google.maps.FeatureType} whose style can be overridden
-  * client-side, or have events attached.
-  */
 trait FeatureLayer extends StObject {
   
   /**
@@ -20,6 +14,13 @@ trait FeatureLayer extends StObject {
     * @param handler Function to handle events.
     */
   def addListener(eventName: String, handler: js.Function): MapsEventListener
+  
+  /**
+    * Available only in the v=beta channel: https://goo.gle/3oAthT3.
+    * The Dataset ID for this <code>FeatureLayer</code>. Only present if the
+    * <code>featureType</code> is <code>FeatureType.DATASET</code>.
+    */
+  var datasetId: js.UndefOr[String] = js.undefined
   
   /**
     * The <code>FeatureType</code> associated with this
@@ -42,12 +43,12 @@ trait FeatureLayer extends StObject {
     * style is applied when style is set. If your style function updates, you
     * must set the style property again. A <code>FeatureStyleFunction</code>
     * must return consistent results when it is applied over the map tiles, and
-    * should be optimized for performance. If you use a
-    * <code>FeatureStyleOptions</code>, all features of that layer will be
-    * styled with the same <code>FeatureStyleOptions</code>. Set the style to
-    * <code>null</code> to remove the previously set style. If this
-    * <code>FeatureLayer</code> is not available, setting style does nothing
-    * and logs an error.
+    * should be optimized for performance. Asynchronous functions are not
+    * supported. If you use a <code>FeatureStyleOptions</code>, all features of
+    * that layer will be styled with the same <code>FeatureStyleOptions</code>.
+    * Set the style to <code>null</code> to remove the previously set style. If
+    * this <code>FeatureLayer</code> is not available, setting style does
+    * nothing and logs an error.
     */
   var style: js.UndefOr[FeatureStyleOptions | Null | FeatureStyleFunction] = js.undefined
 }
@@ -66,6 +67,10 @@ object FeatureLayer {
   implicit open class MutableBuilder[Self <: FeatureLayer] (val x: Self) extends AnyVal {
     
     inline def setAddListener(value: (String, js.Function) => MapsEventListener): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
+    
+    inline def setDatasetId(value: String): Self = StObject.set(x, "datasetId", value.asInstanceOf[js.Any])
+    
+    inline def setDatasetIdUndefined: Self = StObject.set(x, "datasetId", js.undefined)
     
     inline def setFeatureType(value: FeatureType): Self = StObject.set(x, "featureType", value.asInstanceOf[js.Any])
     

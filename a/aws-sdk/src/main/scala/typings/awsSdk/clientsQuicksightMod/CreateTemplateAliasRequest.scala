@@ -19,7 +19,7 @@ trait CreateTemplateAliasRequest extends StObject {
   /**
     * An ID for the template.
     */
-  var TemplateId: RestrictiveResourceId
+  var TemplateId: ShortRestrictiveResourceId
   
   /**
     * The version number of the template.
@@ -31,7 +31,7 @@ object CreateTemplateAliasRequest {
   inline def apply(
     AliasName: AliasName,
     AwsAccountId: AwsAccountId,
-    TemplateId: RestrictiveResourceId,
+    TemplateId: ShortRestrictiveResourceId,
     TemplateVersionNumber: VersionNumber
   ): CreateTemplateAliasRequest = {
     val __obj = js.Dynamic.literal(AliasName = AliasName.asInstanceOf[js.Any], AwsAccountId = AwsAccountId.asInstanceOf[js.Any], TemplateId = TemplateId.asInstanceOf[js.Any], TemplateVersionNumber = TemplateVersionNumber.asInstanceOf[js.Any])
@@ -45,7 +45,7 @@ object CreateTemplateAliasRequest {
     
     inline def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
     
-    inline def setTemplateId(value: RestrictiveResourceId): Self = StObject.set(x, "TemplateId", value.asInstanceOf[js.Any])
+    inline def setTemplateId(value: ShortRestrictiveResourceId): Self = StObject.set(x, "TemplateId", value.asInstanceOf[js.Any])
     
     inline def setTemplateVersionNumber(value: VersionNumber): Self = StObject.set(x, "TemplateVersionNumber", value.asInstanceOf[js.Any])
   }

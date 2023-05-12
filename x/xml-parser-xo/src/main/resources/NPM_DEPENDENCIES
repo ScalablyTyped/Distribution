@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "xml-parser-xo" : "4.0.5"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "xml-parser-xo" : "4.0.5"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

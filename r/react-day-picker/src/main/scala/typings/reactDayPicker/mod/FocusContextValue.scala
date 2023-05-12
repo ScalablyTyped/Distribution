@@ -19,16 +19,12 @@ trait FocusContextValue extends StObject {
   /** Focus the day before the focused day. */
   def focusDayBefore(): Unit
   
-  /* Focus the day at the end of the week of focused day. */
   def focusEndOfWeek(): Unit
   
-  /* Focus the day in the month after the focused day. */
   def focusMonthAfter(): Unit
   
-  /* Focus the day in the month before the focused day. */
   def focusMonthBefore(): Unit
   
-  /* Focus the day at the start of the week of the focused day. */
   def focusStartOfWeek(): Unit
   
   /** Day that will be focused.  */
@@ -40,10 +36,8 @@ trait FocusContextValue extends StObject {
   /** Focus the day in the week before the focused day. */
   def focusWeekBefore(): Unit
   
-  /* Focus the day in the year after the focused day. */
   def focusYearAfter(): Unit
   
-  /* Focus the day in the year before the focused day. */
   def focusYearBefore(): Unit
   
   /** The day currently focused. */

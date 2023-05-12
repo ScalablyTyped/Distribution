@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteInvitationsRequest extends StObject {
   
   /**
-    * The list of the account IDs that sent the invitations to delete.
+    * The list of member account IDs that received the invitations you want to delete.
     */
   var AccountIds: AccountIdList
 }

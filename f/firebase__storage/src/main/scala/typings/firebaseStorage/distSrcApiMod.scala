@@ -5,7 +5,7 @@ import typings.firebaseAppCheckInteropTypes.mod.AppCheckInternalComponentName
 import typings.firebaseAuthInteropTypes.mod.FirebaseAuthInternalName
 import typings.firebaseComponent.mod.Provider
 import typings.firebaseStorage.anon.MockUserToken
-import typings.firebaseStorage.distSrcImplementationErrorMod.StorageError
+import typings.firebaseStorage.distSrcImplementationErrorMod.StorageErrorCode
 import typings.firebaseStorage.distSrcImplementationStringMod.StringData
 import typings.firebaseStorage.distSrcImplementationStringMod.StringFormat
 import typings.firebaseStorage.distSrcMetadataMod.Metadata
@@ -151,6 +151,78 @@ object distSrcApiMod {
     ) = this()
   }
   
+  @JSImport("@firebase/storage/dist/src/api", "StorageError")
+  @js.native
+  open class StorageError protected ()
+    extends typings.firebaseStorage.distSrcImplementationErrorMod.StorageError {
+    /**
+      * @param code - A `StorageErrorCode` string to be prefixed with 'storage/' and
+      *  added to the end of the message.
+      * @param message  - Error message.
+      * @param status_ - Corresponding HTTP Status Code
+      */
+    def this(code: StorageErrorCode, message: String) = this()
+    def this(code: StorageErrorCode, message: String, status_ : Double) = this()
+  }
+  
+  @JSImport("@firebase/storage/dist/src/api", "StorageErrorCode")
+  @js.native
+  object StorageErrorCode extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[typings.firebaseStorage.distSrcImplementationErrorMod.StorageErrorCode & String] = js.native
+    
+    /* "app-deleted" */ val APP_DELETED: typings.firebaseStorage.distSrcImplementationErrorMod.StorageErrorCode.APP_DELETED & String = js.native
+    
+    /* "bucket-not-found" */ val BUCKET_NOT_FOUND: typings.firebaseStorage.distSrcImplementationErrorMod.StorageErrorCode.BUCKET_NOT_FOUND & String = js.native
+    
+    /* "canceled" */ val CANCELED: typings.firebaseStorage.distSrcImplementationErrorMod.StorageErrorCode.CANCELED & String = js.native
+    
+    /* "cannot-slice-blob" */ val CANNOT_SLICE_BLOB: typings.firebaseStorage.distSrcImplementationErrorMod.StorageErrorCode.CANNOT_SLICE_BLOB & String = js.native
+    
+    /* "internal-error" */ val INTERNAL_ERROR: typings.firebaseStorage.distSrcImplementationErrorMod.StorageErrorCode.INTERNAL_ERROR & String = js.native
+    
+    /* "invalid-argument" */ val INVALID_ARGUMENT: typings.firebaseStorage.distSrcImplementationErrorMod.StorageErrorCode.INVALID_ARGUMENT & String = js.native
+    
+    /* "invalid-argument-count" */ val INVALID_ARGUMENT_COUNT: typings.firebaseStorage.distSrcImplementationErrorMod.StorageErrorCode.INVALID_ARGUMENT_COUNT & String = js.native
+    
+    /* "invalid-checksum" */ val INVALID_CHECKSUM: typings.firebaseStorage.distSrcImplementationErrorMod.StorageErrorCode.INVALID_CHECKSUM & String = js.native
+    
+    /* "invalid-default-bucket" */ val INVALID_DEFAULT_BUCKET: typings.firebaseStorage.distSrcImplementationErrorMod.StorageErrorCode.INVALID_DEFAULT_BUCKET & String = js.native
+    
+    /* "invalid-event-name" */ val INVALID_EVENT_NAME: typings.firebaseStorage.distSrcImplementationErrorMod.StorageErrorCode.INVALID_EVENT_NAME & String = js.native
+    
+    /* "invalid-format" */ val INVALID_FORMAT: typings.firebaseStorage.distSrcImplementationErrorMod.StorageErrorCode.INVALID_FORMAT & String = js.native
+    
+    /* "invalid-root-operation" */ val INVALID_ROOT_OPERATION: typings.firebaseStorage.distSrcImplementationErrorMod.StorageErrorCode.INVALID_ROOT_OPERATION & String = js.native
+    
+    /* "invalid-url" */ val INVALID_URL: typings.firebaseStorage.distSrcImplementationErrorMod.StorageErrorCode.INVALID_URL & String = js.native
+    
+    /* "no-default-bucket" */ val NO_DEFAULT_BUCKET: typings.firebaseStorage.distSrcImplementationErrorMod.StorageErrorCode.NO_DEFAULT_BUCKET & String = js.native
+    
+    /* "no-download-url" */ val NO_DOWNLOAD_URL: typings.firebaseStorage.distSrcImplementationErrorMod.StorageErrorCode.NO_DOWNLOAD_URL & String = js.native
+    
+    /* "object-not-found" */ val OBJECT_NOT_FOUND: typings.firebaseStorage.distSrcImplementationErrorMod.StorageErrorCode.OBJECT_NOT_FOUND & String = js.native
+    
+    /* "project-not-found" */ val PROJECT_NOT_FOUND: typings.firebaseStorage.distSrcImplementationErrorMod.StorageErrorCode.PROJECT_NOT_FOUND & String = js.native
+    
+    /* "quota-exceeded" */ val QUOTA_EXCEEDED: typings.firebaseStorage.distSrcImplementationErrorMod.StorageErrorCode.QUOTA_EXCEEDED & String = js.native
+    
+    /* "retry-limit-exceeded" */ val RETRY_LIMIT_EXCEEDED: typings.firebaseStorage.distSrcImplementationErrorMod.StorageErrorCode.RETRY_LIMIT_EXCEEDED & String = js.native
+    
+    /* "server-file-wrong-size" */ val SERVER_FILE_WRONG_SIZE: typings.firebaseStorage.distSrcImplementationErrorMod.StorageErrorCode.SERVER_FILE_WRONG_SIZE & String = js.native
+    
+    /* "unauthenticated" */ val UNAUTHENTICATED: typings.firebaseStorage.distSrcImplementationErrorMod.StorageErrorCode.UNAUTHENTICATED & String = js.native
+    
+    /* "unauthorized" */ val UNAUTHORIZED: typings.firebaseStorage.distSrcImplementationErrorMod.StorageErrorCode.UNAUTHORIZED & String = js.native
+    
+    /* "unauthorized-app" */ val UNAUTHORIZED_APP: typings.firebaseStorage.distSrcImplementationErrorMod.StorageErrorCode.UNAUTHORIZED_APP & String = js.native
+    
+    /* "unknown" */ val UNKNOWN: typings.firebaseStorage.distSrcImplementationErrorMod.StorageErrorCode.UNKNOWN & String = js.native
+    
+    /* "unsupported-environment" */ val UNSUPPORTED_ENVIRONMENT: typings.firebaseStorage.distSrcImplementationErrorMod.StorageErrorCode.UNSUPPORTED_ENVIRONMENT & String = js.native
+  }
+  
   object StringFormat {
     
     /**
@@ -291,9 +363,9 @@ object distSrcApiMod {
   inline def getStorage(app: FirebaseApp): FirebaseStorage = ^.asInstanceOf[js.Dynamic].applyDynamic("getStorage")(app.asInstanceOf[js.Any]).asInstanceOf[FirebaseStorage]
   inline def getStorage(app: FirebaseApp, bucketUrl: String): FirebaseStorage = (^.asInstanceOf[js.Dynamic].applyDynamic("getStorage")(app.asInstanceOf[js.Any], bucketUrl.asInstanceOf[js.Any])).asInstanceOf[FirebaseStorage]
   
-  inline def invalidArgument(message: String): StorageError = ^.asInstanceOf[js.Dynamic].applyDynamic("_invalidArgument")(message.asInstanceOf[js.Any]).asInstanceOf[StorageError]
+  inline def invalidArgument(message: String): typings.firebaseStorage.distSrcImplementationErrorMod.StorageError = ^.asInstanceOf[js.Dynamic].applyDynamic("_invalidArgument")(message.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseStorage.distSrcImplementationErrorMod.StorageError]
   
-  inline def invalidRootOperation(name: String): StorageError = ^.asInstanceOf[js.Dynamic].applyDynamic("_invalidRootOperation")(name.asInstanceOf[js.Any]).asInstanceOf[StorageError]
+  inline def invalidRootOperation(name: String): typings.firebaseStorage.distSrcImplementationErrorMod.StorageError = ^.asInstanceOf[js.Dynamic].applyDynamic("_invalidRootOperation")(name.asInstanceOf[js.Any]).asInstanceOf[typings.firebaseStorage.distSrcImplementationErrorMod.StorageError]
   
   inline def list(ref: StorageReference): js.Promise[ListResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(ref.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ListResult]]
   inline def list(ref: StorageReference, options: ListOptions): js.Promise[ListResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(ref.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ListResult]]

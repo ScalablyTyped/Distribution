@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LiveValue extends StObject {
   
   /**
-    * Current visible value of the `TextField`.
+    * Current value of the Textfield.
     */
   var liveValue: js.UndefOr[String] = js.undefined
 }

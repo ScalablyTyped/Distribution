@@ -7,19 +7,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TextEditorSelectionChangeEvent extends StObject {
   
   /**
-    * The {@link TextEditorSelectionChangeKind change kind} which has triggered this
-    * event. Can be `undefined`.
-    */
+  		 * The {@link TextEditorSelectionChangeKind change kind} which has triggered this
+  		 * event. Can be `undefined`.
+  		 */
   val kind: js.UndefOr[TextEditorSelectionChangeKind] = js.undefined
   
   /**
-    * The new value for the {@link TextEditor.selections text editor's selections}.
-    */
+  		 * The new value for the {@link TextEditor.selections text editor's selections}.
+  		 */
   val selections: js.Array[Selection]
   
   /**
-    * The {@link TextEditor text editor} for which the selections have changed.
-    */
+  		 * The {@link TextEditor text editor} for which the selections have changed.
+  		 */
   val textEditor: TextEditor
 }
 object TextEditorSelectionChangeEvent {

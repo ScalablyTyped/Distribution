@@ -1,5 +1,6 @@
 package typings.svelte
 
+import typings.svelte.typesRuntimeInternalResizeObserverSingletonMod.ResizeObserverBoxOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -17,6 +18,10 @@ object svelteStrings {
   @js.native
   sealed trait abort extends StObject
   inline def abort: abort = "abort".asInstanceOf[abort]
+  
+  @js.native
+  sealed trait acronym extends StObject
+  inline def acronym: acronym = "acronym".asInstanceOf[acronym]
   
   @js.native
   sealed trait address extends StObject
@@ -51,6 +56,18 @@ object svelteStrings {
   inline def animationstart: animationstart = "animationstart".asInstanceOf[animationstart]
   
   @js.native
+  sealed trait annotation extends StObject
+  inline def annotation: annotation = "annotation".asInstanceOf[annotation]
+  
+  @js.native
+  sealed trait `annotation-xml` extends StObject
+  inline def `annotation-xml`: `annotation-xml` = "annotation-xml".asInstanceOf[`annotation-xml`]
+  
+  @js.native
+  sealed trait applet extends StObject
+  inline def applet: applet = "applet".asInstanceOf[applet]
+  
+  @js.native
   sealed trait area extends StObject
   inline def area: area = "area".asInstanceOf[area]
   
@@ -79,6 +96,10 @@ object svelteStrings {
   inline def base: base = "base".asInstanceOf[base]
   
   @js.native
+  sealed trait basefont extends StObject
+  inline def basefont: basefont = "basefont".asInstanceOf[basefont]
+  
+  @js.native
   sealed trait bdi extends StObject
   inline def bdi: bdi = "bdi".asInstanceOf[bdi]
   
@@ -91,6 +112,18 @@ object svelteStrings {
   inline def beforeinput: beforeinput = "beforeinput".asInstanceOf[beforeinput]
   
   @js.native
+  sealed trait bgsound extends StObject
+  inline def bgsound: bgsound = "bgsound".asInstanceOf[bgsound]
+  
+  @js.native
+  sealed trait big extends StObject
+  inline def big: big = "big".asInstanceOf[big]
+  
+  @js.native
+  sealed trait blink extends StObject
+  inline def blink: blink = "blink".asInstanceOf[blink]
+  
+  @js.native
   sealed trait blockquote extends StObject
   inline def blockquote: blockquote = "blockquote".asInstanceOf[blockquote]
   
@@ -101,6 +134,16 @@ object svelteStrings {
   @js.native
   sealed trait body extends StObject
   inline def body: body = "body".asInstanceOf[body]
+  
+  @js.native
+  sealed trait `border-box`
+    extends StObject
+       with ResizeObserverBoxOptions
+  inline def `border-box`: `border-box` = "border-box".asInstanceOf[`border-box`]
+  
+  @js.native
+  sealed trait both extends StObject
+  inline def both: both = "both".asInstanceOf[both]
   
   @js.native
   sealed trait br extends StObject
@@ -129,6 +172,10 @@ object svelteStrings {
   @js.native
   sealed trait caption extends StObject
   inline def caption: caption = "caption".asInstanceOf[caption]
+  
+  @js.native
+  sealed trait center extends StObject
+  inline def center: center = "center".asInstanceOf[center]
   
   @js.native
   sealed trait change extends StObject
@@ -179,6 +226,12 @@ object svelteStrings {
   inline def compositionupdate: compositionupdate = "compositionupdate".asInstanceOf[compositionupdate]
   
   @js.native
+  sealed trait `content-box`
+    extends StObject
+       with ResizeObserverBoxOptions
+  inline def `content-box`: `content-box` = "content-box".asInstanceOf[`content-box`]
+  
+  @js.native
   sealed trait contextmenu extends StObject
   inline def contextmenu: contextmenu = "contextmenu".asInstanceOf[contextmenu]
   
@@ -227,12 +280,22 @@ object svelteStrings {
   inline def details: details = "details".asInstanceOf[details]
   
   @js.native
+  sealed trait `device-pixel-content-box`
+    extends StObject
+       with ResizeObserverBoxOptions
+  inline def `device-pixel-content-box`: `device-pixel-content-box` = "device-pixel-content-box".asInstanceOf[`device-pixel-content-box`]
+  
+  @js.native
   sealed trait dfn extends StObject
   inline def dfn: dfn = "dfn".asInstanceOf[dfn]
   
   @js.native
   sealed trait dialog extends StObject
   inline def dialog: dialog = "dialog".asInstanceOf[dialog]
+  
+  @js.native
+  sealed trait dir extends StObject
+  inline def dir: dir = "dir".asInstanceOf[dir]
   
   @js.native
   sealed trait div extends StObject
@@ -431,6 +494,10 @@ object svelteStrings {
   inline def focusout: focusout = "focusout".asInstanceOf[focusout]
   
   @js.native
+  sealed trait font extends StObject
+  inline def font: font = "font".asInstanceOf[font]
+  
+  @js.native
   sealed trait footer extends StObject
   inline def footer: footer = "footer".asInstanceOf[footer]
   
@@ -445,6 +512,14 @@ object svelteStrings {
   @js.native
   sealed trait formdata extends StObject
   inline def formdata: formdata = "formdata".asInstanceOf[formdata]
+  
+  @js.native
+  sealed trait frame extends StObject
+  inline def frame: frame = "frame".asInstanceOf[frame]
+  
+  @js.native
+  sealed trait frameset extends StObject
+  inline def frameset: frameset = "frameset".asInstanceOf[frameset]
   
   @js.native
   sealed trait fullscreenchange extends StObject
@@ -507,6 +582,10 @@ object svelteStrings {
   inline def html: html = "html".asInstanceOf[html]
   
   @js.native
+  sealed trait httpColonSlashSlashwwwDotw3DotorgSlash1998SlashMathSlashMathML extends StObject
+  inline def httpColonSlashSlashwwwDotw3DotorgSlash1998SlashMathSlashMathML: httpColonSlashSlashwwwDotw3DotorgSlash1998SlashMathSlashMathML = "http://www.w3.org/1998/Math/MathML".asInstanceOf[httpColonSlashSlashwwwDotw3DotorgSlash1998SlashMathSlashMathML]
+  
+  @js.native
   sealed trait httpColonSlashSlashwwwDotw3DotorgSlash1999Slashxhtml extends StObject
   inline def httpColonSlashSlashwwwDotw3DotorgSlash1999Slashxhtml: httpColonSlashSlashwwwDotw3DotorgSlash1999Slashxhtml = "http://www.w3.org/1999/xhtml".asInstanceOf[httpColonSlashSlashwwwDotw3DotorgSlash1999Slashxhtml]
   
@@ -531,6 +610,10 @@ object svelteStrings {
   inline def img: img = "img".asInstanceOf[img]
   
   @js.native
+  sealed trait in extends StObject
+  inline def in: in = "in".asInstanceOf[in]
+  
+  @js.native
   sealed trait input extends StObject
   inline def input: input = "input".asInstanceOf[input]
   
@@ -543,12 +626,20 @@ object svelteStrings {
   inline def invalid: invalid = "invalid".asInstanceOf[invalid]
   
   @js.native
+  sealed trait isindex extends StObject
+  inline def isindex: isindex = "isindex".asInstanceOf[isindex]
+  
+  @js.native
   sealed trait kbd extends StObject
   inline def kbd: kbd = "kbd".asInstanceOf[kbd]
   
   @js.native
   sealed trait keydown extends StObject
   inline def keydown: keydown = "keydown".asInstanceOf[keydown]
+  
+  @js.native
+  sealed trait keygen extends StObject
+  inline def keygen: keygen = "keygen".asInstanceOf[keygen]
   
   @js.native
   sealed trait keypress extends StObject
@@ -583,6 +674,10 @@ object svelteStrings {
   inline def link: link = "link".asInstanceOf[link]
   
   @js.native
+  sealed trait listing extends StObject
+  inline def listing: listing = "listing".asInstanceOf[listing]
+  
+  @js.native
   sealed trait load extends StObject
   inline def load: load = "load".asInstanceOf[load]
   
@@ -603,6 +698,10 @@ object svelteStrings {
   inline def lostpointercapture: lostpointercapture = "lostpointercapture".asInstanceOf[lostpointercapture]
   
   @js.native
+  sealed trait maction extends StObject
+  inline def maction: maction = "maction".asInstanceOf[maction]
+  
+  @js.native
   sealed trait main extends StObject
   inline def main: main = "main".asInstanceOf[main]
   
@@ -619,12 +718,28 @@ object svelteStrings {
   inline def marker: marker = "marker".asInstanceOf[marker]
   
   @js.native
+  sealed trait marquee extends StObject
+  inline def marquee: marquee = "marquee".asInstanceOf[marquee]
+  
+  @js.native
   sealed trait mask extends StObject
   inline def mask: mask = "mask".asInstanceOf[mask]
   
   @js.native
+  sealed trait math extends StObject
+  inline def math: math = "math".asInstanceOf[math]
+  
+  @js.native
   sealed trait menu extends StObject
   inline def menu: menu = "menu".asInstanceOf[menu]
+  
+  @js.native
+  sealed trait menuitem extends StObject
+  inline def menuitem: menuitem = "menuitem".asInstanceOf[menuitem]
+  
+  @js.native
+  sealed trait merror extends StObject
+  inline def merror: merror = "merror".asInstanceOf[merror]
   
   @js.native
   sealed trait meta extends StObject
@@ -637,6 +752,26 @@ object svelteStrings {
   @js.native
   sealed trait meter extends StObject
   inline def meter: meter = "meter".asInstanceOf[meter]
+  
+  @js.native
+  sealed trait mfrac extends StObject
+  inline def mfrac: mfrac = "mfrac".asInstanceOf[mfrac]
+  
+  @js.native
+  sealed trait mi extends StObject
+  inline def mi: mi = "mi".asInstanceOf[mi]
+  
+  @js.native
+  sealed trait mmultiscripts extends StObject
+  inline def mmultiscripts: mmultiscripts = "mmultiscripts".asInstanceOf[mmultiscripts]
+  
+  @js.native
+  sealed trait mn extends StObject
+  inline def mn: mn = "mn".asInstanceOf[mn]
+  
+  @js.native
+  sealed trait mo extends StObject
+  inline def mo: mo = "mo".asInstanceOf[mo]
   
   @js.native
   sealed trait mousedown extends StObject
@@ -667,12 +802,108 @@ object svelteStrings {
   inline def mouseup: mouseup = "mouseup".asInstanceOf[mouseup]
   
   @js.native
+  sealed trait mover extends StObject
+  inline def mover: mover = "mover".asInstanceOf[mover]
+  
+  @js.native
+  sealed trait mpadded extends StObject
+  inline def mpadded: mpadded = "mpadded".asInstanceOf[mpadded]
+  
+  @js.native
   sealed trait mpath extends StObject
   inline def mpath: mpath = "mpath".asInstanceOf[mpath]
   
   @js.native
+  sealed trait mphantom extends StObject
+  inline def mphantom: mphantom = "mphantom".asInstanceOf[mphantom]
+  
+  @js.native
+  sealed trait mprescripts extends StObject
+  inline def mprescripts: mprescripts = "mprescripts".asInstanceOf[mprescripts]
+  
+  @js.native
+  sealed trait mroot extends StObject
+  inline def mroot: mroot = "mroot".asInstanceOf[mroot]
+  
+  @js.native
+  sealed trait mrow extends StObject
+  inline def mrow: mrow = "mrow".asInstanceOf[mrow]
+  
+  @js.native
+  sealed trait ms extends StObject
+  inline def ms: ms = "ms".asInstanceOf[ms]
+  
+  @js.native
+  sealed trait mspace extends StObject
+  inline def mspace: mspace = "mspace".asInstanceOf[mspace]
+  
+  @js.native
+  sealed trait msqrt extends StObject
+  inline def msqrt: msqrt = "msqrt".asInstanceOf[msqrt]
+  
+  @js.native
+  sealed trait mstyle extends StObject
+  inline def mstyle: mstyle = "mstyle".asInstanceOf[mstyle]
+  
+  @js.native
+  sealed trait msub extends StObject
+  inline def msub: msub = "msub".asInstanceOf[msub]
+  
+  @js.native
+  sealed trait msubsup extends StObject
+  inline def msubsup: msubsup = "msubsup".asInstanceOf[msubsup]
+  
+  @js.native
+  sealed trait msup extends StObject
+  inline def msup: msup = "msup".asInstanceOf[msup]
+  
+  @js.native
+  sealed trait mtable extends StObject
+  inline def mtable: mtable = "mtable".asInstanceOf[mtable]
+  
+  @js.native
+  sealed trait mtd extends StObject
+  inline def mtd: mtd = "mtd".asInstanceOf[mtd]
+  
+  @js.native
+  sealed trait mtext extends StObject
+  inline def mtext: mtext = "mtext".asInstanceOf[mtext]
+  
+  @js.native
+  sealed trait mtr extends StObject
+  inline def mtr: mtr = "mtr".asInstanceOf[mtr]
+  
+  @js.native
+  sealed trait multicol extends StObject
+  inline def multicol: multicol = "multicol".asInstanceOf[multicol]
+  
+  @js.native
+  sealed trait munder extends StObject
+  inline def munder: munder = "munder".asInstanceOf[munder]
+  
+  @js.native
+  sealed trait munderover extends StObject
+  inline def munderover: munderover = "munderover".asInstanceOf[munderover]
+  
+  @js.native
   sealed trait nav extends StObject
   inline def nav: nav = "nav".asInstanceOf[nav]
+  
+  @js.native
+  sealed trait nextid extends StObject
+  inline def nextid: nextid = "nextid".asInstanceOf[nextid]
+  
+  @js.native
+  sealed trait nobr extends StObject
+  inline def nobr: nobr = "nobr".asInstanceOf[nobr]
+  
+  @js.native
+  sealed trait noembed extends StObject
+  inline def noembed: noembed = "noembed".asInstanceOf[noembed]
+  
+  @js.native
+  sealed trait noframes extends StObject
+  inline def noframes: noframes = "noframes".asInstanceOf[noframes]
   
   @js.native
   sealed trait noscript extends StObject
@@ -695,12 +926,20 @@ object svelteStrings {
   inline def option: option = "option".asInstanceOf[option]
   
   @js.native
+  sealed trait out extends StObject
+  inline def out: out = "out".asInstanceOf[out]
+  
+  @js.native
   sealed trait output extends StObject
   inline def output: output = "output".asInstanceOf[output]
   
   @js.native
   sealed trait p extends StObject
   inline def p: p = "p".asInstanceOf[p]
+  
+  @js.native
+  sealed trait param extends StObject
+  inline def param: param = "param".asInstanceOf[param]
   
   @js.native
   sealed trait paste extends StObject
@@ -721,6 +960,10 @@ object svelteStrings {
   @js.native
   sealed trait picture extends StObject
   inline def picture: picture = "picture".asInstanceOf[picture]
+  
+  @js.native
+  sealed trait plaintext extends StObject
+  inline def plaintext: plaintext = "plaintext".asInstanceOf[plaintext]
   
   @js.native
   sealed trait play extends StObject
@@ -791,6 +1034,10 @@ object svelteStrings {
   inline def ratechange: ratechange = "ratechange".asInstanceOf[ratechange]
   
   @js.native
+  sealed trait rb extends StObject
+  inline def rb: rb = "rb".asInstanceOf[rb]
+  
+  @js.native
   sealed trait rect extends StObject
   inline def rect: rect = "rect".asInstanceOf[rect]
   
@@ -809,6 +1056,10 @@ object svelteStrings {
   @js.native
   sealed trait rt extends StObject
   inline def rt: rt = "rt".asInstanceOf[rt]
+  
+  @js.native
+  sealed trait rtc extends StObject
+  inline def rtc: rtc = "rtc".asInstanceOf[rtc]
   
   @js.native
   sealed trait ruby extends StObject
@@ -859,6 +1110,10 @@ object svelteStrings {
   inline def selectstart: selectstart = "selectstart".asInstanceOf[selectstart]
   
   @js.native
+  sealed trait semantics extends StObject
+  inline def semantics: semantics = "semantics".asInstanceOf[semantics]
+  
+  @js.native
   sealed trait set extends StObject
   inline def set: set = "set".asInstanceOf[set]
   
@@ -879,6 +1134,10 @@ object svelteStrings {
   inline def source: source = "source".asInstanceOf[source]
   
   @js.native
+  sealed trait spacer extends StObject
+  inline def spacer: spacer = "spacer".asInstanceOf[spacer]
+  
+  @js.native
   sealed trait span extends StObject
   inline def span: span = "span".asInstanceOf[span]
   
@@ -889,6 +1148,10 @@ object svelteStrings {
   @js.native
   sealed trait stop extends StObject
   inline def stop: stop = "stop".asInstanceOf[stop]
+  
+  @js.native
+  sealed trait strike extends StObject
+  inline def strike: strike = "strike".asInstanceOf[strike]
   
   @js.native
   sealed trait strong extends StObject
@@ -1031,6 +1294,10 @@ object svelteStrings {
   inline def tspan: tspan = "tspan".asInstanceOf[tspan]
   
   @js.native
+  sealed trait tt extends StObject
+  inline def tt: tt = "tt".asInstanceOf[tt]
+  
+  @js.native
   sealed trait u extends StObject
   inline def u: u = "u".asInstanceOf[u]
   
@@ -1085,4 +1352,16 @@ object svelteStrings {
   @js.native
   sealed trait wheel extends StObject
   inline def wheel: wheel = "wheel".asInstanceOf[wheel]
+  
+  @js.native
+  sealed trait x extends StObject
+  inline def x: x = "x".asInstanceOf[x]
+  
+  @js.native
+  sealed trait xmp extends StObject
+  inline def xmp: xmp = "xmp".asInstanceOf[xmp]
+  
+  @js.native
+  sealed trait y extends StObject
+  inline def y: y = "y".asInstanceOf[y]
 }

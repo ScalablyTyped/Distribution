@@ -1,10 +1,5 @@
 package typings.angularCompilerCli
 
-import typings.angularCompilerCli.ngccSrcNgccOptionsMod.OptionalNgccOptionKeys
-import typings.angularCompilerCli.ngccSrcPackagesEntryPointMod.EntryPointFormat
-import typings.angularCompilerCli.ngccSrcPackagesEntryPointMod.EntryPointJsonProperty
-import typings.angularCompilerCli.ngccSrcPackagesEntryPointMod.PackageJsonFormatProperties
-import typings.angularCompilerCli.ngccSrcWritingPackageJsonUpdaterMod.PackageJsonPropertyPositioning
 import typings.angularCompilerCli.srcNgtscCoreApiSrcAdapterMod.ExtendedCompilerHostMethods
 import typings.angularCompilerCli.srcNgtscTranslatorSrcApiAstFactoryMod.BinaryOperator
 import typings.angularCompilerCli.srcNgtscTranslatorSrcApiAstFactoryMod.UnaryOperator
@@ -43,6 +38,14 @@ object angularCompilerCliStrings {
     extends StObject
        with BinaryOperator
   inline def Asterisk: Asterisk = "*".asInstanceOf[Asterisk]
+  
+  @js.native
+  sealed trait Component extends StObject
+  inline def Component: Component = "Component".asInstanceOf[Component]
+  
+  @js.native
+  sealed trait Directive extends StObject
+  inline def Directive: Directive = "Directive".asInstanceOf[Directive]
   
   @js.native
   sealed trait EqualssignEqualssign
@@ -87,6 +90,10 @@ object angularCompilerCliStrings {
   inline def GreaterthansignEqualssign: GreaterthansignEqualssign = ">=".asInstanceOf[GreaterthansignEqualssign]
   
   @js.native
+  sealed trait Injectable extends StObject
+  inline def Injectable: Injectable = "Injectable".asInstanceOf[Injectable]
+  
+  @js.native
   sealed trait Lessthansign
     extends StObject
        with BinaryOperator
@@ -111,6 +118,10 @@ object angularCompilerCliStrings {
     extends StObject
        with BinaryOperator
   inline def Percentsign: Percentsign = "%".asInstanceOf[Percentsign]
+  
+  @js.native
+  sealed trait Pipe extends StObject
+  inline def Pipe: Pipe = "Pipe".asInstanceOf[Pipe]
   
   @js.native
   sealed trait Plussign
@@ -146,12 +157,6 @@ object angularCompilerCliStrings {
   inline def VerticallineVerticalline: VerticallineVerticalline = "||".asInstanceOf[VerticallineVerticalline]
   
   @js.native
-  sealed trait alphabetic
-    extends StObject
-       with PackageJsonPropertyPositioning
-  inline def alphabetic: alphabetic = "alphabetic".asInstanceOf[alphabetic]
-  
-  @js.native
   sealed trait angular extends StObject
   inline def angular: angular = "angular".asInstanceOf[angular]
   
@@ -160,21 +165,8 @@ object angularCompilerCliStrings {
   inline def binding: binding = "binding".asInstanceOf[binding]
   
   @js.native
-  sealed trait browser
-    extends StObject
-       with EntryPointJsonProperty
-       with PackageJsonFormatProperties
-  inline def browser: browser = "browser".asInstanceOf[browser]
-  
-  @js.native
-  sealed trait commonjs
-    extends StObject
-       with EntryPointFormat
-  inline def commonjs: commonjs = "commonjs".asInstanceOf[commonjs]
-  
-  @js.native
-  sealed trait component extends StObject
-  inline def component: component = "component".asInstanceOf[component]
+  sealed trait component_ extends StObject
+  inline def component_ : component_ = "component".asInstanceOf[component_]
   
   @js.native
   sealed trait const
@@ -191,10 +183,6 @@ object angularCompilerCliStrings {
   inline def declarations: declarations = "declarations".asInstanceOf[declarations]
   
   @js.native
-  sealed trait decorator extends StObject
-  inline def decorator: decorator = "decorator".asInstanceOf[decorator]
-  
-  @js.native
   sealed trait decorators extends StObject
   inline def decorators: decorators = "decorators".asInstanceOf[decorators]
   
@@ -207,8 +195,8 @@ object angularCompilerCliStrings {
   inline def direct: direct = "direct".asInstanceOf[direct]
   
   @js.native
-  sealed trait directive extends StObject
-  inline def directive: directive = "directive".asInstanceOf[directive]
+  sealed trait directive_ extends StObject
+  inline def directive_ : directive_ = "directive".asInstanceOf[directive_]
   
   @js.native
   sealed trait dynamic extends StObject
@@ -219,51 +207,12 @@ object angularCompilerCliStrings {
   inline def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait es2015
-    extends StObject
-       with EntryPointJsonProperty
-       with PackageJsonFormatProperties
-  inline def es2015: es2015 = "es2015".asInstanceOf[es2015]
-  
-  @js.native
-  sealed trait esm2015
-    extends StObject
-       with EntryPointFormat
-       with EntryPointJsonProperty
-       with PackageJsonFormatProperties
-  inline def esm2015: esm2015 = "esm2015".asInstanceOf[esm2015]
-  
-  @js.native
-  sealed trait esm5
-    extends StObject
-       with EntryPointFormat
-       with EntryPointJsonProperty
-       with PackageJsonFormatProperties
-  inline def esm5: esm5 = "esm5".asInstanceOf[esm5]
+  sealed trait `experimental-local` extends StObject
+  inline def `experimental-local`: `experimental-local` = "experimental-local".asInstanceOf[`experimental-local`]
   
   @js.native
   sealed trait external extends StObject
   inline def external: external = "external".asInstanceOf[external]
-  
-  @js.native
-  sealed trait fesm2015
-    extends StObject
-       with EntryPointJsonProperty
-       with PackageJsonFormatProperties
-  inline def fesm2015: fesm2015 = "fesm2015".asInstanceOf[fesm2015]
-  
-  @js.native
-  sealed trait fesm5
-    extends StObject
-       with EntryPointJsonProperty
-       with PackageJsonFormatProperties
-  inline def fesm5: fesm5 = "fesm5".asInstanceOf[fesm5]
-  
-  @js.native
-  sealed trait findEntryPointsFromTsConfigProgram
-    extends StObject
-       with OptionalNgccOptionKeys
-  inline def findEntryPointsFromTsConfigProgram: findEntryPointsFromTsConfigProgram = "findEntryPointsFromTsConfigProgram".asInstanceOf[findEntryPointsFromTsConfigProgram]
   
   @js.native
   sealed trait full extends StObject
@@ -310,58 +259,18 @@ object angularCompilerCliStrings {
   inline def let: let = "let".asInstanceOf[let]
   
   @js.native
-  sealed trait main
-    extends StObject
-       with EntryPointJsonProperty
-       with PackageJsonFormatProperties
-  inline def main: main = "main".asInstanceOf[main]
-  
-  @js.native
-  sealed trait module
-    extends StObject
-       with EntryPointJsonProperty
-       with PackageJsonFormatProperties
-  inline def module: module = "module".asInstanceOf[module]
-  
-  @js.native
-  sealed trait ngtsc extends StObject
-  inline def ngtsc: ngtsc = "ngtsc".asInstanceOf[ngtsc]
-  
-  @js.native
-  sealed trait paramColondecorators extends StObject
-  inline def paramColondecorators: paramColondecorators = "param:decorators".asInstanceOf[paramColondecorators]
-  
-  @js.native
-  sealed trait params extends StObject
-  inline def params: params = "params".asInstanceOf[params]
-  
-  @js.native
   sealed trait partial extends StObject
   inline def partial: partial = "partial".asInstanceOf[partial]
   
   @js.native
-  sealed trait pathMappings
-    extends StObject
-       with OptionalNgccOptionKeys
-  inline def pathMappings: pathMappings = "pathMappings".asInstanceOf[pathMappings]
-  
-  @js.native
-  sealed trait pipe extends StObject
-  inline def pipe: pipe = "pipe".asInstanceOf[pipe]
-  
-  @js.native
-  sealed trait `process-task` extends StObject
-  inline def `process-task`: `process-task` = "process-task".asInstanceOf[`process-task`]
+  sealed trait pipe_ extends StObject
+  inline def pipe_ : pipe_ = "pipe".asInstanceOf[pipe_]
   
   @js.native
   sealed trait readResource
     extends StObject
        with ExtendedCompilerHostMethods
   inline def readResource: readResource = "readResource".asInstanceOf[readResource]
-  
-  @js.native
-  sealed trait ready extends StObject
-  inline def ready: ready = "ready".asInstanceOf[ready]
   
   @js.native
   sealed trait resolveModuleNames
@@ -388,16 +297,6 @@ object angularCompilerCliStrings {
   inline def target: target = "target".asInstanceOf[target]
   
   @js.native
-  sealed trait targetEntryPointPath
-    extends StObject
-       with OptionalNgccOptionKeys
-  inline def targetEntryPointPath: targetEntryPointPath = "targetEntryPointPath".asInstanceOf[targetEntryPointPath]
-  
-  @js.native
-  sealed trait `task-completed` extends StObject
-  inline def `task-completed`: `task-completed` = "task-completed".asInstanceOf[`task-completed`]
-  
-  @js.native
   sealed trait template extends StObject
   inline def template: template = "template".asInstanceOf[template]
   
@@ -412,50 +311,12 @@ object angularCompilerCliStrings {
   inline def transformResource: transformResource = "transformResource".asInstanceOf[transformResource]
   
   @js.native
-  sealed trait `transformed-files` extends StObject
-  inline def `transformed-files`: `transformed-files` = "transformed-files".asInstanceOf[`transformed-files`]
-  
-  @js.native
-  sealed trait tsConfigPath
-    extends StObject
-       with OptionalNgccOptionKeys
-  inline def tsConfigPath: tsConfigPath = "tsConfigPath".asInstanceOf[tsConfigPath]
-  
-  @js.native
   sealed trait typeof extends StObject
   inline def typeof: typeof = "typeof".asInstanceOf[typeof]
   
   @js.native
-  sealed trait types
-    extends StObject
-       with PackageJsonFormatProperties
-  inline def types: types = "types".asInstanceOf[types]
-  
-  @js.native
-  sealed trait typings_
-    extends StObject
-       with PackageJsonFormatProperties
-  inline def typings_ : typings_ = "typings".asInstanceOf[typings_]
-  
-  @js.native
-  sealed trait umd
-    extends StObject
-       with EntryPointFormat
-  inline def umd: umd = "umd".asInstanceOf[umd]
-  
-  @js.native
-  sealed trait unimportant
-    extends StObject
-       with PackageJsonPropertyPositioning
-  inline def unimportant: unimportant = "unimportant".asInstanceOf[unimportant]
-  
-  @js.native
   sealed trait unknown extends StObject
   inline def unknown: unknown = "unknown".asInstanceOf[unknown]
-  
-  @js.native
-  sealed trait `update-package-json` extends StObject
-  inline def `update-package-json`: `update-package-json` = "update-package-json".asInstanceOf[`update-package-json`]
   
   @js.native
   sealed trait `var`

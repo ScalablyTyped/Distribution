@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateScriptInput extends StObject {
   
   /**
-    * A descriptive label that is associated with a script. Script names do not need to be unique.
+    * A descriptive label that is associated with a script. Script names don't need to be unique.
     */
   var Name: js.UndefOr[NonZeroAndMaxString] = js.undefined
   
@@ -22,7 +22,7 @@ trait UpdateScriptInput extends StObject {
   var StorageLocation: js.UndefOr[S3Location] = js.undefined
   
   /**
-    * Version information that is associated with a build or script. Version strings do not need to be unique.
+    * Version information associated with a build or script. Version strings don't need to be unique.
     */
   var Version: js.UndefOr[NonZeroAndMaxString] = js.undefined
   

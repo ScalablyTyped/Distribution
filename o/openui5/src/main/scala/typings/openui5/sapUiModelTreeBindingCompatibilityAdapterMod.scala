@@ -12,6 +12,8 @@ object sapUiModelTreeBindingCompatibilityAdapterMod {
     extends StObject
        with TreeBindingCompatibilityAdapter {
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Adapter for TreeBindings to add the ListBinding functionality and use the tree structure in list based
       * controls.
       *

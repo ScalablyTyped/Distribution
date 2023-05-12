@@ -1,5 +1,10 @@
 package typings.std.global
 
+import typings.std.stdInts.`0`
+import typings.std.stdInts.`1`
+import typings.std.stdInts.`2`
+import typings.std.stdInts.`3`
+import typings.std.stdInts.`4`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,25 +21,25 @@ object XMLHttpRequest {
   /* standard dom */
   @JSGlobal("XMLHttpRequest.DONE")
   @js.native
-  val DONE: Double = js.native
+  val DONE: `4` = js.native
   
   /* standard dom */
   @JSGlobal("XMLHttpRequest.HEADERS_RECEIVED")
   @js.native
-  val HEADERS_RECEIVED: Double = js.native
+  val HEADERS_RECEIVED: `2` = js.native
   
   /* standard dom */
   @JSGlobal("XMLHttpRequest.LOADING")
   @js.native
-  val LOADING: Double = js.native
+  val LOADING: `3` = js.native
   
   /* standard dom */
   @JSGlobal("XMLHttpRequest.OPENED")
   @js.native
-  val OPENED: Double = js.native
+  val OPENED: `1` = js.native
   
   /* standard dom */
   @JSGlobal("XMLHttpRequest.UNSENT")
   @js.native
-  val UNSENT: Double = js.native
+  val UNSENT: `0` = js.native
 }

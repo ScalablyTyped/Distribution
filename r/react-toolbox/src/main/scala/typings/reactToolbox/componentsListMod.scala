@@ -23,7 +23,7 @@ object componentsListMod {
     def this(props: ListProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: ListProps, context: Any) = this()
   }
@@ -35,7 +35,7 @@ object componentsListMod {
     def this(props: ListCheckboxProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: ListCheckboxProps, context: Any) = this()
   }
@@ -47,7 +47,7 @@ object componentsListMod {
     def this(props: ListDividerProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: ListDividerProps, context: Any) = this()
   }
@@ -59,7 +59,7 @@ object componentsListMod {
     def this(props: ListItemProps & ListItemLayoutProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: ListItemProps & ListItemLayoutProps, context: Any) = this()
   }
@@ -71,7 +71,7 @@ object componentsListMod {
     def this(props: ListItemActionProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: ListItemActionProps, context: Any) = this()
   }
@@ -83,7 +83,7 @@ object componentsListMod {
     def this(props: ListItemActionsProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: ListItemActionsProps, context: Any) = this()
   }
@@ -95,7 +95,7 @@ object componentsListMod {
     def this(props: ListItemContentProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: ListItemContentProps, context: Any) = this()
   }
@@ -107,7 +107,7 @@ object componentsListMod {
     def this(props: ListItemLayoutProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: ListItemLayoutProps, context: Any) = this()
   }
@@ -119,7 +119,7 @@ object componentsListMod {
     def this(props: ListItemTextProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: ListItemTextProps, context: Any) = this()
   }
@@ -131,7 +131,7 @@ object componentsListMod {
     def this(props: ListSubHeaderProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: ListSubHeaderProps, context: Any) = this()
   }

@@ -55,7 +55,8 @@ trait InAppPurchase
     * certainly before you call `purchaseProduct`.
     */
   def purchaseProduct(productID: String): js.Promise[Boolean] = js.native
-  def purchaseProduct(productID: String, quantity: Double): js.Promise[Boolean] = js.native
+  def purchaseProduct(productID: String, opts: Double): js.Promise[Boolean] = js.native
+  def purchaseProduct(productID: String, opts: PurchaseProductOpts): js.Promise[Boolean] = js.native
   
   @JSName("removeListener")
   def removeListener_transactionsupdated(event: `transactions-updated`, listener: js.Function): this.type = js.native

@@ -1,5 +1,6 @@
 package typings.octokitOpenapiTypes.anon
 
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.auto_dismissed
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.dismissed
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.fix_started
 import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.fixed
@@ -14,16 +15,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Dependency extends StObject {
   
+  var auto_dismissed_at: js.UndefOr[String | Null] = js.undefined
+  
   var created_at: String
   
-  var dependency: Scope
+  /** @description Details for the vulnerable dependency. */
+  var dependency: Manifestpath
   
   var dismissed_at: String | Null
   
   var dismissed_by: Avatarurl | Null
   
+  /** @description An optional comment associated with the alert's dismissal. */
   var dismissed_comment: String | Null
   
+  /**
+    * @description The reason that the alert was dismissed.
+    * @enum {string|null}
+    */
   var dismissed_reason: fix_started | inaccurate | no_bandwidth | not_used | tolerable_risk | Null
   
   var fixed_at: String | Null
@@ -32,11 +41,15 @@ trait Dependency extends StObject {
   
   var number: Double
   
-  var security_advisory: Cveid
+  var security_advisory: Cvss
   
-  var security_vulnerability: Vulnerableversionrange
+  var security_vulnerability: Package
   
-  var state: dismissed | fixed | open
+  /**
+    * @description The state of the Dependabot alert.
+    * @enum {string}
+    */
+  var state: auto_dismissed | dismissed | fixed | open
   
   var updated_at: String
   
@@ -46,12 +59,12 @@ object Dependency {
   
   inline def apply(
     created_at: String,
-    dependency: Scope,
+    dependency: Manifestpath,
     html_url: String,
     number: Double,
-    security_advisory: Cveid,
-    security_vulnerability: Vulnerableversionrange,
-    state: dismissed | fixed | open,
+    security_advisory: Cvss,
+    security_vulnerability: Package,
+    state: auto_dismissed | dismissed | fixed | open,
     updated_at: String,
     url: String
   ): Dependency = {
@@ -62,9 +75,15 @@ object Dependency {
   @scala.inline
   implicit open class MutableBuilder[Self <: Dependency] (val x: Self) extends AnyVal {
     
+    inline def setAuto_dismissed_at(value: String): Self = StObject.set(x, "auto_dismissed_at", value.asInstanceOf[js.Any])
+    
+    inline def setAuto_dismissed_atNull: Self = StObject.set(x, "auto_dismissed_at", null)
+    
+    inline def setAuto_dismissed_atUndefined: Self = StObject.set(x, "auto_dismissed_at", js.undefined)
+    
     inline def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
     
-    inline def setDependency(value: Scope): Self = StObject.set(x, "dependency", value.asInstanceOf[js.Any])
+    inline def setDependency(value: Manifestpath): Self = StObject.set(x, "dependency", value.asInstanceOf[js.Any])
     
     inline def setDismissed_at(value: String): Self = StObject.set(x, "dismissed_at", value.asInstanceOf[js.Any])
     
@@ -90,11 +109,11 @@ object Dependency {
     
     inline def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     
-    inline def setSecurity_advisory(value: Cveid): Self = StObject.set(x, "security_advisory", value.asInstanceOf[js.Any])
+    inline def setSecurity_advisory(value: Cvss): Self = StObject.set(x, "security_advisory", value.asInstanceOf[js.Any])
     
-    inline def setSecurity_vulnerability(value: Vulnerableversionrange): Self = StObject.set(x, "security_vulnerability", value.asInstanceOf[js.Any])
+    inline def setSecurity_vulnerability(value: Package): Self = StObject.set(x, "security_vulnerability", value.asInstanceOf[js.Any])
     
-    inline def setState(value: dismissed | fixed | open): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: auto_dismissed | dismissed | fixed | open): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     inline def setUpdated_at(value: String): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])
     

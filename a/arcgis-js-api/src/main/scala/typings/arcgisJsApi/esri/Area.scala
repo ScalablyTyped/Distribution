@@ -17,7 +17,7 @@ trait Area extends StObject {
   /**
     * Any unit which represents area.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-quantity.html#Area)
+    * [Read more...](global.html#unit)
     */
   var unit: AreaUnit
   

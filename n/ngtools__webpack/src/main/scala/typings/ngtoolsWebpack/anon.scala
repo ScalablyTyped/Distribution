@@ -11,8 +11,6 @@ import typings.angularCompilerCli.anon.FileName
 import typings.angularCompilerCli.anon.Host
 import typings.angularCompilerCli.anon.Options
 import typings.angularCompilerCli.anon.PickCompilerHostgetCanoni
-import typings.angularCompilerCli.ngccSrcNgccOptionsMod.AsyncNgccOptions
-import typings.angularCompilerCli.ngccSrcNgccOptionsMod.SyncNgccOptions
 import typings.angularCompilerCli.srcNgtscCoreApiSrcOptionsMod.NgCompilerOptions
 import typings.angularCompilerCli.srcNgtscFileSystemSrcLogicalMod.LogicalProjectPath
 import typings.angularCompilerCli.srcNgtscFileSystemSrcTypesMod.AbsoluteFsPath
@@ -28,12 +26,11 @@ import typings.angularCompilerCli.srcTransformersApiMod.CompilerOptions
 import typings.ngtoolsWebpack.ngtoolsWebpackStrings.angular
 import typings.std.Record
 import typings.typescript.mod.Diagnostic
+import typings.typescript.mod.EmitResult
 import typings.typescript.mod.FormatDiagnosticsHost
 import typings.typescript.mod.Program
 import typings.typescript.mod.SourceFile
 import typings.typescript.mod.TransformerFactory
-import typings.webpack.mod.ResolveOptionsWithDependencyType
-import typings.webpack.mod.ResolverWithOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -132,13 +129,6 @@ object anon {
       
       inline def setEmitNgModuleScopeUndefined: Self = StObject.set(x, "emitNgModuleScope", js.undefined)
     }
-  }
-  
-  @js.native
-  trait FnCall extends StObject {
-    
-    def apply(`type`: String): ResolverWithOptions = js.native
-    def apply(`type`: String, resolveOptions: ResolveOptionsWithDependencyType): ResolverWithOptions = js.native
   }
   
   trait InlineStyleFileExtension extends StObject {
@@ -438,7 +428,7 @@ object anon {
     @JSName("join")
     def join_PathSegment(basePath: BrandedPath[typings.ngtoolsWebpack.ngtoolsWebpackStrings.PathSegment], paths: String*): BrandedPath[typings.ngtoolsWebpack.ngtoolsWebpackStrings.PathSegment] = js.native
     
-    def performCompilation(param0: CustomTransformers): PerformCompilationResult = js.native
+    def performCompilation[CbEmitRes /* <: EmitResult */](param0: CustomTransformers[CbEmitRes]): PerformCompilationResult = js.native
     
     def readConfiguration(project: String): ParsedConfiguration = js.native
     def readConfiguration(project: String, existingOptions: Unit, host: ConfigurationHost): ParsedConfiguration = js.native
@@ -465,20 +455,5 @@ object anon {
     def setFileSystem(fileSystem: FileSystem): Unit = js.native
     
     def toRelativeImport(relativePath: AbsoluteFsPath | PathSegment): PathSegment | AbsoluteFsPath = js.native
-  }
-  
-  @js.native
-  trait TypeofimportedNgcc extends StObject {
-    
-    var ConsoleLogger: Instantiable1[/* level */ LogLevel, typings.angularCompilerCli.ngccMod.ConsoleLogger] = js.native
-    
-    def clearTsConfigCache(): Unit = js.native
-    
-    val containingDirPath: String = js.native
-    
-    val ngccMainFilePath: String = js.native
-    
-    def process(options: AsyncNgccOptions): /* import warning: importer.ImportType#apply Failed type conversion: @angular/compiler-cli.@angular/compiler-cli/ngcc/src/ngcc_options.AsyncNgccOptions extends @angular/compiler-cli.@angular/compiler-cli/ngcc/src/ngcc_options.AsyncNgccOptions ? std.Promise<void> : void */ js.Any = js.native
-    def process(options: SyncNgccOptions): /* import warning: importer.ImportType#apply Failed type conversion: @angular/compiler-cli.@angular/compiler-cli/ngcc/src/ngcc_options.SyncNgccOptions extends @angular/compiler-cli.@angular/compiler-cli/ngcc/src/ngcc_options.AsyncNgccOptions ? std.Promise<void> : void */ js.Any = js.native
   }
 }

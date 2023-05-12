@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.PaddingBlockEnd
+import typings.csstype.mod.Property.BorderImageRepeat
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,13 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `526` extends StObject {
   
   var value: js.UndefOr[
-    (PaddingBlockEnd[Double | String]) | (js.Array[
+    BorderImageRepeat | (js.Array[
       (Extract[
-        js.UndefOr[
-          (PaddingBlockEnd[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingBlockEnd[Double | String]]]])
-        ], 
+        js.UndefOr[BorderImageRepeat | js.Array[NonNullable[js.UndefOr[BorderImageRepeat]]]], 
         String
-      ]) | (NonNullable[js.UndefOr[PaddingBlockEnd[Double | String]]])
+      ]) | NonNullable[js.UndefOr[BorderImageRepeat]]
     ])
   ] = js.native
 }

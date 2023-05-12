@@ -13,8 +13,9 @@ trait RoamingSettings extends StObject {
     * @returns Type: String | Number | Boolean | Object | Array
     *
     * @remarks
+    * [Api set: Mailbox 1.1]
     *
-    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `Restricted`
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **restricted**
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     *
@@ -23,11 +24,12 @@ trait RoamingSettings extends StObject {
   def get(name: String): Any = js.native
   
   /**
-    * Removes the specified setting
+    * Removes the specified setting.
     *
     * @remarks
+    * [Api set: Mailbox 1.1]
     *
-    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `Restricted`
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **restricted**
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     *
@@ -38,13 +40,14 @@ trait RoamingSettings extends StObject {
   /**
     * Saves the settings.
     *
-    * Any settings previously saved by an add-in are loaded when it is initialized, so during the lifetime of the session you can just use
+    * Any settings previously saved by an add-in are loaded when it's initialized, so during the lifetime of the session you can just use
     * the set and get methods to work with the in-memory copy of the settings property bag.
-    * When you want to persist the settings so that they are available the next time the add-in is used, use the saveAsync method.
+    * When you want to persist the settings so that they're available the next time the add-in is used, use the `saveAsync` method.
     *
     * @remarks
+    * [Api set: Mailbox 1.1]
     *
-    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `Restricted`
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **restricted**
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     *
@@ -57,16 +60,17 @@ trait RoamingSettings extends StObject {
   /**
     * Sets or creates the specified setting.
     *
-    * The `set` method creates a new setting of the specified name if it does not already exist, or sets an existing setting of the specified name.
+    * The `set` method creates a new setting of the specified name if it doesn't already exist, or sets an existing setting of the specified name.
     * The value is stored in the document as the serialized JSON representation of its data type.
     *
-    * A maximum of 32KB is available for the settings of each add-in.
+    * A maximum of 32KB is available for the settings of each add-in. An error with code 9057 is thrown when that size limit is exceeded.
     *
     * Any changes made to settings using the `set` method will not be saved to the server until the `saveAsync` method is called.
     *
     * @remarks
+    * [Api set: Mailbox 1.1]
     *
-    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `Restricted`
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **restricted**
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     *

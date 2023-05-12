@@ -1,10 +1,16 @@
 package typings.angularCommon.mod
 
+import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ImageLoaderConfig extends StObject {
+  
+  /**
+    * Additional user-provided parameters for use by the ImageLoader.
+    */
+  var loaderParams: js.UndefOr[StringDictionary[Any]] = js.undefined
   
   /**
     * Image file name to be added to the image request URL.
@@ -25,6 +31,10 @@ object ImageLoaderConfig {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: ImageLoaderConfig] (val x: Self) extends AnyVal {
+    
+    inline def setLoaderParams(value: StringDictionary[Any]): Self = StObject.set(x, "loaderParams", value.asInstanceOf[js.Any])
+    
+    inline def setLoaderParamsUndefined: Self = StObject.set(x, "loaderParams", js.undefined)
     
     inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     

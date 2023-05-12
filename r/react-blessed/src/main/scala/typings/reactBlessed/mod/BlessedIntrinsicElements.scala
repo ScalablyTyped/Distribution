@@ -10,19 +10,13 @@ trait BlessedIntrinsicElements extends StObject {
   
   var box: DetailedBlessedProps[BoxElement]
   
-  var button: DetailedBlessedProps[ButtonElement]
-  
   var checkbox: DetailedBlessedProps[CheckboxElement]
   
   var element: DetailedBlessedProps[Element]
   
   var filemanager: DetailedBlessedProps[FileManagerElement]
   
-  var input: DetailedBlessedProps[InputElement]
-  
   var layout: DetailedBlessedProps[typings.blessed.mod.Widgets.LayoutElement]
-  
-  var line: DetailedBlessedProps[LineElement]
   
   var list: DetailedBlessedProps[ListElement]
   
@@ -50,13 +44,7 @@ trait BlessedIntrinsicElements extends StObject {
   
   var scrollabletext: DetailedBlessedProps[ScrollableTextElement]
   
-  var table: DetailedBlessedProps[TableElement]
-  
   var terminal: DetailedBlessedProps[typings.blessed.mod.Widgets.TerminalElement]
-  
-  var text: DetailedBlessedProps[TextElement]
-  
-  var textarea: DetailedBlessedProps[TextareaElement]
   
   var textbox: DetailedBlessedProps[TextboxElement]
 }
@@ -65,13 +53,10 @@ object BlessedIntrinsicElements {
   inline def apply(
     bigtext: DetailedBlessedProps[BigTextElement],
     box: DetailedBlessedProps[BoxElement],
-    button: DetailedBlessedProps[ButtonElement],
     checkbox: DetailedBlessedProps[CheckboxElement],
     element: DetailedBlessedProps[Element],
     filemanager: DetailedBlessedProps[FileManagerElement],
-    input: DetailedBlessedProps[InputElement],
     layout: DetailedBlessedProps[typings.blessed.mod.Widgets.LayoutElement],
-    line: DetailedBlessedProps[LineElement],
     list: DetailedBlessedProps[ListElement],
     listbar: DetailedBlessedProps[ListbarElement],
     listtable: DetailedBlessedProps[ListTableElement],
@@ -85,13 +70,10 @@ object BlessedIntrinsicElements {
     radioset: DetailedBlessedProps[RadioSetElement],
     scrollablebox: DetailedBlessedProps[ScrollableBoxElement],
     scrollabletext: DetailedBlessedProps[ScrollableTextElement],
-    table: DetailedBlessedProps[TableElement],
     terminal: DetailedBlessedProps[typings.blessed.mod.Widgets.TerminalElement],
-    text: DetailedBlessedProps[TextElement],
-    textarea: DetailedBlessedProps[TextareaElement],
     textbox: DetailedBlessedProps[TextboxElement]
   ): BlessedIntrinsicElements = {
-    val __obj = js.Dynamic.literal(bigtext = bigtext.asInstanceOf[js.Any], box = box.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], checkbox = checkbox.asInstanceOf[js.Any], element = element.asInstanceOf[js.Any], filemanager = filemanager.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], layout = layout.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], list = list.asInstanceOf[js.Any], listbar = listbar.asInstanceOf[js.Any], listtable = listtable.asInstanceOf[js.Any], loading = loading.asInstanceOf[js.Any], log = log.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], progressbar = progressbar.asInstanceOf[js.Any], prompt = prompt.asInstanceOf[js.Any], question = question.asInstanceOf[js.Any], radiobutton = radiobutton.asInstanceOf[js.Any], radioset = radioset.asInstanceOf[js.Any], scrollablebox = scrollablebox.asInstanceOf[js.Any], scrollabletext = scrollabletext.asInstanceOf[js.Any], table = table.asInstanceOf[js.Any], terminal = terminal.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], textarea = textarea.asInstanceOf[js.Any], textbox = textbox.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(bigtext = bigtext.asInstanceOf[js.Any], box = box.asInstanceOf[js.Any], checkbox = checkbox.asInstanceOf[js.Any], element = element.asInstanceOf[js.Any], filemanager = filemanager.asInstanceOf[js.Any], layout = layout.asInstanceOf[js.Any], list = list.asInstanceOf[js.Any], listbar = listbar.asInstanceOf[js.Any], listtable = listtable.asInstanceOf[js.Any], loading = loading.asInstanceOf[js.Any], log = log.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], progressbar = progressbar.asInstanceOf[js.Any], prompt = prompt.asInstanceOf[js.Any], question = question.asInstanceOf[js.Any], radiobutton = radiobutton.asInstanceOf[js.Any], radioset = radioset.asInstanceOf[js.Any], scrollablebox = scrollablebox.asInstanceOf[js.Any], scrollabletext = scrollabletext.asInstanceOf[js.Any], terminal = terminal.asInstanceOf[js.Any], textbox = textbox.asInstanceOf[js.Any])
     __obj.asInstanceOf[BlessedIntrinsicElements]
   }
   
@@ -102,19 +84,13 @@ object BlessedIntrinsicElements {
     
     inline def setBox(value: DetailedBlessedProps[BoxElement]): Self = StObject.set(x, "box", value.asInstanceOf[js.Any])
     
-    inline def setButton(value: DetailedBlessedProps[ButtonElement]): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
-    
     inline def setCheckbox(value: DetailedBlessedProps[CheckboxElement]): Self = StObject.set(x, "checkbox", value.asInstanceOf[js.Any])
     
     inline def setElement(value: DetailedBlessedProps[Element]): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
     inline def setFilemanager(value: DetailedBlessedProps[FileManagerElement]): Self = StObject.set(x, "filemanager", value.asInstanceOf[js.Any])
     
-    inline def setInput(value: DetailedBlessedProps[InputElement]): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
-    
     inline def setLayout(value: DetailedBlessedProps[typings.blessed.mod.Widgets.LayoutElement]): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
-    
-    inline def setLine(value: DetailedBlessedProps[LineElement]): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
     inline def setList(value: DetailedBlessedProps[ListElement]): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
     
@@ -142,13 +118,7 @@ object BlessedIntrinsicElements {
     
     inline def setScrollabletext(value: DetailedBlessedProps[ScrollableTextElement]): Self = StObject.set(x, "scrollabletext", value.asInstanceOf[js.Any])
     
-    inline def setTable(value: DetailedBlessedProps[TableElement]): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
-    
     inline def setTerminal(value: DetailedBlessedProps[typings.blessed.mod.Widgets.TerminalElement]): Self = StObject.set(x, "terminal", value.asInstanceOf[js.Any])
-    
-    inline def setText(value: DetailedBlessedProps[TextElement]): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
-    
-    inline def setTextarea(value: DetailedBlessedProps[TextareaElement]): Self = StObject.set(x, "textarea", value.asInstanceOf[js.Any])
     
     inline def setTextbox(value: DetailedBlessedProps[TextboxElement]): Self = StObject.set(x, "textbox", value.asInstanceOf[js.Any])
   }

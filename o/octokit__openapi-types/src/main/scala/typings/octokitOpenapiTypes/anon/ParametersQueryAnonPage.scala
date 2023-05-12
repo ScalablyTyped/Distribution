@@ -8,11 +8,11 @@ trait ParametersQueryAnonPage extends StObject {
   
   var parameters: QueryAnonPage
   
-  var responses: `200Content506`
+  var responses: `200Content573`
 }
 object ParametersQueryAnonPage {
   
-  inline def apply(parameters: QueryAnonPage, responses: `200Content506`): ParametersQueryAnonPage = {
+  inline def apply(parameters: QueryAnonPage, responses: `200Content573`): ParametersQueryAnonPage = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersQueryAnonPage]
   }
@@ -22,6 +22,6 @@ object ParametersQueryAnonPage {
     
     inline def setParameters(value: QueryAnonPage): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `200Content506`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `200Content573`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

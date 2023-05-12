@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-time-picker
 
-Typings are for version 4.0
+Typings are for version 6.0.4
 
 ## Library description:
 A time picker for your React app.
@@ -24,7 +24,7 @@ A time picker for your React app.
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

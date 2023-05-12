@@ -56,7 +56,7 @@ trait ClearIndicator extends StObject {
   
   def MenuList[Option_11, IsMulti_11 /* <: Boolean */, Group_11 /* <: GroupBase[Option_11] */](props: MenuListProps[Option_11, IsMulti_11, Group_11]): Element
   
-  def MenuPortal[Option_12, IsMulti_12 /* <: Boolean */, Group_12 /* <: GroupBase[Option_12] */](param0: MenuPortalProps[Option_12, IsMulti_12, Group_12]): Element | Null
+  def MenuPortal[Option_12, IsMulti_12 /* <: Boolean */, Group_12 /* <: GroupBase[Option_12] */](props: MenuPortalProps[Option_12, IsMulti_12, Group_12]): Element | Null
   
   def MultiValue[Option_15, IsMulti_15 /* <: Boolean */, Group_15 /* <: GroupBase[Option_15] */](props: MultiValueProps[Option_15, IsMulti_15, Group_15]): Element
   

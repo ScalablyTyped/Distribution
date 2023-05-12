@@ -2,9 +2,8 @@ package typings.playcanvas.mod
 
 import typings.playcanvas.anon.Alpha
 import typings.playcanvas.anon.Base
-import typings.playcanvas.anon.Depth
 import typings.playcanvas.anon.Flags
-import typings.std.EXTBlendMinmax
+import typings.std.ANGLEInstancedArrays
 import typings.std.HTMLCanvasElement
 import typings.std.Map
 import typings.std.WEBGLDepthTexture
@@ -35,7 +34,7 @@ open class WebglGraphicsDevice protected () extends GraphicsDevice {
     * alpha buffer.
     * @param {boolean} [options.depth=true] - Boolean that indicates that the drawing buffer is
     * requested to have a depth buffer of at least 16 bits.
-    * @param {boolean} [options.stencil=false] - Boolean that indicates that the drawing buffer is
+    * @param {boolean} [options.stencil=true] - Boolean that indicates that the drawing buffer is
     * requested to have a stencil buffer of at least 8 bits.
     * @param {boolean} [options.antialias=true] - Boolean that indicates whether or not to perform
     * anti-aliasing if possible.
@@ -61,6 +60,8 @@ open class WebglGraphicsDevice protected () extends GraphicsDevice {
     * reduce the latency by desynchronizing the canvas paint cycle from the event loop.
     * @param {boolean} [options.xrCompatible] - Boolean that hints to the user agent to use a
     * compatible graphics adapter for an immersive XR device.
+    * @param {WebGLRenderingContext | WebGL2RenderingContext} [options.gl] - The rendering context
+    * to use. If not specified, a new context will be created.
     */
   def this(canvas: HTMLCanvasElement) = this()
   def this(canvas: HTMLCanvasElement, options: Alpha) = this()
@@ -71,9 +72,9 @@ open class WebglGraphicsDevice protected () extends GraphicsDevice {
   
   var _copyShader: Shader = js.native
   
-  var _spectorCurrentMarker: String = js.native
+  var _deviceType: String = js.native
   
-  var _spectorMarkers: js.Array[Any] = js.native
+  var _extDisjointTimerQuery: ANGLEInstancedArrays = js.native
   
   var _tempEnableSafariTextureUnitWorkaround: Boolean = js.native
   
@@ -119,21 +120,7 @@ open class WebglGraphicsDevice protected () extends GraphicsDevice {
     */
   def bindTextureOnUnit(texture: Texture, textureUnit: Double): Unit = js.native
   
-  var blendAlphaEquation: Double = js.native
-  
   var blendColor: Color = js.native
-  
-  var blendDst: Double = js.native
-  
-  var blendDstAlpha: Double = js.native
-  
-  var blendEquation: Any = js.native
-  
-  var blendSrc: Any = js.native
-  
-  var blendSrcAlpha: Double = js.native
-  
-  var blending: Any = js.native
   
   var boundVao: Any = js.native
   
@@ -177,13 +164,6 @@ open class WebglGraphicsDevice protected () extends GraphicsDevice {
   var clearColor: Color = js.native
   
   var clearDepth: Any = js.native
-  
-  /**
-    * Frees memory from all shaders ever allocated with this device.
-    *
-    * @ignore
-    */
-  def clearShaderCache(): Unit = js.native
   
   var clearStencil: Any = js.native
   
@@ -240,21 +220,9 @@ open class WebglGraphicsDevice protected () extends GraphicsDevice {
   
   var cullFace: Any = js.native
   
-  var cullMode: Any = js.native
-  
-  var defaultClearOptions: Depth = js.native
-  
   var defaultFramebuffer: Any = js.native
   
-  var defaultFramebufferAlpha: Boolean = js.native
-  
   var depthBiasEnabled: Any = js.native
-  
-  var depthFunc: Any = js.native
-  
-  var depthTest: Any = js.native
-  
-  var depthWrite: Any = js.native
   
   /**
     * Submits a graphical primitive to the hardware for immediate rendering.
@@ -298,60 +266,67 @@ open class WebglGraphicsDevice protected () extends GraphicsDevice {
   /**
     * End a render pass.
     *
-    * @param {RenderPass} renderPass - The render pass to end.
+    * @param {import('../render-pass.js').RenderPass} renderPass - The render pass to end.
     * @ignore
     */
   def endPass(renderPass: RenderPass): Unit = js.native
   
-  var extBlendMinmax: Boolean | EXTBlendMinmax = js.native
+  /**
+    * Called after a batch of shaders was created, to guide in their optimal preparation for rendering.
+    *
+    * @ignore
+    */
+  def endShaderBatch(): Unit = js.native
   
-  var extColorBufferFloat: EXTBlendMinmax = js.native
+  var extBlendMinmax: Boolean | ANGLEInstancedArrays = js.native
   
-  var extColorBufferHalfFloat: EXTBlendMinmax = js.native
+  var extColorBufferFloat: ANGLEInstancedArrays = js.native
   
-  var extCompressedTextureASTC: EXTBlendMinmax = js.native
+  var extColorBufferHalfFloat: ANGLEInstancedArrays = js.native
   
-  var extCompressedTextureATC: EXTBlendMinmax = js.native
+  var extCompressedTextureASTC: ANGLEInstancedArrays = js.native
   
-  var extCompressedTextureETC: EXTBlendMinmax = js.native
+  var extCompressedTextureATC: ANGLEInstancedArrays = js.native
   
-  var extCompressedTextureETC1: EXTBlendMinmax = js.native
+  var extCompressedTextureETC: ANGLEInstancedArrays = js.native
   
-  var extCompressedTexturePVRTC: EXTBlendMinmax = js.native
+  var extCompressedTextureETC1: ANGLEInstancedArrays = js.native
   
-  var extCompressedTextureS3TC: EXTBlendMinmax = js.native
+  var extCompressedTexturePVRTC: ANGLEInstancedArrays = js.native
   
-  var extDebugRendererInfo: EXTBlendMinmax = js.native
+  var extCompressedTextureS3TC: ANGLEInstancedArrays = js.native
+  
+  var extDebugRendererInfo: ANGLEInstancedArrays = js.native
   
   var extDepthTexture: Boolean | WEBGLDepthTexture = js.native
   
-  var extDisjointTimerQuery: EXTBlendMinmax = js.native
+  def extDisjointTimerQuery: ANGLEInstancedArrays = js.native
   
-  var extDrawBuffers: Boolean | EXTBlendMinmax = js.native
+  var extDrawBuffers: Boolean | ANGLEInstancedArrays = js.native
   
-  var extFloatBlend: EXTBlendMinmax = js.native
+  var extFloatBlend: ANGLEInstancedArrays = js.native
   
-  var extInstancing: Boolean | EXTBlendMinmax = js.native
+  var extInstancing: Boolean | ANGLEInstancedArrays = js.native
   
-  var extParallelShaderCompile: EXTBlendMinmax = js.native
+  var extParallelShaderCompile: ANGLEInstancedArrays = js.native
   
-  var extStandardDerivatives: Boolean | EXTBlendMinmax = js.native
+  var extStandardDerivatives: Boolean | ANGLEInstancedArrays = js.native
   
-  var extTextureFilterAnisotropic: EXTBlendMinmax = js.native
+  var extTextureFilterAnisotropic: ANGLEInstancedArrays = js.native
   
-  var extTextureFloat: Boolean | EXTBlendMinmax = js.native
+  var extTextureFloat: Boolean | ANGLEInstancedArrays = js.native
   
-  var extTextureFloatLinear: EXTBlendMinmax = js.native
+  var extTextureFloatLinear: ANGLEInstancedArrays = js.native
   
-  var extTextureHalfFloat: Boolean | EXTBlendMinmax = js.native
+  var extTextureHalfFloat: Boolean | ANGLEInstancedArrays = js.native
   
-  var extTextureHalfFloatLinear: EXTBlendMinmax = js.native
+  var extTextureHalfFloatLinear: ANGLEInstancedArrays = js.native
   
-  var extTextureLod: Boolean | EXTBlendMinmax = js.native
+  var extTextureLod: Boolean | ANGLEInstancedArrays = js.native
   
-  var extUintElement: Boolean | EXTBlendMinmax = js.native
+  var extUintElement: Boolean | ANGLEInstancedArrays = js.native
   
-  var extVertexArrayObject: Boolean | EXTBlendMinmax = js.native
+  var extVertexArrayObject: Boolean | ANGLEInstancedArrays = js.native
   
   var feedback: WebGLTransformFeedback = js.native
   
@@ -359,12 +334,7 @@ open class WebglGraphicsDevice protected () extends GraphicsDevice {
   
   var fragmentUniformsCount: Any = js.native
   
-  /**
-    * Queries whether blending is enabled.
-    *
-    * @returns {boolean} True if blending is enabled and false otherwise.
-    */
-  def getBlending(): Boolean = js.native
+  var framebufferFormat: Double = js.native
   
   /**
     * Get copy shader for efficient rendering of fullscreen-quad with texture.
@@ -375,44 +345,20 @@ open class WebglGraphicsDevice protected () extends GraphicsDevice {
     */
   def getCopyShader(): Shader = js.native
   
+  def getExtension(args: Any*): ANGLEInstancedArrays = js.native
+  
   /**
-    * Gets the current cull mode.
+    * Get a supported HDR pixel format given a set of hardware support requirements.
     *
-    * @returns {number} The current cull mode.
+    * @param {boolean} preferLargest - If true, prefer the highest precision format. Otherwise prefer the lowest precision format.
+    * @param {boolean} renderable - If true, only include pixel formats that can be used as render targets.
+    * @param {boolean} updatable - If true, only include formats that can be updated by the CPU.
+    * @param {boolean} filterable - If true, only include formats that support texture filtering.
+    *
+    * @returns {number} The HDR pixel format or null if there are none.
     * @ignore
     */
-  def getCullMode(): Double = js.native
-  
-  /**
-    * Queries whether depth testing is enabled.
-    *
-    * @returns {boolean} True if depth testing is enabled and false otherwise.
-    * @example
-    * var depthTest = device.getDepthTest();
-    * console.log('Depth testing is ' + depthTest ? 'enabled' : 'disabled');
-    */
-  def getDepthTest(): Boolean = js.native
-  
-  /**
-    * Queries whether writes to the depth buffer are enabled.
-    *
-    * @returns {boolean} True if depth writing is enabled and false otherwise.
-    * @example
-    * var depthWrite = device.getDepthWrite();
-    * console.log('Depth writing is ' + depthWrite ? 'enabled' : 'disabled');
-    */
-  def getDepthWrite(): Boolean = js.native
-  
-  /**
-    * Get the supported HDR pixel format.
-    * Note that for WebGL2, PIXELFORMAT_RGB16F and PIXELFORMAT_RGB32F are not renderable according to this:
-    * https://developer.mozilla.org/en-US/docs/Web/API/EXT_color_buffer_float
-    * For WebGL1, only PIXELFORMAT_RGBA16F and PIXELFORMAT_RGBA32F are tested for being renderable.
-    *
-    * @returns {number} The HDR pixel format.
-    * @ignore
-    */
-  def getHdrFormat(): Double = js.native
+  def getHdrFormat(preferLargest: Boolean, renderable: Boolean, updatable: Boolean, filterable: Boolean): Double = js.native
   
   /**
     * Query the precision supported by ints and floats in vertex and fragment shaders. Note that
@@ -439,7 +385,9 @@ open class WebglGraphicsDevice protected () extends GraphicsDevice {
   
   var glBlendEquation: js.Array[Any] = js.native
   
-  var glBlendFunction: js.Array[Any] = js.native
+  var glBlendFunctionAlpha: js.Array[Any] = js.native
+  
+  var glBlendFunctionColor: js.Array[Any] = js.native
   
   var glClearFlag: js.Array[Any] = js.native
   
@@ -468,13 +416,6 @@ open class WebglGraphicsDevice protected () extends GraphicsDevice {
     * @ignore
     */
   def initializeExtensions(): Unit = js.native
-  
-  /**
-    * Set the initial render state on the WebGL context.
-    *
-    * @ignore
-    */
-  def initializeRenderState(): Unit = js.native
   
   /**
     * Called when the WebGL context was lost. It releases all context related resources.
@@ -519,18 +460,14 @@ open class WebglGraphicsDevice protected () extends GraphicsDevice {
     */
   def readPixels(x: Double, y: Double, w: Double, h: Double, pixels: js.typedarray.ArrayBufferView): Unit = js.native
   
+  def resizeCanvas(width: Any, height: Any): Unit = js.native
+  
   /**
     * Called when the WebGL context is restored. It reinitializes all context related resources.
     *
     * @ignore
     */
   def restoreContext(): Unit = js.native
-  
-  var samples: Any = js.native
-  
-  var separateAlphaBlend: Boolean = js.native
-  
-  var separateAlphaEquation: Boolean = js.native
   
   /**
     * Enables or disables alpha to coverage (WebGL2 only).
@@ -551,150 +488,11 @@ open class WebglGraphicsDevice protected () extends GraphicsDevice {
     */
   def setBlendColor(r: Double, g: Double, b: Double, a: Double): Unit = js.native
   
-  /**
-    * Configures the blending equation. The default blend equation is {@link BLENDEQUATION_ADD}.
-    *
-    * @param {number} blendEquation - The blend equation. Can be:
-    *
-    * - {@link BLENDEQUATION_ADD}
-    * - {@link BLENDEQUATION_SUBTRACT}
-    * - {@link BLENDEQUATION_REVERSE_SUBTRACT}
-    * - {@link BLENDEQUATION_MIN}
-    * - {@link BLENDEQUATION_MAX}
-    *
-    * Note that MIN and MAX modes require either EXT_blend_minmax or WebGL2 to work (check
-    * device.extBlendMinmax).
-    */
-  def setBlendEquation(blendEquation: Double): Unit = js.native
-  
-  /**
-    * Configures the blending equation. The default blend equation is {@link BLENDEQUATION_ADD}.
-    *
-    * @param {number} blendEquation - The blend equation. Can be:
-    *
-    * - {@link BLENDEQUATION_ADD}
-    * - {@link BLENDEQUATION_SUBTRACT}
-    * - {@link BLENDEQUATION_REVERSE_SUBTRACT}
-    * - {@link BLENDEQUATION_MIN}
-    * - {@link BLENDEQUATION_MAX}
-    *
-    * Note that MIN and MAX modes require either EXT_blend_minmax or WebGL2 to work (check
-    * device.extBlendMinmax).
-    * @param {number} blendAlphaEquation - A separate blend equation for the alpha channel.
-    * Accepts same values as `blendEquation`.
-    */
-  def setBlendEquationSeparate(blendEquation: Double, blendAlphaEquation: Double): Unit = js.native
-  
-  /**
-    * Configures blending operations. Both source and destination blend modes can take the
-    * following values:
-    *
-    * - {@link BLENDMODE_ZERO}
-    * - {@link BLENDMODE_ONE}
-    * - {@link BLENDMODE_SRC_COLOR}
-    * - {@link BLENDMODE_ONE_MINUS_SRC_COLOR}
-    * - {@link BLENDMODE_DST_COLOR}
-    * - {@link BLENDMODE_ONE_MINUS_DST_COLOR}
-    * - {@link BLENDMODE_SRC_ALPHA}
-    * - {@link BLENDMODE_SRC_ALPHA_SATURATE}
-    * - {@link BLENDMODE_ONE_MINUS_SRC_ALPHA}
-    * - {@link BLENDMODE_DST_ALPHA}
-    * - {@link BLENDMODE_ONE_MINUS_DST_ALPHA}
-    * - {@link BLENDMODE_CONSTANT_COLOR}
-    * - {@link BLENDMODE_ONE_MINUS_CONSTANT_COLOR}
-    * - {@link BLENDMODE_CONSTANT_ALPHA}
-    * - {@link BLENDMODE_ONE_MINUS_CONSTANT_ALPHA}
-    *
-    * @param {number} blendSrc - The source blend function.
-    * @param {number} blendDst - The destination blend function.
-    */
-  def setBlendFunction(blendSrc: Double, blendDst: Double): Unit = js.native
-  
-  /**
-    * Configures blending operations. Both source and destination blend modes can take the
-    * following values:
-    *
-    * - {@link BLENDMODE_ZERO}
-    * - {@link BLENDMODE_ONE}
-    * - {@link BLENDMODE_SRC_COLOR}
-    * - {@link BLENDMODE_ONE_MINUS_SRC_COLOR}
-    * - {@link BLENDMODE_DST_COLOR}
-    * - {@link BLENDMODE_ONE_MINUS_DST_COLOR}
-    * - {@link BLENDMODE_SRC_ALPHA}
-    * - {@link BLENDMODE_SRC_ALPHA_SATURATE}
-    * - {@link BLENDMODE_ONE_MINUS_SRC_ALPHA}
-    * - {@link BLENDMODE_DST_ALPHA}
-    * - {@link BLENDMODE_ONE_MINUS_DST_ALPHA}
-    *
-    * @param {number} blendSrc - The source blend function.
-    * @param {number} blendDst - The destination blend function.
-    * @param {number} blendSrcAlpha - The separate source blend function for the alpha channel.
-    * @param {number} blendDstAlpha - The separate destination blend function for the alpha channel.
-    */
-  def setBlendFunctionSeparate(blendSrc: Double, blendDst: Double, blendSrcAlpha: Double, blendDstAlpha: Double): Unit = js.native
-  
-  /**
-    * Enables or disables blending.
-    *
-    * @param {boolean} blending - True to enable blending and false to disable it.
-    */
-  def setBlending(blending: Boolean): Unit = js.native
+  def setBlendState(blendState: Any): Unit = js.native
   
   def setBuffers(): Unit = js.native
   
-  /**
-    * Set the clear color used when the frame buffer is cleared.
-    *
-    * @param {number} r - The red component of the color in the range 0.0 to 1.0.
-    * @param {number} g - The green component of the color in the range 0.0 to 1.0.
-    * @param {number} b - The blue component of the color in the range 0.0 to 1.0.
-    * @param {number} a - The alpha component of the color in the range 0.0 to 1.0.
-    * @ignore
-    */
-  def setClearColor(r: Double, g: Double, b: Double, a: Double): Unit = js.native
-  
-  /**
-    * Set the depth value used when the depth buffer is cleared.
-    *
-    * @param {number} depth - The depth value to clear the depth buffer to in the range 0.0
-    * to 1.0.
-    * @ignore
-    */
-  def setClearDepth(depth: Double): Unit = js.native
-  
-  /**
-    * Set the stencil clear value used when the stencil buffer is cleared.
-    *
-    * @param {number} value - The stencil value to clear the stencil buffer to.
-    */
-  def setClearStencil(value: Double): Unit = js.native
-  
-  /**
-    * Enables or disables writes to the color buffer. Once this state is set, it persists until it
-    * is changed. By default, color writes are enabled for all color channels.
-    *
-    * @param {boolean} writeRed - True to enable writing of the red channel and false otherwise.
-    * @param {boolean} writeGreen - True to enable writing of the green channel and false otherwise.
-    * @param {boolean} writeBlue - True to enable writing of the blue channel and false otherwise.
-    * @param {boolean} writeAlpha - True to enable writing of the alpha channel and false otherwise.
-    * @example
-    * // Just write alpha into the frame buffer
-    * device.setColorWrite(false, false, false, true);
-    */
-  def setColorWrite(writeRed: Boolean, writeGreen: Boolean, writeBlue: Boolean, writeAlpha: Boolean): Unit = js.native
-  
-  /**
-    * Controls how triangles are culled based on their face direction. The default cull mode is
-    * {@link CULLFACE_BACK}.
-    *
-    * @param {number} cullMode - The cull mode to set. Can be:
-    *
-    * - {@link CULLFACE_NONE}
-    * - {@link CULLFACE_BACK}
-    * - {@link CULLFACE_FRONT}
-    * - {@link CULLFACE_FRONTANDBACK}
-    */
-  def setCullMode(cullMode: Double): Unit = js.native
+  def setCullMode(cullMode: Any): Unit = js.native
   
   /**
     * Toggles the polygon offset render state.
@@ -715,42 +513,7 @@ open class WebglGraphicsDevice protected () extends GraphicsDevice {
     */
   def setDepthBiasValues(constBias: Double, slopeBias: Double): Unit = js.native
   
-  /**
-    * Configures the depth test.
-    *
-    * @param {number} func - A function to compare a new depth value with an existing z-buffer
-    * value and decide if to write a pixel. Can be:
-    *
-    * - {@link FUNC_NEVER}: don't draw
-    * - {@link FUNC_LESS}: draw if new depth < depth buffer
-    * - {@link FUNC_EQUAL}: draw if new depth == depth buffer
-    * - {@link FUNC_LESSEQUAL}: draw if new depth <= depth buffer
-    * - {@link FUNC_GREATER}: draw if new depth > depth buffer
-    * - {@link FUNC_NOTEQUAL}: draw if new depth != depth buffer
-    * - {@link FUNC_GREATEREQUAL}: draw if new depth >= depth buffer
-    * - {@link FUNC_ALWAYS}: always draw
-    */
-  def setDepthFunc(func: Double): Unit = js.native
-  
-  /**
-    * Enables or disables depth testing of fragments. Once this state is set, it persists until it
-    * is changed. By default, depth testing is enabled.
-    *
-    * @param {boolean} depthTest - True to enable depth testing and false otherwise.
-    * @example
-    * device.setDepthTest(true);
-    */
-  def setDepthTest(depthTest: Boolean): Unit = js.native
-  
-  /**
-    * Enables or disables writes to the depth buffer. Once this state is set, it persists until it
-    * is changed. By default, depth writes are enabled.
-    *
-    * @param {boolean} writeDepth - True to enable depth writing and false otherwise.
-    * @example
-    * device.setDepthWrite(true);
-    */
-  def setDepthWrite(writeDepth: Boolean): Unit = js.native
+  def setDepthState(depthState: Any): Unit = js.native
   
   /**
     * Binds the specified framebuffer object.
@@ -788,148 +551,21 @@ open class WebglGraphicsDevice protected () extends GraphicsDevice {
     */
   def setShader(shader: Shader): Boolean = js.native
   
-  /**
-    * Configures stencil test for both front and back faces.
-    *
-    * @param {number} func - A comparison function that decides if the pixel should be written,
-    * based on the current stencil buffer value, reference value, and mask value. Can be:
-    *
-    * - {@link FUNC_NEVER}: never pass
-    * - {@link FUNC_LESS}: pass if (ref & mask) < (stencil & mask)
-    * - {@link FUNC_EQUAL}: pass if (ref & mask) == (stencil & mask)
-    * - {@link FUNC_LESSEQUAL}: pass if (ref & mask) <= (stencil & mask)
-    * - {@link FUNC_GREATER}: pass if (ref & mask) > (stencil & mask)
-    * - {@link FUNC_NOTEQUAL}: pass if (ref & mask) != (stencil & mask)
-    * - {@link FUNC_GREATEREQUAL}: pass if (ref & mask) >= (stencil & mask)
-    * - {@link FUNC_ALWAYS}: always pass
-    *
-    * @param {number} ref - Reference value used in comparison.
-    * @param {number} mask - Mask applied to stencil buffer value and reference value before
-    * comparison.
-    */
-  def setStencilFunc(func: Double, ref: Double, mask: Double): Unit = js.native
+  def setStencilFunc(func: Any, ref: Any, mask: Any): Unit = js.native
   
-  /**
-    * Configures stencil test for back faces.
-    *
-    * @param {number} func - A comparison function that decides if the pixel should be written,
-    * based on the current stencil buffer value, reference value, and mask value. Can be:
-    *
-    * - {@link FUNC_NEVER}: never pass
-    * - {@link FUNC_LESS}: pass if (ref & mask) < (stencil & mask)
-    * - {@link FUNC_EQUAL}: pass if (ref & mask) == (stencil & mask)
-    * - {@link FUNC_LESSEQUAL}: pass if (ref & mask) <= (stencil & mask)
-    * - {@link FUNC_GREATER}: pass if (ref & mask) > (stencil & mask)
-    * - {@link FUNC_NOTEQUAL}: pass if (ref & mask) != (stencil & mask)
-    * - {@link FUNC_GREATEREQUAL}: pass if (ref & mask) >= (stencil & mask)
-    * - {@link FUNC_ALWAYS}: always pass
-    *
-    * @param {number} ref - Reference value used in comparison.
-    * @param {number} mask - Mask applied to stencil buffer value and reference value before comparison.
-    */
-  def setStencilFuncBack(func: Double, ref: Double, mask: Double): Unit = js.native
+  def setStencilFuncBack(func: Any, ref: Any, mask: Any): Unit = js.native
   
-  /**
-    * Configures stencil test for front faces.
-    *
-    * @param {number} func - A comparison function that decides if the pixel should be written,
-    * based on the current stencil buffer value, reference value, and mask value. Can be:
-    *
-    * - {@link FUNC_NEVER}: never pass
-    * - {@link FUNC_LESS}: pass if (ref & mask) < (stencil & mask)
-    * - {@link FUNC_EQUAL}: pass if (ref & mask) == (stencil & mask)
-    * - {@link FUNC_LESSEQUAL}: pass if (ref & mask) <= (stencil & mask)
-    * - {@link FUNC_GREATER}: pass if (ref & mask) > (stencil & mask)
-    * - {@link FUNC_NOTEQUAL}: pass if (ref & mask) != (stencil & mask)
-    * - {@link FUNC_GREATEREQUAL}: pass if (ref & mask) >= (stencil & mask)
-    * - {@link FUNC_ALWAYS}: always pass
-    *
-    * @param {number} ref - Reference value used in comparison.
-    * @param {number} mask - Mask applied to stencil buffer value and reference value before comparison.
-    */
-  def setStencilFuncFront(func: Double, ref: Double, mask: Double): Unit = js.native
+  def setStencilFuncFront(func: Any, ref: Any, mask: Any): Unit = js.native
   
-  /**
-    * Configures how stencil buffer values should be modified based on the result of depth/stencil
-    * tests. Works for both front and back faces.
-    *
-    * @param {number} fail - Action to take if stencil test is failed. Can be:
-    *
-    * - {@link STENCILOP_KEEP}: don't change the stencil buffer value
-    * - {@link STENCILOP_ZERO}: set value to zero
-    * - {@link STENCILOP_REPLACE}: replace value with the reference value (see {@link GraphicsDevice#setStencilFunc})
-    * - {@link STENCILOP_INCREMENT}: increment the value
-    * - {@link STENCILOP_INCREMENTWRAP}: increment the value, but wrap it to zero when it's larger
-    * than a maximum representable value
-    * - {@link STENCILOP_DECREMENT}: decrement the value
-    * - {@link STENCILOP_DECREMENTWRAP}: decrement the value, but wrap it to a maximum
-    * representable value, if the current value is 0
-    * - {@link STENCILOP_INVERT}: invert the value bitwise
-    *
-    * @param {number} zfail - Action to take if depth test is failed.  Accepts the same values as
-    * `fail`.
-    * @param {number} zpass - Action to take if both depth and stencil test are passed. Accepts
-    * the same values as `fail`.
-    * @param {number} writeMask - A bit mask applied to the reference value, when written.
-    */
-  def setStencilOperation(fail: Double, zfail: Double, zpass: Double, writeMask: Double): Unit = js.native
+  def setStencilOperation(fail: Any, zfail: Any, zpass: Any, writeMask: Any): Unit = js.native
   
-  /**
-    * Configures how stencil buffer values should be modified based on the result of depth/stencil
-    * tests. Works for back faces.
-    *
-    * @param {number} fail - Action to take if stencil test is failed. Can be:
-    *
-    * - {@link STENCILOP_KEEP}: don't change the stencil buffer value
-    * - {@link STENCILOP_ZERO}: set value to zero
-    * - {@link STENCILOP_REPLACE}: replace value with the reference value (see {@link GraphicsDevice#setStencilFunc})
-    * - {@link STENCILOP_INCREMENT}: increment the value
-    * - {@link STENCILOP_INCREMENTWRAP}: increment the value, but wrap it to zero when it's larger
-    * than a maximum representable value
-    * - {@link STENCILOP_DECREMENT}: decrement the value
-    * - {@link STENCILOP_DECREMENTWRAP}: decrement the value, but wrap it to a maximum
-    * representable value, if the current value is 0
-    * - {@link STENCILOP_INVERT}: invert the value bitwise
-    *
-    * @param {number} zfail - Action to take if depth test is failed. Accepts the same values as
-    * `fail`.
-    * @param {number} zpass - Action to take if both depth and stencil test are passed. Accepts
-    * the same values as `fail`.
-    * @param {number} writeMask - A bit mask applied to the reference value, when written.
-    */
-  def setStencilOperationBack(fail: Double, zfail: Double, zpass: Double, writeMask: Double): Unit = js.native
+  def setStencilOperationBack(fail: Any, zfail: Any, zpass: Any, writeMask: Any): Unit = js.native
   
-  /**
-    * Configures how stencil buffer values should be modified based on the result of depth/stencil
-    * tests. Works for front faces.
-    *
-    * @param {number} fail - Action to take if stencil test is failed. Can be:
-    *
-    * - {@link STENCILOP_KEEP}: don't change the stencil buffer value
-    * - {@link STENCILOP_ZERO}: set value to zero
-    * - {@link STENCILOP_REPLACE}: replace value with the reference value (see {@link GraphicsDevice#setStencilFunc})
-    * - {@link STENCILOP_INCREMENT}: increment the value
-    * - {@link STENCILOP_INCREMENTWRAP}: increment the value, but wrap it to zero when it's larger
-    * than a maximum representable value
-    * - {@link STENCILOP_DECREMENT}: decrement the value
-    * - {@link STENCILOP_DECREMENTWRAP}: decrement the value, but wrap it to a maximum
-    * representable value, if the current value is 0
-    * - {@link STENCILOP_INVERT}: invert the value bitwise
-    *
-    * @param {number} zfail - Action to take if depth test is failed.  Accepts the same values as
-    * `fail`.
-    * @param {number} zpass - Action to take if both depth and stencil test are passed.  Accepts
-    * the same values as `fail`.
-    * @param {number} writeMask - A bit mask applied to the reference value, when written.
-    */
-  def setStencilOperationFront(fail: Double, zfail: Double, zpass: Double, writeMask: Double): Unit = js.native
+  def setStencilOperationFront(fail: Any, zfail: Any, zpass: Any, writeMask: Any): Unit = js.native
   
-  /**
-    * Enables or disables stencil test.
-    *
-    * @param {boolean} enable - True to enable stencil test and false to disable it.
-    */
-  def setStencilTest(enable: Boolean): Unit = js.native
+  def setStencilState(stencilFront: Any, stencilBack: Any): Unit = js.native
+  
+  def setStencilTest(enable: Any): Unit = js.native
   
   /**
     * Sets the specified texture on the specified texture unit.
@@ -952,7 +588,7 @@ open class WebglGraphicsDevice protected () extends GraphicsDevice {
     * Sets the output vertex buffer. It will be written to by a shader with transform feedback
     * varyings.
     *
-    * @param {VertexBuffer} tf - The output vertex buffer.
+    * @param {import('../vertex-buffer.js').VertexBuffer} tf - The output vertex buffer.
     * @ignore
     */
   def setTransformFeedbackBuffer(tf: VertexBuffer): Unit = js.native
@@ -984,12 +620,10 @@ open class WebglGraphicsDevice protected () extends GraphicsDevice {
     */
   def setViewport(x: Double, y: Double, w: Double, h: Double): Unit = js.native
   
-  var sh: Double = js.native
-  
   /**
     * Start a render pass.
     *
-    * @param {RenderPass} renderPass - The render pass to start.
+    * @param {import('../render-pass.js').RenderPass} renderPass - The render pass to start.
     * @ignore
     */
   def startPass(renderPass: RenderPass): Unit = js.native
@@ -1004,29 +638,33 @@ open class WebglGraphicsDevice protected () extends GraphicsDevice {
   
   var stencilFuncFront: Any = js.native
   
-  var stencilMaskBack: Double = js.native
+  var stencilMaskBack: Any = js.native
   
-  var stencilMaskFront: Double = js.native
+  var stencilMaskFront: Any = js.native
   
-  var stencilRefBack: Double = js.native
+  var stencilRefBack: Any = js.native
   
-  var stencilRefFront: Double = js.native
+  var stencilRefFront: Any = js.native
   
   var stencilWriteMaskBack: Any = js.native
   
   var stencilWriteMaskFront: Any = js.native
   
-  var stencilZfailBack: Double = js.native
+  var stencilZfailBack: Any = js.native
   
-  var stencilZfailFront: Double = js.native
+  var stencilZfailFront: Any = js.native
   
-  var stencilZpassBack: Double = js.native
+  var stencilZpassBack: Any = js.native
   
-  var stencilZpassFront: Double = js.native
+  var stencilZpassFront: Any = js.native
+  
+  var supportedExtensions: js.Array[String] = js.native
   
   var supportsAreaLights: Boolean = js.native
   
   var supportsBoneTextures: Boolean = js.native
+  
+  var supportsDepthShadow: Boolean = js.native
   
   var supportsGpuParticles: Boolean = js.native
   
@@ -1036,13 +674,7 @@ open class WebglGraphicsDevice protected () extends GraphicsDevice {
   
   var supportsMsaa: Boolean = js.native
   
-  var supportsStencil: Boolean = js.native
-  
-  var sw: Double = js.native
-  
-  var sx: Any = js.native
-  
-  var sy: Double = js.native
+  var supportsTextureFetch: Boolean = js.native
   
   /**
     * Check if high precision floating-point textures are supported.
@@ -1093,17 +725,7 @@ open class WebglGraphicsDevice protected () extends GraphicsDevice {
     */
   def updateEnd(): Unit = js.native
   
-  def updateMarker(): Unit = js.native
-  
   var vertexUniformsCount: Any = js.native
-  
-  var vh: Double = js.native
-  
-  var vw: Double = js.native
-  
-  var vx: Any = js.native
-  
-  var vy: Double = js.native
   
   /**
     * True if the WebGL context of this device is using the WebGL 2.0 API. If false, WebGL 1.0 is
@@ -1113,12 +735,4 @@ open class WebglGraphicsDevice protected () extends GraphicsDevice {
     * @ignore
     */
   var webgl2: Boolean = js.native
-  
-  var writeAlpha: Boolean = js.native
-  
-  var writeBlue: Boolean = js.native
-  
-  var writeGreen: Boolean = js.native
-  
-  var writeRed: Any = js.native
 }

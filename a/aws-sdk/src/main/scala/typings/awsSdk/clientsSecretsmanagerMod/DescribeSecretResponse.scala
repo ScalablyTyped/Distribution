@@ -52,6 +52,11 @@ trait DescribeSecretResponse extends StObject {
   var Name: js.UndefOr[SecretNameType] = js.undefined
   
   /**
+    * The next date and time that Secrets Manager will rotate the secret, rounded to the nearest hour. If the secret isn't configured for rotation, Secrets Manager returns null.
+    */
+  var NextRotationDate: js.UndefOr[js.Date] = js.undefined
+  
+  /**
     * The ID of the service that created this secret. For more information, see Secrets managed by other Amazon Web Services services.
     */
   var OwningService: js.UndefOr[OwningServiceType] = js.undefined
@@ -136,6 +141,10 @@ object DescribeSecretResponse {
     inline def setName(value: SecretNameType): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    
+    inline def setNextRotationDate(value: js.Date): Self = StObject.set(x, "NextRotationDate", value.asInstanceOf[js.Any])
+    
+    inline def setNextRotationDateUndefined: Self = StObject.set(x, "NextRotationDate", js.undefined)
     
     inline def setOwningService(value: OwningServiceType): Self = StObject.set(x, "OwningService", value.asInstanceOf[js.Any])
     

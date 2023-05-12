@@ -52,6 +52,11 @@ trait Bundle extends StObject {
   var ramSizeInGb: js.UndefOr[float] = js.undefined
   
   /**
+    * Virtual computer blueprints that are supported by a Lightsail for Research bundle.  This parameter only applies to Lightsail for Research resources. 
+    */
+  var supportedAppCategories: js.UndefOr[AppCategoryList] = js.undefined
+  
+  /**
     * The operating system platform (Linux/Unix-based or Windows Server-based) that the bundle supports. You can only launch a WINDOWS bundle on a blueprint that supports the WINDOWS platform. LINUX_UNIX blueprints require a LINUX_UNIX bundle.
     */
   var supportedPlatforms: js.UndefOr[InstancePlatformList] = js.undefined
@@ -106,6 +111,12 @@ object Bundle {
     inline def setRamSizeInGb(value: float): Self = StObject.set(x, "ramSizeInGb", value.asInstanceOf[js.Any])
     
     inline def setRamSizeInGbUndefined: Self = StObject.set(x, "ramSizeInGb", js.undefined)
+    
+    inline def setSupportedAppCategories(value: AppCategoryList): Self = StObject.set(x, "supportedAppCategories", value.asInstanceOf[js.Any])
+    
+    inline def setSupportedAppCategoriesUndefined: Self = StObject.set(x, "supportedAppCategories", js.undefined)
+    
+    inline def setSupportedAppCategoriesVarargs(value: AppCategory*): Self = StObject.set(x, "supportedAppCategories", js.Array(value*))
     
     inline def setSupportedPlatforms(value: InstancePlatformList): Self = StObject.set(x, "supportedPlatforms", value.asInstanceOf[js.Any])
     

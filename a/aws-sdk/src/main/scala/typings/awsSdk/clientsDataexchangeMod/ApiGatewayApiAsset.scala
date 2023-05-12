@@ -14,27 +14,27 @@ trait ApiGatewayApiAsset extends StObject {
   /**
     * The API endpoint of the API asset.
     */
-  var ApiEndpoint: js.UndefOr[string] = js.undefined
+  var ApiEndpoint: js.UndefOr[_String] = js.undefined
   
   /**
     * The unique identifier of the API asset.
     */
-  var ApiId: js.UndefOr[string] = js.undefined
+  var ApiId: js.UndefOr[_String] = js.undefined
   
   /**
     * The API key of the API asset.
     */
-  var ApiKey: js.UndefOr[string] = js.undefined
+  var ApiKey: js.UndefOr[_String] = js.undefined
   
   /**
     * The API name of the API asset.
     */
-  var ApiName: js.UndefOr[string] = js.undefined
+  var ApiName: js.UndefOr[_String] = js.undefined
   
   /**
     * The download URL of the API specification of the API asset.
     */
-  var ApiSpecificationDownloadUrl: js.UndefOr[string] = js.undefined
+  var ApiSpecificationDownloadUrl: js.UndefOr[_String] = js.undefined
   
   /**
     * The date and time that the upload URL expires, in ISO 8601 format.
@@ -49,7 +49,7 @@ trait ApiGatewayApiAsset extends StObject {
   /**
     * The stage of the API asset.
     */
-  var Stage: js.UndefOr[string] = js.undefined
+  var Stage: js.UndefOr[_String] = js.undefined
 }
 object ApiGatewayApiAsset {
   
@@ -65,23 +65,23 @@ object ApiGatewayApiAsset {
     
     inline def setApiDescriptionUndefined: Self = StObject.set(x, "ApiDescription", js.undefined)
     
-    inline def setApiEndpoint(value: string): Self = StObject.set(x, "ApiEndpoint", value.asInstanceOf[js.Any])
+    inline def setApiEndpoint(value: _String): Self = StObject.set(x, "ApiEndpoint", value.asInstanceOf[js.Any])
     
     inline def setApiEndpointUndefined: Self = StObject.set(x, "ApiEndpoint", js.undefined)
     
-    inline def setApiId(value: string): Self = StObject.set(x, "ApiId", value.asInstanceOf[js.Any])
+    inline def setApiId(value: _String): Self = StObject.set(x, "ApiId", value.asInstanceOf[js.Any])
     
     inline def setApiIdUndefined: Self = StObject.set(x, "ApiId", js.undefined)
     
-    inline def setApiKey(value: string): Self = StObject.set(x, "ApiKey", value.asInstanceOf[js.Any])
+    inline def setApiKey(value: _String): Self = StObject.set(x, "ApiKey", value.asInstanceOf[js.Any])
     
     inline def setApiKeyUndefined: Self = StObject.set(x, "ApiKey", js.undefined)
     
-    inline def setApiName(value: string): Self = StObject.set(x, "ApiName", value.asInstanceOf[js.Any])
+    inline def setApiName(value: _String): Self = StObject.set(x, "ApiName", value.asInstanceOf[js.Any])
     
     inline def setApiNameUndefined: Self = StObject.set(x, "ApiName", js.undefined)
     
-    inline def setApiSpecificationDownloadUrl(value: string): Self = StObject.set(x, "ApiSpecificationDownloadUrl", value.asInstanceOf[js.Any])
+    inline def setApiSpecificationDownloadUrl(value: _String): Self = StObject.set(x, "ApiSpecificationDownloadUrl", value.asInstanceOf[js.Any])
     
     inline def setApiSpecificationDownloadUrlExpiresAt(value: js.Date): Self = StObject.set(x, "ApiSpecificationDownloadUrlExpiresAt", value.asInstanceOf[js.Any])
     
@@ -93,7 +93,7 @@ object ApiGatewayApiAsset {
     
     inline def setProtocolTypeUndefined: Self = StObject.set(x, "ProtocolType", js.undefined)
     
-    inline def setStage(value: string): Self = StObject.set(x, "Stage", value.asInstanceOf[js.Any])
+    inline def setStage(value: _String): Self = StObject.set(x, "Stage", value.asInstanceOf[js.Any])
     
     inline def setStageUndefined: Self = StObject.set(x, "Stage", js.undefined)
   }

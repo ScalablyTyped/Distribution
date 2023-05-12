@@ -6,15 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `7` extends StObject {
   
-  /**
-    * Configures the appearance of the tile borders in the selected state.
-    */
-  var border: js.UndefOr[ColorWidth] = js.undefined
+  var value: js.UndefOr[js.Date | Double] = js.undefined
   
-  /**
-    * Colors tiles in the selected state.
-    */
-  var color: js.UndefOr[String] = js.undefined
+  var valueText: js.UndefOr[String] = js.undefined
 }
 object `7` {
   
@@ -26,12 +20,12 @@ object `7` {
   @scala.inline
   implicit open class MutableBuilder[Self <: `7`] (val x: Self) extends AnyVal {
     
-    inline def setBorder(value: ColorWidth): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Date | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
+    inline def setValueText(value: String): Self = StObject.set(x, "valueText", value.asInstanceOf[js.Any])
     
-    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setValueTextUndefined: Self = StObject.set(x, "valueText", js.undefined)
     
-    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

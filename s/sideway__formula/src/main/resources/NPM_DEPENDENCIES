@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@sideway/formula" : "3.0.0"
+      "@sideway/formula" : "3.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "@sideway/formula" : "3.0.0"
+      "@sideway/formula" : "3.0.1"
     }
   ],
   "compile-devDependencies" : [

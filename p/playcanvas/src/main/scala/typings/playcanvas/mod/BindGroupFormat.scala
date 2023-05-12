@@ -21,7 +21,7 @@ trait BindGroupFormat extends StObject {
     */
   def destroy(): Unit
   
-  /** @type {GraphicsDevice} */
+  /** @type {import('./graphics-device.js').GraphicsDevice} */
   var device: GraphicsDevice
   
   def getShaderDeclarationTextures(bindGroup: Any): String
@@ -33,6 +33,8 @@ trait BindGroupFormat extends StObject {
     * @returns {BindTextureFormat} - The format.
     */
   def getTexture(name: String): BindTextureFormat
+  
+  var id: Double
   
   var impl: Any
   
@@ -53,12 +55,13 @@ object BindGroupFormat {
     device: GraphicsDevice,
     getShaderDeclarationTextures: Any => String,
     getTexture: String => BindTextureFormat,
+    id: Double,
     impl: Any,
     loseContext: () => Unit,
     textureFormats: js.Array[BindTextureFormat],
     textureFormatsMap: Map[String, Double]
   ): BindGroupFormat = {
-    val __obj = js.Dynamic.literal(bufferFormats = bufferFormats.asInstanceOf[js.Any], bufferFormatsMap = bufferFormatsMap.asInstanceOf[js.Any], destroy = js.Any.fromFunction0(destroy), device = device.asInstanceOf[js.Any], getShaderDeclarationTextures = js.Any.fromFunction1(getShaderDeclarationTextures), getTexture = js.Any.fromFunction1(getTexture), impl = impl.asInstanceOf[js.Any], loseContext = js.Any.fromFunction0(loseContext), textureFormats = textureFormats.asInstanceOf[js.Any], textureFormatsMap = textureFormatsMap.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(bufferFormats = bufferFormats.asInstanceOf[js.Any], bufferFormatsMap = bufferFormatsMap.asInstanceOf[js.Any], destroy = js.Any.fromFunction0(destroy), device = device.asInstanceOf[js.Any], getShaderDeclarationTextures = js.Any.fromFunction1(getShaderDeclarationTextures), getTexture = js.Any.fromFunction1(getTexture), id = id.asInstanceOf[js.Any], impl = impl.asInstanceOf[js.Any], loseContext = js.Any.fromFunction0(loseContext), textureFormats = textureFormats.asInstanceOf[js.Any], textureFormatsMap = textureFormatsMap.asInstanceOf[js.Any])
     __obj.asInstanceOf[BindGroupFormat]
   }
   
@@ -78,6 +81,8 @@ object BindGroupFormat {
     inline def setGetShaderDeclarationTextures(value: Any => String): Self = StObject.set(x, "getShaderDeclarationTextures", js.Any.fromFunction1(value))
     
     inline def setGetTexture(value: String => BindTextureFormat): Self = StObject.set(x, "getTexture", js.Any.fromFunction1(value))
+    
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     inline def setImpl(value: Any): Self = StObject.set(x, "impl", value.asInstanceOf[js.Any])
     

@@ -1,8 +1,8 @@
 package typings.devextreme.mod.DevExpress.ui
 
 import typings.devextreme.anon.Bing
-import typings.devextreme.anon.Color
 import typings.devextreme.anon.IconSrc
+import typings.devextreme.anon.Locations
 import typings.devextreme.mod.DevExpress.ui.dxMap.ClickEvent
 import typings.devextreme.mod.DevExpress.ui.dxMap.MapProvider
 import typings.devextreme.mod.DevExpress.ui.dxMap.MapType
@@ -87,7 +87,7 @@ trait dxMapOptions
   /**
     * An array of routes shown on the map.
     */
-  var routes: js.UndefOr[js.Array[Color]] = js.undefined
+  var routes: js.UndefOr[js.Array[Locations]] = js.undefined
   
   /**
     * The type of a map to display.
@@ -167,11 +167,11 @@ object dxMapOptions {
     
     inline def setProviderUndefined: Self = StObject.set(x, "provider", js.undefined)
     
-    inline def setRoutes(value: js.Array[Color]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
+    inline def setRoutes(value: js.Array[Locations]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
     
     inline def setRoutesUndefined: Self = StObject.set(x, "routes", js.undefined)
     
-    inline def setRoutesVarargs(value: Color*): Self = StObject.set(x, "routes", js.Array(value*))
+    inline def setRoutesVarargs(value: Locations*): Self = StObject.set(x, "routes", js.Array(value*))
     
     inline def setType(value: MapType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

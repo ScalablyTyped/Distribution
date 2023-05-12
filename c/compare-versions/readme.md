@@ -1,7 +1,7 @@
 
 # Scala.js typings for compare-versions
 
-Typings are for version 5.0.1
+Typings are for version 6.0.0-rc.1
 
 ## Library description:
 Compare semver version strings to find greater, equal or lesser.

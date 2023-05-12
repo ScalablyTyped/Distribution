@@ -43,6 +43,9 @@ object distInterfacesRangeRefMod {
   
   trait RangeRefInterface extends StObject {
     
+    /**
+      * Transform the range ref's current value by an operation.
+      */
     def transform(ref: RangeRef, op: Operation): Unit
   }
   object RangeRefInterface {

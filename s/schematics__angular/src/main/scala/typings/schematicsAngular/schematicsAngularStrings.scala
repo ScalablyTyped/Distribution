@@ -1,5 +1,6 @@
 package typings.schematicsAngular
 
+import typings.schematicsAngular.thirdPartyGithubDotcomMicrosoftTypeScriptLibTypescriptMod.BufferEncoding
 import typings.schematicsAngular.thirdPartyGithubDotcomMicrosoftTypeScriptLibTypescriptMod.RefactorTriggerReason
 import typings.schematicsAngular.thirdPartyGithubDotcomMicrosoftTypeScriptLibTypescriptMod.TypeOfTag
 import typings.schematicsAngular.thirdPartyGithubDotcomMicrosoftTypeScriptLibTypescriptMod._CompletionsTriggerCharacter
@@ -96,14 +97,32 @@ object schematicsAngularStrings {
   inline def all: all = "all".asInstanceOf[all]
   
   @js.native
+  sealed trait ascii
+    extends StObject
+       with BufferEncoding
+  inline def ascii: ascii = "ascii".asInstanceOf[ascii]
+  
+  @js.native
   sealed trait auto extends StObject
   inline def auto: auto = "auto".asInstanceOf[auto]
+  
+  @js.native
+  sealed trait base64
+    extends StObject
+       with BufferEncoding
+  inline def base64: base64 = "base64".asInstanceOf[base64]
   
   @js.native
   sealed trait bigint
     extends StObject
        with TypeOfTag
   inline def bigint: bigint = "bigint".asInstanceOf[bigint]
+  
+  @js.native
+  sealed trait binary
+    extends StObject
+       with BufferEncoding
+  inline def binary: binary = "binary".asInstanceOf[binary]
   
   @js.native
   sealed trait boolean
@@ -176,6 +195,12 @@ object schematicsAngularStrings {
   inline def function: function = "function".asInstanceOf[function]
   
   @js.native
+  sealed trait hex
+    extends StObject
+       with BufferEncoding
+  inline def hex: hex = "hex".asInstanceOf[hex]
+  
+  @js.native
   sealed trait `implicit`
     extends StObject
        with RefactorTriggerReason
@@ -200,8 +225,18 @@ object schematicsAngularStrings {
   inline def js_ : js_ = "js".asInstanceOf[js_]
   
   @js.native
+  sealed trait latin1
+    extends StObject
+       with BufferEncoding
+  inline def latin1: latin1 = "latin1".asInstanceOf[latin1]
+  
+  @js.native
   sealed trait literals extends StObject
   inline def literals: literals = "literals".asInstanceOf[literals]
+  
+  @js.native
+  sealed trait lower extends StObject
+  inline def lower: lower = "lower".asInstanceOf[lower]
   
   @js.native
   sealed trait media
@@ -242,6 +277,10 @@ object schematicsAngularStrings {
   @js.native
   sealed trait on extends StObject
   inline def on: on = "on".asInstanceOf[on]
+  
+  @js.native
+  sealed trait ordinal extends StObject
+  inline def ordinal: ordinal = "ordinal".asInstanceOf[ordinal]
   
   @js.native
   sealed trait prefix extends StObject
@@ -292,8 +331,46 @@ object schematicsAngularStrings {
   inline def typesRegistry: typesRegistry = "typesRegistry".asInstanceOf[typesRegistry]
   
   @js.native
+  sealed trait `ucs-2`
+    extends StObject
+       with BufferEncoding
+  inline def `ucs-2`: `ucs-2` = "ucs-2".asInstanceOf[`ucs-2`]
+  
+  @js.native
+  sealed trait ucs2
+    extends StObject
+       with BufferEncoding
+  inline def ucs2: ucs2 = "ucs2".asInstanceOf[ucs2]
+  
+  @js.native
   sealed trait undefined
     extends StObject
        with TypeOfTag
   inline def undefined: undefined = "undefined".asInstanceOf[undefined]
+  
+  @js.native
+  sealed trait unicode extends StObject
+  inline def unicode: unicode = "unicode".asInstanceOf[unicode]
+  
+  @js.native
+  sealed trait upper extends StObject
+  inline def upper: upper = "upper".asInstanceOf[upper]
+  
+  @js.native
+  sealed trait `utf-8`
+    extends StObject
+       with BufferEncoding
+  inline def `utf-8`: `utf-8` = "utf-8".asInstanceOf[`utf-8`]
+  
+  @js.native
+  sealed trait utf16le
+    extends StObject
+       with BufferEncoding
+  inline def utf16le: utf16le = "utf16le".asInstanceOf[utf16le]
+  
+  @js.native
+  sealed trait utf8
+    extends StObject
+       with BufferEncoding
+  inline def utf8: utf8 = "utf8".asInstanceOf[utf8]
 }

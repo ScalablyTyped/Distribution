@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `200ContentApplicationjsonRepositoriesRepositoryselection` extends StObject {
   
-  /** The access the user has to each repository is included in the hash under the `permissions` key. */
+  /** @description The access the user has to each repository is included in the hash under the `permissions` key. */
   var `200`: ContentApplicationjsonRepositoriesRepositoryselection
   
   var `304`: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['responses']['not_modified'] */ js.Any

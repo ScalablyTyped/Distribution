@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "xterm-addon-web-links" : "0.8.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "xterm-addon-web-links" : "0.8.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

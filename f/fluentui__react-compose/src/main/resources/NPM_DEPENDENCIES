@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@fluentui/react-compose" : "0.19.15"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@fluentui/react-compose" : "0.19.15"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

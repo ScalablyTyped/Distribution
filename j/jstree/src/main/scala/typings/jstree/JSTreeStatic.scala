@@ -10,7 +10,6 @@ trait JSTreeStatic extends StObject {
   
   /**
     * the jstree class constructor, used only internally
-    * @private
     * @name $.jstree.core(id)
     * @param {Number} id this instance's index
     */

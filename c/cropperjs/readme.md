@@ -1,7 +1,7 @@
 
 # Scala.js typings for cropperjs
 
-Typings are for version 1.5.12
+Typings are for version 1.5.13
 
 ## Library description:
 JavaScript image cropper.

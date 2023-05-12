@@ -1,5 +1,6 @@
 package typings.expoModulesAutolinking
 
+import typings.expoModulesAutolinking.buildTypesMod.AndroidGradlePluginDescriptor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -108,6 +109,11 @@ object anon {
     var gradlePath: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /**
+      * Gradle plugins.
+      */
+    var gradlePlugins: js.UndefOr[js.Array[AndroidGradlePluginDescriptor]] = js.undefined
+    
+    /**
       * Full names (package + class name) of Kotlin native modules classes to put to the generated package provider file.
       */
     var modules: js.UndefOr[js.Array[String]] = js.undefined
@@ -133,6 +139,12 @@ object anon {
       inline def setGradlePathUndefined: Self = StObject.set(x, "gradlePath", js.undefined)
       
       inline def setGradlePathVarargs(value: String*): Self = StObject.set(x, "gradlePath", js.Array(value*))
+      
+      inline def setGradlePlugins(value: js.Array[AndroidGradlePluginDescriptor]): Self = StObject.set(x, "gradlePlugins", value.asInstanceOf[js.Any])
+      
+      inline def setGradlePluginsUndefined: Self = StObject.set(x, "gradlePlugins", js.undefined)
+      
+      inline def setGradlePluginsVarargs(value: AndroidGradlePluginDescriptor*): Self = StObject.set(x, "gradlePlugins", js.Array(value*))
       
       inline def setModules(value: js.Array[String]): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
       

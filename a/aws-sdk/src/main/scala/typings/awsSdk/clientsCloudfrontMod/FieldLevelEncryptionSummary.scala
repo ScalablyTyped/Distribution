@@ -12,7 +12,7 @@ trait FieldLevelEncryptionSummary extends StObject {
   var Comment: js.UndefOr[String] = js.undefined
   
   /**
-    *  A summary of a content type-profile mapping. 
+    * A summary of a content type-profile mapping.
     */
   var ContentTypeProfileConfig: js.UndefOr[typings.awsSdk.clientsCloudfrontMod.ContentTypeProfileConfig] = js.undefined
   
@@ -27,7 +27,7 @@ trait FieldLevelEncryptionSummary extends StObject {
   var LastModifiedTime: js.Date
   
   /**
-    *  A summary of a query argument-profile mapping. 
+    * A summary of a query argument-profile mapping.
     */
   var QueryArgProfileConfig: js.UndefOr[typings.awsSdk.clientsCloudfrontMod.QueryArgProfileConfig] = js.undefined
 }

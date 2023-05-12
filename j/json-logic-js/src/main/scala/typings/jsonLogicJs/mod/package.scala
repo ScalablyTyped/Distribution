@@ -18,7 +18,7 @@ inline def getOperator(logic: Record[String, Any]): String = ^.asInstanceOf[js.D
 
 inline def getValues(logic: Record[String, Any]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get_values")(logic.asInstanceOf[js.Any]).asInstanceOf[Any]
 
-inline def isLogic(logic: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is_logic")(logic.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+inline def isLogic(logic: Any): /* is json-logic-js.json-logic-js.RulesLogic<never> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is_logic")(logic.asInstanceOf[js.Any]).asInstanceOf[/* is json-logic-js.json-logic-js.RulesLogic<never> */ Boolean]
 
 inline def rmOperation(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("rm_operation")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
 

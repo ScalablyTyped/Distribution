@@ -12,7 +12,7 @@ trait Database extends StObject {
   var CatalogId: js.UndefOr[CatalogIdString] = js.undefined
   
   /**
-    * Creates a set of default permissions on the table for principals. 
+    * Creates a set of default permissions on the table for principals. Used by Lake Formation. Not used in the normal course of Glue operations.
     */
   var CreateTableDefaultPermissions: js.UndefOr[PrincipalPermissionsList] = js.undefined
   
@@ -25,6 +25,11 @@ trait Database extends StObject {
     * A description of the database.
     */
   var Description: js.UndefOr[DescriptionString] = js.undefined
+  
+  /**
+    * A FederatedDatabase structure that references an entity outside the Glue Data Catalog.
+    */
+  var FederatedDatabase: js.UndefOr[typings.awsSdk.clientsGlueMod.FederatedDatabase] = js.undefined
   
   /**
     * The location of the database (for example, an HDFS path).
@@ -73,6 +78,10 @@ object Database {
     inline def setDescription(value: DescriptionString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
     inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    
+    inline def setFederatedDatabase(value: FederatedDatabase): Self = StObject.set(x, "FederatedDatabase", value.asInstanceOf[js.Any])
+    
+    inline def setFederatedDatabaseUndefined: Self = StObject.set(x, "FederatedDatabase", js.undefined)
     
     inline def setLocationUri(value: URI): Self = StObject.set(x, "LocationUri", value.asInstanceOf[js.Any])
     

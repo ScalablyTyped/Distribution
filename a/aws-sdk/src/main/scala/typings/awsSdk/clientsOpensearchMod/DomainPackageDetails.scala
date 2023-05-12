@@ -47,7 +47,7 @@ trait DomainPackageDetails extends StObject {
   var PackageVersion: js.UndefOr[typings.awsSdk.clientsOpensearchMod.PackageVersion] = js.undefined
   
   /**
-    * Denotes the location of the package on the OpenSearch Service cluster nodes. It's the same as synonym_path for dictionary files.
+    * The relative path of the package on the OpenSearch Service cluster nodes. This is synonym_path when the package is for synonym files.
     */
   var ReferencePath: js.UndefOr[typings.awsSdk.clientsOpensearchMod.ReferencePath] = js.undefined
 }

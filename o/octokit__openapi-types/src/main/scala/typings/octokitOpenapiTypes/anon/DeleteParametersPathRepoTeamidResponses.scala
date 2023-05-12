@@ -7,14 +7,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteParametersPathRepoTeamidResponses extends StObject {
   
   /**
-    * **Deprecation Notice:** This endpoint route is deprecated and will be removed from the Teams API. We recommend migrating your existing code to use the new [Remove a repository from a team](https://docs.github.com/rest/reference/teams#remove-a-repository-from-a-team) endpoint.
+    * Remove a repository from a team (Legacy)
+    * @deprecated
+    * @description **Deprecation Notice:** This endpoint route is deprecated and will be removed from the Teams API. We recommend migrating your existing code to use the new [Remove a repository from a team](https://docs.github.com/rest/reference/teams#remove-a-repository-from-a-team) endpoint.
     *
     * If the authenticated user is an organization owner or a team maintainer, they can remove any repositories from the team. To remove a repository from a team as an organization member, the authenticated user must have admin access to the repository and must be able to see the team. NOTE: This does not delete the repository, it just removes it from the team.
     */
   var delete: ParametersPathRepoTeamidResponses
   
   /**
-    * **Note**: Repositories inherited through a parent team will also be checked.
+    * Check team permissions for a repository (Legacy)
+    * @deprecated
+    * @description **Note**: Repositories inherited through a parent team will also be checked.
     *
     * **Deprecation Notice:** This endpoint route is deprecated and will be removed from the Teams API. We recommend migrating your existing code to use the new [Check team permissions for a repository](https://docs.github.com/rest/reference/teams#check-team-permissions-for-a-repository) endpoint.
     *
@@ -23,21 +27,19 @@ trait DeleteParametersPathRepoTeamidResponses extends StObject {
   var get: ParametersPathRepoTeamid
   
   /**
-    * **Deprecation Notice:** This endpoint route is deprecated and will be removed from the Teams API. We recommend migrating your existing code to use the new "[Add or update team repository permissions](https://docs.github.com/rest/reference/teams#add-or-update-team-repository-permissions)" endpoint.
+    * Add or update team repository permissions (Legacy)
+    * @deprecated
+    * @description **Deprecation Notice:** This endpoint route is deprecated and will be removed from the Teams API. We recommend migrating your existing code to use the new "[Add or update team repository permissions](https://docs.github.com/rest/reference/teams#add-or-update-team-repository-permissions)" endpoint.
     *
     * To add a repository to a team or update the team's permission on a repository, the authenticated user must have admin access to the repository, and must be able to see the team. The repository must be owned by the organization, or a direct fork of a repository owned by the organization. You will get a `422 Unprocessable Entity` status if you attempt to add a repository to a team that is not owned by the organization.
     *
     * Note that, if you choose not to pass any parameters, you'll need to set `Content-Length` to zero when calling out to this endpoint. For more information, see "[HTTP verbs](https://docs.github.com/rest/overview/resources-in-the-rest-api#http-verbs)."
     */
-  var put: RequestBodyContentApplicationjson345
+  var put: Responses367
 }
 object DeleteParametersPathRepoTeamidResponses {
   
-  inline def apply(
-    delete: ParametersPathRepoTeamidResponses,
-    get: ParametersPathRepoTeamid,
-    put: RequestBodyContentApplicationjson345
-  ): DeleteParametersPathRepoTeamidResponses = {
+  inline def apply(delete: ParametersPathRepoTeamidResponses, get: ParametersPathRepoTeamid, put: Responses367): DeleteParametersPathRepoTeamidResponses = {
     val __obj = js.Dynamic.literal(delete = delete.asInstanceOf[js.Any], get = get.asInstanceOf[js.Any], put = put.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteParametersPathRepoTeamidResponses]
   }
@@ -49,6 +51,6 @@ object DeleteParametersPathRepoTeamidResponses {
     
     inline def setGet(value: ParametersPathRepoTeamid): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     
-    inline def setPut(value: RequestBodyContentApplicationjson345): Self = StObject.set(x, "put", value.asInstanceOf[js.Any])
+    inline def setPut(value: Responses367): Self = StObject.set(x, "put", value.asInstanceOf[js.Any])
   }
 }

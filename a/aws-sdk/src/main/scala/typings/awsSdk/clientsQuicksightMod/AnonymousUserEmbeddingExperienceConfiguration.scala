@@ -15,6 +15,11 @@ trait AnonymousUserEmbeddingExperienceConfiguration extends StObject {
     * The type of embedding experience. In this case, Amazon QuickSight visuals.
     */
   var DashboardVisual: js.UndefOr[AnonymousUserDashboardVisualEmbeddingConfiguration] = js.undefined
+  
+  /**
+    * The Q search bar that you want to use for anonymous user embedding.
+    */
+  var QSearchBar: js.UndefOr[AnonymousUserQSearchBarEmbeddingConfiguration] = js.undefined
 }
 object AnonymousUserEmbeddingExperienceConfiguration {
   
@@ -33,5 +38,9 @@ object AnonymousUserEmbeddingExperienceConfiguration {
     inline def setDashboardVisual(value: AnonymousUserDashboardVisualEmbeddingConfiguration): Self = StObject.set(x, "DashboardVisual", value.asInstanceOf[js.Any])
     
     inline def setDashboardVisualUndefined: Self = StObject.set(x, "DashboardVisual", js.undefined)
+    
+    inline def setQSearchBar(value: AnonymousUserQSearchBarEmbeddingConfiguration): Self = StObject.set(x, "QSearchBar", value.asInstanceOf[js.Any])
+    
+    inline def setQSearchBarUndefined: Self = StObject.set(x, "QSearchBar", js.undefined)
   }
 }

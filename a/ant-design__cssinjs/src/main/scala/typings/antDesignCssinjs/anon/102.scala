@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.Fill
+import typings.csstype.mod.Property.PaddingInlineStart
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,8 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `102` extends StObject {
   
   var value: js.UndefOr[
-    Fill | (js.Array[
-      (Extract[js.UndefOr[Fill | js.Array[NonNullable[js.UndefOr[Fill]]]], String]) | NonNullable[js.UndefOr[Fill]]
+    (PaddingInlineStart[Double | String]) | (js.Array[
+      (Extract[
+        js.UndefOr[
+          (PaddingInlineStart[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingInlineStart[Double | String]]]])
+        ], 
+        String
+      ]) | (NonNullable[js.UndefOr[PaddingInlineStart[Double | String]]])
     ])
   ] = js.native
 }

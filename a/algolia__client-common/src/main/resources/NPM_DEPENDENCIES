@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@algolia/client-common" : "4.14.2"
+      "@algolia/client-common" : "4.17.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@algolia/client-common" : "4.14.2"
+      "@algolia/client-common" : "4.17.0"
     }
   ],
   "compile-devDependencies" : [

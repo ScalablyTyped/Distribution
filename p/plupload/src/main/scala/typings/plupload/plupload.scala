@@ -40,16 +40,12 @@ object plupload {
       * before the init event is called, these features can then be used to alter the UI for the end user.
       * Some of the current features that might be in this map is: dragdrop, chunks, jpgresize, pngresize.
       *
-      * @property features
-      * @type Object
       */
     var features: Any = js.native
     
     /**
       * Current upload queue, an array of File instances.
       *
-      * @property files
-      * @type Array
       * @see plupload.File
       */
     var files: js.Array[Any] = js.native
@@ -80,8 +76,6 @@ object plupload {
     /**
       * Unique id for the Uploader instance.
       *
-      * @property id
-      * @type String
       */
     var id: String = js.native
     
@@ -111,8 +105,6 @@ object plupload {
     /**
       * Current runtime name.
       *
-      * @property runtime
-      * @type String
       */
     var runtime: String = js.native
     
@@ -132,8 +124,6 @@ object plupload {
     /**
       * Object with name/value settings.
       *
-      * @property settings
-      * @type Object
       */
     var settings: Any = js.native
     
@@ -162,8 +152,6 @@ object plupload {
       * Current state of the total uploading progress. This one can either be plupload.STARTED or plupload.STOPPED.
       * These states are controlled by the stop/start methods. The default value is STOPPED.
       *
-      * @property state
-      * @type Number
       */
     var state: Double = js.native
     
@@ -177,8 +165,6 @@ object plupload {
     /**
       * Total progess information. How many files has been uploaded, total percent etc.
       *
-      * @property total
-      * @type plupload.QueueProgress
       */
     var total: pluploadQueueProgress = js.native
     

@@ -48,6 +48,20 @@ object mod {
       killProcess: KillProcess
     ) = this()
   }
+  /* static members */
+  object Command {
+    
+    @JSImport("concurrently", "Command")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * Detects whether a command can be killed.
+      *
+      * Also works as a type guard on the input `command`.
+      */
+    inline def canKill(command: typings.concurrently.distSrcCommandMod.Command): /* is concurrently.anon.CommandpidnumberprocessCh */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("canKill")(command.asInstanceOf[js.Any]).asInstanceOf[/* is concurrently.anon.CommandpidnumberprocessCh */ Boolean]
+  }
   
   @JSImport("concurrently", "InputHandler")
   @js.native

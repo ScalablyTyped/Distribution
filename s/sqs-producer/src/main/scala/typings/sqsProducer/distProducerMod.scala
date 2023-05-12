@@ -1,8 +1,9 @@
 package typings.sqsProducer
 
-import typings.awsSdk.clientsSqsMod.SendMessageBatchResultEntryList
-import typings.awsSdk.mod.SQS
+import typings.awsSdkClientSqs.distTypesModelsModels0Mod.SendMessageBatchResultEntry
+import typings.awsSdkClientSqs.mod.SQSClient
 import typings.sqsProducer.distTypesMod.Message
+import typings.sqsProducer.distTypesMod.ProducerOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,13 +23,13 @@ object distProducerMod {
     
     var region: js.UndefOr[String] = js.native
     
-    def send(messages: String): js.Promise[SendMessageBatchResultEntryList] = js.native
-    def send(messages: js.Array[String | Message]): js.Promise[SendMessageBatchResultEntryList] = js.native
-    def send(messages: Message): js.Promise[SendMessageBatchResultEntryList] = js.native
+    def send(messages: String): js.Promise[js.Array[SendMessageBatchResultEntry]] = js.native
+    def send(messages: js.Array[String | Message]): js.Promise[js.Array[SendMessageBatchResultEntry]] = js.native
+    def send(messages: Message): js.Promise[js.Array[SendMessageBatchResultEntry]] = js.native
     
     /* private */ var sendBatch: Any = js.native
     
-    var sqs: SQS = js.native
+    var sqs: SQSClient = js.native
     
     /* private */ var validate: Any = js.native
   }
@@ -40,43 +41,5 @@ object distProducerMod {
     val ^ : js.Any = js.native
     
     inline def create(options: ProducerOptions): Producer = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[Producer]
-  }
-  
-  trait ProducerOptions extends StObject {
-    
-    var batchSize: js.UndefOr[Double] = js.undefined
-    
-    var queueUrl: js.UndefOr[String] = js.undefined
-    
-    var region: js.UndefOr[String] = js.undefined
-    
-    var sqs: js.UndefOr[SQS] = js.undefined
-  }
-  object ProducerOptions {
-    
-    inline def apply(): ProducerOptions = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[ProducerOptions]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: ProducerOptions] (val x: Self) extends AnyVal {
-      
-      inline def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
-      
-      inline def setBatchSizeUndefined: Self = StObject.set(x, "batchSize", js.undefined)
-      
-      inline def setQueueUrl(value: String): Self = StObject.set(x, "queueUrl", value.asInstanceOf[js.Any])
-      
-      inline def setQueueUrlUndefined: Self = StObject.set(x, "queueUrl", js.undefined)
-      
-      inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
-      
-      inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
-      
-      inline def setSqs(value: SQS): Self = StObject.set(x, "sqs", value.asInstanceOf[js.Any])
-      
-      inline def setSqsUndefined: Self = StObject.set(x, "sqs", js.undefined)
-    }
   }
 }

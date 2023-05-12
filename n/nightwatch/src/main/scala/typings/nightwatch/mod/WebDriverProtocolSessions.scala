@@ -1,11 +1,16 @@
 package typings.nightwatch.mod
 
-import org.scalablytyped.runtime.StringDictionary
-import typings.nightwatch.anon.Build
-import typings.nightwatch.nightwatchStrings.browser
-import typings.nightwatch.nightwatchStrings.client
-import typings.nightwatch.nightwatchStrings.driver
-import typings.nightwatch.nightwatchStrings.server
+import typings.nightwatch.anon.Downloadthroughput
+import typings.nightwatch.anon.Implicit
+import typings.nightwatch.nightwatchStrings.DELETE
+import typings.nightwatch.nightwatchStrings.GET
+import typings.nightwatch.nightwatchStrings.POST
+import typings.nightwatch.nightwatchStrings.`implicit`
+import typings.nightwatch.nightwatchStrings.delete_
+import typings.nightwatch.nightwatchStrings.get_
+import typings.nightwatch.nightwatchStrings.pageLoad
+import typings.nightwatch.nightwatchStrings.post_
+import typings.nightwatch.nightwatchStrings.script
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -31,47 +36,45 @@ trait WebDriverProtocolSessions extends StObject {
     *      console.log(result.value);
     *    });
     * }
+    *
+    * @see https://nightwatchjs.org/api/session.html#apimethod-container
     */
-  def session(): this.type = js.native
-  def session(action: String): this.type = js.native
-  def session(action: String, sessionId: String): this.type = js.native
+  def session(): Awaitable[this.type, Record[String, Any]] = js.native
+  def session(actionOrSessionId: get_ | post_ | delete_ | GET | POST | DELETE): Awaitable[this.type, Record[String, Any]] = js.native
   def session(
-    action: String,
+    actionOrSessionId: get_ | post_ | delete_ | GET | POST | DELETE,
+    callback: js.ThisFunction1[
+      /* this */ NightwatchAPI, 
+      /* result */ NightwatchCallbackResult[Record[String, Any]], 
+      Unit
+    ]
+  ): Awaitable[this.type, Record[String, Any]] = js.native
+  def session(actionOrSessionId: String): Awaitable[this.type, Record[String, Any]] = js.native
+  def session(
+    actionOrSessionId: String,
+    callback: js.ThisFunction1[
+      /* this */ NightwatchAPI, 
+      /* result */ NightwatchCallbackResult[Record[String, Any]], 
+      Unit
+    ]
+  ): Awaitable[this.type, Record[String, Any]] = js.native
+  def session(action: get_ | post_ | delete_ | GET | POST | DELETE, sessionId: String): Awaitable[this.type, Record[String, Any]] = js.native
+  def session(
+    action: get_ | post_ | delete_ | GET | POST | DELETE,
     sessionId: String,
     callback: js.ThisFunction1[
       /* this */ NightwatchAPI, 
       /* result */ NightwatchCallbackResult[Record[String, Any]], 
       Unit
     ]
-  ): this.type = js.native
+  ): Awaitable[this.type, Record[String, Any]] = js.native
   def session(
-    action: String,
-    sessionId: Unit,
     callback: js.ThisFunction1[
       /* this */ NightwatchAPI, 
       /* result */ NightwatchCallbackResult[Record[String, Any]], 
       Unit
     ]
-  ): this.type = js.native
-  def session(action: Unit, sessionId: String): this.type = js.native
-  def session(
-    action: Unit,
-    sessionId: String,
-    callback: js.ThisFunction1[
-      /* this */ NightwatchAPI, 
-      /* result */ NightwatchCallbackResult[Record[String, Any]], 
-      Unit
-    ]
-  ): this.type = js.native
-  def session(
-    action: Unit,
-    sessionId: Unit,
-    callback: js.ThisFunction1[
-      /* this */ NightwatchAPI, 
-      /* result */ NightwatchCallbackResult[Record[String, Any]], 
-      Unit
-    ]
-  ): this.type = js.native
+  ): Awaitable[this.type, Record[String, Any]] = js.native
   
   /**
     * Gets the text of the log type specified. To find out the available log types, use `.getLogTypes()`.
@@ -83,13 +86,19 @@ trait WebDriverProtocolSessions extends StObject {
     *    browser.sessionLog('client', function(result) {
     *      console.log(result.value);
     *    });
-    * }
+    *  }
+    *
+    * @see https://nightwatchjs.org/api/sessionLog.html
     */
-  def sessionLog(typeString: String): this.type = js.native
+  def sessionLog(typeString: String): Awaitable[this.type, js.Array[NightwatchLogEntry]] = js.native
   def sessionLog(
     typeString: String,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* log */ js.Array[NightwatchLogEntry], Unit]
-  ): this.type = js.native
+    callback: js.ThisFunction1[
+      /* this */ NightwatchAPI, 
+      /* result */ NightwatchCallbackResult[js.Array[NightwatchLogEntry]], 
+      Unit
+    ]
+  ): Awaitable[this.type, js.Array[NightwatchLogEntry]] = js.native
   
   /**
     * Gets an array of strings for which log types are available. This methods returns the entire WebDriver response, if you are only interested in the logs array, use `.getLogTypes()` instead.
@@ -99,16 +108,18 @@ trait WebDriverProtocolSessions extends StObject {
     *    browser.sessionLogTypes(function(result) {
     *      console.log(result.value);
     *    });
-    * }
+    *  }
+    *
+    * @see https://nightwatchjs.org/api/sessionLogTypes.html
     */
-  def sessionLogTypes(): this.type = js.native
+  def sessionLogTypes(): Awaitable[this.type, js.Array[NightwatchLogTypes]] = js.native
   def sessionLogTypes(
     callback: js.ThisFunction1[
       /* this */ NightwatchAPI, 
-      /* result */ NightwatchCallbackResult[js.Array[client | driver | browser | server]], 
+      /* result */ NightwatchCallbackResult[js.Array[NightwatchLogTypes]], 
       Unit
     ]
-  ): this.type = js.native
+  ): Awaitable[this.type, js.Array[NightwatchLogTypes]] = js.native
   
   /**
     * Returns a list of the currently active sessions.
@@ -118,16 +129,18 @@ trait WebDriverProtocolSessions extends StObject {
     *    browser.sessions(function(result) {
     *      console.log(result.value);
     *    });
-    * }
+    *  }
+    *
+    * @see https://nightwatchjs.org/api/sessions.html
     */
-  def sessions(): this.type = js.native
+  def sessions(): Awaitable[this.type, js.Array[Record[String, Any]]] = js.native
   def sessions(
     callback: js.ThisFunction1[
       /* this */ NightwatchAPI, 
       /* result */ NightwatchCallbackResult[js.Array[Record[String, Any]]], 
       Unit
     ]
-  ): this.type = js.native
+  ): Awaitable[this.type, js.Array[Record[String, Any]]] = js.native
   
   /**
     * Command to set Chrome network emulation settings.
@@ -141,25 +154,33 @@ trait WebDriverProtocolSessions extends StObject {
     *      upload_throughput: 150 * 1024
     *    });
     *  };
+    *
+    * @see https://nightwatchjs.org/api/setNetworkConditions.html
     */
-  def setNetworkConditions(spec: StringDictionary[Any]): this.type = js.native
+  def setNetworkConditions(spec: Downloadthroughput): Awaitable[this.type, Null] = js.native
   def setNetworkConditions(
-    spec: StringDictionary[Any],
+    spec: Downloadthroughput,
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
-  ): this.type = js.native
+  ): Awaitable[this.type, Null] = js.native
   
   /**
     * Query the server's current status.
+    *
+    * @see https://nightwatchjs.org/api/status.html
     */
-  def status(): this.type = js.native
+  def status(): Awaitable[this.type, NightwatchServerStatusResult] = js.native
   def status(
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Build], Unit]
-  ): this.type = js.native
+    callback: js.ThisFunction1[
+      /* this */ NightwatchAPI, 
+      /* result */ NightwatchCallbackResult[NightwatchServerStatusResult], 
+      Unit
+    ]
+  ): Awaitable[this.type, NightwatchServerStatusResult] = js.native
   
-  def timeouts(): this.type = js.native
+  def timeouts(): Awaitable[this.type, Implicit] = js.native
   def timeouts(
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
-  ): this.type = js.native
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Implicit], Unit]
+  ): Awaitable[this.type, Implicit] = js.native
   /**
     * Configure the amount of time that a particular type of operation can execute for before they are aborted and a |Timeout| error is returned to the client.
     *
@@ -168,14 +189,16 @@ trait WebDriverProtocolSessions extends StObject {
     *    browser.timeouts('script', 10000, function(result) {
     *      console.log(result);
     *    });
-    * }
+    *  }
+    *
+    * @see https://nightwatchjs.org/api/timeouts.html
     */
-  def timeouts(typeOfOperation: String, ms: Double): this.type = js.native
+  def timeouts(typeOfOperation: script | `implicit` | pageLoad, ms: Double): Awaitable[this.type, Null] = js.native
   def timeouts(
-    typeOfOperation: String,
+    typeOfOperation: script | `implicit` | pageLoad,
     ms: Double,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
-  ): this.type = js.native
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
+  ): Awaitable[this.type, Null] = js.native
   
   /**
     * Set the amount of time, in milliseconds, that asynchronous scripts executed by `.executeAsync` are permitted to run before they are aborted and a |Timeout| error is returned to the client.
@@ -185,13 +208,15 @@ trait WebDriverProtocolSessions extends StObject {
     *    browser.timeoutsAsyncScript(10000, function(result) {
     *      console.log(result);
     *    });
-    * }
+    *  }
+    *
+    * @see https://nightwatchjs.org/api/timeoutsAsyncScript.html
     */
-  def timeoutsAsyncScript(ms: Double): this.type = js.native
+  def timeoutsAsyncScript(ms: Double): Awaitable[this.type, Null] = js.native
   def timeoutsAsyncScript(
     ms: Double,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
-  ): this.type = js.native
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
+  ): Awaitable[this.type, Null] = js.native
   
   /**
     * Set the amount of time the driver should wait when searching for elements. If this command is never sent, the driver will default to an implicit wait of 0ms.
@@ -201,11 +226,13 @@ trait WebDriverProtocolSessions extends StObject {
     *    browser.timeoutsImplicitWait(10000, function(result) {
     *      console.log(result);
     *    });
-    * }
+    *  }
+    *
+    * @see https://nightwatchjs.org/api/timeoutsImplicitWait.html
     */
-  def timeoutsImplicitWait(ms: Double): this.type = js.native
+  def timeoutsImplicitWait(ms: Double): Awaitable[this.type, Null] = js.native
   def timeoutsImplicitWait(
     ms: Double,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
-  ): this.type = js.native
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Null], Unit]
+  ): Awaitable[this.type, Null] = js.native
 }

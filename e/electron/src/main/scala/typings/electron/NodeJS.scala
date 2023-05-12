@@ -4,11 +4,13 @@ import typings.electron.Electron.BlinkMemoryInfo
 import typings.electron.Electron.CPUUsage
 import typings.electron.Electron.HeapStatistics
 import typings.electron.Electron.IOCounters
+import typings.electron.Electron.ParentPort
 import typings.electron.Electron.ProcessMemoryInfo
 import typings.electron.Electron.SystemMemoryInfo
 import typings.electron.electronStrings.browser_
 import typings.electron.electronStrings.loaded
 import typings.electron.electronStrings.renderer
+import typings.electron.electronStrings.utility_
 import typings.electron.electronStrings.worker
 import typings.node.eventsMod.global.NodeJS.EventEmitter
 import org.scalablytyped.runtime.StObject
@@ -189,6 +191,12 @@ object NodeJS {
     @JSName("once")
     def once_loaded(event: loaded, listener: js.Function): this.type = js.native
     
+    /**
+      * A `Electron.ParentPort` property if this is a `UtilityProcess` (or `null`
+      * otherwise) allowing communication with the parent process.
+      */
+    var parentPort: ParentPort = js.native
+    
     @JSName("removeListener")
     def removeListener_loaded(event: loaded, listener: js.Function): this.type = js.native
     
@@ -249,9 +257,10 @@ object NodeJS {
       * * `browser` - The main process
       * * `renderer` - A renderer process
       * * `worker` - In a web worker
+      * * `utility` - In a node process launched as a service
       *
       */
-    val `type`: browser_ | renderer | worker = js.native
+    val `type`: browser_ | renderer | worker | utility_ = js.native
     
     /**
       * A `boolean`. If the app is running as a Windows Store app (appx), this property

@@ -1,5 +1,6 @@
 package typings.grpcGrpcJs
 
+import typings.grpcGrpcJs.buildSrcConstantsMod.Status
 import typings.grpcGrpcJs.buildSrcDurationMod.Duration
 import typings.grpcGrpcJs.buildSrcLoadBalancerMod.LoadBalancingConfig
 import org.scalablytyped.runtime.StObject
@@ -14,15 +15,53 @@ object buildSrcServiceConfigMod {
   
   inline def extractAndSelectServiceConfig(txtRecord: js.Array[js.Array[String]], percentage: Double): ServiceConfig | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("extractAndSelectServiceConfig")(txtRecord.asInstanceOf[js.Any], percentage.asInstanceOf[js.Any])).asInstanceOf[ServiceConfig | Null]
   
+  inline def validateRetryThrottling(obj: Any): RetryThrottling = ^.asInstanceOf[js.Dynamic].applyDynamic("validateRetryThrottling")(obj.asInstanceOf[js.Any]).asInstanceOf[RetryThrottling]
+  
   inline def validateServiceConfig(obj: Any): ServiceConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("validateServiceConfig")(obj.asInstanceOf[js.Any]).asInstanceOf[ServiceConfig]
   
+  trait HedgingPolicy extends StObject {
+    
+    var hedgingDelay: js.UndefOr[String] = js.undefined
+    
+    var maxAttempts: Double
+    
+    var nonFatalStatusCodes: js.UndefOr[js.Array[Status | String]] = js.undefined
+  }
+  object HedgingPolicy {
+    
+    inline def apply(maxAttempts: Double): HedgingPolicy = {
+      val __obj = js.Dynamic.literal(maxAttempts = maxAttempts.asInstanceOf[js.Any])
+      __obj.asInstanceOf[HedgingPolicy]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HedgingPolicy] (val x: Self) extends AnyVal {
+      
+      inline def setHedgingDelay(value: String): Self = StObject.set(x, "hedgingDelay", value.asInstanceOf[js.Any])
+      
+      inline def setHedgingDelayUndefined: Self = StObject.set(x, "hedgingDelay", js.undefined)
+      
+      inline def setMaxAttempts(value: Double): Self = StObject.set(x, "maxAttempts", value.asInstanceOf[js.Any])
+      
+      inline def setNonFatalStatusCodes(value: js.Array[Status | String]): Self = StObject.set(x, "nonFatalStatusCodes", value.asInstanceOf[js.Any])
+      
+      inline def setNonFatalStatusCodesUndefined: Self = StObject.set(x, "nonFatalStatusCodes", js.undefined)
+      
+      inline def setNonFatalStatusCodesVarargs(value: (Status | String)*): Self = StObject.set(x, "nonFatalStatusCodes", js.Array(value*))
+    }
+  }
+  
   trait MethodConfig extends StObject {
+    
+    var hedgingPolicy: js.UndefOr[HedgingPolicy] = js.undefined
     
     var maxRequestBytes: js.UndefOr[Double] = js.undefined
     
     var maxResponseBytes: js.UndefOr[Double] = js.undefined
     
     var name: js.Array[MethodConfigName]
+    
+    var retryPolicy: js.UndefOr[RetryPolicy] = js.undefined
     
     var timeout: js.UndefOr[Duration] = js.undefined
     
@@ -38,6 +77,10 @@ object buildSrcServiceConfigMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: MethodConfig] (val x: Self) extends AnyVal {
       
+      inline def setHedgingPolicy(value: HedgingPolicy): Self = StObject.set(x, "hedgingPolicy", value.asInstanceOf[js.Any])
+      
+      inline def setHedgingPolicyUndefined: Self = StObject.set(x, "hedgingPolicy", js.undefined)
+      
       inline def setMaxRequestBytes(value: Double): Self = StObject.set(x, "maxRequestBytes", value.asInstanceOf[js.Any])
       
       inline def setMaxRequestBytesUndefined: Self = StObject.set(x, "maxRequestBytes", js.undefined)
@@ -49,6 +92,10 @@ object buildSrcServiceConfigMod {
       inline def setName(value: js.Array[MethodConfigName]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
       inline def setNameVarargs(value: MethodConfigName*): Self = StObject.set(x, "name", js.Array(value*))
+      
+      inline def setRetryPolicy(value: RetryPolicy): Self = StObject.set(x, "retryPolicy", value.asInstanceOf[js.Any])
+      
+      inline def setRetryPolicyUndefined: Self = StObject.set(x, "retryPolicy", js.undefined)
       
       inline def setTimeout(value: Duration): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
@@ -84,6 +131,70 @@ object buildSrcServiceConfigMod {
     }
   }
   
+  trait RetryPolicy extends StObject {
+    
+    var backoffMultiplier: Double
+    
+    var initialBackoff: String
+    
+    var maxAttempts: Double
+    
+    var maxBackoff: String
+    
+    var retryableStatusCodes: js.Array[Status | String]
+  }
+  object RetryPolicy {
+    
+    inline def apply(
+      backoffMultiplier: Double,
+      initialBackoff: String,
+      maxAttempts: Double,
+      maxBackoff: String,
+      retryableStatusCodes: js.Array[Status | String]
+    ): RetryPolicy = {
+      val __obj = js.Dynamic.literal(backoffMultiplier = backoffMultiplier.asInstanceOf[js.Any], initialBackoff = initialBackoff.asInstanceOf[js.Any], maxAttempts = maxAttempts.asInstanceOf[js.Any], maxBackoff = maxBackoff.asInstanceOf[js.Any], retryableStatusCodes = retryableStatusCodes.asInstanceOf[js.Any])
+      __obj.asInstanceOf[RetryPolicy]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RetryPolicy] (val x: Self) extends AnyVal {
+      
+      inline def setBackoffMultiplier(value: Double): Self = StObject.set(x, "backoffMultiplier", value.asInstanceOf[js.Any])
+      
+      inline def setInitialBackoff(value: String): Self = StObject.set(x, "initialBackoff", value.asInstanceOf[js.Any])
+      
+      inline def setMaxAttempts(value: Double): Self = StObject.set(x, "maxAttempts", value.asInstanceOf[js.Any])
+      
+      inline def setMaxBackoff(value: String): Self = StObject.set(x, "maxBackoff", value.asInstanceOf[js.Any])
+      
+      inline def setRetryableStatusCodes(value: js.Array[Status | String]): Self = StObject.set(x, "retryableStatusCodes", value.asInstanceOf[js.Any])
+      
+      inline def setRetryableStatusCodesVarargs(value: (Status | String)*): Self = StObject.set(x, "retryableStatusCodes", js.Array(value*))
+    }
+  }
+  
+  trait RetryThrottling extends StObject {
+    
+    var maxTokens: Double
+    
+    var tokenRatio: Double
+  }
+  object RetryThrottling {
+    
+    inline def apply(maxTokens: Double, tokenRatio: Double): RetryThrottling = {
+      val __obj = js.Dynamic.literal(maxTokens = maxTokens.asInstanceOf[js.Any], tokenRatio = tokenRatio.asInstanceOf[js.Any])
+      __obj.asInstanceOf[RetryThrottling]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RetryThrottling] (val x: Self) extends AnyVal {
+      
+      inline def setMaxTokens(value: Double): Self = StObject.set(x, "maxTokens", value.asInstanceOf[js.Any])
+      
+      inline def setTokenRatio(value: Double): Self = StObject.set(x, "tokenRatio", value.asInstanceOf[js.Any])
+    }
+  }
+  
   trait ServiceConfig extends StObject {
     
     var loadBalancingConfig: js.Array[LoadBalancingConfig]
@@ -91,6 +202,8 @@ object buildSrcServiceConfigMod {
     var loadBalancingPolicy: js.UndefOr[String] = js.undefined
     
     var methodConfig: js.Array[MethodConfig]
+    
+    var retryThrottling: js.UndefOr[RetryThrottling] = js.undefined
   }
   object ServiceConfig {
     
@@ -113,6 +226,10 @@ object buildSrcServiceConfigMod {
       inline def setMethodConfig(value: js.Array[MethodConfig]): Self = StObject.set(x, "methodConfig", value.asInstanceOf[js.Any])
       
       inline def setMethodConfigVarargs(value: MethodConfig*): Self = StObject.set(x, "methodConfig", js.Array(value*))
+      
+      inline def setRetryThrottling(value: RetryThrottling): Self = StObject.set(x, "retryThrottling", value.asInstanceOf[js.Any])
+      
+      inline def setRetryThrottlingUndefined: Self = StObject.set(x, "retryThrottling", js.undefined)
     }
   }
   

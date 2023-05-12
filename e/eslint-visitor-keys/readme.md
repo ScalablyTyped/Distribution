@@ -1,7 +1,7 @@
 
 # Scala.js typings for eslint-visitor-keys
 
-Typings are for version 3.3.0
+Typings are for version 3.4.1
 
 ## Library description:
 Constants and utilities about visitor keys to traverse AST.

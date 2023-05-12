@@ -1,7 +1,7 @@
 
 # Scala.js typings for chevrotain__cst-dts-gen
 
-Typings are for version 10.3.0
+Typings are for version 10.5.0
 
 ## Library description:
 Generates type definitions for chevrotain CST nodes

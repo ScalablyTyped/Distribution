@@ -17,6 +17,7 @@ import typings.atlassianConnectJs.anon.Body
 import typings.atlassianConnectJs.anon.Error
 import typings.atlassianConnectJs.anon.Fields
 import typings.atlassianConnectJs.anon.FullName
+import typings.atlassianConnectJs.anon.Height
 import typings.atlassianConnectJs.anon.Jql
 import typings.atlassianConnectJs.anon.PartialDatePickerOptions
 import typings.atlassianConnectJs.anon.PartialNavigatorContext
@@ -677,12 +678,44 @@ object global {
     inline def resize(width: String, height: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resize")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
+      * Enables apps to get and set the scroll position.
+      */
+    object scrollPosition {
+      
+      @JSGlobal("AP.scrollPosition")
+      @js.native
+      val ^ : js.Any = js.native
+      
+      /**
+        * Gets the scroll position relative to the browser viewport
+        * @param callback callback to pass the scroll position
+        */
+      inline def getPosition(callback: js.Function1[/* position */ Height, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getPosition")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      
+      /**
+        * Sets the vertical scroll position relative to the iframe
+        * @param y vertical offset position
+        * @param callback callback to pass the scroll position
+        */
+      inline def setVerticalPosition(y: Double, callback: js.Function1[/* position */ Height, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setVerticalPosition")(y.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    }
+    
+    /**
       * Resize the iframe, so that it takes the entire page. Add-on may define to hide the footer using data-options.
       *
       * Note that this method is only available for general page modules.
       * @param hideFooter true if the footer is supposed to be hidden
       */
     inline def sizeToParent(hideFooter: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sizeToParent")(hideFooter.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    
+    object theming {
+      
+      @JSGlobal("AP.theming")
+      @js.native
+      val ^ : js.Any = js.native
+      
+      inline def initializeTheming(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initializeTheming")().asInstanceOf[Unit]
+    }
     
     /**
       * A JavaScript module which provides functions to interact with the user currently in session.

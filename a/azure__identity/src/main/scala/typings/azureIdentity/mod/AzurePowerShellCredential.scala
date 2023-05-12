@@ -32,4 +32,6 @@ open class AzurePowerShellCredential ()
   /* private */ var getAzurePowerShellAccessToken: Any = js.native
   
   /* private */ var tenantId: Any = js.native
+  
+  /* private */ var timeout: Any = js.native
 }

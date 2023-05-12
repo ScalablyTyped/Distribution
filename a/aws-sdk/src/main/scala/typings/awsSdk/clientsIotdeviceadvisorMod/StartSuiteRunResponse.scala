@@ -12,6 +12,11 @@ trait StartSuiteRunResponse extends StObject {
   var createdAt: js.UndefOr[js.Date] = js.undefined
   
   /**
+    * The response of an Device Advisor test endpoint.
+    */
+  var endpoint: js.UndefOr[Endpoint] = js.undefined
+  
+  /**
     * Amazon Resource Name (ARN) of the started suite run.
     */
   var suiteRunArn: js.UndefOr[AmazonResourceName] = js.undefined
@@ -34,6 +39,10 @@ object StartSuiteRunResponse {
     inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
     inline def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
+    
+    inline def setEndpoint(value: Endpoint): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
+    
+    inline def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
     
     inline def setSuiteRunArn(value: AmazonResourceName): Self = StObject.set(x, "suiteRunArn", value.asInstanceOf[js.Any])
     

@@ -36,7 +36,7 @@ trait ScriptParsedEvent extends StObject {
   var endLine: integer
   
   /**
-    * Embedder-specific auxiliary data.
+    * Embedder-specific auxiliary data likely matching {isDefault: boolean, type: 'default'|'isolated'|'worker', frameId: string}
     */
   var executionContextAuxData: js.UndefOr[Any] = js.undefined
   

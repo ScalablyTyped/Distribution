@@ -7,6 +7,12 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
+// TODO: Alias for backward compatibility, remove on next major release
+type DeepPartialOrMatcher[T] = MatchPartialArguments[T]
+
+// TODO: Alias for backward compatibility, remove on next major release
+type MatchArguments[T] = MatchExactArguments[T]
+
 type SinonFakeTimers = Clock & Restore
 
 /** NOTE: Conditional type definitions are impossible to translate to Scala.

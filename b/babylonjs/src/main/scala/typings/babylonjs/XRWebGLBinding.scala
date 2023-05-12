@@ -23,6 +23,8 @@ trait XRWebGLBinding extends StObject {
   def createQuadLayer(): XRQuadLayer = js.native
   def createQuadLayer(init: XRQuadLayerInit): XRQuadLayer = js.native
   
+  def getDepthInformation(view: XRView): js.UndefOr[XRWebGLDepthInformation] = js.native
+  
   // BABYLON addition
   def getReflectionCubeMap(lightProbe: XRLightProbe): WebGLTexture = js.native
   

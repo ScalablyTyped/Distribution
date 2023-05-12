@@ -43,6 +43,7 @@ type ExcludeUppercaseType = Boolean
   - typings.awsSdk.awsSdkStrings.`tag-key`
   - typings.awsSdk.awsSdkStrings.`tag-value`
   - typings.awsSdk.awsSdkStrings.`primary-region`
+  - typings.awsSdk.awsSdkStrings.`owning-service`
   - typings.awsSdk.awsSdkStrings.all__
   - java.lang.String
 */
@@ -69,6 +70,8 @@ type LastRotatedDateType = js.Date
 type MaxResultsType = Double
 
 type NameType = String
+
+type NextRotationDateType = js.Date
 
 type NextTokenType = String
 

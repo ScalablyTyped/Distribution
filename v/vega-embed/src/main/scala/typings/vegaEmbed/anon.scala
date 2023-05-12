@@ -145,6 +145,32 @@ object anon {
     }
   }
   
+  trait PngSvg extends StObject {
+    
+    var png: js.UndefOr[Double] = js.undefined
+    
+    var svg: js.UndefOr[Double] = js.undefined
+  }
+  object PngSvg {
+    
+    inline def apply(): PngSvg = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[PngSvg]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PngSvg] (val x: Self) extends AnyVal {
+      
+      inline def setPng(value: Double): Self = StObject.set(x, "png", value.asInstanceOf[js.Any])
+      
+      inline def setPngUndefined: Self = StObject.set(x, "png", js.undefined)
+      
+      inline def setSvg(value: Double): Self = StObject.set(x, "svg", value.asInstanceOf[js.Any])
+      
+      inline def setSvgUndefined: Self = StObject.set(x, "svg", js.undefined)
+    }
+  }
+  
   trait Svg extends StObject {
     
     var png: Boolean

@@ -22,6 +22,11 @@ trait GetAccessPointResult extends StObject {
   var Bucket: js.UndefOr[BucketName] = js.undefined
   
   /**
+    * The Amazon Web Services account ID associated with the S3 bucket associated with this access point.
+    */
+  var BucketAccountId: js.UndefOr[AccountId] = js.undefined
+  
+  /**
     * The date and time when the specified access point was created.
     */
   var CreationDate: js.UndefOr[js.Date] = js.undefined
@@ -67,6 +72,10 @@ object GetAccessPointResult {
     inline def setAliasUndefined: Self = StObject.set(x, "Alias", js.undefined)
     
     inline def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
+    
+    inline def setBucketAccountId(value: AccountId): Self = StObject.set(x, "BucketAccountId", value.asInstanceOf[js.Any])
+    
+    inline def setBucketAccountIdUndefined: Self = StObject.set(x, "BucketAccountId", js.undefined)
     
     inline def setBucketUndefined: Self = StObject.set(x, "Bucket", js.undefined)
     

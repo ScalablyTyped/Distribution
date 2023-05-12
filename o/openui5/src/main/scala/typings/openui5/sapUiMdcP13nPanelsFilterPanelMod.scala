@@ -68,7 +68,8 @@ object sapUiMdcP13nPanelsFilterPanelMod {
       *
       * **Note:**: The Panel will not handle the lifecylce of the provided factory control instance, in case
       * the row is going to be removed, the according consumer needs to decide about destroying or keeping the
-      * control instance.
+      * control instance. In addition, the `getIdForLabel` method can be used to return a focusable children
+      * control to provide the `labelFor` reference.
       *
       * @returns Value of property `itemFactory`
       */
@@ -102,7 +103,8 @@ object sapUiMdcP13nPanelsFilterPanelMod {
       *
       * **Note:**: The Panel will not handle the lifecylce of the provided factory control instance, in case
       * the row is going to be removed, the according consumer needs to decide about destroying or keeping the
-      * control instance.
+      * control instance. In addition, the `getIdForLabel` method can be used to return a focusable children
+      * control to provide the `labelFor` reference.
       *
       * When called with a value of `null` or `undefined`, the default value of the property will be restored.
       *
@@ -113,6 +115,17 @@ object sapUiMdcP13nPanelsFilterPanelMod {
       * New value for property `itemFactory`
       */
     fnItemFactory: js.Function): this.type = js.native
+    
+    /**
+      * Sets the personalization state of the panel instance.
+      *
+      * @returns The FilterPanel instance
+      */
+    /* CompleteClass */
+    override def setP13nData(/**
+      * An array containing the personalization state
+      */
+    aP13nData: js.Array[FilterItem]): this.type = js.native
   }
   /* static members */
   object default {
@@ -180,16 +193,6 @@ object sapUiMdcP13nPanelsFilterPanelMod {
       * @returns Metadata object describing this class
       */
     inline def getMetadata(): typings.openui5.sapUiCoreElementMetadataMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("getMetadata")().asInstanceOf[typings.openui5.sapUiCoreElementMetadataMod.default]
-    
-    /**
-      * Sets the personalization state of the panel instance.
-      *
-      * @returns The SortPanel instance
-      */
-    inline def setP13nData(/**
-      * An array containing the personalization state
-      */
-    aP13nData: FilterItem): FilterPanel = ^.asInstanceOf[js.Dynamic].applyDynamic("setP13nData")(aP13nData.asInstanceOf[js.Any]).asInstanceOf[FilterPanel]
   }
   
   trait FilterItem extends StObject {
@@ -243,7 +246,8 @@ object sapUiMdcP13nPanelsFilterPanelMod {
       *
       * **Note:**: The Panel will not handle the lifecylce of the provided factory control instance, in case
       * the row is going to be removed, the according consumer needs to decide about destroying or keeping the
-      * control instance.
+      * control instance. In addition, the `getIdForLabel` method can be used to return a focusable children
+      * control to provide the `labelFor` reference.
       *
       * @returns Value of property `itemFactory`
       */
@@ -260,7 +264,8 @@ object sapUiMdcP13nPanelsFilterPanelMod {
       *
       * **Note:**: The Panel will not handle the lifecylce of the provided factory control instance, in case
       * the row is going to be removed, the according consumer needs to decide about destroying or keeping the
-      * control instance.
+      * control instance. In addition, the `getIdForLabel` method can be used to return a focusable children
+      * control to provide the `labelFor` reference.
       *
       * When called with a value of `null` or `undefined`, the default value of the property will be restored.
       *
@@ -270,6 +275,16 @@ object sapUiMdcP13nPanelsFilterPanelMod {
       * New value for property `itemFactory`
       */
     fnItemFactory: js.Function): this.type
+    
+    /**
+      * Sets the personalization state of the panel instance.
+      *
+      * @returns The FilterPanel instance
+      */
+    def setP13nData(/**
+      * An array containing the personalization state
+      */
+    aP13nData: js.Array[FilterItem]): this.type
   }
   object FilterPanel {
     
@@ -278,9 +293,10 @@ object sapUiMdcP13nPanelsFilterPanelMod {
       getItemFactory: () => js.Function,
       hasOwnProperty: PropertyKey => Boolean,
       propertyIsEnumerable: PropertyKey => Boolean,
-      setItemFactory: js.Function => FilterPanel
+      setItemFactory: js.Function => FilterPanel,
+      setP13nData: js.Array[FilterItem] => FilterPanel
     ): FilterPanel = {
-      val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], getItemFactory = js.Any.fromFunction0(getItemFactory), hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), setItemFactory = js.Any.fromFunction1(setItemFactory))
+      val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], getItemFactory = js.Any.fromFunction0(getItemFactory), hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), setItemFactory = js.Any.fromFunction1(setItemFactory), setP13nData = js.Any.fromFunction1(setP13nData))
       __obj.asInstanceOf[FilterPanel]
     }
     
@@ -290,6 +306,8 @@ object sapUiMdcP13nPanelsFilterPanelMod {
       inline def setGetItemFactory(value: () => js.Function): Self = StObject.set(x, "getItemFactory", js.Any.fromFunction0(value))
       
       inline def setSetItemFactory(value: js.Function => FilterPanel): Self = StObject.set(x, "setItemFactory", js.Any.fromFunction1(value))
+      
+      inline def setSetP13nData(value: js.Array[FilterItem] => FilterPanel): Self = StObject.set(x, "setP13nData", js.Any.fromFunction1(value))
     }
   }
   
@@ -306,7 +324,8 @@ object sapUiMdcP13nPanelsFilterPanelMod {
       *
       * **Note:**: The Panel will not handle the lifecylce of the provided factory control instance, in case
       * the row is going to be removed, the according consumer needs to decide about destroying or keeping the
-      * control instance.
+      * control instance. In addition, the `getIdForLabel` method can be used to return a focusable children
+      * control to provide the `labelFor` reference.
       */
     var itemFactory: js.UndefOr[
         js.Function | PropertyBindingInfo | (/* template literal string: {${string}} */ String)

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@chainsafe/netmask" : "2.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@chainsafe/netmask" : "2.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

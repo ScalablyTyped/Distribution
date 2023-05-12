@@ -3,6 +3,8 @@ package typings.playcanvas.anon
 import typings.playcanvas.playcanvasStrings.`high-performance`
 import typings.playcanvas.playcanvasStrings.`low-power`
 import typings.playcanvas.playcanvasStrings.default
+import typings.std.WebGL2RenderingContext
+import typings.std.WebGLRenderingContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,6 +20,8 @@ trait Alpha extends StObject {
   var desynchronized: js.UndefOr[Boolean] = js.undefined
   
   var failIfMajorPerformanceCaveat: js.UndefOr[Boolean] = js.undefined
+  
+  var gl: js.UndefOr[WebGLRenderingContext | WebGL2RenderingContext] = js.undefined
   
   var powerPreference: js.UndefOr[default | `high-performance` | `low-power`] = js.undefined
   
@@ -60,6 +64,10 @@ object Alpha {
     inline def setFailIfMajorPerformanceCaveat(value: Boolean): Self = StObject.set(x, "failIfMajorPerformanceCaveat", value.asInstanceOf[js.Any])
     
     inline def setFailIfMajorPerformanceCaveatUndefined: Self = StObject.set(x, "failIfMajorPerformanceCaveat", js.undefined)
+    
+    inline def setGl(value: WebGLRenderingContext | WebGL2RenderingContext): Self = StObject.set(x, "gl", value.asInstanceOf[js.Any])
+    
+    inline def setGlUndefined: Self = StObject.set(x, "gl", js.undefined)
     
     inline def setPowerPreference(value: default | `high-performance` | `low-power`): Self = StObject.set(x, "powerPreference", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,7 @@ trait ImageRecipe extends StObject {
   var blockDeviceMappings: js.UndefOr[InstanceBlockDeviceMappings] = js.undefined
   
   /**
-    * The components of the image recipe.
+    * The components that are included in the image recipe. Recipes require a minimum of one build component, and can have a maximum of 20 build and test components in any combination.
     */
   var components: js.UndefOr[ComponentConfigurationList] = js.undefined
   

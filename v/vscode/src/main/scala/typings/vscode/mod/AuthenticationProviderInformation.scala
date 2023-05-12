@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AuthenticationProviderInformation extends StObject {
   
   /**
-    * The unique identifier of the authentication provider.
-    */
+  		 * The unique identifier of the authentication provider.
+  		 */
   val id: String
   
   /**
-    * The human-readable name of the authentication provider.
-    */
+  		 * The human-readable name of the authentication provider.
+  		 */
   val label: String
 }
 object AuthenticationProviderInformation {

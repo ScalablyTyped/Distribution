@@ -104,7 +104,7 @@ object cullingOctreesOctreeSceneComponentMod {
         * @param maxDepth defines the maximum depth to use (no more than 2 levels by default)
         * @returns the new octree
         * @see https://www.babylonjs-playground.com/#NA4OQ#12
-        * @see https://doc.babylonjs.com/how_to/optimizing_your_scene_with_octrees
+        * @see https://doc.babylonjs.com/features/featuresDeepDive/scene/optimizeOctrees
         */
       def createOrUpdateSubmeshesOctree(): Octree[SubMesh] = js.native
       def createOrUpdateSubmeshesOctree(maxCapacity: Double): Octree[SubMesh] = js.native
@@ -127,7 +127,7 @@ object cullingOctreesOctreeSceneComponentMod {
       
       /**
         * Creates or updates the octree used to boost selection (picking)
-        * @see https://doc.babylonjs.com/how_to/optimizing_your_scene_with_octrees
+        * @see https://doc.babylonjs.com/features/featuresDeepDive/scene/optimizeOctrees
         * @param maxCapacity defines the maximum capacity per leaf
         * @param maxDepth defines the maximum depth of the octree
         * @returns an octree of AbstractMesh
@@ -139,7 +139,7 @@ object cullingOctreesOctreeSceneComponentMod {
       
       /**
         * Gets the octree used to boost mesh selection (picking)
-        * @see https://doc.babylonjs.com/how_to/optimizing_your_scene_with_octrees
+        * @see https://doc.babylonjs.com/features/featuresDeepDive/scene/optimizeOctrees
         */
       var selectionOctree: Octree[AbstractMesh] = js.native
     }

@@ -6,14 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @js.native
 sealed trait TrafficModel extends StObject
-/**
-  * The assumptions to use when predicting duration in traffic. Specified as
-  * part of a <code><a href="#DirectionsRequest">DirectionsRequest</a></code>
-  * or <code><a href="#DistanceMatrixRequest">DistanceMatrixRequest</a></code>.
-  * Specify these by value, or by using the constant&#39;s name. For example,
-  * <code>'bestguess'</code> or
-  * <code>google.maps.TrafficModel.BEST_GUESS</code>.
-  */
 @JSGlobal("google.maps.TrafficModel")
 @js.native
 object TrafficModel extends StObject {

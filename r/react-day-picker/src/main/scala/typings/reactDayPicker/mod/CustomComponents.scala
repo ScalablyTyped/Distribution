@@ -40,7 +40,7 @@ trait CustomComponents extends StObject {
   var Dropdown: js.UndefOr[js.Function1[/* props */ DropdownProps, Element | Null]] = js.undefined
   
   /** The component for the table footer. */
-  var Footer: js.UndefOr[js.Function0[Element | Null]] = js.undefined
+  var Footer: js.UndefOr[js.Function1[/* props */ FooterProps, Element | Null]] = js.undefined
   
   /** The component for the table’s head. */
   var Head: js.UndefOr[js.Function0[Element | Null]] = js.undefined
@@ -93,7 +93,7 @@ object CustomComponents {
     
     inline def setDropdownUndefined: Self = StObject.set(x, "Dropdown", js.undefined)
     
-    inline def setFooter(value: () => Element | Null): Self = StObject.set(x, "Footer", js.Any.fromFunction0(value))
+    inline def setFooter(value: /* props */ FooterProps => Element | Null): Self = StObject.set(x, "Footer", js.Any.fromFunction1(value))
     
     inline def setFooterUndefined: Self = StObject.set(x, "Footer", js.undefined)
     

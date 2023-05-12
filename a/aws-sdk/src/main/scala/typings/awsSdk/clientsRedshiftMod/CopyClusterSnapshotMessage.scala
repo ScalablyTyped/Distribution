@@ -12,7 +12,7 @@ trait CopyClusterSnapshotMessage extends StObject {
   var ManualSnapshotRetentionPeriod: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
-    * The identifier of the cluster the source snapshot was created from. This parameter is required if your IAM user has a policy containing a snapshot resource element that specifies anything other than * for the cluster name. Constraints:   Must be the identifier for a valid cluster.  
+    * The identifier of the cluster the source snapshot was created from. This parameter is required if your IAM user or role has a policy containing a snapshot resource element that specifies anything other than * for the cluster name. Constraints:   Must be the identifier for a valid cluster.  
     */
   var SourceSnapshotClusterIdentifier: js.UndefOr[String] = js.undefined
   

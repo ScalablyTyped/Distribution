@@ -36,7 +36,7 @@ trait Patient
   var address: js.UndefOr[js.Array[Address]] = js.undefined
   
   /**
-    * At least an estimated year should be provided as a guess if the real DOB is unknown  There is a standard extension "patient-birthTime" available that should be used where Time is required (such as in maternity/infant care systems).
+    * Partial dates are allowed if the specific date of birth is unknown. There is a standard extension "patient-birthTime" available that should be used where Time is required (such as in maternity/infant care systems).
     */
   var birthDate: js.UndefOr[String] = js.undefined
   
@@ -103,7 +103,7 @@ trait Patient
   var multipleBirthInteger: js.UndefOr[Double] = js.undefined
   
   /**
-    * A patient may have multiple names with different uses or applicable periods. For animals, the name is a "HumanName" in the sense that is assigned and used by humans and has the same patterns.
+    * A patient may have multiple names with different uses or applicable periods. For animals, the name is a "HumanName" in the sense that is assigned and used by humans and has the same patterns. Animal names may be communicated as given names, and optionally may include a family name.
     */
   var name: js.UndefOr[js.Array[HumanName]] = js.undefined
   

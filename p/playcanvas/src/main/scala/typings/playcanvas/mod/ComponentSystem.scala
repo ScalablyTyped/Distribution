@@ -1,13 +1,10 @@
 package typings.playcanvas.mod
 
-import typings.playcanvas.anon.Name
+import typings.playcanvas.anon.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** @typedef {import('../app-base.js').AppBase} AppBase */
-/** @typedef {import('./component.js').Component} Component */
-/** @typedef {import('../entity.js').Entity} Entity */
 /**
   * Component Systems contain the logic and functionality to update all Components of a particular
   * type.
@@ -20,18 +17,19 @@ open class ComponentSystem protected () extends EventHandler {
   /**
     * Create a new ComponentSystem instance.
     *
-    * @param {AppBase} app - The application managing this system.
+    * @param {import('../app-base.js').AppBase} app - The application managing this system.
     */
   def this(app: AppBase) = this()
   
   /**
     * Create new {@link Component} and component data instances and attach them to the entity.
     *
-    * @param {Entity} entity - The Entity to attach this component to.
+    * @param {import('../entity.js').Entity} entity - The Entity to attach this component to.
     * @param {object} [data] - The source data with which to create the component.
-    * @returns {Component} Returns a Component of type defined by the component system.
+    * @returns {import('./component.js').Component} Returns a Component of type defined by the
+    * component system.
     * @example
-    * var entity = new pc.Entity(app);
+    * const entity = new pc.Entity(app);
     * app.systems.model.addComponent(entity, { type: 'box' });
     * // entity.model is now set to a pc.ModelComponent
     * @ignore
@@ -44,9 +42,9 @@ open class ComponentSystem protected () extends EventHandler {
   /**
     * Create a clone of component. This creates a copy of all component data variables.
     *
-    * @param {Entity} entity - The entity to clone the component from.
-    * @param {Entity} clone - The entity to clone the component into.
-    * @returns {Component} The newly cloned component.
+    * @param {import('../entity.js').Entity} entity - The entity to clone the component from.
+    * @param {import('../entity.js').Entity} clone - The entity to clone the component into.
+    * @returns {import('./component.js').Component} The newly cloned component.
     * @ignore
     */
   def cloneComponent(entity: Entity, clone: Entity): Component = js.native
@@ -67,18 +65,19 @@ open class ComponentSystem protected () extends EventHandler {
     * store. This can be overridden by derived Component Systems and either called by the derived
     * System or replaced entirely.
     *
-    * @param {Component} component - The component being initialized.
+    * @param {import('./component.js').Component} component - The component being initialized.
     * @param {object} data - The data block used to initialize the component.
-    * @param {Array<string | {name: string, type: string}>} properties - The array of property descriptors for the component.
-    * A descriptor can be either a plain property name, or an object specifying the name and type.
+    * @param {Array<string | {name: string, type: string}>} properties - The array of property
+    * descriptors for the component. A descriptor can be either a plain property name, or an
+    * object specifying the name and type.
     * @ignore
     */
-  def initializeComponentData(component: Component, data: js.Object, properties: js.Array[String | Name]): Unit = js.native
+  def initializeComponentData(component: Component, data: js.Object, properties: js.Array[String | Type]): Unit = js.native
   
   /**
     * Remove the {@link Component} from the entity and delete the associated component data.
     *
-    * @param {Entity} entity - The entity to remove the component from.
+    * @param {import('../entity.js').Entity} entity - The entity to remove the component from.
     * @example
     * app.systems.model.removeComponent(entity);
     * // entity.model === undefined

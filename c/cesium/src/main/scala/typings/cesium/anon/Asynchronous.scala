@@ -6,7 +6,7 @@ import typings.cesium.mod.Cesium3DTileContent
 import typings.cesium.mod.ClassificationType
 import typings.cesium.mod.ClippingPlaneCollection
 import typings.cesium.mod.ColorBlendMode
-import typings.cesium.mod.CustomShader
+import typings.cesium.mod.Credit
 import typings.cesium.mod.DistanceDisplayCondition
 import typings.cesium.mod.HeightReference
 import typings.cesium.mod.ImageBasedLighting
@@ -42,11 +42,11 @@ trait Asynchronous extends StObject {
   
   var content: js.UndefOr[Cesium3DTileContent] = js.undefined
   
-  var credit: js.UndefOr[typings.cesium.mod.Credit | String] = js.undefined
+  var credit: js.UndefOr[Credit | String] = js.undefined
   
   var cull: js.UndefOr[Boolean] = js.undefined
   
-  var customShader: js.UndefOr[CustomShader] = js.undefined
+  var customShader: js.UndefOr[typings.cesium.mod.CustomShader] = js.undefined
   
   var debugShowBoundingVolume: js.UndefOr[Boolean] = js.undefined
   
@@ -166,7 +166,7 @@ object Asynchronous {
     
     inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
-    inline def setCredit(value: typings.cesium.mod.Credit | String): Self = StObject.set(x, "credit", value.asInstanceOf[js.Any])
+    inline def setCredit(value: Credit | String): Self = StObject.set(x, "credit", value.asInstanceOf[js.Any])
     
     inline def setCreditUndefined: Self = StObject.set(x, "credit", js.undefined)
     
@@ -174,7 +174,7 @@ object Asynchronous {
     
     inline def setCullUndefined: Self = StObject.set(x, "cull", js.undefined)
     
-    inline def setCustomShader(value: CustomShader): Self = StObject.set(x, "customShader", value.asInstanceOf[js.Any])
+    inline def setCustomShader(value: typings.cesium.mod.CustomShader): Self = StObject.set(x, "customShader", value.asInstanceOf[js.Any])
     
     inline def setCustomShaderUndefined: Self = StObject.set(x, "customShader", js.undefined)
     

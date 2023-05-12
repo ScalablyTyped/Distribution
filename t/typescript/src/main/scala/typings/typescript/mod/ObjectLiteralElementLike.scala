@@ -4,6 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/** Unlike ObjectLiteralElement, excludes JSXAttribute and JSXSpreadAttribute. */
 /* Rewritten from type alias, can be one of: 
   - typings.typescript.mod.PropertyAssignment
   - typings.typescript.mod.ShorthandPropertyAssignment

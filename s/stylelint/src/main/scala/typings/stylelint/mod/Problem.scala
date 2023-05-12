@@ -7,25 +7,28 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+	 * A lint problem.
+	 */
 trait Problem extends StObject {
   
   /**
-  			 * The exclusive end position of the problem, relative to the
-  			 * node's source text. If provided, this will be used instead of
-  			 * `endIndex`.
-  			 */
+  		 * The exclusive end position of the problem, relative to the
+  		 * node's source text. If provided, this will be used instead of
+  		 * `endIndex`.
+  		 */
   var end: js.UndefOr[Line] = js.undefined
   
   /**
-  			 * The exclusive end index of the problem, relative to the node's
-  			 * source text.
-  			 */
+  		 * The exclusive end index of the problem, relative to the node's
+  		 * source text.
+  		 */
   var endIndex: js.UndefOr[Double] = js.undefined
   
   /**
-  			 * The inclusive start index of the problem, relative to the node's
-  			 * source text.
-  			 */
+  		 * The inclusive start index of the problem, relative to the node's
+  		 * source text.
+  		 */
   var index: js.UndefOr[Double] = js.undefined
   
   var line: js.UndefOr[Double] = js.undefined
@@ -41,15 +44,15 @@ trait Problem extends StObject {
   var ruleName: String
   
   /**
-  			 * Optional severity override for the problem.
-  			 */
+  		 * Optional severity override for the problem.
+  		 */
   var severity: js.UndefOr[Severity] = js.undefined
   
   /**
-  			 * The inclusive start position of the problem, relative to the
-  			 * node's source text. If provided, this will be used instead of
-  			 * `index`.
-  			 */
+  		 * The inclusive start position of the problem, relative to the
+  		 * node's source text. If provided, this will be used instead of
+  		 * `index`.
+  		 */
   var start: js.UndefOr[Line] = js.undefined
   
   var word: js.UndefOr[String] = js.undefined

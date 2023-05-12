@@ -29,11 +29,14 @@ object RequestScheduler {
   inline def maximumRequests_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("maximumRequests")(x.asInstanceOf[js.Any])
   
   /**
-    * A per server key list of overrides to use for throttling instead of <code>maximumRequestsPerServer</code>
+    * A per server key list of overrides to use for throttling instead of <code>maximumRequestsPerServer</code>.
+    * Useful when streaming data from a known HTTP/2 or HTTP/3 server.
+    * @example
+    * RequestScheduler.requestsByServer["myserver.com:443"] = 18;
     * @example
     * RequestScheduler.requestsByServer = {
-    *   'api.cesium.com:443': 18,
-    *   'assets.cesium.com:443': 18
+    *   "api.cesium.com:443": 18,
+    *   "assets.cesium.com:443": 18,
     * };
     */
   @JSImport("cesium", "RequestScheduler.requestsByServer")

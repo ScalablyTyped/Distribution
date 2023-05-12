@@ -27,7 +27,7 @@ trait CanonicalPath extends StObject {
   var $select: js.UndefOr[String | js.Array[String]] = js.undefined
   
   /**
-    * Whether a binding relative to a {@link sap.ui.model.odata.v4.Context} uses the canonical path computed
+    * Whether a binding relative to an {@link sap.ui.model.odata.v4.Context} uses the canonical path computed
     * from its context's path for data service requests; only the value `true` is allowed.
     */
   @JSName("$$canonicalPath")

@@ -5,30 +5,18 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RaiseAction[TEvent /* <: EventObject */] extends StObject {
+@js.native
+trait RaiseAction[TContext, TExpressionEvent /* <: EventObject */, TEvent /* <: EventObject */]
+  extends StObject
+     with ActionObject[TContext, TExpressionEvent, TEvent, BaseActionObject]
+     with _BaseAction[TContext, TExpressionEvent, Any, TEvent] {
   
-  var event: /* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any
+  var delay: js.UndefOr[Double | String | (DelayExpr[TContext, TExpressionEvent])] = js.native
   
-  var `type`: Raise
-}
-object RaiseAction {
+  var event: TEvent | (SendExpr[TContext, TExpressionEvent, TEvent]) = js.native
   
-  inline def apply[TEvent /* <: EventObject */](
-    event: /* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any,
-    `type`: Raise
-  ): RaiseAction[TEvent] = {
-    val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[RaiseAction[TEvent]]
-  }
+  var id: js.UndefOr[String | Double] = js.native
   
-  @scala.inline
-  implicit open class MutableBuilder[Self <: RaiseAction[?], TEvent /* <: EventObject */] (val x: Self & RaiseAction[TEvent]) extends AnyVal {
-    
-    inline def setEvent(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any
-    ): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
-    
-    inline def setType(value: Raise): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-  }
+  @JSName("type")
+  var type_RaiseAction: Raise = js.native
 }

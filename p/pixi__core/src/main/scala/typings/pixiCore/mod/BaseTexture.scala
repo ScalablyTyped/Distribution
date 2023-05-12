@@ -13,15 +13,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param {PIXI.Resource|HTMLImageElement|HTMLVideoElement|ImageBitmap|ICanvas|string} [resource=null] -
   *        The current resource to use, for things that aren't Resource objects, will be converted
   *        into a Resource.
-  * @param options - Collection of options
-  * @param {PIXI.MIPMAP_MODES} [options.mipmap=PIXI.settings.MIPMAP_TEXTURES] - If mipmapping is enabled for texture
-  * @param {number} [options.anisotropicLevel=PIXI.settings.ANISOTROPIC_LEVEL] - Anisotropic filtering level of texture
-  * @param {PIXI.WRAP_MODES} [options.wrapMode=PIXI.settings.WRAP_MODE] - Wrap mode for textures
-  * @param {PIXI.SCALE_MODES} [options.scaleMode=PIXI.settings.SCALE_MODE] - Default scale mode, linear, nearest
-  * @param {PIXI.FORMATS} [options.format=PIXI.FORMATS.RGBA] - GL format type
-  * @param {PIXI.TYPES} [options.type=PIXI.TYPES.UNSIGNED_BYTE] - GL data type
-  * @param {PIXI.TARGETS} [options.target=PIXI.TARGETS.TEXTURE_2D] - GL texture target
-  * @param {PIXI.ALPHA_MODES} [options.alphaMode=PIXI.ALPHA_MODES.UNPACK] - Pre multiply the image alpha
+  * @param options - Collection of options, default options inherited from {@link PIXI.BaseTexture.defaultOptions}.
+  * @param {PIXI.MIPMAP_MODES} [options.mipmap] - If mipmapping is enabled for texture
+  * @param {number} [options.anisotropicLevel] - Anisotropic filtering level of texture
+  * @param {PIXI.WRAP_MODES} [options.wrapMode] - Wrap mode for textures
+  * @param {PIXI.SCALE_MODES} [options.scaleMode] - Default scale mode, linear, nearest
+  * @param {PIXI.FORMATS} [options.format] - GL format type
+  * @param {PIXI.TYPES} [options.type] - GL data type
+  * @param {PIXI.TARGETS} [options.target] - GL texture target
+  * @param {PIXI.ALPHA_MODES} [options.alphaMode] - Pre multiply the image alpha
   * @param {number} [options.width=0] - Width of the texture
   * @param {number} [options.height=0] - Height of the texture
   * @param {number} [options.resolution=PIXI.settings.RESOLUTION] - Resolution of the base texture
@@ -60,6 +60,17 @@ object BaseTexture {
     baseTexture: typings.pixiCore.libTexturesBaseTextureMod.BaseTexture[typings.pixiCore.libTexturesResourcesResourceMod.Resource, IAutoDetectOptions],
     id: String
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addToCache")(baseTexture.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  /**
+    * Default options used when creating BaseTexture objects.
+    * @static
+    * @memberof PIXI.BaseTexture
+    * @type {PIXI.IBaseTextureOptions}
+    */
+  @JSImport("@pixi/core", "BaseTexture.defaultOptions")
+  @js.native
+  def defaultOptions: IBaseTextureOptions[Any] = js.native
+  inline def defaultOptions_=(x: IBaseTextureOptions[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultOptions")(x.asInstanceOf[js.Any])
   
   inline def from[R /* <: typings.pixiCore.libTexturesResourcesResourceMod.Resource */, RO](source: String): typings.pixiCore.libTexturesBaseTextureMod.BaseTexture[R, IAutoDetectOptions] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any]).asInstanceOf[typings.pixiCore.libTexturesBaseTextureMod.BaseTexture[R, IAutoDetectOptions]]
   inline def from[R /* <: typings.pixiCore.libTexturesResourcesResourceMod.Resource */, RO](source: String, options: Unit, strict: Boolean): typings.pixiCore.libTexturesBaseTextureMod.BaseTexture[R, IAutoDetectOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[typings.pixiCore.libTexturesBaseTextureMod.BaseTexture[R, IAutoDetectOptions]]

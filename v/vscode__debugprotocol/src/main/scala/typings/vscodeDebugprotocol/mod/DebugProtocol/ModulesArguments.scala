@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Arguments for `modules` request. */
 trait ModulesArguments extends StObject {
   
-  /** The number of modules to return. If moduleCount is not specified or 0, all modules are returned. */
+  /** The number of modules to return. If `moduleCount` is not specified or 0, all modules are returned. */
   var moduleCount: js.UndefOr[Double] = js.undefined
   
   /** The index of the first module to return; if omitted modules start at 0. */

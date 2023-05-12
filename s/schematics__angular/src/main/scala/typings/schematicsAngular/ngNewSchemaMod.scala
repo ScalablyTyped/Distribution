@@ -1,5 +1,6 @@
 package typings.schematicsAngular
 
+import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -102,7 +103,9 @@ object ngNewSchemaMod {
     /* "ShadowDom" */ val ShadowDom: typings.schematicsAngular.ngNewSchemaMod.ViewEncapsulation.ShadowDom & String = js.native
   }
   
-  trait CommitObject extends StObject {
+  trait CommitObject
+    extends StObject
+       with /* property */ StringDictionary[Any] {
     
     var email: String
     
@@ -214,6 +217,11 @@ object ngNewSchemaMod {
     var skipTests: js.UndefOr[Boolean] = js.undefined
     
     /**
+      * Creates an application based upon the standalone API, without NgModules.
+      */
+    var standalone: js.UndefOr[Boolean] = js.undefined
+    
+    /**
       * Creates a workspace with stricter type checking and stricter bundle budgets settings.
       * This setting helps improve maintainability and catch bugs ahead of time. For more
       * information, see https://angular.io/guide/strict-mode
@@ -302,6 +310,10 @@ object ngNewSchemaMod {
       inline def setSkipTests(value: Boolean): Self = StObject.set(x, "skipTests", value.asInstanceOf[js.Any])
       
       inline def setSkipTestsUndefined: Self = StObject.set(x, "skipTests", js.undefined)
+      
+      inline def setStandalone(value: Boolean): Self = StObject.set(x, "standalone", value.asInstanceOf[js.Any])
+      
+      inline def setStandaloneUndefined: Self = StObject.set(x, "standalone", js.undefined)
       
       inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
       

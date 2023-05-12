@@ -315,17 +315,11 @@ object typesTransactionMod {
   
   trait TransactionMetadata extends StObject {
     
-    /** Metadata representing information about transaction name changes  */
-    var changes: js.Array[TransactionNameChange]
-    
     /**
       * The Dynamic Sampling Context of a transaction. If provided during transaction creation, its Dynamic Sampling
       * Context Will be frozen
       */
     var dynamicSamplingContext: js.UndefOr[PartialDynamicSamplingCon] = js.undefined
-    
-    /** The total number of propagations that happened */
-    var propagations: Double
     
     /** For transactions tracing server-side request handling, the request being tracked. */
     var request: js.UndefOr[PolymorphicRequest] = js.undefined
@@ -351,28 +345,17 @@ object typesTransactionMod {
   }
   object TransactionMetadata {
     
-    inline def apply(
-      changes: js.Array[TransactionNameChange],
-      propagations: Double,
-      source: TransactionSource,
-      spanMetadata: StringDictionary[StringDictionary[Any]]
-    ): TransactionMetadata = {
-      val __obj = js.Dynamic.literal(changes = changes.asInstanceOf[js.Any], propagations = propagations.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], spanMetadata = spanMetadata.asInstanceOf[js.Any])
+    inline def apply(source: TransactionSource, spanMetadata: StringDictionary[StringDictionary[Any]]): TransactionMetadata = {
+      val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], spanMetadata = spanMetadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[TransactionMetadata]
     }
     
     @scala.inline
     implicit open class MutableBuilder[Self <: TransactionMetadata] (val x: Self) extends AnyVal {
       
-      inline def setChanges(value: js.Array[TransactionNameChange]): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
-      
-      inline def setChangesVarargs(value: TransactionNameChange*): Self = StObject.set(x, "changes", js.Array(value*))
-      
       inline def setDynamicSamplingContext(value: PartialDynamicSamplingCon): Self = StObject.set(x, "dynamicSamplingContext", value.asInstanceOf[js.Any])
       
       inline def setDynamicSamplingContextUndefined: Self = StObject.set(x, "dynamicSamplingContext", js.undefined)
-      
-      inline def setPropagations(value: Double): Self = StObject.set(x, "propagations", value.asInstanceOf[js.Any])
       
       inline def setRequest(value: PolymorphicRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       
@@ -393,38 +376,6 @@ object typesTransactionMod {
       inline def setSource(value: TransactionSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
       inline def setSpanMetadata(value: StringDictionary[StringDictionary[Any]]): Self = StObject.set(x, "spanMetadata", value.asInstanceOf[js.Any])
-    }
-  }
-  
-  trait TransactionNameChange extends StObject {
-    
-    /** Number of propagations since start of transaction */
-    var propagations: Double
-    
-    /** Previous source before transaction name change */
-    var source: TransactionSource
-    
-    /**
-      * Unix timestamp when the name was changed. Same type as the start and
-      * end timestamps of a transaction and span.
-      */
-    var timestamp: Double
-  }
-  object TransactionNameChange {
-    
-    inline def apply(propagations: Double, source: TransactionSource, timestamp: Double): TransactionNameChange = {
-      val __obj = js.Dynamic.literal(propagations = propagations.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
-      __obj.asInstanceOf[TransactionNameChange]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: TransactionNameChange] (val x: Self) extends AnyVal {
-      
-      inline def setPropagations(value: Double): Self = StObject.set(x, "propagations", value.asInstanceOf[js.Any])
-      
-      inline def setSource(value: TransactionSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
-      
-      inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     }
   }
   

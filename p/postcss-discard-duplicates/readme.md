@@ -1,7 +1,7 @@
 
 # Scala.js typings for postcss-discard-duplicates
 
-Typings are for version 5.1.0
+Typings are for version 6.0.0
 
 ## Library description:
 Discard duplicate rules in your CSS files with PostCSS.

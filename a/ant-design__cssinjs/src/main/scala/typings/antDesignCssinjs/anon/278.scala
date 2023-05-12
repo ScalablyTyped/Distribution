@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.MsWrapFlow
+import typings.csstype.mod.Property.AlignmentBaseline
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,8 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `278` extends StObject {
   
   var value: js.UndefOr[
-    MsWrapFlow | (js.Array[
-      (Extract[js.UndefOr[MsWrapFlow | js.Array[NonNullable[js.UndefOr[MsWrapFlow]]]], String]) | NonNullable[js.UndefOr[MsWrapFlow]]
+    AlignmentBaseline | (js.Array[
+      (Extract[
+        js.UndefOr[AlignmentBaseline | js.Array[NonNullable[js.UndefOr[AlignmentBaseline]]]], 
+        String
+      ]) | NonNullable[js.UndefOr[AlignmentBaseline]]
     ])
   ] = js.native
 }

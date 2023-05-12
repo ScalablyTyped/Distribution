@@ -10,8 +10,6 @@ trait CoverageClass
   
   var _name: js.UndefOr[Element] = js.undefined
   
-  var _value: js.UndefOr[Element] = js.undefined
-  
   /**
     * A short description for the class.
     */
@@ -25,11 +23,11 @@ trait CoverageClass
   /**
     * For example, the Group or Plan number.
     */
-  var value: String
+  var value: Identifier
 }
 object CoverageClass {
   
-  inline def apply(`type`: CodeableConcept, value: String): CoverageClass = {
+  inline def apply(`type`: CodeableConcept, value: Identifier): CoverageClass = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CoverageClass]
@@ -44,14 +42,10 @@ object CoverageClass {
     
     inline def setType(value: CodeableConcept): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Identifier): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     inline def set_name(value: Element): Self = StObject.set(x, "_name", value.asInstanceOf[js.Any])
     
     inline def set_nameUndefined: Self = StObject.set(x, "_name", js.undefined)
-    
-    inline def set_value(value: Element): Self = StObject.set(x, "_value", value.asInstanceOf[js.Any])
-    
-    inline def set_valueUndefined: Self = StObject.set(x, "_value", js.undefined)
   }
 }

@@ -15,12 +15,12 @@ trait ManagedBlockchain extends Service {
   var config_ManagedBlockchain: ConfigBase & ClientConfiguration = js.native
   
   /**
-    *  The token based access feature is in preview release for Ethereum on Amazon Managed Blockchain and is subject to change. We recommend that you use this feature only with test scenarios, and not in production environments.  Creates a new accessor for use with Managed Blockchain Ethereum nodes. An accessor object is a container that has the information required for token based access to your Ethereum nodes.
+    * Creates a new accessor for use with Managed Blockchain Ethereum nodes. An accessor contains information required for token based access to your Ethereum nodes.
     */
   def createAccessor(): Request[CreateAccessorOutput, AWSError] = js.native
   def createAccessor(callback: js.Function2[/* err */ AWSError, /* data */ CreateAccessorOutput, Unit]): Request[CreateAccessorOutput, AWSError] = js.native
   /**
-    *  The token based access feature is in preview release for Ethereum on Amazon Managed Blockchain and is subject to change. We recommend that you use this feature only with test scenarios, and not in production environments.  Creates a new accessor for use with Managed Blockchain Ethereum nodes. An accessor object is a container that has the information required for token based access to your Ethereum nodes.
+    * Creates a new accessor for use with Managed Blockchain Ethereum nodes. An accessor contains information required for token based access to your Ethereum nodes.
     */
   def createAccessor(params: CreateAccessorInput): Request[CreateAccessorOutput, AWSError] = js.native
   def createAccessor(
@@ -85,12 +85,12 @@ trait ManagedBlockchain extends Service {
   ): Request[CreateProposalOutput, AWSError] = js.native
   
   /**
-    *  The token based access feature is in preview release for Ethereum on Amazon Managed Blockchain and is subject to change. We recommend that you use this feature only with test scenarios, and not in production environments.  Deletes an accessor that your Amazon Web Services account owns. An accessor object is a container that has the information required for token based access to your Ethereum nodes including, the BILLING_TOKEN. After an accessor is deleted, the status of the accessor changes from AVAILABLE to PENDING_DELETION. An accessor in the PENDING_DELETION state can’t be used for new WebSocket requests or HTTP requests. However, WebSocket connections that were initiated while the accessor was in the AVAILABLE state remain open until they expire (up to 2 hours).
+    * Deletes an accessor that your Amazon Web Services account owns. An accessor object is a container that has the information required for token based access to your Ethereum nodes including, the BILLING_TOKEN. After an accessor is deleted, the status of the accessor changes from AVAILABLE to PENDING_DELETION. An accessor in the PENDING_DELETION state can’t be used for new WebSocket requests or HTTP requests. However, WebSocket connections that were initiated while the accessor was in the AVAILABLE state remain open until they expire (up to 2 hours).
     */
   def deleteAccessor(): Request[DeleteAccessorOutput, AWSError] = js.native
   def deleteAccessor(callback: js.Function2[/* err */ AWSError, /* data */ DeleteAccessorOutput, Unit]): Request[DeleteAccessorOutput, AWSError] = js.native
   /**
-    *  The token based access feature is in preview release for Ethereum on Amazon Managed Blockchain and is subject to change. We recommend that you use this feature only with test scenarios, and not in production environments.  Deletes an accessor that your Amazon Web Services account owns. An accessor object is a container that has the information required for token based access to your Ethereum nodes including, the BILLING_TOKEN. After an accessor is deleted, the status of the accessor changes from AVAILABLE to PENDING_DELETION. An accessor in the PENDING_DELETION state can’t be used for new WebSocket requests or HTTP requests. However, WebSocket connections that were initiated while the accessor was in the AVAILABLE state remain open until they expire (up to 2 hours).
+    * Deletes an accessor that your Amazon Web Services account owns. An accessor object is a container that has the information required for token based access to your Ethereum nodes including, the BILLING_TOKEN. After an accessor is deleted, the status of the accessor changes from AVAILABLE to PENDING_DELETION. An accessor in the PENDING_DELETION state can’t be used for new WebSocket requests or HTTP requests. However, WebSocket connections that were initiated while the accessor was in the AVAILABLE state remain open until they expire (up to 2 hours).
     */
   def deleteAccessor(params: DeleteAccessorInput): Request[DeleteAccessorOutput, AWSError] = js.native
   def deleteAccessor(
@@ -127,12 +127,12 @@ trait ManagedBlockchain extends Service {
   ): Request[DeleteNodeOutput, AWSError] = js.native
   
   /**
-    *  The token based access feature is in preview release for Ethereum on Amazon Managed Blockchain and is subject to change. We recommend that you use this feature only with test scenarios, and not in production environments.  Returns detailed information about an accessor. An accessor object is a container that has the information required for token based access to your Ethereum nodes.
+    * Returns detailed information about an accessor. An accessor object is a container that has the information required for token based access to your Ethereum nodes.
     */
   def getAccessor(): Request[GetAccessorOutput, AWSError] = js.native
   def getAccessor(callback: js.Function2[/* err */ AWSError, /* data */ GetAccessorOutput, Unit]): Request[GetAccessorOutput, AWSError] = js.native
   /**
-    *  The token based access feature is in preview release for Ethereum on Amazon Managed Blockchain and is subject to change. We recommend that you use this feature only with test scenarios, and not in production environments.  Returns detailed information about an accessor. An accessor object is a container that has the information required for token based access to your Ethereum nodes.
+    * Returns detailed information about an accessor. An accessor object is a container that has the information required for token based access to your Ethereum nodes.
     */
   def getAccessor(params: GetAccessorInput): Request[GetAccessorOutput, AWSError] = js.native
   def getAccessor(
@@ -194,12 +194,12 @@ trait ManagedBlockchain extends Service {
   ): Request[GetProposalOutput, AWSError] = js.native
   
   /**
-    *  The token based access feature is in preview release for Ethereum on Amazon Managed Blockchain and is subject to change. We recommend that you use this feature only with test scenarios, and not in production environments.  Returns a list of the accessors and their properties. Accessor objects are containers that have the information required for token based access to your Ethereum nodes.
+    * Returns a list of the accessors and their properties. Accessor objects are containers that have the information required for token based access to your Ethereum nodes.
     */
   def listAccessors(): Request[ListAccessorsOutput, AWSError] = js.native
   def listAccessors(callback: js.Function2[/* err */ AWSError, /* data */ ListAccessorsOutput, Unit]): Request[ListAccessorsOutput, AWSError] = js.native
   /**
-    *  The token based access feature is in preview release for Ethereum on Amazon Managed Blockchain and is subject to change. We recommend that you use this feature only with test scenarios, and not in production environments.  Returns a list of the accessors and their properties. Accessor objects are containers that have the information required for token based access to your Ethereum nodes.
+    * Returns a list of the accessors and their properties. Accessor objects are containers that have the information required for token based access to your Ethereum nodes.
     */
   def listAccessors(params: ListAccessorsInput): Request[ListAccessorsOutput, AWSError] = js.native
   def listAccessors(

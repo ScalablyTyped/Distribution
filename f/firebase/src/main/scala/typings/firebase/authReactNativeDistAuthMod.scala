@@ -42,7 +42,11 @@ import typings.firebase.firebaseStrings.`authSlashinvalid-oauth-provider`
 import typings.firebase.firebaseStrings.`authSlashinvalid-persistence-type`
 import typings.firebase.firebaseStrings.`authSlashinvalid-phone-number`
 import typings.firebase.firebaseStrings.`authSlashinvalid-provider-id`
+import typings.firebase.firebaseStrings.`authSlashinvalid-recaptcha-action`
+import typings.firebase.firebaseStrings.`authSlashinvalid-recaptcha-token`
+import typings.firebase.firebaseStrings.`authSlashinvalid-recaptcha-version`
 import typings.firebase.firebaseStrings.`authSlashinvalid-recipient-email`
+import typings.firebase.firebaseStrings.`authSlashinvalid-req-type`
 import typings.firebase.firebaseStrings.`authSlashinvalid-sender`
 import typings.firebase.firebaseStrings.`authSlashinvalid-tenant-id`
 import typings.firebase.firebaseStrings.`authSlashinvalid-user-token`
@@ -51,6 +55,7 @@ import typings.firebase.firebaseStrings.`authSlashinvalid-verification-id`
 import typings.firebase.firebaseStrings.`authSlashmaximum-second-factor-count-exceeded`
 import typings.firebase.firebaseStrings.`authSlashmissing-android-pkg-name`
 import typings.firebase.firebaseStrings.`authSlashmissing-app-credential`
+import typings.firebase.firebaseStrings.`authSlashmissing-client-type`
 import typings.firebase.firebaseStrings.`authSlashmissing-continue-uri`
 import typings.firebase.firebaseStrings.`authSlashmissing-iframe-start`
 import typings.firebase.firebaseStrings.`authSlashmissing-ios-bundle-id`
@@ -58,6 +63,8 @@ import typings.firebase.firebaseStrings.`authSlashmissing-multi-factor-info`
 import typings.firebase.firebaseStrings.`authSlashmissing-multi-factor-session`
 import typings.firebase.firebaseStrings.`authSlashmissing-or-invalid-nonce`
 import typings.firebase.firebaseStrings.`authSlashmissing-phone-number`
+import typings.firebase.firebaseStrings.`authSlashmissing-recaptcha-token`
+import typings.firebase.firebaseStrings.`authSlashmissing-recaptcha-version`
 import typings.firebase.firebaseStrings.`authSlashmissing-verification-code`
 import typings.firebase.firebaseStrings.`authSlashmissing-verification-id`
 import typings.firebase.firebaseStrings.`authSlashmulti-factor-auth-required`
@@ -72,6 +79,7 @@ import typings.firebase.firebaseStrings.`authSlashpopup-blocked`
 import typings.firebase.firebaseStrings.`authSlashpopup-closed-by-user`
 import typings.firebase.firebaseStrings.`authSlashprovider-already-linked`
 import typings.firebase.firebaseStrings.`authSlashquota-exceeded`
+import typings.firebase.firebaseStrings.`authSlashrecaptcha-not-enabled`
 import typings.firebase.firebaseStrings.`authSlashredirect-cancelled-by-user`
 import typings.firebase.firebaseStrings.`authSlashredirect-operation-pending`
 import typings.firebase.firebaseStrings.`authSlashrejected-credential`
@@ -104,6 +112,7 @@ import typings.firebase.firebaseStrings.password
 import typings.firebase.firebaseStrings.phone
 import typings.firebase.firebaseStrings.reauthenticate
 import typings.firebase.firebaseStrings.signIn
+import typings.firebase.firebaseStrings.totp
 import typings.firebase.firebaseStrings.twitterDotcom
 import typings.firebaseApp.mod.FirebaseApp
 import typings.firebaseAuth.anon.DisableWarnings
@@ -120,12 +129,14 @@ import typings.firebaseAuth.mod.Dependencies
 import typings.firebaseAuth.mod.IdTokenResult
 import typings.firebaseAuth.mod.MultiFactorError
 import typings.firebaseAuth.mod.MultiFactorResolver
+import typings.firebaseAuth.mod.MultiFactorSession
 import typings.firebaseAuth.mod.MultiFactorUser
 import typings.firebaseAuth.mod.NextOrObserver
 import typings.firebaseAuth.mod.Persistence
 import typings.firebaseAuth.mod.PhoneMultiFactorAssertion
 import typings.firebaseAuth.mod.PopupRedirectResolver
 import typings.firebaseAuth.mod.RecaptchaParameters
+import typings.firebaseAuth.mod.TotpMultiFactorAssertion
 import typings.firebaseAuth.mod.User
 import typings.firebaseAuth.mod.UserCredential
 import typings.firebaseUtil.mod.CompleteFn
@@ -383,9 +394,25 @@ object authReactNativeDistAuthMod {
     @js.native
     val INVALID_PROVIDER_ID: `authSlashinvalid-provider-id` = js.native
     
+    @JSImport("firebase/auth/react-native/dist/auth", "AuthErrorCodes.INVALID_RECAPTCHA_ACTION")
+    @js.native
+    val INVALID_RECAPTCHA_ACTION: `authSlashinvalid-recaptcha-action` = js.native
+    
+    @JSImport("firebase/auth/react-native/dist/auth", "AuthErrorCodes.INVALID_RECAPTCHA_TOKEN")
+    @js.native
+    val INVALID_RECAPTCHA_TOKEN: `authSlashinvalid-recaptcha-token` = js.native
+    
+    @JSImport("firebase/auth/react-native/dist/auth", "AuthErrorCodes.INVALID_RECAPTCHA_VERSION")
+    @js.native
+    val INVALID_RECAPTCHA_VERSION: `authSlashinvalid-recaptcha-version` = js.native
+    
     @JSImport("firebase/auth/react-native/dist/auth", "AuthErrorCodes.INVALID_RECIPIENT_EMAIL")
     @js.native
     val INVALID_RECIPIENT_EMAIL: `authSlashinvalid-recipient-email` = js.native
+    
+    @JSImport("firebase/auth/react-native/dist/auth", "AuthErrorCodes.INVALID_REQ_TYPE")
+    @js.native
+    val INVALID_REQ_TYPE: `authSlashinvalid-req-type` = js.native
     
     @JSImport("firebase/auth/react-native/dist/auth", "AuthErrorCodes.INVALID_SENDER")
     @js.native
@@ -419,6 +446,10 @@ object authReactNativeDistAuthMod {
     @js.native
     val MISSING_AUTH_DOMAIN: `authSlashauth-domain-config-required` = js.native
     
+    @JSImport("firebase/auth/react-native/dist/auth", "AuthErrorCodes.MISSING_CLIENT_TYPE")
+    @js.native
+    val MISSING_CLIENT_TYPE: `authSlashmissing-client-type` = js.native
+    
     @JSImport("firebase/auth/react-native/dist/auth", "AuthErrorCodes.MISSING_CODE")
     @js.native
     val MISSING_CODE: `authSlashmissing-verification-code` = js.native
@@ -450,6 +481,14 @@ object authReactNativeDistAuthMod {
     @JSImport("firebase/auth/react-native/dist/auth", "AuthErrorCodes.MISSING_PHONE_NUMBER")
     @js.native
     val MISSING_PHONE_NUMBER: `authSlashmissing-phone-number` = js.native
+    
+    @JSImport("firebase/auth/react-native/dist/auth", "AuthErrorCodes.MISSING_RECAPTCHA_TOKEN")
+    @js.native
+    val MISSING_RECAPTCHA_TOKEN: `authSlashmissing-recaptcha-token` = js.native
+    
+    @JSImport("firebase/auth/react-native/dist/auth", "AuthErrorCodes.MISSING_RECAPTCHA_VERSION")
+    @js.native
+    val MISSING_RECAPTCHA_VERSION: `authSlashmissing-recaptcha-version` = js.native
     
     @JSImport("firebase/auth/react-native/dist/auth", "AuthErrorCodes.MISSING_SESSION_INFO")
     @js.native
@@ -502,6 +541,10 @@ object authReactNativeDistAuthMod {
     @JSImport("firebase/auth/react-native/dist/auth", "AuthErrorCodes.QUOTA_EXCEEDED")
     @js.native
     val QUOTA_EXCEEDED: `authSlashquota-exceeded` = js.native
+    
+    @JSImport("firebase/auth/react-native/dist/auth", "AuthErrorCodes.RECAPTCHA_NOT_ENABLED")
+    @js.native
+    val RECAPTCHA_NOT_ENABLED: `authSlashrecaptcha-not-enabled` = js.native
     
     @JSImport("firebase/auth/react-native/dist/auth", "AuthErrorCodes.REDIRECT_CANCELLED_BY_USER")
     @js.native
@@ -750,6 +793,10 @@ object authReactNativeDistAuthMod {
     @JSImport("firebase/auth/react-native/dist/auth", "FactorId.PHONE")
     @js.native
     val PHONE: phone = js.native
+    
+    @JSImport("firebase/auth/react-native/dist/auth", "FactorId.TOTP")
+    @js.native
+    val TOTP: totp = js.native
   }
   
   @JSImport("firebase/auth/react-native/dist/auth", "GithubAuthProvider")
@@ -1245,6 +1292,65 @@ object authReactNativeDistAuthMod {
     val TWITTER: twitterDotcom = js.native
   }
   
+  @JSImport("firebase/auth/react-native/dist/auth", "TotpMultiFactorGenerator")
+  @js.native
+  open class TotpMultiFactorGenerator ()
+    extends typings.firebaseAuth.mod.TotpMultiFactorGenerator
+  /* static members */
+  object TotpMultiFactorGenerator {
+    
+    @JSImport("firebase/auth/react-native/dist/auth", "TotpMultiFactorGenerator")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * The identifier of the TOTP second factor: `totp`.
+      */
+    @JSImport("firebase/auth/react-native/dist/auth", "TotpMultiFactorGenerator.FACTOR_ID")
+    @js.native
+    def FACTOR_ID: totp = js.native
+    inline def FACTOR_ID_=(x: totp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FACTOR_ID")(x.asInstanceOf[js.Any])
+    
+    /**
+      * Provides a {@link TotpMultiFactorAssertion} to confirm ownership of
+      * the TOTP (time-based one-time password) second factor.
+      * This assertion is used to complete enrollment in TOTP second factor.
+      *
+      * @param secret A {@link TotpSecret} containing the shared secret key and other TOTP parameters.
+      * @param oneTimePassword One-time password from TOTP App.
+      * @returns A {@link TotpMultiFactorAssertion} which can be used with
+      * {@link MultiFactorUser.enroll}.
+      */
+    inline def assertionForEnrollment(secret: typings.firebaseAuth.mod.TotpSecret, oneTimePassword: String): TotpMultiFactorAssertion = (^.asInstanceOf[js.Dynamic].applyDynamic("assertionForEnrollment")(secret.asInstanceOf[js.Any], oneTimePassword.asInstanceOf[js.Any])).asInstanceOf[TotpMultiFactorAssertion]
+    
+    /**
+      * Provides a {@link TotpMultiFactorAssertion} to confirm ownership of the TOTP second factor.
+      * This assertion is used to complete signIn with TOTP as the second factor.
+      *
+      * @param enrollmentId identifies the enrolled TOTP second factor.
+      * @param oneTimePassword One-time password from TOTP App.
+      * @returns A {@link TotpMultiFactorAssertion} which can be used with
+      * {@link MultiFactorResolver.resolveSignIn}.
+      */
+    inline def assertionForSignIn(enrollmentId: String, oneTimePassword: String): TotpMultiFactorAssertion = (^.asInstanceOf[js.Dynamic].applyDynamic("assertionForSignIn")(enrollmentId.asInstanceOf[js.Any], oneTimePassword.asInstanceOf[js.Any])).asInstanceOf[TotpMultiFactorAssertion]
+    
+    /**
+      * Returns a promise to {@link TotpSecret} which contains the TOTP shared secret key and other parameters.
+      * Creates a TOTP secret as part of enrolling a TOTP second factor.
+      * Used for generating a QR code URL or inputting into a TOTP app.
+      * This method uses the auth instance corresponding to the user in the multiFactorSession.
+      *
+      * @param session The {@link MultiFactorSession} that the user is part of.
+      * @returns A promise to {@link TotpSecret}.
+      */
+    inline def generateSecret(session: MultiFactorSession): js.Promise[typings.firebaseAuth.mod.TotpSecret] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateSecret")(session.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.firebaseAuth.mod.TotpSecret]]
+  }
+  
+  @JSImport("firebase/auth/react-native/dist/auth", "TotpSecret")
+  @js.native
+  /* private */ open class TotpSecret ()
+    extends typings.firebaseAuth.mod.TotpSecret
+  
   @JSImport("firebase/auth/react-native/dist/auth", "TwitterAuthProvider")
   @js.native
   open class TwitterAuthProvider ()
@@ -1359,6 +1465,8 @@ object authReactNativeDistAuthMod {
   
   inline def initializeAuth(app: FirebaseApp): Auth = ^.asInstanceOf[js.Dynamic].applyDynamic("initializeAuth")(app.asInstanceOf[js.Any]).asInstanceOf[Auth]
   inline def initializeAuth(app: FirebaseApp, deps: Dependencies): Auth = (^.asInstanceOf[js.Dynamic].applyDynamic("initializeAuth")(app.asInstanceOf[js.Any], deps.asInstanceOf[js.Any])).asInstanceOf[Auth]
+  
+  inline def initializeRecaptchaConfig(auth: Auth): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("initializeRecaptchaConfig")(auth.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
   inline def isSignInWithEmailLink(auth: Auth, emailLink: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSignInWithEmailLink")(auth.asInstanceOf[js.Any], emailLink.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   

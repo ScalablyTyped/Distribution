@@ -10,29 +10,29 @@ trait InputBox
      with QuickInput {
   
   /**
-    * Buttons for actions in the UI.
-    */
+  		 * Buttons for actions in the UI.
+  		 */
   var buttons: js.Array[QuickInputButton] = js.native
   
   /**
-    * An event signaling when the user indicated acceptance of the input value.
-    */
+  		 * An event signaling when the user indicated acceptance of the input value.
+  		 */
   def onDidAccept(listener: js.Function1[/* e */ Unit, Any]): Disposable = js.native
   def onDidAccept(listener: js.Function1[/* e */ Unit, Any], thisArgs: Any): Disposable = js.native
   def onDidAccept(listener: js.Function1[/* e */ Unit, Any], thisArgs: Any, disposables: js.Array[Disposable]): Disposable = js.native
   def onDidAccept(listener: js.Function1[/* e */ Unit, Any], thisArgs: Unit, disposables: js.Array[Disposable]): Disposable = js.native
   
   /**
-    * An event signaling when the value has changed.
-    */
+  		 * An event signaling when the value has changed.
+  		 */
   def onDidChangeValue(listener: js.Function1[/* e */ String, Any]): Disposable = js.native
   def onDidChangeValue(listener: js.Function1[/* e */ String, Any], thisArgs: Any): Disposable = js.native
   def onDidChangeValue(listener: js.Function1[/* e */ String, Any], thisArgs: Any, disposables: js.Array[Disposable]): Disposable = js.native
   def onDidChangeValue(listener: js.Function1[/* e */ String, Any], thisArgs: Unit, disposables: js.Array[Disposable]): Disposable = js.native
   
   /**
-    * An event signaling when a button was triggered.
-    */
+  		 * An event signaling when a button was triggered.
+  		 */
   def onDidTriggerButton(listener: js.Function1[/* e */ QuickInputButton, Any]): Disposable = js.native
   def onDidTriggerButton(listener: js.Function1[/* e */ QuickInputButton, Any], thisArgs: Any): Disposable = js.native
   def onDidTriggerButton(
@@ -47,40 +47,40 @@ trait InputBox
   ): Disposable = js.native
   
   /**
-    * If the input value should be hidden. Defaults to false.
-    */
+  		 * If the input value should be hidden. Defaults to false.
+  		 */
   var password: Boolean = js.native
   
   /**
-    * Optional placeholder shown when no value has been input.
-    */
+  		 * Optional placeholder shown when no value has been input.
+  		 */
   var placeholder: js.UndefOr[String] = js.native
   
   /**
-    * An optional prompt text providing some ask or explanation to the user.
-    */
+  		 * An optional prompt text providing some ask or explanation to the user.
+  		 */
   var prompt: js.UndefOr[String] = js.native
   
   /**
-    * An optional validation message indicating a problem with the current input value.
-    * By returning a string, the InputBox will use a default {@link InputBoxValidationSeverity} of Error.
-    * Returning undefined clears the validation message.
-    */
+  		 * An optional validation message indicating a problem with the current input value.
+  		 * By returning a string, the InputBox will use a default {@link InputBoxValidationSeverity} of Error.
+  		 * Returning undefined clears the validation message.
+  		 */
   var validationMessage: js.UndefOr[String | InputBoxValidationMessage] = js.native
   
   /**
-    * Current input value.
-    */
+  		 * Current input value.
+  		 */
   var value: String = js.native
   
   /**
-    * Selection range in the input value. Defined as tuple of two number where the
-    * first is the inclusive start index and the second the exclusive end index. When `undefined` the whole
-    * pre-filled value will be selected, when empty (start equals end) only the cursor will be set,
-    * otherwise the defined range will be selected.
-    *
-    * This property does not get updated when the user types or makes a selection,
-    * but it can be updated by the extension.
-    */
+  		 * Selection range in the input value. Defined as tuple of two number where the
+  		 * first is the inclusive start index and the second the exclusive end index. When `undefined` the whole
+  		 * pre-filled value will be selected, when empty (start equals end) only the cursor will be set,
+  		 * otherwise the defined range will be selected.
+  		 *
+  		 * This property does not get updated when the user types or makes a selection,
+  		 * but it can be updated by the extension.
+  		 */
   var valueSelection: js.UndefOr[js.Tuple2[Double, Double]] = js.native
 }

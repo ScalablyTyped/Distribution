@@ -49,73 +49,10 @@ trait SeriesMapbubbleDataOptions extends StObject {
   var id: js.UndefOr[String] = js.undefined
   
   /**
-    * (Highmaps) When data labels are laid out on a map, Highmaps runs a
-    * simplified algorithm to detect collision. When two labels collide, the
-    * one with the lowest rank is hidden. By default the rank is computed from
-    * the area.
-    */
-  var labelrank: js.UndefOr[Double] = js.undefined
-  
-  /**
-    * (Highmaps) The latitude of the point. Must be combined with the `lon`
-    * option to work. Overrides `x` and `y` values.
-    */
-  var lat: js.UndefOr[Double] = js.undefined
-  
-  /**
-    * (Highmaps) The longitude of the point. Must be combined with the `lon`
-    * option to work. Overrides `x` and `y` values.
-    */
-  var lon: js.UndefOr[Double] = js.undefined
-  
-  /**
-    * (Highmaps) The relative mid point of an area, used to place the data
-    * label. Ranges from 0 to 1\. When `mapData` is used, middleX can be
-    * defined there.
-    */
-  var middleX: js.UndefOr[Double] = js.undefined
-  
-  /**
-    * (Highmaps) The relative mid point of an area, used to place the data
-    * label. Ranges from 0 to 1\. When `mapData` is used, middleY can be
-    * defined there.
-    */
-  var middleY: js.UndefOr[Double] = js.undefined
-  
-  /**
     * (Highmaps) The name of the point as shown in the legend, tooltip,
     * dataLabel etc.
     */
   var name: js.UndefOr[String] = js.undefined
-  
-  /**
-    * (Highmaps) For map and mapline series types, the SVG path for the shape.
-    * For compatibily with old IE, not all SVG path definitions are supported,
-    * but M, L and C operators are safe.
-    *
-    * To achieve a better separation between the structure and the data, it is
-    * recommended to use `mapData` to define that paths instead of defining
-    * them on the data points themselves.
-    *
-    * For providing true geographical shapes based on longitude and latitude,
-    * use the `geometry` option instead.
-    */
-  var path: js.UndefOr[String] = js.undefined
-  
-  /**
-    * (Highmaps) The numeric value of the data point.
-    */
-  var value: js.UndefOr[Double | Null] = js.undefined
-  
-  /**
-    * (Highmaps) The x coordinate of the point in terms of projected units.
-    */
-  var x: js.UndefOr[Double] = js.undefined
-  
-  /**
-    * (Highmaps) The x coordinate of the point in terms of projected units.
-    */
-  var y: js.UndefOr[Double | Null] = js.undefined
   
   /**
     * (Highmaps) While the `x` and `y` values of the bubble are determined by
@@ -158,49 +95,9 @@ object SeriesMapbubbleDataOptions {
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    inline def setLabelrank(value: Double): Self = StObject.set(x, "labelrank", value.asInstanceOf[js.Any])
-    
-    inline def setLabelrankUndefined: Self = StObject.set(x, "labelrank", js.undefined)
-    
-    inline def setLat(value: Double): Self = StObject.set(x, "lat", value.asInstanceOf[js.Any])
-    
-    inline def setLatUndefined: Self = StObject.set(x, "lat", js.undefined)
-    
-    inline def setLon(value: Double): Self = StObject.set(x, "lon", value.asInstanceOf[js.Any])
-    
-    inline def setLonUndefined: Self = StObject.set(x, "lon", js.undefined)
-    
-    inline def setMiddleX(value: Double): Self = StObject.set(x, "middleX", value.asInstanceOf[js.Any])
-    
-    inline def setMiddleXUndefined: Self = StObject.set(x, "middleX", js.undefined)
-    
-    inline def setMiddleY(value: Double): Self = StObject.set(x, "middleY", value.asInstanceOf[js.Any])
-    
-    inline def setMiddleYUndefined: Self = StObject.set(x, "middleY", js.undefined)
-    
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
-    
-    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
-    
-    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
-    
-    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
-    
-    inline def setValueNull: Self = StObject.set(x, "value", null)
-    
-    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
-    
-    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
-    
-    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
-    
-    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
-    
-    inline def setYNull: Self = StObject.set(x, "y", null)
-    
-    inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
     
     inline def setZ(value: Double): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
     

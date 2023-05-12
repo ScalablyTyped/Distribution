@@ -56,8 +56,8 @@ object steamUserInts {
   inline def `0x07`: `0x07` = 0x07.asInstanceOf[`0x07`]
   
   @js.native
-  sealed trait `0xFF`
+  sealed trait `0xff`
     extends StObject
        with RegionCode
-  inline def `0xFF`: `0xFF` = 0xFF.asInstanceOf[`0xFF`]
+  inline def `0xff`: `0xff` = 0xff.asInstanceOf[`0xff`]
 }

@@ -14,7 +14,7 @@ trait ThemeVersion extends StObject {
   /**
     * The Amazon QuickSight-defined ID of the theme that a custom theme inherits from. All themes initially inherit from a default Amazon QuickSight theme.
     */
-  var BaseThemeId: js.UndefOr[RestrictiveResourceId] = js.undefined
+  var BaseThemeId: js.UndefOr[ShortRestrictiveResourceId] = js.undefined
   
   /**
     * The theme configuration, which contains all the theme display properties.
@@ -60,7 +60,7 @@ object ThemeVersion {
     
     inline def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
-    inline def setBaseThemeId(value: RestrictiveResourceId): Self = StObject.set(x, "BaseThemeId", value.asInstanceOf[js.Any])
+    inline def setBaseThemeId(value: ShortRestrictiveResourceId): Self = StObject.set(x, "BaseThemeId", value.asInstanceOf[js.Any])
     
     inline def setBaseThemeIdUndefined: Self = StObject.set(x, "BaseThemeId", js.undefined)
     

@@ -1,18 +1,17 @@
 package typings.chevrotainTypes.mod
 
-import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.chevrotainTypes.mod.IRecognitionException because var conflicts: message, name. Inlined token, resyncedTokens, context */ @JSImport("@chevrotain/types", "NotAllInputParsedException")
+@JSImport("@chevrotain/types", "NotAllInputParsedException")
 @js.native
 open class NotAllInputParsedException protected ()
   extends StObject
-     with Error {
+     with IRecognitionException {
   def this(message: String, token: IToken) = this()
   
+  /* CompleteClass */
   var context: IRecognizerContext = js.native
   
   /* standard es5 */
@@ -23,7 +22,17 @@ open class NotAllInputParsedException protected ()
   /* CompleteClass */
   var name: String = js.native
   
+  /**
+    * Additional tokens which have been re-synced in error recovery due to the original error.
+    * This information can be used the calculate the whole text area which has been skipped due to an error.
+    * For example for displaying with a red underline in a text editor.
+    */
+  /* CompleteClass */
   var resyncedTokens: js.Array[IToken] = js.native
   
+  /**
+    * The token which caused the parser error.
+    */
+  /* CompleteClass */
   var token: IToken = js.native
 }

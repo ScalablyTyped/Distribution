@@ -94,6 +94,8 @@ trait Sheet extends StObject {
   
   def getDeveloperMetadata(): js.Array[DeveloperMetadata] = js.native
   
+  def getDrawings(): js.Array[Drawing] = js.native
+  
   def getFilter(): Filter | Null = js.native
   
   def getFormUrl(): String | Null = js.native

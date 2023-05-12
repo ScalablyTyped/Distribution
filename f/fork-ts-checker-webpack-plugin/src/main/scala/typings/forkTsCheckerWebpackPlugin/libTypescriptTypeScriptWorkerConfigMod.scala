@@ -1,6 +1,5 @@
 package typings.forkTsCheckerWebpackPlugin
 
-import typings.forkTsCheckerWebpackPlugin.anon.Vue
 import typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginStrings.`write-dts`
 import typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginStrings.`write-references`
 import typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginStrings.`write-tsbuildinfo`
@@ -36,8 +35,6 @@ object libTypescriptTypeScriptWorkerConfigMod {
     
     var enabled: Boolean
     
-    var extensions: Vue
-    
     var memoryLimit: Double
     
     var mode: readonly | `write-dts` | `write-tsbuildinfo` | `write-references`
@@ -55,13 +52,12 @@ object libTypescriptTypeScriptWorkerConfigMod {
       context: String,
       diagnosticOptions: TypeScriptDiagnosticsOptions,
       enabled: Boolean,
-      extensions: Vue,
       memoryLimit: Double,
       mode: readonly | `write-dts` | `write-tsbuildinfo` | `write-references`,
       profile: Boolean,
       typescriptPath: String
     ): TypeScriptWorkerConfig = {
-      val __obj = js.Dynamic.literal(build = build.asInstanceOf[js.Any], configFile = configFile.asInstanceOf[js.Any], configOverwrite = configOverwrite.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], diagnosticOptions = diagnosticOptions.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any], extensions = extensions.asInstanceOf[js.Any], memoryLimit = memoryLimit.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], profile = profile.asInstanceOf[js.Any], typescriptPath = typescriptPath.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(build = build.asInstanceOf[js.Any], configFile = configFile.asInstanceOf[js.Any], configOverwrite = configOverwrite.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], diagnosticOptions = diagnosticOptions.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any], memoryLimit = memoryLimit.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], profile = profile.asInstanceOf[js.Any], typescriptPath = typescriptPath.asInstanceOf[js.Any])
       __obj.asInstanceOf[TypeScriptWorkerConfig]
     }
     
@@ -79,8 +75,6 @@ object libTypescriptTypeScriptWorkerConfigMod {
       inline def setDiagnosticOptions(value: TypeScriptDiagnosticsOptions): Self = StObject.set(x, "diagnosticOptions", value.asInstanceOf[js.Any])
       
       inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
-      
-      inline def setExtensions(value: Vue): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
       
       inline def setMemoryLimit(value: Double): Self = StObject.set(x, "memoryLimit", value.asInstanceOf[js.Any])
       

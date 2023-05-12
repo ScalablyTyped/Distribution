@@ -58,10 +58,10 @@ object Variables {
     extends StObject
        with SFSUserVariable {
     
-    /** @type {boolean} Indicates whether this Room Variable is persistent or not. */
+    /** Indicates whether this Room Variable is persistent or not. */
     var isPersistent: Boolean
     
-    /** @type {boolean} Indicates whether this Room Variable is private or not. */
+    /** Indicates whether this Room Variable is private or not. */
     var isPrivate: Boolean
   }
   object SFSRoomVariable {
@@ -102,10 +102,10 @@ object Variables {
       */
     def isNull(): Boolean
     
-    /** @type {string} Indicates the name of this variable. */
+    /** Indicates the name of this variable. */
     var name: String
     
-    /** @type {number} Returns the value of this variable. */
+    /** Returns the value of this variable. */
     var value: Double
   }
   object SFSUserVariable {

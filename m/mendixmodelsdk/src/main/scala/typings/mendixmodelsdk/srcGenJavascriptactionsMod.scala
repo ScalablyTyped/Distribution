@@ -48,7 +48,7 @@ object srcGenJavascriptactionsMod {
     - typings.mendixmodelsdk.srcGenProjectsMod.projects.IModuleDocument because Already inherited
     - typings.mendixmodelsdk.srcGenProjectsMod.projects.IDocument because Already inherited
     - typings.mendixmodelsdk.srcGenCodeactionsMod.codeactions.ICodeAction because Already inherited
-    - typings.mendixmodelsdk.srcGenJavascriptactionsMod.javascriptactions.IJavaScriptAction because var conflicts: actionParameters, actionReturnType, actionTypeParameters, containerAsFolderBase, id, isLoaded, model, modelerActionInfo, structureTypeName, unit. Inlined platform */ @JSImport("mendixmodelsdk/src/gen/javascriptactions", "javascriptactions.JavaScriptAction")
+    - typings.mendixmodelsdk.srcGenJavascriptactionsMod.javascriptactions.IJavaScriptAction because var conflicts: actionDefaultReturnName, actionParameters, actionReturnType, actionTypeParameters, containerAsFolderBase, id, isLoaded, model, modelerActionInfo, structureTypeName, unit. Inlined platform */ @JSImport("mendixmodelsdk/src/gen/javascriptactions", "javascriptactions.JavaScriptAction")
     @js.native
     open class JavaScriptAction protected () extends CodeAction {
       def this(

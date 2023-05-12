@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@csstools/postcss-scope-pseudo-class" : "2.0.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@csstools/postcss-scope-pseudo-class" : "2.0.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -1,5 +1,6 @@
 package typings.rcMenu
 
+import org.scalablytyped.runtime.Shortcut
 import typings.rcMenu.anon.DomEvent
 import typings.rcMenu.esInterfaceMod.MenuClickEventHandler
 import typings.rcMenu.esInterfaceMod.MenuHoverEventHandler
@@ -72,6 +73,7 @@ import typings.react.mod.FocusEvent
 import typings.react.mod.FocusEventHandler
 import typings.react.mod.FormEvent
 import typings.react.mod.FormEventHandler
+import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.KeyboardEventHandler
 import typings.react.mod.MouseEvent
@@ -80,9 +82,9 @@ import typings.react.mod.NativeMouseEvent
 import typings.react.mod.NativeUIEvent
 import typings.react.mod.PointerEvent
 import typings.react.mod.PointerEventHandler
-import typings.react.mod.ReactElement
 import typings.react.mod.ReactEventHandler
 import typings.react.mod.ReactNode
+import typings.react.mod.RefAttributes
 import typings.react.mod.SyntheticEvent
 import typings.react.mod.TouchEvent
 import typings.react.mod.TouchEventHandler
@@ -94,19 +96,18 @@ import typings.react.mod.WheelEvent
 import typings.react.mod.WheelEventHandler
 import typings.std.Element
 import typings.std.Event
+import typings.std.HTMLElement
 import typings.std.HTMLLIElement
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object esMenuItemMod {
+object esMenuItemMod extends Shortcut {
   
-  @JSImport("rc-menu/es/MenuItem", JSImport.Namespace)
+  @JSImport("rc-menu/es/MenuItem", JSImport.Default)
   @js.native
-  val ^ : js.Any = js.native
-  
-  inline def default(props: MenuItemProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  val default: ForwardRefExoticComponent[MenuItemProps & RefAttributes[HTMLElement]] = js.native
   
   /* Inlined parent std.Omit<rc-menu.rc-menu/es/interface.MenuItemType, 'label' | 'key'> */
   /* Inlined parent std.Omit<react.react.HTMLAttributes<std.HTMLLIElement>, 'onClick' | 'onMouseEnter' | 'onMouseLeave' | 'onSelect'> */
@@ -221,6 +222,8 @@ object esMenuItemMod {
     
     var autoCorrect: js.UndefOr[String] = js.undefined
     
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
+    
     var autoSave: js.UndefOr[String] = js.undefined
     
     var children: js.UndefOr[ReactNode] = js.undefined
@@ -228,6 +231,8 @@ object esMenuItemMod {
     var className: js.UndefOr[String] = js.undefined
     
     var color: js.UndefOr[String] = js.undefined
+    
+    var content: js.UndefOr[String] = js.undefined
     
     var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
@@ -442,9 +447,13 @@ object esMenuItemMod {
     
     var radioGroup: js.UndefOr[String] = js.undefined
     
+    var rel: js.UndefOr[String] = js.undefined
+    
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
+    
+    var rev: js.UndefOr[String] = js.undefined
     
     var role: js.UndefOr[AriaRole] = js.undefined
     
@@ -699,6 +708,10 @@ object esMenuItemMod {
       
       inline def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
       
+      inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+      
+      inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+      
       inline def setAutoSave(value: String): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
       
       inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
@@ -715,9 +728,13 @@ object esMenuItemMod {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
       inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
       inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
@@ -1143,6 +1160,10 @@ object esMenuItemMod {
       
       inline def setRadioGroupUndefined: Self = StObject.set(x, "radioGroup", js.undefined)
       
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      
+      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+      
       inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
       inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
@@ -1150,6 +1171,10 @@ object esMenuItemMod {
       inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+      
+      inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+      
+      inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
       
       inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
@@ -1208,4 +1233,9 @@ object esMenuItemMod {
       inline def setWarnKeyUndefined: Self = StObject.set(x, "warnKey", js.undefined)
     }
   }
+  
+  type _To = ForwardRefExoticComponent[MenuItemProps & RefAttributes[HTMLElement]]
+  
+  /* This means you don't have to write `default`, but can instead just say `esMenuItemMod.foo` */
+  override def _to: ForwardRefExoticComponent[MenuItemProps & RefAttributes[HTMLElement]] = default
 }

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@chainsafe/as-sha256" : "0.4.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@chainsafe/as-sha256" : "0.4.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

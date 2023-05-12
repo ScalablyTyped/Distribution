@@ -327,6 +327,8 @@ object sapUiWebcMainDatePickerMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:change change} to attached listeners.
       *
       * Listeners may prevent the default action of this event by calling the `preventDefault` method on the
@@ -341,6 +343,8 @@ object sapUiWebcMainDatePickerMod {
     mParameters: Valid): Boolean = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:input input} to attached listeners.
       *
       * Listeners may prevent the default action of this event by calling the `preventDefault` method on the
@@ -361,7 +365,7 @@ object sapUiWebcMainDatePickerMod {
     def formatValue(/**
       * A Java Script date object to be formatted as string
       */
-    date: js.Object): Unit = js.native
+    date: js.Date): Unit = js.native
     
     /**
       * Gets current value of property {@link #getAccessibleName accessibleName}.

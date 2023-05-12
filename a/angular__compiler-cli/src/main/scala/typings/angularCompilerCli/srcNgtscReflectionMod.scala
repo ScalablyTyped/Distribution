@@ -40,37 +40,6 @@ object srcNgtscReflectionMod {
     /* 2 */ val Setter: typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.ClassMemberKind.Setter & Double = js.native
   }
   
-  object Decorator {
-    
-    @JSImport("@angular/compiler-cli/src/ngtsc/reflection", "Decorator")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    inline def nodeForError(decorator: typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.Decorator): Node = ^.asInstanceOf[js.Dynamic].applyDynamic("nodeForError")(decorator.asInstanceOf[js.Any]).asInstanceOf[Node]
-  }
-  
-  @JSImport("@angular/compiler-cli/src/ngtsc/reflection", "KnownDeclaration")
-  @js.native
-  object KnownDeclaration extends StObject {
-    
-    @JSBracketAccess
-    def apply(value: Double): js.UndefOr[
-        typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.KnownDeclaration & Double
-      ] = js.native
-    
-    /* 0 */ val JsGlobalObject: typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.KnownDeclaration.JsGlobalObject & Double = js.native
-    
-    /* 1 */ val TsHelperAssign: typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.KnownDeclaration.TsHelperAssign & Double = js.native
-    
-    /* 5 */ val TsHelperRead: typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.KnownDeclaration.TsHelperRead & Double = js.native
-    
-    /* 2 */ val TsHelperSpread: typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.KnownDeclaration.TsHelperSpread & Double = js.native
-    
-    /* 4 */ val TsHelperSpreadArray: typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.KnownDeclaration.TsHelperSpreadArray & Double = js.native
-    
-    /* 3 */ val TsHelperSpreadArrays: typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.KnownDeclaration.TsHelperSpreadArrays & Double = js.native
-  }
-  
   @JSImport("@angular/compiler-cli/src/ngtsc/reflection", "TypeScriptReflectionHost")
   @js.native
   open class TypeScriptReflectionHost protected ()
@@ -80,8 +49,6 @@ object srcNgtscReflectionMod {
   
   inline def filterToMembersWithDecorator(members: js.Array[ClassMember], name: String): js.Array[Decorators] = (^.asInstanceOf[js.Dynamic].applyDynamic("filterToMembersWithDecorator")(members.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Array[Decorators]]
   inline def filterToMembersWithDecorator(members: js.Array[ClassMember], name: String, module: String): js.Array[Decorators] = (^.asInstanceOf[js.Dynamic].applyDynamic("filterToMembersWithDecorator")(members.asInstanceOf[js.Any], name.asInstanceOf[js.Any], module.asInstanceOf[js.Any])).asInstanceOf[js.Array[Decorators]]
-  
-  inline def isConcreteDeclaration(decl: typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.Declaration[Declaration]): /* is @angular/compiler-cli.@angular/compiler-cli/src/ngtsc/reflection/src/host.ConcreteDeclaration<typescript.typescript.Declaration> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isConcreteDeclaration")(decl.asInstanceOf[js.Any]).asInstanceOf[/* is @angular/compiler-cli.@angular/compiler-cli/src/ngtsc/reflection/src/host.ConcreteDeclaration<typescript.typescript.Declaration> */ Boolean]
   
   inline def isDecoratorIdentifier(exp: Expression): /* is @angular/compiler-cli.@angular/compiler-cli/src/ngtsc/reflection/src/host.DecoratorIdentifier */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDecoratorIdentifier")(exp.asInstanceOf[js.Any]).asInstanceOf[/* is @angular/compiler-cli.@angular/compiler-cli/src/ngtsc/reflection/src/host.DecoratorIdentifier */ Boolean]
   

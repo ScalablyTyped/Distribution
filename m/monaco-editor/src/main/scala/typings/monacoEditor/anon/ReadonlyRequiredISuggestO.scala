@@ -1,10 +1,14 @@
 package typings.monacoEditor.anon
 
+import typings.monacoEditor.monacoEditorStrings.always
 import typings.monacoEditor.monacoEditorStrings.insert
+import typings.monacoEditor.monacoEditorStrings.never
 import typings.monacoEditor.monacoEditorStrings.prefix
 import typings.monacoEditor.monacoEditorStrings.replace
 import typings.monacoEditor.monacoEditorStrings.subword
 import typings.monacoEditor.monacoEditorStrings.subwordSmart
+import typings.monacoEditor.monacoEditorStrings.whenQuickSuggestion
+import typings.monacoEditor.monacoEditorStrings.whenTriggerCharacter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,9 +22,13 @@ trait ReadonlyRequiredISuggestO extends StObject {
   
   val localityBonus: Boolean
   
+  val matchOnWordStartOnly: Boolean
+  
   val preview: Boolean
   
   val previewMode: prefix | subword | subwordSmart
+  
+  val selectionMode: always | never | whenTriggerCharacter | whenQuickSuggestion
   
   val shareSuggestSelections: Boolean
   
@@ -94,8 +102,10 @@ object ReadonlyRequiredISuggestO {
     filterGraceful: Boolean,
     insertMode: insert | replace,
     localityBonus: Boolean,
+    matchOnWordStartOnly: Boolean,
     preview: Boolean,
     previewMode: prefix | subword | subwordSmart,
+    selectionMode: always | never | whenTriggerCharacter | whenQuickSuggestion,
     shareSuggestSelections: Boolean,
     showClasses: Boolean,
     showColors: Boolean,
@@ -130,7 +140,7 @@ object ReadonlyRequiredISuggestO {
     showWords: Boolean,
     snippetsPreventQuickSuggestions: Boolean
   ): ReadonlyRequiredISuggestO = {
-    val __obj = js.Dynamic.literal(filterGraceful = filterGraceful.asInstanceOf[js.Any], insertMode = insertMode.asInstanceOf[js.Any], localityBonus = localityBonus.asInstanceOf[js.Any], preview = preview.asInstanceOf[js.Any], previewMode = previewMode.asInstanceOf[js.Any], shareSuggestSelections = shareSuggestSelections.asInstanceOf[js.Any], showClasses = showClasses.asInstanceOf[js.Any], showColors = showColors.asInstanceOf[js.Any], showConstants = showConstants.asInstanceOf[js.Any], showConstructors = showConstructors.asInstanceOf[js.Any], showDeprecated = showDeprecated.asInstanceOf[js.Any], showEnumMembers = showEnumMembers.asInstanceOf[js.Any], showEnums = showEnums.asInstanceOf[js.Any], showEvents = showEvents.asInstanceOf[js.Any], showFields = showFields.asInstanceOf[js.Any], showFiles = showFiles.asInstanceOf[js.Any], showFolders = showFolders.asInstanceOf[js.Any], showFunctions = showFunctions.asInstanceOf[js.Any], showIcons = showIcons.asInstanceOf[js.Any], showInlineDetails = showInlineDetails.asInstanceOf[js.Any], showInterfaces = showInterfaces.asInstanceOf[js.Any], showIssues = showIssues.asInstanceOf[js.Any], showKeywords = showKeywords.asInstanceOf[js.Any], showMethods = showMethods.asInstanceOf[js.Any], showModules = showModules.asInstanceOf[js.Any], showOperators = showOperators.asInstanceOf[js.Any], showProperties = showProperties.asInstanceOf[js.Any], showReferences = showReferences.asInstanceOf[js.Any], showSnippets = showSnippets.asInstanceOf[js.Any], showStatusBar = showStatusBar.asInstanceOf[js.Any], showStructs = showStructs.asInstanceOf[js.Any], showTypeParameters = showTypeParameters.asInstanceOf[js.Any], showUnits = showUnits.asInstanceOf[js.Any], showUsers = showUsers.asInstanceOf[js.Any], showValues = showValues.asInstanceOf[js.Any], showVariables = showVariables.asInstanceOf[js.Any], showWords = showWords.asInstanceOf[js.Any], snippetsPreventQuickSuggestions = snippetsPreventQuickSuggestions.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(filterGraceful = filterGraceful.asInstanceOf[js.Any], insertMode = insertMode.asInstanceOf[js.Any], localityBonus = localityBonus.asInstanceOf[js.Any], matchOnWordStartOnly = matchOnWordStartOnly.asInstanceOf[js.Any], preview = preview.asInstanceOf[js.Any], previewMode = previewMode.asInstanceOf[js.Any], selectionMode = selectionMode.asInstanceOf[js.Any], shareSuggestSelections = shareSuggestSelections.asInstanceOf[js.Any], showClasses = showClasses.asInstanceOf[js.Any], showColors = showColors.asInstanceOf[js.Any], showConstants = showConstants.asInstanceOf[js.Any], showConstructors = showConstructors.asInstanceOf[js.Any], showDeprecated = showDeprecated.asInstanceOf[js.Any], showEnumMembers = showEnumMembers.asInstanceOf[js.Any], showEnums = showEnums.asInstanceOf[js.Any], showEvents = showEvents.asInstanceOf[js.Any], showFields = showFields.asInstanceOf[js.Any], showFiles = showFiles.asInstanceOf[js.Any], showFolders = showFolders.asInstanceOf[js.Any], showFunctions = showFunctions.asInstanceOf[js.Any], showIcons = showIcons.asInstanceOf[js.Any], showInlineDetails = showInlineDetails.asInstanceOf[js.Any], showInterfaces = showInterfaces.asInstanceOf[js.Any], showIssues = showIssues.asInstanceOf[js.Any], showKeywords = showKeywords.asInstanceOf[js.Any], showMethods = showMethods.asInstanceOf[js.Any], showModules = showModules.asInstanceOf[js.Any], showOperators = showOperators.asInstanceOf[js.Any], showProperties = showProperties.asInstanceOf[js.Any], showReferences = showReferences.asInstanceOf[js.Any], showSnippets = showSnippets.asInstanceOf[js.Any], showStatusBar = showStatusBar.asInstanceOf[js.Any], showStructs = showStructs.asInstanceOf[js.Any], showTypeParameters = showTypeParameters.asInstanceOf[js.Any], showUnits = showUnits.asInstanceOf[js.Any], showUsers = showUsers.asInstanceOf[js.Any], showValues = showValues.asInstanceOf[js.Any], showVariables = showVariables.asInstanceOf[js.Any], showWords = showWords.asInstanceOf[js.Any], snippetsPreventQuickSuggestions = snippetsPreventQuickSuggestions.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadonlyRequiredISuggestO]
   }
   
@@ -143,9 +153,13 @@ object ReadonlyRequiredISuggestO {
     
     inline def setLocalityBonus(value: Boolean): Self = StObject.set(x, "localityBonus", value.asInstanceOf[js.Any])
     
+    inline def setMatchOnWordStartOnly(value: Boolean): Self = StObject.set(x, "matchOnWordStartOnly", value.asInstanceOf[js.Any])
+    
     inline def setPreview(value: Boolean): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
     
     inline def setPreviewMode(value: prefix | subword | subwordSmart): Self = StObject.set(x, "previewMode", value.asInstanceOf[js.Any])
+    
+    inline def setSelectionMode(value: always | never | whenTriggerCharacter | whenQuickSuggestion): Self = StObject.set(x, "selectionMode", value.asInstanceOf[js.Any])
     
     inline def setShareSuggestSelections(value: Boolean): Self = StObject.set(x, "shareSuggestSelections", value.asInstanceOf[js.Any])
     

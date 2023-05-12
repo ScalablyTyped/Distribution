@@ -11,14 +11,14 @@ trait WorkerConfiguration extends StObject {
   
   /**
     * `true` to use the native API `CompressionStream`/`DecompressionStream` to compress/decompress data.
-    * 
+    *
     * @defaultValue true
     */
   var useCompressionStream: js.UndefOr[Boolean] = js.undefined
   
   /**
     * `true` to use web workers to compress/decompress data in non-blocking background processes.
-    * 
+    *
     * @defaultValue true
     */
   var useWebWorkers: js.UndefOr[Boolean] = js.undefined

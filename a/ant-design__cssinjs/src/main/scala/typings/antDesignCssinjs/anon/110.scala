@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.WebkitBorderBeforeColor
+import typings.csstype.mod.Property.MarginBlockEnd
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,13 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `110` extends StObject {
   
   var value: js.UndefOr[
-    WebkitBorderBeforeColor | (js.Array[
+    (MarginBlockEnd[Double | String]) | (js.Array[
       (Extract[
         js.UndefOr[
-          WebkitBorderBeforeColor | js.Array[NonNullable[js.UndefOr[WebkitBorderBeforeColor]]]
+          (MarginBlockEnd[Double | String]) | (js.Array[NonNullable[js.UndefOr[MarginBlockEnd[Double | String]]]])
         ], 
         String
-      ]) | NonNullable[js.UndefOr[WebkitBorderBeforeColor]]
+      ]) | (NonNullable[js.UndefOr[MarginBlockEnd[Double | String]]])
     ])
   ] = js.native
 }

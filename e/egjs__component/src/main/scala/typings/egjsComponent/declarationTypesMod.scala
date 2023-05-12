@@ -69,7 +69,7 @@ object declarationTypesMod {
     /* import warning: importer.ImportType#apply Failed type conversion: {[ K in @egjs/component.@egjs/component/declaration/types.EventKey<T> ]: @egjs/component.@egjs/component/declaration/types.EventCallback<T, K, THIS>} */ js.Any
   ]
   
-  type EventKey[T /* <: EventMap */] = String
+  type EventKey[T] = String
   
   type EventMap = Record[String, Any]
   

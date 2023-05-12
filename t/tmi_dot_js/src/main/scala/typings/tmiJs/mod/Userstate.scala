@@ -14,6 +14,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.tmiJs.mod.AnonSubGiftUpgradeUserstate
   - typings.tmiJs.mod.RaidUserstate
   - typings.tmiJs.mod.RitualUserstate
+  - typings.tmiJs.mod.BanUserstate
+  - typings.tmiJs.mod.TimeoutUserstate
 */
 trait Userstate extends StObject
 object Userstate {
@@ -26,6 +28,11 @@ object Userstate {
   inline def AnonSubGiftUserstate(): typings.tmiJs.mod.AnonSubGiftUserstate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[typings.tmiJs.mod.AnonSubGiftUserstate]
+  }
+  
+  inline def BanUserstate(): typings.tmiJs.mod.BanUserstate = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[typings.tmiJs.mod.BanUserstate]
   }
   
   inline def ChatUserstate(): typings.tmiJs.mod.ChatUserstate = {
@@ -63,5 +70,10 @@ object Userstate {
   inline def SubUserstate(): typings.tmiJs.mod.SubUserstate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[typings.tmiJs.mod.SubUserstate]
+  }
+  
+  inline def TimeoutUserstate(): typings.tmiJs.mod.TimeoutUserstate = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[typings.tmiJs.mod.TimeoutUserstate]
   }
 }

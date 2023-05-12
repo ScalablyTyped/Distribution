@@ -14,13 +14,11 @@ trait TypeofcertificateProvider extends StObject {
   
   /**
     * The types of errors that can be presented to the user through the requestPin function.
-    * @enum
     */
   val PinRequestErrorType: INVALIDPIN
   
   /**
     * The type of code being requested by the extension with requestPin function.
-    * @enum
     */
   val PinRequestType: PIN
   

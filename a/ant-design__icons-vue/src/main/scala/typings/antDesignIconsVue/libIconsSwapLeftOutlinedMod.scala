@@ -16,7 +16,7 @@ object libIconsSwapLeftOutlinedMod extends Shortcut {
   @js.native
   trait SwapLeftOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_SwapLeftOutlinedIconType: String = js.native

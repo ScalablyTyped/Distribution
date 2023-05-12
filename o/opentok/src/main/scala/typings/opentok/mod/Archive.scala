@@ -12,6 +12,8 @@ trait Archive extends StObject {
   
   var createdAt: Double
   
+  def delete(callback: js.Function1[/* error */ js.Error | Null, Unit]): Unit
+  
   var duration: String
   
   var hasAudio: Boolean
@@ -38,6 +40,8 @@ trait Archive extends StObject {
   
   var status: ArchiveStatus
   
+  def stop(callback: js.Function2[/* error */ js.Error | Null, /* archive */ js.UndefOr[this.type], Unit]): Unit
+  
   var streamMode: js.UndefOr[auto | manual] = js.undefined
   
   var streams: js.UndefOr[js.Array[Stream]] = js.undefined
@@ -48,6 +52,7 @@ object Archive {
   
   inline def apply(
     createdAt: Double,
+    delete: js.Function1[/* error */ js.Error | Null, Unit] => Unit,
     duration: String,
     hasAudio: Boolean,
     hasVideo: Boolean,
@@ -58,9 +63,10 @@ object Archive {
     sessionId: String,
     size: Double,
     status: ArchiveStatus,
+    stop: js.Function2[/* error */ js.Error | Null, /* archive */ js.UndefOr[Archive], Unit] => Unit,
     url: String
   ): Archive = {
-    val __obj = js.Dynamic.literal(createdAt = createdAt.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], hasAudio = hasAudio.asInstanceOf[js.Any], hasVideo = hasVideo.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], outputMode = outputMode.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any], sessionId = sessionId.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(createdAt = createdAt.asInstanceOf[js.Any], delete = js.Any.fromFunction1(delete), duration = duration.asInstanceOf[js.Any], hasAudio = hasAudio.asInstanceOf[js.Any], hasVideo = hasVideo.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], outputMode = outputMode.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any], sessionId = sessionId.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], stop = js.Any.fromFunction1(stop), url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Archive]
   }
   
@@ -68,6 +74,8 @@ object Archive {
   implicit open class MutableBuilder[Self <: Archive] (val x: Self) extends AnyVal {
     
     inline def setCreatedAt(value: Double): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    
+    inline def setDelete(value: js.Function1[/* error */ js.Error | Null, Unit] => Unit): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
     
     inline def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
@@ -100,6 +108,8 @@ object Archive {
     inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
     inline def setStatus(value: ArchiveStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    
+    inline def setStop(value: js.Function2[/* error */ js.Error | Null, /* archive */ js.UndefOr[Archive], Unit] => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction1(value))
     
     inline def setStreamMode(value: auto | manual): Self = StObject.set(x, "streamMode", value.asInstanceOf[js.Any])
     

@@ -243,6 +243,18 @@ trait Query[T] extends StObject {
     */
   def where(fieldPath: String, opStr: WhereFilterOp, value: Any): Query[T] = js.native
   def where(fieldPath: FieldPath, opStr: WhereFilterOp, value: Any): Query[T] = js.native
+  /**
+    * Creates and returns a new [Query]{@link Query} with the additional filter
+    * that documents should satisfy the relation constraint provided. Documents
+    * must contain the field specified in the filter.
+    *
+    * This function returns a new (immutable) instance of the Query (rather than
+    * modify the existing instance) to impose the filter.
+    *
+    * @param {Filter} filter A filter to apply to the Query.
+    * @returns {Query} The created Query.
+    */
+  def where(filter: Filter): Query[T] = js.native
   
   def withConverter(converter: Null): Query[DocumentData] = js.native
   /**

@@ -14,7 +14,6 @@ open class PopupFlowCls protected ()
     * An Oauth flow that runs in the browser and requests user authorization by
     * popping up a window and prompting the user.
     * @param {Object} options See `BaseBrowserFlow` for options.
-    * @constructor
     */
   def this(options: Any) = this()
   

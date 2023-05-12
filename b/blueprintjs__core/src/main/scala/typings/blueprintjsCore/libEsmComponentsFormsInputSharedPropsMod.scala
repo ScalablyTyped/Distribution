@@ -3,7 +3,7 @@ package typings.blueprintjsCore
 import typings.blueprintjsCore.libEsmCommonPropsMod.IIntentProps
 import typings.blueprintjsCore.libEsmCommonPropsMod.IProps
 import typings.blueprintjsCore.libEsmCommonPropsMod.MaybeElement
-import typings.blueprintjsIcons.libEsmGenerated16pxBlueprintIcons16Mod.BlueprintIcons16Id
+import typings.blueprintjsIcons.libEsmGeneratedIcons16pxBlueprintIcons16Mod.BlueprintIcons16Id
 import typings.react.mod.Ref
 import typings.react.mod.global.JSX.Element
 import typings.std.HTMLInputElement
@@ -32,6 +32,11 @@ object libEsmComponentsFormsInputSharedPropsMod {
       * Whether the component should take up the full width of its container.
       */
     var fill: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * Class name to apply to the `<input>` element (not the InputGroup container).
+      */
+    var inputClassName: js.UndefOr[String] = js.undefined
     
     /**
       * Ref attached to the HTML `<input>` element backing this component.
@@ -82,6 +87,10 @@ object libEsmComponentsFormsInputSharedPropsMod {
       inline def setFill(value: Boolean): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
       
       inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+      
+      inline def setInputClassName(value: String): Self = StObject.set(x, "inputClassName", value.asInstanceOf[js.Any])
+      
+      inline def setInputClassNameUndefined: Self = StObject.set(x, "inputClassName", js.undefined)
       
       inline def setInputRef(value: Ref[HTMLInputElement]): Self = StObject.set(x, "inputRef", value.asInstanceOf[js.Any])
       

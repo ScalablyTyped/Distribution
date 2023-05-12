@@ -281,7 +281,6 @@ object fileSystem {
     }
   }
   
-  /** @private */
   type FileEntryCallback[T /* <: ChooseEntryOptions */, E] = js.Function1[/* selectedEntries */ E, Unit]
   
   /**

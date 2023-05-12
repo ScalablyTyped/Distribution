@@ -6,15 +6,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DeleteParametersPathUsernameResponses extends StObject {
   
+  /** Unblock a user from an organization */
   var delete: ParametersPathUsernameResponses
   
+  /** Check if a user is blocked by an organization */
   var get: ParametersPathUsername
   
-  var put: Responses8
+  /** Block a user from an organization */
+  var put: Responses9
 }
 object DeleteParametersPathUsernameResponses {
   
-  inline def apply(delete: ParametersPathUsernameResponses, get: ParametersPathUsername, put: Responses8): DeleteParametersPathUsernameResponses = {
+  inline def apply(delete: ParametersPathUsernameResponses, get: ParametersPathUsername, put: Responses9): DeleteParametersPathUsernameResponses = {
     val __obj = js.Dynamic.literal(delete = delete.asInstanceOf[js.Any], get = get.asInstanceOf[js.Any], put = put.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteParametersPathUsernameResponses]
   }
@@ -26,6 +29,6 @@ object DeleteParametersPathUsernameResponses {
     
     inline def setGet(value: ParametersPathUsername): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     
-    inline def setPut(value: Responses8): Self = StObject.set(x, "put", value.asInstanceOf[js.Any])
+    inline def setPut(value: Responses9): Self = StObject.set(x, "put", value.asInstanceOf[js.Any])
   }
 }

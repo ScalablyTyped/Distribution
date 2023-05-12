@@ -8,15 +8,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A layer for displaying geospatial data. Points, line-strings and polygons
-  * can be displayed. <p> Every <code>Map</code> has a <code>Data</code> object
-  * by default, so most of the time there is no need to construct one. For
-  * example: <pre> var myMap = new google.maps.Map(...);<br>
-  * myMap.data.addGeoJson(...);<br> myMap.data.setStyle(...); </pre> The
-  * <code>Data</code> object is a collection of <a
-  * href="#Data.Feature"><code>Features</code></a>.
-  */
 @JSGlobal("google.maps.Data")
 @js.native
 /**
@@ -27,6 +18,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * myMap.data.addGeoJson(...);<br> myMap.data.setStyle(...); </pre> The
   * <code>Data</code> object is a collection of <a
   * href="#Data.Feature"><code>Features</code></a>.
+  *
+  * Access by calling `const {Data} = await
+  * google.maps.importLibrary("maps")`. See
+  * https://developers.google.com/maps/documentation/javascript/libraries.
   */
 open class Data ()
   extends StObject
@@ -35,13 +30,14 @@ open class Data ()
 }
 object Data {
   
-  /**
-    * A feature has a geometry, an id, and a set of properties.
-    */
   @JSGlobal("google.maps.Data.Feature")
   @js.native
   /**
     * A feature has a geometry, an id, and a set of properties.
+    *
+    * Access by calling `const {Data} = await
+    * google.maps.importLibrary("maps")`. See
+    * https://developers.google.com/maps/documentation/javascript/libraries.
     */
   open class Feature ()
     extends StObject
@@ -49,11 +45,6 @@ object Data {
     def this(options: FeatureOptions) = this()
   }
   
-  /**
-    * A GeometryCollection contains a number of geometry objects. Any
-    * <code>LatLng</code> or <code>LatLngLiteral</code> objects are automatically
-    * converted to <code>Data.Point</code> geometry objects.
-    */
   @JSGlobal("google.maps.Data.GeometryCollection")
   @js.native
   open class GeometryCollection protected ()
@@ -63,6 +54,10 @@ object Data {
       * A GeometryCollection contains a number of geometry objects. Any
       * <code>LatLng</code> or <code>LatLngLiteral</code> objects are
       * automatically converted to <code>Data.Point</code> geometry objects.
+      *
+      * Access by calling `const {Data} = await
+      * google.maps.importLibrary("maps")`. See
+      * https://developers.google.com/maps/documentation/javascript/libraries.
       */
     def this(elements: js.Array[Geometry | typings.googleMaps.google.maps.LatLng | LatLngLiteral]) = this()
     
@@ -103,9 +98,6 @@ object Data {
     override def getType(): String = js.native
   }
   
-  /**
-    * A LineString geometry contains a number of <code>LatLng</code>s.
-    */
   @JSGlobal("google.maps.Data.LineString")
   @js.native
   open class LineString protected ()
@@ -113,6 +105,10 @@ object Data {
        with typings.googleMaps.google.maps.Data.LineString {
     /**
       * A LineString geometry contains a number of <code>LatLng</code>s.
+      *
+      * Access by calling `const {Data} = await
+      * google.maps.importLibrary("maps")`. See
+      * https://developers.google.com/maps/documentation/javascript/libraries.
       */
     def this(elements: js.Array[typings.googleMaps.google.maps.LatLng | LatLngLiteral]) = this()
     
@@ -153,12 +149,6 @@ object Data {
     override def getType(): String = js.native
   }
   
-  /**
-    * A LinearRing geometry contains a number of <code>LatLng</code>s,
-    * representing a closed LineString. There is no need to make the first
-    * <code>LatLng</code> equal to the last <code>LatLng</code>. The LinearRing
-    * is closed implicitly.
-    */
   @JSGlobal("google.maps.Data.LinearRing")
   @js.native
   open class LinearRing protected ()
@@ -169,6 +159,10 @@ object Data {
       * representing a closed LineString. There is no need to make the first
       * <code>LatLng</code> equal to the last <code>LatLng</code>. The LinearRing
       * is closed implicitly.
+      *
+      * Access by calling `const {Data} = await
+      * google.maps.importLibrary("maps")`. See
+      * https://developers.google.com/maps/documentation/javascript/libraries.
       */
     def this(elements: js.Array[typings.googleMaps.google.maps.LatLng | LatLngLiteral]) = this()
     
@@ -209,9 +203,6 @@ object Data {
     override def getType(): String = js.native
   }
   
-  /**
-    * A MultiLineString geometry contains a number of <code>LineString</code>s.
-    */
   @JSGlobal("google.maps.Data.MultiLineString")
   @js.native
   open class MultiLineString protected ()
@@ -219,6 +210,10 @@ object Data {
        with typings.googleMaps.google.maps.Data.MultiLineString {
     /**
       * A MultiLineString geometry contains a number of <code>LineString</code>s.
+      *
+      * Access by calling `const {Data} = await
+      * google.maps.importLibrary("maps")`. See
+      * https://developers.google.com/maps/documentation/javascript/libraries.
       */
     def this(elements: js.Array[
             typings.googleMaps.google.maps.Data.LineString | (js.Array[typings.googleMaps.google.maps.LatLng | LatLngLiteral])
@@ -261,9 +256,6 @@ object Data {
     override def getType(): String = js.native
   }
   
-  /**
-    * A MultiPoint geometry contains a number of <code>LatLng</code>s.
-    */
   @JSGlobal("google.maps.Data.MultiPoint")
   @js.native
   open class MultiPoint protected ()
@@ -271,6 +263,10 @@ object Data {
        with typings.googleMaps.google.maps.Data.MultiPoint {
     /**
       * A MultiPoint geometry contains a number of <code>LatLng</code>s.
+      *
+      * Access by calling `const {Data} = await
+      * google.maps.importLibrary("maps")`. See
+      * https://developers.google.com/maps/documentation/javascript/libraries.
       */
     def this(elements: js.Array[typings.googleMaps.google.maps.LatLng | LatLngLiteral]) = this()
     
@@ -311,9 +307,6 @@ object Data {
     override def getType(): String = js.native
   }
   
-  /**
-    * A MultiPolygon geometry contains a number of <code>Data.Polygon</code>s.
-    */
   @JSGlobal("google.maps.Data.MultiPolygon")
   @js.native
   open class MultiPolygon protected ()
@@ -321,6 +314,10 @@ object Data {
        with typings.googleMaps.google.maps.Data.MultiPolygon {
     /**
       * A MultiPolygon geometry contains a number of <code>Data.Polygon</code>s.
+      *
+      * Access by calling `const {Data} = await
+      * google.maps.importLibrary("maps")`. See
+      * https://developers.google.com/maps/documentation/javascript/libraries.
       */
     def this(elements: js.Array[
             typings.googleMaps.google.maps.Data.Polygon | (js.Array[
@@ -365,9 +362,6 @@ object Data {
     override def getType(): String = js.native
   }
   
-  /**
-    * A Point geometry contains a single <code>LatLng</code>.
-    */
   @JSGlobal("google.maps.Data.Point")
   @js.native
   open class Point protected ()
@@ -375,6 +369,10 @@ object Data {
        with typings.googleMaps.google.maps.Data.Point {
     /**
       * A Point geometry contains a single <code>LatLng</code>.
+      *
+      * Access by calling `const {Data} = await
+      * google.maps.importLibrary("maps")`. See
+      * https://developers.google.com/maps/documentation/javascript/libraries.
       */
     def this(latLng: typings.googleMaps.google.maps.LatLng) = this()
     def this(latLng: LatLngLiteral) = this()
@@ -403,13 +401,6 @@ object Data {
     override def getType(): String = js.native
   }
   
-  /**
-    * A Polygon geometry contains a number of <code>Data.LinearRing</code>s. The
-    * first linear-ring must be the polygon exterior boundary and subsequent
-    * linear-rings must be interior boundaries, also known as holes. See the <a
-    * href="https://developers.google.com/maps/documentation/javascript/examples/layer-data-polygon">sample
-    * polygon with a hole</a>.
-    */
   @JSGlobal("google.maps.Data.Polygon")
   @js.native
   open class Polygon protected ()
@@ -422,6 +413,10 @@ object Data {
       * See the <a
       * href="https://developers.google.com/maps/documentation/javascript/examples/layer-data-polygon">sample
       * polygon with a hole</a>.
+      *
+      * Access by calling `const {Data} = await
+      * google.maps.importLibrary("maps")`. See
+      * https://developers.google.com/maps/documentation/javascript/libraries.
       */
     def this(elements: js.Array[
             typings.googleMaps.google.maps.Data.LinearRing | (js.Array[typings.googleMaps.google.maps.LatLng | LatLngLiteral])

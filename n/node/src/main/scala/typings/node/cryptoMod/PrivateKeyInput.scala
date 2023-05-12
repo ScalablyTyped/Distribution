@@ -10,6 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PrivateKeyInput extends StObject {
   
+  var encoding: js.UndefOr[String] = js.undefined
+  
   var format: js.UndefOr[KeyFormat] = js.undefined
   
   var key: String | Buffer
@@ -27,6 +29,10 @@ object PrivateKeyInput {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: PrivateKeyInput] (val x: Self) extends AnyVal {
+    
+    inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+    
+    inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
     
     inline def setFormat(value: KeyFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     

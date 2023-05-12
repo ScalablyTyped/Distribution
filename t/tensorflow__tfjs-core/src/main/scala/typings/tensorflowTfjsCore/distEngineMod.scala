@@ -12,9 +12,9 @@ import typings.tensorflowTfjsCore.distBackendsBackendMod.DataMover
 import typings.tensorflowTfjsCore.distBackendsBackendMod.KernelBackend
 import typings.tensorflowTfjsCore.distEnvironmentMod.Environment
 import typings.tensorflowTfjsCore.distKernelRegistryMod.NamedAttrMap
-import typings.tensorflowTfjsCore.distKernelRegistryMod.TensorInfo
 import typings.tensorflowTfjsCore.distTapeMod.TapeNode
-import typings.tensorflowTfjsCore.distTensorMod.DataId
+import typings.tensorflowTfjsCore.distTensorInfoMod.DataId
+import typings.tensorflowTfjsCore.distTensorInfoMod.TensorInfo
 import typings.tensorflowTfjsCore.distTensorMod.Tensor
 import typings.tensorflowTfjsCore.distTensorMod.TensorTracker
 import typings.tensorflowTfjsCore.distTensorTypesMod.GradSaveFunc

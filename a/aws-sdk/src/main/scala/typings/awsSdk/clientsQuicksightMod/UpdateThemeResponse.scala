@@ -29,7 +29,7 @@ trait UpdateThemeResponse extends StObject {
   /**
     * The ID for the theme.
     */
-  var ThemeId: js.UndefOr[RestrictiveResourceId] = js.undefined
+  var ThemeId: js.UndefOr[ShortRestrictiveResourceId] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) for the new version of the theme.
@@ -62,7 +62,7 @@ object UpdateThemeResponse {
     
     inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    inline def setThemeId(value: RestrictiveResourceId): Self = StObject.set(x, "ThemeId", value.asInstanceOf[js.Any])
+    inline def setThemeId(value: ShortRestrictiveResourceId): Self = StObject.set(x, "ThemeId", value.asInstanceOf[js.Any])
     
     inline def setThemeIdUndefined: Self = StObject.set(x, "ThemeId", js.undefined)
     

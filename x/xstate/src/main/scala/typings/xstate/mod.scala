@@ -3,13 +3,13 @@ package typings.xstate
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.Omit
 import typings.std.Partial
+import typings.xstate.anon.Actions
 import typings.xstate.anon.Clock
 import typings.xstate.anon.Context
 import typings.xstate.anon.FnCall
 import typings.xstate.anon.Id
 import typings.xstate.anon.Key
 import typings.xstate.anon.Type
-import typings.xstate.anon.TypeUpdate
 import typings.xstate.anon.Value
 import typings.xstate.libActionsMod.InferEvent
 import typings.xstate.libBehaviorsMod.SpawnBehaviorOptions
@@ -53,8 +53,10 @@ import typings.xstate.libTypesMod.InterpreterOptions
 import typings.xstate.libTypesMod.LogAction
 import typings.xstate.libTypesMod.LogActionObject
 import typings.xstate.libTypesMod.LogExpr
+import typings.xstate.libTypesMod.LowInfer
 import typings.xstate.libTypesMod.MachineConfig
 import typings.xstate.libTypesMod.MachineOptions
+import typings.xstate.libTypesMod.NoInfer
 import typings.xstate.libTypesMod.Observer
 import typings.xstate.libTypesMod.PredictableActionArgumentsExec
 import typings.xstate.libTypesMod.Prop
@@ -62,6 +64,7 @@ import typings.xstate.libTypesMod.PropertyAssigner
 import typings.xstate.libTypesMod.PureAction
 import typings.xstate.libTypesMod.RaiseAction
 import typings.xstate.libTypesMod.RaiseActionObject
+import typings.xstate.libTypesMod.RaiseActionOptions
 import typings.xstate.libTypesMod.ResolveEventType
 import typings.xstate.libTypesMod.SCXML.Event
 import typings.xstate.libTypesMod.SendAction
@@ -184,10 +187,10 @@ object mod {
     @js.native
     def interpret: FnCall = js.native
     inline def interpret[TContext, TStateSchema /* <: StateSchema[Any] */, TEvent /* <: EventObject */, TTypestate /* <: Typestate[TContext] */, TResolvedTypesMeta](
-      machine: /* import warning: importer.ImportType#apply Failed type conversion: xstate.xstate/lib/typegenTypes.AreAllImplementationsAssumedToBeProvided<TResolvedTypesMeta, xstate.xstate/lib/types.Prop<xstate.xstate/lib/types.Prop<TResolvedTypesMeta, 'resolved'>, 'missingImplementations'>> extends true ? xstate.xstate/lib/types.StateMachine<TContext, TStateSchema, TEvent, TTypestate, any, any, TResolvedTypesMeta> : 'Some implementations missing' */ js.Any
+      machine: /* import warning: importer.ImportType#apply Failed type conversion: xstate.xstate/lib/typegenTypes.AreAllImplementationsAssumedToBeProvided<TResolvedTypesMeta, xstate.xstate/lib/types.Prop<xstate.xstate/lib/types.Prop<TResolvedTypesMeta, 'resolved'>, 'missingImplementations'>> extends true ? xstate.xstate/lib/types.StateMachine<TContext, TStateSchema, TEvent, TTypestate, any, any, TResolvedTypesMeta> : xstate.xstate/lib/typegenTypes.MissingImplementationsError<TResolvedTypesMeta, xstate.xstate/lib/types.Prop<xstate.xstate/lib/types.Prop<TResolvedTypesMeta, 'resolved'>, 'missingImplementations'>> */ js.Any
     ): typings.xstate.libInterpreterMod.Interpreter[TContext, TStateSchema, TEvent, TTypestate, TResolvedTypesMeta] = ^.asInstanceOf[js.Dynamic].applyDynamic("interpret")(machine.asInstanceOf[js.Any]).asInstanceOf[typings.xstate.libInterpreterMod.Interpreter[TContext, TStateSchema, TEvent, TTypestate, TResolvedTypesMeta]]
     inline def interpret[TContext, TStateSchema /* <: StateSchema[Any] */, TEvent /* <: EventObject */, TTypestate /* <: Typestate[TContext] */, TResolvedTypesMeta](
-      machine: /* import warning: importer.ImportType#apply Failed type conversion: xstate.xstate/lib/typegenTypes.AreAllImplementationsAssumedToBeProvided<TResolvedTypesMeta, xstate.xstate/lib/types.Prop<xstate.xstate/lib/types.Prop<TResolvedTypesMeta, 'resolved'>, 'missingImplementations'>> extends true ? xstate.xstate/lib/types.StateMachine<TContext, TStateSchema, TEvent, TTypestate, any, any, TResolvedTypesMeta> : 'Some implementations missing' */ js.Any,
+      machine: /* import warning: importer.ImportType#apply Failed type conversion: xstate.xstate/lib/typegenTypes.AreAllImplementationsAssumedToBeProvided<TResolvedTypesMeta, xstate.xstate/lib/types.Prop<xstate.xstate/lib/types.Prop<TResolvedTypesMeta, 'resolved'>, 'missingImplementations'>> extends true ? xstate.xstate/lib/types.StateMachine<TContext, TStateSchema, TEvent, TTypestate, any, any, TResolvedTypesMeta> : xstate.xstate/lib/typegenTypes.MissingImplementationsError<TResolvedTypesMeta, xstate.xstate/lib/types.Prop<xstate.xstate/lib/types.Prop<TResolvedTypesMeta, 'resolved'>, 'missingImplementations'>> */ js.Any,
       options: InterpreterOptions
     ): typings.xstate.libInterpreterMod.Interpreter[TContext, TStateSchema, TEvent, TTypestate, TResolvedTypesMeta] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpret")(machine.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.xstate.libInterpreterMod.Interpreter[TContext, TStateSchema, TEvent, TTypestate, TResolvedTypesMeta]]
     inline def interpret_=(x: FnCall): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("interpret")(x.asInstanceOf[js.Any])
@@ -704,13 +707,13 @@ object mod {
     inline def after(delayRef: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("after")(delayRef.asInstanceOf[js.Any]).asInstanceOf[String]
     inline def after(delayRef: Double, id: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("after")(delayRef.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    inline def assign[TContext, TEvent /* <: EventObject */](assignment: Assigner[TContext, TEvent]): AssignAction[TContext, TEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("assign")(assignment.asInstanceOf[js.Any]).asInstanceOf[AssignAction[TContext, TEvent]]
-    inline def assign[TContext, TEvent /* <: EventObject */](assignment: PropertyAssigner[TContext, TEvent]): AssignAction[TContext, TEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("assign")(assignment.asInstanceOf[js.Any]).asInstanceOf[AssignAction[TContext, TEvent]]
+    inline def assign[TContext, TExpressionEvent /* <: EventObject */, TEvent /* <: EventObject */](assignment: Assigner[LowInfer[TContext], TExpressionEvent]): AssignAction[TContext, TExpressionEvent, TEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("assign")(assignment.asInstanceOf[js.Any]).asInstanceOf[AssignAction[TContext, TExpressionEvent, TEvent]]
+    inline def assign[TContext, TExpressionEvent /* <: EventObject */, TEvent /* <: EventObject */](assignment: PropertyAssigner[LowInfer[TContext], TExpressionEvent]): AssignAction[TContext, TExpressionEvent, TEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("assign")(assignment.asInstanceOf[js.Any]).asInstanceOf[AssignAction[TContext, TExpressionEvent, TEvent]]
     
-    inline def cancel(sendId: String): CancelAction = ^.asInstanceOf[js.Dynamic].applyDynamic("cancel")(sendId.asInstanceOf[js.Any]).asInstanceOf[CancelAction]
-    inline def cancel(sendId: Double): CancelAction = ^.asInstanceOf[js.Dynamic].applyDynamic("cancel")(sendId.asInstanceOf[js.Any]).asInstanceOf[CancelAction]
+    inline def cancel[TContext, TExpressionEvent /* <: EventObject */, TEvent /* <: EventObject */](sendId: String): CancelAction[TContext, TExpressionEvent, TEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("cancel")(sendId.asInstanceOf[js.Any]).asInstanceOf[CancelAction[TContext, TExpressionEvent, TEvent]]
+    inline def cancel[TContext, TExpressionEvent /* <: EventObject */, TEvent /* <: EventObject */](sendId: Double): CancelAction[TContext, TExpressionEvent, TEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("cancel")(sendId.asInstanceOf[js.Any]).asInstanceOf[CancelAction[TContext, TExpressionEvent, TEvent]]
     
-    inline def choose[TContext, TEvent /* <: EventObject */](conds: js.Array[ChooseCondition[TContext, TEvent]]): ChooseAction[TContext, TEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("choose")(conds.asInstanceOf[js.Any]).asInstanceOf[ChooseAction[TContext, TEvent]]
+    inline def choose[TContext, TExpressionEvent /* <: EventObject */, TEvent /* <: EventObject */](conds: js.Array[ChooseCondition[TContext, TExpressionEvent, TEvent]]): ChooseAction[TContext, TExpressionEvent, TEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("choose")(conds.asInstanceOf[js.Any]).asInstanceOf[ChooseAction[TContext, TExpressionEvent, TEvent]]
     
     inline def done(id: String): DoneEventObject = ^.asInstanceOf[js.Dynamic].applyDynamic("done")(id.asInstanceOf[js.Any]).asInstanceOf[DoneEventObject]
     inline def done(id: String, data: Any): DoneEventObject = (^.asInstanceOf[js.Dynamic].applyDynamic("done")(id.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[DoneEventObject]
@@ -721,126 +724,149 @@ object mod {
     inline def error(id: String): ErrorPlatformEvent & String = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(id.asInstanceOf[js.Any]).asInstanceOf[ErrorPlatformEvent & String]
     inline def error(id: String, data: Any): ErrorPlatformEvent & String = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(id.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[ErrorPlatformEvent & String]
     
-    inline def escalate[TContext, TEvent /* <: EventObject */, TErrorData](errorData: TErrorData): SendAction[TContext, TEvent, AnyEventObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("escalate")(errorData.asInstanceOf[js.Any]).asInstanceOf[SendAction[TContext, TEvent, AnyEventObject]]
-    inline def escalate[TContext, TEvent /* <: EventObject */, TErrorData](errorData: TErrorData, options: SendActionOptions[TContext, TEvent]): SendAction[TContext, TEvent, AnyEventObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("escalate")(errorData.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[SendAction[TContext, TEvent, AnyEventObject]]
-    inline def escalate[TContext, TEvent /* <: EventObject */, TErrorData](errorData: ExprWithMeta[TContext, TEvent, TErrorData]): SendAction[TContext, TEvent, AnyEventObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("escalate")(errorData.asInstanceOf[js.Any]).asInstanceOf[SendAction[TContext, TEvent, AnyEventObject]]
+    inline def escalate[TContext, TEvent /* <: EventObject */, TErrorData](errorData: TErrorData): SendAction[TContext, TEvent, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("escalate")(errorData.asInstanceOf[js.Any]).asInstanceOf[SendAction[TContext, TEvent, Any]]
+    inline def escalate[TContext, TEvent /* <: EventObject */, TErrorData](errorData: TErrorData, options: SendActionOptions[TContext, TEvent]): SendAction[TContext, TEvent, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("escalate")(errorData.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[SendAction[TContext, TEvent, Any]]
+    inline def escalate[TContext, TEvent /* <: EventObject */, TErrorData](errorData: ExprWithMeta[TContext, TEvent, TErrorData]): SendAction[TContext, TEvent, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("escalate")(errorData.asInstanceOf[js.Any]).asInstanceOf[SendAction[TContext, TEvent, Any]]
     inline def escalate[TContext, TEvent /* <: EventObject */, TErrorData](
       errorData: ExprWithMeta[TContext, TEvent, TErrorData],
       options: SendActionOptions[TContext, TEvent]
-    ): SendAction[TContext, TEvent, AnyEventObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("escalate")(errorData.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[SendAction[TContext, TEvent, AnyEventObject]]
+    ): SendAction[TContext, TEvent, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("escalate")(errorData.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[SendAction[TContext, TEvent, Any]]
     
     inline def forwardTo_to[TContext, TEvent /* <: EventObject */](
       target: /* import warning: importer.ImportType#apply Failed type conversion: std.Required<xstate.xstate/lib/types.SendActionOptions<TContext, TEvent>>['to'] */ js.Any
-    ): SendAction[TContext, TEvent, AnyEventObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("forwardTo")(target.asInstanceOf[js.Any]).asInstanceOf[SendAction[TContext, TEvent, AnyEventObject]]
+    ): SendAction[TContext, TEvent, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("forwardTo")(target.asInstanceOf[js.Any]).asInstanceOf[SendAction[TContext, TEvent, Any]]
     inline def forwardTo_to[TContext, TEvent /* <: EventObject */](
       target: /* import warning: importer.ImportType#apply Failed type conversion: std.Required<xstate.xstate/lib/types.SendActionOptions<TContext, TEvent>>['to'] */ js.Any,
       options: SendActionOptions[TContext, TEvent]
-    ): SendAction[TContext, TEvent, AnyEventObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("forwardTo")(target.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[SendAction[TContext, TEvent, AnyEventObject]]
+    ): SendAction[TContext, TEvent, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("forwardTo")(target.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[SendAction[TContext, TEvent, Any]]
     
     inline def getActionFunction[TContext, TEvent /* <: EventObject */](actionType: ActionType): js.UndefOr[
-        (ActionObject[TContext, TEvent]) | (ActionFunction[TContext, TEvent, BaseActionObject])
+        (ActionObject[TContext, TEvent, TEvent, BaseActionObject]) | (ActionFunction[TContext, TEvent, BaseActionObject, TEvent])
       ] = ^.asInstanceOf[js.Dynamic].applyDynamic("getActionFunction")(actionType.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[
-        (ActionObject[TContext, TEvent]) | (ActionFunction[TContext, TEvent, BaseActionObject])
+        (ActionObject[TContext, TEvent, TEvent, BaseActionObject]) | (ActionFunction[TContext, TEvent, BaseActionObject, TEvent])
       ]]
     inline def getActionFunction[TContext, TEvent /* <: EventObject */](actionType: ActionType, actionFunctionMap: ActionFunctionMap[TContext, TEvent, BaseActionObject]): js.UndefOr[
-        (ActionObject[TContext, TEvent]) | (ActionFunction[TContext, TEvent, BaseActionObject])
+        (ActionObject[TContext, TEvent, TEvent, BaseActionObject]) | (ActionFunction[TContext, TEvent, BaseActionObject, TEvent])
       ] = (^.asInstanceOf[js.Dynamic].applyDynamic("getActionFunction")(actionType.asInstanceOf[js.Any], actionFunctionMap.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[
-        (ActionObject[TContext, TEvent]) | (ActionFunction[TContext, TEvent, BaseActionObject])
+        (ActionObject[TContext, TEvent, TEvent, BaseActionObject]) | (ActionFunction[TContext, TEvent, BaseActionObject, TEvent])
       ]]
     
     @JSImport("xstate", "actions.initEvent")
     @js.native
     val initEvent: Event[Type] = js.native
     
-    inline def isActionObject[TContext, TEvent /* <: EventObject */](action: Action[TContext, TEvent]): /* is xstate.xstate/lib/types.ActionObject<TContext, TEvent> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isActionObject")(action.asInstanceOf[js.Any]).asInstanceOf[/* is xstate.xstate/lib/types.ActionObject<TContext, TEvent> */ Boolean]
+    inline def isActionObject[TContext, TEvent /* <: EventObject */](action: Action[TContext, TEvent, TEvent]): /* is xstate.xstate/lib/types.ActionObject<TContext, TEvent, TEvent, xstate.xstate/lib/types.BaseActionObject> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isActionObject")(action.asInstanceOf[js.Any]).asInstanceOf[/* is xstate.xstate/lib/types.ActionObject<TContext, TEvent, TEvent, xstate.xstate/lib/types.BaseActionObject> */ Boolean]
     
-    inline def log[TContext, TEvent /* <: EventObject */](): LogAction[TContext, TEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("log")().asInstanceOf[LogAction[TContext, TEvent]]
-    inline def log[TContext, TEvent /* <: EventObject */](expr: String): LogAction[TContext, TEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(expr.asInstanceOf[js.Any]).asInstanceOf[LogAction[TContext, TEvent]]
-    inline def log[TContext, TEvent /* <: EventObject */](expr: String, label: String): LogAction[TContext, TEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("log")(expr.asInstanceOf[js.Any], label.asInstanceOf[js.Any])).asInstanceOf[LogAction[TContext, TEvent]]
-    inline def log[TContext, TEvent /* <: EventObject */](expr: Unit, label: String): LogAction[TContext, TEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("log")(expr.asInstanceOf[js.Any], label.asInstanceOf[js.Any])).asInstanceOf[LogAction[TContext, TEvent]]
-    inline def log[TContext, TEvent /* <: EventObject */](expr: LogExpr[TContext, TEvent]): LogAction[TContext, TEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(expr.asInstanceOf[js.Any]).asInstanceOf[LogAction[TContext, TEvent]]
-    inline def log[TContext, TEvent /* <: EventObject */](expr: LogExpr[TContext, TEvent], label: String): LogAction[TContext, TEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("log")(expr.asInstanceOf[js.Any], label.asInstanceOf[js.Any])).asInstanceOf[LogAction[TContext, TEvent]]
+    inline def log[TContext, TExpressionEvent /* <: EventObject */, TEvent /* <: EventObject */](): LogAction[TContext, TExpressionEvent, TEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("log")().asInstanceOf[LogAction[TContext, TExpressionEvent, TEvent]]
+    inline def log[TContext, TExpressionEvent /* <: EventObject */, TEvent /* <: EventObject */](expr: String): LogAction[TContext, TExpressionEvent, TEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(expr.asInstanceOf[js.Any]).asInstanceOf[LogAction[TContext, TExpressionEvent, TEvent]]
+    inline def log[TContext, TExpressionEvent /* <: EventObject */, TEvent /* <: EventObject */](expr: String, label: String): LogAction[TContext, TExpressionEvent, TEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("log")(expr.asInstanceOf[js.Any], label.asInstanceOf[js.Any])).asInstanceOf[LogAction[TContext, TExpressionEvent, TEvent]]
+    inline def log[TContext, TExpressionEvent /* <: EventObject */, TEvent /* <: EventObject */](expr: Unit, label: String): LogAction[TContext, TExpressionEvent, TEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("log")(expr.asInstanceOf[js.Any], label.asInstanceOf[js.Any])).asInstanceOf[LogAction[TContext, TExpressionEvent, TEvent]]
+    inline def log[TContext, TExpressionEvent /* <: EventObject */, TEvent /* <: EventObject */](expr: LogExpr[TContext, TExpressionEvent]): LogAction[TContext, TExpressionEvent, TEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(expr.asInstanceOf[js.Any]).asInstanceOf[LogAction[TContext, TExpressionEvent, TEvent]]
+    inline def log[TContext, TExpressionEvent /* <: EventObject */, TEvent /* <: EventObject */](expr: LogExpr[TContext, TExpressionEvent], label: String): LogAction[TContext, TExpressionEvent, TEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("log")(expr.asInstanceOf[js.Any], label.asInstanceOf[js.Any])).asInstanceOf[LogAction[TContext, TExpressionEvent, TEvent]]
     
-    inline def pure[TContext, TEvent /* <: EventObject */](
+    inline def pure[TContext, TExpressionEvent /* <: EventObject */, TEvent /* <: EventObject */](
       getActions: js.Function2[
           /* context */ TContext, 
-          /* event */ TEvent, 
-          js.UndefOr[SingleOrArray[ActionObject[TContext, TEvent]]]
+          /* event */ TExpressionEvent, 
+          js.UndefOr[
+            SingleOrArray[
+              BaseActionObject | String | (ActionObject[TContext, TExpressionEvent, TEvent, BaseActionObject])
+            ]
+          ]
         ]
-    ): PureAction[TContext, TEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("pure")(getActions.asInstanceOf[js.Any]).asInstanceOf[PureAction[TContext, TEvent]]
+    ): PureAction[TContext, TExpressionEvent, TEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("pure")(getActions.asInstanceOf[js.Any]).asInstanceOf[PureAction[TContext, TExpressionEvent, TEvent]]
     
-    inline def raise[TContext, TEvent /* <: EventObject */](event: typings.xstate.libTypesMod.Event[TEvent]): RaiseAction[TEvent] | (SendAction[TContext, AnyEventObject, TEvent]) = ^.asInstanceOf[js.Dynamic].applyDynamic("raise")(event.asInstanceOf[js.Any]).asInstanceOf[RaiseAction[TEvent] | (SendAction[TContext, AnyEventObject, TEvent])]
+    inline def raise[TContext, TExpressionEvent /* <: EventObject */, TEvent /* <: EventObject */](event: NoInfer[typings.xstate.libTypesMod.Event[TEvent]]): RaiseAction[TContext, TExpressionEvent, TEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("raise")(event.asInstanceOf[js.Any]).asInstanceOf[RaiseAction[TContext, TExpressionEvent, TEvent]]
+    inline def raise[TContext, TExpressionEvent /* <: EventObject */, TEvent /* <: EventObject */](
+      event: NoInfer[typings.xstate.libTypesMod.Event[TEvent]],
+      options: RaiseActionOptions[TContext, TExpressionEvent]
+    ): RaiseAction[TContext, TExpressionEvent, TEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("raise")(event.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RaiseAction[TContext, TExpressionEvent, TEvent]]
+    inline def raise[TContext, TExpressionEvent /* <: EventObject */, TEvent /* <: EventObject */](event: SendExpr[TContext, TExpressionEvent, TEvent]): RaiseAction[TContext, TExpressionEvent, TEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("raise")(event.asInstanceOf[js.Any]).asInstanceOf[RaiseAction[TContext, TExpressionEvent, TEvent]]
+    inline def raise[TContext, TExpressionEvent /* <: EventObject */, TEvent /* <: EventObject */](
+      event: SendExpr[TContext, TExpressionEvent, TEvent],
+      options: RaiseActionOptions[TContext, TExpressionEvent]
+    ): RaiseAction[TContext, TExpressionEvent, TEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("raise")(event.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RaiseAction[TContext, TExpressionEvent, TEvent]]
     
     inline def resolveActions[TContext, TEvent /* <: EventObject */](
       machine: typings.xstate.libStateNodeMod.StateNode[TContext, Any, TEvent, Any, Any, Any],
       currentState: Unit,
       currentContext: TContext,
       _event: Event[TEvent],
-      actionBlocks: js.Array[js.Array[ActionObject[TContext, TEvent]]]
-    ): js.Tuple2[js.Array[ActionObject[TContext, TEvent]], TContext] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveActions")(machine.asInstanceOf[js.Any], currentState.asInstanceOf[js.Any], currentContext.asInstanceOf[js.Any], _event.asInstanceOf[js.Any], actionBlocks.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[ActionObject[TContext, TEvent]], TContext]]
+      actionBlocks: js.Array[Actions[TContext, TEvent]]
+    ): js.Tuple2[js.Array[ActionObject[TContext, TEvent, TEvent, BaseActionObject]], TContext] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveActions")(machine.asInstanceOf[js.Any], currentState.asInstanceOf[js.Any], currentContext.asInstanceOf[js.Any], _event.asInstanceOf[js.Any], actionBlocks.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[ActionObject[TContext, TEvent, TEvent, BaseActionObject]], TContext]]
     inline def resolveActions[TContext, TEvent /* <: EventObject */](
       machine: typings.xstate.libStateNodeMod.StateNode[TContext, Any, TEvent, Any, Any, Any],
       currentState: Unit,
       currentContext: TContext,
       _event: Event[TEvent],
-      actionBlocks: js.Array[js.Array[ActionObject[TContext, TEvent]]],
+      actionBlocks: js.Array[Actions[TContext, TEvent]],
       predictableExec: Unit,
       preserveActionOrder: Boolean
-    ): js.Tuple2[js.Array[ActionObject[TContext, TEvent]], TContext] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveActions")(machine.asInstanceOf[js.Any], currentState.asInstanceOf[js.Any], currentContext.asInstanceOf[js.Any], _event.asInstanceOf[js.Any], actionBlocks.asInstanceOf[js.Any], predictableExec.asInstanceOf[js.Any], preserveActionOrder.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[ActionObject[TContext, TEvent]], TContext]]
+    ): js.Tuple2[js.Array[ActionObject[TContext, TEvent, TEvent, BaseActionObject]], TContext] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveActions")(machine.asInstanceOf[js.Any], currentState.asInstanceOf[js.Any], currentContext.asInstanceOf[js.Any], _event.asInstanceOf[js.Any], actionBlocks.asInstanceOf[js.Any], predictableExec.asInstanceOf[js.Any], preserveActionOrder.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[ActionObject[TContext, TEvent, TEvent, BaseActionObject]], TContext]]
     inline def resolveActions[TContext, TEvent /* <: EventObject */](
       machine: typings.xstate.libStateNodeMod.StateNode[TContext, Any, TEvent, Any, Any, Any],
       currentState: Unit,
       currentContext: TContext,
       _event: Event[TEvent],
-      actionBlocks: js.Array[js.Array[ActionObject[TContext, TEvent]]],
+      actionBlocks: js.Array[Actions[TContext, TEvent]],
       predictableExec: PredictableActionArgumentsExec
-    ): js.Tuple2[js.Array[ActionObject[TContext, TEvent]], TContext] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveActions")(machine.asInstanceOf[js.Any], currentState.asInstanceOf[js.Any], currentContext.asInstanceOf[js.Any], _event.asInstanceOf[js.Any], actionBlocks.asInstanceOf[js.Any], predictableExec.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[ActionObject[TContext, TEvent]], TContext]]
+    ): js.Tuple2[js.Array[ActionObject[TContext, TEvent, TEvent, BaseActionObject]], TContext] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveActions")(machine.asInstanceOf[js.Any], currentState.asInstanceOf[js.Any], currentContext.asInstanceOf[js.Any], _event.asInstanceOf[js.Any], actionBlocks.asInstanceOf[js.Any], predictableExec.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[ActionObject[TContext, TEvent, TEvent, BaseActionObject]], TContext]]
     inline def resolveActions[TContext, TEvent /* <: EventObject */](
       machine: typings.xstate.libStateNodeMod.StateNode[TContext, Any, TEvent, Any, Any, Any],
       currentState: Unit,
       currentContext: TContext,
       _event: Event[TEvent],
-      actionBlocks: js.Array[js.Array[ActionObject[TContext, TEvent]]],
+      actionBlocks: js.Array[Actions[TContext, TEvent]],
       predictableExec: PredictableActionArgumentsExec,
       preserveActionOrder: Boolean
-    ): js.Tuple2[js.Array[ActionObject[TContext, TEvent]], TContext] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveActions")(machine.asInstanceOf[js.Any], currentState.asInstanceOf[js.Any], currentContext.asInstanceOf[js.Any], _event.asInstanceOf[js.Any], actionBlocks.asInstanceOf[js.Any], predictableExec.asInstanceOf[js.Any], preserveActionOrder.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[ActionObject[TContext, TEvent]], TContext]]
+    ): js.Tuple2[js.Array[ActionObject[TContext, TEvent, TEvent, BaseActionObject]], TContext] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveActions")(machine.asInstanceOf[js.Any], currentState.asInstanceOf[js.Any], currentContext.asInstanceOf[js.Any], _event.asInstanceOf[js.Any], actionBlocks.asInstanceOf[js.Any], predictableExec.asInstanceOf[js.Any], preserveActionOrder.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[ActionObject[TContext, TEvent, TEvent, BaseActionObject]], TContext]]
     inline def resolveActions[TContext, TEvent /* <: EventObject */](
       machine: typings.xstate.libStateNodeMod.StateNode[TContext, Any, TEvent, Any, Any, Any],
       currentState: typings.xstate.libStateMod.State[TContext, TEvent, Any, Any, Any],
       currentContext: TContext,
       _event: Event[TEvent],
-      actionBlocks: js.Array[js.Array[ActionObject[TContext, TEvent]]]
-    ): js.Tuple2[js.Array[ActionObject[TContext, TEvent]], TContext] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveActions")(machine.asInstanceOf[js.Any], currentState.asInstanceOf[js.Any], currentContext.asInstanceOf[js.Any], _event.asInstanceOf[js.Any], actionBlocks.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[ActionObject[TContext, TEvent]], TContext]]
+      actionBlocks: js.Array[Actions[TContext, TEvent]]
+    ): js.Tuple2[js.Array[ActionObject[TContext, TEvent, TEvent, BaseActionObject]], TContext] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveActions")(machine.asInstanceOf[js.Any], currentState.asInstanceOf[js.Any], currentContext.asInstanceOf[js.Any], _event.asInstanceOf[js.Any], actionBlocks.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[ActionObject[TContext, TEvent, TEvent, BaseActionObject]], TContext]]
     inline def resolveActions[TContext, TEvent /* <: EventObject */](
       machine: typings.xstate.libStateNodeMod.StateNode[TContext, Any, TEvent, Any, Any, Any],
       currentState: typings.xstate.libStateMod.State[TContext, TEvent, Any, Any, Any],
       currentContext: TContext,
       _event: Event[TEvent],
-      actionBlocks: js.Array[js.Array[ActionObject[TContext, TEvent]]],
+      actionBlocks: js.Array[Actions[TContext, TEvent]],
       predictableExec: Unit,
       preserveActionOrder: Boolean
-    ): js.Tuple2[js.Array[ActionObject[TContext, TEvent]], TContext] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveActions")(machine.asInstanceOf[js.Any], currentState.asInstanceOf[js.Any], currentContext.asInstanceOf[js.Any], _event.asInstanceOf[js.Any], actionBlocks.asInstanceOf[js.Any], predictableExec.asInstanceOf[js.Any], preserveActionOrder.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[ActionObject[TContext, TEvent]], TContext]]
+    ): js.Tuple2[js.Array[ActionObject[TContext, TEvent, TEvent, BaseActionObject]], TContext] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveActions")(machine.asInstanceOf[js.Any], currentState.asInstanceOf[js.Any], currentContext.asInstanceOf[js.Any], _event.asInstanceOf[js.Any], actionBlocks.asInstanceOf[js.Any], predictableExec.asInstanceOf[js.Any], preserveActionOrder.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[ActionObject[TContext, TEvent, TEvent, BaseActionObject]], TContext]]
     inline def resolveActions[TContext, TEvent /* <: EventObject */](
       machine: typings.xstate.libStateNodeMod.StateNode[TContext, Any, TEvent, Any, Any, Any],
       currentState: typings.xstate.libStateMod.State[TContext, TEvent, Any, Any, Any],
       currentContext: TContext,
       _event: Event[TEvent],
-      actionBlocks: js.Array[js.Array[ActionObject[TContext, TEvent]]],
+      actionBlocks: js.Array[Actions[TContext, TEvent]],
       predictableExec: PredictableActionArgumentsExec
-    ): js.Tuple2[js.Array[ActionObject[TContext, TEvent]], TContext] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveActions")(machine.asInstanceOf[js.Any], currentState.asInstanceOf[js.Any], currentContext.asInstanceOf[js.Any], _event.asInstanceOf[js.Any], actionBlocks.asInstanceOf[js.Any], predictableExec.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[ActionObject[TContext, TEvent]], TContext]]
+    ): js.Tuple2[js.Array[ActionObject[TContext, TEvent, TEvent, BaseActionObject]], TContext] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveActions")(machine.asInstanceOf[js.Any], currentState.asInstanceOf[js.Any], currentContext.asInstanceOf[js.Any], _event.asInstanceOf[js.Any], actionBlocks.asInstanceOf[js.Any], predictableExec.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[ActionObject[TContext, TEvent, TEvent, BaseActionObject]], TContext]]
     inline def resolveActions[TContext, TEvent /* <: EventObject */](
       machine: typings.xstate.libStateNodeMod.StateNode[TContext, Any, TEvent, Any, Any, Any],
       currentState: typings.xstate.libStateMod.State[TContext, TEvent, Any, Any, Any],
       currentContext: TContext,
       _event: Event[TEvent],
-      actionBlocks: js.Array[js.Array[ActionObject[TContext, TEvent]]],
+      actionBlocks: js.Array[Actions[TContext, TEvent]],
       predictableExec: PredictableActionArgumentsExec,
       preserveActionOrder: Boolean
-    ): js.Tuple2[js.Array[ActionObject[TContext, TEvent]], TContext] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveActions")(machine.asInstanceOf[js.Any], currentState.asInstanceOf[js.Any], currentContext.asInstanceOf[js.Any], _event.asInstanceOf[js.Any], actionBlocks.asInstanceOf[js.Any], predictableExec.asInstanceOf[js.Any], preserveActionOrder.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[ActionObject[TContext, TEvent]], TContext]]
+    ): js.Tuple2[js.Array[ActionObject[TContext, TEvent, TEvent, BaseActionObject]], TContext] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveActions")(machine.asInstanceOf[js.Any], currentState.asInstanceOf[js.Any], currentContext.asInstanceOf[js.Any], _event.asInstanceOf[js.Any], actionBlocks.asInstanceOf[js.Any], predictableExec.asInstanceOf[js.Any], preserveActionOrder.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[ActionObject[TContext, TEvent, TEvent, BaseActionObject]], TContext]]
     
-    inline def resolveLog[TContext, TEvent /* <: EventObject */](action: LogAction[TContext, TEvent], ctx: TContext, _event: Event[TEvent]): LogActionObject[TContext, TEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveLog")(action.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], _event.asInstanceOf[js.Any])).asInstanceOf[LogActionObject[TContext, TEvent]]
+    inline def resolveLog[TContext, TEvent /* <: EventObject */](action: LogAction[TContext, TEvent, TEvent], ctx: TContext, _event: Event[TEvent]): LogActionObject[TContext, TEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveLog")(action.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], _event.asInstanceOf[js.Any])).asInstanceOf[LogActionObject[TContext, TEvent]]
     
-    inline def resolveRaise[TEvent /* <: EventObject */](action: RaiseAction[TEvent]): RaiseActionObject[TEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveRaise")(action.asInstanceOf[js.Any]).asInstanceOf[RaiseActionObject[TEvent]]
+    inline def resolveRaise[TContext, TEvent /* <: EventObject */, TExpressionEvent /* <: EventObject */](
+      action: RaiseAction[TContext, TExpressionEvent, TEvent],
+      ctx: TContext,
+      _event: Event[TExpressionEvent]
+    ): RaiseActionObject[TContext, TExpressionEvent, TEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveRaise")(action.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], _event.asInstanceOf[js.Any])).asInstanceOf[RaiseActionObject[TContext, TExpressionEvent, TEvent]]
+    inline def resolveRaise[TContext, TEvent /* <: EventObject */, TExpressionEvent /* <: EventObject */](
+      action: RaiseAction[TContext, TExpressionEvent, TEvent],
+      ctx: TContext,
+      _event: Event[TExpressionEvent],
+      delaysMap: DelayFunctionMap[TContext, TEvent]
+    ): RaiseActionObject[TContext, TExpressionEvent, TEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveRaise")(action.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], _event.asInstanceOf[js.Any], delaysMap.asInstanceOf[js.Any])).asInstanceOf[RaiseActionObject[TContext, TExpressionEvent, TEvent]]
     
     inline def resolveSend[TContext, TEvent /* <: EventObject */, TSentEvent /* <: EventObject */](action: SendAction[TContext, TEvent, TSentEvent], ctx: TContext, _event: Event[TEvent]): SendActionObject[TContext, TEvent, TSentEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveSend")(action.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], _event.asInstanceOf[js.Any])).asInstanceOf[SendActionObject[TContext, TEvent, TSentEvent]]
     inline def resolveSend[TContext, TEvent /* <: EventObject */, TSentEvent /* <: EventObject */](
@@ -850,22 +876,28 @@ object mod {
       delaysMap: DelayFunctionMap[TContext, TEvent]
     ): SendActionObject[TContext, TEvent, TSentEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveSend")(action.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], _event.asInstanceOf[js.Any], delaysMap.asInstanceOf[js.Any])).asInstanceOf[SendActionObject[TContext, TEvent, TSentEvent]]
     
-    inline def resolveStop[TContext, TEvent /* <: EventObject */](action: StopAction[TContext, TEvent], context: TContext, _event: Event[TEvent]): StopActionObject = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveStop")(action.asInstanceOf[js.Any], context.asInstanceOf[js.Any], _event.asInstanceOf[js.Any])).asInstanceOf[StopActionObject]
+    inline def resolveStop[TContext, TEvent /* <: EventObject */](action: StopAction[TContext, TEvent, TEvent], context: TContext, _event: Event[TEvent]): StopActionObject = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveStop")(action.asInstanceOf[js.Any], context.asInstanceOf[js.Any], _event.asInstanceOf[js.Any])).asInstanceOf[StopActionObject]
     
     inline def respond[TContext, TEvent /* <: EventObject */, TSentEvent /* <: EventObject */](event: typings.xstate.libTypesMod.Event[TEvent]): SendAction[TContext, TEvent, AnyEventObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("respond")(event.asInstanceOf[js.Any]).asInstanceOf[SendAction[TContext, TEvent, AnyEventObject]]
     inline def respond[TContext, TEvent /* <: EventObject */, TSentEvent /* <: EventObject */](event: typings.xstate.libTypesMod.Event[TEvent], options: SendActionOptions[TContext, TEvent]): SendAction[TContext, TEvent, AnyEventObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("respond")(event.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[SendAction[TContext, TEvent, AnyEventObject]]
     inline def respond[TContext, TEvent /* <: EventObject */, TSentEvent /* <: EventObject */](event: SendExpr[TContext, TEvent, TSentEvent]): SendAction[TContext, TEvent, AnyEventObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("respond")(event.asInstanceOf[js.Any]).asInstanceOf[SendAction[TContext, TEvent, AnyEventObject]]
     inline def respond[TContext, TEvent /* <: EventObject */, TSentEvent /* <: EventObject */](event: SendExpr[TContext, TEvent, TSentEvent], options: SendActionOptions[TContext, TEvent]): SendAction[TContext, TEvent, AnyEventObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("respond")(event.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[SendAction[TContext, TEvent, AnyEventObject]]
     
-    inline def send[TContext, TEvent /* <: EventObject */, TSentEvent /* <: EventObject */](event: typings.xstate.libTypesMod.Event[TSentEvent]): SendAction[TContext, TEvent, TSentEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("send")(event.asInstanceOf[js.Any]).asInstanceOf[SendAction[TContext, TEvent, TSentEvent]]
-    inline def send[TContext, TEvent /* <: EventObject */, TSentEvent /* <: EventObject */](event: typings.xstate.libTypesMod.Event[TSentEvent], options: SendActionOptions[TContext, TEvent]): SendAction[TContext, TEvent, TSentEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("send")(event.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[SendAction[TContext, TEvent, TSentEvent]]
-    inline def send[TContext, TEvent /* <: EventObject */, TSentEvent /* <: EventObject */](event: SendExpr[TContext, TEvent, TSentEvent]): SendAction[TContext, TEvent, TSentEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("send")(event.asInstanceOf[js.Any]).asInstanceOf[SendAction[TContext, TEvent, TSentEvent]]
-    inline def send[TContext, TEvent /* <: EventObject */, TSentEvent /* <: EventObject */](event: SendExpr[TContext, TEvent, TSentEvent], options: SendActionOptions[TContext, TEvent]): SendAction[TContext, TEvent, TSentEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("send")(event.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[SendAction[TContext, TEvent, TSentEvent]]
+    inline def send[TContext, TEvent /* <: EventObject */, TSentEvent /* <: EventObject */](event: typings.xstate.libTypesMod.Event[AnyEventObject]): SendAction[TContext, TEvent, TSentEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("send")(event.asInstanceOf[js.Any]).asInstanceOf[SendAction[TContext, TEvent, TSentEvent]]
+    inline def send[TContext, TEvent /* <: EventObject */, TSentEvent /* <: EventObject */](
+      event: typings.xstate.libTypesMod.Event[AnyEventObject],
+      options: SendActionOptions[TContext, TEvent]
+    ): SendAction[TContext, TEvent, TSentEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("send")(event.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[SendAction[TContext, TEvent, TSentEvent]]
+    inline def send[TContext, TEvent /* <: EventObject */, TSentEvent /* <: EventObject */](event: SendExpr[TContext, TEvent, AnyEventObject]): SendAction[TContext, TEvent, TSentEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("send")(event.asInstanceOf[js.Any]).asInstanceOf[SendAction[TContext, TEvent, TSentEvent]]
+    inline def send[TContext, TEvent /* <: EventObject */, TSentEvent /* <: EventObject */](event: SendExpr[TContext, TEvent, AnyEventObject], options: SendActionOptions[TContext, TEvent]): SendAction[TContext, TEvent, TSentEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("send")(event.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[SendAction[TContext, TEvent, TSentEvent]]
     
-    inline def sendParent[TContext, TEvent /* <: EventObject */, TSentEvent /* <: EventObject */](event: typings.xstate.libTypesMod.Event[TSentEvent]): SendAction[TContext, TEvent, TSentEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("sendParent")(event.asInstanceOf[js.Any]).asInstanceOf[SendAction[TContext, TEvent, TSentEvent]]
-    inline def sendParent[TContext, TEvent /* <: EventObject */, TSentEvent /* <: EventObject */](event: typings.xstate.libTypesMod.Event[TSentEvent], options: SendActionOptions[TContext, TEvent]): SendAction[TContext, TEvent, TSentEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendParent")(event.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[SendAction[TContext, TEvent, TSentEvent]]
-    inline def sendParent[TContext, TEvent /* <: EventObject */, TSentEvent /* <: EventObject */](event: SendExpr[TContext, TEvent, TSentEvent]): SendAction[TContext, TEvent, TSentEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("sendParent")(event.asInstanceOf[js.Any]).asInstanceOf[SendAction[TContext, TEvent, TSentEvent]]
-    inline def sendParent[TContext, TEvent /* <: EventObject */, TSentEvent /* <: EventObject */](event: SendExpr[TContext, TEvent, TSentEvent], options: SendActionOptions[TContext, TEvent]): SendAction[TContext, TEvent, TSentEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendParent")(event.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[SendAction[TContext, TEvent, TSentEvent]]
+    inline def sendParent[TContext, TEvent /* <: EventObject */, TSentEvent /* <: EventObject */](event: typings.xstate.libTypesMod.Event[AnyEventObject]): SendAction[TContext, TEvent, TSentEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("sendParent")(event.asInstanceOf[js.Any]).asInstanceOf[SendAction[TContext, TEvent, TSentEvent]]
+    inline def sendParent[TContext, TEvent /* <: EventObject */, TSentEvent /* <: EventObject */](
+      event: typings.xstate.libTypesMod.Event[AnyEventObject],
+      options: SendActionOptions[TContext, TEvent]
+    ): SendAction[TContext, TEvent, TSentEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendParent")(event.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[SendAction[TContext, TEvent, TSentEvent]]
+    inline def sendParent[TContext, TEvent /* <: EventObject */, TSentEvent /* <: EventObject */](event: SendExpr[TContext, TEvent, AnyEventObject]): SendAction[TContext, TEvent, TSentEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("sendParent")(event.asInstanceOf[js.Any]).asInstanceOf[SendAction[TContext, TEvent, TSentEvent]]
+    inline def sendParent[TContext, TEvent /* <: EventObject */, TSentEvent /* <: EventObject */](event: SendExpr[TContext, TEvent, AnyEventObject], options: SendActionOptions[TContext, TEvent]): SendAction[TContext, TEvent, TSentEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendParent")(event.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[SendAction[TContext, TEvent, TSentEvent]]
     
     inline def sendTo[TContext, TEvent /* <: EventObject */, TActor /* <: AnyActorRef */](actor: TActor, event: EventFrom[TActor, scala.Nothing, ResolveEventType[TActor]]): SendAction[TContext, TEvent, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendTo")(actor.asInstanceOf[js.Any], event.asInstanceOf[js.Any])).asInstanceOf[SendAction[TContext, TEvent, Any]]
     inline def sendTo[TContext, TEvent /* <: EventObject */, TActor /* <: AnyActorRef */](
@@ -914,16 +946,16 @@ object mod {
       options: SendActionOptions[TContext, TEvent]
     ): SendAction[TContext, TEvent, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendTo")(actor.asInstanceOf[js.Any], event.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[SendAction[TContext, TEvent, Any]]
     inline def sendTo[TContext, TEvent /* <: EventObject */, TActor /* <: AnyActorRef */](
-      actor: js.Function1[/* ctx */ TContext, TActor],
+      actor: js.Function2[/* ctx */ TContext, /* event */ TEvent, TActor],
       event: EventFrom[TActor, scala.Nothing, ResolveEventType[TActor]]
     ): SendAction[TContext, TEvent, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendTo")(actor.asInstanceOf[js.Any], event.asInstanceOf[js.Any])).asInstanceOf[SendAction[TContext, TEvent, Any]]
     inline def sendTo[TContext, TEvent /* <: EventObject */, TActor /* <: AnyActorRef */](
-      actor: js.Function1[/* ctx */ TContext, TActor],
+      actor: js.Function2[/* ctx */ TContext, /* event */ TEvent, TActor],
       event: EventFrom[TActor, scala.Nothing, ResolveEventType[TActor]],
       options: SendActionOptions[TContext, TEvent]
     ): SendAction[TContext, TEvent, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendTo")(actor.asInstanceOf[js.Any], event.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[SendAction[TContext, TEvent, Any]]
     inline def sendTo[TContext, TEvent /* <: EventObject */, TActor /* <: AnyActorRef */](
-      actor: js.Function1[/* ctx */ TContext, TActor],
+      actor: js.Function2[/* ctx */ TContext, /* event */ TEvent, TActor],
       event: SendExpr[
           TContext, 
           TEvent, 
@@ -931,7 +963,7 @@ object mod {
         ]
     ): SendAction[TContext, TEvent, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendTo")(actor.asInstanceOf[js.Any], event.asInstanceOf[js.Any])).asInstanceOf[SendAction[TContext, TEvent, Any]]
     inline def sendTo[TContext, TEvent /* <: EventObject */, TActor /* <: AnyActorRef */](
-      actor: js.Function1[/* ctx */ TContext, TActor],
+      actor: js.Function2[/* ctx */ TContext, /* event */ TEvent, TActor],
       event: SendExpr[
           TContext, 
           TEvent, 
@@ -940,35 +972,34 @@ object mod {
       options: SendActionOptions[TContext, TEvent]
     ): SendAction[TContext, TEvent, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendTo")(actor.asInstanceOf[js.Any], event.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[SendAction[TContext, TEvent, Any]]
     
-    inline def sendUpdate[TContext, TEvent /* <: EventObject */](): SendAction[TContext, TEvent, TypeUpdate] = ^.asInstanceOf[js.Dynamic].applyDynamic("sendUpdate")().asInstanceOf[SendAction[TContext, TEvent, TypeUpdate]]
+    inline def sendUpdate[TContext, TEvent /* <: EventObject */](): SendAction[TContext, TEvent, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("sendUpdate")().asInstanceOf[SendAction[TContext, TEvent, Any]]
     
     inline def start[TContext, TEvent /* <: EventObject */](activity: String): ActivityActionObject[TContext, TEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("start")(activity.asInstanceOf[js.Any]).asInstanceOf[ActivityActionObject[TContext, TEvent]]
     inline def start[TContext, TEvent /* <: EventObject */](activity: ActivityDefinition[TContext, TEvent]): ActivityActionObject[TContext, TEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("start")(activity.asInstanceOf[js.Any]).asInstanceOf[ActivityActionObject[TContext, TEvent]]
     
-    inline def stop[TContext, TEvent /* <: EventObject */](actorRef: String): StopAction[TContext, TEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("stop")(actorRef.asInstanceOf[js.Any]).asInstanceOf[StopAction[TContext, TEvent]]
-    inline def stop[TContext, TEvent /* <: EventObject */](actorRef: ActivityDefinition[TContext, TEvent]): StopAction[TContext, TEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("stop")(actorRef.asInstanceOf[js.Any]).asInstanceOf[StopAction[TContext, TEvent]]
-    inline def stop[TContext, TEvent /* <: EventObject */](actorRef: Expr[TContext, TEvent, String | Id]): StopAction[TContext, TEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("stop")(actorRef.asInstanceOf[js.Any]).asInstanceOf[StopAction[TContext, TEvent]]
+    inline def stop[TContext, TExpressionEvent /* <: EventObject */, TEvent /* <: EventObject */](actorRef: String): StopAction[TContext, TExpressionEvent, TEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("stop")(actorRef.asInstanceOf[js.Any]).asInstanceOf[StopAction[TContext, TExpressionEvent, TEvent]]
+    inline def stop[TContext, TExpressionEvent /* <: EventObject */, TEvent /* <: EventObject */](actorRef: Expr[TContext, TExpressionEvent, String | Id]): StopAction[TContext, TExpressionEvent, TEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("stop")(actorRef.asInstanceOf[js.Any]).asInstanceOf[StopAction[TContext, TExpressionEvent, TEvent]]
     
-    inline def toActionObject[TContext, TEvent /* <: EventObject */](action: Action[TContext, TEvent]): ActionObject[TContext, TEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("toActionObject")(action.asInstanceOf[js.Any]).asInstanceOf[ActionObject[TContext, TEvent]]
+    inline def toActionObject[TContext, TEvent /* <: EventObject */](action: Action[TContext, TEvent, TEvent]): ActionObject[TContext, TEvent, TEvent, BaseActionObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("toActionObject")(action.asInstanceOf[js.Any]).asInstanceOf[ActionObject[TContext, TEvent, TEvent, BaseActionObject]]
     inline def toActionObject[TContext, TEvent /* <: EventObject */](
-      action: Action[TContext, TEvent],
+      action: Action[TContext, TEvent, TEvent],
       actionFunctionMap: ActionFunctionMap[TContext, TEvent, BaseActionObject]
-    ): ActionObject[TContext, TEvent] = (^.asInstanceOf[js.Dynamic].applyDynamic("toActionObject")(action.asInstanceOf[js.Any], actionFunctionMap.asInstanceOf[js.Any])).asInstanceOf[ActionObject[TContext, TEvent]]
+    ): ActionObject[TContext, TEvent, TEvent, BaseActionObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("toActionObject")(action.asInstanceOf[js.Any], actionFunctionMap.asInstanceOf[js.Any])).asInstanceOf[ActionObject[TContext, TEvent, TEvent, BaseActionObject]]
     
-    inline def toActionObjects[TContext, TEvent /* <: EventObject */](): js.Array[ActionObject[TContext, TEvent]] = ^.asInstanceOf[js.Dynamic].applyDynamic("toActionObjects")().asInstanceOf[js.Array[ActionObject[TContext, TEvent]]]
-    inline def toActionObjects[TContext, TEvent /* <: EventObject */](action: Unit, actionFunctionMap: ActionFunctionMap[TContext, TEvent, BaseActionObject]): js.Array[ActionObject[TContext, TEvent]] = (^.asInstanceOf[js.Dynamic].applyDynamic("toActionObjects")(action.asInstanceOf[js.Any], actionFunctionMap.asInstanceOf[js.Any])).asInstanceOf[js.Array[ActionObject[TContext, TEvent]]]
-    inline def toActionObjects[TContext, TEvent /* <: EventObject */](action: SingleOrArray[Action[TContext, TEvent]]): js.Array[ActionObject[TContext, TEvent]] = ^.asInstanceOf[js.Dynamic].applyDynamic("toActionObjects")(action.asInstanceOf[js.Any]).asInstanceOf[js.Array[ActionObject[TContext, TEvent]]]
+    inline def toActionObjects[TContext, TEvent /* <: EventObject */](): js.Array[ActionObject[TContext, TEvent, TEvent, BaseActionObject]] = ^.asInstanceOf[js.Dynamic].applyDynamic("toActionObjects")().asInstanceOf[js.Array[ActionObject[TContext, TEvent, TEvent, BaseActionObject]]]
+    inline def toActionObjects[TContext, TEvent /* <: EventObject */](action: Unit, actionFunctionMap: ActionFunctionMap[TContext, TEvent, BaseActionObject]): js.Array[ActionObject[TContext, TEvent, TEvent, BaseActionObject]] = (^.asInstanceOf[js.Dynamic].applyDynamic("toActionObjects")(action.asInstanceOf[js.Any], actionFunctionMap.asInstanceOf[js.Any])).asInstanceOf[js.Array[ActionObject[TContext, TEvent, TEvent, BaseActionObject]]]
+    inline def toActionObjects[TContext, TEvent /* <: EventObject */](action: SingleOrArray[Action[TContext, TEvent, TEvent]]): js.Array[ActionObject[TContext, TEvent, TEvent, BaseActionObject]] = ^.asInstanceOf[js.Dynamic].applyDynamic("toActionObjects")(action.asInstanceOf[js.Any]).asInstanceOf[js.Array[ActionObject[TContext, TEvent, TEvent, BaseActionObject]]]
     inline def toActionObjects[TContext, TEvent /* <: EventObject */](
-      action: SingleOrArray[Action[TContext, TEvent]],
+      action: SingleOrArray[Action[TContext, TEvent, TEvent]],
       actionFunctionMap: ActionFunctionMap[TContext, TEvent, BaseActionObject]
-    ): js.Array[ActionObject[TContext, TEvent]] = (^.asInstanceOf[js.Dynamic].applyDynamic("toActionObjects")(action.asInstanceOf[js.Any], actionFunctionMap.asInstanceOf[js.Any])).asInstanceOf[js.Array[ActionObject[TContext, TEvent]]]
+    ): js.Array[ActionObject[TContext, TEvent, TEvent, BaseActionObject]] = (^.asInstanceOf[js.Dynamic].applyDynamic("toActionObjects")(action.asInstanceOf[js.Any], actionFunctionMap.asInstanceOf[js.Any])).asInstanceOf[js.Array[ActionObject[TContext, TEvent, TEvent, BaseActionObject]]]
     
     inline def toActivityDefinition[TContext, TEvent /* <: EventObject */](action: String): ActivityDefinition[TContext, TEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("toActivityDefinition")(action.asInstanceOf[js.Any]).asInstanceOf[ActivityDefinition[TContext, TEvent]]
     inline def toActivityDefinition[TContext, TEvent /* <: EventObject */](action: ActivityDefinition[TContext, TEvent]): ActivityDefinition[TContext, TEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("toActivityDefinition")(action.asInstanceOf[js.Any]).asInstanceOf[ActivityDefinition[TContext, TEvent]]
   }
   
-  /* import warning: parser.TsParser#tsDeclVar Dropped IArray(send, sendTo, sendParent, sendUpdate, forwardTo, doneInvoke, raise) */ inline def assign[TContext, TEvent /* <: EventObject */](assignment: Assigner[TContext, TEvent]): AssignAction[TContext, TEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("assign")(assignment.asInstanceOf[js.Any]).asInstanceOf[AssignAction[TContext, TEvent]]
-  inline def assign[TContext, TEvent /* <: EventObject */](assignment: PropertyAssigner[TContext, TEvent]): AssignAction[TContext, TEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("assign")(assignment.asInstanceOf[js.Any]).asInstanceOf[AssignAction[TContext, TEvent]]
+  /* import warning: parser.TsParser#tsDeclVar Dropped IArray(send, sendTo, sendParent, sendUpdate, forwardTo, doneInvoke, raise) */ inline def assign[TContext, TExpressionEvent /* <: EventObject */, TEvent /* <: EventObject */](assignment: Assigner[LowInfer[TContext], TExpressionEvent]): AssignAction[TContext, TExpressionEvent, TEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("assign")(assignment.asInstanceOf[js.Any]).asInstanceOf[AssignAction[TContext, TExpressionEvent, TEvent]]
+  inline def assign[TContext, TExpressionEvent /* <: EventObject */, TEvent /* <: EventObject */](assignment: PropertyAssigner[LowInfer[TContext], TExpressionEvent]): AssignAction[TContext, TExpressionEvent, TEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("assign")(assignment.asInstanceOf[js.Any]).asInstanceOf[AssignAction[TContext, TExpressionEvent, TEvent]]
   
   inline def createMachine[TContext, TEvent /* <: EventObject */, TTypestate /* <: Typestate[TContext] */, TServiceMap /* <: ServiceMap */, TTypesMeta /* <: TypegenConstraint */](config: MachineConfig[TContext, Any, TEvent, BaseActionObject, TServiceMap, TTypesMeta]): StateMachine[
     TContext, 
@@ -1021,10 +1052,10 @@ object mod {
   inline def createSchema[T](schema: Any): T = ^.asInstanceOf[js.Dynamic].applyDynamic("createSchema")(schema.asInstanceOf[js.Any]).asInstanceOf[T]
   
   inline def interpret[TContext, TStateSchema /* <: StateSchema[Any] */, TEvent /* <: EventObject */, TTypestate /* <: Typestate[TContext] */, TResolvedTypesMeta](
-    machine: /* import warning: importer.ImportType#apply Failed type conversion: xstate.xstate/lib/typegenTypes.AreAllImplementationsAssumedToBeProvided<TResolvedTypesMeta, xstate.xstate/lib/types.Prop<xstate.xstate/lib/types.Prop<TResolvedTypesMeta, 'resolved'>, 'missingImplementations'>> extends true ? xstate.xstate/lib/types.StateMachine<TContext, TStateSchema, TEvent, TTypestate, any, any, TResolvedTypesMeta> : 'Some implementations missing' */ js.Any
+    machine: /* import warning: importer.ImportType#apply Failed type conversion: xstate.xstate/lib/typegenTypes.AreAllImplementationsAssumedToBeProvided<TResolvedTypesMeta, xstate.xstate/lib/types.Prop<xstate.xstate/lib/types.Prop<TResolvedTypesMeta, 'resolved'>, 'missingImplementations'>> extends true ? xstate.xstate/lib/types.StateMachine<TContext, TStateSchema, TEvent, TTypestate, any, any, TResolvedTypesMeta> : xstate.xstate/lib/typegenTypes.MissingImplementationsError<TResolvedTypesMeta, xstate.xstate/lib/types.Prop<xstate.xstate/lib/types.Prop<TResolvedTypesMeta, 'resolved'>, 'missingImplementations'>> */ js.Any
   ): typings.xstate.libInterpreterMod.Interpreter[TContext, TStateSchema, TEvent, TTypestate, TResolvedTypesMeta] = ^.asInstanceOf[js.Dynamic].applyDynamic("interpret")(machine.asInstanceOf[js.Any]).asInstanceOf[typings.xstate.libInterpreterMod.Interpreter[TContext, TStateSchema, TEvent, TTypestate, TResolvedTypesMeta]]
   inline def interpret[TContext, TStateSchema /* <: StateSchema[Any] */, TEvent /* <: EventObject */, TTypestate /* <: Typestate[TContext] */, TResolvedTypesMeta](
-    machine: /* import warning: importer.ImportType#apply Failed type conversion: xstate.xstate/lib/typegenTypes.AreAllImplementationsAssumedToBeProvided<TResolvedTypesMeta, xstate.xstate/lib/types.Prop<xstate.xstate/lib/types.Prop<TResolvedTypesMeta, 'resolved'>, 'missingImplementations'>> extends true ? xstate.xstate/lib/types.StateMachine<TContext, TStateSchema, TEvent, TTypestate, any, any, TResolvedTypesMeta> : 'Some implementations missing' */ js.Any,
+    machine: /* import warning: importer.ImportType#apply Failed type conversion: xstate.xstate/lib/typegenTypes.AreAllImplementationsAssumedToBeProvided<TResolvedTypesMeta, xstate.xstate/lib/types.Prop<xstate.xstate/lib/types.Prop<TResolvedTypesMeta, 'resolved'>, 'missingImplementations'>> extends true ? xstate.xstate/lib/types.StateMachine<TContext, TStateSchema, TEvent, TTypestate, any, any, TResolvedTypesMeta> : xstate.xstate/lib/typegenTypes.MissingImplementationsError<TResolvedTypesMeta, xstate.xstate/lib/types.Prop<xstate.xstate/lib/types.Prop<TResolvedTypesMeta, 'resolved'>, 'missingImplementations'>> */ js.Any,
     options: InterpreterOptions
   ): typings.xstate.libInterpreterMod.Interpreter[TContext, TStateSchema, TEvent, TTypestate, TResolvedTypesMeta] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpret")(machine.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.xstate.libInterpreterMod.Interpreter[TContext, TStateSchema, TEvent, TTypestate, TResolvedTypesMeta]]
   

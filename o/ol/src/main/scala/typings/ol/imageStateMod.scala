@@ -6,53 +6,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object imageStateMod {
   
-  @JSImport("ol/ImageState", JSImport.Default)
-  @js.native
-  object default extends StObject {
+  object default {
     
-    @JSBracketAccess
-    def apply(value: Double): js.UndefOr[ImageState & Double] = js.native
-    
-    /* 4 */ val EMPTY: typings.ol.imageStateMod.ImageState.EMPTY & Double = js.native
-    
-    /* 3 */ val ERROR: typings.ol.imageStateMod.ImageState.ERROR & Double = js.native
-    
-    /* 0 */ val IDLE: typings.ol.imageStateMod.ImageState.IDLE & Double = js.native
-    
-    /* 2 */ val LOADED: typings.ol.imageStateMod.ImageState.LOADED & Double = js.native
-    
-    /* 1 */ val LOADING: typings.ol.imageStateMod.ImageState.LOADING & Double = js.native
-  }
-  
-  @js.native
-  sealed trait ImageState extends StObject
-  @JSImport("ol/ImageState", "ImageState")
-  @js.native
-  object ImageState extends StObject {
-    
+    @JSImport("ol/ImageState", "default.EMPTY")
     @js.native
-    sealed trait EMPTY
-      extends StObject
-         with ImageState
+    val EMPTY: Double = js.native
     
+    @JSImport("ol/ImageState", "default.ERROR")
     @js.native
-    sealed trait ERROR
-      extends StObject
-         with ImageState
+    val ERROR: Double = js.native
     
+    @JSImport("ol/ImageState", "default.IDLE")
     @js.native
-    sealed trait IDLE
-      extends StObject
-         with ImageState
+    val IDLE: Double = js.native
     
+    @JSImport("ol/ImageState", "default.LOADED")
     @js.native
-    sealed trait LOADED
-      extends StObject
-         with ImageState
+    val LOADED: Double = js.native
     
+    @JSImport("ol/ImageState", "default.LOADING")
     @js.native
-    sealed trait LOADING
-      extends StObject
-         with ImageState
+    val LOADING: Double = js.native
   }
 }

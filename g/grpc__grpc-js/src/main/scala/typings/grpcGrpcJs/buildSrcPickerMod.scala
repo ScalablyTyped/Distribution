@@ -1,9 +1,8 @@
 package typings.grpcGrpcJs
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.grpcGrpcJs.buildSrcCallStreamMod.StatusObject
-import typings.grpcGrpcJs.buildSrcFilterMod.Filter
-import typings.grpcGrpcJs.buildSrcFilterMod.FilterFactory
+import typings.grpcGrpcJs.buildSrcCallInterfaceMod.StatusObject
+import typings.grpcGrpcJs.buildSrcConstantsMod.Status
 import typings.grpcGrpcJs.buildSrcLoadBalancerMod.LoadBalancer
 import typings.grpcGrpcJs.buildSrcMetadataMod.Metadata
 import typings.grpcGrpcJs.buildSrcPickerMod.PickResultType.COMPLETE
@@ -88,8 +87,8 @@ object buildSrcPickerMod {
   }
   object CompletePickResult {
     
-    inline def apply(extraFilterFactories: js.Array[FilterFactory[Filter]], pickResultType: COMPLETE, status: Null): CompletePickResult = {
-      val __obj = js.Dynamic.literal(extraFilterFactories = extraFilterFactories.asInstanceOf[js.Any], pickResultType = pickResultType.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], onCallStarted = null, subchannel = null)
+    inline def apply(pickResultType: COMPLETE, status: Null): CompletePickResult = {
+      val __obj = js.Dynamic.literal(pickResultType = pickResultType.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], onCallEnded = null, onCallStarted = null, subchannel = null)
       __obj.asInstanceOf[CompletePickResult]
     }
     
@@ -106,8 +105,8 @@ object buildSrcPickerMod {
     extends StObject
        with PickResult {
     
-    @JSName("extraFilterFactories")
-    var extraFilterFactories_DropCallPickResult: js.Array[Any]
+    @JSName("onCallEnded")
+    var onCallEnded_DropCallPickResult: Null
     
     @JSName("onCallStarted")
     var onCallStarted_DropCallPickResult: Null
@@ -124,22 +123,20 @@ object buildSrcPickerMod {
   object DropCallPickResult {
     
     inline def apply(
-      extraFilterFactories: js.Array[Any],
+      onCallEnded: Null,
       onCallStarted: Null,
       pickResultType: DROP,
       status: StatusObject,
       subchannel: Null
     ): DropCallPickResult = {
-      val __obj = js.Dynamic.literal(extraFilterFactories = extraFilterFactories.asInstanceOf[js.Any], onCallStarted = onCallStarted.asInstanceOf[js.Any], pickResultType = pickResultType.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], subchannel = subchannel.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(onCallEnded = onCallEnded.asInstanceOf[js.Any], onCallStarted = onCallStarted.asInstanceOf[js.Any], pickResultType = pickResultType.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], subchannel = subchannel.asInstanceOf[js.Any])
       __obj.asInstanceOf[DropCallPickResult]
     }
     
     @scala.inline
     implicit open class MutableBuilder[Self <: DropCallPickResult] (val x: Self) extends AnyVal {
       
-      inline def setExtraFilterFactories(value: js.Array[Any]): Self = StObject.set(x, "extraFilterFactories", value.asInstanceOf[js.Any])
-      
-      inline def setExtraFilterFactoriesVarargs(value: Any*): Self = StObject.set(x, "extraFilterFactories", js.Array(value*))
+      inline def setOnCallEnded(value: Null): Self = StObject.set(x, "onCallEnded", value.asInstanceOf[js.Any])
       
       inline def setOnCallStarted(value: Null): Self = StObject.set(x, "onCallStarted", value.asInstanceOf[js.Any])
       
@@ -175,12 +172,7 @@ object buildSrcPickerMod {
   
   trait PickResult extends StObject {
     
-    /**
-      * Extra FilterFactory (can be multiple encapsulated in a FilterStackFactory)
-      * provided by the load balancer to be used with the call. For technical
-      * reasons filters from this factory will not see sendMetadata events.
-      */
-    var extraFilterFactories: js.Array[FilterFactory[Filter]]
+    var onCallEnded: (js.Function1[/* statusCode */ Status, Unit]) | Null
     
     var onCallStarted: js.Function0[Unit] | Null
     
@@ -201,17 +193,17 @@ object buildSrcPickerMod {
   }
   object PickResult {
     
-    inline def apply(extraFilterFactories: js.Array[FilterFactory[Filter]], pickResultType: PickResultType): PickResult = {
-      val __obj = js.Dynamic.literal(extraFilterFactories = extraFilterFactories.asInstanceOf[js.Any], pickResultType = pickResultType.asInstanceOf[js.Any], onCallStarted = null, status = null, subchannel = null)
+    inline def apply(pickResultType: PickResultType): PickResult = {
+      val __obj = js.Dynamic.literal(pickResultType = pickResultType.asInstanceOf[js.Any], onCallEnded = null, onCallStarted = null, status = null, subchannel = null)
       __obj.asInstanceOf[PickResult]
     }
     
     @scala.inline
     implicit open class MutableBuilder[Self <: PickResult] (val x: Self) extends AnyVal {
       
-      inline def setExtraFilterFactories(value: js.Array[FilterFactory[Filter]]): Self = StObject.set(x, "extraFilterFactories", value.asInstanceOf[js.Any])
+      inline def setOnCallEnded(value: /* statusCode */ Status => Unit): Self = StObject.set(x, "onCallEnded", js.Any.fromFunction1(value))
       
-      inline def setExtraFilterFactoriesVarargs(value: FilterFactory[Filter]*): Self = StObject.set(x, "extraFilterFactories", js.Array(value*))
+      inline def setOnCallEndedNull: Self = StObject.set(x, "onCallEnded", null)
       
       inline def setOnCallStarted(value: () => Unit): Self = StObject.set(x, "onCallStarted", js.Any.fromFunction0(value))
       
@@ -251,8 +243,8 @@ object buildSrcPickerMod {
     extends StObject
        with PickResult {
     
-    @JSName("extraFilterFactories")
-    var extraFilterFactories_QueuePickResult: js.Array[Any]
+    @JSName("onCallEnded")
+    var onCallEnded_QueuePickResult: Null
     
     @JSName("onCallStarted")
     var onCallStarted_QueuePickResult: Null
@@ -268,23 +260,15 @@ object buildSrcPickerMod {
   }
   object QueuePickResult {
     
-    inline def apply(
-      extraFilterFactories: js.Array[Any],
-      onCallStarted: Null,
-      pickResultType: QUEUE,
-      status: Null,
-      subchannel: Null
-    ): QueuePickResult = {
-      val __obj = js.Dynamic.literal(extraFilterFactories = extraFilterFactories.asInstanceOf[js.Any], onCallStarted = onCallStarted.asInstanceOf[js.Any], pickResultType = pickResultType.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], subchannel = subchannel.asInstanceOf[js.Any])
+    inline def apply(onCallEnded: Null, onCallStarted: Null, pickResultType: QUEUE, status: Null, subchannel: Null): QueuePickResult = {
+      val __obj = js.Dynamic.literal(onCallEnded = onCallEnded.asInstanceOf[js.Any], onCallStarted = onCallStarted.asInstanceOf[js.Any], pickResultType = pickResultType.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], subchannel = subchannel.asInstanceOf[js.Any])
       __obj.asInstanceOf[QueuePickResult]
     }
     
     @scala.inline
     implicit open class MutableBuilder[Self <: QueuePickResult] (val x: Self) extends AnyVal {
       
-      inline def setExtraFilterFactories(value: js.Array[Any]): Self = StObject.set(x, "extraFilterFactories", value.asInstanceOf[js.Any])
-      
-      inline def setExtraFilterFactoriesVarargs(value: Any*): Self = StObject.set(x, "extraFilterFactories", js.Array(value*))
+      inline def setOnCallEnded(value: Null): Self = StObject.set(x, "onCallEnded", value.asInstanceOf[js.Any])
       
       inline def setOnCallStarted(value: Null): Self = StObject.set(x, "onCallStarted", value.asInstanceOf[js.Any])
       
@@ -300,8 +284,8 @@ object buildSrcPickerMod {
     extends StObject
        with PickResult {
     
-    @JSName("extraFilterFactories")
-    var extraFilterFactories_TransientFailurePickResult: js.Array[Any]
+    @JSName("onCallEnded")
+    var onCallEnded_TransientFailurePickResult: Null
     
     @JSName("onCallStarted")
     var onCallStarted_TransientFailurePickResult: Null
@@ -318,22 +302,20 @@ object buildSrcPickerMod {
   object TransientFailurePickResult {
     
     inline def apply(
-      extraFilterFactories: js.Array[Any],
+      onCallEnded: Null,
       onCallStarted: Null,
       pickResultType: TRANSIENT_FAILURE,
       status: StatusObject,
       subchannel: Null
     ): TransientFailurePickResult = {
-      val __obj = js.Dynamic.literal(extraFilterFactories = extraFilterFactories.asInstanceOf[js.Any], onCallStarted = onCallStarted.asInstanceOf[js.Any], pickResultType = pickResultType.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], subchannel = subchannel.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(onCallEnded = onCallEnded.asInstanceOf[js.Any], onCallStarted = onCallStarted.asInstanceOf[js.Any], pickResultType = pickResultType.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], subchannel = subchannel.asInstanceOf[js.Any])
       __obj.asInstanceOf[TransientFailurePickResult]
     }
     
     @scala.inline
     implicit open class MutableBuilder[Self <: TransientFailurePickResult] (val x: Self) extends AnyVal {
       
-      inline def setExtraFilterFactories(value: js.Array[Any]): Self = StObject.set(x, "extraFilterFactories", value.asInstanceOf[js.Any])
-      
-      inline def setExtraFilterFactoriesVarargs(value: Any*): Self = StObject.set(x, "extraFilterFactories", js.Array(value*))
+      inline def setOnCallEnded(value: Null): Self = StObject.set(x, "onCallEnded", value.asInstanceOf[js.Any])
       
       inline def setOnCallStarted(value: Null): Self = StObject.set(x, "onCallStarted", value.asInstanceOf[js.Any])
       

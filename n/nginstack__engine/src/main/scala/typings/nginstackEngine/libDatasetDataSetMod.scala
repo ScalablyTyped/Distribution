@@ -92,9 +92,9 @@ object libDatasetDataSetMod {
     def applyLog(iLog: DataSet, options: ApplyUndoLogOptions): Unit = js.native
     
     def applyUpdates(): Double = js.native
-    def applyUpdates(opt_waitDBCacheSync: Boolean): Double = js.native
-    def applyUpdates(opt_waitDBCacheSync: Boolean, opt_logChanges: Boolean): Double = js.native
-    def applyUpdates(opt_waitDBCacheSync: Unit, opt_logChanges: Boolean): Double = js.native
+    def applyUpdates(waitDBCacheSync: Boolean): Double = js.native
+    def applyUpdates(waitDBCacheSync: Boolean, logChanges: Boolean): Double = js.native
+    def applyUpdates(waitDBCacheSync: Unit, logChanges: Boolean): Double = js.native
     
     var automaticApplyUpdates: Boolean = js.native
     
@@ -177,11 +177,11 @@ object libDatasetDataSetMod {
     def getDeltaInspector(): DeltaInspector = js.native
     
     def getField(fieldId: String): String | Double | js.Date | Boolean | Null = js.native
-    def getField(fieldId: String, opt_options: Double): String | Double | js.Date | Boolean | Null = js.native
-    def getField(fieldId: String, opt_options: GetFieldOptions): String | Double | js.Date | Boolean | Null = js.native
+    def getField(fieldId: String, options: Double): String | Double | js.Date | Boolean | Null = js.native
+    def getField(fieldId: String, options: GetFieldOptions): String | Double | js.Date | Boolean | Null = js.native
     def getField(fieldId: Double): String | Double | js.Date | Boolean | Null = js.native
-    def getField(fieldId: Double, opt_options: Double): String | Double | js.Date | Boolean | Null = js.native
-    def getField(fieldId: Double, opt_options: GetFieldOptions): String | Double | js.Date | Boolean | Null = js.native
+    def getField(fieldId: Double, options: Double): String | Double | js.Date | Boolean | Null = js.native
+    def getField(fieldId: Double, options: GetFieldOptions): String | Double | js.Date | Boolean | Null = js.native
     
     var getFieldInformed: Any = js.native
     

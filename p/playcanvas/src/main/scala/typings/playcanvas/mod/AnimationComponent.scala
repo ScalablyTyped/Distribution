@@ -5,10 +5,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** @typedef {import('../../../scene/animation/animation.js').Animation} Animation */
-/** @typedef {import('../../../scene/model.js').Model} Model */
-/** @typedef {import('../../entity.js').Entity} Entity */
-/** @typedef {import('./system.js').AnimationComponentSystem} AnimationComponentSystem */
 /**
   * The Animation Component allows an Entity to playback animations on models.
   *
@@ -20,13 +16,15 @@ open class AnimationComponent protected () extends Component {
   /**
     * Create a new AnimationComponent instance.
     *
-    * @param {AnimationComponentSystem} system - The {@link ComponentSystem} that created this Component.
-    * @param {Entity} entity - The Entity that this Component is attached to.
+    * @param {import('./system.js').AnimationComponentSystem} system - The {@link ComponentSystem}
+    * that created this component.
+    * @param {import('../../entity.js').Entity} entity - The Entity that this component is
+    * attached to.
     */
   def this(system: AnimationComponentSystem, entity: Entity) = this()
   
   /**
-    * @type {Object<string, Animation>}
+    * @type {Object<string, import('../../../scene/animation/animation.js').Animation>}
     * @private
     */
   /* private */ var _animations: Any = js.native
@@ -73,7 +71,7 @@ open class AnimationComponent protected () extends Component {
   /**
     * Get or set dictionary of animations by name.
     *
-    * @type {Object<string, Animation>}
+    * @type {Object<string, import('../../../scene/animation/animation.js').Animation>}
     */
   def animations_=(arg: StringDictionary[Animation]): Unit = js.native
   
@@ -125,7 +123,7 @@ open class AnimationComponent protected () extends Component {
     * Return an animation.
     *
     * @param {string} name - The name of the animation asset.
-    * @returns {Animation} An Animation.
+    * @returns {import('../../../scene/animation/animation.js').Animation} An Animation.
     */
   def getAnimation(name: String): Animation = js.native
   
@@ -144,7 +142,7 @@ open class AnimationComponent protected () extends Component {
   def loop_=(arg: Boolean): Unit = js.native
   
   /**
-    * @type {Model|null}
+    * @type {import('../../../scene/model.js').Model|null}
     * @ignore
     */
   var model: Model | Null = js.native
@@ -192,7 +190,7 @@ open class AnimationComponent protected () extends Component {
   /**
     * Set the model driven by this animation component.
     *
-    * @param {Model} model - The model to set.
+    * @param {import('../../../scene/model.js').Model} model - The model to set.
     * @ignore
     */
   def setModel(model: Model): Unit = js.native

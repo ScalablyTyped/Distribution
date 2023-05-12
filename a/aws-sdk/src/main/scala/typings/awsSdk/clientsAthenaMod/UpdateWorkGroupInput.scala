@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateWorkGroupInput extends StObject {
   
   /**
-    * The workgroup configuration that will be updated for the given workgroup.
+    * Contains configuration updates for an Athena SQL workgroup.
     */
   var ConfigurationUpdates: js.UndefOr[WorkGroupConfigurationUpdates] = js.undefined
   

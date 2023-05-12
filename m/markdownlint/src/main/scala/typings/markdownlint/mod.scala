@@ -8,10 +8,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
+  inline def apply(options: Null, callback: LintCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /**
     * Lint specified Markdown files.
     *
-    * @param {Options} options Configuration options.
+    * @param {Options | null} options Configuration options.
     * @param {LintCallback} callback Callback (err, result) function.
     * @returns {void}
     */
@@ -64,9 +65,10 @@ object mod {
   /**
     * Lint specified Markdown files synchronously.
     *
-    * @param {Options} options Configuration options.
+    * @param {Options | null} options Configuration options.
     * @returns {LintResults} Results object.
     */
+  inline def sync(): LintResults = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")().asInstanceOf[LintResults]
   inline def sync(options: Options): LintResults = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(options.asInstanceOf[js.Any]).asInstanceOf[LintResults]
   
   /**
@@ -403,7 +405,7 @@ object mod {
     /**
       * Front matter pattern.
       */
-    var frontMatter: js.UndefOr[js.RegExp] = js.undefined
+    var frontMatter: js.UndefOr[js.RegExp | Null] = js.undefined
     
     /**
       * File system implementation.
@@ -468,6 +470,8 @@ object mod {
       inline def setFilesVarargs(value: String*): Self = StObject.set(x, "files", js.Array(value*))
       
       inline def setFrontMatter(value: js.RegExp): Self = StObject.set(x, "frontMatter", value.asInstanceOf[js.Any])
+      
+      inline def setFrontMatterNull: Self = StObject.set(x, "frontMatter", null)
       
       inline def setFrontMatterUndefined: Self = StObject.set(x, "frontMatter", js.undefined)
       

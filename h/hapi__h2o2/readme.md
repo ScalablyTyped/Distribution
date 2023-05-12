@@ -1,7 +1,7 @@
 
 # Scala.js typings for hapi__h2o2
 
-Typings are for version 8.3
+Typings are for version 10.0
 
 ## Library description:
 Proxy handler plugin for hapi.js

@@ -20,11 +20,15 @@ trait PagerMessages extends StObject {
   
   var next: js.UndefOr[String] = js.undefined
   
+  var numbersSelectLabel: js.UndefOr[String] = js.undefined
+  
   var of: js.UndefOr[String] = js.undefined
   
   var page: js.UndefOr[String] = js.undefined
   
   var pageButtonLabel: js.UndefOr[String] = js.undefined
+  
+  var pageSizeDropDownLabel: js.UndefOr[String] = js.undefined
   
   var previous: js.UndefOr[String] = js.undefined
   
@@ -68,6 +72,10 @@ object PagerMessages {
     
     inline def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
     
+    inline def setNumbersSelectLabel(value: String): Self = StObject.set(x, "numbersSelectLabel", value.asInstanceOf[js.Any])
+    
+    inline def setNumbersSelectLabelUndefined: Self = StObject.set(x, "numbersSelectLabel", js.undefined)
+    
     inline def setOf(value: String): Self = StObject.set(x, "of", value.asInstanceOf[js.Any])
     
     inline def setOfUndefined: Self = StObject.set(x, "of", js.undefined)
@@ -77,6 +85,10 @@ object PagerMessages {
     inline def setPageButtonLabel(value: String): Self = StObject.set(x, "pageButtonLabel", value.asInstanceOf[js.Any])
     
     inline def setPageButtonLabelUndefined: Self = StObject.set(x, "pageButtonLabel", js.undefined)
+    
+    inline def setPageSizeDropDownLabel(value: String): Self = StObject.set(x, "pageSizeDropDownLabel", value.asInstanceOf[js.Any])
+    
+    inline def setPageSizeDropDownLabelUndefined: Self = StObject.set(x, "pageSizeDropDownLabel", js.undefined)
     
     inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
     

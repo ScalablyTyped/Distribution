@@ -32,8 +32,8 @@ object libSecurityPasswordResetServiceMod {
     def resetPassword(userKey: Double, confirmationCode: String, newPassword: String): Unit = js.native
     def resetPassword(userKey: DBKey, confirmationCode: String, newPassword: String): Unit = js.native
     
-    def sendPasswordResetMail(userKey: Double, options: Content): Unit = js.native
-    def sendPasswordResetMail(userKey: DBKey, options: Content): Unit = js.native
+    def sendPasswordResetEmail(userKey: Double, options: Content): Unit = js.native
+    def sendPasswordResetEmail(userKey: DBKey, options: Content): Unit = js.native
     
     def validateConfirmationCode(userKey: Double, confirmationCode: String): Unit = js.native
     def validateConfirmationCode(userKey: DBKey, confirmationCode: String): Unit = js.native

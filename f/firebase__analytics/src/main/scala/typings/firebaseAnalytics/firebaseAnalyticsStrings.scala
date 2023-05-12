@@ -111,6 +111,18 @@ object firebaseAnalyticsStrings {
   inline def consent: consent = "consent".asInstanceOf[consent]
   
   @js.native
+  sealed trait createHTML extends StObject
+  inline def createHTML: createHTML = "createHTML".asInstanceOf[createHTML]
+  
+  @js.native
+  sealed trait createScript extends StObject
+  inline def createScript: createScript = "createScript".asInstanceOf[createScript]
+  
+  @js.native
+  sealed trait createScriptURL extends StObject
+  inline def createScriptURL: createScriptURL = "createScriptURL".asInstanceOf[createScriptURL]
+  
+  @js.native
   sealed trait denied
     extends StObject
        with ConsentStatusString
@@ -152,6 +164,13 @@ object firebaseAnalyticsStrings {
   inline def generate_lead: generate_lead = "generate_lead".asInstanceOf[generate_lead]
   
   @js.native
+  sealed trait get
+    extends StObject
+       with GtagCommand
+       with typings.firebaseAnalytics.distEsmSrcConstantsMod.GtagCommand
+  inline def get: get = "get".asInstanceOf[get]
+  
+  @js.native
   sealed trait granted
     extends StObject
        with ConsentStatusString
@@ -182,6 +201,13 @@ object firebaseAnalyticsStrings {
   inline def `invalid-analytics-context`: `invalid-analytics-context` = "invalid-analytics-context".asInstanceOf[`invalid-analytics-context`]
   
   @js.native
+  sealed trait `invalid-gtag-resource`
+    extends StObject
+       with AnalyticsError
+       with typings.firebaseAnalytics.distSrcErrorsMod.AnalyticsError
+  inline def `invalid-gtag-resource`: `invalid-gtag-resource` = "invalid-gtag-resource".asInstanceOf[`invalid-gtag-resource`]
+  
+  @js.native
   sealed trait login
     extends StObject
        with EventNameString
@@ -203,6 +229,13 @@ object firebaseAnalyticsStrings {
        with AnalyticsError
        with typings.firebaseAnalytics.distSrcErrorsMod.AnalyticsError
   inline def `no-app-id`: `no-app-id` = "no-app-id".asInstanceOf[`no-app-id`]
+  
+  @js.native
+  sealed trait `no-client-id`
+    extends StObject
+       with AnalyticsError
+       with typings.firebaseAnalytics.distSrcErrorsMod.AnalyticsError
+  inline def `no-client-id`: `no-client-id` = "no-client-id".asInstanceOf[`no-client-id`]
   
   @js.native
   sealed trait page_view

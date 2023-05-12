@@ -1,5 +1,6 @@
 package typings.prosemirrorDropcursor
 
+import typings.prosemirrorDropcursor.prosemirrorDropcursorBooleans.`false`
 import typings.prosemirrorState.mod.Plugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -31,9 +32,9 @@ object mod {
     var `class`: js.UndefOr[String] = js.undefined
     
     /**
-      The color of the cursor. Defaults to `black`.
+      The color of the cursor. Defaults to `black`. Use `false` to apply no color and rely only on class.
       */
-    var color: js.UndefOr[String] = js.undefined
+    var color: js.UndefOr[String | `false`] = js.undefined
     
     /**
       The precise width of the cursor in pixels. Defaults to 1.
@@ -54,7 +55,7 @@ object mod {
       
       inline def setClassUndefined: Self = StObject.set(x, "class", js.undefined)
       
-      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String | `false`): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       

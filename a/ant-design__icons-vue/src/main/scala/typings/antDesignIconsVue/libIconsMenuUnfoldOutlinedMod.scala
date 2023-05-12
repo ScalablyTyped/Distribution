@@ -16,7 +16,7 @@ object libIconsMenuUnfoldOutlinedMod extends Shortcut {
   @js.native
   trait MenuUnfoldOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_MenuUnfoldOutlinedIconType: String = js.native

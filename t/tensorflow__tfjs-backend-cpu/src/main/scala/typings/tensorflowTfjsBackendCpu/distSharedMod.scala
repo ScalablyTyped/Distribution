@@ -46,11 +46,15 @@ object distSharedMod {
     binaryOutput: Boolean
   ): TensorBuffer[R, float32] = (^.asInstanceOf[js.Dynamic].applyDynamic("bincountReduceImpl")(xBuf.asInstanceOf[js.Any], weightsBuf.asInstanceOf[js.Any], size.asInstanceOf[js.Any], binaryOutput.asInstanceOf[js.Any])).asInstanceOf[TensorBuffer[R, float32]]
   
+  @JSImport("@tensorflow/tfjs-backend-cpu/dist/shared", "bitwiseAndImpl")
+  @js.native
+  val bitwiseAndImpl: SimpleBinaryKernelImpl = js.native
+  
   inline def castImpl(values: TypedArray, shape: js.Array[Double], inputType: DataType, dtype: DataType): js.Tuple3[js.Array[Double], DataType, TypedArray] = (^.asInstanceOf[js.Dynamic].applyDynamic("castImpl")(values.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], inputType.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[js.Array[Double], DataType, TypedArray]]
   
   @JSImport("@tensorflow/tfjs-backend-cpu/dist/shared", "ceilImpl")
   @js.native
-  val ceilImpl: SimpleUnaryImpl = js.native
+  val ceilImpl: SimpleUnaryImpl[Double, Double] = js.native
   
   inline def concatImpl(inputs: js.Array[Shape], outShape: js.Array[Double], dtype: DataType, simplyConcat: Boolean): TypedArray | js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("concatImpl")(inputs.asInstanceOf[js.Any], outShape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], simplyConcat.asInstanceOf[js.Any])).asInstanceOf[TypedArray | js.Array[String]]
   
@@ -60,15 +64,19 @@ object distSharedMod {
   
   @JSImport("@tensorflow/tfjs-backend-cpu/dist/shared", "expImpl")
   @js.native
-  val expImpl: SimpleUnaryImpl = js.native
+  val expImpl: SimpleUnaryImpl[Double, Double] = js.native
   
   @JSImport("@tensorflow/tfjs-backend-cpu/dist/shared", "expm1Impl")
   @js.native
-  val expm1Impl: SimpleUnaryImpl = js.native
+  val expm1Impl: SimpleUnaryImpl[Double, Double] = js.native
+  
+  @JSImport("@tensorflow/tfjs-backend-cpu/dist/shared", "floorDivImpl")
+  @js.native
+  val floorDivImpl: SimpleBinaryKernelImpl = js.native
   
   @JSImport("@tensorflow/tfjs-backend-cpu/dist/shared", "floorImpl")
   @js.native
-  val floorImpl: SimpleUnaryImpl = js.native
+  val floorImpl: SimpleUnaryImpl[Double, Double] = js.native
   
   inline def gatherNdImpl_float32[R /* <: Rank */](
     indicesData: TypedArray,
@@ -104,7 +112,7 @@ object distSharedMod {
   
   @JSImport("@tensorflow/tfjs-backend-cpu/dist/shared", "logImpl")
   @js.native
-  val logImpl: SimpleUnaryImpl = js.native
+  val logImpl: SimpleUnaryImpl[Double, Double] = js.native
   
   inline def maxImpl(aVals: TypedArray, reduceSize: Double, outShape: js.Array[Double], dtype: DataType): TypedArray = (^.asInstanceOf[js.Dynamic].applyDynamic("maxImpl")(aVals.asInstanceOf[js.Any], reduceSize.asInstanceOf[js.Any], outShape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[TypedArray]
   
@@ -166,7 +174,7 @@ object distSharedMod {
   
   @JSImport("@tensorflow/tfjs-backend-cpu/dist/shared", "rsqrtImpl")
   @js.native
-  val rsqrtImpl: SimpleUnaryImpl = js.native
+  val rsqrtImpl: SimpleUnaryImpl[Double, Double] = js.native
   
   inline def scatterImpl_int32[R /* <: Rank */, D /* <: float32 | int32 | bool | string */](
     indices: TensorBuffer[R, int32],
@@ -180,10 +188,22 @@ object distSharedMod {
     defaultValue: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-backend-cpu.@tensorflow/tfjs-backend-cpu/dist/kernels/Scatter_impl.DefaultValueTypeMap[D] */ js.Any,
     sumDupeIndices: Boolean
   ): TensorBuffer[R, D] = (^.asInstanceOf[js.Dynamic].applyDynamic("scatterImpl")(indices.asInstanceOf[js.Any], updates.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], outputSize.asInstanceOf[js.Any], sliceSize.asInstanceOf[js.Any], numUpdates.asInstanceOf[js.Any], sliceRank.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], sumDupeIndices.asInstanceOf[js.Any])).asInstanceOf[TensorBuffer[R, D]]
+  inline def scatterImpl_int32[R /* <: Rank */, D /* <: float32 | int32 | bool | string */](
+    indices: TensorBuffer[R, int32],
+    updates: TensorBuffer[R, D],
+    shape: js.Array[Double],
+    outputSize: Double,
+    sliceSize: Double,
+    numUpdates: Double,
+    sliceRank: Double,
+    strides: js.Array[Double],
+    defaultValue: TensorBuffer[R, D],
+    sumDupeIndices: Boolean
+  ): TensorBuffer[R, D] = (^.asInstanceOf[js.Dynamic].applyDynamic("scatterImpl")(indices.asInstanceOf[js.Any], updates.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], outputSize.asInstanceOf[js.Any], sliceSize.asInstanceOf[js.Any], numUpdates.asInstanceOf[js.Any], sliceRank.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], sumDupeIndices.asInstanceOf[js.Any])).asInstanceOf[TensorBuffer[R, D]]
   
   @JSImport("@tensorflow/tfjs-backend-cpu/dist/shared", "sigmoidImpl")
   @js.native
-  val sigmoidImpl: SimpleUnaryImpl = js.native
+  val sigmoidImpl: SimpleUnaryImpl[Double, Double] = js.native
   
   inline def simpleAbsImpl(vals: TypedArray): js.typedarray.Float32Array = ^.asInstanceOf[js.Dynamic].applyDynamic("simpleAbsImpl")(vals.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Float32Array]
   
@@ -249,11 +269,15 @@ object distSharedMod {
   
   @JSImport("@tensorflow/tfjs-backend-cpu/dist/shared", "sqrtImpl")
   @js.native
-  val sqrtImpl: SimpleUnaryImpl = js.native
+  val sqrtImpl: SimpleUnaryImpl[Double, Double] = js.native
   
   @JSImport("@tensorflow/tfjs-backend-cpu/dist/shared", "squaredDifferenceImpl")
   @js.native
   val squaredDifferenceImpl: SimpleBinaryKernelImpl = js.native
+  
+  @JSImport("@tensorflow/tfjs-backend-cpu/dist/shared", "staticRegexReplaceImpl")
+  @js.native
+  val staticRegexReplaceImpl: SimpleUnaryImpl[String, String] = js.native
   
   inline def stridedSliceImpl_float32[R /* <: Rank */](
     outShape: js.Array[Double],

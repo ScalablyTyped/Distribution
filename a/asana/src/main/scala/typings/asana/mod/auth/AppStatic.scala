@@ -17,6 +17,5 @@ trait AppStatic
   * @option {String} [redirectUri]  The default redirect URI
   * @option {String} [scope]        Scope to use, supports `default` and `scim`
   * @option {String} [asanaBaseUrl] Base URL to use for Asana, for debugging
-  * @constructor
   */
 Instantiable1[/* options */ AppOptions, App]

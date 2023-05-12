@@ -104,7 +104,7 @@ object HyperFormula {
     * ```js
     * // data represented as an array
     * const sheetData = [
-    *  ['0', '=SUM(1,2,3)', '52'],
+    *  ['0', '=SUM(1, 2, 3)', '52'],
     *  ['=SUM(A1:C1)', '', '=A1'],
     *  ['2', '=SUM(A1:C1)', '91'],
     * ];
@@ -149,12 +149,12 @@ object HyperFormula {
     * const sheetData = {
     *  'Sheet1': [
     *    ['1', '', '=Sheet2!$A1'],
-    *    ['', '2', '=SUM(1,2,3)'],
+    *    ['', '2', '=SUM(1, 2, 3)'],
     *    ['=Sheet2!$A2', '2', ''],
     *   ],
     *  'Sheet2': [
     *    ['', '4', '=Sheet1!$B1'],
-    *    ['', '8', '=SUM(9,3,3)'],
+    *    ['', '8', '=SUM(9, 3, 3)'],
     *    ['=Sheet1!$B1', '2', ''],
     *   ],
     * };
@@ -298,7 +298,9 @@ object HyperFormula {
   /**
     * Registers all functions in a given plugin with optional translations.
     *
-    * Note: This method does not affect the existing HyperFormula instances.
+    * Note: FunctionPlugins must be registered prior to the creation of HyperFormula instances in which they are used.
+    * HyperFormula instances created prior to the registration of a FunctionPlugin are unable to access the FunctionPlugin.
+    * Registering a FunctionPlugin with [[custom-functions]] requires the translations parameter.
     *
     * @param {FunctionPluginDefinition} plugin - plugin class
     * @param {FunctionTranslationsPackage} translations - optional package of function names translations
@@ -321,7 +323,9 @@ object HyperFormula {
   inline def registerFunctionPlugin(plugin: FunctionPluginDefinition, translations: FunctionTranslationsPackage): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerFunctionPlugin")(plugin.asInstanceOf[js.Any], translations.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
-    * Registers language from under given code string.
+    * Registers language under given code string.
+    *
+    * For more information, see the [Localizing functions guide](/guide/localizing-functions.md).
     *
     * @param {string} languageCode - code string of the translation package
     * @param {RawTranslationPackage} languagePackage - translation package to be registered
@@ -333,8 +337,8 @@ object HyperFormula {
     * @example
     * ```js
     * // return registered language
-    * HyperFormula.registerLanguage('plPL', plPL);
-    * const engine = HyperFormula.buildEmpty({language: 'plPL'});
+    * HyperFormula.registerLanguage('enUS', enUS);
+    * const engine = HyperFormula.buildEmpty({language: 'enUS'});
     * ```
     *
     * @category Static Methods

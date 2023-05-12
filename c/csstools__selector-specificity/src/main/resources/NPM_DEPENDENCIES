@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@csstools/selector-specificity" : "2.0.2"
+      "@csstools/selector-specificity" : "2.2.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@csstools/selector-specificity" : "2.0.2"
+      "@csstools/selector-specificity" : "2.2.0"
     }
   ],
   "compile-devDependencies" : [

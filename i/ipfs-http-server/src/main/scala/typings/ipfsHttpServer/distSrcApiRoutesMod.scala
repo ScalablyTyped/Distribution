@@ -1,7 +1,7 @@
 package typings.ipfsHttpServer
 
-import typings.hapiHapi.mod.ReqRefDefaults
-import typings.hapiHapi.mod.ServerRoute
+import typings.hapiHapi.libTypesRequestMod.ReqRefDefaults
+import typings.hapiHapi.libTypesRouteMod.ServerRoute
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -17,6 +17,8 @@ import typings.openui5.sapUiCoreLibraryMod.IAccessKeySupport
 import typings.openui5.sapUiCoreLibraryMod.ID
 import typings.openui5.sapUiCoreLibraryMod.URI
 import typings.std.HTMLElement
+import typings.std.Object
+import typings.std.PropertyKey
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -67,6 +69,27 @@ object sapMInputMod {
     
     /* CompleteClass */
     var __implements__sap_ui_core_IAccessKeySupport: Boolean = js.native
+    
+    /** The initial value of Object.prototype.constructor is the standard built-in Object constructor. */
+    /* standard es5 */
+    /* CompleteClass */
+    var constructor: js.Function = js.native
+    
+    /**
+      * Determines whether an object has a property with the specified name.
+      * @param v A property name.
+      */
+    /* standard es5 */
+    /* CompleteClass */
+    override def hasOwnProperty(v: PropertyKey): Boolean = js.native
+    
+    /**
+      * Determines whether a specified property is enumerable.
+      * @param v A property name.
+      */
+    /* standard es5 */
+    /* CompleteClass */
+    override def propertyIsEnumerable(v: PropertyKey): Boolean = js.native
   }
   /* static members */
   object default {
@@ -139,7 +162,10 @@ object sapMInputMod {
   @js.native
   trait Input
     extends typings.openui5.sapMInputBaseMod.default
-       with IAccessKeySupport {
+       with IAccessKeySupport
+       with /* was: sap.m.IToolbarInteractiveControl */ Object {
+    
+    var __implements__sap_m_IToolbarInteractiveControl: Boolean = js.native
     
     /**
       * @SINCE 1.21.1
@@ -740,6 +766,8 @@ object sapMInputMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:liveChange liveChange} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -752,6 +780,7 @@ object sapMInputMod {
     
     /**
       * @SINCE 1.33.0
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:submit submit} to attached listeners.
       *
@@ -765,6 +794,7 @@ object sapMInputMod {
     
     /**
       * @SINCE 1.16.1
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:suggest suggest} to attached listeners.
       *
@@ -778,6 +808,7 @@ object sapMInputMod {
     
     /**
       * @SINCE 1.16.3
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:suggestionItemSelected suggestionItemSelected} to attached listeners.
       *
@@ -791,6 +822,7 @@ object sapMInputMod {
     
     /**
       * @SINCE 1.16
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:valueHelpRequest valueHelpRequest} to attached listeners.
       *
@@ -817,6 +849,8 @@ object sapMInputMod {
     def getAutocomplete(): Boolean = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Gets the inner input DOM value.
       *
       * @returns The value of the input.
@@ -964,8 +998,8 @@ object sapMInputMod {
       *
       * Gets current value of property {@link #getShowClearIcon showClearIcon}.
       *
-      * Specifies whether clear icon is shown. Pressing the icon will clear input's value and fire the change
-      * and liveChange events.
+      * Specifies whether clear icon is shown. Pressing the icon will clear input's value and fire the liveChange
+      * event.
       *
       * Default value is `false`.
       *
@@ -1316,6 +1350,8 @@ object sapMInputMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Indicates whether the control should use `sap.m.Dialog` or not.
       *
       * @returns Boolean.
@@ -1323,6 +1359,8 @@ object sapMInputMod {
     def isMobileDevice(): Boolean = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Gets the supported openers for the valueHelpOnly. In the context of the Input, all targets are valid.
       *
       * @returns Boolean indicating if the target is a valid opener.
@@ -1397,6 +1435,8 @@ object sapMInputMod {
     oEvent: Event): Unit = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Finalizes autocomplete and fires liveChange event eventually.
       */
     def onsapright(): Unit = js.native
@@ -1521,6 +1561,8 @@ object sapMInputMod {
     bAutocomplete: Boolean): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Sets the inner input DOM value.
       */
     def setDOMValue(/**
@@ -1641,7 +1683,12 @@ object sapMInputMod {
       * one is the string that is currently typed in the input field and the second one is the item that is being
       * filtered. Returning true will add this item to the popup, returning false will not display it.
       */
-    fnFilter: js.Function
+    fnFilter: js.Function3[
+          /* p1 */ String, 
+          /* p2 */ typings.openui5.sapUiCoreItemMod.default, 
+          /* p3 */ Boolean, 
+          js.UndefOr[Boolean | js.Function]
+        ]
     ): this.type = js.native
     
     /**
@@ -1715,7 +1762,12 @@ object sapMInputMod {
       * The result function is called with one parameter: the sap.m.ColumnListItem that is selected. The function
       * must return a result string that will be displayed as the input field's value.
       */
-    fnFilter: js.Function
+    fnFilter: js.Function3[
+          /* p1 */ String, 
+          /* p2 */ typings.openui5.sapUiCoreItemMod.default, 
+          /* p3 */ Boolean, 
+          js.UndefOr[Boolean | js.Function]
+        ]
     ): this.type = js.native
     
     /**
@@ -1773,8 +1825,8 @@ object sapMInputMod {
       *
       * Sets a new value for property {@link #getShowClearIcon showClearIcon}.
       *
-      * Specifies whether clear icon is shown. Pressing the icon will clear input's value and fire the change
-      * and liveChange events.
+      * Specifies whether clear icon is shown. Pressing the icon will clear input's value and fire the liveChange
+      * event.
       *
       * When called with a value of `null` or `undefined`, the default value of the property will be restored.
       *
@@ -1811,14 +1863,29 @@ object sapMInputMod {
     bShowSuggestion: Boolean): this.type = js.native
     
     /**
-      * Shows value help suggestions in table.
+      * @SINCE 1.22.1
       *
-      * @returns this Input instance for chaining.
+      * Sets a new value for property {@link #getShowTableSuggestionValueHelp showTableSuggestionValueHelp}.
+      *
+      * For tabular suggestions, this flag will show/hide the button at the end of the suggestion table that
+      * triggers the event "valueHelpRequest" when pressed. The default value is true.
+      *
+      * **Note:** If suggestions are not tabular or no suggestions are used, the button will not be displayed
+      * and this flag is without effect.
+      *
+      * When called with a value of `null` or `undefined`, the default value of the property will be restored.
+      *
+      * Default value is `true`.
+      *
+      * @returns Reference to `this` in order to allow method chaining
       */
-    def setShowTableSuggestionValueHelp(/**
-      * Show suggestions.
+    def setShowTableSuggestionValueHelp(): this.type = js.native
+    def setShowTableSuggestionValueHelp(
+      /**
+      * New value for property `showTableSuggestionValueHelp`
       */
-    bValue: Boolean): this.type = js.native
+    bShowTableSuggestionValueHelp: Boolean
+    ): this.type = js.native
     
     /**
       * @SINCE 1.16
@@ -2018,6 +2085,8 @@ object sapMInputMod {
     bValueLiveUpdate: Boolean): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * A helper function calculating if the SuggestionsPopover should be opened on mobile.
       *
       * @returns If the popover should be opened.
@@ -2029,11 +2098,11 @@ object sapMInputMod {
     
     /**
       * @SINCE 1.64
-      * @EXPERIMENTAL (since 1.64)
       *
       * Opens the `SuggestionsPopover` with the available items. **Note:** When `valueHelpOnly` property is set
       * to true, the `SuggestionsPopover` will not open.
       */
+    def showItems(): Unit = js.native
     def showItems(/**
       * Function to filter the items shown in the SuggestionsPopover
       */
@@ -2058,6 +2127,8 @@ object sapMInputMod {
     def unbindSuggestionRows(): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Updates the inner input field.
       */
     def updateInputField(): Unit = js.native
@@ -2188,8 +2259,8 @@ object sapMInputMod {
     /**
       * @SINCE 1.94
       *
-      * Specifies whether clear icon is shown. Pressing the icon will clear input's value and fire the change
-      * and liveChange events.
+      * Specifies whether clear icon is shown. Pressing the icon will clear input's value and fire the liveChange
+      * event.
       */
     var showClearIcon: js.UndefOr[
         Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)

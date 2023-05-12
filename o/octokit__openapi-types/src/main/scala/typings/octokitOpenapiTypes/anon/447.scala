@@ -1,27 +1,27 @@
 package typings.octokitOpenapiTypes.anon
 
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.everyone
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.non_admins
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.off
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `447` extends StObject {
   
-  @JSName("application/json")
-  var applicationSlashjson: js.Array[Parent]
+  /** @enum {string} */
+  var from: off | non_admins | everyone
 }
 object `447` {
   
-  inline def apply(applicationSlashjson: js.Array[Parent]): `447` = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("application/json")(applicationSlashjson.asInstanceOf[js.Any])
+  inline def apply(from: off | non_admins | everyone): `447` = {
+    val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any])
     __obj.asInstanceOf[`447`]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: `447`] (val x: Self) extends AnyVal {
     
-    inline def setApplicationSlashjson(value: js.Array[Parent]): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
-    
-    inline def setApplicationSlashjsonVarargs(value: Parent*): Self = StObject.set(x, "application/json", js.Array(value*))
+    inline def setFrom(value: off | non_admins | everyone): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
   }
 }

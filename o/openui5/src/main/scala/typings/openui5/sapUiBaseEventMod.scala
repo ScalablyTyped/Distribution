@@ -34,6 +34,8 @@ object sapUiBaseEventMod {
     var __implements__sap_ui_base_Poolable: Boolean = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Called by the `ObjectPool` when this instance will be activated for a caller.
       *
       * The same method will be called after a new instance has been created by an otherwise exhausted pool.
@@ -50,6 +52,8 @@ object sapUiBaseEventMod {
     ): Unit = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Called by the object pool when an instance is returned to the pool.
       *
       * While no specific implementation is required, poolable objects in general should clean all caller specific
@@ -171,6 +175,8 @@ object sapUiBaseEventMod {
     def getSource(): typings.openui5.sapUiBaseEventProviderMod.default = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Init this event with its data.
       *
       * The `init` method is called by an object pool when the object is (re-)activated for a new caller.

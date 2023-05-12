@@ -311,6 +311,8 @@ object sapMTablePersoDialogMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:cancel cancel} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -322,6 +324,8 @@ object sapMTablePersoDialogMod {
     mParameters: js.Object): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:confirm confirm} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -405,6 +409,8 @@ object sapMTablePersoDialogMod {
     def getShowSelectAll(): Boolean = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Initializes the TablePersoDialog instance after creation.
       */
     def init(): Unit = js.native

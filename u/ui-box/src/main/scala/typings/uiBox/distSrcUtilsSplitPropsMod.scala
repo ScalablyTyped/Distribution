@@ -19,7 +19,7 @@ object distSrcUtilsSplitPropsMod {
   
   type Omit[T /* <: Dictionary[Any] */, K /* <: /* keyof T */ String */] = Pick[T, Exclude[/* keyof T */ String, K]]
   
-  trait SplitProps[P, K /* <: /* keyof P */ String */] extends StObject {
+  trait SplitProps[P /* <: Dictionary[Any] */, K /* <: /* keyof P */ String */] extends StObject {
     
     var matchedProps: Pick[P, K]
     
@@ -27,13 +27,13 @@ object distSrcUtilsSplitPropsMod {
   }
   object SplitProps {
     
-    inline def apply[P, K /* <: /* keyof P */ String */](matchedProps: Pick[P, K], remainingProps: Omit[P, K]): SplitProps[P, K] = {
+    inline def apply[P /* <: Dictionary[Any] */, K /* <: /* keyof P */ String */](matchedProps: Pick[P, K], remainingProps: Omit[P, K]): SplitProps[P, K] = {
       val __obj = js.Dynamic.literal(matchedProps = matchedProps.asInstanceOf[js.Any], remainingProps = remainingProps.asInstanceOf[js.Any])
       __obj.asInstanceOf[SplitProps[P, K]]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: SplitProps[?, ?], P, K /* <: /* keyof P */ String */] (val x: Self & (SplitProps[P, K])) extends AnyVal {
+    implicit open class MutableBuilder[Self <: SplitProps[?, ?], P /* <: Dictionary[Any] */, K /* <: /* keyof P */ String */] (val x: Self & (SplitProps[P, K])) extends AnyVal {
       
       inline def setMatchedProps(value: Pick[P, K]): Self = StObject.set(x, "matchedProps", value.asInstanceOf[js.Any])
       

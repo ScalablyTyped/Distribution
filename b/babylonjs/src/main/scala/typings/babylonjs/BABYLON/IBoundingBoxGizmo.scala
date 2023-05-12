@@ -12,6 +12,9 @@ trait IBoundingBoxGizmo
   /** Scale factor vector used for masking some axis */
   var axisFactor: Vector3 = js.native
   
+  /** Default material used to render when gizmo is not disabled or hovered */
+  var coloredMaterial: StandardMaterial = js.native
+  
   /** Enables a pointer drag behavior on the bounding box of the gizmo */
   def enableDragBehavior(): Unit = js.native
   
@@ -34,6 +37,9 @@ trait IBoundingBoxGizmo
   
   /** Returns an array containing all boxes used for scaling (in increasing x, y and z orders) */
   def getScaleBoxes(): js.Array[AbstractMesh] = js.native
+  
+  /** Material used to render when gizmo is hovered with mouse*/
+  var hoverMaterial: StandardMaterial = js.native
   
   /**
     * If child meshes should be ignored when calculating the bounding box. This should be set to true to avoid perf hits with heavily nested meshes.

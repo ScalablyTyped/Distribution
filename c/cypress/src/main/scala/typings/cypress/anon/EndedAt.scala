@@ -25,6 +25,8 @@ trait EndedAt extends StObject {
   var suites: Double
   
   var tests: Double
+  
+  var wallClockDuration: js.UndefOr[Double] = js.undefined
 }
 object EndedAt {
   
@@ -63,5 +65,9 @@ object EndedAt {
     inline def setSuites(value: Double): Self = StObject.set(x, "suites", value.asInstanceOf[js.Any])
     
     inline def setTests(value: Double): Self = StObject.set(x, "tests", value.asInstanceOf[js.Any])
+    
+    inline def setWallClockDuration(value: Double): Self = StObject.set(x, "wallClockDuration", value.asInstanceOf[js.Any])
+    
+    inline def setWallClockDurationUndefined: Self = StObject.set(x, "wallClockDuration", js.undefined)
   }
 }

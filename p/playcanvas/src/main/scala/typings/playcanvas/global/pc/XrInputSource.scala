@@ -19,7 +19,7 @@ open class XrInputSource protected ()
   /**
     * Create a new XrInputSource instance.
     *
-    * @param {XrManager} manager - WebXR Manager.
+    * @param {import('./xr-manager.js').XrManager} manager - WebXR Manager.
     * @param {*} xrInputSource - [XRInputSource](https://developer.mozilla.org/en-US/docs/Web/API/XRInputSource)
     * object that is created by WebXR API.
     * @hideconstructor

@@ -3,10 +3,9 @@ package typings.angularCompilerCli
 import typings.angularCompiler.mod.BoundTarget
 import typings.angularCompiler.mod.DirectiveMeta
 import typings.angularCompiler.mod.InputOutputPropertySet
+import typings.angularCompilerCli.anon.ClassDeclarationDeclarati
 import typings.angularCompilerCli.anon.IsInline
 import typings.angularCompilerCli.srcNgtscImportsMod.Reference
-import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.ClassDeclaration
-import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.DeclarationNode
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -35,7 +34,7 @@ object srcNgtscIndexerSrcContextMod {
     var boundTemplate: BoundTarget[ComponentMeta]
     
     /** Component TypeScript class declaration */
-    var declaration: ClassDeclaration[DeclarationNode]
+    var declaration: ClassDeclarationDeclarati
     
     /** Component template selector if it exists, otherwise null. */
     var selector: String | Null
@@ -47,7 +46,7 @@ object srcNgtscIndexerSrcContextMod {
     
     inline def apply(
       boundTemplate: BoundTarget[ComponentMeta],
-      declaration: ClassDeclaration[DeclarationNode],
+      declaration: ClassDeclarationDeclarati,
       templateMeta: IsInline
     ): ComponentInfo = {
       val __obj = js.Dynamic.literal(boundTemplate = boundTemplate.asInstanceOf[js.Any], declaration = declaration.asInstanceOf[js.Any], templateMeta = templateMeta.asInstanceOf[js.Any], selector = null)
@@ -59,7 +58,7 @@ object srcNgtscIndexerSrcContextMod {
       
       inline def setBoundTemplate(value: BoundTarget[ComponentMeta]): Self = StObject.set(x, "boundTemplate", value.asInstanceOf[js.Any])
       
-      inline def setDeclaration(value: ClassDeclaration[DeclarationNode]): Self = StObject.set(x, "declaration", value.asInstanceOf[js.Any])
+      inline def setDeclaration(value: ClassDeclarationDeclarati): Self = StObject.set(x, "declaration", value.asInstanceOf[js.Any])
       
       inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
       
@@ -73,7 +72,7 @@ object srcNgtscIndexerSrcContextMod {
     extends StObject
        with DirectiveMeta {
     
-    var ref: Reference[ClassDeclaration[DeclarationNode]]
+    var ref: Reference[ClassDeclarationDeclarati]
   }
   object ComponentMeta {
     
@@ -83,7 +82,7 @@ object srcNgtscIndexerSrcContextMod {
       isStructural: Boolean,
       name: String,
       outputs: InputOutputPropertySet,
-      ref: Reference[ClassDeclaration[DeclarationNode]]
+      ref: Reference[ClassDeclarationDeclarati]
     ): ComponentMeta = {
       val __obj = js.Dynamic.literal(inputs = inputs.asInstanceOf[js.Any], isComponent = isComponent.asInstanceOf[js.Any], isStructural = isStructural.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], outputs = outputs.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any], animationTriggerNames = null, exportAs = null, selector = null)
       __obj.asInstanceOf[ComponentMeta]
@@ -92,7 +91,7 @@ object srcNgtscIndexerSrcContextMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: ComponentMeta] (val x: Self) extends AnyVal {
       
-      inline def setRef(value: Reference[ClassDeclaration[DeclarationNode]]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      inline def setRef(value: Reference[ClassDeclarationDeclarati]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -1,5 +1,7 @@
 package typings.highcharts.mod
 
+import typings.highcharts.highchartsInts.`0`
+import typings.highcharts.highchartsInts.`100`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -64,28 +66,6 @@ trait PlotDumbbellOptions extends StObject {
   var animationLimit: js.UndefOr[Double] = js.undefined
   
   /**
-    * (Highcharts, Highstock) Sets the color blending in the boost module.
-    */
-  var boostBlending: js.UndefOr[String] = js.undefined
-  
-  /**
-    * (Highcharts, Highstock) Set the point threshold for when a series should
-    * enter boost mode.
-    *
-    * Setting it to e.g. 2000 will cause the series to enter boost mode when
-    * there are 2000 or more points in the series.
-    *
-    * To disable boosting on the series, set the `boostThreshold` to 0. Setting
-    * it to 1 will force boosting.
-    *
-    * Note that the cropThreshold also affects this setting. When zooming in on
-    * a series that has fewer points than the `cropThreshold`, all points are
-    * rendered although outside the visible plot area, and the `boostThreshold`
-    * won't take effect.
-    */
-  var boostThreshold: js.UndefOr[Double] = js.undefined
-  
-  /**
     * (Highmaps) The border color of the map areas.
     *
     * In styled mode, the border stroke is given in the `.highcharts-point`
@@ -104,7 +84,8 @@ trait PlotDumbbellOptions extends StObject {
   /**
     * (Highcharts, Highstock) An additional class name to apply to the series'
     * graphical elements. This option does not replace default class names of
-    * the graphical element.
+    * the graphical element. Changes to the series' color will also be
+    * reflected in a chart's legend and tooltip.
     */
   var className: js.UndefOr[String] = js.undefined
   
@@ -146,6 +127,9 @@ trait PlotDumbbellOptions extends StObject {
     * (Highcharts, Highstock) Styled mode only. A specific color index to use
     * for the series, so its graphic representations are given the class name
     * `highcharts-color-{n}`.
+    *
+    * Since v11, CSS variables on the form `--highcharts-color-{n}` make
+    * changing the color scheme very convenient.
     */
   var colorIndex: js.UndefOr[Double] = js.undefined
   
@@ -165,13 +149,13 @@ trait PlotDumbbellOptions extends StObject {
     * the development of the series against each other. Adds a `change` field
     * to every point object.
     */
-  var compare: js.UndefOr[String] = js.undefined
+  var compare: js.UndefOr[OptionsCompareValue] = js.undefined
   
   /**
     * (Highstock) When compare is `percent`, this option dictates whether to
     * use 0 or 100 as the base of comparison.
     */
-  var compareBase: js.UndefOr[Double] = js.undefined
+  var compareBase: js.UndefOr[`0` | `100`] = js.undefined
   
   /**
     * (Highstock) Defines if comparison should start from the first point
@@ -194,6 +178,9 @@ trait PlotDumbbellOptions extends StObject {
     * (Highcharts, Highstock) Whether to connect a graph line across null
     * points, or render a gap between the two points on either side of the
     * null.
+    *
+    * In stacked area chart, if `connectNulls` is set to true, null points are
+    * interpreted as 0.
     */
   var connectNulls: js.UndefOr[Boolean] = js.undefined
   
@@ -273,12 +260,6 @@ trait PlotDumbbellOptions extends StObject {
   var dashStyle: js.UndefOr[DashStyleValue] = js.undefined
   
   /**
-    * (Highcharts, Highstock) Indicates data is structured as columns instead
-    * of rows.
-    */
-  var dataAsColumns: js.UndefOr[Boolean] = js.undefined
-  
-  /**
     * (Highstock) Data grouping is the concept of sampling the data values into
     * larger blocks in order to ease readability and increase performance of
     * the JavaScript charts. Highcharts Stock by default applies data grouping
@@ -338,27 +319,6 @@ trait PlotDumbbellOptions extends StObject {
   var events: js.UndefOr[SeriesEventsOptionsObject] = js.undefined
   
   /**
-    * (Highcharts, Highstock) Fill color or gradient for the area. When `null`,
-    * the series' `color` is used with the series' `fillOpacity`.
-    *
-    * In styled mode, the fill color can be set with the `.highcharts-area`
-    * class name.
-    */
-  var fillColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
-  
-  /**
-    * (Highcharts, Highstock) Fill opacity for the area. When you set an
-    * explicit `fillColor`, the `fillOpacity` is not applied. Instead, you
-    * should define the opacity in the `fillColor` with an rgba color
-    * definition. The `fillOpacity` setting, also the default setting,
-    * overrides the alpha component of the `color` setting.
-    *
-    * In styled mode, the fill opacity can be set with the `.highcharts-area`
-    * class name.
-    */
-  var fillOpacity: js.UndefOr[Double] = js.undefined
-  
-  /**
     * (Highcharts, Highstock) Determines whether the series should look for the
     * nearest point in both dimensions or just the x-dimension when hovering
     * the series. Defaults to `'xy'` for scatter series and `'x'` for most
@@ -368,7 +328,7 @@ trait PlotDumbbellOptions extends StObject {
     * Applies only to series types using nearest neighbor search (not direct
     * hover) for tooltip.
     */
-  var findNearestPointBy: js.UndefOr[String] = js.undefined
+  var findNearestPointBy: js.UndefOr[OptionsFindNearestPointByValue] = js.undefined
   
   /**
     * (Highstock) Defines when to display a gap in the graph, together with the
@@ -399,7 +359,7 @@ trait PlotDumbbellOptions extends StObject {
     * values, which on a datetime axis is milliseconds. This also applies to
     * the navigator series that inherits gap options from the base series.
     */
-  var gapUnit: js.UndefOr[String] = js.undefined
+  var gapUnit: js.UndefOr[OptionsGapUnitValue] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) Whether to use the Y extremes of the total
@@ -466,6 +426,8 @@ trait PlotDumbbellOptions extends StObject {
     */
   var lastVisiblePrice: js.UndefOr[SeriesLastVisiblePriceOptionsObject] = js.undefined
   
+  var legendSymbol: js.UndefOr[String] = js.undefined
+  
   /**
     * (Highcharts, Highstock) A separate color for the graph line. By default
     * the line takes the `color` of the series, but the lineColor setting
@@ -476,11 +438,6 @@ trait PlotDumbbellOptions extends StObject {
     * class name.
     */
   var lineColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
-  
-  /**
-    * (Highcharts, Highstock) Pixel width of the arearange graph line.
-    */
-  var lineWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock) The SVG value used for the `stroke-linecap` and
@@ -507,11 +464,11 @@ trait PlotDumbbellOptions extends StObject {
   var lowColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
   /**
-    * (Highcharts, Highstock) Options for the point markers of line-like
-    * series. Properties like `fillColor`, `lineColor` and `lineWidth` define
-    * the visual appearance of the markers. Other series types, like column
-    * series, don't have markers, but have visual options on the series level
-    * instead.
+    * (Highcharts, Highstock) Options for the point markers of line and
+    * scatter-like series. Properties like `fillColor`, `lineColor` and
+    * `lineWidth` define the visual appearance of the markers. The `symbol`
+    * option defines the shape. Other series types, like column series, don't
+    * have markers, but have visual options on the series level instead.
     *
     * In styled mode, the markers can be styled with the `.highcharts-point`,
     * `.highcharts-point-hover` and `.highcharts-point-select` class names.
@@ -597,7 +554,7 @@ trait PlotDumbbellOptions extends StObject {
     * Please note that this options applies to the _series data_, not the
     * interval of the axis ticks, which is independent.
     */
-  var pointIntervalUnit: js.UndefOr[String] = js.undefined
+  var pointIntervalUnit: js.UndefOr[OptionsPointIntervalUnitValue] = js.undefined
   
   var pointPadding: js.UndefOr[Double] = js.undefined
   
@@ -715,17 +672,9 @@ trait PlotDumbbellOptions extends StObject {
   var softThreshold: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * (Highcharts, Highstock) Whether to stack the values of each series on top
-    * of each other. Possible values are `undefined` to disable, `"normal"` to
-    * stack by value or `"percent"`.
-    *
-    * When stacking is enabled, data must be sorted in ascending X order.
-    *
-    * Some stacking options are related to specific series types. In the
-    * streamgraph series type, the stacking option is set to `"stream"`. The
-    * second one is `"overlap"`, which only applies to waterfall series.
+    * (Highcharts, Highstock) Sonification/audio chart options for a series.
     */
-  var stacking: js.UndefOr[String] = js.undefined
+  var sonification: js.UndefOr[PlotDumbbellSonificationOptions] = js.undefined
   
   var states: js.UndefOr[SeriesStatesOptionsObject] = js.undefined
   
@@ -733,22 +682,7 @@ trait PlotDumbbellOptions extends StObject {
     * (Highcharts, Highstock) Whether to apply steps to the line. Possible
     * values are `left`, `center` and `right`.
     */
-  var step: js.UndefOr[String] = js.undefined
-  
-  /**
-    * (Highcharts, Highstock) Sticky tracking of mouse events. When true, the
-    * `mouseOut` event on a series isn't triggered until the mouse moves over
-    * another series, or out of the plot area. When false, the `mouseOut` event
-    * on a series is triggered when the mouse leaves the area around the
-    * series' graph or markers. This also implies the tooltip when not shared.
-    * When `stickyTracking` is false and `tooltip.shared` is false, the tooltip
-    * will be hidden when moving the mouse between series. Defaults to true for
-    * line and area type series, but to false for columns, pies etc.
-    *
-    * **Note:** The boost module will force this option because of technical
-    * limitations.
-    */
-  var stickyTracking: js.UndefOr[Boolean] = js.undefined
+  var step: js.UndefOr[OptionsStepValue] = js.undefined
   
   /**
     * (Highcharts, Highstock) The Y axis value to serve as the base for the
@@ -773,12 +707,6 @@ trait PlotDumbbellOptions extends StObject {
   var tooltip: js.UndefOr[SeriesTooltipOptionsObject] = js.undefined
   
   /**
-    * (Highcharts, Highstock) Whether the whole area or just the line should
-    * respond to mouseover tooltips and other mouse or touch events.
-    */
-  var trackByArea: js.UndefOr[Boolean] = js.undefined
-  
-  /**
     * (Highcharts, Highstock, Gantt) When a series contains a data array that
     * is longer than this, only one dimensional arrays of numbers, or two
     * dimensional arrays with x and y values are allowed. Also, only the first
@@ -790,12 +718,6 @@ trait PlotDumbbellOptions extends StObject {
     * two dimensional arrays are allowed.
     */
   var turboThreshold: js.UndefOr[Double] = js.undefined
-  
-  /**
-    * (Highstock) The parameter allows setting line series type and use OHLC
-    * indicators. Data in OHLC format is required.
-    */
-  var useOhlcData: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock) Set the initial visibility of the series.
@@ -854,14 +776,6 @@ object PlotDumbbellOptions {
     
     inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     
-    inline def setBoostBlending(value: String): Self = StObject.set(x, "boostBlending", value.asInstanceOf[js.Any])
-    
-    inline def setBoostBlendingUndefined: Self = StObject.set(x, "boostBlending", js.undefined)
-    
-    inline def setBoostThreshold(value: Double): Self = StObject.set(x, "boostThreshold", value.asInstanceOf[js.Any])
-    
-    inline def setBoostThresholdUndefined: Self = StObject.set(x, "boostThreshold", js.undefined)
-    
     inline def setBorderColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     
     inline def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
@@ -894,9 +808,9 @@ object PlotDumbbellOptions {
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    inline def setCompare(value: String): Self = StObject.set(x, "compare", value.asInstanceOf[js.Any])
+    inline def setCompare(value: OptionsCompareValue): Self = StObject.set(x, "compare", value.asInstanceOf[js.Any])
     
-    inline def setCompareBase(value: Double): Self = StObject.set(x, "compareBase", value.asInstanceOf[js.Any])
+    inline def setCompareBase(value: `0` | `100`): Self = StObject.set(x, "compareBase", value.asInstanceOf[js.Any])
     
     inline def setCompareBaseUndefined: Self = StObject.set(x, "compareBase", js.undefined)
     
@@ -950,10 +864,6 @@ object PlotDumbbellOptions {
     
     inline def setDashStyleUndefined: Self = StObject.set(x, "dashStyle", js.undefined)
     
-    inline def setDataAsColumns(value: Boolean): Self = StObject.set(x, "dataAsColumns", value.asInstanceOf[js.Any])
-    
-    inline def setDataAsColumnsUndefined: Self = StObject.set(x, "dataAsColumns", js.undefined)
-    
     inline def setDataGrouping(value: DataGroupingOptionsObject): Self = StObject.set(x, "dataGrouping", value.asInstanceOf[js.Any])
     
     inline def setDataGroupingUndefined: Self = StObject.set(x, "dataGrouping", js.undefined)
@@ -984,15 +894,7 @@ object PlotDumbbellOptions {
     
     inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
-    inline def setFillColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
-    
-    inline def setFillColorUndefined: Self = StObject.set(x, "fillColor", js.undefined)
-    
-    inline def setFillOpacity(value: Double): Self = StObject.set(x, "fillOpacity", value.asInstanceOf[js.Any])
-    
-    inline def setFillOpacityUndefined: Self = StObject.set(x, "fillOpacity", js.undefined)
-    
-    inline def setFindNearestPointBy(value: String): Self = StObject.set(x, "findNearestPointBy", value.asInstanceOf[js.Any])
+    inline def setFindNearestPointBy(value: OptionsFindNearestPointByValue): Self = StObject.set(x, "findNearestPointBy", value.asInstanceOf[js.Any])
     
     inline def setFindNearestPointByUndefined: Self = StObject.set(x, "findNearestPointBy", js.undefined)
     
@@ -1000,7 +902,7 @@ object PlotDumbbellOptions {
     
     inline def setGapSizeUndefined: Self = StObject.set(x, "gapSize", js.undefined)
     
-    inline def setGapUnit(value: String): Self = StObject.set(x, "gapUnit", value.asInstanceOf[js.Any])
+    inline def setGapUnit(value: OptionsGapUnitValue): Self = StObject.set(x, "gapUnit", value.asInstanceOf[js.Any])
     
     inline def setGapUnitUndefined: Self = StObject.set(x, "gapUnit", js.undefined)
     
@@ -1040,13 +942,13 @@ object PlotDumbbellOptions {
     
     inline def setLastVisiblePriceUndefined: Self = StObject.set(x, "lastVisiblePrice", js.undefined)
     
+    inline def setLegendSymbol(value: String): Self = StObject.set(x, "legendSymbol", value.asInstanceOf[js.Any])
+    
+    inline def setLegendSymbolUndefined: Self = StObject.set(x, "legendSymbol", js.undefined)
+    
     inline def setLineColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "lineColor", value.asInstanceOf[js.Any])
     
     inline def setLineColorUndefined: Self = StObject.set(x, "lineColor", js.undefined)
-    
-    inline def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
-    
-    inline def setLineWidthUndefined: Self = StObject.set(x, "lineWidth", js.undefined)
     
     inline def setLinecap(value: SeriesLinecapValue): Self = StObject.set(x, "linecap", value.asInstanceOf[js.Any])
     
@@ -1094,7 +996,7 @@ object PlotDumbbellOptions {
     
     inline def setPointIntervalUndefined: Self = StObject.set(x, "pointInterval", js.undefined)
     
-    inline def setPointIntervalUnit(value: String): Self = StObject.set(x, "pointIntervalUnit", value.asInstanceOf[js.Any])
+    inline def setPointIntervalUnit(value: OptionsPointIntervalUnitValue): Self = StObject.set(x, "pointIntervalUnit", value.asInstanceOf[js.Any])
     
     inline def setPointIntervalUnitUndefined: Self = StObject.set(x, "pointIntervalUnit", js.undefined)
     
@@ -1148,21 +1050,17 @@ object PlotDumbbellOptions {
     
     inline def setSoftThresholdUndefined: Self = StObject.set(x, "softThreshold", js.undefined)
     
-    inline def setStacking(value: String): Self = StObject.set(x, "stacking", value.asInstanceOf[js.Any])
+    inline def setSonification(value: PlotDumbbellSonificationOptions): Self = StObject.set(x, "sonification", value.asInstanceOf[js.Any])
     
-    inline def setStackingUndefined: Self = StObject.set(x, "stacking", js.undefined)
+    inline def setSonificationUndefined: Self = StObject.set(x, "sonification", js.undefined)
     
     inline def setStates(value: SeriesStatesOptionsObject): Self = StObject.set(x, "states", value.asInstanceOf[js.Any])
     
     inline def setStatesUndefined: Self = StObject.set(x, "states", js.undefined)
     
-    inline def setStep(value: String): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+    inline def setStep(value: OptionsStepValue): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     
     inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
-    
-    inline def setStickyTracking(value: Boolean): Self = StObject.set(x, "stickyTracking", value.asInstanceOf[js.Any])
-    
-    inline def setStickyTrackingUndefined: Self = StObject.set(x, "stickyTracking", js.undefined)
     
     inline def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
     
@@ -1174,17 +1072,9 @@ object PlotDumbbellOptions {
     
     inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
     
-    inline def setTrackByArea(value: Boolean): Self = StObject.set(x, "trackByArea", value.asInstanceOf[js.Any])
-    
-    inline def setTrackByAreaUndefined: Self = StObject.set(x, "trackByArea", js.undefined)
-    
     inline def setTurboThreshold(value: Double): Self = StObject.set(x, "turboThreshold", value.asInstanceOf[js.Any])
     
     inline def setTurboThresholdUndefined: Self = StObject.set(x, "turboThreshold", js.undefined)
-    
-    inline def setUseOhlcData(value: Boolean): Self = StObject.set(x, "useOhlcData", value.asInstanceOf[js.Any])
-    
-    inline def setUseOhlcDataUndefined: Self = StObject.set(x, "useOhlcData", js.undefined)
     
     inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     

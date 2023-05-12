@@ -10,13 +10,22 @@ object srcGeometriesDodecahedronGeometryMod {
   @JSImport("three/src/geometries/DodecahedronGeometry", "DodecahedronGeometry")
   @js.native
   /**
-    * @param [radius=1]
-    * @param [detail=0]
+    * Create a new instance of {@link DodecahedronGeometry}
+    * @param radius Radius of the dodecahedron. Expects a `Float`. Default `1`
+    * @param detail Setting this to a value greater than 0 adds vertices making it no longer a dodecahedron. Expects a `Integer`. Default `0`
     */
   open class DodecahedronGeometry () extends PolyhedronGeometry {
     def this(radius: Double) = this()
     def this(radius: Double, detail: Double) = this()
     def this(radius: Unit, detail: Double) = this()
+    
+    /**
+      * A Read-only _string_ to check if `this` object type.
+      * @remarks Sub-classes will update this value.
+      * @defaultValue `DodecahedronGeometry`
+      */
+    @JSName("type")
+    val type_DodecahedronGeometry: String | typings.three.threeStrings.DodecahedronGeometry = js.native
   }
   /* static members */
   object DodecahedronGeometry {
@@ -25,6 +34,7 @@ object srcGeometriesDodecahedronGeometryMod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def fromJSON(data: Any): DodecahedronGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(data.asInstanceOf[js.Any]).asInstanceOf[DodecahedronGeometry]
+    /** @internal */
+    inline def fromJSON(data: js.Object): DodecahedronGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(data.asInstanceOf[js.Any]).asInstanceOf[DodecahedronGeometry]
   }
 }

@@ -4,7 +4,9 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ParticleEmitterRandomZoneConfig extends StObject {
+trait ParticleEmitterRandomZoneConfig
+  extends StObject
+     with EmitZoneObject {
   
   /**
     * A shape representing the zone. See {@link Phaser.GameObjects.Particles.Zones.RandomZone#source}.

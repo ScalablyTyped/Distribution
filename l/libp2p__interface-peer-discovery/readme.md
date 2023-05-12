@@ -1,7 +1,7 @@
 
 # Scala.js typings for libp2p__interface-peer-discovery
 
-Typings are for version 1.0.1
+Typings are for version 2.0.0
 
 ## Library description:
 Peer Discovery interface for libp2p

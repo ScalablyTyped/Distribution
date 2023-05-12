@@ -197,7 +197,7 @@ trait AnimationGroup
     * Set animation weight for all animatables
     * @param weight defines the weight to use
     * @returns the animationGroup
-    * @see https://doc.babylonjs.com/babylon101/animations#animation-weights
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/animation/advanced_animations#animation-weights
     */
   def setWeightForAllAnimatables(weight: Double): AnimationGroup = js.native
   
@@ -262,7 +262,7 @@ trait AnimationGroup
     * Synchronize and normalize all animatables with a source animatable
     * @param root defines the root animatable to synchronize with (null to stop synchronizing)
     * @returns the animationGroup
-    * @see https://doc.babylonjs.com/babylon101/animations#animation-weights
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/animation/advanced_animations#animation-weights
     */
   def syncAllAnimationsWith(root: Nullable[Animatable]): AnimationGroup = js.native
   

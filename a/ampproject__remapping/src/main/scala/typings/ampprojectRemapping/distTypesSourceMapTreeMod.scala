@@ -16,7 +16,7 @@ object distTypesSourceMapTreeMod {
     extends StObject
        with Sources {
     
-    var content: String | Null
+    var content: Null
     
     var map: TraceMap
     
@@ -33,9 +33,7 @@ object distTypesSourceMapTreeMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: MapSource] (val x: Self) extends AnyVal {
       
-      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
-      
-      inline def setContentNull: Self = StObject.set(x, "content", null)
+      inline def setContent(value: Null): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
       inline def setMap(value: TraceMap): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       
@@ -53,7 +51,7 @@ object distTypesSourceMapTreeMod {
     
     var content: String | Null
     
-    var map: TraceMap
+    var map: Null
     
     var source: String
     
@@ -75,7 +73,7 @@ object distTypesSourceMapTreeMod {
       
       inline def setContentNull: Self = StObject.set(x, "content", null)
       
-      inline def setMap(value: TraceMap): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+      inline def setMap(value: Null): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       
       inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
@@ -89,21 +87,39 @@ object distTypesSourceMapTreeMod {
   
   inline def traceMappings(tree: MapSource): GenMapping = ^.asInstanceOf[js.Dynamic].applyDynamic("traceMappings")(tree.asInstanceOf[js.Any]).asInstanceOf[GenMapping]
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.ampprojectRemapping.anon.Column
-    - typings.ampprojectRemapping.anon.Content
-  */
-  trait SourceMapSegmentObject extends StObject
+  trait SourceMapSegmentObject extends StObject {
+    
+    var column: Double
+    
+    var content: String | Null
+    
+    var line: Double
+    
+    var name: String
+    
+    var source: String
+  }
   object SourceMapSegmentObject {
     
-    inline def Column(column: Double, line: Double, name: String, source: String): typings.ampprojectRemapping.anon.Column = {
+    inline def apply(column: Double, line: Double, name: String, source: String): SourceMapSegmentObject = {
       val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], content = null)
-      __obj.asInstanceOf[typings.ampprojectRemapping.anon.Column]
+      __obj.asInstanceOf[SourceMapSegmentObject]
     }
     
-    inline def Content(column: Null, content: Null, line: Null, name: Null, source: Null): typings.ampprojectRemapping.anon.Content = {
-      val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
-      __obj.asInstanceOf[typings.ampprojectRemapping.anon.Content]
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SourceMapSegmentObject] (val x: Self) extends AnyVal {
+      
+      inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
+      inline def setContentNull: Self = StObject.set(x, "content", null)
+      
+      inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     }
   }
   
@@ -114,12 +130,12 @@ object distTypesSourceMapTreeMod {
   trait Sources extends StObject
   object Sources {
     
-    inline def MapSource(map: TraceMap, source: String, sources: js.Array[Sources]): typings.ampprojectRemapping.distTypesSourceMapTreeMod.MapSource = {
-      val __obj = js.Dynamic.literal(map = map.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], sources = sources.asInstanceOf[js.Any], content = null)
+    inline def MapSource(content: Null, map: TraceMap, source: String, sources: js.Array[Sources]): typings.ampprojectRemapping.distTypesSourceMapTreeMod.MapSource = {
+      val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], map = map.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], sources = sources.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.ampprojectRemapping.distTypesSourceMapTreeMod.MapSource]
     }
     
-    inline def OriginalSource(map: TraceMap, source: String, sources: js.Array[Sources]): typings.ampprojectRemapping.distTypesSourceMapTreeMod.OriginalSource = {
+    inline def OriginalSource(map: Null, source: String, sources: js.Array[Sources]): typings.ampprojectRemapping.distTypesSourceMapTreeMod.OriginalSource = {
       val __obj = js.Dynamic.literal(map = map.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], sources = sources.asInstanceOf[js.Any], content = null)
       __obj.asInstanceOf[typings.ampprojectRemapping.distTypesSourceMapTreeMod.OriginalSource]
     }

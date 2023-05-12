@@ -494,6 +494,13 @@ object googleCloudFirestoreStrings {
   inline def OPTIONAL: OPTIONAL = "OPTIONAL".asInstanceOf[OPTIONAL]
   
   @js.native
+  sealed trait OR
+    extends StObject
+       with Operator
+       with typings.googleCloudFirestore.typesProtosFirestoreV1ProtoApiMod.google.firestore.v1.StructuredQuery.CompositeFilter.Operator
+  inline def OR: OR = "OR".asInstanceOf[OR]
+  
+  @js.native
   sealed trait ORDER_UNSPECIFIED
     extends StObject
        with Order

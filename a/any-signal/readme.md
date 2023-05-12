@@ -1,7 +1,7 @@
 
 # Scala.js typings for any-signal
 
-Typings are for version 3.0.1
+Typings are for version 4.1.1
 
 ## Library description:
 Combines an array of AbortSignals into a single signal that is aborted when any signal is

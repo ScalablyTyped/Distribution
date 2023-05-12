@@ -407,6 +407,8 @@ object sapMWheelSliderMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:collapsed collapsed} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -418,6 +420,8 @@ object sapMWheelSliderMod {
     mParameters: js.Object): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:expanded expanded} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -429,6 +433,8 @@ object sapMWheelSliderMod {
     mParameters: js.Object): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:selectedKeyChange selectedKeyChange} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining

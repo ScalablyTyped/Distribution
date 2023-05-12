@@ -343,6 +343,11 @@ trait RenderTargetTexture
   def disposeFramebufferObjects(): Unit = js.native
   
   /**
+    * Force checking the layerMask property even if a custom list of meshes is provided (ie. if renderList is not undefined)
+    */
+  var forceLayerMaskCheck: Boolean = js.native
+  
+  /**
     * Clear the info related to rendering groups preventing retention point in material dispose.
     */
   def freeRenderingGroups(): Unit = js.native
@@ -398,10 +403,20 @@ trait RenderTargetTexture
   var ignoreCameraViewport: Boolean = js.native
   
   /**
+    * Define if the texture has multiple draw buffers or if false a single draw buffer.
+    */
+  def isMulti: Boolean = js.native
+  
+  /**
     * This function will check if the render target texture can be rendered (textures are loaded, shaders are compiled)
     * @returns true if all required resources are ready
     */
   def isReadyForRendering(): Boolean = js.native
+  
+  /**
+    * Gets or sets a boolean indicating that the prepass renderer should not be used with this render target
+    */
+  var noPrePassRenderer: Boolean = js.native
   
   /**
     * An event triggered after rendering the texture

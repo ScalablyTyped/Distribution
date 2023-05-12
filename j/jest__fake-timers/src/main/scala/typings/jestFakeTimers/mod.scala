@@ -119,8 +119,13 @@ object mod {
     
     def advanceTimersByTime(msToRun: Double): Unit = js.native
     
+    def advanceTimersByTimeAsync(msToRun: Double): js.Promise[Unit] = js.native
+    
     def advanceTimersToNextTimer(): Unit = js.native
     def advanceTimersToNextTimer(steps: Double): Unit = js.native
+    
+    def advanceTimersToNextTimerAsync(): js.Promise[Unit] = js.native
+    def advanceTimersToNextTimerAsync(steps: Double): js.Promise[Unit] = js.native
     
     def clearAllTimers(): Unit = js.native
     
@@ -138,7 +143,11 @@ object mod {
     
     def runAllTimers(): Unit = js.native
     
+    def runAllTimersAsync(): js.Promise[Unit] = js.native
+    
     def runOnlyPendingTimers(): Unit = js.native
+    
+    def runOnlyPendingTimersAsync(): js.Promise[Unit] = js.native
     
     def setSystemTime(): Unit = js.native
     def setSystemTime(now: js.Date): Unit = js.native

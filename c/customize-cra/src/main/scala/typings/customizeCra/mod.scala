@@ -28,7 +28,6 @@ import typings.webpack.mod.ResolveOptionsWebpackOptions
 import typings.webpack.mod.RuleSetRule
 import typings.webpack.mod.StatsOptions
 import typings.webpackBundleAnalyzer.mod.BundleAnalyzerPlugin.Options
-import typings.workboxWebpackPlugin.mod.GenerateSWOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -96,7 +95,12 @@ object mod {
   
   inline def adjustStyleLoaders(callback: js.Function1[/* loader */ RequiredRuleSetRule, Unit]): OverrideFunc = ^.asInstanceOf[js.Dynamic].applyDynamic("adjustStyleLoaders")(callback.asInstanceOf[js.Any]).asInstanceOf[OverrideFunc]
   
-  inline def adjustWorkbox(func: js.Function1[/* swPluginOptions */ GenerateSWOptions, GenerateSWOptions]): OverrideFunc = ^.asInstanceOf[js.Dynamic].applyDynamic("adjustWorkbox")(func.asInstanceOf[js.Any]).asInstanceOf[OverrideFunc]
+  inline def adjustWorkbox(
+    func: js.Function1[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify GenerateSWOptions */ /* swPluginOptions */ Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify GenerateSWOptions */ Any
+    ]
+  ): OverrideFunc = ^.asInstanceOf[js.Dynamic].applyDynamic("adjustWorkbox")(func.asInstanceOf[js.Any]).asInstanceOf[OverrideFunc]
   
   inline def babelExclude(): OverrideFunc = ^.asInstanceOf[js.Dynamic].applyDynamic("babelExclude")().asInstanceOf[OverrideFunc]
   inline def babelExclude(options: js.Array[MatchPattern]): OverrideFunc = ^.asInstanceOf[js.Dynamic].applyDynamic("babelExclude")(options.asInstanceOf[js.Any]).asInstanceOf[OverrideFunc]

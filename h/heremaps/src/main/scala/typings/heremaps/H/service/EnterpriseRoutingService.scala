@@ -68,9 +68,9 @@ trait EnterpriseRoutingService
 object EnterpriseRoutingService {
   
   /**
-    * @property subDomain {string=} - The sub-domain of the routing service relative to the platform's base URL (default is 'route')
-    * @property path {string=} - The path of the map tile service, default is "routing/7.2"
-    * @property baseUrl {H.service.Url=} - The base URL of the service, defaults to the the platform's base URL if instance was created using H.service.Platform#getEnterpriseRoutingService
+    * subDomain {string=} - The sub-domain of the routing service relative to the platform's base URL (default is 'route')
+    * path {string=} - The path of the map tile service, default is "routing/7.2"
+    * baseUrl {H.service.Url=} - The base URL of the service, defaults to the the platform's base URL if instance was created using H.service.Platform#getEnterpriseRoutingService
     * method.
     */
   trait Options extends StObject {

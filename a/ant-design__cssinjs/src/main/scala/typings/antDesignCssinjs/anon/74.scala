@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.WebkitMaskOrigin
+import typings.csstype.mod.Property.GridColumnGap
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,11 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `74` extends StObject {
   
   var value: js.UndefOr[
-    WebkitMaskOrigin | (js.Array[
+    (GridColumnGap[Double | String]) | (js.Array[
       (Extract[
-        js.UndefOr[WebkitMaskOrigin | js.Array[NonNullable[js.UndefOr[WebkitMaskOrigin]]]], 
+        js.UndefOr[
+          (GridColumnGap[Double | String]) | (js.Array[NonNullable[js.UndefOr[GridColumnGap[Double | String]]]])
+        ], 
         String
-      ]) | NonNullable[js.UndefOr[WebkitMaskOrigin]]
+      ]) | (NonNullable[js.UndefOr[GridColumnGap[Double | String]]])
     ])
   ] = js.native
 }

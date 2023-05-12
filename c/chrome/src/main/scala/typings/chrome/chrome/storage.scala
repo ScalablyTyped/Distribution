@@ -64,18 +64,16 @@ object storage {
     
     /**
       * Removes all items from storage.
-      * @param callback Optional.
-      * Callback on success, or on failure (in which case runtime.lastError will be set).
-      */
-    def clear(): Unit = js.native
-    def clear(callback: js.Function0[Unit]): Unit = js.native
-    /**
-      * Removes all items from storage.
       * @return A void Promise
       * @since MV3
       */
-    @JSName("clear")
-    def clear_Promise(): js.Promise[Unit] = js.native
+    def clear(): js.Promise[Unit] = js.native
+    /**
+      * Removes all items from storage.
+      * @param callback Optional.
+      * Callback on success, or on failure (in which case runtime.lastError will be set).
+      */
+    def clear(callback: js.Function0[Unit]): Unit = js.native
     
     /**
       * Gets one or more items from storage.
@@ -144,24 +142,28 @@ object storage {
       * Removes one or more items from storage.
       * @param keys A single key or a list of keys for items to remove.
       * @param callback Optional.
-      * Callback on success, or on failure (in which case runtime.lastError will be set).
+      * @return A void Promise
+      * @since MV3
       */
-    def remove(keys: String): Unit = js.native
-    def remove(keys: String, callback: js.Function0[Unit]): Unit = js.native
-    def remove(keys: js.Array[String]): Unit = js.native
-    def remove(keys: js.Array[String], callback: js.Function0[Unit]): Unit = js.native
+    def remove(keys: String): js.Promise[Unit] = js.native
     /**
       * Removes one or more items from storage.
       * @param keys A single key or a list of keys for items to remove.
       * @param callback Optional.
+      * Callback on success, or on failure (in which case runtime.lastError will be set).
+      */
+    def remove(keys: String, callback: js.Function0[Unit]): Unit = js.native
+    def remove(keys: js.Array[String]): js.Promise[Unit] = js.native
+    def remove(keys: js.Array[String], callback: js.Function0[Unit]): Unit = js.native
+    
+    /**
+      * Sets multiple items.
+      * @param items An object which gives each key/value pair to update storage with. Any other key/value pairs in storage will not be affected.
+      * Primitive values such as numbers will serialize as expected. Values with a typeof "object" and "function" will typically serialize to {}, with the exception of Array (serializes as expected), Date, and Regex (serialize using their String representation).
       * @return A void Promise
       * @since MV3
       */
-    @JSName("remove")
-    def remove_Promise(keys: String): js.Promise[Unit] = js.native
-    @JSName("remove")
-    def remove_Promise(keys: js.Array[String]): js.Promise[Unit] = js.native
-    
+    def set(items: StringDictionary[Any]): js.Promise[Unit] = js.native
     /**
       * Sets multiple items.
       * @param items An object which gives each key/value pair to update storage with. Any other key/value pairs in storage will not be affected.
@@ -169,7 +171,6 @@ object storage {
       * @param callback Optional.
       * Callback on success, or on failure (in which case runtime.lastError will be set).
       */
-    def set(items: StringDictionary[Any]): Unit = js.native
     def set(items: StringDictionary[Any], callback: js.Function0[Unit]): Unit = js.native
     
     /**
@@ -186,16 +187,6 @@ object storage {
       * @since Chrome 102
       */
     def setAccessLevel(accessOptions: typings.chrome.anon.AccessLevel, callback: js.Function0[Unit]): Unit = js.native
-    
-    /**
-      * Sets multiple items.
-      * @param items An object which gives each key/value pair to update storage with. Any other key/value pairs in storage will not be affected.
-      * Primitive values such as numbers will serialize as expected. Values with a typeof "object" and "function" will typically serialize to {}, with the exception of Array (serializes as expected), Date, and Regex (serialize using their String representation).
-      * @return A void Promise
-      * @since MV3
-      */
-    @JSName("set")
-    def set_Promise(items: StringDictionary[Any]): js.Promise[Unit] = js.native
   }
   
   type StorageAreaChangedEvent = Event[js.Function1[/* changes */ StringDictionary[StorageChange], Unit]]

@@ -13,6 +13,7 @@ import typings.azureMsalCommon.distResponseAuthenticationResultMod.Authenticatio
 import typings.azureMsalCommon.distResponseAuthorizationCodePayloadMod.AuthorizationCodePayload
 import typings.azureMsalCommon.distResponseServerAuthorizationCodeResponseMod.ServerAuthorizationCodeResponse
 import typings.azureMsalCommon.distResponseServerAuthorizationTokenResponseMod.ServerAuthorizationTokenResponse
+import typings.azureMsalCommon.distTelemetryPerformanceIperformanceclientMod.IPerformanceClient
 import typings.azureMsalCommon.distUtilsProtocolUtilsMod.RequestStateObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -46,6 +47,42 @@ object distResponseResponseHandlerMod {
       logger: Logger,
       serializableCache: ISerializableTokenCache,
       persistencePlugin: ICachePlugin
+    ) = this()
+    def this(
+      clientId: String,
+      cacheStorage: CacheManager,
+      cryptoObj: ICrypto,
+      logger: Logger,
+      serializableCache: Null,
+      persistencePlugin: Null,
+      performanceClient: IPerformanceClient
+    ) = this()
+    def this(
+      clientId: String,
+      cacheStorage: CacheManager,
+      cryptoObj: ICrypto,
+      logger: Logger,
+      serializableCache: Null,
+      persistencePlugin: ICachePlugin,
+      performanceClient: IPerformanceClient
+    ) = this()
+    def this(
+      clientId: String,
+      cacheStorage: CacheManager,
+      cryptoObj: ICrypto,
+      logger: Logger,
+      serializableCache: ISerializableTokenCache,
+      persistencePlugin: Null,
+      performanceClient: IPerformanceClient
+    ) = this()
+    def this(
+      clientId: String,
+      cacheStorage: CacheManager,
+      cryptoObj: ICrypto,
+      logger: Logger,
+      serializableCache: ISerializableTokenCache,
+      persistencePlugin: ICachePlugin,
+      performanceClient: IPerformanceClient
     ) = this()
     
     /* private */ var cacheStorage: Any = js.native
@@ -115,8 +152,52 @@ object distResponseResponseHandlerMod {
       request: BaseAuthRequest,
       authCodePayload: Unit,
       userAssertionHash: String,
+      handlingRefreshTokenResponse: Boolean,
+      forceCacheRefreshTokenResponse: Boolean,
+      serverRequestId: String
+    ): js.Promise[AuthenticationResult] = js.native
+    def handleServerTokenResponse(
+      serverTokenResponse: ServerAuthorizationTokenResponse,
+      authority: Authority,
+      reqTimestamp: Double,
+      request: BaseAuthRequest,
+      authCodePayload: Unit,
+      userAssertionHash: String,
+      handlingRefreshTokenResponse: Boolean,
+      forceCacheRefreshTokenResponse: Unit,
+      serverRequestId: String
+    ): js.Promise[AuthenticationResult] = js.native
+    def handleServerTokenResponse(
+      serverTokenResponse: ServerAuthorizationTokenResponse,
+      authority: Authority,
+      reqTimestamp: Double,
+      request: BaseAuthRequest,
+      authCodePayload: Unit,
+      userAssertionHash: String,
       handlingRefreshTokenResponse: Unit,
       forceCacheRefreshTokenResponse: Boolean
+    ): js.Promise[AuthenticationResult] = js.native
+    def handleServerTokenResponse(
+      serverTokenResponse: ServerAuthorizationTokenResponse,
+      authority: Authority,
+      reqTimestamp: Double,
+      request: BaseAuthRequest,
+      authCodePayload: Unit,
+      userAssertionHash: String,
+      handlingRefreshTokenResponse: Unit,
+      forceCacheRefreshTokenResponse: Boolean,
+      serverRequestId: String
+    ): js.Promise[AuthenticationResult] = js.native
+    def handleServerTokenResponse(
+      serverTokenResponse: ServerAuthorizationTokenResponse,
+      authority: Authority,
+      reqTimestamp: Double,
+      request: BaseAuthRequest,
+      authCodePayload: Unit,
+      userAssertionHash: String,
+      handlingRefreshTokenResponse: Unit,
+      forceCacheRefreshTokenResponse: Unit,
+      serverRequestId: String
     ): js.Promise[AuthenticationResult] = js.native
     def handleServerTokenResponse(
       serverTokenResponse: ServerAuthorizationTokenResponse,
@@ -144,8 +225,52 @@ object distResponseResponseHandlerMod {
       request: BaseAuthRequest,
       authCodePayload: Unit,
       userAssertionHash: Unit,
+      handlingRefreshTokenResponse: Boolean,
+      forceCacheRefreshTokenResponse: Boolean,
+      serverRequestId: String
+    ): js.Promise[AuthenticationResult] = js.native
+    def handleServerTokenResponse(
+      serverTokenResponse: ServerAuthorizationTokenResponse,
+      authority: Authority,
+      reqTimestamp: Double,
+      request: BaseAuthRequest,
+      authCodePayload: Unit,
+      userAssertionHash: Unit,
+      handlingRefreshTokenResponse: Boolean,
+      forceCacheRefreshTokenResponse: Unit,
+      serverRequestId: String
+    ): js.Promise[AuthenticationResult] = js.native
+    def handleServerTokenResponse(
+      serverTokenResponse: ServerAuthorizationTokenResponse,
+      authority: Authority,
+      reqTimestamp: Double,
+      request: BaseAuthRequest,
+      authCodePayload: Unit,
+      userAssertionHash: Unit,
       handlingRefreshTokenResponse: Unit,
       forceCacheRefreshTokenResponse: Boolean
+    ): js.Promise[AuthenticationResult] = js.native
+    def handleServerTokenResponse(
+      serverTokenResponse: ServerAuthorizationTokenResponse,
+      authority: Authority,
+      reqTimestamp: Double,
+      request: BaseAuthRequest,
+      authCodePayload: Unit,
+      userAssertionHash: Unit,
+      handlingRefreshTokenResponse: Unit,
+      forceCacheRefreshTokenResponse: Boolean,
+      serverRequestId: String
+    ): js.Promise[AuthenticationResult] = js.native
+    def handleServerTokenResponse(
+      serverTokenResponse: ServerAuthorizationTokenResponse,
+      authority: Authority,
+      reqTimestamp: Double,
+      request: BaseAuthRequest,
+      authCodePayload: Unit,
+      userAssertionHash: Unit,
+      handlingRefreshTokenResponse: Unit,
+      forceCacheRefreshTokenResponse: Unit,
+      serverRequestId: String
     ): js.Promise[AuthenticationResult] = js.native
     def handleServerTokenResponse(
       serverTokenResponse: ServerAuthorizationTokenResponse,
@@ -188,8 +313,52 @@ object distResponseResponseHandlerMod {
       request: BaseAuthRequest,
       authCodePayload: AuthorizationCodePayload,
       userAssertionHash: String,
+      handlingRefreshTokenResponse: Boolean,
+      forceCacheRefreshTokenResponse: Boolean,
+      serverRequestId: String
+    ): js.Promise[AuthenticationResult] = js.native
+    def handleServerTokenResponse(
+      serverTokenResponse: ServerAuthorizationTokenResponse,
+      authority: Authority,
+      reqTimestamp: Double,
+      request: BaseAuthRequest,
+      authCodePayload: AuthorizationCodePayload,
+      userAssertionHash: String,
+      handlingRefreshTokenResponse: Boolean,
+      forceCacheRefreshTokenResponse: Unit,
+      serverRequestId: String
+    ): js.Promise[AuthenticationResult] = js.native
+    def handleServerTokenResponse(
+      serverTokenResponse: ServerAuthorizationTokenResponse,
+      authority: Authority,
+      reqTimestamp: Double,
+      request: BaseAuthRequest,
+      authCodePayload: AuthorizationCodePayload,
+      userAssertionHash: String,
       handlingRefreshTokenResponse: Unit,
       forceCacheRefreshTokenResponse: Boolean
+    ): js.Promise[AuthenticationResult] = js.native
+    def handleServerTokenResponse(
+      serverTokenResponse: ServerAuthorizationTokenResponse,
+      authority: Authority,
+      reqTimestamp: Double,
+      request: BaseAuthRequest,
+      authCodePayload: AuthorizationCodePayload,
+      userAssertionHash: String,
+      handlingRefreshTokenResponse: Unit,
+      forceCacheRefreshTokenResponse: Boolean,
+      serverRequestId: String
+    ): js.Promise[AuthenticationResult] = js.native
+    def handleServerTokenResponse(
+      serverTokenResponse: ServerAuthorizationTokenResponse,
+      authority: Authority,
+      reqTimestamp: Double,
+      request: BaseAuthRequest,
+      authCodePayload: AuthorizationCodePayload,
+      userAssertionHash: String,
+      handlingRefreshTokenResponse: Unit,
+      forceCacheRefreshTokenResponse: Unit,
+      serverRequestId: String
     ): js.Promise[AuthenticationResult] = js.native
     def handleServerTokenResponse(
       serverTokenResponse: ServerAuthorizationTokenResponse,
@@ -217,13 +386,59 @@ object distResponseResponseHandlerMod {
       request: BaseAuthRequest,
       authCodePayload: AuthorizationCodePayload,
       userAssertionHash: Unit,
+      handlingRefreshTokenResponse: Boolean,
+      forceCacheRefreshTokenResponse: Boolean,
+      serverRequestId: String
+    ): js.Promise[AuthenticationResult] = js.native
+    def handleServerTokenResponse(
+      serverTokenResponse: ServerAuthorizationTokenResponse,
+      authority: Authority,
+      reqTimestamp: Double,
+      request: BaseAuthRequest,
+      authCodePayload: AuthorizationCodePayload,
+      userAssertionHash: Unit,
+      handlingRefreshTokenResponse: Boolean,
+      forceCacheRefreshTokenResponse: Unit,
+      serverRequestId: String
+    ): js.Promise[AuthenticationResult] = js.native
+    def handleServerTokenResponse(
+      serverTokenResponse: ServerAuthorizationTokenResponse,
+      authority: Authority,
+      reqTimestamp: Double,
+      request: BaseAuthRequest,
+      authCodePayload: AuthorizationCodePayload,
+      userAssertionHash: Unit,
       handlingRefreshTokenResponse: Unit,
       forceCacheRefreshTokenResponse: Boolean
+    ): js.Promise[AuthenticationResult] = js.native
+    def handleServerTokenResponse(
+      serverTokenResponse: ServerAuthorizationTokenResponse,
+      authority: Authority,
+      reqTimestamp: Double,
+      request: BaseAuthRequest,
+      authCodePayload: AuthorizationCodePayload,
+      userAssertionHash: Unit,
+      handlingRefreshTokenResponse: Unit,
+      forceCacheRefreshTokenResponse: Boolean,
+      serverRequestId: String
+    ): js.Promise[AuthenticationResult] = js.native
+    def handleServerTokenResponse(
+      serverTokenResponse: ServerAuthorizationTokenResponse,
+      authority: Authority,
+      reqTimestamp: Double,
+      request: BaseAuthRequest,
+      authCodePayload: AuthorizationCodePayload,
+      userAssertionHash: Unit,
+      handlingRefreshTokenResponse: Unit,
+      forceCacheRefreshTokenResponse: Unit,
+      serverRequestId: String
     ): js.Promise[AuthenticationResult] = js.native
     
     /* private */ var homeAccountIdentifier: Any = js.native
     
     /* private */ var logger: Any = js.native
+    
+    /* private */ var performanceClient: Any = js.native
     
     /* private */ var persistencePlugin: Any = js.native
     
@@ -275,8 +490,30 @@ object distResponseResponseHandlerMod {
       request: BaseAuthRequest,
       idTokenObj: Unit,
       requestState: Unit,
-      code: String
-    ): js.Promise[AuthenticationResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateAuthenticationResult")(cryptoObj.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cacheRecord.asInstanceOf[js.Any], fromTokenCache.asInstanceOf[js.Any], request.asInstanceOf[js.Any], idTokenObj.asInstanceOf[js.Any], requestState.asInstanceOf[js.Any], code.asInstanceOf[js.Any])).asInstanceOf[js.Promise[AuthenticationResult]]
+      serverTokenResponse: Unit,
+      requestId: String
+    ): js.Promise[AuthenticationResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateAuthenticationResult")(cryptoObj.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cacheRecord.asInstanceOf[js.Any], fromTokenCache.asInstanceOf[js.Any], request.asInstanceOf[js.Any], idTokenObj.asInstanceOf[js.Any], requestState.asInstanceOf[js.Any], serverTokenResponse.asInstanceOf[js.Any], requestId.asInstanceOf[js.Any])).asInstanceOf[js.Promise[AuthenticationResult]]
+    inline def generateAuthenticationResult(
+      cryptoObj: ICrypto,
+      authority: Authority,
+      cacheRecord: CacheRecord,
+      fromTokenCache: Boolean,
+      request: BaseAuthRequest,
+      idTokenObj: Unit,
+      requestState: Unit,
+      serverTokenResponse: ServerAuthorizationTokenResponse
+    ): js.Promise[AuthenticationResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateAuthenticationResult")(cryptoObj.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cacheRecord.asInstanceOf[js.Any], fromTokenCache.asInstanceOf[js.Any], request.asInstanceOf[js.Any], idTokenObj.asInstanceOf[js.Any], requestState.asInstanceOf[js.Any], serverTokenResponse.asInstanceOf[js.Any])).asInstanceOf[js.Promise[AuthenticationResult]]
+    inline def generateAuthenticationResult(
+      cryptoObj: ICrypto,
+      authority: Authority,
+      cacheRecord: CacheRecord,
+      fromTokenCache: Boolean,
+      request: BaseAuthRequest,
+      idTokenObj: Unit,
+      requestState: Unit,
+      serverTokenResponse: ServerAuthorizationTokenResponse,
+      requestId: String
+    ): js.Promise[AuthenticationResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateAuthenticationResult")(cryptoObj.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cacheRecord.asInstanceOf[js.Any], fromTokenCache.asInstanceOf[js.Any], request.asInstanceOf[js.Any], idTokenObj.asInstanceOf[js.Any], requestState.asInstanceOf[js.Any], serverTokenResponse.asInstanceOf[js.Any], requestId.asInstanceOf[js.Any])).asInstanceOf[js.Promise[AuthenticationResult]]
     inline def generateAuthenticationResult(
       cryptoObj: ICrypto,
       authority: Authority,
@@ -294,8 +531,30 @@ object distResponseResponseHandlerMod {
       request: BaseAuthRequest,
       idTokenObj: Unit,
       requestState: RequestStateObject,
-      code: String
-    ): js.Promise[AuthenticationResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateAuthenticationResult")(cryptoObj.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cacheRecord.asInstanceOf[js.Any], fromTokenCache.asInstanceOf[js.Any], request.asInstanceOf[js.Any], idTokenObj.asInstanceOf[js.Any], requestState.asInstanceOf[js.Any], code.asInstanceOf[js.Any])).asInstanceOf[js.Promise[AuthenticationResult]]
+      serverTokenResponse: Unit,
+      requestId: String
+    ): js.Promise[AuthenticationResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateAuthenticationResult")(cryptoObj.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cacheRecord.asInstanceOf[js.Any], fromTokenCache.asInstanceOf[js.Any], request.asInstanceOf[js.Any], idTokenObj.asInstanceOf[js.Any], requestState.asInstanceOf[js.Any], serverTokenResponse.asInstanceOf[js.Any], requestId.asInstanceOf[js.Any])).asInstanceOf[js.Promise[AuthenticationResult]]
+    inline def generateAuthenticationResult(
+      cryptoObj: ICrypto,
+      authority: Authority,
+      cacheRecord: CacheRecord,
+      fromTokenCache: Boolean,
+      request: BaseAuthRequest,
+      idTokenObj: Unit,
+      requestState: RequestStateObject,
+      serverTokenResponse: ServerAuthorizationTokenResponse
+    ): js.Promise[AuthenticationResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateAuthenticationResult")(cryptoObj.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cacheRecord.asInstanceOf[js.Any], fromTokenCache.asInstanceOf[js.Any], request.asInstanceOf[js.Any], idTokenObj.asInstanceOf[js.Any], requestState.asInstanceOf[js.Any], serverTokenResponse.asInstanceOf[js.Any])).asInstanceOf[js.Promise[AuthenticationResult]]
+    inline def generateAuthenticationResult(
+      cryptoObj: ICrypto,
+      authority: Authority,
+      cacheRecord: CacheRecord,
+      fromTokenCache: Boolean,
+      request: BaseAuthRequest,
+      idTokenObj: Unit,
+      requestState: RequestStateObject,
+      serverTokenResponse: ServerAuthorizationTokenResponse,
+      requestId: String
+    ): js.Promise[AuthenticationResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateAuthenticationResult")(cryptoObj.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cacheRecord.asInstanceOf[js.Any], fromTokenCache.asInstanceOf[js.Any], request.asInstanceOf[js.Any], idTokenObj.asInstanceOf[js.Any], requestState.asInstanceOf[js.Any], serverTokenResponse.asInstanceOf[js.Any], requestId.asInstanceOf[js.Any])).asInstanceOf[js.Promise[AuthenticationResult]]
     inline def generateAuthenticationResult(
       cryptoObj: ICrypto,
       authority: Authority,
@@ -312,8 +571,30 @@ object distResponseResponseHandlerMod {
       request: BaseAuthRequest,
       idTokenObj: AuthToken,
       requestState: Unit,
-      code: String
-    ): js.Promise[AuthenticationResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateAuthenticationResult")(cryptoObj.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cacheRecord.asInstanceOf[js.Any], fromTokenCache.asInstanceOf[js.Any], request.asInstanceOf[js.Any], idTokenObj.asInstanceOf[js.Any], requestState.asInstanceOf[js.Any], code.asInstanceOf[js.Any])).asInstanceOf[js.Promise[AuthenticationResult]]
+      serverTokenResponse: Unit,
+      requestId: String
+    ): js.Promise[AuthenticationResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateAuthenticationResult")(cryptoObj.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cacheRecord.asInstanceOf[js.Any], fromTokenCache.asInstanceOf[js.Any], request.asInstanceOf[js.Any], idTokenObj.asInstanceOf[js.Any], requestState.asInstanceOf[js.Any], serverTokenResponse.asInstanceOf[js.Any], requestId.asInstanceOf[js.Any])).asInstanceOf[js.Promise[AuthenticationResult]]
+    inline def generateAuthenticationResult(
+      cryptoObj: ICrypto,
+      authority: Authority,
+      cacheRecord: CacheRecord,
+      fromTokenCache: Boolean,
+      request: BaseAuthRequest,
+      idTokenObj: AuthToken,
+      requestState: Unit,
+      serverTokenResponse: ServerAuthorizationTokenResponse
+    ): js.Promise[AuthenticationResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateAuthenticationResult")(cryptoObj.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cacheRecord.asInstanceOf[js.Any], fromTokenCache.asInstanceOf[js.Any], request.asInstanceOf[js.Any], idTokenObj.asInstanceOf[js.Any], requestState.asInstanceOf[js.Any], serverTokenResponse.asInstanceOf[js.Any])).asInstanceOf[js.Promise[AuthenticationResult]]
+    inline def generateAuthenticationResult(
+      cryptoObj: ICrypto,
+      authority: Authority,
+      cacheRecord: CacheRecord,
+      fromTokenCache: Boolean,
+      request: BaseAuthRequest,
+      idTokenObj: AuthToken,
+      requestState: Unit,
+      serverTokenResponse: ServerAuthorizationTokenResponse,
+      requestId: String
+    ): js.Promise[AuthenticationResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateAuthenticationResult")(cryptoObj.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cacheRecord.asInstanceOf[js.Any], fromTokenCache.asInstanceOf[js.Any], request.asInstanceOf[js.Any], idTokenObj.asInstanceOf[js.Any], requestState.asInstanceOf[js.Any], serverTokenResponse.asInstanceOf[js.Any], requestId.asInstanceOf[js.Any])).asInstanceOf[js.Promise[AuthenticationResult]]
     inline def generateAuthenticationResult(
       cryptoObj: ICrypto,
       authority: Authority,
@@ -331,7 +612,29 @@ object distResponseResponseHandlerMod {
       request: BaseAuthRequest,
       idTokenObj: AuthToken,
       requestState: RequestStateObject,
-      code: String
-    ): js.Promise[AuthenticationResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateAuthenticationResult")(cryptoObj.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cacheRecord.asInstanceOf[js.Any], fromTokenCache.asInstanceOf[js.Any], request.asInstanceOf[js.Any], idTokenObj.asInstanceOf[js.Any], requestState.asInstanceOf[js.Any], code.asInstanceOf[js.Any])).asInstanceOf[js.Promise[AuthenticationResult]]
+      serverTokenResponse: Unit,
+      requestId: String
+    ): js.Promise[AuthenticationResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateAuthenticationResult")(cryptoObj.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cacheRecord.asInstanceOf[js.Any], fromTokenCache.asInstanceOf[js.Any], request.asInstanceOf[js.Any], idTokenObj.asInstanceOf[js.Any], requestState.asInstanceOf[js.Any], serverTokenResponse.asInstanceOf[js.Any], requestId.asInstanceOf[js.Any])).asInstanceOf[js.Promise[AuthenticationResult]]
+    inline def generateAuthenticationResult(
+      cryptoObj: ICrypto,
+      authority: Authority,
+      cacheRecord: CacheRecord,
+      fromTokenCache: Boolean,
+      request: BaseAuthRequest,
+      idTokenObj: AuthToken,
+      requestState: RequestStateObject,
+      serverTokenResponse: ServerAuthorizationTokenResponse
+    ): js.Promise[AuthenticationResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateAuthenticationResult")(cryptoObj.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cacheRecord.asInstanceOf[js.Any], fromTokenCache.asInstanceOf[js.Any], request.asInstanceOf[js.Any], idTokenObj.asInstanceOf[js.Any], requestState.asInstanceOf[js.Any], serverTokenResponse.asInstanceOf[js.Any])).asInstanceOf[js.Promise[AuthenticationResult]]
+    inline def generateAuthenticationResult(
+      cryptoObj: ICrypto,
+      authority: Authority,
+      cacheRecord: CacheRecord,
+      fromTokenCache: Boolean,
+      request: BaseAuthRequest,
+      idTokenObj: AuthToken,
+      requestState: RequestStateObject,
+      serverTokenResponse: ServerAuthorizationTokenResponse,
+      requestId: String
+    ): js.Promise[AuthenticationResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateAuthenticationResult")(cryptoObj.asInstanceOf[js.Any], authority.asInstanceOf[js.Any], cacheRecord.asInstanceOf[js.Any], fromTokenCache.asInstanceOf[js.Any], request.asInstanceOf[js.Any], idTokenObj.asInstanceOf[js.Any], requestState.asInstanceOf[js.Any], serverTokenResponse.asInstanceOf[js.Any], requestId.asInstanceOf[js.Any])).asInstanceOf[js.Promise[AuthenticationResult]]
   }
 }

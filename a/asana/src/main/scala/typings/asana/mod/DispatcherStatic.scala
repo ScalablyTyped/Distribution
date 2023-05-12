@@ -12,7 +12,6 @@ trait DispatcherStatic
      with /**
   * Creates a dispatcher which will act as a basic wrapper for making HTTP
   * requests to the API, and handle authentication.
-  * @class
   * @classdesc A HTTP wrapper for the Asana API
   * @param {Object} options for default behavior of the Dispatcher
   * @option {Authenticator} [authenticator] Object to use for authentication.
@@ -31,7 +30,6 @@ Instantiable0[Dispatcher]
   
   /**
     * The relative API path for the current version of the Asana API.
-    * @type {String}
     */
   var API_PATH: String = js.native
   

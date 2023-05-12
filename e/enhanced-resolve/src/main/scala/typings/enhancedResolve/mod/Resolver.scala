@@ -112,9 +112,9 @@ open class Resolver () extends StObject {
     request: String,
     resolveContext: ResolveContext,
     callback: js.Function3[
-      /* arg0 */ Null | js.Error, 
-      /* arg1 */ js.UndefOr[String | `false`], 
-      /* arg2 */ js.UndefOr[ResolveRequest], 
+      /* err */ Null | ErrorWithDetail, 
+      /* res */ js.UndefOr[String | `false`], 
+      /* req */ js.UndefOr[ResolveRequest], 
       Unit
     ]
   ): Unit = js.native

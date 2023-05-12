@@ -11,6 +11,8 @@ trait Forceget extends StObject {
   var forceget: js.UndefOr[Boolean] = js.undefined
   
   var xAdsForce: js.UndefOr[Boolean] = js.undefined
+  
+  var xAdsFormat: js.UndefOr[String] = js.undefined
 }
 object Forceget {
   
@@ -33,5 +35,9 @@ object Forceget {
     inline def setXAdsForce(value: Boolean): Self = StObject.set(x, "xAdsForce", value.asInstanceOf[js.Any])
     
     inline def setXAdsForceUndefined: Self = StObject.set(x, "xAdsForce", js.undefined)
+    
+    inline def setXAdsFormat(value: String): Self = StObject.set(x, "xAdsFormat", value.asInstanceOf[js.Any])
+    
+    inline def setXAdsFormatUndefined: Self = StObject.set(x, "xAdsFormat", js.undefined)
   }
 }

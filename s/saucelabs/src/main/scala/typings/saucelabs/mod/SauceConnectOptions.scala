@@ -122,7 +122,7 @@ trait SauceConnectOptions extends StObject {
   var readyfile: js.UndefOr[String] = js.undefined
   
   /**
-    * Specify the Sauce Connect version you want to use. (default: 4.8.0)
+    * Specify the Sauce Connect version you want to use. (default: 4.8.2)
     */
   var scVersion: js.UndefOr[String] = js.undefined
   

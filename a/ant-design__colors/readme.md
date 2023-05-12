@@ -1,7 +1,7 @@
 
 # Scala.js typings for ant-design__colors
 
-Typings are for version 6.0.0
+Typings are for version 7.0.0
 
 ## Library description:
 Color palettes calculator of Ant Design

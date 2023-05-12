@@ -6,10 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait MessageRecipientMode extends StObject {
   
-  /** @type {number} Returns the selected recipient mode. */
+  /** Returns the selected recipient mode. */
   var mode: Double
   
-  /** @type {any} Returns the moderator/administrator message target, according to the selected recipient mode. */
+  /** Returns the moderator/administrator message target, according to the selected recipient mode. */
   var target: Any
 }
 object MessageRecipientMode {

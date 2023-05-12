@@ -50,6 +50,11 @@ object MaterialFlags {
   def _ColorGradingTextureEnabled: Any = js.native
   inline def _ColorGradingTextureEnabled_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ColorGradingTextureEnabled")(x.asInstanceOf[js.Any])
   
+  @JSImport("babylonjs/Legacy/legacy", "MaterialFlags._DecalMapEnabled")
+  @js.native
+  def _DecalMapEnabled: Any = js.native
+  inline def _DecalMapEnabled_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DecalMapEnabled")(x.asInstanceOf[js.Any])
+  
   @JSImport("babylonjs/Legacy/legacy", "MaterialFlags._DetailTextureEnabled")
   @js.native
   def _DetailTextureEnabled: Any = js.native

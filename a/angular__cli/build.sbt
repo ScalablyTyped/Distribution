@@ -1,34 +1,32 @@
 organization := "org.scalablytyped"
 name := "angular__cli"
-version := "14.2.6-2d72e6"
+version := "16.0.1-07e0f1"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "ajv" % "8.11.2-e03df2",
-  "org.scalablytyped" %%% "angular-devkit__architect" % "0.1402.6-3abe59",
-  "org.scalablytyped" %%% "angular-devkit__core" % "14.2.6-555c59",
-  "org.scalablytyped" %%% "angular-devkit__schematics" % "14.2.6-3fc27f",
-  "org.scalablytyped" %%% "ansi-colors" % "4.1.3-67f56e",
-  "org.scalablytyped" %%% "formdata-polyfill" % "4.0.10-6ffa19",
-  "org.scalablytyped" %%% "inquirer" % "9.0-dt-20221107Z-52164f",
-  "org.scalablytyped" %%% "jsonc-parser" % "3.2.0-18e12a",
-  "org.scalablytyped" %%% "magic-string" % "0.26.7-dba250",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-874609",
-  "org.scalablytyped" %%% "node-fetch" % "3.3.0-2d4a26",
+  "org.scalablytyped" %%% "ajv" % "8.12.0-6bf940",
+  "org.scalablytyped" %%% "angular-devkit__architect" % "0.1600.1-bf434d",
+  "org.scalablytyped" %%% "angular-devkit__core" % "16.0.1-b2315a",
+  "org.scalablytyped" %%% "angular-devkit__schematics" % "16.0.1-336b58",
+  "org.scalablytyped" %%% "ansi-colors" % "4.1.3-7680c8",
+  "org.scalablytyped" %%% "formdata-polyfill" % "4.0.10-534907",
+  "org.scalablytyped" %%% "inquirer" % "9.0-dt-20230308Z-d2c172",
+  "org.scalablytyped" %%% "jsonc-parser" % "3.2.0-59c48d",
+  "org.scalablytyped" %%% "magic-string" % "0.30.0-c7f539",
+  "org.scalablytyped" %%% "node" % "20.1-dt-20230511Z-0320fc",
+  "org.scalablytyped" %%% "node-fetch" % "3.3.1-2bc985",
   "org.scalablytyped" %%% "npm-package-arg" % "6.1-dt-20211202Z-edb2bc",
-  "org.scalablytyped" %%% "npm-registry-fetch" % "8.0-dt-20220214Z-fca69b",
-  "org.scalablytyped" %%% "npmlog" % "4.1-dt-20211223Z-226472",
-  "org.scalablytyped" %%% "pacote" % "11.1-dt-20220616Z-b3e090",
-  "org.scalablytyped" %%% "re2" % "1.17.7-31fc73",
-  "org.scalablytyped" %%% "rxjs" % "7.5.7-d48537",
-  "org.scalablytyped" %%% "source-map" % "0.7.4-0d2ade",
-  "org.scalablytyped" %%% "ssri" % "7.1-dt-20211202Z-120378",
-  "org.scalablytyped" %%% "std" % "4.9-ecb5eb",
-  "org.scalablytyped" %%% "through" % "0.0-unknown-dt-20220818Z-5d5f40",
-  "org.scalablytyped" %%% "uri-js" % "4.4.1-8d8221",
-  "org.scalablytyped" %%% "yargs" % "17.0-dt-20221114Z-d5e9bc",
-  "org.scalablytyped" %%% "yargs-parser" % "21.0-dt-20220624Z-cd65a7")
+  "org.scalablytyped" %%% "npm-registry-fetch" % "8.0-dt-20220214Z-b7e291",
+  "org.scalablytyped" %%% "npmlog" % "4.1-dt-20211223Z-0aacb3",
+  "org.scalablytyped" %%% "pacote" % "11.1-dt-20220616Z-5385c5",
+  "org.scalablytyped" %%% "re2" % "1.18.0-0ff8d6",
+  "org.scalablytyped" %%% "rxjs" % "7.8.1-1301bf",
+  "org.scalablytyped" %%% "source-map" % "0.7.4-e1e422",
+  "org.scalablytyped" %%% "ssri" % "7.1-dt-20211202Z-48f599",
+  "org.scalablytyped" %%% "std" % "5.0-e63739",
+  "org.scalablytyped" %%% "through" % "0.0-unknown-dt-20220818Z-bead07",
+  "org.scalablytyped" %%% "uri-js" % "4.4.1-347272")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

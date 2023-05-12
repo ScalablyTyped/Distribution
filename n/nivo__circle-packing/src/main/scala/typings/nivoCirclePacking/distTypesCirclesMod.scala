@@ -6,6 +6,8 @@ import typings.nivoCirclePacking.distTypesTypesMod.ComputedDatum
 import typings.nivoCirclePacking.distTypesTypesMod.MouseHandlers
 import typings.nivoColors.distTypesInheritedColorMod.InheritedColorConfig
 import typings.react.mod.global.JSX.Element
+import typings.reactSpringCore.mod.Interpolation
+import typings.reactSpringWeb.mod.SpringValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -18,9 +20,7 @@ object distTypesCirclesMod {
   
   inline def Circles[RawDatum](param0: CirclesProps[RawDatum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Circles")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  inline def interpolateRadius(
-    radiusValue: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValue<number> */ Any
-  ): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateRadius")(radiusValue.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def interpolateRadius(radiusValue: SpringValue[Double]): Interpolation[Double, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("interpolateRadius")(radiusValue.asInstanceOf[js.Any]).asInstanceOf[Interpolation[Double, Any]]
   
   trait CirclesProps[RawDatum]
     extends StObject

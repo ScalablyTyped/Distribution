@@ -8,11 +8,11 @@ trait PathOwnerString extends StObject {
   
   var path: OwnerString
   
-  var query: `407`
+  var query: `473`
 }
 object PathOwnerString {
   
-  inline def apply(path: OwnerString, query: `407`): PathOwnerString = {
+  inline def apply(path: OwnerString, query: `473`): PathOwnerString = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
     __obj.asInstanceOf[PathOwnerString]
   }
@@ -22,6 +22,6 @@ object PathOwnerString {
     
     inline def setPath(value: OwnerString): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    inline def setQuery(value: `407`): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: `473`): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
   }
 }

@@ -7,7 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PostResponses202401403 extends StObject {
   
   /**
-    * Triggers an export of the specified codespace and returns a URL and ID where the status of the export can be monitored.
+    * Export a codespace for the authenticated user
+    * @description Triggers an export of the specified codespace and returns a URL and ID where the status of the export can be monitored.
+    *
+    * If changes cannot be pushed to the codespace's repository, they will be pushed to a new or previously-existing fork instead.
     *
     * You must authenticate using a personal access token with the `codespace` scope to use this endpoint.
     *

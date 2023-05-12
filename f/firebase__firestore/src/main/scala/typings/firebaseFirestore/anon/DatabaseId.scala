@@ -1,6 +1,6 @@
 package typings.firebaseFirestore.anon
 
-import typings.firebaseFirestore.distPackagesFirestoreDistIndexDotesm2017Mod.Hc
+import typings.firebaseFirestore.distPackagesFirestoreDistIndexDotesm2017Mod.ch
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,11 +11,11 @@ trait DatabaseId extends StObject {
   
   var databaseId: Any
   
-  var settings: Hc
+  var settings: ch
 }
 object DatabaseId {
   
-  inline def apply(app: Any, databaseId: Any, settings: Hc): DatabaseId = {
+  inline def apply(app: Any, databaseId: Any, settings: ch): DatabaseId = {
     val __obj = js.Dynamic.literal(app = app.asInstanceOf[js.Any], databaseId = databaseId.asInstanceOf[js.Any], settings = settings.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatabaseId]
   }
@@ -27,6 +27,6 @@ object DatabaseId {
     
     inline def setDatabaseId(value: Any): Self = StObject.set(x, "databaseId", value.asInstanceOf[js.Any])
     
-    inline def setSettings(value: Hc): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
+    inline def setSettings(value: ch): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
   }
 }

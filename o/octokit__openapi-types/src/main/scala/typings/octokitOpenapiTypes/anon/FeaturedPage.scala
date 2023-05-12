@@ -8,10 +8,8 @@ trait FeaturedPage extends StObject {
   
   var featured: js.UndefOr[Boolean] = js.undefined
   
-  /** Page number of the results to fetch. */
   var page: js.UndefOr[Double] = js.undefined
   
-  /** The number of results per page (max 100). */
   var per_page: js.UndefOr[Double] = js.undefined
 }
 object FeaturedPage {

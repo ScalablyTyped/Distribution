@@ -12,6 +12,11 @@ trait KinesisStreamingSourceOptions extends StObject {
   var AddIdleTimeBetweenReads: js.UndefOr[BoxedBoolean] = js.undefined
   
   /**
+    * When this option is set to 'true', the data output will contain an additional column named "__src_timestamp" that indicates the time when the corresponding record received by the stream. The default value is 'false'. This option is supported in Glue version 4.0 or later.
+    */
+  var AddRecordTimestamp: js.UndefOr[EnclosedInStringProperty] = js.undefined
+  
+  /**
     * Avoids creating an empty microbatch job by checking for unread data in the Kinesis data stream before the batch is started. The default value is "False".
     */
   var AvoidEmptyBatches: js.UndefOr[BoxedBoolean] = js.undefined
@@ -30,6 +35,11 @@ trait KinesisStreamingSourceOptions extends StObject {
     * The minimum time interval between two ListShards API calls for your script to consider resharding. The default value is 1s.
     */
   var DescribeShardInterval: js.UndefOr[BoxedNonNegativeLong] = js.undefined
+  
+  /**
+    * When this option is set to 'true', for each batch, it will emit the metrics for the duration between the oldest record received by the stream and the time it arrives in Glue to CloudWatch. The metric's name is "glue.driver.streaming.maxConsumerLagInMs". The default value is 'false'. This option is supported in Glue version 4.0 or later.
+    */
+  var EmitConsumerLagMetrics: js.UndefOr[EnclosedInStringProperty] = js.undefined
   
   /**
     * The URL of the Kinesis endpoint.
@@ -110,6 +120,10 @@ object KinesisStreamingSourceOptions {
     
     inline def setAddIdleTimeBetweenReadsUndefined: Self = StObject.set(x, "AddIdleTimeBetweenReads", js.undefined)
     
+    inline def setAddRecordTimestamp(value: EnclosedInStringProperty): Self = StObject.set(x, "AddRecordTimestamp", value.asInstanceOf[js.Any])
+    
+    inline def setAddRecordTimestampUndefined: Self = StObject.set(x, "AddRecordTimestamp", js.undefined)
+    
     inline def setAvoidEmptyBatches(value: BoxedBoolean): Self = StObject.set(x, "AvoidEmptyBatches", value.asInstanceOf[js.Any])
     
     inline def setAvoidEmptyBatchesUndefined: Self = StObject.set(x, "AvoidEmptyBatches", js.undefined)
@@ -125,6 +139,10 @@ object KinesisStreamingSourceOptions {
     inline def setDescribeShardInterval(value: BoxedNonNegativeLong): Self = StObject.set(x, "DescribeShardInterval", value.asInstanceOf[js.Any])
     
     inline def setDescribeShardIntervalUndefined: Self = StObject.set(x, "DescribeShardInterval", js.undefined)
+    
+    inline def setEmitConsumerLagMetrics(value: EnclosedInStringProperty): Self = StObject.set(x, "EmitConsumerLagMetrics", value.asInstanceOf[js.Any])
+    
+    inline def setEmitConsumerLagMetricsUndefined: Self = StObject.set(x, "EmitConsumerLagMetrics", js.undefined)
     
     inline def setEndpointUrl(value: EnclosedInStringProperty): Self = StObject.set(x, "EndpointUrl", value.asInstanceOf[js.Any])
     

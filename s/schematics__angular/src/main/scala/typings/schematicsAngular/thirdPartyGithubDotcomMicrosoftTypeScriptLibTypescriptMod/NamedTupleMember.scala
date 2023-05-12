@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NamedTupleMember
   extends StObject
      with TypeNode
-     with JSDocContainer
      with Declaration
+     with JSDocContainer
      with HasJSDoc {
   
   val dotDotDotToken: js.UndefOr[

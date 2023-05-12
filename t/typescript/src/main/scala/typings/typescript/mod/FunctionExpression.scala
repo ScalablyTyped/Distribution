@@ -9,6 +9,8 @@ trait FunctionExpression
   extends StObject
      with PrimaryExpression
      with FunctionLikeDeclarationBase
+     with LocalsContainer
+     with FlowContainer
      with FunctionLikeDeclaration
      with HasJSDoc
      with HasModifiers
@@ -20,8 +22,7 @@ trait FunctionExpression
   @JSName("kind")
   val kind_FunctionExpression: typings.typescript.mod.SyntaxKind.FunctionExpression = js.native
   
-  @JSName("modifiers")
-  val modifiers_FunctionExpression: js.UndefOr[NodeArray[Modifier]] = js.native
+  val modifiers: js.UndefOr[NodeArray[Modifier]] = js.native
   
   @JSName("name")
   val name_FunctionExpression: js.UndefOr[Identifier] = js.native

@@ -11,7 +11,7 @@ open class SpotLight protected ()
   /**
     * Creates a SpotLight object in the scene. A spot light is a simply light oriented cone.
     * It can cast shadows.
-    * Documentation : https://doc.babylonjs.com/babylon101/lights
+    * Documentation : https://doc.babylonjs.com/features/featuresDeepDive/lights/lights_introduction
     * @param name The light friendly name
     * @param position The position of the spot light in the scene
     * @param direction The direction of the light in the scene

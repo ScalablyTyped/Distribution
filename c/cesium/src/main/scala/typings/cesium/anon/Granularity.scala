@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Granularity extends StObject {
   
-  var cornerType: js.UndefOr[typings.cesium.mod.CornerType] = js.undefined
+  var center: Cartesian3
   
   var ellipsoid: js.UndefOr[typings.cesium.mod.Ellipsoid] = js.undefined
   
@@ -17,23 +17,27 @@ trait Granularity extends StObject {
   
   var height: js.UndefOr[Double] = js.undefined
   
-  var positions: js.Array[Cartesian3]
+  var rotation: js.UndefOr[Double] = js.undefined
   
-  var width: Double
+  var semiMajorAxis: Double
+  
+  var semiMinorAxis: Double
+  
+  var stRotation: js.UndefOr[Double] = js.undefined
+  
+  var vertexFormat: js.UndefOr[typings.cesium.mod.VertexFormat] = js.undefined
 }
 object Granularity {
   
-  inline def apply(positions: js.Array[Cartesian3], width: Double): Granularity = {
-    val __obj = js.Dynamic.literal(positions = positions.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+  inline def apply(center: Cartesian3, semiMajorAxis: Double, semiMinorAxis: Double): Granularity = {
+    val __obj = js.Dynamic.literal(center = center.asInstanceOf[js.Any], semiMajorAxis = semiMajorAxis.asInstanceOf[js.Any], semiMinorAxis = semiMinorAxis.asInstanceOf[js.Any])
     __obj.asInstanceOf[Granularity]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: Granularity] (val x: Self) extends AnyVal {
     
-    inline def setCornerType(value: typings.cesium.mod.CornerType): Self = StObject.set(x, "cornerType", value.asInstanceOf[js.Any])
-    
-    inline def setCornerTypeUndefined: Self = StObject.set(x, "cornerType", js.undefined)
+    inline def setCenter(value: Cartesian3): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     
     inline def setEllipsoid(value: typings.cesium.mod.Ellipsoid): Self = StObject.set(x, "ellipsoid", value.asInstanceOf[js.Any])
     
@@ -51,10 +55,20 @@ object Granularity {
     
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    inline def setPositions(value: js.Array[Cartesian3]): Self = StObject.set(x, "positions", value.asInstanceOf[js.Any])
+    inline def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
     
-    inline def setPositionsVarargs(value: Cartesian3*): Self = StObject.set(x, "positions", js.Array(value*))
+    inline def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
     
-    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setSemiMajorAxis(value: Double): Self = StObject.set(x, "semiMajorAxis", value.asInstanceOf[js.Any])
+    
+    inline def setSemiMinorAxis(value: Double): Self = StObject.set(x, "semiMinorAxis", value.asInstanceOf[js.Any])
+    
+    inline def setStRotation(value: Double): Self = StObject.set(x, "stRotation", value.asInstanceOf[js.Any])
+    
+    inline def setStRotationUndefined: Self = StObject.set(x, "stRotation", js.undefined)
+    
+    inline def setVertexFormat(value: typings.cesium.mod.VertexFormat): Self = StObject.set(x, "vertexFormat", value.asInstanceOf[js.Any])
+    
+    inline def setVertexFormatUndefined: Self = StObject.set(x, "vertexFormat", js.undefined)
   }
 }

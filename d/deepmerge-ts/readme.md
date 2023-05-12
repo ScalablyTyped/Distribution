@@ -1,7 +1,7 @@
 
 # Scala.js typings for deepmerge-ts
 
-Typings are for version 4.2.2
+Typings are for version 5.1.0
 
 ## Library description:
 Deeply merge 2 or more objects respecting type information.

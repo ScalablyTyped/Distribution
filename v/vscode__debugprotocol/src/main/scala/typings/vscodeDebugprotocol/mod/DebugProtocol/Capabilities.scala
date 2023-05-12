@@ -46,13 +46,13 @@ trait Capabilities extends StObject {
   /** The debug adapter supports data breakpoints. */
   var supportsDataBreakpoints: js.UndefOr[Boolean] = js.undefined
   
-  /** The debug adapter supports the delayed loading of parts of the stack, which requires that both the `startFrame` and `levels` arguments and the `totalFrames` result of the `StackTrace` request are supported. */
+  /** The debug adapter supports the delayed loading of parts of the stack, which requires that both the `startFrame` and `levels` arguments and the `totalFrames` result of the `stackTrace` request are supported. */
   var supportsDelayedStackTraceLoading: js.UndefOr[Boolean] = js.undefined
   
   /** The debug adapter supports the `disassemble` request. */
   var supportsDisassembleRequest: js.UndefOr[Boolean] = js.undefined
   
-  /** The debug adapter supports a (side effect free) evaluate request for data hovers. */
+  /** The debug adapter supports a (side effect free) `evaluate` request for data hovers. */
   var supportsEvaluateForHovers: js.UndefOr[Boolean] = js.undefined
   
   /** The debug adapter supports `filterOptions` as an argument on the `setExceptionBreakpoints` request. */
@@ -61,7 +61,7 @@ trait Capabilities extends StObject {
   /** The debug adapter supports the `exceptionInfo` request. */
   var supportsExceptionInfoRequest: js.UndefOr[Boolean] = js.undefined
   
-  /** The debug adapter supports `exceptionOptions` on the setExceptionBreakpoints request. */
+  /** The debug adapter supports `exceptionOptions` on the `setExceptionBreakpoints` request. */
   var supportsExceptionOptions: js.UndefOr[Boolean] = js.undefined
   
   /** The debug adapter supports function breakpoints. */
@@ -79,7 +79,7 @@ trait Capabilities extends StObject {
   /** The debug adapter supports the `loadedSources` request. */
   var supportsLoadedSourcesRequest: js.UndefOr[Boolean] = js.undefined
   
-  /** The debug adapter supports logpoints by interpreting the `logMessage` attribute of the `SourceBreakpoint`. */
+  /** The debug adapter supports log points by interpreting the `logMessage` attribute of the `SourceBreakpoint`. */
   var supportsLogPoints: js.UndefOr[Boolean] = js.undefined
   
   /** The debug adapter supports the `modules` request. */
@@ -91,7 +91,7 @@ trait Capabilities extends StObject {
   /** The debug adapter supports restarting a frame. */
   var supportsRestartFrame: js.UndefOr[Boolean] = js.undefined
   
-  /** The debug adapter supports the `restart` request. In this case a client should not implement `restart` by terminating and relaunching the adapter but by calling the RestartRequest. */
+  /** The debug adapter supports the `restart` request. In this case a client should not implement `restart` by terminating and relaunching the adapter but by calling the `restart` request. */
   var supportsRestartRequest: js.UndefOr[Boolean] = js.undefined
   
   /** The debug adapter supports the `setExpression` request. */
@@ -118,7 +118,7 @@ trait Capabilities extends StObject {
   /** The debug adapter supports the `terminateThreads` request. */
   var supportsTerminateThreadsRequest: js.UndefOr[Boolean] = js.undefined
   
-  /** The debug adapter supports a `format` attribute on the stackTraceRequest, variablesRequest, and evaluateRequest. */
+  /** The debug adapter supports a `format` attribute on the `stackTrace`, `variables`, and `evaluate` requests. */
   var supportsValueFormattingOptions: js.UndefOr[Boolean] = js.undefined
   
   /** The debug adapter supports the `writeMemory` request. */

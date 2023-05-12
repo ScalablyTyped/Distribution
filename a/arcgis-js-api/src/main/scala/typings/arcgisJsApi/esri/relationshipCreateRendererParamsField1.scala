@@ -16,7 +16,7 @@ trait relationshipCreateRendererParamsField1 extends StObject {
   /**
     * The label used to describe the field or variable in the legend.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-relationship.html#createRenderer)
+    * [Read more...](global.html)
     */
   var label: js.UndefOr[String] = js.undefined
   

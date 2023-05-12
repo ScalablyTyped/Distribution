@@ -7,8 +7,10 @@ import typings.babelParser.mod.ParserPlugin
 import typings.babelTypes.mod.Identifier_
 import typings.babelTypes.mod.Node
 import typings.babelTypes.mod.Program_
+import typings.babelTypes.mod.Statement
 import typings.magicString.mod.default
 import typings.std.Record
+import typings.vueCompilerSfc.anon.Ns
 import typings.vueCompilerSfc.mod.^
 import typings.vueReactivityTransform.anon.Default
 import typings.vueReactivityTransform.anon.ImportedHelpers
@@ -47,6 +49,11 @@ inline def generateCodeFrame(source: String, start: Double): String = (^.asInsta
 inline def generateCodeFrame(source: String, start: Double, end: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateCodeFrame")(source.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[String]
 inline def generateCodeFrame(source: String, start: Unit, end: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateCodeFrame")(source.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[String]
 
+inline def inferRuntimeType(ctx: TypeResolveContext, node: Node & MaybeWithScope): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("inferRuntimeType")(ctx.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+inline def inferRuntimeType(ctx: TypeResolveContext, node: Node & MaybeWithScope, scope: TypeScope): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("inferRuntimeType")(ctx.asInstanceOf[js.Any], node.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+
+inline def invalidateTypeCache(filename: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("invalidateTypeCache")(filename.asInstanceOf[js.Any]).asInstanceOf[Unit]
+
 inline def isInDestructureAssignment(parent: Node, parentStack: js.Array[Node]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isInDestructureAssignment")(parent.asInstanceOf[js.Any], parentStack.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 
 inline def isStaticProperty(node: Node): /* is @babel/types.@babel/types.ObjectProperty */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStaticProperty")(node.asInstanceOf[js.Any]).asInstanceOf[/* is @babel/types.@babel/types.ObjectProperty */ Boolean]
@@ -54,8 +61,22 @@ inline def isStaticProperty(node: Node): /* is @babel/types.@babel/types.ObjectP
 inline def parse(source: String): SFCParseResult = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(source.asInstanceOf[js.Any]).asInstanceOf[SFCParseResult]
 inline def parse(source: String, param1: SFCParseOptions): SFCParseResult = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(source.asInstanceOf[js.Any], param1.asInstanceOf[js.Any])).asInstanceOf[SFCParseResult]
 
+inline def registerTS(_ts: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerTS")(_ts.asInstanceOf[js.Any]).asInstanceOf[Unit]
+
+inline def resolveTypeElements(
+  ctx: TypeResolveContext,
+  node: Node & MaybeWithScope & typings.vueCompilerSfc.anon.ResolvedElements
+): ResolvedElements = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveTypeElements")(ctx.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[ResolvedElements]
+inline def resolveTypeElements(
+  ctx: TypeResolveContext,
+  node: Node & MaybeWithScope & typings.vueCompilerSfc.anon.ResolvedElements,
+  scope: TypeScope
+): ResolvedElements = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveTypeElements")(ctx.asInstanceOf[js.Any], node.asInstanceOf[js.Any], scope.asInstanceOf[js.Any])).asInstanceOf[ResolvedElements]
+
 inline def rewriteDefault(input: String, as: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("rewriteDefault")(input.asInstanceOf[js.Any], as.asInstanceOf[js.Any])).asInstanceOf[String]
 inline def rewriteDefault(input: String, as: String, parserPlugins: js.Array[ParserPlugin]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("rewriteDefault")(input.asInstanceOf[js.Any], as.asInstanceOf[js.Any], parserPlugins.asInstanceOf[js.Any])).asInstanceOf[String]
+
+inline def rewriteDefaultAST(ast: js.Array[Statement], s: default, as: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rewriteDefaultAST")(ast.asInstanceOf[js.Any], s.asInstanceOf[js.Any], as.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
 inline def shouldTransformRef(src: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("shouldTransformRef")(src.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 
@@ -82,6 +103,8 @@ inline def transformRefAST(
   knownProps: Record[String, Default]
 ): ImportedHelpers = (^.asInstanceOf[js.Dynamic].applyDynamic("transformRefAST")(ast.asInstanceOf[js.Any], s.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], knownRefs.asInstanceOf[js.Any], knownProps.asInstanceOf[js.Any])).asInstanceOf[ImportedHelpers]
 inline def transformRefAST(ast: Program_, s: default, offset: Unit, knownRefs: Unit, knownProps: Record[String, Default]): ImportedHelpers = (^.asInstanceOf[js.Dynamic].applyDynamic("transformRefAST")(ast.asInstanceOf[js.Any], s.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], knownRefs.asInstanceOf[js.Any], knownProps.asInstanceOf[js.Any])).asInstanceOf[ImportedHelpers]
+
+inline def version: String = ^.asInstanceOf[js.Dynamic].selectDynamic("version").asInstanceOf[String]
 
 inline def walk: Any = ^.asInstanceOf[js.Dynamic].selectDynamic("walk").asInstanceOf[Any]
 
@@ -192,3 +215,7 @@ inline def walkIdentifiers(
 ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("walkIdentifiers")(root.asInstanceOf[js.Any], onIdentifier.asInstanceOf[js.Any], includeAll.asInstanceOf[js.Any], parentStack.asInstanceOf[js.Any], knownIds.asInstanceOf[js.Any])).asInstanceOf[Unit]
 
 type AssetURLTagConfig = StringDictionary[js.Array[String]]
+
+type PropsDestructureBindings = Record[String, typings.vueCompilerSfc.anon.Default]
+
+type ScopeTypeNode = Node & WithScope & Ns

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "favicons-webpack-plugin" : "6.0.0-alpha.2"
+      "favicons-webpack-plugin" : "6.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "favicons-webpack-plugin" : "6.0.0-alpha.2"
+      "favicons-webpack-plugin" : "6.0.0"
     }
   ],
   "compile-devDependencies" : [

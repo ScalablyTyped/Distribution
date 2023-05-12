@@ -28,14 +28,14 @@ trait NutritionOrderSupplement
   var quantity: js.UndefOr[Quantity] = js.undefined
   
   /**
-    * The time period and frequency at which the supplement(s) should be given.  The supplement should be given for the combination of all schedules if more than one schedule is present.
+    * Schedule information for a supplement.
     */
-  var schedule: js.UndefOr[js.Array[Timing]] = js.undefined
+  var schedule: js.UndefOr[NutritionOrderSupplementSchedule] = js.undefined
   
   /**
     * The kind of nutritional supplement product required such as a high protein or pediatric clear liquid supplement.
     */
-  var `type`: js.UndefOr[CodeableConcept] = js.undefined
+  var `type`: js.UndefOr[CodeableReference] = js.undefined
 }
 object NutritionOrderSupplement {
   
@@ -59,13 +59,11 @@ object NutritionOrderSupplement {
     
     inline def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
     
-    inline def setSchedule(value: js.Array[Timing]): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
+    inline def setSchedule(value: NutritionOrderSupplementSchedule): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
     
     inline def setScheduleUndefined: Self = StObject.set(x, "schedule", js.undefined)
     
-    inline def setScheduleVarargs(value: Timing*): Self = StObject.set(x, "schedule", js.Array(value*))
-    
-    inline def setType(value: CodeableConcept): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: CodeableReference): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     

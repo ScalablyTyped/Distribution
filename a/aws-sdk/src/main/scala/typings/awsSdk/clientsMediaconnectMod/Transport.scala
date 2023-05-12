@@ -12,7 +12,7 @@ trait Transport extends StObject {
   var CidrAllowList: js.UndefOr[listOfString] = js.undefined
   
   /**
-    * The smoothing max bitrate for RIST, RTP, and RTP-FEC streams.
+    * The smoothing max bitrate (in bps) for RIST, RTP, and RTP-FEC streams.
     */
   var MaxBitrate: js.UndefOr[integer] = js.undefined
   
@@ -67,7 +67,7 @@ trait Transport extends StObject {
   var SourceListenerPort: js.UndefOr[integer] = js.undefined
   
   /**
-    * The stream ID that you want to use for this transport. This parameter applies only to Zixi-based streams.
+    * The stream ID that you want to use for this transport. This parameter applies only to Zixi and SRT caller-based streams.
     */
   var StreamId: js.UndefOr[string] = js.undefined
 }

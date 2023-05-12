@@ -27,6 +27,11 @@ trait PolicySummary extends StObject {
   var PolicyName: js.UndefOr[ResourceName] = js.undefined
   
   /**
+    * Indicates whether the policy is in or out of an admin's policy or Region scope.    ACTIVE - The administrator can manage and delete the policy.    OUT_OF_ADMIN_SCOPE - The administrator can view the policy, but they can't edit or delete the policy. Existing policy protections stay in place. Any new resources that come into scope of the policy won't be protected.  
+    */
+  var PolicyStatus: js.UndefOr[CustomerPolicyStatus] = js.undefined
+  
+  /**
     * Indicates if the policy should be automatically applied to new resources.
     */
   var RemediationEnabled: js.UndefOr[Boolean] = js.undefined
@@ -66,6 +71,10 @@ object PolicySummary {
     inline def setPolicyName(value: ResourceName): Self = StObject.set(x, "PolicyName", value.asInstanceOf[js.Any])
     
     inline def setPolicyNameUndefined: Self = StObject.set(x, "PolicyName", js.undefined)
+    
+    inline def setPolicyStatus(value: CustomerPolicyStatus): Self = StObject.set(x, "PolicyStatus", value.asInstanceOf[js.Any])
+    
+    inline def setPolicyStatusUndefined: Self = StObject.set(x, "PolicyStatus", js.undefined)
     
     inline def setRemediationEnabled(value: Boolean): Self = StObject.set(x, "RemediationEnabled", value.asInstanceOf[js.Any])
     

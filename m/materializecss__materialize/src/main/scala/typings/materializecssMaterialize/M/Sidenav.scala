@@ -11,12 +11,12 @@ trait Sidenav
      with Openable {
   
   /**
-    * Describes if Sidenav is being dragged
+    * Describes if Sidenav is being dragged.
     */
   var isDragged: Boolean
   
   /**
-    * Describes if sidenav is fixed
+    * Describes if sidenav is fixed.
     */
   var isFixed: Boolean
 }

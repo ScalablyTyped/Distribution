@@ -17,7 +17,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * when they can address them. When building an integration it’s worth noting that tasks with due dates
   * will automatically move through assignee_status states as their due dates approach; read up on task
   * auto-promotion, https://asana.com/guide/help/fundamentals/my-tasks#gl-auto-promote, for more information
-  * @class
   * @param {Dispatcher} dispatcher The API dispatcher
   */
 @js.native

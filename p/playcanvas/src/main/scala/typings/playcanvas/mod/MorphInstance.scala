@@ -15,7 +15,7 @@ open class MorphInstance protected () extends StObject {
   /**
     * Create a new MorphInstance instance.
     *
-    * @param {Morph} morph - The {@link Morph} to instance.
+    * @param {import('./morph.js').Morph} morph - The {@link Morph} to instance.
     */
   def this(morph: Morph) = this()
   
@@ -38,7 +38,7 @@ open class MorphInstance protected () extends StObject {
     * Create complete shader for texture based morphing.
     *
     * @param {number} count - Number of textures to blend.
-    * @returns {Shader} Shader.
+    * @returns {import('../platform/graphics/shader.js').Shader} Shader.
     * @private
     */
   /* private */ var _getShader: Any = js.native
@@ -73,7 +73,8 @@ open class MorphInstance protected () extends StObject {
   /**
     * Gets current weight of the specified morph target.
     *
-    * @param {string|number} key - An identifier for the morph target. Either the weight index or the weight name
+    * @param {string|number} key - An identifier for the morph target. Either the weight index or
+    * the weight name.
     * @returns {number} Weight.
     */
   def getWeight(key: String): Double = js.native
@@ -84,7 +85,7 @@ open class MorphInstance protected () extends StObject {
   /**
     * The morph with its targets, which is being instanced.
     *
-    * @type {Morph}
+    * @type {import('./morph.js').Morph}
     */
   var morph: Morph = js.native
   
@@ -97,7 +98,8 @@ open class MorphInstance protected () extends StObject {
   /**
     * Sets weight of the specified morph target.
     *
-    * @param {string|number} key - An identifier for the morph target. Either the weight index or the weight name
+    * @param {string|number} key - An identifier for the morph target. Either the weight index or
+    * the weight name.
     * @param {number} weight - Weight.
     */
   def setWeight(key: String, weight: Double): Unit = js.native

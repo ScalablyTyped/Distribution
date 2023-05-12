@@ -13,6 +13,8 @@ object triggerMskMod {
   
   trait MSKEvent extends StObject {
     
+    var bootstrapServers: String
+    
     var eventSource: awsColonkafka
     
     var eventSourceArn: String
@@ -21,13 +23,15 @@ object triggerMskMod {
   }
   object MSKEvent {
     
-    inline def apply(eventSourceArn: String, records: StringDictionary[js.Array[MSKRecord]]): MSKEvent = {
-      val __obj = js.Dynamic.literal(eventSource = "aws:kafka", eventSourceArn = eventSourceArn.asInstanceOf[js.Any], records = records.asInstanceOf[js.Any])
+    inline def apply(bootstrapServers: String, eventSourceArn: String, records: StringDictionary[js.Array[MSKRecord]]): MSKEvent = {
+      val __obj = js.Dynamic.literal(bootstrapServers = bootstrapServers.asInstanceOf[js.Any], eventSource = "aws:kafka", eventSourceArn = eventSourceArn.asInstanceOf[js.Any], records = records.asInstanceOf[js.Any])
       __obj.asInstanceOf[MSKEvent]
     }
     
     @scala.inline
     implicit open class MutableBuilder[Self <: MSKEvent] (val x: Self) extends AnyVal {
+      
+      inline def setBootstrapServers(value: String): Self = StObject.set(x, "bootstrapServers", value.asInstanceOf[js.Any])
       
       inline def setEventSource(value: awsColonkafka): Self = StObject.set(x, "eventSource", value.asInstanceOf[js.Any])
       

@@ -82,6 +82,13 @@ trait ClusterOperationInfo extends StObject {
     
     */
   var TargetClusterInfo: js.UndefOr[MutableClusterInfo] = js.undefined
+  
+  /**
+    * 
+    Description of the VPC connection for CreateVpcConnection and DeleteVpcConnection operations.
+    
+    */
+  var VpcConnectionInfo: js.UndefOr[typings.awsSdk.clientsKafkaMod.VpcConnectionInfo] = js.undefined
 }
 object ClusterOperationInfo {
   
@@ -138,5 +145,9 @@ object ClusterOperationInfo {
     inline def setTargetClusterInfo(value: MutableClusterInfo): Self = StObject.set(x, "TargetClusterInfo", value.asInstanceOf[js.Any])
     
     inline def setTargetClusterInfoUndefined: Self = StObject.set(x, "TargetClusterInfo", js.undefined)
+    
+    inline def setVpcConnectionInfo(value: VpcConnectionInfo): Self = StObject.set(x, "VpcConnectionInfo", value.asInstanceOf[js.Any])
+    
+    inline def setVpcConnectionInfoUndefined: Self = StObject.set(x, "VpcConnectionInfo", js.undefined)
   }
 }

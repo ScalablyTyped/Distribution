@@ -12,7 +12,7 @@ trait DataSourceSyncJob extends StObject {
   var DataSourceErrorCode: js.UndefOr[String] = js.undefined
   
   /**
-    * The UNIX datetime that the synchronization job completed.
+    * The Unix timestamp when the synchronization job completed.
     */
   var EndTime: js.UndefOr[js.Date] = js.undefined
   
@@ -27,7 +27,7 @@ trait DataSourceSyncJob extends StObject {
   var ErrorMessage: js.UndefOr[typings.awsSdk.clientsKendraMod.ErrorMessage] = js.undefined
   
   /**
-    * A unique identifier for the synchronization job.
+    * A identifier for the synchronization job.
     */
   var ExecutionId: js.UndefOr[String] = js.undefined
   
@@ -37,7 +37,7 @@ trait DataSourceSyncJob extends StObject {
   var Metrics: js.UndefOr[DataSourceSyncJobMetrics] = js.undefined
   
   /**
-    * The UNIX datetime that the synchronization job started.
+    * The Unix timestamp when the synchronization job started.
     */
   var StartTime: js.UndefOr[js.Date] = js.undefined
   

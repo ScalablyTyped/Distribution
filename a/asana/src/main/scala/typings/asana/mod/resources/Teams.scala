@@ -11,7 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * A _team_ is used to group related projects and people together within an
   * organization. Each project in an organization is associated with a team.
-  * @class
   * @param {Dispatcher} dispatcher The API dispatcher
   */
 @js.native

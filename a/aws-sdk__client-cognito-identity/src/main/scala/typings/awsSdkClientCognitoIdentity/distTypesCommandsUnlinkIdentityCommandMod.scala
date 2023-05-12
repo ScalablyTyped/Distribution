@@ -25,8 +25,14 @@ object distTypesCommandsUnlinkIdentityCommandMod {
           Any, 
           Any
         ] {
+    /**
+      * @public
+      */
     def this(input: UnlinkIdentityCommandInput) = this()
     
+    /**
+      * @internal
+      */
     /* private */ var deserialize: Any = js.native
     
     /**
@@ -42,6 +48,9 @@ object distTypesCommandsUnlinkIdentityCommandMod {
       options: HttpHandlerOptions
     ): Handler[UnlinkIdentityCommandInput, UnlinkIdentityCommandOutput] = js.native
     
+    /**
+      * @internal
+      */
     /* private */ var serialize: Any = js.native
   }
   /* static members */

@@ -17,6 +17,8 @@ inline def connectLogger(logger: Logger, options: Context): Any = (^.asInstanceO
 inline def getLogger(): Logger = ^.asInstanceOf[js.Dynamic].applyDynamic("getLogger")().asInstanceOf[Logger]
 inline def getLogger(category: String): Logger = ^.asInstanceOf[js.Dynamic].applyDynamic("getLogger")(category.asInstanceOf[js.Any]).asInstanceOf[Logger]
 
+inline def isConfigured(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isConfigured")().asInstanceOf[Boolean]
+
 inline def levels: Levels_ = ^.asInstanceOf[js.Dynamic].selectDynamic("levels").asInstanceOf[Levels_]
 
 inline def recording(): Recording_ = ^.asInstanceOf[js.Dynamic].applyDynamic("recording")().asInstanceOf[Recording_]

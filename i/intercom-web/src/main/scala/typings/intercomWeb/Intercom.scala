@@ -50,6 +50,8 @@ object Intercom {
     - typings.intercomWeb.intercomWebStrings.startTour
     - typings.intercomWeb.intercomWebStrings.showArticle
     - typings.intercomWeb.intercomWebStrings.startSurvey
+    - typings.intercomWeb.intercomWebStrings.reattach_activator
+    - typings.intercomWeb.intercomWebStrings.showSpace
   */
   trait IntercomCommand extends StObject
   
@@ -70,6 +72,8 @@ object Intercom {
     
     def onUnreadCountChange(callback: js.Function1[/* unreadCount */ Double, Unit]): Unit = js.native
     
+    def reattach_activator(): Unit = js.native
+    
     def show(): Unit = js.native
     
     def showArticle(articleId: Double): Unit = js.native
@@ -78,6 +82,8 @@ object Intercom {
     
     def showNewMessage(): Unit = js.native
     def showNewMessage(prepopulateMessage: String): Unit = js.native
+    
+    def showSpace(space: String): Unit = js.native
     
     def shutdown(): Unit = js.native
     

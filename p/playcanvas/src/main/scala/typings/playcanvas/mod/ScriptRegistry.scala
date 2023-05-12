@@ -7,8 +7,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** @typedef {import('../app-base.js').AppBase} AppBase */
-/** @typedef {import('./script-type.js').ScriptType} ScriptType */
 /**
   * Container for all {@link ScriptType}s that are available to this application. Note that
   * PlayCanvas scripts can access the Script Registry from inside the application with
@@ -22,7 +20,7 @@ open class ScriptRegistry protected () extends EventHandler {
   /**
     * Create a new ScriptRegistry instance.
     *
-    * @param {AppBase} app - Application to attach registry to.
+    * @param {import('../app-base.js').AppBase} app - Application to attach registry to.
     */
   def this(app: AppBase) = this()
   
@@ -34,7 +32,8 @@ open class ScriptRegistry protected () extends EventHandler {
     * registry, and the new script has a `swap` method defined, it will perform code hot swapping
     * automatically in async manner.
     *
-    * @param {typeof ScriptType} script - Script Type that is created using {@link createScript}.
+    * @param {typeof ScriptType} script - Script Type that is created
+    * using {@link createScript}.
     * @returns {boolean} True if added for the first time or false if script already exists.
     * @example
     * var PlayerController = pc.createScript('playerController');
@@ -51,7 +50,8 @@ open class ScriptRegistry protected () extends EventHandler {
     * Get {@link ScriptType} by name.
     *
     * @param {string} name - Name of a {@link ScriptType}.
-    * @returns {typeof ScriptType} The Script Type if it exists in the registry or null otherwise.
+    * @returns {typeof ScriptType} The Script Type if it exists in the
+    * registry or null otherwise.
     * @example
     * var PlayerController = app.scripts.get('playerController');
     */
@@ -61,7 +61,8 @@ open class ScriptRegistry protected () extends EventHandler {
   /**
     * Check if a {@link ScriptType} with the specified name is in the registry.
     *
-    * @param {string|typeof ScriptType} nameOrType - The name or type of {@link ScriptType}.
+    * @param {string|typeof ScriptType} nameOrType - The name or type
+    * of {@link ScriptType}.
     * @returns {boolean} True if {@link ScriptType} is in registry.
     * @example
     * if (app.scripts.has('playerController')) {
@@ -73,7 +74,8 @@ open class ScriptRegistry protected () extends EventHandler {
   /**
     * Get list of all {@link ScriptType}s from registry.
     *
-    * @returns {Array<typeof ScriptType>} list of all {@link ScriptType}s in registry.
+    * @returns {Array<typeof ScriptType>} list of all {@link ScriptType}s
+    * in registry.
     * @example
     * // logs array of all Script Type names available in registry
     * console.log(app.scripts.list().map(function (o) {
@@ -86,7 +88,8 @@ open class ScriptRegistry protected () extends EventHandler {
   /**
     * Remove {@link ScriptType}.
     *
-    * @param {string|typeof ScriptType} nameOrType - The name or type of {@link ScriptType}.
+    * @param {string|typeof ScriptType} nameOrType - The name or type
+    * of {@link ScriptType}.
     * @returns {boolean} True if removed or False if already not in registry.
     * @example
     * app.scripts.remove('playerController');

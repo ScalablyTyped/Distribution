@@ -16,9 +16,11 @@ object mod {
   inline def default(matchers: AnymatchMatcher, testString: String, returnIndex: PicomatchOptions): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(matchers.asInstanceOf[js.Any], testString.asInstanceOf[js.Any], returnIndex.asInstanceOf[js.Any])).asInstanceOf[Double]
   inline def default(matchers: AnymatchMatcher, testString: js.Array[Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(matchers.asInstanceOf[js.Any], testString.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   inline def default(matchers: AnymatchMatcher, testString: js.Array[Any], returnIndex: PicomatchOptions): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(matchers.asInstanceOf[js.Any], testString.asInstanceOf[js.Any], returnIndex.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def default(matchers: AnymatchMatcher, testString: Null, returnIndex: PicomatchOptions): AnymatchTester = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(matchers.asInstanceOf[js.Any], testString.asInstanceOf[js.Any], returnIndex.asInstanceOf[js.Any])).asInstanceOf[AnymatchTester]
   
   inline def default_true(matchers: AnymatchMatcher, testString: String, returnIndex: `true`): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(matchers.asInstanceOf[js.Any], testString.asInstanceOf[js.Any], returnIndex.asInstanceOf[js.Any])).asInstanceOf[Double]
   inline def default_true(matchers: AnymatchMatcher, testString: js.Array[Any], returnIndex: `true`): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(matchers.asInstanceOf[js.Any], testString.asInstanceOf[js.Any], returnIndex.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def default_true(matchers: AnymatchMatcher, testString: Null, returnIndex: `true`): AnymatchTester = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(matchers.asInstanceOf[js.Any], testString.asInstanceOf[js.Any], returnIndex.asInstanceOf[js.Any])).asInstanceOf[AnymatchTester]
   
   type AnymatchFn = js.Function1[/* testString */ String, Boolean]
   

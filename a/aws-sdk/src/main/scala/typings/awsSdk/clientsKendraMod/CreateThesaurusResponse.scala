@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateThesaurusResponse extends StObject {
   
   /**
-    * The unique identifier of the thesaurus. 
+    * The identifier of the thesaurus. 
     */
   var Id: js.UndefOr[ThesaurusId] = js.undefined
 }

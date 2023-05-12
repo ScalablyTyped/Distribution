@@ -12,6 +12,8 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * See: {@link https://docs.mendix.com/refguide/call-external-action relevant section in reference guide}
+  *
   * In version 9.19.0: introduced
   */
 @JSImport("mendixmodelsdk/src/gen/all-model-classes", "microflows.CallExternalAction")

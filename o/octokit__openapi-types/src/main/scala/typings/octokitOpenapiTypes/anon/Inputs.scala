@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Inputs extends StObject {
   
   /** @description Input keys and values configured in the workflow file. The maximum number of properties is 10. Any default properties configured in the workflow file will be used when `inputs` are omitted. */
-  var inputs: js.UndefOr[StringDictionary[String]] = js.undefined
+  var inputs: js.UndefOr[StringDictionary[Any]] = js.undefined
   
   /** @description The git reference for the workflow. The reference can be a branch or tag name. */
   var ref: String
@@ -23,7 +23,7 @@ object Inputs {
   @scala.inline
   implicit open class MutableBuilder[Self <: Inputs] (val x: Self) extends AnyVal {
     
-    inline def setInputs(value: StringDictionary[String]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
+    inline def setInputs(value: StringDictionary[Any]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
     
     inline def setInputsUndefined: Self = StObject.set(x, "inputs", js.undefined)
     

@@ -13,32 +13,10 @@ trait ColorAxisOptions extends StObject {
   var accessibility: js.UndefOr[AxisAccessibilityOptionsObject] = js.undefined
   
   /**
-    * (Highcharts, Highstock, Gantt) When using multiple axis, the ticks of two
-    * or more opposite axes will automatically be aligned by adding ticks to
-    * the axis or axes with the least ticks, as if `tickAmount` were specified.
-    *
-    * This can be prevented by setting `alignTicks` to false. If the grid lines
-    * look messy, it's a good idea to hide them for the secondary axis by
-    * setting `gridLineWidth` to 0.
-    *
-    * If `startOnTick` or `endOnTick` in an Axis options are set to false, then
-    * the `alignTicks ` will be disabled for the Axis.
-    *
-    * Disabled for logarithmic axes.
-    */
-  var alignTicks: js.UndefOr[Boolean] = js.undefined
-  
-  /**
     * (Highcharts, Highstock, Highmaps) Whether to allow decimals on the color
     * axis.
     */
   var allowDecimals: js.UndefOr[Boolean] = js.undefined
-  
-  /**
-    * (Highcharts, Highstock, Highmaps) When using an alternate grid color, a
-    * band is painted across the plot area between every other grid line.
-    */
-  var alternateGridColor: js.UndefOr[ColorType] = js.undefined
   
   /**
     * (Highcharts) In a polar chart, this is the angle of the Y axis in
@@ -48,25 +26,6 @@ trait ColorAxisOptions extends StObject {
     * (inverted polar).
     */
   var angle: js.UndefOr[Double] = js.undefined
-  
-  /**
-    * (Highcharts, Highstock, Gantt) An array defining breaks in the axis, the
-    * sections defined will be left out and all the points shifted closer to
-    * each other.
-    */
-  var breaks: js.UndefOr[js.Array[ColorAxisBreaksOptions]] = js.undefined
-  
-  /**
-    * (Highcharts, Gantt) If categories are present for the xAxis, names are
-    * used instead of numbers for that axis.
-    *
-    * Since Highcharts 3.0, categories can also be extracted by giving each
-    * point a name and setting axis type to `category`. However, if you have
-    * multiple series, best practice remains defining the `categories` array.
-    *
-    * Example: `categories: ['Apples', 'Bananas', 'Oranges']`
-    */
-  var categories: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) The highest allowed value for
@@ -82,13 +41,14 @@ trait ColorAxisOptions extends StObject {
   var className: js.UndefOr[String] = js.undefined
   
   /**
-    * (Highcharts, Highstock, Highmaps) Configure a crosshair that follows
-    * either the mouse pointer or the hovered point.
-    *
-    * In styled mode, the crosshairs are styled in the `.highcharts-crosshair`,
-    * `.highcharts-crosshair-thin` or `.highcharts-xaxis-category` classes.
+    * (Highcharts, Highstock, Highmaps) The value on a perpendicular axis where
+    * this axis should cross. This is typically used on mathematical plots
+    * where the axes cross at 0. When `crossing` is set, space will not be
+    * reserved at the sides of the chart for axis labels and title, so those
+    * may be clipped. In this case it is better to place the axes without the
+    * `crossing` option.
     */
-  var crosshair: js.UndefOr[Boolean | AxisCrosshairOptions] = js.undefined
+  var crossing: js.UndefOr[Double] = js.undefined
   
   /**
     * (Gantt) Show an indicator on the axis for the current date and time. Can
@@ -103,7 +63,7 @@ trait ColorAxisOptions extends StObject {
     * value, `category`, pulls colors from the global or chart specific colors
     * array.
     */
-  var dataClassColor: js.UndefOr[String] = js.undefined
+  var dataClassColor: js.UndefOr[OptionsDataClassColorValue] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps) An array of data classes or ranges for
@@ -111,20 +71,6 @@ trait ColorAxisOptions extends StObject {
     * are distributed as a gradient between the minimum and maximum colors.
     */
   var dataClasses: js.UndefOr[js.Array[ColorAxisDataClassesOptions]] = js.undefined
-  
-  /**
-    * (Highcharts, Highstock, Gantt) For a datetime axis, the scale will
-    * automatically adjust to the appropriate unit. This member gives the
-    * default string representations used for each unit. For intermediate
-    * values, different units may be used, for example the `day` unit can be
-    * used on midnight and `hour` unit be used for intermediate values on the
-    * same axis.
-    *
-    * For an overview of the replacement codes, see dateFormat.
-    *
-    * Defaults to: (see online documentation for example)
-    */
-  var dateTimeLabelFormats: js.UndefOr[AxisDateTimeLabelFormatsOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps) Whether to force the axis to end on a
@@ -166,7 +112,7 @@ trait ColorAxisOptions extends StObject {
     * either `circle` or `polygon`. Since v8.0.0 this option is also applicable
     * for X axis (inverted polar).
     */
-  var gridLineInterpolation: js.UndefOr[String] = js.undefined
+  var gridLineInterpolation: js.UndefOr[OptionsGridLineInterpolationValue] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps) The width of the grid lines extending
@@ -178,15 +124,6 @@ trait ColorAxisOptions extends StObject {
     * (Highcharts, Highstock, Gantt) The Z index of the grid lines.
     */
   var gridZIndex: js.UndefOr[Double] = js.undefined
-  
-  /**
-    * (Highcharts, Highstock) The height as the vertical axis. If it's a
-    * number, it is interpreted as pixels.
-    *
-    * Since Highcharts 2: If it's a percentage string, it is interpreted as
-    * percentages of the total plot height.
-    */
-  var height: js.UndefOr[Double | String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps) An id for the axis. This can be used
@@ -212,15 +149,6 @@ trait ColorAxisOptions extends StObject {
   var layout: js.UndefOr[String] = js.undefined
   
   /**
-    * (Highcharts, Highstock) The left position as the horizontal axis. If it's
-    * a number, it is interpreted as pixel position relative to the chart.
-    *
-    * Since Highcharts v5.0.13: If it's a percentage string, it is interpreted
-    * as percentages of the plot width, offset from plot area left.
-    */
-  var left: js.UndefOr[Double | String] = js.undefined
-  
-  /**
     * (Highcharts, Highstock, Highmaps) The color of the line marking the axis
     * itself.
     *
@@ -228,24 +156,6 @@ trait ColorAxisOptions extends StObject {
     * or `.highcharts-xaxis-line` class.
     */
   var lineColor: js.UndefOr[ColorType] = js.undefined
-  
-  /**
-    * (Highcharts, Highstock, Highmaps) The width of the line marking the axis
-    * itself.
-    *
-    * In styled mode, the stroke width is given in the `.highcharts-axis-line`
-    * or `.highcharts-xaxis-line` class.
-    */
-  var lineWidth: js.UndefOr[Double] = js.undefined
-  
-  /**
-    * (Highcharts, Highstock, Gantt) Index of another axis that this axis is
-    * linked to. When an axis is linked to a master axis, it will take the same
-    * extremes as the master, but as assigned by min or max or by setExtremes.
-    * It can be used to show additional info, or to ease reading the chart by
-    * duplicating the scales.
-    */
-  var linkedTo: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps) If there are multiple axes on the same
@@ -318,33 +228,6 @@ trait ColorAxisOptions extends StObject {
   var minPadding: js.UndefOr[Double] = js.undefined
   
   /**
-    * (Highcharts, Highstock, Highmaps) The minimum range to display on this
-    * axis. The entire axis will not be allowed to span over a smaller interval
-    * than this. For example, for a datetime axis the main unit is
-    * milliseconds. If minRange is set to 3600000, you can't zoom in more than
-    * to one hour.
-    *
-    * The default minRange for the x axis is five times the smallest interval
-    * between any of the data points.
-    *
-    * On a logarithmic axis, the unit for the minimum range is the power. So a
-    * minRange of 1 means that the axis can be zoomed to 10-100, 100-1000,
-    * 1000-10000 etc.
-    *
-    * **Note**: The `minPadding`, `maxPadding`, `startOnTick` and `endOnTick`
-    * settings also affect how the extremes of the axis are computed.
-    */
-  var minRange: js.UndefOr[Double] = js.undefined
-  
-  /**
-    * (Highcharts, Highstock, Highmaps) The minimum tick interval allowed in
-    * axis values. For example on zooming in on an axis with daily data, this
-    * can be used to prevent the axis from showing hours. Defaults to the
-    * closest distance between two points on the axis.
-    */
-  var minTickInterval: js.UndefOr[Double] = js.undefined
-  
-  /**
     * (Highcharts, Highstock, Highmaps) Color of the minor, secondary grid
     * lines.
     *
@@ -399,7 +282,7 @@ trait ColorAxisOptions extends StObject {
     * (Highcharts, Highstock, Highmaps) The position of the minor tick marks
     * relative to the axis line. Can be one of `inside` and `outside`.
     */
-  var minorTickPosition: js.UndefOr[String] = js.undefined
+  var minorTickPosition: js.UndefOr[OptionsMinorTickPositionValue] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps) The pixel width of the minor tick mark.
@@ -407,35 +290,24 @@ trait ColorAxisOptions extends StObject {
   var minorTickWidth: js.UndefOr[Double] = js.undefined
   
   /**
-    * (Highcharts, Highstock, Highmaps) Enable or disable minor ticks. Unless
-    * minorTickInterval is set, the tick interval is calculated as a fifth of
-    * the `tickInterval`.
+    * (Highcharts, Highstock, Highmaps) Enable or disable minor ticks. The
+    * interval between the minor ticks can be controlled either by the
+    * minorTicksPerMajor setting, or as an absolute minorTickInterval value.
     *
     * On a logarithmic axis, minor ticks are laid out based on a best guess,
-    * attempting to enter approximately 5 minor ticks between each major tick.
+    * attempting to enter an approximate number of minor ticks between each
+    * major tick based on minorTicksPerMajor.
     *
-    * Prior to v6.0.0, ticks were unabled in auto layout by setting
+    * Prior to v6.0.0, ticks were enabled in auto layout by setting
     * `minorTickInterval` to `"auto"`.
     */
   var minorTicks: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * (Highcharts, Highstock, Highmaps) The distance in pixels from the plot
-    * area to the axis line. A positive offset moves the axis with it's line,
-    * labels and ticks away from the plot area. This is typically used when two
-    * or more axes are displayed on the same side of the plot. With multiple
-    * axes the offset is dynamically adjusted to avoid collision, this can be
-    * overridden by setting offset explicitly.
+    * (Highcharts, Highstock, Highmaps) The number of minor ticks per major
+    * tick. Works for `linear`, `logarithmic` and `datetime` axes.
     */
-  var offset: js.UndefOr[Double] = js.undefined
-  
-  /**
-    * (Highcharts, Highstock, Highmaps) Whether to display the axis on the
-    * opposite side of the normal. The normal is on the left side for vertical
-    * axes and bottom for horizontal, so the opposite sides will be right and
-    * top respectively. This is typically used with dual or multiple axes.
-    */
-  var opposite: js.UndefOr[Boolean] = js.undefined
+  var minorTicksPerMajor: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock) In an ordinal axis, the points are equally spaced in the
@@ -462,35 +334,10 @@ trait ColorAxisOptions extends StObject {
   var overscroll: js.UndefOr[Double] = js.undefined
   
   /**
-    * (Highcharts) Refers to the index in the panes array. Used for circular
-    * gauges and polar charts. When the option is not set then first pane will
-    * be used.
-    */
-  var pane: js.UndefOr[Double] = js.undefined
-  
-  /**
     * (Highcharts, Highstock, Highmaps) Whether to pan axis. If `chart.panning`
     * is enabled, the option allows to disable panning on an individual axis.
     */
   var panningEnabled: js.UndefOr[Boolean] = js.undefined
-  
-  /**
-    * (Highcharts, Highstock, Gantt) An array of colored bands stretching
-    * across the plot area marking an interval on the axis.
-    *
-    * In styled mode, the plot bands are styled by the `.highcharts-plot-band`
-    * class in addition to the `className` option.
-    */
-  var plotBands: js.UndefOr[js.Array[ColorAxisPlotBandsOptions]] = js.undefined
-  
-  /**
-    * (Highcharts, Highstock, Gantt) An array of lines stretching across the
-    * plot area, marking a specific value on one of the axes.
-    *
-    * In styled mode, the plot lines are styled by the `.highcharts-plot-line`
-    * class in addition to the `className` option.
-    */
-  var plotLines: js.UndefOr[js.Array[ColorAxisPlotLinesOptions]] = js.undefined
   
   /**
     * (Highstock) The zoomed range to display when only defining one or none of
@@ -506,31 +353,6 @@ trait ColorAxisOptions extends StObject {
     * value starts on top.
     */
   var reversed: js.UndefOr[Boolean] = js.undefined
-  
-  /**
-    * (Highcharts, Highstock) This option determines how stacks should be
-    * ordered within a group. For example reversed xAxis also reverses stacks,
-    * so first series comes last in a group. To keep order like for
-    * non-reversed xAxis enable this option.
-    */
-  var reversedStacks: js.UndefOr[Boolean] = js.undefined
-  
-  /**
-    * (Highstock) An optional scrollbar to display on the X axis in response to
-    * limiting the minimum and maximum of the axis values.
-    *
-    * In styled mode, all the presentational options for the scrollbar are
-    * replaced by the classes `.highcharts-scrollbar-thumb`,
-    * `.highcharts-scrollbar-arrow`, `.highcharts-scrollbar-button`,
-    * `.highcharts-scrollbar-rifles` and `.highcharts-scrollbar-track`.
-    */
-  var scrollbar: js.UndefOr[ColorAxisScrollbarOptions] = js.undefined
-  
-  /**
-    * (Highcharts, Highstock, Highmaps) Whether to show the axis line and title
-    * when the axis has no data.
-    */
-  var showEmpty: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps) Whether to show the first tick label.
@@ -627,7 +449,7 @@ trait ColorAxisOptions extends StObject {
     * (Highcharts, Highstock, Highmaps) The position of the major tick marks
     * relative to the axis line. Can be one of `inside` and `outside`.
     */
-  var tickPosition: js.UndefOr[String] = js.undefined
+  var tickPosition: js.UndefOr[OptionsTickPositionValue] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps) A callback function returning array
@@ -661,22 +483,7 @@ trait ColorAxisOptions extends StObject {
     * placed between categories. The default is `between` if the `tickInterval`
     * is 1, else `on`.
     */
-  var tickmarkPlacement: js.UndefOr[String] = js.undefined
-  
-  /**
-    * (Highcharts, Highstock, Highmaps) The axis title, showing next to the
-    * axis line.
-    */
-  var title: js.UndefOr[ColorAxisTitleOptions] = js.undefined
-  
-  /**
-    * (Highcharts, Highstock) The top position as the vertical axis. If it's a
-    * number, it is interpreted as pixel position relative to the chart.
-    *
-    * Since Highcharts 2: If it's a percentage string, it is interpreted as
-    * percentages of the plot height, offset from plot area top.
-    */
-  var top: js.UndefOr[Double | String] = js.undefined
+  var tickmarkPlacement: js.UndefOr[OptionsTickmarkPlacementValue] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps) The type of interpolation to use for
@@ -712,25 +519,9 @@ trait ColorAxisOptions extends StObject {
   var visible: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * (Highcharts, Highstock) The width as the horizontal axis. If it's a
-    * number, it is interpreted as pixels.
-    *
-    * Since Highcharts v5.0.13: If it's a percentage string, it is interpreted
-    * as percentages of the total plot width.
-    */
-  var width: js.UndefOr[Double | String] = js.undefined
-  
-  /**
     * (Highcharts, Highstock, Highmaps) The Z index for the axis group.
     */
   var zIndex: js.UndefOr[Double] = js.undefined
-  
-  /**
-    * (Highcharts, Highstock, Highmaps) Whether to zoom axis. If
-    * `chart.zoomType` is set, the option allows to disable zooming on an
-    * individual axis.
-    */
-  var zoomEnabled: js.UndefOr[Boolean] = js.undefined
 }
 object ColorAxisOptions {
   
@@ -746,33 +537,13 @@ object ColorAxisOptions {
     
     inline def setAccessibilityUndefined: Self = StObject.set(x, "accessibility", js.undefined)
     
-    inline def setAlignTicks(value: Boolean): Self = StObject.set(x, "alignTicks", value.asInstanceOf[js.Any])
-    
-    inline def setAlignTicksUndefined: Self = StObject.set(x, "alignTicks", js.undefined)
-    
     inline def setAllowDecimals(value: Boolean): Self = StObject.set(x, "allowDecimals", value.asInstanceOf[js.Any])
     
     inline def setAllowDecimalsUndefined: Self = StObject.set(x, "allowDecimals", js.undefined)
     
-    inline def setAlternateGridColor(value: ColorType): Self = StObject.set(x, "alternateGridColor", value.asInstanceOf[js.Any])
-    
-    inline def setAlternateGridColorUndefined: Self = StObject.set(x, "alternateGridColor", js.undefined)
-    
     inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     
     inline def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
-    
-    inline def setBreaks(value: js.Array[ColorAxisBreaksOptions]): Self = StObject.set(x, "breaks", value.asInstanceOf[js.Any])
-    
-    inline def setBreaksUndefined: Self = StObject.set(x, "breaks", js.undefined)
-    
-    inline def setBreaksVarargs(value: ColorAxisBreaksOptions*): Self = StObject.set(x, "breaks", js.Array(value*))
-    
-    inline def setCategories(value: js.Array[String]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
-    
-    inline def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
-    
-    inline def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value*))
     
     inline def setCeiling(value: Double): Self = StObject.set(x, "ceiling", value.asInstanceOf[js.Any])
     
@@ -782,15 +553,15 @@ object ColorAxisOptions {
     
     inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    inline def setCrosshair(value: Boolean | AxisCrosshairOptions): Self = StObject.set(x, "crosshair", value.asInstanceOf[js.Any])
+    inline def setCrossing(value: Double): Self = StObject.set(x, "crossing", value.asInstanceOf[js.Any])
     
-    inline def setCrosshairUndefined: Self = StObject.set(x, "crosshair", js.undefined)
+    inline def setCrossingUndefined: Self = StObject.set(x, "crossing", js.undefined)
     
     inline def setCurrentDateIndicator(value: Boolean | CurrentDateIndicatorOptions): Self = StObject.set(x, "currentDateIndicator", value.asInstanceOf[js.Any])
     
     inline def setCurrentDateIndicatorUndefined: Self = StObject.set(x, "currentDateIndicator", js.undefined)
     
-    inline def setDataClassColor(value: String): Self = StObject.set(x, "dataClassColor", value.asInstanceOf[js.Any])
+    inline def setDataClassColor(value: OptionsDataClassColorValue): Self = StObject.set(x, "dataClassColor", value.asInstanceOf[js.Any])
     
     inline def setDataClassColorUndefined: Self = StObject.set(x, "dataClassColor", js.undefined)
     
@@ -799,10 +570,6 @@ object ColorAxisOptions {
     inline def setDataClassesUndefined: Self = StObject.set(x, "dataClasses", js.undefined)
     
     inline def setDataClassesVarargs(value: ColorAxisDataClassesOptions*): Self = StObject.set(x, "dataClasses", js.Array(value*))
-    
-    inline def setDateTimeLabelFormats(value: AxisDateTimeLabelFormatsOptions): Self = StObject.set(x, "dateTimeLabelFormats", value.asInstanceOf[js.Any])
-    
-    inline def setDateTimeLabelFormatsUndefined: Self = StObject.set(x, "dateTimeLabelFormats", js.undefined)
     
     inline def setEndOnTick(value: Boolean): Self = StObject.set(x, "endOnTick", value.asInstanceOf[js.Any])
     
@@ -826,7 +593,7 @@ object ColorAxisOptions {
     
     inline def setGridLineDashStyleUndefined: Self = StObject.set(x, "gridLineDashStyle", js.undefined)
     
-    inline def setGridLineInterpolation(value: String): Self = StObject.set(x, "gridLineInterpolation", value.asInstanceOf[js.Any])
+    inline def setGridLineInterpolation(value: OptionsGridLineInterpolationValue): Self = StObject.set(x, "gridLineInterpolation", value.asInstanceOf[js.Any])
     
     inline def setGridLineInterpolationUndefined: Self = StObject.set(x, "gridLineInterpolation", js.undefined)
     
@@ -840,10 +607,6 @@ object ColorAxisOptions {
     
     inline def setGridZIndexUndefined: Self = StObject.set(x, "gridZIndex", js.undefined)
     
-    inline def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
-    
-    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
-    
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
@@ -856,21 +619,9 @@ object ColorAxisOptions {
     
     inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
     
-    inline def setLeft(value: Double | String): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
-    
-    inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
-    
     inline def setLineColor(value: ColorType): Self = StObject.set(x, "lineColor", value.asInstanceOf[js.Any])
     
     inline def setLineColorUndefined: Self = StObject.set(x, "lineColor", js.undefined)
-    
-    inline def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
-    
-    inline def setLineWidthUndefined: Self = StObject.set(x, "lineWidth", js.undefined)
-    
-    inline def setLinkedTo(value: Double): Self = StObject.set(x, "linkedTo", value.asInstanceOf[js.Any])
-    
-    inline def setLinkedToUndefined: Self = StObject.set(x, "linkedTo", js.undefined)
     
     inline def setMargin(value: Double): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
@@ -906,14 +657,6 @@ object ColorAxisOptions {
     
     inline def setMinPaddingUndefined: Self = StObject.set(x, "minPadding", js.undefined)
     
-    inline def setMinRange(value: Double): Self = StObject.set(x, "minRange", value.asInstanceOf[js.Any])
-    
-    inline def setMinRangeUndefined: Self = StObject.set(x, "minRange", js.undefined)
-    
-    inline def setMinTickInterval(value: Double): Self = StObject.set(x, "minTickInterval", value.asInstanceOf[js.Any])
-    
-    inline def setMinTickIntervalUndefined: Self = StObject.set(x, "minTickInterval", js.undefined)
-    
     inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
     inline def setMinorGridLineColor(value: ColorType): Self = StObject.set(x, "minorGridLineColor", value.asInstanceOf[js.Any])
@@ -942,7 +685,7 @@ object ColorAxisOptions {
     
     inline def setMinorTickLengthUndefined: Self = StObject.set(x, "minorTickLength", js.undefined)
     
-    inline def setMinorTickPosition(value: String): Self = StObject.set(x, "minorTickPosition", value.asInstanceOf[js.Any])
+    inline def setMinorTickPosition(value: OptionsMinorTickPositionValue): Self = StObject.set(x, "minorTickPosition", value.asInstanceOf[js.Any])
     
     inline def setMinorTickPositionUndefined: Self = StObject.set(x, "minorTickPosition", js.undefined)
     
@@ -952,15 +695,11 @@ object ColorAxisOptions {
     
     inline def setMinorTicks(value: Boolean): Self = StObject.set(x, "minorTicks", value.asInstanceOf[js.Any])
     
+    inline def setMinorTicksPerMajor(value: Double): Self = StObject.set(x, "minorTicksPerMajor", value.asInstanceOf[js.Any])
+    
+    inline def setMinorTicksPerMajorUndefined: Self = StObject.set(x, "minorTicksPerMajor", js.undefined)
+    
     inline def setMinorTicksUndefined: Self = StObject.set(x, "minorTicks", js.undefined)
-    
-    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
-    
-    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
-    
-    inline def setOpposite(value: Boolean): Self = StObject.set(x, "opposite", value.asInstanceOf[js.Any])
-    
-    inline def setOppositeUndefined: Self = StObject.set(x, "opposite", js.undefined)
     
     inline def setOrdinal(value: Boolean): Self = StObject.set(x, "ordinal", value.asInstanceOf[js.Any])
     
@@ -970,25 +709,9 @@ object ColorAxisOptions {
     
     inline def setOverscrollUndefined: Self = StObject.set(x, "overscroll", js.undefined)
     
-    inline def setPane(value: Double): Self = StObject.set(x, "pane", value.asInstanceOf[js.Any])
-    
-    inline def setPaneUndefined: Self = StObject.set(x, "pane", js.undefined)
-    
     inline def setPanningEnabled(value: Boolean): Self = StObject.set(x, "panningEnabled", value.asInstanceOf[js.Any])
     
     inline def setPanningEnabledUndefined: Self = StObject.set(x, "panningEnabled", js.undefined)
-    
-    inline def setPlotBands(value: js.Array[ColorAxisPlotBandsOptions]): Self = StObject.set(x, "plotBands", value.asInstanceOf[js.Any])
-    
-    inline def setPlotBandsUndefined: Self = StObject.set(x, "plotBands", js.undefined)
-    
-    inline def setPlotBandsVarargs(value: ColorAxisPlotBandsOptions*): Self = StObject.set(x, "plotBands", js.Array(value*))
-    
-    inline def setPlotLines(value: js.Array[ColorAxisPlotLinesOptions]): Self = StObject.set(x, "plotLines", value.asInstanceOf[js.Any])
-    
-    inline def setPlotLinesUndefined: Self = StObject.set(x, "plotLines", js.undefined)
-    
-    inline def setPlotLinesVarargs(value: ColorAxisPlotLinesOptions*): Self = StObject.set(x, "plotLines", js.Array(value*))
     
     inline def setRange(value: Double): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
@@ -996,19 +719,7 @@ object ColorAxisOptions {
     
     inline def setReversed(value: Boolean): Self = StObject.set(x, "reversed", value.asInstanceOf[js.Any])
     
-    inline def setReversedStacks(value: Boolean): Self = StObject.set(x, "reversedStacks", value.asInstanceOf[js.Any])
-    
-    inline def setReversedStacksUndefined: Self = StObject.set(x, "reversedStacks", js.undefined)
-    
     inline def setReversedUndefined: Self = StObject.set(x, "reversed", js.undefined)
-    
-    inline def setScrollbar(value: ColorAxisScrollbarOptions): Self = StObject.set(x, "scrollbar", value.asInstanceOf[js.Any])
-    
-    inline def setScrollbarUndefined: Self = StObject.set(x, "scrollbar", js.undefined)
-    
-    inline def setShowEmpty(value: Boolean): Self = StObject.set(x, "showEmpty", value.asInstanceOf[js.Any])
-    
-    inline def setShowEmptyUndefined: Self = StObject.set(x, "showEmpty", js.undefined)
     
     inline def setShowFirstLabel(value: Boolean): Self = StObject.set(x, "showFirstLabel", value.asInstanceOf[js.Any])
     
@@ -1064,7 +775,7 @@ object ColorAxisOptions {
     
     inline def setTickPixelIntervalUndefined: Self = StObject.set(x, "tickPixelInterval", js.undefined)
     
-    inline def setTickPosition(value: String): Self = StObject.set(x, "tickPosition", value.asInstanceOf[js.Any])
+    inline def setTickPosition(value: OptionsTickPositionValue): Self = StObject.set(x, "tickPosition", value.asInstanceOf[js.Any])
     
     inline def setTickPositionUndefined: Self = StObject.set(x, "tickPosition", js.undefined)
     
@@ -1082,17 +793,9 @@ object ColorAxisOptions {
     
     inline def setTickWidthUndefined: Self = StObject.set(x, "tickWidth", js.undefined)
     
-    inline def setTickmarkPlacement(value: String): Self = StObject.set(x, "tickmarkPlacement", value.asInstanceOf[js.Any])
+    inline def setTickmarkPlacement(value: OptionsTickmarkPlacementValue): Self = StObject.set(x, "tickmarkPlacement", value.asInstanceOf[js.Any])
     
     inline def setTickmarkPlacementUndefined: Self = StObject.set(x, "tickmarkPlacement", js.undefined)
-    
-    inline def setTitle(value: ColorAxisTitleOptions): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
-    
-    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
-    
-    inline def setTop(value: Double | String): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
-    
-    inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
     
     inline def setType(value: ColorAxisTypeValue): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
@@ -1112,16 +815,8 @@ object ColorAxisOptions {
     
     inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
     
-    inline def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
-    
-    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
-    
     inline def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
     
     inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
-    
-    inline def setZoomEnabled(value: Boolean): Self = StObject.set(x, "zoomEnabled", value.asInstanceOf[js.Any])
-    
-    inline def setZoomEnabledUndefined: Self = StObject.set(x, "zoomEnabled", js.undefined)
   }
 }

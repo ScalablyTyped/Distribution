@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ExistingObjectReplication extends StObject {
   
   /**
-    * 
+    * Specifies whether Amazon S3 replicates existing source bucket objects. 
     */
   var Status: ExistingObjectReplicationStatus
 }

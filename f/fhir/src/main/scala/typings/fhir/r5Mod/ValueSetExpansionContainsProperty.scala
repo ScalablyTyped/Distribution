@@ -24,6 +24,11 @@ trait ValueSetExpansionContainsProperty
   var code: String
   
   /**
+    * A subproperty value for this concept.
+    */
+  var subProperty: js.UndefOr[js.Array[ValueSetExpansionContainsPropertySubProperty]] = js.undefined
+  
+  /**
     * The value of this property.
     */
   var valueBoolean: js.UndefOr[Boolean] = js.undefined
@@ -69,6 +74,12 @@ object ValueSetExpansionContainsProperty {
   implicit open class MutableBuilder[Self <: ValueSetExpansionContainsProperty] (val x: Self) extends AnyVal {
     
     inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    
+    inline def setSubProperty(value: js.Array[ValueSetExpansionContainsPropertySubProperty]): Self = StObject.set(x, "subProperty", value.asInstanceOf[js.Any])
+    
+    inline def setSubPropertyUndefined: Self = StObject.set(x, "subProperty", js.undefined)
+    
+    inline def setSubPropertyVarargs(value: ValueSetExpansionContainsPropertySubProperty*): Self = StObject.set(x, "subProperty", js.Array(value*))
     
     inline def setValueBoolean(value: Boolean): Self = StObject.set(x, "valueBoolean", value.asInstanceOf[js.Any])
     

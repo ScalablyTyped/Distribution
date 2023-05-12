@@ -32,6 +32,11 @@ trait UserData extends StObject {
   var MaxSlotsByChannel: js.UndefOr[ChannelToCountMap] = js.undefined
   
   /**
+    * The Next status of the agent.
+    */
+  var NextStatus: js.UndefOr[AgentStatusName] = js.undefined
+  
+  /**
     * Information about the routing profile that is assigned to the user.
     */
   var RoutingProfile: js.UndefOr[RoutingProfileReference] = js.undefined
@@ -77,6 +82,10 @@ object UserData {
     inline def setMaxSlotsByChannel(value: ChannelToCountMap): Self = StObject.set(x, "MaxSlotsByChannel", value.asInstanceOf[js.Any])
     
     inline def setMaxSlotsByChannelUndefined: Self = StObject.set(x, "MaxSlotsByChannel", js.undefined)
+    
+    inline def setNextStatus(value: AgentStatusName): Self = StObject.set(x, "NextStatus", value.asInstanceOf[js.Any])
+    
+    inline def setNextStatusUndefined: Self = StObject.set(x, "NextStatus", js.undefined)
     
     inline def setRoutingProfile(value: RoutingProfileReference): Self = StObject.set(x, "RoutingProfile", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,7 @@ object DiagnosticRelatedInformation {
   inline def create(location: Location, message: String): DiagnosticRelatedInformation = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(location.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[DiagnosticRelatedInformation]
   
   /**
-    * Checks whether the given literal conforms to the [DiagnosticRelatedInformation](#DiagnosticRelatedInformation) interface.
+    * Checks whether the given literal conforms to the {@link DiagnosticRelatedInformation} interface.
     */
   inline def is(value: Any): /* is vscode-languageserver-types.vscode-languageserver-types.DiagnosticRelatedInformation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.DiagnosticRelatedInformation */ Boolean]
   

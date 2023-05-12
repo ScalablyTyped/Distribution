@@ -1,6 +1,7 @@
 package typings.meteor
 
 import typings.meteor.Meteor.Connection
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -13,7 +14,7 @@ trait Subscription extends StObject {
     * @param id The new document's ID.
     * @param fields The fields in the new document.  If `_id` is present it is ignored.
     */
-  def added(collection: String, id: String, fields: js.Object): Unit
+  def added(collection: String, id: String, fields: Record[String, Any]): Unit
   
   /**
     * Call inside the publish function. Informs the subscriber that a document in the record set has been modified.
@@ -22,7 +23,7 @@ trait Subscription extends StObject {
     * @param fields The fields in the document that have changed, together with their new values.  If a field is not present in `fields` it was left unchanged; if it is present in `fields` and
     * has a value of `undefined` it was removed from the document.  If `_id` is present it is ignored.
     */
-  def changed(collection: String, id: String, fields: js.Object): Unit
+  def changed(collection: String, id: String, fields: Record[String, Any]): Unit
   
   /** Access inside the publish function. The incoming connection for this subscription. */
   var connection: Connection
@@ -70,8 +71,8 @@ trait Subscription extends StObject {
 object Subscription {
   
   inline def apply(
-    added: (String, String, js.Object) => Unit,
-    changed: (String, String, js.Object) => Unit,
+    added: (String, String, Record[String, Any]) => Unit,
+    changed: (String, String, Record[String, Any]) => Unit,
     connection: Connection,
     error: js.Error => Unit,
     onStop: js.Function => Unit,
@@ -87,9 +88,9 @@ object Subscription {
   @scala.inline
   implicit open class MutableBuilder[Self <: Subscription] (val x: Self) extends AnyVal {
     
-    inline def setAdded(value: (String, String, js.Object) => Unit): Self = StObject.set(x, "added", js.Any.fromFunction3(value))
+    inline def setAdded(value: (String, String, Record[String, Any]) => Unit): Self = StObject.set(x, "added", js.Any.fromFunction3(value))
     
-    inline def setChanged(value: (String, String, js.Object) => Unit): Self = StObject.set(x, "changed", js.Any.fromFunction3(value))
+    inline def setChanged(value: (String, String, Record[String, Any]) => Unit): Self = StObject.set(x, "changed", js.Any.fromFunction3(value))
     
     inline def setConnection(value: Connection): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     

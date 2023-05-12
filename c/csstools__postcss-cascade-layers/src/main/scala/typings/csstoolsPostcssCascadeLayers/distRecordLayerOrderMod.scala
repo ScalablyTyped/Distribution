@@ -2,8 +2,8 @@ package typings.csstoolsPostcssCascadeLayers
 
 import typings.csstoolsPostcssCascadeLayers.anon.Options
 import typings.csstoolsPostcssCascadeLayers.distModelMod.Model
-import typings.postcss.libNodeMod.ChildNode
 import typings.postcss.mod.Container
+import typings.std.ChildNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

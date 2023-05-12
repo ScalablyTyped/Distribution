@@ -1,5 +1,12 @@
 package typings.lib0
 
+import typings.lib0.lib0Ints.`10`
+import typings.lib0.lib0Ints.`11`
+import typings.lib0.lib0Ints.`1`
+import typings.lib0.lib0Ints.`3`
+import typings.lib0.lib0Ints.`4`
+import typings.lib0.lib0Ints.`8`
+import typings.lib0.lib0Ints.`9`
 import typings.lib0.pairMod.Pair
 import typings.std.DOMParser
 import typings.std.Document
@@ -27,31 +34,31 @@ object domMod {
   
   @JSImport("lib0/dom", "CDATA_SECTION_NODE")
   @js.native
-  val CDATA_SECTION_NODE: Double = js.native
+  val CDATA_SECTION_NODE: `4` = js.native
   
   @JSImport("lib0/dom", "COMMENT_NODE")
   @js.native
-  val COMMENT_NODE: Double = js.native
+  val COMMENT_NODE: `8` = js.native
   
   @JSImport("lib0/dom", "DOCUMENT_FRAGMENT_NODE")
   @js.native
-  val DOCUMENT_FRAGMENT_NODE: Double = js.native
+  val DOCUMENT_FRAGMENT_NODE: `11` = js.native
   
   @JSImport("lib0/dom", "DOCUMENT_NODE")
   @js.native
-  val DOCUMENT_NODE: Double = js.native
+  val DOCUMENT_NODE: `9` = js.native
   
   @JSImport("lib0/dom", "DOCUMENT_TYPE_NODE")
   @js.native
-  val DOCUMENT_TYPE_NODE: Double = js.native
+  val DOCUMENT_TYPE_NODE: `10` = js.native
   
   @JSImport("lib0/dom", "ELEMENT_NODE")
   @js.native
-  val ELEMENT_NODE: Double = js.native
+  val ELEMENT_NODE: `1` = js.native
   
   @JSImport("lib0/dom", "TEXT_NODE")
   @js.native
-  val TEXT_NODE: Double = js.native
+  val TEXT_NODE: `3` = js.native
   
   inline def addEventListener(el: EventTarget, name: String, f: EventListener): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(el.asInstanceOf[js.Any], name.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[Unit]
   

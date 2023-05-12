@@ -35,9 +35,9 @@ trait Pushprotectionbypassed extends StObject {
   
   var push_protection_bypassed_by: js.UndefOr[Avatarurl | Null] = js.undefined
   
-  var resolution: js.UndefOr[Null | false_positive | wont_fix | revoked | used_in_tests] = js.undefined
+  var resolution: js.UndefOr[false_positive | wont_fix | revoked | used_in_tests | Null] = js.undefined
   
-  /** @description The comment that was optionally added when this alert was closed */
+  /** @description An optional comment to resolve an alert. */
   var resolution_comment: js.UndefOr[String | Null] = js.undefined
   
   /**
@@ -62,7 +62,7 @@ trait Pushprotectionbypassed extends StObject {
   
   var state: js.UndefOr[open | resolved] = js.undefined
   
-  var updated_at: js.UndefOr[String] = js.undefined
+  var updated_at: js.UndefOr[String | Null] = js.undefined
   
   var url: js.UndefOr[String] = js.undefined
 }
@@ -151,6 +151,8 @@ object Pushprotectionbypassed {
     inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
     inline def setUpdated_at(value: String): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])
+    
+    inline def setUpdated_atNull: Self = StObject.set(x, "updated_at", null)
     
     inline def setUpdated_atUndefined: Self = StObject.set(x, "updated_at", js.undefined)
     

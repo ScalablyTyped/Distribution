@@ -4,7 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined {[ key in devextreme.devextreme.DevExpress.data.Store.EventName ]:? std.Function} */
+/* Inlined {[ key in devextreme.devextreme.DevExpress.data.AbstractStore.EventName ]:? std.Function} */
 trait keyinEventNameFunctionInserted extends StObject {
   
   var inserted: js.UndefOr[js.Function] = js.undefined

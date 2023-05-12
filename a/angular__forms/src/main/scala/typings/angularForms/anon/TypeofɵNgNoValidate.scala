@@ -22,7 +22,8 @@ trait TypeofɵNgNoValidate
     js.Object, 
     scala.Nothing, 
     scala.Nothing, 
-    `false`
+    `false`, 
+    scala.Nothing
   ] = js.native
   
   var ɵfac: ɵɵFactoryDeclaration[ɵNgNoValidate, scala.Nothing] = js.native

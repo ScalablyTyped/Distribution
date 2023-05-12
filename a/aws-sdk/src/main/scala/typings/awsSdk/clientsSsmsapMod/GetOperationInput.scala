@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetOperationInput extends StObject {
   
   /**
-    * 
+    * The ID of the operation.
     */
   var OperationId: typings.awsSdk.clientsSsmsapMod.OperationId
 }

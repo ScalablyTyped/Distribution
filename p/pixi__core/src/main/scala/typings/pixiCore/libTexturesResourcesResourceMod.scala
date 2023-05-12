@@ -71,7 +71,7 @@ object libTexturesResourcesResourceMod {
       * @protected
       * @returns Handle the validate event
       */
-    def load(): js.Promise[Resource] = js.native
+    def load(): js.Promise[this.type] = js.native
     
     /**
       * Handle internal errors, such as loading errors

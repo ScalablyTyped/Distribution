@@ -2,9 +2,10 @@ package typings.reactNativeCommunityCliPlatformIos
 
 import typings.reactNativeCommunityCliPlatformIos.anon.Cmd
 import typings.reactNativeCommunityCliPlatformIos.anon.Default
-import typings.reactNativeCommunityCliPlatformIos.anon.DefaultDescription
+import typings.reactNativeCommunityCliPlatformIos.anon.Description
 import typings.reactNativeCommunityCliPlatformIos.anon.Name
 import typings.reactNativeCommunityCliPlatformIos.anon.Parse
+import typings.reactNativeCommunityCliPlatformIos.buildCommandsBuildIOSBuildProjectMod.BuildFlags
 import typings.reactNativeCommunityCliPlatformIos.reactNativeCommunityCliPlatformIosBooleans.`true`
 import typings.reactNativeCommunityCliTypes.mod.Config
 import org.scalablytyped.runtime.StObject
@@ -31,11 +32,9 @@ object buildCommandsRunIOSMod {
     
     @JSImport("@react-native-community/cli-platform-ios/build/commands/runIOS", "default.func")
     @js.native
-    def func: js.Function3[/* _ */ js.Array[String], /* ctx */ Config, /* args */ FlagsT, Unit | js.Promise[Unit]] = js.native
-    inline def func(_underscore: js.Array[String], ctx: Config, args: FlagsT): Unit | js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("func")(_underscore.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit | js.Promise[Unit]]
-    inline def func_=(
-      x: js.Function3[/* _ */ js.Array[String], /* ctx */ Config, /* args */ FlagsT, Unit | js.Promise[Unit]]
-    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("func")(x.asInstanceOf[js.Any])
+    def func: js.Function3[/* _ */ js.Array[String], /* ctx */ Config, /* args */ FlagsT, js.Promise[Unit]] = js.native
+    inline def func(_underscore: js.Array[String], ctx: Config, args: FlagsT): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("func")(_underscore.asInstanceOf[js.Any], ctx.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    inline def func_=(x: js.Function3[/* _ */ js.Array[String], /* ctx */ Config, /* args */ FlagsT, js.Promise[Unit]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("func")(x.asInstanceOf[js.Any])
     
     @JSImport("@react-native-community/cli-platform-ios/build/commands/runIOS", "default.name")
     @js.native
@@ -44,19 +43,21 @@ object buildCommandsRunIOSMod {
     
     @JSImport("@react-native-community/cli-platform-ios/build/commands/runIOS", "default.options")
     @js.native
-    def options: js.Array[Default | Name | Parse | DefaultDescription] = js.native
-    inline def options_=(x: js.Array[Default | Name | Parse | DefaultDescription]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("options")(x.asInstanceOf[js.Any])
+    def options: js.Array[Default | Description | Name | Parse] = js.native
+    inline def options_=(x: js.Array[Default | Description | Name | Parse]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("options")(x.asInstanceOf[js.Any])
   }
   
-  trait FlagsT extends StObject {
+  trait FlagsT
+    extends StObject
+       with BuildFlags {
+    
+    var binaryPath: js.UndefOr[String] = js.undefined
     
     var configuration: String
     
     var device: js.UndefOr[String | `true`] = js.undefined
     
-    var packager: Boolean
-    
-    var port: Double
+    var listDevices: js.UndefOr[Boolean] = js.undefined
     
     var projectPath: String
     
@@ -64,21 +65,28 @@ object buildCommandsRunIOSMod {
     
     var simulator: js.UndefOr[String] = js.undefined
     
-    var terminal: js.UndefOr[String] = js.undefined
-    
     var udid: js.UndefOr[String] = js.undefined
-    
-    var verbose: Boolean
   }
   object FlagsT {
     
-    inline def apply(configuration: String, packager: Boolean, port: Double, projectPath: String, verbose: Boolean): FlagsT = {
-      val __obj = js.Dynamic.literal(configuration = configuration.asInstanceOf[js.Any], packager = packager.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], projectPath = projectPath.asInstanceOf[js.Any], verbose = verbose.asInstanceOf[js.Any])
+    inline def apply(
+      configuration: String,
+      mode: String,
+      packager: Boolean,
+      port: Double,
+      projectPath: String,
+      verbose: Boolean
+    ): FlagsT = {
+      val __obj = js.Dynamic.literal(configuration = configuration.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], packager = packager.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], projectPath = projectPath.asInstanceOf[js.Any], verbose = verbose.asInstanceOf[js.Any])
       __obj.asInstanceOf[FlagsT]
     }
     
     @scala.inline
     implicit open class MutableBuilder[Self <: FlagsT] (val x: Self) extends AnyVal {
+      
+      inline def setBinaryPath(value: String): Self = StObject.set(x, "binaryPath", value.asInstanceOf[js.Any])
+      
+      inline def setBinaryPathUndefined: Self = StObject.set(x, "binaryPath", js.undefined)
       
       inline def setConfiguration(value: String): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
       
@@ -86,9 +94,9 @@ object buildCommandsRunIOSMod {
       
       inline def setDeviceUndefined: Self = StObject.set(x, "device", js.undefined)
       
-      inline def setPackager(value: Boolean): Self = StObject.set(x, "packager", value.asInstanceOf[js.Any])
+      inline def setListDevices(value: Boolean): Self = StObject.set(x, "listDevices", value.asInstanceOf[js.Any])
       
-      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setListDevicesUndefined: Self = StObject.set(x, "listDevices", js.undefined)
       
       inline def setProjectPath(value: String): Self = StObject.set(x, "projectPath", value.asInstanceOf[js.Any])
       
@@ -100,15 +108,9 @@ object buildCommandsRunIOSMod {
       
       inline def setSimulatorUndefined: Self = StObject.set(x, "simulator", js.undefined)
       
-      inline def setTerminal(value: String): Self = StObject.set(x, "terminal", value.asInstanceOf[js.Any])
-      
-      inline def setTerminalUndefined: Self = StObject.set(x, "terminal", js.undefined)
-      
       inline def setUdid(value: String): Self = StObject.set(x, "udid", value.asInstanceOf[js.Any])
       
       inline def setUdidUndefined: Self = StObject.set(x, "udid", js.undefined)
-      
-      inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
     }
   }
 }

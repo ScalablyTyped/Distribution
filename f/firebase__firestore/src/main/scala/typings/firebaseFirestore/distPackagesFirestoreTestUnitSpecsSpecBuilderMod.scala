@@ -5,19 +5,20 @@ import typings.firebaseFirestore.anon.Acknowledged
 import typings.firebaseFirestore.anon.ConfigSpecConfig
 import typings.firebaseFirestore.anon.ExpectUserCallback
 import typings.firebaseFirestore.anon.HasPendingWrites
-import typings.firebaseFirestore.anon.QueryQuery
+import typings.firebaseFirestore.anon.ResumeToken
 import typings.firebaseFirestore.anon.RunBackoffTimer
 import typings.firebaseFirestore.anon.`49`
-import typings.firebaseFirestore.anon.`50`
 import typings.firebaseFirestore.distPackagesFirestoreSrcApiIndexConfigurationMod.IndexConfiguration
 import typings.firebaseFirestore.distPackagesFirestoreSrcCoreQueryMod.Query
 import typings.firebaseFirestore.distPackagesFirestoreSrcCoreTargetIdGeneratorMod.TargetIdGenerator
 import typings.firebaseFirestore.distPackagesFirestoreSrcCoreTargetMod.Target
 import typings.firebaseFirestore.distPackagesFirestoreSrcCoreTypesMod.TargetId
+import typings.firebaseFirestore.distPackagesFirestoreSrcLocalTargetDataMod.TargetPurpose
 import typings.firebaseFirestore.distPackagesFirestoreSrcModelDocumentKeyMod.DocumentKey
 import typings.firebaseFirestore.distPackagesFirestoreSrcModelDocumentMod.Document
 import typings.firebaseFirestore.distPackagesFirestoreSrcModelFieldIndexMod.FieldIndex
 import typings.firebaseFirestore.distPackagesFirestoreSrcModelObjectValueMod.JsonObject
+import typings.firebaseFirestore.distPackagesFirestoreSrcProtosFirestoreProtoApiMod.BloomFilter
 import typings.firebaseFirestore.distPackagesFirestoreSrcUtilAsyncQueueMod.TimerId
 import typings.firebaseFirestore.distPackagesFirestoreSrcUtilErrorMod.Code
 import typings.firebaseFirestore.distPackagesFirestoreSrcUtilObjMapMod.ObjectMap
@@ -119,8 +120,10 @@ object distPackagesFirestoreTestUnitSpecsSpecBuilderMod {
     
     def enableNetwork(): this.type = js.native
     
+    def ensureManualLruGC(): this.type = js.native
+    
     /** Overrides the currently expected set of active targets. */
-    def expectActiveTargets(targets: QueryQuery*): this.type = js.native
+    def expectActiveTargets(targets: ResumeToken*): this.type = js.native
     
     /**
       * Expects a document to be in limbo, enqueued for limbo resolution, and
@@ -143,7 +146,7 @@ object distPackagesFirestoreTestUnitSpecsSpecBuilderMod {
     
     /** Registers a query that is active in another tab. */
     def expectListen(query: Query): this.type = js.native
-    def expectListen(query: Query, resume: `49`): this.type = js.native
+    def expectListen(query: Query, resume: ResumeSpec): this.type = js.native
     
     def expectNumActiveClients(num: Double): this.type = js.native
     
@@ -208,6 +211,8 @@ object distPackagesFirestoreTestUnitSpecsSpecBuilderMod {
     /** Stops failing database operations. */
     def recoverDatabase(): this.type = js.native
     
+    def removeExpectedTargetMapping(query: Query): this.type = js.native
+    
     /* private */ var removeQueryFromActiveTargets: Any = js.native
     
     def restart(): this.type = js.native
@@ -217,6 +222,7 @@ object distPackagesFirestoreTestUnitSpecsSpecBuilderMod {
       * stream disconnect.
       */
     def restoreListen(query: Query, resumeToken: String): this.type = js.native
+    def restoreListen(query: Query, resumeToken: String, expectedCount: Double): this.type = js.native
     
     /**
       * Run the spec as a test. If persistence is available it will run it with and
@@ -238,12 +244,14 @@ object distPackagesFirestoreTestUnitSpecsSpecBuilderMod {
       */
     def toJSON(): ConfigSpecConfig = js.native
     
+    def triggerLruGC(cacheThreshold: Double): this.type = js.native
+    
     def userAddsSnapshotsInSyncListener(): this.type = js.native
     
     def userDeletes(key: String): this.type = js.native
     
     def userListens(query: Query): this.type = js.native
-    def userListens(query: Query, resume: `49`): this.type = js.native
+    def userListens(query: Query, resume: ResumeSpec): this.type = js.native
     
     def userPatches(key: String, value: JsonObject[Any]): this.type = js.native
     
@@ -261,7 +269,10 @@ object distPackagesFirestoreTestUnitSpecsSpecBuilderMod {
     
     def watchCurrents(query: Query, resumeToken: String): this.type = js.native
     
-    def watchFilters(queries: js.Array[Query], docs: DocumentKey*): this.type = js.native
+    def watchFilters(queries: js.Array[Query]): this.type = js.native
+    def watchFilters(queries: js.Array[Query], docs: js.Array[DocumentKey]): this.type = js.native
+    def watchFilters(queries: js.Array[Query], docs: js.Array[DocumentKey], bloomFilter: BloomFilter): this.type = js.native
+    def watchFilters(queries: js.Array[Query], docs: Unit, bloomFilter: BloomFilter): this.type = js.native
     
     def watchRemoves(query: Query): this.type = js.native
     def watchRemoves(query: Query, cause: RpcError): this.type = js.native
@@ -277,7 +288,7 @@ object distPackagesFirestoreTestUnitSpecsSpecBuilderMod {
     
     def watchResets(queries: Query*): this.type = js.native
     
-    def watchSends(targets: `50`, docs: Document*): this.type = js.native
+    def watchSends(targets: `49`, docs: Document*): this.type = js.native
     
     def watchSnapshots(version: TestSnapshotVersion): this.type = js.native
     def watchSnapshots(version: TestSnapshotVersion, targets: js.Array[Query]): this.type = js.native
@@ -286,8 +297,6 @@ object distPackagesFirestoreTestUnitSpecsSpecBuilderMod {
     
     def watchStreamCloses(error: Code): this.type = js.native
     def watchStreamCloses(error: Code, opts: RunBackoffTimer): this.type = js.native
-    
-    def withGCEnabled(gcEnabled: Boolean): this.type = js.native
     
     def withMaxConcurrentLimboResolutions(): this.type = js.native
     def withMaxConcurrentLimboResolutions(value: Double): this.type = js.native
@@ -324,7 +333,6 @@ object distPackagesFirestoreTestUnitSpecsSpecBuilderMod {
   }
   
   inline def client(num: Double): MultiClientSpecBuilder = ^.asInstanceOf[js.Dynamic].applyDynamic("client")(num.asInstanceOf[js.Any]).asInstanceOf[MultiClientSpecBuilder]
-  inline def client(num: Double, withGcEnabled: Boolean): MultiClientSpecBuilder = (^.asInstanceOf[js.Dynamic].applyDynamic("client")(num.asInstanceOf[js.Any], withGcEnabled.asInstanceOf[js.Any])).asInstanceOf[MultiClientSpecBuilder]
   
   inline def spec(): SpecBuilder = ^.asInstanceOf[js.Dynamic].applyDynamic("spec")().asInstanceOf[SpecBuilder]
   
@@ -332,11 +340,15 @@ object distPackagesFirestoreTestUnitSpecsSpecBuilderMod {
   
   trait ActiveTargetSpec extends StObject {
     
+    var expectedCount: js.UndefOr[Double] = js.undefined
+    
     var queries: js.Array[SpecQuery]
     
     var readTime: js.UndefOr[TestSnapshotVersion] = js.undefined
     
     var resumeToken: js.UndefOr[String] = js.undefined
+    
+    var targetPurpose: js.UndefOr[TargetPurpose] = js.undefined
   }
   object ActiveTargetSpec {
     
@@ -347,6 +359,10 @@ object distPackagesFirestoreTestUnitSpecsSpecBuilderMod {
     
     @scala.inline
     implicit open class MutableBuilder[Self <: ActiveTargetSpec] (val x: Self) extends AnyVal {
+      
+      inline def setExpectedCount(value: Double): Self = StObject.set(x, "expectedCount", value.asInstanceOf[js.Any])
+      
+      inline def setExpectedCountUndefined: Self = StObject.set(x, "expectedCount", js.undefined)
       
       inline def setQueries(value: js.Array[SpecQuery]): Self = StObject.set(x, "queries", value.asInstanceOf[js.Any])
       
@@ -359,8 +375,44 @@ object distPackagesFirestoreTestUnitSpecsSpecBuilderMod {
       inline def setResumeToken(value: String): Self = StObject.set(x, "resumeToken", value.asInstanceOf[js.Any])
       
       inline def setResumeTokenUndefined: Self = StObject.set(x, "resumeToken", js.undefined)
+      
+      inline def setTargetPurpose(value: TargetPurpose): Self = StObject.set(x, "targetPurpose", value.asInstanceOf[js.Any])
+      
+      inline def setTargetPurposeUndefined: Self = StObject.set(x, "targetPurpose", js.undefined)
     }
   }
   
   type LimboMap = StringDictionary[TargetId]
+  
+  trait ResumeSpec extends StObject {
+    
+    var expectedCount: js.UndefOr[Double] = js.undefined
+    
+    var readTime: js.UndefOr[TestSnapshotVersion] = js.undefined
+    
+    var resumeToken: js.UndefOr[String] = js.undefined
+  }
+  object ResumeSpec {
+    
+    inline def apply(): ResumeSpec = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ResumeSpec]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResumeSpec] (val x: Self) extends AnyVal {
+      
+      inline def setExpectedCount(value: Double): Self = StObject.set(x, "expectedCount", value.asInstanceOf[js.Any])
+      
+      inline def setExpectedCountUndefined: Self = StObject.set(x, "expectedCount", js.undefined)
+      
+      inline def setReadTime(value: TestSnapshotVersion): Self = StObject.set(x, "readTime", value.asInstanceOf[js.Any])
+      
+      inline def setReadTimeUndefined: Self = StObject.set(x, "readTime", js.undefined)
+      
+      inline def setResumeToken(value: String): Self = StObject.set(x, "resumeToken", value.asInstanceOf[js.Any])
+      
+      inline def setResumeTokenUndefined: Self = StObject.set(x, "resumeToken", js.undefined)
+    }
+  }
 }

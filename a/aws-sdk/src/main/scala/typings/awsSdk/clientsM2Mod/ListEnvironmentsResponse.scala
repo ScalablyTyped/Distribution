@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListEnvironmentsResponse extends StObject {
   
   /**
-    * Returns a list of summary details for all the environments in your account. 
+    * Returns a list of summary details for all the runtime environments in your account. 
     */
   var environments: EnvironmentSummaryList
   
   /**
-    * A pagination token that's returned when the response doesn't contain all the environments.
+    * A pagination token that's returned when the response doesn't contain all the runtime environments.
     */
   var nextToken: js.UndefOr[NextToken] = js.undefined
 }

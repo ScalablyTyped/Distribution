@@ -16,7 +16,7 @@ object libIconsInsuranceFilledMod extends Shortcut {
   @js.native
   trait InsuranceFilledIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_InsuranceFilledIconType: String = js.native

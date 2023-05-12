@@ -37,6 +37,8 @@ object distResponseAuthenticationResultMod {
     
     var msGraphHost: js.UndefOr[String] = js.undefined
     
+    var requestId: js.UndefOr[String] = js.undefined
+    
     var scopes: js.Array[String]
     
     var state: js.UndefOr[String] = js.undefined
@@ -111,6 +113,10 @@ object distResponseAuthenticationResultMod {
       inline def setMsGraphHost(value: String): Self = StObject.set(x, "msGraphHost", value.asInstanceOf[js.Any])
       
       inline def setMsGraphHostUndefined: Self = StObject.set(x, "msGraphHost", js.undefined)
+      
+      inline def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+      
+      inline def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
       
       inline def setScopes(value: js.Array[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
       

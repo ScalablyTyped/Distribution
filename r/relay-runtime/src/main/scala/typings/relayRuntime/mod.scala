@@ -1,7 +1,6 @@
 package typings.relayRuntime
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.relayRuntime.anon.CLIENTMUTATIONID
 import typings.relayRuntime.anon.ConnectionPathInFragmentData
 import typings.relayRuntime.anon.FetchPolicy
 import typings.relayRuntime.anon.FragmentRefPathInResponse
@@ -10,6 +9,7 @@ import typings.relayRuntime.anon.PendingOperations
 import typings.relayRuntime.anon.Size
 import typings.relayRuntime.anon.Stop
 import typings.relayRuntime.anon.TypeofRelayResolverFragme
+import typings.relayRuntime.libHandlersConnectionConnectionInterfaceMod.ConnectionConfig
 import typings.relayRuntime.libMutationsApplyOptimisticMutationMod.OptimisticMutationConfig
 import typings.relayRuntime.libMutationsCommitMutationMod.MutationConfig
 import typings.relayRuntime.libMutationsCommitMutationMod.MutationParameters
@@ -158,7 +158,9 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    inline def get(): CLIENTMUTATIONID = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[CLIENTMUTATIONID]
+    inline def get(): ConnectionConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[ConnectionConfig]
+    
+    inline def inject(newConfig: ConnectionConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("inject")(newConfig.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   @JSImport("relay-runtime", "DEFAULT_HANDLE_KEY")
@@ -658,7 +660,7 @@ object mod {
   
   inline def commitMutation[TOperation /* <: MutationParameters */](
     environment: typings.relayRuntime.libStoreRelayStoreTypesMod.Environment,
-    // tslint:disable-next-line no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
   config: MutationConfig[TOperation]
   ): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("commitMutation")(environment.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Disposable]
   
@@ -878,7 +880,7 @@ object mod {
   
   inline def requestSubscription[TSubscription /* <: OperationType */](
     environment: typings.relayRuntime.libStoreRelayStoreTypesMod.Environment,
-    // tslint:disable-next-line no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
   config: GraphQLSubscriptionConfig[TSubscription]
   ): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("requestSubscription")(environment.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Disposable]
   

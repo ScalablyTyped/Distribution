@@ -1,5 +1,7 @@
 package typings.meteor
 
+import typings.meteor.Accounts.PasswordSignupField
+import typings.meteor.Accounts.PasswordlessSignupField
 import typings.meteor.DDP.Status
 import typings.meteor.Mongo.BsonType
 import org.scalablytyped.runtime.StObject
@@ -21,12 +23,25 @@ object meteorStrings {
   inline def DEFAULT: DEFAULT = "DEFAULT".asInstanceOf[DEFAULT]
   
   @js.native
+  sealed trait EMAIL_ONLY
+    extends StObject
+       with PasswordSignupField
+       with typings.meteor.accountsBaseMod.Accounts.PasswordSignupField
+       with PasswordlessSignupField
+       with typings.meteor.accountsBaseMod.Accounts.PasswordlessSignupField
+  inline def EMAIL_ONLY: EMAIL_ONLY = "EMAIL_ONLY".asInstanceOf[EMAIL_ONLY]
+  
+  @js.native
   sealed trait GSSAPI extends StObject
   inline def GSSAPI: GSSAPI = "GSSAPI".asInstanceOf[GSSAPI]
   
   @js.native
   sealed trait HandshakeError extends StObject
   inline def HandshakeError: HandshakeError = "HandshakeError".asInstanceOf[HandshakeError]
+  
+  @js.native
+  sealed trait InterruptInUseConnections extends StObject
+  inline def InterruptInUseConnections: InterruptInUseConnections = "InterruptInUseConnections".asInstanceOf[InterruptInUseConnections]
   
   @js.native
   sealed trait LoadBalanced extends StObject
@@ -43,6 +58,10 @@ object meteorStrings {
   @js.native
   sealed trait `MONGODB-CR` extends StObject
   inline def `MONGODB-CR`: `MONGODB-CR` = "MONGODB-CR".asInstanceOf[`MONGODB-CR`]
+  
+  @js.native
+  sealed trait `MONGODB-OIDC` extends StObject
+  inline def `MONGODB-OIDC`: `MONGODB-OIDC` = "MONGODB-OIDC".asInstanceOf[`MONGODB-OIDC`]
   
   @js.native
   sealed trait `MONGODB-X509` extends StObject
@@ -127,6 +146,29 @@ object meteorStrings {
   @js.native
   sealed trait TransientTransactionError extends StObject
   inline def TransientTransactionError: TransientTransactionError = "TransientTransactionError".asInstanceOf[TransientTransactionError]
+  
+  @js.native
+  sealed trait USERNAME_AND_EMAIL
+    extends StObject
+       with PasswordSignupField
+       with typings.meteor.accountsBaseMod.Accounts.PasswordSignupField
+       with PasswordlessSignupField
+       with typings.meteor.accountsBaseMod.Accounts.PasswordlessSignupField
+  inline def USERNAME_AND_EMAIL: USERNAME_AND_EMAIL = "USERNAME_AND_EMAIL".asInstanceOf[USERNAME_AND_EMAIL]
+  
+  @js.native
+  sealed trait USERNAME_AND_OPTIONAL_EMAIL
+    extends StObject
+       with PasswordSignupField
+       with typings.meteor.accountsBaseMod.Accounts.PasswordSignupField
+  inline def USERNAME_AND_OPTIONAL_EMAIL: USERNAME_AND_OPTIONAL_EMAIL = "USERNAME_AND_OPTIONAL_EMAIL".asInstanceOf[USERNAME_AND_OPTIONAL_EMAIL]
+  
+  @js.native
+  sealed trait USERNAME_ONLY
+    extends StObject
+       with PasswordSignupField
+       with typings.meteor.accountsBaseMod.Accounts.PasswordSignupField
+  inline def USERNAME_ONLY: USERNAME_ONLY = "USERNAME_ONLY".asInstanceOf[USERNAME_ONLY]
   
   @js.native
   sealed trait Unknown extends StObject
@@ -246,10 +288,6 @@ object meteorStrings {
   inline def dbPointer: dbPointer = "dbPointer".asInstanceOf[dbPointer]
   
   @js.native
-  sealed trait debug extends StObject
-  inline def debug: debug = "debug".asInstanceOf[debug]
-  
-  @js.native
   sealed trait decimal
     extends StObject
        with BsonType
@@ -313,10 +351,6 @@ object meteorStrings {
   @js.native
   sealed trait index extends StObject
   inline def index: index = "index".asInstanceOf[index]
-  
-  @js.native
-  sealed trait info extends StObject
-  inline def info: info = "info".asInstanceOf[info]
   
   @js.native
   sealed trait init extends StObject
@@ -596,10 +630,6 @@ object meteorStrings {
        with Status
        with typings.meteor.ddpMod.DDP.Status
   inline def waiting: waiting = "waiting".asInstanceOf[waiting]
-  
-  @js.native
-  sealed trait warn extends StObject
-  inline def warn: warn = "warn".asInstanceOf[warn]
   
   @js.native
   sealed trait webDotbrowser extends StObject

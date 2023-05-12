@@ -17,6 +17,8 @@ object typesStackframeMod {
     
     var context_line: js.UndefOr[String] = js.undefined
     
+    var debug_id: js.UndefOr[String] = js.undefined
+    
     var filename: js.UndefOr[String] = js.undefined
     
     var function: js.UndefOr[String] = js.undefined
@@ -62,6 +64,10 @@ object typesStackframeMod {
       inline def setContext_line(value: String): Self = StObject.set(x, "context_line", value.asInstanceOf[js.Any])
       
       inline def setContext_lineUndefined: Self = StObject.set(x, "context_line", js.undefined)
+      
+      inline def setDebug_id(value: String): Self = StObject.set(x, "debug_id", value.asInstanceOf[js.Any])
+      
+      inline def setDebug_idUndefined: Self = StObject.set(x, "debug_id", js.undefined)
       
       inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       

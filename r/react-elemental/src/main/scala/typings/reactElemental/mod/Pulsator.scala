@@ -11,7 +11,7 @@ open class Pulsator protected () extends Component[PulsatorProps, PulsatorState,
   def this(props: PulsatorProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: PulsatorProps, context: Any) = this()
 }

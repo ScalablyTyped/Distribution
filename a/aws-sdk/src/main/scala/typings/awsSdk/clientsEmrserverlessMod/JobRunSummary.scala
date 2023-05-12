@@ -42,7 +42,7 @@ trait JobRunSummary extends StObject {
   var name: js.UndefOr[String256] = js.undefined
   
   /**
-    * The EMR release version associated with the application your job is running on.
+    * The EMR release associated with the application your job is running on.
     */
   var releaseLabel: ReleaseLabel
   

@@ -10,7 +10,7 @@ trait TypeofPaymentMethodDetail extends StObject {
   
   val Bancontact: Any
   
-  val Card: TypeofCard
+  val Card: TypeofCardThreeDSecure
   
   val CardPresent: TypeofCardPresent
   
@@ -26,6 +26,8 @@ trait TypeofPaymentMethodDetail extends StObject {
   
   val P24: Any
   
+  val Paypal: TypeofPaypal
+  
   val Sofort: Any
   
   val UsBankAccount: Any
@@ -35,7 +37,7 @@ object TypeofPaymentMethodDetail {
   inline def apply(
     AchDebit: Any,
     Bancontact: Any,
-    Card: TypeofCard,
+    Card: TypeofCardThreeDSecure,
     CardPresent: TypeofCardPresent,
     Eps: Any,
     Fpx: Any,
@@ -43,10 +45,11 @@ object TypeofPaymentMethodDetail {
     InteracPresent: TypeofInteracPresent,
     Konbini: TypeofKonbini,
     P24: Any,
+    Paypal: TypeofPaypal,
     Sofort: Any,
     UsBankAccount: Any
   ): TypeofPaymentMethodDetail = {
-    val __obj = js.Dynamic.literal(AchDebit = AchDebit.asInstanceOf[js.Any], Bancontact = Bancontact.asInstanceOf[js.Any], Card = Card.asInstanceOf[js.Any], CardPresent = CardPresent.asInstanceOf[js.Any], Eps = Eps.asInstanceOf[js.Any], Fpx = Fpx.asInstanceOf[js.Any], Ideal = Ideal.asInstanceOf[js.Any], InteracPresent = InteracPresent.asInstanceOf[js.Any], Konbini = Konbini.asInstanceOf[js.Any], P24 = P24.asInstanceOf[js.Any], Sofort = Sofort.asInstanceOf[js.Any], UsBankAccount = UsBankAccount.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(AchDebit = AchDebit.asInstanceOf[js.Any], Bancontact = Bancontact.asInstanceOf[js.Any], Card = Card.asInstanceOf[js.Any], CardPresent = CardPresent.asInstanceOf[js.Any], Eps = Eps.asInstanceOf[js.Any], Fpx = Fpx.asInstanceOf[js.Any], Ideal = Ideal.asInstanceOf[js.Any], InteracPresent = InteracPresent.asInstanceOf[js.Any], Konbini = Konbini.asInstanceOf[js.Any], P24 = P24.asInstanceOf[js.Any], Paypal = Paypal.asInstanceOf[js.Any], Sofort = Sofort.asInstanceOf[js.Any], UsBankAccount = UsBankAccount.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofPaymentMethodDetail]
   }
   
@@ -57,7 +60,7 @@ object TypeofPaymentMethodDetail {
     
     inline def setBancontact(value: Any): Self = StObject.set(x, "Bancontact", value.asInstanceOf[js.Any])
     
-    inline def setCard(value: TypeofCard): Self = StObject.set(x, "Card", value.asInstanceOf[js.Any])
+    inline def setCard(value: TypeofCardThreeDSecure): Self = StObject.set(x, "Card", value.asInstanceOf[js.Any])
     
     inline def setCardPresent(value: TypeofCardPresent): Self = StObject.set(x, "CardPresent", value.asInstanceOf[js.Any])
     
@@ -72,6 +75,8 @@ object TypeofPaymentMethodDetail {
     inline def setKonbini(value: TypeofKonbini): Self = StObject.set(x, "Konbini", value.asInstanceOf[js.Any])
     
     inline def setP24(value: Any): Self = StObject.set(x, "P24", value.asInstanceOf[js.Any])
+    
+    inline def setPaypal(value: TypeofPaypal): Self = StObject.set(x, "Paypal", value.asInstanceOf[js.Any])
     
     inline def setSofort(value: Any): Self = StObject.set(x, "Sofort", value.asInstanceOf[js.Any])
     

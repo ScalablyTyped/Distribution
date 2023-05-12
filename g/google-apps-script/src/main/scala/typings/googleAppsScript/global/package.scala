@@ -29,10 +29,11 @@ inline def Adsense: typings.googleAppsScript.GoogleAppsScript.Adsense = js.Dynam
 inline def Adsense_=(x: typings.googleAppsScript.GoogleAppsScript.Adsense): Unit = js.Dynamic.global.updateDynamic("Adsense")(x.asInstanceOf[js.Any])
 
 inline def Analytics: typings.googleAppsScript.GoogleAppsScript.Analytics = js.Dynamic.global.selectDynamic("Analytics").asInstanceOf[typings.googleAppsScript.GoogleAppsScript.Analytics]
-inline def Analytics_=(x: typings.googleAppsScript.GoogleAppsScript.Analytics): Unit = js.Dynamic.global.updateDynamic("Analytics")(x.asInstanceOf[js.Any])
 
-inline def Analyticsreporting: typings.googleAppsScript.GoogleAppsScript.Analyticsreporting = js.Dynamic.global.selectDynamic("Analyticsreporting").asInstanceOf[typings.googleAppsScript.GoogleAppsScript.Analyticsreporting]
-inline def Analyticsreporting_=(x: typings.googleAppsScript.GoogleAppsScript.Analyticsreporting): Unit = js.Dynamic.global.updateDynamic("Analyticsreporting")(x.asInstanceOf[js.Any])
+inline def AnalyticsReporting: typings.googleAppsScript.GoogleAppsScript.AnalyticsReporting = js.Dynamic.global.selectDynamic("AnalyticsReporting").asInstanceOf[typings.googleAppsScript.GoogleAppsScript.AnalyticsReporting]
+inline def AnalyticsReporting_=(x: typings.googleAppsScript.GoogleAppsScript.AnalyticsReporting): Unit = js.Dynamic.global.updateDynamic("AnalyticsReporting")(x.asInstanceOf[js.Any])
+
+inline def Analytics_=(x: typings.googleAppsScript.GoogleAppsScript.Analytics): Unit = js.Dynamic.global.updateDynamic("Analytics")(x.asInstanceOf[js.Any])
 
 inline def Appsactivity: typings.googleAppsScript.GoogleAppsScript.Appsactivity = js.Dynamic.global.selectDynamic("Appsactivity").asInstanceOf[typings.googleAppsScript.GoogleAppsScript.Appsactivity]
 inline def Appsactivity_=(x: typings.googleAppsScript.GoogleAppsScript.Appsactivity): Unit = js.Dynamic.global.updateDynamic("Appsactivity")(x.asInstanceOf[js.Any])

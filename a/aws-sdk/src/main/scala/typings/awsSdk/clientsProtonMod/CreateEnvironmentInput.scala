@@ -22,7 +22,7 @@ trait CreateEnvironmentInput extends StObject {
   var description: js.UndefOr[Description] = js.undefined
   
   /**
-    * The ID of the environment account connection that you provide if you want Proton to provision infrastructure resources for your environment or for any of the service instances running in it in an environment account. For more information, see Environment account connections in the Proton User guide. If you specify the environmentAccountConnectionId parameter, don't specify protonServiceRoleArn, codebuildRoleArn, or provisioningRepository.
+    * The ID of the environment account connection that you provide if you're provisioning your environment infrastructure resources to an environment account. For more information, see Environment account connections in the Proton User guide. To use Amazon Web Services-managed provisioning for the environment, specify either the environmentAccountConnectionId or protonServiceRoleArn parameter and omit the provisioningRepository parameter.
     */
   var environmentAccountConnectionId: js.UndefOr[EnvironmentAccountConnectionId] = js.undefined
   
@@ -32,12 +32,12 @@ trait CreateEnvironmentInput extends StObject {
   var name: ResourceName
   
   /**
-    * The Amazon Resource Name (ARN) of the IAM service role that allows Proton to provision infrastructure using Amazon Web Services-managed provisioning and CloudFormation on your behalf. To use Amazon Web Services-managed provisioning for the environment or for any service instance running in the environment, specify either the environmentAccountConnectionId or protonServiceRoleArn parameter.
+    * The Amazon Resource Name (ARN) of the Proton service role that allows Proton to make calls to other services on your behalf. To use Amazon Web Services-managed provisioning for the environment, specify either the environmentAccountConnectionId or protonServiceRoleArn parameter and omit the provisioningRepository parameter.
     */
   var protonServiceRoleArn: js.UndefOr[Arn] = js.undefined
   
   /**
-    * The linked repository that you use to host your rendered infrastructure templates for self-managed provisioning. A linked repository is a repository that has been registered with Proton. For more information, see CreateRepository. To use self-managed provisioning for the environment or for any service instance running in the environment, specify this parameter.
+    * The linked repository that you use to host your rendered infrastructure templates for self-managed provisioning. A linked repository is a repository that has been registered with Proton. For more information, see CreateRepository. To use self-managed provisioning for the environment, specify this parameter and omit the environmentAccountConnectionId and protonServiceRoleArn parameters.
     */
   var provisioningRepository: js.UndefOr[RepositoryBranchInput] = js.undefined
   

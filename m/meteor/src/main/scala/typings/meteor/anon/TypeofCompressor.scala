@@ -1,6 +1,5 @@
 package typings.meteor.anon
 
-import typings.meteor.meteorInts.`1`
 import typings.meteor.meteorInts.`2`
 import typings.meteor.meteorInts.`3`
 import org.scalablytyped.runtime.StObject
@@ -11,7 +10,7 @@ trait TypeofCompressor extends StObject {
   
   val none: typings.meteor.meteorInts.`0`
   
-  val snappy: `1`
+  val snappy: typings.meteor.meteorInts.`1`
   
   val zlib: `2`
   
@@ -29,7 +28,7 @@ object TypeofCompressor {
     
     inline def setNone(value: typings.meteor.meteorInts.`0`): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
     
-    inline def setSnappy(value: `1`): Self = StObject.set(x, "snappy", value.asInstanceOf[js.Any])
+    inline def setSnappy(value: typings.meteor.meteorInts.`1`): Self = StObject.set(x, "snappy", value.asInstanceOf[js.Any])
     
     inline def setZlib(value: `2`): Self = StObject.set(x, "zlib", value.asInstanceOf[js.Any])
     

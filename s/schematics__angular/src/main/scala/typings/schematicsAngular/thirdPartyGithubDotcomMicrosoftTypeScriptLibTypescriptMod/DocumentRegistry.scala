@@ -1,7 +1,5 @@
 package typings.schematicsAngular.thirdPartyGithubDotcomMicrosoftTypeScriptLibTypescriptMod
 
-import typings.schematicsAngular.thirdPartyGithubDotcomMicrosoftTypeScriptLibTypescriptMod.ModuleKind.CommonJS
-import typings.schematicsAngular.thirdPartyGithubDotcomMicrosoftTypeScriptLibTypescriptMod.ModuleKind.ESNext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -258,29 +256,39 @@ trait DocumentRegistry extends StObject {
     * @param fileName The name of the file to be released
     * @param compilationSettings The compilation settings used to acquire the file
     * @param scriptKind The script kind of the file to be released
+    *
+    * @deprecated pass scriptKind and impliedNodeFormat for correctness
     */
-  /**@deprecated pass scriptKind and impliedNodeFormat for correctness */
   def releaseDocument(fileName: java.lang.String, compilationSettings: CompilerOptions): Unit = js.native
   def releaseDocument(fileName: java.lang.String, compilationSettings: CompilerOptions, scriptKind: ScriptKind): Unit = js.native
+  /**
+    * Informs the DocumentRegistry that a file is not needed any longer.
+    *
+    * Note: It is not allowed to call release on a SourceFile that was not acquired from
+    * this registry originally.
+    *
+    * @param fileName The name of the file to be released
+    * @param compilationSettings The compilation settings used to acquire the file
+    * @param scriptKind The script kind of the file to be released
+    * @param impliedNodeFormat The implied source file format of the file to be released
+    */
   def releaseDocument(
     fileName: java.lang.String,
     compilationSettings: CompilerOptions,
     scriptKind: ScriptKind,
-    impliedNodeFormat: CommonJS
-  ): Unit = js.native
-  def releaseDocument(
-    fileName: java.lang.String,
-    compilationSettings: CompilerOptions,
-    scriptKind: ScriptKind,
-    impliedNodeFormat: ESNext
+    impliedNodeFormat: ResolutionMode
   ): Unit = js.native
   
   /**
     * @deprecated pass scriptKind for and impliedNodeFormat correctness */
   def releaseDocumentWithKey(path: Path, key: DocumentRegistryBucketKey): Unit = js.native
   def releaseDocumentWithKey(path: Path, key: DocumentRegistryBucketKey, scriptKind: ScriptKind): Unit = js.native
-  def releaseDocumentWithKey(path: Path, key: DocumentRegistryBucketKey, scriptKind: ScriptKind, impliedNodeFormat: CommonJS): Unit = js.native
-  def releaseDocumentWithKey(path: Path, key: DocumentRegistryBucketKey, scriptKind: ScriptKind, impliedNodeFormat: ESNext): Unit = js.native
+  def releaseDocumentWithKey(
+    path: Path,
+    key: DocumentRegistryBucketKey,
+    scriptKind: ScriptKind,
+    impliedNodeFormat: ResolutionMode
+  ): Unit = js.native
   
   def reportStats(): java.lang.String = js.native
   

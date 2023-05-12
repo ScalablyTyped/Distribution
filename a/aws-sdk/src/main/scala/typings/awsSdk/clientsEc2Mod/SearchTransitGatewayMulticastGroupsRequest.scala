@@ -29,12 +29,12 @@ trait SearchTransitGatewayMulticastGroupsRequest extends StObject {
   /**
     * The ID of the transit gateway multicast domain.
     */
-  var TransitGatewayMulticastDomainId: js.UndefOr[typings.awsSdk.clientsEc2Mod.TransitGatewayMulticastDomainId] = js.undefined
+  var TransitGatewayMulticastDomainId: typings.awsSdk.clientsEc2Mod.TransitGatewayMulticastDomainId
 }
 object SearchTransitGatewayMulticastGroupsRequest {
   
-  inline def apply(): SearchTransitGatewayMulticastGroupsRequest = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(TransitGatewayMulticastDomainId: TransitGatewayMulticastDomainId): SearchTransitGatewayMulticastGroupsRequest = {
+    val __obj = js.Dynamic.literal(TransitGatewayMulticastDomainId = TransitGatewayMulticastDomainId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchTransitGatewayMulticastGroupsRequest]
   }
   
@@ -60,7 +60,5 @@ object SearchTransitGatewayMulticastGroupsRequest {
     inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
     inline def setTransitGatewayMulticastDomainId(value: TransitGatewayMulticastDomainId): Self = StObject.set(x, "TransitGatewayMulticastDomainId", value.asInstanceOf[js.Any])
-    
-    inline def setTransitGatewayMulticastDomainIdUndefined: Self = StObject.set(x, "TransitGatewayMulticastDomainId", js.undefined)
   }
 }

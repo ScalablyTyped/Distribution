@@ -49,7 +49,7 @@ object webglMod {
   val UNSIGNED_SHORT: Double = js.native
   
   inline def getContext(canvas: HTMLCanvasElement): WebGLRenderingContext = ^.asInstanceOf[js.Dynamic].applyDynamic("getContext")(canvas.asInstanceOf[js.Any]).asInstanceOf[WebGLRenderingContext]
-  inline def getContext(canvas: HTMLCanvasElement, opt_attributes: Any): WebGLRenderingContext = (^.asInstanceOf[js.Dynamic].applyDynamic("getContext")(canvas.asInstanceOf[js.Any], opt_attributes.asInstanceOf[js.Any])).asInstanceOf[WebGLRenderingContext]
+  inline def getContext(canvas: HTMLCanvasElement, attributes: Any): WebGLRenderingContext = (^.asInstanceOf[js.Dynamic].applyDynamic("getContext")(canvas.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[WebGLRenderingContext]
   
   inline def getSupportedExtensions(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSupportedExtensions")().asInstanceOf[js.Array[String]]
 }

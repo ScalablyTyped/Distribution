@@ -1,7 +1,7 @@
 
 # Scala.js typings for emotion__hash
 
-Typings are for version 0.9.0
+Typings are for version 0.9.1
 
 ## Library description:
 A MurmurHash2 implementation

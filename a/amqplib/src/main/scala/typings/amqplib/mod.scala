@@ -86,6 +86,8 @@ object mod {
     
     def close(): js.Promise[Unit] = js.native
     
+    var connection: Connection = js.native
+    
     def consume(queue: String, onMessage: js.Function1[/* msg */ ConsumeMessage | Null, Unit]): js.Promise[Consume] = js.native
     def consume(
       queue: String,

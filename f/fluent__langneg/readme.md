@@ -1,7 +1,7 @@
 
 # Scala.js typings for fluent__langneg
 
-Typings are for version 0.6.2
+Typings are for version 0.7.0
 
 ## Library description:
 Language Negotiation API for Fluent

@@ -22,6 +22,8 @@ trait Membersurl extends StObject {
   
   var node_id: String
   
+  var notification_setting: js.UndefOr[String] = js.undefined
+  
   var parent: Ldapdn | Null
   
   var permission: String
@@ -71,6 +73,10 @@ object Membersurl {
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setNode_id(value: String): Self = StObject.set(x, "node_id", value.asInstanceOf[js.Any])
+    
+    inline def setNotification_setting(value: String): Self = StObject.set(x, "notification_setting", value.asInstanceOf[js.Any])
+    
+    inline def setNotification_settingUndefined: Self = StObject.set(x, "notification_setting", js.undefined)
     
     inline def setParent(value: Ldapdn): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     

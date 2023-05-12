@@ -1,12 +1,12 @@
 package typings.azureMsalBrowser
 
+import typings.azureMsalBrowser.distCryptoMsrBrowserCryptoMod.global.Window
 import typings.azureMsalBrowser.distEventEventTypeMod.EventType
 import typings.azureMsalBrowser.distUtilsBrowserConstantsMod.InteractionStatus
 import typings.azureMsalBrowser.distUtilsBrowserConstantsMod.InteractionType
 import typings.azureMsalCommon.distAccountAccountInfoMod.AccountInfo
 import typings.azureMsalCommon.distResponseAuthenticationResultMod.AuthenticationResult
 import typings.azureMsalCommon.mod.AuthError
-import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

@@ -4,9 +4,14 @@ import typings.socketIo.distBroadcastOperatorMod.BroadcastOperator
 import typings.socketIo.distBroadcastOperatorMod.RemoteSocket
 import typings.socketIo.distClientMod.Client
 import typings.socketIo.distSocketMod.Socket
+import typings.socketIo.distTypedEventsMod.AllButLast
+import typings.socketIo.distTypedEventsMod.DecorateAcknowledgementsWithTimeoutAndMultipleResponses
 import typings.socketIo.distTypedEventsMod.EventNames
 import typings.socketIo.distTypedEventsMod.EventParams
 import typings.socketIo.distTypedEventsMod.EventsMap
+import typings.socketIo.distTypedEventsMod.FirstArg
+import typings.socketIo.distTypedEventsMod.Last
+import typings.socketIo.distTypedEventsMod.SecondArg
 import typings.socketIo.distTypedEventsMod.StrictEventEmitter
 import typings.socketIo.mod.Server
 import typings.socketIo.socketIoStrings.message
@@ -16,6 +21,7 @@ import typings.socketIoAdapter.mod.SocketId
 import typings.std.Error
 import typings.std.Map
 import typings.std.ReadonlySet
+import typings.std.Record
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -44,12 +50,15 @@ object distNamespaceMod {
       * @return {Socket}
       * @private
       */
-    def _add(client: Client[ListenEvents, EmitEvents, ServerSideEvents, Any], query: Any): Socket[ListenEvents, EmitEvents, ServerSideEvents, SocketData] = js.native
     def _add(
       client: Client[ListenEvents, EmitEvents, ServerSideEvents, Any],
-      query: Any,
-      fn: js.Function0[Unit]
-    ): Socket[ListenEvents, EmitEvents, ServerSideEvents, SocketData] = js.native
+      auth: Record[String, Any],
+      fn: js.Function1[/* socket */ Socket[ListenEvents, EmitEvents, ServerSideEvents, SocketData], Unit]
+    ): Any = js.native
+    
+    /* private */ var _createSocket: Any = js.native
+    
+    /* private */ var _doConnect: Any = js.native
     
     /** @private */
     var _fns: js.Array[
@@ -129,6 +138,26 @@ object distNamespaceMod {
       */
     def disconnectSockets(): Unit = js.native
     def disconnectSockets(close: Boolean): Unit = js.native
+    
+    /**
+      * Emits an event and waits for an acknowledgement from all clients.
+      *
+      * @example
+      * const myNamespace = io.of("/my-namespace");
+      *
+      * try {
+      *   const responses = await myNamespace.timeout(1000).emitWithAck("some-event");
+      *   console.log(responses); // one response per client
+      * } catch (e) {
+      *   // some clients did not acknowledge the event in the given delay
+      * }
+      *
+      * @return a Promise that will be fulfilled when all clients have acknowledged the event
+      */
+    def emitWithAck[Ev /* <: EventNames[EmitEvents] */](
+      ev: Ev,
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type AllButLast<EventParams<EmitEvents, Ev>> is not an array type */ args: AllButLast[EventParams[EmitEvents, Ev]]
+    ): js.Promise[SecondArg[Last[EventParams[EmitEvents, Ev]]]] = js.native
     
     def except(room: js.Array[Room]): BroadcastOperator[EmitEvents, SocketData] = js.native
     /**
@@ -258,9 +287,9 @@ object distNamespaceMod {
       * // acknowledgements (without binary content) are supported too:
       * myNamespace.serverSideEmit("ping", (err, responses) => {
       *  if (err) {
-      *     // some clients did not acknowledge the event in the given delay
+      *     // some servers did not acknowledge the event in the given delay
       *   } else {
-      *     console.log(responses); // one response per client
+      *     console.log(responses); // one response per server (except the current one)
       *   }
       * });
       *
@@ -273,8 +302,31 @@ object distNamespaceMod {
       */
     def serverSideEmit[Ev /* <: EventNames[ServerSideEvents] */](
       ev: Ev,
-      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type EventParams<ServerSideEvents, Ev> is not an array type */ args: EventParams[ServerSideEvents, Ev]
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type EventParams<DecorateAcknowledgementsWithTimeoutAndMultipleResponses<ServerSideEvents>, Ev> is not an array type */ args: EventParams[DecorateAcknowledgementsWithTimeoutAndMultipleResponses[ServerSideEvents], Ev]
     ): Boolean = js.native
+    
+    /**
+      * Sends a message and expect an acknowledgement from the other Socket.IO servers of the cluster.
+      *
+      * @example
+      * const myNamespace = io.of("/my-namespace");
+      *
+      * try {
+      *   const responses = await myNamespace.serverSideEmitWithAck("ping");
+      *   console.log(responses); // one response per server (except the current one)
+      * } catch (e) {
+      *   // some servers did not acknowledge the event in the given delay
+      * }
+      *
+      * @param ev - the event name
+      * @param args - an array of arguments
+      *
+      * @return a Promise that will be fulfilled when all servers have acknowledged the event
+      */
+    def serverSideEmitWithAck[Ev /* <: EventNames[ServerSideEvents] */](
+      ev: Ev,
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type AllButLast<EventParams<ServerSideEvents, Ev>> is not an array type */ args: AllButLast[EventParams[ServerSideEvents, Ev]]
+    ): js.Promise[js.Array[FirstArg[Last[EventParams[ServerSideEvents, Ev]]]]] = js.native
     
     val sockets: Map[SocketId, Socket[ListenEvents, EmitEvents, ServerSideEvents, SocketData]] = js.native
     
@@ -332,7 +384,7 @@ object distNamespaceMod {
       *
       * @param timeout
       */
-    def timeout(timeout: Double): BroadcastOperator[EmitEvents, SocketData] = js.native
+    def timeout(timeout: Double): BroadcastOperator[DecorateAcknowledgementsWithTimeoutAndMultipleResponses[EmitEvents], SocketData] = js.native
     
     def to(room: js.Array[Room]): BroadcastOperator[EmitEvents, SocketData] = js.native
     /**

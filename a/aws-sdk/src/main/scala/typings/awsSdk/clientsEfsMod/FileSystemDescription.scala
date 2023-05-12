@@ -62,7 +62,7 @@ trait FileSystemDescription extends StObject {
   var NumberOfMountTargets: MountTargetCount
   
   /**
-    * The Amazon Web Services account that created the file system. If the file system was created by an IAM user, the parent account to which the user belongs is the owner.
+    * The Amazon Web Services account that created the file system.
     */
   var OwnerId: AwsAccountId
   

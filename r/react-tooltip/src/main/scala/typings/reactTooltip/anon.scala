@@ -1,30 +1,35 @@
 package typings.reactTooltip
 
+import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  trait Left extends StObject {
+  trait ActiveAnchor extends StObject {
     
-    var left: Double
+    var activeAnchor: HTMLElement | Null
     
-    var top: Double
+    var content: String | Null
   }
-  object Left {
+  object ActiveAnchor {
     
-    inline def apply(left: Double, top: Double): Left = {
-      val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Left]
+    inline def apply(): ActiveAnchor = {
+      val __obj = js.Dynamic.literal(activeAnchor = null, content = null)
+      __obj.asInstanceOf[ActiveAnchor]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: Left] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: ActiveAnchor] (val x: Self) extends AnyVal {
       
-      inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setActiveAnchor(value: HTMLElement): Self = StObject.set(x, "activeAnchor", value.asInstanceOf[js.Any])
       
-      inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setActiveAnchorNull: Self = StObject.set(x, "activeAnchor", null)
+      
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
+      inline def setContentNull: Self = StObject.set(x, "content", null)
     }
   }
 }

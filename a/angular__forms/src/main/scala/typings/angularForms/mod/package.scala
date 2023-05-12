@@ -31,6 +31,14 @@ type UntypedFormGroup = FormGroup[Any]
 
 inline def VERSION: Version = ^.asInstanceOf[js.Dynamic].selectDynamic("VERSION").asInstanceOf[Version]
 
+inline def isFormArray(control: Any): /* is @angular/forms.@angular/forms.FormArray<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFormArray")(control.asInstanceOf[js.Any]).asInstanceOf[/* is @angular/forms.@angular/forms.FormArray<any> */ Boolean]
+
+inline def isFormControl(control: Any): /* is @angular/forms.@angular/forms.FormControl<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFormControl")(control.asInstanceOf[js.Any]).asInstanceOf[/* is @angular/forms.@angular/forms.FormControl<any> */ Boolean]
+
+inline def isFormGroup(control: Any): /* is @angular/forms.@angular/forms.FormGroup<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFormGroup")(control.asInstanceOf[js.Any]).asInstanceOf[/* is @angular/forms.@angular/forms.FormGroup<any> */ Boolean]
+
+inline def isFormRecord(control: Any): /* is @angular/forms.@angular/forms.FormRecord<@angular/forms.@angular/forms.AbstractControl<any, any>> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFormRecord")(control.asInstanceOf[js.Any]).asInstanceOf[/* is @angular/forms.@angular/forms.FormRecord<@angular/forms.@angular/forms.AbstractControl<any, any>> */ Boolean]
+
 type AsyncValidatorFn = js.Function1[
 /* control */ AbstractControl[Any, Any], 
 (js.Promise[ValidationErrors | Null]) | (Observable_[ValidationErrors | Null])]

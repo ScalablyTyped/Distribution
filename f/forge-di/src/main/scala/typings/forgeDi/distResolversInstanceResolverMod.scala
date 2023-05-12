@@ -11,7 +11,7 @@ object distResolversInstanceResolverMod {
   open class default protected () extends InstanceResolver {
     def this(
       forge: typings.forgeDi.distForgeMod.default,
-      binding: typings.forgeDi.distFrameworkBindingMod.default,
+      binding: typings.forgeDi.distFrameworkBindingMod.default[Any],
       instance: Any
     ) = this()
   }

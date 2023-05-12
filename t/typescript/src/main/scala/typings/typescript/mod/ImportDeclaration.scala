@@ -18,8 +18,7 @@ trait ImportDeclaration
   @JSName("kind")
   val kind_ImportDeclaration: typings.typescript.mod.SyntaxKind.ImportDeclaration = js.native
   
-  @JSName("modifiers")
-  val modifiers_ImportDeclaration: js.UndefOr[NodeArray[Modifier]] = js.native
+  val modifiers: js.UndefOr[NodeArray[ModifierLike]] = js.native
   
   /** If this is not a StringLiteral it will be a grammar error. */
   val moduleSpecifier: Expression = js.native

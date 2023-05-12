@@ -11,7 +11,7 @@ object srcCoreEventDispatcherMod {
   @JSImport("three/src/core/EventDispatcher", "EventDispatcher")
   @js.native
   /**
-    * Creates eventDispatcher object. It needs to be call with '.call' to add the functionality to an object.
+    * Creates {@link THREE.EventDispatcher | EventDispatcher} object.
     */
   open class EventDispatcher[E /* <: BaseEvent */] () extends StObject {
     
@@ -24,7 +24,7 @@ object srcCoreEventDispatcherMod {
     
     /**
       * Fire an event type.
-      * @param type The type of event that gets fired.
+      * @param event The event that gets fired.
       */
     def dispatchEvent(event: E): Unit = js.native
     

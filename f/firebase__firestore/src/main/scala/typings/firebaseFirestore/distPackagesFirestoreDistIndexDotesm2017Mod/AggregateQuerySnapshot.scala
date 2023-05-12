@@ -10,12 +10,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class AggregateQuerySnapshot protected ()
   extends StObject
-     with ha {
+     with Lh_ {
   /** @hideconstructor */
-  def this(t: Any, e: Any) = this()
+  def this(t: Any, e: Any, n: Any) = this()
   
   /* CompleteClass */
   var _data: Any = js.native
+  
+  /* CompleteClass */
+  var _userDataWriter: Any = js.native
   
   /**
     * Returns the results of the aggregations performed over the underlying

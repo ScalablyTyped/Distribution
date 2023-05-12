@@ -17,7 +17,7 @@ trait KinesisStreamSourceDescription extends StObject {
   var KinesisStreamARN: js.UndefOr[typings.awsSdk.clientsFirehoseMod.KinesisStreamARN] = js.undefined
   
   /**
-    * The ARN of the role used by the source Kinesis data stream. For more information, see AWS Identity and Access Management (IAM) ARN Format.
+    * The ARN of the role used by the source Kinesis data stream. For more information, see Amazon Web Services Identity and Access Management (IAM) ARN Format.
     */
   var RoleARN: js.UndefOr[typings.awsSdk.clientsFirehoseMod.RoleARN] = js.undefined
 }

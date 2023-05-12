@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Portal extends StObject {
   
   /**
+    * The type of authentication integration points used when signing into the web portal. Defaults to Standard.  Standard web portals are authenticated directly through your identity provider. You need to call CreateIdentityProvider to integrate your identity provider with your web portal. User and group access to your web portal is controlled through your identity provider.  IAM_Identity_Center web portals are authenticated through AWS IAM Identity Center (successor to AWS Single Sign-On). They provide additional features, such as IdP-initiated authentication. Identity sources (including external identity provider integration), plus user and group access to your web portal, can be configured in the IAM Identity Center.
+    */
+  var authenticationType: js.UndefOr[AuthenticationType] = js.undefined
+  
+  /**
     * The ARN of the browser settings that is associated with this web portal.
     */
   var browserSettingsArn: js.UndefOr[ARN] = js.undefined
@@ -80,6 +85,10 @@ object Portal {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: Portal] (val x: Self) extends AnyVal {
+    
+    inline def setAuthenticationType(value: AuthenticationType): Self = StObject.set(x, "authenticationType", value.asInstanceOf[js.Any])
+    
+    inline def setAuthenticationTypeUndefined: Self = StObject.set(x, "authenticationType", js.undefined)
     
     inline def setBrowserSettingsArn(value: ARN): Self = StObject.set(x, "browserSettingsArn", value.asInstanceOf[js.Any])
     

@@ -2,7 +2,7 @@ package typings.openui5
 
 import typings.openui5.anon.Loaded
 import typings.openui5.anon.ResponseXHR
-import typings.openui5.anon.`24`
+import typings.openui5.anon.`31`
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapMUploadUploaderHttpRequestMethodMod.UploaderHttpRequestMethod
 import typings.openui5.sapUiBaseManagedObjectMod.PropertyBindingInfo
@@ -530,6 +530,8 @@ object sapMUploadUploaderMod {
     ): Boolean = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:uploadAborted uploadAborted} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -538,9 +540,11 @@ object sapMUploadUploaderMod {
     def fireUploadAborted(/**
       * Parameters to pass along with the event
       */
-    mParameters: `24`): this.type = js.native
+    mParameters: `31`): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:uploadCompleted uploadCompleted} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -552,6 +556,8 @@ object sapMUploadUploaderMod {
     mParameters: ResponseXHR): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:uploadProgressed uploadProgressed} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -563,6 +569,8 @@ object sapMUploadUploaderMod {
     mParameters: Loaded): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:uploadStarted uploadStarted} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -571,7 +579,7 @@ object sapMUploadUploaderMod {
     def fireUploadStarted(/**
       * Parameters to pass along with the event
       */
-    mParameters: `24`): this.type = js.native
+    mParameters: `31`): this.type = js.native
     
     /**
       * Gets current value of property {@link #getDownloadUrl downloadUrl}.

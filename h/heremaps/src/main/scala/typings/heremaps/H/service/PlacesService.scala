@@ -170,9 +170,9 @@ object PlacesService {
   }
   
   /**
-    * @property subDomain {string=} - the sub-domain of the places service relative to the platform's base URL, default is 'places'
-    * @property path {string=} - the path of the places service, default is 'places/v1'
-    * @property baseUrl {H.service.Url=} - an optional base URL if it differs from the platform's default base URL
+    * subDomain {string=} - the sub-domain of the places service relative to the platform's base URL, default is 'places'
+    * path {string=} - the path of the places service, default is 'places/v1'
+    * baseUrl {H.service.Url=} - an optional base URL if it differs from the platform's default base URL
     */
   trait Options extends StObject {
     

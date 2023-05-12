@@ -9,13 +9,14 @@ import org.scalablytyped.runtime.Instantiable7
 import typings.highcharts.anon.PartialAnimationOptionsOb
 import typings.highcharts.anon.TypeofAST
 import typings.highcharts.anon.TypeofColor
-import typings.highcharts.anon.TypeofHighchartsAddEvent
+import typings.highcharts.anon.TypeofHighcharts
 import typings.highcharts.anon.TypeofSeries
 import typings.highcharts.mod.ASTNode
 import typings.highcharts.mod.AnimationOptionsObject
 import typings.highcharts.mod.AnnotationControlPointOptionsObject
 import typings.highcharts.mod.AnnotationControllable
 import typings.highcharts.mod.AnnotationsOptions
+import typings.highcharts.mod.Axis
 import typings.highcharts.mod.AxisOptions
 import typings.highcharts.mod.AxisPlotBandsOptions
 import typings.highcharts.mod.AxisPlotLinesOptions
@@ -58,7 +59,7 @@ object modulesColoraxisMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(highcharts: TypeofHighchartsAddEvent): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(highcharts.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def default(highcharts: TypeofHighcharts): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(highcharts.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   object Highcharts {
     
@@ -250,38 +251,6 @@ object modulesColoraxisMod {
         */
       def this(input: ColorType) = this()
     }
-    
-    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
-    @JSImport("highcharts/modules/coloraxis", "Highcharts.ColorAxis")
-    @js.native
-    open class ColorAxis protected ()
-      extends typings.highcharts.mod.ColorAxis {
-      /**
-        * The ColorAxis object for inclusion in gradient legends.
-        *
-        * @param chart
-        *        The related chart of the color axis.
-        *
-        * @param userOptions
-        *        The color axis options for initialization.
-        */
-      def this(chart: Chart_, userOptions: ColorAxisOptions) = this()
-    }
-    @JSImport("highcharts/modules/coloraxis", "Highcharts.ColorAxis")
-    @js.native
-    def ColorAxis: Instantiable2[
-        /* chart */ Chart_, 
-        /* userOptions */ ColorAxisOptions, 
-        typings.highcharts.mod.ColorAxis
-      ] = js.native
-    inline def ColorAxis_=(
-      x: Instantiable2[
-          /* chart */ Chart_, 
-          /* userOptions */ ColorAxisOptions, 
-          typings.highcharts.mod.ColorAxis
-        ]
-    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ColorAxis")(x.asInstanceOf[js.Any])
-    
     @JSImport("highcharts/modules/coloraxis", "Highcharts.Color")
     @js.native
     def Color_ : TypeofColor = js.native
@@ -396,8 +365,7 @@ object modulesColoraxisMod {
         * Allows direct access to the Highcharts rendering layer in order to draw
         * primitive shapes like circles, rectangles, paths or text directly on a
         * chart, or independent from any chart. The SVGRenderer represents a
-        * wrapper object for SVG in modern browsers. Through the VMLRenderer, part
-        * of the `oldie.js` module, it also brings vector graphics to IE <= 8.
+        * wrapper object for SVG in modern browsers.
         *
         * An existing chart's renderer can be accessed through Chart.renderer. The
         * renderer can also be used completely decoupled from a chart.
@@ -798,6 +766,8 @@ object modulesColoraxisMod {
     
     inline def callout(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("callout")().asInstanceOf[Unit]
     
+    inline def centerImage(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("centerImage")().asInstanceOf[Unit]
+    
     inline def chart(options: Options): Chart_ = ^.asInstanceOf[js.Dynamic].applyDynamic("chart")(options.asInstanceOf[js.Any]).asInstanceOf[Chart_]
     inline def chart(options: Options, callback: ChartCallbackFunction): Chart_ = (^.asInstanceOf[js.Dynamic].applyDynamic("chart")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Chart_]
     inline def chart(renderTo: String, options: Options): Chart_ = (^.asInstanceOf[js.Dynamic].applyDynamic("chart")(renderTo.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Chart_]
@@ -1007,6 +977,8 @@ object modulesColoraxisMod {
     
     inline def pick[T](items: (js.UndefOr[T | Null])*): T = ^.asInstanceOf[js.Dynamic].applyDynamic("pick")(items.asInstanceOf[Seq[js.Any]]*).asInstanceOf[T]
     
+    inline def pushUnique(array: js.Array[Any], item: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("pushUnique")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    
     inline def reduce(arr: js.Array[Any], fn: js.Function, initialValue: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(arr.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any])).asInstanceOf[Any]
     
     inline def registerRendererType(
@@ -1090,5 +1062,44 @@ object modulesColoraxisMod {
     inline def wrap(obj: Any, method: String, func: WrapProceedFunction): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(obj.asInstanceOf[js.Any], method.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
-  inline def factory(highcharts: TypeofHighchartsAddEvent): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("factory")(highcharts.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def factory(highcharts: TypeofHighcharts): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("factory")(highcharts.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  /* augmented module */
+  object highchartsAugmentingMod {
+    
+    /**
+      * The ColorAxis object for inclusion in gradient legends.
+      */
+    @js.native
+    trait ColorAxis extends Axis {
+      
+      /**
+        * Initializes the color axis.
+        *
+        * @param chart
+        *        The related chart of the color axis.
+        *
+        * @param userOptions
+        *        The color axis options for initialization.
+        */
+      def init(chart: Chart_, userOptions: ColorAxisOptions): Unit = js.native
+      
+      /**
+        * Updates a color axis instance with a new set of options. The options
+        * are merged with the existing options, so only new or altered options
+        * need to be specified.
+        *
+        * @param newOptions
+        *        The new options that will be merged in with existing options
+        *        on the color axis.
+        *
+        * @param redraw
+        *        Whether to redraw the chart after the color axis is altered.
+        *        If doing more operations on the chart, it is a good idea to
+        *        set redraw to `false` and call Highcharts.Chart#redraw after.
+        */
+      def update(newOptions: ColorAxisOptions): Unit = js.native
+      def update(newOptions: ColorAxisOptions, redraw: Boolean): Unit = js.native
+    }
+  }
 }

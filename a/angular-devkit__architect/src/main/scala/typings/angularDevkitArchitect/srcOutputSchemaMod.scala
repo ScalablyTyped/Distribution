@@ -7,7 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object srcOutputSchemaMod {
   
-  trait Schema extends StObject {
+  trait Schema
+    extends StObject
+       with /* property */ StringDictionary[Any] {
     
     var error: js.UndefOr[String] = js.undefined
     
@@ -43,7 +45,9 @@ object srcOutputSchemaMod {
     }
   }
   
-  trait Target extends StObject {
+  trait Target
+    extends StObject
+       with /* property */ StringDictionary[Any] {
     
     var configuration: js.UndefOr[String] = js.undefined
     

@@ -8,14 +8,19 @@ trait MessageHeaderDestination
   extends StObject
      with BackboneElement {
   
-  var _endpoint: js.UndefOr[Element] = js.undefined
+  var _endpointUrl: js.UndefOr[Element] = js.undefined
   
   var _name: js.UndefOr[Element] = js.undefined
   
   /**
-    * The id may be a non-resolvable URI for systems that do not use standard network-based addresses.
+    * The url may be a non-resolvable URI for systems that do not use standard network-based addresses.
     */
-  var endpoint: String
+  var endpointReference: js.UndefOr[Reference] = js.undefined
+  
+  /**
+    * The url may be a non-resolvable URI for systems that do not use standard network-based addresses.
+    */
+  var endpointUrl: js.UndefOr[String] = js.undefined
   
   /**
     * Human-readable name for the target system.
@@ -34,15 +39,21 @@ trait MessageHeaderDestination
 }
 object MessageHeaderDestination {
   
-  inline def apply(endpoint: String): MessageHeaderDestination = {
-    val __obj = js.Dynamic.literal(endpoint = endpoint.asInstanceOf[js.Any])
+  inline def apply(): MessageHeaderDestination = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MessageHeaderDestination]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: MessageHeaderDestination] (val x: Self) extends AnyVal {
     
-    inline def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
+    inline def setEndpointReference(value: Reference): Self = StObject.set(x, "endpointReference", value.asInstanceOf[js.Any])
+    
+    inline def setEndpointReferenceUndefined: Self = StObject.set(x, "endpointReference", js.undefined)
+    
+    inline def setEndpointUrl(value: String): Self = StObject.set(x, "endpointUrl", value.asInstanceOf[js.Any])
+    
+    inline def setEndpointUrlUndefined: Self = StObject.set(x, "endpointUrl", js.undefined)
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
@@ -56,9 +67,9 @@ object MessageHeaderDestination {
     
     inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     
-    inline def set_endpoint(value: Element): Self = StObject.set(x, "_endpoint", value.asInstanceOf[js.Any])
+    inline def set_endpointUrl(value: Element): Self = StObject.set(x, "_endpointUrl", value.asInstanceOf[js.Any])
     
-    inline def set_endpointUndefined: Self = StObject.set(x, "_endpoint", js.undefined)
+    inline def set_endpointUrlUndefined: Self = StObject.set(x, "_endpointUrl", js.undefined)
     
     inline def set_name(value: Element): Self = StObject.set(x, "_name", value.asInstanceOf[js.Any])
     

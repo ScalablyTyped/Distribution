@@ -12,7 +12,7 @@ trait JobSettings extends StObject {
   var AdAvailOffset: js.UndefOr[integerMinNegative1000Max1000] = js.undefined
   
   /**
-    * Settings for ad avail blanking.  Video can be blanked or overlaid with an image, and audio muted during SCTE-35 triggered ad avails.
+    * Settings for ad avail blanking. Video can be blanked or overlaid with an image, and audio muted during SCTE-35 triggered ad avails.
     */
   var AvailBlanking: js.UndefOr[typings.awsSdk.clientsMediaconvertMod.AvailBlanking] = js.undefined
   
@@ -47,7 +47,7 @@ trait JobSettings extends StObject {
   var NielsenConfiguration: js.UndefOr[typings.awsSdk.clientsMediaconvertMod.NielsenConfiguration] = js.undefined
   
   /**
-    * Ignore these settings unless you are using Nielsen non-linear watermarking. Specify the values that  MediaConvert uses to generate and place Nielsen watermarks in your output audio. In addition to  specifying these values, you also need to set up your cloud TIC server. These settings apply to  every output in your job. The MediaConvert implementation is currently with the following Nielsen versions: Nielsen Watermark SDK Version 5.2.1 Nielsen NLM Watermark Engine Version 1.2.7 Nielsen Watermark Authenticator [SID_TIC] Version [5.0.0]
+    * Ignore these settings unless you are using Nielsen non-linear watermarking. Specify the values that MediaConvert uses to generate and place Nielsen watermarks in your output audio. In addition to specifying these values, you also need to set up your cloud TIC server. These settings apply to every output in your job. The MediaConvert implementation is currently with the following Nielsen versions: Nielsen Watermark SDK Version 5.2.1 Nielsen NLM Watermark Engine Version 1.2.7 Nielsen Watermark Authenticator [SID_TIC] Version [5.0.0]
     */
   var NielsenNonLinearWatermark: js.UndefOr[NielsenNonLinearWatermarkSettings] = js.undefined
   

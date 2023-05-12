@@ -309,19 +309,6 @@ open class SVGElement () extends StObject {
   def init(renderer: SVGRenderer, nodeName: String): Unit = js.native
   
   /**
-    * Invert a group, rotate and flip. This is used internally on inverted
-    * charts, where the points and graphs are drawn as if not inverted, then
-    * the series group elements are inverted.
-    *
-    * @param inverted
-    *        Whether to invert or not. An inverted shape can be un-inverted by
-    *        setting it to false.
-    *
-    * @return Return the SVGElement for chaining.
-    */
-  def invert(inverted: Boolean): SVGElement = js.native
-  
-  /**
     * Add an event listener. This is a simple setter that replaces the previous
     * event of the same type added by this function, as opposed to the
     * Highcharts#addEvent function.
@@ -385,37 +372,18 @@ open class SVGElement () extends StObject {
   def setTextPath(path: SVGElement, textPathOptions: DataLabelsTextPathOptionsObject): SVGElement = js.native
   
   /**
-    * Add a shadow to the element. Must be called after the element is added to
-    * the DOM. In styled mode, this method is not used, instead use `defs` and
-    * filters.
+    * Add a shadow to the element. In styled mode, this method is not used,
+    * instead use `defs` and filters.
     *
     * @param shadowOptions
     *        The shadow options. If `true`, the default options are applied. If
     *        `false`, the current shadow will be removed.
     *
-    * @param group
-    *        The SVG group element where the shadows will be applied. The
-    *        default is to add it to the same parent as the current element.
-    *        Internally, this is ised for pie slices, where all the shadows are
-    *        added to an element behind all the slices.
-    *
-    * @param cutOff
-    *        Used internally for column shadows.
-    *
     * @return Returns the SVGElement for chaining.
     */
   def shadow(): SVGElement = js.native
   def shadow(shadowOptions: Boolean): SVGElement = js.native
-  def shadow(shadowOptions: Boolean, group: Unit, cutOff: Boolean): SVGElement = js.native
-  def shadow(shadowOptions: Boolean, group: SVGElement): SVGElement = js.native
-  def shadow(shadowOptions: Boolean, group: SVGElement, cutOff: Boolean): SVGElement = js.native
-  def shadow(shadowOptions: Unit, group: Unit, cutOff: Boolean): SVGElement = js.native
-  def shadow(shadowOptions: Unit, group: SVGElement): SVGElement = js.native
-  def shadow(shadowOptions: Unit, group: SVGElement, cutOff: Boolean): SVGElement = js.native
   def shadow(shadowOptions: ShadowOptionsObject): SVGElement = js.native
-  def shadow(shadowOptions: ShadowOptionsObject, group: Unit, cutOff: Boolean): SVGElement = js.native
-  def shadow(shadowOptions: ShadowOptionsObject, group: SVGElement): SVGElement = js.native
-  def shadow(shadowOptions: ShadowOptionsObject, group: SVGElement, cutOff: Boolean): SVGElement = js.native
   
   /**
     * Show the element after it has been hidden.

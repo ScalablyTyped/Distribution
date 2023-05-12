@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "gestalt" : "111.4.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "gestalt" : "111.4.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -9,11 +9,11 @@ trait DeleteEventActionRequest extends StObject {
   /**
     * The unique identifier for the event action.
     */
-  var EventActionId: string
+  var EventActionId: _String
 }
 object DeleteEventActionRequest {
   
-  inline def apply(EventActionId: string): DeleteEventActionRequest = {
+  inline def apply(EventActionId: _String): DeleteEventActionRequest = {
     val __obj = js.Dynamic.literal(EventActionId = EventActionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteEventActionRequest]
   }
@@ -21,6 +21,6 @@ object DeleteEventActionRequest {
   @scala.inline
   implicit open class MutableBuilder[Self <: DeleteEventActionRequest] (val x: Self) extends AnyVal {
     
-    inline def setEventActionId(value: string): Self = StObject.set(x, "EventActionId", value.asInstanceOf[js.Any])
+    inline def setEventActionId(value: _String): Self = StObject.set(x, "EventActionId", value.asInstanceOf[js.Any])
   }
 }

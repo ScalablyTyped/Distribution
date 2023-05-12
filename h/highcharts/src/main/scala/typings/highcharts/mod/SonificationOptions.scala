@@ -4,119 +4,119 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Options for sonifying a chart.
-  */
 trait SonificationOptions extends StObject {
   
   /**
-    * Milliseconds of silent waiting to add between series. Note that
-    * waiting time is considered part of the sonify duration.
+    * (Highcharts, Highstock, Highmaps, Gantt) The time to wait in milliseconds
+    * after each data series when playing the series one after the other.
     */
   var afterSeriesWait: js.UndefOr[Double] = js.undefined
   
   /**
-    * Optionally provide the minimum/maximum data values for the points. If
-    * this is not supplied, it is calculated from all points in the chart
-    * on demand. This option is supplied in the following format, as a map
-    * of point data properties to objects with min/max values: (see online
-    * documentation for example)
+    * (Highcharts, Highstock, Highmaps, Gantt) Default sonification options for
+    * all instrument tracks.
+    *
+    * If specific options are also set on individual tracks or per series,
+    * those will override these options.
     */
-  var dataExtremes: js.UndefOr[Dictionary[RangeObject]] = js.undefined
+  var defaultInstrumentOptions: js.UndefOr[SonificationDefaultInstrumentOptions] = js.undefined
   
   /**
-    * Duration for sonifying the entire chart. The duration is distributed
-    * across the different series intelligently, but does not take earcons
-    * into account. It is also possible to set the duration explicitly per
-    * series, using `seriesOptions`. Note that points may continue to play
-    * after the duration has passed, but no new points will start playing.
+    * (Highcharts, Highstock, Highmaps, Gantt) Default sonification options for
+    * all speech tracks.
+    *
+    * If specific options are also set on individual tracks or per series,
+    * those will override these options.
     */
-  var duration: Double
+  var defaultSpeechOptions: js.UndefOr[SonificationDefaultSpeechOptions] = js.undefined
   
   /**
-    * Earcons to add to the chart. Note that earcons can also be added per
-    * series using `seriesOptions`.
+    * (Highcharts, Highstock, Highmaps, Gantt) The total duration of the
+    * sonification, in milliseconds.
     */
-  var earcons: js.UndefOr[
-    js.Array[
-      typings.highcharts.modulesSonificationMod.highchartsAugmentingMod.EarconConfiguration
-    ]
-  ] = js.undefined
+  var duration: js.UndefOr[Double] = js.undefined
   
   /**
-    * The instrument definitions for the points in this chart.
+    * (Highcharts, Highstock, Highmaps, Gantt) Enable sonification
+    * functionality for the chart.
     */
-  var instruments: js.UndefOr[
-    js.Array[
-      typings.highcharts.modulesSonificationMod.highchartsAugmentingMod.PointInstrumentObject
-    ]
-  ] = js.undefined
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Callback after the chart has played.
+    * (Highcharts, Highstock, Highmaps, Gantt) Set up event handlers for the
+    * sonification
     */
-  var onEnd: js.UndefOr[js.Function] = js.undefined
+  var events: js.UndefOr[SonificationEventsOptions] = js.undefined
   
   /**
-    * Callback after a series has finished playing.
+    * (Highcharts, Highstock, Highmaps, Gantt) Context tracks to add globally,
+    * an array of either instrument tracks, speech tracks, or a mix.
+    *
+    * Context tracks are not tied to data points, but play at a set interval -
+    * either based on time or on prop values.
     */
-  var onSeriesEnd: js.UndefOr[js.Function] = js.undefined
+  var globalContextTracks: js.UndefOr[js.Array[SonificationGlobalContextTracksOptions]] = js.undefined
   
   /**
-    * Callback before a series is played.
-    */
-  var onSeriesStart: js.UndefOr[js.Function] = js.undefined
-  
-  /**
-    * Define the order to play the series in. This can be given as a
-    * string, or an array specifying a custom ordering. If given as a
-    * string, valid values are `sequential` - where each series is played
-    * in order - or `simultaneous`, where all series are played at once.
-    * For custom ordering, supply an array as the order. Each element in
-    * the array can be either a string with a series ID, an Earcon object,
-    * or an object with a numeric `silentWait` property designating a
-    * number of milliseconds to wait before continuing. Each element of the
-    * array will be played in order. To play elements simultaneously, group
-    * the elements in an array.
-    */
-  var order: String | (js.Array[
-    String | typings.highcharts.modulesSonificationMod.highchartsAugmentingMod.Earcon | (js.Array[
-      String | typings.highcharts.modulesSonificationMod.highchartsAugmentingMod.Earcon
-    ])
-  ])
-  
-  /**
-    * The axis to use for when to play the points. Can be a string with a
-    * data property (e.g. `x`), or a function. If it is a function, this
-    * function receives the point as argument, and should return a numeric
-    * value. The points with the lowest numeric values are then played
-    * first, and the time between points will be proportional to the
-    * distance between the numeric values. This option cannot be overridden
-    * per series.
-    */
-  var pointPlayTime: String | js.Function
-  
-  /**
-    * Options as given to `series.sonify` to override options per series.
-    * If the option is supplied as an array of options objects, the `id`
-    * property of the object should correspond to the series' id. If the
-    * option is supplied as a single object, the options apply to all
+    * (Highcharts, Highstock, Highmaps, Gantt) Global tracks to add to every
     * series.
+    *
+    * Defined as an array of either instrument or speech tracks, or a
+    * combination.
     */
-  var seriesOptions: js.UndefOr[js.Object | js.Array[js.Object]] = js.undefined
+  var globalTracks: js.UndefOr[js.Array[SonificationGlobalTracksOptions]] = js.undefined
+  
+  /**
+    * (Highcharts, Highstock, Highmaps, Gantt) Overall/master volume for the
+    * sonification, from 0 to 1.
+    */
+  var masterVolume: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * (Highcharts, Highstock, Highmaps, Gantt) What order to play the data
+    * series in, either `sequential` where the series play individually one
+    * after the other, or `simultaneous` where the series play all at once.
+    */
+  var order: js.UndefOr[OptionsOrderValue] = js.undefined
+  
+  /**
+    * (Highcharts, Highstock, Highmaps, Gantt) Options for grouping data points
+    * together when sonifying. This allows for the visual presentation to
+    * contain more points than what is being played. If not enabled, all
+    * visible / uncropped points are played.
+    */
+  var pointGrouping: js.UndefOr[SonificationPointGroupingOptions] = js.undefined
+  
+  /**
+    * (Highcharts, Highstock, Highmaps, Gantt) Show X and Y axis crosshairs (if
+    * they exist) as the chart plays.
+    *
+    * Note that if multiple tracks that play at different times try to show the
+    * crosshairs, it can be glitchy, so it is recommended in those cases to
+    * turn this on/off for individual tracks using the showPlayMarker option.
+    */
+  var showCrosshair: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * (Highcharts, Highstock, Highmaps, Gantt) Show tooltip as the chart plays.
+    *
+    * Note that if multiple tracks that play at different times try to show the
+    * tooltip, it can be glitchy, so it is recommended in those cases to turn
+    * this on/off for individual tracks using the showPlayMarker option.
+    */
+  var showTooltip: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * (Highcharts, Highstock, Highmaps, Gantt) How long to wait between each
+    * recomputation of the sonification, if the chart updates rapidly. This
+    * avoids slowing down processes like panning. Given in milliseconds.
+    */
+  var updateInterval: js.UndefOr[Double] = js.undefined
 }
 object SonificationOptions {
   
-  inline def apply(
-    duration: Double,
-    order: String | (js.Array[
-      String | typings.highcharts.modulesSonificationMod.highchartsAugmentingMod.Earcon | (js.Array[
-        String | typings.highcharts.modulesSonificationMod.highchartsAugmentingMod.Earcon
-      ])
-    ]),
-    pointPlayTime: String | js.Function
-  ): SonificationOptions = {
-    val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], order = order.asInstanceOf[js.Any], pointPlayTime = pointPlayTime.asInstanceOf[js.Any])
+  inline def apply(): SonificationOptions = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SonificationOptions]
   }
   
@@ -127,64 +127,60 @@ object SonificationOptions {
     
     inline def setAfterSeriesWaitUndefined: Self = StObject.set(x, "afterSeriesWait", js.undefined)
     
-    inline def setDataExtremes(value: Dictionary[RangeObject]): Self = StObject.set(x, "dataExtremes", value.asInstanceOf[js.Any])
+    inline def setDefaultInstrumentOptions(value: SonificationDefaultInstrumentOptions): Self = StObject.set(x, "defaultInstrumentOptions", value.asInstanceOf[js.Any])
     
-    inline def setDataExtremesUndefined: Self = StObject.set(x, "dataExtremes", js.undefined)
+    inline def setDefaultInstrumentOptionsUndefined: Self = StObject.set(x, "defaultInstrumentOptions", js.undefined)
+    
+    inline def setDefaultSpeechOptions(value: SonificationDefaultSpeechOptions): Self = StObject.set(x, "defaultSpeechOptions", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultSpeechOptionsUndefined: Self = StObject.set(x, "defaultSpeechOptions", js.undefined)
     
     inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    inline def setEarcons(
-      value: js.Array[
-          typings.highcharts.modulesSonificationMod.highchartsAugmentingMod.EarconConfiguration
-        ]
-    ): Self = StObject.set(x, "earcons", value.asInstanceOf[js.Any])
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    inline def setEarconsUndefined: Self = StObject.set(x, "earcons", js.undefined)
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    inline def setEarconsVarargs(value: typings.highcharts.modulesSonificationMod.highchartsAugmentingMod.EarconConfiguration*): Self = StObject.set(x, "earcons", js.Array(value*))
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    inline def setInstruments(
-      value: js.Array[
-          typings.highcharts.modulesSonificationMod.highchartsAugmentingMod.PointInstrumentObject
-        ]
-    ): Self = StObject.set(x, "instruments", value.asInstanceOf[js.Any])
+    inline def setEvents(value: SonificationEventsOptions): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    inline def setInstrumentsUndefined: Self = StObject.set(x, "instruments", js.undefined)
+    inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
-    inline def setInstrumentsVarargs(value: typings.highcharts.modulesSonificationMod.highchartsAugmentingMod.PointInstrumentObject*): Self = StObject.set(x, "instruments", js.Array(value*))
+    inline def setGlobalContextTracks(value: js.Array[SonificationGlobalContextTracksOptions]): Self = StObject.set(x, "globalContextTracks", value.asInstanceOf[js.Any])
     
-    inline def setOnEnd(value: js.Function): Self = StObject.set(x, "onEnd", value.asInstanceOf[js.Any])
+    inline def setGlobalContextTracksUndefined: Self = StObject.set(x, "globalContextTracks", js.undefined)
     
-    inline def setOnEndUndefined: Self = StObject.set(x, "onEnd", js.undefined)
+    inline def setGlobalContextTracksVarargs(value: SonificationGlobalContextTracksOptions*): Self = StObject.set(x, "globalContextTracks", js.Array(value*))
     
-    inline def setOnSeriesEnd(value: js.Function): Self = StObject.set(x, "onSeriesEnd", value.asInstanceOf[js.Any])
+    inline def setGlobalTracks(value: js.Array[SonificationGlobalTracksOptions]): Self = StObject.set(x, "globalTracks", value.asInstanceOf[js.Any])
     
-    inline def setOnSeriesEndUndefined: Self = StObject.set(x, "onSeriesEnd", js.undefined)
+    inline def setGlobalTracksUndefined: Self = StObject.set(x, "globalTracks", js.undefined)
     
-    inline def setOnSeriesStart(value: js.Function): Self = StObject.set(x, "onSeriesStart", value.asInstanceOf[js.Any])
+    inline def setGlobalTracksVarargs(value: SonificationGlobalTracksOptions*): Self = StObject.set(x, "globalTracks", js.Array(value*))
     
-    inline def setOnSeriesStartUndefined: Self = StObject.set(x, "onSeriesStart", js.undefined)
+    inline def setMasterVolume(value: Double): Self = StObject.set(x, "masterVolume", value.asInstanceOf[js.Any])
     
-    inline def setOrder(
-      value: String | (js.Array[
-          String | typings.highcharts.modulesSonificationMod.highchartsAugmentingMod.Earcon | (js.Array[
-            String | typings.highcharts.modulesSonificationMod.highchartsAugmentingMod.Earcon
-          ])
-        ])
-    ): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+    inline def setMasterVolumeUndefined: Self = StObject.set(x, "masterVolume", js.undefined)
     
-    inline def setOrderVarargs(
-      value: (String | typings.highcharts.modulesSonificationMod.highchartsAugmentingMod.Earcon | (js.Array[
-          String | typings.highcharts.modulesSonificationMod.highchartsAugmentingMod.Earcon
-        ]))*
-    ): Self = StObject.set(x, "order", js.Array(value*))
+    inline def setOrder(value: OptionsOrderValue): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
-    inline def setPointPlayTime(value: String | js.Function): Self = StObject.set(x, "pointPlayTime", value.asInstanceOf[js.Any])
+    inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     
-    inline def setSeriesOptions(value: js.Object | js.Array[js.Object]): Self = StObject.set(x, "seriesOptions", value.asInstanceOf[js.Any])
+    inline def setPointGrouping(value: SonificationPointGroupingOptions): Self = StObject.set(x, "pointGrouping", value.asInstanceOf[js.Any])
     
-    inline def setSeriesOptionsUndefined: Self = StObject.set(x, "seriesOptions", js.undefined)
+    inline def setPointGroupingUndefined: Self = StObject.set(x, "pointGrouping", js.undefined)
     
-    inline def setSeriesOptionsVarargs(value: js.Object*): Self = StObject.set(x, "seriesOptions", js.Array(value*))
+    inline def setShowCrosshair(value: Boolean): Self = StObject.set(x, "showCrosshair", value.asInstanceOf[js.Any])
+    
+    inline def setShowCrosshairUndefined: Self = StObject.set(x, "showCrosshair", js.undefined)
+    
+    inline def setShowTooltip(value: Boolean): Self = StObject.set(x, "showTooltip", value.asInstanceOf[js.Any])
+    
+    inline def setShowTooltipUndefined: Self = StObject.set(x, "showTooltip", js.undefined)
+    
+    inline def setUpdateInterval(value: Double): Self = StObject.set(x, "updateInterval", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateIntervalUndefined: Self = StObject.set(x, "updateInterval", js.undefined)
   }
 }

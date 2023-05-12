@@ -15,6 +15,11 @@ trait AutoTuneOptionsOutput extends StObject {
     * The current state of Auto-Tune on the domain.
     */
   var State: js.UndefOr[AutoTuneState] = js.undefined
+  
+  /**
+    * Whether the domain's off-peak window will be used to deploy Auto-Tune changes rather than a maintenance schedule.
+    */
+  var UseOffPeakWindow: js.UndefOr[Boolean] = js.undefined
 }
 object AutoTuneOptionsOutput {
   
@@ -33,5 +38,9 @@ object AutoTuneOptionsOutput {
     inline def setState(value: AutoTuneState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
     inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
+    
+    inline def setUseOffPeakWindow(value: Boolean): Self = StObject.set(x, "UseOffPeakWindow", value.asInstanceOf[js.Any])
+    
+    inline def setUseOffPeakWindowUndefined: Self = StObject.set(x, "UseOffPeakWindow", js.undefined)
   }
 }

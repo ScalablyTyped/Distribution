@@ -92,7 +92,7 @@ trait LightsManager extends StObject {
     * @param y The vertical position of this Point Light in the world.
     * @param color The color of the Point Light, given as a hex value. Default 0xffffff.
     * @param radius The radius of the Point Light. Default 128.
-    * @param intensity The intensity, or colr blend, of the Point Light. Default 1.
+    * @param intensity The intensity, or color blend, of the Point Light. Default 1.
     * @param attenuation The attenuation  of the Point Light. This is the reduction of light from the center point. Default 0.1.
     */
   def addPointLight(x: Double, y: Double): PointLight = js.native

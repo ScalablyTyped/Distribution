@@ -132,6 +132,14 @@ trait Network
   var spatialReference: SpatialReference = js.native
   
   /**
+    * Whenever the network is edited or modified, the network and its features become out of date in the [network topology](https://pro.arcgis.com/en/pro-app/latest/help/data/utility-network/about-network-topology.htm).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-Network.html#submitTopologyValidationJob)
+    */
+  def submitTopologyValidationJob(parameters: ValidateNetworkTopologyParameters): js.Promise[TopologyValidationJobInfo] = js.native
+  def submitTopologyValidationJob(parameters: ValidateNetworkTopologyParameters, options: RequestOptions): js.Promise[TopologyValidationJobInfo] = js.native
+  
+  /**
     * The name of the network as defined in the webmap spec.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-Network.html#title)
@@ -146,4 +154,12 @@ trait Network
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-Network.html#type)
     */
   val `type`: utility | typings.arcgisJsApi.arcgisJsApiStrings.trace = js.native
+  
+  /**
+    * Whenever the network is edited or modified, the network and its features become out of date in the [network topology]( https://pro.arcgis.com/en/pro-app/latest/help/data/utility-network/about-network-topology.htm).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-networks-Network.html#validateTopology)
+    */
+  def validateTopology(parameters: ValidateNetworkTopologyParameters): js.Promise[Any] = js.native
+  def validateTopology(parameters: ValidateNetworkTopologyParameters, options: RequestOptions): js.Promise[Any] = js.native
 }

@@ -59,7 +59,7 @@ object libStateMod {
     
     var _sessionid: String | Null = js.native
     
-    var actions: js.Array[ActionObject[TContext, TEvent]] = js.native
+    var actions: js.Array[ActionObject[TContext, TEvent, TEvent, BaseActionObject]] = js.native
     
     var activities: ActivityMap = js.native
     
@@ -143,7 +143,7 @@ object libStateMod {
     
     def toJSON(): (Omit[
         this.type, 
-        machine | configuration | transitions | tags | toStrings | typings.xstate.xstateStrings.toJSON | matches | hasTag | can
+        configuration | transitions | tags | machine | toStrings | typings.xstate.xstateStrings.toJSON | matches | hasTag | can
       ]) & Tags = js.native
     
     /**
@@ -195,7 +195,7 @@ object libStateMod {
     inline def inert[TC, TE /* <: EventObject */](stateValue: StateValue, context: TC): State[TC, TE, Any, Value[TC], TypegenDisabled] = (^.asInstanceOf[js.Dynamic].applyDynamic("inert")(stateValue.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[State[TC, TE, Any, Value[TC], TypegenDisabled]]
   }
   
-  inline def bindActionToState[TC, TE /* <: EventObject */](action: ActionObject[TC, TE], state: State[TC, TE, Any, Any, Any]): ActionObject[TC, TE] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindActionToState")(action.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ActionObject[TC, TE]]
+  inline def bindActionToState[TC, TE /* <: EventObject */](action: ActionObject[TC, TE, TE, BaseActionObject], state: State[TC, TE, Any, Any, Any]): ActionObject[TC, TE, TE, BaseActionObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("bindActionToState")(action.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ActionObject[TC, TE, TE, BaseActionObject]]
   
   inline def isState[TContext, TEvent /* <: EventObject */](state: Any): /* is xstate.xstate/lib/types.StateConfig<TContext, TEvent> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isState")(state.asInstanceOf[js.Any]).asInstanceOf[/* is xstate.xstate/lib/types.StateConfig<TContext, TEvent> */ Boolean]
   

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "bson" : "4.7.0"
+      "bson" : "5.3.0"
     }
   ],
   "test-dependencies" : [
     {
-      "bson" : "4.7.0"
+      "bson" : "5.3.0"
     }
   ],
   "compile-devDependencies" : [

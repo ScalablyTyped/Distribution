@@ -38,43 +38,23 @@ trait PrintJobConfiguration extends StObject {
   // The margin settings to use when printing.
   var margin: js.UndefOr[NullableOption[PrintMargin]] = js.undefined
   
-  /**
-    * The media size to use when printing. Supports standard size names for ISO and ANSI media sizes. Valid values listed in
-    * the printerCapabilities topic.
-    */
+  // The media size to use when printing. Supports standard size names for ISO and ANSI media sizes.
   var mediaSize: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // The default media (such as paper) type to print the document on.
   var mediaType: js.UndefOr[NullableOption[String]] = js.undefined
   
-  /**
-    * The direction to lay out pages when multiple pages are being printed per sheet. Valid values are described in the
-    * following table.
-    */
   var multipageLayout: js.UndefOr[NullableOption[PrintMultipageLayout]] = js.undefined
   
-  /**
-    * The orientation setting the printer should use when printing the job. Valid values are described in the following
-    * table.
-    */
   var orientation: js.UndefOr[NullableOption[PrintOrientation]] = js.undefined
   
-  // The output bin to place completed prints into. See the printer's capabilities for a list of supported output bins.
   var outputBin: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // The page ranges to print. Read-only.
   var pageRanges: js.UndefOr[NullableOption[js.Array[IntegerRange]]] = js.undefined
   
-  // The number of document pages to print on each sheet.
   var pagesPerSheet: js.UndefOr[NullableOption[Double]] = js.undefined
   
-  // The print quality to use when printing the job. Valid values are described in the table below. Read-only.
   var quality: js.UndefOr[NullableOption[PrintQuality]] = js.undefined
   
-  /**
-    * Specifies how the printer should scale the document data to fit the requested media. Valid values are described in the
-    * following table.
-    */
   var scaling: js.UndefOr[NullableOption[PrintScaling]] = js.undefined
 }
 object PrintJobConfiguration {

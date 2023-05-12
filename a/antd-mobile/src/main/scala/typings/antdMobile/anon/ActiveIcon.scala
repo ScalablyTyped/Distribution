@@ -13,6 +13,8 @@ trait ActiveIcon extends StObject {
   
   var disabled: js.UndefOr[Boolean] = js.undefined
   
+  var extra: js.UndefOr[js.Function1[/* active */ Boolean, ReactNode]] = js.undefined
+  
   var readOnly: js.UndefOr[Boolean] = js.undefined
   
   def uncheck(`val`: String): Unit
@@ -38,6 +40,10 @@ object ActiveIcon {
     inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
     inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    
+    inline def setExtra(value: /* active */ Boolean => ReactNode): Self = StObject.set(x, "extra", js.Any.fromFunction1(value))
+    
+    inline def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
     
     inline def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     

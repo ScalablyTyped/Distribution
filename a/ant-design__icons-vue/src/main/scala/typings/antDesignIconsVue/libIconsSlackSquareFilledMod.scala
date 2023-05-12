@@ -16,7 +16,7 @@ object libIconsSlackSquareFilledMod extends Shortcut {
   @js.native
   trait SlackSquareFilledIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_SlackSquareFilledIconType: String = js.native

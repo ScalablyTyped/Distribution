@@ -87,7 +87,7 @@ object mod extends Shortcut {
     
     /** Returns a function that records the number of times it gets called, and its arguments */
     def spy[A /* <: js.Array[Any] */](): Spy[A, Unit] = js.native
-    // tslint:disable-line:no-unnecessary-generics
+    // eslint-disable-line no-unnecessary-generics
     def spy[A /* <: js.Array[Any] */, R](fn: js.Function1[/* args */ A, R]): Spy[A, R] = js.native
     
     /** Amount of time (in milliseconds) to wait until bailing out of a test */

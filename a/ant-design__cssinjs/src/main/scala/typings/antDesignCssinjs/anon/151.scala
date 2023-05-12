@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.MathShift
+import typings.csstype.mod.Property.CaretShape
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `151` extends StObject {
   
   var value: js.UndefOr[
-    MathShift | (js.Array[
-      (Extract[js.UndefOr[MathShift | js.Array[NonNullable[js.UndefOr[MathShift]]]], String]) | NonNullable[js.UndefOr[MathShift]]
+    CaretShape | (js.Array[
+      (Extract[js.UndefOr[CaretShape | js.Array[NonNullable[js.UndefOr[CaretShape]]]], String]) | NonNullable[js.UndefOr[CaretShape]]
     ])
   ] = js.native
 }

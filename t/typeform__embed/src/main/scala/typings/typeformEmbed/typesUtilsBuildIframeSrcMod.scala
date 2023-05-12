@@ -17,6 +17,8 @@ object typesUtilsBuildIframeSrcMod {
   
   trait BuildIframeSrcOptions extends StObject {
     
+    var domain: js.UndefOr[String] = js.undefined
+    
     var embedId: String
     
     var formId: String
@@ -35,6 +37,10 @@ object typesUtilsBuildIframeSrcMod {
     
     @scala.inline
     implicit open class MutableBuilder[Self <: BuildIframeSrcOptions] (val x: Self) extends AnyVal {
+      
+      inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+      
+      inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
       
       inline def setEmbedId(value: String): Self = StObject.set(x, "embedId", value.asInstanceOf[js.Any])
       

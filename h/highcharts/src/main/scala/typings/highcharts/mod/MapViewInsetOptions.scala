@@ -30,14 +30,14 @@ trait MapViewInsetOptions extends StObject {
     * will be fixed to the map bounding box, which is constant and centered in
     * different chart sizes and ratios.
     */
-  var relativeTo: js.UndefOr[String] = js.undefined
+  var relativeTo: js.UndefOr[OptionsRelativeToValue] = js.undefined
   
   /**
     * (Highmaps) What units to use for the `field` and `borderPath` geometries.
     * If `percent` (default), they relate to the box given in `relativeTo`. If
     * `pixels`, they are absolute values.
     */
-  var units: js.UndefOr[String] = js.undefined
+  var units: js.UndefOr[OptionsUnitsValue] = js.undefined
 }
 object MapViewInsetOptions {
   
@@ -63,11 +63,11 @@ object MapViewInsetOptions {
     
     inline def setPaddingVarargs(value: (Double | String)*): Self = StObject.set(x, "padding", js.Array(value*))
     
-    inline def setRelativeTo(value: String): Self = StObject.set(x, "relativeTo", value.asInstanceOf[js.Any])
+    inline def setRelativeTo(value: OptionsRelativeToValue): Self = StObject.set(x, "relativeTo", value.asInstanceOf[js.Any])
     
     inline def setRelativeToUndefined: Self = StObject.set(x, "relativeTo", js.undefined)
     
-    inline def setUnits(value: String): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
+    inline def setUnits(value: OptionsUnitsValue): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
     
     inline def setUnitsUndefined: Self = StObject.set(x, "units", js.undefined)
   }

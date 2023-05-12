@@ -90,6 +90,11 @@ object mod {
     type MockedObject[T /* <: js.Object */] = typings.jestMock.mod.MockedObject[T]
     
     /**
+      * Constructs the type of a replaced property.
+      */
+    type Replaced[T] = typings.jestMock.mod.Replaced[T]
+    
+    /**
       * Constructs the type of a spied class or function.
       */
     type Spied[T /* <: ClassLike | FunctionLike */] = typings.jestMock.mod.Spied[T]

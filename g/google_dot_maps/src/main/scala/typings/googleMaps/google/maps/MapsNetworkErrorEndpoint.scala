@@ -6,10 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @js.native
 sealed trait MapsNetworkErrorEndpoint extends StObject
-/**
-  * Identifiers for API endpoints used by {@link google.maps.MapsNetworkError}
-  * instances.
-  */
 @JSGlobal("google.maps.MapsNetworkErrorEndpoint")
 @js.native
 object MapsNetworkErrorEndpoint extends StObject {

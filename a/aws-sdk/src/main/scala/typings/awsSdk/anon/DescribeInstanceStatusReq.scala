@@ -39,12 +39,12 @@ trait DescribeInstanceStatusReq extends StObject {
   var InstanceIds: js.UndefOr[InstanceIdStringList] = js.undefined
   
   /**
-    * The maximum number of results to return in a single call. To retrieve the remaining results, make another call with the returned NextToken value. This value can be between 5 and 1000. You cannot specify this parameter and the instance IDs parameter in the same call.
+    * The maximum number of items to return for this request. To get the next page of items, make another request with the token returned in the output. For more information, see Pagination. You cannot specify this parameter and the instance IDs parameter in the same request.
     */
   var MaxResults: js.UndefOr[Integer] = js.undefined
   
   /**
-    * The token to retrieve the next page of results.
+    * The token returned from a previous paginated request. Pagination continues from the end of the items returned by the previous request.
     */
   var NextToken: js.UndefOr[String] = js.undefined
 }

@@ -10,7 +10,7 @@ trait ColumnCustomizeTextArg extends StObject {
   
   var target: js.UndefOr[String] = js.undefined
   
-  var value: js.UndefOr[String | Double | js.Date] = js.undefined
+  var value: js.UndefOr[Any] = js.undefined
   
   var valueText: js.UndefOr[String] = js.undefined
 }
@@ -32,7 +32,7 @@ object ColumnCustomizeTextArg {
     
     inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     
-    inline def setValue(value: String | Double | js.Date): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     inline def setValueText(value: String): Self = StObject.set(x, "valueText", value.asInstanceOf[js.Any])
     

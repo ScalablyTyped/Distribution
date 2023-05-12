@@ -3,7 +3,7 @@ package typings.globby
 import typings.fastGlob.anon.PartialFileSystemAdapter
 import typings.fastGlob.outTypesMod.Pattern
 import typings.globby.mod.ExpandDirectoriesOption
-import typings.node.nodeColonurlMod.URL
+import typings.std.URL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -40,7 +40,7 @@ object anon {
     }
   }
   
-  /* Inlined globby.globby.FastGlobOptionsWithoutCwd & { readonly cwd :node.node:url.URL | string | undefined} */
+  /* Inlined globby.globby.FastGlobOptionsWithoutCwd & { readonly cwd :std.URL | string | undefined} */
   trait FastGlobOptionsWithoutCwd extends StObject {
     
     var absolute: js.UndefOr[Boolean] = js.undefined

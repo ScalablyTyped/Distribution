@@ -19,6 +19,10 @@ object formatjsIntlStrings {
   inline def `best fit`: `best fit` = ("best fit").asInstanceOf[`best fit`]
   
   @js.native
+  sealed trait calendar extends StObject
+  inline def calendar: calendar = "calendar".asInstanceOf[calendar]
+  
+  @js.native
   sealed trait code extends StObject
   inline def code: code = "code".asInstanceOf[code]
   
@@ -37,6 +41,14 @@ object formatjsIntlStrings {
   @js.native
   sealed trait date extends StObject
   inline def date: date = "date".asInstanceOf[date]
+  
+  @js.native
+  sealed trait dateTimeField extends StObject
+  inline def dateTimeField: dateTimeField = "dateTimeField".asInstanceOf[dateTimeField]
+  
+  @js.native
+  sealed trait dialect extends StObject
+  inline def dialect: dialect = "dialect".asInstanceOf[dialect]
   
   @js.native
   sealed trait disjunction extends StObject

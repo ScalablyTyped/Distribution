@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.BorderSpacing
+import typings.csstype.mod.Property.DominantBaseline
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,13 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `353` extends StObject {
   
   var value: js.UndefOr[
-    (BorderSpacing[Double | String]) | (js.Array[
+    DominantBaseline | (js.Array[
       (Extract[
-        js.UndefOr[
-          (BorderSpacing[Double | String]) | (js.Array[NonNullable[js.UndefOr[BorderSpacing[Double | String]]]])
-        ], 
+        js.UndefOr[DominantBaseline | js.Array[NonNullable[js.UndefOr[DominantBaseline]]]], 
         String
-      ]) | (NonNullable[js.UndefOr[BorderSpacing[Double | String]]])
+      ]) | NonNullable[js.UndefOr[DominantBaseline]]
     ])
   ] = js.native
 }

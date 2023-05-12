@@ -8,9 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NgModule extends StObject {
   
   /**
-    * The set of components that are bootstrapped when
-    * this module is bootstrapped. The components listed here
-    * are automatically added to `entryComponents`.
+    * The set of components that are bootstrapped when this module is bootstrapped.
     */
   var bootstrap: js.UndefOr[js.Array[Type[Any] | js.Array[Any]]] = js.undefined
   
@@ -41,26 +39,6 @@ trait NgModule extends StObject {
     * ```
     */
   var declarations: js.UndefOr[js.Array[Type[Any] | js.Array[Any]]] = js.undefined
-  
-  /**
-    * The set of components to compile when this NgModule is defined,
-    * so that they can be dynamically loaded into the view.
-    *
-    * For each component listed here, Angular creates a `ComponentFactory`
-    * and stores it in the `ComponentFactoryResolver`.
-    *
-    * Angular automatically adds components in the module's bootstrap
-    * and route definitions into the `entryComponents` list. Use this
-    * option to add components that are bootstrapped
-    * using one of the imperative techniques, such as `ViewContainerRef.createComponent()`.
-    *
-    * @see [Entry Components](guide/entry-components)
-    * @deprecated
-    * Since 9.0.0. With Ivy, this property is no longer necessary.
-    * (You may need to keep these if building a library that will be consumed by a View Engine
-    * application.)
-    */
-  var entryComponents: js.UndefOr[js.Array[Type[Any] | js.Array[Any]]] = js.undefined
   
   /**
     * The set of components, directives, and pipes declared in this
@@ -184,7 +162,7 @@ trait NgModule extends StObject {
     * }
     * ```
     */
-  var providers: js.UndefOr[js.Array[Provider]] = js.undefined
+  var providers: js.UndefOr[js.Array[Provider | EnvironmentProviders]] = js.undefined
   
   /**
     * The set of schemas that declare elements to be allowed in the NgModule.
@@ -219,12 +197,6 @@ object NgModule {
     
     inline def setDeclarationsVarargs(value: (Type[Any] | js.Array[Any])*): Self = StObject.set(x, "declarations", js.Array(value*))
     
-    inline def setEntryComponents(value: js.Array[Type[Any] | js.Array[Any]]): Self = StObject.set(x, "entryComponents", value.asInstanceOf[js.Any])
-    
-    inline def setEntryComponentsUndefined: Self = StObject.set(x, "entryComponents", js.undefined)
-    
-    inline def setEntryComponentsVarargs(value: (Type[Any] | js.Array[Any])*): Self = StObject.set(x, "entryComponents", js.Array(value*))
-    
     inline def setExports(value: js.Array[Type[Any] | js.Array[Any]]): Self = StObject.set(x, "exports", value.asInstanceOf[js.Any])
     
     inline def setExportsUndefined: Self = StObject.set(x, "exports", js.undefined)
@@ -245,11 +217,11 @@ object NgModule {
     
     inline def setJitUndefined: Self = StObject.set(x, "jit", js.undefined)
     
-    inline def setProviders(value: js.Array[Provider]): Self = StObject.set(x, "providers", value.asInstanceOf[js.Any])
+    inline def setProviders(value: js.Array[Provider | EnvironmentProviders]): Self = StObject.set(x, "providers", value.asInstanceOf[js.Any])
     
     inline def setProvidersUndefined: Self = StObject.set(x, "providers", js.undefined)
     
-    inline def setProvidersVarargs(value: Provider*): Self = StObject.set(x, "providers", js.Array(value*))
+    inline def setProvidersVarargs(value: (Provider | EnvironmentProviders)*): Self = StObject.set(x, "providers", js.Array(value*))
     
     inline def setSchemas(value: js.Array[SchemaMetadata | js.Array[Any]]): Self = StObject.set(x, "schemas", value.asInstanceOf[js.Any])
     

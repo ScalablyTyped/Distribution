@@ -11,7 +11,7 @@ trait CitationCitedArtifactPart
   var _value: js.UndefOr[Element] = js.undefined
   
   /**
-    * The citation for the full article or artifact.
+    * When referencing a baseCitation, one may inherit any data from the referenced Citation Resource and consider any data in the current Citation Resource as superceding to be specific to the citation of the specified part. For example, the part-specific Citation may have additional contributorship data that supercedes the contributorship data for the full citation when there is a need to uniquely report the contributorship for an image or supplement associated with the fuller citation record.
     */
   var baseCitation: js.UndefOr[Reference] = js.undefined
   

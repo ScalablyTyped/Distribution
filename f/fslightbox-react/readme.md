@@ -1,7 +1,7 @@
 
 # Scala.js typings for fslightbox-react
 
-Typings are for version 1.4
+Typings are for version 1.7
 
 ## Library description:
 React version of Fullscreen Lightbox. Modern and easy plugin for displaying images and videos in clean overlaying box. Display single source or create beautiful gallery with powerful lightbox.

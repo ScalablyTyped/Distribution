@@ -26,6 +26,17 @@ trait IParserConfig extends StObject {
   var errorMessageProvider: js.UndefOr[IParserErrorMessageProvider] = js.undefined
   
   /**
+    * @experimental
+    *
+    * A custom lookahead strategy.
+    * Can be used to override the default LL(*k*) lookahead behavior.
+    *
+    * Note that the default lookahead strategy is very well optimized and using a custom lookahead
+    * strategy might lead to massively reduced performance.
+    */
+  var lookaheadStrategy: js.UndefOr[ILookaheadStrategy] = js.undefined
+  
+  /**
     * Maximum number of tokens the parser will use to choose between alternatives.
     * By default this value is `4`.
     * In the future it may be reduced to `3` due to performance considerations.
@@ -91,6 +102,10 @@ object IParserConfig {
     inline def setErrorMessageProvider(value: IParserErrorMessageProvider): Self = StObject.set(x, "errorMessageProvider", value.asInstanceOf[js.Any])
     
     inline def setErrorMessageProviderUndefined: Self = StObject.set(x, "errorMessageProvider", js.undefined)
+    
+    inline def setLookaheadStrategy(value: ILookaheadStrategy): Self = StObject.set(x, "lookaheadStrategy", value.asInstanceOf[js.Any])
+    
+    inline def setLookaheadStrategyUndefined: Self = StObject.set(x, "lookaheadStrategy", js.undefined)
     
     inline def setMaxLookahead(value: Double): Self = StObject.set(x, "maxLookahead", value.asInstanceOf[js.Any])
     

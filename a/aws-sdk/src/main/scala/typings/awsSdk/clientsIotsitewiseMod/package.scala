@@ -301,6 +301,10 @@ type GatewayCapabilitySummaries = js.Array[GatewayCapabilitySummary]
 
 type GatewaySummaries = js.Array[GatewaySummary]
 
+type GetAssetPropertyValueAggregatesMaxResults = Double
+
+type GetAssetPropertyValueHistoryMaxResults = Double
+
 type ID = java.lang.String
 
 type IDs = js.Array[ID]

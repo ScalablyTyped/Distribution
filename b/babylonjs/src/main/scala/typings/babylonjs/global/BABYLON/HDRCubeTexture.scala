@@ -36,7 +36,8 @@ open class HDRCubeTexture protected ()
         Nullable[
           js.Function2[/* message */ js.UndefOr[String], /* exception */ js.UndefOr[Any], Unit]
         ]
-      ]
+      ],
+    supersample: js.UndefOr[Boolean]
   ) = this()
   
   /**

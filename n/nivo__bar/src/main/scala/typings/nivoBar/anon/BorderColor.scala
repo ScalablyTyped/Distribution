@@ -43,7 +43,7 @@ trait BorderColor[RawDatum /* <: BarDatum */] extends StObject {
   
   var indexScale: js.UndefOr[ScaleBandSpec] = js.undefined
   
-  var initialHiddenIds: js.UndefOr[js.Array[String]] = js.undefined
+  var initialHiddenIds: js.UndefOr[js.Array[String | Double]] = js.undefined
   
   var innerPadding: js.UndefOr[Double] = js.undefined
   
@@ -131,11 +131,11 @@ object BorderColor {
     
     inline def setIndexScaleUndefined: Self = StObject.set(x, "indexScale", js.undefined)
     
-    inline def setInitialHiddenIds(value: js.Array[String]): Self = StObject.set(x, "initialHiddenIds", value.asInstanceOf[js.Any])
+    inline def setInitialHiddenIds(value: js.Array[String | Double]): Self = StObject.set(x, "initialHiddenIds", value.asInstanceOf[js.Any])
     
     inline def setInitialHiddenIdsUndefined: Self = StObject.set(x, "initialHiddenIds", js.undefined)
     
-    inline def setInitialHiddenIdsVarargs(value: String*): Self = StObject.set(x, "initialHiddenIds", js.Array(value*))
+    inline def setInitialHiddenIdsVarargs(value: (String | Double)*): Self = StObject.set(x, "initialHiddenIds", js.Array(value*))
     
     inline def setInnerPadding(value: Double): Self = StObject.set(x, "innerPadding", value.asInstanceOf[js.Any])
     

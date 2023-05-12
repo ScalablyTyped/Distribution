@@ -6,7 +6,7 @@ import typings.awsSdkNodeConfigProvider.distTypesFromSharedConfigFilesMod.Shared
 import typings.awsSdkNodeConfigProvider.distTypesFromStaticMod.FromStaticConfig
 import typings.awsSdkTypes.distTypesProfileMod.Profile
 import typings.awsSdkTypes.distTypesUtilMod.Provider
-import typings.node.processMod.global.NodeJS.ProcessEnv
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -43,7 +43,7 @@ object distTypesConfigLoaderMod {
       * A getter function getting the config values from all the environment
       * variables.
       */
-    def environmentVariableSelector(env: ProcessEnv): js.UndefOr[T]
+    def environmentVariableSelector(env: Record[String, js.UndefOr[String]]): js.UndefOr[T]
     /**
       * A getter function getting the config values from all the environment
       * variables.
@@ -56,7 +56,7 @@ object distTypesConfigLoaderMod {
     inline def apply[T](
       configFileSelector: /* profile */ Profile => js.UndefOr[T],
       default: FromStaticConfig[T],
-      environmentVariableSelector: /* env */ ProcessEnv => js.UndefOr[T]
+      environmentVariableSelector: /* env */ Record[String, js.UndefOr[String]] => js.UndefOr[T]
     ): LoadedConfigSelectors[T] = {
       val __obj = js.Dynamic.literal(configFileSelector = js.Any.fromFunction1(configFileSelector), default = default.asInstanceOf[js.Any], environmentVariableSelector = js.Any.fromFunction1(environmentVariableSelector))
       __obj.asInstanceOf[LoadedConfigSelectors[T]]
@@ -71,7 +71,7 @@ object distTypesConfigLoaderMod {
       
       inline def setDefaultFunction0(value: () => js.Promise[T] | T): Self = StObject.set(x, "default", js.Any.fromFunction0(value))
       
-      inline def setEnvironmentVariableSelector(value: /* env */ ProcessEnv => js.UndefOr[T]): Self = StObject.set(x, "environmentVariableSelector", js.Any.fromFunction1(value))
+      inline def setEnvironmentVariableSelector(value: /* env */ Record[String, js.UndefOr[String]] => js.UndefOr[T]): Self = StObject.set(x, "environmentVariableSelector", js.Any.fromFunction1(value))
     }
   }
   

@@ -1,6 +1,5 @@
 package typings.expoConfigTypes
 
-import typings.expoConfigTypes.mod.RuntimeVersionPolicy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -28,9 +27,7 @@ object expoConfigTypesStrings {
   inline def any: any = "any".asInstanceOf[any]
   
   @js.native
-  sealed trait appVersion
-    extends StObject
-       with RuntimeVersionPolicy
+  sealed trait appVersion extends StObject
   inline def appVersion: appVersion = "appVersion".asInstanceOf[appVersion]
   
   @js.native
@@ -138,9 +135,7 @@ object expoConfigTypesStrings {
   inline def native: native = "native".asInstanceOf[native]
   
   @js.native
-  sealed trait nativeVersion
-    extends StObject
-       with RuntimeVersionPolicy
+  sealed trait nativeVersion extends StObject
   inline def nativeVersion: nativeVersion = "nativeVersion".asInstanceOf[nativeVersion]
   
   @js.native
@@ -180,9 +175,7 @@ object expoConfigTypesStrings {
   inline def rtl: rtl = "rtl".asInstanceOf[rtl]
   
   @js.native
-  sealed trait sdkVersion
-    extends StObject
-       with RuntimeVersionPolicy
+  sealed trait sdkVersion extends StObject
   inline def sdkVersion: sdkVersion = "sdkVersion".asInstanceOf[sdkVersion]
   
   @js.native

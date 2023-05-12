@@ -9,7 +9,7 @@ trait CustomizeTextFormat extends StObject {
   /**
     * Specifies a callback function that returns the text to be displayed in scale markers.
     */
-  var customizeText: js.UndefOr[js.Function1[/* markerValue */ `6`, String]] = js.undefined
+  var customizeText: js.UndefOr[js.Function1[/* markerValue */ `7`, String]] = js.undefined
   
   /**
     * Formats a value before it is displayed in a scale marker.
@@ -26,7 +26,7 @@ object CustomizeTextFormat {
   @scala.inline
   implicit open class MutableBuilder[Self <: CustomizeTextFormat] (val x: Self) extends AnyVal {
     
-    inline def setCustomizeText(value: /* markerValue */ `6` => String): Self = StObject.set(x, "customizeText", js.Any.fromFunction1(value))
+    inline def setCustomizeText(value: /* markerValue */ `7` => String): Self = StObject.set(x, "customizeText", js.Any.fromFunction1(value))
     
     inline def setCustomizeTextUndefined: Self = StObject.set(x, "customizeText", js.undefined)
     

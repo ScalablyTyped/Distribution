@@ -20,7 +20,7 @@ object DocumentLink {
   inline def create(range: typings.vscodeLanguageserverTypes.mod.Range, target: Unit, data: LSPAny): typings.vscodeLanguageserverTypes.mod.DocumentLink = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], target.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[typings.vscodeLanguageserverTypes.mod.DocumentLink]
   
   /**
-    * Checks whether the given literal conforms to the [DocumentLink](#DocumentLink) interface.
+    * Checks whether the given literal conforms to the {@link DocumentLink} interface.
     */
   inline def is(value: Any): /* is vscode-languageserver-types.vscode-languageserver-types.DocumentLink */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.DocumentLink */ Boolean]
 }

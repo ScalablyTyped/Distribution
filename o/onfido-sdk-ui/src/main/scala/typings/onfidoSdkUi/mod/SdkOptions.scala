@@ -29,6 +29,8 @@ trait SdkOptions
   
   var isModalOpen: js.UndefOr[Boolean] = js.undefined
   
+  var isWebView: js.UndefOr[Boolean] = js.undefined
+  
   var language: js.UndefOr[SupportedLanguages | LocaleConfig] = js.undefined
   
   var onComplete: js.UndefOr[js.Function1[/* data */ SdkResponse, Unit]] = js.undefined
@@ -102,6 +104,10 @@ object SdkOptions {
     inline def setIsModalOpen(value: Boolean): Self = StObject.set(x, "isModalOpen", value.asInstanceOf[js.Any])
     
     inline def setIsModalOpenUndefined: Self = StObject.set(x, "isModalOpen", js.undefined)
+    
+    inline def setIsWebView(value: Boolean): Self = StObject.set(x, "isWebView", value.asInstanceOf[js.Any])
+    
+    inline def setIsWebViewUndefined: Self = StObject.set(x, "isWebView", js.undefined)
     
     inline def setLanguage(value: SupportedLanguages | LocaleConfig): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     

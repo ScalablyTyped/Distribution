@@ -12,7 +12,7 @@ open class Component[P, S] protected ()
   def this(props: HTMLAttributesidclassName & P) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: HTMLAttributesidclassName & P, context: Any) = this()
 }

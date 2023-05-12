@@ -1,9 +1,11 @@
 package typings.awsSdk.clientsLambdaMod
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.awsSdk.anon.InvokeComplete
 import typings.awsSdk.awsSdkStrings.ALL
 import typings.awsSdk.awsSdkStrings.KAFKA_BOOTSTRAP_SERVERS
 import typings.awsSdk.awsSdkStrings.ReportBatchItemFailures
+import typings.awsSdk.libEventStreamEventStreamMod.EventStream
 import typings.node.bufferMod.global.Buffer
 import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
@@ -59,9 +61,13 @@ type CodeSigningConfigList = js.Array[CodeSigningConfig]
 */
 type CodeSigningPolicy = _CodeSigningPolicy | java.lang.String
 
+type CollectionName = java.lang.String
+
 type CompatibleArchitectures = js.Array[Architecture]
 
 type CompatibleRuntimes = js.Array[Runtime]
+
+type DatabaseName = java.lang.String
 
 type Date = js.Date
 
@@ -104,6 +110,13 @@ type FileSystemArn = java.lang.String
 type FileSystemConfigList = js.Array[FileSystemConfig]
 
 type FilterList = js.Array[Filter]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.UpdateLookup
+  - typings.awsSdk.awsSdkStrings.Default_
+  - java.lang.String
+*/
+type FullDocument = _FullDocument | java.lang.String
 
 type FunctionArn = java.lang.String
 
@@ -152,6 +165,15 @@ type Integer = Double
 */
 type InvocationType = _InvocationType | java.lang.String
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.BUFFERED
+  - typings.awsSdk.awsSdkStrings.RESPONSE_STREAM
+  - java.lang.String
+*/
+type InvokeMode = _InvokeMode | java.lang.String
+
+type InvokeWithResponseStreamResponseEvent = EventStream[InvokeComplete]
+
 type KMSKeyArn = java.lang.String
 
 /* Rewritten from type alias, can be one of: 
@@ -175,6 +197,17 @@ type LastUpdateStatusReason = java.lang.String
   - typings.awsSdk.awsSdkStrings.ImageDeleted
   - typings.awsSdk.awsSdkStrings.ImageAccessDenied
   - typings.awsSdk.awsSdkStrings.InvalidImage
+  - typings.awsSdk.awsSdkStrings.KMSKeyAccessDenied
+  - typings.awsSdk.awsSdkStrings.KMSKeyNotFound
+  - typings.awsSdk.awsSdkStrings.InvalidStateKMSKey
+  - typings.awsSdk.awsSdkStrings.DisabledKMSKey
+  - typings.awsSdk.awsSdkStrings.EFSIOError
+  - typings.awsSdk.awsSdkStrings.EFSMountConnectivityError
+  - typings.awsSdk.awsSdkStrings.EFSMountFailure
+  - typings.awsSdk.awsSdkStrings.EFSMountTimeout
+  - typings.awsSdk.awsSdkStrings.InvalidRuntime
+  - typings.awsSdk.awsSdkStrings.InvalidZipFileException
+  - typings.awsSdk.awsSdkStrings.FunctionError
   - java.lang.String
 */
 type LastUpdateStatusReasonCode = _LastUpdateStatusReasonCode | java.lang.String
@@ -228,6 +261,8 @@ type MaxProvisionedConcurrencyConfigListItems = Double
 
 type MaximumBatchingWindowInSeconds = Double
 
+type MaximumConcurrency = Double
+
 type MaximumEventAgeInSeconds = Double
 
 type MaximumRecordAgeInSeconds = Double
@@ -254,7 +289,7 @@ type Origin = java.lang.String
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.Zip_
-  - typings.awsSdk.awsSdkStrings.Image
+  - typings.awsSdk.awsSdkStrings.Image_
   - java.lang.String
 */
 type PackageType = _PackageType | java.lang.String
@@ -289,10 +324,17 @@ type ReservedConcurrentExecutions = Double
 
 type ResourceArn = java.lang.String
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.RequestResponse
+  - typings.awsSdk.awsSdkStrings.DryRun
+  - java.lang.String
+*/
+type ResponseStreamingInvocationType = _ResponseStreamingInvocationType | java.lang.String
+
 type RoleArn = java.lang.String
 
 /* Rewritten from type alias, can be one of: 
-  - typings.awsSdk.awsSdkStrings.nodejs
+  - typings.awsSdk.awsSdkStrings.nodejs_
   - typings.awsSdk.awsSdkStrings.nodejs4Dot3
   - typings.awsSdk.awsSdkStrings.nodejs6Dot10
   - typings.awsSdk.awsSdkStrings.nodejs8Dot10
@@ -319,9 +361,14 @@ type RoleArn = java.lang.String
   - typings.awsSdk.awsSdkStrings.ruby2Dot7
   - typings.awsSdk.awsSdkStrings.provided
   - typings.awsSdk.awsSdkStrings.providedDotal2
+  - typings.awsSdk.awsSdkStrings.nodejs18Dotx
+  - typings.awsSdk.awsSdkStrings.python3Dot10
+  - typings.awsSdk.awsSdkStrings.java17
   - java.lang.String
 */
 type Runtime = _Runtime | java.lang.String
+
+type RuntimeVersionArn = java.lang.String
 
 type S3Bucket = java.lang.String
 
@@ -336,6 +383,20 @@ type SecurityGroupIds = js.Array[SecurityGroupId]
 type SensitiveString = java.lang.String
 
 type SigningProfileVersionArns = js.Array[Arn]
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.PublishedVersions
+  - typings.awsSdk.awsSdkStrings.None_
+  - java.lang.String
+*/
+type SnapStartApplyOn = _SnapStartApplyOn | java.lang.String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.On_
+  - typings.awsSdk.awsSdkStrings.Off_
+  - java.lang.String
+*/
+type SnapStartOptimizationStatus = _SnapStartOptimizationStatus | java.lang.String
 
 type SourceAccessConfigurations = js.Array[SourceAccessConfiguration]
 
@@ -379,6 +440,17 @@ type StateReason = java.lang.String
   - typings.awsSdk.awsSdkStrings.ImageDeleted
   - typings.awsSdk.awsSdkStrings.ImageAccessDenied
   - typings.awsSdk.awsSdkStrings.InvalidImage
+  - typings.awsSdk.awsSdkStrings.KMSKeyAccessDenied
+  - typings.awsSdk.awsSdkStrings.KMSKeyNotFound
+  - typings.awsSdk.awsSdkStrings.InvalidStateKMSKey
+  - typings.awsSdk.awsSdkStrings.DisabledKMSKey
+  - typings.awsSdk.awsSdkStrings.EFSIOError
+  - typings.awsSdk.awsSdkStrings.EFSMountConnectivityError
+  - typings.awsSdk.awsSdkStrings.EFSMountFailure
+  - typings.awsSdk.awsSdkStrings.EFSMountTimeout
+  - typings.awsSdk.awsSdkStrings.InvalidRuntime
+  - typings.awsSdk.awsSdkStrings.InvalidZipFileException
+  - typings.awsSdk.awsSdkStrings.FunctionError
   - java.lang.String
 */
 type StateReasonCode = _StateReasonCode | java.lang.String
@@ -421,6 +493,14 @@ type TumblingWindowInSeconds = Double
 type URI = java.lang.String
 
 type UnreservedConcurrentExecutions = Double
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.Auto_
+  - typings.awsSdk.awsSdkStrings.Manual_
+  - typings.awsSdk.awsSdkStrings.FunctionUpdate
+  - java.lang.String
+*/
+type UpdateRuntimeOn = _UpdateRuntimeOn | java.lang.String
 
 type Version = java.lang.String
 

@@ -1,6 +1,7 @@
 package typings.three
 
 import typings.three.srcCoreBufferGeometryMod.BufferGeometry
+import typings.three.srcCoreBufferGeometryMod.NormalBufferAttributes
 import typings.three.srcMaterialsMaterialMod.Material
 import typings.three.srcThreeMod.AnimationAction
 import typings.three.srcThreeMod.AnimationMixer
@@ -14,8 +15,11 @@ object examplesJsmMiscMorphAnimMeshMod {
   @JSImport("three/examples/jsm/misc/MorphAnimMesh", "MorphAnimMesh")
   @js.native
   open class MorphAnimMesh protected ()
-    extends Mesh[BufferGeometry, Material | js.Array[Material]] {
-    def this(geometry: typings.three.srcThreeMod.BufferGeometry, material: typings.three.srcThreeMod.Material) = this()
+    extends Mesh[BufferGeometry[NormalBufferAttributes], Material | js.Array[Material]] {
+    def this(
+      geometry: typings.three.srcThreeMod.BufferGeometry[NormalBufferAttributes],
+      material: typings.three.srcThreeMod.Material
+    ) = this()
     
     var activeAction: AnimationAction | Null = js.native
     

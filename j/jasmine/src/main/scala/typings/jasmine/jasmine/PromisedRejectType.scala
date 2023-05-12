@@ -12,8 +12,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
   * You'll have to cast your way around this structure, unfortunately.
   * TS definition: {{{
-  Fn extends (args : ...any): std.PromiseLike<unknown> ? any : never
+  T extends std.PromiseLike<unknown> ? any : never
   }}}
   */
 @js.native
-trait PromisedRejectType[Fn /* <: js.Function */] extends StObject
+trait PromisedRejectType[T] extends StObject

@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.BorderBlockStart
+import typings.csstype.mod.Property.WebkitTextStrokeColor
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,13 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `508` extends StObject {
   
   var value: js.UndefOr[
-    (BorderBlockStart[Double | String]) | (js.Array[
+    WebkitTextStrokeColor | (js.Array[
       (Extract[
-        js.UndefOr[
-          (BorderBlockStart[Double | String]) | (js.Array[NonNullable[js.UndefOr[BorderBlockStart[Double | String]]]])
-        ], 
+        js.UndefOr[WebkitTextStrokeColor | js.Array[NonNullable[js.UndefOr[WebkitTextStrokeColor]]]], 
         String
-      ]) | (NonNullable[js.UndefOr[BorderBlockStart[Double | String]]])
+      ]) | NonNullable[js.UndefOr[WebkitTextStrokeColor]]
     ])
   ] = js.native
 }

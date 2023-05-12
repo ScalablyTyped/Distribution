@@ -1,17 +1,16 @@
 organization := "org.scalablytyped"
 name := "mali-onerror"
-version := "0.2.0-184aa6"
+version := "0.2.0-c5960b"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "grpc__grpc-js" % "1.7.3-5b4812",
-  "org.scalablytyped" %%% "grpc__proto-loader" % "0.7.3-9373ff",
-  "org.scalablytyped" %%% "long" % "5.2.1-93c497",
-  "org.scalablytyped" %%% "mali" % "0.47.1-01ddfd",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-874609",
-  "org.scalablytyped" %%% "protobufjs" % "7.1.2-ebeb9d",
-  "org.scalablytyped" %%% "std" % "4.9-ecb5eb")
+  "org.scalablytyped" %%% "grpc__grpc-js" % "1.8.14-53a993",
+  "org.scalablytyped" %%% "grpc__proto-loader" % "0.7.7-80ddb5",
+  "org.scalablytyped" %%% "mali" % "0.47.1-42e25f",
+  "org.scalablytyped" %%% "node" % "20.1-dt-20230511Z-0320fc",
+  "org.scalablytyped" %%% "protobufjs" % "7.2.3-99c136",
+  "org.scalablytyped" %%% "std" % "5.0-e63739")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

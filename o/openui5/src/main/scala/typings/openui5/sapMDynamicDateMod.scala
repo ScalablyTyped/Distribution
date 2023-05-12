@@ -2,6 +2,9 @@ package typings.openui5
 
 import typings.openui5.anon.Int
 import typings.openui5.anon.Maximum
+import typings.openui5.anon.Operator
+import typings.openui5.anon.OperatorValues
+import typings.openui5.anon.Values
 import typings.openui5.sap.ClassInfo
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
@@ -124,7 +127,7 @@ object sapMDynamicDateMod {
     def formatValue(/**
       * The value to be formatted
       */
-    oValue: js.Object): js.Object = js.native
+    oValue: Operator): Values = js.native
     
     /**
       * Parses the given object value to a similar object. The whole value is in the following format { operator:
@@ -137,6 +140,6 @@ object sapMDynamicDateMod {
     def parseValue(/**
       * The value to be parsed
       */
-    oValue: js.Object): js.Object = js.native
+    oValue: Values): OperatorValues = js.native
   }
 }

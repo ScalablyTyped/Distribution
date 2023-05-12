@@ -8,23 +8,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WorkspaceEditEntryMetadata extends StObject {
   
   /**
-    * A human-readable string which is rendered less prominent on the same line.
-    */
+  		 * A human-readable string which is rendered less prominent on the same line.
+  		 */
   var description: js.UndefOr[String] = js.undefined
   
   /**
-    * The icon path or {@link ThemeIcon} for the edit.
-    */
+  		 * The icon path or {@link ThemeIcon} for the edit.
+  		 */
   var iconPath: js.UndefOr[Uri | Dark | ThemeIcon] = js.undefined
   
   /**
-    * A human-readable string which is rendered prominent.
-    */
+  		 * A human-readable string which is rendered prominent.
+  		 */
   var label: String
   
   /**
-    * A flag which indicates that user confirmation is needed.
-    */
+  		 * A flag which indicates that user confirmation is needed.
+  		 */
   var needsConfirmation: Boolean
 }
 object WorkspaceEditEntryMetadata {

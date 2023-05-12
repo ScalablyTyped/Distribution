@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "anymatch" : "3.1.2"
+      "anymatch" : "3.1.3"
     }
   ],
   "test-dependencies" : [
     {
-      "anymatch" : "3.1.2"
+      "anymatch" : "3.1.3"
     }
   ],
   "compile-devDependencies" : [

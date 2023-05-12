@@ -13,6 +13,11 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
+  @JSImport("@next/env", "initialEnv")
+  @js.native
+  def initialEnv: js.UndefOr[Env] = js.native
+  inline def initialEnv_=(x: js.UndefOr[Env]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("initialEnv")(x.asInstanceOf[js.Any])
+  
   inline def loadEnvConfig(dir: String): CombinedEnv = ^.asInstanceOf[js.Dynamic].applyDynamic("loadEnvConfig")(dir.asInstanceOf[js.Any]).asInstanceOf[CombinedEnv]
   inline def loadEnvConfig(dir: String, dev: Boolean): CombinedEnv = (^.asInstanceOf[js.Dynamic].applyDynamic("loadEnvConfig")(dir.asInstanceOf[js.Any], dev.asInstanceOf[js.Any])).asInstanceOf[CombinedEnv]
   inline def loadEnvConfig(dir: String, dev: Boolean, log: Unit, forceReload: Boolean): CombinedEnv = (^.asInstanceOf[js.Dynamic].applyDynamic("loadEnvConfig")(dir.asInstanceOf[js.Any], dev.asInstanceOf[js.Any], log.asInstanceOf[js.Any], forceReload.asInstanceOf[js.Any])).asInstanceOf[CombinedEnv]

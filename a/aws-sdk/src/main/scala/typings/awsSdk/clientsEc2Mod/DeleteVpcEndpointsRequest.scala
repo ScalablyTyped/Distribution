@@ -12,7 +12,7 @@ trait DeleteVpcEndpointsRequest extends StObject {
   var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * One or more VPC endpoint IDs.
+    * The IDs of the VPC endpoints.
     */
   var VpcEndpointIds: VpcEndpointIdList
 }

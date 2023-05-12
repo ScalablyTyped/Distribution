@@ -21,6 +21,15 @@ trait SauceLabsCapabilities extends StObject {
   var allowTouchIdEnroll: js.UndefOr[Boolean] = js.undefined
   
   /**
+    * Specifies the Appium driver version you want to use. For most use cases,
+    * setting the appiumVersion is unnecessary because Sauce Labs defaults to
+    * the version that supports the broadest number of device combinations.
+    * Sauce Labs advises against setting this property unless you need to test
+    * a particular Appium feature or patch.
+    */
+  var appiumVersion: js.UndefOr[String] = js.undefined
+  
+  /**
     * By default, Sauce routes traffic from some WebDriver browsers (Edge, Internet Explorer and Safari)
     * through the Selenium HTTP proxy server so that HTTPS connections with self-signed certificates
     * work everywhere. The Selenium proxy server can cause problems for some users. If that's the case
@@ -326,6 +335,10 @@ object SauceLabsCapabilities {
     inline def setAllowTouchIdEnroll(value: Boolean): Self = StObject.set(x, "allowTouchIdEnroll", value.asInstanceOf[js.Any])
     
     inline def setAllowTouchIdEnrollUndefined: Self = StObject.set(x, "allowTouchIdEnroll", js.undefined)
+    
+    inline def setAppiumVersion(value: String): Self = StObject.set(x, "appiumVersion", value.asInstanceOf[js.Any])
+    
+    inline def setAppiumVersionUndefined: Self = StObject.set(x, "appiumVersion", js.undefined)
     
     inline def setAvoidProxy(value: Boolean): Self = StObject.set(x, "avoidProxy", value.asInstanceOf[js.Any])
     

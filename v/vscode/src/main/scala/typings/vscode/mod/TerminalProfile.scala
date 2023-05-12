@@ -9,13 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class TerminalProfile protected () extends StObject {
   def this(options: ExtensionTerminalOptions) = this()
   /**
-    * Creates a new terminal profile.
-    * @param options The options that the terminal will launch with.
-    */
+  		 * Creates a new terminal profile.
+  		 * @param options The options that the terminal will launch with.
+  		 */
   def this(options: TerminalOptions) = this()
   
   /**
-    * The options that the terminal will launch with.
-    */
+  		 * The options that the terminal will launch with.
+  		 */
   var options: TerminalOptions | ExtensionTerminalOptions = js.native
 }

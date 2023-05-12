@@ -6,6 +6,7 @@ import typings.openui5.anon.ElementException
 import typings.openui5.anon.Exception
 import typings.openui5.anon.Name
 import typings.openui5.anon.Url
+import typings.openui5.sapUiCoreConfigurationMod.Configuration
 import typings.openui5.sapUiCoreLibraryMod.ID
 import typings.std.Element
 import typings.std.Record
@@ -1003,6 +1004,8 @@ object sapUiCoreCoreMod extends Shortcut {
     ): js.Function = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:formatError formatError} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -1014,6 +1017,8 @@ object sapUiCoreCoreMod extends Shortcut {
     oParameters: Exception): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:parseError parseError} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -1025,6 +1030,8 @@ object sapUiCoreCoreMod extends Shortcut {
     oParameters: ElementException): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:validationError validationError} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -1036,6 +1043,8 @@ object sapUiCoreCoreMod extends Shortcut {
     oParameters: ElementException): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:validationSuccess validationSuccess} to attached listeners.
       *
       * Expects following event parameters:
@@ -1076,7 +1085,7 @@ object sapUiCoreCoreMod extends Shortcut {
       *
       * @returns the Configuration of the current Core.
       */
-    def getConfiguration(): typings.openui5.sapUiCoreConfigurationMod.default = js.native
+    def getConfiguration(): Configuration = js.native
     
     /**
       * @deprecated (since 1.1) - use `sap.ui.core.Core.byId` instead!
@@ -1168,6 +1177,18 @@ object sapUiCoreCoreMod extends Shortcut {
       */
     sLibraryName: String,
       /**
+      * Whether the resource bundle is loaded asynchronously
+      */
+    bAsync: Boolean
+    ): js.UndefOr[
+        typings.openui5.sapBaseI18nResourceBundleMod.default | js.Promise[js.UndefOr[typings.openui5.sapBaseI18nResourceBundleMod.default]]
+      ] = js.native
+    def getLibraryResourceBundle(
+      /**
+      * Name of the library to retrieve the bundle for
+      */
+    sLibraryName: String,
+      /**
       * Locale to retrieve the resource bundle for
       */
     sLocale: String
@@ -1199,6 +1220,18 @@ object sapUiCoreCoreMod extends Shortcut {
       * Locale to retrieve the resource bundle for
       */
     sLocale: Unit,
+      /**
+      * Whether the resource bundle is loaded asynchronously
+      */
+    bAsync: Boolean
+    ): js.UndefOr[
+        typings.openui5.sapBaseI18nResourceBundleMod.default | js.Promise[js.UndefOr[typings.openui5.sapBaseI18nResourceBundleMod.default]]
+      ] = js.native
+    def getLibraryResourceBundle(
+      /**
+      * Name of the library to retrieve the bundle for
+      */
+    sLibraryName: Unit,
       /**
       * Whether the resource bundle is loaded asynchronously
       */
@@ -1504,6 +1537,8 @@ object sapUiCoreCoreMod extends Shortcut {
     def isMobile(): Boolean = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Checks whether the given DOM element is the root of the static area.
       *
       * @returns Whether the given DOM element is the root of the static area

@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Creates a dispatcher which will act as a basic wrapper for making HTTP
   * requests to the API, and handle authentication.
-  * @class
   * @classdesc A HTTP wrapper for the Asana API
   * @param {Object} options for default behavior of the Dispatcher
   * @option {Authenticator} [authenticator] Object to use for authentication.

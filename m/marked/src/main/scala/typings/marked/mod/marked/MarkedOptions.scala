@@ -1,5 +1,6 @@
 package typings.marked.mod.marked
 
+import typings.marked.anon.Postprocess
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -27,6 +28,8 @@ trait MarkedOptions extends StObject {
       String | Unit
     ]
   ] = js.undefined
+  
+  var hooks: js.UndefOr[Postprocess] = js.undefined
   
   var langPrefix: js.UndefOr[String] = js.undefined
   
@@ -99,6 +102,10 @@ object MarkedOptions {
     ): Self = StObject.set(x, "highlight", js.Any.fromFunction3(value))
     
     inline def setHighlightUndefined: Self = StObject.set(x, "highlight", js.undefined)
+    
+    inline def setHooks(value: Postprocess): Self = StObject.set(x, "hooks", value.asInstanceOf[js.Any])
+    
+    inline def setHooksUndefined: Self = StObject.set(x, "hooks", js.undefined)
     
     inline def setLangPrefix(value: String): Self = StObject.set(x, "langPrefix", value.asInstanceOf[js.Any])
     

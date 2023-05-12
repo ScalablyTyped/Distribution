@@ -47,7 +47,7 @@ trait InstanceGroupDetail extends StObject {
   var InstanceRunningCount: Integer
   
   /**
-    * EC2 instance type.
+    * Amazon EC2 instance type.
     */
   var InstanceType: typings.awsSdk.clientsEmrMod.InstanceType
   
@@ -57,7 +57,7 @@ trait InstanceGroupDetail extends StObject {
   var LastStateChangeReason: js.UndefOr[XmlString] = js.undefined
   
   /**
-    * Market type of the EC2 instances used to create a cluster node.
+    * Market type of the Amazon EC2 instances used to create a cluster node.
     */
   var Market: MarketType
   

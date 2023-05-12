@@ -15,6 +15,11 @@ trait ListStreamsInput extends StObject {
     * The maximum number of streams to list. The default value is 100. If you specify a value greater than 100, at most 100 results are returned.
     */
   var Limit: js.UndefOr[ListStreamsInputLimit] = js.undefined
+  
+  /**
+    * 
+    */
+  var NextToken: js.UndefOr[typings.awsSdk.clientsKinesisMod.NextToken] = js.undefined
 }
 object ListStreamsInput {
   
@@ -33,5 +38,9 @@ object ListStreamsInput {
     inline def setLimit(value: ListStreamsInputLimit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
     inline def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
+    
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

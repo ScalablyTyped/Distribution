@@ -22,6 +22,12 @@ object expoConfigStrings {
   inline def `Access-Token-Authentication`: `Access-Token-Authentication` = "Access-Token-Authentication".asInstanceOf[`Access-Token-Authentication`]
   
   @js.native
+  sealed trait DEPRECATED
+    extends StObject
+       with ConfigErrorCode
+  inline def DEPRECATED: DEPRECATED = "DEPRECATED".asInstanceOf[DEPRECATED]
+  
+  @js.native
   sealed trait INVALID_CONFIG
     extends StObject
        with ConfigErrorCode
@@ -106,10 +112,6 @@ object expoConfigStrings {
   @js.native
   sealed trait dark extends StObject
   inline def dark: dark = "dark".asInstanceOf[dark]
-  
-  @js.native
-  sealed trait expo extends StObject
-  inline def expo: expo = "expo".asInstanceOf[expo]
   
   @js.native
   sealed trait facebook

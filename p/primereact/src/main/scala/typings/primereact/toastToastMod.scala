@@ -2,27 +2,38 @@ package typings.primereact
 
 import typings.primereact.primereactStrings.`additions removals`
 import typings.primereact.primereactStrings.`additions text`
+import typings.primereact.primereactStrings.`bottom-center`
+import typings.primereact.primereactStrings.`bottom-left`
+import typings.primereact.primereactStrings.`bottom-right`
 import typings.primereact.primereactStrings.`inline`
 import typings.primereact.primereactStrings.`removals additions`
 import typings.primereact.primereactStrings.`removals text`
 import typings.primereact.primereactStrings.`text additions`
 import typings.primereact.primereactStrings.`text removals`
+import typings.primereact.primereactStrings.`top-center`
+import typings.primereact.primereactStrings.`top-left`
+import typings.primereact.primereactStrings.`top-right`
 import typings.primereact.primereactStrings.additions
 import typings.primereact.primereactStrings.all
 import typings.primereact.primereactStrings.ascending
 import typings.primereact.primereactStrings.assertive
 import typings.primereact.primereactStrings.both
+import typings.primereact.primereactStrings.bottom
+import typings.primereact.primereactStrings.center
 import typings.primereact.primereactStrings.copy
 import typings.primereact.primereactStrings.date
 import typings.primereact.primereactStrings.decimal
 import typings.primereact.primereactStrings.descending
 import typings.primereact.primereactStrings.dialog
 import typings.primereact.primereactStrings.email
+import typings.primereact.primereactStrings.error
 import typings.primereact.primereactStrings.execute
 import typings.primereact.primereactStrings.grammar
 import typings.primereact.primereactStrings.grid
 import typings.primereact.primereactStrings.horizontal
+import typings.primereact.primereactStrings.info
 import typings.primereact.primereactStrings.inherit
+import typings.primereact.primereactStrings.left
 import typings.primereact.primereactStrings.link
 import typings.primereact.primereactStrings.list
 import typings.primereact.primereactStrings.listbox
@@ -40,17 +51,23 @@ import typings.primereact.primereactStrings.page
 import typings.primereact.primereactStrings.polite
 import typings.primereact.primereactStrings.popup
 import typings.primereact.primereactStrings.removals
+import typings.primereact.primereactStrings.right
 import typings.primereact.primereactStrings.search
 import typings.primereact.primereactStrings.self
 import typings.primereact.primereactStrings.spelling
 import typings.primereact.primereactStrings.step
+import typings.primereact.primereactStrings.success
 import typings.primereact.primereactStrings.tel
 import typings.primereact.primereactStrings.text
 import typings.primereact.primereactStrings.time
+import typings.primereact.primereactStrings.top
 import typings.primereact.primereactStrings.tree
 import typings.primereact.primereactStrings.url
 import typings.primereact.primereactStrings.vertical
+import typings.primereact.primereactStrings.warn
 import typings.primereact.primereactStrings.yes
+import typings.primereact.utilsUtilsMod.IconOptions
+import typings.primereact.utilsUtilsMod.IconType
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
@@ -104,45 +121,110 @@ object toastToastMod {
     def this(props: ToastProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: ToastProps, context: Any) = this()
     
+    /**
+      * Clears the all messages from Toast.
+      */
     def clear(): Unit = js.native
     
+    /**
+      * Used to get container element.
+      * @return {HTMLDivElement} Container element
+      */
     def getElement(): HTMLDivElement = js.native
     
-    def remove(message: ToastMessageType): Unit = js.native
+    def remove(message: js.Array[ToastMessage]): Unit = js.native
+    /**
+      * Used to remove messages.
+      * @param {ToastMessage | ToastMessage[]} message - Message to remove
+      */
+    def remove(message: ToastMessage): Unit = js.native
     
-    def replace(message: ToastMessageType): Unit = js.native
+    def replace(message: js.Array[ToastMessage]): Unit = js.native
+    /**
+      * Used to add new messages after removing all old messages.
+      * @param {ToastMessage | ToastMessage[]} message - Message to replace
+      */
+    def replace(message: ToastMessage): Unit = js.native
     
-    def show(message: ToastMessageType): Unit = js.native
+    def show(message: js.Array[ToastMessage]): Unit = js.native
+    /**
+      * Used to show the message.
+      * @param {ToastMessage | ToastMessage[]} message - Message to show
+      */
+    def show(message: ToastMessage): Unit = js.native
   }
-  
-  type ToastAppendToType = js.UndefOr[self | HTMLElement | Null]
   
   trait ToastMessage extends StObject {
     
+    /**
+      * Style class of the message.
+      */
     var className: js.UndefOr[String] = js.undefined
     
+    /**
+      * Whether the message can be closed manually using the close icon.
+      * @defaultValue true
+      */
     var closable: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Icon of the close button.
+      */
+    var closeIcon: js.UndefOr[IconType[ToastProps]] = js.undefined
+    
+    /**
+      * Custom content of the message. If enabled, summary and details properties are ignored.
+      */
     var content: js.UndefOr[ReactNode] = js.undefined
     
+    /**
+      * Style class of the message content.
+      */
     var contentClassName: js.UndefOr[String] = js.undefined
     
+    /**
+      * Inline style of the message content.
+      */
     var contentStyle: js.UndefOr[CSSProperties] = js.undefined
     
+    /**
+      * Detail content of the message.
+      */
     var detail: js.UndefOr[ReactNode] = js.undefined
     
+    /**
+      * Icon of the message.
+      */
+    var icon: js.UndefOr[IconType[ToastProps]] = js.undefined
+    
+    /**
+      * Delay in milliseconds to close the message automatically.
+      * @defaultValue 3000
+      */
     var life: js.UndefOr[Double] = js.undefined
     
-    var severity: js.UndefOr[ToastSeverityType] = js.undefined
+    /**
+      * Severity of the message.
+      */
+    var severity: js.UndefOr[success | info | warn | error] = js.undefined
     
+    /**
+      * When enabled, message is not removed automatically.
+      */
     var sticky: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Inline style of the message.
+      */
     var style: js.UndefOr[CSSProperties] = js.undefined
     
+    /**
+      * Summary content of the message.
+      */
     var summary: js.UndefOr[ReactNode] = js.undefined
   }
   object ToastMessage {
@@ -163,6 +245,12 @@ object toastToastMod {
       
       inline def setClosableUndefined: Self = StObject.set(x, "closable", js.undefined)
       
+      inline def setCloseIcon(value: IconType[ToastProps]): Self = StObject.set(x, "closeIcon", value.asInstanceOf[js.Any])
+      
+      inline def setCloseIconFunction1(value: /* options */ IconOptions[ToastProps] => ReactNode): Self = StObject.set(x, "closeIcon", js.Any.fromFunction1(value))
+      
+      inline def setCloseIconUndefined: Self = StObject.set(x, "closeIcon", js.undefined)
+      
       inline def setContent(value: ReactNode): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
       inline def setContentClassName(value: String): Self = StObject.set(x, "contentClassName", value.asInstanceOf[js.Any])
@@ -179,11 +267,17 @@ object toastToastMod {
       
       inline def setDetailUndefined: Self = StObject.set(x, "detail", js.undefined)
       
+      inline def setIcon(value: IconType[ToastProps]): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      
+      inline def setIconFunction1(value: /* options */ IconOptions[ToastProps] => ReactNode): Self = StObject.set(x, "icon", js.Any.fromFunction1(value))
+      
+      inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+      
       inline def setLife(value: Double): Self = StObject.set(x, "life", value.asInstanceOf[js.Any])
       
       inline def setLifeUndefined: Self = StObject.set(x, "life", js.undefined)
       
-      inline def setSeverity(value: ToastSeverityType): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
+      inline def setSeverity(value: success | info | warn | error): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
       
       inline def setSeverityUndefined: Self = StObject.set(x, "severity", js.undefined)
       
@@ -201,47 +295,6 @@ object toastToastMod {
     }
   }
   
-  type ToastMessageType = ToastMessage | js.Array[ToastMessage]
-  
-  /* Rewritten from type alias, can be one of: 
-    - typings.primereact.primereactStrings.center
-    - typings.primereact.primereactStrings.top
-    - typings.primereact.primereactStrings.bottom
-    - typings.primereact.primereactStrings.left
-    - typings.primereact.primereactStrings.right
-    - typings.primereact.primereactStrings.`top-center`
-    - typings.primereact.primereactStrings.`top-left`
-    - typings.primereact.primereactStrings.`top-right`
-    - typings.primereact.primereactStrings.`bottom-center`
-    - typings.primereact.primereactStrings.`bottom-left`
-    - typings.primereact.primereactStrings.`bottom-right`
-  */
-  trait ToastPositionType extends StObject
-  object ToastPositionType {
-    
-    inline def bottom: typings.primereact.primereactStrings.bottom = "bottom".asInstanceOf[typings.primereact.primereactStrings.bottom]
-    
-    inline def `bottom-center`: typings.primereact.primereactStrings.`bottom-center` = "bottom-center".asInstanceOf[typings.primereact.primereactStrings.`bottom-center`]
-    
-    inline def `bottom-left`: typings.primereact.primereactStrings.`bottom-left` = "bottom-left".asInstanceOf[typings.primereact.primereactStrings.`bottom-left`]
-    
-    inline def `bottom-right`: typings.primereact.primereactStrings.`bottom-right` = "bottom-right".asInstanceOf[typings.primereact.primereactStrings.`bottom-right`]
-    
-    inline def center: typings.primereact.primereactStrings.center = "center".asInstanceOf[typings.primereact.primereactStrings.center]
-    
-    inline def left: typings.primereact.primereactStrings.left = "left".asInstanceOf[typings.primereact.primereactStrings.left]
-    
-    inline def right: typings.primereact.primereactStrings.right = "right".asInstanceOf[typings.primereact.primereactStrings.right]
-    
-    inline def top: typings.primereact.primereactStrings.top = "top".asInstanceOf[typings.primereact.primereactStrings.top]
-    
-    inline def `top-center`: typings.primereact.primereactStrings.`top-center` = "top-center".asInstanceOf[typings.primereact.primereactStrings.`top-center`]
-    
-    inline def `top-left`: typings.primereact.primereactStrings.`top-left` = "top-left".asInstanceOf[typings.primereact.primereactStrings.`top-left`]
-    
-    inline def `top-right`: typings.primereact.primereactStrings.`top-right` = "top-right".asInstanceOf[typings.primereact.primereactStrings.`top-right`]
-  }
-  
   /* Inlined parent std.Omit<react.react.DetailedHTMLProps<react.react.HTMLAttributes<std.HTMLDivElement>, std.HTMLDivElement>, 'ref'> */
   trait ToastProps extends StObject {
     
@@ -249,7 +302,11 @@ object toastToastMod {
     
     var accessKey: js.UndefOr[String] = js.undefined
     
-    var appendTo: js.UndefOr[ToastAppendToType] = js.undefined
+    /**
+      * DOM element instance where the component should be mounted. Valid values are any DOM Element and 'self'. The self value is used to render a component where it is located.
+      * @defaultValue self
+      */
+    var appendTo: js.UndefOr[self | HTMLElement | Null] = js.undefined
     
     var `aria-activedescendant`: js.UndefOr[String] = js.undefined
     
@@ -353,15 +410,27 @@ object toastToastMod {
     
     var autoCorrect: js.UndefOr[String] = js.undefined
     
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
+    
     var autoSave: js.UndefOr[String] = js.undefined
     
+    /**
+      * Base zIndex value to add to initial layering of PrimeReact components which start from 1000.
+      * @defaultValue 0
+      */
     var baseZIndex: js.UndefOr[Double] = js.undefined
     
+    /**
+      * Used to get the child elements of the component.
+      * @readonly
+      */
     var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
     var color: js.UndefOr[String] = js.undefined
+    
+    var content: js.UndefOr[String] = js.undefined
     
     var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
@@ -425,6 +494,10 @@ object toastToastMod {
     
     var onChange: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
     
+    /**
+      * Callback to invoke when an active tab is collapsed by clicking on the header.
+      * @param {ToastMessage} message - Clicked message
+      */
     var onClick: js.UndefOr[js.Function1[/* message */ ToastMessage, Unit]] = js.undefined
     
     var onCompositionEnd: js.UndefOr[CompositionEventHandler[HTMLDivElement]] = js.undefined
@@ -469,6 +542,9 @@ object toastToastMod {
     
     var onFocus: js.UndefOr[FocusEventHandler[HTMLDivElement]] = js.undefined
     
+    /**
+      * Callback to invoke when message becomes hidden.
+      */
     var onHide: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     var onInput: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
@@ -531,6 +607,10 @@ object toastToastMod {
     
     var onRateChange: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
+    /**
+      * Callback to invoke when a message is removed.
+      * @param {ToastMessage} message - Removed message
+      */
     var onRemove: js.UndefOr[js.Function1[/* message */ ToastMessage, Unit]] = js.undefined
     
     var onReset: js.UndefOr[FormEventHandler[HTMLDivElement]] = js.undefined
@@ -545,6 +625,9 @@ object toastToastMod {
     
     var onSelect: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
     
+    /**
+      * Callback to invoke when message becomes visible.
+      */
     var onShow: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     var onStalled: js.UndefOr[ReactEventHandler[HTMLDivElement]] = js.undefined
@@ -573,7 +656,13 @@ object toastToastMod {
     
     var placeholder: js.UndefOr[String] = js.undefined
     
-    var position: js.UndefOr[ToastPositionType] = js.undefined
+    /**
+      * Position of the toast in viewport, valid values are "top-right", "top-left", "bottom-left" and "bottom-right".
+      * @defaultValue top-right
+      */
+    var position: js.UndefOr[
+        center | top | bottom | left | right | `top-center` | `top-left` | `top-right` | `bottom-center` | `bottom-left` | `bottom-right`
+      ] = js.undefined
     
     var prefix: js.UndefOr[String] = js.undefined
     
@@ -581,9 +670,13 @@ object toastToastMod {
     
     var radioGroup: js.UndefOr[String] = js.undefined
     
+    var rel: js.UndefOr[String] = js.undefined
+    
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
+    
+    var rev: js.UndefOr[String] = js.undefined
     
     var role: js.UndefOr[AriaRole] = js.undefined
     
@@ -603,6 +696,9 @@ object toastToastMod {
     
     var title: js.UndefOr[String] = js.undefined
     
+    /**
+      * The properties of CSSTransition can be customized, except for "nodeRef" and "in" properties.
+      */
     var transitionOptions: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSSTransitionProps */ Any
       ] = js.undefined
@@ -633,7 +729,7 @@ object toastToastMod {
       
       inline def setAccessKeyUndefined: Self = StObject.set(x, "accessKey", js.undefined)
       
-      inline def setAppendTo(value: ToastAppendToType): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
+      inline def setAppendTo(value: self | HTMLElement): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
       
       inline def setAppendToNull: Self = StObject.set(x, "appendTo", null)
       
@@ -841,6 +937,10 @@ object toastToastMod {
       
       inline def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
       
+      inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+      
+      inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+      
       inline def setAutoSave(value: String): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
       
       inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
@@ -861,9 +961,13 @@ object toastToastMod {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
       inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
       inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
@@ -1285,7 +1389,9 @@ object toastToastMod {
       
       inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
       
-      inline def setPosition(value: ToastPositionType): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(
+        value: center | top | bottom | left | right | `top-center` | `top-left` | `top-right` | `bottom-center` | `bottom-left` | `bottom-right`
+      ): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
       inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
       
@@ -1301,6 +1407,10 @@ object toastToastMod {
       
       inline def setRadioGroupUndefined: Self = StObject.set(x, "radioGroup", js.undefined)
       
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      
+      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+      
       inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
       inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
@@ -1308,6 +1418,10 @@ object toastToastMod {
       inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+      
+      inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+      
+      inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
       
       inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
@@ -1367,23 +1481,5 @@ object toastToastMod {
       
       inline def setVocabUndefined: Self = StObject.set(x, "vocab", js.undefined)
     }
-  }
-  
-  /* Rewritten from type alias, can be one of: 
-    - typings.primereact.primereactStrings.success
-    - typings.primereact.primereactStrings.info
-    - typings.primereact.primereactStrings.warn
-    - typings.primereact.primereactStrings.error
-  */
-  trait ToastSeverityType extends StObject
-  object ToastSeverityType {
-    
-    inline def error: typings.primereact.primereactStrings.error = "error".asInstanceOf[typings.primereact.primereactStrings.error]
-    
-    inline def info: typings.primereact.primereactStrings.info = "info".asInstanceOf[typings.primereact.primereactStrings.info]
-    
-    inline def success: typings.primereact.primereactStrings.success = "success".asInstanceOf[typings.primereact.primereactStrings.success]
-    
-    inline def warn: typings.primereact.primereactStrings.warn = "warn".asInstanceOf[typings.primereact.primereactStrings.warn]
   }
 }

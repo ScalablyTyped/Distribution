@@ -12,10 +12,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Class_X509Cert")
 @js.native
 /**
-  * 
+  *
   * @brief X509Cert 构造函数
-  * 
-  * 
+  *
+  *
   */
 open class ClassX509Cert ()
   extends StObject

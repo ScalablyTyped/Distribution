@@ -19,9 +19,9 @@ object sapUiTableAnalyticalTableMod {
     * objects as well as event handlers. See {@link sap.ui.base.ManagedObject#constructor} for a general description
     * of the syntax of the settings object.
     * See:
-    * 	http://scn.sap.com/docs/DOC-44986
-    * 	{@link topic:08197fa68e4f479cbe30f639cc1cd22c sap.ui.table}
-    * 	{@link fiori:/analytical-table-alv/ Analytical Table}
+    *   https://github.com/SAP/odata-vocabularies/blob/main/docs/v2-annotations.md
+    *   {@link topic:08197fa68e4f479cbe30f639cc1cd22c sap.ui.table}
+    *   {@link fiori:/analytical-table-alv/ Analytical Table}
     */
   open class default () extends AnalyticalTable {
     def this(/**
@@ -332,6 +332,8 @@ object sapUiTableAnalyticalTableMod {
     iRowIndex: int): Boolean = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * This function is used by some composite controls to force updating the AnalyticalInfo
       */
     def resumeUpdateAnalyticalInfo(
@@ -521,6 +523,8 @@ object sapUiTableAnalyticalTableMod {
     bSumOnTop: Boolean): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * This function is used by some composite controls to avoid updating the AnalyticalInfo when several column
       * are added to the table. In order to finally update the AnalyticalInfo and request data, resumeUpdateAnalyticalInfo
       * must be called.

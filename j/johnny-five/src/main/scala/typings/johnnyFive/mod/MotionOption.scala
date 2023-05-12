@@ -6,6 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait MotionOption extends StObject {
   
+  var board: js.UndefOr[Board] = js.undefined
+  
   var pin: Double | String
 }
 object MotionOption {
@@ -17,6 +19,10 @@ object MotionOption {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: MotionOption] (val x: Self) extends AnyVal {
+    
+    inline def setBoard(value: Board): Self = StObject.set(x, "board", value.asInstanceOf[js.Any])
+    
+    inline def setBoardUndefined: Self = StObject.set(x, "board", js.undefined)
     
     inline def setPin(value: Double | String): Self = StObject.set(x, "pin", value.asInstanceOf[js.Any])
   }

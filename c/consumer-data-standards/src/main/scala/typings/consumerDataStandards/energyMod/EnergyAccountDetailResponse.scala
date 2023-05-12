@@ -15,12 +15,12 @@ trait EnergyAccountDetailResponse
   
   var links: Self
   
-  var meta: StringDictionary[Any]
+  var meta: js.UndefOr[StringDictionary[Any]] = js.undefined
 }
 object EnergyAccountDetailResponse {
   
-  inline def apply(data: Plans, links: Self, meta: StringDictionary[Any]): EnergyAccountDetailResponse = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], links = links.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any])
+  inline def apply(data: Plans, links: Self): EnergyAccountDetailResponse = {
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], links = links.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnergyAccountDetailResponse]
   }
   
@@ -32,5 +32,7 @@ object EnergyAccountDetailResponse {
     inline def setLinks(value: typings.consumerDataStandards.anon.Self): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
     
     inline def setMeta(value: StringDictionary[Any]): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+    
+    inline def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
   }
 }

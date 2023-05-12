@@ -8,7 +8,6 @@ import typings.formatjsEcma402Abstract.anon.Medium
 import typings.formatjsEcma402Abstract.anon.Narrow
 import typings.formatjsEcma402Abstract.anon.RecordTABLE2defaultRangeP
 import typings.formatjsEcma402Abstract.anon.Short
-import typings.formatjsEcma402Abstract.formatjsEcma402AbstractInts.`0`
 import typings.formatjsEcma402Abstract.formatjsEcma402AbstractInts.`1`
 import typings.formatjsEcma402Abstract.formatjsEcma402AbstractInts.`2`
 import typings.formatjsEcma402Abstract.formatjsEcma402AbstractInts.`3`
@@ -213,7 +212,7 @@ object libTypesDateTimeMod {
     }
   }
   
-  /* Inlined std.Pick<std.Intl.DateTimeFormatOptions, 'weekday' | 'era' | 'year' | 'month' | 'day' | 'dayPeriod' | 'hour' | 'minute' | 'second' | 'timeZoneName'> & {  fractionalSecondDigits :0 | 1 | 2 | undefined,   hour12 :boolean | undefined,   pattern :string,   pattern12 :string,   skeleton :string,   rawPattern :string,   rangePatterns :std.Record<@formatjs/ecma402-abstract.@formatjs/ecma402-abstract/lib/types/date-time.TABLE_2 | 'default', @formatjs/ecma402-abstract.@formatjs/ecma402-abstract/lib/types/date-time.RangePatterns>,   rangePatterns12 :std.Record<@formatjs/ecma402-abstract.@formatjs/ecma402-abstract/lib/types/date-time.TABLE_2 | 'default', @formatjs/ecma402-abstract.@formatjs/ecma402-abstract/lib/types/date-time.RangePatterns>} */
+  /* Inlined std.Pick<std.Intl.DateTimeFormatOptions, 'weekday' | 'era' | 'year' | 'month' | 'day' | 'dayPeriod' | 'hour' | 'minute' | 'second' | 'timeZoneName'> & {  fractionalSecondDigits :1 | 2 | 3 | undefined,   hour12 :boolean | undefined,   pattern :string,   pattern12 :string,   skeleton :string,   rawPattern :string,   rangePatterns :std.Record<@formatjs/ecma402-abstract.@formatjs/ecma402-abstract/lib/types/date-time.TABLE_2 | 'default', @formatjs/ecma402-abstract.@formatjs/ecma402-abstract/lib/types/date-time.RangePatterns>,   rangePatterns12 :std.Record<@formatjs/ecma402-abstract.@formatjs/ecma402-abstract/lib/types/date-time.TABLE_2 | 'default', @formatjs/ecma402-abstract.@formatjs/ecma402-abstract/lib/types/date-time.RangePatterns>} */
   trait Formats extends StObject {
     
     var day: js.UndefOr[numeric | `2-digit`] = js.undefined
@@ -222,7 +221,7 @@ object libTypesDateTimeMod {
     
     var era: js.UndefOr[long | short | narrow] = js.undefined
     
-    var fractionalSecondDigits: js.UndefOr[`0` | `1` | `2`] = js.undefined
+    var fractionalSecondDigits: js.UndefOr[`1` | `2` | `3`] = js.undefined
     
     var hour: js.UndefOr[numeric | `2-digit`] = js.undefined
     
@@ -281,7 +280,7 @@ object libTypesDateTimeMod {
       
       inline def setEraUndefined: Self = StObject.set(x, "era", js.undefined)
       
-      inline def setFractionalSecondDigits(value: `0` | `1` | `2`): Self = StObject.set(x, "fractionalSecondDigits", value.asInstanceOf[js.Any])
+      inline def setFractionalSecondDigits(value: `1` | `2` | `3`): Self = StObject.set(x, "fractionalSecondDigits", value.asInstanceOf[js.Any])
       
       inline def setFractionalSecondDigitsUndefined: Self = StObject.set(x, "fractionalSecondDigits", js.undefined)
       

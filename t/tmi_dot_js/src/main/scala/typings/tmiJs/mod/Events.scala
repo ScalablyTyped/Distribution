@@ -28,7 +28,7 @@ trait Events extends StObject {
   
   def automod(channel: String, msgID: msg_rejected | msg_rejected_mandatory, message: String): Unit = js.native
   
-  def ban(channel: String, username: String, reason: String): Unit = js.native
+  def ban(channel: String, username: String, reason: String, userstate: BanUserstate): Unit = js.native
   
   def chat(channel: String, userstate: ChatUserstate, message: String, self: Boolean): Unit = js.native
   
@@ -129,7 +129,7 @@ trait Events extends StObject {
   
   def subscription(channel: String, username: String, methods: SubMethods, message: String, userstate: SubUserstate): Unit = js.native
   
-  def timeout(channel: String, username: String, reason: String, duration: Double): Unit = js.native
+  def timeout(channel: String, username: String, reason: String, duration: Double, userstate: TimeoutUserstate): Unit = js.native
   
   def unhost(channel: String, viewers: Double): Unit = js.native
   

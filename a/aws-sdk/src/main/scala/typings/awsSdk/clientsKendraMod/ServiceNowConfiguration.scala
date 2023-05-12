@@ -22,7 +22,7 @@ trait ServiceNowConfiguration extends StObject {
   var KnowledgeArticleConfiguration: js.UndefOr[ServiceNowKnowledgeArticleConfiguration] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the Secrets Manager secret that contains the user name and password required to connect to the ServiceNow instance. You can also provide OAuth authentication credentials of user name, password, client ID, and client secret. For more information, see Authentication for a ServiceNow data source.
+    * The Amazon Resource Name (ARN) of the Secrets Manager secret that contains the user name and password required to connect to the ServiceNow instance. You can also provide OAuth authentication credentials of user name, password, client ID, and client secret. For more information, see Using a ServiceNow data source.
     */
   var SecretArn: typings.awsSdk.clientsKendraMod.SecretArn
   

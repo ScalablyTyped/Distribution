@@ -74,6 +74,13 @@ object namespacesOmniboxMod {
     trait Static extends StObject {
       
       /**
+        * User has deleted a suggested result.
+        *
+        * @param text
+        */
+      var onDeleteSuggestion: Event[js.Function1[/* text */ String, Unit]]
+      
+      /**
         * User has ended the keyword input session without accepting the input.
         */
       var onInputCancelled: Event[js.Function0[Unit]]
@@ -119,6 +126,7 @@ object namespacesOmniboxMod {
     object Static {
       
       inline def apply(
+        onDeleteSuggestion: Event[js.Function1[/* text */ String, Unit]],
         onInputCancelled: Event[js.Function0[Unit]],
         onInputChanged: Event[
               js.Function2[
@@ -133,12 +141,14 @@ object namespacesOmniboxMod {
         onInputStarted: Event[js.Function0[Unit]],
         setDefaultSuggestion: DefaultSuggestResult => Unit
       ): Static = {
-        val __obj = js.Dynamic.literal(onInputCancelled = onInputCancelled.asInstanceOf[js.Any], onInputChanged = onInputChanged.asInstanceOf[js.Any], onInputEntered = onInputEntered.asInstanceOf[js.Any], onInputStarted = onInputStarted.asInstanceOf[js.Any], setDefaultSuggestion = js.Any.fromFunction1(setDefaultSuggestion))
+        val __obj = js.Dynamic.literal(onDeleteSuggestion = onDeleteSuggestion.asInstanceOf[js.Any], onInputCancelled = onInputCancelled.asInstanceOf[js.Any], onInputChanged = onInputChanged.asInstanceOf[js.Any], onInputEntered = onInputEntered.asInstanceOf[js.Any], onInputStarted = onInputStarted.asInstanceOf[js.Any], setDefaultSuggestion = js.Any.fromFunction1(setDefaultSuggestion))
         __obj.asInstanceOf[Static]
       }
       
       @scala.inline
       implicit open class MutableBuilder[Self <: Static] (val x: Self) extends AnyVal {
+        
+        inline def setOnDeleteSuggestion(value: Event[js.Function1[/* text */ String, Unit]]): Self = StObject.set(x, "onDeleteSuggestion", value.asInstanceOf[js.Any])
         
         inline def setOnInputCancelled(value: Event[js.Function0[Unit]]): Self = StObject.set(x, "onInputCancelled", value.asInstanceOf[js.Any])
         
@@ -175,6 +185,12 @@ object namespacesOmniboxMod {
       var content: String
       
       /**
+        * Whether the suggest result can be deleted by the user.
+        * Optional.
+        */
+      var deletable: js.UndefOr[Boolean] = js.undefined
+      
+      /**
         * The text that is displayed in the URL dropdown. Can contain XML-style markup for styling.
         * The supported tags are 'url' (for a literal URL), 'match' (for highlighting text that matched what the user's query),
         * and 'dim' (for dim helper text). The styles can be nested, eg. <dim><match>dimmed match</match></dim>.
@@ -193,6 +209,10 @@ object namespacesOmniboxMod {
       implicit open class MutableBuilder[Self <: SuggestResult] (val x: Self) extends AnyVal {
         
         inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+        
+        inline def setDeletable(value: Boolean): Self = StObject.set(x, "deletable", value.asInstanceOf[js.Any])
+        
+        inline def setDeletableUndefined: Self = StObject.set(x, "deletable", js.undefined)
         
         inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       }

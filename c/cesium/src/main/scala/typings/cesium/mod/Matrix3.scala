@@ -476,7 +476,7 @@ object Matrix3 {
     * @param result - The object onto which to store the result.
     * @returns The modified result parameter.
     */
-  inline def multiplyByScale(matrix: Matrix3, scale: Double, result: Matrix3): Matrix3 = (^.asInstanceOf[js.Dynamic].applyDynamic("multiplyByScale")(matrix.asInstanceOf[js.Any], scale.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Matrix3]
+  inline def multiplyByScale(matrix: Matrix3, scale: Cartesian3, result: Matrix3): Matrix3 = (^.asInstanceOf[js.Dynamic].applyDynamic("multiplyByScale")(matrix.asInstanceOf[js.Any], scale.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Matrix3]
   
   /**
     * Computes the product of a matrix times a uniform scale, as if the scale were a scale matrix.
@@ -549,9 +549,10 @@ object Matrix3 {
     * Sets the rotation assuming the matrix is an affine transformation.
     * @param matrix - The matrix.
     * @param rotation - The rotation matrix.
+    * @param result - The object onto which to store the result.
     * @returns The modified result parameter.
     */
-  inline def setRotation(matrix: Matrix3, rotation: Matrix3): Matrix3 = (^.asInstanceOf[js.Dynamic].applyDynamic("setRotation")(matrix.asInstanceOf[js.Any], rotation.asInstanceOf[js.Any])).asInstanceOf[Matrix3]
+  inline def setRotation(matrix: Matrix3, rotation: Matrix3, result: Matrix3): Matrix3 = (^.asInstanceOf[js.Dynamic].applyDynamic("setRotation")(matrix.asInstanceOf[js.Any], rotation.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Matrix3]
   
   /**
     * Computes a new matrix that replaces the specified row in the provided matrix with the provided Cartesian3 instance.

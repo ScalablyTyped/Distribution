@@ -6,6 +6,13 @@ import typings.officeJsPreview.Word.Interfaces.FieldData
 import typings.officeJsPreview.Word.Interfaces.FieldLoadOptions
 import typings.officeJsPreview.Word.Interfaces.FieldUpdateData
 import typings.officeJsPreview.anon.Expand
+import typings.officeJsPreview.officeJsPreviewStrings.Cold
+import typings.officeJsPreview.officeJsPreviewStrings.End
+import typings.officeJsPreview.officeJsPreviewStrings.Hot
+import typings.officeJsPreview.officeJsPreviewStrings.None
+import typings.officeJsPreview.officeJsPreviewStrings.Select
+import typings.officeJsPreview.officeJsPreviewStrings.Start
+import typings.officeJsPreview.officeJsPreviewStrings.Warm
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,16 +29,25 @@ trait Field
      with ClientObject {
   
   /**
-    * Gets the field's code instruction.
+    * Gets or sets the field's code instruction.
     *
     * @remarks
     * [Api set: WordApi 1.4]
     */
-  val code: String = js.native
+  var code: String = js.native
   
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_Field: RequestContext = js.native
+  
+  /**
+    * Gets or sets data in an "Addin" field. If the field isn't an "Addin" field, it is null and it will throw a general exception when code attempts to set it.
+    *
+    * @remarks
+    * [Api set: WordApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  var data: String = js.native
   
   /**
     * Deletes the field.
@@ -59,6 +75,15 @@ trait Field
   def getNextOrNullObject(): Field = js.native
   
   /**
+    * Gets the field's kind.
+    *
+    * @remarks
+    * [Api set: WordApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  val kind: FieldKind | None | Hot | Warm | Cold = js.native
+  
+  /**
     * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     *
     * @param options Provides options for which properties of the object to load.
@@ -68,6 +93,15 @@ trait Field
   def load(propertyNamesAndPaths: Expand): Field = js.native
   def load(propertyNames: String): Field = js.native
   def load(propertyNames: js.Array[String]): Field = js.native
+  
+  /**
+    * Gets or sets whether the field is locked. `true` if the field is locked, `false` otherwise.
+    *
+    * @remarks
+    * [Api set: WordApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  var locked: Boolean = js.native
   
   /**
     * Gets the parent body of the field.
@@ -133,6 +167,19 @@ trait Field
     */
   val result: Range = js.native
   
+  /**
+    * Selects the field.
+    *
+    * @remarks
+    * [Api set: WordApi BETA (PREVIEW ONLY)]
+    * @beta
+    *
+    * @param selectionMode Optional. The selection mode must be 'Select', 'Start', or 'End'. 'Select' is the default.
+    */
+  def select(): Unit = js.native
+  def select(selectionMode: Select | Start | End): Unit = js.native
+  def select(selectionMode: SelectionMode): Unit = js.native
+  
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: Field): Unit = js.native
   /**
@@ -142,6 +189,15 @@ trait Field
     */
   def set(properties: FieldUpdateData): Unit = js.native
   def set(properties: FieldUpdateData, options: UpdateOptions): Unit = js.native
+  
+  /**
+    * Gets or sets whether the field codes are displayed for the specified field. `true` if the field codes are displayed, `false` otherwise.
+    *
+    * @remarks
+    * [Api set: WordApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  var showCodes: Boolean = js.native
   
   /**
     * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
@@ -155,7 +211,25 @@ trait Field
   def track(): Field = js.native
   
   /**
+    * Gets the field's type.
+    *
+    * @remarks
+    * [Api set: WordApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  val `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 91, starting with typings.officeJsPreview.Word.FieldType, typings.officeJsPreview.officeJsPreviewStrings.Addin, typings.officeJsPreview.officeJsPreviewStrings.AddressBlock */ Any = js.native
+  
+  /**
     * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
     */
   def untrack(): Field = js.native
+  
+  /**
+    * Updates the field.
+    *
+    * @remarks
+    * [Api set: WordApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  def updateResult(): Unit = js.native
 }

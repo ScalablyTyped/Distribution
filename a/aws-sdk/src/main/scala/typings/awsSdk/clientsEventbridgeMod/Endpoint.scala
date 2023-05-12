@@ -22,7 +22,7 @@ trait Endpoint extends StObject {
   var Description: js.UndefOr[EndpointDescription] = js.undefined
   
   /**
-    * The URL subdomain of the endpoint. For example, if the URL for Endpoint is abcde.veo.endpoints.event.amazonaws.com, then the EndpointId is abcde.veo.
+    * The URL subdomain of the endpoint. For example, if the URL for Endpoint is https://abcde.veo.endpoints.event.amazonaws.com, then the EndpointId is abcde.veo.
     */
   var EndpointId: js.UndefOr[typings.awsSdk.clientsEventbridgeMod.EndpointId] = js.undefined
   
@@ -47,7 +47,7 @@ trait Endpoint extends StObject {
   var Name: js.UndefOr[EndpointName] = js.undefined
   
   /**
-    * Whether event replication was enabled or disabled for this endpoint.
+    * Whether event replication was enabled or disabled for this endpoint. The default state is ENABLED which means you must supply a RoleArn. If you don't have a RoleArn or you don't want event replication enabled, set the state to DISABLED.
     */
   var ReplicationConfig: js.UndefOr[typings.awsSdk.clientsEventbridgeMod.ReplicationConfig] = js.undefined
   

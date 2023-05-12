@@ -1,43 +1,12 @@
 package typings.chartJs.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.chartJs.chartJsBooleans.`false`
-import typings.chartJs.typesBasicMod.AnyObject
-import typings.chartJs.typesElementMod.Element
-import typings.chartJs.typesGeometricMod.ChartArea
-import typings.chartJs.typesGeometricMod.Point
-import typings.std.CanvasRenderingContext2D
+import typings.chartJs.distTypesBasicMod.AnyObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LineElement[T /* <: LineProps */, O /* <: LineOptions */]
-  extends StObject
-     with Element[T, O]
-     with VisualElement {
-  
-  def first(): Point | `false` = js.native
-  
-  def interpolate(point: Point, property: typings.chartJs.chartJsStrings.x | typings.chartJs.chartJsStrings.y): js.UndefOr[Point | js.Array[Point]] = js.native
-  
-  def last(): Point | `false` = js.native
-  
-  def path(ctx: CanvasRenderingContext2D): Boolean = js.native
-  
-  def pathSegment(ctx: CanvasRenderingContext2D, segment: Segment, params: AnyObject): js.UndefOr[Boolean] = js.native
-  
-  var points: js.Array[Point] = js.native
-  
-  val segments: js.Array[Segment] = js.native
-  
-  def updateControlPoints(chartArea: ChartArea): Unit = js.native
-  def updateControlPoints(
-    chartArea: ChartArea,
-    indexAxis: typings.chartJs.chartJsStrings.x | typings.chartJs.chartJsStrings.y
-  ): Unit = js.native
-}
-/* Inlined chart.js.chart.js.ChartComponent & {  prototype :chart.js.chart.js.LineElement<chart.js.chart.js.LineProps, chart.js.chart.js.LineOptions>, new (cfg : chart.js.chart.js/types/basic.AnyObject): chart.js.chart.js.LineElement<chart.js.chart.js.LineProps, chart.js.chart.js.LineOptions>} */
+/* Inlined chart.js.chart.js/dist/types/index.ChartComponent & {  prototype :chart.js.chart.js/dist/types/index.LineElement<chart.js.chart.js/dist/types/index.LineProps, chart.js.chart.js/dist/types/index.LineOptions>, new (cfg : chart.js.chart.js/dist/types/basic.AnyObject): chart.js.chart.js/dist/types/index.LineElement<chart.js.chart.js/dist/types/index.LineProps, chart.js.chart.js/dist/types/index.LineOptions>} */
 object LineElement {
   
   @JSImport("chart.js", "LineElement")

@@ -5,6 +5,7 @@ import typings.wdioProtocols.buildTypesMod.ElementReference
 import typings.wdioProtocols.buildTypesMod.ProtocolCommandResponse
 import typings.wdioProtocols.buildTypesMod.RectReturn
 import typings.wdioProtocols.buildTypesMod.SessionReturn
+import typings.wdioProtocols.buildTypesMod.ShadowElementReference
 import typings.wdioProtocols.buildTypesMod.StatusReturn
 import typings.wdioProtocols.buildTypesMod.Timeouts
 import typings.wdioProtocols.buildTypesMod.WindowHandle
@@ -26,7 +27,7 @@ object buildCommandsWebdriverMod {
       * @ref https://w3c.github.io/webdriver/#dfn-accept-alert
       *
       */
-    def acceptAlert(): Unit = js.native
+    def acceptAlert(): js.Promise[Unit] = js.native
     
     /**
       * Webdriver Protocol Command
@@ -35,7 +36,7 @@ object buildCommandsWebdriverMod {
       * @ref https://w3c.github.io/webdriver/#dfn-adding-a-cookie
       *
       */
-    def addCookie(cookie: js.Object): Unit = js.native
+    def addCookie(cookie: js.Object): js.Promise[Unit] = js.native
     
     /**
       * Webdriver Protocol Command
@@ -52,7 +53,7 @@ object buildCommandsWebdriverMod {
       userHandle: String,
       signCount: Double,
       largeBlob: String
-    ): Unit = js.native
+    ): js.Promise[Unit] = js.native
     
     /**
       * Webdriver Protocol Command
@@ -70,7 +71,7 @@ object buildCommandsWebdriverMod {
       isUserVerified: js.UndefOr[Boolean],
       extensions: js.UndefOr[js.Array[String]],
       uvm: js.UndefOr[js.Array[js.Object]]
-    ): Unit = js.native
+    ): js.Promise[Unit] = js.native
     
     /**
       * Webdriver Protocol Command
@@ -79,7 +80,7 @@ object buildCommandsWebdriverMod {
       * @ref https://w3c.github.io/webdriver/#dfn-back
       *
       */
-    def back(): Unit = js.native
+    def back(): js.Promise[Unit] = js.native
     
     /**
       * Webdriver Protocol Command
@@ -88,7 +89,7 @@ object buildCommandsWebdriverMod {
       * @ref https://w3c.github.io/webdriver/#dfn-close-window
       *
       */
-    def closeWindow(): Unit = js.native
+    def closeWindow(): js.Promise[Unit] = js.native
     
     /**
       * Webdriver Protocol Command
@@ -97,7 +98,7 @@ object buildCommandsWebdriverMod {
       * @ref https://w3c.github.io/sensors/#create-mock-sensor-command
       *
       */
-    def createMockSensor(mockSensorType: String, maxSamplingFrequency: Double, minSamplingFrequency: Double): Unit = js.native
+    def createMockSensor(mockSensorType: String, maxSamplingFrequency: Double, minSamplingFrequency: Double): js.Promise[Unit] = js.native
     
     /**
       * Webdriver Protocol Command
@@ -106,7 +107,7 @@ object buildCommandsWebdriverMod {
       * @ref https://w3c.github.io/webdriver/#new-window
       *
       */
-    def createWindow(`type`: tab | window): WindowHandle = js.native
+    def createWindow(`type`: tab | window): js.Promise[WindowHandle] = js.native
     
     /**
       * Webdriver Protocol Command
@@ -115,7 +116,7 @@ object buildCommandsWebdriverMod {
       * @ref https://w3c.github.io/webdriver/#dfn-delete-all-cookies
       *
       */
-    def deleteAllCookies(): Unit = js.native
+    def deleteAllCookies(): js.Promise[Unit] = js.native
     
     /**
       * Webdriver Protocol Command
@@ -124,7 +125,7 @@ object buildCommandsWebdriverMod {
       * @ref https://w3c.github.io/webdriver/#dfn-delete-cookie
       *
       */
-    def deleteCookie(name: String): Unit = js.native
+    def deleteCookie(name: String): js.Promise[Unit] = js.native
     
     /**
       * Webdriver Protocol Command
@@ -133,7 +134,7 @@ object buildCommandsWebdriverMod {
       * @ref https://w3c.github.io/sensors/#delete-mock-sensor-command
       *
       */
-    def deleteMockSensor(`type`: String): Unit = js.native
+    def deleteMockSensor(`type`: String): js.Promise[Unit] = js.native
     
     /**
       * Webdriver Protocol Command
@@ -142,7 +143,7 @@ object buildCommandsWebdriverMod {
       * @ref https://w3c.github.io/webdriver/#dfn-delete-session
       *
       */
-    def deleteSession(): Unit = js.native
+    def deleteSession(): js.Promise[Unit] = js.native
     
     /**
       * Webdriver Protocol Command
@@ -151,7 +152,7 @@ object buildCommandsWebdriverMod {
       * @ref https://w3c.github.io/webdriver/#dfn-dismiss-alert
       *
       */
-    def dismissAlert(): Unit = js.native
+    def dismissAlert(): js.Promise[Unit] = js.native
     
     /**
       * Webdriver Protocol Command
@@ -160,7 +161,7 @@ object buildCommandsWebdriverMod {
       * @ref https://w3c.github.io/webdriver/#dfn-element-clear
       *
       */
-    def elementClear(elementId: String): Unit = js.native
+    def elementClear(elementId: String): js.Promise[Unit] = js.native
     
     /**
       * Webdriver Protocol Command
@@ -169,7 +170,7 @@ object buildCommandsWebdriverMod {
       * @ref https://w3c.github.io/webdriver/#dfn-element-click
       *
       */
-    def elementClick(elementId: String): Unit = js.native
+    def elementClick(elementId: String): js.Promise[Unit] = js.native
     
     /**
       * Webdriver Protocol Command
@@ -178,7 +179,7 @@ object buildCommandsWebdriverMod {
       * @ref https://w3c.github.io/webdriver/#dfn-element-send-keys
       *
       */
-    def elementSendKeys(elementId: String, text: String): Unit = js.native
+    def elementSendKeys(elementId: String, text: String): js.Promise[Unit] = js.native
     
     /**
       * Webdriver Protocol Command
@@ -187,7 +188,7 @@ object buildCommandsWebdriverMod {
       * @ref https://w3c.github.io/webdriver/#dfn-execute-async-script
       *
       */
-    def executeAsyncScript(script: String, args: js.Array[js.UndefOr[String | js.Object | Double | Boolean]]): Any = js.native
+    def executeAsyncScript(script: String, args: js.Array[js.UndefOr[String | js.Object | Double | Boolean | Null]]): js.Promise[Any] = js.native
     
     /**
       * Webdriver Protocol Command
@@ -196,7 +197,7 @@ object buildCommandsWebdriverMod {
       * @ref https://w3c.github.io/webdriver/#dfn-execute-script
       *
       */
-    def executeScript(script: String, args: js.Array[js.UndefOr[String | js.Object | Double | Boolean]]): Any = js.native
+    def executeScript(script: String, args: js.Array[js.UndefOr[String | js.Object | Double | Boolean | Null]]): js.Promise[Any] = js.native
     
     /**
       * Webdriver Protocol Command
@@ -204,15 +205,8 @@ object buildCommandsWebdriverMod {
       * The Find Element command is used to find an element in the current browsing context that can be used for future commands. This command returns JSON representation of the element that can be passed to $ command to transform the reference to an extended WebdriverIO element.
       * @ref https://w3c.github.io/webdriver/#dfn-find-element
       *
-      * @example
-      * ```js
-      * // get element
-      * const elementRef = await browser.findElement('xpath', '//div')
-      * const element = await $(elementRef)
-      * await element.click()
-      * ```
       */
-    def findElement(`using`: String, value: String): ElementReference = js.native
+    def findElement(`using`: String, value: String): js.Promise[ElementReference] = js.native
     
     /**
       * Webdriver Protocol Command
@@ -221,7 +215,7 @@ object buildCommandsWebdriverMod {
       * @ref https://w3c.github.io/webdriver/#dfn-find-element-from-element
       *
       */
-    def findElementFromElement(elementId: String, `using`: String, value: String): ElementReference = js.native
+    def findElementFromElement(elementId: String, `using`: String, value: String): js.Promise[ElementReference] = js.native
     
     /**
       * Webdriver Protocol Command
@@ -229,22 +223,8 @@ object buildCommandsWebdriverMod {
       * The Find Element From Shadow Root command is used to find an element within the shadow root of an element that can be used for future commands. This command returns JSON representation of the element that can be passed to $ command to transform the reference to an extended WebdriverIO element.
       * @ref https://w3c.github.io/webdriver/#find-element-from-shadow-root
       *
-      * @example
-      * ```js
-      * // get shadow root
-      * const element = await browser.findElement('xpath', '//div')
-      * const shadowRoot = await browser.getElementShadowRoot(
-      *     element['element-6066-11e4-a52e-4f735466cecf']
-      * )
-      * // fetch element within that shadow root
-      * const elementRef = await browser.findElementFromShadowRoot(
-      *     shadowRoot['shadow-6066-11e4-a52e-4f735466cecf'],
-      *     'xpath',
-      *     '//div'
-      * )
-      * ```
       */
-    def findElementFromShadowRoot(shadowId: String, `using`: String, value: String): ProtocolCommandResponse = js.native
+    def findElementFromShadowRoot(shadowId: String, `using`: String, value: String): js.Promise[ElementReference] = js.native
     
     /**
       * Webdriver Protocol Command
@@ -253,7 +233,7 @@ object buildCommandsWebdriverMod {
       * @ref https://w3c.github.io/webdriver/#dfn-find-elements
       *
       */
-    def findElements(`using`: String, value: String): js.Array[ElementReference] = js.native
+    def findElements(`using`: String, value: String): js.Promise[js.Array[ElementReference]] = js.native
     
     /**
       * Webdriver Protocol Command
@@ -262,7 +242,7 @@ object buildCommandsWebdriverMod {
       * @ref https://w3c.github.io/webdriver/#dfn-find-elements-from-element
       *
       */
-    def findElementsFromElement(elementId: String, `using`: String, value: String): js.Array[ElementReference] = js.native
+    def findElementsFromElement(elementId: String, `using`: String, value: String): js.Promise[js.Array[ElementReference]] = js.native
     
     /**
       * Webdriver Protocol Command
@@ -270,22 +250,8 @@ object buildCommandsWebdriverMod {
       * The Find Elements command is used to find elements within the shadow root of an element that can be used for future commands. This command returns array of JSON representation of the elements that can be passed to $ command to transform the reference to an extended WebdriverIO element (See findElement).
       * @ref https://w3c.github.io/webdriver/#find-elements-from-shadow-root
       *
-      * @example
-      * ```js
-      * // get shadow root
-      * const element = await browser.findElement('xpath', '//div')
-      * const shadowRoot = await browser.getElementShadowRoot(
-      *     element['element-6066-11e4-a52e-4f735466cecf']
-      * )
-      * // fetch elements within that shadow root
-      * const elementRef = await browser.findElementsFromShadowRoot(
-      *     shadowRoot['shadow-6066-11e4-a52e-4f735466cecf'],
-      *     'xpath',
-      *     '//div'
-      * )
-      * ```
       */
-    def findElementsFromShadowRoot(shadowId: String, `using`: String, value: String): js.Array[js.Object] = js.native
+    def findElementsFromShadowRoot(shadowId: String, `using`: String, value: String): js.Promise[js.Array[ElementReference]] = js.native
     
     /**
       * Webdriver Protocol Command
@@ -294,7 +260,7 @@ object buildCommandsWebdriverMod {
       * @ref https://w3c.github.io/webdriver/#dfn-forward
       *
       */
-    def forward(): Unit = js.native
+    def forward(): js.Promise[Unit] = js.native
     
     /**
       * Webdriver Protocol Command
@@ -303,7 +269,7 @@ object buildCommandsWebdriverMod {
       * @ref https://w3c.github.io/webdriver/#dfn-fullscreen-window
       *
       */
-    def fullscreenWindow(): RectReturn = js.native
+    def fullscreenWindow(): js.Promise[RectReturn] = js.native
     
     /**
       * Webdriver Protocol Command
@@ -312,7 +278,7 @@ object buildCommandsWebdriverMod {
       * @ref https://w3c.github.io/reporting/#automation
       *
       */
-    def generateTestReport(message: String, group: String): Unit = js.native
+    def generateTestReport(message: String, group: String): js.Promise[Unit] = js.native
     
     /**
       * Webdriver Protocol Command
@@ -321,7 +287,7 @@ object buildCommandsWebdriverMod {
       * @ref https://w3c.github.io/webdriver/#dfn-get-active-element
       *
       */
-    def getActiveElement(): String = js.native
+    def getActiveElement(): js.Promise[String] = js.native
     
     /**
       * Webdriver Protocol Command
@@ -330,7 +296,7 @@ object buildCommandsWebdriverMod {
       * @ref https://w3c.github.io/webdriver/#dfn-get-alert-text
       *
       */
-    def getAlertText(): String = js.native
+    def getAlertText(): js.Promise[String] = js.native
     
     /**
       * Webdriver Protocol Command
@@ -339,7 +305,7 @@ object buildCommandsWebdriverMod {
       * @ref https://w3c.github.io/webdriver/#dfn-get-all-cookies
       *
       */
-    def getAllCookies(): js.Array[Cookie] = js.native
+    def getAllCookies(): js.Promise[js.Array[Cookie]] = js.native
     
     /**
       * Webdriver Protocol Command
@@ -348,7 +314,7 @@ object buildCommandsWebdriverMod {
       * @ref https://www.w3.org/TR/webauthn-2/#sctn-automation-get-credentials
       *
       */
-    def getCredentials(authenticatorId: String): Unit = js.native
+    def getCredentials(authenticatorId: String): js.Promise[Unit] = js.native
     
     /**
       * Webdriver Protocol Command
@@ -357,7 +323,7 @@ object buildCommandsWebdriverMod {
       * @ref https://w3c.github.io/webdriver/#dfn-get-element-attribute
       *
       */
-    def getElementAttribute(elementId: String, name: String): String = js.native
+    def getElementAttribute(elementId: String, name: String): js.Promise[String] = js.native
     
     /**
       * Webdriver Protocol Command
@@ -366,7 +332,7 @@ object buildCommandsWebdriverMod {
       * @ref https://w3c.github.io/webdriver/#dfn-get-element-css-value
       *
       */
-    def getElementCSSValue(elementId: String, propertyName: String): String = js.native
+    def getElementCSSValue(elementId: String, propertyName: String): js.Promise[String] = js.native
     
     /**
       * Webdriver Protocol Command
@@ -375,7 +341,7 @@ object buildCommandsWebdriverMod {
       * @ref https://w3c.github.io/webdriver/#get-computed-label
       *
       */
-    def getElementComputedLabel(elementId: String): String = js.native
+    def getElementComputedLabel(elementId: String): js.Promise[String] = js.native
     
     /**
       * Webdriver Protocol Command
@@ -384,7 +350,7 @@ object buildCommandsWebdriverMod {
       * @ref https://w3c.github.io/webdriver/#get-computed-role
       *
       */
-    def getElementComputedRole(elementId: String): String = js.native
+    def getElementComputedRole(elementId: String): js.Promise[String] = js.native
     
     /**
       * Webdriver Protocol Command
@@ -393,7 +359,7 @@ object buildCommandsWebdriverMod {
       * @ref https://w3c.github.io/webdriver/#dfn-get-element-property
       *
       */
-    def getElementProperty(elementId: String, name: String): String = js.native
+    def getElementProperty(elementId: String, name: String): js.Promise[String] = js.native
     
     /**
       * Webdriver Protocol Command
@@ -402,7 +368,7 @@ object buildCommandsWebdriverMod {
       * @ref https://w3c.github.io/webdriver/#dfn-get-element-rect
       *
       */
-    def getElementRect(elementId: String): RectReturn = js.native
+    def getElementRect(elementId: String): js.Promise[RectReturn] = js.native
     
     /**
       * Webdriver Protocol Command
@@ -411,7 +377,7 @@ object buildCommandsWebdriverMod {
       * @ref https://w3c.github.io/webdriver/#dfn-get-active-element
       *
       */
-    def getElementShadowRoot(elementId: String): String = js.native
+    def getElementShadowRoot(elementId: String): js.Promise[ShadowElementReference] = js.native
     
     /**
       * Webdriver Protocol Command
@@ -420,7 +386,7 @@ object buildCommandsWebdriverMod {
       * @ref https://w3c.github.io/webdriver/#dfn-get-element-tag-name
       *
       */
-    def getElementTagName(elementId: String): String = js.native
+    def getElementTagName(elementId: String): js.Promise[String] = js.native
     
     /**
       * Webdriver Protocol Command
@@ -429,7 +395,7 @@ object buildCommandsWebdriverMod {
       * @ref https://w3c.github.io/webdriver/#dfn-get-element-text
       *
       */
-    def getElementText(elementId: String): String = js.native
+    def getElementText(elementId: String): js.Promise[String] = js.native
     
     /**
       * Webdriver Protocol Command
@@ -438,7 +404,7 @@ object buildCommandsWebdriverMod {
       * @ref https://w3c.github.io/sensors/#get-mock-sensor-command
       *
       */
-    def getMockSensor(`type`: String): ProtocolCommandResponse = js.native
+    def getMockSensor(`type`: String): js.Promise[ProtocolCommandResponse] = js.native
     
     /**
       * Webdriver Protocol Command
@@ -447,7 +413,7 @@ object buildCommandsWebdriverMod {
       * @ref https://w3c.github.io/webdriver/#dfn-get-named-cookie
       *
       */
-    def getNamedCookie(name: String): Cookie = js.native
+    def getNamedCookie(name: String): js.Promise[Cookie] = js.native
     
     /**
       * Webdriver Protocol Command
@@ -456,7 +422,7 @@ object buildCommandsWebdriverMod {
       * @ref https://w3c.github.io/webdriver/#dfn-get-page-source
       *
       */
-    def getPageSource(): String = js.native
+    def getPageSource(): js.Promise[String] = js.native
     
     /**
       * Webdriver Protocol Command
@@ -465,7 +431,7 @@ object buildCommandsWebdriverMod {
       * @ref https://w3c.github.io/webdriver/#dfn-get-timeouts
       *
       */
-    def getTimeouts(): Timeouts = js.native
+    def getTimeouts(): js.Promise[Timeouts] = js.native
     
     /**
       * Webdriver Protocol Command
@@ -474,7 +440,7 @@ object buildCommandsWebdriverMod {
       * @ref https://w3c.github.io/webdriver/#dfn-get-title
       *
       */
-    def getTitle(): String = js.native
+    def getTitle(): js.Promise[String] = js.native
     
     /**
       * Webdriver Protocol Command
@@ -483,7 +449,7 @@ object buildCommandsWebdriverMod {
       * @ref https://w3c.github.io/webdriver/#dfn-get-current-url
       *
       */
-    def getUrl(): String = js.native
+    def getUrl(): js.Promise[String] = js.native
     
     /**
       * Webdriver Protocol Command
@@ -492,7 +458,7 @@ object buildCommandsWebdriverMod {
       * @ref https://w3c.github.io/webdriver/#dfn-get-window-handle
       *
       */
-    def getWindowHandle(): String = js.native
+    def getWindowHandle(): js.Promise[String] = js.native
     
     /**
       * Webdriver Protocol Command
@@ -501,7 +467,7 @@ object buildCommandsWebdriverMod {
       * @ref https://w3c.github.io/webdriver/#dfn-get-window-handles
       *
       */
-    def getWindowHandles(): js.Array[String] = js.native
+    def getWindowHandles(): js.Promise[js.Array[String]] = js.native
     
     /**
       * Webdriver Protocol Command
@@ -510,7 +476,7 @@ object buildCommandsWebdriverMod {
       * @ref https://w3c.github.io/webdriver/#dfn-get-window-rect
       *
       */
-    def getWindowRect(): RectReturn = js.native
+    def getWindowRect(): js.Promise[RectReturn] = js.native
     
     /**
       * Webdriver Protocol Command
@@ -519,7 +485,7 @@ object buildCommandsWebdriverMod {
       * @ref https://w3c.github.io/webdriver/#element-displayedness
       *
       */
-    def isElementDisplayed(elementId: String): Boolean = js.native
+    def isElementDisplayed(elementId: String): js.Promise[Boolean] = js.native
     
     /**
       * Webdriver Protocol Command
@@ -528,7 +494,7 @@ object buildCommandsWebdriverMod {
       * @ref https://w3c.github.io/webdriver/#dfn-is-element-enabled
       *
       */
-    def isElementEnabled(elementId: String): Boolean = js.native
+    def isElementEnabled(elementId: String): js.Promise[Boolean] = js.native
     
     /**
       * Webdriver Protocol Command
@@ -537,7 +503,7 @@ object buildCommandsWebdriverMod {
       * @ref https://w3c.github.io/webdriver/#dfn-is-element-selected
       *
       */
-    def isElementSelected(elementId: String): Boolean = js.native
+    def isElementSelected(elementId: String): js.Promise[Boolean] = js.native
     
     /**
       * Webdriver Protocol Command
@@ -546,7 +512,7 @@ object buildCommandsWebdriverMod {
       * @ref https://w3c.github.io/webdriver/#dfn-maximize-window
       *
       */
-    def maximizeWindow(): RectReturn = js.native
+    def maximizeWindow(): js.Promise[RectReturn] = js.native
     
     /**
       * Webdriver Protocol Command
@@ -555,7 +521,7 @@ object buildCommandsWebdriverMod {
       * @ref https://w3c.github.io/webdriver/#dfn-minimize-window
       *
       */
-    def minimizeWindow(): RectReturn = js.native
+    def minimizeWindow(): js.Promise[RectReturn] = js.native
     
     /**
       * Webdriver Protocol Command
@@ -564,7 +530,7 @@ object buildCommandsWebdriverMod {
       * @ref https://w3c.github.io/webdriver/#dfn-navigate-to
       *
       */
-    def navigateTo(url: String): String = js.native
+    def navigateTo(url: String): js.Promise[String] = js.native
     
     /**
       * Webdriver Protocol Command
@@ -573,7 +539,7 @@ object buildCommandsWebdriverMod {
       * @ref https://w3c.github.io/webdriver/#dfn-new-sessions
       *
       */
-    def newSession(capabilities: js.Object): SessionReturn = js.native
+    def newSession(capabilities: js.Object): js.Promise[SessionReturn] = js.native
     
     /**
       * Webdriver Protocol Command
@@ -582,12 +548,12 @@ object buildCommandsWebdriverMod {
       * @ref https://w3c.github.io/webdriver/#dfn-perform-actions
       *
       */
-    def performActions(actions: js.Array[js.Object]): Unit = js.native
+    def performActions(actions: js.Array[js.Object]): js.Promise[Unit] = js.native
     
     /**
       * Webdriver Protocol Command
       *
-      * The Print Page command renders the document to a paginated PDF document.
+      * The Print Page command renders the document to a paginated PDF document. __Note:__ Chrome currently only supports this in [headless mode](https://webdriver.io/docs/capabilities/#run-browser-headless), see [`crbug753118`](https://bugs.chromium.org/p/chromium/issues/detail?id=753118)).
       * @ref https://w3c.github.io/webdriver/#print-page
       *
       */
@@ -603,7 +569,7 @@ object buildCommandsWebdriverMod {
       right: js.UndefOr[Double],
       shrinkToFit: js.UndefOr[Boolean],
       pageRanges: js.UndefOr[js.Array[js.Object]]
-    ): String = js.native
+    ): js.Promise[String] = js.native
     
     /**
       * Webdriver Protocol Command
@@ -612,7 +578,7 @@ object buildCommandsWebdriverMod {
       * @ref https://w3c.github.io/webdriver/#dfn-refresh
       *
       */
-    def refresh(): Unit = js.native
+    def refresh(): js.Promise[Unit] = js.native
     
     /**
       * Webdriver Protocol Command
@@ -621,7 +587,7 @@ object buildCommandsWebdriverMod {
       * @ref https://w3c.github.io/webdriver/#dfn-release-actions
       *
       */
-    def releaseActions(): Unit = js.native
+    def releaseActions(): js.Promise[Unit] = js.native
     
     /**
       * Webdriver Protocol Command
@@ -630,7 +596,7 @@ object buildCommandsWebdriverMod {
       * @ref https://www.w3.org/TR/webauthn-2/#sctn-automation-remove-all-credentials
       *
       */
-    def removeAllCredentials(authenticatorId: String): Unit = js.native
+    def removeAllCredentials(authenticatorId: String): js.Promise[Unit] = js.native
     
     /**
       * Webdriver Protocol Command
@@ -639,7 +605,7 @@ object buildCommandsWebdriverMod {
       * @ref https://www.w3.org/TR/webauthn-2/#sctn-automation-remove-credential
       *
       */
-    def removeCredential(authenticatorId: String, credentialId: String): Unit = js.native
+    def removeCredential(authenticatorId: String, credentialId: String): js.Promise[Unit] = js.native
     
     /**
       * Webdriver Protocol Command
@@ -648,7 +614,7 @@ object buildCommandsWebdriverMod {
       * @ref https://www.w3.org/TR/webauthn-2/#sctn-automation-remove-virtual-authenticator
       *
       */
-    def removeVirtualAuthenticator(authenticatorId: String): Unit = js.native
+    def removeVirtualAuthenticator(authenticatorId: String): js.Promise[Unit] = js.native
     
     /**
       * Webdriver Protocol Command
@@ -657,7 +623,7 @@ object buildCommandsWebdriverMod {
       * @ref https://w3c.github.io/webdriver/#dfn-send-alert-text
       *
       */
-    def sendAlertText(text: String): Unit = js.native
+    def sendAlertText(text: String): js.Promise[Unit] = js.native
     
     /**
       * Webdriver Protocol Command
@@ -674,8 +640,8 @@ object buildCommandsWebdriverMod {
       * , 'granted'); // can be also 'denied' or 'prompt'
       * ```
       */
-    def setPermissions(descriptor: js.Object, state: String): Unit = js.native
-    def setPermissions(descriptor: js.Object, state: String, oneRealm: Boolean): Unit = js.native
+    def setPermissions(descriptor: js.Object, state: String): js.Promise[Unit] = js.native
+    def setPermissions(descriptor: js.Object, state: String, oneRealm: Boolean): js.Promise[Unit] = js.native
     
     /**
       * Webdriver Protocol Command
@@ -684,7 +650,7 @@ object buildCommandsWebdriverMod {
       * @ref https://w3c.github.io/sensors/#create-mock-sensor-command
       *
       */
-    def setTimeZone(timeZone: String): Unit = js.native
+    def setTimeZone(timeZone: String): js.Promise[Unit] = js.native
     
     /**
       * Webdriver Protocol Command
@@ -693,14 +659,14 @@ object buildCommandsWebdriverMod {
       * @ref https://w3c.github.io/webdriver/#dfn-set-timeouts
       *
       */
-    def setTimeouts(): Unit = js.native
-    def setTimeouts(`implicit`: Double): Unit = js.native
-    def setTimeouts(`implicit`: Double, pageLoad: Double): Unit = js.native
-    def setTimeouts(`implicit`: Double, pageLoad: Double, script: Double): Unit = js.native
-    def setTimeouts(`implicit`: Double, pageLoad: Unit, script: Double): Unit = js.native
-    def setTimeouts(`implicit`: Unit, pageLoad: Double): Unit = js.native
-    def setTimeouts(`implicit`: Unit, pageLoad: Double, script: Double): Unit = js.native
-    def setTimeouts(`implicit`: Unit, pageLoad: Unit, script: Double): Unit = js.native
+    def setTimeouts(): js.Promise[Unit] = js.native
+    def setTimeouts(`implicit`: Double): js.Promise[Unit] = js.native
+    def setTimeouts(`implicit`: Double, pageLoad: Double): js.Promise[Unit] = js.native
+    def setTimeouts(`implicit`: Double, pageLoad: Double, script: Double): js.Promise[Unit] = js.native
+    def setTimeouts(`implicit`: Double, pageLoad: Unit, script: Double): js.Promise[Unit] = js.native
+    def setTimeouts(`implicit`: Unit, pageLoad: Double): js.Promise[Unit] = js.native
+    def setTimeouts(`implicit`: Unit, pageLoad: Double, script: Double): js.Promise[Unit] = js.native
+    def setTimeouts(`implicit`: Unit, pageLoad: Unit, script: Double): js.Promise[Unit] = js.native
     
     /**
       * Webdriver Protocol Command
@@ -709,7 +675,7 @@ object buildCommandsWebdriverMod {
       * @ref https://www.w3.org/TR/webauthn-2/#sctn-automation-set-user-verified
       *
       */
-    def setUserVerified(authenticatorId: String, credentialId: String): Unit = js.native
+    def setUserVerified(authenticatorId: String, credentialId: String): js.Promise[Unit] = js.native
     
     /**
       * Webdriver Protocol Command
@@ -718,22 +684,22 @@ object buildCommandsWebdriverMod {
       * @ref https://w3c.github.io/webdriver/#dfn-set-window-rect
       *
       */
-    def setWindowRect(): RectReturn = js.native
-    def setWindowRect(x: Double): RectReturn = js.native
-    def setWindowRect(x: Double, y: Double): RectReturn = js.native
-    def setWindowRect(x: Double, y: Double, width: Double): RectReturn = js.native
-    def setWindowRect(x: Double, y: Double, width: Double, height: Double): RectReturn = js.native
-    def setWindowRect(x: Double, y: Double, width: Null, height: Double): RectReturn = js.native
-    def setWindowRect(x: Double, y: Null, width: Double): RectReturn = js.native
-    def setWindowRect(x: Double, y: Null, width: Double, height: Double): RectReturn = js.native
-    def setWindowRect(x: Double, y: Null, width: Null, height: Double): RectReturn = js.native
-    def setWindowRect(x: Null, y: Double): RectReturn = js.native
-    def setWindowRect(x: Null, y: Double, width: Double): RectReturn = js.native
-    def setWindowRect(x: Null, y: Double, width: Double, height: Double): RectReturn = js.native
-    def setWindowRect(x: Null, y: Double, width: Null, height: Double): RectReturn = js.native
-    def setWindowRect(x: Null, y: Null, width: Double): RectReturn = js.native
-    def setWindowRect(x: Null, y: Null, width: Double, height: Double): RectReturn = js.native
-    def setWindowRect(x: Null, y: Null, width: Null, height: Double): RectReturn = js.native
+    def setWindowRect(): js.Promise[RectReturn] = js.native
+    def setWindowRect(x: Double): js.Promise[RectReturn] = js.native
+    def setWindowRect(x: Double, y: Double): js.Promise[RectReturn] = js.native
+    def setWindowRect(x: Double, y: Double, width: Double): js.Promise[RectReturn] = js.native
+    def setWindowRect(x: Double, y: Double, width: Double, height: Double): js.Promise[RectReturn] = js.native
+    def setWindowRect(x: Double, y: Double, width: Null, height: Double): js.Promise[RectReturn] = js.native
+    def setWindowRect(x: Double, y: Null, width: Double): js.Promise[RectReturn] = js.native
+    def setWindowRect(x: Double, y: Null, width: Double, height: Double): js.Promise[RectReturn] = js.native
+    def setWindowRect(x: Double, y: Null, width: Null, height: Double): js.Promise[RectReturn] = js.native
+    def setWindowRect(x: Null, y: Double): js.Promise[RectReturn] = js.native
+    def setWindowRect(x: Null, y: Double, width: Double): js.Promise[RectReturn] = js.native
+    def setWindowRect(x: Null, y: Double, width: Double, height: Double): js.Promise[RectReturn] = js.native
+    def setWindowRect(x: Null, y: Double, width: Null, height: Double): js.Promise[RectReturn] = js.native
+    def setWindowRect(x: Null, y: Null, width: Double): js.Promise[RectReturn] = js.native
+    def setWindowRect(x: Null, y: Null, width: Double, height: Double): js.Promise[RectReturn] = js.native
+    def setWindowRect(x: Null, y: Null, width: Null, height: Double): js.Promise[RectReturn] = js.native
     
     /**
       * Webdriver Protocol Command
@@ -742,7 +708,7 @@ object buildCommandsWebdriverMod {
       * @ref https://w3c.github.io/webdriver/#dfn-status
       *
       */
-    def status(): StatusReturn = js.native
+    def status(): js.Promise[StatusReturn] = js.native
     
     /**
       * Webdriver Protocol Command
@@ -751,9 +717,9 @@ object buildCommandsWebdriverMod {
       * @ref https://w3c.github.io/webdriver/#dfn-switch-to-frame
       *
       */
-    def switchToFrame(): Unit = js.native
-    def switchToFrame(id: js.Object): Unit = js.native
-    def switchToFrame(id: Double): Unit = js.native
+    def switchToFrame(): js.Promise[Unit] = js.native
+    def switchToFrame(id: js.Object): js.Promise[Unit] = js.native
+    def switchToFrame(id: Double): js.Promise[Unit] = js.native
     
     /**
       * Webdriver Protocol Command
@@ -762,7 +728,7 @@ object buildCommandsWebdriverMod {
       * @ref https://w3c.github.io/webdriver/#dfn-switch-to-parent-frame
       *
       */
-    def switchToParentFrame(): Unit = js.native
+    def switchToParentFrame(): js.Promise[Unit] = js.native
     
     /**
       * Webdriver Protocol Command
@@ -771,7 +737,7 @@ object buildCommandsWebdriverMod {
       * @ref https://w3c.github.io/webdriver/#dfn-switch-to-window
       *
       */
-    def switchToWindow(handle: String): Unit = js.native
+    def switchToWindow(handle: String): js.Promise[Unit] = js.native
     
     /**
       * Webdriver Protocol Command
@@ -780,8 +746,8 @@ object buildCommandsWebdriverMod {
       * @ref https://w3c.github.io/webdriver/#dfn-take-element-screenshot
       *
       */
-    def takeElementScreenshot(elementId: String): String = js.native
-    def takeElementScreenshot(elementId: String, scroll: Boolean): String = js.native
+    def takeElementScreenshot(elementId: String): js.Promise[String] = js.native
+    def takeElementScreenshot(elementId: String, scroll: Boolean): js.Promise[String] = js.native
     
     /**
       * Webdriver Protocol Command
@@ -790,7 +756,7 @@ object buildCommandsWebdriverMod {
       * @ref https://w3c.github.io/webdriver/#dfn-take-screenshot
       *
       */
-    def takeScreenshot(): String = js.native
+    def takeScreenshot(): js.Promise[String] = js.native
     
     /**
       * Webdriver Protocol Command
@@ -799,6 +765,6 @@ object buildCommandsWebdriverMod {
       * @ref https://w3c.github.io/sensors/#update-mock-sensor-reading-command
       *
       */
-    def updateMockSensor(`type`: String, mockSensorType: String, maxSamplingFrequency: Double, minSamplingFrequency: Double): Unit = js.native
+    def updateMockSensor(`type`: String, mockSensorType: String, maxSamplingFrequency: Double, minSamplingFrequency: Double): js.Promise[Unit] = js.native
   }
 }

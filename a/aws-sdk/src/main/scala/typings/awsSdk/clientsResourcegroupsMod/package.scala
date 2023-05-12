@@ -53,6 +53,24 @@ type GroupFilterValues = js.Array[GroupFilterValue]
 
 type GroupIdentifierList = js.Array[GroupIdentifier]
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ACTIVE
+  - typings.awsSdk.awsSdkStrings.INACTIVE
+  - java.lang.String
+*/
+type GroupLifecycleEventsDesiredStatus = _GroupLifecycleEventsDesiredStatus | String
+
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.ACTIVE
+  - typings.awsSdk.awsSdkStrings.INACTIVE
+  - typings.awsSdk.awsSdkStrings.IN_PROGRESS
+  - typings.awsSdk.awsSdkStrings.ERROR
+  - java.lang.String
+*/
+type GroupLifecycleEventsStatus = _GroupLifecycleEventsStatus | String
+
+type GroupLifecycleEventsStatusMessage = String
+
 type GroupList = js.Array[Group]
 
 type GroupName = String
@@ -74,6 +92,7 @@ type Query = String
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.CLOUDFORMATION_STACK_INACTIVE
   - typings.awsSdk.awsSdkStrings.CLOUDFORMATION_STACK_NOT_EXISTING
+  - typings.awsSdk.awsSdkStrings.CLOUDFORMATION_STACK_UNASSUMABLE_ROLE
   - java.lang.String
 */
 type QueryErrorCode = _QueryErrorCode | String

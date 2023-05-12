@@ -24,14 +24,8 @@ inline def serializeAuthenticationRecord(record: AuthenticationRecord): String =
 
 inline def useIdentityPlugin(plugin: IdentityPlugin): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useIdentityPlugin")(plugin.asInstanceOf[js.Any]).asInstanceOf[Unit]
 
-type AuthorizationCodeCredentialOptions = MultiTenantTokenCredentialOptions
-
-type ClientAssertionCredentialOptions = MultiTenantTokenCredentialOptions
-
 type DeviceCodePromptCallback = js.Function1[/* deviceCodeInfo */ DeviceCodeInfo, Unit]
-
-type EnvironmentCredentialOptions = MultiTenantTokenCredentialOptions
 
 type IdentityPlugin = js.Function1[/* context */ Any, Unit]
 
-type OnBehalfOfCredentialOptions = (OnBehalfOfCredentialSecretOptions & MultiTenantTokenCredentialOptions & CredentialPersistenceOptions) | (OnBehalfOfCredentialCertificateOptions & MultiTenantTokenCredentialOptions & CredentialPersistenceOptions)
+type OnBehalfOfCredentialOptions = (OnBehalfOfCredentialSecretOptions & MultiTenantTokenCredentialOptions & CredentialPersistenceOptions & AuthorityValidationOptions) | (OnBehalfOfCredentialCertificateOptions & MultiTenantTokenCredentialOptions & CredentialPersistenceOptions & AuthorityValidationOptions)

@@ -45,6 +45,8 @@ object distEnvironmentMod {
     @JSName("getQueryParams")
     var getQueryParams_Original: js.Function1[/* queryString */ String, StringDictionary[String]] = js.native
     
+    def getString(flagName: String): String = js.native
+    
     var global: Any = js.native
     
     var platform: Platform = js.native
@@ -103,7 +105,7 @@ object distEnvironmentMod {
     }
   }
   
-  type FlagValue = Double | Boolean
+  type FlagValue = Double | Boolean | String
   
   type Flags = StringDictionary[FlagValue]
 }

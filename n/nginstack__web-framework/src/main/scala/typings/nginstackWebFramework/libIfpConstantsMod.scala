@@ -54,10 +54,6 @@ object libIfpConstantsMod {
   @js.native
   val ENV_CALL_ID_METHOD_RUN_ACTIVITY: Double = js.native
   
-  @JSImport("@nginstack/web-framework/lib/ifp/constants", "ENV_CALL_ID_METHOD_SET_CONTROL_SESSION_ID")
-  @js.native
-  val ENV_CALL_ID_METHOD_SET_CONTROL_SESSION_ID: Double = js.native
-  
   @JSImport("@nginstack/web-framework/lib/ifp/constants", "ENV_CALL_ID_METHOD_STARTUP")
   @js.native
   val ENV_CALL_ID_METHOD_STARTUP: Double = js.native
@@ -110,6 +106,10 @@ object libIfpConstantsMod {
   @js.native
   val ENV_MAIN_CALL_POS_CALLS: Double = js.native
   
+  @JSImport("@nginstack/web-framework/lib/ifp/constants", "ENV_MAIN_CALL_POS_LAST_USE")
+  @js.native
+  val ENV_MAIN_CALL_POS_LAST_USE: Double = js.native
+  
   @JSImport("@nginstack/web-framework/lib/ifp/constants", "ENV_MAIN_CALL_POS_MESSAGES")
   @js.native
   val ENV_MAIN_CALL_POS_MESSAGES: Double = js.native
@@ -117,6 +117,10 @@ object libIfpConstantsMod {
   @JSImport("@nginstack/web-framework/lib/ifp/constants", "ENV_MAIN_CALL_POS_SEQUENCE")
   @js.native
   val ENV_MAIN_CALL_POS_SEQUENCE: Double = js.native
+  
+  @JSImport("@nginstack/web-framework/lib/ifp/constants", "ENV_MAIN_CALL_POS_TIMESTAMP")
+  @js.native
+  val ENV_MAIN_CALL_POS_TIMESTAMP: Double = js.native
   
   @JSImport("@nginstack/web-framework/lib/ifp/constants", "ENV_MAIN_REQUEST_LENGTH")
   @js.native

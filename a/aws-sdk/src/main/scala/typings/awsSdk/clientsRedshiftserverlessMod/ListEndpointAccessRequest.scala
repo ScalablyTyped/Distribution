@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ListEndpointAccessRequest extends StObject {
   
   /**
-    * An optional parameter that specifies the maximum number of results to return. You can use nextToken to get the next page of results.
+    * An optional parameter that specifies the maximum number of results to return. You can use nextToken to display the next page of results.
     */
   var maxResults: js.UndefOr[ListEndpointAccessRequestMaxResultsInteger] = js.undefined
   
   /**
-    * If your initial ListEndpointAccess operation returns a nextToken, you can include the returned nextToken in subsequent ListEndpointAccess operations, which returns results in the next page.
+    * If your initial ListEndpointAccess operation returns a nextToken, you can include the returned nextToken in following ListEndpointAccess operations, which returns results in the next page.
     */
   var nextToken: js.UndefOr[String] = js.undefined
   

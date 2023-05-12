@@ -12,7 +12,7 @@ trait AttachLoadBalancerTargetGroupsType extends StObject {
   var AutoScalingGroupName: XmlStringMaxLen255
   
   /**
-    * The Amazon Resource Names (ARN) of the target groups. You can specify up to 10 target groups. To get the ARN of a target group, use the Elastic Load Balancing DescribeTargetGroups API operation.
+    * The Amazon Resource Names (ARNs) of the target groups. You can specify up to 10 target groups. To get the ARN of a target group, use the Elastic Load Balancing DescribeTargetGroups API operation.
     */
   var TargetGroupARNs: typings.awsSdk.clientsAutoscalingMod.TargetGroupARNs
 }

@@ -10,6 +10,12 @@ sealed trait NodeMaterialBlockConnectionPointTypes extends StObject
 @js.native
 object NodeMaterialBlockConnectionPointTypes extends StObject {
   
+  /** Bitmask of all types */
+  @js.native
+  sealed trait All
+    extends StObject
+       with NodeMaterialBlockConnectionPointTypes
+  
   /** Detect type based on connection */
   @js.native
   sealed trait AutoDetect

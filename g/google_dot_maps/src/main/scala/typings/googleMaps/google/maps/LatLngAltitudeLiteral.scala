@@ -4,11 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Object literals are accepted in place of <code>LatLngAltitude</code>
-  * objects, as a convenience, in many places. These are converted to
-  * <code>LatLngAltitude</code> objects when the Maps API encounters them.
-  */
 trait LatLngAltitudeLiteral
   extends StObject
      with LatLngLiteral {

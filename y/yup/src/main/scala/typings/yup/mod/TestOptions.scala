@@ -1,24 +1,41 @@
 package typings.yup.mod
 
-import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Rewritten from type alias, can be one of: 
-  - typings.yup.mod.NonExclusiveTestOptions[P, C]
-  - typings.yup.mod.ExclusiveTestOptions[P, C]
-*/
-trait TestOptions[P /* <: Record[String, js.Any] */, C] extends StObject
+trait TestOptions[TSchema /* <: AnySchema[Any, Any, Any, Flags] */] extends StObject {
+  
+  var options: InternalOptions[Any]
+  
+  var originalValue: Any
+  
+  var path: js.UndefOr[String] = js.undefined
+  
+  var schema: TSchema
+  
+  var value: Any
+}
 object TestOptions {
   
-  inline def ExclusiveTestOptions[P /* <: Record[String, js.Any] */, C](name: String, test: TestFunction[js.Any, C]): typings.yup.mod.ExclusiveTestOptions[P, C] = {
-    val __obj = js.Dynamic.literal(exclusive = true, name = name.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any])
-    __obj.asInstanceOf[typings.yup.mod.ExclusiveTestOptions[P, C]]
+  inline def apply[TSchema /* <: AnySchema[Any, Any, Any, Flags] */](options: InternalOptions[Any], originalValue: Any, schema: TSchema, value: Any): TestOptions[TSchema] = {
+    val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any], originalValue = originalValue.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TestOptions[TSchema]]
   }
   
-  inline def NonExclusiveTestOptions[P /* <: Record[String, js.Any] */, C](test: TestFunction[js.Any, C]): typings.yup.mod.NonExclusiveTestOptions[P, C] = {
-    val __obj = js.Dynamic.literal(test = test.asInstanceOf[js.Any])
-    __obj.asInstanceOf[typings.yup.mod.NonExclusiveTestOptions[P, C]]
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestOptions[?], TSchema /* <: AnySchema[Any, Any, Any, Flags] */] (val x: Self & TestOptions[TSchema]) extends AnyVal {
+    
+    inline def setOptions(value: InternalOptions[Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    
+    inline def setOriginalValue(value: Any): Self = StObject.set(x, "originalValue", value.asInstanceOf[js.Any])
+    
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    
+    inline def setSchema(value: TSchema): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+    
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

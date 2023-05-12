@@ -16,7 +16,7 @@ object libIconsStarFilledMod extends Shortcut {
   @js.native
   trait StarFilledIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_StarFilledIconType: String = js.native

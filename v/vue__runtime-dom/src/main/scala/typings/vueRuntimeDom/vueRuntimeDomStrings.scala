@@ -1,5 +1,6 @@
 package typings.vueRuntimeDom
 
+import typings.vueRuntimeDom.mod.HTMLAttributeReferrerPolicy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,7 +20,9 @@ object vueRuntimeDomStrings {
   inline def I: I = "I".asInstanceOf[I]
   
   @js.native
-  sealed trait _empty extends StObject
+  sealed trait _empty
+    extends StObject
+       with HTMLAttributeReferrerPolicy
   inline def _empty: _empty = "".asInstanceOf[_empty]
   
   @js.native
@@ -179,6 +182,14 @@ object vueRuntimeDomStrings {
   inline def findIndex: findIndex = "findIndex".asInstanceOf[findIndex]
   
   @js.native
+  sealed trait findLast extends StObject
+  inline def findLast: findLast = "findLast".asInstanceOf[findLast]
+  
+  @js.native
+  sealed trait findLastIndex extends StObject
+  inline def findLastIndex: findLastIndex = "findLastIndex".asInstanceOf[findLastIndex]
+  
+  @js.native
   sealed trait flat extends StObject
   inline def flat: flat = "flat".asInstanceOf[flat]
   
@@ -319,6 +330,18 @@ object vueRuntimeDomStrings {
   inline def no: no = "no".asInstanceOf[no]
   
   @js.native
+  sealed trait `no-referrer`
+    extends StObject
+       with HTMLAttributeReferrerPolicy
+  inline def `no-referrer`: `no-referrer` = "no-referrer".asInstanceOf[`no-referrer`]
+  
+  @js.native
+  sealed trait `no-referrer-when-downgrade`
+    extends StObject
+       with HTMLAttributeReferrerPolicy
+  inline def `no-referrer-when-downgrade`: `no-referrer-when-downgrade` = "no-referrer-when-downgrade".asInstanceOf[`no-referrer-when-downgrade`]
+  
+  @js.native
   sealed trait none extends StObject
   inline def none: none = "none".asInstanceOf[none]
   
@@ -337,6 +360,18 @@ object vueRuntimeDomStrings {
   @js.native
   sealed trait on extends StObject
   inline def on: on = "on".asInstanceOf[on]
+  
+  @js.native
+  sealed trait origin
+    extends StObject
+       with HTMLAttributeReferrerPolicy
+  inline def origin: origin = "origin".asInstanceOf[origin]
+  
+  @js.native
+  sealed trait `origin-when-cross-origin`
+    extends StObject
+       with HTMLAttributeReferrerPolicy
+  inline def `origin-when-cross-origin`: `origin-when-cross-origin` = "origin-when-cross-origin".asInstanceOf[`origin-when-cross-origin`]
   
   @js.native
   sealed trait other extends StObject
@@ -399,6 +434,12 @@ object vueRuntimeDomStrings {
   inline def sRGB: sRGB = "sRGB".asInstanceOf[sRGB]
   
   @js.native
+  sealed trait `same-origin`
+    extends StObject
+       with HTMLAttributeReferrerPolicy
+  inline def `same-origin`: `same-origin` = "same-origin".asInstanceOf[`same-origin`]
+  
+  @js.native
   sealed trait search extends StObject
   inline def search: search = "search".asInstanceOf[search]
   
@@ -433,6 +474,18 @@ object vueRuntimeDomStrings {
   @js.native
   sealed trait step extends StObject
   inline def step: step = "step".asInstanceOf[step]
+  
+  @js.native
+  sealed trait `strict-origin`
+    extends StObject
+       with HTMLAttributeReferrerPolicy
+  inline def `strict-origin`: `strict-origin` = "strict-origin".asInstanceOf[`strict-origin`]
+  
+  @js.native
+  sealed trait `strict-origin-when-cross-origin`
+    extends StObject
+       with HTMLAttributeReferrerPolicy
+  inline def `strict-origin-when-cross-origin`: `strict-origin-when-cross-origin` = "strict-origin-when-cross-origin".asInstanceOf[`strict-origin-when-cross-origin`]
   
   @js.native
   sealed trait submit extends StObject
@@ -483,6 +536,12 @@ object vueRuntimeDomStrings {
   @js.native
   sealed trait tree extends StObject
   inline def tree: tree = "tree".asInstanceOf[tree]
+  
+  @js.native
+  sealed trait `unsafe-url`
+    extends StObject
+       with HTMLAttributeReferrerPolicy
+  inline def `unsafe-url`: `unsafe-url` = "unsafe-url".asInstanceOf[`unsafe-url`]
   
   @js.native
   sealed trait unshift extends StObject

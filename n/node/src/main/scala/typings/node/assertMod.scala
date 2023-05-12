@@ -34,8 +34,7 @@ object assertMod {
   val ^ : js.Any = js.native
   
   /**
-    * Indicates the failure of an assertion. All errors thrown by the `assert` module
-    * will be instances of the `AssertionError` class.
+    * Indicates the failure of an assertion. All errors thrown by the `node:assert`module will be instances of the `AssertionError` class.
     */
   @JSImport("assert", "AssertionError")
   @js.native
@@ -44,12 +43,24 @@ object assertMod {
        with Error {
     def this(options: Actual) = this()
     
+    /**
+      * Set to the `actual` argument for methods such as {@link assert.strictEqual()}.
+      */
     var actual: Any = js.native
     
+    /**
+      * Value is always `ERR_ASSERTION` to show that the error is an assertion error.
+      */
     var code: ERR_ASSERTION = js.native
     
+    /**
+      * Set to the `expected` argument for methods such as {@link assert.strictEqual()}.
+      */
     var expected: Any = js.native
     
+    /**
+      * Indicates if the message was auto-generated (`true`) or not.
+      */
     var generatedMessage: Boolean = js.native
     
     /* standard es5 */
@@ -60,13 +71,17 @@ object assertMod {
     /* CompleteClass */
     var name: String = js.native
     
+    /**
+      * Set to the passed in operator value.
+      */
     var operator: String = js.native
   }
   
   /**
-    * This feature is currently experimental and behavior might still change.
+    * This feature is deprecated and will be removed in a future version.
+    * Please consider using alternatives such as the `mock` helper function.
     * @since v14.2.0, v12.19.0
-    * @experimental
+    * @deprecated Deprecated
     */
   @JSImport("assert", "CallTracker")
   @js.native
@@ -78,7 +93,7 @@ object assertMod {
       * error.
       *
       * ```js
-      * import assert from 'assert';
+      * import assert from 'node:assert';
       *
       * // Creates call tracker.
       * const tracker = new assert.CallTracker();
@@ -115,12 +130,11 @@ object assertMod {
       * callsfunc(1, 2, 3);
       *
       * assert.deepStrictEqual(tracker.getCalls(callsfunc),
-      *                        [{ thisArg: this, arguments: [1, 2, 3 ] }]);
+      *                        [{ thisArg: undefined, arguments: [1, 2, 3] }]);
       * ```
-      *
       * @since v18.8.0, v16.18.0
-      * @params fn
-      * @returns An Array with the calls to a tracked function.
+      * @param fn
+      * @return An Array with all the calls to a tracked function.
       */
     def getCalls(fn: js.Function): js.Array[CallTrackerCall] = js.native
     
@@ -129,21 +143,19 @@ object assertMod {
       * the functions that have not been called the expected number of times.
       *
       * ```js
-      * import assert from 'assert';
+      * import assert from 'node:assert';
       *
       * // Creates call tracker.
       * const tracker = new assert.CallTracker();
       *
       * function func() {}
       *
-      * function foo() {}
-      *
       * // Returns a function that wraps func() that must be called exact times
       * // before tracker.verify().
       * const callsfunc = tracker.calls(func, 2);
       *
       * // Returns an array containing information on callsfunc()
-      * tracker.report();
+      * console.log(tracker.report());
       * // [
       * //  {
       * //    message: 'Expected the func function to be executed 2 time(s) but was
@@ -156,7 +168,7 @@ object assertMod {
       * // ]
       * ```
       * @since v14.2.0, v12.19.0
-      * @return of objects containing information about the wrapper functions returned by `calls`.
+      * @return An Array of objects containing information about the wrapper functions returned by `calls`.
       */
     def report(): js.Array[CallTrackerReportInformation] = js.native
     
@@ -175,12 +187,11 @@ object assertMod {
       *
       * callsfunc();
       * // Tracker was called once
-      * tracker.getCalls(callsfunc).length === 1;
+      * assert.strictEqual(tracker.getCalls(callsfunc).length, 1);
       *
       * tracker.reset(callsfunc);
-      * tracker.getCalls(callsfunc).length === 0;
+      * assert.strictEqual(tracker.getCalls(callsfunc).length, 0);
       * ```
-      *
       * @since v18.8.0, v16.18.0
       * @param fn a tracked function to reset.
       */
@@ -192,7 +203,7 @@ object assertMod {
       * have not been called the expected number of times.
       *
       * ```js
-      * import assert from 'assert';
+      * import assert from 'node:assert';
       *
       * // Creates call tracker.
       * const tracker = new assert.CallTracker();
@@ -248,7 +259,7 @@ object assertMod {
     * Expects the `string` input not to match the regular expression.
     *
     * ```js
-    * import assert from 'assert/strict';
+    * import assert from 'node:assert/strict';
     *
     * assert.doesNotMatch('I will fail', /fail/);
     * // AssertionError [ERR_ASSERTION]: The input was expected to not match the ...
@@ -286,24 +297,24 @@ object assertMod {
     * error messages as expressive as possible.
     *
     * If specified, `error` can be a [`Class`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes),
-    * [`RegExp`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions) or a validation
+    * [`RegExp`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions), or a validation
     * function. See {@link throws} for more details.
     *
     * Besides the async nature to await the completion behaves identically to {@link doesNotThrow}.
     *
     * ```js
-    * import assert from 'assert/strict';
+    * import assert from 'node:assert/strict';
     *
     * await assert.doesNotReject(
     *   async () => {
     *     throw new TypeError('Wrong value');
     *   },
-    *   SyntaxError
+    *   SyntaxError,
     * );
     * ```
     *
     * ```js
-    * import assert from 'assert/strict';
+    * import assert from 'node:assert/strict';
     *
     * assert.doesNotReject(Promise.reject(new TypeError('Wrong value')))
     *   .then(() => {
@@ -340,20 +351,20 @@ object assertMod {
     * propagated back to the caller.
     *
     * If specified, `error` can be a [`Class`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes),
-    * [`RegExp`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions) or a validation
+    * [`RegExp`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions), or a validation
     * function. See {@link throws} for more details.
     *
     * The following, for instance, will throw the `TypeError` because there is no
     * matching error type in the assertion:
     *
     * ```js
-    * import assert from 'assert/strict';
+    * import assert from 'node:assert/strict';
     *
     * assert.doesNotThrow(
     *   () => {
     *     throw new TypeError('Wrong value');
     *   },
-    *   SyntaxError
+    *   SyntaxError,
     * );
     * ```
     *
@@ -361,27 +372,27 @@ object assertMod {
     * 'Got unwanted exception...':
     *
     * ```js
-    * import assert from 'assert/strict';
+    * import assert from 'node:assert/strict';
     *
     * assert.doesNotThrow(
     *   () => {
     *     throw new TypeError('Wrong value');
     *   },
-    *   TypeError
+    *   TypeError,
     * );
     * ```
     *
     * If an `AssertionError` is thrown and a value is provided for the `message`parameter, the value of `message` will be appended to the `AssertionError` message:
     *
     * ```js
-    * import assert from 'assert/strict';
+    * import assert from 'node:assert/strict';
     *
     * assert.doesNotThrow(
     *   () => {
     *     throw new TypeError('Wrong value');
     *   },
     *   /Wrong value/,
-    *   'Whoops'
+    *   'Whoops',
     * );
     * // Throws: AssertionError: Got unwanted exception: Whoops
     * ```
@@ -408,7 +419,7 @@ object assertMod {
     * and treated as being identical if both sides are `NaN`.
     *
     * ```js
-    * import assert from 'assert';
+    * import assert from 'node:assert';
     *
     * assert.equal(1, 1);
     * // OK, 1 == 1
@@ -437,7 +448,7 @@ object assertMod {
     * it will be thrown instead of the `AssertionError`.
     *
     * ```js
-    * import assert from 'assert/strict';
+    * import assert from 'node:assert/strict';
     *
     * assert.fail();
     * // AssertionError [ERR_ASSERTION]: Failed
@@ -519,7 +530,7 @@ object assertMod {
     * from the error passed to `ifError()` including the potential new frames for`ifError()` itself.
     *
     * ```js
-    * import assert from 'assert/strict';
+    * import assert from 'node:assert/strict';
     *
     * assert.ifError(null);
     * // OK
@@ -551,7 +562,7 @@ object assertMod {
     * Expects the `string` input to match the regular expression.
     *
     * ```js
-    * import assert from 'assert/strict';
+    * import assert from 'node:assert/strict';
     *
     * assert.match('I will fail', /pass/);
     * // AssertionError [ERR_ASSERTION]: The input did not match the regular ...
@@ -585,24 +596,24 @@ object assertMod {
     * Tests for any deep inequality. Opposite of {@link deepEqual}.
     *
     * ```js
-    * import assert from 'assert';
+    * import assert from 'node:assert';
     *
     * const obj1 = {
     *   a: {
-    *     b: 1
-    *   }
+    *     b: 1,
+    *   },
     * };
     * const obj2 = {
     *   a: {
-    *     b: 2
-    *   }
+    *     b: 2,
+    *   },
     * };
     * const obj3 = {
     *   a: {
-    *     b: 1
-    *   }
+    *     b: 1,
+    *   },
     * };
-    * const obj4 = Object.create(obj1);
+    * const obj4 = { __proto__: obj1 };
     *
     * assert.notDeepEqual(obj1, obj1);
     * // AssertionError: { a: { b: 1 } } notDeepEqual { a: { b: 1 } }
@@ -630,7 +641,7 @@ object assertMod {
     * Tests for deep strict inequality. Opposite of {@link deepStrictEqual}.
     *
     * ```js
-    * import assert from 'assert/strict';
+    * import assert from 'node:assert/strict';
     *
     * assert.notDeepStrictEqual({ a: 1 }, { a: '1' });
     * // OK
@@ -660,7 +671,7 @@ object assertMod {
     * specially handled and treated as being identical if both sides are `NaN`.
     *
     * ```js
-    * import assert from 'assert';
+    * import assert from 'node:assert';
     *
     * assert.notEqual(1, 2);
     * // OK
@@ -685,7 +696,7 @@ object assertMod {
     * determined by [`Object.is()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is).
     *
     * ```js
-    * import assert from 'assert/strict';
+    * import assert from 'node:assert/strict';
     *
     * assert.notStrictEqual(1, 2);
     * // OK
@@ -719,7 +730,7 @@ object assertMod {
     * thrown in a file! See below for further details.
     *
     * ```js
-    * import assert from 'assert/strict';
+    * import assert from 'node:assert/strict';
     *
     * assert.ok(true);
     * // OK
@@ -754,7 +765,7 @@ object assertMod {
     * ```
     *
     * ```js
-    * import assert from 'assert/strict';
+    * import assert from 'node:assert/strict';
     *
     * // Using `assert()` works the same:
     * assert(0);
@@ -787,7 +798,7 @@ object assertMod {
     * If specified, `message` will be the message provided by the `AssertionError` if the `asyncFn` fails to reject.
     *
     * ```js
-    * import assert from 'assert/strict';
+    * import assert from 'node:assert/strict';
     *
     * await assert.rejects(
     *   async () => {
@@ -795,13 +806,13 @@ object assertMod {
     *   },
     *   {
     *     name: 'TypeError',
-    *     message: 'Wrong value'
-    *   }
+    *     message: 'Wrong value',
+    *   },
     * );
     * ```
     *
     * ```js
-    * import assert from 'assert/strict';
+    * import assert from 'node:assert/strict';
     *
     * await assert.rejects(
     *   async () => {
@@ -811,16 +822,16 @@ object assertMod {
     *     assert.strictEqual(err.name, 'TypeError');
     *     assert.strictEqual(err.message, 'Wrong value');
     *     return true;
-    *   }
+    *   },
     * );
     * ```
     *
     * ```js
-    * import assert from 'assert/strict';
+    * import assert from 'node:assert/strict';
     *
     * assert.rejects(
     *   Promise.reject(new Error('Wrong value')),
-    *   Error
+    *   Error,
     * ).then(() => {
     *   // ...
     * });
@@ -857,7 +868,7 @@ object assertMod {
     * determined by [`Object.is()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is).
     *
     * ```js
-    * import assert from 'assert/strict';
+    * import assert from 'node:assert/strict';
     *
     * assert.strictEqual(1, 2);
     * // AssertionError [ERR_ASSERTION]: Expected inputs to be strictly equal:
@@ -910,14 +921,14 @@ object assertMod {
     * Custom validation object/error instance:
     *
     * ```js
-    * import assert from 'assert/strict';
+    * import assert from 'node:assert/strict';
     *
     * const err = new TypeError('Wrong value');
     * err.code = 404;
     * err.foo = 'bar';
     * err.info = {
     *   nested: true,
-    *   baz: 'text'
+    *   baz: 'text',
     * };
     * err.reg = /abc/i;
     *
@@ -930,16 +941,16 @@ object assertMod {
     *     message: 'Wrong value',
     *     info: {
     *       nested: true,
-    *       baz: 'text'
-    *     }
+    *       baz: 'text',
+    *     },
     *     // Only properties on the validation object will be tested for.
     *     // Using nested objects requires all properties to be present. Otherwise
     *     // the validation is going to fail.
-    *   }
+    *   },
     * );
     *
     * // Using regular expressions to validate error properties:
-    * throws(
+    * assert.throws(
     *   () => {
     *     throw err;
     *   },
@@ -953,17 +964,17 @@ object assertMod {
     *     info: {
     *       nested: true,
     *       // It is not possible to use regular expressions for nested properties!
-    *       baz: 'text'
+    *       baz: 'text',
     *     },
     *     // The `reg` property contains a regular expression and only if the
     *     // validation object contains an identical regular expression, it is going
     *     // to pass.
-    *     reg: /abc/i
-    *   }
+    *     reg: /abc/i,
+    *   },
     * );
     *
     * // Fails due to the different `message` and `name` properties:
-    * throws(
+    * assert.throws(
     *   () => {
     *     const otherErr = new Error('Not found');
     *     // Copy all enumerable properties from `err` to `otherErr`.
@@ -974,20 +985,20 @@ object assertMod {
     *   },
     *   // The error's `message` and `name` properties will also be checked when using
     *   // an error as validation object.
-    *   err
+    *   err,
     * );
     * ```
     *
     * Validate instanceof using constructor:
     *
     * ```js
-    * import assert from 'assert/strict';
+    * import assert from 'node:assert/strict';
     *
     * assert.throws(
     *   () => {
     *     throw new Error('Wrong value');
     *   },
-    *   Error
+    *   Error,
     * );
     * ```
     *
@@ -997,13 +1008,13 @@ object assertMod {
     * therefore also include the error name.
     *
     * ```js
-    * import assert from 'assert/strict';
+    * import assert from 'node:assert/strict';
     *
     * assert.throws(
     *   () => {
     *     throw new Error('Wrong value');
     *   },
-    *   /^Error: Wrong value$/
+    *   /^Error: Wrong value$/,
     * );
     * ```
     *
@@ -1013,7 +1024,7 @@ object assertMod {
     * It will otherwise fail with an `AssertionError`.
     *
     * ```js
-    * import assert from 'assert/strict';
+    * import assert from 'node:assert/strict';
     *
     * assert.throws(
     *   () => {
@@ -1029,7 +1040,7 @@ object assertMod {
     *     // possible.
     *     return true;
     *   },
-    *   'unexpected error'
+    *   'unexpected error',
     * );
     * ```
     *
@@ -1039,7 +1050,7 @@ object assertMod {
     * a string as the second argument gets considered:
     *
     * ```js
-    * import assert from 'assert/strict';
+    * import assert from 'node:assert/strict';
     *
     * function throwingFirst() {
     *   throw new Error('First');

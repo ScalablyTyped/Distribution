@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetFunctionUrlConfigResponse extends StObject {
   
   /**
-    * The type of authentication that your function URL uses. Set to AWS_IAM if you want to restrict access to authenticated IAM users only. Set to NONE if you want to bypass IAM authentication to create a public endpoint. For more information, see  Security and auth model for Lambda function URLs.
+    * The type of authentication that your function URL uses. Set to AWS_IAM if you want to restrict access to authenticated users only. Set to NONE if you want to bypass IAM authentication to create a public endpoint. For more information, see Security and auth model for Lambda function URLs.
     */
   var AuthType: FunctionUrlAuthType
   
@@ -30,6 +30,11 @@ trait GetFunctionUrlConfigResponse extends StObject {
     * The HTTP URL endpoint for your function.
     */
   var FunctionUrl: typings.awsSdk.clientsLambdaMod.FunctionUrl
+  
+  /**
+    * Use one of the following options:    BUFFERED – This is the default option. Lambda invokes your function using the Invoke API operation. Invocation results are available when the payload is complete. The maximum payload size is 6 MB.    RESPONSE_STREAM – Your function streams payload results as they become available. Lambda invokes your function using the InvokeWithResponseStream API operation. The maximum response payload size is 20 MB, however, you can request a quota increase.  
+    */
+  var InvokeMode: js.UndefOr[typings.awsSdk.clientsLambdaMod.InvokeMode] = js.undefined
   
   /**
     * When the function URL configuration was last updated, in ISO-8601 format (YYYY-MM-DDThh:mm:ss.sTZD).
@@ -63,6 +68,10 @@ object GetFunctionUrlConfigResponse {
     inline def setFunctionArn(value: FunctionArn): Self = StObject.set(x, "FunctionArn", value.asInstanceOf[js.Any])
     
     inline def setFunctionUrl(value: FunctionUrl): Self = StObject.set(x, "FunctionUrl", value.asInstanceOf[js.Any])
+    
+    inline def setInvokeMode(value: InvokeMode): Self = StObject.set(x, "InvokeMode", value.asInstanceOf[js.Any])
+    
+    inline def setInvokeModeUndefined: Self = StObject.set(x, "InvokeMode", js.undefined)
     
     inline def setLastModifiedTime(value: Timestamp): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
   }

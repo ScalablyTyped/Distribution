@@ -7,10 +7,13 @@ import typings.angularCompilerCli.srcNgtscImportsSrcEmitterMod.ReferenceEmitResu
 import typings.angularCompilerCli.srcNgtscImportsSrcEmitterMod.ReferenceEmitStrategy
 import typings.angularCompilerCli.srcNgtscImportsSrcReferencesMod.OwningModule
 import typings.angularCompilerCli.srcNgtscReflectionSrcHostMod.ReflectionHost
+import typings.std.Set
 import typings.typescript.mod.CompilerOptions
+import typings.typescript.mod.Declaration
 import typings.typescript.mod.ModuleResolutionCache
 import typings.typescript.mod.Node
 import typings.typescript.mod.Program
+import typings.typescript.mod.TransformationContext
 import typings.typescript.mod.TypeChecker
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -143,6 +146,10 @@ object srcNgtscImportsMod {
   }
   
   inline def assertSuccessfulReferenceEmit(result: ReferenceEmitResult, origin: Node, typeKind: String): /* asserts result is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentLibraryScoped(angular,compiler-cli), TsIdentModule(Some(angular),List(compiler-cli, src, ngtsc, imports, src, emitter)), TsIdentSimple(EmittedReference))),IArray())*/ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("assertSuccessfulReferenceEmit")(result.asInstanceOf[js.Any], origin.asInstanceOf[js.Any], typeKind.asInstanceOf[js.Any])).asInstanceOf[/* asserts result is TsTypeRef(NoComments,TsQIdent(IArray(TsIdentLibraryScoped(angular,compiler-cli), TsIdentModule(Some(angular),List(compiler-cli, src, ngtsc, imports, src, emitter)), TsIdentSimple(EmittedReference))),IArray())*/ Boolean]
+  
+  inline def isAliasImportDeclaration(node: Node): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAliasImportDeclaration")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def loadIsReferencedAliasDeclarationPatch(context: TransformationContext): Set[Declaration] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadIsReferencedAliasDeclarationPatch")(context.asInstanceOf[js.Any]).asInstanceOf[Set[Declaration]]
   
   inline def validateAndRewriteCoreSymbol(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("validateAndRewriteCoreSymbol")(name.asInstanceOf[js.Any]).asInstanceOf[String]
 }

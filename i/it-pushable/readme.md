@@ -1,7 +1,7 @@
 
 # Scala.js typings for it-pushable
 
-Typings are for version 3.1.0
+Typings are for version 3.1.3
 
 ## Library description:
 An iterable that you can push values into

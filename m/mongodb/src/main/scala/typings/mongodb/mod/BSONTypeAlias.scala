@@ -4,8 +4,7 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined keyof std.Readonly<{ readonly double :1,  readonly string :2,  readonly object :3,  readonly array :4,  readonly binData :5,  readonly undefined :6,  readonly objectId :7,  readonly bool :8,  readonly date :9,  readonly null :10,  readonly regex :11,  readonly dbPointer :12,  readonly javascript :13,  readonly symbol :14,  readonly javascriptWithScope :15,  readonly int :16,  readonly timestamp :17,  readonly long :18,  readonly decimal :19,  readonly minKey :-1,  readonly maxKey :127}> */
-/* Rewritten from type alias, can be one of: 
+/* keyof mongodb.anon.TypeofBSONType */ /* Rewritten from type alias, can be one of: 
   - typings.mongodb.mongodbStrings.long
   - typings.mongodb.mongodbStrings.date
   - typings.mongodb.mongodbStrings.timestamp
@@ -29,47 +28,3 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.mongodb.mongodbStrings.bool
 */
 trait BSONTypeAlias extends StObject
-object BSONTypeAlias {
-  
-  inline def array: typings.mongodb.mongodbStrings.array = "array".asInstanceOf[typings.mongodb.mongodbStrings.array]
-  
-  inline def binData: typings.mongodb.mongodbStrings.binData = "binData".asInstanceOf[typings.mongodb.mongodbStrings.binData]
-  
-  inline def bool: typings.mongodb.mongodbStrings.bool = "bool".asInstanceOf[typings.mongodb.mongodbStrings.bool]
-  
-  inline def date: typings.mongodb.mongodbStrings.date = "date".asInstanceOf[typings.mongodb.mongodbStrings.date]
-  
-  inline def dbPointer: typings.mongodb.mongodbStrings.dbPointer = "dbPointer".asInstanceOf[typings.mongodb.mongodbStrings.dbPointer]
-  
-  inline def decimal: typings.mongodb.mongodbStrings.decimal = "decimal".asInstanceOf[typings.mongodb.mongodbStrings.decimal]
-  
-  inline def double: typings.mongodb.mongodbStrings.double = "double".asInstanceOf[typings.mongodb.mongodbStrings.double]
-  
-  inline def int: typings.mongodb.mongodbStrings.int = "int".asInstanceOf[typings.mongodb.mongodbStrings.int]
-  
-  inline def javascript: typings.mongodb.mongodbStrings.javascript = "javascript".asInstanceOf[typings.mongodb.mongodbStrings.javascript]
-  
-  inline def javascriptWithScope: typings.mongodb.mongodbStrings.javascriptWithScope = "javascriptWithScope".asInstanceOf[typings.mongodb.mongodbStrings.javascriptWithScope]
-  
-  inline def long: typings.mongodb.mongodbStrings.long = "long".asInstanceOf[typings.mongodb.mongodbStrings.long]
-  
-  inline def maxKey: typings.mongodb.mongodbStrings.maxKey = "maxKey".asInstanceOf[typings.mongodb.mongodbStrings.maxKey]
-  
-  inline def minKey: typings.mongodb.mongodbStrings.minKey = "minKey".asInstanceOf[typings.mongodb.mongodbStrings.minKey]
-  
-  inline def `null`: typings.mongodb.mongodbStrings.`null` = "null".asInstanceOf[typings.mongodb.mongodbStrings.`null`]
-  
-  inline def `object`: typings.mongodb.mongodbStrings.`object` = "object".asInstanceOf[typings.mongodb.mongodbStrings.`object`]
-  
-  inline def objectId: typings.mongodb.mongodbStrings.objectId = "objectId".asInstanceOf[typings.mongodb.mongodbStrings.objectId]
-  
-  inline def regex: typings.mongodb.mongodbStrings.regex = "regex".asInstanceOf[typings.mongodb.mongodbStrings.regex]
-  
-  inline def string: typings.mongodb.mongodbStrings.string = "string".asInstanceOf[typings.mongodb.mongodbStrings.string]
-  
-  inline def symbol: typings.mongodb.mongodbStrings.symbol = "symbol".asInstanceOf[typings.mongodb.mongodbStrings.symbol]
-  
-  inline def timestamp: typings.mongodb.mongodbStrings.timestamp = "timestamp".asInstanceOf[typings.mongodb.mongodbStrings.timestamp]
-  
-  inline def undefined: typings.mongodb.mongodbStrings.undefined = "undefined".asInstanceOf[typings.mongodb.mongodbStrings.undefined]
-}

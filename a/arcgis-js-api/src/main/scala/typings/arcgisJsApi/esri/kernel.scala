@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait kernel extends StObject {
   
   /**
-    * Current version of the ArcGIS API for JavaScript.
+    * Current version of the ArcGIS Maps SDK for JavaScript.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-kernel.html#version)
     */

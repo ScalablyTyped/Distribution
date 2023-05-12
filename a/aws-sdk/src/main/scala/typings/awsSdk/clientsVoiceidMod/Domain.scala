@@ -12,17 +12,17 @@ trait Domain extends StObject {
   var Arn: js.UndefOr[typings.awsSdk.clientsVoiceidMod.Arn] = js.undefined
   
   /**
-    * The timestamp at which the domain is created.
+    * The timestamp of when the domain was created.
     */
   var CreatedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The client-provided description of the domain.
+    * The description of the domain.
     */
   var Description: js.UndefOr[typings.awsSdk.clientsVoiceidMod.Description] = js.undefined
   
   /**
-    * The service-generated identifier for the domain.
+    * The identifier of the domain.
     */
   var DomainId: js.UndefOr[typings.awsSdk.clientsVoiceidMod.DomainId] = js.undefined
   
@@ -32,7 +32,7 @@ trait Domain extends StObject {
   var DomainStatus: js.UndefOr[typings.awsSdk.clientsVoiceidMod.DomainStatus] = js.undefined
   
   /**
-    * The client-provided name for the domain.
+    * The name for the domain.
     */
   var Name: js.UndefOr[DomainName] = js.undefined
   
@@ -47,9 +47,14 @@ trait Domain extends StObject {
   var ServerSideEncryptionUpdateDetails: js.UndefOr[typings.awsSdk.clientsVoiceidMod.ServerSideEncryptionUpdateDetails] = js.undefined
   
   /**
-    * The timestamp showing the domain's last update.
+    * The timestamp of when the domain was last update.
     */
   var UpdatedAt: js.UndefOr[js.Date] = js.undefined
+  
+  /**
+    * The watchlist details of a domain. Contains the default watchlist ID of the domain.
+    */
+  var WatchlistDetails: js.UndefOr[typings.awsSdk.clientsVoiceidMod.WatchlistDetails] = js.undefined
 }
 object Domain {
   
@@ -96,5 +101,9 @@ object Domain {
     inline def setUpdatedAt(value: js.Date): Self = StObject.set(x, "UpdatedAt", value.asInstanceOf[js.Any])
     
     inline def setUpdatedAtUndefined: Self = StObject.set(x, "UpdatedAt", js.undefined)
+    
+    inline def setWatchlistDetails(value: WatchlistDetails): Self = StObject.set(x, "WatchlistDetails", value.asInstanceOf[js.Any])
+    
+    inline def setWatchlistDetailsUndefined: Self = StObject.set(x, "WatchlistDetails", js.undefined)
   }
 }

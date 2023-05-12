@@ -25,6 +25,8 @@ trait MessageEvent extends StObject {
   var subscription: String
   
   var timetoken: String
+  
+  var userMetadata: js.UndefOr[js.Object] = js.undefined
 }
 object MessageEvent {
   
@@ -57,5 +59,9 @@ object MessageEvent {
     inline def setSubscription(value: String): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
     
     inline def setTimetoken(value: String): Self = StObject.set(x, "timetoken", value.asInstanceOf[js.Any])
+    
+    inline def setUserMetadata(value: js.Object): Self = StObject.set(x, "userMetadata", value.asInstanceOf[js.Any])
+    
+    inline def setUserMetadataUndefined: Self = StObject.set(x, "userMetadata", js.undefined)
   }
 }

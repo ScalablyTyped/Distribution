@@ -2,50 +2,49 @@ package typings.chartJs.anon
 
 import typings.chartJs.chartJsStrings.auto
 import typings.chartJs.chartJsStrings.radialLinear
-import typings.chartJs.mod.CoreScaleOptions
-import typings.chartJs.mod.GridLineOptions
-import typings.chartJs.mod.RadialTickOptions
+import typings.chartJs.distTypesIndexMod.CoreScaleOptions
+import typings.chartJs.distTypesIndexMod.RadialTickOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined {  type :'radialLinear'} & chart.js.chart.js.RadialLinearScaleOptions */
+/* Inlined {  type :'radialLinear'} & chart.js.chart.js/dist/types/index.RadialLinearScaleOptions */
 trait typeradialLinearRadialLin extends StObject {
   
   /**
     * Callback that runs after ticks are created. Useful for filtering ticks.
     */
-  def afterBuildTicks(axis: typings.chartJs.mod.Scale[CoreScaleOptions]): Unit
+  def afterBuildTicks(axis: typings.chartJs.distTypesIndexMod.Scale[CoreScaleOptions]): Unit
   
   /**
     * Callback that runs after tick rotation is determined.
     */
-  def afterCalculateLabelRotation(axis: typings.chartJs.mod.Scale[CoreScaleOptions]): Unit
+  def afterCalculateLabelRotation(axis: typings.chartJs.distTypesIndexMod.Scale[CoreScaleOptions]): Unit
   
   /**
     * Callback that runs after data limits are determined.
     */
-  def afterDataLimits(axis: typings.chartJs.mod.Scale[CoreScaleOptions]): Unit
+  def afterDataLimits(axis: typings.chartJs.distTypesIndexMod.Scale[CoreScaleOptions]): Unit
   
   /**
     * Callback that runs after the scale fits to the canvas.
     */
-  def afterFit(axis: typings.chartJs.mod.Scale[CoreScaleOptions]): Unit
+  def afterFit(axis: typings.chartJs.distTypesIndexMod.Scale[CoreScaleOptions]): Unit
   
   /**
     * Callback that runs after dimensions are set.
     */
-  def afterSetDimensions(axis: typings.chartJs.mod.Scale[CoreScaleOptions]): Unit
+  def afterSetDimensions(axis: typings.chartJs.distTypesIndexMod.Scale[CoreScaleOptions]): Unit
   
   /**
     * Callback that runs after ticks are converted into strings.
     */
-  def afterTickToLabelConversion(axis: typings.chartJs.mod.Scale[CoreScaleOptions]): Unit
+  def afterTickToLabelConversion(axis: typings.chartJs.distTypesIndexMod.Scale[CoreScaleOptions]): Unit
   
   /**
     * Callback that runs at the end of the update process.
     */
-  def afterUpdate(axis: typings.chartJs.mod.Scale[CoreScaleOptions]): Unit
+  def afterUpdate(axis: typings.chartJs.distTypesIndexMod.Scale[CoreScaleOptions]): Unit
   
   /**
     * Align pixel values to device pixels
@@ -56,40 +55,42 @@ trait typeradialLinearRadialLin extends StObject {
   
   var animate: Boolean
   
+  var backgroundColor: typings.chartJs.distTypesColorMod.Color
+  
   /**
     * Callback that runs before ticks are created.
     */
-  def beforeBuildTicks(axis: typings.chartJs.mod.Scale[CoreScaleOptions]): Unit
+  def beforeBuildTicks(axis: typings.chartJs.distTypesIndexMod.Scale[CoreScaleOptions]): Unit
   
   /**
     * Callback that runs before tick rotation is determined.
     */
-  def beforeCalculateLabelRotation(axis: typings.chartJs.mod.Scale[CoreScaleOptions]): Unit
+  def beforeCalculateLabelRotation(axis: typings.chartJs.distTypesIndexMod.Scale[CoreScaleOptions]): Unit
   
   /**
     * Callback that runs before data limits are determined.
     */
-  def beforeDataLimits(axis: typings.chartJs.mod.Scale[CoreScaleOptions]): Unit
+  def beforeDataLimits(axis: typings.chartJs.distTypesIndexMod.Scale[CoreScaleOptions]): Unit
   
   /**
     * Callback that runs before the scale fits to the canvas.
     */
-  def beforeFit(axis: typings.chartJs.mod.Scale[CoreScaleOptions]): Unit
+  def beforeFit(axis: typings.chartJs.distTypesIndexMod.Scale[CoreScaleOptions]): Unit
   
   /**
     * Callback that runs before dimensions are set.
     */
-  def beforeSetDimensions(axis: typings.chartJs.mod.Scale[CoreScaleOptions]): Unit
+  def beforeSetDimensions(axis: typings.chartJs.distTypesIndexMod.Scale[CoreScaleOptions]): Unit
   
   /**
     * Callback that runs before ticks are converted into strings.
     */
-  def beforeTickToLabelConversion(axis: typings.chartJs.mod.Scale[CoreScaleOptions]): Unit
+  def beforeTickToLabelConversion(axis: typings.chartJs.distTypesIndexMod.Scale[CoreScaleOptions]): Unit
   
   /**
     * Callback called before the update process starts.
     */
-  def beforeUpdate(axis: typings.chartJs.mod.Scale[CoreScaleOptions]): Unit
+  def beforeUpdate(axis: typings.chartJs.distTypesIndexMod.Scale[CoreScaleOptions]): Unit
   
   /**
     * if true, scale will include 0 if it is not already included.
@@ -103,7 +104,7 @@ trait typeradialLinearRadialLin extends StObject {
     */
   var display: Boolean | auto
   
-  var grid: GridLineOptions
+  var grid: PartialGridLineOptions
   
   /**
     * User defined maximum number for the scale, overrides maximum value from data.
@@ -148,26 +149,27 @@ trait typeradialLinearRadialLin extends StObject {
 object typeradialLinearRadialLin {
   
   inline def apply(
-    afterBuildTicks: typings.chartJs.mod.Scale[CoreScaleOptions] => Unit,
-    afterCalculateLabelRotation: typings.chartJs.mod.Scale[CoreScaleOptions] => Unit,
-    afterDataLimits: typings.chartJs.mod.Scale[CoreScaleOptions] => Unit,
-    afterFit: typings.chartJs.mod.Scale[CoreScaleOptions] => Unit,
-    afterSetDimensions: typings.chartJs.mod.Scale[CoreScaleOptions] => Unit,
-    afterTickToLabelConversion: typings.chartJs.mod.Scale[CoreScaleOptions] => Unit,
-    afterUpdate: typings.chartJs.mod.Scale[CoreScaleOptions] => Unit,
+    afterBuildTicks: typings.chartJs.distTypesIndexMod.Scale[CoreScaleOptions] => Unit,
+    afterCalculateLabelRotation: typings.chartJs.distTypesIndexMod.Scale[CoreScaleOptions] => Unit,
+    afterDataLimits: typings.chartJs.distTypesIndexMod.Scale[CoreScaleOptions] => Unit,
+    afterFit: typings.chartJs.distTypesIndexMod.Scale[CoreScaleOptions] => Unit,
+    afterSetDimensions: typings.chartJs.distTypesIndexMod.Scale[CoreScaleOptions] => Unit,
+    afterTickToLabelConversion: typings.chartJs.distTypesIndexMod.Scale[CoreScaleOptions] => Unit,
+    afterUpdate: typings.chartJs.distTypesIndexMod.Scale[CoreScaleOptions] => Unit,
     alignToPixels: Boolean,
     angleLines: BorderDash,
     animate: Boolean,
-    beforeBuildTicks: typings.chartJs.mod.Scale[CoreScaleOptions] => Unit,
-    beforeCalculateLabelRotation: typings.chartJs.mod.Scale[CoreScaleOptions] => Unit,
-    beforeDataLimits: typings.chartJs.mod.Scale[CoreScaleOptions] => Unit,
-    beforeFit: typings.chartJs.mod.Scale[CoreScaleOptions] => Unit,
-    beforeSetDimensions: typings.chartJs.mod.Scale[CoreScaleOptions] => Unit,
-    beforeTickToLabelConversion: typings.chartJs.mod.Scale[CoreScaleOptions] => Unit,
-    beforeUpdate: typings.chartJs.mod.Scale[CoreScaleOptions] => Unit,
+    backgroundColor: typings.chartJs.distTypesColorMod.Color,
+    beforeBuildTicks: typings.chartJs.distTypesIndexMod.Scale[CoreScaleOptions] => Unit,
+    beforeCalculateLabelRotation: typings.chartJs.distTypesIndexMod.Scale[CoreScaleOptions] => Unit,
+    beforeDataLimits: typings.chartJs.distTypesIndexMod.Scale[CoreScaleOptions] => Unit,
+    beforeFit: typings.chartJs.distTypesIndexMod.Scale[CoreScaleOptions] => Unit,
+    beforeSetDimensions: typings.chartJs.distTypesIndexMod.Scale[CoreScaleOptions] => Unit,
+    beforeTickToLabelConversion: typings.chartJs.distTypesIndexMod.Scale[CoreScaleOptions] => Unit,
+    beforeUpdate: typings.chartJs.distTypesIndexMod.Scale[CoreScaleOptions] => Unit,
     beginAtZero: Boolean,
     display: Boolean | auto,
-    grid: GridLineOptions,
+    grid: PartialGridLineOptions,
     max: Double,
     min: Double,
     pointLabels: BackdropPadding,
@@ -178,7 +180,7 @@ object typeradialLinearRadialLin {
     ticks: RadialTickOptions,
     weight: Double
   ): typeradialLinearRadialLin = {
-    val __obj = js.Dynamic.literal(afterBuildTicks = js.Any.fromFunction1(afterBuildTicks), afterCalculateLabelRotation = js.Any.fromFunction1(afterCalculateLabelRotation), afterDataLimits = js.Any.fromFunction1(afterDataLimits), afterFit = js.Any.fromFunction1(afterFit), afterSetDimensions = js.Any.fromFunction1(afterSetDimensions), afterTickToLabelConversion = js.Any.fromFunction1(afterTickToLabelConversion), afterUpdate = js.Any.fromFunction1(afterUpdate), alignToPixels = alignToPixels.asInstanceOf[js.Any], angleLines = angleLines.asInstanceOf[js.Any], animate = animate.asInstanceOf[js.Any], beforeBuildTicks = js.Any.fromFunction1(beforeBuildTicks), beforeCalculateLabelRotation = js.Any.fromFunction1(beforeCalculateLabelRotation), beforeDataLimits = js.Any.fromFunction1(beforeDataLimits), beforeFit = js.Any.fromFunction1(beforeFit), beforeSetDimensions = js.Any.fromFunction1(beforeSetDimensions), beforeTickToLabelConversion = js.Any.fromFunction1(beforeTickToLabelConversion), beforeUpdate = js.Any.fromFunction1(beforeUpdate), beginAtZero = beginAtZero.asInstanceOf[js.Any], display = display.asInstanceOf[js.Any], grid = grid.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], pointLabels = pointLabels.asInstanceOf[js.Any], reverse = reverse.asInstanceOf[js.Any], startAngle = startAngle.asInstanceOf[js.Any], suggestedMax = suggestedMax.asInstanceOf[js.Any], suggestedMin = suggestedMin.asInstanceOf[js.Any], ticks = ticks.asInstanceOf[js.Any], weight = weight.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(afterBuildTicks = js.Any.fromFunction1(afterBuildTicks), afterCalculateLabelRotation = js.Any.fromFunction1(afterCalculateLabelRotation), afterDataLimits = js.Any.fromFunction1(afterDataLimits), afterFit = js.Any.fromFunction1(afterFit), afterSetDimensions = js.Any.fromFunction1(afterSetDimensions), afterTickToLabelConversion = js.Any.fromFunction1(afterTickToLabelConversion), afterUpdate = js.Any.fromFunction1(afterUpdate), alignToPixels = alignToPixels.asInstanceOf[js.Any], angleLines = angleLines.asInstanceOf[js.Any], animate = animate.asInstanceOf[js.Any], backgroundColor = backgroundColor.asInstanceOf[js.Any], beforeBuildTicks = js.Any.fromFunction1(beforeBuildTicks), beforeCalculateLabelRotation = js.Any.fromFunction1(beforeCalculateLabelRotation), beforeDataLimits = js.Any.fromFunction1(beforeDataLimits), beforeFit = js.Any.fromFunction1(beforeFit), beforeSetDimensions = js.Any.fromFunction1(beforeSetDimensions), beforeTickToLabelConversion = js.Any.fromFunction1(beforeTickToLabelConversion), beforeUpdate = js.Any.fromFunction1(beforeUpdate), beginAtZero = beginAtZero.asInstanceOf[js.Any], display = display.asInstanceOf[js.Any], grid = grid.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], pointLabels = pointLabels.asInstanceOf[js.Any], reverse = reverse.asInstanceOf[js.Any], startAngle = startAngle.asInstanceOf[js.Any], suggestedMax = suggestedMax.asInstanceOf[js.Any], suggestedMin = suggestedMin.asInstanceOf[js.Any], ticks = ticks.asInstanceOf[js.Any], weight = weight.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("radialLinear")
     __obj.asInstanceOf[typeradialLinearRadialLin]
   }
@@ -186,19 +188,19 @@ object typeradialLinearRadialLin {
   @scala.inline
   implicit open class MutableBuilder[Self <: typeradialLinearRadialLin] (val x: Self) extends AnyVal {
     
-    inline def setAfterBuildTicks(value: typings.chartJs.mod.Scale[CoreScaleOptions] => Unit): Self = StObject.set(x, "afterBuildTicks", js.Any.fromFunction1(value))
+    inline def setAfterBuildTicks(value: typings.chartJs.distTypesIndexMod.Scale[CoreScaleOptions] => Unit): Self = StObject.set(x, "afterBuildTicks", js.Any.fromFunction1(value))
     
-    inline def setAfterCalculateLabelRotation(value: typings.chartJs.mod.Scale[CoreScaleOptions] => Unit): Self = StObject.set(x, "afterCalculateLabelRotation", js.Any.fromFunction1(value))
+    inline def setAfterCalculateLabelRotation(value: typings.chartJs.distTypesIndexMod.Scale[CoreScaleOptions] => Unit): Self = StObject.set(x, "afterCalculateLabelRotation", js.Any.fromFunction1(value))
     
-    inline def setAfterDataLimits(value: typings.chartJs.mod.Scale[CoreScaleOptions] => Unit): Self = StObject.set(x, "afterDataLimits", js.Any.fromFunction1(value))
+    inline def setAfterDataLimits(value: typings.chartJs.distTypesIndexMod.Scale[CoreScaleOptions] => Unit): Self = StObject.set(x, "afterDataLimits", js.Any.fromFunction1(value))
     
-    inline def setAfterFit(value: typings.chartJs.mod.Scale[CoreScaleOptions] => Unit): Self = StObject.set(x, "afterFit", js.Any.fromFunction1(value))
+    inline def setAfterFit(value: typings.chartJs.distTypesIndexMod.Scale[CoreScaleOptions] => Unit): Self = StObject.set(x, "afterFit", js.Any.fromFunction1(value))
     
-    inline def setAfterSetDimensions(value: typings.chartJs.mod.Scale[CoreScaleOptions] => Unit): Self = StObject.set(x, "afterSetDimensions", js.Any.fromFunction1(value))
+    inline def setAfterSetDimensions(value: typings.chartJs.distTypesIndexMod.Scale[CoreScaleOptions] => Unit): Self = StObject.set(x, "afterSetDimensions", js.Any.fromFunction1(value))
     
-    inline def setAfterTickToLabelConversion(value: typings.chartJs.mod.Scale[CoreScaleOptions] => Unit): Self = StObject.set(x, "afterTickToLabelConversion", js.Any.fromFunction1(value))
+    inline def setAfterTickToLabelConversion(value: typings.chartJs.distTypesIndexMod.Scale[CoreScaleOptions] => Unit): Self = StObject.set(x, "afterTickToLabelConversion", js.Any.fromFunction1(value))
     
-    inline def setAfterUpdate(value: typings.chartJs.mod.Scale[CoreScaleOptions] => Unit): Self = StObject.set(x, "afterUpdate", js.Any.fromFunction1(value))
+    inline def setAfterUpdate(value: typings.chartJs.distTypesIndexMod.Scale[CoreScaleOptions] => Unit): Self = StObject.set(x, "afterUpdate", js.Any.fromFunction1(value))
     
     inline def setAlignToPixels(value: Boolean): Self = StObject.set(x, "alignToPixels", value.asInstanceOf[js.Any])
     
@@ -206,25 +208,27 @@ object typeradialLinearRadialLin {
     
     inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
-    inline def setBeforeBuildTicks(value: typings.chartJs.mod.Scale[CoreScaleOptions] => Unit): Self = StObject.set(x, "beforeBuildTicks", js.Any.fromFunction1(value))
+    inline def setBackgroundColor(value: typings.chartJs.distTypesColorMod.Color): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
-    inline def setBeforeCalculateLabelRotation(value: typings.chartJs.mod.Scale[CoreScaleOptions] => Unit): Self = StObject.set(x, "beforeCalculateLabelRotation", js.Any.fromFunction1(value))
+    inline def setBeforeBuildTicks(value: typings.chartJs.distTypesIndexMod.Scale[CoreScaleOptions] => Unit): Self = StObject.set(x, "beforeBuildTicks", js.Any.fromFunction1(value))
     
-    inline def setBeforeDataLimits(value: typings.chartJs.mod.Scale[CoreScaleOptions] => Unit): Self = StObject.set(x, "beforeDataLimits", js.Any.fromFunction1(value))
+    inline def setBeforeCalculateLabelRotation(value: typings.chartJs.distTypesIndexMod.Scale[CoreScaleOptions] => Unit): Self = StObject.set(x, "beforeCalculateLabelRotation", js.Any.fromFunction1(value))
     
-    inline def setBeforeFit(value: typings.chartJs.mod.Scale[CoreScaleOptions] => Unit): Self = StObject.set(x, "beforeFit", js.Any.fromFunction1(value))
+    inline def setBeforeDataLimits(value: typings.chartJs.distTypesIndexMod.Scale[CoreScaleOptions] => Unit): Self = StObject.set(x, "beforeDataLimits", js.Any.fromFunction1(value))
     
-    inline def setBeforeSetDimensions(value: typings.chartJs.mod.Scale[CoreScaleOptions] => Unit): Self = StObject.set(x, "beforeSetDimensions", js.Any.fromFunction1(value))
+    inline def setBeforeFit(value: typings.chartJs.distTypesIndexMod.Scale[CoreScaleOptions] => Unit): Self = StObject.set(x, "beforeFit", js.Any.fromFunction1(value))
     
-    inline def setBeforeTickToLabelConversion(value: typings.chartJs.mod.Scale[CoreScaleOptions] => Unit): Self = StObject.set(x, "beforeTickToLabelConversion", js.Any.fromFunction1(value))
+    inline def setBeforeSetDimensions(value: typings.chartJs.distTypesIndexMod.Scale[CoreScaleOptions] => Unit): Self = StObject.set(x, "beforeSetDimensions", js.Any.fromFunction1(value))
     
-    inline def setBeforeUpdate(value: typings.chartJs.mod.Scale[CoreScaleOptions] => Unit): Self = StObject.set(x, "beforeUpdate", js.Any.fromFunction1(value))
+    inline def setBeforeTickToLabelConversion(value: typings.chartJs.distTypesIndexMod.Scale[CoreScaleOptions] => Unit): Self = StObject.set(x, "beforeTickToLabelConversion", js.Any.fromFunction1(value))
+    
+    inline def setBeforeUpdate(value: typings.chartJs.distTypesIndexMod.Scale[CoreScaleOptions] => Unit): Self = StObject.set(x, "beforeUpdate", js.Any.fromFunction1(value))
     
     inline def setBeginAtZero(value: Boolean): Self = StObject.set(x, "beginAtZero", value.asInstanceOf[js.Any])
     
     inline def setDisplay(value: Boolean | auto): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     
-    inline def setGrid(value: GridLineOptions): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
+    inline def setGrid(value: PartialGridLineOptions): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
     
     inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     

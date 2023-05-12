@@ -22,7 +22,7 @@ trait InstanceMetadataOptionsResponse extends StObject {
   var HttpPutResponseHopLimit: js.UndefOr[Integer] = js.undefined
   
   /**
-    * The state of token usage for your instance metadata requests. If the state is optional, you can choose to retrieve instance metadata with or without a session token on your request. If you retrieve the IAM role credentials without a token, the version 1.0 role credentials are returned. If you retrieve the IAM role credentials using a valid session token, the version 2.0 role credentials are returned. If the state is required, you must send a session token with any instance metadata retrieval requests. In this state, retrieving the IAM role credentials always returns the version 2.0 credentials; the version 1.0 credentials are not available. Default: optional 
+    * IMDSv2 uses token-backed sessions. Indicates whether the use of HTTP tokens is optional (in other words, indicates whether the use of IMDSv2 is optional) or required (in other words, indicates whether the use of IMDSv2 is required).    optional - When IMDSv2 is optional, you can choose to retrieve instance metadata with or without a session token in your request. If you retrieve the IAM role credentials without a token, the IMDSv1 role credentials are returned. If you retrieve the IAM role credentials using a valid session token, the IMDSv2 role credentials are returned.    required - When IMDSv2 is required, you must send a session token with any instance metadata retrieval requests. In this state, retrieving the IAM role credentials always returns IMDSv2 credentials; IMDSv1 credentials are not available.   Default: optional 
     */
   var HttpTokens: js.UndefOr[HttpTokensState] = js.undefined
   

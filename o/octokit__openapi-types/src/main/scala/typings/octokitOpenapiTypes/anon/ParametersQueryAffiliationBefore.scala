@@ -8,11 +8,11 @@ trait ParametersQueryAffiliationBefore extends StObject {
   
   var parameters: QueryAffiliationBefore
   
-  var responses: `200Content591`
+  var responses: `200Content663`
 }
 object ParametersQueryAffiliationBefore {
   
-  inline def apply(parameters: QueryAffiliationBefore, responses: `200Content591`): ParametersQueryAffiliationBefore = {
+  inline def apply(parameters: QueryAffiliationBefore, responses: `200Content663`): ParametersQueryAffiliationBefore = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], responses = responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersQueryAffiliationBefore]
   }
@@ -22,6 +22,6 @@ object ParametersQueryAffiliationBefore {
     
     inline def setParameters(value: QueryAffiliationBefore): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    inline def setResponses(value: `200Content591`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: `200Content663`): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
   }
 }

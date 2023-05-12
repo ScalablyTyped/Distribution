@@ -9,7 +9,7 @@ trait predominanceCreateRendererParamsFields extends StObject {
   /**
     * The label describing the field name (or category) in the legend.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-predominance.html#createRenderer)
+    * [Read more...](global.html)
     */
   var label: js.UndefOr[String] = js.undefined
   

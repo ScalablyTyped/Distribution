@@ -83,12 +83,20 @@ object reactIntlStrings {
   inline def button: button = "button".asInstanceOf[button]
   
   @js.native
+  sealed trait calendar extends StObject
+  inline def calendar: calendar = "calendar".asInstanceOf[calendar]
+  
+  @js.native
   sealed trait canvas extends StObject
   inline def canvas: canvas = "canvas".asInstanceOf[canvas]
   
   @js.native
   sealed trait caption extends StObject
   inline def caption: caption = "caption".asInstanceOf[caption]
+  
+  @js.native
+  sealed trait center extends StObject
+  inline def center: center = "center".asInstanceOf[center]
   
   @js.native
   sealed trait cite extends StObject
@@ -127,6 +135,10 @@ object reactIntlStrings {
   inline def datalist: datalist = "datalist".asInstanceOf[datalist]
   
   @js.native
+  sealed trait dateTimeField extends StObject
+  inline def dateTimeField: dateTimeField = "dateTimeField".asInstanceOf[dateTimeField]
+  
+  @js.native
   sealed trait dd extends StObject
   inline def dd: dd = "dd".asInstanceOf[dd]
   
@@ -141,6 +153,10 @@ object reactIntlStrings {
   @js.native
   sealed trait dfn extends StObject
   inline def dfn: dfn = "dfn".asInstanceOf[dfn]
+  
+  @js.native
+  sealed trait dialect extends StObject
+  inline def dialect: dialect = "dialect".asInstanceOf[dialect]
   
   @js.native
   sealed trait dialog extends StObject

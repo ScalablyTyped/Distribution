@@ -1,7 +1,7 @@
 
 # Scala.js typings for teppeis__multimaps
 
-Typings are for version 2.0.0
+Typings are for version 3.0.0
 
 ## Library description:
 Multimap classes for TypeScript and JavaScript

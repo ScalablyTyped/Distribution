@@ -1,7 +1,5 @@
 package typings.schematicsAngular.thirdPartyGithubDotcomMicrosoftTypeScriptLibTypescriptMod
 
-import typings.schematicsAngular.thirdPartyGithubDotcomMicrosoftTypeScriptLibTypescriptMod.ModuleKind.CommonJS
-import typings.schematicsAngular.thirdPartyGithubDotcomMicrosoftTypeScriptLibTypescriptMod.ModuleKind.ESNext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,6 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SourceFile
   extends StObject
      with Declaration
+     with LocalsContainer
      with BlockLike {
   
   var amdDependencies: js.Array[AmdDependency] = js.native
@@ -55,7 +54,7 @@ trait SourceFile
     * of `node`). If so, this field will be unset and source files will be considered to be
     * CommonJS-output-format by the node module transformer and type checker, regardless of extension or context.
     */
-  var impliedNodeFormat: js.UndefOr[ESNext | CommonJS] = js.native
+  var impliedNodeFormat: js.UndefOr[ResolutionMode] = js.native
   
   var isDeclarationFile: Boolean = js.native
   

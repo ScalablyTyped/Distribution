@@ -16,7 +16,7 @@ object libIconsTwitterSquareFilledMod extends Shortcut {
   @js.native
   trait TwitterSquareFilledIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_TwitterSquareFilledIconType: String = js.native

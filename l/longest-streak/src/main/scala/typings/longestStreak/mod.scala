@@ -10,5 +10,5 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def longestStreak(value: String, character: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("longestStreak")(value.asInstanceOf[js.Any], character.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def longestStreak(value: String, substring: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("longestStreak")(value.asInstanceOf[js.Any], substring.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

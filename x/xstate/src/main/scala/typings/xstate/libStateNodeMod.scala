@@ -255,8 +255,6 @@ object libStateNodeMod {
       */
     /* private */ var getDelayedTransitions: Any = js.native
     
-    /* private */ var getExternalReentryNodes: Any = js.native
-    
     /**
       * Retrieves state nodes from a relative path to this state node.
       *
@@ -267,6 +265,8 @@ object libStateNodeMod {
     
     def getInitialState(stateValue: StateValue): State[TContext, TEvent, TStateSchema, TTypestate, TResolvedTypesMeta] = js.native
     def getInitialState(stateValue: StateValue, context: TContext): State[TContext, TEvent, TStateSchema, TTypestate, TResolvedTypesMeta] = js.native
+    
+    /* private */ var getPotentiallyReenteringNodes: Any = js.native
     
     /**
       * Returns the leaf nodes from a state path relative to this state node.
@@ -410,12 +410,12 @@ object libStateNodeMod {
     /**
       * The action(s) to be executed upon entering the state node.
       */
-    var onEntry: js.Array[ActionObject[TContext, TEvent]] = js.native
+    var onEntry: js.Array[ActionObject[TContext, TEvent, TEvent, BaseActionObject]] = js.native
     
     /**
       * The action(s) to be executed upon exiting the state node.
       */
-    var onExit: js.Array[ActionObject[TContext, TEvent]] = js.native
+    var onExit: js.Array[ActionObject[TContext, TEvent, TEvent, BaseActionObject]] = js.native
     
     var options: MachineOptions[TContext, TEvent, BaseActionObject, ServiceMap, TypegenDisabled] = js.native
     

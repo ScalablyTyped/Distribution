@@ -2,7 +2,6 @@ package typings.webpack.mod
 
 import typings.std.IterableIterator
 import typings.std.Set
-import typings.webpack.anon.Write
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,7 +30,7 @@ trait LazySet[T] extends StObject {
   
   def keys(): IterableIterator[T] = js.native
   
-  def serialize(__0: Write): Unit = js.native
+  def serialize(__0: ObjectSerializerContext): Unit = js.native
   
   def size: Double = js.native
   

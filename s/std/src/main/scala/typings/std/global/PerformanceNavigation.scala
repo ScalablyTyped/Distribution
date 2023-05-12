@@ -1,5 +1,9 @@
 package typings.std.global
 
+import typings.std.stdInts.`0`
+import typings.std.stdInts.`1`
+import typings.std.stdInts.`255`
+import typings.std.stdInts.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,19 +18,19 @@ open class PerformanceNavigation ()
   
   /* standard dom */
   /* CompleteClass */
-  override val TYPE_BACK_FORWARD: Double = js.native
+  override val TYPE_BACK_FORWARD: `2` = js.native
   
   /* standard dom */
   /* CompleteClass */
-  override val TYPE_NAVIGATE: Double = js.native
+  override val TYPE_NAVIGATE: `0` = js.native
   
   /* standard dom */
   /* CompleteClass */
-  override val TYPE_RELOAD: Double = js.native
+  override val TYPE_RELOAD: `1` = js.native
   
   /* standard dom */
   /* CompleteClass */
-  override val TYPE_RESERVED: Double = js.native
+  override val TYPE_RESERVED: `255` = js.native
   
   /** @deprecated */
   /* standard dom */
@@ -49,20 +53,20 @@ object PerformanceNavigation {
   /* standard dom */
   @JSGlobal("PerformanceNavigation.TYPE_BACK_FORWARD")
   @js.native
-  val TYPE_BACK_FORWARD: Double = js.native
+  val TYPE_BACK_FORWARD: `2` = js.native
   
   /* standard dom */
   @JSGlobal("PerformanceNavigation.TYPE_NAVIGATE")
   @js.native
-  val TYPE_NAVIGATE: Double = js.native
+  val TYPE_NAVIGATE: `0` = js.native
   
   /* standard dom */
   @JSGlobal("PerformanceNavigation.TYPE_RELOAD")
   @js.native
-  val TYPE_RELOAD: Double = js.native
+  val TYPE_RELOAD: `1` = js.native
   
   /* standard dom */
   @JSGlobal("PerformanceNavigation.TYPE_RESERVED")
   @js.native
-  val TYPE_RESERVED: Double = js.native
+  val TYPE_RESERVED: `255` = js.native
 }

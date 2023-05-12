@@ -16,8 +16,9 @@ import typings.atlaskitMotion.distTypesEnteringTypesMod.Fade
 import typings.atlaskitMotion.distTypesEnteringTypesMod.Transition
 import typings.atlaskitMotion.distTypesResizingHeightMod.ResizingHeightOpts
 import typings.atlaskitMotion.distTypesUtilsCurvesMod.AnimationCurve
+import typings.emotionSerialize.mod.CSSObject
 import typings.react.mod.FC
-import typings.react.mod.ReactNode
+import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -50,7 +51,7 @@ object mod {
   @js.native
   val FadeIn: FC[FadeKeyframesMotionProps] = js.native
   
-  inline def ResizingHeight(param0: ResizingHeightOptschildre): ReactNode = ^.asInstanceOf[js.Dynamic].applyDynamic("ResizingHeight")(param0.asInstanceOf[js.Any]).asInstanceOf[ReactNode]
+  inline def ResizingHeight(param0: ResizingHeightOptschildre): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ResizingHeight")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   /**
     * __ShrinkOut__
@@ -114,10 +115,10 @@ object mod {
   @js.native
   val easeOut: AnimationCurve = js.native
   
-  inline def fadeInAnimation(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("fadeInAnimation")().asInstanceOf[Any]
-  inline def fadeInAnimation(direction: Unit, distance: Distance): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("fadeInAnimation")(direction.asInstanceOf[js.Any], distance.asInstanceOf[js.Any])).asInstanceOf[Any]
-  inline def fadeInAnimation(direction: Direction): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("fadeInAnimation")(direction.asInstanceOf[js.Any]).asInstanceOf[Any]
-  inline def fadeInAnimation(direction: Direction, distance: Distance): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("fadeInAnimation")(direction.asInstanceOf[js.Any], distance.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def fadeInAnimation(): CSSObject = ^.asInstanceOf[js.Dynamic].applyDynamic("fadeInAnimation")().asInstanceOf[CSSObject]
+  inline def fadeInAnimation(direction: Unit, distance: Distance): CSSObject = (^.asInstanceOf[js.Dynamic].applyDynamic("fadeInAnimation")(direction.asInstanceOf[js.Any], distance.asInstanceOf[js.Any])).asInstanceOf[CSSObject]
+  inline def fadeInAnimation(direction: Direction): CSSObject = ^.asInstanceOf[js.Dynamic].applyDynamic("fadeInAnimation")(direction.asInstanceOf[js.Any]).asInstanceOf[CSSObject]
+  inline def fadeInAnimation(direction: Direction, distance: Distance): CSSObject = (^.asInstanceOf[js.Dynamic].applyDynamic("fadeInAnimation")(direction.asInstanceOf[js.Any], distance.asInstanceOf[js.Any])).asInstanceOf[CSSObject]
   
   inline def isReducedMotion(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isReducedMotion")().asInstanceOf[Boolean]
   
@@ -131,9 +132,9 @@ object mod {
   
   inline def prefersReducedMotion(): Mediaprefersreducedmotionreduce = ^.asInstanceOf[js.Dynamic].applyDynamic("prefersReducedMotion")().asInstanceOf[Mediaprefersreducedmotionreduce]
   
-  inline def shrinkOutAnimation(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("shrinkOutAnimation")().asInstanceOf[Any]
+  inline def shrinkOutAnimation(): CSSObject = ^.asInstanceOf[js.Dynamic].applyDynamic("shrinkOutAnimation")().asInstanceOf[CSSObject]
   
-  inline def slideInAnimation(from: Direction, state: Transition, fade: Fade): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("slideInAnimation")(from.asInstanceOf[js.Any], state.asInstanceOf[js.Any], fade.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def slideInAnimation(from: Direction, state: Transition, fade: Fade): CSSObject = (^.asInstanceOf[js.Dynamic].applyDynamic("slideInAnimation")(from.asInstanceOf[js.Any], state.asInstanceOf[js.Any], fade.asInstanceOf[js.Any])).asInstanceOf[CSSObject]
   
   @JSImport("@atlaskit/motion", "smallDurationMs")
   @js.native
@@ -146,5 +147,5 @@ object mod {
   inline def useResizingHeight(): RefCallbackRef = ^.asInstanceOf[js.Dynamic].applyDynamic("useResizingHeight")().asInstanceOf[RefCallbackRef]
   inline def useResizingHeight(param0: ResizingHeightOpts): RefCallbackRef = ^.asInstanceOf[js.Dynamic].applyDynamic("useResizingHeight")(param0.asInstanceOf[js.Any]).asInstanceOf[RefCallbackRef]
   
-  inline def zoomInAnimation(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("zoomInAnimation")().asInstanceOf[Any]
+  inline def zoomInAnimation(): CSSObject = ^.asInstanceOf[js.Dynamic].applyDynamic("zoomInAnimation")().asInstanceOf[CSSObject]
 }

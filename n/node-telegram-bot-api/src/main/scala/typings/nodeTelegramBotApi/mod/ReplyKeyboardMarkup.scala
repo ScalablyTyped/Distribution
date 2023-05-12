@@ -6,6 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ReplyKeyboardMarkup extends StObject {
   
+  var input_field_placeholder: js.UndefOr[String] = js.undefined
+  
+  var is_persistent: js.UndefOr[Boolean] = js.undefined
+  
   var keyboard: js.Array[js.Array[KeyboardButton]]
   
   var one_time_keyboard: js.UndefOr[Boolean] = js.undefined
@@ -23,6 +27,14 @@ object ReplyKeyboardMarkup {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: ReplyKeyboardMarkup] (val x: Self) extends AnyVal {
+    
+    inline def setInput_field_placeholder(value: String): Self = StObject.set(x, "input_field_placeholder", value.asInstanceOf[js.Any])
+    
+    inline def setInput_field_placeholderUndefined: Self = StObject.set(x, "input_field_placeholder", js.undefined)
+    
+    inline def setIs_persistent(value: Boolean): Self = StObject.set(x, "is_persistent", value.asInstanceOf[js.Any])
+    
+    inline def setIs_persistentUndefined: Self = StObject.set(x, "is_persistent", js.undefined)
     
     inline def setKeyboard(value: js.Array[js.Array[KeyboardButton]]): Self = StObject.set(x, "keyboard", value.asInstanceOf[js.Any])
     

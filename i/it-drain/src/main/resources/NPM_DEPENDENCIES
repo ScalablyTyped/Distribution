@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "it-drain" : "2.0.0"
+      "it-drain" : "3.0.2"
     }
   ],
   "test-dependencies" : [
     {
-      "it-drain" : "2.0.0"
+      "it-drain" : "3.0.2"
     }
   ],
   "compile-devDependencies" : [

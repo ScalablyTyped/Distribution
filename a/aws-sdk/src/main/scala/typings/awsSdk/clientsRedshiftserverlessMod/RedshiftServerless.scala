@@ -185,12 +185,12 @@ trait RedshiftServerless extends Service {
   ): Request[DeleteWorkgroupResponse, AWSError] = js.native
   
   /**
-    * Returns a database user name and temporary password with temporary authorization to log in to Amazon Redshift Serverless. By default, the temporary credentials expire in 900 seconds. You can optionally specify a duration between 900 seconds (15 minutes) and 3600 seconds (60 minutes).  &lt;p&gt; The Identity and Access Management (IAM) user or role that runs GetCredentials must have an IAM policy attached that allows access to all necessary actions and resources. &lt;/p&gt; &lt;p&gt; If the &lt;code&gt;DbName&lt;/code&gt; parameter is specified, the IAM policy must allow access to the resource dbname for the specified database name.&lt;/p&gt; 
+    * Returns a database user name and temporary password with temporary authorization to log in to Amazon Redshift Serverless. By default, the temporary credentials expire in 900 seconds. You can optionally specify a duration between 900 seconds (15 minutes) and 3600 seconds (60 minutes).  &lt;p&gt;The Identity and Access Management (IAM) user or role that runs GetCredentials must have an IAM policy attached that allows access to all necessary actions and resources.&lt;/p&gt; &lt;p&gt;If the &lt;code&gt;DbName&lt;/code&gt; parameter is specified, the IAM policy must allow access to the resource dbname for the specified database name.&lt;/p&gt; 
     */
   def getCredentials(): Request[GetCredentialsResponse, AWSError] = js.native
   def getCredentials(callback: js.Function2[/* err */ AWSError, /* data */ GetCredentialsResponse, Unit]): Request[GetCredentialsResponse, AWSError] = js.native
   /**
-    * Returns a database user name and temporary password with temporary authorization to log in to Amazon Redshift Serverless. By default, the temporary credentials expire in 900 seconds. You can optionally specify a duration between 900 seconds (15 minutes) and 3600 seconds (60 minutes).  &lt;p&gt; The Identity and Access Management (IAM) user or role that runs GetCredentials must have an IAM policy attached that allows access to all necessary actions and resources. &lt;/p&gt; &lt;p&gt; If the &lt;code&gt;DbName&lt;/code&gt; parameter is specified, the IAM policy must allow access to the resource dbname for the specified database name.&lt;/p&gt; 
+    * Returns a database user name and temporary password with temporary authorization to log in to Amazon Redshift Serverless. By default, the temporary credentials expire in 900 seconds. You can optionally specify a duration between 900 seconds (15 minutes) and 3600 seconds (60 minutes).  &lt;p&gt;The Identity and Access Management (IAM) user or role that runs GetCredentials must have an IAM policy attached that allows access to all necessary actions and resources.&lt;/p&gt; &lt;p&gt;If the &lt;code&gt;DbName&lt;/code&gt; parameter is specified, the IAM policy must allow access to the resource dbname for the specified database name.&lt;/p&gt; 
     */
   def getCredentials(params: GetCredentialsRequest): Request[GetCredentialsResponse, AWSError] = js.native
   def getCredentials(
@@ -267,6 +267,20 @@ trait RedshiftServerless extends Service {
     params: GetSnapshotRequest,
     callback: js.Function2[/* err */ AWSError, /* data */ GetSnapshotResponse, Unit]
   ): Request[GetSnapshotResponse, AWSError] = js.native
+  
+  /**
+    * Returns information about a TableRestoreStatus object.
+    */
+  def getTableRestoreStatus(): Request[GetTableRestoreStatusResponse, AWSError] = js.native
+  def getTableRestoreStatus(callback: js.Function2[/* err */ AWSError, /* data */ GetTableRestoreStatusResponse, Unit]): Request[GetTableRestoreStatusResponse, AWSError] = js.native
+  /**
+    * Returns information about a TableRestoreStatus object.
+    */
+  def getTableRestoreStatus(params: GetTableRestoreStatusRequest): Request[GetTableRestoreStatusResponse, AWSError] = js.native
+  def getTableRestoreStatus(
+    params: GetTableRestoreStatusRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ GetTableRestoreStatusResponse, Unit]
+  ): Request[GetTableRestoreStatusResponse, AWSError] = js.native
   
   /**
     * Returns information about a usage limit.
@@ -353,6 +367,20 @@ trait RedshiftServerless extends Service {
   ): Request[ListSnapshotsResponse, AWSError] = js.native
   
   /**
+    * Returns information about an array of TableRestoreStatus objects.
+    */
+  def listTableRestoreStatus(): Request[ListTableRestoreStatusResponse, AWSError] = js.native
+  def listTableRestoreStatus(callback: js.Function2[/* err */ AWSError, /* data */ ListTableRestoreStatusResponse, Unit]): Request[ListTableRestoreStatusResponse, AWSError] = js.native
+  /**
+    * Returns information about an array of TableRestoreStatus objects.
+    */
+  def listTableRestoreStatus(params: ListTableRestoreStatusRequest): Request[ListTableRestoreStatusResponse, AWSError] = js.native
+  def listTableRestoreStatus(
+    params: ListTableRestoreStatusRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ ListTableRestoreStatusResponse, Unit]
+  ): Request[ListTableRestoreStatusResponse, AWSError] = js.native
+  
+  /**
     * Lists the tags assigned to a resource.
     */
   def listTagsForResource(): Request[ListTagsForResourceResponse, AWSError] = js.native
@@ -437,6 +465,20 @@ trait RedshiftServerless extends Service {
   ): Request[RestoreFromSnapshotResponse, AWSError] = js.native
   
   /**
+    * Restores a table from a snapshot to your Amazon Redshift Serverless instance. You can't use this operation to restore tables with interleaved sort keys.
+    */
+  def restoreTableFromSnapshot(): Request[RestoreTableFromSnapshotResponse, AWSError] = js.native
+  def restoreTableFromSnapshot(callback: js.Function2[/* err */ AWSError, /* data */ RestoreTableFromSnapshotResponse, Unit]): Request[RestoreTableFromSnapshotResponse, AWSError] = js.native
+  /**
+    * Restores a table from a snapshot to your Amazon Redshift Serverless instance. You can't use this operation to restore tables with interleaved sort keys.
+    */
+  def restoreTableFromSnapshot(params: RestoreTableFromSnapshotRequest): Request[RestoreTableFromSnapshotResponse, AWSError] = js.native
+  def restoreTableFromSnapshot(
+    params: RestoreTableFromSnapshotRequest,
+    callback: js.Function2[/* err */ AWSError, /* data */ RestoreTableFromSnapshotResponse, Unit]
+  ): Request[RestoreTableFromSnapshotResponse, AWSError] = js.native
+  
+  /**
     * Assigns one or more tags to a resource.
     */
   def tagResource(): Request[TagResourceResponse, AWSError] = js.native
@@ -479,12 +521,12 @@ trait RedshiftServerless extends Service {
   ): Request[UpdateEndpointAccessResponse, AWSError] = js.native
   
   /**
-    * Updates a namespace with the specified settings.
+    * Updates a namespace with the specified settings. Unless required, you can't update multiple parameters in one request. For example, you must specify both adminUsername and adminUserPassword to update either field, but you can't update both kmsKeyId and logExports in a single request.
     */
   def updateNamespace(): Request[UpdateNamespaceResponse, AWSError] = js.native
   def updateNamespace(callback: js.Function2[/* err */ AWSError, /* data */ UpdateNamespaceResponse, Unit]): Request[UpdateNamespaceResponse, AWSError] = js.native
   /**
-    * Updates a namespace with the specified settings.
+    * Updates a namespace with the specified settings. Unless required, you can't update multiple parameters in one request. For example, you must specify both adminUsername and adminUserPassword to update either field, but you can't update both kmsKeyId and logExports in a single request.
     */
   def updateNamespace(params: UpdateNamespaceRequest): Request[UpdateNamespaceResponse, AWSError] = js.native
   def updateNamespace(
@@ -521,12 +563,12 @@ trait RedshiftServerless extends Service {
   ): Request[UpdateUsageLimitResponse, AWSError] = js.native
   
   /**
-    * Updates a workgroup with the specified configuration settings.
+    * Updates a workgroup with the specified configuration settings. You can't update multiple parameters in one request. For example, you can update baseCapacity or port in a single request, but you can't update both in the same request.
     */
   def updateWorkgroup(): Request[UpdateWorkgroupResponse, AWSError] = js.native
   def updateWorkgroup(callback: js.Function2[/* err */ AWSError, /* data */ UpdateWorkgroupResponse, Unit]): Request[UpdateWorkgroupResponse, AWSError] = js.native
   /**
-    * Updates a workgroup with the specified configuration settings.
+    * Updates a workgroup with the specified configuration settings. You can't update multiple parameters in one request. For example, you can update baseCapacity or port in a single request, but you can't update both in the same request.
     */
   def updateWorkgroup(params: UpdateWorkgroupRequest): Request[UpdateWorkgroupResponse, AWSError] = js.native
   def updateWorkgroup(

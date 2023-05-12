@@ -12,7 +12,7 @@ trait ForwardActionConfig extends StObject {
   var TargetGroupStickinessConfig: js.UndefOr[typings.awsSdk.clientsElbv2Mod.TargetGroupStickinessConfig] = js.undefined
   
   /**
-    * One or more target groups. For Network Load Balancers, you can specify a single target group.
+    * The target groups. For Network Load Balancers, you can specify a single target group.
     */
   var TargetGroups: js.UndefOr[TargetGroupList] = js.undefined
 }

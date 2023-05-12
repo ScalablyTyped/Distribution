@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.ContentVisibility
+import typings.csstype.mod.Property.ScrollSnapPointsX
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,11 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `303` extends StObject {
   
   var value: js.UndefOr[
-    ContentVisibility | (js.Array[
+    ScrollSnapPointsX | (js.Array[
       (Extract[
-        js.UndefOr[ContentVisibility | js.Array[NonNullable[js.UndefOr[ContentVisibility]]]], 
+        js.UndefOr[ScrollSnapPointsX | js.Array[NonNullable[js.UndefOr[ScrollSnapPointsX]]]], 
         String
-      ]) | NonNullable[js.UndefOr[ContentVisibility]]
+      ]) | NonNullable[js.UndefOr[ScrollSnapPointsX]]
     ])
   ] = js.native
 }

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "victory-voronoi-container" : "36.6.8"
+      "victory-voronoi-container" : "36.6.10"
     }
   ],
   "test-dependencies" : [
     {
-      "victory-voronoi-container" : "36.6.8"
+      "victory-voronoi-container" : "36.6.10"
     }
   ],
   "compile-devDependencies" : [

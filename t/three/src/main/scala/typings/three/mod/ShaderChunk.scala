@@ -28,6 +28,12 @@ object ShaderChunk {
   
   inline def alphatestFragment_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("alphatest_fragment")(x.asInstanceOf[js.Any])
   
+  @JSImport("three", "ShaderChunk.alphatest_pars_fragment")
+  @js.native
+  def alphatestParsFragment: String = js.native
+  
+  inline def alphatestParsFragment_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("alphatest_pars_fragment")(x.asInstanceOf[js.Any])
+  
   @JSImport("three", "ShaderChunk.aomap_fragment")
   @js.native
   def aomapFragment: String = js.native
@@ -39,6 +45,30 @@ object ShaderChunk {
   def aomapParsFragment: String = js.native
   
   inline def aomapParsFragment_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("aomap_pars_fragment")(x.asInstanceOf[js.Any])
+  
+  @JSImport("three", "ShaderChunk.backgroundCube_frag")
+  @js.native
+  def backgroundCubeFrag: String = js.native
+  
+  inline def backgroundCubeFrag_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("backgroundCube_frag")(x.asInstanceOf[js.Any])
+  
+  @JSImport("three", "ShaderChunk.backgroundCube_vert")
+  @js.native
+  def backgroundCubeVert: String = js.native
+  
+  inline def backgroundCubeVert_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("backgroundCube_vert")(x.asInstanceOf[js.Any])
+  
+  @JSImport("three", "ShaderChunk.background_frag")
+  @js.native
+  def backgroundFrag: String = js.native
+  
+  inline def backgroundFrag_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("background_frag")(x.asInstanceOf[js.Any])
+  
+  @JSImport("three", "ShaderChunk.background_vert")
+  @js.native
+  def backgroundVert: String = js.native
+  
+  inline def backgroundVert_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("background_vert")(x.asInstanceOf[js.Any])
   
   @JSImport("three", "ShaderChunk.begin_vertex")
   @js.native
@@ -194,6 +224,18 @@ object ShaderChunk {
   
   inline def distanceRGBAVert_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("distanceRGBA_vert")(x.asInstanceOf[js.Any])
   
+  @JSImport("three", "ShaderChunk.dithering_fragment")
+  @js.native
+  def ditheringFragment: String = js.native
+  
+  inline def ditheringFragment_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dithering_fragment")(x.asInstanceOf[js.Any])
+  
+  @JSImport("three", "ShaderChunk.dithering_pars_fragment")
+  @js.native
+  def ditheringParsFragment: String = js.native
+  
+  inline def ditheringParsFragment_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dithering_pars_fragment")(x.asInstanceOf[js.Any])
+  
   @JSImport("three", "ShaderChunk.emissivemap_fragment")
   @js.native
   def emissivemapFragment: String = js.native
@@ -278,6 +320,36 @@ object ShaderChunk {
   
   inline def fogParsFragment_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fog_pars_fragment")(x.asInstanceOf[js.Any])
   
+  @JSImport("three", "ShaderChunk.fog_pars_vertex")
+  @js.native
+  def fogParsVertex: String = js.native
+  
+  inline def fogParsVertex_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fog_pars_vertex")(x.asInstanceOf[js.Any])
+  
+  @JSImport("three", "ShaderChunk.fog_vertex")
+  @js.native
+  def fogVertex: String = js.native
+  
+  inline def fogVertex_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fog_vertex")(x.asInstanceOf[js.Any])
+  
+  @JSImport("three", "ShaderChunk.gradientmap_pars_fragment")
+  @js.native
+  def gradientmapParsFragment: String = js.native
+  
+  inline def gradientmapParsFragment_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("gradientmap_pars_fragment")(x.asInstanceOf[js.Any])
+  
+  @JSImport("three", "ShaderChunk.iridescence_fragment")
+  @js.native
+  def iridescenceFragment: String = js.native
+  
+  inline def iridescenceFragment_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("iridescence_fragment")(x.asInstanceOf[js.Any])
+  
+  @JSImport("three", "ShaderChunk.iridescence_pars_fragment")
+  @js.native
+  def iridescenceParsFragment: String = js.native
+  
+  inline def iridescenceParsFragment_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("iridescence_pars_fragment")(x.asInstanceOf[js.Any])
+  
   @JSImport("three", "ShaderChunk.lightmap_fragment")
   @js.native
   def lightmapFragment: String = js.native
@@ -308,23 +380,23 @@ object ShaderChunk {
   
   inline def lightsFragmentMaps_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lights_fragment_maps")(x.asInstanceOf[js.Any])
   
-  @JSImport("three", "ShaderChunk.lights_lambert_vertex")
+  @JSImport("three", "ShaderChunk.lights_lambert_fragment")
   @js.native
-  def lightsLambertVertex: String = js.native
+  def lightsLambertFragment: String = js.native
   
-  inline def lightsLambertVertex_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lights_lambert_vertex")(x.asInstanceOf[js.Any])
+  inline def lightsLambertFragment_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lights_lambert_fragment")(x.asInstanceOf[js.Any])
+  
+  @JSImport("three", "ShaderChunk.lights_lambert_pars_fragment")
+  @js.native
+  def lightsLambertParsFragment: String = js.native
+  
+  inline def lightsLambertParsFragment_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lights_lambert_pars_fragment")(x.asInstanceOf[js.Any])
   
   @JSImport("three", "ShaderChunk.lights_pars_begin")
   @js.native
   def lightsParsBegin: String = js.native
   
   inline def lightsParsBegin_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lights_pars_begin")(x.asInstanceOf[js.Any])
-  
-  @JSImport("three", "ShaderChunk.lights_pars_map")
-  @js.native
-  def lightsParsMap: String = js.native
-  
-  inline def lightsParsMap_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lights_pars_map")(x.asInstanceOf[js.Any])
   
   @JSImport("three", "ShaderChunk.lights_phong_fragment")
   @js.native
@@ -349,6 +421,18 @@ object ShaderChunk {
   def lightsPhysicalParsFragment: String = js.native
   
   inline def lightsPhysicalParsFragment_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lights_physical_pars_fragment")(x.asInstanceOf[js.Any])
+  
+  @JSImport("three", "ShaderChunk.lights_toon_fragment")
+  @js.native
+  def lightsToonFragment: String = js.native
+  
+  inline def lightsToonFragment_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lights_toon_fragment")(x.asInstanceOf[js.Any])
+  
+  @JSImport("three", "ShaderChunk.lights_toon_pars_fragment")
+  @js.native
+  def lightsToonParsFragment: String = js.native
+  
+  inline def lightsToonParsFragment_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lights_toon_pars_fragment")(x.asInstanceOf[js.Any])
   
   @JSImport("three", "ShaderChunk.linedashed_frag")
   @js.native
@@ -434,6 +518,30 @@ object ShaderChunk {
   
   inline def meshlambertVert_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("meshlambert_vert")(x.asInstanceOf[js.Any])
   
+  @JSImport("three", "ShaderChunk.meshmatcap_frag")
+  @js.native
+  def meshmatcapFrag: String = js.native
+  
+  inline def meshmatcapFrag_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("meshmatcap_frag")(x.asInstanceOf[js.Any])
+  
+  @JSImport("three", "ShaderChunk.meshmatcap_vert")
+  @js.native
+  def meshmatcapVert: String = js.native
+  
+  inline def meshmatcapVert_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("meshmatcap_vert")(x.asInstanceOf[js.Any])
+  
+  @JSImport("three", "ShaderChunk.meshnormal_frag")
+  @js.native
+  def meshnormalFrag: String = js.native
+  
+  inline def meshnormalFrag_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("meshnormal_frag")(x.asInstanceOf[js.Any])
+  
+  @JSImport("three", "ShaderChunk.meshnormal_vert")
+  @js.native
+  def meshnormalVert: String = js.native
+  
+  inline def meshnormalVert_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("meshnormal_vert")(x.asInstanceOf[js.Any])
+  
   @JSImport("three", "ShaderChunk.meshphong_frag")
   @js.native
   def meshphongFrag: String = js.native
@@ -458,6 +566,18 @@ object ShaderChunk {
   
   inline def meshphysicalVert_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("meshphysical_vert")(x.asInstanceOf[js.Any])
   
+  @JSImport("three", "ShaderChunk.meshtoon_frag")
+  @js.native
+  def meshtoonFrag: String = js.native
+  
+  inline def meshtoonFrag_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("meshtoon_frag")(x.asInstanceOf[js.Any])
+  
+  @JSImport("three", "ShaderChunk.meshtoon_vert")
+  @js.native
+  def meshtoonVert: String = js.native
+  
+  inline def meshtoonVert_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("meshtoon_vert")(x.asInstanceOf[js.Any])
+  
   @JSImport("three", "ShaderChunk.metalnessmap_fragment")
   @js.native
   def metalnessmapFragment: String = js.native
@@ -469,6 +589,12 @@ object ShaderChunk {
   def metalnessmapParsFragment: String = js.native
   
   inline def metalnessmapParsFragment_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metalnessmap_pars_fragment")(x.asInstanceOf[js.Any])
+  
+  @JSImport("three", "ShaderChunk.morphcolor_vertex")
+  @js.native
+  def morphcolorVertex: String = js.native
+  
+  inline def morphcolorVertex_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("morphcolor_vertex")(x.asInstanceOf[js.Any])
   
   @JSImport("three", "ShaderChunk.morphnormal_vertex")
   @js.native
@@ -488,18 +614,6 @@ object ShaderChunk {
   
   inline def morphtargetVertex_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("morphtarget_vertex")(x.asInstanceOf[js.Any])
   
-  @JSImport("three", "ShaderChunk.normal_flip")
-  @js.native
-  def normalFlip: String = js.native
-  
-  inline def normalFlip_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("normal_flip")(x.asInstanceOf[js.Any])
-  
-  @JSImport("three", "ShaderChunk.normal_frag")
-  @js.native
-  def normalFrag: String = js.native
-  
-  inline def normalFrag_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("normal_frag")(x.asInstanceOf[js.Any])
-  
   @JSImport("three", "ShaderChunk.normal_fragment_begin")
   @js.native
   def normalFragmentBegin: String = js.native
@@ -512,17 +626,35 @@ object ShaderChunk {
   
   inline def normalFragmentMaps_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("normal_fragment_maps")(x.asInstanceOf[js.Any])
   
-  @JSImport("three", "ShaderChunk.normal_vert")
+  @JSImport("three", "ShaderChunk.normal_pars_fragment")
   @js.native
-  def normalVert: String = js.native
+  def normalParsFragment: String = js.native
   
-  inline def normalVert_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("normal_vert")(x.asInstanceOf[js.Any])
+  inline def normalParsFragment_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("normal_pars_fragment")(x.asInstanceOf[js.Any])
+  
+  @JSImport("three", "ShaderChunk.normal_pars_vertex")
+  @js.native
+  def normalParsVertex: String = js.native
+  
+  inline def normalParsVertex_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("normal_pars_vertex")(x.asInstanceOf[js.Any])
+  
+  @JSImport("three", "ShaderChunk.normal_vertex")
+  @js.native
+  def normalVertex: String = js.native
+  
+  inline def normalVertex_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("normal_vertex")(x.asInstanceOf[js.Any])
   
   @JSImport("three", "ShaderChunk.normalmap_pars_fragment")
   @js.native
   def normalmapParsFragment: String = js.native
   
   inline def normalmapParsFragment_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("normalmap_pars_fragment")(x.asInstanceOf[js.Any])
+  
+  @JSImport("three", "ShaderChunk.output_fragment")
+  @js.native
+  def outputFragment: String = js.native
+  
+  inline def outputFragment_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("output_fragment")(x.asInstanceOf[js.Any])
   
   @JSImport("three", "ShaderChunk.packing")
   @js.native
@@ -637,6 +769,18 @@ object ShaderChunk {
   
   inline def specularmapParsFragment_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("specularmap_pars_fragment")(x.asInstanceOf[js.Any])
   
+  @JSImport("three", "ShaderChunk.sprite_frag")
+  @js.native
+  def spriteFrag: String = js.native
+  
+  inline def spriteFrag_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sprite_frag")(x.asInstanceOf[js.Any])
+  
+  @JSImport("three", "ShaderChunk.sprite_vert")
+  @js.native
+  def spriteVert: String = js.native
+  
+  inline def spriteVert_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sprite_vert")(x.asInstanceOf[js.Any])
+  
   @JSImport("three", "ShaderChunk.tonemapping_fragment")
   @js.native
   def tonemappingFragment: String = js.native
@@ -649,23 +793,17 @@ object ShaderChunk {
   
   inline def tonemappingParsFragment_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tonemapping_pars_fragment")(x.asInstanceOf[js.Any])
   
-  @JSImport("three", "ShaderChunk.uv2_pars_fragment")
+  @JSImport("three", "ShaderChunk.transmission_fragment")
   @js.native
-  def uv2ParsFragment: String = js.native
+  def transmissionFragment: String = js.native
   
-  inline def uv2ParsFragment_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("uv2_pars_fragment")(x.asInstanceOf[js.Any])
+  inline def transmissionFragment_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("transmission_fragment")(x.asInstanceOf[js.Any])
   
-  @JSImport("three", "ShaderChunk.uv2_pars_vertex")
+  @JSImport("three", "ShaderChunk.transmission_pars_fragment")
   @js.native
-  def uv2ParsVertex: String = js.native
+  def transmissionParsFragment: String = js.native
   
-  inline def uv2ParsVertex_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("uv2_pars_vertex")(x.asInstanceOf[js.Any])
-  
-  @JSImport("three", "ShaderChunk.uv2_vertex")
-  @js.native
-  def uv2Vertex: String = js.native
-  
-  inline def uv2Vertex_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("uv2_vertex")(x.asInstanceOf[js.Any])
+  inline def transmissionParsFragment_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("transmission_pars_fragment")(x.asInstanceOf[js.Any])
   
   @JSImport("three", "ShaderChunk.uv_pars_fragment")
   @js.native

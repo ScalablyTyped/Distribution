@@ -12,7 +12,7 @@ open class MjmlCarousel protected ()
   def this(props: MjmlCarouselProps & ClassNameProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: MjmlCarouselProps & ClassNameProps, context: Any) = this()
 }

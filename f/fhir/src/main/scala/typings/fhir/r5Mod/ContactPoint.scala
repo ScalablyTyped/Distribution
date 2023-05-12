@@ -33,6 +33,8 @@ trait ContactPoint
   
   /**
     * Note that rank does not necessarily follow the order in which the contacts are represented in the instance.
+    * Ranks need not be unique.  E.g. it's possible to have multiple contacts with rank=1.  If the ranks have different systems or uses, this would be interpreted to mean "X is my most preferred phone number, Y is my most preferred email address" or "X is my preferred home email and Y is my preferred work email".  If the system and use for equally-ranked contacts are the same, then the level of preference is equivalent for both repetitions.
+    * Ranks need not be sequential and not all repetitions must have a rank.  For example, it's possible to have 4 contacts with ranks of 2, 5 and two with no rank specified.  That would be interpreted to mean the first is preferred over the second and no preference stated for the remaining contacts.
     */
   var rank: js.UndefOr[Double] = js.undefined
   

@@ -12,7 +12,12 @@ trait WebACL extends StObject {
   var ARN: ResourceArn
   
   /**
-    * The web ACL capacity units (WCUs) currently being used by this web ACL.  WAF uses WCUs to calculate and control the operating resources that are used to run your rules, rule groups, and web ACLs. WAF calculates capacity differently for each rule type, to reflect the relative cost of each rule. Simple rules that cost little to run use fewer WCUs than more complex rules that use more processing power. Rule group capacity is fixed at creation, which helps users plan their web ACL WCU usage when they use a rule group. The WCU limit for web ACLs is 1,500. 
+    * Specifies custom configurations for the associations between the web ACL and protected resources.  Use this to customize the maximum size of the request body that your protected CloudFront distributions forward to WAF for inspection. The default is 16 KB (16,384 kilobytes).   You are charged additional fees when your protected resources forward body sizes that are larger than the default. For more information, see WAF Pricing. 
+    */
+  var AssociationConfig: js.UndefOr[typings.awsSdk.clientsWafv2Mod.AssociationConfig] = js.undefined
+  
+  /**
+    * The web ACL capacity units (WCUs) currently being used by this web ACL.  WAF uses WCUs to calculate and control the operating resources that are used to run your rules, rule groups, and web ACLs. WAF calculates capacity differently for each rule type, to reflect the relative cost of each rule. Simple rules that cost little to run use fewer WCUs than more complex rules that use more processing power. Rule group capacity is fixed at creation, which helps users plan their web ACL WCU usage when they use a rule group. For more information, see WAF web ACL capacity units (WCU) in the WAF Developer Guide. 
     */
   var Capacity: js.UndefOr[ConsumedCapacity] = js.undefined
   
@@ -103,6 +108,10 @@ object WebACL {
   implicit open class MutableBuilder[Self <: WebACL] (val x: Self) extends AnyVal {
     
     inline def setARN(value: ResourceArn): Self = StObject.set(x, "ARN", value.asInstanceOf[js.Any])
+    
+    inline def setAssociationConfig(value: AssociationConfig): Self = StObject.set(x, "AssociationConfig", value.asInstanceOf[js.Any])
+    
+    inline def setAssociationConfigUndefined: Self = StObject.set(x, "AssociationConfig", js.undefined)
     
     inline def setCapacity(value: ConsumedCapacity): Self = StObject.set(x, "Capacity", value.asInstanceOf[js.Any])
     

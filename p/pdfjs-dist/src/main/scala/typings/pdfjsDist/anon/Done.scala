@@ -9,12 +9,12 @@ trait Done extends StObject {
   
   var done: `true`
   
-  var value: Unit
+  var value: js.UndefOr[js.typedarray.Uint8Array] = js.undefined
 }
 object Done {
   
-  inline def apply(value: Unit): Done = {
-    val __obj = js.Dynamic.literal(done = true, value = value.asInstanceOf[js.Any])
+  inline def apply(): Done = {
+    val __obj = js.Dynamic.literal(done = true)
     __obj.asInstanceOf[Done]
   }
   
@@ -23,6 +23,8 @@ object Done {
     
     inline def setDone(value: `true`): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
     
-    inline def setValue(value: Unit): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.typedarray.Uint8Array): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

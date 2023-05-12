@@ -1,6 +1,5 @@
 package typings.playcanvas.anon
 
-import typings.playcanvas.mod.Texture
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -9,7 +8,7 @@ trait Size extends StObject {
   
   var size: js.UndefOr[Double] = js.undefined
   
-  var target: js.UndefOr[Texture] = js.undefined
+  var target: js.UndefOr[typings.playcanvas.mod.Texture] = js.undefined
 }
 object Size {
   
@@ -25,7 +24,7 @@ object Size {
     
     inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    inline def setTarget(value: Texture): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: typings.playcanvas.mod.Texture): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
   }

@@ -26,7 +26,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * centered. In the Asana application, multiple tasks populate the middle pane
   * according to some view parameters, and the set of selected tasks determines
   * the more detailed information presented in the details pane.
-  * @class
   * @param {Dispatcher} dispatcher The API dispatcher
   */
 @js.native

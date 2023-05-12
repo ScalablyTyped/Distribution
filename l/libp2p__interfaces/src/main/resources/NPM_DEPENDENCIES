@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@libp2p/interfaces" : "3.0.3"
+      "@libp2p/interfaces" : "3.3.2"
     }
   ],
   "test-dependencies" : [
     {
-      "@libp2p/interfaces" : "3.0.3"
+      "@libp2p/interfaces" : "3.3.2"
     }
   ],
   "compile-devDependencies" : [

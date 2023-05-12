@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@lumino/messaging" : "1.10.3"
+      "@lumino/messaging" : "2.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@lumino/messaging" : "1.10.3"
+      "@lumino/messaging" : "2.0.0"
     }
   ],
   "compile-devDependencies" : [

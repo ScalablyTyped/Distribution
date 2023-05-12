@@ -1,6 +1,6 @@
 package typings.mergeImg
 
-import typings.jimp.mod.DepreciatedJimp
+import typings.jimp.mod.Jimp
 import typings.mergeImg.mergeImgStrings.center
 import typings.mergeImg.mergeImgStrings.end
 import typings.mergeImg.mergeImgStrings.start
@@ -15,8 +15,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(images: js.Array[String | ImageDescriptor | Buffer | DepreciatedJimp]): js.Promise[DepreciatedJimp] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(images.asInstanceOf[js.Any]).asInstanceOf[js.Promise[DepreciatedJimp]]
-  inline def default(images: js.Array[String | ImageDescriptor | Buffer | DepreciatedJimp], options: Options): js.Promise[DepreciatedJimp] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(images.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[DepreciatedJimp]]
+  inline def default(images: js.Array[String | ImageDescriptor | Buffer | Jimp]): js.Promise[Jimp] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(images.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Jimp]]
+  inline def default(images: js.Array[String | ImageDescriptor | Buffer | Jimp], options: Options): js.Promise[Jimp] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(images.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Jimp]]
   
   trait ImageDescriptor extends StObject {
     

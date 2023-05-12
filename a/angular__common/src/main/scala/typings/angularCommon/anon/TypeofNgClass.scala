@@ -25,7 +25,17 @@ trait TypeofNgClass
       NgClass
     ] {
   
-  var ɵdir: ɵɵDirectiveDeclaration[NgClass, `[ngClass]`, scala.Nothing, Klass, js.Object, scala.Nothing, scala.Nothing, `true`] = js.native
+  var ɵdir: ɵɵDirectiveDeclaration[
+    NgClass, 
+    `[ngClass]`, 
+    scala.Nothing, 
+    Klass, 
+    js.Object, 
+    scala.Nothing, 
+    scala.Nothing, 
+    `true`, 
+    scala.Nothing
+  ] = js.native
   
   var ɵfac: ɵɵFactoryDeclaration[NgClass, scala.Nothing] = js.native
 }

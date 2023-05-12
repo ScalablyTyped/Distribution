@@ -1,5 +1,6 @@
 package typings.pixiMesh
 
+import typings.pixiColor.libColorMod.ColorSource
 import typings.pixiConstants.mod.BLEND_MODES
 import typings.pixiConstants.mod.DRAW_MODES
 import typings.pixiCore.libTexturesResourcesResourceMod.Resource
@@ -148,8 +149,15 @@ object libMeshMod {
       * Null for non-MeshMaterial shaders
       * @default 0xFFFFFF
       */
-    def tint: Double = js.native
-    def tint_=(value: Double): Unit = js.native
+    def tint: ColorSource = js.native
+    
+    /**
+      * The tint color as a RGB integer
+      * @ignore
+      */
+    def tintValue: Double = js.native
+    
+    def tint_=(value: ColorSource): Unit = js.native
     
     /**
       * To change mesh uv's, change its uvBuffer data and increment its _updateID.
@@ -188,5 +196,15 @@ object libMeshMod {
     @js.native
     def BATCHABLE_SIZE: Double = js.native
     inline def BATCHABLE_SIZE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BATCHABLE_SIZE")(x.asInstanceOf[js.Any])
+    
+    /**
+      * Used by the @pixi/canvas-mesh package to draw meshes using canvas.
+      * Added here because we cannot mixin a static property to Mesh type.
+      * @ignore
+      */
+    @JSImport("@pixi/mesh/lib/Mesh", "Mesh.defaultCanvasPadding")
+    @js.native
+    def defaultCanvasPadding: Double = js.native
+    inline def defaultCanvasPadding_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultCanvasPadding")(x.asInstanceOf[js.Any])
   }
 }

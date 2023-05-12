@@ -6,20 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CloneBindings extends StObject {
   
-  /**
-    * Whether bindings will be cloned
-    */
-  var cloneBindings: js.UndefOr[Boolean] = js.undefined
+  var cloneBindings: Boolean
   
-  /**
-    * Whether associations and aggregations will be cloned
-    */
-  var cloneChildren: js.UndefOr[Boolean] = js.undefined
+  var cloneChildren: Boolean
 }
 object CloneBindings {
   
-  inline def apply(): CloneBindings = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(cloneBindings: Boolean, cloneChildren: Boolean): CloneBindings = {
+    val __obj = js.Dynamic.literal(cloneBindings = cloneBindings.asInstanceOf[js.Any], cloneChildren = cloneChildren.asInstanceOf[js.Any])
     __obj.asInstanceOf[CloneBindings]
   }
   
@@ -28,10 +22,6 @@ object CloneBindings {
     
     inline def setCloneBindings(value: Boolean): Self = StObject.set(x, "cloneBindings", value.asInstanceOf[js.Any])
     
-    inline def setCloneBindingsUndefined: Self = StObject.set(x, "cloneBindings", js.undefined)
-    
     inline def setCloneChildren(value: Boolean): Self = StObject.set(x, "cloneChildren", value.asInstanceOf[js.Any])
-    
-    inline def setCloneChildrenUndefined: Self = StObject.set(x, "cloneChildren", js.undefined)
   }
 }

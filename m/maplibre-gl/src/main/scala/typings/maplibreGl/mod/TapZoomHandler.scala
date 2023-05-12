@@ -1,7 +1,7 @@
 package typings.maplibreGl.mod
 
 import typings.mapboxPointGeometry.mod.^
-import typings.maplibreGl.anon.`4`
+import typings.maplibreGl.anon.`7`
 import typings.std.Touch
 import typings.std.TouchEvent
 import org.scalablytyped.runtime.StObject
@@ -32,7 +32,7 @@ open class TapZoomHandler () extends StObject {
   
   def touchcancel(): scala.Unit = js.native
   
-  def touchend(e: TouchEvent, points: js.Array[^], mapTouches: js.Array[Touch]): `4` = js.native
+  def touchend(e: TouchEvent, points: js.Array[^], mapTouches: js.Array[Touch]): `7` = js.native
   
   def touchmove(e: TouchEvent, points: js.Array[^], mapTouches: js.Array[Touch]): scala.Unit = js.native
   

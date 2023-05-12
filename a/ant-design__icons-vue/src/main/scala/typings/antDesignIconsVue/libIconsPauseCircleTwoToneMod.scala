@@ -16,7 +16,7 @@ object libIconsPauseCircleTwoToneMod extends Shortcut {
   @js.native
   trait PauseCircleTwoToneIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_PauseCircleTwoToneIconType: String = js.native

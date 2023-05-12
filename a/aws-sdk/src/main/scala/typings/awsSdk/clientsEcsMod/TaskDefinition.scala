@@ -92,7 +92,7 @@ trait TaskDefinition extends StObject {
   var requiresAttributes: js.UndefOr[RequiresAttributes] = js.undefined
   
   /**
-    * The task launch types the task definition was validated against. To determine which task launch types the task definition is validated for, see the TaskDefinition$compatibilities parameter.
+    * The task launch types the task definition was validated against. For more information, see Amazon ECS launch types in the Amazon Elastic Container Service Developer Guide.
     */
   var requiresCompatibilities: js.UndefOr[CompatibilityList] = js.undefined
   

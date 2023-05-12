@@ -1,7 +1,5 @@
 package typings.typescript.mod
 
-import typings.typescript.mod.ModuleKind.CommonJS
-import typings.typescript.mod.ModuleKind.ESNext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -81,7 +79,23 @@ trait ProgramHost[T /* <: BuilderProgram */] extends StObject {
   /** Symbol links resolution */
   var realpath: js.UndefOr[js.Function1[/* path */ java.lang.String, java.lang.String]] = js.native
   
-  /** If provided, used to resolve the module names, otherwise typescript's default module resolution */
+  var resolveModuleNameLiterals: js.UndefOr[
+    js.Function6[
+      /* moduleLiterals */ js.Array[StringLiteralLike], 
+      /* containingFile */ java.lang.String, 
+      /* redirectedReference */ js.UndefOr[ResolvedProjectReference], 
+      /* options */ CompilerOptions, 
+      /* containingSourceFile */ SourceFile, 
+      /* reusedNames */ js.UndefOr[js.Array[StringLiteralLike]], 
+      js.Array[ResolvedModuleWithFailedLookupLocations]
+    ]
+  ] = js.native
+  
+  /**
+    * @deprecated supply resolveModuleNameLiterals instead for resolution that can handle newer resolution modes like nodenext
+    *
+    * If provided, used to resolve the module names, otherwise typescript's default module resolution
+    */
   var resolveModuleNames: js.UndefOr[
     js.Function6[
       /* moduleNames */ js.Array[java.lang.String], 
@@ -94,14 +108,30 @@ trait ProgramHost[T /* <: BuilderProgram */] extends StObject {
     ]
   ] = js.native
   
-  /** If provided, used to resolve type reference directives, otherwise typescript's default resolution */
+  var resolveTypeReferenceDirectiveReferences: js.UndefOr[
+    js.Function6[
+      /* typeDirectiveReferences */ js.Array[FileReference | java.lang.String], 
+      /* containingFile */ java.lang.String, 
+      /* redirectedReference */ js.UndefOr[ResolvedProjectReference], 
+      /* options */ CompilerOptions, 
+      /* containingSourceFile */ js.UndefOr[SourceFile], 
+      /* reusedNames */ js.UndefOr[js.Array[FileReference | java.lang.String]], 
+      js.Array[ResolvedTypeReferenceDirectiveWithFailedLookupLocations]
+    ]
+  ] = js.native
+  
+  /**
+    * @deprecated supply resolveTypeReferenceDirectiveReferences instead for resolution that can handle newer resolution modes like nodenext
+    *
+    * If provided, used to resolve type reference directives, otherwise typescript's default resolution
+    */
   var resolveTypeReferenceDirectives: js.UndefOr[
     js.Function5[
       /* typeReferenceDirectiveNames */ js.Array[FileReference | java.lang.String], 
       /* containingFile */ java.lang.String, 
       /* redirectedReference */ js.UndefOr[ResolvedProjectReference], 
       /* options */ CompilerOptions, 
-      /* containingFileMode */ js.UndefOr[ESNext | CommonJS], 
+      /* containingFileMode */ js.UndefOr[ResolutionMode], 
       js.Array[js.UndefOr[ResolvedTypeReferenceDirective]]
     ]
   ] = js.native

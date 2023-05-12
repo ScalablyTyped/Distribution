@@ -12,6 +12,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Any Game Objects using the Light2D pipeline will then be affected by these Lights as long as they have a normal map.
   * 
   * They can also simply be used to represent a point light for your own purposes.
+  * 
+  * As of Phaser 3.60 this Game Object now has the Transform and Origin components. However, changing the scale,
+  * rotation or origin properties will not make any difference to the Light. They are simply present to allow you
+  * to add this Light to a Container, or enable it for Physics.
   */
 @JSImport("phaser", "GameObjects.Light")
 @js.native

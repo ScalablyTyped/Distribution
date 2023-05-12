@@ -27,20 +27,20 @@ trait Export extends StObject {
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_index.GetResult */ Any
   ] = js.native
   
-  def `import`(source: js.Iterable[AsyncIterable[js.typedarray.Uint8Array] | js.typedarray.Uint8Array]): AsyncIterable[
+  def `import`(sources: js.Iterable[AsyncIterable[js.typedarray.Uint8Array] | js.typedarray.Uint8Array]): AsyncIterable[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_index.ImportResult */ Any
   ] = js.native
   def `import`(
-    source: js.Iterable[AsyncIterable[js.typedarray.Uint8Array] | js.typedarray.Uint8Array],
+    sources: js.Iterable[AsyncIterable[js.typedarray.Uint8Array] | js.typedarray.Uint8Array],
     options: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_index.ImportOptions */ Any) & HTTPClientExtraOptions
   ): AsyncIterable[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_index.ImportResult */ Any
   ] = js.native
-  def `import`(source: AsyncIterable[AsyncIterable[js.typedarray.Uint8Array] | js.typedarray.Uint8Array]): AsyncIterable[
+  def `import`(sources: AsyncIterable[AsyncIterable[js.typedarray.Uint8Array] | js.typedarray.Uint8Array]): AsyncIterable[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_index.ImportResult */ Any
   ] = js.native
   def `import`(
-    source: AsyncIterable[AsyncIterable[js.typedarray.Uint8Array] | js.typedarray.Uint8Array],
+    sources: AsyncIterable[AsyncIterable[js.typedarray.Uint8Array] | js.typedarray.Uint8Array],
     options: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_index.ImportOptions */ Any) & HTTPClientExtraOptions
   ): AsyncIterable[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_index.ImportResult */ Any

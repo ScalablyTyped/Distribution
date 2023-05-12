@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GetRepositoryPolicyRequest extends StObject {
   
   /**
-    * The AWS account ID associated with the public registry that contains the repository. If you do not specify a registry, the default public registry is assumed.
+    * The Amazon Web Services account ID that's associated with the public registry that contains the repository. If you do not specify a registry, the default public registry is assumed.
     */
   var registryId: js.UndefOr[RegistryId] = js.undefined
   

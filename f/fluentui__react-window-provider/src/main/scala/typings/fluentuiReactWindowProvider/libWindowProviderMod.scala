@@ -2,6 +2,7 @@ package typings.fluentuiReactWindowProvider
 
 import typings.react.mod.Context
 import typings.react.mod.FunctionComponent
+import typings.react.mod.ReactNode
 import typings.std.Document
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
@@ -28,6 +29,8 @@ object libWindowProviderMod {
   
   trait WindowProviderProps extends StObject {
     
+    var children: js.UndefOr[ReactNode] = js.undefined
+    
     /**
       * Provide the active window.
       */
@@ -42,6 +45,10 @@ object libWindowProviderMod {
     
     @scala.inline
     implicit open class MutableBuilder[Self <: WindowProviderProps] (val x: Self) extends AnyVal {
+      
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
       inline def setWindow(value: Window): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
       

@@ -1,19 +1,21 @@
 organization := "org.scalablytyped"
 name := "hapi__cookie"
-version := "12.0-dt-20221026Z-30aace"
+version := "12.0-dt-20230215Z-fe091a"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
-  "org.scalablytyped" %%% "hapi__boom" % "10.0.0-e943fd",
-  "org.scalablytyped" %%% "hapi__catbox" % "10.2-dt-20211202Z-35b843",
-  "org.scalablytyped" %%% "hapi__hapi" % "20.0-dt-20221019Z-8d60cc",
-  "org.scalablytyped" %%% "hapi__iron" % "7.0.0-bdfda0",
-  "org.scalablytyped" %%% "hapi__mimos" % "7.0.0-e1b709",
-  "org.scalablytyped" %%% "hapi__shot" % "6.0.0-dab5bb",
-  "org.scalablytyped" %%% "joi" % "17.7.0-c612b4",
-  "org.scalablytyped" %%% "node" % "18.11-dt-20221101Z-874609",
-  "org.scalablytyped" %%% "std" % "4.9-ecb5eb")
+  "org.scalablytyped" %%% "hapi__boom" % "10.0.1-50c06c",
+  "org.scalablytyped" %%% "hapi__catbox" % "12.1.1-59ddc5",
+  "org.scalablytyped" %%% "hapi__hapi" % "21.3.2-251509",
+  "org.scalablytyped" %%% "hapi__iron" % "7.0.1-93a34c",
+  "org.scalablytyped" %%% "hapi__mimos" % "7.0.1-1d1e74",
+  "org.scalablytyped" %%% "hapi__podium" % "5.0.1-a01759",
+  "org.scalablytyped" %%% "hapi__shot" % "6.0.1-24b3c8",
+  "org.scalablytyped" %%% "hapi__statehood" % "8.1.1-eece26",
+  "org.scalablytyped" %%% "joi" % "17.9.2-271199",
+  "org.scalablytyped" %%% "node" % "20.1-dt-20230511Z-0320fc",
+  "org.scalablytyped" %%% "std" % "5.0-e63739")
 publishArtifact in packageDoc := false
 scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -1,6 +1,7 @@
 package typings.firebaseFirestore
 
 import org.scalablytyped.runtime.StringDictionary
+import typings.std.DocumentVisibilityState
 import typings.std.EventListener
 import typings.std.IDBFactory
 import typings.std.Storage
@@ -30,14 +31,14 @@ object distLitePackagesFirestoreSrcUtilTypesMod {
     
     def removeEventListener(`type`: String, listener: EventListener): Unit
     
-    val visibilityState: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VisibilityState */ Any
+    val visibilityState: DocumentVisibilityState
   }
   object DocumentLike {
     
     inline def apply(
       addEventListener: (String, EventListener) => Unit,
       removeEventListener: (String, EventListener) => Unit,
-      visibilityState: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VisibilityState */ Any
+      visibilityState: DocumentVisibilityState
     ): DocumentLike = {
       val __obj = js.Dynamic.literal(addEventListener = js.Any.fromFunction2(addEventListener), removeEventListener = js.Any.fromFunction2(removeEventListener), visibilityState = visibilityState.asInstanceOf[js.Any])
       __obj.asInstanceOf[DocumentLike]
@@ -50,9 +51,7 @@ object distLitePackagesFirestoreSrcUtilTypesMod {
       
       inline def setRemoveEventListener(value: (String, EventListener) => Unit): Self = StObject.set(x, "removeEventListener", js.Any.fromFunction2(value))
       
-      inline def setVisibilityState(
-        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VisibilityState */ Any
-      ): Self = StObject.set(x, "visibilityState", value.asInstanceOf[js.Any])
+      inline def setVisibilityState(value: DocumentVisibilityState): Self = StObject.set(x, "visibilityState", value.asInstanceOf[js.Any])
     }
   }
   

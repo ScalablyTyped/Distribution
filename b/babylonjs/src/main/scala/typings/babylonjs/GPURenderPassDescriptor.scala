@@ -12,6 +12,8 @@ trait GPURenderPassDescriptor
   
   var depthStencilAttachment: js.UndefOr[GPURenderPassDepthStencilAttachment] = js.undefined
   
+  var maxDrawCount: js.UndefOr[GPUSize64] = js.undefined
+  
   var occlusionQuerySet: js.UndefOr[GPUQuerySet] = js.undefined
   
   var timestampWrites: js.UndefOr[GPURenderPassTimestampWrites] = js.undefined
@@ -33,6 +35,10 @@ object GPURenderPassDescriptor {
     inline def setDepthStencilAttachment(value: GPURenderPassDepthStencilAttachment): Self = StObject.set(x, "depthStencilAttachment", value.asInstanceOf[js.Any])
     
     inline def setDepthStencilAttachmentUndefined: Self = StObject.set(x, "depthStencilAttachment", js.undefined)
+    
+    inline def setMaxDrawCount(value: GPUSize64): Self = StObject.set(x, "maxDrawCount", value.asInstanceOf[js.Any])
+    
+    inline def setMaxDrawCountUndefined: Self = StObject.set(x, "maxDrawCount", js.undefined)
     
     inline def setOcclusionQuerySet(value: GPUQuerySet): Self = StObject.set(x, "occlusionQuerySet", value.asInstanceOf[js.Any])
     

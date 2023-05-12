@@ -5,10 +5,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A circle on the Earth&#39;s surface; also known as a &quot;spherical
-  * cap&quot;.
-  */
 @js.native
 trait Circle
   extends StObject

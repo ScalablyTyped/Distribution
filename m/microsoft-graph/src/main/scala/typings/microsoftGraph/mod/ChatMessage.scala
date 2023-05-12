@@ -65,6 +65,8 @@ trait ChatMessage
   // List of entities mentioned in the chat message. Supported entities are: user, bot, team, and channel.
   var mentions: js.UndefOr[NullableOption[js.Array[ChatMessageMention]]] = js.undefined
   
+  var messageHistory: js.UndefOr[NullableOption[js.Array[ChatMessageHistoryItem]]] = js.undefined
+  
   /**
     * The type of chat message. The possible values are: message, chatEvent, typing, unknownFutureValue, systemEventMessage.
     * Note that you must use the Prefer: include-unknown-enum-members request header to get the following value in this
@@ -198,6 +200,14 @@ object ChatMessage {
     inline def setMentionsUndefined: Self = StObject.set(x, "mentions", js.undefined)
     
     inline def setMentionsVarargs(value: ChatMessageMention*): Self = StObject.set(x, "mentions", js.Array(value*))
+    
+    inline def setMessageHistory(value: NullableOption[js.Array[ChatMessageHistoryItem]]): Self = StObject.set(x, "messageHistory", value.asInstanceOf[js.Any])
+    
+    inline def setMessageHistoryNull: Self = StObject.set(x, "messageHistory", null)
+    
+    inline def setMessageHistoryUndefined: Self = StObject.set(x, "messageHistory", js.undefined)
+    
+    inline def setMessageHistoryVarargs(value: ChatMessageHistoryItem*): Self = StObject.set(x, "messageHistory", js.Array(value*))
     
     inline def setMessageType(value: ChatMessageType): Self = StObject.set(x, "messageType", value.asInstanceOf[js.Any])
     

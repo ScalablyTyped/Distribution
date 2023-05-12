@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@google-cloud/spanner" : "6.1.4"
+      "@google-cloud/spanner" : "6.9.0"
     }
   ],
   "test-dependencies" : [
     {
-      "@google-cloud/spanner" : "6.1.4"
+      "@google-cloud/spanner" : "6.9.0"
     }
   ],
   "compile-devDependencies" : [

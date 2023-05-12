@@ -6,21 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait QueryPerpage extends StObject {
   
-  var path: Enterprise
-  
   var query: Perpage
 }
 object QueryPerpage {
   
-  inline def apply(path: Enterprise, query: Perpage): QueryPerpage = {
-    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
+  inline def apply(query: Perpage): QueryPerpage = {
+    val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryPerpage]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: QueryPerpage] (val x: Self) extends AnyVal {
-    
-    inline def setPath(value: Enterprise): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     inline def setQuery(value: Perpage): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
   }

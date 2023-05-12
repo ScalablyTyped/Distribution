@@ -205,6 +205,8 @@ trait XRSession
   
   val domOverlayState: js.UndefOr[XRDOMOverlayState] = js.native
   
+  val enabledFeatures: js.UndefOr[js.Array[String]] = js.native
+  
   /**
     * Ends the WebXR session. Returns a promise which resolves when the
     * session has been shut down.

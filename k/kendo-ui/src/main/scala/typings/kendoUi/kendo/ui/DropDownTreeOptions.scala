@@ -65,6 +65,8 @@ trait DropDownTreeOptions
   
   var ignoreCase: js.UndefOr[Boolean] = js.undefined
   
+  var label: js.UndefOr[String | js.Function | BaseLabel] = js.undefined
+  
   var loadOnDemand: js.UndefOr[Boolean] = js.undefined
   
   var messages: js.UndefOr[DropDownTreeMessages] = js.undefined
@@ -220,6 +222,10 @@ object DropDownTreeOptions {
     inline def setIgnoreCase(value: Boolean): Self = StObject.set(x, "ignoreCase", value.asInstanceOf[js.Any])
     
     inline def setIgnoreCaseUndefined: Self = StObject.set(x, "ignoreCase", js.undefined)
+    
+    inline def setLabel(value: String | js.Function | BaseLabel): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     inline def setLoadOnDemand(value: Boolean): Self = StObject.set(x, "loadOnDemand", value.asInstanceOf[js.Any])
     

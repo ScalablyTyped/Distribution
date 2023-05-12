@@ -1,5 +1,6 @@
 package typings.rcTree
 
+import typings.rcTree.esInterfaceMod.BasicDataNode
 import typings.rcTree.esInterfaceMod.DataEntity
 import typings.rcTree.esInterfaceMod.DataNode
 import typings.rcTree.esInterfaceMod.FlattenNode
@@ -40,7 +41,7 @@ object esNodeListMod {
   
   inline def getMinimumRangeTransitionRange(list: js.Array[FlattenNode[DataNode]], virtual: Boolean, height: Double, itemHeight: Double): js.Array[FlattenNode[DataNode]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getMinimumRangeTransitionRange")(list.asInstanceOf[js.Any], virtual.asInstanceOf[js.Any], height.asInstanceOf[js.Any], itemHeight.asInstanceOf[js.Any])).asInstanceOf[js.Array[FlattenNode[DataNode]]]
   
-  trait NodeListProps[TreeDataType] extends StObject {
+  trait NodeListProps[TreeDataType /* <: BasicDataNode */] extends StObject {
     
     var activeItem: FlattenNode[TreeDataType]
     
@@ -104,7 +105,7 @@ object esNodeListMod {
   }
   object NodeListProps {
     
-    inline def apply[TreeDataType](
+    inline def apply[TreeDataType /* <: BasicDataNode */](
       activeItem: FlattenNode[TreeDataType],
       checkedKeys: js.Array[Key],
       data: js.Array[FlattenNode[TreeDataType]],
@@ -132,7 +133,7 @@ object esNodeListMod {
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: NodeListProps[?], TreeDataType] (val x: Self & NodeListProps[TreeDataType]) extends AnyVal {
+    implicit open class MutableBuilder[Self <: NodeListProps[?], TreeDataType /* <: BasicDataNode */] (val x: Self & NodeListProps[TreeDataType]) extends AnyVal {
       
       inline def setActiveItem(value: FlattenNode[TreeDataType]): Self = StObject.set(x, "activeItem", value.asInstanceOf[js.Any])
       

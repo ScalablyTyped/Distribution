@@ -1,7 +1,7 @@
 
 # Scala.js typings for ipld__dag-cbor
 
-Typings are for version 8.0.0
+Typings are for version 9.0.0
 
 ## Library description:
 JS implementation of DAG-CBOR

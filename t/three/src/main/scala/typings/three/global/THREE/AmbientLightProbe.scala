@@ -1,12 +1,17 @@
 package typings.three.global.THREE
 
-import typings.three.srcUtilsMod.ColorRepresentation
+import typings.three.srcMathColorMod.ColorRepresentation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("THREE.AmbientLightProbe")
 @js.native
+/**
+  * Creates a new {@link AmbientLightProbe}.
+  * @param color An instance of Color, string representing a color or a number representing a color.
+  * @param intensity Numeric value of the light probe's intensity. Expects a `Float`. Default `1`
+  */
 open class AmbientLightProbe ()
   extends typings.three.mod.AmbientLightProbe {
   def this(color: ColorRepresentation) = this()

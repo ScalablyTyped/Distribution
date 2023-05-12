@@ -12,12 +12,12 @@ trait DateFilter extends StObject {
   var DateRange: js.UndefOr[typings.awsSdk.clientsSecurityhubMod.DateRange] = js.undefined
   
   /**
-    * An end date for the date filter.
+    * A timestamp that provides the end date for the date filter. A correctly formatted example is 2020-05-21T20:16:34.724Z. The value cannot contain spaces, and date and time should be separated by T. For more information, see RFC 3339 section 5.6, Internet Date/Time Format.
     */
   var End: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * A start date for the date filter.
+    * A timestamp that provides the start date for the date filter. A correctly formatted example is 2020-05-21T20:16:34.724Z. The value cannot contain spaces, and date and time should be separated by T. For more information, see RFC 3339 section 5.6, Internet Date/Time Format.
     */
   var Start: js.UndefOr[NonEmptyString] = js.undefined
 }

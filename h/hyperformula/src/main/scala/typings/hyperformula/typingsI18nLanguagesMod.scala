@@ -23,6 +23,10 @@ object typingsI18nLanguagesMod {
   @js.native
   val enGB: RawTranslationPackage = js.native
   
+  @JSImport("hyperformula/typings/i18n/languages", "enUS")
+  @js.native
+  val enUS: RawTranslationPackage = js.native
+  
   @JSImport("hyperformula/typings/i18n/languages", "esES")
   @js.native
   val esES: RawTranslationPackage = js.native

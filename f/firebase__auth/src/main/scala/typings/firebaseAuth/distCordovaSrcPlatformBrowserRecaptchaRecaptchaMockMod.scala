@@ -2,6 +2,8 @@ package typings.firebaseAuth
 
 import typings.firebaseAuth.distCordovaSrcModelAuthMod.AuthInternal
 import typings.firebaseAuth.distCordovaSrcModelPublicTypesMod.RecaptchaParameters
+import typings.firebaseAuth.distCordovaSrcPlatformBrowserRecaptchaRecaptchaMod.GreCAPTCHA
+import typings.firebaseAuth.distCordovaSrcPlatformBrowserRecaptchaRecaptchaMod.GreCAPTCHATopLevel
 import typings.firebaseAuth.distCordovaSrcPlatformBrowserRecaptchaRecaptchaMod.Recaptcha
 import typings.std.HTMLElement
 import typings.std.Map
@@ -10,6 +12,18 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object distCordovaSrcPlatformBrowserRecaptchaRecaptchaMockMod {
+  
+  @JSImport("@firebase/auth/dist/cordova/src/platform_browser/recaptcha/recaptcha_mock", "MockGreCAPTCHA")
+  @js.native
+  open class MockGreCAPTCHA ()
+    extends StObject
+       with GreCAPTCHA
+  
+  @JSImport("@firebase/auth/dist/cordova/src/platform_browser/recaptcha/recaptcha_mock", "MockGreCAPTCHATopLevel")
+  @js.native
+  open class MockGreCAPTCHATopLevel ()
+    extends StObject
+       with GreCAPTCHATopLevel
   
   @JSImport("@firebase/auth/dist/cordova/src/platform_browser/recaptcha/recaptcha_mock", "MockReCaptcha")
   @js.native

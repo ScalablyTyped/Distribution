@@ -35,6 +35,11 @@ trait DataReplicationInfo extends StObject {
     * The disks that should be replicated.
     */
   var replicatedDisks: js.UndefOr[DataReplicationInfoReplicatedDisks] = js.undefined
+  
+  /**
+    * AWS Availability zone into which data is being replicated.
+    */
+  var stagingAvailabilityZone: js.UndefOr[AwsAvailabilityZone] = js.undefined
 }
 object DataReplicationInfo {
   
@@ -71,5 +76,9 @@ object DataReplicationInfo {
     inline def setReplicatedDisksUndefined: Self = StObject.set(x, "replicatedDisks", js.undefined)
     
     inline def setReplicatedDisksVarargs(value: DataReplicationInfoReplicatedDisk*): Self = StObject.set(x, "replicatedDisks", js.Array(value*))
+    
+    inline def setStagingAvailabilityZone(value: AwsAvailabilityZone): Self = StObject.set(x, "stagingAvailabilityZone", value.asInstanceOf[js.Any])
+    
+    inline def setStagingAvailabilityZoneUndefined: Self = StObject.set(x, "stagingAvailabilityZone", js.undefined)
   }
 }

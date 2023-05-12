@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CreateIAMPolicyAssignmentRequest extends StObject {
   
   /**
-    * The name of the assignment, also called a rule. It must be unique within an Amazon Web Services account.
+    * The name of the assignment, also called a rule. The name must be unique within the Amazon Web Services account.
     */
   var AssignmentName: IAMPolicyAssignmentName
   

@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.MsHyphenateLimitZone
+import typings.csstype.mod.Property.BackgroundClip
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,13 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `142` extends StObject {
   
   var value: js.UndefOr[
-    (MsHyphenateLimitZone[Double | String]) | (js.Array[
+    BackgroundClip | (js.Array[
       (Extract[
-        js.UndefOr[
-          (MsHyphenateLimitZone[Double | String]) | (js.Array[NonNullable[js.UndefOr[MsHyphenateLimitZone[Double | String]]]])
-        ], 
+        js.UndefOr[BackgroundClip | js.Array[NonNullable[js.UndefOr[BackgroundClip]]]], 
         String
-      ]) | (NonNullable[js.UndefOr[MsHyphenateLimitZone[Double | String]]])
+      ]) | NonNullable[js.UndefOr[BackgroundClip]]
     ])
   ] = js.native
 }

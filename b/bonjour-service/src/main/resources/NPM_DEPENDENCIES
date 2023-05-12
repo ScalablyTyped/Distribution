@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "bonjour-service" : "1.0.14"
+      "bonjour-service" : "1.1.1"
     }
   ],
   "test-dependencies" : [
     {
-      "bonjour-service" : "1.0.14"
+      "bonjour-service" : "1.1.1"
     }
   ],
   "compile-devDependencies" : [

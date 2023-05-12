@@ -15,7 +15,7 @@ object distScrollScrollMod {
     def this(props: ScrollConfig & SharedRenderProps[ScrollProps]) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: ScrollConfig & SharedRenderProps[ScrollProps], context: Any) = this()
     

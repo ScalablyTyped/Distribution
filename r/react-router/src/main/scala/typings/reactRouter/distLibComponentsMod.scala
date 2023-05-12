@@ -1,11 +1,13 @@
 package typings.reactRouter
 
+import typings.react.mod.ComponentType
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
 import typings.reactRouter.anon.PartialLocation
+import typings.reactRouter.distLibContextMod.IndexRouteObject
 import typings.reactRouter.distLibContextMod.Navigator
-import typings.reactRouter.distLibContextMod.RelativeRoutingType
+import typings.reactRouter.distLibContextMod.NonIndexRouteObject
 import typings.reactRouter.distLibContextMod.RouteMatch
 import typings.reactRouter.distLibContextMod.RouteObject
 import typings.reactRouter.reactRouterBooleans.`false`
@@ -13,9 +15,13 @@ import typings.reactRouter.reactRouterBooleans.`true`
 import typings.remixRunRouter.distHistoryMod.Action
 import typings.remixRunRouter.distHistoryMod.InitialEntry
 import typings.remixRunRouter.distHistoryMod.To
+import typings.remixRunRouter.distRouterMod.RelativeRoutingType
 import typings.remixRunRouter.distRouterMod.Router
+import typings.remixRunRouter.distUtilsMod.ImmutableRouteKey
+import typings.remixRunRouter.distUtilsMod.LazyRouteFunction
 import typings.remixRunRouter.distUtilsMod.TrackedPromise
 import typings.std.Awaited
+import typings.std.Omit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -45,8 +51,6 @@ object distLibComponentsMod {
   inline def createRoutesFromChildren(children: ReactNode): js.Array[RouteObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("createRoutesFromChildren")(children.asInstanceOf[js.Any]).asInstanceOf[js.Array[RouteObject]]
   inline def createRoutesFromChildren(children: ReactNode, parentPath: js.Array[Double]): js.Array[RouteObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("createRoutesFromChildren")(children.asInstanceOf[js.Any], parentPath.asInstanceOf[js.Any])).asInstanceOf[js.Array[RouteObject]]
   
-  inline def enhanceManualRouteObjects(routes: js.Array[RouteObject]): js.Array[RouteObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("enhanceManualRouteObjects")(routes.asInstanceOf[js.Any]).asInstanceOf[js.Array[RouteObject]]
-  
   inline def renderMatches(): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("renderMatches")().asInstanceOf[ReactElement | Null]
   inline def renderMatches(matches: js.Array[RouteMatch[String, RouteObject]]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("renderMatches")(matches.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
   
@@ -70,7 +74,7 @@ object distLibComponentsMod {
       
       inline def setChildren(value: ReactNode | AwaitResolveRenderFunction): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      inline def setChildrenFunction1(value: /* data */ Awaited[Any] => ReactElement): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      inline def setChildrenFunction1(value: /* data */ Awaited[Any] => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
@@ -82,11 +86,15 @@ object distLibComponentsMod {
     }
   }
   
-  type AwaitResolveRenderFunction = js.Function1[/* data */ Awaited[Any], ReactElement]
+  type AwaitResolveRenderFunction = js.Function1[/* data */ Awaited[Any], ReactNode]
   
   trait IndexRouteProps
     extends StObject
        with _RouteProps {
+    
+    var Component: js.UndefOr[ComponentType[js.Object] | Null] = js.undefined
+    
+    var ErrorBoundary: js.UndefOr[ComponentType[js.Object] | Null] = js.undefined
     
     var action: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: @remix-run/router.@remix-run/router/dist/utils.AgnosticIndexRouteObject['action'] */ js.Any
@@ -115,6 +123,8 @@ object distLibComponentsMod {
       ] = js.undefined
     
     var index: `true`
+    
+    var `lazy`: js.UndefOr[LazyRouteFunction[IndexRouteObject]] = js.undefined
     
     var loader: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: @remix-run/router.@remix-run/router/dist/utils.AgnosticIndexRouteObject['loader'] */ js.Any
@@ -152,11 +162,23 @@ object distLibComponentsMod {
       
       inline def setChildren(value: Unit): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
+      inline def setComponent(value: ComponentType[js.Object]): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
+      
+      inline def setComponentNull: Self = StObject.set(x, "Component", null)
+      
+      inline def setComponentUndefined: Self = StObject.set(x, "Component", js.undefined)
+      
       inline def setElement(value: ReactNode): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
       inline def setElementNull: Self = StObject.set(x, "element", null)
       
       inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
+      
+      inline def setErrorBoundary(value: ComponentType[js.Object]): Self = StObject.set(x, "ErrorBoundary", value.asInstanceOf[js.Any])
+      
+      inline def setErrorBoundaryNull: Self = StObject.set(x, "ErrorBoundary", null)
+      
+      inline def setErrorBoundaryUndefined: Self = StObject.set(x, "ErrorBoundary", js.undefined)
       
       inline def setErrorElement(value: ReactNode): Self = StObject.set(x, "errorElement", value.asInstanceOf[js.Any])
       
@@ -183,6 +205,10 @@ object distLibComponentsMod {
       inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
       inline def setIndex(value: `true`): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      
+      inline def setLazy(value: () => js.Promise[Omit[IndexRouteObject, ImmutableRouteKey]]): Self = StObject.set(x, "lazy", js.Any.fromFunction0(value))
+      
+      inline def setLazyUndefined: Self = StObject.set(x, "lazy", js.undefined)
       
       inline def setLoader(
         value: /* import warning: importer.ImportType#apply Failed type conversion: @remix-run/router.@remix-run/router/dist/utils.AgnosticIndexRouteObject['loader'] */ js.Any
@@ -306,6 +332,10 @@ object distLibComponentsMod {
     extends StObject
        with _RouteProps {
     
+    var Component: js.UndefOr[ComponentType[js.Object] | Null] = js.undefined
+    
+    var ErrorBoundary: js.UndefOr[ComponentType[js.Object] | Null] = js.undefined
+    
     var action: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: @remix-run/router.@remix-run/router/dist/utils.AgnosticNonIndexRouteObject['action'] */ js.Any
       ] = js.undefined
@@ -333,6 +363,8 @@ object distLibComponentsMod {
       ] = js.undefined
     
     var index: js.UndefOr[`false`] = js.undefined
+    
+    var `lazy`: js.UndefOr[LazyRouteFunction[NonIndexRouteObject]] = js.undefined
     
     var loader: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: @remix-run/router.@remix-run/router/dist/utils.AgnosticNonIndexRouteObject['loader'] */ js.Any
@@ -372,11 +404,23 @@ object distLibComponentsMod {
       
       inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
+      inline def setComponent(value: ComponentType[js.Object]): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
+      
+      inline def setComponentNull: Self = StObject.set(x, "Component", null)
+      
+      inline def setComponentUndefined: Self = StObject.set(x, "Component", js.undefined)
+      
       inline def setElement(value: ReactNode): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
       inline def setElementNull: Self = StObject.set(x, "element", null)
       
       inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
+      
+      inline def setErrorBoundary(value: ComponentType[js.Object]): Self = StObject.set(x, "ErrorBoundary", value.asInstanceOf[js.Any])
+      
+      inline def setErrorBoundaryNull: Self = StObject.set(x, "ErrorBoundary", null)
+      
+      inline def setErrorBoundaryUndefined: Self = StObject.set(x, "ErrorBoundary", js.undefined)
       
       inline def setErrorElement(value: ReactNode): Self = StObject.set(x, "errorElement", value.asInstanceOf[js.Any])
       
@@ -405,6 +449,10 @@ object distLibComponentsMod {
       inline def setIndex(value: `false`): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
       inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+      
+      inline def setLazy(value: () => js.Promise[Omit[NonIndexRouteObject, ImmutableRouteKey]]): Self = StObject.set(x, "lazy", js.Any.fromFunction0(value))
+      
+      inline def setLazyUndefined: Self = StObject.set(x, "lazy", js.undefined)
       
       inline def setLoader(
         value: /* import warning: importer.ImportType#apply Failed type conversion: @remix-run/router.@remix-run/router/dist/utils.AgnosticNonIndexRouteObject['loader'] */ js.Any

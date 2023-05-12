@@ -11,9 +11,21 @@ object sourceJoinMod {
     * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
     * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
     * TS definition: {{{
-    Strings extends [] ? '' : Strings extends [string | number] ? / * template literal string: ${Strings[0]} * / string : // @ts-expect-error `Rest` is inferred as `unknown` here: https://github.com/microsoft/TypeScript/issues/45281
-  Strings extends [string | number, ...infer Rest] ? / * template literal string: ${Strings[0]}${Delimiter}${Join<Rest,Delimiter>} * / string : string
+    Items extends [] ? '' : Items extends [type-fest.type-fest/source/join.JoinableItem | undefined] ? / * template literal string: ${NullishCoalesce<Items[0],>} * / string : Items extends [infer First, ...infer Tail] ? / * template literal string: ${NullishCoalesce<First,>}${Delimiter}${Join<Tail,Delimiter>} * / string : Items extends [...infer Head, infer Last] ? / * template literal string: ${Join<Head,Delimiter>}${Delimiter}${NullishCoalesce<Last,>} * / string : string
     }}}
     */
-  type Join[Strings /* <: js.Array[String | Double] */, Delimiter /* <: String */] = _empty
+  type Join[Items /* <: js.Array[JoinableItem] */, Delimiter /* <: String */] = _empty
+  
+  type JoinableItem = js.UndefOr[String | Double | js.BigInt | Boolean | Null]
+  
+  // `null` and `undefined` are treated uniquely in the built-in join method, in a way that differs from the default `toString` that would result in the type `${undefined}`. That's why we need to handle it specifically with this helper.
+  // @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join#description
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * This RHS of the type alias is guess work. You should cast if it's not correct in your case.
+    * TS definition: {{{
+    Value extends undefined | null ? std.NonNullable<Value> | Fallback : Value
+    }}}
+    */
+  type NullishCoalesce[Value /* <: JoinableItem */, Fallback /* <: String */] = Value
 }

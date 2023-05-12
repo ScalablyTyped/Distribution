@@ -73,6 +73,8 @@ inline def attr(elem: SVGDOMElement, keyOrAttribs: SVGAttributes, value: Double)
 
 inline def callout(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("callout")().asInstanceOf[Unit]
 
+inline def centerImage(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("centerImage")().asInstanceOf[Unit]
+
 inline def chart(options: Options): Chart_ = ^.asInstanceOf[js.Dynamic].applyDynamic("chart")(options.asInstanceOf[js.Any]).asInstanceOf[Chart_]
 inline def chart(options: Options, callback: ChartCallbackFunction): Chart_ = (^.asInstanceOf[js.Dynamic].applyDynamic("chart")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Chart_]
 inline def chart(renderTo: String, options: Options): Chart_ = (^.asInstanceOf[js.Dynamic].applyDynamic("chart")(renderTo.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Chart_]
@@ -276,6 +278,8 @@ inline def pad(number: Double, length: Unit, padder: String): String = (^.asInst
 
 inline def pick[T](items: (js.UndefOr[T | Null])*): T = ^.asInstanceOf[js.Dynamic].applyDynamic("pick")(items.asInstanceOf[Seq[js.Any]]*).asInstanceOf[T]
 
+inline def pushUnique(array: js.Array[Any], item: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("pushUnique")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+
 inline def reduce(arr: js.Array[Any], fn: js.Function, initialValue: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(arr.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any])).asInstanceOf[Any]
 
 inline def registerRendererType(rendererType: String, rendererClass: Class[SVGRenderer], setAsDefault: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerRendererType")(rendererType.asInstanceOf[js.Any], rendererClass.asInstanceOf[js.Any], setAsDefault.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -464,6 +468,18 @@ type LonLatArray = js.Array[Double]
 
 type MarkerClusterDrillCallbackFunction = js.ThisFunction1[/* this */ Point, /* event */ PointClickEventObject, Unit]
 
+/**
+  * Callback that fires after the end of Networkgraph series simulation when
+  * the layout is stable.
+  *
+  * @param this
+  *        The series where the event occured.
+  *
+  * @param event
+  *        The event that occured.
+  */
+type NetworkgraphAfterSimulationCallbackFunction = js.ThisFunction1[/* this */ Series, /* event */ Event, Unit]
+
 type NumberFormatterCallbackFunction = js.Function4[
 /* number */ Double, 
 /* decimals */ Double, 
@@ -555,6 +571,51 @@ type SeriesSankeyDataLabelsFormatterCallbackFunction = js.ThisFunction0[
 js.UndefOr[String]]
 
 type SeriesShowCallbackFunction = js.ThisFunction1[/* this */ Series, /* event */ Event, Unit]
+
+/**
+  * Callback function for sonification events on chart.
+  *
+  * @param e
+  *        Sonification chart event context
+  */
+type SonificationChartEventCallback = js.Function1[
+/* e */ typings.highcharts.modulesSonificationMod.highchartsAugmentingMod.SonificationChartEventCallbackContext, 
+Unit]
+
+/**
+  * Callback function for sonification events on series.
+  *
+  * @param e
+  *        Sonification series event context
+  */
+type SonificationSeriesEventCallback = js.Function1[
+/* e */ typings.highcharts.modulesSonificationMod.highchartsAugmentingMod.SonificationSeriesEventCallbackContext, 
+Unit]
+
+/**
+  * Filter callback for filtering timeline events on a SonificationTimeline.
+  *
+  * @param e
+  *        TimelineEvent being filtered
+  *
+  * @param ix
+  *        Index of TimelineEvent in current event array
+  *
+  * @param arr
+  *        The current event array
+  *
+  * @return The function should return true if the TimelineEvent should be
+  *         included, false otherwise.
+  */
+type SonificationTimelineFilterCallback = js.Function3[
+/* e */ typings.highcharts.modulesSonificationMod.highchartsAugmentingMod.SonificationTimelineEvent, 
+/* ix */ Double, 
+/* arr */ js.Array[
+  typings.highcharts.modulesSonificationMod.highchartsAugmentingMod.SonificationTimelineEvent
+], 
+Boolean]
+
+type SynthEnvelope = js.Array[SynthEnvelopePoint]
 
 type TimeFormatCallbackFunction = js.Function1[/* timestamp */ Double, String]
 

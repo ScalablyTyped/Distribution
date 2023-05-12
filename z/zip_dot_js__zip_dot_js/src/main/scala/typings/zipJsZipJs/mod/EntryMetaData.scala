@@ -1,8 +1,6 @@
 package typings.zipJsZipJs.mod
 
-import typings.std.AsyncGenerator
 import typings.std.Map
-import typings.std.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -63,21 +61,6 @@ trait EntryMetaData extends StObject {
     * `true` if the filename is encoded in UTF-8.
     */
   var filenameUTF8: Boolean
-  
-  /**
-    * Returns the content of the entry
-    * 
-    * @param writer The {@link Writer} instance used to write the content of the entry.
-    * @param options The options.
-    * @returns A promise resolving to the type to data associated to `writer`.
-    */
-  var getData: js.UndefOr[
-    js.Function2[
-      /* writer */ Writer[Any] | WritableWriter | WritableStream[Any] | (AsyncGenerator[Writer[Any] | WritableWriter | WritableStream[Any], Boolean, Any]), 
-      /* options */ js.UndefOr[EntryGetDataOptions], 
-      js.Promise[Any]
-    ]
-  ] = js.undefined
   
   /**
     * The internal file attribute (raw).
@@ -217,12 +200,6 @@ object EntryMetaData {
     inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     
     inline def setFilenameUTF8(value: Boolean): Self = StObject.set(x, "filenameUTF8", value.asInstanceOf[js.Any])
-    
-    inline def setGetData(
-      value: (/* writer */ Writer[Any] | WritableWriter | WritableStream[Any] | (AsyncGenerator[Writer[Any] | WritableWriter | WritableStream[Any], Boolean, Any]), /* options */ js.UndefOr[EntryGetDataOptions]) => js.Promise[Any]
-    ): Self = StObject.set(x, "getData", js.Any.fromFunction2(value))
-    
-    inline def setGetDataUndefined: Self = StObject.set(x, "getData", js.undefined)
     
     inline def setInternalFileAttribute(value: Double): Self = StObject.set(x, "internalFileAttribute", value.asInstanceOf[js.Any])
     

@@ -4,10 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Identifiers for API endpoints used by {@link google.maps.MapsNetworkError}
-  * instances.
-  */
 @JSGlobal("google.maps.MapsNetworkErrorEndpoint")
 @js.native
 object MapsNetworkErrorEndpoint extends StObject {

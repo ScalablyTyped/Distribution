@@ -16,7 +16,6 @@ open class Joystick protected () extends StObject {
   
   var id: String = js.native
   
-  def on(event: String, cb: js.Function0[Unit]): this.type = js.native
   @JSName("on")
   def on_axismove(event: axismove, cb: js.Function2[/* error */ js.Error, /* date */ js.Date, Unit]): this.type = js.native
   @JSName("on")

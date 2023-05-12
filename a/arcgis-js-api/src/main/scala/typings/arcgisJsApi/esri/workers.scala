@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * This module is a utility framework that simplifies the use of [Web Workers](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers) in the ArcGIS API for JavaScript.
+  * This module is a utility framework that simplifies the use of [Web Workers](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers) in the ArcGIS Maps SDK for JavaScript.
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-workers.html)
   */

@@ -21,6 +21,7 @@ object libHelpersProvideInjectMod {
       Any, 
       Any, 
       Any, 
+      Any, 
       Any
     ]
   ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("inheritInjected")(componentOptions.asInstanceOf[js.Any]).asInstanceOf[Unit]

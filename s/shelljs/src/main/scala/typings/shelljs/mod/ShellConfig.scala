@@ -1,6 +1,5 @@
 package typings.shelljs.mod
 
-import typings.glob.mod.IOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,7 +19,7 @@ trait ShellConfig extends StObject {
   /**
     * Passed to glob.sync() instead of the default options ({}).
     */
-  var globOptions: IOptions
+  var globOptions: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify glob.IOptions */ Any
   
   /**
     * Reset shell.config to the defaults.
@@ -41,7 +40,13 @@ trait ShellConfig extends StObject {
 }
 object ShellConfig {
   
-  inline def apply(fatal: Boolean, globOptions: IOptions, reset: () => Unit, silent: Boolean, verbose: Boolean): ShellConfig = {
+  inline def apply(
+    fatal: Boolean,
+    globOptions: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify glob.IOptions */ Any,
+    reset: () => Unit,
+    silent: Boolean,
+    verbose: Boolean
+  ): ShellConfig = {
     val __obj = js.Dynamic.literal(fatal = fatal.asInstanceOf[js.Any], globOptions = globOptions.asInstanceOf[js.Any], reset = js.Any.fromFunction0(reset), silent = silent.asInstanceOf[js.Any], verbose = verbose.asInstanceOf[js.Any], execPath = null)
     __obj.asInstanceOf[ShellConfig]
   }
@@ -55,7 +60,9 @@ object ShellConfig {
     
     inline def setFatal(value: Boolean): Self = StObject.set(x, "fatal", value.asInstanceOf[js.Any])
     
-    inline def setGlobOptions(value: IOptions): Self = StObject.set(x, "globOptions", value.asInstanceOf[js.Any])
+    inline def setGlobOptions(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify glob.IOptions */ Any
+    ): Self = StObject.set(x, "globOptions", value.asInstanceOf[js.Any])
     
     inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     

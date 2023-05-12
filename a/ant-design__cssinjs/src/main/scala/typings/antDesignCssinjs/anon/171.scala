@@ -1,6 +1,6 @@
 package typings.antDesignCssinjs.anon
 
-import typings.csstype.mod.Property.Float
+import typings.csstype.mod.Property.PaddingBlock
 import typings.std.Extract
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
@@ -11,8 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait `171` extends StObject {
   
   var value: js.UndefOr[
-    Float | (js.Array[
-      (Extract[js.UndefOr[Float | js.Array[NonNullable[js.UndefOr[Float]]]], String]) | NonNullable[js.UndefOr[Float]]
+    (PaddingBlock[Double | String]) | (js.Array[
+      (Extract[
+        js.UndefOr[
+          (PaddingBlock[Double | String]) | (js.Array[NonNullable[js.UndefOr[PaddingBlock[Double | String]]]])
+        ], 
+        String
+      ]) | (NonNullable[js.UndefOr[PaddingBlock[Double | String]]])
     ])
   ] = js.native
 }

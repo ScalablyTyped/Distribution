@@ -118,6 +118,10 @@ object keysClassesMod {
   @js.native
   val IMAGE_RELATIONS: Double = js.native
   
+  @JSImport("@nginstack/web-framework/keys/Classes", "INACTIVE_SESSION_HANDLINGS")
+  @js.native
+  val INACTIVE_SESSION_HANDLINGS: Double = js.native
+  
   @JSImport("@nginstack/web-framework/keys/Classes", "INFRASTRUCTURE")
   @js.native
   val INFRASTRUCTURE: Double = js.native
@@ -265,10 +269,6 @@ object keysClassesMod {
   @JSImport("@nginstack/web-framework/keys/Classes", "USERS_IMAGE")
   @js.native
   val USERS_IMAGE: Double = js.native
-  
-  @JSImport("@nginstack/web-framework/keys/Classes", "USERS_TEST")
-  @js.native
-  val USERS_TEST: Double = js.native
   
   @JSImport("@nginstack/web-framework/keys/Classes", "USER_SECURITY_POLICIES")
   @js.native

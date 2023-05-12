@@ -8,13 +8,13 @@ trait NullEngineOptions extends StObject {
   
   /**
     * If delta time between frames should be constant
-    * @see https://doc.babylonjs.com/babylon101/animations#deterministic-lockstep
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/animation/advanced_animations#deterministic-lockstep
     */
   var deterministicLockstep: Boolean
   
   /**
     * Maximum about of steps between frames (Default: 4)
-    * @see https://doc.babylonjs.com/babylon101/animations#deterministic-lockstep
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/animation/advanced_animations#deterministic-lockstep
     */
   var lockstepMaxSteps: Double
   

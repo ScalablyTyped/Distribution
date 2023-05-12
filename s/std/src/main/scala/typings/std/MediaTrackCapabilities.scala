@@ -16,9 +16,6 @@ trait MediaTrackCapabilities extends StObject {
   var channelCount: js.UndefOr[ULongRange] = js.undefined
   
   /* standard dom */
-  var cursor: js.UndefOr[js.Array[java.lang.String]] = js.undefined
-  
-  /* standard dom */
   var deviceId: js.UndefOr[java.lang.String] = js.undefined
   
   /* standard dom */
@@ -40,16 +37,7 @@ trait MediaTrackCapabilities extends StObject {
   var height: js.UndefOr[ULongRange] = js.undefined
   
   /* standard dom */
-  var latency: js.UndefOr[DoubleRange] = js.undefined
-  
-  /* standard dom */
-  var logicalSurface: js.UndefOr[scala.Boolean] = js.undefined
-  
-  /* standard dom */
   var noiseSuppression: js.UndefOr[js.Array[scala.Boolean]] = js.undefined
-  
-  /* standard dom */
-  var resizeMode: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   
   /* standard dom */
   var sampleRate: js.UndefOr[ULongRange] = js.undefined
@@ -84,12 +72,6 @@ object MediaTrackCapabilities {
     
     inline def setChannelCountUndefined: Self = StObject.set(x, "channelCount", js.undefined)
     
-    inline def setCursor(value: js.Array[java.lang.String]): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
-    
-    inline def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
-    
-    inline def setCursorVarargs(value: java.lang.String*): Self = StObject.set(x, "cursor", js.Array(value*))
-    
     inline def setDeviceId(value: java.lang.String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     
     inline def setDeviceIdUndefined: Self = StObject.set(x, "deviceId", js.undefined)
@@ -122,25 +104,11 @@ object MediaTrackCapabilities {
     
     inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    inline def setLatency(value: DoubleRange): Self = StObject.set(x, "latency", value.asInstanceOf[js.Any])
-    
-    inline def setLatencyUndefined: Self = StObject.set(x, "latency", js.undefined)
-    
-    inline def setLogicalSurface(value: scala.Boolean): Self = StObject.set(x, "logicalSurface", value.asInstanceOf[js.Any])
-    
-    inline def setLogicalSurfaceUndefined: Self = StObject.set(x, "logicalSurface", js.undefined)
-    
     inline def setNoiseSuppression(value: js.Array[scala.Boolean]): Self = StObject.set(x, "noiseSuppression", value.asInstanceOf[js.Any])
     
     inline def setNoiseSuppressionUndefined: Self = StObject.set(x, "noiseSuppression", js.undefined)
     
     inline def setNoiseSuppressionVarargs(value: scala.Boolean*): Self = StObject.set(x, "noiseSuppression", js.Array(value*))
-    
-    inline def setResizeMode(value: js.Array[java.lang.String]): Self = StObject.set(x, "resizeMode", value.asInstanceOf[js.Any])
-    
-    inline def setResizeModeUndefined: Self = StObject.set(x, "resizeMode", js.undefined)
-    
-    inline def setResizeModeVarargs(value: java.lang.String*): Self = StObject.set(x, "resizeMode", js.Array(value*))
     
     inline def setSampleRate(value: ULongRange): Self = StObject.set(x, "sampleRate", value.asInstanceOf[js.Any])
     

@@ -1,6 +1,9 @@
 package typings.std.global
 
 import typings.std.EventSourceInit
+import typings.std.stdInts.`0`
+import typings.std.stdInts.`1`
+import typings.std.stdInts.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,15 +25,15 @@ object EventSource {
   /* standard dom */
   @JSGlobal("EventSource.CLOSED")
   @js.native
-  val CLOSED: Double = js.native
+  val CLOSED: `2` = js.native
   
   /* standard dom */
   @JSGlobal("EventSource.CONNECTING")
   @js.native
-  val CONNECTING: Double = js.native
+  val CONNECTING: `0` = js.native
   
   /* standard dom */
   @JSGlobal("EventSource.OPEN")
   @js.native
-  val OPEN: Double = js.native
+  val OPEN: `1` = js.native
 }

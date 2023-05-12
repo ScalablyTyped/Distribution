@@ -12,10 +12,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Class_EventEmitter")
 @js.native
 /**
-  * 
+  *
   * @brief 构造函数
-  * 
-  * 
+  *
+  *
   */
 open class ClassEventEmitter ()
   extends StObject

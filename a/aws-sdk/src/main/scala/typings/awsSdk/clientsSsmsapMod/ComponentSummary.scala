@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ComponentSummary extends StObject {
   
   /**
-    * 
+    * The ID of the application.
     */
   var ApplicationId: js.UndefOr[typings.awsSdk.clientsSsmsapMod.ApplicationId] = js.undefined
   
   /**
-    * 
+    * The ID of the component.
     */
   var ComponentId: js.UndefOr[typings.awsSdk.clientsSsmsapMod.ComponentId] = js.undefined
   
   /**
-    * 
+    * The type of the component.
     */
   var ComponentType: js.UndefOr[typings.awsSdk.clientsSsmsapMod.ComponentType] = js.undefined
   
   /**
-    * 
+    * The tags of the component.
     */
   var Tags: js.UndefOr[TagMap] = js.undefined
 }

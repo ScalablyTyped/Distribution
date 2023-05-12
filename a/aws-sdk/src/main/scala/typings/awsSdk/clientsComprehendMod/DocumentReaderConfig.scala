@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DocumentReaderConfig extends StObject {
   
   /**
-    * This enum field will start with two values which will apply to PDFs:    TEXTRACT_DETECT_DOCUMENT_TEXT - The service calls DetectDocumentText for PDF documents per page.    TEXTRACT_ANALYZE_DOCUMENT - The service calls AnalyzeDocument for PDF documents per page.  
+    * This field defines the Amazon Textract API operation that Amazon Comprehend uses to extract text from PDF files and image files. Enter one of the following values:    TEXTRACT_DETECT_DOCUMENT_TEXT - The Amazon Comprehend service uses the DetectDocumentText API operation.     TEXTRACT_ANALYZE_DOCUMENT - The Amazon Comprehend service uses the AnalyzeDocument API operation.   
     */
   var DocumentReadAction: typings.awsSdk.clientsComprehendMod.DocumentReadAction
   
   /**
-    * This enum field provides two values:    SERVICE_DEFAULT - use service defaults for Document reading. For Digital PDF it would mean using an internal parser instead of Textract APIs    FORCE_DOCUMENT_READ_ACTION - Always use specified action for DocumentReadAction, including Digital PDF.   
+    * Determines the text extraction actions for PDF files. Enter one of the following values:    SERVICE_DEFAULT - use the Amazon Comprehend service defaults for PDF files.    FORCE_DOCUMENT_READ_ACTION - Amazon Comprehend uses the Textract API specified by DocumentReadAction for all PDF files, including digital PDF files.   
     */
   var DocumentReadMode: js.UndefOr[typings.awsSdk.clientsComprehendMod.DocumentReadMode] = js.undefined
   
   /**
-    * Specifies how the text in an input file should be processed:
+    * Specifies the type of Amazon Textract features to apply. If you chose TEXTRACT_ANALYZE_DOCUMENT as the read action, you must specify one or both of the following values:    TABLES - Returns information about any tables that are detected in the input document.     FORMS - Returns information and the data from any forms that are detected in the input document.   
     */
   var FeatureTypes: js.UndefOr[ListOfDocumentReadFeatureTypes] = js.undefined
 }

@@ -1,7 +1,7 @@
 package typings.stylelint.anon
 
-import typings.postcss.libNodeMod.default
 import typings.postcss.libWarningMod.WarningOptions
+import typings.std.Node
 import typings.stylelint.stylelintStrings.warning
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -54,7 +54,7 @@ trait WarningstylelintTypestrin extends StObject {
     * warning.node.toString() //=> 'color: white !important'
     * ```
     */
-  var node: default = js.native
+  var node: Node = js.native
   
   /**
     * The name of the plugin that created this warning.

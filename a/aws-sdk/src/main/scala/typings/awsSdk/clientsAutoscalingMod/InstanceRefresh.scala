@@ -12,7 +12,7 @@ trait InstanceRefresh extends StObject {
   var AutoScalingGroupName: js.UndefOr[XmlStringMaxLen255] = js.undefined
   
   /**
-    * Describes the specific update you want to deploy.
+    * Describes the desired configuration for the instance refresh.
     */
   var DesiredConfiguration: js.UndefOr[typings.awsSdk.clientsAutoscalingMod.DesiredConfiguration] = js.undefined
   
@@ -27,15 +27,18 @@ trait InstanceRefresh extends StObject {
   var InstanceRefreshId: js.UndefOr[XmlStringMaxLen255] = js.undefined
   
   /**
-    * The number of instances remaining to update before the instance refresh is complete.
+    * The number of instances remaining to update before the instance refresh is complete.  If you roll back the instance refresh, InstancesToUpdate shows you the number of instances that were not yet updated by the instance refresh. Therefore, these instances don't need to be replaced as part of the rollback. 
     */
   var InstancesToUpdate: js.UndefOr[typings.awsSdk.clientsAutoscalingMod.InstancesToUpdate] = js.undefined
   
   /**
-    * The percentage of the instance refresh that is complete. For each instance replacement, Amazon EC2 Auto Scaling tracks the instance's health status and warm-up time. When the instance's health status changes to healthy and the specified warm-up time passes, the instance is considered updated and is added to the percentage complete.
+    * The percentage of the instance refresh that is complete. For each instance replacement, Amazon EC2 Auto Scaling tracks the instance's health status and warm-up time. When the instance's health status changes to healthy and the specified warm-up time passes, the instance is considered updated and is added to the percentage complete.   PercentageComplete does not include instances that are replaced during a rollback. This value gradually goes back down to zero during a rollback. 
     */
   var PercentageComplete: js.UndefOr[IntPercent] = js.undefined
   
+  /**
+    * The preferences for an instance refresh.
+    */
   var Preferences: js.UndefOr[RefreshPreferences] = js.undefined
   
   /**
@@ -44,17 +47,22 @@ trait InstanceRefresh extends StObject {
   var ProgressDetails: js.UndefOr[InstanceRefreshProgressDetails] = js.undefined
   
   /**
+    * The rollback details.
+    */
+  var RollbackDetails: js.UndefOr[typings.awsSdk.clientsAutoscalingMod.RollbackDetails] = js.undefined
+  
+  /**
     * The date and time at which the instance refresh began.
     */
   var StartTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The current status for the instance refresh operation:    Pending - The request was created, but the operation has not started.    InProgress - The operation is in progress.    Successful - The operation completed successfully.    Failed - The operation failed to complete. You can troubleshoot using the status reason and the scaling activities.     Cancelling - An ongoing operation is being cancelled. Cancellation does not roll back any replacements that have already been completed, but it prevents new replacements from being started.     Cancelled - The operation is cancelled.   
+    * The current status for the instance refresh operation:    Pending - The request was created, but the instance refresh has not started.    InProgress - An instance refresh is in progress.    Successful - An instance refresh completed successfully.    Failed - An instance refresh failed to complete. You can troubleshoot using the status reason and the scaling activities.     Cancelling - An ongoing instance refresh is being cancelled.    Cancelled - The instance refresh is cancelled.     RollbackInProgress - An instance refresh is being rolled back.    RollbackFailed - The rollback failed to complete. You can troubleshoot using the status reason and the scaling activities.    RollbackSuccessful - The rollback completed successfully.  
     */
   var Status: js.UndefOr[InstanceRefreshStatus] = js.undefined
   
   /**
-    * Provides more details about the current status of the instance refresh. 
+    * The explanation for the specific status assigned to this operation.
     */
   var StatusReason: js.UndefOr[XmlStringMaxLen1023] = js.undefined
 }
@@ -99,6 +107,10 @@ object InstanceRefresh {
     inline def setProgressDetails(value: InstanceRefreshProgressDetails): Self = StObject.set(x, "ProgressDetails", value.asInstanceOf[js.Any])
     
     inline def setProgressDetailsUndefined: Self = StObject.set(x, "ProgressDetails", js.undefined)
+    
+    inline def setRollbackDetails(value: RollbackDetails): Self = StObject.set(x, "RollbackDetails", value.asInstanceOf[js.Any])
+    
+    inline def setRollbackDetailsUndefined: Self = StObject.set(x, "RollbackDetails", js.undefined)
     
     inline def setStartTime(value: js.Date): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     

@@ -8,13 +8,13 @@ trait Edge extends StObject {
   
   var dir: js.UndefOr[Double] = js.undefined
   
-  var fromLoc: js.UndefOr[Station | Stop | Location] = js.undefined
+  var fromLocation: js.UndefOr[Station | Stop | Location] = js.undefined
   
   var icoCrd: js.UndefOr[IcoCrd] = js.undefined
   
   var icon: js.UndefOr[js.Object] = js.undefined
   
-  var toLoc: js.UndefOr[Station | Stop | Location] = js.undefined
+  var toLocation: js.UndefOr[Station | Stop | Location] = js.undefined
 }
 object Edge {
   
@@ -30,9 +30,9 @@ object Edge {
     
     inline def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
     
-    inline def setFromLoc(value: Station | Stop | Location): Self = StObject.set(x, "fromLoc", value.asInstanceOf[js.Any])
+    inline def setFromLocation(value: Station | Stop | Location): Self = StObject.set(x, "fromLocation", value.asInstanceOf[js.Any])
     
-    inline def setFromLocUndefined: Self = StObject.set(x, "fromLoc", js.undefined)
+    inline def setFromLocationUndefined: Self = StObject.set(x, "fromLocation", js.undefined)
     
     inline def setIcoCrd(value: IcoCrd): Self = StObject.set(x, "icoCrd", value.asInstanceOf[js.Any])
     
@@ -42,8 +42,8 @@ object Edge {
     
     inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
-    inline def setToLoc(value: Station | Stop | Location): Self = StObject.set(x, "toLoc", value.asInstanceOf[js.Any])
+    inline def setToLocation(value: Station | Stop | Location): Self = StObject.set(x, "toLocation", value.asInstanceOf[js.Any])
     
-    inline def setToLocUndefined: Self = StObject.set(x, "toLoc", js.undefined)
+    inline def setToLocationUndefined: Self = StObject.set(x, "toLocation", js.undefined)
   }
 }

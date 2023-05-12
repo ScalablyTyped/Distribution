@@ -16,6 +16,13 @@ trait SFCScriptBlock
   
   var bindings: js.UndefOr[BindingMetadata] = js.undefined
   
+  /**
+    * Fully resolved dependency file paths (unix slashes) with imported types
+    * used in macros, used for HMR cache busting in @vitejs/plugin-vue and
+    * vue-loader.
+    */
+  var deps: js.UndefOr[js.Array[String]] = js.undefined
+  
   var imports: js.UndefOr[Record[String, ImportBinding]] = js.undefined
   
   var scriptAst: js.UndefOr[js.Array[Statement]] = js.undefined
@@ -26,6 +33,8 @@ trait SFCScriptBlock
   
   @JSName("type")
   var type_SFCScriptBlock: script
+  
+  var warnings: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SFCScriptBlock {
   
@@ -41,6 +50,12 @@ object SFCScriptBlock {
     inline def setBindings(value: BindingMetadata): Self = StObject.set(x, "bindings", value.asInstanceOf[js.Any])
     
     inline def setBindingsUndefined: Self = StObject.set(x, "bindings", js.undefined)
+    
+    inline def setDeps(value: js.Array[String]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
+    
+    inline def setDepsUndefined: Self = StObject.set(x, "deps", js.undefined)
+    
+    inline def setDepsVarargs(value: String*): Self = StObject.set(x, "deps", js.Array(value*))
     
     inline def setImports(value: Record[String, ImportBinding]): Self = StObject.set(x, "imports", value.asInstanceOf[js.Any])
     
@@ -63,5 +78,11 @@ object SFCScriptBlock {
     inline def setSetupUndefined: Self = StObject.set(x, "setup", js.undefined)
     
     inline def setType(value: script): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setWarnings(value: js.Array[String]): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
+    
+    inline def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
+    
+    inline def setWarningsVarargs(value: String*): Self = StObject.set(x, "warnings", js.Array(value*))
   }
 }

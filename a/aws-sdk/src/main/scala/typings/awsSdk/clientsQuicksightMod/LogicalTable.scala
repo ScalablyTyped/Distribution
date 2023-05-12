@@ -12,7 +12,7 @@ trait LogicalTable extends StObject {
   var Alias: LogicalTableAlias
   
   /**
-    * Transform operations that act on this logical table.
+    * Transform operations that act on this logical table. For this structure to be valid, only one of the attributes can be non-null. 
     */
   var DataTransforms: js.UndefOr[TransformOperationList] = js.undefined
   

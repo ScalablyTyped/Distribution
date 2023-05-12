@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "victory" : "36.6.8"
+      "victory" : "36.6.10"
     }
   ],
   "test-dependencies" : [
     {
-      "victory" : "36.6.8"
+      "victory" : "36.6.10"
     }
   ],
   "compile-devDependencies" : [

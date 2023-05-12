@@ -35,6 +35,16 @@ trait PendingModifiedValues extends StObject {
     * The new number of cache nodes for the cluster. For clusters running Redis, this value must be 1. For clusters running Memcached, this value must be between 1 and 40.
     */
   var NumCacheNodes: js.UndefOr[IntegerOptional] = js.undefined
+  
+  /**
+    * A flag that enables in-transit encryption when set to true.
+    */
+  var TransitEncryptionEnabled: js.UndefOr[BooleanOptional] = js.undefined
+  
+  /**
+    * A setting that allows you to migrate your clients to use in-transit encryption, with no downtime.
+    */
+  var TransitEncryptionMode: js.UndefOr[typings.awsSdk.clientsElasticacheMod.TransitEncryptionMode] = js.undefined
 }
 object PendingModifiedValues {
   
@@ -73,5 +83,13 @@ object PendingModifiedValues {
     inline def setNumCacheNodes(value: IntegerOptional): Self = StObject.set(x, "NumCacheNodes", value.asInstanceOf[js.Any])
     
     inline def setNumCacheNodesUndefined: Self = StObject.set(x, "NumCacheNodes", js.undefined)
+    
+    inline def setTransitEncryptionEnabled(value: BooleanOptional): Self = StObject.set(x, "TransitEncryptionEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setTransitEncryptionEnabledUndefined: Self = StObject.set(x, "TransitEncryptionEnabled", js.undefined)
+    
+    inline def setTransitEncryptionMode(value: TransitEncryptionMode): Self = StObject.set(x, "TransitEncryptionMode", value.asInstanceOf[js.Any])
+    
+    inline def setTransitEncryptionModeUndefined: Self = StObject.set(x, "TransitEncryptionMode", js.undefined)
   }
 }

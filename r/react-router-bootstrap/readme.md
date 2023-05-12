@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-router-bootstrap
 
-Typings are for version 0.24
+Typings are for version 0.26
 
 ## Library description:
 Integration between React Router and React-Bootstrap

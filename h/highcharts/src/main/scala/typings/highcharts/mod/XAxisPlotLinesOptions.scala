@@ -49,6 +49,8 @@ trait XAxisPlotLinesOptions
     */
   var label: js.UndefOr[XAxisPlotLinesLabelOptions] = js.undefined
   
+  var labels: js.UndefOr[XAxisPlotLinesLabelsOptions] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Gantt) The position of the line in axis units.
     */
@@ -102,6 +104,10 @@ object XAxisPlotLinesOptions {
     inline def setLabel(value: XAxisPlotLinesLabelOptions): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    
+    inline def setLabels(value: XAxisPlotLinesLabelsOptions): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
     inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     

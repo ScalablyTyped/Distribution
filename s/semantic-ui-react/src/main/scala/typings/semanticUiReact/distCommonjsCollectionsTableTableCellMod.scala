@@ -40,7 +40,8 @@ object distCommonjsCollectionsTableTableCellMod extends Shortcut {
     var collapsing: js.UndefOr[Boolean] = js.undefined
     
     /** Shorthand for primary content. */
-    var content: js.UndefOr[SemanticShorthandContent] = js.undefined
+    @JSName("content")
+    var content_StrictTableCellProps: js.UndefOr[SemanticShorthandContent] = js.undefined
     
     /** A cell can be disabled. */
     var disabled: js.UndefOr[Boolean] = js.undefined

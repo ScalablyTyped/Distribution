@@ -9,14 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FunctionTypeNode
   extends StObject
      with FunctionOrConstructorTypeNodeBase
+     with LocalsContainer
      with FunctionOrConstructorTypeNode
      with HasJSDoc
      with SignatureDeclaration {
   
   @JSName("kind")
   val kind_FunctionTypeNode: FunctionType = js.native
-  
-  /** @deprecated A function type cannot have modifiers */
-  @JSName("modifiers")
-  val modifiers_FunctionTypeNode: js.UndefOr[NodeArray[Modifier]] = js.native
 }

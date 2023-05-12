@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateFleetAttributesInput extends StObject {
   
   /**
+    * Amazon GameLift Anywhere configuration options.
+    */
+  var AnywhereConfiguration: js.UndefOr[typings.awsSdk.clientsGameliftMod.AnywhereConfiguration] = js.undefined
+  
+  /**
     * A human-readable description of a fleet.
     */
   var Description: js.UndefOr[NonZeroAndMaxString] = js.undefined
@@ -27,7 +32,7 @@ trait UpdateFleetAttributesInput extends StObject {
   var Name: js.UndefOr[NonZeroAndMaxString] = js.undefined
   
   /**
-    * The game session protection policy to apply to all new instances created in this fleet. Instances that already exist are not affected. You can set protection for individual instances using UpdateGameSession.    NoProtection -- The game session can be terminated during a scale-down event.    FullProtection -- If the game session is in an ACTIVE status, it cannot be terminated during a scale-down event.  
+    * The game session protection policy to apply to all new instances created in this fleet. Instances that already exist are not affected. You can set protection for individual instances using UpdateGameSession .    NoProtection -- The game session can be terminated during a scale-down event.    FullProtection -- If the game session is in an ACTIVE status, it cannot be terminated during a scale-down event.  
     */
   var NewGameSessionProtectionPolicy: js.UndefOr[ProtectionPolicy] = js.undefined
   
@@ -45,6 +50,10 @@ object UpdateFleetAttributesInput {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: UpdateFleetAttributesInput] (val x: Self) extends AnyVal {
+    
+    inline def setAnywhereConfiguration(value: AnywhereConfiguration): Self = StObject.set(x, "AnywhereConfiguration", value.asInstanceOf[js.Any])
+    
+    inline def setAnywhereConfigurationUndefined: Self = StObject.set(x, "AnywhereConfiguration", js.undefined)
     
     inline def setDescription(value: NonZeroAndMaxString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

@@ -361,9 +361,8 @@ object Transforms {
     * indicates that the preload has completed.
     * @example
     * const interval = new Cesium.TimeInterval(...);
-    * Promise.resolve(Cesium.Transforms.preloadIcrfFixed(interval)).then(function() {
-    *     // the data is now loaded
-    * });
+    * await Cesium.Transforms.preloadIcrfFixed(interval));
+    * // the data is now loaded
     * @param timeInterval - The interval to preload.
     * @returns A promise that, when resolved, indicates that the preload has completed
     *          and evaluation of the transformation between the fixed and ICRF axes will

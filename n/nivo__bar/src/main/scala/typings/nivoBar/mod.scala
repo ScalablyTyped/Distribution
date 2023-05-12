@@ -39,6 +39,8 @@ object mod {
   
   inline def BarItem[RawDatum /* <: BarDatum */](param0: BarItemProps[RawDatum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("BarItem")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
   
+  inline def BarTooltip[RawDatum](param0: BarTooltipProps[RawDatum]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("BarTooltip")(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
   inline def ResponsiveBar[RawDatum /* <: BarDatum */](props: Omit[BarSvgProps[RawDatum], height | width]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ResponsiveBar")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("@nivo/bar", "ResponsiveBarCanvas")

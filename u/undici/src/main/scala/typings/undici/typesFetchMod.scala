@@ -9,8 +9,10 @@ import typings.std.AsyncIterable
 import typings.std.Blob
 import typings.std.IteratorResult
 import typings.std.Record
+import typings.undici.typesDispatcherMod.default
 import typings.undici.typesFormdataMod.FormData
 import typings.undici.undiciStrings.half
+import typings.undici.undiciStrings.object_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -41,6 +43,8 @@ object typesFetchMod {
     ): Unit = js.native
     
     def get(name: String): String | Null = js.native
+    
+    def getSetCookie(): js.Array[String] = js.native
     
     def has(name: String): Boolean = js.native
     
@@ -306,7 +310,7 @@ object typesFetchMod {
     - typings.undici.undiciStrings.font
     - typings.undici.undiciStrings.image
     - typings.undici.undiciStrings.manifest
-    - typings.undici.undiciStrings.`object`
+    - typings.undici.undiciStrings.object_
     - typings.undici.undiciStrings.paintworklet
     - typings.undici.undiciStrings.report
     - typings.undici.undiciStrings.script
@@ -336,7 +340,7 @@ object typesFetchMod {
     
     inline def manifest: typings.undici.undiciStrings.manifest = "manifest".asInstanceOf[typings.undici.undiciStrings.manifest]
     
-    inline def `object`: typings.undici.undiciStrings.`object` = "object".asInstanceOf[typings.undici.undiciStrings.`object`]
+    inline def `object`: object_ = "object".asInstanceOf[object_]
     
     inline def paintworklet: typings.undici.undiciStrings.paintworklet = "paintworklet".asInstanceOf[typings.undici.undiciStrings.paintworklet]
     
@@ -367,7 +371,7 @@ object typesFetchMod {
     
     var credentials: js.UndefOr[RequestCredentials] = js.undefined
     
-    var dispatcher: js.UndefOr[typings.undici.typesDispatcherMod.^] = js.undefined
+    var dispatcher: js.UndefOr[default] = js.undefined
     
     var duplex: js.UndefOr[RequestDuplex] = js.undefined
     
@@ -411,7 +415,7 @@ object typesFetchMod {
       
       inline def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
       
-      inline def setDispatcher(value: typings.undici.typesDispatcherMod.^): Self = StObject.set(x, "dispatcher", value.asInstanceOf[js.Any])
+      inline def setDispatcher(value: default): Self = StObject.set(x, "dispatcher", value.asInstanceOf[js.Any])
       
       inline def setDispatcherUndefined: Self = StObject.set(x, "dispatcher", js.undefined)
       

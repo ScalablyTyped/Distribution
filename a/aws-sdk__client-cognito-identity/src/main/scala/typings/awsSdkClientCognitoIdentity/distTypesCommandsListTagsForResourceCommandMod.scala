@@ -28,8 +28,14 @@ object distTypesCommandsListTagsForResourceCommandMod {
           Any, 
           Any
         ] {
+    /**
+      * @public
+      */
     def this(input: ListTagsForResourceCommandInput) = this()
     
+    /**
+      * @internal
+      */
     /* private */ var deserialize: Any = js.native
     
     /**
@@ -45,6 +51,9 @@ object distTypesCommandsListTagsForResourceCommandMod {
       options: HttpHandlerOptions
     ): Handler[ListTagsForResourceCommandInput, ListTagsForResourceCommandOutput] = js.native
     
+    /**
+      * @internal
+      */
     /* private */ var serialize: Any = js.native
   }
   /* static members */

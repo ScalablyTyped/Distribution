@@ -27,9 +27,41 @@ object mod {
     error: String,
     config: StackTraceConfig,
     options: StackTraceOptions,
+    testPath: String,
+    reuseMessage: Boolean,
+    noTitle: Boolean
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatExecError")(error.asInstanceOf[js.Any], config.asInstanceOf[js.Any], options.asInstanceOf[js.Any], testPath.asInstanceOf[js.Any], reuseMessage.asInstanceOf[js.Any], noTitle.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def formatExecError(
+    error: String,
+    config: StackTraceConfig,
+    options: StackTraceOptions,
+    testPath: String,
+    reuseMessage: Unit,
+    noTitle: Boolean
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatExecError")(error.asInstanceOf[js.Any], config.asInstanceOf[js.Any], options.asInstanceOf[js.Any], testPath.asInstanceOf[js.Any], reuseMessage.asInstanceOf[js.Any], noTitle.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def formatExecError(
+    error: String,
+    config: StackTraceConfig,
+    options: StackTraceOptions,
     testPath: Unit,
     reuseMessage: Boolean
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatExecError")(error.asInstanceOf[js.Any], config.asInstanceOf[js.Any], options.asInstanceOf[js.Any], testPath.asInstanceOf[js.Any], reuseMessage.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def formatExecError(
+    error: String,
+    config: StackTraceConfig,
+    options: StackTraceOptions,
+    testPath: Unit,
+    reuseMessage: Boolean,
+    noTitle: Boolean
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatExecError")(error.asInstanceOf[js.Any], config.asInstanceOf[js.Any], options.asInstanceOf[js.Any], testPath.asInstanceOf[js.Any], reuseMessage.asInstanceOf[js.Any], noTitle.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def formatExecError(
+    error: String,
+    config: StackTraceConfig,
+    options: StackTraceOptions,
+    testPath: Unit,
+    reuseMessage: Unit,
+    noTitle: Boolean
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatExecError")(error.asInstanceOf[js.Any], config.asInstanceOf[js.Any], options.asInstanceOf[js.Any], testPath.asInstanceOf[js.Any], reuseMessage.asInstanceOf[js.Any], noTitle.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def formatExecError(error: js.Error, config: StackTraceConfig, options: StackTraceOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatExecError")(error.asInstanceOf[js.Any], config.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def formatExecError(error: js.Error, config: StackTraceConfig, options: StackTraceOptions, testPath: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatExecError")(error.asInstanceOf[js.Any], config.asInstanceOf[js.Any], options.asInstanceOf[js.Any], testPath.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def formatExecError(
@@ -43,9 +75,89 @@ object mod {
     error: js.Error,
     config: StackTraceConfig,
     options: StackTraceOptions,
+    testPath: String,
+    reuseMessage: Boolean,
+    noTitle: Boolean
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatExecError")(error.asInstanceOf[js.Any], config.asInstanceOf[js.Any], options.asInstanceOf[js.Any], testPath.asInstanceOf[js.Any], reuseMessage.asInstanceOf[js.Any], noTitle.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def formatExecError(
+    error: js.Error,
+    config: StackTraceConfig,
+    options: StackTraceOptions,
+    testPath: String,
+    reuseMessage: Unit,
+    noTitle: Boolean
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatExecError")(error.asInstanceOf[js.Any], config.asInstanceOf[js.Any], options.asInstanceOf[js.Any], testPath.asInstanceOf[js.Any], reuseMessage.asInstanceOf[js.Any], noTitle.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def formatExecError(
+    error: js.Error,
+    config: StackTraceConfig,
+    options: StackTraceOptions,
     testPath: Unit,
     reuseMessage: Boolean
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatExecError")(error.asInstanceOf[js.Any], config.asInstanceOf[js.Any], options.asInstanceOf[js.Any], testPath.asInstanceOf[js.Any], reuseMessage.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def formatExecError(
+    error: js.Error,
+    config: StackTraceConfig,
+    options: StackTraceOptions,
+    testPath: Unit,
+    reuseMessage: Boolean,
+    noTitle: Boolean
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatExecError")(error.asInstanceOf[js.Any], config.asInstanceOf[js.Any], options.asInstanceOf[js.Any], testPath.asInstanceOf[js.Any], reuseMessage.asInstanceOf[js.Any], noTitle.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def formatExecError(
+    error: js.Error,
+    config: StackTraceConfig,
+    options: StackTraceOptions,
+    testPath: Unit,
+    reuseMessage: Unit,
+    noTitle: Boolean
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatExecError")(error.asInstanceOf[js.Any], config.asInstanceOf[js.Any], options.asInstanceOf[js.Any], testPath.asInstanceOf[js.Any], reuseMessage.asInstanceOf[js.Any], noTitle.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def formatExecError(error: Double, config: StackTraceConfig, options: StackTraceOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatExecError")(error.asInstanceOf[js.Any], config.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def formatExecError(error: Double, config: StackTraceConfig, options: StackTraceOptions, testPath: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatExecError")(error.asInstanceOf[js.Any], config.asInstanceOf[js.Any], options.asInstanceOf[js.Any], testPath.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def formatExecError(
+    error: Double,
+    config: StackTraceConfig,
+    options: StackTraceOptions,
+    testPath: String,
+    reuseMessage: Boolean
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatExecError")(error.asInstanceOf[js.Any], config.asInstanceOf[js.Any], options.asInstanceOf[js.Any], testPath.asInstanceOf[js.Any], reuseMessage.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def formatExecError(
+    error: Double,
+    config: StackTraceConfig,
+    options: StackTraceOptions,
+    testPath: String,
+    reuseMessage: Boolean,
+    noTitle: Boolean
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatExecError")(error.asInstanceOf[js.Any], config.asInstanceOf[js.Any], options.asInstanceOf[js.Any], testPath.asInstanceOf[js.Any], reuseMessage.asInstanceOf[js.Any], noTitle.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def formatExecError(
+    error: Double,
+    config: StackTraceConfig,
+    options: StackTraceOptions,
+    testPath: String,
+    reuseMessage: Unit,
+    noTitle: Boolean
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatExecError")(error.asInstanceOf[js.Any], config.asInstanceOf[js.Any], options.asInstanceOf[js.Any], testPath.asInstanceOf[js.Any], reuseMessage.asInstanceOf[js.Any], noTitle.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def formatExecError(
+    error: Double,
+    config: StackTraceConfig,
+    options: StackTraceOptions,
+    testPath: Unit,
+    reuseMessage: Boolean
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatExecError")(error.asInstanceOf[js.Any], config.asInstanceOf[js.Any], options.asInstanceOf[js.Any], testPath.asInstanceOf[js.Any], reuseMessage.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def formatExecError(
+    error: Double,
+    config: StackTraceConfig,
+    options: StackTraceOptions,
+    testPath: Unit,
+    reuseMessage: Boolean,
+    noTitle: Boolean
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatExecError")(error.asInstanceOf[js.Any], config.asInstanceOf[js.Any], options.asInstanceOf[js.Any], testPath.asInstanceOf[js.Any], reuseMessage.asInstanceOf[js.Any], noTitle.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def formatExecError(
+    error: Double,
+    config: StackTraceConfig,
+    options: StackTraceOptions,
+    testPath: Unit,
+    reuseMessage: Unit,
+    noTitle: Boolean
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatExecError")(error.asInstanceOf[js.Any], config.asInstanceOf[js.Any], options.asInstanceOf[js.Any], testPath.asInstanceOf[js.Any], reuseMessage.asInstanceOf[js.Any], noTitle.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def formatExecError(error: Unit, config: StackTraceConfig, options: StackTraceOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatExecError")(error.asInstanceOf[js.Any], config.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def formatExecError(error: Unit, config: StackTraceConfig, options: StackTraceOptions, testPath: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatExecError")(error.asInstanceOf[js.Any], config.asInstanceOf[js.Any], options.asInstanceOf[js.Any], testPath.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def formatExecError(
@@ -59,9 +171,41 @@ object mod {
     error: Unit,
     config: StackTraceConfig,
     options: StackTraceOptions,
+    testPath: String,
+    reuseMessage: Boolean,
+    noTitle: Boolean
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatExecError")(error.asInstanceOf[js.Any], config.asInstanceOf[js.Any], options.asInstanceOf[js.Any], testPath.asInstanceOf[js.Any], reuseMessage.asInstanceOf[js.Any], noTitle.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def formatExecError(
+    error: Unit,
+    config: StackTraceConfig,
+    options: StackTraceOptions,
+    testPath: String,
+    reuseMessage: Unit,
+    noTitle: Boolean
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatExecError")(error.asInstanceOf[js.Any], config.asInstanceOf[js.Any], options.asInstanceOf[js.Any], testPath.asInstanceOf[js.Any], reuseMessage.asInstanceOf[js.Any], noTitle.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def formatExecError(
+    error: Unit,
+    config: StackTraceConfig,
+    options: StackTraceOptions,
     testPath: Unit,
     reuseMessage: Boolean
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatExecError")(error.asInstanceOf[js.Any], config.asInstanceOf[js.Any], options.asInstanceOf[js.Any], testPath.asInstanceOf[js.Any], reuseMessage.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def formatExecError(
+    error: Unit,
+    config: StackTraceConfig,
+    options: StackTraceOptions,
+    testPath: Unit,
+    reuseMessage: Boolean,
+    noTitle: Boolean
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatExecError")(error.asInstanceOf[js.Any], config.asInstanceOf[js.Any], options.asInstanceOf[js.Any], testPath.asInstanceOf[js.Any], reuseMessage.asInstanceOf[js.Any], noTitle.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def formatExecError(
+    error: Unit,
+    config: StackTraceConfig,
+    options: StackTraceOptions,
+    testPath: Unit,
+    reuseMessage: Unit,
+    noTitle: Boolean
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatExecError")(error.asInstanceOf[js.Any], config.asInstanceOf[js.Any], options.asInstanceOf[js.Any], testPath.asInstanceOf[js.Any], reuseMessage.asInstanceOf[js.Any], noTitle.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def formatExecError(error: SerializableError, config: StackTraceConfig, options: StackTraceOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatExecError")(error.asInstanceOf[js.Any], config.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def formatExecError(error: SerializableError, config: StackTraceConfig, options: StackTraceOptions, testPath: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatExecError")(error.asInstanceOf[js.Any], config.asInstanceOf[js.Any], options.asInstanceOf[js.Any], testPath.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def formatExecError(
@@ -75,9 +219,41 @@ object mod {
     error: SerializableError,
     config: StackTraceConfig,
     options: StackTraceOptions,
+    testPath: String,
+    reuseMessage: Boolean,
+    noTitle: Boolean
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatExecError")(error.asInstanceOf[js.Any], config.asInstanceOf[js.Any], options.asInstanceOf[js.Any], testPath.asInstanceOf[js.Any], reuseMessage.asInstanceOf[js.Any], noTitle.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def formatExecError(
+    error: SerializableError,
+    config: StackTraceConfig,
+    options: StackTraceOptions,
+    testPath: String,
+    reuseMessage: Unit,
+    noTitle: Boolean
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatExecError")(error.asInstanceOf[js.Any], config.asInstanceOf[js.Any], options.asInstanceOf[js.Any], testPath.asInstanceOf[js.Any], reuseMessage.asInstanceOf[js.Any], noTitle.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def formatExecError(
+    error: SerializableError,
+    config: StackTraceConfig,
+    options: StackTraceOptions,
     testPath: Unit,
     reuseMessage: Boolean
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatExecError")(error.asInstanceOf[js.Any], config.asInstanceOf[js.Any], options.asInstanceOf[js.Any], testPath.asInstanceOf[js.Any], reuseMessage.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def formatExecError(
+    error: SerializableError,
+    config: StackTraceConfig,
+    options: StackTraceOptions,
+    testPath: Unit,
+    reuseMessage: Boolean,
+    noTitle: Boolean
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatExecError")(error.asInstanceOf[js.Any], config.asInstanceOf[js.Any], options.asInstanceOf[js.Any], testPath.asInstanceOf[js.Any], reuseMessage.asInstanceOf[js.Any], noTitle.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def formatExecError(
+    error: SerializableError,
+    config: StackTraceConfig,
+    options: StackTraceOptions,
+    testPath: Unit,
+    reuseMessage: Unit,
+    noTitle: Boolean
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatExecError")(error.asInstanceOf[js.Any], config.asInstanceOf[js.Any], options.asInstanceOf[js.Any], testPath.asInstanceOf[js.Any], reuseMessage.asInstanceOf[js.Any], noTitle.asInstanceOf[js.Any])).asInstanceOf[String]
   
   inline def formatPath(line: String, config: StackTraceConfig): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatPath")(line.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[String]
   inline def formatPath(line: String, config: StackTraceConfig, relativeTestPath: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatPath")(line.asInstanceOf[js.Any], config.asInstanceOf[js.Any], relativeTestPath.asInstanceOf[js.Any])).asInstanceOf[String]

@@ -32,11 +32,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Additional options that can be passed for glTF files:
   * [options.morphPreserveData] - When true, the morph target keeps its data passed using the options,
   * allowing the clone operation.
+  * [options.morphPreferHighPrecision] - When true, high precision storage for morph targets should
+  * be prefered. This is faster to create and allows higher precision, but takes more memory and
+  * might be slower to render. Defaults to false.
+  * [options.skipMeshes] - When true, the meshes from the container are not created. This can be
+  * useful if you only need access to textures or animations and similar.
   *
   * For example, to receive a texture preprocess callback:
   *
   * ```javascript
-  * var containerAsset = new pc.Asset(filename, 'container', { url: url, filename: filename }, null, {
+  * const containerAsset = new pc.Asset(filename, 'container', { url: url, filename: filename }, null, {
   *     texture: {
   *         preprocess(gltfTexture) { console.log("texture preprocess"); }
   *     },
@@ -52,7 +57,7 @@ open class ContainerHandler protected ()
   /**
     * Create a new ContainerResource instance.
     *
-    * @param {AppBase} app - The running {@link AppBase}.
+    * @param {import('../app-base.js').AppBase} app - The running {@link AppBase}.
     * @hideconstructor
     */
   def this(app: typings.playcanvas.mod.AppBase) = this()

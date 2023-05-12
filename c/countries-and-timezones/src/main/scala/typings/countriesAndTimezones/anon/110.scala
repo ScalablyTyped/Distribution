@@ -1,30 +1,28 @@
 package typings.countriesAndTimezones.anon
 
-import typings.countriesAndTimezones.countriesAndTimezonesInts.`-420`
-import typings.countriesAndTimezones.countriesAndTimezonesStrings.CA
-import typings.countriesAndTimezones.countriesAndTimezonesStrings.US
+import typings.countriesAndTimezones.countriesAndTimezonesStrings.AmericaSlashIqaluit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait `110` extends StObject {
   
-  var c: js.Tuple2[US, CA]
+  var a: AmericaSlashIqaluit
   
-  var u: `-420`
+  var r: typings.countriesAndTimezones.countriesAndTimezonesInts.`1`
 }
 object `110` {
   
-  inline def apply(c: js.Tuple2[US, CA]): `110` = {
-    val __obj = js.Dynamic.literal(c = c.asInstanceOf[js.Any], u = -420)
+  inline def apply(): `110` = {
+    val __obj = js.Dynamic.literal(a = "America/Iqaluit", r = 1)
     __obj.asInstanceOf[`110`]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: `110`] (val x: Self) extends AnyVal {
     
-    inline def setC(value: js.Tuple2[US, CA]): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
+    inline def setA(value: AmericaSlashIqaluit): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
     
-    inline def setU(value: `-420`): Self = StObject.set(x, "u", value.asInstanceOf[js.Any])
+    inline def setR(value: typings.countriesAndTimezones.countriesAndTimezonesInts.`1`): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
   }
 }

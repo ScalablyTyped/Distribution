@@ -72,6 +72,10 @@ object sapUiCoreUtilXmlpreprocessorMod extends Shortcut {
       */
     sPath: String
     ): IContext = js.native
+    def getInterface(/**
+      * a path, interpreted relative to `this.getPath(iPart)`
+      */
+    sPath: String): IContext = js.native
     
     /**
       * Returns the model related to the current formatter call.

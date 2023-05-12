@@ -14,7 +14,7 @@ trait DescribeDashboardPermissionsResponse extends StObject {
   /**
     * The ID for the dashboard.
     */
-  var DashboardId: js.UndefOr[RestrictiveResourceId] = js.undefined
+  var DashboardId: js.UndefOr[ShortRestrictiveResourceId] = js.undefined
   
   /**
     * A structure that contains the configuration of a shareable link that grants access to the dashboard. Your users can use the link to view and interact with the dashboard, if the dashboard has been shared with them. For more information about sharing dashboards, see Sharing Dashboards.
@@ -50,7 +50,7 @@ object DescribeDashboardPermissionsResponse {
     
     inline def setDashboardArnUndefined: Self = StObject.set(x, "DashboardArn", js.undefined)
     
-    inline def setDashboardId(value: RestrictiveResourceId): Self = StObject.set(x, "DashboardId", value.asInstanceOf[js.Any])
+    inline def setDashboardId(value: ShortRestrictiveResourceId): Self = StObject.set(x, "DashboardId", value.asInstanceOf[js.Any])
     
     inline def setDashboardIdUndefined: Self = StObject.set(x, "DashboardId", js.undefined)
     

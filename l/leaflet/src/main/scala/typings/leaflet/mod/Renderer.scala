@@ -9,5 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 open class Renderer () extends Layer {
   def this(options: RendererOptions) = this()
   
-  var options: RendererOptions = js.native
+  @JSName("options")
+  var options_Renderer: RendererOptions = js.native
 }

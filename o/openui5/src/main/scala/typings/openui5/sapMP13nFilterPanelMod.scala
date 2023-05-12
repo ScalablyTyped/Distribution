@@ -528,6 +528,8 @@ object sapMP13nFilterPanelMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:addFilterItem addFilterItem} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -540,6 +542,7 @@ object sapMP13nFilterPanelMod {
     
     /**
       * @EXPERIMENTAL (since 1.56)
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:filterItemChanged filterItemChanged} to attached listeners.
       *
@@ -552,6 +555,8 @@ object sapMP13nFilterPanelMod {
     mParameters: ItemData): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:removeFilterItem removeFilterItem} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -563,6 +568,8 @@ object sapMP13nFilterPanelMod {
     mParameters: js.Object): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Fires event {@link #event:updateFilterItem updateFilterItem} to attached listeners.
       *
       * @returns Reference to `this` in order to allow method chaining

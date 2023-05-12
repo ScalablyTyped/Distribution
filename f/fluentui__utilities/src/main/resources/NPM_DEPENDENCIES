@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@fluentui/utilities" : "8.13.2"
+      "@fluentui/utilities" : "8.13.13"
     }
   ],
   "test-dependencies" : [
     {
-      "@fluentui/utilities" : "8.13.2"
+      "@fluentui/utilities" : "8.13.13"
     }
   ],
   "compile-devDependencies" : [

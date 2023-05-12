@@ -26,6 +26,9 @@ trait PartialChannelOptions extends StObject {
   @JSName("grpc.enable_http_proxy")
   var grpcDotenable_http_proxy: js.UndefOr[Double] = js.undefined
   
+  @JSName("grpc.enable_retries")
+  var grpcDotenable_retries: js.UndefOr[Double] = js.undefined
+  
   @JSName("grpc.http_connect_creds")
   var grpcDothttp_connect_creds: js.UndefOr[String] = js.undefined
   
@@ -47,6 +50,12 @@ trait PartialChannelOptions extends StObject {
   @JSName("grpc.max_concurrent_streams")
   var grpcDotmax_concurrent_streams: js.UndefOr[Double] = js.undefined
   
+  @JSName("grpc.max_connection_age_grace_ms")
+  var grpcDotmax_connection_age_grace_ms: js.UndefOr[Double] = js.undefined
+  
+  @JSName("grpc.max_connection_age_ms")
+  var grpcDotmax_connection_age_ms: js.UndefOr[Double] = js.undefined
+  
   @JSName("grpc.max_receive_message_length")
   var grpcDotmax_receive_message_length: js.UndefOr[Double] = js.undefined
   
@@ -56,14 +65,23 @@ trait PartialChannelOptions extends StObject {
   @JSName("grpc.max_send_message_length")
   var grpcDotmax_send_message_length: js.UndefOr[Double] = js.undefined
   
+  @JSName("grpc.per_rpc_retry_buffer_size")
+  var grpcDotper_rpc_retry_buffer_size: js.UndefOr[Double] = js.undefined
+  
   @JSName("grpc.primary_user_agent")
   var grpcDotprimary_user_agent: js.UndefOr[String] = js.undefined
+  
+  @JSName("grpc.retry_buffer_size")
+  var grpcDotretry_buffer_size: js.UndefOr[Double] = js.undefined
   
   @JSName("grpc.secondary_user_agent")
   var grpcDotsecondary_user_agent: js.UndefOr[String] = js.undefined
   
   @JSName("grpc.service_config")
   var grpcDotservice_config: js.UndefOr[String] = js.undefined
+  
+  @JSName("grpc.service_config_disable_resolution")
+  var grpcDotservice_config_disable_resolution: js.UndefOr[Double] = js.undefined
   
   @JSName("grpc.ssl_target_name_override")
   var grpcDotssl_target_name_override: js.UndefOr[String] = js.undefined
@@ -105,6 +123,10 @@ object PartialChannelOptions {
     
     inline def setGrpcDotenable_http_proxyUndefined: Self = StObject.set(x, "grpc.enable_http_proxy", js.undefined)
     
+    inline def setGrpcDotenable_retries(value: Double): Self = StObject.set(x, "grpc.enable_retries", value.asInstanceOf[js.Any])
+    
+    inline def setGrpcDotenable_retriesUndefined: Self = StObject.set(x, "grpc.enable_retries", js.undefined)
+    
     inline def setGrpcDothttp_connect_creds(value: String): Self = StObject.set(x, "grpc.http_connect_creds", value.asInstanceOf[js.Any])
     
     inline def setGrpcDothttp_connect_credsUndefined: Self = StObject.set(x, "grpc.http_connect_creds", js.undefined)
@@ -133,6 +155,14 @@ object PartialChannelOptions {
     
     inline def setGrpcDotmax_concurrent_streamsUndefined: Self = StObject.set(x, "grpc.max_concurrent_streams", js.undefined)
     
+    inline def setGrpcDotmax_connection_age_grace_ms(value: Double): Self = StObject.set(x, "grpc.max_connection_age_grace_ms", value.asInstanceOf[js.Any])
+    
+    inline def setGrpcDotmax_connection_age_grace_msUndefined: Self = StObject.set(x, "grpc.max_connection_age_grace_ms", js.undefined)
+    
+    inline def setGrpcDotmax_connection_age_ms(value: Double): Self = StObject.set(x, "grpc.max_connection_age_ms", value.asInstanceOf[js.Any])
+    
+    inline def setGrpcDotmax_connection_age_msUndefined: Self = StObject.set(x, "grpc.max_connection_age_ms", js.undefined)
+    
     inline def setGrpcDotmax_receive_message_length(value: Double): Self = StObject.set(x, "grpc.max_receive_message_length", value.asInstanceOf[js.Any])
     
     inline def setGrpcDotmax_receive_message_lengthUndefined: Self = StObject.set(x, "grpc.max_receive_message_length", js.undefined)
@@ -145,9 +175,17 @@ object PartialChannelOptions {
     
     inline def setGrpcDotmax_send_message_lengthUndefined: Self = StObject.set(x, "grpc.max_send_message_length", js.undefined)
     
+    inline def setGrpcDotper_rpc_retry_buffer_size(value: Double): Self = StObject.set(x, "grpc.per_rpc_retry_buffer_size", value.asInstanceOf[js.Any])
+    
+    inline def setGrpcDotper_rpc_retry_buffer_sizeUndefined: Self = StObject.set(x, "grpc.per_rpc_retry_buffer_size", js.undefined)
+    
     inline def setGrpcDotprimary_user_agent(value: String): Self = StObject.set(x, "grpc.primary_user_agent", value.asInstanceOf[js.Any])
     
     inline def setGrpcDotprimary_user_agentUndefined: Self = StObject.set(x, "grpc.primary_user_agent", js.undefined)
+    
+    inline def setGrpcDotretry_buffer_size(value: Double): Self = StObject.set(x, "grpc.retry_buffer_size", value.asInstanceOf[js.Any])
+    
+    inline def setGrpcDotretry_buffer_sizeUndefined: Self = StObject.set(x, "grpc.retry_buffer_size", js.undefined)
     
     inline def setGrpcDotsecondary_user_agent(value: String): Self = StObject.set(x, "grpc.secondary_user_agent", value.asInstanceOf[js.Any])
     
@@ -156,6 +194,10 @@ object PartialChannelOptions {
     inline def setGrpcDotservice_config(value: String): Self = StObject.set(x, "grpc.service_config", value.asInstanceOf[js.Any])
     
     inline def setGrpcDotservice_configUndefined: Self = StObject.set(x, "grpc.service_config", js.undefined)
+    
+    inline def setGrpcDotservice_config_disable_resolution(value: Double): Self = StObject.set(x, "grpc.service_config_disable_resolution", value.asInstanceOf[js.Any])
+    
+    inline def setGrpcDotservice_config_disable_resolutionUndefined: Self = StObject.set(x, "grpc.service_config_disable_resolution", js.undefined)
     
     inline def setGrpcDotssl_target_name_override(value: String): Self = StObject.set(x, "grpc.ssl_target_name_override", value.asInstanceOf[js.Any])
     

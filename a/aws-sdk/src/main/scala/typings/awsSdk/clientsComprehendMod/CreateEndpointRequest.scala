@@ -12,7 +12,7 @@ trait CreateEndpointRequest extends StObject {
   var ClientRequestToken: js.UndefOr[ClientRequestTokenString] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the AWS identity and Access Management (IAM) role that grants Amazon Comprehend read access to trained custom models encrypted with a customer managed key (ModelKmsKeyId).
+    * The Amazon Resource Name (ARN) of the IAM role that grants Amazon Comprehend read access to trained custom models encrypted with a customer managed key (ModelKmsKeyId).
     */
   var DataAccessRoleArn: js.UndefOr[IamRoleArn] = js.undefined
   
@@ -27,23 +27,24 @@ trait CreateEndpointRequest extends StObject {
   var EndpointName: ComprehendEndpointName
   
   /**
-    * The Amazon Resource Number (ARN) of the model to which the endpoint will be attached.
+    * The Amazon Resource Number (ARN) of the flywheel to which the endpoint will be attached.
     */
-  var ModelArn: ComprehendModelArn
+  var FlywheelArn: js.UndefOr[ComprehendFlywheelArn] = js.undefined
   
   /**
-    * Tags associated with the endpoint being created. A tag is a key-value pair that adds metadata to the endpoint. For example, a tag with "Sales" as the key might be added to an endpoint to indicate its use by the sales department. 
+    * The Amazon Resource Number (ARN) of the model to which the endpoint will be attached.
+    */
+  var ModelArn: js.UndefOr[ComprehendModelArn] = js.undefined
+  
+  /**
+    * Tags to associate with the endpoint. A tag is a key-value pair that adds metadata to the endpoint. For example, a tag with "Sales" as the key might be added to an endpoint to indicate its use by the sales department. 
     */
   var Tags: js.UndefOr[TagList] = js.undefined
 }
 object CreateEndpointRequest {
   
-  inline def apply(
-    DesiredInferenceUnits: InferenceUnitsInteger,
-    EndpointName: ComprehendEndpointName,
-    ModelArn: ComprehendModelArn
-  ): CreateEndpointRequest = {
-    val __obj = js.Dynamic.literal(DesiredInferenceUnits = DesiredInferenceUnits.asInstanceOf[js.Any], EndpointName = EndpointName.asInstanceOf[js.Any], ModelArn = ModelArn.asInstanceOf[js.Any])
+  inline def apply(DesiredInferenceUnits: InferenceUnitsInteger, EndpointName: ComprehendEndpointName): CreateEndpointRequest = {
+    val __obj = js.Dynamic.literal(DesiredInferenceUnits = DesiredInferenceUnits.asInstanceOf[js.Any], EndpointName = EndpointName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateEndpointRequest]
   }
   
@@ -62,7 +63,13 @@ object CreateEndpointRequest {
     
     inline def setEndpointName(value: ComprehendEndpointName): Self = StObject.set(x, "EndpointName", value.asInstanceOf[js.Any])
     
+    inline def setFlywheelArn(value: ComprehendFlywheelArn): Self = StObject.set(x, "FlywheelArn", value.asInstanceOf[js.Any])
+    
+    inline def setFlywheelArnUndefined: Self = StObject.set(x, "FlywheelArn", js.undefined)
+    
     inline def setModelArn(value: ComprehendModelArn): Self = StObject.set(x, "ModelArn", value.asInstanceOf[js.Any])
+    
+    inline def setModelArnUndefined: Self = StObject.set(x, "ModelArn", js.undefined)
     
     inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     

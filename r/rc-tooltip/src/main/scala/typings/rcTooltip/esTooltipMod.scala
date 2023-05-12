@@ -1,18 +1,18 @@
 package typings.rcTooltip
 
 import org.scalablytyped.runtime.Shortcut
+import typings.rcComponentTrigger.esInterfaceMod.ActionType
+import typings.rcComponentTrigger.esInterfaceMod.AlignType
+import typings.rcComponentTrigger.esInterfaceMod.AnimationType
+import typings.rcComponentTrigger.esInterfaceMod.BuildInPlacements
 import typings.rcMotion.esCssmotionMod.CSSMotionProps
-import typings.rcTooltip.anon.KeepParent
-import typings.rcTrigger.esInterfaceMod.ActionType
-import typings.rcTrigger.esInterfaceMod.AlignType
-import typings.rcTrigger.esInterfaceMod.AnimationType
-import typings.rcTrigger.esInterfaceMod.BuildInPlacements
 import typings.react.mod.CSSProperties
 import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import typings.react.mod.RefAttributes
 import typings.std.HTMLElement
+import typings.std.VoidFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -21,9 +21,9 @@ object esTooltipMod extends Shortcut {
   
   @JSImport("rc-tooltip/es/Tooltip", JSImport.Default)
   @js.native
-  val default: ForwardRefExoticComponent[TooltipProps & RefAttributes[Any]] = js.native
+  val default: ForwardRefExoticComponent[TooltipProps & RefAttributes[TooltipRef]] = js.native
   
-  /* Inlined parent std.Pick<rc-trigger.rc-trigger.TriggerProps, 'onPopupAlign' | 'builtinPlacements'> */
+  /* Inlined parent std.Pick<@rc-component/trigger.@rc-component/trigger.TriggerProps, 'onPopupAlign' | 'builtinPlacements'> */
   trait TooltipProps extends StObject {
     
     var afterVisibleChange: js.UndefOr[js.Function1[/* visible */ Boolean, Unit]] = js.undefined
@@ -41,7 +41,7 @@ object esTooltipMod extends Shortcut {
     
     var defaultVisible: js.UndefOr[Boolean] = js.undefined
     
-    var destroyTooltipOnHide: js.UndefOr[Boolean | KeepParent] = js.undefined
+    var destroyTooltipOnHide: js.UndefOr[Boolean] = js.undefined
     
     var getTooltipContainer: js.UndefOr[js.Function1[/* node */ HTMLElement, HTMLElement]] = js.undefined
     
@@ -121,7 +121,7 @@ object esTooltipMod extends Shortcut {
       
       inline def setDefaultVisibleUndefined: Self = StObject.set(x, "defaultVisible", js.undefined)
       
-      inline def setDestroyTooltipOnHide(value: Boolean | KeepParent): Self = StObject.set(x, "destroyTooltipOnHide", value.asInstanceOf[js.Any])
+      inline def setDestroyTooltipOnHide(value: Boolean): Self = StObject.set(x, "destroyTooltipOnHide", value.asInstanceOf[js.Any])
       
       inline def setDestroyTooltipOnHideUndefined: Self = StObject.set(x, "destroyTooltipOnHide", js.undefined)
       
@@ -207,8 +207,26 @@ object esTooltipMod extends Shortcut {
     }
   }
   
-  type _To = ForwardRefExoticComponent[TooltipProps & RefAttributes[Any]]
+  trait TooltipRef extends StObject {
+    
+    var forceAlign: VoidFunction
+  }
+  object TooltipRef {
+    
+    inline def apply(forceAlign: () => Unit): TooltipRef = {
+      val __obj = js.Dynamic.literal(forceAlign = js.Any.fromFunction0(forceAlign))
+      __obj.asInstanceOf[TooltipRef]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TooltipRef] (val x: Self) extends AnyVal {
+      
+      inline def setForceAlign(value: () => Unit): Self = StObject.set(x, "forceAlign", js.Any.fromFunction0(value))
+    }
+  }
+  
+  type _To = ForwardRefExoticComponent[TooltipProps & RefAttributes[TooltipRef]]
   
   /* This means you don't have to write `default`, but can instead just say `esTooltipMod.foo` */
-  override def _to: ForwardRefExoticComponent[TooltipProps & RefAttributes[Any]] = default
+  override def _to: ForwardRefExoticComponent[TooltipProps & RefAttributes[TooltipRef]] = default
 }

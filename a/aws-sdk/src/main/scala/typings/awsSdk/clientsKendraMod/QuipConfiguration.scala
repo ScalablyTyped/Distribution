@@ -52,7 +52,7 @@ trait QuipConfiguration extends StObject {
   var MessageFieldMappings: js.UndefOr[DataSourceToIndexFieldMappingList] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of an Secrets Manager secret that contains the key-value pairs that are required to connect to your Quip. The secret must contain a JSON structure with the following keys:   accessToken—The token created in Quip. For more information, see Authentication for a Quip data source.  
+    * The Amazon Resource Name (ARN) of an Secrets Manager secret that contains the key-value pairs that are required to connect to your Quip. The secret must contain a JSON structure with the following keys:   accessToken—The token created in Quip. For more information, see Using a Quip data source.  
     */
   var SecretArn: typings.awsSdk.clientsKendraMod.SecretArn
   

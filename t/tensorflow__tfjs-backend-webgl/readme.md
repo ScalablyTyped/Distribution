@@ -1,7 +1,7 @@
 
 # Scala.js typings for tensorflow__tfjs-backend-webgl
 
-Typings are for version 4.0.0
+Typings are for version 4.5.0
 
 ## Library description:
 GPU accelerated WebGL backend for TensorFlow.js

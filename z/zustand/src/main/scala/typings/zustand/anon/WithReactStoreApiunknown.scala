@@ -11,6 +11,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Inlined zustand.zustand/esm/react.WithReact<zustand.zustand/esm/vanilla.StoreApi<unknown>> */
 trait WithReactStoreApiunknown extends StObject {
   
+  /**
+    * @deprecated Use `unsubscribe` returned by `subscribe`
+    */
   def destroy(): Unit
   
   var getServerState: js.UndefOr[js.Function0[ExtractState[StoreApi[Any]]]] = js.undefined

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "vfile-message" : "3.1.2"
+      "vfile-message" : "3.1.4"
     }
   ],
   "test-dependencies" : [
     {
-      "vfile-message" : "3.1.2"
+      "vfile-message" : "3.1.4"
     }
   ],
   "compile-devDependencies" : [

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ProfilerRuleConfiguration extends StObject {
   
   /**
-    * The instance type to deploy a Debugger custom rule for profiling a training job.
+    * The instance type to deploy a custom rule for profiling a training job.
     */
   var InstanceType: js.UndefOr[ProcessingInstanceType] = js.undefined
   
@@ -22,7 +22,7 @@ trait ProfilerRuleConfiguration extends StObject {
   var RuleConfigurationName: typings.awsSdk.clientsSagemakerMod.RuleConfigurationName
   
   /**
-    * The Amazon Elastic Container (ECR) Image for the managed rule evaluation.
+    * The Amazon Elastic Container Registry Image for the managed rule evaluation.
     */
   var RuleEvaluatorImage: AlgorithmImage
   

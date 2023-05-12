@@ -12,19 +12,20 @@ trait TooltipOptions extends StObject {
   
   /**
     * Delay time before tooltip appears.
-    * @default 200
+    * @default 0
     */
   var enterDelay: Double
   
   /**
     * Delay time before tooltip disappears.
-    * @default 0
+    * @default 200
     */
   var exitDelay: Double
   
   /**
-    * HTML content that will be appended to text. Only use properly sanitized or otherwise trusted data for html.
-    * Will be ignored if unsafeHTML is set.\
+    * HTML content that will be appended to text.\
+    * Only use properly sanitized or otherwise trusted data for html.\
+    * Will be ignored if unsafeHTML is set.
     * @deprecated Will be removed in a later release.
     * @default null
     */
@@ -37,7 +38,8 @@ trait TooltipOptions extends StObject {
   var inDuration: Double
   
   /**
-    * Set distance tooltip appears away from its activator excluding transitionMovement.
+    * Set distance tooltip appears away from its activator
+    * excluding transitionMovement.
     * @default 5
     */
   var margin: Double
@@ -62,6 +64,7 @@ trait TooltipOptions extends StObject {
   
   /**
     * Text string for the tooltip.
+    * @default ""
     */
   var text: String
   

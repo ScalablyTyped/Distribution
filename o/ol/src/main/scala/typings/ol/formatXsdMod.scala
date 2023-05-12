@@ -21,9 +21,9 @@ object formatXsdMod {
   
   inline def readDecimalString(string: String): js.UndefOr[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("readDecimalString")(string.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Double]]
   
-  inline def readNonNegativeInteger(node: Node): js.UndefOr[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("readNonNegativeInteger")(node.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Double]]
-  
   inline def readNonNegativeIntegerString(string: String): js.UndefOr[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("readNonNegativeIntegerString")(string.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Double]]
+  
+  inline def readPositiveInteger(node: Node): js.UndefOr[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("readPositiveInteger")(node.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Double]]
   
   inline def readString(node: Node): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("readString")(node.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
   

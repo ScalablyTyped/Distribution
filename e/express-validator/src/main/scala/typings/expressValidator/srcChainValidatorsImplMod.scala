@@ -26,6 +26,8 @@ object srcChainValidatorsImplMod {
     
     def isByteLength(options: MinMaxOptions): Chain = js.native
     
+    def isTime(): Chain = js.native
+    
     /* private */ var lastValidator: Any = js.native
     
     /* private */ var negateNext: Any = js.native

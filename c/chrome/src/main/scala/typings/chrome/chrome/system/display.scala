@@ -71,7 +71,7 @@ object display {
     /**
       * The ratio between the display's current and default zoom.
       * For example, value 1 is equivalent to 100% zoom, and value 1.5 is equivalent to 150% zoom.
-      * */
+      */
     var displayZoomFactor: Double
     
     /** The number of pixels per inch along the x-axis. */
@@ -403,7 +403,7 @@ object display {
       * This is has no effect if not provided.
       * @see(See `enableUnifiedDesktop` for details).
       * @since Chrome 59
-      * */
+      */
     var isUnified: js.UndefOr[Boolean] = js.undefined
     
     /**

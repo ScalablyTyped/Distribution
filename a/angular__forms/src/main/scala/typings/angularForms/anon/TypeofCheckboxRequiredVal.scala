@@ -22,7 +22,8 @@ trait TypeofCheckboxRequiredVal
     js.Object, 
     scala.Nothing, 
     scala.Nothing, 
-    `false`
+    `false`, 
+    scala.Nothing
   ] = js.native
   
   var ɵfac: ɵɵFactoryDeclaration[CheckboxRequiredValidator, scala.Nothing] = js.native

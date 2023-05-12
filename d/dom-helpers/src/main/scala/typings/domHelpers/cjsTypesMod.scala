@@ -92,6 +92,7 @@ object cjsTypesMod {
     - typings.domHelpers.domHelpersStrings.breakInside
     - typings.domHelpers.domHelpersStrings.captionSide
     - typings.domHelpers.domHelpersStrings.caretColor
+    - typings.domHelpers.domHelpersStrings.caretShape
     - typings.domHelpers.domHelpersStrings.clear
     - typings.domHelpers.domHelpersStrings.clipPath
     - typings.domHelpers.domHelpersStrings.color
@@ -106,6 +107,12 @@ object cjsTypesMod {
     - typings.domHelpers.domHelpersStrings.columnSpan
     - typings.domHelpers.domHelpersStrings.columnWidth
     - typings.domHelpers.domHelpersStrings.contain
+    - typings.domHelpers.domHelpersStrings.containIntrinsicBlockSize
+    - typings.domHelpers.domHelpersStrings.containIntrinsicHeight
+    - typings.domHelpers.domHelpersStrings.containIntrinsicInlineSize
+    - typings.domHelpers.domHelpersStrings.containIntrinsicWidth
+    - typings.domHelpers.domHelpersStrings.containerName
+    - typings.domHelpers.domHelpersStrings.containerType
     - typings.domHelpers.domHelpersStrings.content
     - typings.domHelpers.domHelpersStrings.contentVisibility
     - typings.domHelpers.domHelpersStrings.counterIncrement
@@ -127,6 +134,7 @@ object cjsTypesMod {
     - typings.domHelpers.domHelpersStrings.fontKerning
     - typings.domHelpers.domHelpersStrings.fontLanguageOverride
     - typings.domHelpers.domHelpersStrings.fontOpticalSizing
+    - typings.domHelpers.domHelpersStrings.fontPalette
     - typings.domHelpers.domHelpersStrings.fontSize
     - typings.domHelpers.domHelpersStrings.fontSizeAdjust
     - typings.domHelpers.domHelpersStrings.fontSmooth
@@ -137,6 +145,7 @@ object cjsTypesMod {
     - typings.domHelpers.domHelpersStrings.fontVariantAlternates
     - typings.domHelpers.domHelpersStrings.fontVariantCaps
     - typings.domHelpers.domHelpersStrings.fontVariantEastAsian
+    - typings.domHelpers.domHelpersStrings.fontVariantEmoji
     - typings.domHelpers.domHelpersStrings.fontVariantLigatures
     - typings.domHelpers.domHelpersStrings.fontVariantNumeric
     - typings.domHelpers.domHelpersStrings.fontVariantPosition
@@ -156,6 +165,7 @@ object cjsTypesMod {
     - typings.domHelpers.domHelpersStrings.hangingPunctuation
     - typings.domHelpers.domHelpersStrings.height
     - typings.domHelpers.domHelpersStrings.hyphenateCharacter
+    - typings.domHelpers.domHelpersStrings.hyphenateLimitChars
     - typings.domHelpers.domHelpersStrings.hyphens
     - typings.domHelpers.domHelpersStrings.imageOrientation
     - typings.domHelpers.domHelpersStrings.imageRendering
@@ -163,11 +173,8 @@ object cjsTypesMod {
     - typings.domHelpers.domHelpersStrings.initialLetter
     - typings.domHelpers.domHelpersStrings.inlineSize
     - typings.domHelpers.domHelpersStrings.inputSecurity
-    - typings.domHelpers.domHelpersStrings.inset
-    - typings.domHelpers.domHelpersStrings.insetBlock
     - typings.domHelpers.domHelpersStrings.insetBlockEnd
     - typings.domHelpers.domHelpersStrings.insetBlockStart
-    - typings.domHelpers.domHelpersStrings.insetInline
     - typings.domHelpers.domHelpersStrings.insetInlineEnd
     - typings.domHelpers.domHelpersStrings.insetInlineStart
     - typings.domHelpers.domHelpersStrings.isolation
@@ -183,16 +190,15 @@ object cjsTypesMod {
     - typings.domHelpers.domHelpersStrings.listStyleImage
     - typings.domHelpers.domHelpersStrings.listStylePosition
     - typings.domHelpers.domHelpersStrings.listStyleType
-    - typings.domHelpers.domHelpersStrings.marginBlock
     - typings.domHelpers.domHelpersStrings.marginBlockEnd
     - typings.domHelpers.domHelpersStrings.marginBlockStart
     - typings.domHelpers.domHelpersStrings.marginBottom
-    - typings.domHelpers.domHelpersStrings.marginInline
     - typings.domHelpers.domHelpersStrings.marginInlineEnd
     - typings.domHelpers.domHelpersStrings.marginInlineStart
     - typings.domHelpers.domHelpersStrings.marginLeft
     - typings.domHelpers.domHelpersStrings.marginRight
     - typings.domHelpers.domHelpersStrings.marginTop
+    - typings.domHelpers.domHelpersStrings.marginTrim
     - typings.domHelpers.domHelpersStrings.maskBorderMode
     - typings.domHelpers.domHelpersStrings.maskBorderOutset
     - typings.domHelpers.domHelpersStrings.maskBorderRepeat
@@ -229,6 +235,7 @@ object cjsTypesMod {
     - typings.domHelpers.domHelpersStrings.offsetAnchor
     - typings.domHelpers.domHelpersStrings.offsetDistance
     - typings.domHelpers.domHelpersStrings.offsetPath
+    - typings.domHelpers.domHelpersStrings.offsetPosition
     - typings.domHelpers.domHelpersStrings.offsetRotate
     - typings.domHelpers.domHelpersStrings.offsetRotation
     - typings.domHelpers.domHelpersStrings.opacity
@@ -250,23 +257,21 @@ object cjsTypesMod {
     - typings.domHelpers.domHelpersStrings.overscrollBehaviorInline
     - typings.domHelpers.domHelpersStrings.overscrollBehaviorX
     - typings.domHelpers.domHelpersStrings.overscrollBehaviorY
-    - typings.domHelpers.domHelpersStrings.paddingBlock
     - typings.domHelpers.domHelpersStrings.paddingBlockEnd
     - typings.domHelpers.domHelpersStrings.paddingBlockStart
     - typings.domHelpers.domHelpersStrings.paddingBottom
-    - typings.domHelpers.domHelpersStrings.paddingInline
     - typings.domHelpers.domHelpersStrings.paddingInlineEnd
     - typings.domHelpers.domHelpersStrings.paddingInlineStart
     - typings.domHelpers.domHelpersStrings.paddingLeft
     - typings.domHelpers.domHelpersStrings.paddingRight
     - typings.domHelpers.domHelpersStrings.paddingTop
+    - typings.domHelpers.domHelpersStrings.page
     - typings.domHelpers.domHelpersStrings.pageBreakAfter
     - typings.domHelpers.domHelpersStrings.pageBreakBefore
     - typings.domHelpers.domHelpersStrings.pageBreakInside
     - typings.domHelpers.domHelpersStrings.paintOrder
     - typings.domHelpers.domHelpersStrings.perspective
     - typings.domHelpers.domHelpersStrings.perspectiveOrigin
-    - typings.domHelpers.domHelpersStrings.placeContent
     - typings.domHelpers.domHelpersStrings.pointerEvents
     - typings.domHelpers.domHelpersStrings.position
     - typings.domHelpers.domHelpersStrings.printColorAdjust
@@ -280,36 +285,31 @@ object cjsTypesMod {
     - typings.domHelpers.domHelpersStrings.rubyPosition
     - typings.domHelpers.domHelpersStrings.scale
     - typings.domHelpers.domHelpersStrings.scrollBehavior
-    - typings.domHelpers.domHelpersStrings.scrollMargin
-    - typings.domHelpers.domHelpersStrings.scrollMarginBlock
     - typings.domHelpers.domHelpersStrings.scrollMarginBlockEnd
     - typings.domHelpers.domHelpersStrings.scrollMarginBlockStart
     - typings.domHelpers.domHelpersStrings.scrollMarginBottom
-    - typings.domHelpers.domHelpersStrings.scrollMarginInline
     - typings.domHelpers.domHelpersStrings.scrollMarginInlineEnd
     - typings.domHelpers.domHelpersStrings.scrollMarginInlineStart
     - typings.domHelpers.domHelpersStrings.scrollMarginLeft
     - typings.domHelpers.domHelpersStrings.scrollMarginRight
     - typings.domHelpers.domHelpersStrings.scrollMarginTop
-    - typings.domHelpers.domHelpersStrings.scrollPadding
-    - typings.domHelpers.domHelpersStrings.scrollPaddingBlock
     - typings.domHelpers.domHelpersStrings.scrollPaddingBlockEnd
     - typings.domHelpers.domHelpersStrings.scrollPaddingBlockStart
     - typings.domHelpers.domHelpersStrings.scrollPaddingBottom
-    - typings.domHelpers.domHelpersStrings.scrollPaddingInline
     - typings.domHelpers.domHelpersStrings.scrollPaddingInlineEnd
     - typings.domHelpers.domHelpersStrings.scrollPaddingInlineStart
     - typings.domHelpers.domHelpersStrings.scrollPaddingLeft
     - typings.domHelpers.domHelpersStrings.scrollPaddingRight
     - typings.domHelpers.domHelpersStrings.scrollPaddingTop
     - typings.domHelpers.domHelpersStrings.scrollSnapAlign
-    - typings.domHelpers.domHelpersStrings.scrollSnapMargin
     - typings.domHelpers.domHelpersStrings.scrollSnapMarginBottom
     - typings.domHelpers.domHelpersStrings.scrollSnapMarginLeft
     - typings.domHelpers.domHelpersStrings.scrollSnapMarginRight
     - typings.domHelpers.domHelpersStrings.scrollSnapMarginTop
     - typings.domHelpers.domHelpersStrings.scrollSnapStop
     - typings.domHelpers.domHelpersStrings.scrollSnapType
+    - typings.domHelpers.domHelpersStrings.scrollTimelineAxis
+    - typings.domHelpers.domHelpersStrings.scrollTimelineName
     - typings.domHelpers.domHelpersStrings.scrollbarColor
     - typings.domHelpers.domHelpersStrings.scrollbarGutter
     - typings.domHelpers.domHelpersStrings.scrollbarWidth
@@ -354,6 +354,7 @@ object cjsTypesMod {
     - typings.domHelpers.domHelpersStrings.unicodeBidi
     - typings.domHelpers.domHelpersStrings.userSelect
     - typings.domHelpers.domHelpersStrings.verticalAlign
+    - typings.domHelpers.domHelpersStrings.viewTransitionName
     - typings.domHelpers.domHelpersStrings.visibility
     - typings.domHelpers.domHelpersStrings.whiteSpace
     - typings.domHelpers.domHelpersStrings.widows
@@ -385,8 +386,11 @@ object cjsTypesMod {
     - typings.domHelpers.domHelpersStrings.borderStyle
     - typings.domHelpers.domHelpersStrings.borderTop
     - typings.domHelpers.domHelpersStrings.borderWidth
+    - typings.domHelpers.domHelpersStrings.caret
     - typings.domHelpers.domHelpersStrings.columnRule
     - typings.domHelpers.domHelpersStrings.columns
+    - typings.domHelpers.domHelpersStrings.containIntrinsicSize
+    - typings.domHelpers.domHelpersStrings.container
     - typings.domHelpers.domHelpersStrings.flex
     - typings.domHelpers.domHelpersStrings.flexFlow
     - typings.domHelpers.domHelpersStrings.font
@@ -396,9 +400,14 @@ object cjsTypesMod {
     - typings.domHelpers.domHelpersStrings.gridColumn
     - typings.domHelpers.domHelpersStrings.gridRow
     - typings.domHelpers.domHelpersStrings.gridTemplate
+    - typings.domHelpers.domHelpersStrings.inset
+    - typings.domHelpers.domHelpersStrings.insetBlock
+    - typings.domHelpers.domHelpersStrings.insetInline
     - typings.domHelpers.domHelpersStrings.lineClamp
     - typings.domHelpers.domHelpersStrings.listStyle
     - typings.domHelpers.domHelpersStrings.margin
+    - typings.domHelpers.domHelpersStrings.marginBlock
+    - typings.domHelpers.domHelpersStrings.marginInline
     - typings.domHelpers.domHelpersStrings.mask
     - typings.domHelpers.domHelpersStrings.maskBorder
     - typings.domHelpers.domHelpersStrings.motion
@@ -407,8 +416,19 @@ object cjsTypesMod {
     - typings.domHelpers.domHelpersStrings.overflow
     - typings.domHelpers.domHelpersStrings.overscrollBehavior
     - typings.domHelpers.domHelpersStrings.padding
+    - typings.domHelpers.domHelpersStrings.paddingBlock
+    - typings.domHelpers.domHelpersStrings.paddingInline
+    - typings.domHelpers.domHelpersStrings.placeContent
     - typings.domHelpers.domHelpersStrings.placeItems
     - typings.domHelpers.domHelpersStrings.placeSelf
+    - typings.domHelpers.domHelpersStrings.scrollMargin
+    - typings.domHelpers.domHelpersStrings.scrollMarginBlock
+    - typings.domHelpers.domHelpersStrings.scrollMarginInline
+    - typings.domHelpers.domHelpersStrings.scrollPadding
+    - typings.domHelpers.domHelpersStrings.scrollPaddingBlock
+    - typings.domHelpers.domHelpersStrings.scrollPaddingInline
+    - typings.domHelpers.domHelpersStrings.scrollSnapMargin
+    - typings.domHelpers.domHelpersStrings.scrollTimeline
     - typings.domHelpers.domHelpersStrings.textDecoration
     - typings.domHelpers.domHelpersStrings.textEmphasis
     - typings.domHelpers.domHelpersStrings.transition
@@ -422,6 +442,7 @@ object cjsTypesMod {
     - typings.domHelpers.domHelpersStrings.MozAnimationTimingFunction
     - typings.domHelpers.domHelpersStrings.MozAppearance
     - typings.domHelpers.domHelpersStrings.MozBackfaceVisibility
+    - typings.domHelpers.domHelpersStrings.MozBinding
     - typings.domHelpers.domHelpersStrings.MozBorderBottomColors
     - typings.domHelpers.domHelpersStrings.MozBorderEndColor
     - typings.domHelpers.domHelpersStrings.MozBorderEndStyle
@@ -702,7 +723,6 @@ object cjsTypesMod {
     - typings.domHelpers.domHelpersStrings.MozBackgroundInlinePolicy
     - typings.domHelpers.domHelpersStrings.MozBackgroundOrigin
     - typings.domHelpers.domHelpersStrings.MozBackgroundSize
-    - typings.domHelpers.domHelpersStrings.MozBinding
     - typings.domHelpers.domHelpersStrings.MozBorderRadius
     - typings.domHelpers.domHelpersStrings.MozBorderRadiusBottomleft
     - typings.domHelpers.domHelpersStrings.MozBorderRadiusBottomright
@@ -886,6 +906,7 @@ object cjsTypesMod {
     - typings.domHelpers.domHelpersStrings.`break-inside`
     - typings.domHelpers.domHelpersStrings.`caption-side`
     - typings.domHelpers.domHelpersStrings.`caret-color`
+    - typings.domHelpers.domHelpersStrings.`caret-shape`
     - typings.domHelpers.domHelpersStrings.clear
     - typings.domHelpers.domHelpersStrings.`clip-path`
     - typings.domHelpers.domHelpersStrings.color
@@ -900,6 +921,12 @@ object cjsTypesMod {
     - typings.domHelpers.domHelpersStrings.`column-span`
     - typings.domHelpers.domHelpersStrings.`column-width`
     - typings.domHelpers.domHelpersStrings.contain
+    - typings.domHelpers.domHelpersStrings.`contain-intrinsic-block-size`
+    - typings.domHelpers.domHelpersStrings.`contain-intrinsic-height`
+    - typings.domHelpers.domHelpersStrings.`contain-intrinsic-inline-size`
+    - typings.domHelpers.domHelpersStrings.`contain-intrinsic-width`
+    - typings.domHelpers.domHelpersStrings.`container-name`
+    - typings.domHelpers.domHelpersStrings.`container-type`
     - typings.domHelpers.domHelpersStrings.content
     - typings.domHelpers.domHelpersStrings.`content-visibility`
     - typings.domHelpers.domHelpersStrings.`counter-increment`
@@ -921,6 +948,7 @@ object cjsTypesMod {
     - typings.domHelpers.domHelpersStrings.`font-kerning`
     - typings.domHelpers.domHelpersStrings.`font-language-override`
     - typings.domHelpers.domHelpersStrings.`font-optical-sizing`
+    - typings.domHelpers.domHelpersStrings.`font-palette`
     - typings.domHelpers.domHelpersStrings.`font-size`
     - typings.domHelpers.domHelpersStrings.`font-size-adjust`
     - typings.domHelpers.domHelpersStrings.`font-smooth`
@@ -931,6 +959,7 @@ object cjsTypesMod {
     - typings.domHelpers.domHelpersStrings.`font-variant-alternates`
     - typings.domHelpers.domHelpersStrings.`font-variant-caps`
     - typings.domHelpers.domHelpersStrings.`font-variant-east-asian`
+    - typings.domHelpers.domHelpersStrings.`font-variant-emoji`
     - typings.domHelpers.domHelpersStrings.`font-variant-ligatures`
     - typings.domHelpers.domHelpersStrings.`font-variant-numeric`
     - typings.domHelpers.domHelpersStrings.`font-variant-position`
@@ -950,6 +979,7 @@ object cjsTypesMod {
     - typings.domHelpers.domHelpersStrings.`hanging-punctuation`
     - typings.domHelpers.domHelpersStrings.height
     - typings.domHelpers.domHelpersStrings.`hyphenate-character`
+    - typings.domHelpers.domHelpersStrings.`hyphenate-limit-chars`
     - typings.domHelpers.domHelpersStrings.hyphens
     - typings.domHelpers.domHelpersStrings.`image-orientation`
     - typings.domHelpers.domHelpersStrings.`image-rendering`
@@ -957,11 +987,8 @@ object cjsTypesMod {
     - typings.domHelpers.domHelpersStrings.`initial-letter`
     - typings.domHelpers.domHelpersStrings.`inline-size`
     - typings.domHelpers.domHelpersStrings.`input-security`
-    - typings.domHelpers.domHelpersStrings.inset
-    - typings.domHelpers.domHelpersStrings.`inset-block`
     - typings.domHelpers.domHelpersStrings.`inset-block-end`
     - typings.domHelpers.domHelpersStrings.`inset-block-start`
-    - typings.domHelpers.domHelpersStrings.`inset-inline`
     - typings.domHelpers.domHelpersStrings.`inset-inline-end`
     - typings.domHelpers.domHelpersStrings.`inset-inline-start`
     - typings.domHelpers.domHelpersStrings.isolation
@@ -977,16 +1004,15 @@ object cjsTypesMod {
     - typings.domHelpers.domHelpersStrings.`list-style-image`
     - typings.domHelpers.domHelpersStrings.`list-style-position`
     - typings.domHelpers.domHelpersStrings.`list-style-type`
-    - typings.domHelpers.domHelpersStrings.`margin-block`
     - typings.domHelpers.domHelpersStrings.`margin-block-end`
     - typings.domHelpers.domHelpersStrings.`margin-block-start`
     - typings.domHelpers.domHelpersStrings.`margin-bottom`
-    - typings.domHelpers.domHelpersStrings.`margin-inline`
     - typings.domHelpers.domHelpersStrings.`margin-inline-end`
     - typings.domHelpers.domHelpersStrings.`margin-inline-start`
     - typings.domHelpers.domHelpersStrings.`margin-left`
     - typings.domHelpers.domHelpersStrings.`margin-right`
     - typings.domHelpers.domHelpersStrings.`margin-top`
+    - typings.domHelpers.domHelpersStrings.`margin-trim`
     - typings.domHelpers.domHelpersStrings.`mask-border-mode`
     - typings.domHelpers.domHelpersStrings.`mask-border-outset`
     - typings.domHelpers.domHelpersStrings.`mask-border-repeat`
@@ -1023,6 +1049,7 @@ object cjsTypesMod {
     - typings.domHelpers.domHelpersStrings.`offset-anchor`
     - typings.domHelpers.domHelpersStrings.`offset-distance`
     - typings.domHelpers.domHelpersStrings.`offset-path`
+    - typings.domHelpers.domHelpersStrings.`offset-position`
     - typings.domHelpers.domHelpersStrings.`offset-rotate`
     - typings.domHelpers.domHelpersStrings.`offset-rotation`
     - typings.domHelpers.domHelpersStrings.opacity
@@ -1044,23 +1071,21 @@ object cjsTypesMod {
     - typings.domHelpers.domHelpersStrings.`overscroll-behavior-inline`
     - typings.domHelpers.domHelpersStrings.`overscroll-behavior-x`
     - typings.domHelpers.domHelpersStrings.`overscroll-behavior-y`
-    - typings.domHelpers.domHelpersStrings.`padding-block`
     - typings.domHelpers.domHelpersStrings.`padding-block-end`
     - typings.domHelpers.domHelpersStrings.`padding-block-start`
     - typings.domHelpers.domHelpersStrings.`padding-bottom`
-    - typings.domHelpers.domHelpersStrings.`padding-inline`
     - typings.domHelpers.domHelpersStrings.`padding-inline-end`
     - typings.domHelpers.domHelpersStrings.`padding-inline-start`
     - typings.domHelpers.domHelpersStrings.`padding-left`
     - typings.domHelpers.domHelpersStrings.`padding-right`
     - typings.domHelpers.domHelpersStrings.`padding-top`
+    - typings.domHelpers.domHelpersStrings.page
     - typings.domHelpers.domHelpersStrings.`page-break-after`
     - typings.domHelpers.domHelpersStrings.`page-break-before`
     - typings.domHelpers.domHelpersStrings.`page-break-inside`
     - typings.domHelpers.domHelpersStrings.`paint-order`
     - typings.domHelpers.domHelpersStrings.perspective
     - typings.domHelpers.domHelpersStrings.`perspective-origin`
-    - typings.domHelpers.domHelpersStrings.`place-content`
     - typings.domHelpers.domHelpersStrings.`pointer-events`
     - typings.domHelpers.domHelpersStrings.position
     - typings.domHelpers.domHelpersStrings.`print-color-adjust`
@@ -1074,36 +1099,31 @@ object cjsTypesMod {
     - typings.domHelpers.domHelpersStrings.`ruby-position`
     - typings.domHelpers.domHelpersStrings.scale
     - typings.domHelpers.domHelpersStrings.`scroll-behavior`
-    - typings.domHelpers.domHelpersStrings.`scroll-margin`
-    - typings.domHelpers.domHelpersStrings.`scroll-margin-block`
     - typings.domHelpers.domHelpersStrings.`scroll-margin-block-end`
     - typings.domHelpers.domHelpersStrings.`scroll-margin-block-start`
     - typings.domHelpers.domHelpersStrings.`scroll-margin-bottom`
-    - typings.domHelpers.domHelpersStrings.`scroll-margin-inline`
     - typings.domHelpers.domHelpersStrings.`scroll-margin-inline-end`
     - typings.domHelpers.domHelpersStrings.`scroll-margin-inline-start`
     - typings.domHelpers.domHelpersStrings.`scroll-margin-left`
     - typings.domHelpers.domHelpersStrings.`scroll-margin-right`
     - typings.domHelpers.domHelpersStrings.`scroll-margin-top`
-    - typings.domHelpers.domHelpersStrings.`scroll-padding`
-    - typings.domHelpers.domHelpersStrings.`scroll-padding-block`
     - typings.domHelpers.domHelpersStrings.`scroll-padding-block-end`
     - typings.domHelpers.domHelpersStrings.`scroll-padding-block-start`
     - typings.domHelpers.domHelpersStrings.`scroll-padding-bottom`
-    - typings.domHelpers.domHelpersStrings.`scroll-padding-inline`
     - typings.domHelpers.domHelpersStrings.`scroll-padding-inline-end`
     - typings.domHelpers.domHelpersStrings.`scroll-padding-inline-start`
     - typings.domHelpers.domHelpersStrings.`scroll-padding-left`
     - typings.domHelpers.domHelpersStrings.`scroll-padding-right`
     - typings.domHelpers.domHelpersStrings.`scroll-padding-top`
     - typings.domHelpers.domHelpersStrings.`scroll-snap-align`
-    - typings.domHelpers.domHelpersStrings.`scroll-snap-margin`
     - typings.domHelpers.domHelpersStrings.`scroll-snap-margin-bottom`
     - typings.domHelpers.domHelpersStrings.`scroll-snap-margin-left`
     - typings.domHelpers.domHelpersStrings.`scroll-snap-margin-right`
     - typings.domHelpers.domHelpersStrings.`scroll-snap-margin-top`
     - typings.domHelpers.domHelpersStrings.`scroll-snap-stop`
     - typings.domHelpers.domHelpersStrings.`scroll-snap-type`
+    - typings.domHelpers.domHelpersStrings.`scroll-timeline-axis`
+    - typings.domHelpers.domHelpersStrings.`scroll-timeline-name`
     - typings.domHelpers.domHelpersStrings.`scrollbar-color`
     - typings.domHelpers.domHelpersStrings.`scrollbar-gutter`
     - typings.domHelpers.domHelpersStrings.`scrollbar-width`
@@ -1148,6 +1168,7 @@ object cjsTypesMod {
     - typings.domHelpers.domHelpersStrings.`unicode-bidi`
     - typings.domHelpers.domHelpersStrings.`user-select`
     - typings.domHelpers.domHelpersStrings.`vertical-align`
+    - typings.domHelpers.domHelpersStrings.`view-transition-name`
     - typings.domHelpers.domHelpersStrings.visibility
     - typings.domHelpers.domHelpersStrings.`white-space`
     - typings.domHelpers.domHelpersStrings.widows
@@ -1179,8 +1200,11 @@ object cjsTypesMod {
     - typings.domHelpers.domHelpersStrings.`border-style`
     - typings.domHelpers.domHelpersStrings.`border-top`
     - typings.domHelpers.domHelpersStrings.`border-width`
+    - typings.domHelpers.domHelpersStrings.caret
     - typings.domHelpers.domHelpersStrings.`column-rule`
     - typings.domHelpers.domHelpersStrings.columns
+    - typings.domHelpers.domHelpersStrings.`contain-intrinsic-size`
+    - typings.domHelpers.domHelpersStrings.container
     - typings.domHelpers.domHelpersStrings.flex
     - typings.domHelpers.domHelpersStrings.`flex-flow`
     - typings.domHelpers.domHelpersStrings.font
@@ -1190,9 +1214,14 @@ object cjsTypesMod {
     - typings.domHelpers.domHelpersStrings.`grid-column`
     - typings.domHelpers.domHelpersStrings.`grid-row`
     - typings.domHelpers.domHelpersStrings.`grid-template`
+    - typings.domHelpers.domHelpersStrings.inset
+    - typings.domHelpers.domHelpersStrings.`inset-block`
+    - typings.domHelpers.domHelpersStrings.`inset-inline`
     - typings.domHelpers.domHelpersStrings.`line-clamp`
     - typings.domHelpers.domHelpersStrings.`list-style`
     - typings.domHelpers.domHelpersStrings.margin
+    - typings.domHelpers.domHelpersStrings.`margin-block`
+    - typings.domHelpers.domHelpersStrings.`margin-inline`
     - typings.domHelpers.domHelpersStrings.mask
     - typings.domHelpers.domHelpersStrings.`mask-border`
     - typings.domHelpers.domHelpersStrings.motion
@@ -1201,8 +1230,19 @@ object cjsTypesMod {
     - typings.domHelpers.domHelpersStrings.overflow
     - typings.domHelpers.domHelpersStrings.`overscroll-behavior`
     - typings.domHelpers.domHelpersStrings.padding
+    - typings.domHelpers.domHelpersStrings.`padding-block`
+    - typings.domHelpers.domHelpersStrings.`padding-inline`
+    - typings.domHelpers.domHelpersStrings.`place-content`
     - typings.domHelpers.domHelpersStrings.`place-items`
     - typings.domHelpers.domHelpersStrings.`place-self`
+    - typings.domHelpers.domHelpersStrings.`scroll-margin`
+    - typings.domHelpers.domHelpersStrings.`scroll-margin-block`
+    - typings.domHelpers.domHelpersStrings.`scroll-margin-inline`
+    - typings.domHelpers.domHelpersStrings.`scroll-padding`
+    - typings.domHelpers.domHelpersStrings.`scroll-padding-block`
+    - typings.domHelpers.domHelpersStrings.`scroll-padding-inline`
+    - typings.domHelpers.domHelpersStrings.`scroll-snap-margin`
+    - typings.domHelpers.domHelpersStrings.`scroll-timeline`
     - typings.domHelpers.domHelpersStrings.`text-decoration`
     - typings.domHelpers.domHelpersStrings.`text-emphasis`
     - typings.domHelpers.domHelpersStrings.transition
@@ -1216,6 +1256,7 @@ object cjsTypesMod {
     - typings.domHelpers.domHelpersStrings.`-moz-animation-timing-function`
     - typings.domHelpers.domHelpersStrings.`-moz-appearance`
     - typings.domHelpers.domHelpersStrings.`-moz-backface-visibility`
+    - typings.domHelpers.domHelpersStrings.`-moz-binding`
     - typings.domHelpers.domHelpersStrings.`-moz-border-bottom-colors`
     - typings.domHelpers.domHelpersStrings.`-moz-border-end-color`
     - typings.domHelpers.domHelpersStrings.`-moz-border-end-style`
@@ -1496,7 +1537,6 @@ object cjsTypesMod {
     - typings.domHelpers.domHelpersStrings.`-moz-background-inline-policy`
     - typings.domHelpers.domHelpersStrings.`-moz-background-origin`
     - typings.domHelpers.domHelpersStrings.`-moz-background-size`
-    - typings.domHelpers.domHelpersStrings.`-moz-binding`
     - typings.domHelpers.domHelpersStrings.`-moz-border-radius`
     - typings.domHelpers.domHelpersStrings.`-moz-border-radius-bottomleft`
     - typings.domHelpers.domHelpersStrings.`-moz-border-radius-bottomright`
@@ -1722,10 +1762,16 @@ object cjsTypesMod {
     - typings.domHelpers.domHelpersStrings.columnWidth
     - typings.domHelpers.domHelpersStrings.columns
     - typings.domHelpers.domHelpersStrings.contain
+    - typings.domHelpers.domHelpersStrings.containIntrinsicBlockSize
+    - typings.domHelpers.domHelpersStrings.containIntrinsicHeight
+    - typings.domHelpers.domHelpersStrings.containIntrinsicInlineSize
+    - typings.domHelpers.domHelpersStrings.containIntrinsicSize
+    - typings.domHelpers.domHelpersStrings.containIntrinsicWidth
     - typings.domHelpers.domHelpersStrings.container
     - typings.domHelpers.domHelpersStrings.containerName
     - typings.domHelpers.domHelpersStrings.containerType
     - typings.domHelpers.domHelpersStrings.content
+    - typings.domHelpers.domHelpersStrings.contentVisibility
     - typings.domHelpers.domHelpersStrings.counterIncrement
     - typings.domHelpers.domHelpersStrings.counterReset
     - typings.domHelpers.domHelpersStrings.counterSet
@@ -1841,6 +1887,7 @@ object cjsTypesMod {
     - typings.domHelpers.domHelpersStrings.maskRepeat
     - typings.domHelpers.domHelpersStrings.maskSize
     - typings.domHelpers.domHelpersStrings.maskType
+    - typings.domHelpers.domHelpersStrings.mathStyle
     - typings.domHelpers.domHelpersStrings.maxBlockSize
     - typings.domHelpers.domHelpersStrings.maxHeight
     - typings.domHelpers.domHelpersStrings.maxInlineSize

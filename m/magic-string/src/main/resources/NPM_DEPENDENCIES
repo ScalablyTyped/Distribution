@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "magic-string" : "0.26.7"
+      "magic-string" : "0.30.0"
     }
   ],
   "test-dependencies" : [
     {
-      "magic-string" : "0.26.7"
+      "magic-string" : "0.30.0"
     }
   ],
   "compile-devDependencies" : [

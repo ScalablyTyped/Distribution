@@ -12,7 +12,7 @@ trait MatchmakingRuleSet extends StObject {
   var CreationTime: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) that is assigned to a GameLift matchmaking rule set resource and uniquely identifies it. ARNs are unique across all Regions. Format is arn:aws:gamelift:&lt;region&gt;::matchmakingruleset/&lt;ruleset name&gt;. In a GameLift rule set ARN, the resource ID matches the RuleSetName value.
+    * The Amazon Resource Name (ARN) that is assigned to a Amazon GameLift matchmaking rule set resource and uniquely identifies it. ARNs are unique across all Regions. Format is arn:aws:gamelift:&lt;region&gt;::matchmakingruleset/&lt;ruleset name&gt;. In a GameLift rule set ARN, the resource ID matches the RuleSetName value.
     */
   var RuleSetArn: js.UndefOr[MatchmakingRuleSetArn] = js.undefined
   

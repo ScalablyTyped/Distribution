@@ -1,5 +1,6 @@
 package typings.octokitOpenapiTypes.anon
 
+import typings.octokitOpenapiTypes.mod.OneOf
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -16,9 +17,9 @@ trait Assignees extends StObject {
   var body: js.UndefOr[String] = js.undefined
   
   /** @description Labels to associate with this issue. _NOTE: Only users with push access can set labels for new issues. Labels are silently dropped otherwise._ */
-  var labels: js.UndefOr[js.Array[String | Color]] = js.undefined
+  var labels: js.UndefOr[js.Array[OneOf[js.Tuple2[String, Color]]]] = js.undefined
   
-  var milestone: js.UndefOr[String | Double | Null] = js.undefined
+  var milestone: js.UndefOr[String | Double] = js.undefined
   
   /** @description The title of the issue. */
   var title: String | Double
@@ -49,15 +50,13 @@ object Assignees {
     
     inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
-    inline def setLabels(value: js.Array[String | Color]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: js.Array[OneOf[js.Tuple2[String, Color]]]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    inline def setLabelsVarargs(value: (String | Color)*): Self = StObject.set(x, "labels", js.Array(value*))
+    inline def setLabelsVarargs(value: (OneOf[js.Tuple2[String, Color]])*): Self = StObject.set(x, "labels", js.Array(value*))
     
     inline def setMilestone(value: String | Double): Self = StObject.set(x, "milestone", value.asInstanceOf[js.Any])
-    
-    inline def setMilestoneNull: Self = StObject.set(x, "milestone", null)
     
     inline def setMilestoneUndefined: Self = StObject.set(x, "milestone", js.undefined)
     

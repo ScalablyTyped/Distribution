@@ -100,6 +100,12 @@ trait Paint
   def setColorInt(color: ColorInt, colorSpace: ColorSpace): Unit = js.native
   
   /**
+    * Requests, but does not require, to distribute color error.
+    * @param shouldDither
+    */
+  def setDither(shouldDither: Boolean): Unit = js.native
+  
+  /**
     * Sets the current image filter, replacing the existing one if there was one.
     * @param filter
     */

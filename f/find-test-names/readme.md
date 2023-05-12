@@ -1,7 +1,7 @@
 
 # Scala.js typings for find-test-names
 
-Typings are for version 1.21
+Typings are for version 1.24
 
 ## Library description:
 Given a Mocha / Cypress spec file, returns the list of suite and test names

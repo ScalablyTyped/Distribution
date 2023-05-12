@@ -98,6 +98,8 @@ trait DatepickerOptions extends StObject {
   
   var todayHighlight: js.UndefOr[Boolean] = js.undefined
   
+  var toggleActive: js.UndefOr[Boolean] = js.undefined
+  
   var updateViewDate: js.UndefOr[Boolean] = js.undefined
   
   var weekStart: js.UndefOr[Double] = js.undefined
@@ -265,6 +267,10 @@ object DatepickerOptions {
     inline def setTodayHighlight(value: Boolean): Self = StObject.set(x, "todayHighlight", value.asInstanceOf[js.Any])
     
     inline def setTodayHighlightUndefined: Self = StObject.set(x, "todayHighlight", js.undefined)
+    
+    inline def setToggleActive(value: Boolean): Self = StObject.set(x, "toggleActive", value.asInstanceOf[js.Any])
+    
+    inline def setToggleActiveUndefined: Self = StObject.set(x, "toggleActive", js.undefined)
     
     inline def setUpdateViewDate(value: Boolean): Self = StObject.set(x, "updateViewDate", value.asInstanceOf[js.Any])
     

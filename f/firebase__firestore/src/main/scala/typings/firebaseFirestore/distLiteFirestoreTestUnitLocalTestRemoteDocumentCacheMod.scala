@@ -1,16 +1,17 @@
 package typings.firebaseFirestore
 
 import typings.firebaseFirestore.anon.TrackRemovals
+import typings.firebaseFirestore.distLiteFirestoreSrcCoreQueryMod.Query
 import typings.firebaseFirestore.distLiteFirestoreSrcCoreSnapshotVersionMod.SnapshotVersion
 import typings.firebaseFirestore.distLiteFirestoreSrcLocalIndexManagerMod.IndexManager
 import typings.firebaseFirestore.distLiteFirestoreSrcLocalPersistenceMod.Persistence
 import typings.firebaseFirestore.distLiteFirestoreSrcLocalRemoteDocumentChangeBufferMod.RemoteDocumentChangeBuffer
 import typings.firebaseFirestore.distLiteFirestoreSrcModelCollectionsMod.DocumentKeySet_
 import typings.firebaseFirestore.distLiteFirestoreSrcModelCollectionsMod.MutableDocumentMap_
+import typings.firebaseFirestore.distLiteFirestoreSrcModelCollectionsMod.OverlayMap
 import typings.firebaseFirestore.distLiteFirestoreSrcModelDocumentKeyMod.DocumentKey
 import typings.firebaseFirestore.distLiteFirestoreSrcModelDocumentMod.MutableDocument
 import typings.firebaseFirestore.distLiteFirestoreSrcModelFieldIndexMod.IndexOffset
-import typings.firebaseFirestore.distLiteFirestoreSrcModelPathMod.ResourcePath
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -36,9 +37,9 @@ object distLiteFirestoreTestUnitLocalTestRemoteDocumentCacheMod {
     
     /* private */ val cache: Any = js.native
     
-    def getAllFromCollection(collection: ResourcePath, offset: IndexOffset): js.Promise[MutableDocumentMap_] = js.native
-    
     def getAllFromCollectionGroup(collectionGroup: String, offset: IndexOffset, limit: Double): js.Promise[MutableDocumentMap_] = js.native
+    
+    def getDocumentsMatchingQuery(query: Query, offset: IndexOffset, mutatedDocs: OverlayMap): js.Promise[MutableDocumentMap_] = js.native
     
     def getEntries(documentKeys: DocumentKeySet_): js.Promise[MutableDocumentMap_] = js.native
     

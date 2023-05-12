@@ -4,20 +4,26 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DataTableHeaderTemplateOptions extends StObject {
+/**
+  * Custom datatable header template options.
+  */
+trait DataTableHeaderTemplateOptions[TValue /* <: DataTableValueArray */] extends StObject {
   
-  var props: DataTableProps
+  /**
+    * The props of the datatable.
+    */
+  var props: DataTableProps[TValue]
 }
 object DataTableHeaderTemplateOptions {
   
-  inline def apply(props: DataTableProps): DataTableHeaderTemplateOptions = {
+  inline def apply[TValue /* <: DataTableValueArray */](props: DataTableProps[TValue]): DataTableHeaderTemplateOptions[TValue] = {
     val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any])
-    __obj.asInstanceOf[DataTableHeaderTemplateOptions]
+    __obj.asInstanceOf[DataTableHeaderTemplateOptions[TValue]]
   }
   
   @scala.inline
-  implicit open class MutableBuilder[Self <: DataTableHeaderTemplateOptions] (val x: Self) extends AnyVal {
+  implicit open class MutableBuilder[Self <: DataTableHeaderTemplateOptions[?], TValue /* <: DataTableValueArray */] (val x: Self & DataTableHeaderTemplateOptions[TValue]) extends AnyVal {
     
-    inline def setProps(value: DataTableProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+    inline def setProps(value: DataTableProps[TValue]): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
   }
 }

@@ -17,37 +17,47 @@ trait Image extends StObject {
   var buildType: js.UndefOr[BuildType] = js.undefined
   
   /**
-    * The recipe that is used to create an Image Builder container image.
+    * For container images, this is the container recipe that Image Builder used to create the image. For images that distribute an AMI, this is empty.
     */
   var containerRecipe: js.UndefOr[ContainerRecipe] = js.undefined
   
   /**
-    * The date on which this image was created.
+    * The date on which Image Builder created this image.
     */
   var dateCreated: js.UndefOr[DateTime] = js.undefined
   
   /**
-    * The distribution configuration used when creating this image.
+    * The distribution configuration that Image Builder used to create this image.
     */
   var distributionConfiguration: js.UndefOr[DistributionConfiguration] = js.undefined
   
   /**
-    *  Collects additional information about the image being created, including the operating system (OS) version and package list. This information is used to enhance the overall experience of using EC2 Image Builder. Enabled by default.
+    * Indicates whether Image Builder collects additional information about the image, such as the operating system (OS) version and package list.
     */
   var enhancedImageMetadataEnabled: js.UndefOr[NullableBoolean] = js.undefined
   
   /**
-    * The image recipe used when creating the image.
+    * For images that distribute an AMI, this is the image recipe that Image Builder used to create the image. For container images, this is empty.
     */
   var imageRecipe: js.UndefOr[ImageRecipe] = js.undefined
   
   /**
-    * The image tests configuration used when creating this image.
+    * Contains settings for vulnerability scans.
+    */
+  var imageScanningConfiguration: js.UndefOr[ImageScanningConfiguration] = js.undefined
+  
+  /**
+    * The origin of the base image that Image Builder used to build this image.
+    */
+  var imageSource: js.UndefOr[ImageSource] = js.undefined
+  
+  /**
+    * The image tests that ran when that Image Builder created this image.
     */
   var imageTestsConfiguration: js.UndefOr[ImageTestsConfiguration] = js.undefined
   
   /**
-    * The infrastructure used when creating this image.
+    * The infrastructure that Image Builder used to create this image.
     */
   var infrastructureConfiguration: js.UndefOr[InfrastructureConfiguration] = js.undefined
   
@@ -57,19 +67,24 @@ trait Image extends StObject {
   var name: js.UndefOr[ResourceName] = js.undefined
   
   /**
-    * The operating system version of the instance. For example, Amazon Linux 2, Ubuntu 18, or Microsoft Windows Server 2019.
+    * The operating system version for instances that launch from this image. For example, Amazon Linux 2, Ubuntu 18, or Microsoft Windows Server 2019.
     */
   var osVersion: js.UndefOr[OsVersion] = js.undefined
   
   /**
-    * The output resources produced when creating this image.
+    * The output resources that Image Builder produces for this image.
     */
   var outputResources: js.UndefOr[OutputResources] = js.undefined
   
   /**
-    * The platform of the image.
+    * The image operating system platform, such as Linux or Windows.
     */
   var platform: js.UndefOr[Platform] = js.undefined
+  
+  /**
+    * Contains information about the current state of scans for this image.
+    */
+  var scanState: js.UndefOr[ImageScanState] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the image pipeline that created this image.
@@ -87,12 +102,12 @@ trait Image extends StObject {
   var state: js.UndefOr[ImageState] = js.undefined
   
   /**
-    * The tags of the image.
+    * The tags that apply to this image.
     */
   var tags: js.UndefOr[TagMap] = js.undefined
   
   /**
-    * Specifies whether this is an AMI or container image.
+    * Specifies whether this image produces an AMI or a container image.
     */
   var `type`: js.UndefOr[ImageType] = js.undefined
   
@@ -139,6 +154,14 @@ object Image {
     
     inline def setImageRecipeUndefined: Self = StObject.set(x, "imageRecipe", js.undefined)
     
+    inline def setImageScanningConfiguration(value: ImageScanningConfiguration): Self = StObject.set(x, "imageScanningConfiguration", value.asInstanceOf[js.Any])
+    
+    inline def setImageScanningConfigurationUndefined: Self = StObject.set(x, "imageScanningConfiguration", js.undefined)
+    
+    inline def setImageSource(value: ImageSource): Self = StObject.set(x, "imageSource", value.asInstanceOf[js.Any])
+    
+    inline def setImageSourceUndefined: Self = StObject.set(x, "imageSource", js.undefined)
+    
     inline def setImageTestsConfiguration(value: ImageTestsConfiguration): Self = StObject.set(x, "imageTestsConfiguration", value.asInstanceOf[js.Any])
     
     inline def setImageTestsConfigurationUndefined: Self = StObject.set(x, "imageTestsConfiguration", js.undefined)
@@ -162,6 +185,10 @@ object Image {
     inline def setPlatform(value: Platform): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
     inline def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
+    
+    inline def setScanState(value: ImageScanState): Self = StObject.set(x, "scanState", value.asInstanceOf[js.Any])
+    
+    inline def setScanStateUndefined: Self = StObject.set(x, "scanState", js.undefined)
     
     inline def setSourcePipelineArn(value: Arn): Self = StObject.set(x, "sourcePipelineArn", value.asInstanceOf[js.Any])
     

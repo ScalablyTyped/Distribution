@@ -12,15 +12,13 @@ object libMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def default(options: Options): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def default(settings_0: Options): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(settings_0.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @js.native
   trait CreateElementLike extends StObject {
     
     def apply(name: Any, props: Any, children: ReactNode*): ReactNode = js.native
   }
-  
-  type Element = typings.hast.mod.Element
   
   type Options = (ComponentsWithNodeOptions & SharedOptions) | (ComponentsWithoutNodeOptions & SharedOptions)
   
@@ -45,7 +43,16 @@ object libMod {
     var createElement: CreateElementLike
     
     /**
-      * React key prefix
+      * Fix obsolete align attributes on table cells by turning them
+      * into inline styles.
+      * Keep it on when working with markdown, turn it off when working
+      * with markup for emails.
+      * The default is `true`.
+      */
+    var fixTableCellAlign: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * React key prefix.
       */
     var prefix: js.UndefOr[String] = js.undefined
   }
@@ -60,6 +67,10 @@ object libMod {
     implicit open class MutableBuilder[Self <: SharedOptions] (val x: Self) extends AnyVal {
       
       inline def setCreateElement(value: CreateElementLike): Self = StObject.set(x, "createElement", value.asInstanceOf[js.Any])
+      
+      inline def setFixTableCellAlign(value: Boolean): Self = StObject.set(x, "fixTableCellAlign", value.asInstanceOf[js.Any])
+      
+      inline def setFixTableCellAlignUndefined: Self = StObject.set(x, "fixTableCellAlign", js.undefined)
       
       inline def setFragment(value: /* props */ Any => ReactNode): Self = StObject.set(x, "Fragment", js.Any.fromFunction1(value))
       

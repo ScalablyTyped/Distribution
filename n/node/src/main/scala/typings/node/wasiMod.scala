@@ -77,11 +77,11 @@ object wasiMod {
     var preopens: js.UndefOr[Dict[String]] = js.undefined
     
     /**
-      * By default, WASI applications terminate the Node.js
-      * process via the `__wasi_proc_exit()` function. Setting this option to `true`
-      * causes `wasi.start()` to return the exit code rather than terminate the
-      * process.
-      * @default false
+      * By default, when WASI applications call `__wasi_proc_exit()`
+      *  `wasi.start()` will return with the exit code specified rather than terminatng the process.
+      * Setting this option to `false` will cause the Node.js process to exit with
+      * the specified exit code instead.
+      * @default true
       */
     var returnOnExit: js.UndefOr[Boolean] = js.undefined
     

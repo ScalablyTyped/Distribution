@@ -1,7 +1,7 @@
 
 # Scala.js typings for opentelemetry__propagator-b3
 
-Typings are for version 1.7.0
+Typings are for version 1.13.0
 
 ## Library description:
 OpenTelemetry B3 propagator provides context propagation for systems that are using the B3 header format

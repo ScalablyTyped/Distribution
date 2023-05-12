@@ -11,12 +11,12 @@ trait LiteralStemRange
   /**
     * Literals or {@link LiteralStem}s to exclude.
     */
-  var exclusions: js.Array[STRING | LiteralStem]
+  var exclusions: js.Array[literalRangeExclusion]
   
   /**
     * substring of Literal to be matched or a {@link Wildcard} matching any Literal.
     */
-  var stem: STRING | Wildcard
+  var stem: literalRangeStem
   
   /**
     * Mandatory type "LiteralStemRange".
@@ -25,7 +25,7 @@ trait LiteralStemRange
 }
 object LiteralStemRange {
   
-  inline def apply(exclusions: js.Array[STRING | LiteralStem], stem: STRING | Wildcard): LiteralStemRange = {
+  inline def apply(exclusions: js.Array[literalRangeExclusion], stem: literalRangeStem): LiteralStemRange = {
     val __obj = js.Dynamic.literal(exclusions = exclusions.asInstanceOf[js.Any], stem = stem.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("LiteralStemRange")
     __obj.asInstanceOf[LiteralStemRange]
@@ -34,11 +34,11 @@ object LiteralStemRange {
   @scala.inline
   implicit open class MutableBuilder[Self <: LiteralStemRange] (val x: Self) extends AnyVal {
     
-    inline def setExclusions(value: js.Array[STRING | LiteralStem]): Self = StObject.set(x, "exclusions", value.asInstanceOf[js.Any])
+    inline def setExclusions(value: js.Array[literalRangeExclusion]): Self = StObject.set(x, "exclusions", value.asInstanceOf[js.Any])
     
-    inline def setExclusionsVarargs(value: (STRING | LiteralStem)*): Self = StObject.set(x, "exclusions", js.Array(value*))
+    inline def setExclusionsVarargs(value: literalRangeExclusion*): Self = StObject.set(x, "exclusions", js.Array(value*))
     
-    inline def setStem(value: STRING | Wildcard): Self = StObject.set(x, "stem", value.asInstanceOf[js.Any])
+    inline def setStem(value: literalRangeStem): Self = StObject.set(x, "stem", value.asInstanceOf[js.Any])
     
     inline def setType(value: typings.shexj.shexjStrings.LiteralStemRange): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

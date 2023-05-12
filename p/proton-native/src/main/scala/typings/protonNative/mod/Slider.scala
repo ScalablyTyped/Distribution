@@ -12,7 +12,7 @@ open class Slider protected ()
   def this(props: SliderProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: SliderProps, context: Any) = this()
 }

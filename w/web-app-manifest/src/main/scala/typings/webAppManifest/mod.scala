@@ -334,6 +334,14 @@ object mod {
     var icons: js.UndefOr[js.Array[ImageResource]] = js.undefined
     
     /**
+      * The manifest's id member is a string that represents the identity for the application.
+      * The identity takes the form of a URL, which is same origin as the start URL.
+      *
+      * @see https://w3c.github.io/manifest/#id-member
+      */
+    var id: js.UndefOr[String] = js.undefined
+    
+    /**
       * The `lang` member is a language tag (`string`) that specifies the primary language for the values of
       * the manifest's directionality-capable members (as knowing the language can also help with directionality).
       *
@@ -460,6 +468,10 @@ object mod {
       inline def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
       
       inline def setIconsVarargs(value: ImageResource*): Self = StObject.set(x, "icons", js.Array(value*))
+      
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
       inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
       

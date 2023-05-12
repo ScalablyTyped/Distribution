@@ -1,8 +1,10 @@
 package typings.three
 
+import typings.three.srcConstantsMod.ColorSpace
+import typings.three.srcConstantsMod.MagnificationTextureFilter
+import typings.three.srcConstantsMod.MinificationTextureFilter
 import typings.three.srcConstantsMod.TextureDataType
 import typings.three.srcConstantsMod.TextureEncoding
-import typings.three.srcConstantsMod.TextureFilter
 import typings.three.srcConstantsMod.Wrapping
 import typings.three.srcCoreEventDispatcherMod.Event
 import typings.three.srcCoreEventDispatcherMod.EventDispatcher
@@ -130,12 +132,15 @@ object srcRenderersWebGLRenderTargetMod {
     // UnsignedByteType;
     var anisotropy: js.UndefOr[Double] = js.undefined
     
+    var colorSpace: js.UndefOr[ColorSpace] = js.undefined
+    
     // 1;
     var depthBuffer: js.UndefOr[Boolean] = js.undefined
     
     // true;
     var depthTexture: js.UndefOr[DepthTexture] = js.undefined
     
+    /** @deprecated Use 'colorSpace' in three.js r152+. */
     var encoding: js.UndefOr[TextureEncoding] = js.undefined
     
     var format: js.UndefOr[Double] = js.undefined
@@ -143,9 +148,9 @@ object srcRenderersWebGLRenderTargetMod {
     // false;
     var generateMipmaps: js.UndefOr[Boolean] = js.undefined
     
-    var magFilter: js.UndefOr[TextureFilter] = js.undefined
+    var magFilter: js.UndefOr[MagnificationTextureFilter] = js.undefined
     
-    var minFilter: js.UndefOr[TextureFilter] = js.undefined
+    var minFilter: js.UndefOr[MinificationTextureFilter] = js.undefined
     
     /**
       * Defines the count of MSAA samples. Can only be used with WebGL 2. Default is **0**.
@@ -177,6 +182,10 @@ object srcRenderersWebGLRenderTargetMod {
       
       inline def setAnisotropyUndefined: Self = StObject.set(x, "anisotropy", js.undefined)
       
+      inline def setColorSpace(value: ColorSpace): Self = StObject.set(x, "colorSpace", value.asInstanceOf[js.Any])
+      
+      inline def setColorSpaceUndefined: Self = StObject.set(x, "colorSpace", js.undefined)
+      
       inline def setDepthBuffer(value: Boolean): Self = StObject.set(x, "depthBuffer", value.asInstanceOf[js.Any])
       
       inline def setDepthBufferUndefined: Self = StObject.set(x, "depthBuffer", js.undefined)
@@ -197,11 +206,11 @@ object srcRenderersWebGLRenderTargetMod {
       
       inline def setGenerateMipmapsUndefined: Self = StObject.set(x, "generateMipmaps", js.undefined)
       
-      inline def setMagFilter(value: TextureFilter): Self = StObject.set(x, "magFilter", value.asInstanceOf[js.Any])
+      inline def setMagFilter(value: MagnificationTextureFilter): Self = StObject.set(x, "magFilter", value.asInstanceOf[js.Any])
       
       inline def setMagFilterUndefined: Self = StObject.set(x, "magFilter", js.undefined)
       
-      inline def setMinFilter(value: TextureFilter): Self = StObject.set(x, "minFilter", value.asInstanceOf[js.Any])
+      inline def setMinFilter(value: MinificationTextureFilter): Self = StObject.set(x, "minFilter", value.asInstanceOf[js.Any])
       
       inline def setMinFilterUndefined: Self = StObject.set(x, "minFilter", js.undefined)
       

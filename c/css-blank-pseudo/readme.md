@@ -1,7 +1,7 @@
 
 # Scala.js typings for css-blank-pseudo
 
-Typings are for version 4.1.1
+Typings are for version 5.0.2
 
 ## Library description:
 Style form elements when they are empty

@@ -20,6 +20,8 @@ trait NormalizedInputOptions extends StObject {
   
   var experimentalCacheExpiry: Double
   
+  var experimentalLogSideEffects: Boolean
+  
   def external(source: String, importer: String, isResolved: Boolean): Boolean
   def external(source: String, importer: Unit, isResolved: Boolean): Boolean
   @JSName("external")
@@ -70,6 +72,7 @@ object NormalizedInputOptions {
     acornInjectPlugins: js.Array[js.Function0[Any]],
     context: String,
     experimentalCacheExpiry: Double,
+    experimentalLogSideEffects: Boolean,
     external: (/* source */ String, /* importer */ js.UndefOr[String], /* isResolved */ Boolean) => Boolean,
     input: js.Array[String] | StringDictionary[String],
     makeAbsoluteExternalsRelative: Boolean | ifRelativeSource,
@@ -85,7 +88,7 @@ object NormalizedInputOptions {
     strictDeprecations: Boolean,
     treeshake: `false` | NormalizedTreeshakingOptions
   ): NormalizedInputOptions = {
-    val __obj = js.Dynamic.literal(acorn = acorn.asInstanceOf[js.Any], acornInjectPlugins = acornInjectPlugins.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], experimentalCacheExpiry = experimentalCacheExpiry.asInstanceOf[js.Any], external = js.Any.fromFunction3(external), input = input.asInstanceOf[js.Any], makeAbsoluteExternalsRelative = makeAbsoluteExternalsRelative.asInstanceOf[js.Any], maxParallelFileOps = maxParallelFileOps.asInstanceOf[js.Any], maxParallelFileReads = maxParallelFileReads.asInstanceOf[js.Any], moduleContext = js.Any.fromFunction1(moduleContext), onwarn = js.Any.fromFunction1(onwarn), perf = perf.asInstanceOf[js.Any], plugins = plugins.asInstanceOf[js.Any], preserveEntrySignatures = preserveEntrySignatures.asInstanceOf[js.Any], preserveSymlinks = preserveSymlinks.asInstanceOf[js.Any], shimMissingExports = shimMissingExports.asInstanceOf[js.Any], strictDeprecations = strictDeprecations.asInstanceOf[js.Any], treeshake = treeshake.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(acorn = acorn.asInstanceOf[js.Any], acornInjectPlugins = acornInjectPlugins.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], experimentalCacheExpiry = experimentalCacheExpiry.asInstanceOf[js.Any], experimentalLogSideEffects = experimentalLogSideEffects.asInstanceOf[js.Any], external = js.Any.fromFunction3(external), input = input.asInstanceOf[js.Any], makeAbsoluteExternalsRelative = makeAbsoluteExternalsRelative.asInstanceOf[js.Any], maxParallelFileOps = maxParallelFileOps.asInstanceOf[js.Any], maxParallelFileReads = maxParallelFileReads.asInstanceOf[js.Any], moduleContext = js.Any.fromFunction1(moduleContext), onwarn = js.Any.fromFunction1(onwarn), perf = perf.asInstanceOf[js.Any], plugins = plugins.asInstanceOf[js.Any], preserveEntrySignatures = preserveEntrySignatures.asInstanceOf[js.Any], preserveSymlinks = preserveSymlinks.asInstanceOf[js.Any], shimMissingExports = shimMissingExports.asInstanceOf[js.Any], strictDeprecations = strictDeprecations.asInstanceOf[js.Any], treeshake = treeshake.asInstanceOf[js.Any])
     __obj.asInstanceOf[NormalizedInputOptions]
   }
   
@@ -105,6 +108,8 @@ object NormalizedInputOptions {
     inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
     inline def setExperimentalCacheExpiry(value: Double): Self = StObject.set(x, "experimentalCacheExpiry", value.asInstanceOf[js.Any])
+    
+    inline def setExperimentalLogSideEffects(value: Boolean): Self = StObject.set(x, "experimentalLogSideEffects", value.asInstanceOf[js.Any])
     
     inline def setExternal(
       value: (/* source */ String, /* importer */ js.UndefOr[String], /* isResolved */ Boolean) => Boolean

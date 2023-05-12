@@ -1,6 +1,10 @@
 package typings.simperium.mod
 
 import typings.node.eventsMod.EventEmitter
+import typings.simperium.simperiumInts.`0`
+import typings.simperium.simperiumInts.`1`
+import typings.simperium.simperiumInts.`2`
+import typings.simperium.simperiumInts.`3`
 import typings.simperium.simperiumStrings.AT_TARGET
 import typings.simperium.simperiumStrings.BUBBLING_PHASE
 import typings.simperium.simperiumStrings.CAPTURING_PHASE
@@ -33,14 +37,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait CustomEventEmitter[Event /* <: SimperiumEvent */] extends EventEmitter {
   
-  @JSName("addListener")
-  def addListener_ATTARGET(`type`: AT_TARGET, callback: Double): this.type = js.native
-  @JSName("addListener")
-  def addListener_BUBBLINGPHASE(`type`: BUBBLING_PHASE, callback: Double): this.type = js.native
-  @JSName("addListener")
-  def addListener_CAPTURINGPHASE(`type`: CAPTURING_PHASE, callback: Double): this.type = js.native
-  @JSName("addListener")
-  def addListener_NONE(`type`: NONE, callback: Double): this.type = js.native
+  def addListener(`type`: AT_TARGET, callback: `2`): this.type = js.native
+  def addListener(`type`: BUBBLING_PHASE, callback: `3`): this.type = js.native
+  def addListener(`type`: CAPTURING_PHASE, callback: `1`): this.type = js.native
+  def addListener(`type`: NONE, callback: `0`): this.type = js.native
   @JSName("addListener")
   def addListener_bubbles(`type`: bubbles, callback: Boolean): this.type = js.native
   @JSName("addListener")
@@ -74,25 +74,21 @@ trait CustomEventEmitter[Event /* <: SimperiumEvent */] extends EventEmitter {
   @JSName("addListener")
   def addListener_type(`type`: `type`, callback: String): this.type = js.native
   
-  @JSName("emit")
-  def emit_ATTARGET(
+  def emit(
     `type`: AT_TARGET,
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<Event[U]> is not an array type */ args: Parameters[Double]
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<Event[U]> is not an array type */ args: Parameters[`2`]
   ): Boolean = js.native
-  @JSName("emit")
-  def emit_BUBBLINGPHASE(
+  def emit(
     `type`: BUBBLING_PHASE,
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<Event[U]> is not an array type */ args: Parameters[Double]
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<Event[U]> is not an array type */ args: Parameters[`3`]
   ): Boolean = js.native
-  @JSName("emit")
-  def emit_CAPTURINGPHASE(
+  def emit(
     `type`: CAPTURING_PHASE,
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<Event[U]> is not an array type */ args: Parameters[Double]
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<Event[U]> is not an array type */ args: Parameters[`1`]
   ): Boolean = js.native
-  @JSName("emit")
-  def emit_NONE(
+  def emit(
     `type`: NONE,
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<Event[U]> is not an array type */ args: Parameters[Double]
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<Event[U]> is not an array type */ args: Parameters[`0`]
   ): Boolean = js.native
   @JSName("emit")
   def emit_bubbles(
@@ -161,17 +157,17 @@ trait CustomEventEmitter[Event /* <: SimperiumEvent */] extends EventEmitter {
   ): Boolean = js.native
   
   def listenerCount(
-    `type`: /* keyof Event */ bubbles | cancelBubble | cancelable | composed | currentTarget | defaultPrevented | eventPhase | isTrusted | returnValue | srcElement | target | timeStamp | `type` | composedPath | initEvent | preventDefault | stopImmediatePropagation | stopPropagation | AT_TARGET | BUBBLING_PHASE | CAPTURING_PHASE | NONE
+    `type`: /* keyof Event */ bubbles | cancelBubble | cancelable | composed | currentTarget | defaultPrevented | eventPhase | isTrusted | returnValue | srcElement | target | timeStamp | `type` | composedPath | initEvent | preventDefault | stopImmediatePropagation | stopPropagation | NONE | CAPTURING_PHASE | AT_TARGET | BUBBLING_PHASE
   ): Double = js.native
   
   @JSName("listeners")
-  def listeners_ATTARGET(`type`: AT_TARGET): js.Array[Double] = js.native
+  def listeners_ATTARGET(`type`: AT_TARGET): js.Array[`2`] = js.native
   @JSName("listeners")
-  def listeners_BUBBLINGPHASE(`type`: BUBBLING_PHASE): js.Array[Double] = js.native
+  def listeners_BUBBLINGPHASE(`type`: BUBBLING_PHASE): js.Array[`3`] = js.native
   @JSName("listeners")
-  def listeners_CAPTURINGPHASE(`type`: CAPTURING_PHASE): js.Array[Double] = js.native
+  def listeners_CAPTURINGPHASE(`type`: CAPTURING_PHASE): js.Array[`1`] = js.native
   @JSName("listeners")
-  def listeners_NONE(`type`: NONE): js.Array[Double] = js.native
+  def listeners_NONE(`type`: NONE): js.Array[`0`] = js.native
   @JSName("listeners")
   def listeners_bubbles(`type`: bubbles): js.Array[Boolean] = js.native
   @JSName("listeners")
@@ -199,14 +195,10 @@ trait CustomEventEmitter[Event /* <: SimperiumEvent */] extends EventEmitter {
   @JSName("listeners")
   def listeners_type(`type`: `type`): js.Array[String] = js.native
   
-  @JSName("off")
-  def off_ATTARGET(`type`: AT_TARGET, callback: Double): this.type = js.native
-  @JSName("off")
-  def off_BUBBLINGPHASE(`type`: BUBBLING_PHASE, callback: Double): this.type = js.native
-  @JSName("off")
-  def off_CAPTURINGPHASE(`type`: CAPTURING_PHASE, callback: Double): this.type = js.native
-  @JSName("off")
-  def off_NONE(`type`: NONE, callback: Double): this.type = js.native
+  def off(`type`: AT_TARGET, callback: `2`): this.type = js.native
+  def off(`type`: BUBBLING_PHASE, callback: `3`): this.type = js.native
+  def off(`type`: CAPTURING_PHASE, callback: `1`): this.type = js.native
+  def off(`type`: NONE, callback: `0`): this.type = js.native
   @JSName("off")
   def off_bubbles(`type`: bubbles, callback: Boolean): this.type = js.native
   @JSName("off")
@@ -240,14 +232,10 @@ trait CustomEventEmitter[Event /* <: SimperiumEvent */] extends EventEmitter {
   @JSName("off")
   def off_type(`type`: `type`, callback: String): this.type = js.native
   
-  @JSName("on")
-  def on_ATTARGET(`type`: AT_TARGET, callback: Double): this.type = js.native
-  @JSName("on")
-  def on_BUBBLINGPHASE(`type`: BUBBLING_PHASE, callback: Double): this.type = js.native
-  @JSName("on")
-  def on_CAPTURINGPHASE(`type`: CAPTURING_PHASE, callback: Double): this.type = js.native
-  @JSName("on")
-  def on_NONE(`type`: NONE, callback: Double): this.type = js.native
+  def on(`type`: AT_TARGET, callback: `2`): this.type = js.native
+  def on(`type`: BUBBLING_PHASE, callback: `3`): this.type = js.native
+  def on(`type`: CAPTURING_PHASE, callback: `1`): this.type = js.native
+  def on(`type`: NONE, callback: `0`): this.type = js.native
   @JSName("on")
   def on_bubbles(`type`: bubbles, callback: Boolean): this.type = js.native
   @JSName("on")
@@ -281,14 +269,10 @@ trait CustomEventEmitter[Event /* <: SimperiumEvent */] extends EventEmitter {
   @JSName("on")
   def on_type(`type`: `type`, callback: String): this.type = js.native
   
-  @JSName("once")
-  def once_ATTARGET(`type`: AT_TARGET, callback: Double): this.type = js.native
-  @JSName("once")
-  def once_BUBBLINGPHASE(`type`: BUBBLING_PHASE, callback: Double): this.type = js.native
-  @JSName("once")
-  def once_CAPTURINGPHASE(`type`: CAPTURING_PHASE, callback: Double): this.type = js.native
-  @JSName("once")
-  def once_NONE(`type`: NONE, callback: Double): this.type = js.native
+  def once(`type`: AT_TARGET, callback: `2`): this.type = js.native
+  def once(`type`: BUBBLING_PHASE, callback: `3`): this.type = js.native
+  def once(`type`: CAPTURING_PHASE, callback: `1`): this.type = js.native
+  def once(`type`: NONE, callback: `0`): this.type = js.native
   @JSName("once")
   def once_bubbles(`type`: bubbles, callback: Boolean): this.type = js.native
   @JSName("once")
@@ -322,14 +306,10 @@ trait CustomEventEmitter[Event /* <: SimperiumEvent */] extends EventEmitter {
   @JSName("once")
   def once_type(`type`: `type`, callback: String): this.type = js.native
   
-  @JSName("prependListener")
-  def prependListener_ATTARGET(`type`: AT_TARGET, callback: Double): this.type = js.native
-  @JSName("prependListener")
-  def prependListener_BUBBLINGPHASE(`type`: BUBBLING_PHASE, callback: Double): this.type = js.native
-  @JSName("prependListener")
-  def prependListener_CAPTURINGPHASE(`type`: CAPTURING_PHASE, callback: Double): this.type = js.native
-  @JSName("prependListener")
-  def prependListener_NONE(`type`: NONE, callback: Double): this.type = js.native
+  def prependListener(`type`: AT_TARGET, callback: `2`): this.type = js.native
+  def prependListener(`type`: BUBBLING_PHASE, callback: `3`): this.type = js.native
+  def prependListener(`type`: CAPTURING_PHASE, callback: `1`): this.type = js.native
+  def prependListener(`type`: NONE, callback: `0`): this.type = js.native
   @JSName("prependListener")
   def prependListener_bubbles(`type`: bubbles, callback: Boolean): this.type = js.native
   @JSName("prependListener")
@@ -363,14 +343,10 @@ trait CustomEventEmitter[Event /* <: SimperiumEvent */] extends EventEmitter {
   @JSName("prependListener")
   def prependListener_type(`type`: `type`, callback: String): this.type = js.native
   
-  @JSName("prependOnceListener")
-  def prependOnceListener_ATTARGET(`type`: AT_TARGET, callback: Double): this.type = js.native
-  @JSName("prependOnceListener")
-  def prependOnceListener_BUBBLINGPHASE(`type`: BUBBLING_PHASE, callback: Double): this.type = js.native
-  @JSName("prependOnceListener")
-  def prependOnceListener_CAPTURINGPHASE(`type`: CAPTURING_PHASE, callback: Double): this.type = js.native
-  @JSName("prependOnceListener")
-  def prependOnceListener_NONE(`type`: NONE, callback: Double): this.type = js.native
+  def prependOnceListener(`type`: AT_TARGET, callback: `2`): this.type = js.native
+  def prependOnceListener(`type`: BUBBLING_PHASE, callback: `3`): this.type = js.native
+  def prependOnceListener(`type`: CAPTURING_PHASE, callback: `1`): this.type = js.native
+  def prependOnceListener(`type`: NONE, callback: `0`): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_bubbles(`type`: bubbles, callback: Boolean): this.type = js.native
   @JSName("prependOnceListener")
@@ -405,13 +381,13 @@ trait CustomEventEmitter[Event /* <: SimperiumEvent */] extends EventEmitter {
   def prependOnceListener_type(`type`: `type`, callback: String): this.type = js.native
   
   @JSName("rawListeners")
-  def rawListeners_ATTARGET(`type`: AT_TARGET): js.Array[Double] = js.native
+  def rawListeners_ATTARGET(`type`: AT_TARGET): js.Array[`2`] = js.native
   @JSName("rawListeners")
-  def rawListeners_BUBBLINGPHASE(`type`: BUBBLING_PHASE): js.Array[Double] = js.native
+  def rawListeners_BUBBLINGPHASE(`type`: BUBBLING_PHASE): js.Array[`3`] = js.native
   @JSName("rawListeners")
-  def rawListeners_CAPTURINGPHASE(`type`: CAPTURING_PHASE): js.Array[Double] = js.native
+  def rawListeners_CAPTURINGPHASE(`type`: CAPTURING_PHASE): js.Array[`1`] = js.native
   @JSName("rawListeners")
-  def rawListeners_NONE(`type`: NONE): js.Array[Double] = js.native
+  def rawListeners_NONE(`type`: NONE): js.Array[`0`] = js.native
   @JSName("rawListeners")
   def rawListeners_bubbles(`type`: bubbles): js.Array[Boolean] = js.native
   @JSName("rawListeners")
@@ -440,17 +416,13 @@ trait CustomEventEmitter[Event /* <: SimperiumEvent */] extends EventEmitter {
   def rawListeners_type(`type`: `type`): js.Array[String] = js.native
   
   def removeAllListeners(
-    `type`: /* keyof Event */ bubbles | cancelBubble | cancelable | composed | currentTarget | defaultPrevented | eventPhase | isTrusted | returnValue | srcElement | target | timeStamp | `type` | composedPath | initEvent | preventDefault | stopImmediatePropagation | stopPropagation | AT_TARGET | BUBBLING_PHASE | CAPTURING_PHASE | NONE
+    `type`: /* keyof Event */ bubbles | cancelBubble | cancelable | composed | currentTarget | defaultPrevented | eventPhase | isTrusted | returnValue | srcElement | target | timeStamp | `type` | composedPath | initEvent | preventDefault | stopImmediatePropagation | stopPropagation | NONE | CAPTURING_PHASE | AT_TARGET | BUBBLING_PHASE
   ): this.type = js.native
   
-  @JSName("removeListener")
-  def removeListener_ATTARGET(`type`: AT_TARGET, callback: Double): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_BUBBLINGPHASE(`type`: BUBBLING_PHASE, callback: Double): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_CAPTURINGPHASE(`type`: CAPTURING_PHASE, callback: Double): this.type = js.native
-  @JSName("removeListener")
-  def removeListener_NONE(`type`: NONE, callback: Double): this.type = js.native
+  def removeListener(`type`: AT_TARGET, callback: `2`): this.type = js.native
+  def removeListener(`type`: BUBBLING_PHASE, callback: `3`): this.type = js.native
+  def removeListener(`type`: CAPTURING_PHASE, callback: `1`): this.type = js.native
+  def removeListener(`type`: NONE, callback: `0`): this.type = js.native
   @JSName("removeListener")
   def removeListener_bubbles(`type`: bubbles, callback: Boolean): this.type = js.native
   @JSName("removeListener")

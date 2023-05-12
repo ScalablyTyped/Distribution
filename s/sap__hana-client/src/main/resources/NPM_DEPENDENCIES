@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@sap/hana-client" : "2.16.26"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@sap/hana-client" : "2.16.26"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

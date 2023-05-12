@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@matrix-org/matrix-sdk-crypto-nodejs" : "0.1.0-beta.1"
+      "@matrix-org/matrix-sdk-crypto-nodejs" : "0.1.0-beta.6"
     }
   ],
   "test-dependencies" : [
     {
-      "@matrix-org/matrix-sdk-crypto-nodejs" : "0.1.0-beta.1"
+      "@matrix-org/matrix-sdk-crypto-nodejs" : "0.1.0-beta.6"
     }
   ],
   "compile-devDependencies" : [

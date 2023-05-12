@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeleteAppRequest extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) of the application. The format for this ARN is: arn:partition:resiliencehub:region:account:app/app-id. For more information about ARNs, see  Amazon Resource Names (ARNs) in the AWS General Reference.
+    * The Amazon Resource Name (ARN) of the Resilience Hub application. The format for this ARN is: arn:partition:resiliencehub:region:account:app/app-id. For more information about ARNs, see  Amazon Resource Names (ARNs) in the AWS General Reference guide.
     */
   var appArn: Arn
   
@@ -17,7 +17,7 @@ trait DeleteAppRequest extends StObject {
   var clientToken: js.UndefOr[ClientToken] = js.undefined
   
   /**
-    * A boolean option to force the deletion of a Resilience Hub application. 
+    * A boolean option to force the deletion of an Resilience Hub application. 
     */
   var forceDelete: js.UndefOr[BooleanOptional] = js.undefined
 }

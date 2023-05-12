@@ -1,12 +1,5 @@
 package typings.fhir.r5Mod
 
-import typings.fhir.fhirStrings.available
-import typings.fhir.fhirStrings.biologicalAgent
-import typings.fhir.fhirStrings.cells
-import typings.fhir.fhirStrings.fluid
-import typings.fhir.fhirStrings.organ
-import typings.fhir.fhirStrings.tissue
-import typings.fhir.fhirStrings.unavailable_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,14 +13,10 @@ trait BiologicallyDerivedProduct
   
   var _expirationDate: js.UndefOr[Element] = js.undefined
   
-  var _productCategory: js.UndefOr[Element] = js.undefined
-  
-  var _status: js.UndefOr[Element] = js.undefined
-  
   /**
-    * Necessary to support mandatory requirements for traceability from donor/source to recipient and vice versa.  The element is defined consistently across BiologicallyDerivedProduct, NutritionProduct, and Device.
+    * Necessary to support mandatory requirements for traceability from donor/source to recipient and vice versa, while also satisfying donor anonymity requirements. The element is defined consistently across BiologicallyDerivedProduct, NutritionProduct, and Device.  The identifier references an event that links to a single biological entity such as a blood donor, or to multiple biological entities (e.g. when the product is an embryo or a pooled platelet product).  A single biologicalSourceEvent identifier may appear on multiple products of many types derived from a single donation event or source extraction.  As an example, a single donation event may provide 2 kidneys and a liver for organ transplantation, 2 corneas for eye surgery, heart valves and arterial tissue for cardiovascular surgery, multiple skin grafts, tendons, multiple shaped bone grafts and a large number of bone putty/paste products; and each of them may be assigned to the same biological source event identifier.
     */
-  var biologicalSource: js.UndefOr[Identifier] = js.undefined
+  var biologicalSourceEvent: js.UndefOr[Identifier] = js.undefined
   
   /**
     * How this product was collected.
@@ -35,17 +24,17 @@ trait BiologicallyDerivedProduct
   var collection: js.UndefOr[BiologicallyDerivedProductCollection] = js.undefined
   
   /**
-    * Description of division.
+    * A unique identifier for an aliquot of a product.  Used to distinguish individual aliquots of a product carrying the same biologicalSource and productCode identifiers.
     */
   var division: js.UndefOr[String] = js.undefined
   
   /**
-    * Date of expiration.
+    * Date, and where relevant time, of expiration.
     */
   var expirationDate: js.UndefOr[String] = js.undefined
   
   /**
-    * This records identifiers associated with this biologically derived product instance that are defined by business processes and/or used to refer to it when a direct URL reference to the resource itself is not appropriate (e.g. in CDA documents, or in written / printed documentation).
+    * This identifier should uniquely identify the product instance in the business domain.  Ideally it should be a globally unique identifier under the control of an ISO/IEC 15459 Issuing Agency.
     */
   var identifier: js.UndefOr[js.Array[Identifier]] = js.undefined
   
@@ -55,27 +44,32 @@ trait BiologicallyDerivedProduct
   var parent: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
-    * A jurisdiction may indicate whether to only include an identifier or a full reference for the facility.
+    * Processing facilities responsible for the labeling and distribution of this biologically derived product.
     */
   var processingFacility: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
     * Broad category of this product.
     */
-  var productCategory: js.UndefOr[organ | tissue | fluid | cells | biologicalAgent] = js.undefined
+  var productCategory: js.UndefOr[Coding] = js.undefined
   
   /**
-    * A code that identifies the kind of this biologically derived product (SNOMED Ctcode).
+    * A codified value that systematically supports characterization and classification of medical products of human origin inclusive of processing conditions such as additives, volumes and handling conditions.
     */
   var productCode: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
-    * A property that is specific to this BiologicallyDerviedProduct instance.
+    * Whether the product is currently available.
+    */
+  var productStatus: js.UndefOr[Coding] = js.undefined
+  
+  /**
+    * Property can be used to provide information on a wide range of additional information specific to a particular biologicallyDerivedProduct.
     */
   var property: js.UndefOr[js.Array[BiologicallyDerivedProductProperty]] = js.undefined
   
   /**
-    * Procedure request to obtain this biologically derived product.
+    * Request to obtain and/or infuse this biologically derived product.
     */
   var request: js.UndefOr[js.Array[Reference]] = js.undefined
   
@@ -84,12 +78,7 @@ trait BiologicallyDerivedProduct
   val resourceType_BiologicallyDerivedProduct: typings.fhir.fhirStrings.BiologicallyDerivedProduct
   
   /**
-    * Whether the product is currently available.
-    */
-  var status: js.UndefOr[available | unavailable_] = js.undefined
-  
-  /**
-    * Product storage temp requirements.
+    * May be extracted from information held in the Product Description Code.
     */
   var storageTempRequirements: js.UndefOr[Range] = js.undefined
 }
@@ -103,9 +92,9 @@ object BiologicallyDerivedProduct {
   @scala.inline
   implicit open class MutableBuilder[Self <: BiologicallyDerivedProduct] (val x: Self) extends AnyVal {
     
-    inline def setBiologicalSource(value: Identifier): Self = StObject.set(x, "biologicalSource", value.asInstanceOf[js.Any])
+    inline def setBiologicalSourceEvent(value: Identifier): Self = StObject.set(x, "biologicalSourceEvent", value.asInstanceOf[js.Any])
     
-    inline def setBiologicalSourceUndefined: Self = StObject.set(x, "biologicalSource", js.undefined)
+    inline def setBiologicalSourceEventUndefined: Self = StObject.set(x, "biologicalSourceEvent", js.undefined)
     
     inline def setCollection(value: BiologicallyDerivedProductCollection): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
     
@@ -137,13 +126,17 @@ object BiologicallyDerivedProduct {
     
     inline def setProcessingFacilityVarargs(value: Reference*): Self = StObject.set(x, "processingFacility", js.Array(value*))
     
-    inline def setProductCategory(value: organ | tissue | fluid | cells | biologicalAgent): Self = StObject.set(x, "productCategory", value.asInstanceOf[js.Any])
+    inline def setProductCategory(value: Coding): Self = StObject.set(x, "productCategory", value.asInstanceOf[js.Any])
     
     inline def setProductCategoryUndefined: Self = StObject.set(x, "productCategory", js.undefined)
     
     inline def setProductCode(value: CodeableConcept): Self = StObject.set(x, "productCode", value.asInstanceOf[js.Any])
     
     inline def setProductCodeUndefined: Self = StObject.set(x, "productCode", js.undefined)
+    
+    inline def setProductStatus(value: Coding): Self = StObject.set(x, "productStatus", value.asInstanceOf[js.Any])
+    
+    inline def setProductStatusUndefined: Self = StObject.set(x, "productStatus", js.undefined)
     
     inline def setProperty(value: js.Array[BiologicallyDerivedProductProperty]): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
     
@@ -159,10 +152,6 @@ object BiologicallyDerivedProduct {
     
     inline def setResourceType(value: typings.fhir.fhirStrings.BiologicallyDerivedProduct): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
-    inline def setStatus(value: available | unavailable_): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
-    
-    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
-    
     inline def setStorageTempRequirements(value: Range): Self = StObject.set(x, "storageTempRequirements", value.asInstanceOf[js.Any])
     
     inline def setStorageTempRequirementsUndefined: Self = StObject.set(x, "storageTempRequirements", js.undefined)
@@ -174,13 +163,5 @@ object BiologicallyDerivedProduct {
     inline def set_expirationDate(value: Element): Self = StObject.set(x, "_expirationDate", value.asInstanceOf[js.Any])
     
     inline def set_expirationDateUndefined: Self = StObject.set(x, "_expirationDate", js.undefined)
-    
-    inline def set_productCategory(value: Element): Self = StObject.set(x, "_productCategory", value.asInstanceOf[js.Any])
-    
-    inline def set_productCategoryUndefined: Self = StObject.set(x, "_productCategory", js.undefined)
-    
-    inline def set_status(value: Element): Self = StObject.set(x, "_status", value.asInstanceOf[js.Any])
-    
-    inline def set_statusUndefined: Self = StObject.set(x, "_status", js.undefined)
   }
 }

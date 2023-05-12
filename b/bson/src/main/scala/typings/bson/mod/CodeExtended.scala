@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CodeExtended extends StObject {
   
   @JSName("$code")
-  var $code: String | js.Function
+  var $code: String
   
   @JSName("$scope")
   var $scope: js.UndefOr[Document] = js.undefined
 }
 object CodeExtended {
   
-  inline def apply($code: String | js.Function): CodeExtended = {
+  inline def apply($code: String): CodeExtended = {
     val __obj = js.Dynamic.literal($code = $code.asInstanceOf[js.Any])
     __obj.asInstanceOf[CodeExtended]
   }
@@ -22,7 +22,7 @@ object CodeExtended {
   @scala.inline
   implicit open class MutableBuilder[Self <: CodeExtended] (val x: Self) extends AnyVal {
     
-    inline def set$code(value: String | js.Function): Self = StObject.set(x, "$code", value.asInstanceOf[js.Any])
+    inline def set$code(value: String): Self = StObject.set(x, "$code", value.asInstanceOf[js.Any])
     
     inline def set$scope(value: Document): Self = StObject.set(x, "$scope", value.asInstanceOf[js.Any])
     

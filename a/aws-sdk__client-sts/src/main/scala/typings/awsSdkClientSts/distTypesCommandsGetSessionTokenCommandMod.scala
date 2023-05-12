@@ -27,8 +27,14 @@ object distTypesCommandsGetSessionTokenCommandMod {
           Any, 
           Any
         ] {
+    /**
+      * @public
+      */
     def this(input: GetSessionTokenCommandInput) = this()
     
+    /**
+      * @internal
+      */
     /* private */ var deserialize: Any = js.native
     
     /**
@@ -44,6 +50,9 @@ object distTypesCommandsGetSessionTokenCommandMod {
       options: HttpHandlerOptions
     ): Handler[GetSessionTokenCommandInput, GetSessionTokenCommandOutput] = js.native
     
+    /**
+      * @internal
+      */
     /* private */ var serialize: Any = js.native
   }
   /* static members */

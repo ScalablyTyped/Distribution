@@ -1,6 +1,6 @@
 package typings.octokitOpenapiTypes.anon
 
-import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.file
+import typings.octokitOpenapiTypes.octokitOpenapiTypesStrings.file_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -37,7 +37,7 @@ trait Submodulegiturl extends StObject {
   var target: js.UndefOr[String] = js.undefined
   
   /** @enum {string} */
-  var `type`: file
+  var `type`: file_
   
   /** Format: uri */
   var url: String
@@ -94,7 +94,7 @@ object Submodulegiturl {
     
     inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     
-    inline def setType(value: file): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: file_): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     

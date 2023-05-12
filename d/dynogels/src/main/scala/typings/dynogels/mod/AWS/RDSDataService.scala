@@ -1,6 +1,6 @@
 package typings.dynogels.mod.AWS
 
-import typings.awsSdk.clientsRdsdataserviceMod.ClientConfiguration
+import typings.awsSdk2Types.clientsRdsdataserviceMod.ClientConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,6 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a service object. This object has one method for each API operation.
   */
 open class RDSDataService ()
-  extends typings.awsSdk.mod.RDSDataService {
+  extends typings.awsSdk2Types.mod.RDSDataService {
   def this(options: ClientConfiguration) = this()
 }

@@ -18,5 +18,6 @@ object search {
   @js.native
   val ^ : js.Any = js.native
   
+  inline def query(options: QueryInfo): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("query")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   inline def query(options: QueryInfo, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("query")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

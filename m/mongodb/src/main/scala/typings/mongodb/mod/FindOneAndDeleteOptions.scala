@@ -9,7 +9,7 @@ trait FindOneAndDeleteOptions
   extends StObject
      with CommandOperationOptions {
   
-  /** An optional hint for query optimization. See the {@link https://docs.mongodb.com/manual/reference/command/update/#update-command-hint|update command} reference for more information.*/
+  /** An optional hint for query optimization. See the {@link https://www.mongodb.com/docs/manual/reference/command/update/#update-command-hint|update command} reference for more information.*/
   var hint: js.UndefOr[Document] = js.undefined
   
   /** Map of parameter names and values that can be accessed using $$var (requires MongoDB 5.0). */

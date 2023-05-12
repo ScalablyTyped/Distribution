@@ -1,6 +1,7 @@
 package typings.babylonjs
 
 import typings.babylonjs.anon.Layers
+import typings.babylonjs.materialsTexturesInternalTextureMod.InternalTexture
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -23,6 +24,9 @@ object materialsTexturesTextureCreationOptionsMod {
     
     /** Specifies if the created texture is a cube texture */
     var isCube: js.UndefOr[Boolean] = js.undefined
+    
+    /** Label of the texture (used for debugging only) */
+    var label: js.UndefOr[String] = js.undefined
     
     /** Specifies the sample count of the depth/stencil texture texture */
     var samples: js.UndefOr[Double] = js.undefined
@@ -57,6 +61,10 @@ object materialsTexturesTextureCreationOptionsMod {
       
       inline def setIsCubeUndefined: Self = StObject.set(x, "isCube", js.undefined)
       
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      
+      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+      
       inline def setSamples(value: Double): Self = StObject.set(x, "samples", value.asInstanceOf[js.Any])
       
       inline def setSamplesUndefined: Self = StObject.set(x, "samples", js.undefined)
@@ -80,6 +88,9 @@ object materialsTexturesTextureCreationOptionsMod {
       * Specifies if mipmaps must be generated
       */
     var generateMipMaps: js.UndefOr[Boolean] = js.undefined
+    
+    /** Label of the texture (used for debugging only) */
+    var label: js.UndefOr[String] = js.undefined
     
     /** Defines sample count (1 by default) */
     var samples: js.UndefOr[Double] = js.undefined
@@ -119,6 +130,10 @@ object materialsTexturesTextureCreationOptionsMod {
       
       inline def setGenerateMipMapsUndefined: Self = StObject.set(x, "generateMipMaps", js.undefined)
       
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      
+      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+      
       inline def setSamples(value: Double): Self = StObject.set(x, "samples", value.asInstanceOf[js.Any])
       
       inline def setSamplesUndefined: Self = StObject.set(x, "samples", js.undefined)
@@ -141,6 +156,9 @@ object materialsTexturesTextureCreationOptionsMod {
     extends StObject
        with InternalTextureCreationOptions {
     
+    /** Specifies the internal texture to use directly instead of creating one (ignores `noColorAttachment` flag when set) **/
+    var colorAttachment: js.UndefOr[InternalTexture] = js.undefined
+    
     /** Specifies whether or not a depth should be allocated in the texture (true by default) */
     var generateDepthBuffer: js.UndefOr[Boolean] = js.undefined
     
@@ -148,7 +166,7 @@ object materialsTexturesTextureCreationOptionsMod {
     var generateStencilBuffer: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies that no color target should be bound to the render target (useful if you only want to write to the depth buffer, for eg) */
-    var noColorTarget: js.UndefOr[Boolean] = js.undefined
+    var noColorAttachment: js.UndefOr[Boolean] = js.undefined
   }
   object RenderTargetCreationOptions {
     
@@ -160,6 +178,10 @@ object materialsTexturesTextureCreationOptionsMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: RenderTargetCreationOptions] (val x: Self) extends AnyVal {
       
+      inline def setColorAttachment(value: InternalTexture): Self = StObject.set(x, "colorAttachment", value.asInstanceOf[js.Any])
+      
+      inline def setColorAttachmentUndefined: Self = StObject.set(x, "colorAttachment", js.undefined)
+      
       inline def setGenerateDepthBuffer(value: Boolean): Self = StObject.set(x, "generateDepthBuffer", value.asInstanceOf[js.Any])
       
       inline def setGenerateDepthBufferUndefined: Self = StObject.set(x, "generateDepthBuffer", js.undefined)
@@ -168,9 +190,9 @@ object materialsTexturesTextureCreationOptionsMod {
       
       inline def setGenerateStencilBufferUndefined: Self = StObject.set(x, "generateStencilBuffer", js.undefined)
       
-      inline def setNoColorTarget(value: Boolean): Self = StObject.set(x, "noColorTarget", value.asInstanceOf[js.Any])
+      inline def setNoColorAttachment(value: Boolean): Self = StObject.set(x, "noColorAttachment", value.asInstanceOf[js.Any])
       
-      inline def setNoColorTargetUndefined: Self = StObject.set(x, "noColorTarget", js.undefined)
+      inline def setNoColorAttachmentUndefined: Self = StObject.set(x, "noColorAttachment", js.undefined)
     }
   }
   

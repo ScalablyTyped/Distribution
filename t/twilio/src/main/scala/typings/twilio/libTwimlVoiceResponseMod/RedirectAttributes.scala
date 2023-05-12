@@ -6,6 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RedirectAttributes extends StObject {
   
+  /** method - Redirect URL method */
   var method: js.UndefOr[String] = js.undefined
 }
 object RedirectAttributes {

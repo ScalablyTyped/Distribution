@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateWebACLRequest extends StObject {
   
   /**
+    * Specifies custom configurations for the associations between the web ACL and protected resources.  Use this to customize the maximum size of the request body that your protected CloudFront distributions forward to WAF for inspection. The default is 16 KB (16,384 kilobytes).   You are charged additional fees when your protected resources forward body sizes that are larger than the default. For more information, see WAF Pricing. 
+    */
+  var AssociationConfig: js.UndefOr[typings.awsSdk.clientsWafv2Mod.AssociationConfig] = js.undefined
+  
+  /**
     * Specifies how WAF should handle CAPTCHA evaluations for rules that don't have their own CaptchaConfig settings. If you don't specify this, WAF uses its default settings for CaptchaConfig. 
     */
   var CaptchaConfig: js.UndefOr[typings.awsSdk.clientsWafv2Mod.CaptchaConfig] = js.undefined
@@ -52,12 +57,12 @@ trait UpdateWebACLRequest extends StObject {
   var Rules: js.UndefOr[typings.awsSdk.clientsWafv2Mod.Rules] = js.undefined
   
   /**
-    * Specifies whether this is for an Amazon CloudFront distribution or for a regional application. A regional application can be an Application Load Balancer (ALB), an Amazon API Gateway REST API, an AppSync GraphQL API, or an Amazon Cognito user pool.  To work with CloudFront, you must also specify the Region US East (N. Virginia) as follows:    CLI - Specify the Region when you use the CloudFront scope: --scope=CLOUDFRONT --region=us-east-1.    API and SDKs - For all calls, use the Region endpoint us-east-1.   
+    * Specifies whether this is for an Amazon CloudFront distribution or for a regional application. A regional application can be an Application Load Balancer (ALB), an Amazon API Gateway REST API, an AppSync GraphQL API, an Amazon Cognito user pool, an App Runner service, or an Amazon Web Services Verified Access instance.  To work with CloudFront, you must also specify the Region US East (N. Virginia) as follows:    CLI - Specify the Region when you use the CloudFront scope: --scope=CLOUDFRONT --region=us-east-1.    API and SDKs - For all calls, use the Region endpoint us-east-1.   
     */
   var Scope: typings.awsSdk.clientsWafv2Mod.Scope
   
   /**
-    * Specifies the domains that WAF should accept in a web request token. This enables the use of tokens across multiple protected websites. When WAF provides a token, it uses the domain of the Amazon Web Services resource that the web ACL is protecting. If you don't specify a list of token domains, WAF accepts tokens only for the domain of the protected resource. With a token domain list, WAF accepts the resource's host domain plus all domains in the token domain list, including their prefixed subdomains. Example JSON: "TokenDomains": { "mywebsite.com", "myotherwebsite.com" } 
+    * Specifies the domains that WAF should accept in a web request token. This enables the use of tokens across multiple protected websites. When WAF provides a token, it uses the domain of the Amazon Web Services resource that the web ACL is protecting. If you don't specify a list of token domains, WAF accepts tokens only for the domain of the protected resource. With a token domain list, WAF accepts the resource's host domain plus all domains in the token domain list, including their prefixed subdomains. Example JSON: "TokenDomains": { "mywebsite.com", "myotherwebsite.com" }  Public suffixes aren't allowed. For example, you can't use usa.gov or co.uk as token domains.
     */
   var TokenDomains: js.UndefOr[typings.awsSdk.clientsWafv2Mod.TokenDomains] = js.undefined
   
@@ -82,6 +87,10 @@ object UpdateWebACLRequest {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: UpdateWebACLRequest] (val x: Self) extends AnyVal {
+    
+    inline def setAssociationConfig(value: AssociationConfig): Self = StObject.set(x, "AssociationConfig", value.asInstanceOf[js.Any])
+    
+    inline def setAssociationConfigUndefined: Self = StObject.set(x, "AssociationConfig", js.undefined)
     
     inline def setCaptchaConfig(value: CaptchaConfig): Self = StObject.set(x, "CaptchaConfig", value.asInstanceOf[js.Any])
     

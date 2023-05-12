@@ -1,7 +1,7 @@
 
 # Scala.js typings for rgb-hex
 
-Typings are for version 4.0.0
+Typings are for version 4.0.1
 
 ## Library description:
 Convert RGB(A) color to HEX

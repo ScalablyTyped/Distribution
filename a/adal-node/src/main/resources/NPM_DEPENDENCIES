@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "adal-node" : "0.2.3"
+      "adal-node" : "0.2.4"
     }
   ],
   "test-dependencies" : [
     {
-      "adal-node" : "0.2.3"
+      "adal-node" : "0.2.4"
     }
   ],
   "compile-devDependencies" : [

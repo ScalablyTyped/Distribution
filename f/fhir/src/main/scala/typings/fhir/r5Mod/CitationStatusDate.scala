@@ -11,12 +11,12 @@ trait CitationStatusDate
   var _actual: js.UndefOr[Element] = js.undefined
   
   /**
-    * Classification of the status.
+    * The state or status of the citation record (that will be paired with the period).
     */
   var activity: CodeableConcept
   
   /**
-    * Either occurred or expected.
+    * Whether the status date is actual (has occurred) or expected (estimated or anticipated).
     */
   var actual: js.UndefOr[Boolean] = js.undefined
   

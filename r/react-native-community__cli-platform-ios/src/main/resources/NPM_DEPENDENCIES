@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@react-native-community/cli-platform-ios" : "9.3.0"
+      "@react-native-community/cli-platform-ios" : "11.2.3"
     }
   ],
   "test-dependencies" : [
     {
-      "@react-native-community/cli-platform-ios" : "9.3.0"
+      "@react-native-community/cli-platform-ios" : "11.2.3"
     }
   ],
   "compile-devDependencies" : [

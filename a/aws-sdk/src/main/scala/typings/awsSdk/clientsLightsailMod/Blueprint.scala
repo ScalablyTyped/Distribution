@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Blueprint extends StObject {
   
   /**
+    * Virtual computer blueprints that are supported by Lightsail for Research.  This parameter only applies to Lightsail for Research resources. 
+    */
+  var appCategory: js.UndefOr[AppCategory] = js.undefined
+  
+  /**
     * The ID for the virtual private server image (e.g., app_wordpress_4_4 or app_lamp_7_0).
     */
   var blueprintId: js.UndefOr[NonEmptyString] = js.undefined
@@ -75,6 +80,10 @@ object Blueprint {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: Blueprint] (val x: Self) extends AnyVal {
+    
+    inline def setAppCategory(value: AppCategory): Self = StObject.set(x, "appCategory", value.asInstanceOf[js.Any])
+    
+    inline def setAppCategoryUndefined: Self = StObject.set(x, "appCategory", js.undefined)
     
     inline def setBlueprintId(value: NonEmptyString): Self = StObject.set(x, "blueprintId", value.asInstanceOf[js.Any])
     

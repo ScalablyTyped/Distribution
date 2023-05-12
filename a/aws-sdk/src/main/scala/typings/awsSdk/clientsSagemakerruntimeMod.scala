@@ -65,6 +65,8 @@ object clientsSagemakerruntimeMod {
   
   type InputLocationHeader = String
   
+  type InvocationTimeoutSecondsHeader = Double
+  
   trait InvokeEndpointAsyncInput extends StObject {
     
     /**
@@ -98,7 +100,12 @@ object clientsSagemakerruntimeMod {
     var InputLocation: InputLocationHeader
     
     /**
-      * Maximum age in seconds a request can be in the queue before it is marked as expired.
+      * Maximum amount of time in seconds a request can be processed before it is marked as expired. The default is 15 minutes, or 900 seconds.
+      */
+    var InvocationTimeoutSeconds: js.UndefOr[InvocationTimeoutSecondsHeader] = js.undefined
+    
+    /**
+      * Maximum age in seconds a request can be in the queue before it is marked as expired. The default is 6 hours, or 21,600 seconds.
       */
     var RequestTTLSeconds: js.UndefOr[RequestTTLSecondsHeader] = js.undefined
   }
@@ -132,6 +139,10 @@ object clientsSagemakerruntimeMod {
       
       inline def setInputLocation(value: InputLocationHeader): Self = StObject.set(x, "InputLocation", value.asInstanceOf[js.Any])
       
+      inline def setInvocationTimeoutSeconds(value: InvocationTimeoutSecondsHeader): Self = StObject.set(x, "InvocationTimeoutSeconds", value.asInstanceOf[js.Any])
+      
+      inline def setInvocationTimeoutSecondsUndefined: Self = StObject.set(x, "InvocationTimeoutSeconds", js.undefined)
+      
       inline def setRequestTTLSeconds(value: RequestTTLSecondsHeader): Self = StObject.set(x, "RequestTTLSeconds", value.asInstanceOf[js.Any])
       
       inline def setRequestTTLSecondsUndefined: Self = StObject.set(x, "RequestTTLSeconds", js.undefined)
@@ -139,6 +150,11 @@ object clientsSagemakerruntimeMod {
   }
   
   trait InvokeEndpointAsyncOutput extends StObject {
+    
+    /**
+      * The Amazon S3 URI where the inference failure response payload is stored.
+      */
+    var FailureLocation: js.UndefOr[Header] = js.undefined
     
     /**
       * Identifier for an inference request. This will be the same as the InferenceId specified in the input. Amazon SageMaker will generate an identifier for you if you do not specify one.
@@ -159,6 +175,10 @@ object clientsSagemakerruntimeMod {
     
     @scala.inline
     implicit open class MutableBuilder[Self <: InvokeEndpointAsyncOutput] (val x: Self) extends AnyVal {
+      
+      inline def setFailureLocation(value: Header): Self = StObject.set(x, "FailureLocation", value.asInstanceOf[js.Any])
+      
+      inline def setFailureLocationUndefined: Self = StObject.set(x, "FailureLocation", js.undefined)
       
       inline def setInferenceId(value: Header): Self = StObject.set(x, "InferenceId", value.asInstanceOf[js.Any])
       
@@ -341,12 +361,12 @@ object clientsSagemakerruntimeMod {
     ): Request[InvokeEndpointOutput, AWSError] = js.native
     
     /**
-      * After you deploy a model into production using Amazon SageMaker hosting services, your client applications use this API to get inferences from the model hosted at the specified endpoint in an asynchronous manner. Inference requests sent to this API are enqueued for asynchronous processing. The processing of the inference request may or may not complete before the you receive a response from this API. The response from this API will not contain the result of the inference request but contain information about where you can locate it. Amazon SageMaker strips all POST headers except those supported by the API. Amazon SageMaker might add additional headers. You should not rely on the behavior of headers outside those enumerated in the request syntax. Calls to InvokeEndpointAsync are authenticated by using Amazon Web Services Signature Version 4. For information, see Authenticating Requests (Amazon Web Services Signature Version 4) in the Amazon S3 API Reference.
+      * After you deploy a model into production using Amazon SageMaker hosting services, your client applications use this API to get inferences from the model hosted at the specified endpoint in an asynchronous manner. Inference requests sent to this API are enqueued for asynchronous processing. The processing of the inference request may or may not complete before you receive a response from this API. The response from this API will not contain the result of the inference request but contain information about where you can locate it. Amazon SageMaker strips all POST headers except those supported by the API. Amazon SageMaker might add additional headers. You should not rely on the behavior of headers outside those enumerated in the request syntax. Calls to InvokeEndpointAsync are authenticated by using Amazon Web Services Signature Version 4. For information, see Authenticating Requests (Amazon Web Services Signature Version 4) in the Amazon S3 API Reference.
       */
     def invokeEndpointAsync(): Request[InvokeEndpointAsyncOutput, AWSError] = js.native
     def invokeEndpointAsync(callback: js.Function2[/* err */ AWSError, /* data */ InvokeEndpointAsyncOutput, Unit]): Request[InvokeEndpointAsyncOutput, AWSError] = js.native
     /**
-      * After you deploy a model into production using Amazon SageMaker hosting services, your client applications use this API to get inferences from the model hosted at the specified endpoint in an asynchronous manner. Inference requests sent to this API are enqueued for asynchronous processing. The processing of the inference request may or may not complete before the you receive a response from this API. The response from this API will not contain the result of the inference request but contain information about where you can locate it. Amazon SageMaker strips all POST headers except those supported by the API. Amazon SageMaker might add additional headers. You should not rely on the behavior of headers outside those enumerated in the request syntax. Calls to InvokeEndpointAsync are authenticated by using Amazon Web Services Signature Version 4. For information, see Authenticating Requests (Amazon Web Services Signature Version 4) in the Amazon S3 API Reference.
+      * After you deploy a model into production using Amazon SageMaker hosting services, your client applications use this API to get inferences from the model hosted at the specified endpoint in an asynchronous manner. Inference requests sent to this API are enqueued for asynchronous processing. The processing of the inference request may or may not complete before you receive a response from this API. The response from this API will not contain the result of the inference request but contain information about where you can locate it. Amazon SageMaker strips all POST headers except those supported by the API. Amazon SageMaker might add additional headers. You should not rely on the behavior of headers outside those enumerated in the request syntax. Calls to InvokeEndpointAsync are authenticated by using Amazon Web Services Signature Version 4. For information, see Authenticating Requests (Amazon Web Services Signature Version 4) in the Amazon S3 API Reference.
       */
     def invokeEndpointAsync(params: InvokeEndpointAsyncInput): Request[InvokeEndpointAsyncOutput, AWSError] = js.native
     def invokeEndpointAsync(

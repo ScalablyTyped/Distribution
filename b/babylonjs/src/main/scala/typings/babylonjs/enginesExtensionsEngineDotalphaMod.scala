@@ -20,7 +20,7 @@ object enginesExtensionsEngineDotalphaMod {
       
       /**
         * Gets the current alpha mode
-        * @see https://doc.babylonjs.com/resources/transparency_and_how_meshes_are_rendered
+        * @see https://doc.babylonjs.com/features/featuresDeepDive/materials/advanced/transparent_rendering
         * @returns the current alpha mode
         */
       def getAlphaMode(): Double = js.native
@@ -44,7 +44,7 @@ object enginesExtensionsEngineDotalphaMod {
         * Sets the current alpha mode
         * @param mode defines the mode to use (one of the Engine.ALPHA_XXX)
         * @param noDepthWriteChange defines if depth writing state should remains unchanged (false by default)
-        * @see https://doc.babylonjs.com/resources/transparency_and_how_meshes_are_rendered
+        * @see https://doc.babylonjs.com/features/featuresDeepDive/materials/advanced/transparent_rendering
         */
       def setAlphaMode(mode: Double): Unit = js.native
       def setAlphaMode(mode: Double, noDepthWriteChange: Boolean): Unit = js.native

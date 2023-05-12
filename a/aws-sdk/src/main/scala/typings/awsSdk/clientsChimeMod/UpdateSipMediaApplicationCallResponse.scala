@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait UpdateSipMediaApplicationCallResponse extends StObject {
   
+  /**
+    * A Call instance for a SIP media application.
+    */
   var SipMediaApplicationCall: js.UndefOr[typings.awsSdk.clientsChimeMod.SipMediaApplicationCall] = js.undefined
 }
 object UpdateSipMediaApplicationCallResponse {

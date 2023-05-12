@@ -138,4 +138,10 @@ trait LoaderRunnerLoaderContext[OptionsType] extends StObject {
   	 * Example: "?query"
   	 */
   var resourceQuery: String = js.native
+  
+  /**
+  	 * Target of compilation.
+  	 * Example: "web"
+  	 */
+  var target: String = js.native
 }

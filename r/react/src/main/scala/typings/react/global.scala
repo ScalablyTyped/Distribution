@@ -59,7 +59,6 @@ import typings.react.mod.SuspenseProps
 import typings.react.mod.TransitionFunction
 import typings.react.mod.TransitionStartFunction
 import typings.react.nextMod.reactAugmentingMod.ServerContext
-import typings.react.nextMod.reactAugmentingMod.ServerContextJSONArray
 import typings.react.nextMod.reactAugmentingMod.ServerContextJSONValue
 import typings.react.nextMod.reactAugmentingMod.Usable
 import typings.react.reactStrings.input
@@ -110,7 +109,7 @@ object global {
       def this(props: P) = this()
       /**
         * @deprecated
-        * @see https://reactjs.org/docs/legacy-context.html
+        * @see https://legacy.reactjs.org/docs/legacy-context.html
         */
       def this(props: P, context: Any) = this()
     }
@@ -139,7 +138,7 @@ object global {
         * }
         * ```
         *
-        * @see https://reactjs.org/docs/context.html#classcontexttype
+        * @see https://react.dev/reference/react/Component#static-contexttype
         */
       /* static member */
       @JSGlobal("React.Component.contextType")
@@ -163,7 +162,7 @@ object global {
       def this(props: P) = this()
       /**
         * @deprecated
-        * @see https://reactjs.org/docs/legacy-context.html
+        * @see https://legacy.reactjs.org/docs/legacy-context.html
         */
       def this(props: P, context: Any) = this()
     }
@@ -236,17 +235,17 @@ object global {
     inline def createElement[P /* <: js.Object */](`type`: FunctionComponent[P], props: Null, children: ReactNode*): FunctionComponentElement[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[FunctionComponentElement[P]]
     inline def createElement[P /* <: js.Object */](`type`: FunctionComponent[P], props: Unit, children: ReactNode*): FunctionComponentElement[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[FunctionComponentElement[P]]
     inline def createElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
-      `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116, starting with typings.react.reactStrings.a_, typings.react.reactStrings.abbr, typings.react.reactStrings.address */ Any,
+      `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 117, starting with typings.react.reactStrings.a_, typings.react.reactStrings.abbr, typings.react.reactStrings.address */ Any,
       props: ClassAttributes[T] & P,
       children: ReactNode*
     ): DetailedReactHTMLElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[DetailedReactHTMLElement[P, T]]
     inline def createElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
-      `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116, starting with typings.react.reactStrings.a_, typings.react.reactStrings.abbr, typings.react.reactStrings.address */ Any,
+      `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 117, starting with typings.react.reactStrings.a_, typings.react.reactStrings.abbr, typings.react.reactStrings.address */ Any,
       props: Null,
       children: ReactNode*
     ): DetailedReactHTMLElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[DetailedReactHTMLElement[P, T]]
     inline def createElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
-      `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116, starting with typings.react.reactStrings.a_, typings.react.reactStrings.abbr, typings.react.reactStrings.address */ Any,
+      `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 117, starting with typings.react.reactStrings.a_, typings.react.reactStrings.abbr, typings.react.reactStrings.address */ Any,
       props: Unit,
       children: ReactNode*
     ): DetailedReactHTMLElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")((scala.List(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).`++`(children.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[DetailedReactHTMLElement[P, T]]
@@ -305,19 +304,19 @@ object global {
     // ----------------------------------------------------------------------
     // DOM Elements
     inline def createFactory_T_HTMLFactory[T /* <: HTMLElement */](
-      `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116, starting with typings.react.reactStrings.a_, typings.react.reactStrings.abbr, typings.react.reactStrings.address */ Any
+      `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 117, starting with typings.react.reactStrings.a_, typings.react.reactStrings.abbr, typings.react.reactStrings.address */ Any
     ): HTMLFactory[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFactory")(`type`.asInstanceOf[js.Any]).asInstanceOf[HTMLFactory[T]]
     
     inline def createRef[T](): RefObject[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createRef")().asInstanceOf[RefObject[T]]
     
     inline def createServerContext(globalName: String, defaultValue: String): ServerContext[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("createServerContext")(globalName.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[ServerContext[String]]
-    inline def createServerContext(globalName: String, defaultValue: js.Array[ServerContextJSONArray]): ServerContext[js.Array[ServerContextJSONArray]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createServerContext")(globalName.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[ServerContext[js.Array[ServerContextJSONArray]]]
+    inline def createServerContext(globalName: String, defaultValue: js.Array[ServerContextJSONValue]): ServerContext[js.Array[ServerContextJSONValue]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createServerContext")(globalName.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[ServerContext[js.Array[ServerContextJSONValue]]]
     inline def createServerContext(globalName: String, defaultValue: Boolean): ServerContext[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("createServerContext")(globalName.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[ServerContext[Boolean]]
     inline def createServerContext(globalName: String, defaultValue: Double): ServerContext[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("createServerContext")(globalName.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[ServerContext[Double]]
     inline def createServerContext(globalName: String, defaultValue: Null): ServerContext[Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("createServerContext")(globalName.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[ServerContext[Null]]
     inline def createServerContext[T /* <: StringDictionary[ServerContextJSONValue] */](globalName: String, defaultValue: T): ServerContext[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createServerContext")(globalName.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[ServerContext[T]]
     
-    inline def experimentalUseEvent[T /* <: js.Function */](event: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("experimental_useEvent")(event.asInstanceOf[js.Any]).asInstanceOf[T]
+    inline def experimentalUseEffectEvent[T /* <: js.Function */](event: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("experimental_useEffectEvent")(event.asInstanceOf[js.Any]).asInstanceOf[T]
     
     inline def forwardRef[T, P](render: ForwardRefRenderFunction[T, P]): ForwardRefExoticComponent[PropsWithoutRef[P] & RefAttributes[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("forwardRef")(render.asInstanceOf[js.Any]).asInstanceOf[ForwardRefExoticComponent[PropsWithoutRef[P] & RefAttributes[T]]]
     
@@ -350,7 +349,7 @@ object global {
       * has changed.
       *
       * @version 16.8.0
-      * @see https://reactjs.org/docs/hooks-reference.html#usecallback
+      * @see https://react.dev/reference/react/useCallback
       */
     // A specific function type would not trigger implicit any.
     // See https://github.com/DefinitelyTyped/DefinitelyTyped/issues/52873#issuecomment-845806435 for a comparison between `Function` and more specific types.
@@ -363,7 +362,7 @@ object global {
       * context value, as given by the nearest context provider for the given context.
       *
       * @version 16.8.0
-      * @see https://reactjs.org/docs/hooks-reference.html#usecontext
+      * @see https://react.dev/reference/react/useContext
       */
     inline def useContext[T](context: Context[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("useContext")(context.asInstanceOf[js.Any]).asInstanceOf[T]
     
@@ -374,7 +373,7 @@ object global {
       * It’s most valuable for custom hooks that are part of shared libraries.
       *
       * @version 16.8.0
-      * @see https://reactjs.org/docs/hooks-reference.html#usedebugvalue
+      * @see https://react.dev/reference/react/useDebugValue
       */
     // the name of the custom hook is itself derived from the function name at runtime:
     // it's just the function name without the "use" prefix.
@@ -390,7 +389,7 @@ object global {
       * @param deps If present, effect will only activate if the values in the list change.
       *
       * @version 16.8.0
-      * @see https://reactjs.org/docs/hooks-reference.html#useeffect
+      * @see https://react.dev/reference/react/useEffect
       */
     inline def useEffect(effect: EffectCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useEffect")(effect.asInstanceOf[js.Any]).asInstanceOf[Unit]
     inline def useEffect(effect: EffectCallback, deps: DependencyList): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEffect")(effect.asInstanceOf[js.Any], deps.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -407,7 +406,7 @@ object global {
       * `useImperativeHandle` should be used with `React.forwardRef`.
       *
       * @version 16.8.0
-      * @see https://reactjs.org/docs/hooks-reference.html#useimperativehandle
+      * @see https://react.dev/reference/react/useImperativeHandle
       */
     inline def useImperativeHandle[T, R /* <: T */](ref: Ref[T], init: js.Function0[R]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useImperativeHandle")(ref.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[Unit]
     inline def useImperativeHandle[T, R /* <: T */](ref: Ref[T], init: js.Function0[R], deps: DependencyList): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useImperativeHandle")(ref.asInstanceOf[js.Any], init.asInstanceOf[js.Any], deps.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -426,7 +425,7 @@ object global {
       * `componentDidMount` and `componentDidUpdate`.
       *
       * @version 16.8.0
-      * @see https://reactjs.org/docs/hooks-reference.html#uselayouteffect
+      * @see https://react.dev/reference/react/useLayoutEffect
       */
     inline def useLayoutEffect(effect: EffectCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useLayoutEffect")(effect.asInstanceOf[js.Any]).asInstanceOf[Unit]
     inline def useLayoutEffect(effect: EffectCallback, deps: DependencyList): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useLayoutEffect")(effect.asInstanceOf[js.Any], deps.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -435,7 +434,7 @@ object global {
       * `useMemo` will only recompute the memoized value when one of the `deps` has changed.
       *
       * @version 16.8.0
-      * @see https://reactjs.org/docs/hooks-reference.html#usememo
+      * @see https://react.dev/reference/react/useMemo
       */
     // allow undefined, but don't make it optional as that is very likely a mistake
     inline def useMemo[T](factory: js.Function0[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("useMemo")(factory.asInstanceOf[js.Any]).asInstanceOf[T]
@@ -449,7 +448,7 @@ object global {
       * updates because you can pass `dispatch` down instead of callbacks.
       *
       * @version 16.8.0
-      * @see https://reactjs.org/docs/hooks-reference.html#usereducer
+      * @see https://react.dev/reference/react/useReducer
       */
     // I'm not sure if I keep this 2-ary or if I make it (2,3)-ary; it's currently (2,3)-ary.
     // The Flow types do have an overload for 3-ary invocation with undefined initializer.
@@ -467,7 +466,7 @@ object global {
       * updates because you can pass `dispatch` down instead of callbacks.
       *
       * @version 16.8.0
-      * @see https://reactjs.org/docs/hooks-reference.html#usereducer
+      * @see https://react.dev/reference/react/useReducer
       */
     // overload where dispatch could accept 0 arguments.
     inline def useReducer[R /* <: ReducerWithoutAction[Any] */](reducer: R, initializerArg: ReducerStateWithoutAction[R], initializer: Unit): js.Tuple2[ReducerStateWithoutAction[R], DispatchWithoutAction] = (^.asInstanceOf[js.Dynamic].applyDynamic("useReducer")(reducer.asInstanceOf[js.Any], initializerArg.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[ReducerStateWithoutAction[R], DispatchWithoutAction]]
@@ -479,7 +478,7 @@ object global {
       * updates because you can pass `dispatch` down instead of callbacks.
       *
       * @version 16.8.0
-      * @see https://reactjs.org/docs/hooks-reference.html#usereducer
+      * @see https://react.dev/reference/react/useReducer
       */
     // overload where dispatch could accept 0 arguments.
     // overload where "I" may be a subset of ReducerState<R>; used to provide autocompletion.
@@ -505,7 +504,7 @@ object global {
       * value around similar to how you’d use instance fields in classes.
       *
       * @version 16.8.0
-      * @see https://reactjs.org/docs/hooks-reference.html#useref
+      * @see https://react.dev/reference/react/useRef
       */
     inline def useRef[T](): MutableRefObject[js.UndefOr[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useRef")().asInstanceOf[MutableRefObject[js.UndefOr[T]]]
     /**
@@ -516,7 +515,7 @@ object global {
       * value around similar to how you’d use instance fields in classes.
       *
       * @version 16.8.0
-      * @see https://reactjs.org/docs/hooks-reference.html#useref
+      * @see https://react.dev/reference/react/useRef
       */
     inline def useRef[T](initialValue: T): MutableRefObject[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("useRef")(initialValue.asInstanceOf[js.Any]).asInstanceOf[MutableRefObject[T]]
     
@@ -532,7 +531,7 @@ object global {
       * of the generic argument.
       *
       * @version 16.8.0
-      * @see https://reactjs.org/docs/hooks-reference.html#useref
+      * @see https://react.dev/reference/react/useRef
       */
     inline def useRef_T_RefObject[T](): RefObject[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("useRef")().asInstanceOf[RefObject[T]]
     inline def useRef_T_RefObject[T](initialValue: T): RefObject[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("useRef")(initialValue.asInstanceOf[js.Any]).asInstanceOf[RefObject[T]]
@@ -542,14 +541,14 @@ object global {
       * Returns a stateful value, and a function to update it.
       *
       * @version 16.8.0
-      * @see https://reactjs.org/docs/hooks-reference.html#usestate
+      * @see https://react.dev/reference/react/useState
       */
     inline def useState[S](): js.Tuple2[js.UndefOr[S], Dispatch[SetStateAction[js.UndefOr[S]]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useState")().asInstanceOf[js.Tuple2[js.UndefOr[S], Dispatch[SetStateAction[js.UndefOr[S]]]]]
     /**
       * Returns a stateful value, and a function to update it.
       *
       * @version 16.8.0
-      * @see https://reactjs.org/docs/hooks-reference.html#usestate
+      * @see https://react.dev/reference/react/useState
       */
     inline def useState[S](initialState: S): js.Tuple2[S, Dispatch[SetStateAction[S]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useState")(initialState.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[S, Dispatch[SetStateAction[S]]]]
     inline def useState[S](initialState: js.Function0[S]): js.Tuple2[S, Dispatch[SetStateAction[S]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useState")(initialState.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[S, Dispatch[SetStateAction[S]]]]

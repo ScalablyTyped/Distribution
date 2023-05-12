@@ -6,8 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /**
   * An interface to specify a copyright note
-  * @property label {string} - A short textual representation of the copyright note, e.g. "DigitalGlobe 2009"
-  * @property alt {string} - A detailed textual representation of the copyright note, e.g. "copyright 2009 DigitalGlobe, Inc."
+  * label {string} - A short textual representation of the copyright note, e.g. "DigitalGlobe 2009"
+  * alt {string} - A detailed textual representation of the copyright note, e.g. "copyright 2009 DigitalGlobe, Inc."
   */
 trait ICopyright extends StObject {
   

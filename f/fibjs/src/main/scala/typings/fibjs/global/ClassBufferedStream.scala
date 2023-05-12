@@ -10,12 +10,12 @@ open class ClassBufferedStream protected ()
   extends StObject
      with typings.fibjs.ClassBufferedStream {
   /**
-    * 
+    *
     * @brief BufferedStream 构造函数
     * @param stm BufferedStream 的二进制基础流对象
-    * 
-    * 
-    * 
+    *
+    *
+    *
     */
   def this(stm: typings.fibjs.ClassStream) = this()
 }

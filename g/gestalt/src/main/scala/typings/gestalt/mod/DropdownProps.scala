@@ -1,7 +1,7 @@
 package typings.gestalt.mod
 
-import typings.react.mod.ReactElement
-import typings.react.mod.ReactNode
+import typings.gestalt.anon.AnimationState
+import typings.gestalt.gestaltStrings.`30vh`
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -9,33 +9,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DropdownProps extends StObject {
   
-  /**
-    * Ref for the element that the Dropdown will attach to, will most likely be a Button
-    */
-  var anchor: js.UndefOr[HTMLElement] = js.undefined
+  var anchor: js.UndefOr[HTMLElement | Null] = js.undefined
   
-  var children: ReactElement | js.Array[ReactElement]
+  var children: Node
   
-  /**
-    * Removes the Layer component around Popover.
-    * Should only be used in cases where Layer breaks the Dropdown positionings such as
-    * when the anchor element is within a sticky component.
-    */
-  var dangerouslyRemoveLayer: js.UndefOr[Boolean] = js.undefined
+  var disableMobileUI: js.UndefOr[Boolean] = js.undefined
   
-  var headerContent: js.UndefOr[ReactNode] = js.undefined
+  var headerContent: js.UndefOr[Node] = js.undefined
   
-  /**
-    * Unique id to identify this Dropdown
-    */
   var id: String
   
-  /**
-    * Preferred direction for the Dropdown to open
-    *
-    * @default "down"
-    */
   var idealDirection: js.UndefOr[FourDirections] = js.undefined
+  
+  var isWithinFixedContainer: js.UndefOr[Boolean] = js.undefined
+  
+  var maxHeight: js.UndefOr[`30vh`] = js.undefined
+  
+  var mobileOnAnimationEnd: js.UndefOr[OnAnimationEndType] = js.undefined
   
   def onDismiss(): Unit
   
@@ -43,8 +33,8 @@ trait DropdownProps extends StObject {
 }
 object DropdownProps {
   
-  inline def apply(children: ReactElement | js.Array[ReactElement], id: String, onDismiss: () => Unit): DropdownProps = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], onDismiss = js.Any.fromFunction0(onDismiss))
+  inline def apply(id: String, onDismiss: () => Unit): DropdownProps = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], onDismiss = js.Any.fromFunction0(onDismiss))
     __obj.asInstanceOf[DropdownProps]
   }
   
@@ -53,17 +43,19 @@ object DropdownProps {
     
     inline def setAnchor(value: HTMLElement): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     
+    inline def setAnchorNull: Self = StObject.set(x, "anchor", null)
+    
     inline def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
     
-    inline def setChildren(value: ReactElement | js.Array[ReactElement]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: Node): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    inline def setChildrenVarargs(value: ReactElement*): Self = StObject.set(x, "children", js.Array(value*))
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    inline def setDangerouslyRemoveLayer(value: Boolean): Self = StObject.set(x, "dangerouslyRemoveLayer", value.asInstanceOf[js.Any])
+    inline def setDisableMobileUI(value: Boolean): Self = StObject.set(x, "disableMobileUI", value.asInstanceOf[js.Any])
     
-    inline def setDangerouslyRemoveLayerUndefined: Self = StObject.set(x, "dangerouslyRemoveLayer", js.undefined)
+    inline def setDisableMobileUIUndefined: Self = StObject.set(x, "disableMobileUI", js.undefined)
     
-    inline def setHeaderContent(value: ReactNode): Self = StObject.set(x, "headerContent", value.asInstanceOf[js.Any])
+    inline def setHeaderContent(value: Node): Self = StObject.set(x, "headerContent", value.asInstanceOf[js.Any])
     
     inline def setHeaderContentUndefined: Self = StObject.set(x, "headerContent", js.undefined)
     
@@ -72,6 +64,18 @@ object DropdownProps {
     inline def setIdealDirection(value: FourDirections): Self = StObject.set(x, "idealDirection", value.asInstanceOf[js.Any])
     
     inline def setIdealDirectionUndefined: Self = StObject.set(x, "idealDirection", js.undefined)
+    
+    inline def setIsWithinFixedContainer(value: Boolean): Self = StObject.set(x, "isWithinFixedContainer", value.asInstanceOf[js.Any])
+    
+    inline def setIsWithinFixedContainerUndefined: Self = StObject.set(x, "isWithinFixedContainer", js.undefined)
+    
+    inline def setMaxHeight(value: `30vh`): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
+    
+    inline def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
+    
+    inline def setMobileOnAnimationEnd(value: /* args */ AnimationState => Unit): Self = StObject.set(x, "mobileOnAnimationEnd", js.Any.fromFunction1(value))
+    
+    inline def setMobileOnAnimationEndUndefined: Self = StObject.set(x, "mobileOnAnimationEnd", js.undefined)
     
     inline def setOnDismiss(value: () => Unit): Self = StObject.set(x, "onDismiss", js.Any.fromFunction0(value))
     

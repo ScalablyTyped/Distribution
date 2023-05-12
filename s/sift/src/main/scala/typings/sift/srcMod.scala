@@ -1,9 +1,9 @@
 package typings.sift
 
 import typings.sift.anon.PartialOptionsCompare
-import typings.sift.libCoreMod.NopeOperation
 import typings.sift.libCoreMod.QueryOperation
 import typings.sift.libUtilsMod.Key
+import typings.sift.srcCoreMod.NopeOperation
 import typings.sift.srcCoreMod.Operation
 import typings.sift.srcCoreMod.Options
 import typings.sift.srcCoreMod.Query

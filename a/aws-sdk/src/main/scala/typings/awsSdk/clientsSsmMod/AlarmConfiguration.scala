@@ -12,7 +12,7 @@ trait AlarmConfiguration extends StObject {
   var Alarms: AlarmList
   
   /**
-    * If you specify true for this value, your automation or command continue to run even if we can't gather information about the state of your CloudWatch alarm. The default value is false.
+    * When this value is true, your automation or command continues to run in cases where we can’t retrieve alarm status information from CloudWatch. In cases where we successfully retrieve an alarm status of OK or INSUFFICIENT_DATA, the automation or command continues to run, regardless of this value. Default is false.
     */
   var IgnorePollAlarmFailure: js.UndefOr[Boolean] = js.undefined
 }

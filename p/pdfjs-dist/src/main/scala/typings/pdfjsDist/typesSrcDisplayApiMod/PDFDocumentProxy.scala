@@ -2,7 +2,6 @@ package typings.pdfjsDist.typesSrcDisplayApiMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.pdfjsDist.anon.Bold
-import typings.pdfjsDist.anon.FontTypes
 import typings.pdfjsDist.anon.Info
 import typings.pdfjsDist.anon.Length
 import typings.pdfjsDist.anon.Marked
@@ -53,6 +52,11 @@ open class PDFDocumentProxy protected () extends StObject {
     * Destroys the current document instance and terminates the worker.
     */
   def destroy(): js.Promise[Unit] = js.native
+  
+  /**
+    * @type {Object} The filter factory instance.
+    */
+  def filterFactory: js.Object = js.native
   
   /**
     * @type {Array<string, string|null>} A (not guaranteed to be) unique ID to
@@ -263,19 +267,4 @@ open class PDFDocumentProxy protected () extends StObject {
     *   {Uint8Array} containing the full data of the saved document.
     */
   def saveDocument(): js.Promise[js.typedarray.Uint8Array] = js.native
-  
-  /**
-    * @typedef {Object} PDFDocumentStats
-    * @property {Object<string, boolean>} streamTypes - Used stream types in the
-    *   document (an item is set to true if specific stream ID was used in the
-    *   document).
-    * @property {Object<string, boolean>} fontTypes - Used font types in the
-    *   document (an item is set to true if specific font ID was used in the
-    *   document).
-    */
-  /**
-    * @type {PDFDocumentStats | null} The current statistics about document
-    *   structures, or `null` when no statistics exists.
-    */
-  def stats: FontTypes | Null = js.native
 }

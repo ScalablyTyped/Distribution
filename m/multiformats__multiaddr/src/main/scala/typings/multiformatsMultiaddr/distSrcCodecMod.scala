@@ -1,6 +1,6 @@
 package typings.multiformatsMultiaddr
 
-import typings.multiformatsMultiaddr.distSrcProtocolsTableMod.Protocol
+import typings.multiformatsMultiaddr.mod.Protocol
 import typings.multiformatsMultiaddr.mod.StringTuple
 import typings.multiformatsMultiaddr.mod.Tuple
 import org.scalablytyped.runtime.StObject

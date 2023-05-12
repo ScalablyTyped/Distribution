@@ -9,7 +9,6 @@ trait SimplePaginationOptions extends StObject {
   /**
     * The class of the CSS theme.
     * 
-    * @type {string}
     * @memberof SimplePaginationOptions
     */
   var cssStyle: js.UndefOr[String] = js.undefined
@@ -17,7 +16,6 @@ trait SimplePaginationOptions extends StObject {
   /**
     * Which page will be selected immediately after init.
     * 
-    * @type {number}
     * @memberof SimplePaginationOptions
     */
   var currentPage: js.UndefOr[Double] = js.undefined
@@ -26,7 +24,6 @@ trait SimplePaginationOptions extends StObject {
     * How many page numbers should be visible while navigating.
     * Minimum allowed: 3 (previous, current & next)
     * 
-    * @type {number}
     * @memberof SimplePaginationOptions
     */
   var displayedPages: js.UndefOr[Double] = js.undefined
@@ -34,7 +31,6 @@ trait SimplePaginationOptions extends StObject {
   /**
     * How many page numbers are visible at the beginning/ending of the pagination.
     * 
-    * @type {number}
     * @memberof SimplePaginationOptions
     */
   var edges: js.UndefOr[Double] = js.undefined
@@ -44,7 +40,6 @@ trait SimplePaginationOptions extends StObject {
     * clicking on the ellipse will replace the ellipse
     * with a number type input in which you can manually set the resulting page.
     * 
-    * @type {boolean}
     * @memberof SimplePaginationOptions
     */
   var ellipsePageSet: js.UndefOr[Boolean] = js.undefined
@@ -54,7 +49,6 @@ trait SimplePaginationOptions extends StObject {
   /**
     * A string used to build the href attribute, added before the page number.
     * 
-    * @type {string}
     * @memberof SimplePaginationOptions
     */
   var hrefTextPrefix: js.UndefOr[String] = js.undefined
@@ -62,7 +56,6 @@ trait SimplePaginationOptions extends StObject {
   /**
     * Another string used to build the href attribute, added after the page number.
     * 
-    * @type {string}
     * @memberof SimplePaginationOptions
     */
   var hrefTextSuffix: js.UndefOr[String] = js.undefined
@@ -72,7 +65,6 @@ trait SimplePaginationOptions extends StObject {
   /**
     * Total number of items that will be used to calculate the pages.
     * 
-    * @type {number}
     * @memberof SimplePaginationOptions
     */
   var items: js.UndefOr[Double] = js.undefined
@@ -80,7 +72,6 @@ trait SimplePaginationOptions extends StObject {
   /**
     * Number of items displayed on each page.
     * 
-    * @type {number}
     * @memberof SimplePaginationOptions
     */
   var itemsOnPage: js.UndefOr[Double] = js.undefined
@@ -88,7 +79,6 @@ trait SimplePaginationOptions extends StObject {
   /**
     * A collection of labels that will be used to render the pagination items, replacing the numbers.
     * 
-    * @type {any[]}
     * @memberof SimplePaginationOptions
     */
   var labelMap: js.UndefOr[js.Array[Any]] = js.undefined
@@ -100,7 +90,6 @@ trait SimplePaginationOptions extends StObject {
   /**
     * Text to be display on the next button.
     * 
-    * @type {string}
     * @memberof SimplePaginationOptions
     */
   var nextText: js.UndefOr[String] = js.undefined
@@ -123,7 +112,6 @@ trait SimplePaginationOptions extends StObject {
   /**
     *     If specified, items and itemsOnPage will not be used to calculate the number of pages.
     * 
-    * @type {number}
     * @memberof SimplePaginationOptions
     */
   var pages: js.UndefOr[Double] = js.undefined
@@ -131,7 +119,6 @@ trait SimplePaginationOptions extends StObject {
   /**
     * Text to be display on the previous button.
     * 
-    * @type {string}
     * @memberof SimplePaginationOptions
     */
   var prevText: js.UndefOr[String] = js.undefined
@@ -139,7 +126,6 @@ trait SimplePaginationOptions extends StObject {
   /**
     * Set to false if you don't want to select the page immediately after click.
     * 
-    * @type {boolean}
     * @memberof SimplePaginationOptions
     */
   var selectOnClick: js.UndefOr[Boolean] = js.undefined

@@ -3,7 +3,7 @@ package typings.awsSdkCredentialProviderSso
 import typings.awsSdkClientSso.mod.SSOClient
 import typings.awsSdkCredentialProviderSso.anon.FromSSOInitPartialSsoCred
 import typings.awsSdkSharedIniFileLoader.distTypesParseKnownFilesMod.SourceProfileInit
-import typings.awsSdkTypes.distTypesCredentialsMod.CredentialProvider
+import typings.awsSdkTypes.distTypesIdentityAwsCredentialIdentityMod.AwsCredentialIdentityProvider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -14,8 +14,8 @@ object distTypesFromSSOMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def fromSSO(): CredentialProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSSO")().asInstanceOf[CredentialProvider]
-  inline def fromSSO(init: FromSSOInitPartialSsoCred): CredentialProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSSO")(init.asInstanceOf[js.Any]).asInstanceOf[CredentialProvider]
+  inline def fromSSO(): AwsCredentialIdentityProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSSO")().asInstanceOf[AwsCredentialIdentityProvider]
+  inline def fromSSO(init: FromSSOInitPartialSsoCred): AwsCredentialIdentityProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSSO")(init.asInstanceOf[js.Any]).asInstanceOf[AwsCredentialIdentityProvider]
   
   trait FromSSOInit
     extends StObject

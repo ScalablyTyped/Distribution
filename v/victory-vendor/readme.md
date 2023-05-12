@@ -1,7 +1,7 @@
 
 # Scala.js typings for victory-vendor
 
-Typings are for version 36.6.8
+Typings are for version 36.6.10
 
 ## Library description:
 Vendored dependencies for Victory

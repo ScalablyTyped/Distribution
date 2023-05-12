@@ -2,7 +2,7 @@ package typings.pkijs.mod
 
 import typings.pkijs.anon.EcdhPrivateKey
 import typings.pkijs.anon.HmacHashAlgorithm
-import typings.pkijs.anon.PreDefinedData
+import typings.pkijs.anon.RequiredEncryptedContentI
 import typings.std.Algorithm
 import typings.std.CryptoKey
 import org.scalablytyped.runtime.StObject
@@ -149,8 +149,8 @@ open class EnvelopedData ()
     * @param parameters Additional parameters
     * @param crypto Crypto engine
     */
-  def decrypt(recipientIndex: Double, parameters: PreDefinedData): js.Promise[Any] = js.native
-  def decrypt(recipientIndex: Double, parameters: PreDefinedData, crypto: ICryptoEngine): js.Promise[Any] = js.native
+  def decrypt(recipientIndex: Double, parameters: EnvelopedDataDecryptParams): js.Promise[Any] = js.native
+  def decrypt(recipientIndex: Double, parameters: EnvelopedDataDecryptParams, crypto: ICryptoEngine): js.Promise[Any] = js.native
   
   /**
     * Creates a new CMS Enveloped Data content with encrypted data
@@ -170,6 +170,8 @@ open class EnvelopedData ()
     */
   /* CompleteClass */
   var encryptedContentInfo: EncryptedContentInfo = js.native
+  
+  var policy: RequiredEncryptedContentI = js.native
   
   /**
     * Collection of per-recipient information. There MUST be at least one element in the collection.

@@ -17,7 +17,7 @@ open class CanvasFont protected ()
   /**
     * Create a new CanvasFont instance.
     *
-    * @param {AppBase} app - The application.
+    * @param {import('../app-base.js').AppBase} app - The application.
     * @param {object} options - The font options.
     * @param {string} [options.fontName] - The name of the font. CSS font names are supported.
     * Defaults to 'Arial'.

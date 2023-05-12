@@ -16,7 +16,7 @@ object libIconsHeatMapOutlinedMod extends Shortcut {
   @js.native
   trait HeatMapOutlinedIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_HeatMapOutlinedIconType: String = js.native

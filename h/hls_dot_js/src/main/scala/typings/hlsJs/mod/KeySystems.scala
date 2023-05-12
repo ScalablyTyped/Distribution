@@ -1,27 +1,27 @@
 package typings.hlsJs.mod
 
+import typings.hlsJs.hlsJsStrings.comDotappleDotfps
+import typings.hlsJs.hlsJsStrings.comDotmicrosoftDotplayready
+import typings.hlsJs.hlsJsStrings.comDotwidevineDotalpha
+import typings.hlsJs.hlsJsStrings.orgDotw3Dotclearkey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-sealed trait KeySystems extends StObject
-@JSImport("hls.js", "KeySystems")
-@js.native
-object KeySystems extends StObject {
+/* Rewritten from type alias, can be one of: 
+  - typings.hlsJs.hlsJsStrings.orgDotw3Dotclearkey
+  - typings.hlsJs.hlsJsStrings.comDotappleDotfps
+  - typings.hlsJs.hlsJsStrings.comDotmicrosoftDotplayready
+  - typings.hlsJs.hlsJsStrings.comDotwidevineDotalpha
+*/
+trait KeySystems extends StObject
+object KeySystems {
   
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[KeySystems & String] = js.native
+  inline def CLEARKEY: orgDotw3Dotclearkey = "org.w3.clearkey".asInstanceOf[orgDotw3Dotclearkey]
   
-  @js.native
-  sealed trait PLAYREADY
-    extends StObject
-       with KeySystems
-  /* "com.microsoft.playready" */ val PLAYREADY: typings.hlsJs.mod.KeySystems.PLAYREADY & String = js.native
+  inline def FAIRPLAY: comDotappleDotfps = "com.apple.fps".asInstanceOf[comDotappleDotfps]
   
-  @js.native
-  sealed trait WIDEVINE
-    extends StObject
-       with KeySystems
-  /* "com.widevine.alpha" */ val WIDEVINE: typings.hlsJs.mod.KeySystems.WIDEVINE & String = js.native
+  inline def PLAYREADY: comDotmicrosoftDotplayready = "com.microsoft.playready".asInstanceOf[comDotmicrosoftDotplayready]
+  
+  inline def WIDEVINE: comDotwidevineDotalpha = "com.widevine.alpha".asInstanceOf[comDotwidevineDotalpha]
 }

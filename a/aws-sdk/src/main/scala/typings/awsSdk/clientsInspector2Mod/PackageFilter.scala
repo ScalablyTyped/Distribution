@@ -26,6 +26,8 @@ trait PackageFilter extends StObject {
     */
   var release: js.UndefOr[StringFilter] = js.undefined
   
+  var sourceLambdaLayerArn: js.UndefOr[StringFilter] = js.undefined
+  
   /**
     * An object that contains details on the source layer hash to filter on.
     */
@@ -61,6 +63,10 @@ object PackageFilter {
     inline def setRelease(value: StringFilter): Self = StObject.set(x, "release", value.asInstanceOf[js.Any])
     
     inline def setReleaseUndefined: Self = StObject.set(x, "release", js.undefined)
+    
+    inline def setSourceLambdaLayerArn(value: StringFilter): Self = StObject.set(x, "sourceLambdaLayerArn", value.asInstanceOf[js.Any])
+    
+    inline def setSourceLambdaLayerArnUndefined: Self = StObject.set(x, "sourceLambdaLayerArn", js.undefined)
     
     inline def setSourceLayerHash(value: StringFilter): Self = StObject.set(x, "sourceLayerHash", value.asInstanceOf[js.Any])
     

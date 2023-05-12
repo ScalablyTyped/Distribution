@@ -16,30 +16,38 @@ object anon {
   
   trait A extends StObject {
     
+    // eslint-disable-next-line no-single-element-tuple-type
     var a: js.Array[href]
     
+    // eslint-disable-next-line no-single-element-tuple-type
     var blockquote: js.Array[style]
     
     var body: js.Array[Any]
     
     var br: js.Array[Any]
     
+    // eslint-disable-next-line no-single-element-tuple-type
     var cite: js.Array[style]
     
     var em: js.Array[Any]
     
     var img: js.Tuple5[src, alt, style, height, width]
     
+    // eslint-disable-next-line no-single-element-tuple-type
     var li: js.Array[style]
     
+    // eslint-disable-next-line no-single-element-tuple-type
     var ol: js.Array[style]
     
+    // eslint-disable-next-line no-single-element-tuple-type
     var p: js.Array[style]
     
+    // eslint-disable-next-line no-single-element-tuple-type
     var span: js.Array[style]
     
     var strong: js.Array[Any]
     
+    // eslint-disable-next-line no-single-element-tuple-type
     var ul: js.Array[style]
   }
   object A {

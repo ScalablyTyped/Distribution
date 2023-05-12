@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FunctionConfiguration extends StObject {
   
   /**
+    * The function code that contains the request and response functions. When code is used, the runtime is required. The runtime value must be APPSYNC_JS.
+    */
+  var code: js.UndefOr[Code] = js.undefined
+  
+  /**
     * The name of the DataSource.
     */
   var dataSourceName: js.UndefOr[ResourceName] = js.undefined
@@ -51,6 +56,8 @@ trait FunctionConfiguration extends StObject {
     */
   var responseMappingTemplate: js.UndefOr[MappingTemplate] = js.undefined
   
+  var runtime: js.UndefOr[AppSyncRuntime] = js.undefined
+  
   var syncConfig: js.UndefOr[SyncConfig] = js.undefined
 }
 object FunctionConfiguration {
@@ -62,6 +69,10 @@ object FunctionConfiguration {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: FunctionConfiguration] (val x: Self) extends AnyVal {
+    
+    inline def setCode(value: Code): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    
+    inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
     inline def setDataSourceName(value: ResourceName): Self = StObject.set(x, "dataSourceName", value.asInstanceOf[js.Any])
     
@@ -98,6 +109,10 @@ object FunctionConfiguration {
     inline def setResponseMappingTemplate(value: MappingTemplate): Self = StObject.set(x, "responseMappingTemplate", value.asInstanceOf[js.Any])
     
     inline def setResponseMappingTemplateUndefined: Self = StObject.set(x, "responseMappingTemplate", js.undefined)
+    
+    inline def setRuntime(value: AppSyncRuntime): Self = StObject.set(x, "runtime", value.asInstanceOf[js.Any])
+    
+    inline def setRuntimeUndefined: Self = StObject.set(x, "runtime", js.undefined)
     
     inline def setSyncConfig(value: SyncConfig): Self = StObject.set(x, "syncConfig", value.asInstanceOf[js.Any])
     

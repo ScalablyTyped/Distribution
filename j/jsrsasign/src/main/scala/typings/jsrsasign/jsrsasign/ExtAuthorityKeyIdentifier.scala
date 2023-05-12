@@ -1,5 +1,6 @@
 package typings.jsrsasign.jsrsasign
 
+import typings.jsrsasign.jsrsasignStrings.authorityKeyIdentifier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -10,6 +11,8 @@ trait ExtAuthorityKeyIdentifier
   
   var critical: js.UndefOr[Boolean] = js.undefined
   
+  var extname: authorityKeyIdentifier
+  
   var issuer: js.UndefOr[Hex] = js.undefined
   
   var kid: Hex
@@ -19,7 +22,7 @@ trait ExtAuthorityKeyIdentifier
 object ExtAuthorityKeyIdentifier {
   
   inline def apply(kid: Hex): ExtAuthorityKeyIdentifier = {
-    val __obj = js.Dynamic.literal(kid = kid.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(extname = "authorityKeyIdentifier", kid = kid.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtAuthorityKeyIdentifier]
   }
   
@@ -29,6 +32,8 @@ object ExtAuthorityKeyIdentifier {
     inline def setCritical(value: Boolean): Self = StObject.set(x, "critical", value.asInstanceOf[js.Any])
     
     inline def setCriticalUndefined: Self = StObject.set(x, "critical", js.undefined)
+    
+    inline def setExtname(value: authorityKeyIdentifier): Self = StObject.set(x, "extname", value.asInstanceOf[js.Any])
     
     inline def setIssuer(value: Hex): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
     

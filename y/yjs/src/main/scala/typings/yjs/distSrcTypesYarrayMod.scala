@@ -1,5 +1,6 @@
 package typings.yjs
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.std.Iterable
 import typings.std.IterableIterator
 import typings.yjs.distSrcTypesAbstractTypeMod.AbstractType
@@ -46,7 +47,7 @@ object distSrcTypesYarrayMod {
     def delete(index: Double, length: Double): Unit = js.native
     
     /**
-      * Executes a provided function on once on overy element of this YArray.
+      * Executes a provided function once on overy element of this YArray.
       *
       * @param {function(T,number,YArray<T>):void} f A function to execute on every element of this YArray.
       */
@@ -141,11 +142,11 @@ object distSrcTypesYarrayMod {
     
     /**
       * Construct a new YArray containing the specified items.
-      * @template T
+      * @template {Object<string,any>|Array<any>|number|null|string|Uint8Array} T
       * @param {Array<T>} items
       * @return {YArray<T>}
       */
-    inline def from[T_1](items: js.Array[T_1]): YArray[T_1] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(items.asInstanceOf[js.Any]).asInstanceOf[YArray[T_1]]
+    inline def from[T_1 /* <: String | Double | js.Array[Any] | js.typedarray.Uint8Array | StringDictionary[Any] | Null */](items: js.Array[T_1]): YArray[T_1] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(items.asInstanceOf[js.Any]).asInstanceOf[YArray[T_1]]
   }
   
   @JSImport("yjs/dist/src/types/YArray", "YArrayEvent")
@@ -160,6 +161,6 @@ object distSrcTypesYarrayMod {
     var _transaction: Transaction = js.native
   }
   
-  inline def readYArray(decoder: UpdateDecoderV1): YArray[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("readYArray")(decoder.asInstanceOf[js.Any]).asInstanceOf[YArray[Any]]
-  inline def readYArray(decoder: UpdateDecoderV2): YArray[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("readYArray")(decoder.asInstanceOf[js.Any]).asInstanceOf[YArray[Any]]
+  inline def readYArray(_decoder: UpdateDecoderV1): YArray[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("readYArray")(_decoder.asInstanceOf[js.Any]).asInstanceOf[YArray[Any]]
+  inline def readYArray(_decoder: UpdateDecoderV2): YArray[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("readYArray")(_decoder.asInstanceOf[js.Any]).asInstanceOf[YArray[Any]]
 }

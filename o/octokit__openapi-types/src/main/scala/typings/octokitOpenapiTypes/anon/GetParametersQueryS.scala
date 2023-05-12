@@ -6,7 +6,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait GetParametersQueryS extends StObject {
   
-  /** Get the octocat as ASCII art */
+  /**
+    * Get Octocat
+    * @description Get the octocat as ASCII art
+    */
   var get: ParametersQueryS
 }
 object GetParametersQueryS {

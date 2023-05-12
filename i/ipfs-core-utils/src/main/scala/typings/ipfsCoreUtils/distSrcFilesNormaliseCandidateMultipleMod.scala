@@ -15,7 +15,15 @@ object distSrcFilesNormaliseCandidateMultipleMod {
   inline def normaliseCandidateMultiple(
     input: ImportCandidateStream,
     normaliseContent: js.Function1[/* content */ ToContent, js.Promise[AsyncIterable[js.typedarray.Uint8Array]]]
-  ): AsyncGenerator[typings.ipfsUnixfsImporter.distSrcTypesMod.ImportCandidate, Unit, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("normaliseCandidateMultiple")(input.asInstanceOf[js.Any], normaliseContent.asInstanceOf[js.Any])).asInstanceOf[AsyncGenerator[typings.ipfsUnixfsImporter.distSrcTypesMod.ImportCandidate, Unit, Unit]]
+  ): AsyncGenerator[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_types.ImportCandidate */ Any, 
+    Unit, 
+    Unit
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("normaliseCandidateMultiple")(input.asInstanceOf[js.Any], normaliseContent.asInstanceOf[js.Any])).asInstanceOf[AsyncGenerator[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_types.ImportCandidate */ Any, 
+    Unit, 
+    Unit
+  ]]
   
   type ImportCandidate = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_utils.ImportCandidate */ Any
   

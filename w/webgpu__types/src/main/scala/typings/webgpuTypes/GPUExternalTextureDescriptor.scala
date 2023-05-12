@@ -12,11 +12,13 @@ trait GPUExternalTextureDescriptor
   
   var colorSpace: js.UndefOr[PredefinedColorSpace] = js.undefined
   
-  var source: HTMLVideoElement
+  var source: HTMLVideoElement | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VideoFrame */ Any)
 }
 object GPUExternalTextureDescriptor {
   
-  inline def apply(source: HTMLVideoElement): GPUExternalTextureDescriptor = {
+  inline def apply(
+    source: HTMLVideoElement | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VideoFrame */ Any)
+  ): GPUExternalTextureDescriptor = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
     __obj.asInstanceOf[GPUExternalTextureDescriptor]
   }
@@ -28,6 +30,8 @@ object GPUExternalTextureDescriptor {
     
     inline def setColorSpaceUndefined: Self = StObject.set(x, "colorSpace", js.undefined)
     
-    inline def setSource(value: HTMLVideoElement): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(
+      value: HTMLVideoElement | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify VideoFrame */ Any)
+    ): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
   }
 }

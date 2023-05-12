@@ -1,6 +1,7 @@
 package typings.traceEventLib
 
 import typings.traceEventLib.distSchemaEventsEventMod.Event
+import typings.traceEventLib.distSchemaEventsTraceEventMod.TraceEvent
 import typings.traceEventLib.traceEventLibStrings.b_
 import typings.traceEventLib.traceEventLibStrings.e_
 import typings.traceEventLib.traceEventLibStrings.n
@@ -12,7 +13,8 @@ object distSchemaEventsAsyncEventMod {
   
   trait AsyncEndEvent
     extends StObject
-       with AsyncEvent {
+       with AsyncEvent
+       with TraceEvent {
     
     /** @inheritDoc */
     @JSName("ph")
@@ -40,7 +42,6 @@ object distSchemaEventsAsyncEventMod {
       * An additional required parameter id.
       * We consider the events with the same {@link Event#cat} and {@link #id} as events from the same event tree.
       * A nested async event should have the same category and id as its parent.
-      *
       * @see {#id2}
       */
     var id: js.UndefOr[Double] = js.undefined
@@ -108,7 +109,8 @@ object distSchemaEventsAsyncEventMod {
   
   trait AsyncInstantEvent
     extends StObject
-       with AsyncEvent {
+       with AsyncEvent
+       with TraceEvent {
     
     /** @inheritDoc */
     @JSName("ph")
@@ -130,7 +132,8 @@ object distSchemaEventsAsyncEventMod {
   
   trait AsyncStartEvent
     extends StObject
-       with AsyncEvent {
+       with AsyncEvent
+       with TraceEvent {
     
     /** @inheritDoc */
     @JSName("ph")

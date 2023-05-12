@@ -19,6 +19,11 @@ trait ElementDefinitionBinding
   var _valueSet: js.UndefOr[Element] = js.undefined
   
   /**
+    * Additional bindings that help applications implementing this element. Additional bindings do not replace the main binding but provide more information and/or context.
+    */
+  var additional: js.UndefOr[js.Array[ElementDefinitionBindingAdditional]] = js.undefined
+  
+  /**
     * Describes the intended use of this particular set of codes.
     */
   var description: js.UndefOr[String] = js.undefined
@@ -42,6 +47,12 @@ object ElementDefinitionBinding {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: ElementDefinitionBinding] (val x: Self) extends AnyVal {
+    
+    inline def setAdditional(value: js.Array[ElementDefinitionBindingAdditional]): Self = StObject.set(x, "additional", value.asInstanceOf[js.Any])
+    
+    inline def setAdditionalUndefined: Self = StObject.set(x, "additional", js.undefined)
+    
+    inline def setAdditionalVarargs(value: ElementDefinitionBindingAdditional*): Self = StObject.set(x, "additional", js.Array(value*))
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

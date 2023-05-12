@@ -1,10 +1,12 @@
 package typings.rdfDatasetExt
 
 import typings.rdfjsTypes.dataModelMod.BaseQuad
+import typings.rdfjsTypes.dataModelMod.Quad
 import typings.rdfjsTypes.dataModelMod.Term
 import typings.rdfjsTypes.datasetMod.DatasetCore
 import typings.rdfjsTypes.streamMod.Stream
 import typings.readableStream.mod.Readable
+import typings.std.Parameters
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -24,32 +26,28 @@ object anon {
   }
   
   @js.native
+  trait FnCallDatasetArg extends StObject {
+    
+    def apply[D /* <: DatasetCore[BaseQuad, BaseQuad] */](
+      dataset: D,
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param arg because its type Parameters<DatasetCore['match']> is not an array type */ arg: Parameters[
+          js.Function4[
+            /* subject */ js.UndefOr[Term | Null], 
+            /* predicate */ js.UndefOr[Term | Null], 
+            /* object */ js.UndefOr[Term | Null], 
+            /* graph */ js.UndefOr[Term | Null], 
+            DatasetCore[Quad, Quad]
+          ]
+        ]
+    ): D = js.native
+  }
+  
+  @js.native
   trait FnCallDatasetStream extends StObject {
     
     def apply[D /* <: DatasetCore[BaseQuad, BaseQuad] */](
       dataset: D,
       stream: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EventEmitter */ Any
     ): js.Promise[D] = js.native
-  }
-  
-  @js.native
-  trait FnCallDatasetSubjectPredicateObjectGraph extends StObject {
-    
-    def apply[D /* <: DatasetCore[BaseQuad, BaseQuad] */](dataset: D): D = js.native
-    def apply[D /* <: DatasetCore[BaseQuad, BaseQuad] */](dataset: D, subject: Unit, predicate: Unit, `object`: Unit, graph: Term): D = js.native
-    def apply[D /* <: DatasetCore[BaseQuad, BaseQuad] */](dataset: D, subject: Unit, predicate: Unit, `object`: Term): D = js.native
-    def apply[D /* <: DatasetCore[BaseQuad, BaseQuad] */](dataset: D, subject: Unit, predicate: Unit, `object`: Term, graph: Term): D = js.native
-    def apply[D /* <: DatasetCore[BaseQuad, BaseQuad] */](dataset: D, subject: Unit, predicate: Term): D = js.native
-    def apply[D /* <: DatasetCore[BaseQuad, BaseQuad] */](dataset: D, subject: Unit, predicate: Term, `object`: Unit, graph: Term): D = js.native
-    def apply[D /* <: DatasetCore[BaseQuad, BaseQuad] */](dataset: D, subject: Unit, predicate: Term, `object`: Term): D = js.native
-    def apply[D /* <: DatasetCore[BaseQuad, BaseQuad] */](dataset: D, subject: Unit, predicate: Term, `object`: Term, graph: Term): D = js.native
-    def apply[D /* <: DatasetCore[BaseQuad, BaseQuad] */](dataset: D, subject: Term): D = js.native
-    def apply[D /* <: DatasetCore[BaseQuad, BaseQuad] */](dataset: D, subject: Term, predicate: Unit, `object`: Unit, graph: Term): D = js.native
-    def apply[D /* <: DatasetCore[BaseQuad, BaseQuad] */](dataset: D, subject: Term, predicate: Unit, `object`: Term): D = js.native
-    def apply[D /* <: DatasetCore[BaseQuad, BaseQuad] */](dataset: D, subject: Term, predicate: Unit, `object`: Term, graph: Term): D = js.native
-    def apply[D /* <: DatasetCore[BaseQuad, BaseQuad] */](dataset: D, subject: Term, predicate: Term): D = js.native
-    def apply[D /* <: DatasetCore[BaseQuad, BaseQuad] */](dataset: D, subject: Term, predicate: Term, `object`: Unit, graph: Term): D = js.native
-    def apply[D /* <: DatasetCore[BaseQuad, BaseQuad] */](dataset: D, subject: Term, predicate: Term, `object`: Term): D = js.native
-    def apply[D /* <: DatasetCore[BaseQuad, BaseQuad] */](dataset: D, subject: Term, predicate: Term, `object`: Term, graph: Term): D = js.native
   }
 }

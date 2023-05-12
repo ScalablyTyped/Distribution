@@ -52,7 +52,7 @@ trait ParentMaps extends StObject {
   
   var ClassExpression: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.babelTypes.libMod.ArrayExpression_, typings.babelTypes.libMod.ArrowFunctionExpression_, typings.babelTypes.libMod.AssignmentExpression_ */ Any
   
-  var ClassImplements: ClassDeclaration_ | ClassExpression_ | DeclareClass_ | DeclareExportDeclaration_ | DeclareInterface_ | DeclaredPredicate_ | InterfaceDeclaration_
+  var ClassImplements: ClassDeclaration_ | ClassExpression_ | DeclareClass_ | DeclareExportDeclaration_ | DeclaredPredicate_
   
   var ClassMethod: ClassBody_
   
@@ -606,7 +606,7 @@ object ParentMaps {
     ): Self = StObject.set(x, "ClassExpression", value.asInstanceOf[js.Any])
     
     inline def setClassImplements(
-      value: ClassDeclaration_ | ClassExpression_ | DeclareClass_ | DeclareExportDeclaration_ | DeclareInterface_ | DeclaredPredicate_ | InterfaceDeclaration_
+      value: ClassDeclaration_ | ClassExpression_ | DeclareClass_ | DeclareExportDeclaration_ | DeclaredPredicate_
     ): Self = StObject.set(x, "ClassImplements", value.asInstanceOf[js.Any])
     
     inline def setClassMethod(value: ClassBody_): Self = StObject.set(x, "ClassMethod", value.asInstanceOf[js.Any])

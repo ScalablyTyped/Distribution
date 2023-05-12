@@ -6,14 +6,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /* note: abstract class */ @JSImport("@firebase/firestore/dist/internal", "QueryConstraint")
 @js.native
-open class QueryConstraint () extends StObject {
+open class QueryConstraint ()
+  extends StObject
+     with AppliableConstraint {
   
   /**
     * Takes the provided {@link Query} and returns a copy of the {@link Query} with this
-    * {@link QueryConstraint} applied.
+    * {@link AppliableConstraint} applied.
     */
-  def _apply[T](query: Query_[T]): Query_[T] = js.native
+  /* CompleteClass */
+  override def _apply[T](query: Query_[T]): Query_[T] = js.native
   
-  /** The type of this query constraints */
+  /** The type of this query constraint */
   val `type`: QueryConstraintType = js.native
 }

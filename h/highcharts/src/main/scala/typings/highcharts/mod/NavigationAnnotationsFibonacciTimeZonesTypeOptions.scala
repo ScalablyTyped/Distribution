@@ -6,6 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait NavigationAnnotationsFibonacciTimeZonesTypeOptions extends StObject {
   
+  var controlPointOptions: js.UndefOr[NavigationAnnotationsFibonacciTimeZonesTypeControlPointOptions] = js.undefined
+  
   /**
     * (Highstock) Line options.
     */
@@ -34,6 +36,10 @@ object NavigationAnnotationsFibonacciTimeZonesTypeOptions {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: NavigationAnnotationsFibonacciTimeZonesTypeOptions] (val x: Self) extends AnyVal {
+    
+    inline def setControlPointOptions(value: NavigationAnnotationsFibonacciTimeZonesTypeControlPointOptions): Self = StObject.set(x, "controlPointOptions", value.asInstanceOf[js.Any])
+    
+    inline def setControlPointOptionsUndefined: Self = StObject.set(x, "controlPointOptions", js.undefined)
     
     inline def setLine(value: NavigationAnnotationsFibonacciTimeZonesTypeLineOptions): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     

@@ -1,11 +1,24 @@
 package typings.primereact
 
+import typings.primereact.primereactStrings.`12`
+import typings.primereact.primereactStrings.`24`
+import typings.primereact.primereactStrings.date
+import typings.primereact.primereactStrings.dateselect
+import typings.primereact.primereactStrings.left
+import typings.primereact.primereactStrings.month
+import typings.primereact.primereactStrings.multiple
+import typings.primereact.primereactStrings.outside
+import typings.primereact.primereactStrings.range
+import typings.primereact.primereactStrings.right
 import typings.primereact.primereactStrings.self
+import typings.primereact.primereactStrings.single
+import typings.primereact.primereactStrings.year
 import typings.primereact.tooltipTooltipoptionsMod.TooltipOptions
+import typings.primereact.tsHelpersMod.FormEvent
+import typings.primereact.tsHelpersMod.Nullable
 import typings.react.mod.CSSProperties
 import typings.react.mod.Component
 import typings.react.mod.FocusEvent
-import typings.react.mod.FormEvent
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactNode
@@ -29,128 +42,122 @@ object calendarCalendarMod {
     def this(props: CalendarProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: CalendarProps, context: Any) = this()
     
+    /**
+      * Used to focus the component.
+      */
+    def focus(): Unit = js.native
+    
+    /**
+      * Used to get the current date.
+      * @return {Date | Date[]} Current Date
+      */
     def getCurrentDateTime(): js.Date | js.Array[js.Date] = js.native
     
+    /**
+      * Used to get container element.
+      * @return {HTMLSpanElement} Container element
+      */
     def getElement(): HTMLSpanElement = js.native
     
+    /**
+      * Used to get input element.
+      * @return {HTMLInputElement} Input element
+      */
     def getInput(): HTMLInputElement = js.native
     
+    /**
+      * Used to get overlay element.
+      * @return {HTMLElement} Overlay element
+      */
     def getOverlay(): HTMLElement = js.native
     
+    /**
+      * Used to get the view date.
+      * @return {Date | Date[]} View Date
+      */
     def getViewDate(): js.Date | js.Array[js.Date] = js.native
     
+    /**
+      * Used to hide the overlay.
+      */
     def hide(): Unit = js.native
     
+    /**
+      * Used to show the overlay.
+      */
     def show(): Unit = js.native
     
-    def updateViewDate(event: CalendarEventType, value: js.Array[js.Date]): Unit = js.native
-    def updateViewDate(event: CalendarEventType, value: js.Date): Unit = js.native
+    /**
+      * Used to update the current view date.
+      * @param {React.SyntheticEvent | null} event - Browser event.
+      * @param {Date | Date[] | null} value - New date.
+      */
+    def updateViewDate(): Unit = js.native
+    def updateViewDate(event: Null, value: js.Array[js.Date]): Unit = js.native
+    def updateViewDate(event: Null, value: js.Date): Unit = js.native
+    def updateViewDate(event: SyntheticEvent[Element, Event]): Unit = js.native
+    def updateViewDate(event: SyntheticEvent[Element, Event], value: js.Array[js.Date]): Unit = js.native
+    def updateViewDate(event: SyntheticEvent[Element, Event], value: js.Date): Unit = js.native
   }
   
-  type CalendarAppendToType = js.UndefOr[self | HTMLElement | Null]
+  /**
+    * Custom change event.
+    * @see {@link CalendarProps.onChange}
+    * @extends {FormEvent}
+    * @event
+    */
+  type CalendarChangeEvent = FormEvent[js.Date | js.Array[js.Date] | String, SyntheticEvent[Element, Event]]
   
-  trait CalendarChangeParams extends StObject {
+  /**
+    * Custom date template event
+    * @see {@link CalendarProps.dateTemplate}
+    * @event
+    */
+  trait CalendarDateTemplateEvent extends StObject {
     
-    var originalEvent: SyntheticEvent[Element, Event]
-    
-    def preventDefault(): Unit
-    
-    def stopPropagation(): Unit
-    
-    var target: CalendarChangeTargetOptions
-    
-    var value: js.UndefOr[js.Date | js.Array[js.Date]] = js.undefined
-  }
-  object CalendarChangeParams {
-    
-    inline def apply(
-      originalEvent: SyntheticEvent[Element, Event],
-      preventDefault: () => Unit,
-      stopPropagation: () => Unit,
-      target: CalendarChangeTargetOptions
-    ): CalendarChangeParams = {
-      val __obj = js.Dynamic.literal(originalEvent = originalEvent.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any])
-      __obj.asInstanceOf[CalendarChangeParams]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: CalendarChangeParams] (val x: Self) extends AnyVal {
-      
-      inline def setOriginalEvent(value: SyntheticEvent[Element, Event]): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
-      
-      inline def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
-      
-      inline def setStopPropagation(value: () => Unit): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
-      
-      inline def setTarget(value: CalendarChangeTargetOptions): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
-      
-      inline def setValue(value: js.Date | js.Array[js.Date]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
-      
-      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
-      
-      inline def setValueVarargs(value: js.Date*): Self = StObject.set(x, "value", js.Array(value*))
-    }
-  }
-  
-  trait CalendarChangeTargetOptions extends StObject {
-    
-    var id: String
-    
-    var name: String
-    
-    var value: js.UndefOr[js.Date | js.Array[js.Date] | Null] = js.undefined
-  }
-  object CalendarChangeTargetOptions {
-    
-    inline def apply(id: String, name: String): CalendarChangeTargetOptions = {
-      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-      __obj.asInstanceOf[CalendarChangeTargetOptions]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: CalendarChangeTargetOptions] (val x: Self) extends AnyVal {
-      
-      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
-      
-      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-      
-      inline def setValue(value: js.Date | js.Array[js.Date]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
-      
-      inline def setValueNull: Self = StObject.set(x, "value", null)
-      
-      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
-      
-      inline def setValueVarargs(value: js.Date*): Self = StObject.set(x, "value", js.Array(value*))
-    }
-  }
-  
-  trait CalendarDateTemplateParams extends StObject {
-    
+    /**
+      * Current day
+      */
     var day: Double
     
+    /**
+      * Current month
+      */
     var month: Double
     
+    /**
+      * Whether the date belongs to the other month
+      */
     var otherMonth: Boolean
     
+    /**
+      * Whether the date is selectable
+      */
     var selectable: Boolean
     
+    /**
+      * Whether the day is today
+      */
     var today: Boolean
     
+    /**
+      * Current year
+      */
     var year: Double
   }
-  object CalendarDateTemplateParams {
+  object CalendarDateTemplateEvent {
     
-    inline def apply(day: Double, month: Double, otherMonth: Boolean, selectable: Boolean, today: Boolean, year: Double): CalendarDateTemplateParams = {
+    inline def apply(day: Double, month: Double, otherMonth: Boolean, selectable: Boolean, today: Boolean, year: Double): CalendarDateTemplateEvent = {
       val __obj = js.Dynamic.literal(day = day.asInstanceOf[js.Any], month = month.asInstanceOf[js.Any], otherMonth = otherMonth.asInstanceOf[js.Any], selectable = selectable.asInstanceOf[js.Any], today = today.asInstanceOf[js.Any], year = year.asInstanceOf[js.Any])
-      __obj.asInstanceOf[CalendarDateTemplateParams]
+      __obj.asInstanceOf[CalendarDateTemplateEvent]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: CalendarDateTemplateParams] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: CalendarDateTemplateEvent] (val x: Self) extends AnyVal {
       
       inline def setDay(value: Double): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
       
@@ -166,35 +173,32 @@ object calendarCalendarMod {
     }
   }
   
-  type CalendarEventType = js.UndefOr[(SyntheticEvent[Element, Event]) | Null]
-  
-  /* Rewritten from type alias, can be one of: 
-    - typings.primereact.primereactStrings.left
-    - typings.primereact.primereactStrings.right
-  */
-  trait CalendarIconPosType extends StObject
-  object CalendarIconPosType {
+  /**
+    * Custom month change event.
+    * @see {@link CalendarProps.onMonthChange}
+    * @event
+    */
+  trait CalendarMonthChangeEvent extends StObject {
     
-    inline def left: typings.primereact.primereactStrings.left = "left".asInstanceOf[typings.primereact.primereactStrings.left]
-    
-    inline def right: typings.primereact.primereactStrings.right = "right".asInstanceOf[typings.primereact.primereactStrings.right]
-  }
-  
-  trait CalendarMonthChangeParams extends StObject {
-    
+    /**
+      * The number of month
+      */
     var month: Double
     
+    /**
+      * The number of year
+      */
     var year: Double
   }
-  object CalendarMonthChangeParams {
+  object CalendarMonthChangeEvent {
     
-    inline def apply(month: Double, year: Double): CalendarMonthChangeParams = {
+    inline def apply(month: Double, year: Double): CalendarMonthChangeEvent = {
       val __obj = js.Dynamic.literal(month = month.asInstanceOf[js.Any], year = year.asInstanceOf[js.Any])
-      __obj.asInstanceOf[CalendarMonthChangeParams]
+      __obj.asInstanceOf[CalendarMonthChangeEvent]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: CalendarMonthChangeParams] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: CalendarMonthChangeEvent] (val x: Self) extends AnyVal {
       
       inline def setMonth(value: Double): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
       
@@ -202,248 +206,585 @@ object calendarCalendarMod {
     }
   }
   
-  type CalendarMonthNavigatorTemplateParams = CalendarNavigatorTemplateParams
+  /**
+    * Custom month navigator template event
+    * @see {@link CalendarProps.monthNavigatorTemplate}
+    * @extends {CalendarNavigatorTemplateEvent}
+    * @event
+    */
+  type CalendarMonthNavigatorTemplateEvent = CalendarNavigatorTemplateEvent
   
-  type CalendarNavigatorTemplateChangeCallback = js.Function2[
-    /* event */ SyntheticEvent[Element, Event], 
-    /* value */ js.UndefOr[String | Double | Null], 
-    Unit
-  ]
-  
-  trait CalendarNavigatorTemplateParams extends StObject {
+  /**
+    * Custom common navigator template event
+    * @hidden
+    */
+  @js.native
+  trait CalendarNavigatorTemplateEvent extends StObject {
     
-    var className: String
+    /**
+      * Style class of the navigator.
+      */
+    var className: String = js.native
     
-    var element: ReactNode
+    /**
+      * The default navigator component
+      */
+    var element: ReactNode = js.native
     
-    var names: js.Array[Any]
+    /**
+      * The names of the current navigator
+      */
+    var names: js.Array[Any] = js.native
     
-    var onChange: CalendarNavigatorTemplateChangeCallback
+    /**
+      * Navigator change callback
+      * @param {React.SyntheticEvent} event - Browser event
+      * @param {string | number | null} [value] - The value of current navigator
+      */
+    def onChange(event: SyntheticEvent[Element, Event]): Unit = js.native
+    def onChange(event: SyntheticEvent[Element, Event], value: String): Unit = js.native
+    def onChange(event: SyntheticEvent[Element, Event], value: Double): Unit = js.native
     
-    var options: js.Array[Any]
+    /**
+      * The options of the current navigator
+      */
+    var options: js.Array[Any] = js.native
     
-    var props: Any
+    /**
+      * The props of Calendar component
+      */
+    var props: CalendarProps = js.native
     
-    var value: js.UndefOr[String | Double | Null] = js.undefined
-  }
-  object CalendarNavigatorTemplateParams {
-    
-    inline def apply(
-      className: String,
-      names: js.Array[Any],
-      onChange: (/* event */ SyntheticEvent[Element, Event], /* value */ js.UndefOr[String | Double | Null]) => Unit,
-      options: js.Array[Any],
-      props: Any
-    ): CalendarNavigatorTemplateParams = {
-      val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], names = names.asInstanceOf[js.Any], onChange = js.Any.fromFunction2(onChange), options = options.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any])
-      __obj.asInstanceOf[CalendarNavigatorTemplateParams]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: CalendarNavigatorTemplateParams] (val x: Self) extends AnyVal {
-      
-      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
-      
-      inline def setElement(value: ReactNode): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
-      
-      inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
-      
-      inline def setNames(value: js.Array[Any]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
-      
-      inline def setNamesVarargs(value: Any*): Self = StObject.set(x, "names", js.Array(value*))
-      
-      inline def setOnChange(
-        value: (/* event */ SyntheticEvent[Element, Event], /* value */ js.UndefOr[String | Double | Null]) => Unit
-      ): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
-      
-      inline def setOptions(value: js.Array[Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
-      
-      inline def setOptionsVarargs(value: Any*): Self = StObject.set(x, "options", js.Array(value*))
-      
-      inline def setProps(value: Any): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
-      
-      inline def setValue(value: String | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
-      
-      inline def setValueNull: Self = StObject.set(x, "value", null)
-      
-      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
-    }
+    /**
+      * The value of the current navigator
+      */
+    var value: js.UndefOr[String | Double | Null] = js.native
   }
   
   trait CalendarProps extends StObject {
     
-    var appendTo: js.UndefOr[CalendarAppendToType] = js.undefined
+    /**
+      * DOM element instance where the overlay panel should be mounted. Valid values are any DOM Element and "self". The "self" value is used to render a component where it is located.
+      * @defaultValue document.body
+      */
+    var appendTo: js.UndefOr[self | HTMLElement | Null] = js.undefined
     
+    /**
+      * Establishes relationships between the component and label(s) where its value should be one or more element IDs.
+      */
     var ariaLabelledBy: js.UndefOr[String] = js.undefined
     
+    /**
+      * Whether to automatically manage layering.
+      * @defaultValue true
+      */
     var autoZIndex: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Base zIndex value to use in layering.
+      * @defaultValue 0
+      */
     var baseZIndex: js.UndefOr[Double] = js.undefined
     
+    /**
+      * Used to get the child elements of the component.
+      * @readonly
+      */
     var children: js.UndefOr[ReactNode] = js.undefined
     
+    /**
+      * Style class of the element.
+      */
     var className: js.UndefOr[String] = js.undefined
     
+    /**
+      * Style class of the clear button.
+      * @defaultValue p-secondary-button
+      */
     var clearButtonClassName: js.UndefOr[String] = js.undefined
     
+    /**
+      * Format of the date.
+      * @defaultValue mm/dd/yy
+      */
     var dateFormat: js.UndefOr[String] = js.undefined
     
-    var dateTemplate: js.UndefOr[js.Function1[/* e */ CalendarDateTemplateParams, ReactNode]] = js.undefined
+    /**
+      * Function that gets a date information and returns the cell content in datepicker.
+      * @param {CalendarDateTemplateEvent} event - Custom date template event
+      * @return {React.ReactNode}
+      */
+    var dateTemplate: js.UndefOr[js.Function1[/* event */ CalendarDateTemplateEvent, ReactNode]] = js.undefined
     
-    var decadeTempate: js.UndefOr[js.Function1[/* yearValues */ js.Array[Double], ReactNode]] = js.undefined
+    /**
+      * Function that gets a navigator information and returns the decade selections in the panel.
+      * @param {number[]} yearValues - The values of years
+      * @return {React.ReactNode}
+      */
+    var decadeTemplate: js.UndefOr[js.Function1[/* yearValues */ js.Array[Double], ReactNode]] = js.undefined
     
+    /**
+      * Icon to show in each of the decrement buttons.
+      */
+    var decrementIcon: js.UndefOr[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconType<CalendarProps> */ Any
+      ] = js.undefined
+    
+    /**
+      * When specified, disables the component.
+      * @defaultValue false
+      */
     var disabled: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Array with dates to disable.
+      */
     var disabledDates: js.UndefOr[js.Array[js.Date]] = js.undefined
     
+    /**
+      * Array with disabled weekday numbers.
+      */
     var disabledDays: js.UndefOr[js.Array[Double]] = js.undefined
     
+    /**
+      * Custom footer template of overlay.
+      * @return {React.ReactNode}
+      */
     var footerTemplate: js.UndefOr[js.Function0[ReactNode]] = js.undefined
     
+    /**
+      * Function for overriding default behavior that formats a Date to the string representation.
+      * @param {Date} date - Formating date
+      * @return {string} Formatted date
+      */
     var formatDateTime: js.UndefOr[js.Function1[/* date */ js.Date, String]] = js.undefined
     
+    /**
+      * Custom header template of overlay.
+      * @return {React.ReactNode}
+      */
     var headerTemplate: js.UndefOr[js.Function0[ReactNode]] = js.undefined
     
+    /**
+      * Whether to hide the overlay on date selection when showTime is enabled.
+      * @defaultValue false
+      */
     var hideOnDateTimeSelect: js.UndefOr[Boolean] = js.undefined
     
-    var hourFormat: js.UndefOr[String] = js.undefined
+    /**
+      * Specifies 12 or 24 hour format.
+      * @defaultValue 24
+      */
+    var hourFormat: js.UndefOr[`12` | `24`] = js.undefined
     
+    /**
+      * Icon of the calendar button.
+      */
     var icon: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconType<CalendarProps> */ Any
       ] = js.undefined
     
-    var iconPos: js.UndefOr[CalendarIconPosType] = js.undefined
+    /**
+      * Icon position of the calendar button.
+      * @defaultValue right
+      */
+    var iconPos: js.UndefOr[left | right] = js.undefined
     
+    /**
+      * Unique identifier of the element.
+      */
     var id: js.UndefOr[String] = js.undefined
     
+    /**
+      * Icon to show in each of the increment buttons.
+      */
+    var incrementIcon: js.UndefOr[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconType<CalendarProps> */ Any
+      ] = js.undefined
+    
+    /**
+      * When enabled, displays the calendar as inline instead of an overlay.
+      * @defaultValue false
+      */
     var `inline`: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Style class of the input element.
+      */
     var inputClassName: js.UndefOr[String] = js.undefined
     
+    /**
+      * Identifier of the input element.
+      */
     var inputId: js.UndefOr[String] = js.undefined
     
+    /**
+      * Reference of the input element.
+      */
     var inputRef: js.UndefOr[Ref[HTMLInputElement]] = js.undefined
     
+    /**
+      * Inline style of the input field.
+      */
     var inputStyle: js.UndefOr[CSSProperties] = js.undefined
     
+    /**
+      * Keep invalid value when input blur.
+      * @defaultValue false
+      */
     var keepInvalid: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Used to display the values ​​of the locale object defined in the Locale API.
+      * @defaultValue en
+      */
     var locale: js.UndefOr[String] = js.undefined
     
+    /**
+      * Mask pattern for input element.
+      */
     var mask: js.UndefOr[String] = js.undefined
     
+    /**
+      * The maximum selectable date.
+      */
     var maxDate: js.UndefOr[js.Date] = js.undefined
     
+    /**
+      * Maximum number of selectable dates in multiple mode.
+      */
     var maxDateCount: js.UndefOr[Double] = js.undefined
     
+    /**
+      * The minimum selectable date.
+      */
     var minDate: js.UndefOr[js.Date] = js.undefined
     
+    /**
+      * Whether the month should be rendered as a dropdown instead of text.
+      * @deprecated since v6. Navigator is always on.
+      * @defaultValue false
+      */
     var monthNavigator: js.UndefOr[Boolean] = js.undefined
     
-    var monthNavigatorTemplate: js.UndefOr[js.Function1[/* e */ CalendarMonthNavigatorTemplateParams, ReactNode]] = js.undefined
+    /**
+      * Function that gets a navigator information and returns the navigator element in header.
+      * @param {CalendarMonthNavigatorTemplateEvent} event - Custom month navigator template event.
+      * @return {React.ReactNode}
+      */
+    var monthNavigatorTemplate: js.UndefOr[js.Function1[/* event */ CalendarMonthNavigatorTemplateEvent, ReactNode]] = js.undefined
     
+    /**
+      * Name of the input element.
+      */
     var name: js.UndefOr[String] = js.undefined
     
+    /**
+      * Icon to show in the next button.
+      */
+    var nextIcon: js.UndefOr[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconType<CalendarProps> */ Any
+      ] = js.undefined
+    
+    /**
+      * Number of months to display.
+      * @defaultValue 1
+      */
     var numberOfMonths: js.UndefOr[Double] = js.undefined
     
+    /**
+      * Callback to invoke on blur event of input field.
+      * @param {React.FocusEvent<HTMLInputElement>} event - Browser event
+      */
     var onBlur: js.UndefOr[js.Function1[/* event */ FocusEvent[HTMLInputElement, Element], Unit]] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* e */ CalendarChangeParams, Unit]] = js.undefined
+    /**
+      * Callback to invoke when value changes.
+      * @param {CalendarChangeEvent} event - Custom change event
+      */
+    var onChange: js.UndefOr[js.Function1[/* event */ CalendarChangeEvent, Unit]] = js.undefined
     
+    /**
+      * Callback to invoke when clear button is clicked.
+      * @param {React.MouseEvent<HTMLButtonElement>} event - Browser event
+      */
     var onClearButtonClick: js.UndefOr[js.Function1[/* event */ MouseEvent[HTMLButtonElement, NativeMouseEvent], Unit]] = js.undefined
     
+    /**
+      * Callback to invoke on focus event of input field.
+      * @param {React.FocusEvent<HTMLInputElement>} event - Browser event
+      */
     var onFocus: js.UndefOr[js.Function1[/* event */ FocusEvent[HTMLInputElement, Element], Unit]] = js.undefined
     
+    /**
+      * Callback to invoke when overlay panel or modal becomes hidden.
+      */
     var onHide: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onInput: js.UndefOr[js.Function1[/* event */ FormEvent[HTMLInputElement], Unit]] = js.undefined
+    /**
+      * Callback to invoke on input event of input field.
+      * @param {React.FormEvent<HTMLInputElement>} event - Browser event
+      */
+    var onInput: js.UndefOr[js.Function1[/* event */ typings.react.mod.FormEvent[HTMLInputElement], Unit]] = js.undefined
     
-    var onMonthChange: js.UndefOr[js.Function1[/* e */ CalendarMonthChangeParams, Unit]] = js.undefined
+    /**
+      * Callback to invoke when month changes.
+      * @param {CalendarMonthChangeEvent} event - Custom month change event
+      */
+    var onMonthChange: js.UndefOr[js.Function1[/* event */ CalendarMonthChangeEvent, Unit]] = js.undefined
     
-    var onSelect: js.UndefOr[js.Function1[/* e */ CalendarSelectParams, Unit]] = js.undefined
+    /**
+      * Callback to invoke when a date is selected.
+      * @param {CalendarSelectEvent} event - Custom select event
+      */
+    var onSelect: js.UndefOr[js.Function1[/* event */ CalendarSelectEvent, Unit]] = js.undefined
     
+    /**
+      * Callback to invoke when overlay panel or modal becomes visible.
+      */
     var onShow: js.UndefOr[js.Function0[Unit]] = js.undefined
     
+    /**
+      * Callback to invoke when today button is clicked.
+      * @param {React.MouseEvent<HTMLButtonElement>} event - Browser event
+      */
     var onTodayButtonClick: js.UndefOr[js.Function1[/* event */ MouseEvent[HTMLButtonElement, NativeMouseEvent], Unit]] = js.undefined
     
-    var onViewDateChange: js.UndefOr[js.Function1[/* e */ CalendarViewChangeParams, Unit]] = js.undefined
+    /**
+      * Callback to invoke when the displayed month/year is changed.
+      * @param {CalendarViewChangeEvent} event - Custom view change event
+      */
+    var onViewDateChange: js.UndefOr[js.Function1[/* event */ CalendarViewChangeEvent, Unit]] = js.undefined
     
-    var onVisibleChange: js.UndefOr[js.Function1[/* e */ CalendarVisibleChangeParams, Unit]] = js.undefined
+    /**
+      * Callback to invoke when visible is changed.
+      * @param {CalendarVisibleChangeEvent} event - Custom visible change event
+      */
+    var onVisibleChange: js.UndefOr[js.Function1[/* event */ CalendarVisibleChangeEvent, Unit]] = js.undefined
     
+    /**
+      * Style class of the datetimepicker panel.
+      */
     var panelClassName: js.UndefOr[String] = js.undefined
     
+    /**
+      * Inline style of the datetimepicker panel.
+      */
     var panelStyle: js.UndefOr[CSSProperties] = js.undefined
     
+    /**
+      * Function for overriding default behavior that parses text into the Date.
+      * @param {string} text - Parsing date
+      * @return {Date} Parsed date
+      */
     var parseDateTime: js.UndefOr[js.Function1[/* text */ String, js.Date]] = js.undefined
     
+    /**
+      * Placeholder text for the input.
+      */
     var placeholder: js.UndefOr[String] = js.undefined
     
+    /**
+      * Icon to show in the previous button.
+      */
+    var prevIcon: js.UndefOr[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconType<CalendarProps> */ Any
+      ] = js.undefined
+    
+    /**
+      * When specified, prevents entering the date manually with keyboard.
+      * @defaultValue false
+      */
     var readOnlyInput: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * When present, it specifies that an input field must be filled out before submitting the form.
+      * @defaultValue false
+      */
     var required: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Whether days in other months shown before or after the current month are selectable. This only applies if the showOtherMonths option is set to true.
+      * @defaultValue false
+      */
     var selectOtherMonths: js.UndefOr[Boolean] = js.undefined
     
-    var selectionMode: js.UndefOr[String] = js.undefined
+    /**
+      * Specifies the selection mode.
+      * @defaultValue single
+      */
+    var selectionMode: js.UndefOr[single | multiple | range] = js.undefined
     
+    /**
+      * The cutoff year for determining the century for a date.
+      * @defaultValue +10
+      */
     var shortYearCutoff: js.UndefOr[String] = js.undefined
     
+    /**
+      * Whether to display today and clear buttons at the footer
+      * @defaultValue false
+      */
     var showButtonBar: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * When enabled, displays a button with icon next to input.
+      * @defaultValue false
+      */
     var showIcon: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Whether to show the milliseconds in time picker.
+      * @defaultValue false
+      */
     var showMillisec: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Whether to allow navigation past min/max dates.
+      * @defaultValue false
+      */
     var showMinMaxRange: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * When disabled, datepicker will not be visible with input focus.
+      * @defaultValue true
+      */
     var showOnFocus: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Whether to display dates in other months (non-selectable) at the start or end of the current month. To make these days selectable use the selectOtherMonths option.
+      * @defaultValue true
+      */
     var showOtherMonths: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Whether to show the seconds in time picker.
+      * @defaultValue false
+      */
     var showSeconds: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Whether to display timepicker.
+      * @defaultValue false
+      */
     var showTime: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * When enabled, calendar will show week numbers.
+      * @defaultValue false
+      */
     var showWeek: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Hours to change per step.
+      * @defaultValue 1
+      */
     var stepHour: js.UndefOr[Double] = js.undefined
     
+    /**
+      * Milliseconds to change per step.
+      * @defaultValue 1
+      */
     var stepMillisec: js.UndefOr[Double] = js.undefined
     
+    /**
+      * Minutes to change per step.
+      * @defaultValue 1
+      */
     var stepMinute: js.UndefOr[Double] = js.undefined
     
+    /**
+      * Seconds to change per step.
+      * @defaultValue 1
+      */
     var stepSecond: js.UndefOr[Double] = js.undefined
     
+    /**
+      * Inline style of the element.
+      */
     var style: js.UndefOr[CSSProperties] = js.undefined
     
+    /**
+      * Index of the element in tabbing order.
+      */
     var tabIndex: js.UndefOr[Double] = js.undefined
     
+    /**
+      * Whether to display timepicker only.
+      * @defaultValue false
+      */
     var timeOnly: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Style class of the today button.
+      * @defaultValue p-secondary-button
+      */
     var todayButtonClassName: js.UndefOr[String] = js.undefined
     
+    /**
+      * Content of the tooltip.
+      */
     var tooltip: js.UndefOr[String] = js.undefined
     
+    /**
+      * Configuration of the tooltip, refer to the tooltip documentation for more information.
+      * @type {TooltipOptions}
+      */
     var tooltipOptions: js.UndefOr[TooltipOptions] = js.undefined
     
+    /**
+      * When enabled, calendar overlay is displayed as optimized for touch devices.
+      * @defaultValue false
+      */
     var touchUI: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * The properties of CSSTransition can be customized, except for "nodeRef" and "in" properties.
+      * @type {CSSTransitionProps}
+      */
     var transitionOptions: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSSTransitionProps */ Any
       ] = js.undefined
     
-    var value: js.UndefOr[js.Date | js.Array[js.Date]] = js.undefined
+    /**
+      * Value of the component.
+      * @defaultValue null
+      */
+    var value: js.UndefOr[js.Date | js.Array[js.Date] | String | Null] = js.undefined
     
-    var view: js.UndefOr[String] = js.undefined
+    /**
+      * Type of view to display.
+      * @defaultValue date
+      */
+    var view: js.UndefOr[date | month | year] = js.undefined
     
-    var viewDate: js.UndefOr[js.Date] = js.undefined
+    /**
+      * Date instance whose month and year are used to display the calendar.
+      */
+    var viewDate: js.UndefOr[js.Date | Null] = js.undefined
     
+    /**
+      * Specifies the visibility of the overlay.
+      * @defaultValue false
+      */
     var visible: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Whether the year should be rendered as a dropdown instead of text.
+      * @deprecated since v6. Navigator is always on.
+      * @defaultValue false
+      */
     var yearNavigator: js.UndefOr[Boolean] = js.undefined
     
-    var yearNavigatorTemplate: js.UndefOr[js.Function1[/* e */ CalendarYearNavigatorTemplateParams, ReactNode]] = js.undefined
+    /**
+      * Function that gets a navigator information and returns the navigator in header.
+      * @param {CalendarYearNavigatorTemplateEvent} event - Custom year navigator template event
+      */
+    var yearNavigatorTemplate: js.UndefOr[js.Function1[/* event */ CalendarYearNavigatorTemplateEvent, ReactNode]] = js.undefined
     
+    /**
+      * The range of years displayed in the year drop-down in (nnnn:nnnn) format such as (2000:2020).
+      */
     var yearRange: js.UndefOr[String] = js.undefined
   }
   object CalendarProps {
@@ -456,7 +797,7 @@ object calendarCalendarMod {
     @scala.inline
     implicit open class MutableBuilder[Self <: CalendarProps] (val x: Self) extends AnyVal {
       
-      inline def setAppendTo(value: CalendarAppendToType): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
+      inline def setAppendTo(value: self | HTMLElement): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
       
       inline def setAppendToNull: Self = StObject.set(x, "appendTo", null)
       
@@ -490,13 +831,19 @@ object calendarCalendarMod {
       
       inline def setDateFormatUndefined: Self = StObject.set(x, "dateFormat", js.undefined)
       
-      inline def setDateTemplate(value: /* e */ CalendarDateTemplateParams => ReactNode): Self = StObject.set(x, "dateTemplate", js.Any.fromFunction1(value))
+      inline def setDateTemplate(value: /* event */ CalendarDateTemplateEvent => ReactNode): Self = StObject.set(x, "dateTemplate", js.Any.fromFunction1(value))
       
       inline def setDateTemplateUndefined: Self = StObject.set(x, "dateTemplate", js.undefined)
       
-      inline def setDecadeTempate(value: /* yearValues */ js.Array[Double] => ReactNode): Self = StObject.set(x, "decadeTempate", js.Any.fromFunction1(value))
+      inline def setDecadeTemplate(value: /* yearValues */ js.Array[Double] => ReactNode): Self = StObject.set(x, "decadeTemplate", js.Any.fromFunction1(value))
       
-      inline def setDecadeTempateUndefined: Self = StObject.set(x, "decadeTempate", js.undefined)
+      inline def setDecadeTemplateUndefined: Self = StObject.set(x, "decadeTemplate", js.undefined)
+      
+      inline def setDecrementIcon(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconType<CalendarProps> */ Any
+      ): Self = StObject.set(x, "decrementIcon", value.asInstanceOf[js.Any])
+      
+      inline def setDecrementIconUndefined: Self = StObject.set(x, "decrementIcon", js.undefined)
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
@@ -530,7 +877,7 @@ object calendarCalendarMod {
       
       inline def setHideOnDateTimeSelectUndefined: Self = StObject.set(x, "hideOnDateTimeSelect", js.undefined)
       
-      inline def setHourFormat(value: String): Self = StObject.set(x, "hourFormat", value.asInstanceOf[js.Any])
+      inline def setHourFormat(value: `12` | `24`): Self = StObject.set(x, "hourFormat", value.asInstanceOf[js.Any])
       
       inline def setHourFormatUndefined: Self = StObject.set(x, "hourFormat", js.undefined)
       
@@ -538,7 +885,7 @@ object calendarCalendarMod {
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconType<CalendarProps> */ Any
       ): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
-      inline def setIconPos(value: CalendarIconPosType): Self = StObject.set(x, "iconPos", value.asInstanceOf[js.Any])
+      inline def setIconPos(value: left | right): Self = StObject.set(x, "iconPos", value.asInstanceOf[js.Any])
       
       inline def setIconPosUndefined: Self = StObject.set(x, "iconPos", js.undefined)
       
@@ -547,6 +894,12 @@ object calendarCalendarMod {
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
       inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      
+      inline def setIncrementIcon(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconType<CalendarProps> */ Any
+      ): Self = StObject.set(x, "incrementIcon", value.asInstanceOf[js.Any])
+      
+      inline def setIncrementIconUndefined: Self = StObject.set(x, "incrementIcon", js.undefined)
       
       inline def setInline(value: Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
       
@@ -598,7 +951,7 @@ object calendarCalendarMod {
       
       inline def setMonthNavigator(value: Boolean): Self = StObject.set(x, "monthNavigator", value.asInstanceOf[js.Any])
       
-      inline def setMonthNavigatorTemplate(value: /* e */ CalendarMonthNavigatorTemplateParams => ReactNode): Self = StObject.set(x, "monthNavigatorTemplate", js.Any.fromFunction1(value))
+      inline def setMonthNavigatorTemplate(value: /* event */ CalendarMonthNavigatorTemplateEvent => ReactNode): Self = StObject.set(x, "monthNavigatorTemplate", js.Any.fromFunction1(value))
       
       inline def setMonthNavigatorTemplateUndefined: Self = StObject.set(x, "monthNavigatorTemplate", js.undefined)
       
@@ -608,6 +961,12 @@ object calendarCalendarMod {
       
       inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
+      inline def setNextIcon(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconType<CalendarProps> */ Any
+      ): Self = StObject.set(x, "nextIcon", value.asInstanceOf[js.Any])
+      
+      inline def setNextIconUndefined: Self = StObject.set(x, "nextIcon", js.undefined)
+      
       inline def setNumberOfMonths(value: Double): Self = StObject.set(x, "numberOfMonths", value.asInstanceOf[js.Any])
       
       inline def setNumberOfMonthsUndefined: Self = StObject.set(x, "numberOfMonths", js.undefined)
@@ -616,7 +975,7 @@ object calendarCalendarMod {
       
       inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
-      inline def setOnChange(value: /* e */ CalendarChangeParams => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* event */ CalendarChangeEvent => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
@@ -632,15 +991,15 @@ object calendarCalendarMod {
       
       inline def setOnHideUndefined: Self = StObject.set(x, "onHide", js.undefined)
       
-      inline def setOnInput(value: /* event */ FormEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onInput", js.Any.fromFunction1(value))
+      inline def setOnInput(value: /* event */ typings.react.mod.FormEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onInput", js.Any.fromFunction1(value))
       
       inline def setOnInputUndefined: Self = StObject.set(x, "onInput", js.undefined)
       
-      inline def setOnMonthChange(value: /* e */ CalendarMonthChangeParams => Unit): Self = StObject.set(x, "onMonthChange", js.Any.fromFunction1(value))
+      inline def setOnMonthChange(value: /* event */ CalendarMonthChangeEvent => Unit): Self = StObject.set(x, "onMonthChange", js.Any.fromFunction1(value))
       
       inline def setOnMonthChangeUndefined: Self = StObject.set(x, "onMonthChange", js.undefined)
       
-      inline def setOnSelect(value: /* e */ CalendarSelectParams => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
+      inline def setOnSelect(value: /* event */ CalendarSelectEvent => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
       
       inline def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
       
@@ -652,11 +1011,11 @@ object calendarCalendarMod {
       
       inline def setOnTodayButtonClickUndefined: Self = StObject.set(x, "onTodayButtonClick", js.undefined)
       
-      inline def setOnViewDateChange(value: /* e */ CalendarViewChangeParams => Unit): Self = StObject.set(x, "onViewDateChange", js.Any.fromFunction1(value))
+      inline def setOnViewDateChange(value: /* event */ CalendarViewChangeEvent => Unit): Self = StObject.set(x, "onViewDateChange", js.Any.fromFunction1(value))
       
       inline def setOnViewDateChangeUndefined: Self = StObject.set(x, "onViewDateChange", js.undefined)
       
-      inline def setOnVisibleChange(value: /* e */ CalendarVisibleChangeParams => Unit): Self = StObject.set(x, "onVisibleChange", js.Any.fromFunction1(value))
+      inline def setOnVisibleChange(value: /* event */ CalendarVisibleChangeEvent => Unit): Self = StObject.set(x, "onVisibleChange", js.Any.fromFunction1(value))
       
       inline def setOnVisibleChangeUndefined: Self = StObject.set(x, "onVisibleChange", js.undefined)
       
@@ -676,6 +1035,12 @@ object calendarCalendarMod {
       
       inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
       
+      inline def setPrevIcon(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconType<CalendarProps> */ Any
+      ): Self = StObject.set(x, "prevIcon", value.asInstanceOf[js.Any])
+      
+      inline def setPrevIconUndefined: Self = StObject.set(x, "prevIcon", js.undefined)
+      
       inline def setReadOnlyInput(value: Boolean): Self = StObject.set(x, "readOnlyInput", value.asInstanceOf[js.Any])
       
       inline def setReadOnlyInputUndefined: Self = StObject.set(x, "readOnlyInput", js.undefined)
@@ -688,7 +1053,7 @@ object calendarCalendarMod {
       
       inline def setSelectOtherMonthsUndefined: Self = StObject.set(x, "selectOtherMonths", js.undefined)
       
-      inline def setSelectionMode(value: String): Self = StObject.set(x, "selectionMode", value.asInstanceOf[js.Any])
+      inline def setSelectionMode(value: single | multiple | range): Self = StObject.set(x, "selectionMode", value.asInstanceOf[js.Any])
       
       inline def setSelectionModeUndefined: Self = StObject.set(x, "selectionMode", js.undefined)
       
@@ -782,15 +1147,19 @@ object calendarCalendarMod {
       
       inline def setTransitionOptionsUndefined: Self = StObject.set(x, "transitionOptions", js.undefined)
       
-      inline def setValue(value: js.Date | js.Array[js.Date]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Date | js.Array[js.Date] | String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      
+      inline def setValueNull: Self = StObject.set(x, "value", null)
       
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
       inline def setValueVarargs(value: js.Date*): Self = StObject.set(x, "value", js.Array(value*))
       
-      inline def setView(value: String): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+      inline def setView(value: date | month | year): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
       
       inline def setViewDate(value: js.Date): Self = StObject.set(x, "viewDate", value.asInstanceOf[js.Any])
+      
+      inline def setViewDateNull: Self = StObject.set(x, "viewDate", null)
       
       inline def setViewDateUndefined: Self = StObject.set(x, "viewDate", js.undefined)
       
@@ -802,7 +1171,7 @@ object calendarCalendarMod {
       
       inline def setYearNavigator(value: Boolean): Self = StObject.set(x, "yearNavigator", value.asInstanceOf[js.Any])
       
-      inline def setYearNavigatorTemplate(value: /* e */ CalendarYearNavigatorTemplateParams => ReactNode): Self = StObject.set(x, "yearNavigatorTemplate", js.Any.fromFunction1(value))
+      inline def setYearNavigatorTemplate(value: /* event */ CalendarYearNavigatorTemplateEvent => ReactNode): Self = StObject.set(x, "yearNavigatorTemplate", js.Any.fromFunction1(value))
       
       inline def setYearNavigatorTemplateUndefined: Self = StObject.set(x, "yearNavigatorTemplate", js.undefined)
       
@@ -814,45 +1183,70 @@ object calendarCalendarMod {
     }
   }
   
-  trait CalendarSelectParams extends StObject {
+  /**
+    * Custom Select event
+    * @see {@link CalendarProps.onSelect}
+    */
+  trait CalendarSelectEvent extends StObject {
     
+    /**
+      * Browser event
+      */
     var originalEvent: SyntheticEvent[Element, Event]
     
-    var value: js.Date | js.Array[js.Date]
+    /**
+      * Selected date
+      */
+    var value: Nullable[js.Date | js.Array[js.Date] | String]
   }
-  object CalendarSelectParams {
+  object CalendarSelectEvent {
     
-    inline def apply(originalEvent: SyntheticEvent[Element, Event], value: js.Date | js.Array[js.Date]): CalendarSelectParams = {
-      val __obj = js.Dynamic.literal(originalEvent = originalEvent.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.asInstanceOf[CalendarSelectParams]
+    inline def apply(originalEvent: SyntheticEvent[Element, Event]): CalendarSelectEvent = {
+      val __obj = js.Dynamic.literal(originalEvent = originalEvent.asInstanceOf[js.Any])
+      __obj.asInstanceOf[CalendarSelectEvent]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: CalendarSelectParams] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: CalendarSelectEvent] (val x: Self) extends AnyVal {
       
       inline def setOriginalEvent(value: SyntheticEvent[Element, Event]): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
-      inline def setValue(value: js.Date | js.Array[js.Date]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Nullable[js.Date | js.Array[js.Date] | String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      
+      inline def setValueNull: Self = StObject.set(x, "value", null)
+      
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
       inline def setValueVarargs(value: js.Date*): Self = StObject.set(x, "value", js.Array(value*))
     }
   }
   
-  trait CalendarViewChangeParams extends StObject {
+  /**
+    * Custom view change event
+    * @see {@link CalendarProps.onViewDateChange}
+    * @event
+    */
+  trait CalendarViewChangeEvent extends StObject {
     
+    /**
+      * Browser event
+      */
     var originalEvent: SyntheticEvent[Element, Event]
     
+    /**
+      * New date
+      */
     var value: js.Date
   }
-  object CalendarViewChangeParams {
+  object CalendarViewChangeEvent {
     
-    inline def apply(originalEvent: SyntheticEvent[Element, Event], value: js.Date): CalendarViewChangeParams = {
+    inline def apply(originalEvent: SyntheticEvent[Element, Event], value: js.Date): CalendarViewChangeEvent = {
       val __obj = js.Dynamic.literal(originalEvent = originalEvent.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.asInstanceOf[CalendarViewChangeParams]
+      __obj.asInstanceOf[CalendarViewChangeEvent]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: CalendarViewChangeParams] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: CalendarViewChangeEvent] (val x: Self) extends AnyVal {
       
       inline def setOriginalEvent(value: SyntheticEvent[Element, Event]): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
@@ -860,29 +1254,43 @@ object calendarCalendarMod {
     }
   }
   
-  trait CalendarVisibleChangeParams extends StObject {
+  /**
+    * Custom visible change event
+    * @see {@link CalendarProps.onVisibleChange}
+    * @event
+    */
+  trait CalendarVisibleChangeEvent extends StObject {
     
+    /**
+      *  Used to refocus the input field in some cases when the overlay is hidden.
+      */
     var callback: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var `type`: CalendarVisibleType
+    /**
+      * The type of visible action when the overlay is visible/hidden.
+      */
+    var `type`: js.UndefOr[outside | dateselect | Null] = js.undefined
     
+    /**
+      * Whether the overlay is opened.
+      */
     var visible: Boolean
   }
-  object CalendarVisibleChangeParams {
+  object CalendarVisibleChangeEvent {
     
-    inline def apply(visible: Boolean): CalendarVisibleChangeParams = {
+    inline def apply(visible: Boolean): CalendarVisibleChangeEvent = {
       val __obj = js.Dynamic.literal(visible = visible.asInstanceOf[js.Any])
-      __obj.asInstanceOf[CalendarVisibleChangeParams]
+      __obj.asInstanceOf[CalendarVisibleChangeEvent]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: CalendarVisibleChangeParams] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: CalendarVisibleChangeEvent] (val x: Self) extends AnyVal {
       
       inline def setCallback(value: () => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
       
       inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
       
-      inline def setType(value: CalendarVisibleType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: outside | dateselect): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
       inline def setTypeNull: Self = StObject.set(x, "type", null)
       
@@ -892,15 +1300,11 @@ object calendarCalendarMod {
     }
   }
   
-  /* Rewritten from type alias, can be one of: 
-    - typings.primereact.primereactStrings.outside
-    - typings.primereact.primereactStrings.dateselect
-    - scala.Unit
-    - scala.Null
-  */
-  type CalendarVisibleType = js.UndefOr[_CalendarVisibleType | Null]
-  
-  type CalendarYearNavigatorTemplateParams = CalendarNavigatorTemplateParams
-  
-  trait _CalendarVisibleType extends StObject
+  /**
+    * Custom year navigator template event
+    * @see {@link CalendarProps.yearNavigatorTemplate}
+    * @extends {CalendarNavigatorTemplateEvent}
+    * @event
+    */
+  type CalendarYearNavigatorTemplateEvent = CalendarNavigatorTemplateEvent
 }

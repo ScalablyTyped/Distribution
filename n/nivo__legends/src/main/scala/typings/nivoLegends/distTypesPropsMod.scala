@@ -4,6 +4,7 @@ import typings.nivoLegends.anon.On
 import typings.propTypes.mod.InferProps
 import typings.propTypes.mod.Requireable
 import typings.propTypes.mod.Validator
+import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -98,8 +99,8 @@ object distTypesPropsMod {
     
     @JSImport("@nivo/legends/dist/types/props", "LegendPropShape.symbolShape")
     @js.native
-    def symbolShape: Requireable[String | (js.Function1[/* repeated */ Any, Any])] = js.native
-    inline def symbolShape_=(x: Requireable[String | (js.Function1[/* repeated */ Any, Any])]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("symbolShape")(x.asInstanceOf[js.Any])
+    def symbolShape: Requireable[NonNullable[js.UndefOr[String | (js.Function1[/* repeated */ Any, Any]) | Null]]] = js.native
+    inline def symbolShape_=(x: Requireable[NonNullable[js.UndefOr[String | (js.Function1[/* repeated */ Any, Any]) | Null]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("symbolShape")(x.asInstanceOf[js.Any])
     
     @JSImport("@nivo/legends/dist/types/props", "LegendPropShape.symbolSize")
     @js.native

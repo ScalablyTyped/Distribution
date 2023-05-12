@@ -8,7 +8,7 @@ object anon {
   
   trait Dimension extends StObject {
     
-    var dimension: Unit
+    var dimension: UnitString
     
     var `type`: String
     
@@ -16,7 +16,7 @@ object anon {
   }
   object Dimension {
     
-    inline def apply(dimension: Unit, `type`: String, value: String): Dimension = {
+    inline def apply(dimension: UnitString, `type`: String, value: String): Dimension = {
       val __obj = js.Dynamic.literal(dimension = dimension.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Dimension]
@@ -25,7 +25,7 @@ object anon {
     @scala.inline
     implicit open class MutableBuilder[Self <: Dimension] (val x: Self) extends AnyVal {
       
-      inline def setDimension(value: Unit): Self = StObject.set(x, "dimension", value.asInstanceOf[js.Any])
+      inline def setDimension(value: UnitString): Self = StObject.set(x, "dimension", value.asInstanceOf[js.Any])
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -182,17 +182,37 @@ object anon {
   
   trait Unit extends StObject {
     
-    var unit: String
+    var unit: js.UndefOr[String] = js.undefined
   }
   object Unit {
     
-    inline def apply(unit: String): Unit = {
-      val __obj = js.Dynamic.literal(unit = unit.asInstanceOf[js.Any])
+    inline def apply(): Unit = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Unit]
     }
     
     @scala.inline
     implicit open class MutableBuilder[Self <: Unit] (val x: Self) extends AnyVal {
+      
+      inline def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
+      
+      inline def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
+    }
+  }
+  
+  trait UnitString extends StObject {
+    
+    var unit: String
+  }
+  object UnitString {
+    
+    inline def apply(unit: String): UnitString = {
+      val __obj = js.Dynamic.literal(unit = unit.asInstanceOf[js.Any])
+      __obj.asInstanceOf[UnitString]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnitString] (val x: Self) extends AnyVal {
       
       inline def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     }

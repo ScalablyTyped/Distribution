@@ -17,6 +17,12 @@ trait ApplePushNotificationCertificate
   // Certificate serial number. This property is read-only.
   var certificateSerialNumber: js.UndefOr[NullableOption[String]] = js.undefined
   
+  // The reason the certificate upload failed.
+  var certificateUploadFailureReason: js.UndefOr[NullableOption[String]] = js.undefined
+  
+  // The certificate upload status.
+  var certificateUploadStatus: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // The expiration date and time for Apple push notification certificate.
   var expirationDateTime: js.UndefOr[String] = js.undefined
   
@@ -53,6 +59,18 @@ object ApplePushNotificationCertificate {
     inline def setCertificateSerialNumberUndefined: Self = StObject.set(x, "certificateSerialNumber", js.undefined)
     
     inline def setCertificateUndefined: Self = StObject.set(x, "certificate", js.undefined)
+    
+    inline def setCertificateUploadFailureReason(value: NullableOption[String]): Self = StObject.set(x, "certificateUploadFailureReason", value.asInstanceOf[js.Any])
+    
+    inline def setCertificateUploadFailureReasonNull: Self = StObject.set(x, "certificateUploadFailureReason", null)
+    
+    inline def setCertificateUploadFailureReasonUndefined: Self = StObject.set(x, "certificateUploadFailureReason", js.undefined)
+    
+    inline def setCertificateUploadStatus(value: NullableOption[String]): Self = StObject.set(x, "certificateUploadStatus", value.asInstanceOf[js.Any])
+    
+    inline def setCertificateUploadStatusNull: Self = StObject.set(x, "certificateUploadStatus", null)
+    
+    inline def setCertificateUploadStatusUndefined: Self = StObject.set(x, "certificateUploadStatus", js.undefined)
     
     inline def setExpirationDateTime(value: String): Self = StObject.set(x, "expirationDateTime", value.asInstanceOf[js.Any])
     

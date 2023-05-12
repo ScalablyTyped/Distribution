@@ -27,6 +27,9 @@ object xRNativeNativeXRFrameMod {
     @JSName("featurePointCloud")
     def featurePointCloud_MNativeXRFrame: js.UndefOr[js.Array[Double]] = js.native
     
+    /* CompleteClass */
+    override def getDepthInformation(view: XRView): js.UndefOr[XRCPUDepthInformation] = js.native
+    
     val getHitTestResults: Any = js.native
     /* CompleteClass */
     override def getHitTestResults(hitTestSource: XRHitTestSource): js.Array[XRHitTestResult] = js.native
@@ -92,6 +95,7 @@ object xRNativeNativeXRFrameMod {
   object INativeXRFrame {
     
     inline def apply(
+      getDepthInformation: XRView => js.UndefOr[XRCPUDepthInformation],
       getHitTestResults: XRHitTestSource => js.Array[XRHitTestResult],
       getHitTestResultsForTransientInput: XRTransientInputHitTestSource => js.Array[XRTransientInputHitTestResult],
       getLightEstimate: XRLightProbe => XRLightEstimate,
@@ -100,7 +104,7 @@ object xRNativeNativeXRFrameMod {
       getViewerPose: XRReferenceSpace => js.UndefOr[XRViewerPose],
       session: XRSession
     ): INativeXRFrame = {
-      val __obj = js.Dynamic.literal(getHitTestResults = js.Any.fromFunction1(getHitTestResults), getHitTestResultsForTransientInput = js.Any.fromFunction1(getHitTestResultsForTransientInput), getLightEstimate = js.Any.fromFunction1(getLightEstimate), getPose = js.Any.fromFunction2(getPose), getPoseData = js.Any.fromFunction4(getPoseData), getViewerPose = js.Any.fromFunction1(getViewerPose), session = session.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(getDepthInformation = js.Any.fromFunction1(getDepthInformation), getHitTestResults = js.Any.fromFunction1(getHitTestResults), getHitTestResultsForTransientInput = js.Any.fromFunction1(getHitTestResultsForTransientInput), getLightEstimate = js.Any.fromFunction1(getLightEstimate), getPose = js.Any.fromFunction2(getPose), getPoseData = js.Any.fromFunction4(getPoseData), getViewerPose = js.Any.fromFunction1(getViewerPose), session = session.asInstanceOf[js.Any])
       __obj.asInstanceOf[INativeXRFrame]
     }
     

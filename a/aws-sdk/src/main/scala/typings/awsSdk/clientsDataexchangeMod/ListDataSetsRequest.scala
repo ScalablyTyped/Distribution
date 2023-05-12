@@ -14,12 +14,12 @@ trait ListDataSetsRequest extends StObject {
   /**
     * The token value retrieved from a previous call to access the next page of results.
     */
-  var NextToken: js.UndefOr[string] = js.undefined
+  var NextToken: js.UndefOr[_String] = js.undefined
   
   /**
     * A property that defines the data set as OWNED by the account (for providers) or ENTITLED to the account (for subscribers).
     */
-  var Origin: js.UndefOr[string] = js.undefined
+  var Origin: js.UndefOr[_String] = js.undefined
 }
 object ListDataSetsRequest {
   
@@ -35,11 +35,11 @@ object ListDataSetsRequest {
     
     inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    inline def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: _String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
     inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    inline def setOrigin(value: string): Self = StObject.set(x, "Origin", value.asInstanceOf[js.Any])
+    inline def setOrigin(value: _String): Self = StObject.set(x, "Origin", value.asInstanceOf[js.Any])
     
     inline def setOriginUndefined: Self = StObject.set(x, "Origin", js.undefined)
   }

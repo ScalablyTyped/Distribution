@@ -8,8 +8,6 @@ trait KeygenHTMLAttributes[T]
   extends StObject
      with HTMLAttributes[T] {
   
-  var autoFocus: js.UndefOr[Boolean] = js.undefined
-  
   var challenge: js.UndefOr[String] = js.undefined
   
   var disabled: js.UndefOr[Boolean] = js.undefined
@@ -31,10 +29,6 @@ object KeygenHTMLAttributes {
   
   @scala.inline
   implicit open class MutableBuilder[Self <: KeygenHTMLAttributes[?], T] (val x: Self & KeygenHTMLAttributes[T]) extends AnyVal {
-    
-    inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
-    
-    inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
     
     inline def setChallenge(value: String): Self = StObject.set(x, "challenge", value.asInstanceOf[js.Any])
     

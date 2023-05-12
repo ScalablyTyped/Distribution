@@ -203,6 +203,8 @@ object tsdefRoomMod {
     
     var participants: Map[SID, RemoteParticipant] = js.native
     
+    def refreshInactiveMedia(): Unit = js.native
+    
     var sid: typings.twilioVideo.tsdefRoomMod.Room.SID = js.native
     
     var state: String = js.native

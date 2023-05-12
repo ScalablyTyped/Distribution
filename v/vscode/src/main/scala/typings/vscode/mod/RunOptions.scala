@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RunOptions extends StObject {
   
   /**
-    * Controls whether task variables are re-evaluated on rerun.
-    */
+  		 * Controls whether task variables are re-evaluated on rerun.
+  		 */
   var reevaluateOnRerun: js.UndefOr[Boolean] = js.undefined
 }
 object RunOptions {

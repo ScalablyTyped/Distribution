@@ -1,5 +1,6 @@
 package typings.vueCompilerCore.mod
 
+import typings.std.Set
 import typings.vueCompilerCore.vueCompilerCoreInts.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -7,8 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RootNode
   extends StObject
-     with Node2
-     with ParentNode2 {
+     with Node
+     with ParentNode {
   
   var cached: Double
   
@@ -22,7 +23,7 @@ trait RootNode
   
   var filters: js.UndefOr[js.Array[String]] = js.undefined
   
-  var helpers: js.Array[js.Symbol]
+  var helpers: Set[js.Symbol]
   
   var hoists: js.Array[JSChildNode | Null]
   
@@ -42,7 +43,7 @@ object RootNode {
     children: js.Array[TemplateChildNode],
     components: js.Array[String],
     directives: js.Array[String],
-    helpers: js.Array[js.Symbol],
+    helpers: Set[js.Symbol],
     hoists: js.Array[JSChildNode | Null],
     imports: js.Array[ImportItem],
     loc: SourceLocation,
@@ -80,9 +81,7 @@ object RootNode {
     
     inline def setFiltersVarargs(value: String*): Self = StObject.set(x, "filters", js.Array(value*))
     
-    inline def setHelpers(value: js.Array[js.Symbol]): Self = StObject.set(x, "helpers", value.asInstanceOf[js.Any])
-    
-    inline def setHelpersVarargs(value: js.Symbol*): Self = StObject.set(x, "helpers", js.Array(value*))
+    inline def setHelpers(value: Set[js.Symbol]): Self = StObject.set(x, "helpers", value.asInstanceOf[js.Any])
     
     inline def setHoists(value: js.Array[JSChildNode | Null]): Self = StObject.set(x, "hoists", value.asInstanceOf[js.Any])
     

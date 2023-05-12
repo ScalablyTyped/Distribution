@@ -436,6 +436,11 @@ trait IParticleSystem extends StObject {
   var id: String = js.native
   
   /**
+    * Gets the index buffer used by the particle system (or null if no index buffer is used)
+    */
+  var indexBuffer: Nullable[DataBuffer] = js.native
+  
+  /**
     * Gets or sets a boolean indicating if a spritesheet is used to animate the particles texture
     */
   var isAnimationSheetEnabled: Boolean = js.native
@@ -756,6 +761,9 @@ trait IParticleSystem extends StObject {
   /** Gets or sets a Vector2 used to move the pivot (by default (0,0)) */
   var translationPivot: Vector2 = js.native
   
+  /** Indicates that the update of particles is done in the animate function (and not in render) */
+  var updateInAnimate: Boolean = js.native
+  
   /**
     * The overall motion speed (0.01 is default update speed, faster updates = faster animation)
     */
@@ -767,9 +775,14 @@ trait IParticleSystem extends StObject {
   var useLogarithmicDepth: Boolean = js.native
   
   /** Gets or sets a boolean indicating that ramp gradients must be used
-    * @see https://doc.babylonjs.com/babylon101/particles#ramp-gradients
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/particles/particle_system/ramps_and_blends
     */
   var useRampGradients: Boolean = js.native
+  
+  /**
+    * Gets the vertex buffers used by the particle system
+    */
+  var vertexBuffers: Immutable[org.scalablytyped.runtime.StringDictionary[VertexBuffer]] = js.native
   
   /**
     * Gets the name of the particle vertex shader

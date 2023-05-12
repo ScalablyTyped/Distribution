@@ -1,7 +1,7 @@
 
 # Scala.js typings for node-abort-controller
 
-Typings are for version 3.0.1
+Typings are for version 3.1.1
 
 ## Library description:
 AbortController for Node based on EventEmitter

@@ -12,7 +12,7 @@ trait TaskOverride extends StObject {
   var containerOverrides: js.UndefOr[ContainerOverrides] = js.undefined
   
   /**
-    * The cpu override for the task.
+    * The CPU override for the task.
     */
   var cpu: js.UndefOr[String] = js.undefined
   
@@ -22,7 +22,7 @@ trait TaskOverride extends StObject {
   var ephemeralStorage: js.UndefOr[EphemeralStorage] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the task execution IAM role override for the task. For more information, see Amazon ECS task execution IAM role in the Amazon Elastic Container Service Developer Guide.
+    * The Amazon Resource Name (ARN) of the task execution role override for the task. For more information, see Amazon ECS task execution IAM role in the Amazon Elastic Container Service Developer Guide.
     */
   var executionRoleArn: js.UndefOr[String] = js.undefined
   
@@ -37,7 +37,7 @@ trait TaskOverride extends StObject {
   var memory: js.UndefOr[String] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the IAM role that containers in this task can assume. All containers in this task are granted the permissions that are specified in this role. For more information, see IAM Role for Tasks in the Amazon Elastic Container Service Developer Guide.
+    * The Amazon Resource Name (ARN) of the role that containers in this task can assume. All containers in this task are granted the permissions that are specified in this role. For more information, see IAM Role for Tasks in the Amazon Elastic Container Service Developer Guide.
     */
   var taskRoleArn: js.UndefOr[String] = js.undefined
 }

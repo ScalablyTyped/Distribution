@@ -42,6 +42,11 @@ trait ConnectorOperator extends StObject {
   var Marketo: js.UndefOr[MarketoConnectorOperator] = js.undefined
   
   /**
+    * The operation to be performed on the provided Salesforce Pardot source fields.
+    */
+  var Pardot: js.UndefOr[PardotConnectorOperator] = js.undefined
+  
+  /**
     *  The operation to be performed on the provided Amazon S3 source fields. 
     */
   var S3: js.UndefOr[S3ConnectorOperator] = js.undefined
@@ -123,6 +128,10 @@ object ConnectorOperator {
     inline def setMarketo(value: MarketoConnectorOperator): Self = StObject.set(x, "Marketo", value.asInstanceOf[js.Any])
     
     inline def setMarketoUndefined: Self = StObject.set(x, "Marketo", js.undefined)
+    
+    inline def setPardot(value: PardotConnectorOperator): Self = StObject.set(x, "Pardot", value.asInstanceOf[js.Any])
+    
+    inline def setPardotUndefined: Self = StObject.set(x, "Pardot", js.undefined)
     
     inline def setS3(value: S3ConnectorOperator): Self = StObject.set(x, "S3", value.asInstanceOf[js.Any])
     

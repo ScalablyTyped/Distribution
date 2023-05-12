@@ -143,6 +143,23 @@ object sapMOverflowToolbarMod {
     def closeOverflow(): Unit = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
+      * This method is a hook for the RenderManager that gets called during the rendering of child Controls.
+      * It allows to add, remove and update existing accessibility attributes (ARIA) of those controls.
+      */
+    def enhanceAccessibilityState(
+      /**
+      * The Control that gets rendered by the RenderManager
+      */
+    oElement: typings.openui5.sapUiCoreControlMod.default,
+      /**
+      * The mapping of "aria-" prefixed attributes
+      */
+    mAriaProps: js.Object
+    ): Unit = js.native
+    
+    /**
       * @SINCE 1.67
       *
       * Gets current value of property {@link #getAsyncMode asyncMode}.

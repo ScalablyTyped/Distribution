@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@sqltools/formatter" : "1.2.3"
+      "@sqltools/formatter" : "1.2.5"
     }
   ],
   "test-dependencies" : [
     {
-      "@sqltools/formatter" : "1.2.3"
+      "@sqltools/formatter" : "1.2.5"
     }
   ],
   "compile-devDependencies" : [

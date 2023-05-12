@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeAgentRequest extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) of the agent to describe.
+    * Specifies the Amazon Resource Name (ARN) of the DataSync agent to describe.
     */
   var AgentArn: typings.awsSdk.clientsDatasyncMod.AgentArn
 }

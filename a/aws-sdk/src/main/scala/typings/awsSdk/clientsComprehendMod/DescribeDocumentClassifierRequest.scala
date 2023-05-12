@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeDocumentClassifierRequest extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) that identifies the document classifier. The operation returns this identifier in its response.
+    * The Amazon Resource Name (ARN) that identifies the document classifier. The CreateDocumentClassifier operation returns this identifier in its response.
     */
   var DocumentClassifierArn: typings.awsSdk.clientsComprehendMod.DocumentClassifierArn
 }

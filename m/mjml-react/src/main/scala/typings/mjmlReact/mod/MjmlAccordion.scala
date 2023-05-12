@@ -12,7 +12,7 @@ open class MjmlAccordion protected ()
   def this(props: MjmlAccordionProps & PaddingProps & ClassNameProps) = this()
   /**
     * @deprecated
-    * @see https://reactjs.org/docs/legacy-context.html
+    * @see https://legacy.reactjs.org/docs/legacy-context.html
     */
   def this(props: MjmlAccordionProps & PaddingProps & ClassNameProps, context: Any) = this()
 }

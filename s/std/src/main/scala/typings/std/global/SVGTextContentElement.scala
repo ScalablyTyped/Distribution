@@ -1,5 +1,8 @@
 package typings.std.global
 
+import typings.std.stdInts.`0`
+import typings.std.stdInts.`1`
+import typings.std.stdInts.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -35,10 +38,6 @@ open class SVGTextContentElement ()
   /* standard dom */
   /* CompleteClass */
   var ariaColIndex: java.lang.String | Null = js.native
-  
-  /* standard dom */
-  /* CompleteClass */
-  var ariaColIndexText: java.lang.String | Null = js.native
   
   /* standard dom */
   /* CompleteClass */
@@ -134,10 +133,6 @@ open class SVGTextContentElement ()
   
   /* standard dom */
   /* CompleteClass */
-  var ariaRowIndexText: java.lang.String | Null = js.native
-  
-  /* standard dom */
-  /* CompleteClass */
   var ariaRowSpan: java.lang.String | Null = js.native
   
   /* standard dom */
@@ -207,15 +202,15 @@ object SVGTextContentElement {
   /* standard dom */
   @JSGlobal("SVGTextContentElement.LENGTHADJUST_SPACING")
   @js.native
-  val LENGTHADJUST_SPACING: Double = js.native
+  val LENGTHADJUST_SPACING: `1` = js.native
   
   /* standard dom */
   @JSGlobal("SVGTextContentElement.LENGTHADJUST_SPACINGANDGLYPHS")
   @js.native
-  val LENGTHADJUST_SPACINGANDGLYPHS: Double = js.native
+  val LENGTHADJUST_SPACINGANDGLYPHS: `2` = js.native
   
   /* standard dom */
   @JSGlobal("SVGTextContentElement.LENGTHADJUST_UNKNOWN")
   @js.native
-  val LENGTHADJUST_UNKNOWN: Double = js.native
+  val LENGTHADJUST_UNKNOWN: `0` = js.native
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DisassociatePrincipalFromPortfolioInput extends StObject {
   
   /**
-    * The language code.    en - English (default)    jp - Japanese    zh - Chinese  
+    * The language code.    jp - Japanese    zh - Chinese  
     */
   var AcceptLanguage: js.UndefOr[typings.awsSdk.clientsServicecatalogMod.AcceptLanguage] = js.undefined
   
@@ -17,9 +17,14 @@ trait DisassociatePrincipalFromPortfolioInput extends StObject {
   var PortfolioId: Id
   
   /**
-    * The ARN of the principal (IAM user, role, or group).
+    * The ARN of the principal (user, role, or group). This field allows an ARN with no accountID if PrincipalType is IAM_PATTERN.
     */
   var PrincipalARN: typings.awsSdk.clientsServicecatalogMod.PrincipalARN
+  
+  /**
+    * The supported value is IAM if you use a fully defined ARN, or IAM_PATTERN if you use no accountID. 
+    */
+  var PrincipalType: js.UndefOr[typings.awsSdk.clientsServicecatalogMod.PrincipalType] = js.undefined
 }
 object DisassociatePrincipalFromPortfolioInput {
   
@@ -38,5 +43,9 @@ object DisassociatePrincipalFromPortfolioInput {
     inline def setPortfolioId(value: Id): Self = StObject.set(x, "PortfolioId", value.asInstanceOf[js.Any])
     
     inline def setPrincipalARN(value: PrincipalARN): Self = StObject.set(x, "PrincipalARN", value.asInstanceOf[js.Any])
+    
+    inline def setPrincipalType(value: PrincipalType): Self = StObject.set(x, "PrincipalType", value.asInstanceOf[js.Any])
+    
+    inline def setPrincipalTypeUndefined: Self = StObject.set(x, "PrincipalType", js.undefined)
   }
 }

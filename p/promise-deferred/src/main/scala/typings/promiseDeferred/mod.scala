@@ -22,13 +22,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object mod {
   
-  // tslint:disable-next-line no-unnecessary-generics
+  // eslint-disable-next-line no-unnecessary-generics
   inline def apply[T](): Deferred[T] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Deferred[T]]
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("promise-deferred", JSImport.Namespace)
   @js.native
-  // tslint:disable-next-line no-unnecessary-generics
+  // eslint-disable-next-line no-unnecessary-generics
   open class ^[T] ()
     extends StObject
        with Deferred[T]

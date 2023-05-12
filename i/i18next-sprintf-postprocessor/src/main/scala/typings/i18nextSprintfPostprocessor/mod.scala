@@ -14,38 +14,17 @@ object mod extends Shortcut {
   @js.native
   val ^ : I18nextSprintfPostProcessor = js.native
   
+  @js.native
   trait I18nextSprintfPostProcessor
     extends StObject
        with PostProcessorModule {
     
-    def overloadTranslationOptionHandler(args: js.Array[String]): PostProcess
+    def overloadTranslationOptionHandler(args: js.Array[String]): PostProcess = js.native
     
-    def process(value: Any, key: String, options: Any): Any
+    def process(value: Any, key: String, options: Any): Any = js.native
     
     @JSName("type")
-    var type_I18nextSprintfPostProcessor: postProcessor
-  }
-  object I18nextSprintfPostProcessor {
-    
-    inline def apply(
-      name: String,
-      overloadTranslationOptionHandler: js.Array[String] => PostProcess,
-      process: (Any, String, Any) => Any
-    ): I18nextSprintfPostProcessor = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], overloadTranslationOptionHandler = js.Any.fromFunction1(overloadTranslationOptionHandler), process = js.Any.fromFunction3(process))
-      __obj.updateDynamic("type")("postProcessor")
-      __obj.asInstanceOf[I18nextSprintfPostProcessor]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: I18nextSprintfPostProcessor] (val x: Self) extends AnyVal {
-      
-      inline def setOverloadTranslationOptionHandler(value: js.Array[String] => PostProcess): Self = StObject.set(x, "overloadTranslationOptionHandler", js.Any.fromFunction1(value))
-      
-      inline def setProcess(value: (Any, String, Any) => Any): Self = StObject.set(x, "process", js.Any.fromFunction3(value))
-      
-      inline def setType(value: postProcessor): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-    }
+    var type_I18nextSprintfPostProcessor: postProcessor = js.native
   }
   
   type _To = I18nextSprintfPostProcessor

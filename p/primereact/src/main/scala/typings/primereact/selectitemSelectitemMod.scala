@@ -8,18 +8,37 @@ object selectitemSelectitemMod {
   
   trait SelectItem extends StObject {
     
+    /**
+      * ClassName of the option.
+      */
     var className: js.UndefOr[String] = js.undefined
     
+    /**
+      * Whether the option is disabled or not. (Not supported)
+      * @defaultValue false
+      */
     var disabled: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Icon to display to the option.
+      */
     var icon: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IconType<SelectItem> */ Any
       ] = js.undefined
     
+    /**
+      * Label of the option.
+      */
     var label: js.UndefOr[String] = js.undefined
     
+    /**
+      * Tooltip text of the option. (Not supported)
+      */
     var title: js.UndefOr[String] = js.undefined
     
+    /**
+      * Value of the option.
+      */
     var value: js.UndefOr[Any] = js.undefined
   }
   object SelectItem {

@@ -17,12 +17,12 @@ trait AwsRedshiftClusterLoggingStatus extends StObject {
   var LastFailureMessage: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * The last time when logs failed to be delivered. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces. For example, 2020-03-22T13:22:13.933Z.
+    * The last time when logs failed to be delivered. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces, and date and time should be separated by T. For example, 2020-03-22T13:22:13.933Z.
     */
   var LastFailureTime: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * The last time that logs were delivered successfully. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces. For example, 2020-03-22T13:22:13.933Z.
+    * The last time that logs were delivered successfully. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces, and date and time should be separated by T. For example, 2020-03-22T13:22:13.933Z.
     */
   var LastSuccessfulDeliveryTime: js.UndefOr[NonEmptyString] = js.undefined
   

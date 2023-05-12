@@ -2,7 +2,10 @@ package typings.officeJsPreview.Word
 
 import typings.officeJsPreview.OfficeExtension.ClientObject
 import typings.officeJsPreview.OfficeExtension.ClientResult
+import typings.officeJsPreview.OfficeExtension.EventHandlers
 import typings.officeJsPreview.OfficeExtension.UpdateOptions
+import typings.officeJsPreview.Word.ContentControlType.plainText
+import typings.officeJsPreview.Word.ContentControlType.richText
 import typings.officeJsPreview.Word.InsertLocation.replace
 import typings.officeJsPreview.Word.Interfaces.BodyData
 import typings.officeJsPreview.Word.Interfaces.BodyLoadOptions
@@ -27,7 +30,9 @@ import typings.officeJsPreview.officeJsPreviewStrings.MainDoc
 import typings.officeJsPreview.officeJsPreviewStrings.Next
 import typings.officeJsPreview.officeJsPreviewStrings.Original
 import typings.officeJsPreview.officeJsPreviewStrings.Page
+import typings.officeJsPreview.officeJsPreviewStrings.PlainText
 import typings.officeJsPreview.officeJsPreviewStrings.Replace
+import typings.officeJsPreview.officeJsPreviewStrings.RichText
 import typings.officeJsPreview.officeJsPreviewStrings.SectionContinuous
 import typings.officeJsPreview.officeJsPreviewStrings.SectionEven
 import typings.officeJsPreview.officeJsPreviewStrings.SectionNext
@@ -112,6 +117,20 @@ trait Body
   def getComments(): CommentCollection = js.native
   
   /**
+    * Gets the currently supported content controls in the body. **Important**: If specific types are provided in the options parameter, only content controls of supported types are returned.
+    Be aware that an exception will be thrown on using methods of a generic {@link Word.ContentControl} that aren't relevant for the specific type.
+    With time, additional types of content controls may be supported. Therefore, your add-in should request and handle specific types of content controls.
+    *
+    * @remarks
+    * [Api set: WordApi BETA (PREVIEW ONLY)]
+    * @beta
+    *
+    * @param options Optional. Options that define which content controls are returned.
+    */
+  def getContentControls(): ContentControlCollection = js.native
+  def getContentControls(options: ContentControlOptions): ContentControlCollection = js.native
+  
+  /**
     * Gets an HTML representation of the body object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word on the web, etc.). If you need exact fidelity, or consistency across platforms, use `Body.getOoxml()` and convert the returned XML to HTML.
     *
     * @remarks
@@ -189,39 +208,31 @@ trait Body
   def insertBreak(breakType: BreakType, insertLocation: typings.officeJsPreview.Word.InsertLocation.start): Unit = js.native
   
   /**
-    * Wraps the body object with a Rich Text content control.
+    * Wraps the Body object with a content control.
     *
     * @remarks
     * [Api set: WordApi 1.1]
+    *
+    * @param contentControlType Optional. The content control type. The default is 'RichText'.
     */
   def insertContentControl(): ContentControl = js.native
+  def insertContentControl(contentControlType: RichText | PlainText): ContentControl = js.native
+  def insertContentControl(contentControlType: plainText): ContentControl = js.native
+  def insertContentControl(contentControlType: richText): ContentControl = js.native
   
   def insertFileFromBase64(base64File: String, insertLocation: Replace | Start | End): Range = js.native
-  def insertFileFromBase64(base64File: String, insertLocation: Replace | Start | End, asNewParagraph: Boolean): Range = js.native
   def insertFileFromBase64(base64File: String, insertLocation: typings.officeJsPreview.Word.InsertLocation.end): Range = js.native
-  def insertFileFromBase64(
-    base64File: String,
-    insertLocation: typings.officeJsPreview.Word.InsertLocation.end,
-    asNewParagraph: Boolean
-  ): Range = js.native
   /**
     * Inserts a document into the body at the specified location.
     *
     * @remarks
     * [Api set: WordApi 1.1]
     *
-    * @param base64File Required. The base64 encoded content of a .docx file.
+    * @param base64File Required. The Base64-encoded content of a .docx file.
     * @param insertLocation Required. The value must be 'Replace', 'Start', or 'End'.
-    * @param asNewParagraph Optional. Indicates whether to insert the content as new paragraphs. Default is false which indicates that the base64 content is merged as inline text into the existing paragraph.
     */
   def insertFileFromBase64(base64File: String, insertLocation: replace): Range = js.native
-  def insertFileFromBase64(base64File: String, insertLocation: replace, asNewParagraph: Boolean): Range = js.native
   def insertFileFromBase64(base64File: String, insertLocation: typings.officeJsPreview.Word.InsertLocation.start): Range = js.native
-  def insertFileFromBase64(
-    base64File: String,
-    insertLocation: typings.officeJsPreview.Word.InsertLocation.start,
-    asNewParagraph: Boolean
-  ): Range = js.native
   
   def insertHtml(html: String, insertLocation: Replace | Start | End): Range = js.native
   def insertHtml(html: String, insertLocation: typings.officeJsPreview.Word.InsertLocation.end): Range = js.native
@@ -245,19 +256,13 @@ trait Body
     * @remarks
     * [Api set: WordApi 1.2]
     *
-    * @param base64EncodedImage Required. The base64 encoded image to be inserted in the body.
+    * @param base64EncodedImage Required. The Base64-encoded image to be inserted in the body.
     * @param insertLocation Required. The value must be 'Start' or 'End'.
     */
   def insertInlinePictureFromBase64(base64EncodedImage: String, insertLocation: typings.officeJsPreview.Word.InsertLocation.start): InlinePicture = js.native
   
   def insertOoxml(ooxml: String, insertLocation: Replace | Start | End): Range = js.native
-  def insertOoxml(ooxml: String, insertLocation: Replace | Start | End, asNewParagraph: Boolean): Range = js.native
   def insertOoxml(ooxml: String, insertLocation: typings.officeJsPreview.Word.InsertLocation.end): Range = js.native
-  def insertOoxml(
-    ooxml: String,
-    insertLocation: typings.officeJsPreview.Word.InsertLocation.end,
-    asNewParagraph: Boolean
-  ): Range = js.native
   /**
     * Inserts OOXML at the specified location.
     *
@@ -266,16 +271,9 @@ trait Body
     *
     * @param ooxml Required. The OOXML to be inserted.
     * @param insertLocation Required. The value must be 'Replace', 'Start', or 'End'.
-    * @param asNewParagraph Optional. Indicates whether to insert the OOXML as new paragraphs. Default is false which indicates that the OOXML is merged as inline text into the existing paragraph.
     */
   def insertOoxml(ooxml: String, insertLocation: replace): Range = js.native
-  def insertOoxml(ooxml: String, insertLocation: replace, asNewParagraph: Boolean): Range = js.native
   def insertOoxml(ooxml: String, insertLocation: typings.officeJsPreview.Word.InsertLocation.start): Range = js.native
-  def insertOoxml(
-    ooxml: String,
-    insertLocation: typings.officeJsPreview.Word.InsertLocation.start,
-    asNewParagraph: Boolean
-  ): Range = js.native
   
   def insertParagraph(paragraphText: String, insertLocation: Start | End): Paragraph = js.native
   def insertParagraph(paragraphText: String, insertLocation: typings.officeJsPreview.Word.InsertLocation.end): Paragraph = js.native
@@ -363,6 +361,61 @@ trait Body
   def load(propertyNamesAndPaths: Expand): Body = js.native
   def load(propertyNames: String): Body = js.native
   def load(propertyNames: js.Array[String]): Body = js.native
+  
+  /**
+    * Occurs when new comments are added.
+    *
+    * @remarks
+    * [Api set: WordApi BETA (PREVIEW ONLY)]
+    *
+    * @eventproperty
+    * @beta
+    */
+  val onCommentAdded: EventHandlers[CommentEventArgs] = js.native
+  
+  /**
+    * Occurs when a comment or its reply is changed.
+    *
+    * @remarks
+    * [Api set: WordApi BETA (PREVIEW ONLY)]
+    *
+    * @eventproperty
+    * @beta
+    */
+  val onCommentChanged: EventHandlers[CommentEventArgs] = js.native
+  
+  /**
+    * Occurs when comments are deleted.
+    *
+    * @remarks
+    * [Api set: WordApi BETA (PREVIEW ONLY)]
+    *
+    * @eventproperty
+    * @beta
+    */
+  val onCommentDeleted: EventHandlers[CommentEventArgs] = js.native
+  
+  /**
+    * Occurs when a comment is deselected.
+    *
+    * @remarks
+    * [Api set: WordApi BETA (PREVIEW ONLY)]
+    *
+    * @eventproperty
+    * @beta
+    */
+  val onCommentDeselected: EventHandlers[CommentEventArgs] = js.native
+  
+  /**
+    * Occurs when a comment is selected.
+    *
+    * @remarks
+    * [Api set: WordApi BETA (PREVIEW ONLY)]
+    *
+    * @eventproperty
+    * @beta
+    */
+  val onCommentSelected: EventHandlers[CommentEventArgs] = js.native
   
   /**
     * Gets the collection of paragraph objects in the body. **Important**: Paragraphs in tables are not returned for requirement sets 1.1 and 1.2. From requirement set 1.3, paragraphs in tables are also returned.
@@ -469,7 +522,7 @@ trait Body
     * @remarks
     * [Api set: WordApi 1.3]
     */
-  var styleBuiltIn: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 149, starting with typings.officeJsPreview.Word.Style, typings.officeJsPreview.officeJsPreviewStrings.Other, typings.officeJsPreview.officeJsPreviewStrings.Normal */ Any = js.native
+  var styleBuiltIn: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 149, starting with typings.officeJsPreview.Word.BuiltInStyleName, typings.officeJsPreview.officeJsPreviewStrings.Other, typings.officeJsPreview.officeJsPreviewStrings.Normal */ Any = js.native
   
   /**
     * Gets the collection of table objects in the body.

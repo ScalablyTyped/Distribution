@@ -17,7 +17,7 @@ trait Encryption extends StObject {
   var KMSContext: js.UndefOr[typings.awsSdk.clientsS3Mod.KMSContext] = js.undefined
   
   /**
-    * If the encryption type is aws:kms, this optional value specifies the ID of the symmetric customer managed key to use for encryption of job results. Amazon S3 only supports symmetric keys. For more information, see Using symmetric and asymmetric keys in the Amazon Web Services Key Management Service Developer Guide.
+    * If the encryption type is aws:kms, this optional value specifies the ID of the symmetric encryption customer managed key to use for encryption of job results. Amazon S3 only supports symmetric encryption KMS keys. For more information, see Asymmetric keys in Amazon Web Services KMS in the Amazon Web Services Key Management Service Developer Guide.
     */
   var KMSKeyId: js.UndefOr[SSEKMSKeyId] = js.undefined
 }

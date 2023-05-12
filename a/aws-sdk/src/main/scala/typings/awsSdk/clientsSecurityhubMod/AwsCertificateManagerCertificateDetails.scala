@@ -12,7 +12,7 @@ trait AwsCertificateManagerCertificateDetails extends StObject {
   var CertificateAuthorityArn: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * Indicates when the certificate was requested. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces. For example, 2020-03-22T13:22:13.933Z.
+    * Indicates when the certificate was requested. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces, and date and time should be separated by T. For example, 2020-03-22T13:22:13.933Z.
     */
   var CreatedAt: js.UndefOr[NonEmptyString] = js.undefined
   
@@ -37,7 +37,7 @@ trait AwsCertificateManagerCertificateDetails extends StObject {
   var FailureReason: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * Indicates when the certificate was imported. Provided if the certificate type is IMPORTED. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces. For example, 2020-03-22T13:22:13.933Z.
+    * Indicates when the certificate was imported. Provided if the certificate type is IMPORTED. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces, and date and time should be separated by T. For example, 2020-03-22T13:22:13.933Z.
     */
   var ImportedAt: js.UndefOr[NonEmptyString] = js.undefined
   
@@ -47,7 +47,7 @@ trait AwsCertificateManagerCertificateDetails extends StObject {
   var InUseBy: js.UndefOr[StringList] = js.undefined
   
   /**
-    * Indicates when the certificate was issued. Provided if the certificate type is AMAZON_ISSUED. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces. For example, 2020-03-22T13:22:13.933Z.
+    * Indicates when the certificate was issued. Provided if the certificate type is AMAZON_ISSUED. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces, and date and time should be separated by T. For example, 2020-03-22T13:22:13.933Z.
     */
   var IssuedAt: js.UndefOr[NonEmptyString] = js.undefined
   
@@ -67,12 +67,12 @@ trait AwsCertificateManagerCertificateDetails extends StObject {
   var KeyUsages: js.UndefOr[AwsCertificateManagerCertificateKeyUsages] = js.undefined
   
   /**
-    * The time after which the certificate becomes invalid. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces. For example, 2020-03-22T13:22:13.933Z.
+    * The time after which the certificate becomes invalid. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces, and date and time should be separated by T. For example, 2020-03-22T13:22:13.933Z.
     */
   var NotAfter: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
-    * The time before which the certificate is not valid. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces. For example, 2020-03-22T13:22:13.933Z.
+    * The time before which the certificate is not valid. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces, and date and time should be separated by T. For example, 2020-03-22T13:22:13.933Z.
     */
   var NotBefore: js.UndefOr[NonEmptyString] = js.undefined
   

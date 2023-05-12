@@ -17,7 +17,7 @@ trait Settings extends StObject {
   var MaxAlternatives: js.UndefOr[typings.awsSdk.clientsTranscribeserviceMod.MaxAlternatives] = js.undefined
   
   /**
-    * Specify the maximum number of speakers you want to identify in your media. Note that if your media contains more speakers than the specified number, multiple speakers will be identified as a single speaker. If you specify the MaxSpeakerLabels field, you must set the ShowSpeakerLabels field to true.
+    * Specify the maximum number of speakers you want to partition in your media. Note that if your media contains more speakers than the specified number, multiple speakers are treated as a single speaker. If you specify the MaxSpeakerLabels field, you must set the ShowSpeakerLabels field to true.
     */
   var MaxSpeakerLabels: js.UndefOr[MaxSpeakers] = js.undefined
   
@@ -27,12 +27,12 @@ trait Settings extends StObject {
   var ShowAlternatives: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Enables speaker identification (diarization) in your transcription output. Speaker identification labels the speech from individual speakers in your media file. If you enable ShowSpeakerLabels in your request, you must also include MaxSpeakerLabels. You can't include both ShowSpeakerLabels and ChannelIdentification in the same request. Including both parameters returns a BadRequestException. For more information, see Identifying speakers (diarization).
+    * Enables speaker partitioning (diarization) in your transcription output. Speaker partitioning labels the speech from individual speakers in your media file. If you enable ShowSpeakerLabels in your request, you must also include MaxSpeakerLabels. You can't include both ShowSpeakerLabels and ChannelIdentification in the same request. Including both parameters returns a BadRequestException. For more information, see Partitioning speakers (diarization).
     */
   var ShowSpeakerLabels: js.UndefOr[Boolean] = js.undefined
   
   /**
-    * Specify how you want your vocabulary filter applied to your transcript. To replace words with ***, choose mask. To delete words, choose remove. To flag words without changing them, choose tag.
+    * Specify how you want your custom vocabulary filter applied to your transcript. To replace words with ***, choose mask. To delete words, choose remove. To flag words without changing them, choose tag.
     */
   var VocabularyFilterMethod: js.UndefOr[typings.awsSdk.clientsTranscribeserviceMod.VocabularyFilterMethod] = js.undefined
   

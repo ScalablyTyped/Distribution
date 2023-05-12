@@ -28,25 +28,21 @@ object mod {
     
     /**
       * End date.
-      * @type {Date}
       */
     var end: js.Date
     
     /**
       * Growth.
-      * @type {number}
       */
     var growth: Double
     
     /**
       * Reason leak.
-      * @type {string}
       */
     var reason: String
     
     /**
       * Start date.
-      * @type {Date}
       */
     var start: js.Date
   }

@@ -19,6 +19,8 @@ object sapMSelectionDetailsFacadeMod {
   trait SelectionDetailsFacade extends StObject {
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Adds some action to the aggregation {@link #getActions actions}.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -31,6 +33,8 @@ object sapMSelectionDetailsFacadeMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Adds some actionGroup to the aggregation {@link #getActionGroups actionGroups}.
       *
       * @returns Reference to `this` in order to allow method chaining
@@ -43,6 +47,8 @@ object sapMSelectionDetailsFacadeMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Attaches event handler `fnFunction` to the {@link #event:actionPress actionPress} event of this `sap.m.SelectionDetails`.
       *
       * When called, the context of the event handler (its `this`) will be bound to `oListener` if specified,
@@ -69,6 +75,8 @@ object sapMSelectionDetailsFacadeMod {
     oListener: js.Object
     ): this.type = js.native
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Attaches event handler `fnFunction` to the {@link #event:actionPress actionPress} event of this `sap.m.SelectionDetails`.
       *
       * When called, the context of the event handler (its `this`) will be bound to `oListener` if specified,
@@ -106,6 +114,8 @@ object sapMSelectionDetailsFacadeMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Attaches event handler `fnFunction` to the {@link #event:beforeClose beforeClose} event of this `sap.m.SelectionDetails`.
       *
       * When called, the context of the event handler (its `this`) will be bound to `oListener` if specified,
@@ -132,6 +142,8 @@ object sapMSelectionDetailsFacadeMod {
     oListener: js.Object
     ): this.type = js.native
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Attaches event handler `fnFunction` to the {@link #event:beforeClose beforeClose} event of this `sap.m.SelectionDetails`.
       *
       * When called, the context of the event handler (its `this`) will be bound to `oListener` if specified,
@@ -169,6 +181,8 @@ object sapMSelectionDetailsFacadeMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Attaches event handler `fnFunction` to the {@link #event:beforeOpen beforeOpen} event of this `sap.m.SelectionDetails`.
       *
       * When called, the context of the event handler (its `this`) will be bound to `oListener` if specified,
@@ -195,6 +209,8 @@ object sapMSelectionDetailsFacadeMod {
     oListener: js.Object
     ): this.type = js.native
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Attaches event handler `fnFunction` to the {@link #event:beforeOpen beforeOpen} event of this `sap.m.SelectionDetails`.
       *
       * When called, the context of the event handler (its `this`) will be bound to `oListener` if specified,
@@ -232,6 +248,8 @@ object sapMSelectionDetailsFacadeMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Attaches event handler `fnFunction` to the {@link #event:navigate navigate} event of this `sap.m.SelectionDetails`.
       *
       * When called, the context of the event handler (its `this`) will be bound to `oListener` if specified,
@@ -258,6 +276,8 @@ object sapMSelectionDetailsFacadeMod {
     oListener: js.Object
     ): this.type = js.native
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Attaches event handler `fnFunction` to the {@link #event:navigate navigate} event of this `sap.m.SelectionDetails`.
       *
       * When called, the context of the event handler (its `this`) will be bound to `oListener` if specified,
@@ -302,6 +322,8 @@ object sapMSelectionDetailsFacadeMod {
     def close(): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Detaches event handler `fnFunction` from the {@link #event:actionPress actionPress} event of this `sap.m.SelectionDetails`.
       *
       * The passed function and listener object must match the ones used for event registration.
@@ -326,6 +348,8 @@ object sapMSelectionDetailsFacadeMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Detaches event handler `fnFunction` from the {@link #event:beforeClose beforeClose} event of this `sap.m.SelectionDetails`.
       *
       * The passed function and listener object must match the ones used for event registration.
@@ -350,6 +374,8 @@ object sapMSelectionDetailsFacadeMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Detaches event handler `fnFunction` from the {@link #event:beforeOpen beforeOpen} event of this `sap.m.SelectionDetails`.
       *
       * The passed function and listener object must match the ones used for event registration.
@@ -374,6 +400,8 @@ object sapMSelectionDetailsFacadeMod {
     ): this.type = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Detaches event handler `fnFunction` from the {@link #event:navigate navigate} event of this `sap.m.SelectionDetails`.
       *
       * The passed function and listener object must match the ones used for event registration.
@@ -443,6 +471,8 @@ object sapMSelectionDetailsFacadeMod {
       */
     vAction: String): typings.openui5.sapUiCoreItemMod.default | Null = js.native
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Removes a action from the aggregation {@link #getActions actions}.
       *
       * @returns The removed action or `null`
@@ -463,6 +493,8 @@ object sapMSelectionDetailsFacadeMod {
       */
     vActionGroup: String): typings.openui5.sapUiCoreItemMod.default | Null = js.native
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Removes a actionGroup from the aggregation {@link #getActionGroups actionGroups}.
       *
       * @returns The removed actionGroup or `null`
@@ -479,6 +511,8 @@ object sapMSelectionDetailsFacadeMod {
     ): typings.openui5.sapUiCoreItemMod.default | Null = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Removes all the controls from the aggregation {@link #getActionGroups actionGroups}.
       *
       * Additionally, it unregisters them from the hosting UIArea.
@@ -488,6 +522,8 @@ object sapMSelectionDetailsFacadeMod {
     def removeAllActionGroups(): js.Array[typings.openui5.sapUiCoreItemMod.default] = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Removes all the controls from the aggregation {@link #getActions actions}.
       *
       * Additionally, it unregisters them from the hosting UIArea.

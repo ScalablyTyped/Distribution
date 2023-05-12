@@ -24,6 +24,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.babelTypes.babelTypesStrings.YieldExpression
   - typings.babelTypes.babelTypesStrings.ObjectTypeCallProperty
   - typings.babelTypes.babelTypesStrings.TupleTypeAnnotation
+  - typings.babelTypes.babelTypesStrings.ImportOrExportDeclaration
   - typings.babelTypes.babelTypesStrings.Standardized
   - typings.babelTypes.babelTypesStrings.TypeParameterDeclaration
   - typings.babelTypes.babelTypesStrings.TSModuleDeclaration
@@ -529,6 +530,8 @@ object NodeTypes {
   inline def ImportDefaultSpecifier: typings.babelTypes.babelTypesStrings.ImportDefaultSpecifier = "ImportDefaultSpecifier".asInstanceOf[typings.babelTypes.babelTypesStrings.ImportDefaultSpecifier]
   
   inline def ImportNamespaceSpecifier: typings.babelTypes.babelTypesStrings.ImportNamespaceSpecifier = "ImportNamespaceSpecifier".asInstanceOf[typings.babelTypes.babelTypesStrings.ImportNamespaceSpecifier]
+  
+  inline def ImportOrExportDeclaration: typings.babelTypes.babelTypesStrings.ImportOrExportDeclaration = "ImportOrExportDeclaration".asInstanceOf[typings.babelTypes.babelTypesStrings.ImportOrExportDeclaration]
   
   inline def ImportSpecifier: typings.babelTypes.babelTypesStrings.ImportSpecifier = "ImportSpecifier".asInstanceOf[typings.babelTypes.babelTypesStrings.ImportSpecifier]
   

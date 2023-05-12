@@ -1,7 +1,7 @@
 
 # Scala.js typings for vega-interpreter
 
-Typings are for version 1.0.4
+Typings are for version 1.0.5
 
 ## Library description:
 CSP-compliant interpreter for Vega expressions.

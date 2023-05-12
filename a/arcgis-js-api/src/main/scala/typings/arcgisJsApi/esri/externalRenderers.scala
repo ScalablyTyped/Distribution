@@ -20,7 +20,7 @@ trait externalRenderers extends StObject {
   def add(view: SceneView, renderer: ExternalRenderer): scala.Unit = js.native
   
   /**
-    * Requests the SceneView to use a specific WebGL verson for rendering.
+    * Requests the SceneView to use a specific WebGL version for rendering.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-externalRenderers.html#forceWebGLContext)
     */

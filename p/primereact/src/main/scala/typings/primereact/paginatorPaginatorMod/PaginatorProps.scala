@@ -41,6 +41,7 @@ import typings.primereact.primereactStrings.polite
 import typings.primereact.primereactStrings.popup
 import typings.primereact.primereactStrings.removals
 import typings.primereact.primereactStrings.search
+import typings.primereact.primereactStrings.self
 import typings.primereact.primereactStrings.spelling
 import typings.primereact.primereactStrings.step
 import typings.primereact.primereactStrings.tel
@@ -50,6 +51,8 @@ import typings.primereact.primereactStrings.tree
 import typings.primereact.primereactStrings.url
 import typings.primereact.primereactStrings.vertical
 import typings.primereact.primereactStrings.yes
+import typings.primereact.utilsUtilsMod.IconOptions
+import typings.primereact.utilsUtilsMod.IconType
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
@@ -89,6 +92,7 @@ import typings.react.mod.WheelEventHandler
 import typings.std.Element
 import typings.std.Event
 import typings.std.HTMLDivElement
+import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -100,6 +104,9 @@ trait PaginatorProps extends StObject {
   
   var accessKey: js.UndefOr[String] = js.undefined
   
+  /**
+    * Whether to show it even there is only one page.
+    */
   var alwaysShow: js.UndefOr[Boolean] = js.undefined
   
   var `aria-activedescendant`: js.UndefOr[String] = js.undefined
@@ -204,18 +211,30 @@ trait PaginatorProps extends StObject {
   
   var autoCorrect: js.UndefOr[String] = js.undefined
   
+  var autoFocus: js.UndefOr[Boolean] = js.undefined
+  
   var autoSave: js.UndefOr[String] = js.undefined
   
+  /**
+    * Used to get the child elements of the component.
+    * @readonly
+    */
   var children: js.UndefOr[ReactNode] = js.undefined
   
   var className: js.UndefOr[String] = js.undefined
   
   var color: js.UndefOr[String] = js.undefined
   
+  var content: js.UndefOr[String] = js.undefined
+  
   var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
   
   var contextMenu: js.UndefOr[String] = js.undefined
   
+  /**
+    * Template of the current page report element. Available placeholders are &#123;currentPage&#125;, &#123;totalPages&#125;, &#123;rows&#125;, &#123;first&#125;, &#123;last&#125; and &#123;totalRecords&#125;
+    * @defaultValue (&#123;currentPage&#125; of &#123;totalPages&#125;)
+    */
   var currentPageReportTemplate: js.UndefOr[String] = js.undefined
   
   var dangerouslySetInnerHTML: js.UndefOr[Html] = js.undefined
@@ -230,9 +249,22 @@ trait PaginatorProps extends StObject {
   
   var draggable: js.UndefOr[Booleanish] = js.undefined
   
-  var dropdownAppendTo: js.UndefOr[PaginatorAppendToType] = js.undefined
+  /**
+    * DOM element instance where the overlay panel should be mounted. Valid values are any DOM Element and 'self'. The self value is used to render a component where it is located.
+    * @defaultValue document.body
+    */
+  var dropdownAppendTo: js.UndefOr[self | HTMLElement | Null] = js.undefined
   
+  /**
+    * Zero-relative number of the first row to be displayed.
+    * @defaultValue 0
+    */
   var first: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * Icon of the first page link icon template.
+    */
+  var firstPageLinkIcon: js.UndefOr[IconType[PaginatorProps]] = js.undefined
   
   var hidden: js.UndefOr[Boolean] = js.undefined
   
@@ -258,7 +290,20 @@ trait PaginatorProps extends StObject {
   
   var lang: js.UndefOr[String] = js.undefined
   
+  /**
+    * Icon of the last page link icon template.
+    */
+  var lastPageLinkIcon: js.UndefOr[IconType[PaginatorProps]] = js.undefined
+  
+  /**
+    * Content to inject into the left side of the paginator.
+    */
   var leftContent: js.UndefOr[ReactNode] = js.undefined
+  
+  /**
+    * Icon of the next page link icon template.
+    */
+  var nextPageLinkIcon: js.UndefOr[IconType[PaginatorProps]] = js.undefined
   
   var nonce: js.UndefOr[String] = js.undefined
   
@@ -358,7 +403,11 @@ trait PaginatorProps extends StObject {
   
   var onMouseUp: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
   
-  var onPageChange: js.UndefOr[js.Function1[/* event */ PaginatorPageState, Unit]] = js.undefined
+  /**
+    * Callback to invoke when page changes, the event object contains information about the new state.
+    * @param {PaginatorPageChangeEvent} event - Custom page change event.
+    */
+  var onPageChange: js.UndefOr[js.Function1[/* event */ PaginatorPageChangeEvent, Unit]] = js.undefined
   
   var onPaste: js.UndefOr[ClipboardEventHandler[HTMLDivElement]] = js.undefined
   
@@ -424,26 +473,49 @@ trait PaginatorProps extends StObject {
   
   var onWheel: js.UndefOr[WheelEventHandler[HTMLDivElement]] = js.undefined
   
+  /**
+    * Number of page links to display.
+    * @defaultValue 5
+    */
   var pageLinkSize: js.UndefOr[Double] = js.undefined
   
   var placeholder: js.UndefOr[String] = js.undefined
   
   var prefix: js.UndefOr[String] = js.undefined
   
+  /**
+    * Icon of the prev page link icon template.
+    */
+  var prevPageLinkIcon: js.UndefOr[IconType[PaginatorProps]] = js.undefined
+  
   var property: js.UndefOr[String] = js.undefined
   
   var radioGroup: js.UndefOr[String] = js.undefined
+  
+  var rel: js.UndefOr[String] = js.undefined
   
   var resource: js.UndefOr[String] = js.undefined
   
   var results: js.UndefOr[Double] = js.undefined
   
+  var rev: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Content to inject into the right side of the paginator.
+    */
   var rightContent: js.UndefOr[ReactNode] = js.undefined
   
   var role: js.UndefOr[AriaRole] = js.undefined
   
+  /**
+    * Data count to display per page.
+    * @defaultValue 0
+    */
   var rows: js.UndefOr[Double] = js.undefined
   
+  /**
+    * Array of integer values to display inside rows per page dropdown.
+    */
   var rowsPerPageOptions: js.UndefOr[js.Array[Double]] = js.undefined
   
   var security: js.UndefOr[String] = js.undefined
@@ -460,10 +532,18 @@ trait PaginatorProps extends StObject {
   
   var tabIndex: js.UndefOr[Double] = js.undefined
   
-  var template: js.UndefOr[PaginatorTemplate] = js.undefined
+  /**
+    * Custom template of the paginator.
+    * @defaultValue FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink RowsPerPageDropdown
+    */
+  var template: js.UndefOr[PaginatorTemplateOptions | String] = js.undefined
   
   var title: js.UndefOr[String] = js.undefined
   
+  /**
+    * Number of total records.
+    * @defaultValue 0
+    */
   var totalRecords: js.UndefOr[Double] = js.undefined
   
   var translate: js.UndefOr[yes | no] = js.undefined
@@ -698,6 +778,10 @@ object PaginatorProps {
     
     inline def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
     
+    inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+    
+    inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+    
     inline def setAutoSave(value: String): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
     
     inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
@@ -714,9 +798,13 @@ object PaginatorProps {
     
     inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    
     inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
     
     inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+    
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
     inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
     
@@ -752,13 +840,19 @@ object PaginatorProps {
     
     inline def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
     
-    inline def setDropdownAppendTo(value: PaginatorAppendToType): Self = StObject.set(x, "dropdownAppendTo", value.asInstanceOf[js.Any])
+    inline def setDropdownAppendTo(value: self | HTMLElement): Self = StObject.set(x, "dropdownAppendTo", value.asInstanceOf[js.Any])
     
     inline def setDropdownAppendToNull: Self = StObject.set(x, "dropdownAppendTo", null)
     
     inline def setDropdownAppendToUndefined: Self = StObject.set(x, "dropdownAppendTo", js.undefined)
     
     inline def setFirst(value: Double): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
+    
+    inline def setFirstPageLinkIcon(value: IconType[PaginatorProps]): Self = StObject.set(x, "firstPageLinkIcon", value.asInstanceOf[js.Any])
+    
+    inline def setFirstPageLinkIconFunction1(value: /* options */ IconOptions[PaginatorProps] => ReactNode): Self = StObject.set(x, "firstPageLinkIcon", js.Any.fromFunction1(value))
+    
+    inline def setFirstPageLinkIconUndefined: Self = StObject.set(x, "firstPageLinkIcon", js.undefined)
     
     inline def setFirstUndefined: Self = StObject.set(x, "first", js.undefined)
     
@@ -812,9 +906,21 @@ object PaginatorProps {
     
     inline def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
     
+    inline def setLastPageLinkIcon(value: IconType[PaginatorProps]): Self = StObject.set(x, "lastPageLinkIcon", value.asInstanceOf[js.Any])
+    
+    inline def setLastPageLinkIconFunction1(value: /* options */ IconOptions[PaginatorProps] => ReactNode): Self = StObject.set(x, "lastPageLinkIcon", js.Any.fromFunction1(value))
+    
+    inline def setLastPageLinkIconUndefined: Self = StObject.set(x, "lastPageLinkIcon", js.undefined)
+    
     inline def setLeftContent(value: ReactNode): Self = StObject.set(x, "leftContent", value.asInstanceOf[js.Any])
     
     inline def setLeftContentUndefined: Self = StObject.set(x, "leftContent", js.undefined)
+    
+    inline def setNextPageLinkIcon(value: IconType[PaginatorProps]): Self = StObject.set(x, "nextPageLinkIcon", value.asInstanceOf[js.Any])
+    
+    inline def setNextPageLinkIconFunction1(value: /* options */ IconOptions[PaginatorProps] => ReactNode): Self = StObject.set(x, "nextPageLinkIcon", js.Any.fromFunction1(value))
+    
+    inline def setNextPageLinkIconUndefined: Self = StObject.set(x, "nextPageLinkIcon", js.undefined)
     
     inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
     
@@ -1012,7 +1118,7 @@ object PaginatorProps {
     
     inline def setOnMouseUpUndefined: Self = StObject.set(x, "onMouseUp", js.undefined)
     
-    inline def setOnPageChange(value: /* event */ PaginatorPageState => Unit): Self = StObject.set(x, "onPageChange", js.Any.fromFunction1(value))
+    inline def setOnPageChange(value: /* event */ PaginatorPageChangeEvent => Unit): Self = StObject.set(x, "onPageChange", js.Any.fromFunction1(value))
     
     inline def setOnPageChangeUndefined: Self = StObject.set(x, "onPageChange", js.undefined)
     
@@ -1156,6 +1262,12 @@ object PaginatorProps {
     
     inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
     
+    inline def setPrevPageLinkIcon(value: IconType[PaginatorProps]): Self = StObject.set(x, "prevPageLinkIcon", value.asInstanceOf[js.Any])
+    
+    inline def setPrevPageLinkIconFunction1(value: /* options */ IconOptions[PaginatorProps] => ReactNode): Self = StObject.set(x, "prevPageLinkIcon", js.Any.fromFunction1(value))
+    
+    inline def setPrevPageLinkIconUndefined: Self = StObject.set(x, "prevPageLinkIcon", js.undefined)
+    
     inline def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
     
     inline def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
@@ -1164,6 +1276,10 @@ object PaginatorProps {
     
     inline def setRadioGroupUndefined: Self = StObject.set(x, "radioGroup", js.undefined)
     
+    inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+    
+    inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+    
     inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
     inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
@@ -1171,6 +1287,10 @@ object PaginatorProps {
     inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
     inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+    
+    inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+    
+    inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
     
     inline def setRightContent(value: ReactNode): Self = StObject.set(x, "rightContent", value.asInstanceOf[js.Any])
     
@@ -1218,7 +1338,7 @@ object PaginatorProps {
     
     inline def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
     
-    inline def setTemplate(value: PaginatorTemplate): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    inline def setTemplate(value: PaginatorTemplateOptions | String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
     inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
     

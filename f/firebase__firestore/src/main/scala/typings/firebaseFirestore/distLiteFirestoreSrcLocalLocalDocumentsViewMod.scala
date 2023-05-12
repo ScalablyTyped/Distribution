@@ -55,9 +55,6 @@ object distLiteFirestoreSrcLocalLocalDocumentsViewMod {
     
     val documentOverlayCache: DocumentOverlayCache = js.native
     
-    /** Returns a base document that can be used to apply `overlay`. */
-    /* private */ var getBaseDocument: Any = js.native
-    
     /**
       * Get the local view of the document identified by `key`.
       *

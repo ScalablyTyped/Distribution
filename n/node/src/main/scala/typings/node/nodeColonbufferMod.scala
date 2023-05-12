@@ -1,6 +1,8 @@
 package typings.node
 
+import typings.node.NodeJS.TypedArray
 import typings.node.bufferMod.BlobOptions
+import typings.node.bufferMod.FileOptions
 import typings.node.bufferMod.TranscodeEncoding
 import typings.node.bufferMod.global.Buffer
 import typings.node.bufferMod.global.BufferConstructor
@@ -96,6 +98,18 @@ object nodeColonbufferMod {
   
   inline def Buffer_=(x: BufferConstructor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Buffer")(x.asInstanceOf[js.Any])
   
+  @JSImport("node:buffer", "File")
+  @js.native
+  open class File protected ()
+    extends typings.node.bufferMod.File {
+    def this(sources: js.Array[BinaryLike | typings.node.bufferMod.Blob], fileName: String) = this()
+    def this(
+      sources: js.Array[BinaryLike | typings.node.bufferMod.Blob],
+      fileName: String,
+      options: FileOptions
+    ) = this()
+  }
+  
   @JSImport("node:buffer", "INSPECT_MAX_BYTES")
   @js.native
   val INSPECT_MAX_BYTES: Double = js.native
@@ -126,6 +140,14 @@ object nodeColonbufferMod {
     def MAX_STRING_LENGTH: Double = js.native
     inline def MAX_STRING_LENGTH_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MAX_STRING_LENGTH")(x.asInstanceOf[js.Any])
   }
+  
+  inline def isAscii(input: js.typedarray.ArrayBuffer): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAscii")(input.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isAscii(input: TypedArray): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAscii")(input.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isAscii(input: Buffer): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAscii")(input.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def isUtf8(input: js.typedarray.ArrayBuffer): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUtf8")(input.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isUtf8(input: TypedArray): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUtf8")(input.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isUtf8(input: Buffer): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUtf8")(input.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   @JSImport("node:buffer", "kMaxLength")
   @js.native

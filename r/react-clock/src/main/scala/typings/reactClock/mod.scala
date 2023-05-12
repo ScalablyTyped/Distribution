@@ -1,238 +1,347 @@
 package typings.reactClock
 
+import typings.propTypes.mod.Requireable
+import typings.react.mod.global.JSX.Element
+import typings.reactClock.distCjsClockMod.ClockProps
+import typings.std.NonNullable
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("react-clock", JSImport.Namespace)
-  @js.native
-  val ^ : js.Any = js.native
-  
-  inline def default(props: ClockProps[ClockValue]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Any]
-  
-  trait ClockProps[T] extends StObject {
+  object default {
     
-    /**
-      * Class name(s) that will be added along with "react-clock" to the main React-Clock <time> element.
-      */
-    var className: js.UndefOr[String | js.Array[String]] = js.undefined
+    inline def apply(param0: ClockProps): Element = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
     
-    /**
-      * Hour hand length, in %.
-      * @default 50
-      */
-    var hourHandLength: js.UndefOr[Double] = js.undefined
+    @JSImport("react-clock", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
     
-    /**
-      * The length of the part of an hour hand on the opposite side the hand is pointing to, in %.
-      * @default 10
-      */
-    var hourHandOppositeLength: js.UndefOr[Double] = js.undefined
-    
-    /**
-      * Hour hand width, in pixels.
-      * @default 4
-      */
-    var hourHandWidth: js.UndefOr[Double] = js.undefined
-    
-    /**
-      * Hour marks length, in %.
-      * @default 10
-      */
-    var hourMarksLength: js.UndefOr[Double] = js.undefined
-    
-    /**
-      * Hour marks width, in pixels.
-      * @default 3
-      */
-    var hourMarksWidth: js.UndefOr[Double] = js.undefined
-    
-    /**
-      * Minute hand length, in %.
-      * @default 70
-      */
-    var minuteHandLength: js.UndefOr[Double] = js.undefined
-    
-    /**
-      * The length of the part of a minute hand on the opposite side the hand is pointing to, in %.
-      * @default 10
-      */
-    var minuteHandOppositeLength: js.UndefOr[Double] = js.undefined
-    
-    /**
-      * Minute hand width, in pixels.
-      * @default 2
-      */
-    var minuteHandWidth: js.UndefOr[Double] = js.undefined
-    
-    /**
-      * Minute marks length, in %.
-      * @default 6
-      */
-    var minuteMarksLength: js.UndefOr[Double] = js.undefined
-    
-    /**
-      * Minute marks width, in pixels.
-      * @default 1
-      */
-    var minuteMarksWidth: js.UndefOr[Double] = js.undefined
-    
-    /**
-      * Whether hour marks shall be rendered.
-      * @default true
-      */
-    var renderHourMarks: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * Whether minute hand shall be rendered.
-      * @default true
-      */
-    var renderMinuteHand: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * Whether minute marks shall be rendered.
-      * @default true
-      */
-    var renderMinuteMarks: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * Whether numbers shall be rendered.
-      * @default false
-      */
-    var renderNumbers: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * Whether second hand shall be rendered.
-      * @default true
-      */
-    var renderSecondHand: js.UndefOr[Boolean] = js.undefined
-    
-    /**
-      * Second hand length, in %.
-      * @default 90
-      */
-    var secondHandLength: js.UndefOr[Double] = js.undefined
-    
-    /**
-      * The length of the part of a second hand on the opposite side the hand is pointing to, in %.
-      * @default 10
-      */
-    var secondHandOppositeLength: js.UndefOr[Double] = js.undefined
-    
-    /**
-      * Second hand width, in pixels.
-      * @default 1
-      */
-    var secondHandWidth: js.UndefOr[Double] = js.undefined
-    
-    /**
-      * Clock size, in pixels.
-      * @default 150
-      */
-    var size: js.UndefOr[Double] = js.undefined
-    
-    /**
-      * Clock value. Must be provided.
-      */
-    var value: T
-  }
-  object ClockProps {
-    
-    inline def apply[T](value: T): ClockProps[T] = {
-      val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-      __obj.asInstanceOf[ClockProps[T]]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: ClockProps[?], T] (val x: Self & ClockProps[T]) extends AnyVal {
+    object propTypes {
       
-      inline def setClassName(value: String | js.Array[String]): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      @JSImport("react-clock", "default.propTypes")
+      @js.native
+      val ^ : js.Any = js.native
       
-      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      @JSImport("react-clock", "default.propTypes.className")
+      @js.native
+      def className: Requireable[NonNullable[js.UndefOr[String | (js.Array[js.UndefOr[String | Null]]) | Null]]] = js.native
+      inline def className_=(x: Requireable[NonNullable[js.UndefOr[String | (js.Array[js.UndefOr[String | Null]]) | Null]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
       
-      inline def setClassNameVarargs(value: String*): Self = StObject.set(x, "className", js.Array(value*))
+      @JSImport("react-clock", "default.propTypes.formatHour")
+      @js.native
+      def formatHour: Requireable[js.Function1[/* repeated */ Any, Any]] = js.native
+      inline def formatHour_=(x: Requireable[js.Function1[/* repeated */ Any, Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("formatHour")(x.asInstanceOf[js.Any])
       
-      inline def setHourHandLength(value: Double): Self = StObject.set(x, "hourHandLength", value.asInstanceOf[js.Any])
+      inline def hourHandLength(props: Record[String, Any], propName: String, componentName: String): js.Error | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("hourHandLength")(props.asInstanceOf[js.Any], propName.asInstanceOf[js.Any], componentName.asInstanceOf[js.Any])).asInstanceOf[js.Error | Null]
       
-      inline def setHourHandLengthUndefined: Self = StObject.set(x, "hourHandLength", js.undefined)
+      inline def hourHandOppositeLength(props: Record[String, Any], propName: String, componentName: String): js.Error | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("hourHandOppositeLength")(props.asInstanceOf[js.Any], propName.asInstanceOf[js.Any], componentName.asInstanceOf[js.Any])).asInstanceOf[js.Error | Null]
       
-      inline def setHourHandOppositeLength(value: Double): Self = StObject.set(x, "hourHandOppositeLength", value.asInstanceOf[js.Any])
+      @JSImport("react-clock", "default.propTypes.hourHandWidth")
+      @js.native
+      def hourHandWidth: js.Function3[
+            /* props */ Record[String, Any], 
+            /* propName */ String, 
+            /* componentName */ String, 
+            js.Error | Null
+          ] = js.native
+      inline def hourHandWidth_=(
+        x: js.Function3[
+              /* props */ Record[String, Any], 
+              /* propName */ String, 
+              /* componentName */ String, 
+              js.Error | Null
+            ]
+      ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hourHandWidth")(x.asInstanceOf[js.Any])
       
-      inline def setHourHandOppositeLengthUndefined: Self = StObject.set(x, "hourHandOppositeLength", js.undefined)
+      inline def hourMarksLength(props: Record[String, Any], propName: String, componentName: String): js.Error | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("hourMarksLength")(props.asInstanceOf[js.Any], propName.asInstanceOf[js.Any], componentName.asInstanceOf[js.Any])).asInstanceOf[js.Error | Null]
       
-      inline def setHourHandWidth(value: Double): Self = StObject.set(x, "hourHandWidth", value.asInstanceOf[js.Any])
+      @JSImport("react-clock", "default.propTypes.hourMarksWidth")
+      @js.native
+      def hourMarksWidth: js.Function3[
+            /* props */ Record[String, Any], 
+            /* propName */ String, 
+            /* componentName */ String, 
+            js.Error | Null
+          ] = js.native
+      inline def hourMarksWidth_=(
+        x: js.Function3[
+              /* props */ Record[String, Any], 
+              /* propName */ String, 
+              /* componentName */ String, 
+              js.Error | Null
+            ]
+      ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hourMarksWidth")(x.asInstanceOf[js.Any])
       
-      inline def setHourHandWidthUndefined: Self = StObject.set(x, "hourHandWidth", js.undefined)
+      @JSImport("react-clock", "default.propTypes.locale")
+      @js.native
+      def locale: Requireable[String] = js.native
+      inline def locale_=(x: Requireable[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("locale")(x.asInstanceOf[js.Any])
       
-      inline def setHourMarksLength(value: Double): Self = StObject.set(x, "hourMarksLength", value.asInstanceOf[js.Any])
+      inline def minuteHandLength(props: Record[String, Any], propName: String, componentName: String): js.Error | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("minuteHandLength")(props.asInstanceOf[js.Any], propName.asInstanceOf[js.Any], componentName.asInstanceOf[js.Any])).asInstanceOf[js.Error | Null]
       
-      inline def setHourMarksLengthUndefined: Self = StObject.set(x, "hourMarksLength", js.undefined)
+      inline def minuteHandOppositeLength(props: Record[String, Any], propName: String, componentName: String): js.Error | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("minuteHandOppositeLength")(props.asInstanceOf[js.Any], propName.asInstanceOf[js.Any], componentName.asInstanceOf[js.Any])).asInstanceOf[js.Error | Null]
       
-      inline def setHourMarksWidth(value: Double): Self = StObject.set(x, "hourMarksWidth", value.asInstanceOf[js.Any])
+      @JSImport("react-clock", "default.propTypes.minuteHandWidth")
+      @js.native
+      def minuteHandWidth: js.Function3[
+            /* props */ Record[String, Any], 
+            /* propName */ String, 
+            /* componentName */ String, 
+            js.Error | Null
+          ] = js.native
+      inline def minuteHandWidth_=(
+        x: js.Function3[
+              /* props */ Record[String, Any], 
+              /* propName */ String, 
+              /* componentName */ String, 
+              js.Error | Null
+            ]
+      ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("minuteHandWidth")(x.asInstanceOf[js.Any])
       
-      inline def setHourMarksWidthUndefined: Self = StObject.set(x, "hourMarksWidth", js.undefined)
+      inline def minuteMarksLength(props: Record[String, Any], propName: String, componentName: String): js.Error | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("minuteMarksLength")(props.asInstanceOf[js.Any], propName.asInstanceOf[js.Any], componentName.asInstanceOf[js.Any])).asInstanceOf[js.Error | Null]
       
-      inline def setMinuteHandLength(value: Double): Self = StObject.set(x, "minuteHandLength", value.asInstanceOf[js.Any])
+      @JSImport("react-clock", "default.propTypes.minuteMarksWidth")
+      @js.native
+      def minuteMarksWidth: js.Function3[
+            /* props */ Record[String, Any], 
+            /* propName */ String, 
+            /* componentName */ String, 
+            js.Error | Null
+          ] = js.native
+      inline def minuteMarksWidth_=(
+        x: js.Function3[
+              /* props */ Record[String, Any], 
+              /* propName */ String, 
+              /* componentName */ String, 
+              js.Error | Null
+            ]
+      ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("minuteMarksWidth")(x.asInstanceOf[js.Any])
       
-      inline def setMinuteHandLengthUndefined: Self = StObject.set(x, "minuteHandLength", js.undefined)
+      @JSImport("react-clock", "default.propTypes.renderHourMarks")
+      @js.native
+      def renderHourMarks: Requireable[Boolean] = js.native
+      inline def renderHourMarks_=(x: Requireable[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("renderHourMarks")(x.asInstanceOf[js.Any])
       
-      inline def setMinuteHandOppositeLength(value: Double): Self = StObject.set(x, "minuteHandOppositeLength", value.asInstanceOf[js.Any])
+      @JSImport("react-clock", "default.propTypes.renderMinuteHand")
+      @js.native
+      def renderMinuteHand: Requireable[Boolean] = js.native
+      inline def renderMinuteHand_=(x: Requireable[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("renderMinuteHand")(x.asInstanceOf[js.Any])
       
-      inline def setMinuteHandOppositeLengthUndefined: Self = StObject.set(x, "minuteHandOppositeLength", js.undefined)
+      @JSImport("react-clock", "default.propTypes.renderMinuteMarks")
+      @js.native
+      def renderMinuteMarks: Requireable[Boolean] = js.native
+      inline def renderMinuteMarks_=(x: Requireable[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("renderMinuteMarks")(x.asInstanceOf[js.Any])
       
-      inline def setMinuteHandWidth(value: Double): Self = StObject.set(x, "minuteHandWidth", value.asInstanceOf[js.Any])
+      @JSImport("react-clock", "default.propTypes.renderNumbers")
+      @js.native
+      def renderNumbers: Requireable[Boolean] = js.native
+      inline def renderNumbers_=(x: Requireable[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("renderNumbers")(x.asInstanceOf[js.Any])
       
-      inline def setMinuteHandWidthUndefined: Self = StObject.set(x, "minuteHandWidth", js.undefined)
+      @JSImport("react-clock", "default.propTypes.renderSecondHand")
+      @js.native
+      def renderSecondHand: Requireable[Boolean] = js.native
+      inline def renderSecondHand_=(x: Requireable[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("renderSecondHand")(x.asInstanceOf[js.Any])
       
-      inline def setMinuteMarksLength(value: Double): Self = StObject.set(x, "minuteMarksLength", value.asInstanceOf[js.Any])
+      inline def secondHandLength(props: Record[String, Any], propName: String, componentName: String): js.Error | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("secondHandLength")(props.asInstanceOf[js.Any], propName.asInstanceOf[js.Any], componentName.asInstanceOf[js.Any])).asInstanceOf[js.Error | Null]
       
-      inline def setMinuteMarksLengthUndefined: Self = StObject.set(x, "minuteMarksLength", js.undefined)
+      inline def secondHandOppositeLength(props: Record[String, Any], propName: String, componentName: String): js.Error | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("secondHandOppositeLength")(props.asInstanceOf[js.Any], propName.asInstanceOf[js.Any], componentName.asInstanceOf[js.Any])).asInstanceOf[js.Error | Null]
       
-      inline def setMinuteMarksWidth(value: Double): Self = StObject.set(x, "minuteMarksWidth", value.asInstanceOf[js.Any])
+      @JSImport("react-clock", "default.propTypes.secondHandWidth")
+      @js.native
+      def secondHandWidth: js.Function3[
+            /* props */ Record[String, Any], 
+            /* propName */ String, 
+            /* componentName */ String, 
+            js.Error | Null
+          ] = js.native
+      inline def secondHandWidth_=(
+        x: js.Function3[
+              /* props */ Record[String, Any], 
+              /* propName */ String, 
+              /* componentName */ String, 
+              js.Error | Null
+            ]
+      ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("secondHandWidth")(x.asInstanceOf[js.Any])
       
-      inline def setMinuteMarksWidthUndefined: Self = StObject.set(x, "minuteMarksWidth", js.undefined)
+      @JSImport("react-clock", "default.propTypes.size")
+      @js.native
+      def size: Requireable[NonNullable[js.UndefOr[String | Double | Null]]] = js.native
+      inline def size_=(x: Requireable[NonNullable[js.UndefOr[String | Double | Null]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("size")(x.asInstanceOf[js.Any])
       
-      inline def setRenderHourMarks(value: Boolean): Self = StObject.set(x, "renderHourMarks", value.asInstanceOf[js.Any])
-      
-      inline def setRenderHourMarksUndefined: Self = StObject.set(x, "renderHourMarks", js.undefined)
-      
-      inline def setRenderMinuteHand(value: Boolean): Self = StObject.set(x, "renderMinuteHand", value.asInstanceOf[js.Any])
-      
-      inline def setRenderMinuteHandUndefined: Self = StObject.set(x, "renderMinuteHand", js.undefined)
-      
-      inline def setRenderMinuteMarks(value: Boolean): Self = StObject.set(x, "renderMinuteMarks", value.asInstanceOf[js.Any])
-      
-      inline def setRenderMinuteMarksUndefined: Self = StObject.set(x, "renderMinuteMarks", js.undefined)
-      
-      inline def setRenderNumbers(value: Boolean): Self = StObject.set(x, "renderNumbers", value.asInstanceOf[js.Any])
-      
-      inline def setRenderNumbersUndefined: Self = StObject.set(x, "renderNumbers", js.undefined)
-      
-      inline def setRenderSecondHand(value: Boolean): Self = StObject.set(x, "renderSecondHand", value.asInstanceOf[js.Any])
-      
-      inline def setRenderSecondHandUndefined: Self = StObject.set(x, "renderSecondHand", js.undefined)
-      
-      inline def setSecondHandLength(value: Double): Self = StObject.set(x, "secondHandLength", value.asInstanceOf[js.Any])
-      
-      inline def setSecondHandLengthUndefined: Self = StObject.set(x, "secondHandLength", js.undefined)
-      
-      inline def setSecondHandOppositeLength(value: Double): Self = StObject.set(x, "secondHandOppositeLength", value.asInstanceOf[js.Any])
-      
-      inline def setSecondHandOppositeLengthUndefined: Self = StObject.set(x, "secondHandOppositeLength", js.undefined)
-      
-      inline def setSecondHandWidth(value: Double): Self = StObject.set(x, "secondHandWidth", value.asInstanceOf[js.Any])
-      
-      inline def setSecondHandWidthUndefined: Self = StObject.set(x, "secondHandWidth", js.undefined)
-      
-      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
-      
-      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
-      
-      inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      @JSImport("react-clock", "default.propTypes.value")
+      @js.native
+      def value: Requireable[NonNullable[js.UndefOr[String | js.Date | Null]]] = js.native
+      inline def value_=(x: Requireable[NonNullable[js.UndefOr[String | js.Date | Null]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("value")(x.asInstanceOf[js.Any])
     }
   }
   
-  type ClockValue = String | js.Date
+  object Clock {
+    
+    inline def apply(param0: ClockProps): Element = ^.asInstanceOf[js.Dynamic].apply(param0.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @JSImport("react-clock", "Clock")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    object propTypes {
+      
+      @JSImport("react-clock", "Clock.propTypes")
+      @js.native
+      val ^ : js.Any = js.native
+      
+      @JSImport("react-clock", "Clock.propTypes.className")
+      @js.native
+      def className: Requireable[NonNullable[js.UndefOr[String | (js.Array[js.UndefOr[String | Null]]) | Null]]] = js.native
+      inline def className_=(x: Requireable[NonNullable[js.UndefOr[String | (js.Array[js.UndefOr[String | Null]]) | Null]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
+      
+      @JSImport("react-clock", "Clock.propTypes.formatHour")
+      @js.native
+      def formatHour: Requireable[js.Function1[/* repeated */ Any, Any]] = js.native
+      inline def formatHour_=(x: Requireable[js.Function1[/* repeated */ Any, Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("formatHour")(x.asInstanceOf[js.Any])
+      
+      inline def hourHandLength(props: Record[String, Any], propName: String, componentName: String): js.Error | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("hourHandLength")(props.asInstanceOf[js.Any], propName.asInstanceOf[js.Any], componentName.asInstanceOf[js.Any])).asInstanceOf[js.Error | Null]
+      
+      inline def hourHandOppositeLength(props: Record[String, Any], propName: String, componentName: String): js.Error | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("hourHandOppositeLength")(props.asInstanceOf[js.Any], propName.asInstanceOf[js.Any], componentName.asInstanceOf[js.Any])).asInstanceOf[js.Error | Null]
+      
+      @JSImport("react-clock", "Clock.propTypes.hourHandWidth")
+      @js.native
+      def hourHandWidth: js.Function3[
+            /* props */ Record[String, Any], 
+            /* propName */ String, 
+            /* componentName */ String, 
+            js.Error | Null
+          ] = js.native
+      inline def hourHandWidth_=(
+        x: js.Function3[
+              /* props */ Record[String, Any], 
+              /* propName */ String, 
+              /* componentName */ String, 
+              js.Error | Null
+            ]
+      ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hourHandWidth")(x.asInstanceOf[js.Any])
+      
+      inline def hourMarksLength(props: Record[String, Any], propName: String, componentName: String): js.Error | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("hourMarksLength")(props.asInstanceOf[js.Any], propName.asInstanceOf[js.Any], componentName.asInstanceOf[js.Any])).asInstanceOf[js.Error | Null]
+      
+      @JSImport("react-clock", "Clock.propTypes.hourMarksWidth")
+      @js.native
+      def hourMarksWidth: js.Function3[
+            /* props */ Record[String, Any], 
+            /* propName */ String, 
+            /* componentName */ String, 
+            js.Error | Null
+          ] = js.native
+      inline def hourMarksWidth_=(
+        x: js.Function3[
+              /* props */ Record[String, Any], 
+              /* propName */ String, 
+              /* componentName */ String, 
+              js.Error | Null
+            ]
+      ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hourMarksWidth")(x.asInstanceOf[js.Any])
+      
+      @JSImport("react-clock", "Clock.propTypes.locale")
+      @js.native
+      def locale: Requireable[String] = js.native
+      inline def locale_=(x: Requireable[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("locale")(x.asInstanceOf[js.Any])
+      
+      inline def minuteHandLength(props: Record[String, Any], propName: String, componentName: String): js.Error | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("minuteHandLength")(props.asInstanceOf[js.Any], propName.asInstanceOf[js.Any], componentName.asInstanceOf[js.Any])).asInstanceOf[js.Error | Null]
+      
+      inline def minuteHandOppositeLength(props: Record[String, Any], propName: String, componentName: String): js.Error | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("minuteHandOppositeLength")(props.asInstanceOf[js.Any], propName.asInstanceOf[js.Any], componentName.asInstanceOf[js.Any])).asInstanceOf[js.Error | Null]
+      
+      @JSImport("react-clock", "Clock.propTypes.minuteHandWidth")
+      @js.native
+      def minuteHandWidth: js.Function3[
+            /* props */ Record[String, Any], 
+            /* propName */ String, 
+            /* componentName */ String, 
+            js.Error | Null
+          ] = js.native
+      inline def minuteHandWidth_=(
+        x: js.Function3[
+              /* props */ Record[String, Any], 
+              /* propName */ String, 
+              /* componentName */ String, 
+              js.Error | Null
+            ]
+      ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("minuteHandWidth")(x.asInstanceOf[js.Any])
+      
+      inline def minuteMarksLength(props: Record[String, Any], propName: String, componentName: String): js.Error | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("minuteMarksLength")(props.asInstanceOf[js.Any], propName.asInstanceOf[js.Any], componentName.asInstanceOf[js.Any])).asInstanceOf[js.Error | Null]
+      
+      @JSImport("react-clock", "Clock.propTypes.minuteMarksWidth")
+      @js.native
+      def minuteMarksWidth: js.Function3[
+            /* props */ Record[String, Any], 
+            /* propName */ String, 
+            /* componentName */ String, 
+            js.Error | Null
+          ] = js.native
+      inline def minuteMarksWidth_=(
+        x: js.Function3[
+              /* props */ Record[String, Any], 
+              /* propName */ String, 
+              /* componentName */ String, 
+              js.Error | Null
+            ]
+      ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("minuteMarksWidth")(x.asInstanceOf[js.Any])
+      
+      @JSImport("react-clock", "Clock.propTypes.renderHourMarks")
+      @js.native
+      def renderHourMarks: Requireable[Boolean] = js.native
+      inline def renderHourMarks_=(x: Requireable[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("renderHourMarks")(x.asInstanceOf[js.Any])
+      
+      @JSImport("react-clock", "Clock.propTypes.renderMinuteHand")
+      @js.native
+      def renderMinuteHand: Requireable[Boolean] = js.native
+      inline def renderMinuteHand_=(x: Requireable[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("renderMinuteHand")(x.asInstanceOf[js.Any])
+      
+      @JSImport("react-clock", "Clock.propTypes.renderMinuteMarks")
+      @js.native
+      def renderMinuteMarks: Requireable[Boolean] = js.native
+      inline def renderMinuteMarks_=(x: Requireable[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("renderMinuteMarks")(x.asInstanceOf[js.Any])
+      
+      @JSImport("react-clock", "Clock.propTypes.renderNumbers")
+      @js.native
+      def renderNumbers: Requireable[Boolean] = js.native
+      inline def renderNumbers_=(x: Requireable[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("renderNumbers")(x.asInstanceOf[js.Any])
+      
+      @JSImport("react-clock", "Clock.propTypes.renderSecondHand")
+      @js.native
+      def renderSecondHand: Requireable[Boolean] = js.native
+      inline def renderSecondHand_=(x: Requireable[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("renderSecondHand")(x.asInstanceOf[js.Any])
+      
+      inline def secondHandLength(props: Record[String, Any], propName: String, componentName: String): js.Error | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("secondHandLength")(props.asInstanceOf[js.Any], propName.asInstanceOf[js.Any], componentName.asInstanceOf[js.Any])).asInstanceOf[js.Error | Null]
+      
+      inline def secondHandOppositeLength(props: Record[String, Any], propName: String, componentName: String): js.Error | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("secondHandOppositeLength")(props.asInstanceOf[js.Any], propName.asInstanceOf[js.Any], componentName.asInstanceOf[js.Any])).asInstanceOf[js.Error | Null]
+      
+      @JSImport("react-clock", "Clock.propTypes.secondHandWidth")
+      @js.native
+      def secondHandWidth: js.Function3[
+            /* props */ Record[String, Any], 
+            /* propName */ String, 
+            /* componentName */ String, 
+            js.Error | Null
+          ] = js.native
+      inline def secondHandWidth_=(
+        x: js.Function3[
+              /* props */ Record[String, Any], 
+              /* propName */ String, 
+              /* componentName */ String, 
+              js.Error | Null
+            ]
+      ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("secondHandWidth")(x.asInstanceOf[js.Any])
+      
+      @JSImport("react-clock", "Clock.propTypes.size")
+      @js.native
+      def size: Requireable[NonNullable[js.UndefOr[String | Double | Null]]] = js.native
+      inline def size_=(x: Requireable[NonNullable[js.UndefOr[String | Double | Null]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("size")(x.asInstanceOf[js.Any])
+      
+      @JSImport("react-clock", "Clock.propTypes.value")
+      @js.native
+      def value: Requireable[NonNullable[js.UndefOr[String | js.Date | Null]]] = js.native
+      inline def value_=(x: Requireable[NonNullable[js.UndefOr[String | js.Date | Null]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("value")(x.asInstanceOf[js.Any])
+    }
+  }
 }

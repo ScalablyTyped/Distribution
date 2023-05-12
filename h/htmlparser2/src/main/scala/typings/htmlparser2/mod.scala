@@ -86,7 +86,7 @@ object mod {
     
     inline def append(elem: ChildNode, next: ChildNode): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("append")(elem.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    inline def appendChild(elem: Element, child: ChildNode): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendChild")(elem.asInstanceOf[js.Any], child.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def appendChild(parent: ParentNode, child: ChildNode): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendChild")(parent.asInstanceOf[js.Any], child.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     inline def compareDocumentPosition(nodeA: AnyNode, nodeB: AnyNode): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compareDocumentPosition")(nodeA.asInstanceOf[js.Any], nodeB.asInstanceOf[js.Any])).asInstanceOf[Double]
     
@@ -247,7 +247,7 @@ object mod {
     
     inline def prepend(elem: ChildNode, prev: ChildNode): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("prepend")(elem.asInstanceOf[js.Any], prev.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    inline def prependChild(elem: Element, child: ChildNode): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("prependChild")(elem.asInstanceOf[js.Any], child.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def prependChild(parent: ParentNode, child: ChildNode): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("prependChild")(parent.asInstanceOf[js.Any], child.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     inline def prevElementSibling(elem: AnyNode): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("prevElementSibling")(elem.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
     
@@ -352,21 +352,37 @@ object mod {
     def this(param0: DecodeEntities, cbs: Callbacks) = this()
   }
   
-  inline def createDomStream(cb: js.Function2[/* error */ js.Error | Null, /* dom */ js.Array[ChildNode], Unit]): typings.htmlparser2.libParserMod.Parser = ^.asInstanceOf[js.Dynamic].applyDynamic("createDomStream")(cb.asInstanceOf[js.Any]).asInstanceOf[typings.htmlparser2.libParserMod.Parser]
-  inline def createDomStream(
-    cb: js.Function2[/* error */ js.Error | Null, /* dom */ js.Array[ChildNode], Unit],
+  inline def createDocumentStream(callback: js.Function2[/* error */ js.Error | Null, /* document */ Document, Unit]): typings.htmlparser2.libParserMod.Parser = ^.asInstanceOf[js.Dynamic].applyDynamic("createDocumentStream")(callback.asInstanceOf[js.Any]).asInstanceOf[typings.htmlparser2.libParserMod.Parser]
+  inline def createDocumentStream(
+    callback: js.Function2[/* error */ js.Error | Null, /* document */ Document, Unit],
     options: Unit,
-    elementCb: js.Function1[/* element */ Element, Unit]
-  ): typings.htmlparser2.libParserMod.Parser = (^.asInstanceOf[js.Dynamic].applyDynamic("createDomStream")(cb.asInstanceOf[js.Any], options.asInstanceOf[js.Any], elementCb.asInstanceOf[js.Any])).asInstanceOf[typings.htmlparser2.libParserMod.Parser]
-  inline def createDomStream(
-    cb: js.Function2[/* error */ js.Error | Null, /* dom */ js.Array[ChildNode], Unit],
+    elementCallback: js.Function1[/* element */ Element, Unit]
+  ): typings.htmlparser2.libParserMod.Parser = (^.asInstanceOf[js.Dynamic].applyDynamic("createDocumentStream")(callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any], elementCallback.asInstanceOf[js.Any])).asInstanceOf[typings.htmlparser2.libParserMod.Parser]
+  inline def createDocumentStream(
+    callback: js.Function2[/* error */ js.Error | Null, /* document */ Document, Unit],
     options: Options
-  ): typings.htmlparser2.libParserMod.Parser = (^.asInstanceOf[js.Dynamic].applyDynamic("createDomStream")(cb.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.htmlparser2.libParserMod.Parser]
-  inline def createDomStream(
-    cb: js.Function2[/* error */ js.Error | Null, /* dom */ js.Array[ChildNode], Unit],
+  ): typings.htmlparser2.libParserMod.Parser = (^.asInstanceOf[js.Dynamic].applyDynamic("createDocumentStream")(callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.htmlparser2.libParserMod.Parser]
+  inline def createDocumentStream(
+    callback: js.Function2[/* error */ js.Error | Null, /* document */ Document, Unit],
     options: Options,
-    elementCb: js.Function1[/* element */ Element, Unit]
-  ): typings.htmlparser2.libParserMod.Parser = (^.asInstanceOf[js.Dynamic].applyDynamic("createDomStream")(cb.asInstanceOf[js.Any], options.asInstanceOf[js.Any], elementCb.asInstanceOf[js.Any])).asInstanceOf[typings.htmlparser2.libParserMod.Parser]
+    elementCallback: js.Function1[/* element */ Element, Unit]
+  ): typings.htmlparser2.libParserMod.Parser = (^.asInstanceOf[js.Dynamic].applyDynamic("createDocumentStream")(callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any], elementCallback.asInstanceOf[js.Any])).asInstanceOf[typings.htmlparser2.libParserMod.Parser]
+  
+  inline def createDomStream(callback: js.Function2[/* error */ js.Error | Null, /* dom */ js.Array[ChildNode], Unit]): typings.htmlparser2.libParserMod.Parser = ^.asInstanceOf[js.Dynamic].applyDynamic("createDomStream")(callback.asInstanceOf[js.Any]).asInstanceOf[typings.htmlparser2.libParserMod.Parser]
+  inline def createDomStream(
+    callback: js.Function2[/* error */ js.Error | Null, /* dom */ js.Array[ChildNode], Unit],
+    options: Unit,
+    elementCallback: js.Function1[/* element */ Element, Unit]
+  ): typings.htmlparser2.libParserMod.Parser = (^.asInstanceOf[js.Dynamic].applyDynamic("createDomStream")(callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any], elementCallback.asInstanceOf[js.Any])).asInstanceOf[typings.htmlparser2.libParserMod.Parser]
+  inline def createDomStream(
+    callback: js.Function2[/* error */ js.Error | Null, /* dom */ js.Array[ChildNode], Unit],
+    options: Options
+  ): typings.htmlparser2.libParserMod.Parser = (^.asInstanceOf[js.Dynamic].applyDynamic("createDomStream")(callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.htmlparser2.libParserMod.Parser]
+  inline def createDomStream(
+    callback: js.Function2[/* error */ js.Error | Null, /* dom */ js.Array[ChildNode], Unit],
+    options: Options,
+    elementCallback: js.Function1[/* element */ Element, Unit]
+  ): typings.htmlparser2.libParserMod.Parser = (^.asInstanceOf[js.Dynamic].applyDynamic("createDomStream")(callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any], elementCallback.asInstanceOf[js.Any])).asInstanceOf[typings.htmlparser2.libParserMod.Parser]
   
   inline def getFeed(doc: js.Array[AnyNode]): Feed | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getFeed")(doc.asInstanceOf[js.Any]).asInstanceOf[Feed | Null]
   
@@ -377,7 +393,7 @@ object mod {
   inline def parseDocument(data: String, options: Options): Document = (^.asInstanceOf[js.Dynamic].applyDynamic("parseDocument")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Document]
   
   inline def parseFeed(feed: String): Feed | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("parseFeed")(feed.asInstanceOf[js.Any]).asInstanceOf[Feed | Null]
-  inline def parseFeed(feed: String, options: ParserOptions & DomHandlerOptions): Feed | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFeed")(feed.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Feed | Null]
+  inline def parseFeed(feed: String, options: Options): Feed | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFeed")(feed.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Feed | Null]
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.domhandler.mod.DomHandlerOptions because var conflicts: xmlMode. Inlined withStartIndices, withEndIndices */ trait Options

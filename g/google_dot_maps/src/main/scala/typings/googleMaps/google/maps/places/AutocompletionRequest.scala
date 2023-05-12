@@ -1,5 +1,7 @@
 package typings.googleMaps.google.maps.places
 
+import typings.googleMaps.google.maps.Circle
+import typings.googleMaps.google.maps.CircleLiteral
 import typings.googleMaps.google.maps.LatLng
 import typings.googleMaps.google.maps.LatLngBounds
 import typings.googleMaps.google.maps.LatLngBoundsLiteral
@@ -8,10 +10,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * An Autocompletion request to be sent to {@link
-  * google.maps.places.AutocompleteService.getPlacePredictions}.
-  */
 trait AutocompletionRequest extends StObject {
   
   /**
@@ -49,6 +47,18 @@ trait AutocompletionRequest extends StObject {
     * <code>bounds</code> can be used.
     */
   var location: js.UndefOr[LatLng] = js.undefined
+  
+  /**
+    * A soft boundary or hint to use when searching for places.
+    */
+  var locationBias: js.UndefOr[
+    LatLng | LatLngLiteral | LatLngBounds | LatLngBoundsLiteral | Circle | CircleLiteral | String | Null
+  ] = js.undefined
+  
+  /**
+    * Bounds to constrain search results.
+    */
+  var locationRestriction: js.UndefOr[LatLngBounds | LatLngBoundsLiteral | Null] = js.undefined
   
   /**
     * The character position in the input term at which the service uses text
@@ -125,6 +135,20 @@ object AutocompletionRequest {
     inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
     inline def setLocation(value: LatLng): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    
+    inline def setLocationBias(
+      value: LatLng | LatLngLiteral | LatLngBounds | LatLngBoundsLiteral | Circle | CircleLiteral | String
+    ): Self = StObject.set(x, "locationBias", value.asInstanceOf[js.Any])
+    
+    inline def setLocationBiasNull: Self = StObject.set(x, "locationBias", null)
+    
+    inline def setLocationBiasUndefined: Self = StObject.set(x, "locationBias", js.undefined)
+    
+    inline def setLocationRestriction(value: LatLngBounds | LatLngBoundsLiteral): Self = StObject.set(x, "locationRestriction", value.asInstanceOf[js.Any])
+    
+    inline def setLocationRestrictionNull: Self = StObject.set(x, "locationRestriction", null)
+    
+    inline def setLocationRestrictionUndefined: Self = StObject.set(x, "locationRestriction", js.undefined)
     
     inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     

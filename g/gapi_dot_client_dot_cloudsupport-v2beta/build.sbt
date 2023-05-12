@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gapi_dot_client_dot_cloudsupport-v2beta"
-version := "0.0-dt-20220912Z-60d6dd"
+version := "0.0-dt-20230214Z-60d6dd"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

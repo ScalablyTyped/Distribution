@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CloudFrontOriginAccessIdentity extends StObject {
   
   /**
-    * The current configuration information for the identity. 
+    * The current configuration information for the identity.
     */
   var CloudFrontOriginAccessIdentityConfig: js.UndefOr[typings.awsSdk.clientsCloudfrontMod.CloudFrontOriginAccessIdentityConfig] = js.undefined
   
@@ -17,7 +17,7 @@ trait CloudFrontOriginAccessIdentity extends StObject {
   var Id: String
   
   /**
-    * The Amazon S3 canonical user ID for the origin access identity, used when giving the origin access identity read permission to an object in Amazon S3. 
+    * The Amazon S3 canonical user ID for the origin access identity, used when giving the origin access identity read permission to an object in Amazon S3.
     */
   var S3CanonicalUserId: String
 }

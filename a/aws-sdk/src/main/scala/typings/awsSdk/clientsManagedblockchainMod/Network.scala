@@ -57,7 +57,7 @@ trait Network extends StObject {
   var Tags: js.UndefOr[OutputTagMap] = js.undefined
   
   /**
-    * The voting rules for the network to decide if a proposal is accepted.
+    * The voting rules that the network uses to decide if a proposal is accepted.
     */
   var VotingPolicy: js.UndefOr[typings.awsSdk.clientsManagedblockchainMod.VotingPolicy] = js.undefined
   

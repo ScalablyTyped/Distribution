@@ -107,6 +107,24 @@ object anon {
     }
   }
   
+  trait Passive extends StObject {
+    
+    var passive: Boolean
+  }
+  object Passive {
+    
+    inline def apply(passive: Boolean): Passive = {
+      val __obj = js.Dynamic.literal(passive = passive.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Passive]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Passive] (val x: Self) extends AnyVal {
+      
+      inline def setPassive(value: Boolean): Self = StObject.set(x, "passive", value.asInstanceOf[js.Any])
+    }
+  }
+  
   trait X extends StObject {
     
     var x: Double

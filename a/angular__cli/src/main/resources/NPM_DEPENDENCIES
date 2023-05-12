@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "@angular/cli" : "14.2.6"
+      "@angular/cli" : "16.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "@angular/cli" : "14.2.6"
+      "@angular/cli" : "16.0.1"
     }
   ],
   "compile-devDependencies" : [

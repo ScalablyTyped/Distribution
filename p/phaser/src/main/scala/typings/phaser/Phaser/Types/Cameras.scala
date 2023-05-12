@@ -268,7 +268,7 @@ object Cameras {
       /**
         * Defines the Camera bounds.
         */
-      var bounds: js.UndefOr[js.Object] = js.undefined
+      var bounds: js.UndefOr[js.Object | Null] = js.undefined
       
       /**
         * The height of the Camera bounds.
@@ -375,6 +375,8 @@ object Cameras {
         inline def setBoundsDoty(value: Double): Self = StObject.set(x, "bounds.y", value.asInstanceOf[js.Any])
         
         inline def setBoundsDotyUndefined: Self = StObject.set(x, "bounds.y", js.undefined)
+        
+        inline def setBoundsNull: Self = StObject.set(x, "bounds", null)
         
         inline def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
         

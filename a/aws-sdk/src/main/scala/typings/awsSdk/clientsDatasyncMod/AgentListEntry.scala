@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AgentListEntry extends StObject {
   
   /**
-    * The Amazon Resource Name (ARN) of the agent.
+    * The Amazon Resource Name (ARN) of a DataSync agent.
     */
   var AgentArn: js.UndefOr[typings.awsSdk.clientsDatasyncMod.AgentArn] = js.undefined
   
   /**
-    * The name of the agent.
+    * The name of an agent.
     */
   var Name: js.UndefOr[TagValue] = js.undefined
   
   /**
-    * The status of the agent.
+    * The status of an agent. For more information, see DataSync agent statuses.
     */
   var Status: js.UndefOr[AgentStatus] = js.undefined
 }

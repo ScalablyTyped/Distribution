@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BatchChannelMemberships extends StObject {
   
   /**
-    * The ARN of the channel to which you're adding users.
+    * The ARN of the channel to which you're adding members.
     */
   var ChannelArn: js.UndefOr[ChimeArn] = js.undefined
   
@@ -27,7 +27,7 @@ trait BatchChannelMemberships extends StObject {
   var SubChannelId: js.UndefOr[typings.awsSdk.clientsChimesdkmessagingMod.SubChannelId] = js.undefined
   
   /**
-    * The membership types set for the channel users.
+    * The membership types set for the channel members.
     */
   var Type: js.UndefOr[ChannelMembershipType] = js.undefined
 }

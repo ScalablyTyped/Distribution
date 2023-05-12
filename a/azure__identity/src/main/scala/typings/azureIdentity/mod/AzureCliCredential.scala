@@ -23,4 +23,6 @@ open class AzureCliCredential ()
   /* private */ var additionallyAllowedTenantIds: Any = js.native
   
   /* private */ var tenantId: Any = js.native
+  
+  /* private */ var timeout: Any = js.native
 }

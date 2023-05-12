@@ -193,6 +193,71 @@ object sapUiIntegrationLibraryMod {
     /* "Inactive" */ val Inactive: typings.openui5.sapUiIntegrationLibraryMod.CardDataMode.Inactive & String = js.native
   }
   
+  @js.native
+  sealed trait CardDesign extends StObject
+  @JSImport("sap/ui/integration/library", "CardDesign")
+  @js.native
+  object CardDesign extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[CardDesign & String] = js.native
+    
+    /**
+      * When in this mode, the card has a solid background.
+      */
+    @js.native
+    sealed trait Solid
+      extends StObject
+         with CardDesign
+    /* "Solid" */ val Solid: typings.openui5.sapUiIntegrationLibraryMod.CardDesign.Solid & String = js.native
+    
+    /**
+      * When in this mode, the card background is transparent.
+      */
+    @js.native
+    sealed trait Transparent
+      extends StObject
+         with CardDesign
+    /* "Transparent" */ val Transparent: typings.openui5.sapUiIntegrationLibraryMod.CardDesign.Transparent & String = js.native
+  }
+  
+  @js.native
+  sealed trait CardPreviewMode extends StObject
+  @JSImport("sap/ui/integration/library", "CardPreviewMode")
+  @js.native
+  object CardPreviewMode extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[CardPreviewMode & String] = js.native
+    
+    /**
+      * Card displays abstract preview. No data requests are made.
+      */
+    @js.native
+    sealed trait Abstract
+      extends StObject
+         with CardPreviewMode
+    /* "Abstract" */ val Abstract: typings.openui5.sapUiIntegrationLibraryMod.CardPreviewMode.Abstract & String = js.native
+    
+    /**
+      * Card displays mocked data, loaded using a data request as configured in the manifest.
+      */
+    @js.native
+    sealed trait MockData
+      extends StObject
+         with CardPreviewMode
+    /* "MockData" */ val MockData: typings.openui5.sapUiIntegrationLibraryMod.CardPreviewMode.MockData & String = js.native
+    
+    /**
+      * Card displays real data.
+      */
+    @js.native
+    sealed trait Off
+      extends StObject
+         with CardPreviewMode
+    /* "Off" */ val Off: typings.openui5.sapUiIntegrationLibraryMod.CardPreviewMode.Off & String = js.native
+  }
+  
   trait CardMenuAction extends StObject {
     
     /**

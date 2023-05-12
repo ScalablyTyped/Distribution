@@ -1,7 +1,7 @@
 
 # Scala.js typings for victory-create-container
 
-Typings are for version 36.6.8
+Typings are for version 36.6.10
 
 ## Library description:
 Container Helper for Victory

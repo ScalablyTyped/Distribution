@@ -6,7 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait ColumnidNumber extends StObject {
   
-  /** The unique identifier of the column. */
   var column_id: Double
 }
 object ColumnidNumber {

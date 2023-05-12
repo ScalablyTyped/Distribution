@@ -40,6 +40,12 @@ object mod {
   trait ServeStaticOptions[R /* <: ServerResponse[IncomingMessage] */] extends StObject {
     
     /**
+      * Enable or disable accepting ranged requests, defaults to true.
+      * Disabling this will not send Accept-Ranges and ignore the contents of the Range request header.
+      */
+    var acceptRanges: js.UndefOr[Boolean] = js.undefined
+    
+    /**
       * Enable or disable setting Cache-Control response header, defaults to true.
       * Disabling this will ignore the immutable and maxAge options.
       */
@@ -119,6 +125,10 @@ object mod {
     
     @scala.inline
     implicit open class MutableBuilder[Self <: ServeStaticOptions[?], R /* <: ServerResponse[IncomingMessage] */] (val x: Self & ServeStaticOptions[R]) extends AnyVal {
+      
+      inline def setAcceptRanges(value: Boolean): Self = StObject.set(x, "acceptRanges", value.asInstanceOf[js.Any])
+      
+      inline def setAcceptRangesUndefined: Self = StObject.set(x, "acceptRanges", js.undefined)
       
       inline def setCacheControl(value: Boolean): Self = StObject.set(x, "cacheControl", value.asInstanceOf[js.Any])
       

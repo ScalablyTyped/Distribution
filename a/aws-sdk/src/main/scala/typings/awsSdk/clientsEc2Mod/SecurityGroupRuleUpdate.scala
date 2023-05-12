@@ -14,12 +14,12 @@ trait SecurityGroupRuleUpdate extends StObject {
   /**
     * The ID of the security group rule.
     */
-  var SecurityGroupRuleId: js.UndefOr[typings.awsSdk.clientsEc2Mod.SecurityGroupRuleId] = js.undefined
+  var SecurityGroupRuleId: typings.awsSdk.clientsEc2Mod.SecurityGroupRuleId
 }
 object SecurityGroupRuleUpdate {
   
-  inline def apply(): SecurityGroupRuleUpdate = {
-    val __obj = js.Dynamic.literal()
+  inline def apply(SecurityGroupRuleId: SecurityGroupRuleId): SecurityGroupRuleUpdate = {
+    val __obj = js.Dynamic.literal(SecurityGroupRuleId = SecurityGroupRuleId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SecurityGroupRuleUpdate]
   }
   
@@ -29,8 +29,6 @@ object SecurityGroupRuleUpdate {
     inline def setSecurityGroupRule(value: SecurityGroupRuleRequest): Self = StObject.set(x, "SecurityGroupRule", value.asInstanceOf[js.Any])
     
     inline def setSecurityGroupRuleId(value: SecurityGroupRuleId): Self = StObject.set(x, "SecurityGroupRuleId", value.asInstanceOf[js.Any])
-    
-    inline def setSecurityGroupRuleIdUndefined: Self = StObject.set(x, "SecurityGroupRuleId", js.undefined)
     
     inline def setSecurityGroupRuleUndefined: Self = StObject.set(x, "SecurityGroupRule", js.undefined)
   }

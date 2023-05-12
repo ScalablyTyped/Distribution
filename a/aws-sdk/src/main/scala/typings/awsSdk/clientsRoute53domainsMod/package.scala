@@ -1,5 +1,6 @@
 package typings.awsSdk.clientsRoute53domainsMod
 
+import typings.awsSdk.awsSdkStrings.SubmittedDate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -291,6 +292,10 @@ type CurrentExpiryYear = Double
 
 type DNSSec = java.lang.String
 
+type DnssecKeyList = js.Array[DnssecKey]
+
+type DnssecPublicKey = java.lang.String
+
 type DomainAuthCode = java.lang.String
 
 /* Rewritten from type alias, can be one of: 
@@ -359,6 +364,7 @@ type ExtraParamList = js.Array[ExtraParam]
   - typings.awsSdk.awsSdkStrings.UK_CONTACT_TYPE
   - typings.awsSdk.awsSdkStrings.UK_COMPANY_NUMBER
   - typings.awsSdk.awsSdkStrings.EU_COUNTRY_OF_CITIZENSHIP
+  - typings.awsSdk.awsSdkStrings.AU_PRIORITY_TOKEN
   - java.lang.String
 */
 type ExtraParamName = _ExtraParamName | java.lang.String
@@ -379,6 +385,8 @@ type Integer = Double
 
 type InvoiceId = java.lang.String
 
+type Label = java.lang.String
+
 type LangCode = java.lang.String
 
 /* Rewritten from type alias, can be one of: 
@@ -388,7 +396,11 @@ type LangCode = java.lang.String
 */
 type ListDomainsAttributeName = _ListDomainsAttributeName | java.lang.String
 
+type ListOperationsSortAttributeName = SubmittedDate | java.lang.String
+
 type NameserverList = js.Array[Nameserver]
+
+type NullableInteger = Double
 
 type OperationId = java.lang.String
 
@@ -401,6 +413,8 @@ type OperationId = java.lang.String
   - java.lang.String
 */
 type OperationStatus = _OperationStatus | java.lang.String
+
+type OperationStatusList = js.Array[OperationStatus]
 
 type OperationSummaryList = js.Array[OperationSummary]
 
@@ -426,6 +440,8 @@ type OperationSummaryList = js.Array[OperationSummary]
   - java.lang.String
 */
 type OperationType = _OperationType | java.lang.String
+
+type OperationTypeList = js.Array[OperationType]
 
 /* Rewritten from type alias, can be one of: 
   - typings.awsSdk.awsSdkStrings.LE
@@ -468,6 +484,16 @@ type SortOrder = _SortOrder | java.lang.String
 
 type State = java.lang.String
 
+/* Rewritten from type alias, can be one of: 
+  - typings.awsSdk.awsSdkStrings.PENDING_ACCEPTANCE
+  - typings.awsSdk.awsSdkStrings.PENDING_CUSTOMER_ACTION
+  - typings.awsSdk.awsSdkStrings.PENDING_AUTHORIZATION
+  - typings.awsSdk.awsSdkStrings.PENDING_PAYMENT_VERIFICATION
+  - typings.awsSdk.awsSdkStrings.PENDING_SUPPORT_CASE
+  - java.lang.String
+*/
+type StatusFlag = _StatusFlag | java.lang.String
+
 type String = java.lang.String
 
 type TagKey = java.lang.String
@@ -486,6 +512,9 @@ type TldName = java.lang.String
   - typings.awsSdk.awsSdkStrings.TRANSFERABLE
   - typings.awsSdk.awsSdkStrings.UNTRANSFERABLE
   - typings.awsSdk.awsSdkStrings.DONT_KNOW
+  - typings.awsSdk.awsSdkStrings.DOMAIN_IN_OWN_ACCOUNT
+  - typings.awsSdk.awsSdkStrings.DOMAIN_IN_ANOTHER_ACCOUNT
+  - typings.awsSdk.awsSdkStrings.PREMIUM_DOMAIN
   - java.lang.String
 */
 type Transferable = _Transferable | java.lang.String

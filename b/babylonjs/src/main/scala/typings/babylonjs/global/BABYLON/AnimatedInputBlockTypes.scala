@@ -13,5 +13,7 @@ object AnimatedInputBlockTypes extends StObject {
   
   /* 0 */ val None: typings.babylonjs.BABYLON.AnimatedInputBlockTypes.None & Double = js.native
   
+  /* 2 */ val RealTime: typings.babylonjs.BABYLON.AnimatedInputBlockTypes.RealTime & Double = js.native
+  
   /* 1 */ val Time: typings.babylonjs.BABYLON.AnimatedInputBlockTypes.Time & Double = js.native
 }

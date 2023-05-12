@@ -12,6 +12,7 @@ import typings.tensorflowTfjsCore.distTypesMod.RecursiveArray
 import typings.tensorflowTfjsCore.distTypesMod.TensorLike
 import typings.tensorflowTfjsCore.distTypesMod.TypedArray
 import typings.tensorflowTfjsCore.distTypesMod.WebGLData
+import typings.tensorflowTfjsCore.distTypesMod.WebGPUData
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.bool
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.complex64
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.float32
@@ -27,6 +28,8 @@ object util {
   val ^ : js.Any = js.native
   
   inline def arraysEqual(n1: FlatVector, n2: FlatVector): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("arraysEqual")(n1.asInstanceOf[js.Any], n2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  inline def arraysEqualWithNull(n1: js.Array[Double], n2: js.Array[Double]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("arraysEqualWithNull")(n1.asInstanceOf[js.Any], n2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   inline def assert(expr: Boolean, msg: js.Function0[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assert")(expr.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
@@ -61,6 +64,9 @@ object util {
   inline def clamp(min: Double, x: Double, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("clamp")(min.asInstanceOf[js.Any], x.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   inline def computeStrides(shape: js.Array[Double]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("computeStrides")(shape.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+  
+  inline def convertBackendValuesAndArrayBuffer(data: js.typedarray.ArrayBuffer, dtype: DataType): js.typedarray.Float32Array | js.typedarray.Int32Array | js.typedarray.Uint8Array | js.Array[js.typedarray.Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("convertBackendValuesAndArrayBuffer")(data.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Float32Array | js.typedarray.Int32Array | js.typedarray.Uint8Array | js.Array[js.typedarray.Uint8Array]]
+  inline def convertBackendValuesAndArrayBuffer(data: BackendValues, dtype: DataType): js.typedarray.Float32Array | js.typedarray.Int32Array | js.typedarray.Uint8Array | js.Array[js.typedarray.Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("convertBackendValuesAndArrayBuffer")(data.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Float32Array | js.typedarray.Int32Array | js.typedarray.Uint8Array | js.Array[js.typedarray.Uint8Array]]
   
   inline def createScalarValue(value: DataType, dtype: DataType): BackendValues = (^.asInstanceOf[js.Dynamic].applyDynamic("createScalarValue")(value.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[BackendValues]
   
@@ -109,6 +115,7 @@ object util {
   
   inline def inferDtype(values: TensorLike): DataType = ^.asInstanceOf[js.Dynamic].applyDynamic("inferDtype")(values.asInstanceOf[js.Any]).asInstanceOf[DataType]
   inline def inferDtype(values: WebGLData): DataType = ^.asInstanceOf[js.Dynamic].applyDynamic("inferDtype")(values.asInstanceOf[js.Any]).asInstanceOf[DataType]
+  inline def inferDtype(values: WebGPUData): DataType = ^.asInstanceOf[js.Dynamic].applyDynamic("inferDtype")(values.asInstanceOf[js.Any]).asInstanceOf[DataType]
   
   inline def inferFromImplicitShape(shape: js.Array[Double], size: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("inferFromImplicitShape")(shape.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   

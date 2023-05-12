@@ -8,7 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 /* Inlined parent std.Omit<listr2.listr2.BasePromptOptions, 'onCancel' | 'onSubmit'> */
 @js.native
-trait PromptInstance extends StObject {
+trait PromptInstance
+  extends StObject
+     with ListrTaskPrompt {
   
   def cancel(): Unit = js.native
   def cancel(err: String): Unit = js.native

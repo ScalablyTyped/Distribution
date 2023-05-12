@@ -14,8 +14,8 @@ object TextEditorCursorStyle extends StObject {
   def apply(value: Double): js.UndefOr[TextEditorCursorStyle & Double] = js.native
   
   /**
-    * Render the cursor as a block filled.
-    */
+  		 * Render the cursor as a block filled.
+  		 */
   @js.native
   sealed trait Block
     extends StObject
@@ -23,8 +23,8 @@ object TextEditorCursorStyle extends StObject {
   /* 2 */ val Block: typings.vscode.mod.TextEditorCursorStyle.Block & Double = js.native
   
   /**
-    * Render the cursor as a block outlined.
-    */
+  		 * Render the cursor as a block outlined.
+  		 */
   @js.native
   sealed trait BlockOutline
     extends StObject
@@ -32,8 +32,8 @@ object TextEditorCursorStyle extends StObject {
   /* 5 */ val BlockOutline: typings.vscode.mod.TextEditorCursorStyle.BlockOutline & Double = js.native
   
   /**
-    * Render the cursor as a vertical thick line.
-    */
+  		 * Render the cursor as a vertical thick line.
+  		 */
   @js.native
   sealed trait Line
     extends StObject
@@ -41,8 +41,8 @@ object TextEditorCursorStyle extends StObject {
   /* 1 */ val Line: typings.vscode.mod.TextEditorCursorStyle.Line & Double = js.native
   
   /**
-    * Render the cursor as a vertical thin line.
-    */
+  		 * Render the cursor as a vertical thin line.
+  		 */
   @js.native
   sealed trait LineThin
     extends StObject
@@ -50,8 +50,8 @@ object TextEditorCursorStyle extends StObject {
   /* 4 */ val LineThin: typings.vscode.mod.TextEditorCursorStyle.LineThin & Double = js.native
   
   /**
-    * Render the cursor as a thick horizontal line.
-    */
+  		 * Render the cursor as a thick horizontal line.
+  		 */
   @js.native
   sealed trait Underline
     extends StObject
@@ -59,8 +59,8 @@ object TextEditorCursorStyle extends StObject {
   /* 3 */ val Underline: typings.vscode.mod.TextEditorCursorStyle.Underline & Double = js.native
   
   /**
-    * Render the cursor as a thin horizontal line.
-    */
+  		 * Render the cursor as a thin horizontal line.
+  		 */
   @js.native
   sealed trait UnderlineThin
     extends StObject

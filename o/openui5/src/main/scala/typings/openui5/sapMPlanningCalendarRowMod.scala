@@ -615,6 +615,7 @@ object sapMPlanningCalendarRowMod {
     
     /**
       * @SINCE 1.56
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:appointmentCreate appointmentCreate} to attached listeners.
       *
@@ -628,6 +629,7 @@ object sapMPlanningCalendarRowMod {
     
     /**
       * @SINCE 1.56
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:appointmentDragEnter appointmentDragEnter} to attached listeners.
       *
@@ -644,6 +646,7 @@ object sapMPlanningCalendarRowMod {
     
     /**
       * @SINCE 1.54
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:appointmentDrop appointmentDrop} to attached listeners.
       *
@@ -657,6 +660,7 @@ object sapMPlanningCalendarRowMod {
     
     /**
       * @SINCE 1.56
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * Fires event {@link #event:appointmentResize appointmentResize} to attached listeners.
       *

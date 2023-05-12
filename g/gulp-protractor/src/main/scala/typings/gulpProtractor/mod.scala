@@ -2,6 +2,7 @@ package typings.gulpProtractor
 
 import org.scalablytyped.runtime.Shortcut
 import typings.gulp.mod.TaskCallback
+import typings.node.NodeJS.ReadWriteStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,8 +20,8 @@ object mod extends Shortcut {
     
     def getProtractorDir(): String = js.native
     
-    def protractor(): Any = js.native
-    def protractor(options: IOptions): Any = js.native
+    def protractor(): ReadWriteStream = js.native
+    def protractor(options: IOptions): ReadWriteStream = js.native
     
     var webdriver_standalone: TaskCallback = js.native
     
@@ -44,7 +45,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[IOptions]
     }
     
-    extension [Self <: IOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       

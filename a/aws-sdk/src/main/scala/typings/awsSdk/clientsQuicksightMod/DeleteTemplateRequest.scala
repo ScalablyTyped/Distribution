@@ -14,7 +14,7 @@ trait DeleteTemplateRequest extends StObject {
   /**
     * An ID for the template you want to delete.
     */
-  var TemplateId: RestrictiveResourceId
+  var TemplateId: ShortRestrictiveResourceId
   
   /**
     * Specifies the version of the template that you want to delete. If you don't provide a version number, DeleteTemplate deletes all versions of the template. 
@@ -23,7 +23,7 @@ trait DeleteTemplateRequest extends StObject {
 }
 object DeleteTemplateRequest {
   
-  inline def apply(AwsAccountId: AwsAccountId, TemplateId: RestrictiveResourceId): DeleteTemplateRequest = {
+  inline def apply(AwsAccountId: AwsAccountId, TemplateId: ShortRestrictiveResourceId): DeleteTemplateRequest = {
     val __obj = js.Dynamic.literal(AwsAccountId = AwsAccountId.asInstanceOf[js.Any], TemplateId = TemplateId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteTemplateRequest]
   }
@@ -33,7 +33,7 @@ object DeleteTemplateRequest {
     
     inline def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
     
-    inline def setTemplateId(value: RestrictiveResourceId): Self = StObject.set(x, "TemplateId", value.asInstanceOf[js.Any])
+    inline def setTemplateId(value: ShortRestrictiveResourceId): Self = StObject.set(x, "TemplateId", value.asInstanceOf[js.Any])
     
     inline def setVersionNumber(value: VersionNumber): Self = StObject.set(x, "VersionNumber", value.asInstanceOf[js.Any])
     

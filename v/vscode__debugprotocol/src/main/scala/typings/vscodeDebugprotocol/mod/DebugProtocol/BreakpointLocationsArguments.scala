@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Arguments for `breakpointLocations` request. */
 trait BreakpointLocationsArguments extends StObject {
   
-  /** Start column of range to search possible breakpoint locations in. If no start column is given, the first column in the start line is assumed. */
+  /** Start position within `line` to search possible breakpoint locations in. It is measured in UTF-16 code units and the client capability `columnsStartAt1` determines whether it is 0- or 1-based. If no column is given, the first position in the start line is assumed. */
   var column: js.UndefOr[Double] = js.undefined
   
-  /** End column of range to search possible breakpoint locations in. If no end column is given, then it is assumed to be in the last column of the end line. */
+  /** End position within `endLine` to search possible breakpoint locations in. It is measured in UTF-16 code units and the client capability `columnsStartAt1` determines whether it is 0- or 1-based. If no end column is given, the last position in the end line is assumed. */
   var endColumn: js.UndefOr[Double] = js.undefined
   
   /** End line of range to search possible breakpoint locations in. If no end line is given, then the end line is assumed to be the start line. */

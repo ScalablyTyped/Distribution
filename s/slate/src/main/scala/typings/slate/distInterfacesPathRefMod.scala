@@ -43,6 +43,9 @@ object distInterfacesPathRefMod {
   
   trait PathRefInterface extends StObject {
     
+    /**
+      * Transform the path ref's current value by an operation.
+      */
     def transform(ref: PathRef, op: Operation): Unit
   }
   object PathRefInterface {

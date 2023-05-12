@@ -6,9 +6,13 @@ import typings.gaxios.buildSrcCommonMod.GaxiosPromise
 import typings.gaxios.buildSrcCommonMod.GaxiosResponse
 import typings.googleCloudStorage.buildSrcCrc32cMod.CRC32CValidator
 import typings.googleCloudStorage.buildSrcCrc32cMod.CRC32CValidatorGenerator
+import typings.googleCloudStorage.buildSrcFileMod.PredefinedAcl
+import typings.googleCloudStorage.buildSrcNodejsCommonServiceObjectMod.Metadata
 import typings.googleCloudStorage.buildSrcNodejsCommonUtilMod.ApiError
 import typings.googleCloudStorage.buildSrcNodejsCommonUtilMod.GoogleErrorBody
 import typings.googleCloudStorage.buildSrcNodejsCommonUtilMod.GoogleInnerError
+import typings.googleCloudStorage.buildSrcStorageMod.PreconditionOptions
+import typings.node.bufferMod.global.Buffer
 import typings.teenyRequest.mod.CoreOptions
 import typings.teenyRequest.mod.Options
 import org.scalablytyped.runtime.StObject
@@ -111,6 +115,135 @@ object anon {
     }
   }
   
+  /* Inlined std.Omit<@google-cloud/storage.@google-cloud/storage/build/src/bucket.UploadOptions, 'destination'> */
+  trait OmitUploadOptionsdestinat extends StObject {
+    
+    var chunkSize: js.UndefOr[Double] = js.undefined
+    
+    var contentType: js.UndefOr[String] = js.undefined
+    
+    var encryptionKey: js.UndefOr[String | Buffer] = js.undefined
+    
+    var gzip: js.UndefOr[String | Boolean] = js.undefined
+    
+    var highWaterMark: js.UndefOr[Double] = js.undefined
+    
+    var kmsKeyName: js.UndefOr[String] = js.undefined
+    
+    var metadata: js.UndefOr[Metadata] = js.undefined
+    
+    var offset: js.UndefOr[Double] = js.undefined
+    
+    var onUploadProgress: js.UndefOr[js.Function1[/* progressEvent */ Any, Unit]] = js.undefined
+    
+    var origin: js.UndefOr[String] = js.undefined
+    
+    var preconditionOpts: js.UndefOr[PreconditionOptions] = js.undefined
+    
+    var predefinedAcl: js.UndefOr[PredefinedAcl] = js.undefined
+    
+    var `private`: js.UndefOr[Boolean] = js.undefined
+    
+    var public: js.UndefOr[Boolean] = js.undefined
+    
+    var resumable: js.UndefOr[Boolean] = js.undefined
+    
+    var timeout: js.UndefOr[Double] = js.undefined
+    
+    var uri: js.UndefOr[String] = js.undefined
+    
+    var userProject: js.UndefOr[String] = js.undefined
+    
+    var validation: js.UndefOr[String | Boolean] = js.undefined
+  }
+  object OmitUploadOptionsdestinat {
+    
+    inline def apply(): OmitUploadOptionsdestinat = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[OmitUploadOptionsdestinat]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OmitUploadOptionsdestinat] (val x: Self) extends AnyVal {
+      
+      inline def setChunkSize(value: Double): Self = StObject.set(x, "chunkSize", value.asInstanceOf[js.Any])
+      
+      inline def setChunkSizeUndefined: Self = StObject.set(x, "chunkSize", js.undefined)
+      
+      inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+      
+      inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
+      
+      inline def setEncryptionKey(value: String | Buffer): Self = StObject.set(x, "encryptionKey", value.asInstanceOf[js.Any])
+      
+      inline def setEncryptionKeyUndefined: Self = StObject.set(x, "encryptionKey", js.undefined)
+      
+      inline def setGzip(value: String | Boolean): Self = StObject.set(x, "gzip", value.asInstanceOf[js.Any])
+      
+      inline def setGzipUndefined: Self = StObject.set(x, "gzip", js.undefined)
+      
+      inline def setHighWaterMark(value: Double): Self = StObject.set(x, "highWaterMark", value.asInstanceOf[js.Any])
+      
+      inline def setHighWaterMarkUndefined: Self = StObject.set(x, "highWaterMark", js.undefined)
+      
+      inline def setKmsKeyName(value: String): Self = StObject.set(x, "kmsKeyName", value.asInstanceOf[js.Any])
+      
+      inline def setKmsKeyNameUndefined: Self = StObject.set(x, "kmsKeyName", js.undefined)
+      
+      inline def setMetadata(value: Metadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      
+      inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+      
+      inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      
+      inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+      
+      inline def setOnUploadProgress(value: /* progressEvent */ Any => Unit): Self = StObject.set(x, "onUploadProgress", js.Any.fromFunction1(value))
+      
+      inline def setOnUploadProgressUndefined: Self = StObject.set(x, "onUploadProgress", js.undefined)
+      
+      inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+      
+      inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
+      
+      inline def setPreconditionOpts(value: PreconditionOptions): Self = StObject.set(x, "preconditionOpts", value.asInstanceOf[js.Any])
+      
+      inline def setPreconditionOptsUndefined: Self = StObject.set(x, "preconditionOpts", js.undefined)
+      
+      inline def setPredefinedAcl(value: PredefinedAcl): Self = StObject.set(x, "predefinedAcl", value.asInstanceOf[js.Any])
+      
+      inline def setPredefinedAclUndefined: Self = StObject.set(x, "predefinedAcl", js.undefined)
+      
+      inline def setPrivate(value: Boolean): Self = StObject.set(x, "private", value.asInstanceOf[js.Any])
+      
+      inline def setPrivateUndefined: Self = StObject.set(x, "private", js.undefined)
+      
+      inline def setPublic(value: Boolean): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
+      
+      inline def setPublicUndefined: Self = StObject.set(x, "public", js.undefined)
+      
+      inline def setResumable(value: Boolean): Self = StObject.set(x, "resumable", value.asInstanceOf[js.Any])
+      
+      inline def setResumableUndefined: Self = StObject.set(x, "resumable", js.undefined)
+      
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      
+      inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+      
+      inline def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
+      
+      inline def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
+      
+      inline def setUserProjectUndefined: Self = StObject.set(x, "userProject", js.undefined)
+      
+      inline def setValidation(value: String | Boolean): Self = StObject.set(x, "validation", value.asInstanceOf[js.Any])
+      
+      inline def setValidationUndefined: Self = StObject.set(x, "validation", js.undefined)
+    }
+  }
+  
   @js.native
   trait OnAuthenticated extends StObject {
     
@@ -125,9 +258,15 @@ object anon {
     
     var crc32c: js.UndefOr[Boolean] = js.undefined
     
+    var crc32cExpected: js.UndefOr[String] = js.undefined
+    
     var crc32cGenerator: js.UndefOr[CRC32CValidatorGenerator] = js.undefined
     
     var md5: js.UndefOr[Boolean] = js.undefined
+    
+    var md5Expected: js.UndefOr[String] = js.undefined
+    
+    var updateHashesOnly: js.UndefOr[Boolean] = js.undefined
   }
   object PartialHashStreamValidato {
     
@@ -141,6 +280,10 @@ object anon {
       
       inline def setCrc32c(value: Boolean): Self = StObject.set(x, "crc32c", value.asInstanceOf[js.Any])
       
+      inline def setCrc32cExpected(value: String): Self = StObject.set(x, "crc32cExpected", value.asInstanceOf[js.Any])
+      
+      inline def setCrc32cExpectedUndefined: Self = StObject.set(x, "crc32cExpected", js.undefined)
+      
       inline def setCrc32cGenerator(value: () => CRC32CValidator): Self = StObject.set(x, "crc32cGenerator", js.Any.fromFunction0(value))
       
       inline def setCrc32cGeneratorUndefined: Self = StObject.set(x, "crc32cGenerator", js.undefined)
@@ -149,7 +292,15 @@ object anon {
       
       inline def setMd5(value: Boolean): Self = StObject.set(x, "md5", value.asInstanceOf[js.Any])
       
+      inline def setMd5Expected(value: String): Self = StObject.set(x, "md5Expected", value.asInstanceOf[js.Any])
+      
+      inline def setMd5ExpectedUndefined: Self = StObject.set(x, "md5Expected", js.undefined)
+      
       inline def setMd5Undefined: Self = StObject.set(x, "md5", js.undefined)
+      
+      inline def setUpdateHashesOnly(value: Boolean): Self = StObject.set(x, "updateHashesOnly", value.asInstanceOf[js.Any])
+      
+      inline def setUpdateHashesOnlyUndefined: Self = StObject.set(x, "updateHashesOnly", js.undefined)
     }
   }
   

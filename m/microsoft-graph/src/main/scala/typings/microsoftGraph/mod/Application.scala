@@ -24,8 +24,11 @@ trait Application
     */
   var appId: js.UndefOr[NullableOption[String]] = js.undefined
   
+  // The appManagementPolicy applied to this application.
+  var appManagementPolicies: js.UndefOr[NullableOption[js.Array[AppManagementPolicy]]] = js.undefined
+  
   /**
-    * The collection of roles assigned to the application. With app role assignments, these roles can be assigned to users,
+    * The collection of roles defined for the application. With app role assignments, these roles can be assigned to users,
     * groups, or service principals associated with other applications. Not nullable.
     */
   var appRoles: js.UndefOr[js.Array[AppRole]] = js.undefined
@@ -43,8 +46,10 @@ trait Application
     */
   var createdDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
-  // Supports $filter (eq when counting empty collections). Read-only.
+  // Supports $filter (/$count eq 0, /$count ne 0). Read-only.
   var createdOnBehalfOf: js.UndefOr[NullableOption[DirectoryObject]] = js.undefined
+  
+  var defaultRedirectUri: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * Free text field to provide a description of the application object to end users. The maximum allowed size is 1024
@@ -65,13 +70,10 @@ trait Application
     */
   var displayName: js.UndefOr[NullableOption[String]] = js.undefined
   
-  /**
-    * Read-only. Nullable. Supports $expand and $filter (eq and ne when counting empty collections and only with advanced
-    * query parameters).
-    */
+  // Read-only. Nullable. Supports $expand and $filter (/$count eq 0, /$count ne 0).
   var extensionProperties: js.UndefOr[NullableOption[js.Array[ExtensionProperty]]] = js.undefined
   
-  // Federated identities for applications. Supports $expand and $filter (eq when counting empty collections).
+  // Federated identities for applications. Supports $expand and $filter (startsWith, /$count eq 0, /$count ne 0).
   var federatedIdentityCredentials: js.UndefOr[NullableOption[js.Array[FederatedIdentityCredential]]] = js.undefined
   
   /**
@@ -132,8 +134,8 @@ trait Application
   var optionalClaims: js.UndefOr[NullableOption[OptionalClaims]] = js.undefined
   
   /**
-    * Directory objects that are owners of the application. Read-only. Nullable. Supports $expand and $filter (eq when
-    * counting empty collections).
+    * Directory objects that are owners of the application. Read-only. Nullable. Supports $expand and $filter (/$count eq 0,
+    * /$count ne 0, /$count eq 1, /$count ne 1).
     */
   var owners: js.UndefOr[NullableOption[js.Array[DirectoryObject]]] = js.undefined
   
@@ -152,12 +154,15 @@ trait Application
     */
   var publisherDomain: js.UndefOr[NullableOption[String]] = js.undefined
   
+  // Specifies whether this application requires Azure AD to verify the signed authentication requests.
+  var requestSignatureVerification: js.UndefOr[NullableOption[RequestSignatureVerification]] = js.undefined
+  
   /**
     * Specifies the resources that the application needs to access. This property also specifies the set of delegated
     * permissions and application roles that it needs for each of those resources. This configuration of access to the
     * required resources drives the consent experience. No more than 50 resource services (APIs) can be configured. Beginning
-    * mid-October 2021, the total number of required permissions must not exceed 400. Not nullable. Supports $filter (eq,
-    * not, ge, le).
+    * mid-October 2021, the total number of required permissions must not exceed 400. For more information, see Limits on
+    * requested permissions per app. Not nullable. Supports $filter (eq, not, ge, le).
     */
   var requiredResourceAccess: js.UndefOr[js.Array[RequiredResourceAccess]] = js.undefined
   
@@ -172,8 +177,11 @@ trait Application
   
   /**
     * Specifies the Microsoft accounts that are supported for the current application. The possible values are: AzureADMyOrg,
-    * AzureADMultipleOrgs, AzureADandPersonalMicrosoftAccount (default), and PersonalMicrosoftAccount. See more in the table
-    * below. Supports $filter (eq, ne, not).
+    * AzureADMultipleOrgs, AzureADandPersonalMicrosoftAccount (default), and PersonalMicrosoftAccount. See more in the table.
+    * The value of this object also limits the number of permissions an app can request. For more information, see Limits on
+    * requested permissions per app. The value for this property has implications on other app object properties. As a
+    * result, if you change this property, you may need to change other properties first. For more information, see
+    * Validation differences for signInAudience.Supports $filter (eq, ne, not).
     */
   var signInAudience: js.UndefOr[NullableOption[String]] = js.undefined
   
@@ -184,8 +192,9 @@ trait Application
   var spa: js.UndefOr[NullableOption[SpaApplication]] = js.undefined
   
   /**
-    * Custom strings that can be used to categorize and identify the application. Not nullable. Supports $filter (eq, not,
-    * ge, le, startsWith).
+    * Custom strings that can be used to categorize and identify the application. Not nullable. Strings added here will also
+    * appear in the tags property of any associated service principals.Supports $filter (eq, not, ge, le, startsWith) and
+    * $search.
     */
   var tags: js.UndefOr[js.Array[String]] = js.undefined
   
@@ -237,6 +246,14 @@ object Application {
     
     inline def setAppIdUndefined: Self = StObject.set(x, "appId", js.undefined)
     
+    inline def setAppManagementPolicies(value: NullableOption[js.Array[AppManagementPolicy]]): Self = StObject.set(x, "appManagementPolicies", value.asInstanceOf[js.Any])
+    
+    inline def setAppManagementPoliciesNull: Self = StObject.set(x, "appManagementPolicies", null)
+    
+    inline def setAppManagementPoliciesUndefined: Self = StObject.set(x, "appManagementPolicies", js.undefined)
+    
+    inline def setAppManagementPoliciesVarargs(value: AppManagementPolicy*): Self = StObject.set(x, "appManagementPolicies", js.Array(value*))
+    
     inline def setAppRoles(value: js.Array[AppRole]): Self = StObject.set(x, "appRoles", value.asInstanceOf[js.Any])
     
     inline def setAppRolesUndefined: Self = StObject.set(x, "appRoles", js.undefined)
@@ -266,6 +283,12 @@ object Application {
     inline def setCreatedOnBehalfOfNull: Self = StObject.set(x, "createdOnBehalfOf", null)
     
     inline def setCreatedOnBehalfOfUndefined: Self = StObject.set(x, "createdOnBehalfOf", js.undefined)
+    
+    inline def setDefaultRedirectUri(value: NullableOption[String]): Self = StObject.set(x, "defaultRedirectUri", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultRedirectUriNull: Self = StObject.set(x, "defaultRedirectUri", null)
+    
+    inline def setDefaultRedirectUriUndefined: Self = StObject.set(x, "defaultRedirectUri", js.undefined)
     
     inline def setDescription(value: NullableOption[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
@@ -396,6 +419,12 @@ object Application {
     inline def setPublisherDomainNull: Self = StObject.set(x, "publisherDomain", null)
     
     inline def setPublisherDomainUndefined: Self = StObject.set(x, "publisherDomain", js.undefined)
+    
+    inline def setRequestSignatureVerification(value: NullableOption[RequestSignatureVerification]): Self = StObject.set(x, "requestSignatureVerification", value.asInstanceOf[js.Any])
+    
+    inline def setRequestSignatureVerificationNull: Self = StObject.set(x, "requestSignatureVerification", null)
+    
+    inline def setRequestSignatureVerificationUndefined: Self = StObject.set(x, "requestSignatureVerification", js.undefined)
     
     inline def setRequiredResourceAccess(value: js.Array[RequiredResourceAccess]): Self = StObject.set(x, "requiredResourceAccess", value.asInstanceOf[js.Any])
     

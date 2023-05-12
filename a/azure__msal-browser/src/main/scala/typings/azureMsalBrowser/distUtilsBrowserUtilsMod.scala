@@ -1,8 +1,8 @@
 package typings.azureMsalBrowser
 
+import typings.azureMsalBrowser.distCryptoMsrBrowserCryptoMod.global.Window
 import typings.azureMsalBrowser.distUtilsBrowserConstantsMod.InteractionType
 import typings.azureMsalCommon.distNetworkInetworkmoduleMod.INetworkModule
-import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}

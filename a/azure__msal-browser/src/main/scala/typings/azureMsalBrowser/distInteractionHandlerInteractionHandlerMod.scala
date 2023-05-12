@@ -6,6 +6,7 @@ import typings.azureMsalCommon.distNetworkInetworkmoduleMod.INetworkModule
 import typings.azureMsalCommon.distRequestCommonAuthorizationCodeRequestMod.CommonAuthorizationCodeRequest
 import typings.azureMsalCommon.distResponseAuthenticationResultMod.AuthenticationResult
 import typings.azureMsalCommon.distResponseAuthorizationCodePayloadMod.AuthorizationCodePayload
+import typings.azureMsalCommon.distTelemetryPerformanceIperformanceclientMod.IPerformanceClient
 import typings.azureMsalCommon.mod.Authority
 import typings.azureMsalCommon.mod.AuthorizationCodeClient
 import typings.azureMsalCommon.mod.Logger
@@ -22,7 +23,8 @@ object distInteractionHandlerInteractionHandlerMod {
       authCodeModule: AuthorizationCodeClient,
       storageImpl: BrowserCacheManager,
       authCodeRequest: CommonAuthorizationCodeRequest,
-      logger: Logger
+      logger: Logger,
+      performanceClient: IPerformanceClient
     ) = this()
     
     /* protected */ var authCodeRequest: CommonAuthorizationCodeRequest = js.native
@@ -65,6 +67,8 @@ object distInteractionHandlerInteractionHandlerMod {
     ): js.Promise[AuthenticationResult] = js.native
     
     /* protected */ var logger: Logger = js.native
+    
+    /* protected */ var performanceClient: IPerformanceClient = js.native
     
     /**
       * Updates authority based on cloudInstanceHostname

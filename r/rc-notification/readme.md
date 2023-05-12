@@ -1,7 +1,7 @@
 
 # Scala.js typings for rc-notification
 
-Typings are for version 4.6.1
+Typings are for version 5.0.4
 
 ## Library description:
 notification ui component for react

@@ -22,7 +22,7 @@ trait AssertionRule extends StObject {
   var Name: stringMin1Max64PatternS
   
   /**
-    * The criteria that you set for specific assertion routing controls (AssertedControls) that designate how many routing control states must be ON as the result of a transaction. For example, if you have three assertion routing controls, you might specify atleast 2 for your rule configuration. This means that at least two assertion routing control states must be ON, so that at least two Amazon Web Services Regions have traffic flowing to them.
+    * The criteria that you set for specific assertion routing controls (AssertedControls) that designate how many routing control states must be ON as the result of a transaction. For example, if you have three assertion routing controls, you might specify ATLEAST 2 for your rule configuration. This means that at least two assertion routing control states must be ON, so that at least two Amazon Web Services Regions have traffic flowing to them.
     */
   var RuleConfig: typings.awsSdk.clientsRoute53recoverycontrolconfigMod.RuleConfig
   

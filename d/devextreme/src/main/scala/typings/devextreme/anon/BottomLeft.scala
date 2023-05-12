@@ -7,22 +7,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BottomLeft extends StObject {
   
   /**
-    * Specifies the bottom margin of the title.
+    * 
     */
   var bottom: js.UndefOr[Double] = js.undefined
   
   /**
-    * Specifies the left margin of the title.
+    * 
     */
   var left: js.UndefOr[Double] = js.undefined
   
   /**
-    * Specifies the right margin of the title.
+    * 
     */
   var right: js.UndefOr[Double] = js.undefined
   
   /**
-    * Specifies the top margin of the title.
+    * 
     */
   var top: js.UndefOr[Double] = js.undefined
 }

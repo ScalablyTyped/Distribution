@@ -14,6 +14,7 @@ object sapUiCoreInvisibleRendererMod extends Shortcut {
   
   /**
     * @SINCE 1.66.0
+    * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
     *
     * Provides the default renderer for the controls that have set their `visible` property to `false`.
     */
@@ -21,6 +22,8 @@ object sapUiCoreInvisibleRendererMod extends Shortcut {
   trait InvisibleRenderer extends StObject {
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Creates the ID to be used for the invisible placeholder DOM element.
       *
       * @returns The ID used for the invisible placeholder of this element
@@ -33,6 +36,8 @@ object sapUiCoreInvisibleRendererMod extends Shortcut {
     ): String = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Returns the placeholder DOM element of the provided control.
       *
       * @returns The placeholder DOM element
@@ -45,6 +50,8 @@ object sapUiCoreInvisibleRendererMod extends Shortcut {
     ): HTMLElement | Null = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Renders an invisible placeholder to identify the location of the invisible control within the DOM tree.
       *
       * The standard implementation renders an invisible <span> element for controls with `visible:false`

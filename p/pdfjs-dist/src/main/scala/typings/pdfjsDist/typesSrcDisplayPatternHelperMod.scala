@@ -1,8 +1,8 @@
 package typings.pdfjsDist
 
 import typings.pdfjsDist.anon.OffsetY
-import typings.pdfjsDist.anon.Scale
 import typings.pdfjsDist.anon.ScaleX
+import typings.pdfjsDist.anon.Size
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -49,7 +49,7 @@ object typesSrcDisplayPatternHelperMod {
     
     def getPattern(ctx: Any, owner: Any, inverse: Any, pathType: Any): Any = js.native
     
-    def getSizeAndScale(step: Any, realOutputSize: Any, scale: Any): Scale = js.native
+    def getSizeAndScale(step: Any, realOutputSize: Any, scale: Any): Size = js.native
     
     var matrix: Any = js.native
     
@@ -64,6 +64,18 @@ object typesSrcDisplayPatternHelperMod {
     var xstep: Any = js.native
     
     var ystep: Any = js.native
+  }
+  /* static members */
+  object TilingPattern {
+    
+    @JSImport("pdfjs-dist/types/src/display/pattern_helper", "TilingPattern")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("pdfjs-dist/types/src/display/pattern_helper", "TilingPattern.MAX_PATTERN_SIZE")
+    @js.native
+    def MAX_PATTERN_SIZE: Double = js.native
+    inline def MAX_PATTERN_SIZE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MAX_PATTERN_SIZE")(x.asInstanceOf[js.Any])
   }
   
   inline def getShadingPattern(IR: Any): RadialAxialShadingPattern | MeshShadingPattern | DummyShadingPattern = ^.asInstanceOf[js.Dynamic].applyDynamic("getShadingPattern")(IR.asInstanceOf[js.Any]).asInstanceOf[RadialAxialShadingPattern | MeshShadingPattern | DummyShadingPattern]

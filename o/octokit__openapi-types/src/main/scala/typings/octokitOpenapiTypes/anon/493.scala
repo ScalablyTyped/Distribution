@@ -6,22 +6,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait `493` extends StObject {
   
-  @JSName("application/json")
-  var applicationSlashjson: js.Array[Category]
+  var per_page: js.UndefOr[Double] = js.undefined
+  
+  var since: js.UndefOr[Double] = js.undefined
 }
 object `493` {
   
-  inline def apply(applicationSlashjson: js.Array[Category]): `493` = {
+  inline def apply(): `493` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("application/json")(applicationSlashjson.asInstanceOf[js.Any])
     __obj.asInstanceOf[`493`]
   }
   
   @scala.inline
   implicit open class MutableBuilder[Self <: `493`] (val x: Self) extends AnyVal {
     
-    inline def setApplicationSlashjson(value: js.Array[Category]): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
+    inline def setPer_page(value: Double): Self = StObject.set(x, "per_page", value.asInstanceOf[js.Any])
     
-    inline def setApplicationSlashjsonVarargs(value: Category*): Self = StObject.set(x, "application/json", js.Array(value*))
+    inline def setPer_pageUndefined: Self = StObject.set(x, "per_page", js.undefined)
+    
+    inline def setSince(value: Double): Self = StObject.set(x, "since", value.asInstanceOf[js.Any])
+    
+    inline def setSinceUndefined: Self = StObject.set(x, "since", js.undefined)
   }
 }

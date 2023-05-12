@@ -1,6 +1,7 @@
 package typings.officeJsPreview.Excel.Interfaces
 
-import typings.officeJsPreview.Excel.Identity
+import typings.officeJsPreview.Excel.DocumentTaskSchedule
+import typings.officeJsPreview.Excel.EmailIdentity
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -15,7 +16,7 @@ trait DocumentTaskData extends StObject {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var assignees: js.UndefOr[js.Array[Identity]] = js.undefined
+  var assignees: js.UndefOr[js.Array[EmailIdentity]] = js.undefined
   
   /**
     * Gets the most recent user to have completed the task.
@@ -24,7 +25,7 @@ trait DocumentTaskData extends StObject {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var completedBy: js.UndefOr[Identity] = js.undefined
+  var completedBy: js.UndefOr[EmailIdentity] = js.undefined
   
   /**
     * Gets the date and time that the task was completed. All dates are in UTC.
@@ -42,7 +43,7 @@ trait DocumentTaskData extends StObject {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var createdBy: js.UndefOr[Identity] = js.undefined
+  var createdBy: js.UndefOr[EmailIdentity] = js.undefined
   
   /**
     * Gets the date and time that the task was created. All dates are in UTC.
@@ -52,15 +53,6 @@ trait DocumentTaskData extends StObject {
     * @beta
     */
   var createdDateTime: js.UndefOr[js.Date] = js.undefined
-  
-  /**
-    * Gets or sets the date and time the task is due.
-    *
-    * @remarks
-    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-    * @beta
-    */
-  var dueDateTime: js.UndefOr[js.Date] = js.undefined
   
   /**
     * Gets the ID of the task.
@@ -90,13 +82,13 @@ trait DocumentTaskData extends StObject {
   var priority: js.UndefOr[Double] = js.undefined
   
   /**
-    * Gets or sets the date and time the task starts.
+    * Gets or sets the date and time the task should start and is due.
     *
     * @remarks
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var startDateTime: js.UndefOr[js.Date] = js.undefined
+  var startAndDueDateTime: js.UndefOr[DocumentTaskSchedule] = js.undefined
   
   /**
     * Specifies title of the task.
@@ -117,13 +109,13 @@ object DocumentTaskData {
   @scala.inline
   implicit open class MutableBuilder[Self <: DocumentTaskData] (val x: Self) extends AnyVal {
     
-    inline def setAssignees(value: js.Array[Identity]): Self = StObject.set(x, "assignees", value.asInstanceOf[js.Any])
+    inline def setAssignees(value: js.Array[EmailIdentity]): Self = StObject.set(x, "assignees", value.asInstanceOf[js.Any])
     
     inline def setAssigneesUndefined: Self = StObject.set(x, "assignees", js.undefined)
     
-    inline def setAssigneesVarargs(value: Identity*): Self = StObject.set(x, "assignees", js.Array(value*))
+    inline def setAssigneesVarargs(value: EmailIdentity*): Self = StObject.set(x, "assignees", js.Array(value*))
     
-    inline def setCompletedBy(value: Identity): Self = StObject.set(x, "completedBy", value.asInstanceOf[js.Any])
+    inline def setCompletedBy(value: EmailIdentity): Self = StObject.set(x, "completedBy", value.asInstanceOf[js.Any])
     
     inline def setCompletedByUndefined: Self = StObject.set(x, "completedBy", js.undefined)
     
@@ -131,17 +123,13 @@ object DocumentTaskData {
     
     inline def setCompletedDateTimeUndefined: Self = StObject.set(x, "completedDateTime", js.undefined)
     
-    inline def setCreatedBy(value: Identity): Self = StObject.set(x, "createdBy", value.asInstanceOf[js.Any])
+    inline def setCreatedBy(value: EmailIdentity): Self = StObject.set(x, "createdBy", value.asInstanceOf[js.Any])
     
     inline def setCreatedByUndefined: Self = StObject.set(x, "createdBy", js.undefined)
     
     inline def setCreatedDateTime(value: js.Date): Self = StObject.set(x, "createdDateTime", value.asInstanceOf[js.Any])
     
     inline def setCreatedDateTimeUndefined: Self = StObject.set(x, "createdDateTime", js.undefined)
-    
-    inline def setDueDateTime(value: js.Date): Self = StObject.set(x, "dueDateTime", value.asInstanceOf[js.Any])
-    
-    inline def setDueDateTimeUndefined: Self = StObject.set(x, "dueDateTime", js.undefined)
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
@@ -155,9 +143,9 @@ object DocumentTaskData {
     
     inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     
-    inline def setStartDateTime(value: js.Date): Self = StObject.set(x, "startDateTime", value.asInstanceOf[js.Any])
+    inline def setStartAndDueDateTime(value: DocumentTaskSchedule): Self = StObject.set(x, "startAndDueDateTime", value.asInstanceOf[js.Any])
     
-    inline def setStartDateTimeUndefined: Self = StObject.set(x, "startDateTime", js.undefined)
+    inline def setStartAndDueDateTimeUndefined: Self = StObject.set(x, "startAndDueDateTime", js.undefined)
     
     inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     

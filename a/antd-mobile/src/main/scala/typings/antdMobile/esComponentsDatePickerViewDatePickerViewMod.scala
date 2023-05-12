@@ -29,6 +29,7 @@ import typings.antdMobile.antdMobileStrings.menu
 import typings.antdMobile.antdMobileStrings.mixed
 import typings.antdMobile.antdMobileStrings.move
 import typings.antdMobile.antdMobileStrings.none
+import typings.antdMobile.antdMobileStrings.now
 import typings.antdMobile.antdMobileStrings.off
 import typings.antdMobile.antdMobileStrings.other
 import typings.antdMobile.antdMobileStrings.page
@@ -56,7 +57,7 @@ object esComponentsDatePickerViewDatePickerViewMod {
   @js.native
   val DatePickerView: FC[DatePickerViewProps] = js.native
   
-  /* Inlined std.Pick<antd-mobile.antd-mobile/es/components/picker-view.PickerViewProps, 'style' | 'mouseWheel' | 'loading' | 'loadingContent'> & {  value :std.Date | undefined,   defaultValue :std.Date | undefined,   onChange :(value : std.Date): void | undefined,   min :std.Date | undefined,   max :std.Date | undefined,   precision :antd-mobile.antd-mobile/es/components/date-picker/date-picker-utils.Precision | undefined,   renderLabel :(type : antd-mobile.antd-mobile/es/components/date-picker/date-picker-utils.Precision, data : number): react.react.ReactNode | undefined,   filter :antd-mobile.antd-mobile/es/components/date-picker/date-picker-utils.DatePickerFilter | undefined} & antd-mobile.antd-mobile/es/utils/native-props.NativeProps<never> */
+  /* Inlined std.Pick<antd-mobile.antd-mobile/es/components/picker-view.PickerViewProps, 'style' | 'mouseWheel' | 'loading' | 'loadingContent'> & {  value :std.Date | undefined,   defaultValue :std.Date | undefined,   onChange :(value : std.Date): void | undefined,   min :std.Date | undefined,   max :std.Date | undefined,   precision :antd-mobile.antd-mobile/es/components/date-picker/date-picker-utils.Precision | undefined,   renderLabel :antd-mobile.antd-mobile/es/components/date-picker-view/date-picker-view.RenderLabel | undefined,   filter :antd-mobile.antd-mobile/es/components/date-picker/date-picker-utils.DatePickerFilter | undefined} & antd-mobile.antd-mobile/es/utils/native-props.NativeProps<never> */
   trait DatePickerViewProps extends StObject {
     
     /** Identifies the currently active element when DOM focus is on a composite widget, textbox, group, or application. */
@@ -313,7 +314,7 @@ object esComponentsDatePickerViewDatePickerViewMod {
     
     var precision: js.UndefOr[Precision] = js.undefined
     
-    var renderLabel: js.UndefOr[js.Function2[/* type */ Precision, /* data */ Double, ReactNode]] = js.undefined
+    var renderLabel: js.UndefOr[RenderLabel] = js.undefined
     
     var style: js.UndefOr[CSSPropertiesPartialRecorAlignItems_] = js.undefined
     
@@ -565,7 +566,7 @@ object esComponentsDatePickerViewDatePickerViewMod {
       
       inline def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
       
-      inline def setRenderLabel(value: (/* type */ Precision, /* data */ Double) => ReactNode): Self = StObject.set(x, "renderLabel", js.Any.fromFunction2(value))
+      inline def setRenderLabel(value: (/* type */ Precision | now, /* data */ Double) => ReactNode): Self = StObject.set(x, "renderLabel", js.Any.fromFunction2(value))
       
       inline def setRenderLabelUndefined: Self = StObject.set(x, "renderLabel", js.undefined)
       
@@ -582,4 +583,6 @@ object esComponentsDatePickerViewDatePickerViewMod {
       inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
+  
+  type RenderLabel = js.Function2[/* type */ Precision | now, /* data */ Double, ReactNode]
 }

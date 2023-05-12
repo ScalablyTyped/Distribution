@@ -148,7 +148,10 @@ object privacy {
       /** The type of cookies to allow. */
       var behavior: js.UndefOr[CookieConfigBehavior] = js.undefined
       
-      /** Whether to create all cookies as nonPersistent (i.e., session) cookies. */
+      /**
+        * Whether to create all cookies as nonPersistent (i.e., session) cookies.
+        * @deprecated This property has no effect anymore and its value is always `false`.``
+        */
       var nonPersistentCookies: js.UndefOr[Boolean] = js.undefined
     }
     object CookieConfig {

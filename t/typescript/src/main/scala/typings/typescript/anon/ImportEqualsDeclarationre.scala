@@ -1,7 +1,7 @@
 package typings.typescript.anon
 
 import typings.typescript.mod.Identifier
-import typings.typescript.mod.Modifier
+import typings.typescript.mod.ModifierLike
 import typings.typescript.mod.ModuleBlock
 import typings.typescript.mod.ModuleReference
 import typings.typescript.mod.Node
@@ -10,7 +10,7 @@ import typings.typescript.mod.NodeFlags
 import typings.typescript.mod.SourceFile
 import typings.typescript.mod.SourceFileLike
 import typings.typescript.mod.SyntaxKind.ImportEqualsDeclaration
-import typings.typescript.mod.TypeOnlyAliasDeclaration
+import typings.typescript.mod.TypeOnlyImportDeclaration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -19,23 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait ImportEqualsDeclarationre
   extends StObject
-     with TypeOnlyAliasDeclaration {
+     with TypeOnlyImportDeclaration {
   
   var _declarationBrand: Any = js.native
   
-  var _statementBrand: Any = js.native
+  var _jsdocContainerBrand: Any = js.native
   
-  /**
-    * @deprecated `decorators` has been removed from `Node` and merged with `modifiers` on the `Node` subtypes that support them.
-    * Use `ts.canHaveDecorators()` to test whether a `Node` can have decorators.
-    * Use `ts.getDecorators()` to get the decorators of a `Node`.
-    *
-    * For example:
-    * ```ts
-    * const decorators = ts.canHaveDecorators(node) ? ts.getDecorators(node) : undefined;
-    * ```
-    */
-  val decorators: Unit = js.native
+  var _statementBrand: Any = js.native
   
   val end: Double = js.native
   
@@ -91,7 +81,7 @@ trait ImportEqualsDeclarationre
   
   val kind: ImportEqualsDeclaration = js.native
   
-  val modifiers: js.UndefOr[NodeArray[Modifier]] = js.native
+  val modifiers: js.UndefOr[NodeArray[ModifierLike]] = js.native
   
   val moduleReference: ModuleReference = js.native
   

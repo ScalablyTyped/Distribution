@@ -29,6 +29,15 @@ object mod {
     @js.native
     def _system: Any = js.native
     inline def _system_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_system")(x.asInstanceOf[js.Any])
+    
+    /**
+      * Target frames per millisecond.
+      * @static
+      */
+    @JSImport("@pixi/ticker", "Ticker.targetFPMS")
+    @js.native
+    def targetFPMS: Double = js.native
+    inline def targetFPMS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("targetFPMS")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("@pixi/ticker", "TickerPlugin")
@@ -88,6 +97,8 @@ object mod {
     def apply(value: Double): js.UndefOr[typings.pixiTicker.libConstMod.UPDATE_PRIORITY & Double] = js.native
     
     /* 25 */ val HIGH: typings.pixiTicker.libConstMod.UPDATE_PRIORITY.HIGH & Double = js.native
+    
+    /* 50 */ val INTERACTION: typings.pixiTicker.libConstMod.UPDATE_PRIORITY.INTERACTION & Double = js.native
     
     /* -25 */ val LOW: typings.pixiTicker.libConstMod.UPDATE_PRIORITY.LOW & Double = js.native
     

@@ -21,7 +21,7 @@ object libGridRecordBufferMod {
     var disabled: Boolean = js.native
     
     /* CompleteClass */
-    override def field(idx: Double): typings.nginstackWebFramework.libGridFieldBufferMod.^ = js.native
+    override def field(idx: Double): Any = js.native
     
     /* private */ /* CompleteClass */
     var fieldBuffers_ : Any = js.native
@@ -67,7 +67,7 @@ object libGridRecordBufferMod {
     
     var disabled: Boolean
     
-    def field(idx: Double): typings.nginstackWebFramework.libGridFieldBufferMod.^
+    def field(idx: Double): Any
     
     /* private */ var fieldBuffers_ : Any
     
@@ -97,7 +97,7 @@ object libGridRecordBufferMod {
     inline def apply(
       bookmark: Any,
       disabled: Boolean,
-      field: Double => typings.nginstackWebFramework.libGridFieldBufferMod.^,
+      field: Double => Any,
       fieldBuffers_ : Any,
       fieldsValues: js.Array[Any],
       hintValue: Any,
@@ -122,7 +122,7 @@ object libGridRecordBufferMod {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      inline def setField(value: Double => typings.nginstackWebFramework.libGridFieldBufferMod.^): Self = StObject.set(x, "field", js.Any.fromFunction1(value))
+      inline def setField(value: Double => Any): Self = StObject.set(x, "field", js.Any.fromFunction1(value))
       
       inline def setFieldBuffers_(value: Any): Self = StObject.set(x, "fieldBuffers_", value.asInstanceOf[js.Any])
       

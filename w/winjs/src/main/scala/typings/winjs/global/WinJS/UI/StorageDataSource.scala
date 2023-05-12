@@ -15,7 +15,6 @@ open class StorageDataSource[T] protected ()
   //#region Constructors
   /**
     * Creates a new StorageDataSource object.
-    * @constructor
     * @param query The IStorageQueryResultBase that the StorageDataSource obtains its items from. Instead of IStorageQueryResultBase, you can also pass one of these string values: Music, Pictures, Videos, Documents.
     * @param options The set of properties and values to apply to the new StorageDataSource. Properties on this object may include: mode , requestedThumbnailSize , thumbnailOptions , synchronous .
     **/

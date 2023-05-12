@@ -25,11 +25,29 @@ object buildSrcUtilsEnvironmentMod {
   @js.native
   val DEFAULT_ENVIRONMENT: Required[ENVIRONMENT] = js.native
   
+  @JSImport("@opentelemetry/core/build/src/utils/environment", "DEFAULT_SPAN_ATTRIBUTE_PER_EVENT_COUNT_LIMIT")
+  @js.native
+  val DEFAULT_SPAN_ATTRIBUTE_PER_EVENT_COUNT_LIMIT: /* 128 */ Double = js.native
+  
+  @JSImport("@opentelemetry/core/build/src/utils/environment", "DEFAULT_SPAN_ATTRIBUTE_PER_LINK_COUNT_LIMIT")
+  @js.native
+  val DEFAULT_SPAN_ATTRIBUTE_PER_LINK_COUNT_LIMIT: /* 128 */ Double = js.native
+  
   inline def getEnvWithoutDefaults(): ENVIRONMENT = ^.asInstanceOf[js.Dynamic].applyDynamic("getEnvWithoutDefaults")().asInstanceOf[ENVIRONMENT]
   
   inline def parseEnvironment(values: RAW_ENVIRONMENT): ENVIRONMENT = ^.asInstanceOf[js.Dynamic].applyDynamic("parseEnvironment")(values.asInstanceOf[js.Any]).asInstanceOf[ENVIRONMENT]
   
-  type ENVIRONMENT = CONTAINERNAME & ENVIRONMENT_NUMBERS & ENVIRONMENT_LISTS
+  type ENVIRONMENT = CONTAINERNAME & ENVIRONMENT_BOOLEANS & ENVIRONMENT_NUMBERS & ENVIRONMENT_LISTS
+  
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ K in 'OTEL_SDK_DISABLED' ]:? boolean}
+    }}}
+    */
+  @js.native
+  trait ENVIRONMENT_BOOLEANS extends StObject
   
   /** NOTE: Mapped type definitions are impossible to translate to Scala.
     * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
@@ -45,7 +63,7 @@ object buildSrcUtilsEnvironmentMod {
     * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
     * You'll have to cast your way around this structure, unfortunately. 
     * TS definition: {{{
-    {[ K in 'OTEL_BSP_EXPORT_TIMEOUT' | 'OTEL_BSP_MAX_EXPORT_BATCH_SIZE' | 'OTEL_BSP_MAX_QUEUE_SIZE' | 'OTEL_BSP_SCHEDULE_DELAY' | 'OTEL_ATTRIBUTE_VALUE_LENGTH_LIMIT' | 'OTEL_ATTRIBUTE_COUNT_LIMIT' | 'OTEL_SPAN_ATTRIBUTE_VALUE_LENGTH_LIMIT' | 'OTEL_SPAN_ATTRIBUTE_COUNT_LIMIT' | 'OTEL_SPAN_EVENT_COUNT_LIMIT' | 'OTEL_SPAN_LINK_COUNT_LIMIT' | 'OTEL_EXPORTER_OTLP_TIMEOUT' | 'OTEL_EXPORTER_OTLP_TRACES_TIMEOUT' | 'OTEL_EXPORTER_OTLP_METRICS_TIMEOUT' | 'OTEL_EXPORTER_JAEGER_AGENT_PORT' ]:? number}
+    {[ K in 'OTEL_BSP_EXPORT_TIMEOUT' | 'OTEL_BSP_MAX_EXPORT_BATCH_SIZE' | 'OTEL_BSP_MAX_QUEUE_SIZE' | 'OTEL_BSP_SCHEDULE_DELAY' | 'OTEL_BLRP_EXPORT_TIMEOUT' | 'OTEL_BLRP_MAX_EXPORT_BATCH_SIZE' | 'OTEL_BLRP_MAX_QUEUE_SIZE' | 'OTEL_BLRP_SCHEDULE_DELAY' | 'OTEL_ATTRIBUTE_VALUE_LENGTH_LIMIT' | 'OTEL_ATTRIBUTE_COUNT_LIMIT' | 'OTEL_SPAN_ATTRIBUTE_VALUE_LENGTH_LIMIT' | 'OTEL_SPAN_ATTRIBUTE_COUNT_LIMIT' | 'OTEL_LOGRECORD_ATTRIBUTE_VALUE_LENGTH_LIMIT' | 'OTEL_LOGRECORD_ATTRIBUTE_COUNT_LIMIT' | 'OTEL_SPAN_EVENT_COUNT_LIMIT' | 'OTEL_SPAN_LINK_COUNT_LIMIT' | 'OTEL_SPAN_ATTRIBUTE_PER_EVENT_COUNT_LIMIT' | 'OTEL_SPAN_ATTRIBUTE_PER_LINK_COUNT_LIMIT' | 'OTEL_EXPORTER_OTLP_TIMEOUT' | 'OTEL_EXPORTER_OTLP_TRACES_TIMEOUT' | 'OTEL_EXPORTER_OTLP_METRICS_TIMEOUT' | 'OTEL_EXPORTER_OTLP_LOGS_TIMEOUT' | 'OTEL_EXPORTER_JAEGER_AGENT_PORT' ]:? number}
     }}}
     */
   @js.native

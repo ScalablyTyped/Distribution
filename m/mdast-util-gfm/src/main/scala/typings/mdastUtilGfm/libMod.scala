@@ -1,6 +1,6 @@
 package typings.mdastUtilGfm
 
-import typings.mdastUtilFromMarkdown.mod.Extension
+import typings.mdastUtilFromMarkdown.libMod.Extension
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -20,5 +20,5 @@ object libMod {
   
   type Options = typings.mdastUtilGfmTable.mod.Options
   
-  type ToMarkdownExtension = typings.mdastUtilToMarkdown.mod.Options
+  type ToMarkdownExtension = typings.mdastUtilToMarkdown.libTypesMod.Options
 }

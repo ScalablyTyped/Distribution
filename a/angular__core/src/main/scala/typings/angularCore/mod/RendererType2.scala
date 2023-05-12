@@ -34,7 +34,7 @@ trait RendererType2 extends StObject {
   /**
     * Defines CSS styles to be stored on a renderer instance.
     */
-  var styles: js.Array[String | js.Array[Any]]
+  var styles: js.Array[String]
 }
 object RendererType2 {
   
@@ -42,7 +42,7 @@ object RendererType2 {
     data: StringDictionary[Any],
     encapsulation: ViewEncapsulation,
     id: String,
-    styles: js.Array[String | js.Array[Any]]
+    styles: js.Array[String]
   ): RendererType2 = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], encapsulation = encapsulation.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any])
     __obj.asInstanceOf[RendererType2]
@@ -57,8 +57,8 @@ object RendererType2 {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    inline def setStyles(value: js.Array[String | js.Array[Any]]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    inline def setStyles(value: js.Array[String]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
-    inline def setStylesVarargs(value: (String | js.Array[Any])*): Self = StObject.set(x, "styles", js.Array(value*))
+    inline def setStylesVarargs(value: String*): Self = StObject.set(x, "styles", js.Array(value*))
   }
 }

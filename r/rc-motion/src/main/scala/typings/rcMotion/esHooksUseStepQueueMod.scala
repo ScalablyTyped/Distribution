@@ -16,8 +16,9 @@ object esHooksUseStepQueueMod {
   
   inline def default(
     status: MotionStatus,
+    prepareOnly: Boolean,
     callback: js.Function1[/* step */ StepStatus, js.Promise[Unit] | Unit | `false` | `true`]
-  ): js.Tuple2[js.Function0[Unit], StepStatus] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(status.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Function0[Unit], StepStatus]]
+  ): js.Tuple2[js.Function0[Unit], StepStatus] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(status.asInstanceOf[js.Any], prepareOnly.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Function0[Unit], StepStatus]]
   
   @JSImport("rc-motion/es/hooks/useStepQueue", "DoStep")
   @js.native

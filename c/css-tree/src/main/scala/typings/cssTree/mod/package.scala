@@ -1,5 +1,6 @@
 package typings.cssTree.mod
 
+import typings.cssTree.anon.Atrules
 import typings.cssTree.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,11 +11,13 @@ inline def clone_(node: CssNode): CssNode = ^.asInstanceOf[js.Dynamic].applyDyna
 
 inline def definitionSyntax: DefinitionSyntax_ = ^.asInstanceOf[js.Dynamic].selectDynamic("definitionSyntax").asInstanceOf[DefinitionSyntax_]
 
-inline def find(ast: CssNode, fn: FindFn): CssNode = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(ast.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[CssNode]
+inline def find(ast: CssNode, fn: FindFn): CssNode | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(ast.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[CssNode | Null]
 
 inline def findAll(ast: CssNode, fn: FindFn): js.Array[CssNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("findAll")(ast.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Array[CssNode]]
 
-inline def findLast(ast: CssNode, fn: FindFn): CssNode = (^.asInstanceOf[js.Dynamic].applyDynamic("findLast")(ast.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[CssNode]
+inline def findLast(ast: CssNode, fn: FindFn): CssNode | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("findLast")(ast.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[CssNode | Null]
+
+inline def fork(`extension`: Atrules): typings.cssTree.anon.Lexer = ^.asInstanceOf[js.Dynamic].applyDynamic("fork")(`extension`.asInstanceOf[js.Any]).asInstanceOf[typings.cssTree.anon.Lexer]
 
 inline def fromPlainObject(node: CssNodePlain): CssNode = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPlainObject")(node.asInstanceOf[js.Any]).asInstanceOf[CssNode]
 

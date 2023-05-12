@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @remarks
   *
-  * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `Restricted`
+  * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **restricted**
   *
   * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
   */
@@ -44,7 +44,7 @@ trait Mailbox extends StObject {
     * @remarks
     * [Api set: Mailbox 1.5]
     *
-    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     *
@@ -69,7 +69,7 @@ trait Mailbox extends StObject {
     * @remarks
     * [Api set: Mailbox 1.5]
     *
-    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     *
@@ -100,7 +100,7 @@ trait Mailbox extends StObject {
     * @remarks
     * [Api set: Mailbox 1.3]
     *
-    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `Restricted`
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **restricted**
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     *
@@ -124,7 +124,7 @@ trait Mailbox extends StObject {
     *
     * @remarks
     *
-    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     *
@@ -141,7 +141,7 @@ trait Mailbox extends StObject {
     * @remarks
     * [Api set: Mailbox 1.3]
     *
-    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `Restricted`
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **restricted**
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     *
@@ -165,7 +165,7 @@ trait Mailbox extends StObject {
     *
     * @remarks
     *
-    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     *
@@ -196,7 +196,7 @@ trait Mailbox extends StObject {
     *
     * @remarks
     *
-    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     * 
@@ -225,7 +225,7 @@ trait Mailbox extends StObject {
     *
     * @remarks
     *
-    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     *
@@ -253,7 +253,7 @@ trait Mailbox extends StObject {
     * @remarks
     * [Api set: Mailbox 1.9]
     *
-    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     *
@@ -283,7 +283,7 @@ trait Mailbox extends StObject {
     * @remarks
     * [Api set: Mailbox 1.9]
     *
-    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     *
@@ -317,7 +317,7 @@ trait Mailbox extends StObject {
     *
     * @remarks
     *
-    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     *
@@ -344,7 +344,7 @@ trait Mailbox extends StObject {
     * @remarks
     * [Api set: Mailbox 1.9]
     *
-    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     *
@@ -373,7 +373,7 @@ trait Mailbox extends StObject {
     * @remarks
     * [Api set: Mailbox 1.9]
     *
-    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     *
@@ -410,7 +410,7 @@ trait Mailbox extends StObject {
     *
     * @remarks
     *
-    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
     *
@@ -439,7 +439,7 @@ trait Mailbox extends StObject {
     * @remarks
     * [Api set: Mailbox 1.9]
     *
-    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
     *
@@ -470,7 +470,7 @@ trait Mailbox extends StObject {
     * @remarks
     * [Api set: Mailbox 1.9]
     *
-    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
     *
@@ -498,7 +498,7 @@ trait Mailbox extends StObject {
     * @remarks
     * [Api set: Mailbox 1.6]
     *
-    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
     *
@@ -546,7 +546,7 @@ trait Mailbox extends StObject {
     * @remarks
     * [Api set: Mailbox 1.9]
     *
-    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
     *
@@ -596,7 +596,7 @@ trait Mailbox extends StObject {
     * @remarks
     * [Api set: Mailbox 1.9]
     *
-    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Read
     *
@@ -645,16 +645,16 @@ trait Mailbox extends StObject {
   /**
     * Gets the URL of the Exchange Web Services (EWS) endpoint for this email account. Read mode only.
     *
-    * Your app must have the `ReadItem` permission specified in its manifest to call the `ewsUrl` member in read mode.
+    * Your app must have the **read item** permission specified in its manifest to call the `ewsUrl` member in read mode.
     *
     * In compose mode you must call the `saveAsync` method before you can use the `ewsUrl` member.
-    * Your app must have `ReadWriteItem` permissions to call the `saveAsync` method.
+    * Your app must have **read/write item** permissions to call the `saveAsync` method.
     *
     * **Note**: This member is not supported in Outlook on iOS or Android.
     *
     * @remarks
     *
-    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     *
@@ -678,18 +678,20 @@ trait Mailbox extends StObject {
     * attachment or item. For example, you can create a remote service to
     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/get-attachments-of-an-outlook-item | get attachments from the selected item}.
     *
-    * Calling the `getCallbackTokenAsync` method in read mode requires a minimum permission level of `ReadItem`.
+    * Calling the `getCallbackTokenAsync` method in read mode requires a minimum permission level of **read item**.
     *
     * Calling the `getCallbackTokenAsync` method in compose mode requires you to have saved the item.
-    * The `saveAsync` method requires a minimum permission level of `ReadWriteItem`.
+    * The `saveAsync` method requires a minimum permission level of **read/write item**.
     *
     * **Important**: For guidance on delegate or shared scenarios, see the
     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access | shared folders and shared mailbox} article.
     *
+    * **Note**: This method isn't supported in Outlook on iOS or Android. EWS operations aren't supported in add-ins running on Outlook mobile clients.
+    * 
     * @remarks
     * [Api set: All support Read mode; Mailbox 1.3 introduced Compose mode support]
     *
-    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     *
@@ -716,10 +718,10 @@ trait Mailbox extends StObject {
     *
     * The token is returned as a string in the `asyncResult.value` property.
     *
-    * Calling the `getCallbackTokenAsync` method in read mode requires a minimum permission level of `ReadItem`.
+    * Calling the `getCallbackTokenAsync` method in read mode requires a minimum permission level of **read item**.
     *
     * Calling the `getCallbackTokenAsync` method in compose mode requires you to have saved the item.
-    * The `saveAsync` method requires a minimum permission level of `ReadWriteItem`.
+    * The `saveAsync` method requires a minimum permission level of **read/write item**.
     *
     * **Important**: For guidance on delegate or shared scenarios, see the
     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/delegate-access | shared folders and shared mailbox} article.
@@ -728,8 +730,8 @@ trait Mailbox extends StObject {
     *
     * When a REST token is requested (`options.isRest` = `true`), the resulting token will not work to authenticate EWS calls.
     * The token will be limited in scope to read-only access to the current item and its attachments, unless the add-in has specified the
-    * `ReadWriteMailbox` permission in its manifest.
-    * If the `ReadWriteMailbox` permission is specified, the resulting token will grant read/write access to mail, calendar, and contacts,
+    * **read/write mailbox** permission in its manifest.
+    * If the **read/write mailbox** permission is specified, the resulting token will grant read/write access to mail, calendar, and contacts,
     * including the ability to send mail.
     *
     * The add-in should use the `restUrl` property to determine the correct URL to use when making REST API calls.
@@ -758,12 +760,15 @@ trait Mailbox extends StObject {
     * attachment or item. For example, you can create a remote service to
     * {@link https://learn.microsoft.com/office/dev/add-ins/outlook/get-attachments-of-an-outlook-item | get attachments from the selected item}.
     *
-    * **Note**: It is recommended that add-ins use the REST APIs instead of Exchange Web Services whenever possible.
+    * **Important**: EWS operations aren't supported in add-ins running in Outlook on iOS and Android. A REST token is always returned in Outlook
+    * mobile clients even if `options.isRest` is set to `false`.
+    *
+    * **Note**: It's recommended that add-ins use the REST APIs instead of Exchange Web Services whenever possible.
     *
     * @remarks
     * [Api set: Mailbox 1.5]
     *
-    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     *
@@ -795,7 +800,7 @@ trait Mailbox extends StObject {
     * @remarks
     * [Api set: Mailbox preview]
     *
-    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteMailbox`
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write mailbox**
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose, Read
     * 
@@ -819,7 +824,7 @@ trait Mailbox extends StObject {
     * @remarks
     * [Api set: Mailbox preview]
     *
-    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteMailbox`
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write mailbox**
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose, Read
     * 
@@ -846,7 +851,7 @@ trait Mailbox extends StObject {
     *
     * @remarks
     *
-    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     *
@@ -895,8 +900,8 @@ trait Mailbox extends StObject {
     *
     * The XML request must specify UTF-8 encoding: `\<?xml version="1.0" encoding="utf-8"?\>`.
     *
-    * Your add-in must have the `ReadWriteMailbox` permission to use the `makeEwsRequestAsync` method.
-    * For information about using the `ReadWriteMailbox` permission and the EWS operations that you can call with the `makeEwsRequestAsync` method,
+    * Your add-in must have the **read/write mailbox** permission to use the `makeEwsRequestAsync` method.
+    * For information about using the **read/write mailbox** permission and the EWS operations that you can call with the `makeEwsRequestAsync` method,
     * see {@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Specify permissions for mail add-in access to the user's mailbox}.
     *
     * The XML result of the EWS call is provided as a string in the `asyncResult.value` property.
@@ -924,7 +929,7 @@ trait Mailbox extends StObject {
     *
     * @remarks
     *
-    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteMailbox`
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write mailbox**
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     *
@@ -944,7 +949,7 @@ trait Mailbox extends StObject {
     * @remarks
     * [Api set: Mailbox 1.8]
     *
-    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadWriteMailbox`
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read/write mailbox**
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     */
@@ -967,7 +972,7 @@ trait Mailbox extends StObject {
     * @remarks
     * [Api set: Mailbox 1.5]
     *
-    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     *
@@ -986,7 +991,7 @@ trait Mailbox extends StObject {
     * @remarks
     * [Api set: Mailbox 1.5]
     *
-    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     *
@@ -1005,10 +1010,10 @@ trait Mailbox extends StObject {
   /**
     * Gets the URL of the REST endpoint for this email account.
     *
-    * Your app must have the `ReadItem` permission specified in its manifest to call the `restUrl` member in read mode.
+    * Your app must have the **read item** permission specified in its manifest to call the `restUrl` member in read mode.
     *
     * In compose mode you must call the `saveAsync` method before you can use the `restUrl` member.
-    * Your app must have `ReadWriteItem` permissions to call the `saveAsync` method.
+    * Your app must have **read/write item** permissions to call the `saveAsync` method.
     *
     * However, in delegate or shared scenarios, you should instead use the `targetRestUrl` property of the
     * {@link Office.SharedProperties | SharedProperties} object (introduced in requirement set 1.8). For more information,
@@ -1017,7 +1022,7 @@ trait Mailbox extends StObject {
     * @remarks
     * [Api set: Mailbox 1.5]
     *
-    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: `ReadItem`
+    * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/understanding-outlook-add-in-permissions | Minimum permission level}**: **read item**
     *
     * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
     *

@@ -28,7 +28,7 @@ trait PathFollower
   /**
     * Settings for the PathFollower.
     */
-  var pathConfig: PathConfig = js.native
+  var pathConfig: PathConfig | Null = js.native
   
   /**
     * The distance the follower has traveled from the previous point to the current one, at the last update.

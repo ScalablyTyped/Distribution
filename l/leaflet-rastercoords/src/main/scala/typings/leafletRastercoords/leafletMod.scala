@@ -18,6 +18,8 @@ object leafletMod {
   open class RasterCoords protected () extends StObject {
     def this(map: Map_, imgsize: js.Array[Double]) = this()
     def this(map: Map_, imgsize: js.Array[Double], tilesize: Double) = this()
+    def this(map: Map_, imgsize: js.Array[Double], tilesize: Double, setmaxbounds: Boolean) = this()
+    def this(map: Map_, imgsize: js.Array[Double], tilesize: Unit, setmaxbounds: Boolean) = this()
     
     def getMaxBounds(): LatLngBounds_ = js.native
     

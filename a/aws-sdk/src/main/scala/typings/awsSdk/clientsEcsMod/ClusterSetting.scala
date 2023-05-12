@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ClusterSetting extends StObject {
   
   /**
-    * The name of the cluster setting. The only supported value is containerInsights.
+    * The name of the cluster setting. The value is containerInsights .
     */
   var name: js.UndefOr[ClusterSettingName] = js.undefined
   
   /**
-    * The value to set for the cluster setting. The supported values are enabled and disabled. If enabled is specified, CloudWatch Container Insights will be enabled for the cluster, otherwise it will be disabled unless the containerInsights account setting is enabled. If a cluster value is specified, it will override the containerInsights value set with PutAccountSetting or PutAccountSettingDefault.
+    * The value to set for the cluster setting. The supported values are enabled and disabled.  If you set name to containerInsights and value to enabled, CloudWatch Container Insights will be on for the cluster, otherwise it will be off unless the containerInsights account setting is turned on. If a cluster value is specified, it will override the containerInsights value set with PutAccountSetting or PutAccountSettingDefault.
     */
   var value: js.UndefOr[String] = js.undefined
 }

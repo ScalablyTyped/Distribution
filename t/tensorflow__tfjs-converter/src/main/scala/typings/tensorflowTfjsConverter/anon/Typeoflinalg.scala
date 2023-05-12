@@ -1,5 +1,6 @@
 package typings.tensorflowTfjsConverter.anon
 
+import typings.tensorflowTfjsCore.distTensorMod.Scalar
 import typings.tensorflowTfjsCore.distTensorMod.Tensor1D
 import typings.tensorflowTfjsCore.distTensorMod.Tensor2D
 import typings.tensorflowTfjsCore.distTypesMod.Rank
@@ -12,6 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Typeoflinalg extends StObject {
   
   def bandPart[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[Rank] */](a: T | TensorLike, numLower: Double, numUpper: Double): T = js.native
+  def bandPart[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[Rank] */](a: T | TensorLike, numLower: Double, numUpper: Scalar): T = js.native
+  def bandPart[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[Rank] */](a: T | TensorLike, numLower: Scalar, numUpper: Double): T = js.native
+  def bandPart[T /* <: typings.tensorflowTfjsCore.distTensorMod.Tensor[Rank] */](a: T | TensorLike, numLower: Scalar, numUpper: Scalar): T = js.native
   
   def gramSchmidt(xs: js.Array[Tensor1D]): Tensor2D | js.Array[Tensor1D] = js.native
   def gramSchmidt(xs: Tensor2D): Tensor2D | js.Array[Tensor1D] = js.native

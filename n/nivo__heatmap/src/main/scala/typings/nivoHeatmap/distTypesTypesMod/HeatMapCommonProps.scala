@@ -20,13 +20,14 @@ import typings.nivoHeatmap.nivoHeatmapStrings.row
 import typings.nivoHeatmap.nivoHeatmapStrings.rowColumn
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
+import typings.reactSpringCore.mod.SpringConfig
 import typings.std.Element
 import typings.std.Omit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined {  valueFormat :@nivo/core.@nivo/core.ValueFormat<number, void>,   margin :@nivo/core.@nivo/core.Box,   forceSquare :boolean,   sizeVariation :false | @nivo/heatmap.@nivo/heatmap/dist/types/types.SizeVariationConfig,   xInnerPadding :number,   xOuterPadding :number,   yInnerPadding :number,   yOuterPadding :number,   opacity :number,   activeOpacity :number,   inactiveOpacity :number,   borderWidth :number,   borderColor :@nivo/colors.@nivo/colors.InheritedColorConfig<std.Omit<@nivo/heatmap.@nivo/heatmap/dist/types/types.ComputedCell<Datum>, 'borderColor'>>,   enableGridX :boolean,   enableGridY :boolean,   theme :@nivo/core.@nivo/core.Theme,   colors :@nivo/colors.@nivo/colors.ContinuousColorScaleConfig | (cell : std.Omit<@nivo/heatmap.@nivo/heatmap/dist/types/types.ComputedCell<Datum>, 'color' | 'opacity' | 'borderColor' | 'labelTextColor'>): string,   emptyColor :string,   enableLabels :boolean,   label :@nivo/core.@nivo/core.PropertyAccessor<std.Omit<@nivo/heatmap.@nivo/heatmap/dist/types/types.ComputedCell<Datum>, 'label' | 'color' | 'opacity' | 'borderColor' | 'labelTextColor'>, string>,   labelTextColor :@nivo/colors.@nivo/colors.InheritedColorConfig<std.Omit<@nivo/heatmap.@nivo/heatmap/dist/types/types.ComputedCell<Datum>, 'labelTextColor'>>,   legends :std.Array<std.Omit<@nivo/legends.@nivo/legends.AnchoredContinuousColorsLegendProps, 'scale' | 'containerWidth' | 'containerHeight'>>,   annotations :std.Array<@nivo/annotations.@nivo/annotations.AnnotationMatcher<@nivo/heatmap.@nivo/heatmap/dist/types/types.ComputedCell<Datum>>>,   isInteractive :boolean,   hoverTarget :'cell' | 'row' | 'column' | 'rowColumn',   tooltip :@nivo/heatmap.@nivo/heatmap/dist/types/types.TooltipComponent<Datum>, onClick (cell : @nivo/heatmap.@nivo/heatmap/dist/types/types.ComputedCell<Datum>, event : react.react.MouseEvent<std.Element, react.react.NativeMouseEvent>): void,   renderWrapper :boolean,   role :string,   ariaLabel :react.react.AriaAttributes['aria-label'],   ariaLabelledBy :react.react.AriaAttributes['aria-labelledby'],   ariaDescribedBy :react.react.AriaAttributes['aria-describedby']} & std.Required<@nivo/core.@nivo/core.ModernMotionProps> */
+/* Inlined {  valueFormat :@nivo/core.@nivo/core.ValueFormat<number, void>,   margin :@nivo/core.@nivo/core.Box,   forceSquare :boolean,   sizeVariation :false | @nivo/heatmap.@nivo/heatmap/dist/types/types.SizeVariationConfig,   xInnerPadding :number,   xOuterPadding :number,   yInnerPadding :number,   yOuterPadding :number,   opacity :number,   activeOpacity :number,   inactiveOpacity :number,   borderWidth :number,   borderColor :@nivo/colors.@nivo/colors.InheritedColorConfig<std.Omit<@nivo/heatmap.@nivo/heatmap/dist/types/types.ComputedCell<Datum>, 'borderColor'>>,   enableGridX :boolean,   enableGridY :boolean,   theme :@nivo/core.@nivo/core.Theme,   colors :@nivo/colors.@nivo/colors.ContinuousColorScaleConfig | (cell : std.Omit<@nivo/heatmap.@nivo/heatmap/dist/types/types.ComputedCell<Datum>, 'color' | 'opacity' | 'borderColor' | 'labelTextColor'>): string,   emptyColor :string,   enableLabels :boolean,   label :@nivo/core.@nivo/core.PropertyAccessor<std.Omit<@nivo/heatmap.@nivo/heatmap/dist/types/types.ComputedCell<Datum>, 'label' | 'color' | 'opacity' | 'borderColor' | 'labelTextColor'>, string>,   labelTextColor :@nivo/colors.@nivo/colors.InheritedColorConfig<std.Omit<@nivo/heatmap.@nivo/heatmap/dist/types/types.ComputedCell<Datum>, 'labelTextColor'>>,   legends :std.Array<std.Omit<@nivo/legends.@nivo/legends.AnchoredContinuousColorsLegendProps, 'scale' | 'containerWidth' | 'containerHeight'>>,   annotations :std.Array<@nivo/annotations.@nivo/annotations.AnnotationMatcher<@nivo/heatmap.@nivo/heatmap/dist/types/types.ComputedCell<Datum>>>,   isInteractive :boolean,   hoverTarget :'cell' | 'row' | 'column' | 'rowColumn',   tooltip :@nivo/heatmap.@nivo/heatmap/dist/types/types.TooltipComponent<Datum>, onClick (cell : @nivo/heatmap.@nivo/heatmap/dist/types/types.ComputedCell<Datum>, event : react.react.MouseEvent<std.Element, react.react.NativeMouseEvent>): void,   renderWrapper :boolean,   role :string,   ariaLabel :react.react.AriaAttributes['aria-label'],   ariaLabelledBy :react.react.AriaAttributes['aria-labelledby'],   ariaDescribedBy :react.react.AriaAttributes['aria-describedby']} & std.Required<@nivo/core.@nivo/core.MotionProps> */
 trait HeatMapCommonProps[Datum /* <: HeatMapDatum */] extends StObject {
   
   var activeOpacity: Double
@@ -80,7 +81,7 @@ trait HeatMapCommonProps[Datum /* <: HeatMapDatum */] extends StObject {
   
   var margin: Box
   
-  var motionConfig: String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringConfig */ Any)
+  var motionConfig: String | SpringConfig
   
   def onClick(cell: ComputedCell[Datum], event: MouseEvent[Element, NativeMouseEvent]): Unit
   
@@ -133,7 +134,7 @@ object HeatMapCommonProps {
     labelTextColor: InheritedColorConfig[Omit[ComputedCell[Datum], labelTextColor]],
     legends: js.Array[OmitAnchoredContinuousCol],
     margin: Box,
-    motionConfig: String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringConfig */ Any),
+    motionConfig: String | SpringConfig,
     onClick: (ComputedCell[Datum], MouseEvent[Element, NativeMouseEvent]) => Unit,
     opacity: Double,
     renderWrapper: Boolean,
@@ -222,9 +223,7 @@ object HeatMapCommonProps {
     
     inline def setMargin(value: Box): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
-    inline def setMotionConfig(
-      value: String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringConfig */ Any)
-    ): Self = StObject.set(x, "motionConfig", value.asInstanceOf[js.Any])
+    inline def setMotionConfig(value: String | SpringConfig): Self = StObject.set(x, "motionConfig", value.asInstanceOf[js.Any])
     
     inline def setOnClick(value: (ComputedCell[Datum], MouseEvent[Element, NativeMouseEvent]) => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction2(value))
     

@@ -16,6 +16,10 @@ object xstateStrings {
   inline def Asterisk: Asterisk = "*".asInstanceOf[Asterisk]
   
   @js.native
+  sealed trait `Some implementations missing` extends StObject
+  inline def `Some implementations missing`: `Some implementations missing` = ("Some implementations missing").asInstanceOf[`Some implementations missing`]
+  
+  @js.native
   sealed trait __XSTATE_ALLOW_ANY_INVOKE_DATA_HACK__ extends StObject
   inline def __XSTATE_ALLOW_ANY_INVOKE_DATA_HACK__ : __XSTATE_ALLOW_ANY_INVOKE_DATA_HACK__ = "__XSTATE_ALLOW_ANY_INVOKE_DATA_HACK__".asInstanceOf[__XSTATE_ALLOW_ANY_INVOKE_DATA_HACK__]
   

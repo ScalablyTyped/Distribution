@@ -16,7 +16,7 @@ object mod {
     def this(props: AutoSizerProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: AutoSizerProps, context: Any) = this()
   }

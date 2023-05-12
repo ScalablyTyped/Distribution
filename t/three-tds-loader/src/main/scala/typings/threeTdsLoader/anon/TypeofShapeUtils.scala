@@ -7,10 +7,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait TypeofShapeUtils extends StObject {
   
+  /**
+    * Calculate area of a ( 2D ) contour polygon.
+    */
   def area(contour: js.Array[Vec2]): Double
   
+  /**
+    * Note that this is a linear function so it is necessary to calculate separately for x, y components of a polygon.
+    * @remarks Used internally by {@link THREE.Path | Path}, {@link THREE.ExtrudeGeometry | ExtrudeGeometry} and {@link THREE.ShapeGeometry | ShapeGeometry}.
+    */
   def isClockWise(pts: js.Array[Vec2]): Boolean
   
+  /**
+    * Used internally by {@link THREE.ExtrudeGeometry | ExtrudeGeometry} and {@link THREE.ShapeGeometry | ShapeGeometry} to calculate faces in shapes with holes.
+    */
   def triangulateShape(contour: js.Array[Vec2], holes: js.Array[js.Array[Vec2]]): js.Array[js.Array[Double]]
 }
 object TypeofShapeUtils {

@@ -50,6 +50,8 @@ import typings.primereact.primereactStrings.tree
 import typings.primereact.primereactStrings.url
 import typings.primereact.primereactStrings.vertical
 import typings.primereact.primereactStrings.yes
+import typings.primereact.utilsUtilsMod.IconOptions
+import typings.primereact.utilsUtilsMod.IconType
 import typings.react.anon.Html
 import typings.react.mod.AnimationEvent
 import typings.react.mod.AnimationEventHandler
@@ -102,25 +104,15 @@ object megamenuMegamenuMod {
     def this(props: MegaMenuProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: MegaMenuProps, context: Any) = this()
     
+    /**
+      * Used to get container element.
+      * @return {HTMLDivElement} Container element
+      */
     def getElement(): HTMLDivElement = js.native
-  }
-  
-  type MegaMenuEndTemplate = ReactNode | (js.Function1[/* props */ MegaMenuProps, ReactNode])
-  
-  /* Rewritten from type alias, can be one of: 
-    - typings.primereact.primereactStrings.vertical
-    - typings.primereact.primereactStrings.horizontal
-  */
-  trait MegaMenuOrientationType extends StObject
-  object MegaMenuOrientationType {
-    
-    inline def horizontal: typings.primereact.primereactStrings.horizontal = "horizontal".asInstanceOf[typings.primereact.primereactStrings.horizontal]
-    
-    inline def vertical: typings.primereact.primereactStrings.vertical = "vertical".asInstanceOf[typings.primereact.primereactStrings.vertical]
   }
   
   /* Inlined parent std.Omit<react.react.DetailedHTMLProps<react.react.HTMLAttributes<std.HTMLDivElement>, std.HTMLDivElement>, 'ref'> */
@@ -232,13 +224,26 @@ object megamenuMegamenuMod {
     
     var autoCorrect: js.UndefOr[String] = js.undefined
     
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
+    
     var autoSave: js.UndefOr[String] = js.undefined
     
+    /**
+      * The breakpoint to define the maximum width boundary when responsiveness is enabled.
+      */
+    var breakpoint: js.UndefOr[String] = js.undefined
+    
+    /**
+      * Used to get the child elements of the component.
+      * @readonly
+      */
     var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
     var color: js.UndefOr[String] = js.undefined
+    
+    var content: js.UndefOr[String] = js.undefined
     
     var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
@@ -256,7 +261,10 @@ object megamenuMegamenuMod {
     
     var draggable: js.UndefOr[Booleanish] = js.undefined
     
-    var end: js.UndefOr[MegaMenuEndTemplate] = js.undefined
+    /**
+      * The template of trailing element
+      */
+    var end: js.UndefOr[ReactNode | (js.Function1[/* props */ this.type, ReactNode])] = js.undefined
     
     var hidden: js.UndefOr[Boolean] = js.undefined
     
@@ -282,6 +290,14 @@ object megamenuMegamenuMod {
     
     var lang: js.UndefOr[String] = js.undefined
     
+    /**
+      * Icon to display in the horizontal menu.
+      */
+    var menuIcon: js.UndefOr[IconType[MegaMenuProps]] = js.undefined
+    
+    /**
+      * An array of menuitems.
+      */
     var model: js.UndefOr[
         js.Array[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MenuItem */ Any
@@ -450,7 +466,11 @@ object megamenuMegamenuMod {
     
     var onWheel: js.UndefOr[WheelEventHandler[HTMLDivElement]] = js.undefined
     
-    var orientation: js.UndefOr[MegaMenuOrientationType] = js.undefined
+    /**
+      * Defines the orientation, valid values are horizontal and vertical.
+      * @defaultValue horizontal
+      */
+    var orientation: js.UndefOr[vertical | horizontal] = js.undefined
     
     var placeholder: js.UndefOr[String] = js.undefined
     
@@ -460,11 +480,21 @@ object megamenuMegamenuMod {
     
     var radioGroup: js.UndefOr[String] = js.undefined
     
+    var rel: js.UndefOr[String] = js.undefined
+    
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
     
+    var rev: js.UndefOr[String] = js.undefined
+    
     var role: js.UndefOr[AriaRole] = js.undefined
+    
+    /**
+      * Maximum height of the options panel on responsive mode.
+      * @defaultValue 400px
+      */
+    var scrollHeight: js.UndefOr[String] = js.undefined
     
     var security: js.UndefOr[String] = js.undefined
     
@@ -472,9 +502,17 @@ object megamenuMegamenuMod {
     
     var spellCheck: js.UndefOr[Booleanish] = js.undefined
     
-    var start: js.UndefOr[MegaMenuStartTemplate] = js.undefined
+    /**
+      * The template of starting element.
+      */
+    var start: js.UndefOr[ReactNode | (js.Function1[/* props */ this.type, ReactNode])] = js.undefined
     
     var style: js.UndefOr[CSSProperties] = js.undefined
+    
+    /**
+      * Icon of the submenu.
+      */
+    var submenuIcon: js.UndefOr[IconType[MegaMenuProps]] = js.undefined
     
     var suppressContentEditableWarning: js.UndefOr[Boolean] = js.undefined
     
@@ -712,9 +750,17 @@ object megamenuMegamenuMod {
       
       inline def setAutoCorrectUndefined: Self = StObject.set(x, "autoCorrect", js.undefined)
       
+      inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+      
+      inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+      
       inline def setAutoSave(value: String): Self = StObject.set(x, "autoSave", value.asInstanceOf[js.Any])
       
       inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
+      
+      inline def setBreakpoint(value: String): Self = StObject.set(x, "breakpoint", value.asInstanceOf[js.Any])
+      
+      inline def setBreakpointUndefined: Self = StObject.set(x, "breakpoint", js.undefined)
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -728,9 +774,13 @@ object megamenuMegamenuMod {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
       inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
       inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
@@ -762,9 +812,9 @@ object megamenuMegamenuMod {
       
       inline def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
       
-      inline def setEnd(value: MegaMenuEndTemplate): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: ReactNode | (js.Function1[MegaMenuProps, ReactNode])): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      inline def setEndFunction1(value: /* props */ MegaMenuProps => ReactNode): Self = StObject.set(x, "end", js.Any.fromFunction1(value))
+      inline def setEndFunction1(value: MegaMenuProps => ReactNode): Self = StObject.set(x, "end", js.Any.fromFunction1(value))
       
       inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
       
@@ -817,6 +867,12 @@ object megamenuMegamenuMod {
       inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
       
       inline def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
+      
+      inline def setMenuIcon(value: IconType[MegaMenuProps]): Self = StObject.set(x, "menuIcon", value.asInstanceOf[js.Any])
+      
+      inline def setMenuIconFunction1(value: /* options */ IconOptions[MegaMenuProps] => ReactNode): Self = StObject.set(x, "menuIcon", js.Any.fromFunction1(value))
+      
+      inline def setMenuIconUndefined: Self = StObject.set(x, "menuIcon", js.undefined)
       
       inline def setModel(
         value: js.Array[
@@ -1154,7 +1210,7 @@ object megamenuMegamenuMod {
       
       inline def setOnWheelUndefined: Self = StObject.set(x, "onWheel", js.undefined)
       
-      inline def setOrientation(value: MegaMenuOrientationType): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+      inline def setOrientation(value: vertical | horizontal): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
       
       inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
       
@@ -1174,6 +1230,10 @@ object megamenuMegamenuMod {
       
       inline def setRadioGroupUndefined: Self = StObject.set(x, "radioGroup", js.undefined)
       
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      
+      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+      
       inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
       inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
@@ -1182,9 +1242,17 @@ object megamenuMegamenuMod {
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
       
+      inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+      
+      inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
+      
       inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
       inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+      
+      inline def setScrollHeight(value: String): Self = StObject.set(x, "scrollHeight", value.asInstanceOf[js.Any])
+      
+      inline def setScrollHeightUndefined: Self = StObject.set(x, "scrollHeight", js.undefined)
       
       inline def setSecurity(value: String): Self = StObject.set(x, "security", value.asInstanceOf[js.Any])
       
@@ -1198,15 +1266,21 @@ object megamenuMegamenuMod {
       
       inline def setSpellCheckUndefined: Self = StObject.set(x, "spellCheck", js.undefined)
       
-      inline def setStart(value: MegaMenuStartTemplate): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: ReactNode | (js.Function1[MegaMenuProps, ReactNode])): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
-      inline def setStartFunction1(value: /* props */ MegaMenuProps => ReactNode): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
+      inline def setStartFunction1(value: MegaMenuProps => ReactNode): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
       
       inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
       
       inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      
+      inline def setSubmenuIcon(value: IconType[MegaMenuProps]): Self = StObject.set(x, "submenuIcon", value.asInstanceOf[js.Any])
+      
+      inline def setSubmenuIconFunction1(value: /* options */ IconOptions[MegaMenuProps] => ReactNode): Self = StObject.set(x, "submenuIcon", js.Any.fromFunction1(value))
+      
+      inline def setSubmenuIconUndefined: Self = StObject.set(x, "submenuIcon", js.undefined)
       
       inline def setSuppressContentEditableWarning(value: Boolean): Self = StObject.set(x, "suppressContentEditableWarning", value.asInstanceOf[js.Any])
       
@@ -1241,6 +1315,4 @@ object megamenuMegamenuMod {
       inline def setVocabUndefined: Self = StObject.set(x, "vocab", js.undefined)
     }
   }
-  
-  type MegaMenuStartTemplate = ReactNode | (js.Function1[/* props */ MegaMenuProps, ReactNode])
 }

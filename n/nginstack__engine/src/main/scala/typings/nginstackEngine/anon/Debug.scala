@@ -8,7 +8,7 @@ trait Debug extends StObject {
   
   var debug: js.UndefOr[Boolean] = js.undefined
   
-  var onlyHeader: js.UndefOr[Boolean] = js.undefined
+  var onlyHeaders: js.UndefOr[Boolean] = js.undefined
 }
 object Debug {
   
@@ -24,8 +24,8 @@ object Debug {
     
     inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
     
-    inline def setOnlyHeader(value: Boolean): Self = StObject.set(x, "onlyHeader", value.asInstanceOf[js.Any])
+    inline def setOnlyHeaders(value: Boolean): Self = StObject.set(x, "onlyHeaders", value.asInstanceOf[js.Any])
     
-    inline def setOnlyHeaderUndefined: Self = StObject.set(x, "onlyHeader", js.undefined)
+    inline def setOnlyHeadersUndefined: Self = StObject.set(x, "onlyHeaders", js.undefined)
   }
 }

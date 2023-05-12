@@ -12,7 +12,7 @@ object distSrcDagImportMod {
   @js.native
   val createImport: Factory[
     js.Function2[
-      /* source */ (js.Iterable[AsyncIterable[js.typedarray.Uint8Array] | js.typedarray.Uint8Array]) | (AsyncIterable[AsyncIterable[js.typedarray.Uint8Array] | js.typedarray.Uint8Array]), 
+      /* sources */ (js.Iterable[AsyncIterable[js.typedarray.Uint8Array] | js.typedarray.Uint8Array]) | (AsyncIterable[AsyncIterable[js.typedarray.Uint8Array] | js.typedarray.Uint8Array]), 
       /* options */ js.UndefOr[
         (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_dag.ImportOptions */ Any) & typings.ipfsHttpClient.distSrcTypesMod.HTTPClientExtraOptions
       ], 

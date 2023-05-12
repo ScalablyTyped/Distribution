@@ -12,7 +12,7 @@ trait SearchResourcesOutput extends StObject {
   var NextToken: js.UndefOr[typings.awsSdk.clientsResourcegroupsMod.NextToken] = js.undefined
   
   /**
-    * A list of QueryError objects. Each error is an object that contains ErrorCode and Message structures. Possible values for ErrorCode are CLOUDFORMATION_STACK_INACTIVE and CLOUDFORMATION_STACK_NOT_EXISTING.
+    * A list of QueryError objects. Each error is an object that contains ErrorCode and Message structures. Possible values for ErrorCode:    CLOUDFORMATION_STACK_INACTIVE     CLOUDFORMATION_STACK_NOT_EXISTING   
     */
   var QueryErrors: js.UndefOr[QueryErrorList] = js.undefined
   

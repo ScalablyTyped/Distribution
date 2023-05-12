@@ -60,7 +60,6 @@ import typings.react.mod.SuspenseProps
 import typings.react.mod.TransitionFunction
 import typings.react.mod.TransitionStartFunction
 import typings.react.nextMod.reactAugmentingMod.ServerContext
-import typings.react.nextMod.reactAugmentingMod.ServerContextJSONArray
 import typings.react.nextMod.reactAugmentingMod.ServerContextJSONValue
 import typings.react.nextMod.reactAugmentingMod.Usable
 import typings.std.Element
@@ -114,7 +113,7 @@ object anon {
       * }
       * ```
       *
-      * @see https://reactjs.org/docs/context.html#classcontexttype
+      * @see https://react.dev/reference/react/Component#static-contexttype
       */
     /* static member */
     var contextType: js.UndefOr[Context[Any]] = js.undefined
@@ -148,6 +147,8 @@ object anon {
       ] = js.native
     
     val Fragment: ExoticComponent[typings.react.anon.Children] = js.native
+    
+    val JSX: Any = js.native
     
     val Profiler: ExoticComponent[ProfilerProps] = js.native
     
@@ -219,17 +220,17 @@ object anon {
     def createElement[P /* <: js.Object */](`type`: FunctionComponent[P], props: Null, children: ReactNode*): FunctionComponentElement[P] = js.native
     def createElement[P /* <: js.Object */](`type`: FunctionComponent[P], props: Unit, children: ReactNode*): FunctionComponentElement[P] = js.native
     def createElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
-      `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116, starting with typings.whyDidYouUpdate.whyDidYouUpdateStrings.a, typings.whyDidYouUpdate.whyDidYouUpdateStrings.abbr, typings.whyDidYouUpdate.whyDidYouUpdateStrings.address */ Any,
+      `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 117, starting with typings.whyDidYouUpdate.whyDidYouUpdateStrings.a, typings.whyDidYouUpdate.whyDidYouUpdateStrings.abbr, typings.whyDidYouUpdate.whyDidYouUpdateStrings.address */ Any,
       props: ClassAttributes[T] & P,
       children: ReactNode*
     ): DetailedReactHTMLElement[P, T] = js.native
     def createElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
-      `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116, starting with typings.whyDidYouUpdate.whyDidYouUpdateStrings.a, typings.whyDidYouUpdate.whyDidYouUpdateStrings.abbr, typings.whyDidYouUpdate.whyDidYouUpdateStrings.address */ Any,
+      `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 117, starting with typings.whyDidYouUpdate.whyDidYouUpdateStrings.a, typings.whyDidYouUpdate.whyDidYouUpdateStrings.abbr, typings.whyDidYouUpdate.whyDidYouUpdateStrings.address */ Any,
       props: Null,
       children: ReactNode*
     ): DetailedReactHTMLElement[P, T] = js.native
     def createElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
-      `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116, starting with typings.whyDidYouUpdate.whyDidYouUpdateStrings.a, typings.whyDidYouUpdate.whyDidYouUpdateStrings.abbr, typings.whyDidYouUpdate.whyDidYouUpdateStrings.address */ Any,
+      `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 117, starting with typings.whyDidYouUpdate.whyDidYouUpdateStrings.a, typings.whyDidYouUpdate.whyDidYouUpdateStrings.abbr, typings.whyDidYouUpdate.whyDidYouUpdateStrings.address */ Any,
       props: Unit,
       children: ReactNode*
     ): DetailedReactHTMLElement[P, T] = js.native
@@ -298,19 +299,19 @@ object anon {
     // DOM Elements
     @JSName("createFactory")
     def createFactory_T_HTMLFactory[T /* <: HTMLElement */](
-      `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116, starting with typings.whyDidYouUpdate.whyDidYouUpdateStrings.a, typings.whyDidYouUpdate.whyDidYouUpdateStrings.abbr, typings.whyDidYouUpdate.whyDidYouUpdateStrings.address */ Any
+      `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 117, starting with typings.whyDidYouUpdate.whyDidYouUpdateStrings.a, typings.whyDidYouUpdate.whyDidYouUpdateStrings.abbr, typings.whyDidYouUpdate.whyDidYouUpdateStrings.address */ Any
     ): HTMLFactory[T] = js.native
     
     def createRef[T](): RefObject[T] = js.native
     
     def createServerContext(globalName: String, defaultValue: String): ServerContext[String] = js.native
-    def createServerContext(globalName: String, defaultValue: js.Array[ServerContextJSONArray]): ServerContext[js.Array[ServerContextJSONArray]] = js.native
+    def createServerContext(globalName: String, defaultValue: js.Array[ServerContextJSONValue]): ServerContext[js.Array[ServerContextJSONValue]] = js.native
     def createServerContext(globalName: String, defaultValue: Boolean): ServerContext[Boolean] = js.native
     def createServerContext(globalName: String, defaultValue: Double): ServerContext[Double] = js.native
     def createServerContext(globalName: String, defaultValue: Null): ServerContext[Null] = js.native
     def createServerContext[T /* <: StringDictionary[ServerContextJSONValue] */](globalName: String, defaultValue: T): ServerContext[T] = js.native
     
-    def experimental_useEvent[T /* <: js.Function */](event: T): T = js.native
+    def experimental_useEffectEvent[T /* <: js.Function */](event: T): T = js.native
     
     def forwardRef[T, P](render: ForwardRefRenderFunction[T, P]): ForwardRefExoticComponent[PropsWithoutRef[P] & RefAttributes[T]] = js.native
     
@@ -343,7 +344,7 @@ object anon {
       * has changed.
       *
       * @version 16.8.0
-      * @see https://reactjs.org/docs/hooks-reference.html#usecallback
+      * @see https://react.dev/reference/react/useCallback
       */
     // A specific function type would not trigger implicit any.
     // See https://github.com/DefinitelyTyped/DefinitelyTyped/issues/52873#issuecomment-845806435 for a comparison between `Function` and more specific types.
@@ -356,7 +357,7 @@ object anon {
       * context value, as given by the nearest context provider for the given context.
       *
       * @version 16.8.0
-      * @see https://reactjs.org/docs/hooks-reference.html#usecontext
+      * @see https://react.dev/reference/react/useContext
       */
     def useContext[T](context: Context[T]): T = js.native
     
@@ -367,7 +368,7 @@ object anon {
       * It’s most valuable for custom hooks that are part of shared libraries.
       *
       * @version 16.8.0
-      * @see https://reactjs.org/docs/hooks-reference.html#usedebugvalue
+      * @see https://react.dev/reference/react/useDebugValue
       */
     // the name of the custom hook is itself derived from the function name at runtime:
     // it's just the function name without the "use" prefix.
@@ -383,7 +384,7 @@ object anon {
       * @param deps If present, effect will only activate if the values in the list change.
       *
       * @version 16.8.0
-      * @see https://reactjs.org/docs/hooks-reference.html#useeffect
+      * @see https://react.dev/reference/react/useEffect
       */
     def useEffect(effect: EffectCallback): Unit = js.native
     def useEffect(effect: EffectCallback, deps: DependencyList): Unit = js.native
@@ -400,7 +401,7 @@ object anon {
       * `useImperativeHandle` should be used with `React.forwardRef`.
       *
       * @version 16.8.0
-      * @see https://reactjs.org/docs/hooks-reference.html#useimperativehandle
+      * @see https://react.dev/reference/react/useImperativeHandle
       */
     def useImperativeHandle[T, R /* <: T */](ref: Ref[T], init: js.Function0[R]): Unit = js.native
     def useImperativeHandle[T, R /* <: T */](ref: Ref[T], init: js.Function0[R], deps: DependencyList): Unit = js.native
@@ -419,7 +420,7 @@ object anon {
       * `componentDidMount` and `componentDidUpdate`.
       *
       * @version 16.8.0
-      * @see https://reactjs.org/docs/hooks-reference.html#uselayouteffect
+      * @see https://react.dev/reference/react/useLayoutEffect
       */
     def useLayoutEffect(effect: EffectCallback): Unit = js.native
     def useLayoutEffect(effect: EffectCallback, deps: DependencyList): Unit = js.native
@@ -428,7 +429,7 @@ object anon {
       * `useMemo` will only recompute the memoized value when one of the `deps` has changed.
       *
       * @version 16.8.0
-      * @see https://reactjs.org/docs/hooks-reference.html#usememo
+      * @see https://react.dev/reference/react/useMemo
       */
     // allow undefined, but don't make it optional as that is very likely a mistake
     def useMemo[T](factory: js.Function0[T]): T = js.native
@@ -442,7 +443,7 @@ object anon {
       * updates because you can pass `dispatch` down instead of callbacks.
       *
       * @version 16.8.0
-      * @see https://reactjs.org/docs/hooks-reference.html#usereducer
+      * @see https://react.dev/reference/react/useReducer
       */
     // I'm not sure if I keep this 2-ary or if I make it (2,3)-ary; it's currently (2,3)-ary.
     // The Flow types do have an overload for 3-ary invocation with undefined initializer.
@@ -460,7 +461,7 @@ object anon {
       * updates because you can pass `dispatch` down instead of callbacks.
       *
       * @version 16.8.0
-      * @see https://reactjs.org/docs/hooks-reference.html#usereducer
+      * @see https://react.dev/reference/react/useReducer
       */
     // overload where dispatch could accept 0 arguments.
     def useReducer[R /* <: ReducerWithoutAction[Any] */](reducer: R, initializerArg: ReducerStateWithoutAction[R], initializer: Unit): js.Tuple2[ReducerStateWithoutAction[R], DispatchWithoutAction] = js.native
@@ -472,7 +473,7 @@ object anon {
       * updates because you can pass `dispatch` down instead of callbacks.
       *
       * @version 16.8.0
-      * @see https://reactjs.org/docs/hooks-reference.html#usereducer
+      * @see https://react.dev/reference/react/useReducer
       */
     // overload where dispatch could accept 0 arguments.
     // overload where "I" may be a subset of ReducerState<R>; used to provide autocompletion.
@@ -498,7 +499,7 @@ object anon {
       * value around similar to how you’d use instance fields in classes.
       *
       * @version 16.8.0
-      * @see https://reactjs.org/docs/hooks-reference.html#useref
+      * @see https://react.dev/reference/react/useRef
       */
     def useRef[T](): MutableRefObject[js.UndefOr[T]] = js.native
     /**
@@ -509,7 +510,7 @@ object anon {
       * value around similar to how you’d use instance fields in classes.
       *
       * @version 16.8.0
-      * @see https://reactjs.org/docs/hooks-reference.html#useref
+      * @see https://react.dev/reference/react/useRef
       */
     def useRef[T](initialValue: T): MutableRefObject[T] = js.native
     // convenience overload for refs given as a ref prop as they typically start with a null value
@@ -524,7 +525,7 @@ object anon {
       * of the generic argument.
       *
       * @version 16.8.0
-      * @see https://reactjs.org/docs/hooks-reference.html#useref
+      * @see https://react.dev/reference/react/useRef
       */
     @JSName("useRef")
     def useRef_T_RefObject[T](): RefObject[T] = js.native
@@ -536,14 +537,14 @@ object anon {
       * Returns a stateful value, and a function to update it.
       *
       * @version 16.8.0
-      * @see https://reactjs.org/docs/hooks-reference.html#usestate
+      * @see https://react.dev/reference/react/useState
       */
     def useState[S](): js.Tuple2[js.UndefOr[S], Dispatch[SetStateAction[js.UndefOr[S]]]] = js.native
     /**
       * Returns a stateful value, and a function to update it.
       *
       * @version 16.8.0
-      * @see https://reactjs.org/docs/hooks-reference.html#usestate
+      * @see https://react.dev/reference/react/useState
       */
     def useState[S](initialState: S): js.Tuple2[S, Dispatch[SetStateAction[S]]] = js.native
     def useState[S](initialState: js.Function0[S]): js.Tuple2[S, Dispatch[SetStateAction[S]]] = js.native

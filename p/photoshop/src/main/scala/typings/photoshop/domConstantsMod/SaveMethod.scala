@@ -14,7 +14,7 @@ object SaveMethod extends StObject {
   def apply(value: String): js.UndefOr[SaveMethod & String] = js.native
   
   /**
-    * Saves the current document at the current format
+    * Saves the current document at the current format.
     */
   @js.native
   sealed trait SAVE
@@ -23,7 +23,7 @@ object SaveMethod extends StObject {
   /* "save" */ val SAVE: typings.photoshop.domConstantsMod.SaveMethod.SAVE & String = js.native
   
   /**
-    * Changes the format of document, changing the file
+    * Changes the format of document, changing the file.
     */
   @js.native
   sealed trait SAVEAS
@@ -32,7 +32,7 @@ object SaveMethod extends StObject {
   /* "saveAs" */ val SAVEAS: typings.photoshop.domConstantsMod.SaveMethod.SAVEAS & String = js.native
   
   /**
-    * Creates a copy of the document in the new format
+    * Creates a copy of the document in the new format.
     */
   @js.native
   sealed trait SAVEASCOPY

@@ -16,7 +16,8 @@ open class Icon_[T /* <: BaseIconOptions */] protected () extends Layer {
   def createShadow(): HTMLElement = js.native
   def createShadow(oldIcon: HTMLElement): HTMLElement = js.native
   
-  var options: T = js.native
+  @JSName("options")
+  var options_Icon_ : T = js.native
 }
 object Icon_ {
   

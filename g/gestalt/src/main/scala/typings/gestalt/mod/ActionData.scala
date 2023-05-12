@@ -2,10 +2,6 @@ package typings.gestalt.mod
 
 import typings.gestalt.anon.DangerouslyDisableOnNavigation
 import typings.gestalt.anon.Event
-import typings.gestalt.gestaltStrings.blank
-import typings.gestalt.gestaltStrings.nofollow
-import typings.gestalt.gestaltStrings.none
-import typings.gestalt.gestaltStrings.self
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
@@ -25,16 +21,11 @@ trait ActionData extends StObject {
   
   var label: String
   
-  var onClick: js.UndefOr[
-    AbstractEventHandler[
-      (MouseEvent[HTMLAnchorElement | HTMLButtonElement, NativeMouseEvent]) | (KeyboardEvent[HTMLAnchorElement | HTMLButtonElement]), 
-      DangerouslyDisableOnNavigation
-    ]
-  ] = js.undefined
+  var onClick: js.UndefOr[ButtonEventHandlerType] = js.undefined
   
-  var rel: js.UndefOr[none | nofollow] = js.undefined
+  var rel: js.UndefOr[RelType] = js.undefined
   
-  var target: js.UndefOr[Null | self | blank] = js.undefined
+  var target: js.UndefOr[TargetType] = js.undefined
 }
 object ActionData {
   
@@ -66,11 +57,11 @@ object ActionData {
     
     inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
     
-    inline def setRel(value: none | nofollow): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+    inline def setRel(value: RelType): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
     
     inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
     
-    inline def setTarget(value: self | blank): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: TargetType): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
     inline def setTargetNull: Self = StObject.set(x, "target", null)
     

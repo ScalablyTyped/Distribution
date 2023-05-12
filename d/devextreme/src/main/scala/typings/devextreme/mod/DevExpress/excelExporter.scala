@@ -3,6 +3,9 @@ package typings.devextreme.mod.DevExpress
 import typings.devextreme.anon.ExcelCell
 import typings.devextreme.anon.Name
 import typings.devextreme.anon.PivotCell
+import typings.devextreme.devextremeStrings.column
+import typings.devextreme.devextremeStrings.filter
+import typings.devextreme.devextremeStrings.row
 import typings.devextreme.mod.DevExpress.ui.dxDataGrid
 import typings.devextreme.mod.DevExpress.ui.dxDataGrid.Column
 import typings.devextreme.mod.DevExpress.ui.dxPivotGrid
@@ -161,6 +164,11 @@ object excelExporter {
   trait ExcelExportBaseProps extends StObject {
     
     /**
+      * 
+      */
+    var encodeExecutableContent: js.UndefOr[Boolean] = js.undefined
+    
+    /**
       * Specifies whether Excel columns should have the same width as their source UI component&apos;s columns.
       */
     var keepColumnWidths: js.UndefOr[Boolean] = js.undefined
@@ -189,6 +197,10 @@ object excelExporter {
     
     @scala.inline
     implicit open class MutableBuilder[Self <: ExcelExportBaseProps] (val x: Self) extends AnyVal {
+      
+      inline def setEncodeExecutableContent(value: Boolean): Self = StObject.set(x, "encodeExecutableContent", value.asInstanceOf[js.Any])
+      
+      inline def setEncodeExecutableContentUndefined: Self = StObject.set(x, "encodeExecutableContent", js.undefined)
       
       inline def setKeepColumnWidths(value: Boolean): Self = StObject.set(x, "keepColumnWidths", value.asInstanceOf[js.Any])
       
@@ -275,6 +287,26 @@ object excelExporter {
     var customizeCell: js.UndefOr[js.Function1[/* options */ PivotCell, Unit]] = js.undefined
     
     /**
+      * 
+      */
+    var exportColumnFieldHeaders: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * 
+      */
+    var exportDataFieldHeaders: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * 
+      */
+    var exportFilterFieldHeaders: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+      * 
+      */
+    var exportRowFieldHeaders: js.UndefOr[Boolean] = js.undefined
+    
+    /**
       * Specifies whether to merge neighbouring cells in the column field if they have the same values.
       */
     var mergeColumnFieldValues: js.UndefOr[Boolean] = js.undefined
@@ -302,6 +334,22 @@ object excelExporter {
       
       inline def setCustomizeCellUndefined: Self = StObject.set(x, "customizeCell", js.undefined)
       
+      inline def setExportColumnFieldHeaders(value: Boolean): Self = StObject.set(x, "exportColumnFieldHeaders", value.asInstanceOf[js.Any])
+      
+      inline def setExportColumnFieldHeadersUndefined: Self = StObject.set(x, "exportColumnFieldHeaders", js.undefined)
+      
+      inline def setExportDataFieldHeaders(value: Boolean): Self = StObject.set(x, "exportDataFieldHeaders", value.asInstanceOf[js.Any])
+      
+      inline def setExportDataFieldHeadersUndefined: Self = StObject.set(x, "exportDataFieldHeaders", js.undefined)
+      
+      inline def setExportFilterFieldHeaders(value: Boolean): Self = StObject.set(x, "exportFilterFieldHeaders", value.asInstanceOf[js.Any])
+      
+      inline def setExportFilterFieldHeadersUndefined: Self = StObject.set(x, "exportFilterFieldHeaders", js.undefined)
+      
+      inline def setExportRowFieldHeaders(value: Boolean): Self = StObject.set(x, "exportRowFieldHeaders", value.asInstanceOf[js.Any])
+      
+      inline def setExportRowFieldHeadersUndefined: Self = StObject.set(x, "exportRowFieldHeaders", js.undefined)
+      
       inline def setMergeColumnFieldValues(value: Boolean): Self = StObject.set(x, "mergeColumnFieldValues", value.asInstanceOf[js.Any])
       
       inline def setMergeColumnFieldValuesUndefined: Self = StObject.set(x, "mergeColumnFieldValues", js.undefined)
@@ -319,12 +367,17 @@ object excelExporter {
     /**
       * The area to which the cell belongs.
       */
-    var area: js.UndefOr[String] = js.undefined
+    var area: js.UndefOr[column | row | typings.devextreme.devextremeStrings.data] = js.undefined
     
     /**
       * A zero-based index that indicates the position of the cell&apos;s column.
       */
     var columnIndex: js.UndefOr[Double] = js.undefined
+    
+    /**
+      * 
+      */
+    var headerType: js.UndefOr[column | row | typings.devextreme.devextremeStrings.data | filter] = js.undefined
     
     /**
       * A zero-based index that indicates the position of the cell&apos;s row.
@@ -341,13 +394,17 @@ object excelExporter {
     @scala.inline
     implicit open class MutableBuilder[Self <: ExcelPivotGridCell] (val x: Self) extends AnyVal {
       
-      inline def setArea(value: String): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
+      inline def setArea(value: column | row | typings.devextreme.devextremeStrings.data): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
       
       inline def setAreaUndefined: Self = StObject.set(x, "area", js.undefined)
       
       inline def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
       
       inline def setColumnIndexUndefined: Self = StObject.set(x, "columnIndex", js.undefined)
+      
+      inline def setHeaderType(value: column | row | typings.devextreme.devextremeStrings.data | filter): Self = StObject.set(x, "headerType", value.asInstanceOf[js.Any])
+      
+      inline def setHeaderTypeUndefined: Self = StObject.set(x, "headerType", js.undefined)
       
       inline def setRowIndex(value: Double): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
       

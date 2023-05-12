@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DescribeExportTasksMessage extends StObject {
   
   /**
-    * The identifier of the snapshot export task to be described.
+    * The identifier of the snapshot or cluster export task to be described.
     */
   var ExportTaskIdentifier: js.UndefOr[String] = js.undefined
   
   /**
-    * Filters specify one or more snapshot exports to describe. The filters are specified as name-value pairs that define what to include in the output. Filter names and values are case-sensitive. Supported filters include the following:    export-task-identifier - An identifier for the snapshot export task.    s3-bucket - The Amazon S3 bucket the snapshot is exported to.    source-arn - The Amazon Resource Name (ARN) of the snapshot exported to Amazon S3    status - The status of the export task. Must be lowercase. Valid statuses are the following:    canceled     canceling     complete     failed     in_progress     starting     
+    * Filters specify one or more snapshot or cluster exports to describe. The filters are specified as name-value pairs that define what to include in the output. Filter names and values are case-sensitive. Supported filters include the following:    export-task-identifier - An identifier for the snapshot or cluster export task.    s3-bucket - The Amazon S3 bucket the data is exported to.    source-arn - The Amazon Resource Name (ARN) of the snapshot or cluster exported to Amazon S3.    status - The status of the export task. Must be lowercase. Valid statuses are the following:    canceled     canceling     complete     failed     in_progress     starting     
     */
   var Filters: js.UndefOr[FilterList] = js.undefined
   
@@ -27,7 +27,7 @@ trait DescribeExportTasksMessage extends StObject {
   var MaxRecords: js.UndefOr[typings.awsSdk.clientsRdsMod.MaxRecords] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the snapshot exported to Amazon S3.
+    * The Amazon Resource Name (ARN) of the snapshot or cluster exported to Amazon S3.
     */
   var SourceArn: js.UndefOr[String] = js.undefined
   

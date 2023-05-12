@@ -1,6 +1,6 @@
 package typings.googleCloudPubsub
 
-import typings.grpcGrpcJs.buildSrcCallStreamMod.StatusObject
+import typings.grpcGrpcJs.buildSrcCallInterfaceMod.StatusObject
 import typings.grpcGrpcJs.buildSrcConstantsMod.Status
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -10,19 +10,15 @@ object buildSrcPullRetryMod {
   
   @JSImport("@google-cloud/pubsub/build/src/pull-retry", "PullRetry")
   @js.native
-  open class PullRetry () extends StObject {
+  open class PullRetry () extends StObject
+  /* static members */
+  object PullRetry {
     
-    /**
-      * Generates a timeout that can be used for applying a backoff based on the
-      * current number of failed requests.
-      *
-      * @see {@link https://cloud.google.com/iot/docs/how-tos/exponential-backoff}
-      * @private
-      * @returns {number}
-      */
-    def createTimeout(): Double = js.native
+    @JSImport("@google-cloud/pubsub/build/src/pull-retry", "PullRetry")
+    @js.native
+    val ^ : js.Any = js.native
     
-    /* private */ var failures: Any = js.native
+    inline def resetFailures(err: StatusObject): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("resetFailures")(err.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Determines if a request grpc.status should be retried.
@@ -37,7 +33,7 @@ object buildSrcPullRetryMod {
       * @param {object} grpc.status The request grpc.status.
       * @returns {boolean}
       */
-    def retry(err: StatusObject): Boolean = js.native
+    inline def retry(err: StatusObject): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("retry")(err.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   @JSImport("@google-cloud/pubsub/build/src/pull-retry", "RETRY_CODES")

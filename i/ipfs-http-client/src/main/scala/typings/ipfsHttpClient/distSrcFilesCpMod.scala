@@ -11,10 +11,10 @@ object distSrcFilesCpMod {
   @js.native
   val createCp: Factory[
     js.Function3[
-      /* sources */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_utils.IPFSPath */ Any) | (js.Array[
+      /* from */ (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_utils.IPFSPath */ Any) | (js.Array[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_utils.IPFSPath */ Any
       ]), 
-      /* destination */ String, 
+      /* to */ String, 
       /* options */ js.UndefOr[
         (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_files.CpOptions */ Any) & typings.ipfsHttpClient.distSrcTypesMod.HTTPClientExtraOptions
       ], 

@@ -12,17 +12,17 @@ trait DomainSummary extends StObject {
   var Arn: js.UndefOr[typings.awsSdk.clientsVoiceidMod.Arn] = js.undefined
   
   /**
-    * The timestamp showing when the domain is created.
+    * The timestamp of when the domain was created.
     */
   var CreatedAt: js.UndefOr[js.Date] = js.undefined
   
   /**
-    * The client-provided description of the domain.
+    * The description of the domain.
     */
   var Description: js.UndefOr[typings.awsSdk.clientsVoiceidMod.Description] = js.undefined
   
   /**
-    * The service-generated identifier for the domain.
+    * The identifier of the domain.
     */
   var DomainId: js.UndefOr[typings.awsSdk.clientsVoiceidMod.DomainId] = js.undefined
   
@@ -47,9 +47,14 @@ trait DomainSummary extends StObject {
   var ServerSideEncryptionUpdateDetails: js.UndefOr[typings.awsSdk.clientsVoiceidMod.ServerSideEncryptionUpdateDetails] = js.undefined
   
   /**
-    * The timestamp showing the domain's last update.
+    * The timestamp of when the domain was last updated.
     */
   var UpdatedAt: js.UndefOr[js.Date] = js.undefined
+  
+  /**
+    * Provides information about watchlistDetails and DefaultWatchlistID. 
+    */
+  var WatchlistDetails: js.UndefOr[typings.awsSdk.clientsVoiceidMod.WatchlistDetails] = js.undefined
 }
 object DomainSummary {
   
@@ -96,5 +101,9 @@ object DomainSummary {
     inline def setUpdatedAt(value: js.Date): Self = StObject.set(x, "UpdatedAt", value.asInstanceOf[js.Any])
     
     inline def setUpdatedAtUndefined: Self = StObject.set(x, "UpdatedAt", js.undefined)
+    
+    inline def setWatchlistDetails(value: WatchlistDetails): Self = StObject.set(x, "WatchlistDetails", value.asInstanceOf[js.Any])
+    
+    inline def setWatchlistDetailsUndefined: Self = StObject.set(x, "WatchlistDetails", js.undefined)
   }
 }

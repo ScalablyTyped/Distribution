@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "postcss-normalize-unicode" : "5.1.1"
+      "postcss-normalize-unicode" : "6.0.0"
     }
   ],
   "test-dependencies" : [
     {
-      "postcss-normalize-unicode" : "5.1.1"
+      "postcss-normalize-unicode" : "6.0.0"
     }
   ],
   "compile-devDependencies" : [

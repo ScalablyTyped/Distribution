@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait VpcInterfaceAttachment extends StObject {
   
   /**
-    * The name of the VPC interface to use for this output.
+    * The name of the VPC interface to use for this resource.
     */
   var VpcInterfaceName: js.UndefOr[string] = js.undefined
 }

@@ -1,7 +1,7 @@
 
 # Scala.js typings for rc-checkbox
 
-Typings are for version 2.3.2
+Typings are for version 3.0.1
 
 ## Library description:
 checkbox ui component for react

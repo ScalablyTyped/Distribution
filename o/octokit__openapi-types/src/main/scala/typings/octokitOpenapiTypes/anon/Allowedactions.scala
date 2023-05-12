@@ -10,14 +10,14 @@ trait Allowedactions extends StObject {
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['allowed-actions'] */ js.Any
   ] = js.undefined
   
-  var enabled_organizations: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['enabled-organizations'] */ js.Any
+  var enabled_repositories: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['enabled-repositories'] */ js.Any
 }
 object Allowedactions {
   
   inline def apply(
-    enabled_organizations: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['enabled-organizations'] */ js.Any
+    enabled_repositories: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['enabled-repositories'] */ js.Any
   ): Allowedactions = {
-    val __obj = js.Dynamic.literal(enabled_organizations = enabled_organizations.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(enabled_repositories = enabled_repositories.asInstanceOf[js.Any])
     __obj.asInstanceOf[Allowedactions]
   }
   
@@ -30,8 +30,8 @@ object Allowedactions {
     
     inline def setAllowed_actionsUndefined: Self = StObject.set(x, "allowed_actions", js.undefined)
     
-    inline def setEnabled_organizations(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['enabled-organizations'] */ js.Any
-    ): Self = StObject.set(x, "enabled_organizations", value.asInstanceOf[js.Any])
+    inline def setEnabled_repositories(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['enabled-repositories'] */ js.Any
+    ): Self = StObject.set(x, "enabled_repositories", value.asInstanceOf[js.Any])
   }
 }

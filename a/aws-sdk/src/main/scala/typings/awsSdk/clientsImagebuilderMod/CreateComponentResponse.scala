@@ -12,7 +12,7 @@ trait CreateComponentResponse extends StObject {
   var clientToken: js.UndefOr[ClientToken] = js.undefined
   
   /**
-    * The Amazon Resource Name (ARN) of the component that was created by this request.
+    * The Amazon Resource Name (ARN) of the component that this request created.
     */
   var componentBuildVersionArn: js.UndefOr[ComponentBuildVersionArn] = js.undefined
   

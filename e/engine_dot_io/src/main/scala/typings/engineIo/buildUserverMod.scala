@@ -20,6 +20,8 @@ object buildUserverMod {
   open class uServer () extends BaseServer {
     def this(opts: ServerOptions) = this()
     
+    def _applyMiddlewares(req: Any, res: Any, callback: js.Function1[/* err */ js.UndefOr[Any], Unit]): Unit = js.native
+    
     /* private */ var abortRequest: Any = js.native
     
     /**

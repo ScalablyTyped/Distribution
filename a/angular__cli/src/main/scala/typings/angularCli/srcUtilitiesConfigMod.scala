@@ -3,7 +3,6 @@ package typings.angularCli
 import typings.angularCli.angularCliStrings.global
 import typings.angularCli.angularCliStrings.local
 import typings.angularCli.libConfigWorkspaceSchemaMod.PackageManager
-import typings.angularCli.srcUtilitiesJsonFileMod.JSONFile
 import typings.angularDevkitCore.mod.workspaces.ProjectDefinitionCollection
 import typings.angularDevkitCore.srcJsonUtilsMod.JsonObject
 import typings.angularDevkitCore.srcJsonUtilsMod.JsonValue
@@ -59,8 +58,28 @@ object srcUtilitiesConfigMod {
   
   inline def getWorkspace(level: local | global): js.Promise[js.UndefOr[AngularWorkspace]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getWorkspace")(level.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[AngularWorkspace]]]
   
-  inline def getWorkspaceRaw(): js.Promise[js.Tuple2[JSONFile | Null, String | Null]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getWorkspaceRaw")().asInstanceOf[js.Promise[js.Tuple2[JSONFile | Null, String | Null]]]
-  inline def getWorkspaceRaw(level: local | global): js.Promise[js.Tuple2[JSONFile | Null, String | Null]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getWorkspaceRaw")(level.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Tuple2[JSONFile | Null, String | Null]]]
+  inline def getWorkspaceRaw(): js.Promise[
+    js.Tuple2[
+      (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSONFile */ Any) | Null, 
+      String | Null
+    ]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("getWorkspaceRaw")().asInstanceOf[js.Promise[
+    js.Tuple2[
+      (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSONFile */ Any) | Null, 
+      String | Null
+    ]
+  ]]
+  inline def getWorkspaceRaw(level: local | global): js.Promise[
+    js.Tuple2[
+      (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSONFile */ Any) | Null, 
+      String | Null
+    ]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("getWorkspaceRaw")(level.asInstanceOf[js.Any]).asInstanceOf[js.Promise[
+    js.Tuple2[
+      (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSONFile */ Any) | Null, 
+      String | Null
+    ]
+  ]]
   
   inline def getWorkspace_global(level: global): js.Promise[AngularWorkspace] = ^.asInstanceOf[js.Dynamic].applyDynamic("getWorkspace")(level.asInstanceOf[js.Any]).asInstanceOf[js.Promise[AngularWorkspace]]
   

@@ -271,7 +271,7 @@ object CssNodePlain {
     __obj.asInstanceOf[typings.cssTree.mod.UnicodeRange]
   }
   
-  inline def Url_(value: StringNode | Raw): typings.cssTree.mod.Url_ = {
+  inline def Url_(value: String): typings.cssTree.mod.Url_ = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("Url")
     __obj.asInstanceOf[typings.cssTree.mod.Url_]

@@ -233,20 +233,50 @@ object interfacesScrollbarMod {
   
   trait ScrollbarOptions extends StObject {
     
+    /**
+      * Keep scrollbar tracks visible.
+      * @default false
+      */
     var alwaysShowTracks: Boolean
     
+    /**
+      * Set to `true` to allow outer scrollbars continue scrolling when current scrollbar reaches edge.
+      * @default true
+      */
     var continuousScrolling: Boolean
     
+    /**
+      * Momentum reduction damping factor, a float value between `(0, 1)`. The lower the value is, the more smooth the scrolling will be (also the more paint frames).
+      * @default 0.1
+      */
     var damping: Double
     
+    /**
+      *  Delegate wheel events and touch events to the given element. By default, the container element is used. This option will be useful for dealing with fixed elements.
+      * @default null
+      */
     var delegateTo: EventTarget | Null
     
+    /**
+      * Options for plugins, see {@link https://github.com/idiotWu/smooth-scrollbar/blob/develop/docs/plugin.md Plugin System}.
+      */
     var plugins: Any
     
+    /**
+      * Render every frame in integer pixel values, set to `true` to **improve** scrolling performance.
+      * @default true
+      */
     var renderByPixels: Boolean
     
+    /**
+      *  Minimal size for scrollbar thumbs.
+      * @default 20
+      */
     var thumbMinSize: Double
     
+    /**
+      * @deprecated `wheelEventTarget` is deprecated and will be removed in the future, use `delegateTo` instead.
+      */
     var wheelEventTarget: EventTarget | Null
   }
   object ScrollbarOptions {

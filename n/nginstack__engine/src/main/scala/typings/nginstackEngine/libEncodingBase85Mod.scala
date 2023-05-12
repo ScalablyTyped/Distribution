@@ -19,31 +19,62 @@ object libEncodingBase85Mod {
   
   @JSImport("@nginstack/engine/lib/encoding/Base85", "ARRAY_BUFFER_DECODING")
   @js.native
-  val ARRAY_BUFFER_DECODING: Double = js.native
+  def ARRAY_BUFFER_DECODING: Double = js.native
+  inline def ARRAY_BUFFER_DECODING_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ARRAY_BUFFER_DECODING")(x.asInstanceOf[js.Any])
   
   @JSImport("@nginstack/engine/lib/encoding/Base85", "STRING_DECODING")
   @js.native
-  val STRING_DECODING: Double = js.native
+  def STRING_DECODING: Double = js.native
+  inline def STRING_DECODING_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("STRING_DECODING")(x.asInstanceOf[js.Any])
   
   @JSImport("@nginstack/engine/lib/encoding/Base85", "Z85")
   @js.native
-  val Z85: String = js.native
+  def Z85: String = js.native
+  inline def Z85_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Z85")(x.asInstanceOf[js.Any])
   
   inline def decode(str: String): String | js.typedarray.ArrayBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(str.asInstanceOf[js.Any]).asInstanceOf[String | js.typedarray.ArrayBuffer]
   inline def decode(str: String, encoding: String): String | js.typedarray.ArrayBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(str.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[String | js.typedarray.ArrayBuffer]
   inline def decode(str: String, encoding: String, decodeFormat: Double): String | js.typedarray.ArrayBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(str.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], decodeFormat.asInstanceOf[js.Any])).asInstanceOf[String | js.typedarray.ArrayBuffer]
   inline def decode(str: String, encoding: Unit, decodeFormat: Double): String | js.typedarray.ArrayBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(str.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], decodeFormat.asInstanceOf[js.Any])).asInstanceOf[String | js.typedarray.ArrayBuffer]
   
-  inline def decodeStream(input: Any, output: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeStream")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def decodeStream(input: Any, output: Any, encoding: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeStream")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def decodeStream(input: MemoryStream, output: MemoryStream): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeStream")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def decodeStream(input: MemoryStream, output: MemoryStream, encoding: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeStream")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def decodeStream(input: MemoryStream, output: typings.std.File): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeStream")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def decodeStream(input: MemoryStream, output: typings.std.File, encoding: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeStream")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def decodeStream(input: typings.std.File, output: MemoryStream): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeStream")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def decodeStream(input: typings.std.File, output: MemoryStream, encoding: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeStream")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def decodeStream(input: typings.std.File, output: typings.std.File): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeStream")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def decodeStream(input: typings.std.File, output: typings.std.File, encoding: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeStream")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def encode(bin: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(bin.asInstanceOf[js.Any]).asInstanceOf[String]
-  inline def encode(bin: Any, encoding: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(bin.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def encode(bin: Any, encoding: String, noPadding: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(bin.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], noPadding.asInstanceOf[js.Any])).asInstanceOf[String]
-  inline def encode(bin: Any, encoding: Unit, noPadding: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(bin.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], noPadding.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def encode(bin: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(bin.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def encode(bin: String, encoding: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(bin.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def encode(bin: String, encoding: String, noPadding: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(bin.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], noPadding.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def encode(bin: String, encoding: Unit, noPadding: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(bin.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], noPadding.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def encode(bin: js.typedarray.ArrayBuffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(bin.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def encode(bin: js.typedarray.ArrayBuffer, encoding: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(bin.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def encode(bin: js.typedarray.ArrayBuffer, encoding: String, noPadding: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(bin.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], noPadding.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def encode(bin: js.typedarray.ArrayBuffer, encoding: Unit, noPadding: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(bin.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], noPadding.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def encode(bin: MemoryStream): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(bin.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def encode(bin: MemoryStream, encoding: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(bin.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def encode(bin: MemoryStream, encoding: String, noPadding: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(bin.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], noPadding.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def encode(bin: MemoryStream, encoding: Unit, noPadding: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(bin.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], noPadding.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def encode(bin: typings.std.File): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(bin.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def encode(bin: typings.std.File, encoding: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(bin.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def encode(bin: typings.std.File, encoding: String, noPadding: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(bin.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], noPadding.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def encode(bin: typings.std.File, encoding: Unit, noPadding: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(bin.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], noPadding.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  inline def encodeStream(input: Any, output: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeStream")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  inline def encodeStream(input: Any, output: Any, encoding: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeStream")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def encodeStream(input: MemoryStream, output: MemoryStream): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeStream")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def encodeStream(input: MemoryStream, output: MemoryStream, encoding: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeStream")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def encodeStream(input: MemoryStream, output: typings.std.File): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeStream")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def encodeStream(input: MemoryStream, output: typings.std.File, encoding: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeStream")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def encodeStream(input: typings.std.File, output: MemoryStream): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeStream")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def encodeStream(input: typings.std.File, output: MemoryStream, encoding: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeStream")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def encodeStream(input: typings.std.File, output: typings.std.File): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeStream")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def encodeStream(input: typings.std.File, output: typings.std.File, encoding: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeStream")(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait Base85 extends StObject
+  
+  type File = typings.nginstackEngine.libIoFileMod.^
+  
+  type MemoryStream = typings.nginstackEngine.libIoMemoryStreamMod.^
 }

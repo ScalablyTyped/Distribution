@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait DragImpact extends StObject {
   
-  var at: js.UndefOr[ImpactLocation] = js.undefined
+  var at: js.UndefOr[ImpactLocation | Null] = js.undefined
   
   var displaced: DisplacementGroups
   
@@ -23,6 +23,8 @@ object DragImpact {
   implicit open class MutableBuilder[Self <: DragImpact] (val x: Self) extends AnyVal {
     
     inline def setAt(value: ImpactLocation): Self = StObject.set(x, "at", value.asInstanceOf[js.Any])
+    
+    inline def setAtNull: Self = StObject.set(x, "at", null)
     
     inline def setAtUndefined: Self = StObject.set(x, "at", js.undefined)
     

@@ -22,6 +22,11 @@ trait BotSummary extends StObject {
   var botStatus: js.UndefOr[BotStatus] = js.undefined
   
   /**
+    * The type of the bot.
+    */
+  var botType: js.UndefOr[BotType] = js.undefined
+  
+  /**
     * The description of the bot.
     */
   var description: js.UndefOr[Description] = js.undefined
@@ -57,6 +62,10 @@ object BotSummary {
     inline def setBotStatus(value: BotStatus): Self = StObject.set(x, "botStatus", value.asInstanceOf[js.Any])
     
     inline def setBotStatusUndefined: Self = StObject.set(x, "botStatus", js.undefined)
+    
+    inline def setBotType(value: BotType): Self = StObject.set(x, "botType", value.asInstanceOf[js.Any])
+    
+    inline def setBotTypeUndefined: Self = StObject.set(x, "botType", js.undefined)
     
     inline def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

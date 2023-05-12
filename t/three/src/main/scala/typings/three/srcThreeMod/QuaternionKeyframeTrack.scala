@@ -1,5 +1,7 @@
 package typings.three.srcThreeMod
 
+import typings.std.ArrayLike
+import typings.three.srcConstantsMod.InterpolationModes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -8,11 +10,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class QuaternionKeyframeTrack protected ()
   extends typings.three.srcAnimationTracksQuaternionKeyframeTrackMod.QuaternionKeyframeTrack {
-  def this(name: String, times: js.Array[Any], values: js.Array[Any]) = this()
+  def this(name: String, times: ArrayLike[Double], values: ArrayLike[Double]) = this()
   def this(
     name: String,
-    times: js.Array[Any],
-    values: js.Array[Any],
-    interpolation: typings.three.srcConstantsMod.InterpolationModes
+    times: ArrayLike[Double],
+    values: ArrayLike[Double],
+    interpolation: InterpolationModes
   ) = this()
 }

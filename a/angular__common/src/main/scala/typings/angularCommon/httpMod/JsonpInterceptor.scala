@@ -1,5 +1,6 @@
 package typings.angularCommon.httpMod
 
+import typings.angularCore.mod.EnvironmentInjector
 import typings.angularCore.mod.ɵɵFactoryDeclaration
 import typings.angularCore.mod.ɵɵInjectableDeclaration
 import typings.rxjs.mod.Observable_
@@ -10,18 +11,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("@angular/common/http", "JsonpInterceptor")
 @js.native
 open class JsonpInterceptor protected () extends StObject {
-  def this(jsonp: JsonpClientBackend) = this()
+  def this(injector: EnvironmentInjector) = this()
+  
+  /* private */ var injector: Any = js.native
   
   /**
     * Identifies and handles a given JSONP request.
-    * @param req The outgoing request object to handle.
+    * @param initialRequest The outgoing request object to handle.
     * @param next The next interceptor in the chain, or the backend
     * if no interceptors remain in the chain.
     * @returns An observable of the event stream.
     */
-  def intercept(req: HttpRequest[Any], next: HttpHandler): Observable_[HttpEvent[Any]] = js.native
-  
-  /* private */ var jsonp: Any = js.native
+  def intercept(initialRequest: HttpRequest[Any], next: HttpHandler): Observable_[HttpEvent[Any]] = js.native
 }
 /* static members */
 object JsonpInterceptor {

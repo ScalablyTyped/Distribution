@@ -29,9 +29,14 @@ trait CreateEndpointConfigInput extends StObject {
   var KmsKeyId: js.UndefOr[typings.awsSdk.clientsSagemakerMod.KmsKeyId] = js.undefined
   
   /**
-    * An list of ProductionVariant objects, one for each model that you want to host at this endpoint.
+    * An array of ProductionVariant objects, one for each model that you want to host at this endpoint.
     */
   var ProductionVariants: ProductionVariantList
+  
+  /**
+    * An array of ProductionVariant objects, one for each model that you want to host at this endpoint in shadow mode with production traffic replicated from the model specified on ProductionVariants. If you use this field, you can only specify one variant for ProductionVariants and one variant for ShadowProductionVariants.
+    */
+  var ShadowProductionVariants: js.UndefOr[ProductionVariantList] = js.undefined
   
   /**
     * An array of key-value pairs. You can use tags to categorize your Amazon Web Services resources in different ways, for example, by purpose, owner, or environment. For more information, see Tagging Amazon Web Services Resources.
@@ -69,6 +74,12 @@ object CreateEndpointConfigInput {
     inline def setProductionVariants(value: ProductionVariantList): Self = StObject.set(x, "ProductionVariants", value.asInstanceOf[js.Any])
     
     inline def setProductionVariantsVarargs(value: ProductionVariant*): Self = StObject.set(x, "ProductionVariants", js.Array(value*))
+    
+    inline def setShadowProductionVariants(value: ProductionVariantList): Self = StObject.set(x, "ShadowProductionVariants", value.asInstanceOf[js.Any])
+    
+    inline def setShadowProductionVariantsUndefined: Self = StObject.set(x, "ShadowProductionVariants", js.undefined)
+    
+    inline def setShadowProductionVariantsVarargs(value: ProductionVariant*): Self = StObject.set(x, "ShadowProductionVariants", js.Array(value*))
     
     inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     

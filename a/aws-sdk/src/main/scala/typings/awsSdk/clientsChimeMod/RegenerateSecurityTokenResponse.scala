@@ -6,6 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait RegenerateSecurityTokenResponse extends StObject {
   
+  /**
+    * A resource that allows Enterprise account administrators to configure an interface that receives events from Amazon Chime.
+    */
   var Bot: js.UndefOr[typings.awsSdk.clientsChimeMod.Bot] = js.undefined
 }
 object RegenerateSecurityTokenResponse {

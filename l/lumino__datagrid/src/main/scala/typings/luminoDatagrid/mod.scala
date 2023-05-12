@@ -2,14 +2,11 @@ package typings.luminoDatagrid
 
 import typings.luminoDatagrid.luminoDatagridStrings.column
 import typings.luminoDatagrid.luminoDatagridStrings.row
-import typings.luminoDatagrid.typesBasicmousehandlerMod.PressData.SelectData
-import typings.luminoDatagrid.typesBasicmousehandlerMod.ResizeHandle
 import typings.luminoDatagrid.typesCellrendererMod.CellRenderer.CellConfig
 import typings.luminoDatagrid.typesCellrendererMod.CellRenderer.ConfigOption
 import typings.luminoDatagrid.typesDatagridMod.DataGrid.CopyConfig
 import typings.luminoDatagrid.typesDatagridMod.DataGrid.CopyFormatArgs
 import typings.luminoDatagrid.typesDatagridMod.DataGrid.DefaultSizes_
-import typings.luminoDatagrid.typesDatagridMod.DataGrid.HitTestResult
 import typings.luminoDatagrid.typesDatagridMod.DataGrid.MinimumSizes_
 import typings.luminoDatagrid.typesDatagridMod.DataGrid.Style
 import typings.luminoDatagrid.typesDatamodelMod.DataModel.CellRegion
@@ -18,6 +15,7 @@ import typings.luminoDatagrid.typesRenderermapMod.RendererMap.Values
 import typings.luminoDatagrid.typesSelectionmodelMod.SelectionModel.IOptions
 import typings.luminoDatagrid.typesTextrendererMod.TextRenderer.FormatFunc
 import typings.std.CanvasRenderingContext2D
+import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -65,6 +63,37 @@ object mod {
     */
   open class CellEditor ()
     extends typings.luminoDatagrid.typesCelleditorMod.CellEditor
+  object CellEditor {
+    
+    /**
+      * A widget which implements a notification popup.
+      */
+    @JSImport("@lumino/datagrid", "CellEditor.Notification")
+    @js.native
+    open class Notification protected ()
+      extends typings.luminoDatagrid.typesCelleditorMod.CellEditor.Notification {
+      /**
+        * Construct a new notification.
+        *
+        * @param options - The options for initializing the notification.
+        */
+      def this(options: typings.luminoDatagrid.typesCelleditorMod.CellEditor.Notification.IOptions) = this()
+    }
+    /**
+      * The namespace for the `Notification` class statics.
+      */
+    object Notification {
+      
+      @JSImport("@lumino/datagrid", "CellEditor.Notification")
+      @js.native
+      val ^ : js.Any = js.native
+      
+      /**
+        * Create the DOM node for notification.
+        */
+      inline def createNode(): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("createNode")().asInstanceOf[HTMLElement]
+    }
+  }
   
   @JSImport("@lumino/datagrid", "CellEditorController")
   @js.native
@@ -99,31 +128,6 @@ object mod {
       group2: typings.luminoDatagrid.typesCellgroupMod.CellGroup,
       axis: row | column
     ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("areCellGroupsIntersectingAtAxis")(group1.asInstanceOf[js.Any], group2.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    
-    inline def areCellsMerged(
-      dataModel: typings.luminoDatagrid.typesDatamodelMod.DataModel,
-      rgn: CellRegion,
-      cell1: js.Array[Double],
-      cell2: js.Array[Double]
-    ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("areCellsMerged")(dataModel.asInstanceOf[js.Any], rgn.asInstanceOf[js.Any], cell1.asInstanceOf[js.Any], cell2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    
-    /**
-      * Calculates the cell boundary offsets needed for
-      * a row or column at the given index by taking
-      * into account merged cell groups in the region.
-      * @param dataModel
-      * @param regions
-      * @param axis
-      * @param sectionList
-      * @param index
-      */
-    inline def calculateMergeOffsets(
-      dataModel: typings.luminoDatagrid.typesDatamodelMod.DataModel,
-      regions: js.Array[CellRegion],
-      axis: row | column,
-      sectionList: typings.luminoDatagrid.typesSectionlistMod.SectionList,
-      index: Double
-    ): js.Tuple3[Double, Double, typings.luminoDatagrid.typesCellgroupMod.CellGroup] = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateMergeOffsets")(dataModel.asInstanceOf[js.Any], regions.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], sectionList.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[Double, Double, typings.luminoDatagrid.typesCellgroupMod.CellGroup]]
     
     /**
       * Retrieves a list of cell groups intersecting at
@@ -181,25 +185,6 @@ object mod {
       row: Double,
       column: Double
     ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getGroupIndex")(dataModel.asInstanceOf[js.Any], rgn.asInstanceOf[js.Any], row.asInstanceOf[js.Any], column.asInstanceOf[js.Any])).asInstanceOf[Double]
-    
-    /**
-      * Checks if cell group 1 is above cell group 2.
-      * @param group1 cell group 1.
-      * @param group2 cell group 2.
-      * @returns boolean.
-      */
-    inline def isCellGroupAbove(
-      group1: typings.luminoDatagrid.typesCellgroupMod.CellGroup,
-      group2: typings.luminoDatagrid.typesCellgroupMod.CellGroup
-    ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isCellGroupAbove")(group1.asInstanceOf[js.Any], group2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    
-    /**
-      * Checks if cell group 1 is below cell group 2.
-      */
-    inline def isCellGroupBelow(
-      group1: typings.luminoDatagrid.typesCellgroupMod.CellGroup,
-      group2: typings.luminoDatagrid.typesCellgroupMod.CellGroup
-    ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isCellGroupBelow")(group1.asInstanceOf[js.Any], group2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /**
       * Merges a cell group with other cells groups in the
@@ -436,84 +421,6 @@ object mod {
   @js.native
   open class PassInputValidator ()
     extends typings.luminoDatagrid.typesCelleditorMod.PassInputValidator
-  
-  /**
-    * A namespace for module-private functionality.
-    */
-  object Private {
-    
-    @JSImport("@lumino/datagrid", "Private")
-    @js.native
-    val ^ : js.Any = js.native
-    
-    /**
-      * A timer callback for the autoselect loop.
-      *
-      * @param grid - The datagrid of interest.
-      *
-      * @param data - The select data of interest.
-      */
-    inline def autoselect(grid: typings.luminoDatagrid.typesDatagridMod.DataGrid, data: SelectData): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("autoselect")(grid.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    
-    /**
-      * Compute the scroll timeout for the given delta distance.
-      *
-      * @param delta - The delta pixels from the origin.
-      *
-      * @returns The scaled timeout in milliseconds.
-      */
-    inline def computeTimeout(delta: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("computeTimeout")(delta.asInstanceOf[js.Any]).asInstanceOf[Double]
-    
-    /**
-      * Creates a CellConfig object from a hit region.
-      */
-    inline def createCellConfigObject(grid: typings.luminoDatagrid.typesDatagridMod.DataGrid, hit: HitTestResult): js.UndefOr[CellConfig] = (^.asInstanceOf[js.Dynamic].applyDynamic("createCellConfigObject")(grid.asInstanceOf[js.Any], hit.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[CellConfig]]
-    
-    /**
-      * A mapping of resize handle to cursor.
-      */
-    object cursorMap {
-      
-      @JSImport("@lumino/datagrid", "Private.cursorMap")
-      @js.native
-      val ^ : js.Any = js.native
-      
-      @JSImport("@lumino/datagrid", "Private.cursorMap.bottom")
-      @js.native
-      def bottom: String = js.native
-      inline def bottom_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bottom")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@lumino/datagrid", "Private.cursorMap.hyperlink")
-      @js.native
-      def hyperlink: String = js.native
-      inline def hyperlink_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hyperlink")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@lumino/datagrid", "Private.cursorMap.left")
-      @js.native
-      def left: String = js.native
-      inline def left_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("left")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@lumino/datagrid", "Private.cursorMap.none")
-      @js.native
-      def none: String = js.native
-      inline def none_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("none")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@lumino/datagrid", "Private.cursorMap.right")
-      @js.native
-      def right: String = js.native
-      inline def right_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("right")(x.asInstanceOf[js.Any])
-      
-      @JSImport("@lumino/datagrid", "Private.cursorMap.top")
-      @js.native
-      def top: String = js.native
-      inline def top_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("top")(x.asInstanceOf[js.Any])
-    }
-    
-    /**
-      * Get the resize handle for a grid hit test.
-      */
-    inline def resizeHandleForHitTest(hit: HitTestResult): ResizeHandle = ^.asInstanceOf[js.Dynamic].applyDynamic("resizeHandleForHitTest")(hit.asInstanceOf[js.Any]).asInstanceOf[ResizeHandle]
-  }
   
   @JSImport("@lumino/datagrid", "RendererMap")
   @js.native

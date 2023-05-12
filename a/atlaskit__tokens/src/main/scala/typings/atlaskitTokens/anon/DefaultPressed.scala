@@ -1,6 +1,6 @@
 package typings.atlaskitTokens.anon
 
-import typings.atlaskitTokens.distTypesPalettesLegacyPaletteMod.BaseToken
+import typings.atlaskitTokens.distTypesPalettesPaletteMod.BaseToken
 import typings.atlaskitTokens.distTypesTypesMod.PaintToken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js

@@ -40,14 +40,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * viewport.
   * @property {number} verticalScrollbarVisibility Controls whether the vertical scrollbar should be
   * visible all the time, or only visible when the content exceeds the size of the viewport.
-  * @property {Entity} viewportEntity The entity to be used as the masked viewport area, within
-  * which the content will scroll. This entity must have an ElementGroup component.
-  * @property {Entity} contentEntity The entity which contains the scrolling content itself. This
-  * entity must have an Element component.
-  * @property {Entity} horizontalScrollbarEntity The entity to be used as the vertical scrollbar.
-  * This entity must have a Scrollbar component.
-  * @property {Entity} verticalScrollbarEntity The entity to be used as the vertical scrollbar. This
-  * entity must have a Scrollbar component.
+  * @property {import('../../entity.js').Entity} viewportEntity The entity to be used as the masked
+  * viewport area, within which the content will scroll. This entity must have an ElementGroup
+  * component.
+  * @property {import('../../entity.js').Entity} contentEntity The entity which contains the
+  * scrolling content itself. This entity must have an Element component.
+  * @property {import('../../entity.js').Entity} horizontalScrollbarEntity The entity to be used as
+  * the vertical scrollbar. This entity must have a Scrollbar component.
+  * @property {import('../../entity.js').Entity} verticalScrollbarEntity The entity to be used as
+  * the vertical scrollbar. This entity must have a Scrollbar component.
   * @augments Component
   */
 @JSImport("playcanvas", "ScrollViewComponent")
@@ -56,8 +57,10 @@ open class ScrollViewComponent protected () extends Component {
   /**
     * Create a new ScrollViewComponent.
     *
-    * @param {ScrollViewComponentSystem} system - The ComponentSystem that created this Component.
-    * @param {Entity} entity - The Entity that this Component is attached to.
+    * @param {import('./system.js').ScrollViewComponentSystem} system - The ComponentSystem that
+    * created this Component.
+    * @param {import('../../entity.js').Entity} entity - The Entity that this Component is
+    * attached to.
     */
   def this(system: ScrollViewComponentSystem, entity: Entity) = this()
   
@@ -93,7 +96,7 @@ open class ScrollViewComponent protected () extends Component {
   
   def _getMaxOffset(orientation: Any, contentSize: Any): Double = js.native
   
-  def _getMaxScrollValue(orientation: Any): `1` | `0` = js.native
+  def _getMaxScrollValue(orientation: Any): `0` | `1` = js.native
   
   def _getScrollbarHandleSize(axis: Any, orientation: Any): Double = js.native
   
@@ -185,7 +188,8 @@ open class ScrollViewComponent protected () extends Component {
     */
   /**
     * @param {string} onOrOff - 'on' or 'off'.
-    * @param {ScrollViewComponentSystem} system - The ComponentSystem that created this Component.
+    * @param {import('./system.js').ScrollViewComponentSystem} system - The ComponentSystem that
+    * created this Component.
     * @private
     */
   /* private */ var _toggleLifecycleListeners: Any = js.native

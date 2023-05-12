@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("vscode.FileDecoration")
 @js.native
 /**
-  * Creates a new decoration.
-  *
-  * @param badge A letter that represents the decoration.
-  * @param tooltip The tooltip of the decoration.
-  * @param color The color of the decoration.
-  */
+		 * Creates a new decoration.
+		 *
+		 * @param badge A letter that represents the decoration.
+		 * @param tooltip The tooltip of the decoration.
+		 * @param color The color of the decoration.
+		 */
 open class FileDecoration ()
   extends typings.vscode.mod.FileDecoration {
   def this(badge: String) = this()

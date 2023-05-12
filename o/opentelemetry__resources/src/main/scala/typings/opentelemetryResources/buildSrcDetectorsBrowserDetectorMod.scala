@@ -17,15 +17,5 @@ object buildSrcDetectorsBrowserDetectorMod {
   @js.native
   trait BrowserDetector_
     extends StObject
-       with Detector {
-    
-    /**
-      * Validates process resource attribute map from process variables
-      *
-      * @param browserResource The un-sanitized resource attributes from process as key/value pairs.
-      * @param config: Config
-      * @returns The sanitized resource attributes.
-      */
-    /* private */ var _getResourceAttributes: Any = js.native
-  }
+       with Detector
 }

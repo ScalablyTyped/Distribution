@@ -52,7 +52,8 @@ object typesHelpersMod {
     js.Object, 
     js.Object, 
     `false`, 
-    ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String], 
+    ComponentOptionsBase[Any, Any, Any, Any, Any, Any, Any, Any, Any, js.Object, js.Object, String, js.Object], 
+    js.Object, 
     js.Object
   ]) & (Record[String, Any])
   

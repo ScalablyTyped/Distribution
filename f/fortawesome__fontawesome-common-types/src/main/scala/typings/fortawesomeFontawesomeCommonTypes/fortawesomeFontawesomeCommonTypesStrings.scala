@@ -1002,6 +1002,12 @@ object fortawesomeFontawesomeCommonTypesStrings {
   inline def `arrow-pointer`: `arrow-pointer` = "arrow-pointer".asInstanceOf[`arrow-pointer`]
   
   @js.native
+  sealed trait `arrow-progress`
+    extends StObject
+       with IconName
+  inline def `arrow-progress`: `arrow-progress` = "arrow-progress".asInstanceOf[`arrow-progress`]
+  
+  @js.native
   sealed trait `arrow-right`
     extends StObject
        with IconName
@@ -1818,6 +1824,12 @@ object fortawesomeFontawesomeCommonTypesStrings {
   inline def badminton: badminton = "badminton".asInstanceOf[badminton]
   
   @js.native
+  sealed trait `bag-seedling`
+    extends StObject
+       with IconName
+  inline def `bag-seedling`: `bag-seedling` = "bag-seedling".asInstanceOf[`bag-seedling`]
+  
+  @js.native
   sealed trait `bag-shopping`
     extends StObject
        with IconName
@@ -2388,10 +2400,34 @@ object fortawesomeFontawesomeCommonTypesStrings {
   inline def bilibili: bilibili = "bilibili".asInstanceOf[bilibili]
   
   @js.native
+  sealed trait billboard
+    extends StObject
+       with IconName
+  inline def billboard: billboard = "billboard".asInstanceOf[billboard]
+  
+  @js.native
   sealed trait bimobject
     extends StObject
        with IconName
   inline def bimobject: bimobject = "bimobject".asInstanceOf[bimobject]
+  
+  @js.native
+  sealed trait `bin-bottles`
+    extends StObject
+       with IconName
+  inline def `bin-bottles`: `bin-bottles` = "bin-bottles".asInstanceOf[`bin-bottles`]
+  
+  @js.native
+  sealed trait `bin-bottles-recycle`
+    extends StObject
+       with IconName
+  inline def `bin-bottles-recycle`: `bin-bottles-recycle` = "bin-bottles-recycle".asInstanceOf[`bin-bottles-recycle`]
+  
+  @js.native
+  sealed trait `bin-recycle`
+    extends StObject
+       with IconName
+  inline def `bin-recycle`: `bin-recycle` = "bin-recycle".asInstanceOf[`bin-recycle`]
   
   @js.native
   sealed trait binary
@@ -3474,6 +3510,12 @@ object fortawesomeFontawesomeCommonTypesStrings {
   inline def `broom-ball`: `broom-ball` = "broom-ball".asInstanceOf[`broom-ball`]
   
   @js.native
+  sealed trait `broom-wide`
+    extends StObject
+       with IconName
+  inline def `broom-wide`: `broom-wide` = "broom-wide".asInstanceOf[`broom-wide`]
+  
+  @js.native
   sealed trait browser
     extends StObject
        with IconName
@@ -4006,6 +4048,12 @@ object fortawesomeFontawesomeCommonTypesStrings {
     extends StObject
        with IconName
   inline def `calendar-upload`: `calendar-upload` = "calendar-upload".asInstanceOf[`calendar-upload`]
+  
+  @js.native
+  sealed trait `calendar-users`
+    extends StObject
+       with IconName
+  inline def `calendar-users`: `calendar-users` = "calendar-users".asInstanceOf[`calendar-users`]
   
   @js.native
   sealed trait `calendar-week`
@@ -4836,10 +4884,28 @@ object fortawesomeFontawesomeCommonTypesStrings {
   inline def `chart-line-up`: `chart-line-up` = "chart-line-up".asInstanceOf[`chart-line-up`]
   
   @js.native
+  sealed trait `chart-line-up-down`
+    extends StObject
+       with IconName
+  inline def `chart-line-up-down`: `chart-line-up-down` = "chart-line-up-down".asInstanceOf[`chart-line-up-down`]
+  
+  @js.native
   sealed trait `chart-mixed`
     extends StObject
        with IconName
   inline def `chart-mixed`: `chart-mixed` = "chart-mixed".asInstanceOf[`chart-mixed`]
+  
+  @js.native
+  sealed trait `chart-mixed-up-circle-currency`
+    extends StObject
+       with IconName
+  inline def `chart-mixed-up-circle-currency`: `chart-mixed-up-circle-currency` = "chart-mixed-up-circle-currency".asInstanceOf[`chart-mixed-up-circle-currency`]
+  
+  @js.native
+  sealed trait `chart-mixed-up-circle-dollar`
+    extends StObject
+       with IconName
+  inline def `chart-mixed-up-circle-dollar`: `chart-mixed-up-circle-dollar` = "chart-mixed-up-circle-dollar".asInstanceOf[`chart-mixed-up-circle-dollar`]
   
   @js.native
   sealed trait `chart-network`
@@ -4864,6 +4930,18 @@ object fortawesomeFontawesomeCommonTypesStrings {
     extends StObject
        with IconName
   inline def `chart-pie-simple`: `chart-pie-simple` = "chart-pie-simple".asInstanceOf[`chart-pie-simple`]
+  
+  @js.native
+  sealed trait `chart-pie-simple-circle-currency`
+    extends StObject
+       with IconName
+  inline def `chart-pie-simple-circle-currency`: `chart-pie-simple-circle-currency` = "chart-pie-simple-circle-currency".asInstanceOf[`chart-pie-simple-circle-currency`]
+  
+  @js.native
+  sealed trait `chart-pie-simple-circle-dollar`
+    extends StObject
+       with IconName
+  inline def `chart-pie-simple-circle-dollar`: `chart-pie-simple-circle-dollar` = "chart-pie-simple-circle-dollar".asInstanceOf[`chart-pie-simple-circle-dollar`]
   
   @js.native
   sealed trait `chart-pyramid`
@@ -5244,6 +5322,12 @@ object fortawesomeFontawesomeCommonTypesStrings {
   inline def `chevrons-up`: `chevrons-up` = "chevrons-up".asInstanceOf[`chevrons-up`]
   
   @js.native
+  sealed trait `chf-sign`
+    extends StObject
+       with IconName
+  inline def `chf-sign`: `chf-sign` = "chf-sign".asInstanceOf[`chf-sign`]
+  
+  @js.native
   sealed trait child
     extends StObject
        with IconName
@@ -5616,6 +5700,12 @@ object fortawesomeFontawesomeCommonTypesStrings {
   inline def `circle-envelope`: `circle-envelope` = "circle-envelope".asInstanceOf[`circle-envelope`]
   
   @js.native
+  sealed trait `circle-euro`
+    extends StObject
+       with IconName
+  inline def `circle-euro`: `circle-euro` = "circle-euro".asInstanceOf[`circle-euro`]
+  
+  @js.native
   sealed trait `circle-exclamation`
     extends StObject
        with IconName
@@ -5814,6 +5904,12 @@ object fortawesomeFontawesomeCommonTypesStrings {
   inline def `circle-quarter`: `circle-quarter` = "circle-quarter".asInstanceOf[`circle-quarter`]
   
   @js.native
+  sealed trait `circle-quarter-stroke`
+    extends StObject
+       with IconName
+  inline def `circle-quarter-stroke`: `circle-quarter-stroke` = "circle-quarter-stroke".asInstanceOf[`circle-quarter-stroke`]
+  
+  @js.native
   sealed trait `circle-quarters`
     extends StObject
        with IconName
@@ -5880,6 +5976,12 @@ object fortawesomeFontawesomeCommonTypesStrings {
   inline def `circle-star`: `circle-star` = "circle-star".asInstanceOf[`circle-star`]
   
   @js.native
+  sealed trait `circle-sterling`
+    extends StObject
+       with IconName
+  inline def `circle-sterling`: `circle-sterling` = "circle-sterling".asInstanceOf[`circle-sterling`]
+  
+  @js.native
   sealed trait `circle-stop`
     extends StObject
        with IconName
@@ -5896,6 +5998,12 @@ object fortawesomeFontawesomeCommonTypesStrings {
     extends StObject
        with IconName
   inline def `circle-three-quarters`: `circle-three-quarters` = "circle-three-quarters".asInstanceOf[`circle-three-quarters`]
+  
+  @js.native
+  sealed trait `circle-three-quarters-stroke`
+    extends StObject
+       with IconName
+  inline def `circle-three-quarters-stroke`: `circle-three-quarters-stroke` = "circle-three-quarters-stroke".asInstanceOf[`circle-three-quarters-stroke`]
   
   @js.native
   sealed trait `circle-trash`
@@ -5976,10 +6084,22 @@ object fortawesomeFontawesomeCommonTypesStrings {
   inline def `circle-y`: `circle-y` = "circle-y".asInstanceOf[`circle-y`]
   
   @js.native
+  sealed trait `circle-yen`
+    extends StObject
+       with IconName
+  inline def `circle-yen`: `circle-yen` = "circle-yen".asInstanceOf[`circle-yen`]
+  
+  @js.native
   sealed trait `circle-z`
     extends StObject
        with IconName
   inline def `circle-z`: `circle-z` = "circle-z".asInstanceOf[`circle-z`]
+  
+  @js.native
+  sealed trait `circles-overlap`
+    extends StObject
+       with IconName
+  inline def `circles-overlap`: `circles-overlap` = "circles-overlap".asInstanceOf[`circles-overlap`]
   
   @js.native
   sealed trait citrus
@@ -6291,6 +6411,12 @@ object fortawesomeFontawesomeCommonTypesStrings {
     extends StObject
        with IconName
   inline def `cloud-arrow-up`: `cloud-arrow-up` = "cloud-arrow-up".asInstanceOf[`cloud-arrow-up`]
+  
+  @js.native
+  sealed trait `cloud-binary`
+    extends StObject
+       with IconName
+  inline def `cloud-binary`: `cloud-binary` = "cloud-binary".asInstanceOf[`cloud-binary`]
   
   @js.native
   sealed trait `cloud-bolt`
@@ -7253,6 +7379,12 @@ object fortawesomeFontawesomeCommonTypesStrings {
   inline def `conveyor-belt-alt`: `conveyor-belt-alt` = "conveyor-belt-alt".asInstanceOf[`conveyor-belt-alt`]
   
   @js.native
+  sealed trait `conveyor-belt-arm`
+    extends StObject
+       with IconName
+  inline def `conveyor-belt-arm`: `conveyor-belt-arm` = "conveyor-belt-arm".asInstanceOf[`conveyor-belt-arm`]
+  
+  @js.native
   sealed trait `conveyor-belt-boxes`
     extends StObject
        with IconName
@@ -8135,6 +8267,12 @@ object fortawesomeFontawesomeCommonTypesStrings {
   inline def `digital-tachograph`: `digital-tachograph` = "digital-tachograph".asInstanceOf[`digital-tachograph`]
   
   @js.native
+  sealed trait dinosaur
+    extends StObject
+       with IconName
+  inline def dinosaur: dinosaur = "dinosaur".asInstanceOf[dinosaur]
+  
+  @js.native
   sealed trait diploma
     extends StObject
        with IconName
@@ -8181,6 +8319,24 @@ object fortawesomeFontawesomeCommonTypesStrings {
     extends StObject
        with IconName
   inline def `display-arrow-down`: `display-arrow-down` = "display-arrow-down".asInstanceOf[`display-arrow-down`]
+  
+  @js.native
+  sealed trait `display-chart-up`
+    extends StObject
+       with IconName
+  inline def `display-chart-up`: `display-chart-up` = "display-chart-up".asInstanceOf[`display-chart-up`]
+  
+  @js.native
+  sealed trait `display-chart-up-circle-currency`
+    extends StObject
+       with IconName
+  inline def `display-chart-up-circle-currency`: `display-chart-up-circle-currency` = "display-chart-up-circle-currency".asInstanceOf[`display-chart-up-circle-currency`]
+  
+  @js.native
+  sealed trait `display-chart-up-circle-dollar`
+    extends StObject
+       with IconName
+  inline def `display-chart-up-circle-dollar`: `display-chart-up-circle-dollar` = "display-chart-up-circle-dollar".asInstanceOf[`display-chart-up-circle-dollar`]
   
   @js.native
   sealed trait `display-code`
@@ -10020,6 +10176,18 @@ object fortawesomeFontawesomeCommonTypesStrings {
   inline def fas: fas = "fas".asInstanceOf[fas]
   
   @js.native
+  sealed trait fasl
+    extends StObject
+       with IconPrefix
+  inline def fasl: fasl = "fasl".asInstanceOf[fasl]
+  
+  @js.native
+  sealed trait fasr
+    extends StObject
+       with IconPrefix
+  inline def fasr: fasr = "fasr".asInstanceOf[fasr]
+  
+  @js.native
   sealed trait fass
     extends StObject
        with IconPrefix
@@ -10308,6 +10476,12 @@ object fortawesomeFontawesomeCommonTypesStrings {
   inline def `file-dashed-line`: `file-dashed-line` = "file-dashed-line".asInstanceOf[`file-dashed-line`]
   
   @js.native
+  sealed trait `file-doc`
+    extends StObject
+       with IconName
+  inline def `file-doc`: `file-doc` = "file-doc".asInstanceOf[`file-doc`]
+  
+  @js.native
   sealed trait `file-download`
     extends StObject
        with IconName
@@ -10522,6 +10696,12 @@ object fortawesomeFontawesomeCommonTypesStrings {
     extends StObject
        with IconName
   inline def `file-xmark`: `file-xmark` = "file-xmark".asInstanceOf[`file-xmark`]
+  
+  @js.native
+  sealed trait `file-zip`
+    extends StObject
+       with IconName
+  inline def `file-zip`: `file-zip` = "file-zip".asInstanceOf[`file-zip`]
   
   @js.native
   sealed trait `file-zipper`
@@ -10828,6 +11008,12 @@ object fortawesomeFontawesomeCommonTypesStrings {
     extends StObject
        with IconName
   inline def flask: flask = "flask".asInstanceOf[flask]
+  
+  @js.native
+  sealed trait `flask-gear`
+    extends StObject
+       with IconName
+  inline def `flask-gear`: `flask-gear` = "flask-gear".asInstanceOf[`flask-gear`]
   
   @js.native
   sealed trait `flask-poison`
@@ -11586,6 +11772,24 @@ object fortawesomeFontawesomeCommonTypesStrings {
   inline def gear: gear = "gear".asInstanceOf[gear]
   
   @js.native
+  sealed trait `gear-code`
+    extends StObject
+       with IconName
+  inline def `gear-code`: `gear-code` = "gear-code".asInstanceOf[`gear-code`]
+  
+  @js.native
+  sealed trait `gear-complex`
+    extends StObject
+       with IconName
+  inline def `gear-complex`: `gear-complex` = "gear-complex".asInstanceOf[`gear-complex`]
+  
+  @js.native
+  sealed trait `gear-complex-code`
+    extends StObject
+       with IconName
+  inline def `gear-complex-code`: `gear-complex-code` = "gear-complex-code".asInstanceOf[`gear-complex-code`]
+  
+  @js.native
   sealed trait gears
     extends StObject
        with IconName
@@ -12088,6 +12292,36 @@ object fortawesomeFontawesomeCommonTypesStrings {
     extends StObject
        with IconName
   inline def `grid-horizontal`: `grid-horizontal` = "grid-horizontal".asInstanceOf[`grid-horizontal`]
+  
+  @js.native
+  sealed trait `grid-round`
+    extends StObject
+       with IconName
+  inline def `grid-round`: `grid-round` = "grid-round".asInstanceOf[`grid-round`]
+  
+  @js.native
+  sealed trait `grid-round-2`
+    extends StObject
+       with IconName
+  inline def `grid-round-2`: `grid-round-2` = "grid-round-2".asInstanceOf[`grid-round-2`]
+  
+  @js.native
+  sealed trait `grid-round-2-plus`
+    extends StObject
+       with IconName
+  inline def `grid-round-2-plus`: `grid-round-2-plus` = "grid-round-2-plus".asInstanceOf[`grid-round-2-plus`]
+  
+  @js.native
+  sealed trait `grid-round-4`
+    extends StObject
+       with IconName
+  inline def `grid-round-4`: `grid-round-4` = "grid-round-4".asInstanceOf[`grid-round-4`]
+  
+  @js.native
+  sealed trait `grid-round-5`
+    extends StObject
+       with IconName
+  inline def `grid-round-5`: `grid-round-5` = "grid-round-5".asInstanceOf[`grid-round-5`]
   
   @js.native
   sealed trait grid3
@@ -12844,6 +13078,12 @@ object fortawesomeFontawesomeCommonTypesStrings {
     extends StObject
        with IconName
   inline def `hashtag-lock`: `hashtag-lock` = "hashtag-lock".asInstanceOf[`hashtag-lock`]
+  
+  @js.native
+  sealed trait `hat-beach`
+    extends StObject
+       with IconName
+  inline def `hat-beach`: `hat-beach` = "hat-beach".asInstanceOf[`hat-beach`]
   
   @js.native
   sealed trait `hat-chef`
@@ -14358,6 +14598,12 @@ object fortawesomeFontawesomeCommonTypesStrings {
   inline def jug: jug = "jug".asInstanceOf[jug]
   
   @js.native
+  sealed trait `jug-bottle`
+    extends StObject
+       with IconName
+  inline def `jug-bottle`: `jug-bottle` = "jug-bottle".asInstanceOf[`jug-bottle`]
+  
+  @js.native
   sealed trait `jug-detergent`
     extends StObject
        with IconName
@@ -14668,6 +14914,12 @@ object fortawesomeFontawesomeCommonTypesStrings {
     extends StObject
        with IconName
   inline def `laptop-arrow-down`: `laptop-arrow-down` = "laptop-arrow-down".asInstanceOf[`laptop-arrow-down`]
+  
+  @js.native
+  sealed trait `laptop-binary`
+    extends StObject
+       with IconName
+  inline def `laptop-binary`: `laptop-binary` = "laptop-binary".asInstanceOf[`laptop-binary`]
   
   @js.native
   sealed trait `laptop-code`
@@ -15004,6 +15256,12 @@ object fortawesomeFontawesomeCommonTypesStrings {
     extends StObject
        with IconName
   inline def `lightbulb-exclamation-on`: `lightbulb-exclamation-on` = "lightbulb-exclamation-on".asInstanceOf[`lightbulb-exclamation-on`]
+  
+  @js.native
+  sealed trait `lightbulb-gear`
+    extends StObject
+       with IconName
+  inline def `lightbulb-gear`: `lightbulb-gear` = "lightbulb-gear".asInstanceOf[`lightbulb-gear`]
   
   @js.native
   sealed trait `lightbulb-on`
@@ -18006,6 +18264,12 @@ object fortawesomeFontawesomeCommonTypesStrings {
   inline def `pencil-alt`: `pencil-alt` = "pencil-alt".asInstanceOf[`pencil-alt`]
   
   @js.native
+  sealed trait `pencil-mechanical`
+    extends StObject
+       with IconName
+  inline def `pencil-mechanical`: `pencil-mechanical` = "pencil-mechanical".asInstanceOf[`pencil-mechanical`]
+  
+  @js.native
   sealed trait `pencil-paintbrush`
     extends StObject
        with IconName
@@ -18412,6 +18676,12 @@ object fortawesomeFontawesomeCommonTypesStrings {
     extends StObject
        with IconName
   inline def `person-running`: `person-running` = "person-running".asInstanceOf[`person-running`]
+  
+  @js.native
+  sealed trait `person-running-fast`
+    extends StObject
+       with IconName
+  inline def `person-running-fast`: `person-running-fast` = "person-running-fast".asInstanceOf[`person-running-fast`]
   
   @js.native
   sealed trait `person-seat`
@@ -20106,6 +20376,12 @@ object fortawesomeFontawesomeCommonTypesStrings {
   inline def `right-left`: `right-left` = "right-left".asInstanceOf[`right-left`]
   
   @js.native
+  sealed trait `right-left-large`
+    extends StObject
+       with IconName
+  inline def `right-left-large`: `right-left-large` = "right-left-large".asInstanceOf[`right-left-large`]
+  
+  @js.native
   sealed trait `right-long`
     extends StObject
        with IconName
@@ -21690,6 +21966,12 @@ object fortawesomeFontawesomeCommonTypesStrings {
   inline def skeleton: skeleton = "skeleton".asInstanceOf[skeleton]
   
   @js.native
+  sealed trait `skeleton-ribs`
+    extends StObject
+       with IconName
+  inline def `skeleton-ribs`: `skeleton-ribs` = "skeleton-ribs".asInstanceOf[`skeleton-ribs`]
+  
+  @js.native
   sealed trait sketch
     extends StObject
        with IconName
@@ -22324,6 +22606,12 @@ object fortawesomeFontawesomeCommonTypesStrings {
     extends StObject
        with IconName
   inline def `spaghetti-monster-flying`: `spaghetti-monster-flying` = "spaghetti-monster-flying".asInstanceOf[`spaghetti-monster-flying`]
+  
+  @js.native
+  sealed trait sparkle
+    extends StObject
+       with IconName
+  inline def sparkle: sparkle = "sparkle".asInstanceOf[sparkle]
   
   @js.native
   sealed trait sparkles
@@ -26304,6 +26592,12 @@ object fortawesomeFontawesomeCommonTypesStrings {
   inline def `user-group-crown`: `user-group-crown` = "user-group-crown".asInstanceOf[`user-group-crown`]
   
   @js.native
+  sealed trait `user-group-simple`
+    extends StObject
+       with IconName
+  inline def `user-group-simple`: `user-group-simple` = "user-group-simple".asInstanceOf[`user-group-simple`]
+  
+  @js.native
   sealed trait `user-hair`
     extends StObject
        with IconName
@@ -27348,6 +27642,12 @@ object fortawesomeFontawesomeCommonTypesStrings {
   inline def `webcam-slash`: `webcam-slash` = "webcam-slash".asInstanceOf[`webcam-slash`]
   
   @js.native
+  sealed trait webhook
+    extends StObject
+       with IconName
+  inline def webhook: webhook = "webhook".asInstanceOf[webhook]
+  
+  @js.native
   sealed trait weebly
     extends StObject
        with IconName
@@ -27748,6 +28048,12 @@ object fortawesomeFontawesomeCommonTypesStrings {
     extends StObject
        with IconName
   inline def wreath: wreath = "wreath".asInstanceOf[wreath]
+  
+  @js.native
+  sealed trait `wreath-laurel`
+    extends StObject
+       with IconName
+  inline def `wreath-laurel`: `wreath-laurel` = "wreath-laurel".asInstanceOf[`wreath-laurel`]
   
   @js.native
   sealed trait wrench

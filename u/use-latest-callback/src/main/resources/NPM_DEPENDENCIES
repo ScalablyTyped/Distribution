@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "use-latest-callback" : "0.1.5"
+      "use-latest-callback" : "0.1.6"
     }
   ],
   "test-dependencies" : [
     {
-      "use-latest-callback" : "0.1.5"
+      "use-latest-callback" : "0.1.6"
     }
   ],
   "compile-devDependencies" : [

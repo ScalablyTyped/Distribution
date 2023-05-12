@@ -1,6 +1,6 @@
 package typings.awsSdkCredentialProviders
 
-import typings.awsSdkTypes.distTypesCredentialsMod.CredentialProvider
+import typings.awsSdkTypes.distTypesIdentityAwsCredentialIdentityMod.AwsCredentialIdentityProvider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -11,5 +11,5 @@ object distTypesFromEnvMod {
   @js.native
   val ^ : js.Any = js.native
   
-  inline def fromEnv(): CredentialProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEnv")().asInstanceOf[CredentialProvider]
+  inline def fromEnv(): AwsCredentialIdentityProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEnv")().asInstanceOf[AwsCredentialIdentityProvider]
 }

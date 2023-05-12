@@ -17,12 +17,12 @@ open class CellRange protected () extends StObject {
   def this(start: Double, end: Double) = this()
   
   /**
-    * The end index. It is after or equal to [start](#CellRange.start).
+    * The end index. It is after or equal to {@link CellRange.start}.
     */
   val end: Double = js.native
   
   /**
-    * The start index. It is before or equal to [end](#CellRange.end).
+    * The start index. It is before or equal to {@link CellRange.end}.
     */
   val start: Double = js.native
 }

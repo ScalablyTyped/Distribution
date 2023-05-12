@@ -12,7 +12,7 @@ trait BatchAssociateResourceResponse extends StObject {
   var FailedItems: FailedItemList
   
   /**
-    * A unique identifier for the resource set, used in a TODO to refer to the resource set.
+    * A unique identifier for the resource set, used in a request to refer to the resource set.
     */
   var ResourceSetIdentifier: Identifier
 }

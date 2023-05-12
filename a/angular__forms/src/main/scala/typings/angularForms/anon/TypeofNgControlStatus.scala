@@ -24,8 +24,9 @@ trait TypeofNgControlStatus
     js.Object, 
     scala.Nothing, 
     scala.Nothing, 
-    `false`
+    `false`, 
+    scala.Nothing
   ] = js.native
   
-  var ɵfac: ɵɵFactoryDeclaration[NgControlStatus, js.Array[`4`]] = js.native
+  var ɵfac: ɵɵFactoryDeclaration[NgControlStatus, js.Array[`14`]] = js.native
 }

@@ -24,7 +24,7 @@ object libBoundaryErrorBoundaryMod {
     def this(props: PropsWithRef[PropsWithChildren[typings.reactErrorBoundary.mod.ErrorBoundaryProps]]) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(
       props: PropsWithRef[PropsWithChildren[typings.reactErrorBoundary.mod.ErrorBoundaryProps]],

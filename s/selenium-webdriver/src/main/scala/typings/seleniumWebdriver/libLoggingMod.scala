@@ -24,7 +24,6 @@ object libLoggingMod {
       *     milliseconds since 0:00:00, January 1, 1970 UTC. If omitted, the
       *     current time will be used.
       * @param {string=} opt_type The log type, if known.
-      * @constructor
       */
     def this(level: Level, message: String) = this()
     def this(level: String, message: String, opt_timestamp: Double) = this()
@@ -43,13 +42,10 @@ object libLoggingMod {
     def this(level: Level, message: String, opt_timestamp: Unit, opt_type: String) = this()
     def this(level: Level, message: String, opt_timestamp: Unit, opt_type: IType) = this()
     
-    /** @type {!logging.Level} */
     var level: Level = js.native
     
-    /** @type {string} */
     var message: String = js.native
     
-    /** @type {number} */
     var timestamp: Double = js.native
     
     /**
@@ -58,7 +54,6 @@ object libLoggingMod {
       */
     def toJSON(): IEntryJSON = js.native
     
-    /** @type {string} */
     var `type`: String = js.native
   }
   
@@ -181,7 +176,6 @@ object libLoggingMod {
       * @param {string} name the logger's name.
       * @param {!Logger} parent the logger's parent.
       * @return {!Logger} the new logger.
-      * @private
       */
     def createLogger_(name: String, parent: Logger): Logger = js.native
     
@@ -258,7 +252,6 @@ object libLoggingMod {
     /** @return {string} the name of this logger. */
     def getName(): String = js.native
     
-    /** @private {Set<function(!Entry)>} */
     var handlers_ : Any = js.native
     
     /**
@@ -276,7 +269,6 @@ object libLoggingMod {
       */
     def isLoggable(level: Level): Boolean = js.native
     
-    /** @private {Level} */
     var level_ : Level = js.native
     
     /**
@@ -293,10 +285,8 @@ object libLoggingMod {
     def log(level: Level, loggable: String): Unit = js.native
     def log(level: Level, loggable: js.Function): Unit = js.native
     
-    /** @private {string} */
     var name_ : String = js.native
     
-    /** @private {Logger} */
     var parent_ : Logger = js.native
     
     /**

@@ -18,6 +18,8 @@ trait CancelFunction extends StObject {
   
   var requestFunction: js.UndefOr[RequestCallback] = js.undefined
   
+  var serverKey: js.UndefOr[String] = js.undefined
+  
   var throttle: js.UndefOr[Boolean] = js.undefined
   
   var throttleByServer: js.UndefOr[Boolean] = js.undefined
@@ -51,6 +53,10 @@ object CancelFunction {
     inline def setRequestFunction(value: () => js.Promise[Unit]): Self = StObject.set(x, "requestFunction", js.Any.fromFunction0(value))
     
     inline def setRequestFunctionUndefined: Self = StObject.set(x, "requestFunction", js.undefined)
+    
+    inline def setServerKey(value: String): Self = StObject.set(x, "serverKey", value.asInstanceOf[js.Any])
+    
+    inline def setServerKeyUndefined: Self = StObject.set(x, "serverKey", js.undefined)
     
     inline def setThrottle(value: Boolean): Self = StObject.set(x, "throttle", value.asInstanceOf[js.Any])
     

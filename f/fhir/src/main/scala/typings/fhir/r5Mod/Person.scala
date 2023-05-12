@@ -75,7 +75,7 @@ trait Person
   var managingOrganization: js.UndefOr[Reference] = js.undefined
   
   /**
-    * Many contries maintain a register of births, deaths and marriages, and this would simplify that interaction
+    * Many countries maintain a register of births, deaths and marriages, and this would simplify that interaction
     */
   var maritalStatus: js.UndefOr[CodeableConcept] = js.undefined
   

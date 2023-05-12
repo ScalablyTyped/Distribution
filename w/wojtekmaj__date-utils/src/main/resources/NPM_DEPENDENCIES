@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@wojtekmaj/date-utils" : "1.1.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@wojtekmaj/date-utils" : "1.1.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

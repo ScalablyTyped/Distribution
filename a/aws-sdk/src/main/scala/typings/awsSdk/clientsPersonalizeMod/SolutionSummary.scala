@@ -22,6 +22,11 @@ trait SolutionSummary extends StObject {
   var name: js.UndefOr[Name] = js.undefined
   
   /**
+    * The Amazon Resource Name (ARN) of the recipe used by the solution.
+    */
+  var recipeArn: js.UndefOr[Arn] = js.undefined
+  
+  /**
     * The Amazon Resource Name (ARN) of the solution.
     */
   var solutionArn: js.UndefOr[Arn] = js.undefined
@@ -52,6 +57,10 @@ object SolutionSummary {
     inline def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setRecipeArn(value: Arn): Self = StObject.set(x, "recipeArn", value.asInstanceOf[js.Any])
+    
+    inline def setRecipeArnUndefined: Self = StObject.set(x, "recipeArn", js.undefined)
     
     inline def setSolutionArn(value: Arn): Self = StObject.set(x, "solutionArn", value.asInstanceOf[js.Any])
     

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "react-fast-compare" : "3.2.0"
+      "react-fast-compare" : "3.2.1"
     }
   ],
   "test-dependencies" : [
     {
-      "react-fast-compare" : "3.2.0"
+      "react-fast-compare" : "3.2.1"
     }
   ],
   "compile-devDependencies" : [

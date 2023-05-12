@@ -1,5 +1,6 @@
 package typings.nginstackWebFramework
 
+import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -111,10 +112,19 @@ object libAnchorLinkMod {
     var getProcessedParameters: Any = js.native
     
     /* CompleteClass */
+    var parameters: js.Array[String] = js.native
+    
+    /* CompleteClass */
+    var params: Record[String, Any] = js.native
+    
+    /* CompleteClass */
     var paramsFieldNames: js.Array[Any] = js.native
     
     /* private */ /* CompleteClass */
     var paramsFieldNames_ : Any = js.native
+    
+    /* CompleteClass */
+    var parent: Any = js.native
     
     /* CompleteClass */
     override def prepare(): Unit = js.native
@@ -169,9 +179,15 @@ object libAnchorLinkMod {
     
     /* private */ var getProcessedParameters: Any
     
+    var parameters: js.Array[String]
+    
+    var params: Record[String, Any]
+    
     var paramsFieldNames: js.Array[Any]
     
     /* private */ var paramsFieldNames_ : Any
+    
+    var parent: Any
     
     def prepare(): Unit
     
@@ -204,8 +220,11 @@ object libAnchorLinkMod {
       getHtml: Any,
       getLinkFieldNamesParamsOp: Any,
       getProcessedParameters: Any,
+      parameters: js.Array[String],
+      params: Record[String, Any],
       paramsFieldNames: js.Array[Any],
       paramsFieldNames_ : Any,
+      parent: Any,
       prepare: () => Unit,
       propertiesToSync_ : js.Array[String],
       setPropertiesDefaultValues: Any,
@@ -215,7 +234,7 @@ object libAnchorLinkMod {
       writeToClient: Any,
       written_ : Any
     ): Link = {
-      val __obj = js.Dynamic.literal(_getArrayFromList = _getArrayFromList.asInstanceOf[js.Any], _prepare = _prepare.asInstanceOf[js.Any], autoSanitize = autoSanitize.asInstanceOf[js.Any], changed = changed.asInstanceOf[js.Any], cssClass = cssClass.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any], getChanges = getChanges.asInstanceOf[js.Any], getClientFunction_ = getClientFunction_.asInstanceOf[js.Any], getHtml = getHtml.asInstanceOf[js.Any], getLinkFieldNamesParamsOp = getLinkFieldNamesParamsOp.asInstanceOf[js.Any], getProcessedParameters = getProcessedParameters.asInstanceOf[js.Any], paramsFieldNames = paramsFieldNames.asInstanceOf[js.Any], paramsFieldNames_ = paramsFieldNames_.asInstanceOf[js.Any], prepare = js.Any.fromFunction0(prepare), propertiesToSync_ = propertiesToSync_.asInstanceOf[js.Any], setPropertiesDefaultValues = setPropertiesDefaultValues.asInstanceOf[js.Any], srcId = srcId.asInstanceOf[js.Any], write = js.Any.fromFunction3(write), writeToClient = writeToClient.asInstanceOf[js.Any], written_ = written_.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(_getArrayFromList = _getArrayFromList.asInstanceOf[js.Any], _prepare = _prepare.asInstanceOf[js.Any], autoSanitize = autoSanitize.asInstanceOf[js.Any], changed = changed.asInstanceOf[js.Any], cssClass = cssClass.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any], getChanges = getChanges.asInstanceOf[js.Any], getClientFunction_ = getClientFunction_.asInstanceOf[js.Any], getHtml = getHtml.asInstanceOf[js.Any], getLinkFieldNamesParamsOp = getLinkFieldNamesParamsOp.asInstanceOf[js.Any], getProcessedParameters = getProcessedParameters.asInstanceOf[js.Any], parameters = parameters.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], paramsFieldNames = paramsFieldNames.asInstanceOf[js.Any], paramsFieldNames_ = paramsFieldNames_.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], prepare = js.Any.fromFunction0(prepare), propertiesToSync_ = propertiesToSync_.asInstanceOf[js.Any], setPropertiesDefaultValues = setPropertiesDefaultValues.asInstanceOf[js.Any], srcId = srcId.asInstanceOf[js.Any], write = js.Any.fromFunction3(write), writeToClient = writeToClient.asInstanceOf[js.Any], written_ = written_.asInstanceOf[js.Any])
       __obj.updateDynamic("toString")(toString_.asInstanceOf[js.Any])
       __obj.asInstanceOf[Link]
     }
@@ -241,11 +260,19 @@ object libAnchorLinkMod {
       
       inline def setGetProcessedParameters(value: Any): Self = StObject.set(x, "getProcessedParameters", value.asInstanceOf[js.Any])
       
+      inline def setParameters(value: js.Array[String]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+      
+      inline def setParametersVarargs(value: String*): Self = StObject.set(x, "parameters", js.Array(value*))
+      
+      inline def setParams(value: Record[String, Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      
       inline def setParamsFieldNames(value: js.Array[Any]): Self = StObject.set(x, "paramsFieldNames", value.asInstanceOf[js.Any])
       
       inline def setParamsFieldNamesVarargs(value: Any*): Self = StObject.set(x, "paramsFieldNames", js.Array(value*))
       
       inline def setParamsFieldNames_(value: Any): Self = StObject.set(x, "paramsFieldNames_", value.asInstanceOf[js.Any])
+      
+      inline def setParent(value: Any): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
       
       inline def setPrepare(value: () => Unit): Self = StObject.set(x, "prepare", js.Any.fromFunction0(value))
       

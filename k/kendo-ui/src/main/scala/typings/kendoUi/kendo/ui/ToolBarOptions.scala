@@ -14,6 +14,8 @@ trait ToolBarOptions extends StObject {
   
   var name: js.UndefOr[String] = js.undefined
   
+  var navigateOnTab: js.UndefOr[Boolean] = js.undefined
+  
   var open: js.UndefOr[js.Function1[/* e */ ToolBarOpenEvent, Unit]] = js.undefined
   
   var overflowClose: js.UndefOr[js.Function1[/* e */ ToolBarOverflowCloseEvent, Unit]] = js.undefined
@@ -51,6 +53,10 @@ object ToolBarOptions {
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setNavigateOnTab(value: Boolean): Self = StObject.set(x, "navigateOnTab", value.asInstanceOf[js.Any])
+    
+    inline def setNavigateOnTabUndefined: Self = StObject.set(x, "navigateOnTab", js.undefined)
     
     inline def setOpen(value: /* e */ ToolBarOpenEvent => Unit): Self = StObject.set(x, "open", js.Any.fromFunction1(value))
     

@@ -37,6 +37,11 @@ trait CreateDomainConfigurationRequest extends StObject {
   var tags: js.UndefOr[TagList] = js.undefined
   
   /**
+    * An object that specifies the TLS configuration for a domain.
+    */
+  var tlsConfig: js.UndefOr[TlsConfig] = js.undefined
+  
+  /**
     * The certificate used to validate the server certificate and prove domain name ownership. This certificate must be signed by a public certificate authority. This value is not required for Amazon Web Services-managed domains.
     */
   var validationCertificateArn: js.UndefOr[AcmCertificateArn] = js.undefined
@@ -76,6 +81,10 @@ object CreateDomainConfigurationRequest {
     inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
     inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value*))
+    
+    inline def setTlsConfig(value: TlsConfig): Self = StObject.set(x, "tlsConfig", value.asInstanceOf[js.Any])
+    
+    inline def setTlsConfigUndefined: Self = StObject.set(x, "tlsConfig", js.undefined)
     
     inline def setValidationCertificateArn(value: AcmCertificateArn): Self = StObject.set(x, "validationCertificateArn", value.asInstanceOf[js.Any])
     

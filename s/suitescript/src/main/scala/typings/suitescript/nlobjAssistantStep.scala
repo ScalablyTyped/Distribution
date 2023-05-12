@@ -10,8 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @classDescription assistant step definition. Used to define individual steps/pages in multi-step workflows.
   * @return {nlobjAssistantStep}
-  * @constructor
-  *
   * @since 2009.2
   */
 @js.native

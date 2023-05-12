@@ -12,6 +12,8 @@ trait TreeshakingOptions extends StObject {
   
   var correctVarValueBeforeDeclaration: js.UndefOr[Boolean] = js.undefined
   
+  var manualPureFunctions: js.UndefOr[js.Array[String]] = js.undefined
+  
   var moduleSideEffects: js.UndefOr[ModuleSideEffectsOption] = js.undefined
   
   var preset: js.UndefOr[TreeshakingPreset] = js.undefined
@@ -39,6 +41,12 @@ object TreeshakingOptions {
     inline def setCorrectVarValueBeforeDeclaration(value: Boolean): Self = StObject.set(x, "correctVarValueBeforeDeclaration", value.asInstanceOf[js.Any])
     
     inline def setCorrectVarValueBeforeDeclarationUndefined: Self = StObject.set(x, "correctVarValueBeforeDeclaration", js.undefined)
+    
+    inline def setManualPureFunctions(value: js.Array[String]): Self = StObject.set(x, "manualPureFunctions", value.asInstanceOf[js.Any])
+    
+    inline def setManualPureFunctionsUndefined: Self = StObject.set(x, "manualPureFunctions", js.undefined)
+    
+    inline def setManualPureFunctionsVarargs(value: String*): Self = StObject.set(x, "manualPureFunctions", js.Array(value*))
     
     inline def setModuleSideEffects(value: ModuleSideEffectsOption): Self = StObject.set(x, "moduleSideEffects", value.asInstanceOf[js.Any])
     

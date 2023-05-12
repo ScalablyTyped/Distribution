@@ -117,7 +117,7 @@ trait SymbolConstructor extends StObject {
   val toStringTag: js.Symbol = js.native
   
   /**
-    * An Object whose own property names are property names that are excluded from the 'with'
+    * An Object whose truthy properties are properties that are excluded from the 'with'
     * environment bindings of the associated objects.
     */
   /* standard es2015.symbol.wellknown */

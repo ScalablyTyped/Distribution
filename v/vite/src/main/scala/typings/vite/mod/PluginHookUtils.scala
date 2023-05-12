@@ -7,7 +7,7 @@ import typings.rollup.mod.PluginContext
 import typings.rollup.mod.ResolveIdResult
 import typings.rollup.mod.TransformPluginContext
 import typings.std.NonNullable
-import typings.vite.anon.IsEntry
+import typings.vite.anon.Custom
 import typings.vite.anon.Ssr
 import typings.vite.viteStrings.api
 import typings.vite.viteStrings.apply
@@ -357,7 +357,7 @@ trait PluginHookUtils extends StObject {
               /* this */ PluginContext, 
               /* source */ String, 
               /* importer */ js.UndefOr[String], 
-              /* options */ IsEntry, 
+              /* options */ Custom, 
               js.Promise[ResolveIdResult] | ResolveIdResult
             ], 
             js.Object
@@ -413,6 +413,8 @@ trait PluginHookUtils extends StObject {
   ] = js.native
   @JSName("getSortedPluginHooks")
   def getSortedPluginHooks_transformIndexHtml(hookName: transformIndexHtml): js.Array[NonNullable[HookHandler[js.UndefOr[IndexHtmlTransform]]]] = js.native
+  @JSName("getSortedPluginHooks")
+  def getSortedPluginHooks_version(hookName: typings.vite.viteStrings.version): js.Array[NonNullable[HookHandler[js.UndefOr[String]]]] = js.native
   @JSName("getSortedPluginHooks")
   def getSortedPluginHooks_watchChange(hookName: watchChange): js.Array[
     NonNullable[

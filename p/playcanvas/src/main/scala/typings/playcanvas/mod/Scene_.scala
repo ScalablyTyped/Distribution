@@ -5,11 +5,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** @typedef {import('../framework/entity.js').Entity} Entity */
-/** @typedef {import('../platform/graphics/graphics-device.js').GraphicsDevice} GraphicsDevice */
-/** @typedef {import('../platform/graphics/texture.js').Texture} Texture */
-/** @typedef {import('./composition/layer-composition.js').LayerComposition} LayerComposition */
-/** @typedef {import('./layer.js').Layer} Layer */
 /**
   * A scene is graphical representation of an environment. It manages the scene hierarchy, all
   * graphical objects, lights, and scene-wide properties.
@@ -22,7 +17,8 @@ open class Scene_ protected () extends EventHandler {
   /**
     * Create a new Scene instance.
     *
-    * @param {GraphicsDevice} graphicsDevice - The graphics device used to manage this scene.
+    * @param {import('../platform/graphics/graphics-device.js').GraphicsDevice} graphicsDevice -
+    * The graphics device used to manage this scene.
     * @hideconstructor
     */
   def this(graphicsDevice: GraphicsDevice) = this()
@@ -36,7 +32,7 @@ open class Scene_ protected () extends EventHandler {
   /**
     * Environment lighting atlas
     *
-    * @type {Texture}
+    * @type {import('../platform/graphics/texture.js').Texture}
     * @private
     */
   /* private */ var _envAtlas: Any = js.native
@@ -52,7 +48,7 @@ open class Scene_ protected () extends EventHandler {
   var _internalEnvAtlas: Any = js.native
   
   /**
-    * @type {LayerComposition}
+    * @type {import('./composition/layer-composition.js').LayerComposition}
     * @private
     */
   /* private */ var _layers: Any = js.native
@@ -66,7 +62,7 @@ open class Scene_ protected () extends EventHandler {
   /**
     * Array of 6 prefiltered lighting data cubemaps.
     *
-    * @type {Texture[]}
+    * @type {import('../platform/graphics/texture.js').Texture[]}
     * @private
     */
   /* private */ var _prefilteredCubemaps: Any = js.native
@@ -78,7 +74,7 @@ open class Scene_ protected () extends EventHandler {
   /**
     * The skybox cubemap as set by user (gets used when skyboxMip === 0)
     *
-    * @type {Texture}
+    * @type {import('../platform/graphics/texture.js').Texture}
     * @private
     */
   /* private */ var _skyboxCubeMap: Any = js.native
@@ -177,21 +173,23 @@ open class Scene_ protected () extends EventHandler {
     * Fired when the skybox is set.
     *
     * @event Scene#set:skybox
-    * @param {Texture} usedTex - Previously used cubemap texture. New is in the {@link Scene#skybox}.
+    * @param {import('../platform/graphics/texture.js').Texture} usedTex - Previously used cubemap
+    * texture. New is in the {@link Scene#skybox}.
     */
   /**
     * Fired when the layer composition is set. Use this event to add callbacks or advanced
     * properties to your layers.
     *
     * @event Scene#set:layers
-    * @param {LayerComposition} oldComp - Previously used {@link LayerComposition}.
-    * @param {LayerComposition} newComp - Newly set {@link LayerComposition}.
+    * @param {import('./composition/layer-composition.js').LayerComposition} oldComp - Previously
+    * used {@link LayerComposition}.
+    * @param {import('./composition/layer-composition.js').LayerComposition} newComp - Newly set
+    * {@link LayerComposition}.
     * @example
     * this.app.scene.on('set:layers', function (oldComp, newComp) {
-    *     var list = newComp.layerList;
-    *     var layer;
-    *     for (var i = 0; i < list.length; i++) {
-    *         layer = list[i];
+    *     const list = newComp.layerList;
+    *     for (let i = 0; i < list.length; i++) {
+    *         const layer = list[i];
     *         switch (layer.name) {
     *             case 'MyLayer':
     *                 layer.onEnable = myOnEnableFunction;
@@ -207,7 +205,7 @@ open class Scene_ protected () extends EventHandler {
   /**
     * Returns the default layer used by the immediate drawing functions.
     *
-    * @type {Layer}
+    * @type {import('./layer.js').Layer}
     * @private
     */
   /* private */ def defaultDrawLayer: Any = js.native
@@ -249,7 +247,7 @@ open class Scene_ protected () extends EventHandler {
   /**
     * The environment lighting atlas.
     *
-    * @type {Texture}
+    * @type {import('../platform/graphics/texture.js').Texture}
     */
   def envAtlas_=(arg: Texture): Unit = js.native
   
@@ -326,7 +324,7 @@ open class Scene_ protected () extends EventHandler {
   /**
     * A {@link LayerComposition} that defines rendering order of this scene.
     *
-    * @type {LayerComposition}
+    * @type {import('./composition/layer-composition.js').LayerComposition}
     */
   def layers_=(arg: LayerComposition): Unit = js.native
   
@@ -369,6 +367,14 @@ open class Scene_ protected () extends EventHandler {
   def lightmapFilterSmoothness_=(arg: Double): Unit = js.native
   
   /**
+    * Enables HDR lightmaps. This can result in smoother lightmaps especially when many samples
+    * are used. Defaults to false.
+    *
+    * @type {boolean}
+    */
+  var lightmapHDR: Boolean = js.native
+  
+  /**
     * The maximum lightmap resolution. Defaults to 2048.
     *
     * @type {number}
@@ -390,6 +396,13 @@ open class Scene_ protected () extends EventHandler {
   var lightmapMode: Double = js.native
   
   /**
+    * The lightmap pixel format.
+    *
+    * @type {number}
+    */
+  def lightmapPixelFormat: Double = js.native
+  
+  /**
     * The lightmap resolution multiplier. Defaults to 1.
     *
     * @type {number}
@@ -407,7 +420,7 @@ open class Scene_ protected () extends EventHandler {
   /**
     * Set of 6 prefiltered cubemaps.
     *
-    * @type {Texture[]}
+    * @type {import('../platform/graphics/texture.js').Texture[]}
     */
   def prefilteredCubemaps_=(arg: js.Array[Texture]): Unit = js.native
   
@@ -415,18 +428,19 @@ open class Scene_ protected () extends EventHandler {
     * The root entity of the scene, which is usually the only child to the {@link Application}
     * root entity.
     *
-    * @type {Entity}
+    * @type {import('../framework/entity.js').Entity}
     */
   var root: Entity = js.native
   
   /**
     * Sets the cubemap for the scene skybox.
     *
-    * @param {Texture[]} [cubemaps] - An array of cubemaps corresponding to the skybox at
-    * different mip levels. If undefined, scene will remove skybox. Cubemap array should be of
-    * size 7, with the first element (index 0) corresponding to the base cubemap (mip level 0)
-    * with original resolution. Each remaining element (index 1-6) corresponds to a fixed
-    * prefiltered resolution (128x128, 64x64, 32x32, 16x16, 8x8, 4x4).
+    * @param {import('../platform/graphics/texture.js').Texture[]} [cubemaps] - An array of
+    * cubemaps corresponding to the skybox at different mip levels. If undefined, scene will
+    * remove skybox. Cubemap array should be of size 7, with the first element (index 0)
+    * corresponding to the base cubemap (mip level 0) with original resolution. Each remaining
+    * element (index 1-6) corresponds to a fixed prefiltered resolution (128x128, 64x64, 32x32,
+    * 16x16, 8x8, 4x4).
     */
   def setSkybox(): Unit = js.native
   def setSkybox(cubemaps: js.Array[Texture]): Unit = js.native
@@ -477,7 +491,7 @@ open class Scene_ protected () extends EventHandler {
   /**
     * The base cubemap texture used as the scene's skybox, if mip level is 0. Defaults to null.
     *
-    * @type {Texture}
+    * @type {import('../platform/graphics/texture.js').Texture}
     */
   def skybox_=(arg: Texture): Unit = js.native
   

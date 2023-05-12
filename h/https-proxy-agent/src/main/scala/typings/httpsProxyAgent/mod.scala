@@ -1,95 +1,84 @@
 package typings.httpsProxyAgent
 
-import org.scalablytyped.runtime.Instantiable1
-import typings.agentBase.mod.AgentOptions
-import typings.httpsProxyAgent.distAgentMod.default
+import typings.agentBase.mod.Agent
+import typings.httpsProxyAgent.anon.Headers
+import typings.httpsProxyAgent.anon.OmitConnectionOptionshost
+import typings.httpsProxyAgent.anon.OmitTcpNetConnectOptshost
+import typings.httpsProxyAgent.httpsProxyAgentStrings.http
+import typings.httpsProxyAgent.httpsProxyAgentStrings.https
+import typings.node.httpMod.AgentOptions
 import typings.node.httpMod.OutgoingHttpHeaders
+import typings.node.netMod.TcpNetConnectOpts
+import typings.node.tlsMod.ConnectionOptions
+import typings.std.URL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  inline def apply(opts: String): default = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[default]
-  inline def apply(opts: HttpsProxyAgentOptions): default = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[default]
-  
-  @JSImport("https-proxy-agent", JSImport.Namespace)
-  @js.native
-  val ^ : js.Any = js.native
-  
   @JSImport("https-proxy-agent", "HttpsProxyAgent")
   @js.native
-  val HttpsProxyAgent: Instantiable1[/* _opts */ String | HttpsProxyAgentOptions, default] = js.native
-  type HttpsProxyAgent = default
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
-  @JSImport("https-proxy-agent", "HttpsProxyAgent")
-  @js.native
-  open class HttpsProxyAgentCls protected () extends default {
-    def this(_opts: String) = this()
-    def this(_opts: HttpsProxyAgentOptions) = this()
+  open class HttpsProxyAgent[Uri /* <: String */] protected () extends Agent {
+    def this(proxy: Uri) = this()
+    def this(proxy: URL) = this()
+    def this(proxy: Uri, opts: HttpsProxyAgentOptions[Uri]) = this()
+    def this(proxy: URL, opts: HttpsProxyAgentOptions[Uri]) = this()
+    
+    var connectOpts: TcpNetConnectOpts & ConnectionOptions = js.native
+    
+    val proxy: URL = js.native
+    
+    var proxyHeaders: OutgoingHttpHeaders = js.native
+    
+    def secureProxy: Boolean = js.native
+  }
+  /* static members */
+  object HttpsProxyAgent {
+    
+    @JSImport("https-proxy-agent", "HttpsProxyAgent")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("https-proxy-agent", "HttpsProxyAgent.protocols")
+    @js.native
+    def protocols: js.Tuple2[http, https] = js.native
+    inline def protocols_=(x: js.Tuple2[http, https]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("protocols")(x.asInstanceOf[js.Any])
   }
   
-  trait BaseHttpsProxyAgentOptions extends StObject {
+  type ConnectOpts[T] = /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof https-proxy-agent.https-proxy-agent.ConnectOptsMap ]: https-proxy-agent.https-proxy-agent.Protocol<T> extends P? https-proxy-agent.https-proxy-agent.ConnectOptsMap[P] : never}[keyof https-proxy-agent.https-proxy-agent.ConnectOptsMap] */ js.Any
+  
+  trait ConnectOptsMap extends StObject {
     
-    var headers: js.UndefOr[OutgoingHttpHeaders] = js.undefined
+    var http: OmitTcpNetConnectOptshost
     
-    var host: js.UndefOr[String | Null] = js.undefined
-    
-    var path: js.UndefOr[String | Null] = js.undefined
-    
-    var port: js.UndefOr[String | Double | Null] = js.undefined
-    
-    var secureProxy: js.UndefOr[Boolean] = js.undefined
+    var https: OmitConnectionOptionshost
   }
-  object BaseHttpsProxyAgentOptions {
+  object ConnectOptsMap {
     
-    inline def apply(): BaseHttpsProxyAgentOptions = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[BaseHttpsProxyAgentOptions]
+    inline def apply(http: OmitTcpNetConnectOptshost, https: OmitConnectionOptionshost): ConnectOptsMap = {
+      val __obj = js.Dynamic.literal(http = http.asInstanceOf[js.Any], https = https.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ConnectOptsMap]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: BaseHttpsProxyAgentOptions] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: ConnectOptsMap] (val x: Self) extends AnyVal {
       
-      inline def setHeaders(value: OutgoingHttpHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHttp(value: OmitTcpNetConnectOptshost): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
       
-      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
-      
-      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
-      
-      inline def setHostNull: Self = StObject.set(x, "host", null)
-      
-      inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
-      
-      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
-      
-      inline def setPathNull: Self = StObject.set(x, "path", null)
-      
-      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
-      
-      inline def setPort(value: String | Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
-      
-      inline def setPortNull: Self = StObject.set(x, "port", null)
-      
-      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
-      
-      inline def setSecureProxy(value: Boolean): Self = StObject.set(x, "secureProxy", value.asInstanceOf[js.Any])
-      
-      inline def setSecureProxyUndefined: Self = StObject.set(x, "secureProxy", js.undefined)
+      inline def setHttps(value: OmitConnectionOptionshost): Self = StObject.set(x, "https", value.asInstanceOf[js.Any])
     }
   }
   
-  /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped {[ P in keyof std.Omit<node.url.Url & node.net.NetConnectOpts & node.tls.ConnectionOptions, 'headers' | 'secureProxy' | 'host' | 'path' | 'port'> ]:? std.Omit<node.url.Url & node.net.NetConnectOpts & node.tls.ConnectionOptions, 'headers' | 'secureProxy' | 'host' | 'path' | 'port'>[P]} */ trait HttpsProxyAgentOptions
-    extends StObject
-       with AgentOptions
-       with BaseHttpsProxyAgentOptions
-  object HttpsProxyAgentOptions {
-    
-    inline def apply(): HttpsProxyAgentOptions = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[HttpsProxyAgentOptions]
-    }
-  }
+  type HttpsProxyAgentOptions[T] = ConnectOpts[T] & AgentOptions & Headers
+  
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately.
+    * TS definition: {{{
+    T extends / * template literal string: ${inferProtocol}:${infer_} * / string ? https-proxy-agent.https-proxy-agent.Protocol</ * import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for T * / any> : never
+    }}}
+    */
+  @js.native
+  trait Protocol[T] extends StObject
 }

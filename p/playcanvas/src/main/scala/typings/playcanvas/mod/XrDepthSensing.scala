@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** @typedef {import('./xr-manager.js').XrManager} XrManager */
 /**
   * Depth Sensing provides depth information which is reconstructed using the underlying AR system.
   * It provides the ability to query depth values (CPU path) or access a depth texture (GPU path).
@@ -13,10 +12,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * ```javascript
   * // CPU path
-  * var depthSensing = app.xr.depthSensing;
+  * const depthSensing = app.xr.depthSensing;
   * if (depthSensing.available) {
   *     // get depth in the middle of the screen, value is in meters
-  *     var depth = depthSensing.getDepth(depthSensing.width / 2, depthSensing.height / 2);
+  *     const depth = depthSensing.getDepth(depthSensing.width / 2, depthSensing.height / 2);
   * }
   * ```
   *
@@ -68,7 +67,7 @@ open class XrDepthSensing protected () extends EventHandler {
   /**
     * Create a new XrDepthSensing instance.
     *
-    * @param {XrManager} manager - WebXR Manager.
+    * @param {import('./xr-manager.js').XrManager} manager - WebXR Manager.
     * @hideconstructor
     */
   def this(manager: XrManager) = this()
@@ -110,7 +109,7 @@ open class XrDepthSensing protected () extends EventHandler {
   /* private */ var _emptyBuffer: Any = js.native
   
   /**
-    * @type {XrManager}
+    * @type {import('./xr-manager.js').XrManager}
     * @private
     */
   /* private */ var _manager: Any = js.native
@@ -154,7 +153,7 @@ open class XrDepthSensing protected () extends EventHandler {
     * @type {boolean}
     * @example
     * if (app.xr.depthSensing.available) {
-    *     var depth = app.xr.depthSensing.getDepth(x, y);
+    *     const depth = app.xr.depthSensing.getDepth(x, y);
     * }
     */
   def available: Boolean = js.native
@@ -203,7 +202,7 @@ open class XrDepthSensing protected () extends EventHandler {
     * @returns {number|null} Depth in meters or null if depth information is currently not
     * available.
     * @example
-    * var depth = app.xr.depthSensing.getDepth(u, v);
+    * const depth = app.xr.depthSensing.getDepth(u, v);
     * if (depth !== null) {
     *     // depth in meters
     * }
@@ -235,7 +234,7 @@ open class XrDepthSensing protected () extends EventHandler {
   
   /**
     * Texture that contains packed depth information. The format of this texture is
-    * {@link PIXELFORMAT_L8_A8}. It is UV transformed based on the underlying AR system which can
+    * {@link PIXELFORMAT_LA8}. It is UV transformed based on the underlying AR system which can
     * be normalized using {@link XrDepthSensing#uvMatrix}.
     *
     * @type {Texture}

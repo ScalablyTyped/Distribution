@@ -57,7 +57,8 @@ object Renderer {
       * 4. Sets the alpha value of the context to be that used by the Game Object combined with the Camera.
       * 5. Saves the context state.
       * 6. Sets the final matrix values into the context via setTransform.
-      * 7. If Renderer.antialias, or the frame.source.scaleMode is set, then imageSmoothingEnabled is set.
+      * 7. If the Game Object has a texture frame, imageSmoothingEnabled is set based on frame.source.scaleMode.
+      * 8. If the Game Object does not have a texture frame, imageSmoothingEnabled is set based on Renderer.antialias.
       * 
       * This function is only meant to be used internally. Most of the Canvas Renderer classes use it.
       * @param renderer A reference to the current active Canvas renderer.
@@ -91,7 +92,7 @@ object Renderer {
       */
     @JSImport("phaser", "Renderer.Events.POST_RENDER")
     @js.native
-    val POST_RENDER: Any = js.native
+    val POST_RENDER: String = js.native
     
     /**
       * The Pre-Render Event.
@@ -102,7 +103,7 @@ object Renderer {
       */
     @JSImport("phaser", "Renderer.Events.PRE_RENDER")
     @js.native
-    val PRE_RENDER: Any = js.native
+    val PRE_RENDER: String = js.native
     
     /**
       * The Render Event.
@@ -113,7 +114,7 @@ object Renderer {
       */
     @JSImport("phaser", "Renderer.Events.RENDER")
     @js.native
-    val RENDER: Any = js.native
+    val RENDER: String = js.native
     
     /**
       * The Renderer Resize Event.
@@ -123,7 +124,7 @@ object Renderer {
       */
     @JSImport("phaser", "Renderer.Events.RESIZE")
     @js.native
-    val RESIZE: Any = js.native
+    val RESIZE: String = js.native
   }
   
   object Snapshot {
@@ -147,10 +148,10 @@ object Renderer {
       * 
       * This is then copied to an Image object. When this loads, the results are sent
       * to the callback provided in the Snapshot Configuration object.
-      * @param sourceCanvas The canvas to take a snapshot of.
+      * @param sourceContext The WebGL context to take a snapshot of.
       * @param config The snapshot configuration object.
       */
-    inline def WebGL(sourceCanvas: HTMLCanvasElement, config: SnapshotState): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("WebGL")(sourceCanvas.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def WebGL(sourceContext: WebGLRenderingContext, config: SnapshotState): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("WebGL")(sourceContext.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   object WebGL {
@@ -190,16 +191,17 @@ object Renderer {
       * The `WebGLRenderer` owns a single instance of the Pipeline Manager, which you can access
       * via the `WebGLRenderer.pipelines` property.
       * 
-      * By default, there are 8 pipelines installed into the Pipeline Manager when Phaser boots:
+      * By default, there are 9 pipelines installed into the Pipeline Manager when Phaser boots:
       * 
       * 1. The Multi Pipeline. Responsible for all multi-texture rendering, i.e. Sprites and Tilemaps.
-      * 2. The Graphics Pipeline. Responsible for rendering Graphics and Shape objects.
-      * 3. The Rope Pipeline. Responsible for rendering the Rope Game Object.
-      * 4. The Light Pipeline. Responsible for rendering the Light Game Object.
-      * 5. The Point Light Pipeline. Responsible for rendering the Point Light Game Object.
-      * 6. The Single Pipeline. Responsible for rendering Game Objects that explicitly require one bound texture.
-      * 7. The Bitmap Mask Pipeline. Responsible for Bitmap Mask rendering.
-      * 8. The Utility Pipeline. Responsible for providing lots of handy texture manipulation functions.
+      * 2. The Rope Pipeline. Responsible for rendering the Rope Game Object.
+      * 3. The Light Pipeline. Responsible for rendering the Light Game Object.
+      * 4. The Point Light Pipeline. Responsible for rendering the Point Light Game Object.
+      * 5. The Single Pipeline. Responsible for rendering Game Objects that explicitly require one bound texture.
+      * 6. The Bitmap Mask Pipeline. Responsible for Bitmap Mask rendering.
+      * 7. The Utility Pipeline. Responsible for providing lots of handy texture manipulation functions.
+      * 8. The Mobile Pipeline. Responsible for rendering on mobile with single-bound textures.
+      * 9. The FX Pipeline. Responsible for rendering Game Objects with special FX applied to them.
       * 
       * You can add your own custom pipeline via the `PipelineManager.add` method. Pipelines are
       * identified by unique string-based keys.
@@ -325,43 +327,450 @@ object Renderer {
         val RESIZE: Any = js.native
       }
       
+      object FX {
+        
+        /**
+          * The Barrel FX Pipeline.
+          * 
+          * A barrel effect allows you to apply either a 'pinch' or 'expand' distortion to
+          * a Game Object. The amount of the effect can be modified in real-time.
+          * 
+          * A Barrel effect is added to a Game Object via the FX component:
+          * 
+          * ```js
+          * const sprite = this.add.sprite();
+          * 
+          * sprite.postFX.addBarrel();
+          * ```
+          */
+        @JSImport("phaser", "Renderer.WebGL.Pipelines.FX.BarrelFXPipeline")
+        @js.native
+        open class BarrelFXPipeline protected ()
+          extends StObject
+             with typings.phaser.Phaser.Renderer.WebGL.Pipelines.FX.BarrelFXPipeline {
+          /**
+            * 
+            * @param game A reference to the Phaser Game instance.
+            */
+          def this(game: typings.phaser.Phaser.Game) = this()
+        }
+        
+        /**
+          * The Bloom FX Pipeline.
+          * 
+          * Bloom is an effect used to reproduce an imaging artifact of real-world cameras.
+          * The effect produces fringes of light extending from the borders of bright areas in an image,
+          * contributing to the illusion of an extremely bright light overwhelming the
+          * camera or eye capturing the scene.
+          * 
+          * A Bloom effect is added to a Game Object via the FX component:
+          * 
+          * ```js
+          * const sprite = this.add.sprite();
+          * 
+          * sprite.postFX.addBloom();
+          * ```
+          */
+        @JSImport("phaser", "Renderer.WebGL.Pipelines.FX.BloomFXPipeline")
+        @js.native
+        open class BloomFXPipeline protected ()
+          extends StObject
+             with typings.phaser.Phaser.Renderer.WebGL.Pipelines.FX.BloomFXPipeline {
+          /**
+            * 
+            * @param game A reference to the Phaser Game instance.
+            */
+          def this(game: typings.phaser.Phaser.Game) = this()
+        }
+        
+        /**
+          * The Blur FX Pipeline.
+          * 
+          * A Gaussian blur is the result of blurring an image by a Gaussian function. It is a widely used effect,
+          * typically to reduce image noise and reduce detail. The visual effect of this blurring technique is a
+          * smooth blur resembling that of viewing the image through a translucent screen, distinctly different
+          * from the bokeh effect produced by an out-of-focus lens or the shadow of an object under usual illumination.
+          * 
+          * A Blur effect is added to a Game Object via the FX component:
+          * 
+          * ```js
+          * const sprite = this.add.sprite();
+          * 
+          * sprite.postFX.addBlur();
+          * ```
+          */
+        @JSImport("phaser", "Renderer.WebGL.Pipelines.FX.BlurFXPipeline")
+        @js.native
+        open class BlurFXPipeline protected ()
+          extends StObject
+             with typings.phaser.Phaser.Renderer.WebGL.Pipelines.FX.BlurFXPipeline {
+          /**
+            * 
+            * @param game A reference to the Phaser Game instance.
+            */
+          def this(game: typings.phaser.Phaser.Game) = this()
+        }
+        
+        /**
+          * The Bokeh FX Pipeline.
+          * 
+          * Bokeh refers to a visual effect that mimics the photographic technique of creating a shallow depth of field.
+          * This effect is used to emphasize the game's main subject or action, by blurring the background or foreground
+          * elements, resulting in a more immersive and visually appealing experience. It is achieved through rendering
+          * techniques that simulate the out-of-focus areas, giving a sense of depth and realism to the game's graphics.
+          * 
+          * This effect can also be used to generate a Tilt Shift effect, which is a technique used to create a miniature
+          * effect by blurring everything except a small area of the image. This effect is achieved by blurring the
+          * top and bottom elements, while keeping the center area in focus.
+          * 
+          * A Bokeh effect is added to a Game Object via the FX component:
+          * 
+          * ```js
+          * const sprite = this.add.sprite();
+          * 
+          * sprite.postFX.addBokeh();
+          * ```
+          */
+        @JSImport("phaser", "Renderer.WebGL.Pipelines.FX.BokehFXPipeline")
+        @js.native
+        open class BokehFXPipeline protected ()
+          extends StObject
+             with typings.phaser.Phaser.Renderer.WebGL.Pipelines.FX.BokehFXPipeline {
+          /**
+            * 
+            * @param game A reference to the Phaser Game instance.
+            */
+          def this(game: typings.phaser.Phaser.Game) = this()
+        }
+        
+        /**
+          * The Circle FX Pipeline.
+          * 
+          * This effect will draw a circle around the texture of the Game Object, effectively masking off
+          * any area outside of the circle without the need for an actual mask. You can control the thickness
+          * of the circle, the color of the circle and the color of the background, should the texture be
+          * transparent. You can also control the feathering applied to the circle, allowing for a harsh or soft edge.
+          * 
+          * Please note that adding this effect to a Game Object will not change the input area or physics body of
+          * the Game Object, should it have one.
+          * 
+          * A Circle effect is added to a Game Object via the FX component:
+          * 
+          * ```js
+          * const sprite = this.add.sprite();
+          * 
+          * sprite.postFX.addCircle();
+          * ```
+          */
+        @JSImport("phaser", "Renderer.WebGL.Pipelines.FX.CircleFXPipeline")
+        @js.native
+        open class CircleFXPipeline protected ()
+          extends StObject
+             with typings.phaser.Phaser.Renderer.WebGL.Pipelines.FX.CircleFXPipeline {
+          /**
+            * 
+            * @param game A reference to the Phaser Game instance.
+            */
+          def this(game: typings.phaser.Phaser.Game) = this()
+        }
+        
+        /**
+          * The ColorMatrix FX Pipeline.
+          * 
+          * The color matrix effect is a visual technique that involves manipulating the colors of an image
+          * or scene using a mathematical matrix. This process can adjust hue, saturation, brightness, and contrast,
+          * allowing developers to create various stylistic appearances or mood settings within the game.
+          * Common applications include simulating different lighting conditions, applying color filters,
+          * or achieving a specific visual style.
+          * 
+          * A ColorMatrix effect is added to a Game Object via the FX component:
+          * 
+          * ```js
+          * const sprite = this.add.sprite();
+          * 
+          * sprite.postFX.addColorMatrix();
+          * ```
+          */
+        @JSImport("phaser", "Renderer.WebGL.Pipelines.FX.ColorMatrixFXPipeline")
+        @js.native
+        open class ColorMatrixFXPipeline protected ()
+          extends StObject
+             with typings.phaser.Phaser.Renderer.WebGL.WebGLPipeline {
+          /**
+            * 
+            * @param game A reference to the Phaser Game instance.
+            */
+          def this(game: typings.phaser.Phaser.Game) = this()
+        }
+        
+        /**
+          * The Displacement FX Pipeline.
+          * 
+          * The displacement effect is a visual technique that alters the position of pixels in an image
+          * or texture based on the values of a displacement map. This effect is used to create the illusion
+          * of depth, surface irregularities, or distortion in otherwise flat elements. It can be applied to
+          * characters, objects, or backgrounds to enhance realism, convey movement, or achieve various
+          * stylistic appearances.
+          * 
+          * A Displacement effect is added to a Game Object via the FX component:
+          * 
+          * ```js
+          * const sprite = this.add.sprite();
+          * 
+          * sprite.postFX.addDisplacement();
+          * ```
+          */
+        @JSImport("phaser", "Renderer.WebGL.Pipelines.FX.DisplacementFXPipeline")
+        @js.native
+        open class DisplacementFXPipeline protected ()
+          extends StObject
+             with typings.phaser.Phaser.Renderer.WebGL.Pipelines.FX.DisplacementFXPipeline {
+          /**
+            * 
+            * @param game A reference to the Phaser Game instance.
+            */
+          def this(game: typings.phaser.Phaser.Game) = this()
+        }
+        
+        /**
+          * The Glow FX Pipeline.
+          * 
+          * The glow effect is a visual technique that creates a soft, luminous halo around game objects,
+          * characters, or UI elements. This effect is used to emphasize importance, enhance visual appeal,
+          * or convey a sense of energy, magic, or otherworldly presence. The effect can also be set on
+          * the inside of the Game Object. The color and strength of the glow can be modified.
+          * 
+          * A Glow effect is added to a Game Object via the FX component:
+          * 
+          * ```js
+          * const sprite = this.add.sprite();
+          * 
+          * sprite.postFX.addGlow();
+          * ```
+          */
+        @JSImport("phaser", "Renderer.WebGL.Pipelines.FX.GlowFXPipeline")
+        @js.native
+        open class GlowFXPipeline protected ()
+          extends StObject
+             with typings.phaser.Phaser.Renderer.WebGL.Pipelines.FX.GlowFXPipeline {
+          /**
+            * 
+            * @param game A reference to the Phaser Game instance.
+            * @param config The configuration options for this pipeline.
+            */
+          def this(game: typings.phaser.Phaser.Game, config: js.Object) = this()
+        }
+        
+        /**
+          * The Gradient FX Pipeline.
+          * 
+          * The gradient overlay effect is a visual technique where a smooth color transition is applied over Game Objects,
+          * such as sprites or UI components. This effect is used to enhance visual appeal, emphasize depth, or create
+          * stylistic and atmospheric variations. It can also be utilized to convey information, such as representing
+          * progress or health status through color changes.
+          * 
+          * A Gradient effect is added to a Game Object via the FX component:
+          * 
+          * ```js
+          * const sprite = this.add.sprite();
+          * 
+          * sprite.postFX.addGradient();
+          * ```
+          */
+        @JSImport("phaser", "Renderer.WebGL.Pipelines.FX.GradientFXPipeline")
+        @js.native
+        open class GradientFXPipeline protected ()
+          extends StObject
+             with typings.phaser.Phaser.Renderer.WebGL.Pipelines.FX.GradientFXPipeline {
+          /**
+            * 
+            * @param game A reference to the Phaser Game instance.
+            */
+          def this(game: typings.phaser.Phaser.Game) = this()
+        }
+        
+        /**
+          * The Pixelate FX Pipeline.
+          * 
+          * The pixelate effect is a visual technique that deliberately reduces the resolution or detail of an image,
+          * creating a blocky or mosaic appearance composed of large, visible pixels. This effect can be used for stylistic
+          * purposes, as a homage to retro gaming, or as a means to obscure certain elements within the game, such as
+          * during a transition or to censor specific content.
+          * 
+          * A Pixelate effect is added to a Game Object via the FX component:
+          * 
+          * ```js
+          * const sprite = this.add.sprite();
+          * 
+          * sprite.postFX.addPixelate();
+          * ```
+          */
+        @JSImport("phaser", "Renderer.WebGL.Pipelines.FX.PixelateFXPipeline")
+        @js.native
+        open class PixelateFXPipeline protected ()
+          extends StObject
+             with typings.phaser.Phaser.Renderer.WebGL.Pipelines.FX.PixelateFXPipeline {
+          /**
+            * 
+            * @param game A reference to the Phaser Game instance.
+            */
+          def this(game: typings.phaser.Phaser.Game) = this()
+        }
+        
+        /**
+          * The Shadow FX Pipeline.
+          * 
+          * The shadow effect is a visual technique used to create the illusion of depth and realism by adding darker,
+          * offset silhouettes or shapes beneath game objects, characters, or environments. These simulated shadows
+          * help to enhance the visual appeal and immersion, making the 2D game world appear more dynamic and three-dimensional.
+          * 
+          * A Shadow effect is added to a Game Object via the FX component:
+          * 
+          * ```js
+          * const sprite = this.add.sprite();
+          * 
+          * sprite.postFX.addShadow();
+          * ```
+          */
+        @JSImport("phaser", "Renderer.WebGL.Pipelines.FX.ShadowFXPipeline")
+        @js.native
+        open class ShadowFXPipeline protected ()
+          extends StObject
+             with typings.phaser.Phaser.Renderer.WebGL.Pipelines.FX.ShadowFXPipeline {
+          /**
+            * 
+            * @param game A reference to the Phaser Game instance.
+            */
+          def this(game: typings.phaser.Phaser.Game) = this()
+        }
+        
+        /**
+          * The Shine FX Pipeline.
+          * 
+          * The shine effect is a visual technique that simulates the appearance of reflective
+          * or glossy surfaces by passing a light beam across a Game Object. This effect is used to
+          * enhance visual appeal, emphasize certain features, and create a sense of depth or
+          * material properties.
+          * 
+          * A Shine effect is added to a Game Object via the FX component:
+          * 
+          * ```js
+          * const sprite = this.add.sprite();
+          * 
+          * sprite.postFX.addShine();
+          * ```
+          */
+        @JSImport("phaser", "Renderer.WebGL.Pipelines.FX.ShineFXPipeline")
+        @js.native
+        open class ShineFXPipeline protected ()
+          extends StObject
+             with typings.phaser.Phaser.Renderer.WebGL.Pipelines.FX.ShineFXPipeline {
+          /**
+            * 
+            * @param game A reference to the Phaser Game instance.
+            */
+          def this(game: typings.phaser.Phaser.Game) = this()
+        }
+        
+        /**
+          * The Vignette FX Pipeline.
+          * 
+          * The vignette effect is a visual technique where the edges of the screen, or a Game Object, gradually darken or blur,
+          * creating a frame-like appearance. This effect is used to draw the player's focus towards the central action or subject,
+          * enhance immersion, and provide a cinematic or artistic quality to the game's visuals.
+          * 
+          * A Vignette effect is added to a Game Object via the FX component:
+          * 
+          * ```js
+          * const sprite = this.add.sprite();
+          * 
+          * sprite.postFX.addVignette();
+          * ```
+          */
+        @JSImport("phaser", "Renderer.WebGL.Pipelines.FX.VignetteFXPipeline")
+        @js.native
+        open class VignetteFXPipeline protected ()
+          extends StObject
+             with typings.phaser.Phaser.Renderer.WebGL.Pipelines.FX.VignetteFXPipeline {
+          /**
+            * 
+            * @param game A reference to the Phaser Game instance.
+            */
+          def this(game: typings.phaser.Phaser.Game) = this()
+        }
+        
+        /**
+          * The Wipe FX Pipeline.
+          * 
+          * The wipe or reveal effect is a visual technique that gradually uncovers or conceals elements
+          * in the game, such as images, text, or scene transitions. This effect is often used to create
+          * a sense of progression, reveal hidden content, or provide a smooth and visually appealing transition
+          * between game states.
+          * 
+          * You can set both the direction and the axis of the wipe effect. The following combinations are possible:
+          * 
+          * * left to right: direction 0, axis 0
+          * * right to left: direction 1, axis 0
+          * * top to bottom: direction 1, axis 1
+          * * bottom to top: direction 1, axis 0
+          * 
+          * It is up to you to set the `progress` value yourself, i.e. via a Tween, in order to transition the effect.
+          * 
+          * A Wipe effect is added to a Game Object via the FX component:
+          * 
+          * ```js
+          * const sprite = this.add.sprite();
+          * 
+          * sprite.postFX.addWipe();
+          * sprite.postFX.addReveal();
+          * ```
+          */
+        @JSImport("phaser", "Renderer.WebGL.Pipelines.FX.WipeFXPipeline")
+        @js.native
+        open class WipeFXPipeline protected ()
+          extends StObject
+             with typings.phaser.Phaser.Renderer.WebGL.Pipelines.FX.WipeFXPipeline {
+          /**
+            * 
+            * @param game A reference to the Phaser Game instance.
+            */
+          def this(game: typings.phaser.Phaser.Game) = this()
+        }
+      }
+      
+      /**
+        * The FXPipeline is a built-in pipeline that controls the application of FX Controllers during
+        * the rendering process. It maintains all of the FX shaders, instances of Post FX Pipelines and
+        * is responsible for rendering.
+        * 
+        * You should rarely interact with this pipeline directly. Instead, use the FX Controllers that
+        * is part of the Game Object class in order to manage the effects.
+        */
+      @JSImport("phaser", "Renderer.WebGL.Pipelines.FXPipeline")
+      @js.native
+      open class FXPipeline protected ()
+        extends StObject
+           with typings.phaser.Phaser.Renderer.WebGL.Pipelines.FXPipeline {
+        /**
+          * 
+          * @param game A reference to the Phaser game instance.
+          */
+        def this(game: typings.phaser.Phaser.Game) = this()
+      }
+      
+      /**
+        * The Special FX Pipeline.
+        */
+      @JSImport("phaser", "Renderer.WebGL.Pipelines.FX_PIPELINE")
+      @js.native
+      val FX_PIPELINE: String = js.native
+      
       /**
         * The Graphics and Shapes Pipeline.
         */
       @JSImport("phaser", "Renderer.WebGL.Pipelines.GRAPHICS_PIPELINE")
       @js.native
       val GRAPHICS_PIPELINE: String = js.native
-      
-      /**
-        * The Graphics Pipeline is the rendering pipeline used by Phaser in WebGL when drawing
-        * primitive geometry objects, such as the Graphics Game Object, or the Shape Game Objects
-        * such as Arc, Line, Rectangle and Star. It handles the preperation and batching of related vertices.
-        * 
-        * Prior to Phaser v3.50 the functions of this pipeline were merged with the `TextureTintPipeline`.
-        * 
-        * The fragment shader it uses can be found in `shaders/src/Graphics.frag`.
-        * The vertex shader it uses can be found in `shaders/src/Graphics.vert`.
-        * 
-        * The default shader attributes for this pipeline are:
-        * 
-        * `inPosition` (vec2)
-        * `inColor` (vec4, normalized)
-        * 
-        * The default shader uniforms for this pipeline are:
-        * 
-        * `uProjectionMatrix` (mat4)
-        */
-      @JSImport("phaser", "Renderer.WebGL.Pipelines.GraphicsPipeline")
-      @js.native
-      open class GraphicsPipeline protected ()
-        extends StObject
-           with typings.phaser.Phaser.Renderer.WebGL.Pipelines.GraphicsPipeline {
-        /**
-          * 
-          * @param config The configuration options for this pipeline.
-          */
-        def this(config: WebGLPipelineConfig) = this()
-      }
       
       /**
         * The Light 2D Pipeline.
@@ -418,11 +827,63 @@ object Renderer {
       }
       
       /**
+        * The Mobile Texture Pipeline.
+        */
+      @JSImport("phaser", "Renderer.WebGL.Pipelines.MOBILE_PIPELINE")
+      @js.native
+      val MOBILE_PIPELINE: String = js.native
+      
+      /**
         * The Multi Texture Pipeline.
         */
       @JSImport("phaser", "Renderer.WebGL.Pipelines.MULTI_PIPELINE")
       @js.native
       val MULTI_PIPELINE: String = js.native
+      
+      /**
+        * The Mobile Pipeline is the core 2D texture rendering pipeline used by Phaser in WebGL
+        * when the device running the game is detected to be a mobile.
+        * 
+        * You can control the use of this pipeline by setting the Game Configuration
+        * property `autoMobilePipeline`. If set to `false` then all devices will use
+        * the Multi Tint Pipeline. You can also call the `PipelineManager.setDefaultPipeline`
+        * method at run-time, rather than boot-time, to modify the default Game Object
+        * pipeline.
+        * 
+        * Virtually all Game Objects use this pipeline by default, including Sprites, Graphics
+        * and Tilemaps. It handles the batching of quads and tris, as well as methods for
+        * drawing and batching geometry data.
+        * 
+        * The fragment shader it uses can be found in `shaders/src/Mobile.frag`.
+        * The vertex shader it uses can be found in `shaders/src/Mobile.vert`.
+        * 
+        * The default shader attributes for this pipeline are:
+        * 
+        * `inPosition` (vec2, offset 0)
+        * `inTexCoord` (vec2, offset 8)
+        * `inTexId` (float, offset 16)
+        * `inTintEffect` (float, offset 20)
+        * `inTint` (vec4, offset 24, normalized)
+        * 
+        * Note that `inTexId` isn't used in the shader, it's just kept to allow us
+        * to piggy-back on the Multi Tint Pipeline functions.
+        * 
+        * The default shader uniforms for this pipeline are:
+        * 
+        * `uProjectionMatrix` (mat4)
+        * `uMainSampler` (sampler2D)
+        */
+      @JSImport("phaser", "Renderer.WebGL.Pipelines.MobilePipeline")
+      @js.native
+      open class MobilePipeline protected ()
+        extends StObject
+           with typings.phaser.Phaser.Renderer.WebGL.Pipelines.MobilePipeline {
+        /**
+          * 
+          * @param config The configuration options for this pipeline.
+          */
+        def this(config: WebGLPipelineConfig) = this()
+      }
       
       /**
         * The Multi Pipeline is the core 2D texture rendering pipeline used by Phaser in WebGL.
@@ -452,12 +913,14 @@ object Renderer {
         * `uProjectionMatrix` (mat4)
         * `uMainSampler` (sampler2D array)
         * 
-        * If you wish to create a custom pipeline extending from this one, you can use two string
-        * declarations in your fragment shader source: `%count%` and `%forloop%`, where `count` is
-        * used to set the number of `sampler2Ds` available, and `forloop` is a block of GLSL code
-        * that will get the currently bound texture unit.
+        * If you wish to create a custom pipeline extending from this one, you should use the string
+        * declaration `%count%` in your fragment shader source, which is used to set the number of
+        * `sampler2Ds` available. Also add `%getSampler%` so Phaser can inject the getSampler glsl function.
+        * This function can be used to get the pixel vec4 from the texture:
         * 
-        * This pipeline will automatically inject that code for you, should those values exist
+        * `vec4 texture = getSampler(int(outTexId), outTexCoord);`
+        * 
+        * This pipeline will automatically inject the getSampler function for you, should the value exist
         * in your shader source. If you wish to handle this yourself, you can also use the
         * function `Utils.parseFragmentShaderMaxTextures`.
         * 
@@ -601,6 +1064,35 @@ object Renderer {
       open class PostFXPipeline protected ()
         extends StObject
            with typings.phaser.Phaser.Renderer.WebGL.Pipelines.PostFXPipeline {
+        /**
+          * 
+          * @param config The configuration options for this pipeline.
+          */
+        def this(config: WebGLPipelineConfig) = this()
+      }
+      
+      /**
+        * The Pre FX Pipeline is a special kind of pipeline designed specifically for applying
+        * special effects to Game Objects before they are rendered. Where-as the Post FX Pipeline applies an effect _after_ the
+        * object has been rendered, the Pre FX Pipeline allows you to control the rendering of
+        * the object itself - passing it off to its own texture, where multi-buffer compositing
+        * can take place.
+        * 
+        * You can only use the PreFX Pipeline on the following types of Game Objects, or those
+        * that extend from them:
+        * 
+        * Sprite
+        * Image
+        * Text
+        * TileSprite
+        * RenderTexture
+        * Video
+        */
+      @JSImport("phaser", "Renderer.WebGL.Pipelines.PreFXPipeline")
+      @js.native
+      open class PreFXPipeline protected ()
+        extends StObject
+           with typings.phaser.Phaser.Renderer.WebGL.Pipelines.PreFXPipeline {
         /**
           * 
           * @param config The configuration options for this pipeline.
@@ -760,131 +1252,19 @@ object Renderer {
         * @param minFilter The minFilter mode of the texture when created. 0 is `LINEAR`, 1 is `NEAREST`. Default 0.
         * @param autoClear Automatically clear this framebuffer when bound? Default true.
         * @param autoResize Automatically resize this Render Target if the WebGL Renderer resizes? Default false.
+        * @param addDepthBuffer Add a DEPTH_STENCIL and attachment to this Render Target? Default true.
+        * @param forceClamp Force the texture to use the CLAMP_TO_EDGE wrap mode, even if a power of two? Default true.
         */
-      def this(renderer: typings.phaser.Phaser.Renderer.WebGL.WebGLRenderer, width: Double, height: Double) = this()
       def this(
         renderer: typings.phaser.Phaser.Renderer.WebGL.WebGLRenderer,
         width: Double,
         height: Double,
-        scale: Double
-      ) = this()
-      def this(
-        renderer: typings.phaser.Phaser.Renderer.WebGL.WebGLRenderer,
-        width: Double,
-        height: Double,
-        scale: Double,
-        minFilter: Double
-      ) = this()
-      def this(
-        renderer: typings.phaser.Phaser.Renderer.WebGL.WebGLRenderer,
-        width: Double,
-        height: Double,
-        scale: Unit,
-        minFilter: Double
-      ) = this()
-      def this(
-        renderer: typings.phaser.Phaser.Renderer.WebGL.WebGLRenderer,
-        width: Double,
-        height: Double,
-        scale: Double,
-        minFilter: Double,
-        autoClear: Boolean
-      ) = this()
-      def this(
-        renderer: typings.phaser.Phaser.Renderer.WebGL.WebGLRenderer,
-        width: Double,
-        height: Double,
-        scale: Double,
-        minFilter: Unit,
-        autoClear: Boolean
-      ) = this()
-      def this(
-        renderer: typings.phaser.Phaser.Renderer.WebGL.WebGLRenderer,
-        width: Double,
-        height: Double,
-        scale: Unit,
-        minFilter: Double,
-        autoClear: Boolean
-      ) = this()
-      def this(
-        renderer: typings.phaser.Phaser.Renderer.WebGL.WebGLRenderer,
-        width: Double,
-        height: Double,
-        scale: Unit,
-        minFilter: Unit,
-        autoClear: Boolean
-      ) = this()
-      def this(
-        renderer: typings.phaser.Phaser.Renderer.WebGL.WebGLRenderer,
-        width: Double,
-        height: Double,
-        scale: Double,
-        minFilter: Double,
-        autoClear: Boolean,
-        autoResize: Boolean
-      ) = this()
-      def this(
-        renderer: typings.phaser.Phaser.Renderer.WebGL.WebGLRenderer,
-        width: Double,
-        height: Double,
-        scale: Double,
-        minFilter: Double,
-        autoClear: Unit,
-        autoResize: Boolean
-      ) = this()
-      def this(
-        renderer: typings.phaser.Phaser.Renderer.WebGL.WebGLRenderer,
-        width: Double,
-        height: Double,
-        scale: Double,
-        minFilter: Unit,
-        autoClear: Boolean,
-        autoResize: Boolean
-      ) = this()
-      def this(
-        renderer: typings.phaser.Phaser.Renderer.WebGL.WebGLRenderer,
-        width: Double,
-        height: Double,
-        scale: Double,
-        minFilter: Unit,
-        autoClear: Unit,
-        autoResize: Boolean
-      ) = this()
-      def this(
-        renderer: typings.phaser.Phaser.Renderer.WebGL.WebGLRenderer,
-        width: Double,
-        height: Double,
-        scale: Unit,
-        minFilter: Double,
-        autoClear: Boolean,
-        autoResize: Boolean
-      ) = this()
-      def this(
-        renderer: typings.phaser.Phaser.Renderer.WebGL.WebGLRenderer,
-        width: Double,
-        height: Double,
-        scale: Unit,
-        minFilter: Double,
-        autoClear: Unit,
-        autoResize: Boolean
-      ) = this()
-      def this(
-        renderer: typings.phaser.Phaser.Renderer.WebGL.WebGLRenderer,
-        width: Double,
-        height: Double,
-        scale: Unit,
-        minFilter: Unit,
-        autoClear: Boolean,
-        autoResize: Boolean
-      ) = this()
-      def this(
-        renderer: typings.phaser.Phaser.Renderer.WebGL.WebGLRenderer,
-        width: Double,
-        height: Double,
-        scale: Unit,
-        minFilter: Unit,
-        autoClear: Unit,
-        autoResize: Boolean
+        scale: js.UndefOr[Double],
+        minFilter: js.UndefOr[Double],
+        autoClear: js.UndefOr[Boolean],
+        autoResize: js.UndefOr[Boolean],
+        addDepthBuffer: js.UndefOr[Boolean],
+        forceClamp: js.UndefOr[Boolean]
       ) = this()
     }
     
@@ -927,8 +1307,10 @@ object Renderer {
       val ^ : js.Any = js.native
       
       /**
-        * Check to see how many texture units the GPU supports, based on the given config value.
-        * Then tests this against the maximum number of iterations GLSL can support.
+        * Check to see how many texture units the GPU supports in a fragment shader
+        * and if the value specific in the game config is allowed.
+        * 
+        * This value is hard-clamped to 16 for performance reasons on Android devices.
         * @param gl The WebGLContext used to create the shaders.
         * @param maxTextures The Game Config maxTextures value.
         */
@@ -973,6 +1355,19 @@ object Renderer {
         * @param maxTextures The number of maxTextures value.
         */
       inline def parseFragmentShaderMaxTextures(fragmentShaderSource: String, maxTextures: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFragmentShaderMaxTextures")(fragmentShaderSource.asInstanceOf[js.Any], maxTextures.asInstanceOf[js.Any])).asInstanceOf[String]
+      
+      /**
+        * Takes the Glow FX Shader source and parses out the __SIZE__ and __DIST__
+        * consts with the configuration values.
+        * @param shader The Fragment Shader source code to operate on.
+        * @param game The Phaser Game instance.
+        * @param quality The quality of the glow (defaults to 0.1)
+        * @param distance The distance of the glow (defaults to 10)
+        */
+      inline def setGlowQuality(shader: String, game: typings.phaser.Phaser.Game): String = (^.asInstanceOf[js.Dynamic].applyDynamic("setGlowQuality")(shader.asInstanceOf[js.Any], game.asInstanceOf[js.Any])).asInstanceOf[String]
+      inline def setGlowQuality(shader: String, game: typings.phaser.Phaser.Game, quality: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("setGlowQuality")(shader.asInstanceOf[js.Any], game.asInstanceOf[js.Any], quality.asInstanceOf[js.Any])).asInstanceOf[String]
+      inline def setGlowQuality(shader: String, game: typings.phaser.Phaser.Game, quality: Double, distance: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("setGlowQuality")(shader.asInstanceOf[js.Any], game.asInstanceOf[js.Any], quality.asInstanceOf[js.Any], distance.asInstanceOf[js.Any])).asInstanceOf[String]
+      inline def setGlowQuality(shader: String, game: typings.phaser.Phaser.Game, quality: Unit, distance: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("setGlowQuality")(shader.asInstanceOf[js.Any], game.asInstanceOf[js.Any], quality.asInstanceOf[js.Any], distance.asInstanceOf[js.Any])).asInstanceOf[String]
     }
     
     /**

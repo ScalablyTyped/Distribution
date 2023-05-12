@@ -137,10 +137,10 @@ object libStreamObjectMod {
     extends StObject
        with Map[Keys, Any] {
     
-    // tslint:disable-next-line:no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
     def get[K /* <: /* keyof barnard59-core.barnard59-core/lib/StreamObject.Variables */ String */](key: K): /* import warning: importer.ImportType#apply Failed type conversion: barnard59-core.barnard59-core/lib/StreamObject.Variables[/ * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof key * / any] */ js.Any = js.native
     
-    // tslint:disable-next-line:no-unnecessary-generics
+    // eslint-disable-next-line no-unnecessary-generics
     def set[K /* <: /* keyof barnard59-core.barnard59-core/lib/StreamObject.Variables */ String */](key: K): this.type = js.native
     def set[K /* <: /* keyof barnard59-core.barnard59-core/lib/StreamObject.Variables */ String */](
       key: K,

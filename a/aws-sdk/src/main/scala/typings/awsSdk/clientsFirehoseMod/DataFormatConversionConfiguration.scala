@@ -22,7 +22,7 @@ trait DataFormatConversionConfiguration extends StObject {
   var OutputFormatConfiguration: js.UndefOr[typings.awsSdk.clientsFirehoseMod.OutputFormatConfiguration] = js.undefined
   
   /**
-    * Specifies the AWS Glue Data Catalog table that contains the column information. This parameter is required if Enabled is set to true.
+    * Specifies the Amazon Web Services Glue Data Catalog table that contains the column information. This parameter is required if Enabled is set to true.
     */
   var SchemaConfiguration: js.UndefOr[typings.awsSdk.clientsFirehoseMod.SchemaConfiguration] = js.undefined
 }

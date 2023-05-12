@@ -10,6 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 open class TagResourceCommand protected ()
   extends typings.awsSdkClientCognitoIdentity.distTypesCommandsTagResourceCommandMod.TagResourceCommand {
+  /**
+    * @public
+    */
   def this(input: TagResourceCommandInput) = this()
 }
 /* static members */

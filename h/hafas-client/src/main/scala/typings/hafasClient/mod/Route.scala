@@ -14,9 +14,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A route represents a single set of stations, of a single line.
-  */
 trait Route extends StObject {
   
   var id: String

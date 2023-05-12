@@ -1,5 +1,6 @@
 package typings.three
 
+import typings.three.examplesJsmPostprocessingPassMod.FullScreenQuad
 import typings.three.examplesJsmPostprocessingPassMod.Pass
 import typings.three.srcThreeMod.Camera
 import typings.three.srcThreeMod.Color
@@ -20,7 +21,7 @@ object examplesJsmPostprocessingBokehPassMod {
     
     var camera: Camera = js.native
     
-    var fsQuad: js.Object = js.native
+    var fsQuad: FullScreenQuad = js.native
     
     var materialBokeh: ShaderMaterial = js.native
     

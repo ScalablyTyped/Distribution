@@ -667,19 +667,19 @@ object Input {
     /**
       * A reference to the Keyboard Manager class, if enabled via the `input.keyboard` Game Config property.
       */
-    var keyboard: KeyboardManager = js.native
+    var keyboard: KeyboardManager | Null = js.native
     
     /**
       * A reference to the Mouse Manager class, if enabled via the `input.mouse` Game Config property.
       */
-    var mouse: MouseManager = js.native
+    var mouse: MouseManager | Null = js.native
     
     /**
       * The mouse has its own unique Pointer object, which you can reference directly if making a _desktop specific game_.
       * If you are supporting both desktop and touch devices then do not use this property, instead use `activePointer`
       * which will always map to the most recently interacted pointer.
       */
-    var mousePointer: Pointer = js.native
+    var mousePointer: Pointer | Null = js.native
     
     /**
       * Checks if the given x and y coordinate are within the hit area of the Game Object.
@@ -863,7 +863,7 @@ object Input {
       * at any time, by passing it to `InputPlugin.enable`.
       * @param gameObject The Game Object to have its input system disabled.
       */
-    def disable(gameObject: GameObject): Unit = js.native
+    def disable(gameObject: GameObject): this.type = js.native
     
     /**
       * A reference to the Scene Display List. This property is set during the `boot` method.
@@ -964,7 +964,7 @@ object Input {
       * An instance of the Gamepad Plugin class, if enabled via the `input.gamepad` Scene or Game Config property.
       * Use this to create access Gamepads connected to the browser and respond to gamepad buttons.
       */
-    var gamepad: GamepadPlugin = js.native
+    var gamepad: GamepadPlugin | Null = js.native
     
     /**
       * Returns the drag state of the given Pointer for this Input Plugin.
@@ -1005,7 +1005,7 @@ object Input {
       * An instance of the Keyboard Plugin class, if enabled via the `input.keyboard` Scene or Game Config property.
       * Use this to create Key objects and listen for keyboard specific events.
       */
-    var keyboard: KeyboardPlugin = js.native
+    var keyboard: KeyboardPlugin | Null = js.native
     
     /**
       * Creates a function that can be passed to `setInteractive`, `enable` or `setHitArea` that will handle
@@ -1049,7 +1049,7 @@ object Input {
       * 
       * If you just wish to get access to the mouse pointer, use the `mousePointer` property instead.
       */
-    var mouse: MouseManager = js.native
+    var mouse: MouseManager | Null = js.native
     
     /**
       * The mouse has its own unique Pointer object, which you can reference directly if making a _desktop specific game_.
@@ -1142,6 +1142,14 @@ object Input {
       * @param gameObject The Game Object to remove the input debug shape from.
       */
     def removeDebug(gameObject: GameObject): this.type = js.native
+    
+    /**
+      * Loops through all of the Input Manager Pointer instances and calls `reset` on them.
+      * 
+      * Use this function if you find that input has been stolen from Phaser via a 3rd
+      * party component, such as Vue, and you need to tell Phaser to reset the Pointer states.
+      */
+    def resetPointers(): Unit = js.native
     
     /**
       * A reference to the Scene that this Input Plugin is responsible for.
@@ -1508,7 +1516,7 @@ object Input {
         * 
         * If the key is not currently down it will return zero.
         * 
-        * The get the duration the Key was held down for in the previous up-down cycle,
+        * To get the duration the Key was held down for in the previous up-down cycle,
         * use the `Key.duration` property value instead.
         */
       def getDuration(): Double = js.native
@@ -1570,6 +1578,8 @@ object Input {
       
       /**
         * Resets this Key object back to its default un-pressed state.
+        * 
+        * As of version 3.60.0 it no longer resets the `enabled` or `preventDefault` flags.
         */
       def reset(): this.type = js.native
       
@@ -1966,7 +1976,8 @@ object Input {
       * Scene to stop all input, or `this.input.keyboard.preventDefault = false` to stop a Scene halting input on another Scene.
       * 
       * _Note_: Many keyboards are unable to process certain combinations of keys due to hardware limitations known as ghosting.
-      * See http://www.html5gamedevs.com/topic/4876-impossible-to-use-more-than-2-keyboard-input-buttons-at-the-same-time/ for more details.
+      * See http://www.html5gamedevs.com/topic/4876-impossible-to-use-more-than-2-keyboard-input-buttons-at-the-same-time/ for more details
+      * and use the site https://w3c.github.io/uievents/tools/key-event-viewer.html to test your n-key support in browser.
       * 
       * Also please be aware that certain browser extensions can disable or override Phaser keyboard handling.
       * For example the Chrome extension vimium is known to disable Phaser from using the D key, while EverNote disables the backtick key.
@@ -2184,9 +2195,12 @@ object Input {
       /**
         * Removes all Key objects created by _this_ Keyboard Plugin.
         * @param destroy Call `Key.destroy` on each removed Key object? Default false.
+        * @param removeCapture Remove all key captures for Key objects owened by this plugin? Default false.
         */
       def removeAllKeys(): this.type = js.native
       def removeAllKeys(destroy: Boolean): this.type = js.native
+      def removeAllKeys(destroy: Boolean, removeCapture: Boolean): this.type = js.native
+      def removeAllKeys(destroy: Unit, removeCapture: Boolean): this.type = js.native
       
       /**
         * Removes an existing key capture.
@@ -2223,17 +2237,24 @@ object Input {
       
       def removeKey(key: String): this.type = js.native
       def removeKey(key: String, destroy: Boolean): this.type = js.native
+      def removeKey(key: String, destroy: Boolean, removeCapture: Boolean): this.type = js.native
+      def removeKey(key: String, destroy: Unit, removeCapture: Boolean): this.type = js.native
       def removeKey(key: Double): this.type = js.native
       def removeKey(key: Double, destroy: Boolean): this.type = js.native
+      def removeKey(key: Double, destroy: Boolean, removeCapture: Boolean): this.type = js.native
+      def removeKey(key: Double, destroy: Unit, removeCapture: Boolean): this.type = js.native
       /**
         * Removes a Key object from this Keyboard Plugin.
         * 
         * The given argument can be either a Key object, a string, such as `A` or `SPACE`, or a key code value.
         * @param key Either a Key object, a string, such as `A` or `SPACE`, or a key code value.
         * @param destroy Call `Key.destroy` on the removed Key object? Default false.
+        * @param removeCapture Remove this Key from being captured? Only applies if set to capture when created. Default false.
         */
       def removeKey(key: Key): this.type = js.native
       def removeKey(key: Key, destroy: Boolean): this.type = js.native
+      def removeKey(key: Key, destroy: Boolean, removeCapture: Boolean): this.type = js.native
+      def removeKey(key: Key, destroy: Unit, removeCapture: Boolean): this.type = js.native
       
       /**
         * Resets all Key objects created by _this_ Keyboard Plugin back to their default un-pressed states.
@@ -2279,11 +2300,11 @@ object Input {
       def destroy(): Unit
       
       /**
-        * Attempts to disable the context menu from appearing if you right-click on the browser.
+        * Attempts to disable the context menu from appearing if you right-click on the game canvas, or specified input target.
         * 
         * Works by listening for the `contextmenu` event and prevent defaulting it.
         * 
-        * Use this if you need to enable right-button mouse support in your game, and the browser
+        * Use this if you need to enable right-button mouse support in your game, and the context
         * menu keeps getting in the way.
         */
       def disableContextMenu(): this.type
@@ -2873,6 +2894,11 @@ object Input {
     var primaryDown: Boolean = js.native
     
     /**
+      * Fully reset this Pointer back to its unitialized state.
+      */
+    def reset(): Unit = js.native
+    
+    /**
       * Checks to see if the right button is being held down on this Pointer.
       */
     def rightButtonDown(): Boolean = js.native
@@ -3025,6 +3051,15 @@ object Input {
       var enabled: Boolean
       
       /**
+        * Are the event listeners hooked into `window.top` or `window`?
+        * 
+        * This is set during the `boot` sequence. If the browser does not have access to `window.top`,
+        * such as in cross-origin iframe environments, this property gets set to `false` and the events
+        * are hooked into `window` instead.
+        */
+      val isTop: Boolean
+      
+      /**
         * A reference to the Input Manager.
         */
       var manager: InputManager
@@ -3058,18 +3093,6 @@ object Input {
         * Initially empty and bound in the `startListeners` method.
         */
       var onTouchMove: js.Function
-      
-      /**
-        * The Touch Out event handler function.
-        * Initially empty and bound in the `startListeners` method.
-        */
-      var onTouchOut: js.Function
-      
-      /**
-        * The Touch Over event handler function.
-        * Initially empty and bound in the `startListeners` method.
-        */
-      var onTouchOver: js.Function
       
       /**
         * The Touch Start event handler function.
@@ -3111,21 +3134,20 @@ object Input {
         destroy: () => Unit,
         disableContextMenu: () => TouchManager,
         enabled: Boolean,
+        isTop: Boolean,
         manager: InputManager,
         onTouchCancel: js.Function,
         onTouchCancelWindow: js.Function,
         onTouchEnd: js.Function,
         onTouchEndWindow: js.Function,
         onTouchMove: js.Function,
-        onTouchOut: js.Function,
-        onTouchOver: js.Function,
         onTouchStart: js.Function,
         onTouchStartWindow: js.Function,
         startListeners: () => Unit,
         stopListeners: () => Unit,
         target: Any
       ): TouchManager = {
-        val __obj = js.Dynamic.literal(capture = capture.asInstanceOf[js.Any], destroy = js.Any.fromFunction0(destroy), disableContextMenu = js.Any.fromFunction0(disableContextMenu), enabled = enabled.asInstanceOf[js.Any], manager = manager.asInstanceOf[js.Any], onTouchCancel = onTouchCancel.asInstanceOf[js.Any], onTouchCancelWindow = onTouchCancelWindow.asInstanceOf[js.Any], onTouchEnd = onTouchEnd.asInstanceOf[js.Any], onTouchEndWindow = onTouchEndWindow.asInstanceOf[js.Any], onTouchMove = onTouchMove.asInstanceOf[js.Any], onTouchOut = onTouchOut.asInstanceOf[js.Any], onTouchOver = onTouchOver.asInstanceOf[js.Any], onTouchStart = onTouchStart.asInstanceOf[js.Any], onTouchStartWindow = onTouchStartWindow.asInstanceOf[js.Any], startListeners = js.Any.fromFunction0(startListeners), stopListeners = js.Any.fromFunction0(stopListeners), target = target.asInstanceOf[js.Any])
+        val __obj = js.Dynamic.literal(capture = capture.asInstanceOf[js.Any], destroy = js.Any.fromFunction0(destroy), disableContextMenu = js.Any.fromFunction0(disableContextMenu), enabled = enabled.asInstanceOf[js.Any], isTop = isTop.asInstanceOf[js.Any], manager = manager.asInstanceOf[js.Any], onTouchCancel = onTouchCancel.asInstanceOf[js.Any], onTouchCancelWindow = onTouchCancelWindow.asInstanceOf[js.Any], onTouchEnd = onTouchEnd.asInstanceOf[js.Any], onTouchEndWindow = onTouchEndWindow.asInstanceOf[js.Any], onTouchMove = onTouchMove.asInstanceOf[js.Any], onTouchStart = onTouchStart.asInstanceOf[js.Any], onTouchStartWindow = onTouchStartWindow.asInstanceOf[js.Any], startListeners = js.Any.fromFunction0(startListeners), stopListeners = js.Any.fromFunction0(stopListeners), target = target.asInstanceOf[js.Any])
         __obj.asInstanceOf[TouchManager]
       }
       
@@ -3140,6 +3162,8 @@ object Input {
         
         inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
         
+        inline def setIsTop(value: Boolean): Self = StObject.set(x, "isTop", value.asInstanceOf[js.Any])
+        
         inline def setManager(value: InputManager): Self = StObject.set(x, "manager", value.asInstanceOf[js.Any])
         
         inline def setOnTouchCancel(value: js.Function): Self = StObject.set(x, "onTouchCancel", value.asInstanceOf[js.Any])
@@ -3151,10 +3175,6 @@ object Input {
         inline def setOnTouchEndWindow(value: js.Function): Self = StObject.set(x, "onTouchEndWindow", value.asInstanceOf[js.Any])
         
         inline def setOnTouchMove(value: js.Function): Self = StObject.set(x, "onTouchMove", value.asInstanceOf[js.Any])
-        
-        inline def setOnTouchOut(value: js.Function): Self = StObject.set(x, "onTouchOut", value.asInstanceOf[js.Any])
-        
-        inline def setOnTouchOver(value: js.Function): Self = StObject.set(x, "onTouchOver", value.asInstanceOf[js.Any])
         
         inline def setOnTouchStart(value: js.Function): Self = StObject.set(x, "onTouchStart", value.asInstanceOf[js.Any])
         

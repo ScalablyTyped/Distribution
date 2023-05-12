@@ -48,7 +48,7 @@ trait HistoryEvent extends StObject {
   var lambdaFunctionStartFailedEventDetails: js.UndefOr[LambdaFunctionStartFailedEventDetails] = js.undefined
   
   /**
-    * Contains details about a lambda function that terminated successfully during an execution.
+    * Contains details about a Lambda function that terminated successfully during an execution.
     */
   var lambdaFunctionSucceededEventDetails: js.UndefOr[LambdaFunctionSucceededEventDetails] = js.undefined
   
@@ -73,6 +73,16 @@ trait HistoryEvent extends StObject {
     * Contains details about an iteration of a Map state that succeeded.
     */
   var mapIterationSucceededEventDetails: js.UndefOr[MapIterationEventDetails] = js.undefined
+  
+  /**
+    * Contains error and cause details about a Map Run that failed.
+    */
+  var mapRunFailedEventDetails: js.UndefOr[MapRunFailedEventDetails] = js.undefined
+  
+  /**
+    * Contains details, such as mapRunArn, and the start date and time of a Map Run. mapRunArn is the Amazon Resource Name (ARN) of the Map Run that was started.
+    */
+  var mapRunStartedEventDetails: js.UndefOr[MapRunStartedEventDetails] = js.undefined
   
   /**
     * Contains details about Map state that was started.
@@ -234,6 +244,14 @@ object HistoryEvent {
     inline def setMapIterationSucceededEventDetails(value: MapIterationEventDetails): Self = StObject.set(x, "mapIterationSucceededEventDetails", value.asInstanceOf[js.Any])
     
     inline def setMapIterationSucceededEventDetailsUndefined: Self = StObject.set(x, "mapIterationSucceededEventDetails", js.undefined)
+    
+    inline def setMapRunFailedEventDetails(value: MapRunFailedEventDetails): Self = StObject.set(x, "mapRunFailedEventDetails", value.asInstanceOf[js.Any])
+    
+    inline def setMapRunFailedEventDetailsUndefined: Self = StObject.set(x, "mapRunFailedEventDetails", js.undefined)
+    
+    inline def setMapRunStartedEventDetails(value: MapRunStartedEventDetails): Self = StObject.set(x, "mapRunStartedEventDetails", value.asInstanceOf[js.Any])
+    
+    inline def setMapRunStartedEventDetailsUndefined: Self = StObject.set(x, "mapRunStartedEventDetails", js.undefined)
     
     inline def setMapStateStartedEventDetails(value: MapStateStartedEventDetails): Self = StObject.set(x, "mapStateStartedEventDetails", value.asInstanceOf[js.Any])
     

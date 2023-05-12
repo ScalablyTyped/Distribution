@@ -1,6 +1,5 @@
 package typings.gulpFilter
 
-import typings.minimatch.mod.IOptions
 import typings.node.NodeJS.ReadWriteStream
 import typings.vinyl.mod.File
 import org.scalablytyped.runtime.StObject
@@ -31,9 +30,8 @@ object mod {
     var restore: ReadWriteStream = js.native
   }
   
-  trait Options
-    extends StObject
-       with IOptions {
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Minimatch.IOptions * / any */ trait Options extends StObject {
     
     var passthrough: js.UndefOr[Boolean] = js.undefined
     

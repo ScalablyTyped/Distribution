@@ -1,5 +1,6 @@
 package typings.konva
 
+import typings.konva.libContextMod.Context
 import typings.konva.libShapesLineMod.Line
 import typings.konva.libShapesLineMod.LineConfig
 import typings.konva.libTypesMod.GetSet
@@ -14,9 +15,7 @@ object libShapesArrowMod {
   open class Arrow () extends Line[ArrowConfig] {
     def this(config: ArrowConfig) = this()
     
-    def __fillStroke(ctx: Any): Unit = js.native
-    
-    def _sceneFunc(ctx: Any): Unit = js.native
+    def __fillStroke(ctx: Context): Unit = js.native
     
     def pointerAtBeginning(): Boolean = js.native
     def pointerAtBeginning(v: Boolean): this.type = js.native

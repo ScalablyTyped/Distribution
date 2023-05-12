@@ -37,6 +37,9 @@ trait NormalizedOutputOptions extends StObject {
   
   var esModule: Boolean | `if-default-prop`
   
+  /** @deprecated This option is no longer needed and ignored. */
+  var experimentalDeepDynamicChunkOptimization: Boolean
+  
   var experimentalMinChunkSize: Double
   
   var exports: default | named | none | auto
@@ -112,6 +115,10 @@ trait NormalizedOutputOptions extends StObject {
   
   var sourcemapFile: js.UndefOr[String] = js.undefined
   
+  def sourcemapIgnoreList(relativeSourcePath: String, sourcemapPath: String): Boolean
+  @JSName("sourcemapIgnoreList")
+  var sourcemapIgnoreList_Original: SourcemapIgnoreListOption
+  
   var sourcemapPathTransform: js.UndefOr[SourcemapPathTransformOption] = js.undefined
   
   var strict: Boolean
@@ -131,6 +138,7 @@ object NormalizedOutputOptions {
     dynamicImportInCjs: Boolean,
     entryFileNames: String | (js.Function1[/* chunkInfo */ PreRenderedChunk, String]),
     esModule: Boolean | `if-default-prop`,
+    experimentalDeepDynamicChunkOptimization: Boolean,
     experimentalMinChunkSize: Double,
     exports: default | named | none | auto,
     extend: Boolean,
@@ -158,11 +166,12 @@ object NormalizedOutputOptions {
     sanitizeFileName: String => String,
     sourcemap: Boolean | `inline` | hidden,
     sourcemapExcludeSources: Boolean,
+    sourcemapIgnoreList: (/* relativeSourcePath */ String, /* sourcemapPath */ String) => Boolean,
     strict: Boolean,
     systemNullSetters: Boolean,
     validate: Boolean
   ): NormalizedOutputOptions = {
-    val __obj = js.Dynamic.literal(amd = amd.asInstanceOf[js.Any], assetFileNames = assetFileNames.asInstanceOf[js.Any], banner = js.Any.fromFunction1(banner), chunkFileNames = chunkFileNames.asInstanceOf[js.Any], compact = compact.asInstanceOf[js.Any], dynamicImportInCjs = dynamicImportInCjs.asInstanceOf[js.Any], entryFileNames = entryFileNames.asInstanceOf[js.Any], esModule = esModule.asInstanceOf[js.Any], experimentalMinChunkSize = experimentalMinChunkSize.asInstanceOf[js.Any], exports = exports.asInstanceOf[js.Any], extend = extend.asInstanceOf[js.Any], externalImportAssertions = externalImportAssertions.asInstanceOf[js.Any], externalLiveBindings = externalLiveBindings.asInstanceOf[js.Any], footer = js.Any.fromFunction1(footer), format = format.asInstanceOf[js.Any], freeze = freeze.asInstanceOf[js.Any], generatedCode = generatedCode.asInstanceOf[js.Any], globals = globals.asInstanceOf[js.Any], hoistTransitiveImports = hoistTransitiveImports.asInstanceOf[js.Any], indent = indent.asInstanceOf[js.Any], inlineDynamicImports = inlineDynamicImports.asInstanceOf[js.Any], interop = js.Any.fromFunction1(interop), intro = js.Any.fromFunction1(intro), manualChunks = manualChunks.asInstanceOf[js.Any], minifyInternalExports = minifyInternalExports.asInstanceOf[js.Any], namespaceToStringTag = namespaceToStringTag.asInstanceOf[js.Any], noConflict = noConflict.asInstanceOf[js.Any], outro = js.Any.fromFunction1(outro), paths = paths.asInstanceOf[js.Any], plugins = plugins.asInstanceOf[js.Any], preferConst = preferConst.asInstanceOf[js.Any], preserveModules = preserveModules.asInstanceOf[js.Any], sanitizeFileName = js.Any.fromFunction1(sanitizeFileName), sourcemap = sourcemap.asInstanceOf[js.Any], sourcemapExcludeSources = sourcemapExcludeSources.asInstanceOf[js.Any], strict = strict.asInstanceOf[js.Any], systemNullSetters = systemNullSetters.asInstanceOf[js.Any], validate = validate.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(amd = amd.asInstanceOf[js.Any], assetFileNames = assetFileNames.asInstanceOf[js.Any], banner = js.Any.fromFunction1(banner), chunkFileNames = chunkFileNames.asInstanceOf[js.Any], compact = compact.asInstanceOf[js.Any], dynamicImportInCjs = dynamicImportInCjs.asInstanceOf[js.Any], entryFileNames = entryFileNames.asInstanceOf[js.Any], esModule = esModule.asInstanceOf[js.Any], experimentalDeepDynamicChunkOptimization = experimentalDeepDynamicChunkOptimization.asInstanceOf[js.Any], experimentalMinChunkSize = experimentalMinChunkSize.asInstanceOf[js.Any], exports = exports.asInstanceOf[js.Any], extend = extend.asInstanceOf[js.Any], externalImportAssertions = externalImportAssertions.asInstanceOf[js.Any], externalLiveBindings = externalLiveBindings.asInstanceOf[js.Any], footer = js.Any.fromFunction1(footer), format = format.asInstanceOf[js.Any], freeze = freeze.asInstanceOf[js.Any], generatedCode = generatedCode.asInstanceOf[js.Any], globals = globals.asInstanceOf[js.Any], hoistTransitiveImports = hoistTransitiveImports.asInstanceOf[js.Any], indent = indent.asInstanceOf[js.Any], inlineDynamicImports = inlineDynamicImports.asInstanceOf[js.Any], interop = js.Any.fromFunction1(interop), intro = js.Any.fromFunction1(intro), manualChunks = manualChunks.asInstanceOf[js.Any], minifyInternalExports = minifyInternalExports.asInstanceOf[js.Any], namespaceToStringTag = namespaceToStringTag.asInstanceOf[js.Any], noConflict = noConflict.asInstanceOf[js.Any], outro = js.Any.fromFunction1(outro), paths = paths.asInstanceOf[js.Any], plugins = plugins.asInstanceOf[js.Any], preferConst = preferConst.asInstanceOf[js.Any], preserveModules = preserveModules.asInstanceOf[js.Any], sanitizeFileName = js.Any.fromFunction1(sanitizeFileName), sourcemap = sourcemap.asInstanceOf[js.Any], sourcemapExcludeSources = sourcemapExcludeSources.asInstanceOf[js.Any], sourcemapIgnoreList = js.Any.fromFunction2(sourcemapIgnoreList), strict = strict.asInstanceOf[js.Any], systemNullSetters = systemNullSetters.asInstanceOf[js.Any], validate = validate.asInstanceOf[js.Any])
     __obj.asInstanceOf[NormalizedOutputOptions]
   }
   
@@ -198,6 +207,8 @@ object NormalizedOutputOptions {
     inline def setEntryFileNamesFunction1(value: /* chunkInfo */ PreRenderedChunk => String): Self = StObject.set(x, "entryFileNames", js.Any.fromFunction1(value))
     
     inline def setEsModule(value: Boolean | `if-default-prop`): Self = StObject.set(x, "esModule", value.asInstanceOf[js.Any])
+    
+    inline def setExperimentalDeepDynamicChunkOptimization(value: Boolean): Self = StObject.set(x, "experimentalDeepDynamicChunkOptimization", value.asInstanceOf[js.Any])
     
     inline def setExperimentalMinChunkSize(value: Double): Self = StObject.set(x, "experimentalMinChunkSize", value.asInstanceOf[js.Any])
     
@@ -280,6 +291,8 @@ object NormalizedOutputOptions {
     inline def setSourcemapFile(value: String): Self = StObject.set(x, "sourcemapFile", value.asInstanceOf[js.Any])
     
     inline def setSourcemapFileUndefined: Self = StObject.set(x, "sourcemapFile", js.undefined)
+    
+    inline def setSourcemapIgnoreList(value: (/* relativeSourcePath */ String, /* sourcemapPath */ String) => Boolean): Self = StObject.set(x, "sourcemapIgnoreList", js.Any.fromFunction2(value))
     
     inline def setSourcemapPathTransform(value: (/* relativeSourcePath */ String, /* sourcemapPath */ String) => String): Self = StObject.set(x, "sourcemapPathTransform", js.Any.fromFunction2(value))
     

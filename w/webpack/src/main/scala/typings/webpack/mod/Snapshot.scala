@@ -2,8 +2,6 @@ package typings.webpack.mod
 
 import typings.std.Map
 import typings.std.Set
-import typings.webpack.anon.Read
-import typings.webpack.anon.Write
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -22,7 +20,7 @@ trait Snapshot extends StObject {
   
   var contextTshs: js.UndefOr[Map[String, Null | ResolvedContextTimestampAndHash]] = js.native
   
-  def deserialize(__0: Read): Unit = js.native
+  def deserialize(__0: ObjectDeserializerContext): Unit = js.native
   
   var fileHashes: js.UndefOr[Map[String, Null | String]] = js.native
   
@@ -72,7 +70,7 @@ trait Snapshot extends StObject {
   
   var missingExistence: js.UndefOr[Map[String, Boolean]] = js.native
   
-  def serialize(__0: Write): Unit = js.native
+  def serialize(__0: ObjectSerializerContext): Unit = js.native
   
   def setChildren(): Unit = js.native
   def setChildren(value: Any): Unit = js.native

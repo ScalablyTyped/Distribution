@@ -4,7 +4,6 @@ import typings.luminoDatagrid.luminoDatagridStrings.column
 import typings.luminoDatagrid.luminoDatagridStrings.row
 import typings.luminoDatagrid.typesDatamodelMod.DataModel
 import typings.luminoDatagrid.typesDatamodelMod.DataModel.CellRegion
-import typings.luminoDatagrid.typesSectionlistMod.SectionList
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -47,26 +46,6 @@ object typesCellgroupMod {
       * @param axis
       */
     inline def areCellGroupsIntersectingAtAxis(group1: CellGroup, group2: CellGroup, axis: row | column): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("areCellGroupsIntersectingAtAxis")(group1.asInstanceOf[js.Any], group2.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    
-    inline def areCellsMerged(dataModel: DataModel, rgn: CellRegion, cell1: js.Array[Double], cell2: js.Array[Double]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("areCellsMerged")(dataModel.asInstanceOf[js.Any], rgn.asInstanceOf[js.Any], cell1.asInstanceOf[js.Any], cell2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    
-    /**
-      * Calculates the cell boundary offsets needed for
-      * a row or column at the given index by taking
-      * into account merged cell groups in the region.
-      * @param dataModel
-      * @param regions
-      * @param axis
-      * @param sectionList
-      * @param index
-      */
-    inline def calculateMergeOffsets(
-      dataModel: DataModel,
-      regions: js.Array[CellRegion],
-      axis: row | column,
-      sectionList: SectionList,
-      index: Double
-    ): js.Tuple3[Double, Double, CellGroup] = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateMergeOffsets")(dataModel.asInstanceOf[js.Any], regions.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], sectionList.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[Double, Double, CellGroup]]
     
     /**
       * Retrieves a list of cell groups intersecting at
@@ -114,19 +93,6 @@ object typesCellgroupMod {
       * @param column
       */
     inline def getGroupIndex(dataModel: DataModel, rgn: CellRegion, row: Double, column: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getGroupIndex")(dataModel.asInstanceOf[js.Any], rgn.asInstanceOf[js.Any], row.asInstanceOf[js.Any], column.asInstanceOf[js.Any])).asInstanceOf[Double]
-    
-    /**
-      * Checks if cell group 1 is above cell group 2.
-      * @param group1 cell group 1.
-      * @param group2 cell group 2.
-      * @returns boolean.
-      */
-    inline def isCellGroupAbove(group1: CellGroup, group2: CellGroup): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isCellGroupAbove")(group1.asInstanceOf[js.Any], group2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    
-    /**
-      * Checks if cell group 1 is below cell group 2.
-      */
-    inline def isCellGroupBelow(group1: CellGroup, group2: CellGroup): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isCellGroupBelow")(group1.asInstanceOf[js.Any], group2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /**
       * Merges a cell group with other cells groups in the

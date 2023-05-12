@@ -16,7 +16,7 @@ object libIconsDownCircleTwoToneMod extends Shortcut {
   @js.native
   trait DownCircleTwoToneIconType
     extends StObject
-       with FunctionalComponent[AntdIconProps, js.Object] {
+       with FunctionalComponent[AntdIconProps, js.Object, Any] {
     
     @JSName("displayName")
     var displayName_DownCircleTwoToneIconType: String = js.native

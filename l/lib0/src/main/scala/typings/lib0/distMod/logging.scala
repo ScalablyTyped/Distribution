@@ -53,7 +53,7 @@ object logging {
   @JSImport("lib0/dist", "logging.VConsole")
   @js.native
   open class VConsole protected ()
-    extends typings.lib0.distLoggingMod.VConsole {
+    extends typings.lib0.loggingMod.VConsole {
     /**
       * @param {Element} dom
       */
@@ -62,7 +62,7 @@ object logging {
   
   inline def createModuleLogger(moduleName: String): js.Function1[/* repeated */ Any, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("createModuleLogger")(moduleName.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ Any, Unit]]
   
-  inline def createVConsole(dom: Element): typings.lib0.distLoggingMod.VConsole = ^.asInstanceOf[js.Dynamic].applyDynamic("createVConsole")(dom.asInstanceOf[js.Any]).asInstanceOf[typings.lib0.distLoggingMod.VConsole]
+  inline def createVConsole(dom: Element): typings.lib0.loggingMod.VConsole = ^.asInstanceOf[js.Dynamic].applyDynamic("createVConsole")(dom.asInstanceOf[js.Any]).asInstanceOf[typings.lib0.loggingMod.VConsole]
   
   inline def group(args: (String | js.Symbol | js.Object | Double)*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("group")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Unit]
   

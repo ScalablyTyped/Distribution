@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "webpack-virtual-modules" : "0.4.6"
+      "webpack-virtual-modules" : "0.5.0"
     }
   ],
   "test-dependencies" : [
     {
-      "webpack-virtual-modules" : "0.4.6"
+      "webpack-virtual-modules" : "0.5.0"
     }
   ],
   "compile-devDependencies" : [

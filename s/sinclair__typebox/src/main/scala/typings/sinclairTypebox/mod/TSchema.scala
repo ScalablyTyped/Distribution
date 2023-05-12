@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TSchema
   extends StObject
      with SchemaOptions
+     with TKind
      with _TAnySchema {
   
   var params: js.Array[Any] = js.native

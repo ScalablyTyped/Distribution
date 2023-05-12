@@ -1,7 +1,7 @@
 
 # Scala.js typings for node-json-db
 
-Typings are for version 2.1.3
+Typings are for version 2.2.0
 
 ## Library description:
 Database using JSON file as storage for Node.JS

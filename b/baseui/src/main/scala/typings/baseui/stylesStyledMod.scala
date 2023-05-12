@@ -25,6 +25,7 @@ import typings.baseui.baseuiStrings.br_
 import typings.baseui.baseuiStrings.button
 import typings.baseui.baseuiStrings.canvas
 import typings.baseui.baseuiStrings.caption
+import typings.baseui.baseuiStrings.center
 import typings.baseui.baseuiStrings.circle
 import typings.baseui.baseuiStrings.cite
 import typings.baseui.baseuiStrings.clipPath
@@ -250,6 +251,7 @@ object stylesStyledMod {
     def apply(component: button, style: StyleObject): StyletronComponent[button, js.Object] = js.native
     def apply(component: canvas, style: StyleObject): StyletronComponent[canvas, js.Object] = js.native
     def apply(component: caption, style: StyleObject): StyletronComponent[caption, js.Object] = js.native
+    def apply(component: center, style: StyleObject): StyletronComponent[center, js.Object] = js.native
     def apply(component: circle, style: StyleObject): StyletronComponent[circle, js.Object] = js.native
     def apply(component: cite, style: StyleObject): StyletronComponent[cite, js.Object] = js.native
     def apply(component: clipPath, style: StyleObject): StyletronComponent[clipPath, js.Object] = js.native
@@ -438,6 +440,7 @@ object stylesStyledMod {
     def apply[P /* <: js.Object */, Theme](component: button, style: js.Function1[/* props */ (Omit[P, $theme]) & `257`[Theme], StyleObject]): StyletronComponent[button, P] = js.native
     def apply[P /* <: js.Object */, Theme](component: canvas, style: js.Function1[/* props */ (Omit[P, $theme]) & `257`[Theme], StyleObject]): StyletronComponent[canvas, P] = js.native
     def apply[P /* <: js.Object */, Theme](component: caption, style: js.Function1[/* props */ (Omit[P, $theme]) & `257`[Theme], StyleObject]): StyletronComponent[caption, P] = js.native
+    def apply[P /* <: js.Object */, Theme](component: center, style: js.Function1[/* props */ (Omit[P, $theme]) & `257`[Theme], StyleObject]): StyletronComponent[center, P] = js.native
     def apply[P /* <: js.Object */, Theme](component: circle, style: js.Function1[/* props */ (Omit[P, $theme]) & `257`[Theme], StyleObject]): StyletronComponent[circle, P] = js.native
     def apply[P /* <: js.Object */, Theme](component: cite, style: js.Function1[/* props */ (Omit[P, $theme]) & `257`[Theme], StyleObject]): StyletronComponent[cite, P] = js.native
     def apply[P /* <: js.Object */, Theme](

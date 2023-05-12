@@ -117,6 +117,12 @@ type koa = HttpServer
 
 /**
   * This plugin automatically instruments the
+  * [ldapjs](https://github.com/ldapjs/node-ldapjs/) module.
+  */
+type ldapjs = Instrumentation
+
+/**
+  * This plugin automatically instruments the
   * [mariadb](https://github.com/mariadb-corporation/mariadb-connector-nodejs) module.
   */
 type mariadb = mysql
@@ -138,12 +144,6 @@ type microgatewayCore = HttpServer
   * [mocha](https://mochajs.org/) module.
   */
 type mocha = Integration
-
-/**
-  * This plugin automatically instruments the
-  * [mongodb-core](https://github.com/mongodb-js/mongodb-core) module.
-  */
-type mongodbCore = Instrumentation
 
 /**
   * This plugin automatically instruments the
@@ -182,6 +182,12 @@ type paperplane = HttpServer
   * on the tracer.
   */
 type pino = Integration
+
+/**
+  * This plugin automatically instruments the
+  * [playwright](https://github.com/microsoft/playwright) module.
+  */
+type playwright = Integration
 
 /**
   * This plugin automatically instruments the

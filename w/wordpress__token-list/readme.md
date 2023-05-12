@@ -1,7 +1,7 @@
 
 # Scala.js typings for wordpress__token-list
 
-Typings are for version 2.21.0
+Typings are for version 2.33.0
 
 ## Library description:
 Constructable, plain JavaScript DOMTokenList implementation, supporting non-browser runtimes.

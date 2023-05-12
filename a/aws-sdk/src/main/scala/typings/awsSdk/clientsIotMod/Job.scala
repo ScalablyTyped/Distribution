@@ -97,6 +97,16 @@ trait Job extends StObject {
   var reasonCode: js.UndefOr[ReasonCode] = js.undefined
   
   /**
+    * Displays the next seven maintenance window occurrences and their start times.
+    */
+  var scheduledJobRollouts: js.UndefOr[ScheduledJobRolloutList] = js.undefined
+  
+  /**
+    * The configuration that allows you to schedule a job for a future date and time in addition to specifying the end behavior for each job execution.
+    */
+  var schedulingConfig: js.UndefOr[SchedulingConfig] = js.undefined
+  
+  /**
     * The status of the job, one of IN_PROGRESS, CANCELED, DELETION_IN_PROGRESS or COMPLETED. 
     */
   var status: js.UndefOr[JobStatus] = js.undefined
@@ -197,6 +207,16 @@ object Job {
     inline def setReasonCode(value: ReasonCode): Self = StObject.set(x, "reasonCode", value.asInstanceOf[js.Any])
     
     inline def setReasonCodeUndefined: Self = StObject.set(x, "reasonCode", js.undefined)
+    
+    inline def setScheduledJobRollouts(value: ScheduledJobRolloutList): Self = StObject.set(x, "scheduledJobRollouts", value.asInstanceOf[js.Any])
+    
+    inline def setScheduledJobRolloutsUndefined: Self = StObject.set(x, "scheduledJobRollouts", js.undefined)
+    
+    inline def setScheduledJobRolloutsVarargs(value: ScheduledJobRollout*): Self = StObject.set(x, "scheduledJobRollouts", js.Array(value*))
+    
+    inline def setSchedulingConfig(value: SchedulingConfig): Self = StObject.set(x, "schedulingConfig", value.asInstanceOf[js.Any])
+    
+    inline def setSchedulingConfigUndefined: Self = StObject.set(x, "schedulingConfig", js.undefined)
     
     inline def setStatus(value: JobStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

@@ -1,6 +1,5 @@
 package typings.libp2pMdns
 
-import typings.libp2pInterfacePeerId.mod.PeerId
 import typings.libp2pInterfacePeerInfo.mod.PeerInfo
 import typings.multicastDns.mod.MulticastDNS
 import typings.multicastDns.mod.QueryPacket
@@ -20,13 +19,13 @@ object distSrcQueryMod {
   inline def gotQuery(
     qry: QueryPacket,
     mdns: MulticastDNS,
-    peerId: PeerId,
+    peerName: String,
     multiaddrs: js.Array[Multiaddr_],
     serviceTag: String,
     broadcast: Boolean
-  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("gotQuery")(qry.asInstanceOf[js.Any], mdns.asInstanceOf[js.Any], peerId.asInstanceOf[js.Any], multiaddrs.asInstanceOf[js.Any], serviceTag.asInstanceOf[js.Any], broadcast.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("gotQuery")(qry.asInstanceOf[js.Any], mdns.asInstanceOf[js.Any], peerName.asInstanceOf[js.Any], multiaddrs.asInstanceOf[js.Any], serviceTag.asInstanceOf[js.Any], broadcast.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  inline def gotResponse(rsp: ResponsePacket, localPeerId: PeerId, serviceTag: String): js.UndefOr[PeerInfo] = (^.asInstanceOf[js.Dynamic].applyDynamic("gotResponse")(rsp.asInstanceOf[js.Any], localPeerId.asInstanceOf[js.Any], serviceTag.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[PeerInfo]]
+  inline def gotResponse(rsp: ResponsePacket, localPeerName: String, serviceTag: String): js.UndefOr[PeerInfo] = (^.asInstanceOf[js.Dynamic].applyDynamic("gotResponse")(rsp.asInstanceOf[js.Any], localPeerName.asInstanceOf[js.Any], serviceTag.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[PeerInfo]]
   
   inline def queryLAN(mdns: MulticastDNS, serviceTag: String, interval: Double): Timer = (^.asInstanceOf[js.Dynamic].applyDynamic("queryLAN")(mdns.asInstanceOf[js.Any], serviceTag.asInstanceOf[js.Any], interval.asInstanceOf[js.Any])).asInstanceOf[Timer]
 }

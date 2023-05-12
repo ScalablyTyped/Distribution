@@ -83,6 +83,11 @@ trait AuditEvent
   var outcome: js.UndefOr[AuditEventOutcome] = js.undefined
   
   /**
+    * The patient element is available to enable deterministic tracking of activities that involve the patient as the subject of the data used in an activity.
+    */
+  var patient: js.UndefOr[Reference] = js.undefined
+  
+  /**
     * In a distributed system, some sort of common time base (e.g. an NTP [RFC1305] server) is a good implementation tactic.
     */
   var recorded: String
@@ -165,6 +170,10 @@ object AuditEvent {
     inline def setOutcome(value: AuditEventOutcome): Self = StObject.set(x, "outcome", value.asInstanceOf[js.Any])
     
     inline def setOutcomeUndefined: Self = StObject.set(x, "outcome", js.undefined)
+    
+    inline def setPatient(value: Reference): Self = StObject.set(x, "patient", value.asInstanceOf[js.Any])
+    
+    inline def setPatientUndefined: Self = StObject.set(x, "patient", js.undefined)
     
     inline def setRecorded(value: String): Self = StObject.set(x, "recorded", value.asInstanceOf[js.Any])
     

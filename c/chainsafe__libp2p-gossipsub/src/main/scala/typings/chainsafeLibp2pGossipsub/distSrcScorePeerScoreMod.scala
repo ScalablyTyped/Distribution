@@ -6,12 +6,11 @@ import typings.chainsafeLibp2pGossipsub.distSrcMetricsMod.ScorePenalty
 import typings.chainsafeLibp2pGossipsub.distSrcScoreMessageDeliveriesMod.MessageDeliveries
 import typings.chainsafeLibp2pGossipsub.distSrcScorePeerScoreParamsMod.PeerScoreParams
 import typings.chainsafeLibp2pGossipsub.distSrcScorePeerStatsMod.PeerStats
-import typings.chainsafeLibp2pGossipsub.distSrcTypesMod.IPStr
 import typings.chainsafeLibp2pGossipsub.distSrcTypesMod.MsgIdStr
 import typings.chainsafeLibp2pGossipsub.distSrcTypesMod.PeerIdStr
 import typings.chainsafeLibp2pGossipsub.distSrcTypesMod.RejectReason
 import typings.chainsafeLibp2pGossipsub.distSrcTypesMod.TopicStr
-import typings.libp2pInterfaceConnectionManager.mod.ConnectionManager
+import typings.chainsafeLibp2pGossipsub.distSrcUtilsSetMod.MapDef
 import typings.std.Map
 import typings.std.Record
 import typings.std.ReturnType
@@ -25,10 +24,13 @@ object distSrcScorePeerScoreMod {
   @JSImport("@chainsafe/libp2p-gossipsub/dist/src/score/peer-score", "PeerScore")
   @js.native
   open class PeerScore protected () extends StObject {
-    def this(components: PeerScoreComponents, params: PeerScoreParams, metrics: Null, opts: PeerScoreOpts) = this()
-    def this(components: PeerScoreComponents, params: PeerScoreParams, metrics: Metrics, opts: PeerScoreOpts) = this()
+    def this(params: PeerScoreParams, metrics: Null, opts: PeerScoreOpts) = this()
+    def this(params: PeerScoreParams, metrics: Metrics, opts: PeerScoreOpts) = this()
     
     var _backgroundInterval: js.UndefOr[ReturnType[TypeofsetInterval]] = js.native
+    
+    /** Adds a new IP to a peer, if the peer is not known the update is ignored */
+    def addIP(id: PeerIdStr, ip: String): Unit = js.native
     
     def addPeer(id: PeerIdStr): Unit = js.native
     
@@ -42,8 +44,6 @@ object distSrcScorePeerScoreMod {
       */
     def background(): Unit = js.native
     
-    /* private */ val components: Any = js.native
-    
     /* private */ val computeScore: Any = js.native
     
     def deliverMessage(from: PeerIdStr, msgIdStr: MsgIdStr, topic: TopicStr): Unit = js.native
@@ -56,11 +56,6 @@ object distSrcScorePeerScoreMod {
     def dumpPeerScoreStats(): PeerScoreStatsDump = js.native
     
     def duplicateMessage(from: PeerIdStr, msgIdStr: MsgIdStr, topic: TopicStr): Unit = js.native
-    
-    /**
-      * Gets the current IPs for a peer.
-      */
-    /* private */ var getIPs: Any = js.native
     
     /**
       * Returns topic stats if they exist, otherwise if the supplied parameters score the
@@ -97,7 +92,7 @@ object distSrcScorePeerScoreMod {
     /**
       * IP colocation tracking; maps IP => set of peers.
       */
-    val peerIPs: Map[String, Set[String]] = js.native
+    val peerIPs: MapDef[String, Set[String]] = js.native
     
     /**
       * Per-peer stats for score calculation
@@ -119,10 +114,13 @@ object distSrcScorePeerScoreMod {
     
     def rejectMessage(from: PeerIdStr, msgIdStr: MsgIdStr, topic: TopicStr, reason: RejectReason): Unit = js.native
     
+    /** Remove peer association with IP */
+    def removeIP(id: PeerIdStr, ip: String): Unit = js.native
+    
     /**
       * Removes an IP list from the tracking list for a peer.
       */
-    def removeIPs(id: PeerIdStr, ips: js.Array[IPStr]): Unit = js.native
+    /* private */ var removeIPsForPeer: Any = js.native
     
     def removePeer(id: PeerIdStr): Unit = js.native
     
@@ -138,11 +136,6 @@ object distSrcScorePeerScoreMod {
     
     /* private */ val scoreCacheValidityMs: Any = js.native
     
-    /**
-      * Adds tracking for the new IPs in the list, and removes tracking from the obsolete IPs.
-      */
-    def setIPs(id: PeerIdStr, newIPs: js.Array[IPStr], oldIPs: js.Array[IPStr]): Unit = js.native
-    
     def size: Double = js.native
     
     /**
@@ -155,30 +148,7 @@ object distSrcScorePeerScoreMod {
       */
     def stop(): Unit = js.native
     
-    /**
-      * Update all peer IPs to currently open connections
-      */
-    def updateIPs(): Unit = js.native
-    
     def validateMessage(msgIdStr: MsgIdStr): Unit = js.native
-  }
-  
-  trait PeerScoreComponents extends StObject {
-    
-    var connectionManager: ConnectionManager
-  }
-  object PeerScoreComponents {
-    
-    inline def apply(connectionManager: ConnectionManager): PeerScoreComponents = {
-      val __obj = js.Dynamic.literal(connectionManager = connectionManager.asInstanceOf[js.Any])
-      __obj.asInstanceOf[PeerScoreComponents]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: PeerScoreComponents] (val x: Self) extends AnyVal {
-      
-      inline def setConnectionManager(value: ConnectionManager): Self = StObject.set(x, "connectionManager", value.asInstanceOf[js.Any])
-    }
   }
   
   trait PeerScoreOpts extends StObject {

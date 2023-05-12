@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait VpcPeeringConnection extends StObject {
   
   /**
-    *  The Amazon Resource Name (ARN) associated with the GameLift fleet resource for this connection. 
+    * The Amazon Resource Name (ARN) associated with the GameLift fleet resource for this connection. 
     */
   var FleetArn: js.UndefOr[typings.awsSdk.clientsGameliftMod.FleetArn] = js.undefined
   
@@ -27,7 +27,7 @@ trait VpcPeeringConnection extends StObject {
   var IpV4CidrBlock: js.UndefOr[NonZeroAndMaxString] = js.undefined
   
   /**
-    * A unique identifier for a VPC with resources to be accessed by your GameLift fleet. The VPC must be in the same Region as your fleet. To look up a VPC ID, use the VPC Dashboard in the Amazon Web Services Management Console. Learn more about VPC peering in VPC Peering with GameLift Fleets.
+    * A unique identifier for a VPC with resources to be accessed by your Amazon GameLift fleet. The VPC must be in the same Region as your fleet. To look up a VPC ID, use the VPC Dashboard in the Amazon Web Services Management Console. Learn more about VPC peering in VPC Peering with Amazon GameLift Fleets.
     */
   var PeerVpcId: js.UndefOr[NonZeroAndMaxString] = js.undefined
   
@@ -37,7 +37,7 @@ trait VpcPeeringConnection extends StObject {
   var Status: js.UndefOr[VpcPeeringConnectionStatus] = js.undefined
   
   /**
-    * A unique identifier that is automatically assigned to the connection record. This ID is referenced in VPC peering connection events, and is used when deleting a connection with DeleteVpcPeeringConnection. 
+    * A unique identifier that is automatically assigned to the connection record. This ID is referenced in VPC peering connection events, and is used when deleting a connection.
     */
   var VpcPeeringConnectionId: js.UndefOr[NonZeroAndMaxString] = js.undefined
 }

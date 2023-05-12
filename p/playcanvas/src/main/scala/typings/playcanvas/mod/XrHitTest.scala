@@ -5,8 +5,6 @@ import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** @typedef {import('./xr-manager.js').XrManager} XrManager */
-/** @typedef {import('../../core/shape/ray.js').Ray} Ray */
 /**
   * Callback used by {@link XrHitTest#start} and {@link XrHitTest#startForInputSource}.
   *
@@ -27,7 +25,7 @@ open class XrHitTest protected () extends EventHandler {
   /**
     * Create a new XrHitTest instance.
     *
-    * @param {XrManager} manager - WebXR Manager.
+    * @param {import('./xr-manager.js').XrManager} manager - WebXR Manager.
     * @hideconstructor
     */
   def this(manager: XrManager) = this()
@@ -110,7 +108,7 @@ open class XrHitTest protected () extends EventHandler {
   /* private */ var isAvailable: Any = js.native
   
   /**
-    * @type {XrManager}
+    * @type {import('./xr-manager.js').XrManager}
     * @private
     */
   /* private */ var manager: Any = js.native
@@ -154,7 +152,8 @@ open class XrHitTest protected () extends EventHandler {
     * - {@link XRTRACKABLE_MESH}: Mesh - indicates that the hit test results will be computed
     * based on the meshes detected by the underlying Augmented Reality system.
     *
-    * @param {Ray} [options.offsetRay] - Optional ray by which hit test ray can be offset.
+    * @param {import('../../core/shape/ray.js').Ray} [options.offsetRay] - Optional ray by which
+    * hit test ray can be offset.
     * @param {XrHitTestStartCallback} [options.callback] - Optional callback function called once
     * hit test source is created or failed.
     * @example
@@ -169,7 +168,7 @@ open class XrHitTest protected () extends EventHandler {
     *     }
     * });
     * @example
-    * var ray = new pc.Ray(new pc.Vec3(0, 0, 0), new pc.Vec3(0, -1, 0));
+    * const ray = new pc.Ray(new pc.Vec3(0, 0, 0), new pc.Vec3(0, -1, 0));
     * app.xr.hitTest.start({
     *     spaceType: pc.XRSPACE_LOCAL,
     *     offsetRay: ray,

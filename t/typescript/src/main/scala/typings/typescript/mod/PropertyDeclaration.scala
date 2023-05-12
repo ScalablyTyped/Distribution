@@ -23,6 +23,8 @@ trait PropertyDeclaration
   @JSName("kind")
   val kind_PropertyDeclaration: typings.typescript.mod.SyntaxKind.PropertyDeclaration = js.native
   
+  val modifiers: js.UndefOr[NodeArray[ModifierLike]] = js.native
+  
   @JSName("name")
   val name_PropertyDeclaration: PropertyName = js.native
   

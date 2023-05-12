@@ -1,8 +1,9 @@
 package typings.primereact
 
-import typings.primereact.inputtextInputtextMod.InputText
+import typings.primereact.inputtextInputtextMod.InputTextProps
 import typings.primereact.primereactStrings.`additions removals`
 import typings.primereact.primereactStrings.`additions text`
+import typings.primereact.primereactStrings.`best fit`
 import typings.primereact.primereactStrings.`inline`
 import typings.primereact.primereactStrings.`removals additions`
 import typings.primereact.primereactStrings.`removals text`
@@ -14,6 +15,7 @@ import typings.primereact.primereactStrings.ascending
 import typings.primereact.primereactStrings.assertive
 import typings.primereact.primereactStrings.both
 import typings.primereact.primereactStrings.copy
+import typings.primereact.primereactStrings.currency
 import typings.primereact.primereactStrings.date
 import typings.primereact.primereactStrings.decimal
 import typings.primereact.primereactStrings.descending
@@ -28,6 +30,7 @@ import typings.primereact.primereactStrings.link
 import typings.primereact.primereactStrings.list
 import typings.primereact.primereactStrings.listbox
 import typings.primereact.primereactStrings.location
+import typings.primereact.primereactStrings.lookup
 import typings.primereact.primereactStrings.menu
 import typings.primereact.primereactStrings.mixed
 import typings.primereact.primereactStrings.move
@@ -43,6 +46,7 @@ import typings.primereact.primereactStrings.popup
 import typings.primereact.primereactStrings.removals
 import typings.primereact.primereactStrings.search
 import typings.primereact.primereactStrings.spelling
+import typings.primereact.primereactStrings.stacked
 import typings.primereact.primereactStrings.step
 import typings.primereact.primereactStrings.tel
 import typings.primereact.primereactStrings.text
@@ -68,6 +72,7 @@ import typings.react.mod.DragEventHandler
 import typings.react.mod.FocusEvent
 import typings.react.mod.FormEvent
 import typings.react.mod.FormEventHandler
+import typings.react.mod.ForwardRefExoticComponent
 import typings.react.mod.Key
 import typings.react.mod.KeyboardEvent
 import typings.react.mod.KeyboardEventHandler
@@ -80,6 +85,7 @@ import typings.react.mod.PointerEventHandler
 import typings.react.mod.ReactEventHandler
 import typings.react.mod.ReactNode
 import typings.react.mod.Ref
+import typings.react.mod.RefAttributes
 import typings.react.mod.SyntheticEvent
 import typings.react.mod.TouchEvent
 import typings.react.mod.TouchEventHandler
@@ -105,32 +111,60 @@ object inputnumberInputnumberMod {
     def this(props: InputNumberProps) = this()
     /**
       * @deprecated
-      * @see https://reactjs.org/docs/legacy-context.html
+      * @see https://legacy.reactjs.org/docs/legacy-context.html
       */
     def this(props: InputNumberProps, context: Any) = this()
     
+    /**
+      * Used to focus the component.
+      */
+    def focus(): Unit = js.native
+    
+    /**
+      * Used to get container element.
+      * @return {HTMLSpanElement} Container element
+      */
     def getElement(): HTMLSpanElement = js.native
     
+    /**
+      * Used to get formatter.
+      * @return {*} formatter instance
+      */
     def getFormatter(): Any = js.native
     
-    def getInput(): InputText = js.native
+    /**
+      * Used to get input element.
+      * @return {InputText} Input element
+      */
+    def getInput(): ForwardRefExoticComponent[InputTextProps & RefAttributes[HTMLInputElement]] = js.native
   }
   
-  trait InputNumberChangeParams extends StObject {
+  /**
+    * Custom change event
+    * @see {@link InputNumberProps.onChange}
+    * @event
+    */
+  trait InputNumberChangeEvent extends StObject {
     
+    /**
+      * Browser event
+      */
     var originalEvent: SyntheticEvent[Element, Event]
     
+    /**
+      * New value
+      */
     var value: Double | Null
   }
-  object InputNumberChangeParams {
+  object InputNumberChangeEvent {
     
-    inline def apply(originalEvent: SyntheticEvent[Element, Event]): InputNumberChangeParams = {
+    inline def apply(originalEvent: SyntheticEvent[Element, Event]): InputNumberChangeEvent = {
       val __obj = js.Dynamic.literal(originalEvent = originalEvent.asInstanceOf[js.Any], value = null)
-      __obj.asInstanceOf[InputNumberChangeParams]
+      __obj.asInstanceOf[InputNumberChangeEvent]
     }
     
     @scala.inline
-    implicit open class MutableBuilder[Self <: InputNumberChangeParams] (val x: Self) extends AnyVal {
+    implicit open class MutableBuilder[Self <: InputNumberChangeEvent] (val x: Self) extends AnyVal {
       
       inline def setOriginalEvent(value: SyntheticEvent[Element, Event]): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
@@ -147,6 +181,10 @@ object inputnumberInputnumberMod {
     
     var accessKey: js.UndefOr[String] = js.undefined
     
+    /**
+      * Determines whether the input field is empty.
+      * @defaultValue true
+      */
     var allowEmpty: js.UndefOr[Boolean] = js.undefined
     
     var `aria-activedescendant`: js.UndefOr[String] = js.undefined
@@ -247,38 +285,69 @@ object inputnumberInputnumberMod {
     
     var `aria-valuetext`: js.UndefOr[String] = js.undefined
     
+    /**
+      * Establishes relationships between the component and label(s) where its value should be one or more element IDs.
+      */
     var ariaLabelledBy: js.UndefOr[String] = js.undefined
     
     var autoCapitalize: js.UndefOr[String] = js.undefined
     
     var autoCorrect: js.UndefOr[String] = js.undefined
     
+    /**
+      * When present, it specifies that the component should automatically get focus on load.
+      * @defaultValue false
+      */
     var autoFocus: js.UndefOr[Boolean] = js.undefined
     
     var autoSave: js.UndefOr[String] = js.undefined
     
-    var buttonLayout: js.UndefOr[String] = js.undefined
+    /**
+      * Layout of the buttons.
+      * @defaultValue stacked
+      */
+    var buttonLayout: js.UndefOr[stacked | horizontal | vertical] = js.undefined
     
+    /**
+      * Used to get the child elements of the component.
+      * @readonly
+      */
     var children: js.UndefOr[ReactNode] = js.undefined
     
     var className: js.UndefOr[String] = js.undefined
     
     var color: js.UndefOr[String] = js.undefined
     
+    var content: js.UndefOr[String] = js.undefined
+    
     var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
     var contextMenu: js.UndefOr[String] = js.undefined
     
+    /**
+      * The currency to use in currency formatting. Possible values are the [ISO 4217 currency codes](https://www.six-group.com/en/products-services/financial-information/data-standards.html#scrollTo=maintenance-agency), such as "USD" for the US dollar, "EUR" for the euro, or "CNY" for the Chinese RMB.
+      * There is no default value; if the style is "currency", the currency property must be provided.
+      */
     var currency: js.UndefOr[String] = js.undefined
     
+    /**
+      * How to display the currency in currency formatting. Possible values are "symbol" to use a localized currency symbol such as €, ü"code" to use the ISO currency code, "name" to use a localized currency name such as "dollar"; the default is "symbol".
+      * @defaultValue symbol
+      */
     var currencyDisplay: js.UndefOr[String] = js.undefined
     
     var dangerouslySetInnerHTML: js.UndefOr[Html] = js.undefined
     
     var datatype: js.UndefOr[String] = js.undefined
     
+    /**
+      * Style class of the decrement button.
+      */
     var decrementButtonClassName: js.UndefOr[String] = js.undefined
     
+    /**
+      * Style class of the decrement button.
+      */
     var decrementButtonIcon: js.UndefOr[String] = js.undefined
     
     var defaultChecked: js.UndefOr[Boolean] = js.undefined
@@ -287,30 +356,55 @@ object inputnumberInputnumberMod {
     
     var dir: js.UndefOr[String] = js.undefined
     
+    /**
+      * When present, it specifies that the element should be disabled.
+      */
     var disabled: js.UndefOr[Boolean] = js.undefined
     
     var draggable: js.UndefOr[Booleanish] = js.undefined
     
+    /**
+      * Whether to format the value.
+      * @defaultValue true
+      */
     var format: js.UndefOr[Boolean] = js.undefined
     
     var hidden: js.UndefOr[Boolean] = js.undefined
     
     var id: js.UndefOr[String] = js.undefined
     
+    /**
+      * Style class of the increment button.
+      */
     var incrementButtonClassName: js.UndefOr[String] = js.undefined
     
+    /**
+      * Style class of the increment button.
+      */
     var incrementButtonIcon: js.UndefOr[String] = js.undefined
     
     var inlist: js.UndefOr[Any] = js.undefined
     
+    /**
+      * Inline style of the input field.
+      */
     var inputClassName: js.UndefOr[String] = js.undefined
     
+    /**
+      * Identifier of the input element.
+      */
     var inputId: js.UndefOr[String] = js.undefined
     
     var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
     
+    /**
+      * Reference of the input element.
+      */
     var inputRef: js.UndefOr[Ref[HTMLInputElement]] = js.undefined
     
+    /**
+      * Inline style of the input field.
+      */
     var inputStyle: js.UndefOr[CSSProperties] = js.undefined
     
     var is: js.UndefOr[String] = js.undefined
@@ -329,22 +423,53 @@ object inputnumberInputnumberMod {
     
     var lang: js.UndefOr[String] = js.undefined
     
+    /**
+      * Locale to be used in formatting.
+      */
     var locale: js.UndefOr[String] = js.undefined
     
-    var localeMatcher: js.UndefOr[String] = js.undefined
+    /**
+      * The locale matching algorithm to use. See [Locale Negotation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl#Locale_negotiation) for details.
+      * @defaultValue best fit
+      */
+    var localeMatcher: js.UndefOr[lookup | (`best fit`) | String] = js.undefined
     
+    /**
+      * Maximum boundary value.
+      */
     var max: js.UndefOr[Double] = js.undefined
     
+    /**
+      * The maximum number of fraction digits to use. Possible values are from 0 to 20; the default for plain number formatting is the larger of minimumFractionDigits and 3;
+      * the default for currency formatting is the larger of minimumFractionDigits and the number of minor unit digits provided by the [ISO 4217 currency code list](https://www.six-group.com/en/products-services/financial-information/data-standards.html#scrollTo=maintenance-agency) (2 if the list doesn't provide that information).
+      */
     var maxFractionDigits: js.UndefOr[Double] = js.undefined
     
+    /**
+      * Maximum value length.
+      */
     var maxLength: js.UndefOr[Double] = js.undefined
     
+    /**
+      * Mininum boundary value.
+      */
     var min: js.UndefOr[Double] = js.undefined
     
+    /**
+      * The minimum number of fraction digits to use. Possible values are from 0 to 20; the default for plain number and percent formatting is 0;
+      * the default for currency formatting is the number of minor unit digits provided by the [ISO 4217 currency code list](https://www.six-group.com/en/products-services/financial-information/data-standards.html#scrollTo=maintenance-agency) (2 if the list doesn't provide that information).
+      */
     var minFractionDigits: js.UndefOr[Double] = js.undefined
     
-    var mode: js.UndefOr[String] = js.undefined
+    /**
+      * Defines the behavior of the component.
+      * @defaultValue decimal
+      */
+    var mode: js.UndefOr[decimal | currency] = js.undefined
     
+    /**
+      * Name of the input element.
+      */
     var name: js.UndefOr[String] = js.undefined
     
     var nonce: js.UndefOr[String] = js.undefined
@@ -361,13 +486,21 @@ object inputnumberInputnumberMod {
     
     var onBeforeInput: js.UndefOr[FormEventHandler[HTMLSpanElement]] = js.undefined
     
+    /**
+      * Callback to invoke when input loses focus.
+      * @param {React.FocusEvent<HTMLInputElement>} event - Browser event
+      */
     var onBlur: js.UndefOr[js.Function1[/* event */ FocusEvent[HTMLInputElement, Element], Unit]] = js.undefined
     
     var onCanPlay: js.UndefOr[ReactEventHandler[HTMLSpanElement]] = js.undefined
     
     var onCanPlayThrough: js.UndefOr[ReactEventHandler[HTMLSpanElement]] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* e */ InputNumberChangeParams, Unit]] = js.undefined
+    /**
+      * Callback to invoke on value change.
+      * @param {InputNumberChangeEvent} event - Custom change event
+      */
+    var onChange: js.UndefOr[js.Function1[/* event */ InputNumberChangeEvent, Unit]] = js.undefined
     
     var onClick: js.UndefOr[MouseEventHandler[HTMLSpanElement]] = js.undefined
     
@@ -411,12 +544,20 @@ object inputnumberInputnumberMod {
     
     var onError: js.UndefOr[ReactEventHandler[HTMLSpanElement]] = js.undefined
     
+    /**
+      * Callback to invoke when input receives focus.
+      * @param {React.FocusEvent<HTMLInputElement>} event - Browser event
+      */
     var onFocus: js.UndefOr[js.Function1[/* event */ FocusEvent[HTMLInputElement, Element], Unit]] = js.undefined
     
     var onInput: js.UndefOr[FormEventHandler[HTMLSpanElement]] = js.undefined
     
     var onInvalid: js.UndefOr[FormEventHandler[HTMLSpanElement]] = js.undefined
     
+    /**
+      * Callback to invoke when the key pressed.
+      * @param {React.KeyboardEvent<HTMLInputElement>} event - Browser event
+      */
     var onKeyDown: js.UndefOr[js.Function1[/* event */ KeyboardEvent[HTMLInputElement], Unit]] = js.undefined
     
     var onKeyPress: js.UndefOr[KeyboardEventHandler[HTMLSpanElement]] = js.undefined
@@ -503,7 +644,11 @@ object inputnumberInputnumberMod {
     
     var onTransitionEnd: js.UndefOr[TransitionEventHandler[HTMLSpanElement]] = js.undefined
     
-    var onValueChange: js.UndefOr[js.Function1[/* e */ InputNumberValueChangeParams, Unit]] = js.undefined
+    /**
+      * Callback to invoke after validation check and value change.
+      * @param {InputNumberValueChangeEvent} event - Custom value change event
+      */
+    var onValueChange: js.UndefOr[js.Function1[/* event */ InputNumberValueChangeEvent, Unit]] = js.undefined
     
     var onVolumeChange: js.UndefOr[ReactEventHandler[HTMLSpanElement]] = js.undefined
     
@@ -511,64 +656,119 @@ object inputnumberInputnumberMod {
     
     var onWheel: js.UndefOr[WheelEventHandler[HTMLSpanElement]] = js.undefined
     
+    /**
+      * The pattern attribute specifies a regular expression that the element's value is checked against on form submission.
+      */
     var pattern: js.UndefOr[String] = js.undefined
     
+    /**
+      * Hint text for the input field.
+      */
     var placeholder: js.UndefOr[String] = js.undefined
     
+    /**
+      * Text to display before the value.
+      */
     var prefix: js.UndefOr[String] = js.undefined
     
     var property: js.UndefOr[String] = js.undefined
     
     var radioGroup: js.UndefOr[String] = js.undefined
     
+    /**
+      * When present, it specifies that the element should be read-only.
+      */
     var readOnly: js.UndefOr[Boolean] = js.undefined
     
+    var rel: js.UndefOr[String] = js.undefined
+    
+    /**
+      * When present, it specifies that the element must be filled out before submitting the form.
+      * @defaultValue false
+      */
     var required: js.UndefOr[Boolean] = js.undefined
     
     var resource: js.UndefOr[String] = js.undefined
     
     var results: js.UndefOr[Double] = js.undefined
     
+    var rev: js.UndefOr[String] = js.undefined
+    
     var role: js.UndefOr[AriaRole] = js.undefined
     
     var security: js.UndefOr[String] = js.undefined
     
+    /**
+      * Displays spinner buttons.
+      * @defaultValue false
+      */
     var showButtons: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Size of the input field.
+      */
     var size: js.UndefOr[Double] = js.undefined
     
     var slot: js.UndefOr[String] = js.undefined
     
     var spellCheck: js.UndefOr[Booleanish] = js.undefined
     
+    /**
+      * Step factor to increment/decrement the value.
+      * @defaultValue 1
+      */
     var step: js.UndefOr[Double] = js.undefined
     
     var style: js.UndefOr[CSSProperties] = js.undefined
     
+    /**
+      * Text to display after the value.
+      */
     var suffix: js.UndefOr[String] = js.undefined
     
     var suppressContentEditableWarning: js.UndefOr[Boolean] = js.undefined
     
     var suppressHydrationWarning: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * Index of the element in tabbing order.
+      */
     var tabIndex: js.UndefOr[Double] = js.undefined
     
     var title: js.UndefOr[String] = js.undefined
     
+    /**
+      * Content of the tooltip.
+      */
     var tooltip: js.UndefOr[String] = js.undefined
     
+    /**
+      * Configuration of the tooltip, refer to the tooltip documentation for more information.
+      * @type {TooltipOptions}
+      */
     var tooltipOptions: js.UndefOr[TooltipOptions] = js.undefined
     
     var translate: js.UndefOr[yes | no] = js.undefined
     
+    /**
+      * Type of the input element.
+      * @defaultValue text
+      */
     var `type`: js.UndefOr[String] = js.undefined
     
     var typeof: js.UndefOr[String] = js.undefined
     
     var unselectable: js.UndefOr[on | off] = js.undefined
     
+    /**
+      * Whether to use grouping separators, such as thousands separators or thousand/lakh/crore separators.
+      * @defaultValue true
+      */
     var useGrouping: js.UndefOr[Boolean] = js.undefined
     
+    /**
+      * 	Value of the component.
+      */
     var value: js.UndefOr[Double | Null] = js.undefined
     
     var vocab: js.UndefOr[String] = js.undefined
@@ -809,7 +1009,7 @@ object inputnumberInputnumberMod {
       
       inline def setAutoSaveUndefined: Self = StObject.set(x, "autoSave", js.undefined)
       
-      inline def setButtonLayout(value: String): Self = StObject.set(x, "buttonLayout", value.asInstanceOf[js.Any])
+      inline def setButtonLayout(value: stacked | horizontal | vertical): Self = StObject.set(x, "buttonLayout", value.asInstanceOf[js.Any])
       
       inline def setButtonLayoutUndefined: Self = StObject.set(x, "buttonLayout", js.undefined)
       
@@ -825,9 +1025,13 @@ object inputnumberInputnumberMod {
       
       inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      
       inline def setContentEditable(value: Booleanish | inherit): Self = StObject.set(x, "contentEditable", value.asInstanceOf[js.Any])
       
       inline def setContentEditableUndefined: Self = StObject.set(x, "contentEditable", js.undefined)
+      
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
       inline def setContextMenu(value: String): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
       
@@ -963,7 +1167,7 @@ object inputnumberInputnumberMod {
       
       inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
-      inline def setLocaleMatcher(value: String): Self = StObject.set(x, "localeMatcher", value.asInstanceOf[js.Any])
+      inline def setLocaleMatcher(value: lookup | (`best fit`) | String): Self = StObject.set(x, "localeMatcher", value.asInstanceOf[js.Any])
       
       inline def setLocaleMatcherUndefined: Self = StObject.set(x, "localeMatcher", js.undefined)
       
@@ -989,7 +1193,7 @@ object inputnumberInputnumberMod {
       
       inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
       
-      inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: decimal | currency): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
       inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
@@ -1037,7 +1241,7 @@ object inputnumberInputnumberMod {
       
       inline def setOnCanPlayUndefined: Self = StObject.set(x, "onCanPlay", js.undefined)
       
-      inline def setOnChange(value: /* e */ InputNumberChangeParams => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* event */ InputNumberChangeEvent => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
       inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
@@ -1309,7 +1513,7 @@ object inputnumberInputnumberMod {
       
       inline def setOnTransitionEndUndefined: Self = StObject.set(x, "onTransitionEnd", js.undefined)
       
-      inline def setOnValueChange(value: /* e */ InputNumberValueChangeParams => Unit): Self = StObject.set(x, "onValueChange", js.Any.fromFunction1(value))
+      inline def setOnValueChange(value: /* event */ InputNumberValueChangeEvent => Unit): Self = StObject.set(x, "onValueChange", js.Any.fromFunction1(value))
       
       inline def setOnValueChangeUndefined: Self = StObject.set(x, "onValueChange", js.undefined)
       
@@ -1349,6 +1553,10 @@ object inputnumberInputnumberMod {
       
       inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
       
+      inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+      
+      inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+      
       inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
       
       inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
@@ -1360,6 +1568,10 @@ object inputnumberInputnumberMod {
       inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
       inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+      
+      inline def setRev(value: String): Self = StObject.set(x, "rev", value.asInstanceOf[js.Any])
+      
+      inline def setRevUndefined: Self = StObject.set(x, "rev", js.undefined)
       
       inline def setRole(value: AriaRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
@@ -1453,72 +1665,11 @@ object inputnumberInputnumberMod {
     }
   }
   
-  trait InputNumberValueChangeParams extends StObject {
-    
-    var originalEvent: SyntheticEvent[Element, Event]
-    
-    def preventDefault(): Unit
-    
-    def stopPropagation(): Unit
-    
-    var target: InputNumberValueChangeTargetOptions
-    
-    var value: Double | Null
-  }
-  object InputNumberValueChangeParams {
-    
-    inline def apply(
-      originalEvent: SyntheticEvent[Element, Event],
-      preventDefault: () => Unit,
-      stopPropagation: () => Unit,
-      target: InputNumberValueChangeTargetOptions
-    ): InputNumberValueChangeParams = {
-      val __obj = js.Dynamic.literal(originalEvent = originalEvent.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], value = null)
-      __obj.asInstanceOf[InputNumberValueChangeParams]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: InputNumberValueChangeParams] (val x: Self) extends AnyVal {
-      
-      inline def setOriginalEvent(value: SyntheticEvent[Element, Event]): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
-      
-      inline def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
-      
-      inline def setStopPropagation(value: () => Unit): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
-      
-      inline def setTarget(value: InputNumberValueChangeTargetOptions): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
-      
-      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
-      
-      inline def setValueNull: Self = StObject.set(x, "value", null)
-    }
-  }
-  
-  trait InputNumberValueChangeTargetOptions extends StObject {
-    
-    var id: String
-    
-    var name: String
-    
-    var value: Double | Null
-  }
-  object InputNumberValueChangeTargetOptions {
-    
-    inline def apply(id: String, name: String): InputNumberValueChangeTargetOptions = {
-      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], value = null)
-      __obj.asInstanceOf[InputNumberValueChangeTargetOptions]
-    }
-    
-    @scala.inline
-    implicit open class MutableBuilder[Self <: InputNumberValueChangeTargetOptions] (val x: Self) extends AnyVal {
-      
-      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
-      
-      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-      
-      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
-      
-      inline def setValueNull: Self = StObject.set(x, "value", null)
-    }
-  }
+  /**
+    * Custom value change event.
+    * @see {@link InputNumberProps.onValueChange}
+    * @extends {FormEvent}
+    * @event
+    */
+  type InputNumberValueChangeEvent = typings.primereact.tsHelpersMod.FormEvent[Double | Null, SyntheticEvent[Element, Event]]
 }

@@ -1,6 +1,7 @@
 package typings.cesium.anon
 
 import typings.cesium.mod.Cartesian3
+import typings.cesium.mod.Credit
 import typings.cesium.mod.OrientedBoundingBox
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -14,7 +15,7 @@ trait BoundingSphere extends StObject {
   
   var createdByUpsampling: js.UndefOr[Boolean] = js.undefined
   
-  var credits: js.UndefOr[js.Array[typings.cesium.mod.Credit]] = js.undefined
+  var credits: js.UndefOr[js.Array[Credit]] = js.undefined
   
   var eastIndices: js.Array[Double]
   
@@ -83,11 +84,11 @@ object BoundingSphere {
     
     inline def setCreatedByUpsamplingUndefined: Self = StObject.set(x, "createdByUpsampling", js.undefined)
     
-    inline def setCredits(value: js.Array[typings.cesium.mod.Credit]): Self = StObject.set(x, "credits", value.asInstanceOf[js.Any])
+    inline def setCredits(value: js.Array[Credit]): Self = StObject.set(x, "credits", value.asInstanceOf[js.Any])
     
     inline def setCreditsUndefined: Self = StObject.set(x, "credits", js.undefined)
     
-    inline def setCreditsVarargs(value: typings.cesium.mod.Credit*): Self = StObject.set(x, "credits", js.Array(value*))
+    inline def setCreditsVarargs(value: Credit*): Self = StObject.set(x, "credits", js.Array(value*))
     
     inline def setEastIndices(value: js.Array[Double]): Self = StObject.set(x, "eastIndices", value.asInstanceOf[js.Any])
     

@@ -1,60 +1,50 @@
 package typings.hlsJs.mod
 
+import typings.hlsJs.hlsJsStrings.a
+import typings.hlsJs.hlsJsStrings.av
+import typings.hlsJs.hlsJsStrings.c
+import typings.hlsJs.hlsJsStrings.i
+import typings.hlsJs.hlsJsStrings.k
+import typings.hlsJs.hlsJsStrings.m
+import typings.hlsJs.hlsJsStrings.o
+import typings.hlsJs.hlsJsStrings.tt
+import typings.hlsJs.hlsJsStrings.v
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-sealed trait CMCDObjectType extends StObject
 /**
   * CMCD Object Type
   */
-@JSImport("hls.js", "CMCDObjectType")
-@js.native
-object CMCDObjectType extends StObject {
+/* Rewritten from type alias, can be one of: 
+  - typings.hlsJs.hlsJsStrings.m
+  - typings.hlsJs.hlsJsStrings.a
+  - typings.hlsJs.hlsJsStrings.v
+  - typings.hlsJs.hlsJsStrings.av
+  - typings.hlsJs.hlsJsStrings.i
+  - typings.hlsJs.hlsJsStrings.c
+  - typings.hlsJs.hlsJsStrings.tt
+  - typings.hlsJs.hlsJsStrings.k
+  - typings.hlsJs.hlsJsStrings.o
+*/
+trait CMCDObjectType extends StObject
+object CMCDObjectType {
   
-  @js.native
-  sealed trait AUDIO
-    extends StObject
-       with CMCDObjectType
+  inline def AUDIO: a = "a".asInstanceOf[a]
   
-  @js.native
-  sealed trait CAPTION
-    extends StObject
-       with CMCDObjectType
+  inline def CAPTION: c = "c".asInstanceOf[c]
   
-  @js.native
-  sealed trait INIT
-    extends StObject
-       with CMCDObjectType
+  inline def INIT: i = "i".asInstanceOf[i]
   
-  @js.native
-  sealed trait KEY
-    extends StObject
-       with CMCDObjectType
+  inline def KEY: k = "k".asInstanceOf[k]
   
-  @js.native
-  sealed trait MANIFEST
-    extends StObject
-       with CMCDObjectType
+  inline def MANIFEST: m = "m".asInstanceOf[m]
   
-  @js.native
-  sealed trait MUXED
-    extends StObject
-       with CMCDObjectType
+  inline def MUXED: av = "av".asInstanceOf[av]
   
-  @js.native
-  sealed trait OTHER
-    extends StObject
-       with CMCDObjectType
+  inline def OTHER: o = "o".asInstanceOf[o]
   
-  @js.native
-  sealed trait TIMED_TEXT
-    extends StObject
-       with CMCDObjectType
+  inline def TIMED_TEXT: tt = "tt".asInstanceOf[tt]
   
-  @js.native
-  sealed trait VIDEO
-    extends StObject
-       with CMCDObjectType
+  inline def VIDEO: v = "v".asInstanceOf[v]
 }

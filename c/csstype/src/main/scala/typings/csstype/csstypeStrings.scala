@@ -3,8 +3,10 @@ package typings.csstype
 import typings.csstype.mod.AtRule.FontDisplay
 import typings.csstype.mod.AtRule.Inherits
 import typings.csstype.mod.AtRule.Orientation
+import typings.csstype.mod.AtRule.PageOrientation
 import typings.csstype.mod.AtRule.UserZoom
 import typings.csstype.mod.AtRule.ViewportFit
+import typings.csstype.mod.AtRule._BasePalette
 import typings.csstype.mod.AtRule._Marks
 import typings.csstype.mod.AtRule._Size
 import typings.csstype.mod.AtRule._SpeakAs
@@ -33,6 +35,7 @@ import typings.csstype.mod.DataType.NamedColor
 import typings.csstype.mod.DataType.PageSize
 import typings.csstype.mod.DataType.Quote
 import typings.csstype.mod.DataType.SelfPosition
+import typings.csstype.mod.DataType.SingleAnimationComposition
 import typings.csstype.mod.DataType.SingleAnimationDirection
 import typings.csstype.mod.DataType.SingleAnimationFillMode
 import typings.csstype.mod.DataType.VisualBox
@@ -83,12 +86,14 @@ import typings.csstype.mod.Property.BreakAfter
 import typings.csstype.mod.Property.BreakBefore
 import typings.csstype.mod.Property.BreakInside
 import typings.csstype.mod.Property.CaptionSide
+import typings.csstype.mod.Property.CaretShape
 import typings.csstype.mod.Property.Clear
 import typings.csstype.mod.Property.ClipRule
 import typings.csstype.mod.Property.ColorInterpolation
 import typings.csstype.mod.Property.ColorRendering
 import typings.csstype.mod.Property.ColumnFill
 import typings.csstype.mod.Property.ColumnSpan
+import typings.csstype.mod.Property.ContainerType
 import typings.csstype.mod.Property.ContentVisibility
 import typings.csstype.mod.Property.Direction
 import typings.csstype.mod.Property.DominantBaseline
@@ -100,6 +105,7 @@ import typings.csstype.mod.Property.Float
 import typings.csstype.mod.Property.FontKerning
 import typings.csstype.mod.Property.FontOpticalSizing
 import typings.csstype.mod.Property.FontVariantCaps
+import typings.csstype.mod.Property.FontVariantEmoji
 import typings.csstype.mod.Property.FontVariantPosition
 import typings.csstype.mod.Property.ForcedColorAdjust
 import typings.csstype.mod.Property.Hyphens
@@ -109,6 +115,7 @@ import typings.csstype.mod.Property.InputSecurity
 import typings.csstype.mod.Property.Isolation
 import typings.csstype.mod.Property.LineBreak
 import typings.csstype.mod.Property.ListStylePosition
+import typings.csstype.mod.Property.MarginTrim
 import typings.csstype.mod.Property.MaskBorderMode
 import typings.csstype.mod.Property.MaskType
 import typings.csstype.mod.Property.MathShift
@@ -219,6 +226,7 @@ import typings.csstype.mod.Property._BorderImageSource
 import typings.csstype.mod.Property._BorderImageWidth
 import typings.csstype.mod.Property._Bottom
 import typings.csstype.mod.Property._BoxShadow
+import typings.csstype.mod.Property._Caret
 import typings.csstype.mod.Property._CaretColor
 import typings.csstype.mod.Property._Clip
 import typings.csstype.mod.Property._ClipPath
@@ -228,6 +236,13 @@ import typings.csstype.mod.Property._ColumnGap
 import typings.csstype.mod.Property._ColumnWidth
 import typings.csstype.mod.Property._Columns
 import typings.csstype.mod.Property._Contain
+import typings.csstype.mod.Property._ContainIntrinsicBlockSize
+import typings.csstype.mod.Property._ContainIntrinsicHeight
+import typings.csstype.mod.Property._ContainIntrinsicInlineSize
+import typings.csstype.mod.Property._ContainIntrinsicSize
+import typings.csstype.mod.Property._ContainIntrinsicWidth
+import typings.csstype.mod.Property._Container
+import typings.csstype.mod.Property._ContainerName
 import typings.csstype.mod.Property._Content
 import typings.csstype.mod.Property._CounterIncrement
 import typings.csstype.mod.Property._CounterReset
@@ -242,6 +257,7 @@ import typings.csstype.mod.Property._FloodColor
 import typings.csstype.mod.Property._Font
 import typings.csstype.mod.Property._FontFeatureSettings
 import typings.csstype.mod.Property._FontLanguageOverride
+import typings.csstype.mod.Property._FontPalette
 import typings.csstype.mod.Property._FontSize
 import typings.csstype.mod.Property._FontSizeAdjust
 import typings.csstype.mod.Property._FontSmooth
@@ -265,6 +281,7 @@ import typings.csstype.mod.Property._GridTemplateRows
 import typings.csstype.mod.Property._HangingPunctuation
 import typings.csstype.mod.Property._Height
 import typings.csstype.mod.Property._HyphenateCharacter
+import typings.csstype.mod.Property._HyphenateLimitChars
 import typings.csstype.mod.Property._ImageOrientation
 import typings.csstype.mod.Property._ImageResolution
 import typings.csstype.mod.Property._InitialLetter
@@ -338,12 +355,14 @@ import typings.csstype.mod.Property._MsScrollLimitYMax
 import typings.csstype.mod.Property._Offset
 import typings.csstype.mod.Property._OffsetAnchor
 import typings.csstype.mod.Property._OffsetPath
+import typings.csstype.mod.Property._OffsetPosition
 import typings.csstype.mod.Property._OffsetRotate
 import typings.csstype.mod.Property._Outline
 import typings.csstype.mod.Property._OutlineColor
 import typings.csstype.mod.Property._OutlineStyle
 import typings.csstype.mod.Property._Overflow
 import typings.csstype.mod.Property._OverscrollBehavior
+import typings.csstype.mod.Property._Page
 import typings.csstype.mod.Property._PaintOrder
 import typings.csstype.mod.Property._Perspective
 import typings.csstype.mod.Property._PlaceContent
@@ -371,6 +390,9 @@ import typings.csstype.mod.Property._ScrollSnapCoordinate
 import typings.csstype.mod.Property._ScrollSnapPointsX
 import typings.csstype.mod.Property._ScrollSnapPointsY
 import typings.csstype.mod.Property._ScrollSnapType
+import typings.csstype.mod.Property._ScrollTimeline
+import typings.csstype.mod.Property._ScrollTimelineAxis
+import typings.csstype.mod.Property._ScrollTimelineName
 import typings.csstype.mod.Property._ScrollbarColor
 import typings.csstype.mod.Property._ScrollbarGutter
 import typings.csstype.mod.Property._ShapeOutside
@@ -395,6 +417,7 @@ import typings.csstype.mod.Property._TransformOrigin
 import typings.csstype.mod.Property._TransitionProperty
 import typings.csstype.mod.Property._Translate
 import typings.csstype.mod.Property._VerticalAlign
+import typings.csstype.mod.Property._ViewTransitionName
 import typings.csstype.mod.Property._WebkitBoxReflect
 import typings.csstype.mod.Property._WebkitLineClamp
 import typings.csstype.mod.Property._WebkitMask
@@ -495,12 +518,14 @@ object csstypeStrings {
        with BreakBefore
        with BreakInside
        with CaptionSide
+       with CaretShape
        with Clear
        with ClipRule
        with ColorInterpolation
        with ColorRendering
        with ColumnFill
        with ColumnSpan
+       with ContainerType
        with ContentVisibility
        with Direction
        with DominantBaseline
@@ -512,6 +537,7 @@ object csstypeStrings {
        with FontKerning
        with FontOpticalSizing
        with FontVariantCaps
+       with FontVariantEmoji
        with FontVariantPosition
        with ForcedColorAdjust
        with Globals
@@ -522,6 +548,7 @@ object csstypeStrings {
        with Isolation
        with LineBreak
        with ListStylePosition
+       with MarginTrim
        with MaskBorderMode
        with MaskType
        with MathShift
@@ -970,6 +997,12 @@ object csstypeStrings {
     extends StObject
        with AtRules
   inline def `@font-feature-values`: `@font-feature-values` = "@font-feature-values".asInstanceOf[`@font-feature-values`]
+  
+  @js.native
+  sealed trait `@font-palette-values`
+    extends StObject
+       with AtRules
+  inline def `@font-palette-values`: `@font-palette-values` = "@font-palette-values".asInstanceOf[`@font-palette-values`]
   
   @js.native
   sealed trait `@import`
@@ -1522,6 +1555,41 @@ object csstypeStrings {
        with SimplePseudos
        with _Pseudos
   inline def `ColonColontarget-text`: `ColonColontarget-text` = "::target-text".asInstanceOf[`ColonColontarget-text`]
+  
+  @js.native
+  sealed trait `ColonColonview-transition`
+    extends StObject
+       with SimplePseudos
+       with _Pseudos
+  inline def `ColonColonview-transition`: `ColonColonview-transition` = "::view-transition".asInstanceOf[`ColonColonview-transition`]
+  
+  @js.native
+  sealed trait `ColonColonview-transition-group`
+    extends StObject
+       with _AdvancedPseudos
+       with _Pseudos
+  inline def `ColonColonview-transition-group`: `ColonColonview-transition-group` = "::view-transition-group".asInstanceOf[`ColonColonview-transition-group`]
+  
+  @js.native
+  sealed trait `ColonColonview-transition-image-pair`
+    extends StObject
+       with _AdvancedPseudos
+       with _Pseudos
+  inline def `ColonColonview-transition-image-pair`: `ColonColonview-transition-image-pair` = "::view-transition-image-pair".asInstanceOf[`ColonColonview-transition-image-pair`]
+  
+  @js.native
+  sealed trait `ColonColonview-transition-new`
+    extends StObject
+       with _AdvancedPseudos
+       with _Pseudos
+  inline def `ColonColonview-transition-new`: `ColonColonview-transition-new` = "::view-transition-new".asInstanceOf[`ColonColonview-transition-new`]
+  
+  @js.native
+  sealed trait `ColonColonview-transition-old`
+    extends StObject
+       with _AdvancedPseudos
+       with _Pseudos
+  inline def `ColonColonview-transition-old`: `ColonColonview-transition-old` = "::view-transition-old".asInstanceOf[`ColonColonview-transition-old`]
   
   @js.native
   sealed trait Colonactive
@@ -2510,12 +2578,6 @@ object csstypeStrings {
   inline def `[colspan]`: `[colspan]` = "[colspan]".asInstanceOf[`[colspan]`]
   
   @js.native
-  sealed trait `[command]`
-    extends StObject
-       with HtmlAttributes
-  inline def `[command]`: `[command]` = "[command]".asInstanceOf[`[command]`]
-  
-  @js.native
   sealed trait `[compact]`
     extends StObject
        with HtmlAttributes
@@ -2562,6 +2624,12 @@ object csstypeStrings {
     extends StObject
        with HtmlAttributes
   inline def `[coords]`: `[coords]` = "[coords]".asInstanceOf[`[coords]`]
+  
+  @js.native
+  sealed trait `[credentialless]`
+    extends StObject
+       with HtmlAttributes
+  inline def `[credentialless]`: `[credentialless]` = "[credentialless]".asInstanceOf[`[credentialless]`]
   
   @js.native
   sealed trait `[crossorigin]`
@@ -3089,12 +3157,6 @@ object csstypeStrings {
     extends StObject
        with HtmlAttributes
   inline def `[http-equiv]`: `[http-equiv]` = "[http-equiv]".asInstanceOf[`[http-equiv]`]
-  
-  @js.native
-  sealed trait `[icon]`
-    extends StObject
-       with HtmlAttributes
-  inline def `[icon]`: `[icon]` = "[icon]".asInstanceOf[`[icon]`]
   
   @js.native
   sealed trait `[id]`
@@ -3786,12 +3848,6 @@ object csstypeStrings {
   inline def `[r]`: `[r]` = "[r]".asInstanceOf[`[r]`]
   
   @js.native
-  sealed trait `[radiogroup]`
-    extends StObject
-       with HtmlAttributes
-  inline def `[radiogroup]`: `[radiogroup]` = "[radiogroup]".asInstanceOf[`[radiogroup]`]
-  
-  @js.native
   sealed trait `[radius]`
     extends StObject
        with SvgAttributes
@@ -4008,6 +4064,12 @@ object csstypeStrings {
     extends StObject
        with HtmlAttributes
   inline def `[shadowroot]`: `[shadowroot]` = "[shadowroot]".asInstanceOf[`[shadowroot]`]
+  
+  @js.native
+  sealed trait `[shadowrootmode]`
+    extends StObject
+       with HtmlAttributes
+  inline def `[shadowrootmode]`: `[shadowrootmode]` = "[shadowrootmode]".asInstanceOf[`[shadowrootmode]`]
   
   @js.native
   sealed trait `[shape-rendering]`
@@ -4532,6 +4594,12 @@ object csstypeStrings {
   inline def `[viewTarget]`: `[viewTarget]` = "[viewTarget]".asInstanceOf[`[viewTarget]`]
   
   @js.native
+  sealed trait `[virtualkeyboardpolicy]`
+    extends StObject
+       with HtmlAttributes
+  inline def `[virtualkeyboardpolicy]`: `[virtualkeyboardpolicy]` = "[virtualkeyboardpolicy]".asInstanceOf[`[virtualkeyboardpolicy]`]
+  
+  @js.native
   sealed trait `[visibility]`
     extends StObject
        with SvgAttributes
@@ -4683,6 +4751,12 @@ object csstypeStrings {
   inline def absolute: absolute = "absolute".asInstanceOf[absolute]
   
   @js.native
+  sealed trait accumulate
+    extends StObject
+       with SingleAnimationComposition
+  inline def accumulate: accumulate = "accumulate".asInstanceOf[accumulate]
+  
+  @js.native
   sealed trait active
     extends StObject
        with ImeMode
@@ -4692,6 +4766,7 @@ object csstypeStrings {
   sealed trait add
     extends StObject
        with CompositingOperator
+       with SingleAnimationComposition
   inline def add: add = "add".asInstanceOf[add]
   
   @js.native
@@ -4730,6 +4805,7 @@ object csstypeStrings {
        with BreakAfter
        with BreakBefore
        with ColumnSpan
+       with MarginTrim
        with PointerEvents
        with TextDecorationSkipInk
        with UserSelect
@@ -4840,6 +4916,7 @@ object csstypeStrings {
        with BreakAfter
        with BreakBefore
        with BreakInside
+       with CaretShape
        with ColorInterpolation
        with ColorRendering
        with ColumnFill
@@ -4893,6 +4970,7 @@ object csstypeStrings {
        with _BlockSize[Any]
        with _BorderImageWidth[Any]
        with _Bottom[Any]
+       with _Caret
        with _CaretColor
        with _Clip
        with _ColumnCount
@@ -4905,6 +4983,7 @@ object csstypeStrings {
        with _GlyphOrientationVertical
        with _Height[Any]
        with _HyphenateCharacter
+       with _HyphenateLimitChars
        with _InlineSize[Any]
        with _Inset[Any]
        with _InsetBlock[Any]
@@ -4937,11 +5016,13 @@ object csstypeStrings {
        with _MsScrollLimitYMax[Any]
        with _Offset[Any]
        with _OffsetAnchor[Any]
+       with _OffsetPosition[Any]
        with _OffsetRotate
        with _Outline[Any]
        with _OutlineStyle
        with _Overflow
        with _OverscrollBehavior
+       with _Page
        with _PlaceSelf
        with _Quotes
        with _Right[Any]
@@ -5040,6 +5121,13 @@ object csstypeStrings {
   inline def `balance-all`: `balance-all` = "balance-all".asInstanceOf[`balance-all`]
   
   @js.native
+  sealed trait bar
+    extends StObject
+       with CaretShape
+       with _Caret
+  inline def bar: bar = "bar".asInstanceOf[bar]
+  
+  @js.native
   sealed trait baseline
     extends StObject
        with AlignmentBaseline
@@ -5122,11 +5210,14 @@ object csstypeStrings {
   @js.native
   sealed trait block
     extends StObject
+       with CaretShape
        with DisplayOutside
        with FontDisplay
        with MozOrient
        with Resize
+       with _Caret
        with _ScrollSnapType
+       with _ScrollTimelineAxis
   inline def block: block = "block".asInstanceOf[block]
   
   @js.native
@@ -5722,7 +5813,9 @@ object csstypeStrings {
   @js.native
   sealed trait dark
     extends StObject
+       with _BasePalette
        with _ColorScheme
+       with _FontPalette
   inline def dark: dark = "dark".asInstanceOf[dark]
   
   @js.native
@@ -6083,6 +6176,12 @@ object csstypeStrings {
     extends StObject
        with UnicodeBidi
   inline def embed: embed = "embed".asInstanceOf[embed]
+  
+  @js.native
+  sealed trait emoji
+    extends StObject
+       with FontVariantEmoji
+  inline def emoji: emoji = "emoji".asInstanceOf[emoji]
   
   @js.native
   sealed trait enabled
@@ -6546,6 +6645,7 @@ object csstypeStrings {
        with BoxOrient
        with MozOrient
        with Resize
+       with _ScrollTimelineAxis
   inline def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
   
   @js.native
@@ -6612,6 +6712,12 @@ object csstypeStrings {
   inline def ignore: ignore = "ignore".asInstanceOf[ignore]
   
   @js.native
+  sealed trait `in-flow`
+    extends StObject
+       with MarginTrim
+  inline def `in-flow`: `in-flow` = "in-flow".asInstanceOf[`in-flow`]
+  
+  @js.native
   sealed trait inactive
     extends StObject
        with ImeMode
@@ -6664,12 +6770,14 @@ object csstypeStrings {
        with BreakBefore
        with BreakInside
        with CaptionSide
+       with CaretShape
        with Clear
        with ClipRule
        with ColorInterpolation
        with ColorRendering
        with ColumnFill
        with ColumnSpan
+       with ContainerType
        with ContentVisibility
        with Direction
        with DominantBaseline
@@ -6681,6 +6789,7 @@ object csstypeStrings {
        with FontKerning
        with FontOpticalSizing
        with FontVariantCaps
+       with FontVariantEmoji
        with FontVariantPosition
        with ForcedColorAdjust
        with Globals
@@ -6691,6 +6800,7 @@ object csstypeStrings {
        with Isolation
        with LineBreak
        with ListStylePosition
+       with MarginTrim
        with MaskBorderMode
        with MaskType
        with MathShift
@@ -6808,12 +6918,14 @@ object csstypeStrings {
        with BreakBefore
        with BreakInside
        with CaptionSide
+       with CaretShape
        with Clear
        with ClipRule
        with ColorInterpolation
        with ColorRendering
        with ColumnFill
        with ColumnSpan
+       with ContainerType
        with ContentVisibility
        with Direction
        with DominantBaseline
@@ -6825,6 +6937,7 @@ object csstypeStrings {
        with FontKerning
        with FontOpticalSizing
        with FontVariantCaps
+       with FontVariantEmoji
        with FontVariantPosition
        with ForcedColorAdjust
        with Globals
@@ -6835,6 +6948,7 @@ object csstypeStrings {
        with Isolation
        with LineBreak
        with ListStylePosition
+       with MarginTrim
        with MaskBorderMode
        with MaskType
        with MathShift
@@ -6931,6 +7045,7 @@ object csstypeStrings {
        with MozOrient
        with Resize
        with _ScrollSnapType
+       with _ScrollTimelineAxis
   inline def `inline`: `inline` = "inline".asInstanceOf[`inline`]
   
   @js.native
@@ -6974,6 +7089,7 @@ object csstypeStrings {
   @js.native
   sealed trait `inline-size`
     extends StObject
+       with ContainerType
        with _Contain
   inline def `inline-size`: `inline-size` = "inline-size".asInstanceOf[`inline-size`]
   
@@ -7251,7 +7367,9 @@ object csstypeStrings {
   @js.native
   sealed trait light
     extends StObject
+       with _BasePalette
        with _ColorScheme
+       with _FontPalette
   inline def light: light = "light".asInstanceOf[light]
   
   @js.native
@@ -8097,6 +8215,7 @@ object csstypeStrings {
        with Hyphens
        with InputSecurity
        with LineStyle
+       with MarginTrim
        with MozAppearance
        with MozTextBlink
        with MozUserFocus
@@ -8142,6 +8261,13 @@ object csstypeStrings {
        with _BoxShadow
        with _ClipPath
        with _Contain
+       with _ContainIntrinsicBlockSize[Any]
+       with _ContainIntrinsicHeight[Any]
+       with _ContainIntrinsicInlineSize[Any]
+       with _ContainIntrinsicSize[Any]
+       with _ContainIntrinsicWidth[Any]
+       with _Container
+       with _ContainerName
        with _Content
        with _CounterIncrement
        with _CounterReset
@@ -8204,6 +8330,8 @@ object csstypeStrings {
        with _ScrollSnapPointsX
        with _ScrollSnapPointsY
        with _ScrollSnapType
+       with _ScrollTimeline
+       with _ScrollTimelineName
        with _ShapeOutside
        with _SingleAnimationTimeline
        with _SingleTransition[Any]
@@ -8220,6 +8348,7 @@ object csstypeStrings {
        with _Transform
        with _TransitionProperty
        with _Translate[Any]
+       with _ViewTransitionName
        with _WebkitLineClamp
        with _WebkitMask[Any]
        with _WebkitMaskImage
@@ -8237,8 +8366,10 @@ object csstypeStrings {
     extends StObject
        with BlendMode
        with BoxDirection
+       with ContainerType
        with FontKerning
        with FontVariantCaps
+       with FontVariantEmoji
        with FontVariantPosition
        with ImeMode
        with LineBreak
@@ -8262,6 +8393,7 @@ object csstypeStrings {
        with _Content
        with _FontFeatureSettings
        with _FontLanguageOverride
+       with _FontPalette
        with _FontStretchAbsolute
        with _FontStyle
        with typings.csstype.mod.AtRule._FontStyle
@@ -8898,6 +9030,12 @@ object csstypeStrings {
   inline def `repeat-y`: `repeat-y` = "repeat-y".asInstanceOf[`repeat-y`]
   
   @js.native
+  sealed trait replace
+    extends StObject
+       with SingleAnimationComposition
+  inline def replace: replace = "replace".asInstanceOf[replace]
+  
+  @js.native
   sealed trait reset
     extends StObject
        with _Zoom
@@ -8957,12 +9095,14 @@ object csstypeStrings {
        with BreakBefore
        with BreakInside
        with CaptionSide
+       with CaretShape
        with Clear
        with ClipRule
        with ColorInterpolation
        with ColorRendering
        with ColumnFill
        with ColumnSpan
+       with ContainerType
        with ContentVisibility
        with Direction
        with DominantBaseline
@@ -8974,6 +9114,7 @@ object csstypeStrings {
        with FontKerning
        with FontOpticalSizing
        with FontVariantCaps
+       with FontVariantEmoji
        with FontVariantPosition
        with ForcedColorAdjust
        with Globals
@@ -8984,6 +9125,7 @@ object csstypeStrings {
        with Isolation
        with LineBreak
        with ListStylePosition
+       with MarginTrim
        with MaskBorderMode
        with MaskType
        with MathShift
@@ -9101,12 +9243,14 @@ object csstypeStrings {
        with BreakBefore
        with BreakInside
        with CaptionSide
+       with CaretShape
        with Clear
        with ClipRule
        with ColorInterpolation
        with ColorRendering
        with ColumnFill
        with ColumnSpan
+       with ContainerType
        with ContentVisibility
        with Direction
        with DominantBaseline
@@ -9118,6 +9262,7 @@ object csstypeStrings {
        with FontKerning
        with FontOpticalSizing
        with FontVariantCaps
+       with FontVariantEmoji
        with FontVariantPosition
        with ForcedColorAdjust
        with Globals
@@ -9128,6 +9273,7 @@ object csstypeStrings {
        with Isolation
        with LineBreak
        with ListStylePosition
+       with MarginTrim
        with MaskBorderMode
        with MaskType
        with MathShift
@@ -9281,6 +9427,18 @@ object csstypeStrings {
     extends StObject
        with NamedColor
   inline def rosybrown: rosybrown = "rosybrown".asInstanceOf[rosybrown]
+  
+  @js.native
+  sealed trait `rotate-left`
+    extends StObject
+       with PageOrientation
+  inline def `rotate-left`: `rotate-left` = "rotate-left".asInstanceOf[`rotate-left`]
+  
+  @js.native
+  sealed trait `rotate-right`
+    extends StObject
+       with PageOrientation
+  inline def `rotate-right`: `rotate-right` = "rotate-right".asInstanceOf[`rotate-right`]
   
   @js.native
   sealed trait round
@@ -9733,6 +9891,7 @@ object csstypeStrings {
   @js.native
   sealed trait size
     extends StObject
+       with ContainerType
        with _Contain
   inline def size: size = "size".asInstanceOf[size]
   
@@ -10284,6 +10443,7 @@ object csstypeStrings {
   @js.native
   sealed trait text
     extends StObject
+       with FontVariantEmoji
        with MsUserSelect
        with UserSelect
        with _Cursor
@@ -10540,12 +10700,25 @@ object csstypeStrings {
   inline def underline: underline = "underline".asInstanceOf[underline]
   
   @js.native
+  sealed trait underscore
+    extends StObject
+       with CaretShape
+       with _Caret
+  inline def underscore: underscore = "underscore".asInstanceOf[underscore]
+  
+  @js.native
   sealed trait unicase
     extends StObject
        with FontVariantCaps
        with _FontVariant
        with typings.csstype.mod.AtRule._FontVariant
   inline def unicase: unicase = "unicase".asInstanceOf[unicase]
+  
+  @js.native
+  sealed trait unicode
+    extends StObject
+       with FontVariantEmoji
+  inline def unicode: unicode = "unicode".asInstanceOf[unicode]
   
   @js.native
   sealed trait unset
@@ -10575,12 +10748,14 @@ object csstypeStrings {
        with BreakBefore
        with BreakInside
        with CaptionSide
+       with CaretShape
        with Clear
        with ClipRule
        with ColorInterpolation
        with ColorRendering
        with ColumnFill
        with ColumnSpan
+       with ContainerType
        with ContentVisibility
        with Direction
        with DominantBaseline
@@ -10592,6 +10767,7 @@ object csstypeStrings {
        with FontKerning
        with FontOpticalSizing
        with FontVariantCaps
+       with FontVariantEmoji
        with FontVariantPosition
        with ForcedColorAdjust
        with Globals
@@ -10602,6 +10778,7 @@ object csstypeStrings {
        with Isolation
        with LineBreak
        with ListStylePosition
+       with MarginTrim
        with MaskBorderMode
        with MaskType
        with MathShift
@@ -10700,6 +10877,7 @@ object csstypeStrings {
   @js.native
   sealed trait upright
     extends StObject
+       with PageOrientation
        with TextOrientation
   inline def upright: upright = "upright".asInstanceOf[upright]
   
@@ -10724,6 +10902,7 @@ object csstypeStrings {
        with BoxOrient
        with MozOrient
        with Resize
+       with _ScrollTimelineAxis
   inline def vertical: vertical = "vertical".asInstanceOf[vertical]
   
   @js.native

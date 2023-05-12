@@ -1,11 +1,10 @@
 package typings.hapiYar
 
-import typings.hapiHapi.mod.ReqRefDefaults
-import typings.hapiHapi.mod.Request
 import typings.hapiYar.hapiYarBooleans.`false`
 import typings.hapiYar.hapiYarStrings.Lax
 import typings.hapiYar.hapiYarStrings.None
 import typings.hapiYar.hapiYarStrings.Strict
+import typings.hapiYar.mod.hapiHapiAugmentingMod.Request
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
@@ -31,7 +30,7 @@ object anon {
       * request - (optional) is the original request received from the client.
       * Defaults to uuidv4
       */
-    var customSessionIDGenerator: js.UndefOr[js.Function1[/* req */ Request[ReqRefDefaults], String]] = js.undefined
+    var customSessionIDGenerator: js.UndefOr[js.Function1[/* req */ Request, String]] = js.undefined
     
     /**
       * Tells Hapi that it should not respond with a HTTP 400 error if the session cookie cannot decrypt.
@@ -93,7 +92,7 @@ object anon {
       
       inline def setClearInvalidUndefined: Self = StObject.set(x, "clearInvalid", js.undefined)
       
-      inline def setCustomSessionIDGenerator(value: /* req */ Request[ReqRefDefaults] => String): Self = StObject.set(x, "customSessionIDGenerator", js.Any.fromFunction1(value))
+      inline def setCustomSessionIDGenerator(value: /* req */ Request => String): Self = StObject.set(x, "customSessionIDGenerator", js.Any.fromFunction1(value))
       
       inline def setCustomSessionIDGeneratorUndefined: Self = StObject.set(x, "customSessionIDGenerator", js.undefined)
       

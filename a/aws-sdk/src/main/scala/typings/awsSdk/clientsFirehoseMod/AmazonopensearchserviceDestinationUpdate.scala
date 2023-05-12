@@ -6,26 +6,50 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AmazonopensearchserviceDestinationUpdate extends StObject {
   
+  /**
+    * The buffering options. If no value is specified, AmazonopensearchBufferingHints object default values are used. 
+    */
   var BufferingHints: js.UndefOr[AmazonopensearchserviceBufferingHints] = js.undefined
   
   var CloudWatchLoggingOptions: js.UndefOr[typings.awsSdk.clientsFirehoseMod.CloudWatchLoggingOptions] = js.undefined
   
+  /**
+    * The endpoint to use when communicating with the cluster. Specify either this ClusterEndpoint or the DomainARN field. 
+    */
   var ClusterEndpoint: js.UndefOr[AmazonopensearchserviceClusterEndpoint] = js.undefined
   
+  /**
+    * The ARN of the Amazon OpenSearch Service domain. The IAM role must have permissions for DescribeDomain, DescribeDomains, and DescribeDomainConfig after assuming the IAM role specified in RoleARN.
+    */
   var DomainARN: js.UndefOr[AmazonopensearchserviceDomainARN] = js.undefined
   
+  /**
+    * The Amazon OpenSearch Service index name.
+    */
   var IndexName: js.UndefOr[AmazonopensearchserviceIndexName] = js.undefined
   
+  /**
+    * The Amazon OpenSearch Service index rotation period. Index rotation appends a timestamp to IndexName to facilitate the expiration of old data.
+    */
   var IndexRotationPeriod: js.UndefOr[AmazonopensearchserviceIndexRotationPeriod] = js.undefined
   
   var ProcessingConfiguration: js.UndefOr[typings.awsSdk.clientsFirehoseMod.ProcessingConfiguration] = js.undefined
   
+  /**
+    * The retry behavior in case Kinesis Data Firehose is unable to deliver documents to Amazon OpenSearch Service. The default value is 300 (5 minutes). 
+    */
   var RetryOptions: js.UndefOr[AmazonopensearchserviceRetryOptions] = js.undefined
   
+  /**
+    * The Amazon Resource Name (ARN) of the IAM role to be assumed by Kinesis Data Firehose for calling the Amazon OpenSearch Service Configuration API and for indexing documents. 
+    */
   var RoleARN: js.UndefOr[typings.awsSdk.clientsFirehoseMod.RoleARN] = js.undefined
   
   var S3Update: js.UndefOr[S3DestinationUpdate] = js.undefined
   
+  /**
+    * The Amazon OpenSearch Service type name. For Elasticsearch 6.x, there can be only one type per index. If you try to specify a new type for an existing index that already has another type, Kinesis Data Firehose returns an error during runtime.  If you upgrade Elasticsearch from 6.x to 7.x and don’t update your delivery stream, Kinesis Data Firehose still delivers data to Elasticsearch with the old index name and type name. If you want to update your delivery stream with a new index name, provide an empty string for TypeName. 
+    */
   var TypeName: js.UndefOr[AmazonopensearchserviceTypeName] = js.undefined
 }
 object AmazonopensearchserviceDestinationUpdate {

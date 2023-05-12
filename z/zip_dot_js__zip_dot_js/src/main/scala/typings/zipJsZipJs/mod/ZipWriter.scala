@@ -15,7 +15,7 @@ open class ZipWriter[Type] protected () extends StObject {
   def this(writer: WritableWriter) = this()
   /**
     * Creates the {@link ZipWriter} instance
-    * 
+    *
     * @param writer The {@link Writer} instance where the zip content will be written.
     * @param options The options.
     */
@@ -30,7 +30,7 @@ open class ZipWriter[Type] protected () extends StObject {
   
   /**
     * Adds an entry into the zip file
-    * 
+    *
     * @param filename The filename of the entry.
     * @param reader The  {@link Reader} instance used to read the content of the entry.
     * @param options The options.
@@ -53,7 +53,7 @@ open class ZipWriter[Type] protected () extends StObject {
   
   /**
     * Writes the entries directory, writes the global comment, and returns the content of the zip file
-    * 
+    *
     * @param comment The global comment of the zip file.
     * @param options The options.
     * @returns The content of the zip file.

@@ -7,32 +7,32 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DatabaseSummary extends StObject {
   
   /**
-    * 
+    * The ID of the application.
     */
   var ApplicationId: js.UndefOr[typings.awsSdk.clientsSsmsapMod.ApplicationId] = js.undefined
   
   /**
-    * 
+    * The Amazon Resource Name (ARN) of the database.
     */
   var Arn: js.UndefOr[SsmSapArn] = js.undefined
   
   /**
-    * 
+    * The ID of the component.
     */
   var ComponentId: js.UndefOr[typings.awsSdk.clientsSsmsapMod.ComponentId] = js.undefined
   
   /**
-    * 
+    * The ID of the database.
     */
   var DatabaseId: js.UndefOr[typings.awsSdk.clientsSsmsapMod.DatabaseId] = js.undefined
   
   /**
-    * 
+    * The type of the database.
     */
   var DatabaseType: js.UndefOr[typings.awsSdk.clientsSsmsapMod.DatabaseType] = js.undefined
   
   /**
-    * 
+    * The tags of the database.
     */
   var Tags: js.UndefOr[TagMap] = js.undefined
 }

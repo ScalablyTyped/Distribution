@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WebviewPortMapping extends StObject {
   
   /**
-    * Destination port. The `webviewPort` is resolved to this port.
-    */
+  		 * Destination port. The `webviewPort` is resolved to this port.
+  		 */
   val extensionHostPort: Double
   
   /**
-    * Localhost port to remap inside the webview.
-    */
+  		 * Localhost port to remap inside the webview.
+  		 */
   val webviewPort: Double
 }
 object WebviewPortMapping {

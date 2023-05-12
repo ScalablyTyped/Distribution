@@ -3,6 +3,7 @@ package typings.openui5
 import typings.openui5.anon.AltManifestUrl
 import typings.openui5.anon.AsyncHints
 import typings.openui5.anon.ComponentData
+import typings.openui5.openui5Strings.json
 import typings.openui5.sap.ClassInfo
 import typings.openui5.sapUiBaseManagedObjectMod.ManagedObjectSettings
 import typings.openui5.sapUiCoreLibraryMod.ID
@@ -95,20 +96,22 @@ object sapUiCoreComponentMod {
     mOptions: AltManifestUrl): js.Promise[Component] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(mOptions.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Component]]
     
     /**
-      * Creates a new subclass of class sap.ui.core.Component with name `sClassName` and enriches it with the
+      * Creates a new subclass of class `sap.ui.core.Component` with name `sClassName` and enriches it with the
       * information contained in `oClassInfo`.
       *
-      * `oClassInfo` might contain the same kind of information as described in {@link sap.ui.base.ManagedObject.extend}.
+      * `oClassInfo` might contain the same kind of information as described in {@link sap.ui.base.ManagedObject.extend},
+      * plus the `manifest` property in the 'metadata' object literal, indicating that the component configuration
+      * should be read from a manifest.json file.
       *
-      * @returns Created class / constructor function
+      * @returns The created class / constructor function
       */
     inline def extend[T /* <: Record[String, Any] */](/**
-      * Name of the class being created
+      * Qualified name of the newly created class
       */
     sClassName: String): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(sClassName.asInstanceOf[js.Any]).asInstanceOf[js.Function]
     inline def extend[T /* <: Record[String, Any] */](
       /**
-      * Name of the class being created
+      * Qualified name of the newly created class
       */
     sClassName: String,
       /**
@@ -116,14 +119,13 @@ object sapUiCoreComponentMod {
       */
     oClassInfo: Unit,
       /**
-      * Constructor function for the metadata object; if not given, it defaults to the metadata implementation
-      * used by this class
+      * Constructor function for the metadata object. If not given, it defaults to an internal subclass of `sap.ui.core.ComponentMetadata`.
       */
     FNMetaImpl: js.Function
     ): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(sClassName.asInstanceOf[js.Any], oClassInfo.asInstanceOf[js.Any], FNMetaImpl.asInstanceOf[js.Any])).asInstanceOf[js.Function]
     inline def extend[T /* <: Record[String, Any] */](
       /**
-      * Name of the class being created
+      * Qualified name of the newly created class
       */
     sClassName: String,
       /**
@@ -133,7 +135,7 @@ object sapUiCoreComponentMod {
     ): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(sClassName.asInstanceOf[js.Any], oClassInfo.asInstanceOf[js.Any])).asInstanceOf[js.Function]
     inline def extend[T /* <: Record[String, Any] */](
       /**
-      * Name of the class being created
+      * Qualified name of the newly created class
       */
     sClassName: String,
       /**
@@ -141,8 +143,7 @@ object sapUiCoreComponentMod {
       */
     oClassInfo: ClassInfo[T, Component],
       /**
-      * Constructor function for the metadata object; if not given, it defaults to the metadata implementation
-      * used by this class
+      * Constructor function for the metadata object. If not given, it defaults to an internal subclass of `sap.ui.core.ComponentMetadata`.
       */
     FNMetaImpl: js.Function
     ): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(sClassName.asInstanceOf[js.Any], oClassInfo.asInstanceOf[js.Any], FNMetaImpl.asInstanceOf[js.Any])).asInstanceOf[js.Function]
@@ -438,6 +439,8 @@ object sapUiCoreComponentMod {
     ): Component | js.Promise[Any] = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Cleans up the Component instance before destruction.
       *
       * Applications must not call this hook method directly, it is called by the framework when the element
@@ -584,6 +587,8 @@ object sapUiCoreComponentMod {
     sLocalServiceAlias: String): js.Promise[Any] = js.native
     
     /**
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
+      *
       * Initializes the Component instance after creation.
       *
       * Applications must not call this hook method directly, it is called by the framework while the constructor
@@ -595,6 +600,7 @@ object sapUiCoreComponentMod {
     
     /**
       * @SINCE 1.88
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * This method is called after the component is activated
       */
@@ -613,6 +619,7 @@ object sapUiCoreComponentMod {
     
     /**
       * @SINCE 1.88
+      * @PROTECTED - DO NOT USE IN APPLICATIONS (only for related classes in the framework)
       *
       * This method is called after the component is deactivated
       */
@@ -676,4 +683,30 @@ object sapUiCoreComponentMod {
   }
   
   type ComponentSettings = ManagedObjectSettings
+  
+  trait MetadataOptions
+    extends StObject
+       with typings.openui5.sapUiBaseManagedObjectMod.MetadataOptions {
+    
+    /**
+      * When set to the string literal "json", this property indicates that the component configuration should
+      * be read from a manifest.json file which is assumed to exist next to the Component.js file.
+      */
+    var manifest: js.UndefOr[json] = js.undefined
+  }
+  object MetadataOptions {
+    
+    inline def apply(): MetadataOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[MetadataOptions]
+    }
+    
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MetadataOptions] (val x: Self) extends AnyVal {
+      
+      inline def setManifest(value: json): Self = StObject.set(x, "manifest", value.asInstanceOf[js.Any])
+      
+      inline def setManifestUndefined: Self = StObject.set(x, "manifest", js.undefined)
+    }
+  }
 }

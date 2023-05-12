@@ -98,7 +98,7 @@ object Scene {
   
   /**
     * Gets or sets the maximum deltatime when deterministic lock step is enabled
-    * @see https://doc.babylonjs.com/babylon101/animations#deterministic-lockstep
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/animation/advanced_animations#deterministic-lockstep
     */
   @JSGlobal("BABYLON.Scene.MaxDeltaTime")
   @js.native
@@ -107,7 +107,7 @@ object Scene {
   
   /**
     * Gets or sets the minimum deltatime when deterministic lock step is enabled
-    * @see https://doc.babylonjs.com/babylon101/animations#deterministic-lockstep
+    * @see https://doc.babylonjs.com/features/featuresDeepDive/animation/advanced_animations#deterministic-lockstep
     */
   @JSGlobal("BABYLON.Scene.MinDeltaTime")
   @js.native

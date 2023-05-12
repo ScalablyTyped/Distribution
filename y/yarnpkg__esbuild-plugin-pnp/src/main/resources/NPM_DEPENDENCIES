@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@yarnpkg/esbuild-plugin-pnp" : "3.0.0-rc.15"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@yarnpkg/esbuild-plugin-pnp" : "3.0.0-rc.15"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

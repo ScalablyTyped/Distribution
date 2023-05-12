@@ -35,6 +35,9 @@ trait OutputOptions extends StObject {
   
   var esModule: js.UndefOr[Boolean | `if-default-prop`] = js.undefined
   
+  /** @deprecated This option is no longer needed and ignored. */
+  var experimentalDeepDynamicChunkOptimization: js.UndefOr[Boolean] = js.undefined
+  
   var experimentalMinChunkSize: js.UndefOr[Double] = js.undefined
   
   var exports: js.UndefOr[default | named | none | auto] = js.undefined
@@ -102,6 +105,8 @@ trait OutputOptions extends StObject {
   
   var sourcemapFile: js.UndefOr[String] = js.undefined
   
+  var sourcemapIgnoreList: js.UndefOr[Boolean | SourcemapIgnoreListOption] = js.undefined
+  
   var sourcemapPathTransform: js.UndefOr[SourcemapPathTransformOption] = js.undefined
   
   var strict: js.UndefOr[Boolean] = js.undefined
@@ -167,6 +172,10 @@ object OutputOptions {
     inline def setEsModule(value: Boolean | `if-default-prop`): Self = StObject.set(x, "esModule", value.asInstanceOf[js.Any])
     
     inline def setEsModuleUndefined: Self = StObject.set(x, "esModule", js.undefined)
+    
+    inline def setExperimentalDeepDynamicChunkOptimization(value: Boolean): Self = StObject.set(x, "experimentalDeepDynamicChunkOptimization", value.asInstanceOf[js.Any])
+    
+    inline def setExperimentalDeepDynamicChunkOptimizationUndefined: Self = StObject.set(x, "experimentalDeepDynamicChunkOptimization", js.undefined)
     
     inline def setExperimentalMinChunkSize(value: Double): Self = StObject.set(x, "experimentalMinChunkSize", value.asInstanceOf[js.Any])
     
@@ -309,6 +318,12 @@ object OutputOptions {
     inline def setSourcemapFile(value: String): Self = StObject.set(x, "sourcemapFile", value.asInstanceOf[js.Any])
     
     inline def setSourcemapFileUndefined: Self = StObject.set(x, "sourcemapFile", js.undefined)
+    
+    inline def setSourcemapIgnoreList(value: Boolean | SourcemapIgnoreListOption): Self = StObject.set(x, "sourcemapIgnoreList", value.asInstanceOf[js.Any])
+    
+    inline def setSourcemapIgnoreListFunction2(value: (/* relativeSourcePath */ String, /* sourcemapPath */ String) => Boolean): Self = StObject.set(x, "sourcemapIgnoreList", js.Any.fromFunction2(value))
+    
+    inline def setSourcemapIgnoreListUndefined: Self = StObject.set(x, "sourcemapIgnoreList", js.undefined)
     
     inline def setSourcemapPathTransform(value: (/* relativeSourcePath */ String, /* sourcemapPath */ String) => String): Self = StObject.set(x, "sourcemapPathTransform", js.Any.fromFunction2(value))
     

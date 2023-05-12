@@ -3,7 +3,8 @@ package typings.itLengthPrefixed
 import typings.itLengthPrefixed.mod.LengthDecoderFunction
 import typings.itReader.mod.Reader_
 import typings.itStreamTypes.mod.Source
-import typings.itStreamTypes.mod.Transform
+import typings.std.AsyncGenerator
+import typings.std.Generator
 import typings.uint8arraylist.mod.Uint8ArrayList
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
@@ -21,8 +22,10 @@ object distSrcDecodeMod {
   
   object decode {
     
-    inline def apply(): Transform[Uint8ArrayList | js.typedarray.Uint8Array, Uint8ArrayList] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Transform[Uint8ArrayList | js.typedarray.Uint8Array, Uint8ArrayList]]
-    inline def apply(options: DecoderOptions): Transform[Uint8ArrayList | js.typedarray.Uint8Array, Uint8ArrayList] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Transform[Uint8ArrayList | js.typedarray.Uint8Array, Uint8ArrayList]]
+    inline def apply(source: js.Iterable[Uint8ArrayList | js.typedarray.Uint8Array]): Generator[Uint8ArrayList, Unit, Any] = ^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any]).asInstanceOf[Generator[Uint8ArrayList, Unit, Any]]
+    inline def apply(source: js.Iterable[Uint8ArrayList | js.typedarray.Uint8Array], options: DecoderOptions): Generator[Uint8ArrayList, Unit, Any] = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Generator[Uint8ArrayList, Unit, Any]]
+    inline def apply(source: Source[Uint8ArrayList | js.typedarray.Uint8Array]): AsyncGenerator[Uint8ArrayList, Unit, Any] = ^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any]).asInstanceOf[AsyncGenerator[Uint8ArrayList, Unit, Any]]
+    inline def apply(source: Source[Uint8ArrayList | js.typedarray.Uint8Array], options: DecoderOptions): AsyncGenerator[Uint8ArrayList, Unit, Any] = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AsyncGenerator[Uint8ArrayList, Unit, Any]]
     
     @JSImport("it-length-prefixed/dist/src/decode", "decode")
     @js.native
@@ -33,13 +36,13 @@ object distSrcDecodeMod {
     def fromReader: js.Function2[
         /* reader */ Reader_, 
         /* options */ js.UndefOr[DecoderOptions], 
-        Source[Uint8ArrayList]
+        AsyncGenerator[Uint8ArrayList, Unit, Any]
       ] = js.native
     inline def fromReader_=(
       x: js.Function2[
           /* reader */ Reader_, 
           /* options */ js.UndefOr[DecoderOptions], 
-          Source[Uint8ArrayList]
+          AsyncGenerator[Uint8ArrayList, Unit, Any]
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fromReader")(x.asInstanceOf[js.Any])
   }

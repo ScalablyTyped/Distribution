@@ -1,7 +1,7 @@
 package typings.devextreme.mod.default
 
 import typings.devextreme.anon.Immutable
-import typings.devextreme.mod.DevExpress.data.ArrayStore.Options
+import typings.devextreme.mod.DevExpress.data.AbstractStore.Options
 import typings.devextreme.mod.DevExpress.data.ODataContextOptions
 import typings.devextreme.mod.DevExpress.data.Query
 import typings.devextreme.mod.DevExpress.data.XmlaStoreOptions
@@ -15,12 +15,20 @@ object data {
   @js.native
   val ^ : js.Any = js.native
   
+  @JSImport("devextreme", "default.data.AbstractStore")
+  @js.native
+  open class AbstractStore[TItem, TKey] ()
+    extends StObject
+       with typings.devextreme.mod.DevExpress.data.AbstractStore[TItem, TKey] {
+    def this(options: Options[TItem, TKey]) = this()
+  }
+  
   @JSImport("devextreme", "default.data.ArrayStore")
   @js.native
   open class ArrayStore[TItem, TKey] ()
     extends StObject
        with typings.devextreme.mod.DevExpress.data.ArrayStore[TItem, TKey] {
-    def this(options: Options[TItem, TKey]) = this()
+    def this(options: typings.devextreme.mod.DevExpress.data.ArrayStore.Options[TItem, TKey]) = this()
   }
   
   @JSImport("devextreme", "default.data.CustomStore")
@@ -96,7 +104,7 @@ object data {
   open class Store[TItem, TKey] ()
     extends StObject
        with typings.devextreme.mod.DevExpress.data.Store[TItem, TKey] {
-    def this(options: typings.devextreme.mod.DevExpress.data.Store.Options[TItem, TKey]) = this()
+    def this(options: Options[TItem, TKey]) = this()
   }
   
   @JSImport("devextreme", "default.data.XmlaStore")

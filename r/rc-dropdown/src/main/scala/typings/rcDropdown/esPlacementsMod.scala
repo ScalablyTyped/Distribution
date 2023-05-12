@@ -13,10 +13,9 @@ object esPlacementsMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("rc-dropdown/es/placements", "default.bottomCenter")
+    @JSImport("rc-dropdown/es/placements", "default.bottom")
     @js.native
-    def bottomCenter: Offset = js.native
-    inline def bottomCenter_=(x: Offset): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bottomCenter")(x.asInstanceOf[js.Any])
+    def bottom: Offset = js.native
     
     @JSImport("rc-dropdown/es/placements", "default.bottomLeft")
     @js.native
@@ -28,10 +27,11 @@ object esPlacementsMod {
     def bottomRight: Offset = js.native
     inline def bottomRight_=(x: Offset): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bottomRight")(x.asInstanceOf[js.Any])
     
-    @JSImport("rc-dropdown/es/placements", "default.topCenter")
+    inline def bottom_=(x: Offset): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bottom")(x.asInstanceOf[js.Any])
+    
+    @JSImport("rc-dropdown/es/placements", "default.top")
     @js.native
-    def topCenter: Offset = js.native
-    inline def topCenter_=(x: Offset): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("topCenter")(x.asInstanceOf[js.Any])
+    def top: Offset = js.native
     
     @JSImport("rc-dropdown/es/placements", "default.topLeft")
     @js.native
@@ -42,5 +42,7 @@ object esPlacementsMod {
     @js.native
     def topRight: Offset = js.native
     inline def topRight_=(x: Offset): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("topRight")(x.asInstanceOf[js.Any])
+    
+    inline def top_=(x: Offset): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("top")(x.asInstanceOf[js.Any])
   }
 }
